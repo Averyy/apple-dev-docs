@@ -6,9 +6,8 @@
 An object that describes the content required for the alarm UI.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -53,12 +52,6 @@ let presentation = AlarmPresentation(alert: alert, countdown: countdown, paused:
   An object that describes the content required for the countdown UI.
 - [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
   An object that describes the content required for the paused UI.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentation/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentation/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 Anchor to the visual center of a particular UIScene.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

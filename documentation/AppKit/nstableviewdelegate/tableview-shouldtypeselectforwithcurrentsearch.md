@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, shouldTypeSelectFor event: NSE
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow type select for event, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow type select for event, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

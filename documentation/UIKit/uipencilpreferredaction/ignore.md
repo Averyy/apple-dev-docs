@@ -9,7 +9,7 @@ An action that does nothing.
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
-- visionOS 1.0+
+- visionOS 26.2+
 
 ## Declaration
 

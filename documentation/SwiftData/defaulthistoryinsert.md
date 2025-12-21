@@ -23,15 +23,8 @@ struct DefaultHistoryInsert<Model> where Model : PersistentModel
 
 ### Operators
 - [static func == (DefaultHistoryInsert<Model>, DefaultHistoryInsert<Model>) -> Bool](defaulthistoryinsert/==(_:_:).md)
-### Instance Properties
-- [let changeIdentifier: DefaultHistoryInsert<Model>.ChangeIdentifier](defaulthistoryinsert/changeidentifier-swift.property.md)
-- [let changedPersistentIdentifier: PersistentIdentifier](defaulthistoryinsert/changedpersistentidentifier.md)
-- [let transactionIdentifier: DefaultHistoryInsert<Model>.TransactionIdentifier](defaulthistoryinsert/transactionidentifier-swift.property.md)
 ### Instance Methods
 - [func hash(into: inout Hasher)](defaulthistoryinsert/hash(into:).md)
-### Type Aliases
-- [DefaultHistoryInsert.ChangeIdentifier](defaulthistoryinsert/changeidentifier-swift.typealias.md)
-- [DefaultHistoryInsert.TransactionIdentifier](defaulthistoryinsert/transactionidentifier-swift.typealias.md)
 
 ## Relationships
 

@@ -18,17 +18,6 @@ enum ActivityStyle
 ### Style
 - [ActivityStyle.standard](activitystyle/standard.md)
 - [ActivityStyle.transient](activitystyle/transient.md)
-### Operators
-- [static func == (ActivityStyle, ActivityStyle) -> Bool](activitystyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](activitystyle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](activitystyle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](activitystyle/equatable-implementations.md)
 
 ## Relationships
 

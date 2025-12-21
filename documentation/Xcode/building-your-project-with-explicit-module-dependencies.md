@@ -13,7 +13,11 @@ Explicit scheduling of module builds allows the Xcode build system to make intel
 The Xcode build system explicitly builds module dependencies when:
 
 - Compiling C or Objective-C source code with modules enabled. The `Enable Modules (C and Objective-C)` setting in the build settings editor controls the use of modules. This is the default setting for all new projects, but can be changed in the `Apple Clang - Language - Modules` section of the build settings editor.
-- Compiling Swift source code which has opted-in to explicitly built modules using the `Explicitly Built Modules` setting in the `Swift Compiler - General` section of the build settings editor. Explicitly built modules aren’t supported when using the C++ interoperability features in Swift.
+- Compiling Swift source code using the default C/Objective-C interoperability mode.
+
+For Swift code, explicitly built modules improves the debugging experience.
+
+> **Note**: Explicitly built modules aren’t supported when using the C++ interoperability features in Swift and not enabled by default for targets using Swift 4 or earlier. To enable explicitly built modules, set the [`Explicitly Built Modules`](build-settings-reference#Explicitly-Built-Modules.md) build setting to `Yes`.
 
 ##### Understand How Module Dependencies Are Built
 

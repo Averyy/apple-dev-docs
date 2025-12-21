@@ -38,7 +38,7 @@ struct Todo: Codable, Transferable {
 }
 
  extension UTType {
-     static var todo: UTType { UTType(exportedAs: "com.example.todo") }
+     static let todo = UTType(exportedAs: "com.example.todo")
 }
 ```
 
@@ -51,11 +51,6 @@ struct Todo: Codable, Transferable {
   Creates a transfer representation for a given type and type identifier.
 - [init(for: Item.Type, contentType: UTType, encoder: Encoder, decoder: Decoder)](codablerepresentation/init(for:contenttype:encoder:decoder:).md)
   Creates a transfer representation for a given type with the encoder and decoder you supply.
-### Type Aliases
-- [CodableRepresentation.Body](codablerepresentation/body.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](codablerepresentation/transferrepresentation-implementations.md)
 
 ## Relationships
 

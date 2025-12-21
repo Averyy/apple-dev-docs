@@ -22,7 +22,7 @@ let kSecAttrApplicationLabel: CFString
 
 #### Discussion
 
-The corresponding value is of type doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9 and contains a label for this item. This attribute is different from the [`kSecAttrLabel`](ksecattrlabel.md) attribute, which is intended to be human-readable. Instead, this attribute is used to look up a key programmatically; in particular, for keys of class [`kSecAttrKeyClassPublic`](ksecattrkeyclasspublic.md) and [`kSecAttrKeyClassPrivate`](ksecattrkeyclassprivate.md), the value of this attribute is the hash of the public key.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains a label for this item. This attribute is different from the [`kSecAttrLabel`](ksecattrlabel.md) attribute, which is intended to be human-readable. Instead, this attribute is used to look up a key programmatically; in particular, for keys of class [`kSecAttrKeyClassPublic`](ksecattrkeyclasspublic.md) and [`kSecAttrKeyClassPrivate`](ksecattrkeyclassprivate.md), the value of this attribute is the hash of the public key.
 
 
 ---

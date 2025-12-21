@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Reports which security features the user disables in `recoveryOS`. This property is only present for Apple silicon when `SecureBootLevel` is `medium`.
+Reports which security features the user disables in `recoveryOS`. This property is only present for a Mac with Apple silicon when `SecureBootLevel` is `medium`.
 
 **Availability**:
 - macOS 11.0+

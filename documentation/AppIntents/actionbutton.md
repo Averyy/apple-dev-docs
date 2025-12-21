@@ -33,6 +33,8 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
   Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
 - [Focus](focus.md)
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 

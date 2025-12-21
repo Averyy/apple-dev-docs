@@ -3,6 +3,8 @@
 **Framework**: Network Extension  
 **Kind**: init
 
+Initializes a quantum-secure pre-shared key (PPK) configuration.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,6 +18,11 @@
 ```swift
 init(identifier: String, keychainReference: Data)
 ```
+
+## Parameters
+
+- `identifier`: The identifier for the PPK.
+- `keychainReference`: A persistent reference to a keychain item with the class   that contains the PPK.
 
 
 ---

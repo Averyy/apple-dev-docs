@@ -26,10 +26,6 @@ case orderedDescending
   The left operand is smaller than the right operand.
 - [ComparisonResult.orderedSame](comparisonresult/orderedsame.md)
   The two operands are equal.
-- [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
-  The left operand is smaller than the right operand.
-- [ComparisonResult.orderedSame](comparisonresult/orderedsame.md)
-  The two operands are equal.
 
 
 ---

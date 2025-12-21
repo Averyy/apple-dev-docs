@@ -9,7 +9,6 @@ Disable rendering of ambient occlusion and shadows that ground objects in an AR 
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
-- macOS 10.15+
 
 ## Declaration
 

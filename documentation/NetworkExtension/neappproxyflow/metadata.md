@@ -22,7 +22,7 @@ var metaData: NEFlowMetaData { get }
 
 - [func setMetadata(nw_parameters_t)](neappproxyflow/setmetadata(_:).md)
   Sets the flow’s metadata for use by proxy providers.
-- [typealias nw_parameters_t = any OS_nw_parameters](../Network/nw_parameters_t.md)
+- [typealias nw_parameters_t](../Network/nw_parameters_t.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 - [var isBound: Bool](neappproxyflow/isbound.md)
   A Boolean value that indicates whether the flow has a binding to a specific interface.

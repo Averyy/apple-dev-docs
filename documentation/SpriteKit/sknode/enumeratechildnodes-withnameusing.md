@@ -17,7 +17,6 @@ Searches the children of the receiving node to perform processing for nodes that
 ## Declaration
 
 ```swift
-@MainActor
 func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
@@ -29,7 +28,7 @@ func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, 
 
 This method enumerates the child array in order, searching for nodes whose names match the search parameter. The block is called once for each node that matches the name parameter.
 
-The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](https://developer.apple.com/documentation/swift/true) and the processing stops.
+The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the processing stops.
 
 Listing 1. Enumerating child nodes
 

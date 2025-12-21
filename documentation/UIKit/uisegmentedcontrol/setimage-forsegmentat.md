@@ -25,7 +25,7 @@ A segment can have only an image or a title; it can’t have both. There’s no 
 
 ## Parameters
 
-- `image`: An image object to display in the segment. .
+- `image`: An image object to display in the segment.
 - `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ( ) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also

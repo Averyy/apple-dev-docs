@@ -1,4 +1,4 @@
-# calloutRightAccessoryForAnnotation
+# calloutRightAccessoryForAnnotation(annotation)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,9 +11,7 @@ Returns an element to use as a custom accessory on the right side of the callout
 ## Declaration
 
 ```swift
-Element calloutRightAccessoryForAnnotation(
-	mapkit.Annotation annotation
-);
+calloutRightAccessoryForAnnotation?(annotation: Annotation): HTMLElement;
 ```
 
 #### Return Value
@@ -22,7 +20,7 @@ This method returns a DOM element to display as the right accessory.
 
 #### Discussion
 
-You can use this method to provide a custom accessory to the right side of the callout content area. It works similarly to [`calloutLeftAccessoryForAnnotation`](annotationcalloutdelegate/calloutleftaccessoryforannotation.md).
+You can use this method to provide a custom accessory to the right side of the callout content area. It works similarly to [`calloutLeftAccessoryForAnnotation(annotation)`](annotationcalloutdelegate/calloutleftaccessoryforannotation.md).
 
 ## Parameters
 
@@ -30,11 +28,11 @@ You can use this method to provide a custom accessory to the right side of the c
 
 ## See Also
 
-- [calloutContentForAnnotation](annotationcalloutdelegate/calloutcontentforannotation.md)
+- [calloutContentForAnnotation(annotation)](annotationcalloutdelegate/calloutcontentforannotation.md)
   Returns custom content for the callout bubble.
-- [calloutElementForAnnotation](annotationcalloutdelegate/calloutelementforannotation.md)
+- [calloutElementForAnnotation(annotation)](annotationcalloutdelegate/calloutelementforannotation.md)
   Returns an element representing a custom callout.
-- [calloutLeftAccessoryForAnnotation](annotationcalloutdelegate/calloutleftaccessoryforannotation.md)
+- [calloutLeftAccessoryForAnnotation(annotation)](annotationcalloutdelegate/calloutleftaccessoryforannotation.md)
   Returns an element to use as a custom accessory on the left side of the callout content area.
 
 

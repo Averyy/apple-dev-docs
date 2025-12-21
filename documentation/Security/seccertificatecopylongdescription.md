@@ -16,7 +16,7 @@ func SecCertificateCopyLongDescription(_ alloc: CFAllocator?, _ certificate: Sec
 
 #### Return Value
 
-A string object containing the long description, or `NULL` if an error occurred. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function when you are done with it.
+A string object containing the long description, or `NULL` if an error occurred. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
 
 #### Discussion
 

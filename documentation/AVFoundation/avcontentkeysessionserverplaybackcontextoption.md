@@ -22,12 +22,12 @@ struct AVContentKeySessionServerPlaybackContextOption
 
 ## Topics
 
-### Server Playback Context Options
+### Server playback context options
 - [static let protocolVersions: AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption/protocolversions.md)
   Specifies the versions of the content protection protocols supported by the application.
 - [static let serverChallenge: AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption/serverchallenge.md)
   Specifies a nonce to include in the secure server playback context (SPC) to prevent replay attacks.
-### Initializing an Options Structure
+### Initializing an options structure
 - [init(rawValue: String)](avcontentkeysessionserverplaybackcontextoption/init(rawvalue:).md)
   Creates a playback context options structure with the specified raw value.
 

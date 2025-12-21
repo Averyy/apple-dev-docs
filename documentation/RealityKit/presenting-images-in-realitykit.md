@@ -2,7 +2,11 @@
 
 **Framework**: RealityKit
 
-Create and display spatial scenes in RealityKit.
+Create and display spatial scenes in RealityKit
+
+**Availability**:
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -92,7 +96,7 @@ The app implements an [`onChange(of:perform:)`](https://developer.apple.com/docu
 
 #### Manage Image Presentation
 
-In the `update` closure of the [`RealityView`](realityview.md), the app retrieves the presentation screen size of the image presentation component using the entity’s `Entity/observable` property. This ensures that update is called when the `presentationScreenSize` changes.
+In the `update` closure of the [`RealityView`](realityview.md), the app retrieves the presentation screen size of the image presentation component using the entity’s [`observable`](entity/observable-swift.property.md) property. This ensures that update is called when the `presentationScreenSize` changes.
 
 ```swift
 guard let presentationScreenSize = appModel

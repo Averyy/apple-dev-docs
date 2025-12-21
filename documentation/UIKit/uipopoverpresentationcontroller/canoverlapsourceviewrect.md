@@ -20,7 +20,7 @@ var canOverlapSourceViewRect: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) allows the popover to overlap the rectangle in the [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) property when space is constrained. The default value of this property is false, which prevents the popover from overlapping the source rectangle.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) allows the popover to overlap the rectangle in the [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) property when space is constrained. The default value of this property is false, which prevents the popover from overlapping the source rectangle.
 
 ## See Also
 

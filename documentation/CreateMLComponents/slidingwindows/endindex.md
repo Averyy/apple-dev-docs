@@ -20,6 +20,17 @@ The collection’s “past the end” position–that is, the position one great
 var endIndex: Int { get }
 ```
 
+## See Also
+
+- [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
+  The input shaped array.
+- [let length: Int](slidingwindows/length.md)
+  The number samples in each window.
+- [var startIndex: Int](slidingwindows/startindex.md)
+  The position of the first window.
+- [let stride: Int](slidingwindows/stride.md)
+  The number of samples between windows.
+
 
 ---
 

@@ -19,9 +19,6 @@ enum PaymentCycle
 
 ## Topics
 
-### Operators
-- [static func == (PaymentCardTransactionRequest.PaymentCycle, PaymentCardTransactionRequest.PaymentCycle) -> Bool](paymentcardtransactionrequest/paymentcycle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [PaymentCardTransactionRequest.PaymentCycle.monthly](paymentcardtransactionrequest/paymentcycle/monthly.md)
   Payment is monthly.
@@ -29,14 +26,6 @@ enum PaymentCycle
   Payment is weekly.
 - [PaymentCardTransactionRequest.PaymentCycle.yearly](paymentcardtransactionrequest/paymentcycle/yearly.md)
   Payment is yearly.
-### Instance Properties
-- [var hashValue: Int](paymentcardtransactionrequest/paymentcycle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](paymentcardtransactionrequest/paymentcycle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](paymentcardtransactionrequest/paymentcycle/equatable-implementations.md)
 
 ## Relationships
 

@@ -26,7 +26,7 @@ final class NWBrowser
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 ### Browsing for Services
 - [init(for: NWBrowser.Descriptor, using: NWParameters)](nwbrowser/init(for:using:).md)
   Initializes a browser with a type of service to discover.

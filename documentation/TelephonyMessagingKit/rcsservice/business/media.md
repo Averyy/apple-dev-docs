@@ -6,8 +6,8 @@
 Structure containing media information provided by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,16 +23,6 @@ struct Media
   URL for media.
 - [let sha256Digest: String?](rcsservice/business/media/sha256digest.md)
   Fingerprint that can be used to verify the integrity of the media referred to by `url`.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/media/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/media/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing media instances
-- [static func == (RCSService.Business.Media, RCSService.Business.Media) -> Bool](rcsservice/business/media/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/media/equatable-implementations.md)
 
 ## Relationships
 

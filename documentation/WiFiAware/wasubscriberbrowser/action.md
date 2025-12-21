@@ -6,8 +6,8 @@
 The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

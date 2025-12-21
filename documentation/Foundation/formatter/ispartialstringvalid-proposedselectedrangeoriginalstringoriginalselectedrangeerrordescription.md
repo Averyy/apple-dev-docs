@@ -22,11 +22,11 @@ func isPartialStringValid(_ partialStringPtr: AutoreleasingUnsafeMutablePointer<
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `partialStringPtr` is acceptable, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `partialStringPtr` is acceptable, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-In a subclass implementation, evaluate `partialString` according to the context. Return [`true`](https://developer.apple.com/documentation/swift/true) if `partialStringPtr` is acceptable and [`false`](https://developer.apple.com/documentation/swift/false) if `partialStringPtr` is unacceptable. If you return [`false`](https://developer.apple.com/documentation/swift/false) and assign a new string to `partialStringPtr` and a new range to `proposedSelRangePtr`, the string and selection range are changed, otherwise, if no values are assigned to `partialStringPtr` or `proposedSelRangePtr`, the change is rejected. If you return [`false`](https://developer.apple.com/documentation/swift/false), you can also return by indirection an `NSString` object (in `error`) that explains the reason why the validation failed; the delegate (if any) of the `NSControl` object managing the cell can then respond to the failure in control:didFailToValidatePartialString:errorDescription:.
+In a subclass implementation, evaluate `partialString` according to the context. Return [`true`](https://developer.apple.com/documentation/Swift/true) if `partialStringPtr` is acceptable and [`false`](https://developer.apple.com/documentation/Swift/false) if `partialStringPtr` is unacceptable. If you return [`false`](https://developer.apple.com/documentation/Swift/false) and assign a new string to `partialStringPtr` and a new range to `proposedSelRangePtr`, the string and selection range are changed, otherwise, if no values are assigned to `partialStringPtr` or `proposedSelRangePtr`, the change is rejected. If you return [`false`](https://developer.apple.com/documentation/Swift/false), you can also return by indirection an `NSString` object (in `error`) that explains the reason why the validation failed; the delegate (if any) of the `NSControl` object managing the cell can then respond to the failure in control:didFailToValidatePartialString:errorDescription:.
 
 ## Parameters
 

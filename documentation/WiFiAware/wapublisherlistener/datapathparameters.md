@@ -6,8 +6,8 @@
 The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -25,7 +25,7 @@ The code below is an example of how to set a data path configuration:
 NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices)) datapath: .defaults) )
 ```
 
-> ❗ **Important**:  Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
+> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
 
 ## Topics
 

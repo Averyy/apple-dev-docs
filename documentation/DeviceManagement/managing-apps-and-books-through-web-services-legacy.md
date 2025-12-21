@@ -6,7 +6,7 @@ Associate volume purchases with users or devices using endpoints for Mobile Devi
 
 #### Overview
 
-Volume Purchase Program (VPP) allows an organization to manage and assign apps to users. If a user no longer needs an app, you can reclaim the app license and assign it to a different user. VPP can also assign a license to a device’s serial number, so an Apple ID is not required to download the app.
+Volume Purchase Program (VPP) allows an organization to manage and assign apps to users. If a user no longer needs an app, you can reclaim the app license and assign it to a different user. VPP can also assign a license to a device’s serial number, so an Apple Account is not required to download the app.
 
 ##### Authentication
 
@@ -46,7 +46,7 @@ If this field is present in the response, it should serve as a reminder that it 
 
 ##### Read Only Access
 
-You can tailor different sets of privileges for individual content managers using Managed Apple IDs. This allows a fine range of control over what these users can do. For example, a content manager that only has the “Read Only” privileges can use the [`Get a User`](get-a-user.md), [`Get Users`](get-users-5boi1.md), and [`Get Assets`](get-assets-44p83.md) endpoints, but can’t use the [`Retire a User`](retire-a-user.md) or [`Manage Licenses`](manage-licenses.md) endpoints. You can also assign content managers “Can Purchase” and/or “Can Manage” privileges, so that an individual content manager can manage licenses but not buy them.
+You can tailor different sets of privileges for individual content managers using Managed Apple Accounts. This allows a fine range of control over what these users can do. For example, a content manager that only has the “Read Only” privileges can use the [`Get a User`](get-a-user.md), [`Get Users`](get-users-5boi1.md), and [`Get Assets`](get-assets-44p83.md) endpoints, but can’t use the [`Retire a User`](retire-a-user.md) or [`Manage Licenses`](manage-licenses.md) endpoints. You can also assign content managers “Can Purchase” and/or “Can Manage” privileges, so that an individual content manager can manage licenses but not buy them.
 
 > **Note**:  Purchasing users and managing users automatically have read privileges.
 
@@ -123,9 +123,9 @@ In the latter example, the delay is 2 minutes.
 ### Large Record Sets
 - [Retrieving a Large Record Set](retrieving-a-large-record-set.md)
   Efficiently work with large record sets.
-### Managed Apple IDs
-- [Associating an Apple ID with a Volume Purchase Program (VPP) User](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md)
-  Manage Apple IDs within your organization effectively.
+### Managed Apple Accounts
+- [Associating an Apple Account with a Volume Purchase Program (VPP) User](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md)
+  Manage Apple Accounts within your organization effectively.
 ### VPP Account Protection
 - [Protecting Your VPP Account](protecting-your-vpp-account.md)
   Ensure a Volume Purchase Program (VPP) account is not managed or reset by another product.

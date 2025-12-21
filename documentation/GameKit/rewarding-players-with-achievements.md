@@ -14,35 +14,25 @@ Your game can have a maximum of 100 achievements, 100 points per achievement, an
 
 For design guidance, see [`Human Interface Guidelines > Technologies > Game Center > Achievements`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center#Achievements).
 
-##### Configure Achievements
+#### Configure and Test Achievements
 
-Before you can access achievements in your code, you can configure them in Xcode and sync the configuration updates you make with App Store Connect. Begin configuring achievements by creating a GameKit configuration file. In Xcode, choose File > New > File from Template. Select GameKit File, and click Next. In the sheet that appears, enter a name for the configuration and click Create.
+Configure achievements in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md).
 
-If you’ve already configured achievements in App Store Connect, click More (…) at the bottom of the left column. Then choose Pull from App Store Connect. Select the bundle ID or Game Center group for your game from the list, and click pull. Resource details appear in the editor on the right.
+When you configure an achievement in Xcode, you specify details like how many points the players earn for it, and whether they can earn the achievement more than once.
 
-To create a new achievement, click Add (+) at the bottom of the left column, and choose Achievement. When you create an achievement, you specify details like how many points the players earn for it, and whether they can earn the achievement more than once.
-
-> 💡 **Tip**: Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
+![A screenshot showing the Xcode project with a GameKit configuration file selected. An achievement is in a selected state and it shows a variety of properties to configure, like the reference name and point value.](https://docs-assets.developer.apple.com/published/1fe64e8b43979a11f6b5dfbb0d82ba89/xcode-config-achievements%402x.png)
 
 You also localize the user-facing text and assets in each language and region you support, and specify whether to hide the achievement from players before they reach a goal in your game. If you don’t hide the achievement, Game Center shows it immediately in the locked state. Players can browse all the achievements in your game, including locked achievements, to learn more about them.
 
 If you add an achievement to an unreleased version of your game or sign the game with a development certificate, Game Center annotates the achievement with a prerelease indicator. For example, if you run your game in Xcode, a prerelease indicator appears next to the achievement name and a message appears in the detail view. To change an achievement’s app version, see [`Add achievements to an app version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/add-achievements-to-an-app-version).
 
-> **Note**: If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
+Use the Game Progress Manager to test achievements on your local device before you push the configuration update to App Store Connect. After selecting an achievement, update the progress for it in the detail panel on the right. When the progress updates, the system sends an update to your app so you can verify that the achievement changes.
 
-To learn more about the information you enter in App Store Connect, see [`Achievement properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/achievements).
+![A screenshot showing the Game Progress Manager with an achievement is in a selected state. The right panel shows the completion progress for the achievement that you can update to see it reflected in your local game.](https://docs-assets.developer.apple.com/published/af75ca8489bb71d74a68b8fe798d848f/xcode-progress-manager-achievements%402x.png)
 
-##### Test Achievements By Using the Progress Manager
+For more information about the achievement properties you can configure, see [`Achievement properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/achievements).
 
-Before you begin testing your GameKit configuration, you need to enable Debug Mode. In Xcode, choose Product > Scheme > Edit Scheme. From the Run configuration, select Options and toggle Enable Debug Mode.
-
-To begin testing your achievement configuration, open the game Progress Manager. In Xcode, choose Debug > GameKit > Manage Game Progress. From the top left of the window that appears, select the physical device you use for testing, and the project you want to debug. The test data stays local to your machine and doesn’t rely on App Store Connect to test.
-
-After selecting the device and app, choose the achievement you want to test. Update the progress for an achievement in the detail panel on the right. When the progress updates, the system sends an update to your app so you can verify that the achievement changes.
-
-If you want to reset the progress for your achievements and leaderboards, click the reset button at the top of the Progress Manager. You can’t access previous occurrences of achievements and leaderboards after resetting the Progress Manager.
-
-##### Get the Object That Represents the Achievement
+#### Get the Object That Represents the Achievement
 
 To start or continue reporting progress toward an achievement, you need a [`GKAchievement`](gkachievement.md) object that represents the achievement.
 
@@ -64,7 +54,7 @@ if achievement == nil {
 
 If the achievement isn’t in the array, your game hasn’t reported any progress toward this achievement for this player yet, and the dashboard shows it in the locked state. You must create a new [`GKAchievement`](gkachievement.md) object using the identifier from App Store Connect. For the local player, use the [`init(identifier:)`](gkachievement/init(identifier:).md) method to create the [`GKAchievement`](gkachievement.md) object. For another player, when ending a turn-based match, use the [`init(identifier:player:)`](gkachievement/init(identifier:player:).md) method.
 
-##### Report the Players Progress
+#### Report the Players Progress
 
 Initially, the percentage complete is `0` and the dashboard shows the achievement in the locked state. As the player progresses toward earning an achievement, you report the percentage the player completes for the achievement to Game Center.
 
@@ -86,13 +76,15 @@ try await GKAchievement.report(achievementsToReport)
 
 When reporting a percentage greater than `0` and less than `100`, the dashboard shows the achievement as in-progress. When you report that the player completes the achievement 100%, the dashboard shows the image for the achievement, and Game Center adds it to the player’s completed achievements.
 
-GameKit also displays a banner notifying the player when they complete an achievement. If you want to display your own interface, set the [`showsCompletionBanner`](gkachievement/showscompletionbanner.md) property to [`false`](https://developer.apple.com/documentation/swift/false) before reporting the player’s progress so the default banner doesn’t appear.
+GameKit also displays a banner notifying the player when they complete an achievement. If you want to display your own interface, set the [`showsCompletionBanner`](gkachievement/showscompletionbanner.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) before reporting the player’s progress so the default banner doesn’t appear.
 
 You can also hide an achievement in Xcode when you configure it, and not report on the progress until the player completes it. For example, use a hidden achievement if an achievement description reveals aspects of your game’s plot, or if you want to surprise the player with awards.
 
 If the player completes all achievements in your game or if you want to clear all progress the local player makes toward all their achievements, you can reset them using the [`resetAchievements(completionHandler:)`](gkachievement/resetachievements(completionhandler:).md) class method.
 
-##### Show Achievements to Players
+If you prefer to report progress through your own server, see [`Game Center player achievements`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center-player-achievements).
+
+#### Show Achievements to Players
 
 Players can view their achievements in the dashboard, which provides a familiar and consistent experience for users. You can add the access point to your game so players can open the dashboard and navigate to their achievements. The access point displays achievements in the highlights, and on the dashboard when the player opens it. You can also display the dashboard in the state that shows the achievements so players can drill down and navigate to their other Game Center data.
 
@@ -100,10 +92,6 @@ If you want to display the data directly in your interface, you can load details
 
 ## See Also
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
-  Provide your users a convenient connection to the Game Center dashboard.
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
-  Provide an interface for players to navigate to their Game Center data from your game.
 - [class GKAchievement](gkachievement.md)
   An achievement you can award a player as they make progress toward and reach a goal in your game.
 - [class GKAchievementDescription](gkachievementdescription.md)

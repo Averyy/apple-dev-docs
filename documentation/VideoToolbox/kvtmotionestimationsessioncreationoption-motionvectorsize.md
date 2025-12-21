@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: var
 
+The size of the search blocks that motion estimation session uses.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,11 +21,7 @@ let kVTMotionEstimationSessionCreationOption_MotionVectorSize: CFString!
 
 #### Discussion
 
-```None
-The size of the search blocks used in VTMotionEstimationSession.
-```
-
-VTMotionEstimationSessionCreate takes a dictionary of creation options, motionVectorProcessorSelectionOptions. kVTMotionEstimationSessionCreationOption_MotionVectorSize can be supplied with CFNumber to override the default search block size. Currently supported motion vector size is 4 or 16, meaning 4x4 or 16x16 respectively. 16x16 is the default if this key is not provided.
+[`VTMotionEstimationSessionCreate`](vtmotionestimationsessioncreate.md) takes a dictionary of creation options, `motionVectorProcessorSelectionOptions`. You can supply [`kVTMotionEstimationSessionCreationOption_MotionVectorSize`](kvtmotionestimationsessioncreationoption_motionvectorsize.md) with `CFNumber` to override the default search block size. Supported motion vector size is 4 or 16, meaning 4x4 or 16x16 respectively. 16x16 is the default if you don’t provide this key.
 
 
 ---

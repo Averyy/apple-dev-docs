@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The preferred width for items in the group when [`prefersEqualWidths`](nsgrouptouchbaritem/prefersequalwidths.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The preferred width for items in the group.
 
 **Availability**:
 - iOS 13.0+
@@ -19,6 +19,8 @@ var preferredItemWidth: CGFloat { get set }
 ```
 
 #### Discussion
+
+This width applies when [`prefersEqualWidths`](nsgrouptouchbaritem/prefersequalwidths.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This is the width that items are set to if there is enough room, and if the items don’t clip.
 

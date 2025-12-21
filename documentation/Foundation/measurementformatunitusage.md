@@ -49,12 +49,19 @@ struct MeasurementFormatUnitUsage<UnitType> where UnitType : Dimension
   A usage of a temperature measurement related to the weather.
 ### Type Properties
 - [static var barometric: MeasurementFormatUnitUsage<UnitPressure>](measurementformatunitusage/barometric.md)
+  Describes the unit for barometric pressure
 - [static var focalLength: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/focallength.md)
+  Used to format the focal length of an optical system, such as that of camera lenses
 - [static var liquid: MeasurementFormatUnitUsage<UnitVolume>](measurementformatunitusage/liquid.md)
+  Used to format the amount of liquid
 - [static var rainfall: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/rainfall.md)
+  Used to format the rainfall amount
 - [static var snowfall: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/snowfall.md)
+  Used to format the snowfall amount
 - [static var visibility: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/visibility.md)
+  Describes the distance of visibility
 - [static var wind: MeasurementFormatUnitUsage<UnitSpeed>](measurementformatunitusage/wind.md)
+  Describes the unit for wind speed
 
 ## Relationships
 

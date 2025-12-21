@@ -30,6 +30,8 @@ An array of MIME type strings.
   Returns an array of the file types the asset supports.
 - [class func isPlayableExtendedMIMEType(String) -> Bool](avurlasset/isplayableextendedmimetype(_:).md)
   Returns a Boolean value that indicates whether the asset is playable with the specified codecs and container type.
+- [class var audiovisualContentTypes: [UTType]](avurlasset/audiovisualcontenttypes.md)
+  Provides the content types the AVURLAsset class understands.
 
 
 ---

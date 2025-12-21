@@ -17,7 +17,7 @@ The color to apply to the glyph text or image.
 
 ```swift
 @NSCopying
-@MainActor var glyphTintColor: UIColor? { get set }
+@MainActor var glyphTintColor: NSColor? { get set }
 ```
 
 #### Discussion

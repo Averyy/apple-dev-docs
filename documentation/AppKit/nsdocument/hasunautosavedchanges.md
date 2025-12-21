@@ -17,7 +17,7 @@ var hasUnautosavedChanges: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the document has changes that have not been autosaved; otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false). A document has unsaved changes when the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method has been called since the last save.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the document has changes that have not been autosaved; otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false). A document has unsaved changes when the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method has been called since the last save.
 
 ## See Also
 

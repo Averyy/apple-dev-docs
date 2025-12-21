@@ -33,13 +33,6 @@ struct LogisticRegressionClassifierModel<Scalar, Label> where Scalar : MLShapedA
 ### Performing the classification
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<Label>](logisticregressionclassifiermodel/applied(to:eventhandler:).md)
   Performs a classification on a single input.
-- [LogisticRegressionClassifierModel.Input](logisticregressionclassifiermodel/input.md)
-  The input type.
-### Type Aliases
-- [LogisticRegressionClassifierModel.Output](logisticregressionclassifiermodel/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](logisticregressionclassifiermodel/transformer-implementations.md)
 
 ## Relationships
 

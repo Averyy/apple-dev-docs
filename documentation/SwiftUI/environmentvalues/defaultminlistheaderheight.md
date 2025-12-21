@@ -26,12 +26,18 @@ When this value is `nil`, the system chooses the appropriate height. The default
 
 ## See Also
 
-- [func headerProminence(Prominence) -> some View](view/headerprominence(_:).md)
-  Sets the header prominence for this view.
-- [var headerProminence: Prominence](environmentvalues/headerprominence.md)
-  The prominence to apply to section headers within a view.
-- [enum Prominence](prominence.md)
-  A type indicating the prominence of a view hierarchy.
+- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+  Applies an inset to the rows in a list.
+- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+  The default minimum height of rows in a list.
+- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+  Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
+  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
+- [struct ListSectionSpacing](listsectionspacing.md)
+  The spacing options between two adjacent sections in a list.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 
 
 ---

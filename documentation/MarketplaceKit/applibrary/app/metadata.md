@@ -3,6 +3,8 @@
 **Framework**: MarketplaceKit  
 **Kind**: struct
 
+Information about an app’s version and account.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,18 +15,17 @@
 struct Metadata
 ```
 
+#### Overview
+
+The [`installedMetadata`](applibrary/app/installedmetadata.md) property of the [`AppLibrary.App`](applibrary/app.md) class is of this type.
+
 ## Topics
 
-### Operators
-- [static func == (AppLibrary.App.Metadata, AppLibrary.App.Metadata) -> Bool](applibrary/app/metadata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
+### Inspecting app metadata
 - [let account: String?](applibrary/app/metadata/account.md)
 - [let appleVersionID: AppleVersionID](applibrary/app/metadata/appleversionid.md)
 - [let shortVersion: String](applibrary/app/metadata/shortversion.md)
 - [let version: String](applibrary/app/metadata/version.md)
-### Default Implementations
-- [Equatable Implementations](applibrary/app/metadata/equatable-implementations.md)
 
 ## Relationships
 
@@ -32,6 +33,11 @@ struct Metadata
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var installedMetadata: AppLibrary.App.Metadata?](applibrary/app/installedmetadata.md)
+  The app version and the account that’s installing the app
 
 
 ---

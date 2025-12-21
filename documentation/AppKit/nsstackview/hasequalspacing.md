@@ -17,9 +17,9 @@ var hasEqualSpacing: Bool { get set }
 
 #### Discussion
 
-The distances between adjacent views in a stack view are either constrained to equal each other or settable to custom spacings using the [`setCustomSpacing(_:after:)`](nsstackview/setcustomspacing(_:after:).md) method. The default value for the [`hasEqualSpacing`](nsstackview/hasequalspacing.md) property is [`false`](https://developer.apple.com/documentation/swift/false), which enables custom spacing. To require equal spacing, set this property to [`true`](https://developer.apple.com/documentation/swift/true), which disables the [`setCustomSpacing(_:after:)`](nsstackview/setcustomspacing(_:after:).md) method.
+The distances between adjacent views in a stack view are either constrained to equal each other or settable to custom spacings using the [`setCustomSpacing(_:after:)`](nsstackview/setcustomspacing(_:after:).md) method. The default value for the [`hasEqualSpacing`](nsstackview/hasequalspacing.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), which enables custom spacing. To require equal spacing, set this property to [`true`](https://developer.apple.com/documentation/Swift/true), which disables the [`setCustomSpacing(_:after:)`](nsstackview/setcustomspacing(_:after:).md) method.
 
-With [`hasEqualSpacing`](nsstackview/hasequalspacing.md) set to [`false`](https://developer.apple.com/documentation/swift/false) (the default), the Auto Layout constraints for spacing between views in a gravity area are as shown in the table of the [`spacing`](nsstackview/spacing.md) property.
+With [`hasEqualSpacing`](nsstackview/hasequalspacing.md) set to [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the Auto Layout constraints for spacing between views in a gravity area are as shown in the table of the [`spacing`](nsstackview/spacing.md) property.
 
 If you specify equal spacing, the system changes these constraints to the values shown in the table below.
 

@@ -6,8 +6,8 @@
 Initializes a color fade command.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,11 +17,11 @@ init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirecti
 
 ## Parameters
 
-- `id`: The unique id of this command.
+- `id`: The unique ID of this command.
 - `time`: The time this command starts during playback.
-- `duration`: The duration of the command - this can be .zero if the command has no duration.
-- `direction`: Fade direction for this command instance.
-- `color`: Fade color.
+- `duration`: The duration of the command. This can be   if the command has no duration.
+- `direction`: The fade direction for this command instance.
+- `color`: The fade color.
 - `offset`: The offset from the start time of this command. This parameter is usually unused and let in control of a  .
 
 

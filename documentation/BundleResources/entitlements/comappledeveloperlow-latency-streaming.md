@@ -6,7 +6,7 @@
 A Boolean value indicating whether your app may use low-latency wireless networking.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 #### Discussion
 

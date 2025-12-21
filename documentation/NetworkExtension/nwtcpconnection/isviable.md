@@ -21,7 +21,7 @@ var isViable: Bool { get }
 
 #### Discussion
 
-Evaluates to [`true`](https://developer.apple.com/documentation/swift/true) if the connection can read and write data, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Use Key-Value Observing to watch this property.
+Evaluates to [`true`](https://developer.apple.com/documentation/Swift/true) if the connection can read and write data, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Use Key-Value Observing to watch this property.
 
 ## See Also
 

@@ -26,10 +26,6 @@ case orderedSame
   The left operand is smaller than the right operand.
 - [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
   The left operand is greater than the right operand.
-- [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
-  The left operand is smaller than the right operand.
-- [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
-  The left operand is greater than the right operand.
 
 
 ---

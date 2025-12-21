@@ -20,6 +20,13 @@ Computes the absolute of the tensor’s elements.
 func abs() -> MLTensor
 ```
 
+## See Also
+
+- [func ceil() -> MLTensor](mltensor/ceil.md)
+  Computes the ceiling of the tensor’s elements.
+- [func floor() -> MLTensor](mltensor/floor.md)
+  Computes the floor of the tensor’s elements.
+
 
 ---
 

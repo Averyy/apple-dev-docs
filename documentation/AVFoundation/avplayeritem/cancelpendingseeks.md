@@ -25,7 +25,7 @@ func cancelPendingSeeks()
 
 Use this method to cancel and release the completion handlers of pending seeks.
 
-The `finished` parameter of the completion handlers will be set to [`false`](https://developer.apple.com/documentation/swift/false).
+The `finished` parameter of the completion handlers will be set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

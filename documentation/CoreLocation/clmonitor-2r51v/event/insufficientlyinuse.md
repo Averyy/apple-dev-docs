@@ -19,7 +19,7 @@ var insufficientlyInUse: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app isn’t receiving location updates because it’s insufficiently in use.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then the app isn’t receiving location updates because it’s insufficiently in use.
 
 ## See Also
 

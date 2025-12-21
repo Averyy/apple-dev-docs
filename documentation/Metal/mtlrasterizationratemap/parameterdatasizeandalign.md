@@ -22,11 +22,13 @@ var parameterDataSizeAndAlign: MTLSizeAndAlign { get }
 
 ## Mentions
 
-- [Scaling Variable Rasterization Rate Content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
 
 #### Discussion
 
-To convert coordinate values inside your shader, pass the rate map data into the shader in a [`MTLBuffer`](mtlbuffer.md) object. The place in the buffer where you store the parameter information must have at least the size and alignment provided by this property.
+To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](mtlbuffer.md) instance. The buffer location where you store the parameter information needs at least the size and alignment this property provides.
+
+You can convert between screen space and physical fragment space by binding the buffer to the shader with type `rasterization_rate_map_data`, then constructing `rasterization_rate_map_decoder` with the buffer data. For more details, see the “Variable Rasterization Rate” section of the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 

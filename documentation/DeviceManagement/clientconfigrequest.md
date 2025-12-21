@@ -17,8 +17,8 @@ object ClientConfigRequest
 
 ## Mentions
 
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
 - [Subscribing to Notifications](subscribing-to-notifications.md)
+- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
 
 ## Topics
 

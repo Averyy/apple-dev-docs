@@ -6,7 +6,7 @@
 A structure to represent limitations of tracking the user’s surroundings.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

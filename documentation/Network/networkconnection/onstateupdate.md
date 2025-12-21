@@ -1,0 +1,31 @@
+# onStateUpdate(_:)
+
+**Framework**: Network  
+**Kind**: method
+
+Set a closure to be called when the connection’s state changes, which may be called multiple times until the connection is cancelled.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+@discardableResult
+final func onStateUpdate(_ handler: @escaping @isolated(any) (NetworkConnection<ApplicationProtocol>, NetworkChannel<ApplicationProtocol>.State) -> Void) -> Self
+```
+
+#### Discussion
+
+This closure will inherit the isolation domain of the caller.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/network/networkconnection/onstateupdate(_:))*

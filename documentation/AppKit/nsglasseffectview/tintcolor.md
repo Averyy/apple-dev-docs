@@ -3,10 +3,10 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Modifies the background and effect to tint toward the provided tint color.
+The color the glass effect view uses to tint the background and glass effect toward.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

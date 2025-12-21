@@ -17,11 +17,11 @@ class NSSwitch
 
 #### Overview
 
-The [`NSSwitch`](nsswitch.md) class provides a simple interface for displaying and toggling a Boolean state, such as on/off. A switch toggles its [`state`](nsswitch/state.md) and sends its [`action`](nscontrol/action.md) when clicked, activated through the keyboard, or tapped in the Touch Bar. [`NSSwitch`](nsswitch.md) also allows dragging between states, and if [`isContinuous`](nscontrol/iscontinuous.md) is [`true`](https://developer.apple.com/documentation/swift/true), the switch sends its [`action`](nscontrol/action.md) for each change in position during the drag.
+The [`NSSwitch`](nsswitch.md) class provides a simple interface for displaying and toggling a Boolean state, such as on/off. A switch toggles its [`state`](nsswitch/state.md) and sends its [`action`](nscontrol/action.md) when clicked, activated through the keyboard, or tapped in the Touch Bar. [`NSSwitch`](nsswitch.md) also allows dragging between states, and if [`isContinuous`](nscontrol/iscontinuous.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the switch sends its [`action`](nscontrol/action.md) for each change in position during the drag.
 
-Use a switch to toggle significant preferences, or preferences that provide access to other controls. Avoid creating lists or tables of switches; instead, for general-purpose toggles, use an instance of [`NSButton`](nsbutton.md) to display a checkbox.
+[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), and they ignore attempts to set a non-[`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) value.
 
-[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`Nil`](https://developer.apple.com/documentation/objectivec/nil), and they ignore attempts to set a non-[`Nil`](https://developer.apple.com/documentation/objectivec/nil) value.
+For design guidance, see Human Interface Guidelines > [`Toggles`](https://developer.apple.com/design/Human-Interface-Guidelines/toggles).
 
 ## Topics
 

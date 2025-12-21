@@ -19,8 +19,8 @@ func startMonitoring(for region: CLRegion)
 
 ## Mentions
 
-- [Monitoring the user’s proximity to geographic regions](monitoring-the-user-s-proximity-to-geographic-regions.md)
 - [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+- [Monitoring the user’s proximity to geographic regions](monitoring-the-user-s-proximity-to-geographic-regions.md)
 
 #### Discussion
 

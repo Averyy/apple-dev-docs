@@ -17,7 +17,7 @@ func shouldCloseWindowController(_ windowController: NSWindowController, delegat
 
 #### Discussion
 
-If the window controller is the document’s last one, or is marked as causing the document to close, this method calls the method in the `shouldCloseSelector` parameter with the result of [`canClose(withDelegate:shouldClose:contextInfo:)`](nsdocument/canclose(withdelegate:shouldclose:contextinfo:).md). In all other cases, this method calls `shouldCloseSelector` with [`true`](https://developer.apple.com/documentation/swift/true). This method is called automatically by [`NSWindow`](nswindow.md) for any window that has a window controller and a document associated with it. `NSWindow` calls this method prior to sending its `delegate` the [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) message. Pass the `contextInfo` object with the callback.
+If the window controller is the document’s last one, or is marked as causing the document to close, this method calls the method in the `shouldCloseSelector` parameter with the result of [`canClose(withDelegate:shouldClose:contextInfo:)`](nsdocument/canclose(withdelegate:shouldclose:contextinfo:).md). In all other cases, this method calls `shouldCloseSelector` with [`true`](https://developer.apple.com/documentation/Swift/true). This method is called automatically by [`NSWindow`](nswindow.md) for any window that has a window controller and a document associated with it. `NSWindow` calls this method prior to sending its `delegate` the [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) message. Pass the `contextInfo` object with the callback.
 
 The `shouldCloseSelector` callback method should have the following signature:
 

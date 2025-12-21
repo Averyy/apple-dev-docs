@@ -16,7 +16,7 @@ var usesEPSOnResolutionMismatch: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

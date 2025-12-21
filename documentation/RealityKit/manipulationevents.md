@@ -6,7 +6,7 @@
 Events that occur while a person manipulates an entity.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

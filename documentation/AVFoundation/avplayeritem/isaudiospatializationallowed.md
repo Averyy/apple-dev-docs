@@ -26,6 +26,10 @@ var isAudioSpatializationAllowed: Bool { get set }
   A Boolean value that indicates whether the audio output of the player is muted.
 - [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+  Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+  The player’s intended Spatial Audio experience.
 
 
 ---

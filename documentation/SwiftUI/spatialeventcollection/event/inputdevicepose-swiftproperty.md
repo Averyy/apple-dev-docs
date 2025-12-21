@@ -9,7 +9,7 @@ The 3D position and orientation of the device controlling the touch, if one exis
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

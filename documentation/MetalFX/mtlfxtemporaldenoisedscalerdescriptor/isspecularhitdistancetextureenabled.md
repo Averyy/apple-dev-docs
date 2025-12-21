@@ -9,7 +9,7 @@ A Boolean value indicating whether the scaler evaluates a specular hit distance 
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - tvOS 18.0+
 
 ## Declaration

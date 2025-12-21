@@ -23,7 +23,7 @@ A newly initialized window controller.
 
 This method is the designated initializer for `NSWindowController`.
 
-This initializer is useful when a window has been loaded but no window controller is assigned. The default initialization turns on cascading, sets the [`shouldCloseDocument`](nswindowcontroller/shouldclosedocument.md) property to [`false`](https://developer.apple.com/documentation/swift/false), and sets the window frame autosave name to an empty string. As a side effect, the created window controller is added as an observer of the [`willCloseNotification`](nswindow/willclosenotification.md)s posted by that window object (which is handled by a private method). If you make the window controller a delegate of the window, you can implement NSWindow’s windowShouldClose: delegate method.
+This initializer is useful when a window has been loaded but no window controller is assigned. The default initialization turns on cascading, sets the [`shouldCloseDocument`](nswindowcontroller/shouldclosedocument.md) property to [`false`](https://developer.apple.com/documentation/Swift/false), and sets the window frame autosave name to an empty string. As a side effect, the created window controller is added as an observer of the [`willCloseNotification`](nswindow/willclosenotification.md)s posted by that window object (which is handled by a private method). If you make the window controller a delegate of the window, you can implement NSWindow’s windowShouldClose: delegate method.
 
 ## Parameters
 

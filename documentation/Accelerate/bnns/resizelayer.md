@@ -13,7 +13,6 @@ A layer object that wraps a resize filter and manages its deinitialization.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

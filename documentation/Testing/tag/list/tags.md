@@ -1,9 +1,9 @@
-# tags(_:)
+# tags
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: property
 
-Construct a list of tags to apply to a test.
+The list of tags contained in this instance.
 
 **Availability**:
 - iOS ?+
@@ -19,18 +19,14 @@ Construct a list of tags to apply to a test.
 ## Declaration
 
 ```swift
-static func tags(_ tags: Tag...) -> Self
+var tags: [Tag]
 ```
 
-#### Return Value
+#### Discussion
 
-An instance of [`Tag.List`](tag/list.md) containing the specified tags.
-
-## Parameters
-
-- `tags`: The list of tags to apply to the test.
+This preserves the list of the tags exactly as they were originally specified, in their original order, including duplicate entries. To access the complete, unique set of tags applied to a [`Test`](test.md), see [`tags`](test/tags.md).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/tag/list/tags(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/tag/list/tags)*

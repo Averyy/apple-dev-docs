@@ -17,11 +17,11 @@ optional func application(_ sender: NSApplication, delegateHandlesKey key: Strin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your delegate handles the key or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if your delegate handles the key or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not.
 
 #### Discussion
 
-Implement this method and return [`true`](https://developer.apple.com/documentation/swift/true) if your delegate handles the specified `key`, Your delegate must be able get or set the scriptable property or element that corresponds to that key. You need to handle only your app’s custom commands. The app already implements methods for each of the keys that it handles, where the method name matches the key.
+Implement this method and return [`true`](https://developer.apple.com/documentation/Swift/true) if your delegate handles the specified `key`, Your delegate must be able get or set the scriptable property or element that corresponds to that key. You need to handle only your app’s custom commands. The app already implements methods for each of the keys that it handles, where the method name matches the key.
 
 For example, a scriptable app that doesn’t use Cocoa’s document-based app architecture can implement this method to supply its own document ordering. You want to do this because the standard app delegate expects to work with a document-based app. The TextEdit app (whose source is distributed with macOS developer tools) provides the following implementation:
 

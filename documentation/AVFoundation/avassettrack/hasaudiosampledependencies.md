@@ -21,7 +21,7 @@ var hasAudioSampleDependencies: Bool { get }
 
 #### Discussion
 
-The value is always [`false`](https://developer.apple.com/documentation/swift/false) for nonaudible media.
+The value is always [`false`](https://developer.apple.com/documentation/Swift/false) for nonaudible media.
 
 
 ---

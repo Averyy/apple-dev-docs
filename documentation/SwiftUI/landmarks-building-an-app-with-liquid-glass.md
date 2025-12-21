@@ -5,10 +5,10 @@
 Enhance your app experience with system-provided and custom Liquid Glass.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -30,7 +30,7 @@ The sample also demonstrates several techniques to use when changing window size
 
 The sample applies a background extension effect to the featured landmark header in the top view, and the main image in the landmark detail view. This effect extends and blurs the image under the sidebar and inspector when they’re open, creating a full edge-to-edge experience.
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar and inspector panel visible.](https://docs-assets.developer.apple.com/published/e4fd08f1a4bc961253ca0dcc3dc85325/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/32d9f0bd8395e9cbd92e197c7aa2b4b3/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
 
 To achieve this effect, the sample creates and configures an [`Image`](image.md) that extends to both the leading and trailing edges of the containing view, and applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the image. For the featured image, the sample adds an overlay with a headline and button after the modifier, so that only the image extends under the sidebar and inspector.
 
@@ -44,7 +44,7 @@ Within each continent section in `LandmarksView`, an instance of `LandmarkHorizo
 
 To achieve this effect, the app aligns the scroll views next to the leading and trailing edges of the containing view.
 
-![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/a4b11a4a06f283b210c25071788c472e/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
+![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/709551ab6017da3888bbb3b9b1620fed/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
 
 For more information, see [`Landmarks: Extending horizontal scrolling under a sidebar or inspector`](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md).
 
@@ -59,7 +59,7 @@ In `LandmarkDetailView`, the sample adds toolbar items for:
 
 The system applies Liquid Glass to toolbar items automatically:
 
-![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/1c1efa4a5ba686b18392730385956a34/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/5074257308473e4332f64b4f188098de/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
 
 The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [`Landmarks: Refining the system provided Liquid Glass effect in toolbars`](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md).
 
@@ -67,9 +67,9 @@ The sample also organizes the toolbar into related groups, instead of having all
 
 Badges provide people with a visual indicator of the activities they’ve recorded in the Landmarks app. When a person completes all four activities for a landmark, they earn that landmark’s badge. The sample uses custom Liquid Glass elements with badges, and shows how to coordinate animations with Liquid Glass.
 
-![An image of the landmarks view on an iPhone, with the badges view visible over some landmarks.](https://docs-assets.developer.apple.com/published/ca44bff06ffc2b55dd82e9778ef5c3b6/Landmarks-Building-an-app-with-Liquid-Glass-5%402x.png)
+![An image of the landmarks view on an iPhone, with the badges view visible over some landmarks.](https://docs-assets.developer.apple.com/published/0906c5ecab4688f18b19faf293acb363/Landmarks-Building-an-app-with-Liquid-Glass-5%402x.png)
 
-To create a custom Liquid Glass badge, Landmarks uses a view with an `Image` to display a system symbol image for the badge. The badge has a background hexagon `Image` filled with a custom color. The badge view uses the [`glassEffect(_:in:isEnabled:)`](view/glasseffect(_:in:isenabled:).md) modifier to apply Liquid Glass to the badge.
+To create a custom Liquid Glass badge, Landmarks uses a view with an `Image` to display a system symbol image for the badge. The badge has a background hexagon `Image` filled with a custom color. The badge view uses the [`glassEffect(_:in:)`](view/glasseffect(_:in:).md) modifier to apply Liquid Glass to the badge.
 
 To demonstrate the morphing effect that the system provides with Liquid Glass animations, the sample organizes the badges and the toggle button into a [`GlassEffectContainer`](glasseffectcontainer.md), and assigns each badge a unique [`glassEffectID(_:in:)`](view/glasseffectid(_:in:).md).
 

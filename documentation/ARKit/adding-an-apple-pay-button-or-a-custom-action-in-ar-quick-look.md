@@ -30,7 +30,7 @@ https://example.com/biplane.usdz#applePayButtonType=plain
 
 You can choose from the button options using the button type values shown here.
 
-![Figure showing each of the seven Apple Pay button options, annotated by the the button type value parameter associated with the button style.](https://docs-assets.developer.apple.com/published/c17be74f46391236a827e7f35eb23947/media-3421819%402x.png)
+![Figure showing each of the seven Apple Pay button options, annotated by the button type value parameter associated with the button style.](https://docs-assets.developer.apple.com/published/c17be74f46391236a827e7f35eb23947/media-3421819%402x.png)
 
 ##### Provide Custom Text
 
@@ -131,8 +131,8 @@ If your banner displays an Apple Messages for Business button, send the user to 
   Display a model or scene that the user can move, scale, and share with others.
 - [Adding Visual Effects in AR Quick Look and RealityKit](adding-visual-effects-in-ar-quick-look-and-realitykit.md)
   Balance the appearance and performance of your AR experiences with modeling strategies.
-- [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
-  Add augmented reality functionality to your 3D content using USDZ schemas.
+- [OpenUSD schemas for AR](../USD/usd-schemas-for-ar.md)
+  Add augmented reality functionality to your 3D content using USD schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.
 

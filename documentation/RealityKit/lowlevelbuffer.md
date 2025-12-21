@@ -4,12 +4,12 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -40,6 +40,8 @@ final class LowLevelBuffer
 
 ## See Also
 
+- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+  Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)

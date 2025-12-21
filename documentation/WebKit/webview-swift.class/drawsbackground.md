@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), a default background is drawn; if [`false`](https://developer.apple.com/documentation/swift/false), it is not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), a default background is drawn; if [`false`](https://developer.apple.com/documentation/Swift/false), it is not.
 
 ## See Also
 

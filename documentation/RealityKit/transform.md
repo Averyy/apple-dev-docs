@@ -10,7 +10,7 @@ A component that defines the scale, rotation, and translation of an entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -51,9 +51,11 @@ An entity acquires a [`Transform`](transform.md) component, as well as a set of 
 - [func hash(into: inout Hasher)](transform/hash(into:).md)
   Hashes the essential components of the transform by feeding them into the given hash function.
 ### Initializers
-- [init(_:)](transform/init(_:).md)
+- [init(AffineTransform3D)](transform/init(_:).md)
 - [init(projectiveTransform:)](transform/init(projectivetransform:).md)
   A convenience initializer for the Transform Component that takes a `ProjectiveTransform3D`
+### Default Implementations
+- [ProjectiveTransformable3DFloat Implementations](transform/projectivetransformable3dfloat-implementations.md)
 
 ## Relationships
 
@@ -80,6 +82,8 @@ An entity acquires a [`Transform`](transform.md) component, as well as a set of 
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
 - [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
+- [Entity.ForwardDirection](entity/forwarddirection.md)
+  Defines the forward direction for an entity.
 
 
 ---

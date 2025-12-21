@@ -20,9 +20,7 @@ func sec_protocol_options_set_tls_diffie_hellman_parameters(_ options: sec_proto
 
 #### Discussion
 
-```None
- Set the supported Diffie-Hellman parameters.
-```
+Set the supported Diffie-Hellman parameters.
 
 ## Parameters
 

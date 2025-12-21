@@ -24,8 +24,8 @@ typealias TKTokenOperationConstraint = AnyObject
 
 This object persistently identifies a constraint for performing specific operation on specific object.
 
-- [`true`](https://developer.apple.com/documentation/swift/true), indicating that the operation is always allowed, without any authentication necessary.
-- [`false`](https://developer.apple.com/documentation/swift/false), indicating that the operation is never allowed; this value isn’t typically used.
+- [`true`](https://developer.apple.com/documentation/Swift/true), indicating that the operation is always allowed, without any authentication necessary.
+- [`false`](https://developer.apple.com/documentation/Swift/false), indicating that the operation is never allowed; this value isn’t typically used.
 - Any other property list compatible value defined by the implementation of the token extension. Any such constraint is required to stay constant for the entire lifetime of the token. For example, a Smart Card token extension may decide to use the string constant `"PIN"` to indicate that the operation is authenticated with valid PIN entry to the card.
 
 ## See Also

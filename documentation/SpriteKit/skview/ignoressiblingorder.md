@@ -27,7 +27,7 @@ var ignoresSiblingOrder: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means that when multiple nodes share the same z position, those nodes are sorted and rendered in a deterministic order. Parents are rendered before their children, and siblings are rendered in array order. When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the position of the nodes in the tree is ignored when determining the rendering order. The rendering order of nodes at the same z position is arbitrary and may change every time a new frame is rendered. When sibling and parent order is ignored, SpriteKit applies additional optimizations to improve rendering performance. If you need nodes to be rendered in a specific and deterministic order, you must set the z position of those nodes.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which means that when multiple nodes share the same z position, those nodes are sorted and rendered in a deterministic order. Parents are rendered before their children, and siblings are rendered in array order. When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the position of the nodes in the tree is ignored when determining the rendering order. The rendering order of nodes at the same z position is arbitrary and may change every time a new frame is rendered. When sibling and parent order is ignored, SpriteKit applies additional optimizations to improve rendering performance. If you need nodes to be rendered in a specific and deterministic order, you must set the z position of those nodes.
 
 ## See Also
 

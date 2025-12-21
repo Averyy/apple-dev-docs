@@ -16,7 +16,7 @@ let kQLPreviewPropertyAttachmentDataKey: CFString!
 
 #### Discussion
 
-The value is a doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9 object.
+The value is a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object.
 
 ## See Also
 

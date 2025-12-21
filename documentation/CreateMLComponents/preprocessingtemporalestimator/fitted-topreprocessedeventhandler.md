@@ -40,8 +40,8 @@ The fitted transformer.
   The intermediate type.
 - [PreprocessingTemporalEstimator.Output](preprocessingtemporalestimator/output.md)
   The output type.
-- [PreprocessingTemporalEstimator.Transformer](preprocessingtemporalestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

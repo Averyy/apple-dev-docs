@@ -26,7 +26,7 @@ var canStartWithMinimumPlayers: Bool { get set }
 
 #### Discussion
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), players can optionally start a multiplayer game when the minimum number of players accept their invitations. Design your game to progressively add additional players up to the maximum number of players. The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), players can optionally start a multiplayer game when the minimum number of players accept their invitations. Design your game to progressively add additional players up to the maximum number of players. The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 To set the minimum and maximum number of players, see [`Create a match request`](finding-multiple-players-for-a-game#Create-a-match-request.md).
 

@@ -19,7 +19,7 @@ func startVideoCapture() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) on success or [`false`](https://developer.apple.com/documentation/swift/false) on failure. This method may return a value of [`false`](https://developer.apple.com/documentation/swift/false) for various reasons, among them the following:
+[`true`](https://developer.apple.com/documentation/Swift/true) on success or [`false`](https://developer.apple.com/documentation/Swift/false) on failure. This method may return a value of [`false`](https://developer.apple.com/documentation/Swift/false) for various reasons, among them the following:
 
 - Movie capture is already in progress
 - The device does not support movie capture

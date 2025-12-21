@@ -21,7 +21,7 @@ An array of `NSString` objects representing the writable document types.
 
 #### Discussion
 
-The save operation type is represented by `saveOperation`. For every kind of save operation except `NSSaveToOperation`, the returned array must only include types for which the app can play the Editor role. For `NSSaveToOperation` the returned array may include types for which the app can only play the Viewer role, and other types that the app can merely export. The default implementation of this method returns `[[self class] writableTypes]` with, except during `NSSaveToOperation`, types for which [`isNativeType(_:)`](nsdocument/isnativetype(_:).md) returns [`false`](https://developer.apple.com/documentation/swift/false) filtered out.
+The save operation type is represented by `saveOperation`. For every kind of save operation except `NSSaveToOperation`, the returned array must only include types for which the app can play the Editor role. For `NSSaveToOperation` the returned array may include types for which the app can only play the Viewer role, and other types that the app can merely export. The default implementation of this method returns `[[self class] writableTypes]` with, except during `NSSaveToOperation`, types for which [`isNativeType(_:)`](nsdocument/isnativetype(_:).md) returns [`false`](https://developer.apple.com/documentation/Swift/false) filtered out.
 
 You can override this method to limit the set of writable types when the document currently contains data that is not representable in all types. For example, you can disallow saving to RTF files when the document contains an attachment and can only be saved properly to RTFD files.
 

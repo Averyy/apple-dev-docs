@@ -1,4 +1,4 @@
 Completed scraping SiriKit!
-Total pages scraped: 37
+Total pages scraped: 36
 Pages skipped (unchanged): 3
 Pages failed: 0

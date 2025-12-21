@@ -23,8 +23,6 @@ func scan<T>(_ initialResult: T, _ nextPartialResult: (T, Output) -> T) -> Resul
 - [func map<T>((Output) -> T) -> Just<T>](just/map(_:).md)
 - [func tryMap<T>((Output) throws -> T) -> Result<T, any Error>.Publisher](just/trymap(_:).md)
 - [func mapError<E>((Just<Output>.Failure) -> E) -> Result<Output, E>.Publisher](just/maperror(_:).md)
-- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](just/replacenil(with:).md)
-  Replaces nil elements in the stream with the provided element.
 - [func tryScan<T>(T, (T, Output) throws -> T) -> Result<T, any Error>.Publisher](just/tryscan(_:_:).md)
 - [func setFailureType<E>(to: E.Type) -> Result<Output, E>.Publisher](just/setfailuretype(to:).md)
 

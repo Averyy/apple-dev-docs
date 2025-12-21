@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Posted when a movie player is about to enter full-screen mode. The `userInfo` dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/MediaPlayer/fullscreen-notification-keys).
+Posted when a movie player is about to enter full-screen mode.
 
 **Availability**:
 - iOS 3.2+
@@ -18,6 +18,8 @@ static let MPMoviePlayerWillEnterFullscreen: NSNotification.Name
 ```
 
 #### Discussion
+
+The `userInfo` dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/MediaPlayer/fullscreen-notification-keys).
 
 A movie player can enter full screen mode programmatically (see the [`setFullscreen(_:animated:)`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/setFullscreen(_:animated:)) method) or by user interaction. The movie player whose state has changed is available as the object associated with the notification.
 
@@ -52,7 +54,7 @@ A movie player can enter full screen mode programmatically (see the [`setFullscr
 - [static let MPMoviePlayerNowPlayingMovieDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayernowplayingmoviedidchange.md)
   Posted when the currently playing movie has changed. There is no `userInfo` dictionary.
 - [static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerplaybackdidfinish.md)
-  Posted when a movie has finished playing. The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerPlaybackDidFinishReasonUserInfoKey) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
+  Posted when a movie has finished playing.
 
 
 ---

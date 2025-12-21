@@ -22,11 +22,11 @@ func setDepthStoreAction(_ storeAction: MTLStoreAction)
 
 #### Discussion
 
-If the store action for the given depth attachment was set to [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) when the parallel render command encoder was created, you must call this method to specify another store action before you call the [`endEncoding()`](mtlcommandencoder/endencoding().md) method.
+If the store action for the given depth attachment was set to [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) when the parallel render command encoder was created, you need to call this method to specify another store action before you call the [`endEncoding()`](mtlcommandencoder/endencoding().md) method.
 
 ## Parameters
 
-- `storeAction`: The desired store action for the depth attachment. This value must not be  .
+- `storeAction`: The desired store action for the depth attachment. This value can’t be  .
 
 ## See Also
 

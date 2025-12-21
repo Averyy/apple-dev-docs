@@ -21,13 +21,13 @@ var canBecomeFocused: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the view can become focused; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the view can become focused; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-By default, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). This property informs the focus engine if a view is capable of being focused. Sometimes even if a view returns [`true`](https://developer.apple.com/documentation/swift/true), a view may not be focusable for the following reasons:
+By default, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). This property informs the focus engine if a view is capable of being focused. Sometimes even if a view returns [`true`](https://developer.apple.com/documentation/Swift/true), a view may not be focusable for the following reasons:
 
 - The view is hidden.
 - The view has alpha set to 0.
-- The view has `userInteractionEnabled` set to [`false`](https://developer.apple.com/documentation/swift/false).
+- The view has `userInteractionEnabled` set to [`false`](https://developer.apple.com/documentation/Swift/false).
 - The view is not currently in the view hierarchy.
 
 ## See Also

@@ -6,8 +6,8 @@
 Retrieves the MMS configuration for the carrier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,6 +29,11 @@ Fetch the MMS configuration when your app launches and during susbscription chan
 ## Parameters
 
 - `cellularServiceID`: The cellular service identifier for which to fetch the MMS configuration.
+
+## See Also
+
+- [MMSService.Configuration](mmsservice/configuration.md)
+  A structure that provides information about MMS messages sent and received using the current carrier.
 
 
 ---

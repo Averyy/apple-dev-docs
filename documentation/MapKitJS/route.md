@@ -1,7 +1,7 @@
 # Route
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: class
 
 Information about a route, including step-by-step instructions, distance, and estimated travel time.
 
@@ -11,16 +11,7 @@ Information about a route, including step-by-step instructions, distance, and es
 ## Declaration
 
 ```swift
-dictionary Route {
-	mapkit.PolylineOverlay polyline;
-	mapkit.Coordinate[][] path;
-	RouteStep[] steps;
-	string name;
-	number distance;
-	number expectedTravelTime;
-	mapkit.Directions.Transport transportType;
-	boolean? hasTolls;
-};
+class Route
 ```
 
 #### Overview
@@ -47,18 +38,18 @@ A [`Route`](route.md) object encapsulates the complete information for a route t
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 ## See Also
 
-- [route](mapkit.directions/route.md)
+- [route(request, callback)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
-- [DirectionsRequest](directionsrequest.md)
+- [interface DirectionsRequest](directionsrequest.md)
   The requested start and end points for a route, as well as the planned mode of transportation.
-- [DirectionsResponse](directionsresponse.md)
+- [interface DirectionsResponse](directionsresponse.md)
   The directions and estimated travel time that return for a route.
-- [RouteStep](routestep.md)
+- [class RouteStep](routestep.md)
   A single step of the route between the requested start and end points.
 
 

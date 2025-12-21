@@ -19,10 +19,8 @@ struct ModelParameters
 ### Creating parameters
 - [init(validation: MLActivityClassifier.ModelParameters.Validation, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](mlactivityclassifier/modelparameters-swift.struct/init(validation:batchsize:maximumiterations:predictionwindowsize:).md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
-- [init(validationData: MLActivityClassifier.DataSource, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:)-66z1y.md)
+- [init(validationData:batchSize:maximumIterations:predictionWindowSize:)](mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:).md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
-- [init(validationData: MLDataTable?, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:)-6lc3g.md)
-  Creates a set of activity classifier parameters that includes a validation dataset in a data table.
 - [MLActivityClassifier.ModelParameters.Validation](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum.md)
   The source of a validation dataset for an activity classifier.
 ### Accessing the training parameters

@@ -40,8 +40,6 @@ final class MLJob<Result>
   The training session’s current progress.
 - [struct MLProgress](mlprogress.md)
   A convenience type that exposes information about the progress of a training session.
-### Default Implementations
-- [Cancellable Implementations](mljob/cancellable-implementations.md)
 
 ## Relationships
 

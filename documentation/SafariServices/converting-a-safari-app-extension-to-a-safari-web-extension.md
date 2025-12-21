@@ -24,10 +24,12 @@ Add the `SFSafariAppExtensionBundleIdentifiersToReplace` key to the `NSExtension
 
 When your app installs, the Safari web extension installs with it, and Safari removes the Safari app extensions you specified in the `Info.plist` file. If any of the Safari app extensions are in the enabled state when the installation occurs, Safari also enables the Safari web extension.
 
+In Safari 26.2 and later, if the Safari web extension replaces a single Safari app extension, Safari also migrates web permissions and the setting that indicates whether the user allows the extension in Private Browsing. Safari only migrates website permissions if the Safari web extension does not require more website access than the Safari app extension.
+
 ## See Also
 
-- [Converting a web extension for Safari](converting-a-web-extension-for-safari.md)
-  Convert your existing extension to a Safari web extension using Xcode’s command-line tool.
+- [Packaging a web extension for Safari](packaging-a-web-extension-for-safari.md)
+  Package your existing extension as a Safari web extension using Xcode’s command-line tool.
 - [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
   Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 

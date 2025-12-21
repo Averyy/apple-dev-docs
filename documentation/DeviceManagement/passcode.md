@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a passcode policy.
+The payload that configures a passcode policy.
 
 **Availability**:
 - iOS 4.0+
@@ -22,13 +22,14 @@ object Passcode
 
 Specify `com.apple.mobiledevice.passwordpolicy` as the payload type.
 
-The presence of this payload type prompts an iOS or macOS device to present the user with a passcode entry mechanism. The complexity of the passcode can be customized with this payload.
+The presence of this payload type causes the device to present the user with a passcode entry mechanism. The payload controls the complexity of the passcode.
 
-In iOS user enrollments, the system allows the Passcode payload type, but ignores all keys. Instead, the presence of the Passcode payload forces these settings:
+For user enrollments, the system allows this payload type, but ignores most of the keys. Instead, the presence of the payload forces only these settings:
 
-- `allowSimple` = `false`
-- `forcePIN` = `true`
-- `minLength` = `6`
+- `allowSimple`: always set to `false`
+- `forcePIN`: always set to `true`
+- `minLength`: always set to `6`
+- `maxInactivity`: if this key is present its value is ignored, but the `never` option is removed in the Settings UI.
 
 ##### Profile Availability
 
@@ -103,9 +104,9 @@ In iOS user enrollments, the system allows the Passcode payload type, but ignore
 ## See Also
 
 - [object SecurityPreferences](securitypreferences.md)
-  The payload you use to configure security preferences.
+  The payload that configures security preferences.
 - [object SmartCard](smartcard.md)
-  The payload you use to configure a smart card.
+  The payload that configures a smart card.
 
 
 ---

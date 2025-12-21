@@ -31,20 +31,6 @@ Each negative phrase will be used to populate an app-level negative training set
   A string you construct using literal values, content from intent parameters, and other interpolated values.
 ### Initializers
 - [init(String)](negativeappshortcutphrase/init(_:).md)
-- [init(stringInterpolation: NegativeAppShortcutPhrase.StringInterpolation)](negativeappshortcutphrase/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: StringLiteralType)](negativeappshortcutphrase/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [NegativeAppShortcutPhrase.ExtendedGraphemeClusterLiteralType](negativeappshortcutphrase/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [NegativeAppShortcutPhrase.StringLiteralType](negativeappshortcutphrase/stringliteraltype.md)
-  A type that represents a string literal.
-- [NegativeAppShortcutPhrase.UnicodeScalarLiteralType](negativeappshortcutphrase/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](negativeappshortcutphrase/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](negativeappshortcutphrase/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

@@ -25,7 +25,9 @@ var prefersEphemeralWebBrowserSession: Bool { get set }
 
 #### Discussion
 
-Set [`prefersEphemeralWebBrowserSession`](aswebauthenticationsession/prefersephemeralwebbrowsersession.md) to `true` to request that the browser doesn’t share cookies or other browsing data between the authentication session and the user’s normal browser session. Whether the request is honored depends on the user’s default web browser. Safari always honors the request.
+Set [`prefersEphemeralWebBrowserSession`](aswebauthenticationsession/prefersephemeralwebbrowsersession.md) to `true` to request that the browser doesn’t share cookies or other browsing data between the authentication session and the user’s normal browser session.
+
+Safari always respects the request. In macOS, someone can choose a different default browser that might or might not respect the request.
 
 The value of this property is `false` by default.
 

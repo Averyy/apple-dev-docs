@@ -6,14 +6,19 @@
 Initializes the parameters with defaults.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 init(performanceMode: WAPerformanceMode = .bulk)
 ```
+
+## See Also
+
+- [var performanceMode: WAPerformanceMode](waparameters/performancemode.md)
+  The initial performance configuration of the data path when connected.
 
 
 ---

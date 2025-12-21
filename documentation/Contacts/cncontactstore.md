@@ -90,7 +90,7 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
 - [Accessing a person’s contact data using Contacts and ContactsUI](accessing-a-person-s-contact-data-using-contacts-and-contactsui.md)
   Allow people to grant your app access to contact data by adding the Contact access button and Contact access picker to your app.
 - [NSContactsUsageDescription](../BundleResources/Information-Property-List/NSContactsUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s contacts.
+  A message that tells people why the app is requesting access to their contacts.
 - [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 

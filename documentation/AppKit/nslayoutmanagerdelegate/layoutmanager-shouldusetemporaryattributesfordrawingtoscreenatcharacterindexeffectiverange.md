@@ -20,7 +20,7 @@ The temporary attributes for the layout manager to use, or `nil` if no temporary
 
 #### Discussion
 
-The default behavior, if this method is not implemented, is to use temporary attributes only when drawing to the screen, so an implementation to match that behavior would return `attrs` if `toScreen` is [`true`](https://developer.apple.com/documentation/swift/true) and `nil` otherwise, without changing `effectiveCharRange`.
+The default behavior, if this method is not implemented, is to use temporary attributes only when drawing to the screen, so an implementation to match that behavior would return `attrs` if `toScreen` is [`true`](https://developer.apple.com/documentation/Swift/true) and `nil` otherwise, without changing `effectiveCharRange`.
 
 ## Parameters
 

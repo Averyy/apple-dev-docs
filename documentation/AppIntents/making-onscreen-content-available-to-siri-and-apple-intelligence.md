@@ -84,7 +84,7 @@ To enable Siri and Apple Intelligence to further process the provided onscreen c
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 - [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
 
 ---

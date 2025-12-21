@@ -16,7 +16,7 @@ class var usesUserKeyEquivalents: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if menu items conform to user preferences for key equivalents; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if menu items conform to user preferences for key equivalents; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

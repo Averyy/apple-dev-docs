@@ -8,7 +8,6 @@ An observation that provides a collection of joints that make up a pose.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -46,14 +45,16 @@ protocol PoseProviding
 
 ## See Also
 
-- [struct DetectHumanBodyPoseRequest](detecthumanbodyposerequest.md)
-  A request that detects a human body pose.
-- [struct DetectHumanHandPoseRequest](detecthumanhandposerequest.md)
-  A request that detects a human hand pose.
-- [enum Chirality](chirality.md)
-  The hand sidedness of a pose.
-- [struct Joint](joint.md)
-  A pose joint represented as a normalized point in an image, along with a label and a confidence value.
+- [protocol ImageProcessingRequest](imageprocessingrequest.md)
+  A type for image-analysis requests that focus on a specific part of an image.
+- [protocol StatefulRequest](statefulrequest.md)
+  The protocol for a type that builds evidence of a condition over time.
+- [protocol TargetedRequest](targetedrequest.md)
+  A type for analyzing two images together.
+- [protocol VisionObservation](visionobservation.md)
+  A type for objects produced by image-analysis requests.
+- [protocol VisionRequest](visionrequest.md)
+  A type for image-analysis requests.
 
 
 ---

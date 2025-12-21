@@ -21,7 +21,7 @@ class MTLResourceStatePassSampleBufferAttachmentDescriptorArray
 
 ## Topics
 
-### Accessing a Sample Buffer Attachment
+### Accessing a sample buffer attachment
 - [subscript(Int) -> MTLResourceStatePassSampleBufferAttachmentDescriptor!](mtlresourcestatepasssamplebufferattachmentdescriptorarray/subscript(_:).md)
   Returns the descriptor object for the specified sample buffer attachment.
 
@@ -39,17 +39,17 @@ class MTLResourceStatePassSampleBufferAttachmentDescriptorArray
 
 ## See Also
 
-- [Managing Sparse Texture Memory](managing-sparse-texture-memory.md)
+- [Managing sparse texture memory](managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning Memory to Sparse Textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and Writing to Sparse Textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating How Often a Texture Region Is Accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
 - [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.

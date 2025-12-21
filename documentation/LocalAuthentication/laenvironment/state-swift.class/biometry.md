@@ -19,7 +19,9 @@ var biometry: LAEnvironment.MechanismBiometry? { get }
 
 #### Discussion
 
-@C nil if biometry is not supported by this device.
+Information about biometric authentication (Touch ID, Face ID or Optic ID).
+
+@c nil if biometry is not supported by this device.
 
 
 ---

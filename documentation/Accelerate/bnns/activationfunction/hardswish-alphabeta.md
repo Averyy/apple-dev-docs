@@ -13,7 +13,6 @@ An activation function that returns the hard swish function of its input.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

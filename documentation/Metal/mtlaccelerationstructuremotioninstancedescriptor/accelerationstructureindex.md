@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The index of the acceleration structure to use for this instance.
+The index of an acceleration structure which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 **Availability**:
 - iOS 15.0+

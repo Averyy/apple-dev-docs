@@ -48,20 +48,8 @@ enum LightingAndIlluminationUsage
 - [HIDUsage.LightingAndIlluminationUsage.redLevelCount](hidusage/lightingandilluminationusage/redlevelcount.md)
 - [HIDUsage.LightingAndIlluminationUsage.redUpdateChannel](hidusage/lightingandilluminationusage/redupdatechannel.md)
 - [HIDUsage.LightingAndIlluminationUsage.updateLatencyInMicroseconds](hidusage/lightingandilluminationusage/updatelatencyinmicroseconds.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/lightingandilluminationusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/lightingandilluminationusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.LightingAndIlluminationUsage.RawValue](hidusage/lightingandilluminationusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/lightingandilluminationusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/lightingandilluminationusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/lightingandilluminationusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

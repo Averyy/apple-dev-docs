@@ -49,6 +49,8 @@ class ASAuthorizationPasswordProvider
   Streamline your app’s login and onboarding procedures.
 - [class ASPasswordCredential](aspasswordcredential.md)
   A password credential.
+- [Password use in web browsers](password-use-in-web-browsers.md)
+  Register and authenticate website users by using passwords.
 
 
 ---

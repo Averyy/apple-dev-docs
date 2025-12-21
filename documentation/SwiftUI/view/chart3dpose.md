@@ -3,12 +3,14 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
+Associates a binding to be updated when the 3D chart’s pose is changed by an interaction.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,6 +18,10 @@
 @MainActor
 @preconcurrency func chart3DPose(_ pose: Binding<Chart3DPose>) -> some View
 ```
+
+## Parameters
+
+- `pose`: The 3D chart’s current pose.
 
 
 ---

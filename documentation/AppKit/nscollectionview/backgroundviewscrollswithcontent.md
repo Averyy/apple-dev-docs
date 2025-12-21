@@ -17,7 +17,7 @@ var backgroundViewScrollsWithContent: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which means that [`backgroundView`](nscollectionview/backgroundview.md) (if it exists) fills the collection view’s visible area and remains stationary when the collection view’s content is scrolled. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), [`backgroundView`](nscollectionview/backgroundview.md) matches the collection view’s frame and scrolls with the collection view’s items and other content.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which means that [`backgroundView`](nscollectionview/backgroundview.md) (if it exists) fills the collection view’s visible area and remains stationary when the collection view’s content is scrolled. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), [`backgroundView`](nscollectionview/backgroundview.md) matches the collection view’s frame and scrolls with the collection view’s items and other content.
 
 Changing the value of this property also changes the background view’s parent. When [`backgroundView`](nscollectionview/backgroundview.md) floats behind the scrolling content, it is a sibling of the collection view’s clip view. When it scrolls with the collection view’s content, it is a subview of the collection view.
 

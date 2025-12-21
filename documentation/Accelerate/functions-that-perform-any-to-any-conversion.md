@@ -35,11 +35,6 @@ Convert between Core Video or Core Graphics image data of arbitrary color spaces
   Returns the number of source buffers consumed by the converter.
 - [func vImageConverter_GetNumberOfDestinationBuffers(vImageConverter) -> UInt](vimageconverter_getnumberofdestinationbuffers(_:).md)
   Returns the number of destination buffers written to by the converter.
-### Memory management
-- [vImageConverter_Retain](vimageconverter_retain.md)
-  Retains a vImage converter.
-- [vImageConverter_Release](vimageconverter_release.md)
-  Releases a vImage converter.
 
 ## See Also
 

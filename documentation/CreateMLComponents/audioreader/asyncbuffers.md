@@ -36,15 +36,6 @@ This sequence allows iterating through the file only once.
   Constructs an iterator.
 - [AudioReader.AsyncBuffers.Iterator](audioreader/asyncbuffers/iterator.md)
   An async iterator of audio buffers.
-- [AudioReader.AsyncBuffers.AsyncIterator](audioreader/asyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [AudioReader.AsyncBuffers.Feature](audioreader/asyncbuffers/feature.md)
-  The feature type.
-### Type Aliases
-- [AudioReader.AsyncBuffers.Element](audioreader/asyncbuffers/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](audioreader/asyncbuffers/asyncsequence-implementations.md)
 
 ## Relationships
 

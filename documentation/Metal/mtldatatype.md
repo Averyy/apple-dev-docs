@@ -21,7 +21,7 @@ enum MTLDataType
 
 ## Topics
 
-### Boolean Types
+### Boolean types
 - [MTLDataType.bool](mtldatatype/bool.md)
   A Boolean value.
 - [MTLDataType.bool2](mtldatatype/bool2.md)
@@ -30,7 +30,7 @@ enum MTLDataType
   A three-component Boolean vector.
 - [MTLDataType.bool4](mtldatatype/bool4.md)
   A four-component Boolean vector.
-### 8-bit Integer Types
+### 8-bit integer types
 - [MTLDataType.char](mtldatatype/char.md)
   An 8-bit, signed integer value.
 - [MTLDataType.char2](mtldatatype/char2.md)
@@ -47,7 +47,7 @@ enum MTLDataType
   A three-component vector with 8-bit, unsigned integer values.
 - [MTLDataType.uchar4](mtldatatype/uchar4.md)
   A four-component vector with 8-bit, unsigned integer values.
-### 16-bit Integer Types
+### 16-bit integer types
 - [MTLDataType.short](mtldatatype/short.md)
   A 16-bit, signed integer value.
 - [MTLDataType.short2](mtldatatype/short2.md)
@@ -64,7 +64,7 @@ enum MTLDataType
   A three-component vector with 16-bit, unsigned integer values.
 - [MTLDataType.ushort4](mtldatatype/ushort4.md)
   A four-component vector with 16-bit, unsigned integer values.
-### 16-bit Floating-Point Types
+### 16-bit floating-point types
 - [MTLDataType.half](mtldatatype/half.md)
   A 16-bit floating-point value.
 - [MTLDataType.half2](mtldatatype/half2.md)
@@ -99,7 +99,7 @@ enum MTLDataType
   A three-component vector with 16-bit, brain floating-point values.
 - [MTLDataType.bfloat4](mtldatatype/bfloat4.md)
   A four-component vector with 16-bit, brain floating-point values.
-### 32-bit Floating-Point Types
+### 32-bit floating-point types
 - [MTLDataType.float](mtldatatype/float.md)
   A 32-bit floating-point value.
 - [MTLDataType.float2](mtldatatype/float2.md)
@@ -126,7 +126,7 @@ enum MTLDataType
   A 4x3 component matrix with 32-bit floating-point values.
 - [MTLDataType.float4x4](mtldatatype/float4x4.md)
   A 4x4 component matrix with 32-bit floating-point values.
-### 32-bit Integer Types
+### 32-bit integer types
 - [MTLDataType.int](mtldatatype/int.md)
   A 32-bit, signed integer value.
 - [MTLDataType.int2](mtldatatype/int2.md)
@@ -143,7 +143,7 @@ enum MTLDataType
   A three-component vector with 32-bit, unsigned integer values.
 - [MTLDataType.uint4](mtldatatype/uint4.md)
   A four-component vector with 32-bit, unsigned integer values.
-### 64-bit Integer Types
+### 64-bit integer types
 - [MTLDataType.long](mtldatatype/long.md)
   A 64-bit, signed integer value.
 - [MTLDataType.long2](mtldatatype/long2.md)
@@ -160,12 +160,12 @@ enum MTLDataType
   A three-component vector with 64-bit, unsigned integer values.
 - [MTLDataType.ulong4](mtldatatype/ulong4.md)
   A four-component vector with 64-bit, unsigned integer values.
-### 8-bit Pixel Format Types
+### 8-bit pixel format types
 - [MTLDataType.r8Snorm](mtldatatype/r8snorm.md)
   An ordinary pixel with one component that’s an 8-bit, normalized, signed integer value.
 - [MTLDataType.r8Unorm](mtldatatype/r8unorm.md)
   An ordinary pixel with one component that’s an 8-bit, normalized, unsigned integer value.
-### 16-bit Pixel Format Types
+### 16-bit pixel format types
 - [MTLDataType.rg8Snorm](mtldatatype/rg8snorm.md)
   An ordinary pixel with two components, each of which is an 8-bit, normalized, signed integer value.
 - [MTLDataType.rg8Unorm](mtldatatype/rg8unorm.md)
@@ -174,7 +174,7 @@ enum MTLDataType
   An ordinary pixel with one component that’s a 16-bit, normalized, signed integer value.
 - [MTLDataType.r16Unorm](mtldatatype/r16unorm.md)
   An ordinary pixel with one component that’s a 16-bit, normalized, unsigned integer value.
-### 32-bit Pixel Format Types
+### 32-bit pixel format types
 - [MTLDataType.rgba8Snorm](mtldatatype/rgba8snorm.md)
   An ordinary pixel with four components, each of which is an 8-bit, normalized, signed integer value.
 - [MTLDataType.rgba8Unorm](mtldatatype/rgba8unorm.md)
@@ -191,12 +191,12 @@ enum MTLDataType
   A packed 32-bit format with three color components, each of which is a 9-bit floating-point value.
 - [MTLDataType.rg11b10Float](mtldatatype/rg11b10float.md)
   A packed 32-bit format with three floating-point color components, two of which are 11-bit values, and one is a 10-bit value.
-### 64-bit Pixel Format Types
+### 64-bit pixel format types
 - [MTLDataType.rgba16Snorm](mtldatatype/rgba16snorm.md)
   An ordinary pixel with four components, each of which is a 16-bit, normalized, signed integer value.
 - [MTLDataType.rgba16Unorm](mtldatatype/rgba16unorm.md)
   An ordinary pixel with four components, each of which is a 16-bit, normalized, unsigned integer value.
-### Metal Resource Types
+### Metal resource types
 - [MTLDataType.texture](mtldatatype/texture.md)
   A Metal texture resource instance.
 - [MTLDataType.indirectCommandBuffer](mtldatatype/indirectcommandbuffer.md)
@@ -209,24 +209,26 @@ enum MTLDataType
   A low-level ray-tracing acceleration structure for a set of primitives.
 - [MTLDataType.instanceAccelerationStructure](mtldatatype/instanceaccelerationstructure.md)
   A high-level, ray-tracing acceleration structure for a set of low-level primitive instances.
-### Metal State Types
+### Metal state types
 - [MTLDataType.sampler](mtldatatype/sampler.md)
   A Metal texture sampler instance.
 - [MTLDataType.renderPipeline](mtldatatype/renderpipeline.md)
   A Metal render pipeline instance.
 - [MTLDataType.computePipeline](mtldatatype/computepipeline.md)
   A Metal compute pipeline instance.
-### Collection Types
+### Collection types
 - [MTLDataType.struct](mtldatatype/struct.md)
   A structure instance.
 - [MTLDataType.array](mtldatatype/array.md)
   An array instance.
 - [MTLDataType.pointer](mtldatatype/pointer.md)
   A pointer.
-### Invalid Data Types
+### Invalid data types
 - [MTLDataType.none](mtldatatype/none.md)
   A placeholder that represents a GPU function parameter that doesn’t have a valid data type.
 ### Enumeration Cases
+- [MTLDataType.depthStencilState](mtldatatype/depthstencilstate.md)
+  Represents a data type corresponding to a depth-stencil state object.
 - [MTLDataType.tensor](mtldatatype/tensor.md)
   Represents a data type corresponding to a machine learning tensor.
 ### Initializers
@@ -251,7 +253,7 @@ enum MTLDataType
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLPointerType](mtlpointertype.md)
   A description of a pointer.
 - [class MTLTextureReferenceType](mtltexturereferencetype.md)

@@ -83,11 +83,11 @@ Set these traits to tell an assistive app how an accessibility element behaves o
 
 ## See Also
 
-- [@MainActor var isAccessibilityElement: Bool { get set }](../ObjectiveC/NSObject-swift.class/isAccessibilityElement.md)
-- [@MainActor var accessibilityLabel: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityLabel.md)
-- [@MainActor var accessibilityValue: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityValue.md)
-- [@MainActor var accessibilityHint: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityHint.md)
-- [@MainActor var accessibilityTraits: UIAccessibilityTraits { get set }](../ObjectiveC/NSObject-swift.class/accessibilityTraits.md)
+- [var isAccessibilityElement: Bool](../ObjectiveC/NSObject-swift.class/isAccessibilityElement.md)
+- [var accessibilityLabel: String?](../ObjectiveC/NSObject-swift.class/accessibilityLabel.md)
+- [var accessibilityValue: String?](../ObjectiveC/NSObject-swift.class/accessibilityValue.md)
+- [var accessibilityHint: String?](../ObjectiveC/NSObject-swift.class/accessibilityHint.md)
+- [var accessibilityTraits: UIAccessibilityTraits](../ObjectiveC/NSObject-swift.class/accessibilityTraits.md)
 
 
 ---

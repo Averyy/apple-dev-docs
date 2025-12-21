@@ -6,7 +6,7 @@
 Temporaily transitions to the opposite of the effect’s current phase at the moment the override is applied.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

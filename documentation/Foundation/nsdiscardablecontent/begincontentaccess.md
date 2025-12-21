@@ -23,7 +23,7 @@ func beginContentAccess() -> Bool
 
 #### Return Value
 
-YES if the discardable contents are still available and have now been successfully accessed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+YES if the discardable contents are still available and have now been successfully accessed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

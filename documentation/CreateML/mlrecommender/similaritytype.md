@@ -23,16 +23,6 @@ enum SimilarityType
   The cosine similarity measure.
 - [MLRecommender.SimilarityType.pearson](mlrecommender/similaritytype/pearson.md)
   The Pearson correlation similarity measure.
-### Comparing similarity types
-- [static func == (MLRecommender.SimilarityType, MLRecommender.SimilarityType) -> Bool](mlrecommender/similaritytype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlrecommender/similaritytype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Getting the hash value
-- [func hash(into: inout Hasher)](mlrecommender/similaritytype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mlrecommender/similaritytype/hashvalue.md)
-  The hash value.
 ### Similarity type descriptions
 - [var description: String](mlrecommender/similaritytype/description.md)
   A text representation of the similarity type.
@@ -44,7 +34,6 @@ enum SimilarityType
 - [CustomDebugStringConvertible Implementations](mlrecommender/similaritytype/customdebugstringconvertible-implementations.md)
 - [CustomPlaygroundDisplayConvertible Implementations](mlrecommender/similaritytype/customplaygrounddisplayconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mlrecommender/similaritytype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mlrecommender/similaritytype/equatable-implementations.md)
 
 ## Relationships
 
@@ -60,8 +49,8 @@ enum SimilarityType
 
 ## See Also
 
-- [MLRecommender.ModelAlgorithmType.itemSimilarity(_:)](mlrecommender/modelalgorithmtype/itemsimilarity(_:).md)
-  An algorithm that compares the similarity from item to item.
+- [MLRecommender.ModelAlgorithmType](mlrecommender/modelalgorithmtype.md)
+  The algorithms a recommender can use to make recommendations.
 
 
 ---

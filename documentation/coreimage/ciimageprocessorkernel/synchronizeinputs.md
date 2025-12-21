@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-Tells whether or not processor input should be synchronized for CPU access.
+Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 
 **Availability**:
 - iOS 10.0+
@@ -21,16 +21,14 @@ class var synchronizeInputs: Bool { get }
 
 #### Discussion
 
-Set to return [`false`](https://developer.apple.com/documentation/swift/false) if you want your processor to be given [`CIImageProcessorInput`](ciimageprocessorinput.md) objects not synchronized for CPU access.Set to return [`false`](https://developer.apple.com/documentation/swift/false) if your subclass uses the GPU.
-
-Defaults to [`true`](https://developer.apple.com/documentation/swift/true) if not overridden.
+Generally, if your subclass uses the GPU your should override this method to return false. If not overridden, true is returned.
 
 ## See Also
 
 - [class var outputFormat: CIFormat](ciimageprocessorkernel/outputformat.md)
-  The processor’s output pixel format.
+  Override this class property if you want your processor’s output to be in a specific pixel format.
 - [class var outputIsOpaque: Bool](ciimageprocessorkernel/outputisopaque.md)
-  Boolean determining whether or not processor outputs an opaque image.
+  Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
 
 
 ---

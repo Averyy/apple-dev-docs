@@ -82,7 +82,7 @@ parentSimulationEntity.components.set(PhysicsJointsComponent())
 
 A joint needs two [`GeometricPin`](geometricpin.md) instances on separate entities to create a physics joint.
 
-The app creates each pin with the method [`set(named:position:orientation:)`](entitygeometricpins/set(named:position:orientation:).md) on its respective entity. Use `Entity/pins` to access all pins an entity owns:
+The app creates each pin with the method [`set(named:position:orientation:)`](entitygeometricpins/set(named:position:orientation:).md) on its respective entity. Use [`pins`](entity/pins.md) to access all pins an entity owns:
 
 ```swift
 // Rotate hinge orientation from x to z-axis.

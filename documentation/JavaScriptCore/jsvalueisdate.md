@@ -21,7 +21,7 @@ func JSValueIsDate(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `value` is a date; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `value` is a date; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

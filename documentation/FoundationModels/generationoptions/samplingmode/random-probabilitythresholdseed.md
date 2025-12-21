@@ -6,11 +6,11 @@
 A mode that considers a variable number of high-probability tokens based on the specified threshold.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,8 @@ With nucleus sampling, tokens are sorted by probability and added to a pool of c
 Because the number of tokens isn’t predetermined, the selection pool size will be larger when the distribution is flat and smaller when it is spikey. This variability can lead to a wider variety of options to choose from, and potentially more creative responses.
 
 > **Note**: Setting a random seed is not guaranteed to result in fully deterministic output. It is best effort.
+
+> **Note**: Sampling modes [`greedy`](generationoptions/samplingmode/greedy.md) and [`random(top:seed:)`](generationoptions/samplingmode/random(top:seed:).md)
 
 ## Parameters
 

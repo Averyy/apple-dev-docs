@@ -17,11 +17,11 @@ func NSMouseInRect(_ aPoint: NSPoint, _ aRect: NSRect, _ flipped: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the hot spot of the cursor lies inside a given rectangle, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the hot spot of the cursor lies inside a given rectangle, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method assumes an unscaled and unrotated coordinate system. Specify [`true`](https://developer.apple.com/documentation/swift/true) for `flipped` if the underlying view uses a flipped coordinate system.
+This method assumes an unscaled and unrotated coordinate system. Specify [`true`](https://developer.apple.com/documentation/Swift/true) for `flipped` if the underlying view uses a flipped coordinate system.
 
 Point-in-rectangle functions generally assume that the bottom edge of a rectangle is outside of the rectangle boundaries, while the upper edge is inside the boundaries. This method views `aRect` from the point of view of the user—that is, this method always treats the bottom edge of the rectangle as the one closest to the bottom edge of the user’s screen. By making this adjustment, this function ensures consistent mouse-detection behavior from the user’s perspective.
 

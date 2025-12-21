@@ -26,7 +26,7 @@ The [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) object calls the met
 
 ## Topics
 
-### Processing Emitted Metadata Objects
+### Processing emitted metadata objects
 - [func metadataOutput(AVCaptureMetadataOutput, didOutput: [AVMetadataObject], from: AVCaptureConnection)](avcapturemetadataoutputobjectsdelegate/metadataoutput(_:didoutput:from:).md)
   Informs the delegate that the capture output object emitted new metadata objects.
 

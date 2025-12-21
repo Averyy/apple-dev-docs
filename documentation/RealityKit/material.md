@@ -10,7 +10,7 @@ A type that describes the material aspects of a mesh, like color and texture.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -21,8 +21,8 @@ protocol Material
 
 ## Mentions
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
+- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Overview
 

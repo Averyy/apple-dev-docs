@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The external reference for an SCEP asset credential.
+The external reference for a SCEP asset credential.
 
 **Availability**:
 - iOS 17.0+
@@ -22,7 +22,7 @@ object AssetCredentialSCEPReferenceObject
 ## See Also
 
 - [object AssetCredentialSCEPAuthenticationObject](assetcredentialscepauthenticationobject.md)
-  The server authentication details for an SCEP asset credential.
+  The server authentication details for a SCEP asset credential.
 
 
 ---

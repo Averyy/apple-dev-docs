@@ -37,10 +37,14 @@ struct CustomFeatureExtractor
 
 ## See Also
 
-- [MLImageClassifier.FeatureExtractorType.scenePrint(revision:)](mlimageclassifier/featureextractortype/sceneprint(revision:).md)
-  A feature extractor trained on millions of images.
-- [case custom(MLImageClassifier.CustomFeatureExtractor)](mlimageclassifier/featureextractortype/custom(_:).md)
-  A feature extractor that you provide as a Core ML model file or a layer within that file.
+- [MLImageClassifier.DataSource](mlimageclassifier/datasource.md)
+  A data source for an image classifier.
+- [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training an image classifier model.
+- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+  The underlying base model that extracts image features for image classifier training session.
+- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+  The variations that the training process can use to generate more training data from the training data you provide.
 
 
 ---

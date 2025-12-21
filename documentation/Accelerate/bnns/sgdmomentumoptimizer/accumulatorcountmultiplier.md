@@ -13,7 +13,6 @@ The number of accumulators required for each parameter.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

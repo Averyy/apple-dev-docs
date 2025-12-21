@@ -29,19 +29,11 @@ struct ImageAugmentationOptions
   Randomly scale the pose in an image.
 - [static let translate: MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions/translate.md)
   Randomly translate the pose in an image.
-- [MLHandPoseClassifier.ImageAugmentationOptions.RawValue](mlhandposeclassifier/imageaugmentationoptions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-- [MLHandPoseClassifier.ImageAugmentationOptions.Element](mlhandposeclassifier/imageaugmentationoptions/element.md)
-  The element type of the option set.
-- [MLHandPoseClassifier.ImageAugmentationOptions.ArrayLiteralElement](mlhandposeclassifier/imageaugmentationoptions/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [Option Set Support](imageaugmentationoptions-option-set-support.md)
-  ****Inspect and modify an image augmentation option set with the properties and methods it inherits from standard protocols.
-### Default Implementations
-- [Equatable Implementations](mlhandposeclassifier/imageaugmentationoptions/equatable-implementations.md)
-- [OptionSet Implementations](mlhandposeclassifier/imageaugmentationoptions/optionset-implementations.md)
-- [RawRepresentable Implementations](mlhandposeclassifier/imageaugmentationoptions/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](mlhandposeclassifier/imageaugmentationoptions/setalgebra-implementations.md)
+- [Option set support](option-set-support.md)
+  Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
+### Creating image augmentation options
+- [init(rawValue: Int)](mlhandposeclassifier/imageaugmentationoptions/init(rawvalue:).md)
+  Creates an option set from an integer.
 
 ## Relationships
 
@@ -58,10 +50,10 @@ struct ImageAugmentationOptions
 
 ## See Also
 
-- [MLHandPoseClassifier.ModelParameters.ValidationData](mlhandposeclassifier/modelparameters-swift.struct/validationdata.md)
-  A dataset a hand pose classifier task uses to validate the model during a training session.
-- [MLHandPoseClassifier.ModelParameters.ModelAlgorithmType](mlhandposeclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
-  The hand pose classifier training algorithm options.
+- [MLHandPoseClassifier.DataSource](mlhandposeclassifier/datasource.md)
+  A hand pose classifier dataset that contains annotated images or hand joint location data.
+- [MLHandPoseClassifier.ModelParameters](mlhandposeclassifier/modelparameters-swift.struct.md)
+  A set of parameters that affect the training process of a hand pose classifier task.
 
 
 ---

@@ -26,6 +26,11 @@ Core ML segments the model’s compute graph and specializes each segment for th
 
 Use this option to tailor the specialization strategy for your model.
 
+## See Also
+
+- [MLOptimizationHints.SpecializationStrategy](mloptimizationhints-swift.struct/specializationstrategy-swift.enum.md)
+  The optimization strategy for the model specialization.
+
 
 ---
 

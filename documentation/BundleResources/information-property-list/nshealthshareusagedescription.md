@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message to the user that explains why the app requested permission to read samples from the HealthKit store.
+A message that explains to people why the app requests permission to read samples from the HealthKit store.
 
 **Availability**:
 - iOS 8.0+
@@ -12,7 +12,7 @@ A message to the user that explains why the app requested permission to read sam
 
 #### Discussion
 
-> ❗ **Important**:  This key is required if your app uses APIs that access the user’s heath data.
+> ❗ **Important**:  This key is required if your app uses APIs that access the someone’s health data.
 
 ## See Also
 

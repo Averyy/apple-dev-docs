@@ -23,7 +23,7 @@ func popToRootTemplate(animated: Bool) async throws -> Bool
 func popToRootTemplate(animated: Bool) async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
-CarPlay calls `completion` after it removes all of the required templates. The Boolean parameter is [`true`](https://developer.apple.com/documentation/swift/true) if CarPlay removes all of the templates successfully; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false) and CarPlay provides an error that describes the failure.
+CarPlay calls `completion` after it removes all of the required templates. The Boolean parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if CarPlay removes all of the templates successfully; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false) and CarPlay provides an error that describes the failure.
 
 CarPlay throws an exception if it can’t remove the templates and you don’t provide a closure.
 

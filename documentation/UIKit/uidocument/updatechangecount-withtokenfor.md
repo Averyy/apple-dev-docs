@@ -14,7 +14,6 @@ Updates the change count with reference to a change-count token passed in by UIK
 ## Declaration
 
 ```swift
-@MainActor
 func updateChangeCount(withToken changeCountToken: Any, for saveOperation: UIDocument.SaveOperation)
 ```
 

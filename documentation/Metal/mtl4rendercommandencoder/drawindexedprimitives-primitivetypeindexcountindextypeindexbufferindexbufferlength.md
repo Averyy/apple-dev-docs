@@ -7,17 +7,17 @@
 Encodes a draw command that renders an instance of a geometric primitive with indexed vertices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, indexType: MTLIndexType, indexBuffer: UInt64, indexBufferLength: Int)
+func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, indexType: MTLIndexType, indexBuffer: MTLGPUAddress, indexBufferLength: Int)
 ```
 
 #### Discussion
@@ -35,6 +35,15 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 - `indexType`: A   instance that represents the index format.
 - `indexBuffer`: GPUAddress of a   instance that contains   indices of   format.   You are responsible for ensuring this address is aligned to 2 bytes if the   format is   , and aligned to 4 bytes if the format is   .
 - `indexBufferLength`: An integer that represents the length of  , in bytes. You are responsible for   ensuring this this size is a multiple of 2 if the   format is  ,   and a multiple of 4 if the format is  .   If this draw call causes Metal to read indices at or beyond the  , Metal   continues to execute them assigning a value of   to the   attribute.
+
+## See Also
+
+- [func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, indexType: MTLIndexType, indexBuffer: MTLGPUAddress, indexBufferLength: Int, instanceCount: Int)](mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:).md)
+  Encodes a draw command that renders multiple instances of a geometric primitive with indexed vertices.
+- [func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, indexType: MTLIndexType, indexBuffer: MTLGPUAddress, indexBufferLength: Int, instanceCount: Int, baseVertex: Int, baseInstance: Int)](mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indexcount:indextype:indexbuffer:indexbufferlength:instancecount:basevertex:baseinstance:).md)
+  Encodes a draw command that renders multiple instances of a geometric primitive with indexed vertices, starting with a custom vertex and instance.
+- [func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexType: MTLIndexType, indexBuffer: MTLGPUAddress, indexBufferLength: Int, indirectBuffer: MTLGPUAddress)](mtl4rendercommandencoder/drawindexedprimitives(primitivetype:indextype:indexbuffer:indexbufferlength:indirectbuffer:).md)
+  Encodes a draw command that renders multiple instances of a geometric primitive with indexed vertices and indirect arguments.
 
 
 ---

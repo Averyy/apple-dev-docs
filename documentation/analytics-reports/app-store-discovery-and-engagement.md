@@ -54,6 +54,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Page Type | App version history | Your app’s version history page. |
 | Page Type | App privacy | Your app’s privacy detail page. |
 | Page Type | Developer page | Your developer page. |
+| Page Type | App accessibility | An app accessibility detail page. |
 | Page Type | Media view | Pages containing your app’s media (such as screenshots and previews). |
 | Page Title | Various | The name of the product page or in-app event page that led the user to download the app. Possible values include the name you set for your page in App Store Connect, default product page, no page, or null. |
 | Source Type | App Store search | Users who discovered your app within search results on the App Store. Includes Search Ads results. Doesn’t include the Suggested section of the search landing page. |
@@ -75,7 +76,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 ## See Also
 
 - [App Store Web Preview](app-store-web-preview.md)
-  Analyze how users engage with your app’s product pages and in-app events on web browsers.
+  Analyze how people engage with your app’s product pages and in-app events on web browsers.
 
 
 ---

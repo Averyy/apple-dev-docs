@@ -6,12 +6,12 @@
 previous tracking state of the device
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-let previous: Scene.AnchoringTrackingState
+let previous: SceneEvents.TrackingStateUpdate.State
 ```
 
 

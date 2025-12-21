@@ -17,7 +17,7 @@ var translatesAutoresizingMaskIntoConstraints: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the view’s superview looks at the view’s autoresizing mask, produces constraints that implement it, and adds those constraints to itself (the superview). If your view has flexible constraints that require dynamic adjustment, set this property to [`false`](https://developer.apple.com/documentation/swift/false) and apply the constraints yourself.
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the view’s superview looks at the view’s autoresizing mask, produces constraints that implement it, and adds those constraints to itself (the superview). If your view has flexible constraints that require dynamic adjustment, set this property to [`false`](https://developer.apple.com/documentation/Swift/false) and apply the constraints yourself.
 
 ## See Also
 

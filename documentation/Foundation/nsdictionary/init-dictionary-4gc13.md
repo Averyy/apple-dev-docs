@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -18,6 +20,10 @@
 @objc
 (__swiftInitWithDictionary_NSDictionary:) dynamic convenience init(dictionary otherDictionary: NSDictionary)
 ```
+
+#### Return Value
+
+An initialized dictionary–which might be different than the original receiver–containing the keys and values found in `otherDictionary`.
 
 
 ---

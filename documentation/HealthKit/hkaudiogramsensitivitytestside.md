@@ -17,6 +17,10 @@
 enum HKAudiogramSensitivityTestSide
 ```
 
+#### Overview
+
+Represents the test side used for an HKAudiogramSensitivityTest
+
 ## Topics
 
 ### Enumeration Cases

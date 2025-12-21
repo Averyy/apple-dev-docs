@@ -6,11 +6,11 @@
 Provides tentative results for an audio range in addition to the finalized result.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,8 +26,8 @@ The transcriber will deliver several results for an audio range as it refines th
 
 - [SpeechTranscriber.ReportingOption.alternativeTranscriptions](speechtranscriber/reportingoption/alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [SpeechTranscriber.ReportingOption.frequentFinalization](speechtranscriber/reportingoption/frequentfinalization.md)
-  Biases the transcriber towards responsiveness, resulting in more frequent but also less accurate finalized results.
+- [SpeechTranscriber.ReportingOption.fastResults](speechtranscriber/reportingoption/fastresults.md)
+  Biases the transcriber towards responsiveness, yielding faster but also less accurate results.
 
 
 ---

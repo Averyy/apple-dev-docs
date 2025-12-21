@@ -5,11 +5,8 @@
 ## Topics
 
 ### Instance Properties
-- [var id: String](objectdetectionannotation/id-swift.property.md)
+- [var id: String](objectdetectionannotation/id.md)
   The identifier of the object detection annotation
-### Type Aliases
-- [ObjectDetectionAnnotation.ID](objectdetectionannotation/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

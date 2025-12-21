@@ -9,6 +9,7 @@ Tells the delegate that the user double-tapped Apple Pencil.
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 1.0+
 
 ## Declaration
 

@@ -13,6 +13,10 @@
 var parent_path: es_string_token_t
 ```
 
+#### Discussion
+
+Structure for handling strings
+
 
 ---
 

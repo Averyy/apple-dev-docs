@@ -8,7 +8,7 @@ Notifies the observer when a test case reports an issue.
 ## Declaration
 
 ```swift
-optional func testCase(_ testCase: XCTestCase, didRecord issue: XCTIssue)
+optional func testCase(_ testCase: XCTestCase, didRecord issue: XCTIssueReference)
 ```
 
 ## Parameters

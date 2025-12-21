@@ -1,0 +1,4 @@
+Completed scraping Apple Ads!
+Total pages scraped: 251
+Pages skipped (unchanged): 1
+Pages failed: 0

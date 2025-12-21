@@ -1,4 +1,4 @@
-# geoJSONDidComplete
+# geoJSONDidComplete(result, geoJSON)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,15 +11,15 @@ Completes the GeoJSON import.
 ## Declaration
 
 ```swift
-void geoJSONDidComplete(
-	ItemCollection result,
-	Object geoJSON
-);
+geoJSONDidComplete?<D extends GeoJSONTypes.GeoJSON>(
+        result: ItemCollection<D>,
+        geoJSON: D,
+    ): void;
 ```
 
 #### Discussion
 
-After MapKit JS loads the GeoJSON data and converts it to MapKit objects, the framework calls [`geoJSONDidComplete`](geojsondelegate/geojsondidcomplete.md) with the resulting [`ItemCollection`](itemcollection.md), which reflects any provided customizations. This is the same value that returns directly from [`importGeoJSON`](mapkit/importgeojson.md) in the synchronous case.
+After MapKit JS loads the GeoJSON data and converts it to MapKit objects, the framework calls [`geoJSONDidComplete(result, geoJSON)`](geojsondelegate/geojsondidcomplete.md) with the resulting [`ItemCollection`](itemcollection.md), which reflects any provided customizations. This is the same value that returns directly from [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) in the synchronous case.
 
 ## Parameters
 
@@ -28,7 +28,7 @@ After MapKit JS loads the GeoJSON data and converts it to MapKit objects, the fr
 
 ## See Also
 
-- [geoJSONDidError](geojsondelegate/geojsondiderror.md)
+- [geoJSONDidError(error, geoJSON)](geojsondelegate/geojsondiderror.md)
   Indicates when the GeoJSON import fails.
 
 

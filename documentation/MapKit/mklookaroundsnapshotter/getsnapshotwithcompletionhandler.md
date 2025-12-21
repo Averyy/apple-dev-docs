@@ -18,12 +18,6 @@ Requests a new snapshot and calls the completion handler you provide.
 var snapshot: MKLookAroundSnapshotter.Snapshot { get async throws }
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can access it as an asynchronous property that has the following declaration: ```swift
-var snapshot: MKLookAroundSnapshotter.Snapshot { get async throws }
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `completionHandler`: A completion handler the framework calls to indicate the success or failure of the snapshot request.

@@ -7,7 +7,7 @@ A protocol describing a type that can be attached to a test report or written to
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

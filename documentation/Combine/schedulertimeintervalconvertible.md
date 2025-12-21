@@ -22,7 +22,7 @@ protocol SchedulerTimeIntervalConvertible
 
 ## Topics
 
-### Converting Seconds to Scheduler Time Intervals
+### Converting seconds to scheduler time intervals
 - [static func microseconds(Int) -> Self](schedulertimeintervalconvertible/microseconds(_:).md)
   Converts the specified number of microseconds into an instance of this scheduler time type.
 - [static func milliseconds(Int) -> Self](schedulertimeintervalconvertible/milliseconds(_:).md)

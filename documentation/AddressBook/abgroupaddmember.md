@@ -14,7 +14,7 @@ Adds a person to a group.
 ## Declaration
 
 ```swift
-func ABGroupAddMember(_ group: ABRecord!, _ person: ABRecord!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ABGroupAddMember(_ group: ABGroupRef!, _ personToAdd: ABPersonRef!) -> Bool
 ```
 
 #### Return Value

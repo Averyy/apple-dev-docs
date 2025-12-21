@@ -17,7 +17,7 @@ var isGroupRowStyle: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true) this row is a group row and will draw appropriately.
+When [`true`](https://developer.apple.com/documentation/Swift/true) this row is a group row and will draw appropriately.
 
 ## See Also
 

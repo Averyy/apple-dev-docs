@@ -3,16 +3,16 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-Called once for each share URL that the server processed
+A block called once for each share URL processed by the server.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,14 @@ var perShareAccessRequestResultBlock: ((URL, Result<Void, any Error>) -> Void)? 
 
 #### Discussion
 
-Each [`CKOperation`](ckoperation.md) instance has a private serial queue. This queue is used for all callback block invocations. This block may share mutable state with other blocks assigned to this operation, but any such mutable state should not be concurrently used outside of blocks assigned to this operation.
+Use this block to handle results individually for each requested share.
+
+Each [`CKOperation`](ckoperation.md) instance uses a private serial queue for callback block invocations. This queue ensures serialized execution and thread safety for mutable state shared within the operation’s blocks. Any mutable state should not be concurrently accessed outside these callback blocks.
+
+## Parameters
+
+- `shareURL`: The URL of the processed share.
+- `result`: A result indicating success ( ) or an error.
 
 
 ---

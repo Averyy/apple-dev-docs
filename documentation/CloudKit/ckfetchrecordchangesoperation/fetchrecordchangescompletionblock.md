@@ -24,7 +24,7 @@ var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error
 
 The block returns no value and takes the following parameters:
 
-When implementing this block, check the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property of the operation object to ensure that the server was able to deliver all results. If that property is [`true`](https://developer.apple.com/documentation/swift/true), you must create another operation object using the value in the `serverChangeToken` parameter to fetch any remaining changes.
+When implementing this block, check the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property of the operation object to ensure that the server was able to deliver all results. If that property is [`true`](https://developer.apple.com/documentation/Swift/true), you must create another operation object using the value in the `serverChangeToken` parameter to fetch any remaining changes.
 
 The operation object executes this block only once at the conclusion of the operation. It executes after all individual change blocks, but before the operation’s completion block. The block executes serially with respect to the other progress blocks of the operation.
 

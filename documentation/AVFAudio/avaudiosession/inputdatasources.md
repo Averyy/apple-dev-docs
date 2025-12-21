@@ -39,6 +39,7 @@ You can observe changes to the value of this property by using key-value observi
   The currently selected input data source.
 - [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
   Selects a data source for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 
 
 ---

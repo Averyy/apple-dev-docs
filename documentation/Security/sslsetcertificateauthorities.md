@@ -20,7 +20,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 
 #### Discussion
 
-Each successive call to this function with the `replaceExisting` parameter set to [`false`](https://developer.apple.com/documentation/swift/false) results in accumulation of additional certification authorities. To see the current set of certification authorities, call the [`SSLCopyCertificateAuthorities(_:_:)`](sslcopycertificateauthorities(_:_:).md) function.
+Each successive call to this function with the `replaceExisting` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false) results in accumulation of additional certification authorities. To see the current set of certification authorities, call the [`SSLCopyCertificateAuthorities(_:_:)`](sslcopycertificateauthorities(_:_:).md) function.
 
 ## Parameters
 

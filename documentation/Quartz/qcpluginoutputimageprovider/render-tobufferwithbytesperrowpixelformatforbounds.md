@@ -16,7 +16,7 @@ optional func render(toBuffer baseAddress: UnsafeMutableRawPointer!, withBytesPe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image is rendered successfully into the buffer; [`false`](https://developer.apple.com/documentation/swift/false) on failure or if the image provider doesn’t support CPU rendering.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image is rendered successfully into the buffer; [`false`](https://developer.apple.com/documentation/Swift/false) on failure or if the image provider doesn’t support CPU rendering.
 
 #### Discussion
 

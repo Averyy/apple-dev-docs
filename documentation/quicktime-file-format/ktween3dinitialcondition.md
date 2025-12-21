@@ -5,9 +5,6 @@
 
 An atom that specifies an initial transform for a 3D tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Specifies an initial transform for a 3D tween atom whose tween type is one of the following: `kTweenType3dCameraData`, `kTweenType3dMatrix`, `kTweenType3dQuaternion`, `kTweenType3dRotate`, `kTweenType3dRotateAboutAxis`, `kTweenType3dRotateAboutAxis`, `kTweenType3dRotateAboutPoint`, `kTweenType3dRotateAboutVector`, `kTweenType3dScale`, or `kTweenType3dTranslate`.

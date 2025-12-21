@@ -16,7 +16,7 @@ let kQLPreviewPropertyBaseBundlePathKey: CFString!
 
 #### Discussion
 
-By default, the Quick Look feature only accepts files within the current document bundle. Use `kQLPreviewPropertyBaseBundlePathKey` to expand the accepted security scope and look at files outside of the current document bundle. The associated value is a path as a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh.
+By default, the Quick Look feature only accepts files within the current document bundle. Use `kQLPreviewPropertyBaseBundlePathKey` to expand the accepted security scope and look at files outside of the current document bundle. The associated value is a path as a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
 
 ## See Also
 

@@ -19,7 +19,7 @@ class NSSplitView
 
 A split view manages the dividers and orientation for a split view controller ([`NSSplitViewController`](nssplitviewcontroller.md)). By default, dividers have a horizontal orientation so that the split view arranges its panes vertically from top to bottom.
 
-Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md) property is [`false`](https://developer.apple.com/documentation/swift/false), which is the default value, the top divider has an index of `0`. If [`isVertical`](nssplitview/isvertical.md) is [`true`](https://developer.apple.com/documentation/swift/true), the leading divider has an index of `0`.
+Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), which is the default value, the top divider has an index of `0`. If [`isVertical`](nssplitview/isvertical.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the leading divider has an index of `0`.
 
 ## Topics
 

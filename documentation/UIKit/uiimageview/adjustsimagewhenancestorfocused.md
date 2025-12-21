@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-Allows [`UIImageView`](uiimageview.md) to respond when an ancestor becomes focused.
+A Boolean value that determines whether the image view responds when an ancestor gains focus.
 
 **Availability**:
 - tvOS 9.0+
@@ -17,7 +17,9 @@ var adjustsImageWhenAncestorFocused: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and an ancestor of the image view becomes focused, the image view adjusts the frame of its image using the [`focusedFrameGuide`](uiimageview/focusedframeguide.md) property. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and an ancestor of the image view becomes focused, the image view adjusts the frame of its image using the [`focusedFrameGuide`](uiimageview/focusedframeguide.md) property. On supported Apple TV devices, setting this property to true renders the image with a Liquid Glass effect when it gains focus.
+
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

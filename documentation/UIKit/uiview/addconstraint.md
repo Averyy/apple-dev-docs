@@ -23,7 +23,7 @@ func addConstraint(_ constraint: NSLayoutConstraint)
 
 The constraint must involve only views that are within scope of the receiving view. Specifically, any views involved must be either the receiving view itself, or a subview of the receiving view. Constraints that are added to a view are said to be held by that view. The coordinate system used when evaluating the constraint is the coordinate system of the view that holds the constraint.
 
-When developing for iOS 8.0 or later, set the constraint’s [`isActive`](nslayoutconstraint/isactive.md) property to [`true`](https://developer.apple.com/documentation/swift/true) instead of calling the [`addConstraint(_:)`](uiview/addconstraint(_:).md) method directly. The [`isActive`](nslayoutconstraint/isactive.md) property automatically adds and removes the constraint from the correct view.
+When developing for iOS 8.0 or later, set the constraint’s [`isActive`](nslayoutconstraint/isactive.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) instead of calling the [`addConstraint(_:)`](uiview/addconstraint(_:).md) method directly. The [`isActive`](nslayoutconstraint/isactive.md) property automatically adds and removes the constraint from the correct view.
 
 ## Parameters
 

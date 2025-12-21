@@ -16,7 +16,7 @@ var requiresFrameReordering: Bool { get set }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if frame reordering occurs, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This property is only valid for tracks with video media type and is [`false`](https://developer.apple.com/documentation/swift/false) for other track types.
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) if frame reordering occurs, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). This property is only valid for tracks with video media type and is [`false`](https://developer.apple.com/documentation/Swift/false) for other track types.
 
 ## See Also
 

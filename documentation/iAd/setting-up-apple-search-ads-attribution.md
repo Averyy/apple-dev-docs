@@ -6,7 +6,7 @@ Retrieve the attribution dictionary.
 
 #### Overview
 
-> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
+> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
 The attribution dictionary contains attribution data that the system retrieves from user interaction with ads originating from [`Apple Search Ads`](https://developer.apple.comhttps://searchads.apple.com/advanced/) campaigns.
 

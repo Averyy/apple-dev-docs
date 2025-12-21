@@ -76,7 +76,7 @@ guard CMWaterSubmersionManager.waterSubmersionAvailable else {
 }
 ```
 
-On Apple Watch Ultra, the system sets [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) to [`true`](https://developer.apple.com/documentation/swift/true). On all other devices and in Simulator, the system sets it to [`false`](https://developer.apple.com/documentation/swift/false).
+On Apple Watch Ultra, the system sets [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) to [`true`](https://developer.apple.com/documentation/Swift/true). On all other devices and in Simulator, the system sets it to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ##### Start Monitoring Submersion Data
 

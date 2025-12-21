@@ -8,7 +8,7 @@ Add code to quickly confirm a person’s physical location while respecting thei
 
 If you create an App Clip that people invoke at a physical location, you may need to confirm a person’s location before allowing them to perform a task. For a quick launch and to preserve user privacy, App Clips use a lightweight mechanism in which the system verifies that a person is at a specific, expected location. When you adopt this mechanism, and when people allow it, the  contains a note that tells people that the App Clip can verify their location. They can disable location verification by tapping the note on the App Clip card.
 
-![An App Clip card for an App Clip that can verify a person’s physical location.](https://docs-assets.developer.apple.com/published/7486feb43af39b75207a8b25924d5f1e/media-3669502%402x.png)
+![An App Clip card for an App Clip that can verify a person’s physical location.](https://docs-assets.developer.apple.com/published/d773856b76aed89637fa2614ece50117/enabling-app-clips-card-location%402x.png)
 
 ##### Enable Your App Clip to Verify a Persons Location
 
@@ -17,7 +17,7 @@ To enable your App Clip to verify the person’s location, modify your App Clip�
 1. Open your App Clip’s `Info.plist`, add the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key, and set its type to `Dictionary`.
 2. Add an entry to the dictionary with [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestLocationConfirmation) as the key, select `Boolean` as its type, and set its value to `true`.
 
-![An Info.plist file with the entry that allows the App Clip to confirm a person’s location.](https://docs-assets.developer.apple.com/published/cf62aa4d7db12b981dcb81f978456f7b/media-3975648%402x.png)
+![An Info.plist file with the entry that allows the App Clip to confirm a person’s location.](https://docs-assets.developer.apple.com/published/a012a81012eeb81fc9d3549009193c95/xcode-requests-location-confirmation%402x.png)
 
 Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key and the following entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation.” Per default, the value for both entries is `NO`. Change the value for “Requests location confirmation” to `YES`.
 

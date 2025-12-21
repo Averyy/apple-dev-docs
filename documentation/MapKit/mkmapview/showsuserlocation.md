@@ -26,7 +26,7 @@ var showsUserLocation: Bool { get set }
 
 #### Discussion
 
-This property doesn’t indicate whether the user’s location is actually visible on the map, only whether the map view tries to display it. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the map view to use the Core Location framework to find the user’s location and try to display it on the map. While this property is [`true`](https://developer.apple.com/documentation/swift/true), the map view continues to track the user’s location and update it periodically. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+This property doesn’t indicate whether the user’s location is actually visible on the map, only whether the map view tries to display it. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) causes the map view to use the Core Location framework to find the user’s location and try to display it on the map. While this property is [`true`](https://developer.apple.com/documentation/Swift/true), the map view continues to track the user’s location and update it periodically. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Showing the user’s location doesn’t ensure that it’s visible on the map. The user might scroll the map to a different point, causing the location to be offscreen. To determine whether the user’s location displays on the map, use the [`isUserLocationVisible`](mkmapview/isuserlocationvisible.md) property.
 

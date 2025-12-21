@@ -22,13 +22,13 @@ func startAccessingSecurityScopedResource() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the request to access the resource succeeded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the request to access the resource succeeded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you can’t immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this method on the security-scoped URL. You can also use Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStartAccessingSecurityScopedResource(_:)) function.
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), then you must relinquish access as soon as you finish using the resource. Call the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method to relinquish access. You must balance each call to [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) for a given security-scoped URL with a call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md). When you make the last balanced call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md), you immediately lose access to the resource in question.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), then you must relinquish access as soon as you finish using the resource. Call the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method to relinquish access. You must balance each call to [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) for a given security-scoped URL with a call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md). When you make the last balanced call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md), you immediately lose access to the resource in question.
 
 > ⚠️ **Warning**:  If you fail to relinquish your access to file-system resources when you no longer need them, your app leaks kernel resources. If sufficient kernel resources leak, your app loses its ability to add file-system locations to its sandbox, such as with Powerbox or security-scoped bookmarks, until relaunched.
 

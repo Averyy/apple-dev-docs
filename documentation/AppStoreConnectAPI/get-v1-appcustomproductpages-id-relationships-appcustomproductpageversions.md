@@ -1,7 +1,9 @@
-# GET /v1/appCustomProductPages/{id}/relationships/appCustomProductPageVersions
+# Get all version IDs for an app custom product page
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Get a list of custom product page version IDs associated with a custom product page.
 
 **Availability**:
 - App Store Connect API 3.6+

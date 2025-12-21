@@ -3,16 +3,16 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Denies share access to the specified requesters.
+Denies access requests from specified users.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,11 @@ func denyRequesters(_ requesters: [CKShare.AccessRequester])
 
 #### Discussion
 
-Use this method to reject pending requests from one or more uninvited users. Denied requesters are removed from the [`requesters`](ckshare/requesters.md) array. You must save the share to the server after denying to persist the changes. Once saved, these requesters are not given access to the share, but they may attempt to request access again unless you block them. This method can only be used by the share owner or an admin. Attempting to use it as any other participant will result in an exception.
+Use this method to deny pending access requests from uninvited users. Denied requesters are removed from the [`requesters`](ckshare/requesters.md) array. To persist the changes, save the share to the server after calling this method.
+
+After denial, requesters can still submit new access requests unless explicitly blocked using [`blockRequesters(_:)`](ckshare/blockrequesters(_:).md).
+
+Only the share owner or an administrator can invoke this method. Attempts by other participants result in an exception.
 
 ## Parameters
 

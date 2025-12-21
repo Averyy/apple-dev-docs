@@ -14,7 +14,7 @@ This property is part of the `NSGlyphStorage` protocol, for use by the glyph gen
   The threshold controlling when hyphenation is done.
 - [attributedString](nslayoutmanager-attributedstring.md)
   The text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
-- [var usesScreenFonts: Bool { get set }](../AppKit/NSLayoutManager/usesScreenFonts.md)
+- [var usesScreenFonts: Bool](../AppKit/NSLayoutManager/usesScreenFonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

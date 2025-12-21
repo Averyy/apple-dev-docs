@@ -10,7 +10,7 @@ If your app uses [`External Purchase`](https://developer.apple.com/documentation
 
 To send a report, call the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint for each token you receive.  A report has a request body, [`ExternalPurchaseReport`](externalpurchasereport.md), which consists of a unique report identifier, the token identifier, a status, and depending on the status, an array of line items that describe the transactions.
 
-When a token has associated transactions, send a report with line items.  To correct a previous submission, see [`Reporting corrections`](reportcorrections.md). If the token didn’t result in any transactions, see [`Reporting unrecognized tokens and tokens without transactions`](reportwithouttransactions.md) instead.
+When a token has associated transactions, send a report with line items.  To correct a previous submission, see [`Reporting corrections`](reportcorrections.md). If the token didn’t result in any transactions, see [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md) instead.
 
 For each transaction, add one line item to the line items array in your report. Choose the line item type based on the transaction type:
 

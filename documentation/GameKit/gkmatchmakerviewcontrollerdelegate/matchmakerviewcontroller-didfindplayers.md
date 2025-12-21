@@ -20,7 +20,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 
 #### Discussion
 
-This method is called when the view controller’s `hosted` property is [`true`](https://developer.apple.com/documentation/swift/true). Although optional in the protocol, if your game attaches a delegate to the view controller for a hosted match, the view controller expects your game to provide an implementation of this method.
+This method is called when the view controller’s `hosted` property is [`true`](https://developer.apple.com/documentation/Swift/true). Although optional in the protocol, if your game attaches a delegate to the view controller for a hosted match, the view controller expects your game to provide an implementation of this method.
 
 The view controller returns the list of players to your game by calling this method. Your game is responsible for connecting these players to your own server and then using that server to relay messages between the players.
 

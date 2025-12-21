@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-An indication that the asset is already converted to ParametricImmersive.
+Indicates that the asset was previously converted to parametric immersive format.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

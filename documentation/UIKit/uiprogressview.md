@@ -101,8 +101,6 @@ For an indeterminate progress indicator — or a “spinner” — use an instan
   A view that displays a single image or a sequence of animated images in your interface.
 - [class UIPickerView](uipickerview.md)
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

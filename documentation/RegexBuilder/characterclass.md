@@ -41,8 +41,6 @@ A character class can represent individual characters, a group of characters, th
 ### Type Methods
 - [static func generalCategory(Unicode.GeneralCategory) -> CharacterClass](characterclass/generalcategory(_:).md)
   Returns a character class that matches any element with the given Unicode general category.
-### Default Implementations
-- [RegexComponent Implementations](characterclass/regexcomponent-implementations.md)
 
 ## Relationships
 

@@ -12,7 +12,6 @@ All fields of the shipping contact on the payment sheet are editable by the user
 - macOS 12.0+
 - visionOS 1.0+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

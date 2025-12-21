@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize a `Data` with a repeating byte pattern
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,11 @@
 ```swift
 init(repeating repeatedValue: UInt8, count: Int)
 ```
+
+## Parameters
+
+- `repeatedValue`: A byte to initialize the pattern
+- `count`: The number of bytes the data initially contains initialized to the repeatedValue
 
 
 ---

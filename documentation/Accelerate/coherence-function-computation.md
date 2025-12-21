@@ -4,14 +4,6 @@
 
 Compute the coherence of two vectors.
 
-## Topics
-
-### Vector-to-Vector Coherence Function Computation
-- [vDSP_zcoher](vdsp_zcoher.md)
-  Computes the coherence function of two single-precision vectors.
-- [vDSP_zcoherD](vdsp_zcoherd.md)
-  Computes the coherence function of two double-precision vectors.
-
 ## See Also
 
 - [Autospectrum computation](autospectrum-computation.md)

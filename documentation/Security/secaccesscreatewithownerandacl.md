@@ -16,7 +16,7 @@ func SecAccessCreateWithOwnerAndACL(_ userId: uid_t, _ groupId: gid_t, _ ownerTy
 
 #### Return Value
 
-The new access instance. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release it when you are finished using it.
+The new access instance. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release it when you are finished using it.
 
 #### Discussion
 

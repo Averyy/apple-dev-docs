@@ -6,8 +6,8 @@
 Returns the parameters to use to configure the Wi-Fi Aware subscriber and the subsequent connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

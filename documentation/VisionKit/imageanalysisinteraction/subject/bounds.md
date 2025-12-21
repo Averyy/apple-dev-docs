@@ -3,7 +3,7 @@
 **Framework**: VisionKit  
 **Kind**: property
 
-A rectangle that identifies the extremities of a subject within an image.
+A rectangle that identifies the extremities of a subject within an image in relation to the interaction view’s bounds.
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +17,10 @@ A rectangle that identifies the extremities of a subject within an image.
 @MainActor
 var bounds: CGRect { get }
 ```
+
+#### Discussion
+
+This property will always return `CGRect.zero` if the interaction isn’t added to the view.
 
 
 ---

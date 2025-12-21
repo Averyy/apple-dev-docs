@@ -16,11 +16,11 @@ var allowsImplicitAnimation: Bool { get set }
 
 #### Discussion
 
-Using the [`animator()`](nsanimatablepropertycontainer/animator().md) proxy will automatically set `allowsImplicitAnimation` to [`true`](https://developer.apple.com/documentation/swift/true). When [`true`](https://developer.apple.com/documentation/swift/true), other properties can implicitly animate along with the initially changed property.
+Using the [`animator()`](nsanimatablepropertycontainer/animator().md) proxy will automatically set `allowsImplicitAnimation` to [`true`](https://developer.apple.com/documentation/Swift/true). When [`true`](https://developer.apple.com/documentation/Swift/true), other properties can implicitly animate along with the initially changed property.
 
-For instance, calling `[[view animator] setFrame:frame]` will allow subviews to also animate their frame positions. When the value is [`false`](https://developer.apple.com/documentation/swift/false) the behavior is diabled.
+For instance, calling `[[view animator] setFrame:frame]` will allow subviews to also animate their frame positions. When the value is [`false`](https://developer.apple.com/documentation/Swift/false) the behavior is diabled.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This is only applicable when layer backed on OS v10.8 and later.
 

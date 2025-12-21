@@ -3,15 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Removes the downloaded asset pack with the specified ID.
+Removes the specified asset pack from the device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,11 +21,18 @@ func remove(assetPackWithID assetPackID: String) async throws
 
 ## Mentions
 
-- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
 
 ## Parameters
 
 - `assetPackID`: The asset pack’s ID.
+
+## See Also
+
+- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](assetpackmanager/checkforupdates.md)
+  Gets the latest asset-pack information from the server, updates outdated asset packs, and removes obsolete asset packs.
+- [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
+  Ensures that the specified asset pack be available locally.
 
 
 ---

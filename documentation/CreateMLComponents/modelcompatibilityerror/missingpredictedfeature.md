@@ -44,8 +44,6 @@ case missingPredictedFeature
   An error that indicates that the label probabilities output is missing from the model.
 - [ModelCompatibilityError.missingOutput(name:)](modelcompatibilityerror/missingoutput(name:).md)
   An error that indicates that the output is missing from the model.
-- [var errorDescription: String?](modelcompatibilityerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

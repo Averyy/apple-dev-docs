@@ -18,8 +18,6 @@ In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to 
 
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
-  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
@@ -32,6 +30,8 @@ In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to 
   A Boolean value indicating whether the app supports Game Mode.
 - [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
+- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 
 ---

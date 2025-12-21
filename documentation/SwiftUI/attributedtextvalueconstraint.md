@@ -6,13 +6,13 @@
 A protocol for defining a constraint on the value of a certain attribute.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,8 @@ protocol AttributedTextValueConstraint : Hashable, Sendable, AttributedTextForma
 #### Overview
 
 Used as an [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-(Attributes)` function.
+
+Given value constraints can read other attribute values, it is crucial to avoid mixing value constraints in a way where they create cyclic dependencies with undefined behavior. Thus, it is recommended to think about value constraints in the context of the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) they will be used in:
 
 A simple constraint only accesses a single attribute. It can be made generic over the attribute scope so it can be reused in different [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md)s.
 
@@ -67,7 +69,7 @@ struct NoEqualForegroundAndBackground: AttributedTextValueConstraint {
 }
 ```
 
-Constraints that access multiple attributes and are generic over the scope should document their dependencies so that they can be considered for the ordering of constraints in the [`body`](attributedtextformattingdefinition/body-1b01t.md).
+Constraints that access multiple attributes and are generic over the scope should document their dependencies so that the dependencies can be considered for the ordering of constraints in the [`body`](attributedtextformattingdefinition/body-1b01t.md).
 
 ```swift
 /// Makes the background color for all Genmoji blue.
@@ -131,7 +133,7 @@ struct BlueGenmojiBackgroundConstraint<Scope: AttributeScope>: AttributedTextVal
 - [func monospacedDigit() -> some View](view/monospaceddigit.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
 - [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
-  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+  A protocol for defining how text can be styled in a view.
 - [enum AttributedTextFormatting](attributedtextformatting.md)
   A namespace for types related to attributed text formatting definitions.
 

@@ -10,7 +10,7 @@ An array of custom actions supported by the entity, identified by their localize
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

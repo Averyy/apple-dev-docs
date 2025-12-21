@@ -23,7 +23,7 @@ func description(options: FormattingOptions) -> String
 
 #### Discussion
 
-See [`description(options:)`](dataframe/description(options:).md) for more information.
+See `DataFrame/description(options:)` for more information.
 
 ## Parameters
 

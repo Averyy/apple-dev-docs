@@ -6,7 +6,7 @@ Validate the encrypted response.
 
 #### Overview
 
-Your login configuration instructs platform SSO how to receive and verify the login response from an identity provider (IdP).
+Your login configuration instructs Platform SSO how to receive and verify the login response from an identity provider (IdP).
 
 If the HTTP response code is `200`, the system decrypts the response body according to RFC 7516 Section 5.2, using JWE Compact Serialization. Use of the zip header isn’t supported. The system checks `PartyUInfo` for the Ephemeral Public Key in the response. `PartyVInfo` is the `jwe_crypto.apv` from the login request.
 

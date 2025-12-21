@@ -154,12 +154,6 @@ Throwing an error from a `transform` closure aborts matching and propagates the 
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
 - [init<W, C1, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture?)](trycapture/init(as:_:transform:)-p58t.md)
   Creates a capture for the given component using the specified reference, attempting to transform with the given closure.
-### Instance Properties
-- [var regex: Regex<Output>](trycapture/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [TryCapture.RegexOutput](trycapture/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

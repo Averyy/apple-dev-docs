@@ -71,10 +71,16 @@ The following table describes the resource access entitlements the Hardened Runt
 
 ## See Also
 
+- [Configuring Family Controls](configuring-family-controls.md)
+  Add the Family Controls entitlement to enable parental control features in your app and its Screen Time API app extensions.
 - [Configuring the macOS App Sandbox](configuring-the-macos-app-sandbox.md)
   Protect system resources and user data from compromised apps by restricting access to the file system, network connections, and more.
 - [Configuring keychain sharing](configuring-keychain-sharing.md)
   Share keychain items between multiple apps belonging to the same developer.
+- [Protecting local app data using containers on macOS](protecting-local-app-data-using-containers.md)
+  Secure your app’s local storage data from unauthorized access and modification.
+- [Accessing app group containers in your existing macOS app](accessing-app-group-containers.md)
+  Ensure your app has app group container entitlements and macOS can authorize them.
 
 
 ---

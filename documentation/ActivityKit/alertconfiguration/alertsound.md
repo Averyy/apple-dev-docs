@@ -22,11 +22,6 @@ struct AlertSound
   A function you use to configure a custom sound for a Live Activity update alert.
 - [static var `default`: AlertConfiguration.AlertSound](alertconfiguration/alertsound/default.md)
   A value that represents the system’s default alert sound.
-### Operators
-- [static func == (AlertConfiguration.AlertSound, AlertConfiguration.AlertSound) -> Bool](alertconfiguration/alertsound/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](alertconfiguration/alertsound/equatable-implementations.md)
 
 ## Relationships
 

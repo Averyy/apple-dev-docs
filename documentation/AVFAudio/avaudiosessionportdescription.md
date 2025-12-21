@@ -53,9 +53,13 @@ You can query the audio session’s [`currentRoute`](avaudiosession/currentroute
   The preferred audio data source for the port.
 - [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosessionportdescription/setpreferreddatasource(_:).md)
   Sets the preferred audio data source for the port.
-### Instance Properties
+### Accessing the port extension
 - [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](avaudiosessionportdescription/bluetoothmicrophoneextension.md)
   An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
+- [class AVAudioSessionPortExtensionBluetoothMicrophone](avaudiosessionportextensionbluetoothmicrophone.md)
+  An object that describes capabilities of Bluetooth microphone ports.
+- [class AVAudioSessionCapability](avaudiosessioncapability.md)
+  Describes whether a specific capability is supported and if that capability is currently enabled
 
 ## Relationships
 

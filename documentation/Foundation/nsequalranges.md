@@ -22,7 +22,7 @@ func NSEqualRanges(_ range1: NSRange, _ range2: NSRange) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `range1` and `range2` have the same locations and lengths.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `range1` and `range2` have the same locations and lengths.
 
 ## See Also
 

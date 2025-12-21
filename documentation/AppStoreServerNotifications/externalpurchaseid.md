@@ -26,6 +26,10 @@ The `externalPurchaseId` is the field of an [`externalPurchaseToken`](externalpu
 
 - [type tokenCreationDate](tokencreationdate.md)
   The field of an external purchase token that contains the UNIX date, in milliseconds, when the system created the token.
+- [type tokenExpirationDate](tokenexpirationdate.md)
+  The field of a custom link token that contains the UNIX date, in milliseconds, when the token expires.
+- [type tokenType](tokentype.md)
+  The type of an external purchase custom link token.
 
 
 ---

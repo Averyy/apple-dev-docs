@@ -60,7 +60,6 @@ struct AttachmentKey
 - [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
   An array of sample attachments.
 - [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-  A structure that defines an array of sample attachments.
 - [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 

@@ -26,17 +26,6 @@ struct Identifier
 ### Accessing the root container
 - [static let rootContainer: ContactItem.Identifier](contactitem/identifier/rootcontainer.md)
   The top-level container, containing the user’s contacts.
-### Operators
-- [static func == (ContactItem.Identifier, ContactItem.Identifier) -> Bool](contactitem/identifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](contactitem/identifier/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](contactitem/identifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](contactitem/identifier/equatable-implementations.md)
 
 ## Relationships
 

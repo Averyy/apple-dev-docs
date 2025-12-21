@@ -11,7 +11,7 @@ The latitude and longitude for the place.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate coordinate;
+coordinate?: Coordinate;
 ```
 
 ## See Also

@@ -10,7 +10,7 @@ During a typical activity, you want the content one participant sees on their de
 
 When an activity-related session is active, share data among participants using the objects of the Group Activities framework. You can share data with all participants or a subset of participants. For example, a quiz game might share different information with contestants and the people asking the questions. For time-sensitive messages, send small amounts of data using a [`GroupSessionMessenger`](groupsessionmessenger.md) object. When the amount of data is larger and the arrival time is less important, share that data using a [`GroupSessionJournal`](groupsessionjournal.md) object.
 
-> **Note**: The [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting Coordinated Media Playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
+> **Note**: The [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting coordinated media playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
 
 ##### Define the Messages to Send
 

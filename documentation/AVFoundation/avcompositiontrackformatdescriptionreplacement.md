@@ -22,7 +22,7 @@ class AVCompositionTrackFormatDescriptionReplacement
 
 ## Topics
 
-### Managing Format Descriptions
+### Managing format descriptions
 - [var originalFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/originalformatdescription.md)
   The format description to replace.
 - [var replacementFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/replacementformatdescription.md)

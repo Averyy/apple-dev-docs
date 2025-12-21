@@ -21,17 +21,25 @@ struct InstallMetadata
 
 ## Topics
 
-### Initializers
+### Initializing an install metadata instance
 - [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool)](installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:).md)
-### Instance Properties
-- [let account: String](installmetadata/account.md)
-  A user ID for the person installing the app.
+  Initializes an install metadata object with the given app information.
+- [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool, appShareURL: URL?, requestAgeException: Bool)](installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:appshareurl:requestageexception:).md)
+  Initializes an install metadata object with the given app information and exception request indicator.
+### Inspecting app and account information
+- [let appleItemID: AppleItemID](installmetadata/appleitemid.md)
+  A unique identifier for the app to install.
 - [let alternativeDistributionPackage: URL](installmetadata/alternativedistributionpackage.md)
   A URL to the app’s assembled alternative distribution package.
 - [var appShareURL: URL?](installmetadata/appshareurl.md)
   A URL to a product landing page for the app on your marketplace website.
-- [let appleItemID: AppleItemID](installmetadata/appleitemid.md)
 - [let isUpdate: Bool](installmetadata/isupdate.md)
+  A Boolean value that indicates whether the installation is an app update.
+- [let account: String](installmetadata/account.md)
+  A user ID for the person installing the app.
+### Requesting an exception
+- [var requestAgeException: Bool](installmetadata/requestageexception.md)
+  A Boolean value that indicates whether the person needs approval to install the app.
 
 ## Relationships
 

@@ -36,17 +36,6 @@ enum CameraOrientation
   The orientation is portrait, upside down.
 - [DockAccessory.CameraOrientation.unknown](dockaccessory/cameraorientation/unknown.md)
   The orientation is unknown.
-### Operators
-- [static func == (DockAccessory.CameraOrientation, DockAccessory.CameraOrientation) -> Bool](dockaccessory/cameraorientation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/cameraorientation/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/cameraorientation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/cameraorientation/equatable-implementations.md)
 
 ## Relationships
 

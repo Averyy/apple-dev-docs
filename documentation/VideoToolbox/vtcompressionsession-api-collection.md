@@ -12,7 +12,7 @@ A compression session supports the compression of a sequence of video frames. He
 2. Optionally, configure the session with your desired [`Compression Properties`](compression-properties.md) by calling [`VTSessionSetProperty(_:key:value:)`](vtsessionsetproperty(_:key:value:).md) or [`VTSessionSetProperties(_:propertyDictionary:)`](vtsessionsetproperties(_:propertydictionary:).md).
 3. Encode video frames using [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md) and receive the compressed video frames in the session’s [`VTCompressionOutputCallback`](vtcompressionoutputcallback.md).
 4. To force the completion of some or all pending frames, call [`VTCompressionSessionCompleteFrames(_:untilPresentationTimeStamp:)`](vtcompressionsessioncompleteframes(_:untilpresentationtimestamp:).md).
-5. When you finish with the compression session, call [`VTCompressionSessionInvalidate(_:)`](vtcompressionsessioninvalidate(_:).md) to invalidate it and [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free its memory.
+5. When you finish with the compression session, call [`VTCompressionSessionInvalidate(_:)`](vtcompressionsessioninvalidate(_:).md) to invalidate it and [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free its memory.
 
 ## Topics
 

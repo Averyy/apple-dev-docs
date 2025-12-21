@@ -34,7 +34,7 @@ This function returns a value whether or not the audio hardware device associate
 
 ## See Also
 
-- [func AudioDeviceGetCurrentTime(_ inDevice: AudioObjectID, _ outTime: UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](../CoreAudio/AudioDeviceGetCurrentTime(_:_:).md)
+- [func AudioDeviceGetCurrentTime(AudioObjectID, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](../CoreAudio/AudioDeviceGetCurrentTime(_:_:).md)
 - [func AudioQueueCreateTimeline(AudioQueueRef, UnsafeMutablePointer<AudioQueueTimelineRef?>) -> OSStatus](audioqueuecreatetimeline(_:_:).md)
   Creates a timeline object for an audio queue.
 - [func AudioQueueDisposeTimeline(AudioQueueRef, AudioQueueTimelineRef) -> OSStatus](audioqueuedisposetimeline(_:_:).md)

@@ -5,8 +5,6 @@
 ## Topics
 
 ### Initializers
-- [init()](mldatavalue/multiarraytype/init.md)
-  Creates a new default instance of the conforming type when a data value is missing or invalid.
 - [init?(from: MLDataValue)](mldatavalue/multiarraytype/init(from:).md)
   Creates a data-value multidimensional array from another instance.
 ### Instance Properties

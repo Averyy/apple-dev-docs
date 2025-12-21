@@ -22,7 +22,7 @@ var isForFoodEnergyUse: Bool { get set }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the energy is used to measure food energy; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If set to [`true`](https://developer.apple.com/documentation/swift/true), [`EnergyFormatter.Unit.kilocalorie`](energyformatter/unit/kilocalorie.md) may be represented using “C” instead of “kcal”. By default, this property returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the energy is used to measure food energy; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If set to [`true`](https://developer.apple.com/documentation/Swift/true), [`EnergyFormatter.Unit.kilocalorie`](energyformatter/unit/kilocalorie.md) may be represented using “C” instead of “kcal”. By default, this property returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

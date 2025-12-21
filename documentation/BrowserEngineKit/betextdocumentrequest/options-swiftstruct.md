@@ -25,10 +25,6 @@ struct Options
 - [static var markedTextRects: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/markedtextrects.md)
 - [static var text: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/text.md)
 - [static var textRects: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/textrects.md)
-### Default Implementations
-- [Equatable Implementations](betextdocumentrequest/options-swift.struct/equatable-implementations.md)
-- [OptionSet Implementations](betextdocumentrequest/options-swift.struct/optionset-implementations.md)
-- [SetAlgebra Implementations](betextdocumentrequest/options-swift.struct/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -41,17 +41,13 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
 
 ## Topics
 
-### Creating a Multiarray
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-3eqoq.md)
-  Creates a multiarray from a collection of integers.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-fh2x.md)
-  Creates a multiarray from a collection of floats.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-8bsfu.md)
-  Creates a multiarray from a collection of doubles.
+### Creating a multiarray
+- [convenience(_:)](mlmultiarray/init(_:).md)
+  An MLMultiArray constructed with the FixedWidthInteger elements of the collection converted to Int32.
 - [init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws](mlmultiarray/init(shape:datatype:).md)
   Creates a multidimensional array with a shape and type.
-- [convenience init<ShapedArray>(ShapedArray)](mlmultiarray/init(_:)-wk41.md)
-  Creates a multiarray from a shaped array.
+- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](mlmultiarray/init(shape:datatype:strides:).md)
+  Creates the object with specified strides.
 - [init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiArrayDataType, strides: [NSNumber], deallocator: ((UnsafeMutableRawPointer) -> Void)?) throws](mlmultiarray/init(datapointer:shape:datatype:strides:deallocator:).md)
   Creates a multiarray from a data pointer.
 - [convenience init(byConcatenatingMultiArrays: [MLMultiArray], alongAxis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(byconcatenatingmultiarrays:alongaxis:datatype:).md)
@@ -60,7 +56,7 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
   Creates a multiarray sharing the surface of a pixel buffer.
 - [enum MLMultiArrayDataType](mlmultiarraydatatype.md)
   Constants that define the underlying element types a multiarray can store.
-### Inspecting a Multiarray
+### Inspecting a multiarray
 - [var count: Int](mlmultiarray/count.md)
   The total number of elements in the multiarray.
 - [var dataType: MLMultiArrayDataType](mlmultiarray/datatype.md)
@@ -69,6 +65,9 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
   The multiarray’s multidimensional shape as a number array in which each element’s value is the size of the corresponding dimension.
 - [var strides: [NSNumber]](mlmultiarray/strides.md)
   A number array in which each element is the number of memory locations that span the length of the corresponding dimension.
+### Transfering the contents
+- [func transfer(to: MLMultiArray)](mlmultiarray/transfer(to:).md)
+  Transfer the contents to the destination multi-array.
 ### Providing buffer access
 - [func withUnsafeBufferPointer<S, R>(ofType: S.Type, (UnsafeBufferPointer<S>) throws -> R) rethrows -> R](mlmultiarray/withunsafebufferpointer(oftype:_:).md)
   Calls a given closure with a raw pointer to the multiarray’s storage.
@@ -78,21 +77,12 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
   Calls a given closure with a raw pointer to the multiarray’s mutable storage.
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R](mlmultiarray/withunsafemutablebytes(_:).md)
   Calls a given closure with a raw pointer to the multiarray’s mutable storage.
-### Accessing a Multiarray’s Elements
-- [subscript(Int) -> NSNumber](mlmultiarray/subscript(_:)-2hh91.md)
-  Accesses the multiarray by using a linear offset.
-- [subscript([NSNumber]) -> NSNumber](mlmultiarray/subscript(_:)-3d9el.md)
-  Accesses the multiarray by using a number array that has an element for each dimension.
+### Accessing a multiarray’s elements
+- [subscript(_:)](mlmultiarray/subscript(_:).md)
 - [var pixelBuffer: CVPixelBuffer?](mlmultiarray/pixelbuffer.md)
   A reference to the multiarray’s underlying pixel buffer.
 - [var dataPointer: UnsafeMutableRawPointer](mlmultiarray/datapointer.md)
   A pointer to the multiarray’s underlying memory.
-### Initializers
-- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](mlmultiarray/init(shape:datatype:strides:).md)
-  Creates the object with specified strides.
-### Instance Methods
-- [func transfer(to: MLMultiArray)](mlmultiarray/transfer(to:).md)
-  Transfer the contents to the destination multi-array.
 
 ## Relationships
 

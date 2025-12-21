@@ -41,13 +41,6 @@ Use [`MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)`]
 ### Describing a feature extractor
 - [var description: String](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/description.md)
   A text representation of the feature-extractor type.
-### Comparing feature extractors
-- [static func == (MLSoundClassifier.ModelParameters.FeatureExtractorType, MLSoundClassifier.ModelParameters.FeatureExtractorType) -> Bool](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/equatable-implementations.md)
 
 ## Relationships
 
@@ -59,10 +52,14 @@ Use [`MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)`]
 
 ## See Also
 
-- [case transferLearning(featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType, classifier: MLSoundClassifier.ModelParameters.ClassifierType)](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype/transferlearning(featureextractor:classifier:).md)
-  An algorithm that leverages the knowledge of a general-purpose model built into the operating system.
+- [MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validationdata.md)
+  The source of a validation dataset for a sound classifier.
+- [MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
+  The algorithm options to train a sound classifier.
 - [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
   The classifier options for a sound classifier training algorithm.
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+  The type options for an Audio Feature Print feature extractor.
 
 
 ---

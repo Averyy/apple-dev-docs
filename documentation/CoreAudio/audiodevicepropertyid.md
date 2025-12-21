@@ -13,6 +13,10 @@
 typealias AudioDevicePropertyID = AudioObjectPropertySelector
 ```
 
+#### Discussion
+
+An AudioDevicePropertyID is an integer that identifies a specific piece of information about the object.
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

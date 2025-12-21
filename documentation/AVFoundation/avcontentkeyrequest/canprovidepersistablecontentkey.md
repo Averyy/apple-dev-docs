@@ -30,6 +30,8 @@ When this property is set to `NO` and there is a request for a persistable conte
 
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
   The identifier for the content key.
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 - [var error: (any Error)?](avcontentkeyrequest/error.md)
   The error description for a failed key request.
 - [var initializationData: Data?](avcontentkeyrequest/initializationdata.md)

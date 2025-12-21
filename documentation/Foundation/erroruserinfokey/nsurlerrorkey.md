@@ -11,7 +11,6 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

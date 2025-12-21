@@ -1,4 +1,4 @@
-# Positioning Samples Programmatically
+# Positioning samples programmatically
 
 **Framework**: Metal
 
@@ -10,9 +10,9 @@ When you perform a render pass that uses multisample antialiasing (MSAA) operati
 
 ##### Verify Support for Programmable Sample Positions
 
-Not all GPUs support programmable sample positions. Check for support by reading the [`areProgrammableSamplePositionsSupported`](mtldevice/areprogrammablesamplepositionssupported.md) property on a device object. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), the device object uses fixed sample positions that you can’t query or modify.
+Not all GPUs support programmable sample positions. Check for support by reading the [`areProgrammableSamplePositionsSupported`](mtldevice/areprogrammablesamplepositionssupported.md) property on a device instance. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), the device instance uses fixed sample positions that you can’t query or modify.
 
-Additionally, the number of sample positions that the device object supports may vary. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine if a given number of samples is usable on that device object.
+Additionally, the number of sample positions that the device instance supports may vary. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine if a given number of samples is usable on that device instance.
 
 ##### Get the Default Sample Positions
 
@@ -37,7 +37,7 @@ For example, the following table and grid show the position index, values, and p
 
 ##### Set the Sample Positions in a Render Pass
 
-To change the sample positions in a render pass, call the [`setSamplePositions:count:`](mtlrenderpassdescriptor/setsamplepositions:count:.md) method of a [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md), as shown below, passing in the array of sample positions you want to use.
+To change the sample positions in a render pass, call the [`setSamplePositions:count:`](mtlrenderpassdescriptor/setsamplepositions:count:.md) method of an [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md), as shown below, passing in the array of sample positions you want to use.
 
 ```objective-c
 static const MTLSamplePosition samplePositions[4] = {
@@ -55,7 +55,7 @@ The following grid shows the programmable sample positions in the `samplePositio
 
 ## See Also
 
-- [Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
+- [Storing data a pass makes with custom sample positions for a subsequent pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
   Inform Metal when your app uses programmable sample positions for its depth render targets or copies MSAA depth data.
 
 

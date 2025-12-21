@@ -24,7 +24,7 @@ Adding information to your app about additional [`iCloud support resources`](htt
 
 - [TipKit](../TipKit/TipKit.md)
   Display tips that help people discover features in your app.
-- [@MainActor class NSHelpManager](../AppKit/NSHelpManager.md)
+- [class NSHelpManager](../AppKit/NSHelpManager.md)
   An object for displaying online help for an app.
 - [Adding the Virtualization Entitlement to Your Project](adding-the-virtualization-entitlement-to-your-project.md)
   Configure your project to use the Virtualization framework.

@@ -6,7 +6,7 @@
 A textual representation of CameraFrameProvider.CameraRectification.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

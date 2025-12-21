@@ -27,7 +27,7 @@ Styles specify which name components are used to create a string representation,
 ## See Also
 
 - [var isPhonetic: Bool](personnamecomponentsformatter/isphonetic.md)
-  A Boolean value that specifies whether the receiver should use only the phonetic representations of name components. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+  A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 
 
 ---

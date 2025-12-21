@@ -19,13 +19,13 @@ var isLivePhotoCaptureSuspended: Bool { get set }
 
 #### Discussion
 
-By default, this property’s value is [`false`](https://developer.apple.com/documentation/swift/false). Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to stop any current Live Photo movie captures in progress. Doing this prevents recording additional actions in the Live Photo movie. For example, if you want to capture a still photo that makes a shutter sound, you can prevent recording that action.
+By default, this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false). Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop any current Live Photo movie captures in progress. Doing this prevents recording additional actions in the Live Photo movie. For example, if you want to capture a still photo that makes a shutter sound, you can prevent recording that action.
 
-When you change this value to [`true`](https://developer.apple.com/documentation/swift/true), the system trims any Live Photo movie captures in progress to the current time. Likewise, when you change this value from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), subsequent Live Photo movie captures won’t contain any earlier recordings.
+When you change this value to [`true`](https://developer.apple.com/documentation/Swift/true), the system trims any Live Photo movie captures in progress to the current time. Likewise, when you change this value from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false), subsequent Live Photo movie captures won’t contain any earlier recordings.
 
-By default, this property resets to [`false`](https://developer.apple.com/documentation/swift/false) when the [`AVCaptureSession`](avcapturesession.md) stops. You can prevent this behavior by setting [`preservesLivePhotoCaptureSuspendedOnSessionStop`](avcapturephotooutput/preserveslivephotocapturesuspendedonsessionstop.md) to [`true`](https://developer.apple.com/documentation/swift/true) before stopping the session.
+By default, this property resets to [`false`](https://developer.apple.com/documentation/Swift/false) when the [`AVCaptureSession`](avcapturesession.md) stops. You can prevent this behavior by setting [`preservesLivePhotoCaptureSuspendedOnSessionStop`](avcapturephotooutput/preserveslivephotocapturesuspendedonsessionstop.md) to [`true`](https://developer.apple.com/documentation/Swift/true) before stopping the session.
 
-> ❗ **Important**:  Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
+> ❗ **Important**:  Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

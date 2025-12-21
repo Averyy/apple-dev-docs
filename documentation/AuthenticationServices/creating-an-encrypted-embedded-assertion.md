@@ -38,7 +38,7 @@ The following table specifies the body parameters that the system uses to create
 
 ##### Configure Concatenation Key Derivation Function Concat Kdf
 
-Configuration of Concat KDF for platform SSO is per RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2. See the input definitions in the table below. The system concatenates these values per NIST.800-56A sections 5.8.1 and then it computes a SHA-256 hash to create the key. Then, it sends the `PartyUInfo` and `PartyVInfo` values to the server in the header.
+Configuration of Concat KDF for Platform SSO is per RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2. See the input definitions in the table below. The system concatenates these values per NIST.800-56A sections 5.8.1 and then it computes a SHA-256 hash to create the key. Then, it sends the `PartyUInfo` and `PartyVInfo` values to the server in the header.
 
 | Key | Value | Notes |
 | --- | --- | --- |
@@ -91,7 +91,7 @@ For more information, see [`Authentication process`](authentication-process.md).
 - [Creating a refresh request](creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 
 ---

@@ -28,12 +28,6 @@ case unexpectedValueClassError
   An error code indicating that the requested data type coercion is unavailable from an item provider.
 - [NSItemProvider.ErrorCode.unknownError](nsitemprovider/errorcode/unknownerror.md)
   An error code indicating an unknown error with consuming data from an item provider.
-- [NSItemProvider.ErrorCode.itemUnavailableError](nsitemprovider/errorcode/itemunavailableerror.md)
-  An error code indicating that the requested data was unavailable from an item provider.
-- [NSItemProvider.ErrorCode.unavailableCoercionError](nsitemprovider/errorcode/unavailablecoercionerror.md)
-  An error code indicating that the requested data type coercion is unavailable from an item provider.
-- [NSItemProvider.ErrorCode.unknownError](nsitemprovider/errorcode/unknownerror.md)
-  An error code indicating an unknown error with consuming data from an item provider.
 
 
 ---

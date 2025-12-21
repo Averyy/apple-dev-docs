@@ -6,14 +6,13 @@
 A custom playground quick look for this instance.
 
 **Availability**:
+- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+
-- Unknown ?+ - Deprecated
-- iOS ?+
 
 ## Declaration
 

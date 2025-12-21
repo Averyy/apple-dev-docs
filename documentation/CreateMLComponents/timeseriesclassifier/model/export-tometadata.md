@@ -24,6 +24,13 @@ func export(to url: URL, metadata: ModelMetadata) throws
 - `url`: The location to write the model into.
 - `metadata`: Contextual user-provided information.
 
+## See Also
+
+- [func applied(to:eventHandler:)](timeseriesclassifier/model/applied(to:eventhandler:).md)
+  Performs a classification on a shaped array of input features.
+- [func export(to: URL) throws](timeseriesclassifier/model/export(to:).md)
+  Exports this transformer as a CoreML model package.
+
 
 ---
 

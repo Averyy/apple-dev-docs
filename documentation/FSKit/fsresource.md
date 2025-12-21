@@ -57,6 +57,10 @@ Some resources, like [`FSBlockDeviceResource`](fsblockdeviceresource.md), come i
 
 - [class FSBlockDeviceResource](fsblockdeviceresource.md)
   A resource that represents a block storage disk partition.
+- [class FSPathURLResource](fspathurlresource.md)
+  A resource that represents a path in the system file space.
+- [class FSGenericURLResource](fsgenericurlresource.md)
+  A resource that represents an abstract URL.
 
 
 ---

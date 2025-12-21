@@ -21,7 +21,7 @@ var isRestrictedToDraggingApplication: Bool { get }
 
 #### Discussion
 
-The value for this property is set by the source app’s drag interaction delegate method [`dragInteraction(_:sessionIsRestrictedToDraggingApplication:)`](uidraginteractiondelegate/draginteraction(_:sessionisrestrictedtodraggingapplication:).md).  If the value is [`true`](https://developer.apple.com/documentation/swift/true), the drag session is restricted to the app that started the drag operation.
+The value for this property is set by the source app’s drag interaction delegate method [`dragInteraction(_:sessionIsRestrictedToDraggingApplication:)`](uidraginteractiondelegate/draginteraction(_:sessionisrestrictedtodraggingapplication:).md).  If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the drag session is restricted to the app that started the drag operation.
 
 ## See Also
 

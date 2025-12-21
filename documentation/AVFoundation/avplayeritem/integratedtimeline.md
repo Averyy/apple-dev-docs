@@ -29,6 +29,8 @@ The value is `nil` for player items in an interstitial player.
 
 - [var automaticallyHandlesInterstitialEvents: Bool](avplayeritem/automaticallyhandlesinterstitialevents.md)
   A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives.
+- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
+  A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
 - [var interstitialTimeRanges: [AVInterstitialTimeRange]](avplayeritem/interstitialtimeranges.md)
   An array of time ranges that identify interstitial content.
 - [var template: AVPlayerItem?](avplayeritem/template.md)

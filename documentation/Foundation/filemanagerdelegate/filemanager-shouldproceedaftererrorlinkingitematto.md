@@ -22,11 +22,11 @@ optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError er
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The file manager calls this method when there is a problem creating a hard link to the item at the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager continues creating any other links associated with the current operation and ignores the error.
+The file manager calls this method when there is a problem creating a hard link to the item at the specified location. If you return [`true`](https://developer.apple.com/documentation/Swift/true), the file manager continues creating any other links associated with the current operation and ignores the error.
 
 This method performs the same task as the [`fileManager(_:shouldProceedAfterError:linkingItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:linkingitematpath:topath:).md) method and is preferred over that method in macOS 10.6 and later.
 

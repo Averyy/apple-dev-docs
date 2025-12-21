@@ -10,10 +10,9 @@ A function for pooling that computes the square root of the sum of squares of ea
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 

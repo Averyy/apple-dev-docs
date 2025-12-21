@@ -17,7 +17,7 @@ var takesTitleFromPreviousColumn: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the title of a column is set to the string value of the selected `NSCell` in the previous column.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the title of a column is set to the string value of the selected `NSCell` in the previous column.
 
 ## See Also
 

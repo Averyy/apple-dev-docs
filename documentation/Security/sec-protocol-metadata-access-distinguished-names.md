@@ -24,9 +24,7 @@ Returns true if the distinguished names were accessible, false otherwise.
 
 #### Discussion
 
-```None
- Get the X.509 Distinguished Names from the protocol instance peer.
-```
+Get the X.509 Distinguished Names from the protocol instance peer.
 
 ## Parameters
 

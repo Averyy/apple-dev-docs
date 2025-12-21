@@ -21,6 +21,10 @@ init?(newBigIntFrom uint64: UInt64, in context: JSContext)
 
 The JSValue representing a JavaScript value with type BigInt.
 
+#### Discussion
+
+Create a new BigInt value from a uint64_t.
+
 ## Parameters
 
 - `uint64`: The unsigned 64-bit integer of the BigInt JavaScript value being created.

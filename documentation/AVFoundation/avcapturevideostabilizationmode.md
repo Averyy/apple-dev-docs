@@ -19,7 +19,7 @@ enum AVCaptureVideoStabilizationMode
 
 ## Topics
 
-### Stabilization Modes
+### Stabilization modes
 - [AVCaptureVideoStabilizationMode.off](avcapturevideostabilizationmode/off.md)
   A mode that doesn’t stabilize video capture.
 - [AVCaptureVideoStabilizationMode.standard](avcapturevideostabilizationmode/standard.md)
@@ -34,6 +34,8 @@ enum AVCaptureVideoStabilizationMode
   A mode that stabilizes video using the enhanced extended cinematic stabilization algorithm.
 - [AVCaptureVideoStabilizationMode.auto](avcapturevideostabilizationmode/auto.md)
   A mode that indicates the system chooses the most appropriate video stabilization mode for the device and format.
+- [AVCaptureVideoStabilizationMode.lowLatency](avcapturevideostabilizationmode/lowlatency.md)
+  Indicates that video should be stabilized using the low latency stabilization algorithm. Low Latency stabilization has a reduced field of view. Enabling low latency stabilization introduces no additional latency into the video capture pipeline.
 ### Initializers
 - [init?(rawValue: Int)](avcapturevideostabilizationmode/init(rawvalue:).md)
 

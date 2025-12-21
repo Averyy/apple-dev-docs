@@ -93,8 +93,6 @@ You can configure the position of the text in the Sign in with Apple button if y
 
 - [Configuring your environment for Sign in with Apple](configuring-your-environment-for-sign-in-with-apple.md)
   Authenticate users with your web service by associating an existing app with a Services ID and private key.
-- [Processing changes for Sign in with Apple accounts](processing-changes-for-sign-in-with-apple-accounts.md)
-  Manage user-initiated modifications to maintain privacy with server-to-server notifications.
 
 
 ---

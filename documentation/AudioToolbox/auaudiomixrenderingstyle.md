@@ -19,6 +19,8 @@ enum AUAudioMixRenderingStyle
 
 #### Overview
 
+Constants available as values for parameter kAUAudioMixParameter_Style.
+
 Cinematic rendering style (default)
 
 Studio rendering style

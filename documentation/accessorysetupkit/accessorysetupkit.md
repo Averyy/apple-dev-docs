@@ -15,7 +15,7 @@ Use AccessorySetupKit to discover and configure Bluetooth or Wi-Fi accessories w
 
 To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware), specify Wi-Fi Aware properties in a [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) prior to beginning accessory discovery.
 
-> ❗ **Important**: AccessorySetupKit is available for iOS and iPadOS. The accessory’s Bluetooth permission doesn’t sync to a companion watchOS app.
+> ❗ **Important**: AccessorySetupKit is available for iOS and iPadOS. In watchOS 26 and later, if someone sets up an accessory with your iOS app by using AccessorySetupKit, a companion watchOS app can also use CoreBluetooth to communicate with the new accessory and any other accessories.
 
 ## Topics
 
@@ -36,11 +36,15 @@ To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/docume
 ### Accessory description
 - [class ASAccessory](asaccessory.md)
   An accessory discovered by the accessory session.
+- [class ASDiscoveredAccessory](asdiscoveredaccessory.md)
+  A discovered accessory, for use in creating a customized picker display item.
 - [ASAccessory.AccessoryState](asaccessory/accessorystate.md)
   An enumeration of possible authorization states of an accessory.
 ### Displaying picker items
 - [class ASPickerDisplayItem](aspickerdisplayitem.md)
   An accessory as presented by the discovery picker.
+- [class ASDiscoveredDisplayItem](asdiscovereddisplayitem.md)
+  A picker display item created from customizing a discovered accessory.
 - [class ASMigrationDisplayItem](asmigrationdisplayitem.md)
   A previously-discovered accessory as presented by the discovery picker, for use when migrating it to AccessorySetupKit.
 ### Information property list keys

@@ -17,7 +17,7 @@ func loadComposition(fromFile path: String!) -> Bool
 
 #### Return Value
 
-If unsuccessful, returns [`false`](https://developer.apple.com/documentation/swift/false); any composition that’s already loaded in the view remains loaded.
+If unsuccessful, returns [`false`](https://developer.apple.com/documentation/Swift/false); any composition that’s already loaded in the view remains loaded.
 
 ## Parameters
 

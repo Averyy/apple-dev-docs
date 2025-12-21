@@ -1,46 +1,47 @@
 # WebPage.NavigationEvent
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: enum
 
 A particular state that occurs during the progression of a navigation.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-struct NavigationEvent
+enum NavigationEvent
 ```
 
 ## Topics
 
-### Instance Properties
-- [let kind: WebPage.NavigationEvent.Kind](webpage/navigationevent/kind-swift.property.md)
-  The type of this navigation event.
-- [let navigationID: WebPage.NavigationID](webpage/navigationevent/navigationid.md)
-  The ID of the navigation that triggered this event.
-### Enumerations
-- [WebPage.NavigationEvent.Kind](webpage/navigationevent/kind-swift.enum.md)
-  A set of values representing the possible types a NavigationEvent can represent.
+### Enumeration Cases
+- [WebPage.NavigationEvent.committed](webpage/navigationevent/committed.md)
+  This event occurs when the page has started to receive content for the main frame.
+- [WebPage.NavigationEvent.finished](webpage/navigationevent/finished.md)
+  This event occurs once the navigation is complete.
+- [WebPage.NavigationEvent.receivedServerRedirect](webpage/navigationevent/receivedserverredirect.md)
+  This event occurs when the page received a server redirect for a request.
+- [WebPage.NavigationEvent.startedProvisionalNavigation](webpage/navigationevent/startedprovisionalnavigation.md)
+  This event occurs when the page receives provisional approval to process a navigation request, but before it receives a response to that request.
 
 ## Relationships
 
 ### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
-  An observable representation of a webpage’s navigations.
-- [WebPage.NavigationID](webpage/navigationid.md)
-  An opaque identifier which can be used to uniquely identify a load request for a web page.
+  An observable representation of a webpage’s previously loaded resources.
 
 
 ---

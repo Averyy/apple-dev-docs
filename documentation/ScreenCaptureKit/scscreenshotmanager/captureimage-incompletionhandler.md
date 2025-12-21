@@ -15,7 +15,9 @@ class func captureImage(in rect: CGRect) async throws -> CGImage
 
 #### Discussion
 
-This method returns an image containing the contents of the rectangle in points, specified in display space
+captureImageInRect:completionHandler:
+
+this method returns an image containing the contents of the rectangle in points, specified in display space
 
 ## Parameters
 

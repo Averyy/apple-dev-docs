@@ -12,6 +12,10 @@
 optional var supportedUserSecureEnclaveKeySigningAlgorithms: [ASAuthorizationProviderExtensionSigningAlgorithm] { get }
 ```
 
+#### Discussion
+
+The supported user Secure Enclave Key signing algorithms.
+
 
 ---
 

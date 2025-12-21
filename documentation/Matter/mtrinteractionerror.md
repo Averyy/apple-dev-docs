@@ -4,13 +4,13 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 16.1+
+- iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 13.0+
-- tvOS 16.0+
+- tvOS 16.1+
 - visionOS 1.0+
-- watchOS 9.0+
+- watchOS 9.1+
 
 ## Declaration
 
@@ -20,40 +20,38 @@ struct MTRInteractionError
 
 ## Topics
 
+### Type Properties
+- [static var busy: MTRInteractionError.Code](mtrinteractionerror/busy.md)
+- [static var constraintError: MTRInteractionError.Code](mtrinteractionerror/constrainterror.md)
+- [static var dataVersionMismatch: MTRInteractionError.Code](mtrinteractionerror/dataversionmismatch.md)
+- [static var failsafeRequired: MTRInteractionError.Code](mtrinteractionerror/failsaferequired.md)
+- [static var failure: MTRInteractionError.Code](mtrinteractionerror/failure.md)
+- [static var invalidAction: MTRInteractionError.Code](mtrinteractionerror/invalidaction.md)
+- [static var invalidCommand: MTRInteractionError.Code](mtrinteractionerror/invalidcommand.md)
+- [static var invalidDataType: MTRInteractionError.Code](mtrinteractionerror/invaliddatatype.md)
+- [static var invalidInState: MTRInteractionError.Code](mtrinteractionerror/invalidinstate.md)
+- [static var invalidSubscription: MTRInteractionError.Code](mtrinteractionerror/invalidsubscription.md)
+- [static var needsTimedInteraction: MTRInteractionError.Code](mtrinteractionerror/needstimedinteraction.md)
+- [static var noCommandResponse: MTRInteractionError.Code](mtrinteractionerror/nocommandresponse.md)
+- [static var noUpstreamSubscription: MTRInteractionError.Code](mtrinteractionerror/noupstreamsubscription.md)
+- [static var notFound: MTRInteractionError.Code](mtrinteractionerror/notfound.md)
+- [static var pathsExhausted: MTRInteractionError.Code](mtrinteractionerror/pathsexhausted.md)
+- [static var resourceExhausted: MTRInteractionError.Code](mtrinteractionerror/resourceexhausted.md)
+- [static var timedRequestMismatch: MTRInteractionError.Code](mtrinteractionerror/timedrequestmismatch.md)
+- [static var timeout: MTRInteractionError.Code](mtrinteractionerror/timeout.md)
+- [static var unreportableAttribute: MTRInteractionError.Code](mtrinteractionerror/unreportableattribute.md)
+- [static var unsupportedAccess: MTRInteractionError.Code](mtrinteractionerror/unsupportedaccess.md)
+- [static var unsupportedAttribute: MTRInteractionError.Code](mtrinteractionerror/unsupportedattribute.md)
+- [static var unsupportedCluster: MTRInteractionError.Code](mtrinteractionerror/unsupportedcluster.md)
+- [static var unsupportedCommand: MTRInteractionError.Code](mtrinteractionerror/unsupportedcommand.md)
+- [static var unsupportedEndpoint: MTRInteractionError.Code](mtrinteractionerror/unsupportedendpoint.md)
+- [static var unsupportedEvent: MTRInteractionError.Code](mtrinteractionerror/unsupportedevent.md)
+- [static var unsupportedRead: MTRInteractionError.Code](mtrinteractionerror/unsupportedread.md)
+- [static var unsupportedWrite: MTRInteractionError.Code](mtrinteractionerror/unsupportedwrite.md)
+- [static var accessRestricted: MTRInteractionError.Code](mtrinteractionerror/accessrestricted.md)
+- [static var errorDomain: String](mtrinteractionerror/errordomain.md)
 ### Enumerations
 - [MTRInteractionError.Code](mtrinteractionerror/code.md)
-### Type Properties
-- [static var dynamicConstraintError: MTRInteractionError.Code](mtrinteractionerror/dynamicconstrainterror.md)
-- [static var errorDomain: String](mtrinteractionerror/errordomain.md)
-- [static var interactionErrorCodeAccessRestricted: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeaccessrestricted.md)
-- [static var interactionErrorCodeBusy: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodebusy.md)
-- [static var interactionErrorCodeConstraintError: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeconstrainterror.md)
-- [static var interactionErrorCodeDataVersionMismatch: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodedataversionmismatch.md)
-- [static var interactionErrorCodeFailsafeRequired: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodefailsaferequired.md)
-- [static var interactionErrorCodeFailure: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodefailure.md)
-- [static var interactionErrorCodeInvalidAction: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvalidaction.md)
-- [static var interactionErrorCodeInvalidCommand: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvalidcommand.md)
-- [static var interactionErrorCodeInvalidDataType: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvaliddatatype.md)
-- [static var interactionErrorCodeInvalidInState: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvalidinstate.md)
-- [static var interactionErrorCodeInvalidSubscription: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvalidsubscription.md)
-- [static var interactionErrorCodeInvalidTransportType: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeinvalidtransporttype.md)
-- [static var interactionErrorCodeNeedsTimedInteraction: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeneedstimedinteraction.md)
-- [static var interactionErrorCodeNoCommandResponse: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodenocommandresponse.md)
-- [static var interactionErrorCodeNoUpstreamSubscription: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodenoupstreamsubscription.md)
-- [static var interactionErrorCodeNotFound: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodenotfound.md)
-- [static var interactionErrorCodePathsExhausted: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodepathsexhausted.md)
-- [static var interactionErrorCodeResourceExhausted: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcoderesourceexhausted.md)
-- [static var interactionErrorCodeTimedRequestMismatch: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodetimedrequestmismatch.md)
-- [static var interactionErrorCodeTimeout: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodetimeout.md)
-- [static var interactionErrorCodeUnreportableAttribute: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunreportableattribute.md)
-- [static var interactionErrorCodeUnsupportedAccess: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedaccess.md)
-- [static var interactionErrorCodeUnsupportedAttribute: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedattribute.md)
-- [static var interactionErrorCodeUnsupportedCluster: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedcluster.md)
-- [static var interactionErrorCodeUnsupportedCommand: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedcommand.md)
-- [static var interactionErrorCodeUnsupportedEndpoint: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedendpoint.md)
-- [static var interactionErrorCodeUnsupportedEvent: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedevent.md)
-- [static var interactionErrorCodeUnsupportedRead: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedread.md)
-- [static var interactionErrorCodeUnsupportedWrite: MTRInteractionError.Code](mtrinteractionerror/interactionerrorcodeunsupportedwrite.md)
 
 ## Relationships
 

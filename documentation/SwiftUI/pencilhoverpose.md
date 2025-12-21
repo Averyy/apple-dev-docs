@@ -10,6 +10,7 @@ A value describing the location and distance of an Apple Pencil hovering in the 
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

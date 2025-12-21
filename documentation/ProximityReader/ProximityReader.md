@@ -97,7 +97,7 @@ The use of this framework requires you to coordinate with a participating paymen
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

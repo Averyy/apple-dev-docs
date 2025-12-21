@@ -11,7 +11,7 @@ A map region that provides a hint for the geographic area to search.
 ## Declaration
 
 ```swift
-attribute mapkit.CoordinateRegion region;
+region?: CoordinateRegion;
 ```
 
 #### Discussion
@@ -26,10 +26,10 @@ This property specifies a region of a map in which to search. In a map applicati
 
 - [coordinate](searchconstructoroptions/coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
-- [getsUserLocation](searchconstructoroptions/getsuserlocation.md)
-  A Boolean value that indicates whether to limit the search results to the user’s location, according to the web browser.
-- [language](searchconstructoroptions/language.md)
-  A language ID that determines the language for the search results text.
+- [getsUserLocation](serviceconstructoroptions/getsuserlocation.md)
+  A Boolean value that indicates whether to limit the results to the user’s location, according to the web browser.
+- [language](serviceconstructoroptions/language.md)
+  A language identifier that determines the language for the service results text.
 
 
 ---

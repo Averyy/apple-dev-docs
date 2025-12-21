@@ -32,24 +32,8 @@ Unlike [`CurrentValueSubject`](currentvaluesubject.md), a [`PassthroughSubject`]
 
 ## Topics
 
-### Creating a Passthrough Subject
+### Creating a passthrough subject
 - [init()](passthroughsubject/init.md)
-### Delivering Elements to Subscribers
-- [func send(Output)](passthroughsubject/send(_:).md)
-  Sends a value to the subscriber.
-- [func send()](passthroughsubject/send.md)
-  Sends a void value to the subscriber.
-### Delivering Life Cycle Events to Subscribers
-- [func send(subscription: any Subscription)](passthroughsubject/send(subscription:).md)
-  Sends a subscription to the subscriber.
-- [func send(completion: Subscribers.Completion<Failure>)](passthroughsubject/send(completion:).md)
-  Sends a completion signal to the subscriber.
-### Applying Operators
-- [Publisher Operators](passthroughsubject-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](passthroughsubject/publisher-implementations.md)
-- [Subject Implementations](passthroughsubject/subject-implementations.md)
 
 ## Relationships
 

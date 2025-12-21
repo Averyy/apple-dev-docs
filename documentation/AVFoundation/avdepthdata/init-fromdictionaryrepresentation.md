@@ -21,7 +21,7 @@ convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: 
 
 ## Mentions
 
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
 
 #### Discussion
 

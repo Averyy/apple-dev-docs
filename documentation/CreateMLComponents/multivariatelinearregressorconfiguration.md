@@ -38,22 +38,6 @@ struct MultivariateLinearRegressorConfiguration
   The optimizer learning rate.
 - [var randomSeed: Int?](multivariatelinearregressorconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations.
-### Operators
-- [static func == (MultivariateLinearRegressorConfiguration, MultivariateLinearRegressorConfiguration) -> Bool](multivariatelinearregressorconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](multivariatelinearregressorconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](multivariatelinearregressorconfiguration/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](multivariatelinearregressorconfiguration/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](multivariatelinearregressorconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](multivariatelinearregressorconfiguration/equatable-implementations.md)
 
 ## Relationships
 

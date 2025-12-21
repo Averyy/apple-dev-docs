@@ -17,7 +17,7 @@ func mouseExited(with event: NSEvent)
 
 #### Discussion
 
-This method is called only when the pointer moves off the button and the value of [`showsBorderOnlyWhileMouseInside`](nsbuttoncell/showsborderonlywhilemouseinside.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called only when the pointer moves off the button and the value of [`showsBorderOnlyWhileMouseInside`](nsbuttoncell/showsborderonlywhilemouseinside.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

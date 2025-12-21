@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Tier 2 read/write textures are supported.
+Indicates the system supports tier 2 read-write textures.
 
 **Availability**:
 - iOS 11.0+
@@ -21,7 +21,7 @@ case tier2
 
 #### Discussion
 
-Read/write texture tier 2 supports the following pixel formats in addition to those supported by [`MTLReadWriteTextureTier.tier1`](mtlreadwritetexturetier/tier1.md):
+Tier 2 read-write textures support the following pixel formats (in addition to [`MTLReadWriteTextureTier.tier1`](mtlreadwritetexturetier/tier1.md)):
 
 - [`MTLPixelFormat.rgba32Float`](mtlpixelformat/rgba32float.md)
 - [`MTLPixelFormat.rgba32Uint`](mtlpixelformat/rgba32uint.md)
@@ -42,9 +42,9 @@ Read/write texture tier 2 supports the following pixel formats in addition to th
 ## See Also
 
 - [MTLReadWriteTextureTier.tier1](mtlreadwritetexturetier/tier1.md)
-  Tier 1 read/write textures are supported.
+  Indicates the system supports tier 1 read-write textures.
 - [MTLReadWriteTextureTier.tierNone](mtlreadwritetexturetier/tiernone.md)
-  Read-write textures are not supported.
+  Indicates the system doesn’t support read-write textures.
 
 
 ---

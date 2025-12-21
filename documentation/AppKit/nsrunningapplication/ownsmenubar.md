@@ -35,7 +35,7 @@ This property is observable using key-value observing.
 - [var launchDate: Date?](nsrunningapplication/launchdate.md)
   Indicates the date when the application was launched.
 - [var isFinishedLaunching: Bool](nsrunningapplication/isfinishedlaunching.md)
-  Indicates whether the receiver’s process has finished launching,
+  A Boolean value that determines whether the receiver’s process has finished launching.
 - [var processIdentifier: pid_t](nsrunningapplication/processidentifier.md)
   Indicates the process identifier (pid) of the application.
 

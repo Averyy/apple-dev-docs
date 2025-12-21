@@ -48,8 +48,6 @@ Previewing Live Activities with Xcode works similar to previewing widgets. The o
 
 ## See Also
 
-- [Debugging widgets](debugging-widgets.md)
-  Set environment variables in Xcode to control your widget’s configuration in the debugger.
 - [struct WidgetPreviewContext](widgetpreviewcontext.md)
   A specification for the context of a widget preview.
 - [Preview macros](preview-macros.md)

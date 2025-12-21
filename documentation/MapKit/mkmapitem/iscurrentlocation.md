@@ -22,7 +22,7 @@ var isCurrentLocation: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the map item represents the user’s location, and the value in the [`placemark`](mkmapitem/placemark.md) property is `nil`.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the map item represents the user’s location, and the value in the [`placemark`](mkmapitem/placemark.md) property is `nil`.
 
 ## See Also
 

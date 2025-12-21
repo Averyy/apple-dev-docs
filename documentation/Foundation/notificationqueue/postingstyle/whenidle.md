@@ -26,10 +26,6 @@ case whenIdle
   The notification is posted at the end of the current notification callout or timer.
 - [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
   The notification is posted immediately after coalescing.
-- [NotificationQueue.PostingStyle.asap](notificationqueue/postingstyle/asap.md)
-  The notification is posted at the end of the current notification callout or timer.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
-  The notification is posted immediately after coalescing.
 
 
 ---

@@ -17,7 +17,7 @@ func indexOfItem(withObjectValue object: Any) -> Int
 
 #### Return Value
 
-The lowest index in the internal item list whose corresponding value is equal to that of the specified object. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/swift/true).
+The lowest index in the internal item list whose corresponding value is equal to that of the specified object. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
@@ -25,7 +25,7 @@ If none of the objects in the receiver’s internal item list are equal to `anOb
 
 #### Discussion
 
-This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

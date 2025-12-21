@@ -19,6 +19,8 @@ var categories: Set<ActivityCategory> { get }
 
 - [var categoryTokens: Set<ActivityCategoryToken>](familyactivityselection/categorytokens.md)
   Tokens that represent categories selected by the user.
+- [init(includeEntireCategory: Bool)](familyactivityselection/init(includeentirecategory:).md)
+  Creates a new activity selection instance.
 
 
 ---

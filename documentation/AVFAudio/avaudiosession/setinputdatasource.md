@@ -40,6 +40,7 @@ You can set the input source to exactly one of the [`AVAudioSessionDataSourceDes
   The currently selected input data source.
 - [var inputDataSources: [AVAudioSessionDataSourceDescription]?](avaudiosession/inputdatasources.md)
   An array of available data sources for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 
 
 ---

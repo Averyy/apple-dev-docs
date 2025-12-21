@@ -19,7 +19,7 @@ var isAutoContentAwareDistortionCorrectionEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Enabling this setting introduces a small amount of latency when processing the photo request.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Enabling this setting introduces a small amount of latency when processing the photo request.
 
 ## See Also
 

@@ -6,11 +6,11 @@
 Determines how “aggressive” the voice activity detection (VAD) model will be.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ enum SensitivityLevel
 
 ## Topics
 
-### Enumeration Cases
+### Sensitivity levels
 - [SpeechDetector.SensitivityLevel.high](speechdetector/sensitivitylevel/high.md)
 - [SpeechDetector.SensitivityLevel.low](speechdetector/sensitivitylevel/low.md)
 - [SpeechDetector.SensitivityLevel.medium](speechdetector/sensitivitylevel/medium.md)
@@ -39,6 +39,15 @@ enum SensitivityLevel
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [convenience init()](speechdetector/init.md)
+  Creates a speech detector with default settings.
+- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
+  Creates a speech detector.
+- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+  Allows clients to customize an instance of a speech detector.
 
 
 ---

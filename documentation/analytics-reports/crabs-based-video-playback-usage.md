@@ -29,9 +29,13 @@ The data in this report contains information about CRABS video playback or video
 | Build | Build of device on which event occurred | `string` |
 | Unique Devices | The count of unique devices | `integer` |
 | Release Type | Type of software release | `string` |
-| Indicated Bit Rate | Indicated bit rate from context index file | `integer` |
-| Interface Type | Interface type | `string` |
-| Play Time Wall Clock | Total play time (wall clock) in milliseconds | `integer` |
+| Indicated Bit Rate | Indicated bit rate from context index file |  |
+
+```None
+      | `integer` |
+```
+
+| Interface Type       | Interface type                                       | `string`  | | Play Time Wall Clock | Total play time (wall clock) in milliseconds         | `integer` |
 
 #### Glossary
 

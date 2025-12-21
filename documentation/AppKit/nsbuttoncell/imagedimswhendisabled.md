@@ -17,7 +17,7 @@ var imageDimsWhenDisabled: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the button’s image and text are dimmed when the button is disabled; when it is [`false`](https://developer.apple.com/documentation/swift/false), the image and text are not dimmed in the disabled state. By default, all button types except [`NSSwitchButton`](nsswitchbutton.md) and [`NSRadioButton`](nsradiobutton.md) dim when disabled. When buttons of type [`NSSwitchButton`](nsswitchbutton.md) and [`NSRadioButton`](nsradiobutton.md) are disabled, only the associated text dims.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the button’s image and text are dimmed when the button is disabled; when it is [`false`](https://developer.apple.com/documentation/Swift/false), the image and text are not dimmed in the disabled state. By default, all button types except [`NSSwitchButton`](nsswitchbutton.md) and [`NSRadioButton`](nsradiobutton.md) dim when disabled. When buttons of type [`NSSwitchButton`](nsswitchbutton.md) and [`NSRadioButton`](nsradiobutton.md) are disabled, only the associated text dims.
 
 The default setting for this state is reasserted whenever you invoke [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md), so be sure to specify the button cell’s type before you set [`imageDimsWhenDisabled`](nsbuttoncell/imagedimswhendisabled.md).
 

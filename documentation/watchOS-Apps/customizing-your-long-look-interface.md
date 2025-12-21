@@ -27,7 +27,7 @@ var body: some Scene {
 }
 ```
 
-When the system receives a notification with a matching category, it displays a dynamic view specified by the notification controller. By default, the view isn’t interactive; however, you can make the view interactive by returning [`true`](https://developer.apple.com/documentation/swift/true) from the notification controller’s [`isInteractive`](https://developer.apple.com/documentation/SwiftUI/WKUserNotificationHostingController/isInteractive) property.
+When the system receives a notification with a matching category, it displays a dynamic view specified by the notification controller. By default, the view isn’t interactive; however, you can make the view interactive by returning [`true`](https://developer.apple.com/documentation/Swift/true) from the notification controller’s [`isInteractive`](https://developer.apple.com/documentation/SwiftUI/WKUserNotificationHostingController/isInteractive) property.
 
 ```swift
 // Create a dynamic, interactive notification interface.

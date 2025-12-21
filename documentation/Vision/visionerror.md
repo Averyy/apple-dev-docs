@@ -8,7 +8,6 @@ The errors that the framework produces.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -63,7 +62,7 @@ enum VisionError
   An error that indicates an app attempts a request the framework doesn’t support.
 - [VisionError.unsupportedRevision(_:)](visionerror/unsupportedrevision(_:).md)
   An error that indicates an app specifies a request revision the framework doesn’t support.
-### Instance Properties
+### Getting the error description
 - [var description: String](visionerror/description.md)
 
 ## Relationships

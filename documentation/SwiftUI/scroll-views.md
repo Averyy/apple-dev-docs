@@ -120,12 +120,12 @@ For design guidance, see [`Scroll views`](https://developer.apple.com/design/Hum
 ### Configuring scroll edge effects
 - [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](view/scrolledgeeffectstyle(_:for:).md)
   Configures the scroll edge effect style for scroll views within this hierarchy.
-- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](view/scrolledgeeffectdisabled(_:for:).md)
-  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
+  Hides any scroll edge effects for scroll views within this hierarchy.
 - [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
   A structure that defines the style of pocket a scroll view will have.
 - [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
-  Renders the provided content appropriately to be displayed as a custom bar.
+  Shows the specified content as a custom bar beside the modified view.
 ### Interacting with a software keyboard
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](view/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.

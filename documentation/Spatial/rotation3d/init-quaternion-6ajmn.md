@@ -13,7 +13,6 @@ Creates a rotation axis from the specified single-precision quaternion.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

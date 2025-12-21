@@ -17,11 +17,11 @@ func wantsScrollEventsForSwipeTracking(on axis: NSEvent.GestureAxis) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if gesture scroll events are to be forwarded up the responder chain; otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if gesture scroll events are to be forwarded up the responder chain; otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Implement this method in your swipe controller and return [`true`](https://developer.apple.com/documentation/swift/true) to inform views that perform elastic scrolling to forward gesture scroll events up the responder chain. The events are forwarded only on the following condition: the content to be scrolled is already at the edge of the scrolled direction when the scroll gesture begins. Otherwise, the view performs elastic scrolling. The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false).
+Implement this method in your swipe controller and return [`true`](https://developer.apple.com/documentation/Swift/true) to inform views that perform elastic scrolling to forward gesture scroll events up the responder chain. The events are forwarded only on the following condition: the content to be scrolled is already at the edge of the scrolled direction when the scroll gesture begins. Otherwise, the view performs elastic scrolling. The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

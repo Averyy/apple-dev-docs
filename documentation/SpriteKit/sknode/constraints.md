@@ -17,7 +17,6 @@ A list of constraints to apply to the node.
 ## Declaration
 
 ```swift
-@MainActor
 var constraints: [SKConstraint]? { get set }
 ```
 

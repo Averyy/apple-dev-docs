@@ -7,7 +7,6 @@ The size in bytes of the media item on disk.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- Unknown ?+ - Deprecated
 - macOS 10.13+
 
 ## Declaration

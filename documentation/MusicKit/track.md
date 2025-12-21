@@ -22,9 +22,6 @@ enum Track
 
 ## Topics
 
-### Operators
-- [static func == (Track, Track) -> Bool](track/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case musicVideo(MusicVideo)](track/musicvideo(_:).md)
   A track that corresponds to a music video.
@@ -55,9 +52,7 @@ enum Track
   The names of the track’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](track/genres.md)
   The track’s associated genres.
-- [var hashValue: Int](track/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](track/id-swift.property.md)
+- [var id: MusicItemID](track/id.md)
   The unique identifier for the track.
 - [var isrc: String?](track/isrc.md)
   The International Standard Recording Code (ISRC) for the track.
@@ -81,19 +76,7 @@ enum Track
   The URL for the track.
 - [var workName: String?](track/workname.md)
   For classical music only, the name of the associated work.
-### Instance Methods
-- [func hash(into: inout Hasher)](track/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](track/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](track/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](track/customstringconvertible-implementations.md)
-- [Decodable Implementations](track/decodable-implementations.md)
-- [Encodable Implementations](track/encodable-implementations.md)
-- [Equatable Implementations](track/equatable-implementations.md)
-- [MusicItem Implementations](track/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](track/musiclibraryrequestable-implementations.md)
 
 ## Relationships

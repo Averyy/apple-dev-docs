@@ -17,7 +17,7 @@ func isWord(inUserDictionaries word: String, caseSensitive flag: Bool) -> Bool
 
 #### Return Value
 
-A Boolean value indicating whether the word is in the user dictionaries. If [`true`](https://developer.apple.com/documentation/swift/true), the word is acceptable to the user.
+A Boolean value indicating whether the word is in the user dictionaries. If [`true`](https://developer.apple.com/documentation/Swift/true), the word is acceptable to the user.
 
 ## Parameters
 

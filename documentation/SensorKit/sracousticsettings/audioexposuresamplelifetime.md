@@ -4,15 +4,19 @@
 **Kind**: property
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
 ```swift
 var audioExposureSampleLifetime: SRAcousticSettings.SampleLifetime { get }
 ```
+
+#### Discussion
+
+Expected lifetime of headphone audio exposure samples in HealthKit
 
 
 ---

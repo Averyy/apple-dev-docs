@@ -24,19 +24,9 @@ struct Action
   Creates an action with the specified raw value.
 - [init(rawValue: String)](musicsubscriptionoffer/action/init(rawvalue:).md)
   Creates an action with the specified raw value.
-### Instance Properties
-- [let rawValue: String](musicsubscriptionoffer/action/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MusicSubscriptionOffer.Action.RawValue](musicsubscriptionoffer/action/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let subscribe: MusicSubscriptionOffer.Action](musicsubscriptionoffer/action/subscribe.md)
   An action for inviting the user to subscribe to Apple Music.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicsubscriptionoffer/action/customstringconvertible-implementations.md)
-- [Equatable Implementations](musicsubscriptionoffer/action/equatable-implementations.md)
-- [RawRepresentable Implementations](musicsubscriptionoffer/action/rawrepresentable-implementations.md)
 
 ## Relationships
 

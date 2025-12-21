@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct AccessibilityDisplayOptionsDidChangeMessage
 
 ### Initializers
 - [init()](nsworkspace/accessibilitydisplayoptionsdidchangemessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.AccessibilityDisplayOptionsDidChangeMessage) -> Notification](nsworkspace/accessibilitydisplayoptionsdidchangemessage/makenotification(_:).md)
 
 ## Relationships
 

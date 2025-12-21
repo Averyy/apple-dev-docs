@@ -136,6 +136,8 @@ You use attributes of media items to build media queries for searching the Media
 
 ## See Also
 
+- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+  Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
 - [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)

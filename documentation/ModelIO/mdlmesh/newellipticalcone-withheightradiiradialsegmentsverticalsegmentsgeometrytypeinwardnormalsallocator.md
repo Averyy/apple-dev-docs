@@ -27,7 +27,7 @@ A new mesh object.
 
 This method generates vertex data for a cone whose apex is at the origin of its local coordinate system and whose body extends in the negative y-axis direction.
 
-The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/swift/false) if the mesh will be viewed from outside.
+The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/Swift/false) if the mesh will be viewed from outside.
 
 The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
 

@@ -21,9 +21,9 @@ var isGlobalToneMappingEnabled: Bool { get set }
 
 Tone mapping is a technique used to map the pixel levels in high dynamic range images to a reduced dynamic range (such as mapping from 16-bit to 8-bit), while still retaining an appearance as close to the original image as possible. Normally the active camera uses adaptive, local tone curves to preserve the highest image quality and adapt quickly to changing lighting conditions.
 
-When this property value is true, the tone map adjusts dynamically depending on the current scene and applies to all pixels in an image. You can only enable this setting if the device’s active format’s [`isGlobalToneMappingSupported`](avcapturedevice/format/isglobaltonemappingsupported.md) property returns [`true`](https://developer.apple.com/documentation/swift/true). If set to its default value of [`false`](https://developer.apple.com/documentation/swift/false), the framework may apply different tone maps to different pixels in an image.
+When this property value is true, the tone map adjusts dynamically depending on the current scene and applies to all pixels in an image. You can only enable this setting if the device’s active format’s [`isGlobalToneMappingSupported`](avcapturedevice/format/isglobaltonemappingsupported.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true). If set to its default value of [`false`](https://developer.apple.com/documentation/Swift/false), the framework may apply different tone maps to different pixels in an image.
 
-This property resets to its default value of [`false`](https://developer.apple.com/documentation/swift/false) under the following conditions:
+This property resets to its default value of [`false`](https://developer.apple.com/documentation/Swift/false) under the following conditions:
 
 - You change the device’s active format.
 - You add the device’s input to a session.

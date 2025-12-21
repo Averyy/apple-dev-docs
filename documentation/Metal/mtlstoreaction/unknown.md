@@ -21,11 +21,11 @@ case unknown
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
 
 #### Discussion
 
-Only apply this action if you can’t determine the store action when you create the render pass descriptor. You must specify a store action before you finish encoding commands into the render command encoder. Refer to the [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) and [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) protocol references for further information.
+Only apply this action if you can’t determine the store action when you create the render pass descriptor. You need to specify a store action before you finish encoding commands into the render command encoder. Refer to the [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) and [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) protocol references for further information.
 
 ## See Also
 

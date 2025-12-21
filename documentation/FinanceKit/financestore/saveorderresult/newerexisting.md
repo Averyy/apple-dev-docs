@@ -16,6 +16,13 @@ There’s a newer, existing order already in the finance store.
 case newerExisting
 ```
 
+## See Also
+
+- [FinanceStore.SaveOrderResult.added](financestore/saveorderresult/added.md)
+  The framework added the order to the finance store.
+- [FinanceStore.SaveOrderResult.cancelled](financestore/saveorderresult/cancelled.md)
+  The individual canceled the order.
+
 
 ---
 

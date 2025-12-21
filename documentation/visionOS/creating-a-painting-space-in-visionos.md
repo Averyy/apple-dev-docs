@@ -156,7 +156,7 @@ func updateMesh() {
 }
 ```
 
-The method creates the doc://com.apple.documentation/documentation/realitykit/meshresource/contents-swift.struct to represent the content of the mesh that the stroke updates:
+The method creates the [`MeshResource.Contents`](https://developer.apple.com/documentation/RealityKit/MeshResource/Contents-swift.struct) to represent the content of the mesh that the stroke updates:
 
 ```swift
 func updateMesh() {
@@ -181,7 +181,7 @@ func updateMesh() {
 }
 ```
 
-The method creates a doc://com.apple.documentation/documentation/realitykit/meshresource/instance, then define a doc://com.apple.documentation/documentation/realitykit/meshresource/part for the model, where [`MeshBuffer`](https://developer.apple.com/documentation/RealityKit/MeshBuffer) assigns vertex positions, triangle indices, and normals. Finally, it creates a doc://com.apple.documentation/documentation/realitykit/meshresource/model with `part` and assigns to `contents`.
+The method creates a [`MeshResource.Instance`](https://developer.apple.com/documentation/RealityKit/MeshResource/Instance), then define a [`MeshResource.Part`](https://developer.apple.com/documentation/RealityKit/MeshResource/Part) for the model, where [`MeshBuffer`](https://developer.apple.com/documentation/RealityKit/MeshBuffer) assigns vertex positions, triangle indices, and normals. Finally, it creates a [`MeshResource.Model`](https://developer.apple.com/documentation/RealityKit/MeshResource/Model) with `part` and assigns to `contents`.
 
 The method either updates an existing mesh component on the entity, or creates a new mesh. If a mesh component already exists, it updates it with the `contents`; otherwise, it generates a new mesh with `contents` and assigns it to the entity:
 
@@ -395,7 +395,7 @@ The app attaches the main body view to the `.gesture()` modifier, to recognize u
 }
 ```
 
-The app starts the hand-tracking sesson within the `.task()` modifier, which allows the app to enable hand tracking asynchronously before the view appears.
+The app starts the hand-tracking session within the `.task()` modifier, which allows the app to enable hand tracking asynchronously before the view appears.
 
 ###### Related Samples
 

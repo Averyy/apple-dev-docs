@@ -7,7 +7,7 @@
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - tvOS 18.0+
 
 ## Declaration
@@ -64,14 +64,14 @@ class MTLFXTemporalDenoisedScalerDescriptor
 - [var transparencyOverlayTextureFormat: MTLPixelFormat](mtlfxtemporaldenoisedscalerdescriptor/transparencyoverlaytextureformat.md)
   The pixel format of the input transparency overlay texture for the scaler you create with this descriptor.
 ### Instance Methods
-- [func newTemporalDenoisedScaler(with: any MTLDevice) -> (any MTLFXTemporalDenoisedScaler)?](mtlfxtemporaldenoisedscalerdescriptor/newtemporaldenoisedscaler(with:).md)
+- [func makeTemporalDenoisedScaler(device: any MTLDevice) -> (any MTLFXTemporalDenoisedScaler)?](mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:).md)
   Creates a denoiser scaler instance for a Metal device.
-- [func newTemporalDenoisedScaler(with: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalDenoisedScaler)?](mtlfxtemporaldenoisedscalerdescriptor/newtemporaldenoisedscaler(with:compiler:).md)
+- [func makeTemporalDenoisedScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalDenoisedScaler)?](mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:compiler:).md)
   Creates a denoiser scaler instance for a Metal device.
 ### Type Methods
-- [class func supportedInputContentMaxScale(for: any MTLDevice) -> Float](mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(for:).md)
+- [class func supportedInputContentMaxScale(device: any MTLDevice) -> Float](mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device:).md)
   Returns the largest temporal scaling factor the device supports as a floating-point value.
-- [class func supportedInputContentMinScale(for: any MTLDevice) -> Float](mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(for:).md)
+- [class func supportedInputContentMinScale(device: any MTLDevice) -> Float](mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device:).md)
   Returns the smallest temporal scaling factor the device supports as a floating-point value.
 - [class func supportsDevice(any MTLDevice) -> Bool](mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_:).md)
   Queries whether a Metal device supports denoising scaling.

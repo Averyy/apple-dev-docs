@@ -6,10 +6,8 @@
 The number of samples per pixel for multisampling.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -25,12 +23,10 @@ var sampleCount: Int { get set }
   The pixel format for the depth attachment.
 - [var device: any MTLDevice](tctouchcontrollerdescriptor/device.md)
   The Metal device to use for rendering.
-- [var scaleFactor: CGFloat](tctouchcontrollerdescriptor/scalefactor.md)
-  The scale factor of the screen.
-- [var screenHeight: CGFloat](tctouchcontrollerdescriptor/screenheight.md)
-  The height of the screen in points.
-- [var screenWidth: CGFloat](tctouchcontrollerdescriptor/screenwidth.md)
-  The width of the screen in points.
+- [var drawableSize: CGSize](tctouchcontrollerdescriptor/drawablesize.md)
+  The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
+- [var size: CGSize](tctouchcontrollerdescriptor/size.md)
+  The size of the view the touch controller’s drawable is embedded in, in points.
 - [var stencilAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/stencilattachmentpixelformat.md)
   The pixel format for the stencil attachment.
 

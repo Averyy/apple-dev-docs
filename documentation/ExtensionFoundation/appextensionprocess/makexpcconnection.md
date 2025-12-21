@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: method
 
-Creates a new XPC connection to the extension process.
+Connect to the app extension process using the XPC types of the Foundation framework.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,16 +22,16 @@ func makeXPCConnection() throws -> NSXPCConnection
 
 #### Return Value
 
-The connection object representing the created XPC connection.
+The connection object your app uses to communicate with the app extension.
 
 #### Discussion
 
-This method creates a connection to the extension process and returns it. You’re responsible for configuring the connection. While you retain a reference to the returned connection object, the extension receives processing time. Once you deallocate the connection object, the system suspends or terminates the extension process.
+Call this method to create a connection between your host app and an app extension using the types of the Foundation framework. If the app extension accepts the connection request, the returned connection object contains the proxy information you need to communicate with it. If the app extension refuses the request or doesn’t support this connection type, this method throws an error.
 
 ## See Also
 
-- [func invalidate()](appextensionprocess/invalidate.md)
-  Stop the extension process.
+- [func makeXPCSession() throws -> XPCSession](appextensionprocess/makexpcsession.md)
+  Connect to the app extension process using an XPC session.
 
 
 ---

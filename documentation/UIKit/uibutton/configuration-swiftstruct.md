@@ -41,6 +41,14 @@ You can configure and update a button with a [`UIButton.Configuration`](uibutton
   Creates a configuration for a button that has a tinted, bordered style.
 - [static func borderedProminent() -> UIButton.Configuration](uibutton/configuration-swift.struct/borderedprominent.md)
   Creates a configuration for a button that has a prominent, bordered style.
+- [static func glass() -> UIButton.Configuration](uibutton/configuration-swift.struct/glass.md)
+  Creates a configuration for a button that has a Liquid Glass style.
+- [static func prominentGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/prominentglass.md)
+  Creates a configuration for a button that has a prominent Liquid Glass style.
+- [static func clearGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/clearglass.md)
+  Creates a configuration for a button that has a clear Liquid Glass style.
+- [static func prominentClearGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/prominentclearglass.md)
+  Creates a configuration for a button that has a prominent, clear Liquid Glass style.
 - [func updated(for: UIButton) -> UIButton.Configuration](uibutton/configuration-swift.struct/updated(for:).md)
   Returns a copy of the configuration, updated for the given button.
 ### Configuring titles
@@ -124,9 +132,6 @@ You can configure and update a button with a [`UIButton.Configuration`](uibutton
   The button style your app uses when running in macOS.
 ### Instance Properties
 - [var symbolContentTransition: UISymbolContentTransition?](uibutton/configuration-swift.struct/symbolcontenttransition.md)
-### Type Methods
-- [static func glass() -> UIButton.Configuration](uibutton/configuration-swift.struct/glass.md)
-- [static func prominentGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/prominentglass.md)
 
 ## Relationships
 

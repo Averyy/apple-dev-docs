@@ -20,11 +20,11 @@ var allowsCopyingTokens: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-To support copying tokens, [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) must be [`true`](https://developer.apple.com/documentation/swift/true) and the search field’s [`delegate`](uitextfield/delegate.md) must also implement [`searchTextField(_:itemProviderForCopying:)`](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md).
+To support copying tokens, [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) must be [`true`](https://developer.apple.com/documentation/Swift/true) and the search field’s [`delegate`](uitextfield/delegate.md) must also implement [`searchTextField(_:itemProviderForCopying:)`](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md).
 
-[`UISearchTextField`](uisearchtextfield.md) enables the Copy command when a user selects text, even if the selection also includes tokens and [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+[`UISearchTextField`](uisearchtextfield.md) enables the Copy command when a user selects text, even if the selection also includes tokens and [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

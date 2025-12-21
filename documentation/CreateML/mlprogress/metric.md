@@ -44,33 +44,6 @@ enum Metric
   The metric for the model’s validation maximum error.
 - [MLProgress.Metric.validationRootMeanSquaredError](mlprogress/metric/validationrootmeansquarederror.md)
   The metric for the model’s validation root mean squared error (RMSE).
-### Iterating all metric keys
-- [static var allCases: [MLProgress.Metric]](mlprogress/metric/allcases-swift.type.property.md)
-  A collection of all values of this type.
-- [MLProgress.Metric.AllCases](mlprogress/metric/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Creating a key from a string
-- [init?(rawValue: String)](mlprogress/metric/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Getting a key’s string value
-- [var rawValue: String](mlprogress/metric/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [MLProgress.Metric.RawValue](mlprogress/metric/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Encoding and decoding a key
-- [func encode(to: any Encoder) throws](mlprogress/metric/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `String`.
-- [init(from: any Decoder) throws](mlprogress/metric/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.
-### Providing a key’s hash value
-- [func hash(into: inout Hasher)](mlprogress/metric/hash(into:).md)
-- [var hashValue: Int](mlprogress/metric/hashvalue.md)
-### Comparing metric keys
-- [static func != (Self, Self) -> Bool](mlprogress/metric/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlprogress/metric/equatable-implementations.md)
-- [RawRepresentable Implementations](mlprogress/metric/rawrepresentable-implementations.md)
 
 ## Relationships
 

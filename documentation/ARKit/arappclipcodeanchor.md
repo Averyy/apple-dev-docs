@@ -28,9 +28,9 @@ For more on App Clip Codes, see [`App Clips`](https://developer.apple.com/docume
 
 There may be multiple App Clip Codes visible in the camera feed that share the same [`url`](arappclipcodeanchor/url.md), so ARKit also relies on the App Clip Code’s location (see [`transform`](aranchor/transform.md)) to distinguish different App Clip Codes in the physical environment.
 
-When the framework recognizes an App Clip Code, it initializes an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) and passes it to the session delegate via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md). If a recognized App Clip Code becomes obscured or is no longer visible in the camera feed, the framework sets the anchor’s [`isTracked`](artrackable/istracked.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and passes it into the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) callback. If the same App Clip Code becomes visible once again:
+When the framework recognizes an App Clip Code, it initializes an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) and passes it to the session delegate via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md). If a recognized App Clip Code becomes obscured or is no longer visible in the camera feed, the framework sets the anchor’s [`isTracked`](artrackable/istracked.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) and passes it into the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) callback. If the same App Clip Code becomes visible once again:
 
-- ARKit sets [`isTracked`](artrackable/istracked.md) to [`true`](https://developer.apple.com/documentation/swift/true) if the App Clip Code maintained its relative position in the physical environment.
+- ARKit sets [`isTracked`](artrackable/istracked.md) to [`true`](https://developer.apple.com/documentation/Swift/true) if the App Clip Code maintained its relative position in the physical environment.
 - ARKit intializes a new [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) if the App Clip Code position in the physical environment changed significantly.
 
 ##### Remove App Clip Codes
@@ -39,7 +39,7 @@ To prevent App Clip Codes from accumulating in the session, ARKit removes anchor
 
 - The framework instantiates a new [`ARAppClipCodeAnchor`](arappclipcodeanchor.md).
 - The new anchor’s [`url`](arappclipcodeanchor/url.md) matches one or more existing anchors with substantially different positions in the physical environment.
-- The existing anchors are untracked ([`isTracked`](artrackable/istracked.md) is [`false`](https://developer.apple.com/documentation/swift/false)).
+- The existing anchors are untracked ([`isTracked`](artrackable/istracked.md) is [`false`](https://developer.apple.com/documentation/Swift/false)).
 
 ## Topics
 

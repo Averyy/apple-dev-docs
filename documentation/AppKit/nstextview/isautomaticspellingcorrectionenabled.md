@@ -17,7 +17,7 @@ var isAutomaticSpellingCorrectionEnabled: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it is enabled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if it is enabled, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

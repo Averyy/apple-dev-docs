@@ -228,6 +228,8 @@ If you’re unable to obtain a valid privacy manifest from a third-party SDK dev
   Declare the data collected by your app or by third-party SDKs.
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
+- [Editing property list files](../Xcode/editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 - [App Privacy Configuration](app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 

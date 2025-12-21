@@ -41,6 +41,8 @@ All view controllers implement this method. If they do not show the view control
   Presents the view controller in the specified column of the split view interface.
 - [func hide(UISplitViewController.Column)](uisplitviewcontroller/hide(_:).md)
   Dismisses the view controller in the specified column of the split view interface.
+- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
+  A Boolean value that indicates whether the split view interface is showing the specified column.
 - [func show(UIViewController, sender: Any?)](uisplitviewcontroller/show(_:sender:).md)
   Presents the specified view controller as the primary view controller in the split view interface.
 

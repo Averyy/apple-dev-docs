@@ -21,8 +21,6 @@ case common2
 
 ## See Also
 
-- [MTLGPUFamily.metal3](mtlgpufamily/metal3.md)
-  Represents the Metal 3 features.
 - [MTLGPUFamily.common3](mtlgpufamily/common3.md)
   Represents the Common family 3 GPU features.
 - [MTLGPUFamily.common1](mtlgpufamily/common1.md)

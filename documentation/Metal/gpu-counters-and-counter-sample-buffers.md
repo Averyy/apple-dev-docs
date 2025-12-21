@@ -1,4 +1,4 @@
-# GPU Counters and Counter Sample Buffers
+# GPU counters and counter sample buffers
 
 **Framework**: Metal
 
@@ -10,17 +10,17 @@ A GPU  ([`MTLCounter`](mtlcounter.md)) is typically a hardware feature that trac
 
 You can retrieve and inspect data from a GPU’s counter set with the following steps:
 
-1. Inspect which GPU counter sets a GPU device supports (see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
-2. Make a counter sample buffer to store the data (see [`Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)).
-3. Instruct the GPU to save the counter set data to the buffer during a pass or an immediate mode command (see [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md)).
-4. Transform the counter set data into a standard type (see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md)).
+1. Inspect which GPU counter sets a GPU device supports (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+2. Make a counter sample buffer to store the data (see [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)).
+3. Instruct the GPU to save the counter set data to the buffer during a pass or an immediate mode command (see [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md)).
+4. Transform the counter set data into a standard type (see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md)).
 
-If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommoncounterset/timestamp.md)), you may need to convert the timestamps from the GPU’s clock to the CPU’s clock. See [`Converting GPU Timestamps into CPU Time`](converting-gpu-timestamps-into-cpu-time.md) for more information.
+If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommoncounterset/timestamp.md)), you may need to convert the timestamps from the GPU’s clock to the CPU’s clock. See [`Converting GPU timestamps into CPU time`](converting-gpu-timestamps-into-cpu-time.md) for more information.
 
 ## Topics
 
-### Counters and Counter Sets
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+### Counters and counter sets
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
 - [protocol MTLCounterSet](mtlcounterset.md)
   A collection of individual counters a GPU device supports for a counter set.
@@ -30,19 +30,19 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommonc
   An individual counter a GPU device lists within one of its counter sets.
 - [struct MTLCommonCounter](mtlcommoncounter.md)
   The name of a specific counter that can appear in a GPU device’s counter sets.
-### Counter Sample Buffers
-- [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+### Counter sample buffers
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
   Make a buffer that provides a place for a GPU to save its runtime performance metrics as it runs a pass.
 - [class MTLCounterSampleBufferDescriptor](mtlcountersamplebufferdescriptor.md)
   A group of properties that configures the counter sample buffers you create with it.
 - [protocol MTLCounterSampleBuffer](mtlcountersamplebuffer.md)
   A specialized memory buffer that stores a GPU’s counter set data.
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
   Retrieve a GPU’s counter data at a time the GPU supports.
 - [var MTLCounterDontSample: Int](mtlcounterdontsample.md)
   A sentinel value that instructs an encoder to skip sampling a counter as the GPU runs the encoder’s pass.
-### Counter Sample Data Output
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+### Counter sample data output
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
 - [struct MTLCounterResultTimestamp](mtlcounterresulttimestamp.md)
   The data structure for storing the data you resolve from a timestamp counter set.
@@ -52,12 +52,12 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommonc
   The data structure for storing the data you resolve from a stage-utilization counter set.
 - [var MTLCounterErrorValue: UInt64](mtlcountererrorvalue.md)
   A sentinel value for an entry in a counter sample buffer that indicates the entry’s data is invalid.
-### Timestamp Data
-- [Converting GPU Timestamps into CPU Time](converting-gpu-timestamps-into-cpu-time.md)
+### Timestamp data
+- [Converting GPU timestamps into CPU time](converting-gpu-timestamps-into-cpu-time.md)
   Correlate GPU events with CPU timelines by calculating the CPU time equivalents for GPU timestamps.
 - [typealias MTLTimestamp](mtltimestamp.md)
   The number of nanoseconds for a point in absolute time or Mach absolute time.
-### Counter Sample Buffer Errors
+### Counter sample buffer errors
 - [struct MTLCounterSampleBufferError](mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
 
@@ -65,8 +65,8 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommonc
 
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Capturing Metal commands programmatically](capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Logging shader debug messages](logging-shader-debug-messages.md)
   Print debugging messages that a shader generates using shader logging.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
@@ -77,7 +77,7 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommonc
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [Metal Debugging Types](metal-debugging-types.md)
+- [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 

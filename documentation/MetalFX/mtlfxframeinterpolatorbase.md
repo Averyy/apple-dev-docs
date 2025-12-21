@@ -3,41 +3,18 @@
 **Framework**: MetalFX  
 **Kind**: protocol
 
-A common abstraction to all frame interpolators.
-
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
 ```swift
 protocol MTLFXFrameInterpolatorBase : NSObjectProtocol
 ```
-
-#### Overview
-
-This protocol defines properties common to all frame interpolators. You access these properties through any frame interpolator instance you create by calling construction methods such as [`newFrameInterpolator(with:)`](mtlfxframeinterpolatordescriptor/newframeinterpolator(with:).md).
-
-#### Conforming to Texture Usage Requirements
-
-Frame interpolator instances expose properties, such as [`colorTextureUsage`](mtlfxframeinterpolatorbase/colortextureusage.md), that indicate requirements for your textures to be compatible with it. These properties indicate the minimum set of `MTLTextureUsage` bits that you are responsible for setting in your texture descriptors for this frame interpolator to use them.
-
-Your game or app can set extra usage bits on your textures without losing compatibility, as long at its maintains the minimum set the interpolator requests.
-
-#### Assigning Input and Output Textures
-
-When you use an instance of a class that conforms to this protocol, you typically set its input and output textures, as well as other properties, and then encode its work to a command buffer.
-
-MetalFX doesn’t track that you assign the same texture instances to each property across different batches of work, the only requirement is that you provide textures that match the pixel formats and dimensions you specify in the [`MTLFXFrameInterpolatorDescriptor`](mtlfxframeinterpolatordescriptor.md) descriptor instance that creates the scaler instance.
-
-#### Encoding Work
-
-Once you configure all properties for the current frame of your game or app, you indicate to the scaler instance into which command buffer it encodes its work. You achieve this by calling, for example, [`encode(to:)`](mtlfxframeinterpolator/encode(to:).md).
 
 ## Topics
 

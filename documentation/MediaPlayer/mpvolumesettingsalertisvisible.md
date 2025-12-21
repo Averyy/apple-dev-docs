@@ -18,7 +18,7 @@ func MPVolumeSettingsAlertIsVisible() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the volume alert is visible; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the volume alert is visible; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

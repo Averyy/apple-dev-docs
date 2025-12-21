@@ -11,8 +11,8 @@ Get details about an uploaded asset pack for Apple hosted background asset.
 ## See Also
 
 - [Create a reservation for an asset pack upload](post-v1-backgroundassetuploadfiles.md)
-  Begin the process of uploading an asset pack for Apple hosted background assets.
-- [Commit an uploaded asset pack to a background asset version.](patch-v1-backgroundassetuploadfiles-_id_.md)
+  Begin the process of uploading an asset pack for Apple-hosted background assets.
+- [Commit an uploaded asset pack to a background asset version](patch-v1-backgroundassetuploadfiles-_id_.md)
   Associate an uploaded asset pack with a background asset version to finish the upload process.
 
 

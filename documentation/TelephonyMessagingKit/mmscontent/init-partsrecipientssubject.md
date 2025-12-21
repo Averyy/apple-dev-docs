@@ -6,8 +6,8 @@
 Creates an MMS content instance with the provided values.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration

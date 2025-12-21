@@ -26,21 +26,23 @@ final class Assign<Root, Input>
 
 ## Topics
 
-### Declaring Subscriber Topography
-- [Subscribers.Assign.Failure](subscribers/assign/failure.md)
-  The kind of errors this subscriber might receive.
-### Creating an Assign Subscriber
+### Creating an assign subscriber
 - [init(object: Root, keyPath: ReferenceWritableKeyPath<Root, Input>)](subscribers/assign/init(object:keypath:).md)
   Creates a subscriber to assign the value of a property indicated by a key path.
-### Declaring Publisher Topography
-- [Subscribers.Assign.Failure](subscribers/assign/failure.md)
-  The kind of errors this subscriber might receive.
-### Inspecting the Assigned Property
+### Receiving elements
+- [func receive(Input) -> Subscribers.Demand](subscribers/assign/receive(_:).md)
+  Tells the subscriber that the publisher has produced an element.
+### Receiving life cycle events
+- [func receive(subscription: any Subscription)](subscribers/assign/receive(subscription:).md)
+  Tells the subscriber that it has successfully subscribed to the publisher and may request items.
+- [func receive(completion: Subscribers.Completion<Never>)](subscribers/assign/receive(completion:).md)
+  Tells the subscriber that the publisher has completed publishing, either normally or with an error.
+### Inspecting the assigned property
 - [var object: Root?](subscribers/assign/object.md)
   The object that contains the property to assign.
 - [let keyPath: ReferenceWritableKeyPath<Root, Input>](subscribers/assign/keypath.md)
   The key path that indicates the property to assign.
-### Instance Properties
+### Supporting Debugging
 - [var customMirror: Mirror](subscribers/assign/custommirror.md)
   A mirror that reflects the subscriber.
 - [var description: String](subscribers/assign/description.md)
@@ -50,16 +52,6 @@ final class Assign<Root, Input>
 ### Instance Methods
 - [func cancel()](subscribers/assign/cancel.md)
   Cancel the activity.
-- [func receive(Input) -> Subscribers.Demand](subscribers/assign/receive(_:).md)
-  Tells the subscriber that the publisher has produced an element.
-- [func receive(completion: Subscribers.Completion<Never>)](subscribers/assign/receive(completion:).md)
-  Tells the subscriber that the publisher has completed publishing, either normally or with an error.
-- [func receive(subscription: any Subscription)](subscribers/assign/receive(subscription:).md)
-  Tells the subscriber that it has successfully subscribed to the publisher and may request items.
-### Default Implementations
-- [Cancellable Implementations](subscribers/assign/cancellable-implementations.md)
-- [CustomCombineIdentifierConvertible Implementations](subscribers/assign/customcombineidentifierconvertible-implementations.md)
-- [Subscriber Implementations](subscribers/assign/subscriber-implementations.md)
 
 ## Relationships
 

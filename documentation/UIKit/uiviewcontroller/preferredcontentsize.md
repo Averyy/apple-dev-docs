@@ -39,6 +39,8 @@ The value in this property is used primarily when displaying the view controller
   Loads the view controller’s view if it’s not loaded yet.
 - [var title: String?](uiviewcontroller/title.md)
   A localized string that represents the view this controller manages.
+- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+  SwiftUI ornaments to display adjacent to the view controller.
 
 
 ---

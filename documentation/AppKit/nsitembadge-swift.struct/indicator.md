@@ -7,7 +7,7 @@ Creates a badge styled as an indicator. In this context, an indicator is simply 
 
 **Availability**:
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -23,10 +23,6 @@ func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterato
 
 - [HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/iterator.md)
   An async iterator of cumulative count sequence.
-- [HumanBodyActionCounter.CumulativeSumSequence.AsyncIterator](humanbodyactioncounter/cumulativesumsequence/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [HumanBodyActionCounter.CumulativeSumSequence.Feature](humanbodyactioncounter/cumulativesumsequence/feature.md)
-  The feature type.
 
 
 ---

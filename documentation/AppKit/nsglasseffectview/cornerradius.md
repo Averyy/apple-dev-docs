@@ -3,10 +3,10 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Controls the amount of curvature for all corners of the glass.
+The amount of curvature for all corners of the glass.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

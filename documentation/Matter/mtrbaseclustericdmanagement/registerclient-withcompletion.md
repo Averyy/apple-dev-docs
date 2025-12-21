@@ -22,7 +22,7 @@ func registerClient(with params: MTRICDManagementClusterRegisterClientParams) as
 
 #### Discussion
 
-Register a client to the end device
+This command allows a client to register itself with the ICD to be notified when the device is available for communication.
 
 
 ---

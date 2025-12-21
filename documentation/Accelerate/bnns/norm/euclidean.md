@@ -13,7 +13,6 @@ A constant that represents the Euclidean norm.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

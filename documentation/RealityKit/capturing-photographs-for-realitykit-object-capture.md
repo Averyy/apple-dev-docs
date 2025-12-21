@@ -26,7 +26,7 @@ The number of pictures that RealityKit needs in order to create an accurate 3D r
 
 ![An illustration of a robot, showing the overlapping field of view for two cameras next to each other. The overlap is labeled “Ideal overlap: 70%”.](https://docs-assets.developer.apple.com/published/dc543114a82dec08b2a42b316b1b1243/capturing-photographs-for-realitykit-object-capture-2%402x.png)
 
-RealityKit object creation accepts images captured by any digital camera, including the cameras on an iPhone or iPad, a DSLR or mirrorless camera, or even a camera-equipped drone. If your source images contain depth data, RealityKit uses it to calculate the real-world size of the scanned object. RealityKit can also create objects from images without depth data, but you may have to scale the object when placing it into your AR scene. For more information on capturing image depth data, see [`Capturing Photos with Depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth).
+RealityKit object creation accepts images captured by any digital camera, including the cameras on an iPhone or iPad, a DSLR or mirrorless camera, or even a camera-equipped drone. If your source images contain depth data, RealityKit uses it to calculate the real-world size of the scanned object. RealityKit can also create objects from images without depth data, but you may have to scale the object when placing it into your AR scene. For more information on capturing image depth data, see [`Capturing photos with depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth).
 
 > **Note**: RealityKit object creation doesn’t require you to take images in any specific order or name them in a specific way.
 
@@ -62,9 +62,9 @@ For information on using the RealityKit Object Capture APIs, see [`Creating 3D o
   Implement a full scanning workflow for capturing objects on iOS devices.
 - [Building an object reconstruction app](building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
-- [Creating a Photogrammetry Command-Line App](creating_a_photogrammetry_command-line_app.md)
+- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using_object_capture_assets_in_realitykit.md)
+- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
 - [class PhotogrammetrySession](photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.

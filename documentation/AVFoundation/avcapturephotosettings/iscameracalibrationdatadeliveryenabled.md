@@ -19,9 +19,9 @@ var isCameraCalibrationDataDeliveryEnabled: Bool { get set }
 
 #### Discussion
 
-When this setting is [`false`](https://developer.apple.com/documentation/swift/false) (the default), and the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) setting is [`true`](https://developer.apple.com/documentation/swift/true), dual photo capture doesn’t deliver additional data.
+When this setting is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), and the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) setting is [`true`](https://developer.apple.com/documentation/Swift/true), dual photo capture doesn’t deliver additional data.
 
-If you change this setting to [`true`](https://developer.apple.com/documentation/swift/true), the [`AVCapturePhoto`](avcapturephoto.md) results from a dual photo capture include [`AVCameraCalibrationData`](avcameracalibrationdata.md) objects that describe the imaging parameters for each camera. This data can be useful for performing computer vision tasks on the resulting images.
+If you change this setting to [`true`](https://developer.apple.com/documentation/Swift/true), the [`AVCapturePhoto`](avcapturephoto.md) results from a dual photo capture include [`AVCameraCalibrationData`](avcameracalibrationdata.md) objects that describe the imaging parameters for each camera. This data can be useful for performing computer vision tasks on the resulting images.
 
 ## See Also
 

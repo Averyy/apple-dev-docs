@@ -23,7 +23,6 @@ var classificationError: Double { get }
 
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
 - [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 
 #### Discussion
 

@@ -17,7 +17,6 @@ A texture that specifies the normal map for the sprite.
 ## Declaration
 
 ```swift
-@MainActor
 var normalTexture: SKTexture? { get set }
 ```
 

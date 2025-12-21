@@ -104,7 +104,7 @@ When it’s time to test your App Clip, use Xcode to test the launch experience 
 
 ## See Also
 
-- [Fruta: Building a Feature-Rich App with SwiftUI](fruta_building_a_feature-rich_app_with_swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [Parent Application Identifiers Entitlement](../BundleResources/Entitlements/com.apple.developer.parent-application-identifiers.md)
   A list of parent application identifiers for an App Clip with exactly one entry.

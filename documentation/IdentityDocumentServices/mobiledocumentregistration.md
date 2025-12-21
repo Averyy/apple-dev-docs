@@ -6,8 +6,8 @@
 A type you use to register mobile documents.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -26,8 +26,6 @@ Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
 - [init(mobileDocumentType: String, supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](mobiledocumentregistration/init(mobiledocumenttype:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).md)
   Initializes a mobile document registration.
 ### Instance Properties
-- [var documentIdentifier: String](mobiledocumentregistration/documentidentifier.md)
-  An identifier that uniquely refers to the registered document.
 - [var invalidationDate: Date?](mobiledocumentregistration/invalidationdate.md)
   A date that indicates when the system needs to invalidate this registration.
 - [var mobileDocumentType: String](mobiledocumentregistration/mobiledocumenttype.md)

@@ -6,11 +6,11 @@
 An object RealityKit passes data to a post process effect method.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,9 @@ struct PostProcessEffectContext<CommandBuffer>
 
 #### Overview
 
-You can register a method that applies postprocessing effects to a scene RealityKit renders with a [`RealityView`](realityview.md). Once every frame, RealityKit calls that function before displaying the scene. You can use this to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, prioritize using APIs that execute on the GPU, such as Metal compute functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders), or [`Core Image`](https://developer.apple.com/documentation/CoreImage). You can also render additional content on top of the frame buffer, such as a SpriteKit scene.
+You can register a method that applies postprocessing effects to a scene RealityKit renders with a [`RealityView`](realityview.md). Once every frame, RealityKit calls that function before displaying the scene. You can use this to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, prioritize using APIs that execute on the GPU, such as Metal compute functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders), or [`Core Image`](https://developer.apple.com/documentation/CoreImage). You can also render additional content on top of the frame buffer, such as a SpriteKit scene.
 
-> **Note**: For more information on implementing postprocess effects, see [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md), which demonstrates multiple postprocess techniques.
+> **Note**: For more information on implementing postprocess effects, see [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md), which demonstrates multiple postprocess techniques.
 
 A postprocess method takes a single `PostProcessEffectContext` parameter, which contains data the callback method needs to modify the rendered scene, including the frame buffer, depth map, and a property for writing the image you modify. The postprocess method in your [`PostProcessEffect`](postprocesseffect.md) type needs to encode to the output texture, or the frame is never displayed.
 

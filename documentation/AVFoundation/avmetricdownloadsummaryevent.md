@@ -56,6 +56,11 @@ Subclasses of this type that are used from Swift must fulfill the requirements o
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+  An event that represents the combined metrics for the entire playback session.
+
 
 ---
 

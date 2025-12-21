@@ -10,7 +10,7 @@ An anchor point attached to the image specified by a group and a name in AR Reso
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -25,8 +25,12 @@ case image(group: String, name: String)
 
 ## See Also
 
+- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:).md)
+  An anchor point attached to the image specified by an image anchoring source.
 - [AnchoringComponent.Target.object(group:name:)](anchoringcomponent/target-swift.enum/object(group:name:).md)
   An anchor point attached to the object specified by a group and a name in AR Resources.
+- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:).md)
+  An anchor point attached to an object that matches the reference of an object anchor.
 
 
 ---

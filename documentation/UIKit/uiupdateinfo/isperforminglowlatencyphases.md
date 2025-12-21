@@ -20,7 +20,7 @@ var isPerformingLowLatencyPhases: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) between the [`beforeLowLatencyEventDispatch`](uiupdateactionphase/beforelowlatencyeventdispatch.md) and [`afterLowLatencyCATransactionCommit`](uiupdateactionphase/afterlowlatencycatransactioncommit.md) UI update phases. Keep any code you run in this part of the UI update as minimal as possible, especially when [`isImmediatePresentationExpected`](uiupdateinfo/isimmediatepresentationexpected.md) is `true`. Defer any processing that isn’t critical for the current UI update until [`afterLowLatencyCATransactionCommit`](uiupdateactionphase/afterlowlatencycatransactioncommit.md).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) between the [`beforeLowLatencyEventDispatch`](uiupdateactionphase/beforelowlatencyeventdispatch.md) and [`afterLowLatencyCATransactionCommit`](uiupdateactionphase/afterlowlatencycatransactioncommit.md) UI update phases. Keep any code you run in this part of the UI update as minimal as possible, especially when [`isImmediatePresentationExpected`](uiupdateinfo/isimmediatepresentationexpected.md) is `true`. Defer any processing that isn’t critical for the current UI update until [`afterLowLatencyCATransactionCommit`](uiupdateactionphase/afterlowlatencycatransactioncommit.md).
 
 ## See Also
 

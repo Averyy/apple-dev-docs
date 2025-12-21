@@ -12,6 +12,19 @@
 func AudioHardwareCreateProcessTap(_ inDescription: CATapDescription!, _ outTapID: UnsafeMutablePointer<AudioObjectID>!) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+This routine creates a new Tap using the provided description.
+
+## Parameters
+
+- `inDescription`: The CATapDescription that specifies how to build the Tap.
+- `outTapID`: The AudioObjectID of the newly created Tap.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

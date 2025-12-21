@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns the `long long` value associated with the specified key.
+Returns the 64-bit integer value associated with the specified key.
 
 **Availability**:
 - iOS 5.0+
@@ -22,30 +22,34 @@ func longLong(forKey aKey: String) -> Int64
 
 #### Return Value
 
-The long long value associated with the specified key or `0` if the key was not found. If the key exists but does not contain a numerical value, this method returns `0`.
+The integer value associated with `aKey`, or `0` if the key isn’t present.
+
+#### Discussion
+
+This method automatically coerces certain types to their equivalent long integer values. The Boolean value `true` becomes `1` and `false` becomes `0`. A floating-point number becomes the greatest integer that’s less than the stored number –– for example, `2.67` becomes `2`. A string that contains a numerical value contains the equivalent integer value — for example, “123” becomes `123`.
 
 ## Parameters
 
-- `aKey`: A key in the key-value store.
+- `aKey`: The key to retrieve from the iCloud key-value store.
 
 ## See Also
 
-- [func set(Int64, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-7tt20.md)
-  Sets a `long long` value for the specified key in the key-value store.
-- [func array(forKey: String) -> [Any]?](nsubiquitouskeyvaluestore/array(forkey:).md)
-  Returns the array associated with the specified key.
 - [func bool(forKey: String) -> Bool](nsubiquitouskeyvaluestore/bool(forkey:).md)
   Returns the Boolean value associated with the specified key.
-- [func data(forKey: String) -> Data?](nsubiquitouskeyvaluestore/data(forkey:).md)
-  Returns the data object associated with the specified key.
-- [func dictionary(forKey: String) -> [String : Any]?](nsubiquitouskeyvaluestore/dictionary(forkey:).md)
-  Returns the dictionary object associated with the specified key.
 - [func double(forKey: String) -> Double](nsubiquitouskeyvaluestore/double(forkey:).md)
   Returns the double value associated with the specified key.
-- [func object(forKey: String) -> Any?](nsubiquitouskeyvaluestore/object(forkey:).md)
-  Returns the object associated with the specified key.
 - [func string(forKey: String) -> String?](nsubiquitouskeyvaluestore/string(forkey:).md)
   Returns the string associated with the specified key.
+- [func data(forKey: String) -> Data?](nsubiquitouskeyvaluestore/data(forkey:).md)
+  Returns the data object associated with the specified key.
+- [func object(forKey: String) -> Any?](nsubiquitouskeyvaluestore/object(forkey:).md)
+  Returns the object associated with the specified key.
+- [func array(forKey: String) -> [Any]?](nsubiquitouskeyvaluestore/array(forkey:).md)
+  Returns the array associated with the specified key.
+- [func dictionary(forKey: String) -> [String : Any]?](nsubiquitouskeyvaluestore/dictionary(forkey:).md)
+  Returns the dictionary object associated with the specified key.
+- [var dictionaryRepresentation: [String : Any]](nsubiquitouskeyvaluestore/dictionaryrepresentation.md)
+  A dictionary with all of the key-value pairs in the iCloud key-value store.
 
 
 ---

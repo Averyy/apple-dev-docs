@@ -6,8 +6,8 @@
 Structure representing a standalone card.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -39,21 +39,11 @@ struct Card
   Enumeration indicating the orientation of a card.
 - [let styleSheetURL: URL?](rcsservice/business/card/stylesheeturl.md)
   A URL to a CSS for the rendering of the card.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/card/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/card/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing cards
-- [static func == (RCSService.Business.Card, RCSService.Business.Card) -> Bool](rcsservice/business/card/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Supporting types
 - [RCSService.Business.Card.Width](rcsservice/business/card/width.md)
   Enumeration specifying the width of a card.
 - [RCSService.Business.Card.Media](rcsservice/business/card/media.md)
   Structure containing information about media in a card.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/equatable-implementations.md)
 
 ## Relationships
 

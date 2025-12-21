@@ -131,6 +131,7 @@ class IOUserAudioClockDevice;
   Gets the current sample time in the ring buffer that the client has written to or read from.
 ### Instance Methods
 - [GetDeviceTransportState](iouseraudioclockdevice/getdevicetransportstate.md)
+- [SetWantsControlsRestored](iouseraudioclockdevice/setwantscontrolsrestored.md)
 
 ## Relationships
 

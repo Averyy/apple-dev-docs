@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The device’s current exposure rectangle of interest, if it has one.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,9 +20,18 @@ var exposureRectOfInterest: CGRect { get set }
 
 #### Discussion
 
-Indicates current exposure rectangle of interest of the receiver, if it has one.
+The value of this property is a `CGRect` determining the device’s exposure rectangle of interest. Use this as an alternative to setting [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md), as it allows you to specify both a location and size. For example, a value of `CGRectMake(0, 0, 1, 1)` tells the device to use the entire field of view when determining the exposure, while `CGRectMake(0, 0, 0.25, 0.25)` indicates the top left sixteenth, and `CGRectMake(0.75, 0.75, 0.25, 0.25)` indicates the bottom right sixteenth. Setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) throws an `NSInvalidArgumentException` if [`isExposureRectOfInterestSupported`](avcapturedevice/isexposurerectofinterestsupported.md) returns `false`. Setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) throws an `NSInvalidArgumentException` if your provided rectangle’s size is smaller than the [`minExposureRectOfInterestSize`](avcapturedevice/minexposurerectofinterestsize.md). Setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) throws an `NSGenericException` if you call it without first obtaining exclusive access to the device using [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md). Setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) updates the device’s [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md) to the center of your provided rectangle of interest. If you later set the device’s [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md), the [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) resets to the default sized rectangle of interest for the new exposure point of interest. If you change your [`activeFormat`](avcapturedevice/activeformat.md), the point of interest and rectangle of interest both revert to their default values. You can observe automatic changes to the device’s [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) by key-value observing this property.
 
-The value of this property is a CGRect that determines the receiver’s exposure rectangle of interest, if it has one. It is used as an alternative to -setExposurePointOfInterest:, as it allows for both a location and size to be specified. A value of CGRectMake(0, 0, 1, 1) indicates that the receiver should use the entire field of view when determining the exposure, while CGRectMake(0, 0, 0.25, 0.25) would indicate the top left sixteenth, and CGRectMake(0.75, 0.75, 0.25, 0.25) would indicate the bottom right sixteenth. -setExposureRectOfInterest: throws an NSInvalidArgumentException if isExposureRectOfInterestSupported returns NO. -setExposureRectOfInterest: throws an NSInvalidArgumentException if the size of the provided rectangle is smaller than that returned by minExposureRectOfInterestSize. -setExposureRectOfInterest: throws an NSGenericException if called without first obtaining exclusive access to the receiver using lockForConfiguration:. -setExposureRectOfInterest: will update the receiver’s exposurePointOfInterest to be the center of the rectangle of interest. If the client later sets the receiver’s exposurePointOfInterest, the exposureRectOfInterest will reset to the default rectangle of interest for the new exposure point of interest. If the client changes the activeFormat, the point of interest and rectangle of interest will revert to their default values. Clients can observe automatic changes to the receiver’s exposureRectOfInterest by key value observing this property. Note that setting exposureRectOfInterest alone does not initiate an exposure operation. After setting exposureRectOfInterest, call -setExposureMode: to apply the new rectangle of interest.
+> **Note**: Setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) alone does not initiate an exposure operation. After setting [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md), set [`exposureMode`](avcapturedevice/exposuremode-swift.property.md) to apply the new rectangle of interest.
+
+## See Also
+
+- [var isExposureRectOfInterestSupported: Bool](avcapturedevice/isexposurerectofinterestsupported.md)
+  Whether the device supports exposure rectangles of interest.
+- [var minExposureRectOfInterestSize: CGSize](avcapturedevice/minexposurerectofinterestsize.md)
+  The minimum size you may use when specifying a rectangle of interest.
+- [func defaultRectForExposurePoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforexposurepoint(ofinterest:).md)
+  The default rectangle of interest used for a given exposure point of interest.
 
 
 ---

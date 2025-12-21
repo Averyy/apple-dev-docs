@@ -22,7 +22,7 @@ func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgument
 
 ## Parameters
 
-- `arguments`: An array of   instances that you must sort by their   properties in monotonically increasing order.
+- `arguments`: An array of   instances that you need to sort by their   properties in monotonically increasing order.
 
 ## See Also
 

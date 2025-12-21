@@ -18,9 +18,9 @@ var keyboardDisplayRequiresUserAction: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the user must explicitly tap the elements in the web view to display the keyboard (or other relevant input view) for that element. When set to [`false`](https://developer.apple.com/documentation/swift/false), a focus event on an element causes the input view to be displayed and associated with that element automatically.
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the user must explicitly tap the elements in the web view to display the keyboard (or other relevant input view) for that element. When set to [`false`](https://developer.apple.com/documentation/Swift/false), a focus event on an element causes the input view to be displayed and associated with that element automatically.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

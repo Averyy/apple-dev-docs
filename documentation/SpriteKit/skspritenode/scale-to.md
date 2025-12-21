@@ -17,7 +17,6 @@ Scales the sprite node to a specified size.
 ## Declaration
 
 ```swift
-@MainActor
 func scale(to size: CGSize)
 ```
 

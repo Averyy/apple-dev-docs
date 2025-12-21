@@ -12,6 +12,26 @@ Cocoa scripting uses these scripting comparison methods, if available, in the pr
 
 Cocoa provides default implementations of these scripting comparison methods for `NSString` and `NSAttributedString`. You should define implementations of these methods for any of your scriptable objects that need to perform comparisons for scripting purposes that are different than the comparisons provided by NSComparisonMethods. If none require different comparison methods, you can implement only the methods you need from `NSScriptingComparisonMethods`.
 
+## Topics
+
+### Performing comparisons
+- [func scriptingBegins(with: Any) -> Bool](nsobject-swift.class/scriptingbegins(with:).md)
+  Returns `true` if, in a scripting comparison, the compared object matches the beginning of `object`.
+- [func scriptingContains(Any) -> Bool](nsobject-swift.class/scriptingcontains(_:).md)
+  Returns `true` if, in a scripting comparison, the compared object contains `object`.
+- [func scriptingEnds(with: Any) -> Bool](nsobject-swift.class/scriptingends(with:).md)
+  Returns `true` if, in a scripting comparison, the compared object matches the end of `object`.
+- [func scriptingIsEqual(to: Any) -> Bool](nsobject-swift.class/scriptingisequal(to:).md)
+  Returns `true` if, in a scripting comparison, the compared object is equal to `object`.
+- [func scriptingIsGreaterThan(Any) -> Bool](nsobject-swift.class/scriptingisgreaterthan(_:).md)
+  Returns `true` if, in a scripting comparison, the compared object is greater than `object`.
+- [func scriptingIsGreaterThanOrEqual(to: Any) -> Bool](nsobject-swift.class/scriptingisgreaterthanorequal(to:).md)
+  Returns `true` if, in a scripting comparison, the compared object is greater than or equal to `object`.
+- [func scriptingIsLessThan(Any) -> Bool](nsobject-swift.class/scriptingislessthan(_:).md)
+  Returns `true` if, in a scripting comparison, the compared object is less than `object`.
+- [func scriptingIsLessThanOrEqual(to: Any) -> Bool](nsobject-swift.class/scriptingislessthanorequal(to:).md)
+  Returns `true` if, in a scripting comparison, the compared object is less than or equal to `object`.
+
 ## See Also
 
 - [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)

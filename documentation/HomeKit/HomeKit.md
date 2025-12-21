@@ -33,7 +33,7 @@ Using HomeKit, your app can:
 - [HomeKit Entitlement](../BundleResources/Entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
 - [NSHomeKitUsageDescription](../BundleResources/Information-Property-List/NSHomeKitUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s HomeKit configuration data.
+  A message that tells people why the app is requesting access to their HomeKit configuration data.
 ### Home Manager
 - [Configuring a home automation device](configuring-a-home-automation-device.md)
   Give users a familiar experience when they manage HomeKit accessories.

@@ -13,7 +13,7 @@ A Boolean value that indicates your app supports CloudKit Sharing.
 
 #### Discussion
 
-If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](https://developer.apple.com/documentation/swift/true). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.
+If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](https://developer.apple.com/documentation/Swift/true). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.
 
 Before your app launches, CloudKit verifies that the user has an active iCloud account and, for private shares, that it matches their participant details. Following successful verification, CloudKit provides the share’s metadata to your app’s scene, or application, delegate. The method it calls varies by platform and app configuration. For more information, see [`CKShare.Metadata`](https://developer.apple.com/documentation/CloudKit/CKShare/Metadata).
 

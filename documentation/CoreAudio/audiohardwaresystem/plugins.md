@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of AudioHardwarePlugins that represent all the plugin objects on the system.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

@@ -6,13 +6,13 @@
 A fixed-size array.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -55,6 +55,7 @@ let d: InlineArray         = [1, 2, 4, 8]
   Initializes every element in this array, by calling the given closure with each index.
 - [init<E>(first: consuming Element, next: (borrowing Element) throws(E) -> Element) throws(E)](inlinearray/init(first:next:).md)
   Initializes every element in this array, by calling the given closure with each preceding element.
+- [init<E>(initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](inlinearray/init(initializingwith:).md)
 - [init(repeating: Element)](inlinearray/init(repeating:).md)
   Initializes every element in this array to a copy of the given value.
 ### Instance Properties

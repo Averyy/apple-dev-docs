@@ -22,7 +22,7 @@ func makeIndirectCommandBuffer(descriptor: MTLIndirectCommandBufferDescriptor, m
 
 ## Mentions
 
-- [Creating an Indirect Command Buffer](creating-an-indirect-command-buffer.md)
+- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
 
 #### Return Value
 

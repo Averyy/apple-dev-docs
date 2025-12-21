@@ -17,7 +17,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

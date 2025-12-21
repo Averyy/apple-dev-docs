@@ -6,7 +6,7 @@
 Preview a relevance configuration widget.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -17,13 +17,13 @@ Preview a relevance configuration widget.
 
 #### Overview
 
-The preview will allow you to step through your entries.
+Provide the preview with sample data and use it to step through the timeline while ignoring the dates of the entries, and test out the transitions between them.
 
-> **Note**: The entries must be of the type expected by the widget. (This will be enforced at run-time.)
+> **Note**: The relevance entries must be of the type that the widget expects.
 
 ## Parameters
 
-- `name`: An optional display name for the preview, which will appear in the canvas.
+- `name`: An optional display name for the preview that appears in the Xcode preview canvas.
 - `widget`: A closure producing the widget to be previewed.
 - `relevanceEntries`: A closure building the entries to be previewed.
 

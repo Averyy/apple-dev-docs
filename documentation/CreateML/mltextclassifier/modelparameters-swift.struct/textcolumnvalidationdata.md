@@ -20,12 +20,10 @@ var textColumnValidationData: String? { get set }
 
 ## See Also
 
-- [init(validationData: [String : [String]], algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-xplw.md)
-  Creates parameters for a text classifier with validation data in a dictionary.
+- [init(validationData:algorithm:language:)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:).md)
+  Creates parameters for a text classifier with validation data in a set of labeled directories.
 - [init(validationData: MLDataTable?, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?, textColumnValidationData: String?, labelColumnValidationData: String?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:textcolumnvalidationdata:labelcolumnvalidationdata:).md)
   Creates parameters for a text classifier with validation data in a data table.
-- [init(validationData: MLTextClassifier.DataSource, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-95vq7.md)
-  Creates parameters for a text classifier with validation data in a set of labeled directories.
 - [var validationData: MLDataTable?](mltextclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
   The validation data.
 - [var labelColumnValidationData: String?](mltextclassifier/modelparameters-swift.struct/labelcolumnvalidationdata.md)

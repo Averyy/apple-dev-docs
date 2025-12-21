@@ -22,7 +22,7 @@ var httpShouldHandleCookies: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the default cookie handling will be used for this request, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the default cookie handling will be used for this request, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

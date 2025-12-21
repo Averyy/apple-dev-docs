@@ -3,12 +3,11 @@
 **Framework**: Vision  
 **Kind**: property
 
-The maximum aspect ratio of the rectangle to detect.
+The largest aspect ratio the rectangle request detects.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,14 +20,14 @@ var maximumAspectRatio: Float
 
 #### Discussion
 
-The value should range from `0.0` to `1.0`, inclusive. The default value is `0.5`.
+The property’s value defaults to `1.0`, but you can set it to any value in the range `[0.0, 1.0]`. You can use this value to choose specific rectangles in the detection like filtering out narrow rectangles by excluding small aspect ratios, or setting a range of `0.95` to `1.0` to select mostly squares.
 
 ## See Also
 
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
   The maximum number of rectangles Vision returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
-  The minimum aspect ratio of the rectangle(s) to detect.
+  The smallest aspect ratio the rectangle request detects.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)

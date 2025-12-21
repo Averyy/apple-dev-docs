@@ -19,7 +19,7 @@ class AVCaptionConversionWarning
 
 ## Topics
 
-### Inspecting the Warning
+### Inspecting the warning
 - [var warningType: AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.property.md)
   A type that indicates the nature of the validation warning.
 - [var rangeOfCaptions: NSRange](avcaptionconversionwarning/rangeofcaptions.md)

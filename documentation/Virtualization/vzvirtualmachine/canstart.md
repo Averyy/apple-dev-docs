@@ -16,7 +16,7 @@ var canStart: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the VM is in a state that allows you to start it. Call the [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method (Swift)  or [`start()`](vzvirtualmachine/start().md) method (Objective-C) to start the VM.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the VM is in a state that allows you to start it. Call the [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method (Swift)  or [`start()`](vzvirtualmachine/start().md) method (Objective-C) to start the VM.
 
 ## See Also
 

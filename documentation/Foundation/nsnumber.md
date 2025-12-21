@@ -38,25 +38,25 @@ An `NSNumber` object initialized with a value of a particular type accessing the
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| [`false`](https://developer.apple.com/documentation/swift/false) | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
-| [`true`](https://developer.apple.com/documentation/swift/true) | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
+| [`false`](https://developer.apple.com/documentation/Swift/false) | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
+| [`true`](https://developer.apple.com/documentation/Swift/true) | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
-| `1` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
-| `-1` | [`true`](https://developer.apple.com/documentation/swift/true) | `-1` |  | `-1.0` |
+| `0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
+| `1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
+| `-1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` |  | `-1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
-| `1` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
+| `0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
+| `1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0.0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
-| `1.0` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
-| `-1.0` | [`true`](https://developer.apple.com/documentation/swift/true) | `-1` |  | `-1.0` |
+| `0.0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
+| `1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
+| `-1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` |  | `-1.0` |
 
 ##### Subclassing Notes
 

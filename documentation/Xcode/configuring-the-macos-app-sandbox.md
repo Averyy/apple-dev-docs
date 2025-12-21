@@ -73,10 +73,16 @@ After you configure the necessary file access, Xcode updates your app’s entitl
 
 ## See Also
 
+- [Configuring Family Controls](configuring-family-controls.md)
+  Add the Family Controls entitlement to enable parental control features in your app and its Screen Time API app extensions.
 - [Configuring the hardened runtime](configuring-the-hardened-runtime.md)
   Protect the runtime integrity of your macOS app by restricting access to sensitive resources and preventing common exploits.
 - [Configuring keychain sharing](configuring-keychain-sharing.md)
   Share keychain items between multiple apps belonging to the same developer.
+- [Protecting local app data using containers on macOS](protecting-local-app-data-using-containers.md)
+  Secure your app’s local storage data from unauthorized access and modification.
+- [Accessing app group containers in your existing macOS app](accessing-app-group-containers.md)
+  Ensure your app has app group container entitlements and macOS can authorize them.
 
 
 ---

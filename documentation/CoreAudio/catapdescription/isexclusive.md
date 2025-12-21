@@ -15,6 +15,10 @@
 var isExclusive: Bool { get set }
 ```
 
+#### Discussion
+
+True if this description should tap all processes except the process listed in the ‘processes’ property.
+
 
 ---
 

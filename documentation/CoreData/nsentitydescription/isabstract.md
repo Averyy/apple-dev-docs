@@ -22,11 +22,11 @@ var isAbstract: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/swift/false). An abstract entity might be Shape, with concrete sub-entities such as Rectangle, Triangle, and Circle.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver represents an abstract entity, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). An abstract entity might be Shape, with concrete sub-entities such as Rectangle, Triangle, and Circle.
 
 ##### Special Considerations
 

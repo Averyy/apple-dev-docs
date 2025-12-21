@@ -32,7 +32,7 @@ To run this sample app, you need the following:
 
 - [Accelerating ray tracing using Metal](accelerating-ray-tracing-using-metal.md)
   Implement ray-traced rendering using GPU-based parallel processing.
-- [Control the Ray Tracing Process Using Intersection Queries](control-the-ray-tracing-process-using-intersection-queries.md)
+- [Control the ray tracing process using intersection queries](control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
 - [Accelerating ray tracing and motion blur using Metal](accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.

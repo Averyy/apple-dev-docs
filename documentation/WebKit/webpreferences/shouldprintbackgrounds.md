@@ -16,7 +16,7 @@ var shouldPrintBackgrounds: Bool { get set }
 
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the web view should print backgrounds, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](https://developer.apple.com/documentation/Swift/true) if the web view should print backgrounds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

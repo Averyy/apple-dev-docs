@@ -85,7 +85,7 @@ To apply the effect, register the function as the [`postProcess`](arview/renderc
 arView.renderCallbacks.postProcess = postProcessWithCoreImage
 ```
 
-> **Note**: For more information on using Core Image to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including Core Image.
+> **Note**: For more information on using Core Image to create postprocess effects, see the [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including Core Image.
 
 
 ---

@@ -22,7 +22,7 @@ var retainsRegisteredObjects: Bool { get set }
 
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/swift/true), the receiver keeps strong references to all registered managed objects. If set to [`false`](https://developer.apple.com/documentation/swift/false), then the receiver keeps strong references to registered objects only when they are inserted, updated, deleted, or locked. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If set to [`true`](https://developer.apple.com/documentation/Swift/true), the receiver keeps strong references to all registered managed objects. If set to [`false`](https://developer.apple.com/documentation/Swift/false), then the receiver keeps strong references to registered objects only when they are inserted, updated, deleted, or locked. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

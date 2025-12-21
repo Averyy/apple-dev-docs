@@ -1,4 +1,4 @@
-# Integrating AirPlay for Long-Form Video Apps
+# Integrating AirPlay for long-form video apps
 
 **Framework**: AVFoundation
 

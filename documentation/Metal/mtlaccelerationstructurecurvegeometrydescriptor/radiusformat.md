@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The format of each radius in the radius buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var radiusFormat: MTLAttributeFormat { get set }
 ```
+
+#### Discussion
+
+The property’s default value is [`MTLAttributeFormat.float`](mtlattributeformat/float.md).
 
 
 ---

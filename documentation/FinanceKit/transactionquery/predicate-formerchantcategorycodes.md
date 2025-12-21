@@ -19,6 +19,13 @@ static func predicate(forMerchantCategoryCodes merchantCategoryCodes: [MerchantC
 
 - `merchantCategoryCodes`: Merchant category codes to match against.
 
+## See Also
+
+- [static func predicate(forStatuses: [TransactionStatus]) -> Predicate<Transaction>](transactionquery/predicate(forstatuses:).md)
+  Returns a predicate that matches any of the provided transaction statuses.
+- [static func predicate(forTransactionTypes: [TransactionType]) -> Predicate<Transaction>](transactionquery/predicate(fortransactiontypes:).md)
+  Returns a predicate that matches any of the provided transaction types.
+
 
 ---
 

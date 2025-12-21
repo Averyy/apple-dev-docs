@@ -6,7 +6,7 @@
 The broadcast activity controller’s delegate object.
 
 **Availability**:
-- macOS 11.0+
+- macOS ?+
 
 ## Declaration
 

@@ -30,7 +30,7 @@ When using identities in your app, observe the following caveats:
 
 - Avoid putting identities in a file, database, or in the keychain. Storing an identity might not work as intended, for example, you’re unable to retrieve a hardware-bound key after putting it in the keychain.
 - [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity) references underlying keychain data that can disappear if the MDM admin removes the identity at runtime. Call this function as needed for a fresh reference rather than holding on to the result of a prior call for an extended period of time.
-- For security reasons, avoid logging or displaying the identity’s certificate or private key. Even though the cerificate is a “public” certificate, it can contain sensitive information.
+- For security reasons, avoid logging or displaying the identity’s certificate or private key. Even though the certificate is a “public” certificate, it can contain sensitive information.
 
 > **Note**: [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no identity exists with the specified identifier.
 

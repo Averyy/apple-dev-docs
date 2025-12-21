@@ -23,9 +23,6 @@ The system provides an instance of this structure to your app when a person choo
 ### Accessing individual locations
 - [var locations: [JournalingSuggestion.Location]](journalingsuggestion/locationgroup/locations.md)
   An array of locations that a particular suggestion refers to.
-### Type Aliases
-- [JournalingSuggestion.LocationGroup.JournalingSuggestionContent](journalingsuggestion/locationgroup/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

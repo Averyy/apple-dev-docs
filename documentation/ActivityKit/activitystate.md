@@ -32,22 +32,6 @@ enum ActivityState
   The Live Activity content is out of date and needs an update.
 - [ActivityState.ended](activitystate/ended.md)
   The Live Activity is visible, but a person, the app, or the system ended it, and it won’t update its content anymore.
-### Operators
-- [static func == (ActivityState, ActivityState) -> Bool](activitystate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](activitystate/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](activitystate/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](activitystate/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](activitystate/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](activitystate/equatable-implementations.md)
 
 ## Relationships
 

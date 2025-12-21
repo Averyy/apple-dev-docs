@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+Returns a copy of the effect requesting an animation that makes the symbol breathe with no additional styling.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

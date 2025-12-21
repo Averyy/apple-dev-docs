@@ -10,7 +10,7 @@ Creates a clear coat normal object from a custom material’s clear coat normal 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

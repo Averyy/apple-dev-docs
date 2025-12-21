@@ -21,7 +21,7 @@ optional var supportsWideColorSourceFrames: Bool { get }
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 ## See Also
 
@@ -33,6 +33,7 @@ optional var supportsWideColorSourceFrames: Bool { get }
   A Boolean value that indicates whether the compositor handles source frames that contain high dynamic range (HDR) properties.
 - [var canConformColorOfSourceFrames: Bool](avvideocompositing/canconformcolorofsourceframes.md)
   A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space.
+- [var supportsSourceTaggedBuffers: Bool](avvideocompositing/supportssourcetaggedbuffers.md)
 
 
 ---

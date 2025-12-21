@@ -66,12 +66,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static var wide: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/wide.md)
   The complete weekday representation.
 ### Comparing a Weekday
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

@@ -17,14 +17,14 @@ A protocol that handles events for Game Center players.
 ## Declaration
 
 ```swift
-protocol GKLocalPlayerListener : GKChallengeListener, GKGameActivityListener, GKInviteEventListener, GKSavedGameListener, GKTurnBasedEventListener
+protocol GKLocalPlayerListener : GKChallengeListener, GKInviteEventListener, GKTurnBasedEventListener
 ```
 
 ## Mentions
 
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
 - [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 
 #### Overview
 

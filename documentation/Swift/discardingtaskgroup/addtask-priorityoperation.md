@@ -22,7 +22,7 @@ mutating func addTask(priority: TaskPriority? = nil, operation: sending @escapin
 
 ## Parameters
 
-- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
+- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.
 - `operation`: The operation to execute as part of the task group.
 
 

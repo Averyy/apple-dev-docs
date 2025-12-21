@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting add-only access to the user’s photo library.
+A message that tells people why the app is requesting add-only access to their photo library.
 
 **Availability**:
 - iOS 11.0+
@@ -19,7 +19,7 @@ A message that tells the user why the app is requesting add-only access to the u
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 - [NSPhotoLibraryUsageDescription](information-property-list/nsphotolibraryusagedescription.md)
-  A message that tells the user why the app is requesting access to the user’s photo library.
+  A message that tells people why the app is requesting access to their photo library.
 
 
 ---

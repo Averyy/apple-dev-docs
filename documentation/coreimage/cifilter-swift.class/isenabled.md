@@ -16,7 +16,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The filter is applied to its input when this property is set to [`true`](https://developer.apple.com/documentation/swift/true) (the default).
+The filter is applied to its input when this property is set to [`true`](https://developer.apple.com/documentation/Swift/true) (the default).
 
 Use this property in conjunction with the [`name`](cifilter-swift.class/name.md) property when attaching filters to Core Animation layers and accessing or animating filter properties through key-value animations.  Core Animation can animate this property on a layer.
 

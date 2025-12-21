@@ -21,7 +21,7 @@ var arrayLength: Int { get set }
 
 #### Discussion
 
-For a nonarray argument, this value must be `0`.
+For a nonarray argument, this value needs to be `0`.
 
 ## See Also
 

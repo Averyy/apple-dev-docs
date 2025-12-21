@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -18,8 +18,6 @@ struct DidDeactivateApplicationMessage
 - [init(application: NSRunningApplication)](nsworkspace/diddeactivateapplicationmessage/init(application:).md)
 ### Instance Properties
 - [var application: NSRunningApplication](nsworkspace/diddeactivateapplicationmessage/application.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidDeactivateApplicationMessage) -> Notification](nsworkspace/diddeactivateapplicationmessage/makenotification(_:).md)
 
 ## Relationships
 

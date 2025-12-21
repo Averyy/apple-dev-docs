@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -14,6 +14,8 @@ static let scrollToVisibleAction: NSAccessibility.Action
 
 ## See Also
 
+- [static let cancel: NSAccessibility.Action](nsaccessibility-swift.struct/action/cancel.md)
+  An action that cancels the operation.
 - [static let confirm: NSAccessibility.Action](nsaccessibility-swift.struct/action/confirm.md)
   An action that simulates pressing Return in the object, such as a text field.
 - [static let decrement: NSAccessibility.Action](nsaccessibility-swift.struct/action/decrement.md)
@@ -26,8 +28,6 @@ static let scrollToVisibleAction: NSAccessibility.Action
   An action that selects the object, such as a menu item.
 - [static let press: NSAccessibility.Action](nsaccessibility-swift.struct/action/press.md)
   An action that simulates clicking an object, such as a button.
-- [static let cancel: NSAccessibility.Action](nsaccessibility-swift.struct/action/cancel.md)
-  An action that cancels the operation.
 - [static let raise: NSAccessibility.Action](nsaccessibility-swift.struct/action/raise.md)
   An action that simulates bringing a window forward by clicking on its title bar.
 - [static let showAlternateUI: NSAccessibility.Action](nsaccessibility-swift.struct/action/showalternateui.md)

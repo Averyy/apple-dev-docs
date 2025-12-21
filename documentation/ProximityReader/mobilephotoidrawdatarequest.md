@@ -3,13 +3,13 @@
 **Framework**: ProximityReader  
 **Kind**: struct
 
-A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ struct MobilePhotoIDRawDataRequest
 
 ### Creating a raw data request
 - [init(retainedElements: [MobilePhotoIDRawDataRequest.Element], nonRetainedElements: [MobilePhotoIDRawDataRequest.Element])](mobilephotoidrawdatarequest/init(retainedelements:nonretainedelements:).md)
-  Returns a mobile driver’s license raw data request.
+  Returns a photo ID raw data request.
 - [MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element.md)
   A type representing an element that you can request from a photo ID.
 - [var nonRetainedElements: [MobilePhotoIDRawDataRequest.Element]](mobilephotoidrawdatarequest/nonretainedelements.md)
@@ -31,17 +31,7 @@ struct MobilePhotoIDRawDataRequest
 ### Handling the response
 - [MobilePhotoIDRawDataRequest.Response](mobilephotoidrawdatarequest/response.md)
   A type that contains the response information from a successful photo ID raw data request.
-### Operators
-- [static func == (MobilePhotoIDRawDataRequest, MobilePhotoIDRawDataRequest) -> Bool](mobilephotoidrawdatarequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilephotoidrawdatarequest/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilephotoidrawdatarequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobilephotoidrawdatarequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobilephotoidrawdatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships

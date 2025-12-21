@@ -51,7 +51,7 @@ struct Table: EntityTabletop {
 
 ## See Also
 
-- [Creating tabletop games](tabletopkitsample.md)
+- [Creating tabletop games](creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.

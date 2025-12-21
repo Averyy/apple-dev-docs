@@ -17,6 +17,10 @@
 enum HKAudiogramConductionType
 ```
 
+#### Overview
+
+Represents the conduction type used for an HKAudiogramSensitivityTest
+
 ## Topics
 
 ### Enumeration Cases

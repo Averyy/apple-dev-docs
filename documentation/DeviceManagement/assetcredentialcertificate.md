@@ -23,6 +23,22 @@ object AssetCredentialCertificate
 
 Specify `com.apple.asset.credential.certificate` as the declaration type.
 
+##### Asset Example
+
+```json
+{
+    "Type": "com.apple.asset.credential.certificate",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "Reference": {
+            "DataURL": "https://example.com/asset-data/certificates/cert.pem",
+            "ContentType": "application/pem"
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
@@ -38,7 +54,7 @@ Specify `com.apple.asset.credential.certificate` as the declaration type.
 - [object AssetCredentialIdentity](assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
 - [object AssetCredentialSCEP](assetcredentialscep.md)
-  A reference to an SCEP identity.
+  A reference to a SCEP identity.
 - [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
 - [object AssetData](assetdata.md)

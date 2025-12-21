@@ -34,24 +34,24 @@ static let quickTimeMetadataKeyLocationRole: AVMetadataKey
   A key that represents an image relating to the movie file content.
 - [static let quickTimeMetadataKeyAuthor: AVMetadataKey](avmetadatakey/quicktimemetadatakeyauthor.md)
   A key that represents the name of the author of the movie file content.
+- [static let quickTimeMetadataKeyCameraFocalLength35mmEquivalent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerafocallength35mmequivalent.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
 - [static let quickTimeMetadataKeyCameraFrameReadoutTime: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraframereadouttime.md)
   A key that represents the camera frame readout time in QuickTime.
+- [static let quickTimeMetadataKeyCameraISOSensitivity: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraisosensitivity.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the sensitivity of the camera to light in terms of ISO exposure index (e.g. “800”). See SMPTE RDD 18.
 - [static let quickTimeMetadataKeyCameraIdentifier: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraidentifier.md)
   A key that represents the camera identifier in QuickTime.
-- [static let quickTimeMetadataKeyCollectionUser: AVMetadataKey](avmetadatakey/quicktimemetadatakeycollectionuser.md)
-  A key that represents a name that indicates a user-defined collection.
-- [static let quickTimeMetadataKeyComment: AVMetadataKey](avmetadatakey/quicktimemetadatakeycomment.md)
-  A key that represents a comment regarding the movie file content.
-- [static let quickTimeMetadataKeyComposer: AVMetadataKey](avmetadatakey/quicktimemetadatakeycomposer.md)
-  A key that represents the name of the composer of the movie file content.
-- [static let quickTimeMetadataKeyContentIdentifier: AVMetadataKey](avmetadatakey/quicktimemetadatakeycontentidentifier.md)
-  A key that represents the content identifier in QuickTime.
-- [static let quickTimeMetadataKeyCopyright: AVMetadataKey](avmetadatakey/quicktimemetadatakeycopyright.md)
-  A key that represents the copyright statement for the movie file content.
-- [static let quickTimeMetadataKeyCreationDate: AVMetadataKey](avmetadatakey/quicktimemetadatakeycreationdate.md)
-  A key that represents the creation date of the movie file content.
-- [static let quickTimeMetadataKeyCredits: AVMetadataKey](avmetadatakey/quicktimemetadatakeycredits.md)
-  A key that represents the credits of the movie source content.
+- [static let quickTimeMetadataKeyCameraLensIrisFNumber: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensirisfnumber.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating measure of the amount of light transmitted through the lens. It is the focal length divided by the effective lens aperture diameter (e.g. “F2.8” or “2.8”).
+- [static let quickTimeMetadataKeyCameraLensModel: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensmodel.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
+- [static let quickTimeMetadataKeyCameraShutterSpeedAngle: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerashutterspeedangle.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as an angle in minutes (1/60 degree) (e.g. “21600” or “360.00deg””).
+- [static let quickTimeMetadataKeyCameraShutterSpeedTime: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerashutterspeedtime.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as a time per one frame/field period in seconds.
+- [static let quickTimeMetadataKeyCameraWhiteBalance: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerawhitebalance.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the white balance value defined by the temperature in Kelvin units (e.g. “5500K” or “5500”). See SMPTE RDD 18.
 
 
 ---

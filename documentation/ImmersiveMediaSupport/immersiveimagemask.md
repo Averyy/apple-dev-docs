@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: class
 
-Immersive media image masks are generated using an image file containing the alpha values for the mask.
+An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -15,19 +15,18 @@ Immersive media image masks are generated using an image file containing the alp
 final class ImmersiveImageMask
 ```
 
+#### Overview
+
+An image file containing the alpha values is used to generate the image mask.
+
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](immersiveimagemask/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(name: String, maskData: Data?)](immersiveimagemask/init(name:maskdata:).md)
 - [init(name: String, maskURL: URL)](immersiveimagemask/init(name:maskurl:).md)
 ### Instance Properties
 - [let maskData: Data?](immersiveimagemask/maskdata.md)
 - [let name: String](immersiveimagemask/name.md)
-### Instance Methods
-- [func encode(to: any Encoder) throws](immersiveimagemask/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -40,6 +40,7 @@ The legibility weight reflects the value of the Bold Text display setting.
   The layout direction associated with the current environment.
 - [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
 - [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
 - [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
@@ -52,8 +53,6 @@ The legibility weight reflects the value of the Bold Text display setting.
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
-- [enum UINSToolbarItemPresentationSize](uinstoolbaritempresentationsize.md)
-  Constants that specify the presentation size of a toolbar item in an AppKit toolbar.
 
 
 ---

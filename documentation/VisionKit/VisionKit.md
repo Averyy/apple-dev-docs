@@ -47,6 +47,8 @@ In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image 
   A view that enables people to interact with recognized text, barcodes, and other objects in an image.
 - [protocol ImageAnalysisOverlayViewDelegate](imageanalysisoverlayviewdelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
+- [struct CameraRegionView](cameraregionview.md)
+  This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 ### Barcode and text scanning through the camera
 - [Scanning data with the camera](scanning-data-with-the-camera.md)
   Enable Live Text data scanning of text and codes that appear in the camera’s viewfinder.
@@ -65,9 +67,6 @@ In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image 
   A delegate protocol through which the document camera returns its scanned results.
 - [class VNDocumentCameraScan](vndocumentcamerascan.md)
   A single document scanned in the document camera.
-### Structures
-- [struct CameraRegionView](cameraregionview.md)
-  CameraRegionView displays a view of a stabilized region of interest within a user’s view, and then provide Passthrough camera feed for the selected region. It also allows additional post-processing of the passthrough camera frames. Example of such region of interest could be documents, a user manual, gauges or displays.
 
 
 ---

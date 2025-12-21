@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data that describes the background asset version related to a asset.
+
 **Availability**:
 - App Store Connect API 4.0+
 
@@ -16,6 +18,7 @@ object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVe
 
 ### Dictionaries
 - [object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion.Data](backgroundassetversioninternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related resource.
 
 
 ---

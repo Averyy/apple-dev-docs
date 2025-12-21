@@ -23,7 +23,7 @@ var dimensions: vector_int2 { get }
 
 If the texture contains multiple mipmap levels (the [`mipLevelCount`](mdltexture/miplevelcount.md) value is greater than zero), this property reflects the base (largest) mipmap level.
 
-If the texture is a cube texture (the [`isCube`](mdltexture/iscube.md) value is [`true`](https://developer.apple.com/documentation/swift/true)), this property reflects the vertical arrangement of cube faces in the texture image data. That is, the texture’s height is six times its width, and the data represents six square images for the six sides of the cube.
+If the texture is a cube texture (the [`isCube`](mdltexture/iscube.md) value is [`true`](https://developer.apple.com/documentation/Swift/true)), this property reflects the vertical arrangement of cube faces in the texture image data. That is, the texture’s height is six times its width, and the data represents six square images for the six sides of the cube.
 
 ## See Also
 

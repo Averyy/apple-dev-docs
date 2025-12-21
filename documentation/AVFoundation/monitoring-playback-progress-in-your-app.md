@@ -82,7 +82,7 @@ If you add either a periodic or boundary time observer, you need to remove obser
 
 ## See Also
 
-- [Using HEVC Video with Alpha](using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 - [class AVPlayerLayer](avplayerlayer.md)
   An object that presents the visual contents of a player object.

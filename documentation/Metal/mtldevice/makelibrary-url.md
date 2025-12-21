@@ -22,7 +22,7 @@ func makeLibrary(URL url: URL) throws -> any MTLLibrary
 
 ## Mentions
 
-- [Building a Shader Library by Precompiling Source Files](building-a-shader-library-by-precompiling-source-files.md)
+- [Building a shader library by precompiling source files](building-a-shader-library-by-precompiling-source-files.md)
 
 #### Return Value
 

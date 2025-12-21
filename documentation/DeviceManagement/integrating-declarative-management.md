@@ -82,6 +82,8 @@ The `com.apple.configuration.legacy` and `com.apple.configuration.legacy.interac
 
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
   Use declarative management to make devices more autonomous and proactive.
+- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
+  Use declarative app configurations to deploy managed apps to devices.
 - [Declarations](devicemanagement-declarations.md)
   The available declarations for device management.
 - [Status Reports](status-reports.md)

@@ -22,7 +22,7 @@ unowned(unsafe) var delegate: (any NetServiceBrowserDelegate)? { get set }
 ## See Also
 
 - [var includesPeerToPeer: Bool](netservicebrowser/includespeertopeer.md)
-  Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false), by default.
+  Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available.
 
 
 ---

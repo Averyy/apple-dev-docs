@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Destroys the given tap.
+
 **Availability**:
 - macOS 15.0+
 
@@ -11,6 +13,10 @@
 ```swift
 func destroyProcessTap(_ tap: AudioHardwareTap) throws
 ```
+
+## Parameters
+
+- `tap`: The AudioHardwareTap to destroy.
 
 
 ---

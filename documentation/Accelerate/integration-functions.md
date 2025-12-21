@@ -17,21 +17,6 @@ Compute the running sum, Simpson, or trapezoidal integration of a vector.
   Performs the integration of a single-precision using the specified rule.
 - [vDSP.IntegrationRule](vdsp/integrationrule.md)
   Integration rules.
-### Running Sum Integration
-- [vDSP_vrsum](vdsp_vrsum.md)
-  Performs running sum integration over a single-precision vector.
-- [vDSP_vrsumD](vdsp_vrsumd.md)
-  Performs running sum integration over a double-precision vector.
-### Simpson Integration
-- [vDSP_vsimps](vdsp_vsimps.md)
-  Performs Simpson integration over a single-precision vector.
-- [vDSP_vsimpsD](vdsp_vsimpsd.md)
-  Performs Simpson integration over a double-precision vector.
-### Trapezoidal Integration
-- [vDSP_vtrapz](vdsp_vtrapz.md)
-  Performs trapezoidal integration over a single-precision vector.
-- [vDSP_vtrapzD](vdsp_vtrapzd.md)
-  Performs trapezoidal integration over a double-precision vector.
 
 ## See Also
 

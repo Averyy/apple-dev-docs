@@ -16,10 +16,10 @@ class FSTaskOptions
 
 ## Topics
 
-### Instance Properties
+### Retrieving task options
 - [var taskOptions: [String]](fstaskoptions/taskoptions.md)
   An array of strings that represent command-line options for the task.
-### Instance Methods
+### Retrieving task option URLs
 - [func url(forOption: String) -> URL?](fstaskoptions/url(foroption:).md)
   Retrieves a URL for a given option.
 

@@ -25,7 +25,7 @@ You determine an asset reader’s status using its [`status`](avassetreader/stat
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVAssetReader.Status.unknown](avassetreader/status-swift.enum/unknown.md)
   The asset reader is in an unknown state.
 - [AVAssetReader.Status.reading](avassetreader/status-swift.enum/reading.md)

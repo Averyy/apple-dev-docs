@@ -85,6 +85,8 @@ enum PaymentCardReaderError
 - [var errorName: String](paymentcardreadererror/errorname.md)
   The name of the error.
 ### Enumeration Cases
+- [PaymentCardReaderError.requestInterrupted](paymentcardreadererror/requestinterrupted.md)
+  An error that indicates the application went to background before a reader request completed.
 - [PaymentCardReaderError.storeAndForwardNotAllowed](paymentcardreadererror/storeandforwardnotallowed.md)
   An error that indicates the framework can’t create a Store and Forward session because:
 - [PaymentCardReaderError.storeAndForwardSessionExpired](paymentcardreadererror/storeandforwardsessionexpired.md)
@@ -93,8 +95,6 @@ enum PaymentCardReaderError
   An error that indicates the framework invalidated the current Store and Forward session, and it can’t execute additional reads.
 - [PaymentCardReaderError.storeAndForwardTokenIssuerChanged](paymentcardreadererror/storeandforwardtokenissuerchanged.md)
   An error that indicates the current Store and Forward mode has payments from a different token issuer.
-### Default Implementations
-- [Error Implementations](paymentcardreadererror/error-implementations.md)
 
 ## Relationships
 

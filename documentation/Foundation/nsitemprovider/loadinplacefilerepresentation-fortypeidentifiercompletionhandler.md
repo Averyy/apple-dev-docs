@@ -22,7 +22,7 @@ func loadInPlaceFileRepresentation(forTypeIdentifier typeIdentifier: String, com
 
 #### Discussion
 
-The system sets the `isInPlace` parameter to [`true`](https://developer.apple.com/documentation/swift/true) if the system successfully opened the file in place, or [`false`](https://developer.apple.com/documentation/swift/false) if it made a local copy. In either case, you must access the returned [`URL`](url.md) using an [`NSFileCoordinator`](nsfilecoordinator.md) object.
+The system sets the `isInPlace` parameter to [`true`](https://developer.apple.com/documentation/Swift/true) if the system successfully opened the file in place, or [`false`](https://developer.apple.com/documentation/Swift/false) if it made a local copy. In either case, you must access the returned [`URL`](url.md) using an [`NSFileCoordinator`](nsfilecoordinator.md) object.
 
 If the system created a local copy of a file, it will be automatically deleted after your file coordinator relinquishes its read access to the file.
 

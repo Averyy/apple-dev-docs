@@ -18,7 +18,7 @@ object ErrorCodePairingTokenMissing
 
 The schema for a JSON or property list XML document that an MDM server’s 403 response body contains. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.
 
-The system returns this response when an Apple Watch attempts to enroll in MDM, but the watch doesn’t include a `PAIRING_TOKEN` in the [`MachineInfo`](machineinfo.md) request. After the watch receives this response, it fetches a pairing token from the phone’s MDM server through a request to the phone. Then, the watch repeats the enrollment request and includes the pairing token.
+The system returns this response when an Apple Watch enrolls in MDM, but the watch doesn’t include a `PAIRING_TOKEN` in the [`MachineInfo`](machineinfo.md) request. After the watch receives this response, it fetches a pairing token from the phone’s MDM server through a request to the phone. Then, the watch repeats the enrollment request and includes the pairing token.
 
 ## Topics
 
@@ -28,10 +28,14 @@ The system returns this response when an Apple Watch attempts to enroll in MDM, 
 
 ## See Also
 
+- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
+  An error response that indicates Platform SSO is required.
 - [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
   An error response that indicates the system requires a software update.
 - [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+  An error response that indicates a device needs to unenroll.
 - [object ErrorWellKnownFailed](errorwellknownfailed.md)
+  An error response that indicates a well-known service discovery request failed.
 
 
 ---

@@ -39,7 +39,6 @@ struct PerSampleAttachmentsDictionary
 - [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
   An array of sample attachments.
 - [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-  A structure that defines an array of sample attachments.
 
 
 ---

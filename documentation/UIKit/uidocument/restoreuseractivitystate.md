@@ -14,7 +14,6 @@ Restores the state needed to continue the given user activity.
 ## Declaration
 
 ```swift
-@MainActor
 func restoreUserActivityState(_ userActivity: NSUserActivity)
 ```
 
@@ -22,7 +21,7 @@ func restoreUserActivityState(_ userActivity: NSUserActivity)
 
 Subclasses override this method to restore the responder’s state with the given user activity. The override should use the state data contained in the `userInfo` dictionary of the given user activity to restore the object.
 
-User activities managed by [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) can be restored automatically, if [`false`](https://developer.apple.com/documentation/swift/false) is returned from `application:continueActivity:restorationHandler:` or if it’s unimplemented. In this situation, the document is opened by the [`NSDocumentController`](https://developer.apple.com/documentation/AppKit/NSDocumentController) method [`openDocument(withContentsOf:display:completionHandler:)`](https://developer.apple.com/documentation/AppKit/NSDocumentController/openDocument(withContentsOf:display:completionHandler:)) and receives a [`restoreUserActivityState(_:)`](uidocument/restoreuseractivitystate(_:).md) message.
+The system can restore user activities that [`UIDocument`](uidocument.md) manages automatically, if you return [`false`](https://developer.apple.com/documentation/Swift/false) from [`application(_:continue:restorationHandler:)`](uiapplicationdelegate/application(_:continue:restorationhandler:).md) or if you don’t implement the method. In this situation, the [`UIDocumentViewController`](uidocumentviewcontroller.md) method [`openDocument(completionHandler:)`](uidocumentviewcontroller/opendocument(completionhandler:).md) opens the document, and calls [`restoreUserActivityState(_:)`](uidocument/restoreuseractivitystate(_:).md).
 
 ## Parameters
 

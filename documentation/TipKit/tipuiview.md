@@ -73,13 +73,13 @@ class CatTracksViewController: UIViewController {
             }
         }
     }
-}
 
-override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
 
-    tipObservationTask?.cancel()
-    tipObservationTask = nil
+        tipObservationTask?.cancel()
+        tipObservationTask = nil
+    }
 }
 ```
 

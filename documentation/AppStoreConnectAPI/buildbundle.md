@@ -24,6 +24,8 @@ object BuildBundle
 
 ## See Also
 
+- [type BuildBundleType](buildbundletype.md)
+  A string that represents the possible components of a build bundle.
 - [object AppClipDomainStatus](appclipdomainstatus.md)
   The data structure that represents the App Clip Domain Statuses resource.
 - [object BuildBundleFileSize](buildbundlefilesize.md)

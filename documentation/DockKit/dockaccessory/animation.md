@@ -23,9 +23,6 @@ Each animation executes on a predefined trajectory. See [`animate(motion:)`](doc
 
 ## Topics
 
-### Operators
-- [static func == (DockAccessory.Animation, DockAccessory.Animation) -> Bool](dockaccessory/animation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [DockAccessory.Animation.kapow](dockaccessory/animation/kapow.md)
   The dock accessory performs a quick tilt and snaps back with some oscillation.
@@ -35,14 +32,6 @@ Each animation executes on a predefined trajectory. See [`animate(motion:)`](doc
   The dock accessory moves upwards towards center.
 - [DockAccessory.Animation.yes](dockaccessory/animation/yes.md)
   The dock accessory traces a vertical head nod.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/animation/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/animation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/animation/equatable-implementations.md)
 
 ## Relationships
 

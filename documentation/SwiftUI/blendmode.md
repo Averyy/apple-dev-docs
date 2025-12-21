@@ -73,6 +73,8 @@ enum BlendMode
 - [protocol CompositorContent](compositorcontent.md)
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
+- [struct AnyCompositorContent](anycompositorcontent.md)
+  Type erased compositor content.
 
 
 ---

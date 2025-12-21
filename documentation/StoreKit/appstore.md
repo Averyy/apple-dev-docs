@@ -31,6 +31,9 @@ Use these static functions and variables to perform tasks like showing the manag
 ### Checking payment setup
 - [static var canMakePayments: Bool](appstore/canmakepayments.md)
   A Boolean value that indicates whether the person can make purchases.
+### Checking current age rating
+- [static var ageRatingCode: Int?](appstore/ageratingcode.md)
+  The current age rating code for your app.
 ### Verifying devices
 - [static var deviceVerificationID: UUID?](appstore/deviceverificationid.md)
   The device verification identifier to use to verify whether signed information is valid for the current device.
@@ -50,22 +53,22 @@ Use these static functions and variables to perform tasks like showing the manag
 - [static func requestReview(in: NSViewController)](appstore/requestreview(in:)-4r0y9.md)
   Tells StoreKit to request an App Store rating or review from the user, if appropriate, using the specified view controller.
 ### Presenting the offer code redemption sheet
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](appstore/presentoffercoderedeemsheet(in:).md)
-  Displays a sheet in the window scene that enables users to redeem a subscription offer code that you configure in App Store Connect.
-- [nonisolated func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: @escaping @MainActor (Result<Void, any Error>) -> Void = { _ in }) -> some View
-](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
-  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+  Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](appstore/presentoffercoderedeemsheet(from:).md)
-  Displays a sheet in the view that enables users to redeem a subscription offer code that you configure in App Store Connect.
+  Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.
 ### Restoring purchases
 - [static func sync() async throws](appstore/sync.md)
   Synchronizes your app’s transaction information and subscription status with information from the App Store.
-### Presenting App Store offers
-- [static func presentOffer(AppStoreOfferKind, from: UIViewController) async throws -> AppStoreOfferKind.PresentationResult](appstore/presentoffer(_:from:).md)
-- [static func presentOffer(AppStoreOfferKind, from: UIViewController) async throws -> AppStoreOfferKind.PresentationResult](appstore/presentoffer(_:from:).md)
-- [struct AppStoreOfferKind](appstoreofferkind.md)
+### Merchandising
+- [struct AppStoreMerchandisingKind](appstoremerchandisingkind.md)
+### Type Methods
+- [static func presentMerchandising(AppStoreMerchandisingKind, from: NSWindow) async throws -> AppStoreMerchandisingKind.PresentationResult](appstore/presentmerchandising(_:from:)-8bblo.md)
+- [static func presentMerchandising(AppStoreMerchandisingKind, from: UIViewController) async throws -> AppStoreMerchandisingKind.PresentationResult](appstore/presentmerchandising(_:from:)-hkrd.md)
 
 ## Relationships
 

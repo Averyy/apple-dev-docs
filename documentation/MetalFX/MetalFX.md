@@ -55,14 +55,13 @@ Because the scaling effects take time to initialize, make an instance of either 
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
 - [protocol MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
 - [protocol MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)
+- [protocol MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [protocol MTLFXFrameInterpolator](mtlfxframeinterpolator.md)
 - [protocol MTLFXFrameInterpolatorBase](mtlfxframeinterpolatorbase.md)
-  A common abstraction to all frame interpolators.
 - [protocol MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
 - [protocol MTLFXTemporalDenoisedScaler](mtlfxtemporaldenoisedscaler.md)
 - [protocol MTLFXTemporalDenoisedScalerBase](mtlfxtemporaldenoisedscalerbase.md)
-  A common abstraction to all denoiser scalers.
 - [protocol MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
   An upscaling effect that generates a higher resolution texture in a render pass by analyzing multiple input textures over time.
 

@@ -22,30 +22,27 @@ struct MergeMany<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Merge Many Publisher
+### Creating a merge many publisher
 - [init(Upstream...)](publishers/mergemany/init(_:)-1hsqd.md)
   Creates a publisher created by applying the merge function to an arbitrary number of upstream publishers.
 - [init<S>(S)](publishers/mergemany/init(_:)-3hrmo.md)
   Creates a publisher created by applying the merge function to a sequence of upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge(with: Upstream) -> Publishers.MergeMany<Upstream>](publishers/mergemany/merge(with:).md)
+  Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
+### Declaring supporting types
 - [Publishers.MergeMany.Output](publishers/mergemany/output.md)
   The kind of values published by this publisher.
 - [Publishers.MergeMany.Failure](publishers/mergemany/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let publishers: [Upstream]](publishers/mergemany/publishers.md)
   The array of upstream publishers that this publisher merges together.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.MergeMany<Upstream>, Publishers.MergeMany<Upstream>) -> Bool](publishers/mergemany/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/mergemany/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-mergemany-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/mergemany/equatable-implementations.md)
-- [Publisher Implementations](publishers/mergemany/publisher-implementations.md)
 
 ## Relationships
 

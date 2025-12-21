@@ -17,7 +17,7 @@ optional func selectionShouldChange(in tableView: NSTableView) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the table view to change its selection (typically a row being edited), [`false`](https://developer.apple.com/documentation/swift/false) to deny selection change.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the table view to change its selection (typically a row being edited), [`false`](https://developer.apple.com/documentation/Swift/false) to deny selection change.
 
 #### Discussion
 

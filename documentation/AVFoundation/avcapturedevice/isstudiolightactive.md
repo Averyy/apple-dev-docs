@@ -20,7 +20,7 @@ var isStudioLightActive: Bool { get }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), the system artificially lights the subject’s face to simulate the presence of a studio light near the camera.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the system artificially lights the subject’s face to simulate the presence of a studio light near the camera.
 
 ## See Also
 

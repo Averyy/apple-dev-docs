@@ -22,7 +22,7 @@ static let keepAsCompound: SCNPhysicsShape.Option
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that SceneKit convert separate geometries into separate shapes and join the resulting shapes. If [`false`](https://developer.apple.com/documentation/swift/false), SceneKit creates a single shape approximating the combined form of the geometries.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that SceneKit convert separate geometries into separate shapes and join the resulting shapes. If [`false`](https://developer.apple.com/documentation/Swift/false), SceneKit creates a single shape approximating the combined form of the geometries.
 
 ## See Also
 

@@ -20,7 +20,7 @@ var wantsDateDecorations: Bool { get set }
 
 #### Discussion
 
-Defaults to [`true`](https://developer.apple.com/documentation/swift/true). You must implement `UICalendarDateDelegate`’s [`calendarView(_:decorationFor:)`](uicalendarviewdelegate/calendarview(_:decorationfor:).md) to provide decorations that the calendar view shows.
+Defaults to [`true`](https://developer.apple.com/documentation/Swift/true). You must implement `UICalendarDateDelegate`’s [`calendarView(_:decorationFor:)`](uicalendarviewdelegate/calendarview(_:decorationfor:).md) to provide decorations that the calendar view shows.
 
 ## See Also
 

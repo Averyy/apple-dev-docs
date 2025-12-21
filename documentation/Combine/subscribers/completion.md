@@ -27,16 +27,11 @@ enum Completion<Failure> where Failure : Error
 
 ## Topics
 
-### Completion States
+### Completion states
 - [Subscribers.Completion.finished](subscribers/completion/finished.md)
   The publisher finished normally.
 - [Subscribers.Completion.failure(_:)](subscribers/completion/failure(_:).md)
   The publisher stopped publishing due to the indicated error.
-### Default Implementations
-- [Decodable Implementations](subscribers/completion/decodable-implementations.md)
-- [Encodable Implementations](subscribers/completion/encodable-implementations.md)
-- [Equatable Implementations](subscribers/completion/equatable-implementations.md)
-- [Hashable Implementations](subscribers/completion/hashable-implementations.md)
 
 ## Relationships
 

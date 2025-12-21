@@ -6,8 +6,8 @@
 Includes only the preselected paired devices in the provided dictionary.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,8 @@ A new `Devices` including the selected devices.
 
 - [static func selected(some Sequence<WAPairedDevice>) -> WAPublisherListener.Devices](wapublisherlistener/devices/selected(_:)-1e2.md)
   Includes only the preselected paired devices in the provided list.
+- [static let userSpecifiedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/userspecifieddevices.md)
+  Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 
 
 ---

@@ -4,6 +4,57 @@
 
 Transition between two images by using effects including page curl and swipe.
 
+## Topics
+
+### Filters
+- [class func accordionFoldTransition() -> any CIFilter & CIAccordionFoldTransition](cifilter-swift.class/accordionfoldtransition.md)
+  Transitions by folding and crossfading an image to reveal the target image.
+- [class func barsSwipeTransition() -> any CIFilter & CIBarsSwipeTransition](cifilter-swift.class/barsswipetransition.md)
+  Transitions between two images by removing rectangular portions of an image.
+- [class func copyMachineTransition() -> any CIFilter & CICopyMachineTransition](cifilter-swift.class/copymachinetransition.md)
+  Simulates the effect of a copy machine scanner light to transiton between two images.
+- [class func disintegrateWithMaskTransition() -> any CIFilter & CIDisintegrateWithMaskTransition](cifilter-swift.class/disintegratewithmasktransition.md)
+  Transitions between two images using a mask image.
+- [class func dissolveTransition() -> any CIFilter & CIDissolveTransition](cifilter-swift.class/dissolvetransition.md)
+  Transitions between two images with a fade effect.
+- [class func flashTransition() -> any CIFilter & CIFlashTransition](cifilter-swift.class/flashtransition.md)
+  Creates a flash of light to transition between two images.
+- [class func modTransition() -> any CIFilter & CIModTransition](cifilter-swift.class/modtransition.md)
+  Transitions between two images by applying irregularly shaped holes.
+- [class func pageCurlTransition() -> any CIFilter & CIPageCurlTransition](cifilter-swift.class/pagecurltransition.md)
+  Simulates the curl of a page, revealing the target image.
+- [class func pageCurlWithShadowTransition() -> any CIFilter & CIPageCurlWithShadowTransition](cifilter-swift.class/pagecurlwithshadowtransition.md)
+  Simulates the curl of a page, revealing the target image with added shadow.
+- [class func rippleTransition() -> any CIFilter & CIRippleTransition](cifilter-swift.class/rippletransition.md)
+  Simulates a ripple in a pond to transiton from one image to another.
+- [class func swipeTransition() -> any CIFilter & CISwipeTransition](cifilter-swift.class/swipetransition.md)
+  Gradually transitions from one image to another with a swiping motion.
+### Protocols
+- [protocol CITransitionFilter](citransitionfilter.md)
+  The properties you use to configure a transition filter.
+- [protocol CIBarsSwipeTransition](cibarsswipetransition.md)
+  The properties you use to configure a bars swipe transition filter.
+- [protocol CIAccordionFoldTransition](ciaccordionfoldtransition.md)
+  The properties you use to configure an accordion fold transition filter.
+- [protocol CICopyMachineTransition](cicopymachinetransition.md)
+  The properties you use to configure a copy machine transition filter.
+- [protocol CIDisintegrateWithMaskTransition](cidisintegratewithmasktransition.md)
+  The properties you use to configure a disintegrate-with-mask transition filter.
+- [protocol CIDissolveTransition](cidissolvetransition.md)
+  The properties you use to configure a dissolve transition filter.
+- [protocol CIFlashTransition](ciflashtransition.md)
+  The properties you use to configure a flash transition filter.
+- [protocol CIModTransition](cimodtransition.md)
+  The properties you use to configure a mod transition filter.
+- [protocol CIPageCurlTransition](cipagecurltransition.md)
+  The properties you use to configure a page curl transition filter.
+- [protocol CIPageCurlWithShadowTransition](cipagecurlwithshadowtransition.md)
+  The properties you use to configure a page-curl-with-shadow transition filter.
+- [protocol CIRippleTransition](cirippletransition.md)
+  The properties you use to configure a ripple transition filter.
+- [protocol CISwipeTransition](ciswipetransition.md)
+  The properties you use to configure a swipe transition filter.
+
 ## See Also
 
 - [Blur Filters](blur-filters.md)

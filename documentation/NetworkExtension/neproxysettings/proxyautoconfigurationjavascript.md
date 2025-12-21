@@ -21,7 +21,7 @@ var proxyAutoConfigurationJavaScript: String? { get set }
 
 #### Discussion
 
-If [`autoProxyConfigurationEnabled`](neproxysettings/autoproxyconfigurationenabled.md) is set to [`true`](https://developer.apple.com/documentation/swift/true) then the system will execute the PAC script to determine what proxies to use (if any) for HTTP and HTTPS connections.
+If [`autoProxyConfigurationEnabled`](neproxysettings/autoproxyconfigurationenabled.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true) then the system will execute the PAC script to determine what proxies to use (if any) for HTTP and HTTPS connections.
 
 ## See Also
 

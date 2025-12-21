@@ -14,7 +14,6 @@ Reads the document data in a file at a specified location in the application san
 ## Declaration
 
 ```swift
-@MainActor
 func read(from url: URL) throws
 ```
 

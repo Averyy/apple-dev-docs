@@ -21,8 +21,8 @@ For more information about using these effects in your app, see [`Drawing and gr
   Clips this view to its bounding rectangular frame.
 - [func clipShape<S>(S, style: FillStyle) -> some View](view/clipshape(_:style:).md)
   Sets a clipping shape for this view.
-- [func containerShape<T>(T) -> some View](view/containershape(_:).md)
-  Sets the container shape to use for any container relative shape within this view.
+- [func containerShape(_:)](view/containershape(_:).md)
+  Sets the container shape to use for any container relative shape or concentric rectangle within this view.
 ### Scale
 - [func scaledToFill() -> some View](view/scaledtofill.md)
   Scales this view to fill its parent.

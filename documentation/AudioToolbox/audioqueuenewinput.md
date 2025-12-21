@@ -29,7 +29,7 @@ A result code. See Result Codes.
 - `inCallbackProc`: A callback function to use with the recording audio queue. The audio queue calls this function when the audio queue has finished filling a buffer. See  .
 - `inUserData`: A custom data structure for use with the callback function.
 - `inCallbackRunLoop`: The event loop on which the callback function pointed to by the    parameter is to be called. If you specify  , the callback is called on one of the audio queue’s internal threads.
-- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the   parameter. Typically, you pass   or use  , which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and  doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht .
+- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the   parameter. Typically, you pass   or use  , which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and  .
 - `inFlags`: Reserved for future use. Must be  .
 - `outAQ`: On output, the newly created recording audio queue.
 

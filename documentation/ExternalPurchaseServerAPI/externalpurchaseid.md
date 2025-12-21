@@ -16,7 +16,7 @@ string externalPurchaseId
 
 ## Mentions
 
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
+- [Reporting unrecognized and transactionless tokens](reportwithouttransactions.md)
 
 #### Discussion
 
@@ -27,7 +27,7 @@ Decode an external purchase token to get its [`externalPurchaseId`](externalpurc
 - [type requestIdentifier](requestidentifier.md)
   A UUID that uniquely identifies an external purchase report.
 - [type status](status.md)
-  A string value that represents the status of the token and the contents of the external purchase report.
+  A string value you provide to indicate the status of the token and the contents of the external purchase report.
 
 
 ---

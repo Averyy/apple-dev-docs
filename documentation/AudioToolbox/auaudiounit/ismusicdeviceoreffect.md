@@ -21,7 +21,7 @@ var isMusicDeviceOrEffect: Bool { get }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the audio unit is a music device or effect.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the audio unit is a music device or effect.
 
 ## See Also
 

@@ -6,11 +6,11 @@
 Creates a prompt.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,11 +24,6 @@ init(id: String = UUID().uuidString, segments: [Transcript.Segment], options: Ge
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 - `responseFormat`: A response format that describes the output structure.
-
-## See Also
-
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

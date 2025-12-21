@@ -31,10 +31,6 @@ struct PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator> where Pre
 - [var preprocessor: Preprocessor](preprocessingupdatabletabularestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatabletabularestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatabletabularestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func encodeWithOptimizer(PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatabletabularestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatabletabularestimator/decodewithoptimizer(from:).md)
@@ -58,11 +54,8 @@ struct PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator> where Pre
   The intermediate type.
 - [PreprocessingUpdatableTabularEstimator.Output](preprocessingupdatabletabularestimator/output.md)
   The output type.
-- [PreprocessingUpdatableTabularEstimator.Transformer](preprocessingupdatabletabularestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [TabularEstimator Implementations](preprocessingupdatabletabularestimator/tabularestimator-implementations.md)
-- [UpdatableTabularEstimator Implementations](preprocessingupdatabletabularestimator/updatabletabularestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

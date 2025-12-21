@@ -56,13 +56,7 @@ Examples:
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](filepath/root-swift.struct/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](filepath/root-swift.struct/customstringconvertible-implementations.md)
-- [Decodable Implementations](filepath/root-swift.struct/decodable-implementations.md)
-- [Encodable Implementations](filepath/root-swift.struct/encodable-implementations.md)
-- [Equatable Implementations](filepath/root-swift.struct/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](filepath/root-swift.struct/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](filepath/root-swift.struct/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](filepath/root-swift.struct/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](filepath/root-swift.struct/hashable-implementations.md)
 
 ## Relationships
 

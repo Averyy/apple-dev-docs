@@ -53,7 +53,7 @@ A pointer interaction needs a visual effect to describe how it will render the s
 
 ##### Create a Shape for a Pointer Interaction
 
-The Sample creates either region or shape, defined for each of its shape views, so a pointer interaction detects where to interact. The sample also implements [`pointerInteraction(_:regionFor:defaultRegion:)`](uipointerinteractiondelegate/pointerinteraction(_:regionfor:defaultregion:).md) as the [`UIPointerInteractionDelegate`](uipointerinteractiondelegate.md). This delegate is called by UIKit as the pointer moves within the pointer interaction’s view. Returning a [`UIPointerRegion`](uipointerregion.md) in which to apply a pointer style or returning `nil` indicates that this interaction does not customize the pointer for the current location.
+The sample creates either a region or shape, defined for each of its shape views, so a pointer interaction detects where to interact. The sample also implements [`pointerInteraction(_:regionFor:defaultRegion:)`](uipointerinteractiondelegate/pointerinteraction(_:regionfor:defaultregion:).md) as the [`UIPointerInteractionDelegate`](uipointerinteractiondelegate.md). This delegate is called by UIKit as the pointer moves within the pointer interaction’s view. Returning a [`UIPointerRegion`](uipointerregion.md) in which to apply a pointer style or returning `nil` indicates that this interaction does not customize the pointer for the current location.
 
 ```swift
 func pointerInteraction(_ interaction: UIPointerInteraction,
@@ -66,7 +66,7 @@ func pointerInteraction(_ interaction: UIPointerInteraction,
  
         // Check for modifiers keys pressed while inside the view path.
         if request.modifiers.contains(.command) && request.modifiers.contains(.alternate) {
-            // Command + Option was both pressed, dim the view.
+            // Command + Option were both pressed, dim the view.
             view.alpha = 0.50
         } else {
             if view.alpha != 1.0 { view.alpha = 1.0 }
@@ -97,7 +97,7 @@ To make the shape views more interactive and provide custom behaviors driven by 
 
 A [`UIPanGestureRecognizer`](uipangesturerecognizer.md) moves a shape view and the frame color changes to orange when the command key is pressed during the pan gesture.
 
-A [`UIPinchGestureRecognizer`](uipinchgesturerecognizer.md) changes the shape’s size with two-finger pinch gesture.
+A [`UIPinchGestureRecognizer`](uipinchgesturerecognizer.md) changes the shape’s size with a two-finger pinch gesture.
 
 A [`UITapGestureRecognizer`](uitapgesturerecognizer.md) brings the tapped shape view to the front.
 
@@ -132,7 +132,7 @@ func hoverShape(_ gestureRecognizer: UIHoverGestureRecognizer) {
 
 ##### Create a Gesture Recognizer for Continuous Scrolling
 
-The [`UIPanGestureRecognizer`](uipangesturerecognizer.md) recognizes continuous scrolling that originates from devices like the trackpad. The sample adds a pan gesture recognizer to a custom [`UIControl`](uicontrol.md) subclass `AlphaControl`, that recognizes two-finger scroll gesture to change the alpha value of a given color. With [`allowedScrollTypesMask`](uipangesturerecognizer/allowedscrolltypesmask.md) set to [`continuous`](uiscrolltypemask/continuous.md), apps recognize continuous scrolling. The control’s color swatch changes as the user performs a pan scroll gesture, or through a direct touch.
+The [`UIPanGestureRecognizer`](uipangesturerecognizer.md) recognizes continuous scrolling that originates from devices like the trackpad. The sample adds a pan gesture recognizer to a custom [`UIControl`](uicontrol.md) subclass `AlphaControl` that recognizes a two-finger scroll gesture to change the alpha value of a given color. With [`allowedScrollTypesMask`](uipangesturerecognizer/allowedscrolltypesmask.md) set to [`continuous`](uiscrolltypemask/continuous.md), apps recognize continuous scrolling. The control’s color swatch changes as the user performs a pan scroll gesture, or through a direct touch.
 
 ## See Also
 

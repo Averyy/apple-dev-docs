@@ -4,13 +4,13 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 16.1+
+- iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 13.0+
-- tvOS 16.0+
+- tvOS 16.1+
 - visionOS 1.0+
-- watchOS 9.0+
+- watchOS 9.1+
 
 ## Declaration
 
@@ -21,36 +21,34 @@ enum Code
 ## Topics
 
 ### Enumeration Cases
-- [MTRInteractionError.Code.dynamicConstraintError](mtrinteractionerror/code/dynamicconstrainterror.md)
-- [MTRInteractionError.Code.interactionErrorCodeAccessRestricted](mtrinteractionerror/code/interactionerrorcodeaccessrestricted.md)
-- [MTRInteractionError.Code.interactionErrorCodeBusy](mtrinteractionerror/code/interactionerrorcodebusy.md)
-- [MTRInteractionError.Code.interactionErrorCodeConstraintError](mtrinteractionerror/code/interactionerrorcodeconstrainterror.md)
-- [MTRInteractionError.Code.interactionErrorCodeDataVersionMismatch](mtrinteractionerror/code/interactionerrorcodedataversionmismatch.md)
-- [MTRInteractionError.Code.interactionErrorCodeFailsafeRequired](mtrinteractionerror/code/interactionerrorcodefailsaferequired.md)
-- [MTRInteractionError.Code.interactionErrorCodeFailure](mtrinteractionerror/code/interactionerrorcodefailure.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidAction](mtrinteractionerror/code/interactionerrorcodeinvalidaction.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidCommand](mtrinteractionerror/code/interactionerrorcodeinvalidcommand.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidDataType](mtrinteractionerror/code/interactionerrorcodeinvaliddatatype.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidInState](mtrinteractionerror/code/interactionerrorcodeinvalidinstate.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidSubscription](mtrinteractionerror/code/interactionerrorcodeinvalidsubscription.md)
-- [MTRInteractionError.Code.interactionErrorCodeInvalidTransportType](mtrinteractionerror/code/interactionerrorcodeinvalidtransporttype.md)
-- [MTRInteractionError.Code.interactionErrorCodeNeedsTimedInteraction](mtrinteractionerror/code/interactionerrorcodeneedstimedinteraction.md)
-- [MTRInteractionError.Code.interactionErrorCodeNoCommandResponse](mtrinteractionerror/code/interactionerrorcodenocommandresponse.md)
-- [MTRInteractionError.Code.interactionErrorCodeNoUpstreamSubscription](mtrinteractionerror/code/interactionerrorcodenoupstreamsubscription.md)
-- [MTRInteractionError.Code.interactionErrorCodeNotFound](mtrinteractionerror/code/interactionerrorcodenotfound.md)
-- [MTRInteractionError.Code.interactionErrorCodePathsExhausted](mtrinteractionerror/code/interactionerrorcodepathsexhausted.md)
-- [MTRInteractionError.Code.interactionErrorCodeResourceExhausted](mtrinteractionerror/code/interactionerrorcoderesourceexhausted.md)
-- [MTRInteractionError.Code.interactionErrorCodeTimedRequestMismatch](mtrinteractionerror/code/interactionerrorcodetimedrequestmismatch.md)
-- [MTRInteractionError.Code.interactionErrorCodeTimeout](mtrinteractionerror/code/interactionerrorcodetimeout.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnreportableAttribute](mtrinteractionerror/code/interactionerrorcodeunreportableattribute.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedAccess](mtrinteractionerror/code/interactionerrorcodeunsupportedaccess.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedAttribute](mtrinteractionerror/code/interactionerrorcodeunsupportedattribute.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedCluster](mtrinteractionerror/code/interactionerrorcodeunsupportedcluster.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedCommand](mtrinteractionerror/code/interactionerrorcodeunsupportedcommand.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedEndpoint](mtrinteractionerror/code/interactionerrorcodeunsupportedendpoint.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedEvent](mtrinteractionerror/code/interactionerrorcodeunsupportedevent.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedRead](mtrinteractionerror/code/interactionerrorcodeunsupportedread.md)
-- [MTRInteractionError.Code.interactionErrorCodeUnsupportedWrite](mtrinteractionerror/code/interactionerrorcodeunsupportedwrite.md)
+- [MTRInteractionError.Code.busy](mtrinteractionerror/code/busy.md)
+- [MTRInteractionError.Code.constraintError](mtrinteractionerror/code/constrainterror.md)
+- [MTRInteractionError.Code.dataVersionMismatch](mtrinteractionerror/code/dataversionmismatch.md)
+- [MTRInteractionError.Code.failsafeRequired](mtrinteractionerror/code/failsaferequired.md)
+- [MTRInteractionError.Code.failure](mtrinteractionerror/code/failure.md)
+- [MTRInteractionError.Code.invalidAction](mtrinteractionerror/code/invalidaction.md)
+- [MTRInteractionError.Code.invalidCommand](mtrinteractionerror/code/invalidcommand.md)
+- [MTRInteractionError.Code.invalidDataType](mtrinteractionerror/code/invaliddatatype.md)
+- [MTRInteractionError.Code.invalidInState](mtrinteractionerror/code/invalidinstate.md)
+- [MTRInteractionError.Code.invalidSubscription](mtrinteractionerror/code/invalidsubscription.md)
+- [MTRInteractionError.Code.needsTimedInteraction](mtrinteractionerror/code/needstimedinteraction.md)
+- [MTRInteractionError.Code.noCommandResponse](mtrinteractionerror/code/nocommandresponse.md)
+- [MTRInteractionError.Code.noUpstreamSubscription](mtrinteractionerror/code/noupstreamsubscription.md)
+- [MTRInteractionError.Code.notFound](mtrinteractionerror/code/notfound.md)
+- [MTRInteractionError.Code.pathsExhausted](mtrinteractionerror/code/pathsexhausted.md)
+- [MTRInteractionError.Code.resourceExhausted](mtrinteractionerror/code/resourceexhausted.md)
+- [MTRInteractionError.Code.timedRequestMismatch](mtrinteractionerror/code/timedrequestmismatch.md)
+- [MTRInteractionError.Code.timeout](mtrinteractionerror/code/timeout.md)
+- [MTRInteractionError.Code.unreportableAttribute](mtrinteractionerror/code/unreportableattribute.md)
+- [MTRInteractionError.Code.unsupportedAccess](mtrinteractionerror/code/unsupportedaccess.md)
+- [MTRInteractionError.Code.unsupportedAttribute](mtrinteractionerror/code/unsupportedattribute.md)
+- [MTRInteractionError.Code.unsupportedCluster](mtrinteractionerror/code/unsupportedcluster.md)
+- [MTRInteractionError.Code.unsupportedCommand](mtrinteractionerror/code/unsupportedcommand.md)
+- [MTRInteractionError.Code.unsupportedEndpoint](mtrinteractionerror/code/unsupportedendpoint.md)
+- [MTRInteractionError.Code.unsupportedEvent](mtrinteractionerror/code/unsupportedevent.md)
+- [MTRInteractionError.Code.unsupportedRead](mtrinteractionerror/code/unsupportedread.md)
+- [MTRInteractionError.Code.unsupportedWrite](mtrinteractionerror/code/unsupportedwrite.md)
+- [MTRInteractionError.Code.accessRestricted](mtrinteractionerror/code/accessrestricted.md)
 ### Initializers
 - [init?(rawValue: Int)](mtrinteractionerror/code/init(rawvalue:).md)
 

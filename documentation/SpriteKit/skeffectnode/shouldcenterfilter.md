@@ -22,7 +22,7 @@ var shouldCenterFilter: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the filter has an `inputCenter` parameter, the effect node automatically sets the filter’s input center to the effect node’s origin. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the filter has an `inputCenter` parameter, the effect node automatically sets the filter’s input center to the effect node’s origin. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

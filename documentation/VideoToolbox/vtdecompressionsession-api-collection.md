@@ -11,7 +11,7 @@ A decompression session supports the decompression of a sequence of video frames
 1. Create a decompression session by calling [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](vtdecompressionsessioncreate(allocator:formatdescription:decoderspecification:imagebufferattributes:outputcallback:decompressionsessionout:).md).
 2. Optionally, configure the session with your desired [`Decompression Properties`](decompression-properties.md) by calling [`VTSessionSetProperty(_:key:value:)`](vtsessionsetproperty(_:key:value:).md) or [`VTSessionSetProperties(_:propertyDictionary:)`](vtsessionsetproperties(_:propertydictionary:).md).
 3. Decode video frames using [`VTDecompressionSessionDecodeFrame(_:sampleBuffer:flags:frameRefcon:infoFlagsOut:)`](vtdecompressionsessiondecodeframe(_:samplebuffer:flags:framerefcon:infoflagsout:).md).
-4. When you finish with the decompression session, call [`VTDecompressionSessionInvalidate(_:)`](vtdecompressionsessioninvalidate(_:).md) to tear it down, and call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free its memory.
+4. When you finish with the decompression session, call [`VTDecompressionSessionInvalidate(_:)`](vtdecompressionsessioninvalidate(_:).md) to tear it down, and call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free its memory.
 
 ## Topics
 

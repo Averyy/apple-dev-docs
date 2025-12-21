@@ -27,6 +27,8 @@ The value of this property is `nil` when the window doesn’t have a sheet attac
   Starts a document-modal session and presents—or queues for presentation—a sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
+- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)

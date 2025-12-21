@@ -23,7 +23,7 @@ var contrastAmount: Float { get set }
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no contrast, and a value of `1` indicates maximum contrast.
 
-> **Note**:  A value of [`false`](https://developer.apple.com/documentation/swift/false) for [`isContrastSupported`](cirawfilter/iscontrastsupported.md) indicates that the current image doesn’t support this adjustment.
+> **Note**:  A value of [`false`](https://developer.apple.com/documentation/Swift/false) for [`isContrastSupported`](cirawfilter/iscontrastsupported.md) indicates that the current image doesn’t support this adjustment.
 
 ## See Also
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The earliest date that can be denoted by a two-digit year specifier.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

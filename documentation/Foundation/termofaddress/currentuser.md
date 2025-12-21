@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The term of address that should be used for addressing the user
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static let currentUser: TermOfAddress
 ```
+
+#### Discussion
+
+This term of address will only compare equal to another `currentUser`
 
 
 ---

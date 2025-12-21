@@ -32,8 +32,8 @@ The fitted transformer.
 
 - [func fitted<InputSequence, Validation, FeatureSequence>(to: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws -> TemporalEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](temporalestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [TemporalEstimatorToSupervisedAdaptor.Transformer](temporalestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

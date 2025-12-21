@@ -17,7 +17,7 @@ func registerLanguage(_ language: String?, byVendor vendor: String?) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the language is registered, [`false`](https://developer.apple.com/documentation/swift/false) if for some reason it can’t be registered.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the language is registered, [`false`](https://developer.apple.com/documentation/Swift/false) if for some reason it can’t be registered.
 
 #### Discussion
 

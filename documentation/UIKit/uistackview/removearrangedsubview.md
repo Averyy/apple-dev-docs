@@ -23,7 +23,7 @@ func removeArrangedSubview(_ view: UIView)
 
 This method removes the provided view from the stack’s [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. The stack view no longer manages the view’s position and size. However, this method doesn’t remove the provided view from the stack’s [`subviews`](uiview/subviews.md) array; therefore, the view is still displayed as part of the view hierarchy.
 
-To prevent the view from appearing on screen after calling the stack’s [`removeArrangedSubview(_:)`](uistackview/removearrangedsubview(_:).md) method, explicitly remove the view from the subviews array by calling the view’s [`removeFromSuperview()`](uiview/removefromsuperview().md) method, or set the view’s [`isHidden`](uiview/ishidden.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+To prevent the view from appearing on screen after calling the stack’s [`removeArrangedSubview(_:)`](uistackview/removearrangedsubview(_:).md) method, explicitly remove the view from the subviews array by calling the view’s [`removeFromSuperview()`](uiview/removefromsuperview().md) method, or set the view’s [`isHidden`](uiview/ishidden.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

@@ -6,7 +6,7 @@
 An anchor that can gain and lose its tracking state over the course of a session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -49,6 +49,8 @@ protocol TrackableAnchor : Anchor
   The possible states of a data provider.
 - [protocol Anchor](anchor.md)
   The identity, location, and orientation of an object in world space.
+- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+  An object which represents an ARKit coordinate space.
 
 
 ---

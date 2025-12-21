@@ -6,7 +6,7 @@
 An efficient set of input device kinds.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

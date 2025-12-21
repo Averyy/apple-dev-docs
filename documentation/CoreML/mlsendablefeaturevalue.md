@@ -26,36 +26,12 @@ This version of feature value is similar to [`MLFeatureValue`](mlfeaturevalue.md
 
 ## Topics
 
-### Initializers
-- [init([String : Int])](mlsendablefeaturevalue/init(_:)-1rhc9.md)
-  Creates a feature value containing a dictionary of strings to integers.
-- [init(String)](mlsendablefeaturevalue/init(_:)-1vy3o.md)
-  Creates a feature value containing a string value.
-- [init([String : Double])](mlsendablefeaturevalue/init(_:)-28hj2.md)
-  Creates a feature value containing a dictionary of strings to doubles.
-- [init(Int)](mlsendablefeaturevalue/init(_:)-2luvn.md)
-  Creates a feature value containing an integer.
-- [init(Double)](mlsendablefeaturevalue/init(_:)-2na46.md)
+### Creating a sendable feature value
+- [init(_:)](mlsendablefeaturevalue/init(_:).md)
   Creates a feature value containing a double-precision floating-point value.
-- [init(Float)](mlsendablefeaturevalue/init(_:)-41vmh.md)
-  Creates a feature value containing a single-precision floating-point value.
-- [init?(MLFeatureValue)](mlsendablefeaturevalue/init(_:)-5l8d8.md)
-  Creates a sendable feature value from a feature value.
-- [init<Scalar>(MLShapedArray<Scalar>)](mlsendablefeaturevalue/init(_:)-5xnf3.md)
-  Creates a feature value containing a shaped array.
-- [init([String])](mlsendablefeaturevalue/init(_:)-6m5iu.md)
-  Creates a feature value containing an array of string values.
-- [init(Int32)](mlsendablefeaturevalue/init(_:)-83wb9.md)
-  Creates a feature value containing an integer.
-- [init([Int : Double])](mlsendablefeaturevalue/init(_:)-99w6f.md)
-  Creates a feature value containing a dictionary of integers to doubles.
-- [init([Int : Int])](mlsendablefeaturevalue/init(_:)-9bylj.md)
-  Creates a feature value containing a dictionary of integers to integers.
-- [init(Float16)](mlsendablefeaturevalue/init(_:)-iaa4.md)
-  Creates a feature value containing a 16-bit floating-point value.
 - [init(undefined: MLFeatureType)](mlsendablefeaturevalue/init(undefined:).md)
   Creates an undefined feature value of a specific type.
-### Instance Properties
+### Accessing the values
 - [var doubleValue: Double?](mlsendablefeaturevalue/doublevalue.md)
   The double-precision floating-point value, if the contained value is a double.
 - [var float16Value: Float16?](mlsendablefeaturevalue/float16value.md)
@@ -80,7 +56,7 @@ This version of feature value is similar to [`MLFeatureValue`](mlfeaturevalue.md
   The string value, if the contained value is a string.
 - [var type: MLFeatureType](mlsendablefeaturevalue/type.md)
   The type of value.
-### Instance Methods
+### Getting the shaped array value
 - [func shapedArrayValue<Scalar>(of: Scalar.Type) -> MLShapedArray<Scalar>?](mlsendablefeaturevalue/shapedarrayvalue(of:).md)
   Returns the shaped array value, if the contained value is a shaped array of the specified type.
 

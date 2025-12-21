@@ -23,7 +23,7 @@ static let AVAssetWasDefragmented: NSNotification.Name
 
 The system posts this notification only for changes that occur after an asset’s [`canContainFragments`](https://developer.apple.com/documentation/AVFoundation/AVAsset/canContainFragments) property reaches a [`AVKeyValueStatus.loaded`](https://developer.apple.com/documentation/AVFoundation/AVKeyValueStatus/loaded) status.
 
-After the system posts this notification, the value of the asset’s [`canContainFragments`](https://developer.apple.com/documentation/AVFoundation/AVAsset/canContainFragments) and [`containsFragments`](https://developer.apple.com/documentation/AVFoundation/AVAsset/containsFragments) properties is [`false`](https://developer.apple.com/documentation/swift/false).
+After the system posts this notification, the value of the asset’s [`canContainFragments`](https://developer.apple.com/documentation/AVFoundation/AVAsset/canContainFragments) and [`containsFragments`](https://developer.apple.com/documentation/AVFoundation/AVAsset/containsFragments) properties is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

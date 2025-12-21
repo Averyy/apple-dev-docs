@@ -3,13 +3,13 @@
 **Framework**: EnergyKit  
 **Kind**: struct
 
-A structure that represents displayable environmental impact information for electricity usage.
+A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,15 +19,20 @@ struct ElectricityInsightRecord<Measure> where Measure : ElectricityInsightMeasu
 
 #### Overview
 
-The displayable information available for a given time period.
+This structure provides electricity usage data categorized by environmental impact ([`ElectricityInsightRecord.GridCleanliness`](electricityinsightrecord/gridcleanliness.md)) and cost factors ([`ElectricityInsightRecord.TariffPeak`](electricityinsightrecord/tariffpeak.md)) for analysis and optimization.
+
+The electricity usage data ([`dataByGridCleanliness`](electricityinsightrecord/databygridcleanliness.md)) refers to either energy consumption or generation measurements, or amounts of time that an electrical device is operational and consuming energy. The type of electricity usage data depends on the generic type parameter ([`ElectricityInsightMeasure`](electricityinsightmeasure.md)) for a given instance, which can be either:
+
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)>>
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/Swift/Duration)>
 
 ## Topics
 
 ### Getting the grid data
 - [ElectricityInsightRecord.GridCleanliness](electricityinsightrecord/gridcleanliness.md)
-  A struct that describes the cleanliness of the grid’s energy or duration data.
+  A structure that describes the environmental impact of grid electricity during specific time periods.
 - [var dataByGridCleanliness: ElectricityInsightRecord<Measure>.GridCleanliness?](electricityinsightrecord/databygridcleanliness.md)
-  The electrical energy consumed or generated, or the runtime duration broken down by levels of cleanliness.
+  Energy consumption or production, or device operational runtime categorized by the cleanliness of the grid electricity.
 ### Getting the tariff peak data
 - [ElectricityInsightRecord.TariffPeak](electricityinsightrecord/tariffpeak.md)
   A struct describing energy tariff peaks or duration data, if available.
@@ -35,11 +40,11 @@ The displayable information available for a given time period.
   The electrical energy consumed or generated, or the runtime duration split out by tariff peaks, if available.
 ### Getting the insight record data
 - [var totalRuntime: Duration?](electricityinsightrecord/totalruntime.md)
-  Represents the total runtime for the device in the date range.
+  The total time that electricity-consuming devices actively ran.
 - [let range: DateInterval](electricityinsightrecord/range.md)
-  The date interval for which the system generates the insight.
+  The time period that the insight record spans.
 - [var totalEnergy: Measurement<UnitEnergy>?](electricityinsightrecord/totalenergy.md)
-  The total energy either consumed or generated in the date range.
+  The total electrical energy consumed or generated.
 
 ## See Also
 
@@ -48,7 +53,7 @@ The displayable information available for a given time period.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
-  A measurement of electricity consumption.
+  A protocol for types that can measure electricity usage data.
 
 
 ---

@@ -1,9 +1,9 @@
-# init()
+# init(_:)
 
 **Framework**: Create ML Components  
 **Kind**: init
 
-Creates empty classification metrics.
+Creates classification metrics for a sequence of predicted and ground truth label pairs.
 
 **Availability**:
 - iOS 17.0+
@@ -17,17 +17,19 @@ Creates empty classification metrics.
 ## Declaration
 
 ```swift
-init()
+init(_ pairs: some Sequence<(predicted: Label, label: Label)>)
 ```
+
+## Parameters
+
+- `pairs`: A sequence of predicted and true label pairs.
 
 ## See Also
 
 - [init<Predicted, Correct>(Predicted, Correct)](classificationmetrics/init(_:_:).md)
   Creates classification metrics for predicted and ground truth labels.
-- [init(some Sequence<(predicted: Label, label: Label)>)](classificationmetrics/init(_:)-5afx5.md)
-  Creates classification metrics for a sequence of predicted and ground truth label pairs.
-- [init<S, Inner>(S) async throws](classificationmetrics/init(_:)-7nms4.md)
-  Creates classification metrics from a temporal sequence of annotated classifications.
+- [init()](classificationmetrics/init.md)
+  Creates empty classification metrics.
 - [init(some Sequence<(predicted: Label, label: Label)>, labels: Set<Label>)](classificationmetrics/init(_:labels:).md)
   Creates classification metrics for a sequence of predicted and ground truth label pairs.
 - [init<Predicted, Correct>(predicted: Predicted, groundTruth: Correct, labels: Set<Label>)](classificationmetrics/init(predicted:groundtruth:labels:).md)
@@ -36,4 +38,4 @@ init()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/classificationmetrics/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/classificationmetrics/init(_:))*

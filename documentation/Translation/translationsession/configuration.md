@@ -8,7 +8,7 @@ A type containing the information to use when performing a translation.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration
@@ -61,9 +61,6 @@ struct TranslationExample: View {
 
 ## Topics
 
-### Operators
-- [static func == (TranslationSession.Configuration, TranslationSession.Configuration) -> Bool](translationsession/configuration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(source: Locale.Language?, target: Locale.Language?)](translationsession/configuration/init(source:target:).md)
   Creates a configuration from a source and target language.
@@ -77,8 +74,6 @@ struct TranslationExample: View {
 ### Instance Methods
 - [func invalidate()](translationsession/configuration/invalidate.md)
   Invalidate the current translation session and re-run it with new content.
-### Default Implementations
-- [Equatable Implementations](translationsession/configuration/equatable-implementations.md)
 
 ## Relationships
 

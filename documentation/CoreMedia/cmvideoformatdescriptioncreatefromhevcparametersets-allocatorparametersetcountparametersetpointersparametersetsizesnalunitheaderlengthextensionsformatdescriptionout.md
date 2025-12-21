@@ -40,7 +40,7 @@ The supported NAL unit types to include in the format description are:
 - `parameterSetPointers`: Points to a C array containing   pointers to parameter sets.
 - `parameterSetSizes`: Points to a C array containing the size, in bytes, of each of the parameter sets.
 - `NALUnitHeaderLength`: The size, in bytes, of the   field in an AVC video sample or an AVC parameter set sample. Pass  ,  , or  .
-- `extensions`: An optional dictionary of extension key-value pairs. Keys are   and values are property list objects, such as  ,  ,  ,  doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh ,  ,  , and  .
+- `extensions`: An optional dictionary of extension key-value pairs. Keys are   and values are property list objects, such as  ,  ,  ,  ,  ,  , and  .
 - `formatDescriptionOut`: The newly created video format description.
 
 ## See Also

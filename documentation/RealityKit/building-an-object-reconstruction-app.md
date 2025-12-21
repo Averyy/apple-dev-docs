@@ -20,9 +20,9 @@ Reconstruct objects from user-selected input images by using photogrammetry.
   Construct virtual objects to use in your AR experiences.
 - [Scanning objects using Object Capture](scanning-objects-using-object-capture.md)
   Implement a full scanning workflow for capturing objects on iOS devices.
-- [Creating a Photogrammetry Command-Line App](creating_a_photogrammetry_command-line_app.md)
+- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using_object_capture_assets_in_realitykit.md)
+- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
 - [class PhotogrammetrySession](photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.

@@ -5,11 +5,6 @@
 
 Returns a dictionary of dictionaries of metadata for the representation.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

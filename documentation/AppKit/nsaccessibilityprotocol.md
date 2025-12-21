@@ -39,7 +39,7 @@ If you override a getter method, the system lets assistive apps call your getter
 
 If you override a setter method, the system lets assistive apps both read and modify that property.
 
-You can control which accessor methods the assistive app can use by overriding [`isAccessibilitySelectorAllowed(_:)`](nsaccessibilityprotocol/isaccessibilityselectorallowed(_:).md). Return [`true`](https://developer.apple.com/documentation/swift/true) if the assistive app can call the selector; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false).
+You can control which accessor methods the assistive app can use by overriding [`isAccessibilitySelectorAllowed(_:)`](nsaccessibilityprotocol/isaccessibilityselectorallowed(_:).md). Return [`true`](https://developer.apple.com/documentation/Swift/true) if the assistive app can call the selector; otherwise, return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Topics
 

@@ -6,7 +6,7 @@ Draw SceneKit content in a SpriteKit scene by using a 3D node.
 
 #### Overview
 
-SceneKit content rendered in SpriteKit is automatically assigned a camera and, because [`autoenablesDefaultLighting`](sk3dnode/autoenablesdefaultlighting.md) defaults to [`true`](https://developer.apple.com/documentation/swift/true), lights. That means you require very little code to add simple 3D primitives to your scene. The following code shows how to create a simple scene containing a torus and display it in a SpriteKit scene.
+SceneKit content rendered in SpriteKit is automatically assigned a camera and, because [`autoenablesDefaultLighting`](sk3dnode/autoenablesdefaultlighting.md) defaults to [`true`](https://developer.apple.com/documentation/Swift/true), lights. That means you require very little code to add simple 3D primitives to your scene. The following code shows how to create a simple scene containing a torus and display it in a SpriteKit scene.
 
 ```swift
 let scnScene: SCNScene = {

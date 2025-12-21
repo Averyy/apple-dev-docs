@@ -17,7 +17,7 @@ optional func control(_ control: NSControl, textView: NSTextView, doCommandBy co
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate object handles the key binding; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the delegate object handles the key binding; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

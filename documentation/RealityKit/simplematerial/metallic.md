@@ -10,7 +10,7 @@ A value that you set to control whether the material has a metallic look.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -29,10 +29,10 @@ This property defines whether a material is dielectric (`0.0`) or a metallic (`1
   The material’s color.
 - [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
   The base color of the material.
-- [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
-  A tint color applied to the base color in macOS.
-- [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)
-  A tint color applied to the base color in macOS.
+- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [SimpleMaterial.Texture](simplematerial/texture.md)
+  The type used to represent textures.
 - [var roughness: MaterialScalarParameter](simplematerial/roughness.md)
   The roughness of the material.
 

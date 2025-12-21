@@ -5,11 +5,6 @@
 
 Returns the representation’s dimensions.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

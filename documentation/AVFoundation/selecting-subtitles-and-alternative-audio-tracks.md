@@ -1,4 +1,4 @@
-# Selecting Subtitles and Alternative Audio Tracks
+# Selecting subtitles and alternative audio tracks
 
 **Framework**: AVFoundation
 
@@ -62,7 +62,7 @@ if let group = asset.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacte
 
 Selecting a media option makes it immediately available for presentation. Selecting a subtitle or closed-caption option displays the associated text within the video display provided by [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController), [`AVPlayerView`](https://developer.apple.com/documentation/AVKit/AVPlayerView), and [`AVPlayerLayer`](avplayerlayer.md). Selecting an alternative audio or video option replaces the currently presented media with the new selection’s media.
 
-[`AVPlayer`](avplayer.md) automatically selects media based on the user’s system preferences as its default behavior. To take control over when it makes media selections, disable the default behavior by setting the player’s [`appliesMediaSelectionCriteriaAutomatically`](avplayer/appliesmediaselectioncriteriaautomatically.md) value to [`false`](https://developer.apple.com/documentation/swift/false).
+[`AVPlayer`](avplayer.md) automatically selects media based on the user’s system preferences as its default behavior. To take control over when it makes media selections, disable the default behavior by setting the player’s [`appliesMediaSelectionCriteriaAutomatically`](avplayer/appliesmediaselectioncriteriaautomatically.md) value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 
@@ -76,6 +76,12 @@ Selecting a media option makes it immediately available for presentation. Select
   A mutable object that represents a complete rendition of media selection options on an asset.
 - [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 
 ---

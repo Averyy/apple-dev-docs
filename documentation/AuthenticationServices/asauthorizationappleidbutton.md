@@ -26,6 +26,8 @@ Choose one of the built-in button styles and types, and change the corner radius
 
 After the user taps the button, create a request using the provider, and then use an instance of [`ASAuthorizationController`](asauthorizationcontroller.md) to execute the request.
 
+For more information about which Sign in with Apple buttons are available on different Apple platforms, see [`Displaying Sign in with Apple buttons in your app`](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app).
+
 ## Topics
 
 ### Initializers

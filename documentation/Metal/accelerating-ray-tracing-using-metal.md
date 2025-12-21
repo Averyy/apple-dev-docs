@@ -26,7 +26,7 @@ This sample requires the following system and software configuration:
 
 - [Rendering reflections in real time using ray tracing](rendering-reflections-in-real-time-using-ray-tracing.md)
   Implement realistic real-time lighting by dynamically generating reflection maps by encoding a ray-tracing compute pass.
-- [Control the Ray Tracing Process Using Intersection Queries](control-the-ray-tracing-process-using-intersection-queries.md)
+- [Control the ray tracing process using intersection queries](control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
 - [Accelerating ray tracing and motion blur using Metal](accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.

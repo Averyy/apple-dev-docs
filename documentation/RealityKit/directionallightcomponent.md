@@ -10,7 +10,7 @@ A component that defines a directional light source.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -52,20 +52,14 @@ The directional light illuminates entities evenly in the direction it derives fr
 ### Creating a directional light
 - [init(color: DirectionalLightComponent.Color, intensity: Float)](directionallightcomponent/init(color:intensity:).md)
   Creates a directional light with a configuration.
-- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-d4x3.md)
-  Creates a directional light with a configuration.
-- [init(color: DirectionalLightComponent.Color, intensity: Float, isRealWorldProxy: Bool)](directionallightcomponent/init(color:intensity:isrealworldproxy:)-hbe.md)
-  Creates a directional light with a configuration.
-### Setting the color
-- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-3q6ln.md)
-  A color for the directional light.
-- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-2a2x9.md)
-  A color for the directional light.
 ### Setting intensity and shadows
 - [var intensity: Float](directionallightcomponent/intensity.md)
   The intensity of the directional light, measured in lumen per square meter.
 - [var isRealWorldProxy: Bool](directionallightcomponent/isrealworldproxy.md)
   A Boolean that you use to control whether the directional light operates as a proxy for a real-world light.
+### Supporting types
+- [DirectionalLightComponent.Color](directionallightcomponent/color-swift.typealias.md)
+  A platform-specific type used to define color for a directional light.
 ### Structures
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
   A directional light component that adds shadows to entities that it illuminates
@@ -73,13 +67,10 @@ The directional light illuminates entities evenly in the direction it derives fr
 - [init(color:intensity:isRealWorldProxy:)](directionallightcomponent/init(color:intensity:isrealworldproxy:).md)
   Creates a directional light with a configuration.
 ### Instance Properties
+- [var color: DirectionalLightComponent.Color](directionallightcomponent/color-5ebuh.md)
+  A color for the directional light.
 - [var color: DirectionalLightComponent.Color](directionallightcomponent/color-7hs4n.md)
   A color for the directional light.
-### Type Aliases
-- [DirectionalLightComponent.Color](directionallightcomponent/color-26h21.md)
-  A platform-specific type used to define color for a directional light.
-- [DirectionalLightComponent.Color](directionallightcomponent/color-3iw1j.md)
-  A platform-specific type used to define color for a directional light.
 
 ## Relationships
 
@@ -92,6 +83,8 @@ The directional light illuminates entities evenly in the direction it derives fr
 
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
   A directional light component that adds shadows to entities that it illuminates
+- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype.md)
+- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 
 
 ---

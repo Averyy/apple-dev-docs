@@ -36,8 +36,6 @@ struct TabularTransformerToEstimatorAdaptor<Transformer> where Transformer : Tab
 ### Fitting
 - [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Transformer](tabulartransformertoestimatoradaptor/fitted(to:eventhandler:).md)
   Returns the pre-defined tabular transformer.
-### Default Implementations
-- [TabularEstimator Implementations](tabulartransformertoestimatoradaptor/tabularestimator-implementations.md)
 
 ## Relationships
 

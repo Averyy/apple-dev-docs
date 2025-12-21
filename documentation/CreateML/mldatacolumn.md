@@ -28,10 +28,8 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 ## Topics
 
 ### Creating a data column
-- [init(repeating: Element, count: Int)](mldatacolumn/init(repeating:count:)-5rxbo.md)
+- [init(repeating:count:)](mldatacolumn/init(repeating:count:).md)
   Creates a new column with a repeating element.
-- [init(repeating: MLDataValue, count: Int)](mldatacolumn/init(repeating:count:)-4ljwl.md)
-  Constructs a new Column containing the specified number of a single, repeated MLDataValue.
 - [init<S>(S)](mldatacolumn/init(_:).md)
   Creates a new column from a given sequence of elements.
 - [init()](mldatacolumn/init.md)
@@ -39,6 +37,8 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 ### Creating a data column by converting another column
 - [func map<T>(to: T.Type) -> MLDataColumn<T>](mldatacolumn/map(to:).md)
   Creates a new column by converting this column to the given type.
+- [init(column:)](mldatacolumn/init(column:).md)
+  Creates a new column of machine learning sequences from a given column whose elements can be converted to sequences.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-5rg9u.md)
   Creates a new column of integers from a given column whose elements can be converted to integers.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-2rxtu.md)
@@ -60,7 +60,7 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
   The number of elements in the column.
 - [var isEmpty: Bool](mldatacolumn/isempty.md)
 ### Getting an element
-- [subscript(Int) -> Element](mldatacolumn/subscript(_:)-reid.md)
+- [subscript(_:)](mldatacolumn/subscript(_:).md)
   Accesses the element at the given row.
 - [func element(at: Int) -> Element?](mldatacolumn/element(at:).md)
   Accesses the element at the given index.
@@ -74,10 +74,8 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 - [func sort(byIncreasingOrder: Bool) -> MLDataColumn<Element>](mldatacolumn/sort(byincreasingorder:).md)
   Returns a new MLDataColumn containing values sorted by the specified order.
 ### Transforming elements to generate a column
-- [func map<T>((Element) -> T) -> MLDataColumn<T>](mldatacolumn/map(_:)-7kto3.md)
+- [func map(_:)](mldatacolumn/map(_:).md)
   Creates a new column by applying the given thread-safe transform to every non-missing element of this column.
-- [func map<T>((Element) -> T?) -> MLDataColumn<T>](mldatacolumn/map(_:)-72ypl.md)
-  Creates a new column, potentially with missing values, by applying the given thread-safe transform to every non-missing element of this column.
 - [func mapMissing<T>((Element?) -> T?) -> MLDataColumn<T>](mldatacolumn/mapmissing(_:).md)
   Creates a new column, potentially with missing elements, by applying the given thread-safe transform to every element of the column, including missing elements.
 ### Masking elements to generate a column
@@ -105,6 +103,15 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 ### Evaluating elements to generate a column
 - [func materialize() throws -> MLDataColumn<Element>](mldatacolumn/materialize.md)
   Creates a new column by immediately evaluating any lazily applied data processing operations stored in the column.
+### Combining columns
+- [static +(_:_:)](mldatacolumn/+(_:_:).md)
+  Creates a column of doubles by adding the given double to each element of the given column.
+- [static -(_:_:)](mldatacolumn/-(_:_:).md)
+  Creates a column of doubles by subtracting each element of the given column from the given double.
+- [static *(_:_:)](mldatacolumn/*(_:_:).md)
+  Creates a column of doubles by multiplying the given double by each element of the given column.
+- [static /(_:_:)](mldatacolumn/_(_:_:)-8hxiv.md)
+  Creates a column of doubles by dividing the given double by each element of the given column.
 ### Combining columns to generate a column
 - [static func + (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/+(_:_:)-24g38.md)
   Creates a column of integers by adding each element in the first column to the corresponding element in the second column.
@@ -156,6 +163,19 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
   Creates a column of integers by dividing the given integer by each element of the given column.
 - [static func / (Double, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/_(_:_:)-121w8.md)
   Creates a column of doubles by dividing the given double by each element of the given column.
+### Comparing columns
+- [static ==(_:_:)](mldatacolumn/==(_:_:).md)
+  Creates a column of Booleans by testing whether the given value is equal to each element in the given column.
+- [static !=(_:_:)](mldatacolumn/!=(_:_:).md)
+  Creates a column of Booleans by testing whether the given value is not equal to each element in the given column.
+- [static <(_:_:)](mldatacolumn/_(_:_:)-81qel.md)
+  Creates a column of Booleans by testing whether the given value is less than each element in the given column.
+- [static <=(_:_:)](mldatacolumn/_=(_:_:)-8eq6v.md)
+  Creates a column of Booleans by testing whether the given value is less than or equal to each element in the given column.
+- [static >(_:_:)](mldatacolumn/_(_:_:)-g252.md)
+  Creates a column of Booleans by testing whether the given value is greater than each element in the given column.
+- [static >=(_:_:)](mldatacolumn/_=(_:_:)-64izf.md)
+  Creates a column of Booleans by testing whether the given value is greater than or equal to each element in the given column.
 ### Comparing columns to generate a column of booleans
 - [static func == (MLDataColumn<Element>, MLDataColumn<Element>) -> MLDataColumn<Bool>](mldatacolumn/==(_:_:)-9e3tx.md)
   Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
@@ -201,31 +221,19 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 - [static func || (MLDataColumn<Bool>, MLDataColumn<Bool>) -> MLDataColumn<Bool>](mldatacolumn/__(_:_:).md)
   Creates a column of Booleans by performing a logical OR operation on each element in the first column with the corresponding element in the second column.
 ### Getting the min and max element values
-- [func min() -> Int?](mldatacolumn/min-6xxpx.md)
-  Returns the element with the lowest value in a column of integers.
-- [func min() -> Double?](mldatacolumn/min-947f9.md)
+- [func min()](mldatacolumn/min.md)
   Returns the element with the lowest value in a column of doubles.
-- [func max() -> Int?](mldatacolumn/max-5ty6r.md)
-  Returns the element with the highest value in a column of integers.
-- [func max() -> Double?](mldatacolumn/max-9ryp.md)
+- [func max()](mldatacolumn/max.md)
   Returns the element with the highest value in a column of doubles.
 ### Getting sum, mean, and standard deviation values
-- [func sum() -> Int?](mldatacolumn/sum-9t8h3.md)
-  Returns the sum of the elements in a column of integers.
-- [func sum() -> Double?](mldatacolumn/sum-7370q.md)
+- [func sum()](mldatacolumn/sum.md)
   Returns the sum of the elements in a column of doubles.
-- [func mean() -> Double?](mldatacolumn/mean-5q8pp.md)
-  Returns the arithmetic mean of the elements in a column of integers.
-- [func mean() -> Double?](mldatacolumn/mean-7pv86.md)
+- [func mean()](mldatacolumn/mean.md)
   Returns the arithmetic mean of the elements in a column of doubles.
-- [func std() -> Double?](mldatacolumn/std-69udj.md)
-  Returns the standard deviation of the elements in a column of integers.
-- [func std() -> Double?](mldatacolumn/std-1f7cr.md)
+- [func std()](mldatacolumn/std.md)
   Returns the standard deviation of the elements in a column of doubles.
-- [func stdev() -> Double?](mldatacolumn/stdev-4nvbb.md)
+- [func stdev()](mldatacolumn/stdev.md)
   Returns the standard deviation of the elements in a column of doubles.
-- [func stdev() -> Double?](mldatacolumn/stdev-6fy3a.md)
-  Standard deviation of the Elements in the MLDataColumn.
 ### Visualizing a column
 - [func show() -> any MLStreamingVisualizable](mldatacolumn/show.md)
   Provides a visualization for the data in the column.
@@ -241,10 +249,12 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
   A Boolean value that indicates whether the column is valid.
 - [var error: (any Error)?](mldatacolumn/error.md)
   The underlying error present when the column is invalid.
+### Supporting types
+- [struct MLUntypedColumn](mluntypedcolumn.md)
+  A column of untyped values in a data table.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mldatacolumn/customdebugstringconvertible-implementations.md)
 - [CustomPlaygroundDisplayConvertible Implementations](mldatacolumn/customplaygrounddisplayconvertible-implementations.md)
-- [CustomReflectable Implementations](mldatacolumn/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](mldatacolumn/customstringconvertible-implementations.md)
 
 ## Relationships
@@ -258,11 +268,7 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 
 ## See Also
 
-- [struct MLUntypedColumn](mluntypedcolumn.md)
-  A column of untyped values in a data table.
-- [func addColumn<Element>(MLDataColumn<Element>, named: String)](mldatatable/addcolumn(_:named:)-kkbw.md)
-  Adds a data column to the table.
-- [func addColumn(MLUntypedColumn, named: String)](mldatatable/addcolumn(_:named:)-9cb24.md)
+- [func addColumn(_:named:)](mldatatable/addcolumn(_:named:).md)
   Adds an untyped column to the table.
 - [struct MLUntypedColumn](mluntypedcolumn.md)
   A column of untyped values in a data table.

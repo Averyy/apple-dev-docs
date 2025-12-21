@@ -6,10 +6,10 @@
 The rendering options for drawing paper data models.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,9 +19,6 @@ struct RenderingOptions
 
 ## Topics
 
-### Operators
-- [static func == (RenderingOptions, RenderingOptions) -> Bool](renderingoptions/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(darkUserInterfaceStyle: Bool, layoutRightToLeft: Bool)](renderingoptions/init(darkuserinterfacestyle:layoutrighttoleft:).md)
   Creates a new rendering options value.
@@ -32,8 +29,6 @@ struct RenderingOptions
   Use a dark user interface style for rendering.
 - [var rightToLeftLayoutDirection: Bool](renderingoptions/righttoleftlayoutdirection.md)
   Use a right to left layout direction for rendering.
-### Default Implementations
-- [Equatable Implementations](renderingoptions/equatable-implementations.md)
 
 ## Relationships
 

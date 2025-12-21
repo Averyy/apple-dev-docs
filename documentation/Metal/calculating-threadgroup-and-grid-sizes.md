@@ -1,4 +1,4 @@
-# Calculating Threadgroup and Grid Sizes
+# Calculating threadgroup and grid sizes
 
 **Framework**: Metal
 
@@ -60,12 +60,12 @@ Encode the command that executes your custom threadgroup size by calling the enc
 
 ## See Also
 
-- [Creating Threads and Threadgroups](creating-threads-and-threadgroups.md)
+- [Creating threads and threadgroups](creating-threads-and-threadgroups.md)
   Learn how Metal organizes compute-processing workloads.
 - [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
-  Encodes a compute pass and other memory operations into a command buffer.
+  Encodes computation dispatches, resource copying commands, and acceleration structure building commands for a single pass into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
-  An interface for dispatching commands to encode in a compute pass.
+  Encodes computation dispatch commands for a single compute pass into a command buffer.
 
 
 ---

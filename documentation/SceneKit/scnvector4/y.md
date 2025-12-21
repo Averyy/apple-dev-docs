@@ -17,7 +17,7 @@ The second component in the vector.
 ## Declaration
 
 ```swift
-var y: Float
+var y: CGFloat
 ```
 
 ## See Also

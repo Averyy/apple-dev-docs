@@ -11,7 +11,7 @@ The amount of padding, in CSS pixels, to inset the map from the right edge.
 ## Declaration
 
 ```swift
-attribute number right;
+right: number;
 ```
 
 ## See Also

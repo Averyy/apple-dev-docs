@@ -3,7 +3,7 @@
 **Framework**: Wallet Passes  
 **Kind**: dictionary
 
-An object that contains information required to connect to a WiFi network.
+An object that contains information required to connect to a Wi-Fi network. Optionally, this object may contain keys required to perform authentication with captive portal.
 
 **Availability**:
 - iOS 12.0+

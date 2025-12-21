@@ -22,7 +22,7 @@ func supportsVertexAmplificationCount(_ count: Int) -> Bool
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ A vertex amplification factor of `1` has no effect because it effectively disabl
 
 > ❗ **Important**:  Passing a vertex amplification factor of `1` or less to this method triggers an API validation error.
 
-For more information about vertex amplification, see [`Improving Rendering Performance with Vertex Amplification`](improving-rendering-performance-with-vertex-amplification.md).
+For more information about vertex amplification, see [`Improving rendering performance with vertex amplification`](improving-rendering-performance-with-vertex-amplification.md).
 
 ## Parameters
 

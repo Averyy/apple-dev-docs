@@ -21,12 +21,12 @@ protocol MTLCommandEncoder : NSObjectProtocol
 
 ## Mentions
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
 
-Don’t implement this protocol yourself; instead you call methods on a [`MTLCommandBuffer`](mtlcommandbuffer.md) object to create command encoders. Command encoder objects are lightweight objects that you re-create every time you need to send commands to the GPU.
+Don’t implement this protocol yourself; instead you call methods on an [`MTLCommandBuffer`](mtlcommandbuffer.md) instance to create command encoders. Command encoder instances are lightweight instances that you re-create every time you need to send commands to the GPU.
 
 There are many different kinds of command encoders, each providing a different set of commands that can be encoded into the buffer. A command encoder implements the [`MTLCommandEncoder`](mtlcommandencoder.md) protocol and an additional protocol specific to the kind of encoder being created.
 
@@ -43,17 +43,17 @@ You can call the [`insertDebugSignpost(_:)`](mtlcommandencoder/insertdebugsignpo
 
 ## Topics
 
-### Ending Command Encoding
+### Ending command encoding
 - [func endEncoding()](mtlcommandencoder/endencoding.md)
   Declares that all command generation from the encoder is completed.
-### Annotating the Command Buffer with Debug Information
+### Annotating the command buffer with debug information
 - [func insertDebugSignpost(String)](mtlcommandencoder/insertdebugsignpost(_:).md)
   Inserts a debug string into the captured frame data.
 - [func pushDebugGroup(String)](mtlcommandencoder/pushdebuggroup(_:).md)
   Pushes a specific string onto a stack of debug group strings for the command encoder.
 - [func popDebugGroup()](mtlcommandencoder/popdebuggroup.md)
   Pops the latest string off of a stack of debug group strings for the command encoder.
-### Identifying the Command Encoder
+### Identifying the command encoder
 - [var device: any MTLDevice](mtlcommandencoder/device.md)
   The Metal device from which the command encoder was created.
 - [var label: String?](mtlcommandencoder/label.md)
@@ -76,7 +76,7 @@ You can call the [`insertDebugSignpost(_:)`](mtlcommandencoder/insertdebugsignpo
 
 ## See Also
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 - [protocol MTLCommandQueue](mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.

@@ -30,14 +30,6 @@ struct ImageReader
 ### Performing the transformation
 - [func applied(to: URL, eventHandler: EventHandler?) throws -> CIImage](imagereader/applied(to:eventhandler:).md)
   Reads an image URL as a `CIImage`.
-### Type Aliases
-- [ImageReader.Input](imagereader/input.md)
-  The input type.
-- [ImageReader.Output](imagereader/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](imagereader/customdebugstringconvertible-implementations.md)
-- [Transformer Implementations](imagereader/transformer-implementations.md)
 
 ## Relationships
 

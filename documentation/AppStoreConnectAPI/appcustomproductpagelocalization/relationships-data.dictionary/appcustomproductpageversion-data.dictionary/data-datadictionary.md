@@ -4,7 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 3.6+
 
 ## Declaration
 

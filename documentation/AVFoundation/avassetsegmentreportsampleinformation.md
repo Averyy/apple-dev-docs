@@ -21,7 +21,7 @@ class AVAssetSegmentReportSampleInformation
 
 ## Topics
 
-### Inspecting the Information
+### Inspecting the information
 - [var presentationTimeStamp: CMTime](avassetsegmentreportsampleinformation/presentationtimestamp.md)
   The presentation timestamp (PTS) of a sample.
 - [var offset: Int](avassetsegmentreportsampleinformation/offset.md)

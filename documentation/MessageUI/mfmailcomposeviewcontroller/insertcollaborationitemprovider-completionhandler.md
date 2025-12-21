@@ -18,6 +18,8 @@ func insertCollaborationItemProvider(_ itemProvider: NSItemProvider) async -> Bo
 
 #### Discussion
 
+Returns YES if the item provider was added to the composition successfully.
+
 If the return value is YES, the itemProvider was added to the composition.  The itemProvider must be non-nil.
 
 ## Parameters

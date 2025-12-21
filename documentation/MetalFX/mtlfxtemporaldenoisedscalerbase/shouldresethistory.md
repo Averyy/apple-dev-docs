@@ -7,12 +7,11 @@
 A Boolean property indicating whether to reset history.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -22,7 +21,7 @@ var shouldResetHistory: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to invalidate history, for example when there is a scene cut in your game.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to invalidate history, for example when there is a scene cut in your game.
 
 
 ---

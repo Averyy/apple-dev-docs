@@ -6,10 +6,10 @@
 A Boolean value that indicates whether the executable opts in to additional security checks.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 #### Discussion
 

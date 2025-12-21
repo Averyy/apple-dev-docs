@@ -33,8 +33,11 @@ The system creates instances of this class to handle active passkey requests, an
   The relying party that issues the challenge.
 - [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequestparameters/userverificationpreference.md)
   The relying party’s preference for user verification.
-### Instance Properties
+### Working with WebAuthn extensions
 - [var extensionInput: ASPasskeyAssertionCredentialExtensionInput?](aspasskeycredentialrequestparameters/extensioninput-2edlv.md)
+  An input for WebAuthn extensions.
+- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey assertion.
 
 ## Relationships
 

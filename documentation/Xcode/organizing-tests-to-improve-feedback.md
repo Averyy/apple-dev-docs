@@ -20,7 +20,7 @@ You might add tags to specify:
 - kind (unit, integration, performance)
 - cadence (presubmission, daily, prerelease)
 - functional area
-- dependancies
+- dependencies
 
 In Xcode 16 and later, you can use tags in your test plans to specify which tests to include. For more information about declaring tags and adding tags to test, see [`Adding tags to tests`](https://developer.apple.com/documentation/Testing/AddingTags). For more information about migrating your existing unit test to Swift Testing, see [`Migrating a test from XCTest`](https://developer.apple.com/documentation/Testing/MigratingFromXCTest).
 
@@ -69,7 +69,7 @@ Specify the test targets to use, along with any tags Xcode should use to determi
 1. Select the test plan in the Project navigator.
 2. In the Tests pane, click Choose Targets to add test targets to the test plan.
 3. To include tests annotated with a tag, click the Include Tags text field and type the symbol name of one or more tags. Select Any Tag from the filter button to include a test when it matches any the tags you enter, and All Tags to include it only when it matches all of the tags.
-4. To exclude tests annotated with a tag, enter the symbol name of one or more tags to exclude in the Exclude Tags field. Select Any Tag from the filter button to exclude a test when it matches any the tags you enter, and All Tags to exclude it only when it matches all of the tags.
+4. To exclude tests annotated with a tag, enter the symbol name of one or more tags to exclude in the Exclude Tags field. Select Any Tag from the filter button to exclude a test when it matches any of the tags you enter, and All Tags to exclude it only when it matches all of the tags.
 
 ![A screenshot of the Include Tags and Exclude Tags fields in the Test Plan editor in Xcode. The Include Tags field contains tags for formatting and unit. The Exclude Tags field contains tags for stress and release. The filter button in the Exclude Tags field is expanded to show options for Any Tag and All Tags.](https://docs-assets.developer.apple.com/published/4fde76520a0d32738f8185a02142528f/organizing-tests-test-plan-exclude-tags%402x.png)
 

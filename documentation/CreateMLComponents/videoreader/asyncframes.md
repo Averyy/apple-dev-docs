@@ -43,15 +43,6 @@ This sequence allows iterating through the file only once.
   Constructs an iterator.
 - [VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/iterator.md)
   An async iterator of video frames.
-- [VideoReader.AsyncFrames.AsyncIterator](videoreader/asyncframes/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [VideoReader.AsyncFrames.Feature](videoreader/asyncframes/feature.md)
-  The feature type.
-### Type Aliases
-- [VideoReader.AsyncFrames.Element](videoreader/asyncframes/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](videoreader/asyncframes/asyncsequence-implementations.md)
 
 ## Relationships
 
@@ -61,9 +52,7 @@ This sequence allows iterating through the file only once.
 
 ## See Also
 
-- [static func read<S>(S) async throws -> [VideoReader.AsyncFrames]](videoreader/read(_:)-4oyjh.md)
-  Reads a sequence of files as an array of async sequences of video frames.
-- [static func read<S, Annotation>(S) async throws -> [AnnotatedFeature<VideoReader.AsyncFrames, Annotation>]](videoreader/read(_:)-sluv.md)
+- [static read(_:)](videoreader/read(_:).md)
   Reads a sequence of annotated files as an array of annotated async sequences of video frames.
 - [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](videoreader/readcamera(configuration:).md)
   Reads an async sequence of video frames captured with a video camera.

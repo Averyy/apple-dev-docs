@@ -6,7 +6,7 @@
 Create a configuration with a specific color rendering mode.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

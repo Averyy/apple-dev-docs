@@ -13,6 +13,12 @@
 typealias AudioDeviceID = AudioObjectID
 ```
 
+#### Discussion
+
+AudioDevice is the base class for all objects that represent an audio device.
+
+AudioDevice is a subclass of AudioObject. AudioDevices normally contain AudioStreams and AudioControls, but may contain other things depending on the kind of AudioDevice (e.g. aggregate devices contain other AudioDevices).
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

@@ -22,7 +22,7 @@ class AVContentKeyResponse
 
 ## Topics
 
-### Creating New Content Key Responses
+### Creating new content key responses
 - [convenience init(clearKeyData: Data, initializationVector: Data?)](avcontentkeyresponse/init(clearkeydata:initializationvector:).md)
   Creates a new key response object for key data and initialization vector sent in the clear.
 - [convenience init(fairPlayStreamingKeyResponseData: Data)](avcontentkeyresponse/init(fairplaystreamingkeyresponsedata:).md)

@@ -18,9 +18,9 @@ func predictions(from videos: [URL]) throws -> [[MLActionClassifier.Prediction]]
 
 A array of prediction arrays. The index of each inner array corresponds to the video index in the input array.
 
-#### Discussion
+## Parameters
 
-- videos: An array of locations to videos you want the action classifier to analyze.
+- `videos`: An array of locations to videos you want the action classifier to analyze.
 
 ## See Also
 

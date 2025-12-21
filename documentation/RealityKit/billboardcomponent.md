@@ -10,7 +10,7 @@ A component that orients an entity instance so that it continuously points towar
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -59,7 +59,7 @@ For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.
 - [struct HoverEffectComponent](hovereffectcomponent.md)
   A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
 - [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
-  A component which controls how an entity will blend visually with objects in the user’s local environment
+  A component that controls how an entity blends visually with objects in the local environment.
 - [struct LensDistortionData](lensdistortiondata.md)
   A description of estimated lens distortion that can be used to rectify images.
 - [struct ImagePresentationComponent](imagepresentationcomponent.md)

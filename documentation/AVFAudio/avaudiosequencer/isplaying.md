@@ -21,7 +21,7 @@ var isPlaying: Bool { get }
 
 #### Discussion
 
-This value returns [`true`](https://developer.apple.com/documentation/swift/true) if the sequencer’s player is in a started state. The framework considers it to be playing until it explicitly stops, including when playing past the end of the events in a sequence.
+This value returns [`true`](https://developer.apple.com/documentation/Swift/true) if the sequencer’s player is in a started state. The framework considers it to be playing until it explicitly stops, including when playing past the end of the events in a sequence.
 
 ## See Also
 

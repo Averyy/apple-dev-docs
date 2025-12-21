@@ -1,4 +1,4 @@
-# Supporting Coordinated Media Playback
+# Supporting coordinated media playback
 
 **Framework**: AVFoundation
 
@@ -197,6 +197,7 @@ After the local device catches up with group playback, the sample ends the suspe
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 
 
 ---

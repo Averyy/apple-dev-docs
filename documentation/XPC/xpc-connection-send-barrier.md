@@ -29,7 +29,7 @@ A barrier block can be useful for throttling resource consumption on the connect
 
 If a barrier is issued on a canceled connection, it will be invoked immediately. If a connection has been canceled and still has outstanding barriers, those barriers will be invoked as part of the connection’s unwinding process.
 
-It is important to note that a barrier block’s execution order is not guaranteed with respect to other blocks that have been scheduled on the target queue of the connection. Or said differently, [`xpc_connection_send_barrier(_:_:)`](xpc_connection_send_barrier(_:_:).md) is not equivalent to [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async).
+It is important to note that a barrier block’s execution order is not guaranteed with respect to other blocks that have been scheduled on the target queue of the connection. Or said differently, [`xpc_connection_send_barrier(_:_:)`](xpc_connection_send_barrier(_:_:).md) is not equivalent to [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async).
 
 ## Parameters
 

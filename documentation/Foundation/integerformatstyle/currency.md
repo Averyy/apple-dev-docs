@@ -62,6 +62,7 @@ struct Currency
   A type that provides localized representations of measurements.
 ### Instance Methods
 - [func notation(IntegerFormatStyle<Value>.Currency.Configuration.Notation) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/notation(_:).md)
+  Modifies the format style to use the specified notation.
 ### Default Implementations
 - [FormatStyle Implementations](integerformatstyle/currency/formatstyle-implementations.md)
 

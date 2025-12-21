@@ -21,13 +21,13 @@ class func canMakePayments() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports making payments; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports making payments; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 User may not be able to make payments for a variety of reasons. For example, this functionality may not be supported by their hardware, or it may be restricted by parental controls.
 
-On devices that support making payments but don’t have any payment cards configured, the [`canMakePayments()`](pkpaymentauthorizationviewcontroller/canmakepayments().md) method returns [`true`](https://developer.apple.com/documentation/swift/true) because the hardware and parental controls allow making payments, but the [`canMakePayments(usingNetworks:)`](pkpaymentauthorizationviewcontroller/canmakepayments(usingnetworks:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false) regardless of network.
+On devices that support making payments but don’t have any payment cards configured, the [`canMakePayments()`](pkpaymentauthorizationviewcontroller/canmakepayments().md) method returns [`true`](https://developer.apple.com/documentation/Swift/true) because the hardware and parental controls allow making payments, but the [`canMakePayments(usingNetworks:)`](pkpaymentauthorizationviewcontroller/canmakepayments(usingnetworks:).md) method returns [`false`](https://developer.apple.com/documentation/Swift/false) regardless of network.
 
 ## See Also
 

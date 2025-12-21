@@ -15,6 +15,14 @@
 func AudioHardwareUnload() -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+When this routine is called, all IO on all devices within a process will be terminated and all resources capable of being released will be released. This routine essentially returns the HAL to its uninitialized state.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

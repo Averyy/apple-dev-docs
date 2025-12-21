@@ -19,8 +19,6 @@ struct InstallRequirements
 
 ### Initializers
 - [init()](installrequirements/init.md)
-- [init(from: any Decoder) throws](installrequirements/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var ageRatingRank: Int?](installrequirements/ageratingrank.md)
 - [var expectedInstallSize: UInt64?](installrequirements/expectedinstallsize.md)
@@ -29,8 +27,6 @@ struct InstallRequirements
 - [var requiredDeviceCapabilities: Set<String>?](installrequirements/requireddevicecapabilities.md)
   The capabilities that a device requires to install an app.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](installrequirements/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func satisfiedByDevice() -> Bool](installrequirements/satisfiedbydevice.md)
 
 ## Relationships
@@ -44,7 +40,7 @@ struct InstallRequirements
 ## See Also
 
 - [class AppLibrary](applibrary.md)
-  An object that manages search characteristics, licensing, and the installation of apps.
+  A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
 - [struct AppVersion](appversion.md)
   Information that describes an app, including its identifier and version number.
 - [struct AutomaticUpdate](automaticupdate.md)

@@ -22,20 +22,9 @@ enum PortRightError
 
 ## Topics
 
-### Operators
-- [static func == (Mach.PortRightError, Mach.PortRightError) -> Bool](mach/portrighterror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [Mach.PortRightError.deadName](mach/portrighterror/deadname.md)
   Returned when an operation cannot be completed, because the Mach port right has become a dead name. This is caused by deallocation of the receive right on the other end.
-### Instance Properties
-- [var hashValue: Int](mach/portrighterror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mach/portrighterror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mach/portrighterror/equatable-implementations.md)
 
 ## Relationships
 

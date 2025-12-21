@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mldecisiontreeregressor/description.md)
-  A text representation of the decision tree regressor.
-- [var debugDescription: String](mldecisiontreeregressor/debugdescription.md)
-  A text representation of the decision tree regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mldecisiontreeregressor/playgrounddescription.md)
-  A description of the decision tree regressor shown in a playground.
+- [MLDecisionTreeRegressor.ModelParameters](mldecisiontreeregressor/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLDecisionTreeRegressor.ModelParameters](mldecisiontreeregressor/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

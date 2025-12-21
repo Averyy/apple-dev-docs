@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: func
 
+A helper constructor for the AudioObjectPropertyAddress struct.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration
@@ -11,6 +14,16 @@
 ```swift
 func PropertyAddress(_ selector: AudioObjectPropertySelector, scope: AudioObjectPropertyScope = kAudioObjectPropertyScopeGlobal, element: AudioObjectPropertyElement = kAudioObjectPropertyElementMain) -> AudioObjectPropertyAddress
 ```
+
+#### Return Value
+
+An AudioObjectPropertyAddress collects these three parts that identify a specific property together in a struct for easy transmission.
+
+## Parameters
+
+- `selector`: An AudioObjectPropertySelector four char code that identifies a property
+- `scope`: An AudioObjectPropertyScope with a default value of kAudioObjectPropertyScopeGlobal
+- `element`: An AudioObjectPropertyElement with a default value of kAudioObjectPropertyElementMain
 
 ## See Also
 

@@ -5,11 +5,6 @@
 
 Replaces the image data in the receiver with given image data
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

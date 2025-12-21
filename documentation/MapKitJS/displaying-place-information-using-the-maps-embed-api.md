@@ -13,9 +13,9 @@ You can use the Maps Embed API to show information about a place within the cont
 
 Once you have these items, create the HTML snippet using [`Create a Map`](https://developer.apple.comhttps://developer.apple.com/maps/create-a-map/), then copy the resulting HTML snippet and paste it onto your website.
 
-Alternatively, you can construct the snippet yourself by manually adjusting the URL parameters in the snippet’s `iframe SRC` attribute.
+Alternatively, you can construct the snippet yourself by manually adjusting the URL parameters in the snippet’s `src` attribute.
 
-> **Note**:  For greater control over the presentation style of the Place Card and map, use [`mapkit.PlaceDetail`](mapkit.placedetail.md).
+> **Note**:  For greater control over the presentation style of the Place Card and map, use [`PlaceDetail`](placedetail.md).
 
 ![A screenshot showing the Place Card for the Apple Park Visitor Center above a map of the area. The hours of operation, website, phone number, and address are in the Place Card.](https://docs-assets.developer.apple.com/published/c3e6646de27b9b9915804b9b27b64218/displaying-place-information-using-the-maps-embed-api-01%402x.png)
 
@@ -25,7 +25,7 @@ Alternatively, you can construct the snippet yourself by manually adjusting the 
   Generate your token to access MapKit services with proper authorization.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
-- [mapkit](mapkit.md)
+- [class mapkit](mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 
 

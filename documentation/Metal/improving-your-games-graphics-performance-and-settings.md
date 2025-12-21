@@ -41,8 +41,8 @@ Performance problems typically have several underlying reasons, or root causes. 
 The “five whys” technique is a helpful way to find and scope the root cause of a performance problem. Repeatedly ask and answer the question “why?” five times to gain a more specific understanding of the problem. Here are some sample questions and answers:
 
 - Why does my game have frame glitches? On the Metal system trace in Instruments, some frames take longer than 33 ms to render.
-- Why does the frame time exceed 33 ms? The system trace shows that the game spends 22 ms rendering the G-buffer.
-- Why does it take 22 ms to render the G-buffer? Measuring the time of the vertex shader stage shows 16 ms, and the fragment shader takes 6 ms to render.
+- Why does the frame time exceed 33 ms? The system trace shows that the game spends 22 ms rendering the geometry buffer.
+- Why does it take 22 ms to render the geometry buffer? Measuring the time of the vertex shader stage shows 16 ms, and the fragment shader takes 6 ms to render.
 - Why does it take 16 ms for the vertex shader to run? A GPU trace shows that the vertex shader is processing 5,000,000 vertices and it looks ALU bound.
 - Why is the vertex shader ALU bound? The vertex shader uses several matrix multiplications and doesn’t use half-precision types.
 
@@ -93,7 +93,7 @@ Use sustained execution mode to limit the burst performance of the system while 
 The game can adjust its runtime performance characteristics by applying these recommendations:
 
 - Check whether an [`MTLDevice`](mtldevice.md) instance supports the capabilities of an [`MTLGPUFamily`](mtlgpufamily.md) instance by passing one of the enumeration’s cases — such as [`MTLGPUFamily.apple8`](mtlgpufamily/apple8.md), [`MTLGPUFamily.apple9`](mtlgpufamily/apple9.md), and so on — to the device’s [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method.
-- Use the [`com.apple.developer.kernel.increased-memory-limit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.increased-memory-limit) entitlement for extra memory on certain iOS devices. Check [`os_proc_available_memory`](https://developer.apple.com/documentation/os/3191911-os_proc_available_memory) for the amount of available runtime device memory.
+- Use the [`com.apple.developer.kernel.increased-memory-limit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.increased-memory-limit) entitlement for extra memory on certain iOS devices. Check [`os_proc_available_memory`](https://developer.apple.com/documentation/os/os_proc_available_memory) for the amount of available runtime device memory.
 - Use Quality of Service (QoS) and Grand Central Dispatch (GCD) as shown in [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon).
 
 To more finely tune your apps and games, you can call the [`Kernel`](https://developer.apple.com/documentation/kernel) function, [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname). See [`Determining system capabilities`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname/determining_system_capabilities) and [`Apple Silicon CPU Optimization Guide`](https://developer.apple.comhttps://developer.apple.com/download/apple-silicon-cpu-optimization-guide/) for information about checking the specifics of a device, such as:
@@ -120,8 +120,8 @@ When designing games that run on a portable device, consider detecting when the 
 
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Capturing Metal commands programmatically](capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Logging shader debug messages](logging-shader-debug-messages.md)
   Print debugging messages that a shader generates using shader logging.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
@@ -130,9 +130,9 @@ When designing games that run on a portable device, consider detecting when the 
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+- [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
-- [Metal Debugging Types](metal-debugging-types.md)
+- [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 

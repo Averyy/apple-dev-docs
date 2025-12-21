@@ -19,7 +19,7 @@ var showsCloudItems: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the picker shows available iCloud Music Library items, including purchased items, imported content, and Apple Music subscription content. When set to [`false`](https://developer.apple.com/documentation/swift/false), the picker only shows content downloaded to the device. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the picker shows available iCloud Music Library items, including purchased items, imported content, and Apple Music subscription content. When set to [`false`](https://developer.apple.com/documentation/Swift/false), the picker only shows content downloaded to the device. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

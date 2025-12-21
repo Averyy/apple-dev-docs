@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a mail account on the device.
+The payload that configures a Mail account.
 
 **Availability**:
 - iOS 4.0+
@@ -116,9 +116,9 @@ Specify `com.apple.mail.managed` as the payload type.
 ## See Also
 
 - [object ExchangeActiveSync](exchangeactivesync.md)
-  The payload you use to configure Exchange ActiveSync accounts.
+  The payload that configures Exchange ActiveSync accounts.
 - [object ExchangeWebServices](exchangewebservices.md)
-  The payload you use to configure an Exchange Web Services account for Contacts, Mail, Notes, Reminders, and Calendar.
+  The payload that configures an Exchange Web Services accounts.
 
 
 ---

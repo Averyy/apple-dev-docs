@@ -13,7 +13,6 @@ A Boolean value that specifies whether to use the centered variant.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

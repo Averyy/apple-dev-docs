@@ -17,7 +17,7 @@ var altersStateOfSelectedItem: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (which is the default value), the state of the selected item is set to [`NSOnState`](nsonstate.md). When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the items in the menu are left alone. When you change the value of this property, the state of the currently selected item is updated appropriately.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) (which is the default value), the state of the selected item is set to [`NSOnState`](nsonstate.md). When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the items in the menu are left alone. When you change the value of this property, the state of the currently selected item is updated appropriately.
 
 Note that this property affects only pop-up buttons (it is ignored for pull-down menus).
 

@@ -33,7 +33,7 @@ let filter = MKAddressFilter(including: [.locality,  .subLocality])
 let result = filter.excludes(.postalCode)
 ```
 
-The method returns `true` because `filter` doesn’t include [`PostalCode`](https://developer.apple.com/documentation/MapKitJS/mapkit.AddressCategory/PostalCode).
+The method returns `true` because `filter` doesn’t include [`PostalCode`](https://developer.apple.com/documentation/MapKitJS/AddressCategory/PostalCode).
 
 ## Parameters
 

@@ -20,7 +20,7 @@ var contextIdentifierPath: [String]? { get }
 
 #### Discussion
 
-If you receive an [`NSUserActivity`](nsuseractivity.md) instance that has its [`isClassKitDeepLink`](nsuseractivity/isclasskitdeeplink.md) property set to [`true`](https://developer.apple.com/documentation/swift/true), then the activity’s [`contextIdentifierPath`](nsuseractivity/contextidentifierpath.md) contains the identifier path of the context associated with the assignment that the user tapped to generate the user activity. See [`Linking directly to assignments`](https://developer.apple.com/documentation/ClassKit/linking-directly-to-assignments) for more information.
+If you receive an [`NSUserActivity`](nsuseractivity.md) instance that has its [`isClassKitDeepLink`](nsuseractivity/isclasskitdeeplink.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true), then the activity’s [`contextIdentifierPath`](nsuseractivity/contextidentifierpath.md) contains the identifier path of the context associated with the assignment that the user tapped to generate the user activity. See [`Linking directly to assignments`](https://developer.apple.com/documentation/ClassKit/linking-directly-to-assignments) for more information.
 
 ## See Also
 

@@ -20,7 +20,7 @@ class ARGeoTrackingConfiguration
 
 This configuration creates location anchors ([`ARGeoAnchor`](argeoanchor.md)) that specify a particular latitude, longitude, and optionally, altitude to enable an app to track geographic areas of interest in an AR experience.
 
-> ❗ **Important**:  The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
+> ❗ **Important**:  The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
 
 Geotracking occurs exclusively outdoors. If a geotracking app navigates users between waypoints, your app needs to handle any events along a route. The user must have an internet connection, and you can provide them information about data usage, as described in [`ARGeoAnchor`](argeoanchor.md).
 

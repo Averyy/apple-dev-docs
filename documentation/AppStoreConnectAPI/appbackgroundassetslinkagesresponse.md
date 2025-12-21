@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response that contains a list of IDs of related background assets.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Declaration
 
@@ -16,6 +18,7 @@ object AppBackgroundAssetsLinkagesResponse
 
 ### Dictionaries
 - [object AppBackgroundAssetsLinkagesResponse.Data](appbackgroundassetslinkagesresponse/data-data.dictionary.md)
+  The the type and ID of a background asset resource linked to an app.
 
 ## See Also
 

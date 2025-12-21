@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -18,6 +20,15 @@
 func upload(for request: URLRequest, from bodyData: Data) async throws -> (Data, URLResponse)
 ```
 
+#### Return Value
+
+Data and response.
+
+## Parameters
+
+- `request`: The URLRequest for which to upload data.
+- `bodyData`: Data to upload.
+
 ## See Also
 
 - [func bytes(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URLSession.AsyncBytes, URLResponse)](urlsession/bytes(for:delegate:).md)
@@ -31,7 +42,9 @@ func upload(for request: URLRequest, from bodyData: Data) async throws -> (Data,
 - [func data(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/data(from:delegate:).md)
   Retrieves the contents of a URL and delivers the data asynchronously.
 - [func data(for: URLRequest) async throws -> (Data, URLResponse)](urlsession/data(for:).md)
+  Convenience method to load data using a URLRequest, creates and resumes a URLSessionDataTask internally.
 - [func data(from: URL) async throws -> (Data, URLResponse)](urlsession/data(from:).md)
+  Convenience method to load data using a URL, creates and resumes a URLSessionDataTask internally.
 - [func download(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(for:delegate:).md)
   Retrieves the contents of a URL based on the specified URL request and delivers the URL of the saved file asynchronously.
 - [func download(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(from:delegate:).md)
@@ -43,6 +56,7 @@ func upload(for request: URLRequest, from bodyData: Data) async throws -> (Data,
 - [func upload(for: URLRequest, fromFile: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:delegate:).md)
   Uploads data to a URL and delivers the result asynchronously.
 - [func upload(for: URLRequest, fromFile: URL) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:).md)
+  Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
 - [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
 

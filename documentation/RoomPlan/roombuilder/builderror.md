@@ -37,27 +37,6 @@ The room builder ([`RoomBuilder`](roombuilder.md)) function [`capturedRoom(from:
 ### Inspecting error information
 - [var errorDescription: String?](roombuilder/builderror/errordescription.md)
   A human-readable explanation of the error.
-- [var recoverySuggestion: String?](roombuilder/builderror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-- [var localizedDescription: String](roombuilder/builderror/localizeddescription.md)
-  Retrieve the localized description for this error.
-- [var helpAnchor: String?](roombuilder/builderror/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-- [var failureReason: String?](roombuilder/builderror/failurereason.md)
-  A localized message describing the reason for the failure.
-### Comparing build errors
-- [static func == (RoomBuilder.BuildError, RoomBuilder.BuildError) -> Bool](roombuilder/builderror/==(_:_:).md)
-  Determines whether two errors are equal.
-- [static func != (Self, Self) -> Bool](roombuilder/builderror/!=(_:_:).md)
-  Determines whether two errors aren’t equal.
-- [func hash(into: inout Hasher)](roombuilder/builderror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](roombuilder/builderror/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](roombuilder/builderror/equatable-implementations.md)
-- [Error Implementations](roombuilder/builderror/error-implementations.md)
-- [LocalizedError Implementations](roombuilder/builderror/localizederror-implementations.md)
 
 ## Relationships
 

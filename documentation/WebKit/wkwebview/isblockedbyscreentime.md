@@ -4,10 +4,10 @@
 **Kind**: property
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -15,6 +15,10 @@
 @MainActor
 var isBlockedByScreenTime: Bool { get }
 ```
+
+#### Discussion
+
+A Boolean value indicating whether Screen Time blocking has occurred.
 
 
 ---

@@ -23,8 +23,8 @@ A property wrapper that reads a value from a view’s environment.
 
 ## Mentions
 
-- [Managing search interface activation](managing-search-interface-activation.md)
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Managing search interface activation](managing-search-interface-activation.md)
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
 
 #### Overview
@@ -53,7 +53,7 @@ For the complete list of environment values SwiftUI provides, see the properties
 
 ##### Get an Observable Object
 
-You can also use `Environment` to get an observable object from a view’s environment. The observable object must conform to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, and your app must set the object in the environment using the the object itself or a key path.
+You can also use `Environment` to get an observable object from a view’s environment. The observable object must conform to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, and your app must set the object in the environment using the object itself or a key path.
 
 To set the object in the environment using the object itself, use the [`environment(_:)`](view/environment(_:).md) modifier:
 

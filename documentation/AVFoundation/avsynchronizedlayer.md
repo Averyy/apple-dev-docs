@@ -41,13 +41,13 @@ AVSynchronizedLayer *syncLayer = [AVSynchronizedLayer synchronizedLayerWithPlaye
 
 ## Topics
 
-### Creating a Synchronized Layer
+### Creating a synchronized layer
 - [init(playerItem: AVPlayerItem)](avsynchronizedlayer/init(playeritem:).md)
   Creates a new synchronized layer with timing synchronized with a given player item.
-### Managing the Player Item
+### Managing the player item
 - [var playerItem: AVPlayerItem?](avsynchronizedlayer/playeritem.md)
   The player item to which the timing of the layer is synchronized.
-### Supporting Types
+### Supporting types
 - [let AVCoreAnimationBeginTimeAtZero: CFTimeInterval](avcoreanimationbegintimeatzero.md)
   A value that sets an animation begin time to `0`.
 
@@ -72,7 +72,7 @@ AVSynchronizedLayer *syncLayer = [AVSynchronizedLayer synchronizedLayerWithPlaye
 
 - [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Using HEVC Video with Alpha](using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 - [class AVPlayerLayer](avplayerlayer.md)
   An object that presents the visual contents of a player object.

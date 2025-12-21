@@ -38,12 +38,6 @@ struct Option
 ### Type Properties
 - [static var ephemeral: Schema.Attribute.Option](schema/attribute/option/ephemeral.md)
   Track changes to this property but do not persist
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](schema/attribute/option/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](schema/attribute/option/decodable-implementations.md)
-- [Encodable Implementations](schema/attribute/option/encodable-implementations.md)
-- [Equatable Implementations](schema/attribute/option/equatable-implementations.md)
-- [Hashable Implementations](schema/attribute/option/hashable-implementations.md)
 
 ## Relationships
 
@@ -54,6 +48,8 @@ struct Option
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: case
 
-[`incrementalLoad(from:complete:)`](nsbitmapimagerep/incrementalload(from:complete:).md) was called with [`true`](https://developer.apple.com/documentation/swift/true), but not enough data was available for decompression. The image contains the portions of the data that have already been successfully decompressed, if any.
+Not enough data was available to fully decompress the image.
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@
 ```swift
 case unexpectedEOF
 ```
+
+#### Discussion
+
+[`incrementalLoad(from:complete:)`](nsbitmapimagerep/incrementalload(from:complete:).md) was called with [`true`](https://developer.apple.com/documentation/Swift/true), but not enough data was available for decompression. The image contains the portions of the data that have already been successfully decompressed, if any.
 
 ## See Also
 

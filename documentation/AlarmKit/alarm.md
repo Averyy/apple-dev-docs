@@ -6,9 +6,8 @@
 An object that describes an alarm that can alert once or on a repeating schedule.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -47,7 +46,7 @@ sound: .default)
   An object that defines the durations used in an alarm that has a countdown.
 - [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id-swift.property.md)
+- [var id: UUID](alarm/id.md)
   The unique identifier of the alarm.
 - [Alarm.State](alarm/state-swift.enum.md)
   An enum that lists all possible states of an alarm.
@@ -58,15 +57,6 @@ sound: .default)
   A list of all types of schedules that the framework supports.
 - [var schedule: Alarm.Schedule?](alarm/schedule-swift.property.md)
   The schedule determines when the alarm alerts.
-### Decoding
-- [init(from: any Decoder) throws](alarm/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarm/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [typealias ID](alarm/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

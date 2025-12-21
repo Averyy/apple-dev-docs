@@ -17,6 +17,10 @@
 var isSet: Bool { get }
 ```
 
+#### Discussion
+
+Whether the local user password or passcode is set on this device.
+
 
 ---
 

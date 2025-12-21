@@ -6,7 +6,7 @@
 Allows the view to be manipulated using a manipulation gesture attached to a different view.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

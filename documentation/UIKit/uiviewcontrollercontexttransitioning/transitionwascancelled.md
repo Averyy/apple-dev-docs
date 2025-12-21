@@ -22,11 +22,11 @@ var transitionWasCancelled: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the transition was canceled or [`false`](https://developer.apple.com/documentation/swift/false) if it is ongoing or finished normally.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the transition was canceled or [`false`](https://developer.apple.com/documentation/Swift/false) if it is ongoing or finished normally.
 
 #### Discussion
 
-You can call this method from your animator object to determine whether the transition has been canceled. Calling the [`cancelInteractiveTransition()`](uiviewcontrollercontexttransitioning/cancelinteractivetransition().md) method causes this method to return [`true`](https://developer.apple.com/documentation/swift/true).
+You can call this method from your animator object to determine whether the transition has been canceled. Calling the [`cancelInteractiveTransition()`](uiviewcontrollercontexttransitioning/cancelinteractivetransition().md) method causes this method to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

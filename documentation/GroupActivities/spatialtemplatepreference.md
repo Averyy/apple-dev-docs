@@ -32,9 +32,6 @@ Use the static members of this structure to specify your preferred arrangement o
 ### Specifying the distance between content and participants
 - [func contentExtent(CGFloat) -> SpatialTemplatePreference](spatialtemplatepreference/contentextent(_:).md)
   Sets the distance between the app’s content and any participants.
-### Getting the template description
-- [var description: String](spatialtemplatepreference/description.md)
-  A textual representation of this instance.
 ### Type Properties
 - [static let surround: SpatialTemplatePreference](spatialtemplatepreference/surround.md)
   An arrangement where the participants sit around the content.

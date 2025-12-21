@@ -20,6 +20,7 @@ var extensionURL: URL { get }
   The name of the Media Extension.
 - [var containingBundleName: String](avmediaextensionproperties/containingbundlename.md)
   The name of the containing app bundle.
+- [var extensionIdentifier: String](avmediaextensionproperties/extensionidentifier.md)
 - [var containingBundleURL: URL](avmediaextensionproperties/containingbundleurl.md)
   The file URL of the host application for the Media Extension.
 

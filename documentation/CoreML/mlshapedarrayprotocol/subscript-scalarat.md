@@ -27,10 +27,8 @@ subscript<C>(scalarAt indices: C) -> Self.Scalar where C : Collection, C.Element
 
 ## See Also
 
-- [subscript<C>(C) -> MLShapedArraySlice<Self.Scalar>](mlshapedarrayprotocol/subscript(_:)-zfw5.md)
-  Accesses a slice using a collection of integers, in which each element is an index in the corresponding dimension.
-- [subscript<C>(C) -> MLShapedArraySlice<Self.Scalar>](mlshapedarrayprotocol/subscript(_:)-1q1sr.md)
-  Accesses a slice using a collection of integer ranges, in which each element is a range in the corresponding dimension.
+- [subscript(_:)](mlshapedarrayprotocol/subscript(_:).md)
+  A slice of the shaped array for the selected leading axes.
 
 
 ---

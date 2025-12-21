@@ -7,12 +7,12 @@
 Sets an argument table for the command encoder’s machine learning shader stage.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,11 @@ The argument table provides inputs to all subsequent Machine Learning dispatches
 ## Parameters
 
 - `argumentTable`: An argument table to set on the command encoder’s Machine Learning stage.
+
+## See Also
+
+- [func setPipelineState(any MTL4MachineLearningPipelineState)](mtl4machinelearningcommandencoder/setpipelinestate(_:).md)
+  Configures the encoder with a machine learning pipeline state instance.
 
 
 ---

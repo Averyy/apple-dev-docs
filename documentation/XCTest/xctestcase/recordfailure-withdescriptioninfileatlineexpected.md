@@ -5,9 +5,6 @@
 
 Records a failure during text execution.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

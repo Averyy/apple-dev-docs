@@ -41,14 +41,9 @@ struct BoostedTreeClassifier<Label> where Label : Comparable, Label : Decodable,
   The annotation type.
 - [BoostedTreeClassifier.Transformer](boostedtreeclassifier/transformer.md)
   The transformer type created by this estimator.
-### Encoding and decoding the classifier
-- [func encode(TreeClassifierModel<Label>, to: inout any EstimatorEncoder) throws](boostedtreeclassifier/encode(_:to:).md)
-  Encodes a fitted transformer.
+### Encoding the classifier labels
 - [func encodeLabels(some Collection<Optional<Label>>) throws -> (labels: [String?], encoded: [Int])](boostedtreeclassifier/encodelabels(_:).md)
-- [func decode(from: inout any EstimatorDecoder) throws -> TreeClassifierModel<Label>](boostedtreeclassifier/decode(from:).md)
-  Decodes a previously fitted transformer.
 ### Default Implementations
-- [SupervisedTabularEstimator Implementations](boostedtreeclassifier/supervisedtabularestimator-implementations.md)
 - [UpdatableSupervisedTabularEstimator Implementations](boostedtreeclassifier/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships

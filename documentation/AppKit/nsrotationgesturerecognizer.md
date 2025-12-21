@@ -19,7 +19,7 @@ class NSRotationGestureRecognizer
 
 This rotation gesture implies that the underlying view should rotate in a matching direction. The gesture is recognized when the trackpad touches end.
 
-Upon creation, the gesture recognizer sets the value of the [`delaysRotationEvents`](nsgesturerecognizer/delaysrotationevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+Upon creation, the gesture recognizer sets the value of the [`delaysRotationEvents`](nsgesturerecognizer/delaysrotationevents.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Topics
 

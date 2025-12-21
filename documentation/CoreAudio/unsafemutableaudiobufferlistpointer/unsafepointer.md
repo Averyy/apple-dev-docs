@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The pointer to the wrapped `AudioBufferList`.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

@@ -25,7 +25,7 @@ When an [`AVURLAsset`](avurlasset.md) object needs help loading a resource, it a
 
 ## Topics
 
-### Accessing the Request Data
+### Accessing the request data
 - [var request: URLRequest](avassetresourceloadingrequest/request.md)
   The URL request object for the resource.
 - [var requestor: AVAssetResourceLoadingRequestor](avassetresourceloadingrequest/requestor.md)
@@ -42,7 +42,7 @@ When an [`AVURLAsset`](avurlasset.md) object needs help loading a resource, it a
   Obtains a persistable content key from a context.
 - [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
   Specifies whether the content key request requires a persistable key to be returned from the key vendor.
-### Reporting the Result of the Request
+### Reporting the result of the request
 - [var response: URLResponse?](avassetresourceloadingrequest/response.md)
   The URL response for the loading request.
 - [func finishLoading()](avassetresourceloadingrequest/finishloading.md)

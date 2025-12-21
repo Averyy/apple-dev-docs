@@ -23,7 +23,7 @@ var compareFunction: MTLCompareFunction { get set }
 
 The default value is [`MTLCompareFunction.never`](mtlcomparefunction/never.md).
 
-The [`MTLFeatureSet.iOS_GPUFamily3_v1`](mtlfeatureset/ios_gpufamily3_v1.md) and [`MTLFeatureSet.iOS_GPUFamily1_v1`](mtlfeatureset/ios_gpufamily1_v1.md) feature sets allow you to define a framework-side sampler comparison function for a [`MTLSamplerState`](mtlsamplerstate.md) object. All feature sets support shader-side sampler comparison functions, as described in the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+The [`MTLFeatureSet.iOS_GPUFamily3_v1`](mtlfeatureset/ios_gpufamily3_v1.md) and [`MTLFeatureSet.iOS_GPUFamily1_v1`](mtlfeatureset/ios_gpufamily1_v1.md) feature sets allow you to define a framework-side sampler comparison function for an [`MTLSamplerState`](mtlsamplerstate.md) instance. All feature sets support shader-side sampler comparison functions, as described in the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 

@@ -26,7 +26,7 @@ An array of PDF pages that correspond to the thumbnails selected in the thumbnai
 
 #### Discussion
 
-If the thumbnail view allows multiple selections (if [`allowsMultipleSelection`](pdfthumbnailview/allowsmultipleselection.md) returns [`true`](https://developer.apple.com/documentation/swift/true)), you can use this method to get the PDF pages that correspond to the selected thumbnails.
+If the thumbnail view allows multiple selections (if [`allowsMultipleSelection`](pdfthumbnailview/allowsmultipleselection.md) returns [`true`](https://developer.apple.com/documentation/Swift/true)), you can use this method to get the PDF pages that correspond to the selected thumbnails.
 
 ## See Also
 

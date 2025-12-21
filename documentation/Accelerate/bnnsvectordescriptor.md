@@ -20,6 +20,8 @@ struct BNNSVectorDescriptor
 
 #### Overview
 
+Vector format descriptor (DEPRECATED, Use BNNSNDArrayDescriptor)
+
 Represents a vector of dimension size. Each vector element is a scalar value, stored using the type specified in data_type.
 
 Component V(i) at index i is stored in data[i], with i=0..size-1.

@@ -29,7 +29,7 @@ var captureMode: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.camera.captureMode` schema:
 
 ```swift
-@AssistantEnum(schema: .camera.captureMode)
+@AppEnum(schema: .camera.captureMode)
 enum CaptureMode: AppEnum {
     case selfie
     case video

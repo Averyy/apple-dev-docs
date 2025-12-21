@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An AudioHardwareObject that identifies this object’s owner. Note that all AudioHardwareObject are owned by some other AudioHardwareObject. The only exception is the AudioSystemObject, for which the value of this property is nil.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

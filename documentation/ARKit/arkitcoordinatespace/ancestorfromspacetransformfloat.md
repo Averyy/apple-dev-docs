@@ -6,7 +6,7 @@
 Returns the transformation to ancestor space from this ARKit coordinate space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

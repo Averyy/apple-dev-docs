@@ -4,8 +4,8 @@
 **Kind**: method
 
 **Availability**:
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -15,7 +15,9 @@ class func captureScreenshot(contentFilter: SCContentFilter, configuration confi
 
 #### Discussion
 
-This method returns an SCScreenshotOutput object containing CGImages of the screenshot requested by the client
+captureScreenshotWithFilter:configuration:completionHandler:
+
+this method returns an SCScreenshotOutput object containing CGImages of the screenshot requested by the client
 
 ## Parameters
 

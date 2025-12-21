@@ -6,7 +6,7 @@
 Automatically selects an appropriate variable value mode for the symbol.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

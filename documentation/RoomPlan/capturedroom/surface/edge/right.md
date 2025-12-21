@@ -24,10 +24,6 @@ case right
   An edge that identifies the bottom of a surface.
 - [CapturedRoom.Surface.Edge.left](capturedroom/surface/edge/left.md)
   An edge that identifies the left side of a surface.
-- [static var allCases: [CapturedRoom.Surface.Edge]](capturedroom/surface/edge/allcases-swift.type.property.md)
-  A collection of all values of this type.
-- [CapturedRoom.Surface.Edge.AllCases](capturedroom/surface/edge/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
 
 
 ---

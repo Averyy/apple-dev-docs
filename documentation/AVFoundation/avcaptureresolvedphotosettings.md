@@ -20,8 +20,8 @@ class AVCaptureResolvedPhotoSettings
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
 
 #### Overview
 
@@ -35,12 +35,12 @@ Likewise, the dimensions of an output image or movie may not be set until the mo
 
 ## Topics
 
-### Resolving Photo Capture Requests
+### Resolving photo capture requests
 - [var uniqueID: Int64](avcaptureresolvedphotosettings/uniqueid.md)
   The unique identifier for the photo capture this settings object corresponds to.
 - [var expectedPhotoCount: Int](avcaptureresolvedphotosettings/expectedphotocount.md)
   The number of photo capture results in the capture request.
-### Examining Photo Capture Settings
+### Examining photo capture settings
 - [var isFlashEnabled: Bool](avcaptureresolvedphotosettings/isflashenabled.md)
   A Boolean value indicating whether the camera flash fires for this capture.
 - [var isRedEyeReductionEnabled: Bool](avcaptureresolvedphotosettings/isredeyereductionenabled.md)
@@ -55,7 +55,7 @@ Likewise, the dimensions of an output image or movie may not be set until the mo
   A Boolean value indicating whether this capture uses image stabilization.
 - [var isDualCameraFusionEnabled: Bool](avcaptureresolvedphotosettings/isdualcamerafusionenabled.md)
   A Boolean value indicating whether this capture combines image data from a dual camera.
-### Examining Output Dimensions
+### Examining output dimensions
 - [var photoDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/photodimensions.md)
   The size, in pixels, of the photo image (in a processed format, such as JPEG) that the capture delivers.
 - [var deferredPhotoProxyDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/deferredphotoproxydimensions.md)

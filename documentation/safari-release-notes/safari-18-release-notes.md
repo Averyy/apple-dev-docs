@@ -539,6 +539,8 @@ Safari 18.0 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sono
 
 ## See Also
 
+- [Safari 18.6 Release Notes](safari-18_6-release-notes.md)
+  Released July 29, 2025 — 18.6 (20621.3.11)
 - [Safari 18.5 Release Notes](safari-18_5-release-notes.md)
   Released May 12, 2025 — 18.5 (20621.2.5)
 - [Safari 18.4 Release Notes](safari-18_4-release-notes.md)

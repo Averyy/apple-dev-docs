@@ -19,6 +19,7 @@ protocol UITraitChangeRegistration : NSCopying, NSObjectProtocol
 
 ## Mentions
 
+- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 
 ## Relationships

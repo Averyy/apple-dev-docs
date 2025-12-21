@@ -122,7 +122,7 @@ Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern
   A Boolean value that indicates whether the haptic engine starts and stops automatically on request from one of its pattern players, or when idle.
 ### Instance Properties
 - [var intendedSpatialExperience: any SpatialAudioExperience](chhapticengine/intendedspatialexperience-55ca0.md)
-  The CHHapticEngine’s intended spatial experience.
+  The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/AudioToolbox/SpatialAudioExperience).
 
 ## Relationships
 

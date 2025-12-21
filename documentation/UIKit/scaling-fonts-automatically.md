@@ -20,14 +20,14 @@ In Interface Builder, select the text style from the Font menu, then select the 
 
 ##### Configuring Text Styles in Source Code
 
-In your source code, call the [`preferredFont(forTextStyle:)`](uifont/preferredfont(fortextstyle:).md) method. This method returns a [`UIFont`](uifont.md) that you can assign to a label, text field, or text view. Next, set the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property on the text control to [`true`](https://developer.apple.com/documentation/swift/true). This setting tells the text control to adjust the text size based on the Dynamic Type setting provided by the user.
+In your source code, call the [`preferredFont(forTextStyle:)`](uifont/preferredfont(fortextstyle:).md) method. This method returns a [`UIFont`](uifont.md) that you can assign to a label, text field, or text view. Next, set the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property on the text control to [`true`](https://developer.apple.com/documentation/Swift/true). This setting tells the text control to adjust the text size based on the Dynamic Type setting provided by the user.
 
 ```swift
 label.font = UIFont.preferredFont(forTextStyle: .body)
 label.adjustsFontForContentSizeCategory = true
 ```
 
-If the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false), the font will initially be the right size, but it won’t respond to text-size changes the user makes in Settings or Control Center. To detect such changes, override the [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) method in your view or view controller, and check for changes to the content size category trait. You can also observe [`didChangeNotification`](uicontentsizecategory/didchangenotification.md) and update the font when the notification arrives.
+If the [`adjustsFontForContentSizeCategory`](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the font will initially be the right size, but it won’t respond to text-size changes the user makes in Settings or Control Center. To detect such changes, override the [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) method in your view or view controller, and check for changes to the content size category trait. You can also observe [`didChangeNotification`](uicontentsizecategory/didchangenotification.md) and update the font when the notification arrives.
 
 If you use a custom font in your app and want to let the user control the text size, you must create a scaled instance of the font in your source code. Call [`scaledFont(for:)`](uifontmetrics/scaledfont(for:).md), passing in a reference to the custom font that’s at a point size suitable for use with [`large`](uicontentsizecategory/large.md). This is the default value for the Dynamic Type setting. You can use this call on the default font metrics, or you can specify a text style, such as [`headline`](uifont/textstyle/headline.md).
 

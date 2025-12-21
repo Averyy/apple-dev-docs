@@ -22,16 +22,16 @@ func CGPDFObjectGetValue(_ object: CGPDFObjectRef, _ type: CGPDFObjectType, _ va
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the specified object is a PDF object of the specified type, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the specified object is a PDF object of the specified type, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 The function gets the value of the `object` parameter. If the type of `object` is equal to the type specified, then:
 
-- If the `value` parameter is not a null pointer, then the value of `object` is copied to `value`, and the function returns [`true`](https://developer.apple.com/documentation/swift/true).
-- If the `value` parameter is a null pointer, then the function simply returns [`true`](https://developer.apple.com/documentation/swift/true). This allows you to test whether `object` is of the type specified.
+- If the `value` parameter is not a null pointer, then the value of `object` is copied to `value`, and the function returns [`true`](https://developer.apple.com/documentation/Swift/true).
+- If the `value` parameter is a null pointer, then the function simply returns [`true`](https://developer.apple.com/documentation/Swift/true). This allows you to test whether `object` is of the type specified.
 
-If the type of `object` is [`CGPDFObjectType.integer`](cgpdfobjecttype/integer.md) and `type` is equal to [`CGPDFObjectType.real`](cgpdfobjecttype/real.md), then the value of `object` is converted to floating point, the result copied to `value`, and the function returns [`true`](https://developer.apple.com/documentation/swift/true). If none of the preceding conditions is met, returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the type of `object` is [`CGPDFObjectType.integer`](cgpdfobjecttype/integer.md) and `type` is equal to [`CGPDFObjectType.real`](cgpdfobjecttype/real.md), then the value of `object` is converted to floating point, the result copied to `value`, and the function returns [`true`](https://developer.apple.com/documentation/Swift/true). If none of the preceding conditions is met, returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

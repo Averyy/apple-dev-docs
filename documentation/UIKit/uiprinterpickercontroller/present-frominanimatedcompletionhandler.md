@@ -20,7 +20,7 @@ func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandl
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the picker was displayed or [`false`](https://developer.apple.com/documentation/swift/false) if the picker was already visible.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the picker was displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if the picker was already visible.
 
 #### Discussion
 

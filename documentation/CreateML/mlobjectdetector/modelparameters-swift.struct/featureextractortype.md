@@ -28,10 +28,10 @@ enum FeatureExtractorType
 
 ## See Also
 
-- [MLObjectDetector.ModelParameters.ModelAlgorithmType.darknetYolo](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/darknetyolo.md)
-  An algorithm that trains a full neural network with your training data.
-- [case transferLearning(MLObjectDetector.ModelParameters.FeatureExtractorType)](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/transferlearning(_:).md)
-  An algorithm that leverages the knowledge of a general purpose model built into the operating system.
+- [MLObjectDetector.ModelParameters.ValidationData](mlobjectdetector/modelparameters-swift.struct/validationdata.md)
+  A validation dataset for an object detector.
+- [MLObjectDetector.ModelParameters.ModelAlgorithmType](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype.md)
+  An object-detector training algorithm.
 
 
 ---

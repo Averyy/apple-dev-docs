@@ -16,7 +16,7 @@ Draws the border.
 ## Declaration
 
 ```swift
-func draw(in rect: CGRect)
+func draw(in rect: NSRect)
 ```
 
 

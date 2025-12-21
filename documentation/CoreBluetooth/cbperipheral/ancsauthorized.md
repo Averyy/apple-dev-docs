@@ -21,7 +21,7 @@ var ancsAuthorized: Bool { get }
 
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), a user authorization sets this value to [`true`](https://developer.apple.com/documentation/swift/true), which results in a call to the delegate’s [`centralManager(_:didUpdateANCSAuthorizationFor:)`](cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:).md) method.
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), a user authorization sets this value to [`true`](https://developer.apple.com/documentation/Swift/true), which results in a call to the delegate’s [`centralManager(_:didUpdateANCSAuthorizationFor:)`](cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:).md) method.
 
 
 ---

@@ -6,64 +6,68 @@ Iterate designs quickly and preview your apps’ displays across different Apple
 
 #### Overview
 
-With Xcode previews, you can make changes to your app’s views in code, and see the result of those changes quickly in the preview canvas. Add previews to your SwiftUI, UIKit, and AppKit views using the preview macro. Then configure how you want your previews to display using Xcode’s preview canvas, or programmatically in code.
+With Swift previews, you can make changes to your app’s views in code, and see the result of those changes quickly in the preview canvas. Add previews to your SwiftUI, UIKit, and AppKit views using the preview macro. Then configure how you want your previews to display using the preview canvas controls, or programmatically in code.
 
-> **Note**: To add playgrounds to your Swift code that you can view in the canvas, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
+##### Add a Preview Macro to Your Interface File
 
-##### Add a Preview to Your View Using the Preview Macro
+When you add views to your code, you can display them in the preview canvas. The preview canvas shows how your view appears on different devices in a variety of configurations.
 
-When you create a view in Xcode, you can display it in the preview canvas. The preview canvas shows how your view appears on different devices in a variety of configurations.
-
-![A screenshot of Xcode with the project navigator on the left, the code editor in the middle, and the preview canvas on the right. A callout in the code area in the middle points to the preview macro. A callout at the bottom on the right points to the preview canvas area.](https://docs-assets.developer.apple.com/published/d6c2a3bbe5212fe617b52eb138290fec/dynamically-previewing-1-preview-macro%402x.png)
+![A screenshot of Xcode with the Project navigator on the left, the code editor in the middle, and the preview canvas on the right.](https://docs-assets.developer.apple.com/published/b934bfa480ea549e7b6a9ff5c3b24b5b/dynamically-previewing-1-preview-macro%402x.png)
 
 The Swift preview macro is a snippet of code that makes and configures your view. You use one of the preview macros — such as [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)) — to tell Xcode what to display. To manually show or hide the preview canvas, select Editor > Canvas from the Xcode menu.
 
 To add a preview macro to your view:
 
 1. Open the source file of the view you want to display.
-2. Add the `#Preview` macro to the view.
+2. Add the `#Preview` macro to the file.
 3. Create and return an instance of the view configuration you want to display in the body of the trailing closure of the macro.
+
+##### Generate Previews Using Intelligence
+
+You can use Xcode coding intelligence to generate a preview for you. In the source editor, select some view code and click the coding assistant icon that appears, or Control-click a symbol and choose Show Coding Tools > Show Coding Tools from the pop-up menu. In the coding tools popover that appears, click Generate a Preview.
+
+For more information on coding intelligence features, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
 
 ##### Interact with Your View in Live Mode
 
-When you select the live or interactive preview option, your view appears and interacts just like it would on a device or simulator. Use this mode of preview to test control logic, animations, and text entry as well as responses to asynchronous code. When you select this mode, a single device preview appears in the canvas. This is the default mode for new previews you display.
+When you select the live or interactive preview option, your view appears and interacts just like it would on a device or simulator. Use live mode to test control logic, animations, and text entry as well as responses to asynchronous code. When you click the Live button at the bottom of the preview canvas, a single device preview appears in the canvas that you can interact with. This is the default mode for new previews that you add to your files.
 
-##### Try Out New Designs Quickly with Select Mode
+##### Try Out New Designs Quickly with Selectable Mode
 
-In select mode, the preview displays a snapshot of your view so you can interact with your view’s UI elements in the canvas. Selecting a control in the preview highlights the corresponding line of code in the source editor. Double-clicking certain text views, such as [`Label`](https://developer.apple.com/documentation/SwiftUI/Label), moves focus to the source editor so you can make changes quickly.
+In selectable mode, the preview displays a snapshot of your view so you can interact with your view’s UI elements in the canvas. To highlight the code for an element in the source editor, click the Selectable button at the bottom of the preview canvas, and double-click the element in the preview canvas. Xcode highlights both the element in the preview canvas and the corresponding code in the source editor. Then you can make code changes to the element in the source editor and see the results immediately in the preview canvas.
 
-![A screenshot of Xcode with the code editor in the middle, and a preview on the right. The select mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view in the select mode.](https://docs-assets.developer.apple.com/published/bf5e199e91846e224d9f08586d70d2b9/dynamically-previewing-3-select-mode%402x.png)
+![A screenshot of Xcode with the code editor in the middle, and a preview on the right. The selectable mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view in the selectable mode.](https://docs-assets.developer.apple.com/published/f7c5483b6ad539ed7792773001cd774f/dynamically-previewing-3-select-mode%402x.png)
 
 ##### Control How Your Previews Display with Device Settings
 
-Use Device settings to control how a preview displays for a specific device. For example, to see how your view looks in Dark Mode, in a landscape right orientation, with extra large text:
+Use Device settings to control how a preview displays for a specific device. For example, to see how your view looks in the dark appearance, in a landscape right orientation, with extra large text:
 
-1. Select the Device settings option at the bottom of the preview canvas.
-2. Click the Color Scheme toggle to on, and select the Dark Appearance option under Color Scheme.
-3. Click the Orientation toggle to on, and select the Landscape Right option under the Orientation header.
-4. Click the Dynamic Type toggle to on, and drag the Dynamic Type slider to the X Large text setting.
+1. Click Device Settings at the bottom of the preview canvas.
+2. Toggle Color Scheme on, and select Dark Appearance under Color Scheme.
+3. Toggle Orientation on, and select Landscape Right under Orientation.
+4. Toggle Dynamic Type on, and move the Dynamic Type slider to the X Large text setting.
 
-![A screenshot of the Xcode preview canvas. The Device settings mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view in Dark Mode, in a landscape right orientation, with extra large text on an iPad.](https://docs-assets.developer.apple.com/published/18378e0001627e196d19f14adf33317f/dynamically-previewing-6-device-settings%402x.png)
+![A screenshot of the Canvas Device Settings dialog showing the Color Scheme, Orientation, and Dynamic Type switches and controls.](https://docs-assets.developer.apple.com/published/346e65058495301b80b971aba1a9dcbc/dynamically-previewing-6-device-settings%402x.png)
 
 ##### Test Different View Configurations
 
 Use variant mode to see how your view appears in different variations for a given configuration. For example, to test how well your view supports accessibility, select Variant mode from the bottom of the preview canvas, and select the Dynamic Type Variants option. Xcode displays your view with different sizes of text.
 
-![A screenshot of the Xcode preview canvas. The variant mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view for each variant of dynamic size. Six previews are visible each displaying the view with a different size of text.](https://docs-assets.developer.apple.com/published/24fcbb9c9cc40e677bd29acde42ce9e9/dynamically-previewing-4-variant-mode%402x.png)
+![A screenshot of the preview canvas. The variant mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view for each variant of Dynamic Type size. Six previews are visible, each displaying the view with a different size of text.](https://docs-assets.developer.apple.com/published/9c5b54d89829edb79102568ae7a3f1e6/dynamically-previewing-4-variant-mode%402x.png)
 
 Preview canvas supports the following variations:
 
-> **Note**: Because variant mode shows all the values for a given device setting, you can override what variant mode displays by making further changes in Device settings. For example, to see how your view appears in different sizes of text in Dark Mode, select the Dynamic Type Variants option from Variant mode, and then enable the Dark Mode color scheme in Device settings.
+> **Note**: Because variant mode shows all the values for a given device setting, you can override what variant mode displays by making further changes in Canvas Device Settings. For example, to see how your view appears in different sizes of text in dark appearance, toggle Dynamic Type on, toggle Color Scheme on, and select Dark Appearance under Color Scheme.
 
 ##### Preview on a Specific Device
 
-To see how your view displays on a specific device, select the Preview destination picker option, and then select the device you want your preview to display. When you do, Xcode displays a preview of your view on that device.
+To see how your view displays on a specific device, choose the device from the Preview Device pop-up menu at the bottom of the preview canvas. When you do, Xcode displays a preview of your view on that device.
 
-![A screenshot of the Xcode preview canvas. The preview destination mode button at the bottom of the preview canvas is active, set to iPad. The preview canvas displays a preview of the view on an iPad.](https://docs-assets.developer.apple.com/published/d4010f14c748099f82bbb9d7ea74aecd/dynamically-previewing-5-preview-destination%402x.png)
+![A screenshot of the preview canvas. The preview destination mode button at the bottom of the preview canvas is active, set to iPad. The preview canvas displays a preview of the view on an iPad.](https://docs-assets.developer.apple.com/published/11251cfda86e026c7b59f29b05105045/dynamically-previewing-5-preview-destination%402x.png)
 
 ##### Capture Specific Previews in Code
 
-In addition to the preview options Xcode provides, you can also customize and configure previews you want to reuse programmatically in code.
+In addition to the preview options Xcode provides, you can also customize and configure previews you want to reuse programmatically.
 
 For example, you can add a name to more easily track what each preview displays. When you pass the name of your preview as a string into the preview macro, the name appears in the title of the preview in the preview canvas.
 
@@ -73,6 +77,8 @@ For example, you can add a name to more easily track what each preview displays.
    Content()
 }
 ```
+
+> **Note**: If you add multiple preview and playground macros to a file, you can switch between them using the tabs that appear at the top of the canvas. Xcode uses the name that you pass to the macro as the label for that preview. To add playgrounds to your Swift code, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
 
 You can also control how your preview displays by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait/landscapeLeft) type property into the  [`init(_:traits:body:)`](https://developer.apple.com/documentation/DeveloperToolsSupport/Preview/init(_:traits:body:)-8pemr) preview initializer to tell Xcode which orientation to display.
 
@@ -198,7 +204,7 @@ Instead, create views with the minimal amount of data they need, favoring simple
 
 The following example shows how simple data types, like `String` and `enum`, can be used to preview a view in various ways using the preview macro.
 
-![A screenshot of the preview canvas displaying six previews of a data row view in various test scenario configurations. The preview canvas displays view variations for online offline status, with and without an avatar image, and long and short display names.](https://docs-assets.developer.apple.com/published/56f22860fb71dc79905ddbd2df95e955/dynamically-previewing-7-minimal-data%402x.png)
+![A screenshot of the preview canvas displaying six previews of a data row view in various test scenario configurations. The preview canvas displays view variations for online and offline status, with and without an avatar image, and long and short display names.](https://docs-assets.developer.apple.com/published/81ff991a6b05b57b33bcff2bfbd8d1fe/dynamically-previewing-7-minimal-data%402x.png)
 
 ##### Reduce Your App Size with Development Assets
 

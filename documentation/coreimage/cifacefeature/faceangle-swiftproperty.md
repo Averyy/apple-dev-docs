@@ -26,7 +26,7 @@ Rotation is measured counterclockwise in degrees, with zero indicating that a li
 ## See Also
 
 - [var bounds: CGRect](cifacefeature/bounds-swift.property.md)
-  A rectangle indicating the position and dimensions of the face in image coordinates.
+  A rectangle indicating the position and extent of the face feature in image coordinates.
 - [var hasFaceAngle: Bool](cifacefeature/hasfaceangle-swift.property.md)
   A Boolean value that indicates whether information about face rotation is available.
 

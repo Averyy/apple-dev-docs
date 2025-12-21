@@ -21,7 +21,7 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 
 #### Return Value
 
-Return [`false`](https://developer.apple.com/documentation/swift/false) to prevent the gesture recognizer from seeing this event.
+Return [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the gesture recognizer from seeing this event.
 
 #### Discussion
 

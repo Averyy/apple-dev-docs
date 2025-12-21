@@ -17,7 +17,7 @@ var outputMeterLevel: Float { get }
 
 #### Discussion
 
-The value of this property is undefined if [`isOutputMeteringEnabled`](gkvoicechatservice/isoutputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is undefined if [`isOutputMeteringEnabled`](gkvoicechatservice/isoutputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The volume level is the aggregate volume of all remote participants, modified by the [`remoteParticipantVolume`](gkvoicechatservice/remoteparticipantvolume.md) property.
 

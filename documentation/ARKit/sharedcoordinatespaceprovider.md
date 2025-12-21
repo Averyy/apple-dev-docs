@@ -6,7 +6,7 @@
 Provides ability to establish a shared coordinate space among multiple participants.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

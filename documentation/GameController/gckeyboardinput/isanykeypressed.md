@@ -21,7 +21,7 @@ var isAnyKeyPressed: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user is pressing a key; otherwise, the user isn’t. You can use this property to check whether the user presses any key before getting the state of specific keys.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the user is pressing a key; otherwise, the user isn’t. You can use this property to check whether the user presses any key before getting the state of specific keys.
 
 ## See Also
 

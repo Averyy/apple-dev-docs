@@ -6,16 +6,22 @@ Learn about changes to Xcode.
 
 #### Overview
 
-You get Xcode from the Mac App Store. It’s a free download that installs directly into the Applications folder.
+Xcode offers the tools you need to develop, test, and distribute apps for all Apple platforms, including intelligent code completion, simulators for Apple devices, advanced profiling and debugging tools, and more.
 
-The Apple Developer Program provides everything you need to build and distribute your apps on the App Store for iPhone, iPad, Mac, and Apple Watch. Membership includes access to beta OS releases, advanced app capabilities, and tools to develop, test, and distribute apps and Safari extensions. For more information, visit [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/).
+Xcode is available on the [`Mac App Store`](https://developer.apple.comhttps://apps.apple.com/app/xcode/id497799835?ls=1&mt=12). The latest beta versions of Xcode are available on the [`developer website`](https://developer.apple.comhttps://developer.apple.com/download/).
 
 For information about Xcode Cloud releases, see [`Xcode Cloud release notes`](https://developer.apple.comhttps://developer.apple.com/xcode-cloud/release-notes/).
 
 ## Topics
 
 ### Xcode 26
-- [Xcode 26 Beta 2 Release Notes](xcode-26-release-notes.md)
+- [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [Xcode 26.1.1 Release Notes](xcode-26_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [Xcode 26.0.1 Release Notes](xcode-26_0_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [Xcode 26 Release Notes](xcode-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### Xcode 16
 - [Xcode 16.4 Release Notes](xcode-16_4-release-notes.md)

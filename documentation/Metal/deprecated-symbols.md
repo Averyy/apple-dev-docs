@@ -1,4 +1,4 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Review unsupported symbols and their replacements.
 
 ## Topics
 
-### Deprecated Methods
+### Deprecated methods
 - [func useResource(any MTLResource, usage: MTLResourceUsage)](mtlrendercommandencoder/useresource(_:usage:).md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
 - [func use(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:usage:stages:).md)

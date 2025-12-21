@@ -27,10 +27,6 @@ enum RoutePreference
   The option that specifies any available route.
 - [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
   The option that requests the framework avoid certain routes.
-- [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
-  The option that specifies any available route.
-- [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
-  The option that requests the framework avoid certain routes.
 ### Initializers
 - [init?(rawValue: Int)](mkdirections/routepreference/init(rawvalue:).md)
 

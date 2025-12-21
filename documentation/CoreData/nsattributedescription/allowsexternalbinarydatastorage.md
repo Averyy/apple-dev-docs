@@ -22,7 +22,7 @@ var allowsExternalBinaryDataStorage: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attribute allows external binary storage, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If this value is [`true`](https://developer.apple.com/documentation/swift/true), the corresponding attribute may be stored in a file external to the persistent store itself.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the attribute allows external binary storage, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). If this value is [`true`](https://developer.apple.com/documentation/Swift/true), the corresponding attribute may be stored in a file external to the persistent store itself.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 This point is in the coordinate space of `entity`
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

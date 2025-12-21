@@ -22,7 +22,7 @@ static let lightingModel: SCNShaderModifierEntryPoint
 
 #### Discussion
 
-Shader modifiers for this entry point may execute in either the vertex or fragment processing stage. If the litPerPixel property of a material affected by the shader modifier is [`true`](https://developer.apple.com/documentation/swift/true), the snippet executes in the fragment processing stage; otherwise the snippet executes in the vertex processing stage.
+Shader modifiers for this entry point may execute in either the vertex or fragment processing stage. If the litPerPixel property of a material affected by the shader modifier is [`true`](https://developer.apple.com/documentation/Swift/true), the snippet executes in the fragment processing stage; otherwise the snippet executes in the vertex processing stage.
 
 The surface entry point defines the following structures:
 

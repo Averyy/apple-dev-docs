@@ -7,12 +7,11 @@
 An optional texture containing your game’s custom UI that this frame interpolator evaluates.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.11+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -24,7 +23,7 @@ var uiTexture: (any MTLTexture)? { get set }
 
 The frame interpolator uses this property to overlay your custom UI on any frame data it produces into [`outputTexture`](mtlfxframeinterpolatorbase/outputtexture.md).
 
-Use property [`isUITextureComposited`](mtlfxframeinterpolatorbase/isuitexturecomposited.md) to indicate to this frame interpolator if [`colorTexture`](mtlfxframeinterpolatorbase/colortexture.md) contains a precomposition of this UI to avoid it producing incorrect results for the overlay.
+Use property [`isUITextureComposited`](mtlfxframeinterpolatorbase/isuitexturecomposited.md) to indicate to this frame interpolator if this texture contains a precomposition of [`colorTexture`](mtlfxframeinterpolatorbase/colortexture.md)and UI.
 
 
 ---

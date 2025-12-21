@@ -25,7 +25,7 @@ An array of audio components that pass the test.
 
 #### Discussion
 
-For each audio component the manager finds, the system calls the block method. If the block returns [`true`](https://developer.apple.com/documentation/swift/true), the method adds `AVAudioComponent` instance to the array.
+For each audio component the manager finds, the system calls the block method. If the block returns [`true`](https://developer.apple.com/documentation/Swift/true), the method adds `AVAudioComponent` instance to the array.
 
 ## Parameters
 

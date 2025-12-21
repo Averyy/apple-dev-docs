@@ -38,6 +38,8 @@ You can use dialog severity to indicate that people need to take extra care when
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

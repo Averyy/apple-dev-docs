@@ -15,7 +15,7 @@ Provide a great user experience with pointing devices, by incorporating pointer 
 
 ##### Configure the Sample Code Project
 
-To run the sample in Xcode, you need an iPad with iPadOS 14.0 or later and a Trackpad or Mouse connected, or set the Simulator to any model of iPad.
+To run the sample in Xcode, you need an iPad with iPadOS 14.0 or later and a trackpad or mouse connected, or set the simulator to any model of iPad.
 
 ## See Also
 

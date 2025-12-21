@@ -6,10 +6,10 @@
 A type that represents a mobile document raw data request.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -53,7 +53,7 @@ protocol MobileDocumentRawDataRequest : MobileDocumentRequest
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

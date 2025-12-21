@@ -6,8 +6,8 @@
 A structure that represents RFC 3994 composing indicator content in an RCS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,28 +25,18 @@ This content type indicates whether the party sending the message is currently a
 ### Creating a composing indicator instance
 - [init(state: RCSMessage.ComposingIndicator.State, lastActive: Date?, contentType: UTType?, refreshInterval: Duration?)](rcsmessage/composingindicator/init(state:lastactive:contenttype:refreshinterval:).md)
 ### Accessing composing indicator properties
-- [let state: RCSMessage.ComposingIndicator.State](rcsmessage/composingindicator/state-swift.property.md)
+- [var state: RCSMessage.ComposingIndicator.State](rcsmessage/composingindicator/state-swift.property.md)
   The state of the composer.
 - [RCSMessage.ComposingIndicator.State](rcsmessage/composingindicator/state-swift.enum.md)
   An enumeration that represents the state of the indicator.
-- [let lastActive: Date?](rcsmessage/composingindicator/lastactive.md)
+- [var lastActive: Date?](rcsmessage/composingindicator/lastactive.md)
   The time of last activity.
-- [let contentType: UTType?](rcsmessage/composingindicator/contenttype.md)
+- [var contentType: UTType?](rcsmessage/composingindicator/contenttype.md)
   The type of message being composed.
 - [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
-- [let refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
+- [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/composingindicator/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsmessage/composingindicator/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing composing indicators
-- [static func == (RCSMessage.ComposingIndicator, RCSMessage.ComposingIndicator) -> Bool](rcsmessage/composingindicator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/composingindicator/equatable-implementations.md)
 
 ## Relationships
 

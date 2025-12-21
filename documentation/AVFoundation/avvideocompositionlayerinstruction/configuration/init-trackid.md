@@ -6,18 +6,23 @@
 Creates a new video composition layer instruction for the given track ID.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 init(trackID: CMPersistentTrackID = .zero)
 ```
+
+## See Also
+
+- [init(assetTrack: AVAssetTrack)](avvideocompositionlayerinstruction/configuration/init(assettrack:).md)
+  Creates a new video composition layer instruction for the given track.
 
 
 ---

@@ -31,10 +31,6 @@ An async sequence of windowed outputs.
 
 ## See Also
 
-- [SlidingWindowTransformer.Input](slidingwindowtransformer/input.md)
-  The input type.
-- [SlidingWindowTransformer.Output](slidingwindowtransformer/output.md)
-  The output type.
 - [SlidingWindowTransformer.WindowSequence](slidingwindowtransformer/windowsequence.md)
   An async sequence of windows.
 

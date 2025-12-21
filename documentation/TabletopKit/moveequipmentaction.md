@@ -25,6 +25,8 @@ To create a move equipment action, use the [`moveEquipment(_:childOf:order:pose:
   The ID of the equipment being moved.
 - [var parentID: EquipmentIdentifier](moveequipmentaction/parentid.md)
   The equipment ID the moved equipment is being grouped under
+- [var playerID: Player.ID?](moveequipmentaction/playerid.md)
+  The ID of the player who is moving the equipment.
 - [var order: MoveEquipmentAction.Order?](moveequipmentaction/order-swift.property.md)
   The order in which the equipment should be inserted.
 - [MoveEquipmentAction.Order](moveequipmentaction/order-swift.enum.md)
@@ -35,9 +37,6 @@ To create a move equipment action, use the [`moveEquipment(_:childOf:order:pose:
 ### Getting game-specific information
 - [var context: UInt64](moveequipmentaction/context.md)
   An integer value that your game uses.
-### Instance Properties
-- [var playerID: Player.ID?](moveequipmentaction/playerid.md)
-  The ID of the player who is moving the equipment.
 
 ## Relationships
 
@@ -59,6 +58,8 @@ To create a move equipment action, use the [`moveEquipment(_:childOf:order:pose:
   An action that updates the game counter.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

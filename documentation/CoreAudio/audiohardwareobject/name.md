@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A String that contains the human readable name of the object.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

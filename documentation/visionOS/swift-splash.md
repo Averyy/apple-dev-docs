@@ -5,8 +5,8 @@
 Use RealityKit to create an interactive ride in visionOS.
 
 **Availability**:
-- visionOS 2.0+
-- Xcode 16.0+
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -162,7 +162,7 @@ public func calculateRideDuration() {
 
 ##### Interact with the Ride
 
-To build and edit the ride, players interact with Swift Splash in two different ways. They interact with SwiftUI windows to perform certain tasks, such as adding a new piece or deleting an existing piece of the ride. They also manipulate slide pieces using standard visionOS gestures, including taps, double taps, drags, and rotates. The player taps on a piece to select or deselect it. When a player double taps a piece, they select that piece without deselecting any other selected pieces. When someone drags a piece, it moves around the immsersive space, snapping together with other pieces if placed near one. A two-finger rotate gesture spins the selected track piece or pieces on the Z-axis.
+To build and edit the ride, players interact with Swift Splash in two different ways. They interact with SwiftUI windows to perform certain tasks, such as adding a new piece or deleting an existing piece of the ride. They also manipulate slide pieces using standard visionOS gestures, including taps, double taps, drags, and rotates. The player taps on a piece to select or deselect it. When a player double taps a piece, they select that piece without deselecting any other selected pieces. When someone drags a piece, it moves around the immersive space, snapping together with other pieces if placed near one. A two-finger rotate gesture spins the selected track piece or pieces on the Z-axis.
 
 Swift Splash handles all of these interactions using standard SwiftUI gestures targeted to an entity. To support any of these gestures at any time, the app declares them using [`SimultaneousGesture`](https://developer.apple.com/documentation/SwiftUI/SimultaneousGesture). The code for all of the gestures are contained in `TrackBuildingView`, which controls the app’s immersive space. Here’s how the app defines the rotation gesture:
 

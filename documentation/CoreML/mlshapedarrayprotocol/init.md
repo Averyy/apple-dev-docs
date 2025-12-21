@@ -26,10 +26,8 @@ init(_ multiArray: MLMultiArray)
 
 ## See Also
 
-- [init(converting: MLMultiArray)](mlshapedarrayprotocol/init(converting:)-3d2eu.md)
-  Creates a shaped array type by converting a multiarray.
-- [init<T>(converting: T)](mlshapedarrayprotocol/init(converting:)-701ib.md)
-  Creates a shaped array type by converting another shaped array type.
+- [init(converting:)](mlshapedarrayprotocol/init(converting:).md)
+  Initialize by converting a MLMultiArray of different scalar type.
 
 
 ---

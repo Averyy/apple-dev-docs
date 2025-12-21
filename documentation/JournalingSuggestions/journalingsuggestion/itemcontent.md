@@ -25,8 +25,6 @@ When a person selects an event in the [`JournalingSuggestionsPicker`](journaling
 ## Topics
 
 ### Identifying item contents
-- [var id: UUID](journalingsuggestion/itemcontent/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
 - [var representations: [any JournalingSuggestionAsset.Type]](journalingsuggestion/itemcontent/representations.md)
   An array of content types that a particular suggestion includes.
 ### Accessing suggestion data by type
@@ -34,9 +32,6 @@ When a person selects an event in the [`JournalingSuggestionsPicker`](journaling
   Retrieves a suggestion’s contents by returning a structure specific to the given content type.
 - [func hasContent<Content>(ofType: Content.Type) -> Bool](journalingsuggestion/itemcontent/hascontent(oftype:).md)
   Checks if the suggestion contains information for the given type.
-### Type Aliases
-- [JournalingSuggestion.ItemContent.ID](journalingsuggestion/itemcontent/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

@@ -6,12 +6,12 @@
 Descriptor for an instance acceleration structure.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -37,7 +37,7 @@ Use a [`MTLResidencySet`](mtlresidencyset.md) to mark residency of all buffers a
 - [var instanceDescriptorStride: Int](mtl4instanceaccelerationstructuredescriptor/instancedescriptorstride.md)
   Sets the stride, in bytes, between instance descriptors the instance descriptor buffer references.
 - [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](mtl4instanceaccelerationstructuredescriptor/instancedescriptortype.md)
-  Sets the type of instance descriptor that the instance descriptor buffer references.
+  The type of instance descriptor that the instance descriptor buffer references.
 - [var instanceTransformationMatrixLayout: MTLMatrixLayout](mtl4instanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
   Specifies the layout for the transformation matrices in the instance descriptor buffer and the motion transformation matrix buffer.
 - [var motionTransformBuffer: MTL4BufferRange](mtl4instanceaccelerationstructuredescriptor/motiontransformbuffer.md)
@@ -64,7 +64,7 @@ Use a [`MTLResidencySet`](mtlresidencyset.md) to mark residency of all buffers a
 
 ## See Also
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
@@ -79,9 +79,9 @@ Use a [`MTLResidencySet`](mtlresidencyset.md) to mark residency of all buffers a
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
-  An object for encoding commands that build or refit acceleration structures.
+  Encodes commands that build and refit acceleration structures for a single pass.
 - [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
-  Options that describe which tasks you can perform on an acceleration structure and how the system performs those tasks.
+  Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 - [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
 
 

@@ -30,14 +30,10 @@ A dictionary of label predictions and confidence scores.
 
 - [func prediction(from: String) throws -> String](mltextclassifier/prediction(from:).md)
   Classifies a string with a label.
-- [func predictions(from: [String]) throws -> [String]](mltextclassifier/predictions(from:)-1u3f2.md)
+- [func predictions(from:)](mltextclassifier/predictions(from:).md)
   Classifies an array of strings with labels.
-- [func predictionsWithConfidence(from: [String]) throws -> [[String : Double]]](mltextclassifier/predictionswithconfidence(from:)-uezi.md)
+- [func predictionsWithConfidence(from:)](mltextclassifier/predictionswithconfidence(from:).md)
   Predicts multiple possible labels and their confidence scores for each string in the specified array.
-- [func predictions(from: MLDataColumn<String>) throws -> MLDataColumn<String>](mltextclassifier/predictions(from:)-40gtb.md)
-  Classifies a data column with labels.
-- [func predictionsWithConfidence(from: MLDataColumn<String>) throws -> MLDataColumn<[String : Double]>](mltextclassifier/predictionswithconfidence(from:)-1w9zo.md)
-  Predicts multiple possible labels and their confidence scores for each string in the specified data column.
 
 
 ---

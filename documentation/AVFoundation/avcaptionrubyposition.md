@@ -19,7 +19,7 @@ enum AVCaptionRubyPosition
 
 ## Topics
 
-### Ruby Positions
+### Ruby positions
 - [AVCaptionRubyPosition.before](avcaptionrubyposition/before.md)
   Display ruby text above horizontal text, or to the right of vertical text in a right-to-left block progression.
 - [AVCaptionRubyPosition.after](avcaptionrubyposition/after.md)

@@ -6,9 +6,9 @@
 Sets the current Automatic Sign-In token.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 

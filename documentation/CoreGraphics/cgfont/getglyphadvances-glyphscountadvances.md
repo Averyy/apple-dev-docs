@@ -22,7 +22,7 @@ func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: Unsa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) unless the advance widths can’t be provided for some reason.
+[`true`](https://developer.apple.com/documentation/Swift/true) unless the advance widths can’t be provided for some reason.
 
 ## Parameters
 

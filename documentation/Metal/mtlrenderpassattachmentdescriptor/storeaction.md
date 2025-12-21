@@ -21,8 +21,8 @@ var storeAction: MTLStoreAction { get set }
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
-- [Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Storing data a pass makes with custom sample positions for a subsequent pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
 #### Discussion
 
@@ -31,7 +31,7 @@ If your app doesn’t need the data in the texture after completing the renderin
 - [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
 - [`Metal feature set tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/metal-feature-set-tables.zip)
 
-When the store action is either [`MTLStoreAction.multisampleResolve`](mtlstoreaction/multisampleresolve.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md), the [`resolveTexture`](mtlrenderpassattachmentdescriptor/resolvetexture.md) property must be set to the texture to use as the target for the resolve action. Use the [`resolveLevel`](mtlrenderpassattachmentdescriptor/resolvelevel.md), [`resolveSlice`](mtlrenderpassattachmentdescriptor/resolveslice.md), and [`resolveDepthPlane`](mtlrenderpassattachmentdescriptor/resolvedepthplane.md) properties to specify the mipmap level, cube slice, and depth plane of the resolve texture, respectively.
+When the store action is either [`MTLStoreAction.multisampleResolve`](mtlstoreaction/multisampleresolve.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md), the [`resolveTexture`](mtlrenderpassattachmentdescriptor/resolvetexture.md) property needs to be set to the texture to use as the target for the resolve action. Use the [`resolveLevel`](mtlrenderpassattachmentdescriptor/resolvelevel.md), [`resolveSlice`](mtlrenderpassattachmentdescriptor/resolveslice.md), and [`resolveDepthPlane`](mtlrenderpassattachmentdescriptor/resolvedepthplane.md) properties to specify the mipmap level, cube slice, and depth plane of the resolve texture, respectively.
 
 For color render targets, the default value is [`MTLStoreAction.store`](mtlstoreaction/store.md). For depth or stencil render targets, the default value is [`MTLStoreAction.dontCare`](mtlstoreaction/dontcare.md).
 

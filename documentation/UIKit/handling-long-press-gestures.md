@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram showing a single-finger long-press gesture](https://docs-assets.developer.apple.com/published/022d87723d9726cc1bc67694ea907abd/media-3004403%402x.png)
+![A diagram showing a single-finger long-press gesture.](https://docs-assets.developer.apple.com/published/5d9ad7f706eef9c5d1408527e29cb788/handling-long-press-gestures-1%402x.png)
 
 Long-press gestures are continuous gestures, meaning that your action method may be called multiple times as the state changes. After a person’s fingers have touched the screen for the minimum amount of time, a long-press gesture recognizer enters the [`UIGestureRecognizer.State.began`](uigesturerecognizer/state-swift.enum/began.md) state. The gesture recognizer moves to the [`UIGestureRecognizer.State.changed`](uigesturerecognizer/state-swift.enum/changed.md) state if the fingers move or if any other changes occur to the touches. The gesture recognizer remains in the [`UIGestureRecognizer.State.changed`](uigesturerecognizer/state-swift.enum/changed.md) state as long as the fingers remain down, even if those fingers move outside of the initial view. When a person’s fingers lift from the screen, the gesture recognizer enters the [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) state.
 
@@ -47,7 +47,7 @@ The following code shows an action method that displays a context menu on top of
 
 If the code for your long-press gesture recognizer isn’t called, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - The tap duration was greater than what is specified in the [`minimumPressDuration`](uilongpressgesturerecognizer/minimumpressduration.md) property.
 - The number of taps was equal to the number specified in the [`numberOfTapsRequired`](uilongpressgesturerecognizer/numberoftapsrequired.md) property.
 - The number of fingers was equal to the number specified in the [`numberOfTouchesRequired`](uilongpressgesturerecognizer/numberoftouchesrequired.md) property.

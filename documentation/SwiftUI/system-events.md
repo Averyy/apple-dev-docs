@@ -13,7 +13,7 @@ Specify view and scene modifiers to indicate how your app responds to certain sy
 ## Topics
 
 ### Sending and receiving user activities
-- [Restoring Your App’s State with SwiftUI](restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [func userActivity<P>(String, element: P?, (P, NSUserActivity) -> ()) -> some View](view/useractivity(_:element:_:).md)
   Advertises a user activity type.
@@ -41,7 +41,7 @@ Specify view and scene modifiers to indicate how your app responds to certain sy
 - [struct SnapshotData](snapshotdata.md)
   The associated data of a snapshot background task.
 - [struct SnapshotResponse](snapshotresponse.md)
-  Your appplication’s response to a snapshot background task.
+  Your application’s response to a snapshot background task.
 ### Importing and exporting transferable items
 - [func importableFromServices<T>(for: T.Type, action: ([T]) -> Bool) -> some View](view/importablefromservices(for:action:).md)
   Enables importing items from services, such as Continuity Camera on macOS.

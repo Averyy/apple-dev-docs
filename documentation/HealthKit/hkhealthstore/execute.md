@@ -21,13 +21,13 @@ func execute(_ query: HKQuery)
 
 ## Mentions
 
-- [Reading route data](reading-route-data.md)
-- [Executing Observer Queries](executing-observer-queries.md)
 - [Executing Activity Summary Queries](executing-activity-summary-queries.md)
-- [Executing Sample Queries](executing-sample-queries.md)
 - [Executing Anchored Object Queries](executing-anchored-object-queries.md)
-- [Executing Statistical Queries](executing-statistical-queries.md)
+- [Executing Observer Queries](executing-observer-queries.md)
+- [Executing Sample Queries](executing-sample-queries.md)
 - [Executing Source Queries](executing-source-queries.md)
+- [Executing Statistical Queries](executing-statistical-queries.md)
+- [Reading route data](reading-route-data.md)
 
 #### Discussion
 

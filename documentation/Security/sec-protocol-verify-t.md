@@ -20,9 +20,9 @@ typealias sec_protocol_verify_t = (sec_protocol_metadata_t, sec_trust_t, @escapi
 
 #### Discussion
 
-```None
- Block to be invoked when the protocol instance must verify the peer.
+Block to be invoked when the protocol instance must verify the peer.
 
+```None
  NOTE: this may be called one or more times for a given connection.
 ```
 

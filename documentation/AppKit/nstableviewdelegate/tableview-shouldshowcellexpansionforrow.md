@@ -17,11 +17,11 @@ optional func tableView(_ tableView: NSTableView, shouldShowCellExpansionFor tab
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an expansion tooltip should be displayed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if an expansion tooltip should be displayed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-An expansion tooltip can be displayed when the pointer hovers over a cell that contains truncated text. When this method returns [`true`](https://developer.apple.com/documentation/swift/true), the cell’s full contents is shown in an expansion tooltip, which looks similar to a help tag.
+An expansion tooltip can be displayed when the pointer hovers over a cell that contains truncated text. When this method returns [`true`](https://developer.apple.com/documentation/Swift/true), the cell’s full contents is shown in an expansion tooltip, which looks similar to a help tag.
 
 > **Note**:  This method is only valid for [`NSCell`](nscell.md)-based table views.
 

@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+A symbol effect that applies the Breathe animation to symbol images.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static var breathe: BreatheSymbolEffect { get }
 ```
+
+#### Discussion
+
+The Breathe animation smoothly scales a symbol up and down.
 
 ## See Also
 
@@ -33,7 +39,9 @@ static var breathe: BreatheSymbolEffect { get }
 - [static var variableColor: VariableColorSymbolEffect](symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [static var rotate: RotateSymbolEffect](symboleffect/rotate.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [static var wiggle: WiggleSymbolEffect](symboleffect/wiggle.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

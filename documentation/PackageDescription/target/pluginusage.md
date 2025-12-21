@@ -22,9 +22,7 @@ enum PluginUsage
 - [case plugin(name: String, package: String?)](target/pluginusage/plugin(name:package:).md)
   Specifies the use of a plug-in product in a package dependency.
 ### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](target/pluginusage/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](target/pluginusage/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](target/pluginusage/expressiblebyunicodescalarliteral-implementations.md)
 
 ## Relationships
 

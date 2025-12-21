@@ -57,7 +57,7 @@ class CMBlockBuffer
 - [CMBlockBuffer.Flags](cmblockbuffer/flags.md)
   A structure that defines feature and control flags.
 - [CMBlockBuffer.Slice](cmblockbuffer/slice.md)
-  A structure that defines a slice of a block buffer.
+  A slice of a `CMBlockBuffer` instance.
 ### Initializers
 - [init(referencing: CMBlockBuffer)](cmblockbuffer/init(referencing:).md)
 ### Type Aliases

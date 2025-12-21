@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The maximum function call depth from the top-most shader function.
+The maximum call stack depth for indirect function calls in tile shaders.
 
 **Availability**:
 - iOS 15.0+
@@ -21,7 +21,11 @@ var maxCallStackDepth: Int { get set }
 
 #### Discussion
 
-The default value is 1.
+The property’s default value is `1`. Change its value if you use recursive functions in your tile dispatch.
+
+The maximum call stack depth applies only to indirect function calls in your shader, and affects the upper bound of stack memory for each thread. Indirect function calls include those to visible functions, intersection functions, and to dynamic libraries.
+
+> 💡 **Tip**:  To avoid a runtime performance impact, keep this value as small as possible because the framework reserves a large call stack.
 
 ## See Also
 

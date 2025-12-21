@@ -21,9 +21,9 @@ var masksToBounds: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), Core Animation creates an implicit clipping mask that matches the bounds of the layer and includes any corner radius effects. If a value for the [`mask`](calayer/mask.md) property is also specified, the two masks are multiplied to get the final mask value.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), Core Animation creates an implicit clipping mask that matches the bounds of the layer and includes any corner radius effects. If a value for the [`mask`](calayer/mask.md) property is also specified, the two masks are multiplied to get the final mask value.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

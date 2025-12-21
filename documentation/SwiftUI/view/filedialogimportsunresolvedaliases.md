@@ -32,15 +32,15 @@ By default, file dialogs resolve aliases and provide the URL of the item referre
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](view/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(_:)](view/filedialogconfirmationlabel(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogCustomizationID(String) -> some View](view/filedialogcustomizationid(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
 - [func fileDialogDefaultDirectory(URL?) -> some View](view/filedialogdefaultdirectory(_:).md)
   Configures the `fileExporter`, `fileImporter`, or `fileMover` to open with the specified default directory.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
-  On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
+  On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 - [struct FileDialogBrowserOptions](filedialogbrowseroptions.md)
   The way that file dialogs present the file system.
 

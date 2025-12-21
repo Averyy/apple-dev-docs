@@ -6,7 +6,7 @@
 Creates a drag configuration that can support drag-to-move and drag-to-delete in addition to drag-to-copy.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

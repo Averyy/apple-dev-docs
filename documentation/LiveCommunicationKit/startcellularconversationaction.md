@@ -3,11 +3,11 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: struct
 
-Struct representing a request to dial a conversation using the default calling application
+The action that starts a cellular conversation using the default calling app.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -16,27 +16,22 @@ Struct representing a request to dial a conversation using the default calling a
 struct StartCellularConversationAction
 ```
 
+## Mentions
+
+- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+
+#### Overview
+
+Use the `StartCellularConversationAction` to  initiate a conversation and let the system route the conversation to the default calling app. For more information, see [`Preparing your app to be the default dialer app`](preparing-your-app-to-be-the-default-dialer-app.md).
+
 ## Topics
 
-### Operators
-- [static func == (StartCellularConversationAction, StartCellularConversationAction) -> Bool](startcellularconversationaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](startcellularconversationaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [init(handle: Handle, cellularService: CellularService?)](startcellularconversationaction/init(handle:cellularservice:).md)
-  Initializer for a dial request which accepts a handle to dial and an account to use to dial with. If no account is provided then the system will choose an account to dial with or fail to dial
-- [init(recentConversation: ConversationHistoryManager.RecentConversation)](startcellularconversationaction/init(recentconversation:).md)
-### Instance Properties
-- [var hashValue: Int](startcellularconversationaction/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](startcellularconversationaction/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](startcellularconversationaction/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](startcellularconversationaction/equatable-implementations.md)
+### Request creation
+- [init(Handle, cellularService: CellularService?)](startcellularconversationaction/init(_:cellularservice:).md)
+  Creates an action that initiates a cellular network conversation.
+- [init(ConversationHistoryManager.RecentConversation)](startcellularconversationaction/init(_:).md)
+  Creates an action that initiates a cellular conversation using information from a recent conversation.
 
 ## Relationships
 
@@ -47,6 +42,15 @@ struct StartCellularConversationAction
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class TelephonyConversationManager](telephonyconversationmanager.md)
+  An interface for initiating cellular network conversations.
+- [struct CellularService](cellularservice.md)
+  A structure that represents the cellular service account to use for starting or joining a conversation.
+- [struct Handle](handle.md)
+  A way to reach a participant, such as a phone number or email address.
 
 
 ---

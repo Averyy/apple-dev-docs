@@ -32,11 +32,11 @@ See [`Apple’s Human Interface Guidelines`](https://developer.apple.comhttps://
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)
   A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
-  A message that tells the user why the app needs to access files in other apps’ sandbox containers.
+  A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSAppleEventsUsageDescription](information-property-list/nsappleeventsusagedescription.md)
-  A message that tells the user why the app is requesting the ability to send Apple events.
+  A message that tells people why the app is requesting the ability to send Apple events.
 - [NSSystemAdministrationUsageDescription](information-property-list/nssystemadministrationusagedescription.md)
-  A message in macOS that tells the user why the app is requesting to manipulate the system configuration.
+  A message in macOS that tells people why the app is requesting to manipulate the system configuration.
 - [ITSAppUsesNonExemptEncryption](information-property-list/itsappusesnonexemptencryption.md)
   A Boolean value indicating whether the app uses encryption.
 - [ITSEncryptionExportComplianceCode](information-property-list/itsencryptionexportcompliancecode.md)

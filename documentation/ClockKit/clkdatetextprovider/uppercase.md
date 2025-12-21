@@ -16,7 +16,7 @@ var uppercase: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`false`](https://developer.apple.com/documentation/swift/false). Set it to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) if you want the text provider to produce uppercase text.
+By default, this property is set to [`false`](https://developer.apple.com/documentation/Swift/false). Set it to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) if you want the text provider to produce uppercase text.
 
 ## See Also
 

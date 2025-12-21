@@ -70,9 +70,13 @@ Instances of this class are thread safe.
 ### Supporting Wi-Fi assist
 - [var enableFallback: Bool](nevpnprotocolikev2/enablefallback.md)
   A property to enable the use of cellular data when Wi-Fi connectivity is poor.
-### Instance Properties
+### Supporting quantum-secure cryptography
 - [var allowPostQuantumKeyExchangeFallback: Bool](nevpnprotocolikev2/allowpostquantumkeyexchangefallback.md)
+  A Boolean value that indicates whether servers that don’t support post-quantum key exchanges can skip them.
 - [var ppkConfiguration: NEVPNIKEv2PPKConfiguration?](nevpnprotocolikev2/ppkconfiguration.md)
+  The configuration for a post-quantum pre-shared key (PPK).
+- [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
+  A class that manages parameters of a post-quantum pre-shared key (PPK).
 
 ## Relationships
 

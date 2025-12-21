@@ -17,7 +17,7 @@ func matchesAppleEventCode(_ appleEventCode: FourCharCode) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s primary four-character Apple event code or any of its secondary codes (its synonyms) matches `code`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s primary four-character Apple event code or any of its secondary codes (its synonyms) matches `code`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

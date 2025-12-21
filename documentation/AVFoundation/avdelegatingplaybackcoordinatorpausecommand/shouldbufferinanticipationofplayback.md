@@ -21,7 +21,7 @@ var shouldBufferInAnticipationOfPlayback: Bool { get }
 
 #### Discussion
 
-A [`true`](https://developer.apple.com/documentation/swift/true) value indicates that a participant player requests starting playback at the [`anticipatedPlaybackRate`](avdelegatingplaybackcoordinatorpausecommand/anticipatedplaybackrate.md) value.
+A [`true`](https://developer.apple.com/documentation/Swift/true) value indicates that a participant player requests starting playback at the [`anticipatedPlaybackRate`](avdelegatingplaybackcoordinatorpausecommand/anticipatedplaybackrate.md) value.
 
 ## See Also
 

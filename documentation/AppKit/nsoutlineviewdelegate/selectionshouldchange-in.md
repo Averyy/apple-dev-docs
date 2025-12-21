@@ -17,7 +17,7 @@ optional func selectionShouldChange(in outlineView: NSOutlineView) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit `outlineView` to change its selection (typically a row being edited), [`false`](https://developer.apple.com/documentation/swift/false) to deny permission.
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit `outlineView` to change its selection (typically a row being edited), [`false`](https://developer.apple.com/documentation/Swift/false) to deny permission.
 
 #### Discussion
 

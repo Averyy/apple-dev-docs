@@ -20,7 +20,7 @@ The `AVCaptureFileOutputDelegate` protocol defines an interface for delegates of
 
 ## Topics
 
-### Sample Processing
+### Sample processing
 - [func fileOutputShouldProvideSampleAccurateRecordingStart(AVCaptureFileOutput) -> Bool](avcapturefileoutputdelegate/fileoutputshouldprovidesampleaccuraterecordingstart(_:).md)
   Allows a client to opt in to frame accurate recording in [`fileOutput(_:didOutputSampleBuffer:from:)`](avcapturefileoutputdelegate/fileoutput(_:didoutputsamplebuffer:from:).md).
 - [func fileOutput(AVCaptureFileOutput, didOutputSampleBuffer: CMSampleBuffer, from: AVCaptureConnection)](avcapturefileoutputdelegate/fileoutput(_:didoutputsamplebuffer:from:).md)

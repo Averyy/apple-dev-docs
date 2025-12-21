@@ -81,7 +81,7 @@ When the import is complete, the browser calls one of the following delegate met
 
 The document browser enables the Add button (+) only when both of the following are true:
 
-- The [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true) (the default value).
+- The [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true) (the default value).
 - The document browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
 > **Note**:  The document browser cannot create new documents if you do not implement this delegate method.

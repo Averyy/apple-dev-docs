@@ -30,7 +30,7 @@ var usesFontLeading: Bool { get set }
   A Boolean value that indicates whether to substitute visible glyphs for whitespace and other typically invisible characters.
 - [var showsControlCharacters: Bool](nslayoutmanager/showscontrolcharacters.md)
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
-- [var backgroundLayoutEnabled: Bool { get set }](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.

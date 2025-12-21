@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the software update policy.
+The payload that configures the software update policy.
 
 **Availability**:
 - macOS 10.7+
@@ -64,13 +64,12 @@ Specify `com.apple.SoftwareUpdate` as the payload type.
     <integer>1</integer>
 </dict>
 </plist>
-
 ```
 
 ## See Also
 
 - [object SystemMigration](systemmigration.md)
-  The payload you use to configure system migration.
+  The payload that configures system migration.
 
 
 ---

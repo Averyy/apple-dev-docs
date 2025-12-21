@@ -8,7 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS ?+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -33,7 +33,7 @@ enum CustomShaderStage
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
-  Create dynamic materials without Metal.
+  A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

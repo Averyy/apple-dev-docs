@@ -9,9 +9,12 @@ This document describes the data types and constants found in the Foundation fra
 ### Classes
 - [class NSKeyValueObservation](nskeyvalueobservation.md)
 - [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+  A collection of key-value observations which may be registered with multiple observable objects
 - [class NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobserverssnapshot.md)
+  A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 ### Protocols
 - [protocol DiscreteFormatStyle](discreteformatstyle.md)
+  A format style that transforms a continuous input into a discrete output and provides information about its discretization boundaries.
 - [protocol NSKeyValueObservingCustomization](nskeyvalueobservingcustomization.md)
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 ### Structures
@@ -33,6 +36,7 @@ This document describes the data types and constants found in the Foundation fra
 ### Variables
 - [let NSOperationNotSupportedForKeyException: String](nsoperationnotsupportedforkeyexception.md)
 - [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+  Key in the userInfo dictionary of an NSError received during a failed upload.
 - [var kCFStringEncodingASCII: CFStringEncoding](kcfstringencodingascii.md)
 ### Macros
 - [macro Expression<each Input, Output>((repeat each Input) -> Output) -> Expression<repeat each Input, Output>](expression(_:).md)

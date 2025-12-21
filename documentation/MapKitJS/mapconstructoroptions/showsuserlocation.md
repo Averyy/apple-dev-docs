@@ -11,7 +11,7 @@ A Boolean value that determines whether to show the user’s location on the map
 ## Declaration
 
 ```swift
-attribute boolean showsUserLocation;
+showsUserLocation?: boolean;
 ```
 
 #### Discussion

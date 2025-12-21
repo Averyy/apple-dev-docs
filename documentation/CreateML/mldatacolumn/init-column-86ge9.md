@@ -43,6 +43,8 @@ print(doublesColumn) // Prints [1.0, 2.0, 3.0, 4.0, 5.0]
 
 - [func map<T>(to: T.Type) -> MLDataColumn<T>](mldatacolumn/map(to:).md)
   Creates a new column by converting this column to the given type.
+- [init(column:)](mldatacolumn/init(column:).md)
+  Creates a new column of machine learning sequences from a given column whose elements can be converted to sequences.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-5rg9u.md)
   Creates a new column of integers from a given column whose elements can be converted to integers.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-2rxtu.md)

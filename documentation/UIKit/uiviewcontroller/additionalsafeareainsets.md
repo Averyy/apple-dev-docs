@@ -21,8 +21,8 @@ var additionalSafeAreaInsets: UIEdgeInsets { get set }
 
 ## Mentions
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
 
 #### Discussion
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response that contains a single app store version experiment v2response resource.
+
 **Availability**:
 - App Store Connect API 2.4+
 
@@ -15,9 +17,13 @@ object AppStoreVersionExperimentV2Response
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)
+  The data structure that represents an app store version experiment v2 resource.
 - [object AppStoreVersionExperimentV2CreateRequest](appstoreversionexperimentv2createrequest.md)
+  The request body you use to create an store resource.
 - [object AppStoreVersionExperimentV2UpdateRequest](appstoreversionexperimentv2updaterequest.md)
+  The request body you use to update an app store version experiment v2update request.
 - [object AppStoreVersionExperimentsV2Response](appstoreversionexperimentsv2response.md)
+  A response that contains a single app store version experiments v2response resource.
 - [object AppStoreVersionExperiment](appstoreversionexperiment.md)
 - [object AppStoreVersionExperimentCreateRequest](appstoreversionexperimentcreaterequest.md)
 - [object AppStoreVersionExperimentResponse](appstoreversionexperimentresponse.md)

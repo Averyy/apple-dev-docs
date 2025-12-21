@@ -22,21 +22,19 @@ struct TemporalAdaptor<Base> where Base : Transformer, Base : Sendable
 
 ## Topics
 
-### Initializers
+### Creating a temporal adaptor
 - [init(Base)](temporaladaptor/init(_:).md)
   Creates a temporal transformer from a transformer.
-### Instance Methods
+### Applying a temporal adapter
 - [func applied(to: some TemporalSequence<Base.Input>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<TemporalAdaptor<Base>.Output>](temporaladaptor/applied(to:eventhandler:).md)
   Performs the transformation on each element of the input sequence.
-### Type Aliases
+### Supporting types
 - [TemporalAdaptor.Input](temporaladaptor/input.md)
   The input type.
 - [TemporalAdaptor.Output](temporaladaptor/output.md)
   The output type.
 - [TemporalAdaptor.OutputSequence](temporaladaptor/outputsequence.md)
   The output sequence type.
-### Default Implementations
-- [TemporalTransformer Implementations](temporaladaptor/temporaltransformer-implementations.md)
 
 ## Relationships
 

@@ -114,7 +114,7 @@ On return, the operation recreates the contents of the directory previously arch
   Compress the contents of an entire directory and store the result on the file system.
 - [Compressing and saving a string to the file system](compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and Parsing an Archived String](decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 
 

@@ -11,7 +11,7 @@ A Boolean value that determines whether the map animates as the map region chang
 ## Declaration
 
 ```swift
-attribute boolean animate;
+animate?: boolean;
 ```
 
 ## See Also
@@ -20,6 +20,8 @@ attribute boolean animate;
   The minimum longitudinal and latitudinal span the map displays.
 - [padding](mapshowitemsoptions/padding.md)
   Spacing that the framework adds around the computed map region when showing items.
+- [cameraDistance](mapshowitemsoptions/cameradistance.md)
+  The distance from the center of the map to the camera, when showing the items.
 
 
 ---

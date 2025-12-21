@@ -10,7 +10,7 @@ Defines a 3D mesh’s structure and data.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -23,7 +23,7 @@ struct MeshDescriptor
 
 Create or modify 3D shapes in a RealityKit scene using `MeshDescriptor`, which provides properties and methods to define the vertices, normals, texture coordinates, and other attributes of the mesh.
 
-Apply the mesh to an [`Entity`](entity.md) by creating a [`MeshResource`](meshresource.md) with [`generate(from:)`](meshresource/generate(from:)-6l1q2.md), and create a [`ModelComponent`](modelcomponent.md) with [`init(mesh:materials:)`](modelcomponent/init(mesh:materials:).md).
+Apply the mesh to an [`Entity`](entity.md) by creating a [`MeshResource`](meshresource.md) with `MeshResource/generate(from:)-6l1q2`, and create a [`ModelComponent`](modelcomponent.md) with [`init(mesh:materials:)`](modelcomponent/init(mesh:materials:).md).
 
 Start by creating a basic triangle with a `MeshDescriptor` instance.
 

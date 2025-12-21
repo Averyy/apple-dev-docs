@@ -22,13 +22,13 @@ Preview a widget with an activity configuration, using the specified attributes 
 
 #### Overview
 
-The preview will allow you to step through the specified content states and test out the transitions between states.
+Provide the preview with sample data and use it to step through the specified content states and test out the transitions between them.
 
-> **Note**: The attributes must be of the type expected by the widget. (This will be enforced at run-time.)
+> **Note**: The attributes must be of the type that the widget expects.
 
 ## Parameters
 
-- `name`: An optional display name for the preview, which will appear in the canvas.
+- `name`: An optional display name for the preview that appears in the preview canvas.
 - `viewKind`: The kind of widget view to display.
 - `attributes`: The attributes with which to configure the widget.
 - `widget`: A closure producing the widget to be previewed.

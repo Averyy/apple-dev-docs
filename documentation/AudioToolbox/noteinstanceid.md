@@ -20,7 +20,7 @@ typealias NoteInstanceID = UInt32
 ## See Also
 
 - [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef = MIDIObjectRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
   A MIDI source or destination an entity owns.
 - [typealias MagicCookieInfo](magiccookieinfo.md)
   A structure holding magic cookie information.

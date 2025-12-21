@@ -16,7 +16,7 @@ The canonical audio data sample type for audio processing.
 ## Declaration
 
 ```swift
-typealias AudioUnitSampleType = Int32
+typealias AudioUnitSampleType = Float32
 ```
 
 #### Discussion

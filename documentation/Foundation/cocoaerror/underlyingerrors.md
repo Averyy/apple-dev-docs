@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A list of underlying errors, if any. It includes the values of both NSUnderlyingErrorKey and NSMultipleUnderlyingErrorsKey. If there are no underlying errors, returns an empty array.
+
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+

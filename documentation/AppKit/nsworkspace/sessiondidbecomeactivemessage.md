@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct SessionDidBecomeActiveMessage
 
 ### Initializers
 - [init()](nsworkspace/sessiondidbecomeactivemessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.SessionDidBecomeActiveMessage) -> Notification](nsworkspace/sessiondidbecomeactivemessage/makenotification(_:).md)
 
 ## Relationships
 

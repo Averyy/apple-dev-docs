@@ -21,7 +21,7 @@ class func handlesURLScheme(_ urlScheme: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if WebKit provides native support for the URL scheme, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if WebKit provides native support for the URL scheme, or [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 ## Parameters
 

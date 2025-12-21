@@ -23,12 +23,6 @@ case loadFailed
   The resource data was successfully loaded.
 - [NSURLHandle.Status.loadInProgress](nsurlhandle/status-swift.enum/loadinprogress.md)
   The resource data is in the process of loading.
-- [NSURLHandle.Status.notLoaded](nsurlhandle/status-swift.enum/notloaded.md)
-  The resource data has not been loaded.
-- [NSURLHandle.Status.loadSucceeded](nsurlhandle/status-swift.enum/loadsucceeded.md)
-  The resource data was successfully loaded.
-- [NSURLHandle.Status.loadInProgress](nsurlhandle/status-swift.enum/loadinprogress.md)
-  The resource data is in the process of loading.
 
 
 ---

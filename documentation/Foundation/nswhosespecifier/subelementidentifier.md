@@ -32,16 +32,6 @@ These constants are used by [`startSubelementIdentifier`](nswhosespecifier/start
   Any element that meets the specifier test.
 - [NSWhoseSpecifier.SubelementIdentifier.noSubelement](nswhosespecifier/subelementidentifier/nosubelement.md)
   No sub-element met the specifier test. Valid only for specifying the end sub-element.; that is, there is no end, so consider all elements.
-- [NSWhoseSpecifier.SubelementIdentifier.indexSubelement](nswhosespecifier/subelementidentifier/indexsubelement.md)
-  An element at a given index that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.everySubelement](nswhosespecifier/subelementidentifier/everysubelement.md)
-  Every element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.middleSubelement](nswhosespecifier/subelementidentifier/middlesubelement.md)
-  The middle element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.randomSubelement](nswhosespecifier/subelementidentifier/randomsubelement.md)
-  Any element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.noSubelement](nswhosespecifier/subelementidentifier/nosubelement.md)
-  No sub-element met the specifier test. Valid only for specifying the end sub-element.; that is, there is no end, so consider all elements.
 ### Initializers
 - [init?(rawValue: UInt)](nswhosespecifier/subelementidentifier/init(rawvalue:).md)
 

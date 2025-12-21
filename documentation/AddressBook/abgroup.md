@@ -59,7 +59,7 @@ The `ABGroup` class is “toll-free bridged” with its procedural C opaque-type
 ## Relationships
 
 ### Inherits From
-- [ABRecord](abrecord-swift.class.md)
+- [ABRecord](abrecord.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -78,7 +78,7 @@ The `ABGroup` class is “toll-free bridged” with its procedural C opaque-type
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.
-- [class ABRecord](abrecord-swift.class.md)
+- [class ABRecord](abrecord.md)
   An abstract class that defines the common properties for all Address Book records.
 
 

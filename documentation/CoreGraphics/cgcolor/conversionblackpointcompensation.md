@@ -22,7 +22,7 @@ class let conversionBlackPointCompensation: CFString
 
 #### Discussion
 
-ICC profiles specify how to convert the lightest level of white between color spaces, but they do not specify how black should be converted. To account for this, set a value of [`true`](https://developer.apple.com/documentation/swift/true) for this key when creating a color conversion with the [`CGColorConversionInfoCreateFromList`](cgcolorconversioninfocreatefromlist.md) function.
+ICC profiles specify how to convert the lightest level of white between color spaces, but they do not specify how black should be converted. To account for this, set a value of [`true`](https://developer.apple.com/documentation/Swift/true) for this key when creating a color conversion with the [`CGColorConversionInfoCreateFromList`](cgcolorconversioninfocreatefromlist.md) function.
 
 
 ---

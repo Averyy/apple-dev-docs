@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+Input for the WebAuthn large binary object extension in passkey assertion requests.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,11 @@
 ```swift
 var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput? { get }
 ```
+
+## See Also
+
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](aspasskeyassertioncredentialextensioninput-swift.struct/prf.md)
+  Input for the WebAuthn PRF extension in passkey assertion requests.
 
 
 ---

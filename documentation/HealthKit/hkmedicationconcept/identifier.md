@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The unique identifier for the specific medication concept.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,7 +22,7 @@ var identifier: HKHealthConceptIdentifier { get }
 
 #### Discussion
 
-One medication concept will have a stable identifier across multiple devices, and can be used for direct comparison.
+Each concept has one stable identifier that stays the same across devices. You can use this identifier to directly compare medications, for example, to check whether two objects represent the same medication.
 
 
 ---

@@ -21,7 +21,7 @@ func append(_ timedMetadataGroup: AVTimedMetadataGroup) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the adaptor appends the group; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the adaptor appends the group; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

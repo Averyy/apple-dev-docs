@@ -20,7 +20,7 @@ object BetaLicenseAgreement
 - [object BetaLicenseAgreement.Attributes](betalicenseagreement/attributes-data.dictionary.md)
   Attributes that describe a Beta License Agreements resource.
 - [object BetaLicenseAgreement.Relationships](betalicenseagreement/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

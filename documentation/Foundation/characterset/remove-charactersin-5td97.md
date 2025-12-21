@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Remove a range of integer values from the `CharacterSet`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

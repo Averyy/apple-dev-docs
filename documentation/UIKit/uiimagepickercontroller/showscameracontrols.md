@@ -19,11 +19,11 @@ var showsCameraControls: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which specifies that the default camera controls are visible in the picker. Set it to [`false`](https://developer.apple.com/documentation/swift/false) to hide the default controls if you want to instead provide a custom overlay view using the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which specifies that the default camera controls are visible in the picker. Set it to [`false`](https://developer.apple.com/documentation/Swift/false) to hide the default controls if you want to instead provide a custom overlay view using the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property.
 
 > **Note**:  In iOS 3.1.3 and earlier, hiding the default camera controls limits you to taking still pictures only, regardless of whether movie capture is available on the device.
 
-If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set this property to [`true`](https://developer.apple.com/documentation/swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
+If you set this property to [`false`](https://developer.apple.com/documentation/Swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
 
 You can access this property only when the source type of the image picker is set to [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md). Attempting to access this property for other source types results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception. Depending on the value you assign to the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) property, the default controls display the still camera or movie camera interface, or a selection control that lets the user choose the picker interface.
 

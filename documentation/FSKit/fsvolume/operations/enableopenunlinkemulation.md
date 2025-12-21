@@ -6,7 +6,7 @@
 A property that allows the file system to use open-unlink emulation.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

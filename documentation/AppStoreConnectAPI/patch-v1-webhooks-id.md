@@ -10,7 +10,7 @@ Update details for a specific webhook.
 
 ## Mentions
 
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
+- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
 ## See Also
 

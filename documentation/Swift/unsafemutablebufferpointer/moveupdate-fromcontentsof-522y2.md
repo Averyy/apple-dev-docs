@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Updates this buffer’s initialized memory initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
+Updates this buffer’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 
 **Availability**:
 - iOS 8.0+

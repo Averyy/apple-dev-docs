@@ -10,6 +10,7 @@ Adds an action to perform after the user double-taps their Apple Pencil.
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

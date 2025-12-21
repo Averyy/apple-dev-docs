@@ -11,9 +11,8 @@ A custom playground Quick Look for the `Int16` instance.
 - Mac Catalyst 13.0+
 - macOS 10.10+
 - tvOS 9.0+
-- watchOS 2.0+
-- Unknown ?+ - Deprecated
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

@@ -11,7 +11,7 @@ The selected annotation on the map.
 ## Declaration
 
 ```swift
-attribute mapkit.Annotation selectedAnnotation;
+selectedAnnotation?: Annotation;
 ```
 
 #### Discussion

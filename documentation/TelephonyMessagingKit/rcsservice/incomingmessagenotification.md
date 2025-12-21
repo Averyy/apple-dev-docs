@@ -6,8 +6,8 @@
 A structure that contains information about an incoming RCS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,11 +29,6 @@ struct IncomingMessageNotification
   An array of suggestions associated with the message.
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.
-### Comparing notifications
-- [static func == (RCSService.IncomingMessageNotification, RCSService.IncomingMessageNotification) -> Bool](rcsservice/incomingmessagenotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/incomingmessagenotification/equatable-implementations.md)
 
 ## Relationships
 

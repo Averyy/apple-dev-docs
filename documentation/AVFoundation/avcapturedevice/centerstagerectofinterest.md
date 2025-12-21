@@ -26,7 +26,7 @@ Apps that require cropping the output from Center Stage can use this property to
 Attempting to set a rectangle of interest in the following cases results in the system throwing an illegal argument exception:
 
 - If none of the capture device’s supported formats support Center Stage.
-- If the capture device’s [`isCenterStageEnabled`](avcapturedevice/iscenterstageenabled.md) property value is [`false`](https://developer.apple.com/documentation/swift/false).
+- If the capture device’s [`isCenterStageEnabled`](avcapturedevice/iscenterstageenabled.md) property value is [`false`](https://developer.apple.com/documentation/Swift/false).
 - If you specify a value that’s outside the normalized (`0`-`1`)  coordinate space.
 
 > ❗ **Important**:  Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock.

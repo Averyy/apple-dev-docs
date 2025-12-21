@@ -29,7 +29,7 @@ If you enable route detection, the object reports whether it detects multiple pl
 
 ## Topics
 
-### Detecting Routes
+### Detecting routes
 - [var detectsCustomRoutes: Bool](avroutedetector/detectscustomroutes.md)
   A Boolean value that indicates whether route detection includes custom routes.
 - [var isRouteDetectionEnabled: Bool](avroutedetector/isroutedetectionenabled.md)

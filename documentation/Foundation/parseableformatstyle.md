@@ -24,6 +24,7 @@ protocol ParseableFormatStyle : FormatStyle
 
 ### Declaring Parse Strategy
 - [var parseStrategy: Self.Strategy](parseableformatstyle/parsestrategy.md)
+  A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
 - [associatedtype Strategy : ParseStrategy](parseableformatstyle/strategy.md)
 ### Type Properties
 - [static var dateTime: Date.FormatStyle](parseableformatstyle/datetime.md)

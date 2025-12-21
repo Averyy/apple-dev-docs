@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: property
 
-A unique identifier for the extension point this extension targets.
+The extension point of your host app that the app extension supports.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,16 @@ A unique identifier for the extension point this extension targets.
 var extensionPointIdentifier: String { get }
 ```
 
+#### Discussion
+
+This property contains the identifier for one of the host app’s extension points. Extension points represent the extensible features of the host app.
+
 ## See Also
 
 - [var bundleIdentifier: String](appextensionidentity/bundleidentifier.md)
-  The bundle identifier for the extension.
+  The bundle identifier of the app extension.
 - [var localizedName: String](appextensionidentity/localizedname.md)
-  A localized, human-readable name for the extension.
-- [AppExtensionIdentity.Identities](appextensionidentity/identities.md)
-  An asynchronous sequence that returns the enabled extensions that match provided constraints.
+  The localized, human-readable name of the app extension.
 
 
 ---

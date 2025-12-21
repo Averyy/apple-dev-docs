@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Method to override for determining specific region of input image required to process in rendering a specified region of the output image.
+Override this class method to implement your processor’s ROI callback.
 
 **Availability**:
 - iOS 10.0+
@@ -21,30 +21,32 @@ class func roi(forInput inputIndex: Int32, arguments: [String : Any]?, outputRec
 
 #### Return Value
 
-Rectangle defining the region of the input image over which the kernel should execute.
+ The `CGRect` of the `inputIndex`th input that is required for the above `outputRect`
 
 #### Discussion
 
-Override this method if your image processor needs to work with a larger or smaller region of interest in the input image than each corresponding region of the output image (for example, a blur filter, which samples several input pixels for each output pixel).
+This will be called one or more times per render to determine what portion of the input images are needed to render a given ‘outputRect’ of the output. This will not be called if processor has no input images.
 
-This will be called one or more times per render to determine the portion of the input images needed to render a given `outputRect` of the output.  This will not be called if there are 0 input images.
+The default implementation would return outputRect.
 
-The default implementation simply returns `outputRect`.
+> ❗ **Important**: This is a class method so that you cannot use or capture any state by accident. All the parameters that affect the output results must be passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
 
 ## Parameters
 
-- `arguments`: Dictionary of arguments mapping keys such as   to their values.
-- `outputRect`: Rectangle defining the area of output that must be rendered.
+- `inputIndex`: The index that tells you which processor input for which to return the ROI rectangle.
+- `arguments`: The arguments dictionary that was passed to  .
+- `outputRect`: The output   that processor will be asked to output.
 
 ## See Also
 
 - [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md)
-  Method to override when applying a custom image processor kernel to an image and returning the result.
+  Call this method on your Core Image Processor Kernel subclass to create a new image of the specified extent.
 - [class func formatForInput(at: Int32) -> CIFormat](ciimageprocessorkernel/formatforinput(at:).md)
-  Method to override for returning the image processing kernel’s input pixel format.
+  Override this class method if you want your any of the inputs to be in a specific pixel format.
 - [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](ciimageprocessorkernel/process(with:arguments:output:).md)
-  Method to override for customizing the kernel’s image processing.
+  Override this class method to implement your Core Image Processor Kernel subclass.
 - [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
+  Override this class method to implement your processor’s tiled ROI callback.
 
 
 ---

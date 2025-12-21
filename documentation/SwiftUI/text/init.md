@@ -20,7 +20,7 @@ Creates a text view that displays styled attributed content.
 init(_ attributedContent: AttributedString)
 ```
 
-#### Discussion
+##### Format Text By Combining Attributes and View Modifiers
 
 Use this initializer to style text according to attributes found in the specified [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString). Attributes in the attributed string take precedence over styles added by view modifiers. For example, the attributed text in the following example appears in blue, despite the use of the [`foregroundColor(_:)`](view/foregroundcolor(_:).md) modifier to use red throughout the enclosing [`VStack`](vstack.md):
 
@@ -56,11 +56,17 @@ var body: some View {
 }
 ```
 
+##### Supported Foundation Attributes
+
 A SwiftUI [`Text`](text.md) view renders most of the styles defined by the Foundation attribute [`inlinePresentationIntent`](https://developer.apple.com/documentation/Foundation/AttributeScopes/FoundationAttributes/inlinePresentationIntent), like the [`stronglyEmphasized`](https://developer.apple.com/documentation/Foundation/InlinePresentationIntent/stronglyEmphasized) value, which SwiftUI presents as bold text.
 
 > ❗ **Important**: [`Text`](text.md) uses only a subset of the attributes defined in [`AttributeScopes.FoundationAttributes`](https://developer.apple.com/documentation/Foundation/AttributeScopes/FoundationAttributes). `Text` renders all [`InlinePresentationIntent`](https://developer.apple.com/documentation/Foundation/InlinePresentationIntent) attributes except for [`lineBreak`](https://developer.apple.com/documentation/Foundation/InlinePresentationIntent/lineBreak) and [`softBreak`](https://developer.apple.com/documentation/Foundation/InlinePresentationIntent/softBreak). It also respects [`writingDirection`](https://developer.apple.com/documentation/Foundation/AttributeScopes/FoundationAttributes/writingDirection) and renders the [`link`](https://developer.apple.com/documentation/Foundation/AttributeScopes/FoundationAttributes/link) attribute as a clickable link. `Text` ignores any other Foundation-defined attributes in an attributed string.
 
+##### Swiftui Attributes
+
 SwiftUI also defines additional attributes in the attribute scope [`AttributeScopes.SwiftUIAttributes`](https://developer.apple.com/documentation/Foundation/AttributeScopes/SwiftUIAttributes) which you can access from an attributed string’s [`swiftUI`](https://developer.apple.com/documentation/Foundation/AttributeScopes/swiftUI) property. SwiftUI attributes take precedence over equivalent attributes from other frameworks, such as [`AttributeScopes.UIKitAttributes`](https://developer.apple.com/documentation/Foundation/AttributeScopes/UIKitAttributes) and [`AttributeScopes.AppKitAttributes`](https://developer.apple.com/documentation/Foundation/AttributeScopes/AppKitAttributes).
+
+##### Markdown Support
 
 You can create an `AttributedString` with Markdown syntax, which allows you to style distinct runs within a `Text` view:
 
@@ -88,6 +94,12 @@ var body: some View {
 In your app’s strings files, use Markdown syntax to apply styling to the app’s localized strings. You also use this approach when you want to perform automatic grammar agreement on localized strings, with the `^[text](inflect:true)` syntax.
 
 For details about Markdown syntax support in SwiftUI, see [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md).
+
+##### Applying a Custom Text Formatting Definition
+
+Use the [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md) modifier to apply a custom [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) to text created using this initializer. This will result in the text only applying attributes in the definition’s attribute scope and constraining attributes according to the definition’s value constraints prior to display.
+
+Custom attributes listed in the definition’s [`Scope`](attributedtextformattingdefinition/scope.md), where the [`Value`](https://developer.apple.com/documentation/Foundation/AttributedStringKey/Value) conforms to the [`TextAttribute`](textattribute.md) protocol, can be read when observing the text’s layout using `Text/Layout/Run/subscript(key:)->T?`, just as text attributes applied using the [`customAttribute(_:)`](text/customattribute(_:).md) modifier.
 
 ## Parameters
 

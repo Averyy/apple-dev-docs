@@ -21,6 +21,8 @@ Returns the content of an element
 
 #### Discussion
 
+Copies the values of an internal element to *elementValues
+
 For efficiently and thread-safely reading _elements. May need to find the index of the element first.
 
 Locking: Caller must ensure that the reporter (data) lock is held.

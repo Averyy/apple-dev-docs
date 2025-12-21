@@ -21,17 +21,17 @@ class MTLStageInputOutputDescriptor
 
 ## Topics
 
-### Describing Argument Layouts
+### Describing argument layouts
 - [var attributes: MTLAttributeDescriptorArray](mtlstageinputoutputdescriptor/attributes.md)
   An array that describes where and how to fetch data for the function.
 - [var layouts: MTLBufferLayoutDescriptorArray](mtlstageinputoutputdescriptor/layouts.md)
   An array that describes how the function fetches data.
-### Declaring Index Buffers for Indirect Compute Commands
+### Declaring index buffers for indirect compute commands
 - [var indexBufferIndex: Int](mtlstageinputoutputdescriptor/indexbufferindex.md)
   The location of the index buffer for a compute function using indexed thread addressing.
 - [var indexType: MTLIndexType](mtlstageinputoutputdescriptor/indextype.md)
   The data type of the indices stored in the index buffer.
-### Resetting the Descriptor
+### Resetting the descriptor
 - [func reset()](mtlstageinputoutputdescriptor/reset.md)
   Resets the default state for the descriptor.
 
@@ -57,7 +57,7 @@ class MTLStageInputOutputDescriptor
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [struct MTLPipelineOption](mtlpipelineoption.md)

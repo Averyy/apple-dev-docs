@@ -260,10 +260,8 @@ You can use the resulting object types to request permission to access the data,
   A category sample type for recording a mindful session.
 - [static let sleepAnalysis: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepanalysis.md)
   A category sample type for sleep analysis information.
-- [HKCategoryValueSleepAnalysisAsleepValues](hkcategoryvaluesleepanalysisasleepvalues.md)
 - [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
-- [HKAppleSleepingBreathingDisturbancesClassificationForQuantity](hkapplesleepingbreathingdisturbancesclassificationforquantity.md)
 - [enum HKAppleSleepingBreathingDisturbancesClassification](hkapplesleepingbreathingdisturbancesclassification.md)
 ### Self care
 - [static let toothbrushingEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/toothbrushingevent.md)

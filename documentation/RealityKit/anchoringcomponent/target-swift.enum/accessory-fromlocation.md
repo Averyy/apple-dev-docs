@@ -5,12 +5,12 @@
 
 **Availability**:
 - Mac Catalyst 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocationName)
+case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocation)
 ```
 
 

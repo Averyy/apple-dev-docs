@@ -22,20 +22,16 @@ struct AnnotatedBatch<Scalar> where Scalar : MLShapedArrayScalar
 
 ## Topics
 
-### Initializers
+### Creating an annotated batch
 - [init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>)](annotatedbatch/init(features:annotations:).md)
   Creates an annotated batch.
-### Instance Properties
+### Inspecting an annotated batch
 - [var annotations: MLShapedArray<Scalar>](annotatedbatch/annotations.md)
   The shaped array of annotations.
 - [var count: Int](annotatedbatch/count.md)
   The number of examples in the batch.
 - [var features: MLShapedArray<Scalar>](annotatedbatch/features.md)
   The shaped array of features.
-### Default Implementations
-- [Decodable Implementations](annotatedbatch/decodable-implementations.md)
-- [Encodable Implementations](annotatedbatch/encodable-implementations.md)
-- [Equatable Implementations](annotatedbatch/equatable-implementations.md)
 
 ## Relationships
 

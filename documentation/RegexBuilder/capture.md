@@ -255,12 +255,6 @@ Throwing an error from a `transform` closure aborts matching and propagates the 
   Creates a capture for the given component using the specified reference, transforming with the given closure.
 - [init<W, C1, C2, C3, C4, C5, C6, NewCapture>(as: Reference<NewCapture>, () -> some RegexComponent, transform: (W) throws -> NewCapture)](capture/init(as:_:transform:)-jvkx.md)
   Creates a capture for the given component using the specified reference, transforming with the given closure.
-### Instance Properties
-- [var regex: Regex<Output>](capture/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [typealias RegexOutput](capture/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

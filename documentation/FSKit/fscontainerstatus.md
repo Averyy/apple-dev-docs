@@ -21,7 +21,7 @@ This type contains two properties:
 - The [`state`](fscontainerstatus/state.md) value that indicates the state of the container, such as [`FSContainerState.ready`](fscontainerstate/ready.md) or [`FSContainerState.blocked`](fscontainerstate/blocked.md).
 - The [`status`](fscontainerstatus/status.md) is an error (optional in Swift, nullable in Objective-C) that provides further information about the state, such as why the container is blocked.
 
-Examples of statuses that require intervention include errors that indicate the container isn’t ready (POSIX `EAGAIN` or `ENOTCONN`), the container needs authentication (`ENEEDAUTH`), or that authentication failed (`EAUTH`). The status can also be an informative error, such as the FSKit error `FSErrorStatusOperationInProgress`, possibly with the variant information of `FSKitErrorVariantCheckStatus` or `FSKitErrorVariantFormatStatus`.
+Examples of statuses that require intervention include errors that indicate the container isn’t ready (POSIX `EAGAIN` or `ENOTCONN`), the container needs authentication (`ENEEDAUTH`), or that authentication failed (`EAUTH`). The status can also be an informative error, such as the FSKit error [`FSError.Code.statusOperationInProgress`](fserror/code/statusoperationinprogress.md).
 
 ## Topics
 

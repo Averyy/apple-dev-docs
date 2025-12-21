@@ -25,7 +25,7 @@ Typically, you use phonetic names for transactions in Japan.
 
 If your site requires the contact’s phonetic name, include this field in the [`requiredBillingContactFields`](applepaypaymentrequest/requiredbillingcontactfields.md) or [`requiredShippingContactFields`](applepaypaymentrequest/requiredshippingcontactfields.md) in your payment request.
 
-Available in Apple Pay version 3. For more information about versions, see doc://com.apple.documentation/documentation/apple_pay_on_the_web/apple_pay_on_the_web_version_history.
+Available in Apple Pay version 3. For more information about versions, see [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md).
 
 ## See Also
 

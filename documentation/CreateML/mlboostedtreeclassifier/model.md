@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mlboostedtreeclassifier/description.md)
-  A text representation of the boosted tree classifier.
-- [var debugDescription: String](mlboostedtreeclassifier/debugdescription.md)
-  A text representation of the boosted tree classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlboostedtreeclassifier/playgrounddescription.md)
-  A description of the boosted tree classifier shown in a playground.
+- [MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

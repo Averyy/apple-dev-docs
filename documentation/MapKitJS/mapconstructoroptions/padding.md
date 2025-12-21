@@ -11,7 +11,7 @@ The map’s inset margins.
 ## Declaration
 
 ```swift
-attribute mapkit.Padding padding;
+padding?: Padding;
 ```
 
 #### Discussion

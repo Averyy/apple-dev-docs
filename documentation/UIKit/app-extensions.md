@@ -7,7 +7,7 @@ Extend your app’s basic functionality to other parts of the system.
 ## Topics
 
 ### Extension support
-- [protocol NSExtensionRequestHandling : NSObjectProtocol](../Foundation/NSExtensionRequestHandling.md)
+- [protocol NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
   The interface an app extension uses to respond to a request from a host app.
 - [class NSExtensionContext](../Foundation/NSExtensionContext.md)
   The host app context from which an app extension is invoked.

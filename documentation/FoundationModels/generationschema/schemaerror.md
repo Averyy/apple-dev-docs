@@ -6,11 +6,11 @@
 A error that occurs when there is a problem creating a generation schema.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -32,14 +32,11 @@ enum SchemaError
 - [GenerationSchema.SchemaError.Context](generationschema/schemaerror/context.md)
   The context in which the error occurred.
 ### Getting the error description
-- [var errorDescription: String](generationschema/schemaerror/errordescription.md)
+- [var errorDescription: String?](generationschema/schemaerror/errordescription.md)
   A string representation of the error description.
 ### Getting the recovery suggestion
 - [var recoverySuggestion: String?](generationschema/schemaerror/recoverysuggestion.md)
   A suggestion that indicates how to handle the error.
-### Default Implementations
-- [Error Implementations](generationschema/schemaerror/error-implementations.md)
-- [LocalizedError Implementations](generationschema/schemaerror/localizederror-implementations.md)
 
 ## Relationships
 

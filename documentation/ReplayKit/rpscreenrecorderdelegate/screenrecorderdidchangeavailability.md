@@ -1,8 +1,7 @@
 # screenRecorderDidChangeAvailability(_:)
 
 **Framework**: ReplayKit  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Indicates that the recorder has changed states between disabled and enabled.
 

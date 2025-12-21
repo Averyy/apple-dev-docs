@@ -22,7 +22,7 @@ func isPosition(_ position: UITextPosition, atBoundary granularity: UITextGranul
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text position is at the given text-unit boundary in the given direction; [`false`](https://developer.apple.com/documentation/swift/false) if it is not at the boundary.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text position is at the given text-unit boundary in the given direction; [`false`](https://developer.apple.com/documentation/Swift/false) if it is not at the boundary.
 
 ## Parameters
 

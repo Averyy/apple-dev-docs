@@ -20,9 +20,6 @@ enum InformationStorage
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.InformationStorage, IntentParameter<Value>.InformationStorage) -> Bool](intentparameter/informationstorage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.InformationStorage.bits](intentparameter/informationstorage/bits.md)
 - [IntentParameter.InformationStorage.bytes](intentparameter/informationstorage/bytes.md)
@@ -59,15 +56,6 @@ enum InformationStorage
 - [IntentParameter.InformationStorage.zebibytes](intentparameter/informationstorage/zebibytes.md)
 - [IntentParameter.InformationStorage.zettabits](intentparameter/informationstorage/zettabits.md)
 - [IntentParameter.InformationStorage.zettabytes](intentparameter/informationstorage/zettabytes.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/informationstorage/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/informationstorage/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/informationstorage/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/informationstorage/equatable-implementations.md)
 
 ## Relationships
 

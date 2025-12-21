@@ -17,13 +17,13 @@ optional func prepareForDragOperation(_ sender: any NSDraggingInfo) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver agrees to perform the drag operation and [`false`](https://developer.apple.com/documentation/swift/false) if not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver agrees to perform the drag operation and [`false`](https://developer.apple.com/documentation/Swift/false) if not.
 
 #### Discussion
 
 This method is invoked only if the most recent [`draggingEntered(_:)`](nsdraggingdestination/draggingentered(_:).md) or [`draggingUpdated(_:)`](nsdraggingdestination/draggingupdated(_:).md) message returned an acceptable drag-operation value.
 
-If you want the drag items to animate from their current location on screen to their final location in your view, set the sender object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in your implementation of this method.
+If you want the drag items to animate from their current location on screen to their final location in your view, set the sender object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) in your implementation of this method.
 
 ## Parameters
 

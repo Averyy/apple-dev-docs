@@ -24,7 +24,7 @@ func stopAnimation(_ withoutFinishing: Bool)
 
 Call this method when you want to end the animations at their current position. This method removes all of the associated animations from the execution stack and sets the values of any animatable properties to their current values. This method also updates the state of the animator object based on the value of the `withoutFinishing` parameter.
 
-If you specify [`false`](https://developer.apple.com/documentation/swift/false) for the `withoutFinishing` parameter, you can subsequently call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method to perform the animator’s final actions. For example, a [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) object executes its completion blocks when you call this method. You do not have to call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method right away, or at all, and you can perform other animations before calling that method.
+If you specify [`false`](https://developer.apple.com/documentation/Swift/false) for the `withoutFinishing` parameter, you can subsequently call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method to perform the animator’s final actions. For example, a [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) object executes its completion blocks when you call this method. You do not have to call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method right away, or at all, and you can perform other animations before calling that method.
 
 ## Parameters
 

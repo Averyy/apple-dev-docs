@@ -24,6 +24,11 @@ var thermalState: ProcessInfo.ThermalState { get }
 
 At higher thermal states your app should reduce usage of system resources. For more information, see [`ProcessInfo.ThermalState`](processinfo/thermalstate-swift.enum.md).
 
+## See Also
+
+- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
+  Values used to indicate the system’s thermal state.
+
 
 ---
 

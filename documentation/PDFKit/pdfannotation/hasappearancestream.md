@@ -25,7 +25,7 @@ var hasAppearanceStream: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the annotation has an appearance stream; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the annotation has an appearance stream; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

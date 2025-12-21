@@ -30,6 +30,8 @@ Use `buildIcons` to identify which icons were uploaded to App Store Connect insi
   Manage builds for testers and submit builds for review.
 - [Build Bundles](build-bundles.md)
   Read metadata for app and App Clip binaries included in a build you upload to App Store Connect.
+- [Build uploads](build-uploads.md)
+  Read metadata for app builds you upload to App Store Connect.
 - [App Encryption Declarations](app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
 

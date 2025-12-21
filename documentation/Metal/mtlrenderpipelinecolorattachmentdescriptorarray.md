@@ -21,7 +21,7 @@ class MTLRenderPipelineColorAttachmentDescriptorArray
 
 ## Topics
 
-### Accessing Render Pipeline State for a Color Attachment
+### Accessing render pipeline state for a color attachment
 - [subscript(Int) -> MTLRenderPipelineColorAttachmentDescriptor!](mtlrenderpipelinecolorattachmentdescriptorarray/subscript(_:).md)
   Returns the render pipeline state for the specified color attachment.
 
@@ -52,7 +52,7 @@ class MTLRenderPipelineColorAttachmentDescriptorArray
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

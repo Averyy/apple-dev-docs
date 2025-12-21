@@ -16,7 +16,7 @@ Retrieves the public key from a certificate.
 ## Declaration
 
 ```swift
-func SecCertificateCopyPublicKey(_ certificate: SecCertificate) -> SecKey?
+func SecCertificateCopyPublicKey(_ certificate: SecCertificate, _ key: UnsafeMutablePointer<SecKey?>) -> OSStatus
 ```
 
 ## Mentions

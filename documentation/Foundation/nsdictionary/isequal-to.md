@@ -22,7 +22,7 @@ func isEqual(to otherDictionary: [AnyHashable : Any]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherDictionary` are equal to the contents of the receiving dictionary, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the contents of `otherDictionary` are equal to the contents of the receiving dictionary, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -34,7 +34,7 @@ Two dictionaries have equal contents if they each hold the same number of entrie
 
 ## See Also
 
-- [func isEqual(_ object: Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
+- [func isEqual(Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
 
 

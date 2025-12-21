@@ -22,10 +22,6 @@ struct Iterator
 ### Instance Methods
 - [func next() async -> DockAccessory.TrackingState?](dockaccessory/trackingstates-swift.struct/iterator/next.md)
   Provide the next tracking session state in the list.
-### Type Aliases
-- [DockAccessory.TrackingStates.Iterator.Element](dockaccessory/trackingstates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](dockaccessory/trackingstates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

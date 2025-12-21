@@ -14,7 +14,6 @@ Enables editing when it’s safe again to make changes to a document.
 ## Declaration
 
 ```swift
-@MainActor
 func enableEditing()
 ```
 

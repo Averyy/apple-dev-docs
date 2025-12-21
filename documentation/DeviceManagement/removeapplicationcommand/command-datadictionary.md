@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to remove an installed managed app.
+The command to remove an app.
 
 **Availability**:
 - iOS 5.0+

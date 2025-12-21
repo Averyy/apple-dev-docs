@@ -17,7 +17,7 @@ func canPrevent(_ preventedGestureRecognizer: NSGestureRecognizer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate that `preventedGestureRecognizer` should be blocked from recognizing its gesture, or [`false`](https://developer.apple.com/documentation/swift/false) if both gesture recognizers can operate simultaneously.
+[`true`](https://developer.apple.com/documentation/Swift/true) to indicate that `preventedGestureRecognizer` should be blocked from recognizing its gesture, or [`false`](https://developer.apple.com/documentation/Swift/false) if both gesture recognizers can operate simultaneously.
 
 #### Discussion
 

@@ -21,11 +21,11 @@ enum MTLIOPriority
 
 #### Overview
 
-Set a new input/output command queue’s priority that you create with a [`MTLIOCommandQueueDescriptor`](mtliocommandqueuedescriptor.md) instance by setting its [`priority`](mtliocommandqueuedescriptor/priority.md) property. Create a queue that minimizes an asset’s loading latency by setting a descriptor’s priority to [`MTLIOPriority.high`](mtliopriority/high.md).
+Set a new input/output command queue’s priority that you create with an [`MTLIOCommandQueueDescriptor`](mtliocommandqueuedescriptor.md) instance by setting its [`priority`](mtliocommandqueuedescriptor/priority.md) property. Create a queue that minimizes an asset’s loading latency by setting a descriptor’s priority to [`MTLIOPriority.high`](mtliopriority/high.md).
 
 ## Topics
 
-### I/O Command Queue Priorities
+### I/O command queue priorities
 - [MTLIOPriority.normal](mtliopriority/normal.md)
   Designates the normal priority for a new input/output command queue.
 - [MTLIOPriority.low](mtliopriority/low.md)

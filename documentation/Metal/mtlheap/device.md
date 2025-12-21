@@ -26,8 +26,16 @@ A heap is always associated with the [`MTLDevice`](mtldevice.md) that created it
 
 ## See Also
 
-- [var label: String?](mtlheap/label.md)
-  A string that identifies the heap.
+- [var type: MTLHeapType](mtlheap/type.md)
+  The heap’s type.
+- [var storageMode: MTLStorageMode](mtlheap/storagemode.md)
+  The heap’s storage mode.
+- [var cpuCacheMode: MTLCPUCacheMode](mtlheap/cpucachemode.md)
+  The heap’s CPU cache mode.
+- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheap/hazardtrackingmode.md)
+  The heap’s hazard tracking mode.
+- [var resourceOptions: MTLResourceOptions](mtlheap/resourceoptions.md)
+  The options for resources created by the heap.
 
 
 ---

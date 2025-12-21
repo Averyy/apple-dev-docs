@@ -9,8 +9,8 @@ Reloads the templates for all controls of a particular kind.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 

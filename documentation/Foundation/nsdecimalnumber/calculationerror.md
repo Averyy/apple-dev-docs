@@ -33,16 +33,6 @@ enum CalculationError
   The number is too small to represent.
 - [NSDecimalNumber.CalculationError.divideByZero](nsdecimalnumber/calculationerror/dividebyzero.md)
   The caller tried to divide by `0`.
-- [NSDecimalNumber.CalculationError.noError](nsdecimalnumber/calculationerror/noerror.md)
-  No error occurred.
-- [NSDecimalNumber.CalculationError.lossOfPrecision](nsdecimalnumber/calculationerror/lossofprecision.md)
-  The number can’t be represented in 38 significant digits.
-- [NSDecimalNumber.CalculationError.overflow](nsdecimalnumber/calculationerror/overflow.md)
-  The number is too large to represent.
-- [NSDecimalNumber.CalculationError.underflow](nsdecimalnumber/calculationerror/underflow.md)
-  The number is too small to represent.
-- [NSDecimalNumber.CalculationError.divideByZero](nsdecimalnumber/calculationerror/dividebyzero.md)
-  The caller tried to divide by `0`.
 ### Initializers
 - [init?(rawValue: UInt)](nsdecimalnumber/calculationerror/init(rawvalue:).md)
 

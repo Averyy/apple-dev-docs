@@ -17,7 +17,6 @@ Creates a shape node with a circular path centered on the node’s origin.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(circleOfRadius radius: CGFloat)
 ```
 

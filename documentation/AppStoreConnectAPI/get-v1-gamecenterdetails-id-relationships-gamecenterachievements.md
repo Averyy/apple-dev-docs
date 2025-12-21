@@ -10,6 +10,10 @@ List the achievements for a Game Center detail.
 
 ## See Also
 
+- [List all Game Center achievements for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterachievementsv2.md)
+  Get a list of achievements for a specific Game Center detail.
+- [Get all achievement IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
+  Get a list of achievement resource IDs for a specific Game Center detail.
 - [List all achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
   List all achievement information for a Game Center detail.
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)

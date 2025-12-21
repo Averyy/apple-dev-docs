@@ -17,7 +17,7 @@ func reloadData() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the data reloads, or [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the data reloads, or [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurs.
 
 ## See Also
 

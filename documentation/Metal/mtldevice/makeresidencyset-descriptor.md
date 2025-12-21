@@ -22,7 +22,7 @@ func makeResidencySet(descriptor desc: MTLResidencySetDescriptor) throws -> any 
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Return Value
 
@@ -32,7 +32,7 @@ A new [`MTLResidencySet`](mtlresidencyset.md) instance if the method completes s
 
 Create an [`MTLResidencySet`](mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance and pass it to this method.
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
+See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
 
 ## Parameters
 

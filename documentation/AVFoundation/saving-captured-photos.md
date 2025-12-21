@@ -1,4 +1,4 @@
-# Saving Captured Photos
+# Saving captured photos
 
 **Framework**: AVFoundation
 
@@ -93,9 +93,9 @@ func save(photo: AVCapturePhoto) async {
 
 ## See Also
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
   Monitor key events during capture to provide feedback in your camera UI.
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
   Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
 

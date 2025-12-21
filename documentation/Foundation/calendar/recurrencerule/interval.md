@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+At what interval to repeat
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var interval: Int
 ```
+
+#### Discussion
+
+Default value is `1`
 
 
 ---

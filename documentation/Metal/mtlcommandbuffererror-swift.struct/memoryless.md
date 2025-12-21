@@ -24,7 +24,7 @@ static var memoryless: MTLCommandBufferError.Code { get }
 - [static var none: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/none.md)
   An error code that represents the absence of any problems.
 - [static var timeout: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [static var pageFault: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
 - [static var notPermitted: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/notpermitted.md)

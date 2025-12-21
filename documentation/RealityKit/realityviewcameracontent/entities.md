@@ -10,7 +10,7 @@ A collection of RealityKit entities that this view content renders within the sc
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

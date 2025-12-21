@@ -32,10 +32,10 @@ To use a physical Apple TV Remote or MFi controller with Simulator:
 3. On the Mac, open Bluetooth in System Settings.
 4. In Bluetooth settings, turn Bluetooth on.
 5. Turn on the remote or controller.
-6. In Bluetooth preferences, wait for the remote to appear in the Devices list.
+6. In Bluetooth settings, wait for the remote to appear in the Devices list.
 7. Click the Pair button next to the device to pair it with the Mac.
 
-Some remotes and controllers don’t appear in Bluetooth preferences unless you put them into pairing mode. To enter pairing mode on an Apple TV remote, hold down the Menu and Volume Up (+) buttons for 5 seconds. For information on how to enter pairing mode on other devices, see the documentation for your device.
+Some remotes and controllers don’t appear in Bluetooth settings unless you put them into pairing mode. To enter pairing mode on an Apple TV remote, hold down the Menu and Volume Up (+) buttons for 5 seconds. For information on how to enter pairing mode on other devices, see the documentation for your device.
 
 ## See Also
 
@@ -46,7 +46,7 @@ Some remotes and controllers don’t appear in Bluetooth preferences unless you 
 - [Interacting with your app in the visionOS simulator](interacting-with-your-app-in-the-visionos-simulator.md)
   Use your Mac to navigate spaces and control interactions with your visionOS apps in Simulator.
 - [Configuring Simulator for your working environment](configuring-a-simulator-for-your-environment.md)
-  Adjust Simulator settings for window or screen size, light or dark appearance, and audio settings, and restart or reset a simulated device.
+  Adjust Simulator settings for window or screen size, the light or dark appearance, and audio settings, and restart or reset a simulated device.
 - [Simulating an external display or CarPlay](simulating-an-external-display-or-carplay.md)
   Test how your app handles an external display or CarPlay from Simulator.
 - [Capturing screenshots and videos from Simulator](capturing-screenshots-and-videos-from-simulator.md)

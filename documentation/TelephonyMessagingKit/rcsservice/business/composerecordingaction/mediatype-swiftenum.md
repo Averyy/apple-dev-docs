@@ -4,8 +4,8 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -21,22 +21,6 @@ enum MediaType
   Compose an audio message.
 - [RCSService.Business.ComposeRecordingAction.MediaType.video](rcsservice/business/composerecordingaction/mediatype-swift.enum/video.md)
   Compose a video message.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/composerecordingaction/mediatype-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.ComposeRecordingAction.MediaType, RCSService.Business.ComposeRecordingAction.MediaType) -> Bool](rcsservice/business/composerecordingaction/mediatype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/composerecordingaction/mediatype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/composerecordingaction/mediatype-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/composerecordingaction/mediatype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/composerecordingaction/mediatype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

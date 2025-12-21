@@ -22,7 +22,7 @@ var isHostTimeValid: Bool { get }
 
 #### Discussion
 
-This property returns [`true`](https://developer.apple.com/documentation/swift/true) if the [`hostTime`](avaudiotime/hosttime.md) property is valid; otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
+This property returns [`true`](https://developer.apple.com/documentation/Swift/true) if the [`hostTime`](avaudiotime/hosttime.md) property is valid; otherwise, it returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

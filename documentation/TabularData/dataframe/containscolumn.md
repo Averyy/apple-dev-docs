@@ -27,8 +27,6 @@ func containsColumn<T>(_ name: String, _ type: T.Type) -> Bool
 
 ## See Also
 
-- [var isEmpty: Bool](dataframe/isempty.md)
-  A Boolean that indicates whether the data frame type is empty.
 - [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
   The number of rows and columns in the data frame.
 - [var columns: [AnyColumn]](dataframe/columns.md)

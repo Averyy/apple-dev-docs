@@ -22,7 +22,7 @@ let CBCentralManagerOptionShowPowerAlertKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. If the key isn’t specified, the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. If the key isn’t specified, the default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

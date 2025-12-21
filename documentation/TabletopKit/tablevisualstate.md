@@ -32,32 +32,34 @@ struct TableVisualState
 ### Representing 3D states
 - [TableVisualState.OrientedRect3D](tablevisualstate/orientedrect3d.md)
   An object that represents the position and orientation of a 3D rectangle.
+- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
+  Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
 - [func bounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(forequipment:).md)
 - [func bounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(matching:).md)
 - [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(forequipment:).md)
 - [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(matching:).md)
 - [var tableBounds: TableVisualState.OrientedRect3D?](tablevisualstate/tablebounds.md)
 ### Representing seat states
+- [func pose(for: some Equipment) -> Pose3D?](tablevisualstate/pose(for:)-50h4r.md)
+  Returns the current pose for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func pose(for: some TableSeat) -> Pose3D?](tablevisualstate/pose(for:)-8pm0h.md)
+  Returns the pose for the given seat. Returns `nil` if the seat is not part of the game.
 - [func pose(forSeat: some TableSeat) -> Pose3D?](tablevisualstate/pose(forseat:).md)
-### Instance Methods
-- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
-  Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func pose(matching: TableSeatIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-6bo29.md)
+- [func pose(matching: EquipmentIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-8nqm2.md)
+  Returns the current pose for the equipment matching the given ID. Returns `nil` if the equipment is not part of the game.
+### Representing the goal
 - [func goalBounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(for:).md)
   Returns the goal pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
 - [func goalPose(for: some Equipment) -> Pose3D?](tablevisualstate/goalpose(for:).md)
   Returns the goal pose for the given equipment. Returns `nil` if the equipment is not part of the game.
 - [func goalPose(matching: EquipmentIdentifier) -> Pose3D?](tablevisualstate/goalpose(matching:).md)
   Returns the goal pose for the equipment matching the given ID. Returns `nil` if the equipment is not part of the game.
-- [func pose(for: some Equipment) -> Pose3D?](tablevisualstate/pose(for:)-50h4r.md)
-  Returns the current pose for the given equipment. Returns `nil` if the equipment is not part of the game.
-- [func pose(for: some TableSeat) -> Pose3D?](tablevisualstate/pose(for:)-8pm0h.md)
-  Returns the pose for the given seat. Returns `nil` if the seat is not part of the game.
-- [func pose(matching: TableSeatIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-6bo29.md)
-- [func pose(matching: EquipmentIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-8nqm2.md)
-  Returns the current pose for the equipment matching the given ID. Returns `nil` if the equipment is not part of the game.
 
 ## See Also
 
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TossableRepresentation](tossablerepresentation.md)

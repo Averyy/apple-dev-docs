@@ -34,6 +34,8 @@ struct MTLResourceID
 
 ## See Also
 
+- [typealias MTLGPUAddress](mtlgpuaddress.md)
+  A 64-bit unsigned integer type appropriate for storing GPU addresses.
 - [protocol MTLAllocation](mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
 - [protocol MTLResource](mtlresource.md)

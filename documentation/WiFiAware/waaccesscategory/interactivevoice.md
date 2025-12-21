@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-A quality-of-service (QoS) type that provides very low latency for low-throughput flows.
+A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ Only use this type if normal Wi-Fi packet transmission delays would be directly 
 
 Use this Wi-Fi access category for packets transmitted by a `NetworkConnection` that was set with `NWParameter`’s `serviceClass = .interactiveVoice`.
 
-> ❗ **Important**:  This QoS type doesn’t support high throughput.
+> ❗ **Important**: This QoS type doesn’t support high throughput.
 
 For more information, refer to [`NWParameters.ServiceClass.interactiveVoice`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum/interactivevoice)
 

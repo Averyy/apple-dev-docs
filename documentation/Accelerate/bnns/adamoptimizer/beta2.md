@@ -13,7 +13,6 @@ A value that specifies the second-moment constant, in the range `0` to `1`.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: enum
 
+Values that express the level of support required for the binary large object passkey extension.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,7 +20,7 @@ enum SupportRequirement
 
 ## Topics
 
-### Enumeration Cases
+### Supporting requirement values
 - [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.preferred](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum/preferred.md)
 - [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.required](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum/required.md)
 
@@ -28,6 +30,11 @@ enum SupportRequirement
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var supportRequirement: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.property.md)
+  A type that represents the level of support required for the large binary object passkey extension.
 
 
 ---

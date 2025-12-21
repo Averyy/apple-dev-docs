@@ -23,7 +23,7 @@ var canRedo: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager has any actions to redo, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the manager has any actions to redo, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Because any undo operation registered clears the redo stack, this method posts an [`NSUndoManagerCheckpoint`](nsnotification/name-swift.struct/nsundomanagercheckpoint.md) to allow clients to apply their pending operations before testing the redo stack.
 

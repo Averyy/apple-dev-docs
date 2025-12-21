@@ -6,8 +6,8 @@
 Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

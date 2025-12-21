@@ -24,22 +24,14 @@ Use this property to determine whether you want completions that represent point
 
 ## See Also
 
-- [var addressFilter: MKAddressFilter?](mklocalsearchcompleter/addressfilter.md)
-  A filter that lists which address options to include or exclude in search results.
-- [var queryFragment: String](mklocalsearchcompleter/queryfragment.md)
-  The search string that you want completions for.
-- [var region: MKCoordinateRegion](mklocalsearchcompleter/region.md)
-  The region that defines the geographic scope of the search.
-- [var regionPriority: MKLocalSearchRegionPriority](mklocalsearchcompleter/regionpriority.md)
-  A value that indicates the importance of the configured region.
-- [var resultTypes: MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttypes.md)
-  The types of search completions to include.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalsearchcompleter/pointofinterestfilter.md)
-  A filter that lists point of interest categories to include or exclude in the search.
-- [MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.enum.md)
-  Constants indicating the types of search completions to return.
-- [MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype.md)
-  Options that indicate types of search completions.
+- [var pinColor: MKPinAnnotationColor](mkpinannotationview/pincolor.md)
+  The color of the pin head.
+- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
+- [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
+- [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
+  The map’s visual style.
 
 
 ---

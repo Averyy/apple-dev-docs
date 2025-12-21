@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An Int whose value indicates the number of frames in the IO buffers.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

@@ -20,7 +20,7 @@ object BetaBuildLocalization
 - [object BetaBuildLocalization.Attributes](betabuildlocalization/attributes-data.dictionary.md)
   Attributes that describe a Beta Build Localizations resource.
 - [object BetaBuildLocalization.Relationships](betabuildlocalization/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

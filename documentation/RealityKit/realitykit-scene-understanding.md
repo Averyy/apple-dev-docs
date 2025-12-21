@@ -88,7 +88,7 @@ Task {
 
 ## See Also
 
-- [Creating a game with scene understanding](creating_a_game_with_scene_understanding.md)
+- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 - [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.

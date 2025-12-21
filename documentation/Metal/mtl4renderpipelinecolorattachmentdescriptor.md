@@ -4,12 +4,12 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ class MTL4RenderPipelineColorAttachmentDescriptor
 - [var alphaBlendOperation: MTLBlendOperation](mtl4renderpipelinecolorattachmentdescriptor/alphablendoperation.md)
   Configures the alpha blending operation.
 - [var blendingState: MTL4BlendState](mtl4renderpipelinecolorattachmentdescriptor/blendingstate.md)
-  Enables blending.
+  Configure the blend state for color attachments the pipeline state uses.
 - [var destinationAlphaBlendFactor: MTLBlendFactor](mtl4renderpipelinecolorattachmentdescriptor/destinationalphablendfactor.md)
   Configures the destination-alpha blend factor.
 - [var destinationRGBBlendFactor: MTLBlendFactor](mtl4renderpipelinecolorattachmentdescriptor/destinationrgbblendfactor.md)
@@ -70,7 +70,7 @@ class MTL4RenderPipelineColorAttachmentDescriptor
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTLRenderPipelineColorAttachmentDescriptor](mtlrenderpipelinecolorattachmentdescriptor.md)

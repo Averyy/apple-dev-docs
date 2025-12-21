@@ -36,9 +36,6 @@ enum State
   The application is running in the foreground.
 ### Initializers
 - [init?(rawValue: UInt)](xcuiapplication/state-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuiapplication/state-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuiapplication/state-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

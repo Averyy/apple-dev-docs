@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Returns a new image created by applying a Gaussian Blur filter to the image.
+Create an image by applying a gaussian blur to the receiver.
 
 **Availability**:
 - iOS 10.0+
@@ -21,15 +21,11 @@ func applyingGaussianBlur(sigma: Double) -> CIImage
 
 #### Return Value
 
-An image object representing the result of the operation.
-
-#### Discussion
-
-Calling this method is equivalent to using the [`CIGaussianBlur`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIGaussianBlur) filter with the specified radius. To use other blur effects, create a [`CIFilter`](cifilter-swift.class.md) object using one of the built-in filters from the [`CICategoryBlur`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW29) category. For details, see [`Core Image Filter Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346).
+ An autoreleased [`CIImage`](ciimage.md) instance or the received image.
 
 ## Parameters
 
-- `sigma`: The radius, in pixels, of the blur effect to apply.
+- `sigma`: The sigma of the gaussian blur to apply to the receiver.   If the sigma is very small (less than  ) then the receiver is returned.
 
 ## See Also
 

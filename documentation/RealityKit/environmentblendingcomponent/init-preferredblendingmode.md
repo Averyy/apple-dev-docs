@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates an instance of the component
+Creates an instance of the component.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ init(preferredBlendingMode: EnvironmentBlendingComponent.BlendingMode)
 
 ## Parameters
 
-- `preferredBlendingMode`: Specifies how the entity and its descendants blend against environments which encompass them
+- `preferredBlendingMode`: Specifies how the entity and its descendants blend against environments which encompass them.
 
 
 ---

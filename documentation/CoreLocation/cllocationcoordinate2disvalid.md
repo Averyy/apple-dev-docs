@@ -22,7 +22,7 @@ func CLLocationCoordinate2DIsValid(_ coord: CLLocationCoordinate2D) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the coordinate is valid or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the coordinate is valid or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 #### Discussion
 

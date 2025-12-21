@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: init
 
-Create an Identifier with an extension point identifier string
+Creates an identifier for binding to a system-defined extension point.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,14 @@ Create an Identifier with an extension point identifier string
 init(_ value: StaticString)
 ```
 
-#### Discussion
+## Parameters
 
-Use this when the extension point is defined by the operating system
+- `value`: The name of the system-defined extension point.
+
+## See Also
+
+- [init(host: StaticString, name: StaticString)](appextensionpoint/identifier/init(host:name:).md)
+  Creates an identifier for binding to a host app’s extension point.
 
 
 ---

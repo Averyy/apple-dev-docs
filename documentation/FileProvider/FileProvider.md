@@ -78,9 +78,8 @@ After you set these keys, other apps can open and edit the contents of your `Doc
 ### Data export
 - [Exporting file provider metrics data](exporting-file-provider-metrics-data.md)
   Download and analyze usage, consistency, and error data.
-### Global variables and macros
-- [Global variables and macros](global-variables-and-macros.md)
 ### Structures
+- [struct NSFileProviderUserInfoKey](nsfileprovideruserinfokey.md)
 - [struct NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason.md)
   Constants that describe why an external volume might not be eligible for storing a domain.
 

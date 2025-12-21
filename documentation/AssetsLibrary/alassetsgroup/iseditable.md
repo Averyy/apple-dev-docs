@@ -5,11 +5,6 @@
 
 Indicates whether the application can edit the group.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -18,7 +13,7 @@ var isEditable: Bool { get }
 
 #### Discussion
 
-The value of the property is [`true`](https://developer.apple.com/documentation/swift/true) if the application is able to edit the group, otherwise it is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of the property is [`true`](https://developer.apple.com/documentation/Swift/true) if the application is able to edit the group, otherwise it is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

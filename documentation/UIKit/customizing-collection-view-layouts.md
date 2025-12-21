@@ -179,7 +179,7 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 
 Because these functions are called often, they can affect the performance of your app. To make them as efficient as possible, follow the example code as closely as you can.
 
-The [`shouldInvalidateLayout(forBoundsChange:)`](https://developer.apple.com/documentation/AppKit/NSCollectionViewLayout/shouldInvalidateLayout(forBoundsChange:)) function is called for every bounds change from the collection view, or whenever its size or origin changes. This function is also called frequently during scrolling. The default implementation returns `false`, or, if the size and origin change, it returns `true`.
+The [`shouldInvalidateLayout(forBoundsChange:)`](uicollectionviewlayout/shouldinvalidatelayout(forboundschange:).md) function is called for every bounds change from the collection view, or whenever its size or origin changes. This function is also called frequently during scrolling. The default implementation returns `false`, or, if the size and origin change, it returns `true`.
 
 ```swift
 override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {

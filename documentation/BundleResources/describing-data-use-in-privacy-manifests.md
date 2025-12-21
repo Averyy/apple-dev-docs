@@ -35,6 +35,8 @@ The privacy report is organized in a similar way to Privacy Nutrition Labels. Re
   Report the data you collect and the required reasons API you use in your app or third-party SDK.
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
+- [Editing property list files](../Xcode/editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 - [App Privacy Configuration](app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 

@@ -13,7 +13,6 @@ The corresponding value of the raw type.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

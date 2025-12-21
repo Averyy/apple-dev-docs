@@ -10,7 +10,7 @@ Access the buffer as an array. This may create a copy if the data are not alread
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

@@ -16,8 +16,8 @@ Make your app’s content and actions discoverable with system experiences like 
 
 ## Mentions
 
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
+- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
 
 #### Overview
 
@@ -68,7 +68,7 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 - [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 ### Visual intelligence
 - [Integrating your app with visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md)
   Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
@@ -88,6 +88,8 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 - [Action button on iPhone and Apple Watch](actionbutton.md)
   Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 ### SiriKit migration

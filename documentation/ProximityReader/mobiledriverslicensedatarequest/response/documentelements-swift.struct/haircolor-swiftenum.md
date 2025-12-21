@@ -6,10 +6,10 @@
 A type that represents the mobile driver’s license holder’s hair color
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,9 +19,6 @@ enum HairColor
 
 ## Topics
 
-### Operators
-- [static func == (MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor, MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor) -> Bool](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor.auburn](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/auburn.md)
   An auburn hair color.
@@ -43,14 +40,6 @@ enum HairColor
   An unknown hair color.
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor.white](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/white.md)
   A hair color of white.
-### Instance Properties
-- [var hashValue: Int](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

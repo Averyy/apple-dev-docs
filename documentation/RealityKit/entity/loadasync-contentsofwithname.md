@@ -19,10 +19,6 @@ Returns a load request that creates an entity by asynchronously loading it from 
 @preconcurrency static func loadAsync(contentsOf url: URL, withName resourceName: String? = nil) -> LoadRequest<Entity>
 ```
 
-## Mentions
-
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
-
 #### Discussion
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files.

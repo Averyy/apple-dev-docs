@@ -154,7 +154,7 @@ let decompressedString = String(data: decompressedData,
                                 encoding: .utf8)
 ```
 
-On return, `decompressedString` contains the original text shown in [`Compressing and decompressing data with input and output filters`](compressing-and-decompressing-data-with-input-and-output-filters.md).
+On return, `decompressedString` contains the original text shown in [`Compressing and decompressing data with input and output filters`](compressing-and-decompressing-data-with-input-and-output-filters#Create-the-source-data.md).
 
 ##### Select Input and Output Filters Based on Requirements
 

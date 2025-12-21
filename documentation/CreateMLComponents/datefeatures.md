@@ -26,20 +26,7 @@ The choice of features for a particular task depends on the relevance of differe
 
 ## Topics
 
-### Initializers
-- [init(rawValue: Int)](datefeatures/init(rawvalue:).md)
-  Creates a feature from a raw value.
-### Instance Properties
-- [var rawValue: Int](datefeatures/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [DateFeatures.ArrayLiteralElement](datefeatures/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [DateFeatures.Element](datefeatures/element.md)
-  The element type of the option set.
-- [DateFeatures.RawValue](datefeatures/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
+### Features
 - [static let day: DateFeatures](datefeatures/day.md)
   A feature representing the day within the month.
 - [static let dayOfYear: DateFeatures](datefeatures/dayofyear.md)
@@ -58,11 +45,9 @@ The choice of features for a particular task depends on the relevance of differe
   A feature representing the week within the year.
 - [static let weekday: DateFeatures](datefeatures/weekday.md)
   A feature representing the weekday.
-### Default Implementations
-- [Equatable Implementations](datefeatures/equatable-implementations.md)
-- [OptionSet Implementations](datefeatures/optionset-implementations.md)
-- [RawRepresentable Implementations](datefeatures/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](datefeatures/setalgebra-implementations.md)
+### Creating a date feature type
+- [init(rawValue: Int)](datefeatures/init(rawvalue:).md)
+  Creates a feature from a raw value.
 
 ## Relationships
 

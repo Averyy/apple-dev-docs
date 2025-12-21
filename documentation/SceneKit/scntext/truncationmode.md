@@ -24,7 +24,7 @@ var truncationMode: String { get set }
 
 When you define a layout rectangle for the text using its [`containerFrame`](scntext/containerframe.md) property, SceneKit uses the [`truncationMode`](scntext/truncationmode.md) property to determine how to lay out text that does not fit in the layout rectangle. For possible values, see Truncation_modes in [`CATextLayer`](https://developer.apple.com/documentation/QuartzCore/CATextLayer).
 
-The default value of this property is [`none`](https://developer.apple.com/documentation/QuartzCore/CATextLayerTruncationMode/none), specifying that SceneKit should not truncate the text. If the [`isWrapped`](scntext/iswrapped.md) property is [`true`](https://developer.apple.com/documentation/swift/true), SceneKit continues to automatically wrap each line of text beyond the height of the layout rectangle. Otherwise, SceneKit does not display text that would extend beyond the layout rectangle.
+The default value of this property is [`none`](https://developer.apple.com/documentation/QuartzCore/CATextLayerTruncationMode/none), specifying that SceneKit should not truncate the text. If the [`isWrapped`](scntext/iswrapped.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit continues to automatically wrap each line of text beyond the height of the layout rectangle. Otherwise, SceneKit does not display text that would extend beyond the layout rectangle.
 
 ## See Also
 

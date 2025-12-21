@@ -19,7 +19,7 @@ object BetaAppReviewSubmission.Attributes
 - [Beta App Review Submissions](beta-app-review-submissions.md)
   The submissions of builds for beta app review, including the status of submissions.
 - [object BetaAppReviewSubmission.Relationships](betaappreviewsubmission/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

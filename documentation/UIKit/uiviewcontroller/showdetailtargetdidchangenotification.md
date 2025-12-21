@@ -29,6 +29,7 @@ When a view controller is using [`show(_:sender:)`](uiviewcontroller/show(_:send
   Presents a view controller in a primary context.
 - [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents a view controller in a secondary (or detail) context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
   Presents a view controller modally.
 - [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)

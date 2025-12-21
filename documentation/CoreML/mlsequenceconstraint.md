@@ -22,7 +22,7 @@ class MLSequenceConstraint
 
 ## Topics
 
-### Accessing the Constraints
+### Accessing the constraints
 - [var valueDescription: MLFeatureDescription](mlsequenceconstraint/valuedescription.md)
   The description that all sequence elements must match.
 - [var countRange: NSRange](mlsequenceconstraint/countrange.md)
@@ -44,6 +44,8 @@ class MLSequenceConstraint
 
 ## See Also
 
+- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+  The state feature value constraint.
 - [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
 - [class MLImageConstraint](mlimageconstraint.md)

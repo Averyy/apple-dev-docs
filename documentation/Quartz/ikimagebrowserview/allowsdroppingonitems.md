@@ -17,11 +17,11 @@ func allowsDroppingOnItems() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user is able to drop on items, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user is able to drop on items, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

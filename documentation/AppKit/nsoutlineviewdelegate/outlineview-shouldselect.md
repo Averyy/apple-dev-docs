@@ -17,7 +17,7 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldSelect tableColumn
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit `outlineView` to select `tableColumn`, [`false`](https://developer.apple.com/documentation/swift/false) to deny permission.
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit `outlineView` to select `tableColumn`, [`false`](https://developer.apple.com/documentation/Swift/false) to deny permission.
 
 #### Discussion
 

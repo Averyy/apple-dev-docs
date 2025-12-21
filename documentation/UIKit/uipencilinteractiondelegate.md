@@ -9,6 +9,7 @@ The interface an object implements to handle double taps or squeezes a person ma
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 

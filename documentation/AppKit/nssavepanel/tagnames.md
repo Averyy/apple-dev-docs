@@ -17,7 +17,7 @@ var tagNames: [String]? { get set }
 
 #### Discussion
 
-When the value of [`showsTagField`](nssavepanel/showstagfield.md) is [`true`](https://developer.apple.com/documentation/swift/true), use this property to provide an array of strings that represent the initial tag names to display in the panel. If you set the property to `nil` or an empty array, the panel displays no initial tag names.
+When the value of [`showsTagField`](nssavepanel/showstagfield.md) is [`true`](https://developer.apple.com/documentation/Swift/true), use this property to provide an array of strings that represent the initial tag names to display in the panel. If you set the property to `nil` or an empty array, the panel displays no initial tag names.
 
 > **Note**:  The Tags field is appropriate only in a Save panel.
 

@@ -21,11 +21,11 @@ case atBlitBoundary
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-When a Metal device object supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlblitcommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on a [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) to sample the counters between individual blit commands.
+When a Metal device instance supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlblitcommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) to sample the counters between individual blit commands.
 
 ## See Also
 

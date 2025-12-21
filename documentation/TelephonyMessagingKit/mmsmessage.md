@@ -6,8 +6,8 @@
 A structure that contains the data of an MMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -39,16 +39,6 @@ struct MMSMessage
   The total size of the message.
 - [var description: String](mmsmessage/description.md)
   A textual representation of the message.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmsmessage/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](mmsmessage/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing messages
-- [static func == (MMSMessage, MMSMessage) -> Bool](mmsmessage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](mmsmessage/equatable-implementations.md)
 
 ## Relationships
 

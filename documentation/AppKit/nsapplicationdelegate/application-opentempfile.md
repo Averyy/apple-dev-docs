@@ -17,11 +17,11 @@ optional func application(_ sender: NSApplication, openTempFile filename: String
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file was successfully opened or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file was successfully opened or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 
-Sent directly by `theApplication` to the delegate. The method should attempt to open the file `filename`, returning [`true`](https://developer.apple.com/documentation/swift/true) if the file is successfully opened, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Sent directly by `theApplication` to the delegate. The method should attempt to open the file `filename`, returning [`true`](https://developer.apple.com/documentation/Swift/true) if the file is successfully opened, and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 By design, a file opened through this method is assumed to be temporary—it’s the application’s responsibility to remove the file at the appropriate time.
 

@@ -17,7 +17,7 @@ func updateStatus(_ inSender: Any!) -> Bool
 
 #### Discussion
 
-Calls to [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) return [`true`](https://developer.apple.com/documentation/swift/true) if in the unlocked state, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Calls to [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) return [`true`](https://developer.apple.com/documentation/Swift/true) if in the unlocked state, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 If autoupdates have not been set, you must call [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) for the authorization view’s initial state to display correctly. The Security Framework calls this method for you when you change the state of the lock (by calling [`deauthorize(_:)`](sfauthorizationview/deauthorize(_:).md), for example).
 

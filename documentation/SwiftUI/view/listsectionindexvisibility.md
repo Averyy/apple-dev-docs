@@ -6,11 +6,11 @@
 Changes the visibility of the list section index.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -48,6 +48,11 @@ By hiding section headers of empty sections with an index label, a list section 
 ## Parameters
 
 - `visibility`: The visibility of the list section index.
+
+## See Also
+
+- [func sectionIndexLabel(_:)](view/sectionindexlabel(_:).md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
 
 
 ---

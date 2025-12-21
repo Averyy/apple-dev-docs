@@ -26,12 +26,14 @@ This response can contain a maximum of 50 transactions in the `signedTransaction
 
 ## See Also
 
-- [Get Refund History](get-refund-history.md)
-  Get a paginated list of all of a customer’s refunded in-app purchases for your app.
-- [object RefundHistoryResponse](refundhistoryresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) refunded transactions, and paging information.
+- [Get Transaction History V1](get-transaction-history-v1.md)
+  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
 - [Get Refund History V1](get-refund-history-v1.md)
   Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
+- [Send Consumption Information V1](send-consumption-information-v1.md)
+  Send consumption information about a consumable In-App Purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequestV1](consumptionrequestv1.md)
+  The request body containing consumption information.
 
 
 ---

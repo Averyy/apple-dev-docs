@@ -6,7 +6,7 @@
 Creates a new manipulation gesture state with the given transform.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

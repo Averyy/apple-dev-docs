@@ -23,7 +23,7 @@ To localize a contextual menu, provide an `InfoPlist.strings` file and include l
 
 ```
 
-For more information, see [`Managing Your App’s Information Property List`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list#Localize-the-Information-Property-List).
 
 ##### Validate and Change Text in a Contextual Menu Item
 

@@ -23,7 +23,7 @@ func itemTitle(for csc: UICloudSharingController) -> String?
 
 Implement this method to provide a meaningful title to the [`UICloudSharingController`](uicloudsharingcontroller.md) invitation screen.
 
-[`itemTitle(for:)`](uicloudsharingcontrollerdelegate/itemtitle(for:).md) is called only when creating a new share. For an existing share, the title is retrieved from the share using the [`CKShareTitleKey`](https://developer.apple.com/documentation/cloudkit/cksharetitlekey) key, which is set when a new share is saved.
+[`itemTitle(for:)`](uicloudsharingcontrollerdelegate/itemtitle(for:).md) is called only when creating a new share. For an existing share, the title is retrieved from the share using the [`CKShareTitleKey`](https://developer.apple.com/documentation/CloudKit/CKShareTitleKey-9yavd) key, which is set when a new share is saved.
 
 ## See Also
 

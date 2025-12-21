@@ -22,14 +22,14 @@ enum MLImageSizeConstraintType
 
 ## Topics
 
-### Enumeration Cases
+### Constraint types
 - [MLImageSizeConstraintType.range](mlimagesizeconstrainttype/range.md)
   The image feature accepts image sizes defined by a range of widths and a range of heights.
 - [MLImageSizeConstraintType.enumerated](mlimagesizeconstrainttype/enumerated.md)
   The image feature accepts image sizes listed in an array.
 - [MLImageSizeConstraintType.unspecified](mlimagesizeconstrainttype/unspecified.md)
   The image size constraint is not configured and should be ignored.
-### Initializers
+### Creating a constraint type
 - [init?(rawValue: Int)](mlimagesizeconstrainttype/init(rawvalue:).md)
 
 ## Relationships

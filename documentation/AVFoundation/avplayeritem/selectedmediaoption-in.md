@@ -25,7 +25,7 @@ An instance of [`AVMediaSelectionOption`](avmediaselectionoption.md) that descri
 
 #### Discussion
 
-If the value of the [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) property of `mediaSelectionGroup` is [`true`](https://developer.apple.com/documentation/swift/true), the currently selected option in the group may be `nil`.
+If the value of the [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) property of `mediaSelectionGroup` is [`true`](https://developer.apple.com/documentation/Swift/true), the currently selected option in the group may be `nil`.
 
 ## Parameters
 

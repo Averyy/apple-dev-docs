@@ -155,7 +155,6 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [ExpressibleByUnicodeScalarLiteral Implementations](character/expressiblebyunicodescalarliteral-implementations.md)
 - [Hashable Implementations](character/hashable-implementations.md)
 - [LosslessStringConvertible Implementations](character/losslessstringconvertible-implementations.md)
-- [RegexComponent Implementations](character/regexcomponent-implementations.md)
 - [TextOutputStreamable Implementations](character/textoutputstreamable-implementations.md)
 
 ## Relationships

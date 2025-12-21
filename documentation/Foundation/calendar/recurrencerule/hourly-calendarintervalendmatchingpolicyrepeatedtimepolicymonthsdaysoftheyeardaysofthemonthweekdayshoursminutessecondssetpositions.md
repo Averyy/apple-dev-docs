@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+A recurrence that repeats every `interval` hours
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

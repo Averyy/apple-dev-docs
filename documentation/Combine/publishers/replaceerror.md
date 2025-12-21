@@ -22,34 +22,28 @@ struct ReplaceError<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Replace Error Publisher
+### Creating a replace error Publisher
 - [init(upstream: Upstream, output: Publishers.ReplaceError<Upstream>.Output)](publishers/replaceerror/init(upstream:output:).md)
   Creates a publisher that replaces any errors in the stream with a provided element.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.ReplaceError.Output](publishers/replaceerror/output-swift.typealias.md)
   The kind of values published by this publisher.
 - [Publishers.ReplaceError.Output](publishers/replaceerror/output-swift.typealias.md)
   The kind of values published by this publisher.
 - [Publishers.ReplaceError.Failure](publishers/replaceerror/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/replaceerror/upstream.md)
   The publisher from which this publisher receives elements.
 - [let output: Publishers.ReplaceError<Upstream>.Output](publishers/replaceerror/output-swift.property.md)
   The element with which to replace errors from the upstream publisher.
 - [let output: Publishers.ReplaceError<Upstream>.Output](publishers/replaceerror/output-swift.property.md)
   The element with which to replace errors from the upstream publisher.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.ReplaceError<Upstream>, Publishers.ReplaceError<Upstream>) -> Bool](publishers/replaceerror/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/replaceerror/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-replaceerror-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/replaceerror/equatable-implementations.md)
-- [Publisher Implementations](publishers/replaceerror/publisher-implementations.md)
 
 ## Relationships
 

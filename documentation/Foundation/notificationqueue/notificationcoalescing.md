@@ -33,12 +33,6 @@ These constants are used by the [`enqueue(_:postingStyle:coalesceMask:forModes:)
   Coalesce notifications with the same name.
 - [static var onSender: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onsender.md)
   Coalesce notifications with the same object.
-- [static var none: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/none.md)
-  Do not coalesce notifications in the queue.
-- [static var onName: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onname.md)
-  Coalesce notifications with the same name.
-- [static var onSender: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onsender.md)
-  Coalesce notifications with the same object.
 ### Initializers
 - [init(rawValue: UInt)](notificationqueue/notificationcoalescing/init(rawvalue:).md)
 

@@ -20,7 +20,7 @@ object SubscriptionImageCreateRequest.Data
 - [object SubscriptionImageCreateRequest.Data.Attributes](subscriptionimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription purchase image request resource.
 - [object SubscriptionImageCreateRequest.Data.Relationships](subscriptionimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

@@ -30,11 +30,8 @@ The system reserves some codes for its use only. Reserved codes are equal to or 
 - [init?(rawValue: Int)](managedappconfigurationdecodingerrorcode/init(rawvalue:).md)
   Initializes a configuration decoding error code.
 ### Identifying an error
-- [let rawValue: Int](managedappconfigurationdecodingerrorcode/rawvalue-swift.property.md)
+- [let rawValue: Int](managedappconfigurationdecodingerrorcode/rawvalue.md)
   The error code’s value in its underlying type.
-### Type Aliases
-- [ManagedAppConfigurationDecodingErrorCode.RawValue](managedappconfigurationdecodingerrorcode/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let dataCorrupted: Int](managedappconfigurationdecodingerrorcode/datacorrupted.md)
   An error code that indicates the decoder encountered corrupt data.
@@ -50,9 +47,6 @@ The system reserves some codes for its use only. Reserved codes are equal to or 
   An error code that indicates the decoder encountered a type mismatch.
 - [static let valueNotFound: Int](managedappconfigurationdecodingerrorcode/valuenotfound.md)
   An error code that indicates a coding key yields no value.
-### Default Implementations
-- [Equatable Implementations](managedappconfigurationdecodingerrorcode/equatable-implementations.md)
-- [RawRepresentable Implementations](managedappconfigurationdecodingerrorcode/rawrepresentable-implementations.md)
 
 ## Relationships
 

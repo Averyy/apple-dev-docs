@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of AudioHardwareObjects that represent all the objects owned by this object.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

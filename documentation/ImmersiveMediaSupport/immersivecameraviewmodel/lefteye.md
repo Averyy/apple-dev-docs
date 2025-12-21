@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-Left eye mesh associated with the Immersive camera view.
+Left eye mesh associated with the immersive camera view.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ var leftEye: MDLMesh { get }
 - [var mask: ImmersiveVideoMask?](immersivecameraviewmodel/mask.md)
   Generated immersive video mask associated with the immersive camera view
 - [var rightEye: MDLMesh](immersivecameraviewmodel/righteye.md)
-  Right eye mesh associated with the Immersive camera view.
+  Right eye mesh associated with the immersive camera view.
 
 
 ---

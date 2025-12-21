@@ -6,10 +6,10 @@
 A service for retrieving insights about electricity consumption.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -27,11 +27,6 @@ final actor ElectricityInsightService
   Returns data that provides insight into electrical usage for a given device.
 - [func runtimeInsights(forDeviceID: String, using: ElectricityInsightQuery, atVenue: UUID) async throws -> AsyncStream<ElectricityInsightRecord<Duration>>](electricityinsightservice/runtimeinsights(fordeviceid:using:atvenue:).md)
   Returns records that provide insight into runtime of a given device.
-### Instance Properties
-- [var unownedExecutor: UnownedSerialExecutor](electricityinsightservice/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
-### Default Implementations
-- [Actor Implementations](electricityinsightservice/actor-implementations.md)
 
 ## Relationships
 
@@ -43,11 +38,11 @@ final actor ElectricityInsightService
 ## See Also
 
 - [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that represents displayable environmental impact information for electricity usage.
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
-  A measurement of electricity consumption.
+  A protocol for types that can measure electricity usage data.
 
 
 ---

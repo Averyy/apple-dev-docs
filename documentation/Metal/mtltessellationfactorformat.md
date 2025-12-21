@@ -21,7 +21,7 @@ enum MTLTessellationFactorFormat
 
 ## Topics
 
-### Constants
+### Factor formats
 - [MTLTessellationFactorFormat.half](mtltessellationfactorformat/half.md)
   A 16-bit floating-point format.
 ### Initializers

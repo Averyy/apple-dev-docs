@@ -31,6 +31,12 @@ struct GroupContainer
 - [static var none: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct/none.md)
   Prevents SwiftData from using a group container as the root location for the app’s persistent storage.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)

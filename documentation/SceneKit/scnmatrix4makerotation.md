@@ -17,7 +17,7 @@ Returns a matrix describing a rotation transformation.
 ## Declaration
 
 ```swift
-func SCNMatrix4MakeRotation(_ angle: Float, _ x: Float, _ y: Float, _ z: Float) -> SCNMatrix4
+func SCNMatrix4MakeRotation(_ angle: CGFloat, _ x: CGFloat, _ y: CGFloat, _ z: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

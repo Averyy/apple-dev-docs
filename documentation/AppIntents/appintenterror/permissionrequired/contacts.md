@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to grant contacts permission to the app
+The person needs to allow the app to access contacts.
 
 **Availability**:
 - iOS 18.0+

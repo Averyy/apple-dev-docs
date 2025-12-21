@@ -28,7 +28,7 @@ Previously, Apple GPUs and Mac GPUs belonged to distinct families, and each GPU 
 
 Always use availability methods and properties to determine features, and don’t rely on the GPU name or other hardcoded information. GPU names may change on future hardware, so the [`name`](https://developer.apple.com/documentation/Metal/MTLDevice/name) property of the device object is an unreliable indicator of the feature set. Similarly, hard coding values for specific GPUs rather than using device queries can cause your app to crash, or prevent your app from taking advantage of new features.
 
-For more information, see [`Detecting GPU Features and Metal Software Versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions). For a list of specific queries, see [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice).
+For more information, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions). For a list of specific queries, see [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice).
 
 ##### Set Load and Store Actions on Your Render Passes
 
@@ -40,7 +40,7 @@ Apple-family GPUs use tile memory inside the GPU to temporarily hold texture con
 
 > **Note**: If your app is linked against macOS 10.15 or earlier, is running under Rosetta translation, and you set a load action to [`MTLLoadAction.dontCare`](https://developer.apple.com/documentation/Metal/MTLLoadAction/dontCare), Metal forces the GPU to load the contents into tile memory, trading performance for behavior more consistent with Intel-based Macs.
 
-For more information on load and store actions, see [`Setting Load and Store Actions`](https://developer.apple.com/documentation/Metal/setting-load-and-store-actions).
+For more information on load and store actions, see [`Setting load and store actions`](https://developer.apple.com/documentation/Metal/setting-load-and-store-actions).
 
 ##### Make Vertex Shader Positions Invariant
 
@@ -112,7 +112,7 @@ For more information on how to synchronize concurrent commands, see `memoryBarri
 
 When you use an untracked heap, Metal doesn’t track resource dependencies or synchronize commands that access resources on that heap. Apple family GPUs take advantage of this behavior to improve performance, so if you aren’t synchronizing commands correctly, the GPU may run commands in the wrong order, which can corrupt memory or cause a fault.
 
-For more information on how to use heaps or fences to synchronize commands, see [`Resource Synchronization`](https://developer.apple.com/documentation/Metal/resource-synchronization).
+For more information on how to use heaps or fences to synchronize commands, see [`Resource synchronization`](https://developer.apple.com/documentation/Metal/resource-synchronization).
 
 ##### Profile Your App
 
@@ -122,7 +122,7 @@ When you design an app to run on Apple GPUs, it’s a good practice to do more w
 
 Coalescing render passes is possible on Apple family GPUs where it might not on other GPUs, such as when writing a deferred renderer or when performing a series of post-processing effects to the same texture. In these cases, use programmable blending inside your fragment shaders to blend new pixel data with the current pixel data. The pixel data stays in tile memory until the end of the render pass. Apple GPUs also support tile shading  to directly process pixel data stored in the tile using a compute shader that runs as part of a render pass. The combination of programmable blending and tile shading mean you can perform complex render operations while copying data between the GPU and system memory as little as possible.
 
-For examples of these techniques, see [`Rendering a Scene with Deferred Lighting in Objective-C`](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-objective-c) and [`Rendering a Scene with Forward Plus Lighting Using Tile Shaders`](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders).
+For examples of these techniques, see [`Rendering a scene with deferred lighting in Objective-C`](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-objective-c) and [`Rendering a scene with forward plus lighting using tile shaders`](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders).
 
 
 ---

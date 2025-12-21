@@ -21,13 +21,13 @@ func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: UI
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layout should be invalidated or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layout should be invalidated or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
 When a collection view includes self-sizing cells, the cells are given the opportunity to modify their own layout attributes before those attributes are applied. A self-sizing cell might do this to specify a different cell size than the one the layout object provides. When the cell provides a different set of attributes, the collection view calls this method to determine if the cell’s change requires a larger layout refresh.
 
-If you are implementing a custom layout, you can override this method and use it to determine if your layout should be invalidated based on the specified attributes. The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+If you are implementing a custom layout, you can override this method and use it to determine if your layout should be invalidated based on the specified attributes. The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

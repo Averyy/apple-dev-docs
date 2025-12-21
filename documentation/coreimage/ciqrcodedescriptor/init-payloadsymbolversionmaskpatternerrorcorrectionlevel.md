@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+Initializes a QR code descriptor for the given payload and parameters.
 
 **Availability**:
 - iOS 11.0+
@@ -21,18 +21,14 @@ init?(payload errorCorrectedPayload: Data, symbolVersion: Int, maskPattern: UInt
 
 #### Return Value
 
-A QR code descriptor encoding the specified data at the specified error correction level.
-
-#### Discussion
-
-The `CIBarcodeGenerator` filter can recreate a QR code given the descriptor created using this method.
+ An initialized [`CIAztecCodeDescriptor`](ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 
-- `errorCorrectedPayload`: The data to encode in the QR code.
+- `errorCorrectedPayload`: The data to encode in the QR code symbol.
 - `symbolVersion`: The symbol version, from 1 through 40.
-- `maskPattern`: The mask pattern to use in the QR code.
-- `errorCorrectionLevel`: The QR code’s error correction level:  ,  ,  , or  .
+- `maskPattern`: The mask pattern to use in the QR code, from 0 to 7.
+- `errorCorrectionLevel`: The QR code’s error correction level: L, M, Q, or H.
 
 
 ---

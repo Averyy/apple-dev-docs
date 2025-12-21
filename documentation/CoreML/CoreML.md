@@ -26,7 +26,7 @@ You build and train a model with the [`Create ML app`](https://developer.apple.c
 
 [`Core ML`](CoreML.md) optimizes on-device performance by leveraging the CPU, GPU, and Neural Engine while minimizing its memory footprint and power consumption. Running a model strictly on a person’s device removes any need for a network connection, which helps keep a person’s data private and your app responsive.
 
-The framework is the foundation for domain-specific frameworks and functionality. It supports [`Vision`](https://developer.apple.com/documentation/Vision) for analyzing images, [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage) for processing text, [`Speech`](https://developer.apple.com/documentation/Speech) for converting audio to text, and [`Sound Analysis`](https://developer.apple.com/documentation/SoundAnalysis) for identifying sounds in audio. [`Core ML`](CoreML.md) itself builds on top of low-level primitives like [`Accelerate`](https://developer.apple.com/documentation/Accelerate) and [`BNNS`](https://developer.apple.com/documentation/Accelerate/BNNS), as well as [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders).
+The framework is the foundation for domain-specific frameworks and functionality. It supports [`Vision`](https://developer.apple.com/documentation/Vision) for analyzing images, [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage) for processing text, [`Speech`](https://developer.apple.com/documentation/Speech) for converting audio to text, and [`Sound Analysis`](https://developer.apple.com/documentation/SoundAnalysis) for identifying sounds in audio. [`Core ML`](CoreML.md) itself builds on top of low-level primitives like [`Accelerate`](https://developer.apple.com/documentation/Accelerate) and [`BNNS`](https://developer.apple.com/documentation/Accelerate/bnns-library), as well as [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders).
 
 ![A block diagram of the machine learning stack. The top layer is a single block labeled “Your app,” which spans the entire width of the block diagram. The second layer has four blocks labeled “Vision,” “Natural Language,” “Speech,” and “Sound Analysis.” The third layer is labeled “Core ML,” which also spans the entire width. The fourth and final layer has two blocks, “Accelerate and BNNS” and “Metal Performance Shaders.”](https://docs-assets.developer.apple.com/published/2ab0327b082af0332b528cc4171ee629/media-3330367%402x.png)
 
@@ -106,6 +106,12 @@ The framework is the foundation for domain-specific frameworks and functionality
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
 - [protocol MLTensorRangeExpression](mltensorrangeexpression.md)
   A type that can be used to slice a dimension of a tensor. Don’t use this type directly.
+- [func pointwiseMin(_:_:)](pointwisemin(_:_:).md)
+  Computes the element-wise minimum of two tensors.
+- [func pointwiseMax(_:_:)](pointwisemax(_:_:).md)
+  Computes the element-wise minimum between two tensors.
+- [func withMLTensorComputePolicy(_:_:)](withmltensorcomputepolicy(_:_:).md)
+  Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 ### Model structure
 - [enum MLModelStructure](mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
@@ -121,22 +127,6 @@ The framework is the foundation for domain-specific frameworks and functionality
   A set of Core ML models from a model deployment.
 ### Reference
 - [CoreML Enumerations](coreml-enumerations.md)
-### Functions
-- [func pointwiseMax(some MLTensorScalar & Numeric, MLTensor) -> MLTensor](pointwisemax(_:_:)-6dj1o.md)
-  Computes the element-wise maximum of two values.
-- [func pointwiseMax(MLTensor, MLTensor) -> MLTensor](pointwisemax(_:_:)-8zmn3.md)
-  Computes the element-wise minimum between two tensors.
-- [func pointwiseMax(MLTensor, some MLTensorScalar & Numeric) -> MLTensor](pointwisemax(_:_:)-ez2t.md)
-  Computes the element-wise maximum of two values.
-- [func pointwiseMin(MLTensor, MLTensor) -> MLTensor](pointwisemin(_:_:)-1tz0k.md)
-  Computes the element-wise minimum of two tensors.
-- [func pointwiseMin(MLTensor, some MLTensorScalar & Numeric) -> MLTensor](pointwisemin(_:_:)-3wuzz.md)
-  Computes the element-wise minimum of two values.
-- [func pointwiseMin(some MLTensorScalar & Numeric, MLTensor) -> MLTensor](pointwisemin(_:_:)-44bbv.md)
-  Computes the element-wise minimum between two values.
-### Enumerations
-- [enum MLShapedArrayBufferLayout](mlshapedarraybufferlayout.md)
-  Buffer layout enum
 
 
 ---

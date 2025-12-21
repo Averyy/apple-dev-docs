@@ -25,9 +25,9 @@ A property wrapper type that can read and write a value owned by a source of tru
 
 - [Performing a search operation](performing-a-search-operation.md)
 - [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
-- [Managing search interface activation](managing-search-interface-activation.md)
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
 - [Managing user interface state](managing-user-interface-state.md)
+- [Managing search interface activation](managing-search-interface-activation.md)
 
 #### Overview
 

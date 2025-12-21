@@ -30,14 +30,6 @@ static var joinNames: NSLinguisticTagger.Options { get }
   Omit tokens of type [`whitespace`](nslinguistictag/whitespace.md) (whitespace of all sorts).
 - [static var omitOther: NSLinguisticTagger.Options](nslinguistictagger/options/omitother.md)
   Omit tokens of type [`other`](nslinguistictag/other.md) (non-linguistic items, such as symbols).
-- [static var omitWords: NSLinguisticTagger.Options](nslinguistictagger/options/omitwords.md)
-  Omit tokens of type [`word`](nslinguistictag/word.md) (items considered to be words).
-- [static var omitPunctuation: NSLinguisticTagger.Options](nslinguistictagger/options/omitpunctuation.md)
-  Omit tokens of type [`punctuation`](nslinguistictag/punctuation.md) (all punctuation).
-- [static var omitWhitespace: NSLinguisticTagger.Options](nslinguistictagger/options/omitwhitespace.md)
-  Omit tokens of type [`whitespace`](nslinguistictag/whitespace.md) (whitespace of all sorts).
-- [static var omitOther: NSLinguisticTagger.Options](nslinguistictagger/options/omitother.md)
-  Omit tokens of type [`other`](nslinguistictag/other.md) (non-linguistic items, such as symbols).
 
 
 ---

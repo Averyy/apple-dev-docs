@@ -17,7 +17,7 @@ optional func outlineView(_ outlineView: NSOutlineView, acceptDrop info: any NSD
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drop operation was successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drop operation was successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

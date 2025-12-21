@@ -20,6 +20,13 @@ The optimization operation is not supported on this platform.
 case unsupportedPlatform
 ```
 
+## See Also
+
+- [OptimizationError.numericOverflow](optimizationerror/numericoverflow.md)
+  Numerical overflow. Step size parameter may be too large.
+- [OptimizationError.numericUnderflow](optimizationerror/numericunderflow.md)
+  Numerical underflow (not enough progress).
+
 
 ---
 

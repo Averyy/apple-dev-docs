@@ -82,7 +82,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Known Issues
 
-- When using doc://com.apple.documentation/documentation/SiriKit/INUIAddVoiceShortcutButton, the “Add to Siri” and “Added to Siri” button text isn’t localized. (43251696)  To localize “Add to Siri” and “Added to Siri” button text, include localizations for this text in the strings files of your app bundle.
+- When using `INUIAddVoiceShortcutButton`, the “Add to Siri” and “Added to Siri” button text isn’t localized. (43251696)  To localize “Add to Siri” and “Added to Siri” button text, include localizations for this text in the strings files of your app bundle.
 - While multiple ride-sharing apps are installed, Siri might open the app instead of providing an ETA or location when asked. (42324032)  Ask Siri for the ETA or location again.
 - Siri Shortcuts might not work if a device is locked. (41307405)
 - Siri Suggestions for Shortcuts are enabled on iPhone 6s or later, iPad Pro, iPad (5th generation or later), iPad Air 2, and iPad mini 4. (40669231)

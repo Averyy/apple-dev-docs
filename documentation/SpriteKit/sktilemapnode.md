@@ -17,7 +17,6 @@ A two-dimensional array of images.
 ## Declaration
 
 ```swift
-@MainActor
 class SKTileMapNode
 ```
 

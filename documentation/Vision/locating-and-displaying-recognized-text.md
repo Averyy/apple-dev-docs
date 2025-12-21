@@ -47,7 +47,7 @@ CameraPreview(camera: $camera)
     }
 ```
 
-For more information on how to integrate the camera, see [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) and [`Capturing Still and Live Photos`](https://developer.apple.com/documentation/AVFoundation/capturing-still-and-live-photos).
+For more information on how to integrate the camera, see [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) and [`Capturing still and Live Photos`](https://developer.apple.com/documentation/AVFoundation/capturing-still-and-live-photos).
 
 ##### Customize the Request
 
@@ -158,13 +158,15 @@ ForEach(imageOCR.observations, id: \.self) { observation in
 ## See Also
 
 - [Recognizing tables within a document](recognize-tables-within-a-document.md)
-  Scan a document containing a contact table and extract the content within the table in a formatted way.
-- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
-  An image-analysis request to scan an image of a document and provide information about its structure.
-- [struct DocumentObservation](documentobservation.md)
-  Information about the sections of content that an image-analysis request detects in a document.
+  Scan a document that contains a table and extract its content in a formatted way.
+- [struct DetectBarcodesRequest](detectbarcodesrequest.md)
+  A request that detects barcodes in an image.
+- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
+  A request that detects rectangular regions that contain text in the input image.
 - [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
+- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+  An image-analysis request to scan an image of a document and provide information about its structure.
 - [struct RecognizeTextRequest](recognizetextrequest.md)
   An image-analysis request that recognizes text in an image.
 

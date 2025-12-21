@@ -134,8 +134,6 @@ The player view also makes it simple to add trimming capabilities to your player
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

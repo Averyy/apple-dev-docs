@@ -1,0 +1,31 @@
+# including(categories)
+
+**Framework**: MapKit JS  
+**Kind**: method
+
+Creates a point-of-interest filter that includes categories from a list that you provide.
+
+**Availability**:
+- MapKit JS 5.33.1+
+
+## Declaration
+
+```swift
+static including(
+        categories: PointOfInterestCategory[],
+    ): PointOfInterestFilter;
+```
+
+## See Also
+
+- [excluding(categories)](pointofinterestfilter/excluding.md)
+  Creates a point-of-interest filter that excludes categories from a list that you provide.
+- [excludingAllCategories](pointofinterestfilter/excludingallcategories.md)
+  A filter that excludes all point-of-interest categories.
+- [includingAllCategories](pointofinterestfilter/includingallcategories.md)
+  A filter that includes all point-of-interest categories.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/pointofinterestfilter/including)*

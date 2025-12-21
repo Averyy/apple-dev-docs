@@ -18,7 +18,7 @@ var wantsHDREnvironmentTextures: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If your renderer supports HDR environment textures, this feature effects more realistic reflections.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If your renderer supports HDR environment textures, this feature effects more realistic reflections.
 
 ![Screenshot showing low and high dynamic range environment textures in a side by side comparison.](https://docs-assets.developer.apple.com/published/ad953b8a0aa6dd1314efee5175eab5df/media-3281347%402x.png)
 

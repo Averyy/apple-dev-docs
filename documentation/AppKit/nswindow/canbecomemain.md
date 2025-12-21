@@ -17,9 +17,9 @@ var canBecomeMain: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window can become the main window; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window can become the main window; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Attempts to make the window the main window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of the property is [`true`](https://developer.apple.com/documentation/swift/true) if the window is visible, is not an [`NSPanel`](nspanel.md) object, and has a title bar or a resize mechanism. Otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+Attempts to make the window the main window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). The value of the property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window is visible, is not an [`NSPanel`](nspanel.md) object, and has a title bar or a resize mechanism. Otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

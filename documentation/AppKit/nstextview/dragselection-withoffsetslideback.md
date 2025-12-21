@@ -17,7 +17,7 @@ func dragSelection(with event: NSEvent, offset mouseOffset: NSSize, slideBack: B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag can be successfully initiated, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drag can be successfully initiated, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

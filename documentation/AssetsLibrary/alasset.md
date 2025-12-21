@@ -5,11 +5,6 @@
 
 An `ALAsset` object represents a photo or a video managed by the Photo application.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

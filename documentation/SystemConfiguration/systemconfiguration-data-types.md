@@ -5,7 +5,7 @@
 ## Topics
 
 ### Data Types
-- [typealias AuthorizationRef = OpaquePointer](../Security/AuthorizationRef.md)
+- [typealias AuthorizationRef](../Security/AuthorizationRef.md)
   A pointer to an opaque authorization reference structure.
 
 ## See Also

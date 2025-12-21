@@ -6,12 +6,12 @@
 A Boolean value that indicates whether the screen recorder is available for recording.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ var isAvailable: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the screen recorder is available for recording. Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the recorder.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the screen recorder is available for recording. Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the recorder.
 
 ## See Also
 

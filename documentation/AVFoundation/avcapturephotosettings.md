@@ -20,13 +20,13 @@ class AVCapturePhotoSettings
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Saving Captured Photos](saving-captured-photos.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
+- [Saving captured photos](saving-captured-photos.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
 
 #### Overview
 
@@ -85,10 +85,10 @@ A [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance can include any
   A Boolean value that specifies whether captures use automatic image stabilization.
 - [var isHighResolutionPhotoEnabled: Bool](avcapturephotosettings/ishighresolutionphotoenabled.md)
   A Boolean value that specifies whether to capture still images at the highest resolution supported by the active device and format.
-### Suppressing the Shutter Sound
+### Suppressing the shutter sound
 - [var isShutterSoundSuppressionEnabled: Bool](avcapturephotosettings/isshuttersoundsuppressionenabled.md)
   A Boolean value that indicates whether to suppress the built-in shutter sound when capturing a photo.
-### Enabling Preview and Thumbnail Delivery
+### Enabling preview and thumbnail delivery
 - [var previewPhotoFormat: [String : Any]?](avcapturephotosettings/previewphotoformat.md)
   A dictionary describing the format for delivery of preview-sized images alongside the main photo.
 - [var availablePreviewPhotoPixelFormatTypes: [OSType]](avcapturephotosettings/availablepreviewphotopixelformattypes-30d9.md)
@@ -101,39 +101,39 @@ A [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance can include any
   A dictionary describing the format for delivery of raw thumbnail images embedded in photo file output.
 - [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](avcapturephotosettings/availableembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding thumbnail images in photo file output.
-### Configuring Live Photo Settings
+### Configuring Live Photo settings
 - [var livePhotoMovieFileURL: URL?](avcapturephotosettings/livephotomoviefileurl.md)
   A URL at which to write Live Photo movie output.
 - [var livePhotoMovieMetadata: [AVMetadataItem]!](avcapturephotosettings/livephotomoviemetadata.md)
   A dictionary of metadata to include in the Live Photo movie file.
 - [var livePhotoVideoCodecType: AVVideoCodecType](avcapturephotosettings/livephotovideocodectype.md)
   The video codec to use for encoding the movie portion of Live Photo output.
-### Configuring Constant Color
+### Configuring constant color
 - [var isConstantColorEnabled: Bool](avcapturephotosettings/isconstantcolorenabled.md)
   A Boolean value that indicates whether to capture the photo with constant color.
 - [var isConstantColorFallbackPhotoDeliveryEnabled: Bool](avcapturephotosettings/isconstantcolorfallbackphotodeliveryenabled.md)
   A Boolean value that indicates whether to deliver a fallback photo when taking a constant color capture.
-### Capturing Depth Data
+### Capturing depth data
 - [var isDepthDataDeliveryEnabled: Bool](avcapturephotosettings/isdepthdatadeliveryenabled.md)
   A Boolean value that determines whether the photo output captures depth data along with the photo.
 - [var embedsDepthDataInPhoto: Bool](avcapturephotosettings/embedsdepthdatainphoto.md)
   A Boolean value that determines whether any depth data captured with the photo is included when generating output file data.
 - [var isDepthDataFiltered: Bool](avcapturephotosettings/isdepthdatafiltered.md)
   A Boolean value that determines whether to smooth noise and fill in missing values in depth data output.
-### Capturing Portrait Effects Matte
+### Capturing Portrait Effects matte
 - [var isPortraitEffectsMatteDeliveryEnabled: Bool](avcapturephotosettings/isportraiteffectsmattedeliveryenabled.md)
   Specifies whether a portrait effects matte should be captured along with the photo.
 - [var embedsPortraitEffectsMatteInPhoto: Bool](avcapturephotosettings/embedsportraiteffectsmatteinphoto.md)
   Specifies whether the portrait effects matte captured with ths photo should be written to the photo’s file structure.
-### Capturing Semantic Segmentation Mattes
+### Capturing semantic segmentation mattes
 - [var embedsSemanticSegmentationMattesInPhoto: Bool](avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md)
   A Boolean value that specifies whether to write the enabled semantic segmentation matte types captured with this photo to the photo’s file structure.
 - [var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](avcapturephotosettings/enabledsemanticsegmentationmattetypes.md)
   An array of semantic segmentation matte types that the photo render pipeline can deliver.
-### Embedding Metadata
+### Embedding metadata
 - [var metadata: [String : Any]](avcapturephotosettings/metadata.md)
   A dictionary of metadata keys and values to embed in photo file output.
-### Instance Properties
+### Instance properties
 - [var rawFileFormat: [String : Any]?](avcapturephotosettings/rawfileformat.md)
 
 ## Relationships

@@ -17,7 +17,7 @@ var bezelStyle: NSTextField.BezelStyle { get set }
 
 #### Discussion
 
-To set the bezel style, you must have already set the the text field’s [`isBezeled`](nstextfield/isbezeled.md) method with an argument of [`true`](https://developer.apple.com/documentation/swift/true). For a list of bezel styles, see [`NSTextField.BezelStyle`](nstextfield/bezelstyle-swift.enum.md).
+To set the bezel style, you must have already set the the text field’s [`isBezeled`](nstextfield/isbezeled.md) method with an argument of [`true`](https://developer.apple.com/documentation/Swift/true). For a list of bezel styles, see [`NSTextField.BezelStyle`](nstextfield/bezelstyle-swift.enum.md).
 
 ## See Also
 

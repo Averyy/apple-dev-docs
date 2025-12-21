@@ -23,15 +23,8 @@ func encode(_ transformer: Self.Transformer, to encoder: inout any EstimatorEnco
 
 ## See Also
 
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-1x6qv.md)
-  Composes this tabular supervised estimator with a tabular estimator.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-54zun.md)
-  Composes this supervised tabular estimator with a tabular transformer.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-r8hb.md)
-  Composes this supervised tabular estimator with another supervised tabular estimator.
+- [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](supervisedtabularestimator/decode(from:).md)
+  Decodes a previously fitted transformer.
 
 
 ---

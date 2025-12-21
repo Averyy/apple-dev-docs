@@ -17,7 +17,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can set the displayed image by dragging an image onto the image view. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the image view to display only the programmatically set image.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user can set the displayed image by dragging an image onto the image view. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes the image view to display only the programmatically set image.
 
 ## See Also
 

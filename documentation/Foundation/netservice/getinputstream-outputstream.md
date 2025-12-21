@@ -21,7 +21,7 @@ func getInputStream(_ inputStream: UnsafeMutablePointer<InputStream?>?, outputSt
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the streams are created successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the streams are created successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -45,7 +45,7 @@ After this method is called, no delegate callbacks are called by the receiver.
 - [var domain: String](netservice/domain.md)
   A string containing the domain for this service.
 - [var includesPeerToPeer: Bool](netservice/includespeertopeer.md)
-  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available.
 - [var name: String](netservice/name.md)
   A string containing the name of this service.
 - [var type: String](netservice/type.md)

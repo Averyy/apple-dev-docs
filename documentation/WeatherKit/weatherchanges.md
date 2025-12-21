@@ -34,25 +34,6 @@ struct WeatherChanges
 ### Subscripts
 - [subscript(WeatherChanges.Index) -> WeatherChanges.Element](weatherchanges/subscript(_:).md)
   The weather change at the provided index.
-### Type Aliases
-- [WeatherChanges.Element](weatherchanges/element.md)
-  A type representing the sequence’s elements.
-- [WeatherChanges.Index](weatherchanges/index.md)
-  A type that represents a position in the collection.
-- [WeatherChanges.Indices](weatherchanges/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [WeatherChanges.Iterator](weatherchanges/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [WeatherChanges.SubSequence](weatherchanges/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](weatherchanges/bidirectionalcollection-implementations.md)
-- [Collection Implementations](weatherchanges/collection-implementations.md)
-- [Decodable Implementations](weatherchanges/decodable-implementations.md)
-- [Encodable Implementations](weatherchanges/encodable-implementations.md)
-- [Equatable Implementations](weatherchanges/equatable-implementations.md)
-- [RandomAccessCollection Implementations](weatherchanges/randomaccesscollection-implementations.md)
-- [Sequence Implementations](weatherchanges/sequence-implementations.md)
 
 ## Relationships
 

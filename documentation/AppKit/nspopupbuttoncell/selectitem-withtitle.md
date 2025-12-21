@@ -17,7 +17,7 @@ func selectItem(withTitle title: String)
 
 #### Discussion
 
-By default, selecting or deselecting a menu item changes its state. To disassociate the current selection from the state of menu items, set the [`altersStateOfSelectedItem`](nspopupbuttoncell/altersstateofselecteditem.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, selecting or deselecting a menu item changes its state. To disassociate the current selection from the state of menu items, set the [`altersStateOfSelectedItem`](nspopupbuttoncell/altersstateofselecteditem.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

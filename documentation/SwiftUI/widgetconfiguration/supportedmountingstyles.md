@@ -6,10 +6,10 @@
 Specifies the mounting style for this widget.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,11 +20,11 @@ Specifies the mounting style for this widget.
 
 #### Return Value
 
-A widget configuration that supports the mounting styles specified.
+A widget configuration that supports the specified mounting styles.
 
 #### Discussion
 
-iOS widgets implementing this style will only see this style as an iOS widget on visionOS.
+The mounting style view modifier only has an effect to widgets in visionOS, including widgets of compatible widgets of compatible iOS or iPadOS apps.
 
 ```swift
 struct MySpatialWidget: Widget {
@@ -41,9 +41,13 @@ struct MySpatialWidget: Widget {
 }
 ```
 
-The above code defines a widget that will support only recessed mounting style.
+The above code defines a widget that only supports the recessed mounting style.
 
-- Parameters mountingStyles: The set of mounting styles the widget supports.
+The mounting style view modifier only has an effect to widgets in visionOS, including widgets of compatible widgets of compatible iOS or iPadOS apps.
+
+## Parameters
+
+- `styles`: The set of mounting styles that the widget supports.
 
 
 ---

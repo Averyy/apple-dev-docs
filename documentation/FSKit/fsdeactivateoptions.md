@@ -21,10 +21,6 @@ struct FSDeactivateOptions
   An option to force deactivation.
 ### Working with raw values
 - [init(rawValue: Int)](fsdeactivateoptions/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsdeactivateoptions/equatable-implementations.md)
-- [OptionSet Implementations](fsdeactivateoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](fsdeactivateoptions/setalgebra-implementations.md)
 
 ## Relationships
 

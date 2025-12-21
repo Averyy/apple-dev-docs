@@ -6,7 +6,7 @@
 The content view to extend to fill the `NSBackgroundExtensionView`.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app needs access to Bluetooth.
+A message that tells people why the app needs access to Bluetooth.
 
 **Availability**:
 - iOS 13.0+
@@ -22,7 +22,7 @@ This key is required if your app uses the device’s Bluetooth interface.
 ## See Also
 
 - [NSBluetoothPeripheralUsageDescription](information-property-list/nsbluetoothperipheralusagedescription.md)
-  A message that tells the user why the app is requesting the ability to connect to Bluetooth peripherals.
+  A message that tells people why the app is requesting the ability to connect to Bluetooth peripherals.
 
 
 ---

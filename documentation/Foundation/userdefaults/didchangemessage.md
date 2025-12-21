@@ -4,19 +4,23 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 struct DidChangeMessage
 ```
+
+## Mentions
+
+- [Accessing settings from your code](accessing-settings-from-your-code.md)
 
 ## Topics
 
@@ -29,6 +33,14 @@ struct DidChangeMessage
 - [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class let didChangeNotification: NSNotification.Name](userdefaults/didchangenotification.md)
+  Posted when the current process changes the value of a setting.
+- [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+- [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
+  Posted when the amount of data in the defaults database exceeds the allowed maximum.
 
 
 ---

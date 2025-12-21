@@ -9,7 +9,7 @@ Prevents replace operations in a text editor.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

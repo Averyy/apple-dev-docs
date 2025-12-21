@@ -64,12 +64,12 @@ Daemons and launch agents are separate background processes that provide on-dema
 
 On Apple silicon, your app’s behavior doesn’t influence the performance characteristics of any associated daemons or launch agents by default. When you use XPC, the system recognizes that a relationship exists between the app and your daemon or launch agent. That relationship causes the system to associate the daemon or launch agent’s work with your app’s performance characteristics.
 
-When scheduling asynchronous tasks for execution from an XPC message handler, Apple technologies like Grand Central Dispatch (GCD) and Core Foundation automatically add relevant XPC context information to the corresponding thread state. The system relies on that state information to track the relationship between your app and daemon. If you distribute work using custom thread technologies, call [`dispatch_block_create`](https://developer.apple.com/documentation/dispatch/1431050-dispatch_block_create) to capture and propagate any XPC context information to your custom threads.
+When scheduling asynchronous tasks for execution from an XPC message handler, Apple technologies like Grand Central Dispatch (GCD) and Core Foundation automatically add relevant XPC context information to the corresponding thread state. The system relies on that state information to track the relationship between your app and daemon. If you distribute work using custom thread technologies, call [`dispatch_block_create`](https://developer.apple.com/documentation/Dispatch/dispatch_block_create) to capture and propagate any XPC context information to your custom threads.
 
 ## See Also
 
-- [Apple Silicon CPU Optimization Guide](cpu-optimization-guide.md)
-  Identify performance optimization strategies for Apple silicon M Series and A Series chips.
+- [Apple Silicon CPU Optimization Guide Version 4](cpu-optimization-guide.md)
+  Identify performance optimization strategies for Apple silicon M-series and A-series chips.
 
 
 ---

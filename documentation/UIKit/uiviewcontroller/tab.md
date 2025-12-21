@@ -17,6 +17,13 @@
 weak var tab: UITab? { get }
 ```
 
+## See Also
+
+- [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
+  The tab bar item that represents the view controller when added to a tab bar controller.
+- [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
+  The full-screen scroll view to synchronize with a scrolling tab bar.
+
 
 ---
 

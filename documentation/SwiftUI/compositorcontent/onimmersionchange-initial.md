@@ -6,8 +6,8 @@
 Performs an action when the immersion state of your app changes.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

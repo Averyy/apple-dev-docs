@@ -22,8 +22,8 @@ protocol Publisher<Output, Failure>
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 - [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
@@ -38,11 +38,30 @@ After this, the publisher can call the following methods on the subscriber:
 
 Every `Publisher` must adhere to this contract for downstream subscribers to function correctly.
 
-Extensions on `Publisher` define a wide variety of  that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](publishers.md) enumeration. For example, the [`map(_:)`](publisher/map(_:)-99evh.md) operator returns an instance of [`Publishers.Map`](publishers/map.md).
-
 > 💡 **Tip**: A Combine publisher fills a role similar to, but distinct from, the [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in the Swift standard library. A `Publisher` and an `AsyncSequence` both produce elements over time. However, the pull model in Combine uses a [`Subscriber`](subscriber.md) to request elements from a publisher, while Swift concurrency uses the `for`-`await`-`in` syntax to iterate over elements published by an `AsyncSequence`. Both APIs offer methods to modify the sequence by mapping or filtering elements, while only Combine provides time-based operations like [`debounce(for:scheduler:options:)`](publisher/debounce(for:scheduler:options:).md) and [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md), and combining operations like [`merge(with:)`](publisher/merge(with:)-7fk3a.md) and [`combineLatest(_:_:)`](publisher/combinelatest(_:_:)-1n30g.md). To bridge the two approaches, the property [`values`](publisher/values-1dm9r.md) exposes a publisher’s elements as an `AsyncSequence`, allowing you to iterate over them with `for`-`await`-`in` rather than attaching a [`Subscriber`](subscriber.md).
 
-### Creating Your Own Publishers
+##### Using Operators
+
+Extensions on `Publisher` define a wide variety of  that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](publishers.md) enumeration. For example, the [`map(_:)`](publisher/map(_:)-99evh.md) operator returns an instance of [`Publishers.Map`](publishers/map.md).
+
+Use operators to assemble a chain of republishers, optionally ending with a subscriber, that processes elements produced by upstream publishers. Each operator creates and configures an instance of a [`Publisher`](publisher.md) or [`Subscriber`](subscriber.md), and subscribes it to the publisher that you call the method on.
+
+In the following example, a sequence publisher emits the integers 1, 2, 3, 4, and 5. A [`filter(_:)`](publisher/filter(_:).md) operator creates a [`Publishers.Filter`](publishers/filter.md) publisher to only republish even values. A second operator creates a [`Subscribers.Sink`](subscribers/sink.md) subscriber to print out each value received. The sink subscriber automatically subscribes to the filter publisher, at which point the filter publisher subscribes to its upstream publisher, the sequence publisher.
+
+```swift
+let cancellable = [1, 2, 3, 4, 5].publisher
+    .filter {
+        $0 % 2 == 0
+    }
+    .sink {
+        print ("Even number: \($0)")
+    }
+// Prints:
+// Even number: 2
+// Even number: 4
+```
+
+#### Creating Your Own Publishers
 
 Rather than implementing the `Publisher` protocol yourself, you can create your own publisher by using one of several types provided by the Combine framework:
 
@@ -52,19 +71,19 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
 
 ## Topics
 
-### Declaring Publisher Topography
+### Declaring supporting types
 - [associatedtype Output](publisher/output.md)
   The kind of values published by this publisher.
 - [associatedtype Failure : Error](publisher/failure.md)
   The kind of errors this publisher might publish.
-### Working with Subscribers
+### Working with subscribers
 - [func receive<S>(subscriber: S)](publisher/receive(subscriber:).md)
   Attaches the specified subscriber to this publisher.
 - [func subscribe<S>(S)](publisher/subscribe(_:)-4u8kn.md)
   Attaches the specified subscriber to this publisher.
 - [func subscribe<S>(S) -> AnyCancellable](publisher/subscribe(_:)-3fk20.md)
   Attaches the specified subject to this publisher.
-### Mapping Elements
+### Mapping elements
 - [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](publisher/map(_:)-99evh.md)
   Transforms all elements from the upstream publisher with a provided closure.
 - [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](publisher/trymap(_:).md)
@@ -79,7 +98,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.
 - [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](publisher/setfailuretype(to:).md)
   Changes the failure type declared by the upstream publisher.
-### Filtering Elements
+### Filtering elements
 - [func filter((Self.Output) -> Bool) -> Publishers.Filter<Self>](publisher/filter(_:).md)
   Republishes all elements that match a provided closure.
 - [func tryFilter((Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>](publisher/tryfilter(_:).md)
@@ -98,7 +117,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Replaces an empty stream with the provided element.
 - [func replaceError(with: Self.Output) -> Publishers.ReplaceError<Self>](publisher/replaceerror(with:).md)
   Replaces any errors in the stream with the provided element.
-### Reducing Elements
+### Reducing elements
 - [func collect() -> Publishers.Collect<Self>](publisher/collect.md)
   Collects all received elements, and emits a single array of the collection when the upstream publisher finishes.
 - [func collect(Int) -> Publishers.CollectByCount<Self>](publisher/collect(_:).md)
@@ -113,7 +132,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Applies a closure that collects each element of a stream and publishes a final result upon completion.
 - [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](publisher/tryreduce(_:_:).md)
   Applies an error-throwing closure that collects each element of a stream and publishes a final result upon completion.
-### Applying Mathematical Operations on Elements
+### Applying mathematical operations on elements
 - [func count() -> Publishers.Count<Self>](publisher/count.md)
   Publishes the number of elements received from the upstream publisher.
 - [func max() -> Publishers.Comparison<Self>](publisher/max.md)
@@ -128,7 +147,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Publishes the minimum value received from the upstream publisher, after it finishes.
 - [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publisher/trymin(by:).md)
   Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
-### Applying Matching Criteria to Elements
+### Applying matching criteria to elements
 - [func contains(Self.Output) -> Publishers.Contains<Self>](publisher/contains(_:).md)
   Publishes a Boolean value upon receiving an element equal to the argument.
 - [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](publisher/contains(where:).md)
@@ -139,7 +158,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Publishes a single Boolean value that indicates whether all received elements pass a given predicate.
 - [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](publisher/tryallsatisfy(_:).md)
   Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
-### Applying Sequence Operations to Elements
+### Applying sequence operations to elements
 - [func drop<P>(untilOutputFrom: P) -> Publishers.DropUntilOutput<Self, P>](publisher/drop(untiloutputfrom:).md)
   Ignores elements from the upstream publisher until it receives an element from a second publisher.
 - [func dropFirst(Int) -> Publishers.Drop<Self>](publisher/dropfirst(_:).md)
@@ -168,7 +187,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Republishes elements while an error-throwing predicate closure indicates publishing should continue.
 - [func prefix<P>(untilOutputFrom: P) -> Publishers.PrefixUntilOutput<Self, P>](publisher/prefix(untiloutputfrom:).md)
   Republishes elements until another publisher emits an element.
-### Selecting Specific Elements
+### Selecting specific elements
 - [func first() -> Publishers.First<Self>](publisher/first.md)
   Publishes the first element of a stream, then finishes.
 - [func first(where: (Self.Output) -> Bool) -> Publishers.FirstWhere<Self>](publisher/first(where:).md)
@@ -185,7 +204,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Publishes a specific element, indicated by its index in the sequence of published elements.
 - [func output<R>(in: R) -> Publishers.Output<Self>](publisher/output(in:).md)
   Publishes elements specified by their range in the sequence of published elements.
-### Collecting and Republishing the Latest Elements from Multiple Publishers
+### Collecting and republishing the latest elements from multiple publishers
 - [func combineLatest<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.CombineLatest<Self, P>, T>](publisher/combinelatest(_:_:)-1n30g.md)
   Subscribes to an additional publisher and invokes a closure upon receiving output from either publisher.
 - [func combineLatest<P>(P) -> Publishers.CombineLatest<Self, P>](publisher/combinelatest(_:).md)
@@ -198,7 +217,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Subscribes to three additional publishers and invokes a closure upon receiving output from any of the publishers.
 - [func combineLatest<P, Q, R>(P, Q, R) -> Publishers.CombineLatest4<Self, P, Q, R>](publisher/combinelatest(_:_:_:)-48buc.md)
   Subscribes to three additional publishers and publishes a tuple upon receiving output from any of the publishers.
-### Republishing Elements from Multiple Publishers as an Interleaved Stream
+### Republishing elements from multiple publishers as an interleaved stream
 - [func merge(with: Self) -> Publishers.MergeMany<Self>](publisher/merge(with:)-7fk3a.md)
   Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
 - [func merge<P>(with: P) -> Publishers.Merge<Self, P>](publisher/merge(with:)-7qt71.md)
@@ -215,7 +234,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Combines elements from this publisher with those from six other publishers, delivering an interleaved sequence of elements.
 - [func merge<B, C, D, E, F, G, H>(with: B, C, D, E, F, G, H) -> Publishers.Merge8<Self, B, C, D, E, F, G, H>](publisher/merge(with:_:_:_:_:_:_:).md)
   Combines elements from this publisher with those from seven other publishers, delivering an interleaved sequence of elements.
-### Collecting and Republishing the Oldest Unconsumed Elements from Multiple Publishers
+### Collecting and republishing the oldest unconsumed elements from multiple publishers
 - [func zip<P>(P) -> Publishers.Zip<Self, P>](publisher/zip(_:).md)
   Combines elements from another publisher and deliver pairs of elements as tuples.
 - [func zip<P, T>(P, (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T>](publisher/zip(_:_:)-4xn21.md)
@@ -228,7 +247,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Combines elements from three other publishers and delivers groups of elements as tuples.
 - [func zip<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.Zip4<Self, P, Q, R>, T>](publisher/zip(_:_:_:_:).md)
   Combines elements from three other publishers and delivers a transformed output.
-### Republishing Elements by Subscribing to New Publishers
+### Republishing elements by subscribing to new publishers
 - [func flatMap<T, P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-3k7z5.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
 - [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>>](publisher/flatmap(maxpublishers:_:)-qxf.md)
@@ -245,7 +264,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Republishes elements sent by the most recently received publisher.
 - [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-9eb3r.md)
   Republishes elements sent by the most recently received publisher.
-### Handling Errors
+### Handling errors
 - [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](publisher/assertnofailure(_:file:line:).md)
   Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.
 - [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](publisher/catch(_:).md)
@@ -254,7 +273,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.
 - [func retry(Int) -> Publishers.Retry<Self>](publisher/retry(_:).md)
   Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.
-### Controlling Timing
+### Controlling timing
 - [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](publisher/measureinterval(using:options:).md)
   Measures and emits the time interval between events received from an upstream publisher.
 - [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](publisher/debounce(for:scheduler:options:).md)
@@ -265,44 +284,44 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.
 - [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](publisher/timeout(_:scheduler:options:customerror:).md)
   Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
-### Encoding and Decoding
+### Encoding and decoding
 - [func encode<Coder>(encoder: Coder) -> Publishers.Encode<Self, Coder>](publisher/encode(encoder:).md)
   Encodes the output from upstream using a specified encoder.
 - [func decode<Item, Coder>(type: Item.Type, decoder: Coder) -> Publishers.Decode<Self, Item, Coder>](publisher/decode(type:decoder:).md)
   Decodes the output from the upstream using a specified decoder.
-### Identifying Properties with Key Paths
+### Identifying properties with key paths
 - [func map<T>(KeyPath<Self.Output, T>) -> Publishers.MapKeyPath<Self, T>](publisher/map(_:)-6sm0a.md)
   Publishes the value of a key path.
 - [func map<T0, T1>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>) -> Publishers.MapKeyPath2<Self, T0, T1>](publisher/map(_:_:).md)
   Publishes the values of two key paths as a tuple.
 - [func map<T0, T1, T2>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>, KeyPath<Self.Output, T2>) -> Publishers.MapKeyPath3<Self, T0, T1, T2>](publisher/map(_:_:_:).md)
   Publishes the values of three key paths as a tuple.
-### Working with Multiple Subscribers
+### Working with multiple subscribers
 - [func multicast<S>(() -> S) -> Publishers.Multicast<Self, S>](publisher/multicast(_:).md)
   Applies a closure to create a subject that delivers elements to subscribers.
 - [func multicast<S>(subject: S) -> Publishers.Multicast<Self, S>](publisher/multicast(subject:).md)
   Provides a subject to deliver elements to multiple subscribers.
 - [func share() -> Publishers.Share<Self>](publisher/share.md)
   Shares the output of an upstream publisher with multiple subscribers.
-### Buffering Elements
+### Buffering elements
 - [func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Self.Failure>) -> Publishers.Buffer<Self>](publisher/buffer(size:prefetch:whenfull:).md)
   Buffers elements received from an upstream publisher.
 - [Publishers.PrefetchStrategy](publishers/prefetchstrategy.md)
   A strategy for filling a buffer.
 - [Publishers.BufferingStrategy](publishers/bufferingstrategy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
-### Performing Type-Erasure
+### Performing type erasure
 - [func eraseToAnyPublisher() -> AnyPublisher<Self.Output, Self.Failure>](publisher/erasetoanypublisher.md)
   Wraps this publisher with a type eraser.
-### Specifying Schedulers
+### Specifying schedulers
 - [func subscribe<S>(on: S, options: S.SchedulerOptions?) -> Publishers.SubscribeOn<Self, S>](publisher/subscribe(on:options:).md)
   Specifies the scheduler on which to perform subscribe, cancel, and request operations.
 - [func receive<S>(on: S, options: S.SchedulerOptions?) -> Publishers.ReceiveOn<Self, S>](publisher/receive(on:options:).md)
   Specifies the scheduler on which to receive elements from the publisher.
-### Adding Explicit Connectability
+### Adding explicit connectability
 - [func makeConnectable() -> Publishers.MakeConnectable<Self>](publisher/makeconnectable.md)
   Creates a connectable wrapper around the publisher.
-### Connecting Simple Subscribers
+### Connecting simple subscribers
 - [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](publisher/assign(to:on:).md)
   Assigns each element from a publisher to a property on an object.
 - [func assign(to: inout Published<Self.Output>.Publisher)](publisher/assign(to:).md)
@@ -311,7 +330,7 @@ Rather than implementing the `Publisher` protocol yourself, you can create your 
   Attaches a subscriber with closure-based behavior.
 - [func sink(receiveValue: (Self.Output) -> Void) -> AnyCancellable](publisher/sink(receivevalue:).md)
   Attaches a subscriber with closure-based behavior to a publisher that never fails.
-### Accessing Elements Asynchronously
+### Accessing elements asynchronously
 - [var values: AsyncPublisher<Self>](publisher/values-1dm9r.md)
   The elements produced by the publisher, as an asynchronous sequence.
 - [var values: AsyncThrowingPublisher<Self>](publisher/values-v7nz.md)

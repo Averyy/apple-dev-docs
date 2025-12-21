@@ -55,6 +55,8 @@ enum DataSource
 
 - [MLHandPoseClassifier.ModelParameters](mlhandposeclassifier/modelparameters-swift.struct.md)
   A set of parameters that affect the training process of a hand pose classifier task.
+- [MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions.md)
+  Options a hand pose classification training session can use to generate additional training data from the images you provide.
 
 
 ---

@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A Float where 0.0 is full left, 1.0 is full right, and 0.5 is center.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

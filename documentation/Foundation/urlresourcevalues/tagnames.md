@@ -15,7 +15,7 @@ The array of Tag names.
 ## Declaration
 
 ```swift
-var tagNames: [String]? { get }
+var tagNames: [String]? { get set }
 ```
 
 ## See Also

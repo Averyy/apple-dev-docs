@@ -156,7 +156,6 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [CustomDebugStringConvertible Implementations](range/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](range/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](range/customstringconvertible-implementations.md)
-- [CustomTestStringConvertible Implementations](range/customteststringconvertible-implementations.md)
 - [Decodable Implementations](range/decodable-implementations.md)
 - [Encodable Implementations](range/encodable-implementations.md)
 - [Equatable Implementations](range/equatable-implementations.md)

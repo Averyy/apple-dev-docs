@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an image that uses the Digital Negative (DNG) archival format. See [`DNG Image Properties`](dng-image-properties.md).
+A dictionary of key-value pairs for an image that uses the Digital Negative (DNG) archival format.
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an image that uses the Digital Negative (DNG
 ```swift
 let kCGImagePropertyDNGDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`DNG Image Properties`](dng-image-properties.md).
 
 
 ---

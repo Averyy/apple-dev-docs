@@ -6,11 +6,11 @@
 A phrase or passage of transcribed speech. The phrases are sent in order.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,11 +24,18 @@ If the transcriber is configured to send volatile results, each phrase is sent o
 
 ## Topics
 
-### Instance Properties
+### Getting transcriptions
 - [let alternatives: [AttributedString]](dictationtranscriber/result/alternatives.md)
   All the alternative interpretations of the audio in this range. The interpretations are in descending order of likelihood.
 - [var text: AttributedString](dictationtranscriber/result/text.md)
-  The most likely interpretation of the audio in this range. Always equal to the first element of [`alternatives`](dictationtranscriber/result/alternatives.md).
+  The most likely interpretation of the audio in this range.
+### Working with transcriptions
+- [AttributeScopes.SpeechAttributes.TimeRangeAttribute](../Foundation/AttributeScopes/SpeechAttributes/TimeRangeAttribute.md)
+  The time range in the source audio corresponding to the associated transcription text.
+- [AttributeScopes.SpeechAttributes.ConfidenceAttribute](../Foundation/AttributeScopes/SpeechAttributes/ConfidenceAttribute.md)
+  A confidence level (0–1) of the associated transcription text.
+- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](../Foundation/AttributedString/rangeOfAudioTimeRangeAttributes(intersecting:).md)
+  Returns the range of indices of the receiver that are part of given time range.
 
 ## Relationships
 
@@ -39,13 +46,6 @@ If the transcriber is configured to send volatile results, each phrase is sent o
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SpeechModuleResult](speechmoduleresult.md)
-
-## See Also
-
-- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
-  Expected characteristics of the spoken audio content and its delivery.
-- [DictationTranscriber.Preset](dictationtranscriber/preset.md)
-  Predefined transcriber configurations.
 
 
 ---

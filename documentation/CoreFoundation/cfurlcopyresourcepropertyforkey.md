@@ -30,9 +30,9 @@ This function first checks if the URL object already caches the resource value. 
 
 The type of the returned resource value varies by resource property; for details, see the documentation for the key you want to access.
 
-If this function returns [`true`](https://developer.apple.com/documentation/swift/true) and the propertyValueTypeRefPtr is populated with `nil`, it means that the resource property is not available for the specified resource, and that no errors occurred when determining that the resource property was unavailable.
+If this function returns [`true`](https://developer.apple.com/documentation/Swift/true) and the propertyValueTypeRefPtr is populated with `nil`, it means that the resource property is not available for the specified resource, and that no errors occurred when determining that the resource property was unavailable.
 
-If this function returns [`false`](https://developer.apple.com/documentation/swift/false), an error occurred. the object pointer referenced by `error` is populated with additional information.
+If this function returns [`false`](https://developer.apple.com/documentation/Swift/false), an error occurred. the object pointer referenced by `error` is populated with additional information.
 
 > **Note**:  This method applies only to URLs that represent file system resources.
 

@@ -15,6 +15,21 @@
 func AudioObjectRemovePropertyListener(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ inListener: AudioObjectPropertyListenerProc, _ inClientData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Unregisters the given AudioObjectPropertyListenerProc from receiving notifications when the given properties change.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to unregister the listener from.
+- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener   should be removed.
+- `inListener`: The AudioObjectPropertyListenerProc being removed.
+- `inClientData`: A pointer to client data that is passed to the listener when it is called.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

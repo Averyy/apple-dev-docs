@@ -23,7 +23,7 @@ FeliCa is a trademark of Sony Corporation.
 ## Topics
 
 ### Specifying System Codes
-- [com.apple.developer.nfc.readersession.felica.systemcodes](../BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+- [ISO18092 system codes for NFC Tag Reader Session](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
   A list of FeliCa system codes that the app supports.
 ### Getting Current Information
 - [var currentSystemCode: Data](nfcfelicatag/currentsystemcode.md)

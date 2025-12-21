@@ -21,7 +21,7 @@ static var notInteractive: LAError.Code { get }
 
 #### Discussion
 
-Permit the display of the authentication UI by setting the [`interactionNotAllowed`](lacontext/interactionnotallowed.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+Permit the display of the authentication UI by setting the [`interactionNotAllowed`](lacontext/interactionnotallowed.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

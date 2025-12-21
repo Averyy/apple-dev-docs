@@ -32,7 +32,9 @@ If the color space and YCbCr matrix match a supported HDR format such as HLG ([`
 - [let kVTDecompressionPropertyKey_UsingGPURegistryID: CFString](kvtdecompressionpropertykey_usinggpuregistryid.md)
 - [let kVTDecompressionPropertyKey_PropagatePerFrameHDRDisplayMetadata: CFString](kvtdecompressionpropertykey_propagateperframehdrdisplaymetadata.md)
 - [let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString](kvtdecompressionpropertykey_decoderproducesrawoutput.md)
+  A value that indicates whether the decoder can produce RAW output requiring a RAW processing session for post-decode processing.
 - [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](kvtdecompressionpropertykey_requestrawoutput.md)
+  For decoders that produce RAW output, this property requests that the decompression session provides unprocessed output.
 
 
 ---

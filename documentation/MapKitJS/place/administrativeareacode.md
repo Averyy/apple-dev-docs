@@ -11,12 +11,12 @@ The short code for the state or area.
 ## Declaration
 
 ```swift
-attribute string? administrativeAreaCode;
+administrativeAreaCode?: string;
 ```
 
 #### Discussion
 
-For example, the [`administrativeAreaCode`](place/administrativeareacode.md) for the Golden Gate Park is “`CA”`.
+For example, the [`administrativeAreaCode`](place/administrativeareacode.md) for Golden Gate Park in San Francisco, California is `"CA"`.
 
 ## See Also
 

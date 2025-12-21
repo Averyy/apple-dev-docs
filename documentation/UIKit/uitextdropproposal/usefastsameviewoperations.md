@@ -20,7 +20,7 @@ var useFastSameViewOperations: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the drag item data isn’t used. Instead, the drop operation moves or copies the text from its original position to the dropped position within the text view. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the drag item data isn’t used. Instead, the drop operation moves or copies the text from its original position to the dropped position within the text view. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

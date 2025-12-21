@@ -25,17 +25,6 @@ enum ReadOutcome
   The read failed somehow, the card data may not contain all requested tags.
 - [PaymentCardReadResult.ReadOutcome.cardDeclined](paymentcardreadresult/readoutcome/carddeclined.md)
   The card declined this transaction.
-### Operators
-- [static func == (PaymentCardReadResult.ReadOutcome, PaymentCardReadResult.ReadOutcome) -> Bool](paymentcardreadresult/readoutcome/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](paymentcardreadresult/readoutcome/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](paymentcardreadresult/readoutcome/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](paymentcardreadresult/readoutcome/equatable-implementations.md)
 
 ## Relationships
 

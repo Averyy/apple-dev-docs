@@ -17,25 +17,6 @@ A default implementation for a document element identifier.
 struct BasicDocumentElementID<Element> where Element : DocumentElement
 ```
 
-## Topics
-
-### Creating an element identifier
-- [init(from: any Decoder) throws](basicdocumentelementid/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (BasicDocumentElementID<Element>, BasicDocumentElementID<Element>) -> Bool](basicdocumentelementid/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](basicdocumentelementid/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](basicdocumentelementid/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](basicdocumentelementid/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](basicdocumentelementid/equatable-implementations.md)
-
 ## Relationships
 
 ### Conforms To

@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: method
 
-Get an `AccessoryAnchor` for a given time and accessory.
+Predict an accessory anchor to a target timestamp.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,10 +18,14 @@ final func predictAnchor(for anchor: AccessoryAnchor, at timestamp: TimeInterval
 
 The predicted anchor, or nil if prediction failed.
 
+#### Discussion
+
+> **Note**: A large time offset from latest anchor timestamp could degrade accuracy. For accuracy sensitive use cases like drawing, use a small offset or `latestAnchors`. Use a prediction timestamp smaller than the latest anchor timestamp for interpolation.
+
 ## Parameters
 
-- `anchor`: A tracked anchor to generate prediction for. Applications which do not wish to receive routine anchor updates can request them as-needed with  .
-- `timestamp`: Target time for prediction. When rendering with CompositorServices this should be  .
+- `anchor`: A tracked anchor from   to generate prediction for.
+- `timestamp`: Target time for prediction. For rendering use cases with CompositorServices, use  .
 
 
 ---

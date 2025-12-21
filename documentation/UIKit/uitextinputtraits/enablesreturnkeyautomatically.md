@@ -21,7 +21,7 @@ optional var enablesReturnKeyAutomatically: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). If you set it to [`true`](https://developer.apple.com/documentation/swift/true), the keyboard disables the Return key when the text entry area contains no text. As soon as the user enters some text, the Return key is automatically enabled.
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false). If you set it to [`true`](https://developer.apple.com/documentation/Swift/true), the keyboard disables the Return key when the text entry area contains no text. As soon as the user enters some text, the Return key is automatically enabled.
 
 ## See Also
 

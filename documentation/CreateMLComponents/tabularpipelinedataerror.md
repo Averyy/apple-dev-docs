@@ -29,16 +29,11 @@ enum TabularPipelineDataError
   A column is missing from the data frame.
 - [TabularPipelineDataError.missingValues(operation:columnName:)](tabularpipelinedataerror/missingvalues(operation:columnname:).md)
   The selected column has missing values.
-- [var errorDescription: String?](tabularpipelinedataerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (TabularPipelineDataError, TabularPipelineDataError) -> Bool](tabularpipelinedataerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](tabularpipelinedataerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](tabularpipelinedataerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](tabularpipelinedataerror/equatable-implementations.md)
-- [Error Implementations](tabularpipelinedataerror/error-implementations.md)
-- [LocalizedError Implementations](tabularpipelinedataerror/localizederror-implementations.md)
 
 ## Relationships
 

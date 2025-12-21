@@ -4,7 +4,7 @@
 **Kind**: init
 
 **Availability**:
-- tvOS 10.0+
+- tvOS ?+
 
 ## Declaration
 

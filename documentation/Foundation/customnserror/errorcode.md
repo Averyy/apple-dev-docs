@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The error code within the given domain.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

@@ -30,9 +30,6 @@ enum Phase
   The scroll gesture came to an end.
 ### Initializers
 - [init?(rawValue: Int)](bescrollviewscrollupdate/phase-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](bescrollviewscrollupdate/phase-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](bescrollviewscrollupdate/phase-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

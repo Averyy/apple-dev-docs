@@ -16,7 +16,7 @@ let kQLPreviewPropertyStringEncodingKey: CFString!
 
 #### Discussion
 
-Specifies the string encoding of the preview data as an [`CFStringEncoding`](https://developer.apple.com/documentation/CoreFoundation/CFStringEncoding) if the native type is plain text. You must encapsulate the value in a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd object.
+Specifies the string encoding of the preview data as an [`CFStringEncoding`](https://developer.apple.com/documentation/CoreFoundation/CFStringEncoding) if the native type is plain text. You must encapsulate the value in a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
 
 ## See Also
 

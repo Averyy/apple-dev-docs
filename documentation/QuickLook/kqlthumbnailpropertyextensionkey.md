@@ -16,7 +16,7 @@ let kQLThumbnailPropertyExtensionKey: CFString!
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh.
+The associated value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
 
 ## See Also
 

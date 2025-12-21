@@ -23,8 +23,8 @@ nonisolated func alignmentGuide(_ g: HorizontalAlignment, computeValue: @escapin
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
 - [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views within a stack](aligning-views-within-a-stack.md)
 
 #### Return Value
 

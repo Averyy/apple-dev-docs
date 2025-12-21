@@ -29,9 +29,9 @@ static let horizontalPagination: NSPrintInfo.AttributeKey
 - [static let bottomMargin: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/bottommargin.md)
   `NSNumber`, containing a floating-point value that specifies the bottom margin, in points.
 - [static let horizontallyCentered: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/horizontallycentered.md)
-  `NSNumber`, containing a Boolean value that is [`true`](https://developer.apple.com/documentation/swift/true) if pages are centered horizontally.
+  An `NSNumber` object containing a Boolean value that specifies whether to horizontally center pages.
 - [static let verticallyCentered: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/verticallycentered.md)
-  `NSNumber`, containing a Boolean value that is [`true`](https://developer.apple.com/documentation/swift/true) if pages are centered vertically.
+  An `NSNumber` object containing a Boolean value that specifies whether to vertically center pages.
 - [static let verticalPagination: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/verticalpagination.md)
   `NSNumber`, containing a `NSPrintingPaginationMode` value.
 

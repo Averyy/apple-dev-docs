@@ -34,9 +34,7 @@ Use this subscript to get a typed [`MLDataColumn`](mldatacolumn.md), which is ea
 
 ## See Also
 
-- [subscript<Element>(String) -> MLDataColumn<Element>](mldatatable/subscript(_:)-5tl9r.md)
-  Retrieves or adds a typed column with the specified name.
-- [subscript(String) -> MLUntypedColumn](mldatatable/subscript(_:)-3wjk.md)
+- [subscript(_:)](mldatatable/subscript(_:).md)
   Retrieves or adds an untyped column with the specified name.
 
 

@@ -17,6 +17,10 @@
 var rateMetaParameter: PHASENumberMetaParameter? { get }
 ```
 
+#### Discussion
+
+If specified during construction, the metaparameter for controlling rate/pitch will be available here
+
 
 ---
 

@@ -20,7 +20,7 @@ struct Factors
 
 ## Topics
 
-### System Pressure Factors
+### System pressure factors
 - [static var systemTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/systemtemperature.md)
   The entire system is under elevated thermal load.
 - [static var peakPower: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/peakpower.md)

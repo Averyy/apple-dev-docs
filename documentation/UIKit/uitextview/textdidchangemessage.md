@@ -4,11 +4,11 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,8 +22,6 @@ struct TextDidChangeMessage
 - [init(textView: UITextView)](uitextview/textdidchangemessage/init(textview:).md)
 ### Instance Properties
 - [var textView: UITextView](uitextview/textdidchangemessage/textview.md)
-### Type Methods
-- [static func makeNotification(UITextView.TextDidChangeMessage) -> Notification](uitextview/textdidchangemessage/makenotification(_:).md)
 
 ## Relationships
 

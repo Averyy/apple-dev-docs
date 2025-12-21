@@ -39,6 +39,8 @@ For popover segues, the destination view controller contains the content to be d
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -66,12 +68,12 @@ For popover segues, the destination view controller contains the content to be d
   A group of one or more child quick actions, each an instance of the preview action class.
 - [class UISearchDisplayController](uisearchdisplaycontroller.md)
   An object that manages the display of a search bar, along with a table view that displays search results.
+- [class UIWebView](uiwebview.md)
+  A view that embeds web content in your app.
 - [class UIUserNotificationAction](uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
 - [class UIUserNotificationCategory](uiusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
-- [class UIUserNotificationSettings](uiusernotificationsettings.md)
-  The types of notifications that can be displayed to the user by your app.
 
 
 ---

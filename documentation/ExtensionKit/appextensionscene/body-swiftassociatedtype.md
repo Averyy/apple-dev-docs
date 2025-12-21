@@ -24,7 +24,7 @@ associatedtype Body : AppExtensionScene
 ## See Also
 
 - [var body: Self.Body](appextensionscene/body-swift.property.md)
-  The content and behavior of the scene’s user interface.
+  The content and behavior of the scene’s interface.
 
 
 ---

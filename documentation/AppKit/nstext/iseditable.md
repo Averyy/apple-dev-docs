@@ -17,7 +17,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver allows the user to edit text and attributes; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the receiver allows the user to edit text and attributes; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t.
 
 You can change the receiver’s text programmatically regardless of this setting. If the receiver is made editable, it’s also made selectable. `NSText` objects are by default editable.
 

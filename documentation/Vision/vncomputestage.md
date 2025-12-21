@@ -45,6 +45,8 @@ struct VNComputeStage
   Utility methods to determine the geometries of various Vision types.
 - [class VNVideoProcessor](vnvideoprocessor.md)
   An object that performs offline analysis of video content.
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
 
 
 ---

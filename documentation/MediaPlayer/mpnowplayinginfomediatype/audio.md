@@ -24,8 +24,6 @@ case audio
 
 - [MPNowPlayingInfoMediaType.none](mpnowplayinginfomediatype/none.md)
   There is no now playing media item.
-- [MPNowPlayingInfoMediaType.none](mpnowplayinginfomediatype/none.md)
-  There is no now playing media item.
 - [MPNowPlayingInfoMediaType.video](mpnowplayinginfomediatype/video.md)
   The now playing media item is a video item.
 

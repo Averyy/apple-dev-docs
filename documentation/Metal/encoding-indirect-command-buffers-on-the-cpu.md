@@ -1,4 +1,4 @@
-# Encoding Indirect Command Buffers on the CPU
+# Encoding indirect command buffers on the CPU
 
 **Framework**: Metal
 
@@ -24,7 +24,7 @@ An example of where ICBs are effective is with a game’s head-up display (HUD),
 
 ICBs are also useful to render static objects in typical 3D scenes. Because encoded commands typically result in lightweight data structures, ICBs are suitable for saving complex draws, too.
 
-This sample demonstrates how to set up an ICB to repeatedly render a series of shapes. While it’s possible to gain even more instruction-parallelism by encoding the ICB on the GPU, this sample encodes an ICB on the CPU for simplicity. See [`Encoding Indirect Command Buffers on the GPU`](encoding-indirect-command-buffers-on-the-gpu.md) for the more advanced usage.
+This sample demonstrates how to set up an ICB to repeatedly render a series of shapes. While it’s possible to gain even more instruction-parallelism by encoding the ICB on the GPU, this sample encodes an ICB on the CPU for simplicity. See [`Encoding indirect command buffers on the GPU`](encoding-indirect-command-buffers-on-the-gpu.md) for the more advanced usage.
 
 ##### Getting Started
 
@@ -59,7 +59,7 @@ Recreating draws that were equivalent to ones you did in a previous queue can be
 
 ![Layout diagram that shows render commands encoded as grouped commands within an indirect command buffer, which is encoded as an individual command.](https://docs-assets.developer.apple.com/published/94b74ea8f716d9d364157fec02c459a1/icbs-with-cpu-encoding-2-IndirectCommandBuffers.png)
 
-> **Note**: To access individual buffers referenced by an indirect command buffer, you must call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
+> **Note**: To access individual buffers referenced by an indirect command buffer, you need to call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
 
 ##### Define Render Commands and Inherited Render State
 
@@ -76,7 +76,7 @@ The sample also allows `_indirectCommandBuffer` to inherit the render pipeline s
 
 ##### Create an Indirect Command Buffer
 
-The sample creates `_indirectCommandBuffer` from a [`MTLIndirectCommandBufferDescriptor`](mtlindirectcommandbufferdescriptor.md), which defines the features and limits of an indirect command buffer.
+The sample creates `_indirectCommandBuffer` from an [`MTLIndirectCommandBufferDescriptor`](mtlindirectcommandbufferdescriptor.md), which defines the features and limits of an indirect command buffer.
 
 ```objective-c
         MTLIndirectCommandBufferDescriptor* icbDescriptor = [MTLIndirectCommandBufferDescriptor new];
@@ -147,7 +147,7 @@ The sample performs this encoding only once, before encoding any subsequent rend
 
 ##### Update the Data Used By an Icb
 
-To update data that’s fed to the GPU, you typically cycle through a set of buffers such that the CPU updates one while the GPU reads another (see [`Synchronizing Events Between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md)). You can’t apply that pattern literally with ICBs, however, because you can’t update an ICB’s buffer set after you encode its commands, but you follow a two-step process to blit data updates from the CPU. First, update a single buffer in your dynamic buffer array on the CPU:
+To update data that’s fed to the GPU, you typically cycle through a set of buffers such that the CPU updates one while the GPU reads another (see [`Synchronizing events between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md)). You can’t apply that pattern literally with ICBs, however, because you can’t update an ICB’s buffer set after you encode its commands, but you follow a two-step process to blit data updates from the CPU. First, update a single buffer in your dynamic buffer array on the CPU:
 
 ```objective-c
 _frameNumber++;
@@ -197,11 +197,11 @@ The sample continues to execute `_indirectCommandBuffer` each frame.
 
 ## See Also
 
-- [Creating an Indirect Command Buffer](creating-an-indirect-command-buffer.md)
+- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
   Configure a descriptor to specify the properties of an indirect command buffer.
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
   Use indirect commands if you don’t know your draw or dispatch call arguments when you encode the command.
-- [Encoding Indirect Command Buffers on the GPU](encoding-indirect-command-buffers-on-the-gpu.md)
+- [Encoding indirect command buffers on the GPU](encoding-indirect-command-buffers-on-the-gpu.md)
   Maximize CPU to GPU parallelization by generating render commands on the GPU.
 - [protocol MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
   A command buffer containing reusable commands, encoded either on the CPU or GPU.

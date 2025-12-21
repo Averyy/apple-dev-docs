@@ -6,7 +6,7 @@
 Initialize a `CoordinateSpaceData` from a Data blob received over network.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

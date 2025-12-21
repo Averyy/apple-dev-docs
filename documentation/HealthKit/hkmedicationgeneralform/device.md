@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is administered through a device, such as an infusion pump for controlled fluid delivery.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

@@ -20,7 +20,7 @@ func setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_ switchingBehavio
 
 #### Discussion
 
-Use this method to control the camera switching behavior the system uses when recording a movie. The behavior you specify takes effect when you enable it by setting the value of [`isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled`](avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to control the camera switching behavior the system uses when recording a movie. The behavior you specify takes effect when you enable it by setting the value of [`isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled`](avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 When a capture device doesn’t support constituent device selection, attempting to set a behavior other than [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) causes the system to throw an invalid argument exception.
 

@@ -22,10 +22,10 @@ struct AVMetadataKeySpace
 
 ## Topics
 
-### Common Key Space
+### Common key space
 - [static let common: AVMetadataKeySpace](avmetadatakeyspace/common.md)
   The common key space.
-### Format-Specific Key Spaces
+### Format-specific key spaces
 - [static let audioFile: AVMetadataKeySpace](avmetadatakeyspace/audiofile.md)
   The AudioToolbox audio file key space.
 - [static let hlsDateRange: AVMetadataKeySpace](avmetadatakeyspace/hlsdaterange.md)

@@ -93,12 +93,6 @@ if let match = validTransaction.firstMatch(of: transactionIDRegex) {
 ### Initializers
 - [init(Capture.Type)](reference/init(_:).md)
   Creates a reference with the specified capture type.
-### Instance Properties
-- [var regex: Regex<Capture>](reference/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [Reference.RegexOutput](reference/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

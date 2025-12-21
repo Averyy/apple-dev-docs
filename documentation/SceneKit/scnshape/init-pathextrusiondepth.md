@@ -17,7 +17,7 @@ Creates a shape geometry with the specified path and extrusion depth.
 ## Declaration
 
 ```swift
-convenience init(path: UIBezierPath?, extrusionDepth: CGFloat)
+convenience init(path: NSBezierPath?, extrusionDepth: CGFloat)
 ```
 
 #### Return Value

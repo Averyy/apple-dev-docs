@@ -24,18 +24,10 @@ struct AugmentationBuilder<Element>
 ## Topics
 
 ### Building augmentations
-- [static func buildPartialBlock(accumulated: some RandomTransformer<Element, Element>, next: some RandomTransformer<Element, Element>) -> some RandomTransformer<Element, Element>
-](augmentationbuilder/buildpartialblock(accumulated:next:)-3h3fp.md)
+- [static buildPartialBlock(accumulated:next:)](augmentationbuilder/buildpartialblock(accumulated:next:).md)
   Builds a partial result by combining an accumulated random transformer and a new random transformer.
-- [static func buildPartialBlock(accumulated: some RandomTransformer<Element, Element>, next: some Transformer<Element, Element>) -> some RandomTransformer<Element, Element>
-](augmentationbuilder/buildpartialblock(accumulated:next:)-4a0qn.md)
-  Builds a partial result by combining an accumulated random transformer and a new transformer.
-- [static func buildPartialBlock(first: some RandomTransformer<Element, Element>) -> some RandomTransformer<Element, Element>
-](augmentationbuilder/buildpartialblock(first:)-5lyed.md)
+- [static buildPartialBlock(first:)](augmentationbuilder/buildpartialblock(first:).md)
   Builds a partial result random transformer from the first random transformer.
-- [static func buildPartialBlock(first: some Transformer<Element, Element>) -> some RandomTransformer<Element, Element>
-](augmentationbuilder/buildpartialblock(first:)-8uoqq.md)
-  Builds a partial result from the first transformer.
 
 ## Relationships
 

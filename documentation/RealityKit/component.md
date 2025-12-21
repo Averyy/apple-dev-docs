@@ -10,7 +10,7 @@ A representation of a geometry or a behavior that you apply to an entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -75,7 +75,7 @@ You can also define custom component types. When you do, register that type with
 - [ImagePresentationComponent](imagepresentationcomponent.md)
 - [InputTargetComponent](inputtargetcomponent.md)
 - [ManipulationComponent](manipulationcomponent.md)
-- [ManipulationComponent.HitTargetComponent](manipulationcomponent/hittargetcomponent.md)
+- [ManipulationComponent.HitTarget](manipulationcomponent/hittarget.md)
 - [MeshInstancesComponent](meshinstancescomponent.md)
 - [ModelComponent](modelcomponent.md)
 - [ModelDebugOptionsComponent](modeldebugoptionscomponent.md)

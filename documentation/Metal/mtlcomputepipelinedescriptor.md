@@ -21,7 +21,7 @@ class MTLComputePipelineDescriptor
 
 ## Mentions
 
-- [Compiling and Linking Metal Dynamic Libraries](compiling-and-linking-metal-dynamic-libraries.md)
+- [Compiling and linking Metal dynamic libraries](compiling-and-linking-metal-dynamic-libraries.md)
 
 #### Overview
 
@@ -31,16 +31,16 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
 
 ## Topics
 
-### Configuring the Compute Execution Environment
+### Configuring the compute execution environment
 - [var computeFunction: (any MTLFunction)?](mtlcomputepipelinedescriptor/computefunction.md)
   The compute kernel the pipeline calls.
 - [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtlcomputepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
   A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
-  The maximum number of threads in a threadgroup that you can dispatch to the compute function.
+  A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 - [var maxCallStackDepth: Int](mtlcomputepipelinedescriptor/maxcallstackdepth.md)
-  The maximum recursive call depth for dynamic library, visible, and intersection functions.
-### Configuring Compute Pass Inputs
+  The maximum call stack depth for indirect function calls in compute shaders.
+### Configuring compute pass inputs
 - [var stageInputDescriptor: MTLStageInputOutputDescriptor?](mtlcomputepipelinedescriptor/stageinputdescriptor.md)
   The organization of input and output data for the next kernel call.
 - [class MTLAttributeDescriptor](mtlattributedescriptor.md)
@@ -51,30 +51,30 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
   A description of how a compute function fetches input data for an attribute.
 - [class MTLBufferLayoutDescriptorArray](mtlbufferlayoutdescriptorarray.md)
   An array of buffer layout descriptor objects.
-### Configuring Buffer Mutability
+### Configuring buffer mutability
 - [var buffers: MTLPipelineBufferDescriptorArray](mtlcomputepipelinedescriptor/buffers.md)
   The buffer mutability options to apply to the next kernel call.
-### Identifying the Pipeline State Object
+### Identifying the pipeline state object
 - [var label: String?](mtlcomputepipelinedescriptor/label.md)
   A string that identifies the instance.
-### Configuring Indirect Command Buffers
+### Configuring indirect command buffers
 - [var supportIndirectCommandBuffers: Bool](mtlcomputepipelinedescriptor/supportindirectcommandbuffers.md)
   A Boolean value that indicates whether you can encode commands that reference the pipeline state object into an indirect command buffer.
-### Configuring Shader Validation
+### Configuring shader validation
 - [var shaderValidation: MTLShaderValidation](mtlcomputepipelinedescriptor/shadervalidation.md)
   A value that enables or disables shader validation for the pipeline.
-### Reset to Defaults
+### Reset to defaults
 - [func reset()](mtlcomputepipelinedescriptor/reset.md)
   Resets all compute pipeline descriptor properties to their default values.
-### Loading Dynamic Libraries to Link at Runtime
+### Loading dynamic libraries to link at runtime
 - [var preloadedLibraries: [any MTLDynamicLibrary]](mtlcomputepipelinedescriptor/preloadedlibraries.md)
   The dynamic libraries that contain precompiled shader functions you want to link.
 - [var insertLibraries: [any MTLDynamicLibrary]?](mtlcomputepipelinedescriptor/insertlibraries.md)
   The dynamic libraries that contain precompiled shader functions you want to link.
-### Setting Callable Functions
+### Setting callable functions
 - [var linkedFunctions: MTLLinkedFunctions?](mtlcomputepipelinedescriptor/linkedfunctions.md)
   The functions with available function pointers for the next kernel call.
-### Loading Binary Archives
+### Loading binary archives
 - [var supportAddingBinaryFunctions: Bool](mtlcomputepipelinedescriptor/supportaddingbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlcomputepipelinedescriptor/binaryarchives.md)
@@ -104,7 +104,7 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [struct MTLPipelineOption](mtlpipelineoption.md)

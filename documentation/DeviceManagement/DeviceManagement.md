@@ -17,9 +17,9 @@ Manage your organization’s devices remotely.
 
 #### Overview
 
-Deploying a mobile device management (MDM) solution allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business Manager to enroll organization-owned devices, and users can enroll their own devices. Once a device is enrolled, administrators can update software and device settings, monitor compliance with organizational policies, remotely erase or lock devices, and install apps and books developed in-house or purchased through Apple School Manager or Apple Business Manager.
+Deploying a mobile device management (MDM) solution allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business Manager to enroll organization-owned devices, and users can enroll their own devices. After a device is enrolled, administrators can update software and device settings, monitor compliance with organizational policies, remotely erase or lock devices, and install apps and books developed in-house or purchased through Apple School Manager or Apple Business Manager.
 
-MDM works with Managed App Distribution to provide a great download and launch experience. For more information, see Managed App Distribution.
+MDM works with Managed App Distribution to provide a seamless download and launch experience. For more information, see [`ManagedAppDistribution`](https://developer.apple.com/documentation/ManagedAppDistribution).
 
 ## Topics
 
@@ -37,11 +37,15 @@ MDM works with Managed App Distribution to provide a great download and launch e
   Authenticate devices and maintain push tokens with these commands.
 - [Account-driven enrollment](account-driven-enrollment.md)
   Authenticate devices using a user identity-focused workflow.
+- [Migrating managed devices](migrating-managed-devices.md)
+  Migrate managed devices from one device management service to another.
 ### Declarative Management
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
   Use declarative management to make devices more autonomous and proactive.
 - [Integrating Declarative Management](integrating-declarative-management.md)
   Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
+- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
+  Use declarative app configurations to deploy managed apps to devices.
 - [Declarations](devicemanagement-declarations.md)
   The available declarations for device management.
 - [Status Reports](status-reports.md)
@@ -60,12 +64,7 @@ MDM works with Managed App Distribution to provide a great download and launch e
   Fetch metadata for genres from the catalog by using their identifiers.
 - [Get a Genre](get-a-genre.md)
   Fetch metadata for a genre from the catalog by using its identifier.
-### Objects
-- [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
-- [object ErrorWellKnownFailed](errorwellknownfailed.md)
 ### Dictionaries
-- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
-  An error response that indicates Platform SSO is required.
 - [object ManifestURL](manifesturl.md)
   The URL to the app manifest.
 - [object PasswordHash](passwordhash.md)

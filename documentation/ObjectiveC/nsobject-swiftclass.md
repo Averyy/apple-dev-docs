@@ -53,6 +53,28 @@ class NSObject
 ### Describing Objects
 - [class func description() -> String](nsobject-swift.class/description.md)
   Returns a string that represents the contents of the receiving class.
+### Supporting Discardable Content
+- [var autoContentAccessingProxy: Any](nsobject-swift.class/autocontentaccessingproxy.md)
+  A proxy for the receiving object
+### Sending Messages
+- [func perform(Selector, with: Any?, afterDelay: TimeInterval)](nsobject-swift.class/perform(_:with:afterdelay:).md)
+  Invokes a method of the receiver on the current thread using the default mode after a delay.
+- [func perform(Selector, with: Any?, afterDelay: TimeInterval, inModes: [RunLoop.Mode])](nsobject-swift.class/perform(_:with:afterdelay:inmodes:).md)
+  Invokes a method of the receiver on the current thread using the specified modes after a delay.
+- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool)](nsobject-swift.class/performselector(onmainthread:with:waituntildone:).md)
+  Invokes a method of the receiver on the main thread using the default mode.
+- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool, modes: [String]?)](nsobject-swift.class/performselector(onmainthread:with:waituntildone:modes:).md)
+  Invokes a method of the receiver on the main thread using the specified modes.
+- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool)](nsobject-swift.class/perform(_:on:with:waituntildone:).md)
+  Invokes a method of the receiver on the specified thread using the default mode.
+- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool, modes: [String]?)](nsobject-swift.class/perform(_:on:with:waituntildone:modes:).md)
+  Invokes a method of the receiver on the specified thread using the specified modes.
+- [func performSelector(inBackground: Selector, with: Any?)](nsobject-swift.class/performselector(inbackground:with:).md)
+  Invokes a method of the receiver on a new background thread.
+- [class func cancelPreviousPerformRequests(withTarget: Any)](nsobject-swift.class/cancelpreviousperformrequests(withtarget:).md)
+  Cancels perform requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method.
+- [class func cancelPreviousPerformRequests(withTarget: Any, selector: Selector, object: Any?)](nsobject-swift.class/cancelpreviousperformrequests(withtarget:selector:object:).md)
+  Cancels perform requests previously registered with [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md).
 ### Forwarding Messages
 - [func forwardingTarget(for: Selector!) -> Any?](nsobject-swift.class/forwardingtarget(for:).md)
   Returns the object to which unrecognized messages should first be directed.
@@ -64,6 +86,40 @@ class NSObject
 ### Handling Errors
 - [func doesNotRecognizeSelector(Selector!)](nsobject-swift.class/doesnotrecognizeselector(_:).md)
   Handles messages the receiver doesn’t recognize.
+### Archiving
+- [func awakeAfter(using: NSCoder) -> Any?](nsobject-swift.class/awakeafter(using:).md)
+  Overridden by subclasses to substitute another object in place of the object that was decoded and subsequently received this message.
+- [var classForArchiver: AnyClass?](nsobject-swift.class/classforarchiver.md)
+  The class to substitute for the receiver’s own class during archiving.
+- [var classForCoder: AnyClass](nsobject-swift.class/classforcoder.md)
+  Overridden by subclasses to substitute a class other than its own during coding.
+- [var classForKeyedArchiver: AnyClass?](nsobject-swift.class/classforkeyedarchiver.md)
+  Subclasses to substitute a new class for instances during keyed archiving.
+- [class func classFallbacksForKeyedArchiver() -> [String]](nsobject-swift.class/classfallbacksforkeyedarchiver.md)
+  Overridden to return the names of classes that can be used to decode objects if their class is unavailable.
+- [class func classForKeyedUnarchiver() -> AnyClass](nsobject-swift.class/classforkeyedunarchiver.md)
+  Overridden by subclasses to substitute a new class during keyed unarchiving.
+- [func replacementObject(for: NSArchiver) -> Any?](nsobject-swift.class/replacementobject(for:)-8ih2x.md)
+  Overridden by subclasses to substitute another object for itself during archiving.
+- [func replacementObject(for: NSCoder) -> Any?](nsobject-swift.class/replacementobject(for:)-2l8ox.md)
+  Overridden by subclasses to substitute another object for itself during encoding.
+- [func replacementObject(for: NSKeyedArchiver) -> Any?](nsobject-swift.class/replacementobject(for:)-60vwc.md)
+  Overridden by subclasses to substitute another object for itself during keyed archiving.
+- [class func setVersion(Int)](nsobject-swift.class/setversion(_:).md)
+  Sets the receiver’s version number.
+- [class func version() -> Int](nsobject-swift.class/version.md)
+  Returns the version number assigned to the class.
+### Working with Class Descriptions
+- [var attributeKeys: [String]](nsobject-swift.class/attributekeys.md)
+  An array of `NSString` objects containing the names of immutable values that instances of the receiver’s class contain.
+- [var classDescription: NSClassDescription](nsobject-swift.class/classdescription.md)
+  An object containing information about the attributes and relationships of the receiver’s class.
+- [func inverse(forRelationshipKey: String) -> String?](nsobject-swift.class/inverse(forrelationshipkey:).md)
+  For a given key that defines the name of the relationship from the receiver’s class to another class, returns the name of the relationship from the other class to the receiver’s class.
+- [var toManyRelationshipKeys: [String]](nsobject-swift.class/tomanyrelationshipkeys.md)
+  An array containing the keys for the to-many relationship properties of the receiver.
+- [var toOneRelationshipKeys: [String]](nsobject-swift.class/toonerelationshipkeys.md)
+  The keys for the to-one relationship properties of the receiver, if any.
 ### Improving Accessibility
 - [UIAccessibility](../UIKit/uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
@@ -102,6 +158,22 @@ class NSObject
   A string that describes the element’s role for assistive technologies.
 - [var browserAccessibilitySortDirection: String?](nsobject-swift.class/browseraccessibilitysortdirection.md)
   A string that’s the element’s value for aria-sort.
+### Scripting
+- [var classCode: FourCharCode](nsobject-swift.class/classcode.md)
+  The receiver’s Apple event type code, as stored in the `NSScriptClassDescription` object for the object’s class.
+- [var className: String](nsobject-swift.class/classname.md)
+  A string containing the name of the class.
+- [func copyScriptingValue(Any, forKey: String, withProperties: [String : Any]) -> Any?](nsobject-swift.class/copyscriptingvalue(_:forkey:withproperties:).md)
+  Creates and returns one or more scripting objects to be inserted into the specified relationship by copying the passed-in value and setting the properties in the copied object or objects.
+- [func newScriptingObject(of: AnyClass, forValueForKey: String, withContentsValue: Any?, properties: [String : Any]) -> Any?](nsobject-swift.class/newscriptingobject(of:forvalueforkey:withcontentsvalue:properties:).md)
+  Creates and returns an instance of a scriptable class, setting its contents and properties, for insertion into the relationship identified by the key.
+- [var scriptingProperties: [String : Any]?](nsobject-swift.class/scriptingproperties.md)
+  An `NSString`-keyed dictionary of the receiver’s scriptable properties.
+- [func scriptingValue(for: NSScriptObjectSpecifier) -> Any?](nsobject-swift.class/scriptingvalue(for:).md)
+  Given an object specifier, returns the specified object or objects in the receiving container.
+### Integrating with Combine
+- [NSObject.KeyValueObservingPublisher](nsobject-swift.class/keyvalueobservingpublisher.md)
+  A Combine publisher that produces a new element whenever the observed value changes.
 ### Key-Value Observing
 - [NSKeyValueObserving](nskeyvalueobserving.md)
   An informal protocol that objects adopt to be notified of changes to the specified properties of other objects.
@@ -198,6 +270,8 @@ class NSObject
 - [var isAccessibilityElement: Bool](nsobject-swift.class/isaccessibilityelement.md)
 - [var isAccessibilityElementBlock: AXBoolReturnBlock?](nsobject-swift.class/isaccessibilityelementblock.md)
 - [var isSelectable: Bool](nsobject-swift.class/isselectable.md)
+- [var objectSpecifier: NSScriptObjectSpecifier?](nsobject-swift.class/objectspecifier.md)
+  Returns an object specifier for the receiver.
 - [var shouldGroupAccessibilityChildren: Bool](nsobject-swift.class/shouldgroupaccessibilitychildren.md)
 ### Instance Methods
 - [func acceptsPreviewPanelControl(QLPreviewPanel!) -> Bool](nsobject-swift.class/acceptspreviewpanelcontrol(_:).md)
@@ -212,6 +286,12 @@ class NSObject
   Zooms in on the content at the specified point.
 - [func accessibilityZoomOut(at: CGPoint) -> Bool](nsobject-swift.class/accessibilityzoomout(at:).md)
   Zooms out from the content at the specified point.
+- [func actionProperty() -> String!](nsobject-swift.class/actionproperty.md)
+  Sent to the delegate to request the property the action applies to.
+- [func attemptRecovery(fromError: any Error, optionIndex: Int) -> Bool](nsobject-swift.class/attemptrecovery(fromerror:optionindex:).md)
+  Implemented to attempt a recovery from an error noted in an application-modal dialog.
+- [func attemptRecovery(fromError: any Error, optionIndex: Int, delegate: Any?, didRecoverSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsobject-swift.class/attemptrecovery(fromerror:optionindex:delegate:didrecoverselector:contextinfo:).md)
+  Implemented to attempt a recovery from an error noted in a document-modal sheet.
 - [func authorizationViewCreatedAuthorization(SFAuthorizationView!)](nsobject-swift.class/authorizationviewcreatedauthorization(_:).md)
   Sent to the delegate to indicate the authorization object has been created or changed.
 - [func authorizationViewDidAuthorize(SFAuthorizationView!)](nsobject-swift.class/authorizationviewdidauthorize(_:).md)
@@ -255,6 +335,8 @@ class NSObject
   Performs custom tasks when the composition picker view stops animating a composition.
 - [func didCommand(by: Selector!, client: Any!) -> Bool](nsobject-swift.class/didcommand(by:client:).md)
   Processes a command  generated by user action such as typing certain keys or pressing the mouse button.
+- [func doesContain(Any) -> Bool](nsobject-swift.class/doescontain(_:).md)
+  Returns a Boolean value that indicates whether the receiver contains a given object.
 - [func endPreviewPanelControl(QLPreviewPanel!)](nsobject-swift.class/endpreviewpanelcontrol(_:).md)
 - [func eraseProgressPanel(DREraseProgressPanel!, eraseDidFinish: DRErase!) -> Bool](nsobject-swift.class/eraseprogresspanel(_:erasedidfinish:).md)
   Notification sent by the panel before display.
@@ -311,16 +393,36 @@ class NSObject
 - [func imageVersion() -> Int](nsobject-swift.class/imageversion.md)
   Returns the version of the item.
 - [func index(ofAccessibilityElement: Any) -> Int](nsobject-swift.class/index(ofaccessibilityelement:).md)
+- [func indicesOfObjects(byEvaluatingObjectSpecifier: NSScriptObjectSpecifier) -> [NSNumber]?](nsobject-swift.class/indicesofobjects(byevaluatingobjectspecifier:).md)
+  Returns the indices of the specified container objects.
 - [func inputText(String!, client: Any!) -> Bool](nsobject-swift.class/inputtext(_:client:).md)
   Handles key down events that do not map to an action method.
 - [func inputText(String!, key: Int, modifiers: Int, client: Any!) -> Bool](nsobject-swift.class/inputtext(_:key:modifiers:client:).md)
   Receives Unicode, the key code that generated it, and any modifier flags.
+- [func isCaseInsensitiveLike(String) -> Bool](nsobject-swift.class/iscaseinsensitivelike(_:).md)
+  Returns a Boolean value that indicates whether receiver is considered to be “like” a given string when the case of characters in the receiver is ignored.
+- [func isEqual(to: Any?) -> Bool](nsobject-swift.class/isequal(to:).md)
+  Returns a Boolean value that indicates whether the receiver is equal to another given object.
+- [func isGreaterThan(Any?) -> Bool](nsobject-swift.class/isgreaterthan(_:).md)
+  Returns a Boolean value that indicates whether the receiver is greater than another given object.
+- [func isGreaterThanOrEqual(to: Any?) -> Bool](nsobject-swift.class/isgreaterthanorequal(to:).md)
+  Returns a Boolean value that indicates whether the receiver is greater than or equal to another given object.
+- [func isLessThan(Any?) -> Bool](nsobject-swift.class/islessthan(_:).md)
+  Returns a Boolean value that indicates whether the receiver is less than another given object.
+- [func isLessThanOrEqual(to: Any?) -> Bool](nsobject-swift.class/islessthanorequal(to:).md)
+  Returns a Boolean value that indicates whether the receiver is less than or equal to another given object.
+- [func isLike(String) -> Bool](nsobject-swift.class/islike(_:).md)
+  Returns a Boolean value that indicates whether the receiver is “like” another given object.
+- [func isNotEqual(to: Any?) -> Bool](nsobject-swift.class/isnotequal(to:).md)
+  Returns a Boolean value that indicates whether the receiver is not equal to another given object.
 - [func numberOfGroups(inImageBrowser: IKImageBrowserView!) -> Int](nsobject-swift.class/numberofgroups(inimagebrowser:).md)
   Returns the number of groups in an image browser view.
 - [func numberOfItems(inImageBrowser: IKImageBrowserView!) -> Int](nsobject-swift.class/numberofitems(inimagebrowser:).md)
   Returns the number of records managed by the data source object.
 - [func originalString(Any!) -> NSAttributedString!](nsobject-swift.class/originalstring(_:).md)
   Return the string that consists of the precomposed Unicode characters.
+- [func performAction(for: ABPerson!, identifier: String!)](nsobject-swift.class/performaction(for:identifier:).md)
+  Sent to the delegate to perform the action.
 - [func prepareForInterfaceBuilder()](nsobject-swift.class/prepareforinterfacebuilder.md)
   Called when a designable object is created in Interface Builder.
 - [func provideImage(to: any MTLTexture, commandBuffer: any MTLCommandBuffer, originx: Int, originy: Int, width: Int, height: Int, userInfo: Any?)](nsobject-swift.class/provideimage(to:commandbuffer:originx:originy:width:height:userinfo:).md)
@@ -337,6 +439,7 @@ data into a MTLTexture when the image object is rendered.
 - [func readRSSI(forDeviceComplete: Any!, device: IOBluetoothDevice!, info: UnsafeMutablePointer<BluetoothHCIRSSIInfo>!, error: IOReturn)](nsobject-swift.class/readrssi(fordevicecomplete:device:info:error:).md)
 - [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](nsobject-swift.class/saveoptions(_:shouldshowuttype:).md)
   Called to determine if the specified uniform type identifier should be shown in the save panel.
+- [func setSharedObservers(NSKeyValueSharedObserversSnapshot?)](nsobject-swift.class/setsharedobservers(_:).md)
 - [func setupPanel(DRSetupPanel!, determineBestDeviceOfA: DRDevice!, orB: DRDevice!) -> DRDevice!](nsobject-swift.class/setuppanel(_:determinebestdeviceofa:orb:).md)
   Allows the delegate to specify which device is its preferred.
 - [func setupPanel(DRSetupPanel!, deviceContainsSuitableMedia: DRDevice!, promptString: AutoreleasingUnsafeMutablePointer<NSString?>!) -> Bool](nsobject-swift.class/setuppanel(_:devicecontainssuitablemedia:promptstring:).md)
@@ -347,6 +450,10 @@ data into a MTLTexture when the image object is rendered.
   Sent by the default notification center when the device selection in the panel has changed.
 - [func setupPanelShouldHandleMediaReservations(DRSetupPanel!) -> Bool](nsobject-swift.class/setuppanelshouldhandlemediareservations(_:).md)
   This delegate method allows the delegate to control how media reservations are handled.
+- [func shouldEnableAction(for: ABPerson!, identifier: String!) -> Bool](nsobject-swift.class/shouldenableaction(for:identifier:).md)
+  Sent to the delegate to determine whether the action should be enabled.
+- [func title(for: ABPerson!, identifier: String!) -> String!](nsobject-swift.class/title(for:identifier:).md)
+  Sent to the delegate to request the title of the menu item for the action.
 - [func workflowController(AMWorkflowController, didError: any Error)](nsobject-swift.class/workflowcontroller(_:diderror:).md)
 - [func workflowController(AMWorkflowController, didRun: AMAction)](nsobject-swift.class/workflowcontroller(_:didrun:).md)
 - [func workflowController(AMWorkflowController, willRun: AMAction)](nsobject-swift.class/workflowcontroller(_:willrun:).md)
@@ -366,6 +473,8 @@ data into a MTLTexture when the image object is rendered.
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](nsobjectprotocol.md)

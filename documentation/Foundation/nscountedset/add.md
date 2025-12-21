@@ -22,7 +22,7 @@ func add(_ object: Any)
 
 #### Discussion
 
-If `object` is already a member, [`add(_:)`](nscountedset/add(_:).md) increments the count associated with the object. If `object` is not already a member, it is sent a [`retain`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/1571946-retain) message.
+If `object` is already a member, [`add(_:)`](nscountedset/add(_:).md) increments the count associated with the object. If `object` is not already a member, it is sent a [`retain`](https://developer.apple.com/documentation/ObjectiveC/NSObject-c.protocol/retain) message.
 
 ## Parameters
 

@@ -26,10 +26,6 @@ case behavior10_4
   The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](numberformatter/setdefaultformatterbehavior(_:).md).
 - [NumberFormatter.Behavior.behavior10_0](numberformatter/behavior/behavior10_0.md)
   The number-formatter behavior as it existed prior to macOS 10.4.
-- [NumberFormatter.Behavior.default](numberformatter/behavior/default.md)
-  The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](numberformatter/setdefaultformatterbehavior(_:).md).
-- [NumberFormatter.Behavior.behavior10_0](numberformatter/behavior/behavior10_0.md)
-  The number-formatter behavior as it existed prior to macOS 10.4.
 
 
 ---

@@ -22,8 +22,8 @@ protocol SKPhysicsContactDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 - [Getting Started with Physics](getting-started-with-physics.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 
 #### Overview
 

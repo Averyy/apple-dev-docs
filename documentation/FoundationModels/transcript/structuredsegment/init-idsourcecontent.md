@@ -4,22 +4,17 @@
 **Kind**: init
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 init(id: String = UUID().uuidString, source: String, content: GeneratedContent)
 ```
-
-## See Also
-
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

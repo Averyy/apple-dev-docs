@@ -32,15 +32,13 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
 - [init(specification: AVVideoOutputSpecification)](avplayervideooutput/init(specification:).md)
   Creates a video output from a specification.
 ### Accessing video data
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+  Retrieves a video sample along with auxiliary information for display at the specified host time.
+- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+  A video frame along with auxiliary information for display at the specified presentation time.
 - [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
 - [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
   An object that provides configuration information for the related player item.
-### Structures
-- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
-  A video frame along with auxiliary information for display at the specified presentation time.
-### Instance Methods
-- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
-  Retrieves a video sample along with auxiliary information for display at the specified host time.
 
 ## Relationships
 

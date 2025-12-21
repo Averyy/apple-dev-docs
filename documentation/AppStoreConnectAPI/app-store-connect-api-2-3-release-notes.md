@@ -28,6 +28,10 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 
 ## See Also
 
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
@@ -53,10 +57,6 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.1 release notes](app-store-connect-api-2-1-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 1.8 release notes](app-store-connect-api-1-8-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

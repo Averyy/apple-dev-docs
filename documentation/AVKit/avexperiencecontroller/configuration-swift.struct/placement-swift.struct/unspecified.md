@@ -6,7 +6,7 @@
 Used as default when no UIScene is specified as a placement.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

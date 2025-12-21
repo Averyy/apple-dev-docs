@@ -22,7 +22,7 @@ class RenditionSpecificAttributes
 
 ## Topics
 
-### Accessing Attributes
+### Accessing attributes
 - [var channelCount: Int?](avassetvariant/audioattributes-swift.class/renditionspecificattributes/channelcount.md)
   The count of audio channels in the rendition.
 - [var isBinaural: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isbinaural.md)

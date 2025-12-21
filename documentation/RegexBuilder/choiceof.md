@@ -41,12 +41,6 @@ print(match?.0 as Any)
 ### Initializers
 - [init(() -> ChoiceOf<Output>)](choiceof/init(_:).md)
   Creates a regex component that chooses exactly one of the regex components provided by the builder closure.
-### Instance Properties
-- [var regex: Regex<Output>](choiceof/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [typealias RegexOutput](choiceof/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

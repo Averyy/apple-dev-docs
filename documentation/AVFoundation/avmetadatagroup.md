@@ -22,7 +22,7 @@ class AVMetadataGroup
 
 ## Topics
 
-### Inspecting the Metadata Group
+### Inspecting the metadata group
 - [var items: [AVMetadataItem]](avmetadatagroup/items.md)
   The array of metadata items associated with the metadata group.
 - [var uniqueID: String?](avmetadatagroup/uniqueid.md)
@@ -47,7 +47,7 @@ class AVMetadataGroup
 
 ## See Also
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVTimedMetadataGroup](avtimedmetadatagroup.md)
   A collection of metadata items that are valid for use during a specific time range.

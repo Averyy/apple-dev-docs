@@ -21,11 +21,11 @@ var shouldRasterize: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the layer is rendered as a bitmap in its local coordinate space and then composited to the destination with any other content. Shadow effects and any filters in the [`filters`](calayer/filters.md) property are rasterized and included in the bitmap. However, the current opacity of the layer is not rasterized. If the rasterized bitmap requires scaling during compositing, the filters in the [`minificationFilter`](calayer/minificationfilter.md) and [`magnificationFilter`](calayer/magnificationfilter.md) properties are applied as needed.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the layer is rendered as a bitmap in its local coordinate space and then composited to the destination with any other content. Shadow effects and any filters in the [`filters`](calayer/filters.md) property are rasterized and included in the bitmap. However, the current opacity of the layer is not rasterized. If the rasterized bitmap requires scaling during compositing, the filters in the [`minificationFilter`](calayer/minificationfilter.md) and [`magnificationFilter`](calayer/magnificationfilter.md) properties are applied as needed.
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the layer is composited directly into the destination whenever possible. The layer may still be rasterized prior to compositing if certain features of the compositing model (such as the inclusion of filters) require it.
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the layer is composited directly into the destination whenever possible. The layer may still be rasterized prior to compositing if certain features of the compositing model (such as the inclusion of filters) require it.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

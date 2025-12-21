@@ -24,6 +24,33 @@ protocol FocusedValueKey
 
 Unlike [`EnvironmentKey`](environmentkey.md), `FocusedValueKey` has no default value requirement, because the default value for a key is always `nil`.
 
+Use the `Entry` macro to create custom focused values by extending `FocusedValues` with new properties:
+
+```swift
+extension FocusedValues {
+    @Entry var selectedItem: Item?
+}
+```
+
+Alternatively it is possible to create a focused value key by manually creating a type that conforms to this protocol:
+
+```swift
+struct SelectedItemKey: FocusedValueKey {
+    typealias Value = Item
+}
+```
+
+Then extend [`FocusedValues`](focusedvalues.md) to add a computed property for your key:
+
+```swift
+extension FocusedValues {
+    var selectedItem: Item? {
+        get { self[SelectedItemKey.self] }
+        set { self[SelectedItemKey.self] = newValue }
+    }
+}
+```
+
 ## Topics
 
 ### Specifying the value type

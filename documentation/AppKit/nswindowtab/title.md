@@ -18,7 +18,7 @@ var title: String! { get set }
 
 The title displays within the window tab when the associated window is part of a tabbing group.
 
-By default, the title of the window tab follows the title of its associated window, but it may be customized using the [`title`](nswindowtab/title.md) property. If the title has been customized, setting the [`title`](nswindowtab/title.md) property to [`Nil`](https://developer.apple.com/documentation/objectivec/nil) causes it to follow the window’s title again.
+By default, the title of the window tab follows the title of its associated window, but it may be customized using the [`title`](nswindowtab/title.md) property. If the title has been customized, setting the [`title`](nswindowtab/title.md) property to [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) causes it to follow the window’s title again.
 
 ## See Also
 

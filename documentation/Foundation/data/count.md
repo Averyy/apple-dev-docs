@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The number of bytes in the data.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

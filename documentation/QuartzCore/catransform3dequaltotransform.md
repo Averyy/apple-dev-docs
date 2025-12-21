@@ -21,7 +21,7 @@ func CATransform3DEqualToTransform(_ a: CATransform3D, _ b: CATransform3D) -> Bo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `a` and `b` are exactly equal, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `a` and `b` are exactly equal, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

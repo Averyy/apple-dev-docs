@@ -26,6 +26,7 @@ Animates changes to one or more views using a spring animation with the specifie
 
 ## See Also
 
+- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(_:changes:completion:).md)
 - [class func animate(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:delay:options:animations:completion:).md)
   Animate changes to one or more views using the specified duration, delay, options, and completion handler.
 - [class func animate(withDuration: TimeInterval, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:animations:completion:).md)

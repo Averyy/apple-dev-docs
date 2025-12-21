@@ -17,11 +17,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldShowCellExpansionF
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow an expansion tooltip to appear in the column `tableColumn` for item `item`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow an expansion tooltip to appear in the column `tableColumn` for item `item`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Cell expansion can occur when the mouse hovers over the specified cell and the cell contents are unable to be fully displayed within the cell. If this method returns [`true`](https://developer.apple.com/documentation/swift/true), the full cell contents will be shown in a special floating tool tip view, otherwise the content is truncated.
+Cell expansion can occur when the mouse hovers over the specified cell and the cell contents are unable to be fully displayed within the cell. If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), the full cell contents will be shown in a special floating tool tip view, otherwise the content is truncated.
 
 ## Parameters
 

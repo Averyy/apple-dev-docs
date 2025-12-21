@@ -17,7 +17,7 @@ var allowsMultipleSelection: Bool { get set }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false), which allows the user to select only one column or row at a time. You can select multiple columns or rows programmatically regardless of this setting.
+The default is [`false`](https://developer.apple.com/documentation/Swift/false), which allows the user to select only one column or row at a time. You can select multiple columns or rows programmatically regardless of this setting.
 
 ## See Also
 

@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-Texture mapping describing how each section of the video frame should be mapped into the calibration.
+Texture mapping that describes how each section of the video frame maps into the calibration.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

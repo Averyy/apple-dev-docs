@@ -26,7 +26,7 @@ Use an [`MLUpdateTask`](mlupdatetask.md) to update a machine learning model on a
 
 ## Topics
 
-### Creating an Update Task
+### Creating an update task
 - [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, completionHandler: (MLUpdateContext) -> Void) throws](mlupdatetask/init(formodelat:trainingdata:completionhandler:).md)
   Creates a task that updates the model at the URL with the training data, and calls the completion handler when the update completes.
 - [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, progressHandlers: MLUpdateProgressHandlers) throws](mlupdatetask/init(formodelat:trainingdata:progresshandlers:).md)

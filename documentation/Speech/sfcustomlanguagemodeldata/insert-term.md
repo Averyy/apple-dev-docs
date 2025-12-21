@@ -28,12 +28,10 @@ This class accumulates vocabulary data (in the form of tokens paired with X-SAMP
 
 ## See Also
 
-- [func export(to: URL) async throws](sfcustomlanguagemodeldata/export(to:).md)
-  Export the accumulated data to a file.
-- [func insert(phraseCount: SFCustomLanguageModelData.PhraseCount)](sfcustomlanguagemodeldata/insert(phrasecount:).md)
-  Add a sample to the body of training data.
-- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](sfcustomlanguagemodeldata/insert(phrasecountgenerator:).md)
-  Add a stream of samples to the body of training data.
+- [static func supportedPhonemes(locale: Locale) -> [String]](sfcustomlanguagemodeldata/supportedphonemes(locale:).md)
+  List the supported subset of X-SAMPA pronunciations supported by this locale for the Speech framework.
+- [SFCustomLanguageModelData.CustomPronunciation](sfcustomlanguagemodeldata/custompronunciation.md)
+  A term to be introduced into the speech recognition model’s vocabulary.
 
 
 ---

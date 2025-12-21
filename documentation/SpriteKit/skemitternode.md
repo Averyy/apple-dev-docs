@@ -17,7 +17,6 @@ A source of various particle effects.
 ## Declaration
 
 ```swift
-@MainActor
 class SKEmitterNode
 ```
 
@@ -25,8 +24,8 @@ class SKEmitterNode
 
 - [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Creating Particle Effects](creating-particle-effects.md)
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
 
 #### Overview
 

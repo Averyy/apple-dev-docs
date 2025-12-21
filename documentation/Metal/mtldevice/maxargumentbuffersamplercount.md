@@ -24,7 +24,7 @@ var maxArgumentBufferSamplerCount: Int { get }
 
 This limit only applies to samplers that support argument buffers (see [`supportArgumentBuffers`](mtlsamplerdescriptor/supportargumentbuffers.md)). An [`MTLSamplerState`](mtlsamplerstate.md) instance is only unique if the properties of the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that created it are unique. For example, two samplers with equal [`minFilter`](mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](mtlsamplerdescriptor/magfilter.md) values are unique.
 
-See [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
+See [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
 
 ## See Also
 

@@ -26,7 +26,7 @@ When using a High Dynamic Range (HDR) camera, SceneKit applies a process called 
 
 The default value is `0.18`. By setting this property to a higher or lower value, you can compensate for scenes with darker or brighter content. Alternatively, by setting the [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) property, you can allow SceneKit to automatically adjust exposure as the visible contents of the scene change.
 
-This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/swift/false). If the [`exposureAdaptationDarkeningSpeedFactor`](scncamera/exposureadaptationdarkeningspeedfactor.md) value is [`true`](https://developer.apple.com/documentation/swift/true), SceneKit ignores this property, and instead computes the average luminance currently visible to the camera during rendering.
+This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/Swift/false). If the [`exposureAdaptationDarkeningSpeedFactor`](scncamera/exposureadaptationdarkeningspeedfactor.md) value is [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit ignores this property, and instead computes the average luminance currently visible to the camera during rendering.
 
 ## See Also
 

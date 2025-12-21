@@ -11,7 +11,7 @@ A Boolean value that determines whether the map shows a callout.
 ## Declaration
 
 ```swift
-attribute boolean calloutEnabled;
+calloutEnabled?: boolean;
 ```
 
 #### Discussion

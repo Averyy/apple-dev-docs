@@ -10,7 +10,7 @@ Sets the URL to open in the containing app when the user clicks the widget.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

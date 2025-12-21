@@ -3,11 +3,13 @@
 **Framework**: MarketplaceKit  
 **Kind**: enum
 
-Errors that can occur in the marketplace workflow.
+Errors that the MarketplaceKit framework can throw.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst ?+
+- macOS 15.0+
 
 ## Declaration
 
@@ -17,72 +19,72 @@ enum MarketplaceKitError
 
 #### Overview
 
-The [`AppLibrary`](applibrary.md) variety of functions `requestAppInstallation(...)` can throw an error of this type.
+The [`AppLibrary`](applibrary.md) class `requestAppInstallation()` functions can throw an error of this type.
 
 ## Topics
 
-### Enumeration Cases
-- [MarketplaceKitError.appNotInstalled](marketplacekiterror/appnotinstalled.md)
-  The requested operation cannot be completed because the app isn’t installed
-- [MarketplaceKitError.cancelled](marketplacekiterror/cancelled.md)
-  The app isn’t eligible to be installed
-- [MarketplaceKitError.featureUnavailable](marketplacekiterror/featureunavailable.md)
-  The requested feature is unavailable
-- [MarketplaceKitError.installationOfMarketplaceDenied](marketplacekiterror/installationofmarketplacedenied.md)
-  Installations of marketplaces are denied on this device.
-- [MarketplaceKitError.installationRestricted](marketplacekiterror/installationrestricted.md)
-  Installations are restricted on this device.
-- [case insufficientStorageSpace(Measurement<UnitInformationStorage>)](marketplacekiterror/insufficientstoragespace(_:).md)
-  The requested install requires more storage space than the device has available.
-- [MarketplaceKitError.invalidAlternativeDistributionPackageSignature](marketplacekiterror/invalidalternativedistributionpackagesignature.md)
-  The signature of the Alternative Distribution Package wasn’t available or was invalid
-- [MarketplaceKitError.invalidAlternativeDistributionPackageURL](marketplacekiterror/invalidalternativedistributionpackageurl.md)
-  Invalid URL for an Alternative Distribution Package
-- [MarketplaceKitError.invalidLicense](marketplacekiterror/invalidlicense.md)
-  No valid license provided
-- [MarketplaceKitError.invalidManifest](marketplacekiterror/invalidmanifest.md)
-  The manifest is invalid, or cannot be read
-- [MarketplaceKitError.invalidURL](marketplacekiterror/invalidurl.md)
-  An invalid URL was provided
+### Device and platform compatibility errors
 - [MarketplaceKitError.minimumPlatformVersionNotSatisfied(_:)](marketplacekiterror/minimumplatformversionnotsatisfied(_:).md)
-  The requested install requires a minimum platform version that is greater than this device.
-- [MarketplaceKitError.mismatchedInstallType](marketplacekiterror/mismatchedinstalltype.md)
-  The provided install type doesn’t match the install that would occur
+  An error that indicates the device has a lower platform version than that required by the requested app.
 - [MarketplaceKitError.missingCapabilities(_:)](marketplacekiterror/missingcapabilities(_:).md)
-  The requested install requires capabilities not available on this device.
-- [MarketplaceKitError.missingInstallVerificationToken](marketplacekiterror/missinginstallverificationtoken.md)
-  The required install verification token is missing
-- [MarketplaceKitError.networkError](marketplacekiterror/networkerror.md)
-  A network error occurred during the request
+  An error that indicates the device lacks capabilities that requested app requires.
 - [MarketplaceKitError.noSupportedVariant](marketplacekiterror/nosupportedvariant.md)
-  The requested install has no supported variant for this device.
-- [MarketplaceKitError.oauthTokenError](marketplacekiterror/oauthtokenerror.md)
-  An error fetching an OAuth Token
-- [MarketplaceKitError.ratingRestricted](marketplacekiterror/ratingrestricted.md)
-  The requested install has a rating that exceeds this device’s restrictions.
-- [MarketplaceKitError.unknown](marketplacekiterror/unknown.md)
-  Failure due to an unknown error.
+  An error that indicates the requested app doesn’t have a supported variant for this device.
 - [MarketplaceKitError.unsupportedPlatform](marketplacekiterror/unsupportedplatform.md)
-  The requested install does not run on this device’s platform.
-### Initializers
-- [init(from: any Decoder) throws](marketplacekiterror/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var description: String](marketplacekiterror/description.md)
-  A textual representation of this instance.
-### Instance Methods
-- [func encode(to: any Encoder) throws](marketplacekiterror/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Error Implementations](marketplacekiterror/error-implementations.md)
+  An error that indicates that the requested app doesn’t support the platform.
+- [case insufficientStorageSpace(Measurement<UnitInformationStorage>)](marketplacekiterror/insufficientstoragespace(_:).md)
+  An error that indicates that the device lacks the required disk space to install the app.
+### Installation and permission errors
+- [MarketplaceKitError.appNotInstalled](marketplacekiterror/appnotinstalled.md)
+  An error that indicates that a requested operation requires that the app first exists on the device.
+- [MarketplaceKitError.installationOfMarketplaceDenied](marketplacekiterror/installationofmarketplacedenied.md)
+  An error that indicates that the device disallows the installation of marketplaces.
+- [MarketplaceKitError.installationRestricted](marketplacekiterror/installationrestricted.md)
+  An error that indicates that app installation is restricted on this device.
+- [MarketplaceKitError.mismatchedInstallType](marketplacekiterror/mismatchedinstalltype.md)
+  An error that indicates the provided install type (install, update, restore) doesn’t match the install that results.
+- [MarketplaceKitError.missingInstallVerificationToken](marketplacekiterror/missinginstallverificationtoken.md)
+  An error that indicates the required install verification token is missing.
+### Content validation and security errors
+- [MarketplaceKitError.invalidAlternativeDistributionPackageSignature](marketplacekiterror/invalidalternativedistributionpackagesignature.md)
+  An error that indicates the alternative-distribution-package signature is invalid.
+- [MarketplaceKitError.invalidAlternativeDistributionPackageURL](marketplacekiterror/invalidalternativedistributionpackageurl.md)
+  An error that indicates the alternative-distribution-package URL is invalid.
+- [MarketplaceKitError.invalidLicense](marketplacekiterror/invalidlicense.md)
+  An error that indicates that a license your server provides is invalid.
+- [MarketplaceKitError.invalidManifest](marketplacekiterror/invalidmanifest.md)
+  An error that indicates that the app manifest provided by your server is invalid.
+- [MarketplaceKitError.invalidURL](marketplacekiterror/invalidurl.md)
+  An error that indicates that a URL your server or app provides is invalid.
+### Age-rating errors
+- [MarketplaceKitError.ageRatingExceptionNotNeeded](marketplacekiterror/ageratingexceptionnotneeded.md)
+  An error that indicates the app requests an unnecessary age-rating exception.
+- [MarketplaceKitError.missingAgeRatingExceptionRequest](marketplacekiterror/missingageratingexceptionrequest.md)
+  An error that indicates the app needs to request an age-rating exception.
+- [MarketplaceKitError.ratingRestricted](marketplacekiterror/ratingrestricted.md)
+  An error that indicates the requested app’s age rating is beyond that allowed for the device.
+### System and network errors
+- [MarketplaceKitError.cancelled](marketplacekiterror/cancelled.md)
+  An error that indicates the app isn’t eligible for installation.
+- [MarketplaceKitError.featureUnavailable](marketplacekiterror/featureunavailable.md)
+  An error that indicates that the requested feature is unavailable.
+- [MarketplaceKitError.networkError](marketplacekiterror/networkerror.md)
+  An error that indicates a network error occurs during a request.
+- [MarketplaceKitError.oauthTokenError](marketplacekiterror/oauthtokenerror.md)
+  An error that indicates that the framework failed to retrieve an authorization token.
+- [MarketplaceKitError.unknown](marketplacekiterror/unknown.md)
+  An error that indicates failure due to an unknown error.
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
+- [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

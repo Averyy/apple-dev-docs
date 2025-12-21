@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An option that tells Metal to compile the function to a binary format for dynamic linking.
+An option that instructs the compiler to generate a binary format for dynamic linking.
 
 **Availability**:
 - iOS 14.0+
@@ -18,6 +18,17 @@ An option that tells Metal to compile the function to a binary format for dynami
 ```swift
 static var compileToBinary: MTLFunctionOptions { get }
 ```
+
+## See Also
+
+- [static var failOnBinaryArchiveMiss: MTLFunctionOptions](mtlfunctionoptions/failonbinaryarchivemiss.md)
+  An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
+- [static var pipelineIndependent: MTLFunctionOptions](mtlfunctionoptions/pipelineindependent.md)
+  An option that generates the same function handle across all pipeline states that link a function, which lets you share function tables across pipeline states.
+- [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalpipelinesscript.md)
+  An option that instructs the compiler to store function information for inspecting binary archives.
+- [static var storeFunctionInMetalScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalscript.md)
+  An option that instructs the compiler to store function information for inspecting binary archives.
 
 
 ---

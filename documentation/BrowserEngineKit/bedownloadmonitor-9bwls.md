@@ -44,11 +44,6 @@ When someone downloads a file in your web browser, create an instance of this cl
 ### Getting information about a download
 - [let sourceURL: URL](bedownloadmonitor-9bwls/sourceurl.md)
 - [let destinationURL: URL](bedownloadmonitor-9bwls/destinationurl.md)
-### Identifying a download
-- [let id: UUID](bedownloadmonitor-9bwls/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [BEDownloadMonitor.ID](bedownloadmonitor-9bwls/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

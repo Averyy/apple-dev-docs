@@ -11,13 +11,7 @@ Options that you may provide when you create a points of interest search.
 ## Declaration
 
 ```swift
-dictionary PointsOfInterestSearchOptions {
-	string language;
-	mapkit.Coordinate center;
-	number radius;
-	mapkit.CoordinateRegion region;
-	mapkit.PointOfInterestFilter pointOfInterestFilter;
-};
+interface PointsOfInterestSearchOptions
 ```
 
 ## Topics
@@ -31,24 +25,29 @@ dictionary PointsOfInterestSearchOptions {
   The distance provided in meters, or the longest distance derived from the center point to the region’s bounding box.
 - [pointOfInterestFilter](pointsofinterestsearchoptions/pointofinterestfilter.md)
   A filter that lists points of interest categories to include or exclude.
+- [language](serviceconstructoroptions/language.md)
+  A language identifier that determines the language for the service results text.
+### Instance Properties
 - [language](pointsofinterestsearchoptions/language.md)
   The language ID to use when fetching points of interest.
 
 ## See Also
 
-- [mapkit.PointsOfInterestSearch](mapkit.pointsofinterestsearch/mapkit.pointsofinterestsearch.md)
+- [new PointsOfInterestSearch(options)](pointsofinterestsearch/pointsofinterestsearchconstructor.md)
   Creates a search object for fetching points of interest.
-- [region](mapkit.pointsofinterestsearch/region.md)
+- [interface PointsOfInterestSearchConstructorOptions](pointsofinterestsearchconstructoroptions.md)
+  Options that you provide when creating a points-of-interest search.
+- [region](pointsofinterestsearch/region.md)
   The region that bounds the area in which to fetch points of interest.
-- [center](mapkit.pointsofinterestsearch/center.md)
+- [center](pointsofinterestsearch/center.md)
   The center point of the request represented as latitude and longitude.
-- [radius](mapkit.pointsofinterestsearch/radius.md)
+- [radius](pointsofinterestsearch/radius.md)
   The distance provided in meters, or the longest distance derived from the center point to the region’s bounding box.
-- [pointOfInterestFilter](mapkit.pointsofinterestsearch/pointofinterestfilter.md)
+- [pointOfInterestFilter](pointsofinterestsearch/pointofinterestfilter.md)
   A filter that lists points of interest categories to include or exclude.
-- [language](mapkit.pointsofinterestsearch/language.md)
-  The language ID to use when fetching points of interest.
-- [MaxRadius](mapkit.pointsofinterestsearch/maxradius.md)
+- [language](serviceconstructoroptions/language.md)
+  A language identifier that determines the language for the service results text.
+- [MaxRadius](pointsofinterestsearch/maxradius.md)
   The maximum distance to use from the center of the region for fetching points of interest.
 
 

@@ -5,17 +5,15 @@
 Change the appearance of a rendered onscreen element when a player gazes at it.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
 In visionOS, both SwiftUI views and RealityKit entities can take advantage of , which change the appearance of a rendered onscreen element when a player gazes at it or highlights it using assistive technologies. In visionOS 26, fully immersive apps that render their own content using Metal can also use hover effects.
 
 This sample code project demonstrates how to pass in uniforms and attributes to your Metal shaders so your app can implement system-provided hover effects in a privacy-preserving way. On launch, the app opens to an immersive virtual space with a large shape that shatters into several pieces. If a player looks at one of the pieces, it highlights, much like a RealityKit entity with a [`HoverEffectComponent`](https://developer.apple.com/documentation/RealityKit/HoverEffectComponent) does. If the player taps while gazing at the various pieces, they return to their original position, reassembling the original shape.
-
-> ❗ **Important**: This sample code project demonstrates how to implement hover effects in Full Space apps that render their own content with Metal. It requires visionOS 26 and an Apple Vision Pro device. This project doesn’t support the simulator.
 
 #### Understand the Flow
 

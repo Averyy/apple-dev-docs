@@ -25,7 +25,7 @@ An initialized `PDFActionResetForm` instance, or `NULL` if the object could not 
 
 #### Discussion
 
-Initially, there are no fields and [`fieldsIncludedAreCleared`](pdfactionresetform/fieldsincludedarecleared.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Initially, there are no fields and [`fieldsIncludedAreCleared`](pdfactionresetform/fieldsincludedarecleared.md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

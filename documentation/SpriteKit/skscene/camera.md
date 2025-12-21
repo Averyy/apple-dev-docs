@@ -17,7 +17,6 @@ The camera node in the scene that determines what part of the scene’s coordina
 ## Declaration
 
 ```swift
-@MainActor
 weak var camera: SKCameraNode? { get set }
 ```
 

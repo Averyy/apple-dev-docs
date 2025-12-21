@@ -2,7 +2,11 @@
 
 **Framework**: AppKit
 
-Values that indicate the marker type of an element. Use these values with an accessibility element’s [`NSAccessibility`](nsaccessibility.md) property.
+Values that indicate the marker type of an element.
+
+#### Overview
+
+Use these values with an accessibility element’s [`markerType`](nsaccessibility-swift.struct/attribute/markertype.md) property.
 
 ## Topics
 

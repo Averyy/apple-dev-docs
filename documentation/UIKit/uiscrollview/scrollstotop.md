@@ -20,15 +20,15 @@ var scrollsToTop: Bool { get set }
 
 #### Discussion
 
-The scroll-to-top gesture is a tap on the status bar. When a user makes this gesture, the system asks the scroll view closest to the status bar to scroll to the top. If that scroll view has [`scrollsToTop`](uiscrollview/scrollstotop.md) set to [`false`](https://developer.apple.com/documentation/swift/false), its delegate returns [`false`](https://developer.apple.com/documentation/swift/false) from [`scrollViewShouldScrollToTop(_:)`](uiscrollviewdelegate/scrollviewshouldscrolltotop(_:).md), or the content is already at the top, nothing happens.
+The scroll-to-top gesture is a tap on the status bar. When a user makes this gesture, the system asks the scroll view closest to the status bar to scroll to the top. If that scroll view has [`scrollsToTop`](uiscrollview/scrollstotop.md) set to [`false`](https://developer.apple.com/documentation/Swift/false), its delegate returns [`false`](https://developer.apple.com/documentation/Swift/false) from [`scrollViewShouldScrollToTop(_:)`](uiscrollviewdelegate/scrollviewshouldscrolltotop(_:).md), or the content is already at the top, nothing happens.
 
 After the scroll view scrolls to the top of the content view, it sends the delegate a [`scrollViewDidScrollToTop(_:)`](uiscrollviewdelegate/scrollviewdidscrolltotop(_:).md) message.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Special Considerations
 
-On iPhone, the scroll-to-top gesture has no effect if there’s more than one scroll view onscreen that has [`scrollsToTop`](uiscrollview/scrollstotop.md) set to [`true`](https://developer.apple.com/documentation/swift/true).
+On iPhone, the scroll-to-top gesture has no effect if there’s more than one scroll view onscreen that has [`scrollsToTop`](uiscrollview/scrollstotop.md) set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -17,7 +17,6 @@ Initializes a new label object with a text string.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(text: String?)
 ```
 

@@ -27,6 +27,8 @@ Use this property to customize the format of the pixel buffers that the player l
 
 - [func displayedPixelBuffer() -> CVPixelBuffer?](avplayerlayer/displayedpixelbuffer.md)
   Returns the pixel buffer that the player layer currently displays.
+- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
+  Returns the pixel buffer which is currently being displayed.
 
 
 ---

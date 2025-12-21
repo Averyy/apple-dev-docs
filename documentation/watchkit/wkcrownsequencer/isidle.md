@@ -16,7 +16,7 @@ var isIdle: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the user is not rotating the crown and [`false`](https://developer.apple.com/documentation/swift/false) when the user is rotating the crown.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the user is not rotating the crown and [`false`](https://developer.apple.com/documentation/Swift/false) when the user is rotating the crown.
 
 ## See Also
 

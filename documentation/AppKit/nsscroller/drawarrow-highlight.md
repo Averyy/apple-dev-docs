@@ -17,7 +17,7 @@ func drawArrow(_ whichArrow: NSScroller.Arrow, highlight flag: Bool)
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the button is drawn highlighted; otherwise it’s drawn normally. You should never need to invoke this method directly, but may wish to override it to customize the appearance of scroll buttons.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the button is drawn highlighted; otherwise it’s drawn normally. You should never need to invoke this method directly, but may wish to override it to customize the appearance of scroll buttons.
 
 > **Note**:  The [`drawArrow(_:highlight:)`](nsscroller/drawarrow(_:highlight:).md) method is not invoked in macOS 10.7 and later.
 

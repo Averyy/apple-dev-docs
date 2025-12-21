@@ -22,7 +22,7 @@ func CGImageSourceCreateIncremental(_ options: CFDictionary?) -> CGImageSource
 
 #### Return Value
 
-An empty image source object. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+An empty image source object. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 #### Discussion
 

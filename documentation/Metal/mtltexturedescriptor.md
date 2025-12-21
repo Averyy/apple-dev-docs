@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An object that you use to configure new Metal texture objects.
+An instance that you use to configure new Metal texture instances.
 
 **Availability**:
 - iOS 8.0+
@@ -21,27 +21,27 @@ class MTLTextureDescriptor
 
 ## Mentions
 
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Overview
 
-To create a new texture, first create a [`MTLTextureDescriptor`](mtltexturedescriptor.md) object and set its property values. Then, call either the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) or [`makeTexture(descriptor:iosurface:plane:)`](mtldevice/maketexture(descriptor:iosurface:plane:).md) method of a [`MTLDevice`](mtldevice.md) object, or the [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method of a [`MTLBuffer`](mtlbuffer.md) object.
+To create a new texture, first create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance and set its property values. Then, call either the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) or [`makeTexture(descriptor:iosurface:plane:)`](mtldevice/maketexture(descriptor:iosurface:plane:).md) method of an [`MTLDevice`](mtldevice.md) instance, or the [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method of an [`MTLBuffer`](mtlbuffer.md) instance.
 
-When you create a texture, Metal copies property values from the descriptor into the new texture. You can reuse a [`MTLTextureDescriptor`](mtltexturedescriptor.md) object, modifying its property values as needed, to create more [`MTLTexture`](mtltexture.md) objects, without affecting any textures you already created.
+When you create a texture, Metal copies property values from the descriptor into the new texture. You can reuse an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance, modifying its property values as needed, to create more [`MTLTexture`](mtltexture.md) instances, without affecting any textures you already created.
 
 ## Topics
 
-### Creating Texture Descriptors
+### Creating texture descriptors
 - [class func texture2DDescriptor(pixelFormat: MTLPixelFormat, width: Int, height: Int, mipmapped: Bool) -> MTLTextureDescriptor](mtltexturedescriptor/texture2ddescriptor(pixelformat:width:height:mipmapped:).md)
   Creates a texture descriptor object for a 2D texture.
 - [class func textureCubeDescriptor(pixelFormat: MTLPixelFormat, size: Int, mipmapped: Bool) -> MTLTextureDescriptor](mtltexturedescriptor/texturecubedescriptor(pixelformat:size:mipmapped:).md)
   Creates a texture descriptor object for a cube texture.
 - [class func textureBufferDescriptor(with: MTLPixelFormat, width: Int, resourceOptions: MTLResourceOptions, usage: MTLTextureUsage) -> MTLTextureDescriptor](mtltexturedescriptor/texturebufferdescriptor(with:width:resourceoptions:usage:).md)
   Creates a texture descriptor object for a texture buffer.
-### Specifying Texture Attributes
+### Specifying texture attributes
 - [var textureType: MTLTextureType](mtltexturedescriptor/texturetype.md)
   The dimension and arrangement of texture image data.
 - [var pixelFormat: MTLPixelFormat](mtltexturedescriptor/pixelformat.md)
@@ -100,9 +100,9 @@ When you create a texture, Metal copies property values from the descriptor into
 
 ## See Also
 
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
 - [protocol MTLTexture](mtltexture.md)
   A resource that holds formatted image data.

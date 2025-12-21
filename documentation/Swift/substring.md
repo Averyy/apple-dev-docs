@@ -101,8 +101,9 @@ You can call this generic function with an instance of either `String` or `Subst
 - [var customPlaygroundQuickLook: _PlaygroundQuickLook](substring/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 - [var isContiguousUTF8: Bool](substring/iscontiguousutf8.md)
-  Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+  Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [var utf8Span: UTF8Span](substring/utf8span.md)
+  A UTF8Span over the code units that make up this substring.
 ### Instance Methods
 - [func filter((Substring.Element) throws -> Bool) rethrows -> String](substring/filter(_:).md)
 - [func makeContiguousUTF8()](substring/makecontiguousutf8.md)
@@ -117,14 +118,12 @@ You can call this generic function with an instance of either `String` or `Subst
   A view of a string’s contents as a collection of characters.
 - [Substring.Output](substring/output.md)
 ### Default Implementations
-- [Attachable Implementations](substring/attachable-implementations.md)
 - [BidirectionalCollection Implementations](substring/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/collection-implementations.md)
 - [Comparable Implementations](substring/comparable-implementations.md)
 - [CustomDebugStringConvertible Implementations](substring/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](substring/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](substring/customstringconvertible-implementations.md)
-- [CustomTestStringConvertible Implementations](substring/customteststringconvertible-implementations.md)
 - [Equatable Implementations](substring/equatable-implementations.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral Implementations](substring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringInterpolation Implementations](substring/expressiblebystringinterpolation-implementations.md)
@@ -133,7 +132,6 @@ You can call this generic function with an instance of either `String` or `Subst
 - [Hashable Implementations](substring/hashable-implementations.md)
 - [LosslessStringConvertible Implementations](substring/losslessstringconvertible-implementations.md)
 - [RangeReplaceableCollection Implementations](substring/rangereplaceablecollection-implementations.md)
-- [RegexComponent Implementations](substring/regexcomponent-implementations.md)
 - [Sequence Implementations](substring/sequence-implementations.md)
 - [StringProtocol Implementations](substring/stringprotocol-implementations.md)
 - [TextOutputStream Implementations](substring/textoutputstream-implementations.md)

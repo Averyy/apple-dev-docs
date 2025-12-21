@@ -20,9 +20,9 @@ var isConstantColorEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to enable support for taking constant color photos. You can only enable constant color capture if the value of [`isConstantColorSupported`](avcapturephotooutput/isconstantcolorsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to enable support for taking constant color photos. You can only enable constant color capture if the value of [`isConstantColorSupported`](avcapturephotooutput/isconstantcolorsupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-> **Note**:  Enabling constant color requires a lengthy reconfiguration of the capture pipeline. If you intend to capture constant color photos, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md), or within [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) calls on a running capture session.
+> **Note**:  Enabling constant color requires a lengthy reconfiguration of the capture pipeline. If you intend to capture constant color photos, set this property to [`true`](https://developer.apple.com/documentation/Swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md), or within [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) calls on a running capture session.
 
 ## See Also
 

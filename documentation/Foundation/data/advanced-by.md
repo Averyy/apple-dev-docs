@@ -28,15 +28,6 @@ A newly created data buffer that is shorter by the given amount than the origina
 
 - `amount`: The number of bytes to strip from the input data buffer. The value must be less than the original data buffer’s length.
 
-## See Also
-
-- [func dropLast(Int) -> Self.SubSequence](data/droplast(_:).md)
-  Returns a subsequence containing all but the specified number of final elements.
-- [func dropFirst(Int) -> Self.SubSequence](data/dropfirst(_:).md)
-  Returns a subsequence containing all but the given number of initial elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](data/drop(while:).md)
-  Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-
 
 ---
 

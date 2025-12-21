@@ -21,16 +21,16 @@ class MTLAccelerationStructureBoundingBoxGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
-### Specifying the Number of Bounding Boxes
+### Specifying the number of bounding boxes
 - [var boundingBoxCount: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxcount.md)
   The number of bounding boxes in the bounding box buffer.
-### Specifying Bounding Boxes Data
+### Specifying bounding boxes data
 - [var boundingBoxBuffer: (any MTLBuffer)?](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
-  A buffer that contains bounding box data.
+  A buffer that contains an array of bounding box structures.
 - [var boundingBoxBufferOffset: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbufferoffset.md)
   The offset, in bytes, to the first bounding box in the buffer.
 - [var boundingBoxStride: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
@@ -62,6 +62,7 @@ class MTLAccelerationStructureBoundingBoxGeometryDescriptor
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveBasis](mtlcurvebasis.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)

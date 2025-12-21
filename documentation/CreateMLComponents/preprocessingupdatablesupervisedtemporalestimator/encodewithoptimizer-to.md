@@ -26,10 +26,6 @@ func encodeWithOptimizer(_ transformer: PreprocessingUpdatableSupervisedTemporal
 
 ## See Also
 
-- [func encode(PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtemporalestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtemporalestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtemporalestimator/decodewithoptimizer(from:).md)
   Reads the encoded transformer and optimizer with a decoder.
 

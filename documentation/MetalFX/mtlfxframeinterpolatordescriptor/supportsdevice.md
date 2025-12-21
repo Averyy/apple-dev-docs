@@ -6,11 +6,11 @@
 Queries whether a Metal device supports frame interpolation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ class func supportsDevice(_ device: any MTLDevice) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports frame interpolation, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports frame interpolation, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

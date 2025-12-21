@@ -6,9 +6,8 @@
 The current state of the alarm.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -26,7 +25,7 @@ This is a snapshot of the state captured when the alarm was fetched from the dae
   An object that defines the durations used in an alarm that has a countdown.
 - [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id-swift.property.md)
+- [var id: UUID](alarm/id.md)
   The unique identifier of the alarm.
 - [Alarm.State](alarm/state-swift.enum.md)
   An enum that lists all possible states of an alarm.

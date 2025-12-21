@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The relationships you included in the request and those on which you can operate.
+The relationships you include in the request and those on which you can operate.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -58,17 +58,23 @@ object App.Relationships
 - [object App.Relationships.AccessibilityDeclarations](app/relationships-data.dictionary/accessibilitydeclarations-data.dictionary.md)
 - [object App.Relationships.AlternativeDistributionKey](app/relationships-data.dictionary/alternativedistributionkey-data.dictionary.md)
 - [object App.Relationships.AnalyticsReportRequests](app/relationships-data.dictionary/analyticsreportrequests-data.dictionary.md)
+- [object App.Relationships.AndroidToIosAppMappingDetails](app/relationships-data.dictionary/androidtoiosappmappingdetails-data.dictionary.md)
+  The data and links that describe Android to iOS app mapping details related to an app.
 - [object App.Relationships.AppAvailabilityV2](app/relationships-data.dictionary/appavailabilityv2-data.dictionary.md)
 - [object App.Relationships.AppPricePoints](app/relationships-data.dictionary/apppricepoints-data.dictionary.md)
 - [object App.Relationships.AppPriceSchedule](app/relationships-data.dictionary/apppriceschedule-data.dictionary.md)
+- [object App.Relationships.AppStoreIcon](app/relationships-data.dictionary/appstoreicon-data.dictionary.md)
+- [object App.Relationships.AppTags](app/relationships-data.dictionary/apptags-data.dictionary.md)
 - [object App.Relationships.BackgroundAssets](app/relationships-data.dictionary/backgroundassets-data.dictionary.md)
 - [object App.Relationships.BetaFeedbackCrashSubmissions](app/relationships-data.dictionary/betafeedbackcrashsubmissions-data.dictionary.md)
 - [object App.Relationships.BetaFeedbackScreenshotSubmissions](app/relationships-data.dictionary/betafeedbackscreenshotsubmissions-data.dictionary.md)
 - [object App.Relationships.BetaTesters](app/relationships-data.dictionary/betatesters-data.dictionary.md)
+- [object App.Relationships.BuildUploads](app/relationships-data.dictionary/builduploads-data.dictionary.md)
 - [object App.Relationships.CustomerReviewSummarizations](app/relationships-data.dictionary/customerreviewsummarizations-data.dictionary.md)
 - [object App.Relationships.CustomerReviews](app/relationships-data.dictionary/customerreviews-data.dictionary.md)
 - [object App.Relationships.MarketplaceSearchDetail](app/relationships-data.dictionary/marketplacesearchdetail-data.dictionary.md)
 - [object App.Relationships.PerfPowerMetrics](app/relationships-data.dictionary/perfpowermetrics-data.dictionary.md)
+- [object App.Relationships.SearchKeywords](app/relationships-data.dictionary/searchkeywords-data.dictionary.md)
 - [object App.Relationships.Webhooks](app/relationships-data.dictionary/webhooks-data.dictionary.md)
 
 ## See Also

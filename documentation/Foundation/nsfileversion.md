@@ -61,7 +61,7 @@ In addition to managing local files, the system also uses this class to manage c
 - [var isConflict: Bool](nsfileversion/isconflict.md)
   A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
 - [var isResolved: Bool](nsfileversion/isresolved.md)
-  A Boolean value that indicates the version object is not in conflict ([`true`](https://developer.apple.com/documentation/swift/true)) or is in conflict ([`false`](https://developer.apple.com/documentation/swift/false)).
+  A Boolean value that indicates if the version object is in conflict or not.
 - [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/unresolvedconflictversionsofitem(at:).md)
   Returns an array of version objects that are currently in conflict for the specified URL.
 ### Replacing and Deleting Versions

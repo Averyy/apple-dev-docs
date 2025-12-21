@@ -26,7 +26,7 @@ func SecPolicyCreateBasicX509() -> SecPolicy
 
 #### Return Value
 
-The policy object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release the object when you are finished with it.
+The policy object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release the object when you are finished with it.
 
 
 ---

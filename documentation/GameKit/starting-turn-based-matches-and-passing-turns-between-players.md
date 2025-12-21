@@ -51,7 +51,7 @@ let viewController = GKTurnBasedMatchmakerViewController(matchRequest: request)
 viewController.turnBasedMatchmakerDelegate = self
 ```
 
-1. Configure the view controller before presenting it. Optionally, set the view controller’s [`matchmakingMode`](gkturnbasedmatchmakerviewcontroller/matchmakingmode.md) property to limit the use of automatch. You can also set [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/swift/false) to remove ongoing matches that appear under Your Turn and Their Turn. Otherwise, the player can select an existing match rather than create a new one. For more information about handling existing matches, see the [`Open an existing turn-based match`](starting-turn-based-matches-and-passing-turns-between-players#Open-an-existing-turn-based-match.md) section below.
+1. Configure the view controller before presenting it. Optionally, set the view controller’s [`matchmakingMode`](gkturnbasedmatchmakerviewcontroller/matchmakingmode.md) property to limit the use of automatch. You can also set [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/Swift/false) to remove ongoing matches that appear under Your Turn and Their Turn. Otherwise, the player can select an existing match rather than create a new one. For more information about handling existing matches, see the [`Open an existing turn-based match`](starting-turn-based-matches-and-passing-turns-between-players#Open-an-existing-turn-based-match.md) section below.
 2. Implement the [`GKTurnBasedMatchmakerViewControllerDelegate`](gkturnbasedmatchmakerviewcontrollerdelegate.md) protocol methods to handle cancellations and errors.
 3. Then, present the turn-based matchmaker view controller to the local player.
 
@@ -147,7 +147,7 @@ GameKit also invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkt
 
 If the match [`status`](gkturnbasedmatch/status-swift.property.md) property is [`GKTurnBasedMatch.Status.ended`](gkturnbasedmatch/status-swift.enum/ended.md), show the outcomes of the participants and the final game data from the match object.
 
-If you don’t want existing matches to appear in the interface, set the view controller’s [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/swift/false) before presenting it.
+If you don’t want existing matches to appear in the interface, set the view controller’s [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/Swift/false) before presenting it.
 
 Alternatively, implement a custom interface that lets players manage existing matches. Use the `GKTurnBasedMatch` [`loadMatches(completionHandler:)`](gkturnbasedmatch/loadmatches(completionhandler:).md) method to load the matches from Game Center.
 

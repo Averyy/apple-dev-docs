@@ -21,11 +21,11 @@ var maxTessellationFactor: Int { get set }
 
 #### Discussion
 
-The default value is `16` and the maximum value is `64`. Any value in between must be set according to the partitioning mode specified by the [`tessellationPartitionMode`](mtlrenderpipelinedescriptor/tessellationpartitionmode.md) property:
+The default value is `16` and the maximum value is `64`. Any value in between needs to be set according to the partitioning mode specified by the [`tessellationPartitionMode`](mtlrenderpipelinedescriptor/tessellationpartitionmode.md) property:
 
-- For the [`MTLTessellationPartitionMode.pow2`](mtltessellationpartitionmode/pow2.md) partitioning mode, the value must be a power of two.
+- For the [`MTLTessellationPartitionMode.pow2`](mtltessellationpartitionmode/pow2.md) partitioning mode, the value needs to be a power of two.
 - For the [`MTLTessellationPartitionMode.integer`](mtltessellationpartitionmode/integer.md) partitioning mode, the value can be an even or odd number.
-- For the [`MTLTessellationPartitionMode.fractionalOdd`](mtltessellationpartitionmode/fractionalodd.md) or [`MTLTessellationPartitionMode.fractionalEven`](mtltessellationpartitionmode/fractionaleven.md) partitioning mode, the value must be an even number.
+- For the [`MTLTessellationPartitionMode.fractionalOdd`](mtltessellationpartitionmode/fractionalodd.md) or [`MTLTessellationPartitionMode.fractionalEven`](mtltessellationpartitionmode/fractionaleven.md) partitioning mode, the value needs to be an even number.
 
 ## See Also
 

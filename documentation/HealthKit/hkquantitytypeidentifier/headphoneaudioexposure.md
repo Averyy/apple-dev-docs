@@ -21,7 +21,7 @@ static let headphoneAudioExposure: HKQuantityTypeIdentifier
 
 #### Discussion
 
-These samples use sound pressure units (described in [`HKUnit`](hkunit.md)). You create these units using the [`decibelAWeightedSoundPressureLevel()`](hkunit/decibelaweightedsoundpressurelevel().md) method. They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md).
+These samples use sound pressure units (described in [`HKUnit`](hkunit.md)). You create these units using the [`decibelAWeightedSoundPressureLevel()`](hkunit/decibelaweightedsoundpressurelevel().md) method. They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Samples can be automatically detected by an iPhone or Apple Watch.
 
 ## See Also
 

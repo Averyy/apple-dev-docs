@@ -16,7 +16,7 @@ static let NSPreferencePaneDoUnselect: NSNotification.Name
 
 #### Discussion
 
-Posted when [`reply(toShouldUnselect:)`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePane/reply(toShouldUnselect:)) is invoked with an argument of [`true`](https://developer.apple.com/documentation/swift/true) after [`shouldUnselect`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePane/shouldUnselect) has returned a value of [`NSPreferencePaneUnselectReply.unselectLater`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePaneUnselectReply/unselectLater).
+Posted when [`reply(toShouldUnselect:)`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePane/reply(toShouldUnselect:)) is invoked with an argument of [`true`](https://developer.apple.com/documentation/Swift/true) after [`shouldUnselect`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePane/shouldUnselect) has returned a value of [`NSPreferencePaneUnselectReply.unselectLater`](https://developer.apple.com/documentation/PreferencePanes/NSPreferencePaneUnselectReply/unselectLater).
 
 ## See Also
 

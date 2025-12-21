@@ -20,7 +20,7 @@ var customView: UIView? { get set }
 
 #### Discussion
 
-The custom view must have [`translatesAutoresizingMaskIntoConstraints`](uiview/translatesautoresizingmaskintoconstraints.md) set to [`true`](https://developer.apple.com/documentation/swift/true), but it can use Auto Layout constraints internally for layout of its subviews.
+The custom view must have [`translatesAutoresizingMaskIntoConstraints`](uiview/translatesautoresizingmaskintoconstraints.md) set to [`true`](https://developer.apple.com/documentation/Swift/true), but it can use Auto Layout constraints internally for layout of its subviews.
 
 ## See Also
 

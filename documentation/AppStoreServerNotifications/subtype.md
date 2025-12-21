@@ -31,7 +31,7 @@ This `subtype` field is part of the [`responseBodyV2DecodedPayload`](responsebod
 - [object responseBodyV2DecodedPayload](responsebodyv2decodedpayload.md)
   A decoded payload that contains the version 2 notification data.
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 
 
 ---

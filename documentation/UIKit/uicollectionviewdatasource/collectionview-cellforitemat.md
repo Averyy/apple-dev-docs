@@ -30,7 +30,7 @@ Your implementation of this method is responsible for creating, configuring, and
 
 You don’t need to set the location of the cell inside the collection view’s bounds. The collection view sets the location of each cell automatically using the layout attributes provided by its layout object.
 
-If [`isPrefetchingEnabled`](uicollectionview/isprefetchingenabled.md) on the collection view is set to [`true`](https://developer.apple.com/documentation/swift/true) then this method is called in advance of the cell appearing. Use the [`collectionView(_:willDisplay:forItemAt:)`](uicollectionviewdelegate/collectionview(_:willdisplay:foritemat:).md) delegate method to make any changes to the appearance of the cell to reflect its visual state such as selection.
+If [`isPrefetchingEnabled`](uicollectionview/isprefetchingenabled.md) on the collection view is set to [`true`](https://developer.apple.com/documentation/Swift/true) then this method is called in advance of the cell appearing. Use the [`collectionView(_:willDisplay:forItemAt:)`](uicollectionviewdelegate/collectionview(_:willdisplay:foritemat:).md) delegate method to make any changes to the appearance of the cell to reflect its visual state such as selection.
 
 This method must always return a valid view object.
 

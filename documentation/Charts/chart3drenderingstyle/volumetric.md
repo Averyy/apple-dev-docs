@@ -3,8 +3,10 @@
 **Framework**: Swift Charts  
 **Kind**: property
 
+Renders the chart volumetrically for binocular vision.
+
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

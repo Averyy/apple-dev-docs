@@ -22,7 +22,7 @@ var hasSpaceAvailable: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver can be written to or if a write must be attempted in order to determine if space is available, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver can be written to or if a write must be attempted in order to determine if space is available, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

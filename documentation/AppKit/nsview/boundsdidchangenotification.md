@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Posted whenever the `NSView`‘s bounds rectangle changes to a new value independently of the frame rectangle, but only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
 
 **Availability**:
 - macOS ?+
@@ -15,6 +15,8 @@ class let boundsDidChangeNotification: NSNotification.Name
 ```
 
 #### Discussion
+
+This notification posts only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The notification object is the `NSView` object whose bounds rectangle has changed. This notification does not contain a `userInfo` dictionary.
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The content and behavior of the scene’s user interface.
+The content and behavior of the scene’s interface.
 
 **Availability**:
 - iOS 16.0+
@@ -21,6 +21,10 @@ The content and behavior of the scene’s user interface.
 @MainActor
 @preconcurrency var body: Self.Body { get }
 ```
+
+#### Discussion
+
+For the body of your scene, specify a [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) structure with the contents you want to display. You can also use that structure to configure an XPC connection for handling any interface-related data exchanges.
 
 ## See Also
 

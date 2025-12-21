@@ -19,7 +19,7 @@ A default footer string that includes the current page number and page count.
 
 A printable view class can override this property to substitute its own content in place of the default value. You should not need to access the value of this property directly. The printing system accesses it once per page during printing.
 
-Footers are generated only if the user defaults contain the key `NSPrintHeaderAndFooter` with the value [`true`](https://developer.apple.com/documentation/swift/true).
+Footers are generated only if the user defaults contain the key `NSPrintHeaderAndFooter` with the value [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

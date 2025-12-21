@@ -17,6 +17,7 @@ object SubscriptionCreateRequest
 ## Mentions
 
 - [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
+- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
 
 ##### Example Subscription with a Single Item
 

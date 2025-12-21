@@ -20,7 +20,7 @@ case videoDeviceNotAvailableWithMultipleForegroundApps
 
 #### Discussion
 
-If your capture session configuration disallows accessing the camera while multitasking, the system interrupts it with this reason when a user switches to a multitasking mode like Split View. The system doesn’t interrupt your capture session with this reason if [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+If your capture session configuration disallows accessing the camera while multitasking, the system interrupts it with this reason when a user switches to a multitasking mode like Split View. The system doesn’t interrupt your capture session with this reason if [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 
@@ -32,6 +32,8 @@ If your capture session configuration disallows accessing the camera while multi
   An interruption caused by the video device temporarily being made unavailable (for example, when used by another capture session).
 - [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md)
   An interruption due to system pressure, such as thermal duress.
+- [AVCaptureSession.InterruptionReason.sensitiveContentMitigationActivated](avcapturesession/interruptionreason/sensitivecontentmitigationactivated.md)
+  An interruption caused by a `SCVideoStreamAnalyzer` when it detects sensitive content on an associated [`AVCaptureDeviceInput`](avcapturedeviceinput.md).  To resume your capture session, call your analyzer’s `SCVideoStreamAnalyzer/continueStream` method.
 
 
 ---

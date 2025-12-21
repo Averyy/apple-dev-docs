@@ -18,6 +18,7 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - . Use room anchors to identify specific rooms and implement per-room experiences.
 -  Understand the lighting characteristics of a room to help improve the appearance of shiny or semi-reflective materials in your virtual content.
 -  Access camera frames from a device in several formats.
+-  Work with the real-time position and orientation of accessories that a person is using.
 
 ![An illustration showing a split view of someone using Apple Vision Pro; the left side shows a person’s perspective of the room and the right side depicts ARKit’s perspective of the room. The right side illustrates ARKit’s sensing capabilities, including the detected shape of the room and the individual joints of a person’s hand.](https://docs-assets.developer.apple.com/published/b1742d9029cfb818bd01ad8d395b7e7d/media-4330791%402x.png)
 
@@ -36,6 +37,8 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   The identity, location, and orientation of an object in world space.
 - [protocol TrackableAnchor](trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
+- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+  An object which represents an ARKit coordinate space.
 ### Barcode detection
 - [class BarcodeDetectionProvider](barcodedetectionprovider.md)
   An object that provides the real-time position of barcodes the framework detects in a person’s environment.
@@ -48,6 +51,16 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   The representation of a camera frame.
 - [struct CameraVideoFormat](cameravideoformat.md)
   A structure that represents a camera video format.
+### Rendering
+- [class StereoPropertiesProvider](stereopropertiesprovider.md)
+  The StereoPropertiesProvider serves the latest viewpoint properties on the device.
+- [struct ViewpointProperties](viewpointproperties.md)
+  The ViewpointProperties is a record of render camera transforms at some particular time.
+### Camera region
+- [class CameraRegionProvider](cameraregionprovider.md)
+  A camera region provider. An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the following entitlement: `com.apple.developer.arkit.camera-region.allow`
+- [struct CameraRegionAnchor](cameraregionanchor.md)
+  Represents a region in space to capture a camera stream of.
 ### Plane detection
 - [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
@@ -113,6 +126,12 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
 ### Accessory tracking
+- [class AccessoryTrackingProvider](accessorytrackingprovider.md)
+  Provides the real time position of accessories in the user’s environment.
+- [struct Accessory](accessory.md)
+  Represents an accessory to be tracked.
+- [struct AccessoryAnchor](accessoryanchor.md)
+  Represents a tracked accessory.
 - [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
   Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
 - [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
@@ -122,8 +141,13 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   A source of real-time information about the room that a person is currently in.
 - [struct RoomAnchor](roomanchor.md)
   The representation of a room ARKit is currently tracking.
-- [Building local experiences with room tracking](../visionOS/building_local_experiences_with_room_tracking.md)
+- [enum SurfaceClassification](surfaceclassification.md)
+  A value describing the classification of a surface.
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
+### Shared coordinate spaces
+- [class SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
+  Provides ability to establish a shared coordinate space among multiple participants.
 
 ## See Also
 

@@ -20,7 +20,7 @@ var usesExternalPlaybackWhileExternalScreenIsActive: Bool { get set }
 
 #### Discussion
 
-The player automatically switches back to the external screen mode once video playback concludes. A brief transition may be visible on the external display when automatically switching between the two modes. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property has no effect if [`allowsExternalPlayback`](avplayer/allowsexternalplayback.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+The player automatically switches back to the external screen mode once video playback concludes. A brief transition may be visible on the external display when automatically switching between the two modes. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). The value of this property has no effect if [`allowsExternalPlayback`](avplayer/allowsexternalplayback.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

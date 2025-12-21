@@ -32,9 +32,9 @@ The default value is `false`.
 - [var computeFunction: (any MTLFunction)?](mtlcomputepipelinedescriptor/computefunction.md)
   The compute kernel the pipeline calls.
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
-  The maximum number of threads in a threadgroup that you can dispatch to the compute function.
+  A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 - [var maxCallStackDepth: Int](mtlcomputepipelinedescriptor/maxcallstackdepth.md)
-  The maximum recursive call depth for dynamic library, visible, and intersection functions.
+  The maximum call stack depth for indirect function calls in compute shaders.
 
 
 ---

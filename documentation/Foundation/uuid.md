@@ -34,15 +34,9 @@ struct UUID
   Returns the UUID as bytes.
 - [var uuidString: String](uuid/uuidstring.md)
   Returns a string created from the UUID, such as “E621E1F8-C36C-495A-93FC-0C247A3E6E5F”
-### Comparing UUIDs
-- [static func != (Self, Self) -> Bool](uuid/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Using Reference Types
 - [class NSUUID](nsuuid.md)
   A universally unique value that can be used to identify types, interfaces, and other items.
-### Default Implementations
-- [EntityIdentifierConvertible Implementations](uuid/entityidentifierconvertible-implementations.md)
-- [Equatable Implementations](uuid/equatable-implementations.md)
 
 ## Relationships
 

@@ -19,12 +19,6 @@ Closes all media the web view is presenting, including picture-in-picture video 
 func closeAllMediaPresentations() async
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func closeAllMediaPresentations() async
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `completionHandler`: A closure the system executes after it completes closing all media presentations.

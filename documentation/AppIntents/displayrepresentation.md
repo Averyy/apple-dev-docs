@@ -28,33 +28,17 @@ struct DisplayRepresentation
 ## Topics
 
 ### Creating a representation
-- [init(stringLiteral: String)](displayrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](displayrepresentation/init(title:subtitle:image:).md)
 ### Displaying the content
 - [var title: LocalizedStringResource](displayrepresentation/title.md)
 - [var subtitle: LocalizedStringResource?](displayrepresentation/subtitle.md)
 - [var image: DisplayRepresentation.Image?](displayrepresentation/image-swift.property.md)
 - [DisplayRepresentation.Image](displayrepresentation/image-swift.struct.md)
-### Operators
-- [static func == (DisplayRepresentation, DisplayRepresentation) -> Bool](displayrepresentation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](displayrepresentation/init(title:subtitle:image:synonyms:).md)
 ### Instance Properties
 - [var synonyms: [LocalizedStringResource]](displayrepresentation/synonyms.md)
   A list of localized phrases that are synonyms of this particular display representation
-### Type Aliases
-- [DisplayRepresentation.ExtendedGraphemeClusterLiteralType](displayrepresentation/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [DisplayRepresentation.StringLiteralType](displayrepresentation/stringliteraltype.md)
-  A type that represents a string literal.
-- [DisplayRepresentation.UnicodeScalarLiteralType](displayrepresentation/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [Equatable Implementations](displayrepresentation/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](displayrepresentation/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](displayrepresentation/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

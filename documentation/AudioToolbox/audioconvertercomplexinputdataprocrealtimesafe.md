@@ -19,6 +19,8 @@ typealias AudioConverterComplexInputDataProcRealtimeSafe = (AudioConverterRef, U
 
 #### Discussion
 
+Realtime-safe variant of AudioConverterComplexInputDataProc.
+
 See the discussions of AudioConverterComplexInputDataProc and AudioConverterFillComplexBuffer.
 
 

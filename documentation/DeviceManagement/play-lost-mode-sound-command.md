@@ -11,7 +11,10 @@ Play the Lost Mode sound on a device that’s in Lost Mode.
 
 #### Discussion
 
-A device responds with error code `12067` if it isn’t in Lost Mode. While in Lost Mode, a device responds to invalid commands with error code `12078`.
+A device responds with error code:
+
+- `12067`: If it isn’t in Lost mode.
+- `12078`: If the command is invalid while in Lost Mode.
 
 The sound plays until the server disables Lost Mode or the user disables the sound on the device.
 

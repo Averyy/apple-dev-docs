@@ -20,7 +20,7 @@ var isAutoExposureEnabled: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a temporal scaler that automatically calculates the exposure level for each image it scales.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to create a temporal scaler that automatically calculates the exposure level for each image it scales.
 
 > **Note**: Temporal scaler instances that use auto exposure ignore its `MTLFXTemporalScaler/exposureTexture` property.
 

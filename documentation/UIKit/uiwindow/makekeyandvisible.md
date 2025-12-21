@@ -21,7 +21,7 @@ func makeKeyAndVisible()
 
 #### Discussion
 
-This is a convenience method to show the current window and position it in front of all other windows at the same level or lower. If you only want to show the window, change its [`isHidden`](uiview/ishidden.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+This is a convenience method to show the current window and position it in front of all other windows at the same level or lower. If you only want to show the window, change its [`isHidden`](uiview/ishidden.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

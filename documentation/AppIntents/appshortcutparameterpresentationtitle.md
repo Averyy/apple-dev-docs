@@ -8,12 +8,11 @@ A struct that represents the title of the presentation of an App Shortcut.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+
 - watchOS 10.0+
-- Unknown ?+ - Deprecated
-- Mac Catalyst ?+
 
 ## Declaration
 

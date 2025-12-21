@@ -26,7 +26,7 @@ To add a new framework target:
 
 ![A sheet displays the available templates for a new target. The multiplatform framework template is selected.](https://docs-assets.developer.apple.com/published/143b7c7bd31699fa966b3c1041d09ebc/creating-a-static-framework-1%402x.png)
 
-When you create a new framework target from a template, Xcode adds a target that builds a dynamic framework automatically. It also adds an umbrella header to the target. The header’s name is generated from your framework name, followed by a dot and the letter . For example, if you name your framework SampleFramework, Xcode automatically adds a header file with the name `SampleFramework.h` to the target.
+When you create a new framework target from a template, Xcode adds a target that builds a dynamic framework automatically. It also adds an umbrella header to the target. The header’s name is generated from your framework name, followed by a period (.) and the letter . For example, if you name your framework SampleFramework, Xcode automatically adds a header file with the name `SampleFramework.h` to the target.
 
 ##### Convert the New Framework Target From Dynamic to Static
 

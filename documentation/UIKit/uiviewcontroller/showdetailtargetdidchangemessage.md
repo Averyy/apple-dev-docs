@@ -4,11 +4,11 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,14 +22,41 @@ struct ShowDetailTargetDidChangeMessage
 - [init(viewController: UIViewController)](uiviewcontroller/showdetailtargetdidchangemessage/init(viewcontroller:).md)
 ### Instance Properties
 - [var viewController: UIViewController](uiviewcontroller/showdetailtargetdidchangemessage/viewcontroller.md)
-### Type Methods
-- [static func makeNotification(UIViewController.ShowDetailTargetDidChangeMessage) -> Notification](uiviewcontroller/showdetailtargetdidchangemessage/makenotification(_:).md)
 
 ## Relationships
 
 ### Conforms To
 - [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func show(UIViewController, sender: Any?)](uiviewcontroller/show(_:sender:).md)
+  Presents a view controller in a primary context.
+- [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
+  Presents a view controller in a secondary (or detail) context.
+- [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
+  Presents a view controller modally.
+- [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)
+  Dismisses the view controller that was presented modally by the view controller.
+- [var modalPresentationStyle: UIModalPresentationStyle](uiviewcontroller/modalpresentationstyle.md)
+  The presentation style for modal view controllers.
+- [enum UIModalPresentationStyle](uimodalpresentationstyle.md)
+  Modal presentation styles available when presenting view controllers.
+- [var modalTransitionStyle: UIModalTransitionStyle](uiviewcontroller/modaltransitionstyle.md)
+  The transition style to use when presenting the view controller.
+- [enum UIModalTransitionStyle](uimodaltransitionstyle.md)
+  Transition styles available when presenting view controllers.
+- [var isModalInPresentation: Bool](uiviewcontroller/ismodalinpresentation.md)
+  A Boolean value indicating whether the view controller enforces a modal behavior.
+- [var definesPresentationContext: Bool](uiviewcontroller/definespresentationcontext.md)
+  A Boolean value that indicates whether this view controller’s view is covered when the view controller or one of its descendants presents a view controller.
+- [var providesPresentationContextTransitionStyle: Bool](uiviewcontroller/providespresentationcontexttransitionstyle.md)
+  A Boolean value that indicates whether the view controller specifies the transition style for view controllers it presents.
+- [var disablesAutomaticKeyboardDismissal: Bool](uiviewcontroller/disablesautomatickeyboarddismissal.md)
+  Returns a Boolean indicating whether the current input view is dismissed automatically when changing controls.
+- [class let showDetailTargetDidChangeNotification: NSNotification.Name](uiviewcontroller/showdetailtargetdidchangenotification.md)
+  Posted when a split view controller is expanded or collapsed.
 
 
 ---

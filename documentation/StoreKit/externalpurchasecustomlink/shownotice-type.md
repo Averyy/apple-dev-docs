@@ -25,22 +25,22 @@ Returns [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpurchasecu
 
 #### Discussion
 
-Use this method if your app configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key.
+Use this method if your app configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) or [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions) property list keys.
 
-Call this method to display the system disclosure sheet before your app continues to offer external purchases. Call this method in response to a deliberate customer action, such as tapping a button.
+Call this method to display the system disclosure sheet before your app continues to communicate and promote offers for purchase in a distribution channel of your choice. Call this method in response to a deliberate customer action, such as tapping a button.
 
-Select the notice type based on how your app presents the custom link to external purchases if the customer chooses to continue:
+Select the notice type based on how your app communicates the offers if the customer chooses to continue:
 
-- Use [`ExternalPurchaseCustomLink.NoticeType.browser`](externalpurchasecustomlink/noticetype/browser.md) if the app goes to the background, and presents external purchases in a destination outside of the app, which can be an alternative app marketplace, another app, or a website on a browser.
-- Use [`ExternalPurchaseCustomLink.NoticeType.withinApp`](externalpurchasecustomlink/noticetype/withinapp.md) if the app displays the destination in a web view.
+- Use [`ExternalPurchaseCustomLink.NoticeType.browser`](externalpurchasecustomlink/noticetype/browser.md) if the app goes to the background, and promotes offers in a destination outside of the app.
+- Use [`ExternalPurchaseCustomLink.NoticeType.withinApp`](externalpurchasecustomlink/noticetype/withinapp.md) if the app promotes offers in a web view or native experience within the app.
 
-Continue to offer external purchases if [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) returns [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpurchasecustomlink/noticeresult/continued.md); otherwise don’t continue.
+Continue to communicate and promote offers if [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) returns [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpurchasecustomlink/noticeresult/continued.md); otherwise don’t continue.
 
 For example code that calls this method, see [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md).
 
 ## Parameters
 
-- `type`: An   value that determines the disclosure sheet the system displays.
+- `type`: An   value you select that determines the disclosure sheet the system displays.
 
 ## See Also
 

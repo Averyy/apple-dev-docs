@@ -26,26 +26,15 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 
 ## Topics
 
-### Operators
-- [static func < (HIDReportID, HIDReportID) -> Bool](hidreportid/_(_:_:).md)
-  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Initializers
 - [init?(rawValue: UInt8)](hidreportid/init(rawvalue:).md)
   Creates a HID report ID.
 ### Instance Properties
-- [var rawValue: HIDReportID.RawValue](hidreportid/rawvalue-swift.property.md)
+- [var rawValue: HIDReportID.RawValue](hidreportid/rawvalue.md)
   The raw value of the report ID.
-### Type Aliases
-- [HIDReportID.RawValue](hidreportid/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let allReports: ClosedRange<HIDReportID>](hidreportid/allreports.md)
   A convenient definition that represents every possible report ID.
-### Default Implementations
-- [Comparable Implementations](hidreportid/comparable-implementations.md)
-- [CustomStringConvertible Implementations](hidreportid/customstringconvertible-implementations.md)
-- [Equatable Implementations](hidreportid/equatable-implementations.md)
-- [RawRepresentable Implementations](hidreportid/rawrepresentable-implementations.md)
 
 ## Relationships
 

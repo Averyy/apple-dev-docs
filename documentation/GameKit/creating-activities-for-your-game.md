@@ -8,65 +8,31 @@ Use activities to surface game content to players and encourage them to connect 
 
 Players discover and engage with games — along with connecting with friends and other players — through Game Center. Game activities present players with challenges in your game, like collecting pieces of a puzzle. They offer a way to keep people engaged with your game, and with each other. By regularly adding new activities — like finding parts of a map and piecing them together to find buried treasure — you encourage people to explore your game, or play as a team to accomplish a goal.
 
+![An illustration that shows a game activity that loads a daily crossword.](https://docs-assets.developer.apple.com/published/9e3be3a2b0dc68f4b9b84788242a7e83/creating-activities-for-your-game-hero%402x.png)
+
 Activities provide a way to link players directly to your content. By describing your gameplay with activities, you can link the player to that part of your game when they engage with the activity. For example, when a player wants to complete your daily puzzle, you can send the player directly to that part of your game.
 
 They also provide the Games app with information about what’s happening in your game. The Games app uses the activity configuration you specify to help drive engagement by deep linking to your content. You can configure activities with achievements, leaderboards, and challenges. To learn more about the Games app, see [`Engage players with the Games app`](https://developer.apple.comhttps://developer.apple.com/wwdc25/215). To learn more about challenges, see [`Creating engaging challenges from leaderboards`](creating-engaging-challenges-from-leaderboards.md).
 
-#### Configure Game Activities
+#### Configure and Test Game Activities
 
-Before you can access activities in your code, configure them in Xcode and sync the configuration updates with App Store Connect. Begin configuring a game activity by creating a GameKit configuration file.
+Configure activities in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md).
 
-1. In Xcode 16.3 and later, choose File > New > File from Template.
-2. Choose  either iOS or  macOS as the platform.
-3. Scroll down to Other, and select the GameKit File template.
-4. Click Next.
-5. In the sheet that appears, enter a name for the configuration and select the appropriate targets.
-6. Click Create.
+For each activity you configure, you specify details like how many players it supports, and what achievement, leaderboard, or challenge to associate the activity with.
 
-If you’ve already configured activities in App Store Connect:
-
-1. At the bottom of the left column, click the More (…) button.
-2. Choose Pull from App Store Connect.
-3. Select the bundle ID or Game Center group.
-4. Click Pull.
-
-The details for the resource appear in the editor at right.
-
-![A screenshot of the GameKit configuration in Xcode. The configuration includes a recurring leaderboard named Bubbles Popped and an activity named Bubble Rush The activity is selected and shows that it’s a multiplayer activity that supports between two and six players. The activity is associated with the Bubbles Popped leaderboard.](https://docs-assets.developer.apple.com/published/37ee144bf3ca2f02e32a3b469ff9b89d/game-activity-bubble-rush%402x.png)
-
-To create a new activity, click the Add (+) button at the bottom of the left column, and choose Activity. When you create an activity, you specify details like how many players it supports, and what achievement, leaderboard, or challenge to associate the activity with.
+![A screenshot of the GameKit configuration in Xcode. The configuration includes a recurring leaderboard named ](https://docs-assets.developer.apple.com/published/4dc1402c1688d18ebb95e5d70e56f56d/xcode-game-activity-coin-rush%402x.png)
 
 The capabilities you choose for an activity depends on the design of your game. For multiplayer activities, configure whether it supports party codes — a way players invite each other to activities. You also specify the number of players the activity supports. A challenge supports up to 16 players.
 
 When you configure your activity, you can provide an optional collection of properties that are specific to your game. For example, you can add custom details about which level an activity is for and the difficulty.
 
-> **Note**: Use App Store Connect when you need to remove an activity that you sync. If you’ve already pushed your configuration changes to App Store Connect, removing an activity from the local configuration file doesn’t remove it from App Store Connect.
+> **Note**: Use App Store Connect when you need to remove an activity that you sync. If you already pushed your configuration changes to App Store Connect, removing an activity from the local configuration file doesn’t remove it from App Store Connect.
 
-For design guidance on game activities, see Human Interface Guidelines > Technologies > [`Game Center`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center). To learn more about the information you enter in App Store Connect, see [`Game Activities`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/game-activities).
+Use the Game Progress Manager to test your activities on your local device before you push the configuration update to App Store Connect. After selecting a resource that you associate with an activity, you can open a deep link to verify the behavior of your activity.
 
-#### Test Activities By Using the Game Progress Manager
+![A screenshot showing the Game Progress Manager with a leaderboard selected. The leaderboard is associated with a game activity that’s shown as a Deep Link. Click on the link to test the behavior of the link with your game.](https://docs-assets.developer.apple.com/published/c6d27e13f0af445cda4b087e5cb55d71/xcode-progress-manager-deep-link%402x.png)
 
-Game Progress Manager allows you to test your game features locally during development by modifying properties, reporting updates, and resetting resources. It also allows you to test leaderboards and deep links to your game.
-
-Before testing your GameKit configuration, turn on Debug Mode in Xcode:
-
-1. Choose Product > Scheme > Edit Scheme.
-2. Select the Run configuration in the left column.
-3. Select Options.
-4. Scroll down to GameKit Configuration, and click the Enable Debug Mode checkbox.
-5. Click Close.
-
-To test your activity configuration, open the Game Progress Manager in Xcode:
-
-1. Choose Debug > GameKit > Manage Game Progress.
-2. In the sidebar, click the “Select a device” pop-up button, and select the physical device you use for testing.
-3. Click the pop-up button beneath that and select the project you want to debug.
-
-The test data stays local to your machine and doesn’t rely on App Store Connect to test.
-
-After selecting the device and app, choose a resource you want to test. In the inspector panel, you can open deep links to verify the behavior of your activity.
-
-> ❗ **Important**: Testing your app with the Game Progress Manager requires a physical device to test is available for iOS 18.4 and later, macOS 15.4 and later, tvOS 18.4 and later, and visionOS 2.4 and later.
+For design guidance on game activities, see Human Interface Guidelines > Technologies > [`Game Center`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center). To learn more about the information you enter in App Store Connect, see [`Game Activities properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/game-activities).
 
 #### Get the Object That Represents the Activity
 

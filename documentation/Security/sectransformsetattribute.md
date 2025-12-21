@@ -16,7 +16,7 @@ func SecTransformSetAttribute(_ transformRef: SecTransform, _ key: CFString, _ v
 
 #### Return Value
 
-A Boolean set to [`true`](https://developer.apple.com/documentation/swift/true) if the call succeeds. Otherwise, the `error` parameter contains information about the failure.
+A Boolean set to [`true`](https://developer.apple.com/documentation/Swift/true) if the call succeeds. Otherwise, the `error` parameter contains information about the failure.
 
 #### Discussion
 

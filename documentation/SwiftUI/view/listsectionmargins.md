@@ -6,10 +6,10 @@
 Set the section margins for the specific edges.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -34,6 +34,21 @@ For sections that have headers or footers, the section margins are applied aroun
 
 - `edges`: The set of edges to pad for sections in this view. The   default is  .
 - `length`: An amount, given in points, to pad section on the   specified edges.
+
+## See Also
+
+- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+  Applies an inset to the rows in a list.
+- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+  The default minimum height of rows in a list.
+- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+  The default minimum height of a header in a list.
+- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+  Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
+  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
+- [struct ListSectionSpacing](listsectionspacing.md)
+  The spacing options between two adjacent sections in a list.
 
 
 ---

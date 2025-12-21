@@ -1,4 +1,4 @@
 Completed scraping Authentication Services!
-Total pages scraped: 0
-Pages skipped (unchanged): 1142
+Total pages scraped: 1222
+Pages skipped (unchanged): 1
 Pages failed: 0

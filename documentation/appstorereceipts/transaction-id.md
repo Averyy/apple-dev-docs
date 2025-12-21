@@ -1,12 +1,12 @@
 # transaction_id
 
 **Framework**: App Store Receipts  
-**Kind**: tdef
+**Kind**: typealias
 
 A unique identifier for a transaction, such as a purchase, restore, or renewal.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
 
 ## Declaration
 
@@ -16,9 +16,9 @@ string transaction_id
 
 #### Discussion
 
-This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info.md) and [`responseBody.Receipt.In_app`](responsebody/receipt/in_app.md) arrays.
+This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
-This value has the same format as the transaction’s [`transactionIdentifier`](https://developer.apple.com/documentation/storekit/skpaymenttransaction/transactionidentifier) property; however, the values may not be the same. 
+This value has the same format as the transaction’s [`transactionIdentifier`](https://developer.apple.com/documentation/StoreKit/SKPaymentTransaction/transactionIdentifier) property; however, the values may not be the same.
 
 You can use this value to:
 

@@ -30,7 +30,7 @@ This method is declared in `NSHelpManager.h`.
 
 ## See Also
 
-- [@MainActor func contextHelp(for object: Any) -> NSAttributedString?](../AppKit/NSHelpManager/contextHelp(for:).md)
+- [func contextHelp(for: Any) -> NSAttributedString?](../AppKit/NSHelpManager/contextHelp(for:).md)
   Returns context-sensitive help for an object.
 
 

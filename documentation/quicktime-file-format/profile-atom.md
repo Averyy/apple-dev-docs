@@ -5,9 +5,6 @@
 
 An atom that expresses profiles or feature codes for features that occur in the movie.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 At the movie level, the profile atom must occur within the movie atom before the movie header atom. A reader may stop the search for the profile atom once the profile atom or the movie header atom is found. Because new atoms may be introduced into the movie atom (type `'moov'`) in the future, a reader must not expect the first child atom of the movie atom to be either the profile (type `'prfl'`) or the movie header (`'mvhd'`) atom. This rule allows for new atoms in the future but still accommodates readers that do not want to perform an exhaustive enumeration of all the child atoms in a movie atom.

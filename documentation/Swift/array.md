@@ -491,7 +491,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 ### Encoding and Decoding
 - [func encode(to: any Encoder) throws](array/encode(to:).md)
   Encodes the elements of this array into the given encoder in an unkeyed container.
-- [init(from: any Decoder) throws](array/init(from:)-6rmxq.md)
+- [init(from: any Decoder) throws](array/init(from:).md)
   Creates a new array by decoding from the given decoder.
 ### Describing an Array
 - [var description: String](array/description.md)
@@ -507,12 +507,6 @@ When the destination array’s element type is a nonclass type that bridges to a
   Constructs an Array with the elements of a DataColumn.
 - [init(MLUntypedColumn)](array/init(_:)-86ka8.md)
   Constructs an Array with the elements of an MLUntypedColumn.
-- [init?(from: MLDataValue)](array/init(from:)-51fkv.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](array/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](array/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Related Array Types
 - [struct ContiguousArray](contiguousarray.md)
   A contiguously stored array.
@@ -563,11 +557,8 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [static func stereoscopicForVideoOutput() -> [CMTag]](array/stereoscopicforvideooutput.md)
   Creates a collection of CMTags with the required tags to describe basic stereoscopic video, where both left and right stereo eyes are present, e.g. kCMTagStereoLeftAndRight.
 ### Default Implementations
-- [Attachable Implementations](array/attachable-implementations.md)
 - [BidirectionalCollection Implementations](array/bidirectionalcollection-implementations.md)
 - [Collection Implementations](array/collection-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](array/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](array/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](array/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](array/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](array/customstringconvertible-implementations.md)
@@ -575,17 +566,11 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Encodable Implementations](array/encodable-implementations.md)
 - [Equatable Implementations](array/equatable-implementations.md)
 - [ExpressibleByArrayLiteral Implementations](array/expressiblebyarrayliteral-implementations.md)
-- [Generable Implementations](array/generable-implementations.md)
 - [Hashable Implementations](array/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](array/instructionsrepresentable-implementations.md)
-- [MLDataValueConvertible Implementations](array/mldatavalueconvertible-implementations.md)
 - [MutableCollection Implementations](array/mutablecollection-implementations.md)
 - [OperationParameter Implementations](array/operationparameter-implementations.md)
-- [PromptRepresentable Implementations](array/promptrepresentable-implementations.md)
 - [RandomAccessCollection Implementations](array/randomaccesscollection-implementations.md)
 - [RangeReplaceableCollection Implementations](array/rangereplaceablecollection-implementations.md)
-- [RelationshipCollection Implementations](array/relationshipcollection-implementations.md)
-- [ResultsCollection Implementations](array/resultscollection-implementations.md)
 - [Sequence Implementations](array/sequence-implementations.md)
 
 ## Relationships

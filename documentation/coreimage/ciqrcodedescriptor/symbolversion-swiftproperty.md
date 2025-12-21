@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The version of the QR code.
+The version of the QR code which corresponds to the size of the QR code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,16 +21,16 @@ var symbolVersion: Int { get }
 
 #### Discussion
 
-ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity
+ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity. This field is required in order to properly interpret the error corrected payload.
 
 ## See Also
 
 - [var errorCorrectedPayload: Data](ciqrcodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the QR code.
+  The error-corrected codeword payload that comprises the QR code symbol.
 - [var maskPattern: UInt8](ciqrcodedescriptor/maskpattern-swift.property.md)
-  The QR code’s mask pattern.
+  The data mask pattern for the QR code symbol.
 - [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](ciqrcodedescriptor/errorcorrectionlevel-swift.property.md)
-  The QR code error correction level.
+  The error correction level of the QR code symbol.
 
 
 ---

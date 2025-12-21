@@ -44,13 +44,6 @@ To add this trait to a test, use one of the following functions:
   The human-readable title of the bug, if specified by the test author.
 - [var url: String?](bug/url.md)
   A URL that links to more information about the bug, if available.
-### Default Implementations
-- [Decodable Implementations](bug/decodable-implementations.md)
-- [Encodable Implementations](bug/encodable-implementations.md)
-- [Equatable Implementations](bug/equatable-implementations.md)
-- [Hashable Implementations](bug/hashable-implementations.md)
-- [SuiteTrait Implementations](bug/suitetrait-implementations.md)
-- [Trait Implementations](bug/trait-implementations.md)
 
 ## Relationships
 
@@ -72,6 +65,8 @@ To add this trait to a test, use one of the following functions:
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

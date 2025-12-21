@@ -25,8 +25,6 @@ struct BoostedTreeConfiguration
 ### Creating a configuration
 - [init()](boostedtreeconfiguration/init.md)
   Creates a default boosted tree configuration.
-- [init(from: any Decoder) throws](boostedtreeconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Inspecting the configuration
 - [var columnSubsample: Double](boostedtreeconfiguration/columnsubsample.md)
   Subsample ratio of the columns in each iteration of tree construction.
@@ -50,19 +48,6 @@ struct BoostedTreeConfiguration
   Subsample ratio of the training set in each iteration of tree construction.
 - [var stepSize: Double](boostedtreeconfiguration/stepsize.md)
   The step size shrinking.
-### Operators
-- [static func == (BoostedTreeConfiguration, BoostedTreeConfiguration) -> Bool](boostedtreeconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](boostedtreeconfiguration/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](boostedtreeconfiguration/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](boostedtreeconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](boostedtreeconfiguration/equatable-implementations.md)
 
 ## Relationships
 

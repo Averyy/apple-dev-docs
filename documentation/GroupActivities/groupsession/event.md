@@ -12,7 +12,6 @@ A session-related event to display in the system UI.
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

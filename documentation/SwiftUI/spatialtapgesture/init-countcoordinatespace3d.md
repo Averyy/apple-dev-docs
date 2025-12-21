@@ -6,7 +6,7 @@
 Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

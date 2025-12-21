@@ -17,13 +17,13 @@ optional func collectionView(_ collectionView: NSCollectionView, canDragItemsAt 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the collection view can begin the drag operation for the specified items or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the collection view can begin the drag operation for the specified items or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 
-Implement this method when you want selective control over the initiation of drag operations. In your implementation, use the provided information to determine whether the drag operation should occur and return the appropriate return value. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) if your interface does not allow the user to drag the specified items.
+Implement this method when you want selective control over the initiation of drag operations. In your implementation, use the provided information to determine whether the drag operation should occur and return the appropriate return value. For example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) if your interface does not allow the user to drag the specified items.
 
-If you do not implement this method in your delegate object, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true) and begins the drag operation.
+If you do not implement this method in your delegate object, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/Swift/true) and begins the drag operation.
 
 ## Parameters
 

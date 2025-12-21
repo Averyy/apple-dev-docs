@@ -22,7 +22,7 @@ var shouldSetDefaultLeaderboard: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), when the score is reported to Game Center, Game Center also updates the local player’s default leaderboard to match the value stored in the [`leaderboardIdentifier`](gkscore/leaderboardidentifier.md) property of the score object. This matches the behavior of the [`GKLeaderboard`](gkleaderboard.md) class’s [`setDefault(_:withCompletionHandler:)`](gkleaderboard/setdefault(_:withcompletionhandler:).md) class method. If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the default leaderboard is not changed by reporting the score. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), when the score is reported to Game Center, Game Center also updates the local player’s default leaderboard to match the value stored in the [`leaderboardIdentifier`](gkscore/leaderboardidentifier.md) property of the score object. This matches the behavior of the [`GKLeaderboard`](gkleaderboard.md) class’s [`setDefault(_:withCompletionHandler:)`](gkleaderboard/setdefault(_:withcompletionhandler:).md) class method. If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the default leaderboard is not changed by reporting the score. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -31,7 +31,7 @@ The Document Browser app performs the following setup and configuration steps:
 
 Document browser-based apps must assign a [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) instance as the app’s [`rootViewController`](uiwindow/rootviewcontroller.md), ensuring that the browser remains in memory throughout the app’s lifetime.
 
-The sample code defines a `UIDocumentBrowserViewController` subclass named  `DocumentBrowserViewController`. It then marks the subclass as the app’s initial view controller in the `Main.storyboard` storyboard, and  displays the browser view when launched.
+The sample code defines a `UIDocumentBrowserViewController` subclass named  `DocumentBrowserViewController`. It then marks the subclass as the app’s initial view controller in the `Main.storyboard` storyboard, and displays the browser view when launched.
 
 All document browser-based apps must also declare the document types that they can open. The sample code app declares support for text files in the project editor’s Info pane. For more information on setting the document type, see [`Setting up a document browser app`](setting-up-a-document-browser-app.md).
 

@@ -26,7 +26,7 @@ init(waitUntilResponsive: Bool)
 
 ## See Also
 
-- [class MXMetricManager](../MetricKit/MXMetricManager.md)
+- [class MXMetricManager](../MetricKit/MXMetricManager#4001121.md)
   The shared object that registers you to receive metrics, creates logs for custom metrics, and gives access to past reports.
 - [init()](xctapplicationlaunchmetric/init.md)
   Initializes a metric that records the time for an app to display its first frame to screen and complete all extended launch tasks.

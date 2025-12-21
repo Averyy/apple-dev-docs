@@ -28,8 +28,6 @@ init(stringLiteral: String)
 
 - [init()](filepath/init.md)
   Creates an empty, null-terminated path.
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](filepath/init(extendedgraphemeclusterliteral:).md)
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](filepath/init(unicodescalarliteral:).md)
 
 
 ---

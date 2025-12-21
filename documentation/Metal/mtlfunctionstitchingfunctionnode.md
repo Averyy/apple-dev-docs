@@ -23,20 +23,20 @@ class MTLFunctionStitchingFunctionNode
 
 When the Metal device object evaluates the function graph to compile the stitched function, it evaluates the nodes stored in the [`arguments`](mtlfunctionstitchingfunctionnode/arguments.md) property that it hasn’t already evaluated, and then calls the function specified by [`name`](mtlfunctionstitchingfunctionnode/name.md) to generate the node’s output.
 
-If the function has side effects on the input data, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property on other nodes to specify whether the Metal device object must evaluate this node first.
+If the function has side effects on the input data, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property on other nodes to specify whether the Metal device object needs to evaluate this node first.
 
 ## Topics
 
-### Initializing a Function Node
+### Initializing a function node
 - [init(name: String, arguments: [any MTLFunctionStitchingNode], controlDependencies: [MTLFunctionStitchingFunctionNode])](mtlfunctionstitchingfunctionnode/init(name:arguments:controldependencies:).md)
   Creates a new function node.
-### Configuring a Function Node
+### Configuring a function node
 - [var name: String](mtlfunctionstitchingfunctionnode/name.md)
   The name of the function to call.
 - [var arguments: [any MTLFunctionStitchingNode]](mtlfunctionstitchingfunctionnode/arguments.md)
   An ordered list of the nodes that provide the function’s arguments.
 - [var controlDependencies: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchingfunctionnode/controldependencies.md)
-  The list of nodes that must execute before executing the node.
+  The list of nodes that need to execute before executing the node.
 
 ## Relationships
 

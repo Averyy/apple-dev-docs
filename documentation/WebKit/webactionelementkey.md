@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: var
 
-A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
+A dictionary containing element information. See [`WebView`](webview-swift.class.md) for a description of the key-value pairs in this dictionary.
 
 **Availability**:
 - macOS 10.3+

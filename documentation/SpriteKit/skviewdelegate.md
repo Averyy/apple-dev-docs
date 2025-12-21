@@ -27,7 +27,7 @@ protocol SKViewDelegate : NSObjectProtocol
 
 By setting a SpriteKit view’s `delegate` with an object that implements [`SKViewDelegate`](skviewdelegate.md), you can precisely control the frame rate of a game or app. You may choose to do this to maintain a consistent frame rate for computationally intensive code or for special effects such as simulating cine film.
 
-The following Swift code shows an example of a class that implements the SpriteKit view delegate protocol to reduce the frame rate to a specified value. With each call of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md), it checks the time since the last render and if that value exceeds the required frame duration (`1 / fps`), the method returns [`true`](https://developer.apple.com/documentation/swift/true) and the frame is rendered.
+The following Swift code shows an example of a class that implements the SpriteKit view delegate protocol to reduce the frame rate to a specified value. With each call of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md), it checks the time since the last render and if that value exceeds the required frame duration (`1 / fps`), the method returns [`true`](https://developer.apple.com/documentation/Swift/true) and the frame is rendered.
 
 ```swift
 class ViewDelegate: NSObject, SKViewDelegate {
@@ -49,7 +49,7 @@ class ViewDelegate: NSObject, SKViewDelegate {
 }
 ```
 
-The return value of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) doesn’t change the speed of physics simulations and actions in a SpriteKit scene. However, if you return [`false`](https://developer.apple.com/documentation/swift/false), SpriteKit will skip updates and [`SKSceneDelegate`](skscenedelegate.md) methods are not called.
+The return value of [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) doesn’t change the speed of physics simulations and actions in a SpriteKit scene. However, if you return [`false`](https://developer.apple.com/documentation/Swift/false), SpriteKit will skip updates and [`SKSceneDelegate`](skscenedelegate.md) methods are not called.
 
 ## Topics
 

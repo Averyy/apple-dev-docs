@@ -27,7 +27,7 @@ This value is only available if you created the capture scope by calling the [`m
 ## See Also
 
 - [var label: String?](mtlcapturescope/label.md)
-  A string that identifies the capture scope.
+  A string that helps you identify the capture scope.
 - [var device: any MTLDevice](mtlcapturescope/device.md)
   The device object from which you created the capture scope.
 

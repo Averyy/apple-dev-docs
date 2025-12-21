@@ -3,15 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Opens a file descriptor for the specified relative path.
+Opens and returns a file descriptor for an asset file at the specified relative path.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func descriptor(for path: FilePath, searchingInAssetPackWithID assetPackID: Stri
 
 ## Mentions
 
-- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
 
 #### Return Value
 
@@ -44,6 +44,17 @@ All asset packs share the same namespace, so you can treat the overall collectio
 
 - `path`: The relative path.
 - `assetPackID`: The ID of the asset pack in which to search for the file. By default, all downloaded asset packs are searched.
+
+## See Also
+
+- [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
+  The asset packs that are available to download.
+- [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
+  Returns the asset pack with the given ID.
+- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md)
+  Returns the contents of an asset file at the specified relative path.
+- [func url(for: FilePath) throws -> URL](assetpackmanager/url(for:).md)
+  Returns a URL for the specified relative path.
 
 
 ---

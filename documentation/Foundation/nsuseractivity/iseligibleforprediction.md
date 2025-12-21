@@ -20,7 +20,7 @@ var isEligibleForPrediction: Bool { get set }
 
 #### Discussion
 
-To donate a user activity to Siri Shortcuts, set [`isEligibleForPrediction`](nsuseractivity/iseligibleforprediction.md) to [`true`](https://developer.apple.com/documentation/swift/true) and make the user activity current. To make the user activity current, call the activity’s [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method, or assign it to the [`userActivity`](https://developer.apple.com/documentation/UIKit/UIResponder/userActivity) property on a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object. For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts).
+To donate a user activity to Siri Shortcuts, set [`isEligibleForPrediction`](nsuseractivity/iseligibleforprediction.md) to [`true`](https://developer.apple.com/documentation/Swift/true) and make the user activity current. To make the user activity current, call the activity’s [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method, or assign it to the [`userActivity`](https://developer.apple.com/documentation/UIKit/UIResponder/userActivity) property on a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object. For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts).
 
 ## See Also
 

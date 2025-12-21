@@ -9,6 +9,8 @@ Create, read, write, and examine files and folders in the file system.
 ### File system operations
 - [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
   Prevent data loss and app crashes by interacting with the file system in a coordinated, asynchronous manner and by avoiding unnecessary disk I/O.
+- [Using the file system effectively](using-the-file-system-effectively.md)
+  Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 - [class FileManager](filemanager.md)
   A convenient interface to the contents of the file system, and the primary means of interacting with it.
 - [protocol FileManagerDelegate](filemanagerdelegate.md)
@@ -39,8 +41,8 @@ Create, read, write, and examine files and folders in the file system.
 
 - [Archives and Serialization](archives-and-serialization.md)
   Convert objects and values to and from property list, JSON, and other flat binary representations.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [Spotlight](spotlight.md)
   Search for files and other items on the local device, and index your app’s content for searching.
 - [iCloud](icloud.md)

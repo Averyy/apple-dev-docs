@@ -28,7 +28,7 @@ You can inspect an asset’s track groups by loading the value of its [`trackGro
 
 ## Topics
 
-### Getting Track ID Values
+### Getting track ID values
 - [var trackIDs: [NSNumber]](avassettrackgroup/trackids.md)
   The IDs of the tracks in the group.
 

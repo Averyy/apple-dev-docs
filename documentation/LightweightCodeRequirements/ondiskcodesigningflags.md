@@ -25,12 +25,6 @@ struct OnDiskCodeSigningFlags
 ### Structures
 - [OnDiskCodeSigningFlags.ValueSet](ondiskcodesigningflags/valueset.md)
   Code signing flags that can be set on code on disk.
-### Initializers
-- [init(from: any Decoder) throws](ondiskcodesigningflags/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](ondiskcodesigningflags/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Type Aliases
 - [OnDiskCodeSigningFlags.DataType](ondiskcodesigningflags/datatype.md)
   The basic input data type for this constraint: `OnDiskCodeSigningFlags.ValueSet`

@@ -25,7 +25,7 @@ var isPresentingGameCenter: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) when the player taps the access point control and [`false`](https://developer.apple.com/documentation/swift/false) when the player dismisses the Game Center dashboard. This is an observable property.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) when the player taps the access point control and [`false`](https://developer.apple.com/documentation/Swift/false) when the player dismisses the Game Center dashboard. This is an observable property.
 
 ## See Also
 

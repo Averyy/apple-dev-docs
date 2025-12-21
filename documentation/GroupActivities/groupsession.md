@@ -22,8 +22,8 @@ final class GroupSession<ActivityType> where ActivityType : GroupActivity
 ## Mentions
 
 - [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
-- [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
 
 #### Overview
 
@@ -61,8 +61,6 @@ When the user quits your app, or navigates away from the shared activity, call t
   The possible states of a session.
 - [let id: UUID](groupsession/id.md)
   The unique identifier of the current session.
-- [var description: String](groupsession/description.md)
-  A textual representation of this instance.
 ### Getting the participants
 - [var localParticipant: Participant](groupsession/localparticipant.md)
   The participant on the current device.
@@ -79,8 +77,6 @@ When the user quits your app, or navigates away from the shared activity, call t
   Posts an event to the system, which displays the information in the system UI.
 - [struct GroupSessionEvent](groupsessionevent.md)
   A session-related event that appears in the system UI.
-### Publishing changes
-- [var objectWillChange: ObservableObjectPublisher](groupsession/objectwillchange.md)
 ### Structures
 - [GroupSession.Event](groupsession/event.md)
   A session-related event to display in the system UI.
@@ -95,12 +91,6 @@ When the user quits your app, or navigates away from the shared activity, call t
 ### Instance Methods
 - [func postEvent(GroupSession<ActivityType>.Event)](groupsession/postevent(_:).md)
   Posts an event to the system, which displays the information in the system UI.
-### Type Aliases
-- [GroupSession.ObjectWillChangePublisher](groupsession/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
-### Default Implementations
-- [CustomStringConvertible Implementations](groupsession/customstringconvertible-implementations.md)
-- [ObservableObject Implementations](groupsession/observableobject-implementations.md)
 
 ## Relationships
 

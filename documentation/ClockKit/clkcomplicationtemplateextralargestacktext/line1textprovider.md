@@ -19,7 +19,7 @@ var line1TextProvider: CLKTextProvider { get set }
 
 Space for text is limited in this particular template so keep strings as short as possible.
 
-When the [`highlightLine2`](clkcomplicationtemplateextralargestacktext/highlightline2.md) property is [`false`](https://developer.apple.com/documentation/swift/false), a tint color is applied to this text. In multicolor environments, the text provider or template provides the tint color. In monochrome environments, the clock face provides the tint color.
+When the [`highlightLine2`](clkcomplicationtemplateextralargestacktext/highlightline2.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), a tint color is applied to this text. In multicolor environments, the text provider or template provides the tint color. In monochrome environments, the clock face provides the tint color.
 
 ## See Also
 

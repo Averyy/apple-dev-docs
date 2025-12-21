@@ -17,7 +17,7 @@ var resolvesAliases: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), dropping an alias on the panel or asking for filenames or URLs returns the resolved aliases. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). When this value is [`false`](https://developer.apple.com/documentation/swift/false), selecting an alias returns the alias instead of the file or directory it represents.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), dropping an alias on the panel or asking for filenames or URLs returns the resolved aliases. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). When this value is [`false`](https://developer.apple.com/documentation/Swift/false), selecting an alias returns the alias instead of the file or directory it represents.
 
 ## See Also
 

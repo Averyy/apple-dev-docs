@@ -29,29 +29,6 @@ When the framework observes a table in the physical environment during a scan, i
   A table top that resembles a coffee table.
 - [TableType.unidentified](tabletype/unidentified.md)
   An uncategorized table top.
-### Identifying a chair type
-- [var shortIdentifier: String](tabletype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a chair type
-- [static var parentCategory: CapturedElementCategory?](tabletype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a chair type
-- [init?(rawValue: String)](tabletype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](tabletype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [TableType.AllCases](tabletype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [TableType.RawValue](tabletype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [TableType]](tabletype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](tabletype/equatable-implementations.md)
-- [RawRepresentable Implementations](tabletype/rawrepresentable-implementations.md)
 
 ## Relationships
 

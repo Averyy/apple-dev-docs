@@ -21,10 +21,10 @@ protocol AVPlayerPlaybackCoordinatorDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Identifying Items
+### Identifying items
 - [func playbackCoordinator(AVPlayerPlaybackCoordinator, identifierFor: AVPlayerItem) -> String](avplayerplaybackcoordinatordelegate/playbackcoordinator(_:identifierfor:).md)
   Returns an identifier for a player item.
-### Retrieving Interstitial Time Ranges
+### Retrieving interstitial time ranges
 - [func playbackCoordinator(AVPlayerPlaybackCoordinator, interstitialTimeRangesFor: AVPlayerItem) -> [NSValue]](avplayerplaybackcoordinatordelegate/playbackcoordinator(_:interstitialtimerangesfor:).md)
   Asks the delegate for time ranges in a player item that don’t correspond to the primary content.
 

@@ -20,7 +20,7 @@ object AppStoreReviewAttachment
 - [object AppStoreReviewAttachment.Attributes](appstorereviewattachment/attributes-data.dictionary.md)
   Attributes that describe an App Store Review Attachments resource.
 - [object AppStoreReviewAttachment.Relationships](appstorereviewattachment/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

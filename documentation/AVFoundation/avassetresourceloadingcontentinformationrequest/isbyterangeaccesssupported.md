@@ -21,9 +21,9 @@ var isByteRangeAccessSupported: Bool { get set }
 
 #### Discussion
 
-Before finishing loading an [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) if it supports random access to arbitrary ranges of bytes of the resource.
+Before finishing loading an [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) if it supports random access to arbitrary ranges of bytes of the resource.
 
-If this property is not [`true`](https://developer.apple.com/documentation/swift/true) for resources that must be loaded incrementally, loading of the resource may fail. Such resources include anything that contains media data.
+If this property is not [`true`](https://developer.apple.com/documentation/Swift/true) for resources that must be loaded incrementally, loading of the resource may fail. Such resources include anything that contains media data.
 
 If byte range access is supported  portions of the resource can be requested more than once.
 

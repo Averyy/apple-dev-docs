@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The values in the vector represented as an affine transform.
+Returns the values in the vector as a `CGAffineTransformValue` structure.
 
 **Availability**:
 - iOS 5.0+
@@ -19,9 +19,9 @@ The values in the vector represented as an affine transform.
 var cgAffineTransformValue: CGAffineTransform { get }
 ```
 
-#### Discussion
+#### Return Value
 
-Reading this property creates a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) structure from the first six values in the vector.
+ Reading this property creates a `CGAffineTransformValue` structure from the first six values in the vector.
 
 ## See Also
 
@@ -36,13 +36,13 @@ Reading this property creates a [`CGAffineTransform`](https://developer.apple.co
 - [var z: CGFloat](civector/z.md)
   The value located in the third position in the vector.
 - [var w: CGFloat](civector/w.md)
-  The value located in the fourth position in the vector.
+  The value located in the forth position in the vector.
 - [var stringRepresentation: String](civector/stringrepresentation.md)
-  The string representation of the vector.
+  Returns a formatted string with all the values of a `CIVector`.
 - [var cgPointValue: CGPoint](civector/cgpointvalue.md)
-  The values in the vector as a Core Graphics point structure.
+  Returns the values in the vector as a `CGPoint` structure.
 - [var cgRectValue: CGRect](civector/cgrectvalue.md)
-  The values in the vector as a Core Graphics rectangle structure.
+  Returns the values in the vector as a `CGRect` structure.
 
 
 ---

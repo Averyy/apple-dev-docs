@@ -29,16 +29,11 @@ enum SerializationError
   An error that indicates that the package already exists at the URL.
 - [SerializationError.packageNotFound(_:)](serializationerror/packagenotfound(_:).md)
   An error that indicates that the package at specified URL was not found.
-- [var errorDescription: String?](serializationerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (SerializationError, SerializationError) -> Bool](serializationerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](serializationerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](serializationerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](serializationerror/equatable-implementations.md)
-- [Error Implementations](serializationerror/error-implementations.md)
-- [LocalizedError Implementations](serializationerror/localizederror-implementations.md)
 
 ## Relationships
 

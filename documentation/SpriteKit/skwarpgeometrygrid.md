@@ -22,8 +22,8 @@ class SKWarpGeometryGrid
 
 ## Mentions
 
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 
 #### Overview
 

@@ -34,12 +34,6 @@ Reduce or defer background work, like prefetching content over the network or up
   The thermal state is high.
 - [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
-  The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
-  The thermal state is high.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
-  The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 
 ---

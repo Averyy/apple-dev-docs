@@ -22,7 +22,7 @@ func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throw
 
 ## Mentions
 
-- [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
 #### Return Value
 

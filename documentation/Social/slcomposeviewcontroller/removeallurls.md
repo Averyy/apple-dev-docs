@@ -23,7 +23,7 @@ Returns a Boolean value that indicates whether the URLs were successfully remove
 
 #### Discussion
 
-If the view controller has already been presented to the user when [`removeAllURLs()`](slcomposeviewcontroller/removeallurls().md) is called, the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the URLS are not removed.
+If the view controller has already been presented to the user when [`removeAllURLs()`](slcomposeviewcontroller/removeallurls().md) is called, the method returns [`false`](https://developer.apple.com/documentation/Swift/false) and the URLS are not removed.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func mouseEntered(with event: NSEvent)
 
 #### Discussion
 
-If used after [`setOnMouseEntered(_:)`](nscursor/setonmouseentered(_:).md) has been called with an argument of [`true`](https://developer.apple.com/documentation/swift/true), [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) can make the receiver the current cursor.
+If used after [`setOnMouseEntered(_:)`](nscursor/setonmouseentered(_:).md) has been called with an argument of [`true`](https://developer.apple.com/documentation/Swift/true), [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) can make the receiver the current cursor.
 
 In your programs, you won’t invoke [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) explicitly. It’s only included in the class interface so you can override it.
 
@@ -28,14 +28,8 @@ For a more complete explanation, see [`Mouse-Tracking and Cursor-Update Events`]
 
 ## See Also
 
-- [class func pop()](nscursor/pop-swift.type.method.md)
-  Pops the current cursor off the top of the stack.
-- [func pop()](nscursor/pop-swift.method.md)
-  Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver’s class.
-- [func push()](nscursor/push.md)
-  Puts the receiver on top of the cursor stack and makes it the current cursor.
-- [func set()](nscursor/set.md)
-  Makes the receiver the current cursor.
+- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
+  Initializes the cursor with the specified image and hot spot.
 - [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)
   Specifies whether the receiver accepts [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) events.
 - [var isSetOnMouseEntered: Bool](nscursor/issetonmouseentered.md)

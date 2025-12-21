@@ -21,18 +21,10 @@ let modelParameters: MLRandomForestClassifier.ModelParameters
 
 ## See Also
 
-- [init(checkpoint: MLCheckpoint) throws](mlrandomforestclassifier/init(checkpoint:).md)
-  Creates a random forest classifier classifier  from a checkpoint.
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLRandomForestClassifier.ModelParameters) throws](mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-5nojh.md)
-  Creates a random forest classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLRandomForestClassifier.ModelParameters) throws](mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-4pxej.md)
-  Creates a Random Forest Classifier from the feature columns in the training data to predict the categories in the target column.
+- [var model: MLModel](mlrandomforestclassifier/model.md)
+  The Core ML model.
 - [MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
-- [var targetColumn: String](mlrandomforestclassifier/targetcolumn.md)
-  The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlrandomforestclassifier/featurecolumns.md)
-  The names of the columns you selected at initialization to train the classifier.
 
 
 ---

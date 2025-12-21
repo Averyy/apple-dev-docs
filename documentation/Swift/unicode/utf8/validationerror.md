@@ -6,13 +6,13 @@
 The kind and location of a UTF-8 encoding error.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -63,8 +63,6 @@ An overlong encoding of `NUL`, `0xC0 0x80`, is used in Java’s Modified UTF-8 b
 The range of the error reported follows the  algorithm in which each error is either one byte long or ends before the first byte that is disallowed. See “U+FFFD Substitution of Maximal Subparts” in the Unicode Standard. Unicode started recommending this algorithm in version 6 and is adopted by the W3C.
 
 The maximal subpart algorithm will produce a single multi-byte range for a truncated scalar (a multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly). For all other errors (including overlong encodings, surrogates, and invalid code points), it will produce an error per byte.
-
-// FIXME: without a checkAllErrors, we don’t have these classification distinctions, should we drop it, ensure we will do it, or what?
 
 Since overlong encodings, surrogates, and invalid code points are erroneous by the second byte (at the latest), the above definition produces the same ranges as defining such a sequence as a truncated scalar error followed by unexpected continuation byte errors. The more semantically-rich classification is reported.
 

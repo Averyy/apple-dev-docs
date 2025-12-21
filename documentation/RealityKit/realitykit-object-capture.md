@@ -19,9 +19,9 @@ In iOS 17 and macOS 12 and later, you can create 3D objects from photographs usi
   Implement a full scanning workflow for capturing objects on iOS devices.
 - [Building an object reconstruction app](building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
-- [Creating a Photogrammetry Command-Line App](creating_a_photogrammetry_command-line_app.md)
+- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using_object_capture_assets_in_realitykit.md)
+- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
 - [class PhotogrammetrySession](photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.
@@ -36,8 +36,6 @@ In iOS 17 and macOS 12 and later, you can create 3D objects from photographs usi
 
 ## See Also
 
-- [Designing RealityKit content with Reality Composer Pro](../visionOS/designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Diorama](../visionOS/diorama.md)
@@ -48,8 +46,8 @@ In iOS 17 and macOS 12 and later, you can create 3D objects from photographs usi
   Display a scene from Reality Composer Pro in visionOS.
 - [Reality Composer](realitykit-reality-composer.md)
   A visual editor for RealityKit AR scenes.
-- [USD Assets](realitykit-usd-assets.md)
-  Import and use 3D scenes by importing USD files.
+- [USD](../USD/USD.md)
+  An efficient and scalable way to represent 3D scenes.
 
 
 ---

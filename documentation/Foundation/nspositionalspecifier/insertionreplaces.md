@@ -17,7 +17,7 @@ var insertionReplaces: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if evaluation has been successful and the object to be inserted should actually replace the keyed, indexed object in the insertion container, instead of being inserted before it; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if evaluation has been successful and the object to be inserted should actually replace the keyed, indexed object in the insertion container, instead of being inserted before it; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

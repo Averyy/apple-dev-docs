@@ -26,10 +26,9 @@ class AVMetricPlayerItemVariantSwitchStartEvent
 - [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchstartevent/fromvariant.md)
 - [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchstartevent/loadedtimeranges-2mbm7.md)
 - [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchstartevent/tovariant.md)
-### Instance Properties
 - [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/audiorendition.md)
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
 - [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/videorendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
 
 ## Relationships
 
@@ -59,6 +58,7 @@ class AVMetricPlayerItemVariantSwitchStartEvent
   An event that represents a live streaming playlist resource request.
 - [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
+- [class AVMetricMediaRendition](avmetricmediarendition.md)
 
 
 ---

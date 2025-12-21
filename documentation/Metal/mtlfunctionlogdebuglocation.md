@@ -21,7 +21,7 @@ protocol MTLFunctionLogDebugLocation : NSObjectProtocol
 
 ## Topics
 
-### Inspecting the Location Details
+### Inspecting the location details
 - [var functionName: String?](mtlfunctionlogdebuglocation/functionname.md)
   The name of the shader function.
 - [var url: URL?](mtlfunctionlogdebuglocation/url.md)

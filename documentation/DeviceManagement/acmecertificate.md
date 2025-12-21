@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure Automated Certificate Management Environment (ACME) Certificate settings.
+The payload that configures Automated Certificate Management Environment (ACME) settings.
 
 **Availability**:
 - iOS 16.0+
@@ -19,13 +19,20 @@ The payload you use to configure Automated Certificate Management Environment (A
 object ACMECertificate
 ```
 
+## Mentions
+
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Validating a Managed Device Attestation](validating-a-managed-device-attestation-attestation.md)
+
 #### Discussion
 
 Specify `com.apple.security.acme` as the payload type.
 
-Use this payload to specify settings that allow the device to request a client certificate from an Automated Certificate Management Environment (ACME) server. The device generates an asymmetric key pair based upon the `KeyType`, `KeySize`, and `HardwareBound` fields. If attest is `true` it requests an attestation of the key and device properties. Then it communicates with the ACME server to authenticate the device, provide the attestation, and request a matching certificate based upon the `ClientIdentifier`, `Subject`, `SubjectAltName`, `UsageFlags`, and `ExtendedKeyUsage` fields. The ACME server issues a certificate and the device installs it in the keychain. Other payloads can reference the resulting client identity by the payload’s `PayloadUUID`.
+Use this payload to specify how the device requests a client certificate from an Automated Certificate Management Environment (ACME) server. Other payloads can reference the resulting client identity by the payload’s `PayloadUUID`.
 
-The device issues a new order request using the `ClientIdentifier` as the `permanent-identifier`. For compatibility, the ACME server needs to respond with a challenge type of `device-attest-01`. Then the client replies with a WebAuthn attestation statement.
+First the device generates an asymmetric key pair based upon the `KeyType`, `KeySize`, and `HardwareBound` fields. Then the device communicates with the ACME server. It requests a new order using the `ClientIdentifier` as the `permanent-identifier`. The ACME server responds with a challenge type of `device-attest-01`. If `Attest` is `true` the device requests an attestation of the key and device properties. Then it replies to the challenge with a WebAuthn attestation statement, and this contains the attestation if the device obtained one. The device submits a certificate signing request matching the key and containing the `ClientIdentifier`, `Subject`, `SubjectAltName`, `UsageFlags`, and `ExtendedKeyUsage` fields. The ACME server issues a certificate, and the device stores the resulting identity.
+
+For details on the content of the attestation provided to the ACME server, see the documentation of the `DevicePropertiesAttestation` key in the [`DeviceInformationResponse.QueryResponses`](deviceinformationresponse/queryresponses-data.dictionary.md)response. In the attestation certificate the value of the freshness code OID is the SHA-256 hash of the `token` from the `device-attest-01` challenge.
 
 ##### Acme Attestation Hardware Support
 
@@ -134,23 +141,23 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 ## See Also
 
 - [object ActiveDirectoryCertificate](activedirectorycertificate.md)
-  The payload you use to configure Active Directory Certificate settings.
+  The payload that configures Active Directory Certificate settings.
 - [object CertificatePEM](certificatepem.md)
-  The payload you use to configure a PEM-formatted certificate.
+  The payload that configures a PEM-formatted certificate.
 - [object CertificatePKCS1](certificatepkcs1.md)
-  The payload you use to configure a PKCS #1-formatted certificate.
+  The payload that configures a PKCS #1-formatted certificate.
 - [object CertificatePKCS12](certificatepkcs12.md)
-  The payload you use to configure a PKCS #12-formatted certificate.
+  The payload that configures a PKCS #12-formatted certificate.
 - [object CertificateRoot](certificateroot.md)
-  The payload you use to configure a root certificate.
+  The payload that configures a root certificate.
 - [object CertificatePreference](certificatepreference.md)
-  The payload you use to configure a certificate preference.
+  The payload that configures a certificate preference.
 - [object CertificateRevocation](certificaterevocation.md)
-  The payload you use to configure certificate revocation checking.
+  The payload that configures certificate revocation checking.
 - [object CertificateTransparency](certificatetransparency.md)
-  The payload you use to configure certificate transparency enforcement.
+  The payload that configures certificate transparency enforcement.
 - [object SCEP](scep.md)
-  The payload you use to configure Simple Certificate Enrollment Protocol (SCEP).
+  The payload that configures Simple Certificate Enrollment Protocol (SCEP) settings.
 
 
 ---

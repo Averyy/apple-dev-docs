@@ -67,8 +67,10 @@ You define the user interface that your app presents during normal operation wit
   The app’s white-point adaptivity style, enabled on devices with True Tone displays.
 - [UIViewGroupOpacity](information-property-list/uiviewgroupopacity.md)
   A Boolean value that indicates whether Core Animation sublayers inherit the opacity of their superlayer.
-- [UIRequiresFullScreen](information-property-list/uirequiresfullscreen.md)
-  A Boolean value that indicates whether an iPad app is capable of sharing the screen with other apps.
+- [UIRequiresFullScreenIgnoredStartingWithVersion](information-property-list/uirequiresfullscreenignoredstartingwithversion.md)
+  A string value that specifies a system version after which the system ignores the requires full screen key.
+- [UISupportsAssistiveAccess](information-property-list/uisupportsassistiveaccess.md)
+  A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access.
 - [UISupportsFullScreenInAssistiveAccess](information-property-list/uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
 - [NSPrefersDisplaySafeAreaCompatibilityMode](information-property-list/nsprefersdisplaysafeareacompatibilitymode.md)
@@ -91,6 +93,9 @@ You define the user interface that your app presents during normal operation wit
   The status bar tint.
 - [UIViewControllerBasedStatusBarAppearance](information-property-list/uiviewcontrollerbasedstatusbarappearance.md)
   A Boolean value that indicates whether the system bases the appearance of the status bar on the style preferred by the current view controller.
+### Text fields
+- [NSAutoFillRequiresTextContentTypeForOneTimeCodeOnMac](information-property-list/nsautofillrequirestextcontenttypeforonetimecodeonmac.md)
+  A Boolean value that indicates whether text fields receive AutoFill of one-time codes only if they adopt the suitable content type.
 ### Pointer interactions
 - [UIApplicationSupportsIndirectInputEvents](information-property-list/uiapplicationsupportsindirectinputevents.md)
   A Boolean value indicating that the app generally supports indirect input mechanisms.
@@ -121,9 +126,16 @@ You define the user interface that your app presents during normal operation wit
   A Boolean value indicating whether a Quick Look app’s  generator can handle concurrent thumbnail and preview requests.
 - [QLThumbnailMinimumSize](information-property-list/qlthumbnailminimumsize.md)
   The minimum size, in points, along one dimension of thumbnails for a Quick Look app’s generator.
+### Automatic observation tracking
+- [NSObservationTrackingEnabled](information-property-list/nsobservationtrackingenabled.md)
+  A Boolean value that indicates whether the system automatically tracks changes to observable objects in macOS 15.
+- [UIObservationTrackingEnabled](information-property-list/uiobservationtrackingenabled.md)
+  A Boolean value that indicates whether the system automatically tracks changes to observable objects in iOS 18.
 ### Deprecated keys
 - [UILaunchImages](information-property-list/uilaunchimages.md)
   A dictionary containing information about launch images.
+- [UIRequiresFullScreen](information-property-list/uirequiresfullscreen.md)
+  A Boolean value that indicates whether the system puts an iPad app into a compatibility mode that opts the app out of multitasking and dynamic resizing.
 
 ## See Also
 

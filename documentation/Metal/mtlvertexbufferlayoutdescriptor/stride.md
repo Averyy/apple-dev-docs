@@ -29,6 +29,8 @@ Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://
   The circumstances under which the vertex and its attributes are presented to the vertex function.
 - [var stepRate: Int](mtlvertexbufferlayoutdescriptor/steprate.md)
   The interval at which the vertex and its attributes are presented to the vertex function.
+- [enum MTLVertexStepFunction](mtlvertexstepfunction.md)
+  The frequency with which the vertex function or post-tessellation vertex function fetches attribute data.
 
 
 ---

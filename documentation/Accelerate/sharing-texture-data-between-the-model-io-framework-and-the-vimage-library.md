@@ -60,7 +60,7 @@ skyGenerator.update()
 
 ##### Create the Composite Image
 
-The [`texelDataWithTopLeftOrigin()`](https://developer.apple.com/documentation/ModelIO/MDLTexture/texelDataWithTopLeftOrigin()) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) layout. The code passes the texel data to the doc://com.apple.documentation/foundation/data/3139154-withunsafebytes function to work with the underlying bytes of the data’s contiguous storage.
+The [`texelDataWithTopLeftOrigin()`](https://developer.apple.com/documentation/ModelIO/MDLTexture/texelDataWithTopLeftOrigin()) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](https://developer.apple.com/documentation/Foundation/Data/withUnsafeBytes(_:)) function to work with the underlying bytes of the data’s contiguous storage.
 
 ```swift
 let img = skyGenerator.texelDataWithTopLeftOrigin()?.withUnsafeBytes { skyData in

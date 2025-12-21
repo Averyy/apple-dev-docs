@@ -26,24 +26,6 @@ enum CredentialSessionWindowSceneEvent
   The user performs a gesture, such as double-pressing the side button, to present an NFC display.
 - [CredentialSessionWindowSceneEvent.readerDetected](credentialsessionwindowsceneevent/readerdetected.md)
   The eligible device detects the RF field of an NFC reader.
-### Describing the event
-- [var description: String](credentialsessionwindowsceneevent/description.md)
-  A textual representation of this instance.
-### Encoding and decoding
-- [init(from: any Decoder) throws](credentialsessionwindowsceneevent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](credentialsessionwindowsceneevent/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](credentialsessionwindowsceneevent/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](credentialsessionwindowsceneevent/hashvalue.md)
-  The hash value.
-### Comparing events
-- [static func == (CredentialSessionWindowSceneEvent, CredentialSessionWindowSceneEvent) -> Bool](credentialsessionwindowsceneevent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](credentialsessionwindowsceneevent/equatable-implementations.md)
 
 ## Relationships
 

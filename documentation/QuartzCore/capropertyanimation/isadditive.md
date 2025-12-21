@@ -21,7 +21,7 @@ var isAdditive: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the value specified by the animation will be added to the current render tree value of the property to produce the new render tree value. The addition function is type-dependent, e.g. for affine transforms the two matrices are concatenated. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the value specified by the animation will be added to the current render tree value of the property to produce the new render tree value. The addition function is type-dependent, e.g. for affine transforms the two matrices are concatenated. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

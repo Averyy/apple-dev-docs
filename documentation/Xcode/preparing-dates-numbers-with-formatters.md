@@ -51,7 +51,7 @@ To format a date to a specific style, create your own custom date style includin
 For example, to create a date that includes only the month, day, and year:
 
 1. Create an instance of the `Date` object you want to format.
-2. Create a [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle) structure or use the doc://com.apple.documentation/documentation/foundation/date/formatstyle/3798884-datetime factory variable, and chain together the properties you want to display in successive function calls.
+2. Create a [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle) structure or use the [`dateTime`](https://developer.apple.com/documentation/Foundation/FormatStyle/dateTime) factory variable, and chain together the properties you want to display in successive function calls.
 3. Then pass that `Date.FormatStyle` structure as an input into the the [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Date/formatted(_:)) function on the date object.
 
 ```swift
@@ -103,7 +103,7 @@ let fileNameFormat = date.formatted(.iso8601.year().month().day().dateSeparator(
 
 If you want to create a localizable string for a number (such as [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal), or [`Float`](https://developer.apple.com/documentation/Swift/Float)), call `formatted()` or `formatted(_:)` on the number instance, along with the format style to display.
 
-For example, to create a formatted version of an `Int`, call the doc://com.apple.documentation/documentation/swift/int32/formatted() function on the number.
+For example, to create a formatted version of an `Int`, call the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) function on the number.
 
 ```swift
 let value = 12345
@@ -128,7 +128,7 @@ let fractionFormatted = fraction.formatted(.percent)
 // "25%"
 ```
 
-To display a number using scientific notation, call [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) on the number to display using the [`scientific`](https://developer.apple.com/documentation/Foundation/NumberFormatStyleConfiguration/Notation/scientific), [`notation(_:)`](https://developer.apple.com/documentation/Foundation/FloatingPointFormatStyle/notation(_:)), and doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/3870086-number format styles.
+To display a number using scientific notation, call [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) on the number to display using the [`scientific`](https://developer.apple.com/documentation/Foundation/NumberFormatStyleConfiguration/Notation/scientific), [`notation(_:)`](https://developer.apple.com/documentation/Foundation/FloatingPointFormatStyle/notation(_:)), and [`number`](https://developer.apple.com/documentation/Foundation/FormatStyle/number-3luf2) format styles.
 
 ```swift
 let scientific = 42e9
@@ -231,7 +231,7 @@ sizes.formatted(.list(type: .and, width: .short))
 // "small, medium, & large"
 ```
 
-You can also create lists using different formatting styles by calling the doc://com.apple.documentation/documentation/foundation/listformatstyle/3796585-list function along with specific list format styles.
+You can also create lists using different formatting styles by calling the [`list(memberStyle:type:width:)`](https://developer.apple.com/documentation/Foundation/FormatStyle/list(memberStyle:type:width:)) function along with specific list format styles.
 
 ```swift
 // A list of numbers formatted as percentages.
@@ -274,7 +274,7 @@ waterTemperature.formatted()
 // "61.2°F"
 ```
 
-To customize the output, call the [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) function on the measurement using the doc://com.apple.documentation/documentation/foundation/stringstyle/3870200-measurement factory method to create the format and style you want.
+To customize the output, call the [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) function on the measurement using the [`measurement(width:usage:hidesScaleName:numberFormatStyle:)`](https://developer.apple.com/documentation/Foundation/FormatStyle/measurement(width:usage:hidesScaleName:numberFormatStyle:)) factory method to create the format and style you want.
 
 ```swift
 // Custom display options for a unit of measure.
@@ -290,7 +290,7 @@ distanceToMoon.formatted(.measurement(width: .narrow))
 
 To format dates and numbers in SwiftUI, use the `format` initializers on SwiftUI view controls to customize how those strings display.
 
-For example, here is a SwiftUI view that displays three different localizable formats of `Date` using the [`init(_:format:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:format:)-2p5e7) initializer from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view.
+For example, here is a SwiftUI view that displays three different localizable formats of `Date` using the [`init(_:format:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:format:)) initializer from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view.
 
 ```swift
 @State private var myDate = Date.now

@@ -41,8 +41,12 @@ Prints...
 
 ## See Also
 
+- [init(repeating:count:)](mluntypedcolumn/init(repeating:count:).md)
+  Creates a new column with a repeating value.
 - [init<T>(repeating: T, count: Int)](mluntypedcolumn/init(repeating:count:)-7ttf1.md)
   Creates a new column with a repeating value.
+- [init(_:)](mluntypedcolumn/init(_:).md)
+  Creates a new column of integers from a given closed range.
 - [init(Range<Int>)](mluntypedcolumn/init(_:)-33tcv.md)
   Creates a new column of integers from a given range.
 - [init(ClosedRange<Int>)](mluntypedcolumn/init(_:)-9no5.md)

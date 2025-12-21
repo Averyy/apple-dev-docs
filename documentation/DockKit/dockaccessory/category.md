@@ -24,22 +24,6 @@ enum Category
   The dock accessory is a tracking stand.
 - [var debugDescription: String](dockaccessory/category/debugdescription.md)
   The text description of the dock accessory state.
-### Operators
-- [static func == (DockAccessory.Category, DockAccessory.Category) -> Bool](dockaccessory/category/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](dockaccessory/category/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/category/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](dockaccessory/category/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](dockaccessory/category/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/category/equatable-implementations.md)
 
 ## Relationships
 

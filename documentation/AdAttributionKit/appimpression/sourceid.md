@@ -22,6 +22,25 @@ The `sourceID` is also known as the . Ad networks and developers define its mean
 
 > **Note**: A postback report represents this integer as a string in the `source-identifier` parameter in the payload of the JSON Web Signature (JWS). For more details about the parameters of a postback, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
 
+## See Also
+
+- [var adNetworkID: String](appimpression/adnetworkid.md)
+  The advertising network ID.
+- [var advertisedItemID: UInt64](appimpression/advertiseditemid.md)
+  The advertised item’s ID.
+- [var compactJWSRepresentation: String](appimpression/compactjwsrepresentation.md)
+  A string that presents the compact representation of the impression’s JSON Web Signature (JWS).
+- [var eligibleForReengagement: Bool](appimpression/eligibleforreengagement.md)
+  A Boolean value that indicates whether this impression is eligible for reengagement.
+- [var id: UUID](appimpression/id.md)
+  The impression’s unique ID.
+- [var keyID: String](appimpression/keyid.md)
+  The JSON Web Signature (JWS) key ID.
+- [var publisherItemID: UInt64](appimpression/publisheritemid.md)
+  The publisher app’s item ID.
+- [var timestamp: Date](appimpression/timestamp.md)
+  The impression’s timestamp, in milliseconds since 1970.
+
 
 ---
 

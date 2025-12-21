@@ -22,30 +22,24 @@ struct Output<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating an Output Publisher
+### Creating an output publisher
 - [init(upstream: Upstream, range: CountableRange<Int>)](publishers/output/init(upstream:range:).md)
   Creates a publisher that publishes elements specified by a range.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output.Output](publishers/output/output.md)
   The kind of values published by this publisher.
 - [Publishers.Output.Failure](publishers/output/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/output/upstream.md)
   The publisher from which this publisher receives its elements.
 - [let range: CountableRange<Int>](publishers/output/range.md)
   The range of elements to publish.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Output<Upstream>, Publishers.Output<Upstream>) -> Bool](publishers/output/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/output/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-output-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/output/equatable-implementations.md)
-- [Publisher Implementations](publishers/output/publisher-implementations.md)
 
 ## Relationships
 

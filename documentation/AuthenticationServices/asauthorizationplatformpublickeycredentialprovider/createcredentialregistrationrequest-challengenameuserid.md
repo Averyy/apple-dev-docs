@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: method
 
-Creates an assertion request with a challenge, name, and user ID.
+Creates a registration request with a challenge, name, and user ID.
 
 **Availability**:
 - iOS 15.0+
@@ -35,6 +35,7 @@ A public key credential registration request.
   The domain name of the service to register or authorize against.
 - [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialassertionrequest(challenge:).md)
   Creates an assertion request with a challenge.
+- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest(challenge:name:userid:requeststyle:).md)
 
 
 ---

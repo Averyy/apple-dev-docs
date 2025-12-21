@@ -28,22 +28,21 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](avplayerinterst
 
 ## Topics
 
-### Creating an Event Controller
+### Creating an event controller
 - [init(primaryPlayer: AVPlayer)](avplayerinterstitialeventcontroller/init(primaryplayer:).md)
   Creates an event controller with a player item.
-### Configuring the Event Schedule
+### Configuring the event schedule
 - [var events: [AVPlayerInterstitialEvent]!](avplayerinterstitialeventcontroller/events.md)
   The current schedule of interstitial events.
 - [func cancelCurrentEvent(withResumptionOffset: CMTime)](avplayerinterstitialeventcontroller/cancelcurrentevent(withresumptionoffset:).md)
   Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
-### Instance Properties
+- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
+  Causes the playback of the currently playing interstital event to be abandoned.
+### Accessing strings
 - [var localizedStringsBundle: Bundle?](avplayerinterstitialeventcontroller/localizedstringsbundle.md)
   The bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 - [var localizedStringsTableName: String?](avplayerinterstitialeventcontroller/localizedstringstablename.md)
   The name of the table in the bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
-### Instance Methods
-- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
-  Causes the playback of the currently playing interstital event to be abandoned.
 
 ## Relationships
 

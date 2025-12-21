@@ -11,7 +11,7 @@ The stroke color of a line.
 ## Declaration
 
 ```swift
-attribute string strokeColor;
+strokeColor?: string;
 ```
 
 #### Discussion

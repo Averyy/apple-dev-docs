@@ -6,9 +6,9 @@
 Initialize an element that is constituted of an image, title and subtitle. Only image is required while the two others can be omitted.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

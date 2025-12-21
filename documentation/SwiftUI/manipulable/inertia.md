@@ -6,7 +6,7 @@
 Describes inertia of a view that defines how much a view resists being manipulated.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

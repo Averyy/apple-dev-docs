@@ -5,9 +5,6 @@
 
 An atom that specifies a time offset from the start of the tween media sample to the start of the tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 For a tween atom in a tween track of a QuickTime movie, specifies a time offset from the start of the tween media sample to the start of the tween atom. The time units are the units used for the tween track.

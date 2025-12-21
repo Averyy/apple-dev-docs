@@ -15,6 +15,10 @@
 var isMixdown: Bool { get set }
 ```
 
+#### Discussion
+
+True if this description is a mono or stereo mix of the tapped device’s channels.
+
 
 ---
 

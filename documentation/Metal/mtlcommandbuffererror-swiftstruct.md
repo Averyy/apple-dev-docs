@@ -21,11 +21,11 @@ struct MTLCommandBufferError
 
 ## Topics
 
-### Errors Codes
+### Errors codes
 - [static var none: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/none.md)
   An error code that represents the absence of any problems.
 - [static var timeout: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [static var pageFault: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
 - [static var notPermitted: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/notpermitted.md)
@@ -46,7 +46,7 @@ struct MTLCommandBufferError
   An error code that indicates the Metal framework has an internal problem.
 - [MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/code.md)
   Error codes that indicate why a GPU is unable to finish running a command buffer.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtlcommandbuffererror-swift.struct/errordomain.md)
   The current command buffer error domain.
 - [let MTLCommandBufferErrorDomain: String](mtlcommandbuffererrordomain.md)
@@ -67,7 +67,7 @@ struct MTLCommandBufferError
 
 ## See Also
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 - [protocol MTLCommandQueue](mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.

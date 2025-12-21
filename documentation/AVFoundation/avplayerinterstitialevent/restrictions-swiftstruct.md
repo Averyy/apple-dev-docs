@@ -27,7 +27,7 @@ struct Restrictions
   A restriction that indicates the event doesn’t allow seeking forward within an interstitial item.
 - [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct/requiresplaybackatpreferredrateforadvancement.md)
   A restriction that indicates the event doesn’t allow advancing the current time within an interstitial item.
-### Initializing a Restriction
+### Initializing a restriction
 - [init(rawValue: UInt)](avplayerinterstitialevent/restrictions-swift.struct/init(rawvalue:).md)
   Creates a restriction with an integer.
 

@@ -24,7 +24,7 @@ class let batteryStateDidChangeNotification: NSNotification.Name
 
 #### Discussion
 
-For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](uidevice/isbatterymonitoringenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](uidevice/isbatterymonitoringenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You can obtain the battery state by getting the value of the [`batteryState`](uidevice/batterystate-swift.property.md) property.
 

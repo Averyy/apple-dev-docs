@@ -4,7 +4,7 @@
 **Kind**: init  
 **Required**: Yes
 
-Creates a new app extension.
+Initializes the app extension and prepares it to run.
 
 **Availability**:
 - iOS 16.0+

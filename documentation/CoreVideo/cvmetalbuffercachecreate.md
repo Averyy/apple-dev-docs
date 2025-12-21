@@ -21,6 +21,10 @@ func CVMetalBufferCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFDi
 
 Returns kCVReturnSuccess on success
 
+#### Discussion
+
+Creates a new Buffer Cache.
+
 ## Parameters
 
 - `allocator`: The CFAllocatorRef to use for allocating the cache.  May be NULL.

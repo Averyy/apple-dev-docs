@@ -14,10 +14,10 @@ If you use source control to work on code with collaborators or to manage multip
 
 After you complete work in a feature or bug fix branch, you merge your changes into your main development or production branch. Alternatively, you merge other updates from your main development or production branch into your feature or bug fix branch to resolve conflicts or to sync your work with the latest updates and ensure everything functions appropriately before merging back into your main development or production branch.
 
-1. Open the Source Control navigator.
-2. In the Repositories navigator, expand your repository and the Branches folder.
-3. Select the branch you want to merge into, and then Control-click and choose Switch to make that branch the current branch.
-4. Select the branch you want to merge from, and then Control-click and choose “Merge [] into []”.
+1. Open the Source Control navigator and select Repositories.
+2. In the Repositories navigator, expand your repository and the Branches or Remotes folder.
+3. To make the branch you want to merge into the current branch, Control-click it and choose Switch.
+4. Control-click the branch you want to merge from and choose “Merge [] into []”.
 
 If there are no conflicts, Xcode completes the merge.
 
@@ -25,11 +25,11 @@ If there are no conflicts, Xcode completes the merge.
 
 In a source control repository, a  occurs when two commits have incompatible changes and Git can’t merge the changes automatically. For example, a conflict might occur when two developers change the same lines in the same source file.
 
-When you attempt to merge changes in Xcode, if there are conflicts, Xcode presents a comparison view for you to review and resolve the conflicts.
+If there are conflicts when you attempt to merge changes in Xcode, Xcode presents a comparison view for you to review and resolve the conflicts.
 
-![The Xcode merge conflict view showing a list of files to merge and highlighting the file with a conflict. The view shows the conflict and the button you use to select a resolution for it. The view also highlights the buttons to navigate between conflicts in a file.](https://docs-assets.developer.apple.com/published/ebd9e5af50ccc49e115840f991ed6f82/combining-code-changes-in-a-source-control-repository-2%402x.png)
+![The Xcode merge conflict view showing a list of files to merge and highlighting the file with a conflict. The view shows the conflict and the button you use to select a resolution for it. The view also highlights the options to navigate between conflicts in a file.](https://docs-assets.developer.apple.com/published/e0ce932cdaeac8afdbeb8d36974c762e/combining-code-changes-in-a-source-control-repository-2%402x.png)
 
-To resolve a conflict, click the numbered change for that conflict and select which option you want to use to resolve it:
+To resolve a conflict, click the question mark (?) for that conflict (that appears in the gutter between the left and right versions of the file) and select which option you want to use to resolve it:
 
 - Choose Left
 - Choose Right
@@ -41,8 +41,8 @@ After you choose a resolution for each conflict, Xcode enables the Merge button.
 ## See Also
 
 - [Organizing your code changes with source control](organizing-your-code-changes-with-source-control.md)
-  Streamline your collaboration workflow by managing your Xcode project’s features and releases with Git branches and tags.
-- [Configuring source control preferences in Xcode](configuring-source-control-preferences-in-xcode.md)
+  Use Git branches and tags to streamline your collaboration and manage features and releases.
+- [Configuring source control in Xcode](configuring-source-control-in-xcode.md)
   Customize the default Xcode Settings for connecting to Git repositories, applying code changes, and more options for configuring source control.
 
 

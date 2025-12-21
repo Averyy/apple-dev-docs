@@ -15,8 +15,8 @@ Construct and manage a graphical, event-driven user interface for your iOS, iPad
 
 ## Mentions
 
-- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
 - [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
+- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
 
 #### Overview
 
@@ -113,9 +113,9 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   The UIKit framework defines data types that are used in multiple places throughout the framework.
 - [UIKit Functions](uikit-functions.md)
   The UIKit framework defines a number of functions, many of them used in graphics and drawing operations.
-### Structures
-- [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
-  Defines a text transformation that can affect the visual appearance of a string.
+### Classes
+- [class UIColorEffect](uicoloreffect.md)
+  A visual effect that applies a solid color background.
 
 
 ---

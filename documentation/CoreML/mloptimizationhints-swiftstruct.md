@@ -20,14 +20,17 @@ struct MLOptimizationHints
 
 ## Topics
 
-### Initializers
+### Creating optimization hints
 - [init()](mloptimizationhints-swift.struct/init.md)
-### Instance Properties
+  Construct an MLOptimizationHints
+### Getting the reshape frequency
 - [var reshapeFrequency: MLOptimizationHints.ReshapeFrequency](mloptimizationhints-swift.struct/reshapefrequency-swift.property.md)
+  The anticipated reshape frequency
+- [MLOptimizationHints.ReshapeFrequency](mloptimizationhints-swift.struct/reshapefrequency-swift.enum.md)
+  The anticipated frequency of changing input shapes.
+### Getting the specialization strategy
 - [var specializationStrategy: MLOptimizationHints.SpecializationStrategy](mloptimizationhints-swift.struct/specializationstrategy-swift.property.md)
   Optimization strategy for the model specialization.
-### Enumerations
-- [MLOptimizationHints.ReshapeFrequency](mloptimizationhints-swift.struct/reshapefrequency-swift.enum.md)
 - [MLOptimizationHints.SpecializationStrategy](mloptimizationhints-swift.struct/specializationstrategy-swift.enum.md)
   The optimization strategy for the model specialization.
 

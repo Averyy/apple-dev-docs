@@ -23,9 +23,9 @@ var position: CGPoint { get set }
 ## Mentions
 
 - [About SpriteKit Coordinate Systems](about-spritekit-coordinate-systems.md)
+- [About Node Drawing Order](about-node-drawing-order.md)
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
 - [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
-- [About Node Drawing Order](about-node-drawing-order.md)
 - [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
 
 #### Discussion

@@ -32,7 +32,7 @@ The data for both the selected and latest versions appear to the right of the gr
 
 Xcode compares your app’s launch time metrics with other sources, including metrics from similar apps and historical data from your app. If your app has sufficient metrics data available and Xcode determines that the launch time metrics for the current version of your app are greater than the values from other sources, it displays a recommended value for the metric as a dashed line on the histogram in the Xcode Organizer.
 
-> **Note**:  In Xcode 17 Beta 1, metric recommendations are available for the app launch time metric.
+> **Note**:  In Xcode 26, metric recommendations are available for the app launch time metric.
 
 ##### Read Data for Smart Insights
 

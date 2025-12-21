@@ -21,11 +21,11 @@ optional func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecogni
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) (the default) to tell the gesture recognizer to proceed with interpreting touches, [`false`](https://developer.apple.com/documentation/swift/false) to prevent it from attempting to recognize its gesture.
+[`true`](https://developer.apple.com/documentation/Swift/true) (the default) to tell the gesture recognizer to proceed with interpreting touches, [`false`](https://developer.apple.com/documentation/Swift/false) to prevent it from attempting to recognize its gesture.
 
 #### Discussion
 
-This method is called when a gesture recognizer attempts to transition out of the [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md) state. Returning [`false`](https://developer.apple.com/documentation/swift/false) causes the gesture recognizer to transition to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state.
+This method is called when a gesture recognizer attempts to transition out of the [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md) state. Returning [`false`](https://developer.apple.com/documentation/Swift/false) causes the gesture recognizer to transition to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state.
 
 ## Parameters
 

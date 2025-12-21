@@ -6,17 +6,17 @@ Configure device zooming behavior and inspect hardware capabilities.
 
 ## Topics
 
-### Adjusting Zoom
+### Adjusting zoom
 - [var videoZoomFactor: CGFloat](avcapturedevice/videozoomfactor.md)
   A value that controls the cropping and enlargement of images captured by the device.
 - [func ramp(toVideoZoomFactor: CGFloat, withRate: Float)](avcapturedevice/ramp(tovideozoomfactor:withrate:).md)
   Begins a smooth transition from the current zoom factor to another.
 - [func cancelVideoZoomRamp()](avcapturedevice/cancelvideozoomramp.md)
   Smoothly ends a zoom transition in progress.
-### Observing Zoom
+### Observing zoom
 - [var isRampingVideoZoom: Bool](avcapturedevice/isrampingvideozoom.md)
   A Boolean value that indicates whether a zoom transition is in progress.
-### Inspecting Zoom Factors
+### Inspecting zoom factors
 - [var minAvailableVideoZoomFactor: CGFloat](avcapturedevice/minavailablevideozoomfactor.md)
   The minimum zoom factor allowed in the current capture configuration.
 - [var maxAvailableVideoZoomFactor: CGFloat](avcapturedevice/maxavailablevideozoomfactor.md)
@@ -27,7 +27,7 @@ Configure device zooming behavior and inspect hardware capabilities.
   The video zoom factor at which a dual camera device can automatically switch between cameras.
 - [var displayVideoZoomFactorMultiplier: CGFloat](avcapturedevice/displayvideozoomfactormultiplier.md)
   A video zoom factor multiplier to use when displaying zoom information in a user interface.
-### Enabling Geometric Distortion Correction
+### Enabling geometric distortion correction
 - [var isGeometricDistortionCorrectionSupported: Bool](avcapturedevice/isgeometricdistortioncorrectionsupported.md)
   A Boolean value that indicates whether this device supports geometric distortion correction.
 - [var isGeometricDistortionCorrectionEnabled: Bool](avcapturedevice/isgeometricdistortioncorrectionenabled.md)
@@ -49,7 +49,7 @@ Configure device zooming behavior and inspect hardware capabilities.
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.

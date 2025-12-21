@@ -46,7 +46,7 @@ To use the type-safe API, import `CoreImage.CIFilterBuiltins`:
 #import <CoreImage/CIFilterBuiltins.h>
 ```
 
-The type-safe approach returns a non-optional filter. Because the returned filter conforms to the relevant protocol—for example, [`CIFalseColor`](cifalsecolor.md) in the case of [`falseColorFilter`](cifilter-swift.class/falsecolorfilter.md)—the parameters are available as properties. The following creates and applies a false color filter:
+The type-safe approach returns a non-optional filter. Because the returned filter conforms to the relevant protocol—for example, [`CIFalseColor`](cifalsecolor.md) in the case of [`falseColor()`](cifilter-swift.class/falsecolor().md)—the parameters are available as properties. The following creates and applies a false color filter:
 
 ```swift
 - (CIImage *) falseColorImage:(CIImage*) inputImage {
@@ -83,7 +83,7 @@ Don’t use auto-synthesized instance variables, because their names are automat
 
 `@synthesize inputMyParameter;`
 
-- If using manual reference counting, don’t release input parameter instance variables in your [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) method implementation. The [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) implementation in the `CIFilter` class uses [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) to automatically set the values of all input parameters to `nil`.
+- If using manual reference counting, don’t release input parameter instance variables in your [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method implementation. The [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) implementation in the `CIFilter` class uses [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) to automatically set the values of all input parameters to `nil`.
 
 ## Topics
 
@@ -166,7 +166,7 @@ Don’t use auto-synthesized instance variables, because their names are automat
   Returns a filter view for the filter.
 ### Applying system tone mapping modes
 - [struct CIDynamicRangeOption](cidynamicrangeoption.md)
-  An enum string type that your code can use to select different System Tone Mapping modes. These options are consistent with the analogous options available in Core Graphics, Core Animation, AppKit, UIKit, and SwiftUI, In Core Image, this option can be set on the `CISystemToneMap` filter.
+  An enum string type that your code can use to select different System Tone Mapping modes.
 ### Constants
 - [Filter Attribute Keys](filter-attribute-keys.md)
   Attributes for a filter and its parameters.
@@ -203,6 +203,18 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [class func filterArray(fromSerializedXMP: Data, inputImageExtent: CGRect, error: NSErrorPointer) -> [CIFilter]](cifilter-swift.class/filterarray(fromserializedxmp:inputimageextent:error:).md)
   Returns an array of filter objects de-serialized from XMP data.
 - [class func supportedRawCameraModels() -> [String]!](cifilter-swift.class/supportedrawcameramodels.md)
+### Type methods
+- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](cifilter-swift.class/areaalphaweightedhistogram.md)
+- [class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed](cifilter-swift.class/areaboundsred.md)
+- [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](cifilter-swift.class/maximumscaletransform.md)
+- [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](cifilter-swift.class/tonemapheadroom.md)
+### Type Methods
+- [class func areaAverageMaximumRed() -> any CIFilter & CIAreaAverageMaximumRed](cifilter-swift.class/areaaveragemaximumred.md)
+- [class func blurredRoundedRectangleGenerator() -> any CIFilter & CIBlurredRoundedRectangleGenerator](cifilter-swift.class/blurredroundedrectanglegenerator.md)
+- [class func distanceGradientFromRedMask() -> any CIFilter & CIDistanceGradientFromRedMask](cifilter-swift.class/distancegradientfromredmask.md)
+- [class func roundedQRCodeGenerator() -> any CIFilter & CIRoundedQRCodeGenerator](cifilter-swift.class/roundedqrcodegenerator.md)
+- [class func signedDistanceGradientFromRedMask() -> any CIFilter & CISignedDistanceGradientFromRedMask](cifilter-swift.class/signeddistancegradientfromredmask.md)
+- [class func systemToneMap() -> any CIFilter & CISystemToneMap](cifilter-swift.class/systemtonemap.md)
 
 ## Relationships
 
@@ -226,9 +238,9 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [class CIRAWFilter](cirawfilter.md)
   A filter subclass that produces an image by manipulating RAW image sensor data from a digital camera or scanner.
 - [class CIColor](cicolor.md)
-  The component values defining a color in a specific color space.
+  The Core Image class that defines a color object.
 - [class CIVector](civector.md)
-  A container for coordinate values, direction vectors, matrices, and other non-scalar values, typically used in Core Image for filter parameters.
+  The Core Image class that defines a vector object.
 
 
 ---

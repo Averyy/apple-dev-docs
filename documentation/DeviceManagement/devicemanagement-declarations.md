@@ -10,7 +10,7 @@ The available declarations for device management.
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
-  The declaration to configure an address book account.
+  The declaration to configure a Contacts account.
 - [object AccountExchange](accountexchange.md)
   The declaration to configure an Exchange account.
 - [object AccountGoogle](accountgoogle.md)
@@ -20,7 +20,7 @@ The available declarations for device management.
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
-  The declaration to configure a Calendar subscription.
+  The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
@@ -28,13 +28,13 @@ The available declarations for device management.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive, legacy profile.
+  The declaration to configure an interactive legacy profile.
 - [object LegacyProfile](legacyprofile.md)
   The declaration to configure a legacy profile.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
-  The declaration to test the MDM system.
+  The declaration to test declarative device management.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
 - [object Package](package.md)
@@ -68,7 +68,7 @@ The available declarations for device management.
 - [object SoftwareUpdateSettings](softwareupdatesettings.md)
   The declaration to configure software updates.
 - [object WatchEnrollment](watchenrollment.md)
-  The declaration to configure a Mobile Device Management v1 profile for Apple Watch enrollment.
+  The declaration to configure an MDMv1 profile for Apple Watch enrollment.
 ### Activations
 - [object ActivationSimple](activationsimple.md)
   The declaration to activate a set of configurations.
@@ -80,7 +80,7 @@ The available declarations for device management.
 - [object AssetCredentialIdentity](assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
 - [object AssetCredentialSCEP](assetcredentialscep.md)
-  A reference to an SCEP identity.
+  A reference to a SCEP identity.
 - [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
 - [object AssetData](assetdata.md)
@@ -93,7 +93,7 @@ The available declarations for device management.
 - [object IdentityCredential](identitycredential.md)
   The data for a PKCS #12 password-protected identity.
 - [object SCEPCredential](scepcredential.md)
-  An SCEP identity that the device generates.
+  A SCEP identity that the device generates.
 - [object UserNameAndPasswordCredential](usernameandpasswordcredential.md)
   Data that describes a credential that represents a user name and password.
 ### Management
@@ -113,6 +113,8 @@ The available declarations for device management.
   Use declarative management to make devices more autonomous and proactive.
 - [Integrating Declarative Management](integrating-declarative-management.md)
   Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
+- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
+  Use declarative app configurations to deploy managed apps to devices.
 - [Status Reports](status-reports.md)
   Reports from the device about its current state.
 

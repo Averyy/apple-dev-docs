@@ -6,8 +6,8 @@
 A Boolean value that indicates whether an app can be the default dialer app on someone’s device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Discussion
 

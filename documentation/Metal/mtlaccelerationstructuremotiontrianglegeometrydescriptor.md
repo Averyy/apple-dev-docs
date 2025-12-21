@@ -21,21 +21,21 @@ class MTLAccelerationStructureMotionTriangleGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
-### Specifying the Number of Triangles
+### Specifying the number of triangles
 - [var triangleCount: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/trianglecount.md)
   The number of triangles in the buffers.
-### Specifying Index Data
+### Specifying index data
 - [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbuffer.md)
   A buffer that contains indices for the vertices that compose the triangle list.
 - [var indexType: MTLIndexType](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indextype.md)
   The data type of indices in the index buffer.
 - [var indexBufferOffset: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbufferoffset.md)
   The offset, in bytes, to the first index in the buffer.
-### Specifying Vertex Data
+### Specifying vertex data
 - [var vertexBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexbuffers.md)
   An array of motion keyframes, each containing triangle data.
 - [var vertexStride: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexstride.md)
@@ -71,7 +71,7 @@ class MTLAccelerationStructureMotionTriangleGeometryDescriptor
 - [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
 - [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
-  Geometry data for a specific keyframe to use in a moving object.
+  Geometry data for a specific keyframe to use in a moving instance.
 
 
 ---

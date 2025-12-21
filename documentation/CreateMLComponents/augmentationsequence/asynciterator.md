@@ -25,10 +25,6 @@ struct AsyncIterator
 ### Getting the next element
 - [func next() async throws -> Base.Element?](augmentationsequence/asynciterator/next.md)
   Produces the next element in the augmentation sequence.
-### Type Aliases
-- [AugmentationSequence.AsyncIterator.Element](augmentationsequence/asynciterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](augmentationsequence/asynciterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

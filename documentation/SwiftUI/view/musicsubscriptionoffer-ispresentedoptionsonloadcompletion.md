@@ -75,7 +75,7 @@ You may also set `isShowingOffer` to `false` to programmatically dismiss the sub
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](view/refundrequestsheet(for:ispresented:ondismiss:).md)
   Display the refund request sheet for the given transaction.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
-  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)
   Declares the view as dependent on the entitlement of an In-App Purchase product, and returns a modified view.
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View](view/inapppurchaseoptions(_:).md)

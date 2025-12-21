@@ -23,7 +23,7 @@ static let underwaterDepth: HKQuantityTypeIdentifier
 
 Apple Watch Ultra automatically records these samples during dive sessions.
 
-Underwater depth samples use length units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+Underwater depth samples use length units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
 
 ## See Also
 

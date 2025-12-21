@@ -23,14 +23,7 @@ protocol UpdatableTabularEstimator<Transformer> : TabularEstimator
 ## Topics
 
 ### Appending
-- [func appending<Other>(Other) -> some UpdatableTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>>
-](updatabletabularestimator/appending(_:)-3sl33.md)
-  Composes this updatable tabular estimator with a tabular transformer.
-- [func appending<Other>(Other) -> some UpdatableTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>>
-](updatabletabularestimator/appending(_:)-700m8.md)
-  Composes this updatable tabular estimator with another updatable tabular estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](updatabletabularestimator/appending(_:)-9shn1.md)
+- [func appending(_:)](updatabletabularestimator/appending(_:).md)
   Composes this updatable tabular estimator with an updatable supervised tabular estimator.
 ### Adapting
 - [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> UpdatableTabularEstimatorToSupervisedAdaptor<Self, Annotation>](updatabletabularestimator/adaptedassupervised(annotationcolumnid:).md)

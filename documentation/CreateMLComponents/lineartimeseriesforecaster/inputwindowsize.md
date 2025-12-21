@@ -20,6 +20,13 @@ The number of input samples.
 var inputWindowSize: Int { get }
 ```
 
+## See Also
+
+- [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](lineartimeseriesforecaster/configuration-swift.property.md)
+  The configuration.
+- [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
+  The number of predicted samples.
+
 
 ---
 

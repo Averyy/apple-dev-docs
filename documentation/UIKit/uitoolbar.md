@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: class
 
-A control that displays one or more buttons along the bottom edge of your interface.
+A control that displays one or more buttons along an edge of your interface.
 
 **Availability**:
 - iOS 2.0+
@@ -26,9 +26,18 @@ Toolbar images that represent normal and highlighted states of an item derive fr
 
 If you need radio button style controls, use the [`UITabBar`](uitabbar.md) class instead of [`UIToolbar`](uitoolbar.md).
 
-##### Customize Appearance
+When the system presents the toolbar with Liquid Glass:
 
-You use the methods listed in [`Customizing appearance`](uitoolbar#Customizing-appearance.md) to customize the appearance of toolbars. You send the setter messages to the appearance proxy (`[UIToolbar appearance]`) to customize all toolbars, or to a specific `UIToolbar` instance. When a property is dependent on the bar metrics, you should typically specify a value for [`UIBarMetrics.default`](uibarmetrics/default.md) as well as for [`landscapePhone`](uibarmetrics/landscapephone.md).
+- Don’t apply custom backgrounds or appearances to [`UIToolbar`](uitoolbar.md). Instead, let the system determine the background appearance.
+- Don’t use `UIToolbar` directly when you present your view controller with a [`UINavigationController`](uinavigationcontroller.md). Instead, set [`toolbarItems`](uiviewcontroller/toolbaritems.md) to get system-provided transitions and animations in your toolbar.
+
+> **Note**: In iOS 18 and earlier, you use the methods listed in [`Customizing appearance`](uitoolbar#Customizing-appearance.md) to customize the appearance of toolbars. You send the setter messages to the appearance proxy (`UIToolbar.appearance()` in Swift or `[UIToolbar appearance]` in Objective-C) to customize all toolbars, or to a specific `UIToolbar` instance. If a property is dependent on the bar metrics, specify a value for [`UIBarMetrics.default`](uibarmetrics/default.md) as well as for [`UIBarMetrics.compact`](uibarmetrics/compact.md).
+
+##### Split the Toolbars Shared Background
+
+By default, the system organizes all of the buttons you provide into one grouping that shares a background in the toolbar. To split buttons into different groupings with separate shared backgrounds, add [`fixedSpace()`](uibarbuttonitem/fixedspace().md) between buttons to indicate where you want to split the shared background.
+
+For a button that finalizes or completes a task, set the button’s style to [`UIBarButtonItem.Style.prominent`](uibarbuttonitem/style-swift.enum/prominent.md) so that the system can avoid visually grouping the button with other buttons.
 
 ## Topics
 

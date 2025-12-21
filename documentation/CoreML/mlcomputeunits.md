@@ -39,7 +39,7 @@ Use [`MLComputeUnits.cpuOnly`](mlcomputeunits/cpuonly.md) to restrict the model 
   The option you choose to allow the model to use both the CPU and GPU, but not the neural engine.
 - [MLComputeUnits.cpuAndNeuralEngine](mlcomputeunits/cpuandneuralengine.md)
   The option you choose to allow the model to use both the CPU and neural engine, but not the GPU.
-### Initializers
+### Creating compute units
 - [init?(rawValue: Int)](mlcomputeunits/init(rawvalue:).md)
 
 ## Relationships

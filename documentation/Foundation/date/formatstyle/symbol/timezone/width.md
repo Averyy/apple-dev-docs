@@ -32,8 +32,6 @@ The possible values of a width are `short` and `long`.
 - [Date.FormatStyle.Symbol.TimeZone.Width.long](date/formatstyle/symbol/timezone/width/long.md)
   A long timezone representation.
 ### Comparing Time Zones
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

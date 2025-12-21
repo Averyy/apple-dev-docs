@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: init
 
+Creates a new `ManagedAudioChannelLayout` with a given tag.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -17,6 +19,10 @@
 ```swift
 init(tag: AudioChannelLayoutTag)
 ```
+
+## Parameters
+
+- `tag`: The   that indicates the layout.
 
 
 ---

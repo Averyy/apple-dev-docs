@@ -11,9 +11,7 @@ The result of a request used to fetch points of interest.
 ## Declaration
 
 ```swift
-dictionary PointsOfInterestSearchResponse {
-	Place[] places;
-};
+interface PointsOfInterestSearchResponse
 ```
 
 ## Topics
@@ -24,9 +22,9 @@ dictionary PointsOfInterestSearchResponse {
 
 ## See Also
 
-- [search](mapkit.pointsofinterestsearch/search.md)
+- [search(callback, options)](pointsofinterestsearch/search.md)
   Fetches points of interest.
-- [PointsOfInterestSearchDelegate](pointsofinterestsearchdelegate.md)
+- [type PointsOfInterestSearchDelegate](pointsofinterestsearchdelegate.md)
   An object or callback function that MapKit JS calls when fetching points of interest.
 
 

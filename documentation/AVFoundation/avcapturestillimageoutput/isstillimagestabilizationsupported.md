@@ -18,7 +18,7 @@ var isStillImageStabilizationSupported: Bool { get }
 
 #### Discussion
 
-The  [`automaticallyEnablesStillImageStabilizationWhenAvailable`](avcapturestillimageoutput/automaticallyenablesstillimagestabilizationwhenavailable.md) property can only be set if this property returns [`true`](https://developer.apple.com/documentation/swift/true).
+The  [`automaticallyEnablesStillImageStabilizationWhenAvailable`](avcapturestillimageoutput/automaticallyenablesstillimagestabilizationwhenavailable.md) property can only be set if this property returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The value may change as the session’s [`sessionPreset`](avcapturesession/sessionpreset.md) or the input device’s [`activeFormat`](avcapturedevice/activeformat.md) changes.
 

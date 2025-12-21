@@ -21,7 +21,7 @@ var remembersLastFocusedIndexPath: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the collection view remembers which index path was focused when focus leaves the collection view. When it receives the focus again, the collection view automatically redirects that focus back to the previously focused index path. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the collection view remembers which index path was focused when focus leaves the collection view. When it receives the focus again, the collection view automatically redirects that focus back to the previously focused index path. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The effects of this property may be ignored during or immediately after a view controller transition, such as a presentation dismissal or navigation stack pop. In such cases, the view controller attempts to restore focus to the item that was focused prior to the transition (for example, prior to the view controller being presented or pushed), which can take precedence over the effects of this property. To learn how to control or disable this behavior in the view controller, see [`restoresFocusAfterTransition`](uiviewcontroller/restoresfocusaftertransition.md).
 

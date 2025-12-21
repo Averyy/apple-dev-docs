@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The `mul` code: represents the language of some content when there are more than one languages
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

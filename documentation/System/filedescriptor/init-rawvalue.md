@@ -22,10 +22,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [let rawValue: CInt](filedescriptor/rawvalue-swift.property.md)
+- [let rawValue: CInt](filedescriptor/rawvalue.md)
   The raw C file handle.
-- [FileDescriptor.RawValue](filedescriptor/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

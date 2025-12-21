@@ -6,8 +6,8 @@
 The structure that determines the devices to connect to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ The code below is an example of configuring a `NetworkBrowser` with specific dev
 NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service) ) )
 ```
 
-> ❗ **Important**:  Only include the devices your app intends to use with the use case. Including unnecessary devices may impose additional power and performance costs on both the local and remote devices, and may reduce privacy.
+> ❗ **Important**: Only include the devices your app intends to use with the use case. Including unnecessary devices may impose additional power and performance costs on both the local and remote devices, and may reduce privacy.
 
 ## Topics
 
@@ -36,15 +36,14 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
   Includes only the preselected paired devices in the provided dictionary.
 - [static func selected(some Sequence<WAPairedDevice>) -> WASubscriberBrowser.Devices](wasubscriberbrowser/devices/selected(_:)-5arv0.md)
   Includes only the preselected paired devices in the provided list.
+- [static let userSpecifiedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/userspecifieddevices.md)
+  Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `DevicePicker()`.
 ### Using a live matching filter
 - [static func matching(Predicate<WAPairedDevice>) -> WASubscriberBrowser.Devices](wasubscriberbrowser/devices/matching(_:).md)
   Includes only paired devices matching the provided live filter predicate.
 ### Connecting to all paired devices
 - [static let allPairedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/allpaireddevices.md)
   The property that includes all paired devices that your app has access to.
-### Type Properties
-- [static let userSpecifiedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/userspecifieddevices.md)
-  Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `DevicePicker()`.
 
 ## Relationships
 

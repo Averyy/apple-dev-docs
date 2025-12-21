@@ -22,7 +22,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is still capable of firing or [`false`](https://developer.apple.com/documentation/swift/false) if the timer has been invalidated and is no longer capable of firing.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is still capable of firing or [`false`](https://developer.apple.com/documentation/Swift/false) if the timer has been invalidated and is no longer capable of firing.
 
 ## See Also
 

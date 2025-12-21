@@ -4,8 +4,8 @@
 **Kind**: protocol
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -42,6 +42,7 @@ protocol CompositorContent
 ## Relationships
 
 ### Conforming Types
+- [AnyCompositorContent](anycompositorcontent.md)
 - [CompositorContentBuilder.Content](compositorcontentbuilder/content.md)
 
 ## See Also
@@ -58,6 +59,8 @@ protocol CompositorContent
   The set of possible working color spaces for color-compositing operations.
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
+- [struct AnyCompositorContent](anycompositorcontent.md)
+  Type erased compositor content.
 
 
 ---

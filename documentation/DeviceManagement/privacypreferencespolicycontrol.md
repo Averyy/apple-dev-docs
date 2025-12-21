@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure privacy preferences.
+The payload that configures privacy preferences.
 
 **Availability**:
 - macOS 10.14+

@@ -23,7 +23,7 @@ To render a scene, the object considers state like the existence of captions and
 
 ## Topics
 
-### Inspecting the Scene
+### Inspecting the scene
 - [var timeRange: CMTimeRange](avcaptionrenderer/scene/timerange.md)
   The time range during which the system doesn’t modify the scene.
 - [var hasActiveCaptions: Bool](avcaptionrenderer/scene/hasactivecaptions.md)

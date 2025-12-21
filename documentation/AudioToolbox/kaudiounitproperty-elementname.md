@@ -23,9 +23,9 @@ var kAudioUnitProperty_ElementName: AudioUnitPropertyID { get }
 
 A read/write `CFStringRef` object valid on any audio unit scope.
 
-When assigning an element name string to an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+When assigning an element name string to an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
-When obtaining an element name string from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+When obtaining an element name string from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 ## See Also
 

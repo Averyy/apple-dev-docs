@@ -6,11 +6,11 @@
 Create a new WebPage.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ convenience init(configuration: WebPage.Configuration = Configuration(), dialogP
 ## Parameters
 
 - `configuration`: A   value to use when initializing the page.
-- `dialogPresenter`: A dialog presenter which controls how JS dialogs are handled.
+- `dialogPresenter`: A dialog presenter which controls how JavaScript dialogs are handled.
 
 ## See Also
 

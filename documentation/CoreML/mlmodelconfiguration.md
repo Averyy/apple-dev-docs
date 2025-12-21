@@ -34,27 +34,28 @@ Configure your model parameters by setting values for each relevant [`MLParamete
 
 ## Topics
 
-### Configuring Model Parameters
+### Configuring model parameters
+- [var functionName: String?](mlmodelconfiguration/functionname.md)
+  Function name that `MLModel` will use.
 - [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
   A human readable name of a model for display purposes.
 - [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
   A dictionary of configuration settings your app can override when loading a model.
 - [class MLParameterKey](mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
-### Configuring GPU Usage
+### Configuring GPU usage
 - [var preferredMetalDevice: (any MTLDevice)?](mlmodelconfiguration/preferredmetaldevice.md)
   The metal device you prefer this model use to make predictions (inference) and update the model.
 - [var allowLowPrecisionAccumulationOnGPU: Bool](mlmodelconfiguration/allowlowprecisionaccumulationongpu.md)
   A Boolean value that determines whether to allow low-precision accumulation on a GPU.
-### Allowing Access to Processing Units
+### Allowing access to processing units
 - [var computeUnits: MLComputeUnits](mlmodelconfiguration/computeunits.md)
   The processing unit or units the model uses to make predictions.
 - [enum MLComputeUnits](mlcomputeunits.md)
   The set of processing-unit configurations the model can use to make predictions.
-### Instance Properties
+### Getting optimization hints
 - [var optimizationHints: MLOptimizationHints](mlmodelconfiguration/optimizationhints-1oq0g.md)
-- [var functionName: String?](mlmodelconfiguration/functionname.md)
-  Function name that `MLModel` will use.
+  A group of hints for CoreML to optimize
 
 ## Relationships
 

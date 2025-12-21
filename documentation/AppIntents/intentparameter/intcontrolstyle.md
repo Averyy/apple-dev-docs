@@ -22,20 +22,9 @@ enum IntControlStyle
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.IntControlStyle, IntentParameter<Value>.IntControlStyle) -> Bool](intentparameter/intcontrolstyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.IntControlStyle.field](intentparameter/intcontrolstyle/field.md)
 - [IntentParameter.IntControlStyle.stepper](intentparameter/intcontrolstyle/stepper.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/intcontrolstyle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/intcontrolstyle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentparameter/intcontrolstyle/equatable-implementations.md)
 
 ## Relationships
 

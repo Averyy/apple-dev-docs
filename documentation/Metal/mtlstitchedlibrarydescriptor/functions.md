@@ -21,7 +21,7 @@ var functions: [any MTLFunction] { get set }
 
 #### Discussion
 
-The function objects must all be created by the same Metal device object that you’ll use to create the library. The MSL functions referenced by these function objects must be declared with the `stitchable` attribute, as in the example below:
+The function objects need to all be created by the same Metal device object that you’ll use to create the library. The MSL functions referenced by these function objects need to be declared with the `stitchable` attribute, as in the example below:
 
 ```metal
 [[stitchable]]

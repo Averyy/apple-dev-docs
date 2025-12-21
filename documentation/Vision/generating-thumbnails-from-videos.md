@@ -149,6 +149,12 @@ For each result, the sample creates a new frame based on the timestamp and attac
 
 - [struct CalculateImageAestheticsScoresRequest](calculateimageaestheticsscoresrequest.md)
   A request that analyzes an image for aesthetically pleasing attributes.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct GenerateAttentionBasedSaliencyImageRequest](generateattentionbasedsaliencyimagerequest.md)
+  An object that produces a heat map that identifies the parts of an image most likely to draw attention.
+- [struct GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
+  A request that generates a heat map that identifies the parts of an image most likely to represent objects.
 
 
 ---

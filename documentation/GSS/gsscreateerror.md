@@ -20,7 +20,7 @@ func GSSCreateError(_ mech: gss_const_OID, _ major_status: OM_uint32, _ minor_st
 
 #### Return Value
 
-A [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) instance that corresponds to the failure described by the inputs. Release the error with [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) when you are done with it.
+A [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) instance that corresponds to the failure described by the inputs. Release the error with [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
 
 ## Parameters
 

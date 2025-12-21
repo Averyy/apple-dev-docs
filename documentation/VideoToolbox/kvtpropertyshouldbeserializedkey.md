@@ -21,7 +21,7 @@ let kVTPropertyShouldBeSerializedKey: CFString
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p. The default value is `false`.
+The associated value is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is `false`.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: ShazamKit  
 **Kind**: struct
 
-An interator for accessing session results.
+An iterator for accessing session results.
 
 **Availability**:
 - iOS 16.0+

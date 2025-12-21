@@ -13,6 +13,10 @@
 var includedDisplays: [SCDisplay] { get }
 ```
 
+#### Discussion
+
+SCDisplays that are included in the content filter
+
 
 ---
 

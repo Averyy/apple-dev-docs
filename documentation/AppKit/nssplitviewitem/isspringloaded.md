@@ -16,9 +16,9 @@ var isSpringLoaded: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the split view item can temporarily expand during a drag if the user hovers or force clicks its neighboring divider.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the split view item can temporarily expand during a drag if the user hovers or force clicks its neighboring divider.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -17,7 +17,7 @@ var isStopped: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the user clicked the stop button, or [`false`](https://developer.apple.com/documentation/swift/false) if the workflow is still running. This property should be referenced during lengthy action processes, such as a loop, in order to determine whether to exit the operation and stop the action.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the user clicked the stop button, or [`false`](https://developer.apple.com/documentation/Swift/false) if the workflow is still running. This property should be referenced during lengthy action processes, such as a loop, in order to determine whether to exit the operation and stop the action.
 
 ## See Also
 

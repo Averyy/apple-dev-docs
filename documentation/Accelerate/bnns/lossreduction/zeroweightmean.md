@@ -13,7 +13,6 @@ Sums the loss of all samples in the batch and divides by the number of non-zero 
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

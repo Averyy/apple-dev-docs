@@ -16,8 +16,8 @@ var userInfo: [AnyHashable : Any]? { get }
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Discussion
 

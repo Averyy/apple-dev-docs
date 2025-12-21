@@ -9,6 +9,7 @@ The location of an Apple Pencil above the view’s bounds, in view’s coordinat
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

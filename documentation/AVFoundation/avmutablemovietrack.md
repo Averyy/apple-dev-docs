@@ -21,7 +21,7 @@ class AVMutableMovieTrack
 
 ## Topics
 
-### Managing Time Ranges
+### Managing time ranges
 - [func insertTimeRange(CMTimeRange, of: AVAssetTrack, at: CMTime, copySampleData: Bool) throws](avmutablemovietrack/inserttimerange(_:of:at:copysampledata:).md)
   Inserts a portion of an asset track into the target movie.
 - [func insertEmptyTimeRange(CMTimeRange)](avmutablemovietrack/insertemptytimerange(_:).md)
@@ -30,24 +30,26 @@ class AVMutableMovieTrack
   Removes the specified time range from a track.
 - [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablemovietrack/scaletimerange(_:toduration:).md)
   Changes the duration of a time range in a track.
-### Appending Sample Data
+### Appending sample data
+- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> (decodeTime: CMTime, presentationTime: CMTime)](avmutablemovietrack/append(_:).md)
+  Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 - [func append(CMSampleBuffer, decodeTime: UnsafeMutablePointer<CMTime>?, presentationTime: UnsafeMutablePointer<CMTime>?) throws](avmutablemovietrack/append(_:decodetime:presentationtime:).md)
   Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 - [func insertMediaTimeRange(CMTimeRange, into: CMTimeRange) -> Bool](avmutablemovietrack/insertmediatimerange(_:into:).md)
   Inserts a reference to a media time range into a track.
-### Accessing Media Chunks
+### Accessing media chunks
 - [var preferredMediaChunkAlignment: Int](avmutablemovietrack/preferredmediachunkalignment.md)
   The boundary for media chunk alignment for file types that support media chunk alignment.
 - [var preferredMediaChunkDuration: CMTime](avmutablemovietrack/preferredmediachunkduration.md)
   The maximum duration to use for each chunk of sample data written to the file for file types that support media chunk duration.
 - [var preferredMediaChunkSize: Int](avmutablemovietrack/preferredmediachunksize.md)
   The maximum size to use for each chunk of sample data written to the file for file types that support media chunk duration.
-### Changing Format Descriptions
+### Changing format descriptions
 - [var formatDescriptions: [Any]](avmutablemovietrack/formatdescriptions.md)
   The format descriptions of the media samples that a track references.
 - [func replaceFormatDescription(CMFormatDescription, with: CMFormatDescription)](avmutablemovietrack/replaceformatdescription(_:with:).md)
   Replaces the track’s format description with a new format description.
-### Configuring Track Information
+### Configuring track information
 - [var isModified: Bool](avmutablemovietrack/ismodified.md)
   A Boolean value that indicates whether a track is in a modified state.
 - [var alternateGroupID: Int](avmutablemovietrack/alternategroupid.md)
@@ -56,7 +58,7 @@ class AVMutableMovieTrack
   A storage container for the media data to be added to a track.
 - [var sampleReferenceBaseURL: URL?](avmutablemovietrack/samplereferencebaseurl.md)
   The base URL for sample references.
-### Accessing Track Information
+### Accessing track information
 - [var isPlayable: Bool](avmutablemovietrack/isplayable.md)
   A Boolean value that indicates whether the track is playable in the current environment.
 - [var isDecodable: Bool](avmutablemovietrack/isdecodable.md)
@@ -71,7 +73,7 @@ class AVMutableMovieTrack
   The total number of bytes of sample data the track requires.
 - [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avmutablemovietrack/hasmediacharacteristic(_:).md)
   Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
-### Accessing Temporal Information
+### Accessing temporal information
 - [var timeRange: CMTimeRange](avmutablemovietrack/timerange.md)
   The time range of the track within the overall timeline of the asset.
 - [var timescale: CMTimeScale](avmutablemovietrack/timescale.md)
@@ -82,12 +84,12 @@ class AVMutableMovieTrack
   The estimated data rate, in bits per second, of the media that the track references.
 - [func samplePresentationTime(forTrackTime: CMTime) -> CMTime](avmutablemovietrack/samplepresentationtime(fortracktime:).md)
   Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
-### Accessing Language Support
+### Accessing language support
 - [var languageCode: String?](avmutablemovietrack/languagecode.md)
   The language code of the track.
 - [var extendedLanguageTag: String?](avmutablemovietrack/extendedlanguagetag.md)
   The language tag of the track.
-### Accessing Visual Characteristics
+### Accessing visual characteristics
 - [var naturalSize: CGSize](avmutablemovietrack/naturalsize.md)
   The dimensions used to display the visual media data for the track.
 - [var preferredTransform: CGAffineTransform](avmutablemovietrack/preferredtransform.md)
@@ -100,19 +102,19 @@ class AVMutableMovieTrack
   The production aperture dimensions of the track.
 - [var encodedPixelsDimensions: CGSize](avmutablemovietrack/encodedpixelsdimensions.md)
   The encoded pixels dimensions of the track.
-### Accessing Audible Characteristics
+### Accessing audible characteristics
 - [var preferredVolume: Float](avmutablemovietrack/preferredvolume.md)
   The preferred volume for the audible medata data of the track.
 - [var hasAudioSampleDependencies: Bool](avmutablemovietrack/hasaudiosampledependencies.md)
   A Boolean value that indicates whether the track has sample dependencies.
-### Accessing Frame-Based Characteristics
+### Accessing frame-based characteristics
 - [var nominalFrameRate: Float](avmutablemovietrack/nominalframerate.md)
   The frame rate of the track, in frames per second.
 - [var minFrameDuration: CMTime](avmutablemovietrack/minframeduration.md)
   The minimum duration of the track’s frames.
 - [var requiresFrameReordering: Bool](avmutablemovietrack/requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
-### Accessing Metadata
+### Accessing metadata
 - [var metadata: [AVMetadataItem]](avmutablemovietrack/metadata.md)
   An array of metadata stored by the track.
 - [var commonMetadata: [AVMetadataItem]](avmutablemovietrack/commonmetadata.md)
@@ -121,12 +123,12 @@ class AVMutableMovieTrack
   An array of metadata formats available for the track.
 - [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avmutablemovietrack/metadata(forformat:).md)
   Returns metadata items that a track contains for the specified format.
-### Accessing Track Segments
+### Accessing track segments
 - [var segments: [AVAssetTrackSegment]](avmutablemovietrack/segments.md)
   The time mappings from the track’s media samples to its timeline.
 - [func segment(forTrackTime: CMTime) -> AVAssetTrackSegment?](avmutablemovietrack/segment(fortracktime:).md)
   Returns a segment whose target time range contains, or is closest to, the specified track time.
-### Managing Track Associations
+### Managing track associations
 - [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](avmutablemovietrack/availabletrackassociationtypes.md)
   An array of association types that the track uses to associate with other tracks.
 - [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](avmutablemovietrack/associatedtracks(oftype:).md)
@@ -135,12 +137,9 @@ class AVMutableMovieTrack
   Creates a specific type of track association between two tracks.
 - [func removeTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/removetrackassociation(to:type:).md)
   Removes a specific type of track association between two tracks.
-### Determining Sample Cursor Support
+### Determining sample cursor support
 - [var canProvideSampleCursors: Bool](avmutablemovietrack/canprovidesamplecursors.md)
   A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
-### Instance Methods
-- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> (decodeTime: CMTime, presentationTime: CMTime)](avmutablemovietrack/append(_:).md)
-  Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 
 ## Relationships
 

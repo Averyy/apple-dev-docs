@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: enum
 
+PeerAuthentication specifies how to authenticate the peer end of the connection.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -18,12 +20,19 @@
 enum PeerAuthentication
 ```
 
+#### Overview
+
+For clients, the default is `none`. For servers, the default is `required`.
+
 ## Topics
 
 ### Enumeration Cases
 - [TLS.PeerAuthentication.none](tls/peerauthentication/none.md)
+  Do not authenticate the peer.
 - [TLS.PeerAuthentication.optional](tls/peerauthentication/optional.md)
+  Requests the peer certificate, but if none is provided, proceed with the connection.
 - [TLS.PeerAuthentication.required](tls/peerauthentication/required.md)
+  Always authenticate the peer.
 
 ## Relationships
 

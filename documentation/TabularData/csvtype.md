@@ -22,9 +22,6 @@ enum CSVType
 
 ## Topics
 
-### Operators
-- [static func == (CSVType, CSVType) -> Bool](csvtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [CSVType.boolean](csvtype/boolean.md)
   A Boolean type.
@@ -40,14 +37,6 @@ enum CSVType
   An integer type.
 - [CSVType.string](csvtype/string.md)
   A string type.
-### Instance Properties
-- [var hashValue: Int](csvtype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](csvtype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](csvtype/equatable-implementations.md)
 
 ## Relationships
 

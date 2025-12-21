@@ -21,7 +21,7 @@ var extendedLayoutIncludesOpaqueBars: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > **Note**:  Bars are translucent by default in iOS 7.0
 

@@ -22,7 +22,7 @@ func getFileSystemRepresentation(_ cname: UnsafeMutablePointer<CChar>, maxLength
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `buffer` is successfully filled with a file-system representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false) (for example, if `maxLength` would be exceeded or if the receiver can’t be represented in the file system’s encoding).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `buffer` is successfully filled with a file-system representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false) (for example, if `maxLength` would be exceeded or if the receiver can’t be represented in the file system’s encoding).
 
 #### Discussion
 

@@ -21,7 +21,7 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-The selection affects the appearance of labels, image, and background. When the selected state of a cell is set to [`true`](https://developer.apple.com/documentation/swift/true), it draws the background for selected cells with its title in white. The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you set the selection state to [`true`](https://developer.apple.com/documentation/swift/true) through this property, the transition to the new state appearance is not animated. For animated selected-state transitions, see the [`setSelected(_:animated:)`](uitableviewcell/setselected(_:animated:).md) method.
+The selection affects the appearance of labels, image, and background. When the selected state of a cell is set to [`true`](https://developer.apple.com/documentation/Swift/true), it draws the background for selected cells with its title in white. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If you set the selection state to [`true`](https://developer.apple.com/documentation/Swift/true) through this property, the transition to the new state appearance is not animated. For animated selected-state transitions, see the [`setSelected(_:animated:)`](uitableviewcell/setselected(_:animated:).md) method.
 
 ## See Also
 

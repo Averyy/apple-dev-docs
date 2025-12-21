@@ -19,7 +19,7 @@ struct AVCaptionDimension
 
 ## Topics
 
-### Inspecting the Dimensions
+### Inspecting the dimensions
 - [var value: CGFloat](avcaptiondimension/value.md)
   The value of the coordinate or length.
 - [var units: AVCaptionUnitsType](avcaptiondimension/units.md)

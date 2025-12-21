@@ -23,9 +23,6 @@ enum ExposureCategory
 
 ## Topics
 
-### Operators
-- [static func < (UVIndex.ExposureCategory, UVIndex.ExposureCategory) -> Bool](uvindex/exposurecategory/_(_:_:).md)
-  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Enumeration Cases
 - [UVIndex.ExposureCategory.extreme](uvindex/exposurecategory/extreme.md)
   The UV index is extreme.
@@ -37,9 +34,6 @@ enum ExposureCategory
   The UV index is moderate.
 - [UVIndex.ExposureCategory.veryHigh](uvindex/exposurecategory/veryhigh.md)
   The UV index is very high.
-### Initializers
-- [init?(rawValue: String)](uvindex/exposurecategory/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Instance Properties
 - [var accessibilityDescription: String](uvindex/exposurecategory/accessibilitydescription.md)
   A localized accessibility description describing the UV Index Exposure Category.
@@ -47,20 +41,6 @@ enum ExposureCategory
   A localized string describing the risk of harm from unprotected sun exposure.
 - [var rangeValue: ClosedRange<Int>](uvindex/exposurecategory/rangevalue.md)
   The range of UV index values that falls into this category.
-- [var rawValue: String](uvindex/exposurecategory/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [UVIndex.ExposureCategory.AllCases](uvindex/exposurecategory/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [UVIndex.ExposureCategory.RawValue](uvindex/exposurecategory/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [UVIndex.ExposureCategory]](uvindex/exposurecategory/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Comparable Implementations](uvindex/exposurecategory/comparable-implementations.md)
-- [Equatable Implementations](uvindex/exposurecategory/equatable-implementations.md)
-- [RawRepresentable Implementations](uvindex/exposurecategory/rawrepresentable-implementations.md)
 
 ## Relationships
 

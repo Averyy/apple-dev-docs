@@ -18,11 +18,11 @@ var isHeadless: Bool { get }
 
 ## Mentions
 
-- [Finding Multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
+- [Finding multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) when the GPU is , which means it isn’t connected to any displays.
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) when the GPU is , which means it isn’t connected to any displays.
 
 ## See Also
 

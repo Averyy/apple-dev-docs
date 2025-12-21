@@ -21,9 +21,9 @@ var isEntireLengthAvailableOnDemand: Bool { get set }
 
 #### Discussion
 
-Before you finish loading an [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md), if its [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) isn’t `nil`, set the value to [`true`](https://developer.apple.com/documentation/swift/true) to indicate that all asset data is available. This may be [`true`](https://developer.apple.com/documentation/swift/true) because the data is fully cached, or because the custom URL scheme ultimately refers to files on local storage, which allows for significant data flow optimizations.
+Before you finish loading an [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md), if its [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) isn’t `nil`, set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that all asset data is available. This may be [`true`](https://developer.apple.com/documentation/Swift/true) because the data is fully cached, or because the custom URL scheme ultimately refers to files on local storage, which allows for significant data flow optimizations.
 
-For backward compatibility, this property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+For backward compatibility, this property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

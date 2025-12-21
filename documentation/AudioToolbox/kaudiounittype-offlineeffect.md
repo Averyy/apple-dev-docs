@@ -30,7 +30,7 @@ var kAudioUnitType_OfflineEffect: UInt32 { get }
 - [var kAudioUnitType_FormatConverter: UInt32](kaudiounittype_formatconverter.md)
 - [var kAudioUnitType_Effect: UInt32](kaudiounittype_effect.md)
 - [var kAudioUnitType_Mixer: UInt32](kaudiounittype_mixer.md)
-  A mixer unit takes a number of input channels and mixes them to provide one or more output channels. For example, the `kAudioUnitSubType_StereoMixer` audio unit in macOS takes multiple mono or stereo inputs and produce a single stereo output.
+  A mixer unit takes a number of input channels and mixes them to provide one or more output channels.
 - [var kAudioUnitType_Panner: UInt32](kaudiounittype_panner.md)
 - [var kAudioUnitType_Generator: UInt32](kaudiounittype_generator.md)
   A generator unit provides audio output but has no audio input. This audio unit type is appropriate for a tone generator. Unlike an instrument unit, a generator unit does not have a control input.

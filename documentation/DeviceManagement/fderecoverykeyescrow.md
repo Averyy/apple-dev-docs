@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure FileVault recovery key escrow.
+The payload that configures FileVault recovery key escrow.
 
 **Availability**:
 - macOS 10.13+
@@ -151,9 +151,9 @@ Although the system no longer supports the previous FDE Recovery payload in macO
 ## See Also
 
 - [object FDEFileVault](fdefilevault.md)
-  The payload you use to configure FileVault.
+  The payload that configures FileVault.
 - [object FDEFileVaultOptions](fdefilevaultoptions.md)
-  The payload you use to configure FileVault options.
+  The payload that configures FileVault options.
 
 
 ---

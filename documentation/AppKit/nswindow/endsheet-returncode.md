@@ -34,6 +34,8 @@ This method ends the modal session with the specified return code.
   Starts a document-modal session and presents—or queues for presentation—a sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
+- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+  Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)
   The window to which the sheet is attached.
 - [var sheets: [NSWindow]](nswindow/sheets.md)

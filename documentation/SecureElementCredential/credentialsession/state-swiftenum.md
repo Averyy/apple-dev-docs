@@ -28,11 +28,6 @@ enum State
   Information about a credential that a credential session retrieves from the Secure Element.
 - [CredentialSession.State.invalid](credentialsession/state-swift.enum/invalid.md)
   The state of an invalid credential session.
-### Comparing states
-- [static func == (CredentialSession.State, CredentialSession.State) -> Bool](credentialsession/state-swift.enum/==(_:_:).md)
-  Returns a Boolean value that indicates whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](credentialsession/state-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

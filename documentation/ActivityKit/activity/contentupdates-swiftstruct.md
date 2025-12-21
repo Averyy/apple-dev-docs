@@ -24,12 +24,8 @@ struct ContentUpdates
 - [func makeAsyncIterator() -> Activity<Attributes>.ContentUpdates.Iterator](activity/contentupdates-swift.struct/makeasynciterator.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
 ### Type Aliases
-- [Activity.ContentUpdates.AsyncIterator](activity/contentupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [Activity.ContentUpdates.Element](activity/contentupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Default Implementations
-- [AsyncSequence Implementations](activity/contentupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

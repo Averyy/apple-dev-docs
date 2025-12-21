@@ -19,6 +19,8 @@ var categoryTokens: Set<ActivityCategoryToken>
 
 - [var categories: Set<ActivityCategory>](familyactivityselection/categories.md)
   A set of category instances selected by the user.
+- [init(includeEntireCategory: Bool)](familyactivityselection/init(includeentirecategory:).md)
+  Creates a new activity selection instance.
 
 
 ---

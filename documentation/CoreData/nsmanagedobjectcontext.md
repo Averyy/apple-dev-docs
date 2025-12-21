@@ -17,13 +17,14 @@ An object space to manipulate and track changes to managed objects.
 ## Declaration
 
 ```swift
+nonisolated
 class NSManagedObjectContext
 ```
 
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
 - [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
+- [Using Core Data in the background](using-core-data-in-the-background.md)
 - [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
 
 #### Overview
@@ -254,6 +255,8 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
 - [NSEditorRegistration](../AppKit/NSEditorRegistration.md)
 - [NSLocking](../Foundation/NSLocking.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

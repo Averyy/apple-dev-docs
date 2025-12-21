@@ -46,8 +46,6 @@ You can use anchors to guarantee that a match only occurs at certain points in a
   An anchor that matches at a grapheme cluster boundary.
 - [static var wordBoundary: Anchor](anchor/wordboundary.md)
   An anchor that matches at a word boundary.
-### Default Implementations
-- [RegexComponent Implementations](anchor/regexcomponent-implementations.md)
 
 ## Relationships
 

@@ -22,16 +22,8 @@ struct StringInterpolation
 
 ## Topics
 
-### Initializers
-- [init(literalCapacity: Int, interpolationCount: Int)](negativeappshortcutphrase/stringinterpolation/init(literalcapacity:interpolationcount:).md)
-  Creates an empty instance ready to be filled with string literal content.
 ### Instance Methods
 - [func appendInterpolation(AppShortcutPhraseToken)](negativeappshortcutphrase/stringinterpolation/appendinterpolation(_:).md)
-- [func appendLiteral(String)](negativeappshortcutphrase/stringinterpolation/appendliteral(_:).md)
-  Appends a literal segment to the interpolation.
-### Type Aliases
-- [NegativeAppShortcutPhrase.StringInterpolation.StringLiteralType](negativeappshortcutphrase/stringinterpolation/stringliteraltype.md)
-  The type that should be used for literal segments.
 
 ## Relationships
 

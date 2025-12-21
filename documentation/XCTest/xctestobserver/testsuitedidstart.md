@@ -5,9 +5,6 @@
 
 Notifies the observer when a test suite starts.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

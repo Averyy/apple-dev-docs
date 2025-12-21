@@ -31,7 +31,7 @@ object SemanticTagType.EventDateInfo
 - [object SemanticTagType.Seat](semantictagtype/seat-data.dictionary.md)
   An object that represents the identification of a seat for a transit journey or an event.
 - [object SemanticTagType.WifiNetwork](semantictagtype/wifinetwork-data.dictionary.md)
-  An object that contains information required to connect to a WiFi network.
+  An object that contains information required to connect to a Wi-Fi network. Optionally, this object may contain keys required to perform authentication with captive portal.
 
 
 ---

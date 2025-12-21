@@ -8,7 +8,7 @@ Transmit your remote notification payload and device token information to Apple 
 
 As a best-effort service, APNs may reorder notifications you send to the same device token. If APNs can’t deliver a notification immediately, it may store the notification for 30 days or less, depending on the date you specify in the `apns-expiration` header. APNs attempts to deliver the notification the next time the device activates and is available online.
 
-APNs stores only one notification per bundle ID. When you send multiple notifications to the same device for a bundle ID, APNs selects only one notification to store in a non-deterministic way. Notifications with `apns-priority` `5` and `1` might get grouped and delivered in bursts to the user’s device. Your notifications may also get throttled, saved in storage, and in some cases, not delivered. The way the user interacts with your application and the power state of the device determines the exact behavior. For more information about the factors that impact the delivery of a push notification, refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
+APNs stores only one notification per bundle ID. When you send multiple notifications to the same device for a bundle ID, APNs selects only one notification to store. In most cases, the latest notification is stored. However, this behavior isn’t always guaranteed when multiple notifications are stored in a short duration. Notifications with `apns-priority 5` and `apns-priority 1` might get grouped and delivered in bursts to a person’s device. Your notifications may also get throttled, saved in storage, and in some cases, not delivered. The way a person interacts with your app and the power state of the device determines the exact behavior. For more information about the factors that impact the delivery of a push notification, refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
 When you have a notification to send to a user, your provider must construct a POST request and send it to Apple Push Notification service (APNs). Upon receiving your server’s POST request, APNs validates the request using either the provided authentication token or your server’s certificate. If validation succeeds, APNs uses the provided device token to identify the user’s device. It then tries to send your JSON payload to that device. For information on sending test notifications without setting up the environment, refer to [`Testing notifications using the Push Notification Console`](testing-notifications-using-the-push-notification-console.md).
 
@@ -74,8 +74,8 @@ HEADERS
   :path = /3/device/00fc13adff785122b4ad28809a3420982341241421348097878e577c991de8f0
   host = api.sandbox.push.apple.com
   authorization = bearer eyAia2lkIjogIjhZTDNHM1JSWDciIH0.eyAiaXNzIjogIkM4Nk5WOUpYM0QiLCAiaWF0I
-		 jogIjE0NTkxNDM1ODA2NTAiIH0.MEYCIQDzqyahmH1rz1s-LFNkylXEa2lZ_aOCX4daxxTZkVEGzwIhALvkClnx5m5eAT6
-		 Lxw7LZtEQcH6JENhJTMArwLf3sXwi
+         jogIjE0NTkxNDM1ODA2NTAiIH0.MEYCIQDzqyahmH1rz1s-LFNkylXEa2lZ_aOCX4daxxTZkVEGzwIhALvkClnx5m5eAT6
+         Lxw7LZtEQcH6JENhJTMArwLf3sXwi
   apns-id = eabeae54-14a8-11e5-b60b-1697f925ec7b
   apns-push-type = alert
   apns-expiration = 0
@@ -111,7 +111,7 @@ DATA
 
 The `apns-push-type` header field has the following valid values. The descriptions below describe when and how to use these values. Send an `apns-push-type` header with each push. Recent and upcoming features may not work if this header is missing. See the table above to determine if this header is required or optional.
 
-Certificate-based connection supports only a subset of push types and token-based connection supports all push-types. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md). Check Extension 1.2.840.113635.100.6.3.6 and 1.2.840.113635.100.6.3.4 of your push certificate. These extensions list all the push topics allowed for your certificate. If a push topic for a specific push type isn’t listed, you can’t use the certificate to send a notification of that push type.
+Certificate-based connection supports only a subset of push types and token-based connection supports all push-types. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md). Check Extension `1.2.840.113635.100.6.3.6` and `1.2.840.113635.100.6.3.4` of your push certificate. These extensions list all the push topics allowed for your certificate. If a push topic for a specific push type isn’t listed, you can’t use the certificate to send a notification of that push type.
 
 ##### Follow Best Practices While Sending Push Notifications with Apns
 

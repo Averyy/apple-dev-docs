@@ -24,8 +24,6 @@ var description: String { get }
 
 - [var debugDescription: String](column/debugdescription.md)
   A text representation of the column suitable for debugging.
-- [func description(options: FormattingOptions) -> String](column/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](column/custommirror.md)
   A mirror that reflects the column.
 

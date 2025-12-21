@@ -22,7 +22,7 @@ End an active Live Activity while your app is in the foreground or while it’s 
 ## Parameters
 
 - `content`: The latest and final dynamic content for the Live Activity that ended.   The size of the encoded content can’t exceed 4KB in size.
-- `dismissalPolicy`: Describes how and when the system should dismiss a Live Activity and   and remove it from the Lock Screen.
+- `dismissalPolicy`: Describes how and when the system should dismiss a Live Activity and   remove it from the Lock Screen.
 - `timestamp`: The time the data in the payload was generated. If this is older than a previous   update or push payload, the system ignores this update.
 
 ## See Also

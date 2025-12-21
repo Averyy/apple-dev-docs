@@ -25,7 +25,7 @@ var updateLineSpacing: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.books.updateLineSpacing` schema:
 
 ```swift
-@AssistantIntent(schema: .books.updateLineSpacing)
+@AppIntent(schema: .books.updateLineSpacing)
 struct UpdateBookLineSpacingIntent: AppIntent {
     @Parameter
     var target: BookSettingsEntity

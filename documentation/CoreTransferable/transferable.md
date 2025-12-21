@@ -27,9 +27,9 @@ To conform to the [`Transferable`](transferable.md) protocol, implement the [`tr
 
 ```swift
 struct ImageDocumentLayer {
-    init(data: Data)
-    func data() -> Data
-    func pngData() -> Data
+    init(data: Data) { }
+    func data() -> Data { Data() }
+    func pngData() -> Data { Data() }
 }
 ```
 
@@ -56,7 +56,7 @@ The following declares the custom `layer` uniform type identifier:
 
 ```swift
 extension UTType {
-    static var layer: UTType { UTType(exportedAs: "com.example.layer") }
+    static let layer = UTType(exportedAs: "com.example.layer")
 }
 ```
 

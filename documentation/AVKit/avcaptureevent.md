@@ -27,12 +27,11 @@ Inspect a capture event’s [`phase`](avcaptureevent/phase.md) to determine whet
   The current phase of a capture event.
 - [enum AVCaptureEventPhase](avcaptureeventphase.md)
   Constants that indicate the phase of a system capture event.
-### Instance Properties
+### Playing a sound
 - [var shouldPlaySound: Bool](avcaptureevent/shouldplaysound.md)
-  Indicates whether a sound must be played manually using the `playSound` method.
-### Instance Methods
+  A Boolean value that indicates whether you must play a sound manually.
 - [func play(AVCaptureEventSound) -> Bool](avcaptureevent/play(_:).md)
-  Plays the given capture sound through AirPods.
+  Plays the specified capture sound through AirPods.
 
 ## Relationships
 

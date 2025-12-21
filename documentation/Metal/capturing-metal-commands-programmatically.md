@@ -1,8 +1,8 @@
-# Capturing Metal Commands Programmatically
+# Capturing Metal commands programmatically
 
 **Framework**: Metal
 
-Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 
 **Availability**:
 - macOS 10.15+
@@ -32,9 +32,9 @@ To run the app:
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+- [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
-- [Metal Debugging Types](metal-debugging-types.md)
+- [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 

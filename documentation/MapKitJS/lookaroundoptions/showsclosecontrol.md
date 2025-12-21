@@ -11,7 +11,7 @@ A Boolean value that indicates whether the Look Around view displays a close con
 ## Declaration
 
 ```swift
-attribute boolean showsCloseControl;
+showsCloseControl?: boolean;
 ```
 
 #### Discussion

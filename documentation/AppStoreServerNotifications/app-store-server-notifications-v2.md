@@ -12,8 +12,8 @@ Specify your secure server’s URL in App Store Connect to receive version 2 not
 
 - [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
 - [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
-- [Responding to App Store Server Notifications](responding-to-app-store-server-notifications.md)
 - [Receiving App Store Server Notifications](receiving-app-store-server-notifications.md)
+- [Responding to App Store Server Notifications](responding-to-app-store-server-notifications.md)
 
 #### Discussion
 
@@ -28,7 +28,7 @@ Upon receiving a server notification, respond to the App Store with an HTTP stat
 - [object responseBodyV2DecodedPayload](responsebodyv2decodedpayload.md)
   A decoded payload that contains the version 2 notification data.
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 

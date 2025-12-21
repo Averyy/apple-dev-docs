@@ -3,15 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Gets the URL for the specified relative path.
+Returns a URL for the specified relative path.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -39,6 +39,17 @@ All asset packs share the same namespace, so you can treat the overall collectio
 ## Parameters
 
 - `path`: The relative path.
+
+## See Also
+
+- [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
+  The asset packs that are available to download.
+- [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
+  Returns the asset pack with the given ID.
+- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md)
+  Returns the contents of an asset file at the specified relative path.
+- [func descriptor(for: FilePath, searchingInAssetPackWithID: String?) throws -> FileDescriptor](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md)
+  Opens and returns a file descriptor for an asset file at the specified relative path.
 
 
 ---

@@ -17,7 +17,6 @@ A glow that extends outward from the stroked line.
 ## Declaration
 
 ```swift
-@MainActor
 var glowWidth: CGFloat { get set }
 ```
 

@@ -19,6 +19,10 @@ kern_return_t ReleasePMAssertion(uint64_t assertionID);
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
+#### Discussion
+
+Release a previously created power management assertion.
+
 ## Parameters
 
 - `assertionID`: The assertion ID returned by CreatePMAssertion.

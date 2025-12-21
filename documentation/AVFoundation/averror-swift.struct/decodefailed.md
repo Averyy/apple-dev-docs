@@ -30,10 +30,11 @@ static var decodeFailed: AVError.Code { get }
   The AirPlay receiver requires an internet connection to function.
 - [static var airPlayReceiverTemporarilyUnavailable: AVError.Code](averror-swift.struct/airplayreceivertemporarilyunavailable.md)
   An AirPlay receiver is temporarily unavailable.
-- [static var applicationIsNotAuthorized: AVError.Code](averror-swift.struct/applicationisnotauthorized.md)
-  The app isn’t authorized to play media.
 - [static var applicationIsNotAuthorizedToUseDevice: AVError.Code](averror-swift.struct/applicationisnotauthorizedtousedevice.md)
   The user denied this app permission to capture media.
+- [static var applicationIsNotAuthorized: AVError.Code](averror-swift.struct/applicationisnotauthorized.md)
+  The app isn’t authorized to play media.
+- [static var autoWhiteBalanceNotLocked: AVError.Code](averror-swift.struct/autowhitebalancenotlocked.md)
 - [static var compositionTrackSegmentsNotContiguous: AVError.Code](averror-swift.struct/compositiontracksegmentsnotcontiguous.md)
   The composition can’t add the source media because it contains gaps.
 - [static var contentIsNotAuthorized: AVError.Code](averror-swift.struct/contentisnotauthorized.md)
@@ -50,8 +51,6 @@ static var decodeFailed: AVError.Code { get }
   The app couldn’t create a content key request.
 - [static var decoderNotFound: AVError.Code](averror-swift.struct/decodernotfound.md)
   The system can’t find a suitable decoder for the media.
-- [static var decoderTemporarilyUnavailable: AVError.Code](averror-swift.struct/decodertemporarilyunavailable.md)
-  A suitable decoder for the media is temporarily available.
 
 
 ---

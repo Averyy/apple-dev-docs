@@ -4,7 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 3.6+
 
 ## Declaration
 
@@ -14,7 +14,7 @@ object AppCustomProductPageLocalization.Relationships.AppScreenshotSets
 
 ## Topics
 
-### Objects
+### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.AppScreenshotSets.Data](appcustomproductpagelocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
 
 ## See Also

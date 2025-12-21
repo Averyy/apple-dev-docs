@@ -261,6 +261,8 @@ The `makeHandEntities(in:)` method creates the left- and right-hand entities, an
 
 ## See Also
 
+- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+  Substitute a person’s hands with custom models in a fully immersive space.
 - [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
 - [Displaying an entity that follows a person’s view](displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.md)

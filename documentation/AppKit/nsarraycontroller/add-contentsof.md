@@ -16,9 +16,9 @@ func add(contentsOf objects: [Any])
 
 #### Discussion
 
-If [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the added objects are selected in the array controller.
+If [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), the added objects are selected in the array controller.
 
-It is important to note that inserting many objects with [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) on can cause a significant performance penalty. In this case it is more efficient to use the [`content`](nsobjectcontroller/content.md) method to set the array, or to set [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) to [`false`](https://developer.apple.com/documentation/swift/false) before adding the objects with [`add(contentsOf:)`](nsarraycontroller/add(contentsof:).md).
+It is important to note that inserting many objects with [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) on can cause a significant performance penalty. In this case it is more efficient to use the [`content`](nsobjectcontroller/content.md) method to set the array, or to set [`selectsInsertedObjects`](nsarraycontroller/selectsinsertedobjects.md) to [`false`](https://developer.apple.com/documentation/Swift/false) before adding the objects with [`add(contentsOf:)`](nsarraycontroller/add(contentsof:).md).
 
 ## See Also
 

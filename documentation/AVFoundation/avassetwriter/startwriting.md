@@ -21,16 +21,18 @@ func startWriting() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if writing starts successfully; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if writing starts successfully; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 You must call this method after you configure the writer and add its inputs to prepare the object to write data. After you call this method, your app can start writing sessions by calling [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) and can write media samples using the methods that the asset writer’s inputs provide.
 
-If writing fails to start, this method returns [`false`](https://developer.apple.com/documentation/swift/false). In this case, check the values of the [`status`](avassetwriter/status-swift.property.md) and [`error`](avassetwriter/error.md) properties to determine the reason for the failure.
+If writing fails to start, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). In this case, check the values of the [`status`](avassetwriter/status-swift.property.md) and [`error`](avassetwriter/error.md) properties to determine the reason for the failure.
 
 ## See Also
 
+- [func start() throws](avassetwriter/start.md)
+  Prepares the writer to write media data to its output file.
 - [func startSession(atSourceTime: CMTime)](avassetwriter/startsession(atsourcetime:).md)
   Starts an asset-writing session.
 - [func endSession(atSourceTime: CMTime)](avassetwriter/endsession(atsourcetime:).md)

@@ -86,6 +86,7 @@ Classes that create a network operation based on a request make a deep copy of t
   The entities that can make a network request.
 ### Instance Properties
 - [var allowsPersistentDNS: Bool](nsmutableurlrequest/allowspersistentdns.md)
+- [var allowsUltraConstrainedNetworkAccess: Bool](nsmutableurlrequest/allowsultraconstrainednetworkaccess.md)
 - [var assumesHTTP3Capable: Bool](nsmutableurlrequest/assumeshttp3capable.md)
 - [var cookiePartitionIdentifier: String?](nsmutableurlrequest/cookiepartitionidentifier.md)
 - [var requiresDNSSECValidation: Bool](nsmutableurlrequest/requiresdnssecvalidation.md)

@@ -5,11 +5,6 @@
 
 Replaces the video data in receiver with the video at a given URL.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

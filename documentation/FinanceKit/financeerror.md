@@ -18,9 +18,6 @@ enum FinanceError
 
 ## Topics
 
-### Operators
-- [static func == (FinanceError, FinanceError) -> Bool](financeerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case dataRestricted(FinanceStore.DataType)](financeerror/datarestricted(_:).md)
   The data is in a restricted state.
@@ -39,11 +36,6 @@ enum FinanceError
 ### Type Properties
 - [static var errorDomain: String](financeerror/errordomain.md)
   The domain of the error.
-### Default Implementations
-- [CustomNSError Implementations](financeerror/customnserror-implementations.md)
-- [Equatable Implementations](financeerror/equatable-implementations.md)
-- [Error Implementations](financeerror/error-implementations.md)
-- [LocalizedError Implementations](financeerror/localizederror-implementations.md)
 
 ## Relationships
 

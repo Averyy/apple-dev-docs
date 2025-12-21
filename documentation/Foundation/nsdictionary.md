@@ -217,6 +217,7 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
 ### Initializers
 - [convenience init(dictionary: NSDictionary)](nsdictionary/init(dictionary:)-4gc13.md)
+  Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
 ### Default Implementations
 - [Sequence Implementations](nsdictionary/sequence-implementations.md)
 

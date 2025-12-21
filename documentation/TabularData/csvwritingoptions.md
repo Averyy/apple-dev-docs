@@ -47,13 +47,6 @@ struct CSVWritingOptions
 - [var trueEncoding: String](csvwritingoptions/trueencoding.md)
   The string the CSV file generator uses to represent true Boolean values.
 
-## See Also
-
-- [func writeCSV(to: URL, options: CSVWritingOptions) throws](dataframe/writecsv(to:options:).md)
-  Creates a CSV file with the contents of the data frame type.
-- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](dataframe/csvrepresentation(options:).md)
-  Generates a CSV data instance of the data frame type.
-
 
 ---
 

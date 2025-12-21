@@ -17,9 +17,9 @@ var remoteStorageBuffer: (any MTLBuffer)? { get }
 
 #### Discussion
 
-If the value of this property is non-`nil`, it contains a reference to the [`MTLBuffer`](mtlbuffer.md) object that created this buffer. If the buffer isn’t a remote view, the value of this property is `nil`.
+If the value of this property is non-`nil`, it contains a reference to the [`MTLBuffer`](mtlbuffer.md) instance that created this buffer. If the buffer isn’t a remote view, the value of this property is `nil`.
 
-You can use remote views only as a source for copy commands encoded by a [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md).
+You can use remote views only as a source for copy commands encoded by an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md).
 
 ## See Also
 

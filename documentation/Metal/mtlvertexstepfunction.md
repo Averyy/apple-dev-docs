@@ -21,7 +21,7 @@ enum MTLVertexStepFunction
 
 ## Topics
 
-### Constants
+### Step functions
 - [MTLVertexStepFunction.constant](mtlvertexstepfunction/constant.md)
   The vertex function fetches attribute data once and uses that data for every vertex.
 - [MTLVertexStepFunction.perVertex](mtlvertexstepfunction/pervertex.md)
@@ -44,6 +44,15 @@ enum MTLVertexStepFunction
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var stepFunction: MTLVertexStepFunction](mtlvertexbufferlayoutdescriptor/stepfunction.md)
+  The circumstances under which the vertex and its attributes are presented to the vertex function.
+- [var stepRate: Int](mtlvertexbufferlayoutdescriptor/steprate.md)
+  The interval at which the vertex and its attributes are presented to the vertex function.
+- [var stride: Int](mtlvertexbufferlayoutdescriptor/stride.md)
+  The number of bytes between the first byte of two consecutive vertices in a buffer.
 
 
 ---

@@ -10,10 +10,9 @@ Maximum font index value.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
 - visionOS ?+
 - watchOS ?+
-- Unknown ?+ - Deprecated
-- tvOS ?+
 
 ## Declaration
 

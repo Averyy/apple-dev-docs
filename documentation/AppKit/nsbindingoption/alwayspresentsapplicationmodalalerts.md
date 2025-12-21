@@ -16,7 +16,7 @@ static let alwaysPresentsApplicationModalAlerts: NSBindingOption
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the alerts are displayed application model, otherwise they are displayed as sheets.
+If [`true`](https://developer.apple.com/documentation/Swift/true), then the alerts are displayed application model, otherwise they are displayed as sheets.
 
 ## See Also
 

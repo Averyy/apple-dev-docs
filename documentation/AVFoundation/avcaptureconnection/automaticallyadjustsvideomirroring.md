@@ -20,9 +20,9 @@ var automaticallyAdjustsVideoMirroring: Bool { get set }
 
 #### Discussion
 
-For some session configurations, the connection mirrors the video data by default. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the value of [`isVideoMirrored`](avcaptureconnection/isvideomirrored.md) may change, depending on the configuration of the session. For example, the value may change after switching to a different capture device input.
+For some session configurations, the connection mirrors the video data by default. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the value of [`isVideoMirrored`](avcaptureconnection/isvideomirrored.md) may change, depending on the configuration of the session. For example, the value may change after switching to a different capture device input.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

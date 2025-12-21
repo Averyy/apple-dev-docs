@@ -4,7 +4,7 @@
 
 #### Overview
 
-The functions of the `SCDynamicStoreCopySpecific` programming interface allow an application to determine specific configuration information about the current system (for example, the computer or sharing name or the currently logged-in user). Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+The functions of the `SCDynamicStoreCopySpecific` programming interface allow an application to determine specific configuration information about the current system (for example, the computer or sharing name or the currently logged-in user). Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 ## Topics
 

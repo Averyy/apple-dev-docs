@@ -17,11 +17,11 @@ class var prefersTrackingUntilMouseUp: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `NSSliderCell` continues to track the pointer even after it leaves the cell’s tracking rectangle; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the `NSSliderCell` continues to track the pointer even after it leaves the cell’s tracking rectangle; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), users retain control of the knob until they release the mouse button, even if they drag the pointer to the other side of the screen.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), users retain control of the knob until they release the mouse button, even if they drag the pointer to the other side of the screen.
 
 You should not call this method explicitly. Override it if you create a subclass of `NSSliderCell` that should track the mouse differently.
 

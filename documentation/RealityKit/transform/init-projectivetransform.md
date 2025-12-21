@@ -6,7 +6,12 @@
 A convenience initializer for the Transform Component that takes a `ProjectiveTransform3D`
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

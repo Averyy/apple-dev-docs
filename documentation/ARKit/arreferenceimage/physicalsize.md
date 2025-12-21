@@ -20,7 +20,7 @@ var physicalSize: CGSize { get }
 
 To accurately recognize the position and orientation of an image in the AR environment, ARKit must know the image’s physical size. You provide this information when creating an AR reference image in your Xcode project’s asset catalog, or when programmatically creating an [`ARReferenceImage`](arreferenceimage.md).
 
-When you want to recognize different-sized versions of a reference image, you set [`automaticImageScaleEstimationEnabled`](arworldtrackingconfiguration/automaticimagescaleestimationenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true), and in this case, ARKit disregards `physicalSize`.
+When you want to recognize different-sized versions of a reference image, you set [`automaticImageScaleEstimationEnabled`](arworldtrackingconfiguration/automaticimagescaleestimationenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true), and in this case, ARKit disregards `physicalSize`.
 
 ## See Also
 

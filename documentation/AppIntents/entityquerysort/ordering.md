@@ -21,20 +21,9 @@ enum Ordering
 
 ## Topics
 
-### Operators
-- [static func == (EntityQuerySort<Entity>.Ordering, EntityQuerySort<Entity>.Ordering) -> Bool](entityquerysort/ordering/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [EntityQuerySort.Ordering.ascending](entityquerysort/ordering/ascending.md)
 - [EntityQuerySort.Ordering.descending](entityquerysort/ordering/descending.md)
-### Instance Properties
-- [var hashValue: Int](entityquerysort/ordering/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](entityquerysort/ordering/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](entityquerysort/ordering/equatable-implementations.md)
 
 ## Relationships
 

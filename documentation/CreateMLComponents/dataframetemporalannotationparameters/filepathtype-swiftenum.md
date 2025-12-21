@@ -27,14 +27,6 @@ enum FilePathType
   The file path is absolute.
 - [DataFrameTemporalAnnotationParameters.FilePathType.relative(baseURL:)](dataframetemporalannotationparameters/filepathtype-swift.enum/relative(baseurl:).md)
   The file path is relative to the `baseURL`.
-### Getting the description
-- [var description: String](dataframetemporalannotationparameters/filepathtype-swift.enum/description.md)
-  A textual representation of this instance.
-### Operators
-- [static func == (DataFrameTemporalAnnotationParameters<Annotation>.FilePathType, DataFrameTemporalAnnotationParameters<Annotation>.FilePathType) -> Bool](dataframetemporalannotationparameters/filepathtype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](dataframetemporalannotationparameters/filepathtype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

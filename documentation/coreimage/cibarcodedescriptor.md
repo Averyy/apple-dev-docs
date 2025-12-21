@@ -21,19 +21,7 @@ class CIBarcodeDescriptor
 
 #### Overview
 
-Subclasses encapsulate the formal specification and fields specific to a code type.  Each subclass is sufficient to recreate the unique symbol exactly as seen or used with a custom parser.
-
-```objc
-- (CIImage*) imageFromBarcodeDescriptor:(CIBarcodeDescriptor*)descriptor
-{
-    NSDictionary* inputParams = @{
-                                  @"inputBarcodeDescriptor" : descriptor
-                                  };
-    CIFilter* barcodeCreationFilter = [CIFilter filterWithName:@"CIBarcodeGenerator" withInputParameters:inputParams];
-    CIImage* outputImage = barcodeCreationFilter.outputImage;
-    return outputImage;
-}
-```
+Subclasses encapsulate the formal specification and fields specific to a code type. Each subclass is sufficient to recreate the unique symbol exactly as seen or used with a custom parser.
 
 ## Relationships
 
@@ -58,13 +46,13 @@ Subclasses encapsulate the formal specification and fields specific to a code ty
 ## See Also
 
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A square QR code symbol.
+  A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  An Aztec code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A PDF417 symbol.
+  A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A Data Matrix code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 
 
 ---

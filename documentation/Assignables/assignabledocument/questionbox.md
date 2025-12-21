@@ -48,8 +48,6 @@ struct QuestionBox
 ### Instance Properties
 - [var bounds: CGRect](assignabledocument/questionbox/bounds.md)
   The bounds of the question box on the page.
-- [var hashValue: Int](assignabledocument/questionbox/hashvalue.md)
-  The hash value.
 - [var id: AssignableDocument.QuestionBox.ID](assignabledocument/questionbox/id-swift.property.md)
   The stable identity of this box.
 - [var pageID: AssignableDocument.Page.ID?](assignabledocument/questionbox/pageid.md)
@@ -62,8 +60,6 @@ struct QuestionBox
   The document type this element is for.
 - [AssignableDocument.QuestionBox.ID](assignabledocument/questionbox/id-swift.typealias.md)
   A type representing the stable identity of this box.
-### Default Implementations
-- [Equatable Implementations](assignabledocument/questionbox/equatable-implementations.md)
 
 ## Relationships
 

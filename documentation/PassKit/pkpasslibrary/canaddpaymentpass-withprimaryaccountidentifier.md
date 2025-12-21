@@ -21,11 +21,11 @@ func canAddPaymentPass(withPrimaryAccountIdentifier primaryAccountIdentifier: St
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if PassKit can add the pass.
+[`true`](https://developer.apple.com/documentation/Swift/true) if PassKit can add the pass.
 
 #### Discussion
 
-Adding payment passes requires a special entitlement from Apple. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/swift/false).  For more information about requesting this entitlement, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
+Adding payment passes requires a special entitlement from Apple. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).  For more information about requesting this entitlement, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
 
 ## Parameters
 

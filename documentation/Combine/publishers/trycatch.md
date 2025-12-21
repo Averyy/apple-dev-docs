@@ -26,24 +26,19 @@ Because this publisher’s handler can throw an error, [`Publishers.TryCatch`](p
 
 ## Topics
 
-### Creating a Try-Catch Publisher
+### Creating a try-catch publisher
 - [init(upstream: Upstream, handler: (Upstream.Failure) throws -> NewPublisher)](publishers/trycatch/init(upstream:handler:).md)
   Creates a publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher or by throwing an error.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryCatch.Output](publishers/trycatch/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryCatch.Failure](publishers/trycatch/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/trycatch/upstream.md)
   The publisher from which this publisher receives its elements.
 - [let handler: (Upstream.Failure) throws -> NewPublisher](publishers/trycatch/handler.md)
   A closure that accepts the upstream failure as input and either returns a publisher to replace the upstream publisher or throws an error.
-### Applying Operators
-- [Publisher Operators](publishers-trycatch-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/trycatch/publisher-implementations.md)
 
 ## Relationships
 

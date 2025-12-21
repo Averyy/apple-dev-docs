@@ -23,7 +23,7 @@ func VTMultiPassStorageCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRang
 
 You can use the multipass storage object to perform multipass encoding; see [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md).
 
-Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the multipass storage object when you are done with it.
+Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the multipass storage object when you are done with it.
 
 ## Parameters
 

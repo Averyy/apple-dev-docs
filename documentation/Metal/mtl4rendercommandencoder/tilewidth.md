@@ -7,18 +7,25 @@
 Sets the width of a tile for this render pass.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var tileWidth: Int { get }
 ```
+
+## See Also
+
+- [func dispatchThreadsPerTile(MTLSize)](mtl4rendercommandencoder/dispatchthreadspertile(_:).md)
+  Encodes a command that invokes a tile shader function from the encoder’s current tile render pipeline state.
+- [var tileHeight: Int](mtl4rendercommandencoder/tileheight.md)
+  Sets the height of a tile for this render pass.
 
 
 ---

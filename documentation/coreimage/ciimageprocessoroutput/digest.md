@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+A 64-bit digest that uniquely describes the contents of the output of a processor.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -17,6 +19,10 @@
 ```swift
 var digest: UInt64 { get }
 ```
+
+#### Discussion
+
+This digest will change if the graph up to and including the output of the processor changes in any way.
 
 
 ---

@@ -21,7 +21,7 @@ var sensorsActive: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the sensors are active; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the sensors are active; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

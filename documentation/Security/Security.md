@@ -108,6 +108,7 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [Security Functions](security-functions.md)
 - [Security Data Types](security-data-types.md)
 ### Variables
+- [var CSSM_APPLE_PRIVATE_CSPDL_CODE_28: Int](cssm_apple_private_cspdl_code_28.md)
 - [var TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256: SSLCipherSuite](tls_ecdhe_psk_with_chacha20_poly1305_sha256.md)
 - [var errSecMissingQualifiedCertStatement: OSStatus](errsecmissingqualifiedcertstatement.md)
 - [let kSecPolicyAppleEAPClient: CFString](ksecpolicyappleeapclient.md)
@@ -119,6 +120,7 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [let kSecTrustQCStatements: CFString](ksectrustqcstatements.md)
 - [let kSecTrustQWACValidation: CFString](ksectrustqwacvalidation.md)
 ### Functions
+- [func SecIdentityCreate(CFAllocator?, SecCertificate, SecKey) -> SecIdentity?](secidentitycreate(_:_:_:).md)
 - [func sec_protocol_metadata_copy_negotiated_protocol(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](sec_protocol_metadata_copy_negotiated_protocol(_:).md)
 - [func sec_protocol_metadata_copy_server_name(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](sec_protocol_metadata_copy_server_name(_:).md)
 ### Type Aliases

@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-The payment mode for subscription offers on an auto-renewable subscription.
+The payment mode for a discount offer on an In-App Purchase.
 
 **Availability**:
 - App Store Server API 1.10+
@@ -33,7 +33,7 @@ For more information on subscription offers, see [`Providing subscription offers
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 
 
 ---

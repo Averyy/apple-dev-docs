@@ -21,7 +21,7 @@ init(id: AdvancedCommerceProduct.ID) async throws
 
 #### Discussion
 
-If given the product ID of an in-app purchase that doesn’t have access to [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/), this initializer throws [`StoreKitError.unsupported`](storekiterror/unsupported.md).
+This initializer throws [`StoreKitError.unsupported`](storekiterror/unsupported.md) if you provide the product ID of an In-App Purchase that doesn’t have access to [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
 
 
 ---

@@ -15,6 +15,19 @@
 func AudioDeviceStart(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIOProcID?) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Starts IO for the given AudioDeviceIOProcID.
+
+## Parameters
+
+- `inDevice`: The AudioDevice to start the IOProc on.
+- `inProcID`: The AudioDeviceIOProcID to start. Note that this can be NULL, which starts   the hardware regardless of whether or not there are any IOProcs registered.   This is necessary if any of the AudioDevice’s timing services are to be   used. A balancing call to AudioDeviceStop with a NULL IOProc is required to   stop the hardware.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

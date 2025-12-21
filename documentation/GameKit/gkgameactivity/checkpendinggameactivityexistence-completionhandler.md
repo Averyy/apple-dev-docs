@@ -6,18 +6,22 @@
 Checks whether there is a pending activity to handle for the current game.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 class var hasPendingGameActivities: Bool { get async }
 ```
+
+#### Discussion
+
+You can call this method before you initialize Game Center to avoid activating the system banner or welcome experience.
 
 
 ---

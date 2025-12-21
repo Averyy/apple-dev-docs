@@ -6,7 +6,7 @@
 A correction type to apply on coordinate spaces returned from ARKit APIs.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

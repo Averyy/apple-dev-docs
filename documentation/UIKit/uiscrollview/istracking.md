@@ -21,7 +21,7 @@ var isTracking: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the user has touched the content view but might not have yet have started dragging it.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the user has touched the content view but might not have yet have started dragging it.
 
 ## See Also
 

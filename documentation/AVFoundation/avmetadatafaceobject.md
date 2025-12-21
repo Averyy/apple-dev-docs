@@ -20,7 +20,7 @@ class AVMetadataFaceObject
 
 ## Mentions
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 #### Overview
 
@@ -28,10 +28,10 @@ The `AVMetadataFaceObject` class is a concrete subclass of [`AVMetadataObject`](
 
 ## Topics
 
-### Getting the Face Identifier
+### Getting the face identifier
 - [var faceID: Int](avmetadatafaceobject/faceid.md)
   The unique ID for this face metadata object.
-### Accessing the Face Detection Data
+### Accessing the face detection data
 - [var hasRollAngle: Bool](avmetadatafaceobject/hasrollangle.md)
   A Boolean value indicating whether there is a valid roll angle associated with the face.
 - [var rollAngle: CGFloat](avmetadatafaceobject/rollangle.md)
@@ -41,7 +41,7 @@ The `AVMetadataFaceObject` class is a concrete subclass of [`AVMetadataObject`](
 - [var yawAngle: CGFloat](avmetadatafaceobject/yawangle.md)
   The yaw angle of the face specified in degrees.
 ### Constants
-- [Face Metadata Type](face-metadata-type.md)
+- [Face metadata type](face-metadata-type.md)
   A metadata type string for face detection metadata.
 
 ## Relationships

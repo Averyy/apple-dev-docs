@@ -6,10 +6,10 @@
 An interface for obtaining electricity guidance data.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -23,9 +23,6 @@ final class Service
 - [func guidance(using: ElectricityGuidance.Query, at: UUID) -> some AsyncSequence<ElectricityGuidance, any Error>
 ](electricityguidance/service/guidance(using:at:).md)
   Returns an async sequence of electricity guidance forecasts for the requested venue with cost information incorporated, if available.
-- [func guidance(using: ElectricityGuidance.Query, for: CLLocation) -> some AsyncSequence<ElectricityGuidance, any Error>
-](electricityguidance/service/guidance(using:for:).md)
-  Returns an async sequence of electricity guidance forecasts without cost information incorporated.
 
 ## Relationships
 

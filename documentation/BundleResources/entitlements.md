@@ -18,11 +18,15 @@ Key-value pairs that grant an executable permission to use a service or technolo
 
 An  is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
 
-You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. You can also edit the entitlements file directly. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
+You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
+
+You typically let Xcode manage the entitlements file for you. For information on manually editing the file, see [`Editing property list files`](https://developer.apple.com/documentation/Xcode/editing-property-list-files).
 
 ## Topics
 
 ### Essentials
+- [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md)
+  Configure your target to include and customize capabilities that provide access to Apple’s app services.
 - [Diagnosing Issues with Entitlements](diagnosing-issues-with-entitlements.md)
   Verify your app’s entitlements at every stage of development to track down errors during distribution.
 - [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
@@ -32,9 +36,31 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### AccessorySetupKit
 - [com.apple.developer.accessory-setup-discovery-extension](entitlements/com.apple.developer.accessory-setup-discovery-extension.md)
   An entitlement that lets an app extension discover and set up accessories.
-### Alternative marketplaces
+### Accessory Transport Extension
+- [com.apple.developer.accessory-transport-extension](entitlements/com.apple.developer.accessory-transport-extension.md)
+  A Boolean value that indicates whether your app can exchange sensitive information with a connected accessory.
+### Alternative browser engines
+- [Embedded Browser Engine Entitlement](entitlements/com.apple.developer.embedded-web-browser-engine.md)
+  An entitlement that enables an app to embed an alternative browser engine.
+- [Embedded Browser Engine Association Entitlement](entitlements/com.apple.developer.embedded-web-browser-engine.engine-association.md)
+  An entitlement that indicates whether you own the alternative browser engine that your app embeds.
+- [Web Browser Engine Entitlement](entitlements/com.apple.developer.web-browser-engine.host.md)
+  An entitlement that enables your browser app to implement an alternative browser engine.
+- [com.apple.developer.web-browser-engine.networking](entitlements/com.apple.developer.web-browser-engine.networking.md)
+  An entitlement that grants an alternative browser engine’s extension the ability to use the network.
+- [com.apple.developer.web-browser-engine.webcontent](entitlements/com.apple.developer.web-browser-engine.webcontent.md)
+  An entitlement that grants an alternative browser engine’s extension the ability to manage web content.
+- [com.apple.developer.web-browser-engine.rendering](entitlements/com.apple.developer.web-browser-engine.rendering.md)
+  An entitlement that grants an alternative browser engine’s extension the ability to render web content.
+- [com.apple.developer.memory.transfer_accept](entitlements/com.apple.developer.memory.transfer_accept.md)
+  An entitlement that grants an alternative browser engine’s web-content extension the ability to increase memory.
+- [com.apple.developer.memory.transfer_send](entitlements/com.apple.developer.memory.transfer_send.md)
+  An entitlement that grants an alternative browser engine’s rendering extension the ability to transfer memory.
+- [com.apple.developer.web-browser-engine.restrict.notifyd](entitlements/com.apple.developer.web-browser-engine.restrict.notifyd.md)
+  An entitlement that restricts access to system notifications to enhance the security of your browser app.
+### Alternative app marketplaces
 - [com.apple.developer.marketplace.app-installation](entitlements/com.apple.developer.marketplace.app-installation.md)
-  The entitlement that enables an app to vend other apps as an alternative app marketplace.
+  An entitlement that enables an app to vend other apps as an alternative app marketplace.
 ### App Clips
 - [Parent Application Identifiers Entitlement](entitlements/com.apple.developer.parent-application-identifiers.md)
   A list of parent application identifiers for an App Clip with exactly one entry.
@@ -42,7 +68,15 @@ You configure entitlements for your app by declaring capabilities for a target i
   A list of App Clip identifiers for an app with exactly one entry.
 - [com.apple.developer.on-demand-install-capable](entitlements/com.apple.developer.on-demand-install-capable.md)
   A Boolean value that indicates whether a bundle represents an App Clip.
+### AppIntents
+- [Side Button Access](entitlements/com.apple.developer.side-button-access.allow.md)
+  A Boolean value that indicates whether a person in Japan can configure the side button of iPhone to launch your voice-based conversational app.
+### AppMigrationKit
+- [com.apple.developer.app-migration.data-container-access](entitlements/com.apple.developer.app-migration.data-container-access.md)
+  An entitlement required for app extensions to perform a one-time transfer of on-device data to or from another platform.
 ### Authentication
+- [Account Creation Requires Phone Number](entitlements/com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
+  A Boolean value that indicates whether an app requires someone to provide a phone number to create an account.
 - [AutoFill Credential Provider Entitlement](entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [Sign in with Apple Entitlement](entitlements/com.apple.developer.applesignin.md)
@@ -62,6 +96,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [com.apple.developer.carplay-quick-ordering](entitlements/com.apple.developer.carplay-quick-ordering.md)
 - [com.apple.developer.carplay-messaging](entitlements/com.apple.developer.carplay-messaging.md)
 - [com.apple.developer.playable-content](entitlements/com.apple.developer.playable-content.md)
+### CloudKit
+- [com.apple.developer.icloud-extended-share-access](entitlements/com.apple.developer.icloud-extended-share-access.md)
+  An array of strings that represent the types of information an app can request about a CloudKit share.
 ### Contacts
 - [com.apple.developer.contacts.notes](entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
@@ -104,8 +141,8 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value indicating whether your app may use a shared coordinate space.
 - [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
   A Boolean value indicating whether the system prohibits capturing your app’s content.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
@@ -125,6 +162,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### Foundation Models
 - [com.apple.developer.foundation-model-adapter](entitlements/com.apple.developer.foundation-model-adapter.md)
   A Boolean value that indicates whether the app can enable custom adapters for the Foundation Models framework.
+### FSKit
+- [com.apple.developer.fskit.fsmodule](entitlements/com.apple.developer.fskit.fsmodule.md)
+  An entitlement that indicates an extension provides an FSKit filesystem.
 ### Games
 - [Game Center Entitlement](entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
@@ -174,7 +214,7 @@ You configure entitlements for your app by declaring capabilities for a target i
   An array of strings that represent the types of mobile documents (mdoc) that an identity document provider app can provide during an online web presentment.
 ### Journaling Suggestions
 - [com.apple.developer.journal.allow](entitlements/com.apple.developer.journal.allow.md)
-  The entitlement that enables an app to present the journaling suggestions picker.
+  An entitlement that enables an app to present the journaling suggestions picker.
 ### LiveCommunicationKit
 - [Default Calling App](entitlements/com.apple.developer.calling-app.md)
   A Boolean value that indicates whether an app can be the default calling app on someone’s device.
@@ -214,6 +254,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### Navigation
 - [Default Navigation](entitlements/com.apple.developer.navigation-app.md)
   A Boolean value that indicates whether an app can be the default navigation app on someone’s device.
+### NearbyInteraction
+- [Nearby Interaction NI DL-TDOA API (development)](entitlements/com.apple.developer.nearbyinteraction.dltdoa.md)
+  A Boolean value that indicates whether your app can enable Downlink Time-Difference-of-Arrival (DL-DTOA) ranging.
 ### Networking
 - [Network Extensions Entitlement](entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
@@ -232,6 +275,8 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [5G Network Slicing Traffic Category](entitlements/com.apple.developer.networking.slicing.trafficcategory.md)
   The key that defines the traffic category entitlement to enable Cellular Network Slicing.
 - [com.apple.developer.networking.vmnet](entitlements/com.apple.developer.networking.vmnet.md)
+- [Configuring your app for ultra-constrained networks](configuring-your-app-for-ultra-constrained-networks.md)
+  Prepare to deliver data over resource-limited data networks.
 - [com.apple.developer.networking.carrier-constrained.appcategory](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md)
   The key that defines an app’s category for accessing a carrier-provided satellite network.
 - [com.apple.developer.networking.carrier-constrained.app-optimized](entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md)
@@ -280,12 +325,16 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [Siri Entitlement](entitlements/com.apple.developer.siri.md)
   A Boolean value that indicates whether the app handles Siri requests.
 ### StoreKit
+- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+  An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-link.account](entitlements/com.apple.developer.storekit.external-link.account.md)
   A Boolean value that indicates whether your app can link to an external website for account creation or management.
 - [com.apple.developer.storekit.external-purchase](entitlements/com.apple.developer.storekit.external-purchase.md)
   A Boolean value that indicates whether your app can offer external purchases.
 - [com.apple.developer.storekit.external-purchase-link](entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
+- [com.apple.developer.storekit.external-purchase-link-streaming](entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md)
+  An entitlement that grants a qualifying music-streaming app the ability to communicate and promote offers.
 ### System
 - [DriverKit](driverkit.md)
   Develop device drivers in macOS and iPadOS.
@@ -303,7 +352,7 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [com.apple.developer.video-subscriber-single-sign-on](entitlements/com.apple.developer.video-subscriber-single-sign-on.md)
   A Boolean value that indicates whether your app can use the TV Provider Authentication service.
 - [com.apple.smoot.subscriptionservice](entitlements/com.apple.smoot.subscriptionservice.md)
-  A Boolean value that indicates whether your app can integrate with APIs to provide different feed based content.
+  A Boolean value that indicates whether your app meets the requirements of the video-partner program.
 ### Vision
 - [Low-Latency Streaming](entitlements/com.apple.developer.low-latency-streaming.md)
   A Boolean value indicating whether your app may use low-latency wireless networking.
@@ -313,7 +362,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [Merchant IDs Entitlement](entitlements/com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
 - [com.apple.developer.in-app-identity-presentment](entitlements/com.apple.developer.in-app-identity-presentment.md)
+  An entitlement that verifies age or identity.
 - [com.apple.developer.in-app-identity-presentment.merchant-identifiers](entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers.md)
+  An entitlement for the merchant identifier associated with the in-app identity presentment entitlement.
 - [ID Verifier - Display Only](entitlements/com.apple.developer.proximity-reader.identity.display.md)
 - [ID Verifier - Data Transfer](entitlements/com.apple.developer.proximity-reader.identity.read.md)
 ### WeatherKit
@@ -321,11 +372,11 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value that indicates whether the app may use WeatherKit.
 ### Web browsers
 - [com.apple.developer.web-browser](entitlements/com.apple.developer.web-browser.md)
-  A Boolean that indicates whether the app can act as the user’s default web browser.
+  An entitlement that indicates whether the app can act as the user’s default web browser.
 - [com.apple.developer.web-browser.public-key-credential](entitlements/com.apple.developer.web-browser.public-key-credential.md)
-  A Boolean value that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
+  An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
 - [com.apple.developer.browser.app-installation](entitlements/com.apple.developer.browser.app-installation.md)
-  The entitlement that enables a browser to install alternative-distribution apps from a website.
+  An entitlement that enables a browser to install alternative distribution apps from a website.
 ### Wireless interfaces
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
@@ -337,8 +388,12 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 - [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
   An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
+- [ISO18092 system codes for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+  A list of FeliCa system codes that the app supports.
 - [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [ISO7816 application identifiers for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+  A list of application identifiers that the app supports.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
 - [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)
@@ -355,27 +410,22 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value that indicates whether the app may exchange audio with other Inter-App Audio-enabled apps.
 - [All files entitlement](entitlements/com.apple.security.files.all.md)
   A Boolean value that indicates whether the app may have access to all files.
-### BrowserEngineKit
-- [com.apple.developer.embedded-web-browser-engine](entitlements/com.apple.developer.embedded-web-browser-engine.md)
-- [com.apple.developer.memory.transfer_accept](entitlements/com.apple.developer.memory.transfer_accept.md)
-- [com.apple.developer.memory.transfer_send](entitlements/com.apple.developer.memory.transfer_send.md)
-- [com.apple.developer.web-browser-engine.host](entitlements/com.apple.developer.web-browser-engine.host.md)
-- [com.apple.developer.web-browser-engine.networking](entitlements/com.apple.developer.web-browser-engine.networking.md)
-- [com.apple.developer.web-browser-engine.rendering](entitlements/com.apple.developer.web-browser-engine.rendering.md)
-- [com.apple.developer.web-browser-engine.webcontent](entitlements/com.apple.developer.web-browser-engine.webcontent.md)
 ### ScreenCaptureKit
 - [Persistent Content Capture](entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
 ### Wi-Fi Aware
 - [com.apple.developer.wifi-aware](entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
+### Wi-Fi Infrastructure
+- [com.apple.developer.wifi-infrastructure](entitlements/com.apple.developer.wifi-infrastructure.md)
+  The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
 
 ## See Also
 
 - [Information Property List](information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
 - [Privacy manifest files](privacy-manifest-files.md)
-  Describe the data your app or third-party SDK collects and the reasons required APIs it uses.
+  Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 
 
 ---

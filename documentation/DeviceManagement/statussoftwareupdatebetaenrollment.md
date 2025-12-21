@@ -51,7 +51,7 @@ object StatusSoftwareUpdateBetaEnrollment
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s rapid security response identifier.
+  A status report of the device’s operating system’s Background Security Improvement identifier.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
   A status report of the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)

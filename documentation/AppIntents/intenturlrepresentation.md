@@ -28,21 +28,6 @@ Note that you need to use a universal link for your URL representation, you canâ
 
 ### Initializers
 - [init(String)](intenturlrepresentation/init(_:).md)
-- [init(stringInterpolation: IntentURLRepresentation<Intent>.StringInterpolation)](intenturlrepresentation/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: String)](intenturlrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [IntentURLRepresentation.ExtendedGraphemeClusterLiteralType](intenturlrepresentation/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [IntentURLRepresentation.StringLiteralType](intenturlrepresentation/stringliteraltype.md)
-  A type that represents a string literal.
-- [IntentURLRepresentation.UnicodeScalarLiteralType](intenturlrepresentation/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](intenturlrepresentation/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringInterpolation Implementations](intenturlrepresentation/expressiblebystringinterpolation-implementations.md)
-- [ExpressibleByStringLiteral Implementations](intenturlrepresentation/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

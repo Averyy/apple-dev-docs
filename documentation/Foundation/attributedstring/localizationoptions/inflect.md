@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Whether attributes for automatic grammar agreement and formatting should be processed upon loading the string. Default value is `true`.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

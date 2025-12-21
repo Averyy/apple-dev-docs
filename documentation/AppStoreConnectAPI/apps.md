@@ -23,7 +23,8 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
 - [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [GET /v1/apps/{id}/relationships/appEncryptionDeclarations](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+  Find and list all available app encryption declaration IDs for a specific app.
 ### Getting app build and prerelease version information
 - [List All Builds of an App](get-v1-apps-_id_-builds.md)
   Get a list of builds associated with a specific app.
@@ -77,7 +78,8 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [GET /v1/apps/{id}/relationships/endUserLicenseAgreement](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
 - [List all custom product pages for an app](get-v1-apps-_id_-appcustomproductpages.md)
   Get a list of all custom product pages for a specific app.
-- [GET /v1/apps/{id}/relationships/appCustomProductPages](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+- [Get all custom product page resource IDs for an app](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+  Get a list of custom product page resource IDs associated with an app.
 - [GET /v1/apps/{id}/appStoreVersionExperimentsV2](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
 - [GET /v1/apps/{id}/relationships/appStoreVersionExperimentsV2](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
 ### Getting in-app purchase information
@@ -90,7 +92,8 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 ### Getting review submissions
 - [Get review submissions for an app](get-v1-apps-_id_-reviewsubmissions.md)
   Get a list of review submissions associated with a specific app.
-- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List review submission Ids](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+  Get the list of review submission IDs for a specific app.
 ### Getting power and performance metrics
 - [Get Power and Performance Metrics for an App](get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
@@ -135,7 +138,14 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
 - [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
 ### Getting in-app purchase information
-- [GET /v1/apps/{id}/relationships/inAppPurchasesV2](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
+- [List All In-App Purchases for an App](get-v1-apps-_id_-inapppurchasesv2.md)
+  Get a list of the in-app purchases for a specific app.
+- [List in-app purchases IDs for an app](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
+  Get a list of all in-app purchases IDs for a specific app.
+- [List All In-App Purchases for an App V1](get-v1-apps-_id_-inapppurchases.md)
+  List the in-app purchases that are available for your app.
+- [List in-app purchases IDs for an app V1](get-v1-apps-_id_-relationships-inapppurchases.md)
+  Get a list of all in-app purchases IDs for a specific app V1.
 ### Getting beta feedback
 - [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
@@ -143,9 +153,11 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
   Get beta feedback screenshot submissions for a specific app.
 ### Getting background asset information
 - [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)
-  Get information about the Apple hosted background assets for a specific app.
+  Get information about the Apple-hosted background assets for a specific app.
 - [List the assets packs IDs for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
+- [Modify a background asset](patch-v1-backgroundassets-_id_.md)
+  Update a specific background asset.
 ### Getting alternative distribution information
 - [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
@@ -165,11 +177,19 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)
   Read webhook configuration details for a specific app.
 - [GET /v1/apps/{id}/relationships/webhooks](get-v1-apps-_id_-relationships-webhooks.md)
-### Getting game center detail information
+### Search keywords
+- [GET /v1/apps/{id}/relationships/searchKeywords](get-v1-apps-_id_-relationships-searchkeywords.md)
+- [GET /v1/apps/{id}/searchKeywords](get-v1-apps-_id_-searchkeywords.md)
+### Getting Game Center detail information
 - [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)
   Get Game Center detail information for an app.
 - [GET /v1/apps/{id}/relationships/gameCenterDetail](get-v1-apps-_id_-relationships-gamecenterdetail.md)
 - [GET /v1/apps/{id}/relationships/gameCenterEnabledVersions](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
+### Getting Android to iOS app mapping information
+- [Read the Android to iOS app mapping details for an app](get-v1-apps-_id_-androidtoiosappmappingdetails.md)
+  Get details about the Android to iOS app mapping for a specific app.
+- [List the IDs of Android to iOS app mapping details for an app](get-v1-apps-_id_-relationships-androidtoiosappmappingdetails.md)
+  Get the IDs of Android to iOS app mapping details for a specific app.
 ### Objects and data types
 - [object App](app.md)
   The data structure that represents an Apps resource.
@@ -222,6 +242,9 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [object AppAppStoreVersionsLinkagesResponse](appappstoreversionslinkagesresponse.md)
 - [object AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponse](appavailabilityv2territoryavailabilitieslinkagesresponse.md)
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)
+  A response that contains a list of IDs of related background assets.
+- [object BackgroundAssetUpdateRequest](backgroundassetupdaterequest.md)
+  The request body you use to update a background asset.
 - [object AppBetaAppLocalizationsLinkagesResponse](appbetaapplocalizationslinkagesresponse.md)
 - [object AppBetaAppReviewDetailLinkageResponse](appbetaappreviewdetaillinkageresponse.md)
 - [object AppBetaFeedbackCrashSubmissionsLinkagesResponse](appbetafeedbackcrashsubmissionslinkagesresponse.md)
@@ -233,6 +256,7 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [object AppCategorySubcategoriesLinkagesResponse](appcategorysubcategorieslinkagesresponse.md)
 - [object AppCiProductLinkageResponse](appciproductlinkageresponse.md)
 - [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse](appcustomproductpageappcustomproductpageversionslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
 - [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
 - [object AppGameCenterDetailLinkageResponse](appgamecenterdetaillinkageresponse.md)
 - [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
@@ -254,6 +278,12 @@ To learn more about managing your apps, see [`Add a new app`](https://developer.
 - [object AppPriceScheduleBaseTerritoryLinkageResponse](apppriceschedulebaseterritorylinkageresponse.md)
 - [object AppPriceScheduleManualPricesLinkagesResponse](apppriceschedulemanualpriceslinkagesresponse.md)
 - [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
+- [object AppSearchKeywordsLinkagesResponse](appsearchkeywordslinkagesresponse.md)
+- [type OfferCodeEnvironment](offercodeenvironment.md)
+  A string that represents the environment of an offer code.
+- [type TerritoryCode](territorycode.md)
+  The App Store territory codes.
 
 ## See Also
 

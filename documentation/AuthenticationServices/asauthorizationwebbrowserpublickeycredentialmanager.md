@@ -38,6 +38,8 @@ class ASAuthorizationWebBrowserPublicKeyCredentialManager
   Gets a list of passkeys available for authenticating with the given relying party.
 - [struct ASAuthorizationWebBrowserPlatformPublicKeyCredential](asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md)
   A structure that describes a passkey stored in the keychain, or managed by a third-party credential manager.
+### Type Properties
+- [class var isDeviceConfiguredForPasskeys: Bool](asauthorizationwebbrowserpublickeycredentialmanager/isdeviceconfiguredforpasskeys.md)
 
 ## Relationships
 

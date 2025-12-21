@@ -407,7 +407,7 @@ The `updateConfiguration(using:)` method sets up the cell’s initial appearance
 var content = defaultListContentConfiguration().updated(for: state)
 ```
 
-Then, it customizes the configuration’s values and assigns that configuration to the `UIListContentView/configuration-624t3` property of `listContentView`.
+Then, it customizes the configuration’s values and assigns that configuration to the [`configuration`](uilistcontentview/configuration.md) property of `listContentView`.
 
 For the image view and label, the `updateConfiguration(using:)` method fetches a default value cell configuration for the current state and stores it in `valueConfiguration`. It copies the preconfigured default styling and metrics from this configuration into the custom views to ensure consistency with the system styles.
 

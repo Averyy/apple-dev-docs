@@ -18,7 +18,7 @@ var sessionMode: GKSessionMode { get }
 
 #### Discussion
 
-The session mode changes the behavior of the session when [`isAvailable`](gksession/isavailable.md) is set to [`true`](https://developer.apple.com/documentation/swift/true).
+The session mode changes the behavior of the session when [`isAvailable`](gksession/isavailable.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 - A [`GKSessionMode.server`](gksessionmode/server.md) session advertises itself to local devices using its session ID.
 - A [`GKSessionMode.client`](gksessionmode/client.md) session searches for local devices advertising the same session ID. As it discovers available and compatible peers, it calls the delegate’s  [`session(_:peer:didChange:)`](gksessiondelegate/session(_:peer:didchange:).md) method.

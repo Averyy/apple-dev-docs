@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Changing the value to [`false`](https://developer.apple.com/documentation/swift/false) causes the action to appear dimmed in the resulting alert. When an action is disabled, taps on the corresponding button have no effect.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). Changing the value to [`false`](https://developer.apple.com/documentation/Swift/false) causes the action to appear dimmed in the resulting alert. When an action is disabled, taps on the corresponding button have no effect.
 
 ## See Also
 

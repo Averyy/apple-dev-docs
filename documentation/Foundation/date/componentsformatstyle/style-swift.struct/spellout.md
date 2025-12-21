@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Values are spelled out and fields are displayed in their full name. For example, “two hours, ten minutes”, “2小時10分鐘”
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

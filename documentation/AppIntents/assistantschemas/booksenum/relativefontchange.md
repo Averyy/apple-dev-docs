@@ -25,7 +25,7 @@ var relativeFontChange: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.books.relativeFontChange` schema:
 
 ```swift
-@AssistantEnum(schema: .books.relativeFontChange)
+@AppEnum(schema: .books.relativeFontChange)
 enum BookRelativeFontChange: AppEnum {
     case increase
     case decrease

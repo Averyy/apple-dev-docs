@@ -16,7 +16,7 @@ func performFileOperation(_ operation: NSWorkspace.FileOperationName, source: St
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation succeeded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation succeeded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

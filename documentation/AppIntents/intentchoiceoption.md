@@ -6,13 +6,13 @@
 A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -29,9 +29,6 @@ Each option includes display text and an optional style that influences its visu
 ### Structures
 - [IntentChoiceOption.Style](intentchoiceoption/style-swift.struct.md)
   Defines the visual style and semantic meaning of an [`IntentChoiceOption`](intentchoiceoption.md).
-### Operators
-- [static func == (IntentChoiceOption, IntentChoiceOption) -> Bool](intentchoiceoption/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(title: LocalizedStringResource, style: IntentChoiceOption.Style)](intentchoiceoption/init(title:style:).md)
   Creates a new option for a person to choose to continue an app intent.
@@ -43,8 +40,6 @@ Each option includes display text and an optional style that influences its visu
 ### Type Properties
 - [static var cancel: IntentChoiceOption](intentchoiceoption/cancel.md)
   A system-provided option that cancel the app intent.
-### Default Implementations
-- [Equatable Implementations](intentchoiceoption/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,8 +6,8 @@
 Returns an array of formats that the layer supports for its color textures
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -26,7 +26,7 @@ When using a High Dynamic Range (HDR) camera, SceneKit applies a process called 
 
 Exposure values are exponential: a value of `1.0` doubles brightness, a value of `2.0` quadruples brightness, a value of `-1.0` halves brightness, and so on. The default value is `15.0`. Decreasing the value causes brighter portions of the scene to become over-exposed (uniformly white, losing definition). Increasing the value adds more dynamic range for brighter portions of the scene; however, a greater breadth of difference between the minimum and maximum exposures decreases contrast.
 
-This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

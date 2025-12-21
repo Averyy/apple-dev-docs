@@ -20,8 +20,8 @@ final class CLServiceSession
 ## Mentions
 
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
-- [Suspending authorization requests](suspending-authorization-requests.md)
 - [Configuring your app to use location services](configuring-your-app-to-use-location-services.md)
+- [Suspending authorization requests](suspending-authorization-requests.md)
 
 ## Topics
 

@@ -16,7 +16,7 @@ func needsToBeUpdated(fromPath path: String) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) when the file wrapper needs to be updated to match `node`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`false`](https://developer.apple.com/documentation/Swift/false) when the file wrapper needs to be updated to match `node`, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

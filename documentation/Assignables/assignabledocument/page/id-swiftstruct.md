@@ -20,25 +20,8 @@ struct ID
 ## Topics
 
 ### Creating a page identifier
-- [init(from: any Decoder) throws](assignabledocument/page/id-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [AssignableDocument.Page.ID.Element](assignabledocument/page/id-swift.struct/element.md)
-  The document element type that this reference is for.
-### Operators
-- [static func == (AssignableDocument.Page.ID, AssignableDocument.Page.ID) -> Bool](assignabledocument/page/id-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var debugDescription: String](assignabledocument/page/id-swift.struct/debugdescription.md)
-  A textual representation of this instance, suitable for debugging.
-- [var hashValue: Int](assignabledocument/page/id-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](assignabledocument/page/id-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](assignabledocument/page/id-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](assignabledocument/page/id-swift.struct/equatable-implementations.md)
+- [AssignableDocument.Element](assignabledocument/element.md)
+  The type for elements of this document. An element is a component of the document such as a page or question.
 
 ## Relationships
 

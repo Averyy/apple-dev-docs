@@ -1,12 +1,12 @@
 # offer_code_ref_name
 
 **Framework**: App Store Receipts  
-**Kind**: tdef
+**Kind**: typealias
 
 The offer-reference name of the subscription offer code that the customer redeems.
 
 **Availability**:
-- App Store Receipts 1.4+ - Deprecated in 1.7
+- App Store Receipts 1.4+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ Use this value to:
 - Determine the specific offer the customer redeemed.
 - Keep track of subscription-offer codes a customer has redeemed, to limit discounts you offer, according to your business model.
 
-For more information on offers and offer codes, see [`Implementing offer codes in your app`](https://developer.apple.com/documentation/storekit/implementing-offer-codes-in-your-app).
+For more information on offers and offer codes, see [`Implementing offer codes in your app`](https://developer.apple.com/documentation/StoreKit/implementing-offer-codes-in-your-app).
 
 ## See Also
 

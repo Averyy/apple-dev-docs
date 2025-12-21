@@ -21,7 +21,7 @@ func invalidateLayout(for range: NSTextRange)
 ## See Also
 
 - [var textViewportLayoutController: NSTextViewportLayoutController](nstextlayoutmanager/textviewportlayoutcontroller.md)
-  Returns text viewport layout controller associated with the layout manager’s text container.
+  The text viewport layout controller associated with the layout manager’s text container.
 - [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-68dez.md)
   Returns the text layout fragment from the document at the specified location.
 - [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-4dhrx.md)

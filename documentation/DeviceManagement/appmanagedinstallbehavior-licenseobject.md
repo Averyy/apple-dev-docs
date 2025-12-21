@@ -8,7 +8,7 @@ A dictionary that specifies the type of license the app uses.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.4+
 
 ## Declaration
@@ -16,6 +16,10 @@ A dictionary that specifies the type of license the app uses.
 ```swift
 object AppManagedInstallBehavior_LicenseObject
 ```
+
+## Mentions
+
+- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
 
 
 ---

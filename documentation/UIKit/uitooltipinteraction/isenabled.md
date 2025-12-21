@@ -20,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-A view or control can only display a tooltip from an enabled interaction. Set the value of the [`isEnabled`](uitooltipinteraction/isenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true) to enable the interaction or [`false`](https://developer.apple.com/documentation/swift/false) to disable it. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+A view or control can only display a tooltip from an enabled interaction. Set the value of the [`isEnabled`](uitooltipinteraction/isenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) to enable the interaction or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

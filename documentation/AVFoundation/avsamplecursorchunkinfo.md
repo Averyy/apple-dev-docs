@@ -22,7 +22,7 @@ struct AVSampleCursorChunkInfo
 
 ## Topics
 
-### Chunk Information
+### Chunk information
 - [var chunkSampleCount: Int64](avsamplecursorchunkinfo/chunksamplecount.md)
   The count of media samples in the chunk.
 - [var chunkHasUniformSampleSizes: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformsamplesizes.md)

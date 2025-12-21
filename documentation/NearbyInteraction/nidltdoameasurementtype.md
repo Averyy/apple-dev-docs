@@ -3,11 +3,11 @@
 **Framework**: Nearby Interaction  
 **Kind**: enum
 
-The measurement types of DL-TDOA measurement updates that Nearby Interaction supports.
+The possible phases of downlink positioning signals.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,14 +15,22 @@ The measurement types of DL-TDOA measurement updates that Nearby Interaction sup
 enum NIDLTDOAMeasurementType
 ```
 
+#### Overview
+
+The [`NIDLTDOAMeasurement`](nidltdoameasurement.md) class [`measurementType`](nidltdoameasurement/measurementtype.md) property is of this type.
+
 ## Topics
 
-### Enumeration Cases
-- [NIDLTDOAMeasurementType.final](nidltdoameasurementtype/final.md)
+### Identifying the measurement type
 - [NIDLTDOAMeasurementType.poll](nidltdoameasurementtype/poll.md)
+  A type that indicates the measurement derives from an initiating anchor’s first message.
 - [NIDLTDOAMeasurementType.response](nidltdoameasurementtype/response.md)
-### Initializers
+  A type that indicates the measurement derives from responder anchors’ messages.
+- [NIDLTDOAMeasurementType.final](nidltdoameasurementtype/final.md)
+  A type that indicates the measurement derives from an initial anchor’s last message.
+### Creating a measurement type
 - [init?(rawValue: Int)](nidltdoameasurementtype/init(rawvalue:).md)
+  Creates a measurement type from the given underlying value.
 
 ## Relationships
 
@@ -33,6 +41,13 @@ enum NIDLTDOAMeasurementType
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class NIDLTDOAMeasurement](nidltdoameasurement.md)
+  Information from a Downlink Time-Difference-of-Arrival anchor that you use to derive a range estimate.
+- [enum NIDLTDOACoordinatesType](nidltdoacoordinatestype.md)
+  The possible coordinate types for Downlink Time-Difference-of-Arrival measurement updates.
 
 
 ---

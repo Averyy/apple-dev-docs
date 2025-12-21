@@ -6,7 +6,7 @@
 An AppKit type that hosts and can present SwiftUI scenes
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

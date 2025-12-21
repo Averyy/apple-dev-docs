@@ -16,12 +16,12 @@ Returns a copy of a certificate’s serial number.
 ## Declaration
 
 ```swift
-func SecCertificateCopySerialNumber(_ certificate: SecCertificate) -> CFData?
+func SecCertificateCopySerialNumber(_ certificate: SecCertificate, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?
 ```
 
 #### Return Value
 
-A data instance containing a DER-encoded integer for the certificate’s serial number (without the tag and length fields) or `nil` if an error occurred. In Objective-C, free this object with a call to [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) when you are done with it.
+A data instance containing a DER-encoded integer for the certificate’s serial number (without the tag and length fields) or `nil` if an error occurred. In Objective-C, free this object with a call to [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
 
 ## Parameters
 

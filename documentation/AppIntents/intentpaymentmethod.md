@@ -45,9 +45,6 @@ An `IntentPaymentMethod` type describes a way someone pays for goods and service
 - [IntentPaymentMethod.ValueType](intentpaymentmethod/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPaymentMethod>](intentpaymentmethod/defaultresolverspecification.md)
-### Default Implementations
-- [InstanceDisplayRepresentable Implementations](intentpaymentmethod/instancedisplayrepresentable-implementations.md)
-- [TypeDisplayRepresentable Implementations](intentpaymentmethod/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

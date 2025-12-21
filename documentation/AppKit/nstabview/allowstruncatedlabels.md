@@ -17,7 +17,7 @@ var allowsTruncatedLabels: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the tab view allows truncating for labels that don’t fit on a tab, otherwise it does not. The default value is [`true`](https://developer.apple.com/documentation/swift/true). When truncating is allowed, the tab view inserts an ellipsis, if necessary, to fit a label in the tab.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the tab view allows truncating for labels that don’t fit on a tab, otherwise it does not. The default value is [`true`](https://developer.apple.com/documentation/Swift/true). When truncating is allowed, the tab view inserts an ellipsis, if necessary, to fit a label in the tab.
 
 
 ---

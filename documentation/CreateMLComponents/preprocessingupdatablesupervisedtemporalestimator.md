@@ -30,10 +30,6 @@ struct PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator
 - [var preprocessor: Preprocessor](preprocessingupdatablesupervisedtemporalestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtemporalestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtemporalestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtemporalestimator/decodewithoptimizer(from:).md)
   Reads the encoded transformer and optimizer with a decoder.
 - [func encodeWithOptimizer(PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtemporalestimator/encodewithoptimizer(_:to:).md)
@@ -63,11 +59,8 @@ struct PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator
   The intermediate type.
 - [PreprocessingUpdatableSupervisedTemporalEstimator.Output](preprocessingupdatablesupervisedtemporalestimator/output.md)
   The output type.
-- [PreprocessingUpdatableSupervisedTemporalEstimator.Transformer](preprocessingupdatablesupervisedtemporalestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTemporalEstimator Implementations](preprocessingupdatablesupervisedtemporalestimator/supervisedtemporalestimator-implementations.md)
-- [UpdatableSupervisedTemporalEstimator Implementations](preprocessingupdatablesupervisedtemporalestimator/updatablesupervisedtemporalestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

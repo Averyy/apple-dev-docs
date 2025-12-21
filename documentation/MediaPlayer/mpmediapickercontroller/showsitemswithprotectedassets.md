@@ -19,7 +19,7 @@ var showsItemsWithProtectedAssets: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item picker displays media items with DRM. The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the media item picker displays media items with DRM. The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

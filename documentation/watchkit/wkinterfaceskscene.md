@@ -16,7 +16,7 @@ class WKInterfaceSKScene
 
 #### Overview
 
-Present a scene by calling the interface’s [`presentScene(_:)`](wkinterfaceskscene/presentscene(_:).md) or [`presentScene(_:transition:)`](wkinterfaceskscene/presentscene(_:transition:).md) method and passing in a [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene) object. When a scene is presented, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the interface’s [`isPaused`](wkinterfaceskscene/ispaused.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+Present a scene by calling the interface’s [`presentScene(_:)`](wkinterfaceskscene/presentscene(_:).md) or [`presentScene(_:transition:)`](wkinterfaceskscene/presentscene(_:transition:).md) method and passing in a [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene) object. When a scene is presented, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the interface’s [`isPaused`](wkinterfaceskscene/ispaused.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Do not subclass or create instances of this class yourself. Instead, drag a SpriteKit Scene object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the SpriteKit Scene object. For example, to refer to a scene object in your interface, define a property with the following syntax in your interface controller class:
 

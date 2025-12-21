@@ -20,11 +20,14 @@ let validationMetrics: MLClassifierMetrics
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
 
 ## See Also
 
+- [func evaluation(on:)](mltextclassifier/evaluation(on:).md)
+  Computes evaluation metrics.
+- [func evaluation(on:textColumn:labelColumn:)](mltextclassifier/evaluation(on:textcolumn:labelcolumn:).md)
+  Computes evaluation metrics.
 - [let trainingMetrics: MLClassifierMetrics](mltextclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 

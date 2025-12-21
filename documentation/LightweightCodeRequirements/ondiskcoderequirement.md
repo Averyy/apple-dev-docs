@@ -45,8 +45,6 @@ struct OnDiskCodeRequirement
   Create a [`OnDiskCodeRequirement`](ondiskcoderequirement.md) that requires matching all of the provided constraints.
 - [static func anyOf(requirement: () -> [any OnDiskConstraint]) throws -> OnDiskCodeRequirement](ondiskcoderequirement/anyof(requirement:).md)
   Create a [`OnDiskCodeRequirement`](ondiskcoderequirement.md) that requires matching any of the provided constraints.
-### Default Implementations
-- [Equatable Implementations](ondiskcoderequirement/equatable-implementations.md)
 
 ## Relationships
 

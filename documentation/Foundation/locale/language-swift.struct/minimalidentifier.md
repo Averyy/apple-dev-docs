@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns a BCP-47 identifier in a minimalist form. Script and region may be omitted. For example, “zh-TW”, “en”
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

@@ -20,7 +20,7 @@ var isAccelerometerActive: Bool { get }
 
 #### Discussion
 
-This property indicates whether [`startAccelerometerUpdates(to:withHandler:)`](cmmotionmanager/startaccelerometerupdates(to:withhandler:).md) or [`startAccelerometerUpdates()`](cmmotionmanager/startaccelerometerupdates().md) has been called since the last time [`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerupdates().md) was called. (If the start methods hadn’t been called, the app could be getting updates from the accelerometer after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/swift/false).)
+This property indicates whether [`startAccelerometerUpdates(to:withHandler:)`](cmmotionmanager/startaccelerometerupdates(to:withhandler:).md) or [`startAccelerometerUpdates()`](cmmotionmanager/startaccelerometerupdates().md) has been called since the last time [`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerupdates().md) was called. (If the start methods hadn’t been called, the app could be getting updates from the accelerometer after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/Swift/false).)
 
 ## See Also
 

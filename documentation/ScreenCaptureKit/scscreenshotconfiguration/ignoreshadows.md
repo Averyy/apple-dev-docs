@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: property
 
+A Boolean value that specifies whether to ignore framing on windows.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

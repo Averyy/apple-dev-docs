@@ -32,7 +32,7 @@ To avoid data corruption due to aliasing, [`MPSTemporaryImage`](mpstemporaryimag
 
 Since temporary images can only be used with a single command buffer, and can not be used off the GPU, they generally should not be kept around past the completion of their associated command buffer. The lifetime of a temporary image is typically expected to be extremely short, perhaps spanning only a few lines of code.
 
-To keep the lifetime of the underlying texture allocation as short as possible, the texture is not allocated until the first time the [`MPSTemporaryImage`](mpstemporaryimage.md) object is used by an [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) object or until the first time the [`texture`](mpsimage/texture.md) property is read. The [`readCount`](mpstemporaryimage/readcount.md) property serves to limit the lifetime of the texture on deallocation.
+To keep the lifetime of the underlying texture allocation as short as possible, the texture is not allocated until the first time the [`MPSTemporaryImage`](mpstemporaryimage.md) object is used by an [`MPSCNNKernel`](mpscnnkernel.md) object or until the first time the [`texture`](mpsimage/texture.md) property is read. The [`readCount`](mpstemporaryimage/readcount.md) property serves to limit the lifetime of the texture on deallocation.
 
 You may use the [`texture`](mpsimage/texture.md) property with the `encode` methods of an [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) subclass, if `featureChannels<=4` and the texture conforms to the requirements of the given kernel. In such cases, the [`readCount`](mpstemporaryimage/readcount.md) property is not modified, since the enclosing object is not available. There is no locking mechanism provided to prevent a [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object returned from the [`texture`](mpsimage/texture.md) property from becoming invalid when the value of the [`readCount`](mpstemporaryimage/readcount.md) property reaches 0.
 
@@ -54,7 +54,7 @@ You can not read or write data to an [`MPSTemporaryImage`](mpstemporaryimage.md)
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)](mpstemporaryimage/init(commandbuffer:texturedescriptor:).md)
   Low-level interface for creating a temporary image using a texture descriptor.
 - [class MTLTextureDescriptor](../Metal/MTLTextureDescriptor.md)
-  An object that you use to configure new Metal texture objects.
+  An instance that you use to configure new Metal texture instances.
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](mpstemporaryimage/init(commandbuffer:texturedescriptor:featurechannels:).md)
 ### Methods
 - [class func prefetchStorage(with: any MTLCommandBuffer, imageDescriptorList: [MPSImageDescriptor])](mpstemporaryimage/prefetchstorage(with:imagedescriptorlist:).md)

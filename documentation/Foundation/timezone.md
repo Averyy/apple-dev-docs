@@ -65,14 +65,16 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
 ### Describing Time Zones
 - [func localizedName(for: TimeZone.NameStyle, locale: Locale?) -> String?](timezone/localizedname(for:locale:).md)
   Returns the name of the receiver localized for a given locale.
+### Working with notification messages
+- [TimeZone.SystemTimeZoneDidChangeMessage](timezone/systemtimezonedidchangemessage.md)
 ### Using Reference Types
 - [class NSTimeZone](nstimezone.md)
   Information about standard time conventions associated with a specific geopolitical region.
-### Structures
-- [TimeZone.SystemTimeZoneDidChangeMessage](timezone/systemtimezonedidchangemessage.md)
 ### Initializers
 - [init?(abbreviation: String)](timezone/init(abbreviation:).md)
+  Returns a time zone identified by a given abbreviation.
 - [init?(identifier: String)](timezone/init(identifier:).md)
+  Returns a time zone initialized with a given identifier.
 ### Type Aliases
 - [typealias NameStyle](timezone/namestyle.md)
 ### Type Properties

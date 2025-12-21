@@ -21,7 +21,7 @@ var isZooming: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if user is making a zoom gesture; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if user is making a zoom gesture; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

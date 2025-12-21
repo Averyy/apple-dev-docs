@@ -20,11 +20,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionIsRestric
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to restrict the drag session to the app that started it; otherwise [`false`](https://developer.apple.com/documentation/swift/false), which is the default if you don’t provide this method.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you want to restrict the drag session to the app that started it; otherwise [`false`](https://developer.apple.com/documentation/Swift/false), which is the default if you don’t provide this method.
 
 #### Discussion
 
-If you return [`true`](https://developer.apple.com/documentation/swift/true) and the user attempts to drop the drag items onto another app, the system cancels the session.
+If you return [`true`](https://developer.apple.com/documentation/Swift/true) and the user attempts to drop the drag items onto another app, the system cancels the session.
 
 > **Note**:  The system calls this method only on devices that support dragging across apps.
 

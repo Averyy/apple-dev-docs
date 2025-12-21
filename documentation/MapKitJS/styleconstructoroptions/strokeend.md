@@ -11,7 +11,7 @@ The unit distance along the line where a stroke ends.
 ## Declaration
 
 ```swift
-attribute number strokeEnd;
+strokeEnd?: number;
 ```
 
 #### Discussion

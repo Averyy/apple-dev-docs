@@ -27,9 +27,6 @@ enum DateSeparator
   Specifies a dash character separating year, month, and day components in an ISO 8601 date format style.
 - [Date.ISO8601FormatStyle.DateSeparator.omitted](date/iso8601formatstyle/dateseparator-swift.enum/omitted.md)
   Specifies no separator between the year, month, and day components in an ISO 8601 date format style.
-### Comparing ISO 8601 Format Style Date Separators
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 
 ## Relationships
 

@@ -23,7 +23,7 @@ var rootRecordDesiredKeys: [CKRecord.FieldKey]? { get set }
 
 #### Discussion
 
-For a shared record hierarchy, and when [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) is [`true`](https://developer.apple.com/documentation/swift/true), set this property to specify which of the root record’s fields the operation fetches. Use `nil` to fetch the entire record. CloudKit ignores this property for a shared record zone because, unlike a hierarchy, it doesn’t have a nominated root record.
+For a shared record hierarchy, and when [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) is [`true`](https://developer.apple.com/documentation/Swift/true), set this property to specify which of the root record’s fields the operation fetches. Use `nil` to fetch the entire record. CloudKit ignores this property for a shared record zone because, unlike a hierarchy, it doesn’t have a nominated root record.
 
 The default value is `nil`.
 

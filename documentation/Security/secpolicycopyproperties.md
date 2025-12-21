@@ -22,7 +22,7 @@ func SecPolicyCopyProperties(_ policyRef: SecPolicy) -> CFDictionary?
 
 #### Return Value
 
-A dictionary with the policy’s properties. See [`Security Policy Keys`](security-policy-keys.md) for a list of valid keys. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the dictionary’s memory when you are done with it.
+A dictionary with the policy’s properties. See [`Security Policy Keys`](security-policy-keys.md) for a list of valid keys. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the dictionary’s memory when you are done with it.
 
 ## Parameters
 

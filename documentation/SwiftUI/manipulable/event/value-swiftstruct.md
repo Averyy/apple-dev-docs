@@ -6,7 +6,7 @@
 Describes the value associated with a manipulation gesture event.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# Command Encoder Factory Methods
+# Command encoder factory methods
 
 **Framework**: Metal
 
@@ -6,18 +6,18 @@ A command encoder defines the actions of a single pass, such as GPU commands tha
 
 ## Topics
 
-### Creating Render Encoders
+### Creating render encoders
 - [func makeRenderCommandEncoder(descriptor: MTLRenderPassDescriptor) -> (any MTLRenderCommandEncoder)?](mtlcommandbuffer/makerendercommandencoder(descriptor:).md)
   Creates a render command encoder from a descriptor.
-### Creating Parallel Render Encoders
+### Creating parallel render encoders
 - [func makeParallelRenderCommandEncoder(descriptor: MTLRenderPassDescriptor) -> (any MTLParallelRenderCommandEncoder)?](mtlcommandbuffer/makeparallelrendercommandencoder(descriptor:).md)
   Creates a parallel render command encoder from a descriptor.
-### Creating Acceleration Structure Encoders
+### Creating acceleration structure encoders
 - [func makeAccelerationStructureCommandEncoder(descriptor: MTLAccelerationStructurePassDescriptor) -> any MTLAccelerationStructureCommandEncoder](mtlcommandbuffer/makeaccelerationstructurecommandencoder(descriptor:).md)
   Creates a ray-tracing acceleration structure command encoder from a descriptor.
 - [func makeAccelerationStructureCommandEncoder() -> (any MTLAccelerationStructureCommandEncoder)?](mtlcommandbuffer/makeaccelerationstructurecommandencoder.md)
   Creates a ray-tracing acceleration structure command encoder that uses default settings.
-### Creating Compute Encoders
+### Creating compute encoders
 - [func makeComputeCommandEncoder(descriptor: MTLComputePassDescriptor) -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder(descriptor:).md)
   Creates a compute command encoder from a descriptor.
 - [func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder.md)
@@ -26,12 +26,12 @@ A command encoder defines the actions of a single pass, such as GPU commands tha
   Creates a compute command encoder with a dispatch type.
 - [enum MTLDispatchType](mtldispatchtype.md)
   The type of dispatch method to use when calling encoded functions.
-### Creating Blit Encoders
+### Creating blit encoders
 - [func makeBlitCommandEncoder() -> (any MTLBlitCommandEncoder)?](mtlcommandbuffer/makeblitcommandencoder.md)
   Creates a block information transfer (blit) encoder.
 - [func makeBlitCommandEncoder(descriptor: MTLBlitPassDescriptor) -> (any MTLBlitCommandEncoder)?](mtlcommandbuffer/makeblitcommandencoder(descriptor:).md)
   Creates a block information transfer (blit) encoder from a descriptor.
-### Creating Resource State Encoders
+### Creating resource state encoders
 - [func resourceStateCommandEncoder(with: MTLResourceStatePassDescriptor) -> (any MTLResourceStateCommandEncoder)?](mtlcommandbuffer/resourcestatecommandencoder(with:).md)
   Creates a resource state command encoder from a descriptor.
 - [func makeResourceStateCommandEncoder() -> (any MTLResourceStateCommandEncoder)?](mtlcommandbuffer/makeresourcestatecommandencoder.md)

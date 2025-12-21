@@ -17,7 +17,7 @@ Returns a new matrix created by concatenating the specified matrix with a transl
 ## Declaration
 
 ```swift
-func SCNMatrix4Translate(_ m: SCNMatrix4, _ tx: Float, _ ty: Float, _ tz: Float) -> SCNMatrix4
+func SCNMatrix4Translate(_ m: SCNMatrix4, _ tx: CGFloat, _ ty: CGFloat, _ tz: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

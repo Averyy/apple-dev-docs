@@ -21,7 +21,7 @@ static let auxiliaryDepth: CIImageOption
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false).  If the value is [`true`](https://developer.apple.com/documentation/swift/true), then calls to [`imageWithContentsOfURL:options:`](ciimage/imagewithcontentsofurl:options:.md) and [`imageWithData:options:`](ciimage/imagewithdata:options:.md) will return the auxiliary image as a half-float monochrome image instead of the primary image, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if no auxiliary image exists.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false).  If the value is [`true`](https://developer.apple.com/documentation/Swift/true), then calls to [`imageWithContentsOfURL:options:`](ciimage/imagewithcontentsofurl:options:.md) and [`imageWithData:options:`](ciimage/imagewithdata:options:.md) will return the auxiliary image as a half-float monochrome image instead of the primary image, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if no auxiliary image exists.
 
 ## See Also
 

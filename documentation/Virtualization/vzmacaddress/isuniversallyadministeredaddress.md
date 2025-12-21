@@ -16,7 +16,7 @@ var isUniversallyAdministeredAddress: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the address is universally administered, or [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t. The manufacturer of a device assigns an address of this type, and the address includes the organization’s unique identification code.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the address is universally administered, or [`false`](https://developer.apple.com/documentation/Swift/false) if it isn’t. The manufacturer of a device assigns an address of this type, and the address includes the organization’s unique identification code.
 
 ## See Also
 

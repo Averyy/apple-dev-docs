@@ -28,10 +28,6 @@ The fully qualified form complete with all known components. See “[`Long`](per
 - [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
 - [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
 - [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
-- [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
 
 
 ---

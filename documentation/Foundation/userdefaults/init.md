@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: init
 
-Creates a user defaults object initialized with the defaults for the app and current user.
+Creates a new defaults object and initializes it with the app’s current settings.
 
 **Availability**:
 - iOS 2.0+
@@ -22,16 +22,14 @@ convenience init()
 
 #### Discussion
 
-This initializer is equivalent to passing `nil` to the [`init(suiteName:)`](userdefaults/init(suitename:).md) initializer.
-
-Use this initializer only if you’re not using the shared [`standard`](userdefaults/standard.md) user defaults.
+Use this method to create a new defaults object to manage the app’s settings. If you add a domain using the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method, the returned object retrieves values in that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or release the object. When you write setting values using this object, it writes them to the current app’s settings.
 
 ## See Also
 
 - [class var standard: UserDefaults](userdefaults/standard.md)
-  Returns the shared defaults object.
+  The shared defaults object for the current app.
 - [init?(suiteName: String?)](userdefaults/init(suitename:).md)
-  Creates a user defaults object initialized with the defaults for the specified database name.
+  Creates a new defaults object and initializes it with the settings from the specified database.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+The client data to supply to the relying party.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

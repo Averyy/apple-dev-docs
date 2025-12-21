@@ -19,7 +19,7 @@ var automaticallyAdjustsFaceDrivenAutoExposureEnabled: Bool { get set }
 
 #### Discussion
 
-The value of this property defaults to [`true`](https://developer.apple.com/documentation/swift/true) for devices that support autoexposure. If your app requires explicitly setting the state of [`isFaceDrivenAutoExposureEnabled`](avcapturedevice/isfacedrivenautoexposureenabled.md), set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property defaults to [`true`](https://developer.apple.com/documentation/Swift/true) for devices that support autoexposure. If your app requires explicitly setting the state of [`isFaceDrivenAutoExposureEnabled`](avcapturedevice/isfacedrivenautoexposureenabled.md), set this value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 To set this property value, you must call the device’s [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method to obtain exclusive access to configure it. Otherwise, attempting to set a value raises an exception. When you finish configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock.
 

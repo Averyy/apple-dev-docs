@@ -28,7 +28,7 @@ These properties aren’t observable. For more information about key-value obser
 
 ## Topics
 
-### Getting Information About the Event
+### Getting information about the event
 - [var date: Date?](avplayeritemerrorlogevent/date.md)
   The date and time when the error occurred.
 - [var uri: String?](avplayeritemerrorlogevent/uri.md)

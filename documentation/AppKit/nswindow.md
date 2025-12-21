@@ -131,6 +131,8 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
   Starts a document-modal session and presents—or queues for presentation—a sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
+- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)
@@ -627,7 +629,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [Application Kit Version for Custom Sheet Position](application-kit-version-for-custom-sheet-position.md)
   The version of the AppKit.framework containing a specific bug fix or capability.
 - [NSWindowDidChangeBackingPropertiesNotification User Info Properties](nswindowdidchangebackingpropertiesnotification-user-info-properties.md)
-  These constants are values that are returned in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of the [`didChangeBackingPropertiesNotification`](nswindow/didchangebackingpropertiesnotification.md).
+  Constants that represent values in the user info dictionary of the `didChangeBackingPropertiesNotification` notification.
 ### Notifications
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)
   A notification that the window object became the key window.
@@ -699,11 +701,8 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nswindow/begindraggingsession(items:event:source:).md)
 - [func beginSheet<V>(content: () -> V, completionHandler: (() -> Void)?) -> NSWindow.HostingSheetRepresentation<V>](nswindow/beginsheet(content:completionhandler:).md)
   Presents a SwiftUI View as a sheet on the receiving NSWindow.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
 - [func endSheet<V>(NSWindow.HostingSheetRepresentation<V>)](nswindow/endsheet(_:)-6af2u.md)
   Ends a SwiftUI hosted sheet presentation.
-- [func javaAdd(toOrderingGroup: NSWindow!)](nswindow/javaadd(toorderinggroup:).md)
-- [func javaRemove(fromOrderingGroup: NSWindow!)](nswindow/javaremove(fromorderinggroup:).md)
 - [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](nswindow/requestsharingofwindow(_:completionhandler:).md)
 - [func requestSharingOfWindow(usingPreview: NSImage, title: String, completionHandler: ((any Error)?) -> Void)](nswindow/requestsharingofwindow(usingpreview:title:completionhandler:).md)
 

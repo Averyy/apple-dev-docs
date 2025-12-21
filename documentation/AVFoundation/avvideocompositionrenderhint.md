@@ -21,7 +21,7 @@ class AVVideoCompositionRenderHint
 
 ## Topics
 
-### Managing Composition Timing
+### Managing composition timing
 - [var startCompositionTime: CMTime](avvideocompositionrenderhint/startcompositiontime.md)
   The start time of the upcoming composition requests.
 - [var endCompositionTime: CMTime](avvideocompositionrenderhint/endcompositiontime.md)

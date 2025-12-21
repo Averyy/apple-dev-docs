@@ -18,7 +18,7 @@ static let vibrantDark: NSAppearance.Name
 
 Vibrant appearances use color blending to make the foreground appearance stand out from the background more prominently.
 
-Don’t assign an [`NSAppearance`](nsappearance.md) object with this type directly to one of your views. Instead, assign a dark appearance to your view, make sure its [`allowsVibrancy`](nsview/allowsvibrancy.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), and embed the view in a visual effect view. When you do, AppKit updates your view’s appearance to this type.
+Don’t assign an [`NSAppearance`](nsappearance.md) object with this type directly to one of your views. Instead, assign a dark appearance to your view, make sure its [`allowsVibrancy`](nsview/allowsvibrancy.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), and embed the view in a visual effect view. When you do, AppKit updates your view’s appearance to this type.
 
 ## See Also
 

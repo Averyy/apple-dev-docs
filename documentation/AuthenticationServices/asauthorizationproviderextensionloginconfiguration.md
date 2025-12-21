@@ -16,7 +16,7 @@ class ASAuthorizationProviderExtensionLoginConfiguration
 
 ## Mentions
 
-- [Creating extensions that support platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
 
 #### Overview
 
@@ -130,9 +130,9 @@ This class provides login configuration information for platform single sign-on.
 ## See Also
 
 - [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for platform SSO.
+  Configure Device Management to support device and user registration for Platform SSO.
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
-  Specify how platform SSO authenticates with the identity provider.
+  Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
 

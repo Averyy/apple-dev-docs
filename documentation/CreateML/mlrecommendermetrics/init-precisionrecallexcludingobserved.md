@@ -16,7 +16,7 @@ init(precisionRecall: MLDataTable, excludingObserved: Bool)
 
 #### Discussion
 
-Do not use this initializer. [`MLRecommender`](mlrecommender.md) generates metrics for you when you call its `MLRecommender/evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)` method.
+Do not use this initializer. [`MLRecommender`](mlrecommender.md) generates metrics for you when you call its [`evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)`](mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:).md) method.
 
 
 ---

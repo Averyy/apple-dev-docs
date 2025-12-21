@@ -21,17 +21,17 @@ class CIQRCodeFeature
 
 #### Overview
 
-> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/Vision/VNDetectBarcodesRequest).
+> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/Vision/VNDetectBarcodesRequest))
 
-A QR code is a two-dimensional barcode using the ISO/IEC 18004:2006 standard. The properties of a [`CIQRCodeFeature`](ciqrcodefeature.md) object identify the corners of the barcode in the image perspective and provide the decoded message.
+A QR code is a two-dimensional barcode using the ISO/IEC 18004:2006 standard. The properties of a CIQRCodeFeature object identify the corners of the barcode in the image perspective and provide the decoded message.
 
-To detect QR codes in an image or video, choose the [`CIDetectorTypeQRCode`](cidetectortypeqrcode.md) type when initializing a [`CIDetector`](cidetector.md) object.
+To detect QR codes in an image or video, choose [`CIDetectorTypeQRCode`](cidetectortypeqrcode.md) type when initializing a [`CIDetector`](cidetector.md) object.
 
 ## Topics
 
 ### Locating a Detected Feature
 - [var bounds: CGRect](ciqrcodefeature/bounds-swift.property.md)
-  A rectangle indicating the position and extent of the feature in image coordinates.
+  A rectangle that indicates the position and extent of the QR code feature in image coordinates.
 ### Decoding a Detected Barcode
 - [var messageString: String?](ciqrcodefeature/messagestring.md)
   The string decoded from the detected barcode.
@@ -39,13 +39,13 @@ To detect QR codes in an image or video, choose the [`CIDetectorTypeQRCode`](cid
   An abstract representation of a QR Code symbol.
 ### Identifying the Corners of a Detected Barcode
 - [var bottomLeft: CGPoint](ciqrcodefeature/bottomleft-swift.property.md)
-  The lower-left corner of the detected barcode, in image coordinates.
+  The image coordinate of the lower-left corner of the detected QR code.
 - [var bottomRight: CGPoint](ciqrcodefeature/bottomright-swift.property.md)
-  The lower-right corner of the detected barcode, in image coordinates.
+  The image coordinate of the lower-right corner of the detected QR code.
 - [var topLeft: CGPoint](ciqrcodefeature/topleft-swift.property.md)
-  The upper-left corner of the detected barcode, in image coordinates.
+  The image coordinate of the upper-left corner of the detected QR code.
 - [var topRight: CGPoint](ciqrcodefeature/topright-swift.property.md)
-  The upper-right corner of the detected barcode, in image coordinates.
+  The image coordinate of the upper-right corner of the detected QR code.
 
 ## Relationships
 
@@ -73,7 +73,7 @@ To detect QR codes in an image or video, choose the [`CIDetectorTypeQRCode`](cid
 - [class CIRectangleFeature](cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 
 
 ---

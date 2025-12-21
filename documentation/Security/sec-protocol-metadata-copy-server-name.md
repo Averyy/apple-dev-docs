@@ -24,12 +24,7 @@ Returns A NULL-terminated string carrying the server name, or NULL if none was p
 
 #### Discussion
 
-```None
- Obtain a copy of the server name offered by a client or server during
- connection establishmet. This is the value commonly carried
- in the TLS SNI extesion. The caller is expected to `free` the output
- string when it is no longer needed.
-```
+Obtain a copy of the server name offered by a client or server during connection establishmet. This is the value commonly carried in the TLS SNI extesion. The caller is expected to `free` the output string when it is no longer needed.
 
 ## Parameters
 

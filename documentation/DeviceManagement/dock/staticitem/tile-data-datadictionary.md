@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The dictionary that contains details about a dock item.
+The dictionary that contains details about a Dock item.
 
 **Availability**:
 - macOS 10.7+

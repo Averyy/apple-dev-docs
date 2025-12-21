@@ -11,7 +11,7 @@ Determines the position and direction of a ray through the given point in the 2D
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

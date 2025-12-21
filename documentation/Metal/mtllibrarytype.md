@@ -21,7 +21,7 @@ enum MTLLibraryType
 
 ## Topics
 
-### Library Options
+### Library options
 - [MTLLibraryType.executable](mtllibrarytype/executable.md)
   A library that can create pipeline state objects.
 - [MTLLibraryType.dynamic](mtllibrarytype/dynamic.md)

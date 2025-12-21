@@ -20,9 +20,7 @@ This collection of documents describes the programming interfaces of the System 
 ## Topics
 
 ### Reference
-- [DHCPClientPreferences](dhcpclientpreferences.md)
 - [SCDynamicStore](scdynamicstore-gb2.md)
-- [SCDynamicStoreCopyDHCPInfo](scdynamicstorecopydhcpinfo-apicollection.md)
 - [SCDynamicStoreCopySpecific](scdynamicstorecopyspecific.md)
 - [SCDynamicStoreKey](scdynamicstorekey.md)
 - [SCNetwork](scnetwork.md)

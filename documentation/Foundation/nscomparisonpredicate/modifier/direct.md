@@ -26,10 +26,6 @@ case direct
   A predicate to compare all entries in the destination of a to-many relationship.
 - [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
   A predicate to match with any entry in the destination of a to-many relationship.
-- [NSComparisonPredicate.Modifier.all](nscomparisonpredicate/modifier/all.md)
-  A predicate to compare all entries in the destination of a to-many relationship.
-- [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
-  A predicate to match with any entry in the destination of a to-many relationship.
 
 
 ---

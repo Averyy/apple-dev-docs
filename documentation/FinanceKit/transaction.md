@@ -21,12 +21,6 @@ This can include transactions such as a deposit to or a withdrawn from bank acco
 
 ## Topics
 
-### Operators
-- [static func == (Transaction, Transaction) -> Bool](transaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](transaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [let accountID: UUID](transaction/accountid.md)
   The account ID the transaction belongs to.
@@ -36,7 +30,7 @@ This can include transactions such as a deposit to or a withdrawn from bank acco
   The total amount of the transaction, if it was carried out in a foreign currency.
 - [let foreignCurrencyExchangeRate: Decimal?](transaction/foreigncurrencyexchangerate.md)
   The currency exchange rate, if the transaction was carried out in a foreign currency.
-- [let id: UUID](transaction/id-swift.property.md)
+- [let id: UUID](transaction/id.md)
   A unique internal ID.
 - [let merchantCategoryCode: MerchantCategoryCode?](transaction/merchantcategorycode.md)
   The ISO 18245 category code for the transaction.
@@ -56,14 +50,6 @@ This can include transactions such as a deposit to or a withdrawn from bank acco
   A description of the transaction.
 - [let transactionType: TransactionType](transaction/transactiontype.md)
   The type of the transaction.
-### Instance Methods
-- [func encode(to: any Encoder) throws](transaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [Transaction.ID](transaction/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](transaction/equatable-implementations.md)
 
 ## Relationships
 

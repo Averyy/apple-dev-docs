@@ -8,6 +8,7 @@ The asynchronous event stream on which Continuation Requests are sent
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - watchOS 11.0+
 

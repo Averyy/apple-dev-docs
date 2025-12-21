@@ -22,6 +22,7 @@ static var float: MLMultiArrayDataType { get }
 
 ## See Also
 
+- [MLMultiArrayDataType.int8](mlmultiarraydatatype/int8.md)
 - [MLMultiArrayDataType.int32](mlmultiarraydatatype/int32.md)
   Designates the multiarray’s elements as 32-bit integers.
 - [MLMultiArrayDataType.float16](mlmultiarraydatatype/float16.md)

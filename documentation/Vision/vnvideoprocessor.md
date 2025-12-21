@@ -58,6 +58,8 @@ class VNVideoProcessor
   Types that represent the compute stage.
 - [class VNGeometryUtils](vngeometryutils.md)
   Utility methods to determine the geometries of various Vision types.
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
 
 
 ---

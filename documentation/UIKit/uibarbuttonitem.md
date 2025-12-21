@@ -19,6 +19,10 @@ A specialized button for placement on a toolbar, navigation bar, or shortcuts ba
 class UIBarButtonItem
 ```
 
+## Mentions
+
+- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+
 #### Overview
 
 You typically use Interface Builder to create and configure bar button items. However, you can customize the appearance of buttons by sending the setter messages to [`UIBarButtonItemAppearance`](uibarbuttonitemappearance.md) to customize all buttons, or to a specific [`UIBarButtonItem`](uibarbuttonitem.md) instance. You can use customized buttons in standard places in a [`UINavigationItem`](uinavigationitem.md) object or a [`UIToolbar`](uitoolbar.md) instance.
@@ -198,7 +202,7 @@ In general, specify a value for the normal state so that other states without a 
 - [class UISearchBar](uisearchbar.md)
   A specialized view for receiving search-related information from the user.
 - [class UIToolbar](uitoolbar.md)
-  A control that displays one or more buttons along the bottom edge of your interface.
+  A control that displays one or more buttons along an edge of your interface.
 - [class UITabBar](uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
 - [class UITabBarItem](uitabbaritem.md)

@@ -42,8 +42,8 @@ To update your app’s categories, use the [`App Infos`](app-infos.md) resource.
 
 ## See Also
 
-- [Age Rating Declarations](age-rating-declarations.md)
-  Update required declarations that determine your app’s age rating.
+- [Age Ratings](age-ratings.md)
+  Read and update age ratings and declarations for your app.
 
 
 ---

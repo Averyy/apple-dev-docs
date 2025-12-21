@@ -21,11 +21,11 @@ func areKeysAvailable(_ keyDescriptors: [any CNKeyDescriptor]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all the values are fetched; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if all the values are fetched; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) or [`areKeysAvailable(_:)`](cncontact/arekeysavailable(_:).md) methods are used where you are not certain of the keys that when fetched. If this method returns [`false`](https://developer.apple.com/documentation/swift/false), refetch the contact using the contact identifier and the keys you want to fetch. Accessing a property that was not fetched will throw an [`CNContactPropertyNotFetchedExceptionName`](cncontactpropertynotfetchedexceptionname.md) exception.
+The [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) or [`areKeysAvailable(_:)`](cncontact/arekeysavailable(_:).md) methods are used where you are not certain of the keys that when fetched. If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), refetch the contact using the contact identifier and the keys you want to fetch. Accessing a property that was not fetched will throw an [`CNContactPropertyNotFetchedExceptionName`](cncontactpropertynotfetchedexceptionname.md) exception.
 
 ## Parameters
 

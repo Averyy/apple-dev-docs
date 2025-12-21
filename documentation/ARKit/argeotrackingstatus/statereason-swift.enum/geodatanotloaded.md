@@ -18,7 +18,7 @@ case geoDataNotLoaded
 
 #### Discussion
 
-ARKit provides this reason in state [`ARGeoTrackingStatus.State.localizing`](argeotrackingstatus/state-swift.enum/localizing.md) when the session is actively attempting to download localization imagery (see doc:ARGeoTrackingConfiguration#Refine-the-User's-Position-with-Imagery).
+ARKit provides this reason in state [`ARGeoTrackingStatus.State.localizing`](argeotrackingstatus/state-swift.enum/localizing.md) when the session is actively attempting to download localization imagery (see [`Refine the user’s position with imagery`](argeotrackingconfiguration#Refine-the-users-position-with-imagery.md)).
 
 If this state persists for too long, it may indicate a network issue. If a reasonable amount of time elapses in this state reason, the app may consider requesting that the user check their internet connection.
 

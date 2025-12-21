@@ -95,6 +95,17 @@ The slider also uses the `step` to increase or decrease the value when a VoiceOv
   Creates a slider to select a value from a given range, which displays the provided labels.
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:label:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
+### Adding ticks to a slider
+- [struct SliderTick](slidertick.md)
+  A representation of a tick in a slider, with associated value and optional label.
+- [struct SliderTickBuilder](slidertickbuilder.md)
+  A result builder that constructs `SliderTick`s for use when creating a `Slider`.
+- [struct SliderTickContentForEach](slidertickcontentforeach.md)
+  A type of slider content that creates content by iterating over a collection.
+- [struct TupleSliderTickContent](tupleslidertickcontent.md)
+  Slider content created from a Swift tuple of slider content.
+- [protocol SliderTickContent](slidertickcontent.md)
+  A type that provides content for a `SliderTickBuilder`.
 ### Deprecated initializers
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:oneditingchanged:label:).md)
   Creates a slider to select a value from a given range, which displays the provided label.
@@ -104,6 +115,13 @@ The slider also uses the `step` to increase or decrease the value when a VoiceOv
   Creates a slider to select a value from a given range, which displays the provided labels.
 - [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](slider/init(value:in:step:oneditingchanged:minimumvaluelabel:maximumvaluelabel:label:).md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
+### Initializers
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
+  Creates a slider to select a value from a given range, which displays the provided labels.
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, ticks: () -> some SliderTickContent, onEditingChanged: (Bool) -> Void)](slider/init(value:in:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:ticks:oneditingchanged:).md)
+  Creates a slider to select a value from a given range, which displays the provided labels and customized ticks.
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, neutralValue: V?, enabledBounds: ClosedRange<V>?, label: () -> Label, currentValueLabel: () -> some View, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, tick: (V) -> SliderTick<V>?, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:neutralvalue:enabledbounds:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:tick:oneditingchanged:).md)
+  Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels and customizable ticks.
 
 ## Relationships
 

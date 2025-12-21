@@ -35,6 +35,8 @@ The stored stencil value and the reference value are both  by performing a logic
   The operation that is performed to update the values in the stencil attachment when the stencil test passes, but the depth test fails.
 - [var depthStencilPassOperation: MTLStencilOperation](mtlstencildescriptor/depthstencilpassoperation.md)
   The operation that is performed to update the values in the stencil attachment when both the stencil test and the depth test pass.
+- [enum MTLStencilOperation](mtlstenciloperation.md)
+  The operation performed on a currently stored stencil value when a comparison test passes or fails.
 
 
 ---

@@ -113,21 +113,30 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
   The mechanism for accessing the integers stored in an IndexSet.
 ### Initializers
 - [init<R>(integersIn: R)](indexset/init(integersin:)-2zs95.md)
+  Initialize an `IndexSet` with a range of integers.
 - [init?(integersIn: RangeSet<Int>)](indexset/init(integersin:)-54nqd.md)
 ### Instance Properties
 - [var count: Int](indexset/count.md)
+  Returns the number of integers in `self`.
 - [var first: IndexSet.Element?](indexset/first.md)
   The first integer in `self`, or nil if `self` is empty.
 - [var isEmpty: Bool](indexset/isempty.md)
+  Returns `true` if self contains no values.
 - [var last: IndexSet.Element?](indexset/last.md)
   The last integer in `self`, or nil if `self` is empty.
 ### Instance Methods
 - [func contains<R>(integersIn: R) -> Bool](indexset/contains(integersin:)-4k1o8.md)
+  Returns `true` if `self` contains all of the integers in `range`.
 - [func count<R>(in: R) -> Int](indexset/count(in:)-7irji.md)
+  Returns the count of integers in `self` that intersect `range`.
 - [func indexRange<R>(in: R) -> Range<IndexSet.Index>](indexset/indexrange(in:)-6057o.md)
+  Return a `Range<IndexSet.Index>` which can be used to subscript the index set.
 - [func insert<R>(integersIn: R)](indexset/insert(integersin:)-9wcrp.md)
+  Insert a range of integers into the `IndexSet`.
 - [func intersects<R>(integersIn: R) -> Bool](indexset/intersects(integersin:)-9cq7w.md)
+  Returns `true` if `self` intersects any of the integers in `range`.
 - [func rangeView<R>(of: R) -> IndexSet.RangeView](indexset/rangeview(of:)-4jdy1.md)
+  Returns a `Range`-based view of `self`.
 
 ## Relationships
 

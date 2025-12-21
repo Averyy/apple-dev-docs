@@ -17,7 +17,7 @@ func acceptsFirstMouse(for event: NSEvent?) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the selection mode of the receiver is `NSListModeMatrix`, [`true`](https://developer.apple.com/documentation/swift/true) if the receiver is in any other selection mode. The receiver does not accept first mouse in `NSListModeMatrix` to prevent the loss of multiple selections.
+[`false`](https://developer.apple.com/documentation/Swift/false) if the selection mode of the receiver is `NSListModeMatrix`, [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is in any other selection mode. The receiver does not accept first mouse in `NSListModeMatrix` to prevent the loss of multiple selections.
 
 ## Parameters
 

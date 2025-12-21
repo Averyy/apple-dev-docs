@@ -3,11 +3,11 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The user-visible label for this account…
+The label for the service that people view in a communication app.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,11 @@ The user-visible label for this account…
 ```swift
 let label: String
 ```
+
+## See Also
+
+- [let id: UUID](cellularservice/id.md)
+  A unique identifier that identifies the cellular service.
 
 
 ---

@@ -219,18 +219,18 @@ func videoComposition(_ videoComposition: AVVideoComposition, shouldContinueVali
 
 ## See Also
 
-- [Editing and Playing HDR Video](editing-and-playing-hdr-video.md)
+- [Editing and playing HDR video](editing-and-playing-hdr-video.md)
   Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
 - [class AVVideoComposition](avvideocomposition.md)
   An object that describes how to compose video frames at particular points in time.
-- [class AVMutableVideoComposition](avmutablevideocomposition.md)
-  A mutable video composition subclass.
 - [class AVVideoCompositionInstruction](avvideocompositioninstruction-swift.class.md)
   An operation that a compositor performs.
-- [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
-  A mutable video composition instruction subclass.
 - [class AVVideoCompositionLayerInstruction](avvideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition.
+- [class AVMutableVideoComposition](avmutablevideocomposition.md)
+  A mutable video composition subclass.
+- [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
+  A mutable video composition instruction subclass.
 - [class AVMutableVideoCompositionLayerInstruction](avmutablevideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a mutable composition.
 

@@ -34,13 +34,6 @@ struct ImageRotator
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imagerotator/applied(to:eventhandler:).md)
   Rotates the image and then scales and crops the rotated image to fit the extent of the input image.
-### Type Aliases
-- [ImageRotator.Input](imagerotator/input.md)
-  The input type.
-- [ImageRotator.Output](imagerotator/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](imagerotator/transformer-implementations.md)
 
 ## Relationships
 

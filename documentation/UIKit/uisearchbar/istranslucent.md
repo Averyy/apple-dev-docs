@@ -21,11 +21,11 @@ var isTranslucent: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If the search bar has a custom background image, the default is [`true`](https://developer.apple.com/documentation/swift/true) if any pixel of the image has an alpha value of less than `1.0`, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If the search bar has a custom background image, the default is [`true`](https://developer.apple.com/documentation/Swift/true) if any pixel of the image has an alpha value of less than `1.0`, and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true) on a search bar with an opaque custom background image, the search bar will apply a system opacity less than `1.0` to the image.
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true) on a search bar with an opaque custom background image, the search bar will apply a system opacity less than `1.0` to the image.
 
-If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) on a search bar with a translucent custom background image, the search bar provides an opaque background for the image using black if the search bar has [`UIBarStyle.black`](uibarstyle/black.md) style, white if the search bar has [`UIBarStyle.default`](uibarstyle/default.md), or the search bar’s [`barTintColor`](uisearchbar/bartintcolor.md) if a custom value is defined.
+If you set this property to [`false`](https://developer.apple.com/documentation/Swift/false) on a search bar with a translucent custom background image, the search bar provides an opaque background for the image using black if the search bar has [`UIBarStyle.black`](uibarstyle/black.md) style, white if the search bar has [`UIBarStyle.default`](uibarstyle/default.md), or the search bar’s [`barTintColor`](uisearchbar/bartintcolor.md) if a custom value is defined.
 
 ## See Also
 

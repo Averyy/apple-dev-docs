@@ -22,7 +22,7 @@ func data(using encoding: UInt) -> Data?
 
 #### Return Value
 
-The result of invoking [`data(using:allowLossyConversion:)`](nsstring/data(using:allowlossyconversion:).md) with [`false`](https://developer.apple.com/documentation/swift/false) as the second argument (that is, requiring lossless conversion).
+The result of invoking [`data(using:allowLossyConversion:)`](nsstring/data(using:allowlossyconversion:).md) with [`false`](https://developer.apple.com/documentation/Swift/false) as the second argument (that is, requiring lossless conversion).
 
 ## Parameters
 

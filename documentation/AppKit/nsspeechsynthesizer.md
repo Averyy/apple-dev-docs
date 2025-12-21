@@ -32,7 +32,7 @@ The speech feedback window ([`Figure 1`](nsspeechsynthesizer#1965715.md)) displa
 
 For example, your application may use an [`NSSpeechRecognizer`](nsspeechrecognizer.md) object to listen for the command “Play some music.” When it recognizes this command, your application might then respond by speaking “Which artist?” using a speech synthesizer.
 
-When `UsesFeedbackWindow` is [`true`](https://developer.apple.com/documentation/swift/true), the speech synthesizer uses the feedback window if its visible, which the user specifies in System Preferences > Speech.
+When `UsesFeedbackWindow` is [`true`](https://developer.apple.com/documentation/Swift/true), the speech synthesizer uses the feedback window if its visible, which the user specifies in System Preferences > Speech.
 
 ## Topics
 

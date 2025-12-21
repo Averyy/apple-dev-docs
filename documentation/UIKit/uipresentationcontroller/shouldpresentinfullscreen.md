@@ -21,11 +21,11 @@ var shouldPresentInFullscreen: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the presentation covers the screen or [`false`](https://developer.apple.com/documentation/swift/false) if it covers all or part of the current view controller only.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the presentation covers the screen or [`false`](https://developer.apple.com/documentation/Swift/false) if it covers all or part of the current view controller only.
 
 #### Discussion
 
-The default implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true), indicating that the presentation covers the entire screen. You can override this method and return [`false`](https://developer.apple.com/documentation/swift/false) to force the presentation to display only in the current context.
+The default implementation of this method returns [`true`](https://developer.apple.com/documentation/Swift/true), indicating that the presentation covers the entire screen. You can override this method and return [`false`](https://developer.apple.com/documentation/Swift/false) to force the presentation to display only in the current context.
 
 If you override this method, do not call `super`.
 

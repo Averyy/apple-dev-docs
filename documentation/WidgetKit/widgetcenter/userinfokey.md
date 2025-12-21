@@ -10,7 +10,7 @@ An object that defines keys for accessing information in a user info dictionary.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

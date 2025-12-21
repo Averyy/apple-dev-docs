@@ -10,7 +10,7 @@ To integrate your app’s web browsing functionality with Siri and Apple Intelli
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-For example, if your app allows a person to open a website in a new tab, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.browser` domain and the [`createTab`](assistantschemas/browserintent/createtab.md) schema:
+For example, if your app allows a person to open a website in a new tab, use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.browser` domain and the [`createTab`](assistantschemas/browserintent/createtab.md) schema:
 
 ```swift
 @AppIntent(schema: .browser.createTab)
@@ -29,7 +29,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ##### Make Sure Your Entity Meets Requirements
 
-If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `TabEntity`. The following code snippet shows how the `TabEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
+If you use app entities to describe custom data types, annotate the app entity implementation with the [`AppEntity(schema:)`](appentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `TabEntity`. The following code snippet shows how the `TabEntity` implementation uses the [`AppEntity(schema:)`](appentity(schema:).md) macro:
 
 ```swift
 @AppEntity(schema: .browser.tab)
@@ -56,7 +56,7 @@ For a list of available app entity schemas in the `.browser` domain, see [`Assis
 
 ##### Make Sure Your Enumeration Meets Requirements
 
-To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.browser` domain and a schema to it. The following example uses the [`clearHistoryTimeFrame`](assistantschemas/browserenum/clearhistorytimeframe.md) schema:
+To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AppEnum(schema:)`](appenum(schema:).md) macro. Then, pass the `.browser` domain and a schema to it. The following example uses the [`clearHistoryTimeFrame`](assistantschemas/browserenum/clearhistorytimeframe.md) schema:
 
 ```swift
 @AppEnum(schema: .browser.clearHistoryTimeFrame)

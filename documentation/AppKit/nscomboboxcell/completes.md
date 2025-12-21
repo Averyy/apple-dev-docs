@@ -17,7 +17,7 @@ var completes: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the combo box tries to complete what the user types in the text field and every time the user adds characters to the end of the text field, the combo box calls [`completedString(_:)`](nscomboboxcell/completedstring(_:).md); when it is [`false`](https://developer.apple.com/documentation/swift/false), it does not.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the combo box tries to complete what the user types in the text field and every time the user adds characters to the end of the text field, the combo box calls [`completedString(_:)`](nscomboboxcell/completedstring(_:).md); when it is [`false`](https://developer.apple.com/documentation/Swift/false), it does not.
 
 If [`completedString(_:)`](nscomboboxcell/completedstring(_:).md) returns a string that’s longer than the existing string, the combo box replaces the existing string with the returned string and selects the additional characters. If the user is deleting characters or adds characters somewhere besides the end of the string, the combo box does not try to complete it.
 

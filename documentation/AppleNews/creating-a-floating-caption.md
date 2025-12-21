@@ -55,7 +55,7 @@ Your code should look like the example code [`sideCaptionLayout: Result`](creati
 
 On wide displays, when you anchor a caption to the article body, the caption’s top edge will be aligned with the body’s top edge; on narrower displays, the caption will be stacked above the body.
 
-1. Delete the `caption` component and its parent container from your header.  The code you’re deleting begins with the comma and opening brace (,`{`) before `"role": "container",` and ends with a mix of three alternating braces and brackets, and a comma (`}]}`).
+1. Delete the `caption` component and its parent container from your header. The code you’re deleting begins with the comma and opening brace (,`{`) before `"role": "container",` and ends with a mix of three alternating braces and brackets, and a comma (`}]}`).
 2. Copy the example code [`Caption: Copy This Code`](creating-a-floating-caption#Caption-Copy-This-Code.md).
 3. Paste the code inside your article’s second section, before the opening brace (`{`) of the `body` component whose text begins with `Nam libero tempore`.
 4. Inside the `body` component whose text begins with `Nam libero tempore`, add an `identifier` property with a value of `"body1"`, as shown in the example code [`Caption: Result`](creating-a-floating-caption#Caption-Result.md).

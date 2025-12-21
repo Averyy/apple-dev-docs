@@ -6,86 +6,96 @@ Let people configure their device to set your app as the default dialer app.
 
 #### Overview
 
-In addition to adding VoIP calling to your app and preparing it to be the default calling app, LiveCommunicationKit allows you to prepare your app as the default dialer app.
+In addition to adding VoIP calling to your app and preparing it to be the default calling app, LiveCommunicationKit allows you to prepare your app as the default dialer app that can start cellular network conversations:
 
-- Default  apps handle incoming and outgoing VoIP conversations, requiring VoIP conversation functionality.
-- Default  apps focus on presenting a dialer interface as the default way for initiating VoIP and cellular network conversations.
+- A default  app handles incoming and outgoing VoIP conversations, requiring VoIP conversation functionality, and uses LiveCommunicationKit or [`CallKit`](https://developer.apple.com/documentation/CallKit).
+- A default  app uses LiveCommunicationKit and focuses on presenting a dialer interface as the default way for initiating cellular network conversations.
 
-> ❗ **Important**: To use the `DialRequest` and `TelephonyManager` API in LiveCommunicationKit, you must add the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement to your app. To test your app’s behavior as a default dialer app, your Apple Developer account needs to be registered in the European Union (EU), and the test device must be located within the EU.
+> ❗ **Important**: To use the [`StartCellularConversationAction`](startcellularconversationaction.md) and [`TelephonyConversationManager`](telephonyconversationmanager.md) API in LiveCommunicationKit, you must add the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement to your app. To test your app’s behavior as a default dialer app, your Apple Developer account needs to be registered in the European Union (EU), and the test device must be located within the EU.
 
-As the default dialer app, your app can initiate a conversation immediately without a system prompt that asks them to confirm their intent. This behavior is different from apps that use [`CallKit`](https://developer.apple.com/documentation/CallKit), or an app that forwards a conversation to the system using a `telephony:` URL scheme. Additionally, your app can access the device’s conversation history, from the moment your app became the default dialer app, and allow people to quickly start a follow-up conversation from a past conversation.
+As the default dialer app, people use your app to initiate a cellular network conversation immediately without a system prompt that asks them to confirm their intent. This behavior is different from apps that use [`CallKit`](https://developer.apple.com/documentation/CallKit), or an app that forwards a conversation to the system using a `telephony:` URL scheme. Additionally, your app can access the device’s conversation history, from the moment your app became the default dialer app, to allow people to quickly start a follow-up conversation from a previous inbound or outgoing conversation.
 
-When someone enters recipient information in the default dialer app to initiate a conversation, the app can either handle the VoIP conversation itself or pass it to the system. For example:
+> **Note**: If your app includes the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement, your app can initiate a cellular network conversation with LiveCommunicationKit even if a person doesn’t also configure it as the default dialer app. However, the person has to confirm their intention to start the conversation with a confirmation dialog. If someone configures your app as the default dialer app, they don’t have to confirm their intent with a confirmation dialog.
 
-- A cartoon app might add support for being the default dialer app to let people initiate conversations from a custom dialer UI with a cartoon theme. The app becomes their primary way to initiate any conversation. However, the app doesn’t offer VoIP functionality itself. Instead, it uses LiveCommunicationKit to forward the conversation to the system.
-- A VoIP conversation app might add support to be the default dialer app for a conversation experience that’s more integrated in the system by allowing people to dial any recipient without a confirmation prompt and showing conversation history. If a person initiates a VoIP conversation, the app itself handles the conversation. If the VoIP conversation fails or is not possible, it forwards the conversation to the system using LiveCommunicationKit.
+When someone enters recipient information in the default dialer app to initiate a conversation, the app can handle cellular network conversations directly and either handle VoIP conversations itself or pass them to the system. For example:
 
-When an app forwards a conversation to the system using LiveCommunicationKit, the framework routes the conversation to the configured default calling app. If the person configured a default calling app, that default calling app might attempt a VoIP conversation. If the VoIP conversation fails, the default calling app can fall back to the system, and the system handles the conversation as a cellular network conversation.
+- A cartoon app might add support for being the default dialer app to let people initiate conversations from a custom dialer UI with a cartoon theme. If someone enters a phone number, the app starts the cellular network conversation without a confirmation if it’s the configured default dialer app. The app’s dialer UI remains visible during the conversation. To allow people to initiate a VoIP conversation using an email address or other account information, the app forwards the conversation to the system.
+- A VoIP conversation app might add support to be the default dialer app for a conversation experience that’s more integrated in the system. When someone enters a phone number, the app starts a cellular network conversation using LiveCommunicationKit. If the app is the configured default dialer app, the system doesn’t show a confirmation dialog. When a person initiates a VoIP conversation, the app handles the VoIP conversation as well. If the VoIP conversation fails, it attempts a cellular conversation using LiveCommunicationKit.
+
+When an app forwards a conversation to the system using LiveCommunicationKit, the framework routes the conversation to the configured default calling app which attempts a VoIP conversation. If the VoIP conversation fails, the default calling app can fall back to the system, and the system attempts to handle the conversation as a cellular network conversation.
 
 ##### Add the Default Dialer App Entitlement
 
 To prepare your app to be the default dialer app, add the `com.apple.developer.dialing-app` entitlement to the `.entitlements` file in your app’s Xcode project. For details on adding this entitlement, see [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app).
 
-##### Request the System to Start a Conversation
+##### Start a Cellular Network Conversation
 
 After adding the default dialer app entitlement, use LiveCommunicationKit to initiate a conversation. If your app doesn’t include VoIP conversation functionality, ask the system to start a conversation using the default calling app:
 
 1. Create a [`Handle`](handle.md) for the conversation’s recipient.
-2. Create a `DialRequest` using the `Handle` and the `Account` to initiate the conversation.
-3. Use the `TelephonyManager` and its `TelephonyManager/dial(request:)` method to initiate a conversation.
+2. Create a [`StartCellularConversationAction`](startcellularconversationaction.md) using the `Handle` and the [`CellularService`](cellularservice.md) to initiate the cellular network conversation.
+3. Use the [`TelephonyConversationManager`](telephonyconversationmanager.md) and its [`startCellularConversation(_:)`](telephonyconversationmanager/startcellularconversation(_:).md) method to initiate a conversation.
 
-By creating a `DialRequest` and initiating a conversation using the `TelephonyManager`, you let the system route it to the right app. If a person configures their device to use a default calling app, the system launches that app to either handle a VoIP conversation or pass a cellular network conversation back to the system. If a person hasn’t configured a default calling app, the system handles the conversation as a cellular network conversation.
+By creating a `DialRequest` and initiating a conversation using the `TelephonyConversationManager`, you let the system route it to the right app. If a person configures their device to use a default calling app, the system launches that app to either handle a VoIP conversation or pass a cellular network conversation back to the system. If a person hasn’t configured a default calling app, the system handles the conversation as a cellular network conversation.
 
-The following example shows a method for initiating a conversation with `DialRequest`:
+The following example shows a method for initiating a conversation with a `StartCellularConversationAction`:
 
 ```swift
-    public func dial(_ phoneNumber: String, using account: Account? = nil) {
-        Task {
-            let handle = Handle(type: .phoneNumber, value: phoneNumber, displayName: nil)
-            do {
-                let request = DialRequest(handle: handle, account: account)
-                let dialer = TelephonyManager()
-                try await dialer.dial(request: request)
-            } catch {
-                print("error dialing \(error)")
-                // Additional error handling.
-            }
-        }
+// ...
+
+let manager = TelephonyConversationManager.sharedInstance
+let cellularServices = manager.cellularServices
+
+// Code to choose a cellular service.
+// ...
+
+// Start a cellular network conversation.
+func startCellularConversation(_ phoneNumber: String, using cellularService: CellularService? = nil) async throws {
+    let handle = Handle(type: .phoneNumber, value: phoneNumber)
+    do {
+        let action = StartCellularConversationAction(handle, cellularService: cellularService)
+        try await manager.startCellularConversation(action)
+    } catch {
+        print("error dialing \(error)")
+        // ...
+        // Additional error handling.
+
+        throw error
     }
+}
 ```
 
-If your app includes VoIP conversation functionality, handle the VoIP conversation. If the VoIP conversation fails, use `DialRequest` and `TelephonyManager` as shown above to let the system pass the conversation to the configured default calling app. If a person didn’t configure a default calling app, the system handles the conversation as a cellular network conversation.
+If your app includes VoIP conversation functionality, handle the VoIP conversation in your app. If the VoIP conversation fails, use `DialRequest` and `TelephonyConversationManager` as shown above to let the system pass the conversation to the configured default calling app. If a person didn’t configure a default calling app, the system handles the conversation as a cellular network conversation.
 
-##### Access Recent Conversation History
+##### Access Recent Cellular Conversation History
 
-If your app includes the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement and a person configures it as the default dialer app, your app can access recent conversation history. Displaying recent conversations in your app makes it easy for people to return missed conversations or follow up after a recent conversation. To access the conversation history, use [`ConversationHistoryManager`](conversationhistorymanager.md) to fetch recent conversations and receive updates about recent conversations, such as missed conversations.
-
-The following example shows a class that implements the [`ConversationHistoryManagerDelegate`](conversationhistorymanagerdelegate.md) protocol to receive updates about recent conversations:
+If your app includes the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement and a person configures it as the default dialer app, your app can access recent conversation history. Displaying recent conversations in your app makes it easy for people to return missed conversations or follow up after a recent conversation. To access the conversation history, use [`ConversationHistoryManager`](conversationhistorymanager.md) to fetch recent conversations. To update your app’s interface to show recent changes to the conversation history, observe the [`ConversationHistoryManager.ConversationHistoryDidUpdate`](conversationhistorymanager/conversationhistorydidupdate.md) message as shown in the following example:
 
 ```swift
 import Foundation
 import LiveCommunicationKit
 
+import Foundation
+import LiveCommunicationKit
+
 @Observable
-class HistoryViewModel: ConversationHistoryManagerDelegate {
-    func conversationHistoryManagerDidUpdate(_ manager: LiveCommunicationKit.ConversationHistoryManager) {
-        fetchAndUpdateHistory()
-    }
-
-    let dataProvider = ConversationHistoryManager()
-
+class RecentConversationsViewModel {
     @MainActor var history: [ConversationHistoryManager.RecentConversation] = []
+    let dataProvider = ConversationHistoryManager.sharedInstance
+    var token: NotificationCenter.ObservationToken? = nil
 
-    public init() {
-        dataProvider.addDelegate(delegate: self)
+    init() {
         fetchAndUpdateHistory()
+        self.token = NotificationCenter.default.addObserver(of: ConversationHistoryManager.self, for: .conversationHistoryDidUpdateMessage) { _ in
+            self.fetchAndUpdateHistory()
+        }
     }
 
     private func fetchAndUpdateHistory() {
         Task {
             let predicate = #Predicate<ConversationHistoryManager.RecentConversation> { _ in true }
             do {
-                let results = try await dataProvider.fetch(request: predicate)
+                let results = try await dataProvider.recentConversations(matching: predicate)
                 await MainActor.run {
                     history = results
                 }

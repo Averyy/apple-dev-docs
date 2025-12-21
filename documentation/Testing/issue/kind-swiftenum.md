@@ -43,8 +43,6 @@ enum Kind
   An issue which occurred unconditionally, for example by using [`record(_:sourceLocation:)`](issue/record(_:sourcelocation:).md).
 - [case valueAttachmentFailed(any Error)](issue/kind-swift.enum/valueattachmentfailed(_:).md)
   An issue due to an `Error` being thrown while attempting to save an attachment to a test report or to disk.
-### Default Implementations
-- [CustomStringConvertible Implementations](issue/kind-swift.enum/customstringconvertible-implementations.md)
 
 ## Relationships
 

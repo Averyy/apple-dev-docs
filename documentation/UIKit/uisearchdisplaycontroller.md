@@ -125,12 +125,12 @@ Starting in iOS 7.0, you can use a search display controller with a navigation b
   A group of one or more child quick actions, each an instance of the preview action class.
 - [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)
   A specific type of segue for presenting content in a popover.
+- [class UIWebView](uiwebview.md)
+  A view that embeds web content in your app.
 - [class UIUserNotificationAction](uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
 - [class UIUserNotificationCategory](uiusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
-- [class UIUserNotificationSettings](uiusernotificationsettings.md)
-  The types of notifications that can be displayed to the user by your app.
 
 
 ---

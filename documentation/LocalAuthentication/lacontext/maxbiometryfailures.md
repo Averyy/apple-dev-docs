@@ -20,7 +20,7 @@ var maxBiometryFailures: NSNumber? { get set }
 
 #### Discussion
 
-Biometry lockout happens after at most 5 wrong attempts, regardless of how you set this property.
+Biometry lockout happens after too many wrong attempts, regardless of how you set this property.
 
 ## See Also
 

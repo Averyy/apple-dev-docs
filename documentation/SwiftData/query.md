@@ -52,9 +52,6 @@ A type that fetches models using the specified criteria, and manages those model
 ### Accessing the value
 - [var wrappedValue: Result](query/wrappedvalue.md)
   The most recent fetched result from the Query.
-### Updating the value
-- [func update()](query/update.md)
-  Updates the underlying value of the stored value.
 
 ## Relationships
 

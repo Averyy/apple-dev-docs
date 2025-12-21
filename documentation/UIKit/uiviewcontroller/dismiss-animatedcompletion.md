@@ -40,6 +40,7 @@ The completion handler is called after the [`viewDidDisappear(_:)`](uiviewcontro
   Presents a view controller in a primary context.
 - [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents a view controller in a secondary (or detail) context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
   Presents a view controller modally.
 - [var modalPresentationStyle: UIModalPresentationStyle](uiviewcontroller/modalpresentationstyle.md)

@@ -30,7 +30,7 @@ This class subclasses [`AVPartialAsyncProperty`](avpartialasyncproperty.md) to p
 
 ## Topics
 
-### Accessing the Status
+### Accessing the status
 - [AVAsyncProperty.Status](avasyncproperty/status.md)
   Loaded status values for asynchronous properties.
 

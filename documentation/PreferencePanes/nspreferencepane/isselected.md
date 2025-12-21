@@ -17,7 +17,7 @@ var isSelected: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if preference pane is currently selected by user, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if preference pane is currently selected by user, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

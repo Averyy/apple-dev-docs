@@ -16,9 +16,9 @@ func setShowsUserLocation(_ showsUserLocation: Bool)
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) displays the users current location on the map. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) displays the users current location on the map. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-This property doesn’t indicate whether the user’s position is visible on the map. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the map view to use the Core Location framework to track the user’s current location and display the location when it’s visible on screen. To keep the map centered on the user’s location, pass [`WKInterfaceMap.UserTrackingMode.follow`](wkinterfacemap/usertrackingmode/follow.md) to the [`setUserTrackingMode(_:animated:)`](wkinterfacemap/setusertrackingmode(_:animated:).md) method.
+This property doesn’t indicate whether the user’s position is visible on the map. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) causes the map view to use the Core Location framework to track the user’s current location and display the location when it’s visible on screen. To keep the map centered on the user’s location, pass [`WKInterfaceMap.UserTrackingMode.follow`](wkinterfacemap/usertrackingmode/follow.md) to the [`setUserTrackingMode(_:animated:)`](wkinterfacemap/setusertrackingmode(_:animated:).md) method.
 
 ## Parameters
 

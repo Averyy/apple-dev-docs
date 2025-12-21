@@ -6,8 +6,8 @@
 A view model that holds all the resources needed to render an immersive camera view.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,11 +27,11 @@ App needs to query this type instance from [`VenueDescriptor`](venuedescriptor.m
 - [var environmentBackdrop: MDLAsset?](immersivecameraviewmodel/environmentbackdrop.md)
   The environment backdrop associated with the immersive camera view
 - [var leftEye: MDLMesh](immersivecameraviewmodel/lefteye.md)
-  Left eye mesh associated with the Immersive camera view.
+  Left eye mesh associated with the immersive camera view.
 - [var mask: ImmersiveVideoMask?](immersivecameraviewmodel/mask.md)
   Generated immersive video mask associated with the immersive camera view
 - [var rightEye: MDLMesh](immersivecameraviewmodel/righteye.md)
-  Right eye mesh associated with the Immersive camera view.
+  Right eye mesh associated with the immersive camera view.
 
 ## Relationships
 

@@ -20,7 +20,7 @@ func send(_ profile: MIDICIProfile, onChannel channel: MIDIChannelNumber, profil
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data was successfully sent, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the data was successfully sent, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

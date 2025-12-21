@@ -30,9 +30,6 @@ enum RPSampleBufferType
   The sample that contains a video clip.
 ### Initializers
 - [init?(rawValue: Int)](rpsamplebuffertype/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](rpsamplebuffertype/equatable-implementations.md)
-- [RawRepresentable Implementations](rpsamplebuffertype/rawrepresentable-implementations.md)
 
 ## Relationships
 

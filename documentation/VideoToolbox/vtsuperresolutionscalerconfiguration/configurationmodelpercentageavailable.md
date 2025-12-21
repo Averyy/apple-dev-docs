@@ -3,11 +3,13 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
+Returns a floating point value between 0.0 and 1.0 indicating the percentage of required model assets that have been downloaded.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

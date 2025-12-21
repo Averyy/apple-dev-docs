@@ -21,7 +21,7 @@ var isRemotePass: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pass is on a paired device, such as an Apple Watch; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the pass is on a paired device, such as an Apple Watch; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

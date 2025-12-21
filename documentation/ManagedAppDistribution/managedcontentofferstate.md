@@ -6,9 +6,9 @@
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.4+
 
 ## Declaration
 
@@ -32,17 +32,6 @@ struct ManagedContentOfferState
   A state representing content that has never been installed.
 - [static var noninteractive: ManagedContentOfferState](managedcontentofferstate/noninteractive.md)
   A state representing content that has no actionable button.
-### Operators
-- [static func == (ManagedContentOfferState, ManagedContentOfferState) -> Bool](managedcontentofferstate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](managedcontentofferstate/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](managedcontentofferstate/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](managedcontentofferstate/equatable-implementations.md)
 
 ## Relationships
 

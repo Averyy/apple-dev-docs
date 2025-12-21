@@ -24,14 +24,12 @@ struct PKDisbursementError
 - [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156691-init.md)
   Creates a new error structure with the error code and user info you provide.
 ### Error details
-- [var code: Code](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156685-code.md)
-  The code that describes the error.
 - [PKDisbursementError.Code](pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [var errorCode: Int](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156686-errorcode.md)
-  An integer value that represents the error code.
-- [var errorUserInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156688-erroruserinfo.md)
-  A dictionary that contains additional details about the error.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 - [var hashValue: Int](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156690-hashvalue.md)
   The hash value.
 - [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkdisbursementerror/4156696-userinfo.md)

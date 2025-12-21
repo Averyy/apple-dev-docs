@@ -20,7 +20,7 @@ optional func interactionShouldBegin(_ interaction: UITextInteraction, at point:
 
 #### Return Value
 
-A Boolean value indicating whether the interaction should begin. Return [`true`](https://developer.apple.com/documentation/swift/true) to let the interaction begin; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false) to prevent the interaction from beginning.
+A Boolean value indicating whether the interaction should begin. Return [`true`](https://developer.apple.com/documentation/Swift/true) to let the interaction begin; otherwise, return [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the interaction from beginning.
 
 ## Parameters
 

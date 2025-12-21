@@ -27,9 +27,6 @@ Waxing and waning provide information about direction. Crescent and gibbous desc
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](moonphase/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting the moon phase
 - [MoonPhase.firstQuarter](moonphase/firstquarter.md)
   The disk is half lit.
@@ -54,20 +51,6 @@ Waxing and waning provide information about direction. Crescent and gibbous desc
   A localized string describing the moon phase.
 - [var symbolName: String](moonphase/symbolname.md)
   The SF Symbol icon that represents the moon phase.
-### Instance Properties
-- [var rawValue: String](moonphase/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MoonPhase.AllCases](moonphase/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [MoonPhase.RawValue](moonphase/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [MoonPhase]](moonphase/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](moonphase/equatable-implementations.md)
-- [RawRepresentable Implementations](moonphase/rawrepresentable-implementations.md)
 
 ## Relationships
 

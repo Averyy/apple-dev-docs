@@ -17,7 +17,7 @@ optional func window(_ window: NSWindow, shouldPopUpDocumentPathMenu menu: NSMen
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the display of the title pop-up menu; [`false`](https://developer.apple.com/documentation/swift/false) to prevent it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the display of the title pop-up menu; [`false`](https://developer.apple.com/documentation/Swift/false) to prevent it.
 
 ## Parameters
 

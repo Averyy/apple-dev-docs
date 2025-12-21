@@ -24,9 +24,9 @@ var allowsDocumentCreation: Bool { get set }
 
 #### Discussion
 
-The browser creates new documents when the user taps the Add (+) button in the navigation bar. The Add button is enabled only if both the [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), and the browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
+The browser creates new documents when the user taps the Add (+) button in the navigation bar. The Add button is enabled only if both the [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), and the browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

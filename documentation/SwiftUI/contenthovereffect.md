@@ -6,7 +6,7 @@
 A `CustomHoverEffect` that applies effects to a view on hover using a closure.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

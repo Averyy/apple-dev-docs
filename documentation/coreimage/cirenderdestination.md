@@ -65,7 +65,7 @@ Renders issued to a `CIRenderDestination` return to the caller as soon as the CP
   Indicator of whether the destination is flipped.
 ### Instance Properties
 - [var captureTraceURL: URL?](cirenderdestination/capturetraceurl.md)
-  Tell the next using this destination to capture a Metal trace.
+  Tell the next render using this destination to capture a Metal trace.
 
 ## Relationships
 

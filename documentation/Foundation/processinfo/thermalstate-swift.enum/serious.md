@@ -42,12 +42,6 @@ For more details on how to reduce your app’s use of these resources, see [`Ene
   The thermal state is slightly elevated.
 - [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
-  The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
-  The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
-  The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 
 ---

@@ -251,10 +251,10 @@ As long as the type you initialize matches the type that you previously used to 
 
 - [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
-- [Performing Common Cryptographic Operations](performing_common_cryptographic_operations.md)
+- [Performing Common Cryptographic Operations](performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.
-- [Using the quantum-secure APIs](using-the-quantum-secure-apis.md)
-  Enhance your app’s privacy and security by using quantum-secure workflows.
+- [Enhancing your app’s privacy and security with quantum-secure workflows](enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows.md)
+  Use quantum-secure cryptography to protect your app from quantum attacks.
 
 
 ---

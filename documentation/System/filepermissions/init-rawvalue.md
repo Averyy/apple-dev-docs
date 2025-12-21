@@ -22,12 +22,10 @@ init(rawValue: CModeT)
 
 ## See Also
 
-- [let rawValue: CModeT](filepermissions/rawvalue-swift.property.md)
+- [let rawValue: CModeT](filepermissions/rawvalue.md)
   The raw C file permissions.
 - [typealias CModeT](cmodet.md)
   The C `mode_t` type.
-- [FilePermissions.RawValue](filepermissions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

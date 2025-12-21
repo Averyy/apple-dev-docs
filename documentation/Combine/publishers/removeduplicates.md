@@ -22,24 +22,19 @@ struct RemoveDuplicates<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Remove Duplicates Publisher
+### Creating a remove duplicates publisher
 - [init(upstream: Upstream, predicate: (Publishers.RemoveDuplicates<Upstream>.Output, Publishers.RemoveDuplicates<Upstream>.Output) -> Bool)](publishers/removeduplicates/init(upstream:predicate:).md)
   Creates a publisher that publishes only elements that don’t match the previous element, as evaluated by a provided closure.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.RemoveDuplicates.Output](publishers/removeduplicates/output.md)
   The kind of values published by this publisher.
 - [Publishers.RemoveDuplicates.Failure](publishers/removeduplicates/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/removeduplicates/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.RemoveDuplicates<Upstream>.Output, Publishers.RemoveDuplicates<Upstream>.Output) -> Bool](publishers/removeduplicates/predicate.md)
   The predicate closure used to evaluate whether two elements are duplicates.
-### Applying Operators
-- [Publisher Operators](publishers-removeduplicates-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/removeduplicates/publisher-implementations.md)
 
 ## Relationships
 

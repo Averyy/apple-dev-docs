@@ -8,7 +8,6 @@ An object that represents a body pose joint in 3D space.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -46,8 +45,8 @@ struct Joint3D
 
 ## See Also
 
-- [class DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)
-  A request that detects points on human bodies in 3D space, relative to the camera.
+- [struct Joint](joint.md)
+  A pose joint represented as a normalized point in an image, along with a label and a confidence value.
 
 
 ---

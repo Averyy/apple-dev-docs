@@ -7,7 +7,7 @@ Respond to problem situations in your interactions with APIs, and fine-tune your
 ## Topics
 
 ### User-Relevant Errors
-- [protocol Error : Sendable](../Swift/Error.md)
+- [protocol Error](../Swift/Error.md)
   A type representing an error value that can be thrown.
 - [class NSError](nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.

@@ -12,7 +12,7 @@ For more information about the DNG format, see  at [`www.adobe.com`](https://dev
 
 ### Dictionary
 - [let kCGImagePropertyDNGDictionary: CFString](kcgimagepropertydngdictionary.md)
-  A dictionary of key-value pairs for an image that uses the Digital Negative (DNG) archival format. See [`DNG Image Properties`](dng-image-properties.md).
+  A dictionary of key-value pairs for an image that uses the Digital Negative (DNG) archival format.
 ### Quality
 - [let kCGImagePropertyDNGBaselineSharpness: CFString](kcgimagepropertydngbaselinesharpness.md)
   The amount of sharpening required for this camera model.

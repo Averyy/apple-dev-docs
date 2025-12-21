@@ -21,7 +21,7 @@ func SecTrustCopyProperties(_ trust: SecTrust) -> CFArray?
 
 #### Return Value
 
-An array, or `NULL` if the trust object has not yet been evaluated. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free this array’s memory when you are done with it.
+An array, or `NULL` if the trust object has not yet been evaluated. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this array’s memory when you are done with it.
 
 #### Discussion
 

@@ -19,7 +19,7 @@ enum WritingMode
 
 ## Topics
 
-### Writing Modes
+### Writing modes
 - [AVCaptionRegion.WritingMode.leftToRightAndTopToBottom](avcaptionregion/writingmode-swift.enum/lefttorightandtoptobottom.md)
   A left-to-right and top-to-bottom writing mode.
 - [AVCaptionRegion.WritingMode.topToBottomAndRightToLeft](avcaptionregion/writingmode-swift.enum/toptobottomandrighttoleft.md)

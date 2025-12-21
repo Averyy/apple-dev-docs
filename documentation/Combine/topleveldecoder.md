@@ -22,7 +22,7 @@ protocol TopLevelDecoder
 
 ## Topics
 
-### Declaring Encoder Topography
+### Declaring supporting types
 - [associatedtype Input](topleveldecoder/input.md)
   The type this decoder accepts.
 ### Decoding

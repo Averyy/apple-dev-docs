@@ -21,7 +21,7 @@ var isLensCorrectionSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can enable lens correction on the image by setting [`isLensCorrectionEnabled`](cirawfilter/islenscorrectionenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can enable lens correction on the image by setting [`isLensCorrectionEnabled`](cirawfilter/islenscorrectionenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

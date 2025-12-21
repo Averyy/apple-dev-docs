@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the Apple TV remote.
+The payload that configures the Apple TV remote.
 
 **Availability**:
 - iOS 11.3+
@@ -86,7 +86,7 @@ Specify `com.apple.tvremote` as the payload type.
 ## See Also
 
 - [object ConferenceRoomDisplay](conferenceroomdisplay.md)
-  The payload you use to configure Conference Room Display mode for Apple TV.
+  The payload that configures Conference Room Display mode for Apple TV.
 
 
 ---

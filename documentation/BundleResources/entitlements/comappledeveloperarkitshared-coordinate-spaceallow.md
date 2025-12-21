@@ -6,7 +6,7 @@
 A Boolean value indicating whether your app may use a shared coordinate space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 #### Discussion
 
@@ -28,8 +28,8 @@ The Shared Coordinate Space access entitlement provides an app with access to th
   A Boolean value indicating whether your app may access the camera region.
 - [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
   A Boolean value indicating whether the system prohibits capturing your app’s content.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)

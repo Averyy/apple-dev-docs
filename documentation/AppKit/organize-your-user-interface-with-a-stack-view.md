@@ -97,8 +97,8 @@ If a disclosure appearance is defined, each section in the stack view gets the `
 
 ## See Also
 
-- [Localization-Friendly Layouts in macOS](../xcode/localization-friendly_layouts_in_macos.md)
-  This project demonstrates localization-friendly auto layout constraints. It uses `NSGridView` as a container view to achieve localized layouts.
+- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+  This project demonstrates localization-friendly auto layout constraints.
 - [Grid View](grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.
 - [class NSSplitView](nssplitview.md)

@@ -11,7 +11,7 @@ The text to display in the marker balloon.
 ## Declaration
 
 ```swift
-attribute string glyphText;
+glyphText?: string;
 ```
 
 #### Discussion

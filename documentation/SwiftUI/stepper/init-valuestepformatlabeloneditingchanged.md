@@ -28,8 +28,9 @@ In the example below, a stepper increments or decrements `value` by the `step` v
 
 ```swift
 struct StepperView: View {
-    @State private var value = 1
-    let step = 5
+    @State private var value = 1.0
+    private let step = 5.0
+
     var body: some View {
         Stepper(value: $value,
                 step: step,

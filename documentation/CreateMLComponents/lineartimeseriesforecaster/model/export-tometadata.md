@@ -24,6 +24,11 @@ func export(to url: URL, metadata: ModelMetadata) throws
 - `url`: The location to write the model into.
 - `metadata`: Contextual user-provided information.
 
+## See Also
+
+- [func export(to: URL) throws](lineartimeseriesforecaster/model/export(to:).md)
+  Exports this transformer as a CoreML model package.
+
 
 ---
 

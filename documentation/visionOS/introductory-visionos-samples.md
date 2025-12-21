@@ -17,6 +17,8 @@ The samples on this page are a starting point for developers new to visionOS. Ea
 ### Building shapes
 - [Creating 2D shapes with SwiftUI](creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
+- [Creating 3D entities with RealityKit](creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 ### Working with windows
 - [Creating SwiftUI windows in visionOS](creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.
@@ -33,6 +35,8 @@ The samples on this page are a starting point for developers new to visionOS. Ea
 - [Creating an immersive space in visionOS](creating-immersive-spaces-in-visionos-with-swiftui.md)
   Enhance your visionOS app by adding an immersive space using RealityKit.
 ### Integrating ARKit
+- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+  Substitute a person’s hands with custom models in a fully immersive space.
 - [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
 - [Tracking and visualizing hand movement](tracking-and-visualizing-hand-movement.md)
@@ -67,6 +71,10 @@ The samples on this page are a starting point for developers new to visionOS. Ea
   Build fully immersive experiences by combining spaces with content you create using RealityKit or Metal.
 - [Drawing sharp layer-based content in visionOS](drawing-sharp-layer-based-content.md)
   Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 
 
 ---

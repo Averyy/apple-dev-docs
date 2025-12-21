@@ -11,7 +11,7 @@ A Boolean value that indicates whether someone can navigate inside the Look Arou
 ## Declaration
 
 ```swift
-attribute boolean isNavigationEnabled;
+isNavigationEnabled?: boolean;
 ```
 
 ## See Also

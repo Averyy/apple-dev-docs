@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The usdz file name of a backdrop that needs to be used for this calibration.
+The USDZ filename of a backdrop to use for this calibration.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

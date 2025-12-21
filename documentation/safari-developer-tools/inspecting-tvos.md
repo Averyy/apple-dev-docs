@@ -37,9 +37,9 @@ Additionally, TVML content in developer-provisions apps can be inspected to debu
 ## See Also
 
 - [Inspecting Safari on macOS](inspecting-safari-macos.md)
-  Inspect webpages, Service Workers, and extensions in Safari on macOS.
+  Inspect webpages, service workers, and extensions in Safari on macOS.
 - [Inspecting iOS and iPadOS](inspecting-ios.md)
-  Inspect webpages, Service Workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
+  Inspect webpages, service workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
 - [Inspecting visionOS](inspecting-visionos.md)
   Inspect webpages, service workers, extensions, and content inside apps in visionOS from a Mac on the same network.
 - [Enabling inspecting content in your apps](enabling-inspecting-content-in-your-apps.md)

@@ -6,7 +6,7 @@
 Adds the specified SwiftUI scene representation to the current application.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

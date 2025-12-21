@@ -21,7 +21,7 @@ var textLists: [NSTextList] { get set }
 
 ## See Also
 
-- [var textBlocks: [NSTextBlock] { get set }](../AppKit/NSMutableParagraphStyle/textBlocks.md)
+- [var textBlocks: [NSTextBlock]](../AppKit/NSMutableParagraphStyle/textBlocks.md)
   The text blocks that contain the paragraph.
 
 

@@ -25,8 +25,7 @@ init(_ position: DynamicIslandExpandedRegionPosition, priority: Double = 0, @Vie
 
 - [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
-- [@MainActor @preconcurrency func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
-](../SwiftUI/View/dynamicIsland(verticalPlacement:).md)
+- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](../SwiftUI/View/dynamicIsland(verticalPlacement:).md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 - [struct DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement.md)
   Vertical view positions of an expanded Live Activity that appears in the Dynamic Island.

@@ -37,7 +37,7 @@ Users can also set a custom duration for a specific app by scrolling down to the
 
 ![A screenshot of the settings that customize the amount of time the Now Playing app is allowed to remain the frontmost app.](https://docs-assets.developer.apple.com/published/47cb5ca2e9a09898fed9416aa14e27f7/media-3732047%402x.png)
 
-> **Note**:  In watchOS 6 and earlier, apps could request additional frontmost app time by setting the extension’s [`isFrontmostTimeoutExtended`](wkextension/isfrontmosttimeoutextended.md) property to [`true`](https://developer.apple.com/documentation/swift/true); however, starting with watchOS 7, the user controls the duration of an app’s frontmost state.
+> **Note**:  In watchOS 6 and earlier, apps could request additional frontmost app time by setting the extension’s [`isFrontmostTimeoutExtended`](wkextension/isfrontmosttimeoutextended.md) property to [`true`](https://developer.apple.com/documentation/Swift/true); however, starting with watchOS 7, the user controls the duration of an app’s frontmost state.
 
 Workout, location, background audio, and audio-recording apps appear to behave similarly to the frontmost app. However, these apps continue to run in the background throughout the entire workout, location, or audio session. If the user navigates to the watch face during a session, the system displays a glyph at the top of the watch face. If the user taps the glyph, the associated app resumes running in the foreground. For more information, see [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession).
 

@@ -19,7 +19,7 @@ func GLKVector2AllEqualToVector2(_ vectorLeft: GLKVector2, _ vectorRight: GLKVec
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all of the vectors’ components are equal , [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if all of the vectors’ components are equal , [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

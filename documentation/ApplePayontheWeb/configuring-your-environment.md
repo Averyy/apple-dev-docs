@@ -30,7 +30,7 @@ You must register and verify all top-level domains and subdomains where you’ll
 - You can register the same domains under multiple merchant IDs.
 - You can’t register the same domain with a different Team ID.
 
-Domains can’t be behind a proxy or redirect, and must be accessible to the Apple servers listed in [`Setting Up Your Server`](setting-up-your-server.md).
+Domains can’t be behind a proxy or redirect, and must be accessible to the Apple servers listed in [`Setting Up Your Server`](setting-up-your-server#Allow-Apple-IP-Addresses-for-Domain-Verification.md).
 
 To register and verify your domain, log in to your Apple Developer account as an Account Holder or Admin. See [`Register a merchant domain`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay-on-the-web#register-a-merchant-domain) and [`Register a merchant domain`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay-on-the-web#register-a-merchant-domain) for the setup steps.
 

@@ -1,4 +1,4 @@
-# Using HEVC Video with Alpha
+# Using HEVC video with alpha
 
 **Framework**: AVFoundation
 

@@ -1,33 +1,19 @@
-# ==(_:_:)
+# unknown
 
 **Framework**: AccessorySetupKit  
-**Kind**: op
-
-Returns a Boolean value indicating whether two values are equal.
+**Kind**: property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- macOS 10.10+
-- tvOS 9.0+
-- watchOS 2.0+
+- iOS 18.0+
+- iPadOS 18.0+
 
 ## Declaration
 
 ```swift
-static func == (lhs: Self, rhs: Self) -> Bool
+static var unknown: ASError.Code { get }
 ```
-
-#### Discussion
-
-Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessorysetupkit/aserror/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessorysetupkit/aserror/unknown)*

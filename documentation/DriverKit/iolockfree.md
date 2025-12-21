@@ -17,6 +17,8 @@ void IOLockFree(struct IOLock * lock);
 
 #### Discussion
 
+Frees a mutex.
+
 Frees a lock allocated with IOLockAlloc. Mutex should be unlocked with no waiters.
 
 ## Parameters

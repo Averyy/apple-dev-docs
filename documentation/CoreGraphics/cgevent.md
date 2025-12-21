@@ -19,7 +19,7 @@ class CGEvent
 
 Low-level hardware events of this type are referred to as Quartz events. A typical event in macOS originates when the user manipulates an input device such as a mouse or a keyboard. The device driver associated with that device, through the I/O Kit, creates a low-level event, puts it in the window server’s event queue, and notifies the window server. The window server creates a Quartz event, annotates the event, and dispatches the event to the appropriate run-loop port of the target process. There the event is picked up by the Carbon Event Manager and forwarded to the event-handling mechanism appropriate to the application environment. You can use event taps to gain access to Quartz events at several different steps in this process.
 
-This opaque type is derived from CFType and inherits the properties that all Core Foundation types have in common. For more information, see doc://com.apple.documentation/documentation/corefoundation/cftype.
+This opaque type is derived from CFType and inherits the properties that all Core Foundation types have in common. For more information, see [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef).
 
 ## Topics
 

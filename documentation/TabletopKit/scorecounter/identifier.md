@@ -22,7 +22,7 @@ A score counter identifier needs to be unique across all instances of the same t
 
 ### Creating score counter identifiers
 - [init(Int)](scorecounter/identifier/init(_:).md)
-### Instance Properties
+### Getting the raw value
 - [let rawValue: Int](scorecounter/identifier/rawvalue.md)
 
 ## Relationships

@@ -47,8 +47,6 @@ GET https://api.storekit.itunes.apple.com/inApps/v2/history/{transactionId}?revi
 
 - [object HistoryResponse](historyresponse.md)
   A response that contains the customer’s transaction history for an app.
-- [Get Transaction History V1](get-transaction-history-v1.md)
-  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
 
 
 ---

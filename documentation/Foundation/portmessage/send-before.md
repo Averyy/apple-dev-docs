@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Attempts to send the message before `aDate`, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful or [`false`](https://developer.apple.com/documentation/swift/false) if the operation times out.
+Attempts to send the message before the specified date.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -17,7 +17,7 @@ func send(before date: Date) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation is successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false) (for example, if the operation times out).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation is successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false) (for example, if the operation times out).
 
 #### Discussion
 

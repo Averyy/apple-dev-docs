@@ -6,8 +6,8 @@
 A structure that represents an RCS message identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -21,16 +21,6 @@ struct RCSMessageID
 ### Describing a message ID
 - [var description: String](rcsmessageid/description.md)
   A textual representation of this instance.
-### Working with raw values
-- [init(rawValue: String)](rcsmessageid/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-- [let rawValue: String](rcsmessageid/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [RCSMessageID.RawValue](rcsmessageid/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](rcsmessageid/equatable-implementations.md)
-- [RawRepresentable Implementations](rcsmessageid/rawrepresentable-implementations.md)
 
 ## Relationships
 

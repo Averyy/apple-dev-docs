@@ -16,8 +16,6 @@
 optional func accommodatePresentedItemEviction() async throws
 ```
 
-#### Discussion
-
 
 ---
 

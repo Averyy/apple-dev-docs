@@ -22,21 +22,10 @@ enum DoubleControlStyle
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.DoubleControlStyle, IntentParameter<Value>.DoubleControlStyle) -> Bool](intentparameter/doublecontrolstyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.DoubleControlStyle.field](intentparameter/doublecontrolstyle/field.md)
 - [IntentParameter.DoubleControlStyle.slider](intentparameter/doublecontrolstyle/slider.md)
 - [IntentParameter.DoubleControlStyle.stepper](intentparameter/doublecontrolstyle/stepper.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/doublecontrolstyle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/doublecontrolstyle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentparameter/doublecontrolstyle/equatable-implementations.md)
 
 ## Relationships
 

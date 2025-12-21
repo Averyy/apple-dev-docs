@@ -21,6 +21,7 @@ Typically, the position of the tab bar remains fixed while content scrolls under
 
 ## See Also
 
+- [var tab: UITab?](uiviewcontroller/tab.md)
 - [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
   The tab bar item that represents the view controller when added to a tab bar controller.
 

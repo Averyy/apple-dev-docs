@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,9 +20,26 @@ var groupID: Int { get }
 
 #### Discussion
 
-A number associated with object groups (e.g., face and body) that is unique for each physical object (e.g., a person whom the face and body belong to).
+When presented with a collection of [`AVMetadataObject`](avmetadataobject.md) instances of different types, you may use the objects’ [`groupID`](avmetadataobject/groupid.md) to combine them into groups. For example, a human body and face belonging to the same person have the same [`groupID`](avmetadataobject/groupid.md).  If an object’s [`groupID`](avmetadataobject/groupid.md) property is set to -1, it is invalid. When set to a value of >=0, it is unique across all object groups.
 
-The value of this property is an NSInteger indicating the unique identifier to combine objects (for instance, face and body) into groups (a physical person). A human body and face for the same person will have the same group ID. It is set to -1 when it’s invalid or not available. When it’s set to a value of >=0, it is unique across all object groups.
+## See Also
+
+- [var bounds: CGRect](avmetadataobject/bounds.md)
+  The bounding rectangle associated with the metadata.
+- [var duration: CMTime](avmetadataobject/duration.md)
+  The duration of the media associated with this metadata object.
+- [var time: CMTime](avmetadataobject/time.md)
+  The media time value associated with the metadata object.
+- [var type: AVMetadataObject.ObjectType](avmetadataobject/type.md)
+  The type of metadata that this object provides.
+- [AVMetadataObject.ObjectType](avmetadataobject/objecttype.md)
+  Constants that identify metadata object types.
+- [var isFixedFocus: Bool](avmetadataobject/isfixedfocus.md)
+  A BOOL indicating whether this metadata object represents a fixed focus.
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+  The current focus mode when an object is detected during a Cinematic Video recording.
+- [var objectID: Int](avmetadataobject/objectid.md)
+  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
 
 
 ---

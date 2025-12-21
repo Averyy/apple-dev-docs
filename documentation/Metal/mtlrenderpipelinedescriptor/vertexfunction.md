@@ -21,7 +21,7 @@ var vertexFunction: (any MTLFunction)? { get set }
 
 #### Discussion
 
-The default value is `nil`. The vertex function must always be specified. The vertex function can be either a regular vertex function or a post-tessellation vertex function.
+The default value is `nil`. The vertex function needs to be specified. The vertex function can be either a regular vertex function or a post-tessellation vertex function.
 
 ## See Also
 

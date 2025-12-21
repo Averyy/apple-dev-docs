@@ -26,7 +26,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`isHidden`](scnnode/ishidden.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false).
+When the action executes, the node’s [`isHidden`](scnnode/ishidden.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This action is reversible; the reverse is equivalent to the [`hide()`](scnaction/hide().md) action.
 

@@ -24,18 +24,11 @@ SwiftUI View to display an `AssignableDocument`.
 - [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool)](assignabledocumentview/init(document:activepartid:hiddenpartids:selectedpageid:selectedquestionid:showspagethumbnails:isstructureeditingenabled:).md)
   Displays an `AssignableDocument`.
 ### Customizing the view
-- [var body: some View](assignabledocumentview/body-swift.property.md)
-  The content and behavior of the view.
 - [AssignableDocumentView.Document](assignabledocumentview/document.md)
   The document type that this view presents.
 ### Initializers
 - [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool, allowsPencilDrawing: Bool, onMarkupActivation: (Bool) -> Void)](assignabledocumentview/init(document:activepartid:hiddenpartids:selectedpageid:selectedquestionid:showspagethumbnails:isstructureeditingenabled:allowspencildrawing:onmarkupactivation:).md)
   Displays an `AssignableDocument`.
-### Type Aliases
-- [AssignableDocumentView.Body](assignabledocumentview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](assignabledocumentview/view-implementations.md)
 
 ## Relationships
 

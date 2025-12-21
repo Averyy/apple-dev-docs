@@ -22,7 +22,7 @@ func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, 
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 

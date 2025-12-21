@@ -20,9 +20,7 @@ func sec_protocol_options_set_min_tls_protocol_version(_ options: sec_protocol_o
 
 #### Discussion
 
-```None
- Set the minimum support TLS version.
-```
+Set the minimum support TLS version.
 
 ## Parameters
 

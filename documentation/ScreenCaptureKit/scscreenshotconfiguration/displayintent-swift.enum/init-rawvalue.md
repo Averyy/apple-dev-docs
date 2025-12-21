@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: init
 
+Creates a display intent object from the specified raw value.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

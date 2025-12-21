@@ -42,6 +42,11 @@ parts[2] // has shape [5, 10]
 - `count`: The number of splits to create, must divide the size of dimension   evenly.
 - `axis`: The dimension along which to split this tensor. The   must be in the range  .
 
+## See Also
+
+- [func split(sizes: [Int], alongAxis: Int) -> [MLTensor]](mltensor/split(sizes:alongaxis:).md)
+  Splits a tensor into multiple tensors. The tensor is split  into `sizes.shape[0]` parts.
+
 
 ---
 

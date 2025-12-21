@@ -61,7 +61,7 @@ When the user drops contact information from another app into the sample app, th
 
 The `loadObject` method asks the `ContactCard` class for the contact card object. The class, which conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol, implements the [`object(withItemProviderData:typeIdentifier:)`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/object(withItemProviderData:typeIdentifier:)) class method, which creates and initializes a contact card object with the item provider data.
 
-When the user drops a contact at a specific location within the table view, the completion handler (from the `loadObject` call) creates a placeholder that displays a gap at the drop location. Next, the handler inserts the dropped contact into the list of contacts at the index path of the drop location. And finally, the completion handler replaces the placeholder with a view displaying contact.
+When the user drops a contact at a specific location within the table view, the completion handler (from the `loadObject` call) creates a placeholder that displays a gap at the drop location. Next, the handler inserts the dropped contact into the list of contacts at the index path of the drop location. And finally, the completion handler replaces the placeholder with a view displaying the contact.
 
 ```swift
 _ = dropItem.dragItem.itemProvider.loadObject(
@@ -118,9 +118,9 @@ _ = dropItem.dragItem.itemProvider.loadObject(
 
 - [class NSItemProvider](../Foundation/NSItemProvider.md)
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
-- [protocol NSItemProviderReading : NSObjectProtocol](../Foundation/NSItemProviderReading.md)
+- [protocol NSItemProviderReading](../Foundation/NSItemProviderReading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting : NSObjectProtocol](../Foundation/NSItemProviderWriting.md)
+- [protocol NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
 - [protocol UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 - [protocol UIItemProviderReadingAugmentationDesignating](uiitemproviderreadingaugmentationdesignating.md)

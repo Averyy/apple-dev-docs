@@ -20,11 +20,15 @@ Sets the URL’s resource property for a given key to a given value.
 func setResourceValue(_ value: Any?, forKey key: URLResourceKey) throws
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Discussion
 
 This method synchronously writes the new resource value out to disk. Attempts to set a read-only resource property or to set a resource property that is not supported by the resource are ignored and are not considered errors.
 
-If an error occurs, this method returns [`false`](https://developer.apple.com/documentation/swift/false) and populates the object pointer referenced by `error` with additional information.
+If an error occurs, this method returns [`false`](https://developer.apple.com/documentation/Swift/false) and populates the object pointer referenced by `error` with additional information.
 
 > **Note**:  This method applies only to URLs for file system resources.
 

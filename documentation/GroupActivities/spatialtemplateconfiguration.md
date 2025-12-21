@@ -29,13 +29,9 @@ Create a [`SpatialTemplateConfiguration`](spatialtemplateconfiguration.md) struc
 ### Instance Properties
 - [let defaultInitiatorRole: (any SpatialTemplateRole)?](spatialtemplateconfiguration/defaultinitiatorrole.md)
   The default role to assign to the initiator of the group activity.
-- [var hashValue: Int](spatialtemplateconfiguration/hashvalue.md)
-  The hash value.
 ### Instance Methods
 - [func hash(into: inout Hasher)](spatialtemplateconfiguration/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](spatialtemplateconfiguration/equatable-implementations.md)
 
 ## Relationships
 

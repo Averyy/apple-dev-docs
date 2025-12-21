@@ -20,7 +20,7 @@ var supportsPreciseDistanceMeasurement: Bool { get }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), then the device doesn’t support Nearby Interaction.
+If [`false`](https://developer.apple.com/documentation/Swift/false), then the device doesn’t support Nearby Interaction.
 
 This property is functionally equivalent to the deprecated [`isSupported`](nisession/issupported.md).
 
@@ -32,6 +32,8 @@ This property is functionally equivalent to the deprecated [`isSupported`](nises
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
 - [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
+- [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
+  A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
 
 
 ---

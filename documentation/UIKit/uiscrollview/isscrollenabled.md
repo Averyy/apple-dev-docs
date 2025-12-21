@@ -21,7 +21,7 @@ var isScrollEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which indicates that scrolling is enabled. Setting the value to [`false`](https://developer.apple.com/documentation/swift/false) disables scrolling.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), which indicates that scrolling is enabled. Setting the value to [`false`](https://developer.apple.com/documentation/Swift/false) disables scrolling.
 
 When scrolling is disabled, the scroll view doesn’t accept touch events; it forwards them up the responder chain.
 

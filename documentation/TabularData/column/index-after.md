@@ -32,11 +32,6 @@ func index(after i: Int) -> Int
   The index of the final element in the column.
 - [func index(before: Int) -> Int](column/index(before:).md)
   Returns the index immediately before an element index.
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](column/index(_:offsetby:limitedby:).md)
-- [func formIndex(before: inout Self.Index)](column/formindex(before:).md)
-  Replaces the given index with its predecessor.
-- [func formIndex(after: inout Self.Index)](column/formindex(after:).md)
-  Replaces the given index with its successor.
 
 
 ---

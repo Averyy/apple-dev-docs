@@ -22,12 +22,6 @@ struct MonthTemperatureStatistics
 
 ## Topics
 
-### Operators
-- [static func == (MonthTemperatureStatistics, MonthTemperatureStatistics) -> Bool](monthtemperaturestatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](monthtemperaturestatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var averageHighTemperature: Measurement<UnitTemperature>](monthtemperaturestatistics/averagehightemperature.md)
   The average observed high temperature for the month.
@@ -35,11 +29,6 @@ struct MonthTemperatureStatistics
   The average observed low temperature for the month.
 - [var month: Int](monthtemperaturestatistics/month.md)
   The month of the year, in UTC.
-### Instance Methods
-- [func encode(to: any Encoder) throws](monthtemperaturestatistics/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](monthtemperaturestatistics/equatable-implementations.md)
 
 ## Relationships
 

@@ -21,14 +21,14 @@ static var argumentInfo: MTLPipelineOption { get }
 
 #### Discussion
 
-This option provides all properties of a [`MTLArgument`](mtlargument.md) object, except for [`bufferStructType`](mtlargument/bufferstructtype.md) and [`bufferPointerType`](mtlargument/bufferpointertype.md), which are `nil`. To obtain these detailed buffer type properties, retrieve the [`bufferTypeInfo`](mtlpipelineoption/buffertypeinfo.md) instance.
+This option provides all properties of an [`MTLArgument`](mtlargument.md) instance, except for [`bufferStructType`](mtlargument/bufferstructtype.md) and [`bufferPointerType`](mtlargument/bufferpointertype.md), which are `nil`. To obtain these detailed buffer type properties, retrieve the [`bufferTypeInfo`](mtlpipelineoption/buffertypeinfo.md) instance.
 
 ## See Also
 
 - [static var bufferTypeInfo: MTLPipelineOption](mtlpipelineoption/buffertypeinfo.md)
   An option instance that provides detailed buffer type information for buffer arguments.
 - [static var failOnBinaryArchiveMiss: MTLPipelineOption](mtlpipelineoption/failonbinaryarchivemiss.md)
-  An option that specifies that Metal only creates the pipeline state object if the compiled shader is present inside a linked binary archive.
+  An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 
 
 ---

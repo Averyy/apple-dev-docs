@@ -17,7 +17,7 @@ optional func panel(_ sender: Any, shouldEnable url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want the panel to display the item at the specifed URL as enabled, or [`false`](https://developer.apple.com/documentation/swift/false) to display it as disabled.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you want the panel to display the item at the specifed URL as enabled, or [`false`](https://developer.apple.com/documentation/Swift/false) to display it as disabled.
 
 #### Discussion
 

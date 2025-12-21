@@ -17,7 +17,7 @@ var isRunning: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is still running, otherwise [`false`](https://developer.apple.com/documentation/swift/false). [`false`](https://developer.apple.com/documentation/swift/false) means either the receiver could not run or it has terminated.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is still running, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). [`false`](https://developer.apple.com/documentation/Swift/false) means either the receiver could not run or it has terminated.
 
 ## See Also
 

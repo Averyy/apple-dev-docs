@@ -53,8 +53,12 @@ engine.stop()
 ### Creating an Engine
 - [init(updateMode: PHASEEngine.UpdateMode)](phaseengine/init(updatemode:).md)
   Creates an engine updated by the app or framework.
+- [init(updateMode: PHASEEngine.UpdateMode, renderingMode: PHASEEngine.RenderingMode)](phaseengine/init(updatemode:renderingmode:).md)
+  Creates a new engine that has both update and rendering modes.
 - [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 ### Registering Audio Resources
 - [var assetRegistry: PHASEAssetRegistry](phaseengine/assetregistry.md)
   An object that loads and unloads audio resources.
@@ -79,6 +83,7 @@ engine.stop()
   Processes app commands and increments framework processing.
 - [var renderingState: PHASESoundEvent.RenderingState](phaseengine/renderingstate.md)
   The status of the engine’s audio playback.
+- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
 ### Managing Groups of Sounds
 - [var groups: [String : PHASEGroup]](phaseengine/groups.md)
   A list of named groups that contain sounds the app operates on collectively.
@@ -94,12 +99,6 @@ engine.stop()
   A conversion factor from meters to your app’s preferred unit of measurement.
 - [var unitsPerSecond: Double](phaseengine/unitspersecond.md)
   A conversion factor from seconds to your app’s preferred unit of time.
-### Initializers
-- [init(updateMode: PHASEEngine.UpdateMode, renderingMode: PHASEEngine.RenderingMode)](phaseengine/init(updatemode:renderingmode:).md)
-### Instance Properties
-- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
-### Enumerations
-- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
 
 ## Relationships
 
@@ -117,6 +116,8 @@ engine.stop()
 
 - [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 - [class PHASEAssetRegistry](phaseassetregistry.md)
   A central repository of audio assets.
 - [enum PHASENormalizationMode](phasenormalizationmode.md)

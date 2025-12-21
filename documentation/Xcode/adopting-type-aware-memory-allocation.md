@@ -72,7 +72,7 @@ void *my_malloc_typed(size_t size, malloc_type_id_t type_id) {
   Discover who signed a framework, and take action when that changes.
 - [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
 - [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
   Avoid crashes and potentially insecure situations associated with Mach messages.

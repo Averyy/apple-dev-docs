@@ -17,9 +17,9 @@ var postsBoundsChangedNotifications: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the view’s bounds rectangle changes to a new value, the view posts a [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) to the default notification center. The notification is not posted when you set the bounds rectangle to the value it already has. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the view’s bounds rectangle changes to a new value, the view posts a [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) to the default notification center. The notification is not posted when you set the bounds rectangle to the value it already has. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If the value of this property is currently [`false`](https://developer.apple.com/documentation/swift/false) and the bounds have changed, changing the value to [`true`](https://developer.apple.com/documentation/swift/true) causes the view to post a [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) notification immediately. This happens even when there has been no net change in the view’s bounds rectangle.
+If the value of this property is currently [`false`](https://developer.apple.com/documentation/Swift/false) and the bounds have changed, changing the value to [`true`](https://developer.apple.com/documentation/Swift/true) causes the view to post a [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) notification immediately. This happens even when there has been no net change in the view’s bounds rectangle.
 
 The following methods and properties can trigger a frame change notification:
 
@@ -42,7 +42,7 @@ The following methods and properties can trigger a frame change notification:
 - [var boundsRotation: CGFloat](nsview/boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
 - [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
-  Posted whenever the `NSView`‘s bounds rectangle changes to a new value independently of the frame rectangle, but only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+  A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
 
 
 ---

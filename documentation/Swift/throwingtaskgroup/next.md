@@ -22,6 +22,8 @@ mutating func next() async throws -> ChildTaskResult?
 
 - [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+  Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 - [var isEmpty: Bool](throwingtaskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 - [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)

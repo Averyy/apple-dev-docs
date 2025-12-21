@@ -21,7 +21,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-Check [`isValid`](mluntypedcolumn/isvalid.md) after you create or mutate an untyped column to ensure it’s valid. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the untyped column encountered an error and you can’t use it for subsequent operations. For example, comparing two columns of different sizes creates an invalid column.
+Check [`isValid`](mluntypedcolumn/isvalid.md) after you create or mutate an untyped column to ensure it’s valid. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the untyped column encountered an error and you can’t use it for subsequent operations. For example, comparing two columns of different sizes creates an invalid column.
 
 ## See Also
 

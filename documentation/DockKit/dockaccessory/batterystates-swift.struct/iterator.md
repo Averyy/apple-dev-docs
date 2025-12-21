@@ -22,10 +22,6 @@ struct Iterator
 ### Instance Methods
 - [func next() async -> DockAccessory.BatteryState?](dockaccessory/batterystates-swift.struct/iterator/next.md)
   Provide the next dock accessory event in the list.
-### Type Aliases
-- [DockAccessory.BatteryStates.Iterator.Element](dockaccessory/batterystates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](dockaccessory/batterystates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

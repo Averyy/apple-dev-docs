@@ -11,12 +11,12 @@ A rectangular area on a two-dimensional map projection.
 ## Declaration
 
 ```swift
-attribute mapkit.MapRect mapRect;
+mapRect: MapRect;
 ```
 
 #### Discussion
 
-Thie mapRect is an instance of [`mapkit.MapRect`](mapkit.maprect.md).
+Thie mapRect is an instance of [`MapRect`](maprect.md).
 
 ## See Also
 

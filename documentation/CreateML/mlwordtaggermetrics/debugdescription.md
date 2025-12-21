@@ -20,6 +20,10 @@ var debugDescription: String { get }
   A text representation of the word tagger metrics.
 - [var playgroundDescription: Any](mlwordtaggermetrics/playgrounddescription.md)
   A description of the word tagger metrics shown in a playground.
+- [var confusionDataFrame: DataFrame](mlwordtaggermetrics/confusiondataframe.md)
+  A data frame comparing the actual and predicted labels for each class.
+- [var precisionRecallDataFrame: DataFrame](mlwordtaggermetrics/precisionrecalldataframe.md)
+  A data frame listing the precision and recall percentages for each class.
 
 
 ---

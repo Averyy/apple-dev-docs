@@ -28,7 +28,7 @@ The local description contains the underlying error code. You can report the sce
 - [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
   An error code that represents the absence of any problems.
 - [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
 - [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
@@ -45,16 +45,6 @@ The local description contains the underlying error code. You can report the sce
   An error code that indicates the GPU terminated the command buffer because a kernel function of tile shader used too many stack frames.
 - [static var accessRevoked: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/code/accessrevoked.md)
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
-- [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
-  An error code that represents the absence of any problems.
-- [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
-- [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
-  An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
-  An error code that indicates a process doesn’t have access to a GPU device.
-- [MTLCommandBufferError.Code.outOfMemory](mtlcommandbuffererror-swift.struct/code/outofmemory.md)
-  An error code that indicates the GPU device doesn’t have sufficient memory to execute a command buffer.
 
 
 ---

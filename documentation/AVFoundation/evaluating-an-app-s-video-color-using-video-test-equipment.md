@@ -1,4 +1,4 @@
-# Evaluating an App’s Video Color Using Video Test Equipment
+# Evaluating an app’s video color using video test equipment
 
 **Framework**: AVFoundation
 
@@ -29,7 +29,7 @@ Consider the color correct if the representation’s color vector “hits” ins
 
 These boxes typically represent only HD or only SD color bars, not content converted from one standard to the other. For example, Rec. 709 (HD) 75% red is different from Rec. 601 (SD) 75% red, and a converted signal typically wouldn’t either hit HD or SD targets.
 
-To learn how to use test pattern files to confirm the proper color management of your app’s video, see [`Open Test Patterns and Verify Color Characteristics`](evaluating-video-using-quicktime-test-pattern-files#Open-Test-Patterns-and-Verify-Color-Characteristics.md).
+To learn how to use test pattern files to confirm the proper color management of your app’s video, see [`Open test patterns and verify color characteristics`](evaluating-video-using-quicktime-test-pattern-files#Open-test-patterns-and-verify-color-characteristics.md).
 
 ##### Analyze Your Video Signal Using a Waveform Monitor
 
@@ -46,9 +46,9 @@ The following are elements of the QuickTime Test Pattern movie file to examine o
 
 ## See Also
 
-- [Evaluating Video Using QuickTime Test Pattern Files](evaluating-video-using-quicktime-test-pattern-files.md)
+- [Evaluating video using QuickTime test pattern files](evaluating-video-using-quicktime-test-pattern-files.md)
   Check color reproduction of your app or workflow by using test pattern files.
-- [Evaluating an App’s Video Color Using Light-Measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
+- [Evaluating an app’s video color using light-measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
   Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
 

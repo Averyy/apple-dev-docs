@@ -6,7 +6,7 @@
 Changes the way the enclosing presentation breaks through content occluding it.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ Use this modifier to disable or customize a breakthrough effect for the enclosin
 
 Breakthrough is an effect allowing elements to be visible to the user even when other app content (3D models, UI elements) is occluding it. The way the element appears depends on the chosen [`BreakthroughEffect`](breakthrougheffect.md).
 
-Most system presentations appear with a breakthrough effect by default. For these cases, the `presentationBreakthroughEffect` modifier allows customization of the type of effect. This is achieved by applying the modifier to the content of the presentation:
+Most system presentations appear with a breakthrough effect by default. For these cases, you can customize the type of effect by applying the [`presentationBreakthroughEffect(_:)`](view/presentationbreakthrougheffect(_:).md) modifier to the content of the presentation, like in the following example:
 
 ```swift
 Button("Show Details") {
@@ -33,7 +33,7 @@ Button("Show Details") {
 }
 ```
 
-Only popovers allow breakthrough to be disabled altogether. Passing a `.none` value for a sheet doesn’t have any effect.
+Only popovers allow breakthrough to be disabled altogether. Passing a `.none` value for a sheet has no effect.
 
 ## Parameters
 

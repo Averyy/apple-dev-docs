@@ -11,12 +11,12 @@ A combination of thoroughfare and subthoroughfare.
 ## Declaration
 
 ```swift
-attribute string? fullThoroughfare;
+fullThoroughfare?: string;
 ```
 
 #### Discussion
 
-For example, the [`fullThoroughfare`](place/fullthoroughfare.md) for the Golden Gate Park is `“1054 John F Kennedy Dr”`.
+For example, a possible [`fullThoroughfare`](place/fullthoroughfare.md) for a location in Golden Gate Park in San Francisco, California, is `"1054 John F Kennedy Dr"`.
 
 ## See Also
 

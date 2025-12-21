@@ -23,7 +23,7 @@ var allowsCameraControl: Bool { get set }
 
 #### Discussion
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit creates a camera node and handles mouse or touch events to allow the user to pan, zoom, and rotate their view of the scene. (Enabling user camera control does not modify camera objects already existing in the scene graph or the nodes containing them.)
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit creates a camera node and handles mouse or touch events to allow the user to pan, zoom, and rotate their view of the scene. (Enabling user camera control does not modify camera objects already existing in the scene graph or the nodes containing them.)
 
 When you enable user camera control, the [`defaultCameraController`](scnview/defaultcameracontroller.md) object handles input events and drives camera behavior. You can use that object’s methods and properties to change the style of user camera interaction, and use the [`cameraControlConfiguration`](scnview/cameracontrolconfiguration.md) property to adjust control sensitivity.
 
@@ -36,7 +36,7 @@ In the default configuration, SceneKit provides the following controls:
 - Rotate with two fingers to roll the camera (rotate on the camera node’s z-axis)
 - Pinch to zoom in or zoom out (change the camera’s [`fieldOfView`](scncamera/fieldofview.md))
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Use this option if you intend to control the camera programmatically.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Use this option if you intend to control the camera programmatically.
 
 ## See Also
 

@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A prompt from the user asking the model.
+A prompt from the user to the model.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,33 +18,24 @@ A prompt from the user asking the model.
 struct Prompt
 ```
 
+#### Overview
+
+Prompts typically contain content sourced directly from the user, though you may choose to augment prompts by interpolating content from end users into a template that you control.
+
 ## Topics
 
 ### Creating a prompt
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?)](transcript/prompt/init(id:segments:options:responseformat:).md)
   Creates a prompt.
 ### Inspecting a prompt
-- [var id: String](transcript/prompt/id-swift.property.md)
+- [var id: String](transcript/prompt/id.md)
   The identifier of the prompt.
-- [Transcript.Prompt.ID](transcript/prompt/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var responseFormat: Transcript.ResponseFormat?](transcript/prompt/responseformat.md)
   An optional response format that describes the desired output structure.
 - [var segments: [Transcript.Segment]](transcript/prompt/segments.md)
   Ordered prompt segments.
 - [var options: GenerationOptions](transcript/prompt/options.md)
   Generation options associated with the prompt.
-### Encoding a prompt
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing prompts
-- [static func == (Transcript.Prompt, Transcript.Prompt) -> Bool](transcript/prompt/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/prompt/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/prompt/equatable-implementations.md)
 
 ## Relationships
 

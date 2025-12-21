@@ -95,28 +95,38 @@ deinit actor
 ## Topics
 
 ### Creating a Task
-- [init(priority: TaskPriority?, operation: sending () async -> Success)](task/init(priority:operation:)-7f0zv.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
-- [init(priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(priority:operation:)-ntwf.md)
-  Runs the given throwing operation asynchronously as part of a new top-level task on behalf of the current actor.
-- [init(executorPreference: consuming (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(executorpreference:priority:operation:)-7zpzv.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
-- [init(executorPreference: consuming (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(executorpreference:priority:operation:)-6o27o.md)
-  Runs the given throwing operation asynchronously as part of a new top-level task on behalf of the current actor.
-- [static func detached(priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Failure>](task/detached(priority:operation:)-d24l.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task.
-- [static func detached(priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, Failure>](task/detached(priority:operation:)-1g00u.md)
-  Runs the given throwing operation asynchronously as part of a new top-level task.
-- [static func detached(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Failure>](task/detached(executorpreference:priority:operation:)-1y7ms.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task.
-- [static func detached(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, Failure>](task/detached(executorpreference:priority:operation:)-7vnfx.md)
-  Runs the given throwing operation asynchronously as part of a new top-level task.
+- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
+  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
+  Runs the given throwing operation asynchronously as part of a new  top-level task.
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
+  Runs the given throwing operation asynchronously as part of a new  top-level task.
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
+  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
 - [static var currentPriority: TaskPriority](task/currentpriority.md)
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
 - [func withTaskPriorityEscalationHandler<T, E>(operation: () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void, isolation: isolated (any Actor)?) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:isolation:).md)
   Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
+### Creating a Detached Task
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:priority:operation:)-795w1.md)
+  Runs the given throwing operation asynchronously as part of a new   top-level task.
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:priority:operation:)-9xki7.md)
+  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:executorpreference:priority:operation:)-6r16s.md)
+  Runs the given throwing operation asynchronously as part of a new   top-level task.
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:executorpreference:priority:operation:)-75ffe.md)
+  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+### Creating a Task that Starts Immediately
+- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediate(name:priority:executorpreference:operation:)-88o80.md)
+  Create and immediately start running a new detached task in the context of the calling thread/task.
+- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:executorpreference:operation:)-9bghc.md)
+  Create and immediately start running a new detached task in the context of the calling thread/task.
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediatedetached(name:priority:executorpreference:operation:)-52ipd.md)
+  Create and immediately start running a new task in the context of the calling thread/task.
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediatedetached(name:priority:executorpreference:operation:)-7h41b.md)
+  Create and immediately start running a new task in the context of the calling thread/task.
 ### Accessing Results
 - [var value: Success](task/value-60t02.md)
   The result from a throwing task, after it completes.
@@ -124,6 +134,9 @@ deinit actor
   The result from a nonthrowing task, after it completes.
 - [var result: Result<Success, Failure>](task/result.md)
   The result or error from a throwing task, after it completes.
+### Accessing the Current Task’s Name
+- [static var name: String?](task/name.md)
+  Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 ### Canceling Tasks
 - [struct CancellationError](cancellationerror.md)
   An error that indicates a task was canceled.
@@ -147,6 +160,9 @@ deinit actor
   Suspends the current task for the given duration.
 - [static func sleep<C>(until: C.Instant, tolerance: C.Instant.Duration?, clock: C) async throws](task/sleep(until:tolerance:clock:).md)
   Suspends the current task until the given deadline within a tolerance.
+### Escalating Tasks
+- [func escalatePriority(to: TaskPriority)](task/escalatepriority(to:).md)
+  Manually escalate the task `priority` of this task to the `newPriority`.
 ### Comparing Tasks
 - [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
@@ -163,41 +179,16 @@ deinit actor
 - [static func CancellationError() -> CancellationError](task/cancellationerror.md)
 - [func getResult() async -> Result<Success, Failure>](task/getresult.md)
 - [func get() async throws -> Success](task/get-4i2gt.md)
+- [func get() async -> Success](task/get-4ohks.md)
 - [static func sleep(UInt64) async](task/sleep(_:).md)
 - [static func suspend() async](task/suspend.md)
-- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, Failure>](task/rundetached(priority:operation:).md)
+- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-38jhc.md)
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
-### Initializers
-- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
-- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
-### Instance Methods
-- [func escalatePriority(to: TaskPriority)](task/escalatepriority(to:).md)
-  Manually escalate the task `priority` of this task to the `newPriority`.
-- [func get() async -> Success](task/get-4ohks.md)
-### Type Properties
-- [static var currentExecutor: any Executor](task/currentexecutor.md)
-  Get the current executor; this is the executor that the currently executing task is executing on.
-- [static var currentSchedulableExecutor: (any SchedulableExecutor)?](task/currentschedulableexecutor.md)
-  Get the current  executor, if any.
-- [static var defaultExecutor: any TaskExecutor](task/defaultexecutor.md)
-  The default or global executor, which is the default place in which we run tasks.
-- [static var name: String?](task/name.md)
-  Returns the human-readable name of the current task, if it was set during the tasks’ creation.
-- [static var preferredExecutor: (any TaskExecutor)?](task/preferredexecutor.md)
-  Get the preferred executor for the current `Task`, if any.
-### Type Methods
-- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, Failure>](task/detached(name:priority:operation:)-795w1.md)
-  Runs the given throwing operation asynchronously as part of a new top-level task.
-- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Failure>](task/detached(name:priority:operation:)-9xki7.md)
-  Runs the given nonthrowing operation asynchronously as part of a new top-level task.
-- [static func immediate(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:_:)-3fa9e.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
-- [static func immediate(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, Never>](task/immediate(name:priority:_:)-5zhbl.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
-- [static func startSynchronously(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
-- [static func startSynchronously(name: String?, priority: TaskPriority?, () async throws -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-6d3ys.md)
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)
@@ -218,10 +209,6 @@ deinit actor
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)

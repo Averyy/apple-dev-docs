@@ -21,11 +21,11 @@ func canAdd(_ inputGroup: AVAssetWriterInputGroup) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can add the input group to the asset writer; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if you can add the input group to the asset writer; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if the asset writer’s output file type doesn’t support mutually exclusive relationships among tracks, or if the input group contains inputs with media types that you can’t relate.
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) if the asset writer’s output file type doesn’t support mutually exclusive relationships among tracks, or if the input group contains inputs with media types that you can’t relate.
 
 ## Parameters
 

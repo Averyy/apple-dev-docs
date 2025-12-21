@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the accessibility features of the device.
+The payload that configures the accessibility features of the device.
 
 **Availability**:
 - macOS 10.9+
@@ -69,23 +69,23 @@ Specify `com.apple.universalaccess` as the payload type.
 ## See Also
 
 - [object Desktop](desktop.md)
-  The payload you use to configure the desktop.
+  The payload that configures the desktop wallpaper.
 - [object Dock](dock.md)
-  The payload you use to configure the dock.
+  The payload that configures the Dock.
 - [object Finder](finder.md)
-  The payload you use to configure Finder settings.
+  The payload that configures Finder settings.
 - [object HomeScreenLayout](homescreenlayout.md)
-  The payload you use to configure the Home screen layout.
+  The payload that configures the Home Screen layout.
 - [object ManagedMenuExtras](managedmenuextras.md)
-  The payload you use to configure menu extras.
+  The payload that configures menu extras.
 - [object Notifications](notifications.md)
-  The payload you use to configure notifications.
+  The payload that configures notifications.
 - [object ScreensaverUser](screensaveruser.md)
-  The payload you use to configure a user’s screen-saver settings.
+  The payload that configures a user’s screen saver settings.
 - [object SetupAssistant](setupassistant.md)
-  The payload you use to configure setup-assistant settings.
+  The payload that configures Setup Assistant settings.
 - [object TimeMachine](timemachine.md)
-  The payload you use to configure Time Machine.
+  The payload that configures Time Machine.
 
 
 ---

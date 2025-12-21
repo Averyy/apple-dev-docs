@@ -26,7 +26,7 @@ This method associates a block for handling setup of an attribute or uniform var
 
 > **Note**:  You must associate a handler block with a technique before assigning that technique to a SceneKit object. The result of calling this method on a technique currently in use is undefined.
 
-Use this method when you need to update a value in a shader program every time SceneKit renders a frame. To set a value infrequently, or only once, use the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) or doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method instead.
+Use this method when you need to update a value in a shader program every time SceneKit renders a frame. To set a value infrequently, or only once, use the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) or [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method instead.
 
 If you associate a block with a symbol using this method, SceneKit ignores values set using the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) method.
 

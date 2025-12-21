@@ -30,7 +30,7 @@ object SubscriptionIntroductoryOffersLinkagesRequest
 - [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
 - [object SubscriptionIntroductoryOffer](subscriptionintroductoryoffer.md)
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
 - [object SubscriptionOfferCode](subscriptionoffercode.md)

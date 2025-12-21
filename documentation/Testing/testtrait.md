@@ -36,6 +36,7 @@ The testing library defines a number of traits that you can add to test function
 - [Bug](bug.md)
 - [Comment](comment.md)
 - [ConditionTrait](conditiontrait.md)
+- [IssueHandlingTrait](issuehandlingtrait.md)
 - [ParallelizationTrait](parallelizationtrait.md)
 - [Tag.List](tag/list.md)
 - [TimeLimitTrait](timelimittrait.md)

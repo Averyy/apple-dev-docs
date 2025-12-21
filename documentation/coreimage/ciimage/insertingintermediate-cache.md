@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Returns a new image created by inserting a cacheable intermediate.
+Create an image that inserts a intermediate that is cacheable.
 
 **Availability**:
 - iOS 12.0+
@@ -21,17 +21,11 @@ func insertingIntermediate(cache: Bool) -> CIImage
 
 #### Return Value
 
-The image obtained from inserting the intermediate.
-
-#### Discussion
-
-Intermediate buffers created through setting `cache` to [`true`](https://developer.apple.com/documentation/swift/true) have a higher priority than others.
-
-This setting is independent of of [`CIContext`](cicontext.md)’s [`cacheIntermediates`](cicontextoption/cacheintermediates.md) option.
+ An autoreleased [`CIImage`](ciimage.md).
 
 ## Parameters
 
-- `cache`: A Boolean value indicating whether to cache the intermediate.
+- `cache`: Controls if Core Image caches the returned image.   *   : This intermediate will be cacheable even if    is false.   *    : the intermediate will be not be cached if    is false.
 
 ## See Also
 

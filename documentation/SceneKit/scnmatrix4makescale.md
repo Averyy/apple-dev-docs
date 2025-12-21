@@ -17,7 +17,7 @@ Returns a matrix describing a scale transformation.
 ## Declaration
 
 ```swift
-func SCNMatrix4MakeScale(_ sx: Float, _ sy: Float, _ sz: Float) -> SCNMatrix4
+func SCNMatrix4MakeScale(_ sx: CGFloat, _ sy: CGFloat, _ sz: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

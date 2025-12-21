@@ -29,11 +29,6 @@ struct Prediction
   The duration of a human body action measured in frames.
 - [var periodicity: Float](humanbodyactionperiodpredictor/prediction/periodicity.md)
   A score that indicates whether this frame contributes to a periodic human body action.
-### Default Implementations
-- [Decodable Implementations](humanbodyactionperiodpredictor/prediction/decodable-implementations.md)
-- [Encodable Implementations](humanbodyactionperiodpredictor/prediction/encodable-implementations.md)
-- [Equatable Implementations](humanbodyactionperiodpredictor/prediction/equatable-implementations.md)
-- [Hashable Implementations](humanbodyactionperiodpredictor/prediction/hashable-implementations.md)
 
 ## Relationships
 
@@ -50,10 +45,6 @@ struct Prediction
 
 - [func applied(to: [Pose], eventHandler: EventHandler?) async throws -> [HumanBodyActionPeriodPredictor.Prediction]](humanbodyactionperiodpredictor/applied(to:eventhandler:).md)
   Predicts human body action periods from an array of poses.
-- [HumanBodyActionPeriodPredictor.Input](humanbodyactionperiodpredictor/input.md)
-  The input type.
-- [HumanBodyActionPeriodPredictor.Output](humanbodyactionperiodpredictor/output.md)
-  The output type.
 
 
 ---

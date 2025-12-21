@@ -22,8 +22,8 @@ var timingMode: SKActionTimingMode { get set }
 
 ## Mentions
 
-- [Getting Started with Actions](getting-started-with-actions.md)
 - [Configuring Action Timing](configuring-action-timing.md)
+- [Getting Started with Actions](getting-started-with-actions.md)
 
 #### Discussion
 

@@ -4,6 +4,11 @@
 
 Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 This sample code project shows you how to create a background delivery extension with [`FinanceKit`](FinanceKit.md). With the extension, you can receive notifications when data changes in [`FinanceStore`](FinanceStore.md) and handle it outside of your app’s life cycle. This enables your app and its extensions to access up-to-date information without relying on the app itself.

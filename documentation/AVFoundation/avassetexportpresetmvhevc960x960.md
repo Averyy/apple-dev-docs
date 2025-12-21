@@ -22,6 +22,8 @@ let AVAssetExportPresetMVHEVC960x960: String
 
 - [let AVAssetExportPresetMVHEVC1440x1440: String](avassetexportpresetmvhevc1440x1440.md)
   A preset to export a 1440 by 1440 movie that contains MV-HEVC video and AAC audio.
+- [let AVAssetExportPresetMVHEVC4320x4320: String](avassetexportpresetmvhevc4320x4320.md)
+- [let AVAssetExportPresetMVHEVC7680x7680: String](avassetexportpresetmvhevc7680x7680.md)
 
 
 ---

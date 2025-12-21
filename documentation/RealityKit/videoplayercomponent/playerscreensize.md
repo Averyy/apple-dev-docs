@@ -10,7 +10,7 @@ The screen entity size of the current video player in meters.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -31,6 +31,8 @@ This property has the format `[width, height]`.
   The video resolution size.
 - [var videoRenderer: AVSampleBufferVideoRenderer?](videoplayercomponent/videorenderer.md)
   The component’s video renderer.
+- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
+  The current content-viewing mode for video playback.
 
 
 ---

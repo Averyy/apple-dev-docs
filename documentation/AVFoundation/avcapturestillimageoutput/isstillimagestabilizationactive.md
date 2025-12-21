@@ -18,7 +18,7 @@ var isStillImageStabilizationActive: Bool { get }
 
 #### Discussion
 
-The property returns [`true`](https://developer.apple.com/documentation/swift/true) if video stabilization is currently in use; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The property returns [`true`](https://developer.apple.com/documentation/Swift/true) if video stabilization is currently in use; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property supports key-value observing.
 

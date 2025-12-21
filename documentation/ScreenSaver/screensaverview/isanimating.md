@@ -17,7 +17,7 @@ var isAnimating: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the screen saver is animating, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the screen saver is animating, and [`false`](https://developer.apple.com/documentation/Swift/false) when it isn’t.
 
 ## See Also
 

@@ -37,17 +37,7 @@ struct MobileNationalIDCardDataRequest
 ### Handling the Response
 - [MobileNationalIDCardDataRequest.Response](mobilenationalidcarddatarequest/response.md)
   A type that contains the response information from a successful mobile national ID card data request.
-### Operators
-- [static func == (MobileNationalIDCardDataRequest, MobileNationalIDCardDataRequest) -> Bool](mobilenationalidcarddatarequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilenationalidcarddatarequest/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilenationalidcarddatarequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobilenationalidcarddatarequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobilenationalidcarddatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
@@ -84,7 +74,7 @@ struct MobileNationalIDCardDataRequest
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

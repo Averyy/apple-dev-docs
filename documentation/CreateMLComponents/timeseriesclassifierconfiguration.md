@@ -21,23 +21,16 @@ struct TimeSeriesClassifierConfiguration
 
 ## Topics
 
-### Operators
-- [static func == (TimeSeriesClassifierConfiguration, TimeSeriesClassifierConfiguration) -> Bool](timeseriesclassifierconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
+### Creating a time series classifier configuration
 - [init()](timeseriesclassifierconfiguration/init.md)
   Creates a configuration.
-- [init(from: any Decoder) throws](timeseriesclassifierconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
+### Inspecting a time series classifier configuration
 - [var batchSize: Int](timeseriesclassifierconfiguration/batchsize.md)
   The number of examples in each training batch.
 - [var earlyStoppingIterationCount: Int](timeseriesclassifierconfiguration/earlystoppingiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
 - [var earlyStoppingTolerance: Float](timeseriesclassifierconfiguration/earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var hashValue: Int](timeseriesclassifierconfiguration/hashvalue.md)
-  The hash value.
 - [var learningRate: Float](timeseriesclassifierconfiguration/learningrate.md)
   The starting learning rate.
 - [var maximumIterationCount: Int](timeseriesclassifierconfiguration/maximumiterationcount.md)
@@ -48,13 +41,6 @@ struct TimeSeriesClassifierConfiguration
   The minimum number of samples required to produce a classification.
 - [var randomSeed: Int?](timeseriesclassifierconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations.
-### Instance Methods
-- [func encode(to: any Encoder) throws](timeseriesclassifierconfiguration/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](timeseriesclassifierconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](timeseriesclassifierconfiguration/equatable-implementations.md)
 
 ## Relationships
 

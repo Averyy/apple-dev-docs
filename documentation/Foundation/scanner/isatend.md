@@ -22,9 +22,9 @@ var isAtEnd: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has exhausted all significant characters in its string, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has exhausted all significant characters in its string, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If only characters from the set to be skipped remain, returns [`true`](https://developer.apple.com/documentation/swift/true).
+If only characters from the set to be skipped remain, returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

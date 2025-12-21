@@ -21,7 +21,7 @@ enum MTLCullMode
 
 ## Topics
 
-### Constants
+### Cull modes
 - [MTLCullMode.none](mtlcullmode/none.md)
   Does not cull any primitives.
 - [MTLCullMode.front](mtlcullmode/front.md)
@@ -44,9 +44,9 @@ enum MTLCullMode
 ## See Also
 
 - [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
-  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
-  An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)

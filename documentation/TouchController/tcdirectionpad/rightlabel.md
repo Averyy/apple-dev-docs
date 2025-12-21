@@ -6,10 +6,8 @@
 The label for the right button, if the control isn’t a composite direction pad.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,36 +17,30 @@ var rightLabel: TCControlLabel? { get set }
 
 ## See Also
 
-- [var collider: any TCCollider](tcdirectionpad/collider.md)
-  The collider for the direction pad.
 - [var compositeLabel: TCControlLabel?](tcdirectionpad/compositelabel.md)
   A composite control label.
+- [var downContents: TCControlContents?](tcdirectionpad/downcontents.md)
+  The contents for the down button.
 - [var downLabel: TCControlLabel?](tcdirectionpad/downlabel.md)
   The label for the down button, if the control isn’t a composite direction pad.
-- [var downVisuals: TCControlVisuals?](tcdirectionpad/downvisuals.md)
-  The visuals for the down button.
-- [var hasMutuallyExclusiveInput: Bool](tcdirectionpad/hasmutuallyexclusiveinput.md)
-  A Boolean value that indicates whether the control has mutally exclusive input.
-- [var highlightTime: simd_float1](tcdirectionpad/highlighttime.md)
+- [var highlightDuration: TimeInterval](tcdirectionpad/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
+- [var inputIsMutuallyExclusive: Bool](tcdirectionpad/inputismutuallyexclusive.md)
+  A Boolean value that indicates whether the control has mutally exclusive input.
 - [var isDigital: Bool](tcdirectionpad/isdigital.md)
   A Boolean value that indicates whether the control behaves as a digital button.
 - [var isRadial: Bool](tcdirectionpad/isradial.md)
   A Boolean value that indicates whether the control behaves as a swipeable radial button.
-- [var layer: simd_int1](tcdirectionpad/layer.md)
-  The layer of the direction pad, used for z-sorting.
+- [var leftContents: TCControlContents?](tcdirectionpad/leftcontents.md)
+  The contents for the left button.
 - [var leftLabel: TCControlLabel?](tcdirectionpad/leftlabel.md)
   The label for the left button, if the control isn’t a composite direction pad.
-- [var leftVisuals: TCControlVisuals?](tcdirectionpad/leftvisuals.md)
-  The visuals for the left button.
-- [var offset: CGPoint](tcdirectionpad/offset.md)
-  The control’s offset from the anchor, which determines its position.
-- [var position: CGPoint](tcdirectionpad/position.md)
-  The position of the direction pad in points, with the origin at the top left corner of the screen.
-- [var rightVisuals: TCControlVisuals?](tcdirectionpad/rightvisuals.md)
-  The visuals for the right button.
-- [var size: CGSize](tcdirectionpad/size.md)
-  The size (width, height) of the direction pad in points.
+- [var rightContents: TCControlContents?](tcdirectionpad/rightcontents.md)
+  The contents for the right button.
+- [var upContents: TCControlContents?](tcdirectionpad/upcontents.md)
+  The contents for the up button.
+- [var upLabel: TCControlLabel?](tcdirectionpad/uplabel.md)
+  The label for the up button, if the control isn’t a composite direction pad.
 
 
 ---

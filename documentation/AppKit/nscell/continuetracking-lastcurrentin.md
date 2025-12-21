@@ -17,11 +17,11 @@ func continueTracking(last lastPoint: NSPoint, current currentPoint: NSPoint, in
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if mouse tracking should continue, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if mouse tracking should continue, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md). The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true) if the cell is set to continuously send action messages to its target when the mouse button is down or the mouse is being dragged. Subclasses can override this method to provide more sophisticated tracking behavior.
+This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md). The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true) if the cell is set to continuously send action messages to its target when the mouse button is down or the mouse is being dragged. Subclasses can override this method to provide more sophisticated tracking behavior.
 
 ## Parameters
 

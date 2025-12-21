@@ -21,7 +21,7 @@ case clear
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
 
 ## See Also
 

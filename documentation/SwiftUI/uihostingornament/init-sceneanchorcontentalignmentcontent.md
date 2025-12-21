@@ -20,6 +20,11 @@ init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ViewBuilder
 - `contentAlignment`: The alignment in the ornament used to position it.
 - `content`: The content of the ornament.
 
+## See Also
+
+- [var rootView: Content](uihostingornament/rootview.md)
+  The root view of the SwiftUI view hierarchy managed by this ornament.
+
 
 ---
 

@@ -6,14 +6,18 @@
 An action that starts or stops translation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 final class SetTranslatingAction
 ```
+
+#### Overview
+
+To avoid interrupting or impeding call translation when a person mutes their audio during a conversation, don’t deactivate the upstream audio. Instead, mute your app’s audio input using [`MuteConversationAction`](muteconversationaction.md) and keep the upstream audio active to allow translated audio to flow when a person mutes the hardware microphone.
 
 ## Topics
 
@@ -41,7 +45,7 @@ final class SetTranslatingAction
 ## See Also
 
 - [class ConversationAction](conversationaction.md)
-  A type that represents a VoIP action for a conversation.
+  A type that represents an action for a conversation.
 - [class EndConversationAction](endconversationaction.md)
   An action that removes the local participant from a conversation and stops all audio and video streams.
 - [class JoinConversationAction](joinconversationaction.md)

@@ -22,30 +22,31 @@ struct Merge<A, B> where A : Publisher, B : Publisher, A.Failure == B.Failure, A
 
 ## Topics
 
-### Creating a Merge Publisher
+### Creating a merge publisher
 - [init(_:_:)](publishers/merge/init(_:_:).md)
   Creates a publisher created by applying the merge function to two upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge3<A, B, P>](publishers/merge/merge(with:).md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge4<A, B, Z, Y>](publishers/merge/merge(with:_:).md)
+- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge5<A, B, Z, Y, X>](publishers/merge/merge(with:_:_:).md)
+- [func merge<Z, Y, X, W>(with: Z, Y, X, W) -> Publishers.Merge6<A, B, Z, Y, X, W>](publishers/merge/merge(with:_:_:_:).md)
+- [func merge<Z, Y, X, W, V>(with: Z, Y, X, W, V) -> Publishers.Merge7<A, B, Z, Y, X, W, V>](publishers/merge/merge(with:_:_:_:_:).md)
+- [func merge<Z, Y, X, W, V, U>(with: Z, Y, X, W, V, U) -> Publishers.Merge8<A, B, Z, Y, X, W, V, U>](publishers/merge/merge(with:_:_:_:_:_:).md)
+### Declaring supporting types
 - [Publishers.Merge.Output](publishers/merge/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge.Failure](publishers/merge/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge/b.md)
   A second publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge<A, B>, Publishers.Merge<A, B>) -> Bool](publishers/merge/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge/publisher-implementations.md)
 
 ## Relationships
 

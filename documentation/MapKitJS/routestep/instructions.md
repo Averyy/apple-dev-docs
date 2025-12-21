@@ -11,12 +11,12 @@ The written instructions for following the path that the step represents.
 ## Declaration
 
 ```swift
-attribute string instructions;
+instructions: string;
 ```
 
 #### Discussion
 
-MapKit JS localizes the instructions according to the [`mapkit.Directions`](mapkit.directions/mapkit.directions.md) object’s [`language`](directionsconstructoroptions/language.md) setting.
+MapKit JS localizes the instructions according to the [`Directions`](directions.md) object’s [`language`](directionsconstructoroptions/language.md) setting.
 
 ## See Also
 
@@ -24,7 +24,7 @@ MapKit JS localizes the instructions according to the [`mapkit.Directions`](mapk
   The step distance, in meters.
 - [transportType](routestep/transporttype.md)
   The transport type of the step.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

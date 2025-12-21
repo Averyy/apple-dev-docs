@@ -30,16 +30,6 @@ enum Direction
   The value will be significantly higher than before.
 - [WeatherChange.Direction.steady](weatherchange/direction/steady.md)
   The value will remain similar to before.
-### Instance Properties
-- [var hashValue: Int](weatherchange/direction/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](weatherchange/direction/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](weatherchange/direction/decodable-implementations.md)
-- [Encodable Implementations](weatherchange/direction/encodable-implementations.md)
-- [Equatable Implementations](weatherchange/direction/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 Angular velocity of the accessory in the local coordinate system [rad/s].
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

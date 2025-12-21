@@ -19,13 +19,13 @@ optional func searchDisplayController(_ controller: UISearchDisplayController, s
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the display controller should reload the data in its table view, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the display controller should reload the data in its table view, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 If you don’t implement this method, then the results table is reloaded as soon as the search string changes.
 
-You might implement this method if you want to perform an asynchronous search. You would initiate the search in this method, then return [`false`](https://developer.apple.com/documentation/swift/false). You would reload the table when you have results.
+You might implement this method if you want to perform an asynchronous search. You would initiate the search in this method, then return [`false`](https://developer.apple.com/documentation/Swift/false). You would reload the table when you have results.
 
 ## Parameters
 

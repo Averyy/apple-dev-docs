@@ -42,8 +42,6 @@ struct SupervisedEstimatorToTemporalAdaptor<Base> where Base : SupervisedEstimat
   The output type.
 - [SupervisedEstimatorToTemporalAdaptor.Transformer](supervisedestimatortotemporaladaptor/transformer.md)
   The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTemporalEstimator Implementations](supervisedestimatortotemporaladaptor/supervisedtemporalestimator-implementations.md)
 
 ## Relationships
 

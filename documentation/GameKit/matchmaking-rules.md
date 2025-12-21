@@ -22,7 +22,7 @@ When finding players using matchmaking rules, Game Center applies four different
 
 Game Center performs the following steps in sequence:
 
-- Sorts the match requests in a queue by age of the request to minimize player wait time and then applies compatible rules to pairs of requests.  compare two requests and return a Boolean value that indicates whether the requests are compatible. If all the compatible rules return [`true`](https://developer.apple.com/documentation/swift/true), Game Center continues processing the pair. For example, requiring the app version to be 2.0 and above is a compatible rule.
+- Sorts the match requests in a queue by age of the request to minimize player wait time and then applies compatible rules to pairs of requests.  compare two requests and return a Boolean value that indicates whether the requests are compatible. If all the compatible rules return [`true`](https://developer.apple.com/documentation/Swift/true), Game Center continues processing the pair. For example, requiring the app version to be 2.0 and above is a compatible rule.
 - Applies the distance rules to pairs of compatible requests.  compare two requests and return a numeric value between `0.0` and `1.0`. Game Center uses the value to prioritize similar requests, where `0.0` is the most similar and `1.0` is the least similar. For example, requiring the geo latency between players to be low is a distance rule.
 - Prioritizes compatible matches by age and distance, and generates candidate matches that have the most number of players within the range that you specify in the rule set. Sorts candidate matches by age and applies the match rules.  apply to a set of matches and return a Boolean value that indicates whether the requests are valid matches. For example, requiring a range in skill level between `0` and `5` is a match rule.
 - Generates candidate teams from combinations of candidate matches and applies the team rules, If you add rules to assign players to teams.  apply to a set of teams containing players and return a Boolean value that indicates whether the teams satisfy a constraint. For example, ensuring that the total skill difference between teams is less than `1` is a team rule.
@@ -53,7 +53,7 @@ For more information on matchmaking rules with examples, see [`Finding players u
 
 ## See Also
 
-- [Game Center](../AppStoreConnectAPI/game-center.md)
+- [Game Center](../AppStoreConnectAPI/game-center#4301628.md)
   Manage Game Center data and configurations for your apps.
 - [Creating real-time games](creating-real-time-games.md)
   Develop games where multiple players interact in real time.
@@ -63,6 +63,8 @@ For more information on matchmaking rules with examples, see [`Finding players u
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [class GKMatchRequest](gkmatchrequest.md)
   An object that encapsulates the parameters to create a real-time or turn-based match.
 - [class GKMatchmaker](gkmatchmaker.md)

@@ -22,7 +22,7 @@ var canSendWriteWithoutResponse: Bool { get }
 
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), flushing all current writes sets the value to [`true`](https://developer.apple.com/documentation/swift/true). This also results in a call to the delegate’s [`peripheralIsReady(toSendWriteWithoutResponse:)`](cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).md).
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), flushing all current writes sets the value to [`true`](https://developer.apple.com/documentation/Swift/true). This also results in a call to the delegate’s [`peripheralIsReady(toSendWriteWithoutResponse:)`](cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).md).
 
 ## See Also
 

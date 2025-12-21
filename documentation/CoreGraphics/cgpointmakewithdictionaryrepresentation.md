@@ -22,7 +22,7 @@ func CGPointMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ point: Unsa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -21,13 +21,13 @@ enum MTLReadWriteTextureTier
 
 ## Topics
 
-### Enumeration Cases
+### Enumeration cases
 - [MTLReadWriteTextureTier.tier1](mtlreadwritetexturetier/tier1.md)
-  Tier 1 read/write textures are supported.
+  Indicates the system supports tier 1 read-write textures.
 - [MTLReadWriteTextureTier.tier2](mtlreadwritetexturetier/tier2.md)
-  Tier 2 read/write textures are supported.
+  Indicates the system supports tier 2 read-write textures.
 - [MTLReadWriteTextureTier.tierNone](mtlreadwritetexturetier/tiernone.md)
-  Read-write textures are not supported.
+  Indicates the system doesn’t support read-write textures.
 ### Initializers
 - [init?(rawValue: UInt)](mtlreadwritetexturetier/init(rawvalue:).md)
 
@@ -43,6 +43,8 @@ enum MTLReadWriteTextureTier
 
 ## See Also
 
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 - [enum MTLLogStateError](mtllogstateerror.md)

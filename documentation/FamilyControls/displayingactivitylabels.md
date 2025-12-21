@@ -27,7 +27,7 @@ struct ExampleView: View {
 
 ## Topics
 
-### Label Constraints
+### Label constraints
 - [struct FamilyActivityTitleView](familyactivitytitleview.md)
   A type-erased view representing the title of the family activity.
 - [struct FamilyActivityIconView](familyactivityiconview.md)

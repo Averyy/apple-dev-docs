@@ -16,10 +16,8 @@ var targetColumn: String { get }
 
 ## See Also
 
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?) throws](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-6ojd1.md)
+- [init(trainingData:targetColumn:featureColumns:)](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:).md)
   Creates a classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?) throws](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-p3f6.md)
-  Creates a classifier from the feature columns in the training data to predict the categories in the target column.
 - [var featureColumns: [String]](mlclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 

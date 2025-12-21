@@ -20,10 +20,10 @@ var trainingMetrics: MLClassifierMetrics
 
 ## See Also
 
-- [var validationMetrics: MLClassifierMetrics](mlhandactionclassifier/validationmetrics.md)
-  Measurements of the hand action classifier’s performance on the validation dataset.
 - [func evaluation(on: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics](mlhandactionclassifier/evaluation(on:).md)
   Generates metrics describing the hand action classifier’s performance on labeled videos.
+- [var validationMetrics: MLClassifierMetrics](mlhandactionclassifier/validationmetrics.md)
+  Measurements of the hand action classifier’s performance on the validation dataset.
 
 
 ---

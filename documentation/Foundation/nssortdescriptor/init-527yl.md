@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates an `NSSortDescriptor` representing the same sort as the given `SortDescriptor`.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -18,6 +20,10 @@
 @backDeployed(before: iOS 17, macOS 14, tvOS 17, watchOS 10)
 convenience init<Compared>(_ sortDescriptor: SortDescriptor<Compared>) where Compared : NSObject
 ```
+
+## Parameters
+
+- `sortDescriptor`: The   to convert.
 
 
 ---

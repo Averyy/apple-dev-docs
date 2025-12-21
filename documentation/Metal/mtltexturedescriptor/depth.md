@@ -21,7 +21,7 @@ var depth: Int { get set }
 
 #### Discussion
 
-The default value is `1`. The value must be greater than or equal to `1`. For 1D, 2D, and cube textures, the value must be `1`.
+The default value is `1`. The value needs to be greater than or equal to `1`. For 1D, 2D, and cube textures, the value needs to be `1`.
 
 ## See Also
 

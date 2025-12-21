@@ -23,13 +23,8 @@ struct DefaultContactProviderDomain
 ### Identifying the domain
 - [let displayName: String](defaultcontactproviderdomain/displayname.md)
   The display name the system shows to represent the default domain.
-- [var identifier: String](defaultcontactproviderdomain/identifier-swift.property.md)
-  The identifier of the domain.
-### Providing custom domain data
-- [let userInfo: Dictionary<String, Any>](defaultcontactproviderdomain/userinfo.md)
-  Custom values used to configure the extension before enumeration begins.
 ### Using the default domain identifier
-- [static let identifier: String](defaultcontactproviderdomain/identifier-swift.type.property.md)
+- [static let identifier: String](defaultcontactproviderdomain/identifier.md)
   The identifier used for all default domains.
 
 ## Relationships

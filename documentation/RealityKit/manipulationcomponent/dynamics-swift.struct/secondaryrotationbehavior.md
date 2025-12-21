@@ -6,7 +6,7 @@
 The rotation behavior describing how an object rotates due to secondary input, for example two handed rotation.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

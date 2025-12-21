@@ -29,6 +29,19 @@ Typically, interstitial assets have not been discovered when the main download i
 - `criteria`: The array of selection criteria to set
 - `mediaCharacteristic`: The AVMediaCharacteristic to which the criteria will be applied
 
+## See Also
+
+- [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
+  A data value that represents the asset’s artwork.
+- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](avassetdownloadconfiguration/primarycontentconfiguration.md)
+  The configuration for the primary content that the task downloads.
+- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](avassetdownloadconfiguration/auxiliarycontentconfigurations.md)
+  The configuration for the auxiliary content that the task downloads.
+- [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
+  A configuration object that contains variant qualifiers and media options.
+- [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
+  A Boolean value that indicates whether the task optimizes auxiliary content selection.
+
 
 ---
 

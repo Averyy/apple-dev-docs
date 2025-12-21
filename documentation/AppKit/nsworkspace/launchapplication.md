@@ -16,7 +16,7 @@ func launchApplication(_ appName: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app was successfully launched or was already running; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the app was successfully launched or was already running; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

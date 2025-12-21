@@ -19,8 +19,8 @@ class SKOverlay
 
 ## Mentions
 
-- [Signing and providing ads](signing-and-providing-ads.md)
 - [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
+- [Signing and providing ads](signing-and-providing-ads.md)
 
 #### Overview
 
@@ -28,7 +28,7 @@ By displaying an overlay, you can recommend another app to users and enable them
 
 > ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users).
 
-If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a Feature-Rich App with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui).
+If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui).
 
 To display an App Store overlay in an app that uses [`UIKit`](https://developer.apple.com/documentation/UIKit):
 

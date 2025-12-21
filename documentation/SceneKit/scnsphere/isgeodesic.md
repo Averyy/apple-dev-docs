@@ -22,9 +22,9 @@ var isGeodesic: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that SceneKit constructs a sphere mesh using a rectangular grid, like the lines of latitude and longitude on a globe of the Earth. This type of sphere mesh is efficient for most uses, but can cause texture distortion in the areas near its poles.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that SceneKit constructs a sphere mesh using a rectangular grid, like the lines of latitude and longitude on a globe of the Earth. This type of sphere mesh is efficient for most uses, but can cause texture distortion in the areas near its poles.
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) specifies that SceneKit constructs a sphere mesh by successively subdividing an icosahedron, creating a grid of uniformly sized triangles across the entire surface of the sphere, as shown below.
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) specifies that SceneKit constructs a sphere mesh by successively subdividing an icosahedron, creating a grid of uniformly sized triangles across the entire surface of the sphere, as shown below.
 
 ![None](https://docs-assets.developer.apple.com/published/b48fa37a7c8ec555f6b70091d7f50180/media-2929813%402x.png)
 

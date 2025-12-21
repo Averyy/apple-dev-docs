@@ -21,6 +21,10 @@ object ErrorLinks
 
 - [object ErrorResponse](errorresponse.md)
   The error details that an API returns in the response body whenever the API request isn’t successful.
+- [object JsonPointer](jsonpointer.md)
+  An object that contains the JSON pointer that indicates the location of the error.
+- [object Parameter](parameter.md)
+  An object that contains the query parameter that produced the error.
 
 
 ---

@@ -19,7 +19,7 @@ class AVCaptureManualExposureBracketedStillImageSettings
 
 ## Mentions
 
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 
@@ -31,10 +31,10 @@ You can query the minimum and maximum duration and ISO properties of the [`AVCap
 
 ## Topics
 
-### Creating a Manual Bracketed Exposure Settings Instance
+### Creating a manual bracketed exposure settings instance
 - [class func manualExposureSettings(exposureDuration: CMTime, iso: Float) -> Self](avcapturemanualexposurebracketedstillimagesettings/manualexposuresettings(exposureduration:iso:).md)
   Creates a configuration of still image settings using the specified exposure duration and ISO.
-### Getting Manual Exposure Setting Values
+### Getting manual exposure setting values
 - [var iso: Float](avcapturemanualexposurebracketedstillimagesettings/iso.md)
   The ISO for the still image.
 - [var exposureDuration: CMTime](avcapturemanualexposurebracketedstillimagesettings/exposureduration.md)

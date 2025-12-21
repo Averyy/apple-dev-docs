@@ -21,7 +21,7 @@ func JSValueIsStrictEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two values are strict equal according to the JavaScript `===` operator; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the two values are strict equal according to the JavaScript `===` operator; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

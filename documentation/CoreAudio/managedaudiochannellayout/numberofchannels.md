@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The number of channels described by this `ManagedAudioChannelLayout`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

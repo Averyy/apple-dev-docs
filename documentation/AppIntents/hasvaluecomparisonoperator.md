@@ -27,17 +27,6 @@ enum HasValueComparisonOperator
   An operator that determines if the parameter has a value.
 - [HasValueComparisonOperator.hasNoValue](hasvaluecomparisonoperator/hasnovalue.md)
   An operator that determines if the parameter’s empty.
-### Operators
-- [static func == (HasValueComparisonOperator, HasValueComparisonOperator) -> Bool](hasvaluecomparisonoperator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](hasvaluecomparisonoperator/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hasvaluecomparisonoperator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hasvaluecomparisonoperator/equatable-implementations.md)
 
 ## Relationships
 

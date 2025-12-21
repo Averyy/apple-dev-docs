@@ -3,13 +3,13 @@
 **Framework**: Declared Age Range  
 **Kind**: case
 
-The person shared the age range successfully.
+Contains the person’s shared age range information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,18 @@ The person shared the age range successfully.
 case sharing(range: AgeRangeService.AgeRange)
 ```
 
+#### Discussion
+
+When you receive this response, the person successfully shared their age information. Use the associated `AgeRange` value to make appropriate content decisions for your app.
+
+## Parameters
+
+- `range`: The age range information provided by the person.
+
 ## See Also
 
 - [AgeRangeService.Response.declinedSharing](agerangeservice/response/declinedsharing.md)
-  The person declined to share their age range.
+  Indicates the person declined to share their age range with your app.
 
 
 ---

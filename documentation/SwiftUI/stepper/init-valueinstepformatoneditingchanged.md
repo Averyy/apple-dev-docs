@@ -27,12 +27,14 @@ Use `Stepper(_:value:in:step:format:onEditingChanged:)` to create a stepper that
 ```swift
 struct StepperView: View {
     @State private var value = 0
+    private let step = 5.0
+    private let range = 1.0...50.0
 
     var body: some View {
         Stepper("Stepping by \(step) in \(range.description)",
             value: $value,
-            in: 1...50,
-            step: 5,
+            in: range,
+            step: step,
             format: .number
         )
         .padding()

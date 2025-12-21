@@ -22,7 +22,7 @@ func parse() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parsing operation succeeds; [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs or if the parsing operation aborts.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the parsing operation succeeds; [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurs or if the parsing operation aborts.
 
 ## See Also
 

@@ -40,6 +40,7 @@ Use this trait to determine whether the user requested a high contrast between f
   The layout direction associated with the current environment.
 - [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
 - [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
   Constants that indicate the accessibility contrast setting.
 - [var legibilityWeight: UILegibilityWeight](uitraitcollection/legibilityweight.md)
@@ -52,8 +53,6 @@ Use this trait to determine whether the user requested a high contrast between f
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uitraitcollection/toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
-- [enum UINSToolbarItemPresentationSize](uinstoolbaritempresentationsize.md)
-  Constants that specify the presentation size of a toolbar item in an AppKit toolbar.
 
 
 ---

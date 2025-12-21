@@ -6,10 +6,10 @@
 A structure that encapsulates a electricity guidance query request.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -26,12 +26,6 @@ Create a [`ElectricityGuidance.Query`](electricityguidance/query.md) for a [`Ele
 ### Creating a query
 - [init(suggestedAction: ElectricityGuidance.SuggestedAction)](electricityguidance/query/init(suggestedaction:).md)
   Creates a query to obtain electricity guidance based on forecasted energy usage.
-### Decoding
-- [init(from: any Decoder) throws](electricityguidance/query/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electricityguidance/query/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

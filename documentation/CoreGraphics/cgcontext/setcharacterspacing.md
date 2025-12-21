@@ -33,7 +33,6 @@ Core Graphics adds the additional space to the advance between the origin of one
 - [var textMatrix: CGAffineTransform](cgcontext/textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](cgcontext/textposition.md)
-  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](cgcontext/selectfont(name:size:textencoding:).md)
   Sets the font and font size in a graphics context.
 - [func setFont(CGFont)](cgcontext/setfont(_:).md)

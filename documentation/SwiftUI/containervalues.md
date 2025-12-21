@@ -36,7 +36,7 @@ VStack {
     Text("C")
         .containerValue(\.myCustomValue, 3)
         .padding() // myCustomValue = 3
-} // myCustomValue = it's default value, values do not escape the container
+} // myCustomValue = its default value, values do not escape the container
 ```
 
 Even if a stack has only one child, container values still won’t be readable outside of the `VStack`. Container values don’t escape a container even if the container has only one child.

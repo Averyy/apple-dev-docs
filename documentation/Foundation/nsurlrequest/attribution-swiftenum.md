@@ -31,10 +31,6 @@ Use one of these values when setting the [`attribution`](urlrequest/attribution-
   A developer-initiated network request.
 - [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
   The user explicitly directs the app to make a network request.
-- [NSURLRequest.Attribution.developer](nsurlrequest/attribution-swift.enum/developer.md)
-  A developer-initiated network request.
-- [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
-  The user explicitly directs the app to make a network request.
 ### Initializers
 - [init?(rawValue: UInt)](nsurlrequest/attribution-swift.enum/init(rawvalue:).md)
 

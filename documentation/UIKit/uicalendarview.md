@@ -308,8 +308,6 @@ func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dat
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

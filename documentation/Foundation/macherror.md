@@ -24,6 +24,7 @@ struct MachError
 
 ### Type Aliases
 - [MachError.Code](macherror/code.md)
+  The type of an error code.
 ### Type Properties
 - [static var aborted: MachError.Code](macherror/aborted.md)
   The operation was aborted.  Ipc code will catch this and reflect it as a message error.

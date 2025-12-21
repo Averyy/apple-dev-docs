@@ -23,7 +23,7 @@ optional func splitViewControllerDidExpand(_ svc: UISplitViewController)
 
 This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
 
-The split view controller calls this method after its interface has expanded, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/swift/false). Use this method to perform any customization associated with the expanded interface.
+The split view controller calls this method after its interface has expanded, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/Swift/false). Use this method to perform any customization associated with the expanded interface.
 
 ## Parameters
 
@@ -35,6 +35,8 @@ The split view controller calls this method after its interface has expanded, me
   Asks the delegate to provide the display mode to use after the split view interface expands.
 - [func splitViewController(UISplitViewController, willShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:).md)
   Tells the delegate that the specified column is about to be shown.
+- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
+  Tells the delegate that the system completed showing the specified column.
 
 
 ---

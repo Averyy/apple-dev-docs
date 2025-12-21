@@ -21,7 +21,7 @@ var isFlashScene: Bool { get }
 
 This property’s value changes depending on the scene currently visible to the camera. For example, you might use this property to highlight the flash control in your app’s camera UI, indicating to the user that the scene is dark enough that enabling the flash might be desirable.
 
-If the photo capture output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) value is [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md), this property’s value is always [`false`](https://developer.apple.com/documentation/swift/false).
+If the photo capture output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) value is [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md), this property’s value is always [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property supports key-value observing.
 

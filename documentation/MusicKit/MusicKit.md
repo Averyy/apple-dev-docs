@@ -34,7 +34,7 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
 - [Using MusicKit to Integrate with Apple Music](using_musickit_to_integrate_with_apple_music.md)
   Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 - [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s media library.
+  A message that tells people why the app is requesting access to their media library.
 ### Music Items
 - [struct Album](album.md)
   A music item that represents an album.

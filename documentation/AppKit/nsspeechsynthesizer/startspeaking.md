@@ -16,7 +16,7 @@ func startSpeaking(_ string: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when speaking starts successfully, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when speaking starts successfully, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

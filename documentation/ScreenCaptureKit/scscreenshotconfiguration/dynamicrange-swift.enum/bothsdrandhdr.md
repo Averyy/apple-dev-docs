@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: case
 
+Returns both standard dynamic range and high dynamic range image versions to the client.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

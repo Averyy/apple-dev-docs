@@ -76,9 +76,9 @@ Then, you generate the current state of the data and display the data in the UI 
 ### Supporting bridging
 - [class UITableViewDiffableDataSourceReference](uitableviewdiffabledatasourcereference.md)
   The object you use to manage data and provide cells for a table view.
-### Supporting protocol requirements
-- [Protocol implementations](uitableviewdiffabledatasource-protocol-implementations.md)
-  Access the diffable data source’s implementations of protocol methods.
+### Debugging a diffable data source
+- [func description() -> String](uitableviewdiffabledatasource-2euir/description.md)
+  Returns a string with a description of the diffable data source.
 
 ## Relationships
 

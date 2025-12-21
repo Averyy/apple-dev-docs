@@ -24,7 +24,7 @@ func register(forTaskWithIdentifier identifier: String, using queue: dispatch_qu
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the launch handler was registered. Returns [`false`](https://developer.apple.com/documentation/swift/false) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) `Info.plist`.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the launch handler was registered. Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) `Info.plist`.
 
 #### Discussion
 

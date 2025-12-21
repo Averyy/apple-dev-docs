@@ -50,7 +50,7 @@ Most common configurations of capture settings are available through the [`AVCap
 
 ## Topics
 
-### Configuring Capture Formats
+### Configuring capture formats
 - [var formats: [AVCaptureDevice.Format]](avcapturedevice/formats.md)
   The capture formats a device supports.
 - [var activeFormat: AVCaptureDevice.Format](avcapturedevice/activeformat.md)
@@ -59,7 +59,7 @@ Most common configurations of capture settings are available through the [`AVCap
   The currently active depth data format of the capture device.
 - [AVCaptureDevice.Format](avcapturedevice/format.md)
   A class that defines media formats and capture settings that capture devices support.
-### Configuring Frame Durations
+### Configuring frame durations
 - [var activeVideoMinFrameDuration: CMTime](avcapturedevice/activevideominframeduration.md)
   The currently active minimum frame duration.
 - [var activeVideoMaxFrameDuration: CMTime](avcapturedevice/activevideomaxframeduration.md)
@@ -81,7 +81,7 @@ Most common configurations of capture settings are available through the [`AVCap
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.

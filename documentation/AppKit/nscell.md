@@ -38,7 +38,7 @@ When subclassing `NSCell` you must implement all of the designated initializers.
 - [var intValue: Int32](nscell/intvalue.md)
   The cell’s value as an integer.
 - [var integerValue: Int](nscell/integervalue.md)
-  The cell’s value as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) type.
+  The cell’s value as an integer value.
 - [var stringValue: String](nscell/stringvalue.md)
   The cell’s value as a string.
 - [var doubleValue: Double](nscell/doublevalue.md)

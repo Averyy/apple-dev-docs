@@ -22,8 +22,13 @@ Use [`restorableState`](nsviewinvalidating/restorablestate.md) to create an inst
 ## Topics
 
 ### Creating the invalidation type
+- [static var restorableState: NSView.Invalidations.RestorableState](nsviewinvalidating/restorablestate.md)
+  A change that invalidates the restorable state of the view.
 - [init()](nsview/invalidations/restorablestate/init.md)
   Creates the invalidation type.
+### Invalidating the restorable state
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

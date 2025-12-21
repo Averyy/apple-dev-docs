@@ -21,7 +21,7 @@ var isPressed: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the user is putting pressure on the button; otherwise, the user isn’t.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user is putting pressure on the button; otherwise, the user isn’t.
 
 For the DualSense, DualShock 4, and Siri Remote controllers, the framework simulates whether the user presses the button and the level of pressure for its touch surfaces.
 

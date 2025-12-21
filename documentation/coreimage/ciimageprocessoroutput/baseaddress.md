@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A pointer to CPU memory at which to write output pixel data.
+The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
 
 **Availability**:
 - iOS 10.0+
@@ -20,20 +20,14 @@ A pointer to CPU memory at which to write output pixel data.
 var baseAddress: UnsafeMutableRawPointer { get }
 ```
 
-#### Discussion
-
-Use this property if you process the image using a CPU-based routine that cannot make use of higher-level constructs for sharing memory.
-
-> **Note**:  If your image processing routine is GPU-based, use the the [`pixelBuffer`](ciimageprocessoroutput/pixelbuffer.md), [`surface`](ciimageprocessoroutput/surface.md), or [`metalTexture`](ciimageprocessoroutput/metaltexture.md) property instead.
-
 ## See Also
 
 - [var metalTexture: (any MTLTexture)?](ciimageprocessoroutput/metaltexture.md)
-  A Metal texture to which you can write output pixel data.
+  A Metal texture object that can be bound for output using Metal.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessoroutput/pixelbuffer.md)
-  A CoreVideo pixel buffer to which you can write output pixel data.
+  An output pixelBuffer object that your Core Image Processor Kernel can write to.
 - [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
-  An IOSurface object to which you can write output pixel data.
+  An output surface object that your Core Image Processor Kernel can write to.
 
 
 ---

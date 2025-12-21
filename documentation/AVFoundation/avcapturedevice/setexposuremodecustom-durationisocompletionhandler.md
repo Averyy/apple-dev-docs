@@ -33,7 +33,7 @@ When using [`AVCapturePhotoOutput`](avcapturephotooutput.md) to capture photos, 
 
 ## Topics
 
-### Exposure Constants
+### Exposure constants
 - [class let currentExposureDuration: CMTime](avcapturedevice/currentexposureduration.md)
   A special constant representing the current exposure duration setting.
 - [class let currentISO: Float](avcapturedevice/currentiso.md)

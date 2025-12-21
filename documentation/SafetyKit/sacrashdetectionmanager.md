@@ -10,7 +10,7 @@ Provides registration and management of Crash Detection events.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 10.1+
+- watchOS 9.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ class SACrashDetectionManager
 
 #### Overview
 
-Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](sacrashdetectionmanager/isavailable.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](sacrashdetectionmanager/isavailable.md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Check the value of [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) to determine if the person designates this app on their iPhone to receive Crash Detection events. If the value is not [`SAAuthorizationStatus.authorized`](saauthorizationstatus/authorized.md), set [`delegate`](sacrashdetectionmanager/delegate.md) and call [`requestAuthorization(completionHandler:)`](sacrashdetectionmanager/requestauthorization(completionhandler:).md) to request authorization.
 

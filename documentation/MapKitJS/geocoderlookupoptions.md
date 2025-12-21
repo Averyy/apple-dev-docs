@@ -11,17 +11,12 @@ Options that constrain geocoder lookup results to a specific area or a specific 
 ## Declaration
 
 ```swift
-dictionary GeocoderLookupOptions {
-	string language;
-	mapkit.Coordinate coordinate;
-	mapkit.CoordinateRegion region;
-	string limitToCountries;
-};
+interface GeocoderLookupOptions
 ```
 
 #### Overview
 
-Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup`](mapkit.geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
+Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup(place, callback, options)`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
 
 ## Topics
 
@@ -37,13 +32,13 @@ Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a 
 
 ## See Also
 
-- [lookup](mapkit.geocoder/lookup.md)
+- [lookup(place, callback, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [reverseLookup](mapkit.geocoder/reverselookup.md)
+- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
-- [GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
+- [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.
-- [GeocoderResponse](geocoderresponse.md)
+- [interface GeocoderResponse](geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 
 

@@ -17,7 +17,7 @@ var isMiniaturized: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window is minimized; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). A minimized window is removed from the screen and replaced by a image, icon, or button that represents it, called the counterpart.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window is minimized; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). A minimized window is removed from the screen and replaced by a image, icon, or button that represents it, called the counterpart.
 
 ## See Also
 

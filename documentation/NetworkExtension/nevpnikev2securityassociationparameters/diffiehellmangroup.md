@@ -23,7 +23,7 @@ var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup { get set }
 
 The default value of this property is [`NEVPNIKEv2DiffieHellmanGroup.group14`](nevpnikev2diffiehellmangroup/group14.md).
 
-The value of this property on [`childSecurityAssociationParameters`](nevpnprotocolikev2/childsecurityassociationparameters.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) only takes effect if the [`enablePFS`](nevpnprotocolikev2/enablepfs.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) is [`true`](https://developer.apple.com/documentation/swift/true) (its default value is [`false`](https://developer.apple.com/documentation/swift/false)).
+The value of this property on [`childSecurityAssociationParameters`](nevpnprotocolikev2/childsecurityassociationparameters.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) only takes effect if the [`enablePFS`](nevpnprotocolikev2/enablepfs.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) is [`true`](https://developer.apple.com/documentation/Swift/true) (its default value is [`false`](https://developer.apple.com/documentation/Swift/false)).
 
 ## See Also
 
@@ -38,6 +38,10 @@ The value of this property on [`childSecurityAssociationParameters`](nevpnprotoc
   An enumeration of Diffie-Hellman group values.
 - [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
+  Quantum-secure key exchange methods you use with IKEv2 servers.
 
 
 ---

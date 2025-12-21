@@ -8,7 +8,7 @@ Receive Sign in with Apple users and associated apps from another team.
 
 When acquiring an app from another team that uses Sign in with Apple, you follow a specific process to receive signed-in users from the sending team.
 
-Coordinate with the sending team transferring their users and apps over to your team. Then accept transfer identifers for all of the migrating users, and exchange the transfer identifiers for team-scoped identifiers and private email addresses to complete the process.
+Coordinate with the sending team transferring their users and apps over to your team. Then accept transfer identifiers for all of the migrating users, and exchange the transfer identifiers for team-scoped identifiers and private email addresses to complete the process.
 
 ##### Obtain Team Scoped Identifiers
 
@@ -42,6 +42,8 @@ Pragma: no-cache
   "expires_in":3600
 }
 ```
+
+For more information, see [`Receiving a User’s Identity Token`](receiving-a-users-identity-token.md)
 
 ##### Exchange Identifiers
 

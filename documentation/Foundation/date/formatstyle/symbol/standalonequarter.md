@@ -34,8 +34,6 @@ struct StandaloneQuarter
 - [static var wide: Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter/wide.md)
   The full representation of a standalone quarter.
 ### Comparing Standalone Quarters
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

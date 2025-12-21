@@ -91,16 +91,10 @@ An app can have only one active session at a time. When your app no longer needs
 - [func configuration() async throws -> CredentialTransaction.Configuration](credentialsession/configuration.md)
   Retrieves a transaction configuration related to this session.
 - [CredentialTransaction.Configuration](credentialtransaction/configuration.md)
-  An object that provides configuration information for a transaction that the client intends to peform.
+  An object that provides configuration information for a transaction that the client intends to perform.
 ### Handling errors
 - [CredentialSession.ErrorCode](credentialsession/errorcode.md)
   An error encountered by a credential session.
-### Working with actors
-- [var unownedExecutor: UnownedSerialExecutor](credentialsession/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
-### Comparing sessions
-- [static func == (CredentialSession, CredentialSession) -> Bool](credentialsession/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Infrequently-used functionality
 - [init()](credentialsession/init.md)
   Creates an empty credential session.
@@ -110,9 +104,6 @@ An app can have only one active session at a time. When your app no longer needs
 ### Enumerations
 - [CredentialSession.NFCFieldInformation](credentialsession/nfcfieldinformation.md)
   The state of an NFC RF field.
-### Default Implementations
-- [Actor Implementations](credentialsession/actor-implementations.md)
-- [Equatable Implementations](credentialsession/equatable-implementations.md)
 
 ## Relationships
 

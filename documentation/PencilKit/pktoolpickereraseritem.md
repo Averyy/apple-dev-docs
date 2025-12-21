@@ -9,7 +9,7 @@ An item that represents an eraser tool in the tool picker.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

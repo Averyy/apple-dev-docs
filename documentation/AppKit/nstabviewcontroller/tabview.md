@@ -21,7 +21,7 @@ Use this property to access the tab view controller’s content view. The object
 
 Accessing this property creates the tab view object if it does not already exist. To determine whether the tab view has been created (without creating it prematurely), use the [`isViewLoaded`](nsviewcontroller/isviewloaded.md) property.
 
-You may provide your own tab view by assigning it to this property. If you do so, you must assign your custom object before the tab view controller creates one of its own. In other words, you must assign your tab view object to this property while the [`isViewLoaded`](nsviewcontroller/isviewloaded.md) property is still [`false`](https://developer.apple.com/documentation/swift/false).
+You may provide your own tab view by assigning it to this property. If you do so, you must assign your custom object before the tab view controller creates one of its own. In other words, you must assign your tab view object to this property while the [`isViewLoaded`](nsviewcontroller/isviewloaded.md) property is still [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

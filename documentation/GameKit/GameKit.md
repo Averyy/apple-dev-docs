@@ -40,7 +40,7 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
 
 ### Essentials
 - [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
-  Enable Game Center in your Xcode project and configure features in App Store Connect.
+  Enable Game Center, configure features, and test them locally in your Xcode project.
 - [Authenticating a player](authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.
 - [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
@@ -124,6 +124,8 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

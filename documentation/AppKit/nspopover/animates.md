@@ -21,7 +21,7 @@ A popover may be animated when it shows, closes, moves, or appears to transition
 
 The system does not guarantee which behaviors will be animated or that this property will be respected; it is regarded as a hint.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

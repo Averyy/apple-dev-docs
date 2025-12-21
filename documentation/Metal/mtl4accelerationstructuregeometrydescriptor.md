@@ -6,12 +6,12 @@
 Base class for all Metal 4 acceleration structure geometry descriptors.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -72,6 +72,7 @@ Don’t use this class directly. Use one of the derived classes instead.
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveBasis](mtlcurvebasis.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)

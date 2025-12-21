@@ -6,8 +6,8 @@
 Configures the view’s subtitle for purposes of navigation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
 

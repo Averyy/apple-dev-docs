@@ -22,7 +22,7 @@ var isAsynchronous: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If the value is [`false`](https://developer.apple.com/documentation/swift/false), the contents of this view are synchronized with Core Animation updates.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the contents of this view are synchronized with Core Animation updates.
 
 ## See Also
 

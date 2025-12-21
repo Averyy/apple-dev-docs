@@ -24,14 +24,19 @@ An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its a
 
 ## Topics
 
-### Configuring Metadata Capture
+### Creating metadata output
+- [init()](avcapturemetadataoutput/init.md)
+  Creates a new capture metadata output.
+### Configuring metadata capture
 - [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/availablemetadataobjecttypes.md)
   An array of strings identifying the types of metadata objects that can be captured.
 - [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](avcapturemetadataoutput/metadataobjecttypes.md)
   An array of strings identifying the types of metadata objects  to process.
 - [var rectOfInterest: CGRect](avcapturemetadataoutput/rectofinterest.md)
   A rectangle of interest for limiting the search area for visual metadata.
-### Receiving Captured Metadata Objects
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+  The required metadata object types when Cinematic Video capture is enabled.
+### Receiving captured metadata objects
 - [func setMetadataObjectsDelegate((any AVCaptureMetadataOutputObjectsDelegate)?, queue: dispatch_queue_t?)](avcapturemetadataoutput/setmetadataobjectsdelegate(_:queue:).md)
   Sets the delegate and dispatch queue to use handle callbacks.
 - [var metadataObjectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)?](avcapturemetadataoutput/metadataobjectsdelegate.md)
@@ -40,11 +45,6 @@ An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its a
   The dispatch queue on which to execute the delegate’s methods.
 - [protocol AVCaptureMetadataOutputObjectsDelegate](avcapturemetadataoutputobjectsdelegate.md)
   Methods for receiving metadata produced by a metadata capture output.
-### Creating Metadata Output
-- [init()](avcapturemetadataoutput/init.md)
-  Creates a new capture metadata output.
-### Instance Properties
-- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
 
 ## Relationships
 
@@ -64,7 +64,7 @@ An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its a
   A capture input for providing timed metadata to a capture session.
 - [class AVMetadataObject](avmetadataobject.md)
   The abstract superclass for objects provided by a metadata capture output.
-- [Metadata Types](metadata-types.md)
+- [Metadata types](metadata-types.md)
   Inspect the supported metadata object types that the framework supports.
 
 

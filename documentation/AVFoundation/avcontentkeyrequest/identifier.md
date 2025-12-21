@@ -26,6 +26,8 @@ This property is specific to the container and the protocol. To use the key with
 
 ## See Also
 
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 - [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
 - [var error: (any Error)?](avcontentkeyrequest/error.md)

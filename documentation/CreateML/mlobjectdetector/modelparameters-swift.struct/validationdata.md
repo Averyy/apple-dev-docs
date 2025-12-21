@@ -32,6 +32,8 @@ enum ValidationData
 
 - [MLObjectDetector.ModelParameters.ModelAlgorithmType](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype.md)
   An object-detector training algorithm.
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+  The underlying base model that extracts image features for an object-detector training session.
 
 
 ---

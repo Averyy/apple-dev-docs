@@ -21,7 +21,7 @@ var hasAlarms: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has alarms; otherwise it does not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the calendar item has alarms; otherwise it does not.
 
 ## See Also
 

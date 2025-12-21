@@ -20,7 +20,7 @@ func execute(_ saveRequest: CNSaveRequest) throws
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the save request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the save request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

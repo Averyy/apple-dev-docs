@@ -24,12 +24,16 @@ object GameCenterMatchmakingTestPlayerPropertyInlineCreate
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)
   The request body for testing the rules in a rule set.
+- [object GameCenterMatchmakingTestRequest](gamecentermatchmakingtestrequest.md)
+  The type and ID of test matchmaking request.
 - [object GameCenterMatchmakingRuleSetTestResponse](gamecentermatchmakingrulesettestresponse.md)
   The response body for testing a rule set.
 - [object GameCenterMatchmakingRuleSetTest](gamecentermatchmakingrulesettest.md)
   The data structure that represents the results of testing a rule set.
 - [object GameCenterMatchmakingTestRequestInlineCreate](gamecentermatchmakingtestrequestinlinecreate.md)
   A data structure that represents a sample match request for testing a rule set.
+- [object GameCenterMatchmakingTestPlayerProperty](gamecentermatchmakingtestplayerproperty.md)
+  The data structure that represents a test player’s type and ID.
 - [object GameCenterMatchmakingTeamAssignment](gamecentermatchmakingteamassignment.md)
   The data structure that represents the assignment of a player to a team.
 - [object Location](location.md)

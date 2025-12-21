@@ -18,26 +18,6 @@ enum LibraryType
   A dynamically linked library.
 - [Product.Library.LibraryType.static](product/library/librarytype/static.md)
   A statically linked library.
-### Hashing
-- [func hash(into: inout Hasher)](product/library/librarytype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](product/library/librarytype/hashvalue.md)
-  The library type’s hash value.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](product/library/librarytype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Creating a Value
-- [init?(rawValue: String)](product/library/librarytype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](product/library/librarytype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Product.Library.LibraryType.RawValue](product/library/librarytype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](product/library/librarytype/equatable-implementations.md)
-- [RawRepresentable Implementations](product/library/librarytype/rawrepresentable-implementations.md)
 
 ## Relationships
 

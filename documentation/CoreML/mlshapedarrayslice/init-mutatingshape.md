@@ -69,6 +69,13 @@ assert(slice2[scalarAt: 0] == 0)
 - `pixelBuffer`: The pixel buffer to be owned by the instance.
 - `shape`: The shape of the MLShapedArray. The last dimension of   must match the pixel buffer’s   width. The product of the rest of the dimensions must match the height.
 
+## See Also
+
+- [init(scalar: Scalar)](mlshapedarrayslice/init(scalar:).md)
+  Creates a shaped array slice with exactly one value and zero dimensions.
+- [init<S>(scalars: S, shape: [Int])](mlshapedarrayslice/init(scalars:shape:).md)
+  Initialize with a sequence and the shape.
+
 
 ---
 

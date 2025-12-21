@@ -22,8 +22,9 @@ func attestKey(_ keyId: String, clientDataHash: Data) async throws -> Data
 
 ## Mentions
 
-- [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
 - [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
+- [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
 
 #### Discussion
 

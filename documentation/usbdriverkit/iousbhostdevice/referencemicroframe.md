@@ -18,6 +18,8 @@ KERN_SUCCESS is successful see IOReturn.h for error codes.
 
 #### Discussion
 
+Return a recent microframe number of the USB controller.
+
 This method will return a recent microframe number of the USB controller with a timestamp captured near the microframe boundary. This is most useful for scheduling future isochronous requests.
 
 ## Parameters

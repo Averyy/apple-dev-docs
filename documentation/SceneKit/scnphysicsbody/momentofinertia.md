@@ -24,7 +24,7 @@ var momentOfInertia: SCNVector3 { get set }
 
 A body’s moment of inertia determines how it responds to torques (that is, forces with a rotational component). Each component of this vector is the moment of inertia for the corresponding principal axis (in the coordinate system containing the physics body). For example, if the x-component value of the moment vector is less than the y-component value, the body rotates more freely about its x-axis than its y-axis.
 
-By default, SceneKit automatically determines the body’s moment of inertia based on its shape and mass. Use this property to define a custom moment of inertia (for example, to model an object of non-uniform density). Using a custom moment of inertia requires setting the [`usesDefaultMomentOfInertia`](scnphysicsbody/usesdefaultmomentofinertia.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, SceneKit automatically determines the body’s moment of inertia based on its shape and mass. Use this property to define a custom moment of inertia (for example, to model an object of non-uniform density). Using a custom moment of inertia requires setting the [`usesDefaultMomentOfInertia`](scnphysicsbody/usesdefaultmomentofinertia.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

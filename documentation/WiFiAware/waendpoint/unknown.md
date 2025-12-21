@@ -1,28 +1,35 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Wi-Fi Aware  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Two endpoints are logically equivalent if they have the same service type (publish vs subscribe) with the same name, and refer to the same device.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: WAEndpoint, rhs: WAEndpoint) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+`true` if both sides are logically equivalent, `false` otherwise
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `lhs`: The left-hand side object.
+- `rhs`: The other object to compare.
+
+## See Also
+
+- [func hash(into: inout Hasher)](waendpoint/hash(into:).md)
+  Compute unique hash of this object.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/wifiaware/waendpoint/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/wifiaware/waendpoint/==(_:_:))*

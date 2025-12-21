@@ -11,12 +11,12 @@ The street name at the place.
 ## Declaration
 
 ```swift
-attribute string? thoroughfare;
+thoroughfare?: string;
 ```
 
 #### Discussion
 
-For example, the [`thoroughfare`](place/thoroughfare.md) for the Golden Gate Park is `“John F Kennedy Dr”`.
+For example, one possible [`thoroughfare`](place/thoroughfare.md) in Golden Gate Park in San Francisco, California, is `"John F Kennedy Dr"`.
 
 ## See Also
 

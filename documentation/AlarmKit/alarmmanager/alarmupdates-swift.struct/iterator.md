@@ -6,8 +6,8 @@
 A nested type that iterates over the elements of this sequence.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -20,10 +20,6 @@ struct Iterator
 ### Interating a function
 - [func next() async -> AlarmManager.AlarmUpdates.Element?](alarmmanager/alarmupdates-swift.struct/iterator/next.md)
   Returns the next element in the sequence.
-### Type Aliases
-- [AlarmManager.AlarmUpdates.Iterator.Element](alarmmanager/alarmupdates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](alarmmanager/alarmupdates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

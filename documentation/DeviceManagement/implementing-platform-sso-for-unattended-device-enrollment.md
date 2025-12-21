@@ -20,8 +20,8 @@ When the device enrolls with the device management service, it enters the await 
 
 To configure Platform SSO on the device, the device management service needs to install:
 
-- An app that includes the SSO extension for Platform SSO
-- A profile that contains an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload with a configuration to use Platform SSO
+- An app that includes the SSO extension for Platform SSO.
+- A profile that contains an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload with a configuration to use Platform SSO. The payload needs to contain a [`ExtensibleSingleSignOn.PlatformSSO`](extensiblesinglesignon/platformsso-data.dictionary.md) object with the `EnableRegistrationDuringSetup` key set to `true` and the `EnableCreateFirstUserDuringSetup` key set to `false` .
 
 The device management service needs to wait for the app to install before it sends the [`Device Configured`](device-configured-command.md) command to have the device exit the await configuration state. There are two options for waiting, depending on whether the service installs the app using declarative management or MDM commands:
 

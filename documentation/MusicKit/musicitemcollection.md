@@ -37,18 +37,6 @@ struct MusicItemCollection<MusicItemType> where MusicItemType : MusicItem
   Fetches the next batch of items asynchronously.
 - [func nextBatch(limit: Int?) async throws -> MusicItemCollection<MusicItemType>?](musicitemcollection/nextbatch(limit:)-ywue.md)
   Fetches the next batch of items asynchronously.
-### Default Implementations
-- [BidirectionalCollection Implementations](musicitemcollection/bidirectionalcollection-implementations.md)
-- [Collection Implementations](musicitemcollection/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](musicitemcollection/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musicitemcollection/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicitemcollection/decodable-implementations.md)
-- [Encodable Implementations](musicitemcollection/encodable-implementations.md)
-- [Equatable Implementations](musicitemcollection/equatable-implementations.md)
-- [ExpressibleByArrayLiteral Implementations](musicitemcollection/expressiblebyarrayliteral-implementations.md)
-- [Hashable Implementations](musicitemcollection/hashable-implementations.md)
-- [RandomAccessCollection Implementations](musicitemcollection/randomaccesscollection-implementations.md)
-- [Sequence Implementations](musicitemcollection/sequence-implementations.md)
 
 ## Relationships
 

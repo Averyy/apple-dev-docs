@@ -22,15 +22,15 @@ struct HandleEvents<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a HandleEvents Publisher
+### Creating an event-handling publisher
 - [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Publishers.HandleEvents<Upstream>.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?)](publishers/handleevents/init(upstream:receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md)
   Creates a publisher that performs the specified closures when publisher events occur.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.HandleEvents.Output](publishers/handleevents/output.md)
   The kind of values published by this publisher.
 - [Publishers.HandleEvents.Failure](publishers/handleevents/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/handleevents/upstream.md)
   The publisher from which this publisher receives elements.
 - [var receiveSubscription: ((any Subscription) -> Void)?](publishers/handleevents/receivesubscription.md)
@@ -43,11 +43,6 @@ struct HandleEvents<Upstream> where Upstream : Publisher
   A closure that executes when the downstream receiver cancels publishing.
 - [var receiveRequest: ((Subscribers.Demand) -> Void)?](publishers/handleevents/receiverequest.md)
   A closure that executes when the publisher receives a request for more elements.
-### Applying Operators
-- [Publisher Operators](publishers-handleevents-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/handleevents/publisher-implementations.md)
 
 ## Relationships
 

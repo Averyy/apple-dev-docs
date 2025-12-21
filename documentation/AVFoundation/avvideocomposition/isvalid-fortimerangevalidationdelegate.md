@@ -20,7 +20,7 @@ func isValid(for asset: AVAsset?, timeRange: CMTimeRange, validationDelegate: (a
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the time ranges of the composition’s instructions conform to validation requirements, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the time ranges of the composition’s instructions conform to validation requirements, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

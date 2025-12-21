@@ -3,7 +3,7 @@
 **Framework**: IOSurface  
 **Kind**: var
 
-CFNumber for the height of the IOSurface buffer in pixels.
+The height of the IOSurface buffer in pixels.
 
 **Availability**:
 - iOS 11.0+
@@ -23,16 +23,18 @@ let kIOSurfaceHeight: CFString
 
 Required for planar IOSurfaces.
 
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+
 ## See Also
 
 - [let kIOSurfaceAllocSize: CFString](kiosurfaceallocsize.md)
   CFNumber of the total allocation size of the buffer including all planes.
 - [let kIOSurfaceBytesPerElement: CFString](kiosurfacebytesperelement.md)
-  CFNumber for the total number of bytes in an element.
+  The total number of bytes in an element.
 - [let kIOSurfaceBytesPerRow: CFString](kiosurfacebytesperrow.md)
-  CFNumber for the bytes per row of the buffer.
+  The bytes per row of the buffer.
 - [let kIOSurfaceCacheMode: CFString](kiosurfacecachemode.md)
-  CFNumber for the CPU cache mode to be used for the allocation.
+  The CPU cache mode to be used for the allocation.
 - [let kIOSurfaceColorSpace: CFString](kiosurfacecolorspace.md)
 - [let kIOSurfaceElementHeight: CFString](kiosurfaceelementheight.md)
   CFNumber for how many pixels high each element is.
@@ -43,12 +45,12 @@ Required for planar IOSurfaces.
   CFBoolean If true, the IOSurface may be looked up by any task in the system by its ID.
 - [let kIOSurfaceName: CFString](kiosurfacename.md)
 - [let kIOSurfaceOffset: CFString](kiosurfaceoffset.md)
-  CFNumber for the starting offset into the buffer.
+  The starting offset into the buffer.
 - [let kIOSurfacePixelFormat: CFString](kiosurfacepixelformat.md)
-  A 32-bit unsigned integer doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd that stores the traditional macOS buffer format.
+  A 32-bit unsigned integer that stores the traditional macOS buffer format.
 - [let kIOSurfacePixelSizeCastingAllowed: CFString](kiosurfacepixelsizecastingallowed.md)
 - [let kIOSurfacePlaneBase: CFString](kiosurfaceplanebase.md)
-  CFNumber for the base offset into the buffer for this plane.
+  The base offset into the buffer for this plane.
 - [let kIOSurfacePlaneBitsPerElement: CFString](kiosurfaceplanebitsperelement.md)
 
 

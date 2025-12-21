@@ -3,8 +3,6 @@
 **Framework**: Core Media  
 **Kind**: struct
 
-A structure that holds all samples in a sample buffer.
-
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

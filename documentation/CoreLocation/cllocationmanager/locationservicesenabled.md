@@ -22,7 +22,7 @@ class func locationServicesEnabled() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if location services are enabled on the device; [`false`](https://developer.apple.com/documentation/swift/false) if they are not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if location services are enabled on the device; [`false`](https://developer.apple.com/documentation/Swift/false) if they are not.
 
 #### Discussion
 

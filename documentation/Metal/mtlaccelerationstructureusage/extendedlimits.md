@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A structure usage option that indicates you intend to use larger ray-tracing limits for the acceleration structure.
+An option that increases an acceleration structure’s storage capacity.
 
 **Availability**:
 - iOS 15.0+
@@ -21,7 +21,7 @@ static var extendedLimits: MTLAccelerationStructureUsage { get }
 
 #### Discussion
 
-Metal may make performance tradeoffs so that the acceleration structure can support more complex data structures.
+The acceleration structures you build with this option can affect their performance because they support more data complexity.
 
 |  | Standard limits | Extended limits |
 | --- | --- | --- |
@@ -33,9 +33,13 @@ Metal may make performance tradeoffs so that the acceleration structure can supp
 ## See Also
 
 - [static var refit: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/refit.md)
-  An option that specifies that you can refit the acceleration structure if the geometry changes.
+  An option that lets you update an acceleration structure after creating it.
 - [static var preferFastBuild: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastbuild.md)
-  An option that specifies that Metal needs to build the acceleration structure quickly, even if that reduces ray-tracing performance.
+  An option that instructs Metal to build an acceleration structure quickly.
+- [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
+  An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
+- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+  An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
 
 
 ---

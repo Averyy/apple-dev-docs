@@ -33,12 +33,6 @@ The values of this enumeration indicate how to handle a task with a delayed star
   A disposition indicating that the task should proceed with the original request.
 - [URLSession.DelayedRequestDisposition.useNewRequest](urlsession/delayedrequestdisposition/usenewrequest.md)
   A disposition indicating that the task should use a new request to perform the network load.
-- [URLSession.DelayedRequestDisposition.cancel](urlsession/delayedrequestdisposition/cancel.md)
-  A disposition indicating that the task should be canceled.
-- [URLSession.DelayedRequestDisposition.continueLoading](urlsession/delayedrequestdisposition/continueloading.md)
-  A disposition indicating that the task should proceed with the original request.
-- [URLSession.DelayedRequestDisposition.useNewRequest](urlsession/delayedrequestdisposition/usenewrequest.md)
-  A disposition indicating that the task should use a new request to perform the network load.
 ### Initializers
 - [init?(rawValue: Int)](urlsession/delayedrequestdisposition/init(rawvalue:).md)
 

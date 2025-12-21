@@ -62,7 +62,7 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 - [var defaultTabInterval: CGFloat](nsmutableparagraphstyle/defaulttabinterval.md)
   A number used as the document’s default tab spacing.
 ### Setting text blocks and lists
-- [var textBlocks: [NSTextBlock] { get set }](../AppKit/NSMutableParagraphStyle/textBlocks.md)
+- [var textBlocks: [NSTextBlock]](../AppKit/NSMutableParagraphStyle/textBlocks.md)
   The text blocks that contain the paragraph.
 - [var textLists: [NSTextList]](nsmutableparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
@@ -74,12 +74,12 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 - [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
-- [var tighteningFactorForTruncation: Float { get set }](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.
 ### Setting HTML header level
-- [var headerLevel: Int { get set }](../AppKit/NSMutableParagraphStyle/headerLevel.md)
+- [var headerLevel: Int](../AppKit/NSMutableParagraphStyle/headerLevel.md)
   The paragraph’s header level for HTML generation.
 
 ## Relationships

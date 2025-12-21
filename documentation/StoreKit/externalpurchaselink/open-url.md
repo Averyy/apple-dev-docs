@@ -55,7 +55,7 @@ https://site.example.com?externalPurchaseToken=ewoJImFwcEFwcGxlSWQiOjEyMzQ1Njc4O
 
 This method throws a [`StoreKitError`](storekiterror.md) if any of the following are true:
 
-- Your app doesn’t have the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+- Your app doesn’t have the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.allowed-regions or [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
 - You haven’t configured external purchase links for the current App Store storefront in the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseMultiLink) property list key.
 - The current App Store storefront doesn’t support external purchases.
 - The person is ineligible to make external purchases.

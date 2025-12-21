@@ -22,9 +22,6 @@ enum JSONType
 
 ## Topics
 
-### Operators
-- [static func == (JSONType, JSONType) -> Bool](jsontype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [JSONType.array](jsontype/array.md)
   An array type.
@@ -40,14 +37,6 @@ enum JSONType
   An object type.
 - [JSONType.string](jsontype/string.md)
   A string type.
-### Instance Properties
-- [var hashValue: Int](jsontype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](jsontype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](jsontype/equatable-implementations.md)
 
 ## Relationships
 

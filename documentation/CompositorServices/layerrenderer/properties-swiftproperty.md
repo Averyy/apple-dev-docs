@@ -6,7 +6,7 @@
 The configured properties of the layer renderer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

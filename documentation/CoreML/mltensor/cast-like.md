@@ -39,6 +39,11 @@ z.scalarType // is Float
 
 - `other`: The other tensor whose scalar type is used for the cast.
 
+## See Also
+
+- [func cast<Scalar>(to: Scalar.Type) -> MLTensor](mltensor/cast(to:).md)
+  Casts the elements of the tensor to the given scalar type.
+
 
 ---
 

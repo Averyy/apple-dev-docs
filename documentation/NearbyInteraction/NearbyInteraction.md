@@ -36,7 +36,7 @@ Nearby Interaction in iOS provides a peer device’s distance and direction, whe
 
 In iOS 15 and later and watchOS 8 and later, U1-enabled devices can interact with third-party accessories you partner with or develop using the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification). To begin an interaction session with a third-party accessory, establish a data link with the accessory, receive its configuration data, and create an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md). The framework provides configuration data for your device through [`session(_:didGenerateShareableConfigurationData:for:)`](nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).md) that your app sends to the accessory to begin detecting the accessory’s range. For more information on accessory interaction, see [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md).
 
-> **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
+> **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/Swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
 
 ##### Using Nearby Interaction in the Background
 
@@ -87,6 +87,9 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
   The possible states of Camera Assistance.
 - [Algorithm Convergence Status](algorithm-convergence-status.md)
   The possible Objective-C states of Camera Assistance.
+### DL-TDoA ranging
+- [Downlink time difference of arrival ranging](dl-tdoa-ranging.md)
+  Use anchor devices to improve the accuracy of indoor positioning.
 ### Errors
 - [struct NIError](nierror.md)
   An error Nearby Interaction reports.
@@ -97,16 +100,6 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
 ### Deprecated
 - [NSNearbyInteractionAllowOnceUsageDescription](../BundleResources/Information-Property-List/NSNearbyInteractionAllowOnceUsageDescription.md)
   A one-time request for user permission to begin an interaction session with nearby devices.
-### Classes
-- [class NIDLTDOAConfiguration](nidltdoaconfiguration.md)
-  A session configuration that enables UWB Down Link Time Difference of Arrival(DL-TDoA) ranging with nearby anchors.
-- [class NIDLTDOAMeasurement](nidltdoameasurement.md)
-  Represents a single measurement relative to a DL-TDOA anchor.
-### Enumerations
-- [enum NIDLTDOACoordinatesType](nidltdoacoordinatestype.md)
-  The coordinate types of DL-TDOA measurement updates that Nearby Interaction supports.
-- [enum NIDLTDOAMeasurementType](nidltdoameasurementtype.md)
-  The measurement types of DL-TDOA measurement updates that Nearby Interaction supports.
 
 
 ---

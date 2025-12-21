@@ -22,11 +22,12 @@ object responseBodyV2DecodedPayload
 
 The `responseBodyV2DecodedPayload` is the Base64URL-decoded notification information from the JWS payload portion of the [`signedPayload`](signedpayload.md). Use the [`notificationType`](notificationtype.md) and [`subtype`](subtype.md) to understand the event that led to this notification.
 
-The payload can contain only one of the following three fields:
+The payload can contain only one of the following four fields:
 
 - A [`data`](data.md) object, which contains details including the environment, the app metadata, and the signed transaction and subscription renewal information.
+- An [`appData`](appdata.md) object, which contains details including the environment, the app metadata, and the signed app transaction information.
 - A [`summary`](summary.md) object, which contains information only when the notification is a `RENEWAL_EXTENSION` with a `SUMMARY` subtype. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers).
-- An [`externalPurchaseToken`](externalpurchasetoken.md), which contains an external purchase token only when the notification is `EXTERNAL_PURCHASE_TOKEN`. For more information about this notification, see [`externalPurchaseToken`](externalpurchasetoken.md).
+- An [`externalPurchaseToken`](externalpurchasetoken.md) object, which contains an external purchase token only when the notification is `EXTERNAL_PURCHASE_TOKEN`. For more information about this notification, see [`externalPurchaseToken`](externalpurchasetoken.md).
 
 ## Topics
 
@@ -35,12 +36,14 @@ The payload can contain only one of the following three fields:
   The payload data for a subscription-renewal-date extension notification.
 - [object data](data.md)
   The payload data that contains app metadata and the signed renewal and transaction information.
+- [object appData](appdata.md)
+  The object that contains the app metadata and signed app transaction information.
 ### Response object for an external purchase
 - [object externalPurchaseToken](externalpurchasetoken.md)
   The payload data that contains an external purchase token.
 ### Response types
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 - [type version](version.md)
@@ -66,7 +69,7 @@ The payload can contain only one of the following three fields:
 - [object responseBodyV2](responsebodyv2.md)
   The response body the App Store sends in a version 2 server notification.
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 

@@ -17,7 +17,7 @@ var valueWraps: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if, when incrementing or decrementing, the value wraps around to the minimum or maximum. [`false`](https://developer.apple.com/documentation/swift/false) if the value stays pinned at the minimum or maximum. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if, when incrementing or decrementing, the value wraps around to the minimum or maximum. [`false`](https://developer.apple.com/documentation/Swift/false) if the value stays pinned at the minimum or maximum. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

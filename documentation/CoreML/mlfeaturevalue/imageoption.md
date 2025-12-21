@@ -22,12 +22,12 @@ struct ImageOption
 
 ## Topics
 
-### Image Options Keys
+### Image options keys
 - [static let cropRect: MLFeatureValue.ImageOption](mlfeaturevalue/imageoption/croprect.md)
   The option you use to crop an image when creating an image feature value.
 - [static let cropAndScale: MLFeatureValue.ImageOption](mlfeaturevalue/imageoption/cropandscale.md)
   The option you use to crop and scale an image when creating an image feature value.
-### Image Option Key Initializers
+### Image option key initializers
 - [init(String)](mlfeaturevalue/imageoption/init(_:).md)
   Creates an image feature option key from a string.
 - [init(rawValue: String)](mlfeaturevalue/imageoption/init(rawvalue:).md)

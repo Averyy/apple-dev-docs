@@ -28,8 +28,6 @@ Use this value for the [`attribution`](urlrequest/attribution-swift.property.md)
 
 - [NSURLRequest.Attribution.developer](nsurlrequest/attribution-swift.enum/developer.md)
   A developer-initiated network request.
-- [NSURLRequest.Attribution.developer](nsurlrequest/attribution-swift.enum/developer.md)
-  A developer-initiated network request.
 
 
 ---

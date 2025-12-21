@@ -20,6 +20,16 @@ The transformer type created by this estimator.
 typealias Transformer = MultivariateLinearRegressor<Scalar>.Model
 ```
 
+## See Also
+
+- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+  A trained multivariate linear regressor model.
+- [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
+  The annotation type.
+- [MultivariateLinearRegressor.Configuration](multivariatelinearregressor/configuration-swift.typealias.md)
+- [MultivariateLinearRegressor.Feature](multivariatelinearregressor/feature.md)
+  The feature type.
+
 
 ---
 

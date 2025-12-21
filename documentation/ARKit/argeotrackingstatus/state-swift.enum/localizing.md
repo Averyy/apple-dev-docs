@@ -18,7 +18,7 @@ case localizing
 
 #### Discussion
 
-In [`ARGeoTrackingStatus.State.localizing`](argeotrackingstatus/state-swift.enum/localizing.md), the session downloads localization imagery for the user’s geographic location and compares it with captures from the device’s camera. This process is referred to as . When ARKit succeeds in matching this imagery with captures from the camera, the state moves to [`ARGeoTrackingStatus.State.localized`](argeotrackingstatus/state-swift.enum/localized.md) and the app is free to create location anchors. For more information about localization imagery, see doc:ARGeoTrackingConfiguration#Refine-the-User's-Position-with-Imagery.
+In [`ARGeoTrackingStatus.State.localizing`](argeotrackingstatus/state-swift.enum/localizing.md), the session downloads localization imagery for the user’s geographic location and compares it with captures from the device’s camera. This process is referred to as . When ARKit succeeds in matching this imagery with captures from the camera, the state moves to [`ARGeoTrackingStatus.State.localized`](argeotrackingstatus/state-swift.enum/localized.md) and the app is free to create location anchors. For more information about localization imagery, see [`Refine the user’s position with imagery`](argeotrackingconfiguration#Refine-the-users-position-with-imagery.md).
 
 ##### Assisting the User with Visual Localization
 

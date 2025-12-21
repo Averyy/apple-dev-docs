@@ -19,7 +19,7 @@ var horizontalScroller: NSScroller? { get set }
 
 The value of this property is `nil` if the scroll view has no horizontal scroller.
 
-You can access the horizontal scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasHorizontalScroller`](nsscrollview/hashorizontalscroller.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+You can access the horizontal scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasHorizontalScroller`](nsscrollview/hashorizontalscroller.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

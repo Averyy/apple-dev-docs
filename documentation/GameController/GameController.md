@@ -28,7 +28,7 @@ For controllers other than the racing wheel, follow these steps to process the g
 - To process the input, either get the values directly from the elements or register callbacks for when the user changes their values. Apps running in visionOS receive input events only when the person is looking at the app’s window.
 - For controllers that support haptics, you can provide feedback to the user by creating an engine that manipulates the controller’s actuators.
 
-Users may remap game controller elements in Settings and Preferences, so be sure to display the correct input element in your interface. If the [`hasRemappedElements`](gcphysicalinputprofile/hasremappedelements.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the user remapped elements and you can get the mapping between the actual and alias elements using the [`mappedElementAlias(forPhysicalInputName:)`](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md) and [`mappedPhysicalInputNames(forElementAlias:)`](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md) methods.
+Users may remap game controller elements in Settings and Preferences, so be sure to display the correct input element in your interface. If the [`hasRemappedElements`](gcphysicalinputprofile/hasremappedelements.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the user remapped elements and you can get the mapping between the actual and alias elements using the [`mappedElementAlias(forPhysicalInputName:)`](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md) and [`mappedPhysicalInputNames(forElementAlias:)`](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md) methods.
 
 To support racing wheel devices in your macOS app, see [`Racing wheel device support`](racing-wheel-device-support.md).
 
@@ -109,6 +109,9 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   An alias for a symbol name for backward compatibility with a previous SDK version.
 ### Deprecated symbols
 - [Deprecated symbols](deprecated-symbols.md)
+### Protocols
+- [protocol GCPhysicalInputExtents](gcphysicalinputextents.md)
+  Physical extents scale the normalized value reported by `GCLinearInput` into physical units.
 
 
 ---

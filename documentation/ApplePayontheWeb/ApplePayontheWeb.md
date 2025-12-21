@@ -81,6 +81,9 @@ For design guidance, see [`Human Interface Guidelines > Apple Pay`](https://deve
   Implement Apple Pay on the web using Apple’s JavaScript API.
 - [Payment Request API](payment-request-api.md)
   Accept payments on your website with Apple Pay using the Payment Request API.
+### Errors
+- [ApplePayError](applepayerror.md)
+  A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
 ### Apple Pay JS SDK change log
 - [Apple Pay JS change log](apple-pay-js-change-log.md)
   Learn about new features and updates in the Apple Pay JS SDK.

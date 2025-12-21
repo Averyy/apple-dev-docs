@@ -18,17 +18,6 @@ Creates an augmentation set with the given raw value.
 init(rawValue: Int)
 ```
 
-## See Also
-
-- [init()](mlimageclassifier/imageaugmentationoptions/init.md)
-  Creates an empty option set.
-- [init(arrayLiteral: Self.Element...)](mlimageclassifier/imageaugmentationoptions/init(arrayliteral:).md)
-  Creates a set containing the elements of the given array literal.
-- [init<S>(S)](mlimageclassifier/imageaugmentationoptions/init(_:).md)
-  Creates a new set from a finite sequence of items.
-- [let rawValue: Int](mlimageclassifier/imageaugmentationoptions/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-
 
 ---
 

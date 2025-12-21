@@ -6,10 +6,10 @@
 A visual effect that renders a glass material.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -20,11 +20,16 @@ class UIGlassEffect
 
 ## Topics
 
+### Initializers
+- [init(style: UIGlassEffect.Style)](uiglasseffect/init(style:).md)
+  Creates a glass effect with the specified style.
 ### Instance Properties
 - [var isInteractive: Bool](uiglasseffect/isinteractive.md)
   Enables interactive behavior for the glass effect.
 - [var tintColor: UIColor?](uiglasseffect/tintcolor.md)
   A tint color applied to the glass.
+### Enumerations
+- [UIGlassEffect.Style](uiglasseffect/style.md)
 
 ## Relationships
 

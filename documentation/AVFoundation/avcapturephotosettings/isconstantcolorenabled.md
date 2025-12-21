@@ -20,9 +20,9 @@ var isConstantColorEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to capture a constant color photo.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to capture a constant color photo.
 
-> ❗ **Important**:  Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false), results in the system throwing an exception.
+> ❗ **Important**:  Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) is [`false`](https://developer.apple.com/documentation/Swift/false), results in the system throwing an exception.
 
 ## See Also
 

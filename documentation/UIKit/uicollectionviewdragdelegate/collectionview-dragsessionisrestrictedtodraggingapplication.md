@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: UICollectionView, dragSessionIsRe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the source app and destination app should be the same — that is, the user is not allowed to drop the item on another app.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the source app and destination app should be the same — that is, the user is not allowed to drop the item on another app.
 
 #### Discussion
 
-If you don’t implement this method, the default return value is [`false`](https://developer.apple.com/documentation/swift/false).
+If you don’t implement this method, the default return value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

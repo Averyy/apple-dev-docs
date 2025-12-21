@@ -22,25 +22,19 @@ struct Fail<Output, Failure> where Failure : Error
 
 ## Topics
 
-### Creating a Fail Publisher
+### Creating a fail publisher
 - [init(error: Failure)](fail/init(error:).md)
   Creates a publisher that immediately terminates with the specified failure.
 - [init(outputType: Output.Type, failure: Failure)](fail/init(outputtype:failure:).md)
   Creates publisher with the given output type, that immediately terminates with the specified failure.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let error: Failure](fail/error.md)
   The failure to send when terminating the publisher.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Fail<Output, Failure>, Fail<Output, Failure>) -> Bool](fail/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](fail/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](fail-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](fail/equatable-implementations.md)
-- [Publisher Implementations](fail/publisher-implementations.md)
 
 ## Relationships
 

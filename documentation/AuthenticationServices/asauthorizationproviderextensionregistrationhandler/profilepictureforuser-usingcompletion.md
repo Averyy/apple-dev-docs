@@ -4,13 +4,17 @@
 **Kind**: method
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 optional func profilePictureForUser(using loginManager: ASAuthorizationProviderExtensionLoginManager) async -> Data
 ```
+
+#### Discussion
+
+Request the profile picture for the current user in jpeg format.
 
 
 ---

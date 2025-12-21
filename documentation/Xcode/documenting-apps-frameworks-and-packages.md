@@ -44,7 +44,7 @@ DocC combines the public API information from the Swift compiler and the Objecti
 To add a documentation catalog to an existing project, follow these steps:
 
 1. In Xcode, select your project or package in the Project navigator.
-2. Choose File > New > File to open the file template chooser.
+2. Choose File > New > File from Template.
 3. Select the Documentation Catalog template in the Documentation section and click Next.
 4. Enter a filename and click Create.
 

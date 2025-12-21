@@ -17,7 +17,7 @@ var preservesContentDuringLiveResize: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If your view supports content preservation, override this property and return [`true`](https://developer.apple.com/documentation/swift/true). Content preservation lets your view decide what to redraw during a live resize operation. If your view supports this feature, you should also provide a custom implementation of the [`setFrameSize(_:)`](nsview/setframesize(_:).md) method that invalidates the portions of your view that actually need to be redrawn.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). If your view supports content preservation, override this property and return [`true`](https://developer.apple.com/documentation/Swift/true). Content preservation lets your view decide what to redraw during a live resize operation. If your view supports this feature, you should also provide a custom implementation of the [`setFrameSize(_:)`](nsview/setframesize(_:).md) method that invalidates the portions of your view that actually need to be redrawn.
 
 For information on how to implement this feature in your views, see [`Cocoa Performance Guidelines`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaPerformance/CocoaPerformance.html#//apple_ref/doc/uid/TP40001448).
 

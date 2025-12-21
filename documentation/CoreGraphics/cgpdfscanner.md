@@ -8,7 +8,7 @@ A parser object for handling content and operators in a PDF content stream.
 
 You can set up the PDF scanner object to invoke callbacks when it encounters specific PDF operators in the stream.
 
-This object is not derived from `CFType`. In Objective-C, use [`CGPDFScannerRetain(_:)`](cgpdfscannerretain(_:).md) and [`CGPDFScannerRelease(_:)`](cgpdfscannerrelease(_:).md) to manage the retain count of [`CGPDFScannerRef`](cgpdfscannerref.md) instances; do not use [`CFRetain`](https://developer.apple.com/documentation/corefoundation/1521269-cfretain) and [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+This object is not derived from `CFType`. In Objective-C, use [`CGPDFScannerRetain(_:)`](cgpdfscannerretain(_:).md) and [`CGPDFScannerRelease(_:)`](cgpdfscannerrelease(_:).md) to manage the retain count of [`CGPDFScannerRef`](cgpdfscannerref.md) instances; do not use [`CFRetain`](https://developer.apple.com/documentation/CoreFoundation/CFRetain) and [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Topics
 

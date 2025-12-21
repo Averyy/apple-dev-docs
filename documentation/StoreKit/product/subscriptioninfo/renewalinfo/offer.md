@@ -28,7 +28,7 @@ This value is `nil` if there’s no subscription offer.
 ## See Also
 
 - [Transaction.Offer](transaction/offer-swift.struct.md)
-  The subscription offers that apply to a transaction.
+  Discounts or promotions that apply to a transaction.
 - [let eligibleWinBackOfferIDs: [String]](product/subscriptioninfo/renewalinfo/eligiblewinbackofferids.md)
   An array of strings that represent identifiers of win-back offers that the customer is eligible to redeem, sorted with the best offers first.
 

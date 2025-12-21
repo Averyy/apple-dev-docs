@@ -27,10 +27,6 @@ func encodeWithOptimizer(_ model: MultivariateLinearRegressor<Scalar>.Model, to 
 
 ## See Also
 
-- [func encode(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](multivariatelinearregressor/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/decodewithoptimizer(from:).md)
   Reads the encoded model and optimizer with a decoder.
 

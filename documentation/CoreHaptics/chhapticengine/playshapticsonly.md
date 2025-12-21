@@ -21,7 +21,7 @@ var playsHapticsOnly: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the engine to ignore all audio events, such as [`audioContinuous`](chhapticevent/eventtype/audiocontinuous.md) and [`audioCustom`](chhapticevent/eventtype/audiocustom.md). This also reduces latency of starting haptic playback.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) causes the engine to ignore all audio events, such as [`audioContinuous`](chhapticevent/eventtype/audiocontinuous.md) and [`audioCustom`](chhapticevent/eventtype/audiocustom.md). This also reduces latency of starting haptic playback.
 
 > ❗ **Important**:  Changing the value of this property on a running engine has no effect until you stop and restart the engine.
 

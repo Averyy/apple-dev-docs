@@ -33,8 +33,6 @@ For example, the pixel data for an image captured by an iOS device camera is enc
 
 The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
 
-Listing 1. Converting between CGImagePropertyOrientation and UIImageOrientation
-
 ##### Working with Raw Tiffexif Numeric Values
 
 Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](https://developer.apple.com/documentation/Swift/RawRepresentable/init(rawValue:)) initializer and [`rawValue`](https://developer.apple.com/documentation/Swift/RawRepresentable/rawValue-swift.property) property in Swift.

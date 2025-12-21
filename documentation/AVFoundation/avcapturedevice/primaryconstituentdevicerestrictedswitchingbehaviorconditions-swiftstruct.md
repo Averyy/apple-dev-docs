@@ -32,7 +32,7 @@ When the video zoom factor increases and crosses a camera’s switch-over zoom f
 
 ## Topics
 
-### Switching Behavior Conditions
+### Switching behavior conditions
 - [static var exposureModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/exposuremodechanged.md)
   Restrict switching to a fallback camera only when the device’s exposure mode changes.
 - [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/focusmodechanged.md)

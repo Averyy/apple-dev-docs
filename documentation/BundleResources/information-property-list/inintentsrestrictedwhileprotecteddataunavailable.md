@@ -23,6 +23,8 @@ To specify this information in Xcode, add the intent class name to your app targ
   The names of the intent classes your app can’t handle when the user locks the device.
 - [INSupportedMediaCategories](information-property-list/insupportedmediacategories.md)
   Types of media supported by your app’s media-playing intents.
+- [NSFocusStatusUsageDescription](information-property-list/nsfocusstatususagedescription.md)
+  A message that tells people why your app requests access to a person’s focus status.
 
 
 ---

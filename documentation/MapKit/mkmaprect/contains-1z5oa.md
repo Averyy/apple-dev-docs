@@ -22,7 +22,7 @@ func contains(_ rect2: MKMapRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `rect2` is `null` or lies entirely inside `rect1`; otherwise, returns [`false`](https://developer.apple.com/documentation/swift/false) if `rect1` is `null` or doesn’t completely enclose `rect2`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `rect2` is `null` or lies entirely inside `rect1`; otherwise, returns [`false`](https://developer.apple.com/documentation/Swift/false) if `rect1` is `null` or doesn’t completely enclose `rect2`.
 
 ## Parameters
 

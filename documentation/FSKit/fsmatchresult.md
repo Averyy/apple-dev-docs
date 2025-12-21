@@ -27,9 +27,6 @@ enum FSMatchResult
   The probe doesn’t recognize the resource.
 ### Working with raw values
 - [init?(rawValue: Int)](fsmatchresult/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsmatchresult/equatable-implementations.md)
-- [RawRepresentable Implementations](fsmatchresult/rawrepresentable-implementations.md)
 
 ## Relationships
 

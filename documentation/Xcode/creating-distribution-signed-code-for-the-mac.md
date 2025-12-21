@@ -145,7 +145,7 @@ You apply entitlements to a main executable. If your main executable needs entit
 
 If you build your product with Xcode, you might be able to use the `.entitlements` file that Xcode manages in your source code.  If not, create the `.entitlements` file yourself.
 
-> ❗ **Important**: The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues).
+> ❗ **Important**: The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues#3561456).
 
 If you have a development-signed version of your program, you can print its entitlements using the `codesign` command-line tool, and use that information as the basis for your entitlements property list file as the following example shows:
 
@@ -170,7 +170,7 @@ If you have a development-signed version of your program, you can print its enti
 If you use the entitlements from a development-signed version of your program to create the entitlements property list file for your distribution-signed code, consider the following changes to the entitlements:
 
 - Change the value of [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.aps-environment) from `development` to `production`.
-- The `com.apple.security.get-task-allow` entitlement allows the debugger to attach to your program, so you rarely apply it to a distribution-signed program. For more information, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues).
+- The `com.apple.security.get-task-allow` entitlement allows the debugger to attach to your program, so you rarely apply it to a distribution-signed program. For more information, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues#3087731).
 
 For any other entitlement, see the documentation for that specific entitlement in [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
 
@@ -197,7 +197,7 @@ macOS allows programs to claim certain entitlements without such authorization. 
 
 If your program claims a restricted entitlement, include a distribution provisioning profile to authorize that claim as follows:
 
-1. Create the profile on the developer website. For more information, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/). Make sure to choose a profile type that matches your distribution channel (Mac App Store or Developer ID).
+1. Create the profile on the developer website. For more information, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/). Make sure to choose a profile type that matches your distribution channel (Mac App Store or Developer ID).
 2. Copy that profile into your program’s bundle. For more information, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
 
 If your product includes a nonbundled executable that uses a restricted entitlement, package that executable in an app-like structure.  For more information, see [`Signing a daemon with a restricted entitlement`](signing-a-daemon-with-a-restricted-entitlement.md).
@@ -229,7 +229,7 @@ To ship a product that you signed for development, you need to re-sign it for di
 - To distribute an app on the Mac App Store, use an Apple Distribution code-signing identity.  This is named `Apple Distribution: <Team Name> (<Team ID>)`, where `<Team Name>` and `<Team ID>` identifies your team.
 - To distribute a product independently, use a Developer ID Application code-signing identity.  This is named `Developer ID Application: <Team ID>`, where `<Team ID>` identifies your team.
 
-For information on how to set up these code-signing identities, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/).
+For information on how to set up these code-signing identities, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
 
 To confirm that your code-signing identity is present and correct, run the following command:
 
@@ -240,7 +240,7 @@ To confirm that your code-signing identity is present and correct, run the follo
      2 valid identities found
 ```
 
-The `-p codesigning` argument filters for code-signing identities. The `-v` argument filters for valid identities only.  If the code-signing identity that you need isn’t listed, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/).
+The `-p codesigning` argument filters for code-signing identities. The `-v` argument filters for valid identities only.  If the code-signing identity that you need isn’t listed, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
 
 Each output line includes a SHA-1 hash that uniquely identifies the identity. If you have multiple identities with the same name, sign your code using this hash rather than the identity name.
 

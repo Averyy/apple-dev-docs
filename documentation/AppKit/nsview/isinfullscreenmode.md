@@ -17,7 +17,7 @@ var isInFullScreenMode: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the view is in full screen mode or [`false`](https://developer.apple.com/documentation/swift/false) when it is not.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the view is in full screen mode or [`false`](https://developer.apple.com/documentation/Swift/false) when it is not.
 
 ## See Also
 

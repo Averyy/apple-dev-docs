@@ -1,4 +1,4 @@
-# FamilyControls
+# Family Controls
 
 **Framework**: FamilyControls  
 **Kind**: module
@@ -35,15 +35,17 @@ In a compatible iPad or iPhone app running in visionOS, authorization attempts a
   The status of your app’s authorization to provide parental controls.
 - [Family Controls](../BundleResources/Entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
-### Account Types
+- [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
+  Register your app and its Screen Time API app extensions to use Family Controls.
+### Account types
 - [enum FamilyControlsMember](familycontrolsmember.md)
   The type of account that Family Controls is currently managing.
-### User-Selected Apps and Web Domains
+### Activity selections
 - [struct FamilyActivityPicker](familyactivitypicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [struct FamilyActivitySelection](familyactivityselection.md)
   A collection of applications, categories, and web domains selected by the user.
-### Activity Labels
+### Activity labels
 - [Displaying Activity Labels](displayingactivitylabels.md)
   Provide users with a read-only, visual representation of an application, category, or web domain.
 ### Errors

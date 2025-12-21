@@ -32,6 +32,8 @@ class MPSGraphCompilationDescriptor
   The optimization level for the graph execution, default is MPSGraphOptimizationLevel1.
 - [var optimizationProfile: MPSGraphOptimizationProfile](mpsgraphcompilationdescriptor/optimizationprofile.md)
   The optimization profile for the graph optimization.
+- [var reducedPrecisionFastMath: MPSGraphReducedPrecisionFastMath](mpsgraphcompilationdescriptor/reducedprecisionfastmath.md)
+  Across the executable allow reduced precision fast math optimizations.
 - [var waitForCompilationCompletion: Bool](mpsgraphcompilationdescriptor/waitforcompilationcompletion.md)
   Flag that makes the compile or specialize call blocking till the entire compilation is complete, defaults to NO.
 ### Instance Methods

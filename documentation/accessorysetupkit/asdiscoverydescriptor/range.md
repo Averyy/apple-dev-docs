@@ -24,9 +24,6 @@ enum Range
   The default range in which to discover accessories.
 - [ASDiscoveryDescriptor.Range.immediate](asdiscoverydescriptor/range/immediate.md)
   A range in the immediate vicinity of the device performing accessory discovery.
-### Default Implementations
-- [Equatable Implementations](asdiscoverydescriptor/range/equatable-implementations.md)
-- [RawRepresentable Implementations](asdiscoverydescriptor/range/rawrepresentable-implementations.md)
 
 ## Relationships
 

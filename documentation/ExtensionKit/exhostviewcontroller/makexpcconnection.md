@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: method
 
-Attempts to connect to the extension over XPC.
+Initiates an XPC connection to the app extension’s scene.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -18,16 +18,13 @@ Attempts to connect to the extension over XPC.
 func makeXPCConnection() throws -> NSXPCConnection
 ```
 
-#### Return Value
+## Mentions
 
-An object representing the connection.
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
 
-## See Also
+#### Discussion
 
-- [var delegate: (any EXHostViewControllerDelegate)?](exhostviewcontroller/delegate.md)
-  The connection delegate.
-- [protocol EXHostViewControllerDelegate](exhostviewcontrollerdelegate.md)
-  The delegate for a hosted view controller.
+Call this method from the [`hostViewControllerDidActivate(_:)`](exhostviewcontrollerdelegate/hostviewcontrollerdidactivate(_:).md) method to initiate a scene-specific connection to the app extension.
 
 
 ---

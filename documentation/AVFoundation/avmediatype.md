@@ -22,9 +22,10 @@ struct AVMediaType
 
 ## Topics
 
-### Media Types
+### Media types
 - [static let audio: AVMediaType](avmediatype/audio.md)
   The media contains audio media.
+- [static let auxiliaryPicture: AVMediaType](avmediatype/auxiliarypicture.md)
 - [static let closedCaption: AVMediaType](avmediatype/closedcaption.md)
   The media contains closed-caption content.
 - [static let depthData: AVMediaType](avmediatype/depthdata.md)
@@ -50,8 +51,6 @@ struct AVMediaType
   Creates a media type with a string.
 - [init(rawValue: String)](avmediatype/init(rawvalue:).md)
   Creates a media type with a raw string value.
-### Type Properties
-- [static let auxiliaryPicture: AVMediaType](avmediatype/auxiliarypicture.md)
 
 ## Relationships
 

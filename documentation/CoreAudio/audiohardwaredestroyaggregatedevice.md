@@ -15,6 +15,20 @@
 func AudioHardwareDestroyAggregateDevice(_ inDeviceID: AudioObjectID) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+This routine destroys the given AudioAggregateDevice.
+
+The actual destruction of the device is asynchronous and may take place after the call to this routine has returned.
+
+## Parameters
+
+- `inDeviceID`: The AudioObjectID of the AudioAggregateDevice to destroy.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

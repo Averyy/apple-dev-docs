@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an image that uses Graphics Interchange Format (GIF). See [`GIF Image Properties`](gif-image-properties.md).
+A dictionary of key-value pairs for an image that uses Graphics Interchange Format (GIF).
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an image that uses Graphics Interchange Form
 ```swift
 let kCGImagePropertyGIFDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`GIF Image Properties`](gif-image-properties.md).
 
 
 ---

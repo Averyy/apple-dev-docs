@@ -17,7 +17,7 @@ var bezelStyle: NSTextField.BezelStyle { get set }
 
 #### Discussion
 
-To enable a bezel for a text field, set [`isBezeled`](nstextfield/isbezeled.md) to [`true`](https://developer.apple.com/documentation/swift/true), then set the bezel style. See [`NSTextField.BezelStyle`](nstextfield/bezelstyle-swift.enum.md) for available bezel styles.
+To enable a bezel for a text field, set [`isBezeled`](nstextfield/isbezeled.md) to [`true`](https://developer.apple.com/documentation/Swift/true), then set the bezel style. See [`NSTextField.BezelStyle`](nstextfield/bezelstyle-swift.enum.md) for available bezel styles.
 
 > **Note**:  When you set this property to [`NSTextField.BezelStyle.roundedBezel`](nstextfield/bezelstyle-swift.enum/roundedbezel.md), the text field doesn’t wrap the text. It displays using a single line.
 

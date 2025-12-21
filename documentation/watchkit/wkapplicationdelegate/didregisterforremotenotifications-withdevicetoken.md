@@ -27,11 +27,11 @@ Typically, the system calls this method only after you call your [`WKApplication
 
 ## See Also
 
-- [@MainActor optional func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error)](../UIKit/UIApplicationDelegate/application(_:didFailToRegisterForRemoteNotificationsWithError:).md)
+- [func application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](../UIKit/UIApplicationDelegate/application(_:didFailToRegisterForRemoteNotificationsWithError:).md)
   Tells the delegate when Apple Push Notification service cannot successfully complete the registration process.
-- [@MainActor optional func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any])](../UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:).md)
+- [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any])](../UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:).md)
   Called when your app has received a remote notification.
-- [@MainActor func registerForRemoteNotifications()](../UIKit/UIApplication/registerForRemoteNotifications.md)
+- [func registerForRemoteNotifications()](../UIKit/UIApplication/registerForRemoteNotifications.md)
   Registers to receive remote notifications through Apple Push Notification service.
 - [func didFailToRegisterForRemoteNotificationsWithError(any Error)](wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:).md)
   Tells the delegate that Apple Push Notification service (APNs) can’t successfully complete the registration process.

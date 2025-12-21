@@ -52,6 +52,7 @@ let shapedArray3 = MLShapedArray(concatenating: [shapedArray1,shapedArray2],
 
 ## Parameters
 
+- `shapedArrays`: A sequence of shaped arrays.
 - `alongAxis`: A zero-based axis number the shaped arrays in   merge along.
 
 ## See Also

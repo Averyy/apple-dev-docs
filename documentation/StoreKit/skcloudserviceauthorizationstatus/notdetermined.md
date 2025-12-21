@@ -21,8 +21,8 @@ case notDetermined
 
 ## Mentions
 
-- [Requesting Access to Apple Music Library](requesting-access-to-apple-music-library.md)
 - [Determining a person’s Apple Music capabilities](determining-a-person-s-apple-music-capabilities.md)
+- [Requesting Access to Apple Music Library](requesting-access-to-apple-music-library.md)
 
 ## See Also
 

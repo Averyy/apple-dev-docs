@@ -93,7 +93,7 @@ Completion of the authentication flow authorizes the system to reinstall the app
 
 #### Reinstall an App From a Backup
 
-After the system restores your alternative marketplace app from a backup, it proceeds to reinstall the other apps from your marketplace. The system sends a POST to your `restores` endpoint with a header decorated with the access token. Your marketplace app adds the token to the header by implementing the [`MarketplaceExtension`](marketplaceextension.md) method [`additionalHeaders(for:account:)`](marketplaceextension/additionalheaders(for:account:).md). Then, your server reads the token in the request and determines the response:
+After the system restores your alternative marketplace app from a backup, it proceeds to reinstall the other apps from your marketplace. The system sends a POST to your `restores` endpoint with a header decorated with the access token. Your marketplace app adds the token to the header by implementing the [`MarketplaceAppExtension`](marketplaceappextension.md) method [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md). Then, your server reads the token in the request and determines the response:
 
 - If the access token is valid and the apps are available, return the apps for installation.
 - If the token is missing, respond from your marketplace server with an HTTP `401`.
@@ -112,14 +112,16 @@ After the person signs in, store the renewed access token locally. Call [`didAut
 
 #### Reauthenticate a Person in Your Marketplace App or Extension
 
-If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(with:)`](marketplaceextension/requestfailed(with:).md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) that enables the person to enter their credentials before retrying the update.
+If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) that enables the person to enter their credentials before retrying the update.
 
-[`MarketplaceExtension`](marketplaceextension.md) can’t present UI, so if your marketplace isn’t running, you can explore reauthenticating another way, such as by exchanging a refresh token for a renewed access token with your token endpoint.
+[`MarketplaceAppExtension`](marketplaceappextension.md) can’t present UI, so if your marketplace isn’t running, you can explore reauthenticating another way, such as by exchanging a refresh token for a renewed access token with your token endpoint.
 
-For example, if the system encounters an invalid access token while performing automatic background app updates, reauthorize the device in [`requestFailed(with:)`](marketplaceextension/requestfailed(with:).md) and return `true` to instruct the system to call your `restores` endpoint again. The system calls your marketplace extension’s [`additionalHeaders(for:account:)`](marketplaceextension/additionalheaders(for:account:).md) implementation and you supply the renewed access token to complete the update.
+For example, if the system encounters an invalid access token while performing automatic background app updates, reauthorize the device in [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) and return `true` to instruct the system to call your `restores` endpoint again. The system calls your marketplace extension’s [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md) implementation and you supply the renewed access token to complete the update.
 
 ## See Also
 
+- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+  Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
 - [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
   The entitlement that enables an app to vend other apps as an alternative app marketplace.
 - [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)

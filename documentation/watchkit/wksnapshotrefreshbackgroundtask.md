@@ -34,7 +34,7 @@ The system automatically schedules background snapshot request tasks when:
 - Your app updates the complication timeline
 - The user interacts with one of the apps notifications
 - The app transitions from the foreground to the background
-- One hour passes after the user’s last interaction with the app, then the `returnToGlanceableUI` property is set to [`true`](https://developer.apple.com/documentation/swift/true)
+- One hour passes after the user’s last interaction with the app, then the `returnToGlanceableUI` property is set to [`true`](https://developer.apple.com/documentation/Swift/true)
 
 These requests don’t cancel or replace any of your scheduled requests.
 

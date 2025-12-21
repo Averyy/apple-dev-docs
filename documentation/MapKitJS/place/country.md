@@ -11,12 +11,12 @@ The country or region of the place.
 ## Declaration
 
 ```swift
-attribute string? country;
+country?: string;
 ```
 
 #### Discussion
 
-For example, the [`country`](place/country.md) for the Golden Gate Park is “`United States”`.
+For example, the [`country`](place/country.md) for Golden Gate Park in San Francisco, California, is `"United States"`.
 
 ## See Also
 

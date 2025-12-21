@@ -3,20 +3,26 @@
 **Framework**: Network  
 **Kind**: method
 
+Specify a preference selecting the local addresses to use with outbound connections.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func localAddressPreference(_ val: NWProtocolIP.Options.AddressPreference) -> IP
+func localAddressPreference(_ preference: NWProtocolIP.Options.AddressPreference) -> IP
 ```
+
+## Parameters
+
+- `preference`: The local address preference to use.
 
 
 ---

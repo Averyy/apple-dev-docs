@@ -37,7 +37,7 @@ This method is mostly for use by subclasses which want to analyze the existing b
 - [struct NSBindingInfoKey](../AppKit/NSBindingInfoKey.md)
 - [func unbind(NSBindingName)](nsobject-swift.class/unbind(_:).md)
   Removes a given binding between the receiver and a controller.
-- [func NSIsControllerMarker(_ object: Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
+- [func NSIsControllerMarker(Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
 
 

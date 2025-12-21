@@ -14,7 +14,6 @@ Loads the document data into the app’s data model.
 ## Declaration
 
 ```swift
-@MainActor
 func load(fromContents contents: Any, ofType typeName: String?) throws
 ```
 

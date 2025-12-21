@@ -27,7 +27,7 @@ object AppPromotedPurchasesLinkagesRequest
 - [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
 - [object PromotedPurchaseUpdateRequest](promotedpurchaseupdaterequest.md)
 - [object AppPromotedPurchasesLinkagesResponse](apppromotedpurchaseslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 
 
 ---

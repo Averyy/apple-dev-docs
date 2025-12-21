@@ -22,8 +22,8 @@ protocol AVPlayerItemMetadataCollectorPushDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Accessing HLS Date Range Metadata
-- [func metadataCollector(AVPlayerItemMetadataCollector, didCollect: [AVDateRangeMetadataGroup], indexesOfNewGroups: IndexSet, indexesOfModifiedGroups: IndexSet)](avplayeritemmetadatacollectorpushdelegate/metadatacollector(_:didcollect:indexesofnewgroups:indexesofmodifiedgroups:).md)
+### Accessing HLS date range metadata
+- [func metadataCollector(AVPlayerItemMetadataCollector, didCollect: sending [AVDateRangeMetadataGroup], indexesOfNewGroups: IndexSet, indexesOfModifiedGroups: IndexSet)](avplayeritemmetadatacollectorpushdelegate/metadatacollector(_:didcollect:indexesofnewgroups:indexesofmodifiedgroups:).md)
   Tells the delegate the collected metadata group information has changed and needs to be updated.
 
 ## Relationships

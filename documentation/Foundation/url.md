@@ -22,10 +22,11 @@ struct URL
 
 ## Mentions
 
+- [Using the file system effectively](using-the-file-system-effectively.md)
+- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
+- [Downloading files from websites](downloading-files-from-websites.md)
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
 - [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
 
 #### Overview
 
@@ -34,6 +35,8 @@ You can construct URLs and access their parts. For URLs that represent local fil
 URLs are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept a URL instead of a pathname as the file reference. For example, you can get the contents of a local file URL as [`String`](https://developer.apple.com/documentation/Swift/String) by calling [`init(contentsOf:encoding:)`](https://developer.apple.com/documentation/Swift/String/init(contentsOf:encoding:)), or as a [`Data`](data.md) by calling [`init(contentsOf:options:)`](data/init(contentsof:options:).md).
 
 As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously access the contents of a [`URL`](url.md) through the [`resourceBytes`](url/resourcebytes.md) and [`lines`](url/lines.md) properties. These properties use the shared [`URLSession`](urlsession.md) instance to load the resource.
+
+`URL` defines a set of properties for common directories like [`documentsDirectory`](url/documentsdirectory.md) and [`cachesDirectory`](url/cachesdirectory.md), some of which have distinct behaviors for backup or automatic purging. To make the best use of these directories, see [`Using the file system effectively`](using-the-file-system-effectively.md).
 
 ## Topics
 
@@ -301,9 +304,6 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
   Given a url created by resolving a bookmark data created with security scope, make the resource referenced by the url accessible to the process.
 - [func stopAccessingSecurityScopedResource()](url/stopaccessingsecurityscopedresource.md)
   Revokes the access granted to the url by a prior successful call to the complementary start function.
-### Comparing URLs
-- [static func != (Self, Self) -> Bool](url/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Describing a URL
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](url/customplaygroundquicklook.md)
   A playground quicklook for the URL.
@@ -317,11 +317,6 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
 ### Using reference types
 - [class NSURL](nsurl.md)
   An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
-### Core Transferable support
-- [static var transferRepresentation: some TransferRepresentation](url/transferrepresentation.md)
-  The representation for importing and exporting an item using Core Transferable.
-- [typealias Representation](url/representation.md)
-  The data type for conformance with the Core Transferable framework.
 ### App Intents support
 - [static var defaultResolverSpecification: some ResolverSpecification](url/defaultresolverspecification.md)
   The default resolver specification that the App Intents framework uses.
@@ -337,10 +332,6 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
 ### Initializers
 - [init?(template: URL.Template, variables: [URL.Template.VariableName : URL.Template.Value])](url/init(template:variables:).md)
   Creates a new `URL` by expanding the RFC 6570 template and variables.
-### Default Implementations
-- [CustomURLRepresentationParameterConvertible Implementations](url/customurlrepresentationparameterconvertible-implementations.md)
-- [Equatable Implementations](url/equatable-implementations.md)
-- [Transferable Implementations](url/transferable-implementations.md)
 
 ## Relationships
 

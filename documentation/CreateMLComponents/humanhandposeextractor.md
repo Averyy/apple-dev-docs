@@ -27,14 +27,6 @@ struct HumanHandPoseExtractor
 ### Extracting the hand pose
 - [func applied(to: CIImage, eventHandler: EventHandler?) async throws -> [Pose]](humanhandposeextractor/applied(to:eventhandler:).md)
   Extracts human hand poses from a pixel buffer.
-### Type Aliases
-- [HumanHandPoseExtractor.Input](humanhandposeextractor/input.md)
-  The input type.
-- [HumanHandPoseExtractor.Output](humanhandposeextractor/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](humanhandposeextractor/customdebugstringconvertible-implementations.md)
-- [Transformer Implementations](humanhandposeextractor/transformer-implementations.md)
 
 ## Relationships
 
@@ -47,7 +39,7 @@ struct HumanHandPoseExtractor
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

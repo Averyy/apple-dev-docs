@@ -16,7 +16,7 @@ let kQLPreviewPropertyTextEncodingNameKey: CFString!
 
 #### Discussion
 
-The value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh object. Use IANA encodings like `UTF-8` for the associated value.
+The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. Use IANA encodings like `UTF-8` for the associated value.
 
 ## See Also
 

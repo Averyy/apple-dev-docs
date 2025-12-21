@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing over under video layout
+A value that represents over-under video layout.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

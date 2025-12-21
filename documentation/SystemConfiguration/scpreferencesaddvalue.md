@@ -16,7 +16,7 @@ func SCPreferencesAddValue(_ prefs: SCPreferences, _ key: CFString, _ value: CFP
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value was added; [`false`](https://developer.apple.com/documentation/swift/false) if the key already exists or if an error occurred.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value was added; [`false`](https://developer.apple.com/documentation/Swift/false) if the key already exists or if an error occurred.
 
 #### Discussion
 

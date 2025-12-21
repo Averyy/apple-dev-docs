@@ -6,23 +6,14 @@
 The optional details describing the unavailability of Wi-Fi Aware on the device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct WiFiAwareUnsupportedDetails
 ```
-
-## Topics
-
-### Creating an error
-- [init(from: any Decoder) throws](waerror/wifiawareunsupporteddetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/wifiawareunsupporteddetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

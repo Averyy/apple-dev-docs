@@ -23,7 +23,7 @@ var viewControllers: [UIViewController] { get set }
 
 The root view controller is at index `0` in the array, the back view controller is at index `n-2`, and the top controller is at index `n-1`, where `n` is the number of items in the array.
 
-Assigning a new array of view controllers to this property is equivalent to calling the [`setViewControllers(_:animated:)`](uinavigationcontroller/setviewcontrollers(_:animated:).md) method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/swift/false).
+Assigning a new array of view controllers to this property is equivalent to calling the [`setViewControllers(_:animated:)`](uinavigationcontroller/setviewcontrollers(_:animated:).md) method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

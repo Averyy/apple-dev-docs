@@ -23,7 +23,7 @@ var groups: [String : [any MTLFunction]]? { get set }
 
 The default value is `nil`.
 
-Metal’s default behavior is conservative, it assumes that your shader can call any linked function from every call site. If you know that the shader can only call a limited subset of functions at a call site, you can annotate those sites in the shader with a name of a group and then specify the list of functions for that call site using this property. Specifying call sites and callable functions more precisely can improve performance.
+The default behavior is conservative and assumes that your shader can call any linked function from every call site. If you know that the shader can only call a limited subset of functions at a call site, you can annotate those sites in the shader with a name of a group and then specify the list of functions for that call site using this property. Specifying call sites and callable functions more precisely can improve performance.
 
 For more information on how to specify call site groups, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 

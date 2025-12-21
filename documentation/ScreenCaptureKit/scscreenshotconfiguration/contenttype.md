@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: property
 
+A uniform type identifier that specifies the screenshot’s file format; HEIC, JPEG, or PNG.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

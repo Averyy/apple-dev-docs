@@ -28,6 +28,11 @@ The reduced tensor.
 
 - `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
 
+## See Also
+
+- [func any(alongAxes:keepRank:)](mltensor/any(alongaxes:keeprank:).md)
+  Computes logical OR on elements across the specified axes of a tensor where the scalar type of the tensor is expected to be Boolean.
+
 
 ---
 

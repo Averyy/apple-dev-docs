@@ -21,7 +21,7 @@ class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork], 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true), if the device supports Apple Pay and the user has added a compatible card; otherwise, NO.
+[`true`](https://developer.apple.com/documentation/Swift/true), if the device supports Apple Pay and the user has added a compatible card; otherwise, NO.
 
 #### Discussion
 

@@ -32,11 +32,6 @@ The format for these date and time styles is not exact because they depend on th
 - [DateFormatter.Style.medium](dateformatter/style/medium.md)
 - [DateFormatter.Style.long](dateformatter/style/long.md)
 - [DateFormatter.Style.full](dateformatter/style/full.md)
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
-- [DateFormatter.Style.full](dateformatter/style/full.md)
 ### Initializers
 - [init?(rawValue: UInt)](dateformatter/style/init(rawvalue:).md)
 

@@ -20,20 +20,8 @@ enum Illuminance
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Illuminance, IntentParameter<Value>.Illuminance) -> Bool](intentparameter/illuminance/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Illuminance.lux](intentparameter/illuminance/lux.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/illuminance/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/illuminance/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/illuminance/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/illuminance/equatable-implementations.md)
 
 ## Relationships
 

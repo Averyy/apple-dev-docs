@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 
 **Availability**:
 - iOS 18.1+
@@ -18,7 +18,7 @@ An array of country code strings that indicate the regions where your app suppor
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseCustomLink) API.
 
-Include an entry for each country code where your app supports custom links for external purchases.
+Include an entry for each country code where your app supports custom links for the communication and promotion of offers.
 
 Valid country codes include the European Union: Austria (`at`), Belgium (`be`), Bulgaria (`bg`), Croatia (`hr`), Cyprus (`cy`), Czechia (`cz`), Denmark (`dk`), Estonia (`ee`), Finland (`fi`), France (`fr`), Germany (`de`), Greece (`gr`), Hungary (`hu`), Ireland (`ie`), Italy (`it`), Latvia (`lv`), Lithuania (`lt`), Luxembourg (`lu`), Malta (`mt`), Netherlands (`nl`), Poland (`pl`), Portugal (`pt`), Romania (`ro`), Slovakia (`sk`), Slovenia (`si`), Spain (`es`), Sweden (`se`).
 
@@ -36,6 +36,8 @@ Valid country codes include the European Union: Austria (`at`), Belgium (`be`), 
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
 - [SKIncludeConsumableInAppPurchaseHistory](information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
+- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+  A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 
 
 ---

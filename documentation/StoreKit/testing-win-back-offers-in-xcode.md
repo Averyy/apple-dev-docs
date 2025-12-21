@@ -49,6 +49,8 @@ You can rerun the test without resetting any state values. Win-back offers that 
   Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 - [Testing refund requests](testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+  Validate your app’s handling of Ask To Buy in the testing environment.
 
 
 ---

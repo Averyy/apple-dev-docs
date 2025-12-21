@@ -20,6 +20,16 @@ The feature type.
 typealias Feature = MLShapedArray<Scalar>
 ```
 
+## See Also
+
+- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+  A trained multivariate linear regressor model.
+- [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
+  The annotation type.
+- [MultivariateLinearRegressor.Configuration](multivariatelinearregressor/configuration-swift.typealias.md)
+- [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
+  The transformer type created by this estimator.
+
 
 ---
 

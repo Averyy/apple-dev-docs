@@ -21,9 +21,9 @@ var preservesDepth: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the layer acts similarly to the `CATransformLayer` and has the same restrictions.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the layer acts similarly to the `CATransformLayer` and has the same restrictions.
 
-Default is [`false`](https://developer.apple.com/documentation/swift/false).
+Default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

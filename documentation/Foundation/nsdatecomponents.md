@@ -96,6 +96,7 @@ For more details, see [`Calendars, Date Components, and Calendar Units`](https:/
   Calendrical units such as year, month, day and hour.
 ### Instance Properties
 - [var dayOfYear: Int](nsdatecomponents/dayofyear.md)
+- [var isRepeatedDay: Bool](nsdatecomponents/isrepeatedday.md)
 
 ## Relationships
 

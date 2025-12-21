@@ -12,6 +12,10 @@
 var loginRequestHPKEPreSharedKeyID: Data? { get set }
 ```
 
+#### Discussion
+
+The PreSharedKey Id to be used for HPKE PSK for embedded login assertions.  This is required if the loginRequestHPKEPreSharedKey is set.
+
 
 ---
 

@@ -45,7 +45,7 @@ The corresponding value is an `kCFCalendarUnitSecond`. Equal to `kCFCalendarUnit
 - [static var NSWeekdayCalendarUnit: NSCalendar.Unit](nscalendar/unit/nsweekdaycalendarunit.md)
   Specifies the weekday unit.
 - [static var NSQuarterCalendarUnit: NSCalendar.Unit](nscalendar/unit/nsquartercalendarunit.md)
-  Specifies the quarter of the calendar as a [`second`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/second). In macOS 10.6 and earlier this was defined as equal to [`quarter`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/quarter). In macOS 10.7 and later it is defined as `(1 << 20)`.
+  Specifies the quarter unit.
 - [static var NSWeekOfMonthCalendarUnit: NSCalendar.Unit](nscalendar/unit/nsweekofmonthcalendarunit.md)
   Specifies the original week of a month calendar unit.
 - [static var NSWeekOfYearCalendarUnit: NSCalendar.Unit](nscalendar/unit/nsweekofyearcalendarunit.md)

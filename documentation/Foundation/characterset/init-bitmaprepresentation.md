@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize with a bitmap representation.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,14 @@
 ```swift
 init(bitmapRepresentation data: Data)
 ```
+
+#### Discussion
+
+This method is useful for creating a character set object with data from a file or other external data source.
+
+## Parameters
+
+- `data`: The bitmap representation.
 
 
 ---

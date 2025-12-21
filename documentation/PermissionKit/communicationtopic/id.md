@@ -6,11 +6,11 @@
 The topic’s unique identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,10 @@ static let id: String
 
 ## See Also
 
-- [init(personInformation: [CommunicationTopic.PersonInformation])](communicationtopic/init(personinformation:).md)
-  Creates a new topic.
-- [init(personInformation: [CommunicationTopic.PersonInformation], actions: Set<CommunicationTopic.Action>)](communicationtopic/init(personinformation:actions:).md)
-  Creates a new topic.
 - [var actions: Set<CommunicationTopic.Action>](communicationtopic/actions.md)
-  The specific communication action to be performed, if any.
-- [CommunicationTopic.Action](communicationtopic/action.md)
-  A communication action to be performed.
+  The communication actions the child wants to perform.
+- [var personInformation: [CommunicationTopic.PersonInformation]](communicationtopic/personinformation-swift.property.md)
+  Information about the people the child wants to communicate with.
 
 
 ---

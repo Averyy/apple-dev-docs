@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns if the script is an ISO 15924 script
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

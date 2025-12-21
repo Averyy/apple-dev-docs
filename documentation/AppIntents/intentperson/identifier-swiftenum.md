@@ -27,22 +27,9 @@ enum Identifier
   An identifier from the Contacts framework (see `CNContact.identifier`)
 - [IntentPerson.Identifier.applicationDefined(_:)](intentperson/identifier-swift.enum/applicationdefined(_:).md)
   An identifier specific to your app
-### Operators
-- [static func == (IntentPerson.Identifier, IntentPerson.Identifier) -> Bool](intentperson/identifier-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentPerson.Identifier.unknown](intentperson/identifier-swift.enum/unknown.md)
   Unknown identifier, as in the case where the `IntentPerson` simply wraps a `Handle`.
-### Instance Properties
-- [var hashValue: Int](intentperson/identifier-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentperson/identifier-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](intentperson/identifier-swift.enum/decodable-implementations.md)
-- [Encodable Implementations](intentperson/identifier-swift.enum/encodable-implementations.md)
-- [Equatable Implementations](intentperson/identifier-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,11 +6,11 @@
 A tool output provided back to the model.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,27 +21,14 @@ struct ToolOutput
 ## Topics
 
 ### Creating a tool output
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, toolName: String, segments: [Transcript.Segment])](transcript/tooloutput/init(id:toolname:segments:).md)
 ### Inspecting a tool output
-- [var id: String](transcript/tooloutput/id-swift.property.md)
+- [var id: String](transcript/tooloutput/id.md)
   A unique id for this tool output.
-- [Transcript.ToolOutput.ID](transcript/tooloutput/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var segments: [Transcript.Segment]](transcript/tooloutput/segments.md)
   Segments of the tool output.
 - [var toolName: String](transcript/tooloutput/toolname.md)
   The name of the tool that produced this output.
-### Encoding a tool output
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing tool outputs
-- [static func == (Transcript.ToolOutput, Transcript.ToolOutput) -> Bool](transcript/tooloutput/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/tooloutput/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/tooloutput/equatable-implementations.md)
 
 ## Relationships
 
@@ -58,7 +45,7 @@ struct ToolOutput
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)

@@ -4,9 +4,9 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ struct KeyboardDidHideMessage
 - [var endFrame: CGRect](uiresponder/keyboarddidhidemessage/endframe.md)
 - [var isLocal: Bool](uiresponder/keyboarddidhidemessage/islocal.md)
 - [var screen: UIScreen](uiresponder/keyboarddidhidemessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIResponder.KeyboardDidHideMessage) -> Notification](uiresponder/keyboarddidhidemessage/makenotification(_:).md)
 
 ## Relationships
 

@@ -24,14 +24,8 @@ static func > (lhs: Date, rhs: Date) -> Bool
 
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func >= (Self, Self) -> Bool](date/_=(_:_:)-8n5kd.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 - [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
-- [static func <= (Self, Self) -> Bool](date/_=(_:_:)-2m6jx.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [func compare(Date) -> ComparisonResult](date/compare(_:).md)
   Compares another date to this one.
 

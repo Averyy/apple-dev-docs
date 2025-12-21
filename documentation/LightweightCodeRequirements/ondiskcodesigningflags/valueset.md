@@ -22,19 +22,6 @@ struct ValueSet
 
 ## Topics
 
-### Initializers
-- [init(rawValue: Int64)](ondiskcodesigningflags/valueset/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: Int64](ondiskcodesigningflags/valueset/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [OnDiskCodeSigningFlags.ValueSet.ArrayLiteralElement](ondiskcodesigningflags/valueset/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [OnDiskCodeSigningFlags.ValueSet.Element](ondiskcodesigningflags/valueset/element.md)
-  The element type of the option set.
-- [OnDiskCodeSigningFlags.ValueSet.RawValue](ondiskcodesigningflags/valueset/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let isAdhocSigned: OnDiskCodeSigningFlags.ValueSet](ondiskcodesigningflags/valueset/isadhocsigned.md)
   The code is adhoc signed i.e. it contains a code directory and page hashes but no CMS signature.
@@ -54,11 +41,6 @@ struct ValueSet
   Code signing failures on page-in should be rejected as SIGBUS errors.
 - [static let terminatesOnCodeSigningFailure: OnDiskCodeSigningFlags.ValueSet](ondiskcodesigningflags/valueset/terminatesoncodesigningfailure.md)
   Code signing failures on page in should cause the process to be terminated.
-### Default Implementations
-- [Equatable Implementations](ondiskcodesigningflags/valueset/equatable-implementations.md)
-- [OptionSet Implementations](ondiskcodesigningflags/valueset/optionset-implementations.md)
-- [RawRepresentable Implementations](ondiskcodesigningflags/valueset/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](ondiskcodesigningflags/valueset/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -20,20 +20,9 @@ A device reference exists for every discovered device. Use it to create an [`HID
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceClient.DeviceReference, HIDDeviceClient.DeviceReference) -> Bool](hiddeviceclient/devicereference-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let deviceID: UInt64](hiddeviceclient/devicereference-swift.struct/deviceid.md)
   The unique ID for the associated HID device.
-- [var hashValue: Int](hiddeviceclient/devicereference-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hiddeviceclient/devicereference-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CustomStringConvertible Implementations](hiddeviceclient/devicereference-swift.struct/customstringconvertible-implementations.md)
-- [Equatable Implementations](hiddeviceclient/devicereference-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

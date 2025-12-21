@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: case
 
-The system is unable to load the propery value.
+The system is unable to load the property value.
 
 **Availability**:
 - iOS 4.0+

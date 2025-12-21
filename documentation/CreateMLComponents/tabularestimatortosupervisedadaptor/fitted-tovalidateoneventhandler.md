@@ -32,8 +32,8 @@ The a fitted tabular transformer.
 
 ## See Also
 
-- [TabularEstimatorToSupervisedAdaptor.Transformer](tabularestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

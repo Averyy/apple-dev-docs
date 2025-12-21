@@ -1,4 +1,4 @@
-# Improving Rendering Performance with Vertex Amplification
+# Improving rendering performance with vertex amplification
 
 **Framework**: Metal
 
@@ -12,7 +12,7 @@ With , you can encode drawing commands that process the same vertex multiple tim
 
 For example, you can use vertex amplification to implement cascaded shadow maps, with an amplification multiplier that’s equal to the number of cascade levels.
 
-Apps typically leverage vertex amplification to render the same vertices to different texture layers or to multiple viewports. For more information about these techniques, see [`Rendering to Multiple Texture Slices in a Draw Command`](rendering-to-multiple-texture-slices-in-a-draw-command.md) and [`Rendering to Multiple Viewports in a Draw Command`](rendering-to-multiple-viewports-in-a-draw-command.md).
+Apps typically leverage vertex amplification to render the same vertices to different texture layers or to multiple viewports. For more information about these techniques, see [`Rendering to multiple texture slices in a draw command`](rendering-to-multiple-texture-slices-in-a-draw-command.md) and [`Rendering to multiple viewports in a draw command`](rendering-to-multiple-viewports-in-a-draw-command.md).
 
 ##### Check Whether a Gpu Supports a Vertex Amplification Multiplier
 
@@ -34,7 +34,7 @@ The example above sets the descriptor’s [`maxVertexAmplificationCount`](mtlren
 
 Configure an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance to apply vertex amplification for subsequent rendering commands by calling its [`setVertexAmplificationCount(_:viewMappings:)`](mtlrendercommandencoder/setvertexamplificationcount(_:viewmappings:).md) method.
 
-Set the vertex amplification count parameter to a value that’s less than or equal to the [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property that configures the current render pipeline.
+Set the vertex amplification count parameter to a value that’s less than or equal to the [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property that configures the current render pipeline.
 
 You can also provide an array of [`MTLVertexAmplificationViewMapping`](mtlvertexamplificationviewmapping.md) instances as you configure vertex amplification. Apps typically provide view mappings to render to multiple textures or viewports with vertex amplification.
 
@@ -60,9 +60,9 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 }
 ```
 
-The GPU invokes the shader one time for each amplification ID. For each invocation, the GPU sets the parameter with the `[[amplification_id]]` to a unique value in the range `[0, amplification_count - 1]`. The GPU sets the parameter with the `[[amplification_count]]` attribute to the same amplification factor you configure the draw command to use for all invocations.
+The GPU invokes the shader one time for each amplification ID. For each invocation, the GPU sets the parameter with the `[[amplification_id]]` to a unique value in the range `[0, amplification_count - 1]`. The GPU sets the parameter with the `[[amplification_count]]` attribute to the same amplification factor you configure the draw command to use for all invocations.
 
-You can customize your shader’s behavior for each render pipeline instance with these parameters, which are `amp_id` and `amp_count` in these examples.
+You can customize your shader’s behavior for each render pipeline instance with these parameters, which are `amp_id` and `amp_count` in these examples.
 
 ```metal
 struct VertexOut
@@ -245,11 +245,11 @@ The total number of render pipelines instances is equal to the product of the ve
 
 ## See Also
 
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
   Set actions that define how a render pass loads and stores a render target.
 
 

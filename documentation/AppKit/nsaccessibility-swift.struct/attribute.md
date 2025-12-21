@@ -43,7 +43,7 @@ struct Attribute
 - [static let columns: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columns.md)
   The table’s columns (`NSArray`).
 - [static let containsProtectedContent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/containsprotectedcontent.md)
-  A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+  A flag that indicates whether the object contains protected content.
 - [static let contents: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/contents.md)
   Elements that represent the contents in the current element, such as the document view of a scroll view (`NSArray`).
 - [static let criticalValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/criticalvalue.md)
@@ -102,7 +102,7 @@ struct Attribute
 - [static let horizontalUnitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/horizontalunitdescription.md)
   The description of the layout view’s horizontal units (`NSString`).
 - [static let horizontalUnits: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/horizontalunits.md)
-  The units that the layout view uses for horizontal values (`NSString`). See Measurement unit attributes for possible values.
+  The units that the layout view uses for horizontal values (`NSString`).
 - [static let identifier: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/identifier.md)
   The identity of the element (`NSString`).
 - [static let incrementButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/incrementbutton.md)
@@ -125,7 +125,7 @@ struct Attribute
 - [static let markerGroupUIElement: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markergroupuielement.md)
   A marker group user interface element (`id`).
 - [static let markerType: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markertype.md)
-  The type of the marker (`NSString`). See Ruler Marker Type Values for possible values.
+  The type of the marker (`NSString`).
 - [static let markerTypeDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markertypedescription.md)
   The description of the marker type (`NSString`).
 - [static let markerUIElements: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markeruielements.md)
@@ -153,9 +153,9 @@ struct Attribute
 - [static let numberOfCharacters: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/numberofcharacters.md)
   The number of characters in the text (`NSNumber`).
 - [static let orderedByRow: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/orderedbyrow.md)
-  A flag that indicates whether the grid is ordered row major ([`true`](https://developer.apple.com/documentation/swift/true)), or column major ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+  A flag that indicates whether the grid is in row major or column major order.
 - [static let orientation: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/orientation.md)
-  The element’s orientation, which can have the value [`horizontal`](nsaccessibility-swift.struct/orientationvalue/horizontal.md) or  [`vertical`](nsaccessibility-swift.struct/orientationvalue/vertical.md).
+  The element’s orientation.
 - [static let overflowButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/overflowbutton.md)
   The element that represents a toolbar’s overflow button (`id`).
 - [static let parent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/parent.md)
@@ -214,7 +214,7 @@ struct Attribute
 - [static let size: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/size.md)
   The element’s size in points (`NSValue`).
 - [static let sortDirection: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/sortdirection.md)
-  The column’s sort direction (`NSString`). See Column Sort Direction  for possible values.
+  The column’s sort direction (`NSString`).
 - [static let splitters: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/splitters.md)
   The views and splitter bar in a split view (`NSArray`).
 - [static let subrole: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/subrole.md)
@@ -233,7 +233,7 @@ struct Attribute
 - [static let unitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/unitdescription.md)
   The description of ruler units (`NSString`).
 - [static let units: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/units.md)
-  The ruler units (`NSString`). See Measurement Unit Attributes for possible values.
+  The ruler units (`NSString`).
 - [static let url: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/url.md)
   The URL associated with the element (`NSURL`).
 - [static let value: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/value.md)
@@ -245,7 +245,7 @@ struct Attribute
 - [static let verticalUnitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/verticalunitdescription.md)
   The description of the layout view’s vertical units (`NSString`).
 - [static let verticalUnits: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/verticalunits.md)
-  The units that the layout view uses for vertical values (`NSString`). See Measurement unit attributes for possible values.
+  The units that the layout view uses for vertical values (`NSString`).
 - [static let visibleCells: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visiblecells.md)
   The table’s visible cells (`NSArray`). This attribute is required for cell-based tables.
 - [static let visibleCharacterRange: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visiblecharacterrange.md)

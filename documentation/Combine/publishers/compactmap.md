@@ -22,24 +22,22 @@ struct CompactMap<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Compact Map Publisher
+### Creating a compact map publisher
 - [init(upstream: Upstream, transform: (Upstream.Output) -> Output?)](publishers/compactmap/init(upstream:transform:).md)
   Creates a publisher that republishes all non-`nil` results of calling a closure with each received element.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.CompactMap.Failure](publishers/compactmap/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Mapping elements
+- [func map<T>((Output) -> T) -> Publishers.CompactMap<Upstream, T>](publishers/compactmap/map(_:).md)
+- [func compactMap<T>((Output) -> T?) -> Publishers.CompactMap<Upstream, T>](publishers/compactmap/compactmap(_:).md)
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/compactmap/upstream.md)
   The publisher from which this publisher receives elements.
 - [let transform: (Upstream.Output) -> Output?](publishers/compactmap/transform.md)
   A closure that receives values from the upstream publisher and returns optional values.
-### Applying Operators
-- [Publisher Operators](publishers-compactmap-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/compactmap/publisher-implementations.md)
 
 ## Relationships
 

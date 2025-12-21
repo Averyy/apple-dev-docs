@@ -39,20 +39,8 @@ enum GenericDeviceControlsUsage
 - [HIDUsage.GenericDeviceControlsUsage.softwareVersion](hidusage/genericdevicecontrolsusage/softwareversion.md)
 - [HIDUsage.GenericDeviceControlsUsage.wirelessChannel](hidusage/genericdevicecontrolsusage/wirelesschannel.md)
 - [HIDUsage.GenericDeviceControlsUsage.wirelessID](hidusage/genericdevicecontrolsusage/wirelessid.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/genericdevicecontrolsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/genericdevicecontrolsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.GenericDeviceControlsUsage.RawValue](hidusage/genericdevicecontrolsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/genericdevicecontrolsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/genericdevicecontrolsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/genericdevicecontrolsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

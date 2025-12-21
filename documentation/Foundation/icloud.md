@@ -13,7 +13,7 @@ Manage files and key-value data that automatically synchronize among a user’s 
   The interface a file manager’s delegate uses to intervene during operations or if an error occurs.
 ### App Preferences
 - [class NSUbiquitousKeyValueStore](nsubiquitouskeyvaluestore.md)
-  An iCloud-based container of key-value pairs you use to share data among instances of your app running on a user’s connected devices.
+  An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 ### File Search
 - [class NSMetadataQuery](nsmetadataquery.md)
   A query that you perform against Spotlight metadata.
@@ -42,8 +42,8 @@ Manage files and key-value data that automatically synchronize among a user’s 
   Create, read, write, and examine files and folders in the file system.
 - [Archives and Serialization](archives-and-serialization.md)
   Convert objects and values to and from property list, JSON, and other flat binary representations.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [Spotlight](spotlight.md)
   Search for files and other items on the local device, and index your app’s content for searching.
 - [Optimizing Your App’s Data for iCloud Backup](optimizing-your-app-s-data-for-icloud-backup.md)

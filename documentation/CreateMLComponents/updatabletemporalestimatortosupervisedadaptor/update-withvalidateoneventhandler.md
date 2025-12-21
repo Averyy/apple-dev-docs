@@ -36,8 +36,8 @@ func update<InputSequence, Validation, FeatureSequence>(_ transformer: inout Upd
   Creates a default-initialized transformer suitable for incremental fitting.
 - [func update<InputSequence, FeatureSequence>(inout UpdatableTemporalEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](updatabletemporalestimatortosupervisedadaptor/update(_:with:eventhandler:).md)
   Updates a transformer with a new sequence of examples.
-- [UpdatableTemporalEstimatorToSupervisedAdaptor.Transformer](updatabletemporalestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

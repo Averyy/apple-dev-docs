@@ -19,7 +19,7 @@ var wantsSoftwareDimming: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Enabling it may cause a loss in performance.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Enabling it may cause a loss in performance.
 
 ## See Also
 

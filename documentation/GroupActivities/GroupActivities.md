@@ -29,7 +29,7 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 ### Activity definition
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.
@@ -66,8 +66,7 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
-- [nonisolated func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](../SwiftUI/View/groupActivityAssociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

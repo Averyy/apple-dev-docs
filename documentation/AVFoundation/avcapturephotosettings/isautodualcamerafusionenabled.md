@@ -18,11 +18,11 @@ var isAutoDualCameraFusionEnabled: Bool { get set }
 
 #### Discussion
 
-The default setting is [`true`](https://developer.apple.com/documentation/swift/true), unless you are capturing a RAW photo. (By definition, RAW photos are unprocessed, and image fusion involves processing the captured image).
+The default setting is [`true`](https://developer.apple.com/documentation/Swift/true), unless you are capturing a RAW photo. (By definition, RAW photos are unprocessed, and image fusion involves processing the captured image).
 
 When you enable this setting, a dual-camera device automatically combines samples from both cameras to produce a higher quality image. This property applies only when using the [`builtInDualCamera`](avcapturedevice/devicetype-swift.struct/builtindualcamera.md) device type on supported devices.
 
-> 💡 **Tip**:  Image processing, including dual camera fusion, increases capture time. To capture photos at the highest possible speed (like in the built-in Camera app’s burst mode), set the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) and [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) properties to [`false`](https://developer.apple.com/documentation/swift/false) and the [`flashMode`](avcapturephotosettings/flashmode.md) property to [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md).
+> 💡 **Tip**:  Image processing, including dual camera fusion, increases capture time. To capture photos at the highest possible speed (like in the built-in Camera app’s burst mode), set the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) and [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) properties to [`false`](https://developer.apple.com/documentation/Swift/false) and the [`flashMode`](avcapturephotosettings/flashmode.md) property to [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md).
 
 ## See Also
 

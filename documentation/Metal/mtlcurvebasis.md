@@ -50,6 +50,7 @@ enum MTLCurveBasis
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)
 - [class MTL4AccelerationStructureBoundingBoxGeometryDescriptor](mtl4accelerationstructureboundingboxgeometrydescriptor.md)

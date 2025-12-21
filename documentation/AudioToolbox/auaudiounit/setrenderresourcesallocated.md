@@ -21,7 +21,7 @@ func setRenderResourcesAllocated(_ flag: Bool)
 
 #### Discussion
 
-In the base class implementation of the [`allocateRenderResources()`](auaudiounit/allocaterenderresources().md) method, the value of the [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true). If the [`allocateRenderResources()`](auaudiounit/allocaterenderresources().md) method fails in a subclass, you must use this method to set the value of the [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+In the base class implementation of the [`allocateRenderResources()`](auaudiounit/allocaterenderresources().md) method, the value of the [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true). If the [`allocateRenderResources()`](auaudiounit/allocaterenderresources().md) method fails in a subclass, you must use this method to set the value of the [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

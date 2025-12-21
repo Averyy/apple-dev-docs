@@ -17,11 +17,11 @@ func textShouldBeginEditing(_ textObject: NSText) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if editing can begin; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if editing can begin; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the text field isn’t editable, this method returns [`false`](https://developer.apple.com/documentation/swift/false) immediately. If the text field is editable and its delegate responds to [`control(_:textShouldBeginEditing:)`](nscontroltexteditingdelegate/control(_:textshouldbeginediting:).md), this method invokes that method and returns the result. Otherwise, it returns [`true`](https://developer.apple.com/documentation/swift/true) to allow editing to occur. See [`NSControl`](nscontrol.md) for more information about the text delegate method.
+If the text field isn’t editable, this method returns [`false`](https://developer.apple.com/documentation/Swift/false) immediately. If the text field is editable and its delegate responds to [`control(_:textShouldBeginEditing:)`](nscontroltexteditingdelegate/control(_:textshouldbeginediting:).md), this method invokes that method and returns the result. Otherwise, it returns [`true`](https://developer.apple.com/documentation/Swift/true) to allow editing to occur. See [`NSControl`](nscontrol.md) for more information about the text delegate method.
 
 ## Parameters
 

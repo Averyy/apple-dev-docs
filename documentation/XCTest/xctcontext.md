@@ -13,8 +13,8 @@ class XCTContext
 
 ## Mentions
 
-- [Grouping Tests into Substeps with Activities](grouping-tests-into-substeps-with-activities.md)
 - [Adding Attachments to Tests, Activities, and Issues](adding-attachments-to-tests-activities-and-issues.md)
+- [Grouping Tests into Substeps with Activities](grouping-tests-into-substeps-with-activities.md)
 
 #### Overview
 

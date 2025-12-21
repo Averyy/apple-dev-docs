@@ -3,22 +3,17 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-A result format description for overriding on AVMutableMovie video track, which will convert asset to ParametricImmersive asset. Use `replaceFormatDescription` to replace the format description on the `AVMutableMovieTrack`.
+A result format descriptor for overriding a mutable video track that’s used to convert the asset to parametric immersive asset. Use `replaceFormatDescription` to replace the format description on the `AVMutableMovieTrack`.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var requiredFormatDescription: CMFormatDescription? { get }
 ```
-
-## See Also
-
-- [var isConvertible: Bool?](parametricimmersiveassetinfo/isconvertible.md)
-  A result Boolean value that indicates whether the asset can be converted to ParametricImmersive or not. If opt-out `computeFormatDescription` in the init, this boolean shows if asset is potentially convertible.
 
 
 ---

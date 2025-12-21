@@ -21,9 +21,9 @@ var apportionsSegmentWidthsByContent: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), for segments whose width value is `0`, the control attempts to adjust segment widths based on their content widths.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), for segments whose width value is `0`, the control attempts to adjust segment widths based on their content widths.
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

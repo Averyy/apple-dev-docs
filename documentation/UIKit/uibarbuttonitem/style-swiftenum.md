@@ -27,7 +27,6 @@ enum Style
   A simple button style with a border.
 - [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
   A button style for a done button.
-### Enumeration Cases
 - [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
   A button item style for a prominent button.
 ### Initializers

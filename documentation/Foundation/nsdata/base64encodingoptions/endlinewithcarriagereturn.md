@@ -28,12 +28,6 @@ static var endLineWithCarriageReturn: NSData.Base64EncodingOptions { get }
   Set the maximum line length to 76 characters, after which a line ending is inserted.
 - [static var endLineWithLineFeed: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/endlinewithlinefeed.md)
   When a maximum line length is set, specify that the line ending to insert should include a line feed.
-- [static var lineLength64Characters: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/linelength64characters.md)
-  Set the maximum line length to 64 characters, after which a line ending is inserted.
-- [static var lineLength76Characters: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/linelength76characters.md)
-  Set the maximum line length to 76 characters, after which a line ending is inserted.
-- [static var endLineWithLineFeed: NSData.Base64EncodingOptions](nsdata/base64encodingoptions/endlinewithlinefeed.md)
-  When a maximum line length is set, specify that the line ending to insert should include a line feed.
 
 
 ---

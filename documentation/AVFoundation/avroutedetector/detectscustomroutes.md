@@ -19,7 +19,7 @@ var detectsCustomRoutes: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Only set it to [`true`](https://developer.apple.com/documentation/swift/true) if your app uses an instance of [`AVCustomRoutingController`](https://developer.apple.com/documentation/AVRouting/AVCustomRoutingController).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Only set it to [`true`](https://developer.apple.com/documentation/Swift/true) if your app uses an instance of [`AVCustomRoutingController`](https://developer.apple.com/documentation/AVRouting/AVCustomRoutingController).
 
 ## See Also
 

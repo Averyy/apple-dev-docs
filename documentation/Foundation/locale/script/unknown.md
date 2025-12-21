@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Represents an uncoded script
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

@@ -24,7 +24,7 @@ func getBytes(_ pixelBytes: UnsafeMutableRawPointer, bytesPerRow: Int, from regi
 
 > ❗ **Important**:  Don’t use this method for textures where [`storageMode`](mtlresource/storagemode.md) is [`MTLStorageMode.private`](mtlstoragemode/private.md). Instead, copy data from the private texture with an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) to another texture accessible from the CPU, and then call this method on the accessible texture.
 
-This method runs on the CPU and immediately copies the pixel data from the texture to system memory but doesn’t synchronize with any GPU texture accesses. Ensure all operations that write or render to the texture complete before reading the texture’s contents, using one of the following methods:
+This method runs on the CPU and immediately copies the pixel data from the texture to system memory, but it doesn’t synchronize with any GPU texture memory operations. Ensure all operations that write or render to the texture complete before reading the texture’s contents using one of the following methods:
 
 - Synchronize on the GPU with a [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) or [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) command in an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md).
 - Synchronize on the CPU with a callback passed to the [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md) method to handle completion asynchronously, or the [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) method to block thread execution until the GPU work completes.

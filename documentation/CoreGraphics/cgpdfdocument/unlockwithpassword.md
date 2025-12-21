@@ -22,15 +22,15 @@ func unlockWithPassword(_ password: UnsafePointer<CChar>) -> Bool
 
 #### Return Value
 
-A Boolean that, if [`true`](https://developer.apple.com/documentation/swift/true), indicates that the document has been successfully unlocked. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the document has not been unlocked.
+A Boolean that, if [`true`](https://developer.apple.com/documentation/Swift/true), indicates that the document has been successfully unlocked. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the document has not been unlocked.
 
 #### Discussion
 
 Given an encrypted PDF document and a password, this function does the following:
 
 - Sets the lock state of the document, based on the validity of the password.
-- Returns [`true`](https://developer.apple.com/documentation/swift/true) if the document is unlocked.
-- Returns [`false`](https://developer.apple.com/documentation/swift/false) if the document cannot be unlocked with the specified password.
+- Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the document is unlocked.
+- Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the document cannot be unlocked with the specified password.
 
 Unlocking a PDF document makes it possible to decrypt the document and perform other privileged operations. Different passwords enable different operations.
 

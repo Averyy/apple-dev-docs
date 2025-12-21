@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize a `Data` with the contents of a `URL`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,15 @@
 ```swift
 init(contentsOf url: URL, options: Data.ReadingOptions = []) throws
 ```
+
+#### Discussion
+
+> **Note**: An error in the Cocoa domain, if `url` cannot be read.
+
+## Parameters
+
+- `url`: The   to read.
+- `options`: Options for the read operation. Default value is  .
 
 
 ---

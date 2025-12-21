@@ -6,7 +6,7 @@
 The behavior to apply to the object’s transform when someone releases it.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

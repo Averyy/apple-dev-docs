@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Overridden by subclasses to return [`true`](https://developer.apple.com/documentation/swift/true) if the view should be sent a [`mouseDown(with:)`](nsresponder/mousedown(with:).md) message for an initial mouse-down event, [`false`](https://developer.apple.com/documentation/swift/false) if not.
+Returns a Boolean value that indicates whether the view accepts the initial mouse-down event.
 
 **Availability**:
 - macOS ?+
@@ -17,7 +17,9 @@ func acceptsFirstMouse(for event: NSEvent?) -> Bool
 
 #### Discussion
 
-The view can either return a value unconditionally or use the location of `theEvent` to determine whether or not it wants the event. The default implementation ignores `theEvent` and returns [`false`](https://developer.apple.com/documentation/swift/false).
+Subclasses can override this method to return [`true`](https://developer.apple.com/documentation/Swift/true) if the view should be sent a [`mouseDown(with:)`](nsresponder/mousedown(with:).md) message for an initial mouse-down event, [`false`](https://developer.apple.com/documentation/Swift/false) if not.
+
+The view can either return a value unconditionally or use the location of `event` to determine whether or not it wants the event. The default implementation ignores `event` and returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Override this method in a subclass to allow instances to respond to click-through. This allows the user to click on a view in an inactive window, activating the view with one click, instead of clicking first to make the window active and then clicking the view. Most view objects refuse a click-through attempt, so the event simply activates the window. Many control objects, however, such as instances of [`NSButton`](nsbutton.md) and [`NSSlider`](nsslider.md), do accept them, so the user can immediately manipulate the control without having to release the mouse button.
 

@@ -17,9 +17,9 @@ var isRunning: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application is running, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the application is running, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-This may be [`true`](https://developer.apple.com/documentation/swift/true) for instances initialized with a bundle identifier or URL because `SBApplication` launches the application only when it’s necessary to send it an event.
+This may be [`true`](https://developer.apple.com/documentation/Swift/true) for instances initialized with a bundle identifier or URL because `SBApplication` launches the application only when it’s necessary to send it an event.
 
 ## See Also
 

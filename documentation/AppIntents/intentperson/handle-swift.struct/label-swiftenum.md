@@ -34,19 +34,6 @@ enum Label
 - [IntentPerson.Handle.Label.work](intentperson/handle-swift.struct/label-swift.enum/work.md)
 - [IntentPerson.Handle.Label.workFax](intentperson/handle-swift.struct/label-swift.enum/workfax.md)
 - [IntentPerson.Handle.Label.custom(_:)](intentperson/handle-swift.struct/label-swift.enum/custom(_:).md)
-### Operators
-- [static func == (IntentPerson.Handle.Label, IntentPerson.Handle.Label) -> Bool](intentperson/handle-swift.struct/label-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentperson/handle-swift.struct/label-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentperson/handle-swift.struct/label-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](intentperson/handle-swift.struct/label-swift.enum/decodable-implementations.md)
-- [Encodable Implementations](intentperson/handle-swift.struct/label-swift.enum/encodable-implementations.md)
-- [Equatable Implementations](intentperson/handle-swift.struct/label-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

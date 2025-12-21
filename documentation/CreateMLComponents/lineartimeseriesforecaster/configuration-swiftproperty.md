@@ -20,6 +20,13 @@ The configuration.
 let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration
 ```
 
+## See Also
+
+- [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
+  The number of predicted samples.
+- [var inputWindowSize: Int](lineartimeseriesforecaster/inputwindowsize.md)
+  The number of input samples.
+
 
 ---
 

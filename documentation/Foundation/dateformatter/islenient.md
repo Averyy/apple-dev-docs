@@ -22,7 +22,7 @@ var isLenient: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been set to use heuristics when parsing a string to guess at the date which is intended, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has been set to use heuristics when parsing a string to guess at the date which is intended, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If a formatter is set to be lenient, when parsing a string it uses heuristics to guess at the date which is intended. As with any guessing, it may get the result date wrong (that is, a date other than that which was intended).
 

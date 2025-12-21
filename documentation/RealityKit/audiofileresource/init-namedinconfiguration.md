@@ -10,7 +10,7 @@ Initializes an AudioFileResource asynchronously.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -26,7 +26,7 @@ Initializes an AudioFileResource asynchronously.
 
 ## See Also
 
-- [convenience(named:from:in:)](audiofileresource/init(named:from:in:).md)
+- [convenience init(named: String, from: String, in: Bundle?) async throws](audiofileresource/init(named:from:in:).md)
   Initializes a preconfigured AudioFileResource asynchronously from a Reality Composer Pro project with the given `name` as the the prim-path of the AudioFile, and the `scene` as the name of the USD file name.
 
 

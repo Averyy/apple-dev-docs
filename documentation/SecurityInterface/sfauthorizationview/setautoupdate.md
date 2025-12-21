@@ -23,14 +23,10 @@ If autoupdates are enabled and the authorization times out (for example), the au
 
 - `autoupdate`: Specifies whether the authorization view should update itself automatically. Set to   to enable autoupdates.
 
-## Topics
-
-### Related Documentation
-- [func updateStatus(Any!) -> Bool](sfauthorizationview/updatestatus(_:).md)
-  Manually updates the authorization view.
-
 ## See Also
 
+- [func updateStatus(Any!) -> Bool](sfauthorizationview/updatestatus(_:).md)
+  Manually updates the authorization view.
 - [func setString(AuthorizationString!)](sfauthorizationview/setstring(_:).md)
   Sets the requested-right string to use with the default authorization rights set.
 - [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](sfauthorizationview/setauthorizationrights(_:).md)

@@ -1,9 +1,9 @@
-# !=(_:_:)
+# FinanceError.unknown
 
 **Framework**: FinanceKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An unknown error occurred.
 
 **Availability**:
 - iOS 17.0+
@@ -13,21 +13,16 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [case dataRestricted(FinanceStore.DataType)](financeerror/datarestricted(_:).md)
+  The data is in a restricted state.
+- [FinanceError.historyTokenInvalid](financeerror/historytokeninvalid.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/financekit/financeerror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/financekit/financeerror/unknown)*

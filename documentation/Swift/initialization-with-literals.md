@@ -34,7 +34,7 @@ Allow values of your type to be expressed using different kinds of literals.
 - [protocol StringInterpolationProtocol](stringinterpolationprotocol.md)
   Represents the contents of a string literal with interpolations while it’s being built up.
 - [struct DefaultStringInterpolation](defaultstringinterpolation.md)
-  Represents a string literal with interpolations while it is being built up.
+  Represents a string literal with interpolations while it’s being built up.
 ### Default Types for Literals
 - [Default Literal Types](default-literal-types.md)
   Type aliases representing the concrete type that a literal takes when no other type information is provided.

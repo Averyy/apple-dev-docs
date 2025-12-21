@@ -16,13 +16,13 @@ func type(_ firstTypeName: String, conformsToType secondTypeName: String) -> Boo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `firstTypeName` conforms to the UTI hierarchy of `secondTypeName`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `firstTypeName` conforms to the UTI hierarchy of `secondTypeName`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Use this method instead of comparing UTIs for equality. See [`Uniform Type Identifiers Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319) for information about UTI conformance.
 
-This method will always return [`true`](https://developer.apple.com/documentation/swift/true) if the two strings are equal. Use this method with other type names, including those in the [`CFBundleTypeName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes/CFBundleTypeName) keys of your app’s `Info.plist` file.
+This method will always return [`true`](https://developer.apple.com/documentation/Swift/true) if the two strings are equal. Use this method with other type names, including those in the [`CFBundleTypeName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes/CFBundleTypeName) keys of your app’s `Info.plist` file.
 
 You can safely call this method from any thread of your app.
 

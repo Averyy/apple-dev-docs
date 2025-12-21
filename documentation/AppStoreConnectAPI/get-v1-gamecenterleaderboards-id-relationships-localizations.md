@@ -8,19 +8,23 @@
 
 ## See Also
 
+- [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)
+  Get information about a specific Game Center leaderboard.
+- [List all versions for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
+  Get a list of versions for a specific Game Center leaderboard.
+- [Get all version IDs for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
+  Get a list of version resource IDs for a specific Game Center leaderboard.
+- [Read leaderboard information](get-v1-gamecenterleaderboards-_id_.md)
+  Read information about a specific leaderboard.
+- [Read group information for a leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
+  Read the group leadboard to which a leaderboard belongs.
 - [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
-- [Read leaderboard localization information](get-v1-gamecenterleaderboardlocalizations-_id_.md)
-  Get information about a leaderboard localization.
-- [Read the image for a leaderboard localization](get-v1-gamecenterleaderboardlocalizations-_id_-gamecenterleaderboardimage.md)
-  Get information about the image associated with a leaderboard localization.
-- [GET /v1/gameCenterLeaderboardLocalizations/{id}/relationships/gameCenterLeaderboardImage](get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)
-- [Create a leaderboard localization](post-v1-gamecenterleaderboardlocalizations.md)
-  Add a new leaderboard localization.
-- [Modify a leaderboard localization](patch-v1-gamecenterleaderboardlocalizations-_id_.md)
-  Edit a leaderboard localization.
-- [Delete a leaderboard localization](delete-v1-gamecenterleaderboardlocalizations-_id_.md)
-  Delete a localization that’s associated with a leaderboard.
+- [List all groups to which a leaderboard belongs ](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+  List associated group leaderboards for a specific leaderboard.
+- [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
+  Read the state of releases for a leaderboard and related information.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 
 
 ---

@@ -21,7 +21,7 @@ var isDepthDataDeliverySupported: Bool { get }
 
 Depth data captures a per-pixel map of scene depth information delivered alongside the photo image and optionally embedded in image file output. Depth data can be used for purposes such as applying depth-sensitive photo filter effects (like that seen in the iOS Camera app’s Portrait mode) and performing computer vision tasks.
 
-Not all devices and capture formats support depth capture. This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes. If a camera or format change causes this property’s value to become [`false`](https://developer.apple.com/documentation/swift/false), the [`isDepthDataDeliveryEnabled`](avcapturephotooutput/isdepthdatadeliveryenabled.md) property’s value also becomes [`false`](https://developer.apple.com/documentation/swift/false).
+Not all devices and capture formats support depth capture. This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes. If a camera or format change causes this property’s value to become [`false`](https://developer.apple.com/documentation/Swift/false), the [`isDepthDataDeliveryEnabled`](avcapturephotooutput/isdepthdatadeliveryenabled.md) property’s value also becomes [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is key-value observable.
 

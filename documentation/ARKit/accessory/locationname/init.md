@@ -6,7 +6,7 @@
 Init without label provided as a convenience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

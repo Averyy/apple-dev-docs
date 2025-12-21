@@ -17,7 +17,7 @@ var isExtensionHidden: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), [`NSSavePanel`](nssavepanel.md) shows the filename extension in places where you refer to the file by name. The user can override this value by checking the hide extension menu item, which reflects this value. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), [`NSSavePanel`](nssavepanel.md) shows the filename extension in places where you refer to the file by name. The user can override this value by checking the hide extension menu item, which reflects this value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If a user adds or removes a filename extension in the panel’s name field, the panel updates this property to reflect that choice.
 

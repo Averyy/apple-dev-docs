@@ -1,4 +1,4 @@
-# Machine-Learning Passes
+# Machine-learning passes
 
 **Framework**: Metal
 
@@ -18,7 +18,7 @@ Convert a Core ML model by creating a Metal machine-learning (ML) package from i
 
 ##### Apply the Model From Your Apps Gpu Workflow By Encoding Machine Learning Commands
 
-Metal 4 introduces a new encoder type, [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md), which encodes inference commands that run a Core ML model in a machine-learning pass that runs alongside your other Metal tasks, such as render and compute passes. To encode machine-learning inference commands for the GPU to run, you need to create a machine-learning pipeline state, provide a [`MTLHeap`](mtlheap.md) for temporary scratch memory, and [`MTLTensor`](mtltensor.md) instances for the model’s inputs and output. You create a machine-learning pipeline-state from the library that Xcode creates from a Metal ML package, which you can then apply to a machine-learning encoder.
+Metal 4 introduces a new encoder type, [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md), which encodes inference commands that run a Core ML model in a machine-learning pass that runs alongside your other Metal tasks, such as render and compute passes. To encode machine-learning inference commands for the GPU to run, you need to create a machine-learning pipeline state, provide an [`MTLHeap`](mtlheap.md) for temporary scratch memory, and [`MTLTensor`](mtltensor.md) instances for the model’s inputs and output. You create a machine-learning pipeline-state from the library that Xcode creates from a Metal ML package, which you can then apply to a machine-learning encoder.
 
 > **Note**:  Machine-learning encoders run Core ML models but they can’t build new networks or modify layers and inputs of existing ones; for those tasks, see [`Core ML`](https://developer.apple.com/documentation/CoreML) and[`Metal Performance Shaders Graph`](https://developer.apple.com/documentation/MetalPerformanceShadersGraph)
 
@@ -36,6 +36,8 @@ Metal 4 also adds tensor types and basic tensor operators to the Metal Shading L
 
 The MSL tensor types include:
 
+A tensor type can also include the `tensor_offset` tag, for example `tensor<device float, dextents<int, 2>, tensor_handle, tensor_offset>`. You can slice a tensor on the GPU without creating a new tensor descriptor by including this tag.
+
 Cooperative tensors provide temporary memory for transient tensors by equally distributing their data among the threads that work with that tensor. This memory distribution reduces memory bandwidth by allocating the memory from thread-private or threadgroup-private address spaces, which is important for latency-critical, machine-learning algorithms.
 
 MSL version 4 also introduces operation descriptors, with which you can define custom operations and run them directly in your shader code.
@@ -48,16 +50,16 @@ Your app can encode a machine-learning pass that works with other passes synchro
 - Produces an output that a subsequent render pass consumes as its input
 - Synchronizes with both the previous and subsequent render passes with a consumer and producer queue-barrier, respectively
 
-For more information about stages and barriers, see [`MTLStages`](mtlstages.md) and [`Resource Synchronization`](resource-synchronization.md) , respectively.
+For more information about stages and barriers, see [`MTLStages`](mtlstages.md) and [`Resource synchronization`](resource-synchronization.md) , respectively.
 
 ## Topics
 
-### Encoding a Machine-Learning Pass
+### Encoding a machine-learning pass
 - [protocol MTL4MachineLearningCommandEncoder](mtl4machinelearningcommandencoder.md)
-  Encodes dispatch commands that run machine-learning model inference on Apple silicon.
+  Encodes machine-learning model inference commands for a single pass.
 - [protocol MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
   A pipeline state that you can use with machine-learning encoder instances.
-### Configuring a Machine-Learning Pipeline
+### Configuring a machine-learning pipeline
 - [class MTL4MachineLearningPipelineDescriptor](mtl4machinelearningpipelinedescriptor.md)
   Description for a machine learning pipeline state.
 - [class MTL4MachineLearningPipelineReflection](mtl4machinelearningpipelinereflection.md)
@@ -65,15 +67,15 @@ For more information about stages and barriers, see [`MTLStages`](mtlstages.md) 
 
 ## See Also
 
-- [Render Passes](render-passes.md)
+- [Render passes](render-passes.md)
   Encode a render pass to draw graphics into an image.
-- [Compute Passes](compute-passes.md)
+- [Compute passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
-- [Blit Passes](blit-passes.md)
+- [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
-- [Indirect Command Encoding](indirect-command-encoding.md)
+- [Indirect command encoding](indirect-command-encoding.md)
   Store draw commands in Metal buffers and run them at a later time on the GPU, either once or repeatedly.
-- [Ray Tracing with Acceleration Structures](ray-tracing-with-acceleration-structures.md)
+- [Ray tracing with acceleration structures](ray-tracing-with-acceleration-structures.md)
   Build a representation of your scene’s geometry using triangles and bounding volumes to quickly trace rays through the scene.
 
 

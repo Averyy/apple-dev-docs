@@ -16,7 +16,7 @@ var isAnimating: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the animation is in progress or [`false`](https://developer.apple.com/documentation/swift/false) when it is stopped.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the animation is in progress or [`false`](https://developer.apple.com/documentation/Swift/false) when it is stopped.
 
 ## See Also
 

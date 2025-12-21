@@ -11,9 +11,8 @@ Constants that specify standardized sparse layouts that BNNS can convert to opaq
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- watchOS 9.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 9.0+
 
 ## Declaration
 

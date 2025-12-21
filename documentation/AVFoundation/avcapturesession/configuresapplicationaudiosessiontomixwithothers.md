@@ -19,11 +19,11 @@ var configuresApplicationAudioSessionToMixWithOthers: Bool { get set }
 
 #### Discussion
 
-By default, a capture session’s audio session interrupts the audio of other apps. To enable background audio from other apps to continue while capturing video, set this value to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, a capture session’s audio session interrupts the audio of other apps. To enable background audio from other apps to continue while capturing video, set this value to [`true`](https://developer.apple.com/documentation/Swift/true).
 
-> **Note**:  This property value has no effect when the value of [`usesApplicationAudioSession`](avcapturesession/usesapplicationaudiosession.md) is [`false`](https://developer.apple.com/documentation/swift/false). It also has no effect on Live Photo movie complement capture (where music is always mixed).
+> **Note**:  This property value has no effect when the value of [`usesApplicationAudioSession`](avcapturesession/usesapplicationaudiosession.md) is [`false`](https://developer.apple.com/documentation/Swift/false). It also has no effect on Live Photo movie complement capture (where music is always mixed).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -66,7 +66,7 @@ If needed, you can draw a debug representation of selected items in the game usi
 game.debugDraw(options: [.drawTable, .drawSeats, .drawEquipment])
 ```
 
-Then, add actions to the equipment that controls gameplay using the `addAction(_:)` and [`addActions(_:)`](tabletopgame/addactions(_:).md) methods.
+Then, add actions to the equipment that controls gameplay using the [`addAction(_:)`](tabletopgame/addaction(_:)-10j8v.md) and [`addActions(_:)`](tabletopgame/addactions(_:).md) methods.
 
 Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).md) method that conforms to the [`TabletopGame.Observer`](tabletopgame/observer.md) protocol. Implement the `Observer` protocol methods to progress gameplay when players interact with the equipment.
 
@@ -101,6 +101,8 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 - [var localPlayer: Player](tabletopgame/localplayer.md)
   The player who runs this tabletop game instance on their device.
 ### Adding actions
+- [func addAction(some TabletopAction)](tabletopgame/addaction(_:)-10j8v.md)
+- [func addAction(some CustomAction)](tabletopgame/addaction(_:)-9zgsy.md)
 - [func addActions(some Sequence<any TabletopAction>)](tabletopgame/addactions(_:).md)
 ### Observing actions
 - [TabletopGame.Observer](tabletopgame/observer.md)
@@ -118,6 +120,11 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 ### Starting interactions
 - [func startInteraction(onEquipmentID: EquipmentIdentifier) -> TabletopInteraction.Identifier?](tabletopgame/startinteraction(onequipmentid:).md)
   Starts a local interaction. It will return `nil` if too many interactions are already happening at the same time.
+### Canceling interactions
+- [func cancelAllInteractions()](tabletopgame/cancelallinteractions.md)
+  Cancels all local and remote interactions. This releases control of all the equipment and rolls back all the actions added to the canceled interaction.
+- [func cancelInteraction(matching: TabletopInteraction.Identifier)](tabletopgame/cancelinteraction(matching:).md)
+  Cancel the local or remote interaction matching the given identifier. This causes any actions added to it to be rolled back, and releases the controlled equipment and any tossed equipment.
 ### Rendering the table
 - [func addRenderDelegate(some TabletopGame.RenderDelegate)](tabletopgame/addrenderdelegate(_:).md)
 - [func removeRenderDelegate(some TabletopGame.RenderDelegate)](tabletopgame/removerenderdelegate(_:).md)
@@ -137,17 +144,10 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 ### Drawing debug representations
 - [func debugDraw(options: DebugDrawOptions)](tabletopgame/debugdraw(options:).md)
   Enable or disable debug visualizations
-### Instance Methods
-- [func addAction(some TabletopAction)](tabletopgame/addaction(_:)-10j8v.md)
-- [func addAction(some CustomAction)](tabletopgame/addaction(_:)-9zgsy.md)
-- [func cancelAllInteractions()](tabletopgame/cancelallinteractions.md)
-  Cancels all local and remote interactions. This releases control of all the equipment and rolls back all the actions added to the canceled interaction.
-- [func cancelInteraction(matching: TabletopInteraction.Identifier)](tabletopgame/cancelinteraction(matching:).md)
-  Cancel the local or remote interaction matching the given identifier. This causes any actions added to it to be rolled back, and releases the controlled equipment and any tossed equipment.
 
 ## See Also
 
-- [Creating tabletop games](tabletopkitsample.md)
+- [Creating tabletop games](creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.

@@ -1,4 +1,4 @@
-# Selecting Device Objects for Compute Processing
+# Selecting device objects for compute processing
 
 **Framework**: Metal
 
@@ -16,7 +16,7 @@ macOS supports systems that have multiple GPUs, enabling Metal apps to increase 
 
 Not all Mac computers have multiple GPUs. To check the GPUs in your Mac, choose Apple menu > About this Mac, press the System Report button, and select Graphics/Displays on the left. The GPUs are listed under Video Card.
 
-Optionally, you may connect an external GPU to your Mac via Thunderbolt 3. For this system setup, your Mac must be running macOS 10.13.4 or later. Connecting an external GPU allows the sample to perform compute processing on an external GPU and perform graphics rendering on a built-in GPU.
+Optionally, you may connect an external GPU to your Mac via Thunderbolt 3. For this system setup, your Mac needs to be running macOS 10.13.4 or later. Connecting an external GPU allows the sample to perform compute processing on an external GPU and perform graphics rendering on a built-in GPU.
 
 ##### Sample Simulation Modes
 
@@ -45,7 +45,7 @@ When the sample receives a notification for an external GPU removal, it transfer
 
 When the sample receives a notification for an external GPU addition, it first completes the current simulation with the built-in GPU and then starts the next simulation with the external GPU.
 
-This sample implements many techniques described in [`Selecting Device Objects for Graphics Rendering`](selecting-device-objects-for-graphics-rendering.md). For information about handling external GPU notifications, see the following sections from that sample:
+This sample implements many techniques described in [`Selecting device objects for graphics rendering`](selecting-device-objects-for-graphics-rendering.md). For information about handling external GPU notifications, see the following sections from that sample:
 
 - Set a GPU Eject Policy
 - Register for External GPU Notifications
@@ -62,7 +62,7 @@ When the sample runs on a single device, the view controller executes the simula
 
 When the sample runs on multiple devices, the view controller assigns the simulation work to one device and the renderer work to another. The simulation executes repeatedly in a loop on a separate simulation thread. For each iteration, it updates the positions of the N-body particles and blits this data to a new [`MTLBuffer`](mtlbuffer.md) backed by system memory. The sample passes this system memory backing to the view controller, which then passes it along to the renderer. The renderer executes repeatedly in a loop on the main thread. For each iteration, it creates a new [`MTLBuffer`](mtlbuffer.md), backed by the same system memory populated by the simulation thread, and renders the N-body particles based on the latest available position data.
 
-> **Note**: A [`MTLBuffer`](mtlbuffer.md) can’t be directly transferred between different devices; its data must be transferred via system memory.
+> **Note**: An [`MTLBuffer`](mtlbuffer.md) can’t be directly transferred between different devices; its data needs to be transferred via system memory.
 
 ![A flowchart that shows the simulation with two Metal buffers, one on the simulation GPU and the other on the renderer GPU, both backed by the same CPU system memory. On the simulation thread, the simulation produces data and blits it to a new MTLBuffer backed by system memory, then repeats the process. On the render thread, the renderer creates a new MTLBuffer from the same system memory backing and draws the data, then repeats the process.](https://docs-assets.developer.apple.com/published/18c1da1a7bf62179fe106b3b1eaf7585/4-multi-device-buffer.png)
 
@@ -107,7 +107,7 @@ _updateData[i] = [[NSData alloc] initWithBytesNoCopy:updateAddress
 
 ## See Also
 
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 - [Customizing a TensorFlow operation](customizing-a-tensorflow-operation.md)
   Implement a custom operation that uses Metal kernels to accelerate neural-network training performance.

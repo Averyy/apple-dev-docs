@@ -11,8 +11,8 @@ Add a new endpoint URL and secret for alternative distribution package notificat
 ## Mentions
 
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
-- [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
+- [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
 
 #### Discussion
 

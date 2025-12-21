@@ -22,6 +22,8 @@ var parameters: [MLParameterKey : Any]? { get set }
 
 ## See Also
 
+- [var functionName: String?](mlmodelconfiguration/functionname.md)
+  Function name that `MLModel` will use.
 - [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
   A human readable name of a model for display purposes.
 - [class MLParameterKey](mlparameterkey.md)

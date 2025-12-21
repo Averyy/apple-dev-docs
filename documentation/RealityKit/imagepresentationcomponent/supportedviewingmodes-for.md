@@ -6,7 +6,7 @@
 The viewing modes supported by the provided image source.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

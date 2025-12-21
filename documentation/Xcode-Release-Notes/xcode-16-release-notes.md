@@ -40,7 +40,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Swift projects that set a deployment target of macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0 and use constants from float.h such as FLT_RADIX in Swift sources will not link correctly. This will cause a crash when running on those OS versions. The crash will not occur when running on macOS 10.14.4, iOS 12.2, watchOS 5.2, tvOS 12.2 or later.  (130107191)
 - Fixed: Xcode 16 beta 3 will fail to launch for some users. Users who have not installed Xcode 16 beta or Xcode 16 beta 2 will see a “Loading a plug-in failed” alert.  (131066390)
 - Fixed: AppIntents may fail to build project if there are duplicate title values for AppIntent conformances within the same target.  (131192911)
-- Fixed: Varying a source language string in a String Catalog by plural will now use the correct plural cases for each language when propagating the same change to already-translated languages.   (132042468)
+- Fixed: Varying a source language string in a String Catalog by plural will now use the correct plural cases for each language when propagating the same change to already-translated languages. (132042468)
 
 ###### Known Issues
 
@@ -274,40 +274,40 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### New Features
 
-- ‘Flatten Recursion’ feature in the new call tree detects and collapses cases of indirect recursion.   (6823780) (FB5940449)
-- Recording options for a document and Instruments are now available directly in the document window when starting from a template. Subsequent runs can be reconfigured using ‘Next Recording’ button available in the runs sidebar.   (40923253)
-- ‘Data Mining’ popover in the new call tree has been redesigned, optimizing for adding more functions and displaying longer symbol names.   (61782150)
-- Custom Instruments:  element can now be used to create aggregation of os-log and os-signpost backtraces.   (66603961)
-- Instruments document window has a new sidebar that gives access and overview of all runs in the document. Runs in the sidebar can be renamed and removed using context menu actions.    (103073589)
-- Runs in the trace document now store its zoom level and scroll position separately, making it easy to switch between them and preserve visualization context.    (108528537)
+- ‘Flatten Recursion’ feature in the new call tree detects and collapses cases of indirect recursion. (6823780) (FB5940449)
+- Recording options for a document and Instruments are now available directly in the document window when starting from a template. Subsequent runs can be reconfigured using ‘Next Recording’ button available in the runs sidebar. (40923253)
+- ‘Data Mining’ popover in the new call tree has been redesigned, optimizing for adding more functions and displaying longer symbol names. (61782150)
+- Custom Instruments:  element can now be used to create aggregation of os-log and os-signpost backtraces. (66603961)
+- Instruments document window has a new sidebar that gives access and overview of all runs in the document. Runs in the sidebar can be renamed and removed using context menu actions. (103073589)
+- Runs in the trace document now store its zoom level and scroll position separately, making it easy to switch between them and preserve visualization context. (108528537)
 - Improved the performance of `heap`, `leaks`, the Leaks instrument, and the Xcode memory graph debugger when analyzing processes which heavily use Swift.  (111248508)
-- ⌘. shortcut can now be used to stop a trace recording.   (113574234)
+- ⌘. shortcut can now be used to stop a trace recording. (113574234)
 - The flame graph is a new alternate visualization mode in the new call tree. Zooming in shows lower-weighted functions, and hovering along the ruler at the top displays tooltips down the entire stack.  (115313793)
-- The new call tree enhances user responsiveness and provides progress bar feedback during longer running computations.   (122577386)
+- The new call tree enhances user responsiveness and provides progress bar feedback during longer running computations. (122577386)
 - `heap`, `leaks`, the Leaks instrument, and the Xcode memory graph debugger now label untyped allocations pointed to by stored properties of Swift types for easier identification.  (127317183)
 
 ###### Resolved Issues
 
-- Fixed a sporadic crash happening when recording trace with the ‘Allocations’ Instrument.   (27975091)
-- Fixed an issue where Instruments would show an error saying ‘Required kernel recording resources are in use by another document’ and prevent further recordings in the same document.   (93788278)
-- Fixed an issue where libraries would be missing symbolication information when recording in a windowed mode.   (114650647)
-- Fixed a crash happening when recording using ‘Animation Hitches’ template.    (114715443)
-- Fixed: Eliminated application hangs when using filter bar in the ‘Symbols’ window.   (118244818)
-- Fixed: Upon importing a file into Instruments, timeline is now automatically sized to fit the entire trace.   (118467393)
-- Fixed an issue where Instruments wouldn’t respect ‘Working Directory’ override when launching applications on a macOS platform.   (123194792) (FB13631596)
-- Fixed an issue where tracks in the main and pinned timeline could appear selected at the same time.   (125189186)
+- Fixed a sporadic crash happening when recording trace with the ‘Allocations’ Instrument. (27975091)
+- Fixed an issue where Instruments would show an error saying ‘Required kernel recording resources are in use by another document’ and prevent further recordings in the same document. (93788278)
+- Fixed an issue where libraries would be missing symbolication information when recording in a windowed mode. (114650647)
+- Fixed a crash happening when recording using ‘Animation Hitches’ template. (114715443)
+- Fixed: Eliminated application hangs when using filter bar in the ‘Symbols’ window. (118244818)
+- Fixed: Upon importing a file into Instruments, timeline is now automatically sized to fit the entire trace. (118467393)
+- Fixed an issue where Instruments wouldn’t respect ‘Working Directory’ override when launching applications on a macOS platform. (123194792) (FB13631596)
+- Fixed an issue where tracks in the main and pinned timeline could appear selected at the same time. (125189186)
 
 ###### Known Issues
 
-- UI State of the new call tree is not being saved in trace documents.   (113659508)
-- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible.    (116369374)  To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
-- “Top Functions” view is not available in the new call tree.   (123702178)
-- Legacy call tree is still used in the following Instruments: Allocations, Leaks, CPU Counters when using arithmetic formulas, Sample Importer.   (124118051)
+- UI State of the new call tree is not being saved in trace documents. (113659508)
+- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374)  To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
+- “Top Functions” view is not available in the new call tree. (123702178)
+- Legacy call tree is still used in the following Instruments: Allocations, Leaks, CPU Counters when using arithmetic formulas, Sample Importer. (124118051)
 - Xcode Debugger fails to capture memory graph from processes running in watchOS Rosetta Simulator destinations.  (132023793)
 
 ###### Deprecations
 
-- ‘Always use deferred mode’ option has been removed from Instruments. To record in deferred mode, use custom templates mechanism.   (120497357)
+- ‘Always use deferred mode’ option has been removed from Instruments. To record in deferred mode, use custom templates mechanism. (120497357)
 
 ##### Interface Builder
 
@@ -346,7 +346,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - The Localization Catalog editor now displays a “Don’t Translate” badge next to strings marked translate=no in the XLIFF file.  (123834701)
 - The String Catalog editor now supports showing the source code referencing the selected string key in the assistant editor.  (125265332)
 - Warnings are now emitted by the String Catalog editor for stale strings. Fix-Its are provided to remove the string if you no longer need it or to manage manually if you’d like to keep it around.  (125992742)
-- Tooltips in String Catalogs now provide insight into why a particular string cannot be edited.   (129254023)
+- Tooltips in String Catalogs now provide insight into why a particular string cannot be edited. (129254023)
 
 ###### Resolved Issues
 
@@ -371,13 +371,13 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: String Catalogs will now also be updated when building for testing.  (118902862)
 - Fixed an issue in the String Catalog editor that could have prevented varied strings from being edited when the default value was specified in source code.  (122470742) (FB13594100)
 - Fixed an issue where the context menu in String Catalog Editor may apply to the wrong row when a different row is selected.  (124500442)
-- Fixed: Refined keyboard navigation within a String Catalog. ⌘↑ and ⌘↓/⏎ move vertically up and down rows within a column, while ⇥ and ⇧⇥ move horizontally through rows.   (125435426)
+- Fixed: Refined keyboard navigation within a String Catalog. ⌘↑ and ⌘↓/⏎ move vertically up and down rows within a column, while ⇥ and ⇧⇥ move horizontally through rows. (125435426)
 - Fixed an issue where Xcode or xcodebuild could emit empty .strings files to /tmp during various localization operations.  (126644251)
 - Fixed an issue where .strings and .stringsdict files would no longer be deleted from disk after migration to .xcstrings.  (129936269)
 - Fixed: LOCALIZED_STRING_MACRO_NAMES now once again supports referring to property wrappers.  (130446922) (FB14041161)
 - Fixed: Resolved a long hang that could occur when loading and interacting with large String Catalogs.  (130619985)
-- Fixed an error “No “original” attribute provided for strings from table” that could occur when exporting localizations.   (131190361) (FB14207838)
-- Fixed: Xcode now remembers column visibility settings in String Catalog editor. Use the context menu on the string table header to adjust column visibility.   (131930622)
+- Fixed an error “No “original” attribute provided for strings from table” that could occur when exporting localizations. (131190361) (FB14207838)
+- Fixed: Xcode now remembers column visibility settings in String Catalog editor. Use the context menu on the string table header to adjust column visibility. (131930622)
 
 ###### Deprecations
 
@@ -597,8 +597,8 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Added support for EditorConfig. The editor now respects indentation settings given in `.editorconfig` files. Xcode supports the following settings: `indent_style`, `tab_width`, `indent_size`, `end_of_line`, `insert_final_newline`, `max_line_length`, and `trim_trailing_whitespace`. See [`https://editorconfig.org`](https://developer.apple.comhttps://editorconfig.org) for more information. Settings from `.editorconfig` files normally take precedence over settings given in the “Text Editing” section of View > Inspectors > File for a file or group. This can be disabled by unchecking the “Prefer Settings from EditorConfig” checkbox on the Indentation tab of Xcode > Settings > Text Editing.  (20796230)
 - There is a new “Extract to File” refactor action. Users can now click on a top level declaration in Swift files (class, struct, enum, extension, function) and click on “Extract to File” in the “Refactor” section, which will extract the declaration to a new file, as well as the relevant comments and imports. Users can also select any code and click on “Extract Selection to File” in the “Refactor” section, which will extract that selection to a new file.  (39453975)
 - Added the “Reformat to Width” command to the Editor > Structure menu. This command splits long lines containing member access and function call expressions onto multiple lines. The target width is given with the “Reformat code at column” setting on the Editing tab of Xcode > Settings > Text Editing. Reformatting can happen automatically when using code completion by checking the “Automatically reformat when completion code” checkbox. The editor can visually show column by checking the “Show reformatting guide”, which was formerly called the “Page Guide”. The target width can also be set using the `max_line_length` EditorConfig setting.  (94577507) (FB10083417)
-- When editing an XML file, closing an opening XML tag will automatically insert a matching closing tag.    (132524389)
-- Word movements are now more granular, and will not skip characters such as parenthesis.    (133017821)
+- When editing an XML file, closing an opening XML tag will automatically insert a matching closing tag. (132524389)
+- Word movements are now more granular, and will not skip characters such as parenthesis. (133017821)
 
 ###### Known Issues
 

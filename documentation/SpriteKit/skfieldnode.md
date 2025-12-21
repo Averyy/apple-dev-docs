@@ -17,7 +17,6 @@ A node that applies physics effects to nearby nodes.
 ## Declaration
 
 ```swift
-@MainActor
 class SKFieldNode
 ```
 
@@ -33,10 +32,10 @@ There are many different kinds of field nodes that can be created, each with dif
 When the scene simulates physics effects, a field node applies its effect to a physics body so long as the following are true:
 
 - The field node is in the scene’s node tree.
-- The field node’s [`isEnabled`](skfieldnode/isenabled.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+- The field node’s [`isEnabled`](skfieldnode/isenabled.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 - The physics body is attached to a node that is in the scene’s node tree.
 - The physics body is located inside the field node’s region (see [`region`](skfieldnode/region.md)).
-- The physics body is not located inside the region of another field node whose [`isExclusive`](skfieldnode/isexclusive.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+- The physics body is not located inside the region of another field node whose [`isExclusive`](skfieldnode/isexclusive.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 - A logical AND operation between the field node’s [`categoryBitMask`](skfieldnode/categorybitmask.md) property and the physics body’s [`fieldBitMask`](skphysicsbody/fieldbitmask.md) property results in a nonzero value.
 
 > 💡 **Tip**:  While it is useful to know that SpriteKit measures items in the International System of Units, the precise numbers are not that important. It doesn’t matter much whether your rocket ship weights 1 kilogram or 1,000,000 kilograms, as long as the mass is consistent with other physics values used in the game. Often, proportions are more important than the actual values being used.

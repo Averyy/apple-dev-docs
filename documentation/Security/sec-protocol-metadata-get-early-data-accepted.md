@@ -24,9 +24,7 @@ A bool indicating if early data was accepted.
 
 #### Discussion
 
-```None
- Determine if early data was accepted by the peer.
-```
+Determine if early data was accepted by the peer.
 
 ## Parameters
 

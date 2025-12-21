@@ -46,9 +46,6 @@ struct UpdatableEstimatorToTemporalAdaptor<Base> where Base : UpdatableEstimator
   The output type.
 - [UpdatableEstimatorToTemporalAdaptor.Transformer](updatableestimatortotemporaladaptor/transformer.md)
   The transformer type created by this estimator.
-### Default Implementations
-- [TemporalEstimator Implementations](updatableestimatortotemporaladaptor/temporalestimator-implementations.md)
-- [UpdatableTemporalEstimator Implementations](updatableestimatortotemporaladaptor/updatabletemporalestimator-implementations.md)
 
 ## Relationships
 

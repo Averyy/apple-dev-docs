@@ -23,7 +23,7 @@ var backgroundImage: UIImage? { get set }
 
 If you specify a stretchable background image, the tab bar stretches your image to fill the available space. If your image is not stretchable and not large enough to fill the available space, the tab bar tiles the image. For information about how stretching works, see the [`UIImage.ResizingMode`](uiimage/resizingmode-swift.enum.md) type in [`UIImage`](uiimage.md).
 
-When a custom background image is present, the tab bar does not draw any blur effects behind itself, even when the [`isTranslucent`](uitabbar/istranslucent.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+When a custom background image is present, the tab bar does not draw any blur effects behind itself, even when the [`isTranslucent`](uitabbar/istranslucent.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

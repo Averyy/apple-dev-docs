@@ -72,7 +72,7 @@ App Sandbox provides protection to system resources and user data by limiting yo
 - [All files entitlement](../BundleResources/Entitlements/com.apple.security.files.all.md)
   A Boolean value that indicates whether the app may have access to all files.
 - [NSAppDataUsageDescription](../BundleResources/Information-Property-List/NSAppDataUsageDescription.md)
-  A message that tells the user why the app needs to access files in other apps’ sandbox containers.
+  A message that tells people why the app needs to access files in other apps’ sandbox containers.
 
 
 ---

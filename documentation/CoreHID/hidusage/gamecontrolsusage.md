@@ -44,20 +44,8 @@ enum GameControlsUsage
 - [HIDUsage.GameControlsUsage.secondaryFlipper](hidusage/gamecontrolsusage/secondaryflipper.md)
 - [HIDUsage.GameControlsUsage.shootBall](hidusage/gamecontrolsusage/shootball.md)
 - [HIDUsage.GameControlsUsage.turnRightOrLeft](hidusage/gamecontrolsusage/turnrightorleft.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/gamecontrolsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/gamecontrolsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.GameControlsUsage.RawValue](hidusage/gamecontrolsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/gamecontrolsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/gamecontrolsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/gamecontrolsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

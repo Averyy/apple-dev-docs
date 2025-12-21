@@ -27,9 +27,9 @@ final var requiresDNSSECValidation: Bool { get set }
 - [NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.enum.md)
   Modes in which a connection can support multipath protocols.
 - [var serviceClass: NWParameters.ServiceClass](nwparameters/serviceclass-swift.property.md)
-  A level of service quality for connections to use for Cellular Network Slicing.
+  The traffic characteristics network connections send and receive.
 - [NWParameters.ServiceClass](nwparameters/serviceclass-swift.enum.md)
-  Indicates the traffic characteristics of the network connections used by Cellular Network Slicing.
+  Indicates how the system prioritizes transmitted traffic by your latency and throughput needs.
 - [var allowFastOpen: Bool](nwparameters/allowfastopen.md)
   A Boolean that enables sending application data with protocol handshakes.
 - [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.property.md)

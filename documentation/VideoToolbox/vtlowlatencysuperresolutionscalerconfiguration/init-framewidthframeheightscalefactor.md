@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: init
 
+Creates a new low-latency super-resolution scaler configuration with specified frame width and height.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +23,7 @@ init(frameWidth: Int, frameHeight: Int, scaleFactor: Float)
 
 - `frameWidth`: Width of source frame in pixels.
 - `frameHeight`: Height of source frame in pixels.
-- `scaleFactor`: The scale factor to be applied.  This must be a supported value returned by supportedScaleFactorsForFrameWidth:frameHeight.
+- `scaleFactor`: The scale factor to apply. This must be a supported value that   returns.
 
 
 ---

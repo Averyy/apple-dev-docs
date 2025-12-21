@@ -1,0 +1,4 @@
+Completed scraping ServicesAccountLinking!
+Total pages scraped: 14
+Pages skipped (unchanged): 1
+Pages failed: 0

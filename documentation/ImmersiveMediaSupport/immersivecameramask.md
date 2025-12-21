@@ -6,8 +6,8 @@
 A structure that holds the camera mask type information and its relevant mask name.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,17 +17,11 @@ enum ImmersiveCameraMask
 
 ## Topics
 
-### Initializers
-- [init(from: any Decoder) throws](immersivecameramask/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](immersivecameramask/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Enumeration Cases
 - [case dynamic(ImmersiveDynamicMask)](immersivecameramask/dynamic(_:).md)
-  A value defining a mask generated dynamically based on control points, see [`ImmersiveDynamicMask`](immersivedynamicmask.md) for details.
+  A value that defines a control points based dynamically generated mask.
 - [case image(ImmersiveImageMask)](immersivecameramask/image(_:).md)
-  A value defining a mask generated based on an image, see [`ImmersiveImageMask`](immersiveimagemask.md) for details.
+  A value that defines an image based mask.
 
 ## Relationships
 

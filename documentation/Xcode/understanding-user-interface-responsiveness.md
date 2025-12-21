@@ -77,13 +77,11 @@ To learn about the various tools to detect hangs and hitches, and best practices
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
 - [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
-  Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
+  Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 - [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
   Create a more responsive experience with your app by minimizing time spent in startup.
 - [Reducing terminations in your app](reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 
 
 ---

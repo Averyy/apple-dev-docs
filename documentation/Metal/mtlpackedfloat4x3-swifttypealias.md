@@ -37,7 +37,7 @@ Metal uses the values `[0,0,0,1]` as the bottom row of the `4x4` matrix.
 - [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](mtlpackedfloat3make(_:_:_:).md)
   Returns a new packed vector with three floating-point values.
 - [struct MTL4BufferRange](mtl4bufferrange.md)
-- [func MTL4BufferRangeMake(UInt64, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
 
 
 ---

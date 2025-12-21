@@ -43,14 +43,6 @@ struct Platform
 ### Type methods
 - [static func custom(String) -> Platform](platform/custom(_:).md)
   Creates a custom platform.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](platform/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Operators
-- [static func == (Platform, Platform) -> Bool](platform/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](platform/equatable-implementations.md)
 
 ## Relationships
 

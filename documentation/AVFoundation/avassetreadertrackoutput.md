@@ -35,15 +35,15 @@ When constructing video output settings, the choice of pixel format affects the 
 
 ## Topics
 
-### Creating a Track Output
+### Creating a track output
 - [init(track: AVAssetTrack, outputSettings: [String : Any]?)](avassetreadertrackoutput/init(track:outputsettings:).md)
   Creates an object that reads media data from an asset track.
 - [Video settings](video-settings.md)
   Configure video processing settings using standard key and value constants.
-### Configuring Audio Settings
+### Configuring audio settings
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetreadertrackoutput/audiotimepitchalgorithm.md)
   The processing algorithm to use for scaled audio edits.
-### Inspecting an Output
+### Inspecting an output
 - [var outputSettings: [String : Any]?](avassetreadertrackoutput/outputsettings.md)
   The output settings for this track output.
 - [var track: AVAssetTrack](avassetreadertrackoutput/track.md)
@@ -60,6 +60,8 @@ When constructing video output settings, the choice of pixel format affects the 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

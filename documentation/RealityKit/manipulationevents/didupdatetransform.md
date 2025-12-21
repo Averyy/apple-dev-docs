@@ -6,7 +6,7 @@
 The event that occurs repeatedly when the entity’s transform updates during a manipulation gesture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

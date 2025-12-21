@@ -34,7 +34,7 @@ This value corresponds to both the width and height of each cell, because all ce
 - [func getNumberOfRows(UnsafeMutablePointer<Int>?, columns: UnsafeMutablePointer<Int>?)](nsmatrix/getnumberofrows(_:columns:).md)
   Obtains the number of rows and columns in the receiver.
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func insertColumn(Int, with: [NSCell]?)](nsmatrix/insertcolumn(_:with:).md)
   Inserts a new column of cells before the specified column, using the given cells.
 - [func insertRow(Int)](nsmatrix/insertrow(_:).md)

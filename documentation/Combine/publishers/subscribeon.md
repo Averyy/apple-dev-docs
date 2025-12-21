@@ -22,26 +22,21 @@ struct SubscribeOn<Upstream, Context> where Upstream : Publisher, Context : Sche
 
 ## Topics
 
-### Creating a Subscribe-On Publisher
+### Creating a subscribe-on publisher
 - [init(upstream: Upstream, scheduler: Context, options: Context.SchedulerOptions?)](publishers/subscribeon/init(upstream:scheduler:options:).md)
   Creates a publisher that receives elements from an upstream publisher on a specific scheduler.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.SubscribeOn.Output](publishers/subscribeon/output.md)
   The kind of values published by this publisher.
 - [Publishers.SubscribeOn.Failure](publishers/subscribeon/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/subscribeon/upstream.md)
   The publisher from which this publisher receives elements.
 - [let scheduler: Context](publishers/subscribeon/scheduler.md)
   The scheduler the publisher should use to receive elements.
 - [let options: Context.SchedulerOptions?](publishers/subscribeon/options.md)
   Scheduler options that customize the delivery of elements.
-### Applying Operators
-- [Publisher Operators](publishers-subscribeon-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/subscribeon/publisher-implementations.md)
 
 ## Relationships
 

@@ -17,7 +17,7 @@ optional func outlineView(_ outlineView: NSOutlineView, dataCellFor tableColumn:
 
 #### Return Value
 
-The cell to use in column `tableColumn` for item `item`, or `nil`. Because the outline view might copy the cell, the cell must properly implement [`copyWithZone:`](https://developer.apple.com/documentation/objectivec/nsobject/1571953-copywithzone).
+The cell to use in column `tableColumn` for item `item`, or `nil`. Because the outline view might copy the cell, the cell must properly implement [`copyWithZone:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copyWithZone:).
 
 #### Discussion
 

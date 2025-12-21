@@ -31,12 +31,6 @@ To add this trait to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
 ### Instance Properties
 - [var tags: [Tag]](tag/list/tags.md)
   The list of tags contained in this instance.
-### Default Implementations
-- [CustomStringConvertible Implementations](tag/list/customstringconvertible-implementations.md)
-- [Equatable Implementations](tag/list/equatable-implementations.md)
-- [Hashable Implementations](tag/list/hashable-implementations.md)
-- [SuiteTrait Implementations](tag/list/suitetrait-implementations.md)
-- [Trait Implementations](tag/list/trait-implementations.md)
 
 ## Relationships
 
@@ -59,6 +53,8 @@ To add this trait to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

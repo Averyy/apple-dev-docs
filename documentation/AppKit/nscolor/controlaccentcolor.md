@@ -16,7 +16,7 @@ class var controlAccentColor: NSColor { get }
 
 #### Discussion
 
-Users set the accent color in the General pane of system preferences. Do not make assumptions about the color space associated with this color.
+People set the accent color in the Appearance pane of System Settings. Don’t make assumptions about the color space associated with this color.
 
 ## See Also
 

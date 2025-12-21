@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: init
 
+Creates a new low-latency, super-resolution scaler parameters object.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,8 +21,8 @@ init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame
 
 ## Parameters
 
-- `sourceFrame`: Current source frame. Must be non nil.
-- `destinationFrame`: User allocated pixel buffer that will receive the results.  Must be non nil.
+- `sourceFrame`: Current source frame; must be non  .
+- `destinationFrame`: User-allocated pixel buffer that receives the scaled processor output; must be non  .
 
 
 ---

@@ -11,7 +11,7 @@ A Boolean value that determines if an overlay is visible.
 ## Declaration
 
 ```swift
-attribute boolean visible;
+visible?: boolean;
 ```
 
 #### Discussion
@@ -26,6 +26,8 @@ The default value is `true`.
   A Boolean value that determines whether the overlay responds to user interaction.
 - [selected](overlayoptions/selected.md)
   A Boolean value that indicates whether the overlay is in a selected state.
+- [style](overlayoptions/style.md)
+  An object literal of style properties.
 
 
 ---

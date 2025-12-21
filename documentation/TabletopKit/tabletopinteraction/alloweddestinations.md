@@ -31,10 +31,13 @@ enum AllowedDestinations
 
 ## See Also
 
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
-  Sets which equipment the interaction can target.
+- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+  Sets the configuration of this interaction.
+- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
 - [TabletopInteraction.Destination](tabletopinteraction/destination.md)
   An object that represents the destination position and orientation of equipment in an interaction.
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+  Sets which equipment the interaction can target.
 
 
 ---

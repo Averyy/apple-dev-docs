@@ -30,6 +30,17 @@ let y = x[..., 0...2] // or x[..., .closedRange(0...2, stride: 1)]
 y.shape // is [1, 3, 28, 3]
 ```
 
+## See Also
+
+- [static func index(Int) -> any MLTensorRangeExpression](mltensorrangeexpression/index(_:).md)
+  Slice the tensor at the specified dimension.
+- [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangefrom(_:stride:).md)
+  Slice the tensor at the specified dimension.
+- [static partialRangeUpTo(_:stride:)](mltensorrangeexpression/partialrangeupto(_:stride:).md)
+  Slice the tensor at the specified dimension.
+- [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/range(_:stride:).md)
+  Slice the tensor at the specified dimension.
+
 
 ---
 

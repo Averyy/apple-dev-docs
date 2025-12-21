@@ -6,6 +6,7 @@
 
 ### Instance Properties
 - [var underestimatedCount: Int](nsarray/underestimatedcount.md)
+  A value less than or equal to the number of elements in the collection.
 ### Instance Methods
 - [func makeIterator() -> NSFastEnumerationIterator](nsarray/makeiterator.md)
   Return an  over the elements of this .

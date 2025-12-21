@@ -22,7 +22,7 @@ enum ResizeMethod
 
 ## Topics
 
-### Enumeration Cases
+### Resize methods
 - [MLTensor.ResizeMethod.bilinear(alignCorners:)](mltensor/resizemethod/bilinear(aligncorners:).md)
   The bilinear interpolation mode where values are computed using bilinear interpolation of 4 neighboring pixels.
 - [MLTensor.ResizeMethod.nearestNeighbor](mltensor/resizemethod/nearestneighbor.md)
@@ -37,6 +37,11 @@ enum ResizeMethod
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func resized(to: (newHeight: Int, newWidth: Int), method: MLTensor.ResizeMethod) -> MLTensor](mltensor/resized(to:method:).md)
+  Resize the tensor’s spatial dimensions to size using the specified method.
 
 
 ---

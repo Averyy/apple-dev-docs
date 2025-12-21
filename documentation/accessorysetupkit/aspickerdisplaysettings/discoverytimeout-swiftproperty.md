@@ -6,14 +6,18 @@
 Custom timeout for picker. Default is 30 seconds.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var discoveryTimeout: ASPickerDisplaySettings.DiscoveryTimeout { get set }
 ```
+
+## Mentions
+
+- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
 
 ## See Also
 

@@ -17,13 +17,13 @@ optional func application(_ application: NSApplication, continue userActivity: N
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this method handled continuing the activity; [`false`](https://developer.apple.com/documentation/swift/false) to have AppKit attempt to continue the activity.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this method handled continuing the activity; [`false`](https://developer.apple.com/documentation/Swift/false) to have AppKit attempt to continue the activity.
 
 #### Discussion
 
 The app calls this method when it receives the data associated with the user activity. Use the data stored in the `NSUserActivity` object to re-create the user’s activity. This method is your opportunity to update your app so that it can perform the associated task.
 
-If this user activity object was created automatically by having `NSUbiquitousDocumentUserActivityType` in a `CFBundleDocumentTypes` entry, AppKit can automatically restore the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) in macOS if this method returns [`false`](https://developer.apple.com/documentation/swift/false), or if it is unimplemented. It does this by creating a document of the appropriate type using the URL stored in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary under the `NSUserActivityDocumentURLKey`. The system calls the [`NSDocument`](nsdocument.md) method [`restoreUserActivityState(_:)`](nsuseractivityrestoring/restoreuseractivitystate(_:).md) on the document.
+If this user activity object was created automatically by having `NSUbiquitousDocumentUserActivityType` in a `CFBundleDocumentTypes` entry, AppKit can automatically restore the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) in macOS if this method returns [`false`](https://developer.apple.com/documentation/Swift/false), or if it is unimplemented. It does this by creating a document of the appropriate type using the URL stored in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary under the `NSUserActivityDocumentURLKey`. The system calls the [`NSDocument`](nsdocument.md) method [`restoreUserActivityState(_:)`](nsuseractivityrestoring/restoreuseractivitystate(_:).md) on the document.
 
 ## Parameters
 

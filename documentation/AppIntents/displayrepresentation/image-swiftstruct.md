@@ -23,9 +23,6 @@ struct Image
 ### Structures
 - [DisplayRepresentation.Image.DisplayStyle](displayrepresentation/image-swift.struct/displaystyle.md)
   The style with which to display the image for this `DisplayRepresentation`.
-### Operators
-- [static func == (DisplayRepresentation.Image, DisplayRepresentation.Image) -> Bool](displayrepresentation/image-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(data: Data, isTemplate: Bool?)](displayrepresentation/image-swift.struct/init(data:istemplate:).md)
   Creates an image object from the specified data.
@@ -49,10 +46,6 @@ struct Image
   Creates an image object, of the specified size, from an image file in the local file system.
 - [init(url: URL, width: Double, height: Double, isTemplate: Bool?, displayStyle: DisplayRepresentation.Image.DisplayStyle)](displayrepresentation/image-swift.struct/init(url:width:height:istemplate:displaystyle:).md)
   Creates an image, of the specified size, from an image file in the local file system, specifying the display style.
-### Default Implementations
-- [Decodable Implementations](displayrepresentation/image-swift.struct/decodable-implementations.md)
-- [Encodable Implementations](displayrepresentation/image-swift.struct/encodable-implementations.md)
-- [Equatable Implementations](displayrepresentation/image-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

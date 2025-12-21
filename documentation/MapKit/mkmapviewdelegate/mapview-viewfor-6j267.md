@@ -28,12 +28,8 @@ The view to use when presenting the specified overlay on the map. If you return 
 
 ## See Also
 
-- [func mapView(MKMapView, selectionAccessoryFor: any MKAnnotation) -> MKSelectionAccessory?](mkmapviewdelegate/mapview(_:selectionaccessoryfor:).md)
-  Specifies the accessory to display for a selected annotation
-- [func mapView(MKMapView, rendererFor: any MKOverlay) -> MKOverlayRenderer](mkmapviewdelegate/mapview(_:rendererfor:).md)
-  Asks the delegate for a renderer object to use when drawing the specified overlay.
-- [func mapView(MKMapView, didAdd: [MKOverlayRenderer])](mkmapviewdelegate/mapview(_:didadd:)-793gj.md)
-  Tells the delegate when the map view adds one or more renderer objects to the map.
+- [func view(for: any MKOverlay) -> MKOverlayView](mkmapview/view(for:)-38z60.md)
+  Returns the view associated with the overlay object, if any.
 - [func mapView(MKMapView, didAddOverlayViews: [Any])](mkmapviewdelegate/mapview(_:didaddoverlayviews:).md)
   Tells the delegate when the map adds one or more overlay views to the map.
 

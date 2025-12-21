@@ -9,7 +9,7 @@ Displays the widget’s content along a curve if the context allows it.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration
@@ -60,6 +60,8 @@ var body: some View {
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
 - [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](view/dynamicisland(verticalplacement:).md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](view/accessorywidgetgroupstyle(_:).md)
+  The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 
 ---

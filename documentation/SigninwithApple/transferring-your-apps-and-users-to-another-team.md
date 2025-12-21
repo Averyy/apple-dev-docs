@@ -6,7 +6,7 @@ Migrate Sign in with Apple users to another team.
 
 #### Overview
 
-Sign in with Apple maintains an assocation between your developer team, your apps, and your users. If your app transfers to another team, the app’s users also transfer.  is the process of moving your apps and its associated users to a recipient team. Both your team and the recipient team must perform certain steps in order to complete the migration process.
+Sign in with Apple maintains an association between your developer team, your apps, and your users. If your app transfers to another team, the app’s users also transfer.  is the process of moving your apps and its associated users to a recipient team. Both your team and the recipient team must perform certain steps in order to complete the migration process.
 
 > **Note**:  If your app supports multiple platforms, ungroup the apps before starting the transfer. The App Store Connect app won’t let you transfer an app if it’s part of an app group. For more information on app groups and ungrouping, see [`Group Apps for Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple).
 
@@ -18,7 +18,7 @@ To avoid exposing the user identifier to a different team, Apple generates a  fo
 
 > **Note**:  When exporting the data from your database to transfer to the recipient team, you must exclude the team-scoped identifier and private email address, and include only the transfer identifier to identify the user.
 
-The transfer identifer is specific to the target team and has a one-to-one mapping with your team-scoped user identifier. If you transfer more than one application to the same recipient team (even over time), the transfer identifier for a given user remains the same across all applications.
+The transfer identifier is specific to the target team and has a one-to-one mapping with your team-scoped user identifier. If you transfer more than one application to the same recipient team (even over time), the transfer identifier for a given user remains the same across all applications.
 
 Because the transfer identifier remains stable across teams, it acts as a bridge between your team-scoped identifiers and the recipient’s team-scoped identifiers for the user. Since the transfer identifier is specific to the transfer process and to the teams, it’s not usable elsewhere.
 
@@ -55,6 +55,8 @@ Pragma: no-cache
 }
 ```
 
+For more information, see [`Receiving a User’s Identity Token`](receiving-a-users-identity-token.md)
+
 ##### Generate the Transfer Identifier
 
 With the user access token, invoke the `userMigrationInfo` endpoint. Provide the team-scoped identifier of the user as input with the following HTTP POST method.
@@ -85,7 +87,7 @@ Pragma: no-cache
 
 The response contains the `transfer_sub`, with the transfer identifier for the user that you send to the recipient team.
 
-> **Note**:  After the recipient team accepts the transfer, you have 60 days to generate transfer identifiers for the client.
+> **Note**:  The recipient team needs to exchange the transfer identifiers for new team-scoped identifiers within 60 days of accepting the app transfer. Your team can generate transfer identifiers before the recipient team accepts the app transfer, or up to 60 days after the recipient team accepts the app transfer.
 
 ##### Deliver Users to the Recipient Team
 

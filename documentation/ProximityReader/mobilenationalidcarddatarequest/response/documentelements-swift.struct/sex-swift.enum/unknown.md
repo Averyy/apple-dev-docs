@@ -1,33 +1,23 @@
-# !=(_:_:)
+# MobileNationalIDCardDataRequest.Response.DocumentElements.Sex.unknown
 
 **Framework**: ProximityReader  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+A constant that indicates the mobile national ID card holder’s sex is not known as defined in ISO/IEC 5218.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- visionOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/unknown)*

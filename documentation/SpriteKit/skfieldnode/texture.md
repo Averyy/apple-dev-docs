@@ -17,7 +17,6 @@ A normal texture that specifies the velocities at different points in a velocity
 ## Declaration
 
 ```swift
-@MainActor
 var texture: SKTexture? { get set }
 ```
 

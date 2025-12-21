@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: typealias
 
+The type of an error code.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

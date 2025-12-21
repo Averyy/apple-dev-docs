@@ -10,7 +10,7 @@ A Boolean that you set to enable or disable the entity and its descendants.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -19,10 +19,6 @@ A Boolean that you set to enable or disable the entity and its descendants.
 @MainActor
 @preconcurrency var isEnabled: Bool { get set }
 ```
-
-## Mentions
-
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
 
 #### Discussion
 

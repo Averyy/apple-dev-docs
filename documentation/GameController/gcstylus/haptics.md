@@ -6,7 +6,7 @@
 Gets the haptics profile for the stylus, if supported.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

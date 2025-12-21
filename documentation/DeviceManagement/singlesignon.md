@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure single sign-on (SSO).
+The payload that configures single sign-on (SSO).
 
 **Availability**:
 - iOS 7.0+
@@ -93,15 +93,15 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 ## See Also
 
 - [object DirectoryService](directoryservice.md)
-  The payload you use to configure an Active Directory (AD) domain.
+  The payload that configures an Active Directory (AD) domain.
 - [object ExtensibleSingleSignOn](extensiblesinglesignon.md)
-  The payload you use to configure an app extension that performs single sign-on (SSO).
+  The payload that configures an app extension that performs single sign-on (SSO).
 - [object ExtensibleSingleSignOnKerberos](extensiblesinglesignonkerberos.md)
-  The payload you use to configure an app extension that performs single sign-on with the Kerberos extension.
+  The payload that configures an app extension that performs single sign-on with the Kerberos extension.
 - [object Identification](identification.md)
-  The payload you use to configure the names of the account user.
+  The payload that configures the names of the account user.
 - [object IdentityPreference](identitypreference.md)
-  The payload you use to configure the user’s identity on the device.
+  The payload that configures the user’s identity on the device.
 
 
 ---

@@ -10,7 +10,7 @@ Preview a timeline-style widget.
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration
@@ -26,13 +26,13 @@ Preview a timeline-style widget.
 
 #### Overview
 
-The preview will allow you to step through your timeline and test out the transitions between entries. (The dates of the entries will be ignored.)
+Provide the preview with sample data and use it to step through the timeline while ignoring the dates of the entries, and test out the transitions between them.
 
-> **Note**: The timeline entries must be of the type expected by the widget. (This will be enforced at run-time.)
+> **Note**: The timeline entries must be of the type that the widget expects.
 
 ## Parameters
 
-- `name`: An optional display name for the preview, which will appear in the canvas.
+- `name`: An optional display name for the preview that appears in the Xcode preview canvas.
 - `family`: The widget family to display.
 - `widget`: A closure producing the widget to be previewed.
 - `timeline`: A closure building the timeline of entries to be previewed.

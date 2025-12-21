@@ -16,6 +16,13 @@
 var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput? { get set }
 ```
 
+## See Also
+
+- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md)
+  The array of allowed credentials.
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
+  The request’s binary large object value.
+
 
 ---
 

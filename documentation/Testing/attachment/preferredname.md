@@ -7,7 +7,7 @@ A filename to use when writing this attachment to a test report or to a file on 
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

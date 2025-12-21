@@ -5,9 +5,9 @@
 Capture photos and record video using the front and rear iPhone and iPad cameras.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -258,7 +258,7 @@ func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSet
 }
 ```
 
-To learn more about capturing photos with AVFoundation, see [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
+To learn more about capturing photos with AVFoundation, see [`Capturing still and Live Photos`](capturing-still-and-live-photos.md).
 
 ##### Record a Movie
 
@@ -312,15 +312,15 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 
 ## See Also
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 - [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
-- [Capturing cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
 - [class AVCaptureSession](avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.

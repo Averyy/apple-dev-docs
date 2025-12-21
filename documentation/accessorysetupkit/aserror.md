@@ -39,14 +39,8 @@ struct ASError
 - [static var unknown: ASError.Code](aserror/unknown.md)
 ### Accessing the error domain
 - [static var errorDomain: String](aserror/errordomain.md)
-  The domain of the error.
 - [let ASErrorDomain: String](aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
-### Default Implementations
-- [CustomNSError Implementations](aserror/customnserror-implementations.md)
-- [Equatable Implementations](aserror/equatable-implementations.md)
-- [Error Implementations](aserror/error-implementations.md)
-- [Hashable Implementations](aserror/hashable-implementations.md)
 
 ## Relationships
 

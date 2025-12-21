@@ -20,7 +20,7 @@ var hidesBarsOnTap: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the navigation controller toggles the hiding and showing of its navigation bar and toolbar in response to an otherwise unhandled tap in the content area. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the navigation controller toggles the hiding and showing of its navigation bar and toolbar in response to an otherwise unhandled tap in the content area. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

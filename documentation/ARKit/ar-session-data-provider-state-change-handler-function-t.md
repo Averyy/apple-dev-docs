@@ -3,8 +3,10 @@
 **Framework**: ARKit  
 **Kind**: typealias
 
+A handler function that the session calls when one or more data providers associated with it change state.
+
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -12,6 +14,14 @@
 ```swift
 typedef void (*)(void *, NSObject<OS_ar_data_providers> *, ar_data_provider_state_t, NSObject<OS_ar_error> *, NSObject<OS_ar_data_provider> *) ar_session_data_provider_state_change_handler_function_t;
 ```
+
+## Parameters
+
+- `context`: The application-defined context.
+- `data_providers`: The collection of data providers that changed state.
+- `new_state`: The data provider state that triggered the event.
+- `error`: An error associated with the state change, if any. The returned error supports ARC. In non-ARC files, call   to   release the error. Also see  .
+- `failed_data_provider`: The data provider that failed and caused the error, if any.
 
 ## See Also
 

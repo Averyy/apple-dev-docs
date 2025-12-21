@@ -6,7 +6,7 @@
 An error that might occur when running data providers on an ARKit session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,7 +19,7 @@ struct Error
 
 ### Inspecting ARKit errors
 - [let dataProvider: (any DataProvider)?](arkitsession/error/dataprovider.md)
-  The data provider that caused an error in a session.
+  The data provider that causes an error in a session, if any.
 - [var code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
   The error code for an ARKit session error.
 - [ARKitSession.Error.Code](arkitsession/error/code-swift.enum.md)

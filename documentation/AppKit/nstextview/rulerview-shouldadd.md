@@ -17,7 +17,7 @@ func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aMarker` can be added, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aMarker` can be added, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

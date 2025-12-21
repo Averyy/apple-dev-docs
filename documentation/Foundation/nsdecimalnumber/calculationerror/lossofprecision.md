@@ -30,14 +30,6 @@ case lossOfPrecision
   The number is too small to represent.
 - [NSDecimalNumber.CalculationError.divideByZero](nsdecimalnumber/calculationerror/dividebyzero.md)
   The caller tried to divide by `0`.
-- [NSDecimalNumber.CalculationError.noError](nsdecimalnumber/calculationerror/noerror.md)
-  No error occurred.
-- [NSDecimalNumber.CalculationError.overflow](nsdecimalnumber/calculationerror/overflow.md)
-  The number is too large to represent.
-- [NSDecimalNumber.CalculationError.underflow](nsdecimalnumber/calculationerror/underflow.md)
-  The number is too small to represent.
-- [NSDecimalNumber.CalculationError.divideByZero](nsdecimalnumber/calculationerror/dividebyzero.md)
-  The caller tried to divide by `0`.
 
 
 ---

@@ -25,11 +25,7 @@ Create an [`NSWorkspace.OpenConfiguration`](nsworkspace/openconfiguration.md) ob
   A Boolean value indicating whether you require the URL to have an associated universal link.
 - [var isForPrinting: Bool](nsworkspace/openconfiguration/isforprinting.md)
   A Boolean value indicating whether you want to print the contents of documents and URLs instead of opening them.
-- [var requiresUniversalLinks: Bool](nsworkspace/openconfiguration/requiresuniversallinks.md)
-  A Boolean value indicating whether you require the URL to have an associated universal link.
-- [var isForPrinting: Bool](nsworkspace/openconfiguration/isforprinting.md)
-  A Boolean value indicating whether you want to print the contents of documents and URLs instead of opening them.
-### Specifying App-Related Behaviors
+### Specifying app-related behaviors
 - [var activates: Bool](nsworkspace/openconfiguration/activates.md)
   A Boolean value indicating whether the system activates the app and brings it to the foreground.
 - [var addsToRecentItems: Bool](nsworkspace/openconfiguration/addstorecentitems.md)
@@ -42,12 +38,10 @@ Create an [`NSWorkspace.OpenConfiguration`](nsworkspace/openconfiguration.md) ob
   A Boolean value indicating whether you want the app to hide itself after it launches.
 - [var hidesOthers: Bool](nsworkspace/openconfiguration/hidesothers.md)
   A Boolean value indicating whether you want to hide all apps except the one that launched.
-### Prompting the User
+### Prompting the user
 - [var promptsUserIfNeeded: Bool](nsworkspace/openconfiguration/promptsuserifneeded.md)
   A Boolean value indicating whether to display errors, authentication requests, or other UI elements to the user.
-- [var promptsUserIfNeeded: Bool](nsworkspace/openconfiguration/promptsuserifneeded.md)
-  A Boolean value indicating whether to display errors, authentication requests, or other UI elements to the user.
-### Specifying Launch Attributes
+### Specifying launch attributes
 - [var appleEvent: NSAppleEventDescriptor?](nsworkspace/openconfiguration/appleevent.md)
   The first Apple event to send to the new app.
 - [var arguments: [String]](nsworkspace/openconfiguration/arguments.md)

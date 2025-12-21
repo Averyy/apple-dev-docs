@@ -5,9 +5,6 @@
 
 A tween atom, which can be either a single tween atom, a tween atom in a tween sequence, or an interpolation tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Its parent is the tween QT atom container (which you specify with the constant `kParentAtomIsContainer`).

@@ -6,7 +6,7 @@
 Rotates a view with impacts to its frame in a containing layout
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

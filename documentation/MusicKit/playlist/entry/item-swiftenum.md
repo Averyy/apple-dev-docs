@@ -22,9 +22,6 @@ enum Item
 
 ## Topics
 
-### Operators
-- [static func == (Playlist.Entry.Item, Playlist.Entry.Item) -> Bool](playlist/entry/item-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [Playlist.Entry.Item.musicVideo(_:)](playlist/entry/item-swift.enum/musicvideo(_:).md)
   An item that corresponds to a music video.
@@ -47,9 +44,7 @@ enum Item
   The editorial notes for the playlist entry’s item.
 - [var genreNames: [String]](playlist/entry/item-swift.enum/genrenames.md)
   The names of the playlist entry’s item associated genres.
-- [var hashValue: Int](playlist/entry/item-swift.enum/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](playlist/entry/item-swift.enum/id-swift.property.md)
+- [var id: MusicItemID](playlist/entry/item-swift.enum/id.md)
   The unique identifier for the playlist entry item.
 - [var isrc: String?](playlist/entry/item-swift.enum/isrc.md)
   The International Standard Recording Code (ISRC) for the playlist entry’s item.
@@ -69,19 +64,6 @@ enum Item
   The title of the playlist entry’s item.
 - [var url: URL?](playlist/entry/item-swift.enum/url.md)
   The URL for the playlist entry’s item.
-### Instance Methods
-- [func hash(into: inout Hasher)](playlist/entry/item-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [Playlist.Entry.Item.ID](playlist/entry/item-swift.enum/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](playlist/entry/item-swift.enum/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](playlist/entry/item-swift.enum/customstringconvertible-implementations.md)
-- [Decodable Implementations](playlist/entry/item-swift.enum/decodable-implementations.md)
-- [Encodable Implementations](playlist/entry/item-swift.enum/encodable-implementations.md)
-- [Equatable Implementations](playlist/entry/item-swift.enum/equatable-implementations.md)
-- [MusicItem Implementations](playlist/entry/item-swift.enum/musicitem-implementations.md)
 
 ## Relationships
 

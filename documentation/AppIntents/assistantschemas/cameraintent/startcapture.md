@@ -29,7 +29,7 @@ var startCapture: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.camera.startCapture` schema:
 
 ```swift
-@AssistantIntent(schema: .camera.startCapture)
+@AppIntent(schema: .camera.startCapture)
 struct StartCameraCaptureIntent: AppIntent {
     @Parameter
     var captureMode: CaptureMode

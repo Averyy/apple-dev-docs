@@ -20,6 +20,11 @@ Describes the video projection.
 var projectionType: CMProjectionType { get }
 ```
 
+## See Also
+
+- [var stereoViewComponents: CMStereoViewComponents](avassetvariant/videoattributes-swift.class/layoutattributes/stereoviewcomponents.md)
+  Attributes that describe the video’s stereo components.
+
 
 ---
 

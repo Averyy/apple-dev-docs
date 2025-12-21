@@ -43,12 +43,17 @@ A replace transition animates the change from one symbol image to another. You c
   The configuration for the effect.
 ### Structures
 - [ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magicreplace.md)
+  A symbol effect applies the MagicReplace animation to symbol images.
 ### Instance Methods
 - [func magic(fallback: ReplaceSymbolEffect) -> ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magic(fallback:).md)
+  Returns an effect preferring MagicReplace and a configured ReplaceEffect if MagicReplace is not possible.
 ### Type Properties
 - [static var downUp: ReplaceSymbolEffect](replacesymboleffect/downup-swift.type.property.md)
+  Returns an effect requesting the Down-Up variant of the Replace animation.
 - [static var offUp: ReplaceSymbolEffect](replacesymboleffect/offup-swift.type.property.md)
+  Returns an effect requesting the Off-Up variant of the Replace animation.
 - [static var upUp: ReplaceSymbolEffect](replacesymboleffect/upup-swift.type.property.md)
+  Returns an effect requesting the Up-Up variant of the Replace animation.
 
 ## Relationships
 
@@ -78,8 +83,11 @@ A replace transition animates the change from one symbol image to another. You c
 - [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [struct BreatheSymbolEffect](breathesymboleffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [struct RotateSymbolEffect](rotatesymboleffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [struct WiggleSymbolEffect](wigglesymboleffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

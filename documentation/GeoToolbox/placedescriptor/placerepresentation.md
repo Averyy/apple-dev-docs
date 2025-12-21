@@ -6,13 +6,13 @@
 Values that represent a physical place, suitable for use when searching or retrieving rich data.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -34,17 +34,6 @@ enum PlaceRepresentation
   A physical location described by its latitude and longitude.
 - [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](placedescriptor/placerepresentation/devicelocation(_:).md)
   Physical location in a coordinate system that a device would collect.
-### Operators
-- [static func == (PlaceDescriptor.PlaceRepresentation, PlaceDescriptor.PlaceRepresentation) -> Bool](placedescriptor/placerepresentation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](placedescriptor/placerepresentation/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](placedescriptor/placerepresentation/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](placedescriptor/placerepresentation/equatable-implementations.md)
 
 ## Relationships
 

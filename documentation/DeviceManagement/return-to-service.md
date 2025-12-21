@@ -6,9 +6,13 @@
 Gets the return-to-service configuration from the server.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- visionOS 26.0+
+
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 

@@ -19,6 +19,10 @@ The purchase succeeded and results in a transaction.
 case success(VerificationResult<Transaction>)
 ```
 
+## Mentions
+
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+
 ## See Also
 
 - [Product.PurchaseResult.userCancelled](product/purchaseresult/usercancelled.md)

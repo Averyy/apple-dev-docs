@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: init
 
-Initializes a box size.
+Creates a default size instance by setting the initial values for its width, height, and depth properties to zero.
 
 **Availability**:
 - iOS ?+
@@ -22,9 +22,9 @@ init()
 ## See Also
 
 - [init(width: Int, height: Int, depth: Int)](mtlsize/init(width:height:depth:).md)
-  Initializes a size for an object with the specified dimensions.
+  Creates a size instance with values for its width, height, and depth properties.
 - [func MTLSizeMake(Int, Int, Int) -> MTLSize](mtlsizemake(_:_:_:).md)
-  Creates a size for an object using the specified dimensions.
+  Creates a size instance with values for its width, height, and depth properties.
 
 
 ---

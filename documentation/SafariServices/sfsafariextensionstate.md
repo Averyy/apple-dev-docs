@@ -3,10 +3,14 @@
 **Framework**: Safari Services  
 **Kind**: class
 
-The state of a Safari app extension.
+The state of a Safari extension.
 
 **Availability**:
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
 - macOS 10.12+
+- visionOS 26.2+
 
 ## Declaration
 
@@ -14,11 +18,15 @@ The state of a Safari app extension.
 class SFSafariExtensionState
 ```
 
+#### Overview
+
+In macOS, this reflects the state of either a Safari app extension or Safari web extension. In iOS and visionOS, this reflects the state of a Safari web extension.
+
 ## Topics
 
 ### Instance Properties
 - [var isEnabled: Bool](sfsafariextensionstate/isenabled.md)
-  A Boolean value that indicates whether the user has enabled the app extension.
+  A Boolean value that indicates whether the extension is enabled.
 
 ## Relationships
 
@@ -47,7 +55,7 @@ class SFSafariExtensionState
 - [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
 - [class SFSafariExtensionManager](sfsafariextensionmanager.md)
-  A class that your app uses to find out the current state of a Safari app extension.
+  A class that your app uses to find out the current state of a Safari extension.
 - [class SFSafariPageProperties](sfsafaripageproperties.md)
   An object that captures information about a webpage.
 - [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)

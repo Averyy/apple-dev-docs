@@ -22,7 +22,7 @@ var isHTTPOnly: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the cookie should only be sent using HTTP headers, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the cookie should only be sent using HTTP headers, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 Cookies can be marked as HTTP-only by a server (or by JavaScript code). Cookies marked as such must only be sent via HTTP Headers in HTTP requests for URLs that match both the path and domain of the respective cookies.
 

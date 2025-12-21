@@ -19,7 +19,7 @@ func closeAllDocuments(withDelegate delegate: Any?, didCloseAllSelector: Selecto
 
 Each `NSDocument` object is sent [`canClose(withDelegate:shouldClose:contextInfo:)`](nsdocument/canclose(withdelegate:shouldclose:contextinfo:).md), which, if the document is dirty, gives it a chance to refuse to close or to save itself first. This method may ask whether to save or to perform a save.
 
-The `didCloseAllSelector` callback method is called with [`true`](https://developer.apple.com/documentation/swift/true) if all documents are closed, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Pass the `contextInfo` object with the callback. The `didCloseAllSelector` callback method should have the following signature:
+The `didCloseAllSelector` callback method is called with [`true`](https://developer.apple.com/documentation/Swift/true) if all documents are closed, and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Pass the `contextInfo` object with the callback. The `didCloseAllSelector` callback method should have the following signature:
 
 ```objc
 - (void)documentController:(NSDocumentController *)docController  didCloseAll:(BOOL)didCloseAll contextInfo:(void *)contextInfo

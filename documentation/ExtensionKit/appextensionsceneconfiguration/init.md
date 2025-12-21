@@ -21,9 +21,9 @@ Creates a scene configuration from a closure.
 @preconcurrency init<Content>(_ content: @autoclosure @escaping @MainActor () -> Content) where Content : AppExtensionScene
 ```
 
-## Parameters
+#### Discussion
 
-- `content`: The SwiftUI closure from which to build the user interface for the scene configuration.
+- content: The SwiftUI closure from which to build the scene’s content.
 
 ## See Also
 

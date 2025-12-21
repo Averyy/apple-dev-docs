@@ -6,8 +6,8 @@
 Current status and performance information for Wi-Fi Aware, or `nil` if this path is not over Wi-Fi Aware.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

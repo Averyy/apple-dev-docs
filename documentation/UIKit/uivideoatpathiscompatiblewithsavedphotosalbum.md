@@ -19,7 +19,7 @@ func UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(_ videoPath: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the video can be saved to the Camera Roll album or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the video can be saved to the Camera Roll album or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 

@@ -6,13 +6,13 @@
 Whether to use extended length APDU.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ var useExtendedLength: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the Smart Card slot supports transmitting extended length commands, and the ATR announces that extended length APDU is supported.
+By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when the Smart Card slot supports transmitting extended length commands, and the ATR announces that extended length APDU is supported.
 
 ## See Also
 

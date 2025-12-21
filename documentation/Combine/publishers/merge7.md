@@ -22,15 +22,17 @@ struct Merge7<A, B, C, D, E, F, G> where A : Publisher, B : Publisher, C : Publi
 
 ## Topics
 
-### Creating a Merge-Seven Publisher
+### Creating a merge-seven publisher
 - [init(A, B, C, D, E, F, G)](publishers/merge7/init(_:_:_:_:_:_:_:).md)
   Creates a publisher created by applying the merge function to seven upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge8<A, B, C, D, E, F, G, P>](publishers/merge7/merge(with:).md)
+### Declaring supporting types
 - [Publishers.Merge7.Output](publishers/merge7/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge7.Failure](publishers/merge7/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge7/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge7/b.md)
@@ -45,17 +47,11 @@ struct Merge7<A, B, C, D, E, F, G> where A : Publisher, B : Publisher, C : Publi
   A sixth publisher to merge.
 - [let g: G](publishers/merge7/g.md)
   An seventh publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge7<A, B, C, D, E, F, G>, Publishers.Merge7<A, B, C, D, E, F, G>) -> Bool](publishers/merge7/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge7/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge7-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge7/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge7/publisher-implementations.md)
 
 ## Relationships
 

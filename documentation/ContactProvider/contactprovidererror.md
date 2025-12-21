@@ -43,19 +43,9 @@ enum ContactProviderError
   The app invalidated the extension while it was enumerating content or changes.
 - [ContactProviderError.extensionInvalidateTimeout](contactprovidererror/extensioninvalidatetimeout.md)
   The extension invalidate operation timed out.
-### Hashing
-- [func hash(into: inout Hasher)](contactprovidererror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](contactprovidererror/hashvalue.md)
-  The hash value.
 ### Enumeration Cases
 - [ContactProviderError.domainNotRegistered](contactprovidererror/domainnotregistered.md)
   The domain has not been registered.
-### Default Implementations
-- [CustomNSError Implementations](contactprovidererror/customnserror-implementations.md)
-- [Equatable Implementations](contactprovidererror/equatable-implementations.md)
-- [Error Implementations](contactprovidererror/error-implementations.md)
-- [LocalizedError Implementations](contactprovidererror/localizederror-implementations.md)
 
 ## Relationships
 

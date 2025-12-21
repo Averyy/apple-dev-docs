@@ -19,6 +19,35 @@ let postedDate: Date?
 
 If not provided, use [`transactionDate`](transaction/transactiondate.md) as `postedDate`.
 
+## See Also
+
+- [let accountID: UUID](transaction/accountid.md)
+  The account ID the transaction belongs to.
+- [let creditDebitIndicator: CreditDebitIndicator](transaction/creditdebitindicator.md)
+  An indicator that describes if the transaction is a credit or a debit.
+- [let foreignCurrencyAmount: CurrencyAmount?](transaction/foreigncurrencyamount.md)
+  The total amount of the transaction, if it was carried out in a foreign currency.
+- [let foreignCurrencyExchangeRate: Decimal?](transaction/foreigncurrencyexchangerate.md)
+  The currency exchange rate, if the transaction was carried out in a foreign currency.
+- [let id: UUID](transaction/id.md)
+  A unique internal ID.
+- [let merchantCategoryCode: MerchantCategoryCode?](transaction/merchantcategorycode.md)
+  The ISO 18245 category code for the transaction.
+- [let merchantName: String?](transaction/merchantname.md)
+  The name of the merchant, if present.
+- [let originalTransactionDescription: String](transaction/originaltransactiondescription.md)
+  The unmodified description of the transaction.
+- [let status: TransactionStatus](transaction/status.md)
+  The status of the transaction, if available.
+- [let transactionAmount: CurrencyAmount](transaction/transactionamount.md)
+  The total amount of the transaction.
+- [let transactionDate: Date](transaction/transactiondate.md)
+  The time the transaction took place, if available.
+- [let transactionDescription: String](transaction/transactiondescription.md)
+  A description of the transaction.
+- [let transactionType: TransactionType](transaction/transactiontype.md)
+  The type of the transaction.
+
 
 ---
 

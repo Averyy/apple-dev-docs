@@ -22,7 +22,7 @@ var isLongLived: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to make the operation long-lived. The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you change this property’s value after you execute the operation, the change has no effect.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to make the operation long-lived. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If you change this property’s value after you execute the operation, the change has no effect.
 
 For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
 

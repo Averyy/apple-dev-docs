@@ -17,8 +17,8 @@ optional func localizableSampleTemplate(for complication: CLKComplication) async
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Adding Placeholders for Your Complication](adding-placeholders-for-your-complication.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Discussion
 

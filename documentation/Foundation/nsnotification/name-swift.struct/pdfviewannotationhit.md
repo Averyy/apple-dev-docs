@@ -28,7 +28,7 @@ Use the `@”PDFAnnotationHit”` key to obtain userinfo of type `PDFAnnotation 
 ## See Also
 
 - [static let PDFDocumentDidBeginFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginfind.md)
-  A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method begins finding.
+  A notification that the document began a find operation.
 - [static let PDFDocumentDidBeginPageFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginpagefind.md)
   A notification that a find operation begins working on a new page of a document.
 - [static let PDFDocumentDidBeginPageWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginpagewrite.md)
@@ -36,7 +36,7 @@ Use the `@”PDFAnnotationHit”` key to obtain userinfo of type `PDFAnnotation 
 - [static let PDFDocumentDidBeginWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginwrite.md)
   A notification that a write operation begins working on a document.
 - [static let PDFDocumentDidEndFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendfind.md)
-  A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method returns.
+  A notification that the document finished a find operation.
 - [static let PDFDocumentDidEndPageFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagefind.md)
   A notification that a find operation finishes working on a page in a document.
 - [static let PDFDocumentDidEndPageWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagewrite.md)
@@ -46,7 +46,7 @@ Use the `@”PDFAnnotationHit”` key to obtain userinfo of type `PDFAnnotation 
 - [static let PDFDocumentDidFindMatch: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidfindmatch.md)
   A notification that a string match is found in a document.
 - [static let PDFDocumentDidUnlock: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidunlock.md)
-  A notification that a document unlocks after a [`unlock(withPassword:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/unlock(withPassword:)) message.
+  A notification that a document unlocked.
 - [static let PDFThumbnailViewDocumentEdited: NSNotification.Name](nsnotification/name-swift.struct/pdfthumbnailviewdocumentedited.md)
 - [static let PDFViewAnnotationWillHit: NSNotification.Name](nsnotification/name-swift.struct/pdfviewannotationwillhit.md)
   A notification posted before the user clicks an annotation.

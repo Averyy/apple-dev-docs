@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-A struct that encapsulates the different environment-blending modes that can be applied to an entity
+A struct that encapsulates the different environment-blending modes that can be applied to an entity.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,10 +18,10 @@ struct BlendingMode
 
 ### Type Properties
 - [static var `default`: EnvironmentBlendingComponent.BlendingMode](environmentblendingcomponent/blendingmode/default.md)
-  No special blending is applied
+  No special blending is applied.
 ### Type Methods
 - [static func occluded(by: EnvironmentBlendingComponent.EnvironmentType) -> EnvironmentBlendingComponent.BlendingMode](environmentblendingcomponent/blendingmode/occluded(by:).md)
-  The entity will receive a depth-based occlusion treatment within the specified environment type
+  The entity receives a depth-based occlusion treatment within the specified environment type.
 
 ## Relationships
 

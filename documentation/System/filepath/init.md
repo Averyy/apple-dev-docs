@@ -24,8 +24,6 @@ init()
 
 - [init(stringLiteral: String)](filepath/init(stringliteral:).md)
   Creates a file path from a string literal.
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](filepath/init(extendedgraphemeclusterliteral:).md)
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](filepath/init(unicodescalarliteral:).md)
 
 
 ---

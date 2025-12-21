@@ -3,7 +3,7 @@
 **Framework**: App Store Server Notifications  
 **Kind**: typealias
 
-The string identifier of a subscription offer that you create in App Store Connect.
+The string identifier of an offer that you create in App Store Connect.
 
 **Availability**:
 - App Store Server Notifications 2.0+
@@ -16,9 +16,9 @@ string offerIdentifier
 
 #### Discussion
 
-The `offerIdentifier` is a string that you provide in App Store Connect when you set up a subscription offer. All offer types ([`offerType`](offertype.md)) have offer identifiers, except for introductory offers.
+The `offerIdentifier` is a string that you provide in App Store Connect when you set up an offer. All offer types ([`offerType`](offertype.md)) have offer identifiers, except for introductory offers.
 
-For more information on offer codes, see [`Supporting subscription offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-subscription-offer-codes-in-your-app) and [`Set up offer codes`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev6a098e4b1). For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
+For more information on offer codes, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-offer-codes-in-your-app). For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
 
 ## See Also
 
@@ -27,9 +27,9 @@ For more information on offer codes, see [`Supporting subscription offer codes i
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for a subscription offer for an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 
 
 ---

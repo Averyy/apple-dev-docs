@@ -1,4 +1,4 @@
 Completed scraping Analytics Reports!
-Total pages scraped: 0
-Pages skipped (unchanged): 122
+Total pages scraped: 137
+Pages skipped (unchanged): 1
 Pages failed: 0

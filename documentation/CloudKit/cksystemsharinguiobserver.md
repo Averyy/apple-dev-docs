@@ -61,7 +61,7 @@ The system only propagates changes on the local device using `CKSystemSharingUI
   A transfer representation the system uses to share an item.
 - [class CKAllowedSharingOptions](ckallowedsharingoptions.md)
   An object that controls participant access and permission options.
-- [@MainActor class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.

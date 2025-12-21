@@ -8,7 +8,6 @@ An image-analysis request that tracks movement of a previously identified rectan
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,21 +27,6 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
 ### Creating a request
 - [init(detectedRectangle: any QuadrilateralProviding & VisionObservation, TrackRectangleRequest.Revision?, frameAnalysisSpacing: CMTime?)](trackrectanglerequest/init(detectedrectangle:_:frameanalysisspacing:).md)
   Creates a rectangle tracking request.
-### Getting the revision
-- [let revision: TrackRectangleRequest.Revision](trackrectanglerequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [TrackRectangleRequest.Revision]](trackrectanglerequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [TrackRectangleRequest.Revision](trackrectanglerequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [let inputObservation: any QuadrilateralProviding & VisionObservation](trackrectanglerequest/inputobservation.md)
-  The object to track.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
-  A protocol for objects that have a bounding quadrilateral.
-- [var trackingLevel: TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.property.md)
-  The tracking quality preference.
-- [TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.enum.md)
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -56,8 +40,24 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct RectangleObservation](rectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
+### Configuring a request
+- [let inputObservation: any QuadrilateralProviding & VisionObservation](trackrectanglerequest/inputobservation.md)
+  The object to track.
+- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+  A protocol for objects that have a bounding quadrilateral.
+- [var trackingLevel: TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.property.md)
+  The tracking quality preference.
+- [TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.enum.md)
+### Getting the revision
+- [let revision: TrackRectangleRequest.Revision](trackrectanglerequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [TrackRectangleRequest.Revision]](trackrectanglerequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [TrackRectangleRequest.Revision](trackrectanglerequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -73,8 +73,12 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
 
 ## See Also
 
+- [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
+  A request that detects the trajectories of shapes moving along a parabolic path.
 - [class TrackObjectRequest](trackobjectrequest.md)
   An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
+- [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
+  A request that determines the direction change of vectors for each pixel from a previous to current image.
 
 
 ---

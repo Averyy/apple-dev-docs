@@ -6,13 +6,13 @@
 Values that describe the representation of a physical place using proprietary attributes, such as an alphanumeric location identifier from a mapping service provider.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -25,17 +25,6 @@ enum SupportingPlaceRepresentation
 ### Getting available supporting representations
 - [PlaceDescriptor.SupportingPlaceRepresentation.serviceIdentifiers(_:)](placedescriptor/supportingplacerepresentation/serviceidentifiers(_:).md)
   Identifiers that represent a place for different mapping service providers
-### Operators
-- [static func == (PlaceDescriptor.SupportingPlaceRepresentation, PlaceDescriptor.SupportingPlaceRepresentation) -> Bool](placedescriptor/supportingplacerepresentation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](placedescriptor/supportingplacerepresentation/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](placedescriptor/supportingplacerepresentation/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](placedescriptor/supportingplacerepresentation/equatable-implementations.md)
 
 ## Relationships
 

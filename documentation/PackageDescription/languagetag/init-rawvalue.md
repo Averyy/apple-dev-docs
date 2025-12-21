@@ -27,8 +27,6 @@ If there is no value of the type that corresponds with the specified raw value, 
   Creates an instance initialized to the given value.
 - [init(unicodeScalarLiteral: String)](languagetag/init(unicodescalarliteral:).md)
   Creates an instance initialized to the given value.
-- [var rawValue: String](languagetag/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

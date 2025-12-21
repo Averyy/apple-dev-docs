@@ -21,7 +21,7 @@ var isDepthWriteEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which indicates the depth attachment is read-only.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which indicates the depth attachment is read-only.
 
 ## See Also
 

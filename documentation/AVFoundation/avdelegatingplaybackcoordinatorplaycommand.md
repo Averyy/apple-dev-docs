@@ -21,7 +21,7 @@ class AVDelegatingPlaybackCoordinatorPlayCommand
 
 ## Topics
 
-### Accessing Command Details
+### Accessing command details
 - [var rate: Float](avdelegatingplaybackcoordinatorplaycommand/rate.md)
   A rate to use when starting playback.
 - [var itemTime: CMTime](avdelegatingplaybackcoordinatorplaycommand/itemtime.md)

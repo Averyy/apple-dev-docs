@@ -19,6 +19,10 @@ kern_return_t CreatePMAssertion(uint32_t assertionBits, uint64_t * assertionID, 
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
+#### Discussion
+
+Create a power management assertion.
+
 ## Parameters
 
 - `assertionBits`: Bit masks including all the flavors that require to be asserted.

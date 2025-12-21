@@ -73,6 +73,8 @@ struct PhotoView: View {
 
 Sometimes the content that your app shares isn’t immediately available. You can use [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) or [`DataRepresentation`](https://developer.apple.com/documentation/CoreTransferable/DataRepresentation) when you need an asynchronous operation, like a network request, to retrieve and prepare the content.
 
+Note that some applications offer their sharing service for files, but not for a wide range of different data types, for example, Mail.app, Notes.app, Messages.app or AirDrop. If you don’t see a particular sharing service in the presented `ShareLink`, try adding a [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) to the type’s `Transferable` conformance.
+
 A `Transferable` type also lets you provide multiple content types for a single shareable item. The share interface shows relevant sharing services based on the types that you provide.
 
 The previous example also shows how you provide a preview of your content to show in the share interface.

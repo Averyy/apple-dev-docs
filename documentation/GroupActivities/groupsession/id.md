@@ -29,8 +29,6 @@ The system assigns a globally unique identifier to each session. This identifier
   The current state of the session.
 - [GroupSession.State](groupsession/state-swift.enum.md)
   The possible states of a session.
-- [var description: String](groupsession/description.md)
-  A textual representation of this instance.
 
 
 ---

@@ -24,8 +24,6 @@ class State
 ### Instance Properties
 - [var audioVariant: AudioVariant?](musicplayer/state-swift.class/audiovariant.md)
   The active variant that indicates the quality of audio for the current entry.
-- [var objectWillChange: AnyPublisher<Void, Never>](musicplayer/state-swift.class/objectwillchange.md)
-  A publisher that emits before the object has changed.
 - [var playbackRate: Float](musicplayer/state-swift.class/playbackrate.md)
   The current playback rate for the player.
 - [var playbackStatus: MusicPlayer.PlaybackStatus](musicplayer/state-swift.class/playbackstatus.md)
@@ -34,9 +32,6 @@ class State
   The current repeat mode of the music player.
 - [var shuffleMode: MusicPlayer.ShuffleMode?](musicplayer/state-swift.class/shufflemode.md)
   The current shuffle mode of the music player.
-### Type Aliases
-- [MusicPlayer.State.ObjectWillChangePublisher](musicplayer/state-swift.class/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
 
 ## Relationships
 

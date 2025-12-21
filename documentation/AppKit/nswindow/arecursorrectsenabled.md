@@ -17,7 +17,7 @@ var areCursorRectsEnabled: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when cursor rectangles are enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when cursor rectangles are enabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

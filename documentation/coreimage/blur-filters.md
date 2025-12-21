@@ -4,6 +4,67 @@
 
 Apply blurs, simulate motion and zoom effects, reduce noise, and erode and dilate image regions.
 
+## Topics
+
+### Filters
+- [class func bokehBlur() -> any CIFilter & CIBokehBlur](cifilter-swift.class/bokehblur.md)
+  Applies a bokeh effect to an image.
+- [class func boxBlur() -> any CIFilter & CIBoxBlur](cifilter-swift.class/boxblur.md)
+  Applies a square-shaped blur to an area of an image.
+- [class func discBlur() -> any CIFilter & CIDiscBlur](cifilter-swift.class/discblur.md)
+  Applies a circle-shaped blur to an area of an image.
+- [class func gaussianBlur() -> any CIFilter & CIGaussianBlur](cifilter-swift.class/gaussianblur.md)
+  Blurs an image with a Gaussian distribution pattern.
+- [class func maskedVariableBlur() -> any CIFilter & CIMaskedVariableBlur](cifilter-swift.class/maskedvariableblur.md)
+  Blurs a specified portion of an image.
+- [class func median() -> any CIFilter & CIMedian](cifilter-swift.class/median.md)
+  Calculates the median of an image to refine detail.
+- [class func morphologyGradient() -> any CIFilter & CIMorphologyGradient](cifilter-swift.class/morphologygradient.md)
+  Detects and highlights edges of objects.
+- [class func morphologyMaximum() -> any CIFilter & CIMorphologyMaximum](cifilter-swift.class/morphologymaximum.md)
+  Blurs a circular area by enlarging contrasting pixels.
+- [class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum](cifilter-swift.class/morphologyminimum.md)
+  Blurs a circular area by reducing contrasting pixels.
+- [class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleMaximum](cifilter-swift.class/morphologyrectanglemaximum.md)
+  Blurs a rectangular area by enlarging contrasting pixels.
+- [class func morphologyRectangleMinimum() -> any CIFilter & CIMorphologyRectangleMinimum](cifilter-swift.class/morphologyrectangleminimum.md)
+  Blurs a rectangular area by reducing contrasting pixels.
+- [class func motionBlur() -> any CIFilter & CIMotionBlur](cifilter-swift.class/motionblur.md)
+  Creates motion blur on an image.
+- [class func noiseReduction() -> any CIFilter & CINoiseReduction](cifilter-swift.class/noisereduction.md)
+  Reduces noise by sharpening the edges of objects.
+- [class func zoomBlur() -> any CIFilter & CIZoomBlur](cifilter-swift.class/zoomblur.md)
+  Creates a zoom blur centered around a single point on the image.
+### Protocols
+- [protocol CIBokehBlur](cibokehblur.md)
+  The properties you use to configure a bokeh blur filter.
+- [protocol CIBoxBlur](ciboxblur.md)
+  The properties you use to configure a box blur filter.
+- [protocol CIDiscBlur](cidiscblur.md)
+  The properties you use to configure a disc blur filter.
+- [protocol CIGaussianBlur](cigaussianblur.md)
+  The properties you use to configure a Gaussian blur filter.
+- [protocol CIMaskedVariableBlur](cimaskedvariableblur.md)
+  The properties you use to configure a masked variable blur filter.
+- [protocol CIMedian](cimedian.md)
+  The properties you use to configure a median filter.
+- [protocol CIMorphologyGradient](cimorphologygradient.md)
+  The properties you use to configure a morphology gradient filter.
+- [protocol CIMorphologyMaximum](cimorphologymaximum.md)
+  The properties you use to configure a morphology maximum filter.
+- [protocol CIMorphologyMinimum](cimorphologyminimum.md)
+  The properties you use to configure a morphology minimum filter.
+- [protocol CIMorphologyRectangleMaximum](cimorphologyrectanglemaximum.md)
+  The properties you use to configure a morphology rectangle maximum filter.
+- [protocol CIMorphologyRectangleMinimum](cimorphologyrectangleminimum.md)
+  The properties you use to configure a morphology rectangle minimum filter.
+- [protocol CIMotionBlur](cimotionblur.md)
+  The properties you use to configure a motion blur filter.
+- [protocol CINoiseReduction](cinoisereduction.md)
+  The properties you use to configure a noise reduction filter.
+- [protocol CIZoomBlur](cizoomblur.md)
+  The properties you use to configure a zoom blur filter.
+
 ## See Also
 
 - [Color Adjustment Filters](color-adjustment-filters.md)

@@ -6,8 +6,8 @@
 Structure containing verification details of a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,16 +25,6 @@ struct VerificationDetails
   Source of verification.
 - [let expirationDate: Date?](rcsservice/business/verificationdetails-swift.struct/expirationdate.md)
   Expiration date of business information.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/verificationdetails-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/verificationdetails-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing verification details
-- [static func == (RCSService.Business.VerificationDetails, RCSService.Business.VerificationDetails) -> Bool](rcsservice/business/verificationdetails-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/verificationdetails-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

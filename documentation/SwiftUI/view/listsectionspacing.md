@@ -81,10 +81,18 @@ Spacing applied on sections in the [`List`](list.md) overrides spacing applied o
 
 ## See Also
 
+- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+  Applies an inset to the rows in a list.
+- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+  The default minimum height of rows in a list.
+- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+  The default minimum height of a header in a list.
 - [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
 - [struct ListSectionSpacing](listsectionspacing.md)
   The spacing options between two adjacent sections in a list.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 
 
 ---

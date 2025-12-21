@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
+A concrete metadata object subclass representing a cat head.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,7 +20,7 @@ class AVMetadataCatHeadObject
 
 #### Overview
 
-AVMetadataCatHeadObject is a concrete subclass of AVMetadataObject representing a cat head.
+[`AVMetadataCatHeadObject`](avmetadatacatheadobject.md) is a concrete subclass of [`AVMetadataObject`](avmetadataobject.md) representing a cat head.
 
 ## Relationships
 
@@ -32,6 +34,11 @@ AVMetadataCatHeadObject is a concrete subclass of AVMetadataObject representing 
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
+  A concrete metadata object subclass representing a dog head.
 
 
 ---

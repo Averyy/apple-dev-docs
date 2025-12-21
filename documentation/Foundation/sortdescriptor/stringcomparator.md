@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A `String.StandardComparator` value.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,10 @@
 ```swift
 var stringComparator: String.StandardComparator? { get }
 ```
+
+#### Discussion
+
+This property is non-`nil` when the `SortDescriptor` value is created with one.
 
 
 ---

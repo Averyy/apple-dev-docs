@@ -21,7 +21,7 @@ struct AVDelegatingPlaybackCoordinatorRateChangeOptions
 
 ## Topics
 
-### Rate Change Options
+### Rate change options
 - [static var playImmediately: AVDelegatingPlaybackCoordinatorRateChangeOptions](avdelegatingplaybackcoordinatorratechangeoptions/playimmediately.md)
   Indicates that the coordinator should begin playback as soon as possible, regardless of other participant’s readiness or suspensions.
 ### Initializers

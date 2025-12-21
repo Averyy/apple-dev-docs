@@ -22,7 +22,7 @@ A complication family can have multiple variants, and so this sample app provide
 
 To configure the sample code project, do the following in Xcode:
 
-1. Select the `Complications` target, then change the bundle ID to `<Your iOS app bundle ID>`.  Select the appropriate team to let Xcode automatically manage your provisioning profile. See [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) for more details.
+1. Select the `Complications` target, then change the bundle ID to `<Your iOS app bundle ID>`.  Select the appropriate team to let Xcode automatically manage your provisioning profile. See [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team) for more details.
 2. Repeat step 1 for the WatchKit app and WatchKit Extension target. The bundle IDs should be `<Your iOS app bundle ID>.watchkitapp` and `<Your iOS app bundle ID>.watchkitapp.watchkitextension` respectively.
 3. Open the `Info.plist` file of the `WatchKit Extension` target, navigate to `NSExtension > NSExtensionAttributes > WKAppBundleIdentifier` key, and change the value of the key to `<Your iOS app bundle ID>.watchkitapp`.
 4. Select the `Complications WatchKit App` target and the device in Xcode’s schema field, then build and run the target on your device.

@@ -128,7 +128,7 @@ do {
 
 ##### Write the String to the Encode Stream
 
-Use doc://com.apple.documentation/documentation/applearchive/archivestream/3589317-writeblob to write the contents of the string as a blob to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
+Use [`writeBlob(key:from:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveStreamProtocol/writeBlob(key:from:)) to write the contents of the string as a blob to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
 ```swift
 do {
@@ -156,7 +156,7 @@ On return, `lorem.aar` exists as an AppleArchive file in the user’s `Downloads
   Compress the contents of an entire directory and store the result on the file system.
 - [Decompressing and extracting an archived directory](decompressing-and-extracting-an-archived-directory.md)
   Recreate an entire file system directory from an archive file.
-- [Decompressing and Parsing an Archived String](decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 
 

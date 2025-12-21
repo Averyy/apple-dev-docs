@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -22,6 +24,14 @@ func uploadTask(withResumeData resumeData: Data) -> URLSessionUploadTask
 
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
 
+#### Return Value
+
+A new session upload task, or nil if the resumeData is invalid.
+
+## Parameters
+
+- `resumeData`: Resume data blob from an incomplete upload, such as data returned by the cancelByProducingResumeData: method.
+
 ## See Also
 
 - [Building a resumable upload server with SwiftNIO](building-a-resumable-upload-server-with-swiftnio.md)
@@ -37,6 +47,7 @@ func uploadTask(withResumeData resumeData: Data) -> URLSessionUploadTask
 - [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](urlsession/uploadtask(withstreamedrequest:).md)
   Creates a task that performs an HTTP request for uploading data based on the specified URL request.
 - [func uploadTask(withResumeData: Data, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:completionhandler:).md)
+  Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
 - [class URLSessionUploadTask](urlsessionuploadtask.md)
   A URL session task that uploads data to the network in a request body.
 - [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)

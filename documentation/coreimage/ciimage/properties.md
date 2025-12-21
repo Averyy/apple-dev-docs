@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-A dictionary containing metadata about the image.
+Returns the metadata properties dictionary of the image.
 
 **Availability**:
 - iOS 5.0+
@@ -21,7 +21,11 @@ var properties: [String : Any] { get }
 
 #### Discussion
 
-If the [`CIImage`](ciimage.md) object is the output of a filter (or filter chain), this property’s value is the metadata from the filter’s original input image.
+If the [`CIImage`](ciimage.md) was created from `NSURL` or `NSData` then this dictionary is determined by calling `CGImageSourceCopyPropertiesAtIndex()`.
+
+If the [`CIImage`](ciimage.md) was created with the [`properties`](ciimageoption/properties.md) option, then that dictionary is returned.
+
+If the [`CIImage`](ciimage.md) was created by applying [`CIFilter`](cifilter-swift.class.md) or [`CIKernel`](cikernel.md) then the properties of the root inputImage will be returned.
 
 ## See Also
 

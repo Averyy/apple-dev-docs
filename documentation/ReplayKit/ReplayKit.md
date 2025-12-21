@@ -49,11 +49,9 @@ Using the ReplayKit framework, users can record video from the screen, and audio
 ### Errors
 - [enum RPRecordingErrorCode](rprecordingerrorcode.md)
   The ReplayKit error domain codes.
-- [RPRecordingErrorDomain](rprecordingerrordomain-5gi.md)
-  The ReplayKit framework error domain.
-### Reference
-- [ReplayKit Constants](replaykit-constants.md)
-  ReplayKit constants affecting multiple classes.
+- [let RPRecordingErrorDomain: String](rprecordingerrordomain.md)
+  The ReplayKit error domain.
+- [let SCStreamErrorDomain: String](scstreamerrordomain.md)
 
 
 ---

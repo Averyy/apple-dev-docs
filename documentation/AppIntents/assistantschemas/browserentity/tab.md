@@ -29,7 +29,7 @@ var tab: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.browser.tab` schema:
 
 ```swift
-@AssistantEntity(schema: .browser.tab)
+@AppEntity(schema: .browser.tab)
 struct TabEntity: AppEntity {
     static var defaultQuery = Query()
 

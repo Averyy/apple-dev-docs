@@ -34,13 +34,19 @@ To apply this style to a button, or to a view that contains buttons, use the [`b
 - [static var accessoryBarAction: AccessoryBarActionButtonStyle](primitivebuttonstyle/accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
 - [static var bordered: BorderedButtonStyle](primitivebuttonstyle/bordered.md)
-  A button style that applies standard border artwork based on the button’s context.
+  A button style that applies the standard border style based on the button’s context.
 - [static var borderedProminent: BorderedProminentButtonStyle](primitivebuttonstyle/borderedprominent.md)
-  A button style that applies standard border prominent artwork based on the button’s context.
+  A button style that applies the standard bordered prominent style based on the button’s context.
 - [static var borderless: BorderlessButtonStyle](primitivebuttonstyle/borderless.md)
   A button style that doesn’t apply a border.
 - [static var card: CardButtonStyle](primitivebuttonstyle/card.md)
-  A button style that doesn’t pad the content, and applies a motion effect when a button has focus.
+  A button style that doesn’t pad the content, and applies a Liquid Glass effect when the button has focus.
+- [static var glass: GlassButtonStyle](primitivebuttonstyle/glass.md)
+  A button style that applies a Liquid Glass effect based on the button’s context.
+- [static var glassProminent: GlassProminentButtonStyle](primitivebuttonstyle/glassprominent.md)
+  A button style that applies a prominent Liquid Glass effect based on the button’s context.
+- [static func glass(Glass) -> Self](primitivebuttonstyle/glass(_:).md)
+  A button style that applies a configurable Liquid Glass effect based on the button’s context.
 - [static var link: LinkButtonStyle](primitivebuttonstyle/link.md)
   A button style for buttons that emulate links.
 

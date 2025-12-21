@@ -6,12 +6,11 @@
 Information about the sections of content that an image-analysis request detects in a document.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -50,19 +49,6 @@ The observation allows you to access a document’s content and group it within 
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
-
-## See Also
-
-- [Recognizing tables within a document](recognize-tables-within-a-document.md)
-  Scan a document containing a contact table and extract the content within the table in a formatted way.
-- [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
-  Perform text recognition on a photo using the Vision framework’s text-recognition request.
-- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
-  An image-analysis request to scan an image of a document and provide information about its structure.
-- [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
-  An image-analysis request that finds regions of visible text in an image.
-- [struct RecognizeTextRequest](recognizetextrequest.md)
-  An image-analysis request that recognizes text in an image.
 
 
 ---

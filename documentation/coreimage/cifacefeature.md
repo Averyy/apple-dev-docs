@@ -21,7 +21,7 @@ class CIFaceFeature
 
 #### Overview
 
-> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectFaceRectanglesRequest).
+> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces this class for identifying and analyzing image features. See `VNDetectFaceRectanglesRequest`. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectFaceRectanglesRequest))
 
 The properties of a `CIFaceFeature` object provide information about the face’s eyes and mouth. A face object in a video can also have properties that track its location over time, tracking ID and frame count.
 
@@ -29,7 +29,7 @@ The properties of a `CIFaceFeature` object provide information about the face’
 
 ### Locating Faces
 - [var bounds: CGRect](cifacefeature/bounds-swift.property.md)
-  A rectangle indicating the position and dimensions of the face in image coordinates.
+  A rectangle indicating the position and extent of the face feature in image coordinates.
 - [var hasFaceAngle: Bool](cifacefeature/hasfaceangle-swift.property.md)
   A Boolean value that indicates whether information about face rotation is available.
 - [var faceAngle: Float](cifacefeature/faceangle-swift.property.md)
@@ -42,11 +42,11 @@ The properties of a `CIFaceFeature` object provide information about the face’
 - [var hasMouthPosition: Bool](cifacefeature/hasmouthposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s mouth.
 - [var leftEyePosition: CGPoint](cifacefeature/lefteyeposition-swift.property.md)
-  The coordinates of the left eye, in image coordinates.
+  The image coordinate of the center of the left eye.
 - [var rightEyePosition: CGPoint](cifacefeature/righteyeposition-swift.property.md)
-  The coordinates of the right eye, in image coordinates
+  The image coordinate of the center of the right eye.
 - [var mouthPosition: CGPoint](cifacefeature/mouthposition-swift.property.md)
-  The coordinates of the mouth, in image coordinates
+  The image coordinate of the center of the mouth.
 - [var hasSmile: Bool](cifacefeature/hassmile-swift.property.md)
   A Boolean value that indicates whether a smile is detected in the face.
 - [var leftEyeClosed: Bool](cifacefeature/lefteyeclosed-swift.property.md)
@@ -84,7 +84,7 @@ The properties of a `CIFaceFeature` object provide information about the face’
 - [class CIRectangleFeature](cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 - [class CIQRCodeFeature](ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 

@@ -6,7 +6,7 @@
 Creates a new image presentation component to present a spatial 3D image.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -68,7 +68,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 
 The source of the URL depends on how the App Clip launched:
 
-- The invocation URL is the `_XCAppClipURL` scheme environment variable when Xcode launches the app or App Clip. For more information, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip.md).
+- The invocation URL is the `_XCAppClipURL` scheme environment variable when Xcode launches the app or App Clip. For more information, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip#Debug-your-App-Clip.md).
 - The invocation URL is the invoking App Clip Code’s URL when the system launches the app or App Clip in the device’s camera feed or through the Code Scanner.
 
 There may be multiple App Clip Codes visible in the camera feed that share the same [`url`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/url); for more information, see [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor).
@@ -98,7 +98,7 @@ During development, the sample project can launch the App Clip target in Xcode t
 
 To associate an App Clip Code to the App Clip during development, Seed Shop sets up an App Clip local experience. The sample app requires a local experience URL prefix of `https://developer.apple.com`, and a bundle ID of `com.example.apple-samplecode.AppClipCodesExampleApp1.Clip`.
 
-For more on local experiences, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip.md).
+For more on local experiences, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip#Test-invocations-with-a-local-experience.md).
 
 ##### Set Up an App Clip Experience in App Store Connect
 

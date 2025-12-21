@@ -19,6 +19,11 @@ The set of possible labels.
 var labels: Set<Label>
 ```
 
+## See Also
+
+- [var configuration: TimeSeriesClassifierConfiguration](timeseriesclassifier/configuration-swift.property.md)
+  The configuration.
+
 
 ---
 

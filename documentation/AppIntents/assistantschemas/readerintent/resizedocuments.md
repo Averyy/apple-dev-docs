@@ -25,7 +25,7 @@ var resizeDocuments: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.reader.resizeDocuments` schema:
 
 ```swift
-@AssistantIntent(schema: .reader.resizeDocuments)
+@AppIntent(schema: .reader.resizeDocuments)
 struct ReaderResizeDocumentsIntent: AppIntent {
     @Parameter
     var documents: [ReaderDocumentEntity]

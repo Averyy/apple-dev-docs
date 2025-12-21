@@ -21,7 +21,7 @@ var providesPreciseDurationAndTiming: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -20,9 +20,6 @@ enum Length
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Length, IntentParameter<Value>.Length) -> Bool](intentparameter/length/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Length.astronomicalUnits](intentparameter/length/astronomicalunits.md)
 - [IntentParameter.Length.centimeters](intentparameter/length/centimeters.md)
@@ -46,15 +43,6 @@ enum Length
 - [IntentParameter.Length.picometers](intentparameter/length/picometers.md)
 - [IntentParameter.Length.scandinavianMiles](intentparameter/length/scandinavianmiles.md)
 - [IntentParameter.Length.yards](intentparameter/length/yards.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/length/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/length/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/length/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/length/equatable-implementations.md)
 
 ## Relationships
 

@@ -19,6 +19,10 @@ Handles when a player in a hosted match accepts the invitation.
 optional func matchmakerViewController(_ viewController: GKMatchmakerViewController, hostedPlayerDidAccept player: GKPlayer)
 ```
 
+## Mentions
+
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+
 #### Discussion
 
 After a player accepts an invitation, connect the player to your server. Once the connection is established, your game needs to call the view controller’s [`setHostedPlayer(_:didConnect:)`](gkmatchmakerviewcontroller/sethostedplayer(_:didconnect:).md) method to update the player’s connection status.

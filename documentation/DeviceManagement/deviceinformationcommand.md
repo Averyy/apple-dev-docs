@@ -21,8 +21,8 @@ object DeviceInformationCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
 - [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
+- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
 
 ## Topics
 

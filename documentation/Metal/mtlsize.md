@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: struct
 
-The dimensions of an object.
+A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
 
 **Availability**:
 - iOS ?+
@@ -21,32 +21,42 @@ struct MTLSize
 
 ## Mentions
 
-- [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
-- [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Calculating threadgroup and grid sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
 
 #### Overview
 
-Metal has many object types that represent arrays of discrete elements. For example, a texture has an array of pixel elements, and a thread grid has an array of computational threads. Use [`MTLSize`](mtlsize.md) instances to measure the extents of these objects or extents of regions within these objects.
+Metal has many types that represent arrays of discrete elements, such as:
 
-Conceptually, when using a [`MTLSize`](mtlsize.md) instance to measure an object, treat the object as a 3D array of elements, even if it has fewer dimensions. Set the length of any unused dimensions to `1`. For example, a `5x5` 2D texture is a `5x5x1` texture in 3D.
+- A texture, which has an array of pixel elements
+- A thread grid, which has an array of computational threads
+
+Types and methods that work with these array-like types frequently have an [`MTLSize`](mtlsize.md) property or parameter that refers to the extents of a specific instance of the type, or a region within the instance.
+
+> ❗ **Important**: Treat each size instance as a measure of something in 3D, even if it represents something with only one or two dimensions, by assigning `1` to the irrelevant dimensions.
+
+The following are some examples for setting a size for an instance that has less than three dimentions:
+
+- For a 2D texture that has a height and width of `5`, set a size’s [`depth`](mtlsize/depth.md) property to `1` so that it represents `[5, 5, 1]`.
+- For a 1D array with length `42`, set a size’s [`height`](mtlsize/height.md), [`depth`](mtlsize/depth.md) properties to `1`, so that it represents `[42, 1, 1]`.
 
 ## Topics
 
-### Creating Sizes
+### Creating a size instance
 - [init()](mtlsize/init.md)
-  Initializes a box size.
+  Creates a default size instance by setting the initial values for its width, height, and depth properties to zero.
 - [init(width: Int, height: Int, depth: Int)](mtlsize/init(width:height:depth:).md)
-  Initializes a size for an object with the specified dimensions.
+  Creates a size instance with values for its width, height, and depth properties.
 - [func MTLSizeMake(Int, Int, Int) -> MTLSize](mtlsizemake(_:_:_:).md)
-  Creates a size for an object using the specified dimensions.
-### Getting and Setting Dimensions
+  Creates a size instance with values for its width, height, and depth properties.
+### Accessing a size’s dimensions
 - [var width: Int](mtlsize/width.md)
-  The number of elements in the x dimension.
+  A value for the x-axis dimension.
 - [var height: Int](mtlsize/height.md)
-  The number of elements in the y dimension.
+  A value for the y-axis dimension.
 - [var depth: Int](mtlsize/depth.md)
-  The number of elements in the z dimension.
+  A value for the z-axis dimension.
 
 ## Relationships
 
@@ -59,7 +69,7 @@ Conceptually, when using a [`MTLSize`](mtlsize.md) instance to measure an object
 - [protocol MTLIndirectComputeCommand](mtlindirectcomputecommand.md)
   A compute command in an indirect command buffer.
 - [struct MTLRegion](mtlregion.md)
-  The bounds for a subset of an object’s elements.
+  The bounds for a subset of an instance’s elements.
 - [struct MTLOrigin](mtlorigin.md)
   The coordinates for the front upper-left corner of a region.
 - [struct MTLStageInRegionIndirectArguments](mtlstageinregionindirectarguments.md)

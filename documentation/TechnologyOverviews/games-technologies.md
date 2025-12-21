@@ -16,10 +16,10 @@ Get the best graphics performance on all Apple platforms using [`Metal`](https:/
 
 Metal offers the features you need to create detailed graphics, with the performance you need to achieve high frame rates:
 
-- [`Setting Up a Command Structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure) directly on the device’s GPU. Encode [`Compute Passes`](https://developer.apple.com/documentation/Metal/compute-passes) to run in parallel with [`Render Passes`](https://developer.apple.com/documentation/Metal/render-passes) so that computations don’t impact graphics rendering.
-- [`Resource Loading`](https://developer.apple.com/documentation/Metal/resource-loading) faster by streaming asset data to textures and buffers asynchronously.
+- [`Setting up a command structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure) directly on the device’s GPU. Encode [`Compute passes`](https://developer.apple.com/documentation/Metal/compute-passes) to run in parallel with [`Render passes`](https://developer.apple.com/documentation/Metal/render-passes) so that computations don’t impact graphics rendering.
+- [`Resource loading`](https://developer.apple.com/documentation/Metal/resource-loading) faster by streaming asset data to textures and buffers asynchronously.
 - Improve the performance of 3D scenes using high-performance temporal antialiasing or spatial upscaling. Upscale low-resolution images to higher-resolution images in less time using [`MetalFX`](https://developer.apple.com/documentation/MetalFX).
-- Apply high-performance filters to images, multiply matrices, and vectors using the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders).
+- Apply high-performance filters to images, multiply matrices, and vectors using the [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders).
 - [`Accelerating ray tracing using Metal`](https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-using-metal) using Metal’s built-in ray tracing support.
 
 Make your game fast and efficient using the powerful suite of [`Metal developer workflows`](https://developer.apple.com/documentation/Xcode/Metal-developer-workflows).
@@ -33,9 +33,9 @@ Make your game fast and efficient using the powerful suite of [`Metal developer 
 Make sure you tune your graphics code specifically for Apple silicon:
 
 - [`Addressing architectural differences in your macOS code`](https://developer.apple.com/documentation/Apple-Silicon/addressing-architectural-differences-in-your-macos-code) to ensure your code runs well on Apple silicon. Make sure your code supports virtual memory-page sizes, cache line sizes, variadic functions, memory that’s simultaneously writable and executable, and more.
-- [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon) using [`Dispatch`](https://developer.apple.com/documentation/Dispatch) and [`DispatchQoS`](https://developer.apple.com/documentation/Dispatch/DispatchQoS) levels.
+- [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon#Assign-Quality-of-Service-QoS-Classes-to-Work) using [`Dispatch`](https://developer.apple.com/documentation/Dispatch) and [`DispatchQoS`](https://developer.apple.com/documentation/Dispatch/DispatchQoS) levels.
 - Accelerate your code’s performance using the open source [`SSE2Neon`](https://developer.apple.comhttps://github.com/DLTcollab/sse2neon) and [`AVX2Neon`](https://developer.apple.comhttps://github.com/kunpengcompute/AvxToNeon) libraries. The Neon instruction set provides single instruction multiple data (SIMD) operations to accelerate performance on ARM processors.
-- [`Tailor Your Apps for Apple GPUs and Tile-Based Deferred Rendering`](https://developer.apple.com/documentation/Metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering). Write your Metal code to use features like imageblocks, tile shading, and raster order groups.
+- [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](https://developer.apple.com/documentation/Metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering). Write your Metal code to use features like imageblocks, tile shading, and raster order groups.
 
 #### Build a Spatial Computing Game for Visionos
 

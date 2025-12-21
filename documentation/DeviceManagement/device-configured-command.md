@@ -15,6 +15,8 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 ## Mentions
 
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Migrating managed devices](migrating-managed-devices.md)
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -48,8 +50,6 @@ The request object the server returns for the Device Configured Command.
 
 ## See Also
 
-- [Installed Application List](installed-application-list-command.md)
-  Get a list of the installed apps on a device.
 - [Device Information](device-information-command.md)
   Get detailed information about a device.
 - [User Configured](user-configured-command.md)

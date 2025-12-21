@@ -58,6 +58,9 @@ Use tab groups to create a rich hierarchy of tab items. On iPad, the system disp
 ### Assigning actions
 - [var sidebarActions: [UIAction]](uitabgroup/sidebaractions.md)
   An array of actions that appear in a section in a sidebar.
+### Instance Properties
+- [var isSidebarDestination: Bool](uitabgroup/issidebardestination.md)
+  Determines if the tab group itself can be selected as a destination in the sidebar.
 
 ## Relationships
 

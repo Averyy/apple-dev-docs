@@ -8,7 +8,6 @@ An object that represents a detected contour in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -24,6 +23,10 @@ struct Contour
 ### Inspecting a contour
 - [var aspectRatio: Float](contoursobservation/contour/aspectratio.md)
   The aspect ratio of the contour, which is the image’s width divided by its height.
+- [var boundingBox: NormalizedRect](contoursobservation/contour/boundingbox.md)
+  The bounding box of the region.
+- [var boundingQuad: RectangleObservation](contoursobservation/contour/boundingquad.md)
+  The bounding quadrilateral of the region.
 - [var childContours: [ContoursObservation.Contour]](contoursobservation/contour/childcontours.md)
   An array of contours that this contour encloses.
 - [var indexPath: IndexPath](contoursobservation/contour/indexpath.md)
@@ -34,6 +37,8 @@ struct Contour
   The contour’s array of points in normalized coordinates.
 - [var pointCount: Int](contoursobservation/contour/pointcount.md)
   The contour’s number of points.
+- [var points: [NormalizedPoint]](contoursobservation/contour/points.md)
+  The points of the region as an array of `NormalizedPoint`.
 ### Calculating area and perimeter
 - [func calculateArea(useOrientedArea: Bool) -> Double](contoursobservation/contour/calculatearea(useorientedarea:).md)
 - [func calculatePerimeter() -> Double](contoursobservation/contour/calculateperimeter.md)
@@ -41,13 +46,6 @@ struct Contour
 - [func boundingCircle() -> NormalizedCircle](contoursobservation/contour/boundingcircle.md)
 ### Getting the approximation
 - [func polygonApproximation(epsilon: Float) throws -> ContoursObservation.Contour](contoursobservation/contour/polygonapproximation(epsilon:).md)
-### Instance Properties
-- [var boundingBox: NormalizedRect](contoursobservation/contour/boundingbox.md)
-  The bounding box of the region.
-- [var boundingQuad: RectangleObservation](contoursobservation/contour/boundingquad.md)
-  The bounding quadrilateral of the region.
-- [var points: [NormalizedPoint]](contoursobservation/contour/points.md)
-  The points of the region as an array of `NormalizedPoint`.
 
 ## Relationships
 

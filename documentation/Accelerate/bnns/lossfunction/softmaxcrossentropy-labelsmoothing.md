@@ -13,7 +13,6 @@ Softmax activation on input logits, and computation of cross-entropy loss with o
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

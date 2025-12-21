@@ -5,7 +5,6 @@
 
 **Availability**:
 - macOS 10.9+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

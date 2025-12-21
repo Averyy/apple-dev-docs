@@ -36,7 +36,7 @@ There must be either a focused view or an active graphics context when you call 
 
 ## See Also
 
-- [@MainActor func lockFocus()](../AppKit/NSView/lockFocus.md)
+- [func lockFocus()](../AppKit/NSView/lockFocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func draw(at: CGPoint)](nsattributedstring/draw(at:).md)
   Draws the attributed string starting at the specified point in the current graphics context.

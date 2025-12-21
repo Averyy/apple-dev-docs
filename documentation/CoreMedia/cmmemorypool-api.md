@@ -1,4 +1,4 @@
-# CMMemoryPool APIs
+# CMMemoryPool
 
 **Framework**: Core Media
 
@@ -42,9 +42,9 @@ A memory pool deallocates memory if it isn’t reused in `0.5` seconds, so that 
 
 ## See Also
 
-- [CMSimpleQueue APIs](cmsimplequeue-api.md)
+- [CMSimpleQueue](cmsimplequeue-api.md)
   A simple, lockless FIFO queue of elements.
-- [CMBufferQueue APIs](cmbufferqueue-api.md)
+- [CMBufferQueue](cmbufferqueue-api.md)
   A queue of timed buffers.
 
 

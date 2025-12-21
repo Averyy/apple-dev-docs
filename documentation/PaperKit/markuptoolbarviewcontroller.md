@@ -4,10 +4,8 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -20,7 +18,6 @@
 
 ### Protocols
 - [MarkupToolbarViewController.Delegate](markuptoolbarviewcontroller/delegate-swift.protocol.md)
-  The delegate for a PaperKit toolbar.
 ### Initializers
 - [init?(coder: NSCoder)](markuptoolbarviewcontroller/init(coder:).md)
 - [init(supportedFeatureSet: FeatureSet)](markuptoolbarviewcontroller/init(supportedfeatureset:).md)

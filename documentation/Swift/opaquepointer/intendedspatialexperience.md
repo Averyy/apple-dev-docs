@@ -6,7 +6,7 @@
 The AudioQueue’s intended spatial audio experience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

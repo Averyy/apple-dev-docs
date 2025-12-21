@@ -26,14 +26,14 @@ A sequence stores a series of integers or strings of any length as the underlyin
 
 ## Topics
 
-### Creating a Sequence
+### Creating a sequence
 - [convenience init(strings: [String])](mlsequence/init(strings:).md)
   Creates a sequence of strings from a string array.
 - [convenience init(int64s: [NSNumber])](mlsequence/init(int64s:).md)
   Creates a sequence of integers from an array of numbers.
 - [convenience init(empty: MLFeatureType)](mlsequence/init(empty:).md)
   Creates an empty sequence of strings or integers.
-### Identifying the Sequence’s Element Type
+### Identifying the sequence’s element type
 - [var type: MLFeatureType](mlsequence/type.md)
   The underlying type of the sequence’s elements.
 ### Retrieving the Sequence’s Values

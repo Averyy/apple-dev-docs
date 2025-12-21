@@ -6,7 +6,7 @@
 The event that occurs just as someone releases an entity during a manipulation gesture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

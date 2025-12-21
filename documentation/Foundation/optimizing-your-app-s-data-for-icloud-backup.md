@@ -42,7 +42,7 @@ Consider deleting purgeable data as soon as your app is done with it so that it 
 
 For example, if your app downloads high-definition movies for offline viewing, exclude those files because they’re typically large in size and the user can download them again on a restored device, if necessary. Conversely, if your app allows the user to import arbitrary files such as PDFs, ebooks, and digital comics, don’t exclude those files because it might be difficult, even impossible, for the user to re-create them on a restored device.
 
-If your app creates nonpurgeable data that isn’t appropriate for backup, you can indicate which files and directories the system can exclude by setting their [`isExcludedFromBackup`](urlresourcevalues/isexcludedfrombackup.md) resource value to [`true`](https://developer.apple.com/documentation/swift/true), as the following example shows.
+If your app creates nonpurgeable data that isn’t appropriate for backup, you can indicate which files and directories the system can exclude by setting their [`isExcludedFromBackup`](urlresourcevalues/isexcludedfrombackup.md) resource value to [`true`](https://developer.apple.com/documentation/Swift/true), as the following example shows.
 
 ```swift
 func excludeItem(at url: URL) throws {
@@ -90,8 +90,8 @@ if let bundleIdentifier = Bundle.main.bundleIdentifier {
   Create, read, write, and examine files and folders in the file system.
 - [Archives and Serialization](archives-and-serialization.md)
   Convert objects and values to and from property list, JSON, and other flat binary representations.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [Spotlight](spotlight.md)
   Search for files and other items on the local device, and index your app’s content for searching.
 - [iCloud](icloud.md)

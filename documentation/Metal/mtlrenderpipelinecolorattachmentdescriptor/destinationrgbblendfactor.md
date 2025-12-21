@@ -31,6 +31,8 @@ The default value is [`MTLBlendFactor.zero`](mtlblendfactor/zero.md).
   The source blend factor (SBF) used by the alpha blend operation.
 - [var sourceRGBBlendFactor: MTLBlendFactor](mtlrenderpipelinecolorattachmentdescriptor/sourcergbblendfactor.md)
   The source blend factor (SBF) used by the RGB blend operation.
+- [enum MTLBlendFactor](mtlblendfactor.md)
+  The source and destination blend factors are often needed to complete specification of a blend operation. In most cases, the blend factor for both RGB values () and alpha values () are similar to one another, but in some cases, such as `MTLBlendFactorSourceAlphaSaturated`, the blend factor is slightly different. Four blend factors (`MTLBlendFactorBlendColor`, `MTLBlendFactorOneMinusBlendColor`, `MTLBlendFactorBlendAlpha`, and `MTLBlendFactorOneMinusBlendAlpha`) refer to a constant blend color value that is set by the [`setBlendColor(red:green:blue:alpha:)`](mtlrendercommandencoder/setblendcolor(red:green:blue:alpha:).md) method of `MTLRenderCommandEncoder`.
 
 
 ---

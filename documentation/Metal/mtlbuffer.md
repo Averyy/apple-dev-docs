@@ -21,54 +21,55 @@ protocol MTLBuffer : MTLResource
 
 ## Mentions
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Estimating How Often a Texture Region Is Accessed](estimating-how-often-a-texture-region-is-accessed.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Indexing Argument Buffers](indexing-argument-buffers.md)
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Indexing argument buffers](indexing-argument-buffers.md)
+- [Optimizing texture data](optimizing-texture-data.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
 
 #### Overview
 
-A [`MTLBuffer`](mtlbuffer.md) object can be used only with the [`MTLDevice`](mtldevice.md) that created it. Don’t implement this protocol yourself; instead, use the following [`MTLDevice`](mtldevice.md) methods to create `MTLBuffer` objects:
+An [`MTLBuffer`](mtlbuffer.md) instance can be used only with the [`MTLDevice`](mtldevice.md) that created it. Don’t implement this protocol yourself; instead, use the following [`MTLDevice`](mtldevice.md) methods to create `MTLBuffer` instances:
 
-- [`makeBuffer(length:options:)`](mtldevice/makebuffer(length:options:).md) creates a `MTLBuffer` object with a new storage allocation.
-- [`makeBuffer(bytes:length:options:)`](mtldevice/makebuffer(bytes:length:options:).md) creates a `MTLBuffer` object by copying data from an existing storage allocation into a new allocation.
-- [`makeBuffer(bytesNoCopy:length:options:deallocator:)`](mtldevice/makebuffer(bytesnocopy:length:options:deallocator:).md) creates a `MTLBuffer` object that reuses an existing storage allocation and does not allocate any new storage.
+- [`makeBuffer(length:options:)`](mtldevice/makebuffer(length:options:).md) creates a `MTLBuffer` instance with a new storage allocation.
+- [`makeBuffer(bytes:length:options:)`](mtldevice/makebuffer(bytes:length:options:).md) creates a `MTLBuffer` instance by copying data from an existing storage allocation into a new allocation.
+- [`makeBuffer(bytesNoCopy:length:options:deallocator:)`](mtldevice/makebuffer(bytesnocopy:length:options:deallocator:).md) creates a `MTLBuffer` instance that reuses an existing storage allocation and does not allocate any new storage.
 
-The Metal framework doesn’t know anything about the contents of a [`MTLBuffer`](mtlbuffer.md), just its size. You define the format of the data in the buffer and ensure that your app and your shaders know how to read and write the data. For example, you might create a struct in your shader that defines the data you want to store in the buffer and its memory layout.
+The Metal framework doesn’t know anything about the contents of an [`MTLBuffer`](mtlbuffer.md), just its size. You define the format of the data in the buffer and ensure that your app and your shaders know how to read and write the data. For example, you might create a struct in your shader that defines the data you want to store in the buffer and its memory layout.
 
-If you create a buffer with a managed resource storage mode ([`MTLStorageMode.managed`](mtlstoragemode/managed.md)), you must call [`didModifyRange:`](mtlbuffer/didmodifyrange:.md) to tell Metal to copy any changes to the GPU.
+If you create a buffer with a managed resource storage mode ([`MTLStorageMode.managed`](mtlstoragemode/managed.md)), you need to call [`didModifyRange:`](mtlbuffer/didmodifyrange:.md) to tell Metal to copy any changes to the GPU.
 
 ## Topics
 
-### Creating a Texture That Shares Buffer Data
+### Creating a texture that shares buffer data
 - [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int) -> (any MTLTexture)?](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md)
   Creates a texture that shares its storage with the buffer.
-### Reading the Buffer’s Data on the CPU
+### Reading the buffer’s data on the CPU
 - [func contents() -> UnsafeMutableRawPointer](mtlbuffer/contents.md)
   Gets the system address of the buffer’s storage allocation.
-### Synchronizing Data to the GPU for Managed Buffers
+### Synchronizing data to the GPU for managed buffers
 - [func didModifyRange(Range<Int>)](mtlbuffer/didmodifyrange(_:).md)
   Informs the GPU that the CPU has modified a section of the buffer.
-### Debugging Buffers
+### Debugging buffers
 - [func addDebugMarker(String, range: Range<Int>)](mtlbuffer/adddebugmarker(_:range:).md)
   Adds a debug marker string to a specific buffer range.
 - [func removeAllDebugMarkers()](mtlbuffer/removealldebugmarkers.md)
   Removes all debug marker strings from the buffer.
-### Reading Buffer Length
+### Reading buffer length
 - [var length: Int](mtlbuffer/length.md)
   The logical size of the buffer, in bytes.
-### Creating Views of Buffers on Other GPUs
+### Creating views of buffers on other GPUs
 - [func makeRemoteBufferView(any MTLDevice) -> (any MTLBuffer)?](mtlbuffer/makeremotebufferview(_:).md)
   Creates a remote view of the buffer for another GPU in the same peer group.
 - [var remoteStorageBuffer: (any MTLBuffer)?](mtlbuffer/remotestoragebuffer.md)
   The buffer on another GPU that the buffer was created from, if any.
 ### Instance Properties
-- [var gpuAddress: UInt64](mtlbuffer/gpuaddress.md)
+- [var gpuAddress: MTLGPUAddress](mtlbuffer/gpuaddress.md)
 - [var sparseBufferTier: MTLBufferSparseTier](mtlbuffer/sparsebuffertier.md)
 ### Instance Methods
 - [func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLTensor](mtlbuffer/maketensor(descriptor:offset:).md)

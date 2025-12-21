@@ -6,8 +6,8 @@
 A type to validate existing AIVU files to ensure that they meet the minimum requirements for AIV.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ An AIVU is a standalone media file with the one or more video and audio tracks, 
 
 ### Type Methods
 - [static func validate(url: URL) async throws -> Bool](aivuvalidator/validate(url:).md)
-  Validates the AIVU file given it’s URL. It throws an error message with error details, if any.
+  Validates the AIVU file given its URL. It throws an error message with error details, if any.
 
 
 ---

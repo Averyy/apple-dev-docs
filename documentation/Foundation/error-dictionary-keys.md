@@ -2,7 +2,7 @@
 
 **Framework**: Foundation
 
-If the result of [`init(contentsOf:error:)`](nsapplescript/init(contentsof:error:).md), [`compileAndReturnError(_:)`](nsapplescript/compileandreturnerror(_:).md), [`executeAndReturnError(_:)`](nsapplescript/executeandreturnerror(_:).md), or [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md), signals failure (`nil`, [`false`](https://developer.apple.com/documentation/swift/false), `nil`, or `nil`, respectively), a pointer to an autoreleased dictionary is put at the location pointed to by the error parameter. The error info dictionary may contain entries that use any combination of the following keys, including no entries at all.
+If the result of [`init(contentsOf:error:)`](nsapplescript/init(contentsof:error:).md), [`compileAndReturnError(_:)`](nsapplescript/compileandreturnerror(_:).md), [`executeAndReturnError(_:)`](nsapplescript/executeandreturnerror(_:).md), or [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md), signals failure (`nil`, [`false`](https://developer.apple.com/documentation/Swift/false), `nil`, or `nil`, respectively), a pointer to an autoreleased dictionary is put at the location pointed to by the error parameter. The error info dictionary may contain entries that use any combination of the following keys, including no entries at all.
 
 ## Topics
 

@@ -15,10 +15,6 @@ Perform two-pole two-zero recursive filtering on a vector.
   Performs double-precision, two-pole, two-zero recursive filtering.
 - [static func twoPoleTwoZeroFilter<U, V>(U, coefficients: (Float, Float, Float, Float, Float), result: inout V)](vdsp/twopoletwozerofilter(_:coefficients:result:)-gq5l.md)
   Performs single-precision, two-pole, two-zero recursive filtering.
-- [vDSP_deq22](vdsp_deq22.md)
-  Performs two-pole two-zero recursive filtering on a single-precision vector.
-- [vDSP_deq22D](vdsp_deq22d.md)
-  Performs two-pole two-zero recursive filtering on a double-precision vector.
 
 ## See Also
 

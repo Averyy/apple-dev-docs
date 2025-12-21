@@ -26,7 +26,7 @@ The lowest index within `range` whose corresponding array value is equal to `anO
 
 #### Discussion
 
-Starting at `range.location`, each element of the array is passed as an argument to an [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) message sent to `anObject` until a match is found or the end of the `range` is reached. Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Starting at `range.location`, each element of the array is passed as an argument to an [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) message sent to `anObject` until a match is found or the end of the `range` is reached. Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This method raises an [`rangeException`](nsexceptionname/rangeexception.md) exception if the `range` parameter represents a range that doesn’t exist in the array.
 

@@ -21,7 +21,7 @@ var hasGravityAndUserAcceleration: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller provides both gravity and user acceleration data; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the controller provides both gravity and user acceleration data; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

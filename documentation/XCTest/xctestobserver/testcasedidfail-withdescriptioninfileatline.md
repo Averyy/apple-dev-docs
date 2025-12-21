@@ -5,9 +5,6 @@
 
 Notifies the observer when a test case fails.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

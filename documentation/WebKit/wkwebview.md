@@ -264,6 +264,7 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 ### Instance Properties
 - [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
 - [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
+- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
 ### Instance Methods
 - [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
 - [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
@@ -294,8 +295,6 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

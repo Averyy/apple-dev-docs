@@ -10,10 +10,9 @@ An App Intent that plays, pauses, or otherwise modifies audio playback state whe
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
-- tvOS 16.0+
 
 ## Declaration
 

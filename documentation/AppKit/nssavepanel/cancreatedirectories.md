@@ -17,7 +17,7 @@ var canCreateDirectories: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel includes UI to create new directories. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the panel does not expose that UI.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the panel includes UI to create new directories. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the panel does not expose that UI.
 
 ## See Also
 

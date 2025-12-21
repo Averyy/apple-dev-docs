@@ -10,7 +10,7 @@ A component that defines a spotlight source.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -40,20 +40,6 @@ The following table shows some real-world scenarios, to better explain how you c
 
 ## Topics
 
-### Creating a spotlight
-- [init(color: SpotLightComponent.Color, intensity: Float, innerAngleInDegrees: Float, outerAngleInDegrees: Float, attenuationRadius: Float)](spotlightcomponent/init(color:intensity:innerangleindegrees:outerangleindegrees:attenuationradius:)-483ep.md)
-  Creates a spotlight with the given parameters.
-- [init(color: SpotLightComponent.Color, intensity: Float, innerAngleInDegrees: Float, outerAngleInDegrees: Float, attenuationRadius: Float)](spotlightcomponent/init(color:intensity:innerangleindegrees:outerangleindegrees:attenuationradius:)-8u5j6.md)
-  Creates a spotlight with the given parameters.
-- [init(color: SpotLightComponent.Color, intensity: Float, innerAngleInDegrees: Float, outerAngleInDegrees: Float, attenuationRadius: Float, attenuationFalloffExponent: Float)](spotlightcomponent/init(color:intensity:innerangleindegrees:outerangleindegrees:attenuationradius:attenuationfalloffexponent:)-2klbp.md)
-  Creates a spotlight with the given parameters.
-- [init(color: SpotLightComponent.Color, intensity: Float, innerAngleInDegrees: Float, outerAngleInDegrees: Float, attenuationRadius: Float, attenuationFalloffExponent: Float)](spotlightcomponent/init(color:intensity:innerangleindegrees:outerangleindegrees:attenuationradius:attenuationfalloffexponent:)-4v8eh.md)
-  Creates a spotlight with the given parameters.
-### Setting the color
-- [var color: SpotLightComponent.Color](spotlightcomponent/color-74jle.md)
-  A color for the spotlight.
-- [var color: SpotLightComponent.Color](spotlightcomponent/color-3e72t.md)
-  A color for the spotlight.
 ### Configuring the spotlight
 - [var intensity: Float](spotlightcomponent/intensity.md)
   The intensity of the spotlight measured in lumen.
@@ -63,6 +49,11 @@ The following table shows some real-world scenarios, to better explain how you c
   The outer angle of the spotlight in degrees.
 - [var attenuationRadius: Float](spotlightcomponent/attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
+- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent.md)
+  The exponent value for the light’s intensity falloff-transition curve.
+### Supporting types
+- [SpotLightComponent.Color](spotlightcomponent/color-swift.typealias.md)
+  A platform-specific type used to define color for a spotlight.
 ### Structures
 - [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.
@@ -72,17 +63,10 @@ The following table shows some real-world scenarios, to better explain how you c
 - [init(color:intensity:innerAngleInDegrees:outerAngleInDegrees:attenuationRadius:attenuationFalloffExponent:)](spotlightcomponent/init(color:intensity:innerangleindegrees:outerangleindegrees:attenuationradius:attenuationfalloffexponent:).md)
   Creates a spotlight with the given parameters.
 ### Instance Properties
-- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent-2xq58.md)
-  The exponent value for the light’s intensity falloff-transition curve.
-- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent-66dv0.md)
-  The exponent value for the light’s intensity falloff-transition curve.
+- [var color: SpotLightComponent.Color](spotlightcomponent/color-2o8ve.md)
+  A color for the spotlight.
 - [var color: SpotLightComponent.Color](spotlightcomponent/color-6enoj.md)
   A color for the spotlight.
-### Type Aliases
-- [SpotLightComponent.Color](spotlightcomponent/color-601az.md)
-  A platform-specific type used to define color for a spotlight.
-- [SpotLightComponent.Color](spotlightcomponent/color-8cife.md)
-  A platform-specific type used to define color for a spotlight.
 
 ## Relationships
 
@@ -95,6 +79,9 @@ The following table shows some real-world scenarios, to better explain how you c
 
 - [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.
+- [SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/shadowclippingplane.md)
+  An object that specifies the mode of a shadow clipping plane.
+- [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
 
 
 ---

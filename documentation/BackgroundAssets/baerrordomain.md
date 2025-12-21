@@ -19,6 +19,8 @@ let BAErrorDomain: String
 
 ## See Also
 
+- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
+  An error for a managed asset pack.
 - [enum BAErrorCode](baerrorcode.md)
 
 

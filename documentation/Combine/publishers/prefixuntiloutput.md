@@ -22,24 +22,19 @@ struct PrefixUntilOutput<Upstream, Other> where Upstream : Publisher, Other : Pu
 
 ## Topics
 
-### Creating a Prefix Until Output Publisher
+### Creating a prefix until output publisher
 - [init(upstream: Upstream, other: Other)](publishers/prefixuntiloutput/init(upstream:other:).md)
   Creates a publisher that republishes elements until another publisher emits an element.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.PrefixUntilOutput.Output](publishers/prefixuntiloutput/output.md)
   The kind of values published by this publisher.
 - [Publishers.PrefixUntilOutput.Failure](publishers/prefixuntiloutput/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/prefixuntiloutput/upstream.md)
   The publisher from which this publisher receives elements.
 - [let other: Other](publishers/prefixuntiloutput/other.md)
   Another publisher, whose first output causes this publisher to finish.
-### Applying Operators
-- [Publisher Operators](publishers-prefixuntiloutput-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/prefixuntiloutput/publisher-implementations.md)
 
 ## Relationships
 

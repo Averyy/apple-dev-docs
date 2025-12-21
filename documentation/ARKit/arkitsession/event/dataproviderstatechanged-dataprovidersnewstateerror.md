@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: case
 
-An event that represents a change in state of one of the data providers associated with a session.
+An event that represents a state change of one or more of the data providers associated with a session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -17,14 +17,9 @@ case dataProviderStateChanged(dataProviders: [any DataProvider], newState: DataP
 
 ## Parameters
 
-- `dataProviders`: The data providers associated with this session.
-- `newState`: The state that changed to cause the event.
-- `error`: A session error assocated with the state change.
-
-## See Also
-
-- [case authorizationChanged(type: ARKitSession.AuthorizationType, status: ARKitSession.AuthorizationStatus)](arkitsession/event/authorizationchanged(type:status:).md)
-  An event that represents a change in authorization status for a specific authorization type.
+- `dataProviders`: The data providers whose state has changed.
+- `newState`: The new data provider state, which triggered the event.
+- `error`: An   associated with the state change, if any. This is only applicable to   updates.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Configures the default value returned from [`draggingSourceOperationMaskForLocal:`](https://developer.apple.com/documentation/objectivec/nsobject/1415984-draggingsourceoperationmaskforlo).
+Configures the drag operation mask.
 
 **Availability**:
 - macOS 10.5+
@@ -17,7 +17,7 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 
 #### Discussion
 
-By default, [`draggingSourceOperationMaskForLocal:`](https://developer.apple.com/documentation/objectivec/nsobject/1415984-draggingsourceoperationmaskforlo) returns `NSDragOperationEvery` when `isLocal` is [`true`](https://developer.apple.com/documentation/swift/true) and `NSDragOperationNone` when `isLocal` is [`false`](https://developer.apple.com/documentation/swift/false).
+This method configures the default return value of [`draggingSourceOperationMaskForLocal:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/draggingSourceOperationMaskForLocal:). By default, this method returns [`every`](nsdragoperation/every.md) when `isLocal` is [`true`](https://developer.apple.com/documentation/Swift/true) and [`NSDragOperationNone`](nsdragoperation/nsdragoperationnone.md) when `isLocal` is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

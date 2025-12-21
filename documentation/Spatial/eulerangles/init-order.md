@@ -13,7 +13,6 @@ Creates a new Euler angles structure from the specified angle structures and ord
 - tvOS 17.0+
 - visionOS ?+
 - watchOS 10.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

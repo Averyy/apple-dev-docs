@@ -17,6 +17,11 @@
 func displayedPixelBuffer() -> CVPixelBuffer?
 ```
 
+## See Also
+
+- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
+  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
+
 
 ---
 

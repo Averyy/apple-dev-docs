@@ -23,9 +23,9 @@ class AVPlayerViewController
 
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
-- [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
 - [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+- [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
 
 #### Overview
@@ -40,7 +40,9 @@ AirPlay lets users stream media to Apple TV, HomePod, and AirPlay 2-compatible s
 
 ##### Adopt Picture in Picture Playback
 
-[`AVPlayerViewController`](avplayerviewcontroller.md) provides Picture in Picture (PiP) playback in iOS, tvOS, and macOS. PiP playback lets users minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
+[`AVPlayerViewController`](avplayerviewcontroller.md) provides Picture in Picture (PiP) playback in iOS and tvOS. PiP playback lets users minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
+
+> **Note**: To enable PiP playback in your macOS app, use [`AVPlayerView`](avplayerview.md).
 
 ##### Customize the Tvos Playback Experience
 

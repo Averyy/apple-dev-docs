@@ -20,6 +20,10 @@ Returns an array of URLs for the specified common directory in the requested dom
 func urls(for directory: FileManager.SearchPathDirectory, in domainMask: FileManager.SearchPathDomainMask) -> [URL]
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Return Value
 
 An array of [`NSURL`](nsurl.md) objects identifying the requested directories. The directories are ordered according to the order of the domain mask constants, with items in the user domain first and items in the system domain last.

@@ -22,11 +22,11 @@ func handleIncomingRequest(_: Self.Input) -> Self.Output?
 
 #### Return Value
 
-A response message, if any, to send back to the client; otherwise [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+A response message, if any, to send back to the client; otherwise [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 #### Discussion
 
-If the closure returns [`Nil`](https://developer.apple.com/documentation/objectivec/nil), you can still send use [`send(message:)`](xpcsession/send(message:).md) to send an asynchronous reply after handling the message.
+If the closure returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), you can still send use [`send(message:)`](xpcsession/send(message:).md) to send an asynchronous reply after handling the message.
 
 ## See Also
 

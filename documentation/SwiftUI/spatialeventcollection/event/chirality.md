@@ -6,7 +6,7 @@
 The hand chirality (left or right) of this event, for relevant event kinds.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

@@ -3,10 +3,10 @@
 **Framework**: AppKit  
 **Kind**: class
 
-NSGlassView embeds its content view in a dynamic glass effect.
+A view that embeds its content view in a dynamic glass effect.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,11 +19,13 @@ class NSGlassEffectView
 
 ### Instance Properties
 - [var contentView: NSView?](nsglasseffectview/contentview.md)
-  The view to be embedded in glass. Note that only the contentView of the NSGlassView is guaranteed to be placed inside the glass effect. Arbitrary subviews are not guaranteed any specific behavior regarding z-order against the content view or glass effect.
+  The view to embed in glass.
 - [var cornerRadius: CGFloat](nsglasseffectview/cornerradius.md)
-  Controls the amount of curvature for all corners of the glass.
+  The amount of curvature for all corners of the glass.
+- [var style: NSGlassEffectView.Style](nsglasseffectview/style-swift.property.md)
+  The style of glass this view uses.
 - [var tintColor: NSColor?](nsglasseffectview/tintcolor.md)
-  Modifies the background and effect to tint toward the provided tint color.
+  The color the glass effect view uses to tint the background and glass effect toward.
 
 ## Relationships
 
@@ -51,8 +53,9 @@ class NSGlassEffectView
 
 ## See Also
 
+- [NSGlassEffectView.Style](nsglasseffectview/style-swift.enum.md)
 - [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
-  NSGlassContainerView allows similar NSGlassViews in appropriate proximity to eachother to be merged together. Additionally, NSGlassContainerView can reduce the number of passes required to render similar glass views.
+  A view that efficiently merges descendant glass effect views together when they are within a specified proximity to each other.
 
 
 ---

@@ -29,7 +29,7 @@ The cloud attachments at the locations of tap gestures are `RealityViewAttachmen
 
 ##### Load and Configure Entities From Reality Composer Pro
 
-This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files. See [`Designing RealityKit content with Reality Composer Pro`](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro) for more information.
+This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files. See doc://com.apple.documentation/documentation/visionos/designing-realitykit-content-with-reality-composer-pro for more information.
 
 The app then configures the appearance of the [`ModelEntity`](modelentity.md) by setting the material of the [`ModelComponent`](modelcomponent.md), which is the [`Component`](component.md) that affects appearance. The following code example demonstrates loading a model and configuring the material:
 
@@ -221,12 +221,16 @@ for cloud in rainbowModel.tapAttachments {
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

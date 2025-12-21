@@ -22,7 +22,7 @@ var canGoToNextPage: Bool { get }
 
 #### Discussion
 
-The return value will be [`true`](https://developer.apple.com/documentation/swift/true) unless the view is displaying the last page.
+The return value will be [`true`](https://developer.apple.com/documentation/Swift/true) unless the view is displaying the last page.
 
 ## See Also
 

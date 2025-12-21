@@ -25,7 +25,7 @@ Refer to the [`Tessellation`](https://developer.apple.comhttps://developer.apple
 
 ## Topics
 
-### Fields
+### Initializers
 - [init()](mtlquadtessellationfactorshalf/init.md)
   Returns a new per-patch tessellation factors structure.
 - [init(edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16), insideTessellationFactor: (UInt16, UInt16))](mtlquadtessellationfactorshalf/init(edgetessellationfactor:insidetessellationfactor:).md)

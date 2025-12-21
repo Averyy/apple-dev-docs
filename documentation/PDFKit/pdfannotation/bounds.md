@@ -16,7 +16,7 @@ Returns the bounding box for the annotation in page space.
 ## Declaration
 
 ```swift
-var bounds: CGRect { get set }
+var bounds: NSRect { get set }
 ```
 
 #### Return Value

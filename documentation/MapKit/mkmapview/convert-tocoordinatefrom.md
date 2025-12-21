@@ -17,7 +17,7 @@ Converts a point in the specified view’s coordinate system to a map coordinate
 
 ```swift
 @MainActor
-func convert(_ point: CGPoint, toCoordinateFrom view: UIView?) -> CLLocationCoordinate2D
+func convert(_ point: CGPoint, toCoordinateFrom view: NSView?) -> CLLocationCoordinate2D
 ```
 
 #### Return Value

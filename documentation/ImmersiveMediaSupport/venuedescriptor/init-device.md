@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Creates an empty `VenueDescriptor`, useful when creating a new `VenueDescriptor` in code (other than loading from an AIME file).
+Creates an empty venue descriptor instance.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ init(device: (any MTLDevice)? = nil)
 ## See Also
 
 - [convenience init(aimeURL: URL, device: (any MTLDevice)?) async throws](venuedescriptor/init(aimeurl:device:).md)
-  Initializes a `VenueDescriptor` instance from an AIME file.
+  Creates a venue descriptor instance from an AIME file.
 
 
 ---

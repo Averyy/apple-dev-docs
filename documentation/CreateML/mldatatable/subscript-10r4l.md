@@ -70,11 +70,6 @@ let validPageCountTable = table[pagesColumn]
 
 - `mask`: An untyped column indicating whether rows should be removed (a   default value) or included (any nondefault value) in the derived table.
 
-## See Also
-
-- [subscript(MLDataColumn<Bool>) -> MLDataTable](mldatatable/subscript(_:)-3opgl.md)
-  Creates a subset of the table by masking the rows with the given column of Booleans.
-
 
 ---
 

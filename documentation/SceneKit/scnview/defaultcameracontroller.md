@@ -19,8 +19,6 @@
 var defaultCameraController: SCNCameraController { get }
 ```
 
-#### Discussion
-
 ## See Also
 
 - [var allowsCameraControl: Bool](scnview/allowscameracontrol.md)

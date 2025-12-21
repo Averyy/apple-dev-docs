@@ -9,7 +9,7 @@ The scale factor of the content in the view.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

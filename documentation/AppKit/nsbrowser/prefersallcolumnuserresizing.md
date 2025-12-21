@@ -17,7 +17,7 @@ var prefersAllColumnUserResizing: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser is set to resize all columns simultaneously. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the browser is set to resize all columns simultaneously. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This setting applies only to browsers that allow the user to resize columns (see the constant [`NSBrowser.ColumnResizingType.userColumnResizing`](nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md)). Holding down the Option key while resizing switches the type of resizing used. This setting is persistent.
 

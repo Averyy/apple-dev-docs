@@ -22,19 +22,19 @@ enum MLTaskState
 
 ## Topics
 
-### Transient States
+### Transient states
 - [MLTaskState.running](mltaskstate/running.md)
   The state of a machine learning task that’s executing.
 - [MLTaskState.suspended](mltaskstate/suspended.md)
   The state of a machine learning task that’s paused.
 - [MLTaskState.cancelling](mltaskstate/cancelling.md)
   The state of a machine learning task that’s in mid-termination, before it could finish successfully.
-### Final States
+### Final states
 - [MLTaskState.completed](mltaskstate/completed.md)
   The state of a machine learning task that has finished successfully.
 - [MLTaskState.failed](mltaskstate/failed.md)
   The state of a machine learning task that has terminated due to an error.
-### Initializers
+### Creating a task state
 - [init?(rawValue: Int)](mltaskstate/init(rawvalue:).md)
 
 ## Relationships

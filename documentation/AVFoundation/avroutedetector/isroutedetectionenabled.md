@@ -21,7 +21,7 @@ var isRouteDetectionEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > **Note**:  Enabling route detection significantly increases power consumption. Turn it off when you no longer need it.
 

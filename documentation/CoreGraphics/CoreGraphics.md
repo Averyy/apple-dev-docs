@@ -23,7 +23,7 @@ In macOS, Core Graphics also includes services for working with display hardware
 ## Topics
 
 ### Geometric Data Types
-- [@frozen struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
+- [struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
 - [struct CGPoint](../CoreFoundation/CGPoint.md)
 - [struct CGSize](../CoreFoundation/CGSize.md)
@@ -82,29 +82,11 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [Core Graphics Functions](core-graphics-functions.md)
 - [Core Graphics Data Types](core-graphics-data-types.md)
 ### Classes
-- [class CGPDFWrappedObject](cgpdfwrappedobject.md)
-  CGPDFWrappedObject is used to add a PDF object to a CGPDFArray or CGPDFDictionary.
 - [class CGRenderingBufferProvider](cgrenderingbufferprovider.md)
-### Protocols
-- [protocol PDFObjectType](pdfobjecttype.md)
 ### Structures
 - [struct CGBitmapParameters](cgbitmapparameters-4v8wo.md)
 - [struct CGColorModel](cgcolormodel.md)
 - [struct CGContentInfo](cgcontentinfo.md)
-### Functions
-- [func CGGradientCreateWithContentHeadroom(Float, CGColorSpace, UnsafePointer<CGFloat>, UnsafePointer<CGFloat>?, Int) -> CGGradient?](cggradientcreatewithcontentheadroom(_:_:_:_:_:).md)
-- [func CGGradientGetContentHeadroom(CGGradient) -> Float](cggradientgetcontentheadroom(_:).md)
-- [func CGPDFWrappedObjectCreateWithArray(CGPDFArrayRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewitharray(_:).md)
-- [func CGPDFWrappedObjectCreateWithBoolean(CGPDFBoolean) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithboolean(_:).md)
-- [func CGPDFWrappedObjectCreateWithDictionary(CGPDFDictionaryRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithdictionary(_:).md)
-- [func CGPDFWrappedObjectCreateWithInteger(CGPDFInteger) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithinteger(_:).md)
-- [func CGPDFWrappedObjectCreateWithName(UnsafePointer<CChar>) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithname(_:).md)
-- [func CGPDFWrappedObjectCreateWithReal(CGPDFReal) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithreal(_:).md)
-- [func CGPDFWrappedObjectCreateWithStream(CGPDFStreamRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstream(_:).md)
-- [func CGPDFWrappedObjectCreateWithString(CGPDFStringRef) -> CGPDFWrappedObject](cgpdfwrappedobjectcreatewithstring(_:).md)
-- [func CGShadingCreateAxialWithContentHeadroom(Float, CGColorSpace, CGPoint, CGPoint, CGFunction, Bool, Bool) -> CGShading?](cgshadingcreateaxialwithcontentheadroom(_:_:_:_:_:_:_:).md)
-- [func CGShadingCreateRadialWithContentHeadroom(Float, CGColorSpace, CGPoint, CGFloat, CGPoint, CGFloat, CGFunction, Bool, Bool) -> CGShading?](cgshadingcreateradialwithcontentheadroom(_:_:_:_:_:_:_:_:_:).md)
-- [func CGShadingGetContentHeadroom(CGShading) -> Float](cgshadinggetcontentheadroom(_:).md)
 ### Enumerations
 - [enum CGBitmapLayout](cgbitmaplayout.md)
 - [enum CGComponent](cgcomponent.md)

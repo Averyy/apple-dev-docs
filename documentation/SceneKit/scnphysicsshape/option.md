@@ -24,7 +24,7 @@ struct Option
 
 When SceneKit creates a shape from a hierarchy of nodes containing multiple geometries, the [`keepAsCompound`](scnphysicsshape/option/keepascompound.md) option takes precedence over the [`type`](scnphysicsshape/option/type.md) option.
 
-For example, if you have a node hierarchy containing several geometries, setting the the [`type`](scnphysicsshape/option/type.md) option to [`boundingBox`](scnphysicsshape/shapetype/boundingbox.md) and the [`keepAsCompound`](scnphysicsshape/option/keepascompound.md) option to [`true`](https://developer.apple.com/documentation/swift/true) creates a shape that is a combination of several boxes. This approach can provide better simulation performance than converting the entire node hierarchy to a single concave polyhedron shape.
+For example, if you have a node hierarchy containing several geometries, setting the the [`type`](scnphysicsshape/option/type.md) option to [`boundingBox`](scnphysicsshape/shapetype/boundingbox.md) and the [`keepAsCompound`](scnphysicsshape/option/keepascompound.md) option to [`true`](https://developer.apple.com/documentation/Swift/true) creates a shape that is a combination of several boxes. This approach can provide better simulation performance than converting the entire node hierarchy to a single concave polyhedron shape.
 
 ## Topics
 

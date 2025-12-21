@@ -21,7 +21,7 @@ var maxKernelBufferBindCount: Int { get set }
 
 #### Discussion
 
-Metal ignores this property if [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) is [`true`](https://developer.apple.com/documentation/swift/true) or if you configured [`commandTypes`](mtlindirectcommandbufferdescriptor/commandtypes.md) for rendering commands. Metal must reserve enough memory in each command to store this many arguments. Use the smallest value that works for all commands you plan to encode into the indirect command buffer.
+Metal ignores this property if [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) is [`true`](https://developer.apple.com/documentation/Swift/true) or if you configured [`commandTypes`](mtlindirectcommandbufferdescriptor/commandtypes.md) for rendering commands. Metal needs to reserve enough memory in each command to store this many arguments. Use the smallest value that works for all commands you plan to encode into the indirect command buffer.
 
 ## See Also
 

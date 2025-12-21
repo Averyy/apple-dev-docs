@@ -30,6 +30,7 @@ struct NumberingSystem
   The numbering system’s BCP 47 identifier.
 ### Type Properties
 - [static var availableNumberingSystems: [Locale.NumberingSystem]](locale/numberingsystem-swift.struct/availablenumberingsystems.md)
+  A list of available numbering systems on the system.
 
 ## Relationships
 

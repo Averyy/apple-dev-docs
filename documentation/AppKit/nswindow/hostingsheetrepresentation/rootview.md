@@ -6,7 +6,7 @@
 The root view of the sheet.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

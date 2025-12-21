@@ -11,9 +11,8 @@ A structure that contains the parameters for You Only Look Once (YOLO) loss comp
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- watchOS 7.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 7.0+
 
 ## Declaration
 

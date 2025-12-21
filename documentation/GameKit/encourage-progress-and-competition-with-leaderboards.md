@@ -16,15 +16,13 @@ You can also combine individual leaderboards into sets, creating a hierarchy of 
 
 For design guidance on all types of leaderboards, see [`Human Interface Guidelines > Technologies > Game Center > Leaderboards`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center#Leaderboards). For additional information on recurring leaderboards, see [`Creating recurring leaderboards`](creating-recurring-leaderboards.md).
 
-##### Configure Leaderboards and Leaderboard Sets
+#### Configure and Test Leaderboards and Leaderboard Sets
 
-Before you can use leaderboards in your code, you can configure them in Xcode and sync the configuration updates you make with App Store Connect. Begin configuring leaderboards by creating a GameKit configuration file. In Xcode, choose File > New > File from Template. Select GameKit File, and click Next. In the sheet that appears, enter a name for the configuration and click Create.
+Configure leaderboards in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md).
 
-If you’ve already configured leaderboards in App Store Connect, click More (…) at the bottom of the left column. Then choose Pull from App Store Connect. Select the bundle ID or Game Center group for your game from the list, and click pull. Resource details appear in the editor on the right.
+For each leaderboard you configure, you specify details like the score format, submission type, and whether the data resets and starts again after a period of time. Decide on a style for your leaderboard identifiers, because you won’t be able to change them at a later time. Before you begin, have at least one localized name and image, which Game Center presents to the player, ready to upload for a language.
 
-To create a new leaderboard, click Add (+) at the bottom of the left column, and choose Leaderboard. For each leaderboard, you specify details like the score format, submission type, and whether the data resets and starts again after a period of time. Decide on a style for your leaderboard identifiers, because you won’t be able to change them at a later time. Before you begin, have at least one localized name and image, which Game Center presents to the player, ready to upload for a language.
-
-> 💡 **Tip**: Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
+![A screenshot showing the Xcode project with a GameKit configuration file selected. A leaderboard is in a selected state and it shows a variety of properties to configure, like the reference name, score format type, score submission type, and so on.](https://docs-assets.developer.apple.com/published/896698aca1b7e35bb2d51ea08117c716/xcode-config-leaderboards%402x.png)
 
 A leaderboard set organizes many leaderboards into a single unit. For example, for a game with many levels, use a leaderboard set to organize the leaderboards for each level. You can have up to 100 leaderboards without using leaderboard sets. When you use leaderboard sets, you can have up to 500 leaderboards across 100 leaderboard sets.
 
@@ -34,19 +32,13 @@ If you add a leaderboard to an unreleased version of your game or sign the game 
 
 > **Note**: If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
 
-To learn more about the information you enter in App Store Connect, see [`Leaderboard properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
+Use the Game Progress Manager to test leaderboards on your local device before you push the configuration update to App Store Connect. After selecting a leaderboard, you can add players to the leaderboard with score value. You can also test deep-linking behavior that you associate with a leaderboard.
 
-##### Test Leaderboards By Using the Progress Manager
+![A screenshot showing the Game Progress Manager with a leaderboard is in a selected state. The right panel shows a list of custom players that have a score values.](https://docs-assets.developer.apple.com/published/1ecee853d8093dcc5b84b4a97287fc35/xcode-progress-manager-leaderboards%402x.png)
 
-Before you begin testing your GameKit configuration, you need to enable Debug Mode. In Xcode, choose Product > Scheme > Edit Scheme. From the Run configuration, select Options and toggle Enable Debug Mode.
+For more information about the leaderboard properties you can configure, see [`Leaderboard properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
-To begin testing your leaderboard configuration, open the game Progress Manager. In Xcode, choose Debug > GameKit > Manage Game Progress. From the top left of the window that appears, select the physical device you use for testing, and the project you want to debug. The test data stays local to your machine and doesn’t rely on App Store Connect to test.
-
-After selecting the device and app, choose the leaderboard you want to test. When you change a player’s score in a leaderboard, the system sends an update to your app so you can verify that the leaderboard changes.
-
-If you want to reset the progress for your achievements and leaderboards, click the reset button at the top of the Progress Manager. You can’t access previous occurrences of achievements and leaderboards after resetting the Progress Manager.
-
-##### Choose a Score Format
+#### Choose a Score Format
 
 Game Center formats the scores that you submit as integer values depending on the leaderboard configuration you enter in Xcode. On the Add Leaderboard page, choose a score format — such as fixed points, elapsed time, or money — that makes sense for your game. For example, if you choose these formats, Game Center formats the values as follows:
 
@@ -65,13 +57,13 @@ Optionally, enter a range of allowable values in the Score Range fields that mat
 
 ![A screenshot of the Add Leaderboard sheet in Xcode. The score format is set to Elapsed Time - To the Hundredth of a Second, with 360000 centiseconds entered as the maximum value in the score range, formatted as 1:00:00.00.](https://docs-assets.developer.apple.com/published/02c72dd4834ea2d545434aad90263db4/add-leaderboard%402x.png)
 
-##### Add a Unit to the Score Format or Choose a Currency Symbol
+#### Add a Unit to the Score Format or Choose a Currency Symbol
 
 You can further format the scores when you add a language to the leaderboard configuration in Xcode. You need to add at least one language to save the leaderboard configuration.
 
 On the Add Language page, append a unit to the score that Game Center formats, such as `pts,` `lbs`, or `meters`, by entering the localized strings for the units in the Score Format Suffix text fields. For money values, you can choose a localized currency symbol from the Score Format menu.
 
-##### Submit Scores to Leaderboards
+#### Submit Scores to Leaderboards
 
 To submit a score to one or more leaderboards, use the `GKLeaderboard` [`submitScore(_:context:player:leaderboardIDs:completionHandler:)`](gkleaderboard/submitscore(_:context:player:leaderboardids:completionhandler:).md) class method. Pass one or more leaderboard IDs, as well as the score, context, and player.
 
@@ -87,7 +79,9 @@ If you load all leaderboards using the `GKLeaderboard` [`loadLeaderboards(IDs:co
 
 Optionally, use the `context` parameter in both of these methods to store game-specific information. For example, pass a flag that contains information about how the player earned the score, such as the vehicle they drive in a racing game.
 
-##### Fetch Leaderboards and Leaderboard Sets
+If you prefer to submit scores through your own server, see [`Game Center leaderboards scores`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center-leaderboards-scores).
+
+#### Fetch Leaderboards and Leaderboard Sets
 
 To fetch one or more individual leaderboards, pass the leaderboard IDs to the `GKLeaderboard` [`loadLeaderboards(IDs:completionHandler:)`](gkleaderboard/loadleaderboards(ids:completionhandler:).md) class method.
 
@@ -100,7 +94,7 @@ To fetch specific occurrences of a recurring leaderboard, use the [`loadPrevious
 
 To fetch leaderboard sets, use the `GKLeaderboardSet` [`loadLeaderboardSets(completionHandler:)`](gkleaderboardset/loadleaderboardsets(completionhandler:).md) class method. Then to fetch individual leaderboards in a set, use the [`loadLeaderboards(handler:)`](gkleaderboardset/loadleaderboards(handler:).md) instance method.
 
-##### Get the Scores From Leaderboards
+#### Get the Scores From Leaderboards
 
 To load the scores that the local player and others earn from a leaderboard, use the `GKLeaderboard` [`loadEntries(for:timeScope:range:completionHandler:)`](gkleaderboard/loadentries(for:timescope:range:completionhandler:).md) method.
 
@@ -117,7 +111,7 @@ To get all player scores in that time period, pass [`GKLeaderboard.PlayerScope.g
 
 Then use the properties of the [`GKLeaderboard.Entry`](gkleaderboard/entry.md) instances that this method returns to get details about the individual scores, including the players who earned them.
 
-##### Display Leaderboards
+#### Display Leaderboards
 
 To display a leaderboard or leaderboard set in your custom game interface, load the leaderboard or leaderboard set and use the [`title`](gkleaderboard/title.md) property to get the localized name. To get the image representation that you upload to App Store Connect, use the [`loadImage(completionHandler:)`](gkleaderboard/loadimage(completionhandler:).md) method.
 
@@ -128,7 +122,7 @@ let image = try await leaderboard.loadImage()
 
 Alternatively, display the leaderboard in the familiar Game Center interface. To learn more, see [`Display a single leaderboard`](displaying-the-game-center-dashboard#Display-a-single-leaderboard.md).
 
-##### Set the Default Leaderboard
+#### Set the Default Leaderboard
 
 You can set the default leaderboard for an individual player during your game. For example, change the default leaderboard when the player advances to a different level in your game.
 

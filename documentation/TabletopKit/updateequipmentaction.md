@@ -26,7 +26,7 @@ To create an update equipment action, use the [`updateEquipment(_:state:context:
 ### Getting the state of the equipment
 - [var newState: State?](updateequipmentaction/newstate.md)
   The new state of the equipment.
-### Instance Properties
+### Getting the context and player identifier
 - [var context: UInt64](updateequipmentaction/context.md)
   An integer value that your game uses.
 - [var playerID: Player.ID?](updateequipmentaction/playerid.md)
@@ -50,6 +50,8 @@ To create an update equipment action, use the [`updateEquipment(_:state:context:
   An action that updates the game counter.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

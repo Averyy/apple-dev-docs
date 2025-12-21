@@ -15,6 +15,17 @@ The transaction is in a pending state.
 case pending
 ```
 
+## See Also
+
+- [TransactionStatus.authorized](transactionstatus/authorized.md)
+  The transaction is in an authorized state.
+- [TransactionStatus.booked](transactionstatus/booked.md)
+  The transaction is in a booked state.
+- [TransactionStatus.memo](transactionstatus/memo.md)
+  A memo that provides information about the transaction.
+- [TransactionStatus.rejected](transactionstatus/rejected.md)
+  The transaction is in a rejected state.
+
 
 ---
 

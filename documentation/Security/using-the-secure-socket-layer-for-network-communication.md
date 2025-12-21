@@ -23,8 +23,8 @@ Most applications need only a few of the functions in this API, which are normal
 - End a session
 - Call [`SSLClose(_:)`](sslclose(_:).md) to close the secure session.
 - Close the connection and dispose of the connection reference.
-- Release the SSL session context by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
-- If you called `SSLGetPeerCertificates` to obtain any certificates, call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the certificate reference objects.
+- Release the SSL session context by calling [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
+- If you called `SSLGetPeerCertificates` to obtain any certificates, call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the certificate reference objects.
 
 In many cases, it is easier to use the CFNetwork API than Secure Transport to implement a simple connection to a secure (HTTPS) URL. See [`CFNetwork Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132) for documentation of the CFNetwork API and the CFNetworkHTTPDownload sample code for an example of code that downloads data from a URL. If you specify an HTTPS URL, this routine automatically uses Secure Transport to encrypt the data stream.
 

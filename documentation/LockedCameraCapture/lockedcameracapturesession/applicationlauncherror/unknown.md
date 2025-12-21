@@ -1,9 +1,9 @@
-# !=(_:_:)
+# LockedCameraCaptureSession.ApplicationLaunchError.unknown
 
 **Framework**: LockedCameraCapture  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An error that the launch failed with an unknown error.
 
 **Availability**:
 - iOS 18.0+
@@ -12,21 +12,10 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/unknown)*

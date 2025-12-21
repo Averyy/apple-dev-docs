@@ -22,9 +22,9 @@ var idleDuration: CGFloat { get set }
 
 #### Discussion
 
-If the system’s [`loops`](scnparticlesystem/loops.md) property value is [`true`](https://developer.apple.com/documentation/swift/true), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](scnparticlesystem/emissionduration.md) value is `1.0` seconds and the [`idleDuration`](scnparticlesystem/idleduration.md) value is `1.0` seconds, the system alternates between equal one-second periods of spawning and not spawning particles. You can randomize the duration with the [`idleDurationVariation`](scnparticlesystem/idledurationvariation.md) property. Idle duration has no effect if the [`loops`](scnparticlesystem/loops.md) property value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the system’s [`loops`](scnparticlesystem/loops.md) property value is [`true`](https://developer.apple.com/documentation/Swift/true), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](scnparticlesystem/emissionduration.md) value is `1.0` seconds and the [`idleDuration`](scnparticlesystem/idleduration.md) value is `1.0` seconds, the system alternates between equal one-second periods of spawning and not spawning particles. You can randomize the duration with the [`idleDurationVariation`](scnparticlesystem/idledurationvariation.md) property. Idle duration has no effect if the [`loops`](scnparticlesystem/loops.md) property value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The default value is `0.0` seconds, specifying no idle time between emissions. (That is, if the [`loops`](scnparticlesystem/loops.md) property value is [`true`](https://developer.apple.com/documentation/swift/true), the system emits particles continuously.)
+The default value is `0.0` seconds, specifying no idle time between emissions. (That is, if the [`loops`](scnparticlesystem/loops.md) property value is [`true`](https://developer.apple.com/documentation/Swift/true), the system emits particles continuously.)
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

@@ -6,7 +6,7 @@
 An immersion style that displays unbounded content that partially replaces passthrough video.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

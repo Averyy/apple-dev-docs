@@ -9,6 +9,7 @@ The object that handles the double-tap or squeeze interactions a person makes on
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 

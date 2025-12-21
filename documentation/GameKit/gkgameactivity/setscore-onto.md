@@ -6,12 +6,12 @@
 Set a score of a leaderboard for a player.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ func setScore(on leaderboard: GKLeaderboard, to score: Int)
 
 #### Discussion
 
-The score will be submitted to the leaderboard when the activity ends.
+The framewowrk submits the score to the leaderboard when the activity ends.
 
 ## See Also
 

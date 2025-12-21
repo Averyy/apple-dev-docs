@@ -18,6 +18,10 @@
 var clampingRange: HKAudiogramSensitivityPointClampingRange? { get }
 ```
 
+#### Discussion
+
+If present, indicates that the range within which the sensitivity point should be clamped.
+
 
 ---
 

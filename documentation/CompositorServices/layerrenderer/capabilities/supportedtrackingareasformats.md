@@ -6,8 +6,8 @@
 An array of tracking areas formats that the layer supports for its textures.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

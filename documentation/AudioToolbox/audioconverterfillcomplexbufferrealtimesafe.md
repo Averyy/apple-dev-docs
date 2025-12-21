@@ -4,12 +4,12 @@
 **Kind**: func
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,9 +19,7 @@ func AudioConverterFillComplexBufferRealtimeSafe(_ inAudioConverter: AudioConver
 
 #### Discussion
 
-```None
-		guarantee.
-```
+Identical to AudioConverterFillComplexBuffer, with the addition of a realtime-safety guarantee.
 
 Conversions involving only PCM formats – interleaving, deinterleaving, channel count changes, sample rate conversions – are realtime-safe. Such conversions may use this API in order to obtain compiler checks involving the `CA_REALTIME_API` attributes.
 

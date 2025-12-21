@@ -21,12 +21,6 @@ An asset account includes accounts such as a bank account or a savings account.
 
 ## Topics
 
-### Operators
-- [static func == (AssetAccount, AssetAccount) -> Bool](assetaccount/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](assetaccount/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [let accountDescription: String?](assetaccount/accountdescription.md)
   The description of the account.
@@ -34,20 +28,12 @@ An asset account includes accounts such as a bank account or a savings account.
   ISO 4217 currency code that identifies the currency in which the account is held.
 - [let displayName: String](assetaccount/displayname.md)
   The name for the account given by a person.
-- [let id: UUID](assetaccount/id-swift.property.md)
+- [let id: UUID](assetaccount/id.md)
   A unique account identifier.
 - [let institutionName: String](assetaccount/institutionname.md)
   The name of the institution that holds the account.
 - [let openingDate: Date?](assetaccount/openingdate.md)
   The date the account was opened, if known.
-### Instance Methods
-- [func encode(to: any Encoder) throws](assetaccount/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [AssetAccount.ID](assetaccount/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](assetaccount/equatable-implementations.md)
 
 ## Relationships
 

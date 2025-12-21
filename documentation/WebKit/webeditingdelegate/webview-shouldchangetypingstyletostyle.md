@@ -16,11 +16,11 @@ optional func webView(_ webView: WebView!, shouldChangeTypingStyle currentStyle:
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to change the typing style in `webView` to `proposedStyle`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user should be allowed to change the typing style in `webView` to `proposedStyle`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-You can implement this method to take some other action—for example, set the typing style to a different style—and return [`false`](https://developer.apple.com/documentation/swift/false) .
+You can implement this method to take some other action—for example, set the typing style to a different style—and return [`false`](https://developer.apple.com/documentation/Swift/false) .
 
 ## Parameters
 

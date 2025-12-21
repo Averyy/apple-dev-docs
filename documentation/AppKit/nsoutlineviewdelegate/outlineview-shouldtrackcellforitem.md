@@ -17,7 +17,7 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldTrackCell cell: NS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell should be tracked for the item `item` in column `tableColumn`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the cell should be tracked for the item `item` in column `tableColumn`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

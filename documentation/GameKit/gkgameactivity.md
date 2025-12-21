@@ -6,12 +6,12 @@
 An object that represents a single instance of a game activity for the current game.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,9 +27,9 @@ class GKGameActivity
 
 ### Creating an activity
 - [init(definition: GKGameActivityDefinition)](gkgameactivity/init(definition:).md)
-  Initializes a game activity with definition.
+  Creates a game activity with definition.
 - [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](gkgameactivity/start(definition:).md)
-  Initializes and starts a game activity with definition.
+  Creates and starts a game activity with a definition.
 - [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](gkgameactivity/start(definition:partycode:).md)
   Creates and starts a new game activity with a custom party code.
 ### Getting the activity definition
@@ -39,26 +39,27 @@ class GKGameActivity
 - [var state: GKGameActivity.State](gkgameactivity/state-swift.property.md)
   The state of the game activity.
 - [GKGameActivity.State](gkgameactivity/state-swift.enum.md)
+  The state of a game activity.
 ### Updating the activity state
 - [func start()](gkgameactivity/start.md)
-  Starts the game activity if it is not already started.
+  Starts the game activity if it’s not already started.
 - [func pause()](gkgameactivity/pause.md)
-  Pauses the game activity if it is not already paused.
+  Pauses the game activity if it’s not already paused.
 - [func resume()](gkgameactivity/resume.md)
   Resumes the game activity if it was paused.
 - [func end()](gkgameactivity/end.md)
-  Ends the game activity if it is not already ended.
+  Ends the game activity if it’s not already ended.
 ### Getting and removing achievements
 - [var achievements: Set<GKAchievement>](gkgameactivity/achievements.md)
   All achievements that have been associated with this activity.
 - [func removeAchievements([GKAchievement])](gkgameactivity/removeachievements(_:).md)
-  Removes all achievements if exist.
+  Removes all achievements if they exist.
 - [func progress(on: GKAchievement) -> Double](gkgameactivity/progress(on:).md)
   Get the achievement progress from a specific achievement of the local player if previously set.
 - [func setProgress(on: GKAchievement, to: Double)](gkgameactivity/setprogress(on:to:).md)
   Set a progress for an achievement for a player.
 - [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
-  Convenience method to set a progress to 100% for an achievement for a player.
+  Set progress to 100% for an achievement for a player.
 ### Getting and removing leaderboard scores
 - [var leaderboardScores: Set<GKLeaderboardScore>](gkgameactivity/leaderboardscores.md)
   All leaderboard scores that have been associated with this activity.
@@ -81,7 +82,7 @@ class GKGameActivity
   Checks whether a party code is in valid format.
 ### Getting the activity properties
 - [var duration: TimeInterval](gkgameactivity/duration.md)
-  Total time elapsed while in active state.
+  The total time elapsed while in active state.
 - [var startDate: Date?](gkgameactivity/startdate.md)
   The date when the activity was initially started.
 - [var endDate: Date?](gkgameactivity/enddate.md)
@@ -101,7 +102,7 @@ class GKGameActivity
   Checks whether there is a pending activity to handle for the current game.
 ### Creating a matchmaking request
 - [func makeMatchRequest() -> GKMatchRequest?](gkgameactivity/makematchrequest.md)
-  Makes a `GKMatchRequest` object with information from the activity, which can be used to find matches for the local player.
+  Makes a match request object with information from the activity, which you can use to find matches for the local player.
 ### Performing a matchmaking request
 - [func findMatch(completionHandler: (GKMatch?, (any Error)?) -> Void)](gkgameactivity/findmatch(completionhandler:).md)
   Use information from the activity to find matches for the local player.

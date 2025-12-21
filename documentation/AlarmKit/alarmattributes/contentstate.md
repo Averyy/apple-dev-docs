@@ -6,8 +6,8 @@
 The type alias for the structure that describes the content of an alarm.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

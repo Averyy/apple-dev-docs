@@ -3,8 +3,6 @@
 **Framework**: Core Graphics  
 **Kind**: property
 
-Returns the location at which text is drawn.
-
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
@@ -19,14 +17,6 @@ Returns the location at which text is drawn.
 ```swift
 var textPosition: CGPoint { get set }
 ```
-
-#### Return Value
-
-Returns a point that specifies the x and y values at which text is to be drawn, in user space coordinates.
-
-## Parameters
-
-- `c`: The graphics context from which to obtain the current text position.
 
 ## See Also
 

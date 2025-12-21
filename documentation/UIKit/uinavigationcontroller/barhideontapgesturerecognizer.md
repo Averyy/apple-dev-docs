@@ -20,7 +20,7 @@ unowned(unsafe) var barHideOnTapGestureRecognizer: UITapGestureRecognizer { get 
 
 #### Discussion
 
-This property contains the gesture recognizer used to hide or show the bars. The gesture recognizer is inactive unless the [`hidesBarsOnTap`](uinavigationcontroller/hidesbarsontap.md) property is [`true`](https://developer.apple.com/documentation/swift/true). You can make changes to the gesture recognizer as needed but must not change its delegate and you must not remove the default target object and action that come configured with it. Do not try to replace this gesture recognizer by overriding the property.
+This property contains the gesture recognizer used to hide or show the bars. The gesture recognizer is inactive unless the [`hidesBarsOnTap`](uinavigationcontroller/hidesbarsontap.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). You can make changes to the gesture recognizer as needed but must not change its delegate and you must not remove the default target object and action that come configured with it. Do not try to replace this gesture recognizer by overriding the property.
 
 If you tie this gesture recognizer to one of your own, make sure both recognize their gestures simultaneously to ensure that each has a chance to handle the event.
 

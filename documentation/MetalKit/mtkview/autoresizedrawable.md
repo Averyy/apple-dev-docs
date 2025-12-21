@@ -22,9 +22,9 @@ var autoResizeDrawable: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the view automatically resizes its underlying color, depth, stencil, and multisample textures when the view is resized. If the value is [`false`](https://developer.apple.com/documentation/swift/false), you must explicitly set [`drawableSize`](mtkview/drawablesize.md) to change the size of these objects.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the view automatically resizes its underlying color, depth, stencil, and multisample textures when the view is resized. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), you must explicitly set [`drawableSize`](mtkview/drawablesize.md) to change the size of these objects.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

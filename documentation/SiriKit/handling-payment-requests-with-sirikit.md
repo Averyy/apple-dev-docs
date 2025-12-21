@@ -11,7 +11,7 @@ Add an Intent Extension to your app to handle money transfer requests with Siri.
 
 #### Overview
 
-The app in this sample project demonstrates how to send payments between users by implementing `INSendPaymentIntentHandling`. Users can make payments with Siri and view a list of previously completed payments inside the main app.
+The app in this sample project demonstrates how to send payments between users by implementing [`INSendPaymentIntentHandling`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling). Users can make payments with Siri and view a list of previously completed payments inside the main app.
 
 The project consists of three targets:
 
@@ -42,9 +42,9 @@ The first step in processing a payment with `INSendPaymentIntentHandling` is to 
 - The request supplies incorrect or inaccurate parameters. For example, the user requests, “Send money to Dave with Payments,” when no valid contacts match “Dave”.
 - The initial request supplies no parameters. For example, the user requests, “Send money with Payments.”
 
-The extension resolves each parameter separately by responding to methods from the `INSendPaymentIntentHandling` protocol. Depending on the initial request and subsequent conversation with Siri, each of the parameter resolution methods may be called multiple times as Siri clarifies the request from the user.
+The extension resolves each parameter separately by responding to methods from the [`INSendPaymentIntentHandling`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling) protocol. Depending on the initial request and subsequent conversation with Siri, each of the parameter resolution methods may be called multiple times as Siri clarifies the request from the user.
 
-The extension resolves the payee parameter through calls to `resolvePayee(for:with:)`. Use this method to take input from Siri, match it to a payee, and asynchronously return an `INPersonResolutionResult` by calling `success(with:)`, `confirmationRequired(with:)`, `disambiguation(with:)`, `needsValue()`, or `unsupported()`.
+The extension resolves the payee parameter through calls to [`resolvePayee(for:with:)`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling/resolvePayee(for:with:)-3otmy). Use this method to take input from Siri, match it to a payee, and asynchronously return an [`INPersonResolutionResult`](https://developer.apple.com/documentation/Intents/INPersonResolutionResult) by calling [`success(with:)`](https://developer.apple.com/documentation/Intents/INPersonResolutionResult/success(with:)), [`confirmationRequired(with:)`](https://developer.apple.com/documentation/Intents/INPersonResolutionResult/confirmationRequired(with:)), or [`disambiguation(with:)`](https://developer.apple.com/documentation/Intents/INPersonResolutionResult/disambiguation(with:)).
 
 ```swift
 func resolvePayee(for intent: INSendPaymentIntent, with completion: @escaping (INPersonResolutionResult) -> Void) {
@@ -82,7 +82,7 @@ func resolvePayee(for intent: INSendPaymentIntent, with completion: @escaping (I
 }
 ```
 
-The extension resolves the currency amount for the payment through calls to `resolveCurrencyAmount(for:with:)`, and optionally a note to be associated with the transaction is resolved with calls to `resolveNote(for:with:)`.
+The extension resolves the currency amount for the payment through calls to [`resolveCurrencyAmount(for:with:)`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling/resolveCurrencyAmount(for:with:)-75c7o), and optionally a note to be associated with the transaction is resolved with calls to [`resolveNote(for:with:)`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling/resolveNote(for:with:)).
 
 ```swift
 func resolveCurrencyAmount(for intent: INSendPaymentIntent, with completion: @escaping (INCurrencyAmountResolutionResult) -> Void) {
@@ -116,7 +116,7 @@ func resolveCurrencyAmount(for intent: INSendPaymentIntent, with completion: @es
 
 ##### Add Domain Specific Language
 
-Use `INVocabulary` to aid Siri with recognizing any domain-specific vocabulary users are likely to use in their voice commands. For example, in this sample project payee names are not taken from the user’s contacts but from a predefined list inside the app, so these names are added as additional vocabulary with `setVocabularyStrings:ofType:`.
+Use [`INVocabulary`](https://developer.apple.com/documentation/Intents/INVocabulary) to aid Siri with recognizing any domain-specific vocabulary users are likely to use in their voice commands. For example, in this sample project payee names are not taken from the user’s contacts but from a predefined list inside the app, so these names are added as additional vocabulary with [`setVocabularyStrings(_:of:)`](https://developer.apple.com/documentation/Intents/INVocabulary/setVocabularyStrings(_:of:)).
 
 ```swift
 // Register names of contacts that may not be in the user's address book.
@@ -128,7 +128,7 @@ More information on the types of custom vocabulary that are appropriate to add t
 
 ##### Confirm and Complete the Payment
 
-When all parameters have been resolved, the system calls `confirm(intent:completion:)` to let the app validate the transaction details. Pass back the status of the transaction by calling the `completion` block with an `INSendPaymentIntentResponse` object initialized from a `INSendPaymentIntentResponseCode` and an `INPaymentRecord` in the `paymentRecord`.
+When all parameters have been resolved, the system calls [`confirm(intent:completion:)`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling/confirm(intent:completion:)) to let the app validate the transaction details. Pass back the status of the transaction by calling the `completion` block with an [`INSendPaymentIntentResponse`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentResponse) object initialized from a [`INSendPaymentIntentResponseCode`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentResponseCode) and an [`INPaymentRecord`](https://developer.apple.com/documentation/Intents/INPaymentRecord) in the [`paymentRecord`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentResponse/paymentRecord).
 
 ```swift
 func confirm(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
@@ -163,7 +163,7 @@ func confirm(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIn
 }
 ```
 
-Finally, once the payment has been confirmed by the user, the system calls `handle(intent:completion:)`. Use this method to perform the confirmed transaction and pass back the status of the transaction by calling the `completion` block.
+Finally, once the payment has been confirmed by the user, the system calls [`handle(intent:completion:)`](https://developer.apple.com/documentation/Intents/INSendPaymentIntentHandling/handle(intent:completion:)). Use this method to perform the confirmed transaction and pass back the status of the transaction by calling the `completion` block.
 
 ```swift
 func handle(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {

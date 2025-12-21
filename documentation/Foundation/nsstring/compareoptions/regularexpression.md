@@ -38,20 +38,6 @@ static var regularExpression: NSString.CompareOptions { get }
   Search ignores width differences in characters that have full-width and half-width forms, as occurs in East Asian character sets.
 - [static var forcedOrdering: NSString.CompareOptions](nsstring/compareoptions/forcedordering.md)
   Comparisons are forced to return either `NSOrderedAscending` or `NSOrderedDescending` if the strings are equivalent but not strictly equal.
-- [static var caseInsensitive: NSString.CompareOptions](nsstring/compareoptions/caseinsensitive.md)
-  A case-insensitive search.
-- [static var literal: NSString.CompareOptions](nsstring/compareoptions/literal.md)
-  Exact character-by-character equivalence.
-- [static var backwards: NSString.CompareOptions](nsstring/compareoptions/backwards.md)
-  Search from end of source string.
-- [static var anchored: NSString.CompareOptions](nsstring/compareoptions/anchored.md)
-  Search is limited to start (or end, if `NSBackwardsSearch`) of source string.
-- [static var numeric: NSString.CompareOptions](nsstring/compareoptions/numeric.md)
-  Numbers within strings are compared using numeric value, that is, `Name2.txt` < `Name7.txt` < `Name25.txt`.
-- [static var diacriticInsensitive: NSString.CompareOptions](nsstring/compareoptions/diacriticinsensitive.md)
-  Search ignores diacritic marks.
-- [static var widthInsensitive: NSString.CompareOptions](nsstring/compareoptions/widthinsensitive.md)
-  Search ignores width differences in characters that have full-width and half-width forms, as occurs in East Asian character sets.
 
 
 ---

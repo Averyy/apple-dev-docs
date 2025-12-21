@@ -6,7 +6,7 @@
 A sequence of events.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -22,6 +22,7 @@ struct Events
   A type that provides a sequence’s iteration interface and encapsulates its iteration state.
 ### Instance Methods
 - [func makeAsyncIterator() -> ARKitSession.Events.Iterator](arkitsession/events-swift.struct/makeasynciterator.md)
+  Creates an asynchronous iterator that produces `Event` elements on this asynchronous sequence.
 ### Type Aliases
 - [ARKitSession.Events.Element](arkitsession/events-swift.struct/element.md)
   A type representing a sequence’s elements.
@@ -36,7 +37,7 @@ struct Events
 - [var events: ARKitSession.Events](arkitsession/events-swift.property.md)
   An asynchronous sequence of events that provide updates to the current authorization status of the session.
 - [ARKitSession.Event](arkitsession/event.md)
-  The kinds of events that can occur in a session.
+  Enumeration of possible session events.
 - [var description: String](arkitsession/description.md)
   A textual representation of this session.
 

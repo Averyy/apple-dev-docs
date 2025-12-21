@@ -1,4 +1,4 @@
 Completed scraping LightweightCodeRequirements!
-Total pages scraped: 322
+Total pages scraped: 212
 Pages skipped (unchanged): 1
 Pages failed: 0

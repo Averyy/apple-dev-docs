@@ -299,13 +299,6 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
 - [Dictionary.Iterator](dictionary/iterator.md)
   An iterator over the members of a `Dictionary<Key, Value>`.
-### Converting Between Dictionaries and Create ML Types
-- [init?(from: MLDataValue)](dictionary/init(from:)-a452.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](dictionary/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](dictionary/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Creating a Dictionary from an Attribute Container
 - [init<S>(AttributeContainer, including: S.Type) throws](dictionary/init(_:including:)-7afz2.md)
 - [init<S>(AttributeContainer, including: KeyPath<AttributeScopes, S.Type>) throws](dictionary/init(_:including:)-8ls7v.md)
@@ -328,7 +321,6 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [Equatable Implementations](dictionary/equatable-implementations.md)
 - [ExpressibleByDictionaryLiteral Implementations](dictionary/expressiblebydictionaryliteral-implementations.md)
 - [Hashable Implementations](dictionary/hashable-implementations.md)
-- [MLDataValueConvertible Implementations](dictionary/mldatavalueconvertible-implementations.md)
 - [Sequence Implementations](dictionary/sequence-implementations.md)
 
 ## Relationships

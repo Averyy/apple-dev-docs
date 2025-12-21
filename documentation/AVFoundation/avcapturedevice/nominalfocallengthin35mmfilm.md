@@ -6,8 +6,8 @@
 The nominal 35mm equivalent focal length of the capture device’s lens.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

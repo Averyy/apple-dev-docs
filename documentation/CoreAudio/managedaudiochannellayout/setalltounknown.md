@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Sets all `AudioChannelDescriptions` to `kAudioChannelLabel_Unknown`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

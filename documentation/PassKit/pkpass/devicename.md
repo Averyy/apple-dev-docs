@@ -21,7 +21,7 @@ var deviceName: String { get }
 
 #### Discussion
 
-If [`isRemotePass`](pkpass/isremotepass.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property contains the name of the paired device that stores the pass; otherwise, it contains the name of the device.
+If [`isRemotePass`](pkpass/isremotepass.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this property contains the name of the paired device that stores the pass; otherwise, it contains the name of the device.
 
 ## See Also
 

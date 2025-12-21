@@ -6,10 +6,10 @@
 Waits for the directory sync to complete, showing the sync’s progress in a modal alert.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,6 +24,13 @@ If the sync results in a conflict, the framework displays a conflict resolution 
 ## Parameters
 
 - `window`: The window where the system shows progress and alerts.
+
+## See Also
+
+- [func finishSyncing() async](gamesavesynceddirectory/finishsyncing.md)
+  Waits for the directory sync to complete, without showing any user interface.
+- [func finishSyncing(statusDisplay: UIWindow) async](gamesavesynceddirectory/finishsyncing(statusdisplay:)-500el.md)
+  Waits for the directory sync to complete, showing the sync’s progress in a modal alert.
 
 
 ---

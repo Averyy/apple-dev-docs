@@ -22,11 +22,11 @@ func fileExists(atPath path: String, isDirectory: UnsafeMutablePointer<ObjCBool>
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a file at the specified path exists, or [`false`](https://developer.apple.com/documentation/swift/false) if the file’s does not exist or its existence could not be determined.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a file at the specified path exists, or [`false`](https://developer.apple.com/documentation/Swift/false) if the file’s does not exist or its existence could not be determined.
 
 #### Discussion
 
-If the file at `path` is inaccessible to your app, perhaps because one or more parent directories are inaccessible, this method returns [`false`](https://developer.apple.com/documentation/swift/false). If the final element in `path` specifies a symbolic link, this method traverses the link and returns [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false) based on the existence of the file at the link destination.
+If the file at `path` is inaccessible to your app, perhaps because one or more parent directories are inaccessible, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). If the final element in `path` specifies a symbolic link, this method traverses the link and returns [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false) based on the existence of the file at the link destination.
 
 If you need to further determine whether `path` is a package, use the [`isFilePackage(atPath:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/isFilePackage(atPath:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/AppKit/NSWorkspace).
 

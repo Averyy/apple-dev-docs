@@ -45,7 +45,6 @@ The code below shows searching for a match in the Shazam catalog using an existi
 ```swift
 // Set up the session.
 let session = SHSession()
-session.delegate = self
 
 // Create a signature from the captured audio buffer.
 let signatureGenerator = SHSignatureGenerator()
@@ -53,16 +52,16 @@ try signatureGenerator.append(buffer, at: audioTime)
 let signature = signatureGenerator.signature()
 
 // Check for a match.
-session.match(signature)
+let result = await session.result(from: signature)
 
-// The delegate method that the session calls when matching a reference item.
-func session(_ session: SHSession, didFind match: SHMatch) {
-    // Do something with the matched results.
-}
-
-// The delegate method that the session calls when there is no match.
- func session(_ session: SHSession, didNotFindMatchFor signature: SHSignature, error: Error?) {
-    // No match found.
+// Use the result.
+switch result {
+ case .match(let match):
+      // Match found.
+ case .noMatch(let signature):
+      // No match found.
+ case .error(let error, let signature):
+      // An error occurred.
 }
 ```
 

@@ -6,7 +6,7 @@ Suggest shortcuts users may want to add to Siri or combine with other actions in
 
 #### Overview
 
-When the user performs an action in your app, donate a shortcut that accelerates user access to the action. Siri shows these donated interactions to the user in places such as Spotlight search, Lock Screen, and the Siri watch face.
+When the user performs an action in your app, donate a shortcut that accelerates user access to the action. Siri shows these donated interactions to the user in places such as Spotlight search and the Lock Screen.
 
 However, sometimes there are actions in your app the user hasn’t performed that might be of interest to them. For example, perhaps your soup-ordering app features a special soup every day. The user has never ordered the daily soup special, but they might be interested in the option to add a  shortcut to Siri. Your app can provide this option by making a shortcut suggestion.
 
@@ -69,12 +69,12 @@ Changes to the list of shortcut suggestions don’t affect shortcuts the user ad
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
+- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+  Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Intent Phrases](intent-phrases.md)
+  The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 
 
 ---

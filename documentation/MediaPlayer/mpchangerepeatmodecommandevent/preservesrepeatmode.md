@@ -22,7 +22,7 @@ var preservesRepeatMode: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the chosen repeat mode is preserved between playback sessions.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the chosen repeat mode is preserved between playback sessions.
 
 ## See Also
 

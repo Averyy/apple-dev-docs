@@ -21,7 +21,7 @@ var showsHorizontalScrollIndicator: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). The indicator is visible while tracking is underway and fades out after tracking.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). The indicator is visible while tracking is underway and fades out after tracking.
 
 ## See Also
 

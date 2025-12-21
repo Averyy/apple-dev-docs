@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: init
 
-Create an adaptive image glyph from the previously saved data.
+Create an adaptive image glyph from previously saved data.
 
 **Availability**:
 - iOS 18.0+

@@ -21,7 +21,7 @@ class AVMovieTrack
 
 ## Topics
 
-### Retrieving Track Information
+### Retrieving track information
 - [var alternateGroupID: Int](avmovietrack/alternategroupid.md)
   A value that identifies the track as a member of a particular alternate group.
 - [var mediaDataStorage: AVMediaDataStorage?](avmovietrack/mediadatastorage.md)

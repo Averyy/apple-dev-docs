@@ -126,7 +126,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 
 ## See Also
 
-- [protocol Error : Sendable](../Swift/Error.md)
+- [protocol Error](../Swift/Error.md)
   A type representing an error value that can be thrown.
 - [protocol LocalizedError](localizederror.md)
   A specialized error that provides localized messages describing the error and why it occurred.

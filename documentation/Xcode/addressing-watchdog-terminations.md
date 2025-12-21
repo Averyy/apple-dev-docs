@@ -71,7 +71,7 @@ Termination Description: SPRINGBOARD,
 
 > **Note**: For readability, this example includes extra line breaks. In the original crash report file for this example, the watchdog information is on fewer lines.
 
-Intrepret the information about wall clock time and CPU time as described in [`Interpret the app responsiveness watchdog information`](addressing-watchdog-terminations#Interpret-the-app-responsiveness-watchdog-information.md).
+Interpret the information about wall clock time and CPU time as described in [`Interpret the app responsiveness watchdog information`](addressing-watchdog-terminations#Interpret-the-app-responsiveness-watchdog-information.md).
 
 ##### Identify the Reason the Watchdog Triggered
 

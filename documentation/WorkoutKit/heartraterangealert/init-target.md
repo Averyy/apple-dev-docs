@@ -10,7 +10,6 @@ Creates a new heart rate alert for a closed range of measurements.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

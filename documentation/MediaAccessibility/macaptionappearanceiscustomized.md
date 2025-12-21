@@ -21,6 +21,10 @@ func MACaptionAppearanceIsCustomized(_ domain: MACaptionAppearanceDomain) -> Boo
 
 A boolean indicating if the currently-active style has been customized by the user
 
+#### Discussion
+
+Provides a boolean indicating if the currently-active style has been customized by the user. This is useful for some clients who may need different fallback strategies for customized styles vs system-default styles.
+
 ## Parameters
 
 - `domain`: Preference domain, see  @link MACaptionAppearanceDomain @/link.

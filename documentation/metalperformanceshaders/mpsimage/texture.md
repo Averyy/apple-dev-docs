@@ -23,7 +23,7 @@ var texture: any MTLTexture { get }
 
 This is a 2D texture if `numberOfImages=1` and `featureChannels<=4`. It is a 2D texture array otherwise.
 
-To avoid the high cost of premature allocation of the underlying texture, avoid accessing this property except when strictly necessary. Calls to the `encode` methods of an [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) object typically cause their arguments to become allocated. Likewise, [`MPSImage`](mpsimage.md) objects initialized with the [`init(texture:featureChannels:)`](mpsimage/init(texture:featurechannels:).md) method have already been allocated.
+To avoid the high cost of premature allocation of the underlying texture, avoid accessing this property except when strictly necessary. Calls to the `encode` methods of an [`MPSCNNKernel`](mpscnnkernel.md) object typically cause their arguments to become allocated. Likewise, [`MPSImage`](mpsimage.md) objects initialized with the [`init(texture:featureChannels:)`](mpsimage/init(texture:featurechannels:).md) method have already been allocated.
 
 ## See Also
 
@@ -53,7 +53,7 @@ To avoid the high cost of premature allocation of the underlying texture, avoid 
   An enumeration for the various options that determine how you can use a texture.
 - [var pixelSize: Int](mpsimage/pixelsize.md)
   The number of bytes from the first byte of one pixel to the first byte of the next pixel, in storage order. (Includes padding.)
-- [protocol MTLTexture : MTLResource](../Metal/MTLTexture.md)
+- [protocol MTLTexture](../Metal/MTLTexture.md)
   A resource that holds formatted image data.
 - [var label: String?](mpsimage/label.md)
   A string to help identify this object.

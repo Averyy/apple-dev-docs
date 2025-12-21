@@ -21,7 +21,7 @@ var isTextInteractionEnabled: Bool { get set }
 
 #### Discussion
 
-The default value for this preference is [`true`](https://developer.apple.com/documentation/swift/true) on macOS and iOS. On watchOS, the default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this preference is [`true`](https://developer.apple.com/documentation/Swift/true) on macOS and iOS. On watchOS, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

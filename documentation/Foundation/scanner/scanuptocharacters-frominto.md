@@ -22,15 +22,15 @@ func scanUpToCharacters(from set: CharacterSet, into result: AutoreleasingUnsafe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver scanned any characters, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver scanned any characters, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If the only scanned characters are in the [`charactersToBeSkipped`](scanner/characterstobeskipped.md) character set (which is the whitespace and newline character set by default), then returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the only scanned characters are in the [`charactersToBeSkipped`](scanner/characterstobeskipped.md) character set (which is the whitespace and newline character set by default), then returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Invoke this method with `NULL` as `stringValue` to simply scan up to a given set of characters.
 
-If no characters in `stopSet` are present in the scanner’s source string, the remainder of the source string is put into `stringValue`, the receiver’s `scanLocation` is advanced to the end of the source string, and the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+If no characters in `stopSet` are present in the scanner’s source string, the remainder of the source string is put into `stringValue`, the receiver’s `scanLocation` is advanced to the end of the source string, and the method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

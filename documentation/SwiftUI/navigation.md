@@ -85,6 +85,8 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
 - [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
   Sets the style for the tab view within the current environment.
 ### Configuring a tab bar
+- [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
+  Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
 - [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](view/tabviewsidebarheader(content:).md)
   Adds a custom header to the sidebar of a tab view.
 - [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](view/tabviewsidebarfooter(content:).md)

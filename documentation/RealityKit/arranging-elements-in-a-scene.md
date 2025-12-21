@@ -64,8 +64,6 @@ To group items on an iOS device, touch and hold the first object you want to inc
 
 ## See Also
 
-- [Creating 3D Content with Reality Composer](creating-3d-content-with-reality-composer.md)
-  Assemble assets into a dynamic 3D composition that you can add to a scene in your app, or share with AR Quick Look.
 - [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
   Leverage automatically generated code to load scenes from Xcode.
 - [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
@@ -74,8 +72,6 @@ To group items on an iOS device, touch and hold the first object you want to inc
   Add assets to your scene from Reality Composer’s library, or import custom assets.
 - [Configuring elements in a scene](configuring-elements-in-a-scene.md)
   Define the appearance and behavior of objects in a scene.
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
-  Make programmatic changes to your scenes at runtime.
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
   Create procedurally generated shape primitives to your Reality Composer scene.
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)

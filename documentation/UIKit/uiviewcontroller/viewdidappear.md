@@ -21,8 +21,9 @@ func viewDidAppear(_ animated: Bool)
 
 ## Mentions
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
 
 #### Discussion
 

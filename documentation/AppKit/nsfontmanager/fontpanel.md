@@ -29,7 +29,7 @@ The application’s shared Font panel object.
 - [class func setFontPanelFactory(AnyClass?)](nsfontmanager/setfontpanelfactory(_:).md)
   Sets the class that creates the shared Font panel object.
 - [class var sharedFontPanelExists: Bool](nsfontpanel/sharedfontpanelexists.md)
-  Returns [`true`](https://developer.apple.com/documentation/swift/true) if the shared Font panel has been created, [`false`](https://developer.apple.com/documentation/swift/false) if it hasn’t.
+  A Boolean value that indicates whether the shared Font panel has been created.
 - [var isEnabled: Bool](nsfontmanager/isenabled.md)
   A Boolean value that indicates whether the font conversion system’s Font panel and Font menu items are enabled.
 - [func setFontMenu(NSMenu)](nsfontmanager/setfontmenu(_:).md)

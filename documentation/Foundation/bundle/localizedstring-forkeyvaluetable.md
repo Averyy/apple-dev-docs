@@ -33,7 +33,7 @@ A localized version of the string designated by `key` in table `tableName`. This
 
 For more details about string localization and the specification of a `.strings` file, see “[`String Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).”
 
-Using the user default `NSShowNonLocalizedStrings`, you can alter the behavior of [`localizedString(forKey:value:table:)`](bundle/localizedstring(forkey:value:table:).md) to log a message when the method can’t find a localized string. If you set this default to [`true`](https://developer.apple.com/documentation/swift/true) (in the global domain or in the application’s domain), then when the method can’t find a localized string in the table, it logs a message to the console and capitalizes `key` before returning it.
+Using the user default `NSShowNonLocalizedStrings`, you can alter the behavior of [`localizedString(forKey:value:table:)`](bundle/localizedstring(forkey:value:table:).md) to log a message when the method can’t find a localized string. If you set this default to [`true`](https://developer.apple.com/documentation/Swift/true) (in the global domain or in the application’s domain), then when the method can’t find a localized string in the table, it logs a message to the console and capitalizes `key` before returning it.
 
 The following example cycles through a static array of keys when a button is clicked, gets the value for each key from a strings table named `Buttons.strings`, and sets the button title with the returned value:
 

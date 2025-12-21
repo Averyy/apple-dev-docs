@@ -17,6 +17,10 @@ A style that has no visual effect on the background appearance of the primary vi
 case none
 ```
 
+## Mentions
+
+- [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
+
 ## See Also
 
 - [UISplitViewController.BackgroundStyle.sidebar](uisplitviewcontroller/backgroundstyle/sidebar.md)

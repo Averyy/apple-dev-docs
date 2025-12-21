@@ -17,7 +17,7 @@ var nameFieldStringValue: String { get set }
 
 #### Discussion
 
-The value of this property must not be `nil`. Note that the filename may not display an extension if the value of [`isExtensionHidden`](nssavepanel/isextensionhidden.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property must not be `nil`. Note that the filename may not display an extension if the value of [`isExtensionHidden`](nssavepanel/isextensionhidden.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

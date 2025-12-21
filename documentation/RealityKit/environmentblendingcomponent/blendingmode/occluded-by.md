@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-The entity will receive a depth-based occlusion treatment within the specified environment type
+The entity receives a depth-based occlusion treatment within the specified environment type.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

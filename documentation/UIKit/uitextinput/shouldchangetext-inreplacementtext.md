@@ -21,11 +21,11 @@ optional func shouldChangeText(in range: UITextRange, replacementText text: Stri
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text should be changed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text should be changed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-Prior to replacing text, this method is called to give your delegate a chance to accept or reject the edits. If you do not implement this method, the return value defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+Prior to replacing text, this method is called to give your delegate a chance to accept or reject the edits. If you do not implement this method, the return value defaults to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

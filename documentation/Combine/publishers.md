@@ -26,17 +26,17 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
 
 ## Topics
 
-### Convenience Publishers
+### Convenience publishers
 - [Publishers.Sequence](publishers/sequence.md)
   A publisher that publishes a given sequence of elements.
 - [Publishers.Catch](publishers/catch.md)
   A publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher.
-### Working with Subscribers
+### Working with subscribers
 - [Publishers.ReceiveOn](publishers/receiveon.md)
   A publisher that delivers elements to its downstream subscriber on a specific scheduler.
 - [Publishers.SubscribeOn](publishers/subscribeon.md)
   A publisher that receives elements from an upstream publisher on a specific scheduler.
-### Mapping Elements
+### Mapping elements
 - [Publishers.Map](publishers/map.md)
   A publisher that transforms all elements from the upstream publisher with a provided closure.
 - [Publishers.TryMap](publishers/trymap.md)
@@ -49,7 +49,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that transforms elements from the upstream publisher by providing the current element to a failable closure along with the last value returned by the closure.
 - [Publishers.SetFailureType](publishers/setfailuretype.md)
   A publisher that appears to send a specified failure type.
-### Filtering Elements
+### Filtering elements
 - [Publishers.Filter](publishers/filter.md)
   A publisher that republishes all elements that match a provided closure.
 - [Publishers.TryFilter](publishers/tryfilter.md)
@@ -66,7 +66,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that replaces an empty stream with a provided element.
 - [Publishers.ReplaceError](publishers/replaceerror.md)
   A publisher that replaces any errors in the stream with a provided element.
-### Reducing Elements
+### Reducing elements
 - [Publishers.Collect](publishers/collect.md)
   A publisher that buffers items.
 - [Publishers.CollectByCount](publishers/collectbycount.md)
@@ -81,14 +81,14 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that applies a closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 - [Publishers.TryReduce](publishers/tryreduce.md)
   A publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
-### Applying Mathematical Operations on Elements
+### Applying mathematical operations on elements
 - [Publishers.Count](publishers/count.md)
   A publisher that publishes the number of elements received from the upstream publisher.
 - [Publishers.Comparison](publishers/comparison.md)
   A publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item.
 - [Publishers.TryComparison](publishers/trycomparison.md)
   A publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item, and fails if the ordering logic throws an error.
-### Applying Matching Criteria to Elements
+### Applying matching criteria to elements
 - [Publishers.Contains](publishers/contains.md)
   A publisher that emits a Boolean value when it receives a specific element from its upstream publisher.
 - [Publishers.ContainsWhere](publishers/containswhere.md)
@@ -99,7 +99,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that publishes a single Boolean value that indicates whether all received elements pass a given predicate.
 - [Publishers.TryAllSatisfy](publishers/tryallsatisfy.md)
   A publisher that publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
-### Applying Sequence Operations to Elements
+### Applying sequence operations to elements
 - [Publishers.DropUntilOutput](publishers/dropuntiloutput.md)
   A publisher that ignores elements from the upstream publisher until it receives an element from second publisher.
 - [Publishers.Drop](publishers/drop.md)
@@ -116,7 +116,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that republishes elements while an error-throwing predicate closure indicates publishing should continue.
 - [Publishers.PrefixUntilOutput](publishers/prefixuntiloutput.md)
   A publisher that republishes elements until another publisher emits an element.
-### Selecting Specific Elements
+### Selecting specific elements
 - [Publishers.First](publishers/first.md)
   A publisher that publishes the first element of a stream, then finishes.
 - [Publishers.FirstWhere](publishers/firstwhere.md)
@@ -131,7 +131,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that waits until after the stream finishes and then publishes the last element of the stream that satisfies an error-throwing predicate closure.
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
-### Combining Elements from Multiple Publishers
+### Combining elements from multiple publishers
 - [Publishers.CombineLatest](publishers/combinelatest.md)
   A publisher that receives and combines the latest elements from two publishers.
 - [Publishers.CombineLatest3](publishers/combinelatest3.md)
@@ -160,12 +160,12 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher created by applying the zip function to three upstream publishers.
 - [Publishers.Zip4](publishers/zip4.md)
   A publisher created by applying the zip function to four upstream publishers.
-### Republishing Elements by Subscribing to New Publishers
+### Republishing elements by subscribing to new publishers
 - [Publishers.FlatMap](publishers/flatmap.md)
   A publisher that transforms elements from an upstream publisher into a new publisher.
 - [Publishers.SwitchToLatest](publishers/switchtolatest.md)
   A publisher that flattens nested publishers.
-### Handling Errors
+### Handling errors
 - [Publishers.AssertNoFailure](publishers/assertnofailure.md)
   A publisher that raises a fatal error upon receiving any failure, and otherwise republishes all received input.
 - [Publishers.Catch](publishers/catch.md)
@@ -174,7 +174,7 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher or producing a new error.
 - [Publishers.Retry](publishers/retry.md)
   A publisher that attempts to recreate its subscription to a failed upstream publisher.
-### Controlling Timing
+### Controlling timing
 - [Publishers.MeasureInterval](publishers/measureinterval.md)
   A publisher that measures and emits the time interval between events received from an upstream publisher.
 - [Publishers.Debounce](publishers/debounce.md)
@@ -185,31 +185,31 @@ The various operators defined as extensions on [`Publisher`](publisher.md) imple
   A publisher that publishes either the most-recent or first element published by the upstream publisher in a specified time interval.
 - [Publishers.Timeout](publishers/timeout.md)
   A publisher that terminates publishing if the upstream publisher exceeds a specified time interval without producing an element.
-### Encoding and Decoding
+### Encoding and decoding
 - [Publishers.Decode](publishers/decode.md)
   A publisher that decodes elements received from an upstream publisher, using a given decoder.
 - [Publishers.Encode](publishers/encode.md)
   A publisher that encodes elements received from an upstream publisher, using a given encoder.
-### Identifying Properties with Key Paths
+### Identifying properties with key paths
 - [Publishers.MapKeyPath](publishers/mapkeypath.md)
   A publisher that publishes the value of a key path.
 - [Publishers.MapKeyPath2](publishers/mapkeypath2.md)
   A publisher that publishes the values of two key paths as a tuple.
 - [Publishers.MapKeyPath3](publishers/mapkeypath3.md)
   A publisher that publishes the values of three key paths as a tuple.
-### Working with Multiple Subscribers
+### Working with multiple subscribers
 - [Publishers.Multicast](publishers/multicast.md)
   A publisher that uses a subject to deliver elements to multiple subscribers.
 - [Publishers.Share](publishers/share.md)
   A publisher that shares the output of an upstream publisher with multiple subscribers.
-### Buffering Elements
+### Buffering elements
 - [Publishers.Buffer](publishers/buffer.md)
   A publisher that buffers elements from an upstream publisher.
 - [Publishers.BufferingStrategy](publishers/bufferingstrategy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
 - [Publishers.PrefetchStrategy](publishers/prefetchstrategy.md)
   A strategy for filling a buffer.
-### Using Explicit Publisher Connections
+### Using explicit publisher connections
 - [Publishers.Autoconnect](publishers/autoconnect.md)
   A publisher that automatically connects to an upstream connectable publisher.
 - [Publishers.MakeConnectable](publishers/makeconnectable.md)

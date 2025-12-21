@@ -23,7 +23,7 @@ var environmentStringRepresentation: String { get }
 ## See Also
 
 - [var offerID: String?](product/subscriptioninfo/renewalinfo/offerid.md)
-  A string that identifies an offer applied to the next subscription period.
+  A string that identifies an offer that applies to the next subscription period.
 - [var offerType: Transaction.OfferType?](product/subscriptioninfo/renewalinfo/offertype.md)
   The subscription offer type for the next subscription period.
 - [var currencyCode: String?](product/subscriptioninfo/renewalinfo/currencycode.md)

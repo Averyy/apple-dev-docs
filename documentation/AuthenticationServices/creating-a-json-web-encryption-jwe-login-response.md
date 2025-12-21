@@ -12,7 +12,7 @@ Key agreement uses the public key for the `UserDeviceEncryptionKey` that’s exc
 
 ##### Configure Concat Kdf
 
-RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the configuration of Concat KDF for platform SSO. See the table below for input definitions. The system concatenates the values per NIST.800-56A sections 5.8.1, and then computes a SHA-256 hash that it uses to create the key. The login response header needs to contain the `PartyUInfo`.
+RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the configuration of Concat KDF for Platform SSO. See the table below for input definitions. The system concatenates the values per NIST.800-56A sections 5.8.1, and then computes a SHA-256 hash that it uses to create the key. The login response header needs to contain the `PartyUInfo`.
 
 | Key | Value | Notes |
 | --- | --- | --- |
@@ -167,7 +167,7 @@ The following code provides an example of a login response JWE body:
 
 ##### Handle a Failed Response
 
-If the response returns a status code other than `200`, platform SSO checks whether there’s a credential failure. If the credential is incorrect, the system prompts the user to enter it again. Other errors require another login attempt at a later time.
+If the response returns a status code other than `200`, Platform SSO checks whether there’s a credential failure. If the credential is incorrect, the system prompts the user to enter it again. Other errors require another login attempt at a later time.
 
 By default, a HTTP response code of `401` is a credential error. The IdP can optionally specify a predicate to parse a JSON formatted response to determine if the result is a credential error or not, when the response code is `400` or `401`. The [`invalidCredentialPredicate`](asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md) specifies the predicate.
 

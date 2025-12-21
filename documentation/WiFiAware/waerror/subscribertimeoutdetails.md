@@ -3,26 +3,17 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: struct
 
-The optional details describing the timed-out subscriber.
+The optional details describing the timed out subscriber.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct SubscriberTimeoutDetails
 ```
-
-## Topics
-
-### Generating initializers
-- [init(from: any Decoder) throws](waerror/subscribertimeoutdetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/subscribertimeoutdetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -34,8 +25,14 @@ struct SubscriberTimeoutDetails
 
 ## See Also
 
-- [WAError.ConnectionTerminatedDetails](waerror/connectionterminateddetails.md)
-  The optional details describing the terminated connection.
+- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
+  An error that occurs due to an idle or unused connection.
+- [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
+  An error that occurs due to publisher timeout.
+- [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](waerror/subscribertimeout(_:).md)
+  An error that occurs due to subscriber timeout.
+- [WAError.ConnectionIdleTimeoutDetails](waerror/connectionidletimeoutdetails.md)
+  The optional details describing the missing resources.
 - [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
   The optional details describing the timed out publisher.
 

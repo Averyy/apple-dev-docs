@@ -22,11 +22,11 @@ func refresh(_ object: NSManagedObject, mergeChanges flag: Bool)
 
 #### Discussion
 
-If you call this method before the [`stalenessInterval`](nsmanagedobjectcontext/stalenessinterval.md) expires, the context reloads the data from the cache instead of fetching from the store. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), this method doesn’t affect any transient properties. If `flag` is [`false`](https://developer.apple.com/documentation/swift/false), the object disposes the value of transient properties.
+If you call this method before the [`stalenessInterval`](nsmanagedobjectcontext/stalenessinterval.md) expires, the context reloads the data from the cache instead of fetching from the store. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), this method doesn’t affect any transient properties. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), the object disposes the value of transient properties.
 
 You typically use this method to ensure data freshness if multiple managed object contexts share a single persistent store. You can use this method to resolve an optimistic locking failure when attempting to save.
 
-Turning `object` into a fault by setting `flag` to [`false`](https://developer.apple.com/documentation/swift/false) breaks strong references to related managed objects. You can use this method to release a portion of your object graph if you want to constrain memory usage.
+Turning `object` into a fault by setting `flag` to [`false`](https://developer.apple.com/documentation/Swift/false) breaks strong references to related managed objects. You can use this method to release a portion of your object graph if you want to constrain memory usage.
 
 ## Parameters
 

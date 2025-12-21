@@ -11,7 +11,7 @@ A Boolean value that determines whether the user may scroll the map with a point
 ## Declaration
 
 ```swift
-attribute boolean isScrollEnabled;
+isScrollEnabled?: boolean;
 ```
 
 #### Discussion

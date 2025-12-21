@@ -23,7 +23,7 @@ Text combine is a special rendering policy that combines multiple characters int
 
 ## Topics
 
-### Text Combine Options
+### Text combine options
 - [AVCaption.TextCombine.all](avcaption/textcombine/all.md)
   An option that combines all of the characters.
 - [AVCaption.TextCombine.none](avcaption/textcombine/none.md)

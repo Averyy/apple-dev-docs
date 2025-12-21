@@ -6,8 +6,8 @@
 A structure that contains the data of an SMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -39,11 +39,6 @@ struct SMSMessage
   A message identifier for the message.
 - [struct SMSMessageID](smsmessageid.md)
   A structure that represents an SMS message identifier.
-### Encoding and decoding
-- [init(from: any Decoder) throws](smsmessage/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](smsmessage/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

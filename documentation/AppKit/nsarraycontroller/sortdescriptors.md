@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-An array of [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) objects, used by the receiver to arrange its content.
+An array of sort descriptor objects, used by the receiver to arrange its content.
 
 **Availability**:
 - macOS ?+

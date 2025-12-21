@@ -9,7 +9,7 @@ The position of the camera being accessed.
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
-- macOS 11.0+
+- macOS ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,9 +27,6 @@ enum RPCameraPosition
   The front camera is used.
 ### Initializers
 - [init?(rawValue: Int)](rpcameraposition/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](rpcameraposition/equatable-implementations.md)
-- [RawRepresentable Implementations](rpcameraposition/rawrepresentable-implementations.md)
 
 ## Relationships
 

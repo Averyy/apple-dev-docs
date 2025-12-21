@@ -26,12 +26,7 @@ class func compileModel(at url: URL, completionHandler handler: @escaping (Resul
 
 ## See Also
 
-- [class func compileModel(at: URL) async throws -> URL](mlmodel/compilemodel(at:)-45ao6.md)
-  Compile a model for a device.
-- [class func compileModel(at: URL) async throws -> URL](mlmodel/compilemodel(at:)-3nea.md)
-  Compile a model for a device.
-- [class func compileModel(at: URL) throws -> URL](mlmodel/compilemodel(at:)-6442s.md)
-  Compiles a model on the device to update the model in your app.
+- [class compileModel(at:)](mlmodel/compilemodel(at:).md)
 
 
 ---

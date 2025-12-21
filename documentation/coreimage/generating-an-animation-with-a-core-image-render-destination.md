@@ -25,7 +25,7 @@ The sample combines view update and state changes to produce the animation:
 
 The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) delegate protocol. The protocol’s [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) function commits render destination work to the GPU using a render task in a Metal command buffer.
 
-For more information about drawing with MetalKit see [`Using a Render Pipeline to Render Primitives`](https://developer.apple.com/documentation/Metal/using-a-render-pipeline-to-render-primitives).
+For more information about drawing with MetalKit see [`Drawing a triangle with Metal 4`](https://developer.apple.com/documentation/Metal/drawing-a-triangle-with-metal-4).
 
 MetalKit calls the `draw(in:)` delegate function of the `Renderer` automatically.
 
@@ -166,7 +166,7 @@ The `Renderer` queries the current EDR headroom for each draw call using either 
 
 ##### Leverage Edr Headroom
 
-The sample’s ripple effect takes a gradient [`shadingImage`](cirippletransition/3228695-shadingimage.md) to shade the contor of the ripple so that it appears to reflect light from the upper-left corner. [`CILinearGradient`](CILinearGradient.md) generates the gradient shading image between the current maximum RGB white, [`color0`](cilineargradient/3228542-color0.md), and a fully transparent clear color, [`color1`](cilineargradient/3228543-color1.md).
+The sample’s ripple effect takes a gradient [`shadingImage`](CIRippleTransition/shadingImage.md) to shade the contor of the ripple so that it appears to reflect light from the upper-left corner. [`CILinearGradient`](CILinearGradient.md) generates the gradient shading image between the current maximum RGB white, [`color0`](CILinearGradient/color0.md), and a fully transparent clear color, [`color1`](CILinearGradient/color1.md).
 
 ```swift
 // Compute a shading image for the ripple effect below.

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The cell’s value as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) type.
+The cell’s value as an integer value.
 
 **Availability**:
 - macOS 10.5+

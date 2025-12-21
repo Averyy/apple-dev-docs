@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: case
 
-High-percentage error correction: 55% of the symbol data is dedicated to error correction.
+Indicates that approximately 55% of the symbol data is dedicated to error correction.
 
 **Availability**:
 - iOS ?+
@@ -18,15 +18,6 @@ High-percentage error correction: 55% of the symbol data is dedicated to error c
 ```swift
 case levelQ
 ```
-
-## See Also
-
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelL](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levell.md)
-  Low-percentage error correction: 20% of the symbol data is dedicated to error correction.
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelM](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelm.md)
-  Medium-percentage error correction: 37% of the symbol data is dedicated to error correction.
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelH](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelh.md)
-  Very-high-percentage error correction: 65% of the symbol data is dedicated to error correction.
 
 
 ---

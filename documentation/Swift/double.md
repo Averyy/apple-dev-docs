@@ -211,7 +211,7 @@ struct Double
 ### Encoding and Decoding Values
 - [func encode(to: any Encoder) throws](double/encode(to:).md)
   Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](double/init(from:)-3crx3.md)
+- [init(from: any Decoder) throws](double/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 ### Creating a Range
 - [static func ... (Self, Self) -> ClosedRange<Self>](double/'...(_:_:).md)
@@ -225,13 +225,6 @@ struct Double
   A mirror that reflects the `Double` instance.
 - [func hash(into: inout Hasher)](double/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-### Using a Double as a Data Value
-- [init?(from: MLDataValue)](double/init(from:)-5gnqe.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](double/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](double/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Infrequently Used Functionality
 - [init()](double/init.md)
 - [init(floatLiteral: Double)](double/init(floatliteral:).md)
@@ -283,8 +276,6 @@ struct Double
 - [AtomicRepresentable Implementations](double/atomicrepresentable-implementations.md)
 - [BinaryFloatingPoint Implementations](double/binaryfloatingpoint-implementations.md)
 - [Comparable Implementations](double/comparable-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](double/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](double/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](double/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](double/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](double/customstringconvertible-implementations.md)
@@ -294,13 +285,9 @@ struct Double
 - [ExpressibleByFloatLiteral Implementations](double/expressiblebyfloatliteral-implementations.md)
 - [ExpressibleByIntegerLiteral Implementations](double/expressiblebyintegerliteral-implementations.md)
 - [FloatingPoint Implementations](double/floatingpoint-implementations.md)
-- [Generable Implementations](double/generable-implementations.md)
 - [Hashable Implementations](double/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](double/instructionsrepresentable-implementations.md)
 - [LosslessStringConvertible Implementations](double/losslessstringconvertible-implementations.md)
-- [MLDataValueConvertible Implementations](double/mldatavalueconvertible-implementations.md)
 - [Numeric Implementations](double/numeric-implementations.md)
-- [PromptRepresentable Implementations](double/promptrepresentable-implementations.md)
 - [SIMDScalar Implementations](double/simdscalar-implementations.md)
 - [SignedNumeric Implementations](double/signednumeric-implementations.md)
 - [Strideable Implementations](double/strideable-implementations.md)
@@ -338,7 +325,6 @@ struct Double
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLShapedArrayScalar](../CoreML/MLShapedArrayScalar.md)
 - [Numeric](numeric.md)
-- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)

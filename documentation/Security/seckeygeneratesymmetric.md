@@ -16,7 +16,7 @@ func SecKeyGenerateSymmetric(_ parameters: CFDictionary, _ error: UnsafeMutableP
 
 #### Return Value
 
-A newly generated symmetric key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the key’s memory when you are done with it.
+A newly generated symmetric key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the key’s memory when you are done with it.
 
 ## Parameters
 

@@ -19,19 +19,20 @@ Most apps rely on the system’s default interruption behavior. However, [`AVAud
 
 ##### Observe Audio Session Interruptions
 
-You can directly observe interruption notifications that [`AVAudioSession`](avaudiosession.md) posts. This might be useful if you want to know when the system pauses playback due to an interruption or another reason, such as a route change. To observe audio interruptions, begin by registering to observe notifications of type [`interruptionNotification`](avaudiosession/interruptionnotification.md).
+You can directly observe interruption notifications that [`AVAudioSession`](avaudiosession.md) posts. This might be useful if you want to know when the system pauses playback due to an interruption or another reason, such as a route change. To respond to audio interruptions, observe notifications of type [`interruptionNotification`](avaudiosession/interruptionnotification.md).
 
 ```swift
-func setupNotifications() {
-    // Get the default notification center instance.
-    let nc = NotificationCenter.default
-    nc.addObserver(self,
-                   selector: #selector(handleInterruption),
-                   name: AVAudioSession.interruptionNotification,
-                   object: AVAudioSession.sharedInstance())
+func observeInterruptions() async {
+    // Observe interruption notifications using async sequences.
+    for await notification in NotificationCenter.default.notifications(
+        named: AVAudioSession.interruptionNotification,
+        object: AVAudioSession.sharedInstance()
+    ) {
+        handleInterruption(notification: notification)
+    }
 }
 
-@objc func handleInterruption(notification: Notification) {
+func handleInterruption(notification: Notification) {
     // To implement.
 }
 ```
@@ -41,7 +42,7 @@ func setupNotifications() {
 The posted [`Notification`](https://developer.apple.com/documentation/Foundation/Notification) object contains a populated user-information dictionary that provides the details of the interruption. You determine the type of interruption by retrieving the [`AVAudioSession.InterruptionType`](avaudiosession/interruptiontype.md) value from the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary. The interruption type indicates whether the interruption is beginning or ending.
 
 ```swift
-@objc func handleInterruption(notification: Notification) {
+func handleInterruption(notification: Notification) {
     guard let userInfo = notification.userInfo,
         let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
         let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
@@ -76,6 +77,8 @@ If the interruption type is [`AVAudioSession.InterruptionType.ended`](avaudioses
 
 - [Responding to audio route changes](responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+  Map audio channels to specific devices in multiroute sessions for recording and playback.
 - [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
 - [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)

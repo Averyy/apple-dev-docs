@@ -18,9 +18,9 @@ Generates metrics describing the hand action classifier’s performance on label
 func evaluation(on annotatedVideos: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics
 ```
 
-#### Discussion
+## Parameters
 
-- annotatedVideos : An [`MLHandActionClassifier.DataSource`](mlhandactionclassifier/datasource.md) instance.
+- `annotatedVideos`: An   instance.
 
 ## See Also
 

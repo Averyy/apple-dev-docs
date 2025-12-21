@@ -4,10 +4,10 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -22,8 +22,6 @@ struct DidChangeMessage
 ### Instance Properties
 - [var contentSize: String](uicontentsizecategory/didchangemessage/contentsize.md)
 - [var screen: UIScreen](uicontentsizecategory/didchangemessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIContentSizeCategory.DidChangeMessage) -> Notification](uicontentsizecategory/didchangemessage/makenotification(_:).md)
 
 ## Relationships
 

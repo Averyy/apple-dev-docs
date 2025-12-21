@@ -22,8 +22,8 @@ class NSPersistentContainer
 
 ## Mentions
 
-- [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
 - [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
+- [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
 - [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
 - [Using Core Data in the background](using-core-data-in-the-background.md)
 

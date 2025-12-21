@@ -55,14 +55,12 @@ let billingAddressInvalidStreet = PKPaymentRequest.paymentBillingAddressInvalidE
 - [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkpaymenterror/3727675-init.md)
   Creates a payment error object of the specified type with the specified user information.
 ### Describing the error
-- [var code: Code](../passkit_apple_pay_and_wallet/pkpaymenterror/3727672-code.md)
-  The error code for this instance.
-- [var errorCode: Int](../passkit_apple_pay_and_wallet/pkpaymenterror/2887010-errorcode.md)
-  The error code for this instance.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
 - [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpaymenterror/3727676-userinfo.md)
   Additional details about the error.
-- [var errorUserInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpaymenterror/2887004-erroruserinfo.md)
-  Additional details about the error.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 ### Identifying the error
 - [static var billingContactInvalidError: PKPaymentError.Code](pkpaymenterror/billingcontactinvaliderror.md)
   The error code to indicate an invalid billing address or billing name.

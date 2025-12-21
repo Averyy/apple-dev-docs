@@ -41,6 +41,8 @@ Safari 18.5 is available for iOS 18.5, iPadOS 18.5, visionOS 2.5, macOS 15.5, ma
 
 ## See Also
 
+- [Safari 18.6 Release Notes](safari-18_6-release-notes.md)
+  Released July 29, 2025 — 18.6 (20621.3.11)
 - [Safari 18.4 Release Notes](safari-18_4-release-notes.md)
   Released March 31, 2025 — 18.4 (20621.1.15)
 - [Safari 18.3 Release Notes](safari-18_3-release-notes.md)

@@ -117,7 +117,6 @@ In particular, note that `j`, the index of the second day with absences, was fou
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafemutablebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
-- [Attachable Implementations](arrayslice/attachable-implementations.md)
 - [BidirectionalCollection Implementations](arrayslice/bidirectionalcollection-implementations.md)
 - [Collection Implementations](arrayslice/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](arrayslice/customdebugstringconvertible-implementations.md)

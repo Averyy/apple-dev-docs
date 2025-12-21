@@ -177,6 +177,8 @@ func updateSpotlightIndex() async {
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 - [Action button on iPhone and Apple Watch](actionbutton.md)
   Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 

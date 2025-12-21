@@ -23,9 +23,9 @@ optional func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTe
 
 - `texture`: The sparse texture to update.
 - `mode`: The change to make to the texture mapping.
-- `regions`: A pointer to an array of regions to change. You must provide as many regions as you specify in the   parameter.
-- `mipLevels`: A pointer to an array of mipmap levels to change. You must provide as many entries as you specify in the   parameter.
-- `slices`: A pointer to an array of slices to change. You must provide as many entries as you specify in the   parameter.
+- `regions`: A pointer to an array of regions to change. You need to provide as many regions as you specify in the   parameter.
+- `mipLevels`: A pointer to an array of mipmap levels to change. You need to provide as many entries as you specify in the   parameter.
+- `slices`: A pointer to an array of slices to change. You need to provide as many entries as you specify in the   parameter.
 - `numRegions`: The number of regions to update.
 
 ## See Also

@@ -26,7 +26,7 @@ protocol AVQueuedSampleBufferRendering : NSObjectProtocol
 
 ## Topics
 
-### Requesting Media
+### Requesting media
 - [var isReadyForMoreMediaData: Bool](avqueuedsamplebufferrendering/isreadyformoremediadata.md)
   A Boolean value that indicates whether the receiver is able to accept more sample buffers.
 - [func enqueue(CMSampleBuffer)](avqueuedsamplebufferrendering/enqueue(_:).md)
@@ -35,13 +35,13 @@ protocol AVQueuedSampleBufferRendering : NSObjectProtocol
   Tells the target to invoke a client-supplied block in order to gather sample buffers for playback.
 - [func stopRequestingMediaData()](avqueuedsamplebufferrendering/stoprequestingmediadata.md)
   Cancels any current [`requestMediaDataWhenReady(on:using:)`](avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:).md) call.
-### Determining Playback Readiness
+### Determining playback readiness
 - [var hasSufficientMediaDataForReliablePlaybackStart: Bool](avqueuedsamplebufferrendering/hassufficientmediadataforreliableplaybackstart.md)
   A Boolean value that indicates whether the enqued media meets the required preroll level for reliable playback.
-### Clearing Queued Sample Buffers
+### Clearing queued sample buffers
 - [func flush()](avqueuedsamplebufferrendering/flush.md)
   Discards all pending enqueued sample buffers.
-### Indentifying the Timebase
+### Indentifying the timebase
 - [var timebase: CMTimebase](avqueuedsamplebufferrendering/timebase.md)
   The timebase for a renderer.
 

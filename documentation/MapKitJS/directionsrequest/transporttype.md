@@ -11,14 +11,14 @@ The mode of transportation the directions apply to.
 ## Declaration
 
 ```swift
-attribute mapkit.Directions.Transport? transportType;
+transportType?: TransportType;
 ```
 
 #### Discussion
 
 You can use this property to specify whether you want directions suited to a particular type of transportation. For example, you can specify if you want walking directions or driving directions.
 
-The default value of this property is [`Automobile`](mapkit.directions.transport/automobile.md).
+The default value of this property is [`Automobile`](transporttype/automobile.md).
 
 ## See Also
 
@@ -34,7 +34,7 @@ The default value of this property is [`Automobile`](mapkit.directions.transport
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

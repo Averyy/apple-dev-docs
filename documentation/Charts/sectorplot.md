@@ -42,6 +42,8 @@ SectorPlot(
 - [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: CGFloat?)](sectorplot/init(_:angle:innerradius:outerradius:angularinset:)-1ed01.md)
 - [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: KeyPath<SectorPlot<Content>.DataElement, CGFloat>)](sectorplot/init(_:angle:innerradius:outerradius:angularinset:)-9pmo7.md)
 ### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedSectorPlotContent](vectorizedsectorplotcontent.md)
   An opaque vectorized chart content type.
 

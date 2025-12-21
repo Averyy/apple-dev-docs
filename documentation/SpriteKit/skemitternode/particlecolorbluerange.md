@@ -17,7 +17,6 @@ The range of allowed random values for the blue component of a particle’s init
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorBlueRange: CGFloat { get set }
 ```
 

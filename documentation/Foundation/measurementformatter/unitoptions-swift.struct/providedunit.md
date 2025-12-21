@@ -26,8 +26,6 @@ Specifies that the provided unit for the measurement should be used.
 
 - [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
 - [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
-- [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
-- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
 
 
 ---

@@ -17,7 +17,7 @@ func getRectsExposedDuringLiveResize(_ exposedRects: UnsafeMutablePointer<NSRect
 
 #### Discussion
 
-If your view does not support content preservation during live resizing, the entire area of your view is returned in the `exposedRects` parameter. To support content preservation, override the [`preservesContentDuringLiveResize`](nsview/preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](https://developer.apple.com/documentation/swift/true).
+If your view does not support content preservation during live resizing, the entire area of your view is returned in the `exposedRects` parameter. To support content preservation, override the [`preservesContentDuringLiveResize`](nsview/preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > **Note**:  The window containing your view must also support content preservation. To enable support for this feature in your window, use the [`preservesContentDuringLiveResize`](nswindow/preservescontentduringliveresize.md) method of `NSWindow`.
 

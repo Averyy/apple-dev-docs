@@ -10,7 +10,7 @@ An object that controls the playback of video for a video material.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -24,23 +24,15 @@ An object that controls the playback of video for a video material.
 
 ### Instance Properties
 - [var audioInputMode: AudioResource.InputMode](videoplaybackcontroller/audioinputmode.md)
-- [var currentImageSize: CGSize?](videoplaybackcontroller/currentimagesize-4m7b0.md)
+- [var currentImageSize: CGSize?](videoplaybackcontroller/currentimagesize.md)
   What is the width and height of currently playing video (for stereo, the width and height of each eye)? This is optional because the video may not currently be playing, or the size is otherwise not available.
-- [var currentImageSize: CGSize?](videoplaybackcontroller/currentimagesize-85cha.md)
-  What is the width and height of currently playing video (for stereo, the width and height of each eye)? This is optional because the video may not currently be playing, or the size is otherwise not available.
-- [var currentViewingMode: VideoPlaybackController.ViewingMode?](videoplaybackcontroller/currentviewingmode-2x2m.md)
+- [var currentViewingMode: VideoPlaybackController.ViewingMode?](videoplaybackcontroller/currentviewingmode.md)
   Is the currently playing video in mono or stereo? This is optional because the video may not currently be playing, or the mode is otherwise not available.
-- [var currentViewingMode: VideoPlaybackController.ViewingMode?](videoplaybackcontroller/currentviewingmode-fo2v.md)
-  Is the currently playing video in mono or stereo? This is optional because the video may not currently be playing, or the mode is otherwise not available.
-- [var preferredViewingMode: VideoPlaybackController.ViewingMode](videoplaybackcontroller/preferredviewingmode-5fqz4.md)
-  Do we want to play stereo video in mono or stereo? Default is to play in stereo.
-- [var preferredViewingMode: VideoPlaybackController.ViewingMode](videoplaybackcontroller/preferredviewingmode-9sstw.md)
+- [var preferredViewingMode: VideoPlaybackController.ViewingMode](videoplaybackcontroller/preferredviewingmode.md)
   Do we want to play stereo video in mono or stereo? Default is to play in stereo.
 - [var reverbSendLevel: AudioPlaybackController.Decibel](videoplaybackcontroller/reverbsendlevel.md)
 ### Enumerations
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode-38c52.md)
-  Options for viewing video playback.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode-42yh2.md)
+- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
   Options for viewing video playback.
 
 ## Relationships
@@ -57,6 +49,8 @@ An object that controls the playback of video for a video material.
   Options for viewing the video during immersive-media playback.
 - [struct VideoMaterial](videomaterial.md)
   A material that supports animated textures.
+- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+  Options for viewing video playback.
 
 
 ---

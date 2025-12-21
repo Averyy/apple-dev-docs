@@ -23,8 +23,8 @@ protocol URLSessionDownloadDelegate : URLSessionTaskDelegate
 ## Mentions
 
 - [Downloading files from websites](downloading-files-from-websites.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
+- [Fetching website data into memory](fetching-website-data-into-memory.md)
 
 #### Overview
 

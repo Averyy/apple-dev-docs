@@ -33,6 +33,8 @@ The output buffer’s [`frameCapacity`](avaudiopcmbuffer/framecapacity.md) value
 
 - [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: AVAudioConverterInputBlock) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
   Performs a conversion between audio formats, if the system supports it.
+- [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
+  A block to get input data for conversion, as necessary.
 - [enum AVAudioConverterInputStatus](avaudioconverterinputstatus.md)
   An option that indicates the status of an audio converter input block.
 - [enum AVAudioConverterOutputStatus](avaudioconverteroutputstatus.md)

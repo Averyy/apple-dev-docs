@@ -6,7 +6,7 @@
 The possible states of a data provider.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -52,6 +52,8 @@ enum DataProviderState
   The identity, location, and orientation of an object in world space.
 - [protocol TrackableAnchor](trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
+- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+  An object which represents an ARKit coordinate space.
 
 
 ---

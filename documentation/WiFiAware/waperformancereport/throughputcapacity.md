@@ -6,8 +6,8 @@
 The current estimated average throughput capacity of the data path, given the current radio conditions and concurrent Wi-Fi use cases.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -33,6 +33,9 @@ struct EdgeInsets
 - [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)](edgeinsets/init(top:leading:bottom:trailing:).md)
 - [init(_:)](edgeinsets/init(_:).md)
   Creates a 2D `EdgeInsets` from an `EdgeInsets3D`, dropping its `front` and `back` values.
+### Instance Methods
+- [func inset(by: RectangleCornerInsets, edges: Edge.Set) -> EdgeInsets](edgeinsets/inset(by:edges:).md)
+  Returns an inset that has been modified by the corner sizes in the specified edges. When two corner insets diverge in their values for the specified edge, the maximum inset value will be used. For example, when the top edge is specified, the top inset will be adjusted by the larger of the two heights from the top leading and trailing corner inset sizes.
 
 ## Relationships
 

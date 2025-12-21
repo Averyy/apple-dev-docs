@@ -21,7 +21,7 @@ A point to be used for setting the origin for `aRect`, whose size the view can e
 
 #### Discussion
 
-The default implementation places `aRect` according to the status of the [`NSPrintInfo`](nsprintinfo.md) object for the print job. By default it places the image in the upper-left corner of the page, but if the `NSPrintInfo` methods [`isHorizontallyCentered`](nsprintinfo/ishorizontallycentered.md) or [`isVerticallyCentered`](nsprintinfo/isverticallycentered.md) return [`true`](https://developer.apple.com/documentation/swift/true), it centers a single-page image along the appropriate axis. A multiple-page document, however, is always placed so the divided pieces can be assembled at their edges.
+The default implementation places `aRect` according to the status of the [`NSPrintInfo`](nsprintinfo.md) object for the print job. By default it places the image in the upper-left corner of the page, but if the `NSPrintInfo` methods [`isHorizontallyCentered`](nsprintinfo/ishorizontallycentered.md) or [`isVerticallyCentered`](nsprintinfo/isverticallycentered.md) return [`true`](https://developer.apple.com/documentation/Swift/true), it centers a single-page image along the appropriate axis. A multiple-page document, however, is always placed so the divided pieces can be assembled at their edges.
 
 ## Parameters
 
@@ -38,7 +38,7 @@ The default implementation places `aRect` according to the status of the [`NSPri
 - [func adjustPageHeightNew(UnsafeMutablePointer<CGFloat>, top: CGFloat, bottom: CGFloat, limit: CGFloat)](nsview/adjustpageheightnew(_:top:bottom:limit:).md)
   Overridden by subclasses to adjust page height during automatic pagination.
 - [func knowsPageRange(NSRangePointer) -> Bool](nsview/knowspagerange(_:).md)
-  Returns [`true`](https://developer.apple.com/documentation/swift/true) if the view handles page boundaries, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+  Returns a Boolean value that indicates whether the view handles page boundaries.
 - [func rectForPage(Int) -> NSRect](nsview/rectforpage(_:).md)
   Implemented by subclasses to determine the portion of the view to be printed for the specified page number.
 

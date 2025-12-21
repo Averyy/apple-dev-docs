@@ -6,8 +6,8 @@
 The structure that configures the Wi-Fi Aware publisher operation that the network listener performs.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

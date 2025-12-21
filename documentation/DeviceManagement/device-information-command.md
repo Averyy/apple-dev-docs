@@ -13,6 +13,10 @@ Get detailed information about a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
+## Mentions
+
+- [Validating a Managed Device Attestation](validating-a-managed-device-attestation-attestation.md)
+
 #### Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
@@ -52,8 +56,6 @@ The request object the server returns for the Device Information Command.
 
 ## See Also
 
-- [Installed Application List](installed-application-list-command.md)
-  Get a list of the installed apps on a device.
 - [Device Configured](device-configured-command.md)
   Inform the device that it can allow the user to continue in Setup Assistant.
 - [User Configured](user-configured-command.md)

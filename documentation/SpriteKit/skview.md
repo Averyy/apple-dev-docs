@@ -27,7 +27,7 @@ class SKView
 
 #### Overview
 
-You present a scene by calling the view’s [`presentScene(_:)`](skview/presentscene(_:).md) method. When a scene is presented by the view, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the view’s [`isPaused`](skview/ispaused.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+You present a scene by calling the view’s [`presentScene(_:)`](skview/presentscene(_:).md) method. When a scene is presented by the view, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the view’s [`isPaused`](skview/ispaused.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Topics
 

@@ -20,7 +20,7 @@ class func exportPresets(compatibleWith asset: AVAsset) -> [String]
 
 #### Return Value
 
-An array of compatible presets. See [`Export Presets`](export-presets.md) for preset values an asset export session supports.
+An array of compatible presets. See [`Export presets`](export-presets.md) for preset values an asset export session supports.
 
 #### Discussion
 

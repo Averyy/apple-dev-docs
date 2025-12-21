@@ -31,21 +31,6 @@ Note that you need to use a universal link for your URL representation, you canâ
 ### Initializers
 - [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](enumurlrepresentation/init(_:)-1odm.md)
 - [init(String)](enumurlrepresentation/init(_:)-6p999.md)
-- [init(stringInterpolation: EnumURLRepresentation<Enum>.StringInterpolation)](enumurlrepresentation/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: String)](enumurlrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [EnumURLRepresentation.ExtendedGraphemeClusterLiteralType](enumurlrepresentation/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [EnumURLRepresentation.StringLiteralType](enumurlrepresentation/stringliteraltype.md)
-  A type that represents a string literal.
-- [EnumURLRepresentation.UnicodeScalarLiteralType](enumurlrepresentation/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](enumurlrepresentation/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringInterpolation Implementations](enumurlrepresentation/expressiblebystringinterpolation-implementations.md)
-- [ExpressibleByStringLiteral Implementations](enumurlrepresentation/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

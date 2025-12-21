@@ -27,22 +27,6 @@ Compute the square, signed square, or squared magnitude of the elements in a vec
   Calculates the square magnitude of each element in the supplied single-precision complex vector.
 - [static func squareMagnitudes<V>(DSPDoubleSplitComplex, result: inout V)](vdsp/squaremagnitudes(_:result:)-14oiw.md)
   Calculates the square magnitude of each element in the supplied double-precision complex vector.
-- [vDSP_vsq](vdsp_vsq.md)
-  Computes the squared value of each element in the supplied single-precision vector.
-- [vDSP_vsqD](vdsp_vsqd.md)
-  Computes the squared value of each element in the supplied double-precision vector.
-- [vDSP_vssq](vdsp_vssq.md)
-  Computes the signed squared value of each element in the supplied single-precision vector.
-- [vDSP_vssqD](vdsp_vssqd.md)
-  Computes the signed squared value of each element in the supplied double-precision vector.
-- [vDSP_zvmags](vdsp_zvmags.md)
-  Computes the squared magnitude value of each element in the supplied complex single-precision vector.
-- [vDSP_zvmagsD](vdsp_zvmagsd.md)
-  Computes the squared magnitude value of each element in the supplied complex double-precision vector.
-- [vDSP_zvmgsa](vdsp_zvmgsa.md)
-  Complex vector magnitudes square and add; single precision.
-- [vDSP_zvmgsaD](vdsp_zvmgsad.md)
-  Complex vector magnitudes square and add; double precision.
 
 ## See Also
 

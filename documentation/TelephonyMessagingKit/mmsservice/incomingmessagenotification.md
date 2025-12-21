@@ -6,8 +6,8 @@
 A structure that contains information about an incoming MMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -19,15 +19,13 @@ struct IncomingMessageNotification
 ## Topics
 
 ### Inspecting notification properties
-- [let cellularServiceID: CellularServiceID](mmsservice/incomingmessagenotification/cellularserviceid.md)
+- [var message: MMSMessage](mmsservice/incomingmessagenotification/message.md)
+  The incoming message.
+### Deprecated properties
+- [var cellularServiceID: CellularServiceID](mmsservice/incomingmessagenotification/cellularserviceid.md)
   The cellular service identifier associated with the notification.
-- [let messageID: MMSMessageID](mmsservice/incomingmessagenotification/messageid.md)
+- [var messageID: MMSMessageID](mmsservice/incomingmessagenotification/messageid.md)
   The identifier of the incoming message.
-### Comparing notifications
-- [static func == (MMSService.IncomingMessageNotification, MMSService.IncomingMessageNotification) -> Bool](mmsservice/incomingmessagenotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](mmsservice/incomingmessagenotification/equatable-implementations.md)
 
 ## Relationships
 
@@ -38,8 +36,6 @@ struct IncomingMessageNotification
 
 ## See Also
 
-- [func receiveMessage(using: CellularServiceID, messageID: MMSMessageID) async throws -> MMSMessage](mmsservice/receivemessage(using:messageid:).md)
-  Retrieves an MMS message that matches the given identifiers.
 - [struct CellularServiceID](cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
 - [struct MMSMessageID](mmsmessageid.md)

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-init?(rawValue: UInt)
+init?(rawValue: Int)
 ```
 
 

@@ -37,7 +37,7 @@ struct SnapshotData
 - [struct BackgroundTask](backgroundtask.md)
   The kinds of background tasks that your app or extension can handle.
 - [struct SnapshotResponse](snapshotresponse.md)
-  Your appplication’s response to a snapshot background task.
+  Your application’s response to a snapshot background task.
 
 
 ---

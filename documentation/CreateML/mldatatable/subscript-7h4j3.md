@@ -27,17 +27,6 @@ A new data table.
 
 - `slice`: A range of integers indicating which rows to include in the new data table.
 
-## See Also
-
-- [subscript<R>(R) -> MLDataTable](mldatatable/subscript(_:)-5le8a.md)
-  Creates a subset of the table given a range expression of rows.
-- [func prefix(Int) -> MLDataTable](mldatatable/prefix(_:).md)
-  Creates a subset of the table given a number of initial rows.
-- [func suffix(Int) -> MLDataTable](mldatatable/suffix(_:).md)
-  Creates a subset of the table given a number of final rows.
-- [func intersect<T>(T..., of: String) -> MLDataTable](mldatatable/intersect(_:of:).md)
-  Creates a subset of the table by including the rows that contain any of the given values in the given column.
-
 
 ---
 

@@ -33,7 +33,7 @@ An array of `NSFileVersion` objects that represent the versions in conflict or `
 - [var isConflict: Bool](nsfileversion/isconflict.md)
   A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
 - [var isResolved: Bool](nsfileversion/isresolved.md)
-  A Boolean value that indicates the version object is not in conflict ([`true`](https://developer.apple.com/documentation/swift/true)) or is in conflict ([`false`](https://developer.apple.com/documentation/swift/false)).
+  A Boolean value that indicates if the version object is in conflict or not.
 
 
 ---

@@ -33,6 +33,8 @@ object GameCenterChallengeLeaderboardLinkageRequest
   The data structure that represent a challenge version.
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
+- [object GameCenterChallengeLeaderboardV2LinkageRequest](gamecenterchallengeleaderboardv2linkagerequest.md)
+  The data structure that represents a Game Center challenge leaderboard linkage request resource.
 - [object GameCenterChallengeVersionsLinkagesResponse](gamecenterchallengeversionslinkagesresponse.md)
 
 

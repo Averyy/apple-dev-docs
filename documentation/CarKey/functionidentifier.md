@@ -30,14 +30,8 @@ A [`FunctionIdentifier`](functionidentifier.md) type wraps a vehicle-specific co
 - [init(Int)](functionidentifier/init(_:).md)
   Creates and returns a new function identifier with the specified value.
 ### Getting the Value
-- [let rawValue: Int](functionidentifier/rawvalue-swift.property.md)
+- [let rawValue: Int](functionidentifier/rawvalue.md)
   The raw value that corresponds to the specific feature of your vehicle.
-### Type Aliases
-- [FunctionIdentifier.RawValue](functionidentifier/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](functionidentifier/equatable-implementations.md)
-- [RawRepresentable Implementations](functionidentifier/rawrepresentable-implementations.md)
 
 ## Relationships
 

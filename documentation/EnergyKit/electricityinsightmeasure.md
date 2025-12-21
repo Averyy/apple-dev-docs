@@ -3,13 +3,13 @@
 **Framework**: EnergyKit  
 **Kind**: protocol
 
-A measurement of electricity consumption.
+A protocol for types that can measure electricity usage data.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,17 @@ A measurement of electricity consumption.
 protocol ElectricityInsightMeasure
 ```
 
+#### Overview
+
+The [`ElectricityInsightRecord`](electricityinsightrecord.md) structure uses this protocol as its generic type parameter, and supports the types:
+
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)>>
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/Swift/Duration)>
+
 ## See Also
 
 - [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that represents displayable environmental impact information for electricity usage.
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [actor ElectricityInsightService](electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)

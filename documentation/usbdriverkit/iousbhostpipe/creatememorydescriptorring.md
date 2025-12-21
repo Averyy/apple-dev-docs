@@ -18,6 +18,8 @@ KERN_SUCCESS is successful see IOReturn.h for error codes.
 
 #### Discussion
 
+Create a memory descriptor ring to use with AsyncIOBundled().
+
 The ring size should be large enough to hold all the memory descriptors to be used with the pipe. The ring must only be created once, and will be freed by the kernel driver when the pipe is destroyed.
 
 ## Parameters

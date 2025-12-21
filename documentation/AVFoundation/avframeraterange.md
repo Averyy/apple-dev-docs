@@ -29,7 +29,7 @@ An [`AVCaptureDevice`](avcapturedevice.md) object uses `AVCaptureDeviceFormat` t
 
 ## Topics
 
-### Accessing Properties
+### Accessing properties
 - [var maxFrameDuration: CMTime](avframeraterange/maxframeduration.md)
   The maximum frame duration supported by the range.
 - [var maxFrameRate: Float64](avframeraterange/maxframerate.md)

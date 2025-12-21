@@ -21,7 +21,7 @@ init(electrocardiogram: HKElectrocardiogram, dataHandler: @escaping (HKElectroca
 
 #### Discussion
 
-When you run the query, it calls the data handler once for each voltage measurement, passing the voltage data. On the last voltage measurement, it sets the `done` parameter to [`true`](https://developer.apple.com/documentation/swift/true). If an error occurs, it stops collecting voltage data and calls the data handler; it sets the `voltageMeasurement` parameter to `nil`, and passes in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error.
+When you run the query, it calls the data handler once for each voltage measurement, passing the voltage data. On the last voltage measurement, it sets the `done` parameter to [`true`](https://developer.apple.com/documentation/Swift/true). If an error occurs, it stops collecting voltage data and calls the data handler; it sets the `voltageMeasurement` parameter to `nil`, and passes in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error.
 
 ## Parameters
 

@@ -12,7 +12,7 @@ Explain the purpose of interface elements by showing a tooltip when a person pos
 
 #### Overview
 
-This sample shows how to display a tooltip (also known as a ) that explains the purpose of, or provide additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
+This sample shows how to display a tooltip (also known as a ) that explains the purpose of, or provides additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
 
 For guidelines on designing the content of your tooltips, see the [`Help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/) section of the macOS Human Interface Guidelines.
 
@@ -78,7 +78,7 @@ lazy var buttonWithTooltip: UIButton = {
 
 ##### Change the Tooltip Text of a View
 
-Setting the [`defaultToolTip`](uitooltipinteraction/defaulttooltip.md) property of a tooltip interaction and setting the [`toolTip`](uicontrol/tooltip.md) property of a control are convenient ways to show tooltip text that don’t change while the app runs. However, there may be times when an app needs to determine the contents of the tooltip based on the state of the app or logic specific to the app. For instance, the sample app looks up the name of a view’s background color and displays the name in a tooltip when the pointer hovers over that view.
+Setting the [`defaultToolTip`](uitooltipinteraction/defaulttooltip.md) property of a tooltip interaction and setting the [`toolTip`](uicontrol/tooltip.md) property of a control are convenient ways to show tooltip text that doesn’t change while the app runs. However, there may be times when an app needs to determine the contents of the tooltip based on the state of the app or logic specific to the app. For instance, the sample app looks up the name of a view’s background color and displays the name in a tooltip when the pointer hovers over that view.
 
 To show the background color name in a tooltip, the sample creates an instance of [`UIToolTipInteraction`](uitooltipinteraction.md) and sets its [`delegate`](uitooltipinteraction/delegate.md) property to an instance of `ViewWithBackgroundColorTooltip`, which is a custom view that conforms to the [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) protocol. Then the sample adds the interaction to the view.
 
@@ -176,7 +176,7 @@ class ViewWithTooltipRegion: UIView, UIToolTipInteractionDelegate {
         bottomRect.size.height = partHeight
         bottomRect.origin.y = partHeight * 2
         
-        // Display the tooltip if the pointer within the top or bottom rects.
+        // Display the tooltip if the pointer is within the top or bottom rects.
         if topRect.contains(point) {
             return UIToolTipConfiguration(toolTip: "Top area of the view.", in: topRect)
         } else if bottomRect.contains(point) {

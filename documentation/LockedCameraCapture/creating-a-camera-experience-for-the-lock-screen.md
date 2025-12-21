@@ -100,7 +100,7 @@ struct MyCameraCaptureExtension: LockedCameraCaptureExtension {
 } 
 ```
 
-In your capture view, create a view that starts an active camera session that uses `AVCaptureEventInteraction`. `UIImagePickerController` uses `AVCaptureEventInteraction`, but you can create custom capture views. To learn more about creating custom capture views, refer to [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session).
+In your capture view, create a view that starts an active camera session that uses `AVCaptureEventInteraction`. `UIImagePickerController` uses `AVCaptureEventInteraction`, but you can create custom capture views. To learn more about creating custom capture views, refer to [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session).
 
 The following code shows how to use UIImagePickerController to capture content in your extension. UIImagePickerController uses AVCaptureEventInteraction and ensures the system won’t terminate your extension after launch:
 

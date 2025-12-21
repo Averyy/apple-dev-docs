@@ -15,6 +15,10 @@
 var uuid: UUID { get set }
 ```
 
+#### Discussion
+
+UID of this tap.
+
 
 ---
 

@@ -14,7 +14,7 @@ Browse notable changes in [`StoreKit`](https://developer.apple.com/documentation
 
 - Build an in-app store with [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) to customize the layout and appearance of subscription store views.
 - Create flexible and adjustable custom control styles to use with subscription store views. Compose your custom styles using standard components with the new [`SubscriptionStoreButton`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreButton) and [`SubscriptionStorePicker`](https://developer.apple.com/documentation/StoreKit/SubscriptionStorePicker) views.
-- Group subscription options into tabs or navigation destinations and create vertically compact layouts using new picker styles, which can save space for taller marketing content. Choose the placement of subscription store controls with the [`subscriptionStoreControlStyle(_:placement:)`](https://developer.apple.com/documentation/storekit/subscriptionstoreview/4346553-subscriptionstorecontrolstyle) view modifier.
+- Group subscription options into tabs or navigation destinations and create vertically compact layouts using new picker styles, which can save space for taller marketing content. Choose the placement of subscription store controls with the [`subscriptionStoreControlStyle(_:placement:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:placement:)) view modifier.
 - Test your StoreKit view’s promotional icons, automatic subscription policies, and the subscription group display name with StoreKit Testing in Xcode.
 
 ##### Win Back Offers

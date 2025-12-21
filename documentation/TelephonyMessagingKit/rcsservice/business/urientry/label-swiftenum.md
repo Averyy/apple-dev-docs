@@ -6,8 +6,8 @@
 Enumeration representing the URI label.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,22 +23,6 @@ enum Label
   Service ID label.
 - [RCSService.Business.URIEntry.Label.sms](rcsservice/business/urientry/label-swift.enum/sms.md)
   SMS label.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/urientry/label-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.URIEntry.Label, RCSService.Business.URIEntry.Label) -> Bool](rcsservice/business/urientry/label-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/urientry/label-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/urientry/label-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/urientry/label-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/urientry/label-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

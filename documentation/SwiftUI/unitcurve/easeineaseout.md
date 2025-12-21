@@ -10,10 +10,9 @@ A bezier curve that starts out slowly, speeds up over the middle, then slows dow
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.0+
 - watchOS 10.0+
-- Unknown ?+ - Deprecated
-- tvOS 17.0+
 
 ## Declaration
 

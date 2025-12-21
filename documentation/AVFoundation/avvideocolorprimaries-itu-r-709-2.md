@@ -21,11 +21,11 @@ let AVVideoColorPrimaries_ITU_R_709_2: String
 
 ## Mentions
 
-- [Setting Color Properties for a Specific Resolution](setting-color-properties-for-a-specific-resolution.md)
+- [Setting color properties for a specific resolution](setting-color-properties-for-a-specific-resolution.md)
 
 ## See Also
 
-- [Setting Color Properties for a Specific Resolution](setting-color-properties-for-a-specific-resolution.md)
+- [Setting color properties for a specific resolution](setting-color-properties-for-a-specific-resolution.md)
   Choose the proper color property keys for the desired color range.
 - [let AVVideoAllowWideColorKey: String](avvideoallowwidecolorkey.md)
   The key for a dictionary that indicates whether the client can process wide color.

@@ -46,6 +46,8 @@ enum AVCaptureMultichannelAudioMode
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
 - [var multichannelAudioMode: AVCaptureMultichannelAudioMode](avcapturedeviceinput/multichannelaudiomode.md)
   The multichannel audio mode to apply when recording audio.
+- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
 
 
 ---

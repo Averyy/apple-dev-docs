@@ -25,10 +25,10 @@ var openAlbum: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.photos.openAlbum` schema:
 
 ```swift
-@AssistantIntent(schema: .photos.openAlbum)
+@AppIntent(schema: .photos.openAlbum)
 struct OpenMediaAlbumIntent: OpenIntent {
     @Parameter
-    var album: PhotoAlbumEntity
+    var target: PhotoAlbumEntity
 
     func perform() async throws -> some IntentResult {
         .result()

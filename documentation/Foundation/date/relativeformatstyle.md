@@ -94,8 +94,6 @@ if let pastWeek = Calendar.current.date(byAdding: .day, value: -7, to: Date()),
 - [var locale: Locale](date/relativeformatstyle/locale.md)
   The locale to use when formatting the relative date.
 ### Comparing Relative Date Format Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Types
@@ -107,6 +105,7 @@ if let pastWeek = Calendar.current.date(byAdding: .day, value: -7, to: Date()),
 - [init(allowedFields: Set<Date.RelativeFormatStyle.Field>, presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](date/relativeformatstyle/init(allowedfields:presentation:unitsstyle:locale:calendar:capitalizationcontext:).md)
 ### Instance Properties
 - [var allowedFields: Set<Date.RelativeFormatStyle.Field>](date/relativeformatstyle/allowedfields.md)
+  The fields that can be used in the formatted output.
 ### Type Aliases
 - [Date.RelativeFormatStyle.Field](date/relativeformatstyle/field.md)
 

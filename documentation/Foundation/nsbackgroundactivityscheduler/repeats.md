@@ -16,7 +16,7 @@ var repeats: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). See [`Configure Scheduler Properties`](nsbackgroundactivityscheduler#Configure-Scheduler-Properties.md).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false). See [`Configure Scheduler Properties`](nsbackgroundactivityscheduler#Configure-Scheduler-Properties.md).
 
 ## See Also
 

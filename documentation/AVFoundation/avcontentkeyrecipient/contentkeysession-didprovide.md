@@ -23,7 +23,7 @@ optional func contentKeySession(_ contentKeySession: AVContentKeySession, didPro
 ## Parameters
 
 - `contentKeySession`: The current content key session.
-- `contentKey`: A content key to use with objects that support manual attachment of keys, such as  doc://com.apple.documentation/documentation/coremedia/cmsamplebuffer-u71 .
+- `contentKey`: A content key to use with objects that support manual attachment of keys, such as  .
 
 ## See Also
 

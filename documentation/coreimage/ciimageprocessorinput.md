@@ -31,24 +31,27 @@ To finish setting up or performing your image processing routine, use the provid
 
 ### Accessing Input Image Data
 - [var baseAddress: UnsafeRawPointer](ciimageprocessorinput/baseaddress.md)
-  A pointer to the image data in CPU memory to be processed.
+  The base address of CPU memory that your Core Image Processor Kernel can read pixels from.
 - [var metalTexture: (any MTLTexture)?](ciimageprocessorinput/metaltexture.md)
-  A Metal texture containing the image data to be processed.
+  A MTLTexture object that can be bound for input using Metal.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessorinput/pixelbuffer.md)
-  A CoreVideo pixel buffer containing the image data to be processed.
+  An input pixel buffer object that your Core Image Processor Kernel can read from.
 - [var surface: IOSurfaceRef](ciimageprocessorinput/surface.md)
-  An IOSurface object containing the image data to be processed.
+  An input surface object that your Core Image Processor Kernel can read from.
 ### Getting Supplemental Information for Image Processing
 - [var region: CGRect](ciimageprocessorinput/region.md)
-  The area within the input image to be processed.
+  The rectangular region of the input image that your Core Image Processor Kernel can use to provide the output.
 - [var bytesPerRow: Int](ciimageprocessorinput/bytesperrow.md)
-  The number of bytes per row of pixels in the input image data.
+  The bytes per row of the CPU memory that your Core Image Processor Kernel can read pixelsfrom.
 - [var format: CIFormat](ciimageprocessorinput/format.md)
-  The per-pixel data format of the image to be processed.
+  The pixel format of the CPU memory that your Core Image Processor Kernel can read pixels from.
 ### Instance Properties
 - [var digest: UInt64](ciimageprocessorinput/digest.md)
+  A 64-bit digest that uniquely describes the contents of the input to a processor.
 - [var roiTileCount: Int](ciimageprocessorinput/roitilecount.md)
+  This property tells a tiled-input processor how many input tiles will be processed.
 - [var roiTileIndex: Int](ciimageprocessorinput/roitileindex.md)
+  This property tells a tiled-input processor which input tile index is being processed.
 
 ## See Also
 

@@ -13,7 +13,6 @@ Identity activation function.
 - tvOS 10.0+
 - visionOS ?+
 - watchOS 3.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

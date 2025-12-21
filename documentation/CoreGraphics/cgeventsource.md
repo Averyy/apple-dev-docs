@@ -21,7 +21,7 @@ A Quartz event source is an object that contains accumulated state related to ev
 
 A typical use of an event source would be to obtain the source from a Quartz event received by an event tap callback function, and then to use that source for any new events created as a result of the received event. This has the effect of marking the events as being related.
 
-This opaque type is derived from CFType and inherits the properties that all Core Foundation types have in common. For more information, see doc://com.apple.documentation/documentation/corefoundation/cftype.
+This opaque type is derived from CFType and inherits the properties that all Core Foundation types have in common. For more information, see [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef).
 
 ## Topics
 

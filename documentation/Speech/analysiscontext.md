@@ -6,11 +6,11 @@
 Contextual information that may be shared among analyzers.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,16 +20,16 @@ final class AnalysisContext
 
 ## Topics
 
-### Structures
-- [AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag.md)
-- [AnalysisContext.UserDataTag](analysiscontext/userdatatag.md)
-### Initializers
+### Creating a context
 - [init()](analysiscontext/init.md)
-### Instance Properties
+### Providing textual context
 - [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
   A dictionary of supplemental vocabulary words grouped by tag.
+- [AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag.md)
+### Preserving app-specific context
 - [var userData: [AnalysisContext.UserDataTag : any Sendable]](analysiscontext/userdata.md)
   A dictionary of application-specific contextual information.
+- [AnalysisContext.UserDataTag](analysiscontext/userdatatag.md)
 
 ## Relationships
 
@@ -39,16 +39,12 @@ final class AnalysisContext
 
 ## See Also
 
-- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
-  An object that generates and exports custom language model training data.
 - [class SFSpeechLanguageModel](sfspeechlanguagemodel.md)
   A language model built from custom training data.
 - [SFSpeechLanguageModel.Configuration](sfspeechlanguagemodel/configuration.md)
   An object describing the location of a custom language model and specialized vocabulary.
-- [protocol DataInsertable](datainsertable.md)
-  A protocol supporting the custom language model training data result builder.
-- [protocol TemplateInsertable](templateinsertable.md)
-  A protocol supporting the custom language model training data result builder.
+- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
+  An object that generates and exports custom language model training data.
 
 
 ---

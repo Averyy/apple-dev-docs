@@ -36,9 +36,6 @@ The system provides an instance of this structure to your app when a person choo
   The movement activity type that the phone records when it detects motion.
 - [var movementType: JournalingSuggestion.MotionActivity.MovementType?](journalingsuggestion/motionactivity/movementtype-swift.property.md)
   The specific type of movement associated with the activity.
-### Type Aliases
-- [JournalingSuggestion.MotionActivity.JournalingSuggestionContent](journalingsuggestion/motionactivity/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

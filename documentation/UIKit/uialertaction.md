@@ -62,7 +62,7 @@ You use this class to configure information about a single action, including the
 ## See Also
 
 - [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
-  Present important information to the user or prompt the user about an important choice.
+  Present important information to a person or prompt them about an important choice.
 - [class UIAlertController](uialertcontroller.md)
   An object that displays an alert message.
 

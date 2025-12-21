@@ -1,4 +1,4 @@
 Completed scraping Core ML!
-Total pages scraped: 730
-Pages skipped (unchanged): 17
+Total pages scraped: 661
+Pages skipped (unchanged): 11
 Pages failed: 0

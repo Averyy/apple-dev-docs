@@ -6,25 +6,13 @@ Configure your app and website to enable people to install your app on their dev
 
 #### Overview
 
-In eligible regions, you can distribute approved, non-marketplace apps from your website. To distribute your app, fill out a webform that outlines the qualifications, and if approved, Apple enables you to download a framework that facilitates the secure installation of your app from your website.
+Alternative app marketplaces install on a person’s device from your website. To distribute your marketplace app, fill out a webform that outlines the qualifications, and if it’s approved, Apple enables you to download a framework that facilitates the secure installation of your app from your website. Coordinate with App Store Connect by providing your web domain and a public key that the system uses to validate your app’s installations. When you submit your app and pass review, App Store Connect enables you to access your approved app’s alternative distribution package. For more information, see [`Submit for Notarization`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/submit-for-notarization).
 
-![Three screenshots of iPhone that show the stages of installing a fictional alternative app, Camping App from the developer’s website. The left screenshot has the caption App website and shows the app icon for Camping App, which is a representation of a location, below that is the app title Camping App, below that are lines that represent descriptive text, and below that is the button Install Camping App. The center screenshot has the caption Install sheet and shows a confirmation, the title of the sheet is taplandinc.com Would Like to Install an App, followed by lines that represent descriptive text, followed by the Camping App app info, which includes the developer name Tapland, Inc. as well as screenshots, below the app info is the Install Camping App button, followed by the Cancel button. The right screenshot has the caption Installed app and shows a representation of the homescreen with Camping App installed.](https://docs-assets.developer.apple.com/published/8f0a7a712030bddaf4a7f8ad30353675/distributing-your-app-from-your-website-1%402x.png)
+Deploy a web server and modify your website to link to your marketplace app, which you host on your server. To prepare your app for installation, download and assemble a complete alternative distribution package using the ID that App Store Connect provides; see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md). Add a Download button on your webpage that links to the alternative distribution package. The URL you assign the button uses a custom scheme that browsers handle differently, instructing them to provide the system with your app’s alternative distribution pacakge for installation on the device.
 
-Coordinate with App Store Connect by providing your web domain and a public key that the system uses to validate your app’s installations. When you submit your app and pass review, App Store Connect enables you to access your approved app’s alternative distribution package. For more information, see [`Submit for Notarization`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/submit-for-notarization).
+![A diagram that depicts development requirements for an alternative app marketplace, which consists of a client marketplace app, an app webpage, and an app web server.](https://docs-assets.developer.apple.com/published/d83a5b8247180d38525173a57594996d/distributing-your-app-from-your-website-2%402x.png)
 
-Deploy a web server and modify your website to link to your app, which you host on your server. To prepare your app for installation, download and assemble a complete alternative distribution package using the ID that App Store Connect provides; see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md). Add a Download button on your webpage that links to the alternative distribution package. The URL you assign the button uses a custom scheme that browsers handle differently, instructing them to provide the system with your app’s alternative distribution pacakge for installation on the device.
-
-![A diagram that illustrates building and deploying your app one time allows you to distribute from three different places, an alterative marketplace app, an app webpage, and an app web server.](https://docs-assets.developer.apple.com/published/9b02dd7733efcf9b21af6d7dc0681e35/distributing-your-app-from-your-website-2%402x.png)
-
-> **Note**: Alternative app marketplaces are available in Xcode 15.3, iOS 17.4 and later, and iPadOS 18.0 and later. To enable web distribution of other apps, use Xcode 15.4 or later, iOS 17.5 or later, and iPadOS 18.0 or later. For more information, see [`Xcode support`](https://developer.apple.comhttps://developer.apple.com/support/xcode).
-
-#### Request Approval to Distribute Your App
-
-Each app follows the same process for alternative distribution over the web and is subject to Apple’s approval, however the approval process varies by app type.
-
-For marketplace apps, see [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/). For other apps, see [`Getting started with Web Distribution in the EU`](https://developer.apple.comhttps://developer.apple.com/support/web-distribution-eu/). In either case, you sign the [`Alternative EU Terms Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/alternative-eu-terms-addendum/) to the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement).
-
-The signed addendum prompts App Store Connect to provide an  for your app in App Store Connect. You host this alternative distribution package on your website and use it to install your app on devices.
+> ❗ **Important**: To distribute your app from your website, request approval from Apple. The request process varies by geographic region; see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md). Only people in the European Union can install apps that aren’t marketplaces from a website.
 
 #### Set Up Your App for Alternative Distribution
 
@@ -92,7 +80,11 @@ The system enforces the following criteria for a webpage that invokes an app dow
 
 #### Coordinate with the Device From Your Web Server
 
-When a page visitor taps the install button, the system communicates with your web server to validate the request and retrieve the data necessary to perform the installation. If you supply an authentication token in the installation request URL, the system checks if your authentication server authorizes the download. Then system then requests an app license from your server followed by the app itself. For more information, see [`Installing your app from your website`](installing-your-app-from-your-website.md).
+When a page visitor taps the install button, the system communicates with your web server to validate the request and retrieve the data necessary to perform the installation. If you supply an authentication token in the installation request URL, the system checks if your authentication server authorizes the download. The system then requests an app license from your server, followed by the app itself. For more information, see [`Installing your app from your website`](installing-your-app-from-your-website.md).
+
+#### Report Transactions for the Core Technology Commission
+
+Track any eligible purchases that you offer a person that relate to your app and report them to Apple using tokens provided by MarketplaceKit. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
 
 #### Test Your App During Development
 
@@ -110,7 +102,7 @@ In your scheme’s Run task Options tab, Distribution selection menu, choose Web
 
 ![A screenshot of Xcode Scheme settings window with Run selected in the sidebar and the options tab open. The Distribution pop-up menu shows the Website option selected.](https://docs-assets.developer.apple.com/published/a556a3fd8a8658b99037065151c288f6/distributing-your-app-from-your-website-5%402x.png)
 
-Similarly, to return `web` for the `current` distributor in a test plan, choose Website in the Distribution selection menu of your test plan’s configuration.
+Similarly, to return [`AppDistributor.web`](appdistributor/web.md) for the [`current`](appdistributor/current.md) distributor in a test plan, choose Website in the Distribution selection menu of your test plan’s configuration.
 
 ![A screenshot of Xcode with TestPlan selected in the project navigation sidebar and the Configurations tab open. The Distribution pop-up menu has Website selected.](https://docs-assets.developer.apple.com/published/11323ebc7189f8d8af0a183c8e2d177b/distributing-your-app-from-your-website-6%402x.png)
 

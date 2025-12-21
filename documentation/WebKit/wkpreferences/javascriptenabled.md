@@ -21,7 +21,7 @@ var javaScriptEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) disables JavaScripts that are loaded or executed by the webpage. This setting does not affect user scripts. See [`WKUserContentController`](wkusercontentcontroller.md).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) disables JavaScripts that are loaded or executed by the webpage. This setting does not affect user scripts. See [`WKUserContentController`](wkusercontentcontroller.md).
 
 ## See Also
 

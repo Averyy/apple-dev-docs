@@ -20,9 +20,6 @@ enum Mass
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Mass, IntentParameter<Value>.Mass) -> Bool](intentparameter/mass/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Mass.carats](intentparameter/mass/carats.md)
 - [IntentParameter.Mass.centigrams](intentparameter/mass/centigrams.md)
@@ -40,15 +37,6 @@ enum Mass
 - [IntentParameter.Mass.shortTons](intentparameter/mass/shorttons.md)
 - [IntentParameter.Mass.slugs](intentparameter/mass/slugs.md)
 - [IntentParameter.Mass.stones](intentparameter/mass/stones.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/mass/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/mass/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/mass/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/mass/equatable-implementations.md)
 
 ## Relationships
 

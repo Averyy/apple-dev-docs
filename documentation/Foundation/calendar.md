@@ -165,21 +165,27 @@ struct Calendar
   A list of eras in this calendar, localized to the Calendar’s `locale`.
 - [var longEraSymbols: [String]](calendar/longerasymbols.md)
   A list of longer-named eras in this calendar, localized to the Calendar’s `locale`.
+### Working with notification messages
+- [Calendar.CalendarDayChangedMessage](calendar/calendardaychangedmessage.md)
 ### Using Reference Types
 - [class NSCalendar](nscalendar.md)
   A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
 ### Structures
-- [Calendar.CalendarDayChangedMessage](calendar/calendardaychangedmessage.md)
 - [Calendar.RecurrenceRule](calendar/recurrencerule.md)
+  A rule which specifies how often an event should repeat in the future
 ### Initializers
 - [init(identifier: Calendar.Identifier)](calendar/init(identifier:).md)
+  Returns a new Calendar.
 ### Instance Methods
 - [func dates(byAdding: DateComponents, startingAt: Date, in: Range<Date>?, wrappingComponents: Bool) -> some Sendable & Sequence<Date>
 ](calendar/dates(byadding:startingat:in:wrappingcomponents:).md)
+  Returns a sequence of `Date`s, calculated by repeatedly adding an amount of `DateComponents` to a starting `Date` and then to each subsequent result. If a range is supplied, the sequence terminates if the next result is not contained in the range. The starting point does not need to be contained in the range, but if the first result is outside of the range then the result will be an empty sequence.
 - [func dates(byAdding: Calendar.Component, value: Int, startingAt: Date, in: Range<Date>?, wrappingComponents: Bool) -> some Sendable & Sequence<Date>
 ](calendar/dates(byadding:value:startingat:in:wrappingcomponents:).md)
+  Returns a sequence of `Date`s, calculated by adding a scaled amount of `Calendar.Component`s to a starting `Date`. If a range is supplied, the sequence terminates if the next result is not contained in the range. The starting point does not need to be contained in the range, but if the first result is outside of the range then the result will be an empty sequence.
 - [func dates(byMatching: DateComponents, startingAt: Date, in: Range<Date>?, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection) -> some Sendable & Sequence<Date>
 ](calendar/dates(bymatching:startingat:in:matchingpolicy:repeatedtimepolicy:direction:).md)
+  Computes the dates which match (or most closely match) a given set of components, returned as a `Sequence`.
 
 ## Relationships
 

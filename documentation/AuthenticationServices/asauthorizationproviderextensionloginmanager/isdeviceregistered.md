@@ -16,7 +16,7 @@ var isDeviceRegistered: Bool { get }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the current device completes registration.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the current device completes registration.
 
 ## See Also
 

@@ -17,7 +17,7 @@ int32 quantity
 ## See Also
 
 - [type productId](productid.md)
-  The unique identifier of the product, which you create in App Store Connect.
+  The unique identifier of the product.
 - [type type](type.md)
   The type of In-App Purchase products you can offer in your app.
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Posted whenever the view’s frame rectangle changes to a new value, but only when the view’s [`postsFrameChangedNotifications`](nsview/postsframechangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+A notification that posts when the view’s frame rectangle changes to a new value.
 
 **Availability**:
 - macOS ?+
@@ -15,6 +15,8 @@ class let frameDidChangeNotification: NSNotification.Name
 ```
 
 #### Discussion
+
+This notification posts only when the view’s [`postsFrameChangedNotifications`](nsview/postsframechangednotifications.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The notification object is the `NSView` object whose frame rectangle has changed. This notification does not contain a `userInfo` dictionary.
 

@@ -6,7 +6,7 @@
 Definition of the two-handed scaling behavior.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -30,8 +30,6 @@ Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:pac
 ### Using defined verifier values
 - [static let initial: FSDirectoryVerifier](fsdirectoryverifier/initial.md)
   The constant initial value for the directory-enumeration verifier.
-### Default Implementations
-- [Equatable Implementations](fsdirectoryverifier/equatable-implementations.md)
 
 ## Relationships
 

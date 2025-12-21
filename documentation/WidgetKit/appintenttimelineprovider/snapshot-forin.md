@@ -11,7 +11,7 @@ Provides a timeline entry representing the current time and state of a widget.
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration

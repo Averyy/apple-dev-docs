@@ -6,8 +6,8 @@
 A structure that contains information about a critical SMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -27,11 +27,6 @@ struct CriticalMessageStateNotification
   The state of the critical message.
 - [SMSService.CriticalMessageStateNotification.State](smsservice/criticalmessagestatenotification/state-swift.enum.md)
   An enumeration of possible states of a critical message.
-### Comparing notifications
-- [static func == (SMSService.CriticalMessageStateNotification, SMSService.CriticalMessageStateNotification) -> Bool](smsservice/criticalmessagestatenotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](smsservice/criticalmessagestatenotification/equatable-implementations.md)
 
 ## Relationships
 

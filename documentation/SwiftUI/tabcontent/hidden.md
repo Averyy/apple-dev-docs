@@ -67,7 +67,7 @@ struct BrowseTabExample: View {
 
                 TabSection("Playlists") {
                     ForEach(playlists) { playlist in
-                        Tab(playlist.name, image: playlist.imafe, value: MusicTab.playlists(playlist)) {
+                        Tab(playlist.name, image: playlist.image, value: MusicTab.playlists(playlist)) {
                             playlist.detailView()
                         }
                     }

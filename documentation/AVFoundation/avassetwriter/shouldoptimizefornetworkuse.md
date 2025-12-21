@@ -21,7 +21,7 @@ var shouldOptimizeForNetworkUse: Bool { get set }
 
 #### Discussion
 
-Setting this value to [`true`](https://developer.apple.com/documentation/swift/true) writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it.
+Setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it.
 
 ## See Also
 

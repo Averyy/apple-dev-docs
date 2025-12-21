@@ -3,17 +3,22 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-Indicates the reception timestamp (in seconds).
+A timestamp, in seconds, for the time that the device receives the measurement.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var receiveTime: Double { get }
 ```
+
+## See Also
+
+- [var transmitTime: Double](nidltdoameasurement/transmittime.md)
+  A timestamp, in seconds, for the elapsed message transmission time.
 
 
 ---

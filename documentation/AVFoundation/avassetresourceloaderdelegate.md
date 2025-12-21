@@ -26,14 +26,14 @@ A class should adopt this protocol when associated with the asset’s resource l
 
 ## Topics
 
-### Processing Resource Requests
+### Processing resource requests
 - [func resourceLoader(AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource: AVAssetResourceLoadingRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md)
   Asks the delegate if it wants to load the requested resource.
 - [func resourceLoader(AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource: AVAssetResourceRenewalRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforrenewalofrequestedresource:).md)
   Tells the delegate when assistance is required of the application to renew a resource.
 - [func resourceLoader(AVAssetResourceLoader, didCancel: AVAssetResourceLoadingRequest)](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md)
   Informs the delegate that a prior loading request has been cancelled.
-### Processing Authentication Challenges
+### Processing authentication challenges
 - [func resourceLoader(AVAssetResourceLoader, shouldWaitForResponseTo: URLAuthenticationChallenge) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforresponseto:).md)
   Tells the delegate that assistance is required of the application to respond to an authentication challenge.
 - [func resourceLoader(AVAssetResourceLoader, didCancel: URLAuthenticationChallenge)](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-1wqin.md)

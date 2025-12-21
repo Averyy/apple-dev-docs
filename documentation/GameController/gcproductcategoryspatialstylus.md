@@ -6,7 +6,7 @@
 The category for stylus products that support 6DoF tracking on visionOS.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

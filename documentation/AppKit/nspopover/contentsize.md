@@ -19,7 +19,7 @@ var contentSize: NSSize { get set }
 
 The popover’s content size is set to match the size of the content view when the content view controller is set.
 
-Changes to the content size of the popover will cause the popover to animate while it is shown if the [`animates`](nspopover/animates.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+Changes to the content size of the popover will cause the popover to animate while it is shown if the [`animates`](nspopover/animates.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This property is exposed as a read-only binding.
 

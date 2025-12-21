@@ -22,6 +22,10 @@ func BNNSDataLayoutGetRank(_ layout: BNNSDataLayout) -> Int
 
 The number of dimensions represented by `layout`, or `SIZE_T_MAX` if unable to determine
 
+#### Discussion
+
+Determine the rank of the given layout
+
 ## See Also
 
 - [struct BNNSLayerData](bnnslayerdata.md)

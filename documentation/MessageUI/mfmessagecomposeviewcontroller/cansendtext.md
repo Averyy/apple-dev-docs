@@ -20,7 +20,7 @@ class func canSendText() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device can send text messages or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device can send text messages or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 

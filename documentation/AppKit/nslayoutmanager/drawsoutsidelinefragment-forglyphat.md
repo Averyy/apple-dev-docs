@@ -16,7 +16,7 @@ func drawsOutsideLineFragment(forGlyphAt glyphIndex: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the glyph at `glyphIndex` exceeds the bounds of the line fragment where it’s laid out, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the glyph at `glyphIndex` exceeds the bounds of the line fragment where it’s laid out, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

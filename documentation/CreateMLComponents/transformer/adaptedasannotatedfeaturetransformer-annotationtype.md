@@ -32,6 +32,8 @@ func adaptedAsAnnotatedFeatureTransformer<Annotation>(annotationType: Annotation
 - [func adaptedAsRandomTransformer() -> some RandomTransformer<Self.Input, Self.Output>
 ](transformer/adaptedasrandomtransformer.md)
   Returns a random transformer wrapping a transformer.
+- [func adaptedAsTemporal()](transformer/adaptedastemporal.md)
+  Exposes this transformer as a temporal transformer.
 - [func adaptedAsUpdatableEstimator() -> TransformerToUpdatableEstimatorAdaptor<Self>](transformer/adaptedasupdatableestimator.md)
   Exposes this transformer as a trivial estimator.
 - [associatedtype Input](transformer/input.md)

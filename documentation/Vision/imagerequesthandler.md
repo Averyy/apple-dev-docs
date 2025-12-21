@@ -8,7 +8,6 @@ An object that processes one or more image-analysis requests pertaining to a sin
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -55,20 +54,10 @@ Instantiate this handler to perform Vision requests on a single image. You speci
 
 ## See Also
 
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
-  Analyze and label images using a Vision classification request.
-- [struct ClassifyImageRequest](classifyimagerequest.md)
-  A request to classify an image.
-- [protocol ImageProcessingRequest](imageprocessingrequest.md)
-  A type for image-analysis requests that focus on a specific part of an image.
-- [protocol VisionRequest](visionrequest.md)
-  A type for image-analysis requests.
-- [protocol VisionObservation](visionobservation.md)
-  A type for objects produced by image-analysis requests.
-- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
-  A request that detects a smudge on a lens from an image or video frame capture.
-- [struct SmudgeObservation](smudgeobservation.md)
-  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
+- [class TargetedImageRequestHandler](targetedimagerequesthandler.md)
+  An object that performs image-analysis requests on two images.
+- [class VideoProcessor](videoprocessor.md)
+  An object that performs offline analysis of video content.
 
 
 ---

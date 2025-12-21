@@ -25,7 +25,7 @@ func MPSSupportsMTLDevice(_ device: (any MTLDevice)?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device is supported. [`false`](https://developer.apple.com/documentation/swift/false) if the device is not supported.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device is supported. [`false`](https://developer.apple.com/documentation/Swift/false) if the device is not supported.
 
 #### Discussion
 

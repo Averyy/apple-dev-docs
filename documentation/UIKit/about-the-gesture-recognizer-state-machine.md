@@ -22,7 +22,7 @@ When implementing a discrete gesture recognizer, you change the [`state`](uigest
 
 When your gesture recognizer transitions to the [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) state, UIKit calls the action methods of any associated target objects. UIKit does not call any action methods when the gesture recognizer transitions to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state.
 
-For an example of how to implement a discrete gesture recognizer, see [`Implementing a Discrete Gesture Recognizer`](implementing-a-discrete-gesture-recognizer.md).
+For an example of how to implement a discrete gesture recognizer, see [`Implementing a discrete gesture recognizer`](implementing-a-discrete-gesture-recognizer.md).
 
 ##### Managing State Transitions for a Continuous Gesture Recognizer
 
@@ -54,7 +54,7 @@ Implement the [`reset()`](uigesturerecognizer/reset().md) method and use it to r
 
 ## See Also
 
-- [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
   If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it.
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
   For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer.

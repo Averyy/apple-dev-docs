@@ -28,8 +28,6 @@ You can use this option to keep `NSFileWrapper` from memory-mapping files. This 
 
 - [static var immediate: FileWrapper.ReadingOptions](filewrapper/readingoptions/immediate.md)
   The option to read files immediately after creating a file wrapper.
-- [static var immediate: FileWrapper.ReadingOptions](filewrapper/readingoptions/immediate.md)
-  The option to read files immediately after creating a file wrapper.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Video Toolbox  
 **Kind**: case
 
+Returned if download of a required model asset for the processor failed
+
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+

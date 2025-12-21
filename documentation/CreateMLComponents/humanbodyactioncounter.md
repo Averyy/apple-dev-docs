@@ -27,16 +27,8 @@ struct HumanBodyActionCounter
 ### Performing the transformation
 - [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/applied(to:eventhandler:).md)
   Predicts cumulative human body action counts from a sequence of human body pose windows.
-- [HumanBodyActionCounter.Input](humanbodyactioncounter/input.md)
-  The input type.
-- [HumanBodyActionCounter.Output](humanbodyactioncounter/output.md)
-  The output type.
 - [HumanBodyActionCounter.CumulativeSumSequence](humanbodyactioncounter/cumulativesumsequence.md)
   Cumulative human body action count sequence.
-- [HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/outputsequence.md)
-  The output async sequence type.
-### Default Implementations
-- [TemporalTransformer Implementations](humanbodyactioncounter/temporaltransformer-implementations.md)
 
 ## Relationships
 
@@ -47,7 +39,7 @@ struct HumanBodyActionCounter
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

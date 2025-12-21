@@ -16,7 +16,7 @@ var numberOfPlanes: Int { get }
 
 #### Discussion
 
-If the data has a separate plane for each component—that is, [`isPlanar`](nsbitmapimagerep/isplanar.md) is [`true`](https://developer.apple.com/documentation/swift/true)—the value of this property is the number of samples per pixel. If the data is meshed, the value of this property is `1`.
+If the data has a separate plane for each component—that is, [`isPlanar`](nsbitmapimagerep/isplanar.md) is [`true`](https://developer.apple.com/documentation/Swift/true)—the value of this property is the number of samples per pixel. If the data is meshed, the value of this property is `1`.
 
 ## See Also
 

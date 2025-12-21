@@ -8,7 +8,7 @@ An object that represents the groups of fields that display the information for 
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -23,12 +23,14 @@ object Pass.EventTicket
 
 ## See Also
 
-- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
-  An object that represents the groups of fields that display the information for a boarding pass.
-- [object Pass.Coupon](pass/coupon-data.dictionary.md)
-  An object that represents the groups of fields that display the information for a coupon.
-- [object Pass.Generic](pass/generic-data.dictionary.md)
-  An object that represents the groups of fields that display the information for a generic pass.
+- [object SemanticTags](semantictags.md)
+  An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
+- [object SemanticTagType](semantictagtype.md)
+  A compilation of data object types for semantic tags.
+- [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
+  An object that represents the ordered list of all upcoming pass information entries.
+- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+  An object that represents a upcoming pass information entry for an specific upcoming event.
 
 
 ---

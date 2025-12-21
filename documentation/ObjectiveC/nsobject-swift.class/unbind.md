@@ -29,7 +29,7 @@ func unbind(_ binding: NSBindingName)
 - [func infoForBinding(NSBindingName) -> [NSBindingInfoKey : Any]?](nsobject-swift.class/infoforbinding(_:).md)
   Returns a dictionary describing the receiver’s `binding`.
 - [struct NSBindingInfoKey](../AppKit/NSBindingInfoKey.md)
-- [func NSIsControllerMarker(_ object: Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
+- [func NSIsControllerMarker(Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
 
 

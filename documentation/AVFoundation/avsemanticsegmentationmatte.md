@@ -26,7 +26,7 @@ The matting image stores its pixel data as [`CVPixelBuffer`](https://developer.a
 
 ## Topics
 
-### Creating a Segmentation Matte
+### Creating a segmentation matte
 - [convenience init(fromImageSourceAuxiliaryDataType: CFString, dictionaryRepresentation: [AnyHashable : Any]) throws](avsemanticsegmentationmatte/init(fromimagesourceauxiliarydatatype:dictionaryrepresentation:).md)
   Returns a new semantic segmentation matte instance from auxiliary image information in an image file.
 - [func replacingSemanticSegmentationMatte(with: CVPixelBuffer) throws -> Self](avsemanticsegmentationmatte/replacingsemanticsegmentationmatte(with:).md)
@@ -35,7 +35,7 @@ The matting image stores its pixel data as [`CVPixelBuffer`](https://developer.a
   Returns a new semantic segmentation matte instance with the specified Exif orientation applied.
 - [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avsemanticsegmentationmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
   Returns a dictionary of primitive map information to use when writing an image file with a semantic segmentation matte.
-### Inspecting a Segmentation Matte
+### Inspecting a segmentation matte
 - [var matteType: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.property.md)
   The semantic segmentation matte image type.
 - [AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct.md)

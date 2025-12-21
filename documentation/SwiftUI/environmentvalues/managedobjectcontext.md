@@ -20,7 +20,7 @@ var managedObjectContext: NSManagedObjectContext { get set }
 
 ## See Also
 
-- [Loading and Displaying a Large Data Feed](loading_and_displaying_a_large_data_feed.md)
+- [Loading and displaying a large data feed](loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [struct FetchRequest](fetchrequest.md)
   A property wrapper type that retrieves entities from a Core Data persistent store.

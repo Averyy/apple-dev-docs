@@ -46,7 +46,7 @@ struct SegmentOptions
 ## See Also
 
 - [var textViewportLayoutController: NSTextViewportLayoutController](nstextlayoutmanager/textviewportlayoutcontroller.md)
-  Returns text viewport layout controller associated with the layout manager’s text container.
+  The text viewport layout controller associated with the layout manager’s text container.
 - [func invalidateLayout(for: NSTextRange)](nstextlayoutmanager/invalidatelayout(for:).md)
   Invalidates the layout information for specified text range.
 - [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-68dez.md)

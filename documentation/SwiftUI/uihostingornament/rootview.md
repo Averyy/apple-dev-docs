@@ -14,6 +14,11 @@ The root view of the SwiftUI view hierarchy managed by this ornament.
 var rootView: Content { get set }
 ```
 
+## See Also
+
+- [init(sceneAnchor:contentAlignment:content:)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
+  Creates an ornament with the specified alignment and content.
+
 
 ---
 

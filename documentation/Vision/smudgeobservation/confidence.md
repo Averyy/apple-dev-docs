@@ -6,12 +6,11 @@
 The level of confidence in the observation’s accuracy of smudge detection on a lens.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,6 +24,8 @@ The framework normalizes this value to `[0, 1]`, where `1` represents the most c
 
 ## See Also
 
+- [var description: String](smudgeobservation/description.md)
+  A textual representation of this instance.
 - [enum RequestDescriptor](requestdescriptor.md)
   A type that describes the request and revision combination.
 

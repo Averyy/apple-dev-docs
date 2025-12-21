@@ -10,7 +10,7 @@ Request a user authorization to Account & Organizational Data Sharing apps and w
 
 ## See Also
 
-- [Revoke tokens](revoke-tokens.md)
+- [Token revocation](revoke-tokens.md)
   Invalidate the tokens and associated user authorizations for someone when they are no longer associated with your app.
 
 

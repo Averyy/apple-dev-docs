@@ -26,6 +26,11 @@ The system sorts the impressions based on the following criteria:
 - For impressions, in each click-through or view-through group, the system sorts them based on their timestamp.
 - The system considers a maximum of six impressions for any conversion.
 
+#### Bridge Conversions Between Skadnetwork and Adattributionkit
+
+When an app calls the update conversion values APIs in SKAdNetwork, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)), SKAdNetwork bridges the conversion values between the two frameworks by mirroring the call into AdAttributionNetwork by calling
+[`updateConversionValue(_:lockPostback:)`](Postback/updateConversionValue(_:lockPostback:).md).
+
 ## See Also
 
 - [Presenting ads in your app](presenting-ads-in-your-app.md)

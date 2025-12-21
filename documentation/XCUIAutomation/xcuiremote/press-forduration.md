@@ -25,7 +25,7 @@ func press(_ remoteButton: XCUIRemote.Button, forDuration duration: TimeInterval
 
 - [func press(XCUIRemote.Button)](xcuiremote/press(_:).md)
   Sends a momentary press of a button on a physical remote control.
-- [enum XCUIRemoteButton](xcuiremote/button.md)
+- [enum XCUIRemoteButton](xcuiremotebutton.md)
   A button on a physical remote control.
 
 

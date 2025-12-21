@@ -6,10 +6,10 @@
 A measurement of the electricity consumed by an HVAC system.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -43,7 +43,7 @@ Idle devices between heating or cooling cycles don’t generate events. The devi
 - [ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/electricalmeasurement.md)
   A description of the electricity consumed by a device.
 ### Getting the electrical load event information
-- [let id: UUID](electrichvacloadevent/id-swift.property.md)
+- [let id: UUID](electrichvacloadevent/id.md)
   The unique identifier of the electrical load event.
 - [let session: ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.property.md)
   The session information.
@@ -54,15 +54,6 @@ Idle devices between heating or cooling cycles don’t generate events. The devi
   The device’s unique stable identifier.
 - [let measurement: ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/measurement.md)
   The electricity consumption of a device.
-### Decoding
-- [init(from: any Decoder) throws](electrichvacloadevent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electrichvacloadevent/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [ElectricHVACLoadEvent.ID](electrichvacloadevent/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

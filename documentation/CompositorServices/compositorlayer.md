@@ -6,7 +6,7 @@
 A type that you use with an immersive space to display fully immersive content using Metal.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

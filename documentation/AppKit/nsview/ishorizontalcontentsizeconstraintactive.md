@@ -17,7 +17,7 @@ var isHorizontalContentSizeConstraintActive: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) lets Auto Layout optimize layout operations by ignoring the view’s intrinsic content size. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the system to take the view’s content size into account.
+Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) lets Auto Layout optimize layout operations by ignoring the view’s intrinsic content size. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes the system to take the view’s content size into account.
 
 ## See Also
 

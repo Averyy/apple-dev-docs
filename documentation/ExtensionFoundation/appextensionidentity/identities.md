@@ -33,12 +33,11 @@ struct Identities
 
 ## See Also
 
-- [var bundleIdentifier: String](appextensionidentity/bundleidentifier.md)
-  The bundle identifier for the extension.
-- [var extensionPointIdentifier: String](appextensionidentity/extensionpointidentifier.md)
-  A unique identifier for the extension point this extension targets.
-- [var localizedName: String](appextensionidentity/localizedname.md)
-  A localized, human-readable name for the extension.
+- [AppExtensionIdentity.Availability](appextensionidentity/availability.md)
+  An object that contains information about available extensions.
+- [static var availabilityUpdates: AsyncStream<AppExtensionIdentity.Availability>](appextensionidentity/availabilityupdates.md)
+- [static func matching(appExtensionPointIDs: String...) throws -> AppExtensionIdentity.Identities](appextensionidentity/matching(appextensionpointids:).md)
+  The asynchronous sequence of extension identities which target the specified extension point identifiers.
 
 
 ---

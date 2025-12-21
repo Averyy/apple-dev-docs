@@ -8,8 +8,8 @@ An atom that contains information for converting from media time to sample numbe
 ## Mentions
 
 - [3D media](3d_media.md)
-- [Tween sample description](tween_sample_description.md)
 - [Streaming media](streaming_media.md)
+- [Tween sample description](tween_sample_description.md)
 
 #### Overview
 

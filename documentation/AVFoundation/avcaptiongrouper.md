@@ -19,10 +19,10 @@ class AVCaptionGrouper
 
 ## Topics
 
-### Adding Captions
+### Adding captions
 - [func add(AVCaption)](avcaptiongrouper/add(_:).md)
   Adds a caption to the pending group.
-### Generating Captions Groups
+### Generating captions groups
 - [func flushAddedCaptions(upTo: CMTime) -> [AVCaptionGroup]](avcaptiongrouper/flushaddedcaptions(upto:).md)
   Creates caption groups for the captions you enqueue up to the time.
 

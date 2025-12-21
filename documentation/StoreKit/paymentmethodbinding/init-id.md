@@ -22,7 +22,7 @@ This method succeeds if the app is entitled to use this API, the `id` is valid a
 
 This method determines if the user is eligible, and requires that they’re signed in to the App Store.
 
-> ❗ **Important**:  This method may display a system prompt that asks users to sign in with their Apple ID. Call this method only after an explicit user action, like tapping or clicking a button.
+> ❗ **Important**:  This method may display a system prompt that asks users to sign in with their Apple Account. Call this method only after an explicit user action, like tapping or clicking a button.
 
 Note that it’s possible that the system determines a user isn’t eligible after it prompts for authentication.
 

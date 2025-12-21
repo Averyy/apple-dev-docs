@@ -3,16 +3,20 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Starts the sender - this needs to be called before starting to send frames, audio or venue descriptor information to receivers. After `start` is called, the application should observe the `isReadyForData` property to know when to start sending frames.
+Starts the sender.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 func start() async
 ```
+
+#### Discussion
+
+Call `start` before you start sending any frames, audio, or venue descriptor information to the receivers.
 
 
 ---

@@ -29,10 +29,10 @@ Because this output doesn’t return sample data, it ignores the value of the [`
 
 ## Topics
 
-### Creating a Sample Reference Output
+### Creating a sample reference output
 - [init(track: AVAssetTrack)](avassetreadersamplereferenceoutput/init(track:).md)
   Creates an object that supplies sample references.
-### Inspecting the Track
+### Inspecting the track
 - [var track: AVAssetTrack](avassetreadersamplereferenceoutput/track.md)
   The track from which the output reads sample references.
 
@@ -47,6 +47,8 @@ Because this output doesn’t return sample data, it ignores the value of the [`
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

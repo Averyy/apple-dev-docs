@@ -23,6 +23,8 @@ static let properties: CIImageOption
 
 To ensure that an image has no metadata properties, set the value of this key to `[NSNull null]`.
 
+For more information about image metadata properties, see [`Image Properties`](https://developer.apple.com/documentation/ImageIO/image-properties) and [`CGImageMetadata`](https://developer.apple.com/documentation/ImageIO/CGImageMetadata).
+
 ## See Also
 
 - [static let applyOrientationProperty: CIImageOption](ciimageoption/applyorientationproperty.md)

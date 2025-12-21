@@ -6,8 +6,8 @@
 Makes a descriptor that can create a network browser for a Wi-Fi Aware subscribe operation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

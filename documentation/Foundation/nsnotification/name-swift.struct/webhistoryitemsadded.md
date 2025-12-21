@@ -24,7 +24,7 @@ The notification object is the web history to which the items were added. The `u
 
 ## See Also
 
-- [func addItems([Any]!)](../webkit/webhistory/1521407-additems.md)
+- [func addItems([Any]!)](../WebKit/WebHistory/addItems(_:).md)
   Inserts or updates the specified items in the web history.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

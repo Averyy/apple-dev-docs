@@ -20,7 +20,7 @@ optional func writeSelection(to pboard: NSPasteboard, types: [NSPasteboard.Paste
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your implementation was able to write one or more types to the pasteboard; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if your implementation was able to write one or more types to the pasteboard; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

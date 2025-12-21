@@ -31,7 +31,7 @@ Subsequent calls to [`mathMode`](mtlcompileoptions/mathmode.md) or [`mathFloatin
 
 ## Topics
 
-### Supporting Types
+### Supporting types
 - [enum MTLMathMode](mtlmathmode.md)
   An indication of whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
 

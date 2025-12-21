@@ -71,7 +71,7 @@ By default, visionOS and tvOS app icons are constructed with three layers. This 
 
 ![Screenshot of an asset catalog in Xcode. In the outline view, an app icon stack with the name AppIcon is selected. The detail area shows image wells for each layer of the stack with labels.](https://docs-assets.developer.apple.com/published/f83d49f055d93a97e77b6e445dc0a9a6/configuring-your-app-icon-3%402x.png)
 
-Add images to each layer by dragging them from the Finder into the image wells in the detail area of the Asset Catalog in Xcode. For information on the use of layers, see App icons [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons) and [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons).
+Add images to each layer by dragging them from the Finder into the image wells in the detail area of the Asset Catalog in Xcode. For information on the use of layers, see App icons [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons#visionOS) and [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons#tvOS).
 
 > **Note**: You can use Parallax Previewer app or Parallax Exporter plug-in to create and preview Layer Source Representation (.lsr and .xlsr) files that you can import into your Asset Catalog in Xcode. Save your file in the LSR file format to import a tvOS icon into Xcode, and save in the XLSR file format to import a visionOS icon. Download these from the [`Apple Design Resources`](https://developer.apple.comhttps://developer.apple.com/design/resources) site.
 
@@ -94,9 +94,9 @@ If you distribute your app through the App Store, you must provide app icon imag
 If you don’t create your project from a template, or you want to change your default app icon set, specify which one to use in your target’s build settings.
 
 1. In the Project navigator, select the project and in the project editor, select the target.
-2. In the App Icons and Launch Images section of the General pane, choose the app icon set from the App Icons Source pop-up menu.
+2. In the App Icons and Launch Screen section of the General pane, choose the app icon set from the App Icons Source pop-up menu.
 
-![Screenshot of target settings with the General tab selected. The App Icons and Launch Images section shows a field with the name App Icons Source that lists the name of the app icon set to use from the asset catalog.](https://docs-assets.developer.apple.com/published/7f8ca1d3b817399313a5f211452716ca/configuring-your-app-icon-4%402x.png)
+![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name App Icons Source that lists the name of the app icon set to use from the asset catalog.](https://docs-assets.developer.apple.com/published/7f8ca1d3b817399313a5f211452716ca/configuring-your-app-icon-4%402x.png)
 
 If you don’t select the Include all app icon assets option, Xcode only includes the app icon set you specify in the App Icons Source pop-up menu when it builds your app. You might leave this option unselected if you want to use a different icon for the Debug and Release builds of your app without including the Debug icon in your Release app bundle. You can specialize the app icon for the Debug and Release configurations by modifying the Primary App Icon Set Name build setting in the Build Settings tab.
 
@@ -108,7 +108,7 @@ For information on configuring tests that use icons in App Store Connect, see [`
 
 - [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
   Use Icon Composer to stylize your app icon for different platforms and appearances.
-- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
+- [Configuring your app to use alternate app icons](configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Specifying your app’s launch screen](specifying-your-apps-launch-screen.md)
   Make your iOS app launch experience faster and more responsive by customizing a launch screen.

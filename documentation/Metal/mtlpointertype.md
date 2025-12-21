@@ -21,7 +21,7 @@ class MTLPointerType
 
 ## Topics
 
-### Describing the Pointer Elements
+### Describing the pointer elements
 - [var alignment: Int](mtlpointertype/alignment.md)
   The required byte alignment in memory for the element data.
 - [var dataSize: Int](mtlpointertype/datasize.md)
@@ -32,7 +32,7 @@ class MTLPointerType
   The function’s read/write access to the element data.
 - [var elementIsArgumentBuffer: Bool](mtlpointertype/elementisargumentbuffer.md)
   A Boolean value that indicates whether the element is an argument buffer.
-### Obtaining Details for Complex Pointer Elements
+### Obtaining details for complex pointer elements
 - [func elementArrayType() -> MTLArrayType?](mtlpointertype/elementarraytype.md)
   Provides a description of the underlying array when the pointer points to an array.
 - [func elementStructType() -> MTLStructType?](mtlpointertype/elementstructtype.md)
@@ -61,7 +61,7 @@ class MTLPointerType
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLTextureReferenceType](mtltexturereferencetype.md)
   A description of a texture.
 

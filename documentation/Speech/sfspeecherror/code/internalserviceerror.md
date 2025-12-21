@@ -20,14 +20,10 @@ case internalServiceError
 
 ## See Also
 
-- [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
-  The audio file could not be read.
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
-  The custom language model file was malformed.
-- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
-  The operation timed out.
-- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
-  The custom language model templates were malformed.
+- [static var insufficientResources: SFSpeechError.Code](sfspeecherror/code/insufficientresources.md)
+  There are not sufficient resources available on-device to process the incoming transcription request.
+- [static var moduleOutputFailed: SFSpeechError.Code](sfspeecherror/code/moduleoutputfailed.md)
+  The module’s result task failed.
 
 
 ---

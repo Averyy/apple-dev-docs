@@ -113,16 +113,11 @@ If there are multiple subjects in a video frame, direct the dock accessory to fo
   A representation of the active tracking session state.
 - [DockAccessory.TrackingStates](dockaccessory/trackingstates-swift.struct.md)
   An asynchronous sequence of tracking session states.
-### Operators
-- [static func == (DockAccessory, DockAccessory) -> Bool](dockaccessory/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var accessoryEvents: DockAccessory.AccessoryEvents](dockaccessory/accessoryevents-swift.property.md)
   Events from the accessory that signify button presses or common camera controls.
 - [var batteryStates: DockAccessory.BatteryStates](dockaccessory/batterystates-swift.property.md)
   Battery states from the accessory that indicate changes in battery charge or readiness
-- [var hashValue: Int](dockaccessory/hashvalue.md)
-  The hash value.
 - [var trackingStates: DockAccessory.TrackingStates](dockaccessory/trackingstates-swift.property.md)
   Provides an access to the asynchronous sequence of tracking session states
 ### Instance Methods
@@ -143,8 +138,6 @@ If there are multiple subjects in a video frame, direct the dock accessory to fo
   The charging state of an accessory battery
 - [DockAccessory.TrackedSubjectType](dockaccessory/trackedsubjecttype.md)
   The subjects that the dock can track.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/equatable-implementations.md)
 
 ## Relationships
 

@@ -139,7 +139,6 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [var textMatrix: CGAffineTransform](cgcontext/textmatrix.md)
   Returns the current text matrix.
 - [var textPosition: CGPoint](cgcontext/textposition.md)
-  Returns the location at which text is drawn.
 - [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](cgcontext/selectfont(name:size:textencoding:).md)
   Sets the font and font size in a graphics context.
 - [func setCharacterSpacing(CGFloat)](cgcontext/setcharacterspacing(_:).md)

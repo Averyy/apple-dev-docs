@@ -62,6 +62,7 @@ Use this class to perform registration and authentication tasks, and to repair r
 ### Instance Properties
 - [var extensionData: [AnyHashable : Any]](asauthorizationproviderextensionloginmanager/extensiondata.md)
 - [var userLoginConfiguration: ASAuthorizationProviderExtensionUserLoginConfiguration?](asauthorizationproviderextensionloginmanager/userloginconfiguration.md)
+- [var authenticationMethod: ASAuthorizationProviderExtensionAuthenticationMethod](asauthorizationproviderextensionloginmanager/authenticationmethod.md)
 ### Instance Methods
 - [func decryptionKeysNeedRepair()](asauthorizationproviderextensionloginmanager/decryptionkeysneedrepair.md)
 - [func resetDeviceKeys()](asauthorizationproviderextensionloginmanager/resetdevicekeys.md)
@@ -87,9 +88,9 @@ Use this class to perform registration and authentication tasks, and to repair r
 ## See Also
 
 - [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for platform SSO.
+  Configure Device Management to support device and user registration for Platform SSO.
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
-  Specify how platform SSO authenticates with the identity provider.
+  Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
 

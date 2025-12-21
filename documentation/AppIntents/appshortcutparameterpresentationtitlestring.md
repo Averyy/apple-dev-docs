@@ -11,7 +11,6 @@
 - tvOS 17.0+
 - visionOS ?+
 - watchOS 10.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
@@ -21,25 +20,8 @@ struct AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, Par
 
 ## Topics
 
-### Structures
-- [AppShortcutParameterPresentationTitleString.StringInterpolation](appshortcutparameterpresentationtitlestring/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
 ### Initializers
 - [init(String)](appshortcutparameterpresentationtitlestring/init(_:).md)
-- [init(stringInterpolation: AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, ParameterKeyPath>.StringInterpolation)](appshortcutparameterpresentationtitlestring/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: String)](appshortcutparameterpresentationtitlestring/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [AppShortcutParameterPresentationTitleString.ExtendedGraphemeClusterLiteralType](appshortcutparameterpresentationtitlestring/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [AppShortcutParameterPresentationTitleString.StringLiteralType](appshortcutparameterpresentationtitlestring/stringliteraltype.md)
-  A type that represents a string literal.
-- [AppShortcutParameterPresentationTitleString.UnicodeScalarLiteralType](appshortcutparameterpresentationtitlestring/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](appshortcutparameterpresentationtitlestring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](appshortcutparameterpresentationtitlestring/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

@@ -22,11 +22,11 @@ var locksAmbientWithDiffuse: Bool { get set }
 
 #### Discussion
 
-When modeling real-world lighting, a surface is typically considered to have a single “base” color or texture that is visible under both ambient and diffuse light. When this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), SceneKit does not have this limitation: you may use a material’s [`diffuse`](scnmaterial/diffuse.md) property to provide a color or texture that is visible under direct lighting, and its [`ambient`](scnmaterial/ambient.md) property to provide a different color or texture for areas not directly illuminated.
+When modeling real-world lighting, a surface is typically considered to have a single “base” color or texture that is visible under both ambient and diffuse light. When this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), SceneKit does not have this limitation: you may use a material’s [`diffuse`](scnmaterial/diffuse.md) property to provide a color or texture that is visible under direct lighting, and its [`ambient`](scnmaterial/ambient.md) property to provide a different color or texture for areas not directly illuminated.
 
-When this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), or when using the [`physicallyBased`](scnmaterial/lightingmodel-swift.struct/physicallybased.md) shading mode, SceneKit uses the [`diffuse`](scnmaterial/diffuse.md) property for ambient lighting, ignoring the [`ambient`](scnmaterial/ambient.md) property and ensuring that the material responds identically to both ambient and diffuse light.
+When this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), or when using the [`physicallyBased`](scnmaterial/lightingmodel-swift.struct/physicallybased.md) shading mode, SceneKit uses the [`diffuse`](scnmaterial/diffuse.md) property for ambient lighting, ignoring the [`ambient`](scnmaterial/ambient.md) property and ensuring that the material responds identically to both ambient and diffuse light.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true) for new apps on all platforms. (In OS X v10.9 and earlier, the default value is [`false`](https://developer.apple.com/documentation/swift/false).)
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true) for new apps on all platforms. (In OS X v10.9 and earlier, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).)
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md). Animating this property fades between the results of rendering with each state.
 

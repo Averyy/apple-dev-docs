@@ -32,7 +32,7 @@ To use a dynamic item behavior with a dynamic item, perform these two steps:
 
 The coordinate system that pertains to a dynamic item behavior, and the types of dynamic items you can use with the behavior, depend on how you initialized the associated animator. For details, see [`UIDynamicAnimator`](uidynamicanimator.md).
 
-You can disable rotation for a dynamic item behavior’s items by returning [`false`](https://developer.apple.com/documentation/swift/false) from the [`allowsRotation`](uidynamicitembehavior/allowsrotation.md) property. To configure interaction among the behavior’s items, use the [`elasticity`](uidynamicitembehavior/elasticity.md) and [`friction`](uidynamicitembehavior/friction.md) properties.
+You can disable rotation for a dynamic item behavior’s items by returning [`false`](https://developer.apple.com/documentation/Swift/false) from the [`allowsRotation`](uidynamicitembehavior/allowsrotation.md) property. To configure interaction among the behavior’s items, use the [`elasticity`](uidynamicitembehavior/elasticity.md) and [`friction`](uidynamicitembehavior/friction.md) properties.
 
 You can include a dynamic item behavior in a custom, composite behavior by starting with a [`UIDynamicBehavior`](uidynamicbehavior.md) object and adding a dynamic item behavior with the [`addChildBehavior(_:)`](uidynamicbehavior/addchildbehavior(_:).md) method. If you want to influence a dynamic item behavior at each step of a dynamic animation, implement the inherited [`action`](uidynamicbehavior/action.md) method.
 

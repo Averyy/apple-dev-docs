@@ -16,7 +16,7 @@ static let createsSortDescriptor: NSBindingOption
 
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), then the table column does not allow sorting.
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), then the table column does not allow sorting.
 
 ## See Also
 

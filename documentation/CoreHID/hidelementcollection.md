@@ -38,10 +38,6 @@ See the HID specification for more details: [`https://www.usb.org/hid`](https://
 ### Enumerations
 - [HIDElementCollection.CollectionType](hidelementcollection/collectiontype.md)
   Types of [`HIDElementCollection`](hidelementcollection.md)s.
-### Default Implementations
-- [CustomStringConvertible Implementations](hidelementcollection/customstringconvertible-implementations.md)
-- [Equatable Implementations](hidelementcollection/equatable-implementations.md)
-- [Hashable Implementations](hidelementcollection/hashable-implementations.md)
 
 ## Relationships
 

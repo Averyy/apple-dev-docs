@@ -241,7 +241,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 
 ## See Also
 
-- [Autosizing Views for Localization in iOS](../xcode/autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.

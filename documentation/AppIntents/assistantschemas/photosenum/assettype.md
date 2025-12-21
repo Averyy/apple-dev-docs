@@ -29,7 +29,7 @@ var assetType: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.photos.assetType` schema:
 
 ```swift
-@AssistantEnum(schema: .photos.assetType)
+@AppEnum(schema: .photos.assetType)
 enum PhotoAssetType: AppEnum {
     case photo
     case video

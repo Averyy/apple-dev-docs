@@ -20,13 +20,13 @@ var prefersStatusBarHidden: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the status bar should be hidden or [`false`](https://developer.apple.com/documentation/swift/false) if it should be shown.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the status bar should be hidden or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be shown.
 
 #### Discussion
 
 If you change the return value for this method, call the [`setNeedsStatusBarAppearanceUpdate()`](uiviewcontroller/setneedsstatusbarappearanceupdate().md) method. To specify that a child view controller should control preferred status bar hidden/unhidden state, implement the [`childForStatusBarHidden`](uiviewcontroller/childforstatusbarhidden.md) method.
 
-By default, this method returns [`false`](https://developer.apple.com/documentation/swift/false) with one exception. For apps linked against iOS 8 or later, this method returns [`true`](https://developer.apple.com/documentation/swift/true) if the view controller is in a vertically compact environment.
+By default, this method returns [`false`](https://developer.apple.com/documentation/Swift/false) with one exception. For apps linked against iOS 8 or later, this method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the view controller is in a vertically compact environment.
 
 ## See Also
 

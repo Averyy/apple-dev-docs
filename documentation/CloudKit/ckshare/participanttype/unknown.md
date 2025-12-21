@@ -5,15 +5,6 @@
 
 An unknown role.
 
-**Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-
 ## Declaration
 
 ```swift

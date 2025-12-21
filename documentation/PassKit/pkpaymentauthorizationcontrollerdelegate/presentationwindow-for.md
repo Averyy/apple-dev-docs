@@ -1,8 +1,7 @@
 # presentationWindow(for:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Returns the window in which to present a payment authorization sheet.
 

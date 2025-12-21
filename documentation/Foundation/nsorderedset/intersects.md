@@ -22,7 +22,7 @@ func intersects(_ other: NSOrderedSet) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if at least one object in the receiving ordered set is also present in `other`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if at least one object in the receiving ordered set is also present in `other`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

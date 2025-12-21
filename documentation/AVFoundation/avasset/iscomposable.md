@@ -21,7 +21,7 @@ var isComposable: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) you can use the asset as a segment within an [`AVCompositionTrack`](avcompositiontrack.md) object.
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) you can use the asset as a segment within an [`AVCompositionTrack`](avcompositiontrack.md) object.
 
 
 ---

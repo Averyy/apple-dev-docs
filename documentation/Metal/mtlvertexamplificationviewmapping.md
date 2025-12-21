@@ -21,16 +21,16 @@ struct MTLVertexAmplificationViewMapping
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 ## Topics
 
-### Creating a View Mapping
+### Creating a view mapping
 - [init()](mtlvertexamplificationviewmapping/init.md)
   Initializes a default view mapping.
 - [init(viewportArrayIndexOffset: UInt32, renderTargetArrayIndexOffset: UInt32)](mtlvertexamplificationviewmapping/init(viewportarrayindexoffset:rendertargetarrayindexoffset:).md)
   Initializes a new view mapping.
-### Specifying Mapping Offsets
+### Specifying mapping offsets
 - [var renderTargetArrayIndexOffset: UInt32](mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md)
   An offset into the list of render targets.
 - [var viewportArrayIndexOffset: UInt32](mtlvertexamplificationviewmapping/viewportarrayindexoffset.md)

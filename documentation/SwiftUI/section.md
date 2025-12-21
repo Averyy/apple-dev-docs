@@ -23,9 +23,9 @@ struct Section<Parent, Content, Footer>
 ## Mentions
 
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
-- [Suggesting search terms](suggesting-search-terms.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Suggesting search terms](suggesting-search-terms.md)
 
 #### Overview
 

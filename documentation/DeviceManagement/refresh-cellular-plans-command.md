@@ -11,8 +11,6 @@ Query a carrier URL for active eSIM cellular-plan profiles on a device.
 
 #### Discussion
 
-This command is supported on iPad with iPadOS 13 and later and on iPhone with iOS 14 and later.
-
 ##### Error Codes
 
 An error response uses one of the following error codes:

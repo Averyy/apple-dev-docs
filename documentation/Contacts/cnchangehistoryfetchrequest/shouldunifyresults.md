@@ -21,7 +21,7 @@ var shouldUnifyResults: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the fetch returns unified contact history. Otherwise the system returns individual contact history. A unified contact is the aggregation of properties from a set of linked individual contacts. If an individual contact is not linked then the unified contact is simply that individual contact.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the fetch returns unified contact history. Otherwise the system returns individual contact history. A unified contact is the aggregation of properties from a set of linked individual contacts. If an individual contact is not linked then the unified contact is simply that individual contact.
 
 ## See Also
 

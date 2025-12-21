@@ -6,11 +6,11 @@
 Creates generation options that control token sampling behavior.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ init(sampling: GenerationOptions.SamplingMode? = nil, temperature: Double? = nil
 ## Parameters
 
 - `sampling`: A strategy to use for sampling from a distribution.
-- `temperature`: Increasing temperature makes it possible for the model to produce less likely   responses. Must be between 0 and 2, inclusive.
+- `temperature`: Increasing temperature makes it possible for the model to produce less likely   responses. Must be between   and  , inclusive.
 - `maximumResponseTokens`: The maximum number of tokens the model is allowed   to produce before being artificially halted. Must be positive.
 
 

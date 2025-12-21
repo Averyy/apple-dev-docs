@@ -21,7 +21,7 @@ var shouldMaximizeConcurrentCompilation: Bool { get set }
 
 #### Discussion
 
-The property’s default value is [`false`](https://developer.apple.com/documentation/swift/false). You can retrieve the number of concurrent CPU threads the device is currently using by checking the [`maximumConcurrentCompilationTaskCount`](mtldevice/maximumconcurrentcompilationtaskcount.md) property.
+The property’s default value is [`false`](https://developer.apple.com/documentation/Swift/false). You can retrieve the number of concurrent CPU threads the device is currently using by checking the [`maximumConcurrentCompilationTaskCount`](mtldevice/maximumconcurrentcompilationtaskcount.md) property.
 
 > **Note**: The number of additional CPU threads automatically scales with the system’s hardware capabilities.
 

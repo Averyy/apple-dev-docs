@@ -22,7 +22,7 @@ func build(accelerationStructure: any MTLAccelerationStructure, descriptor: MTLA
 
 #### Discussion
 
-The destination acceleration structure and the scratch buffer must have enough space in memory to hold the acceleration structure data. Call the [`accelerationStructureSizes(descriptor:)`](mtldevice/accelerationstructuresizes(descriptor:).md) method on the Metal device object to get the required space.
+The destination acceleration structure and the scratch buffer needs enough space in memory to hold the acceleration structure data. Call the [`accelerationStructureSizes(descriptor:)`](mtldevice/accelerationstructuresizes(descriptor:).md) method on the Metal device object to get the required space.
 
 The resulting acceleration structure contains references to any other acceleration structures referenced by the descriptor, but not any other underlying buffer data. As part of creating the structure, the GPU overwrites data in the scratch buffer.
 

@@ -17,7 +17,7 @@ optional func textView(_ textView: NSTextView, shouldSelectCandidateAt index: In
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the framework selects the text.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the framework selects the text.
 
 ## Parameters
 

@@ -21,7 +21,7 @@ var hasMIDIOutput: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the component has MIDI output; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) if the component has MIDI output; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

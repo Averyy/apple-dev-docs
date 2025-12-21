@@ -98,6 +98,11 @@ Review and change your choices by clicking the Charge, Prune, Flatten button at 
 
 Long-running operations on the main thread can cause freezes and hitches in your app’s UI, which a person perceives as your app being unresponsive. If the processor trace shows high levels of processor activity in your app’s main thread, identify opportunities to move processing to the background using Swift concurrency or dispatch queues. For more information, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md).
 
+## See Also
+
+- [Addressing CPU bottlenecks](addressing-cpu-bottlenecks.md)
+  Locate and fix pipeline stalls, cache misses, and other performance issues.
+
 
 ---
 

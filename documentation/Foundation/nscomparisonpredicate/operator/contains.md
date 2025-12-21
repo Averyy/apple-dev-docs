@@ -22,7 +22,7 @@ case contains
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if `[lhs contains rhs]`; the left hand side must be an `NSExpression` object that evaluates to a collection
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `[lhs contains rhs]`; the left hand side must be an `NSExpression` object that evaluates to a collection
 
 ## See Also
 
@@ -52,10 +52,6 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if `[lhs 
   A predicate that uses a custom selector that takes a single argument and returns a `BOOL` value.
 - [NSComparisonPredicate.Operator.between](nscomparisonpredicate/operator/between.md)
   A predicate to determine if the left hand side lies at or between bounds specified by the right hand side.
-- [NSComparisonPredicate.Operator.lessThan](nscomparisonpredicate/operator/lessthan.md)
-  A less-than predicate.
-- [NSComparisonPredicate.Operator.lessThanOrEqualTo](nscomparisonpredicate/operator/lessthanorequalto.md)
-  A less-than-or-equal-to predicate.
 
 
 ---

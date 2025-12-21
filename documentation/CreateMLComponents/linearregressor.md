@@ -31,10 +31,10 @@ struct LinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Bina
 - [var configuration: LinearRegressor<Scalar>.Configuration](linearregressor/configuration-swift.property.md)
   The linear regressor configuration.
 ### Encoding and decoding
-- [func encode(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](linearregressor/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>](linearregressor/decode(from:).md)
-  Decodes a previously fitted transformer.
+- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](linearregressor/encodewithoptimizer(_:to:).md)
+  Encodes the transformer and optimizer to an encoder.
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>](linearregressor/decodewithoptimizer(from:).md)
+  Reads the encoded transformer and optimizer with a decoder.
 ### Fitting
 - [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:eventhandler:).md)
   Fits a linear regressor model to a sequence of examples.
@@ -45,7 +45,6 @@ struct LinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Bina
 - [LinearRegressor.Transformer](linearregressor/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [SupervisedEstimator Implementations](linearregressor/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](linearregressor/updatablesupervisedestimator-implementations.md)
 
 ## Relationships

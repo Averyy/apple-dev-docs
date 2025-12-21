@@ -28,12 +28,6 @@ case full
   A style that uses shortened units, such as “2 mo. ago”.
 - [RelativeDateTimeFormatter.UnitsStyle.spellOut](relativedatetimeformatter/unitsstyle-swift.enum/spellout.md)
   A style that spells out units such as “two months ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.abbreviated](relativedatetimeformatter/unitsstyle-swift.enum/abbreviated.md)
-  A style that uses abbreviated units, such as “2 mo. ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.short](relativedatetimeformatter/unitsstyle-swift.enum/short.md)
-  A style that uses shortened units, such as “2 mo. ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.spellOut](relativedatetimeformatter/unitsstyle-swift.enum/spellout.md)
-  A style that spells out units such as “two months ago”.
 
 
 ---

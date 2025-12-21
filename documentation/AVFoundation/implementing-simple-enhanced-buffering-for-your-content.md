@@ -41,7 +41,7 @@ player.play()
 
 - [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
   Configure your app for flexible enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
-- [Integrating AirPlay for Long-Form Video Apps](integrating-airplay-for-long-form-video-apps.md)
+- [Integrating AirPlay for long-form video apps](integrating-airplay-for-long-form-video-apps.md)
   Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 
 

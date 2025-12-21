@@ -22,7 +22,7 @@ When you design your app’s interface, you position views and other interface e
 - [class UIStackView](uistackview.md)
   A streamlined interface for laying out a collection of views in either a column or a row.
 ### Localization
-- [Autosizing Views for Localization in iOS](../xcode/autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 ### Constraints
 - [Positioning content within layout margins](positioning-content-within-layout-margins.md)

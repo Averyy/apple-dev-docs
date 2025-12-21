@@ -40,6 +40,7 @@ You can use the `/search` path component to search for specific kinds of locatio
 
 | Parameter | Description |
 | --- | --- |
+| `center` | Searches the map starting at a specific center point described by a comma-separated coordinate pair, such as `40.773957,-73.970974`. |
 | `query` | A search string. This parameter can be a general point of interest (POI) such as `pizza`, or a specific location such as an address string, such as `1000 Fifth Avenue, NY, NY`, or a city name such as `San Francisco`. For a list of POIs, see [`MKPointOfInterestCategory`](MKPointOfInterestCategory.md). |
 | `span` | A span that specifies the size of the area around the center point of the search in degrees of longitude and latitude, for example `0.05,0.05` which is approximately 1 km for these examples. For more information on what these distances mean at different latitudes, see [`init(latitudeDelta:longitudeDelta:)`](MKCoordinateSpan/init(latitudeDelta:longitudeDelta:).md). |
 
@@ -138,6 +139,13 @@ You can report a problem using the same kinds of location descriptors the other 
 - Report a problem at Place ID `IBE1F65094A7A13B1`, the San Francisco Ferry Building — [`https://maps.apple.com/report-a-problem?place-id=IBE1F65094A7A13B1`](https://developer.apple.comhttps://maps.apple.com/report-a-problem?place-id=IBE1F65094A7A13B1)
 
 When you open the `report-a-problem` URL, Maps opens a problem report sheet to ask a person for more detail on the nature of the problem, which Apple uses to investigate the report.
+
+#### Retrieve a Full Maps Url From a Shortened Url
+
+When people share a map URL from Maps, this system creates a shortened version that’s more efficient to send in the app, for example, Messages or Mail. If you need to recover the full URL, follow these steps:
+
+1. Check to see if the URL is a shortened Apple Maps URL; the host portion of an Apple shortened Maps URLs always end in `maps.apple` (no `.com`).
+2. Attempt to access the URL programmatically, the full Apple Maps URL is accessible from the `HTTP 301` redirect response that the `maps.apple` server returns.
 
 ## See Also
 

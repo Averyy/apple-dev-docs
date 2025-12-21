@@ -20,6 +20,19 @@ The original features.
 let features: MLShapedArray<Scalar>
 ```
 
+## See Also
+
+- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
+  The original annotations.
+- [let batchSize: Int](timeseriesforecasterbatches/batchsize.md)
+  The batch size.
+- [let forecastWindowSize: Int](timeseriesforecasterbatches/forecastwindowsize.md)
+  The prediction sample count.
+- [let inputWindowSize: Int](timeseriesforecasterbatches/inputwindowsize.md)
+  The input sample count.
+- [var shufflesBatches: Bool](timeseriesforecasterbatches/shufflesbatches.md)
+  A Boolean value indicating whether to shuffle the batches.
+
 
 ---
 

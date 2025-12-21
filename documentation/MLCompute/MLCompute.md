@@ -14,7 +14,7 @@ Accelerate training and validation of neural networks across the CPU and one or 
 
 #### Overview
 
-ML Compute uses high performance [`BNNS`](https://developer.apple.com/documentation/Accelerate/BNNS) primitives from the Accelerate framework for the CPU, and [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) for the GPU.
+ML Compute uses high performance [`BNNS`](https://developer.apple.com/documentation/Accelerate/BNNS) primitives from the Accelerate framework for the CPU, and [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders) for the GPU.
 
 ## Topics
 

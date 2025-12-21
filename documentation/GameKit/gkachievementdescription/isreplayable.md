@@ -22,7 +22,7 @@ var isReplayable: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), players can earn the achievement only once. After the player earns the achievement, Game Center ignores any further progress you report for it. If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the player earns the achievement each time you report it.
+If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), players can earn the achievement only once. After the player earns the achievement, Game Center ignores any further progress you report for it. If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the player earns the achievement each time you report it.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 A type used to convert coordinates to/from coordinate spaces in the hierarchy of the associated SwiftUI view.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

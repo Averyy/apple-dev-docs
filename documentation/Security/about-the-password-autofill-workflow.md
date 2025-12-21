@@ -36,7 +36,7 @@ New passwords. The system suggests a strong, unique password in apps that have a
 
 If your website has specific password rules, you can define valid password formats by setting the text view’s [`passwordRules`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/passwordRules) property. This property takes a [`UITextInputPasswordRules`](https://developer.apple.com/documentation/UIKit/UITextInputPasswordRules) objects, which contains a rules descriptor string.
 
-In iOS 12, the [`passwordRules`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/passwordRules) property is supported only on [`UITextField`](https://developer.apple.com/documentation/UIKit/UITextField) objects, and the text field’s [`isSecureTextEntry`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/isSecureTextEntry) property must be set to [`true`](https://developer.apple.com/documentation/swift/true). The API is ignored if it is adopted on any other views.
+In iOS 12, the [`passwordRules`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/passwordRules) property is supported only on [`UITextField`](https://developer.apple.com/documentation/UIKit/UITextField) objects, and the text field’s [`isSecureTextEntry`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/isSecureTextEntry) property must be set to [`true`](https://developer.apple.com/documentation/Swift/true). The API is ignored if it is adopted on any other views.
 
 For more information on the format of rules descriptors, see [`Customizing Password AutoFill rules`](customizing-password-autofill-rules.md).
 

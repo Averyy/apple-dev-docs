@@ -16,7 +16,7 @@ To retrieve format-specific collections of metadata, like [`iTunesMetadata`](avm
 
 ```swift
 // A local or remote asset to inspect.
-let asset = AVAsset(url: url)
+let asset = AVURLAsset(url: url)
 for format in try await asset.load(.availableMetadataFormats) {
     let metadata = try await asset.loadMetadata(for: format)
     // Process the format-specific metadata collection.

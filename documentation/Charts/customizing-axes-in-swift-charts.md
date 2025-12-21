@@ -139,6 +139,7 @@ Use the [`chartXAxis(content:)`](https://developer.apple.com/documentation/Swift
                 AxisValueLabel(format: .dateTime.hour())
             default:
                 AxisValueLabel(format: .dateTime.hour(.defaultDigits(amPM: .omitted)))
+            }
         }
         
         AxisGridLine()

@@ -10,7 +10,7 @@ A type collecting the relevances for a widget kind.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration
@@ -44,9 +44,15 @@ Make sure to return the relevances ordered by priority because the system might 
 - [protocol RelevanceEntry](relevanceentry.md)
   A type that specifies the information to render a widget at a specific relevance configuration.
 - [struct WidgetRelevanceAttribute](widgetrelevanceattribute.md)
-  A type describing when a specific widget could be relevant.
+  A type that describes when a specific widget could be relevant.
 - [struct WidgetRelevanceGroup](widgetrelevancegroup.md)
   A type for configuring widget behavior in the watchOS Smart Stack.
+- [struct AppIntentRecommendation](appintentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
+- [struct IntentConfiguration](intentconfiguration.md)
+  An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
+- [struct IntentRecommendation](intentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
 
 
 ---

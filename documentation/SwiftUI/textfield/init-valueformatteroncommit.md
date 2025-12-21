@@ -31,7 +31,7 @@ init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, onCommit: @escap
 ## See Also
 
 - [init(_:value:formatter:onEditingChanged:onCommit:)](textfield/init(_:value:formatter:oneditingchanged:oncommit:).md)
-  Creates an instance which binds over an arbitrary type, `T`.
+  Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:onEditingChanged:)](textfield/init(_:value:formatter:oneditingchanged:).md)
   Create an instance which binds over an arbitrary type, `V`.
 

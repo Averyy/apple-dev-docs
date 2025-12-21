@@ -21,7 +21,7 @@ let kVTPixelTransferPropertyKey_DestinationCleanAperture: CFString
 
 #### Discussion
 
-The value of this property is a doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum object with same keys as used in the [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey) dictionary.
+The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object with same keys as used in the [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey) dictionary.
 
 This property is ignored in [`kVTScalingMode_Normal`](kvtscalingmode_normal.md).  This property defaults to `NULL`, meaning the clean aperture is the full width and height.
 

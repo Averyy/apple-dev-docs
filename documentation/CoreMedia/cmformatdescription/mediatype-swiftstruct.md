@@ -58,7 +58,7 @@ struct MediaType
 - [CMFormatDescription.Extensions](cmformatdescription/extensions-swift.struct.md)
   A type that describes format description extensions.
 - [CMFormatDescription.ParameterSetCollection](cmformatdescription/parametersetcollection.md)
-  A type that describes format description parameter sets.
+  Collection of parameter sets in a video format description.
 
 
 ---

@@ -31,6 +31,10 @@ A custom compositor calls this method to indicate that the attempt to compose a 
 
 - [func finish(withComposedVideoFrame: CVPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedvideoframe:).md)
   Finishes the request to compose the frame.
+- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedpixelbuffer:).md)
+  The method that the custom compositor calls when composition succeeds.
+- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](avasynchronousvideocompositionrequest/finish(withcomposedtaggedbuffers:).md)
+  The method that the custom compositor calls when composition succeeds.
 - [func finishCancelledRequest()](avasynchronousvideocompositionrequest/finishcancelledrequest.md)
   Cancels the request to compose a video frame.
 

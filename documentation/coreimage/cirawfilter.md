@@ -125,6 +125,9 @@ You can also query this object to find out about the supported camera models, de
   A value that indicates the amount to subtract from the shadows in the image.
 - [var sharpnessAmount: Float](cirawfilter/sharpnessamount.md)
   A value that indicates the amount of sharpness to apply to the edges of the image.
+### Instance Properties
+- [var isHighlightRecoveryEnabled: Bool](cirawfilter/ishighlightrecoveryenabled.md)
+- [var isHighlightRecoverySupported: Bool](cirawfilter/ishighlightrecoverysupported.md)
 
 ## Relationships
 
@@ -146,9 +149,9 @@ You can also query this object to find out about the supported camera models, de
 - [class CIFilter](cifilter-swift.class.md)
   An image processor that produces an image by manipulating one or more input images or by generating new image data.
 - [class CIColor](cicolor.md)
-  The component values defining a color in a specific color space.
+  The Core Image class that defines a color object.
 - [class CIVector](civector.md)
-  A container for coordinate values, direction vectors, matrices, and other non-scalar values, typically used in Core Image for filter parameters.
+  The Core Image class that defines a vector object.
 
 
 ---

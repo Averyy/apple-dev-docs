@@ -62,6 +62,17 @@ While you provide a configuration instance when creating a session on iOS, iPadO
 ### Allowing handoff
 - [var allowsActivityContinuation: Bool](aeassessmentconfiguration/allowsactivitycontinuation.md)
   A Boolean value that indicates whether to allow Handoff during an assessment.
+### Instance Properties
+- [var allowsAccessibilityKeyboard: Bool](aeassessmentconfiguration/allowsaccessibilitykeyboard.md)
+  A Boolean value that indicates whether to allow alternative input methods in the Accessibility Keyboard during an assessment.
+- [var allowsAccessibilityLiveCaptions: Bool](aeassessmentconfiguration/allowsaccessibilitylivecaptions.md)
+  A Boolean value that indicates whether to allow Live Captions during an assessment.
+- [var allowsAccessibilityReader: Bool](aeassessmentconfiguration/allowsaccessibilityreader.md)
+  A Boolean value that indicates whether to allow the Accessibility Reader during an assessment.
+- [var allowsAccessibilityTypingFeedback: Bool](aeassessmentconfiguration/allowsaccessibilitytypingfeedback.md)
+  A Boolean value that indicates whether to allow accessibility typing feedback during an assessment.
+- [var allowsScreenshots: Bool](aeassessmentconfiguration/allowsscreenshots.md)
+  A Boolean value that indicates whether to allow screenshots copied to the clipboard during an assessment.
 
 ## Relationships
 

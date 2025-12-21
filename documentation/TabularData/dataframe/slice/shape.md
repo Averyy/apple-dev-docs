@@ -27,8 +27,6 @@ var shape: (rows: Int, columns: Int) { get }
 
 ## See Also
 
-- [var isEmpty: Bool](dataframe/slice/isempty.md)
-  A Boolean that indicates whether the data frame type is empty.
 - [var columns: [AnyColumnSlice]](dataframe/slice/columns.md)
   The entire slice as a collection of columns.
 - [var rows: DataFrame.Rows](dataframe/slice/rows.md)

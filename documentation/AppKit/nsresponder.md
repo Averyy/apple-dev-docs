@@ -27,7 +27,7 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 
 [`NSApplication`](nsapplication.md) displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the [`NSErrorRecoveryAttempting`](https://developer.apple.com/documentation/Foundation/nserrorrecoveryattempting) informal protocol.
 
-> **Note**:  In macOS 10.15 and later, [`NSResponder`](nsresponder.md) and its descendants call the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue.
+> **Note**:  In macOS 10.15 and later, [`NSResponder`](nsresponder.md) and its descendants call the [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue.
 
 ## Topics
 

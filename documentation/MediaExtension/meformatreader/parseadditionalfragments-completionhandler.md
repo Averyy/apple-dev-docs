@@ -16,7 +16,7 @@ optional func parseAdditionalFragments() async throws -> MEFormatReaderParseAddi
 
 #### Discussion
 
-This method additional fragments of the media asset if they exist. Media asset formats that don’t support incremental fragments don’t need implement this method. Create the [`MEFormatReader`](meformatreader.md) object with the [`MEFormatReaderInstantiationOptions`](meformatreaderinstantiationoptions.md) property [`allowIncrementalFragmentParsing`](meformatreaderinstantiationoptions/allowincrementalfragmentparsing.md) set to [`true`](https://developer.apple.com/documentation/swift/true). This method does nothing if the value for [`MEFileInfo.FragmentsStatus`](mefileinfo/fragmentsstatus-swift.enum.md) is [`MEFileInfo.FragmentsStatus.containsFragments`](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md). Once this method returns an error, additional calls fail.
+This method additional fragments of the media asset if they exist. Media asset formats that don’t support incremental fragments don’t need implement this method. Create the [`MEFormatReader`](meformatreader.md) object with the [`MEFormatReaderInstantiationOptions`](meformatreaderinstantiationoptions.md) property [`allowIncrementalFragmentParsing`](meformatreaderinstantiationoptions/allowincrementalfragmentparsing.md) set to [`true`](https://developer.apple.com/documentation/Swift/true). This method does nothing if the value for [`MEFileInfo.FragmentsStatus`](mefileinfo/fragmentsstatus-swift.enum.md) is [`MEFileInfo.FragmentsStatus.containsFragments`](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md). Once this method returns an error, additional calls fail.
 
 ## Parameters
 

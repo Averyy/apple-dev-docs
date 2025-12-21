@@ -3,6 +3,8 @@
 **Framework**: Core Media  
 **Kind**: struct
 
+A sequence of `CMBuffer`s.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

@@ -17,7 +17,7 @@ var allowsDuplicatesInToolbar: Bool { get }
 
 #### Discussion
 
-If the value in this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar allows someone to drag more than one copy of the toolbar item from the customization palette. If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the toolbar prevents someone from dragging more than one copy of the item from the customization palette.
+If the value in this property is [`true`](https://developer.apple.com/documentation/Swift/true), the toolbar allows someone to drag more than one copy of the toolbar item from the customization palette. If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the toolbar prevents someone from dragging more than one copy of the item from the customization palette.
 
 By default, if an item with the same identifier is already in the toolbar, dragging it in again will effectively move it to the new position.
 

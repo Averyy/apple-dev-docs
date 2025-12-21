@@ -30,6 +30,13 @@ let y = x[..., 0] // or x[.fillAll, 0]
 y.shape // is [1, 3, 28]
 ```
 
+## See Also
+
+- [static var newAxis: any MLTensorRangeExpression](mltensorrangeexpression/newaxis.md)
+  Expand the tensor at the specified dimension.
+- [static var squeezeAxis: any MLTensorRangeExpression](mltensorrangeexpression/squeezeaxis.md)
+  Squeeze the tensor at the specified dimension.
+
 
 ---
 

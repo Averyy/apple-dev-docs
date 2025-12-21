@@ -22,15 +22,20 @@ struct Merge4<A, B, C, D> where A : Publisher, B : Publisher, C : Publisher, D :
 
 ## Topics
 
-### Creating a Merge-Four Publisher
+### Creating a merge-four publisher
 - [init(A, B, C, D)](publishers/merge4/init(_:_:_:_:).md)
   Creates a publisher created by applying the merge function to four upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge5<A, B, C, D, P>](publishers/merge4/merge(with:).md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge6<A, B, C, D, Z, Y>](publishers/merge4/merge(with:_:).md)
+- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge7<A, B, C, D, Z, Y, X>](publishers/merge4/merge(with:_:_:).md)
+- [func merge<Z, Y, X, W>(with: Z, Y, X, W) -> Publishers.Merge8<A, B, C, D, Z, Y, X, W>](publishers/merge4/merge(with:_:_:_:).md)
+### Declaring supporting types
 - [Publishers.Merge4.Output](publishers/merge4/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge4.Failure](publishers/merge4/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge4/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge4/b.md)
@@ -39,17 +44,11 @@ struct Merge4<A, B, C, D> where A : Publisher, B : Publisher, C : Publisher, D :
   A third publisher to merge.
 - [let d: D](publishers/merge4/d.md)
   A fourth publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge4<A, B, C, D>, Publishers.Merge4<A, B, C, D>) -> Bool](publishers/merge4/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge4/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge4-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge4/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge4/publisher-implementations.md)
 
 ## Relationships
 

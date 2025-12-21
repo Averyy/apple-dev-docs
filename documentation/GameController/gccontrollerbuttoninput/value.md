@@ -21,7 +21,7 @@ var value: Float { get }
 
 #### Discussion
 
-If the user applies pressure to the button, the [`isPressed`](gccontrollerbuttoninput/ispressed.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and this property indicates the amount of pressure. The framework normalizes the value to a number between `0.0` (minimum) and `1.0` (maximum). If the user isn’t pressing the button, the [`isPressed`](gccontrollerbuttoninput/ispressed.md) property is [`false`](https://developer.apple.com/documentation/swift/false) and this property is `0.0`.
+If the user applies pressure to the button, the [`isPressed`](gccontrollerbuttoninput/ispressed.md) property is [`true`](https://developer.apple.com/documentation/Swift/true) and this property indicates the amount of pressure. The framework normalizes the value to a number between `0.0` (minimum) and `1.0` (maximum). If the user isn’t pressing the button, the [`isPressed`](gccontrollerbuttoninput/ispressed.md) property is [`false`](https://developer.apple.com/documentation/Swift/false) and this property is `0.0`.
 
 For axis buttons, such as thumbsticks and touchpads, the location on the positive or negative axis of the element simulates the pressure.
 

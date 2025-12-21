@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: class
 
+A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -34,6 +36,7 @@ class NSKeyValueSharedObserversSnapshot
 
 - [class NSKeyValueObservation](nskeyvalueobservation.md)
 - [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+  A collection of key-value observations which may be registered with multiple observable objects
 
 
 ---

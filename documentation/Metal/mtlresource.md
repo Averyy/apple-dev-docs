@@ -21,8 +21,8 @@ protocol MTLResource : MTLAllocation
 
 ## Mentions
 
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Overview
 
@@ -32,12 +32,12 @@ When you execute commands on the GPU, those commands can only affect memory allo
 
 ## Topics
 
-### Identifying the Resource
+### Identifying the resource
 - [var device: any MTLDevice](mtlresource/device.md)
   The device object that created the resource.
 - [var label: String?](mtlresource/label.md)
   A string that identifies the resource.
-### Reading Memory and Storage Properties
+### Reading memory and storage properties
 - [var cpuCacheMode: MTLCPUCacheMode](mtlresource/cpucachemode.md)
   The CPU cache mode that defines the CPU mapping of the resource.
 - [var storageMode: MTLStorageMode](mtlresource/storagemode.md)
@@ -51,13 +51,13 @@ When you execute commands on the GPU, those commands can only affect memory allo
 - [enum MTLStorageMode](mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
 - [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
-  The options you use to specify the hazard tracking mode.
-### Setting the Purgeable State of the Resource
+  Options that control whether Metal automatically tracks and prevents memory hazards for resources.
+### Setting the purgeable state of the resource
 - [func setPurgeableState(MTLPurgeableState) -> MTLPurgeableState](mtlresource/setpurgeablestate(_:).md)
   Specifies or queries the resource’s purgeable state.
 - [enum MTLPurgeableState](mtlpurgeablestate.md)
   The purgeable state of the resource.
-### Managing Heap Resources
+### Managing heap resources
 - [var heapOffset: Int](mtlresource/heapoffset.md)
   The distance, in bytes, from the beginning of the heap to the first byte of the resource, if you allocated the resource on a heap.
 - [var heap: (any MTLHeap)?](mtlresource/heap.md)
@@ -66,7 +66,7 @@ When you execute commands on the GPU, those commands can only affect memory allo
   Allows future heap resource allocations to alias against the resource’s memory, reusing it.
 - [func isAliasable() -> Bool](mtlresource/isaliasable.md)
   A Boolean value that indicates whether future heap resource allocations may alias against the resource’s memory.
-### Querying the Allocated Size
+### Querying the allocated size
 - [var allocatedSize: Int](mtlresource/allocatedsize.md)
   The size of the resource, in bytes.
 
@@ -86,6 +86,8 @@ When you execute commands on the GPU, those commands can only affect memory allo
 
 ## See Also
 
+- [typealias MTLGPUAddress](mtlgpuaddress.md)
+  A 64-bit unsigned integer type appropriate for storing GPU addresses.
 - [protocol MTLAllocation](mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
 - [struct MTLResourceOptions](mtlresourceoptions.md)

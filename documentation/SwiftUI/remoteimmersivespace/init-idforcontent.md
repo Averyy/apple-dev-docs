@@ -6,7 +6,7 @@
 Creates the remote immersive space associated with an identifier for a specified type of presented data.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

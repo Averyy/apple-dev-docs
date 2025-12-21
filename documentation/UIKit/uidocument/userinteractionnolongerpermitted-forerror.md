@@ -14,7 +14,6 @@ Indicates when it’s no longer safe to proceed without immediately handling the
 ## Declaration
 
 ```swift
-@MainActor
 func userInteractionNoLongerPermitted(forError error: any Error)
 ```
 

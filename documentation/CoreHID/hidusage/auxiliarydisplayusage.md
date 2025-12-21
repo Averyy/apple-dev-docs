@@ -90,20 +90,8 @@ enum AuxiliaryDisplayUsage
 - [HIDUsage.AuxiliaryDisplayUsage.unicodeCharacterSet](hidusage/auxiliarydisplayusage/unicodecharacterset.md)
 - [HIDUsage.AuxiliaryDisplayUsage.unicodeEquivalent](hidusage/auxiliarydisplayusage/unicodeequivalent.md)
 - [HIDUsage.AuxiliaryDisplayUsage.verticalScroll](hidusage/auxiliarydisplayusage/verticalscroll.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/auxiliarydisplayusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/auxiliarydisplayusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.AuxiliaryDisplayUsage.RawValue](hidusage/auxiliarydisplayusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/auxiliarydisplayusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/auxiliarydisplayusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/auxiliarydisplayusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -13,7 +13,6 @@ Creates an affine transform from the specified single-precision matrix.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

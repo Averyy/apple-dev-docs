@@ -10,7 +10,7 @@ Attributes that are specific to ruler views.
 - [static let markerGroupUIElement: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markergroupuielement.md)
   A marker group user interface element (`id`).
 - [static let markerType: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markertype.md)
-  The type of the marker (`NSString`). See Ruler Marker Type Values for possible values.
+  The type of the marker (`NSString`).
 - [static let markerTypeDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markertypedescription.md)
   The description of the marker type (`NSString`).
 - [static let markerUIElements: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/markeruielements.md)
@@ -20,7 +20,7 @@ Attributes that are specific to ruler views.
 - [static let unitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/unitdescription.md)
   The description of ruler units (`NSString`).
 - [static let units: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/units.md)
-  The ruler units (`NSString`). See Measurement Unit Attributes for possible values.
+  The ruler units (`NSString`).
 
 ## See Also
 

@@ -36,19 +36,6 @@ struct TemporalSegmentIdentifier
   The segment source. For files use the full path or URL of the file.
 - [var timescale: Int](temporalsegmentidentifier/timescale.md)
   The identifier’s timescale is the number of uniquely identifiable timestamps in a second.
-### Operators
-- [static func == (TemporalSegmentIdentifier, TemporalSegmentIdentifier) -> Bool](temporalsegmentidentifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](temporalsegmentidentifier/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](temporalsegmentidentifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](temporalsegmentidentifier/decodable-implementations.md)
-- [Encodable Implementations](temporalsegmentidentifier/encodable-implementations.md)
-- [Equatable Implementations](temporalsegmentidentifier/equatable-implementations.md)
 
 ## Relationships
 

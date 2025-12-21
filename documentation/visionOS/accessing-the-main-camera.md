@@ -5,12 +5,12 @@
 Add camera-based features to enterprise apps.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
-This sample code project demonstrates how to use ARKit to access and display the left main camera frame in your visionOS app. You can use this functionality to implement computer vision-powered experiences or live streaming in your enterprise app. For instance, support technicians can live stream their surroundings to remote experts for improved guidance.
+This sample code project demonstrates how to use ARKit to access and display the main camera feed in your visionOS app. You can use this functionality to implement computer vision-powered experiences or livestreaming in your enterprise app. For instance, support technicians can livestream their surroundings to remote experts for improved guidance.
 
 ##### Configure the Sample Code Project
 
@@ -22,93 +22,160 @@ Main camera access is a part of enterprise APIs for visionOS, a collection of AP
 
 ##### Add Usage Descriptions for Arkit Data Access
 
-To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMainCameraUsageDescription) to your app’s information property list to provide a usage description that explains how your app uses the data these sensors provide. People see this description when your app prompts for access to camera data.
+To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMainCameraUsageDescription) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
 
-> **Note**: In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
+> **Note**: Prior to visionOS 26, [`CameraFrameProvider`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider) is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
 ##### Access and Display Main Camera Frames
 
-The following code example accesses and displays the left main camera at the highest available resolution. To access the camera, start an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with a [`CameraFrameProvider`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider), and then request [`CameraFrameProvider.CameraFrameUpdates`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider/CameraFrameUpdates) in a given format. ARKit delivers a stream of [`CameraFrame`](https://developer.apple.com/documentation/ARKit/CameraFrame) instances; each frame includes a [`CameraFrame.Sample`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample) containing a [`pixelBuffer`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample/pixelBuffer) and [`CameraFrame.Sample.Parameters`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample/Parameters-swift.struct) describing the frame’s characteristics.
+The code example below accesses and displays the main camera feed, which is a stereo camera that consists of left and right cameras. A person can configure the app to display the left, right, or combined stereo frames, with or without rectification, at one of two resolutions.
+
+The `MainCameraView` renders two instances of `CameraFrameView`, one to display a preview of the left camera feed and another to display a preview of the right camera feed. The left and right previews are instances of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer), and `CameraSessionManager` manages their updates. `CameraSessionManager` accesses camera frames using ARKit and renders them to their respective display layers. The `MainCameraView` uses a [`task(priority:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(priority:_:)) modifier to run `CameraSessionManager`.
 
 ```swift
-import ARKit
-import RealityKit
-import SwiftUI
-
 struct MainCameraView: View {
-    @State private var arkitSession = ARKitSession()
-    @State private var pixelBuffer: CVPixelBuffer?
+    @State private var sessionManager = CameraSessionManager()
     
-    let emptyImage = Image(systemName: "camera")
-
     var body: some View {
-        let image = pixelBuffer?.image ?? emptyImage
-        
-        image
-        .resizable()
-        .scaledToFit()
-        .task {
-            
-            // Check wether there's support for camera access; otherwise, handle this case.
-            guard CameraFrameProvider.isSupported else {
-                return
-            }
-            
-            let cameraFrameProvider = CameraFrameProvider()
-
-            try? await arkitSession.run([cameraFrameProvider])
-            
-            // Read the video formats that the left main camera supports.
-            let formats = CameraVideoFormat.supportedVideoFormats(for: .main, cameraPositions: [.left])
-        
-            // Find the highest resolution format.
-            let highResolutionFormat = formats.max { $0.frameSize.height < $1.frameSize.height }
-
-            // Request an asynchronous sequence of camera frames.
-            guard let highResolutionFormat,
-                  let cameraFrameUpdates = cameraFrameProvider.cameraFrameUpdates(for: highResolutionFormat) else {
-                return
-            }
-            
-            for await cameraFrame in cameraFrameUpdates {
-
-                if let sample = cameraFrame.sample(for: .left) {
-                    
-                    // Update the `pixelBuffer` to render the frame's image.
-                    pixelBuffer = sample.pixelBuffer
-                    
-                    let parameters = sample.parameters
-                    
-                    // If needed, take action with the frame's parameters.
-                    print(
-                         """
-
-                         Intrinsics: \(parameters.intrinsics)
-                         Extrinsics: \(parameters.extrinsics)
-                         """)
+        Group {
+            if CameraSessionManager.isSupported == false {
+                // ...
+            } else {
+                HStack {
+                    CameraFrameView(preview: sessionManager.leftPreview)
+                    CameraFrameView(preview: sessionManager.rightPreview)
                 }
+            }
+        }
+        .task {
+            await sessionManager.run()
+        }
+    }
+}
+```
 
+To access the main camera, `CameraSessionManager` starts an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with a [`CameraFrameProvider`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider), and then requests [`CameraFrameProvider.CameraFrameUpdates`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider/CameraFrameUpdates) in the format that the person using the app specifies.
+
+```swift
+final class CameraSessionManager {
+    
+    // ...
+
+    /// Begin reading and rendering the main camera's frames.
+    func run() async {
+        await withTaskGroup(of: Void.self) { group in
+            group.addTask {
+                await self.runCameraFrameProvider()
+            }
+            
+            // ...
+        }
+    }
+
+    private func runCameraFrameProvider() async {
+        let arkitSession = ARKitSession()
+        
+        // ...
+        
+        let cameraFrameProvider = CameraFrameProvider()
+        try? await arkitSession.run([cameraFrameProvider])
+       
+        // ...
+        
+        // See the next section for the implementation of `observeCameraFrameUpdates`.
+        await observeCameraFrameUpdates()
+    }
+}
+```
+
+ARKit delivers a stream of [`CameraFrame`](https://developer.apple.com/documentation/ARKit/CameraFrame) instances, and each frame includes a [`CameraFrame.Sample`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample). As each `CameraFrame` arrives, `CameraSessionManager` updates its left and right `CameraFeed` instances using the respective `CameraFrame.Sample`.
+
+```swift
+final class CameraSessionManager {
+    //...
+
+    private var leftCameraFeed = CameraFeed()
+    private var rightCameraFeed = CameraFeed()
+
+    // ...
+    
+    /// The layer displaying the left camera preview.
+    var leftPreview: AVSampleBufferDisplayLayer {
+        leftCameraFeed.preview
+    }
+    
+    /// The layer displaying the right camera preview.
+    var rightPreview: AVSampleBufferDisplayLayer {
+        rightCameraFeed.preview
+    }
+
+    //...
+
+    private func observeCameraFrameUpdates() async {
+        guard let cameraFrameProvider else { return }
+        
+        // Find the `CameraVideoFormat` that corresponds to the `CameraConfiguration`.
+        let formats = CameraVideoFormat
+            .supportedVideoFormats(for: .main, cameraPositions: configuration.cameraPositions)
+            .filter({ $0.cameraRectification == configuration.cameraRectification })
+        
+        // Find the resolution format.
+        let desiredFormat = isHighResolution ?
+        formats.max { $0.frameSize.height < $1.frameSize.height }
+        : formats.min { $0.frameSize.height < $1.frameSize.height }
+
+        // Request an asynchronous sequence of camera frames.
+        guard let desiredFormat,
+              let cameraFrameUpdates = cameraFrameProvider.cameraFrameUpdates(for: desiredFormat) else {
+            return
+        }
+        
+        for await cameraFrame in cameraFrameUpdates {            
+            if let leftSample = cameraFrame.sample(for: .left) {
+                try? await leftCameraFeed.update(using: leftSample)
+            }
+            
+            if let rightSample = cameraFrame.sample(for: .right) {
+                try? await rightCameraFeed.update(using: rightSample)
             }
         }
     }
 }
 ```
 
-To display the frame’s content, convert its [`pixelBuffer`](https://developer.apple.com/documentation/AVFoundation/AVCapturePhoto/pixelBuffer) to an [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) using the following extension:
+The `CameraFeed` class updates its `preview`, an instance of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer), by rendering the [`CameraFrame.Sample`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample) to the display layer. This is the same instance of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer) that `MainCameraView` displays.
 
 ```swift
-extension CVPixelBuffer {
-    var image: Image? {
-        let ciImage = CIImage(cvPixelBuffer: self)
-        let context = CIContext(options: nil)
-        
-        guard let cgImage = context.createCGImage(ciImage, from: ciImage.extent) else {
-            return nil
+final class CameraFeed {
+    /// A preview layer that presents the captured video frames.
+    let preview = AVSampleBufferDisplayLayer()
+    
+    /// Renders the `pixelBuffer` in the `Sample` to the preview layer.
+    /// - Parameters:
+    ///     - using: The `sample` to render to the preview layer.
+    func update(using sample: CameraFrame.Sample?) async throws {
+        guard let sample else {
+            await preview.sampleBufferRenderer.flush(removingDisplayedImage: true)
+            return
         }
 
-        let uiImage = UIImage(cgImage: cgImage)
+        if preview.sampleBufferRenderer.requiresFlushToResumeDecoding {
+            preview.sampleBufferRenderer.flush()
+        }
+        
+        let presentationTimeStamp = CMTime(seconds: sample.parameters.captureTimestamp, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+        let timingInfo = CMSampleTimingInfo(duration: .invalid,
+                                            presentationTimeStamp: presentationTimeStamp,
+                                            decodeTimeStamp: .invalid)
 
-        return Image(uiImage: uiImage)
+        try? sample.buffer.withUnsafeBuffer { pixelBuffer in
+            let sampleBuffer = try CMSampleBuffer(imageBuffer: pixelBuffer,
+                                                  formatDescription: CMVideoFormatDescription(imageBuffer: pixelBuffer),
+                                                  sampleTiming: timingInfo)
+            if preview.sampleBufferRenderer.isReadyForMoreMediaData {
+                preview.sampleBufferRenderer.enqueue(sampleBuffer)
+            }
+        }
     }
 }
 ```
@@ -117,8 +184,6 @@ extension CVPixelBuffer {
 
 - [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
-- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
-  Show video from devices connected with the Developer Strap in your visionOS app.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 

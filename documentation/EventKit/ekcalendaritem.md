@@ -21,8 +21,8 @@ class EKCalendarItem
 
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
 - [Creating a recurring event](creating-a-recurring-event.md)
+- [Creating events and reminders](creating-events-and-reminders.md)
 
 #### Overview
 

@@ -19,7 +19,7 @@ var isEmphasized: Bool { get set }
 
 Some materials change their appearance when they are emphasized. For example, the first responder view conveys its status.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

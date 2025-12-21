@@ -30,8 +30,6 @@ For cases where the user enters a URL, like in the navigation bar of a web brows
 
 - [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
   The user explicitly directs the app to make a network request.
-- [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
-  The user explicitly directs the app to make a network request.
 
 
 ---

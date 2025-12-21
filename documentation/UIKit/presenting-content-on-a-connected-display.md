@@ -109,8 +109,8 @@ For more information about screen modes, see [`UIScreenMode`](uiscreenmode.md).
 
 ## See Also
 
-- [Multitasking on iPad](multitasking-on-ipad.md)
-  Implement multitasking APIs to seamlessly integrate your app with iPadOS.
+- [Multitasking on iPad, Mac, and Apple Vision Pro](multitasking-on-ipad-mac-and-apple-vision-pro.md)
+  Implement multitasking APIs to seamlessly integrate your app with iPadOS, macOS, and visionOS.
 - [Managing your app’s life cycle](managing-your-app-s-life-cycle.md)
   Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events.
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)

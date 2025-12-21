@@ -24,13 +24,22 @@ For more information, see [`Overview of export compliance`](https://developer.ap
   Find and list all available app encryption declarations.
 - [Read App Encryption Declaration Information](get-v1-appencryptiondeclarations-_id_.md)
   Get information about a specific app encryption declaration.
+- [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+  Find and list all available app encryption declarations.
+- [Read an app’s encryption declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+  Find and list all available app encryption declaration IDs for a specific app.
 - [Read the App Information of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-app.md)
   Get the app information from a specific app encryption declaration.
+- [Read the app id of an app encryption declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
+  Get the app id from a specific app encryption declaration.
 - [Read a specific App Encryption Declaration Document](get-v1-appencryptiondeclarationdocuments-_id_.md)
   Get detailed information about a specified App Encryption Declaration document.
-- [GET /v1/appEncryptionDeclarations/{id}/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
-  Read the associate document for a specific App Encryption Declaration.
-- [GET /v1/appEncryptionDeclarations/{id}/relationships/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
+- [Read the Declaration Document for an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
+  Read the associated document for a specific App Encryption Declaration.
+- [Read the app id of an app encryption declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
+  Get the app id from a specific app encryption declaration.
+- [Read the id of the document for an app encryption declaration](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
+  Get the document id associated with a specific app encryption declaration.
 ### Assigning App Encryption Declarations
 - [Create an app encryption declarations](post-v1-appencryptiondeclarations.md)
   Add an app encryption delcaration for a specific app.
@@ -45,9 +54,13 @@ For more information, see [`Overview of export compliance`](https://developer.ap
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)
   The request body you use to create an app encryption declaration.
 - [object AppEncryptionDeclarationDocument](appencryptiondeclarationdocument.md)
+  The data structure that represents an app encryption declaration document resource.
 - [object AppEncryptionDeclarationDocumentCreateRequest](appencryptiondeclarationdocumentcreaterequest.md)
+  The request body you use to create an encryption resource.
 - [object AppEncryptionDeclarationDocumentResponse](appencryptiondeclarationdocumentresponse.md)
+  A response that contains a single app encryption declaration document response resource.
 - [object AppEncryptionDeclarationDocumentUpdateRequest](appencryptiondeclarationdocumentupdaterequest.md)
+  The request body you use to update an app encryption declaration document update request.
 - [object AppEncryptionDeclaration](appencryptiondeclaration.md)
   The data structure that represents an App Encryption Declarations resource.
 - [object AppEncryptionDeclarationBuildsLinkagesRequest](appencryptiondeclarationbuildslinkagesrequest.md)
@@ -55,10 +68,11 @@ For more information, see [`Overview of export compliance`](https://developer.ap
 - [object AppEncryptionDeclarationResponse](appencryptiondeclarationresponse.md)
   A response that contains a single App Encryption Declarations resource.
 - [object AppEncryptionDeclarationWithoutIncludesResponse](appencryptiondeclarationwithoutincludesresponse.md)
+  A response that contains a list of app encryption declaration without includes response resources.
 - [object AppEncryptionDeclarationsResponse](appencryptiondeclarationsresponse.md)
   A response that contains a list of App Encryption Declaration resources.
 - [type AppEncryptionDeclarationState](appencryptiondeclarationstate.md)
-  Strings that represent the review or acceptance status of an app encryption declaration submitted to Apple.
+  A string that represents the declaration of an encryption.
 - [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
 - [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
 
@@ -70,6 +84,8 @@ For more information, see [`Overview of export compliance`](https://developer.ap
   Read metadata for app and App Clip binaries included in a build you upload to App Store Connect.
 - [Build Icons](build-icons.md)
   Get icons from your app’s binary that are uploaded to App Store.
+- [Build uploads](build-uploads.md)
+  Read metadata for app builds you upload to App Store Connect.
 
 
 ---

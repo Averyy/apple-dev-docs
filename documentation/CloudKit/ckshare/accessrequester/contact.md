@@ -3,15 +3,15 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-Returns a displayable `CNContact` for the requester, or a new `CNContact` if none exists in the user’s contacts. Provides a standardized format for the requester’s underlying lookup info in the user identity. Use when displaying the requester information to other participants and approvers in application UI.
+A displayable `CNContact` representing the requester.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,6 +19,10 @@ Returns a displayable `CNContact` for the requester, or a new `CNContact` if non
 @NSCopying
 var contact: CNContact { get }
 ```
+
+#### Discussion
+
+If the requester doesn’t exist in the user’s contacts or is not accessible, returns a newly created `CNContact`. This provides formatted requester information suitable for display in the application’s UI.
 
 
 ---

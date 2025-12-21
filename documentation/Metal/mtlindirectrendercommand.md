@@ -21,20 +21,20 @@ protocol MTLIndirectRenderCommand : NSObjectProtocol
 
 #### Overview
 
-Don’t implement this protocol; you get objects of this type by asking a [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) for them.
+Don’t implement this protocol; you get instances of this type by asking an [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) for them.
 
-Use this object to reset or encode a command. You must always reset a command before encoding a new command.
+Use this instance to reset or encode a command. You need to reset a command before encoding a new command.
 
 ## Topics
 
-### Setting Command Arguments
+### Setting command arguments
 - [func setRenderPipelineState(any MTLRenderPipelineState)](mtlindirectrendercommand/setrenderpipelinestate(_:).md)
-  Sets the render pipeline state object used by the command.
+  Sets the render pipeline state for the command.
 - [func setVertexBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setvertexbuffer(_:offset:at:).md)
   Sets a vertex buffer argument for the command.
 - [func setFragmentBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setfragmentbuffer(_:offset:at:).md)
   Sets a fragment buffer argument for the command.
-### Encoding a Drawing Command
+### Encoding a drawing command
 - [func drawPrimitives(MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int, baseInstance: Int)](mtlindirectrendercommand/drawprimitives(_:vertexstart:vertexcount:instancecount:baseinstance:).md)
   Encodes a command to render a number of instances of primitives using vertex data in contiguous array elements, starting from the base instance.
 - [func drawIndexedPrimitives(MTLPrimitiveType, indexCount: Int, indexType: MTLIndexType, indexBuffer: any MTLBuffer, indexBufferOffset: Int, instanceCount: Int, baseVertex: Int, baseInstance: Int)](mtlindirectrendercommand/drawindexedprimitives(_:indexcount:indextype:indexbuffer:indexbufferoffset:instancecount:basevertex:baseinstance:).md)
@@ -43,7 +43,7 @@ Use this object to reset or encode a command. You must always reset a command be
   Encodes a command to render a number of instances of tessellated patches.
 - [func drawIndexedPatches(Int, patchStart: Int, patchCount: Int, patchIndexBuffer: (any MTLBuffer)?, patchIndexBufferOffset: Int, controlPointIndexBuffer: any MTLBuffer, controlPointIndexBufferOffset: Int, instanceCount: Int, baseInstance: Int, tessellationFactorBuffer: any MTLBuffer, tessellationFactorBufferOffset: Int, tessellationFactorBufferInstanceStride: Int)](mtlindirectrendercommand/drawindexedpatches(_:patchstart:patchcount:patchindexbuffer:patchindexbufferoffset:controlpointindexbuffer:controlpointindexbufferoffset:instancecount:baseinstance:tessellationfactorbuffer:tessellationfactorbufferoffset:tessellationfactorbu-4mdz8.md)
   Encodes a command to render a number of instances of tessellated patches, using a control point index buffer.
-### Resetting a Command
+### Resetting a command
 - [func reset()](mtlindirectrendercommand/reset.md)
   Resets the command to its default state.
 ### Instance Methods
@@ -51,9 +51,15 @@ Use this object to reset or encode a command. You must always reset a command be
 - [func drawMeshThreadgroups(MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtlindirectrendercommand/drawmeshthreadgroups(_:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
 - [func drawMeshThreads(MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtlindirectrendercommand/drawmeshthreads(_:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
 - [func setBarrier()](mtlindirectrendercommand/setbarrier.md)
+- [func setCullMode(MTLCullMode)](mtlindirectrendercommand/setcullmode(_:).md)
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtlindirectrendercommand/setdepthbias(_:slopescale:clamp:).md)
+- [func setDepthClipMode(MTLDepthClipMode)](mtlindirectrendercommand/setdepthclipmode(_:).md)
+- [func setDepthStencilState((any MTLDepthStencilState)?)](mtlindirectrendercommand/setdepthstencilstate(_:).md)
+- [func setFrontFacing(MTLWinding)](mtlindirectrendercommand/setfrontfacing(_:).md)
 - [func setMeshBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setmeshbuffer(_:offset:at:).md)
 - [func setObjectBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setobjectbuffer(_:offset:at:).md)
 - [func setObjectThreadgroupMemoryLength(Int, index: Int)](mtlindirectrendercommand/setobjectthreadgroupmemorylength(_:index:).md)
+- [func setTriangleFillMode(MTLTriangleFillMode)](mtlindirectrendercommand/settrianglefillmode(_:).md)
 - [func setVertexBuffer(any MTLBuffer, offset: Int, attributeStride: Int, at: Int)](mtlindirectrendercommand/setvertexbuffer(_:offset:attributestride:at:).md)
 
 ## Relationships

@@ -20,11 +20,11 @@ class func isSourceTypeAvailable(_ sourceType: UIImagePickerController.SourceTyp
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports the specified source type; [`false`](https://developer.apple.com/documentation/swift/false) if the specified source type is not available.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports the specified source type; [`false`](https://developer.apple.com/documentation/Swift/false) if the specified source type is not available.
 
 #### Discussion
 
-Because a media source may not be present or may be unavailable, devices may not always support all source types. For example, if you attempt to pick an image from the user’s library and the library is empty, this method returns [`false`](https://developer.apple.com/documentation/swift/false). Similarly, if the camera is already in use, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+Because a media source may not be present or may be unavailable, devices may not always support all source types. For example, if you attempt to pick an image from the user’s library and the library is empty, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). Similarly, if the camera is already in use, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Before attempting to use an `UIImagePickerController` object to pick an image, you must call this method to ensure that the desired source type is available.
 

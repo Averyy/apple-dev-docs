@@ -22,12 +22,6 @@ struct DayPrecipitationSummary
 
 ## Topics
 
-### Operators
-- [static func == (DayPrecipitationSummary, DayPrecipitationSummary) -> Bool](dayprecipitationsummary/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](dayprecipitationsummary/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var date: Date](dayprecipitationsummary/date.md)
   The day of the observed precipitation summary
@@ -35,11 +29,6 @@ struct DayPrecipitationSummary
   The amount of liquid precipitation for the day.
 - [var snowfallAmount: Measurement<UnitLength>](dayprecipitationsummary/snowfallamount.md)
   The snowfall amount as depth of snow crystals for the day.
-### Instance Methods
-- [func encode(to: any Encoder) throws](dayprecipitationsummary/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](dayprecipitationsummary/equatable-implementations.md)
 
 ## Relationships
 

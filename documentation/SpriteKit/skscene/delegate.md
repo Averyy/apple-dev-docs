@@ -17,7 +17,6 @@ A delegate to be called during the animation loop.
 ## Declaration
 
 ```swift
-@MainActor
 weak var delegate: (any SKSceneDelegate)? { get set }
 ```
 

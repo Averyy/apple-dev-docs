@@ -20,25 +20,8 @@ struct AppShortcutParameterPresentationSummaryString<Intent, Value, Parameter, P
 
 ## Topics
 
-### Structures
-- [AppShortcutParameterPresentationSummaryString.StringInterpolation](appshortcutparameterpresentationsummarystring/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
 ### Initializers
 - [init(String)](appshortcutparameterpresentationsummarystring/init(_:).md)
-- [init(stringInterpolation: AppShortcutParameterPresentationSummaryString<Intent, Value, Parameter, ParameterKeyPath>.StringInterpolation)](appshortcutparameterpresentationsummarystring/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: String)](appshortcutparameterpresentationsummarystring/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [AppShortcutParameterPresentationSummaryString.ExtendedGraphemeClusterLiteralType](appshortcutparameterpresentationsummarystring/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [AppShortcutParameterPresentationSummaryString.StringLiteralType](appshortcutparameterpresentationsummarystring/stringliteraltype.md)
-  A type that represents a string literal.
-- [AppShortcutParameterPresentationSummaryString.UnicodeScalarLiteralType](appshortcutparameterpresentationsummarystring/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](appshortcutparameterpresentationsummarystring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](appshortcutparameterpresentationsummarystring/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

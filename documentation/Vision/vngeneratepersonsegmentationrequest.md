@@ -37,6 +37,9 @@ Perform this request to detect and generate an image mask for a person in an ima
   A value that indicates how the request balances accuracy and performance.
 - [VNGeneratePersonSegmentationRequest.QualityLevel](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person segmentation request.
+### Getting the supported output pixel formats
+- [func supportedOutputPixelFormats() throws -> [NSNumber]](vngeneratepersonsegmentationrequest/supportedoutputpixelformats.md)
+  Returns a list of output pixel formats that the request supports.
 ### Accessing the Results
 - [var results: [VNPixelBufferObservation]?](vngeneratepersonsegmentationrequest/results.md)
   The results of the segmentation request.
@@ -45,9 +48,6 @@ Perform this request to detect and generate an image mask for a person in an ima
 ### Identifying Request Revisions
 - [let VNGeneratePersonSegmentationRequestRevision1: Int](vngeneratepersonsegmentationrequestrevision1.md)
   A constant for specifying revision 1 of the person segmentation generation request.
-### Instance Methods
-- [func supportedOutputPixelFormats() throws -> [NSNumber]](vngeneratepersonsegmentationrequest/supportedoutputpixelformats.md)
-  Returns a list of output pixel formats that the request supports.
 
 ## Relationships
 
@@ -66,7 +66,7 @@ Perform this request to detect and generate an image mask for a person in an ima
 
 - [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting Human Actions in a Live Video Feed](../createml/detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.

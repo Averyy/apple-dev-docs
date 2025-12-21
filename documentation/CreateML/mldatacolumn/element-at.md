@@ -29,7 +29,7 @@ The `Element` at the given index; otherwise, `nil`.
 
 ## See Also
 
-- [subscript(Int) -> Element](mldatacolumn/subscript(_:)-reid.md)
+- [subscript(_:)](mldatacolumn/subscript(_:).md)
   Accesses the element at the given row.
 
 

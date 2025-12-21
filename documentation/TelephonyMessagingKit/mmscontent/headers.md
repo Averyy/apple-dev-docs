@@ -6,8 +6,8 @@
 Additional headers in a received MMS message, as a key-value dictionary of strings.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration

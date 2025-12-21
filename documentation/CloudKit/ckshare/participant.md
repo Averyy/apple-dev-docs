@@ -62,14 +62,15 @@ Participants with write permissions can modify or delete any record that you inc
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var dateAddedToShare: Date?](ckshare/participant/dateaddedtoshare.md)
-  The timestamp when the participant was added, set when the share is saved to the server.
+  The date and time when the participant was added to the share.
 - [var isApprovedRequester: Bool](ckshare/participant/isapprovedrequester.md)
-  `YES` if this participant was a requester before getting added to the share
+  Indicates whether the participant was originally a requester who was approved to join the share.
 - [var participantID: CKShare.Participant.ID](ckshare/participant/participantid.md)
 ### Type Aliases
 - [CKShare.Participant.ID](ckshare/participant/id.md)
 ### Type Methods
 - [class func oneTimeURLParticipant() -> Self](ckshare/participant/onetimeurlparticipant.md)
+  Generate a unique URL for inviting a participant without knowing their handle
 
 ## Relationships
 

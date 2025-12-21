@@ -22,7 +22,7 @@ case bgr5A1Unorm
 ## Mentions
 
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
 
 ## See Also
 

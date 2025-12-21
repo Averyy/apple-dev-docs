@@ -39,11 +39,6 @@ To get the current system state, create a `GroupStateObserver` object and check 
   A Boolean value that indicates whether the system can start a group session.
 ### Instance Properties
 - [var $isEligibleForGroupSession: Published<Bool>.Publisher](groupstateobserver/$iseligibleforgroupsession.md)
-### Type Aliases
-- [GroupStateObserver.ObjectWillChangePublisher](groupstateobserver/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
-### Default Implementations
-- [ObservableObject Implementations](groupstateobserver/observableobject-implementations.md)
 
 ## Relationships
 

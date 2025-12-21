@@ -19,7 +19,7 @@ class AVCaptureSynchronizedDataCollection
 
 ## Topics
 
-### Accessing Synchronized Data
+### Accessing synchronized data
 - [var count: Int](avcapturesynchronizeddatacollection/count.md)
   The number of synchronized data objects in the collection.
 - [func synchronizedData(for: AVCaptureOutput) -> AVCaptureSynchronizedData?](avcapturesynchronizeddatacollection/synchronizeddata(for:).md)

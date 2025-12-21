@@ -27,14 +27,14 @@ struct Text
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Declaring a custom view](declaring-a-custom-view.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
-- [Performing a search operation](performing-a-search-operation.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
+- [Performing a search operation](performing-a-search-operation.md)
 - [Preparing views for localization](preparing-views-for-localization.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
 - [Suggesting search terms](suggesting-search-terms.md)
-- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
 
 #### Overview
 

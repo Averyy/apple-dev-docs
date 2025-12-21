@@ -20,14 +20,8 @@ case audioReadFailed
 
 ## See Also
 
-- [SFSpeechError.Code.internalServiceError](sfspeecherror/code/internalserviceerror.md)
-  There was an internal error.
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
-  The custom language model file was malformed.
-- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
-  The operation timed out.
-- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
-  The custom language model templates were malformed.
+- [static var audioDisordered: SFSpeechError.Code](sfspeecherror/code/audiodisordered.md)
+  The audio input time-code overlaps or precedes prior audio input.
 
 
 ---

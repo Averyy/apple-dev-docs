@@ -6,7 +6,7 @@
 Describes the way dragged previews are visually composed.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

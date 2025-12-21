@@ -103,6 +103,15 @@ Your credential manager manager receives these updates in the “report” metho
   Attempts to provide the user-requested credential with no further user interaction.
 - [func prepareInterfaceToProvideCredential(for: ASPasswordCredentialIdentity)](ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential(for:)-18ukb.md)
   Prepares the interface for a user interaction, like a database login, that enables it to access and return the credential for the given identity.
+### Instance Methods
+- [func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswordsRequest)](ascredentialproviderviewcontroller/performwithoutuserinteraction(generatepasswordsrequest:).md)
+  Attempt to generate passwords based on developer-specified rules.
+- [func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePasswordRequest)](ascredentialproviderviewcontroller/performwithoutuserinteractionifpossible(savepasswordrequest:).md)
+  Attempt to save a password credential.
+- [func prepareInterface(for: ASSavePasswordRequest)](ascredentialproviderviewcontroller/prepareinterface(for:)-69elg.md)
+  Prepares the interface to display a prompt to save a password credential.
+- [func prepareInterface(for: ASGeneratePasswordsRequest)](ascredentialproviderviewcontroller/prepareinterface(for:)-7ideq.md)
+  Prepares the interface to display a prompt to generate passwords based on developer-specified rules.
 
 ## Relationships
 

@@ -38,16 +38,6 @@ For example, the quantity of 3 years, 9 months, 26 days, 19 hours, and 17 second
   A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md).
 - [DateComponentsFormatter.UnitsStyle.positional](datecomponentsformatter/unitsstyle-swift.enum/positional.md)
   A style that uses the position of a unit of time to identify its value.
-- [DateComponentsFormatter.UnitsStyle.spellOut](datecomponentsformatter/unitsstyle-swift.enum/spellout.md)
-  A style that spells out the units and quantities of time.
-- [DateComponentsFormatter.UnitsStyle.full](datecomponentsformatter/unitsstyle-swift.enum/full.md)
-  A style that spells out the units of time, but not the quantities.
-- [DateComponentsFormatter.UnitsStyle.short](datecomponentsformatter/unitsstyle-swift.enum/short.md)
-  A style that uses a shortened spelling for units.
-- [DateComponentsFormatter.UnitsStyle.brief](datecomponentsformatter/unitsstyle-swift.enum/brief.md)
-  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md).
-- [DateComponentsFormatter.UnitsStyle.positional](datecomponentsformatter/unitsstyle-swift.enum/positional.md)
-  A style that uses the position of a unit of time to identify its value.
 
 
 ---

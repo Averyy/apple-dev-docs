@@ -21,6 +21,10 @@ init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)
 
 A new PHASEPullStreamNodeDefinition object
 
+#### Discussion
+
+Create a pull stream node definition
+
 ## Parameters
 
 - `mixerDefinition`: The mixer definition this stream will be assigned to

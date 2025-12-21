@@ -6,7 +6,7 @@
 Video comfort mitigation action occurred
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

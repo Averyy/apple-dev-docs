@@ -12,7 +12,7 @@ The [`NSTextView`](nstextview.md) and [`NSTextField`](nstextfield.md) classes ha
 
 ##### Specifying the Writing Tools Ui Experience You Want
 
-Writing Tools supports both limited and complete versions of the Writing Tools experience. The limited experience keeps changes in the Writing Tools interface until the person approves them. The limited experience displays the changes inline with the rest of your view’s content. Both experiences give people the ability to accept or reject changes, but the complete experience offers a more interactive way to view those changes.
+Writing Tools supports both limited and complete versions of the Writing Tools experience. The limited experience keeps changes in the Writing Tools interface until the person approves them. The complete experience displays the changes inline with the rest of your view’s content. Both experiences give people the ability to accept or reject changes, but the complete experience offers a more interactive way to view those changes.
 
 To specify the experience you want, change the value in your view’s [`writingToolsBehavior`](nstextinputtraits/writingtoolsbehavior.md) property. The system applies the best available experience to views by default, but you can specify the experience you prefer in your views. You can also disable the feature if you don’t want Writing Tools to be active in your view. To disable the feature, set the value of this property to [`NSWritingToolsBehavior.none`](nswritingtoolsbehavior/none.md).
 

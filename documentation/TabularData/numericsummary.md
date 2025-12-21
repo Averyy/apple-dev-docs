@@ -27,9 +27,6 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
   Creates an empty numeric summary with default values.
 - [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](numericsummary/init(somecount:nonecount:mean:standarddeviation:min:max:median:firstquartile:thirdquartile:).md)
   Creates an empty numeric summary.
-### Comparing Summaries
-- [static func != (Self, Self) -> Bool](numericsummary/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Inspecting a Summary
 - [var debugDescription: String](numericsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
@@ -54,17 +51,6 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
   The value that’s above 25% of the non-missing elements’ values.
 - [var thirdQuartile: Element](numericsummary/thirdquartile.md)
   The value that’s above 75% of the non-missing elements’ values.
-### Operators
-- [static func == (NumericSummary<Element>, NumericSummary<Element>) -> Bool](numericsummary/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](numericsummary/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](numericsummary/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](numericsummary/equatable-implementations.md)
 
 ## Relationships
 

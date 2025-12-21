@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The values in the vector as a Core Graphics rectangle structure.
+Returns the values in the vector as a `CGRect` structure.
 
 **Availability**:
 - iOS 5.0+
@@ -19,9 +19,9 @@ The values in the vector as a Core Graphics rectangle structure.
 var cgRectValue: CGRect { get }
 ```
 
-#### Discussion
+#### Return Value
 
-Reading this property creates a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure whose origin is the [`x`](civector/x.md) and [`y`](civector/y.md) values in the vector and whose size is the [`z`](civector/z.md) and [`w`](civector/w.md) values in the vector.
+ Reading this property creates a `CGRect` structure whose origin is the `X`, `Y`, `Z` and `W` values from the vector.
 
 ## See Also
 
@@ -36,13 +36,13 @@ Reading this property creates a [`CGRect`](https://developer.apple.com/documenta
 - [var z: CGFloat](civector/z.md)
   The value located in the third position in the vector.
 - [var w: CGFloat](civector/w.md)
-  The value located in the fourth position in the vector.
+  The value located in the forth position in the vector.
 - [var stringRepresentation: String](civector/stringrepresentation.md)
-  The string representation of the vector.
+  Returns a formatted string with all the values of a `CIVector`.
 - [var cgAffineTransformValue: CGAffineTransform](civector/cgaffinetransformvalue.md)
-  The values in the vector represented as an affine transform.
+  Returns the values in the vector as a `CGAffineTransformValue` structure.
 - [var cgPointValue: CGPoint](civector/cgpointvalue.md)
-  The values in the vector as a Core Graphics point structure.
+  Returns the values in the vector as a `CGPoint` structure.
 
 
 ---

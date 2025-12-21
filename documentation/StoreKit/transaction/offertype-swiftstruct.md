@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-The types of subscription offers for auto-renewable subscriptions.
+The types of offers that apply to a transaction.
 
 **Availability**:
 - iOS 15.0+
@@ -31,7 +31,7 @@ You don’t create offer types in [`Transaction.OfferType`](transaction/offertyp
 - [static let promotional: Transaction.OfferType](transaction/offertype-swift.struct/promotional.md)
   A promotional offer for an auto-renewable subscription.
 - [static let code: Transaction.OfferType](transaction/offertype-swift.struct/code.md)
-  An offer with a subscription offer code for an auto-renewable subscription.
+  An offer code.
 - [static var winBack: Transaction.OfferType](transaction/offertype-swift.struct/winback.md)
   A win-back offer for an auto-renewable subscription.
 ### Getting a localized description
@@ -46,11 +46,6 @@ You don’t create offer types in [`Transaction.OfferType`](transaction/offertyp
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [Transaction.AdvancedCommerceInfo](transaction/advancedcommerceinfo-swift.struct.md)
-  Metadata for transactions that use the Advanced Commerce API.
 
 
 ---

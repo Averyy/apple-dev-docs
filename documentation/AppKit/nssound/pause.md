@@ -16,7 +16,7 @@ func pause() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when playback is paused successfully, [`false`](https://developer.apple.com/documentation/swift/false) when playback is already paused or when an error occurred.
+[`true`](https://developer.apple.com/documentation/Swift/true) when playback is paused successfully, [`false`](https://developer.apple.com/documentation/Swift/false) when playback is already paused or when an error occurred.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var curvesAtTop: Bool { get set }
 
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), table rows near the top of the screen shrink so that the curved corners don’t clip them. Typically, this property has no effect when the status bar is visible. It also has no effect on Apple Watch Series 3 or earlier.
+Defaults to [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true), table rows near the top of the screen shrink so that the curved corners don’t clip them. Typically, this property has no effect when the status bar is visible. It also has no effect on Apple Watch Series 3 or earlier.
 
 ## See Also
 

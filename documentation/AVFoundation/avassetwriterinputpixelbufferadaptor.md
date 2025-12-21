@@ -25,18 +25,18 @@ A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pix
 
 ## Topics
 
-### Creating an Adaptor
+### Creating an adaptor
 - [init(assetWriterInput: AVAssetWriterInput, sourcePixelBufferAttributes: [String : Any]?)](avassetwriterinputpixelbufferadaptor/init(assetwriterinput:sourcepixelbufferattributes:).md)
   Creates a new pixel buffer adaptor to receive pixel buffers for writing to the output file.
-### Appending Pixel Buffers
+### Appending pixel buffers
 - [func append(CVPixelBuffer, withPresentationTime: CMTime) -> Bool](avassetwriterinputpixelbufferadaptor/append(_:withpresentationtime:).md)
   Appends a pixel buffer to the adaptor.
-### Accessing the Pool
+### Accessing the pool
 - [var pixelBufferPool: CVPixelBufferPool?](avassetwriterinputpixelbufferadaptor/pixelbufferpool.md)
   A pool of pixel buffers to append to the adaptor’s input.
 - [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputpixelbufferadaptor/sourcepixelbufferattributes.md)
   The attributes of the pixel buffers that the pool contains.
-### Inspecting a Pixel Buffer Adaptor
+### Inspecting a pixel buffer adaptor
 - [var assetWriterInput: AVAssetWriterInput](avassetwriterinputpixelbufferadaptor/assetwriterinput.md)
   The asset writer input to which the adaptor appends pixel buffers.
 
@@ -58,13 +58,13 @@ A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pix
   Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.
-- [Evaluating an App’s Video Color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
 - [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.

@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram demonstrating how a rotation gesture is triggered by the first two fingers that touch the screen](https://docs-assets.developer.apple.com/published/340f1308b6a59f04d8f575c782060041/media-3004407%402x.png)
+![A diagram demonstrating how a rotation gesture begins when the first two fingers touch the screen and move to indicate a rotation.](https://docs-assets.developer.apple.com/published/a6cbad77bad28b658f4185c680528d4e/handling-rotation-gestures-1%402x.png)
 
 Use a rotation gesture recognizer when you want to use rotational movements as input to your app. Rotational gestures are commonly used to manipulate objects onscreen. For example, you might use them to rotate a view or update the value of a custom control. Rotation gestures are continuous, so your action method is called whenever the rotation value changes, giving you a chance to update your content.
 
@@ -39,7 +39,7 @@ The following code demonstrates how to rotate a view in a way that follows a per
 
 If the code for your rotation gesture recognizer isn’t called, or isn’t working correctly, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - At least two fingers are touching the screen.
 - You’re applying rotation factors to your content correctly. Over-rotation happens when you apply the same rotation value more than once. To fix this problem, set the [`rotation`](uirotationgesturerecognizer/rotation.md) property to `0.0` after applying the current rotation value to your content.
 

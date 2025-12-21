@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

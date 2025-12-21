@@ -21,7 +21,7 @@ struct ApertureMode
 
 ## Topics
 
-### Aperture Modes
+### Aperture modes
 - [static let cleanAperture: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/cleanaperture.md)
   A mode that applies both pixel aspect ratio and clean aperture.
 - [static let encodedPixels: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/encodedpixels.md)

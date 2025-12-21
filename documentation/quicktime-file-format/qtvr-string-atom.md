@@ -5,9 +5,6 @@
 
 An atom that contains a string for QuickTime VR.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 A string atom contains a string. The structure of a string atom is defined by the `QTVRStringAtom` data type.

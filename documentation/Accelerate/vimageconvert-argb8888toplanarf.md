@@ -32,7 +32,7 @@ The function uses the following calculation to perform the conversion:
  float result = (maxFloat - minFloat) * (float) srcPixel / 255.0  + minFloat
 ```
 
-The source and destination buffers must have the same height and width.
+The source and destination buffers need to have the same height and width.
 
 ## Parameters
 

@@ -21,7 +21,7 @@ class AVAssetWriterInputPassDescription
 
 ## Topics
 
-### Getting Source Time Ranges
+### Getting source time ranges
 - [var sourceTimeRanges: [NSValue]](avassetwriterinputpassdescription/sourcetimeranges.md)
   An array of time ranges.
 
@@ -51,6 +51,8 @@ class AVAssetWriterInputPassDescription
   A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes.
 - [func respondToEachPassDescription(on: dispatch_queue_t, using: () -> Void)](avassetwriterinput/respondtoeachpassdescription(on:using:).md)
   Tells the input to invoke a callback whenever it begins a new pass.
+- [AVAssetWriterInput.MultiPassController](avassetwriterinput/multipasscontroller.md)
+  Provides an interface to receive an async sequence of pass descriptions for the writer input receiver, if multi-pass is supported.
 
 
 ---

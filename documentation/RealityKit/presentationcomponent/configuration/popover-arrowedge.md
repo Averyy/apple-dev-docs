@@ -6,7 +6,7 @@
 Return a configuration that will present a SwiftUI popover.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

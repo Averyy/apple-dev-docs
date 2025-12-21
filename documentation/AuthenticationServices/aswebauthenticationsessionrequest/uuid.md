@@ -22,10 +22,10 @@ var uuid: UUID { get }
 
 - [var url: URL](aswebauthenticationsessionrequest/url.md)
   The web address the browser should use to perform the authentication request.
-- [var callbackURLScheme: String?](aswebauthenticationsessionrequest/callbackurlscheme.md)
-  The scheme the browser should use to return the result of the authentication attempt to the app requesting it.
 - [var shouldUseEphemeralSession: Bool](aswebauthenticationsessionrequest/shoulduseephemeralsession.md)
   A Boolean that indicates whether the browser should use a private browsing session.
+- [var additionalHeaderFields: [String : String]?](aswebauthenticationsessionrequest/additionalheaderfields.md)
+  Additional headers to send when loading the initial URL.
 
 
 ---

@@ -26,6 +26,7 @@ When someone selects or interacts with a specific text completion suggestion in 
 
 - `suggestion`: The suggestion that someone chose.
 - `visibleSuggestions`: The set of suggestions your app was displaying.
+- `interaction`: The type of interaction with the item. Use this   parameter to indicate whether the person selected the item or interacted with   it in another way.
 
 ## See Also
 

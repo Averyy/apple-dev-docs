@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Enable early data (0-RTT) for TLS.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func earlyDataEnabled(_ val: Bool) -> TLS
+func earlyDataEnabled(_ enabled: Bool) -> TLS
 ```
+
+#### Discussion
+
+> ⚠️ **Warning**: This may have security implications for application data. In particular, TLS early data is replayable by a network attacker. You must account for this when sending data before the handshake is confirmed. See RFC 8446 for more information. You MUST NOT enable fast open without a specific application profile that defines its use.
+
+## Parameters
+
+- `enabled`: True to enable early data, false otherwise.
 
 
 ---

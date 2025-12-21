@@ -32,7 +32,7 @@ Provide the URL of the server to receive the development postbacks. AdAttributio
 
 ![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use to have the framework send development postback information to the developer's server.](https://docs-assets.developer.apple.com/published/c2ce1f1b0d9a6da8bc71a58b6cded827/postback-destination%402x.png)
 
-You can also tap Use Developer Postback URL to generate the full postback copy URL that the app’s `Info.plist` file specifies. This is the same URL that AdAttributionKit generates when creating developer copies of postbacks in full end-to-end flows. For more information on receiving developer postback copies, see [`Configuring an advertised app`](configuring-an-advertised-app.md).
+You can also tap Use Developer Postback URL to generate the full postback copy URL that the app’s information property list specifies. This is the same URL that AdAttributionKit generates when creating developer copies of postbacks in full end-to-end flows. For more information on receiving developer postback copies, see [`Configuring an advertised app`](configuring-an-advertised-app.md).
 
 > **Note**: It’s a best practice to use a server URL that’s different than the production server URL for testing. The testing URL can include a custom path that’s difficult to guess, such as a UUID that you can disable once the test is complete.
 

@@ -276,13 +276,13 @@ taggedBuffers.append(buffer)
 
 - [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
   Convert content with equirectangular or half-equirectangular projection to APMP.
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.
-- [Evaluating an App’s Video Color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
 - [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.

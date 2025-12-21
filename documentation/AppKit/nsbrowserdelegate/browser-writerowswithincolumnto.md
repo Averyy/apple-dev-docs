@@ -17,11 +17,11 @@ optional func browser(_ browser: NSBrowser, writeRowsWith rowIndexes: IndexSet, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the dragging operation to proceed (see discussion for further details); [`false`](https://developer.apple.com/documentation/swift/false) to disallow it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the dragging operation to proceed (see discussion for further details); [`false`](https://developer.apple.com/documentation/Swift/false) to disallow it.
 
 #### Discussion
 
-This method is called after a drag operation has been allowed to start ([`browser(_:canDragRowsWith:inColumn:with:)`](nsbrowserdelegate/browser(_:candragrowswith:incolumn:with:).md) returns [`true`](https://developer.apple.com/documentation/swift/true)), but before it actually begins.
+This method is called after a drag operation has been allowed to start ([`browser(_:canDragRowsWith:inColumn:with:)`](nsbrowserdelegate/browser(_:candragrowswith:incolumn:with:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true)), but before it actually begins.
 
 ## Parameters
 

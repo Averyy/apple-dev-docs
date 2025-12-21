@@ -6,7 +6,7 @@
 A 3D spatial scene created from a 2D image.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ To present a `Spatial3DImage` as a spatial scene, you must first  it. Call the [
 
 > **Note**: You can’t generate a `Spatial3DImage` with the visionOS Simulator. You can create and work with `Spatial3DImage` instances in the Simulator, but calling the [`generate()`](imagepresentationcomponent/spatial3dimage/generate().md) method throws an error.
 
-You can choose to pre-generate a spatial scene in advance of presentation, or post-generate it in response to an interaction such as somene pressing a button.
+You can choose to pre-generate a spatial scene in advance of presentation, or post-generate it in response to an interaction such as someone pressing a button.
 
 In either case, start by creating a new `Spatial3DImage` from a local file URL for an existing image, or from an existing `CGImageSource`.
 
@@ -33,6 +33,8 @@ To pre-generate and present the image as a spatial scene, call the [`generate()`
 To post-generate a spatial scene, create a new [`ImagePresentationComponent`](imagepresentationcomponent.md) from the `Spatial3DImage`  generating it, and add the component to an entity. By default, the component displays the image with a monoscopic ([`mono`](imagepresentationcomponent/viewingmode-swift.struct/mono.md)) viewing mode. If you created the image from a spatial photo, you can choose to present the `Spatial3DImage` as a spatial photo instead by setting the component’s [`desiredViewingMode`](imagepresentationcomponent/desiredviewingmode.md) to [`spatialStereo`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md) or [`spatialStereoImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md).
 
 In your app’s UI, add a button or other trigger to convert the image to 3D. When someone presses the button, set the component’s [`desiredViewingMode`](imagepresentationcomponent/desiredviewingmode.md) to [`spatial3D`](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md) or [`spatial3DImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md), to indicate that you want the component to present the spatial scene as soon as the app finishes generating it. Then, call the [`generate()`](imagepresentationcomponent/spatial3dimage/generate().md) method to begin the generation process. The component displays a generation animation, similar to the Photos app on visionOS, and transitions to presenting the spatial scene as soon as generation completes.
+
+> **Note**: Spatial scenes are created by an AI algorithm that leverages computational depth to create multiple perspectives of a 2D photo. In some cases, spatial scenes may contain visual artifacts. When you include a spatial scene in your app’s UI, consider providing a button to switch to the original 2D photo instead, by setting the component’s [`desiredViewingMode`](imagepresentationcomponent/desiredviewingmode.md) to [`mono`](imagepresentationcomponent/viewingmode-swift.struct/mono.md).
 
 ## Topics
 

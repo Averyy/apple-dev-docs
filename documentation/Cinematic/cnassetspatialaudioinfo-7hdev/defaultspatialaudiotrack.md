@@ -6,11 +6,11 @@
 default `AVAssetTrack` containing Spatial Audio
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 

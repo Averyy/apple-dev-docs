@@ -24,22 +24,6 @@ struct AppShortcutPhrase<Intent> where Intent : AppIntent
 
 ### Creating a shortcut phrase
 - [init(String)](appshortcutphrase/init(_:).md)
-- [init(stringLiteral: String)](appshortcutphrase/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-- [init(stringInterpolation: AppShortcutPhrase<Intent>.StringInterpolation)](appshortcutphrase/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [AppShortcutPhrase.StringInterpolation](appshortcutphrase/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
-### Type Aliases
-- [AppShortcutPhrase.ExtendedGraphemeClusterLiteralType](appshortcutphrase/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [AppShortcutPhrase.StringLiteralType](appshortcutphrase/stringliteraltype.md)
-  A type that represents a string literal.
-- [AppShortcutPhrase.UnicodeScalarLiteralType](appshortcutphrase/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](appshortcutphrase/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](appshortcutphrase/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

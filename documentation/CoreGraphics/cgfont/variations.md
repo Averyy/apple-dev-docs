@@ -22,7 +22,7 @@ var variations: CFDictionary? { get }
 
 #### Discussion
 
-The variation specification dictionary contains keys that correspond to the variation axis names of the font. Each key is a variation axis name. The value for each key is the value specified for that particular variation axis represented as a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd object.
+The variation specification dictionary contains keys that correspond to the variation axis names of the font. Each key is a variation axis name. The value for each key is the value specified for that particular variation axis represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
 
 ## See Also
 

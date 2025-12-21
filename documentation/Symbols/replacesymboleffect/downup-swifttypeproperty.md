@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+Returns an effect requesting the Down-Up variant of the Replace animation.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static var downUp: ReplaceSymbolEffect { get }
 ```
+
+#### Discussion
+
+The initial symbol scales down as it is removed, and the new symbol scales up as it is added.
 
 
 ---

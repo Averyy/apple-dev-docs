@@ -40,10 +40,10 @@ For tips on how to prepare images, see [`Debug issues with your image view`](uii
 Images are composited onto the image view’s background and are then composited into the rest of the window. Any transparency in the image allows the image view’s background to show through. Similarly, any further transparency in the background of the image is dependent on the transparency of the image view and the transparency of the [`UIImage`](uiimage.md) object it displays. When the image view and its image both have transparency, the image view uses alpha blending to combine the two.
 
 - The image is composited onto the image view’s background.
-- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the image’s pixels are composited on top of the image view’s background color and the [`alpha`](uiview/alpha.md) property of the image view is ignored.
-- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the alpha value of each pixel is multiplied by the image view’s [`alpha`](uiview/alpha.md) value, with the resulting value becoming the actual transparency value for that pixel. If the image doesn’t have an alpha channel, the alpha value of each pixel is assumed to be `1.0`.
+- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the image’s pixels are composited on top of the image view’s background color and the [`alpha`](uiview/alpha.md) property of the image view is ignored.
+- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the alpha value of each pixel is multiplied by the image view’s [`alpha`](uiview/alpha.md) value, with the resulting value becoming the actual transparency value for that pixel. If the image doesn’t have an alpha channel, the alpha value of each pixel is assumed to be `1.0`.
 
-> ❗ **Important**:  It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
+> ❗ **Important**:  It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
 
 ##### Animate a Sequence of Images
 
@@ -58,7 +58,7 @@ Consider the following tips when displaying a sequence of animated images:
 
 ##### Respond to Touch Events
 
-Image views ignore user events by default. Normally, you use image views only to present visual content in your interface. If you want an image view to handle user interactions as well, change the value of its [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true). After doing that, you can attach gesture recognizers or use any other event handling techniques to respond to touch events or other user-initiated events.
+Image views ignore user events by default. Normally, you use image views only to present visual content in your interface. If you want an image view to handle user interactions as well, change the value of its [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). After doing that, you can attach gesture recognizers or use any other event handling techniques to respond to touch events or other user-initiated events.
 
 For more information about handling events, see [`Event Handling Guide for UIKit Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html#//apple_ref/doc/uid/TP40009541).
 
@@ -68,7 +68,7 @@ Image scaling and alpha blending are two relatively expensive operations that ca
 
 -  If you expect certain large images to be displayed frequently in a scaled-down thumbnail view, consider creating the scaled-down images in advance and storing them in a thumbnail cache. Doing so alleviates the need for each image view to scale them separately.
 -  Rather than assigning a large image to an image view, created a scaled version that matches the current size of the image view. You can also create a resizable image object using the [`UIImage.ResizingMode.tile`](uiimage/resizingmode-swift.enum/tile.md) option, which tiles the image instead of scaling it.
--  Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
+-  Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/Swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
 
 ##### Debug Issues with Your Image View
 
@@ -176,7 +176,7 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
   Represents a symbol content transition and options.
 ### Managing focus-related behaviors
 - [var adjustsImageWhenAncestorFocused: Bool](uiimageview/adjustsimagewhenancestorfocused.md)
-  Allows [`UIImageView`](uiimageview.md) to respond when an ancestor becomes focused.
+  A Boolean value that determines whether the image view responds when an ancestor gains focus.
 - [var focusedFrameGuide: UILayoutGuide](uiimageview/focusedframeguide.md)
   The layout guide to use when the image view is focused.
 - [var masksFocusEffectToContents: Bool](uiimageview/masksfocuseffecttocontents.md)
@@ -236,8 +236,6 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

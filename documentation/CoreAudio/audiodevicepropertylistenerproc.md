@@ -13,6 +13,24 @@
 typealias AudioDevicePropertyListenerProc = (AudioDeviceID, UInt32, DarwinBoolean, AudioDevicePropertyID, UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+#### Return Value
+
+The return value is currently unused and should always be 0.
+
+#### Discussion
+
+Clients register an AudioDevicePropertyListenerProc with the AudioDevice object in order to receive notifications when the properties of the object change.
+
+Note that the same functionality is provided by AudioObjectPropertyListenerProc.
+
+## Parameters
+
+- `inDevice`: The AudioDevice whose property has changed.
+- `inChannel`: The channel of the property that changed where 0 is the main channel.
+- `isInput`: Which section of the AudioDevice changed.
+- `inPropertyID`: The AudioDevicePropertyID of the property that changed.
+- `inClientData`: A pointer to client data established when the listener proc was registered   with the object.
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

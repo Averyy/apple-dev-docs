@@ -41,7 +41,9 @@ For information on how the navigation bar is updated, see [`Updating the navigat
 - [func popToRootViewController(animated: Bool) -> [UIViewController]?](uinavigationcontroller/poptorootviewcontroller(animated:).md)
   Pops all the view controllers on the stack except the root view controller and updates the display.
 - [var interactivePopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivepopgesturerecognizer.md)
-  The gesture recognizer responsible for popping the top view controller off the navigation stack.
+  The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+- [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
+  The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person pans horizontally in the view.
 
 
 ---

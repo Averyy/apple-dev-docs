@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-@backDeployed(before: visionOS 3.0)
+@backDeployed(before: visionOS 26.0)
 static func unitPoint3D(_ p: UnitPoint3D) -> Anchor<Value>.Source
 ```
 

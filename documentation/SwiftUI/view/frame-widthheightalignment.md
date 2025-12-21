@@ -23,9 +23,9 @@ func frame(width: CGFloat? = nil, height: CGFloat? = nil, alignment: Alignment =
 
 ## Mentions
 
+- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Configuring views](configuring-views.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
 
 #### Return Value
 

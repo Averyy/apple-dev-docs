@@ -6,7 +6,7 @@
 Create a new session connected to the specified device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

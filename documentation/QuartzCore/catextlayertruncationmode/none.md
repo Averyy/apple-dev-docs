@@ -21,7 +21,7 @@ static let none: CATextLayerTruncationMode
 
 #### Discussion
 
-If the [`isWrapped`](catextlayer/iswrapped.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the text is wrapped to the receiver’s bounds, otherwise the text is clipped to the receiver’s bounds.
+If the [`isWrapped`](catextlayer/iswrapped.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the text is wrapped to the receiver’s bounds, otherwise the text is clipped to the receiver’s bounds.
 
 ## See Also
 

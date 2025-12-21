@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -38,17 +38,21 @@ struct HKUserAnnotatedMedicationQueryDescriptor
 ## See Also
 
 - [class HKClinicalCoding](hkclinicalcoding.md)
+  A clinical coding that represents a medical concept using a standardized coding system.
 - [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+  A unique identifier for a specific health concept within a domain.
 - [class HKMedicationConcept](hkmedicationconcept.md)
+  An object that describes a specific medication concept.
 - [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
 - [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
 - [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+  A reference to the tracked medication and the details a person can customize.
 - [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
 - [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
 - [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
-  Represents the domain of a HKHealthConceptIdentifier
+  A domain that represents a health concept.
 - [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
-  Represents a medications general form.
+  The manufactured form of a medication.
 
 
 ---

@@ -71,6 +71,12 @@ The names of these placements aren’t visible in the user interface, but the di
 - [static let help: CommandGroupPlacement](commandgroupplacement/help.md)
   Placement for commands that present documentation and helpful information to people.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [func commands<Content>(content: () -> Content) -> some Scene](scene/commands(content:).md)

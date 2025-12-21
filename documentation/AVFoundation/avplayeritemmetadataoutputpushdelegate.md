@@ -26,7 +26,7 @@ This protocol extends the [`AVPlayerItemOutputPushDelegate`](avplayeritemoutputp
 
 ## Topics
 
-### Combining Timed Metadata Groups
+### Combining timed metadata groups
 - [func metadataOutput(AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups: sending [AVTimedMetadataGroup], from: AVPlayerItemTrack?)](avplayeritemmetadataoutputpushdelegate/metadataoutput(_:didoutputtimedmetadatagroups:from:).md)
   Tells the delegate a new collection of metadata items is available.
 

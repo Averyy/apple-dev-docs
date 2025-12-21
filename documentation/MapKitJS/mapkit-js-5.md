@@ -8,12 +8,19 @@ Use the most up-to-date version of MapKit JS on your website.
 
 This document includes release notes for updates to MapKit JS 5. You can learn more about MapKit JS version numbers and how to automatically link to the latest available version in [`Loading the latest version of MapKit JS`](loading-the-latest-version-of-mapkit-js.md).
 
+##### 580
+
+###### New Features
+
+- MapKit JS now supports TypeScript definitions as part of the DefinitelyTyped project; see the `@types/apple-mapkit` package.
+- Introduced a loader to make integrating MapKit JS into projects more convenient.
+
 ##### 579
 
 ###### New Features
 
-- [`mapkit.Directions.Transport`](mapkit.directions.transport.md) supports a new transport type, [`Cycling`](mapkit.directions.transport/cycling.md), for directions and ETAs.
-- Introduced the ability to enable 360-degree interactive Look Around imagery with [`mapkit.LookAround`](mapkit.lookaround.md) and [`mapkit.LookAroundPreview`](mapkit.lookaroundpreview.md).
+- [`TransportType`](transporttype.md) supports a new transport type, [`Cycling`](transporttype/cycling.md), for directions and ETAs.
+- Introduced the ability to enable 360-degree interactive Look Around imagery with [`LookAround`](lookaround.md) and [`LookAroundPreview`](lookaroundpreview.md).
 
 ###### Updates
 
@@ -25,7 +32,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 
 ###### New Features
 
-- The framework now supports expanded Point of interest categories.
+- The framework now supports expanded point-of-interest categories.
 
 ##### 578279
 
@@ -45,8 +52,8 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 ###### New Features
 
 - Introduced a new way to generate developer tokens.
-- Introduced [`mapkit.PlaceSelectionAccessory`](mapkit.placeselectionaccessory.md) and [`mapkit.PlaceDetail`](mapkit.placedetail.md), allowing developers to display details of a location.
-- Introduced [`mapkit.PlaceAnnotation`](mapkit.placeannotation.md) that allows developers to place markers with iconographies from the map view.
+- Introduced [`PlaceSelectionAccessory`](placeselectionaccessory.md) and [`PlaceDetail`](placedetail.md), which allow developers to display details of a location.
+- Introduced [`PlaceAnnotation`](placeannotation.md), which  allows developers to place markers with iconography from the map view.
 - Introduced Place ID and its lookup API.
 - Introduced new Search filtering capabilities to enforce strict search region, or only return address locations.
 
@@ -90,7 +97,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 
 ###### New Features
 
-- Map features (Point of interest and territory labels) are now selectable.
+- Map features (point-of-interest and territory labels) are now selectable.
 
 ##### 5731
 
@@ -140,7 +147,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 
 ###### Updates
 
-- Fixed an issue that causes setting [`cameraBoundary`](mapkit.map/cameraboundary.md) to change the map region (Feedback ID: 3518887)
+- Fixed an issue that causes setting [`cameraBoundary`](map/cameraboundary.md) to change the map region. (Feedback ID: 3518887)
 
 ##### 5502
 
@@ -149,7 +156,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 - Introduced new styles for built-in controls (zoom buttons, map type picker, etc).
 - Introduced a new map type popover.
 - Introduced a new user location annotation style.
-- Introduce a new [`None`](mapkit.map.loadpriorities/none.md) collision mode for annotations.
+- Introduced a new [`None`](collisionmode/none.md) collision mode for annotations.
 
 ##### 5490
 
@@ -161,7 +168,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 
 ###### New Features
 
-- Calling `Event.preventDefault()` on  `single-tap` event will now prevents annotation selection.
+- Calling `Event.preventDefault()` on `single-tap` event now prevents annotation selection.
 
 ##### 5450
 
@@ -169,13 +176,13 @@ MapKit JS 5.45.0 introduces new APIs for overlay styling and animation and a new
 
 ###### New Features
 
-- Added the ability to draw polyline overlays dynamically with new primitives for polyline overlay animation. The start and end point of the polyline rendering can be programmatically controlled with [`strokeStart`](mapkit.style/strokestart.md) and [`strokeEnd`](mapkit.style/strokeend.md) properties.
-- Introduced the [`mapkit.LineGradient`](mapkit.linegradient/mapkit.linegradient.md) class for specifying color gradients on polyline overlays.
-- Added the ability to search Points of Interest in a specific region with the new [`mapkit.PointsOfInterestSearch`](mapkit.pointsofinterestsearch.md) API.
+- Added the ability to draw polyline overlays dynamically with new primitives for polyline overlay animation. The start and end point of the polyline rendering can be programmatically controlled with [`strokeStart`](style/strokestart.md) and [`strokeEnd`](style/strokeend.md) properties.
+- Introduced the [`LineGradient`](linegradient.md) class for specifying color gradients on polyline overlays.
+- Added the ability to search Points of Interest in a specific region with the new [`PointsOfInterestSearch`](pointsofinterestsearch.md) API.
 
 ###### Updates
 
-- Updated the [`addItems`](mapkit.map/additems.md) method to return the items passed.
+- Updated the [`addItems(items)`](map/additems.md) method to return the items passed.
 
 ##### 5440
 
@@ -183,8 +190,8 @@ MapKit JS 5.44.0 introduces new properties for Directions, increases the maximum
 
 ###### New Features
 
-- Added [`departureDate`](directionsrequest/departuredate.md) and [`arrivalDate`](directionsrequest/arrivaldate.md) properties to the [`mapkit.Directions`](mapkit.directions.md) API that enable more accurate travel time predictions based on arrival or departure date.
-- Increased maximum zoom level on the Standard style map to improve visibility of indoor map details.
+- Added [`departureDate`](directionsrequest/departuredate.md) and [`arrivalDate`](directionsrequest/arrivaldate.md) properties to the [`Directions`](directions.md) API that enable more accurate travel time predictions based on arrival or departure date.
+- Increased the maximum zoom level on the Standard style map to improve visibility of indoor map details.
 
 ###### Updates
 
@@ -205,11 +212,11 @@ MapKit JS 5.42.1 includes bug fixes for rotation events and map regions.
 ###### Updates
 
 - Ensured that `preventDefault()` can be used with `rotation-start`,  like other map events described in [`Handling map events`](handling-map-events.md).
-- Ensured that MapKit JS shows the same area if a developer uses the same [`mapkit.CoordinateRegion`](mapkit.coordinateregion.md) to set the viewable map area during initialization and to later change the viewable map area with [`setRegionAnimated`](mapkit.map/setregionanimated.md). (Feedback ID: 7626496)
+- Ensured that MapKit JS shows the same area if a developer uses the same [`CoordinateRegion`](coordinateregion.md) to set the viewable map area during initialization and to later change the viewable map area with [`setRegionAnimated(region, animated)`](map/setregionanimated.md). (Feedback ID: 7626496)
 
 ##### 5411
 
-MapKit JS 5.41.1 includes enhancements to the [`mapkit.Geocoder`](mapkit.geocoder/mapkit.geocoder.md) and [`mapkit.Search`](mapkit.search/mapkit.search.md) responses, plus bug fixes for rotation events and very large maps.
+MapKit JS 5.41.1 includes enhancements to the [`Geocoder`](geocoder.md) and [`Search`](search.md) responses, plus bug fixes for rotation events and very large maps.
 
 ###### New Features
 
@@ -227,7 +234,7 @@ MapKit JS 5.40.0 includes bug fixes for event reporting and controls.
 ###### Updates
 
 - Added asynchronous reporting of failed configuration.
-- Improved visibility of map controls in Chrome by decreasing their transparency in dark mode.
+- Improved visibility of map controls in Chrome by decreasing their transparency in Dark Mode.
 - Added the ability to reset the map rotation to zero by pressing the spacebar when the compass control has focus.
 
 ##### 5390
@@ -247,8 +254,8 @@ MapKit JS 5.38.1 includes bug fixes for annotations, annotation clustering, and 
 
 - Show default marker annotation appearance (red balloon with a white pin glyph) when the image for an `ImageAnnotation` can’t be found.
 - Ensured annotation clustering doesn’t animate if the clusters aren’t visible.
-- Made sure that annotation cluster positions stay consistent when zooming.
-- Made sure that the Apple logo and Legal link are always visible on the map, even if `padding` has a negative value.
+- Ensured that annotation cluster positions stay consistent when zooming.
+- Ensured that the Apple logo and Legal link are always visible on the map, even if `padding` has a negative value.
 
 ##### 5360
 
@@ -261,12 +268,12 @@ MapKit JS 5.36.0 includes bug fixes.
 
 ##### 5350
 
-MapKit JS 5.35.0 includes bug fixes for Point of Interest (POI) Filtering and performance.
+MapKit JS 5.35.0 includes bug fixes for point-of-interest (POI) Filtering and performance.
 
 ###### Updates
 
 - Ensured that `map.pointOfInterestFilter.includesCategory` returns `false` when POI aren’t showing on the map.
-- Improved rendering performance when the current location annotation is showing on the map.
+- Improved rendering performance when the current location annotation shows on the map.
 - Improved panning and zooming performance when there are no annotations on the map.
 
 ##### 5342
@@ -278,23 +285,23 @@ MapKit JS 5.34.2 includes bug fixes for tile loading, annotations, and map contr
 - Ensured that the map tiles continue to load in cases where the developer initializes the map more than once. (Feedback ID: 7335445)
 - Fixed `calloutAppearanceAnimationForAnnotation` for animations on custom callouts.
 - Applied a dark style to the current location annotation callout when the map is in dark mode.
-- Made sure that the map type control always shows the active map after opening the map type menu.
+- Ensured that the map type control always shows the active map after opening the map type menu.
 
 ##### 5331
 
-MapKit JS 5.33.1 includes new APIs for Point of Interest (POI) Filtering, plus bug fixes.
+MapKit JS 5.33.1 includes new APIs for point-of-interest (POI) filtering, plus bug fixes.
 
 ###### New Features
 
-- Added new APIs that let a client apply filters to show or hide specific categories of Points of Interest (POIs) on the map, like “Parks” or “Restaurants”. These filters can also be applied to Search and Search Autocomplete results. For more information, see [`What’s New in MapKit and MapKit JS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/236/).
+- Added new APIs that let a client apply filters to show or hide specific categories of points of interest (POIs) on the map, like “Parks” or “Restaurants”. You can apply these filters to Search and Search Autocomplete results. For more information, see [`What’s New in MapKit and MapKit JS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/236/).
 
 ###### Updates
 
 - Adjusted the order of focused controls while tabbing to be more intuitive.
-- Made sure that custom annotation callouts apply the `overflow:scroll` style when the developer sets it.
+- Ensured that custom annotation callouts apply the `overflow:scroll` style when the developer sets it.
 - Ensured that the user location annotation doesn’t overlap other annotations added to the map.
 - Prevented marker annotations from being inadvertently styled by CSS in the embedding page.
-- Decreased the sensitivity of two-finger zooming to avoid unintentional zooms. For example, a zoom gesture should not be initiated when the user places two fingers on the trackpad.
+- Decreased the sensitivity of two-finger zooming to avoid unintentional zooms. For example, a zoom gesture shouldn’t initiate when someone places two fingers on the trackpad.
 
 ##### 5322
 
@@ -321,8 +328,8 @@ MapKit JS 5.29.0 improves accessibility, performance, and the appearance of cont
 
 ###### Updates
 
-- Improved the performance of [`importGeoJSON`](mapkit/importgeojson.md) by ensuring that the main thread is never blocked.
-- Updated controls so that when a user clicks or taps a control that has focus, it retains focus.
+- Improved the performance of [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) by ensuring that the main thread is never blocked.
+- Updated controls so that when someone clicks or taps a control that has focus, it retains focus.
 - Ensured controls that mirror for right-to-left languages also mirror the pressed state of the zoom buttons.
 
 ##### 5281
@@ -345,9 +352,9 @@ MapKit JS 5.25.0 includes various improvements for controls, GeoJSON import, and
 - MapKit JS controls (+/- buttons, compass, Legal link, and so on) are no longer affected by CSS on the enclosing page.
 - Updated the Legal link so it connects to HI-IN, IW-IL, and VI-VN localized pages when MapKit JS is running one of these languages.
 - Updated spacing on the Apple Maps logo.
-- Made various improvements to GeoJSON import, such as adding the ability to handle null geometries in Features, ensuring that an ItemCollection is returned even for single item imports, and improving error message reporting.
+- Made various improvements to GeoJSON import, such as adding the ability to handle null geometries in Features, ensuring that an `ItemCollection` is returned even for single item imports, and improving error message reporting.
 - Improved clustering behavior when member annotations are on both sides of the antimeridian.
-- Ensured that [`annotationsInMapRect`](mapkit.map/annotationsinmaprect.md) does not return cluster annotations, to match the behavior of [`annotations`](mapkit.map/annotations.md).
+- Ensured that [`annotationsInMapRect(mapRect)`](map/annotationsinmaprect.md) doesn’t return cluster annotations, to match the behavior of [`annotations`](map/annotations.md).
 
 ##### 5240
 
@@ -357,11 +364,11 @@ MapKit JS 5.24.0 includes various improvements, including changes to how the App
 
 - Improved how marker annotations animate in and out of clusters.
 - Improved how annotation clusters are grouped, so that one annotation cluster never overlaps another.
-- The [`showItems`](mapkit.map/showitems.md) function now updates the map region in a way that encloses annotation callouts visible on selected annotations, so that any callouts showing will not be cut off the edge of the map.
+- The [`showItems(items, options)`](map/showitems.md) function now updates the map region in a way that encloses annotation callouts visible on selected annotations, so that any callouts showing aren’t’ cut off the edge of the map.
 - The Legal link is now always shown, for all map dimensions.
 - The Apple Maps logo in the lower left corner is now displayed on maps with dimensions of 200 x 100 pixels and larger.
 - The time to detect a `long-press` map event has been increased to 500 ms. See [`Handling map events`](handling-map-events.md) for more information.
-- Improve how [`cameraZoomRange`](mapkit.map/camerazoomrange.md) and [`cameraBoundary`](mapkit.map/cameraboundary.md) behave for users in China.
+- Improved how [`cameraZoomRange`](map/camerazoomrange.md) and [`cameraBoundary`](map/cameraboundary.md) behave for users in China.
 
 ##### 5231
 
@@ -369,16 +376,16 @@ MapKit JS 5.23.1 includes new APIs for region and zoom limits, an updated Apple 
 
 ###### New Features
 
-- Added the [`cameraDistance`](mapkit.map/cameradistance.md) property, which sets the altitude of the camera above the center of the map. A change to the map’s camera distance can be animated with [`setCameraDistanceAnimated`](mapkit.map/setcameradistanceanimated.md).
-- Added the [`cameraZoomRange`](mapkit.map/camerazoomrange.md) property, which restricts zooming to a specified minimum and maximum camera distance. A change to the map’s camera zoom range can be animated with [`setCameraZoomRangeAnimated`](mapkit.map/setcamerazoomrangeanimated.md).
-- Added the [`cameraBoundary`](mapkit.map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated`](mapkit.map/setcameraboundaryanimated.md).
+- Added the [`cameraDistance`](map/cameradistance.md) property, which sets the altitude of the camera above the center of the map. A change to the map’s camera distance can be animated with [`setCameraDistanceAnimated(distance, animated)`](map/setcameradistanceanimated.md).
+- Added the [`cameraZoomRange`](map/camerazoomrange.md) property, which restricts zooming to a specified minimum and maximum camera distance. A change to the map’s camera zoom range can be animated with [`setCameraZoomRangeAnimated(cameraZoomRange, animated)`](map/setcamerazoomrangeanimated.md).
+- Added the [`cameraBoundary`](map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated(mapRect, animated)`](map/setcameraboundaryanimated.md).
 - Enabled Directions support for users in China.
-- Updated logo in the lower left corner from the Apple icon to the icon beside the word “Maps”.
+- Updated the logo in the lower left corner from the Apple icon to the icon beside the word “Maps”.
 
 ###### Updates
 
-- Fixed issue where [`importGeoJSON`](mapkit/importgeojson.md) would not import a `GeometryCollection` nested within a `Feature.`
-- Improved how the default marker annotation color is set depending on the map’s [`colorScheme`](mapkit.map/colorscheme.md). Setting a marker annotation’s color property to `null` sets a default color that matches the current [`colorScheme`](mapkit.map/colorscheme.md).
+- Fixed issue where [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) would not import a `GeometryCollection` nested within a `Feature.`
+- Improved how the default marker annotation color is set depending on the map’s [`colorScheme`](map/colorscheme.md). Setting a marker annotation’s color property to `null` sets a default color that matches the current [`colorScheme`](map/colorscheme.md).
 - Updated the Legal link on the map to open a web page, instead of displaying a menu.
 
 ##### 5220
@@ -413,7 +420,7 @@ The MapKit JS 5.20.3 release includes bug fixes and performance improvements.
 - Improved annotations to warn instead of throw an error in some selection and deselection cases.
 - Improved positioning logic for Annotation glyph text.
 - Improved performance of annotation image assets.
-- Fixed bug in callout where [`glyphImage`](markerannotationconstructoroptions/glyphimage.md) was always used instead of [`selectedGlyphImage`](mapkit.markerannotation/selectedglyphimage.md) where appropriate.
+- Fixed a bug in the callout  where [`glyphImage`](markerannotationconstructoroptions/glyphimage.md) was always used instead of [`selectedGlyphImage`](markerannotation/selectedglyphimage.md) where appropriate.
 
 ##### 5191
 
@@ -431,7 +438,7 @@ The MapKit JS 5.18.0 release includes new map interaction events and bug fixes.
 
 - Updated the behavior of setters that cause a selection state to change. For example, setting a `selected` property or adding a selected annotation cannot be done within the callback of `select` or `deselect` event listeners. Doing so will throw an error.
 - Improved rotation animation when a map has padding.
-- Fixed issue where a [`language`](mapkit/language.md) set by a property (instead of by the [`MapKitInitOptions`](mapkitinitoptions.md)) would be reset upon initialization.
+- Fixed an issue where a [`language`](mapkit/language.md) set by a property (instead of by the [`MapKitInitializationOptions`](mapkitinitializationoptions.md)) would be reset upon initialization.
 
 ##### 5171
 
@@ -439,8 +446,8 @@ The MapKit JS 5.17.1 release improves the behavior of rotation when a map has pa
 
 ###### Updates
 
-- Fixed issue where [`rotation`](mapkit.map/rotation.md) was reset after certain map interactions.
-- Fixed compass control to correctly rotate around the center when the map has [`padding`](mapkit.map/padding.md).
+- Fixed issue where [`rotation`](map/rotation.md) was reset after certain map interactions.
+- Fixed compass control to correctly rotate around the center when the map has [`padding`](map/padding.md).
 
 ##### 5160
 
@@ -464,9 +471,9 @@ MapKit JS 5.13.0 includes new APIs that allow you to present maps in various sty
 
 ###### New Features
 
-- Added support for displaying the map in a muted style, which can be enabled by setting the [`mapType`](mapkit.map/maptype.md) property to [`MutedStandard`](mapkit.map.maptypes/mutedstandard.md).
-- Added support for displaying the map in dark mode, which can be enabled by setting the new [`colorScheme`](mapkit.map/colorscheme.md) property on the Map object to [`Dark`](mapkit.map.colorschemes/dark.md). The default value for [`colorScheme`](mapkit.map/colorscheme.md) is [`Light`](mapkit.map.colorschemes/light.md).
-- Added support for customizing the display of distances, as in the scale control. The new [`distances`](mapkit.map/distances.md) property on the Map object can be set to [`Metric`](mapkit.map.distances/metric.md) or [`Imperial`](mapkit.map.distances/imperial.md) to always display metric or imperial units, respectively.
+- Added support for displaying the map in a muted style, which can be enabled by setting the [`mapType`](map/maptype.md) property to [`MutedStandard`](maptype/mutedstandard.md).
+- Added support for displaying the map in dark mode, which can be enabled by setting the new [`colorScheme`](map/colorscheme.md) property on the Map object to [`Dark`](colorscheme/dark.md). The default value for [`colorScheme`](map/colorscheme.md) is [`Light`](colorscheme/light.md).
+- Added support for customizing the display of distances, as in the scale control. The new [`distances`](map/distances-data.property.md) property on the Map object can be set to [`Metric`](distance/metric.md) or [`Imperial`](distance/imperial.md) to always display metric or imperial units, respectively.
 
 ###### Updates
 
@@ -488,7 +495,7 @@ The MapKit JS 5.10.2 release includes performance improvements and bug fixes.
 
 ###### Updates
 
-- Setting [`isScrollEnabled`](mapkit.map/isscrollenabled.md) to false can disable scrolling for the enclosing web page on touch devices. (Feedback ID: 45583214)
+- Setting [`isScrollEnabled`](map/isscrollenabled.md) to false can disable scrolling for the enclosing web page on touch devices. (Feedback ID: 45583214)
 - `navigator.geolocation.watchPosition` is `undefined`. (Feedback ID: 44311161)
 - The Legal link has moved to the bottom-left of the map, next to the Apple logo.
 - Improved overall performance when there are hundreds of annotations on the map.
@@ -512,9 +519,9 @@ This update also introduces a [`MapKit JS Usage Dashboard`](https://developer.ap
 ###### Updates
 
 - Added detailed building outlines and parking lots, better road network coverage, and more, in supported areas.
-- [`mapkit.MarkerAnnotation`](mapkit.markerannotation.md) has been updated so that instances with the same [`clusteringIdentifier`](mapkit.annotation/clusteringidentifier.md) cluster together regardless of their [`displayPriority`](annotationconstructoroptions/displaypriority.md) value.
-- When [`displayPriority`](mapkit.annotation/displaypriority.md) is set, the animation for the appearance and disappearance of [`mapkit.MarkerAnnotation`](mapkit.markerannotation.md) can be triggered. Now, the animation will also be triggered when an annotation is hidden by other annotations or when it reappears after a change in zoom level.
-- The [`DirectionsResponse`](directionsresponse.md) now includes a [`polyline`](route/polyline.md) property. The value of this property is a [`mapkit.PolylineOverlay`](mapkit.polylineoverlay.md), and can be added directly to a map.
+- [`MarkerAnnotation`](markerannotation.md) is updated so that instances with the same [`clusteringIdentifier`](annotation/clusteringidentifier.md) cluster together regardless of their [`displayPriority`](annotationconstructoroptions/displaypriority.md) value.
+- When [`displayPriority`](annotation/displaypriority-data.property.md) is set, the animation for the appearance and disappearance of [`MarkerAnnotation`](markerannotation.md) can be triggered. Now, the animation is also triggered when an annotation is hidden by other annotations or when it reappears after a change in zoom level.
+- The [`DirectionsResponse`](directionsresponse.md) now includes a [`polyline`](route/polyline.md) property. The value of this property is a [`PolylineOverlay`](polylineoverlay.md), and can be added directly to a map.
 
 ###### Deprecated Features
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The dictionary to configure Platform SSO.
+The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
 
 **Availability**:
 - macOS 14.0+
@@ -13,6 +13,11 @@ The dictionary to configure Platform SSO.
 ```swift
 object ExtensibleSingleSignOn.PlatformSSO
 ```
+
+## Mentions
+
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 
 ## Topics
 

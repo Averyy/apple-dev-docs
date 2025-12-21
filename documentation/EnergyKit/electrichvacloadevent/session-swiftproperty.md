@@ -6,10 +6,10 @@
 The session information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ An HVAC system between its cooling or heating cycles can be idling and load even
 
 ## See Also
 
-- [let id: UUID](electrichvacloadevent/id-swift.property.md)
+- [let id: UUID](electrichvacloadevent/id.md)
   The unique identifier of the electrical load event.
 - [let timestamp: Date](electrichvacloadevent/timestamp.md)
   The timestamp for when the event occurred.

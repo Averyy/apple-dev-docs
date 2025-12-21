@@ -28,10 +28,6 @@ Used for performing work which the user is unlikely to be immediately waiting fo
 - [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
 - [QualityOfService.background](qualityofservice/background.md)
 - [QualityOfService.default](qualityofservice/default.md)
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
 
 
 ---

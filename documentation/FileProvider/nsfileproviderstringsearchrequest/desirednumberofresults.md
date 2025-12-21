@@ -6,7 +6,7 @@
 How many results the system is requesting. This is a hint to the extension, to help avoid unnecessary work. The extension may return more results than this.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

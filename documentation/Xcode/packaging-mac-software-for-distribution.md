@@ -50,7 +50,7 @@ If you choose to distribute your product in an Installer package, start by deter
 - If you’re distributing an app on the Mac App Store, use a Mac Installer Distribution signing identity. This is named `3rd Party Mac Developer Installer: <TeamID>`, where `<TeamID>` identifies your team.
 - If you’re distributing a product independently, use a Developer ID Installer-signing identity. This is named `Developer ID Installer: <TeamID>`, where `<TeamID>` identifies your team.
 
-For information on how to set up these Installer-signing identities, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/).
+For information on how to set up these Installer-signing identities, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
 
 Run the following command to confirm that your Installer-signing identity is present and correct:
 
@@ -61,7 +61,7 @@ Run the following command to confirm that your Installer-signing identity is pre
      2 valid identities found
 ```
 
-The `-v` argument filters for valid identities only. If the Installer-signing identity you need isn’t listed, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/).
+The `-v` argument filters for valid identities only. If the Installer-signing identity you need isn’t listed, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
 
 > ❗ **Important**: Don’t use the `-p codesigning` option to filter for code-signing identities. Installer-signing identities are different from code-signing identities, so the `-p codesigning` option filters out installer-signing identities.
 

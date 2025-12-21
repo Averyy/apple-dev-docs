@@ -6,11 +6,11 @@
 A sampling mode that always chooses the most likely token.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,8 @@ static var greedy: GenerationOptions.SamplingMode { get }
 #### Discussion
 
 Using this mode will always result in the same output for a given input. Responses produced with greedy sampling are statistically likely, but may lack the human-like quality and variety of other sampling strategies.
+
+> **Note**: Sampling modes [`random(top:seed:)`](generationoptions/samplingmode/random(top:seed:).md) and [`random(probabilityThreshold:seed:)`](generationoptions/samplingmode/random(probabilitythreshold:seed:).md)
 
 ## See Also
 

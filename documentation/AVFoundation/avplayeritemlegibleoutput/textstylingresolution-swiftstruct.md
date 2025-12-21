@@ -21,7 +21,7 @@ struct TextStylingResolution
 
 ## Topics
 
-### Text Styling Options
+### Text styling options
 - [static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/default.md)
   The text styling information is the same level of information that AVFoundation uses within a player layer.
 - [static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/sourceandrulesonly.md)

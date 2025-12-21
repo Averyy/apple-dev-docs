@@ -6,7 +6,7 @@
 Automatically uses an appropriate color rendering mode for the symbol’s color layers.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

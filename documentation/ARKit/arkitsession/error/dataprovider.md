@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
-The data provider that caused an error in a session.
+The data provider that causes an error in a session, if any.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

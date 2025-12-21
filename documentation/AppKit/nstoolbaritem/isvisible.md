@@ -20,7 +20,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the item is visible in the toolbar, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t in the toolbar or is present in the toolbar’s overflow menu. This property is key-value observing (KVO) compliant.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the item is visible in the toolbar, and [`false`](https://developer.apple.com/documentation/Swift/false) when it isn’t in the toolbar or is present in the toolbar’s overflow menu. This property is key-value observing (KVO) compliant.
 
 ## See Also
 
@@ -31,6 +31,10 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   A Boolean value that indicates whether the item behaves as a navigation item in the toolbar.
 - [var isEnabled: Bool](nstoolbaritem/isenabled.md)
   A Boolean value that indicates whether the item is enabled.
+- [var badge: NSItemBadge?](nstoolbaritem/badge-17r3r.md)
+  A badge that can be attached to an NSToolbarItem. This provides a way to display small visual indicators that can be used to highlight important information, such as unread notifications or status indicators.
+- [struct NSItemBadge](nsitembadge-swift.struct.md)
+  `NSItemBadge` represents a badge that can be attached to an `NSToolbarItem`.
 - [var style: NSToolbarItem.Style](nstoolbaritem/style-swift.property.md)
   Defines the toolbar item’s appearance. The default style is plain. Prominent style tints the background. If a background tint color is set, it uses it; otherwise, it uses the app’s or system’s accent color. If grouped with other items, it moves to its own to avoid tinting other items’ background.
 - [NSToolbarItem.Style](nstoolbaritem/style-swift.enum.md)

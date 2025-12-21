@@ -8,7 +8,6 @@ A request that analyzes an image for aesthetically pleasing attributes.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,18 +27,6 @@ The request returns the resulting aesthetics score in an instance of [`ImageAest
 ### Creating a request
 - [init(CalculateImageAestheticsScoresRequest.Revision?)](calculateimageaestheticsscoresrequest/init(_:).md)
   Creates an image aesthetics request.
-### Getting the revision
-- [let revision: CalculateImageAestheticsScoresRequest.Revision](calculateimageaestheticsscoresrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [CalculateImageAestheticsScoresRequest.Revision]](calculateimageaestheticsscoresrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [CalculateImageAestheticsScoresRequest.Revision](calculateimageaestheticsscoresrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var cropAndScaleAction: ImageCropAndScaleAction](calculateimageaestheticsscoresrequest/cropandscaleaction.md)
-  An optional setting that tells the algorithm how to scale an input image before generating the result.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
-  A scale to apply to an input image before performing a request.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -53,8 +40,21 @@ The request returns the resulting aesthetics score in an instance of [`ImageAest
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct ImageAestheticsScoresObservation](imageaestheticsscoresobservation.md)
   An observation that provides an overall score of aesthetic attributes for an image.
+### Configuring a request
+- [var cropAndScaleAction: ImageCropAndScaleAction](calculateimageaestheticsscoresrequest/cropandscaleaction.md)
+  An optional setting that tells the algorithm how to scale an input image before generating the result.
+- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+  A scale to apply to an input image before performing a request.
+### Getting the revision
+- [let revision: CalculateImageAestheticsScoresRequest.Revision](calculateimageaestheticsscoresrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [CalculateImageAestheticsScoresRequest.Revision]](calculateimageaestheticsscoresrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [CalculateImageAestheticsScoresRequest.Revision](calculateimageaestheticsscoresrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -71,6 +71,12 @@ The request returns the resulting aesthetics score in an instance of [`ImageAest
 
 - [Generating high-quality thumbnails from videos](generating-thumbnails-from-videos.md)
   Identify the most visually pleasing frames in a video by using the image-aesthetics scores request.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct GenerateAttentionBasedSaliencyImageRequest](generateattentionbasedsaliencyimagerequest.md)
+  An object that produces a heat map that identifies the parts of an image most likely to draw attention.
+- [struct GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
+  A request that generates a heat map that identifies the parts of an image most likely to represent objects.
 
 
 ---

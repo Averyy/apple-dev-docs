@@ -3,13 +3,13 @@
 **Framework**: Declared Age Range  
 **Kind**: case
 
-The request is invalid.
+Indicates your request contains invalid parameters or configuration.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ case invalidRequest
 ## See Also
 
 - [AgeRangeService.Error.notAvailable](agerangeservice/error/notavailable.md)
-  The system was unable to share the person’s age.
+  Indicates the system was unable to share the person’s age range.
 
 
 ---

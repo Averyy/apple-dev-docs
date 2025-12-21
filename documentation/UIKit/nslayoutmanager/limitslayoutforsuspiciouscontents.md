@@ -20,7 +20,7 @@ var limitsLayoutForSuspiciousContents: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the layout manager to lay out whatever text you give it. Changing the value to [`true`](https://developer.apple.com/documentation/swift/true) causes the layout manager to generate invalid layout information when it detects potentially suspicious content.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes the layout manager to lay out whatever text you give it. Changing the value to [`true`](https://developer.apple.com/documentation/Swift/true) causes the layout manager to generate invalid layout information when it detects potentially suspicious content.
 
 ## See Also
 
@@ -34,7 +34,7 @@ The default value of this property is [`false`](https://developer.apple.com/docu
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
 - [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool { get set }](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var usesDefaultHyphenation: Bool](nslayoutmanager/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the layout manager uses the default hyphenation rules to wrap lines.

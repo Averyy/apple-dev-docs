@@ -8,7 +8,6 @@ A request that determines the direction change of vectors for each pixel from a 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -30,22 +29,6 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
 ### Creating a request
 - [init(TrackOpticalFlowRequest.Revision?, frameAnalysisSpacing: CMTime?)](trackopticalflowrequest/init(_:frameanalysisspacing:).md)
   Creates an optical-flow tracking request.
-### Getting the revision
-- [let revision: TrackOpticalFlowRequest.Revision](trackopticalflowrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [TrackOpticalFlowRequest.Revision]](trackopticalflowrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [TrackOpticalFlowRequest.Revision](trackopticalflowrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.property.md)
-  The level of accuracy to compute the optical flow.
-- [TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.enum.md)
-  A type that describes the computational accuracy.
-- [var outputPixelFormatType: OSType](trackopticalflowrequest/outputpixelformattype.md)
-  The desired pixel format type of the observation.
-- [var supportedOutputPixelFormatTypes: [OSType]](trackopticalflowrequest/supportedoutputpixelformattypes.md)
-  The collection of supported pixel format types.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -59,8 +42,25 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct OpticalFlowObservation](opticalflowobservation.md)
   An object that represents an optical flow that an image-analysis request produces.
+### Configuring a request
+- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.property.md)
+  The level of accuracy to compute the optical flow.
+- [TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.enum.md)
+  A type that describes the computational accuracy.
+- [var outputPixelFormatType: OSType](trackopticalflowrequest/outputpixelformattype.md)
+  The desired pixel format type of the observation.
+- [var supportedOutputPixelFormatTypes: [OSType]](trackopticalflowrequest/supportedoutputpixelformattypes.md)
+  The collection of supported pixel format types.
+### Getting the revision
+- [let revision: TrackOpticalFlowRequest.Revision](trackopticalflowrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [TrackOpticalFlowRequest.Revision]](trackopticalflowrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [TrackOpticalFlowRequest.Revision](trackopticalflowrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -77,8 +77,12 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
 
 ## See Also
 
-- [struct DetectRectanglesRequest](detectrectanglesrequest.md)
-  An image-analysis request that finds projected rectangular regions in an image.
+- [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
+  A request that detects the trajectories of shapes moving along a parabolic path.
+- [class TrackObjectRequest](trackobjectrequest.md)
+  An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
+- [class TrackRectangleRequest](trackrectanglerequest.md)
+  An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
 
 
 ---

@@ -20,10 +20,10 @@ This method only invalidates information; it performs no glyph generation or lay
 
 For code that needs to work on both OS X v10.5 and previous releases, the following procedures should be used. For OS X v10.4 and before, invalidation should consist of
 
-1. Calling this method with the `flag` set to [`true`](https://developer.apple.com/documentation/swift/true), for the range that has actually become invalid.
-2. Calling this method with the `flag` set to [`false`](https://developer.apple.com/documentation/swift/false), for the range (if any) that follows that range, usually extending to the end of the text, that might need to be moved due to relayout of the invalidated range.
+1. Calling this method with the `flag` set to [`true`](https://developer.apple.com/documentation/Swift/true), for the range that has actually become invalid.
+2. Calling this method with the `flag` set to [`false`](https://developer.apple.com/documentation/Swift/false), for the range (if any) that follows that range, usually extending to the end of the text, that might need to be moved due to relayout of the invalidated range.
 
-As of OS X v10.5, the semantics of the `flag` parameter are slightly different. Soft layout holes are obsolete in macOS 10.5 and later, so the flag is no longer necessary. If the method is called with `flag` set to [`false`](https://developer.apple.com/documentation/swift/false), then it has the effect of invalidating layout.  If it’s called with the `flag` set to [`true`](https://developer.apple.com/documentation/swift/true), then it does not actually invalidate layout; it invalidates a number of internal caches, but otherwise has no effect, and in general is unnecessary.
+As of OS X v10.5, the semantics of the `flag` parameter are slightly different. Soft layout holes are obsolete in macOS 10.5 and later, so the flag is no longer necessary. If the method is called with `flag` set to [`false`](https://developer.apple.com/documentation/Swift/false), then it has the effect of invalidating layout.  If it’s called with the `flag` set to [`true`](https://developer.apple.com/documentation/Swift/true), then it does not actually invalidate layout; it invalidates a number of internal caches, but otherwise has no effect, and in general is unnecessary.
 
 This method is superseded by [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md) and will be deprecated in a future release.
 

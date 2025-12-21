@@ -92,6 +92,7 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 
 - [iOS Human Interface Guidelines](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/)
 - [struct PayWithApplePayButton](paywithapplepaybutton.md)
+  A type that provides a button to pay with Apple pay.
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 - [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)

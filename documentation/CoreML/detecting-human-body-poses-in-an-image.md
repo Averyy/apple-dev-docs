@@ -21,7 +21,7 @@ The sample finds the locations of the 17 joints for each person in the image and
 
 ##### Configure the Capture Session
 
-The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) (see [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session)).
+The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) (see [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session)).
 
 ```swift
 if captureSession.isRunning {

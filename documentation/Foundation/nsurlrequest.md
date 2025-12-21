@@ -112,6 +112,7 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotoco
   The entities that can make a network request.
 ### Instance Properties
 - [var allowsPersistentDNS: Bool](nsurlrequest/allowspersistentdns.md)
+- [var allowsUltraConstrainedNetworkAccess: Bool](nsurlrequest/allowsultraconstrainednetworkaccess.md)
 - [var assumesHTTP3Capable: Bool](nsurlrequest/assumeshttp3capable.md)
 - [var cookiePartitionIdentifier: String?](nsurlrequest/cookiepartitionidentifier.md)
 - [var requiresDNSSECValidation: Bool](nsurlrequest/requiresdnssecvalidation.md)

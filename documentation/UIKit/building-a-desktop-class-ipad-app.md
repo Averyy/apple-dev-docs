@@ -43,7 +43,7 @@ When people use an iPad with an external keyboard, they expect full support for 
 Follow these steps to provide a great text-editing experience on iPad:
 
 - Create text-editing menus for the current input method. To create an edit menu that adjusts its presentation style according to touch or indirect input for an optimal user experience, see [`UIEditMenuInteraction`](uieditmenuinteraction.md).
-- Integrate the system Find and Replace experience into your text views. For standard system text input views like [`UITextView`](uitextview.md) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true) to allow people to find and replace text using the system Find panel. For custom text view implementations, see [`UIFindInteraction`](uifindinteraction.md).
+- Integrate the system Find and Replace experience into your text views. For standard system text input views like [`UITextView`](uitextview.md) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to allow people to find and replace text using the system Find panel. For custom text view implementations, see [`UIFindInteraction`](uifindinteraction.md).
 
 > **Note**:  Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
 
@@ -62,7 +62,7 @@ People who use iPad with a Magic Keyboard expect to use the trackpad to perform 
 
 Follow these steps to provide a great experience for multiple selection on iPad:
 
-- Enable lightweight multiple selection with indirect input. Allow people using indirect input methods, like a keyboard or trackpad, to select multiple items in a collection view without placing the collection view into editing mode. Opt into this behavior by setting [`allowsMultipleSelection`](uicollectionview/allowsmultipleselection.md), [`allowsFocus`](uicollectionview/allowsfocus.md), and [`selectionFollowsFocus`](uicollectionview/selectionfollowsfocus.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+- Enable lightweight multiple selection with indirect input. Allow people using indirect input methods, like a keyboard or trackpad, to select multiple items in a collection view without placing the collection view into editing mode. Opt into this behavior by setting [`allowsMultipleSelection`](uicollectionview/allowsmultipleselection.md), [`allowsFocus`](uicollectionview/allowsfocus.md), and [`selectionFollowsFocus`](uicollectionview/selectionfollowsfocus.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 - Distinguish between selection and primary action. Primary actions allow you to distinguish between a distinct user action and a change in selection. A primary action occurs when a person selects a single cell without extending an existing selection. Implement [`collectionView(_:performPrimaryActionForItemAt:)`](uicollectionviewdelegate/collectionview(_:performprimaryactionforitemat:).md) to perform actions like navigation or showing another split-view column.
 - Specialize context menu options according to the number of selected items. Customize your context menus to surface different capabilities depending on whether the selection contains zero, one, or many items. Implement [`collectionView(_:contextMenuConfigurationForItemsAt:point:)`](uicollectionviewdelegate/collectionview(_:contextmenuconfigurationforitemsat:point:).md) to support context menus for multiple selections in a collection view. If you use [`UIContextMenuInteraction`](uicontextmenuinteraction.md) directly, implement [`secondaryItemIdentifiers`](uicontextmenuconfiguration/secondaryitemidentifiers.md) and the [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) preview animation methods.
 
@@ -87,8 +87,8 @@ For more information about building an app with Mac Catalyst, see [`Bring an iPa
   Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
 - [Supporting desktop-class features in your iPad app](supporting-desktop-class-features-in-your-ipad-app.md)
   Enhance your iPad app by adding desktop-class features and document support.
-- [Multitasking on iPad](multitasking-on-ipad.md)
-  Implement multitasking APIs to seamlessly integrate your app with iPadOS.
+- [Multitasking on iPad, Mac, and Apple Vision Pro](multitasking-on-ipad-mac-and-apple-vision-pro.md)
+  Implement multitasking APIs to seamlessly integrate your app with iPadOS, macOS, and visionOS.
 
 
 ---

@@ -21,7 +21,7 @@ func markConfigurationAsFinal()
 
 #### Discussion
 
-When the value of the [`supportsRandomAccess`](avassetreaderoutput/supportsrandomaccess.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the asset reader doesn’t advance to an [`AVAssetReader.Status.completed`](avassetreader/status-swift.enum/completed.md) state until you call this method.
+When the value of the [`supportsRandomAccess`](avassetreaderoutput/supportsrandomaccess.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the asset reader doesn’t advance to an [`AVAssetReader.Status.completed`](avassetreader/status-swift.enum/completed.md) state until you call this method.
 
 After you call this method, you can’t make further calls to the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method.
 

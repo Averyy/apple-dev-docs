@@ -17,7 +17,7 @@ func highlight(_ flag: Bool)
 
 #### Discussion
 
-The receiver invokes this method while tracking the mouse; you should not invoke it directly. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the appropriate part is drawn highlighted; otherwise it’s drawn normally.
+The receiver invokes this method while tracking the mouse; you should not invoke it directly. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the appropriate part is drawn highlighted; otherwise it’s drawn normally.
 
 ##### Special Considerations
 

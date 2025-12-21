@@ -37,6 +37,7 @@ The value of this property is [`nil`](https://developer.apple.com/documentation/
   An array of available data sources for the audio session’s current input port.
 - [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
   Selects a data source for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 
 
 ---

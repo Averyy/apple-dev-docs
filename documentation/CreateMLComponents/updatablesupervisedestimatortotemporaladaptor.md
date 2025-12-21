@@ -50,9 +50,6 @@ struct UpdatableSupervisedEstimatorToTemporalAdaptor<Base> where Base : Updatabl
   The output type.
 - [UpdatableSupervisedEstimatorToTemporalAdaptor.Transformer](updatablesupervisedestimatortotemporaladaptor/transformer.md)
   The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTemporalEstimator Implementations](updatablesupervisedestimatortotemporaladaptor/supervisedtemporalestimator-implementations.md)
-- [UpdatableSupervisedTemporalEstimator Implementations](updatablesupervisedestimatortotemporaladaptor/updatablesupervisedtemporalestimator-implementations.md)
 
 ## Relationships
 

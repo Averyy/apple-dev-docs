@@ -6,8 +6,8 @@
 Creates a video frame from the left and right eye pixel buffers.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

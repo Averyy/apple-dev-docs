@@ -25,7 +25,7 @@ class UIStepper
 
 #### Overview
 
-By default, pressing and holding a stepper’s button increments or decrements the stepper’s value repeatedly. The rate of change depends on how long the user continues pressing the control. To turn off this behavior, set the [`autorepeat`](uistepper/autorepeat.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, pressing and holding a stepper’s button increments or decrements the stepper’s value repeatedly. The rate of change depends on how long the user continues pressing the control. To turn off this behavior, set the [`autorepeat`](uistepper/autorepeat.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The maximum value must be greater than or equal to the minimum value. If you set a maximum or minimum value that would break this invariant, both values are set to the new value. For example, if the minimum value is 200 and you set a maximum value of 100, then both the minimum and maximum become 200.
 

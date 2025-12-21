@@ -7,12 +7,12 @@ Provide a set of methods that view subclasses use to make subcomponents accessib
 ## Topics
 
 ### Providing information about accessibility elements
-- [@MainActor func accessibilityElementCount() -> Int](../ObjectiveC/NSObject-swift.class/accessibilityElementCount.md)
-- [@MainActor func accessibilityElement(at index: Int) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityElement(at:).md)
-- [@MainActor func index(ofAccessibilityElement element: Any) -> Int](../ObjectiveC/NSObject-swift.class/index(ofAccessibilityElement:).md)
-- [@MainActor var accessibilityElements: [Any]? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityElements.md)
-- [@MainActor var automationElements: [Any]? { get set }](../ObjectiveC/NSObject-swift.class/automationElements.md)
-- [@MainActor var accessibilityContainerType: UIAccessibilityContainerType { get set }](../ObjectiveC/NSObject-swift.class/accessibilityContainerType.md)
+- [func accessibilityElementCount() -> Int](../ObjectiveC/NSObject-swift.class/accessibilityElementCount.md)
+- [func accessibilityElement(at: Int) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityElement(at:).md)
+- [func index(ofAccessibilityElement: Any) -> Int](../ObjectiveC/NSObject-swift.class/index(ofAccessibilityElement:).md)
+- [var accessibilityElements: [Any]?](../ObjectiveC/NSObject-swift.class/accessibilityElements.md)
+- [var automationElements: [Any]?](../ObjectiveC/NSObject-swift.class/automationElements.md)
+- [var accessibilityContainerType: UIAccessibilityContainerType](../ObjectiveC/NSObject-swift.class/accessibilityContainerType.md)
 - [enum UIAccessibilityContainerType](uiaccessibilitycontainertype.md)
   Constants that indicate the type of content in a data-based container.
 ### Useful links

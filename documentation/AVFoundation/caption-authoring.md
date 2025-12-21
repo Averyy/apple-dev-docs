@@ -1,4 +1,4 @@
-# Caption Authoring
+# Caption authoring
 
 **Framework**: AVFoundation
 
@@ -24,12 +24,12 @@ Create captions and subtitles in industry-standard formats.
 ### Presentation
 - [class AVCaptionRenderer](avcaptionrenderer.md)
   An object that renders captions for display at a particular time.
-### Reading and Writing
+### Reading and writing
 - [class AVAssetReaderOutputCaptionAdaptor](avassetreaderoutputcaptionadaptor.md)
   An object that reads caption group objects from an asset track that contains timed text.
 - [class AVAssetWriterInputCaptionAdaptor](avassetwriterinputcaptionadaptor.md)
   An object that appends captions to an asset writer input.
-### Conversion and Validation
+### Conversion and validation
 - [struct AVCaptionSettingsKey](avcaptionsettingskey.md)
   A structure that defines dictionary keys to configure the caption converter and validator.
 - [class AVCaptionFormatConformer](avcaptionformatconformer.md)

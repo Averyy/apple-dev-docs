@@ -22,7 +22,7 @@ var documentInfo: [String : Any] { get set }
 
 You can use these keys to specify additional metadata and security information for the PDF, such as the author or the password for accessing it.
 
-The keys used in this dictionary are described in the [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys) section of the doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext documentation.
+The keys used in this dictionary are described in  [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys).
 
 
 ---

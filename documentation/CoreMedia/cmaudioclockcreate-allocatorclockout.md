@@ -23,7 +23,7 @@ func CMAudioClockCreate(allocator: CFAllocator?, clockOut: UnsafeMutablePointer<
 
 This clock doesn’t drift from audio output, but may drift from [`CMClockGetHostTimeClock()`](cmclockgethosttimeclock().md). When audio output is completely stopped, the clock continues to advance, tracking `CMClockGetHostTimeClock` until audio output starts up again.
 
-> ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
+> ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the returned `clockOut`.
 
 You can use this clock as the [`sourceClock`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/sourceClock) of an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance when synchronizing video-only playback with audio played through other APIs or objects.
 

@@ -6,8 +6,8 @@
 An enumeration of the RCS message content types supported by the system.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -56,17 +56,6 @@ The types that are associated values in this enumeration’s cases contain prope
   A content type for business card carousel content.
 - [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
   Structure representing a card carousel.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/content-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSMessage.Content, RCSMessage.Content) -> Bool](rcsmessage/content-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsmessage/content-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/content-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

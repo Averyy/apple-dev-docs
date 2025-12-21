@@ -21,6 +21,8 @@ Returns true if command pool was successfully initialized.
 
 #### Discussion
 
+Primary initializer for an IOCommandPool object.
+
 Primary initializer for an IOCommandPool. Should probably use IOCommandPool::withQueue() as it is easier to use.
 
 ## Parameters

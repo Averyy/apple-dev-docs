@@ -22,7 +22,7 @@ func failWithError(_ error: any Error)
 
 #### Discussion
 
-Typically, you call this method in your doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) implementation. You should set the error when you detect problems such as lack of secure coding, data corruption, or a domain validation failure.
+Typically, you call this method in your [`init(coder:)`](nscoding/init(coder:).md) implementation. You should set the error when you detect problems such as lack of secure coding, data corruption, or a domain validation failure.
 
 This method is only meaningful to call for decodes.
 

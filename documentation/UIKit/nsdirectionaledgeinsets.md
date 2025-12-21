@@ -38,9 +38,9 @@ struct NSDirectionalEdgeInsets
 - [var trailing: CGFloat](nsdirectionaledgeinsets/trailing.md)
   The trailing edge inset value.
 ### Converting to and from strings
-- [class func string(for insets: NSDirectionalEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-hp8b.md)
+- [class func string(for: NSDirectionalEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-hp8b.md)
   Returns a string formatted to contain the data from a directional edge insets structure.
-- [class func nsDirectionalEdgeInsets(for string: String) -> NSDirectionalEdgeInsets](../Foundation/NSCoder/nsDirectionalEdgeInsets(for:).md)
+- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](../Foundation/NSCoder/nsDirectionalEdgeInsets(for:).md)
   Returns a directional edge insets structure based on data in the specified string.
 ### Getting the empty edge insets
 - [static let zero: NSDirectionalEdgeInsets](nsdirectionaledgeinsets/zero.md)
@@ -69,8 +69,6 @@ struct NSDirectionalEdgeInsets
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [enum NSRectAlignment](nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
-- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
-  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [UIKit macros](uikit-macros.md)
   Macros that UIKit defines.
 

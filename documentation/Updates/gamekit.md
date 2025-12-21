@@ -24,7 +24,7 @@ Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/
 
 ##### Voice Chat
 
-- Use SharePlay to allow voice chat in your real-time games instead of [`GKVoiceChat`](https://developer.apple.com/documentation/GameKit/GKVoiceChat) which is deprecated. When you present a [`GKMatchmakerViewController`](https://developer.apple.com/documentation/GameKit/GKMatchmakerViewController) object, it automatically shows a SharePlay button on iOS. To implement a custom SharePlay experience, see [`GKMatchmaker`](https://developer.apple.com/documentation/GameKit/GKMatchmaker).
+- Use SharePlay to allow voice chat in your real-time games instead of [`GKVoiceChat`](https://developer.apple.com/documentation/GameKit/GKVoiceChat) which is deprecated. When you present a [`GKMatchmakerViewController`](https://developer.apple.com/documentation/GameKit/GKMatchmakerViewController) object, it automatically shows a SharePlay button on iOS. To implement a custom SharePlay experience, see [`GKMatchmaker`](https://developer.apple.com/documentation/GameKit/GKMatchmaker#4110693).
 
 ## See Also
 

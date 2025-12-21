@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(fileNamed filename: String, securelyWithClasses classes: Set<AnyHashable>) throws
 ```
 

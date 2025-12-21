@@ -6,11 +6,11 @@
 A view that displays some web content.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,6 +28,9 @@ Present HTML, CSS, and JavaScript content alongside your app’s native views wi
 The following example displays two different URLs depending on the state of a toggle, and also prevents back-forward navigation gestures:
 
 ```swift
+import SwiftUI
+import WebKit
+
 struct ContentView: View {
     @State private var toggle = false
 
@@ -93,7 +96,6 @@ You can only bind a [`WebPage`](webpage.md) to a single [`WebView`](webview-swif
   A type that defines the behavior of how horizontal swipe gestures trigger backward and forward page navigation.
 - [WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior.md)
   A type specifying the behavior for the presentation of link previews when pressing a link.
-### Structures
 - [WebView.ActivatedElementInfo](webview-swift.struct/activatedelementinfo.md)
   Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element.
 - [WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior.md)

@@ -54,6 +54,10 @@ When you choose a design flow, write an app extension that conforms to either `F
   An abstract resource a file system uses to provide data for a volume.
 - [class FSBlockDeviceResource](fsblockdeviceresource.md)
   A resource that represents a block storage disk partition.
+- [class FSPathURLResource](fspathurlresource.md)
+  A resource that represents a path in the system file space.
+- [class FSGenericURLResource](fsgenericurlresource.md)
+  A resource that represents an abstract URL.
 ### Volumes
 - [class FSVolume](fsvolume.md)
   A directory structure for files and folders.
@@ -104,11 +108,6 @@ When you choose a design flow, write an app extension that conforms to either `F
   A range that describes contiguous metadata segments on disk.
 - [class FSProbeResult](fsproberesult.md)
   An object that represents the results of a specific probe.
-### Classes
-- [class FSGenericURLResource](fsgenericurlresource.md)
-  A resource representing an abstract URL
-- [class FSPathURLResource](fspathurlresource.md)
-  A resource representing a path
 
 
 ---

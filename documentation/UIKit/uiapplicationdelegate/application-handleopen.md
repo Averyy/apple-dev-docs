@@ -19,13 +19,13 @@ optional func application(_ application: UIApplication, handleOpen url: URL) -> 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate successfully handled the request; [`false`](https://developer.apple.com/documentation/swift/false) if the attempt to handle the URL failed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the delegate successfully handled the request; [`false`](https://developer.apple.com/documentation/Swift/false) if the attempt to handle the URL failed.
 
 #### Discussion
 
 If the delegate also implements the [`application(_:open:sourceApplication:annotation:)`](uiapplicationdelegate/application(_:open:sourceapplication:annotation:).md) method, that method is called instead of this one.
 
-This method is not called if the delegate returns [`false`](https://developer.apple.com/documentation/swift/false) from both the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) and [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods. (If only one of the two methods is implemented, its return value determines whether this method is called.) If your app implements the [`applicationDidFinishLaunching(_:)`](uiapplicationdelegate/applicationdidfinishlaunching(_:).md) method instead of [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md), this method is called to open the specified URL after the app has been initialized.
+This method is not called if the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false) from both the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) and [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods. (If only one of the two methods is implemented, its return value determines whether this method is called.) If your app implements the [`applicationDidFinishLaunching(_:)`](uiapplicationdelegate/applicationdidfinishlaunching(_:).md) method instead of [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md), this method is called to open the specified URL after the app has been initialized.
 
 If a URL arrives while your app is suspended or running in the background, the system moves your app to the foreground prior to calling this method.
 

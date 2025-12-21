@@ -22,7 +22,7 @@ func setPurgeableState(_ state: MTLPurgeableState) -> MTLPurgeableState
 
 ## Mentions
 
-- [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
 
 #### Return Value
 
@@ -38,7 +38,7 @@ If `state` is [`MTLPurgeableState.empty`](mtlpurgeablestate/empty.md), the resou
 
 If `state` is [`MTLPurgeableState.volatile`](mtlpurgeablestate/volatile.md), the resource is marked as data that can be discarded, even if the caller may need the resource. `MTLResource` objects can be made purgeable, even if the caller may need the resource, where the implementation can reclaim the underlying storage at any time without informing the app. Purgeable resources may enable an app to keep larger caches of idle memory that may be useful again in the future without the risk of preventing the allocation of more important memory.
 
-When you use purgeable memory, make sure the block of memory is locked before you access it. This locking mechanism is necessary to ensure that auto-removal policies do not discard the data while you are accessing it. Similarly, the locking mechanism ensures that the virtual memory system has not already discarded the data.
+When you use purgeable memory, make sure the block of memory is locked before you access it. This locking mechanism ensures that auto-removal policies don’t discard the data while you are accessing it. Similarly, the locking mechanism ensures that the virtual memory system has not already discarded the data.
 
 ## Parameters
 

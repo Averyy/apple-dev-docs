@@ -28,7 +28,7 @@ Use a sample cursor to get information about the media sample such as its durati
 
 ## Topics
 
-### Navigating Samples
+### Navigating samples
 - [func step(byDecodeTime: CMTime, wasPinned: UnsafeMutablePointer<ObjCBool>?) -> CMTime](avsamplecursor/step(bydecodetime:waspinned:).md)
   Moves the cursor by a given delta time on the decode timeline.
 - [func step(byPresentationTime: CMTime, wasPinned: UnsafeMutablePointer<ObjCBool>?) -> CMTime](avsamplecursor/step(bypresentationtime:waspinned:).md)
@@ -37,12 +37,12 @@ Use a sample cursor to get information about the media sample such as its durati
   Moves the cursor a given number of samples in decode order.
 - [func stepInPresentationOrder(byCount: Int64) -> Int64](avsamplecursor/stepinpresentationorder(bycount:).md)
   Moves the cursor a given number of samples in presentation order.
-### Getting Timestamps
+### Getting timestamps
 - [var decodeTimeStamp: CMTime](avsamplecursor/decodetimestamp.md)
   The decode timestamp of the sample at the current position of the cursor.
 - [var presentationTimeStamp: CMTime](avsamplecursor/presentationtimestamp.md)
   The presentation timestamp of the sample at the current position of the cursor.
-### Getting Sample Information
+### Getting sample information
 - [var currentChunkInfo: AVSampleCursorChunkInfo](avsamplecursor/currentchunkinfo.md)
   A value that provides information about the chunk of samples to which the current sample belongs.
 - [struct AVSampleCursorChunkInfo](avsamplecursorchunkinfo.md)
@@ -73,14 +73,14 @@ Use a sample cursor to get information about the media sample such as its durati
   The independent decodability information for the audio sample.
 - [var currentSampleDependencyAttachments: [AnyHashable : Any]?](avsamplecursor/currentsampledependencyattachments.md)
   A dictionary of dependency-related sample buffer attachments.
-### Accessing Samples
+### Accessing samples
 - [func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan: AVSampleCursor) -> Bool](avsamplecursor/maysampleswithearlierdecodetimestampshavepresentationtimestamps(laterthan:).md)
   Determines whether a sample earlier in decode order can have a presentation timestamp later than that of the specified sample cursor.
 - [func maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan: AVSampleCursor) -> Bool](avsamplecursor/maysampleswithlaterdecodetimestampshavepresentationtimestamps(earlierthan:).md)
   Determines whether a sample later in decode order can have a presentation timestamp earlier than that of the specified sample cursor.
 - [var samplesRequiredForDecoderRefresh: Int](avsamplecursor/samplesrequiredfordecoderrefresh.md)
   The number of samples prior to the current sample, in decode order, the decoder requires to achieve a coherent output at the current decode time.
-### Comparing Sample Cursors
+### Comparing sample cursors
 - [func comparePositionInDecodeOrder(withPositionOf: AVSampleCursor) -> ComparisonResult](avsamplecursor/comparepositionindecodeorder(withpositionof:).md)
   Compares the relative positions of two sample cursors and returns their relative positions.
 

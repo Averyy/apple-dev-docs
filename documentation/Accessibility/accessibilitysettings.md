@@ -56,6 +56,11 @@ struct AccessibilitySettings
   A Boolean value that indicates whether Assistive Access is running.
 ### Creating an accessibility settings structure
 - [init()](accessibilitysettings/init.md)
+### Type Properties
+- [static var prefersActionSliderAlternative: Bool](accessibilitysettings/prefersactionslideralternative.md)
+- [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
+- [static var showBordersEnabled: Bool](accessibilitysettings/showbordersenabled.md)
+- [static let showBordersEnabledStatusDidChangeNotification: NSNotification.Name](accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
 
 ## Relationships
 

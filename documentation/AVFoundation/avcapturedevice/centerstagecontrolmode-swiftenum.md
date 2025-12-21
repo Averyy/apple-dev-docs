@@ -20,7 +20,7 @@ enum CenterStageControlMode
 
 ## Topics
 
-### Control Modes
+### Control modes
 - [AVCaptureDevice.CenterStageControlMode.user](avcapturedevice/centerstagecontrolmode-swift.enum/user.md)
   The user controls Center Stage.
 - [AVCaptureDevice.CenterStageControlMode.app](avcapturedevice/centerstagecontrolmode-swift.enum/app.md)

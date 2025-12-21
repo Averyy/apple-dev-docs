@@ -21,7 +21,7 @@ let UNNotificationAttachmentOptionsThumbnailHiddenKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean value. When set to [`true`](https://developer.apple.com/documentation/swift/true), the attachment’s thumbnail isn’t displayed. If you don’t include this key, the system shows the thumbnail.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean value. When set to [`true`](https://developer.apple.com/documentation/Swift/true), the attachment’s thumbnail isn’t displayed. If you don’t include this key, the system shows the thumbnail.
 
 ## See Also
 

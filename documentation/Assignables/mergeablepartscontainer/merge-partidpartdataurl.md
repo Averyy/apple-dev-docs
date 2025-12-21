@@ -9,9 +9,8 @@ Merges an individual part into the specified part of this object.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- visionOS ?+
-- Unknown ?+ - Deprecated
 - Mac Catalyst 17.4+
+- visionOS ?+
 
 ## Declaration
 

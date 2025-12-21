@@ -6,18 +6,25 @@
 The current video frame image.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 let sourceImage: CIImage
 ```
+
+## See Also
+
+- [let compositionTime: CMTime](avciimagefilteringparameters/compositiontime.md)
+  The time in the video composition corresponding to the frame being processed.
+- [let renderSize: CGSize](avciimagefilteringparameters/rendersize.md)
+  The width and height, in pixels, of the frame being processed.
 
 
 ---

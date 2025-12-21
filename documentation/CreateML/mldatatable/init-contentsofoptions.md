@@ -21,7 +21,7 @@ init(contentsOf url: URL, options: MLDataTable.ParsingOptions = ParsingOptions()
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
 
 #### Discussion
 
@@ -134,14 +134,14 @@ The header row becomes the column names in the data table. If the CSV file doesn
 ## Topics
 
 ### Parsing options
+- [Creating a text classifier model](creating-a-text-classifier-model.md)
+  Train a machine learning model to classify natural language text.
 - [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
   The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 ## See Also
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
-  Train a machine learning model to classify natural language text.
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [init(dictionary: [String : any MLDataValueConvertible]) throws](mldatatable/init(dictionary:).md)
   Creates a data table from a dictionary of column names and data values.
@@ -149,6 +149,8 @@ The header row becomes the column names in the data table. If the CSV file doesn
   Creates a data table from a dictionary of column names and untyped columns.
 - [init()](mldatatable/init.md)
   Creates an empty table containing no rows or columns.
+- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+  The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 
 ---

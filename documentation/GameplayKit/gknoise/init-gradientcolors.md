@@ -16,7 +16,7 @@ Initializes a noise object with the specified noise source, with colors for late
 ## Declaration
 
 ```swift
-init(_ noiseSource: GKNoiseSource, gradientColors: [NSNumber : UIColor])
+init(_ noiseSource: GKNoiseSource, gradientColors: [NSNumber : NSColor])
 ```
 
 #### Return Value

@@ -10,7 +10,7 @@ A custom action that can be invoked on an entity in response to specific user cu
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

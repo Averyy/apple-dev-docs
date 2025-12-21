@@ -17,6 +17,8 @@ void IORWLockUnlock(struct IORWLock * lock);
 
 #### Discussion
 
+Unlock a read/write lock.
+
 Undo one call to IORWLockRead or IORWLockWrite. Results are undefined if the caller has not locked the lock.
 
 ## Parameters

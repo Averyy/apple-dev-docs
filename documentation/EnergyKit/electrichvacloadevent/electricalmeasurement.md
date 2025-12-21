@@ -6,10 +6,10 @@
 A description of the electricity consumed by a device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -24,12 +24,6 @@ struct ElectricalMeasurement
   Initializes an electrical measurement for the electrical load event.
 - [let stage: Int](electrichvacloadevent/electricalmeasurement/stage.md)
   An indirect measurement of power consumption by an HVAC electric heating or cooling stage.
-### Decoding
-- [init(from: any Decoder) throws](electrichvacloadevent/electricalmeasurement/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electrichvacloadevent/electricalmeasurement/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

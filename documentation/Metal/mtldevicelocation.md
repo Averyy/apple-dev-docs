@@ -20,7 +20,7 @@ Check the location of a GPU by checking the [`location`](mtldevice/location.md) 
 
 ## Topics
 
-### Determining the GPU’s Location
+### Determining the GPU’s location
 - [MTLDeviceLocation.builtIn](mtldevicelocation/builtin.md)
   A location that indicates the GPU is permanently connected to the system internally.
 - [MTLDeviceLocation.slot](mtldevicelocation/slot.md)

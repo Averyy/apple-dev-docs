@@ -15,21 +15,11 @@ Compute the absolute or negated value of each element in a vector.
   Calculates the absolute value of each element in the supplied single-precision vector.
 - [static func absolute<U, V>(U, result: inout V)](vdsp/absolute(_:result:)-657bd.md)
   Calculates the absolute value of each element in the supplied double-precision vector.
-- [vDSP_vabsi](vdsp_vabsi.md)
-  Calculates the absolute value of each element in the supplied integer vector using the specified stride.
-- [vDSP_vabs](vdsp_vabs.md)
-  Calculates the absolute value of each element in the supplied single-precision vector using the specified stride.
-- [vDSP_vabsD](vdsp_vabsd.md)
-  Calculates the absolute value of each element in the supplied double-precision vector using the specified stride.
 ### Complex vector absolute functions
 - [static func absolute<V>(DSPSplitComplex, result: inout V)](vdsp/absolute(_:result:)-9x5jn.md)
   Calculates the absolute value of each element in the supplied single-precision complex vector.
 - [static func absolute<V>(DSPDoubleSplitComplex, result: inout V)](vdsp/absolute(_:result:)-1wu9x.md)
   Calculates the absolute value of each element in the supplied double-precision complex vector.
-- [vDSP_zvabs](vdsp_zvabs.md)
-  Calculates the absolute value of each element in the supplied single-precision complex vector using the specified stride.
-- [vDSP_zvabsD](vdsp_zvabsd.md)
-  Calculates the absolute value of each element in the supplied double-precision complex vector using the specified stride.
 ### Vector negative absolute functions
 - [static func negativeAbsolute<U>(U) -> [Float]](vdsp/negativeabsolute(_:)-66a7a.md)
   Returns the negative absolute value of each element in the supplied single-precision vector.
@@ -39,10 +29,6 @@ Compute the absolute or negated value of each element in a vector.
   Calculates the negative absolute value of each element in the supplied single-precision vector.
 - [static func negativeAbsolute<U, V>(U, result: inout V)](vdsp/negativeabsolute(_:result:)-1gpcy.md)
   Calculates the negative absolute value of each element in the supplied double-precision vector.
-- [vDSP_vnabs](vdsp_vnabs.md)
-  Calculates the negative absolute value of each element in the supplied single-precision vector using the specified stride.
-- [vDSP_vnabsD](vdsp_vnabsd.md)
-  Calculates the negative absolute value of each element in the supplied double-precision vector using the specified stride.
 ### Vector negation functions
 - [static func negative<U>(U) -> [Float]](vdsp/negative(_:)-8mo1p.md)
   Returns the negative value of each element in the supplied single-precision vector.
@@ -52,15 +38,6 @@ Compute the absolute or negated value of each element in a vector.
   Calculates the negative value of each element in the supplied single-precision vector.
 - [static func negative<U, V>(U, result: inout V)](vdsp/negative(_:result:)-5bwqv.md)
   Calculates the negative value of each element in the supplied double-precision vector.
-- [vDSP_vneg](vdsp_vneg.md)
-  Calculates the negative value of each element in the supplied single-precision vector using the specified stride.
-- [vDSP_vnegD](vdsp_vnegd.md)
-  Calculates the negative value of each element in the supplied double-precision vector using specified stride.
-### Complex vector negation functions
-- [vDSP_zvneg](vdsp_zvneg.md)
-  Calculates the negative value of each element in the supplied complex single-precision vector.
-- [vDSP_zvnegD](vdsp_zvnegd.md)
-  Calculates the negative value of each element in the supplied complex double-precision vector.
 
 ## See Also
 

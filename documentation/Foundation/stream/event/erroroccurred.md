@@ -34,14 +34,6 @@ static var errorOccurred: Stream.Event { get }
   The stream can accept bytes for writing.
 - [static var endEncountered: Stream.Event](stream/event/endencountered.md)
   The end of the stream has been reached.
-- [static var openCompleted: Stream.Event](stream/event/opencompleted.md)
-  The open has completed successfully.
-- [static var hasBytesAvailable: Stream.Event](stream/event/hasbytesavailable.md)
-  The stream has bytes to be read.
-- [static var hasSpaceAvailable: Stream.Event](stream/event/hasspaceavailable.md)
-  The stream can accept bytes for writing.
-- [static var endEncountered: Stream.Event](stream/event/endencountered.md)
-  The end of the stream has been reached.
 
 
 ---

@@ -11,7 +11,7 @@ A Boolean value that indicates whether the Look Around view displays shows a con
 ## Declaration
 
 ```swift
-attribute boolean showsDialogControl;
+showsDialogControl?: boolean;
 ```
 
 

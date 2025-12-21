@@ -6,7 +6,7 @@ Add and use a font in your app that scales with Dynamic Type.
 
 #### Overview
 
-SwiftUI supports styling text views using the built-in fonts, and uses a system font by default. Rather than using a system-provided font, you can use custom fonts by including the font files in your Xcode project. To use a custom font, add the font file that contains your licensed font to your app, and then apply the font to a text view or set it as a default font within a container view. SwiftUI’s adaptive text display scales the font automtically using Dynamic Type.
+SwiftUI supports styling text views using the built-in fonts, and uses a system font by default. Rather than using a system-provided font, you can use custom fonts by including the font files in your Xcode project. To use a custom font, add the font file that contains your licensed font to your app, and then apply the font to a text view or set it as a default font within a container view. SwiftUI’s adaptive text display scales the font automatically using Dynamic Type.
 
 Dynamic Type allows users to choose the size of textual content displayed onscreen. It helps users who need larger text for better readability and accommodates those who can read smaller text, allowing more information to appear onscreen.
 
@@ -52,7 +52,7 @@ For design guidance on choosing fonts to enhance your app on your target platfor
 
 ##### Scale Padding Using Scaled Metric
 
-The [`ScaledMetric`](scaledmetric.md) property wrapper on a view property provides a scaled value that changes automatically with accessibility settings. When working with adpatively sized fonts, you can scale the spacing between or around the text to improve the visual design with this property wrapper.
+The [`ScaledMetric`](scaledmetric.md) property wrapper on a view property provides a scaled value that changes automatically with accessibility settings. When working with adaptively sized fonts, you can scale the spacing between or around the text to improve the visual design with this property wrapper.
 
 The following example uses `@ScaledMetric` to scale the padding value surrounding a text view relative to the `body` text style, with a blue border added to identify the spacing that padding adds:
 

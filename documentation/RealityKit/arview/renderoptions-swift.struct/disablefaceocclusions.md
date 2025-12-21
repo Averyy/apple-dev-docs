@@ -9,7 +9,6 @@ Disable automatic face occlusion.
 - iOS 13.0+ - Deprecated
 - iPadOS 13.0+ - Deprecated
 - Mac Catalyst 14.0+ - Deprecated
-- macOS 10.15+ - Deprecated
 
 ## Declaration
 

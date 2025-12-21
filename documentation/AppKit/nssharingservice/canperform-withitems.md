@@ -16,7 +16,7 @@ func canPerform(withItems items: [Any]?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the service can share all the items; [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If `items` is `nil`, the method will return [`true`](https://developer.apple.com/documentation/swift/true) when the service is configured.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the service can share all the items; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. If `items` is `nil`, the method will return [`true`](https://developer.apple.com/documentation/Swift/true) when the service is configured.
 
 #### Discussion
 

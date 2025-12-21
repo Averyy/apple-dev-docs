@@ -21,8 +21,8 @@ struct SubscriptionInfo
 
 ## Mentions
 
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 - [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 
 ## Topics
 
@@ -31,6 +31,8 @@ struct SubscriptionInfo
   An array that contains status information for a subscription group, including renewal and transaction information.
 - [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](product/subscriptioninfo/status(for:).md)
   Gets the subscription status for a subscription group identifier.
+- [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](product/subscriptioninfo/status(transactionid:).md)
+  Gets the subscription status for a transaction ID.
 - [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
 ### Identifying the subscription group
@@ -60,13 +62,11 @@ struct SubscriptionInfo
 ### Getting promotional offer details
 - [let promotionalOffers: [Product.SubscriptionOffer]](product/subscriptioninfo/promotionaloffers.md)
   An array of promotional offers available for the auto-renewable subscription.
-### Structures
+### Getting subscription renewal information
 - [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
   The renewal information for an auto-renewable subscription.
 - [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
   The renewal states of auto-renewable subscriptions.
-### Type Methods
-- [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](product/subscriptioninfo/status(transactionid:).md)
 
 ## Relationships
 

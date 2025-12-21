@@ -10,8 +10,8 @@ Get details about the promoted purchase of an in-app purchase.
 
 ## Mentions
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 ## See Also
 

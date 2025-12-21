@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+If `tag` is set to `kAudioChannelLayoutTag_UseChannelBitmap`, this is the channel usage bitmap.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

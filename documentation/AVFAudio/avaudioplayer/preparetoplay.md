@@ -22,11 +22,11 @@ func prepareToPlay() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system successfully prepares the player; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the system successfully prepares the player; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Calling this method preloads audio buffers and acquires the audio hardware necessary for playback. This method activates the audio session, so pass [`false`](https://developer.apple.com/documentation/swift/false) to [`setActive:error:`](avaudiosession/setactive:error:.md) if immediate playback isn’t necessary. For example, when using the category option [`duckOthers`](avaudiosession/categoryoptions-swift.struct/duckothers.md), this method lowers the audio outside of the app.
+Calling this method preloads audio buffers and acquires the audio hardware necessary for playback. This method activates the audio session, so pass [`false`](https://developer.apple.com/documentation/Swift/false) to [`setActive:error:`](avaudiosession/setactive:error:.md) if immediate playback isn’t necessary. For example, when using the category option [`duckOthers`](avaudiosession/categoryoptions-swift.struct/duckothers.md), this method lowers the audio outside of the app.
 
 The system calls this method when using the method [`play()`](avaudioplayer/play().md), but calling it in advance minimizes the delay between calling `play()` and the start of sound output.
 

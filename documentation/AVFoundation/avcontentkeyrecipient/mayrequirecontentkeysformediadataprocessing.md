@@ -23,7 +23,7 @@ var mayRequireContentKeysForMediaDataProcessing: Bool { get }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), adding the recipient to a content key session allows the recipient to use the session’s existing keys. It also enables handling of new key requests by the session’s delegate object.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), adding the recipient to a content key session allows the recipient to use the session’s existing keys. It also enables handling of new key requests by the session’s delegate object.
 
 ## See Also
 

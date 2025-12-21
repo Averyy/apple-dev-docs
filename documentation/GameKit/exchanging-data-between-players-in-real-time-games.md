@@ -35,7 +35,7 @@ func match(_ match: GKMatch,
 }
 ```
 
-To reinvite players whose match state becomes disconnected in a two-player match, implement the [`match(_:shouldReinviteDisconnectedPlayer:)`](gkmatchdelegate/match(_:shouldreinvitedisconnectedplayer:).md) delegate method to return [`true`](https://developer.apple.com/documentation/swift/true).
+To reinvite players whose match state becomes disconnected in a two-player match, implement the [`match(_:shouldReinviteDisconnectedPlayer:)`](gkmatchdelegate/match(_:shouldreinvitedisconnectedplayer:).md) delegate method to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Send Data to Players
 
@@ -82,6 +82,8 @@ func match(_ match: GKMatch, didReceive data: Data, fromRemotePlayer player: GKP
   Discover and invite other players to participate in a real-time game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

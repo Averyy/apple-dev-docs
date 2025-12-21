@@ -21,7 +21,7 @@ class MTLHeapDescriptor
 
 ## Mentions
 
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
@@ -32,7 +32,7 @@ Each new heap inherits the descriptor’s configuration as you create it, which 
 
 ## Topics
 
-### Configuring a Heap
+### Configuring a heap
 - [var type: MTLHeapType](mtlheapdescriptor/type.md)
   The memory placement strategy for any resources you allocate from the heaps you create with this descriptor.
 - [var storageMode: MTLStorageMode](mtlheapdescriptor/storagemode.md)
@@ -66,11 +66,11 @@ Each new heap inherits the descriptor’s configuration as you create it, which 
 
 ## See Also
 
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [protocol MTLHeap](mtlheap.md)
   A memory pool from which you can suballocate resources.

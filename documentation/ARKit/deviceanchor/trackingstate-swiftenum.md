@@ -6,7 +6,7 @@
 Values that describe the tracking state of a device anchor.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

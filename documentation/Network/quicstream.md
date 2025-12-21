@@ -3,16 +3,16 @@
 **Framework**: Network  
 **Kind**: struct
 
-The default QUIC Stream type for Subconnection objects returned from a NetworkConnection over QUIC. Connection’s parameterized over QUICStream will expose a nearly identical stream interface as TCP. This type is not intended to be inserted into the protocol stack manually.
+A QUIC stream that runs over a QUIC connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,10 +20,14 @@ The default QUIC Stream type for Subconnection objects returned from a NetworkCo
 struct QUICStream
 ```
 
+#### Overview
+
+Connections using QUICStream have a similar stream interface to TLS and TCP.
+
+> **Note**: This type is not intended to be inserted into the protocol stack manually; it is vended by connections that use QUIC.
+
 ## Topics
 
-### Instance Properties
-- [let belowProtocol: Void](quicstream/belowprotocol.md)
 ### Enumerations
 - [QUICStream.Directionality](quicstream/directionality.md)
 - [QUICStream.Initiator](quicstream/initiator.md)

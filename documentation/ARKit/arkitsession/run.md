@@ -6,7 +6,7 @@
 Runs a session with the data providers you supply.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

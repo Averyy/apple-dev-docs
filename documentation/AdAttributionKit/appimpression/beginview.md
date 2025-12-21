@@ -16,10 +16,6 @@ Begins recording a view-through impression when ad content corresponding to the 
 func beginView() async throws
 ```
 
-## Mentions
-
-- [Presenting ads in your app](presenting-ads-in-your-app.md)
-
 #### Discussion
 
 Begin the view impression process by calling [`beginView()`](appimpression/beginview().md), as  the following example shows:
@@ -34,6 +30,13 @@ Begin the view impression process by calling [`beginView()`](appimpression/begin
        }
    }
 ```
+
+## See Also
+
+- [func endView() async throws](appimpression/endview.md)
+  Ends the view-through impression when the ad content corresponding to the impression disappears.
+- [func handleView() async throws](appimpression/handleview.md)
+  Handles a view through ad impression.
 
 
 ---

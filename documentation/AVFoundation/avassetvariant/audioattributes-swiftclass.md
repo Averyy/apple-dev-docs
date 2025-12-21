@@ -22,7 +22,7 @@ class AudioAttributes
 
 ## Topics
 
-### Inspecting Audio Attributes
+### Inspecting audio attributes
 - [var formatIDs: [AudioFormatID]](avassetvariant/audioattributes-swift.class/formatids.md)
   The audio formats of the renditions present in the variant.
 - [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](avassetvariant/audioattributes-swift.class/renditionspecificattributes(for:).md)

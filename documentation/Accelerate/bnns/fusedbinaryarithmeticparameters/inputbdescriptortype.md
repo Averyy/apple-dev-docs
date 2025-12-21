@@ -13,7 +13,6 @@ The descriptor type of the second input.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

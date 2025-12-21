@@ -21,6 +21,10 @@ func JSBigIntCreateWithInt64(_ ctx: JSContextRef, _ integer: Int64, _ exception:
 
 A BigInt JSValue of the integer, or NULL if an exception is thrown.
 
+#### Discussion
+
+Creates a JavaScript BigInt with a 64-bit signed integer.
+
 ## Parameters
 
 - `ctx`: The execution context to use.

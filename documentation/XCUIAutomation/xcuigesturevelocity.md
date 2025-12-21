@@ -26,16 +26,8 @@ struct XCUIGestureVelocity
 ### Creating a gesture velocity
 - [init(CGFloat)](xcuigesturevelocity/init(_:).md)
   Creates a gesture velocity, expressed as a float.
-- [init(integerLiteral: Int)](xcuigesturevelocity/init(integerliteral:).md)
-  Creates a gesture velocity with an integer value.
-- [init(floatLiteral: XCUIGestureVelocity.FloatLiteralType)](xcuigesturevelocity/init(floatliteral:).md)
-  Creates a gesture velocity with a float value.
 - [init(rawValue: CGFloat)](xcuigesturevelocity/init(rawvalue:).md)
   Creates a gesture velocity with a raw value, expressed as a float.
-- [XCUIGestureVelocity.IntegerLiteralType](xcuigesturevelocity/integerliteraltype.md)
-  A type that specifies a gesture velocity with an integer literal.
-- [XCUIGestureVelocity.FloatLiteralType](xcuigesturevelocity/floatliteraltype.md)
-  The native type that specifies the gesture velocity value.
 ### Using typical gesture velocities
 - [static let `default`: XCUIGestureVelocity](xcuigesturevelocity/default.md)
   A value representing a default gesture velocity.
@@ -43,10 +35,6 @@ struct XCUIGestureVelocity
   A value representing a fast gesture velocity.
 - [static let slow: XCUIGestureVelocity](xcuigesturevelocity/slow.md)
   A value representing a slow gesture velocity.
-### Default Implementations
-- [Equatable Implementations](xcuigesturevelocity/equatable-implementations.md)
-- [ExpressibleByFloatLiteral Implementations](xcuigesturevelocity/expressiblebyfloatliteral-implementations.md)
-- [ExpressibleByIntegerLiteral Implementations](xcuigesturevelocity/expressiblebyintegerliteral-implementations.md)
 
 ## Relationships
 

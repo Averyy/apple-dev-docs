@@ -1,4 +1,4 @@
-# Finding Multiple GPUs on an Intel-based Mac
+# Finding multiple GPUs on an Intel-based Mac
 
 **Framework**: Metal
 
@@ -18,7 +18,7 @@ However, that function provides a list of GPUs that are available at that moment
 
 Metal calls your handler to tell your app when the system adds or removes an [`MTLDevice`](mtldevice.md) from the system.
 
-> **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling External GPU Additions and Removals`](handling-external-gpu-additions-and-removals.md).
+> **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling external GPU additions and removals`](handling-external-gpu-additions-and-removals.md).
 
 Your app can deregister its observer when it no longer needs GPU device updates from the system by calling the [`MTLRemoveDeviceObserver(_:)`](mtlremovedeviceobserver(_:).md) function.
 
@@ -28,9 +28,9 @@ Each GPU on a Mac computer’s system can be one of three types: integrated, dis
 
 | GPU Type | [`isLowPower`](mtldevice/islowpower.md) | [`isRemovable`](mtldevice/isremovable.md) |
 | --- | --- | --- |
-| Integrated | [`true`](https://developer.apple.com/documentation/swift/true) | [`false`](https://developer.apple.com/documentation/swift/false) |
-| Discrete | [`false`](https://developer.apple.com/documentation/swift/false) | [`false`](https://developer.apple.com/documentation/swift/false) |
-| External | [`false`](https://developer.apple.com/documentation/swift/false) | [`true`](https://developer.apple.com/documentation/swift/true) |
+| Integrated | [`true`](https://developer.apple.com/documentation/Swift/true) | [`false`](https://developer.apple.com/documentation/Swift/false) |
+| Discrete | [`false`](https://developer.apple.com/documentation/Swift/false) | [`false`](https://developer.apple.com/documentation/Swift/false) |
+| External | [`false`](https://developer.apple.com/documentation/Swift/false) | [`true`](https://developer.apple.com/documentation/Swift/true) |
 
 For example, you can use these properties to build a list of devices for each GPU type.
 
@@ -57,13 +57,13 @@ External GPUs typically have significant processing power but lower bandwidth co
 - Processing compute workloads in tandem with rendering graphics
 - Processing compute workloads that use a high arithmetic-logic unit (ALU) complexity
 
-For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory Bandwidth Tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
+For more information about GPU memory bandwidth, see [`Adjusting for GPU memory bandwidth tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
 
 > **Note**:  A headless GPU is more suitable for compute processing than rendering graphics for a display because the GPU isn’t connected to a display.
 
 ## See Also
 
-- [Getting the GPU that Drives a View’s Display](getting-the-gpu-that-drives-a-views-display.md)
+- [Getting the GPU that drives a view’s display](getting-the-gpu-that-drives-a-views-display.md)
   Keep up to date with the optimal device for your display.
 - [func MTLCopyAllDevices() -> [any MTLDevice]](mtlcopyalldevices().md)
   Returns an array of all the Metal device instances in the system.
@@ -71,7 +71,7 @@ For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory 
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(_ display: CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

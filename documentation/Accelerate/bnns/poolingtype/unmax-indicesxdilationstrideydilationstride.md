@@ -13,7 +13,6 @@ A function for pooling that’s the partial inverse of max pooling and sets all 
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

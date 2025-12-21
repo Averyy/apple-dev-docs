@@ -11,7 +11,7 @@ The minimum zoom level of the overlay.
 ## Declaration
 
 ```swift
-attribute number minimumZ;
+minimumZ: number;
 ```
 
 #### Discussion

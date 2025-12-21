@@ -22,27 +22,13 @@ struct PreviewAsset
 
 ## Topics
 
-### Operators
-- [static func == (PreviewAsset, PreviewAsset) -> Bool](previewasset/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let artwork: Artwork?](previewasset/artwork.md)
   The preview artwork for the associated preview music video.
-- [var hashValue: Int](previewasset/hashvalue.md)
-  The hash value.
 - [let hlsURL: URL?](previewasset/hlsurl.md)
   The HLS preview URL for the content.
 - [let url: URL?](previewasset/url.md)
   The preview URL for the content.
-### Instance Methods
-- [func hash(into: inout Hasher)](previewasset/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](previewasset/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](previewasset/customstringconvertible-implementations.md)
-- [Decodable Implementations](previewasset/decodable-implementations.md)
-- [Encodable Implementations](previewasset/encodable-implementations.md)
-- [Equatable Implementations](previewasset/equatable-implementations.md)
 
 ## Relationships
 

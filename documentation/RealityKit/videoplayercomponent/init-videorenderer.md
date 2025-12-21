@@ -10,7 +10,7 @@ Creates a video player component from a sample buffer video renderer object.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -28,11 +28,21 @@ Wait for setup to finish and start reading. Read the sample buffers from the rea
 
 You need to synchronize the audio, captions, and playback rate separately in your app.
 
-The following code example demonstrates this process:
+The following code example demonstrates how to synchronize video with audio:
 
 ```swift
 // Create an `AVSampleBufferVideoRenderer` instance to control playback of a movie.
 let videoRenderer = AVSampleBufferVideoRenderer()
+
+// Create an `AVSampleBufferAudioRenderer` instance to control audio of the playback.
+let audioRenderer = AVSampleBufferAudioRenderer()
+
+// Create a `AVSampleBufferRenderSynchronizer` instance to synchronize video and audio.
+let synchronizer = AVSampleBufferRenderSynchronizer()
+
+// Add both videoRenderer and audioRenderer to the synchronizer.
+synchronizer.addRenderer(videoRenderer)
+synchronizer.addRenderer(audioRenderer)
 
 // Create an entity for display.
 let videoEntity = Entity()
@@ -47,20 +57,39 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
     let sourceAsset = AVURLAsset(url: url)
     let sourceAssetReader = AVAssetReader(asset: sourceAsset)
     let sourceAssetVideoTrack = sourceAsset.loadTracks(withMediaType: .video).first
+    let sourceAssetAudioTrack = sourceAsset.loadTracks(withMediaType: .audio).first
     let sourceAssetReaderVideoTrackOutput = AVAssetReaderTrackOutput(track: sourceAssetVideoTrack!, outputSettings: nil)
+    let sourceAssetReaderAudioTrackOutput = AVAssetReaderTrackOutput(track: sourceAssetAudioTrack!, outputSettings: nil)
     sourceAssetReader.add(sourceAssetReaderVideoTrackOutput!)
+    sourceAssetReader.add(sourceAssetReaderAudioTrackOutput!)
 
     sourceAssetReader.startReading()
+
     videoRenderer.requestMediaDataWhenReady(on: DispatchQueue.global()) {
-      while videoRenderer.isReadyForMoreMediaData {
-          if let sampleBuffer = sourceAssetReaderVideoTrackOutput!.copyNextSampleBuffer() {
-              videoRenderer.enqueue(sampleBuffer)
-          } else {
-              videoRenderer.stopRequestingMediaData()
-              return
-          }
-      }
-  }
+        while videoRenderer.isReadyForMoreMediaData {
+            if let sampleBuffer = sourceAssetReaderVideoTrackOutput!.copyNextSampleBuffer() {
+                videoRenderer.enqueue(sampleBuffer)
+            } else {
+                videoRenderer.stopRequestingMediaData()
+                return
+            }
+        }
+    }
+
+    audioRenderer.requestMediaDataWhenReady(on: DispatchQueue.global()) {
+        while audioRenderer.isReadyForMoreMediaData {
+            if let sampleBuffer = sourceAssetReaderAudioTrackOutput!.copyNextSampleBuffer() {
+                audioRenderer.enqueue(sampleBuffer)
+            } else {
+                audioRenderer.stopRequestingMediaData()
+                return
+            }
+        }
+    }
+
+    // Start the playback immediately.
+    synchronizer.setRate(1, time: .zero)
+
 }
 ```
 

@@ -3,14 +3,14 @@
 **Framework**: WebKit  
 **Kind**: property
 
-The media type for the contents of the web view.
+The media type for the contents of the webpage.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,8 @@ final var mediaType: WebPage.CSSMediaType? { get set }
 #### Discussion
 
 When the value of this property is `nil`, the webpage derives the current media type from the CSS media property of its content. If you assign a value other than `nil` to this property, the webpage uses the value you provide instead.
+
+For example, you can use this property to configure a page for viewing as a print preview by setting it to [`print`](webpage/cssmediatype/print.md).
 
 The default value of this property is `nil`.
 
@@ -44,9 +46,9 @@ The default value of this property is `nil`.
 - [var isBlockedByScreenTime: Bool](webpage/isblockedbyscreentime.md)
   Indicates whether Screen Time blocking has occurred.
 - [var isInspectable: Bool](webpage/isinspectable.md)
-  Indicates whether you can inspect the view with Safari Web Inspector.
+  Indicates whether you can inspect the page with Safari Web Inspector.
 - [var isWritingToolsActive: Bool](webpage/iswritingtoolsactive.md)
-  Indicates whether Writing Tools is active for the view.
+  Indicates whether Writing Tools is active for the page.
 
 
 ---

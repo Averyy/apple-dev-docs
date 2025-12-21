@@ -6,8 +6,8 @@
 The underling quality-of-service (QoS) the Wi-Fi layer uses to transmit data packets from a connection over the air.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -35,29 +35,7 @@ Access categories are typically created by the system on behalf of the client, s
 - [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
 - [WAAccessCategory.interactiveVoice](waaccesscategory/interactivevoice.md)
-  A quality-of-service (QoS) type that provides very low latency for low-throughput flows.
-### Creating an access category
-- [init(from: any Decoder) throws](waaccesscategory/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (WAAccessCategory, WAAccessCategory) -> Bool](waaccesscategory/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](waaccesscategory/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waaccesscategory/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](waaccesscategory/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [WAAccessCategory.AllCases](waaccesscategory/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Type Properties
-- [static var allCases: [WAAccessCategory]](waaccesscategory/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](waaccesscategory/equatable-implementations.md)
+  A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
 ## Relationships
 

@@ -22,7 +22,7 @@ let kCVPixelBufferBytesPerRowAlignmentKey: CFString
 
 #### Discussion
 
-The value for this key is of type doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd.
+The value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
 
 > **Note**:  The number of bytes per row in the pixel buffer must be a multiple of this number.
 

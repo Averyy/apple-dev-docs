@@ -18,7 +18,7 @@ var allowsRunningApplicationSubstitution: Bool { get set }
 
 If an instance of an application is already running and is capable of opening the provided URLs, but the running instance is at a different URL, use the running application.
 
-This property defaults to [`true`](https://developer.apple.com/documentation/swift/true). Set this to [`false`](https://developer.apple.com/documentation/swift/false) if you let the user select between specific versions of an application, or let them choose a particular installation.
+This property defaults to [`true`](https://developer.apple.com/documentation/Swift/true). Set this to [`false`](https://developer.apple.com/documentation/Swift/false) if you let the user select between specific versions of an application, or let them choose a particular installation.
 
 ## See Also
 

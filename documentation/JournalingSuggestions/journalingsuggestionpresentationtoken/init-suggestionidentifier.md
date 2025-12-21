@@ -6,7 +6,7 @@
 Creates a token used to modify the content of JournalingSuggestionsPicker presentation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

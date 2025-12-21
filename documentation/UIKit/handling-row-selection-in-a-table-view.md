@@ -27,7 +27,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ```
 
-If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method:
+If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method:
 
 ```swift
 override func viewWillAppear(_ animated: Bool) {

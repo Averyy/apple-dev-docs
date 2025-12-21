@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: class
 
+A collection of key-value observations which may be registered with multiple observable objects
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -22,9 +24,12 @@ class NSKeyValueSharedObservers
 
 ### Initializers
 - [init(observableClass: AnyClass)](nskeyvaluesharedobservers/init(observableclass:).md)
+  A new collection of observables for an observable object of the given class
 ### Instance Methods
 - [func addSharedObserver(NSObject, forKey: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](nskeyvaluesharedobservers/addsharedobserver(_:forkey:options:context:).md)
+  Add a new observer to the collection.
 - [func snapshot() -> NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobservers/snapshot.md)
+  A momentary snapshot of all observers added to the collection thus far, that can be assigned to an observable using `-[NSObject setSharedObservers:]`
 
 ## Relationships
 
@@ -42,6 +47,7 @@ class NSKeyValueSharedObservers
 
 - [class NSKeyValueObservation](nskeyvalueobservation.md)
 - [class NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobserverssnapshot.md)
+  A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 
 
 ---

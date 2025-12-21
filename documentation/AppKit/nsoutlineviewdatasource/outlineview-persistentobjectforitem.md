@@ -25,7 +25,7 @@ When the outline view is saving the expanded items, this method is called for ea
 
 ##### Special Considerations
 
-You must implement this method if you are automatically saving expanded items (that is, if [`autosaveExpandedItems`](nsoutlineview/autosaveexpandeditems.md) returns [`true`](https://developer.apple.com/documentation/swift/true)).
+You must implement this method if you are automatically saving expanded items (that is, if [`autosaveExpandedItems`](nsoutlineview/autosaveexpandeditems.md) returns [`true`](https://developer.apple.com/documentation/Swift/true)).
 
 ## Parameters
 

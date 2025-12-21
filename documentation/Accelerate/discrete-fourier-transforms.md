@@ -28,26 +28,6 @@ Transform vectors of temporal and spatial domain complex values to the frequency
   Releases a single-precision discrete Fourier transform (DFT) setup structure.
 - [func vDSP_DFT_Interleaved_DestroySetupD(vDSP_DFT_Interleaved_SetupD?)](vdsp_dft_interleaved_destroysetupd(_:).md)
   Releases a double-precision discrete Fourier transform (DFT) setup structure.
-### Real discrete Fourier transform setup
-- [vDSP_DFT_zrop_CreateSetup](vdsp_dft_zrop_createsetup.md)
-  Returns a setup structure that contains precalculated data for forward and inverse, real, single-precision DFT functions.
-- [vDSP_DFT_zrop_CreateSetupD](vdsp_dft_zrop_createsetupd.md)
-  Returns a setup structure that contains precalculated data for forward and inverse, real, double-precision DFT functions.
-### Complex discrete Fourier transform setup
-- [vDSP_DFT_zop_CreateSetup](vdsp_dft_zop_createsetup.md)
-  Returns a setup structure that contains precalculated data for forward and inverse, complex, single-precision DFT functions.
-- [vDSP_DFT_zop_CreateSetupD](vdsp_dft_zop_createsetupd.md)
-  Returns a setup structure that contains precalculated data for forward and inverse, complex, double-precision DFT functions.
-### Functions to perform discrete Fourier transforms
-- [vDSP_DFT_Execute](vdsp_dft_execute.md)
-  Calculates the discrete single-precision Fourier transform for a vector.
-- [vDSP_DFT_ExecuteD](vdsp_dft_executed.md)
-  Calculates the discrete double-precision Fourier transform for a vector.
-### Discrete Fourier transform cleanup
-- [vDSP_DFT_DestroySetup](vdsp_dft_destroysetup.md)
-  Releases a single-precision setup structure.
-- [vDSP_DFT_DestroySetupD](vdsp_dft_destroysetupd.md)
-  Releases a double-precision setup structure.
 ### Data types
 - [typealias vDSP_DFT_Interleaved_Setup](vdsp_dft_interleaved_setup.md)
   An opaque type that contains setup information for an interleaved single-precision discrete Fourier transform (DFT).

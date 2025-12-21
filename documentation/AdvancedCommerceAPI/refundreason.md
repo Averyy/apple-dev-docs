@@ -20,6 +20,8 @@ string refundReason
   The three-letter ISO 4217 currency code for the price of a product.
 - [type description](description.md)
   A string you provide that describes a SKU.
+- [type dependentSKU](dependentsku.md)
+  The product identifier of a dependent SKU in a subscription price change.
 - [type displayName](displayname.md)
   A string with a product name that you can localize and is suitable for display to customers.
 - [type effective](effective.md)
@@ -44,8 +46,6 @@ string refundReason
   A tax code that applies to a SKU.
 - [type targetProductId](targetproductid.md)
   A generic product identifier that represents all Advanced Commerce API products to App Store Connect, which you use when you migrate a product.
-- [type transactionId](transactionid.md)
-  A unique identifier that the App Store generates for a transaction.
 
 
 ---

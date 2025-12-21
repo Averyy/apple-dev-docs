@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Explicitly synchronizes in-memory keys and values with those stored on disk.
+Synchronizes the in-memory keys and values with the ones stored in iCloud.
 
 **Availability**:
 - iOS 5.0+
@@ -22,17 +22,15 @@ func synchronize() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the in-memory and on-disk keys and values were synchronized, or [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred. For example, this method returns [`false`](https://developer.apple.com/documentation/swift/false) if an app was not built with the proper entitlement requests.
+`true` if the in-memory and iCloud keys are synchronized, or `false` if an error occurred. For example, this method returns `false` if the app doesn’t have the required entitlements to access the iCloud key-value store.
 
 #### Discussion
 
-The only recommended time to call this method is upon app launch, or upon returning to the foreground, to ensure that the in-memory key-value store representation is up-to-date.
+Call this method sparingly to synchronize the in-memory copy of the keys and values with the version stored in iCloud. Typically, you call this method only at launch or when your app returns to the foreground.
 
-Changes you make to the key-value store are saved to memory. The system then synchronizes the in-memory keys and values with the local on-disk cache, automatically and at appropriate times. For example, it synchronizes the keys when your app is put into the background, when changes are received from iCloud, and when your app makes changes to a key but does not call the [`synchronize()`](nsubiquitouskeyvaluestore/synchronize().md) method for several seconds.
+Most of the time, you don’t need to call this method directly. The system automatically synchronizes your app’s in-memory copy of the keys and values with the on-disk version at appropriate times. For example, it synchronizes them when your app moves to the background and when iCloud reports a change to a key or value. When you change keys and values locally, the system also synchronizes your changes automatically after a short delay.
 
-This method does not force new keys and values to be written to iCloud. Rather, it lets iCloud know that new keys and values are available to be uploaded. Do not rely on your keys and values being available on other devices immediately. The system controls when those keys and values are uploaded. The frequency of upload requests for key-value storage is limited to several per minute.
-
-During synchronization between memory and disk, this method updates your in-memory set of keys and values with changes previously received from iCloud.
+Don’t rely on keys and values being available on the person’s other devices immediately. This method doesn’t force the system to write new keys and values to iCloud. Instead, it notifies iCloud that new keys and values are available. iCloud determines the best time to retrieve those keys and synchronize them with the person’s other devices. Typically, iCloud limits updates to several times per minute.
 
 
 ---

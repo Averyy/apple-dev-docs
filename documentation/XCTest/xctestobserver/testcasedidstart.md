@@ -5,9 +5,6 @@
 
 Notifies the observer when a test case starts.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

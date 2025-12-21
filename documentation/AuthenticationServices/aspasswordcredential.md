@@ -55,6 +55,8 @@ class ASPasswordCredential
   Streamline your app’s login and onboarding procedures.
 - [class ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
   A mechanism for generating requests to perform keychain credential sharing.
+- [Password use in web browsers](password-use-in-web-browsers.md)
+  Register and authenticate website users by using passwords.
 
 
 ---

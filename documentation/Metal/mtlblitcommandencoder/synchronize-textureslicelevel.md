@@ -18,7 +18,7 @@ func synchronize(texture: any MTLTexture, slice: Int, level: Int)
 
 ## Mentions
 
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 

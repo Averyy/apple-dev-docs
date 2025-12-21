@@ -34,12 +34,6 @@ You can call this method multiple times to process multiple streams.
 
 ## See Also
 
-- [func applied<S, TS, Annotation>(to: S, eventHandler: EventHandler?) async throws -> [AnnotatedFeature<Self.OutputSequence, Annotation>]](audiofeatureprint/applied(to:eventhandler:)-74d6e.md)
-  Performs the transformation on a sequence of annotated input sequences.
-- [AudioFeaturePrint.Input](audiofeatureprint/input.md)
-  The input type.
-- [AudioFeaturePrint.Output](audiofeatureprint/output.md)
-  The output type.
 - [AudioFeaturePrint.FeatureSequence](audiofeatureprint/featuresequence.md)
   An async sequence of audio buffers.
 

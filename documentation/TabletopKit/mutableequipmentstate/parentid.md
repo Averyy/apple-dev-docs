@@ -7,7 +7,7 @@
 The identifier for the parent equipment that holds or contains this equipment.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

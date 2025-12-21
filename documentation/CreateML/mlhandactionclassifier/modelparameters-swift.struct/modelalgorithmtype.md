@@ -23,18 +23,6 @@ enum ModelAlgorithmType
 ### Choosing an algorithm type
 - [MLHandActionClassifier.ModelParameters.ModelAlgorithmType.gcn](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/gcn.md)
   Selects the graph convolutional neural-network algorithm for a hand action classifier.
-### Comparing an algorithm type
-- [static func == (MLHandActionClassifier.ModelParameters.ModelAlgorithmType, MLHandActionClassifier.ModelParameters.ModelAlgorithmType) -> Bool](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Hashing an algorithm type
-- [var hashValue: Int](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/equatable-implementations.md)
 
 ## Relationships
 

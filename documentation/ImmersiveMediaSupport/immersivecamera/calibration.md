@@ -6,8 +6,8 @@
 Calibration details for this camera.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,14 +17,14 @@ var calibration: ImmersiveCameraCalibration
 
 ## See Also
 
-- [var id: String](immersivecamera/id-swift.property.md)
-  An identifier string for this immersive camera. Must be unique for each immersive camera and cannot be blank.
+- [var id: String](immersivecamera/id.md)
+  A unique and non empty identifier string for this immersive camera.
 - [var pose: Pose3DFloat](immersivecamera/pose.md)
   The pose of this immersive camera.
 - [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
 - [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
-  Type of camera. Currently only the “stereoCamera” type is supported.
+  Represents the type of the camera.
 
 
 ---

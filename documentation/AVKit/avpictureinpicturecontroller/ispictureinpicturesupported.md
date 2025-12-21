@@ -21,8 +21,8 @@ class func isPictureInPictureSupported() -> Bool
 
 ## Mentions
 
-- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
 - [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
+- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
 
 #### Return Value
 

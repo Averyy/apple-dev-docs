@@ -23,7 +23,7 @@ var isBridged: Bool { get }
 
 A bridge is a special type of accessory that allows you to communicate with accessories that can’t communicate directly with HomeKit. For example, a bridge might be a hub for multiple lights that use a communication protocol other than HomeKit Accessory Protocol.
 
-Bridged accessories have the [`isBridged`](hmaccessory/isbridged.md) property set to [`true`](https://developer.apple.com/documentation/swift/true) and depend on the bridge to communicate with HomeKit. All other accessories, including the bridge itself, have an [`isBridged`](hmaccessory/isbridged.md) property setting of [`false`](https://developer.apple.com/documentation/swift/false).
+Bridged accessories have the [`isBridged`](hmaccessory/isbridged.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true) and depend on the bridge to communicate with HomeKit. All other accessories, including the bridge itself, have an [`isBridged`](hmaccessory/isbridged.md) property setting of [`false`](https://developer.apple.com/documentation/Swift/false).
 
 To add a bridge to a home, use the home’s [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) method, as you would for any other accessory. The accessories behind the bridge are automatically added to the home as well. The home’s delegate doesn’t receive a [`home(_:didAdd:)`](hmhomedelegate/home(_:didadd:)-6jcl7.md) delegate message for the bridge, but does receive one for each accessory behind the bridge.
 

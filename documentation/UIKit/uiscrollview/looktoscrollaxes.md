@@ -6,7 +6,7 @@
 Defines which axes are considered for Look to Scroll. Does not affect when isPagingEnabled is true.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

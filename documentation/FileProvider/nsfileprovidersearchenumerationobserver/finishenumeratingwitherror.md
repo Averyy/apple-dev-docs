@@ -7,7 +7,7 @@
 Finishes a search enumeration by sending an error to the framework.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

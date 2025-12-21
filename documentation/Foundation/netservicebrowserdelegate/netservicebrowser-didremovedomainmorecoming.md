@@ -21,7 +21,7 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didRemoveDomain do
 
 #### Discussion
 
-The delegate uses this message to compile a list of unavailable domains. It should wait until `moreDomainsComing` is [`false`](https://developer.apple.com/documentation/swift/false) to do a bulk update of user interface elements.
+The delegate uses this message to compile a list of unavailable domains. It should wait until `moreDomainsComing` is [`false`](https://developer.apple.com/documentation/Swift/false) to do a bulk update of user interface elements.
 
 ## Parameters
 

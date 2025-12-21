@@ -22,7 +22,7 @@ The keys for this dictionary are lowercased ISO 3166-1 alpha-2 country codes. Va
 
 Include a key entry for each country code where your app supports an external purchase link. Provide from one to five destination URLs (links to your website) for your app to choose from for each country code.
 
-> **Note**:  You can provide up to five links if your app qualifies for the StoreKit External Purchase Link entitlement as described in [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/).  Otherwise, provide one link for each country code.
+> **Note**:  You can provide one or more links if your app qualifies for the StoreKit External Purchase Link entitlement as described in [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/).  Otherwise, provide one link for each country code.
 
 Your app accesses these URLs through the [`eligibleURLs`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/eligibleURLs) array in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object, and uses the link you select with the [`open(url:)`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/open(url:)) method in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object.
 
@@ -82,11 +82,13 @@ For example, if a country code has a maximum of five links and you provide five 
 - [SKExternalPurchase](information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 - [SKExternalPurchaseCustomLinkRegions](information-property-list/skexternalpurchasecustomlinkregions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 - [SKExternalPurchaseLink](information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [SKIncludeConsumableInAppPurchaseHistory](information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
+- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+  A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 
 
 ---

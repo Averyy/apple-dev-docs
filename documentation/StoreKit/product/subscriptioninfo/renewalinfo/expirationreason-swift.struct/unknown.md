@@ -26,7 +26,7 @@ static let unknown: Product.SubscriptionInfo.RenewalInfo.ExpirationReason
 - [static let billingError: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/billingerror.md)
   The auto-renewable subscription expired because of a billing error.
 - [static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/didnotconsenttopriceincrease.md)
-  The subscription expired because the customer didn’t consent to an auto-renewable subscription price increase that requires customer consent.
+  The subscription expired because the customer didn’t consent to a price increase that requires customer consent.
 - [static let productUnavailable: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/productunavailable.md)
   The auto-renewable subscription expired because the product was unavailable for purchase at the time of the renewal.
 

@@ -6,7 +6,7 @@
 A container used to represent the asset loaded into the Model3D View.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

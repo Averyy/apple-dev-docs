@@ -6,7 +6,7 @@
 Whether or not standard content insets should be applied to the view. Defaults to YES.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

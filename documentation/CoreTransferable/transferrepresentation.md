@@ -40,7 +40,7 @@ struct Greeting: Codable, Transferable {
 }
 
 extension UTType {
-    static var greeting: UTType { .init(exportedAs: "com.example.greeting") }
+    static let greeting = UTType(exportedAs: "com.example.greeting")
 }
 ```
 

@@ -6,8 +6,8 @@
 The viewer’s selected spatial video rendering mode.
 
 **Availability**:
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

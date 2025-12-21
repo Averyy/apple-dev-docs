@@ -30,28 +30,19 @@ protocol TabularEstimator<Transformer>
 - [associatedtype Transformer : TabularTransformer](tabularestimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending<Other>(Other) -> some TabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>>
-](tabularestimator/appending(_:)-2i7ef.md)
-  Compose this tabular estimator with another tabular estimator.
-- [func appending<Other>(Other) -> some TabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>>
-](tabularestimator/appending(_:)-4d7fj.md)
-  Compose this tabular estimator with a tabular transformer.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](tabularestimator/appending(_:)-9kf76.md)
+- [func appending(_:)](tabularestimator/appending(_:).md)
   Composes this tabular estimator with a supervised tabular estimator.
 ### Adapting and fitting
 - [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](tabularestimator/adaptedassupervised(annotationcolumnid:).md)
   Exposes this tabular estimator as a supervised tabular estimator.
 - [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](tabularestimator/fitted(to:eventhandler:).md)
   Fits a transformer to a data frame
+- [func fitted(to:)](tabularestimator/fitted(to:).md)
 ### Encoding and decoding
 - [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](tabularestimator/encode(_:to:).md)
   Encodes a fitted transformer.
 - [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](tabularestimator/decode(from:).md)
   Decodes a previously fitted transformer.
-### Instance Methods
-- [func fitted(to: DataFrame) async throws -> Self.Transformer](tabularestimator/fitted(to:)-3z0ja.md)
-- [func fitted(to: DataFrame) async throws -> Self.Transformer](tabularestimator/fitted(to:)-62p88.md)
 
 ## Relationships
 

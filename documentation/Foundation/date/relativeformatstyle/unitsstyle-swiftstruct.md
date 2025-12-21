@@ -36,8 +36,6 @@ Cases include [`wide`](date/relativeformatstyle/unitsstyle-swift.struct/wide.md)
 - [static var wide: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.struct/wide.md)
   A style that uses full representation of units, such as “2 months ago”.
 ### Comparing Relative Date Format Units Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

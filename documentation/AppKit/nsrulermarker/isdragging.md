@@ -16,7 +16,7 @@ var isDragging: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is being dragged, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is being dragged, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

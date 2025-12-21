@@ -46,6 +46,11 @@ class ASCredentialProviderExtensionContext
 ### Canceling
 - [func cancelRequest(withError: any Error)](ascredentialproviderextensioncontext/cancelrequest(witherror:).md)
   Cancels the request.
+### Instance Methods
+- [func completeGeneratePasswordRequest(results: [ASGeneratedPassword], completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completegeneratepasswordrequest(results:completionhandler:).md)
+  Return potential passwords for the given request.
+- [func completeSavePasswordRequest(completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completesavepasswordrequest(completionhandler:).md)
+  Signal that a password request was successfully saved.
 
 ## Relationships
 

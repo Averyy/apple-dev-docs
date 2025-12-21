@@ -19,7 +19,7 @@ class func setCurrent(_ context: EAGLContext?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If an error occurred, the rendering context for the current thread remains unchanged.
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If an error occurred, the rendering context for the current thread remains unchanged.
 
 #### Discussion
 

@@ -15,6 +15,14 @@
 func AudioObjectShow(_ inObjectID: AudioObjectID)
 ```
 
+#### Discussion
+
+Prints to standard out a textural description of the AudioObject.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to show.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

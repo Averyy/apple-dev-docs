@@ -21,11 +21,11 @@ class func canExportFileExtension(_ extension: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the [`MDLAsset`](mdlasset.md) class can export asset data in the format with the specified extension; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the [`MDLAsset`](mdlasset.md) class can export asset data in the format with the specified extension; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), you can use the [`export(to:)`](mdlasset/export(to:).md) method to write an asset to a file using the format identified by the specified extension.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), you can use the [`export(to:)`](mdlasset/export(to:).md) method to write an asset to a file using the format identified by the specified extension.
 
 The set of supported formats includes Wavefront Object (`.obj`) and Standard Tessellation Language (`.stl`). Additional formats may be supported as well.
 

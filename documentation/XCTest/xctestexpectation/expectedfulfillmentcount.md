@@ -15,7 +15,7 @@ var expectedFulfillmentCount: Int { get set }
 
 The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) must be greater than 0. By default, expectations have an [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) of 1.
 
-> **Note**:  The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) is ignored when [`isInverted`](xctestexpectation/isinverted.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) is ignored when [`isInverted`](xctestexpectation/isinverted.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

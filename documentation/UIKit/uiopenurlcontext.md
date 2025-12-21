@@ -21,7 +21,7 @@ class UIOpenURLContext
 
 #### Overview
 
-UIKit provides a [`UIOpenURLContext`](uiopenurlcontext.md) object when your app receives a URL to open. The object contains the URL itself and any options needed to handle the URL correctly. Don’t create [`UIOpenURLContext`](uiopenurlcontext.md) objects yourself.
+UIKit provides a [`UIOpenURLContext`](uiopenurlcontext.md) object when your app receives a URL to open, such as in your implementation of [`scene(_:openURLContexts:)`](uiscenedelegate/scene(_:openurlcontexts:).md). The object contains the URL itself and any options needed to handle the URL correctly. Don’t create [`UIOpenURLContext`](uiopenurlcontext.md) objects yourself.
 
 ## Topics
 

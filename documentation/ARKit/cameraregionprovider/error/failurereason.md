@@ -6,7 +6,7 @@
 A localized message describing the reason for the failure.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

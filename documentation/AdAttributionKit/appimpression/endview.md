@@ -16,10 +16,6 @@ Ends the view-through impression when the ad content corresponding to the impres
 func endView() async throws
 ```
 
-## Mentions
-
-- [Presenting ads in your app](presenting-ads-in-your-app.md)
-
 #### Discussion
 
 End the view-through impression, as the following example shows:
@@ -34,6 +30,13 @@ End the view-through impression, as the following example shows:
        }
    }    
 ```
+
+## See Also
+
+- [func beginView() async throws](appimpression/beginview.md)
+  Begins recording a view-through impression when ad content corresponding to the impression becomes visible.
+- [func handleView() async throws](appimpression/handleview.md)
+  Handles a view through ad impression.
 
 
 ---

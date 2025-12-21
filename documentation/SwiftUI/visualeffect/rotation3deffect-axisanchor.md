@@ -20,7 +20,7 @@ A rotation effect.
 
 #### Discussion
 
-> **Note**: During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achive more natual animations, cosinder using [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md)
+> **Note**: During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achieve more natural animations, consider using [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md)
 
 This effect causes the content to appear rotated, but doesn’t change the content’s frame. The following code applies a rotation of 45° about the y-axis, using the default anchor point at the center of the content:
 

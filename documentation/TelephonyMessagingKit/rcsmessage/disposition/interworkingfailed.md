@@ -6,8 +6,8 @@
 The carrier attempted to use a non-CPM technology to deliver the message, but failed.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration

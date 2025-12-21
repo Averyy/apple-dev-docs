@@ -17,7 +17,7 @@ Saves the values of the receiver’s user default properties.
 
 #### Discussion
 
-This method has no effect if [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method has no effect if [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

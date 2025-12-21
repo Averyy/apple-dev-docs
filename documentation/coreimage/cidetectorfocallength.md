@@ -37,7 +37,7 @@ In this formula, `image_diagonal_pixels` is the length (in pixels) of the image 
 
 To measure diagonal field of view, put the camera on a tripod so that it is perpendicular to a surface and the center of the image is oriented on a mark on the surface. Measure the distance from the mark to one of the corner points of the image (`Y`). Measure the distance from the camera to the surface (`Z`).  The field of view is then `2*arctan(Y/Z)`.
 
-You must specify this value in terms of the maximum sensor resolution. If the supplied [`CIImage`](ciimage.md) has been scaled relative relative to the maximum sensor resolution, the supplied focal length must also be similarly scaled.
+You must specify this value in terms of the maximum sensor resolution. If the supplied [`CIImage`](ciimage.md) has been scaled relative to the maximum sensor resolution, the supplied focal length must also be similarly scaled.
 
 ## See Also
 

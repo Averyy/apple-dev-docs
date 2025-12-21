@@ -21,7 +21,7 @@ optional func videoComposition(_ videoComposition: AVVideoComposition, shouldCon
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

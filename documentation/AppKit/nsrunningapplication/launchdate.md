@@ -33,7 +33,7 @@ This property is only available for applications that were launched by LaunchSer
 - [var executableURL: URL?](nsrunningapplication/executableurl.md)
   Indicates the URL to the application’s executable.
 - [var isFinishedLaunching: Bool](nsrunningapplication/isfinishedlaunching.md)
-  Indicates whether the receiver’s process has finished launching,
+  A Boolean value that determines whether the receiver’s process has finished launching.
 - [var processIdentifier: pid_t](nsrunningapplication/processidentifier.md)
   Indicates the process identifier (pid) of the application.
 - [var ownsMenuBar: Bool](nsrunningapplication/ownsmenubar.md)

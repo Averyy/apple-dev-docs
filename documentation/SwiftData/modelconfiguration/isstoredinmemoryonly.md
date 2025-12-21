@@ -25,8 +25,6 @@ let isStoredInMemoryOnly: Bool
 
 - [let url: URL](modelconfiguration/url.md)
   The on-disk location of the schema’s persistent storage.
-- [let name: String](modelconfiguration/name.md)
-  The model configuration’s name.
 - [let allowsSave: Bool](modelconfiguration/allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
 

@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -18,8 +18,6 @@ struct DidTerminateApplicationMessage
 - [init(application: NSRunningApplication)](nsworkspace/didterminateapplicationmessage/init(application:).md)
 ### Instance Properties
 - [var application: NSRunningApplication](nsworkspace/didterminateapplicationmessage/application.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidTerminateApplicationMessage) -> Notification](nsworkspace/didterminateapplicationmessage/makenotification(_:).md)
 
 ## Relationships
 

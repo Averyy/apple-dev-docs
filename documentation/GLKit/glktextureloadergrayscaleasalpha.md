@@ -19,7 +19,7 @@ let GLKTextureLoaderGrayscaleAsAlpha: String
 
 #### Discussion
 
-This key specifies whether the image data in a grayscale image should be treated as alpha information. The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/swift/false), the image data is treated as luminance data. If [`true`](https://developer.apple.com/documentation/swift/true), the image data is treated as alpha data. The default value is [`false`](https://developer.apple.com/documentation/swift/false). This key is ignored if the source image is not a grayscale image.
+This key specifies whether the image data in a grayscale image should be treated as alpha information. The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/Swift/false), the image data is treated as luminance data. If [`true`](https://developer.apple.com/documentation/Swift/true), the image data is treated as alpha data. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). This key is ignored if the source image is not a grayscale image.
 
 ## See Also
 

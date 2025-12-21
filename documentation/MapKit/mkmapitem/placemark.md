@@ -22,7 +22,7 @@ var placemark: MKPlacemark { get }
 
 #### Discussion
 
-If you create the map item using the [`forCurrentLocation()`](mkmapitem/forcurrentlocation().md) method, the value of this property is `nil` and the [`isCurrentLocation`](mkmapitem/iscurrentlocation.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+If you create the map item using the [`forCurrentLocation()`](mkmapitem/forcurrentlocation().md) method, the value of this property is `nil` and the [`isCurrentLocation`](mkmapitem/iscurrentlocation.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

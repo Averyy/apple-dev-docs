@@ -1,4 +1,4 @@
-# Tracking Photo Capture Progress
+# Tracking photo capture progress
 
 **Framework**: AVFoundation
 
@@ -45,7 +45,7 @@ When the photo output has image data available for your app, it calls your deleg
 
 For example, if you request RAW+HEIF capture in a three-exposure bracket, the photo output calls your delegate’s `didFinishProcessingPhoto` method six times (2 formats × 3 exposures), providing six [`AVCapturePhoto`](avcapturephoto.md) objects. To keep track of multiple results, compare the [`photoCount`](avcapturephoto/photocount.md) from each photo to the [`expectedPhotoCount`](avcaptureresolvedphotosettings/expectedphotocount.md) of your resolved settings.
 
-> **Note**:  If you request Live Photo capture, additional delegate methods provide feedback on that process. See [`Capturing and Saving Live Photos`](capturing-and-saving-live-photos.md).
+> **Note**:  If you request Live Photo capture, additional delegate methods provide feedback on that process. See [`Capturing and saving Live Photos`](capturing-and-saving-live-photos.md).
 
 ##### Clean Up When Capture Is Complete
 
@@ -85,9 +85,9 @@ func shootPhoto() {
 
 ## See Also
 
-- [Saving Captured Photos](saving-captured-photos.md)
+- [Saving captured photos](saving-captured-photos.md)
   Add an image and other data from a photo capture to the photo library.
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
   Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
 

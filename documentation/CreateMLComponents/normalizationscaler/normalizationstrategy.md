@@ -27,17 +27,6 @@ enum NormalizationStrategy
   A normalization strategy that scales by the L1 Norm (sum of vector absolute values).
 - [NormalizationScaler.NormalizationStrategy.l2](normalizationscaler/normalizationstrategy/l2.md)
   A normalization strategy that scales by the L2 Norm (Euclidean norm).
-### Operators
-- [static func == (NormalizationScaler<Element>.NormalizationStrategy, NormalizationScaler<Element>.NormalizationStrategy) -> Bool](normalizationscaler/normalizationstrategy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](normalizationscaler/normalizationstrategy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](normalizationscaler/normalizationstrategy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](normalizationscaler/normalizationstrategy/equatable-implementations.md)
 
 ## Relationships
 

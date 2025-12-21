@@ -19,6 +19,10 @@ queue_chain_t * CommandChain();
 
 Queue chain structure used to queue commands.
 
+#### Discussion
+
+Accessor to queue chain structure used to queue commands.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-An NSNumber object containing a Boolean value specifying whether disabled fonts should be included in the list of matching descriptors; [`true`](https://developer.apple.com/documentation/swift/true) if they should be included, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. When unspecified, CoreText assumes [`false`](https://developer.apple.com/documentation/swift/false). This option is intended only for font management applications. This option will make descriptor matching slower.
+An NSNumber object containing a Boolean value specifying whether disabled fonts should be included in the list of matching descriptors.
 
 **Availability**:
 - macOS 10.7+
@@ -13,6 +13,10 @@ An NSNumber object containing a Boolean value specifying whether disabled fonts 
 ```swift
 static let includeDisabledFontsOption: NSFontCollectionMatchingOptionKey
 ```
+
+#### Discussion
+
+[`true`](https://developer.apple.com/documentation/Swift/true) indicates they should be included. When unspecified, CoreText assumes [`false`](https://developer.apple.com/documentation/Swift/false). This option is intended only for font management applications. This option will make descriptor matching slower.
 
 ## See Also
 

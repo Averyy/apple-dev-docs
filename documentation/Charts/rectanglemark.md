@@ -99,29 +99,65 @@ var body: some View {
 
 ![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](https://docs-assets.developer.apple.com/published/25ed6d8c79ed66cfd15feff0a8264741/RectangleMarkSwift.RectangleMarkScatter%402x.png)
 
+##### Rectanglemark in Chart3d
+
+To plot a rectangle in a 3D Chart, use the [`init(x:y:z:)`](rectanglemark/init(x:y:z:).md) initializer.
+
+> ❗ **Important**: A 3D RectangleMark requires one parameter to be a single numeric value and the other two parameters to be numeric ranges.
+
+The rectangle extends along the two axes that you provide ranges for, and is positioned at a point that you specify for the third axis.
+
+For example, the following `Chart3D` shows three rectangle marks. Each mark extends along two axes, and is fixed at `0` on the third axis.
+
+```swift
+Chart3D {
+    // A rule that extends along the x-axis and y-axis
+    RectangleMark(
+        x: .value("x", -0.5..<0.5),
+        y: .value("y", -0.5..<0.5),
+        z: .value("z", 0)
+    )
+    .foregroundStyle(.red)
+    // A rule that extends along the y-axis and z-axis
+    RectangleMark(
+        x: .value("x", 0),
+        y: .value("y", -0.5..<0.5),
+        z: .value("z", -0.5..<0.5)
+    )
+    .foregroundStyle(.green)
+    // A rule that extends along the z-axis and x-axis
+    RectangleMark(
+        x: .value("x", -0.5..<0.5),
+        y: .value("y", 0),
+        z: .value("z", -0.5..<0.5)
+    )
+    .foregroundStyle(.blue)
+}
+```
+
 ## Topics
 
 ### Creating a rectangle mark
 - [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, width: MarkDimension)](rectanglemark/init(x:ystart:yend:width:)-vh2x.md)
   Creates a rectangle mark with an y interval encoding and an x encoding.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-27222.md)
-  Creates a rectangle mark with an x interval encoding and a y encoding.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rectanglemark/init(xstart:xend:ystart:yend:)-1qbzg.md)
-  Creates a rectangle mark with x and y interval encodings.
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension)](rectanglemark/init(x:y:width:height:).md)
-  Creates a rectangle that plots values with x and y.
-### Initializers
-- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rectanglemark/init(x:y:z:).md)
 - [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension)](rectanglemark/init(x:ystart:yend:width:)-xhqp.md)
   Creates a rectangle mark that plots values on x and has a fixed y interval.
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-27222.md)
+  Creates a rectangle mark with an x interval encoding and a y encoding.
 - [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-4x46i.md)
   Creates a rectangle mark with a fixed x interval and y encoding.
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rectanglemark/init(xstart:xend:ystart:yend:)-1qbzg.md)
+  Creates a rectangle mark with x and y interval encodings.
 - [init(xStart: CGFloat?, xEnd: CGFloat?, yStart: CGFloat?, yEnd: CGFloat?)](rectanglemark/init(xstart:xend:ystart:yend:)-5682c.md)
   Creates a rectangle mark with fixed x and y intervals.
 - [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rectanglemark/init(xstart:xend:ystart:yend:)-5cbgh.md)
   Creates a rectangle mark with a y interval encoding and a fixed x interval.
 - [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](rectanglemark/init(xstart:xend:ystart:yend:)-6jeka.md)
   Creates a rectangle mark with an x interval encoding and a fixed y interval.
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension)](rectanglemark/init(x:y:width:height:).md)
+  Creates a rectangle that plots values with x and y.
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rectanglemark/init(x:y:z:).md)
+  Creates a rectangle mark for a 3D chart.
 
 ## Relationships
 

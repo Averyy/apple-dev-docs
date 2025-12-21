@@ -4,10 +4,10 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,8 +22,6 @@ struct DidChangeMessage
 ### Instance Properties
 - [var pointerLockState: UIPointerLockState](uipointerlockstate/didchangemessage/pointerlockstate.md)
 - [var scene: UIScene](uipointerlockstate/didchangemessage/scene.md)
-### Type Methods
-- [static func makeNotification(UIPointerLockState.DidChangeMessage) -> Notification](uipointerlockstate/didchangemessage/makenotification(_:).md)
 
 ## Relationships
 

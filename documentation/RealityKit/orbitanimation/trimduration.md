@@ -10,7 +10,7 @@ An optional duration that overrides the calculated duration.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -23,9 +23,12 @@ var trimDuration: TimeInterval? { get set }
 
 The framework calculates [`duration`](orbitanimation/duration.md), but you can set this property to override it. This property is `nil` by default, which indicates that the animation stops after one play that spans [`duration`](orbitanimation/duration.md).
 
-If you set a value for this property and both [`trimStart`](orbitanimation/trimstart.md) and [`trimEnd`](orbitanimation/trimend.md) are `nil`, the animation observes this property as an edited duration.
+If you set a non-zero value for this property and both [`trimStart`](orbitanimation/trimstart.md) and [`trimEnd`](orbitanimation/trimend.md) are `nil`, the animation observes this property as an edited duration.
 
-A value greater than [`duration`](orbitanimation/duration.md) causes the animation to repeat, applying the characteristics defined by [`repeatMode`](orbitanimation/repeatmode.md). Assign this property [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Double/greatestFiniteMagnitude) to repeat indefinitely.
+When you set [`repeatMode`](orbitanimation/repeatmode.md) to make the animation repeat:
+
+- If this property is `nil`, the animation repeats forever.
+- If set to a value greater than [`duration`](orbitanimation/duration.md), the animation repeats for the specified duration.
 
 ## See Also
 

@@ -31,7 +31,7 @@ If unspecified, the default store for a view hierarchy is `UserDefaults.standard
 
 ## See Also
 
-- [Restoring Your App’s State with SwiftUI](restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [struct AppStorage](appstorage.md)
   A property wrapper type that reflects a value from `UserDefaults` and invalidates a view on a change in value in that user default.

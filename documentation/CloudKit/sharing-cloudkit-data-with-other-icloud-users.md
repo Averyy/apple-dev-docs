@@ -219,7 +219,7 @@ To be thread-safe, the sample serializes data access with a dispatch queue ([`Di
   An object that controls participant access and permission options.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [@MainActor class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.

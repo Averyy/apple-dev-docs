@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure global preferences.
+The payload to configure global preferences.
 
 **Availability**:
 - macOS 10.7+
@@ -73,7 +73,7 @@ Specify `.GlobalPreferences` as the payload type.
 ## See Also
 
 - [object UserPreferences](userpreferences.md)
-  The payload you use to configure iCloud password preferences.
+  The payload that configures iCloud password preferences.
 
 
 ---

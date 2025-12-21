@@ -27,7 +27,7 @@ To launch the hummingbird feeder at the position of the wearer’s head, the sam
 
 > **Note**: You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum), such as a hand, by using a [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) and requesting authorization from the person using the app.
 
-The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the doc://com.apple.documentation/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct to doc://com.apple.documentation/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct/once to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
+The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the [`AnchoringComponent.TrackingMode`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct) to [`once`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/once) to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
 
 ```swift
 func startHeadPositionMode(content: RealityViewContent) {
@@ -142,10 +142,10 @@ func startFollowMode() {
 
 ## See Also
 
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -162,8 +162,6 @@ func startFollowMode() {
   Learn how everything fits together in RealityKit.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)

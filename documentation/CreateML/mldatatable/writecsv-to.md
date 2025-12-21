@@ -19,9 +19,9 @@ Exports a CSV file of the data table to the given directory URL.
 func writeCSV(to fileURL: URL) throws
 ```
 
-#### Discussion
+## Parameters
 
-- fileURL: The location in the file system to which the data table file should be written.
+- `fileURL`: The location in the file system to which the data table file should be written.
 
 ## See Also
 

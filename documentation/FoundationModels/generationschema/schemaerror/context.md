@@ -6,11 +6,11 @@
 The context in which the error occurred.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,11 @@ struct Context
 
 ## Topics
 
-### Getting the context
-- [init(debugDescription: String, underlyingErrors: [any Error])](generationschema/schemaerror/context/init(debugdescription:underlyingerrors:).md)
+### Creating a schema error context
+- [init(debugDescription: String)](generationschema/schemaerror/context/init(debugdescription:).md)
 ### Getting the debug description
 - [let debugDescription: String](generationschema/schemaerror/context/debugdescription.md)
   A string representation of the debug description.
-### Getting the underlying errors
-- [let underlyingErrors: [any Error]](generationschema/schemaerror/context/underlyingerrors.md)
-  The underlying errors that caused this error.
 
 ## Relationships
 

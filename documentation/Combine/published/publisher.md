@@ -20,22 +20,6 @@ A publisher for properties marked with the `@Published` attribute.
 struct Publisher
 ```
 
-## Topics
-
-### Declaring Publisher Topography
-- [Published.Publisher.Output](published/publisher/output.md)
-  The kind of values published by this publisher.
-- [Published.Publisher.Failure](published/publisher/failure.md)
-  The kind of errors this publisher might publish.
-### Applying Operators
-- [Publisher Operators](published-publisher-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Instance Methods
-- [func receive<S>(subscriber: S)](published/publisher/receive(subscriber:).md)
-  Attaches the specified subscriber to this publisher.
-### Default Implementations
-- [Publisher Implementations](published/publisher/publisher-implementations.md)
-
 ## Relationships
 
 ### Conforms To

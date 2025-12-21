@@ -9,7 +9,7 @@ A data store that applies settings to the current user or device.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 
@@ -102,13 +102,10 @@ In a few cases, you can also access the effective settings. For example, a media
 - [struct SettingMetadata](settingmetadata.md)
   Additional information about a configurable setting.
 ### Observing Current Settings
-- [var objectWillChange: ObservableObjectPublisher](managedsettingsstore/objectwillchange.md)
 - [var $effectiveMaximumMovieRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
 - [var $effectiveMaximumTVShowRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximumtvshowrating.md)
   The television show rating constraint that is active on this device.
-- [ManagedSettingsStore.ObjectWillChangePublisher](managedsettingsstore/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
 ### Structures
 - [ManagedSettingsStore.Name](managedsettingsstore/name.md)
   The unique name of a store.
@@ -122,8 +119,6 @@ In a few cases, you can also access the effective settings. For example, a media
 ### Instance Methods
 - [func clearAllSettings()](managedsettingsstore/clearallsettings.md)
   Clears all settings for this store.
-### Default Implementations
-- [ObservableObject Implementations](managedsettingsstore/observableobject-implementations.md)
 
 ## Relationships
 

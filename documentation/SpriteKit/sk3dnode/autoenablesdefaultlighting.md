@@ -17,7 +17,6 @@ A Boolean value that determines whether Scene Kit automatically adds lights to a
 ## Declaration
 
 ```swift
-@MainActor
 var autoenablesDefaultLighting: Bool { get set }
 ```
 
@@ -27,7 +26,7 @@ var autoenablesDefaultLighting: Bool { get set }
 
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. If you change the value to false, the only light sources SceneKit uses for rendering a scene are those contained in the scene graph.
+If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. If you change the value to false, the only light sources SceneKit uses for rendering a scene are those contained in the scene graph.
 
 ## See Also
 

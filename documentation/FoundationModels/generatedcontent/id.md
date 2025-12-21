@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A unique ID used for the duration of a generated response.
+A unique id that is stable for the duration of a generated response.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,9 @@ var id: GenerationID?
 
 #### Discussion
 
-A [`LanguageModelSession`](languagemodelsession.md) produces instances of `GeneratedContent` that have a non-nil `id`. When you stream a response, the `id` is the same for all partial generations in the response stream.
+A [`LanguageModelSession`](languagemodelsession.md) produces instances of [`GeneratedContent`](generatedcontent.md) that have a non-nil `id`. When you stream a response, the `id` is the same for all partial generations in the response stream.
 
-Instances of `GeneratedContent` that you produce manually with initializers have a nil `id` because the framework didn’t create them as part of a generation.
+Instances of [`GeneratedContent`](generatedcontent.md) that you produce manually with initializers have a nil `id` because the framework didn’t create them as part of a generation.
 
 
 ---

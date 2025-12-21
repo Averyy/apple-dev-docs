@@ -8,6 +8,10 @@ Get a list of prerelease versions for all apps.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Mentions
+
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+
 ## See Also
 
 - [Read Prerelease Version Information](get-v1-prereleaseversions-_id_.md)

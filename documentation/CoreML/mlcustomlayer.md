@@ -30,15 +30,15 @@ You use the [`MLCustomLayer`](mlcustomlayer.md) protocol to define the behavior 
 
 ## Topics
 
-### Creating a Layer
+### Creating a layer
 - [init(parameters: [String : Any]) throws](mlcustomlayer/init(parameters:).md)
   Initializes the custom layer implementation.
-### Integrating a Layer
+### Integrating a layer
 - [func setWeightData([Data]) throws](mlcustomlayer/setweightdata(_:).md)
   Assigns the weights for the connections within the layer.
 - [func outputShapes(forInputShapes: [[NSNumber]]) throws -> [[NSNumber]]](mlcustomlayer/outputshapes(forinputshapes:).md)
   Calculates the shapes of the output of this layer for the given input shapes.
-### Evaluating a Layer
+### Evaluating a layer
 - [func evaluate(inputs: [MLMultiArray], outputs: [MLMultiArray]) throws](mlcustomlayer/evaluate(inputs:outputs:).md)
   Evaluates the custom layer with the given inputs.
 - [func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTexture], outputs: [any MTLTexture]) throws](mlcustomlayer/encode(commandbuffer:inputs:outputs:).md)

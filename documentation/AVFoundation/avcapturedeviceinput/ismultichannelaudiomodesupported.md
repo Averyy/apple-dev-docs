@@ -20,7 +20,7 @@ func isMultichannelAudioModeSupported(_ multichannelAudioMode: AVCaptureMulticha
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the input supports the mode; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the input supports the mode; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -38,6 +38,8 @@ You can only set the [`multichannelAudioMode`](avcapturedeviceinput/multichannel
   The multichannel audio mode to apply when recording audio.
 - [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
+- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
 
 
 ---

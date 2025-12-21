@@ -202,7 +202,7 @@ void my_engine_render_new_frame(my_engine *engine) {
  }
 ```
 
-For information about how to set up Metal command buffers and command encoders, see [`Setting Up a Command Structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure).
+For information about how to set up Metal command buffers and command encoders, see [`Setting up a command structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure).
 
 ##### Configure the Render Pass Descriptor for the Frame
 

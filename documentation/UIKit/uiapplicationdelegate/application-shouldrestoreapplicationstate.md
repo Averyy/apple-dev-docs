@@ -24,11 +24,11 @@ optional func application(_ application: UIApplication, shouldRestoreApplication
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app’s state should be restored; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the app’s state should be restored; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Apps must implement this method and the [`application(_:shouldSaveApplicationState:)`](uiapplicationdelegate/application(_:shouldsaveapplicationstate:).md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](https://developer.apple.com/documentation/swift/true) each time UIKit tries to restore the state of your app. You can use the information in the provided coder object to decide whether or not to proceed with state restoration. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) if the data in the coder is from a different version of your app and can’t be effectively restored to the current version.
+Apps must implement this method and the [`application(_:shouldSaveApplicationState:)`](uiapplicationdelegate/application(_:shouldsaveapplicationstate:).md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](https://developer.apple.com/documentation/Swift/true) each time UIKit tries to restore the state of your app. You can use the information in the provided coder object to decide whether or not to proceed with state restoration. For example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) if the data in the coder is from a different version of your app and can’t be effectively restored to the current version.
 
 ## Parameters
 

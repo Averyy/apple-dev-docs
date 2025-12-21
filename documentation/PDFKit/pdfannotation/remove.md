@@ -16,7 +16,7 @@ Removes a bezier path from an ink annotation.
 ## Declaration
 
 ```swift
-func remove(_ path: UIBezierPath)
+func remove(_ path: NSBezierPath)
 ```
 
 ## Parameters

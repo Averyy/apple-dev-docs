@@ -27,8 +27,6 @@ var shape: (rows: Int, columns: Int) { get }
 
 ## See Also
 
-- [var isEmpty: Bool](dataframe/isempty.md)
-  A Boolean that indicates whether the data frame type is empty.
 - [var columns: [AnyColumn]](dataframe/columns.md)
   The entire data frame as a collection of columns.
 - [var rows: DataFrame.Rows](dataframe/rows-swift.property.md)

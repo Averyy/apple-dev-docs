@@ -17,7 +17,7 @@ func selectItem(at index: Int)
 
 #### Discussion
 
-By default, selecting or deselecting a menu item from a pop-up menu changes its state. Selecting a menu item from a pull-down menu does not automatically alter the state of the item. To disassociate the current selection from the state of menu items, set the [`altersStateOfSelectedItem`](nspopupbuttoncell/altersstateofselecteditem.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, selecting or deselecting a menu item from a pop-up menu changes its state. Selecting a menu item from a pull-down menu does not automatically alter the state of the item. To disassociate the current selection from the state of menu items, set the [`altersStateOfSelectedItem`](nspopupbuttoncell/altersstateofselecteditem.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Subclassers can override this method to catch all select calls.
 

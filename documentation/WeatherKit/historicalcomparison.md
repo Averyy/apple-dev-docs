@@ -22,9 +22,6 @@ enum HistoricalComparison
 
 ## Topics
 
-### Operators
-- [static func == (HistoricalComparison, HistoricalComparison) -> Bool](historicalcomparison/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case highTemperature(Trend<UnitTemperature>)](historicalcomparison/hightemperature(_:).md)
   The comparison relates to the location’s maximum temperature averaged since ~1970.
@@ -34,14 +31,6 @@ enum HistoricalComparison
   The comparison relates to the amount of precipitation at the location averaged over the past 30 days.
 - [HistoricalComparison.snowfallAmount(_:)](historicalcomparison/snowfallamount(_:).md)
   The comparison relates to the amount of snowfall at the location averaged over the past 30 days.
-### Initializers
-- [init(from: any Decoder) throws](historicalcomparison/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](historicalcomparison/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](historicalcomparison/equatable-implementations.md)
 
 ## Relationships
 

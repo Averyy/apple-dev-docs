@@ -1,4 +1,4 @@
-# Revoke tokens
+# Token revocation
 
 **Framework**: Account & Organizational Data Sharing  
 **Kind**: httpRequest

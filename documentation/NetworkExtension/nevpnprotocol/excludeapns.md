@@ -24,9 +24,9 @@ var excludeAPNs: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the system excludes Apple Push Notification services (APNs) traffic, but only when the [`includeAllNetworks`](nevpnprotocol/includeallnetworks.md) property is also [`true`](https://developer.apple.com/documentation/swift/true). [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system excludes Apple Push Notification services (APNs) traffic, but only when the [`includeAllNetworks`](nevpnprotocol/includeallnetworks.md) property is also [`true`](https://developer.apple.com/documentation/Swift/true). [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

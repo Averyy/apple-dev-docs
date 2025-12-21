@@ -20,7 +20,7 @@ var canContainFragments: Bool { get }
 
 #### Discussion
 
-For QuickTime movie files and MPEG-4 files, the value is [`true`](https://developer.apple.com/documentation/swift/true) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
+For QuickTime movie files and MPEG-4 files, the value is [`true`](https://developer.apple.com/documentation/Swift/true) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
 
 ## See Also
 

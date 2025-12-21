@@ -22,24 +22,19 @@ struct Catch<Upstream, NewPublisher> where Upstream : Publisher, NewPublisher : 
 
 ## Topics
 
-### Creating a Catch Publisher
+### Creating a catch publisher
 - [init(upstream: Upstream, handler: (Upstream.Failure) -> NewPublisher)](publishers/catch/init(upstream:handler:).md)
   Creates a publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Catch.Output](publishers/catch/output.md)
   The kind of values published by this publisher.
 - [Publishers.Catch.Failure](publishers/catch/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/catch/upstream.md)
   The publisher from which this publisher receives its elements.
 - [let handler: (Upstream.Failure) -> NewPublisher](publishers/catch/handler.md)
   A closure that accepts the upstream failure as input and returns a publisher to replace the upstream publisher.
-### Applying Operators
-- [Publisher Operators](publishers-catch-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/catch/publisher-implementations.md)
 
 ## Relationships
 

@@ -1,4 +1,4 @@
-# Assessing Multi-GPU and Multi-Display Setups on an Intel-Based Mac
+# Assessing multi-GPU and multi-display setups on an Intel-based Mac
 
 **Framework**: Metal
 
@@ -10,7 +10,7 @@ An Intel-based Mac can have multiple GPUs, and each GPU may connect to zero, one
 
 ![An image that shows a single MacBook Pro, three overlapping, external GPUs, and two overlapping, external displays.](https://docs-assets.developer.apple.com/published/c776350aeeab804a826997bf07e005f0/media-2959797%402x.png)
 
-In general, each GPU in the system has its advantages and tradeoffs, depending on your app’s needs. It’s important your app chooses an appropriate GPU for each task, especially when it involves presenting the results on a specific display or transferring data between GPUs. For more information about choosing GPUs and transferring data between them, see [`Finding Multiple GPUs on an Intel-based Mac`](finding-multiple-gpus-on-an-intel-based-mac.md) and [`Adjusting for GPU Memory Bandwidth Tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
+In general, each GPU in the system has its advantages and tradeoffs, depending on your app’s needs. It’s important your app chooses an appropriate GPU for each task, especially when it involves presenting the results on a specific display or transferring data between GPUs. For more information about choosing GPUs and transferring data between them, see [`Finding multiple GPUs on an Intel-based Mac`](finding-multiple-gpus-on-an-intel-based-mac.md) and [`Adjusting for GPU memory bandwidth tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
 
 > 💡 **Tip**:  As an alternative to implementing a policy that selects a GPU and a display for a task, your app can suggest configurations to a person and let them decide.
 
@@ -20,7 +20,7 @@ For a Mac with one built-in GPU — either integrated or discrete — that GPU a
 
 ![A system diagram that shows a MacBook Pro with a single, built-in GPU.](https://docs-assets.developer.apple.com/published/04f3eca6fb75e41ae37bdcf5defac6f7/media-2960165%402x.png)
 
-For a Mac with two built-in GPUs — both an integrated GPU and a discrete GPU — either GPU can drive the built-in display.
+For a Mac with two built-in GPUs — both an integrated GPU and a discrete GPU — either GPU can drive the built-in display.
 
 ![A system diagram that shows a MacBook Pro with two built-in GPUs.](https://docs-assets.developer.apple.com/published/b022119842cf3a4a9bc64718e4ac3a20/media-3993424%402x.png)
 
@@ -44,11 +44,11 @@ A person can configure a Mac with a combination of the scenarios above. For exam
 
 ## See Also
 
-- [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
+- [Adjusting for GPU memory bandwidth tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
   Choose a suitable GPU and memory storage mode for tasks based on that GPU’s memory bandwidth on a Mac.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Selecting Device Objects for Compute Processing](selecting-device-objects-for-compute-processing.md)
+- [Selecting device objects for compute processing](selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
 
 

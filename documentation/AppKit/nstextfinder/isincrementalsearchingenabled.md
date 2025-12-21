@@ -16,9 +16,9 @@ var isIncrementalSearchingEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the find bar will do incremental searches. If it returns [`false`](https://developer.apple.com/documentation/swift/false), then the find bar will behave regularly.
+If [`true`](https://developer.apple.com/documentation/Swift/true), then the find bar will do incremental searches. If it returns [`false`](https://developer.apple.com/documentation/Swift/false), then the find bar will behave regularly.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

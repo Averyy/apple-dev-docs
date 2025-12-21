@@ -41,6 +41,14 @@ To learn more about offering Live Activities for your app, see [`ActivityKit`](h
 
 ## See Also
 
+- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
+  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
+- [ActivityKit](../ActivityKit/ActivityKit.md)
+  Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
+- [Creating a widget extension](creating-a-widget-extension.md)
+  Display your app’s content in a convenient, informative widget on various devices.
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [struct DynamicIsland](dynamicisland.md)
   The layout and configuration for a Live Activity that appears in the Dynamic Island.
 - [let NSUserActivityTypeLiveActivity: String](nsuseractivitytypeliveactivity.md)

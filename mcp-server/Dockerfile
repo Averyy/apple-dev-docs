@@ -1,6 +1,9 @@
 # Multi-stage Dockerfile for Apple Docs MCP Server V2 with Meilisearch
 # All-in-one container with Meilisearch search engine and MCP server
 
+# Server version - update this when releasing new versions
+ARG SERVER_VERSION=1.1.0
+
 # Stage 1: Builder
 FROM python:3.11-slim AS builder
 
@@ -21,6 +24,16 @@ RUN pip install --user --no-cache-dir -r mcp-requirements.txt && \
 
 # Stage 2: Runtime
 FROM python:3.11-slim
+
+# Re-declare ARG after FROM to make it available in this stage
+ARG SERVER_VERSION=1.1.0
+
+# Add labels for version tracking and metadata
+LABEL org.opencontainers.image.title="Apple Docs MCP Server"
+LABEL org.opencontainers.image.description="MCP server for searching Apple Developer Documentation"
+LABEL org.opencontainers.image.version="${SERVER_VERSION}"
+LABEL org.opencontainers.image.source="https://github.com/averyy/apple-developer-docs"
+LABEL maintainer="averyy"
 
 # Running as root for Unraid compatibility
 # RUN useradd -m -u 1000 -s /bin/bash mcpuser

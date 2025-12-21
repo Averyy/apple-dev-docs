@@ -22,7 +22,7 @@ class func propertyList(_ plist: Any, isValidFor format: PropertyListSerializati
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `plist` is a valid property list in format `format`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `plist` is a valid property list in format `format`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

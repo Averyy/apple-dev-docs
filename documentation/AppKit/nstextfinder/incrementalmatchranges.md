@@ -16,7 +16,7 @@ var incrementalMatchRanges: [NSValue] { get }
 
 #### Discussion
 
-This array is updated periodically on the main queue as the incremental search operation on a background queue finds matches. You can use this property when incrementalSearchingShouldDimContentView is [`false`](https://developer.apple.com/documentation/swift/false) to know where to draw highlights for incremental matches.
+This array is updated periodically on the main queue as the incremental search operation on a background queue finds matches. You can use this property when incrementalSearchingShouldDimContentView is [`false`](https://developer.apple.com/documentation/Swift/false) to know where to draw highlights for incremental matches.
 
 If no incremental search is active, or there are no matches found, this array will be empty. If an incremental search is currently in progress, but not yet complete, this will return all the ranges found so far.
 

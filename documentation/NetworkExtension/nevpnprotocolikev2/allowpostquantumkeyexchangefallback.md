@@ -3,13 +3,15 @@
 **Framework**: Network Extension  
 **Kind**: property
 
+A Boolean value that indicates whether servers that don’t support post-quantum key exchanges can skip them.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,14 @@ var allowPostQuantumKeyExchangeFallback: Bool { get set }
 
 #### Discussion
 
-Allow servers that do not support post-quantum key exchanges to skip them. This property has no effect if no post-quantum key exchange methods are configured for the IKE SA or Child SA (see NEVPNIKEv2SecurityAssociationParameters.postQuantumKeyExchangeMethods). Default is NO.
+This property has no effect if you don’t configure any post-quantum key exchange methods in the [`NEVPNIKEv2SecurityAssociationParameters`](nevpnikev2securityassociationparameters.md). The property’s default value is `false`.
+
+## See Also
+
+- [var ppkConfiguration: NEVPNIKEv2PPKConfiguration?](nevpnprotocolikev2/ppkconfiguration.md)
+  The configuration for a post-quantum pre-shared key (PPK).
+- [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
+  A class that manages parameters of a post-quantum pre-shared key (PPK).
 
 
 ---

@@ -15,6 +15,7 @@ A view controller that displays a user interface where users choose a broadcast 
 ## Declaration
 
 ```swift
+@MainActor
 class RPBroadcastActivityViewController
 ```
 

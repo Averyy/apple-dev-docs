@@ -18,7 +18,7 @@ class func checkAvailability(completionHandler: @escaping (Bool, (any Error)?) -
 
 #### Discussion
 
-This function returns [`false`](https://developer.apple.com/documentation/swift/false) under the following circumstances:
+This function returns [`false`](https://developer.apple.com/documentation/Swift/false) under the following circumstances:
 
 - ARKit lacks localization imagery for the user’s geographic position.
 - A network connection is unavailable to download localization imagery.

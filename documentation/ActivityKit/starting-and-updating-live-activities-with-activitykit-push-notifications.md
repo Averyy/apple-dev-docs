@@ -267,7 +267,7 @@ During development, verify your JSON payloads and Live Activity updates locally.
 
 To locally test Live Activity updates during development:
 
-1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools).
+1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools#3694579).
 2. Add code that logs the push token to the console when you start a new Live Activity in your app.
 3. Run your app in Simulator or on a test device and start a Live Activity.
 4. Copy the logged push token from the console and set it as the `$ACTIVITY_PUSH_TOKEN` environment variable in Terminal.
@@ -275,7 +275,7 @@ To locally test Live Activity updates during development:
 
 The following example shows a curl command that the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project could use to test a Live Activity update.
 
-```swift
+```None
 curl \
  --header "apns-topic: com.example.apple-samplecode.Emoji-Rangers.push-type.liveactivity" \
  --header "apns-push-type: liveactivity" \
@@ -298,7 +298,7 @@ curl \
 
 To locally test Live Activity updates to a channel during development:
 
-1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools).
+1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools#3694579).
 2. Create a new channel, and set it as `$CHANNEL_ID` variable in your terminal.
 3. Use the newly created channel with ActivityKit when you request a Live Activity.
 4. Run your app in Simulator or on a test device and start a Live Activity.

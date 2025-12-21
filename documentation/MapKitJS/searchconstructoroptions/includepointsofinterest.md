@@ -11,7 +11,7 @@ A Boolean value that indicates whether the search results should include points 
 ## Declaration
 
 ```swift
-attribute boolean includePointsOfInterest;
+includePointsOfInterest?: boolean;
 ```
 
 #### Discussion
@@ -21,7 +21,7 @@ If you set this value to `false` and include a [`pointOfInterestFilter`](searcho
 ## See Also
 
 - [pointOfInterestFilter](searchconstructoroptions/pointofinterestfilter.md)
-  A filter used to include or exclude point of interest categories.
+  A filter used to include or exclude point-of-interest categories.
 
 
 ---

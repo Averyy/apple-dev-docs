@@ -34,13 +34,13 @@ Except possibly when [`custom`](mpsnnpaddingmethod/custom.md) is used, the area 
 | --- | --- |
 | [`addRemainderToBottomRight`](mpsnnpaddingmethod/addremaindertobottomright.md) | Leftover padding is added to the bottom or right side of image as appropriate. |
 
-Here again, different external frameworks may use different policies.  
+Here again, different external frameworks may use different policies.
 
 In some cases, Caffe introduces the notion of a region beyond the padding which is invalid. This can happen when the padding is set to a width narrower than what is needed for a destination size. In such cases, `MPSCNNPaddingMethodExcludeEdges` is used to adjust normalization factors for filter weights (particularly in pooling) such that invalid regions beyond the padding are not counted towards the filter area. Currently, only pooling supports this feature. Other filters ignore it.
 
- The size and a add remainder policies always appear together in the [`MPSNNPaddingMethod`](mpsnnpaddingmethod.md). There is no provision for a size policy without a remainder policy or vice versa. It is, in practice, used as a bit field.
+The size and a add remainder policies always appear together in the [`MPSNNPaddingMethod`](mpsnnpaddingmethod.md). There is no provision for a size policy without a remainder policy or vice versa. It is, in practice, used as a bit field.
 
- Most MPS neural network filters are considered forward filters. Some (for example, convolution transpose and unpooling) are considered reverse filters. For the reverse filters, the image stride is measured in destination values rather than source values and has the effect of enlarging the image rather than reducing it. When a reverse filter is used to “undo” the effects of a forward filter, the size policy should be the opposite of the forward padding method. For example, if the forward filter used [`validOnly`](mpsnnpaddingmethod/validonly.md) `|` [`topLeft`](mpsnnpaddingmethod/topleft.md), the reverse filter should use [`sizeFull`](mpsnnpaddingmethod/sizefull.md) | [`topLeft`](mpsnnpaddingmethod/topleft.md). Some consideration of the geometry of inputs and outputs will reveal why this is so. It is usually not important to adjust the centering method because the size of the reverse result generally doesn’t suffer from centering asymmetries. That is: the size would usually be given by:  
+Most MPS neural network filters are considered forward filters. Some (for example, convolution transpose and unpooling) are considered reverse filters. For the reverse filters, the image stride is measured in destination values rather than source values and has the effect of enlarging the image rather than reducing it. When a reverse filter is used to “undo” the effects of a forward filter, the size policy should be the opposite of the forward padding method. For example, if the forward filter used [`validOnly`](mpsnnpaddingmethod/validonly.md) `|` [`topLeft`](mpsnnpaddingmethod/topleft.md), the reverse filter should use [`sizeFull`](mpsnnpaddingmethod/sizefull.md) | [`topLeft`](mpsnnpaddingmethod/topleft.md). Some consideration of the geometry of inputs and outputs will reveal why this is so. It is usually not important to adjust the centering method because the size of the reverse result generally doesn’t suffer from centering asymmetries. That is: the size would usually be given by:
 
 ```swift
 static int DestSizeReverse( int sourceSize, int stride, int filterWindowSize, Style style ) {
@@ -52,7 +52,7 @@ static int DestSizeReverse( int sourceSize, int stride, int filterWindowSize, St
 
 so the result size is exactly the one needed for the source size and there are no centering problems. In some cases where the reverse pass is intended to completely reverse a forward pass, the [`MPSState`](mpsstate.md) object produced by the forward pass should be used to determine the size of the reverse pass result image.
 
- Tensorflow does not appear to provide a full padding method, but instead appears to use its valid-only padding mode for reverse filters to in effect achieve what is called [`sizeFull`](mpsnnpaddingmethod/sizefull.md) here.    
+Tensorflow does not appear to provide a full padding method, but instead appears to use its valid-only padding mode for reverse filters to in effect achieve what is called [`sizeFull`](mpsnnpaddingmethod/sizefull.md) here.
 
 ##### Walkthrough of Operation of Padding Policy
 

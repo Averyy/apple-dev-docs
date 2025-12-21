@@ -21,7 +21,7 @@ var sparsePageSize: MTLSparsePageSize { get set }
 
 #### Discussion
 
-This property’s default value is 16 kilobytes ([`MTLSparsePageSize.size16`](mtlsparsepagesize/size16.md)), which is a smaller page size option that can help reduce your app’s memory usage. However, you can reduce operational overhead for sparse textures with larger page sizes, such as [`MTLSparsePageSize.size64`](mtlsparsepagesize/size64.md) and [`MTLSparsePageSize.size256`](mtlsparsepagesize/size256.md). These operations include blit commands and the configuration of sparse texture mappings (see [`Blit Passes`](blit-passes.md) and [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md), respectively).
+This property’s default value is 16 kilobytes ([`MTLSparsePageSize.size16`](mtlsparsepagesize/size16.md)), which is a smaller page size option that can help reduce your app’s memory usage. However, you can reduce operational overhead for sparse textures with larger page sizes, such as [`MTLSparsePageSize.size64`](mtlsparsepagesize/size64.md) and [`MTLSparsePageSize.size256`](mtlsparsepagesize/size256.md). These operations include blit commands and the configuration of sparse texture mappings (see [`Blit passes`](blit-passes.md) and [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md), respectively).
 
 ## See Also
 

@@ -18,7 +18,7 @@ class UIWebView
 
 #### Overview
 
-> **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/WebKit/WKPreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/WebKit/WKPreferences/javaScriptEnabled) to [`false`](https://developer.apple.com/documentation/swift/false) if you render files that aren’t supposed to run JavaScript.
+> **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/WebKit/WKPreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/WebKit/WKPreferences/javaScriptEnabled) to [`false`](https://developer.apple.com/documentation/Swift/false) if you render files that aren’t supposed to run JavaScript.
 
 > ❗ **Important**:  An iOS app linked on or after iOS 10.0 must include in its `Info.plist` file the usage description keys for the types of data it needs to access or it will crash. To access a user’s photo data specifically, it must include [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW17) and [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW24).
 
@@ -165,18 +165,36 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 
 ## See Also
 
-- [class UIActivityIndicatorView](uiactivityindicatorview.md)
-  A view that shows that a task is in progress.
-- [class UICalendarView](uicalendarview.md)
-  A view that displays a calendar with date-specific decorations, and provides for user selection of a single date or multiple dates.
-- [class UIContentUnavailableView](uicontentunavailableview.md)
-  A view that indicates there’s no content to display.
-- [class UIImageView](uiimageview.md)
-  A view that displays a single image or a sequence of animated images in your interface.
-- [class UIPickerView](uipickerview.md)
-  A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
-- [class UIProgressView](uiprogressview.md)
-  A view that depicts the progress of a task over time.
+- [class UIActionSheet](uiactionsheet.md)
+  A view that presents a set of alternatives for how to proceed with a task.
+- [class UIAlertView](uialertview.md)
+  A view that displays an alert message.
+- [class UIDocumentMenuViewController](uidocumentmenuviewcontroller.md)
+  A list of all the available document providers for a given file type and mode, in addition to custom menu items that you add.
+- [class UILocalNotification](uilocalnotification.md)
+  A notification that an app can schedule for presentation at a specific date and time.
+- [class UIMenuController](uimenucontroller.md)
+  The menu interface for the Cut, Copy, Paste, Select, Select All, and Delete commands.
+- [class UIMenuItem](uimenuitem.md)
+  A custom item in the editing menu managed by the menu controller.
+- [class UIMutableUserNotificationAction](uimutableusernotificationaction.md)
+  A modifiable version of the user notification action class.
+- [class UIMutableUserNotificationCategory](uimutableusernotificationcategory.md)
+  Information about custom actions that your app can perform in response to a local or push notification.
+- [class UIPopoverController](uipopovercontroller.md)
+  An object that manages the presentation of content in a popover.
+- [class UIPreviewAction](uipreviewaction.md)
+  A preview action, or , that displays below a peek when a user swipes the peek upward.
+- [class UIPreviewActionGroup](uipreviewactiongroup.md)
+  A group of one or more child quick actions, each an instance of the preview action class.
+- [class UISearchDisplayController](uisearchdisplaycontroller.md)
+  An object that manages the display of a search bar, along with a table view that displays search results.
+- [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)
+  A specific type of segue for presenting content in a popover.
+- [class UIUserNotificationAction](uiusernotificationaction.md)
+  A custom action that your app can perform in response to a remote or local notification.
+- [class UIUserNotificationCategory](uiusernotificationcategory.md)
+  Information about custom actions that your app can perform in response to a local or push notification.
 
 
 ---

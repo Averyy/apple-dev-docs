@@ -15,6 +15,11 @@
 init(coder: NSCoder)
 ```
 
+## See Also
+
+- [init(image: UIImage, hotSpot: NSPoint)](nscursor/init(image:hotspot:).md)
+  Initializes a cursor with the given image and hot spot.
+
 
 ---
 

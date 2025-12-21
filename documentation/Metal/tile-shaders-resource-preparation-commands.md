@@ -1,4 +1,4 @@
-# Tile Shaders Resource Preparation Commands
+# Tile shaders resource preparation commands
 
 **Framework**: Metal
 
@@ -6,11 +6,11 @@ Assign resources to tile shaders, including buffers, textures, acceleration stru
 
 #### Overview
 
-All tile shaders share an argument table for each resource type, such as buffers, textures, and sampler states. These argument tables are separate from other shader types, each of which have their own argument tables, one for each resource type.
+Tile shaders share argument tables for each resource type, such as buffers, textures, and sampler states. Each shader type has its own argument tables, separate from tile shaders and other shader types.
 
 ## Topics
 
-### Assigning Buffers
+### Assigning buffers
 - [func setTileBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlrendercommandencoder/settilebuffer(_:offset:index:).md)
   Assigns a buffer to an entry in the tile shader argument table.
 - [func setTileBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlrendercommandencoder/settilebuffers(_:offsets:range:).md)
@@ -19,12 +19,12 @@ All tile shaders share an argument table for each resource type, such as buffers
   Creates a buffer from bytes and assigns it to an entry in the tile shader argument table.
 - [func setTileBufferOffset(Int, index: Int)](mtlrendercommandencoder/settilebufferoffset(_:index:).md)
   Updates an entry in the tile shader argument table with a new location within the entry’s current buffer.
-### Assigning Textures
+### Assigning textures
 - [func setTileTexture((any MTLTexture)?, index: Int)](mtlrendercommandencoder/settiletexture(_:index:).md)
   Assigns a texture to an entry in the tile shader argument table.
 - [func setTileTextures([(any MTLTexture)?], range: Range<Int>)](mtlrendercommandencoder/settiletextures(_:range:).md)
   Assigns multiple textures to a range of entries in the tile shader argument table.
-### Assigning Sampler States
+### Assigning sampler states
 - [func setTileSamplerState((any MTLSamplerState)?, index: Int)](mtlrendercommandencoder/settilesamplerstate(_:index:).md)
   Assigns a sampler state to an entry in the tile shader argument table.
 - [func setTileSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](mtlrendercommandencoder/settilesamplerstate(_:lodminclamp:lodmaxclamp:index:).md)
@@ -33,15 +33,15 @@ All tile shaders share an argument table for each resource type, such as buffers
   Assigns multiple sampler states to a range of entries in the tile shader argument table.
 - [func setTileSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](mtlrendercommandencoder/settilesamplerstates(_:lodminclamps:lodmaxclamps:range:).md)
   Assigns multiple sampler states and clamp values to a range of entries in the tile shader argument table.
-### Assigning Acceleration Structures
+### Assigning acceleration structures
 - [func setTileAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](mtlrendercommandencoder/settileaccelerationstructure(_:bufferindex:).md)
   Assigns an acceleration structure to an entry in the tile shader argument table.
-### Assigning Visible Function Tables
+### Assigning visible function tables
 - [func setTileVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlrendercommandencoder/settilevisiblefunctiontable(_:bufferindex:).md)
   Assigns a visible function table to an entry in the tile shader argument table.
 - [func setTileVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlrendercommandencoder/settilevisiblefunctiontables(_:bufferrange:).md)
   Assigns multiple visible function tables to a range of entries in the tile shader argument table.
-### Assigning Intersection Function Tables
+### Assigning intersection function tables
 - [func setTileIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, bufferIndex: Int)](mtlrendercommandencoder/settileintersectionfunctiontable(_:bufferindex:).md)
   Assigns an intersection function table to an entry in the tile shader argument table.
 - [func setTileIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](mtlrendercommandencoder/settileintersectionfunctiontables(_:bufferrange:).md)
@@ -49,13 +49,13 @@ All tile shaders share an argument table for each resource type, such as buffers
 
 ## See Also
 
-- [Mesh and Object Shader Resource Preparation Commands](mesh-and-object-shader-resource-preparation-commands.md)
+- [Mesh and object shader resource preparation commands](mesh-and-object-shader-resource-preparation-commands.md)
   Assign resources to mesh and object shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
-- [Vertex Shader Resource Preparation Commands](vertex-shader-resource-preparation-commands.md)
+- [Vertex shader resource preparation commands](vertex-shader-resource-preparation-commands.md)
   Assign resources to vertex shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
-- [Fragment Shader Resource Preparation Commands](fragment-shader-resource-preparation-commands.md)
+- [Fragment shader resource preparation commands](fragment-shader-resource-preparation-commands.md)
   Assign resources to fragment shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
-- [Argument Buffer Resource Preparation Commands](argument-buffer-resource-preparation-commands.md)
+- [Argument buffer resource preparation commands](argument-buffer-resource-preparation-commands.md)
   Load individual resources and multiple resources within a heap into GPU memory so that they’re available to shaders through argument buffers.
 
 

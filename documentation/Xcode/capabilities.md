@@ -6,11 +6,13 @@ Enable services that Apple provides, such as In-App Purchase, Push Notifications
 
 #### Overview
 
-Capabilities simplify the configuration process for many of Apple’s services, some of which require you to configure specific entitlements or change your app’s provisioning profile. When you add a capability to an app or other target in your project, Xcode automatically configures that target to use the corresponding service. For example, Xcode might add a required entitlement to a new entitlements file and configure the project to use those entitlements. When Xcode needs you to provide additional information, it presents a simplified UI for you to specify that information.
+Capabilities simplify the configuration process for many of Apple’s services, some of which require you to configure specific [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) or change your app’s provisioning profile. When you add a capability to an app or other target in your project, Xcode automatically configures that target to use the corresponding service. For example, Xcode might add a required entitlement to a new entitlements file and configure the project to use those entitlements. When Xcode needs you to provide additional information, it presents a simplified UI for you to specify that information.
 
 ![A screenshot of Xcode’s Capabilities library. On the left is a list of available capabilities where you can double-click or drag a capability to add it to the selected target. On the right is a description of the selected capability. There’s a text box at the top that allows you to filter the list of capabilities.](https://docs-assets.developer.apple.com/published/2615efe10594368ecb5a0ed009c3a509/capabilities%402x.png)
 
 > **Note**: You add most capabilities directly from Xcode, but some app services — such as Game Center and In-App Purchase — require additional setup in App Store Connect and your developer account. For more information, see the documentation below for the specific capability.
+
+Xcode automatically manages your target’s entitlements file based on the capabilities you add to that target. If you need to edit the file manually, see [`Editing property list files`](editing-property-list-files.md).
 
 ## Topics
 
@@ -52,12 +54,18 @@ Capabilities simplify the configuration process for many of Apple’s services, 
 - [Configuring media device discovery](configuring-media-device-discovery.md)
   Add a third-party media device or protocol as a streaming option in the same system menu as AirPlay.
 ### Security
+- [Configuring Family Controls](configuring-family-controls.md)
+  Add the Family Controls entitlement to enable parental control features in your app and its Screen Time API app extensions.
 - [Configuring the hardened runtime](configuring-the-hardened-runtime.md)
   Protect the runtime integrity of your macOS app by restricting access to sensitive resources and preventing common exploits.
 - [Configuring the macOS App Sandbox](configuring-the-macos-app-sandbox.md)
   Protect system resources and user data from compromised apps by restricting access to the file system, network connections, and more.
 - [Configuring keychain sharing](configuring-keychain-sharing.md)
   Share keychain items between multiple apps belonging to the same developer.
+- [Protecting local app data using containers on macOS](protecting-local-app-data-using-containers.md)
+  Secure your app’s local storage data from unauthorized access and modification.
+- [Accessing app group containers in your existing macOS app](accessing-app-group-containers.md)
+  Ensure your app has app group container entitlements and macOS can authorize them.
 ### User data
 - [Configuring HealthKit access](configuring-healthkit-access.md)
   Read and write health and activity data in the Health app.
@@ -69,9 +77,11 @@ Capabilities simplify the configuration process for many of Apple’s services, 
 - [Projects and workspaces](projects-and-workspaces.md)
   Manage the code and resources you use to build apps, libraries, and other software for Apple platforms.
 - [Source control management](source-control-management.md)
-  Back up your files, collaborate with others, and tag your releases with source control support in Xcode.
+  Back up your files, collaborate with others, and tag your releases with Git source control support in Xcode.
 - [Build system](build-system.md)
   Compile your code into a binary format, and customize your project settings to build your code.
+- [Command-line tools](command-line-tools.md)
+  Develop and customize your projects in Terminal.
 
 
 ---

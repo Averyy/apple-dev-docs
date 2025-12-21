@@ -24,24 +24,14 @@ Provide this structure to [`updateElements(_:timeout:)`](hiddeviceclient/updatee
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceClient.RequestElementUpdate, HIDDeviceClient.RequestElementUpdate) -> Bool](hiddeviceclient/requestelementupdate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(elements: [HIDElement], pollDevice: Bool)](hiddeviceclient/requestelementupdate/init(elements:polldevice:).md)
   Creates a request element update.
 ### Instance Properties
 - [var elements: [HIDElement]](hiddeviceclient/requestelementupdate/elements.md)
   The elements used to request updates.
-- [var hashValue: Int](hiddeviceclient/requestelementupdate/hashvalue.md)
-  The hash value.
 - [var pollDevice: Bool](hiddeviceclient/requestelementupdate/polldevice.md)
   Whether the device should be polled for new updates.
-### Instance Methods
-- [func hash(into: inout Hasher)](hiddeviceclient/requestelementupdate/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hiddeviceclient/requestelementupdate/equatable-implementations.md)
 
 ## Relationships
 

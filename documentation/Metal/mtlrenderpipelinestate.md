@@ -21,37 +21,37 @@ protocol MTLRenderPipelineState : MTLAllocation, Sendable
 
 ## Mentions
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Overview
 
-The [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) protocol is an interface that represents a specific configuration for the graphics-rendering pipeline, including which shaders it uses. Use a pipeline state instance to configure a render pass by calling the [`setRenderPipelineState(_:)`](mtlrendercommandencoder/setrenderpipelinestate(_:).md) method of an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance.
+The [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) protocol is an interface that represents a specific configuration for the graphics-rendering pipeline, including which shaders it uses. Use a pipeline state to configure a render pass by calling the [`setRenderPipelineState(_:)`](mtlrendercommandencoder/setrenderpipelinestate(_:).md) method of an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance.
 
-To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) method (see [`Pipeline State Creation`](pipeline-state-creation.md)). You typically make pipeline state instances at a noncritical time, like when the app first launches. This is because graphics drivers may need time to evaluate and build each pipeline state. However, you can quickly use and reuse each pipeline state throughout your app’s lifetime.
+To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) method (see [`Pipeline state creation`](pipeline-state-creation.md)). You typically make pipeline states at a noncritical time, like when the app first launches. This is because graphics drivers may need time to evaluate and build each pipeline state. However, you can quickly use and reuse each pipeline state throughout your app’s lifetime.
 
 ## Topics
 
-### Identifying a Pipeline State
+### Identifying a pipeline state
 - [var device: any MTLDevice](mtlrenderpipelinestate/device.md)
   The device instance that creates the pipeline state.
 - [var label: String?](mtlrenderpipelinestate/label.md)
   A string that helps you identify the render pipeline state during debugging.
 - [var gpuResourceID: MTLResourceID](mtlrenderpipelinestate/gpuresourceid.md)
   An unique identifier that represents the pipeline state, which you can add to an argument buffer.
-### Checking Object Shader Memory Requirements
+### Checking object shader memory requirements
 - [var maxTotalThreadsPerObjectThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadsperobjectthreadgroup.md)
   The largest number of threads the pipeline state can have in a single object shader threadgroup.
 - [var objectThreadExecutionWidth: Int](mtlrenderpipelinestate/objectthreadexecutionwidth.md)
   The number of threads the render pass applies to a SIMD group for an object shader.
-### Checking Mesh Shader Memory Requirements
+### Checking mesh shader memory requirements
 - [var maxTotalThreadsPerMeshThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadspermeshthreadgroup.md)
   The largest number of threads the pipeline state can have in a single mesh shader threadgroup.
 - [var maxTotalThreadgroupsPerMeshGrid: Int](mtlrenderpipelinestate/maxtotalthreadgroupspermeshgrid.md)
   The largest number of threadgroups the pipeline state can have in a single mesh shader grid.
 - [var meshThreadExecutionWidth: Int](mtlrenderpipelinestate/meshthreadexecutionwidth.md)
   The number of threads the render pass applies to a SIMD group for a mesh shader.
-### Checking Tile Shader Memory Requirements
+### Checking tile shader memory requirements
 - [var maxTotalThreadsPerThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadsperthreadgroup.md)
   The largest number of threads the pipeline state can have in a single tile shader threadgroup.
 - [var threadgroupSizeMatchesTileSize: Bool](mtlrenderpipelinestate/threadgroupsizematchestilesize.md)
@@ -60,20 +60,20 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
   The memory size, in byes, of the render pipeline’s imageblock for a single sample.
 - [func imageblockMemoryLength(forDimensions: MTLSize) -> Int](mtlrenderpipelinestate/imageblockmemorylength(fordimensions:).md)
   Returns the length of an imageblock’s memory for the specified imageblock dimensions.
-### Checking Feature Support
+### Checking feature support
 - [var supportIndirectCommandBuffers: Bool](mtlrenderpipelinestate/supportindirectcommandbuffers.md)
   A Boolean value that indicates whether the render pipeline supports encoding commands into an indirect command buffer.
-### Checking Shader Validation
+### Checking shader validation
 - [var shaderValidation: MTLShaderValidation](mtlrenderpipelinestate/shadervalidation.md)
   The current state of shader validation for the pipeline.
-### Creating Function Handles and Tables
+### Creating function handles and tables
 - [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:)-7uvul.md)
   Creates a function handle for a shader.
 - [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](mtlrenderpipelinestate/makevisiblefunctiontable(descriptor:stage:).md)
   Creates a new visible function table.
 - [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLIntersectionFunctionTable)?](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
   Creates a new intersection function table.
-### Creating Modified Clones of the Render Pipeline
+### Creating modified clones of the render pipeline
 - [func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctionsDescriptor) throws -> any MTLRenderPipelineState](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:)-84te1.md)
   Creates a new pipeline state that’s a copy of the current pipeline state with additional shaders.
 ### Instance Properties
@@ -113,7 +113,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

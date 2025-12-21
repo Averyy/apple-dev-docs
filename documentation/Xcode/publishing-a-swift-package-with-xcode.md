@@ -23,7 +23,7 @@ Some developers even choose to include tutorials or usage documentation as part 
 
 When you create a new Swift package with Xcode, check “Create Git repository on my Mac” in the sheet for creating a new package.
 
-If you already have a local package that’s not using version control, put it under version control using Xcode. Open your Swift package, select the Source Control menu, choose New Git Repositories, check the checkbox next to your package, and click Create. This initializes a Git repository, adds your package to the staging area, and commits your files.
+If you already have a local package that’s not using version control, put it under version control using Xcode. Open your Swift package, choose Integrate > New Git Repository, check the checkbox next to your package, and click Create. This initializes a Git repository, adds your package to the staging area, and commits your files.
 
 ![Screenshot showing the dialogue when following the directions to put a standalone Swift package under version control.](https://docs-assets.developer.apple.com/published/25cc750fddc0390c43fdc6672b5edd58/publishing-a-swift-package-with-xcode-1%402x.png)
 
@@ -35,11 +35,11 @@ To learn more about the semantic versioning standard, visit [`Semantic Versionin
 
 > **Note**: Make sure to commit any changes that you want to include in the release of your Swift package before creating a version tag.
 
-In the Source Code Navigator, click the disclosure triangle next to Branches to show a list of your branches, then select a branch. In the history editor, Control-click a commit, then choose Tag “Your Identifier” from the pop-up menu. In the sheet that appears, enter a tag name that follows the semantic versioning standard, such as `1.2.4`. Add an optional message, then click Create.
+In the Source Code navigator, click the disclosure triangle next to Branches to show a list of your branches, then select a branch. In the history editor, Control-click a commit, then choose Tag “Your Identifier” from the pop-up menu. In the sheet that appears, enter a tag name that follows the semantic versioning standard, such as `1.2.4`. Add an optional message, then click Create.
 
 ##### Make Your Swift Package Publicly Available
 
-Ensure the Source Control Navigator is visible and select your local repository. Right-click it, and choose Create  Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
+Ensure the Source Control navigator is visible and select your local repository. Right-click it, and choose Create  Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
 
 > ❗ **Important**: You need to add a hosted Git account in Xcode’s Settings to be able to create or connect a Git remote.
 

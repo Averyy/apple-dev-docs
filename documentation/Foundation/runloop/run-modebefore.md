@@ -22,11 +22,11 @@ func run(mode: RunLoop.Mode, before limitDate: Date) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the run loop ran and processed an input source or if the specified timeout value was reached; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the run loop could not be started.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the run loop ran and processed an input source or if the specified timeout value was reached; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the run loop could not be started.
 
 #### Discussion
 
-If no input sources or timers are attached to the run loop, this method exits immediately and returns [`false`](https://developer.apple.com/documentation/swift/false); otherwise, it returns after either the first input source is processed or `limitDate` is reached. Manually removing all known input sources and timers from the run loop does not guarantee that the run loop will exit immediately. macOS may install and remove additional input sources as needed to process requests targeted at the receiver’s thread. Those sources could therefore prevent the run loop from exiting.
+If no input sources or timers are attached to the run loop, this method exits immediately and returns [`false`](https://developer.apple.com/documentation/Swift/false); otherwise, it returns after either the first input source is processed or `limitDate` is reached. Manually removing all known input sources and timers from the run loop does not guarantee that the run loop will exit immediately. macOS may install and remove additional input sources as needed to process requests targeted at the receiver’s thread. Those sources could therefore prevent the run loop from exiting.
 
 > **Note**:  A timer is not considered an input source and may fire multiple times while waiting for this method to return
 

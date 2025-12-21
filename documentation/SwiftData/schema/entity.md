@@ -47,25 +47,8 @@ final class Entity
 - [var superentity: Schema.Entity?](schema/entity/superentity.md)
 - [var superentityName: String?](schema/entity/superentityname.md)
 - [var subentities: Set<Schema.Entity>](schema/entity/subentities.md)
-### Encoding and decoding
-- [func encode(to: any Encoder) throws](schema/entity/encode(to:).md)
-  Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](schema/entity/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Hashing
-- [func hash(into: inout Hasher)](schema/entity/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing entities
-- [static func == (Schema.Entity, Schema.Entity) -> Bool](schema/entity/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var debugDescription: String](schema/entity/debugdescription.md)
-  A textual representation of this instance, suitable for debugging.
-- [var hashValue: Int](schema/entity/hashvalue.md)
-  The hash value.
 - [var indices: [[String]]](schema/entity/indices.md)
-### Default Implementations
-- [Equatable Implementations](schema/entity/equatable-implementations.md)
 
 ## Relationships
 
@@ -75,6 +58,8 @@ final class Entity
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -11,7 +11,6 @@ Sets the minimum size for the configuration.
 - Mac Catalyst 16.0+
 - tvOS 16.0+
 - visionOS 1.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

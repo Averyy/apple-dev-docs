@@ -17,7 +17,7 @@ func animates() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver animates reordering and changes of the data source; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver animates reordering and changes of the data source; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

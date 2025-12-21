@@ -57,16 +57,6 @@ struct TableTennis: SpatialTemplate {
 ### Operators
 - [static func + (SpatialTemplateElementDirection, Angle2D) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/+(_:_:).md)
   Adds the y-axis rotations for the specified values together and returns a new structure with the result.
-- [static func == (SpatialTemplateElementDirection, SpatialTemplateElementDirection) -> Bool](spatialtemplateelementdirection/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](spatialtemplateelementdirection/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](spatialtemplateelementdirection/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](spatialtemplateelementdirection/equatable-implementations.md)
 
 ## Relationships
 

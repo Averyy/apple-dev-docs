@@ -22,15 +22,15 @@ struct Delay<Upstream, Context> where Upstream : Publisher, Context : Scheduler
 
 ## Topics
 
-### Creating a Delay Publisher
+### Creating a delay publisher
 - [init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, tolerance: Context.SchedulerTimeType.Stride, scheduler: Context, options: Context.SchedulerOptions?)](publishers/delay/init(upstream:interval:tolerance:scheduler:options:).md)
   Creates a publisher that delays delivery of elements and completion to the downstream receiver.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Delay.Output](publishers/delay/output.md)
   The kind of values published by this publisher.
 - [Publishers.Delay.Failure](publishers/delay/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/delay/upstream.md)
   The publisher from which this publisher receives its elements.
 - [let interval: Context.SchedulerTimeType.Stride](publishers/delay/interval.md)
@@ -41,11 +41,6 @@ struct Delay<Upstream, Context> where Upstream : Publisher, Context : Scheduler
   The scheduler to deliver the delayed events.
 - [let options: Context.SchedulerOptions?](publishers/delay/options.md)
   Options relevant to the scheduler’s behavior.
-### Applying Operators
-- [Publisher Operators](publishers-delay-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/delay/publisher-implementations.md)
 
 ## Relationships
 

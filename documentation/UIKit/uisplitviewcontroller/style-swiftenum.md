@@ -25,7 +25,7 @@ In iOS 14 and later, [`UISplitViewController`](uisplitviewcontroller.md) support
 - Use the [`UISplitViewController.Style.doubleColumn`](uisplitviewcontroller/style-swift.enum/doublecolumn.md) style to create a split view interface with a two-column layout. This style of split view controller manages two child view controllers, placed in the primary and secondary columns.
 - Use the [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md) style to create a split view interface with a three-column layout. This style of split view controller manages three child view controllers, placed in the primary, supplementary, and secondary columns.
 
-![Diagram showing a double-column and a triple-column split view interface. ](https://docs-assets.developer.apple.com/published/f6a737334e0751d7d1cfc2082ad65ec3/media-3625687%402x.png)
+![Diagram showing a double-column and a triple-column split view interface, each with an inspector.](https://docs-assets.developer.apple.com/published/23c5e4fd7c1663d788630da117b02829/UISplitViewController-2%402x.png)
 
 Before iOS 14, [`UISplitViewController`](uisplitviewcontroller.md) supported just one split view interface style with a primary view controller and a secondary view controller. This classic interface style applies to split view controllers created using any other approach than [`init(style:)`](uisplitviewcontroller/init(style:).md). Split view controllers with the classic interface have a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md) and they don’t respond to any of the column-style APIs introduced in iOS 14 and later.
 

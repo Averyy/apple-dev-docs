@@ -21,11 +21,11 @@ class MTLBinaryArchiveDescriptor
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## Topics
 
-### Choosing an Archive File
+### Choosing an archive file
 - [var url: URL?](mtlbinaryarchivedescriptor/url.md)
   A URL to a Metal binary archive file.
 

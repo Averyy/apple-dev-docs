@@ -37,16 +37,11 @@ enum PipelineDataError
   An error that indicates that an expected value is missing.
 - [case unrecognizedCategory(operation: String, category: String)](pipelinedataerror/unrecognizedcategory(operation:category:).md)
   An error that indicates that a new category was encountered after fitting.
-- [var errorDescription: String?](pipelinedataerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (PipelineDataError, PipelineDataError) -> Bool](pipelinedataerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](pipelinedataerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](pipelinedataerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](pipelinedataerror/equatable-implementations.md)
-- [Error Implementations](pipelinedataerror/error-implementations.md)
-- [LocalizedError Implementations](pipelinedataerror/localizederror-implementations.md)
 
 ## Relationships
 

@@ -36,7 +36,7 @@ The following ARKit features require you to provide a usage description string i
 
 Other privacy-sensitive technologies in visionOS also require you to supply usage description strings. For example, you provide usage descriptions for the Core Location features you adopt. These strings communicate why your app needs the data, and how you plan to use the data to help the person using your app. The first time you request authorization to use the technology, the system prompts the person to grant or deny access to your app. The system includes your usage-description string in the dialog it displays.
 
-For information about requesting access to ARKit data, see [`ARKit`](https://developer.apple.com/documentation/ARKit). For guidance on how to craft good messages around privacy-friendly features, see [`Privacy`](https://developer.apple.com/design/Human-Interface-Guidelines/privacy).
+For information about requesting access to ARKit data, see [`ARKit`](https://developer.apple.com/documentation/ARKit). For guidance on how to craft good messages around privacy-friendly features, see Human Interface Guidelines.
 
 ## See Also
 

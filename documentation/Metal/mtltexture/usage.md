@@ -22,7 +22,7 @@ var usage: MTLTextureUsage { get }
 
 #### Discussion
 
-You set this value in a [`MTLTextureDescriptor`](mtltexturedescriptor.md) that you then use to create the given texture. After you create the texture, its usage options don’t change.
+You set this value in an [`MTLTextureDescriptor`](mtltexturedescriptor.md) that you then use to create the given texture. After you create the texture, its usage options don’t change.
 
 ## See Also
 

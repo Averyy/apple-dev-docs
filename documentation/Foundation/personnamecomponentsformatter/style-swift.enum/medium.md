@@ -28,10 +28,6 @@ Equivalent to [`PersonNameComponentsFormatter.Style.default`](personnamecomponen
 - [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
 - [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
 - [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
-- [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
 
 
 ---

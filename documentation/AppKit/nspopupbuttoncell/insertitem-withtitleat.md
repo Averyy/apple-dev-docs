@@ -30,7 +30,7 @@ Because this method searches for duplicate items, it should not be used if you a
 
 ## See Also
 
-- [func insert(_ anObject: Any, at index: Int)](../Foundation/NSMutableArray/insert(_:at:)-5dbx5.md)
+- [func insert(Any, at: Int)](../Foundation/NSMutableArray/insert(_:at:)-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
 - [func addItem(withTitle: String)](nspopupbuttoncell/additem(withtitle:).md)
   Adds an item with the specified title to the end of the menu.

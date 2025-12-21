@@ -6,11 +6,11 @@
 Predefined transcriber configurations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -50,10 +50,23 @@ This table lists the presets and their configurations:
 
 ## Topics
 
-### Initializers
+### Standard presets
+- [static let phrase: DictationTranscriber.Preset](dictationtranscriber/preset/phrase.md)
+  Configuration for a short phrase without punctuation.
+- [static let shortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/shortdictation.md)
+  Configuration for about a minute of audio.
+- [static let progressiveShortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressiveshortdictation.md)
+  Configuration for immediate transcription of about a minute of live audio.
+- [static let longDictation: DictationTranscriber.Preset](dictationtranscriber/preset/longdictation.md)
+  Configuration for more than a minute of audio.
+- [static let progressiveLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressivelongdictation.md)
+  Configuration for immediate transcription of lengthy audio.
+- [static let timeIndexedLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/timeindexedlongdictation.md)
+  Configure for lengthy audio, cross-referencing words to time-codes.
+### Creating a preset
 - [init(contentHints: Set<DictationTranscriber.ContentHint>, transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>, reportingOptions: Set<DictationTranscriber.ReportingOption>, attributeOptions: Set<DictationTranscriber.ResultAttributeOption>)](dictationtranscriber/preset/init(contenthints:transcriptionoptions:reportingoptions:attributeoptions:).md)
   Creates a preset.
-### Instance Properties
+### Getting preset properties
 - [var attributeOptions: Set<DictationTranscriber.ResultAttributeOption>](dictationtranscriber/preset/attributeoptions.md)
   Options relating to the attributes of the transcription appropriate for this preset.
 - [var contentHints: Set<DictationTranscriber.ContentHint>](dictationtranscriber/preset/contenthints.md)
@@ -62,13 +75,6 @@ This table lists the presets and their configurations:
   Options relating to the transcriber’s result delivery appropriate for this preset.
 - [var transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>](dictationtranscriber/preset/transcriptionoptions.md)
   Options relating to the text of the transcription appropriate for this preset.
-### Type Properties
-- [static let longDictation: DictationTranscriber.Preset](dictationtranscriber/preset/longdictation.md)
-- [static let phrase: DictationTranscriber.Preset](dictationtranscriber/preset/phrase.md)
-- [static let progressiveLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressivelongdictation.md)
-- [static let progressiveShortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressiveshortdictation.md)
-- [static let shortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/shortdictation.md)
-- [static let timeIndexedLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/timeindexedlongdictation.md)
 
 ## Relationships
 
@@ -80,10 +86,10 @@ This table lists the presets and their configurations:
 
 ## See Also
 
-- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
-  Expected characteristics of the spoken audio content and its delivery.
-- [DictationTranscriber.Result](dictationtranscriber/result.md)
-  A phrase or passage of transcribed speech. The phrases are sent in order.
+- [convenience init(locale: Locale, preset: DictationTranscriber.Preset)](dictationtranscriber/init(locale:preset:).md)
+  Creates a transcriber according to a preset.
+- [convenience init(locale: Locale, contentHints: Set<DictationTranscriber.ContentHint>, transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>, reportingOptions: Set<DictationTranscriber.ReportingOption>, attributeOptions: Set<DictationTranscriber.ResultAttributeOption>)](dictationtranscriber/init(locale:contenthints:transcriptionoptions:reportingoptions:attributeoptions:).md)
+  Creates a transcriber.
 
 
 ---

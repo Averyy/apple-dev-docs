@@ -8,7 +8,6 @@ A type for image-analysis requests that focus on a specific part of an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -84,20 +83,16 @@ protocol ImageProcessingRequest : VisionRequest
 
 ## See Also
 
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
-  Analyze and label images using a Vision classification request.
-- [struct ClassifyImageRequest](classifyimagerequest.md)
-  A request to classify an image.
-- [class ImageRequestHandler](imagerequesthandler.md)
-  An object that processes one or more image-analysis requests pertaining to a single image.
-- [protocol VisionRequest](visionrequest.md)
-  A type for image-analysis requests.
+- [protocol PoseProviding](poseproviding.md)
+  An observation that provides a collection of joints that make up a pose.
+- [protocol StatefulRequest](statefulrequest.md)
+  The protocol for a type that builds evidence of a condition over time.
+- [protocol TargetedRequest](targetedrequest.md)
+  A type for analyzing two images together.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
-- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
-  A request that detects a smudge on a lens from an image or video frame capture.
-- [struct SmudgeObservation](smudgeobservation.md)
-  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
+- [protocol VisionRequest](visionrequest.md)
+  A type for image-analysis requests.
 
 
 ---

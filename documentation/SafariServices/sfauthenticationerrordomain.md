@@ -26,7 +26,8 @@ let SFAuthenticationErrorDomain: String
   A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
 - [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
+  Messages that describe an authentication error.
 
 
 ---

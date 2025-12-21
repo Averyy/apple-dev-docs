@@ -16,7 +16,7 @@ case autosaveElsewhereOperation
 
 #### Discussion
 
-For an [`NSDocument`](nsdocument.md) subclass that overrides [`autosavesInPlace`](nsdocument/autosavesinplace.md) to have the value [`true`](https://developer.apple.com/documentation/swift/true), this is used during autosaving of documents that have never been saved and therefore do not yet have a document file that can be overwritten during autosaving. `NSDocument` may also pass `NSAutosaveElsewhereOperation` when invoking `writeSafelyToURL:ofType:forSaveOperation:error:` while duplicating or reverting a document.
+For an [`NSDocument`](nsdocument.md) subclass that overrides [`autosavesInPlace`](nsdocument/autosavesinplace.md) to have the value [`true`](https://developer.apple.com/documentation/Swift/true), this is used during autosaving of documents that have never been saved and therefore do not yet have a document file that can be overwritten during autosaving. `NSDocument` may also pass `NSAutosaveElsewhereOperation` when invoking `writeSafelyToURL:ofType:forSaveOperation:error:` while duplicating or reverting a document.
 
 ## See Also
 

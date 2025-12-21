@@ -14,11 +14,6 @@ The token endpoint URL for login requests.
 var tokenEndpointURL: URL { get set }
 ```
 
-## Mentions
-
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
-- [Creating a refresh request](creating-a-refresh-request.md)
-
 ## See Also
 
 - [var audience: String](asauthorizationproviderextensionloginconfiguration/audience.md)

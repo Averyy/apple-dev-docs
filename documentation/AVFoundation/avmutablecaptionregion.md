@@ -19,12 +19,12 @@ class AVMutableCaptionRegion
 
 ## Topics
 
-### Creating a Caption Region
+### Creating a caption region
 - [init()](avmutablecaptionregion/init.md)
   Creates a caption region.
 - [init(identifier: String)](avmutablecaptionregion/init(identifier:).md)
   Creates a caption region that has an identifier.
-### Configuring the Region
+### Configuring the region
 - [var origin: AVCaptionPoint](avmutablecaptionregion/origin.md)
   The region’s top-left position.
 - [var size: AVCaptionSize](avmutablecaptionregion/size.md)

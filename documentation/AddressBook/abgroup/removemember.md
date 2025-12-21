@@ -16,11 +16,11 @@ func removeMember(_ person: ABPerson!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the `person` argument is not in the group, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). If `person` is `nil`, this method raises an exception.
+If the `person` argument is not in the group, this method does nothing and returns [`false`](https://developer.apple.com/documentation/Swift/false). If `person` is `nil`, this method raises an exception.
 
 ## Parameters
 

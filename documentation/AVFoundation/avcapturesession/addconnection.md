@@ -21,7 +21,7 @@ func addConnection(_ connection: AVCaptureConnection)
 
 #### Discussion
 
-You can only add a capture connection to a session using this method if [`canAddConnection(_:)`](avcapturesession/canaddconnection(_:).md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+You can only add a capture connection to a session using this method if [`canAddConnection(_:)`](avcapturesession/canaddconnection(_:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 When using [`addInput(_:)`](avcapturesession/addinput(_:).md) or [`addOutput(_:)`](avcapturesession/addoutput(_:).md), the session automatically forms connections between all compatible inputs and outputs. Manually adding connections is only necessary when adding an input or output with no connections.
 

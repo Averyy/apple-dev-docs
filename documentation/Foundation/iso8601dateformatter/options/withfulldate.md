@@ -36,9 +36,6 @@ The date representation includes the year, month, and day. Equivalent to specify
 - [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintimezone.md)
 - [static var withFullTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulltime.md)
 - [static var withInternetDateTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withinternetdatetime.md)
-- [static var withYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withyear.md)
-- [static var withMonth: ISO8601DateFormatter.Options](iso8601dateformatter/options/withmonth.md)
-- [static var withWeekOfYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withweekofyear.md)
 
 
 ---

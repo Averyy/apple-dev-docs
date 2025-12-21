@@ -21,18 +21,18 @@ var inputPrimitiveTopology: MTLPrimitiveTopologyClass { get set }
 
 ## Mentions
 
-- [Rendering to Multiple Texture Slices in a Draw Command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Discussion
 
-Your app must specify this value when layered rendering is enabled.
+Your app needs to specify this value when layered rendering is enabled.
 
 The default value is `MTLPrimitiveTopologyClassUnspecified`.
 
 ## See Also
 
 - [var renderTargetArrayLength: Int](mtlrenderpassdescriptor/rendertargetarraylength.md)
-  The number of active layers that all attachments must have for layered rendering.
+  The number of active layers that all attachments need to have for layered rendering.
 - [var isAlphaToCoverageEnabled: Bool](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
   A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
 - [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)

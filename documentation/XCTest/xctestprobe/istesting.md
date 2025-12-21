@@ -5,9 +5,6 @@
 
 A Boolean value that indicates whether a test is running.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

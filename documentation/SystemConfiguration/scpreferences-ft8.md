@@ -8,7 +8,7 @@ The `SCPreferences` programming interface allows an application to load and stor
 
 To access configuration preferences, you must first establish a preferences session using the [`SCPreferencesCreate(_:_:_:)`](scpreferencescreate(_:_:_:).md) function. To identify a specific set of preferences to access, you pass a value in the prefsID parameter. A `NULL` value indicates that the default system preferences are to be accessed. A string that starts with a leading “/” character specifies the absolute path to the file containing the preferences to be accessed. A string that does not start with a leading “/” character specifies a file relative to the default system preferences directory.
 
-When you are finished with the preferences session, use the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release it.
+When you are finished with the preferences session, use the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release it.
 
 ## Topics
 

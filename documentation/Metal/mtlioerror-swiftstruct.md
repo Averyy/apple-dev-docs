@@ -21,14 +21,14 @@ struct MTLIOError
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [static var urlInvalid: MTLIOError.Code](mtlioerror-swift.struct/urlinvalid.md)
   An error that represents a problem with a file URL.
 - [static var `internal`: MTLIOError.Code](mtlioerror-swift.struct/internal.md)
   An error that represents a problem internal to the Metal framework.
 - [MTLIOError.Code](mtlioerror-swift.struct/code.md)
   The error codes for creating an input/output file handle.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtlioerror-swift.struct/errordomain.md)
   The current error domain for input/output command queues.
 - [let MTLIOErrorDomain: String](mtlioerrordomain.md)
@@ -46,6 +46,7 @@ struct MTLIOError
 
 ## See Also
 
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)

@@ -32,7 +32,7 @@ var body: some View {
 }
 ```
 
-The user sets the contrast by selecting the Increase Contrast option in Accessibility > Display in System Preferences on macOS, or Accessibility > Display & Text Size in the Settings app on iOS. Your app can’t override the user’s choice. For information about using color and contrast in your app, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in the Human Interface Guidelines.
+The user sets the contrast by selecting the Increase Contrast option in Accessibility > Display in System Preferences on macOS, or Accessibility > Display & Text Size in the Settings app on iOS. Your app can’t override the user’s choice. For information about using color and contrast in your app, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Color-and-effects) in the Human Interface Guidelines.
 
 ## Topics
 

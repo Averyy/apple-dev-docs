@@ -20,7 +20,7 @@ var isAssignable: Bool { get set }
 
 #### Discussion
 
-Set this Boolean to [`false`](https://developer.apple.com/documentation/swift/false) for a context that doesn’t represent an assignable task, like when you use a context solely as a container for other contexts. For example, if you add all of your app’s quiz contexts as the children of a single quiz collection context, you can mark the collection as “not assignable”:
+Set this Boolean to [`false`](https://developer.apple.com/documentation/Swift/false) for a context that doesn’t represent an assignable task, like when you use a context solely as a container for other contexts. For example, if you add all of your app’s quiz contexts as the children of a single quiz collection context, you can mark the collection as “not assignable”:
 
 ```swift
 collectionContext.isAssignable = false

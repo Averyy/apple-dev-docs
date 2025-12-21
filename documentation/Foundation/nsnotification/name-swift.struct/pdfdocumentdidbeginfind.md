@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method begins finding.
+A notification that the document began a find operation.
 
 **Availability**:
 - iOS 11.0+
@@ -21,6 +21,8 @@ static let PDFDocumentDidBeginFind: NSNotification.Name
 
 #### Discussion
 
+The document posts this notification when the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method begins finding.
+
 The notification object is the `PDFDocument` object itself.
 
 ## See Also
@@ -32,7 +34,7 @@ The notification object is the `PDFDocument` object itself.
 - [static let PDFDocumentDidBeginWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginwrite.md)
   A notification that a write operation begins working on a document.
 - [static let PDFDocumentDidEndFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendfind.md)
-  A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method returns.
+  A notification that the document finished a find operation.
 - [static let PDFDocumentDidEndPageFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagefind.md)
   A notification that a find operation finishes working on a page in a document.
 - [static let PDFDocumentDidEndPageWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagewrite.md)
@@ -42,7 +44,7 @@ The notification object is the `PDFDocument` object itself.
 - [static let PDFDocumentDidFindMatch: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidfindmatch.md)
   A notification that a string match is found in a document.
 - [static let PDFDocumentDidUnlock: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidunlock.md)
-  A notification that a document unlocks after a [`unlock(withPassword:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/unlock(withPassword:)) message.
+  A notification that a document unlocked.
 - [static let PDFThumbnailViewDocumentEdited: NSNotification.Name](nsnotification/name-swift.struct/pdfthumbnailviewdocumentedited.md)
 - [static let PDFViewAnnotationHit: NSNotification.Name](nsnotification/name-swift.struct/pdfviewannotationhit.md)
   A notification posted when the user clicks on an annotation.

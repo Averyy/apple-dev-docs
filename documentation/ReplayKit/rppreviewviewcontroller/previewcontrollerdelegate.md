@@ -6,16 +6,17 @@
 The preview view controller’s delegate.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
 - macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
+@MainActor
 weak var previewControllerDelegate: (any RPPreviewViewControllerDelegate)? { get set }
 ```
 

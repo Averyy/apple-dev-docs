@@ -236,9 +236,6 @@ You can also monitor the events your app receives and modify or cancel some even
 ### Deprecated
 - [var context: NSGraphicsContext?](nsevent/context.md)
   The display graphics context for this event.
-### Instance Methods
-- [func deadKeyCharacter() -> unichar](nsevent/deadkeycharacter.md)
-- [func willBeHandledByComplexInputMethod() -> Bool](nsevent/willbehandledbycomplexinputmethod.md)
 
 ## Relationships
 

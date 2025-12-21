@@ -22,6 +22,8 @@ var modelDisplayName: String? { get set }
 
 ## See Also
 
+- [var functionName: String?](mlmodelconfiguration/functionname.md)
+  Function name that `MLModel` will use.
 - [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
   A dictionary of configuration settings your app can override when loading a model.
 - [class MLParameterKey](mlparameterkey.md)

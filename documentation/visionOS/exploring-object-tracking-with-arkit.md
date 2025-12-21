@@ -165,10 +165,12 @@ Creating your own reference objects requires an iPhone, iPad, or other device th
   Place content based on the current position of a known image in a person’s surroundings.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building_local_experiences_with_room_tracking.md)
+- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 
 
 ---

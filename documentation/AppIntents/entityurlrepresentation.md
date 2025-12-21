@@ -28,21 +28,6 @@ Note that you need to use a universal link for your URL representation, you canâ
 
 ### Initializers
 - [init(String)](entityurlrepresentation/init(_:).md)
-- [init(stringInterpolation: EntityURLRepresentation<Entity>.StringInterpolation)](entityurlrepresentation/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [init(stringLiteral: String)](entityurlrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Type Aliases
-- [EntityURLRepresentation.ExtendedGraphemeClusterLiteralType](entityurlrepresentation/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [EntityURLRepresentation.StringLiteralType](entityurlrepresentation/stringliteraltype.md)
-  A type that represents a string literal.
-- [EntityURLRepresentation.UnicodeScalarLiteralType](entityurlrepresentation/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](entityurlrepresentation/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringInterpolation Implementations](entityurlrepresentation/expressiblebystringinterpolation-implementations.md)
-- [ExpressibleByStringLiteral Implementations](entityurlrepresentation/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

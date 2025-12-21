@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: enum
 
-An error that can occur when asking someone to send a communication permission question.
+Represents errors you encounter when asking a person to send a communication permission question.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.1+
 
 ## Declaration
 
@@ -20,30 +20,28 @@ enum AskError
 
 ## Topics
 
-### Getting the error response
+### Handling errors
 - [AskError.unknown](askerror/unknown.md)
-  An unknown error response.
-### Operators
-- [static func == (AskError, AskError) -> Bool](askerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+  Indicates an unknown error response.
+- [AskError.communicationLimitsNotEnabled](askerror/communicationlimitsnotenabled.md)
+  Indicates communication limits isn’t enabled to send permission requests.
+- [AskError.contactSyncNotSetup](askerror/contactsyncnotsetup.md)
+  Indicates contact sync isn’t enabled to send permission requests.
+- [AskError.invalidQuestion](askerror/invalidquestion.md)
+  Indicates your permission request is invalid.
+- [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
+  Indicates a system error occurred with underlying details.
+### Enumeration Cases
+- [AskError.notAvailable](askerror/notavailable.md)
+  Indicates the person doesn’t meet the requirements for sending permission requests.
 ### Instance Properties
-- [var hashValue: Int](askerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](askerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](askerror/equatable-implementations.md)
-- [Error Implementations](askerror/error-implementations.md)
-- [LocalizedError Implementations](askerror/localizederror-implementations.md)
+- [var errorDescription: String?](askerror/errordescription.md)
+  The localized description of the error.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

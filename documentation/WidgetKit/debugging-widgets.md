@@ -49,10 +49,10 @@ To select the default view the WidgetKit Simulator app shows when you start a de
 
 - [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
   Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
-- [struct WidgetPreviewContext](widgetpreviewcontext.md)
-  A specification for the context of a widget preview.
 - [Preview macros](preview-macros.md)
   Use Swift macros to create widget previews in Xcode.
+- [struct WidgetPreviewContext](widgetpreviewcontext.md)
+  A specification for the context of a widget preview.
 
 
 ---

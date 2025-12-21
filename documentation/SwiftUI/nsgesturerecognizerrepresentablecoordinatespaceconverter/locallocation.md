@@ -6,7 +6,7 @@
 The represented gesture recognizer’s current location in the coordinate space of the SwiftUI view it’s attached to.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

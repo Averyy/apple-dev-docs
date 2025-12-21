@@ -29,7 +29,7 @@ var openFile: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.files.openFile` schema:
 
 ```swift
-@AssistantIntent(schema: .files.openFile)
+@AppIntent(schema: .files.openFile)
 struct OpenFileIntent: OpenIntent {
     @Parameter
     var target: ExampleFileEntity

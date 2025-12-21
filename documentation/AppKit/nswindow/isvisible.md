@@ -17,7 +17,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is onscreen (even if it’s obscured by other windows); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window is onscreen (even if it’s obscured by other windows); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

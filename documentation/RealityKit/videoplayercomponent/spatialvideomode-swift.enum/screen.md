@@ -6,8 +6,8 @@
 Video Screen mode - spatial video rending of video as mono/stereo on screen without portal rendering or treatment.
 
 **Availability**:
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

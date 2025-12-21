@@ -21,14 +21,16 @@ struct Transaction
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
-- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
-- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
-- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
-- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
 - [Testing refund requests](testing-refund-requests.md)
+- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
+- [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
+- [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
+- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
+- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 
 #### Overview
 
@@ -101,8 +103,9 @@ All In-App Purchases that customers make are equally available to your app in th
 ### Getting current entitlements
 - [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
   A sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
-- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](transaction/currententitlement(for:).md)
-  Gets the latest transactions that entitle the customer to a specified product.
+### Getting transactions for a product
+- [static func all(for: String) -> Transaction.Transactions](transaction/all(for:).md)
+  Gets all the transactions associated with this product ID.
 ### Finishing the transaction
 - [func finish() async](transaction/finish.md)
   Indicates to the App Store that the app delivered the purchased content or enabled the service to finish the transaction.
@@ -133,21 +136,21 @@ All In-App Purchases that customers make are equally available to your app in th
   The error codes for refund requests.
 - [Transaction.RefundRequestStatus](transaction/refundrequeststatus.md)
   The status codes for refund requests.
-### Structures
-- [Transaction.AdvancedCommerceInfo](transaction/advancedcommerceinfo-swift.struct.md)
-  Metadata for transactions that use the Advanced Commerce API.
-- [Transaction.OfferType](transaction/offertype-swift.struct.md)
-  The types of subscription offers for auto-renewable subscriptions.
-### Instance Properties
+### Advanced Commerce transaction data
 - [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](transaction/advancedcommerceinfo-swift.property.md)
   Metadata for transactions that use the Advanced Commerce API.
-- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
-  The string representation of the offer period applied to the subscription offer for this transaction.
-### Type Methods
-- [static func all(for: String) -> Transaction.Transactions](transaction/all(for:).md)
-  Gets all the transactions associated with this product ID.
+- [Transaction.AdvancedCommerceInfo](transaction/advancedcommerceinfo-swift.struct.md)
+  Metadata for transactions that use the Advanced Commerce API.
+### Getting offer types
+- [Transaction.OfferType](transaction/offertype-swift.struct.md)
+  The types of offers that apply to a transaction.
+### Deprecated
+- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](transaction/currententitlement(for:).md)
+  Gets the latest transactions that entitle the customer to a specified product.
 - [static func currentEntitlements(for: String) -> Transaction.Transactions](transaction/currententitlements(for:).md)
   Gets the transactions that entitle the user to items purchased under a product ID.
+- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
+  The string representation of the offer period applied to the subscription offer for this transaction.
 
 ## Relationships
 

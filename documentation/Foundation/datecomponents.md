@@ -84,9 +84,6 @@ When a new instance of `DateComponents` is created, the date components are set 
   Set the value of one of the properties, using an enumeration value instead of a property name.
 - [Calendar.Component](calendar/component.md)
   An enumeration for the various components of a calendar date.
-### Comparing Date Components
-- [static func != (Self, Self) -> Bool](datecomponents/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Using Reference Types
 - [class NSDateComponents](nsdatecomponents.md)
   An object that specifies a date or time in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
@@ -103,6 +100,9 @@ When a new instance of `DateComponents` is created, the date components are set 
 - [init(subscriptionPeriod: Product.SubscriptionPeriod)](datecomponents/init(subscriptionperiod:).md)
 ### Instance Properties
 - [var dayOfYear: Int?](datecomponents/dayofyear.md)
+  A day of the year. For example, in the Gregorian calendar, can go from 1 to 365 or 1 to 366 in leap years.
+- [var isRepeatedDay: Bool?](datecomponents/isrepeatedday.md)
+  Set to true if these components represent a repeated day.
 ### Instance Methods
 - [func formatted<F>(F) -> F.FormatOutput](datecomponents/formatted(_:).md)
   Converts `self` to its textual representation.
@@ -112,8 +112,6 @@ When a new instance of `DateComponents` is created, the date components are set 
 - [DateComponents.ValueType](datecomponents/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: some ResolverSpecification](datecomponents/defaultresolverspecification.md)
-### Default Implementations
-- [Equatable Implementations](datecomponents/equatable-implementations.md)
 
 ## Relationships
 

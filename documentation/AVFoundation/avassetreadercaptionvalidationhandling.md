@@ -19,7 +19,7 @@ protocol AVAssetReaderCaptionValidationHandling : NSObjectProtocol
 
 ## Topics
 
-### Validating Captions
+### Validating captions
 - [func captionAdaptor(AVAssetReaderOutputCaptionAdaptor, didVendCaption: AVCaption, skippingUnsupportedSourceSyntaxElements: [String])](avassetreadercaptionvalidationhandling/captionadaptor(_:didvendcaption:skippingunsupportedsourcesyntaxelements:).md)
   Tells the delegate that the adaptor ignored one or more syntax elements when it created the caption object.
 

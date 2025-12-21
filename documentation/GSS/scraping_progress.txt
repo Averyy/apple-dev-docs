@@ -1,4 +1,4 @@
 Completed scraping GSS!
-Total pages scraped: 365
+Total pages scraped: 290
 Pages skipped (unchanged): 1
 Pages failed: 0

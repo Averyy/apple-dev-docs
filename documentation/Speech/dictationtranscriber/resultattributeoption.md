@@ -6,11 +6,11 @@
 Options relating to the attributes of the transcription.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ enum ResultAttributeOption
 
 ## Topics
 
-### Enumeration Cases
+### Result attribute options
 - [DictationTranscriber.ResultAttributeOption.audioTimeRange](dictationtranscriber/resultattributeoption/audiotimerange.md)
   Includes time-code attributes in a transcription’s attributed string.
 - [DictationTranscriber.ResultAttributeOption.transcriptionConfidence](dictationtranscriber/resultattributeoption/transcriptionconfidence.md)
@@ -37,6 +37,8 @@ enum ResultAttributeOption
 
 ## See Also
 
+- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
+  Expected characteristics of the spoken audio content and its delivery.
 - [DictationTranscriber.ReportingOption](dictationtranscriber/reportingoption.md)
   Options relating to the transcriber’s result delivery.
 - [DictationTranscriber.TranscriptionOption](dictationtranscriber/transcriptionoption.md)

@@ -17,7 +17,6 @@ The diffuse and specular color of the light source.
 ## Declaration
 
 ```swift
-@MainActor
 var lightColor: UIColor { get set }
 ```
 

@@ -26,7 +26,7 @@ struct AVMetadataFormat
 
 ## Topics
 
-### Metadata Formats
+### Metadata formats
 - [static let hlsMetadata: AVMetadataFormat](avmetadataformat/hlsmetadata.md)
   The HLS metadata format.
 - [static let iTunesMetadata: AVMetadataFormat](avmetadataformat/itunesmetadata.md)

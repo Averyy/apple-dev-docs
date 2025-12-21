@@ -22,7 +22,7 @@ func hasPrefix(_ str: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aString` matches the beginning characters of the receiver, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Returns [`false`](https://developer.apple.com/documentation/swift/false) if `aString` is empty.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aString` matches the beginning characters of the receiver, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Returns [`false`](https://developer.apple.com/documentation/Swift/false) if `aString` is empty.
 
 #### Discussion
 

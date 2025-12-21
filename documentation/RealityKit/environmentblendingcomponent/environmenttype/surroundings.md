@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-The real-world surroundings of the user
+The real-world surroundings of the user.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

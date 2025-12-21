@@ -40,6 +40,12 @@ In your test method, after the interactions that Xcode recorded, add assertions 
 
 > **Note**:  A test method that doesn’t contain any assertions passes if it runs to completion without throwing any errors. Use this to test that recorded interactions in your app are still possible in updated versions, and that the app doesn’t crash when you interact with it.
 
+##### Interact with Multiple Apps
+
+You can record interaction with multiple apps in a UI test, for example, to make changes in Settings or to validate that actions you make in one of your apps are reflected in another app’s UI.
+
+Your test can interact with any app that’s installed on the device or Simulator where you run the test. Xcode automatically creates [`XCUIApplication`](xcuiapplication.md) instances for apps you interact with while you record a test.
+
 
 ---
 

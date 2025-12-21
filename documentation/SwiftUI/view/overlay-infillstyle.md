@@ -43,7 +43,7 @@ This modifier is a convenience method for layering a shape over a view. To handl
 
 ## Parameters
 
-- `style`: A   that SwiftUI uses to the fill the shape   that you specify.
+- `style`: A   that SwiftUI uses to fill the shape   that you specify.
 - `shape`: An instance of a type that conforms to   that   SwiftUI draws in front of the view.
 - `fillStyle`: The   to use when drawing the shape.   The default style uses the nonzero winding number rule and   antialiasing.
 

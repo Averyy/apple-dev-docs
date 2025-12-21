@@ -6,13 +6,13 @@
 Retrieves a video sample along with auxiliary information for display at the specified host time.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,14 @@ A sample containing the frame, presentation timestamp, and active configuration 
 ## Parameters
 
 - `hostTime`: A CMTime that expresses a desired host time.
+
+## See Also
+
+- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+  A video frame along with auxiliary information for display at the specified presentation time.
+- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
+- [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
+  An object that provides configuration information for the related player item.
 
 
 ---

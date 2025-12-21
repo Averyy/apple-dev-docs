@@ -6,7 +6,7 @@
 A protocol that defines methods for providing search results and canceling searches.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

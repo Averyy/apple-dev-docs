@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Configure the IP hop limit.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func hopLimit(_ val: UInt8) -> IP
+func hopLimit(_ limit: UInt8) -> IP
 ```
+
+#### Discussion
+
+Equivalent to `IP_TTL` for IPv4 and `IPV6_HOPLIMIT` for IPv6.
+
+## Parameters
+
+- `limit`: The hop limit.
 
 
 ---

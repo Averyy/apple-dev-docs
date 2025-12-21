@@ -21,7 +21,7 @@ convenience init(screenSize: MTLSize, label: String? = nil)
 
 #### Return Value
 
-A descriptor object whose [`screenSize`](mtlrasterizationratemapdescriptor/screensize.md) and [`label`](mtlrasterizationratemapdescriptor/label.md) properties are set to the provided values. You must add at least one layer rate map to the descriptor.
+A descriptor object whose [`screenSize`](mtlrasterizationratemapdescriptor/screensize.md) and [`label`](mtlrasterizationratemapdescriptor/label.md) properties are set to the provided values. You need to add at least one layer rate map to the descriptor.
 
 ## Parameters
 

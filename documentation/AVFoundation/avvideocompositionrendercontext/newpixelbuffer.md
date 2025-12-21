@@ -25,7 +25,12 @@ A [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelB
 
 #### Discussion
 
-The buffer’s [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey) and [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey) attachments are set to match the current composition processor properties. You’re responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/corevideo/1535816-cvbufferrelease) on the pixel buffer.
+The buffer’s [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey) and [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey) attachments are set to match the current composition processor properties. You’re responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/CoreVideo/CVBufferRelease) on the pixel buffer.
+
+## See Also
+
+- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](avvideocompositionrendercontext/makemutablepixelbuffer.md)
+  Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
 
 
 ---

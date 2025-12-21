@@ -1,37 +1,35 @@
-# !=(_:_:)
+# IntentPaymentMethod.PaymentType.unknown
 
 **Framework**: App Intents  
-**Kind**: op
-
-Returns a Boolean value indicating whether two values are not equal.
+**Kind**: case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 16.0+
+- iPadOS 16.0+
 - Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS ?+
-- watchOS ?+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [IntentPaymentMethod.PaymentType.applePay](intentpaymentmethod/paymenttype-swift.enum/applepay.md)
+- [IntentPaymentMethod.PaymentType.brokerage](intentpaymentmethod/paymenttype-swift.enum/brokerage.md)
+- [IntentPaymentMethod.PaymentType.checking](intentpaymentmethod/paymenttype-swift.enum/checking.md)
+- [IntentPaymentMethod.PaymentType.credit](intentpaymentmethod/paymenttype-swift.enum/credit.md)
+- [IntentPaymentMethod.PaymentType.debit](intentpaymentmethod/paymenttype-swift.enum/debit.md)
+- [IntentPaymentMethod.PaymentType.prepaid](intentpaymentmethod/paymenttype-swift.enum/prepaid.md)
+- [IntentPaymentMethod.PaymentType.savings](intentpaymentmethod/paymenttype-swift.enum/savings.md)
+- [IntentPaymentMethod.PaymentType.store](intentpaymentmethod/paymenttype-swift.enum/store.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/unknown)*

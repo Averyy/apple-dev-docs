@@ -7,6 +7,11 @@
 - iOS 17.0+
 - iPadOS 17.0+
 
+## See Also
+
+- [NSCriticalMessagingUsageDescription](information-property-list/nscriticalmessagingusagedescription.md)
+  A message that tells people why the app needs to send SMS messages.
+
 
 ---
 

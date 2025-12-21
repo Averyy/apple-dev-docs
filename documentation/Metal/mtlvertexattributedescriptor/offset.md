@@ -21,7 +21,7 @@ var offset: Int { get set }
 
 #### Discussion
 
-The `offset` value must be a multiple of `4` bytes.
+The `offset` value needs to be a multiple of `4` bytes.
 
 ## See Also
 
@@ -29,6 +29,8 @@ The `offset` value must be a multiple of `4` bytes.
   The format of the vertex attribute.
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
+- [enum MTLVertexFormat](mtlvertexformat.md)
+  Values that specify the organization of function vertex data.
 
 
 ---

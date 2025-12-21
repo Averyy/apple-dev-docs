@@ -36,7 +36,7 @@ if traitCollection.userInterfaceIdiom == .mac {
 
 ##### Determine the Current User Interface Idiom
 
-To determine if your app is running in the Mac idiom, compare the value of the [`userInterfaceIdiom`](uitraitcollection/userinterfaceidiom.md) property with [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). When the comparison is [`true`](https://developer.apple.com/documentation/swift/true), you can tailor the behavior of your app for the Mac; for example, to display a different child view.
+To determine if your app is running in the Mac idiom, compare the value of the [`userInterfaceIdiom`](uitraitcollection/userinterfaceidiom.md) property with [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). When the comparison is [`true`](https://developer.apple.com/documentation/Swift/true), you can tailor the behavior of your app for the Mac; for example, to display a different child view.
 
 ```swift
 let childViewController: UIViewController

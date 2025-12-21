@@ -22,7 +22,7 @@ var readsFromDepthBuffer: Bool { get set }
 
 #### Discussion
 
-SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), specifying that SceneKit compares the depth of each rendered pixel to the corresponding value in its depth buffer when rendering the material. If the pixel is at a greater depth than the corresponding point in the depth buffer, SceneKit does not render the pixel.
+SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that SceneKit compares the depth of each rendered pixel to the corresponding value in its depth buffer when rendering the material. If the pixel is at a greater depth than the corresponding point in the depth buffer, SceneKit does not render the pixel.
 
 Typically, you disable reading from the depth buffer when rendering objects that should always be visible regardless of the already rendered content in the scene—for example, a heads-up display in a game. In such cases, you should also set a high value for the [`renderingOrder`](scnnode/renderingorder.md) property of the node containing whatever content is to be always visible.
 

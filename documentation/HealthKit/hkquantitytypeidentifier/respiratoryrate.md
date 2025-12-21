@@ -21,7 +21,7 @@ static let respiratoryRate: HKQuantityTypeIdentifier
 
 #### Discussion
 
-These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). The system automatically records samples on Apple Watch.
 
 ## See Also
 

@@ -20,14 +20,14 @@ case timeout
 
 ## See Also
 
-- [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
-  The audio file could not be read.
-- [SFSpeechError.Code.internalServiceError](sfspeecherror/code/internalserviceerror.md)
-  There was an internal error.
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
-  The custom language model file was malformed.
-- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
-  The custom language model templates were malformed.
+- [static var assetLocaleNotAllocated: SFSpeechError.Code](sfspeecherror/code/assetlocalenotallocated.md)
+  The asset locale has not been allocated, but module requires it.
+- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](sfspeecherror/code/cannotallocateunsupportedlocale.md)
+  The asset locale being requested is not supported by SpeechFramework.
+- [static var noModel: SFSpeechError.Code](sfspeecherror/code/nomodel.md)
+  The selected locale/options does not have an appropriate model available or downloadable.
+- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](sfspeecherror/code/toomanyassetlocalesallocated.md)
+  The application has allocated too many locales.
 
 
 ---

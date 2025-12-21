@@ -26,6 +26,8 @@ A column of labels.
 
 - [func prediction(from: String) throws -> String](mlgazetteer/prediction(from:).md)
   Predicts the label for the given term.
+- [func predictions(from:)](mlgazetteer/predictions(from:).md)
+  Predicts the labels for the given terms.
 - [func predictions(from: [String]) throws -> [String]](mlgazetteer/predictions(from:)-2rej.md)
   Predicts the labels for the given terms.
 

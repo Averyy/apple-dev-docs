@@ -16,7 +16,7 @@ var isMultiple: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the last font selection recorded has multiple fonts; if the last font selection recorded is a single font, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the last font selection recorded has multiple fonts; if the last font selection recorded is a single font, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

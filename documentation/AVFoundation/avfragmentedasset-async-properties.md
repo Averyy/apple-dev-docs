@@ -6,7 +6,7 @@ Asynchronous properties for fragmented assets.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVFragmentedAssetTrack]>](avpartialasyncproperty/tracks-9z3j9.md)
   The tracks an asset contains.
 

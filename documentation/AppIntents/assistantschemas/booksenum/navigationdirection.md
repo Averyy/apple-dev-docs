@@ -25,7 +25,7 @@ var navigationDirection: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.books.navigationDirection` schema:
 
 ```swift
-@AssistantEnum(schema: .books.navigationDirection)
+@AppEnum(schema: .books.navigationDirection)
 enum BookNavigationDirection: AppEnum {
     case next
     case previous

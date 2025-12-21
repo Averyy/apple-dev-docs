@@ -5,9 +5,6 @@
 
 An atom that specifies the tween type, which is the data type of the data for the tween operation.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Its parent atom is a `kTweenEntry` atom.

@@ -33,6 +33,7 @@ A metadata group initialized with `items`.
 
 - [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
   Creates a timed metadata group with a sample buffer.
+- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
 
 
 ---

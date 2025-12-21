@@ -11,7 +11,7 @@ An array that contains all of the map’s overlays.
 ## Declaration
 
 ```swift
-attribute mapkit.Overlay[] overlays;
+overlays?: Overlay[];
 ```
 
 #### Discussion

@@ -3,13 +3,13 @@
 **Framework**: EnergyKit  
 **Kind**: struct
 
-A struct that describes the cleanliness of the grid’s energy or duration data.
+A structure that describes the environmental impact of grid electricity during specific time periods.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.1+
+- iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.1+
 
 ## Declaration
 
@@ -17,25 +17,31 @@ A struct that describes the cleanliness of the grid’s energy or duration data.
 struct GridCleanliness
 ```
 
+#### Overview
+
+The [`ElectricityInsightRecord`](electricityinsightrecord.md) structure’s [`dataByGridCleanliness`](electricityinsightrecord/databygridcleanliness.md) property returns electricity usage by the categories that this structure defines.
+
+The type of electricity usage that this structure stores depends on the generic type parameter of a given [`ElectricityInsightMeasure`](electricityinsightmeasure.md) instance. If the generic type is:
+
 ## Topics
 
 ### Initializing the grid data
-- [init(clean: Measure?, reduce: Measure?, avoid: Measure?, unknown: Measure?)](electricityinsightrecord/gridcleanliness/init(clean:reduce:avoid:unknown:).md)
-  Creates an instance of the grid cleanliness data.
-### Getting the grid cleanliness information
+- [init(cleaner: Measure?, lessClean: Measure?, avoid: Measure?, unknown: Measure?)](electricityinsightrecord/gridcleanliness/init(cleaner:lessclean:avoid:unknown:).md)
+  Initializes the collection of grid cleanliness data.
+### Getting grid cleanliness information
+- [var cleaner: Measure?](electricityinsightrecord/gridcleanliness/cleaner.md)
+  A category for electricity usage during the cleanest grid periods.
+- [var lessClean: Measure?](electricityinsightrecord/gridcleanliness/lessclean.md)
+  A category for electricity usage during less-clean grid periods.
 - [var avoid: Measure?](electricityinsightrecord/gridcleanliness/avoid.md)
-  The duration of energy or runtime data that can’t be reduced.
-- [var clean: Measure?](electricityinsightrecord/gridcleanliness/clean.md)
-  The duration of energy or runtime data that’s cleaner.
-- [var reduce: Measure?](electricityinsightrecord/gridcleanliness/reduce.md)
-  The duration of energy or runtime data that can be reduced.
+  A category for electricity usage during periods that the framework suggests a person avoid.
 - [var unknown: Measure?](electricityinsightrecord/gridcleanliness/unknown.md)
-  The unknown duration of energy or runtime data.
+  A category of electricity usage when grid cleanliness information is unavailable.
 
 ## See Also
 
 - [var dataByGridCleanliness: ElectricityInsightRecord<Measure>.GridCleanliness?](electricityinsightrecord/databygridcleanliness.md)
-  The electrical energy consumed or generated, or the runtime duration broken down by levels of cleanliness.
+  Energy consumption or production, or device operational runtime categorized by the cleanliness of the grid electricity.
 
 
 ---

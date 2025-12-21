@@ -1,4 +1,4 @@
-# Tailor Your Apps for Apple GPUs and Tile-Based Deferred Rendering
+# Tailor your apps for Apple GPUs and tile-based deferred rendering
 
 **Framework**: Metal
 
@@ -14,7 +14,7 @@ Starting with A11, Apple-designed GPUs deliver several features that significant
 
 Your app can draw more complicated scenes on a TBDR GPU because it significantly improves performance over traditional, immediate-mode (IM) GPUs by saving time, energy, and memory bandwidth. For example, an IM GPU fully processes primitives, such as lines and triangles, regardless of whether or not they’re visible in the rendering.
 
-A TBDR GPU avoids doing unnecessary work by processing all of the geometry of a render pass at the same time and shading only the visible primitives. The GPU splits the work into tiles so that it can separately and simultaneously process all the geometry that intersects each tile and discard any occluded (or concealed) primitives. For each tile, the GPU then generates fragments (or potential pixels) from the remaining, visible primitives, processes them with a fragment shader, and writes them into . Tile memory is fast, temporary storage that resides on the GPU itself. After the GPU finishes rendering each tile into tile memory, it writes the final result to device memory.
+A TBDR GPU avoids doing unnecessary work by processing all of the geometry of a render pass at the same time and shading only the visible primitives. The GPU splits the work into tiles so it can separately and simultaneously process all the geometry that intersects each tile and discard any occluded (or concealed) primitives. For each tile, the GPU then generates fragments (or potential pixels) from the remaining, visible primitives, processes them with a fragment shader, and writes them into . Tile memory is fast, temporary storage that resides on the GPU itself. After the GPU finishes rendering each tile into tile memory, it writes the final result to device memory.
 
 Tile memory is an important component to TBDR because it saves time and energy by avoiding accessing device memory as much as possible. A fragment shader core’s access to tile memory has important advantages over the GPU’s access to device memory, including the following:
 
@@ -54,9 +54,9 @@ Apps that use tiles shaders can avoid storing intermediate results out to device
 
 ##### Sequence Operations with Raster Order Groups
 
-Your apps can precisely control the order of parallel fragment shader threads that access the same pixel coordinates with . Raster order groups offer ordered memory access from fragment shaders and simplify rendering techniques, such as order-independent transparency, dual-layer geometry buffers, and voxelization.
+Your apps can precisely control the order of parallel fragment shader threads that access the same pixel coordinates with . Raster order groups offer ordered memory operations from fragment shaders and simplify rendering techniques, such as order-independent transparency, dual-layer geometry buffers, and voxelization.
 
-Metal guarantees the GPU blends in draw call order, which gives the illusion that the GPU renders the scene sequentially. For example, here’s a scene that contains two overlapping triangles. The blue triangle partially obscures the green triangle behind it.
+Metal guarantees the GPU blends in draw call order, giving the illusion that the GPU renders the scene sequentially. For example, here’s a scene that contains two overlapping triangles. The blue triangle partially obscures the green triangle behind it.
 
 ![An illustration that shows two overlapping triangles of the same size. Below the triangles are two fragment shader timelines that mostly overlap. The first fragment shader represents the back triangle and starts just before the front triangle’s shader. The front shader’s blending stage has to wait for the back shader’s blending stage to finish.](https://docs-assets.developer.apple.com/published/346256f6ba5c4276e30f2be74f337a31/media-4008944%402x.png)
 
@@ -70,27 +70,27 @@ To implement raster order groups, annotate pointers to memory with an attribute 
 
 ![An illustration that shows the same two overlapping triangles from the previous figure. The shader timelines below the triangles show that the front triangle’s shader is waits before reading from memory until the back triangle’s shader is done writing to memory.](https://docs-assets.developer.apple.com/published/8c671d0fa5ae1fee1279211851328188/media-4008943%402x.png)
 
-Metal on recent Apple GPUs extends raster order groups with additional capabilities. They allow you to synchronize individual channels of an imageblock and threadgroup memory. You can also create multiple order groups, which give you finer-grained synchronization and minimize how often your threads wait for access. For example, these raster order groups can improve the performance of the  technique — a popular lighting technique that’s not related to TBDR. Traditionally, deferred shading requires two phases:
+Metal on recent Apple GPUs extends raster order groups with additional capabilities. They allow you to synchronize individual channels of an imageblock and threadgroup memory. You can also create multiple order groups, which give you finer-grained synchronization and minimize how often your threads wait for access. For example, these raster order groups can improve the performance of the  technique — a popular lighting technique that’s not related to TBDR. Traditionally, deferred shading requires two phases:
 
-1. Fill a geometry buffer (G-buffer) and produce multiple textures.
+1. Fill a geometry buffer (or ) and produce multiple textures.
 2. Render light volumes by calculating shading results with those textures.
 
 ![A flow diagram that starts with Phase one that fills a geometry buffer, which consists of three textures. Those textures then flow into Phase two that produces a rendering of the shaded scene.](https://docs-assets.developer.apple.com/published/09a07b0d5d8537f9092f530db983fb4e/media-4008942%402x.png)
 
-Deferred sharing is memory bandwidth intensive because the shaders write those textures to device memory in the first phase and then read them back in the second phase. You can eliminate the need for the intermediate textures by using multiple order groups to coalesce both render phases into one. To do that, keep the G-buffer in tile-sized chunks so they can remain in local imageblock memory.
+Deferred shading is memory bandwidth intensive because the shaders write those textures to device memory in the first phase then read them back in the second. You can eliminate the need for the intermediate textures by using multiple order groups to coalesce both render phases into one. To do that, keep the geometry buffer in tile-sized chunks so they can remain in local imageblock memory.
 
-On a traditional GPU, a thread responsible for a secondary light must wait for access until prior threads complete before it can begin. This wait forces the threads to run serially, even if the accesses don’t conflict with each other.
+On a traditional GPU, a thread responsible for a secondary light need to wait for access to begin until the previous threads complete. This wait forces the threads to run serially, even if the memory operations don’t conflict with each other.
 
-![A timeline diagram for two lights in the scene. The first light immediately reads the g-buffer, shades the scene, and writes its results. The second light has the same steps but has to wait until the first light to finish writing to memory before it can read the g-buffer.](https://docs-assets.developer.apple.com/published/c6238473bc2a91e2307997190cfb3000/media-4008945%402x.png)
+![A timeline diagram for two lights in the scene. The first light immediately reads the geometry buffer, shades the scene, and writes its results. The second light has the same steps but has to wait until the first light finishes writing to memory before it can read the geometry buffer.](https://docs-assets.developer.apple.com/published/c6238473bc2a91e2307997190cfb3000/media-4008945%402x.png)
 
 You can use multiple order groups to run the nonconflicting reads concurrently by:
 
-1. Adding the three G-buffer fields — albedo, normal, and depth — to the first group
+1. Adding the three geometry buffer fields — albedo, normal, and depth — to the first group
 2. Adding the accumulated lighting result to the second group
 
 Apple GPUs can order the two groups separately so that outstanding writes into the second group don’t impede the reads from the first group.
 
-![A timeline diagram for two lights in the scene. Both lights immediately read the g-buffer and shade the scene in parallel. The first light writes to group one immediately after its shading phase, while the second light waits for the first light to finish writing, before it also writes to group one.](https://docs-assets.developer.apple.com/published/aee27303410135d9c66e0f70e4f09e32/media-4008939%402x.png)
+![A timeline diagram for two lights in the scene. Both lights immediately read the geometry buffer and shade the scene in parallel. The first light writes to group one immediately after its shading phase, while the second light waits for the first light to finish writing, before it also writes to group one.](https://docs-assets.developer.apple.com/published/aee27303410135d9c66e0f70e4f09e32/media-4008939%402x.png)
 
 The two threads synchronize at the end of execution to accumulate the lights.
 
@@ -106,7 +106,7 @@ However, 4x MSAA smooths the appearance of the jagged edges by sampling each pix
 
 ![A diagram that shows a triangle that covers multiple pixels. Each pixel has four sample positions within its area. The triangle covers all four sample positions in some triangles, and only one, two, or three samples in others. The more samples the triangle covers, the more the shade of that pixel matches the triangle’s color.](https://docs-assets.developer.apple.com/published/c25369a2a2cc33f234f181f8049443db/media-4008947%402x.png)
 
-The A-Series GPUs have an efficient MSAA implementation. The hardware tracks whether each pixel contains a primitive’s edge so that it runs the per-sample blending only when necessary. If another primitive covers all the samples within in a pixel, the GPU blends only once for the entire pixel.
+Apple GPUs have an efficient MSAA implementation. The hardware tracks whether each pixel contains a primitive’s edge so it runs the per-sample blending only when necessary. If another primitive covers the samples within a pixel, the GPU blends only once for the entire pixel.
 
 An Apple GPU tracks the number of unique samples (or colors) for each pixel and updates that data as it renders new primitives. For example, consider a pixel that contains the edges of two overlapping triangles, and the sample positions represent three unique colors.
 

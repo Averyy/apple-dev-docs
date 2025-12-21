@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Set the clockSource property.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

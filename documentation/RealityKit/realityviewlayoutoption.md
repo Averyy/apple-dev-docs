@@ -6,17 +6,36 @@
 Options that specify the frame sizing and content alignment option for `RealityView`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 struct RealityViewLayoutOption
+```
+
+#### Overview
+
+Pass in a `RealityViewLayoutOption` when using the `RealityView/realityViewLayoutBehavior(_:)->View` modifier:
+
+```swift
+struct ModelWrapperView: View {
+    let modelName: String
+    var body: some View {
+        RealityView { content in
+            let model = try? await Entity(named: modelName)
+            if let model {
+                content.add(model)
+            }
+        }
+        .realityViewLayoutBehavior(.fixedSize)
+    }
+}
 ```
 
 ## Topics

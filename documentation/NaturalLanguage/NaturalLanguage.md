@@ -28,7 +28,7 @@ Use this framework to perform tasks like:
 - , deducing a word’s stem based on its morphological analysis.
 - , identifying tokens as names of people, places, or organizations.
 
-You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model) and [`Creating a word tagger model`](creating-a-word-tagger-model.md).
+You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model) and doc:creating-a-word-tagger-model.
 
 ## Topics
 
@@ -66,7 +66,7 @@ You can also use this framework with Create ML to train and deploy custom natura
 ### Natural language models
 - [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 - [class NLModel](nlmodel.md)
   A custom model trained to classify or tag natural language text.

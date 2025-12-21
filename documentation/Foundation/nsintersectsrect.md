@@ -17,7 +17,7 @@ func NSIntersectsRect(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aRect` intersects `bRect`, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Returns [`false`](https://developer.apple.com/documentation/swift/false) if either `aRect` or `bRect` has a width or height that is 0.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aRect` intersects `bRect`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Returns [`false`](https://developer.apple.com/documentation/Swift/false) if either `aRect` or `bRect` has a width or height that is 0.
 
 ## See Also
 

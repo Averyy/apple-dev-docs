@@ -68,8 +68,11 @@ A scale animation draws attention to a symbol by changing the symbol’s scale i
 - [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [struct BreatheSymbolEffect](breathesymboleffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [struct RotateSymbolEffect](rotatesymboleffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [struct WiggleSymbolEffect](wigglesymboleffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

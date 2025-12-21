@@ -18,15 +18,15 @@ var useApplicationAudioSession: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) causes the movie player to use a system-supplied audio session with a non-mixable playback category.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) causes the movie player to use a system-supplied audio session with a non-mixable playback category.
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the movie player shares the app’s audio session. This give you control over how the movie player content interacts with your audio and with audio from other apps, such as the iPod. For important guidance on using this feature, see [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875) in [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the movie player shares the app’s audio session. This give you control over how the movie player content interacts with your audio and with audio from other apps, such as the iPod. For important guidance on using this feature, see [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875) in [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
 
 Changing the value of this property does not affect the currently playing movie. For the new setting to take effect, you must stop playback and then start it again.
 
 ##### Special Considerations
 
-In iOS 3.1 and earlier, a movie player always uses a system-supplied audio session. To obtain that same behavior in iOS 3.2 and newer, you must set this property’s value to [`false`](https://developer.apple.com/documentation/swift/false).
+In iOS 3.1 and earlier, a movie player always uses a system-supplied audio session. To obtain that same behavior in iOS 3.2 and newer, you must set this property’s value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

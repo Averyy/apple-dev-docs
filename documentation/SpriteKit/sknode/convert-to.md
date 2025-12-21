@@ -17,14 +17,13 @@ Converts a point in this node’s coordinate system to the coordinate system of 
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: CGPoint, to node: SKNode) -> CGPoint
 ```
 
 ## Mentions
 
-- [Converting Coordinate Spaces](converting-coordinate-spaces.md)
 - [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
+- [Converting Coordinate Spaces](converting-coordinate-spaces.md)
 
 #### Return Value
 

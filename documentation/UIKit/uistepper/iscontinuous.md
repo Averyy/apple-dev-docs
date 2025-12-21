@@ -20,9 +20,9 @@ var isContinuous: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the stepper sends value change events immediately as the value changes during user interaction. If [`false`](https://developer.apple.com/documentation/swift/false), the stepper sends a value change event after user interaction ends.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the stepper sends value change events immediately as the value changes during user interaction. If [`false`](https://developer.apple.com/documentation/Swift/false), the stepper sends a value change event after user interaction ends.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

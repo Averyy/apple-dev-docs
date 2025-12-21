@@ -15,10 +15,6 @@ Perform element-wise floating-point to integer and integer to floating-point con
   Converts single-precision values to double-precision values.
 - [static func convertElements<U, V>(of: U, to: inout V)](vdsp/convertelements(of:to:)-698ye.md)
   Converts double-precision values to single-precision values.
-- [vDSP_vspdp](vdsp_vspdp.md)
-  Converts a single-precision vector to a double-precision vector.
-- [vDSP_vdpsp](vdsp_vdpsp.md)
-  Converts a double-precision vector to a single-precision vector.
 ### Conversion between floating-point and integer types
 - [Integer to single-precision floating-point conversion](integer-to-single-precision-floating-point-conversion.md)
   Perform element-wise integer to single-precision floating-point conversion.

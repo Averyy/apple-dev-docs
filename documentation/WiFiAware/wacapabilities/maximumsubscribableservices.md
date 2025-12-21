@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: property
 
-The maximum number of unique services to which your app can simultaneously subscribe.
+The maximum number of unique services your app can simultaneously subscribe to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

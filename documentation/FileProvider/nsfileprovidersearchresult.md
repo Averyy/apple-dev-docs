@@ -6,7 +6,7 @@
 A protocol that defines properties of a search result.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

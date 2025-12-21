@@ -29,9 +29,6 @@ A case-sensitive volume is a volume that treats upper and lower case characters 
   The volume isn’t case sensitive, but supports preserving the case of file and directory names.
 ### Initializers
 - [init?(rawValue: Int)](fsvolume/caseformat/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsvolume/caseformat/equatable-implementations.md)
-- [RawRepresentable Implementations](fsvolume/caseformat/rawrepresentable-implementations.md)
 
 ## Relationships
 

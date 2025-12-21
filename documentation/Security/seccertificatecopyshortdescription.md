@@ -16,7 +16,7 @@ func SecCertificateCopyShortDescription(_ alloc: CFAllocator?, _ certificate: Se
 
 #### Return Value
 
-A string object containing the short description, or `NULL` if an error occurred. In Objective-C, free this object with [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) when you are done with it.
+A string object containing the short description, or `NULL` if an error occurred. In Objective-C, free this object with [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
 
 #### Discussion
 

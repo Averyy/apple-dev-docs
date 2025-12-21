@@ -6,7 +6,7 @@
 The rotation alignment indicates how the equipment’s orientation should be automatically aligned during the course of the interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

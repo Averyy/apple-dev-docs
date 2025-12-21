@@ -6,13 +6,12 @@
 A structure that defines the configuration of the Liquid Glass material.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -26,7 +25,7 @@ struct Glass
 
 #### Overview
 
-You provide instances of a variant of Liquid Glass to the [`glassEffect(_:in:isEnabled:)`](view/glasseffect(_:in:isenabled:).md) view modifier:
+You provide instances of a variant of Liquid Glass to the [`glassEffect(_:in:)`](view/glasseffect(_:in:).md) view modifier:
 
 ```swift
 Text("Hello, World!")
@@ -45,6 +44,10 @@ You can combine Liquid Glass effects using a [`GlassEffectContainer`](glasseffec
 - [func tint(Color?) -> Glass](glass/tint(_:).md)
   Returns a copy of the structure with a configured tint color.
 ### Type Properties
+- [static var clear: Glass](glass/clear.md)
+  The clear variant of glass.
+- [static var identity: Glass](glass/identity.md)
+  The identity variant of glass. When applied, your content remains unaffected as if no glass effect was applied.
 - [static var regular: Glass](glass/regular.md)
   The regular variant of the Liquid Glass material.
 

@@ -19,11 +19,6 @@ The x position of the sample on the subpixel grid.
 var x: Float
 ```
 
-## See Also
-
-- [var y: Float](mtlsampleposition/y.md)
-  The y position of the sample on the subpixel grid.
-
 
 ---
 

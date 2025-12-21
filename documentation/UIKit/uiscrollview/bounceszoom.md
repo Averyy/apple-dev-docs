@@ -21,7 +21,7 @@ var bouncesZoom: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and zooming exceeds either the maximum or minimum limits for scaling, the scroll view temporarily animates the content scaling just past these limits before returning to them. If this property is [`false`](https://developer.apple.com/documentation/swift/false), zooming stops immediately at one a scaling limits. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and zooming exceeds either the maximum or minimum limits for scaling, the scroll view temporarily animates the content scaling just past these limits before returning to them. If this property is [`false`](https://developer.apple.com/documentation/Swift/false), zooming stops immediately at one a scaling limits. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

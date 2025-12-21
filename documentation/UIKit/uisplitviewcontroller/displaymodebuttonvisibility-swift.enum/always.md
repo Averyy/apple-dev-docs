@@ -20,7 +20,7 @@ case always
 
 #### Discussion
 
-With this behavior, the display mode button can appear even if [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+With this behavior, the display mode button can appear even if [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

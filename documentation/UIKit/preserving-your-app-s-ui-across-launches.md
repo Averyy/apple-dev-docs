@@ -21,9 +21,9 @@ To see an example of state preservation and restoration, see [`Restoring your ap
 
 ##### Enable State Preservation and Restoration for Your App
 
-You opt-in to state preservation and restoration by implementing your app delegate’s [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) and [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) methods. Both methods return a Boolean value indicating whether the associated process should occur, and in most cases you simply return [`true`](https://developer.apple.com/documentation/swift/true). However, you can return [`false`](https://developer.apple.com/documentation/swift/false) at times when restoring your app’s interface might not be appropriate.
+You opt-in to state preservation and restoration by implementing your app delegate’s [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) and [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) methods. Both methods return a Boolean value indicating whether the associated process should occur, and in most cases you simply return [`true`](https://developer.apple.com/documentation/Swift/true). However, you can return [`false`](https://developer.apple.com/documentation/Swift/false) at times when restoring your app’s interface might not be appropriate.
 
-When UIKit calls your [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) method, you can save data in addition to returning [`true`](https://developer.apple.com/documentation/swift/true). You might save data that you intend to use during the restoration process. For example, the following code shows an example that saves the app’s current version number. At restoration time, the [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) method checks the version number in the archive and prevents restoration from occurring if it doesn’t match the expected version.
+When UIKit calls your [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) method, you can save data in addition to returning [`true`](https://developer.apple.com/documentation/Swift/true). You might save data that you intend to use during the restoration process. For example, the following code shows an example that saves the app’s current version number. At restoration time, the [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) method checks the version number in the archive and prevents restoration from occurring if it doesn’t match the expected version.
 
 ```swift
 func application(_ application: UIApplication, 
@@ -156,7 +156,7 @@ Defining your view controllers in storyboards is the easiest way to manage state
 
 - [Restoring your app’s state](restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [Restoring Your App’s State with SwiftUI](../swiftui/restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [protocol UIViewControllerRestoration](uiviewcontrollerrestoration.md)
   The methods that objects adopt so that they can act as a restoration class for view controllers during state restoration.

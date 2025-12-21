@@ -24,16 +24,11 @@ enum AudioPreprocessingError
 ### Analyzing the error
 - [case incompatibleTargetFormatForConversion(inputFormat: AVAudioFormat, targetFormat: AVAudioFormat)](audiopreprocessingerror/incompatibletargetformatforconversion(inputformat:targetformat:).md)
   An error that indicates that the input and output formats are incompatible for creating an audio converter.
-- [var errorDescription: String?](audiopreprocessingerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (AudioPreprocessingError, AudioPreprocessingError) -> Bool](audiopreprocessingerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](audiopreprocessingerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](audiopreprocessingerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](audiopreprocessingerror/equatable-implementations.md)
-- [Error Implementations](audiopreprocessingerror/error-implementations.md)
-- [LocalizedError Implementations](audiopreprocessingerror/localizederror-implementations.md)
 
 ## Relationships
 

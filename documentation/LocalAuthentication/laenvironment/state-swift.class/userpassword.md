@@ -19,7 +19,9 @@ var userPassword: LAEnvironment.MechanismUserPassword? { get }
 
 #### Discussion
 
-@C nil if user password or passcode is not supported by this device.
+Information about local user password (on macOS) or passcode (on embedded platforms).
+
+@c nil if user password or passcode is not supported by this device.
 
 
 ---

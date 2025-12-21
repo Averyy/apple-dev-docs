@@ -17,11 +17,11 @@ func run() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation was successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The operation runs to completion in the current thread, blocking the application. A separate thread is not spawned, even if [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) is [`true`](https://developer.apple.com/documentation/swift/true). Use [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) to use document-modal sheets and to allow a separate thread to perform the operation.
+The operation runs to completion in the current thread, blocking the application. A separate thread is not spawned, even if [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) is [`true`](https://developer.apple.com/documentation/Swift/true). Use [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) to use document-modal sheets and to allow a separate thread to perform the operation.
 
 ## See Also
 

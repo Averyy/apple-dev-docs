@@ -21,12 +21,12 @@ class AVAssetDownloadURLSession
 
 ## Topics
 
-### Creating a Download Session
+### Creating a download session
 - [init(configuration: URLSessionConfiguration, assetDownloadDelegate: (any AVAssetDownloadDelegate)?, delegateQueue: OperationQueue?)](avassetdownloadurlsession/init(configuration:assetdownloaddelegate:delegatequeue:).md)
   Creates a URL session to download assets.
 - [protocol AVAssetDownloadDelegate](avassetdownloaddelegate.md)
   A protocol that defines the methods to implement to respond to asset-download events.
-### Creating Download Tasks
+### Creating download tasks
 - [func makeAssetDownloadTask(downloadConfiguration: AVAssetDownloadConfiguration) -> AVAssetDownloadTask](avassetdownloadurlsession/makeassetdownloadtask(downloadconfiguration:).md)
   Creates a download task that uses the specified configuration.
 - [class AVAssetDownloadConfiguration](avassetdownloadconfiguration.md)
@@ -37,7 +37,7 @@ class AVAssetDownloadURLSession
   Creates a download task to download the asset and media selections.
 - [func makeAssetDownloadTask(asset: AVURLAsset, destinationURL: URL, options: [String : Any]?) -> AVAssetDownloadTask?](avassetdownloadurlsession/makeassetdownloadtask(asset:destinationurl:options:).md)
   Creates a download task to download the asset to the indicated location.
-### Download Option Keys
+### Download option keys
 - [let AVAssetDownloadTaskMinimumRequiredMediaBitrateKey: String](avassetdownloadtaskminimumrequiredmediabitratekey.md)
   A key that indicates the minimum bit rate of the variant to download.
 - [let AVAssetDownloadTaskMinimumRequiredPresentationSizeKey: String](avassetdownloadtaskminimumrequiredpresentationsizekey.md)
@@ -67,7 +67,7 @@ class AVAssetDownloadURLSession
 
 ## See Also
 
-- [Using AVFoundation to play and persist HTTP Live Streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
+- [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadTask](avassetdownloadtask.md)
   A session used to download HTTP Live Streaming assets.

@@ -6,7 +6,14 @@
 Sends the bootstrap token to the server.
 
 **Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
 - macOS 10.15+
+- visionOS 26.0+
+
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -14,15 +21,15 @@ A server that supports this request needs to include a `com.apple.mdm.bootstrapt
 
 This request changes or clears a device’s bootstrap token data that the server stores.
 
-It requires a device using Automated Device Enrollment, or a supervised device in macOS 11 and later.
+Requires a device enrolled using Automated Device Enrollment.
 
 ##### Check in Availability
 
 |  |  |
 | --- | --- |
-| Device channel | macOS |
+| Device channel | iOS, macOS, visionOS |
 | User channel | NA |
-| Requires supervision | macOS |
+| Requires supervision | iOS, macOS, visionOS |
 | Allowed in user enrollment | NA |
 
 ## Topics

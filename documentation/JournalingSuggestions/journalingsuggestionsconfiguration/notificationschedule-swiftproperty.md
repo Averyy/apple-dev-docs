@@ -3,10 +3,10 @@
 **Framework**: Journaling Suggestions  
 **Kind**: property
 
-The notification schedule configured by the person using your app.
+The schedule for Journaling Suggestion notifications, as it resides in Settings.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -14,10 +14,14 @@ The notification schedule configured by the person using your app.
 var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule? { get }
 ```
 
+## Mentions
+
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+
 ## See Also
 
 - [JournalingSuggestionsConfiguration.NotificationSchedule](journalingsuggestionsconfiguration/notificationschedule-swift.enum.md)
-  The schedule configuration of Journaling Suggestions notifications.
+  Possible values for the Journaling Suggestions notifications setting.
 
 
 ---

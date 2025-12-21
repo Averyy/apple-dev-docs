@@ -30,14 +30,6 @@ case none
   A long length date or time format.
 - [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
   A fully spelled out date or time format.
-- [DateIntervalFormatter.Style.short](dateintervalformatter/style/short.md)
-  An abbreviated date or time format.
-- [DateIntervalFormatter.Style.medium](dateintervalformatter/style/medium.md)
-  A medium length date or time format.
-- [DateIntervalFormatter.Style.long](dateintervalformatter/style/long.md)
-  A long length date or time format.
-- [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
-  A fully spelled out date or time format.
 
 
 ---

@@ -21,13 +21,13 @@ var shouldAutomaticallyForwardAppearanceMethods: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if appearance methods are forwarded or [`false`](https://developer.apple.com/documentation/swift/false) if they are not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if appearance methods are forwarded or [`false`](https://developer.apple.com/documentation/Swift/false) if they are not.
 
 #### Discussion
 
 This method is called to determine whether to automatically forward appearance-related containment callbacks to child view controllers.
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true). Subclasses of the [`UIViewController`](uiviewcontroller.md) class that implement containment logic may override this method to control how these methods are forwarded. If you override this method and return [`false`](https://developer.apple.com/documentation/swift/false), you are responsible for telling the child when its views are going to appear or disappear. You do this by calling the child view controller’s [`beginAppearanceTransition(_:animated:)`](uiviewcontroller/beginappearancetransition(_:animated:).md) and [`endAppearanceTransition()`](uiviewcontroller/endappearancetransition().md) methods.
+The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true). Subclasses of the [`UIViewController`](uiviewcontroller.md) class that implement containment logic may override this method to control how these methods are forwarded. If you override this method and return [`false`](https://developer.apple.com/documentation/Swift/false), you are responsible for telling the child when its views are going to appear or disappear. You do this by calling the child view controller’s [`beginAppearanceTransition(_:animated:)`](uiviewcontroller/beginappearancetransition(_:animated:).md) and [`endAppearanceTransition()`](uiviewcontroller/endappearancetransition().md) methods.
 
 ## See Also
 

@@ -21,7 +21,7 @@ func chapterMetadataGroups(bestMatchingPreferredLanguages preferredLanguages: [S
 
 ## Mentions
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
 
 #### Return Value
 

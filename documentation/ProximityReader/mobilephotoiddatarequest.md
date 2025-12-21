@@ -6,10 +6,10 @@
 A photo ID request that retrieves elements from the holder and returns the validated document elements.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -31,17 +31,7 @@ struct MobilePhotoIDDataRequest
 ### Handling the response
 - [MobilePhotoIDDataRequest.Response](mobilephotoiddatarequest/response.md)
   A type that contains the response information from a successful photo ID data request.
-### Operators
-- [static func == (MobilePhotoIDDataRequest, MobilePhotoIDDataRequest) -> Bool](mobilephotoiddatarequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilephotoiddatarequest/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilephotoiddatarequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobilephotoiddatarequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobilephotoiddatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
@@ -77,7 +67,7 @@ struct MobilePhotoIDDataRequest
 - [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
   A type that represents a mobile document raw data request.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

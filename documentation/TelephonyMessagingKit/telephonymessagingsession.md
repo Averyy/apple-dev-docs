@@ -6,8 +6,8 @@
 An object that coordinates interaction with the TelephonyMessagingKit framework.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ An object that coordinates interaction with the TelephonyMessagingKit framework.
 ```swift
 final class TelephonyMessagingSession
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -48,14 +52,14 @@ Use the [`shared`](telephonymessagingsession/shared.md) instance provided by thi
 - [class RCSService](rcsservice.md)
   A class that provides an interface for performing RCS operations.
 ### Accessing session properties
-- [let id: UUID](telephonymessagingsession/id-swift.property.md)
+- [let id: UUID](telephonymessagingsession/id.md)
   Identifier for this session.
 ### Handling errors
 - [TelephonyMessagingSession.Error](telephonymessagingsession/error.md)
   An enumeration of errors that can result from operations on a messaging session.
-### Supporting types
-- [TelephonyMessagingSession.ID](telephonymessagingsession/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
+### Instance Properties
+- [var isConfiguredForCarrierMessaging: Bool](telephonymessagingsession/isconfiguredforcarriermessaging.md)
+  A Boolean value that indicates whether this app is configured to perform carrier messaging operations.
 
 ## Relationships
 
@@ -66,6 +70,8 @@ Use the [`shared`](telephonymessagingsession/shared.md) instance provided by thi
 
 ## See Also
 
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+  Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 - [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)
   A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 

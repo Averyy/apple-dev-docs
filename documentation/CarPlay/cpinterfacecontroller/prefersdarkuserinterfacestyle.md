@@ -19,7 +19,7 @@ var prefersDarkUserInterfaceStyle: Bool { get set }
 
 #### Discussion
 
-To adopt the dark user interface style, set this value to [`true`](https://developer.apple.com/documentation/swift/true) before you provide the root template or push any templates. The default value is [`false`](https://developer.apple.com/documentation/swift/false), which allows templates to change between light and dark styles.
+To adopt the dark user interface style, set this value to [`true`](https://developer.apple.com/documentation/Swift/true) before you provide the root template or push any templates. The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which allows templates to change between light and dark styles.
 
 ## See Also
 

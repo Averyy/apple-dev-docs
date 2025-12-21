@@ -29,18 +29,18 @@ Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinator
 
 ## Topics
 
-### Creating a Coordinator
+### Creating a coordinator
 - [init(playbackControlDelegate: any AVPlaybackCoordinatorPlaybackControlDelegate)](avdelegatingplaybackcoordinator/init(playbackcontroldelegate:).md)
   Creates a playback coordinator for a custom playback object.
 - [protocol AVPlaybackCoordinatorPlaybackControlDelegate](avplaybackcoordinatorplaybackcontroldelegate.md)
   A protocol that defines the method to implement to respond to playback commands from the playback coordinator.
-### Identifying Items
+### Identifying items
 - [var currentItemIdentifier: String?](avdelegatingplaybackcoordinator/currentitemidentifier.md)
   An identifier of the current item.
-### Accessing the Delegate
+### Accessing the delegate
 - [var playbackControlDelegate: (any AVPlaybackCoordinatorPlaybackControlDelegate)?](avdelegatingplaybackcoordinator/playbackcontroldelegate.md)
   The delegate object for the playback coordinator.
-### Coordinating State Changes
+### Coordinating state changes
 - [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](avdelegatingplaybackcoordinator/coordinateratechange(to:options:).md)
   Coordinates a rate change across all participants, waiting for others to become ready, if necessary.
 - [func coordinateSeek(to: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions)](avdelegatingplaybackcoordinator/coordinateseek(to:options:).md)
@@ -53,7 +53,7 @@ Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinator
   Constants that define seek options.
 - [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](avdelegatingplaybackcoordinatorratechangeoptions.md)
   Constants that define rate change options.
-### Playback Commands
+### Playback commands
 - [class AVDelegatingPlaybackCoordinatorPlaybackControlCommand](avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
   An abstract superclass for playback commands.
 - [class AVDelegatingPlaybackCoordinatorPlayCommand](avdelegatingplaybackcoordinatorplaycommand.md)
@@ -83,12 +83,13 @@ Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinator
 
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting Coordinated Media Playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [class AVPlaybackCoordinator](avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.
 - [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 
 
 ---

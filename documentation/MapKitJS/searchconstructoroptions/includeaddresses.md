@@ -11,7 +11,7 @@ A Boolean value that indicates whether the search results include addresses.
 ## Declaration
 
 ```swift
-attribute boolean includeAddresses;
+includeAddresses?: boolean;
 ```
 
 #### Discussion
@@ -21,7 +21,7 @@ The default value is `true`.
 ## See Also
 
 - [addressFilter](searchconstructoroptions/addressfilter.md)
-  A filter that lists which address components to include or exclude in search results.
+  An address filter that lists which address components to include or exclude in search results.
 
 
 ---

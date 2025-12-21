@@ -14,10 +14,10 @@ Exports the action classifier as a Core ML model file to the file path.
 func write(toFile path: String, metadata: MLModelMetadata? = nil) throws
 ```
 
-#### Discussion
+## Parameters
 
-- path : The location path in the file system where you want to save the model.
-- metadata: Descriptive information to include with the exported model file.
+- `path`: The location path in the file system where you want to save the model.
+- `metadata`: Descriptive information to include with the exported model file.
 
 ## See Also
 

@@ -23,11 +23,6 @@ init()
 
 After you create a new [`GroupActivityMetadata`](groupactivitymetadata.md) structure, assign values to its properties and deliver it to the system from the [`metadata`](groupactivity/metadata.md) property of your custom [`GroupActivity`](groupactivity.md) type.
 
-## See Also
-
-- [init(from: any Decoder) throws](groupactivitymetadata/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

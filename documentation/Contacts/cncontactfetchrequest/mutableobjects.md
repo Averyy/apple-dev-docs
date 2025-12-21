@@ -21,7 +21,7 @@ var mutableObjects: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the fetch returns [`CNMutableContact`](cnmutablecontact.md) objects; otherwise it returns [`CNContact`](cncontact.md) objects. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the fetch returns [`CNMutableContact`](cnmutablecontact.md) objects; otherwise it returns [`CNContact`](cncontact.md) objects. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -26,11 +26,8 @@ struct Value
 - [init?(rawValue: Int64)](validationcategory/value/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [let rawValue: Int64](validationcategory/value/rawvalue-swift.property.md)
+- [let rawValue: Int64](validationcategory/value/rawvalue.md)
   The corresponding value of the raw type.
-### Type Aliases
-- [ValidationCategory.Value.RawValue](validationcategory/value/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let appStore: ValidationCategory.Value](validationcategory/value/appstore.md)
   Indicates that the code is signed by Apple’s App Store
@@ -46,9 +43,6 @@ struct Value
   Indicates that the code is signed by Apple or allowed by a loaded trustcache.
 - [static let testflight: ValidationCategory.Value](validationcategory/value/testflight.md)
   Indicates that the code is signed by Apple’s TestFlight certificate
-### Default Implementations
-- [Equatable Implementations](validationcategory/value/equatable-implementations.md)
-- [RawRepresentable Implementations](validationcategory/value/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -34,30 +34,11 @@ When you create images programmatically, you can ask the system to create images
 - [static var all: [ImagePlaygroundStyle]](imageplaygroundstyle/all.md)
   An option that allows the creation of images in any style.
 ### Getting the style identifier
-- [let id: String](imageplaygroundstyle/id-swift.property.md)
+- [let id: String](imageplaygroundstyle/id.md)
   A text-based description of the style option.
-### Operators
-- [static func == (ImagePlaygroundStyle, ImagePlaygroundStyle) -> Bool](imageplaygroundstyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](imageplaygroundstyle/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](imageplaygroundstyle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](imageplaygroundstyle/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](imageplaygroundstyle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [ImagePlaygroundStyle.ID](imageplaygroundstyle/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Type Properties
 - [static let externalProvider: ImagePlaygroundStyle](imageplaygroundstyle/externalprovider.md)
   An option that yields images in a style provided by an external provider
-### Default Implementations
-- [Equatable Implementations](imageplaygroundstyle/equatable-implementations.md)
 
 ## Relationships
 

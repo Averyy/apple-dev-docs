@@ -24,7 +24,7 @@ The array must contain [`NSURL`](https://developer.apple.com/documentation/Found
 
 If you set this property, `UIPrintInteractionController` sets the [`printingItem`](uiprintinteractioncontroller/printingitem.md), [`printPageRenderer`](uiprintinteractioncontroller/printpagerenderer.md), and [`printFormatter`](uiprintinteractioncontroller/printformatter.md) properties to `nil`. (Only one of these properties can be set for a print job.)
 
-If this property is set, the printing options do not include the control for selecting a page range, even if the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true). If you want page-range selection, you should use the [`printingItem`](uiprintinteractioncontroller/printingitem.md) property instead.
+If this property is set, the printing options do not include the control for selecting a page range, even if the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true). If you want page-range selection, you should use the [`printingItem`](uiprintinteractioncontroller/printingitem.md) property instead.
 
 ## See Also
 

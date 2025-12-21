@@ -21,9 +21,31 @@ The tip’s unique identifier.
 var id: String { get }
 ```
 
-#### Discussion
+#### Overview
 
-If you don’t provide a value, the system assigns the name of the type that conforms to the `Tip` protocol during initialization.
+> **Note**: More information on custom tip identifiers can be found in WWDC24 Session 10070: [`Customize feature discovery with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10070?time=312).
+
+By default the type name of the `Tip` conforming struct will be used as the tip’s `id`. Specifying a custom `id` allows you to create reusable tips based on their content.
+
+```swift
+struct NewTrailTip: Tip {
+    let newTrail: Trail
+    
+    var id: String {
+        "NewTrailTip-\(newTrail.id)"
+    }
+}
+    
+struct TrailList: View {
+    let newTrail: Trail
+    
+    var body: some View {
+        // Creates a different tip for each new trail.
+        let newTrailTip = NewTrailTip(newTrail)
+        TipView(newTrailTip)
+    }
+}
+```
 
 ## See Also
 

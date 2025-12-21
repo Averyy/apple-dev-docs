@@ -17,7 +17,7 @@ func compileAndReturnError(_ errorInfo: AutoreleasingUnsafeMutablePointer<NSDict
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) for success or if the script was already compiled, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) for success or if the script was already compiled, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

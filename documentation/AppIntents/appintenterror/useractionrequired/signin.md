@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to sign in to continue
+The person needs to sign in to continue.
 
 **Availability**:
 - iOS 18.0+

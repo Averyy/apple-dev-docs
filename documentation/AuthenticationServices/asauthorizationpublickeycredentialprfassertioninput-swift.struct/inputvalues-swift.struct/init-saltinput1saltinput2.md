@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: init
 
+Initializes an input values structure with the given salts.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,11 @@
 ```swift
 init(saltInput1: Data, saltInput2: Data? = nil)
 ```
+
+## Parameters
+
+- `saltInput1`: A salt for the hashing function.
+- `saltInput2`: An optional second salt for the hashing function.
 
 
 ---

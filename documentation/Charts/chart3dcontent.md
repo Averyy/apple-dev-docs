@@ -3,12 +3,14 @@
 **Framework**: Swift Charts  
 **Kind**: protocol
 
+A type that represents the three-dimensional content that you draw on a chart.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -33,6 +35,7 @@
   A value that controls the degree of surface roughness.
 - [func symbol<S>(S) -> some Chart3DContent](chart3dcontent/symbol(_:).md)
 - [func symbolRotation(Rotation3D) -> some Chart3DContent](chart3dcontent/symbolrotation(_:).md)
+  Set the rotation of a 3D symbol.
 - [func symbolSize(CGFloat) -> some Chart3DContent](chart3dcontent/symbolsize(_:).md)
 
 ## Relationships
@@ -43,6 +46,15 @@
 - [RectangleMark](rectanglemark.md)
 - [RuleMark](rulemark.md)
 - [SurfacePlot](surfaceplot.md)
+
+## See Also
+
+- [struct Chart3D](chart3d.md)
+  A SwiftUI view that displays interactive 3D charts and visualizations.
+- [struct Chart3DContentBuilder](chart3dcontentbuilder.md)
+  A result builder that you use to compose the three-dimensional contents of a chart.
+- [struct SurfacePlot](surfaceplot.md)
+  Chart content that represents a mathematical function of two variables using a 3D surface.
 
 
 ---

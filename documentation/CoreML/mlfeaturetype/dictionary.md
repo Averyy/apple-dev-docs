@@ -34,6 +34,8 @@ case dictionary
   The type for string features and feature values.
 - [MLFeatureType.sequence](mlfeaturetype/sequence.md)
   The type for sequence features and feature values.
+- [MLFeatureType.state](mlfeaturetype/state.md)
+  MLState. Represents a model state that may be updated in each inference.
 - [MLFeatureType.invalid](mlfeaturetype/invalid.md)
   The type for invalid feature values.
 

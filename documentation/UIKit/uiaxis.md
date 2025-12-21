@@ -30,10 +30,6 @@ struct UIAxis
 ### Initializers
 - [init(rawValue: UInt)](uiaxis/init(rawvalue:).md)
   Creates an axis with the specified raw value.
-### Default Implementations
-- [Equatable Implementations](uiaxis/equatable-implementations.md)
-- [OptionSet Implementations](uiaxis/optionset-implementations.md)
-- [SetAlgebra Implementations](uiaxis/setalgebra-implementations.md)
 
 ## Relationships
 
@@ -59,8 +55,6 @@ struct UIAxis
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [enum NSRectAlignment](nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
-- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
-  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [UIKit macros](uikit-macros.md)
   Macros that UIKit defines.
 

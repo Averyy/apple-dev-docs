@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An Int containing the number of frames of input latency in the clock.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

@@ -25,8 +25,6 @@ struct ManagedApps
   The type of element this asynchronous sequence produces.
 - [func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator](managedapplibrary/managedapps/makeasynciterator.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](managedapplibrary/managedapps/asyncsequence-implementations.md)
 
 ## Relationships
 

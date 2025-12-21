@@ -16,7 +16,7 @@ optional func isAccessibilityFocused() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this element has the keyboard focus; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if this element has the keyboard focus; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

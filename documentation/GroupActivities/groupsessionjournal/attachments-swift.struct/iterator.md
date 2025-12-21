@@ -19,16 +19,6 @@ The asynchronous iterator that produces a sequence of attachments.
 struct Iterator
 ```
 
-## Topics
-
-### Instance Methods
-- [func next() async -> GroupSessionJournal.Attachments.Element?](groupsessionjournal/attachments-swift.struct/iterator/next.md)
-  Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Type Aliases
-- [GroupSessionJournal.Attachments.Iterator.Element](groupsessionjournal/attachments-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](groupsessionjournal/attachments-swift.struct/iterator/asynciteratorprotocol-implementations.md)
-
 ## Relationships
 
 ### Conforms To

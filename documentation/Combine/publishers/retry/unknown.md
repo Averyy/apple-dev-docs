@@ -1,9 +1,9 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Combine  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two publishers are equivalent.
 
 **Availability**:
 - iOS 13.0+
@@ -17,26 +17,19 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: Publishers.Retry<Upstream>, rhs: Publishers.Retry<Upstream>) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+`true` if the publishers have equal `upstream` and `retries` properties; otherwise `false`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (Publishers.Retry<Upstream>, Publishers.Retry<Upstream>) -> Bool](publishers/retry/==(_:_:).md)
-  Returns a Boolean value that indicates whether two publishers are equivalent.
+- `lhs`: A   publisher to compare for equality.
+- `rhs`: Another   publisher to compare for equality.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/retry/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/retry/==(_:_:))*

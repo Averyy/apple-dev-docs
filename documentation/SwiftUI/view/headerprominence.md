@@ -45,8 +45,6 @@ List {
   The prominence to apply to section headers within a view.
 - [enum Prominence](prominence.md)
   A type indicating the prominence of a view hierarchy.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
-  The default minimum height of a header in a list.
 
 
 ---

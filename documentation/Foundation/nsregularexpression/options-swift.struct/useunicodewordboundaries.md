@@ -34,18 +34,6 @@ static var useUnicodeWordBoundaries: NSRegularExpression.Options { get }
   Allow `^` and `$` to match the start and end of lines.
 - [static var useUnixLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunixlineseparators.md)
   Treat only `\n` as a line separator (otherwise, all standard line separators are used).
-- [static var caseInsensitive: NSRegularExpression.Options](nsregularexpression/options-swift.struct/caseinsensitive.md)
-  Match letters in the pattern independent of case.
-- [static var allowCommentsAndWhitespace: NSRegularExpression.Options](nsregularexpression/options-swift.struct/allowcommentsandwhitespace.md)
-  Ignore whitespace and #-prefixed comments in the pattern.
-- [static var ignoreMetacharacters: NSRegularExpression.Options](nsregularexpression/options-swift.struct/ignoremetacharacters.md)
-  Treat the entire pattern as a literal string.
-- [static var dotMatchesLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md)
-  Allow `.` to match any character, including line separators.
-- [static var anchorsMatchLines: NSRegularExpression.Options](nsregularexpression/options-swift.struct/anchorsmatchlines.md)
-  Allow `^` and `$` to match the start and end of lines.
-- [static var useUnixLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunixlineseparators.md)
-  Treat only `\n` as a line separator (otherwise, all standard line separators are used).
 
 
 ---

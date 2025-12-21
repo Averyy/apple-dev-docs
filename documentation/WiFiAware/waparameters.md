@@ -6,8 +6,8 @@
 Parameters configuring a Wi-Fi Aware data path connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,9 +19,9 @@ struct WAParameters
 
 You can customize Wi-Fi Aware configuration with the parameters passed in the `.wifiAware()` instruction to the `NetworkBrowser` and `NetworkListener`, or via the `.wifiAware:WAParameters?` property on `NWParameters`.
 
-For more information about creating a `NetworkListener`, refer to [`WAPublisherListener.DatapathParameters`](wapublisherlistener/datapathparameters.md).
+For more information about creating a `NetworkListener`, refer to [`WAPublisherListener.DatapathParameters`](wapublisherlistener/datapathparameters.md)
 
-> ❗ **Important**:  Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
+> ❗ **Important**: Each service must have the same [`WAPerformanceMode`](waperformancemode.md) on both the `NetworkBrowser` (subscriber) and `NetworkListener` (publisher) sides of the connection, or the resulting performance behavior is undefined. If not specified, the performance mode defaults to [`WAPerformanceMode.bulk`](waperformancemode/bulk.md) on both sides.
 
 ## Topics
 
@@ -33,7 +33,6 @@ For more information about creating a `NetworkListener`, refer to [`WAPublisherL
 ### Checking the configured performance mode
 - [var performanceMode: WAPerformanceMode](waparameters/performancemode.md)
   The initial performance configuration of the data path when connected.
-### Initializers - generated
 - [init(performanceMode: WAPerformanceMode)](waparameters/init(performancemode:).md)
   Initializes the parameters with defaults.
 
@@ -45,9 +44,10 @@ For more information about creating a `NetworkListener`, refer to [`WAPublisherL
 
 ## See Also
 
-- [final class NWParameters](../Network/NWParameters.md)
+- [class NWParameters](../Network/NWParameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [struct NWParametersBuilder<Top, each P> where Top : NetworkProtocolOptions, repeat each P : NetworkProtocolOptions](../Network/NWParametersBuilder.md)
+- [struct NWParametersBuilder](../Network/NWParametersBuilder.md)
+  An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 
 
 ---

@@ -21,6 +21,8 @@ Pointer to the allocated lock, or zero on failure.
 
 #### Discussion
 
+Allocates and initializes a mutex.
+
 Allocates a mutex in general purpose memory, and initializes it.
 
 ## See Also

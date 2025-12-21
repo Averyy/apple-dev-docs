@@ -16,7 +16,7 @@ func obtain(withRight rightName: AuthorizationString!, flags: AuthorizationFlags
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if operation completes successfully.
+[`true`](https://developer.apple.com/documentation/Swift/true) if operation completes successfully.
 
 #### Discussion
 

@@ -1,34 +1,58 @@
-# !=(_:_:)
+# RPRecordingErrorCode.unknown
 
 **Framework**: ReplayKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+Error cause unknown.
 
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
+- Mac Catalyst 13.1+
 - macOS 11.0+
-- tvOS 10.0+
+- tvOS 9.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [RPRecordingErrorCode.activePhoneCall](rprecordingerrorcode/activephonecall.md)
+  Unable to record due to an active phone call.
+- [RPRecordingErrorCode.attemptToStartInRecordingState](rprecordingerrorcode/attempttostartinrecordingstate.md)
+  Attempted to start a recording that’s already in a recording state.
+- [RPRecordingErrorCode.attemptToStopNonRecording](rprecordingerrorcode/attempttostopnonrecording.md)
+  Attempted to stop a recording that’s not in a recording state.
+- [RPRecordingErrorCode.broadcastInvalidSession](rprecordingerrorcode/broadcastinvalidsession.md)
+  Attempted to start a broadcast without a prior session.
+- [RPRecordingErrorCode.broadcastSetupFailed](rprecordingerrorcode/broadcastsetupfailed.md)
+  The broadcast set up failed.
+- [RPRecordingErrorCode.carPlay](rprecordingerrorcode/carplay.md)
+  Failed to start recording because CarPlay is active.
+- [RPRecordingErrorCode.codeSuccessful](rprecordingerrorcode/codesuccessful.md)
+  Successfully saved the recording to the Camera Roll.
+- [RPRecordingErrorCode.contentResize](rprecordingerrorcode/contentresize.md)
+  Recording interrupted by multitasking and content resizing.
+- [RPRecordingErrorCode.disabled](rprecordingerrorcode/disabled.md)
+  Recording disabled via parental controls.
+- [RPRecordingErrorCode.entitlements](rprecordingerrorcode/entitlements.md)
+  Recording failed due to missing entitlements.
+- [RPRecordingErrorCode.failed](rprecordingerrorcode/failed.md)
+  Recording error occurred.
+- [RPRecordingErrorCode.failedApplicationConnectionInterrupted](rprecordingerrorcode/failedapplicationconnectioninterrupted.md)
+  The recording failed because the app’s connection was interrupted.
+- [RPRecordingErrorCode.failedApplicationConnectionInvalid](rprecordingerrorcode/failedapplicationconnectioninvalid.md)
+  The recording failed because the app’s connection is invalid.
+- [RPRecordingErrorCode.failedAssetWriterExportCanceled](rprecordingerrorcode/failedassetwriterexportcanceled.md)
+  The recording failed because the user canceled the export.
+- [RPRecordingErrorCode.failedAssetWriterExportFailed](rprecordingerrorcode/failedassetwriterexportfailed.md)
+  The recording failed due to an error exporting the movie.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/unknown)*

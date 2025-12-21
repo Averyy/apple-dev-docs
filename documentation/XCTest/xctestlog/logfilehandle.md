@@ -5,9 +5,6 @@
 
 An object to interact with the test log file.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

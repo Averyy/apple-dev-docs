@@ -4,6 +4,13 @@
 **Kind**: dictionary
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 
@@ -15,7 +22,9 @@ object StatusReport
 
 ## Mentions
 
+- [Installing packages](installing-packages.md)
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
+- [Processing status for managed apps](processing-status-for-managed-apps.md)
 
 ## Topics
 
@@ -44,7 +53,7 @@ object StatusReport
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s rapid security response identifier.
+  A status report of the device’s operating system’s Background Security Improvement identifier.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
   A status report of the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)

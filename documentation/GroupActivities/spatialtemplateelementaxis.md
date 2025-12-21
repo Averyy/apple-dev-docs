@@ -20,22 +20,11 @@ When configuring the elements of a spatial template, you can specify directions 
 
 ## Topics
 
-### Operators
-- [static func == (SpatialTemplateElementAxis, SpatialTemplateElementAxis) -> Bool](spatialtemplateelementaxis/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](spatialtemplateelementaxis/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](spatialtemplateelementaxis/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let x: SpatialTemplateElementAxis](spatialtemplateelementaxis/x.md)
   The x-axis of alignment.
 - [static let z: SpatialTemplateElementAxis](spatialtemplateelementaxis/z.md)
   The z-axis of alignment.
-### Default Implementations
-- [Equatable Implementations](spatialtemplateelementaxis/equatable-implementations.md)
 
 ## Relationships
 

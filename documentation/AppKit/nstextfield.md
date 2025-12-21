@@ -17,9 +17,9 @@ class NSTextField
 
 ## Mentions
 
+- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
 - [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
 - [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Overview
 

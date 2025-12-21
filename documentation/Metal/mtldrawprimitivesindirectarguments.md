@@ -21,7 +21,7 @@ struct MTLDrawPrimitivesIndirectArguments
 
 ## Mentions
 
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
 
 #### Overview
 
@@ -29,7 +29,7 @@ See also the [`drawPrimitives(type:indirectBuffer:indirectBufferOffset:)`](mtlre
 
 ## Topics
 
-### Fields
+### Initializers
 - [init()](mtldrawprimitivesindirectarguments/init.md)
   Returns a new data layout for drawing primitives via indirect buffer calls.
 - [init(vertexCount: UInt32, instanceCount: UInt32, vertexStart: UInt32, baseInstance: UInt32)](mtldrawprimitivesindirectarguments/init(vertexcount:instancecount:vertexstart:baseinstance:).md)
@@ -41,12 +41,8 @@ See also the [`drawPrimitives(type:indirectBuffer:indirectBufferOffset:)`](mtlre
   The number of instances to draw.
 - [var vertexCount: UInt32](mtldrawprimitivesindirectarguments/vertexcount.md)
   The number of vertices to draw.
-- [var instanceCount: UInt32](mtldrawprimitivesindirectarguments/instancecount.md)
-  The number of instances to draw.
 - [var vertexStart: UInt32](mtldrawprimitivesindirectarguments/vertexstart.md)
   The first vertex to draw.
-- [var baseInstance: UInt32](mtldrawprimitivesindirectarguments/baseinstance.md)
-  The first instance to draw.
 
 ## Relationships
 

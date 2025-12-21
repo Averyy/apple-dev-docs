@@ -17,7 +17,7 @@ var showsResizeIndicator: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window’s resize indicator is visible; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This property does not affect whether the window is resizable.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window’s resize indicator is visible; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). This property does not affect whether the window is resizable.
 
 ## See Also
 

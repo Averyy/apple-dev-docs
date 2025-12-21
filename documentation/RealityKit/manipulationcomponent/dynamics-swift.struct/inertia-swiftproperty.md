@@ -6,7 +6,7 @@
 How snappy the object’s movement is in response to input.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

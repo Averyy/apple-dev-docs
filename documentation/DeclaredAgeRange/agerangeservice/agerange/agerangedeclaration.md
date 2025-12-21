@@ -3,13 +3,13 @@
 **Framework**: Declared Age Range  
 **Kind**: property
 
-The sharer of the age range.
+Information about how the person set their age range.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,16 +19,18 @@ var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?
 
 #### Discussion
 
-For more information, refer to  [`AgeRangeService.AgeRangeDeclaration`](agerangeservice/agerangedeclaration.md).
+This property provides context about the reliability and source of the age information. Use this information to determine the appropriate level of content restriction required for your app’s features.
+
+For more information about declaration types, refer to [`AgeRangeService.AgeRangeDeclaration`](agerangeservice/agerangedeclaration.md).
 
 ## See Also
 
 - [var lowerBound: Int?](agerangeservice/agerange/lowerbound.md)
-  The lower limit of the person’s age range.
+  The minimum age in the person’s declared age range.
 - [var upperBound: Int?](agerangeservice/agerange/upperbound.md)
-  The upper limit of the person’s age range.
+  The maximum age in the person’s declared age range.
 - [var activeParentalControls: AgeRangeService.ParentalControls](agerangeservice/agerange/activeparentalcontrols.md)
-  The parental controls turned on as a part of the response.
+  The parental controls that are active on the device.
 
 
 ---

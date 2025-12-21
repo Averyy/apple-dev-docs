@@ -3,9 +3,11 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Creates a sample buffer containing a spatial audio timed metadata sample computed from all analyzed audio buffers, and resets the analyzer to its initial state.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,13 +17,22 @@ func newTimedMetadataSampleBufferAndResetAnalyzer() -> Unmanaged<CMSampleBuffer>
 
 #### Return Value
 
-Returns an CMSampleBuffer that contains the spatial audio timed metadata sample. If no value can be computed, NULL will be returned.
+A `CMSampleBufferRef` containing the spatial audio timed metadata sample, or `NULL` if no value can be computed.
 
 #### Discussion
 
-Returns a CMSampleBuffer containing a spatial audio timed metadata sample containing the value computed from all of the prior audio sample buffers passed to analyzeAudioSample:. The analyzer is also reset to its initial state, making it ready for a new run of sample buffers.
+Call this method after you pass the last audio sample buffer of your recording to [`analyzeAudioSample(_:)`](avcapturespatialaudiometadatasamplegenerator/analyzeaudiosample(_:).md). Then pass the returned `CMSampleBufferRef` directly to your [`AVAssetWriterInput`](avassetwriterinput.md) to add the sample to your recording’s audio timed metadata track. Note that [`AVAssetWriter`](avassetwriter.md) expects one and only one spatial audio metadata sample buffer to be present in the timed metadata track.
 
-This method is to be called after the last audio sample buffer has been passed to the client’s AVAssetWriterInput for audio. The returned CMSampleBuffer can be passed directly to the client’s AVAssetWriterInput for the audio timed metadata track. Note that it is expected that one and only one sample buffer be present in the timed metadata track.
+> **Note**: Calling this method also resets the analyzer, making it ready for another run of audio sample buffers. Thus one generator can be re-used for multiple recordings.
+
+## See Also
+
+- [func analyzeAudioSample(CMSampleBuffer) -> OSStatus](avcapturespatialaudiometadatasamplegenerator/analyzeaudiosample(_:).md)
+  Analyzes the provided audio sample buffer for its contribution to the spatial audio timed metadata value.
+- [var timedMetadataSampleBufferFormatDescription: CMFormatDescription](avcapturespatialaudiometadatasamplegenerator/timedmetadatasamplebufferformatdescription.md)
+  Returns the format description of the sample buffer returned from the [`newTimedMetadataSampleBufferAndResetAnalyzer()`](avcapturespatialaudiometadatasamplegenerator/newtimedmetadatasamplebufferandresetanalyzer().md) method.
+- [func resetAnalyzer()](avcapturespatialaudiometadatasamplegenerator/resetanalyzer.md)
+  Calling this method resets the analyzer to its initial state so that a new run of audio sample buffers can be analyzed.
 
 
 ---

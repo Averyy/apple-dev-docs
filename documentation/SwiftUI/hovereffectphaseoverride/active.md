@@ -6,7 +6,7 @@
 Immediately transition to the active phase.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

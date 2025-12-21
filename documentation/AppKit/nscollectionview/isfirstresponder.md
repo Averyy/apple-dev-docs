@@ -17,7 +17,7 @@ var isFirstResponder: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the collection view is the first responder. This property is fully key-value observing compliant.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the collection view is the first responder. This property is fully key-value observing compliant.
 
 
 ---

@@ -68,7 +68,7 @@ This class can maintain many state variables that can impact performance. So for
 - [class CIRectangleFeature](cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 - [class CIQRCodeFeature](ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 

@@ -25,6 +25,8 @@ UIKit calls this method before adjusting the layout of the views in the containe
 
 In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this presentation controller’s `traitCollection` and the `traitCollection` of its [`containerView`](uipresentationcontroller/containerview.md). For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
 
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+
 ## See Also
 
 - [func containerViewDidLayoutSubviews()](uipresentationcontroller/containerviewdidlayoutsubviews.md)

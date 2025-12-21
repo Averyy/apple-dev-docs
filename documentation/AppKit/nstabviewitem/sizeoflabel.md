@@ -16,7 +16,7 @@ func sizeOfLabel(_ computeMin: Bool) -> NSSize
 
 #### Discussion
 
-If `shouldTruncateLabel` is [`false`](https://developer.apple.com/documentation/swift/false), returns the size of the receiver’s full label. If `shouldTruncateLabel` is [`true`](https://developer.apple.com/documentation/swift/true), returns the truncated size. If your application does anything to change the size of tab labels, such as overriding the [`drawLabel(_:in:)`](nstabviewitem/drawlabel(_:in:).md) method to add an icon to each tab, you should override [`sizeOfLabel(_:)`](nstabviewitem/sizeoflabel(_:).md) too so the NSTabView knows the correct size for the tab label.
+If `shouldTruncateLabel` is [`false`](https://developer.apple.com/documentation/Swift/false), returns the size of the receiver’s full label. If `shouldTruncateLabel` is [`true`](https://developer.apple.com/documentation/Swift/true), returns the truncated size. If your application does anything to change the size of tab labels, such as overriding the [`drawLabel(_:in:)`](nstabviewitem/drawlabel(_:in:).md) method to add an icon to each tab, you should override [`sizeOfLabel(_:)`](nstabviewitem/sizeoflabel(_:).md) too so the NSTabView knows the correct size for the tab label.
 
 ## See Also
 

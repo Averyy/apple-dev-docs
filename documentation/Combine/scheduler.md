@@ -30,17 +30,17 @@ You can use a scheduler to execute code as soon as possible, or after a future d
 
 ## Topics
 
-### Declaring Scheduler Timekeeping and Options
+### Declaring scheduler timekeeping and options
 - [associatedtype SchedulerTimeType : Strideable](scheduler/schedulertimetype.md)
   Describes an instant in time for this scheduler.
 - [associatedtype SchedulerOptions](scheduler/scheduleroptions.md)
   A type that defines options accepted by the scheduler.
-### Accessing Scheduler Time Properties
+### Accessing scheduler time properties
 - [var minimumTolerance: Self.SchedulerTimeType.Stride](scheduler/minimumtolerance.md)
   The minimum tolerance allowed by the scheduler.
 - [var now: Self.SchedulerTimeType](scheduler/now.md)
   This scheduler’s definition of the current moment in time.
-### Scheduling Actions
+### Scheduling actions
 - [func schedule(() -> Void)](scheduler/schedule(_:).md)
   Performs the action at the next possible opportunity, without options.
 - [func schedule(after: Self.SchedulerTimeType, () -> Void)](scheduler/schedule(after:_:).md)

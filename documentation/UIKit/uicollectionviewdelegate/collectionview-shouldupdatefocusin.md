@@ -21,13 +21,13 @@ optional func collectionView(_ collectionView: UICollectionView, shouldUpdateFoc
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the focus change should occur or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the focus change should occur or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
 Before a focus change can occur, the focus engine asks all affected views if such a change should occur. In response, the collection view calls this method to give you the opportunity to allow or prevent the change. Return this method to prevent changes that should not occur. For example, you might use it to ensure that the navigation between cells occurs in a specific order.
 
-If you do not implement this method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If you subclass [`UICollectionView`](uicollectionview.md), you can also implement the same behavior by overriding the [`shouldUpdateFocus(in:)`](uifocusenvironment/shouldupdatefocus(in:).md) method, which is defined by the [`UIFocusEnvironment`](uifocusenvironment.md) protocol and adopted by all views.
 

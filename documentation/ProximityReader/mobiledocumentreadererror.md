@@ -46,21 +46,6 @@ enum MobileDocumentReaderError
   An error that indicates the system is busy.
 - [MobileDocumentReaderError.unknown](mobiledocumentreadererror/unknown.md)
   An error that indicates the framework encountered a problem which the system can’t interpret.
-### Operators
-- [static func == (MobileDocumentReaderError, MobileDocumentReaderError) -> Bool](mobiledocumentreadererror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var errorDescription: String?](mobiledocumentreadererror/errordescription.md)
-  A localized message describing what error occurred.
-- [var hashValue: Int](mobiledocumentreadererror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledocumentreadererror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mobiledocumentreadererror/equatable-implementations.md)
-- [Error Implementations](mobiledocumentreadererror/error-implementations.md)
-- [LocalizedError Implementations](mobiledocumentreadererror/localizederror-implementations.md)
 
 ## Relationships
 

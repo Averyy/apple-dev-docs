@@ -21,10 +21,10 @@ When scrubber items are selected, they are decorated with background and overlay
 
 As the selection changes, the behavior of these selection decoration views is determined by the [`floatsSelectionViews`](nsscrubber/floatsselectionviews.md) property, as follows:
 
-- [`true`](https://developer.apple.com/documentation/swift/true) The overlay and background views float smoothly between the previously selected item and the newly selected item.
-- [`false`](https://developer.apple.com/documentation/swift/false) The overlay and background views cross-fade from the previously selected item to the newly selected item.
+- [`true`](https://developer.apple.com/documentation/Swift/true) The overlay and background views float smoothly between the previously selected item and the newly selected item.
+- [`false`](https://developer.apple.com/documentation/Swift/false) The overlay and background views cross-fade from the previously selected item to the newly selected item.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

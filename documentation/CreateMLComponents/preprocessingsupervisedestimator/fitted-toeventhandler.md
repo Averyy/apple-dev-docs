@@ -47,8 +47,8 @@ The fitted transformer.
   The intermediate type.
 - [PreprocessingSupervisedEstimator.Output](preprocessingsupervisedestimator/output.md)
   The output type.
-- [PreprocessingSupervisedEstimator.Transformer](preprocessingsupervisedestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

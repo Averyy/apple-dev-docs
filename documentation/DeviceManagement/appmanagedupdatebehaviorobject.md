@@ -6,16 +6,20 @@
 Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 object AppManagedUpdateBehaviorObject
 ```
+
+## Mentions
+
+- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
 
 ## See Also
 

@@ -24,6 +24,8 @@ The type of a trait serves as a key to uniquely identify a trait in a trait coll
 
 ## See Also
 
+- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+  Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
 - [protocol UIMutableTraits](uimutabletraits-13ja5.md)
   A mutable container of traits.
 - [protocol UITraitDefinition](uitraitdefinition-64c15.md)

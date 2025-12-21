@@ -30,11 +30,8 @@ A platform type is an indication of the runtime enviroment of a process. These r
 - [init?(rawValue: Int64)](platformtype/value/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [let rawValue: Int64](platformtype/value/rawvalue-swift.property.md)
+- [let rawValue: Int64](platformtype/value/rawvalue.md)
   The corresponding value of the raw type.
-### Type Aliases
-- [PlatformType.Value.RawValue](platformtype/value/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let driverKit: PlatformType.Value](platformtype/value/driverkit.md)
   The platform type for a driverkit driver.
@@ -58,9 +55,6 @@ A platform type is an indication of the runtime enviroment of a process. These r
   The platform type for native watchOS software.
 - [static let watchOSSimulator: PlatformType.Value](platformtype/value/watchossimulator.md)
   The platform type for code running in the watchOS Simulator.
-### Default Implementations
-- [Equatable Implementations](platformtype/value/equatable-implementations.md)
-- [RawRepresentable Implementations](platformtype/value/rawrepresentable-implementations.md)
 
 ## Relationships
 

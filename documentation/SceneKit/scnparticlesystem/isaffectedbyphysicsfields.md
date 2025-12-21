@@ -24,7 +24,7 @@ var isAffectedByPhysicsFields: Bool { get set }
 
 [`SCNPhysicsField`](scnphysicsfield.md) objects attached to nodes in the scene apply forces to bodies in their area of effect. For example, a radial gravity field attracts bodies toward its center, and a vortex field applies forces that circulate around a specified axis. The forces applied by a physics field on each particle are proportional to its mass, as specified by the [`particleMass`](scnparticlesystem/particlemass.md) property.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that physics fields in the scene do not affect particles.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that physics fields in the scene do not affect particles.
 
 ## See Also
 

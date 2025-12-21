@@ -17,7 +17,7 @@ var isRichText: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) the receiver allows the user to apply attributes to specific ranges of the text; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false) it doesn’t.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) the receiver allows the user to apply attributes to specific ranges of the text; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false) it doesn’t.
 
 ## See Also
 

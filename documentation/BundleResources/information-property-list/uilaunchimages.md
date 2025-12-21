@@ -26,6 +26,11 @@ A dictionary containing information about launch images.
 - [UILaunchImageSize](information-property-list/uilaunchimages/uilaunchimagesize.md)
   A string containing the width and height of the image.
 
+## See Also
+
+- [UIRequiresFullScreen](information-property-list/uirequiresfullscreen.md)
+  A Boolean value that indicates whether the system puts an iPad app into a compatibility mode that opts the app out of multitasking and dynamic resizing.
+
 
 ---
 

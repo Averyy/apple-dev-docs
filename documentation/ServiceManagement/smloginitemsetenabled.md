@@ -16,7 +16,7 @@ func SMLoginItemSetEnabled(_ identifier: CFString, _ enabled: Bool) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the requested change has taken effect.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the requested change has taken effect.
 
 #### Discussion
 

@@ -22,9 +22,9 @@ struct AVError
 
 ## Topics
 
-### Error Domain
+### Error domain
 - [static var errorDomain: String](averror-swift.struct/errordomain.md)
-### Error Codes
+### Error codes
 - [AVError.Code](averror-swift.struct/code.md)
   An enumeration that defines the errors that framework operations can generate.
 - [static var airPlayControllerRequiresInternet: AVError.Code](averror-swift.struct/airplaycontrollerrequiresinternet.md)
@@ -33,10 +33,11 @@ struct AVError
   The AirPlay receiver requires an internet connection to function.
 - [static var airPlayReceiverTemporarilyUnavailable: AVError.Code](averror-swift.struct/airplayreceivertemporarilyunavailable.md)
   An AirPlay receiver is temporarily unavailable.
-- [static var applicationIsNotAuthorized: AVError.Code](averror-swift.struct/applicationisnotauthorized.md)
-  The app isn’t authorized to play media.
 - [static var applicationIsNotAuthorizedToUseDevice: AVError.Code](averror-swift.struct/applicationisnotauthorizedtousedevice.md)
   The user denied this app permission to capture media.
+- [static var applicationIsNotAuthorized: AVError.Code](averror-swift.struct/applicationisnotauthorized.md)
+  The app isn’t authorized to play media.
+- [static var autoWhiteBalanceNotLocked: AVError.Code](averror-swift.struct/autowhitebalancenotlocked.md)
 - [static var compositionTrackSegmentsNotContiguous: AVError.Code](averror-swift.struct/compositiontracksegmentsnotcontiguous.md)
   The composition can’t add the source media because it contains gaps.
 - [static var contentIsNotAuthorized: AVError.Code](averror-swift.struct/contentisnotauthorized.md)
@@ -95,6 +96,7 @@ struct AVError
   The system can’t open the file because it’s in an unrecognized format.
 - [static var fileTypeDoesNotSupportSampleReferences: AVError.Code](averror-swift.struct/filetypedoesnotsupportsamplereferences.md)
   The file type doesn’t support sample references.
+- [static var followExternalSyncDeviceTimedOut: AVError.Code](averror-swift.struct/followexternalsyncdevicetimedout.md)
 - [static var formatUnsupported: AVError.Code](averror-swift.struct/formatunsupported.md)
   The current asset format isn’t supported.
 - [static var incompatibleAsset: AVError.Code](averror-swift.struct/incompatibleasset.md)
@@ -129,6 +131,8 @@ struct AVError
   Recording stopped because the format of the source media changed.
 - [static var mediaDiscontinuity: AVError.Code](averror-swift.struct/mediadiscontinuity.md)
   Recording stopped because there was an interruption in the input media.
+- [static var mediaExtensionConflict: AVError.Code](averror-swift.struct/mediaextensionconflict.md)
+- [static var mediaExtensionDisabled: AVError.Code](averror-swift.struct/mediaextensiondisabled.md)
 - [static var mediaServicesWereReset: AVError.Code](averror-swift.struct/mediaserviceswerereset.md)
   The system couldn’t perform the operation because media services were unavailable.
 - [static var noCompatibleAlternatesForExternalDisplay: AVError.Code](averror-swift.struct/nocompatiblealternatesforexternaldisplay.md)
@@ -139,6 +143,7 @@ struct AVError
   No image is available in the media at the indicated time.
 - [static var noLongerPlayable: AVError.Code](averror-swift.struct/nolongerplayable.md)
   The asset is no longer playable.
+- [static var noSmartFramingsEnabled: AVError.Code](averror-swift.struct/nosmartframingsenabled.md)
 - [static var noSourceTrack: AVError.Code](averror-swift.struct/nosourcetrack.md)
   The asset doesn’t contain a source track.
 - [static var operationCancelled: AVError.Code](averror-swift.struct/operationcancelled.md)
@@ -191,9 +196,10 @@ struct AVError
   The compositor couldn’t composite video frames.
 - [static var deviceIsNotAvailableInBackground: AVError.Code](averror-swift.struct/deviceisnotavailableinbackground.md)
   You attempted to start a capture session in the background, which isn’t allowed in iOS.
-### Error Properties
+### Error properties
 - [var device: AVCaptureDevice?](averror-swift.struct/device-5iio4.md)
   The capture device in use.
+- [var device: String?](averror-swift.struct/device-1qfzr.md)
 - [var fileSize: Int64?](averror-swift.struct/filesize.md)
   The asset file size.
 - [var fileType: AVFileType?](averror-swift.struct/filetype.md)
@@ -202,6 +208,8 @@ struct AVError
   An array of media subtypes.
 - [var mediaType: AVMediaType?](averror-swift.struct/mediatype-7ksjb.md)
   The asset media type.
+- [var mediaType: String?](averror-swift.struct/mediatype-5d8ie.md)
+  The media type.
 - [var persistentTrackID: CMPersistentTrackID?](averror-swift.struct/persistenttrackid.md)
   The persistent track ID, if the track exists.
 - [var presentationTimeStamp: CMTime?](averror-swift.struct/presentationtimestamp.md)
@@ -212,7 +220,7 @@ struct AVError
   A Boolean value that indicates whether recording finished successfully.
 - [var time: CMTime?](averror-swift.struct/time.md)
   The time duration of the error.
-### User Info Keys
+### User info keys
 - [let AVErrorDeviceKey: String](averrordevicekey.md)
   The user information key to retrieve the device name.
 - [let AVErrorDiscontinuityFlagsKey: String](averrordiscontinuityflagskey.md)
@@ -235,13 +243,6 @@ struct AVError
   The user information key to retrieve a Boolean value that indicates whether recording finished successfully.
 - [let AVErrorTimeKey: String](averrortimekey.md)
   The user information key to retrieve the error time.
-### Type Properties
-- [static var mediaExtensionConflict: AVError.Code](averror-swift.struct/mediaextensionconflict.md)
-- [static var mediaExtensionDisabled: AVError.Code](averror-swift.struct/mediaextensiondisabled.md)
-### Instance Properties
-- [var device: String?](averror-swift.struct/device-1qfzr.md)
-- [var mediaType: String?](averror-swift.struct/mediatype-5d8ie.md)
-  The media type.
 
 ## Relationships
 

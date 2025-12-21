@@ -6,7 +6,7 @@
 Creates a preview of a relevance-driven widget.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

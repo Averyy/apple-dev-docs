@@ -5,11 +5,6 @@
 
 Copies a specified range of bytes into a given buffer.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

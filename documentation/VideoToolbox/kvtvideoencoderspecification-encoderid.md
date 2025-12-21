@@ -21,7 +21,7 @@ let kVTVideoEncoderSpecification_EncoderID: CFString
 
 #### Discussion
 
-To specify a particular video encoder when creating a compression session, pass an encoder specification doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum containing this key and the encoder ID as its value. You can get the encoder ID string from the `kVTVideoEncoderList_EncoderID` entry in the array returned by [`VTCopyVideoEncoderList(_:_:)`](vtcopyvideoencoderlist(_:_:).md).
+To specify a particular video encoder when creating a compression session, pass an encoder specification [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing this key and the encoder ID as its value. You can get the encoder ID string from the `kVTVideoEncoderList_EncoderID` entry in the array returned by [`VTCopyVideoEncoderList(_:_:)`](vtcopyvideoencoderlist(_:_:).md).
 
 ## See Also
 

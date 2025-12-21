@@ -28,7 +28,7 @@ func addLogHandler(_ block: @escaping (String?, String?, MTLLogLevel, String) ->
 
 In absence of any log handlers, all messages goes through the unified log system and are available through the console.app, log tool, or Xcode.
 
-Use this method to add your own shader logging presentation or filter messages using subsystem, category and levels. For more details on how to configure your logging, see [`Generating Log Messages from Your Code`](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code).
+Use this method to add your own shader logging presentation or filter messages using subsystem, category and levels. For more details on how to configure your logging, see [`Generating Log Messages from Your Code`](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code#Create-a-Log-Object-to-Organize-Messages).
 
 
 ---

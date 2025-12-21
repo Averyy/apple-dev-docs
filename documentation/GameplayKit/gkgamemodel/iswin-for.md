@@ -21,7 +21,7 @@ optional func isWin(for player: any GKGameModelPlayer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this game model represents a winning state for the specified player; [`false`](https://developer.apple.com/documentation/swift/false) if the game has been won or has not yet concluded.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this game model represents a winning state for the specified player; [`false`](https://developer.apple.com/documentation/Swift/false) if the game has been won or has not yet concluded.
 
 #### Discussion
 

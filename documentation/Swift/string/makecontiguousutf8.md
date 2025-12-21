@@ -33,7 +33,7 @@ Complexity: O(n) if non-contiguous, O(1) if already contiguous
 - [static func localizedName(of: String.Encoding) -> String](string/localizedname(of:).md)
   Returns a human-readable string giving the name of the specified encoding.
 - [var isContiguousUTF8: Bool](string/iscontiguousutf8.md)
-  Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+  Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)
   Runs `body` over the content of this string in contiguous memory. If this string is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the string, it will invalidate any pre-existing indices.
 

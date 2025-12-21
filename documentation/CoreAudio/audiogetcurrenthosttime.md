@@ -15,6 +15,14 @@
 func AudioGetCurrentHostTime() -> UInt64
 ```
 
+#### Return Value
+
+A UInt64 containing the current host time.
+
+#### Discussion
+
+Gets the current host time.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

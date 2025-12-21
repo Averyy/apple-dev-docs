@@ -21,15 +21,15 @@ func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this overlay renderer is ready to draw its contents on the map or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this overlay renderer is ready to draw its contents on the map or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 #### Discussion
 
-Overlay renderers can override this method in situations where they may depend on the availability of other information to draw their contents. For example, a renderer showing traffic information might want to delay drawing until it has all of the traffic data it needs. In such a case, it can return [`false`](https://developer.apple.com/documentation/swift/false) from this method to indicate that it’s not ready. An overlay renderer might also return [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t draw content in the specified rectangle.
+Overlay renderers can override this method in situations where they may depend on the availability of other information to draw their contents. For example, a renderer showing traffic information might want to delay drawing until it has all of the traffic data it needs. In such a case, it can return [`false`](https://developer.apple.com/documentation/Swift/false) from this method to indicate that it’s not ready. An overlay renderer might also return [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t draw content in the specified rectangle.
 
-If you return [`false`](https://developer.apple.com/documentation/swift/false) from this method, your application is responsible for calling the [`setNeedsDisplay(_:zoomScale:)`](mkoverlayrenderer/setneedsdisplay(_:zoomscale:).md) method when the overlay renderer subsequently becomes ready to draw its contents.
+If you return [`false`](https://developer.apple.com/documentation/Swift/false) from this method, your application is responsible for calling the [`setNeedsDisplay(_:zoomScale:)`](mkoverlayrenderer/setneedsdisplay(_:zoomscale:).md) method when the overlay renderer subsequently becomes ready to draw its contents.
 
-The default implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation of this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

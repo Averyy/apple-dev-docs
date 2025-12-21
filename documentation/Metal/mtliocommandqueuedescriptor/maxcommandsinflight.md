@@ -21,7 +21,7 @@ var maxCommandsInFlight: Int { get set }
 
 #### Discussion
 
-Set to `0` to instruct Metal to select an appropriate value for you — based on the system’s available memory.
+Set to `0` to instruct Metal to select an appropriate value for you — based on the system’s available memory.
 
 ## See Also
 

@@ -6,7 +6,10 @@
 Gets the bootstrap token from the server.
 
 **Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
 - macOS 10.15+
+- visionOS 26.0+
 
 #### Discussion
 
@@ -16,15 +19,15 @@ This request returns the device’s bootstrap token data that the server stores.
 
 If a bootstrap token isn’t available, the server returns a success response with either a zero-length value for the `BootstrapToken` key or omits the key.
 
-It requires a device using Automated Device Enrollment, or a supervised device in macOS 11 and later.
+Requires a device enrolled using Automated Device Enrollment.
 
 ##### Check in Availability
 
 |  |  |
 | --- | --- |
-| Device channel | macOS |
+| Device channel | iOS, macOS, visionOS |
 | User channel | NA |
-| Requires supervision | macOS |
+| Requires supervision | iOS, macOS, visionOS |
 | Allowed in user enrollment | NA |
 
 ## Topics

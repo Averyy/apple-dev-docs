@@ -22,7 +22,7 @@ var imageBuffer: CVImageBuffer? { get }
 
 #### Discussion
 
-The value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the sample buffer doesn’t contain a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), if the sample contains a [`CMBlockBuffer APIs`](cmblockbuffer-api.md), or if there’s an error.
+The value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the sample buffer doesn’t contain a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), if the sample contains a [`CMBlockBuffer`](cmblockbuffer-api.md), or if there’s an error.
 
 ## See Also
 
@@ -43,7 +43,6 @@ The value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-22
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 
 
 ---

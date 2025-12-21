@@ -20,11 +20,11 @@ var prefersHomeIndicatorAutoHidden: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your view controller lets the system determine when to hide the indicator, or [`false`](https://developer.apple.com/documentation/swift/false) if you want the indicator to show at all times. The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if your view controller lets the system determine when to hide the indicator, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the indicator to show at all times. The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Override this method to signal your preference for displaying the visual indicator. The system takes your preference into account, but returning [`true`](https://developer.apple.com/documentation/swift/true) is no guarantee that the indicator will be hidden.
+Override this method to signal your preference for displaying the visual indicator. The system takes your preference into account, but returning [`true`](https://developer.apple.com/documentation/Swift/true) is no guarantee that the indicator will be hidden.
 
 For information on allowing app-defined gestures to take precedence over system gestures for certain screen edges, see [`preferredScreenEdgesDeferringSystemGestures`](uiviewcontroller/preferredscreenedgesdeferringsystemgestures.md).
 

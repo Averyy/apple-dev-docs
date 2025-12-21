@@ -11,7 +11,7 @@ A Boolean value that indicates whether the search results include physical featu
 ## Declaration
 
 ```swift
-attribute boolean includePhysicalFeatures;
+includePhysicalFeatures?: boolean;
 ```
 
 ## See Also
@@ -21,7 +21,7 @@ attribute boolean includePhysicalFeatures;
 - [limitToCountries](searchconstructoroptions/limittocountries.md)
   A string that constrains search results to within the provided countries.
 - [regionPriority](searchconstructoroptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+  A region priority value that controls whether results occur outside, or strictly within, the region.
 
 
 ---

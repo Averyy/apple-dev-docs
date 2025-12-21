@@ -22,24 +22,22 @@ struct Map<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Map Publisher
+### Creating a map publisher
 - [init(upstream: Upstream, transform: (Upstream.Output) -> Output)](publishers/map/init(upstream:transform:).md)
   Creates a publisher that transforms all elements from the upstream publisher with a provided closure.
-### Declaring Publisher Topography
+### Mapping elements
+- [func map<T>((Output) -> T) -> Publishers.Map<Upstream, T>](publishers/map/map(_:).md)
+- [func tryMap<T>((Output) throws -> T) -> Publishers.TryMap<Upstream, T>](publishers/map/trymap(_:).md)
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.Map.Failure](publishers/map/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/map/upstream.md)
   The publisher from which this publisher receives elements.
 - [let transform: (Upstream.Output) -> Output](publishers/map/transform.md)
   The closure that transforms elements from the upstream publisher.
-### Applying Operators
-- [Publisher Operators](publishers-map-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/map/publisher-implementations.md)
 
 ## Relationships
 

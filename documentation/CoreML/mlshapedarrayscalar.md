@@ -22,7 +22,7 @@ protocol MLShapedArrayScalar
 
 ## Topics
 
-### Determining the Underlying Type
+### Determining the underlying type
 - [static var multiArrayDataType: MLMultiArrayDataType](mlshapedarrayscalar/multiarraydatatype.md)
   The shaped array’s scalar type as a multiarray data type.
 

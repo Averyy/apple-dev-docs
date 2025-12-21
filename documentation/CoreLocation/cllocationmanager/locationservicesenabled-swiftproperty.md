@@ -18,7 +18,7 @@ var locationServicesEnabled: Bool { get }
 
 In iOS, the user can enable or disable location services using the controls in Settings > Location Services. In macOS, the user can enable or disable location services from the Security & Privacy system preference.
 
-If this property contains the value [`false`](https://developer.apple.com/documentation/swift/false) and you start location updates anyway, the Core Location framework prompts the user with a confirmation alert asking whether location services should be reenabled.
+If this property contains the value [`false`](https://developer.apple.com/documentation/Swift/false) and you start location updates anyway, the Core Location framework prompts the user with a confirmation alert asking whether location services should be reenabled.
 
 ##### Special Considerations
 

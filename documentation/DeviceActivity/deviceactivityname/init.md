@@ -24,8 +24,6 @@ init(_ rawValue: String)
 
 - [init(rawValue: String)](deviceactivityname/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](deviceactivityname/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

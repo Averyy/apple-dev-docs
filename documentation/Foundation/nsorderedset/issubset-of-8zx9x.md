@@ -22,7 +22,7 @@ func isSubset(of set: Set<AnyHashable>) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if every object in the receiving ordered set is also present in `set`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if every object in the receiving ordered set is also present in `set`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

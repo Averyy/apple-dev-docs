@@ -1,7 +1,7 @@
 # LookAroundOptions
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: struct
 
 Options for initializing a LookAround view.
 
@@ -11,7 +11,7 @@ Options for initializing a LookAround view.
 ## Declaration
 
 ```swift
-interface LookAroundOptions
+interface LookAroundOptions extends CommonLookAroundOptions
 ```
 
 ## Topics
@@ -24,21 +24,25 @@ interface LookAroundOptions
 
 ## Relationships
 
-### Inherited By
+### Inherits From
 - [CommonLookAroundOptions](commonlookaroundoptions.md)
 
 ## See Also
 
-- [mapkit.LookAround](mapkit.lookaround.md)
+- [class LookAround](lookaround.md)
   A view that allows someone to see a street level view of a place.
-- [mapkit.LookAroundPreview](mapkit.lookaroundpreview.md)
-  A class that renders a preview of a LookAround view.
-- [LookAroundPreviewOptions](lookaroundpreviewoptions.md)
+- [class LookAroundPreview](lookaroundpreview.md)
+  A class that renders a preview of a Look Around view.
+- [interface LookAroundPreviewOptions](lookaroundpreviewoptions.md)
   Options for initializing a LookAroundPreview object.
-- [mapkit.LookAroundScene](mapkit.lookaroundscene.md)
+- [class LookAroundScene](lookaroundscene.md)
   Object that represents the current location of the view.
-- [CommonLookAroundOptions](commonlookaroundoptions.md)
+- [interface CommonLookAroundOptions](commonlookaroundoptions.md)
   Options that control the behavior of Look Around views.
+- [class AbstractLookAround](abstractlookaround.md)
+  An abstract class that provides a common interface for Look Around views.
+- [lookAroundViews](mapkit/lookaroundviews.md)
+  A list of all the Look Around objects that are currently active on a page.
 
 
 ---

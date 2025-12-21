@@ -30,6 +30,8 @@ If no options are specified, the formatter localizes according to the preference
 
 ## See Also
 
+- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+  Measurement formatter options.
 - [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
   The unit style.
 - [var locale: Locale!](measurementformatter/locale.md)

@@ -53,6 +53,8 @@ enum DataSource
 
 - [MLHandActionClassifier.ModelParameters](mlhandactionclassifier/modelparameters-swift.struct.md)
   A set of parameters that affect the training process of a hand action classifier task.
+- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+  Options a hand action classification training session can use to generate additional training data from the videos you provide.
 
 
 ---

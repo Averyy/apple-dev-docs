@@ -7,8 +7,8 @@ Secure the installation of alternative distribution apps on iOS or iPadOS device
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
 - [Configuring your app licensing environment](configuring-the-app-licensing-environment.md)
+- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
 
 #### Overview
 

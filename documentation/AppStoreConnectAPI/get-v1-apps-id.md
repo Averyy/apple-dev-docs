@@ -20,7 +20,8 @@ Get information about a specific app.
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
 - [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [GET /v1/apps/{id}/relationships/appEncryptionDeclarations](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+  Find and list all available app encryption declaration IDs for a specific app.
 
 
 ---

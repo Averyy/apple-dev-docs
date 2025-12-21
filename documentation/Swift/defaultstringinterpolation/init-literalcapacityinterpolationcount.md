@@ -22,7 +22,7 @@ init(literalCapacity: Int, interpolationCount: Int)
 
 #### Discussion
 
-Do not call this initializer directly. It is used by the compiler when interpreting string interpolations.
+You don’t need to call this initializer directly. It’s used by the compiler when interpreting string interpolations.
 
 
 ---

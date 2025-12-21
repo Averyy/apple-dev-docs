@@ -25,7 +25,9 @@ struct FormatStyleCapitalizationContext
 ### Customizing Style Behavior
 - [static var unknown: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/unknown.md)
 - [static var standalone: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/standalone.md)
+  For stand-alone usage, such as an isolated name on a calendar page.
 - [static var listItem: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/listitem.md)
+  For use in a UI list or menu item.
 - [static var beginningOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/beginningofsentence.md)
 - [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
 

@@ -3,15 +3,15 @@
 **Framework**: Metal  
 **Kind**: property
 
-Sets the width, in pixels, of the tiles into which Metal divides the render attachments for tile-based rendering.
+The width of the tiles, in pixels, a render pass you create with this descriptor applies to its attachments.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,9 +21,9 @@ var tileWidth: Int { get set }
 
 #### Discussion
 
-When set to `0`, the default, Metal chooses a width that fits within local memory.
+For tile-based rendering, Metal divides each render attachment into smaller regions, or . The property’s default is `0`, which tells Metal to select a size that fits in tile memory.
 
-See also: doc:tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md
+See [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md) for more information about tiles, tile memory, and deferred rendering.
 
 
 ---

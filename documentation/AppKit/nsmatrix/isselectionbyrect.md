@@ -17,7 +17,7 @@ var isSelectionByRect: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix allows the user to select a rectangle of cells by dragging. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), selection in the matrix is on a row-by-row basis. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the matrix allows the user to select a rectangle of cells by dragging. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), selection in the matrix is on a row-by-row basis. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

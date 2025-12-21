@@ -24,13 +24,6 @@ static func == (left: MLDataValue, right: MLDataValue) -> Bool
 - `left`: A data value to compare.
 - `right`: A data value to compare.
 
-## See Also
-
-- [static func != (Self, Self) -> Bool](mldatavalue/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](mldatavalue/hashvalue.md)
-  The hash value.
-
 
 ---
 

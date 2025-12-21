@@ -27,7 +27,7 @@ The swizzle pattern of the view is combined with that of the parent texture to g
 
 ## Parameters
 
-- `pixelFormat`: A new pixel format, which must be compatible with the original pixel format.
+- `pixelFormat`: A new pixel format, which needs to be compatible with the original pixel format.
 - `textureType`: A new texture type.
 - `levelRange`: A new base level range that restricts which mipmap levels are visible in the new texture.
 - `sliceRange`: A new base slice range that restricts which array slices are visible in the new texture.

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: class
 
-An evaluation context for rendering image processing results and performing image analysis.
+The Core Image context class provides an evaluation context for Core Image processing with Metal, OpenGL, or OpenCL.
 
 **Availability**:
 - iOS 5.0+
@@ -25,9 +25,16 @@ class CIContext
 
 #### Overview
 
-The `CIContext` class provides an evaluation context for Core Image processing with Quartz 2D, Metal, or OpenGL. You use `CIContext` objects in conjunction with other Core Image classes, such as [`CIFilter`](cifilter-swift.class.md), [`CIImage`](ciimage.md), and [`CIColor`](cicolor.md), to process images using Core Image filters. You also use a Core Image context with the [`CIDetector`](cidetector.md) class to analyze images—for example, to detect faces or barcodes.
+You use a `CIContext` instance to render a [`CIImage`](ciimage.md) instance which represents a graph of image processing operations which are built using other Core Image classes, such as [`CIFilter`](cifilter-swift.class.md), [`CIKernel`](cikernel.md), [`CIColor`](cicolor.md) and [`CIImage`](ciimage.md). You can also use a `CIContext` with the [`CIDetector`](cidetector.md) class to analyze images — for example, to detect faces or barcodes.
 
-`CIContext` and `CIImage` objects are immutable, so multiple threads can use the same `CIContext` object to render `CIImage` objects. However, `CIFilter` objects are mutable and thus cannot be shared safely among threads. Each thread must create its own `CIFilter` objects, but you can pass a filter’s immutable input and output `CIImage` objects between threads.
+Contexts support automatic color management by performing all processing operations in a working color space. This means that unless told otherwise:
+
+- All input images are color matched from the input’s color space to the working space.
+- All renders are color matched from the working space to the destination space. (For more information on `CGColorSpace` see [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace))
+
+`CIContext` and [`CIImage`](ciimage.md) instances are immutable, so multiple threads can use the same [`CIContext`](cicontext.md) instance to render [`CIImage`](ciimage.md) instances. However, [`CIFilter`](cifilter-swift.class.md) instances are mutable and thus cannot be shared safely among threads. Each thread must take case not to access or modify a [`CIFilter`](cifilter-swift.class.md) instance while it is being used by another thread.
+
+The `CIContext` manages various internal state such as `MTLCommandQueue` and caches for compiled kernels and intermediate buffers.  For this reason it is not recommended to create many `CIContext` instances.  As a rule, it recommended that you create one `CIContext` instance for each view that renders [`CIImage`](ciimage.md) or each background task.
 
 ## Topics
 
@@ -46,11 +53,11 @@ The `CIContext` class provides an evaluation context for Core Image processing w
 - [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:).md)
 ### Rendering Images
 - [func createCGImage(CIImage, from: CGRect) -> CGImage?](cicontext/createcgimage(_:from:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object.
+  Creates a Core Graphics image from a region of a Core Image image instance.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling the pixel format and color space of the `CGImage`.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object with deferred rendering.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling when the image is rendered.
 - [func render(CIImage, toBitmap: UnsafeMutableRawPointer, rowBytes: Int, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpace?)](cicontext/render(_:tobitmap:rowbytes:bounds:format:colorspace:).md)
   Renders to the given bitmap.
 - [func render(CIImage, to: CVPixelBuffer)](cicontext/render(_:to:).md)
@@ -114,6 +121,7 @@ The `CIContext` class provides an evaluation context for Core Image processing w
 - [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimageurl:options:).md)
 ### Constants
 - [struct CIContextOption](cicontextoption.md)
+  An enum string type that your code can use to select different options when creating a Core Image context.
 ### Customizing Render Destination
 - [func prepareRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws](cicontext/preparerender(_:from:to:at:).md)
   An optional call to warm up a [`CIContext`](cicontext.md) so that subsequent calls to render with the same arguments run more efficiently.

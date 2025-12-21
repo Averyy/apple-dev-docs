@@ -6,7 +6,7 @@
 A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

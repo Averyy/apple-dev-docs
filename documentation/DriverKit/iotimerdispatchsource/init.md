@@ -19,7 +19,7 @@ bool init();
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if initialization was successful, or [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred.
+[`true`](https://developer.apple.com/documentation/Swift/true) if initialization was successful, or [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred.
 
 #### Discussion
 

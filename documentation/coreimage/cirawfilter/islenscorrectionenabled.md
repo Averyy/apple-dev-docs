@@ -23,7 +23,7 @@ var isLensCorrectionEnabled: Bool { get set }
 
 The default value varies by image.
 
-> **Note**:  The [`isLensCorrectionSupported`](cirawfilter/islenscorrectionsupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
+> **Note**:  The [`isLensCorrectionSupported`](cirawfilter/islenscorrectionsupported.md) property is [`false`](https://developer.apple.com/documentation/Swift/false) if the current image doesn’t support this adjustment.
 
 ## See Also
 

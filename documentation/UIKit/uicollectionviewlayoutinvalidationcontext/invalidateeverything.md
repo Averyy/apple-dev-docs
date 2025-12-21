@@ -21,9 +21,9 @@ var invalidateEverything: Bool { get }
 
 #### Discussion
 
-You do not set this property yourself. The collection view sets it in response to specific types of layout invalidation scenarios. For example, the collection view sets it to [`true`](https://developer.apple.com/documentation/swift/true) when you change the current layout object, change the data source of the collection view, or call the [`reloadData()`](uicollectionview/reloaddata().md) method and subsequently request a layout invalidation context.
+You do not set this property yourself. The collection view sets it in response to specific types of layout invalidation scenarios. For example, the collection view sets it to [`true`](https://developer.apple.com/documentation/Swift/true) when you change the current layout object, change the data source of the collection view, or call the [`reloadData()`](uicollectionview/reloaddata().md) method and subsequently request a layout invalidation context.
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the layout object should recompute all of its layout-related data.
+If this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the layout object should recompute all of its layout-related data.
 
 ## See Also
 

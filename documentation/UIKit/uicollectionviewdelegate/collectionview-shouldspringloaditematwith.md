@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldSpringLoa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to apply the spring-loading behavior for the item or [`false`](https://developer.apple.com/documentation/swift/false) to suppress the behavior altogether.
+[`true`](https://developer.apple.com/documentation/Swift/true) to apply the spring-loading behavior for the item or [`false`](https://developer.apple.com/documentation/Swift/false) to suppress the behavior altogether.
 
 #### Discussion
 
-If you do not implement this method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

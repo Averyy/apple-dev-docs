@@ -40,8 +40,8 @@ enum Strategy
 
 - [func fitted<S>(to: S, eventHandler: EventHandler?) -> NumericImputer<Element>.Transformer](numericimputer/fitted(to:eventhandler:).md)
   Fits a numeric imputer to a sequence of elements.
-- [NumericImputer.Transformer](numericimputer/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

@@ -28,12 +28,6 @@ case nominal
   The thermal state is high.
 - [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
-  The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
-  The thermal state is high.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
-  The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 
 ---

@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: protocol
 
+A type that conforms to the NetworkEncoder protocol can decode data to an Encodable object
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,6 +24,7 @@ protocol NetworkDecoder
 
 ### Instance Methods
 - [func decode<T>(T.Type, from: Data) throws -> T](networkdecoder/decode(_:from:).md)
+  Decode a decodable object from Data
 
 
 ---

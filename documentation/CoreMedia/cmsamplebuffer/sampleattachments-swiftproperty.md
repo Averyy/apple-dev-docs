@@ -25,7 +25,6 @@ var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray { get set }
 - [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
   Keys that identify sample buffer attachments.
 - [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-  A structure that defines an array of sample attachments.
 - [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 

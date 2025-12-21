@@ -22,7 +22,7 @@ var isPlayable: Bool { get }
 
 #### Discussion
 
-If the media data associated with the option cannot be decoded or otherwise rendered, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If the media data associated with the option cannot be decoded or otherwise rendered, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

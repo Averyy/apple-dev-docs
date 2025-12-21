@@ -29,9 +29,9 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
 GameKit calls the handler, possibly several times, for the following cases:
 
 - If the local player needs to perform some action, GameKit passes a view controller that you must present to the player to complete initialization.
-- If the player successfully signs in, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and calls the handler again, this time passing `nil` for both the view controller and error parameters. You can then start the game.
-- If the player decides not to sign in or create a Game Center account, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and calls the handler again by passing an error that indicates the reason the player isn’t available. In this case, disable Game Center in your game.
-- If the local player previously signed in on the device when you set the handler, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and passes `nil` for both the view controller and error parameters, and you can start the game.
+- If the player successfully signs in, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) and calls the handler again, this time passing `nil` for both the view controller and error parameters. You can then start the game.
+- If the player decides not to sign in or create a Game Center account, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) and calls the handler again by passing an error that indicates the reason the player isn’t available. In this case, disable Game Center in your game.
+- If the local player previously signed in on the device when you set the handler, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) and passes `nil` for both the view controller and error parameters, and you can start the game.
 
 ##### Check for Restrictions
 
@@ -70,7 +70,7 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
 }
 ```
 
-If the `isPersonalizedCommunicationRestricted` property is [`true`](https://developer.apple.com/documentation/swift/true), then the player isn’t allowed to use voice or messaging features during a multiplayer game. If your game includes any custom communication features, you should disable them. Note that if the player is underage, this property is always [`true`](https://developer.apple.com/documentation/swift/true).
+If the `isPersonalizedCommunicationRestricted` property is [`true`](https://developer.apple.com/documentation/Swift/true), then the player isn’t allowed to use voice or messaging features during a multiplayer game. If your game includes any custom communication features, you should disable them. Note that if the player is underage, this property is always [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Support User Switching
 
@@ -87,7 +87,7 @@ When the system relaunches your game, GameKit passes the new user to the handler
 ## See Also
 
 - [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
-  Enable Game Center in your Xcode project and configure features in App Store Connect.
+  Enable Game Center, configure features, and test them locally in your Xcode project.
 - [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
   Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
 - [Game Center Entitlement](../BundleResources/Entitlements/com.apple.developer.game-center.md)

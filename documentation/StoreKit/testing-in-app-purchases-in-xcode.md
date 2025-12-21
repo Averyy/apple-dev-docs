@@ -18,7 +18,7 @@ Select the relevant test scenarios to build a test plan for your app. Each test 
 
 Validating receipts is an integral part of handling and testing in-app purchases. As you test in-app purchases, StoreKit in Xcode generates receipts that are valid only in the test environment. Your app can validate the receipts locally using a certificate that Xcode provides.
 
-> ❗ **Important**:  You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) because the App Store doesn’t sign these receipts, and the verification fails.
+> ❗ **Important**:  You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) because the App Store doesn’t sign these receipts, and the verification fails.
 
 The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you verify the receipt signature. The following code example retrieves the local receipt:
 
@@ -36,7 +36,7 @@ if let appStoreReceiptURL = Bundle.main.appStoreReceiptURL,
 }
 ```
 
-For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device).
+For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/AppStoreReceipts/validating-receipts-on-the-device).
 
 ##### Test a Promotional Offer
 
@@ -139,7 +139,7 @@ You can repeat this test scenario without additional steps.
 
 ##### Test an Offer Code
 
-Your app can present a sheet to redeem preconfigured subscription offer codes.
+Your app can present a sheet to redeem preconfigured offer codes.
 
 Additional setup steps for this test scenario are:
 

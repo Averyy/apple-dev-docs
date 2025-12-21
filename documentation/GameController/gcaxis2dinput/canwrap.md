@@ -22,7 +22,7 @@ var canWrap: Bool { get }
 
 #### Discussion
 
-This property is [`false`](https://developer.apple.com/documentation/swift/false) for most axis inputs.
+This property is [`false`](https://developer.apple.com/documentation/Swift/false) for most axis inputs.
 
 ## See Also
 

@@ -25,11 +25,6 @@ init(stride: Int, length: Int)
 - `stride`: The number of frames between the start of two consecutive windows. Must be greater than 0.
 - `length`: The length of a window in number of frames. Must be greater than 0.
 
-## See Also
-
-- [init(from: any Decoder) throws](slidingwindowtransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

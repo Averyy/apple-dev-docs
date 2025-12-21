@@ -36,7 +36,7 @@ struct SampleApp: App {
 }
 ```
 
-For further information, see [`Spatial layout`](https://developer.apple.com/design/Human-Interface-Guidelines/spatial-layout) in the Human Interface Guidelines.
+For further information, see [`Spatial layout`](https://developer.apple.com/design/Human-Interface-Guidelines/spatial-layout#Scale) in the Human Interface Guidelines.
 
 ## See Also
 

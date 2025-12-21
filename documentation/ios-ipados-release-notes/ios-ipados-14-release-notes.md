@@ -78,7 +78,7 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### New Features
 
-- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception that pinpoints which observed object needs a missed doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released, regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
+- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception that pinpoints which observed object needs a missed `removeObserver(_:)` call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released, regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
 
 ##### Localization
 
@@ -115,13 +115,13 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### New Features
 
-- To properly render an augmented reality [`scene`](https://developer.apple.com/documentation/RealityKit/scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
+- To properly render an augmented reality [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
 
 ##### Siri
 
 ###### New Features
 
-You can use doc://com.apple.documentation/documentation/sirikit/inmediausercontext, [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
+You can use `INMediaUserContext`, [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
 
 ##### Safari and Webkit
 
@@ -149,8 +149,8 @@ You can use doc://com.apple.documentation/documentation/sirikit/inmediauserconte
 
 ###### New Features
 
-- doc://com.apple.documentation/documentation/swiftui/view/body-body-8kl5o is now implicitly a [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) and [`body`](https://developer.apple.com/documentation/SwiftUI/App/body-swift.property) is now implicitly a [`SceneBuilder`](https://developer.apple.com/documentation/SwiftUI/SceneBuilder). (63606493)
-- [`Color`](https://developer.apple.com/documentation/SwiftUI/Color) can be converted to and from [`CGColor`](https://developer.apple.com/documentation/uikit/uicolor/1621943-cgcolor). The [`ColorPicker`](https://developer.apple.com/documentation/SwiftUI/ColorPicker) can also now be configured with a binding to a `CGColor`. (56939085)
+- The `body` property is now implicitly a [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) and [`body`](https://developer.apple.com/documentation/SwiftUI/App/body-swift.property) is now implicitly a [`SceneBuilder`](https://developer.apple.com/documentation/SwiftUI/SceneBuilder). (63606493)
+- [`Color`](https://developer.apple.com/documentation/SwiftUI/Color) can be converted to and from [`cgColor`](https://developer.apple.com/documentation/UIKit/UIColor/cgColor). The [`ColorPicker`](https://developer.apple.com/documentation/SwiftUI/ColorPicker) can also now be configured with a binding to a `CGColor`. (56939085)
 - Introduced [`ToolbarItemGroup`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemGroup) as a convenient way to place multiple items in a specific location of non-customizable toolbars. (64178863)
 - [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) now supports adding a secondary “current value label” that describes the current progress level of the task. Use the [`label`](https://developer.apple.com/documentation/SwiftUI/ProgressViewStyleConfiguration/label-swift.property) to describe the overall task, and the [`ProgressViewStyleConfiguration.CurrentValueLabel`](https://developer.apple.com/documentation/SwiftUI/ProgressViewStyleConfiguration/CurrentValueLabel-swift.struct) to provide more specific details about the progress of the task. (63580200)
 - [`FileDocument`](https://developer.apple.com/documentation/SwiftUI/FileDocument) and [`ReferenceFileDocument`](https://developer.apple.com/documentation/SwiftUI/ReferenceFileDocument) have updated protocol requirements: - Their initializer requirement now has a single [`FileDocumentReadConfiguration`](https://developer.apple.com/documentation/SwiftUI/FileDocumentReadConfiguration) parameter that the `fileWrapper` and `contentType` can be read from.
@@ -259,7 +259,7 @@ struct QuickNoteDocument : FileDocument {
 
 - Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)  Use [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) instead.
 - `fstab` has been removed. You can no longer use Filesystem contents outside of an app’s sandbox for validation. (61098152)
-- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
+- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using `object_getClass` instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
 
 ##### Vision
 

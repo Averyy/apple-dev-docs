@@ -28,7 +28,7 @@ var vertical: MTLRasterizationRateSampleArray { get }
 - [var horizontal: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/horizontal.md)
   The horizontal rasterization rates for the layer map’s rows.
 - [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
-  An array object that contains rasterization rates.
+  An array instance that contains rasterization rates.
 
 
 ---

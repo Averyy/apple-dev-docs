@@ -24,10 +24,6 @@ struct BESelectionFlags
 - [static var phraseBoundaryChanged: BESelectionFlags](beselectionflags/phraseboundarychanged.md)
 - [static var selectionFlipped: BESelectionFlags](beselectionflags/selectionflipped.md)
 - [static var wordIsNearTap: BESelectionFlags](beselectionflags/wordisneartap.md)
-### Default Implementations
-- [Equatable Implementations](beselectionflags/equatable-implementations.md)
-- [OptionSet Implementations](beselectionflags/optionset-implementations.md)
-- [SetAlgebra Implementations](beselectionflags/setalgebra-implementations.md)
 
 ## Relationships
 

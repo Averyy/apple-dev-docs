@@ -20,7 +20,7 @@ var showsCloseButton: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), a close button is automatically displayed when the popover bar is displayed. When [`false`](https://developer.apple.com/documentation/swift/false), it is your responsibility to dismiss the popover bar.
+When [`true`](https://developer.apple.com/documentation/Swift/true), a close button is automatically displayed when the popover bar is displayed. When [`false`](https://developer.apple.com/documentation/Swift/false), it is your responsibility to dismiss the popover bar.
 
 ## See Also
 

@@ -16,6 +16,15 @@ The specified order doesn’t exist.
 case notFound
 ```
 
+## See Also
+
+- [FinanceStore.ContainsOrderResult.exists](financestore/containsorderresult/exists.md)
+  The specified order exists.
+- [FinanceStore.ContainsOrderResult.newerExists](financestore/containsorderresult/newerexists.md)
+  A newer order than the one you specified exists.
+- [FinanceStore.ContainsOrderResult.olderExists](financestore/containsorderresult/olderexists.md)
+  A older order than the one you specified exists.
+
 
 ---
 

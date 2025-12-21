@@ -24,13 +24,17 @@ struct VerbatimFormatStyle
 
 ### Structures
 - [Date.VerbatimFormatStyle.Attributed](date/verbatimformatstyle/attributed-swift.struct.md)
+  The type preserving attributed variant of this style.
 ### Initializers
 - [init(format: Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar)](date/verbatimformatstyle/init(format:locale:timezone:calendar:).md)
 ### Instance Properties
 - [var attributed: Date.AttributedStyle](date/verbatimformatstyle/attributed-swift.property.md)
+  Returns a type erased attributed variant of this style.
 - [var attributedStyle: Date.VerbatimFormatStyle.Attributed](date/verbatimformatstyle/attributedstyle.md)
+  Return the type preserving attributed variant of this style.
 - [var calendar: Calendar](date/verbatimformatstyle/calendar.md)
 - [var locale: Locale?](date/verbatimformatstyle/locale.md)
+  Use system locale if nil or unspecified.
 - [var timeZone: TimeZone](date/verbatimformatstyle/timezone.md)
 
 ## Relationships

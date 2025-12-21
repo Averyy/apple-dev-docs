@@ -16,7 +16,7 @@ Creates a new image-generation view controller for you to present.
 
 ```swift
 @MainActor
-@preconcurrency required dynamic init()
+@preconcurrency dynamic convenience init()
 ```
 
 #### Return Value

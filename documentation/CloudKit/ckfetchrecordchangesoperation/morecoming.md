@@ -22,7 +22,7 @@ var moreComing: Bool { get }
 
 #### Discussion
 
-If the server is unable to deliver all of the changed results with this operation object, it sets this property to [`true`](https://developer.apple.com/documentation/swift/true) before executing the block in the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) property. To fetch the remaining changes, create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object using the change token that the server returns.
+If the server is unable to deliver all of the changed results with this operation object, it sets this property to [`true`](https://developer.apple.com/documentation/Swift/true) before executing the block in the [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) property. To fetch the remaining changes, create a new [`CKFetchRecordChangesOperation`](ckfetchrecordchangesoperation.md) object using the change token that the server returns.
 
 ## See Also
 

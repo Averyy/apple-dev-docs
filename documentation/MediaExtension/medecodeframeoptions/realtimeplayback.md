@@ -16,7 +16,7 @@ var realTimePlayback: Bool { get set }
 
 #### Discussion
 
-The system sets this value to [`false`](https://developer.apple.com/documentation/swift/false) during all uses other than 1x forward real-time playback, including seeking, playback at other rates, and export.
+The system sets this value to [`false`](https://developer.apple.com/documentation/Swift/false) during all uses other than 1x forward real-time playback, including seeking, playback at other rates, and export.
 
 This hint only applies to the current decode session. If multiple instances of a decoder operate at the same time, it may not be acceptable to use a low-power mode if the system can’t sustain real-time playback across all the streams.
 

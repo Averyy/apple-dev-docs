@@ -21,7 +21,7 @@ var counterSet: (any MTLCounterSet)? { get set }
 
 #### Discussion
 
-Assign this property to one of the counter sets in a [`MTLDevice`](mtldevice.md) instance’s [`counterSets`](mtldevice/countersets.md) property.
+Assign this property to one of the counter sets in an [`MTLDevice`](mtldevice.md) instance’s [`counterSets`](mtldevice/countersets.md) property.
 
 ## See Also
 

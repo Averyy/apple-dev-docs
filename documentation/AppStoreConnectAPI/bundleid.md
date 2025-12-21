@@ -20,7 +20,7 @@ object BundleId
 - [object BundleId.Attributes](bundleid/attributes-data.dictionary.md)
   Attributes that describe a Bundle IDs resource.
 - [object BundleId.Relationships](bundleid/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

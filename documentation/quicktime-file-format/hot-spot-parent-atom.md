@@ -5,9 +5,6 @@
 
 An atom that is the parent for all hot spot atoms for the node.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The hot spot parent atom is the parent for all hot spot atoms for the node. The atom type of the hot spot parent atom is `kQTVRHotSpotParentAtomType` (`'hspa'`) and the atom type of the each hot spot atom is `kQTVRHotSpotAtomType` (`'hots'`). The atom ID of each hot spot atom is the hot spot ID for the corresponding hot spot. The hot spot ID is determined by its color index value as it is stored in the hot spot image track.

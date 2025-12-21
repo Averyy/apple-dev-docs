@@ -20,6 +20,11 @@ The nearest interpolation mode where values are interpolated using the closest n
 case nearestNeighbor
 ```
 
+## See Also
+
+- [MLTensor.ResizeMethod.bilinear(alignCorners:)](mltensor/resizemethod/bilinear(aligncorners:).md)
+  The bilinear interpolation mode where values are computed using bilinear interpolation of 4 neighboring pixels.
+
 
 ---
 

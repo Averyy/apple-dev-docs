@@ -20,7 +20,7 @@ var showsRouteButton: Bool { get set }
 
 #### Discussion
 
-The route button is visible by default when there’s more than one audio output route available. To hide the route button, set this property’s value to [`false`](https://developer.apple.com/documentation/swift/false).
+The route button is visible by default when there’s more than one audio output route available. To hide the route button, set this property’s value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

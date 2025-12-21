@@ -85,7 +85,7 @@ Here’s a list of frameworks and features that behave differently in visionOS:
 -  The system reports a maximum of two simultaneous touch inputs — one for each of the person’s hands. All system gesture recognizers handle these inputs appropriately, including for zoom and rotation gestures that require multiple fingers. If you have custom gesture recognizers that require more than two points of interaction, update them to support only one or two touches in visionOS.
 -  Some APIs are unavailable in visionOS.
 -  The framework does nothing in visionOS. Check the [`deviceCapabilities`](https://developer.apple.com/documentation/NearbyInteraction/NISession/deviceCapabilities) property of your session to determine whether features are available.
--  Calls to the [`FamilyControls`](https://developer.apple.com/documentation/FamilyControls) framework do nothing in visionOS.
+-  Calls to the [`Family Controls`](https://developer.apple.com/documentation/FamilyControls) framework do nothing in visionOS.
 -  visionOS doesn’t report touches of type [`UITouch.TouchType.pencil`](https://developer.apple.com/documentation/UIKit/UITouch/TouchType/pencil), but it does report other types of touches.
 -  Use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) class to determine your app’s authorization status.
 -  Check the [`isSupported`](https://developer.apple.com/documentation/ProximityReader/PaymentCardReader/isSupported) property of the card reader object to determine if Tap to Pay on iPhone is available.

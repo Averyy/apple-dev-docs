@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram showing a single-finger tap gesture](https://docs-assets.developer.apple.com/published/036f7d602568a88e8e03f3a5ef12b610/media-3004402%402x.png)
+![A diagram showing a single-finger tap gesture.](https://docs-assets.developer.apple.com/published/a887e9044bc2a049f101627e199a9db3/handling-tap-gestures-1%402x.png)
 
 A [`UITapGestureRecognizer`](uitapgesturerecognizer.md) object provides event handling capabilities similar to those of a button — it detects a tap in its view and reports that tap to your action method. Tap gestures are discrete, so your action method is called only when the tap gesture is recognized successfully. You can configure a tap gesture recognizer to require any number of taps — for example, single taps or double taps — before your action method is called.
 
@@ -35,7 +35,7 @@ The following code shows an action method that responds to a successful tap in a
 
 If the code for your tap gesture recognizer isn’t called, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - The number of taps was equal to the number specified in the [`numberOfTapsRequired`](uitapgesturerecognizer/numberoftapsrequired.md) property.
 - The number of fingers was equal to the number specified in the [`numberOfTouchesRequired`](uitapgesturerecognizer/numberoftouchesrequired.md) property.
 

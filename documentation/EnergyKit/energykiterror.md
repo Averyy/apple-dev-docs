@@ -6,10 +6,10 @@
 A specialized error that provides localized messages describing the error and why it occurred.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -21,17 +21,23 @@ enum EnergyKitError
 
 ### Viewing error reasons
 - [EnergyKitError.guidanceUnavailable](energykiterror/guidanceunavailable.md)
-  The system failed to retrieve guidance for the requested location.
+  An error that indicates the framework fails to provide guidance for a location.
 - [EnergyKitError.inProgress](energykiterror/inprogress.md)
-  A request is already in progress.
+  An error that indicates a request is already in progress.
 - [EnergyKitError.invalidLoadEvent](energykiterror/invalidloadevent.md)
-  The load event payload is invalid.
+  An error that indicates an invalid load event.
 - [EnergyKitError.permissionDenied](energykiterror/permissiondenied.md)
-  The client doesn’t have permission to access the requested API.
+  An error that indicates the client doesn’t have permission to access a requested API.
 - [EnergyKitError.serviceUnavailable](energykiterror/serviceunavailable.md)
-  The requested service failed to start.
+  An error that indicates when a requested service fails to start.
 - [EnergyKitError.venueUnavailable](energykiterror/venueunavailable.md)
-  The requested energy venue doesn’t exist.
+  An error that indicates a referenced venue is invalid, nonexistent, or restricted by the person.
+- [EnergyKitError.locationServicesDenied](energykiterror/locationservicesdenied.md)
+  An error that indicates that Location Services is off in the home’s settings.
+- [EnergyKitError.rateLimitExceeded](energykiterror/ratelimitexceeded.md)
+  An error that indicates the app exceeds the rate limit for using the framework.
+- [EnergyKitError.unsupportedRegion](energykiterror/unsupportedregion.md)
+  An error that indicates the device resides in an unsupported region.
 ### Reading error messages
 - [var errorDescription: String?](energykiterror/errordescription.md)
   A localized message describing what error occurred.
@@ -41,18 +47,6 @@ enum EnergyKitError
   A localized message providing text if the user requests help
 - [var recoverySuggestion: String?](energykiterror/recoverysuggestion.md)
   A localized message describing how to recover from the failure.
-### Operators
-- [static func == (EnergyKitError, EnergyKitError) -> Bool](energykiterror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](energykiterror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](energykiterror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](energykiterror/equatable-implementations.md)
-- [Error Implementations](energykiterror/error-implementations.md)
 
 ## Relationships
 

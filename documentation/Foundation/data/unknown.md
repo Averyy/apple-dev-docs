@@ -1,12 +1,15 @@
-# +=(_:_:)
+# ==(_:_:)
 
 **Framework**: Foundation  
 **Kind**: op
 
-Appends the elements of a sequence to a range-replaceable collection.
+Returns `true` if the two `Data` arguments are equal.
 
 **Availability**:
-- Mac Catalyst 13.0+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- macOS 10.10+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -14,28 +17,10 @@ Appends the elements of a sequence to a range-replaceable collection.
 ## Declaration
 
 ```swift
-static func += <Other>(lhs: inout Self, rhs: Other) where Other : Sequence, Self.Element == Other.Element
+static func == (d1: Data, d2: Data) -> Bool
 ```
-
-#### Discussion
-
-Use this operator to append the elements of a sequence to the end of range-replaceable collection with same `Element` type. This example appends the elements of a `Range<Int>` instance to an array of integers.
-
-```None
-var numbers = [1, 2, 3, 4, 5]
-numbers += 10...15
-print(numbers)
-// Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
-```
-
-> **Note**: O(), where  is the length of the right-hand-side argument.
-
-## Parameters
-
-- `lhs`: The array to append to.
-- `rhs`: A collection or finite sequence.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/data/+=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/data/==(_:_:))*

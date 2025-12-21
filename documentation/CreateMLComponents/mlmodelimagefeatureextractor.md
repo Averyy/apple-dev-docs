@@ -38,13 +38,6 @@ struct MLModelImageFeatureExtractor
   Uses the CoreML model to create image features from the input pixel buffer.
 - [MLModelImageFeatureExtractor.Error](mlmodelimagefeatureextractor/error.md)
   CoreML Extraction error.
-### Type Aliases
-- [MLModelImageFeatureExtractor.Input](mlmodelimagefeatureextractor/input.md)
-  The input type.
-- [MLModelImageFeatureExtractor.Output](mlmodelimagefeatureextractor/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](mlmodelimagefeatureextractor/transformer-implementations.md)
 
 ## Relationships
 

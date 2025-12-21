@@ -4,6 +4,19 @@
 
 Apply sharpening to images.
 
+## Topics
+
+### Filters
+- [class func sharpenLuminance() -> any CIFilter & CISharpenLuminance](cifilter-swift.class/sharpenluminance.md)
+  Applies a sharpening effect to an image.
+- [class func unsharpMask() -> any CIFilter & CIUnsharpMask](cifilter-swift.class/unsharpmask.md)
+  Increases an image’s contrast between two colors.
+### Protocols
+- [protocol CISharpenLuminance](cisharpenluminance.md)
+  The properties you use to configure a sharpen luminance filter.
+- [protocol CIUnsharpMask](ciunsharpmask.md)
+  The properties you use to configure an unsharp mask filter.
+
 ## See Also
 
 - [Blur Filters](blur-filters.md)

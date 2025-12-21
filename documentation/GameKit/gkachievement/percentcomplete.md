@@ -26,7 +26,7 @@ var percentComplete: Double { get set }
 
 #### Discussion
 
-The default value for a newly initialized achievement object is `0.0`. The range of legal values is between `0.0` and `100.0`, inclusive. You decide how to calculate the percentage and when to change it.
+The default value for a newly initialized achievement object is `0`. The range of legal values is between `0` and `100`, inclusive. You decide how to calculate the percentage and when to change it. This value must be an integer and can’t contain a decimal.
 
 For example, if the player earns an achievement for discovering a location in your game, then you’d report the achievement as 100 percent complete the first time you report progress to Game Center. On the other hand, for an achievement like “Capture 10 pirates”, your reporting mechanism increments by 10 percent each time the player captures a pirate.
 

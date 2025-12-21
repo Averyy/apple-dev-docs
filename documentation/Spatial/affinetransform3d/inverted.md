@@ -13,7 +13,6 @@ Returns a new transform that results from inverting an existing affine transform
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

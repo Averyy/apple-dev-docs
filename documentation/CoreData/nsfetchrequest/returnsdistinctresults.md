@@ -24,7 +24,7 @@ var returnsDistinctResults: Bool { get set }
 
 This value is used only if a value has been set for [`propertiesToFetch`](nsfetchrequest/propertiestofetch.md).
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if when the fetch is executed, it returns only distinct values for the fields specified by [`propertiesToFetch`](nsfetchrequest/propertiestofetch.md); otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if when the fetch is executed, it returns only distinct values for the fields specified by [`propertiesToFetch`](nsfetchrequest/propertiestofetch.md); otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

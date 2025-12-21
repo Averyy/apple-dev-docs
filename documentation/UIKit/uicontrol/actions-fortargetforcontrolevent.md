@@ -50,6 +50,8 @@ Use this method to determine what action methods are called on the specified obj
 - [var allControlEvents: UIControl.Event](uicontrol/allcontrolevents.md)
   Returns the events for which the control has associated actions.
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](uicontrol/enumerateeventhandlers(_:).md)
+- [UIControl.Event](uicontrol/event.md)
+  Constants describing the types of events possible for controls.
 
 
 ---

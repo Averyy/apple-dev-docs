@@ -6,7 +6,7 @@ Verify the login request and create a JSON Web Encryption (JWE) response.
 
 #### Overview
 
-Use the code snippets in this article to complete the process of encryption verification that works with platform SSO:
+Use the code snippets in this article to complete the process of encryption verification that works with Platform SSO:
 
 - Create device signing and encryption keys
 - Sign the login request and encrypt the response

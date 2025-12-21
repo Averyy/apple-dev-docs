@@ -16,7 +16,7 @@ var highlightLine2: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the text in row two is rendered with a highlight. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the text in line one is rendered with a highlight. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the text in row two is rendered with a highlight. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the text in line one is rendered with a highlight. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

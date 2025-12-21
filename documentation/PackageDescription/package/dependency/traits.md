@@ -6,7 +6,7 @@
 The dependencies traits configuration.
 
 **Availability**:
-- SwiftPM 999.0+
+- SwiftPM 6.1+
 
 ## Declaration
 

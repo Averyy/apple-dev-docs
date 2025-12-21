@@ -26,7 +26,7 @@ A new [`MTLBuffer`](mtlbuffer.md) instance if the method completes successfully;
 
 #### Discussion
 
-> ❗ **Important**:  The existing memory allocation must exist within a single virtual memory (VM) region.
+> ❗ **Important**:  The existing memory allocation needs to exist within a single virtual memory (VM) region.
 
 ## Parameters
 

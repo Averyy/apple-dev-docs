@@ -49,7 +49,7 @@ class AVSampleBufferDisplayLayer
 - [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
   The key for the corresponding error.
 ### Deprecated
-- [Deprecated Symbols](avsamplebufferdisplaylayer-deprecated-symbols.md)
+- [Deprecated symbols](avsamplebufferdisplaylayer-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships

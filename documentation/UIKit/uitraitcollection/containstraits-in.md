@@ -20,7 +20,7 @@ func containsTraits(in trait: UITraitCollection?) -> Bool
 
 #### Return Value
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains all of the trait values in the trait collection passed in the `trait` parameter, and returns [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver contains all of the trait values in the trait collection passed in the `trait` parameter, and returns [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

@@ -27,7 +27,7 @@ func SecKeyCreateRandomKey(_ parameters: CFDictionary, _ error: UnsafeMutablePoi
 
 #### Return Value
 
-The newly generated private key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the key when you are done with it.
+The newly generated private key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the key when you are done with it.
 
 #### Discussion
 

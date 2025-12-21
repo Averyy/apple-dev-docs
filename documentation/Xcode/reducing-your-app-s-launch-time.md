@@ -158,11 +158,9 @@ In Instruments, Points of Interest displays the os_signposts in its timeline. Yo
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
 - [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
-  Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
+  Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 - [Reducing terminations in your app](reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 
 
 ---

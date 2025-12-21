@@ -6,7 +6,7 @@
 Asynchronously generates a texture resource from an in-memory Core Graphics image.
 
 **Availability**:
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

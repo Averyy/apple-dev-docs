@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s starting color blend facto
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorBlendFactorRange: CGFloat { get set }
 ```
 

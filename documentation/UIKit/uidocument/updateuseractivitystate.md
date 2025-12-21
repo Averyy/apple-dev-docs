@@ -14,13 +14,12 @@ Updates the state of the given user activity.
 ## Declaration
 
 ```swift
-@MainActor
 func updateUserActivityState(_ userActivity: NSUserActivity)
 ```
 
 #### Discussion
 
-The default implementation of this method puts the document’s [`fileURL`](https://developer.apple.com/documentation/AppKit/NSDocument/fileURL) into the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary with the [`userActivityURLKey`](uidocument/useractivityurlkey.md). [`UIDocument`](uidocument.md) automatically sets the [`needsSave`](https://developer.apple.com/documentation/Foundation/NSUserActivity/needsSave) property of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object to [`true`](https://developer.apple.com/documentation/swift/true) when the [`fileURL`](https://developer.apple.com/documentation/AppKit/NSDocument/fileURL) changes.
+The default implementation of this method puts the document’s [`fileURL`](uidocument/fileurl.md) into the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary with the [`userActivityURLKey`](uidocument/useractivityurlkey.md). [`UIDocument`](uidocument.md) automatically sets the [`needsSave`](https://developer.apple.com/documentation/Foundation/NSUserActivity/needsSave) property of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object to [`true`](https://developer.apple.com/documentation/Swift/true) when the [`fileURL`](uidocument/fileurl.md) changes.
 
 ## Parameters
 

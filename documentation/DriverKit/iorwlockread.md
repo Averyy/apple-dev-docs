@@ -17,6 +17,8 @@ void IORWLockRead(struct IORWLock * lock);
 
 #### Discussion
 
+Lock a read/write lock for read.
+
 Lock the lock for read, allowing multiple readers when there are no writers. If the lock is held for write, block waiting for its unlock. Locking the lock recursively from one thread, for read or write, can result in deadlock.
 
 ## Parameters

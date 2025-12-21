@@ -13,7 +13,6 @@ An optimizer that uses the root mean square propagation (RMSProp) optimization m
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A dictionary that contains additional data about the error code.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

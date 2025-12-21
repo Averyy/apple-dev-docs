@@ -28,12 +28,8 @@ This class accumulates text data that will later be used to train a language mod
 
 ## See Also
 
-- [func export(to: URL) async throws](sfcustomlanguagemodeldata/export(to:).md)
-  Export the accumulated data to a file.
-- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](sfcustomlanguagemodeldata/insert(phrasecountgenerator:).md)
-  Add a stream of samples to the body of training data.
-- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
-  Add a custom term to the vocabulary.
+- [SFCustomLanguageModelData.PhraseCount](sfcustomlanguagemodeldata/phrasecount.md)
+  A phrase used to bias the language model, along with a weight influencing the relative strength of the bias.
 
 
 ---

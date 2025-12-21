@@ -36,8 +36,11 @@ protocol SymbolEffect : Hashable, Sendable
 - [static var variableColor: VariableColorSymbolEffect](symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [static var breathe: BreatheSymbolEffect](symboleffect/breathe.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [static var rotate: RotateSymbolEffect](symboleffect/rotate.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [static var wiggle: WiggleSymbolEffect](symboleffect/wiggle.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 ### Accessing the configuration
 - [var configuration: SymbolEffectConfiguration](symboleffect/configuration.md)
   A configuration for a symbol effect.

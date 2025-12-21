@@ -267,7 +267,7 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 - [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
 - [class let willUnhideNotification: NSNotification.Name](nsapplication/willunhidenotification.md)
   Posted at the start of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is about to become visible.
 - [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)

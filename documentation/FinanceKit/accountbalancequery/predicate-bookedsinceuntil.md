@@ -18,7 +18,12 @@ static func predicate(bookedSince startDate: Date, until endDate: Date? = nil) -
 ## Parameters
 
 - `startDate`: The date to start collecting account balances.
-- `endDate`: The date to end collection account balances. This parameter is optional. If   this parameter isn’t included,   the method returns all account balances since the  .
+- `endDate`: The date to end collection account balances. This parameter is optional. If this parameter isn’t included, the method returns all account balances since the  .
+
+## See Also
+
+- [static func predicate(availableSince: Date, until: Date?) -> Predicate<AccountBalance>](accountbalancequery/predicate(availablesince:until:).md)
+  A predicate that returns available account balances since a specified date, and, optionally, until another date.
 
 
 ---

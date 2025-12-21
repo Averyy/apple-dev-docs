@@ -3,13 +3,13 @@
 **Framework**: Declared Age Range  
 **Kind**: property
 
-The parental controls turned on as a part of the response.
+The parental controls that are active on the device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,16 +19,16 @@ var activeParentalControls: AgeRangeService.ParentalControls
 
 #### Discussion
 
-If empty, the person doesn’t have parental controls turned on as part of the response. For example, if a person has no parental controls enabled on their device, this would be empty.
+It’s important to note that the minimum age of legal adulthood varies depending on the region associated with someone’s Apple account.  If [`activeParentalControls`](agerangeservice/agerange/activeparentalcontrols.md) is empty, either the device doesn’t have parental controls enabled as part of the response or a person’s age doesn’t fall into the reporting range for the specific region.
 
 ## See Also
 
 - [var lowerBound: Int?](agerangeservice/agerange/lowerbound.md)
-  The lower limit of the person’s age range.
+  The minimum age in the person’s declared age range.
 - [var upperBound: Int?](agerangeservice/agerange/upperbound.md)
-  The upper limit of the person’s age range.
+  The maximum age in the person’s declared age range.
 - [var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?](agerangeservice/agerange/agerangedeclaration.md)
-  The sharer of the age range.
+  Information about how the person set their age range.
 
 
 ---

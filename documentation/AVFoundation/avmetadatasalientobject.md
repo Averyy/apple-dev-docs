@@ -24,7 +24,7 @@ This object is an immutable type that describes the various features of the sali
 
 ## Topics
 
-### Inspecting Metadata
+### Inspecting metadata
 - [var objectID: Int](avmetadatasalientobject/objectid.md)
   An integer value that defines the unique identifier of an object in a picture.
 

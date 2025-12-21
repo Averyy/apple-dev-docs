@@ -6,7 +6,7 @@
 Sends a video frame to all the connected receivers using its sample buffer representation.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ func send(videoFrame: ImmersiveVideoFrame, presentationTimeStamp: CMTime, frameD
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails while sending the frame, for example, if the frame has an invalid format or data.
+> **Note**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
 
 ## Parameters
 

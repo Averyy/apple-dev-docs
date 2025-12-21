@@ -6,8 +6,8 @@
 The entitlement the system requires for an app to use the Wi-Fi Aware framework.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Discussion
 

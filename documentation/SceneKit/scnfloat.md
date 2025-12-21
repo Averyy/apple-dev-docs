@@ -17,7 +17,7 @@ The element type for SceneKit vectors and matrices.
 ## Declaration
 
 ```swift
-typealias SCNFloat = Float
+typealias SCNFloat = CGFloat
 ```
 
 

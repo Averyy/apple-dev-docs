@@ -29,6 +29,8 @@ The message string is displayed below the title string and is less prominent. Us
   The title of the alert.
 - [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
   The style of the alert controller.
+- [UIAlertController.Style](uialertcontroller/style.md)
+  Constants indicating the type of alert to display.
 
 
 ---

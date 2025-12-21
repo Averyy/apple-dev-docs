@@ -20,7 +20,7 @@ class AVCaptureVideoPreviewLayer
 
 ## Mentions
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
 
 #### Overview
 
@@ -47,24 +47,29 @@ class PreviewView: UIView {
 
 ## Topics
 
-### Creating a Preview Layer
+### Creating a preview layer
 - [init(session: AVCaptureSession)](avcapturevideopreviewlayer/init(session:).md)
   Creates a layer to preview the visual output of a capture session.
 - [init(sessionWithNoConnection: AVCaptureSession)](avcapturevideopreviewlayer/init(sessionwithnoconnection:).md)
   Creates a layer to preview the visual output of a capture session, without making connections to eligible video inputs.
-### Layer Configuration
+### Layer configuration
 - [var isPreviewing: Bool](avcapturevideopreviewlayer/ispreviewing.md)
   A Boolean value that indicates whether the layer is rendering video frames from its source.
 - [var videoGravity: AVLayerVideoGravity](avcapturevideopreviewlayer/videogravity.md)
   A value that indicates how the layer displays video content within its bounds.
-### Session Configuration
+### Configuring deferred start
+- [var isDeferredStartSupported: Bool](avcapturevideopreviewlayer/isdeferredstartsupported.md)
+  A `BOOL` value that indicates whether the preview layer supports deferred start.
+- [var isDeferredStartEnabled: Bool](avcapturevideopreviewlayer/isdeferredstartenabled.md)
+  A `BOOL` value that indicates whether to defer starting this preview layer.
+### Session configuration
 - [var session: AVCaptureSession?](avcapturevideopreviewlayer/session.md)
   A capture session with visual output to preview.
 - [var connection: AVCaptureConnection?](avcapturevideopreviewlayer/connection.md)
   An object that describes the connection from the layer to a particular input port.
 - [func setSessionWithNoConnection(AVCaptureSession)](avcapturevideopreviewlayer/setsessionwithnoconnection(_:).md)
   Associates a session with the layer without automatically forming a connection to an eligible input port.
-### Converting Between Coordinate Spaces
+### Converting between coordinate spaces
 - [func layerPointConverted(fromCaptureDevicePoint: CGPoint) -> CGPoint](avcapturevideopreviewlayer/layerpointconverted(fromcapturedevicepoint:).md)
   Converts a point from the coordinate space of the capture device to the coordinate space of the layer.
 - [func captureDevicePointConverted(fromLayerPoint: CGPoint) -> CGPoint](avcapturevideopreviewlayer/capturedevicepointconverted(fromlayerpoint:).md)
@@ -76,13 +81,8 @@ class PreviewView: UIView {
 - [func transformedMetadataObject(for: AVMetadataObject) -> AVMetadataObject?](avcapturevideopreviewlayer/transformedmetadataobject(for:).md)
   Converts a metadata object’s visual properties to layer coordinates.
 ### Deprecated
-- [Deprecated Symbols](avcapturevideopreviewlayer-deprecated-symbols.md)
+- [Deprecated symbols](avcapturevideopreviewlayer-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Instance Properties
-- [var isDeferredStartEnabled: Bool](avcapturevideopreviewlayer/isdeferredstartenabled.md)
-  A Boolean value that indicates whether to defer starting this preview layer.
-- [var isDeferredStartSupported: Bool](avcapturevideopreviewlayer/isdeferredstartsupported.md)
-  A Boolean value that indicates whether the preview layer supports deferred start.
 
 ## Relationships
 

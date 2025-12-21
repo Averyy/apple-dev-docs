@@ -9,8 +9,8 @@ A structure that contains information about user-configured controls.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -41,10 +41,20 @@ struct ControlInfo
 
 ## See Also
 
+- [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
+  Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
+- [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
+  Customize the way controls display across the system and offer people the ability to configure them.
 - [struct StaticControlConfiguration](staticcontrolconfiguration.md)
-  The description of a control widget that has no user-configurable options.
+  The description of a control that has no user-configurable options.
 - [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
-  The description of a control widget that uses a custom intent to provide user-configurable options.
+  The description of a control that uses a custom app intent to provide user-configurable options.
+- [class ControlCenter](controlcenter.md)
+  An object you use to access configuration information for controls and reload them.
+- [struct ControlWidgetButton](controlwidgetbutton.md)
+  A control template representing a button.
+- [struct ControlWidgetToggle](controlwidgettoggle.md)
+  A control template representing a toggle.
 
 
 ---

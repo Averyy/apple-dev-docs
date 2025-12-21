@@ -11,12 +11,12 @@ The city of the place.
 ## Declaration
 
 ```swift
-attribute string? locality;
+locality?: string;
 ```
 
 #### Discussion
 
-For example, the [`locality`](place/locality.md) for the Golden Gate Park is `“San Francisco”`.
+For example, the [`locality`](place/locality.md) for Golden Gate Park in San Francisco, California, is `"San Francisco"`.
 
 ## See Also
 

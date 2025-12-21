@@ -22,7 +22,7 @@ func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
 
 #### Return Value
 

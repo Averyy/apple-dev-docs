@@ -34,8 +34,6 @@ struct Event
   A description of the event’s origin.
 - [var totalItemCount: Int?](event/totalitemcount.md)
   The total number of items being processed.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](event/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 

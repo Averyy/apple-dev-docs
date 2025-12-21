@@ -22,7 +22,7 @@ optional func userActivity(_ userActivity: NSUserActivity, didReceive inputStrea
 
 #### Discussion
 
-If [`supportsContinuationStreams`](nsuseractivity/supportscontinuationstreams.md) is [`true`](https://developer.apple.com/documentation/swift/true), the continuing app can request streams back to the originating app. This delegate callback is received with the streams from the continuing side. The streams are provided in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
+If [`supportsContinuationStreams`](nsuseractivity/supportscontinuationstreams.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the continuing app can request streams back to the originating app. This delegate callback is received with the streams from the continuing side. The streams are provided in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
 
 Continuation streams are an optional feature of Handoff, and most user activities do not need them for successful continuation. When streams are needed, a simple request from the continuing app accompanied by a response from the originating app is enough for most continuation events.
 

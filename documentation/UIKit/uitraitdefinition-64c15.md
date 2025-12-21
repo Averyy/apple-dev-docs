@@ -56,7 +56,7 @@ extension UIMutableTraits {
 }
 ```
 
-A trait type serves as a unique key, identifying a trait within a trait collection. Methods such as [`subscript(_:)`](uitraitcollection/subscript(_:)-6cdgq.md) and `UIPresentationController/registerForTraitChanges(_:handler:)` take a trait type to identify the trait in a collection.
+A trait type serves as a unique key, identifying a trait within a trait collection. Methods such as [`subscript(_:)`](uitraitcollection/subscript(_:)-6cdgq.md) take a trait type to identify the trait in a collection.
 
 Traits defined in Swift aren’t automatically bridged to Objective-C. If you need to access your custom trait from both Swift and Objective-C code, define the trait in both languages. For details, see the Objective-C documentation for [`UITraitDefinition`](uitraitdefinition-3572h.md).
 
@@ -85,6 +85,7 @@ Traits defined in Swift aren’t automatically bridged to Objective-C. If you ne
 - [UITraitLegibilityWeight](uitraitlegibilityweight-swift.struct.md)
 - [UITraitListEnvironment](uitraitlistenvironment-swift.struct.md)
 - [UITraitPreferredContentSizeCategory](uitraitpreferredcontentsizecategory-swift.struct.md)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
 - [UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)
 - [UITraitSplitViewControllerLayoutEnvironment](uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
 - [UITraitTabAccessoryEnvironment](uitraittabaccessoryenvironment-swift.struct.md)
@@ -97,6 +98,8 @@ Traits defined in Swift aren’t automatically bridged to Objective-C. If you ne
 
 ## See Also
 
+- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+  Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
 - [protocol UIMutableTraits](uimutabletraits-13ja5.md)
   A mutable container of traits.
 - [typealias UITrait](uitrait-9423.md)

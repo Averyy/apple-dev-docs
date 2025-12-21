@@ -22,7 +22,7 @@ func imageblockMemoryLength(forDimensions imageblockDimensions: MTLSize) -> Int
 
 #### Discussion
 
-The imageblock dimensions must match a valid tile size, such as one of the following:
+The imageblock dimensions need to match a valid tile size, such as one of the following:
 
 - 32 x 32
 - 32 x 16

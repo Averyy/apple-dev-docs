@@ -6,8 +6,8 @@
 Send and receive standards-based messages over cellular networks.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Overview
 
@@ -26,6 +26,8 @@ To have access to the TelephonyMessageKit API you must add the [`Default Carrier
 ## Topics
 
 ### Essentials
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+  Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 - [class TelephonyMessagingSession](telephonymessagingsession.md)
   An object that coordinates interaction with the TelephonyMessagingKit framework.
 - [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)

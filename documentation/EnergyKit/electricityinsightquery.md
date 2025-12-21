@@ -6,10 +6,10 @@
 A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -36,12 +36,6 @@ struct ElectricityInsightQuery
   A property that specifies whether the response contains imported or exported energy.
 - [let range: DateInterval](electricityinsightquery/range.md)
   The requested date range.
-### Decoding
-- [init(from: any Decoder) throws](electricityinsightquery/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electricityinsightquery/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -54,11 +48,11 @@ struct ElectricityInsightQuery
 ## See Also
 
 - [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that represents displayable environmental impact information for electricity usage.
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [actor ElectricityInsightService](electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
-  A measurement of electricity consumption.
+  A protocol for types that can measure electricity usage data.
 
 
 ---

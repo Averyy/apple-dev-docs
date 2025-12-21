@@ -4,13 +4,13 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,9 +22,9 @@ class BlockedIdentity
 
 ### Instance Properties
 - [var contact: CNContact](ckshare/blockedidentity/contact.md)
-  Returns a displayable `CNContact` for the blocked identity, or a new `CNContact` if none exists in the user’s contacts. Provides a standardized format for the blocked identity’s underlying lookup info in the user identity. Use when displaying the blocked identity information to other participants in application UI.
+  A displayable `CNContact` representing the blocked user.
 - [var userIdentity: CKUserIdentity](ckshare/blockedidentity/useridentity.md)
-  The user identity this blocked identity represents.
+  The identity of the user who has been blocked from requesting access to the share.
 
 ## Relationships
 

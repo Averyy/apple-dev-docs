@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Calls a closure with a mutable pointer to the backing `AudioChannelLayout`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -17,6 +19,14 @@
 ```swift
 mutating func withUnsafeMutablePointer<Result>(_ body: (UnsafeMutablePointer<AudioChannelLayout>) throws -> Result) rethrows -> Result
 ```
+
+#### Discussion
+
+It is invalid to increase mNumberChannelDescriptions.
+
+## Parameters
+
+- `body`: A closure that is called with a mutable pointer to the   backing  .
 
 
 ---

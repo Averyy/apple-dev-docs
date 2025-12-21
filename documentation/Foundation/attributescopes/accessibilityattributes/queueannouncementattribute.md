@@ -13,7 +13,6 @@ An attribute to define if speech announcements spoken by VoiceOver should be que
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

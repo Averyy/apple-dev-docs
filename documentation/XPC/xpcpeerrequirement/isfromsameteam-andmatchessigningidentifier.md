@@ -6,8 +6,8 @@
 Create a requirement that the peer is signed with the same team identifier as the current process. If provided, additionally requires that the peer has the specified signing identifier.
 
 **Availability**:
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

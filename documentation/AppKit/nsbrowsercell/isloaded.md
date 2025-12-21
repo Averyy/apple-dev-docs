@@ -17,7 +17,7 @@ var isLoaded: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser cell’s state has been set and the cell is ready to display.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the browser cell’s state has been set and the cell is ready to display.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var transportControlsSupported: Bool { get }
 
 #### Discussion
 
-For devices with transport controls, such as AVC tape-based camcorders or pro capture devices with RS422 deck control, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true). If transport controls aren’t supported, none of the associated transport control methods and properties are available to the device.
+For devices with transport controls, such as AVC tape-based camcorders or pro capture devices with RS422 deck control, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). If transport controls aren’t supported, none of the associated transport control methods and properties are available to the device.
 
 This property is key-value observable.
 

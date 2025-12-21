@@ -20,7 +20,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldBreakLineByW
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current line break point is acceptable; [`false`](https://developer.apple.com/documentation/swift/false) if the layout manager should find the next break point opportunity before `charIndex`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the current line break point is acceptable; [`false`](https://developer.apple.com/documentation/Swift/false) if the layout manager should find the next break point opportunity before `charIndex`.
 
 ## Parameters
 

@@ -229,6 +229,7 @@ If the behavior you want to add supplements that of the existing class, you coul
   Options for searches and insertions using [`index(of:inSortedRange:options:usingComparator:)`](nsarray/index(of:insortedrange:options:usingcomparator:).md).
 ### Initializers
 - [convenience init(array: NSArray)](nsarray/init(array:)-9rh7.md)
+  Initializes a newly allocated array by placing in it the objects contained in a given array.
 - [convenience init(contentsOfURL: URL, error: ()) throws](nsarray/init(contentsofurl:error:).md)
 - [convenience init(objects: Any...)](nsarray/init(objects:).md)
 ### Instance Methods

@@ -48,6 +48,8 @@ The default value is [`NSURLRequest.Attribution.developer`](https://developer.ap
   A value that represents the restrictions used by the asset when resolving references to external media data.
 - [let AVURLAssetShouldSupportAliasDataReferencesKey: String](avurlassetshouldsupportaliasdatareferenceskey.md)
   A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 
 ---

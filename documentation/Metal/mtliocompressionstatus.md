@@ -21,11 +21,11 @@ enum MTLIOCompressionStatus
 
 #### Overview
 
-The [`MTLIOFlushAndDestroyCompressionContext(_:)`](mtlioflushanddestroycompressioncontext(_:).md) returns a [`MTLIOCompressionStatus`](mtliocompressionstatus.md) instance to reflect the final state of a compression context.
+The [`MTLIOFlushAndDestroyCompressionContext(_:)`](mtlioflushanddestroycompressioncontext(_:).md) returns an [`MTLIOCompressionStatus`](mtliocompressionstatus.md) instance to reflect the final state of a compression context.
 
 ## Topics
 
-### Compression Result States
+### Compression result states
 - [MTLIOCompressionStatus.complete](mtliocompressionstatus/complete.md)
   Indicates the compression API successfully flushed and destroyed a compression context.
 - [MTLIOCompressionStatus.error](mtliocompressionstatus/error.md)

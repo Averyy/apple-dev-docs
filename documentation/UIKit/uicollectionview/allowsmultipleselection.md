@@ -25,9 +25,9 @@ var allowsMultipleSelection: Bool { get set }
 
 #### Discussion
 
-This property controls whether multiple items can be selected simultaneously. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+This property controls whether multiple items can be selected simultaneously. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), tapping a cell adds it to the current selection (assuming the delegate permits the cell to be selected). Tapping the cell again removes it from the selection.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), tapping a cell adds it to the current selection (assuming the delegate permits the cell to be selected). Tapping the cell again removes it from the selection.
 
 ## See Also
 

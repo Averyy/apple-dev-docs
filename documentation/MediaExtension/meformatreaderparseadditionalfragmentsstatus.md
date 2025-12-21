@@ -26,10 +26,6 @@ struct MEFormatReaderParseAdditionalFragmentsStatus
   Indicates that the format reader received one or more fragments.
 - [static var fragmentsComplete: MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus/fragmentscomplete.md)
   Indicates that the format reader can’t receive any more fragments.
-### Default Implementations
-- [Equatable Implementations](meformatreaderparseadditionalfragmentsstatus/equatable-implementations.md)
-- [OptionSet Implementations](meformatreaderparseadditionalfragmentsstatus/optionset-implementations.md)
-- [SetAlgebra Implementations](meformatreaderparseadditionalfragmentsstatus/setalgebra-implementations.md)
 
 ## Relationships
 

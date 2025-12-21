@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func thumbnail(of size: CGSize, for box: PDFDisplayBox) -> UIImage
+func thumbnail(of size: NSSize, for box: PDFDisplayBox) -> NSImage
 ```
 
 ## See Also

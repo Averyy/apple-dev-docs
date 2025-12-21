@@ -19,7 +19,7 @@ func drawBackground(in dirtyRect: NSRect)
 
 Overriding this method allows an application to draw a custom background for a table row view.
 
-By default, this method draws the background color or group row style as appropriate for the row. This method also draws the “below look” for a drop target if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+By default, this method draws the background color or group row style as appropriate for the row. This method also draws the “below look” for a drop target if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

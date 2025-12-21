@@ -22,6 +22,10 @@ func rotated(by rotation: Rotation3DFloat, around pivot: Point3DFloat) -> Point3
 
 A point that’s rotated by the specified rotation.
 
+#### Discussion
+
+Returns a point that’s rotated by a rotation around a specified pivot.
+
 ## Parameters
 
 - `rotation`: The rotation.

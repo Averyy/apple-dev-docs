@@ -15,6 +15,10 @@
 class CATapDescription
 ```
 
+#### Overview
+
+This class describes a tap object that contains an input stream.  The input stream is a mix of all of the specified processes output audio.
+
 ## Topics
 
 ### Initializers

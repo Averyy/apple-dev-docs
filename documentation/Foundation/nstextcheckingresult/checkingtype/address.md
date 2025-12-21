@@ -46,12 +46,6 @@ static var address: NSTextCheckingResult.CheckingType { get }
   Matches a phone number.
 - [static var transitInformation: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/transitinformation.md)
   Matches a transit information, for example, flight information.
-- [static var orthography: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/orthography.md)
-  Attempts to identify the language
-- [static var spelling: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/spelling.md)
-  Checks spelling.
-- [static var grammar: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/grammar.md)
-  Checks grammar.
 
 
 ---

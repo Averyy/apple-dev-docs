@@ -21,13 +21,13 @@ class func needsDisplay(forKey key: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer requires a redisplay.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layer requires a redisplay.
 
 #### Discussion
 
-Subclasses can override this method and return [`true`](https://developer.apple.com/documentation/swift/true) if the layer should be redisplayed when the value of the specified attribute changes. Animations changing the value of the attribute also trigger redisplay.
+Subclasses can override this method and return [`true`](https://developer.apple.com/documentation/Swift/true) if the layer should be redisplayed when the value of the specified attribute changes. Animations changing the value of the attribute also trigger redisplay.
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

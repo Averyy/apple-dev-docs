@@ -17,13 +17,13 @@ class func regionMonitoringEnabled() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if region monitoring is available and is currently enabled; [`false`](https://developer.apple.com/documentation/swift/false) if it is unavailable or not enabled.
+[`true`](https://developer.apple.com/documentation/Swift/true) if region monitoring is available and is currently enabled; [`false`](https://developer.apple.com/documentation/Swift/false) if it is unavailable or not enabled.
 
 #### Discussion
 
 In iOS, the user can enable or disable location services (including region monitoring) using the controls in Settings > Location Services.
 
-You should check the return value of this method before starting region monitoring updates to determine whether the user currently allows location services to be used at all. If this method returns [`false`](https://developer.apple.com/documentation/swift/false) and you start region monitoring updates anyway, the Core Location framework prompts the user to confirm asking whether location services should be reenabled.
+You should check the return value of this method before starting region monitoring updates to determine whether the user currently allows location services to be used at all. If this method returns [`false`](https://developer.apple.com/documentation/Swift/false) and you start region monitoring updates anyway, the Core Location framework prompts the user to confirm asking whether location services should be reenabled.
 
 This method does not check to see if region monitoring capabilities are actually supported by the device. Therefore, you should also check the return value of the [`regionMonitoringAvailable()`](cllocationmanager/regionmonitoringavailable().md) class method before attempting to start region monitoring services.
 

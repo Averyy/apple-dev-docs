@@ -3,8 +3,6 @@
 **Framework**: MediaExtension  
 **Kind**: property
 
-The domain of the error.
-
 **Availability**:
 - macOS 14.0+
 

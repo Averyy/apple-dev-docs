@@ -4,11 +4,11 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,10 +19,7 @@ class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheI
 
 #### Discussion
 
-```None
-      A loading UI takes the place of the element in the menu until it is fulfilled. The element may be stored
-      and re-used across menus.
-```
+Returns a placeholder menu element that is replaced with elements provided from the responder chain. A loading UI takes the place of the element in the menu until it is fulfilled. The element may be stored and re-used across menus.
 
 ## Parameters
 

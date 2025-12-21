@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-This feature is currently restricted (due to screen time restrictions, MDM profiles etc.)
+This feature is currently restricted due to Screen Time restrictions, MDM profiles, or similar.
 
 **Availability**:
 - iOS 18.0+

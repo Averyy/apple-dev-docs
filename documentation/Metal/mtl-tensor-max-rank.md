@@ -33,7 +33,8 @@ var MTL_TENSOR_MAX_RANK: Int32 { get }
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
-- [enum MTLTensorError](mtltensorerror.md)
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
 - [enum MTLTensorDataType](mtltensordatatype.md)
   The possible data types for the elements of a tensor.

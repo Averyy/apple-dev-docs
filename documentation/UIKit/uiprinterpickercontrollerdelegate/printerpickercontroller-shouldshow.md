@@ -20,7 +20,7 @@ optional func printerPickerController(_ printerPickerController: UIPrinterPicker
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the printer should be displayed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the printer should be displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 

@@ -25,11 +25,11 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow both `gestureRecognizer` and `otherGestureRecognizer` to recognize their gestures simultaneously. The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false)—no two gestures can be recognized simultaneously.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow both `gestureRecognizer` and `otherGestureRecognizer` to recognize their gestures simultaneously. The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false)—no two gestures can be recognized simultaneously.
 
 #### Discussion
 
-This method is called when recognition of a gesture by either `gestureRecognizer` or `otherGestureRecognizer` would block the other gesture recognizer from recognizing its gesture. Note that returning [`true`](https://developer.apple.com/documentation/swift/true) is guaranteed to allow simultaneous recognition; returning [`false`](https://developer.apple.com/documentation/swift/false), on the other hand, is not guaranteed to prevent simultaneous recognition because the other gesture recognizer’s delegate may return [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called when recognition of a gesture by either `gestureRecognizer` or `otherGestureRecognizer` would block the other gesture recognizer from recognizing its gesture. Note that returning [`true`](https://developer.apple.com/documentation/Swift/true) is guaranteed to allow simultaneous recognition; returning [`false`](https://developer.apple.com/documentation/Swift/false), on the other hand, is not guaranteed to prevent simultaneous recognition because the other gesture recognizer’s delegate may return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

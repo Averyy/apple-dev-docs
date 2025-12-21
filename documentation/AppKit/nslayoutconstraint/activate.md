@@ -16,7 +16,7 @@ class func activate(_ constraints: [NSLayoutConstraint])
 
 #### Discussion
 
-This convenience method provides an easy way to activate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](nslayoutconstraint/isactive.md) property of each constraint to [`true`](https://developer.apple.com/documentation/swift/true). Typically, using this method is more efficient than activating each constraint individually.
+This convenience method provides an easy way to activate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](nslayoutconstraint/isactive.md) property of each constraint to [`true`](https://developer.apple.com/documentation/Swift/true). Typically, using this method is more efficient than activating each constraint individually.
 
 ## Parameters
 

@@ -6,7 +6,7 @@
 Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -53,6 +53,22 @@ Attachment(id: "example") {
         .breakthroughEffect(.subtle)
 }
 ```
+
+##### Presentations
+
+Most system presentations appear with a breakthrough effect by default. For these cases, you can customize the type of effect by applying the [`presentationBreakthroughEffect(_:)`](view/presentationbreakthrougheffect(_:).md) modifier to the content of the presentation, like in the following example:
+
+```swift
+Button("Show Details") {
+    isShowingDetails = true
+}
+.popover(isPresented: $isShowingDetails) {
+    DetailsView()
+        .presentationBreakthroughEffect(.prominent)
+}
+```
+
+This also applies to RealityKit presentations using `RealityKit/PresentationComponent`
 
 ## Parameters
 

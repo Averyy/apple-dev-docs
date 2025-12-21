@@ -18,8 +18,8 @@ interface ApplePayError
 ## Mentions
 
 - [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
-- [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
 - [Choosing an API for Implementing Apple Pay on Your Website](choosing-an-api-for-implementing-apple-pay-on-your-website.md)
+- [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
 
 #### Overview
 
@@ -55,15 +55,6 @@ Apple Pay highlights the postal code field and displays the message text on the 
   The field name that contains the error on the payment sheet.
 - [message](applepayerror/message.md)
   A localized, user-facing string that describes the error.
-
-## See Also
-
-- [ApplePayErrorCode](applepayerrorcode.md)
-  The error code that indicates whether an error on the payment sheet is for shipping or billing information, or for another kind of error.
-- [ApplePayErrorContactField](applepayerrorcontactfield.md)
-  Names of the fields in the shipping or billing contact information, used to locate errors in the payment sheet.
-- [Apple Pay Status Codes](apple-pay-status-codes.md)
-  Codes used to report the status of an Apple Pay session after a callback.
 
 
 ---

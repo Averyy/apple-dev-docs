@@ -31,7 +31,7 @@ The user explicitly grants access only to items they choose, so photo library ac
 
 ## See Also
 
-- [@MainActor @preconcurrency struct PhotosPicker<Label> where Label : View](../PhotosUI/PhotosPicker.md)
+- [struct PhotosPicker](../PhotosUI/PhotosPicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy, photoLibrary: PHPhotoLibrary) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:photolibrary:).md)
   Presents a Photos picker that selects a `PhotosPickerItem` from a given photo library.

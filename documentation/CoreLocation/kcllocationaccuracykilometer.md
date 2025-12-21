@@ -22,7 +22,7 @@ let kCLLocationAccuracyKilometer: CLLocationAccuracy
 
 #### Discussion
 
-This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/swift/true).
+This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

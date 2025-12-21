@@ -53,6 +53,32 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
 - [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
 - [object CiProductPrimaryRepositoriesLinkagesResponse](ciproductprimaryrepositorieslinkagesresponse.md)
 - [object CiProductWorkflowsLinkagesResponse](ciproductworkflowslinkagesresponse.md)
+- [object CiBranchStartCondition](cibranchstartcondition.md)
+  Settings for a start condition that starts a build if a branch changes.
+- [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
+  Settings Xcode Cloud uses to determine whether a change should start a new build or not.
+- [object CiGitUser](cigituser.md)
+  The data structure that represents a Git Users resource.
+- [object CiIssueCounts](ciissuecounts.md)
+  The data structure that represents an Issue Counts resource.
+- [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
+  Settings for a start condition that starts a build if a pull request changes.
+- [object CiScheduledStartCondition](cischeduledstartcondition.md)
+  Settings for a start condition that starts a build based on a schedule.
+- [object CiTagStartCondition](citagstartcondition.md)
+  Settings for a start condition that starts a build if a Git tag changes.
+- [object CiTestDestination](citestdestination.md)
+  The test destination of a test action that Xcode Cloud performs.
+- [type CiActionType](ciactiontype.md)
+  A string that represents the type of an Xcode Cloud workflow’s action.
+- [type CiCompletionStatus](cicompletionstatus.md)
+  A string that represents the completion status of an Xcode Cloud build.
+- [type CiExecutionProgress](ciexecutionprogress.md)
+  A string that represents the progress of an ongoing Xcode Cloud build.
+- [type CiTestDestinationKind](citestdestinationkind.md)
+  The string that represents the kind of a test destination.
+- [type CiTestStatus](citeststatus.md)
+  A string that represents test status information.
 
 ## See Also
 

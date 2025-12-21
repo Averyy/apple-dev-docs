@@ -17,7 +17,7 @@ Navigates to the specified rectangle on the specified page.
 
 ```swift
 @MainActor
-func go(to rect: CGRect, on page: PDFPage)
+func go(to rect: NSRect, on page: PDFPage)
 ```
 
 #### Discussion

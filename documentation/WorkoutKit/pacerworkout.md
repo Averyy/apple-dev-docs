@@ -10,7 +10,6 @@ A workout in which a person covers a specific distance in a given time.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

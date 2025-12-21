@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mldecisiontreeclassifier/description.md)
-  A text representation of the decision tree classifier.
-- [var debugDescription: String](mldecisiontreeclassifier/debugdescription.md)
-  A text representation of the decision tree classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mldecisiontreeclassifier/playgrounddescription.md)
-  A description of the decision tree classifier shown in a playground.
+- [MLDecisionTreeClassifier.ModelParameters](mldecisiontreeclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLDecisionTreeClassifier.ModelParameters](mldecisiontreeclassifier/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

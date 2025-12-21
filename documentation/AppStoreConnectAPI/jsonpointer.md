@@ -20,10 +20,11 @@ In some cases, the JSON pointer may indicate an element that isn’t in the requ
 
 ## See Also
 
+- [object ErrorLinks](errorlinks.md)
+- [object ErrorResponse](errorresponse.md)
+  The error details that an API returns in the response body whenever the API request isn’t successful.
 - [object Parameter](parameter.md)
   An object that contains the query parameter that produced the error.
-- [object ErrorResponse.Errors.Meta](errorresponse/errors-data.dictionary/meta-data.dictionary.md)
-  An object that contains the error itself or associated errors.
 
 
 ---

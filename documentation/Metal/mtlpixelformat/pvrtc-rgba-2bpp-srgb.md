@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Compressed format using PVRTC compression and 2bpp for RGBA components with conversion between sRGB and linear space.
+A compressed format that uses PVRTC compression and 2bpp for RGBA components with a conversion between sRGB and linear space.
 
 **Availability**:
 - iOS 8.0+
@@ -21,24 +21,30 @@ case pvrtc_rgba_2bpp_srgb
 
 #### Discussion
 
-Only [`MTLTextureType.type2D`](mtltexturetype/type2d.md), [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md), and [`MTLTextureType.typeCube`](mtltexturetype/typecube.md) textures are supported. Subimages are not supported.
+The only texture types that support this format include:
+
+- [`MTLTextureType.type2D`](mtltexturetype/type2d.md)
+- [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md)
+- [`MTLTextureType.typeCube`](mtltexturetype/typecube.md)
+
+> **Note**: The format doesn’t support subimages.
 
 ## See Also
 
 - [MTLPixelFormat.pvrtc_rgb_2bpp](mtlpixelformat/pvrtc_rgb_2bpp.md)
-  Compressed format using PVRTC compression and 2bpp for RGB components.
+  A compressed format that uses PVRTC compression and 2bpp for RGB components.
 - [MTLPixelFormat.pvrtc_rgb_2bpp_srgb](mtlpixelformat/pvrtc_rgb_2bpp_srgb.md)
-  Compressed format using PVRTC compression and 2bpp for RGB components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 2bpp for RGB components with a conversion between sRGB and linear space.
 - [MTLPixelFormat.pvrtc_rgb_4bpp](mtlpixelformat/pvrtc_rgb_4bpp.md)
-  Compressed format using PVRTC compression and 4bpp for RGB components.
+  A compressed format that uses PVRTC compression and 4bpp for RGB components.
 - [MTLPixelFormat.pvrtc_rgb_4bpp_srgb](mtlpixelformat/pvrtc_rgb_4bpp_srgb.md)
-  Compressed format using PVRTC compression and 4bpp for RGB components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 4bpp for RGB components with a conversion between sRGB and linear space.
 - [MTLPixelFormat.pvrtc_rgba_2bpp](mtlpixelformat/pvrtc_rgba_2bpp.md)
-  Compressed format using PVRTC compression and 2bpp for RGBA components.
+  A compressed format that uses PVRTC compression and 2bpp for RGBA components.
 - [MTLPixelFormat.pvrtc_rgba_4bpp](mtlpixelformat/pvrtc_rgba_4bpp.md)
-  Compressed format using PVRTC compression and 4bpp for RGBA components.
+  A compressed format that uses PVRTC compression and 4bpp for RGBA components.
 - [MTLPixelFormat.pvrtc_rgba_4bpp_srgb](mtlpixelformat/pvrtc_rgba_4bpp_srgb.md)
-  Compressed format using PVRTC compression and 4bpp for RGBA components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 4bpp for RGBA components with a conversion between sRGB and linear space.
 
 
 ---

@@ -19,13 +19,6 @@ An option that enables reading from the resource.
 static var read: MTLResourceUsage { get }
 ```
 
-## See Also
-
-- [static var write: MTLResourceUsage](mtlresourceusage/write.md)
-  An option that enables writing to the resource.
-- [static var sample: MTLResourceUsage](mtlresourceusage/sample.md)
-  An option that enables sampling from the resource.
-
 
 ---
 

@@ -6,8 +6,8 @@
 A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,14 @@ struct ShotFlopCommand
 ### Initializers
 - [init(from: any Decoder) throws](shotflopcommand/init(from:).md)
 - [init(id: Int, time: CMTime, duration: CMTime, offset: CMTime?)](shotflopcommand/init(id:time:duration:offset:).md)
-  Initializes a `shotFlop` command for a certain time, duration and offset.
+  Creates a command instance for a certain time, duration and offset.
 ### Instance Properties
 - [var duration: CMTime](shotflopcommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration.
+  The duration of the command.
 - [var id: Int](shotflopcommand/id.md)
-  A unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command ID for the immersive media file.
 - [var offset: CMTime?](shotflopcommand/offset.md)
-  Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
+  The offset from the start time of this command.
 - [var time: CMTime](shotflopcommand/time.md)
   The time this command starts during playback.
 ### Instance Methods

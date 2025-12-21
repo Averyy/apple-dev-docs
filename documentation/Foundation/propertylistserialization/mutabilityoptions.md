@@ -27,10 +27,6 @@ struct MutabilityOptions
   Causes the returned property list to have mutable containers but immutable leaves.
 - [static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainersandleaves.md)
   Causes the returned property list to have mutable containers and leaves.
-- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainers.md)
-  Causes the returned property list to have mutable containers but immutable leaves.
-- [static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainersandleaves.md)
-  Causes the returned property list to have mutable containers and leaves.
 ### Initializers
 - [init(rawValue: UInt)](propertylistserialization/mutabilityoptions/init(rawvalue:).md)
 

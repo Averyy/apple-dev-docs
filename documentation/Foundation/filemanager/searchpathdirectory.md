@@ -20,6 +20,10 @@ The location of significant directories.
 enum SearchPathDirectory
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Overview
 
 Use these constants with the [`init(for:in:appropriateFor:create:)`](url/init(for:in:appropriatefor:create:).md) initializer and the [`urls(for:in:)`](filemanager/urls(for:in:).md) and [`url(for:in:appropriateFor:create:)`](filemanager/url(for:in:appropriatefor:create:).md) methods of FileManager.

@@ -22,7 +22,7 @@ class AVMutableMediaSelection
 
 ## Topics
 
-### Selecting Media Options
+### Selecting media options
 - [func select(AVMediaSelectionOption?, in: AVMediaSelectionGroup)](avmutablemediaselection/select(_:in:).md)
   Selects the media option in the specified media selection group.
 
@@ -42,7 +42,7 @@ class AVMutableMediaSelection
 
 ## See Also
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 - [class AVMediaSelection](avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
@@ -52,6 +52,12 @@ class AVMutableMediaSelection
   An object that represents a specific option for the presentation of media within a group of options.
 - [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 
 ---

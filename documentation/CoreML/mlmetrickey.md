@@ -22,14 +22,14 @@ class MLMetricKey
 
 ## Topics
 
-### Getting the Keys
+### Getting the keys
 - [class var lossValue: MLMetricKey](mlmetrickey/lossvalue.md)
   The key you use to access the current loss (a `float` value).
 - [class var epochIndex: MLMetricKey](mlmetrickey/epochindex.md)
   The key you use to access the epoch index (an `Int64` value).
 - [class var miniBatchIndex: MLMetricKey](mlmetrickey/minibatchindex.md)
   The key you use to access the mini-batch index (an `Int64` value) within an epoch.
-### Supporting Types
+### Supporting types
 - [class MLKey](mlkey.md)
   An abstract base class for machine learning key types.
 

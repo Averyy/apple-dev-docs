@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The string representation of the vector.
+Returns a formatted string with all the values of a `CIVector`.
 
 **Availability**:
 - iOS 5.0+
@@ -21,10 +21,12 @@ var stringRepresentation: String { get }
 
 #### Discussion
 
-Some example string representations of vectors :
+Some example string representations of vectors:
 
-- `@"[1.0 0.5 0.3]"` — a `vec3` vector whose components are `X = 1.0`, `Y = 0.5`, and `Z = 0.3`
-- `@"[10.0 23.0]` — a `vec2` vector whose components are `X = 10.0` and `Y = 23.0`
+| `CIVector` | `stringRepresentation` |
+| --- | --- |
+| `[CIVector vectorWithX:1.0 Y:0.5 Z:0.3]` | `"[1.0 0.5 0.3]"` |
+| `[CIVector vectorWithX:10.0 Y:23.0]` | `"[10.0 23.0]"` |
 
 To create a [`CIVector`](civector.md) object from a string representation, use the [`vectorWithString:`](civector/vectorwithstring:.md) method.
 
@@ -41,13 +43,13 @@ To create a [`CIVector`](civector.md) object from a string representation, use t
 - [var z: CGFloat](civector/z.md)
   The value located in the third position in the vector.
 - [var w: CGFloat](civector/w.md)
-  The value located in the fourth position in the vector.
+  The value located in the forth position in the vector.
 - [var cgAffineTransformValue: CGAffineTransform](civector/cgaffinetransformvalue.md)
-  The values in the vector represented as an affine transform.
+  Returns the values in the vector as a `CGAffineTransformValue` structure.
 - [var cgPointValue: CGPoint](civector/cgpointvalue.md)
-  The values in the vector as a Core Graphics point structure.
+  Returns the values in the vector as a `CGPoint` structure.
 - [var cgRectValue: CGRect](civector/cgrectvalue.md)
-  The values in the vector as a Core Graphics rectangle structure.
+  Returns the values in the vector as a `CGRect` structure.
 
 
 ---

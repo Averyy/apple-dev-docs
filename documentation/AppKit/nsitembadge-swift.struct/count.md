@@ -7,7 +7,7 @@ Creates a badge displaying a localized numerical count.
 
 **Availability**:
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

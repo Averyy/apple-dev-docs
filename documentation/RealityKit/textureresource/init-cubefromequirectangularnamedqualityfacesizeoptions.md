@@ -10,7 +10,7 @@ Asynchronously creates a cube texture resource from an equirectangular image.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -58,7 +58,7 @@ if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
 }
 ```
 
-> **Note**: `EnvironmentResource/CreateOptions/SamplingQuality-swift.enum/high` and `EnvironmentResource/CreateOptions/SamplingQuality-swift.enum/veryHigh`, along with [`astc(blockSize:quality:)`](textureresource/compression-4jphx/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce a cube’s memory and disk usage.
+> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce a cube’s memory and disk usage.
 
 ## Parameters
 

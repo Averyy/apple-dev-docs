@@ -25,7 +25,7 @@ You might chose to stop validation after particular errors have been found so as
 
 ## Topics
 
-### Configuring Validation Methods
+### Configuring validation methods
 - [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingInvalidValueForKey: String) -> Bool](avvideocompositionvalidationhandling/videocomposition(_:shouldcontinuevalidatingafterfindinginvalidvalueforkey:).md)
   Reports that a key that has an invalid value.
 - [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingEmptyTimeRange: CMTimeRange) -> Bool](avvideocompositionvalidationhandling/videocomposition(_:shouldcontinuevalidatingafterfindingemptytimerange:).md)

@@ -21,9 +21,9 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to select it or [`false`](https://developer.apple.com/documentation/swift/false) to deselect it. Most controls don’t modify their appearance or behavior when selected, but some do. For example, the [`UISegmentedControl`](uisegmentedcontrol.md) class tracks whether a segment is selected and draws it differently when it is.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to select it or [`false`](https://developer.apple.com/documentation/Swift/false) to deselect it. Most controls don’t modify their appearance or behavior when selected, but some do. For example, the [`UISegmentedControl`](uisegmentedcontrol.md) class tracks whether a segment is selected and draws it differently when it is.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for a newly created control. You can set a control’s initial selected state in your storyboard file.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for a newly created control. You can set a control’s initial selected state in your storyboard file.
 
 ## See Also
 

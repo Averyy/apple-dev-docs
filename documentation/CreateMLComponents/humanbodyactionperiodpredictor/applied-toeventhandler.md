@@ -30,10 +30,6 @@ An async sequence of predictions.
 
 ## See Also
 
-- [HumanBodyActionPeriodPredictor.Input](humanbodyactionperiodpredictor/input.md)
-  The input type.
-- [HumanBodyActionPeriodPredictor.Output](humanbodyactionperiodpredictor/output.md)
-  The output type.
 - [HumanBodyActionPeriodPredictor.Prediction](humanbodyactionperiodpredictor/prediction.md)
   A human body action period prediction.
 

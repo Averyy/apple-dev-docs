@@ -21,8 +21,6 @@ struct ASBluetoothCompanyIdentifier
 ### Creating an identifier
 - [init(UInt16)](asbluetoothcompanyidentifier/init(_:).md)
 - [init(rawValue: UInt16)](asbluetoothcompanyidentifier/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](asbluetoothcompanyidentifier/equatable-implementations.md)
 
 ## Relationships
 

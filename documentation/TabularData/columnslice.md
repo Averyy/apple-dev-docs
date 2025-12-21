@@ -45,8 +45,6 @@ let slice = column[100 ..< 200]
 ### Creating Transformed Columns
 - [func map<T>((ColumnSlice<WrappedElement>.Element) throws -> T?) rethrows -> Column<T>](columnslice/map(_:).md)
   Creates a new column by applying a transformation to every element.
-- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](columnslice/filled(with:).md)
-  Generates a filled column by replacing missing elements with a value.
 ### Inspecting a Column Slice
 - [var name: String](columnslice/name.md)
   The name of the slice’s parent column.
@@ -92,15 +90,11 @@ let slice = column[100 ..< 200]
   A text representation of the column slice.
 - [var debugDescription: String](columnslice/debugdescription.md)
   A text representation of the column slice suitable for debugging.
-- [func description(options: FormattingOptions) -> String](columnslice/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](columnslice/custommirror.md)
   A mirror that reflects the column slice.
 ### Comparing Two Column Slices
 - [static func == (ColumnSlice<WrappedElement>, ColumnSlice<WrappedElement>) -> Bool](columnslice/==(_:_:).md)
   Returns a Boolean that indicates whether the column slices are equal.
-- [static func != (Self, Self) -> Bool](columnslice/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Modifying a Column Slice with a Value
 - [static func += (inout ColumnSlice<WrappedElement>, WrappedElement)](columnslice/+=(_:_:)-950qi.md)
   Modifies a column slice by adding a value to each element.
@@ -133,49 +127,6 @@ let slice = column[100 ..< 200]
   Modifies a floating-point column slice by dividing each element in the column by the corresponding value in a collection.
 - [static func /= <C>(inout ColumnSlice<WrappedElement>, C)](columnslice/_=(_:_:)-6ujes.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding optional value in a collection.
-### Generating a Column by Combining Two Column Slices
-- [static func + (Self, Self) -> Column<Self.WrappedElement>](columnslice/+(_:_:)-3mep5.md)
-  Generates a column by adding each element in an optional column type to the corresponding elements of another.
-- [static func - (Self, Self) -> Column<Self.WrappedElement>](columnslice/-(_:_:)-6dkqb.md)
-  Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
-- [static func * (Self, Self) -> Column<Self.WrappedElement>](columnslice/*(_:_:)-hl25.md)
-  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-3so2z.md)
-  Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-4125n.md)
-  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
-### Generating a Column by Adding a Value
-- [static func + (Self, Self.Element) -> Column<Self.Element>](columnslice/+(_:_:)-2l5ok.md)
-  Generates a column by adding a value to each element in a column.
-- [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](columnslice/+(_:_:)-3xsx4.md)
-  Generates a column by adding a value to each element in an optional column.
-- [static func + (Self.Element, Self) -> Column<Self.Element>](columnslice/+(_:_:)-4bxn6.md)
-  Generates a column by adding each element in a column to a value.
-- [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](columnslice/+(_:_:)-ooqt.md)
-  Generates a column by adding each element in an optional column to a value.
-### Generating a Column by Subtracting a Value
-- [static func - (Self, Self.Element) -> Column<Self.Element>](columnslice/-(_:_:)-26wtz.md)
-  Generates a column by subtracting a value from each element in a column.
-- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](columnslice/-(_:_:)-nkha.md)
-  Generates a column by subtracting a value from each element in an optional column type.
-- [static func - (Self.Element, Self) -> Column<Self.Element>](columnslice/-(_:_:)-8z15n.md)
-  Generates a column by subtracting each element in a column from a value.
-- [static func - (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](columnslice/-(_:_:)-5mbpd.md)
-  Generates a column by subtracting each element in an optional column from a value.
-### Generating a Column by Multiplying a Value
-- [static func * (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](columnslice/*(_:_:)-4sw7w.md)
-  Generates a column by multiplying each element in an optional column by a value.
-- [static func * (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](columnslice/*(_:_:)-86zas.md)
-  Generates a column by multiplying a value by each element in an optional column type.
-### Generating a Column by Dividing a Value
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-8n9gx.md)
-  Generates an integer column by dividing each element in an optional column by a value.
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-1oxxv.md)
-  Generates a floating-point column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-992oe.md)
-  Generates an integer column by dividing a value by each element in an optional column type.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-esxm.md)
-  Generates a floating-point column by dividing a value by each element in an optional column type.
 ### Hashing a Column Slice
 - [func hash(into: inout Hasher)](columnslice/hash(into:).md)
   Hashes the essential components of the column slice by feeding them into a hasher.
@@ -187,25 +138,14 @@ let slice = column[100 ..< 200]
 ### Instance Properties
 - [var missingCount: Int](columnslice/missingcount.md)
   The number of missing elements in the column slice.
-### Type Aliases
-- [ColumnSlice.Indices](columnslice/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [ColumnSlice.Iterator](columnslice/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [ColumnSlice.SubSequence](columnslice/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
 - [BidirectionalCollection Implementations](columnslice/bidirectionalcollection-implementations.md)
 - [Collection Implementations](columnslice/collection-implementations.md)
-- [ColumnProtocol Implementations](columnslice/columnprotocol-implementations.md)
 - [CustomDebugStringConvertible Implementations](columnslice/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](columnslice/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](columnslice/customstringconvertible-implementations.md)
 - [Equatable Implementations](columnslice/equatable-implementations.md)
 - [Hashable Implementations](columnslice/hashable-implementations.md)
-- [MutableCollection Implementations](columnslice/mutablecollection-implementations.md)
-- [OptionalColumnProtocol Implementations](columnslice/optionalcolumnprotocol-implementations.md)
-- [Sequence Implementations](columnslice/sequence-implementations.md)
 
 ## Relationships
 

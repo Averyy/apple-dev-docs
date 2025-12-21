@@ -6,11 +6,11 @@
 Create communication experiences between a child and their parent or guardian.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 #### Overview
 
@@ -23,28 +23,39 @@ Use `PermissionKit` in your app to adjust communication rules for a child accoun
 ### Essentials
 - [Creating a communication experience](creating-a-communication-experience.md)
   Request permission from a parent or guardian to modify a child’s communication rules.
-### Permission buttons
-- [struct CommunicationLimitsButton](communicationlimitsbutton.md)
+- [class AskCenter](askcenter.md)
+  A class that manages permission requests you send to parents or guardians for approval.
+- [class PermissionQuestion](permissionquestion.md)
+  A class that captures a permission question posed by a person.
+### Permission topics
+- [struct SignificantAppUpdateTopic](significantappupdatetopic.md)
+  A topic for requesting permission for significant app updates.
+- [struct CommunicationTopic](communicationtopic.md)
+  A topic for requesting communication permission with specific people.
+### Presentation
+- [struct PermissionButton](permissionbutton.md)
   A button that presents a system UI to a parent or guardian to ask for an exception to a child’s communication limits.
-### Permission responses
-- [class CommunicationLimits](communicationlimits.md)
-  A type that encapsulates the communication limits for your app.
-- [struct CommunicationHandle](communicationhandle.md)
-  A piece of identifying information that can be used to communicate with someone.
+### Response management
+- [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
+](askcenter/responses(for:).md)
+  Registers the topic type with the system and returns an asynchronous sequence of responses.
 - [struct PermissionResponse](permissionresponse.md)
   A full permission response that includes the original question and chosen answer.
-### Permission questions
-- [protocol QuestionTopic](questiontopic.md)
-  A protocol that defines a question topic that can be used to interpret what a user is asking for.
-- [class PermissionQuestion](permissionquestion.md)
-  A class that captures a permission question posed by a user.
-- [struct CommunicationTopic](communicationtopic.md)
-  A question topic related to communication.
+- [struct CommunicationHandle](communicationhandle.md)
+  Contact information for identifying and communicating with a person.
 - [struct PermissionChoice](permissionchoice.md)
   A class that uniquely identifies a specific, statically defined permission choice.
-### Error response
+- [class CommunicationLimits](communicationlimits.md)
+  A type that encapsulates the communication limits for your app.
+### Supporting types
+- [protocol QuestionTopic](questiontopic.md)
+  A protocol that defines a question topic that can be used to interpret what a person is asking for.
+### Errors
 - [enum AskError](askerror.md)
-  An error that can occur when asking someone to send a communication permission question.
+  Represents errors you encounter when asking a person to send a communication permission question.
+### Deprecated APIs
+- [struct CommunicationLimitsButton](communicationlimitsbutton.md)
+  A button that presents a system UI to a parent or guardian to ask for an exception to a child’s communication limits.
 
 
 ---

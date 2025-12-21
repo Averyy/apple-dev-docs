@@ -23,7 +23,7 @@ func withTaskGroup<ChildTaskResult, GroupResult>(of childTaskResultType: ChildTa
 
 #### Discussion
 
-A group waits for all of its child tasks to complete or be canceled before it returns. After this function returns, the task group is always empty.
+A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
 To collect the results of the group’s child tasks, you can use a `for`-`await`-`in` loop:
 
@@ -46,13 +46,9 @@ group.cancelAll()
 return first + second
 ```
 
-### Task Group Cancellation
+Refer to [`TaskGroup`](taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-You can cancel a task group and all of its child tasks by calling the `cancelAll()` method on the task group, or by canceling the task in which the group is running.
-
-If you call `addTask(name:priority:operation:)` to create a new task in a canceled group, that task is immediately canceled after creation. Alternatively, you can call `addTaskUnlessCancelled(name:priority:operation:)`, which doesn’t create the task if the group has already been canceled. Choosing between these two functions lets you control how to react to cancellation within a group: some child tasks need to run regardless of cancellation, but other tasks are better not even being created when you know they can’t produce useful results.
-
-Because the tasks you add to a group with this method are nonthrowing, those tasks can’t respond to cancellation by throwing `CancellationError`. The tasks must handle cancellation in some other way, such as returning the work completed so far, returning an empty result, or returning `nil`. For tasks that need to handle cancellation by throwing an error, use the `withThrowingTaskGroup(of:returning:body:)` method instead.
+> **Note**: [`TaskGroup`](taskgroup.md)
 
 ## See Also
 
@@ -60,10 +56,6 @@ Because the tasks you add to a group with this method are nonthrowing, those tas
   A unit of asynchronous work.
 - [struct TaskGroup](taskgroup.md)
   A group that contains dynamically created child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)

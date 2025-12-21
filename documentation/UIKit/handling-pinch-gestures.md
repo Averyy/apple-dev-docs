@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram demonstrating how two fingers can trigger a pinch gesture](https://docs-assets.developer.apple.com/published/18917d55299c44a6f006c3313b7ebee6/media-3004406%402x.png)
+![A diagram demonstrating how two fingers can start a pinch gesture.](https://docs-assets.developer.apple.com/published/b4098431b76aa93d04ed389fa81d7a04/handling-pinch-gestures-1%402x.png)
 
 A pinch gesture recognizer reports changes to the distance between two fingers touching the screen. Pinch gestures are continuous, so your action method is called each time the distance between the fingers changes. The distance between the fingers is reported as a scale factor. At the beginning of the gesture, the scale factor is `1.0`. As the distance between the two fingers increases, the scale factor increases proportionally. Similarly, the scale factor decreases as the distance between the fingers decreases. Pinch gestures are used most commonly to change the size of objects or content onscreen. For example, map views use pinch gestures to change the zoom level of the map.
 
@@ -36,7 +36,7 @@ The following code demonstrates how to resize a view linearly using a pinch gest
 
 If the code for your pinch gesture recognizer isn’t called, or isn’t working correctly, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - At least two fingers are touching the screen.
 - You’re applying scale factors to your content correctly. Exponential growth of a value happens when you simply apply the scale factor to the current value.
 

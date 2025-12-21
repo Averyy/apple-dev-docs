@@ -26,15 +26,15 @@ You can initialize a mutable metadata item from an existing [`AVMetadataItem`](a
 
 ## Topics
 
-### Identifying Metadata Items
+### Identifying metadata items
 - [var identifier: AVMetadataIdentifier?](avmutablemetadataitem/identifier.md)
   Indicates the identifier of the metadata item.
-### Accessing Keys and Key Spaces
+### Accessing keys and key spaces
 - [var key: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/key.md)
   The key for a mutable metadata item.
 - [var keySpace: AVMetadataKeySpace?](avmutablemetadataitem/keyspace.md)
   The key space of the metadata item’s key.
-### Accessing Values
+### Accessing values
 - [var value: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/value.md)
   The value for the mutable metadata item.
 - [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmutablemetadataitem/extraattributes.md)
@@ -49,14 +49,14 @@ You can initialize a mutable metadata item from an existing [`AVMetadataItem`](a
   The value of the metadata item as a date.
 - [var dataValue: Data?](avmutablemetadataitem/datavalue.md)
   The value of the metadata item as a data value.
-### Accessing Timing
+### Accessing timing
 - [var time: CMTime](avmutablemetadataitem/time.md)
   The timestamp for a mutable metadata item.
 - [var startDate: Date?](avmutablemetadataitem/startdate.md)
   The start date of the timed metadata.
 - [var duration: CMTime](avmutablemetadataitem/duration.md)
   The duration of a mutable metadata item.
-### Accessing Language Support
+### Accessing language support
 - [var locale: Locale?](avmutablemetadataitem/locale.md)
   The locale for a mutable metadata item.
 - [var extendedLanguageTag: String?](avmutablemetadataitem/extendedlanguagetag.md)

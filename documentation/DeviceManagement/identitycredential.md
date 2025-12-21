@@ -24,7 +24,7 @@ object IdentityCredential
 - [object ACMECredential](acmecredential.md)
   An ACME identity that the device generates.
 - [object SCEPCredential](scepcredential.md)
-  An SCEP identity that the device generates.
+  A SCEP identity that the device generates.
 - [object UserNameAndPasswordCredential](usernameandpasswordcredential.md)
   Data that describes a credential that represents a user name and password.
 

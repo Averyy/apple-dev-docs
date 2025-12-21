@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The maximum recursive call depth for dynamic library, visible, and intersection functions.
+The maximum call stack depth for indirect function calls in compute shaders.
 
 **Availability**:
 - iOS 14.0+
@@ -21,9 +21,11 @@ var maxCallStackDepth: Int { get set }
 
 #### Discussion
 
-The maximum call stack depth only applies to indirect function calls in your shader, and indicates the upper bound of stack memory for each thread. Change this value if you use recursive functions in your compute pass, and try to keep it as small as possible. When Metal reserves a large call stack, it can impact performance.
+The property’s default value is `1`. Change its value if you use recursive functions in your compute pass.
 
-The default value is `1`.
+The maximum call stack depth applies only to indirect function calls in your shader, and affects the upper bound of stack memory for each thread. Indirect function calls include those to visible functions, intersection functions, and to dynamic libraries.
+
+> 💡 **Tip**:  To avoid a runtime performance impact, keep this value as small as possible because the framework reserves a large call stack.
 
 ## See Also
 
@@ -32,7 +34,7 @@ The default value is `1`.
 - [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtlcomputepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
   A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
-  The maximum number of threads in a threadgroup that you can dispatch to the compute function.
+  A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 
 
 ---

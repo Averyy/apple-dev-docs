@@ -40,17 +40,6 @@ If you supply an event handler when reading a card, the session delivers appropr
 ### Getting the event name
 - [var name: String](paymentcardreadersession/event/name.md)
   The name of the event.
-### Operators
-- [static func == (PaymentCardReaderSession.Event, PaymentCardReaderSession.Event) -> Bool](paymentcardreadersession/event/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](paymentcardreadersession/event/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](paymentcardreadersession/event/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](paymentcardreadersession/event/equatable-implementations.md)
 
 ## Relationships
 

@@ -26,7 +26,7 @@ Returns an object equal to `object` if it’s present in the set, otherwise `nil
 
 #### Discussion
 
-Each element of the set is checked for equality with `object` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Each element of the set is checked for equality with `object` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

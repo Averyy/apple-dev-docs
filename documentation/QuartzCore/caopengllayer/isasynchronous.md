@@ -17,7 +17,7 @@ var isAsynchronous: Bool { get set }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), the contents of the layer are updated only in response to receiving a [`setNeedsDisplay()`](calayer/setneedsdisplay().md) message. When [`true`](https://developer.apple.com/documentation/swift/true), the receiver’s [`canDraw(inCGLContext:pixelFormat:forLayerTime:displayTime:)`](caopengllayer/candraw(incglcontext:pixelformat:forlayertime:displaytime:).md) is called periodically to determine if the OpenGL content should be updated.
+If [`false`](https://developer.apple.com/documentation/Swift/false), the contents of the layer are updated only in response to receiving a [`setNeedsDisplay()`](calayer/setneedsdisplay().md) message. When [`true`](https://developer.apple.com/documentation/Swift/true), the receiver’s [`canDraw(inCGLContext:pixelFormat:forLayerTime:displayTime:)`](caopengllayer/candraw(incglcontext:pixelformat:forlayertime:displaytime:).md) is called periodically to determine if the OpenGL content should be updated.
 
 ## See Also
 

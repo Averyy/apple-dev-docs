@@ -20,7 +20,7 @@ func indirectScribbleInteraction(_ interaction: any UIInteraction, shouldDelayFo
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to delay focusing the element; the default is [`false`](https://developer.apple.com/documentation/swift/false).
+Return [`true`](https://developer.apple.com/documentation/Swift/true) to delay focusing the element; the default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

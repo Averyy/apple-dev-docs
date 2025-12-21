@@ -21,7 +21,7 @@ enum MTLWinding
 
 ## Topics
 
-### Constants
+### Winding options
 - [MTLWinding.clockwise](mtlwinding/clockwise.md)
   Primitives whose vertices are specified in clockwise order are front-facing.
 - [MTLWinding.counterClockwise](mtlwinding/counterclockwise.md)
@@ -42,9 +42,9 @@ enum MTLWinding
 ## See Also
 
 - [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
-  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
-  An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)

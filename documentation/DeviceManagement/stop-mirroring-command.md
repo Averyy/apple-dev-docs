@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Stop mirroring the display on another device.
+Stop mirroring the display to another device.
 
 **Availability**:
 - iOS 7.0+
@@ -30,9 +30,9 @@ Refer to the following sections to determine supported channels and requirements
 
 ### Commands and responses
 - [object StopMirroringCommand](stopmirroringcommand.md)
-  The command to stop mirroring the display on another device.
+  The command to stop mirroring the display to another device.
 - [object StopMirroringResponse](stopmirroringresponse.md)
-  A response from the device after it processes the command to stop mirroring the display on another device.
+  A response from the device after it processes the command to stop mirroring the display to another device.
 
 ## Request Body
 

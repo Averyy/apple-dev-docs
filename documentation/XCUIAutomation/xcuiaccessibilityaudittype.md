@@ -34,10 +34,6 @@ struct XCUIAccessibilityAuditType
 - [static var sufficientElementDescription: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/sufficientelementdescription.md)
 - [static var textClipped: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/textclipped.md)
 - [static var trait: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/trait.md)
-### Default Implementations
-- [Equatable Implementations](xcuiaccessibilityaudittype/equatable-implementations.md)
-- [OptionSet Implementations](xcuiaccessibilityaudittype/optionset-implementations.md)
-- [SetAlgebra Implementations](xcuiaccessibilityaudittype/setalgebra-implementations.md)
 
 ## Relationships
 

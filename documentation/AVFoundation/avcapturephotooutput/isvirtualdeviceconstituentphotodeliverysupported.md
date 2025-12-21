@@ -21,7 +21,7 @@ var isVirtualDeviceConstituentPhotoDeliverySupported: Bool { get }
 
 The system only supports virtual device constituent photo delivery for certain capture session presets and capture device formats.
 
-When switching cameras or formats, this property may change. When this property changes from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/swift/false).
+When switching cameras or formats, this property may change. When this property changes from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false), [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is key-value observable.
 

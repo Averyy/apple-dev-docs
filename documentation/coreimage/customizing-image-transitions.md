@@ -10,8 +10,8 @@ You can add visual effects to an image transition by chaining together Core Imag
 
 For example, you can combine an effect that dissolves an image and one that pixelates it as a transition to a second image. This particular transition chain comprises three steps:
 
-1. Create a [`dissolveTransitionFilter`](cifilter-swift.class/dissolvetransitionfilter.md) transition filter with time as an input parameter.
-2. Create a [`pixellateFilter`](cifilter-swift.class/pixellatefilter.md) transition filter with time as an input parameter.
+1. Create a [`dissolveTransition()`](cifilter-swift.class/dissolvetransition().md) transition filter with time as an input parameter.
+2. Create a [`pixellate()`](cifilter-swift.class/pixellate().md) transition filter with time as an input parameter.
 3. Initiate the transition by adding a time step to your run loop.
 
 ![Pixelated transition from a beach at daytime with rainbow in the sky to a beach at sunset](https://docs-assets.developer.apple.com/published/000b51724a28a21dbb7ce4925ad52fa8/media-2960176%402x.png)
@@ -69,7 +69,7 @@ Like the dissolve transition, you can write the pixelate transition filter as a 
 }
 ```
 
-As with the dissolve filter, you can modify the speed and acceleration of the transition by changing the way time varies between `0.0` and `1.0`.  In this case, unlike the [`dissolveTransitionFilter`](cifilter-swift.class/dissolvetransitionfilter.md) filter, the [`pixellateFilter`](cifilter-swift.class/pixellatefilter.md) filter accepts a s`cale`, which you can vary over a smoothened triangle function: `simd_smoothstep(1, 0, abs(time))`.
+As with the dissolve filter, you can modify the speed and acceleration of the transition by changing the way time varies between `0.0` and `1.0`.  In this case, unlike the [`dissolveTransition()`](cifilter-swift.class/dissolvetransition().md) filter, the [`pixellate()`](cifilter-swift.class/pixellate().md) filter accepts a s`cale`, which you can vary over a smoothened triangle function: `simd_smoothstep(1, 0, abs(time))`.
 
 ![A graphic depicting simd_smoothstep(1, 0, abs(time)), a smoothened triangle ramp between 0 and 1](https://docs-assets.developer.apple.com/published/d0751c92576233e7b4b2e593687487b6/media-2960172%402x.png)
 
@@ -158,15 +158,15 @@ The Core Image framework provides many distinct visual effects through its built
 
 See filters under the [`Transition Filters`](transition-filters.md) collection for other effects to try.
 
-For example, the [`copyMachineTransitionFilter`](cifilter-swift.class/copymachinetransitionfilter.md) filter passes a scanning light over the source image as it transforms into the target image.
+For example, the [`copyMachineTransition()`](cifilter-swift.class/copymachinetransition().md) filter passes a scanning light over the source image as it transforms into the target image.
 
 ![Copy machine transition from a beach at sunset to a beach at daytime with rainbow in the sky](https://docs-assets.developer.apple.com/published/20de4b0b24d4604f7f499fbd6aa59426/media-2960175%402x.png)
 
-The [`pageCurlWithShadowTransitionFilter`](cifilter-swift.class/pagecurlwithshadowtransitionfilter.md) filter simulates the turn of a page, peeling the source image toward the right to reveal the target image underneath. You can include a separate image on the back of the flipped page.
+The [`pageCurlWithShadowTransition()`](cifilter-swift.class/pagecurlwithshadowtransition().md) filter simulates the turn of a page, peeling the source image toward the right to reveal the target image underneath. You can include a separate image on the back of the flipped page.
 
 ![Page curl transition from a photo of a beach at daytime with rainbow in the sky to a photo of a beach at sunset, with a flower image on the back of the page](https://docs-assets.developer.apple.com/published/efed7b3543dcdc2a61824887a3f2cdd5/media-2960178%402x.png)
 
-The [`barsSwipeTransitionFilter`](cifilter-swift.class/barsswipetransitionfilter.md) slices the source image into vertical bars that sequentially slide off the page, revealing the target image underneath.
+The [`barsSwipeTransition()`](cifilter-swift.class/barsswipetransition().md) slices the source image into vertical bars that sequentially slide off the page, revealing the target image underneath.
 
 ![Bar swipe transition from a beach at sunset to a beach at daytime with rainbow in the sky](https://docs-assets.developer.apple.com/published/d15fb1b910c0560e085fffac08ffd3b7/media-2960177%402x.png)
 

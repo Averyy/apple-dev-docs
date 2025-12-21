@@ -54,7 +54,7 @@ while let value = try await group.next() {
 return collected
 ```
 
-Awaiting on an empty group immediate returns `nil` without suspending.
+Awaiting on an empty group immediately returns `nil` without suspending.
 
 You can also use a `for`-`await`-`in` loop to collect results of a task group:
 
@@ -68,6 +68,7 @@ Don’t call this method from outside the task where you created this task group
 
 ## See Also
 
+- [func next() async -> ChildTaskResult?](taskgroup/next.md)
 - [var isEmpty: Bool](taskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 - [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)

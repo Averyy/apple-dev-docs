@@ -16,7 +16,7 @@ func SecTransformSetDataAction(_ ref: SecTransformImplementationRef, _ action: C
 
 #### Return Value
 
-An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the error’s memory when you are done with it.
+An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the error’s memory when you are done with it.
 
 #### Discussion
 

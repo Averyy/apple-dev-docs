@@ -37,6 +37,8 @@ func eligibleForIntro(product: Product) async throws -> Bool {
 }
 ```
 
+To specify a customer’s eligibility for an introductory offer, see [`introductoryOfferEligibility(compactJWS:)`](product/purchaseoption/introductoryoffereligibility(compactjws:).md).
+
 ## See Also
 
 - [static func isEligibleForIntroOffer(for: String) async -> Bool](product/subscriptioninfo/iseligibleforintrooffer(for:).md)

@@ -27,7 +27,7 @@ To submit match requests without presenting an interface using automatch, see [`
 
 Then create a compatible rule that finds players who have the same party code.
 
-In a compatible rule, the `requests` array in the expression contains two match requests to compare. Write an expression that returns [`true`](https://developer.apple.com/documentation/swift/true) if the party code for the two requests is the same.
+In a compatible rule, the `requests` array in the expression contains two match requests to compare. Write an expression that returns [`true`](https://developer.apple.com/documentation/Swift/true) if the party code for the two requests is the same.
 
 ```json
 requests[0].properties.partyCode == requests[1].properties.partyCode

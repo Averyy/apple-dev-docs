@@ -25,7 +25,7 @@ optional func match(_ match: GKMatch, shouldReinviteDisconnectedPlayer player: G
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if GameKit should reinvite the player when they disconnect; [`false`](https://developer.apple.com/documentation/swift/false) if GameKit should end the match when the player disconnects.
+[`true`](https://developer.apple.com/documentation/Swift/true) if GameKit should reinvite the player when they disconnect; [`false`](https://developer.apple.com/documentation/Swift/false) if GameKit should end the match when the player disconnects.
 
 #### Discussion
 

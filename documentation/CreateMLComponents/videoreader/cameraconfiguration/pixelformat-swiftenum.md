@@ -23,17 +23,6 @@ enum PixelFormat
 ### Pixel formats
 - [VideoReader.CameraConfiguration.PixelFormat.bgra32](videoreader/cameraconfiguration/pixelformat-swift.enum/bgra32.md)
 - [VideoReader.CameraConfiguration.PixelFormat.yCbCr8BiPlanarFullRange420](videoreader/cameraconfiguration/pixelformat-swift.enum/ycbcr8biplanarfullrange420.md)
-### Operators
-- [static func == (VideoReader.CameraConfiguration.PixelFormat, VideoReader.CameraConfiguration.PixelFormat) -> Bool](videoreader/cameraconfiguration/pixelformat-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](videoreader/cameraconfiguration/pixelformat-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](videoreader/cameraconfiguration/pixelformat-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](videoreader/cameraconfiguration/pixelformat-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

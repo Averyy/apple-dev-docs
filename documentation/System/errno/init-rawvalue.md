@@ -22,10 +22,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [let rawValue: CInt](errno/rawvalue-swift.property.md)
+- [let rawValue: CInt](errno/rawvalue.md)
   The raw C error number.
-- [typealias RawValue](errno/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

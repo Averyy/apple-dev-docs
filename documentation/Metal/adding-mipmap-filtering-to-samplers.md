@@ -1,4 +1,4 @@
-# Adding Mipmap Filtering to Samplers
+# Adding mipmap filtering to samplers
 
 **Framework**: Metal
 
@@ -10,7 +10,7 @@ By default, samplers sample data only from mipmap `0`. If your texture contains 
 
 ##### Create the Sampler in Your App
 
-If you’re creating a [`MTLSamplerState`](mtlsamplerstate.md) object, create the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) object and set its [`mipFilter`](mtlsamplerdescriptor/mipfilter.md) property. The following code uses linear filtering for the minification and magnification filter, and uses linear filtering for mipmaps. This combination is usually called . With this configuration, the GPU chooses the two mipmaps nearest in size and generates a sample by linearly filtering four pixels from each mipmap. Then it blends those two values with a linear interpolation to generate the final sample.
+If you’re creating an [`MTLSamplerState`](mtlsamplerstate.md) instance, create the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance and set its [`mipFilter`](mtlsamplerdescriptor/mipfilter.md) property. The following code uses linear filtering for the minification and magnification filter, and uses linear filtering for mipmaps. This combination is usually called . With this configuration, the GPU chooses the two mipmaps nearest in size and generates a sample by linearly filtering four pixels from each mipmap. Then it blends those two values with a linear interpolation to generate the final sample.
 
 Alternatively, any of these filters could filter from the nearest pixel, instead of a linear filter, resulting in fewer sampled pixels but lower quality. Ultimately, you need to decide the right tradeoffs between sampling performance and quality for your app.
 
@@ -24,19 +24,19 @@ constexpr sampler s(filter::linear, mip_filter::linear)
 
 ## See Also
 
-- [Improving Texture Sampling Quality and Performance with Mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
-- [Dynamically Adjusting Texture Level of Detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

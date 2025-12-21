@@ -42,14 +42,6 @@ Security-scoped bookmarks are not available in versions of macOS prior to OS X 1
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
 - [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md)
   A property that specifies that resolution doesn’t implicitly start accessing the ephemeral security-scoped resource.
-- [static var withoutUI: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutui.md)
-  Specifies that no UI feedback should accompany resolution of the bookmark data.
-- [static var withoutMounting: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutmounting.md)
-  Specifies that no volume should be mounted during resolution of the bookmark data.
-- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
-  Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
-- [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md)
-  A property that specifies that resolution doesn’t implicitly start accessing the ephemeral security-scoped resource.
 
 ## Relationships
 

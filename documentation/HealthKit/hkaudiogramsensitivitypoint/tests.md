@@ -17,6 +17,10 @@
 var tests: [HKAudiogramSensitivityTest] { get }
 ```
 
+#### Discussion
+
+The tests conducted at this frequency
+
 
 ---
 

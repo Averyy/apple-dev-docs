@@ -20,7 +20,7 @@ By default, a regular [`WindowGroup`](windowgroup.md) uses a scaling behavior of
 
 Dynamic scale means the window will scale larger as it moves further away, maintaining the same angular size. Fixed scale means the window will keep its physical size in the world.
 
-For further information, see [`Spatial layout`](https://developer.apple.com/design/Human-Interface-Guidelines/spatial-layout) in the Human Interface Guidelines.
+For further information, see [`Spatial layout`](https://developer.apple.com/design/Human-Interface-Guidelines/spatial-layout#Scale) in the Human Interface Guidelines.
 
 ## Topics
 

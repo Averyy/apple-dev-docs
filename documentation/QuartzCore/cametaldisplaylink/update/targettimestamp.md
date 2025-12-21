@@ -27,8 +27,6 @@ Your app needs to call the [`drawable`](cametaldisplaylink/update/drawable.md) i
 
 - [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)
   The Metal drawable your app uses to render the next frame.
-- [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)
-  The Metal drawable your app uses to render the next frame.
 
 
 ---

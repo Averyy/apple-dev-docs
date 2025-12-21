@@ -4,6 +4,11 @@
 
 Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 322: [`Track workouts with HealthKit on iPhone and iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc25/322/).
@@ -13,7 +18,7 @@ Start a workout in iOS, control it from the Lock Screen with App Intents, and pr
 To configure the sample code project, do the following:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+2. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team).
 
 ## See Also
 
@@ -24,7 +29,7 @@ To configure the sample code project, do the following:
 - [Building a multidevice workout app](building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
 - [class HKWorkoutSession](hkworkoutsession.md)
-  A session that tracks the user’s workout on Apple Watch.
+  A session that tracks a person’s workout.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
 - [enum HKWorkoutSessionState](hkworkoutsessionstate.md)

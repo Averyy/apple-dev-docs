@@ -25,6 +25,11 @@ func zIndex(_ value: Double) -> some ChartContent
 
 - `value`: A relative front-to-back ordering for this view; the default is  .
 
+## See Also
+
+- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
+
 
 ---
 

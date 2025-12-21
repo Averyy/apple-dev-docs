@@ -22,7 +22,7 @@ var shouldEnableLimits: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), then the [`lowerDistanceLimit`](skphysicsjointsliding/lowerdistancelimit.md) and [`upperDistanceLimit`](skphysicsjointsliding/upperdistancelimit.md) properties are used to limit the distance of the sliding joint.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true), then the [`lowerDistanceLimit`](skphysicsjointsliding/lowerdistancelimit.md) and [`upperDistanceLimit`](skphysicsjointsliding/upperdistancelimit.md) properties are used to limit the distance of the sliding joint.
 
 ## See Also
 

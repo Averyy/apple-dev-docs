@@ -53,7 +53,7 @@ static func make() -> Entity {
     /// The entity with the box and material that represents the x-axis.
     let xAxisEntity = ModelEntity(mesh: xAxisMesh, materials: [xAxisMaterial])
 
-    // Set the postion of the x-axis entity in 3D space.
+    // Set the position of the x-axis entity in 3D space.
     xAxisEntity.position = [0.5 * length, 0, 0]
 
     // Add the x-axis to the parent entity.
@@ -177,7 +177,7 @@ var audioSource: some View {
         /// The name of the audio source.
         let audioName: String = "FunkySynth.m4a"
 
-        /// The configuration to loop the audio file continously.
+        /// The configuration to loop the audio file continuously.
         let configuration = AudioFileResource.Configuration(shouldLoop: true)
 
         // Load the audio source and set its configuration.

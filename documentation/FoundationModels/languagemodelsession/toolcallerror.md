@@ -6,11 +6,11 @@
 An error that occurs while a system language model is calling a tool.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -36,9 +36,6 @@ struct ToolCallError
 ### Getting the underlying error
 - [var underlyingError: any Error](languagemodelsession/toolcallerror/underlyingerror.md)
   The underlying error that was thrown during a tool call.
-### Default Implementations
-- [Error Implementations](languagemodelsession/toolcallerror/error-implementations.md)
-- [LocalizedError Implementations](languagemodelsession/toolcallerror/localizederror-implementations.md)
 
 ## Relationships
 
@@ -51,7 +48,7 @@ struct ToolCallError
 ## See Also
 
 - [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
-  An error that occurs while generating a response.
+  An error that may occur while generating a response.
 
 
 ---

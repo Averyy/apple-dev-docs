@@ -18,9 +18,9 @@ var isDualCameraDualPhotoDeliveryEnabled: Bool { get set }
 
 #### Discussion
 
-When this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), and the photo output is configured with a capture device of the [`builtInDualCamera`](avcapturedevice/devicetype-swift.struct/builtindualcamera.md) type, the photo output delivers a single main photo image for each capture. (The device determines how to produce that image from one or both cameras).
+When this property is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), and the photo output is configured with a capture device of the [`builtInDualCamera`](avcapturedevice/devicetype-swift.struct/builtindualcamera.md) type, the photo output delivers a single main photo image for each capture. (The device determines how to produce that image from one or both cameras).
 
-If you change this setting to [`true`](https://developer.apple.com/documentation/swift/true), your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method fires at least twice for each main image—once for the telephoto image and again for the wide-angle image. Setting this property to true when not using a dual-camera device raises an exception.
+If you change this setting to [`true`](https://developer.apple.com/documentation/Swift/true), your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method fires at least twice for each main image—once for the telephoto image and again for the wide-angle image. Setting this property to true when not using a dual-camera device raises an exception.
 
 ## See Also
 

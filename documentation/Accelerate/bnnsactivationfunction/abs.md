@@ -13,7 +13,6 @@ An activation function that returns the absolute value of its input.
 - tvOS 10.0+
 - visionOS ?+
 - watchOS 3.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

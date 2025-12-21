@@ -71,9 +71,6 @@ In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/
 - [func replaceError(with: Optional<Wrapped>.Publisher.Output) -> Optional<Optional<Wrapped>.Publisher.Output>.Publisher](optional/publisher-swift.struct/replaceerror(with:).md)
 - [func retry(Int) -> Optional<Wrapped>.Publisher](optional/publisher-swift.struct/retry(_:).md)
 - [func scan<T>(T, (T, Optional<Wrapped>.Publisher.Output) -> T) -> Optional<T>.Publisher](optional/publisher-swift.struct/scan(_:_:).md)
-### Default Implementations
-- [Equatable Implementations](optional/publisher-swift.struct/equatable-implementations.md)
-- [Publisher Implementations](optional/publisher-swift.struct/publisher-implementations.md)
 
 ## Relationships
 

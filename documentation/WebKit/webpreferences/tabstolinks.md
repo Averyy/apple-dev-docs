@@ -16,7 +16,7 @@ var tabsToLinks: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be able to navigate to links by pressing the tab key, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user should be able to navigate to links by pressing the tab key, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 
 ---

@@ -24,14 +24,6 @@ case actionButtonClicked
   The user replied to the notification.
 - [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
   The user clicked on the additional action button of the notification alert.
-- [NSUserNotification.ActivationType.none](nsusernotification/activationtype-swift.enum/none.md)
-  The user did not interact with the notification alert.
-- [NSUserNotification.ActivationType.contentsClicked](nsusernotification/activationtype-swift.enum/contentsclicked.md)
-  The user clicked on the contents of the notification alert.
-- [NSUserNotification.ActivationType.replied](nsusernotification/activationtype-swift.enum/replied.md)
-  The user replied to the notification.
-- [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
-  The user clicked on the additional action button of the notification alert.
 
 
 ---

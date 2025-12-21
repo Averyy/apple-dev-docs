@@ -11,7 +11,7 @@ A convenient list of all the usages that the device supports.
 ## Declaration
 
 ```swift
-var deviceUsages: [HIDUsage] { get }
+final let deviceUsages: [HIDUsage]
 ```
 
 #### Discussion
@@ -22,7 +22,7 @@ For more details, see [`HIDUsage`](hidusage.md).
 
 ## See Also
 
-- [var descriptor: Data](hiddeviceclient/descriptor.md)
+- [let descriptor: Data](hiddeviceclient/descriptor.md)
   The HID specification compliant report descriptor for the associated HID device.
 - [var isBuiltIn: Bool](hiddeviceclient/isbuiltin.md)
   A Boolean value that determines whether the device is built-in to the system or an external peripheral.

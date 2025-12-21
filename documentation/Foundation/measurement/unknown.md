@@ -28,11 +28,6 @@ static func == <LeftHandSideType, RightHandSideType>(lhs: Measurement<LeftHandSi
 
 If `lhs.unit == rhs.unit`, returns `lhs.value == rhs.value`. Otherwise, converts `rhs` to the same unit as `lhs` and then compares the resulting values.
 
-## See Also
-
-- [static func != (Self, Self) -> Bool](measurement/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-
 
 ---
 

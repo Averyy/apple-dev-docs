@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encodes a command that improves the performance of the GPU’s accesses to a texture.
+Encodes a command that improves the performance of GPU memory operations with a texture.
 
 **Availability**:
 - iOS 12.0+
@@ -22,7 +22,7 @@ func optimizeContentsForGPUAccess(texture: any MTLTexture)
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Discussion
 
@@ -33,7 +33,7 @@ This command can reduce the time it takes the GPU to access a texture. Apps typi
 
 When a blit pass runs this command, the GPU only applies lossless changes to the texture’s underlying data.
 
-> **Note**:  Optimizing a texture for the GPU may affect the performance of the CPU’s accesses, but the data the CPU retrieves from the texture remains consistent.
+> **Note**:  Optimizing a texture for the GPU may affect the performance of CPU memory operations, but the data the CPU retrieves from the texture remains consistent.
 
 ## Parameters
 
@@ -42,7 +42,7 @@ When a blit pass runs this command, the GPU only applies lossless changes to the
 ## See Also
 
 - [func optimizeContentsForGPUAccess(texture: any MTLTexture, slice: Int, level: Int)](mtlblitcommandencoder/optimizecontentsforgpuaccess(texture:slice:level:).md)
-  Encodes a command that improves the performance of the GPU’s accesses to a specific portion of a texture.
+  Encodes a command that improves the performance of GPU memory operations with a specific portion of a texture.
 
 
 ---

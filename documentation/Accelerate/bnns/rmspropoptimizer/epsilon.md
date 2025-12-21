@@ -13,7 +13,6 @@ A term that the optimizer adds to the denominator.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -21,7 +21,7 @@ func `is`(compatibleWith unit: HKUnit) -> Bool
 
 #### Return Value
 
-`Yes` if the quantity is compatible; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+`Yes` if the quantity is compatible; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

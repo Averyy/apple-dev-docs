@@ -21,7 +21,7 @@ var width: Int { get set }
 
 #### Discussion
 
-The default value is `1`. The value must be greater than or equal to `1`.
+The default value is `1`. The value needs to be greater than or equal to `1`.
 
 ## See Also
 

@@ -86,23 +86,24 @@ To apply your custom image processor class to filter one or more images, call th
 
 ### Type Properties
 - [class var outputFormat: CIFormat](ciimageprocessorkernel/outputformat.md)
-  The processor’s output pixel format.
+  Override this class property if you want your processor’s output to be in a specific pixel format.
 - [class var outputIsOpaque: Bool](ciimageprocessorkernel/outputisopaque.md)
-  Boolean determining whether or not processor outputs an opaque image.
+  Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
 - [class var synchronizeInputs: Bool](ciimageprocessorkernel/synchronizeinputs.md)
-  Tells whether or not processor input should be synchronized for CPU access.
+  Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 ### Type Methods
 - [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md)
-  Method to override when applying a custom image processor kernel to an image and returning the result.
+  Call this method on your Core Image Processor Kernel subclass to create a new image of the specified extent.
 - [class func formatForInput(at: Int32) -> CIFormat](ciimageprocessorkernel/formatforinput(at:).md)
-  Method to override for returning the image processing kernel’s input pixel format.
+  Override this class method if you want your any of the inputs to be in a specific pixel format.
 - [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](ciimageprocessorkernel/process(with:arguments:output:).md)
-  Method to override for customizing the kernel’s image processing.
+  Override this class method to implement your Core Image Processor Kernel subclass.
 - [class func roi(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> CGRect](ciimageprocessorkernel/roi(forinput:arguments:outputrect:).md)
-  Method to override for determining specific region of input image required to process in rendering a specified region of the output image.
+  Override this class method to implement your processor’s ROI callback.
 - [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
+  Override this class method to implement your processor’s tiled ROI callback.
 - [class func apply(withExtents: [CIVector], inputs: [CIImage]?, arguments: [String : Any]?) throws -> [CIImage]](ciimageprocessorkernel/apply(withextents:inputs:arguments:).md)
-  Call this method on your multiple-output Core Image Processor Kernel subclass to create an `NSArray` of new [`CIImage`](ciimage.md)s given the specified `NSArray` of extents.
+  Call this method on your multiple-output Core Image Processor Kernel subclass to create an array of new image objects given the specified array of extents.
 - [class func outputFormat(at: Int32, arguments: [String : Any]?) -> CIFormat](ciimageprocessorkernel/outputformat(at:arguments:).md)
   Override this class method if your processor has more than one output and you want your processor’s output to be in a specific supported `CIPixelFormat`.
 - [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, outputs: [any CIImageProcessorOutput]) throws](ciimageprocessorkernel/process(with:arguments:outputs:).md)

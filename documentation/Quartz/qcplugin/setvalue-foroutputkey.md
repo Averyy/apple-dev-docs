@@ -16,7 +16,7 @@ func setValue(_ value: Any!, forOutputKey key: String!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; [`false`](https://developer.apple.com/documentation/swift/false)  if called outside of the [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md) method.
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; [`false`](https://developer.apple.com/documentation/Swift/false)  if called outside of the [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md) method.
 
 #### Discussion
 

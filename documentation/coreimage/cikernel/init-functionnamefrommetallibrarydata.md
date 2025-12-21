@@ -40,7 +40,7 @@ To use MSL as the shader language for a [`CIKernel`](cikernel.md), you must spec
 
 The following code shows how you can create a general kernel based on a Metal function named `myKernel`.
 
-The first step is to create a `Data` object that represents the the default Metal library. If you have built this in Xcode, it will be called `default.metallib` and can be loaded using the [`Bundle`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Bundle.html#//apple_ref/doc/uid/TP40008195-CH4) type’s `url` method.
+The first step is to create a `Data` object that represents the default Metal library. If you have built this in Xcode, it will be called `default.metallib` and can be loaded using the [`Bundle`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Bundle.html#//apple_ref/doc/uid/TP40008195-CH4) type’s `url` method.
 
 Using the representation of the Metal library and the function name `myKernel`, you initialize a [`CIKernel`](cikernel.md).
 

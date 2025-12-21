@@ -31,10 +31,10 @@ Parameters:
 
 - [init(LocalizedStringResource)](intentdialog/init(_:).md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [init(stringLiteral: String)](intentdialog/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-- [init(stringInterpolation: String.LocalizationValue.StringInterpolation)](intentdialog/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
+- [init(full: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:systemimagename:).md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:supporting:systemimagename:).md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 
 
 ---

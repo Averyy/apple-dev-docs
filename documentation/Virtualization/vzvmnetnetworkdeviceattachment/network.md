@@ -6,7 +6,7 @@
 The network object that the you initialize the attachment with.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

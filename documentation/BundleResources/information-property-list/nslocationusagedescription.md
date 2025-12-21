@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting access to the user’s location information.
+A message that tells people why the app is requesting access to their location information.
 
 **Availability**:
 - iOS 6.0+
@@ -21,13 +21,13 @@ Use this key in a macOS app that accesses the user’s location information. In 
 - [Choosing the  Location Services Authorization to Request](choosing-the-location-services-authorization-to-request.md)
   Determine the authorization your app needs to access location data.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](information-property-list/nslocationalwaysandwheninuseusagedescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 - [NSLocationWhenInUseUsageDescription](information-property-list/nslocationwheninuseusagedescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground.
+  A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
 - [NSLocationTemporaryUsageDescriptionDictionary](information-property-list/nslocationtemporaryusagedescriptiondictionary.md)
-  A collection of messages that explain why the app is requesting temporary access to the user’s location.
+  A collection of messages that explain why the app is requesting temporary access to their location.
 - [NSLocationAlwaysUsageDescription](information-property-list/nslocationalwaysusagedescription.md)
-  A message that tells the user why the app is requesting access to the user’s location at all times.
+  A message that tells people why the app is requesting access to their location at all times.
 - [NSWidgetWantsLocation](information-property-list/nswidgetwantslocation.md)
   A Boolean value that indicates a widget uses the user’s location information.
 - [NSLocationDefaultAccuracyReduced](information-property-list/nslocationdefaultaccuracyreduced.md)

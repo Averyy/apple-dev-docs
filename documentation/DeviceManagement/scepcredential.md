@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-An SCEP identity that the device generates.
+A SCEP identity that the device generates.
 
 **Availability**:
 - iOS 17.0+

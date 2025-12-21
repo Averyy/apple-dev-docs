@@ -21,7 +21,6 @@ Asynchronously loads an anchor entity from a file URL.
 
 ## Mentions
 
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 - [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
 
 #### Return Value

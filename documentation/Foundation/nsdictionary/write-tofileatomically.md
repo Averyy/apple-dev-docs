@@ -22,11 +22,11 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method recursively validates that all the contained objects are property list objects (instances of `NSData`, `NSDate`, `NSNumber`, `NSString`, `NSArray`, or `NSDictionary`) before writing out the file, and returns [`false`](https://developer.apple.com/documentation/swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
+This method recursively validates that all the contained objects are property list objects (instances of `NSData`, `NSDate`, `NSNumber`, `NSString`, `NSArray`, or `NSDictionary`) before writing out the file, and returns [`false`](https://developer.apple.com/documentation/Swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
 
 If the dictionary’s contents are all property list objects, the file written by this method can be used to initialize a new dictionary with the class method [`dictionaryWithContentsOfFile:`](nsdictionary/dictionarywithcontentsoffile:.md) or the instance method [`init(contentsOfFile:)`](nsdictionary/init(contentsoffile:).md).
 

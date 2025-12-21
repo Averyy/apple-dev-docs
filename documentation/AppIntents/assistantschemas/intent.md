@@ -21,6 +21,7 @@ protocol Intent : AssistantSchemas.Model
 ## Topics
 
 ### Type Properties
+- [static var assistant: some AssistantSchemas.AssistantIntent](assistantschemas/intent/assistant.md)
 - [static var books: some AssistantSchemas.BooksIntent](assistantschemas/intent/books.md)
   Assistant schema conformance for app intents that offer ebook and audiobook viewing and rendering functionality.
 - [static var browser: some AssistantSchemas.BrowserIntent](assistantschemas/intent/browser.md)

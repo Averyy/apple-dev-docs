@@ -20,24 +20,6 @@ A resolver that converts one or more integers into one or more strings.
 struct StringFromIntResolver<Input, Output> where Input : _IntentValue, Output : _IntentValue, Output.ValueType == String
 ```
 
-## Topics
-
-### Resolving the type
-- [func resolve(from: Input, context: IntentParameterContext<Output>) async throws -> Output?](stringfromintresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
-### Operators
-- [static func == (StringFromIntResolver<Input, Output>, StringFromIntResolver<Input, Output>) -> Bool](stringfromintresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](stringfromintresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](stringfromintresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](stringfromintresolver/equatable-implementations.md)
-- [Resolver Implementations](stringfromintresolver/resolver-implementations.md)
-
 ## Relationships
 
 ### Conforms To

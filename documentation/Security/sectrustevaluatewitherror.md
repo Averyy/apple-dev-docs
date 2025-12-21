@@ -22,7 +22,7 @@ func SecTrustEvaluateWithError(_ trust: SecTrust, _ error: UnsafeMutablePointer<
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the certificate is trusted; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the certificate is trusted; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -19,10 +19,10 @@ class AVCaptionFormatConformer
 
 ## Topics
 
-### Creating a Format Conformer
+### Creating a format conformer
 - [init(conversionSettings: [AVCaptionSettingsKey : Any])](avcaptionformatconformer/init(conversionsettings:).md)
   Creates a new object with format conversion settings.
-### Conforming Captions
+### Conforming captions
 - [var conformsCaptionsToTimeRange: Bool](avcaptionformatconformer/conformscaptionstotimerange.md)
   A Boolean value that indicates whether to conform the time range of a canonical caption.
 - [func conformedCaption(for: AVCaption) throws -> AVCaption](avcaptionformatconformer/conformedcaption(for:).md)

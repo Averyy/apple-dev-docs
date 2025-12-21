@@ -6,7 +6,7 @@
 Returns and/or modifies the state for the equipment with given identifier and matching type.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,6 +17,15 @@ subscript<E>(of type: E.Type, id equipmentID: EquipmentIdentifier) -> E.State? w
 ## Parameters
 
 - `type`: The type of the equipment.
+
+## See Also
+
+- [subscript(id _: EquipmentIdentifier) -> (any MutableEquipmentState)?](equipmentstatecollection/subscript(id:).md)
+  Returns and/or modifies the state for the equipment with given identifier.
+- [subscript(ids _: some Sequence<EquipmentIdentifier>) -> [(any MutableEquipmentState)?]](equipmentstatecollection/subscript(ids:).md)
+  Returns and/or modifies the states for the equipment with given identifiers.
+- [subscript<E>(of _: E.Type, ids _: some Sequence<EquipmentIdentifier>) -> [E.State?]](equipmentstatecollection/subscript(of:ids:).md)
+  Returns and/or modifies the state for the equipment with given identifier and matching type.
 
 
 ---

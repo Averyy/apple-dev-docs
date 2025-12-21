@@ -8,7 +8,7 @@ Learn how to create a simple app that incorporates predicted touches into its dr
 
 The sample app Speed Sketch (see [`Leveraging touch input for drawing apps`](leveraging-touch-input-for-drawing-apps.md)) uses predicted touches to minimize latency when drawing using either Apple Pencil or a finger. The key class for gathering touches is the `StrokeGestureRecognizer` class. Each new sequence of touch events results in the creation of a `Stroke` object to the app’s drawing canvas. Stroke objects store the touch data needed to do stylized line drawing and can render that data using a calligraphy pen or a regular pen, or in a special debug mode that draws line segments for each distinct touch event.
 
-![An illustration of the calligraphy, pen, and debug drawing modes in Speed Sketch.](https://docs-assets.developer.apple.com/published/281d5cfcb5400af752fb3f0a0d60e69f/media-3004387%402x.png)
+![An illustration of the calligraphy, pen, and debug drawing modes in Speed Sketch.](https://docs-assets.developer.apple.com/published/0c6f74150eeecfffae577cdf7dc3389f/incorporating-predicted-touches-into-an-app-1%402x.png)
 
 ##### Collect the Touch Input
 

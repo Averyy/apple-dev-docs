@@ -22,7 +22,7 @@ func scanHexDouble(_ result: UnsafeMutablePointer<Double>?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver finds a valid double-point representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Overflow or underflow are both considered valid floating-point representations.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver finds a valid double-point representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Overflow or underflow are both considered valid floating-point representations.
 
 #### Discussion
 

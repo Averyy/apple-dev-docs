@@ -6,7 +6,7 @@
 Register a custom action of given type. Each type of custom action needs to be registered before it can be used.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -22,26 +22,21 @@ struct CollectByTime<Upstream, Context> where Upstream : Publisher, Context : Sc
 
 ## Topics
 
-### Creating a Collect by Time Publisher
+### Creating a collect by time Publisher
 - [init(upstream: Upstream, strategy: Publishers.TimeGroupingStrategy<Context>, options: Context.SchedulerOptions?)](publishers/collectbytime/init(upstream:strategy:options:).md)
   Creates a publisher that buffers and periodically publishes its items.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.CollectByTime.Output](publishers/collectbytime/output.md)
   The kind of values published by this publisher.
 - [Publishers.CollectByTime.Failure](publishers/collectbytime/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/collectbytime/upstream.md)
   The publisher that this publisher receives elements from.
 - [let strategy: Publishers.TimeGroupingStrategy<Context>](publishers/collectbytime/strategy.md)
   The strategy with which to collect and publish elements.
 - [let options: Context.SchedulerOptions?](publishers/collectbytime/options.md)
   Scheduler options to use for the strategy.
-### Applying Operators
-- [Publisher Operators](publishers-collectbytime-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/collectbytime/publisher-implementations.md)
 
 ## Relationships
 

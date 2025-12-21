@@ -43,7 +43,7 @@ For webpages, some additional options are available only while inspecting a conn
 
 #### Inspect Service Workers
 
-Service Workers are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
+[`Service workers`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
 You can only inspect service workers that are currently running. To inspect service workers, open the  menu, find the menu item for the visionOS device you want to inspect and select them from the  section near the bottom of the menu. This section doesn’t appear if there aren’t any service workers currently running.
 
@@ -72,9 +72,9 @@ Learn more about [`Enabling inspecting content in your apps`](enabling-inspectin
 ## See Also
 
 - [Inspecting Safari on macOS](inspecting-safari-macos.md)
-  Inspect webpages, Service Workers, and extensions in Safari on macOS.
+  Inspect webpages, service workers, and extensions in Safari on macOS.
 - [Inspecting iOS and iPadOS](inspecting-ios.md)
-  Inspect webpages, Service Workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
+  Inspect webpages, service workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
 - [Inspecting tvOS](inspecting-tvos.md)
   Inspect JavaScript and TVML content on tvOS from a Mac on the same network.
 - [Enabling inspecting content in your apps](enabling-inspecting-content-in-your-apps.md)

@@ -26,7 +26,7 @@ func vImageConvert_RGB16UtoPlanar16U(_ rgbSrc: UnsafePointer<vImage_Buffer>, _ r
 
 #### Discussion
 
-The source and destination buffers must have the same height and width.
+The source and destination buffers need to have the same height and width.
 
 ## Parameters
 

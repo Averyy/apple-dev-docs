@@ -35,8 +35,6 @@ Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/met
 ### Creating group activity metadata
 - [init()](groupactivitymetadata/init.md)
   Creates a new instance for storing descriptive information about an activity.
-- [init(from: any Decoder) throws](groupactivitymetadata/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Presenting the activity
 - [var title: String?](groupactivitymetadata/title.md)
   The localized string to display as the title of your activity.
@@ -63,14 +61,6 @@ Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/met
   Preferences for how to present audio and video on the main communication channel.
 - [struct BroadcastOptions](broadcastoptions.md)
   Options for how to broadcast media on the shared communications channel.
-### Comparing metadata objects
-- [static func != (Self, Self) -> Bool](groupactivitymetadata/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (GroupActivityMetadata, GroupActivityMetadata) -> Bool](groupactivitymetadata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Encoding the metadata
-- [func encode(to: any Encoder) throws](groupactivitymetadata/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Structures
 - [GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct.md)
   An activity lifetime policy used by a Group Activity.
@@ -82,10 +72,6 @@ Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/met
 - [var localizedTitle: String?](groupactivitymetadata/localizedtitle.md)
 ### Enumerations
 - [GroupActivityMetadata.Experience](groupactivitymetadata/experience-swift.enum.md)
-### Default Implementations
-- [Decodable Implementations](groupactivitymetadata/decodable-implementations.md)
-- [Encodable Implementations](groupactivitymetadata/encodable-implementations.md)
-- [Equatable Implementations](groupactivitymetadata/equatable-implementations.md)
 
 ## Relationships
 
@@ -101,7 +87,7 @@ Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/met
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

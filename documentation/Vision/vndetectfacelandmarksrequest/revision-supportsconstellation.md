@@ -21,7 +21,7 @@ class func revision(_ requestRevision: Int, supportsConstellation constellation:
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the revision supports the constellation, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the revision supports the constellation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

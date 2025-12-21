@@ -18,15 +18,6 @@ init(rawValue: Int)
 
 - `rawValue`: The underlying raw value of the option set.
 
-## See Also
-
-- [init()](mlactionclassifier/videoaugmentationoptions/init.md)
-  Creates an empty option set.
-- [init<S>(S)](mlactionclassifier/videoaugmentationoptions/init(_:).md)
-  Creates a new set from a finite sequence of items.
-- [init(arrayLiteral: Self.Element...)](mlactionclassifier/videoaugmentationoptions/init(arrayliteral:).md)
-  Creates a set containing the elements of the given array literal.
-
 
 ---
 

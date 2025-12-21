@@ -54,9 +54,9 @@ Injected scripts have an implied namespace — you don’t have to worry about y
 - [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
 - [class SFSafariExtensionManager](sfsafariextensionmanager.md)
-  A class that your app uses to find out the current state of a Safari app extension.
+  A class that your app uses to find out the current state of a Safari extension.
 - [class SFSafariExtensionState](sfsafariextensionstate.md)
-  The state of a Safari app extension.
+  The state of a Safari extension.
 - [class SFSafariPageProperties](sfsafaripageproperties.md)
   An object that captures information about a webpage.
 - [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)

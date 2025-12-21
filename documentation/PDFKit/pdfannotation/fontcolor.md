@@ -17,7 +17,7 @@ The font color the annotation uses to display text.
 
 ```swift
 @NSCopying
-var fontColor: UIColor? { get set }
+var fontColor: NSColor? { get set }
 ```
 
 ## See Also

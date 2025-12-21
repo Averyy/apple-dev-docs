@@ -22,7 +22,7 @@ func isConfiguration(withName configuration: String?, compatibleWithStoreMetadat
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the configuration in the receiver specified by `configuration` is compatible with the store metadata given by `metadata`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the configuration in the receiver specified by `configuration` is compatible with the store metadata given by `metadata`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

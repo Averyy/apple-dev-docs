@@ -60,6 +60,30 @@ struct ShowLicenseAgreement: View {
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
 
+##### Breakthrough Effect
+
+In visionOS, most system presentations appear with a breakthrough effect by default. To change how the enclosing presentation breaks through content occluding it, use [`presentationBreakthroughEffect(_:)`](view/presentationbreakthrougheffect(_:).md), like in the following example:
+
+```swift
+.sheet(isPresented: $isShowingSheet,
+       onDismiss: didDismiss) {
+    VStack {
+        Text("License Agreement")
+            .font(.title)
+            .padding(50)
+        Text("""
+                Terms and conditions go here.
+            """)
+            .padding(50)
+        Button("Dismiss",
+               action: { isShowingSheet.toggle() })
+    }
+    .presentationBreakthroughEffect(.prominent)
+}
+```
+
+> **Note**: Passing a `.none` value for a sheet has no effect.
+
 ## Parameters
 
 - `isPresented`: A binding to a Boolean value that determines whether   to present the sheet that you create in the modifier’s    closure.

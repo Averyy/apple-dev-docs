@@ -16,7 +16,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver can handle the action method; [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver can handle the action method; [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 ## Parameters
 

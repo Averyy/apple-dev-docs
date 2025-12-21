@@ -21,7 +21,7 @@ let kVTPixelTransferPropertyKey_DestinationPixelAspectRatio: CFString
 
 #### Discussion
 
-The value of this property is a doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum object with same keys as used in the [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey) dictionary.
+The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object with same keys as used in the [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey) dictionary.
 
 This property is ignored in [`kVTScalingMode_Normal`](kvtscalingmode_normal.md).  This property defaults to `NULL`, meaning 1:1 (for [`kVTScalingMode_CropSourceToCleanAperture`](kvtscalingmode_cropsourcetocleanaperture.md)) or no change in pixel aspect ratio (for [`kVTScalingMode_Letterbox`](kvtscalingmode_letterbox.md) and [`kVTScalingMode_Trim`](kvtscalingmode_trim.md)).
 

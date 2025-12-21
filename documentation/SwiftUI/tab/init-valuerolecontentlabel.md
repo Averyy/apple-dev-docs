@@ -28,6 +28,15 @@ init(value: Value, role: TabRole?, @ViewBuilder content: () -> Content, @ViewBui
 - `content`: The view content of the tab.
 - `label`: The label for the tab’s tab item.
 
+## See Also
+
+- [init(content: () -> Content, label: () -> Label)](tab/init(content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
+- [init(value:content:label:)](tab/init(value:content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
+- [init(role: TabRole?, content: () -> Content, label: () -> Label)](tab/init(role:content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
+
 
 ---
 

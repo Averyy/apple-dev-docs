@@ -21,11 +21,11 @@ var canResignFirstResponder: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder can resign first-responder status; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the responder can resign first-responder status; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) by default. You can override this method in your custom responders and return a different value if needed. For example, a text field containing invalid content might want to return [`false`](https://developer.apple.com/documentation/swift/false) to ensure that the user corrects that content first.
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) by default. You can override this method in your custom responders and return a different value if needed. For example, a text field containing invalid content might want to return [`false`](https://developer.apple.com/documentation/Swift/false) to ensure that the user corrects that content first.
 
 ## See Also
 

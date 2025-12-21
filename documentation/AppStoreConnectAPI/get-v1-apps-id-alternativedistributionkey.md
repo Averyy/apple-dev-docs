@@ -10,9 +10,9 @@ Get the alternative distribution keys for a specific app.
 
 ## Mentions
 
+- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
 #### Discussion
 

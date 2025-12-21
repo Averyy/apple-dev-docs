@@ -22,12 +22,12 @@ struct MapKeyPath3<Upstream, Output0, Output1, Output2> where Upstream : Publish
 
 ## Topics
 
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.MapKeyPath3.Output](publishers/mapkeypath3/output.md)
   The kind of values published by this publisher.
 - [Publishers.MapKeyPath3.Failure](publishers/mapkeypath3/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/mapkeypath3/upstream.md)
   The publisher from which this publisher receives elements.
 - [let keyPath0: KeyPath<Upstream.Output, Output0>](publishers/mapkeypath3/keypath0.md)
@@ -36,11 +36,6 @@ struct MapKeyPath3<Upstream, Output0, Output1, Output2> where Upstream : Publish
   The key path of a second property to publish.
 - [let keyPath2: KeyPath<Upstream.Output, Output2>](publishers/mapkeypath3/keypath2.md)
   The key path of a third property to publish.
-### Applying Operators
-- [Publisher Operators](publishers-mapkeypath3-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/mapkeypath3/publisher-implementations.md)
 
 ## Relationships
 

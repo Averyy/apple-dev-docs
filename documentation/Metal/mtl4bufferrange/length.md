@@ -19,7 +19,7 @@ var length: UInt64
 
 #### Discussion
 
-(uint64_t)-1 represents the range from the given address to the end of the buffer.
+Length of the region which begins at the given address. If the length is not known, a value of (uint64_t)-1 represents the range from the given address to the end of the buffer.
 
 
 ---

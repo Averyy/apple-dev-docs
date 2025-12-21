@@ -22,8 +22,6 @@ struct AnonymousUserIdentity
 ### Creating an anonymous identity
 - [init()](anonymoususeridentity/init.md)
   Initializes an instance of `AnonymousUserIdentity`.
-- [init(from: any Decoder) throws](anonymoususeridentity/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Inspecting an identity
 - [var stringRepresentation: String](anonymoususeridentity/stringrepresentation.md)
   String representation of this user identity for display or debugging purposes.
@@ -31,20 +29,6 @@ struct AnonymousUserIdentity
   A unique type identifier for this user identity.
 - [static var typeID: String](anonymoususeridentity/typeid-swift.type.property.md)
   A unique type identifier for this user identity.
-### Operators
-- [static func == (AnonymousUserIdentity, AnonymousUserIdentity) -> Bool](anonymoususeridentity/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](anonymoususeridentity/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](anonymoususeridentity/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](anonymoususeridentity/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](anonymoususeridentity/equatable-implementations.md)
-- [UserIdentity Implementations](anonymoususeridentity/useridentity-implementations.md)
 
 ## Relationships
 

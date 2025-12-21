@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Cancels an upload and calls the completion handler with resume data for later use. resumeData will be nil if the server does not support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,10 @@
 ```swift
 func cancelByProducingResumeData() async -> Data?
 ```
+
+## Parameters
+
+- `completionHandler`: The completion handler to call when the upload has been successfully canceled.
 
 
 ---

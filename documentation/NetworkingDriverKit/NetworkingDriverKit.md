@@ -55,12 +55,27 @@ Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to 
 - [NetworkingDriverKit Constants](networkingdriverkit-constants.md)
 ### Classes
 - [IOUserNetworkPacketPoller](iousernetworkpacketpoller.md)
+- [IOUserNetworkPacketQueueCompat](iousernetworkpacketqueuecompat.md)
+- [IOUserNetworkRxCompletionQueueCompat](iousernetworkrxcompletionqueuecompat.md)
+- [IOUserNetworkRxSubmissionQueueCompat](iousernetworkrxsubmissionqueuecompat.md)
+- [IOUserNetworkTxCompletionQueueCompat](iousernetworktxcompletionqueuecompat.md)
+- [IOUserNetworkTxSubmissionQueueCompat](iousernetworktxsubmissionqueuecompat.md)
 ### Structures
 - [IOUserNetworkEthernet_IVars](iousernetworkethernet_ivars.md)
+- [IOUserNetworkPacketQueueCompat_IVars](iousernetworkpacketqueuecompat_ivars.md)
+- [IOUserNetworkRxCompletionQueueCompat_IVars](iousernetworkrxcompletionqueuecompat_ivars.md)
+- [IOUserNetworkRxSubmissionQueueCompat_IVars](iousernetworkrxsubmissionqueuecompat_ivars.md)
+- [IOUserNetworkTxCompletionQueueCompat_IVars](iousernetworktxcompletionqueuecompat_ivars.md)
+- [IOUserNetworkTxSubmissionQueueCompat_IVars](iousernetworktxsubmissionqueuecompat_ivars.md)
 ### Macros
 - [NDK_25](ndk_25.md)
 ### Enumeration Cases
 - [kIOUserNetworkHWAssistLRONumSeg](kiousernetworkhwassistlronumseg.md)
+### Type Aliases
+- [DequeueActionCompat](dequeueactioncompat.md)
+- [EnqueueActionCompat](enqueueactioncompat.md)
+- [IOUserNetworkPacketQueueCompatId](iousernetworkpacketqueuecompatid.md)
+- [QueryFreeSpaceActionCompat](queryfreespaceactioncompat.md)
 
 
 ---

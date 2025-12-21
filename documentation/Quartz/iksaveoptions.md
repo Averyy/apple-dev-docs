@@ -32,7 +32,7 @@ class IKSaveOptions
 - [var delegate: AnyObject!](iksaveoptions/delegate.md)
   Specifies the delegate object.
 ### File Type Filtering
-- [func saveOptions(_ saveOptions: IKSaveOptions!, shouldShowUTType utType: String!) -> Bool](../ObjectiveC/NSObject-swift.class/saveOptions(_:shouldShowUTType:).md)
+- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../ObjectiveC/NSObject-swift.class/saveOptions(_:shouldShowUTType:).md)
   Called to determine if the specified uniform type identifier should be shown in the save panel.
 ### Instance Properties
 - [var rememberLastSetting: Bool](iksaveoptions/rememberlastsetting.md)

@@ -3,7 +3,7 @@
 **Framework**: AdServices  
 **Kind**: module
 
-Attribute app-download campaigns that originate from the App Store, Apple News, or Stocks on iOS devices.
+Attribute app-download campaigns that originate from the App Store on iOS devices.
 
 **Availability**:
 - iOS 14.3+

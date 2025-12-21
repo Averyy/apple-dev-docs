@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data that describes the Asset File related to a asset.
+
 **Availability**:
 - App Store Connect API 4.0+
 
@@ -16,6 +18,7 @@ object BackgroundAssetVersion.Relationships.AssetFile
 
 ### Dictionaries
 - [object BackgroundAssetVersion.Relationships.AssetFile.Data](backgroundassetversion/relationships-data.dictionary/assetfile-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related resource.
 
 
 ---

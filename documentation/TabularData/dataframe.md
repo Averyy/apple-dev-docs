@@ -59,8 +59,6 @@ struct DataFrame
 - [struct ShapedData](shapeddata.md)
   A collection type that represents multidimensional data in a data frame element.
 ### Inspecting a Data Frame
-- [var isEmpty: Bool](dataframe/isempty.md)
-  A Boolean that indicates whether the data frame type is empty.
 - [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
   The number of rows and columns in the data frame.
 - [var columns: [AnyColumn]](dataframe/columns.md)
@@ -98,10 +96,6 @@ struct DataFrame
 - [enum SummaryColumnIDs](summarycolumnids.md)
   The summary data frame column identifiers.
 ### Saving a Data Frame to a CSV Format
-- [func writeCSV(to: URL, options: CSVWritingOptions) throws](dataframe/writecsv(to:options:).md)
-  Creates a CSV file with the contents of the data frame type.
-- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](dataframe/csvrepresentation(options:).md)
-  Generates a CSV data instance of the data frame type.
 - [struct CSVWritingOptions](csvwritingoptions.md)
   A set of CSV file-writing options.
 ### Describing a Data Frame
@@ -109,20 +103,14 @@ struct DataFrame
   A text representation of the data frame.
 - [var debugDescription: String](dataframe/debugdescription.md)
   A text representation of the data frame suitable for debugging.
-- [func description(options: FormattingOptions) -> String](dataframe/description(options:).md)
-  Generates a text representation of the data frame type.
 - [var customMirror: Mirror](dataframe/custommirror.md)
   A mirror that reflects the data frame.
 ### Comparing Data Frames
 - [static func == (DataFrame, DataFrame) -> Bool](dataframe/==(_:_:).md)
   Returns a Boolean that indicates whether the data frames are equal.
-- [static func != (Self, Self) -> Bool](dataframe/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Hashing a Data Frame
 - [func hash(into: inout Hasher)](dataframe/hash(into:).md)
   Hashes the essential components of the data frame by feeding them into a hasher.
-- [var hashValue: Int](dataframe/hashvalue.md)
-  The hash value.
 ### Initializers
 - [init<S, Feature, Annotation>(S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws](dataframe/init(_:featurescolumnid:annotationscolumnid:).md)
   Creates a data frame from a sequence of annotated features.
@@ -139,9 +127,6 @@ struct DataFrame
   Loads training examples from a data frame containing annotations.
 - [func selecting(ColumnSelection) -> DataFrame](dataframe/selecting(_:).md)
   Generates a data frame that includes only the column selection.
-### Type Aliases
-- [DataFrame.ColumnType](dataframe/columntype.md)
-  A type that conforms to the type-erased column protocol.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](dataframe/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](dataframe/customreflectable-implementations.md)

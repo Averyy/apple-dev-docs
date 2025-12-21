@@ -21,7 +21,7 @@ var allowsRotation: Bool { get set }
 
 #### Discussion
 
-Default value is [`true`](https://developer.apple.com/documentation/swift/true). To disable rotation, set this property to [`false`](https://developer.apple.com/documentation/swift/false).
+Default value is [`true`](https://developer.apple.com/documentation/Swift/true). To disable rotation, set this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

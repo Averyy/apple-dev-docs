@@ -4,12 +4,12 @@
 **Kind**: func
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,9 +23,7 @@ A result code.
 
 #### Discussion
 
-```None
-        packetized formats, and also supporting packet dependency descriptions.
-```
+Converts audio data supplied by a callback function, supporting non-interleaved and packetized formats, and also supporting packet dependency descriptions.
 
 For output formats that use packet dependency descriptions, this must be used instead of AudioConverterFillComplexBuffer, which will return an error for such formats.
 

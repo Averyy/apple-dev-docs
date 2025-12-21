@@ -21,7 +21,7 @@ optional func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the old text should be replaced by the new text; [`false`](https://developer.apple.com/documentation/swift/false) if the replacement operation should be aborted.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the old text should be replaced by the new text; [`false`](https://developer.apple.com/documentation/Swift/false) if the replacement operation should be aborted.
 
 #### Discussion
 

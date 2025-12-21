@@ -49,6 +49,8 @@ Chart {
 - [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-7frpp.md)
 - [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: KeyPath<PointPlot<Content>.DataElement, CGFloat>)](pointplot/init(_:x:y:)-9p3yg.md)
 ### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedPointPlotContent](vectorizedpointplotcontent.md)
   An opaque vectorized chart content type.
 

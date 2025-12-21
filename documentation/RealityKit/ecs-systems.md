@@ -19,6 +19,8 @@ Second, having to call behavior methods individually on every relevant entity in
 ### System configuration
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
   Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
+- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
+  Rotate an entity around an axis using a Component and a System.
 - [protocol System](system.md)
   An object that affects multiple entities in every update of a RealityKit scene.
 - [struct SystemUpdateCondition](systemupdatecondition.md)

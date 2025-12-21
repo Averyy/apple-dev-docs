@@ -21,7 +21,7 @@ var backwards: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), searches proceed backward from the current selection. When the value is [`false`](https://developer.apple.com/documentation/swift/false), searches proceed forward from the current selection. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), searches proceed backward from the current selection. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), searches proceed forward from the current selection. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The web view respects the writing direction of its content. For example, a forward search moves right-to-left and top-to-bottom for a right-to-left language.
 

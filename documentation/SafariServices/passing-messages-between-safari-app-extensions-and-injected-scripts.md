@@ -80,7 +80,7 @@ safari.self.addEventListener("message", handleMessage);
 
 ```
 
-The event that passes into the event handler is a [`SafariExtensionMessageEvent`](https://developer.apple.com/documentation/safariextensions/safariextensionmessageevent) object. Its `name` property identifies the message, and its `message` property contains the dictionary of user data.
+The event that passes into the event handler is a `SafariExtensionMessageEvent` object. Its `name` property identifies the message, and its `message` property contains the dictionary of user data.
 
 ```javascript
 function handleMessage(event) {
@@ -91,14 +91,6 @@ function handleMessage(event) {
 
 ## See Also
 
-- [SafariAppExtension](../safariextensions/safariappextension.md)
-  A class that represents your extension in a content script.
-- [SafariAppExtensionPage](../safariextensions/safariappextensionpage.md)
-  A class that represents a web content area.
-- [SafariEventTarget](../safariextensions/safarieventtarget.md)
-  A base class for event dispatching.
-- [SafariExtensionMessageEvent](../safariextensions/safariextensionmessageevent.md)
-  A class that represents a message between the web content area and an outside script.
 - [Using injected style sheets and scripts](using-injected-style-sheets-and-scripts.md)
   Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
 - [Injecting a script into a webpage](injecting-a-script-into-a-webpage.md)
@@ -108,9 +100,9 @@ function handleMessage(event) {
 - [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
 - [class SFSafariExtensionManager](sfsafariextensionmanager.md)
-  A class that your app uses to find out the current state of a Safari app extension.
+  A class that your app uses to find out the current state of a Safari extension.
 - [class SFSafariExtensionState](sfsafariextensionstate.md)
-  The state of a Safari app extension.
+  The state of a Safari extension.
 - [class SFSafariPageProperties](sfsafaripageproperties.md)
   An object that captures information about a webpage.
 - [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)

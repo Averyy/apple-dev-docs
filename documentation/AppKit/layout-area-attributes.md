@@ -8,9 +8,9 @@ Attributes that are specific to layout areas.
 
 ### Constants
 - [static let horizontalUnits: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/horizontalunits.md)
-  The units that the layout view uses for horizontal values (`NSString`). See Measurement unit attributes for possible values.
+  The units that the layout view uses for horizontal values (`NSString`).
 - [static let verticalUnits: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/verticalunits.md)
-  The units that the layout view uses for vertical values (`NSString`). See Measurement unit attributes for possible values.
+  The units that the layout view uses for vertical values (`NSString`).
 - [static let horizontalUnitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/horizontalunitdescription.md)
   The description of the layout view’s horizontal units (`NSString`).
 - [static let verticalUnitDescription: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/verticalunitdescription.md)

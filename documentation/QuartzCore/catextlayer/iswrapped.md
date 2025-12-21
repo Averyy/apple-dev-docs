@@ -21,7 +21,7 @@ var isWrapped: Bool { get set }
 
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+Defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -11,7 +11,7 @@ The postal code of the place.
 ## Declaration
 
 ```swift
-attribute string? postCode;
+postCode?: string;
 ```
 
 ## See Also

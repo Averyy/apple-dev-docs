@@ -71,12 +71,6 @@ An atomic group opens a local backtracking scope which, upon successful exit, di
   Creates an atomic group with the given regex component.
 - [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent)](local/init(_:)-anqj.md)
   Creates an atomic group with the given regex component.
-### Instance Properties
-- [var regex: Regex<Output>](local/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [typealias RegexOutput](local/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

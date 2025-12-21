@@ -26,15 +26,15 @@ You don’t create use this class directly. Instead, use a class that inherits f
 
 ## Topics
 
-### Identifying a Task
+### Identifying a task
 - [var taskIdentifier: String](mltask/taskidentifier.md)
   A unique name of the task to distinguish it from all other tasks at runtime.
-### Starting and Stopping a Task
+### Starting and stopping a task
 - [func resume()](mltask/resume.md)
   Begins or resumes a machine learning task.
 - [func cancel()](mltask/cancel.md)
   Cancels a machine learning task before it completes.
-### Checking the State of a Task
+### Checking the state of a task
 - [var state: MLTaskState](mltask/state.md)
   The current state of the machine learning task.
 - [enum MLTaskState](mltaskstate.md)

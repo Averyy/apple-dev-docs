@@ -22,7 +22,7 @@ class MLUpdateProgressHandlers
 
 ## Topics
 
-### Creating Progress Handlers
+### Creating progress handlers
 - [init(forEvents: MLUpdateProgressEvent, progressHandler: ((MLUpdateContext) -> Void)?, completionHandler: (MLUpdateContext) -> Void)](mlupdateprogresshandlers/init(forevents:progresshandler:completionhandler:).md)
   Creates the collection of closures an update task uses to notify your app of its progress.
 - [struct MLUpdateProgressEvent](mlupdateprogressevent.md)

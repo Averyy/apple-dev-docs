@@ -15,6 +15,11 @@ The type of asynchronous iterator that produces elements of this asynchronous se
 typealias AsyncIterator = FinanceStore.History<Model>.Iterator
 ```
 
+## See Also
+
+- [FinanceStore.History.Element](financestore/history/element.md)
+  An alias for the type that this asynchronous sequence holds.
+
 
 ---
 

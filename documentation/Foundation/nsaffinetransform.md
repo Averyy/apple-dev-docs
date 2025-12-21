@@ -57,7 +57,7 @@ Methods for applying affine transformations to the current graphics context and 
 - [func transform(NSSize) -> NSSize](nsaffinetransform/transform(_:)-5r6ol.md)
   Applies the receiver’s transform to the specified size and returns the results.
 - [func transform(NSBezierPath) -> NSBezierPath](nsaffinetransform/transform(_:)-6z1xo.md)
-  Creates and returns a new [`NSBezierPath`](https://developer.apple.com/documentation/AppKit/NSBezierPath) object with each point in the given path transformed by the receiver.
+  Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 ### Accessing the Transformation Matrix
 - [var transformStruct: NSAffineTransformStruct](nsaffinetransform/transformstruct.md)
   The matrix coefficients stored as the transformation matrix.

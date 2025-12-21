@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-A collection of state exported by the focused view and its ancestors.
+A collection of state exported by the focused scene or view and its ancestors.
 
 **Availability**:
 - iOS 14.0+
@@ -18,6 +18,71 @@ A collection of state exported by the focused view and its ancestors.
 
 ```swift
 struct FocusedValues
+```
+
+#### Creating Custom Focused Values
+
+Use the `Entry` macro to create custom focused values by extending `FocusedValues` with new properties:
+
+```swift
+extension FocusedValues {
+    @Entry var focusedDocument: Binding<MyDocument>?
+}
+```
+
+The `Entry` macro automatically generates the underlying key type and provides the getter and setter for the focused value. Since the default value for focused values is always `nil`, all focused values must be optional.
+
+##### Publishing Values in Your Views
+
+Views publish focused values using the [`focusedValue(_:_:)`](view/focusedvalue(_:_:).md) modifier:
+
+```swift
+struct DocumentCellView: View {
+    @Binding var document: MyDocument
+
+    var body: some View {
+        Text("Document Content")
+            .focusedValue(\.focusedDocument, $document)
+    }
+}
+```
+
+For scene-wide values that should be available depending on the focused scene, use [`focusedSceneValue(_:_:)`](view/focusedscenevalue(_:_:).md):
+
+```swift
+struct DocumentViewer: View {
+    @Binding var document: MyDocument
+
+    var body: some View {
+        Text("Document Content")
+            .focusedSceneValue(\.focusedDocument, $document)
+    }
+}
+```
+
+##### Accessing the Current Focused Value
+
+Use the [`FocusedValue`](focusedvalue.md) property wrapper in your [`App`](app.md) or [`View`](view.md) to read the current value in the `body`. The [`FocusedBinding`](focusedbinding.md) can be used as a convenient way to access the `wrappedValue` if the value type of the focused value is a `Binding`:
+
+```swift
+@main
+struct DocumentApp: App {
+    @FocusedBinding(\.focusedDocument) var currentDocument: MyDocument?
+
+    var body: some Scene {
+        DocumentGroup(newDocument: MyDocument()) { file in
+            ContentView(document: file.$document)
+                .focusedValue(\.focusedDocument, file.$document)
+        }
+        .commands {
+            CommandGroup(after: .undoRedo) {
+                Button("Increment") {
+                    currentDocument?.value += 1
+                }.disabled(currentDocument == nil)
+            }
+        }
+    }
+}
 ```
 
 ## Topics

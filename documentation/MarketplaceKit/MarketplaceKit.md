@@ -28,7 +28,7 @@ In addition to alternative app marketplaces, this framework also serves:
 
 ![Three diagrams that describe the different use cases for MarketplaceKit. From left to right: installing an app from a webpage, installing an app from a alternative app marketplace, and determining an app’s installation source at runtime.](https://docs-assets.developer.apple.com/published/299f1a299648bff2fe696ad51c4bfd02/marketplacekit-hero%402x.png)
 
-> ❗ **Important**: To request the marketplace entitlement, see [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/). To apply to distribute your app from your website, see [`Getting started with Web Distribution in the EU`](https://developer.apple.comhttps://developer.apple.com/support/web-distribution-eu/).
+> ❗ **Important**: To develop an alternative app marketplace, request approval to use the marketplace entitlement. The request process varies by geographic region. For more information and to request the entitlement, see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md).
 
 ## Topics
 
@@ -53,6 +53,8 @@ In addition to alternative app marketplaces, this framework also serves:
 ### Authorization
 - [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
   Renew your app’s authorization when an app needs updating or when a device restores from backup.
+- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+  Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
 - [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
   The entitlement that enables an app to vend other apps as an alternative app marketplace.
 - [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
@@ -64,7 +66,7 @@ In addition to alternative app marketplaces, this framework also serves:
   Add support for browser apps to install alternative distribution apps from websites.
 ### App management
 - [class AppLibrary](applibrary.md)
-  An object that manages search characteristics, licensing, and the installation of apps.
+  A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
 - [struct AppVersion](appversion.md)
   Information that describes an app, including its identifier and version number.
 - [struct AutomaticUpdate](automaticupdate.md)
@@ -78,10 +80,8 @@ In addition to alternative app marketplaces, this framework also serves:
 - [let MarketplaceKitURIScheme: String](marketplacekiturischeme.md)
   A URI scheme that defines an alternative distribution app installation link.
 ### Background services
-- [protocol MarketplaceExtension](marketplaceextension.md)
-  An extension that facilitates authentication, installation, and launching a marketplace with deep links.
-- [protocol MarketplaceExtensionConfiguration](marketplaceextensionconfiguration.md)
-  The type for a marketplace extension’s configuration object.
+- [protocol MarketplaceAppExtension](marketplaceappextension.md)
+  An extension that facilitates authentication, installation, and launch of a marketplace with deep links.
 ### App distribution UI
 - [class ActionButton](actionbutton.md)
   A user-interface element that enables a person to install, update, or launch apps by tapping the element.
@@ -102,9 +102,20 @@ In addition to alternative app marketplaces, this framework also serves:
 ### Installation sources
 - [enum AppDistributor](appdistributor.md)
   Options that describe the marketplace from which the app installs.
+### Token and transaction reporting
+- [Reporting transactions for the Core Technology Commission](reporting-transactions-for-core-technology-commission.md)
+  Track any eligible purchases that you offer a person that relate to your app and report them to Apple using a token.
+- [enum TransactionReporting](transactionreporting.md)
+  An enumeration that provides token services for transaction reporting.
 ### Errors
 - [enum MarketplaceKitError](marketplacekiterror.md)
-  Errors that can occur in the marketplace workflow.
+  Errors that the MarketplaceKit framework can throw.
+### Region support
+- [Participating in alternative distribution for specific regions](participating-in-alternative-distribution-for-specific-regions.md)
+  Develop your app for alternative distribution according to the varying features that specific geographic regions support.
+### Deprecations
+- [protocol MarketplaceExtension](marketplaceextension.md)
+- [protocol MarketplaceExtensionConfiguration](marketplaceextensionconfiguration.md)
 
 
 ---

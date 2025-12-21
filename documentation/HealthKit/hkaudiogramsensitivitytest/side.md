@@ -17,6 +17,10 @@
 var side: HKAudiogramSensitivityTestSide { get }
 ```
 
+#### Discussion
+
+The test side
+
 
 ---
 

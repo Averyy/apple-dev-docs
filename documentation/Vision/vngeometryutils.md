@@ -52,6 +52,8 @@ class VNGeometryUtils
   Types that represent the compute stage.
 - [class VNVideoProcessor](vnvideoprocessor.md)
   An object that performs offline analysis of video content.
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
 
 
 ---

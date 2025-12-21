@@ -24,7 +24,7 @@ Sidebar items take advantage of the standard system appearance and behavior for 
 
 Additionally, sidebars use standard system default values for these properties:
 
-- [`canCollapse`](nssplitviewitem/cancollapse.md) and [`isSpringLoaded`](nssplitviewitem/isspringloaded.md) are [`true`](https://developer.apple.com/documentation/swift/true)
+- [`canCollapse`](nssplitviewitem/cancollapse.md) and [`isSpringLoaded`](nssplitviewitem/isspringloaded.md) are [`true`](https://developer.apple.com/documentation/Swift/true)
 - [`minimumThickness`](nssplitviewitem/minimumthickness.md) and [`maximumThickness`](nssplitviewitem/maximumthickness.md) use the standard minimum and maximum sidebar size
 - [`preferredThicknessFraction`](nssplitviewitem/preferredthicknessfraction.md) uses the standard fraction for sidebars (`0.15`)
 

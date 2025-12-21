@@ -16,7 +16,7 @@ let IKPictureTakerShowEffectsKey: String
 
 #### Discussion
 
-The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

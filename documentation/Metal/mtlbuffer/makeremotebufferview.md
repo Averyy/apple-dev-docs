@@ -17,13 +17,13 @@ func makeRemoteBufferView(_ device: any MTLDevice) -> (any MTLBuffer)?
 
 ## Mentions
 
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
 
 #### Discussion
 
-The device object that created this buffer, and the device object passed into this method, must have the same nonzero peer group identifier ([`peerGroupID`](mtldevice/peergroupid.md)). This buffer must use the private storage mode ([`MTLStorageMode.private`](mtlstoragemode/private.md)).
+The device instance that this buffer belongs to and the device you pass to the method both need to have the same nonzero peer group identifier ([`peerGroupID`](mtldevice/peergroupid.md)). This buffer needs to use the private storage mode ([`MTLStorageMode.private`](mtlstoragemode/private.md)).
 
-A remote view doesn’t allocate any storage for the new buffer; it references the memory allocated for the original buffer. You can use remote views only as a source for copy commands encoded by a [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md). For more information, see [`Transferring Data Between Connected GPUs`](transferring-data-between-connected-gpus.md).
+A remote view doesn’t allocate any storage for the new buffer; it references the memory allocated for the original buffer. You can use remote views only as a source for copy commands encoded by an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md). For more information, see [`Transferring data between connected GPUs`](transferring-data-between-connected-gpus.md).
 
 ## See Also
 

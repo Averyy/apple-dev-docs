@@ -3,19 +3,25 @@
 **Framework**: HealthKit  
 **Kind**: case
 
+The system assigns this status when it fails to deliver a scheduled medication notification.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 case notificationNotSent
 ```
+
+#### Discussion
+
+The system can generate this status because of a person’s notification restrictions or issues with notification delivery.
 
 
 ---

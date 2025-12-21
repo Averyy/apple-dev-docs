@@ -45,7 +45,7 @@ These values return when your app calls [`presentNoticeSheet()`](externalpurchas
 - [static var canPresent: Bool](externalpurchase/canpresent.md)
   A Boolean value that indicates whether the app can successfully present the notice sheet to inform people about external purchases.
 - [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](externalpurchase/presentnoticesheet.md)
-  Presents a notice sheet from Apple that informs people before showing external purchases and determines whether your app can present external purchases.
+  Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
 - [SKExternalPurchase](../BundleResources/Information-Property-List/SKExternalPurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 

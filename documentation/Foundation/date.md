@@ -56,16 +56,10 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 ### Comparing Dates
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func > (Date, Date) -> Bool](date/_(_:_:)-880ns.md)
   Returns true if the left hand `Date` is later in time than the right hand `Date`.
-- [static func >= (Self, Self) -> Bool](date/_=(_:_:)-8n5kd.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 - [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
-- [static func <= (Self, Self) -> Bool](date/_=(_:_:)-2m6jx.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [func compare(Date) -> ComparisonResult](date/compare(_:).md)
   Compares another date to this one.
 ### Getting Time Intervals
@@ -111,17 +105,6 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
   Generates a locale-aware string representation of a date using the ISO 8601 date format.
 - [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
-### Creating Date Ranges
-- [static func ... (Self) -> PartialRangeFrom<Self>](date/'...(_:)-5kkdg.md)
-  Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](date/'...(_:)-6kfkw.md)
-  Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](date/'...(_:_:).md)
-  Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](date/'.._(_:).md)
-  Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](date/'.._(_:_:).md)
-  Returns a half-open range that contains its lower bound but not its upper bound.
 ### Describing Dates
 - [var description: String](date/description.md)
   The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [`NSDateFormatter`](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [`Data Formatting Guide`](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
@@ -129,11 +112,14 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
   Returns a string representation of the receiver using the given locale.
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](date/customplaygroundquicklook.md)
   A custom playground Quick Look for the date.
+### Working with notification messages
+- [struct SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
 ### Using Reference Types
 - [class NSDate](nsdate.md)
   A representation of a specific point in time, independent of any calendar or time zone.
 ### Structures
 - [struct AnchoredRelativeFormatStyle](date/anchoredrelativeformatstyle.md)
+  A relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
 - [struct AttributedStyle](date/attributedstyle.md)
   A structure that creates a locale-appropriate attributed string representation of a date instance.
 - [struct ComponentsFormatStyle](date/componentsformatstyle.md)
@@ -142,7 +128,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [struct HTTPFormatStyle](date/httpformatstyle.md)
   Options for generating and parsing string representations of dates following the HTTP date format from [`RFC 9110 § 5.6.7`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc9110.html#http.date).
 - [struct ParseStrategy](date/parsestrategy.md)
-- [struct SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
+  Options for parsing string representations of dates to create a `Date` instance.
 - [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
 ### Initializers
@@ -155,9 +141,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 ### Type Properties
 - [static var defaultResolverSpecification: some ResolverSpecification](date/defaultresolverspecification.md)
 ### Default Implementations
-- [Comparable Implementations](date/comparable-implementations.md)
 - [CustomStringConvertible Implementations](date/customstringconvertible-implementations.md)
-- [Equatable Implementations](date/equatable-implementations.md)
 
 ## Relationships
 

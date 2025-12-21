@@ -72,7 +72,7 @@ This automatic layout adjustment makes it easier to localize your app, but it’
 
 ##### Custom Alignment Guides
 
-You can create a custom horizontal alignment by creating a type that conforms to the [`AlignmentID`](alignmentid.md) protocol, and then using that type to initalize a new static property on `HorizontalAlignment`:
+You can create a custom horizontal alignment by creating a type that conforms to the [`AlignmentID`](alignmentid.md) protocol, and then using that type to initialize a new static property on `HorizontalAlignment`:
 
 ```swift
 private struct OneQuarterAlignment: AlignmentID {

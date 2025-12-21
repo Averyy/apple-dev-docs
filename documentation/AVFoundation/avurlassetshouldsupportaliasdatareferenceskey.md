@@ -42,6 +42,8 @@ If you provide a value for [`AVURLAssetReferenceRestrictionsKey`](avurlassetrefe
   A value that represents the restrictions used by the asset when resolving references to external media data.
 - [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
   A value that specifies the attribution of the URLs that this asset requests.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 
 ---

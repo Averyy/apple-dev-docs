@@ -21,6 +21,8 @@ struct GCUIEventTypes
 - [init(rawValue: UInt)](gcuieventtypes/init(rawvalue:).md)
 ### Type Properties
 - [static var gamepad: GCUIEventTypes](gcuieventtypes/gamepad.md)
+- [static var stylus: GCUIEventTypes](gcuieventtypes/stylus.md)
+  A constant that represents events from a stylus.
 
 ## Relationships
 

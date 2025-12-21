@@ -19,9 +19,9 @@ var isTracked: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), the object’s transform currently matches the position and orientation of the real-world object it represents.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), the object’s transform currently matches the position and orientation of the real-world object it represents.
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), the object is not guaranteed to match the movement of its corresponding real-world feature, even if it remains in the visible scene.
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), the object is not guaranteed to match the movement of its corresponding real-world feature, even if it remains in the visible scene.
 
 
 ---

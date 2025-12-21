@@ -36,17 +36,17 @@ If `type` is:
 
 ## Topics
 
-### Determining Relevant Constraints
+### Determining relevant constraints
 - [var type: MLImageSizeConstraintType](mlimagesizeconstraint/type.md)
   Indicator of which properties to inspect for this image size constraint.
 - [enum MLImageSizeConstraintType](mlimagesizeconstrainttype.md)
   The modes that determine how the model defines a feature’s image size constraint.
-### Accessing the Image Size Ranges
+### Accessing the image size ranges
 - [var pixelsWideRange: NSRange](mlimagesizeconstraint/pixelswiderange.md)
   The range of widths a model’s image feature accepts as input or produces as output.
 - [var pixelsHighRange: NSRange](mlimagesizeconstraint/pixelshighrange.md)
   The range of heights a model’s image feature accepts as input or produces as output.
-### Accessing the Enumerated Image Sizes
+### Accessing the enumerated image sizes
 - [var enumeratedImageSizes: [MLImageSize]](mlimagesizeconstraint/enumeratedimagesizes.md)
   An array of image sizes a model’s image feature accepts as input or produces as output.
 - [class MLImageSize](mlimagesize.md)

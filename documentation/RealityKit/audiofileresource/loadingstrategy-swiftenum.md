@@ -10,7 +10,7 @@ A container for different strategies on how to handle resources’ data before a
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -38,6 +38,11 @@ enum LoadingStrategy
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AudioFileResource.Configuration](audiofileresource/configuration-swift.struct.md)
+  A container for various settings for loading an audio file resource.
 
 
 ---

@@ -19,27 +19,9 @@ struct ID
 
 ## Topics
 
-### Creating a page identifier
-- [init(from: any Decoder) throws](assignedworkdocument/page/id-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Getting the page identifier
 - [var assignableDocumentPageID: AssignableDocument.Page.ID](assignedworkdocument/page/id-swift.struct/assignabledocumentpageid.md)
   The [`AssignableDocument`](assignabledocument.md)  page ID that this work page ID corresponds to.
-- [AssignedWorkDocument.Page.ID.Element](assignedworkdocument/page/id-swift.struct/element.md)
-  The document element type that this reference is for.
-### Operators
-- [static func == (AssignedWorkDocument.Page.ID, AssignedWorkDocument.Page.ID) -> Bool](assignedworkdocument/page/id-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](assignedworkdocument/page/id-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](assignedworkdocument/page/id-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](assignedworkdocument/page/id-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](assignedworkdocument/page/id-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

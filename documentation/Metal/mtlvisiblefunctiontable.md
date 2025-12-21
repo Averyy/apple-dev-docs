@@ -21,7 +21,7 @@ protocol MTLVisibleFunctionTable : MTLResource
 
 ## Topics
 
-### Setting a Table Entry
+### Setting a table entry
 - [func setFunction((any MTLFunctionHandle)?, index: Int)](mtlvisiblefunctiontable/setfunction(_:index:).md)
   Sets a table entry to point to a callable function.
 - [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](mtlvisiblefunctiontable/setfunctions(_:range:).md)
@@ -41,7 +41,7 @@ protocol MTLVisibleFunctionTable : MTLResource
 - [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
   A description of a function object to create.
 - [protocol MTLFunction](mtlfunction.md)
-  An object that represents a public shader function in a Metal library.
+  A interface that represents a public shader function in a Metal library.
 - [protocol MTLFunctionHandle](mtlfunctionhandle.md)
   An object representing a function that you can add to a visible function table.
 - [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)

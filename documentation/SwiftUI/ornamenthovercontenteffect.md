@@ -6,7 +6,7 @@
 Presents an ornament on hover using a custom effect.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

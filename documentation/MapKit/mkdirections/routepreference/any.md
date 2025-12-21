@@ -24,8 +24,6 @@ case any
 
 - [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
   The option that requests the framework avoid certain routes.
-- [MKDirections.RoutePreference.avoid](mkdirections/routepreference/avoid.md)
-  The option that requests the framework avoid certain routes.
 
 
 ---

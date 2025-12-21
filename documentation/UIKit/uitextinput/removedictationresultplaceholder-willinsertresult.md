@@ -21,7 +21,7 @@ optional func removeDictationResultPlaceholder(_ placeholder: Any, willInsertRes
 
 #### Discussion
 
-If the value in the `willInsertResult` parameter is [`false`](https://developer.apple.com/documentation/swift/false), the placeholder animation is not replaced by an actual dictation result. When this happens, the system still removes the placeholder animation and removes the strong reference to your placeholder object.
+If the value in the `willInsertResult` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), the placeholder animation is not replaced by an actual dictation result. When this happens, the system still removes the placeholder animation and removes the strong reference to your placeholder object.
 
 > ❗ **Important**:  This method is called only if the custom text view client leverages system selection by subclassing `UITextView`. Other clients can use [`dictationRecordingDidEnd()`](uitextinput/dictationrecordingdidend().md) and [`dictationRecognitionFailed()`](uitextinput/dictationrecognitionfailed().md) to implement a custom placeholder.
 

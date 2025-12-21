@@ -30,14 +30,6 @@ case normal
   Operations receive high priority for execution.
 - [Operation.QueuePriority.veryHigh](operation/queuepriority-swift.enum/veryhigh.md)
   Operations receive very high priority for execution.
-- [Operation.QueuePriority.veryLow](operation/queuepriority-swift.enum/verylow.md)
-  Operations receive very low priority for execution.
-- [Operation.QueuePriority.low](operation/queuepriority-swift.enum/low.md)
-  Operations receive low priority for execution.
-- [Operation.QueuePriority.high](operation/queuepriority-swift.enum/high.md)
-  Operations receive high priority for execution.
-- [Operation.QueuePriority.veryHigh](operation/queuepriority-swift.enum/veryhigh.md)
-  Operations receive very high priority for execution.
 
 
 ---

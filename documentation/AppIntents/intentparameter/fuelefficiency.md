@@ -20,22 +20,10 @@ enum FuelEfficiency
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.FuelEfficiency, IntentParameter<Value>.FuelEfficiency) -> Bool](intentparameter/fuelefficiency/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.FuelEfficiency.litersPer100Kilometers](intentparameter/fuelefficiency/litersper100kilometers.md)
 - [IntentParameter.FuelEfficiency.milesPerGallon](intentparameter/fuelefficiency/milespergallon.md)
 - [IntentParameter.FuelEfficiency.milesPerImperialGallon](intentparameter/fuelefficiency/milesperimperialgallon.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/fuelefficiency/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/fuelefficiency/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/fuelefficiency/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/fuelefficiency/equatable-implementations.md)
 
 ## Relationships
 

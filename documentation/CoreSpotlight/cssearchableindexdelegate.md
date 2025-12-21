@@ -45,6 +45,7 @@ The index delegate methods are called when there is an issue with the index and 
   Tells the delegate that the index throttling has finished.
 ### Instance Methods
 - [func searchableItems(forIdentifiers: [String], searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:searchableitemshandler:).md)
+  Requests that the delegate provide searchable items for the provided identifiers.
 - [func searchableItemsDidUpdate([CSSearchableItem])](cssearchableindexdelegate/searchableitemsdidupdate(_:).md)
   Tells the delegate that the framework updated the list of searchable items.
 

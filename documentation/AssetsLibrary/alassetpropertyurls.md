@@ -5,11 +5,6 @@
 
 The key to retrieve a dictionary that maps asset representations UTIs to URLs that uniquely identify the asset.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

@@ -20,7 +20,7 @@ var showsTouchWhenHighlighted: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the button glows when tapped; otherwise, it does not. The image and button behavior is not changed by the glow. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the button glows when tapped; otherwise, it does not. The image and button behavior is not changed by the glow. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -22,6 +22,10 @@ func vImageBufferFill_CbCr16S(_ dest: UnsafePointer<vImage_Buffer>, _ color: Uns
 
 kvImageNoError                     Success
 
+#### Discussion
+
+Fill the dest buffer with the pixel value.
+
 ## Parameters
 
 - `dest`: A pointer to a valid and initialized vImage_Buffer struct, that points to a buffer containing destination pixels.

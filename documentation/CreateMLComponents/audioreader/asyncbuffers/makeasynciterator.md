@@ -23,10 +23,6 @@ func makeAsyncIterator() -> AudioReader.AsyncBuffers.Iterator
 
 - [AudioReader.AsyncBuffers.Iterator](audioreader/asyncbuffers/iterator.md)
   An async iterator of audio buffers.
-- [AudioReader.AsyncBuffers.AsyncIterator](audioreader/asyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [AudioReader.AsyncBuffers.Feature](audioreader/asyncbuffers/feature.md)
-  The feature type.
 
 
 ---

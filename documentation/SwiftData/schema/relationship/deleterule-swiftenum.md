@@ -36,18 +36,6 @@ enum DeleteRule
   A rule that doesn’t make changes to any related models.
 - [Schema.Relationship.DeleteRule.nullify](schema/relationship/deleterule-swift.enum/nullify.md)
   A rule that nullifies the related model’s reference to the deleted model.
-### Creating a relationship delete rule
-- [init?(rawValue: String)](schema/relationship/deleterule-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](schema/relationship/deleterule-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Schema.Relationship.DeleteRule.RawValue](schema/relationship/deleterule-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](schema/relationship/deleterule-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](schema/relationship/deleterule-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

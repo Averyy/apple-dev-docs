@@ -30,7 +30,7 @@ A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDa
 
 ## See Also
 
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
 - [var mattingImage: CVPixelBuffer](avportraiteffectsmatte/mattingimage.md)
   The portrait effects matte’s internal image, formatted as a pixel buffer.

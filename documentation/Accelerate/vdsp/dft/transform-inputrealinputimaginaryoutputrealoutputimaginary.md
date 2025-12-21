@@ -13,7 +13,6 @@ Computes an out-of-place discrete Fourier transform.
 - tvOS 13.0+ - Deprecated
 - visionOS ?+
 - watchOS 6.0+ - Deprecated
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

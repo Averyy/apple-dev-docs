@@ -5,9 +5,6 @@
 
 A child atom of movie atoms or track atoms.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Mentions
 
 - [QuickTime File Format change log](revision_history.md)

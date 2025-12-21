@@ -21,7 +21,7 @@ enum Status
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVAssetExportSession.Status.unknown](avassetexportsession/status-swift.enum/unknown.md)
   The session status is unknown.
 - [AVAssetExportSession.Status.waiting](avassetexportsession/status-swift.enum/waiting.md)

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: init
 
-Creates a user defaults object initialized with the defaults for the specified database name.
+Creates a new defaults object and initializes it with the settings from the specified database.
 
 **Availability**:
 - iOS 7.0+
@@ -22,24 +22,24 @@ init?(suiteName suitename: String?)
 
 #### Discussion
 
-You can use this method when developing an app suite, to share preferences or other data among the apps, or when developing an app extension, to share preferences or other data between the extension and its containing app.
+Use this method to create a defaults object that reads settings from the custom domain you specify. For example, you might use this method to access settings you share among multiple apps or between your app and an app extension. The returned object writes settings to the domain you specified. Every instance of ``UserDefaults shares the contents of the argument and registration domains.
 
-The argument and registration domains are shared between all instances of [`UserDefaults`](userdefaults.md).
-
-The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs (except when translating between Foundation and Core Foundation constants). The code example below shows two equivalent statements. For more details, see [`Preferences Utilities`](https://developer.apple.com/documentation/CoreFoundation/preferences-utilities).
+The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs, except when translating between Foundation and Core Foundation constants. The following example shows two equivalent statements. For more details, see [`Preferences Utilities`](https://developer.apple.com/documentation/CoreFoundation/preferences-utilities).
 
 Equivalent statements using NSUserDefaults and CFPreferences APIs
 
-On macOS, specifying another app’s bundle identifier will get you that app’s preferences search list, unless prevented by the [`App Sandbox`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40001067-CH9-SW3).
+In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox) and you don’t have the proper entitlements.
 
 ## Parameters
 
-- `suitename`: If you pass   to this parameter, the system uses the default search list that the   class method uses. Because a suite manages the defaults of a specified app group, a suite name must be distinct from your app’s main bundle identifier. The   is also an invalid suite name, because it isn’t writeable by apps.
+- `suitename`: The name of the app group or suite to add to the search list. To read   and write settings for a shared app group, specify the app group identifier. Don’t   specify the   or your app’s bundle identifier. If you specify  ,   this method returns a defaults object that reads and writes from the current app’s settings.
 
 ## See Also
 
+- [class var standard: UserDefaults](userdefaults/standard.md)
+  The shared defaults object for the current app.
 - [convenience init()](userdefaults/init.md)
-  Creates a user defaults object initialized with the defaults for the app and current user.
+  Creates a new defaults object and initializes it with the app’s current settings.
 
 
 ---

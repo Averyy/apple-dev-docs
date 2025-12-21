@@ -66,7 +66,7 @@ The following example shows how to use this method to load an asset’s [`isPlay
 
 ## See Also
 
-- [Deprecated Symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
+- [Deprecated symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 - [func statusOfValue(forKey: String, error: NSErrorPointer) -> AVKeyValueStatus](avasynchronouskeyvalueloading/statusofvalue(forkey:error:).md)
   Returns a status that indicates whether a property value is immediately available without blocking the calling thread.

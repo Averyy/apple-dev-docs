@@ -44,20 +44,8 @@ enum MedicalInstrumentUsage
 - [HIDUsage.MedicalInstrumentUsage.volume](hidusage/medicalinstrumentusage/volume.md)
 - [HIDUsage.MedicalInstrumentUsage.zoomAdjust](hidusage/medicalinstrumentusage/zoomadjust.md)
 - [HIDUsage.MedicalInstrumentUsage.zoomSelect](hidusage/medicalinstrumentusage/zoomselect.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/medicalinstrumentusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/medicalinstrumentusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.MedicalInstrumentUsage.RawValue](hidusage/medicalinstrumentusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/medicalinstrumentusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/medicalinstrumentusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/medicalinstrumentusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

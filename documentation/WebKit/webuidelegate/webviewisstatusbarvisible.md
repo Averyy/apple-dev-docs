@@ -16,11 +16,11 @@ optional func webViewIsStatusBarVisible(_ sender: WebView!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a web view’s status bar (if any) is visible; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if a web view’s status bar (if any) is visible; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If you do not implement this method, it returns [`false`](https://developer.apple.com/documentation/swift/false) by default.
+If you do not implement this method, it returns [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 
 ## Parameters
 

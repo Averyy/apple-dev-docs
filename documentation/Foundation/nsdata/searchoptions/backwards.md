@@ -24,8 +24,6 @@ static var backwards: NSData.SearchOptions { get }
 
 - [static var anchored: NSData.SearchOptions](nsdata/searchoptions/anchored.md)
   Search is limited to start (or end, if searching backwards) of the data object.
-- [static var anchored: NSData.SearchOptions](nsdata/searchoptions/anchored.md)
-  Search is limited to start (or end, if searching backwards) of the data object.
 
 
 ---

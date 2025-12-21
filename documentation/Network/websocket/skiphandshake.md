@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Configure the WebSocket protocol to skip the opening handshake and begin framing data as soon as the underlying connection is established.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func skipHandshake(_ value: Bool) -> WebSocket
+func skipHandshake(_ skip: Bool) -> WebSocket
 ```
+
+#### Discussion
+
+> **Note**: This option should not be set when communicating with a generic WebSocket server or client. This option allows a custom handshake (or no handshake) to be implemented below the WebSocket layer when both client and server are coordinated.
+
+## Parameters
+
+- `skip`: True to skip the handshake. Defaults to false.
 
 
 ---

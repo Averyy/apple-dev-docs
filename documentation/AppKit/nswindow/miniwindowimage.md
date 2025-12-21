@@ -23,7 +23,7 @@ When the user minimizes the window, the Dock displays [`miniwindowImage`](nswind
 
 You can also set this property as needed to change the minimized window image. Typically, you would specify a custom image immediately prior to a window being minimized—when the system posts [`willMiniaturizeNotification`](nswindow/willminiaturizenotification.md). You can set this property while the window is minimized to update the current image in the Dock. However, you should not use this property to create complex animations in the Dock.
 
-Support for custom images is disabled by default. To enable support, set the `AppleDockIconEnabled` key to [`true`](https://developer.apple.com/documentation/swift/true) when first registering your application’s user defaults. You must set this key prior to calling the `init` method of [`NSApplication`](nsapplication.md), which reads the current value of the key.
+Support for custom images is disabled by default. To enable support, set the `AppleDockIconEnabled` key to [`true`](https://developer.apple.com/documentation/Swift/true) when first registering your application’s user defaults. You must set this key prior to calling the `init` method of [`NSApplication`](nsapplication.md), which reads the current value of the key.
 
 ## See Also
 

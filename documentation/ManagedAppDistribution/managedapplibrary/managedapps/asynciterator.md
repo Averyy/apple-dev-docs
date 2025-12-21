@@ -26,11 +26,6 @@ struct AsyncIterator
 ### Instance Methods
 - [func next(isolation: isolated (any Actor)?) async throws(ManagedAppLibrary.ManagedApps.AsyncIterator.Failure) -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](managedapplibrary/managedapps/asynciterator/next(isolation:).md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Type Aliases
-- [ManagedAppLibrary.ManagedApps.AsyncIterator.Failure](managedapplibrary/managedapps/asynciterator/failure.md)
-  The type of failure produced by iteration.
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](managedapplibrary/managedapps/asynciterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

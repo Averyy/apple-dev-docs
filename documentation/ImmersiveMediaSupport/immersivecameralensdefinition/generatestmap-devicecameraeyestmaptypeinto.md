@@ -6,8 +6,8 @@
 Generates an STMap for the given projection type and for the given camera eye into the provided texture asynchronously.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

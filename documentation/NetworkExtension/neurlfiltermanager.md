@@ -6,10 +6,10 @@
 A class you use to configure and control a URL filter.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,7 +19,44 @@ class NEURLFilterManager
 
 #### Overview
 
-Instances of this class are thread safe.
+The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [`WebKit`](https://developer.apple.com/documentation/WebKit) and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs.
+
+During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, the URL
+
+```None
+https://www.example.com/a/b/c?id=123#fragment
+```
+
+parses into the following sub-URLs:
+
+- example.com
+- example.com/
+- www.example.com
+- www.example.com/
+- example.com/a
+- example.com/a/
+- www.example.com/a
+- www.example.com/a/
+- example.com/a/b
+- example.com/a/b/
+- www.example.com/a/b
+- www.example.com/a/b/
+- example.com/a/b/c
+- example.com/a/b/c/
+- www.example.com/a/b/c
+- www.example.com/a/b/c/
+- example.com/a/b/c?id=123
+- example.com/a/b/c?id=123/
+- www.example.com/a/b/c?id=123
+- example.com/a/b/c?id=123#fragment
+- www.example.com/a/b/c?id=123/
+- www.example.com/a/b/c?id=123#fragment
+- example.com/a/b/c?id=123#fragment/
+- www.example.com/a/b/c?id=123#fragment/
+
+The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager puny-codes the requested URL before parsing. Because of this, be sure to puny-code your own URL dataset before constructing your Bloom filter and PIR database. Neither the Bloom filter nor PIR supports wildcards or regular expressions.
+
+Instances of this class are thread-safe.
 
 ## Topics
 

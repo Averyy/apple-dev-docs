@@ -20,7 +20,7 @@ var preservesLivePhotoCaptureSuspendedOnSessionStop: Bool { get set }
 
 #### Discussion
 
-This value defaults to [`false`](https://developer.apple.com/documentation/swift/false), which means that Live Photo capture resumes when the session stops. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to save the state of the [`isLivePhotoCaptureSuspended`](avcapturephotooutput/islivephotocapturesuspended.md) property across session restarts.
+This value defaults to [`false`](https://developer.apple.com/documentation/Swift/false), which means that Live Photo capture resumes when the session stops. Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to save the state of the [`isLivePhotoCaptureSuspended`](avcapturephotooutput/islivephotocapturesuspended.md) property across session restarts.
 
 ## See Also
 

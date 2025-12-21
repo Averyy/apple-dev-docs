@@ -10,7 +10,7 @@ A component that stores a sequence of geometric pins.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -21,7 +21,7 @@ struct GeometricPinsComponent
 
 #### Overview
 
-Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its `Entity/pins` property.
+Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its [`pins`](entity/pins.md) property.
 
 ## Topics
 

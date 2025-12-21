@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update an app encryption declaration document update request.
+
 **Availability**:
 - App Store Connect API 2.2+
 
@@ -16,6 +18,7 @@ object AppEncryptionDeclarationDocumentUpdateRequest.Data
 
 ### Objects
 - [object AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes](appencryptiondeclarationdocumentupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an app encryption declaration document update request resource.
 
 
 ---

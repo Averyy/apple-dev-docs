@@ -20,6 +20,8 @@ var order: MoveEquipmentAction.Order? { get }
   The ID of the equipment being moved.
 - [var parentID: EquipmentIdentifier](moveequipmentaction/parentid.md)
   The equipment ID the moved equipment is being grouped under
+- [var playerID: Player.ID?](moveequipmentaction/playerid.md)
+  The ID of the player who is moving the equipment.
 - [MoveEquipmentAction.Order](moveequipmentaction/order-swift.enum.md)
   The possible orders of equipment.
 

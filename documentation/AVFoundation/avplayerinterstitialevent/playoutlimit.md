@@ -22,7 +22,7 @@ var playoutLimit: CMTime { get set }
 
 #### Discussion
 
-This value can be any positive numeric value, or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) (the default) which indicates no limit.
+This value can be any positive numeric value, or [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) (the default) which indicates no limit.
 
 ## See Also
 

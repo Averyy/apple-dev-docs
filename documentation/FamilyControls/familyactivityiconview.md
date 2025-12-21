@@ -20,17 +20,6 @@ A type-erased view representing the icon of the family activity.
 
 Family Controls uses this type as a generic constraint for the `Icon` of the [`Label`](https://developer.apple.com/documentation/SwiftUI/Label) instances it creates.
 
-## Topics
-
-### Instance Properties
-- [var body: some View](familyactivityiconview/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [FamilyActivityIconView.Body](familyactivityiconview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](familyactivityiconview/view-implementations.md)
-
 ## Relationships
 
 ### Conforms To

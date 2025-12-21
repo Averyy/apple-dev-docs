@@ -9,6 +9,8 @@ Error messages and codes for reports and endpoints.
 ### Error objects for reports
 - [object DateTooFarInPastError](datetoofarinpasterror.md)
   An error indicating that a provided date is too far in the past.
+- [object DuplicateTokenStatusNotAllowedError](duplicatetokenstatusnotallowederror.md)
+  An error indicating the duplicate token status is not allowed for the associated token type.
 - [object DuplicateValueError](duplicatevalueerror.md)
   An error indicating the field’s value is already submitted and a duplicate value is not expected.
 - [object ErroneousLineItemReferencedByValidLineItemError](erroneouslineitemreferencedbyvalidlineitemerror.md)
@@ -27,6 +29,8 @@ Error messages and codes for reports and endpoints.
   An error indicating the net amount value does not match the expected value.
 - [object InvalidTaxInclusiveAmountForSubscriptionPaymentError](invalidtaxinclusiveamountforsubscriptionpaymenterror.md)
   An error indicating the tax inclusive amount must be positive for line items with a subscription payment subscription event.
+- [object LineItemCreationDateOutOfRangeError](lineitemcreationdateoutofrangeerror.md)
+  An error indicating the line item’s creation date is outside the active range of the token.
 - [object LineItemStatusRegressionError](lineitemstatusregressionerror.md)
   An error indicating the status can’t be marked as no line item or unrecognized token after it was previously reported as a line item.
 - [object LineItemsNotAllowedForStatusError](lineitemsnotallowedforstatuserror.md)

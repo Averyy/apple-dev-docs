@@ -25,7 +25,7 @@ var rotationDirection: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.photos.rotationDirection` schema:
 
 ```swift
-@AssistantEnum(schema: .photos.rotationDirection)
+@AppEnum(schema: .photos.rotationDirection)
 enum PhotoRotationDirection: AppEnum {
     case clockwise
 

@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The clinical code that represents a medical concept inside the coding system.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,7 @@ var code: String { get }
 
 #### Discussion
 
-The format of this code varies within each system.
+The format depends on the coding system. For example, RxNorm codes are numeric.
 
 
 ---

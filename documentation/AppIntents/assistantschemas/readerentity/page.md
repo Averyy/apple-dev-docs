@@ -25,7 +25,7 @@ var page: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.reader.page` schema:
 
 ```swift
-@AssistantEntity(schema: .reader.page)
+@AppEntity(schema: .reader.page)
 struct ReaderPageEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [ReaderPageEntity.ID]) async throws -> [ReaderPageEntity] { [] }

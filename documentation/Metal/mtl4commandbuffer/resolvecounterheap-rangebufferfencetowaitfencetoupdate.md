@@ -6,12 +6,12 @@
 Encodes a command that resolves an opaque counter heap into a buffer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -31,7 +31,7 @@ This command runs during the `MTLStageBlit` stage of the GPU timeline. Barrier a
 
 Similarly, your app needs to synchronize any GPU accesses to `buffer` after the command completes with barrier.
 
-If your app needs to access `buffer` from the CPU, signal an [`MTLSharedEvent`](mtlsharedevent.md) to notify the CPU when it’s ready. Alternatively, you can resolve the heap’s data from the CPU by calling the heap’s [`resolveCounterRange(_:)`](mtl4counterheap/resolvecounterrange(_:)-49tmw.md) method.
+If your app needs to access `buffer` from the CPU, signal an [`MTLSharedEvent`](mtlsharedevent.md) to notify the CPU when it’s ready. Alternatively, you can resolve the heap’s data from the CPU by calling the heap’s [`resolveCounterRange:`](mtl4counterheap/resolvecounterrange:.md) method.
 
 ## Parameters
 

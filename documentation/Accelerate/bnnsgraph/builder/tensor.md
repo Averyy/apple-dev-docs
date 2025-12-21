@@ -6,13 +6,13 @@
 A structure that represents an abstract handle to a tensor that you use within a `BNNSGraph.makeContext` closure.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -217,6 +217,12 @@ struct Tensor<T> where T : BNNSScalar
   Adds a scatter-along-axis operation to the current graph
 - [func scatterND(updates: BNNSGraph.Builder.Tensor<T>, indices: some BNNSGraph.Builder.OperationParameter<Int32>, mode: BNNSGraph.Builder.ScatterMode) -> BNNSGraph.Builder.Tensor<T>](bnnsgraph/builder/tensor/scatternd(updates:indices:mode:).md)
   Adds a scatter-nd operation to the current graph.
+- [func select<U>(BNNSGraph.Builder.Tensor<U>, BNNSGraph.Builder.Tensor<U>) -> BNNSGraph.Builder.Tensor<U>](bnnsgraph/builder/tensor/select(_:_:)-1fiqe.md)
+  Adds a tensor-tensor select operation to the current graph.
+- [func select<U>(BNNSGraph.Builder.Tensor<U>, any BNNSGraph.Builder.OperationParameter<U>) -> BNNSGraph.Builder.Tensor<U>](bnnsgraph/builder/tensor/select(_:_:)-3ha1f.md)
+  Adds a tensor-scalar select operation to the current graph.
+- [func select<U>(any BNNSGraph.Builder.OperationParameter<U>, BNNSGraph.Builder.Tensor<U>) -> BNNSGraph.Builder.Tensor<U>](bnnsgraph/builder/tensor/select(_:_:)-77itm.md)
+  Adds a scalar-tensor select operation to the current graph.
 - [func sigmoid() -> BNNSGraph.Builder.Tensor<T>](bnnsgraph/builder/tensor/sigmoid.md)
   Adds a sigmoid activation operation to the current graph.
 - [func silu() -> BNNSGraph.Builder.Tensor<T>](bnnsgraph/builder/tensor/silu.md)

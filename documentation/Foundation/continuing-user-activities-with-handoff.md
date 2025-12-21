@@ -162,8 +162,6 @@ func userActivityWasContinued(_ userActivity: NSUserActivity) {
 
 ## See Also
 
-- [Increasing App Usage with Suggestions Based on User Activities](task_management/increasing_app_usage_with_suggestions_based_on_user_activities.md)
-  Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
   Create, send, and receive user activities directly.
 - [class NSUserActivity](nsuseractivity.md)

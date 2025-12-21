@@ -17,7 +17,7 @@ optional func application(_ sender: NSApplication, printFile filename: String) -
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file was successfully printed or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file was successfully printed or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 

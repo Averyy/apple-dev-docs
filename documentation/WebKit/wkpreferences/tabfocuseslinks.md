@@ -17,7 +17,7 @@ var tabFocusesLinks: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view includes links and form controls in the set of items that may receive focus. Pressing the Option key temporarily reverses this preference.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the web view includes links and form controls in the set of items that may receive focus. Pressing the Option key temporarily reverses this preference.
 
 ## See Also
 

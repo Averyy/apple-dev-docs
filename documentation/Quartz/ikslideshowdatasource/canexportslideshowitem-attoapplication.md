@@ -16,7 +16,7 @@ optional func canExportSlideshowItem(at index: Int, toApplication applicationBun
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the export button should be enabled for an item; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the export button should be enabled for an item; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -42,11 +42,11 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
 - [var top: CGFloat](uiedgeinsets/top.md)
   The top edge inset value.
 ### Managing edge insets
-- [func inset(by insets: UIEdgeInsets) -> CGRect](../CoreFoundation/CGRect/inset(by:).md)
+- [func inset(by: UIEdgeInsets) -> CGRect](../CoreFoundation/CGRect/inset(by:).md)
 ### Converting to and from strings
-- [class func string(for insets: UIEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-26b4z.md)
+- [class func string(for: UIEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-26b4z.md)
   Returns a string formatted to contain the data from an edge insets structure.
-- [class func uiEdgeInsets(for string: String) -> UIEdgeInsets](../Foundation/NSCoder/uiEdgeInsets(for:).md)
+- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](../Foundation/NSCoder/uiEdgeInsets(for:).md)
   Returns a UIKit edge insets structure based on the data in the specified string.
 ### Getting the empty edge insets
 - [static let zero: UIEdgeInsets](uiedgeinsets/zero.md)
@@ -78,8 +78,6 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [enum NSRectAlignment](nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
-- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
-  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [UIKit macros](uikit-macros.md)
   Macros that UIKit defines.
 

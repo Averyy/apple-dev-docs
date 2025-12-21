@@ -3,6 +3,8 @@
 **Framework**: Core Image  
 **Kind**: property
 
+A Boolean value to specify a client-provided name for a context.
+
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
@@ -17,26 +19,32 @@
 static let name: CIContextOption
 ```
 
+#### Discussion
+
+This name will be used in QuickLook graphs and the output of CI_PRINT_TREE.
+
 ## See Also
 
 - [static let allowLowPower: CIContextOption](cicontextoption/allowlowpower.md)
+  A Boolean value to control the power level of Core Image context renders.
 - [static let cacheIntermediates: CIContextOption](cicontextoption/cacheintermediates.md)
-  An option for whether the context caches the contents of any intermediate pixel buffers it uses during rendering.
+  A Boolean value to control how a Core Image context caches the contents of any intermediate image buffers it uses during rendering.
 - [static let highQualityDownsample: CIContextOption](cicontextoption/highqualitydownsample.md)
-  An option controlling the quality of image downsampling operations performed by the context.
+  A Boolean value to control the quality of image downsampling operations performed by the Core Image context.
 - [static let memoryTarget: CIContextOption](cicontextoption/memorytarget.md)
+  A number value to control the maximum memory in megabytes that the context allocates for render tasks.
 - [static let outputColorSpace: CIContextOption](cicontextoption/outputcolorspace.md)
-  A key for the color space to use for images before they are rendered to the context.
+  A Core Image context option key to specify the default destination color space for rendering.
 - [static let outputPremultiplied: CIContextOption](cicontextoption/outputpremultiplied.md)
-  An option for whether output rendering by the context produces alpha-premultiplied pixels.
+  A Boolean value to control how a Core Image context render produces alpha-premultiplied pixels.
 - [static let priorityRequestLow: CIContextOption](cicontextoption/priorityrequestlow.md)
-  A key for enabling low-priority GPU use.
+  A Boolean value to control the priority Core Image context renders.
 - [static let useSoftwareRenderer: CIContextOption](cicontextoption/usesoftwarerenderer.md)
-  A key for enabling software renderer use.
+  A Boolean value to control if a Core Image context will use a software renderer.
 - [static let workingColorSpace: CIContextOption](cicontextoption/workingcolorspace.md)
-  A key for the color space to use for image operations.
+  A Core Image context option key to specify the working color space for rendering.
 - [static let workingFormat: CIContextOption](cicontextoption/workingformat.md)
-  An option for the color format to use for intermediate results when rendering with the context.
+  A Core Image context option key to specify the pixel format to for intermediate results when rendering.
 
 
 ---

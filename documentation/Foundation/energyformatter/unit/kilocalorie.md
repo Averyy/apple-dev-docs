@@ -28,12 +28,6 @@ case kilocalorie
   The kilojoule unit.
 - [EnergyFormatter.Unit.calorie](energyformatter/unit/calorie.md)
   The calorie unit. This unit is often used in chemistry. It is abbreviated as “cal.”
-- [EnergyFormatter.Unit.joule](energyformatter/unit/joule.md)
-  The joule unit.
-- [EnergyFormatter.Unit.kilojoule](energyformatter/unit/kilojoule.md)
-  The kilojoule unit.
-- [EnergyFormatter.Unit.calorie](energyformatter/unit/calorie.md)
-  The calorie unit. This unit is often used in chemistry. It is abbreviated as “cal.”
 
 
 ---

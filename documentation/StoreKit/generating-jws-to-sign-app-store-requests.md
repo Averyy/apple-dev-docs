@@ -77,6 +77,8 @@ Include the following base claims in the JWS payload:
 | `bid` - Bundle ID | Your app’s bundle ID (example: `“com.example.testbundleid”)` |
 | `nonce` - Nonce | A one-time-use UUID that identifies this request (example: “`368f3888-dcd8-11ef-b3c8-325096b39f47"`) |
 
+Don’t include an `exp` field in your payload, because including it makes the request fail. The App Store server enforces an expiration time based on your `iat` value.
+
 Choose the `aud` value to match the feature you’re using:
 
 |  |  |

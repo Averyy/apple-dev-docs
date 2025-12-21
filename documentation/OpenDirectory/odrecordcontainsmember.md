@@ -17,7 +17,7 @@ func ODRecordContainsMember(_ group: ODRecordRef!, _ member: ODRecordRef!, _ err
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `inMember` is a member of `inGroup`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `inMember` is a member of `inGroup`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

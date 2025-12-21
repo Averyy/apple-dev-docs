@@ -22,7 +22,7 @@ var zNear: CGFloat { get set }
 
 #### Discussion
 
-A spotlight casts shadows if its [`castsShadow`](scnlight/castsshadow.md) property is [`true`](https://developer.apple.com/documentation/swift/true). If a surface is closer to the light than this distance, shadows are not cast against the surface.
+A spotlight casts shadows if its [`castsShadow`](scnlight/castsshadow.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). If a surface is closer to the light than this distance, shadows are not cast against the surface.
 
 The default value is `1.0`.
 

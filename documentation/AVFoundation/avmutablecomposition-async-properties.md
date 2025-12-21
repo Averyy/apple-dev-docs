@@ -6,7 +6,7 @@ Asynchronous properties for mutable compositions.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](avpartialasyncproperty/tracks-92p4a.md)
   The tracks that a composition contains.
 

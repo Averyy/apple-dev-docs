@@ -100,16 +100,19 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 ### Deprecated
 - [Deprecated Symbols](nsview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [NSView.LayoutRegion](nsview/layoutregion.md)
 ### Instance Properties
 - [var prefersCompactControlSizeMetrics: Bool](nsview/preferscompactcontrolsizemetrics.md)
   When this property is true, any NSControls in the view or its descendants will be sized with compact metrics compatible with macOS 15 and earlier. Defaults to false
 - [var writingToolsCoordinator: NSWritingToolsCoordinator?](nsview/writingtoolscoordinator.md)
+### Instance Methods
+- [func edgeInsets(for: NSView.LayoutRegion) -> NSEdgeInsets](nsview/edgeinsets(for:).md)
+- [func layoutGuide(for: NSView.LayoutRegion) -> NSLayoutGuide](nsview/layoutguide(for:).md)
+- [func rect(for: NSView.LayoutRegion) -> NSRect](nsview/rect(for:).md)
 ### Enumerations
 - [NSView.Invalidations](nsview/invalidations.md)
   Changes that cause aspects of a view to be invalid and require an update.
-### Default Implementations
-- [PlaygroundLiveViewable Implementations](nsview/playgroundliveviewable-implementations.md)
-- [XCPlaygroundLiveViewable Implementations](nsview/xcplaygroundliveviewable-implementations.md)
 
 ## Relationships
 
@@ -158,8 +161,6 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

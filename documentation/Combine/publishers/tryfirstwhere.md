@@ -22,23 +22,18 @@ struct TryFirstWhere<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try First Where Publisher
+### Creating a try-first-where publisher
 - [init(upstream: Upstream, predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool)](publishers/tryfirstwhere/init(upstream:predicate:).md)
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryFirstWhere.Output](publishers/tryfirstwhere/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryFirstWhere.Failure](publishers/tryfirstwhere/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryfirstwhere/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.TryFirstWhere<Upstream>.Output) throws -> Bool](publishers/tryfirstwhere/predicate.md)
   The error-throwing closure that determines whether to publish an element.
-### Applying Operators
-- [Publisher Operators](publishers-tryfirstwhere-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryfirstwhere/publisher-implementations.md)
 
 ## Relationships
 

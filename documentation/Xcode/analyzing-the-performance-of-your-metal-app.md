@@ -133,7 +133,7 @@ A priority of 45 is recommended for rendering threads. To set your thread’s pr
 
 In addition to shader core and CPU utilization, more subtle causes of low frame rate involve CPU-GPU pipelining. In this context,  refers to how well your app coordinates the efforts of the CPU and the GPU while maintaining a consistent frame rate. By minimizing the amount of time the CPU and the GPU wait for each other, you maximize the amount of work each unit does in parallel. That’s called .
 
-For example, if you have a rendering algorithm that needs the result from a compute pass before encoding rendering commands, Metal provides indirect command buffers (ICBs) to increase overlap. By generating rendering commands on the GPU using ICBs, you can avoid having the CPU wait for the compute results. For more information, see [`Encoding Indirect Command Buffers on the GPU`](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu).
+For example, if you have a rendering algorithm that needs the result from a compute pass before encoding rendering commands, Metal provides indirect command buffers (ICBs) to increase overlap. By generating rendering commands on the GPU using ICBs, you can avoid having the CPU wait for the compute results. For more information, see [`Encoding indirect command buffers on the GPU`](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu).
 
 ## See Also
 

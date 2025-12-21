@@ -46,12 +46,10 @@ struct ModelParameters
 - [var playgroundDescription: Any](mltextclassifier/modelparameters-swift.struct/playgrounddescription.md)
   A description of the model parameters in a playground.
 ### Deprecated
-- [init(validationData: [String : [String]], algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-xplw.md)
-  Creates parameters for a text classifier with validation data in a dictionary.
+- [init(validationData:algorithm:language:)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:).md)
+  Creates parameters for a text classifier with validation data in a set of labeled directories.
 - [init(validationData: MLDataTable?, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?, textColumnValidationData: String?, labelColumnValidationData: String?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:textcolumnvalidationdata:labelcolumnvalidationdata:).md)
   Creates parameters for a text classifier with validation data in a data table.
-- [init(validationData: MLTextClassifier.DataSource, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-95vq7.md)
-  Creates parameters for a text classifier with validation data in a set of labeled directories.
 - [var validationData: MLDataTable?](mltextclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
   The validation data.
 - [var textColumnValidationData: String?](mltextclassifier/modelparameters-swift.struct/textcolumnvalidationdata.md)
@@ -73,18 +71,14 @@ struct ModelParameters
 
 ## See Also
 
-- [init(trainingData: [String : [String]], parameters: MLTextClassifier.ModelParameters) throws](mltextclassifier/init(trainingdata:parameters:)-9uj3q.md)
+- [init(trainingData:parameters:)](mltextclassifier/init(trainingdata:parameters:).md)
   Creates a text classifier.
-- [init(trainingData: DataFrame, textColumn: String, labelColumn: String, parameters: MLTextClassifier.ModelParameters) throws](mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:)-6keqn.md)
-  Creates a text classifier.
-- [init(trainingData: MLTextClassifier.DataSource, parameters: MLTextClassifier.ModelParameters) throws](mltextclassifier/init(trainingdata:parameters:)-8n8vs.md)
+- [init(trainingData:textColumn:labelColumn:parameters:)](mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:).md)
   Creates a text classifier.
 - [MLTextClassifier.DataSource](mltextclassifier/datasource.md)
   A data source for a text classifier.
 - [let modelParameters: MLTextClassifier.ModelParameters](mltextclassifier/modelparameters-swift.property.md)
   The configuration parameters that the text classifier used for training during initialization.
-- [init(trainingData: MLDataTable, textColumn: String, labelColumn: String, parameters: MLTextClassifier.ModelParameters) throws](mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:)-7lp6w.md)
-  Creates a text classifier.
 
 
 ---

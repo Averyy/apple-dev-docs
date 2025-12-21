@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response that contains a list of IDs of related resources.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.1+
 
 ## Declaration
 
@@ -16,16 +18,38 @@ object ReviewSubmissionItemsLinkagesResponse
 
 ### Dictionaries
 - [object ReviewSubmissionItemsLinkagesResponse.Data](reviewsubmissionitemslinkagesresponse/data-data.dictionary.md)
+  The data element of the response body.
 
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)
+  The data structure that represents a review submission resource.
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)
+  The data structure that represents a review submission item resource.
 - [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+  The request body you use to update a review submission update request.
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
+  The request body you use to create a review submission create request resource.
 - [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+  A response that contains a single review submission resource.
 - [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+  A response that contains a list of review submission resources.
 - [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
+- [object ReviewSubmission](reviewsubmission.md)
+  The data structure that represents a review submission resource.
+- [object ReviewSubmissionItem](reviewsubmissionitem.md)
+  The data structure that represents a review submission item resource.
+- [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+  The request body you use to update a review submission update request.
+- [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
+  The request body you use to create a review submission create request resource.
+- [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+  A response that contains a single review submission resource.
+- [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+  A response that contains a list of review submission resources.
+- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
 
 
 ---

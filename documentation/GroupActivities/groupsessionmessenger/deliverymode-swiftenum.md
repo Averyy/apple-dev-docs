@@ -26,19 +26,6 @@ enum DeliveryMode
   An attempt to ensure the delivery of messages to known participants.
 - [GroupSessionMessenger.DeliveryMode.unreliable](groupsessionmessenger/deliverymode-swift.enum/unreliable.md)
   A best-effort attempt to deliver the message to known participants.
-### Comparing the delivery mode options
-- [static func != (Self, Self) -> Bool](groupsessionmessenger/deliverymode-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (GroupSessionMessenger.DeliveryMode, GroupSessionMessenger.DeliveryMode) -> Bool](groupsessionmessenger/deliverymode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](groupsessionmessenger/deliverymode-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](groupsessionmessenger/deliverymode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](groupsessionmessenger/deliverymode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

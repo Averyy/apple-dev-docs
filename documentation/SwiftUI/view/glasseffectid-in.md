@@ -6,12 +6,12 @@
 Associates an identity value to Liquid Glass effects defined within this view.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -26,7 +26,7 @@ func glassEffectID(_ id: (some Hashable & Sendable)?, in namespace: Namespace.ID
 
 #### Discussion
 
-You use this modifier with the [`glassEffect(_:in:isEnabled:)`](view/glasseffect(_:in:isenabled:).md) view modifier and a [`GlassEffectContainer`](glasseffectcontainer.md) view. When used together, SwiftUI uses the identifier to animate shapes to and from each other during transitions.
+You use this modifier with the [`glassEffect(_:in:)`](view/glasseffect(_:in:).md) view modifier and a [`GlassEffectContainer`](glasseffectcontainer.md) view. When used together, SwiftUI uses the identifier to animate shapes to and from each other during transitions.
 
 
 ---

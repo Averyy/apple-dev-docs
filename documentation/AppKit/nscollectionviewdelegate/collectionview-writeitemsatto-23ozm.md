@@ -16,7 +16,7 @@ optional func collectionView(_ collectionView: NSCollectionView, writeItemsAt in
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag operation can continue or [`false`](https://developer.apple.com/documentation/swift/false) if you want to refuse the drag.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drag operation can continue or [`false`](https://developer.apple.com/documentation/Swift/false) if you want to refuse the drag.
 
 #### Discussion
 
@@ -26,7 +26,7 @@ The collection view calls this method after it has determined that a drag should
 
 1. Declare the pasteboard types you support using the [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) method of the provided `pasteboard` object.
 2. Write data to the pasteboard for each type you declare.
-3. Return [`true`](https://developer.apple.com/documentation/swift/true) from this method.
+3. Return [`true`](https://developer.apple.com/documentation/Swift/true) from this method.
 
 ## Parameters
 

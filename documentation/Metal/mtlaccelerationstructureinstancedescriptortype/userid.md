@@ -30,7 +30,7 @@ This instance type corresponds to the [`MTLAccelerationStructureUserIDInstanceDe
 - [MTLAccelerationStructureInstanceDescriptorType.motion](mtlaccelerationstructureinstancedescriptortype/motion.md)
   An option specifying that the instance contains motion data.
 - [MTLAccelerationStructureInstanceDescriptorType.indirect](mtlaccelerationstructureinstancedescriptortype/indirect.md)
-  An option that enables using an instance descriptor memory layout that the GPU can populate.
+  An option that enables an instance descriptor memory layout the GPU can populate.
 - [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md)
   An option specifying that the instance contains motion data, and enables using an instance descriptor memory layout that the GPU can populate.
 

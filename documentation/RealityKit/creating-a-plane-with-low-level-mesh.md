@@ -23,7 +23,7 @@ struct PlaneVertex {
 
 In this example, the vertex has a 3D position and a 3D normal vector, but you can further customize your vertex structure with different names and additional data, such as color and UV data.
 
-Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function.md) for more information about bridging files.
+Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function#Import-the-struct-in-a-bridging-header.md) for more information about bridging files.
 
 #### Define a Plane Mesh Structure
 
@@ -265,6 +265,8 @@ The following image shows the result of rendering a `PlaneMesh`’s low-level me
 
 ## See Also
 
+- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+  Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [class LowLevelMesh](lowlevelmesh.md)

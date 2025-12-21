@@ -27,7 +27,7 @@ A view with the specified scroll indicator visibility.
 
 #### Discussion
 
-Use this modifier to hide or show scroll indicators on scrollable content in views like a [`ScrollView`](scrollview.md), [`List`](list.md), or [`TextEditor`](texteditor.md). This modifier applies the prefered visibility to any scrollable content within a view hierarchy.
+Use this modifier to hide or show scroll indicators on scrollable content in views like a [`ScrollView`](scrollview.md), [`List`](list.md), or [`TextEditor`](texteditor.md). This modifier applies the preferred visibility to any scrollable content within a view hierarchy.
 
 ```swift
 ScrollView {

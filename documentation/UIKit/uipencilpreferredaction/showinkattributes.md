@@ -9,7 +9,7 @@ An action that toggles the display of the selected tool’s ink attributes.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 1.0+
+- visionOS 26.2+
 
 ## Declaration
 

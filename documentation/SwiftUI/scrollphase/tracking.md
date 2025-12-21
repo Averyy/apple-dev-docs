@@ -22,7 +22,7 @@ case tracking
 
 #### Discussion
 
-For example, on iOS, the user may start touching content inside of the scroll view. Until the user moves their finger the scroll view would be tracking the the finger. Not all platforms or kinds of scroll may trigger this phase.
+For example, on iOS, the user may start touching content inside of the scroll view. Until the user moves their finger the scroll view would be tracking the finger. Not all platforms or kinds of scroll may trigger this phase.
 
 ## See Also
 

@@ -12,7 +12,7 @@ Most custom view controllers you create are  — that is, the view controller ow
 
 ![An illustration of the relationship between a view controller, its views, and the data objects from your app.](https://docs-assets.developer.apple.com/published/734a881eaebde585c9cbad47bd162a53/media-3375402%402x.png)
 
-> **Note**:  As opposed to a content view controller, a container view controller incorporates content from other view controllers into its view hierarchy. [`UINavigationController`](uinavigationcontroller.md) is an example of a container view controller. For information about how to implement a container view controller, see [`Implementing a Custom Container View Controller`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html#//apple_ref/doc/uid/TP40007457-CH11-SW12).
+> **Note**:  As opposed to a content view controller, a container view controller incorporates content from other view controllers into its view hierarchy. [`UINavigationController`](uinavigationcontroller.md) is an example of a container view controller. For information about how to implement a container view controller, see [`Creating a custom container view controller`](creating-a-custom-container-view-controller.md).
 
 To define a content view controller, start by subclassing [`UIViewController`](uiviewcontroller.md). If your interface includes a table view or collection view, subclass [`UITableViewController`](uitableviewcontroller.md) or [`UICollectionViewController`](uicollectionviewcontroller.md) instead. New Xcode projects include one or more content view controller classes for you to modify, and you can add more.
 

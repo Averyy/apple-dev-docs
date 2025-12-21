@@ -22,6 +22,7 @@ func generateKey() async throws -> String
 
 ## Mentions
 
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
 - [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
 
 #### Discussion

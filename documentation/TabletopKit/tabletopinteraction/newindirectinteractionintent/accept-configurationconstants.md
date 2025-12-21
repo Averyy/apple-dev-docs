@@ -6,7 +6,7 @@
 Return `accept` to indicate that the interaction should be allowed to start and to specify its constants and initial configuration
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

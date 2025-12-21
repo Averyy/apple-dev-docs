@@ -33,8 +33,6 @@ struct VerbatimHour
 - [Date.FormatStyle.Symbol.VerbatimHour.HourCycle](date/formatstyle/symbol/verbatimhour/hourcycle.md)
   A type that specifies the start of a clock representation for the format of a hour.
 ### Comparing a Verbatim Hour
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

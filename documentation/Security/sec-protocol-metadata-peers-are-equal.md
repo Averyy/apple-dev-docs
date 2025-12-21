@@ -24,10 +24,7 @@ Returns true if both metadata values refer to the same peer, and false otherwise
 
 #### Discussion
 
-```None
- Compare peer information for two `sec_protocol_metadata` instances.
- This comparison does not include protocol configuration options, e.g., ciphersuites.
-```
+Compare peer information for two `sec_protocol_metadata` instances. This comparison does not include protocol configuration options, e.g., ciphersuites.
 
 ## Parameters
 

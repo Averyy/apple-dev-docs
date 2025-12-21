@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+Uniquely identifies a month in any calendar system
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

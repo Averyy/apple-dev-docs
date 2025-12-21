@@ -54,10 +54,8 @@ struct ModelParameters
 
 ## See Also
 
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLSupportVectorClassifier.ModelParameters) throws](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7t1yb.md)
+- [init(trainingData:targetColumn:featureColumns:parameters:)](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
   Creates a support vector classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLSupportVectorClassifier.ModelParameters) throws](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9ob53.md)
-  Creates a Support Vector Classifier from the feature columns in the training data to predict the categories in the target column.
 - [let modelParameters: MLSupportVectorClassifier.ModelParameters](mlsupportvectorclassifier/modelparameters-swift.property.md)
   The underlying parameters used when training the model.
 - [var targetColumn: String](mlsupportvectorclassifier/targetcolumn.md)

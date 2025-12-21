@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the focus environment contains th
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `environment` is contained by the current focus environment or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `environment` is contained by the current focus environment or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## Parameters
 

@@ -25,7 +25,7 @@ This method should be implemented by the app to handle one-off messages to appli
 
 If not implemented, the default behavior is to pass the message to the app extension handler within the extension’s bundle, if the extension was loaded from an app extension bundle; otherwise, no action is performed if not implemented.
 
-> **Note**: The reply message must be JSON-serializable according to doc://com.apple.documentation/documentation/foundation/foundation/jsonserialization.
+> **Note**: The reply message must be JSON-serializable according to [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization).
 
 ## Parameters
 

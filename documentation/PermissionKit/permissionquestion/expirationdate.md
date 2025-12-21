@@ -3,20 +3,31 @@
 **Framework**: PermissionKit  
 **Kind**: property
 
-The date that this question expires, if any. Once this date passes, receivers of this question will be unable to respond.
+The date that this question expires, if any.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 final var expirationDate: Date?
 ```
+
+#### Discussion
+
+Once the date passes, the person that receives the question can no longer respond.
+
+## See Also
+
+- [let id: UUID](permissionquestion/id.md)
+  A unique identifier for the question.
+- [let topic: Topic](permissionquestion/topic.md)
+  A topic that can be used to interpret a person’s request.
 
 
 ---

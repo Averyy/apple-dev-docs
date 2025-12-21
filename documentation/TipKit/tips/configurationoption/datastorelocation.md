@@ -33,7 +33,7 @@ For more information on datastore location, see [`datastoreLocation(_:)`](tips/c
 - [static func groupContainer(identifier: String) throws -> Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation/groupcontainer(identifier:).md)
   DatastoreLocation for persisting tips in a group container.
 - [static func url(URL) -> Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation/url(_:).md)
-  DatastoreLocation for persisting tips at a custom URL.
+  Configuration option for persisting tips at a custom on-disk location.
 
 ## Relationships
 

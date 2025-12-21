@@ -34,6 +34,8 @@ The default value of this property is a rectangle of `(0.0, 0.0, 1.0, 1.0)`.
   An array of strings identifying the types of metadata objects that can be captured.
 - [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](avcapturemetadataoutput/metadataobjecttypes.md)
   An array of strings identifying the types of metadata objects  to process.
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+  The required metadata object types when Cinematic Video capture is enabled.
 
 
 ---

@@ -26,7 +26,7 @@ Use this method to initialize a progress object with a specified containing prog
 
 In many cases, you can precede code that does a substantial amount of work with an invocation of this method, then repeatedly set the [`completedUnitCount`](progress/completedunitcount.md) or [`isCancelled`](progress/iscancelled.md) property in the loop that does the work.
 
-You can invoke this method on one thread and then message the returned [`Progress`](progress.md) on another thread. For example, you can capture the created progress instance in a block that you pass to [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async). In that block, you can invoke methods like [`becomeCurrent(withPendingUnitCount:)`](progress/becomecurrent(withpendingunitcount:).md) or [`resignCurrent()`](progress/resigncurrent().md), and set the [`completedUnitCount`](progress/completedunitcount.md) or [`isCancelled`](progress/iscancelled.md) properties as your app finishes its work.
+You can invoke this method on one thread and then message the returned [`Progress`](progress.md) on another thread. For example, you can capture the created progress instance in a block that you pass to [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async). In that block, you can invoke methods like [`becomeCurrent(withPendingUnitCount:)`](progress/becomecurrent(withpendingunitcount:).md) or [`resignCurrent()`](progress/resigncurrent().md), and set the [`completedUnitCount`](progress/completedunitcount.md) or [`isCancelled`](progress/iscancelled.md) properties as your app finishes its work.
 
 ## Parameters
 

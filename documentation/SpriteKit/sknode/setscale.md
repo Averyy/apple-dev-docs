@@ -17,7 +17,6 @@ Sets the [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) propertie
 ## Declaration
 
 ```swift
-@MainActor
 func setScale(_ scale: CGFloat)
 ```
 

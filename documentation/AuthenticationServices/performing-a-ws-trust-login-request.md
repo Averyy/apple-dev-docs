@@ -14,7 +14,7 @@ For more information about federated authentication with WS-Trust, see [`Authent
 
 ##### Receive the Ws Trust Login Response
 
-The system loads the SOAP response as XML and validates it, which includes checking that the nonce is correct and the created and expires dates are current. The system then parses the `TokenType` and uses it to set the correct `grant_type` in the platform SSO login request.
+The system loads the SOAP response as XML and validates it, which includes checking that the nonce is correct and the created and expires dates are current. The system then parses the `TokenType` and uses it to set the correct `grant_type` in the Platform SSO login request.
 
 ## See Also
 
@@ -27,7 +27,7 @@ The system loads the SOAP response as XML and validates it, which includes check
 - [Creating a refresh request](creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 
 ---

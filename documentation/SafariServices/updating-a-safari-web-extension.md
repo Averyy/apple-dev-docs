@@ -14,13 +14,13 @@ Add new features with web extension APIs that work across browsers. For more inf
 
 ##### Share Your Extension in Safari in Ios
 
-Safari supports web extensions in iOS 15 and later. To update your existing Xcode project with a macOS Safari web extension to support iOS, use the converter tool with the `--rebuild-project` option. For more information, see [`Add iOS to your existing Xcode project`](converting-a-web-extension-for-safari#Add-iOS-to-your-existing-Xcode-project.md).
+Safari supports web extensions in iOS 15 and later. To update your existing Xcode project with a macOS Safari web extension to support iOS, use the packager tool with the `--rebuild-project` option. For more information, see [`Add iOS to your existing Xcode project`](packaging-a-web-extension-for-safari#Add-iOS-to-your-existing-Xcode-project.md).
 
 ##### Edit Existing Files in Xcode
 
 While Xcode is primarily for native development, it has built-in support for editing web source-code documents, including HTML, CSS, JavaScript, and JSON. In the Xcode Project navigator, select and edit the files you want to customize.
 
-For more information, see [`Editing source files in Xcode`](https://developer.apple.com/documentation/Xcode/creating-organizing-and-editing-source-files).
+For more information, see [`Editing source files in Xcode`](https://developer.apple.com/documentation/Xcode/editing-source-files-in-xcode).
 
 ##### Edit Existing Files in an External Editor
 
@@ -54,7 +54,7 @@ Xcode presents a list of templates for new source files. To add a new HTML, CSS,
 2. Scroll down to the Other section and select the Empty option. Click Next.
 3. Name the file using the appropriate file extension for the file type you’re creating, and then click Create.
 
-To add an existing source file or image file from another directory, see the section titled “Add Existing Source Files to Your Project” in [`Editing source files in Xcode`](https://developer.apple.com/documentation/Xcode/creating-organizing-and-editing-source-files).
+To add an existing source file or image file from another directory, see the section titled “Add Existing Source Files to Your Project” in [`Editing source files in Xcode`](https://developer.apple.com/documentation/Xcode/editing-source-files-in-xcode).
 
 > ❗ **Important**:  When you add new files, make sure that you add the files to the correct target. A Safari web extension has two targets per platform: an app for that platform, and the Safari web extension for that platform. If you want your files included in your Safari web extension, add them to both extension targets.
 

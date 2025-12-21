@@ -9,7 +9,7 @@ All apps use basic data structures to manage information. To manage simple types
 - [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Float`](https://developer.apple.com/documentation/Swift/Float) [`Double`](https://developer.apple.com/documentation/Swift/Double), and [`Bool`](https://developer.apple.com/documentation/Swift/Bool) values
 - [`String`](https://developer.apple.com/documentation/Swift/String), [`Character`](https://developer.apple.com/documentation/Swift/Character), and [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString)
 - [`Dates and Times`](https://developer.apple.com/documentation/Foundation/dates-and-times), and other [`Units and Measurement`](https://developer.apple.com/documentation/Foundation/units-and-measurement)
-- [`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint), [`NSRect`](https://developer.apple.com/documentation/Foundation/NSRect), and other [`Numbers, Data, and Basic Values`](https://developer.apple.com/documentation/Foundation/numbers-data-and-basic-values)
+- [`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint), [`NSRect`](https://developer.apple.com/documentation/Foundation/NSRect), and other [`Numbers, Data, and Basic Values`](https://developer.apple.com/documentation/Foundation/numbers-data-and-basic-values#2877874)
 - [`URL`](https://developer.apple.com/documentation/Foundation/URL) and [`UUID`](https://developer.apple.com/documentation/Foundation/UUID)
 - [`Data`](https://developer.apple.com/documentation/Foundation/Data)
 - [`Array`](https://developer.apple.com/documentation/Swift/Array), [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary), [`Set`](https://developer.apple.com/documentation/Swift/Set), and other [`Collections`](https://developer.apple.com/documentation/Foundation/collections)
@@ -51,7 +51,7 @@ To format values in Objective-C, use an instance of the [`Formatter`](https://de
 
 #### Filter Sort and Compare Items
 
-Working on large amounts of data can make it difficult to organize and find that data. As the number of items in an array increases, [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting) to locate the items you want. You can also [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting) the contents of an array using rules you supply.
+Working on large amounts of data can make it difficult to organize and find that data. As the number of items in an array increases, [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting#Filltering) to locate the items you want. You can also [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting#Sorting) the contents of an array using rules you supply.
 
 At the center of all filter and sort operations are , which are logical tests to apply during the operation. A typical predicate compares a property from a data structure against a value you specify. For example, a predicate might match the name field of a structure to a name string someone specified in your interface. Build predicates in your app using the [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) or [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) type. You can also combine predicates to specify match multiple values. The following code uses a macro to create a [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) structure that matches two fields of a `Message` structure against specific values.
 
@@ -61,7 +61,7 @@ let messagePredicate = #Predicate<Message> { message in
 }
 ```
 
-Some types support the use of predicates to generate a filtered list of results. For example, the [`Array`](https://developer.apple.com/documentation/Swift/Array) type contains methods to [`Array`](https://developer.apple.com/documentation/Swift/Array) using predicates. Other collection types offer similar methods.
+Some types support the use of predicates to generate a filtered list of results. For example, the [`Array`](https://developer.apple.com/documentation/Swift/Array) type contains methods to [`Array`](https://developer.apple.com/documentation/Swift/Array#Finding-Elements) using predicates. Other collection types offer similar methods.
 
 Once you have a filtered list of results, apply sort descriptors to arrange them in a preferred order. Build a sort descriptor from the [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) or [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) type, and pass them to methods of your collection types. The sort descriptors arrange elements according to the specified criteria and return a new or modified version of your collection.
 

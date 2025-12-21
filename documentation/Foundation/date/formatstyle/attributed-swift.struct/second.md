@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Change the representation of the second in the format.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 func second(_ format: Date.FormatStyle.Symbol.Second = .defaultDigits) -> Date.FormatStyle.Attributed
 ```
+
+## Parameters
+
+- `format`: Set the symbol representation or pass   to remove it.
 
 
 ---

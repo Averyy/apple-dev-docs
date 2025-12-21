@@ -26,7 +26,7 @@ func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_ srcs: UnsafePointer
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -68,11 +68,23 @@ source.withUnsafeVImageBuffers { src in
 print(destination.array)
 ```
 
+##### Optimize Performance with Temporary Buffers
+
+This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
+
+Pass `nil` to the `tempBuffer` parameter to have vImage create and manage this temporary storage for you.
+
+In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call.
+
+To use your own temporary buffer, first call the function with the same values for all other parameters that you intend to use for subsequent calls. In addition, pass the `kvImageGetTempBufferSize` flag. The `kvImageGetTempBufferSize` instructs the function not to perform any processing, and to return a positive value that represents the minimum size, in bytes, of the temporary buffer. A negative return value represents an error.
+
+After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag.
+
 ## Parameters
 
 - `srcs`: An array of vImage buffers that reference the source image planes. The number of source buffers is the   parameter you pass to  .
 - `dests`: An array of vImage buffers that reference the destination image planes. The number of destination buffers is the   parameter you pass to  .
-- `tempBuffer`: A pointer to a temporary buffer. If you pass  , the function allocates the buffer and then deallocates it before returning. Alternatively, you can allocate the buffer yourself, in which case, you’re responsible for deallocating it when you no longer need it.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
 - `table`: The multidimensional lookup table.
 - `method`: The interpolation method, either   or  .
 - `flags`: Pass   to specify that the function returns the minimum temporary buffer size for the operation with the specified parameters.

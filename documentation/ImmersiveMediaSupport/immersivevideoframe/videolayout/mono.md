@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing mono video layout i.e single frame for both the eyes
+A value that represents mono video layout.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -46,6 +46,10 @@ Use this class for identity document passes. You provide the underlying metadata
 
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+  Set up your environment to use Verify with Wallet.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
 - [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)

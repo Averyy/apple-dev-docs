@@ -18,6 +18,10 @@ timestamp revocationDate
 
 - [type revocationReason](revocationreason.md)
   The reason for a refunded transaction.
+- [type revocationPercentage](revocationpercentage.md)
+  The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
+- [type revocationType](revocationtype.md)
+  The type of the refund or revocation that applies to the transaction.
 
 
 ---

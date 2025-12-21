@@ -17,7 +17,7 @@ var isBezeled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field draws a bezel and sets [`drawsBackground`](nstextfield/drawsbackground.md) to [`false`](https://developer.apple.com/documentation/swift/false); if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t draw a bezeled background.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the text field draws a bezel and sets [`drawsBackground`](nstextfield/drawsbackground.md) to [`false`](https://developer.apple.com/documentation/Swift/false); if [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t draw a bezeled background.
 
 ## See Also
 

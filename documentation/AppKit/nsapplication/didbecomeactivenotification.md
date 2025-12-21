@@ -18,6 +18,8 @@ class let didBecomeActiveNotification: NSNotification.Name
 
 The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
 
+The system posts this notification on the main actor.
+
 ## See Also
 
 - [class let didChangeScreenParametersNotification: NSNotification.Name](nsapplication/didchangescreenparametersnotification.md)
@@ -41,7 +43,7 @@ The notification object is [`shared`](nsapplication/shared.md). This notificatio
 - [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
 - [class let willUnhideNotification: NSNotification.Name](nsapplication/willunhidenotification.md)
   Posted at the start of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is about to become visible.
 - [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)

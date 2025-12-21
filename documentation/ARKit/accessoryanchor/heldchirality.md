@@ -6,7 +6,7 @@
 Which hand the accessory is currently held in. Returns nil if the accessory is not held.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -25,6 +25,8 @@ Authenticate devices using a user identity-focused workflow.
   Manage the configuration and behavior of your devices.
 - [Check-in](check-in.md)
   Authenticate devices and maintain push tokens with these commands.
+- [Migrating managed devices](migrating-managed-devices.md)
+  Migrate managed devices from one device management service to another.
 
 
 ---

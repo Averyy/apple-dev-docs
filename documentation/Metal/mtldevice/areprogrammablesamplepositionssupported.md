@@ -22,8 +22,8 @@ var areProgrammableSamplePositionsSupported: Bool { get }
 
 ## Mentions
 
-- [Positioning Samples Programmatically](positioning-samples-programmatically.md)
-- [Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
+- [Positioning samples programmatically](positioning-samples-programmatically.md)
+- [Storing data a pass makes with custom sample positions for a subsequent pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
 ## See Also
 

@@ -28,9 +28,9 @@ object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse
 - [object SubscriptionGroupsResponse](subscriptiongroupsresponse.md)
 - [object AppSubscriptionGroupsLinkagesResponse](appsubscriptiongroupslinkagesresponse.md)
 - [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 
 
 ---

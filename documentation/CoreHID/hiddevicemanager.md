@@ -37,13 +37,6 @@ Matching criteria are specified by creating [`HIDDeviceManager.DeviceMatchingCri
 ### Structures
 - [HIDDeviceManager.DeviceMatchingCriteria](hiddevicemanager/devicematchingcriteria.md)
   Matching criteria used to filter HID devices.
-### Instance Properties
-- [var unownedExecutor: UnownedSerialExecutor](hiddevicemanager/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
-### Default Implementations
-- [Actor Implementations](hiddevicemanager/actor-implementations.md)
-- [Equatable Implementations](hiddevicemanager/equatable-implementations.md)
-- [Hashable Implementations](hiddevicemanager/hashable-implementations.md)
 
 ## Relationships
 

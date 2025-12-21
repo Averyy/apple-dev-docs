@@ -33,6 +33,10 @@ TextField("1234 Main St.", text: $address)
     .disableAutocorrection(true)
 ```
 
+## Parameters
+
+- `disable`: A Boolean value that indicates whether   autocorrection is disabled for this view.
+
 ## See Also
 
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](view/autocapitalization(_:).md)

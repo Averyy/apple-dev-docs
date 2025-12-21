@@ -21,7 +21,7 @@ An array of [`Transaction`](transaction.md) records that match the provided `que
 
 ## Parameters
 
-- `query`: A   that describes the kinds of transactions to look   for.
+- `query`: A   that describes the kinds of transactions to look for.
 
 ## See Also
 

@@ -22,29 +22,27 @@ protocol MLShapedArrayProtocol<Scalar> : ExpressibleByArrayLiteral, MutableColle
 
 ## Topics
 
-### Creating a Shaped Array Type
+### Creating a shaped array type
 - [init<S>(scalars: S, shape: [Int])](mlshapedarrayprotocol/init(scalars:shape:).md)
   Creates a shaped array type from an array of values.
 - [init(repeating: Self.Scalar, shape: [Int])](mlshapedarrayprotocol/init(repeating:shape:).md)
   Creates a shaped array type that initializes every element to the same value.
-- [init(identityMatrixOfSize: Int)](mlshapedarrayprotocol/init(identitymatrixofsize:)-77y0e.md)
-  Creates a shaped array type that’s an identity matrix of integers.
-- [init(randomScalarsIn: Range<Self.Scalar>, shape: [Int])](mlshapedarrayprotocol/init(randomscalarsin:shape:)-99fnn.md)
-  Creates a shaped array type that initializes the elements to random integer values within a range.
+- [init(identityMatrixOfSize:)](mlshapedarrayprotocol/init(identitymatrixofsize:).md)
+  Initialize as an identity matrix.
+- [init(randomScalarsIn:shape:)](mlshapedarrayprotocol/init(randomscalarsin:shape:).md)
+  Initialize the shaped array with random scalar values.
 - [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], deallocator: Data.Deallocator)](mlshapedarrayprotocol/init(bytesnocopy:shape:deallocator:).md)
   Creates a shaped array type from a data pointer.
 - [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], strides: [Int], deallocator: Data.Deallocator)](mlshapedarrayprotocol/init(bytesnocopy:shape:strides:deallocator:).md)
   Creates a shaped array type from a data pointer with memory strides.
 - [init(unsafeUninitializedShape: [Int], initializingWith: (inout UnsafeMutableBufferPointer<Self.Scalar>, [Int]) throws -> Void) rethrows](mlshapedarrayprotocol/init(unsafeuninitializedshape:initializingwith:).md)
   Creates a shaped array type from a shape and a closure that initializes its memory.
-### Creating a Shaped Array Type from Another Type
+### Creating a shaped array type from another type
 - [init(MLMultiArray)](mlshapedarrayprotocol/init(_:).md)
   Creates a shaped array type from a multiarray.
-- [init(converting: MLMultiArray)](mlshapedarrayprotocol/init(converting:)-3d2eu.md)
-  Creates a shaped array type by converting a multiarray.
-- [init<T>(converting: T)](mlshapedarrayprotocol/init(converting:)-701ib.md)
-  Creates a shaped array type by converting another shaped array type.
-### Inspecting a Shaped Array Type
+- [init(converting:)](mlshapedarrayprotocol/init(converting:).md)
+  Initialize by converting a MLMultiArray of different scalar type.
+### Inspecting a shaped array type
 - [var shape: [Int]](mlshapedarrayprotocol/shape.md)
   An integer array in which each element represents the size of the corresponding dimension.
 - [var strides: [Int]](mlshapedarrayprotocol/strides.md)
@@ -61,21 +59,17 @@ protocol MLShapedArrayProtocol<Scalar> : ExpressibleByArrayLiteral, MutableColle
   A computed property that generates a linear array that contains every element, or assigns the elements of an array to the shaped array’s elements.
 - [func withUnsafeShapedBufferPointer<R>((UnsafeBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R](mlshapedarrayprotocol/withunsafeshapedbufferpointer(_:).md)
   Provides read-only access of the shaped array’s underlying memory to a closure.
-### Accessing Elements
+### Accessing elements
 - [subscript<C>(scalarAt _: C) -> Self.Scalar](mlshapedarrayprotocol/subscript(scalarat:).md)
   Accesses an element and a multidimensional location.
-- [subscript<C>(C) -> MLShapedArraySlice<Self.Scalar>](mlshapedarrayprotocol/subscript(_:)-zfw5.md)
-  Accesses a slice using a collection of integers, in which each element is an index in the corresponding dimension.
-- [subscript<C>(C) -> MLShapedArraySlice<Self.Scalar>](mlshapedarrayprotocol/subscript(_:)-1q1sr.md)
-  Accesses a slice using a collection of integer ranges, in which each element is a range in the corresponding dimension.
-### Modifying a Shaped Array Type
-- [func fill(with: Self.Scalar)](mlshapedarrayprotocol/fill(with:)-9qpes.md)
-  Assigns the shaped array’s elements to a value.
-- [func fill<C>(with: C)](mlshapedarrayprotocol/fill(with:)-6a5k1.md)
-  Assigns the shaped array’s elements to the elements in a collection, repeatedly, if necessary.
+- [subscript(_:)](mlshapedarrayprotocol/subscript(_:).md)
+  A slice of the shaped array for the selected leading axes.
+### Modifying a shaped array type
+- [func fill(with:)](mlshapedarrayprotocol/fill(with:).md)
+  Fills the array with a value.
 - [func withUnsafeMutableShapedBufferPointer<R>((inout UnsafeMutableBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R](mlshapedarrayprotocol/withunsafemutableshapedbufferpointer(_:).md)
   Provides read-write access of the shaped array’s underlying memory to a closure.
-### Supporting Types
+### Supporting types
 - [associatedtype Scalar : MLShapedArrayScalar](mlshapedarrayprotocol/scalar-swift.associatedtype.md)
   Represents the underlying scalar type of the shaped array type.
 - [struct MLShapedArraySlice](mlshapedarrayslice.md)
@@ -84,11 +78,6 @@ protocol MLShapedArrayProtocol<Scalar> : ExpressibleByArrayLiteral, MutableColle
   A type that associates a scalar with a shaped array.
 - [protocol MLShapedArrayRangeExpression](mlshapedarrayrangeexpression.md)
   An interface for a range expression, which you typically use with subscripts of shaped array types.
-### Initializers
-- [init(identityMatrixOfSize: Int)](mlshapedarrayprotocol/init(identitymatrixofsize:)-1xx88.md)
-  Initialize as an identity matrix.
-- [init(randomScalarsIn: Range<Self.Scalar>, shape: [Int])](mlshapedarrayprotocol/init(randomscalarsin:shape:)-4c8k1.md)
-  Initialize the shaped array with random scalar values.
 
 ## Relationships
 

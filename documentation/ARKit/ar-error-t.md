@@ -6,7 +6,7 @@
 An error reported by ARKit.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

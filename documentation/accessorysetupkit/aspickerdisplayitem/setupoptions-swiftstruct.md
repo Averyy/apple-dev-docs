@@ -26,10 +26,6 @@ struct SetupOptions
   An option to require the app to finish accessory authorization before showing the setup view.
 - [static var finishInApp: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/finishinapp.md)
   An option to ask the person setting up the accessory to finish additional setup in the app after the accessory is authorized.
-### Default Implementations
-- [Equatable Implementations](aspickerdisplayitem/setupoptions-swift.struct/equatable-implementations.md)
-- [OptionSet Implementations](aspickerdisplayitem/setupoptions-swift.struct/optionset-implementations.md)
-- [SetAlgebra Implementations](aspickerdisplayitem/setupoptions-swift.struct/setalgebra-implementations.md)
 
 ## Relationships
 

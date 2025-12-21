@@ -24,7 +24,12 @@ A configured instance of `ASAuthorizationPublicKeyCredentialPRFAssertionInput`.
 
 ## Parameters
 
-- `perCredentialInputValues`: This dictionary maps  s to input values. If the user selects a passkey with a   that matches one of these keys, the corresponding input values will be used. If the selected passkey does not match, no PRF result will be returned. When using this option, the dictionary must be non-empty and the request must use  .
+- `perCredentialInputValues`: This dictionary maps   values to input values. If the user selects a passkey with a   that matches one of these keys, the extension uses the corresponding input values. If the selected passkey doesn’t match, it doesn’t return a PRF result. When using this option, the dictionary needs to be nonempty and the request needs to use  .
+
+## See Also
+
+- [let perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?](asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues.md)
+  A map of credential identifiers to input values for the PRF extension.
 
 
 ---

@@ -22,10 +22,11 @@ let MPErrorDomain: String
 
 ## See Also
 
-- [struct MPError](mperror.md)
-  A structure that represents a framework error.
+- [static var errorDomain: String](mperror/errordomain.md)
 - [MPError.Code](mperror/code.md)
   An enumeration that represents error codes for framework operations.
+- [Error constants](error-constants.md)
+  Error code constants for framework operations.
 
 
 ---

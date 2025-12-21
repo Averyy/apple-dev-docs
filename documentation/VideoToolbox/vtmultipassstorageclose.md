@@ -21,7 +21,7 @@ func VTMultiPassStorageClose(_ multiPassStorage: VTMultiPassStorage) -> OSStatus
 
 #### Discussion
 
-After this function is called, all functions on the multipass storage object fail. It’s still necessary to release the object by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+After this function is called, all functions on the multipass storage object fail. It’s still necessary to release the object by calling [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Parameters
 

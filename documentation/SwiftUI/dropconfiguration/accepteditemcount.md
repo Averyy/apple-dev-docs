@@ -6,7 +6,7 @@
 Specifies the number of items that the drop side wants to accept.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

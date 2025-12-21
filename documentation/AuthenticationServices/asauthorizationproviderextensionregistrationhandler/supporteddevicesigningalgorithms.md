@@ -12,6 +12,10 @@
 optional var supportedDeviceSigningAlgorithms: [ASAuthorizationProviderExtensionSigningAlgorithm] { get }
 ```
 
+#### Discussion
+
+The supported device signing algorithms.
+
 
 ---
 

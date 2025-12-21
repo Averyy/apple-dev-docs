@@ -10,7 +10,7 @@ A controller that manages animation playback.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -39,6 +39,14 @@ While an animation plays, you can receive notification of particular playback st
   Resumes a paused animation.
 - [func stop()](animationplaybackcontroller/stop.md)
   Stops an animation.
+- [var isPlaying: Bool](animationplaybackcontroller/isplaying.md)
+  A Boolean value that indicates whether the animation plays.
+- [var isStopped: Bool](animationplaybackcontroller/isstopped.md)
+  A Boolean value that indicates whether the animation stopped.
+- [var isValid: Bool](animationplaybackcontroller/isvalid.md)
+  A Boolean value that indicates whether the animation controller is functional.
+- [var blendFactor: Float](animationplaybackcontroller/blendfactor.md)
+  The level of influence the controller gives to its animation.
 ### Managing completion
 - [var isComplete: Bool](animationplaybackcontroller/iscomplete.md)
   A Boolean that indicates whether the animation has finished running.
@@ -47,46 +55,22 @@ While an animation plays, you can receive notification of particular playback st
 ### Accessing the associated entity
 - [var entity: Entity?](animationplaybackcontroller/entity.md)
   The entity to which the animation applies.
+### Timing animation playback
+- [var duration: TimeInterval](animationplaybackcontroller/duration.md)
+  The length of time the animation spans, in seconds.
+- [var speed: Float](animationplaybackcontroller/speed.md)
+  The animation’s rate of playback.
+- [var clock: CMClockOrTimebase](animationplaybackcontroller/clock.md)
+  A reference clock to synchronize the animation with other events.
+- [var time: TimeInterval](animationplaybackcontroller/time.md)
+  The animation’s location within the timeline.
 ### Comparing animation playback controllers
 - [static func == (AnimationPlaybackController, AnimationPlaybackController) -> Bool](animationplaybackcontroller/==(_:_:).md)
   Indicates whether two animation playback controllers are equal.
 - [func hash(into: inout Hasher)](animationplaybackcontroller/hash(into:).md)
   Hashes the essential components of the controller by feeding them into the given hash function.
-### Instance Properties
-- [var blendFactor: Float](animationplaybackcontroller/blendfactor-5hhc0.md)
-  The level of influence the controller gives to its animation.
-- [var blendFactor: Float](animationplaybackcontroller/blendfactor-8b8jq.md)
-  The level of influence the controller gives to its animation.
-- [var clock: CMClockOrTimebase](animationplaybackcontroller/clock-31p38.md)
-  A reference clock to synchronize the animation with other events.
-- [var clock: CMClockOrTimebase](animationplaybackcontroller/clock-42emj.md)
-  A reference clock to synchronize the animation with other events.
-- [var duration: TimeInterval](animationplaybackcontroller/duration-33vtf.md)
-  The length of time the animation spans, in seconds.
-- [var duration: TimeInterval](animationplaybackcontroller/duration-4qtfh.md)
-  The length of time the animation spans, in seconds.
-- [var isPlaying: Bool](animationplaybackcontroller/isplaying-2n2l0.md)
-  A Boolean value that indicates whether the animation plays.
-- [var isPlaying: Bool](animationplaybackcontroller/isplaying-72uh9.md)
-  A Boolean value that indicates whether the animation plays.
-- [var isStopped: Bool](animationplaybackcontroller/isstopped-1jnnw.md)
-  A Boolean value that indicates whether the animation stopped.
-- [var isStopped: Bool](animationplaybackcontroller/isstopped-4ltj3.md)
-  A Boolean value that indicates whether the animation stopped.
-- [var isValid: Bool](animationplaybackcontroller/isvalid-8rn7d.md)
-  A Boolean value that indicates whether the animation controller is functional.
-- [var isValid: Bool](animationplaybackcontroller/isvalid-9tk2f.md)
-  A Boolean value that indicates whether the animation controller is functional.
-- [var speed: Float](animationplaybackcontroller/speed-1qldh.md)
-  The animation’s rate of playback.
-- [var speed: Float](animationplaybackcontroller/speed-4qhq5.md)
-  The animation’s rate of playback.
-- [var time: TimeInterval](animationplaybackcontroller/time-1ooz1.md)
-  The animation’s location within the timeline.
-- [var time: TimeInterval](animationplaybackcontroller/time-6vpzm.md)
-  The animation’s location within the timeline.
 ### Instance Methods
-- [func stop(blendOutDuration:)](animationplaybackcontroller/stop(blendoutduration:).md)
+- [func stop(blendOutDuration: TimeInterval)](animationplaybackcontroller/stop(blendoutduration:).md)
   Stops an animation with a fade-out time.
 
 ## Relationships

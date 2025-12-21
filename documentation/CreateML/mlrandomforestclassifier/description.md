@@ -21,8 +21,6 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mlrandomforestclassifier/model.md)
-  The Core ML model.
 - [var debugDescription: String](mlrandomforestclassifier/debugdescription.md)
   A text representation of the random forest classifier that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mlrandomforestclassifier/playgrounddescription.md)

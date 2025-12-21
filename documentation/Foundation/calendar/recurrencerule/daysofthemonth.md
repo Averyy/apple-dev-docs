@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+On which days in the month the event should occur
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,11 @@
 ```swift
 var daysOfTheMonth: [Int]
 ```
+
+#### Discussion
+
+- 1 signifies the first day of the month.
+- Negative values point to a day counted backwards from the last day of the month This field is unused when `frequency` is `.weekly`.
 
 
 ---

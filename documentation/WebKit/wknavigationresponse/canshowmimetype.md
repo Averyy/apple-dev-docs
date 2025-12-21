@@ -21,7 +21,7 @@ var canShowMIMEType: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if WebKit is able to display the MIME type.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if WebKit is able to display the MIME type.
 
 ## See Also
 

@@ -84,6 +84,10 @@ When you use a `FSBlockDeviceResource`, your file system implementation also con
 
 - [class FSResource](fsresource.md)
   An abstract resource a file system uses to provide data for a volume.
+- [class FSPathURLResource](fspathurlresource.md)
+  A resource that represents a path in the system file space.
+- [class FSGenericURLResource](fsgenericurlresource.md)
+  A resource that represents an abstract URL.
 
 
 ---

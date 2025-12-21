@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-This feature is not supported on this device
+This feature isn’t supported on this device.
 
 **Availability**:
 - iOS 18.0+

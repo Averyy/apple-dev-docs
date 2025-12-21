@@ -17,7 +17,7 @@ var viewsNeedDisplay: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when any of the window’s views need to be displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). You should rarely need to set this property; the `NSView` method [`needsDisplay`](nsview/needsdisplay.md) and similar methods set it automatically.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when any of the window’s views need to be displayed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). You should rarely need to set this property; the `NSView` method [`needsDisplay`](nsview/needsdisplay.md) and similar methods set it automatically.
 
 ## See Also
 

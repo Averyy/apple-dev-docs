@@ -32,12 +32,12 @@ struct MLActionClassifier
 - [init(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters) throws](mlactionclassifier/init(trainingdata:parameters:).md)
   Creates an action classifier with a training dataset represented by a data source.
 ### Evaluating an action classifier
+- [func evaluation(on: MLActionClassifier.DataSource) throws -> MLClassifierMetrics](mlactionclassifier/evaluation(on:).md)
+  Generates metrics describing the action classifier’s performance on labeled videos represented by a data source.
 - [var trainingMetrics: MLClassifierMetrics](mlactionclassifier/trainingmetrics.md)
   Measurements of the action classifier’s performance on the training dataset.
 - [var validationMetrics: MLClassifierMetrics](mlactionclassifier/validationmetrics.md)
   Measurements of the action classifier’s performance on the validation dataset.
-- [func evaluation(on: MLActionClassifier.DataSource) throws -> MLClassifierMetrics](mlactionclassifier/evaluation(on:).md)
-  Generates metrics describing the action classifier’s performance on labeled videos represented by a data source.
 ### Testing an action classifier
 - [func prediction(from: URL) throws -> [MLActionClassifier.Prediction]](mlactionclassifier/prediction(from:).md)
   Generates a prediction for each action the classifier recognizes in the video.
@@ -67,7 +67,6 @@ struct MLActionClassifier
   A data source for an action classifier.
 - [MLActionClassifier.ModelParameters](mlactionclassifier/modelparameters-swift.struct.md)
   Parameters that affect the training process of an action classifier.
-### Structures
 - [MLActionClassifier.VideoAugmentationOptions](mlactionclassifier/videoaugmentationoptions.md)
   The video augmentations for an action classifier training session.
 ### Default Implementations
@@ -89,7 +88,7 @@ struct MLActionClassifier
 
 - [Creating an Action Classifier Model](creating-an-action-classifier-model.md)
   Train a machine learning model to recognize a person’s body movements.
-- [Detecting Human Actions in a Live Video Feed](detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [struct MLHandActionClassifier](mlhandactionclassifier.md)
   A task that creates a hand action classification model by training with videos of people’s hand movements that you provide.

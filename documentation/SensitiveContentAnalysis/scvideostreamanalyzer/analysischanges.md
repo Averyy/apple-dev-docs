@@ -6,8 +6,8 @@
 A stream your app uses to receive video-stream analysis results.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

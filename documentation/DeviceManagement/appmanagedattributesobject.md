@@ -16,6 +16,10 @@ A dictionary of values associated with an app.
 object AppManagedAttributesObject
 ```
 
+## Mentions
+
+- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+
 ## See Also
 
 - [object AppManagedAppConfigDictionaryObject](appmanagedappconfigdictionaryobject.md)

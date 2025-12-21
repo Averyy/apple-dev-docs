@@ -19,6 +19,11 @@ A sequence that emits unfinished transactions for the customer.
 static var unfinished: Transaction.Transactions { get }
 ```
 
+## Mentions
+
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+
 #### Discussion
 
 A transaction is unfinished until you call [`finish()`](transaction/finish().md). Use the [`unfinished`](transaction/unfinished.md) sequence to find the transactions your app needs to process to deliver purchased content or enable service.

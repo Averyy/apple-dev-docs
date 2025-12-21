@@ -20,7 +20,7 @@ class func significantLocationChangeMonitoringAvailable() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if location change monitoring is available; [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if location change monitoring is available; [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 #### Discussion
 

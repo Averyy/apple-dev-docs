@@ -16,7 +16,7 @@ func removeFontTrait(_ sender: Any?)
 
 #### Discussion
 
-By default, the action message is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject/1462311-changefont). This action method causes the receiver to send its action message up the responder chain.
+By default, the action message is [`changeFont:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/changeFont:). This action method causes the receiver to send its action message up the responder chain.
 
 When a responder replies by providing a font to convert in a [`convert(_:)`](nsfontmanager/convert(_:).md) message, the receiver converts the font by removing the trait specified by `sender`. This trait is determined by sending a `tag` message to `sender` and interpreting it as a font trait mask for a [`convert(_:toNotHaveTrait:)`](nsfontmanager/convert(_:tonothavetrait:).md) message.
 

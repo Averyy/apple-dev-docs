@@ -3,12 +3,14 @@
 **Framework**: UIKit  
 **Kind**: enum
 
+Constants that indicate the current layout of the containing split view controller.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +20,7 @@ enum LayoutEnvironment
 
 ## Topics
 
-### Enumeration Cases
+### Constants
 - [UISplitViewController.LayoutEnvironment.collapsed](uisplitviewcontroller/layoutenvironment/collapsed.md)
   Contained within a collapsed split view controller.
 - [UISplitViewController.LayoutEnvironment.expanded](uisplitviewcontroller/layoutenvironment/expanded.md)

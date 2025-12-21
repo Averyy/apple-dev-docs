@@ -25,12 +25,12 @@ The default value of this property is [`MKMapType.standard`](mkmaptype/standard.
 
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapsnapshotter/options/preferredconfiguration.md)
-  The map configuration style to use for snapshots.
-- [var showsBuildings: Bool](mkmapsnapshotter/options/showsbuildings.md)
-  A Boolean that indicates whether the map displays extruded building information.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkmapsnapshotter/options/pointofinterestfilter.md)
-  The filter to use for determining the points of interest that appear in the snapshot.
+- [var filterType: MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.property.md)
+  The filter options for the search results.
+- [var pinColor: MKPinAnnotationColor](mkpinannotationview/pincolor.md)
+  The color of the pin head.
+- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
 - [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
 

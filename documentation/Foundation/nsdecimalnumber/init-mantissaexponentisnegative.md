@@ -26,7 +26,7 @@ An `NSDecimalNumber` object initialized using the given mantissa, exponent, and 
 
 #### Discussion
 
-The arguments express a number in a type of scientific notation that requires the mantissa to be an integer. So, for example, if the number to be represented is 1.23, it is expressed as 123x10^–2—`mantissa` is 123; `exponent` is –2; and `isNegative`, which refers to the sign of the mantissa, is [`false`](https://developer.apple.com/documentation/swift/false).
+The arguments express a number in a type of scientific notation that requires the mantissa to be an integer. So, for example, if the number to be represented is 1.23, it is expressed as 123x10^–2—`mantissa` is 123; `exponent` is –2; and `isNegative`, which refers to the sign of the mantissa, is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

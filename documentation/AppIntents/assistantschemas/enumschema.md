@@ -18,17 +18,6 @@
 struct EnumSchema
 ```
 
-## Topics
-
-### Default Implementations
-- [BooksEnum Implementations](assistantschemas/enumschema/booksenum-implementations.md)
-- [BrowserEnum Implementations](assistantschemas/enumschema/browserenum-implementations.md)
-- [CameraEnum Implementations](assistantschemas/enumschema/cameraenum-implementations.md)
-- [Enum Implementations](assistantschemas/enumschema/enum-implementations.md)
-- [PhotosEnum Implementations](assistantschemas/enumschema/photosenum-implementations.md)
-- [ReaderEnum Implementations](assistantschemas/enumschema/readerenum-implementations.md)
-- [WhiteboardEnum Implementations](assistantschemas/enumschema/whiteboardenum-implementations.md)
-
 ## Relationships
 
 ### Conforms To

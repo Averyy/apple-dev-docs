@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+A list of available collations for the specified `language` in the order that it is most likely to make a difference.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

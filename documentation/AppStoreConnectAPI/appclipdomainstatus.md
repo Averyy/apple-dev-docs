@@ -24,6 +24,8 @@ object AppClipDomainStatus
 
 - [object BuildBundle](buildbundle.md)
   The data structure that represents Build Bundles resource.
+- [type BuildBundleType](buildbundletype.md)
+  A string that represents the possible components of a build bundle.
 - [object BuildBundleFileSize](buildbundlefilesize.md)
   The data structure that represents a Build Bundle File Sizes resource.
 - [object AppClipDomainStatusResponse](appclipdomainstatusresponse.md)

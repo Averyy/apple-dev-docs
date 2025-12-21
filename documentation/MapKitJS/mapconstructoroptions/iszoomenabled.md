@@ -11,7 +11,7 @@ A Boolean value that determines whether the user may zoom in and out on the map 
 ## Declaration
 
 ```swift
-attribute boolean isZoomEnabled;
+isZoomEnabled?: boolean;
 ```
 
 #### Discussion

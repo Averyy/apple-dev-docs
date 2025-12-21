@@ -13,7 +13,7 @@ Create a lightweight, in-the-moment experience or demo version for your app that
 
 An  is a lightweight version of your app that offers access to some of the app’s functionality. For example, a donut shop’s app a person downloads and installs from the App Store may allow them to order donuts, save favorites, collect rewards, get special offers, and so on. The donut shop’s App Clip is instantly available – for example, when someone searches for “donuts” near the shop – without the need to install the full app. To ensure a fast launch experience and a fast order experience, the App Clip offers only the functionality to order donuts.
 
-![A flowchart illustrating the flow for an App Clip. From left to right, the images shows an App Clip Code as an invocation, an App Clip card for a donut shop, the App Clip of the donut shop, and a donut.](https://docs-assets.developer.apple.com/published/1fa269ccc94c2866e6b1c27d127a4cb5/media-4301753%402x.png)
+![A flowchart illustrating the flow for an App Clip. From left to right, the images shows an App Clip Code as an invocation, an App Clip card for a food truck, the App Clip of the food truck, and a donut.](https://docs-assets.developer.apple.com/published/2975a51a17a489e70989a1950106630c/app-clips-invocation-overview%402x.png)
 
 App Clips that conform to a set of constraints can be larger in size, making it possible to offer an App Clip that’s a demo version of your app. The larger demo size allows people to experience your app’s functionality without a purchase or subscription. For example, a game might offer an App Clip to play the first level, a fitness app might offer an App Clip with a free workout, and so on. When a person has finished the game’s first level or completed the free workout, the App Clip displays a prompt to install the full app.
 
@@ -53,7 +53,7 @@ When you’ve identified functionality for your App Clip and identified invocati
 ### Creation
 - [Creating an App Clip with Xcode](creating-an-app-clip-with-xcode.md)
   Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
-- [Fruta: Building a Feature-Rich App with SwiftUI](fruta_building_a_feature-rich_app_with_swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [Parent Application Identifiers Entitlement](../BundleResources/Entitlements/com.apple.developer.parent-application-identifiers.md)
   A list of parent application identifiers for an App Clip with exactly one entry.

@@ -14,8 +14,8 @@ class ASAuthorizationProviderExtensionUserLoginConfiguration
 
 ## Mentions
 
-- [Registering devices and users](registering-devices-and-users.md)
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+- [Registering devices and users](registering-devices-and-users.md)
 
 ## Topics
 

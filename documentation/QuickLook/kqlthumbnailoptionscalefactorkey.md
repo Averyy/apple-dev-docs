@@ -16,7 +16,7 @@ let kQLThumbnailOptionScaleFactorKey: CFString!
 
 #### Discussion
 
-The scale factor is a `float` value that’s encapsulated in a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd object. If this option is absent, the default value is `1.0`.
+The scale factor is a `float` value that’s encapsulated in a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. If this option is absent, the default value is `1.0`.
 
 ## See Also
 

@@ -22,11 +22,15 @@ struct MCError
 ### Initializers
 - [init(Code, userInfo: [String : Any])](mcerror/3726664-init.md)
 ### Instance Properties
-- [var code: Code](mcerror/3726661-code.md)
-- [var errorCode: Int](mcerror/2887194-errorcode.md)
-- [var errorUserInfo: [String : Any]](mcerror/2887196-erroruserinfo.md)
+- [MCError.Code](MCError/Code.md)
+  Error codes found in [`MCErrorDomain`](doc://com.apple.multipeerconnectivity/documentation/MultipeerConnectivity/MCErrorDomain) error domain `NSError` objects returned by methods in the Multipeer Connectivity framework.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 - [var hashValue: Int](mcerror/3726663-hashvalue.md)
-- [var userInfo: [String : Any]](mcerror/3726665-userinfo.md)
+- [var userInfo: [String : Any]](MCError/userInfo.md)
+  The user-info dictionary for an error that was bridged from NSError.
 ### Type Properties
 - [static var cancelled: MCError.Code](mcerror/cancelled.md)
 - [static var errorDomain: String](mcerror/errordomain.md)

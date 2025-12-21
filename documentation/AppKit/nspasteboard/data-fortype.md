@@ -20,7 +20,7 @@ A data object containing the data for the specified type from the first item in 
 
 #### Discussion
 
-This method may also return `nil` if the pasteboard server cannot supply the data in time—for example, if the pasteboard’s owner is slow in responding to a [`pasteboard:provideDataForType:`](https://developer.apple.com/documentation/objectivec/nsobject/1525907-pasteboard) message and the interprocess communication times out.
+This method may also return `nil` if the pasteboard server cannot supply the data in time—for example, if the pasteboard’s owner is slow in responding to a [`pasteboard:provideDataForType:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/pasteboard:provideDataForType:) message and the interprocess communication times out.
 
 #### Discussion
 

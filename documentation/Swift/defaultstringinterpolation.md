@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: struct
 
-Represents a string literal with interpolations while it is being built up.
+Represents a string literal with interpolations while it’s being built up.
 
 **Availability**:
 - iOS 8.0+
@@ -23,7 +23,7 @@ struct DefaultStringInterpolation
 
 #### Overview
 
-Do not create an instance of this type directly. It is used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
+You don’t need to create an instance of this type directly. It’s used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 
 ```swift
 let price = 2
@@ -74,6 +74,16 @@ See `StringInterpolationProtocol` for details on `appendInterpolation` methods.
 - [func appendInterpolation<T>(T)](defaultstringinterpolation/appendinterpolation(_:)-8x6aw.md)
   Interpolates the given value’s textual representation into the string literal being created.
 - [func appendInterpolation(any Any.Type)](defaultstringinterpolation/appendinterpolation(_:)-jfy9.md)
+- [func appendInterpolation<T>(T?, default: @autoclosure () -> some StringProtocol)](defaultstringinterpolation/appendinterpolation(_:default:)-4b2j8.md)
+  Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
+- [func appendInterpolation<T>(T?, default: @autoclosure () -> some StringProtocol)](defaultstringinterpolation/appendinterpolation(_:default:)-64wk7.md)
+  Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
+- [func appendInterpolation<T>(T?, default: @autoclosure () -> some StringProtocol)](defaultstringinterpolation/appendinterpolation(_:default:)-8wdp1.md)
+  Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
+- [func appendInterpolation<T>(T?, default: @autoclosure () -> some StringProtocol)](defaultstringinterpolation/appendinterpolation(_:default:)-9dh5y.md)
+  Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
+- [func appendInterpolation<T>(T?, default: String)](defaultstringinterpolation/appendinterpolation(_:default:)-ue3g.md)
+  Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
 - [func appendLiteral(String)](defaultstringinterpolation/appendliteral(_:).md)
   Appends a literal segment of a string interpolation.
 ### Type Aliases

@@ -20,7 +20,7 @@ object AppStoreReviewDetail
 - [object AppStoreReviewDetail.Attributes](appstorereviewdetail/attributes-data.dictionary.md)
   Attributes that describe an App Store Review Details resource.
 - [object AppStoreReviewDetail.Relationships](appstorereviewdetail/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

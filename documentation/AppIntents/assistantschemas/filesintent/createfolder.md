@@ -25,7 +25,7 @@ var createFolder: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.files.createFolder` schema:
 
 ```swift
-@AssistantIntent(schema: .files.createFolder)
+@AppIntent(schema: .files.createFolder)
 struct CreateFolderIntent: AppIntent {
     @Parameter
     var target: ExampleFileEntity

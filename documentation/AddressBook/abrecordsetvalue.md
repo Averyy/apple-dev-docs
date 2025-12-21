@@ -14,7 +14,7 @@ Sets the value of a given property for a record.
 ## Declaration
 
 ```swift
-func ABRecordSetValue(_ record: ABRecord!, _ property: ABPropertyID, _ value: CFTypeRef!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ABRecordSetValue(_ record: ABRecordRef!, _ property: CFString!, _ value: CFTypeRef!) -> Bool
 ```
 
 #### Return Value

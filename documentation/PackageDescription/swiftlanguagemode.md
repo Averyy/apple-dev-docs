@@ -26,8 +26,6 @@ enum SwiftLanguageMode
   A user-defined value for the Swift version.
 - [SwiftLanguageMode.v3](swiftlanguagemode/v3.md)
   The identifier for the Swift 3 language version.
-### Default Implementations
-- [CustomStringConvertible Implementations](swiftlanguagemode/customstringconvertible-implementations.md)
 
 ## Relationships
 

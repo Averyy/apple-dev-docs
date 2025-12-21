@@ -35,19 +35,9 @@ You can use Combine’s [`eraseToAnyPublisher()`](publisher/erasetoanypublisher(
 
 ## Topics
 
-### Creating a Type-Erased Publisher
+### Creating a type-erased publisher
 - [init<P>(P)](anypublisher/init(_:).md)
   Creates a type-erasing publisher to wrap the provided publisher.
-### Inspecting Publisher Properties
-- [var description: String](anypublisher/description.md)
-  A textual representation of this instance.
-- [var playgroundDescription: Any](anypublisher/playgrounddescription.md)
-  A custom playground description for this instance.
-### Applying Operators
-- [Publisher Operators](anypublisher-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](anypublisher/publisher-implementations.md)
 
 ## Relationships
 

@@ -35,14 +35,8 @@ struct Page
 - [static func == (AssignedWorkDocument.Page, AssignedWorkDocument.Page) -> Bool](assignedworkdocument/page/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var debugDescription: String](assignedworkdocument/page/debugdescription.md)
-  A textual representation of this instance, suitable for debugging.
-- [var hashValue: Int](assignedworkdocument/page/hashvalue.md)
-  The hash value.
 - [var rotation: Measurement<UnitAngle>](assignedworkdocument/page/rotation.md)
   The rotation of the page in this document.
-### Default Implementations
-- [Equatable Implementations](assignedworkdocument/page/equatable-implementations.md)
 
 ## Relationships
 

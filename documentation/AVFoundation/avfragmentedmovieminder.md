@@ -25,17 +25,17 @@ This class is identical to [`AVFragmentedAssetMinder`](avfragmentedassetminder.m
 
 ## Topics
 
-### Creating a Movie Minder
+### Creating a movie minder
 - [init(movie: AVFragmentedMovie, mindingInterval: TimeInterval)](avfragmentedmovieminder/init(movie:mindinginterval:).md)
   Creates a movie minder and adds a movie with a minding interval.
-### Adding and Removing Movies
+### Adding and removing movies
 - [var movies: [AVFragmentedMovie]](avfragmentedmovieminder/movies.md)
   An array containing the fragmented movie objects being minded.
 - [func add(AVFragmentedMovie)](avfragmentedmovieminder/add(_:).md)
   Adds a fragmented movie to the array of movies being minded.
 - [func remove(AVFragmentedMovie)](avfragmentedmovieminder/remove(_:).md)
   Removes a fragmented movie from the array of movies being minded.
-### Accessing Minder Information
+### Accessing minder information
 - [var mindingInterval: TimeInterval](avfragmentedmovieminder/mindinginterval.md)
   The amount of time between checks for additional movie fragments.
 

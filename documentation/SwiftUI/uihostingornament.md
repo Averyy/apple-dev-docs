@@ -29,18 +29,17 @@ self.ornaments = [
 ## Topics
 
 ### Creating a hosting ornament
+- [init(sceneAnchor:contentAlignment:content:)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
+  Creates an ornament with the specified alignment and content.
 - [var rootView: Content](uihostingornament/rootview.md)
   The root view of the SwiftUI view hierarchy managed by this ornament.
 ### Setting the alignment
 - [var contentAlignment: Alignment](uihostingornament/contentalignment.md)
   The alignment in the ornament used to position it.
-### Initializers
-- [init(sceneAnchor:contentAlignment:content:)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
-  Creates an ornament with the specified alignment and content.
-### Instance Properties
-- [var contentAlignment3D: Alignment3D](uihostingornament/contentalignment3d.md)
 - [var sceneAnchor: UnitPoint](uihostingornament/sceneanchor.md)
   The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
+### Instance Properties
+- [var contentAlignment3D: Alignment3D](uihostingornament/contentalignment3d.md)
 
 ## Relationships
 

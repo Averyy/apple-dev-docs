@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a review submission resource.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -15,6 +17,7 @@ object ReviewSubmission.Attributes
 ## See Also
 
 - [object ReviewSubmission.Relationships](reviewsubmission/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

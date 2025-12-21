@@ -21,7 +21,7 @@ var hidesWhenStopped: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the receiver sets its [`isHidden`](uiview/ishidden.md) property (`UIView`) to [`true`](https://developer.apple.com/documentation/swift/true) when receiver is not animating. If the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the receiver is not hidden when animation stops. You stop an animating progress indicator with the [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) method.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), the receiver sets its [`isHidden`](uiview/ishidden.md) property (`UIView`) to [`true`](https://developer.apple.com/documentation/Swift/true) when receiver is not animating. If the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the receiver is not hidden when animation stops. You stop an animating progress indicator with the [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) method.
 
 ## See Also
 

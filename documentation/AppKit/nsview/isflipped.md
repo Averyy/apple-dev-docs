@@ -17,9 +17,9 @@ var isFlipped: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which results in a non-flipped coordinate system. In a non-flipped coordinate system, the origin is in the lower-left corner of the view and positive y-values extend upward. In a flipped coordinate system, the origin is in the upper-left corner of the view and y-values extend downward. X-values always extend to the right.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which results in a non-flipped coordinate system. In a non-flipped coordinate system, the origin is in the lower-left corner of the view and positive y-values extend upward. In a flipped coordinate system, the origin is in the upper-left corner of the view and y-values extend downward. X-values always extend to the right.
 
-If you want your view to use a flipped coordinate system, override this property and return [`true`](https://developer.apple.com/documentation/swift/true).
+If you want your view to use a flipped coordinate system, override this property and return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

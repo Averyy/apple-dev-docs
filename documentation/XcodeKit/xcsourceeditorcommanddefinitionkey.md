@@ -34,6 +34,9 @@ Source editor commands are defined via an array of dictionaries under the `XCSou
 ### Creating a Key Using a Raw String
 - [init(rawValue: String)](xcsourceeditorcommanddefinitionkey/init(rawvalue:).md)
   Creates the key for a source-editor command by using the string value you specify.
+### Type Properties
+- [static let systemSymbolNameKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.md)
+  An SF Symbol from the system associated with the command.
 
 ## Relationships
 

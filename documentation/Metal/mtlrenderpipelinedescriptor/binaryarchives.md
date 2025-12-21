@@ -21,7 +21,7 @@ var binaryArchives: [any MTLBinaryArchive]? { get set }
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## See Also
 

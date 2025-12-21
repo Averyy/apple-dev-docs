@@ -29,6 +29,13 @@ The format of in-memory blobs must be the same as the external files. The dictio
 
 - `blobMapping`: A dictionary with blob URL as the key and blob data as the value.
 
+## See Also
+
+- [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
+  Creates a model asset from an in-memory model specification.
+- [convenience init(url: URL) throws](mlmodelasset/init(url:).md)
+  Constructs a ModelAsset from a compiled model URL.
+
 
 ---
 

@@ -19,7 +19,7 @@ class MTLAccelerationStructurePassDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 

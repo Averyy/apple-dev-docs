@@ -34,18 +34,6 @@ case halfUp
   Round towards the nearest integer, or towards an even number if equidistant.
 - [NumberFormatter.RoundingMode.halfDown](numberformatter/roundingmode-swift.enum/halfdown.md)
   Round towards the nearest integer, or towards zero if equidistant.
-- [NumberFormatter.RoundingMode.ceiling](numberformatter/roundingmode-swift.enum/ceiling.md)
-  Round towards positive infinity.
-- [NumberFormatter.RoundingMode.floor](numberformatter/roundingmode-swift.enum/floor.md)
-  Round towards negative infinity.
-- [NumberFormatter.RoundingMode.down](numberformatter/roundingmode-swift.enum/down.md)
-  Round towards zero.
-- [NumberFormatter.RoundingMode.up](numberformatter/roundingmode-swift.enum/up.md)
-  Round away from zero.
-- [NumberFormatter.RoundingMode.halfEven](numberformatter/roundingmode-swift.enum/halfeven.md)
-  Round towards the nearest integer, or towards an even number if equidistant.
-- [NumberFormatter.RoundingMode.halfDown](numberformatter/roundingmode-swift.enum/halfdown.md)
-  Round towards the nearest integer, or towards zero if equidistant.
 
 
 ---

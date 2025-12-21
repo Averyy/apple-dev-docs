@@ -70,10 +70,10 @@ let selectedText = textDocumentProxy.selectedText ?? ""
 let fullText = "\(precedingText)\(selectedText)\(followingText)"
 ```
 
-Use doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8 to better understand the context by breaking the surrounding text (or combined text) into words, paragraphs, or sentences. This information enables you to implement autocapitalization.
+Use [`CFStringTokenizer`](https://developer.apple.com/documentation/CoreFoundation/CFStringTokenizer) to better understand the context by breaking the surrounding text (or combined text) into words, paragraphs, or sentences. This information enables you to implement autocapitalization.
 
 1. Call [`documentContextBeforeInput`](uitextdocumentproxy/documentcontextbeforeinput.md) to get the text preceding the insertion point.
-2. Use doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8 to locate the beginning of the current word.
+2. Use [`CFStringTokenizer`](https://developer.apple.com/documentation/CoreFoundation/CFStringTokenizer) to locate the beginning of the current word.
 3. Move the insertion point after the first character of the word.
 4. Call [`deleteBackward()`](uikeyinput/deletebackward().md).
 5. Call [`insertText(_:)`](uikeyinput/inserttext(_:).md) and pass the appropriate capitalized letter.

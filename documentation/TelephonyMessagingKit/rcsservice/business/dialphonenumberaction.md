@@ -6,8 +6,8 @@
 Suggested action to dial a phone number.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,16 +23,6 @@ struct DialPhoneNumberAction
   The phone number to dial.
 - [let fallbackURL: URL?](rcsservice/business/dialphonenumberaction/fallbackurl.md)
   Fallback URL to use when unable to perform operation.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/dialphonenumberaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/dialphonenumberaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.DialPhoneNumberAction, RCSService.Business.DialPhoneNumberAction) -> Bool](rcsservice/business/dialphonenumberaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/dialphonenumberaction/equatable-implementations.md)
 
 ## Relationships
 

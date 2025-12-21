@@ -30,7 +30,7 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](array/init(from:)-6rmxq.md)
+- [init(from: any Decoder) throws](array/init(from:).md)
   Creates a new array by decoding from the given decoder.
 
 

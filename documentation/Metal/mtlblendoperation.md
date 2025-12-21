@@ -21,7 +21,7 @@ enum MTLBlendOperation
 
 ## Topics
 
-### Constants
+### Blend operations
 - [MTLBlendOperation.add](mtlblendoperation/add.md)
   Add portions of both source and destination pixel values.
 - [MTLBlendOperation.subtract](mtlblendoperation/subtract.md)
@@ -50,10 +50,12 @@ enum MTLBlendOperation
 
 ## See Also
 
-- [enum MTLBlendFactor](mtlblendfactor.md)
-  The source and destination blend factors are often needed to complete specification of a blend operation. In most cases, the blend factor for both RGB values () and alpha values () are similar to one another, but in some cases, such as `MTLBlendFactorSourceAlphaSaturated`, the blend factor is slightly different. Four blend factors (`MTLBlendFactorBlendColor`, `MTLBlendFactorOneMinusBlendColor`, `MTLBlendFactorBlendAlpha`, and `MTLBlendFactorOneMinusBlendAlpha`) refer to a constant blend color value that is set by the [`setBlendColor(red:green:blue:alpha:)`](mtlrendercommandencoder/setblendcolor(red:green:blue:alpha:).md) method of `MTLRenderCommandEncoder`.
-- [struct MTLColorWriteMask](mtlcolorwritemask.md)
-  Values used to specify a mask to permit or restrict writing to color channels of a color value. The values [`red`](mtlcolorwritemask/red.md), [`green`](mtlcolorwritemask/green.md), [`blue`](mtlcolorwritemask/blue.md), and [`alpha`](mtlcolorwritemask/alpha.md) select one color channel each, and they can be bitwise combined.
+- [var isBlendingEnabled: Bool](mtlrenderpipelinecolorattachmentdescriptor/isblendingenabled.md)
+  A Boolean value that determines whether blending is enabled.
+- [var alphaBlendOperation: MTLBlendOperation](mtlrenderpipelinecolorattachmentdescriptor/alphablendoperation.md)
+  The blend operation assigned for the alpha data.
+- [var rgbBlendOperation: MTLBlendOperation](mtlrenderpipelinecolorattachmentdescriptor/rgbblendoperation.md)
+  The blend operation assigned for the RGB data.
 
 
 ---

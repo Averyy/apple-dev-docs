@@ -20,6 +20,8 @@ May return nil if there is no deletion record available for this sensor
 
 #### Discussion
 
+Returns a sensor stream that contains deletion records of the sensor
+
 This sensor stream should only be used for fetching. All other operations will be ignored. Deletion records share the recording and authorization state with their parent sensor.
 
 

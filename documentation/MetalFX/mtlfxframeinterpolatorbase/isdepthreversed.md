@@ -7,12 +7,11 @@
 A Boolean value that indicates whether the depth texture uses zero to represent the farthest distance.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -22,7 +21,7 @@ var isDepthReversed: Bool { get set }
 
 #### Discussion
 
-This property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property’s default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

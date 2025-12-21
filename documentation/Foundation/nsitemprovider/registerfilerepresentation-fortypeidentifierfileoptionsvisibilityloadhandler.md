@@ -22,7 +22,7 @@ func registerFileRepresentation(forTypeIdentifier typeIdentifier: String, fileOp
 
 #### Discussion
 
-If a destination app must access the represented file using a file coordinator, set the `coordinated` parameter in the load handler block to [`true`](https://developer.apple.com/documentation/swift/true).
+If a destination app must access the represented file using a file coordinator, set the `coordinated` parameter in the load handler block to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 To offer a representation backed by a file provider, return an [`NSURL`](nsurl.md) object that points to your app’s file provider’s container. The file provider extension is then invoked to retrieve the file when requested.
 

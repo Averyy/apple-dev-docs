@@ -5,11 +5,6 @@
 
 Returns a CGImage of the representation that is appropriate for displaying full screen.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

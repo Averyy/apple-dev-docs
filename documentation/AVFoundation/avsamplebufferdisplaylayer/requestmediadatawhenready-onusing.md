@@ -23,7 +23,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`requestMediaDataWhenReady(on:using:)`](avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:).md) on the [`sampleBufferRenderer`](avsamplebufferdisplaylayer/samplebufferrenderer.md) instead.
 
-The block is expected to call the [`enqueue(_:)`](avsamplebufferdisplaylayer/enqueue(_:).md) in order to provide media data for decompression (if necessary) and rendering while the [`isReadyForMoreMediaData`](avsamplebufferdisplaylayer/isreadyformoremediadata.md) property remains [`true`](https://developer.apple.com/documentation/swift/true), or until it can provide no additional media. When the layer has decoded enough media data that it is ready for additional media data, it will invoke the block again.
+The block is expected to call the [`enqueue(_:)`](avsamplebufferdisplaylayer/enqueue(_:).md) in order to provide media data for decompression (if necessary) and rendering while the [`isReadyForMoreMediaData`](avsamplebufferdisplaylayer/isreadyformoremediadata.md) property remains [`true`](https://developer.apple.com/documentation/Swift/true), or until it can provide no additional media. When the layer has decoded enough media data that it is ready for additional media data, it will invoke the block again.
 
 By allowing the display layer to determine when to invoke the block, the implementation of incremental I/O operations is simplified when supplying synchronized media data during rendering.
 

@@ -31,7 +31,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [Canyon Crosser: Building a volumetric hike-planning app](../visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md)
   Create a hike planning app using SwiftUI and RealityKit.
-- [Capturing cinematic video](../AVFoundation/capturing-cinematic-video.md)
+- [Capturing Cinematic video](../AVFoundation/capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
 - [Capturing Spatial Audio in your iOS app](../AVFoundation/capturing-spatial-audio-in-your-ios-app.md)
   Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
@@ -41,8 +41,12 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Creating a seamless multiview playback experience](../AVFoundation/creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
+- [Drawing a triangle with Metal 4](../Metal/drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
 - [Editing Spatial Audio with an audio mix](../Cinematic/editing-spatial-audio-with-an-audio-mix.md)
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
+- [Enhancing your app’s privacy and security with quantum-secure workflows](../CryptoKit/enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows.md)
+  Use quantum-secure cryptography to protect your app from quantum attacks.
 - [Enhancing your app with machine learning-based video effects](../VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects.md)
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [Enhancing your custom text engine with Writing Tools](../AppKit/enhancing-your-custom-text-engine-with-writing-tools.md)
@@ -88,7 +92,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Processing a texture in a compute function](../Metal/processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
-  Scan a document containing a contact table and extract the content within the table in a formatted way.
+  Scan a document that contains a table and extract its content in a formatted way.
 - [Rendering hover effects in Metal immersive apps](../CompositorServices/rendering_hover_effects_in_metal_immersive_apps.md)
   Change the appearance of a rendered onscreen element when a player gazes at it.
 - [Scheduling an alarm with AlarmKit](../AlarmKit/scheduling-an-alarm-with-alarmkit.md)
@@ -99,16 +103,12 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
 - [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
-- [Tracking a handheld accessory as a virtual sculpting tool](../ARKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
-  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 - [Tracking accessories in volumetric windows](../ARKit/tracking-accessories-in-volumetric-windows.md)
   Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
+- [Tracking a handheld accessory as a virtual sculpting tool](../ARKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 - [Understanding StoreKit workflows](../StoreKit/understanding-storekit-workflows.md)
   Implement an in-app store with several product types, using StoreKit views.
-- [Using a Render Pipeline to Render Primitives](../Metal/using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Using the quantum-secure APIs](../CryptoKit/using-the-quantum-secure-apis.md)
-  Enhance your app’s privacy and security by using quantum-secure workflows.
 ### Accelerate
 - [Adding a bokeh effect to images](../Accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
@@ -173,11 +173,13 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### Accessibility
 - [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
+- [Creating Accessible Views](../swiftui/creating_accessible_views.md)
+  Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 - [Enhancing the accessibility of your SwiftUI app](../Accessibility/enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Integrating accessibility into your app](../Accessibility/integrating_accessibility_into_your_app.md)
+- [Integrating accessibility into your app](../Accessibility/integrating-accessibility-into-your-app.md)
   Make your app more accessible to users with disabilities by adding accessibility features.
 - [Responding to changes in the flashing lights setting](../MediaAccessibility/responding-to-changes-in-the-flashing-lights-setting.md)
   Adjust your UI when a person chooses to dim flashing lights on their Apple device.
@@ -200,9 +202,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Define and manage which of your app’s activities can be continued between devices.
 - [Displaying Human-Friendly Content](../foundation/displaying_human-friendly_content.md)
   Convert data into readable strings or Swift objects using formatters.
-- [Displaying Searchable Content by Using a Search Controller](../uikit/view_controllers/displaying_searchable_content_by_using_a_search_controller.md)
-  Create a user interface with searchable content in a table view.
-- [Fruta: Building a Feature-Rich App with SwiftUI](../appclip/fruta_building_a_feature-rich_app_with_swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [Increasing App Usage with Suggestions Based on User Activities](../foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities.md)
   Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
@@ -219,7 +219,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Reveal your app’s shortcuts inside the Health app.
 - [Booking Rides with SiriKit](../SiriKit/booking-rides-with-sirikit.md)
   Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
-- [Defining your app’s Focus filter](../appintents/focus/defining_your_app_s_focus_filter.md)
+- [Defining your app’s Focus filter](../AppIntents/defining-your-app-s-focus-filter.md)
   Customize your app’s behavior to reflect the device’s current Focus.
 - [Handling Payment Requests with SiriKit](../SiriKit/handling-payment-requests-with-sirikit.md)
   Add an Intent Extension to your app to handle money transfer requests with Siri.
@@ -228,7 +228,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Integrating Your App with Siri Event Suggestions](../SiriKit/integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
 - [Making your app’s functionality available to Siri](../AppIntents/making-your-app-s-functionality-available-to-siri.md)
-  Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 - [Managing Audio with SiriKit](../SiriKit/managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
 - [Providing Hands-Free App Control with Intents](../SiriKit/providing-hands-free-app-control-with-intents.md)
@@ -242,12 +242,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Implement Action Extensions to provide quick access to commonly used features of your app.
 - [Creating and Customizing the Touch Bar](../AppKit/creating-and-customizing-the-touch-bar.md)
   Adopt Touch Bar support by displaying interactive content and controls for your macOS apps.
-- [Creating self-sizing table view cells](../UIKit/creating-self-sizing-table-view-cells.md)
-  Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 - [Developing a Document-Based App](../AppKit/developing-a-document-based-app.md)
   Write an app that creates, manages, edits, and saves text documents.
-- [Implementing Modern Collection Views](../uikit/views_and_controls/collection_views/implementing_modern_collection_views.md)
-  Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [Integrating a Toolbar and Touch Bar into Your App](../AppKit/integrating-a-toolbar-and-touch-bar-into-your-app.md)
   Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
 - [Navigating Hierarchical Data Using Outline and Split Views](../AppKit/navigating-hierarchical-data-using-outline-and-split-views.md)
@@ -315,12 +311,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Find all the automation accessories in the primary home and control their state.
 - [Linking Data Between Two Core Data Stores](../CoreData/linking-data-between-two-core-data-stores.md)
   Organize data in two different stores and implement a link between them.
+- [Loading and Displaying a Large Data Feed](../swiftui/loading_and_displaying_a_large_data_feed.md)
+  Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing location-based reminders](../EventKit/managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [Offering Apple Pay in Your App](../PassKit/offering-apple-pay-in-your-app.md)
   Collect payments with iPhone and Apple Watch using Apple Pay.
 - [Refreshing and Maintaining Your App Using Background Tasks](../BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
+- [Retrieve Power and Performance Metrics and Log Insights](../AppStoreConnectAPI/retrieve-power-and-performance-metrics-and-log-insights.md)
+  Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
 - [Sharing CloudKit Data with Other iCloud Users](../CloudKit/sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
 - [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
@@ -333,7 +333,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Make remote files available in macOS and iOS, and synchronize their states by using file provider extensions.
 - [Updating your app package installer to use the new Service Management API](../ServiceManagement/updating-your-app-package-installer-to-use-the-new-service-management-api.md)
   Learn about the Service Management API with a GUI-less agent app.
-- [Visualizing your app’s data](../charts/visualizing_your_app_s_data.md)
+- [Uploading App Previews](../AppStoreConnectAPI/uploading-app-previews.md)
+  Upload your app previews, including video files, to App Store Connect by using the asset upload APIs.
+- [Visualizing your app’s data](../Charts/visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [VoIP calling with CallKit](../CallKit/voip-calling-with-callkit.md)
   Use the CallKit framework to integrate native VoIP calling.
@@ -372,8 +374,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Serialize a world-tracking session to resume it later on.
 - [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [Schema definitions for third-party DCCs](../arkit/schema_definitions_for_third-party_dccs.md)
-  Update your local USD library to add interactive and augmented reality features.
 - [Streaming an AR experience](../ARKit/streaming-an-ar-experience.md)
   Control an AR experience remotely by transferring sensor and user input over the network.
 - [Tracking and altering images](../ARKit/tracking-and-altering-images.md)
@@ -396,7 +396,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Building an Audio Server Plug-in and Driver Extension](../CoreAudio/building-an-audio-server-plug-in-and-driver-extension.md)
   Create a plug-in and driver extension to support an audio device in macOS.
 - [Building a signal generator](../AVFAudio/building-a-signal-generator.md)
-  Use an audio source node and a custom render callback to generate audio signals.
+  Generate audio signals using an audio source node and a custom render callback.
 - [Capturing stereo audio from built-In microphones](../AVFAudio/capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
 - [Capturing system audio with Core Audio taps](../CoreAudio/capturing-system-audio-with-core-audio-taps.md)
@@ -469,66 +469,56 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Simplifying User Authentication in a tvOS App](../AuthenticationServices/simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 ### AVFoundation
+- [AVCamBarcode: detecting barcodes and faces](../AVFoundation/avcambarcode-detecting-barcodes-and-faces.md)
+  Identify machine readable codes or faces by using the camera.
 - [AVCam: Building a camera app](../AVFoundation/avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [AVCamBarcode: Detecting Barcodes and Faces](../AVFoundation/avcambarcode-detecting-barcodes-and-faces.md)
-  Identify machine readable codes or faces by using the camera.
-- [AVCamFilter: Applying Filters to a Capture Stream](../AVFoundation/avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](../AVFoundation/avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](../AVFoundation/avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [Building a Signal Generator](../avfoundation/building_a_signal_generator.md)
-  Use an audio source node and a custom render callback to generate audio signals.
 - [Capturing consistent color images](../AVFoundation/capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
 - [Capturing depth using the LiDAR camera](../AVFoundation/capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [Capturing stereo audio from built-in microphones](../avfaudio/capturing_stereo_audio_from_built-in_microphones.md)
-  Configure an iOS device’s built-in microphones to add stereo-recording capabilities to your app.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](../AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Creating Custom Audio Effects](../avfoundation/creating_custom_audio_effects.md)
-  Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Debugging AVFoundation audio mixes, compositions, and video compositions](../AVFoundation/debugging-avfoundation-audio-mixes-compositions-and-video-compositions.md)
   Resolve common problems when creating compositions, video compositions, and audio mixes.
-- [Editing and Playing HDR Video](../AVFoundation/editing-and-playing-hdr-video.md)
+- [Editing and playing HDR video](../AVFoundation/editing-and-playing-hdr-video.md)
   Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
-- [Enhancing Live Video by Leveraging TrueDepth Camera Data](../AVFoundation/enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](../AVFoundation/enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
-- [Integrating AirPlay for Long-Form Video Apps](../AVFoundation/integrating-airplay-for-long-form-video-apps.md)
+- [Integrating AirPlay for long-form video apps](../AVFoundation/integrating-airplay-for-long-form-video-apps.md)
   Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
-- [Performing Offline Audio Processing](../avfoundation/performing_offline_audio_processing.md)
-  Add offline audio processing features to your app by enabling offline manual rendering mode.
-- [Playing Custom Audio with Your Own Player](../avfaudio/audio_engine/playing_custom_audio_with_your_own_player.md)
-  Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
+- [Processing spatial video with a custom video compositor](../AVFoundation/processing-spatial-video-with-a-custom-video-compositor.md)
+  Create a custom video compositor to edit spatial video for playback and export.
 - [Providing an integrated view of your timeline when playing HLS interstitials](../AVFoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
   Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 - [Reading multiview 3D video files](../AVFoundation/reading-multiview-3d-video-files.md)
   Render single images for the left eye and right eye from a multiview High Efficiency Video Coding format file by reading individual video frames.
-- [Streaming Depth Data from the TrueDepth Camera](../AVFoundation/streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](../AVFoundation/streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
 - [Supporting Continuity Camera in your macOS app](../AVFoundation/supporting-continuity-camera-in-your-macos-app.md)
   Enable high-quality photo and video capture by using an iPhone camera as an external capture device.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [Supporting remote interactions in tvOS](../AVFoundation/supporting-remote-interactions-in-tvos.md)
   Set up your app to support remote commands and events in a variety of scenarios by using the relevant approach.
-- [Using AVFoundation to play and persist HTTP Live Streams](../AVFoundation/using-avfoundation-to-play-and-persist-http-live-streams.md)
+- [Using AVFoundation to play and persist HTTP live streams](../AVFoundation/using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
-- [Using HEVC Video with Alpha](../AVFoundation/using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](../AVFoundation/using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
-- [Using Voice Processing](../avfoundation/using_voice_processing.md)
-  Add voice-processing capabilities to your app by using audio engine.
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](../AVFoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](../AVFoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 ### CoreML and CreateML
-- [Classifying Images with Vision and Core ML](../coreml/model_integration_samples/classifying_images_with_vision_and_core_ml.md)
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [Counting human body action repetitions in a live video feed](../createmlcomponents/counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](../CreateMLComponents/counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
-- [Creating a Model from Tabular Data](../createml/creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](../CreateML/creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [Detecting Human Actions in a Live Video Feed](../createml/detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Detecting human body poses in an image](../CoreML/detecting-human-body-poses-in-an-image.md)
   Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
@@ -538,41 +528,43 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add a simple model to an app, pass input data to the model, and process the model’s predictions.
 - [Personalizing a Model with On-Device Updates](../CoreML/personalizing-a-model-with-on-device-updates.md)
   Modify an updatable Core ML model by running an update task with labeled data.
-- [Understanding a Dice Roll with Vision and Object Detection](../coreml/model_integration_samples/understanding_a_dice_roll_with_vision_and_object_detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 - [Using Core ML for semantic image segmentation](../CoreML/using-core-ml-for-semantic-image-segmentation.md)
   Identify multiple objects in an image by using the DEtection TRansformer image-segmentation model.
 ### Developer tools
-- [Autosizing Views for Localization in iOS](../xcode/autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
-- [Configuring Your App to Use Alternate App Icons](../xcode/configuring_your_app_to_use_alternate_app_icons.md)
+- [Configuring your app to use alternate app icons](../Xcode/configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Creating custom modelers for intelligent instruments](../Xcode/creating-custom-modelers-for-intelligent-instruments.md)
   Create Custom Modelers with the CLIPS language and learn how the embedded rules engine works.
-- [Localization-Friendly Layouts in macOS](../xcode/localization-friendly_layouts_in_macos.md)
-  This project demonstrates localization-friendly auto layout constraints. It uses `NSGridView` as a container view to achieve localized layouts.
-- [Providing touch gesture equivalents using Touch Alternatives](../Apple-Silicon/providing-touch-gesture-equivalents-using-touch-alternatives.md)
-  Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents to your iOS app when it runs on a Mac with Apple silicon.
+- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+  This project demonstrates localization-friendly auto layout constraints.
 - [Providing an edge-to-edge, full-screen experience in your iPad app running on a Mac](../Apple-Silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md)
   Take advantage of the true native resolution of a Mac display when running your iPad app in full-screen mode on a Mac.
-- [SlothCreator: Building DocC Documentation in Xcode](../xcode/slothcreator_building_docc_documentation_in_xcode.md)
+- [Providing touch gesture equivalents using Touch Alternatives](../Apple-Silicon/providing-touch-gesture-equivalents-using-touch-alternatives.md)
+  Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents to your iOS app when it runs on a Mac with Apple silicon.
+- [SlothCreator: Building DocC documentation in Xcode](../Xcode/slothcreator-building-docc-documentation-in-xcode.md)
   Build DocC documentation for a Swift package that contains a DocC Catalog.
 ### Games
 - [Adding Recurring Leaderboards to Your Game](../GameKit/adding-recurring-leaderboards-to-your-game.md)
   Encourage competition in your games by adding leaderboards that have a duration and repeat.
 - [Creating real-time games](../GameKit/creating-real-time-games.md)
   Develop games where multiple players interact in real time.
-- [Creating tabletop games](../TabletopKit/TabletopKitSample.md)
+- [Creating tabletop games](../TabletopKit/creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [Creating turn-based games](../GameKit/creating-turn-based-games.md)
   Develop games where multiple players take turns and can exchange data while waiting for their turn.
+- [Implementing playing card overlap and physical characteristics](../TabletopKit/implementing-playing-card-overlap-and-physical-characteristics.md)
+  Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
 - [Interacting with virtual content blended with passthrough](../CompositorServices/interacting-with-virtual-content-blended-with-passthrough.md)
   Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
+- [Simulating dice rolls as a component for your game](../TabletopKit/simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [Supporting Game Controllers](../GameController/supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
 ### Graphics
-- [Building a Document Browser App for Custom File Formats](../uikit/view_controllers/building_a_document_browser_app_for_custom_file_formats.md)
-  Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 - [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building_widgets_using_widgetkit_and_swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Create a 3D model of an interior room by guiding the user through an AR experience](../RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md)
@@ -591,6 +583,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create visual effects in a scene by defining a rendering technique with custom symbols.
 - [Providing custom models for captured rooms and structure exports](../RoomPlan/providing-custom-models-for-captured-rooms-and-structure-exports.md)
   Enhance the look of an exported 3D model by substituting object bounding boxes with detailed 3D renditions.
+- [Schema definitions for third-party DCCs](../USD/schema-definitions-for-third-party-dccs.md)
+  Update your local USD library to add interactive and augmented reality features.
 - [Writing spatial photos](../ImageIO/writing-spatial-photos.md)
   Create spatial photos for visionOS by packaging a pair of left- and right-eye images as a stereo HEIC file with related spatial metadata.
 ### Health
@@ -650,29 +644,27 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Generate ray-traced images with motion blur using GPU-based parallel processing.
 - [Accelerating ray tracing using Metal](../Metal/accelerating-ray-tracing-using-metal.md)
   Implement ray-traced rendering using GPU-based parallel processing.
-- [Achieving smooth frame rates with Metal’s display link](../Metal/achieving-smooth-frame-rates-with-metal-s-display-link.md)
+- [Achieving smooth frame rates with a Metal display link](../Metal/achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
-- [Adding Custom Functions to a Shader Graph](../metalperformanceshadersgraph/adding_custom_functions_to_a_shader_graph.md)
+- [Adding custom functions to a shader graph](../MetalPerformanceShadersGraph/adding-custom-functions-to-a-shader-graph.md)
   Run your own graph functions on the GPU by building the function programmatically.
 - [Adjusting the level of detail using Metal mesh shaders](../Metal/adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Animating and Denoising a Raytraced Scene](../metalperformanceshaders/animating_and_denoising_a_raytraced_scene.md)
-  Support dynamic scenes and denoising by extending your ray tracer with Metal Performance Shaders.
 - [Applying temporal antialiasing and upscaling using MetalFX](../MetalFX/applying-temporal-antialiasing-and-upscaling-using-metalfx.md)
   Reduce render workloads while increasing image detail with MetalFX.
-- [Calculating Primitive Visibility Using Depth Testing](../Metal/calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](../Metal/calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Capturing Metal Commands Programmatically](../Metal/capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
-- [Control the Ray Tracing Process Using Intersection Queries](../Metal/control-the-ray-tracing-process-using-intersection-queries.md)
+- [Capturing Metal commands programmatically](../Metal/capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Control the ray tracing process using intersection queries](../Metal/control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
-- [Creating a 3D application with Hydra rendering](../Metal/creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](../Metal/creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
-- [Creating a Custom Metal View](../Metal/creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](../Metal/creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Creating a Metal Dynamic Library](../Metal/creating-a-metal-dynamic-library.md)
+- [Creating a Metal dynamic library](../Metal/creating-a-metal-dynamic-library.md)
   Compile a library of shaders and write it to a file as a dynamically linked library.
-- [Creating and Sampling Textures](../Metal/creating-and-sampling-textures.md)
+- [Creating and sampling textures](../Metal/creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
 - [Culling occluded geometry using the visibility result buffer](../Metal/culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
@@ -680,81 +672,81 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Implement a custom operation in PyTorch that uses Metal kernels to improve performance.
 - [Customizing a TensorFlow operation](../Metal/customizing-a-tensorflow-operation.md)
   Implement a custom operation that uses Metal kernels to accelerate neural-network training performance.
-- [Customizing Render Pass Setup](../Metal/customizing-render-pass-setup.md)
+- [Customizing render pass setup](../Metal/customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
 - [Customizing shaders using function pointers and stitching](../Metal/customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
-- [Encoding Argument Buffers on the GPU](../Metal/encoding-argument-buffers-on-the-gpu.md)
+- [Drawing a triangle with Metal 4](../Metal/drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Encoding argument buffers on the GPU](../Metal/encoding-argument-buffers-on-the-gpu.md)
   Use a compute pass to encode an argument buffer and access its arguments in a subsequent render pass.
-- [Encoding Indirect Command Buffers on the CPU](../Metal/encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](../Metal/encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Encoding Indirect Command Buffers on the GPU](../Metal/encoding-indirect-command-buffers-on-the-gpu.md)
+- [Encoding indirect command buffers on the GPU](../Metal/encoding-indirect-command-buffers-on-the-gpu.md)
   Maximize CPU to GPU parallelization by generating render commands on the GPU.
-- [Filtering Images with MPSGraph FFT Operations](../metalperformanceshadersgraph/filtering_images_with_mpsgraph_fft_operations.md)
+- [Filtering images with MPSGraph FFT operations](../MetalPerformanceShadersGraph/filtering-images-with-mpsgraph-fft-operations.md)
   Filter an image with MPSGraph fast Fourier transforms using the convolutional theorem.
-- [Implementing a Multistage Image Filter Using Heaps and Events](../Metal/implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](../Metal/implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](../Metal/implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](../Metal/implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [Implementing Order-Independent Transparency with Image Blocks](../Metal/implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](../Metal/implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](../Metal/improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
 - [Loading textures and models using Metal fast resource loading](../Metal/loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
 - [Managing groups of resources with argument buffers](../Metal/managing-groups-of-resources-with-argument-buffers.md)
   Create argument buffers to organize related resources.
-- [Migrating OpenGL Code to Metal](../Metal/migrating-opengl-code-to-metal.md)
+- [Migrating OpenGL code to Metal](../Metal/migrating-opengl-code-to-metal.md)
   Replace your app’s deprecated OpenGL code with Metal.
-- [Mixing Metal and OpenGL Rendering in a View](../Metal/mixing-metal-and-opengl-rendering-in-a-view.md)
+- [Mixing Metal and OpenGL rendering in a view](../Metal/mixing-metal-and-opengl-rendering-in-a-view.md)
   Draw with Metal and OpenGL in the same view using an interoperable texture.
-- [Modern Rendering with Metal](../Metal/modern-rendering-with-metal.md)
+- [Modern rendering with Metal](../Metal/modern-rendering-with-metal.md)
   Use advanced Metal features such as indirect command buffers, sparse textures, and variable rate rasterization to implement complex rendering techniques.
-- [Performing Calculations on a GPU](../Metal/performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](../Metal/performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 - [Processing a texture in a compute function](../Metal/processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
-- [Processing HDR Images with Metal](../Metal/processing-hdr-images-with-metal.md)
+- [Processing HDR images with Metal](../Metal/processing-hdr-images-with-metal.md)
   Implement a post-processing pipeline using the latest features on Apple GPUs.
-- [Reading Pixel Data from a Drawable Texture](../Metal/reading-pixel-data-from-a-drawable-texture.md)
+- [Reading pixel data from a drawable texture](../Metal/reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Rendering a curve primitive in a ray tracing scene](../Metal/rendering-a-curve-primitive-in-a-ray-tracing-scene.md)
   Implement ray traced rendering using GPU-based parallel processing.
-- [Rendering a Scene with Deferred Lighting in C++](../Metal/rendering-a-scene-with-deferred-lighting-in-c++.md)
+- [Rendering a scene with deferred lighting in C++](../Metal/rendering-a-scene-with-deferred-lighting-in-c++.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in Objective-C](../Metal/rendering-a-scene-with-deferred-lighting-in-objective-c.md)
+- [Rendering a scene with deferred lighting in Objective-C](../Metal/rendering-a-scene-with-deferred-lighting-in-objective-c.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in Swift](../Metal/rendering-a-scene-with-deferred-lighting-in-swift.md)
+- [Rendering a scene with deferred lighting in Swift](../Metal/rendering-a-scene-with-deferred-lighting-in-swift.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Forward Plus Lighting Using Tile Shaders](../Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
+- [Rendering a scene with forward plus lighting using tile shaders](../Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
   Implement a forward plus renderer using the latest features on Apple GPUs.
 - [Rendering reflections in real time using ray tracing](../Metal/rendering-reflections-in-real-time-using-ray-tracing.md)
   Implement realistic real-time lighting by dynamically generating reflection maps by encoding a ray-tracing compute pass.
-- [Rendering Reflections with Fewer Render Passes](../Metal/rendering-reflections-with-fewer-render-passes.md)
+- [Rendering reflections with fewer render passes](../Metal/rendering-reflections-with-fewer-render-passes.md)
   Use layer selection to reduce the number of render passes needed to generate an environment map.
-- [Rendering Terrain Dynamically with Argument Buffers](../Metal/rendering-terrain-dynamically-with-argument-buffers.md)
+- [Rendering terrain dynamically with argument buffers](../Metal/rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
-- [Selecting Device Objects for Compute Processing](../Metal/selecting-device-objects-for-compute-processing.md)
+- [Selecting device objects for compute processing](../Metal/selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
-- [Selecting Device Objects for Graphics Rendering](../Metal/selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](../Metal/selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
 - [Streaming large images with Metal sparse textures](../Metal/streaming-large-images-with-metal-sparse-textures.md)
   Limit texture memory usage for large textures by loading or unloading image detail on the basis of MIP and tile region.
 - [Supporting Simulator in a Metal app](../Metal/supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Synchronizing CPU and GPU Work](../Metal/synchronizing-cpu-and-gpu-work.md)
+- [Synchronizing CPU and GPU work](../Metal/synchronizing-cpu-and-gpu-work.md)
   Avoid stalls between CPU and GPU work by using multiple instances of a resource.
-- [Training a Neural Network using MPS Graph](../metalperformanceshadersgraph/training_a_neural_network_using_mps_graph.md)
+- [Training a neural network using MPSGraph](../MetalPerformanceShadersGraph/training-a-neural-network-using-mps-graph.md)
   Train a simple neural network digit classifier.
-- [Training a Neural Network with Metal Performance Shaders](../metalperformanceshaders/training_a_neural_network_with_metal_performance_shaders.md)
+- [Training a Neural Network with Metal Performance Shaders](../MetalPerformanceShaders/training-a-neural-network-with-metal-performance-shaders.md)
   Use an MPS neural network graph to train a simple neural network digit classifier.
-- [Using a Render Pipeline to Render Primitives](../Metal/using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Using Argument Buffers with Resource Heaps](../Metal/using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](../Metal/using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Using Function Specialization to Build Pipeline Variants](../Metal/using-function-specialization-to-build-pipeline-variants.md)
+- [Using function specialization to build pipeline variants](../Metal/using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
-- [Using Metal to Draw a View’s Contents](../Metal/using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](../Metal/using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 ### Photos and video
 - [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md)
@@ -790,7 +782,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create rendering effects by writing surface shaders and geometry modifiers.
 - [Animating entity rotation with a system](../RealityKit/animated-rotation-with-a-system.md)
   Rotate an entity around an axis using a Component and a System.
-- [Building an Immersive Experience with RealityKit](../realitykit/building_an_immersive_experience_with_realitykit.md)
+- [Bringing your SceneKit projects to RealityKit](../RealityKit/bringing-your-scenekit-projects-to-realitykit.md)
+  Adapt a platformer game for RealityKit’s powerful ECS and modularity.
+- [Building an immersive experience with RealityKit](../RealityKit/building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.
 - [Building an object reconstruction app](../RealityKit/building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
@@ -804,11 +798,11 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build efficient custom worlds for your app.
 - [Controlling Entity Collisions in RealityKit](../realitykit/controlling_entity_collisions_in_realitykit.md)
   Create collision filters to control which objects collide.
-- [Creating a game with scene understanding](../realitykit/creating_a_game_with_scene_understanding.md)
+- [Creating a game with scene understanding](../RealityKit/creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 - [Creating an App for Face-Painting in AR](../RealityKit/creating-an-app-for-face-painting-in-ar.md)
   Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
-- [Creating a Photogrammetry Command-Line App](../realitykit/creating_a_photogrammetry_command-line_app.md)
+- [Creating a photogrammetry command-line app](../RealityKit/creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
 - [Creating a Spaceship game](../RealityKit/creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
@@ -818,31 +812,35 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Secure a video player in an immersive scene with a docking region you can specify.
 - [Generating interactive geometry with RealityKit](../RealityKit/generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](../realitykit/implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](../RealityKit/implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
+- [Integrating virtual objects with your environment](../RealityKit/integrating-virtual-objects-with-your-environment.md)
+  Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
+- [Loading entities with ShaderGraph materials](../RealityComposerPro/loading-entities-with-shadergraph-materials.md)
+  Bring entities that contain materials created with Reality Composer Pro for use in your visionOS app.
 - [Presenting an artist’s scene](../RealityKit/presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
 - [Rendering a windowed game in stereo](../RealityKit/rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
+- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
 - [Responding to gestures on an entity](../RealityKit/responding-to-gestures-on-an-entity.md)
   Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Scanning objects using Object Capture](../RealityKit/scanning-objects-using-object-capture.md)
   Implement a full scanning workflow for capturing objects on iOS devices.
-- [Schema definitions for third-party DCCs](../RealityKit/schema-definitions-for-third-party-dccs.md)
-  Update your local USD library to add interactive and augmented reality features.
 - [Simulating particles in your visionOS app](../RealityKit/simulating-particles-in-your-visionos-app.md)
   Add a range of visual effects to a RealityKit view by attaching a particle emitter component to an entity.
 - [Simulating physics joints in your RealityKit app](../RealityKit/simulating-physics-joints-in-your-realitykit-app.md)
   Create realistic, connected motion using physics joints.
 - [Simulating physics with collisions in your visionOS app](../RealityKit/simulating-physics-with-collisions-in-your-visionos-app.md)
   Create entities that behave and react like physical objects in a RealityKit view.
-- [Taking Pictures for 3D Object Capture](../realitykit/taking_pictures_for_3d_object_capture.md)
-  Capture high-quality images with depth and gravity data to use with RealityKit Object Capture.
+- [Tracking a handheld accessory as a virtual sculpting tool](../RealityKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 - [Transforming entities between RealityKit coordinate spaces](../RealityKit/transforming-entities-between-realitykit-coordinate-spaces.md)
   Move an entity between a volumetric window and an immersive space using coordinate space transformations.
 - [Transforming RealityKit entities using gestures](../RealityKit/transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Using object capture assets in RealityKit](../realitykit/using_object_capture_assets_in_realitykit.md)
+- [Using object capture assets in RealityKit](../RealityKit/using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
 - [WWDC21 Challenge: Framework Freestyle](../realitykit/wwdc21_challenge_framework_freestyle.md)
   An AR experience that randomly selects a programming framework and maps it onto the user’s face.
@@ -883,27 +881,27 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Updating an App to Use Swift Concurrency](../swift/updating_an_app_to_use_swift_concurrency.md)
   Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 ### SwiftUI
-- [Add Rich Graphics to Your SwiftUI App](../swiftui/add_rich_graphics_to_your_swiftui_app.md)
+- [Add rich graphics to your SwiftUI app](../SwiftUI/add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.
 - [Adopting drag and drop using SwiftUI](../SwiftUI/Adopting-drag-and-drop-using-SwiftUI.md)
   Enable drag-and-drop interactions in lists, tables and custom views.
 - [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
-- [Bringing multiple windows to your SwiftUI app](../swiftui/bringing_multiple_windows_to_your_swiftui_app.md)
+- [Bringing multiple windows to your SwiftUI app](../SwiftUI/bringing-multiple-windows-to-your-swiftui-app.md)
   Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 - [Bringing robust navigation structure to your SwiftUI app](../SwiftUI/Bringing-robust-navigation-structure-to-your-swiftui-app.md)
   Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
 - [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [Building a Great Mac App with SwiftUI](../swiftui/building_a_great_mac_app_with_swiftui.md)
+- [Building a great Mac app with SwiftUI](../SwiftUI/building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
 - [Building custom views in SwiftUI](../swiftui/building_custom_views_in_swiftui.md)
   Create a custom view with data-driven transitions and animations in SwiftUI.
-- [Composing custom layouts with SwiftUI](../swiftui/composing_custom_layouts_with_swiftui.md)
+- [Composing custom layouts with SwiftUI](../SwiftUI/composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [Controlling the timing and movements of your animations](../SwiftUI/Controlling-the-timing-and-movements-of-your-animations.md)
   Build sophisticated animations that you control using phase and keyframe animators.
-- [Creating Accessible Views](../swiftui/creating_accessible_views.md)
+- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Creating a tvOS media catalog app in SwiftUI](../SwiftUI/Creating-a-tvOS-media-catalog-app-in-SwiftUI.md)
   Build standard content lockups and rows of content shelves for your tvOS app.
@@ -917,11 +915,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Keep your app content front and center while providing quick access to navigation using the tab bar.
 - [Focus Cookbook: Supporting and enhancing focus-driven interactions in your SwiftUI app](../SwiftUI/Focus-Cookbook-sample.md)
   Create custom focusable views with key-press handlers that accelerate keyboard input and support movement, and control focus programmatically.
-- [Food Truck: Building a SwiftUI multiplatform app](../swiftui/food_truck_building_a_swiftui_multiplatform_app.md)
+- [Food Truck: Building a SwiftUI multiplatform app](../SwiftUI/food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
-- [Fruta: Building a Feature-Rich App with SwiftUI](../appclip/fruta_building_a_feature-rich_app_with_swiftui.md)
-  Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
-- [Loading and Displaying a Large Data Feed](../swiftui/loading_and_displaying_a_large_data_feed.md)
+- [Loading and displaying a large data feed](../SwiftUI/loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing model data in your app](../SwiftUI/Managing-model-data-in-your-app.md)
   Create connections between your app’s data model and views.
@@ -929,11 +925,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Update your existing app to leverage the benefits of Observation in Swift.
 - [Monitoring data changes in your app](../SwiftUI/Monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
-- [Restoring Your App’s State with SwiftUI](../swiftui/restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 ### System
-- [Authorizing a Bluetooth accessory to share a dice roll](../accessorysetupkit/authorizing-a-bluetooth-accessory-to-share-a-dice-roll.md)
-  Discover, select, and set up a specific Bluetooth accessory without requesting permission to use Bluetooth.
 - [Building a custom peer-to-peer protocol](../Network/building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
 - [Building an NFC Tag-Reader App](../CoreNFC/building-an-nfc-tag-reader-app.md)
@@ -946,11 +940,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.
 - [Communicating with a Modem on a Serial Port](../iokit/communicating_with_a_modem_on_a_serial_port.md)
   Find and connect to a modem attached to a serial port using IOKit.
-- [Compressing and decompressing files with stream compression](../accelerate/compressing_and_decompressing_files_with_stream_compression.md)
-  Perform compression for all files and decompression for files with supported extension types.
 - [Configuring a Wi-Fi accessory to join a network](../NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network.md)
   Associate an iOS device with an accessory’s network to deliver network configuration information.
-- [Connecting a network driver](../pcidriverkit/connecting_a_network_driver.md)
+- [Connecting a network driver](../PCIDriverKit/connecting-a-network-driver.md)
   Create an Ethernet driver that interfaces with the system’s network protocol stack.
 - [Constraining a tool’s launch environment](../Security/constraining-a-tool's-launch-environment.md)
   Improve the security of your macOS app by limiting the ways its components can run.
@@ -974,7 +966,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a simple `netcat` tool that establishes network connections and transfers data.
 - [Monitoring System Events with Endpoint Security](../EndpointSecurity/monitoring-system-events-with-endpoint-security.md)
   Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
-- [Performing Common Cryptographic Operations](../cryptokit/performing_common_cryptographic_operations.md)
+- [Performing Common Cryptographic Operations](../CryptoKit/performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.
 - [Receiving Voice and Text Communications on a Local Network](../NetworkExtension/receiving-voice-and-text-communications-on-a-local-network.md)
   Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
@@ -986,7 +978,9 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Install and run macOS in a virtual machine using the Virtualization framework.
 - [Setting up and authorizing a Bluetooth accessory](../AccessorySetupKit/setting-up-and-authorizing-a-bluetooth-accessory.md)
   Discover, select, and set up a specific Bluetooth accessory without requesting permission to use Bluetooth.
-- [Storing CryptoKit Keys in the Keychain](../cryptokit/storing_cryptokit_keys_in_the_keychain.md)
+- [Sharing Wi-Fi network credentials](../WiFiInfrastructure/Sharing-Wi-Fi-network-credentials.md)
+  Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
+- [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.
 ### TV
 - [Adopting Picture in Picture Playback in tvOS](../AVKit/adopting-picture-in-picture-playback-in-tvos.md)
@@ -1092,8 +1086,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Load data for collection view cells before they display.
 - [Restoring your app’s state](../UIKit/restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [Restoring Your App’s State with SwiftUI](../swiftui/restoring_your_app_s_state_with_swiftui.md)
-  Provide app continuity for users by preserving their current activities.
 - [Selecting multiple items with a two-finger pan gesture](../UIKit/selecting-multiple-items-with-a-two-finger-pan-gesture.md)
   Accelerate user selection of multiple items using the multiselect gesture on table and collection views.
 - [Showing help tags for views and controls using tooltip interactions](../UIKit/showing-help-tags-for-views-and-controls-using-tooltip-interactions.md)
@@ -1170,17 +1162,19 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add camera-based features to enterprise apps.
 - [Adding a depth effect to text in visionOS](../visionOS/adding-a-depth-effect-to-text-in-visionOS.md)
   Create text that expands out of a window using stacked SwiftUI text views.
+- [Animating hand models in visionOS](../visionOS/animating-hand-models-in-visionOS.md)
+  Substitute a person’s hands with custom models in a fully immersive space.
 - [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [BOT-anist](../visionOS/BOT-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Building an immersive media viewing experience](../visionOS/building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
-- [Building local experiences with room tracking](../visionOS/building_local_experiences_with_room_tracking.md)
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-shapes-in-visionos-with-realitykit.md)
+- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 - [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.
@@ -1206,6 +1200,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create styled text in a window using SwiftUI.
 - [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md)
   Show video from devices connected with the Developer Strap in your visionOS app.
+- [Drawing in the air and on surfaces with a spatial stylus](../visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 - [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
@@ -1239,16 +1235,14 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
 ### Watch
-- [Building a productivity app for Apple Watch](../watchos-apps/building_a_productivity_app_for_apple_watch.md)
+- [Building a productivity app for Apple Watch](../watchOS-Apps/building-a-productivity-app-for-apple-watch.md)
   Create a watch app to manage and share a task list and visualize the status with a chart.
-- [Create accessible experiences for watchOS](../watchos-apps/create_accessible_experiences_for_watchos.md)
+- [Create accessible experiences for watchOS](../watchOS-Apps/create-accessible-experiences-for-watchos.md)
   Learn how to make your watchOS app more accessible.
 - [Creating and updating a complication’s timeline](../ClockKit/creating-and-updating-a-complication-s-timeline.md)
   Create complications that batch-load a timeline of future entries and run periodic background sessions to update the timeline.
 - [Customizing workouts with WorkoutKit](../WorkoutKit/customizing-workouts-with-workoutkit.md)
   Create, preview, and sync workouts for use in the Workout app on Apple Watch.
-- [Developing a User Interface with SwiftUI](../watchos-apps/developing_a_user_interface_with_swiftui.md)
-  Use common SwiftUI elements and watch-specific features in a comprehensive sample app.
 - [Displaying essential information on a watch face](../ClockKit/displaying-essential-information-on-a-watch-face.md)
   Implement complications in a watch app to display essential information on a watch face.
 - [Interacting with Bluetooth peripherals during background app refresh](../WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
@@ -1260,8 +1254,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Updating your app and widgets for watchOS 10](../watchOS-Apps/updating-your-app-and-widgets-for-watchos-10.md)
   Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
 ### Web
-- [Adding Context Menus in Your App](../uikit/uicontrol/adding_context_menus_in_your_app.md)
-  Provide quick access to useful actions by adding context menus to your iOS app.
 - [Adopting Declarative Content Blocking in Safari Web Extensions](../SafariServices/adopting-declarative-content-blocking-in-safari-web-extensions.md)
   Block web content with your web extension using the declarative net request API.
 - [Adopting New Safari Web Extension APIs](../SafariServices/adopting-new-safari-web-extension-apis.md)

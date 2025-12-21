@@ -35,6 +35,8 @@ It’s guaranteed to be empty when returning from that body because a task group
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
 - [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+  Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 - [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
   Wait for all of the group’s remaining tasks to complete.
 

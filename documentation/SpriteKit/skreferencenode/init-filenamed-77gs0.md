@@ -17,7 +17,6 @@ Creates a reference node from a file in the app’s main bundle.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(fileNamed fileName: String)
 ```
 

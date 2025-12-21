@@ -13,7 +13,6 @@ Huber loss computation between input logits and one-hot encoded labels.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL) async
+optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL, completionHandler: @escaping () -> Void)
 ```
 
 

@@ -22,7 +22,7 @@ var isTemporaryID: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is temporary, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Most object IDs return [`false`](https://developer.apple.com/documentation/swift/false). New objects inserted into a managed object context are assigned a temporary ID which is replaced with a permanent one once the object gets saved to a persistent store.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is temporary, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Most object IDs return [`false`](https://developer.apple.com/documentation/Swift/false). New objects inserted into a managed object context are assigned a temporary ID which is replaced with a permanent one once the object gets saved to a persistent store.
 
 ## See Also
 

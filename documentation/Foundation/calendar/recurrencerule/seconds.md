@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+On which seconds of the minute the event should repeat. Valid values between 0 and 60
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

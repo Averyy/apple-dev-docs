@@ -17,7 +17,7 @@ The first component in the vector.
 ## Declaration
 
 ```swift
-var x: Float
+var x: CGFloat
 ```
 
 ## See Also

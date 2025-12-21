@@ -17,6 +17,8 @@ object Profile
 
 ## Mentions
 
+- [Migrating managed devices](migrating-managed-devices.md)
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 - [Authenticating Through Web Views](authenticating-through-web-views.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
@@ -25,7 +27,7 @@ object Profile
 
 ### Skip Keys
 - [object SkipKeys](skipkeys.md)
-  The list of setup panes.
+  The list of skip keys for setup panes.
 
 ## See Also
 

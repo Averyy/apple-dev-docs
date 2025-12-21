@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A day of the year. For example, in the Gregorian calendar, can go from 1 to 365 or 1 to 366 in leap years.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var dayOfYear: Int? { get set }
 ```
+
+#### Discussion
+
+> **Note**: This value is interpreted in the context of the calendar in which it is used.
 
 
 ---

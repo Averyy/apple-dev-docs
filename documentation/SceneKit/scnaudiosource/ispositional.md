@@ -22,9 +22,9 @@ var isPositional: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), SceneKit mixes audio from the source based on its position relative to the scene’s [`audioListener`](scnscenerenderer/audiolistener.md) node—that is, the audio source’s volume, reverb, and other parameters automatically change depending on the distance to the listener and other objects in the scene. (To position an audio source in a scene, create an [`SCNAudioPlayer`](scnaudioplayer.md) player from the source and attach that player to an [`SCNNode`](scnnode.md) object.)
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), SceneKit mixes audio from the source based on its position relative to the scene’s [`audioListener`](scnscenerenderer/audiolistener.md) node—that is, the audio source’s volume, reverb, and other parameters automatically change depending on the distance to the listener and other objects in the scene. (To position an audio source in a scene, create an [`SCNAudioPlayer`](scnaudioplayer.md) player from the source and attach that player to an [`SCNNode`](scnnode.md) object.)
 
-If you set this property to [`false`](https://developer.apple.com/documentation/swift/false), the source’s audio plays with the same volume (and other mixing parameters) regardless of the listener’s position.
+If you set this property to [`false`](https://developer.apple.com/documentation/Swift/false), the source’s audio plays with the same volume (and other mixing parameters) regardless of the listener’s position.
 
 
 ---

@@ -22,13 +22,13 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 
 ## Parameters
 
-- `length`: The size of the threadgroup memory, in bytes. Must be a multiple of 16 bytes.
+- `length`: The size of the threadgroup memory, in bytes, which needs to be a multiple of 16 bytes.
 - `index`: The index in the threadgroup memory argument table.
 
 ## See Also
 
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
-  Sets the command’s compute pipeline state object.
+  Sets the command’s compute pipeline state.
 - [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
   Sets the size, in pixels, of the imageblock.
 - [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)

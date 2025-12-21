@@ -113,6 +113,8 @@ When a call begins or ends, the system posts a notification of the change. The a
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
 - [Responding to audio route changes](responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+  Map audio channels to specific devices in multiroute sessions for recording and playback.
 - [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
 - [class AVAudioSession](avaudiosession.md)

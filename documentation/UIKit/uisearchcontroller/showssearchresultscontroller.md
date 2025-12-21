@@ -20,7 +20,7 @@ var showsSearchResultsController: Bool { get set }
 
 #### Discussion
 
-Set this property to directly control the visibility of the search results controller. If you set this property, [`automaticallyShowsSearchResultsController`](uisearchcontroller/automaticallyshowssearchresultscontroller.md) becomes [`false`](https://developer.apple.com/documentation/swift/false).
+Set this property to directly control the visibility of the search results controller. If you set this property, [`automaticallyShowsSearchResultsController`](uisearchcontroller/automaticallyshowssearchresultscontroller.md) becomes [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

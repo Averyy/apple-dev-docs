@@ -18,11 +18,11 @@ func write(to url: URL, atomically: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the location is written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the location is written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If `atomically` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If `atomically` is [`false`](https://developer.apple.com/documentation/swift/false), the receiver is written directly to `aURL`. The [`true`](https://developer.apple.com/documentation/swift/true) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
+If `atomically` is [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If `atomically` is [`false`](https://developer.apple.com/documentation/Swift/false), the receiver is written directly to `aURL`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 The `atomically` parameter is ignored if `aURL` is not of a type that can be accessed atomically.
 

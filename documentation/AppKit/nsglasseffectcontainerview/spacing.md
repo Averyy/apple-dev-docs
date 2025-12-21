@@ -3,10 +3,10 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Controls the proximity at which descendent NSGlassViews will begin merging with eachother, if they are otherwise eligable. The default value (0) is sufficient for batch processing the effects of eligable NSGlassViews, while avoiding distortion and merging effects for views in close proximity.
+The proximity at which the glass effect container view begins merging eligible descendent glass effect views.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -14,6 +14,10 @@ Controls the proximity at which descendent NSGlassViews will begin merging with 
 @MainActor
 var spacing: CGFloat { get set }
 ```
+
+#### Discussion
+
+The default value, zero, is sufficient for batch processing eligible glass effect views, while avoiding distortion and merging effects for other views in close proximity.
 
 
 ---

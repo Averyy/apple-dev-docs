@@ -27,7 +27,7 @@ Some assets can contain references to media data stored outside the asset’s co
 
 ## Topics
 
-### Data Types
+### Data types
 - [struct AVAssetReferenceRestrictions](avassetreferencerestrictions.md)
   Restrictions to use when resolving references to external media data.
 
@@ -53,6 +53,8 @@ Some assets can contain references to media data stored outside the asset’s co
   A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
 - [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
   A value that specifies the attribution of the URLs that this asset requests.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 
 ---

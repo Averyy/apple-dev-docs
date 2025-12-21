@@ -71,21 +71,6 @@ enum ErrorCode
   One or more parameters is invalid.
 - [CredentialSession.ErrorCode.internalError](credentialsession/errorcode/internalerror.md)
   The framework encountered an internal error.
-### Inspecting error causes
-- [var failureReason: String?](credentialsession/errorcode/failurereason.md)
-  A human-readable description of the error reason.
-### Hashing
-- [func hash(into: inout Hasher)](credentialsession/errorcode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](credentialsession/errorcode/hashvalue.md)
-  The hash value.
-### Comparing error codes
-- [static func == (CredentialSession.ErrorCode, CredentialSession.ErrorCode) -> Bool](credentialsession/errorcode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](credentialsession/errorcode/equatable-implementations.md)
-- [Error Implementations](credentialsession/errorcode/error-implementations.md)
-- [LocalizedError Implementations](credentialsession/errorcode/localizederror-implementations.md)
 
 ## Relationships
 

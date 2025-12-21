@@ -21,7 +21,7 @@ typealias JSObjectHasPropertyCallback = (JSContextRef?, JSObjectRef?, JSStringRe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `object` has the property; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `object` has the property; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -31,7 +31,7 @@ If you name your function `HasProperty`, you declare it like this:
 bool HasProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName);
 ```
 
-If this function returns [`false`](https://developer.apple.com/documentation/swift/false), the [`hasProperty`](jsclassdefinition/hasproperty.md) request forwards to the object’s statically declared properties, then its parent class chain (which includes the default object class), and then its prototype chain.
+If this function returns [`false`](https://developer.apple.com/documentation/Swift/false), the [`hasProperty`](jsclassdefinition/hasproperty.md) request forwards to the object’s statically declared properties, then its parent class chain (which includes the default object class), and then its prototype chain.
 
 This callback enables optimization in cases where you only need to know a property’s existence, not its value, and computing its value is expensive.
 

@@ -10,12 +10,12 @@ Requests permission to access Crash Detection information.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 10.1+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-func requestAuthorization() async throws -> SAAuthorizationStatus
+func requestAuthorization(completionHandler handler: @escaping (SAAuthorizationStatus, (any Error)?) -> Void)
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ func requestAuthorization() async throws -> SAAuthorizationStatus
 func requestAuthorization() async throws -> SAAuthorizationStatus
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
-This method requests a person to authorize your app to receive Crash Detection events. Before requesting authorization, verify that your app already has authorization by verifying that [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method requests a person to authorize your app to receive Crash Detection events. Before requesting authorization, verify that your app already has authorization by verifying that [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

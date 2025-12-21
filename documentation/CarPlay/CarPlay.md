@@ -144,6 +144,11 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 ### Variables
 - [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](cpmaximummessageitemleadingdetailtextimagesize.md)
   Maximum size of an image for the detailed text leading image.
+### Functions
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](nsstringfromcpjunctiontype(_:).md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](nsstringfromcplanestatus(_:).md)
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](nsstringfromcpmaneuvertype(_:).md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](nsstringfromcptrafficside(_:).md)
 
 
 ---

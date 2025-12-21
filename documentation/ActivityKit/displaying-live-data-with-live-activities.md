@@ -280,7 +280,7 @@ You can tell the system to prioritize one of the `DynamicIslandExpandedRegion` v
 
 > **Note**: If content is too wide to appear in a leading position next to the TrueDepth camera, use the [`belowIfTooWide`](https://developer.apple.com/documentation/WidgetKit/DynamicIslandExpandedRegionVerticalPlacement/belowIfTooWide) modifier to render leading content below the TrueDepth camera.
 
-##### Configure How a Your Live Activity Launches You App
+##### Configure How Your Live Activity Launches Your App
 
 People tap your Live Activity to launch your app. Use deep links to take them to the scene in your app that matches the activity’s information. On Apple Watch, choose if people can open your app on iPhone or its watchOS companion by tapping your Live Activity on Apple Watch. For more information, refer to [`Launching your app from a Live Activity`](launching-your-app-from-a-live-activity.md).
 
@@ -359,7 +359,7 @@ if ActivityAuthorizationInfo().areActivitiesEnabled {
 }
 ```
 
-Your app can only start a Live Activity while your app is in the foreground. However, you can update or end a Live Activity from your app while it runs in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+In general, your app needs to be in the foreground to start a Live Activity. You can update or end a Live Activity from your app while it runs in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks). However, you can start a Live Activity while your app is in the background by using an app intent that conforms to [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent). For example, you might create a control that people place in Control Center. The control could use a `LiveActivityIntent` and starts the Live Activity in the intent’s `perform()` method. For more information about app intents, refer to [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available).
 
 ##### Schedule a Live Activity at a Specific Date
 
@@ -476,7 +476,7 @@ A person can remove your Live Activity from their Lock Screen at any time. This 
 
 ##### Keep Track of Updates
 
-When you start a Live Activity, ActivityKit returns an [`Activity`](activity.md) object. In addition to the [`id`](activity/id-swift.property.md) that uniquely identifies each activity, the [`Activity`](activity.md) offers sequences to observe content, activity state, and push token updates. Use the corresponding sequence to receive updates in your app, keep your app and Live Activities in sync, and respond to changed data:
+When you start a Live Activity, ActivityKit returns an [`Activity`](activity.md) object. In addition to the [`id`](activity/id.md) that uniquely identifies each activity, the [`Activity`](activity.md) offers sequences to observe content, activity state, and push token updates. Use the corresponding sequence to receive updates in your app, keep your app and Live Activities in sync, and respond to changed data:
 
 - To observe changes to ongoing Live Activities and to asynchronously access a Live Activity when you start it, use [`activityUpdates`](activity/activityupdates-swift.type.property.md).
 - To observe the state of an ongoing Live Activity — for example, to determine whether it’s active or has ended — use [`activityStateUpdates`](activity/activitystateupdates-swift.property.md).
@@ -505,8 +505,8 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
 Starting a Live Activity from an app intent is almost the same as adopting [`App Intents`](https://developer.apple.com/documentation/AppIntents) to expose other functionality in your app:
 
 1. Adopt the App Intents framework as described in [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available).
-2. When you implement your app intent that starts the Live Activity, make sure it inherits from [`LiveActivityStartingIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityStartingIntent).
-3. In your [`LiveActivityStartingIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityStartingIntent) implementation, add code to start the Live Activity.
+2. When you implement your app intent that starts the Live Activity, make sure it inherits from [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent).
+3. In your `LiveActivityIntent` implementation, add code to start the Live Activity.
 
 ## See Also
 

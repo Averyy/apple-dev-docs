@@ -153,7 +153,7 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 - [var style: PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.property.md)
   The formatting style of the receiver.
 - [var isPhonetic: Bool](personnamecomponentsformatter/isphonetic.md)
-  A Boolean value that specifies whether the receiver should use only the phonetic representations of name components. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+  A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 ### Converting Between Person Name Components and Strings
 - [class func localizedString(from: PersonNameComponents, style: PersonNameComponentsFormatter.Style, options: PersonNameComponentsFormatter.Options) -> String](personnamecomponentsformatter/localizedstring(from:style:options:).md)
   Returns a string formatted for a given `NSPersonNameComponents` object using the provided style and options.

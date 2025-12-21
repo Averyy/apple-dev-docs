@@ -23,9 +23,6 @@ The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`cap
 
 ## Topics
 
-### Operators
-- [static func == (StructureBuilder.BuildError, StructureBuilder.BuildError) -> Bool](structurebuilder/builderror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [StructureBuilder.BuildError.deviceNotSupported](structurebuilder/builderror/devicenotsupported.md)
   An error that indicates that the framework doesn’t support the user’s device.
@@ -42,15 +39,6 @@ The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`cap
 ### Instance Properties
 - [var errorDescription: String?](structurebuilder/builderror/errordescription.md)
   A human-readable explanation of the error.
-- [var hashValue: Int](structurebuilder/builderror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](structurebuilder/builderror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](structurebuilder/builderror/equatable-implementations.md)
-- [Error Implementations](structurebuilder/builderror/error-implementations.md)
-- [LocalizedError Implementations](structurebuilder/builderror/localizederror-implementations.md)
 
 ## Relationships
 

@@ -21,8 +21,8 @@ class UISlider
 ## Mentions
 
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Responding to control-based events using target-action](responding-to-control-based-events-using-target-action.md)
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
+- [Responding to control-based events using target-action](responding-to-control-based-events-using-target-action.md)
 
 #### Overview
 
@@ -43,7 +43,7 @@ To add a slider to your interface:
 
 Sliders use the target-action design pattern to notify your app when the user moves the slider. To be notified when the slider’s value changes, register your action method with the [`valueChanged`](uicontrol/event/valuechanged.md) event. At runtime, the slider calls your method in response to the user changing the slider’s value.
 
-By default, the slider sends value-changed events continuously as the user moves the slider’s thumb control. Setting the [`isContinuous`](uislider/iscontinuous.md) property to [`false`](https://developer.apple.com/documentation/swift/false) causes the slider to send an event only when the user releases the slider’s thumb control, setting the final value.
+By default, the slider sends value-changed events continuously as the user moves the slider’s thumb control. Setting the [`isContinuous`](uislider/iscontinuous.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) causes the slider to send an event only when the user releases the slider’s thumb control, setting the final value.
 
 You connect a slider to your action method by using the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method or by creating a connection in Interface Builder. The signature of an action method takes one of three forms, as shown in the following code. Choose the form that provides the information that you need to respond to the value change in the slider.
 

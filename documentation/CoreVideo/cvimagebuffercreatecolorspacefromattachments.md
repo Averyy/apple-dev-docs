@@ -31,7 +31,7 @@ To generate a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGra
 1. [`kCVImageBufferICCProfileKey`](kcvimagebuffericcprofilekey.md)
 2. [`kCVImageBufferColorPrimariesKey`](kcvimagebuffercolorprimarieskey.md), [`kCVImageBufferTransferFunctionKey`](kcvimagebuffertransferfunctionkey.md), [`kCVImageBufferYCbCrMatrixKey`](kcvimagebufferycbcrmatrixkey.md), and possibly [`kCVImageBufferGammaLevelKey`](kcvimagebuffergammalevelkey.md)
 
-Use [`CGColorSpaceRelease`](https://developer.apple.com/documentation/coregraphics/1408855-cgcolorspacerelease) to release the color space when you’re done with it.
+Use [`CGColorSpaceRelease`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceRelease) to release the color space when you’re done with it.
 
 ## Parameters
 

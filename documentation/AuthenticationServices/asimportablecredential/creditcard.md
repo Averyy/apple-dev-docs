@@ -6,11 +6,11 @@
 A type to represent credit card information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,9 +24,6 @@ This type is a representation of `CreditCard` as defined in the Credential Excha
 
 ## Topics
 
-### Creating a credit card instance
-- [init(number: ASImportableEditableField?, fullName: ASImportableEditableField?, cardType: ASImportableEditableField?, verificationNumber: ASImportableEditableField?, expiryDate: ASImportableEditableField?, validFrom: ASImportableEditableField?)](asimportablecredential/creditcard/init(number:fullname:cardtype:verificationnumber:expirydate:validfrom:).md)
-  Creates a credit card instance.
 ### Accessing credit card properties
 - [var number: ASImportableEditableField?](asimportablecredential/creditcard/number.md)
   The card number.
@@ -40,6 +37,11 @@ This type is a representation of `CreditCard` as defined in the Credential Excha
   The expiration date, if any, in MM/DD format.
 - [var validFrom: ASImportableEditableField?](asimportablecredential/creditcard/validfrom.md)
   The date from which the card is valid, if any.
+### Initializers
+- [init(number: ASImportableEditableField?, fullName: ASImportableEditableField?, cardType: ASImportableEditableField?, verificationNumber: ASImportableEditableField?, pin: ASImportableEditableField?, expiryDate: ASImportableEditableField?, validFrom: ASImportableEditableField?)](asimportablecredential/creditcard/init(number:fullname:cardtype:verificationnumber:pin:expirydate:validfrom:).md)
+### Instance Properties
+- [var pin: ASImportableEditableField?](asimportablecredential/creditcard/pin.md)
+  Optional: The PIN number.
 
 ## Relationships
 

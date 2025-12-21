@@ -48,7 +48,7 @@ When your app starts standard location services in the foreground, they continue
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
 - [NSLocationWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground.
+  A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
 
 ## See Also
 
@@ -65,7 +65,7 @@ When your app starts standard location services in the foreground, they continue
 - [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 
 
 ---

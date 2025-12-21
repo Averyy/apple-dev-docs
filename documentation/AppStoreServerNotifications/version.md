@@ -23,7 +23,7 @@ For more information about App Store Server Notification changes, see [`App Stor
 ## See Also
 
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 - [type signedDate](signeddate.md)

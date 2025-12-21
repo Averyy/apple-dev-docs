@@ -12,7 +12,7 @@ Before you can publish content to Apple News, you must submit information about 
 
 Choose the process that works best with your publishing model, your content management system (CMS), and your business:
 
-- Use the doc:apple-news-api to deliver and publish Apple News Format articles to News.
+- Use the [`Apple News API`](https://developer.apple.com/documentation/applenewsapi) to deliver and publish Apple News Format articles to News.
 - Work with [`Apple News preferred providers`](https://developer.apple.comhttps://developer.apple.com/go/?id=news-providers).
 - Use a third-party solution from the table below.
 

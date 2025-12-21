@@ -25,18 +25,6 @@ enum AxisExtremum
 ### Enumeration Cases
 - [AxisExtremum.maximum](axisextremum/maximum.md)
 - [AxisExtremum.minimum](axisextremum/minimum.md)
-### Initializers
-- [init?(rawValue: Int)](axisextremum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](axisextremum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [AxisExtremum.RawValue](axisextremum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](axisextremum/equatable-implementations.md)
-- [RawRepresentable Implementations](axisextremum/rawrepresentable-implementations.md)
 
 ## Relationships
 

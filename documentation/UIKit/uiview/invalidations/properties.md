@@ -4,10 +4,10 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 - Swift 5.1+
 
@@ -30,7 +30,7 @@ struct Properties
 ## See Also
 
 - [func updateProperties()](uiview/updateproperties.md)
-  Override point for subclasses to update properties of this view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+  Configures the view’s content and styling properties before layout.
 - [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
   Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
 - [func updatePropertiesIfNeeded()](uiview/updatepropertiesifneeded.md)

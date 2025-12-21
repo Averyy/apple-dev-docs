@@ -6,19 +6,19 @@
 The cellular service identifier associated with the notification.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
-let cellularServiceID: CellularServiceID
+var cellularServiceID: CellularServiceID { get }
 ```
 
 ## See Also
 
-- [let messageID: MMSMessageID](mmsservice/incomingmessagenotification/messageid.md)
+- [var messageID: MMSMessageID](mmsservice/incomingmessagenotification/messageid.md)
   The identifier of the incoming message.
 
 

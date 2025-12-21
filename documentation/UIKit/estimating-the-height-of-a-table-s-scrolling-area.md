@@ -23,7 +23,7 @@ The example code below computes the estimated height for table rows of different
 ```swift
 let cellMarginSize :CGFloat  = 4.0
 override func tableView(_ tableView: UITableView, 
-         estimatedHeightForRowAt indexPath: IndexPaDon’t CGFloat {
+         estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
    // Choose an appropriate default cell size.
    var cellSize = UITableView.automaticDimension
         

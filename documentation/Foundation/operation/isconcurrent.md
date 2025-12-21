@@ -24,7 +24,7 @@ var isConcurrent: Bool { get }
 
 Use the [`isAsynchronous`](operation/isasynchronous.md) property instead.
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for operations that run asynchronously with respect to the current thread or [`false`](https://developer.apple.com/documentation/swift/false) for operations that run synchronously on the current thread. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) for operations that run asynchronously with respect to the current thread or [`false`](https://developer.apple.com/documentation/Swift/false) for operations that run synchronously on the current thread. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 In macOS 10.6 and later, operation queues ignore the value in this property and always start operations on a separate thread.
 

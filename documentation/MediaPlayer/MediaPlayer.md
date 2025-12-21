@@ -35,7 +35,7 @@ You can’t play video media items directly using the Media Player framework. To
 
 ### Essentials
 - [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s media library.
+  A message that tells people why the app is requesting access to their media library.
 ### Built-in music playback
 - [Playing audio using the built-in music player](playing-audio-using-the-built-in-music-player.md)
   Create a media player inside your app to play audio from the user’s media library.
@@ -75,6 +75,8 @@ You can’t play video media items directly using the Media Player framework. To
 - [class MPMusicPlayerQueueDescriptor](mpmusicplayerqueuedescriptor.md)
   The abstract base class for audio media item and store queue descriptors.
 ### Media items and playlists
+- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+  Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
 - [class MPMediaItem](mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
@@ -126,10 +128,6 @@ You can’t play video media items directly using the Media Player framework. To
 ### Media player errors
 - [struct MPError](mperror.md)
   A structure that represents a framework error.
-- [MPError.Code](mperror/code.md)
-  An enumeration that represents error codes for framework operations.
-- [let MPErrorDomain: String](mperrordomain.md)
-  The Media Player framework error domain.
 ### Deprecated
 - [Deprecated types](deprecated-types.md)
   Review deprecated symbols and avoid using them in your app.

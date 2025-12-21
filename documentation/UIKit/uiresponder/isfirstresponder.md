@@ -21,7 +21,7 @@ var isFirstResponder: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder is the first responder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the responder is the first responder; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

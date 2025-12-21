@@ -11,7 +11,7 @@ The amount of padding, in CSS pixels, to inset the map from the left edge.
 ## Declaration
 
 ```swift
-attribute number left;
+left: number;
 ```
 
 ## See Also

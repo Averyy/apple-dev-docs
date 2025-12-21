@@ -18,11 +18,6 @@ An error returned by the ImageCaptureCore framework.
 let ICErrorDomain: String
 ```
 
-## See Also
-
-- [ICLegacyReturn](iclegacyreturn.md)
-  A legacy error returned from ImageCaptureCore.
-
 
 ---
 

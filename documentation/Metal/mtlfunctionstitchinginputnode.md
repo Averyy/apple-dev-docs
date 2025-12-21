@@ -25,10 +25,10 @@ An input node contains data from one of the stitched function’s parameters. Th
 
 ## Topics
 
-### Initializing an Input Node
+### Initializing an input node
 - [init(argumentIndex: Int)](mtlfunctionstitchinginputnode/init(argumentindex:).md)
   Creates a new input node.
-### Configuring an Input Node
+### Configuring an input node
 - [var argumentIndex: Int](mtlfunctionstitchinginputnode/argumentindex.md)
   The index in the command’s buffer argument table that declares which data to read for this input node.
 

@@ -22,7 +22,7 @@ var autoreverses: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the receiver plays backwards after playing forwards. Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+When [`true`](https://developer.apple.com/documentation/Swift/true), the receiver plays backwards after playing forwards. Defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

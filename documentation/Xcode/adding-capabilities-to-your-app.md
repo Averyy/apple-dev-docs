@@ -50,6 +50,7 @@ For more guidance on specific capabilities, see the table below:
 | Associated Domains | [`Configuring an associated domain`](configuring-an-associated-domain.md) |
 | Background Modes | [`Configuring background execution modes`](configuring-background-execution-modes.md) |
 | ClassKit | [`Enabling ClassKit in your app`](https://developer.apple.com/documentation/ClassKit/enabling-classkit-in-your-app) |
+| Family Controls | [`Configuring Family Controls`](configuring-family-controls.md) |
 | Fonts | [`Configuring custom fonts`](configuring-custom-fonts.md) |
 | Game Controllers | [`Configuring game controllers`](configuring-game-controllers.md) |
 | Group Activities | [`Configuring Group Activities`](configuring-group-activities.md) |

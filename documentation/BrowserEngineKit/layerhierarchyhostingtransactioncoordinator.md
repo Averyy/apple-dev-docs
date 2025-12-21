@@ -40,10 +40,10 @@ class LayerHierarchyHostingTransactionCoordinator
   `commit` must be called on  instance and it must be the last call to each instance. note that it does not commit `CATransaction`s but rather commits the coordination of transactions in the render server. note that coordinators should have as constrained a lifespan as possible and will timeout if held open too long.
 ### Initializers
 - [init(port: mach_port_t, data: Data) throws](layerhierarchyhostingtransactioncoordinator/init(port:data:).md)
-  takes ownership of the port right (even if it returns nil).
+  Decodes a coordinator form a `mach_port_t` send right and its accompanying metadata.
 ### Instance Methods
 - [func encode((mach_port_t, Data) -> Void)](layerhierarchyhostingtransactioncoordinator/encode(_:).md)
-  passes a copy of the send right or `MACH_PORT_NULL` if inert. the receiver is responsible for disposing of `copiedPort`. the port and data should be consumed together and  once by `init(port:data:)`.
+  Encodes the coordinator into a `mach_port_t` send right and its accompanying metadata.
 
 ## Relationships
 

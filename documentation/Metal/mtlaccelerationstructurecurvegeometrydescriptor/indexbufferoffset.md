@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The offset, in bytes, to the index data in the buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var indexBufferOffset: Int { get set }
 ```
+
+#### Discussion
+
+The offset needs to be a multiple of the index data type you configure with the [`indexType`](mtlaccelerationstructurecurvegeometrydescriptor/indextype.md) property. You also need to align the offset to both the index type’s size and the platform’s buffer alignment requirement.
 
 
 ---

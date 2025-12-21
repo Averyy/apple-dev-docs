@@ -27,14 +27,14 @@ Use memoryless resources for temporary elements used only within a single pass. 
 
 On Metal devices that support tile rendering, you can use imageblocks to manage transient rendering data more flexibly. For more information about imageblock memory and using it with your shader functions, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) sections 2.11, 4.5, and 5.6.
 
-For more guidance on how to choose storage modes, see [`Setting Resource Storage Modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ## See Also
 
 - [static var storageModeShared: MTLResourceOptions](mtlresourceoptions/storagemodeshared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
 - [static var storageModeManaged: MTLResourceOptions](mtlresourceoptions/storagemodemanaged.md)
-  The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+  The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 - [static var storageModePrivate: MTLResourceOptions](mtlresourceoptions/storagemodeprivate.md)
   The resource is only available to the GPU.
 

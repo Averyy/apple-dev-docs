@@ -1,4 +1,4 @@
-# Setting Color Properties for a Specific Resolution
+# Setting color properties for a specific resolution
 
 **Framework**: AVFoundation
 

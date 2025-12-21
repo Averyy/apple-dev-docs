@@ -14,7 +14,7 @@ A reference to an ABAddressBook object.
 ## Declaration
 
 ```swift
-typealias ABAddressBook = CFTypeRef
+class ABAddressBookRef
 ```
 
 ## Relationships

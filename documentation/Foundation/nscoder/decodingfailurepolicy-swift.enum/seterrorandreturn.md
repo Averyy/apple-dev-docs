@@ -30,8 +30,6 @@ Use this policy if you know that all encoded objects use [`failWithError(_:)`](n
 
 - [NSCoder.DecodingFailurePolicy.raiseException](nscoder/decodingfailurepolicy-swift.enum/raiseexception.md)
   A failure policy that directs the coder to raise an exception.
-- [NSCoder.DecodingFailurePolicy.raiseException](nscoder/decodingfailurepolicy-swift.enum/raiseexception.md)
-  A failure policy that directs the coder to raise an exception.
 
 
 ---

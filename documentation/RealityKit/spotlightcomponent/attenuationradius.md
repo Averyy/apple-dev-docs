@@ -10,7 +10,7 @@ The distance from the light source where its intensity reaches zero.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -33,6 +33,8 @@ See [`SpotLightComponent`](spotlightcomponent.md) for more information about how
   The inner angle of the spotlight in degrees.
 - [var outerAngleInDegrees: Float](spotlightcomponent/outerangleindegrees.md)
   The outer angle of the spotlight in degrees.
+- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent.md)
+  The exponent value for the light’s intensity falloff-transition curve.
 
 
 ---

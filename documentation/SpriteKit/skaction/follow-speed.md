@@ -26,7 +26,7 @@ A new action object.
 
 #### Discussion
 
-Calling this method is equivalent to calling the [`follow(_:asOffset:orientToPath:speed:)`](skaction/follow(_:asoffset:orienttopath:speed:).md) method, passing in [`true`](https://developer.apple.com/documentation/swift/true) to both the `offset` and `orient` parameters.
+Calling this method is equivalent to calling the [`follow(_:asOffset:orientToPath:speed:)`](skaction/follow(_:asoffset:orienttopath:speed:).md) method, passing in [`true`](https://developer.apple.com/documentation/Swift/true) to both the `offset` and `orient` parameters.
 
 This action is reversible; the resulting action creates and then follows a reversed path with the same speed.
 

@@ -21,9 +21,9 @@ func VTCompressionSessionGetTimeRangesForNextPass(_ session: VTCompressionSessio
 
 #### Discussion
 
-If [`VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)`](vtcompressionsessionendpass(_:furtherpassesrequestedout:_:).md) sets `furtherPassesRequestedOut` to [`true`](https://developer.apple.com/documentation/swift/true), call this function to find out the time ranges for the next pass.  Source frames outside these time ranges should be skipped. Each time range includes any frame at its start time and does not include any frame at its end time.
+If [`VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)`](vtcompressionsessionendpass(_:furtherpassesrequestedout:_:).md) sets `furtherPassesRequestedOut` to [`true`](https://developer.apple.com/documentation/Swift/true), call this function to find out the time ranges for the next pass.  Source frames outside these time ranges should be skipped. Each time range includes any frame at its start time and does not include any frame at its end time.
 
-It’s an error to call this function when multipass encoding has not been enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md), or when `VTCompressionSessionEndPass` did not set f`urtherPassesRequestedOut` to [`true`](https://developer.apple.com/documentation/swift/true).
+It’s an error to call this function when multipass encoding has not been enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md), or when `VTCompressionSessionEndPass` did not set f`urtherPassesRequestedOut` to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

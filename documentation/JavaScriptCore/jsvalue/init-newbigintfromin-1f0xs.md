@@ -23,6 +23,8 @@ The JSValue representing a JavaScript value with type BigInt.
 
 #### Discussion
 
+Create a new BigInt value from a numeric string.
+
 This is equivalent to calling the BigInt constructor from JavaScript with a string argument.
 
 ## Parameters

@@ -36,6 +36,8 @@ class Detent
   The identifier of the detent.
 - [UISheetPresentationController.Detent.Identifier](uisheetpresentationcontroller/detent/identifier-swift.struct.md)
   Constants that identify system detent sizes.
+### Instance Properties
+- [var backgroundEffect: UIVisualEffect?](uisheetpresentationcontroller/detent/backgroundeffect.md)
 
 ## Relationships
 

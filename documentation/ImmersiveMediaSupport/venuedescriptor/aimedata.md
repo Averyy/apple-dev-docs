@@ -6,7 +6,7 @@
 Property holding the complete static metadata needed for the immersive media playback.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ final var aimeData: Data? { get throws }
 ## See Also
 
 - [func save(to: URL) throws](venuedescriptor/save(to:).md)
-  Generates an AIME file at the specified location
+  Generates an AIME file at the specified location.
 
 
 ---

@@ -26,16 +26,11 @@ Note that these are only used when an image, not a symbol name, is specified. Wh
 
 ## Topics
 
-### Operators
-- [static func == (DisplayRepresentation.Image.DisplayStyle, DisplayRepresentation.Image.DisplayStyle) -> Bool](displayrepresentation/image-swift.struct/displaystyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Type Properties
 - [static var circular: DisplayRepresentation.Image.DisplayStyle](displayrepresentation/image-swift.struct/displaystyle/circular.md)
   Display this representation in a circle.
 - [static var `default`: DisplayRepresentation.Image.DisplayStyle](displayrepresentation/image-swift.struct/displaystyle/default.md)
   Display this representation in the default style.
-### Default Implementations
-- [Equatable Implementations](displayrepresentation/image-swift.struct/displaystyle/equatable-implementations.md)
 
 ## Relationships
 

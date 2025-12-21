@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The number of bytes per row of pixels in the input image data.
+The bytes per row of the CPU memory that your Core Image Processor Kernel can read pixelsfrom.
 
 **Availability**:
 - iOS 10.0+
@@ -23,9 +23,9 @@ var bytesPerRow: Int { get }
 ## See Also
 
 - [var region: CGRect](ciimageprocessorinput/region.md)
-  The area within the input image to be processed.
+  The rectangular region of the input image that your Core Image Processor Kernel can use to provide the output.
 - [var format: CIFormat](ciimageprocessorinput/format.md)
-  The per-pixel data format of the image to be processed.
+  The pixel format of the CPU memory that your Core Image Processor Kernel can read pixels from.
 
 
 ---

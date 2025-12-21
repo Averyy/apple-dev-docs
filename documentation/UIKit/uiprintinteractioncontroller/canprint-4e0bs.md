@@ -20,7 +20,7 @@ class func canPrint(_ data: Data) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if UIKit can print the contents of the data object, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The method returns [`false`](https://developer.apple.com/documentation/swift/false) if `data` is PDF data that specifies that printing is not allowed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if UIKit can print the contents of the data object, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The method returns [`false`](https://developer.apple.com/documentation/Swift/false) if `data` is PDF data that specifies that printing is not allowed.
 
 #### Discussion
 

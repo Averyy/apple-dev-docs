@@ -13,7 +13,6 @@ An operation that calculates the element-wise fused multiply-add of its three in
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

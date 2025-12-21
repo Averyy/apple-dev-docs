@@ -18,6 +18,8 @@ object BetaAppClipInvocationsResponse
 
 - [object BuildBundle](buildbundle.md)
   The data structure that represents Build Bundles resource.
+- [type BuildBundleType](buildbundletype.md)
+  A string that represents the possible components of a build bundle.
 - [object AppClipDomainStatus](appclipdomainstatus.md)
   The data structure that represents the App Clip Domain Statuses resource.
 - [object BuildBundleFileSize](buildbundlefilesize.md)

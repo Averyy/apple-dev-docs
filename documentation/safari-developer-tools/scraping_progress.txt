@@ -1,4 +1,4 @@
 Completed scraping Safari Developer Features!
-Total pages scraped: 17
+Total pages scraped: 19
 Pages skipped (unchanged): 1
 Pages failed: 0

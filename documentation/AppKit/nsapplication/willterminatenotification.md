@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Sends a notification to termintate the app.
+Sends a notification to terminate the app.
 
 **Availability**:
 - macOS ?+
@@ -16,9 +16,9 @@ class let willTerminateNotification: NSNotification.Name
 
 #### Discussion
 
-Posted by the [`terminate(_:)`](nsapplication/terminate(_:).md) method, the notification is only posted if the delegate method [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md) returns [`true`](https://developer.apple.com/documentation/swift/true). The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
+The system posts this notification on the main actor in response to the [`terminate(_:)`](nsapplication/terminate(_:).md) method, and only posted if the delegate method [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true). The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
 
-> **Note**:  This notification isn’t sent during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
+> **Note**:  This notification isn’t sent during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo#Support-Sudden-Termination) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
 
 ## See Also
 

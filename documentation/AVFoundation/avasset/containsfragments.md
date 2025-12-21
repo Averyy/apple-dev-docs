@@ -20,7 +20,7 @@ var containsFragments: Bool { get }
 
 #### Discussion
 
-For QuickTime movie files and MPEG-4 files, the value is [`true`](https://developer.apple.com/documentation/swift/true) if [`canContainFragments`](avasset/cancontainfragments.md) is [`true`](https://developer.apple.com/documentation/swift/true) and at least one `moof` box is present after the `moov` box.
+For QuickTime movie files and MPEG-4 files, the value is [`true`](https://developer.apple.com/documentation/Swift/true) if [`canContainFragments`](avasset/cancontainfragments.md) is [`true`](https://developer.apple.com/documentation/Swift/true) and at least one `moof` box is present after the `moov` box.
 
 
 ---

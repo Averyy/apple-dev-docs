@@ -26,8 +26,8 @@ func makeTransformer() -> Estimator.Transformer
   Fits a transformer to a data frame.
 - [func update(inout UpdatableTabularEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](updatabletabularestimatortosupervisedadaptor/update(_:with:eventhandler:).md)
   Updates a transformer with a new data frame containing examples.
-- [UpdatableTabularEstimatorToSupervisedAdaptor.Transformer](updatabletabularestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

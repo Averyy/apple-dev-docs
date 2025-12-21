@@ -6,7 +6,7 @@
 Both position and orientation are tracked, but with low accuracy.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

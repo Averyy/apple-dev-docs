@@ -8,7 +8,7 @@ Leverage the Metal Performance Shaders framework to create special rendering eff
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
-One way to implement postprocess effects is to apply filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework to the rendered scene. You can use apply these filters to an image without writing any custom shader code. Because these filters run on the GPU and operate directly on Metal textures, they’re a good choice for postprocessing effects.
+One way to implement postprocess effects is to apply filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders) framework to the rendered scene. You can use apply these filters to an image without writing any custom shader code. Because these filters run on the GPU and operate directly on Metal textures, they’re a good choice for postprocessing effects.
 
 If the Metal Performance Shaders framework doesn’t provide an image filter that meets your needs, you can also use Core Image to postprocess frames. Core Image provides a greater selection of image filters, which also run on the GPU, but Core Image requires you to convert the rendered frame into a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage). For more information, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
 
@@ -40,11 +40,11 @@ To apply the effect, register the function as the [`postProcess`](arview/renderc
 arView.renderCallbacks.postProcess = postEffectMPSGaussianBlur
 ```
 
-> **Note**: For more information on using Metal Performance Shader framework image filters to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code project.
+> **Note**: For more information on using Metal Performance Shader framework image filters to create postprocess effects, see the [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md) sample code project.
 
 ## See Also
 
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
   Make sure your postprocess effect works on all devices.

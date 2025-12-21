@@ -22,8 +22,8 @@ let kSecAttrLabel: CFString
 
 ## Mentions
 
-- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
 - [Adding a password to the keychain](adding-a-password-to-the-keychain.md)
+- [Storing a Certificate in the Keychain](storing-a-certificate-in-the-keychain.md)
 
 #### Discussion
 

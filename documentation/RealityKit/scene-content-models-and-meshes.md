@@ -31,7 +31,7 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
 - [struct MeshInstancesComponent](meshinstancescomponent.md)
-  A component that performs GPU instancing on the ModelComponent on the same Entity.
+  A component that performs GPU instancing on the model of the same entity.
 ### Static meshes
 - [struct MeshDescriptor](meshdescriptor.md)
   Defines a 3D mesh’s structure and data.
@@ -39,6 +39,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Indicates which primitive shape type a mesh applies to its vertex indices.
 - [MeshDescriptor.Materials](meshdescriptor/materials-swift.enum.md)
 ### Updatable meshes
+- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+  Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
@@ -64,6 +66,22 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   An axis-aligned bounding box (AABB).
 - [struct OrientedBoundingBox](orientedboundingbox.md)
   Representation for an oriented bounding box. Uses a combination of an axis-aligned bounding box and a rotation vector around the centroid of the said axis-aligned bounding box to represent an oriented bounding box.
+### Text generation options
+- [MeshResource.GenerateTextOptions](meshresource/generatetextoptions.md)
+  A type that determines the configuration for rendering text in 2D, before it is extruded.
+- [MeshResource.Font](meshresource/font.md)
+  A platform-specific type that represents a font for use in generating a text mesh.
+### 2D path extrusion for 3D mesh creation
+- [MeshResource.ShapeExtrusionOptions](meshresource/shapeextrusionoptions.md)
+  A type that determines the extrusion, chamfering, and material assignment of an extruded shape.
+- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.struct.md)
+  A type that determines the material assignments for each part of an extruded shape.
+- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
+  Determines which part of the extrusion to chamfer.
+- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/curvestrokeresolution.md)
+  Designates the resolution at which a smooth curve is discretized.
+- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
+  The options that determine the way in which to extrude a swept shape in 3D.
 ### Mesh description
 - [struct MeshBuffer](meshbuffer.md)
   Mesh buffer containing elements of any type.
@@ -82,10 +100,25 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
 - [struct MeshPartCollection](meshpartcollection.md)
   An object that holds a collection of mesh parts.
 ### Mesh skeletons
+- [MeshResource.Skeleton](meshresource/skeleton.md)
+  A skeleton consists of a hierarchy of joints. Each joint defines a coordinate space. Portions of a model may be thought of as having a position in a joint’s local space.
+- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
+  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
 - [struct MeshSkeletonCollection](meshskeletoncollection.md)
   An object that holds a collection of skeletons used by a mesh resource.
 - [struct MeshJointInfluence](meshjointinfluence.md)
   A binding to a joint, which consists of the joint’s index and the weight of that joint’s influence on a vertex.
+- [MeshResource.JointInfluences](meshresource/jointinfluences.md)
+  A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
+### Mesh resource data
+- [MeshResource.Contents](meshresource/contents-swift.struct.md)
+  Value of the contents of the resource.
+- [MeshResource.Instance](meshresource/instance.md)
+  An object that transforms a model to a location.
+- [MeshResource.Model](meshresource/model.md)
+  A model consists of a list of parts.
+- [MeshResource.Part](meshresource/part.md)
+  A part of a model consisting of a single material.
 ### Blend shape management
 - [struct BlendShapeWeightsComponent](blendshapeweightscomponent.md)
   A component that provides access to the current weights associated with all blend shape meshes on an entity.
@@ -105,6 +138,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -113,6 +148,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
 - [Anchors](scene-content-anchors.md)

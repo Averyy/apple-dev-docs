@@ -17,7 +17,7 @@ var isZoomed: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window is in a zoomed state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window is in a zoomed state; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The zoomed state of the window is determined using the following steps:
 

@@ -13,6 +13,10 @@
 enum Preset
 ```
 
+#### Overview
+
+Client can use SCStreamConfigurationPreset to create SCStreamConfiguration with suggested values of properties for various use cases
+
 ## Topics
 
 ### Enumeration Cases
@@ -37,6 +41,7 @@ enum Preset
 ## See Also
 
 - [enum SCCaptureDynamicRange](sccapturedynamicrange.md)
+  Specifies whether the captured screen output is standard or high dynamic range.
 
 
 ---

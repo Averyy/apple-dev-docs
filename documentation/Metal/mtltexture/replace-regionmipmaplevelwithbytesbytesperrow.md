@@ -22,14 +22,14 @@ func replace(region: MTLRegion, mipmapLevel level: Int, withBytes pixelBytes: Un
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Optimizing texture data](optimizing-texture-data.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 
-This method runs on the CPU and immediately copies the pixel data into the texture. It doesn’t synchronize against any GPU accesses to the texture. Ensure all operations that write or render to the texture complete before reading the texture’s contents, using one of the following methods:
+This method runs on the CPU and immediately copies the pixel data into the texture. It doesn’t synchronize against any GPU memory operations to the texture. Ensure all operations that write or render to the texture complete before reading the texture’s contents using one of the following methods:
 
 - Synchronize on the GPU with a [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) or [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) command in an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md).
 - Synchronize on the CPU with a callback passed to the [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md) method to handle completion asynchronously, or the [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) method to block thread execution until the GPU work completes.
@@ -40,7 +40,7 @@ To copy your data to a private texture, copy your data to a temporary texture wi
 
 ## Parameters
 
-- `region`: The location of a block of pixels in the texture slice. The region must be within the dimensions of the slice.
+- `region`: The location of a block of pixels in the texture slice. The region needs to be within the dimensions of the slice.
 - `level`: A zero-indexed value that specifies which mipmap level is the destination. If the texture doesn’t have mipmaps, use  .
 - `pixelBytes`: A pointer to the bytes in memory to copy.
 - `bytesPerRow`: Nonzero values smaller than the texture width or not a multiple of the pixel size cause an error.

@@ -21,7 +21,7 @@ static var recognized: UIGestureRecognizer.State { get }
 ## Mentions
 
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
-- [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
 
 #### Discussion
 

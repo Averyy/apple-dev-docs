@@ -23,17 +23,20 @@ When you create a color well programmatically or in Interface Builder, specify t
 
 ## Topics
 
-### Creating a Color Well
+### Creating a color well
 - [convenience init(style: NSColorWell.Style)](nscolorwell/init(style:).md)
   Creates a color well that adopts the specified appearance style.
-### Managing the Selected Color
+### Managing the selected color
 - [var color: NSColor](nscolorwell/color.md)
   The currently selected color for the color well.
 - [func takeColorFrom(Any?)](nscolorwell/takecolorfrom(_:).md)
   Changes the currently selected color to the color of the specified object.
 - [var supportsAlpha: Bool](nscolorwell/supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
-### Configuring the Appearance
+### Supporting high dynamic range (HDR) colors
+- [var maximumLinearExposure: CGFloat](nscolorwell/maximumlinearexposure.md)
+  The maximum linear exposure a color in this color well can be set to. Defaults to 1 and ignores any value less than 1. If set to a value >= 2, the color picked for this well may have a linear exposure applied to it.
+### Configuring the appearance
 - [var colorWellStyle: NSColorWell.Style](nscolorwell/colorwellstyle.md)
   The appearance and interaction style to apply to the color well.
 - [NSColorWell.Style](nscolorwell/style.md)
@@ -42,17 +45,17 @@ When you create a color well programmatically or in Interface Builder, specify t
   The image to display on the button portion of a color well that adopts the expanded style.
 - [var isBordered: Bool](nscolorwell/isbordered.md)
   A Boolean value that determines whether the color well has a border.
-### Activating and Deactivating Color Wells
+### Activating and deactivating color wells
 - [func activate(Bool)](nscolorwell/activate(_:).md)
   Activates the color well, displays the color panel, and synchronizes the two UI elements.
 - [var isActive: Bool](nscolorwell/isactive.md)
   A Boolean value that indicates whether the color well is currently active.
 - [func deactivate()](nscolorwell/deactivate.md)
   Deactivates the color well.
-### Drawing Color Wells
+### Drawing color wells
 - [func drawWell(inside: NSRect)](nscolorwell/drawwell(inside:).md)
   Draws the area inside the color well at the specified location without drawing borders.
-### Customizing the Color Selection Behavior
+### Customizing the color selection behavior
 - [var pulldownAction: Selector?](nscolorwell/pulldownaction.md)
   The action to perform when someone clicks in the color area of the color well.
 - [var pulldownTarget: AnyObject?](nscolorwell/pulldowntarget.md)

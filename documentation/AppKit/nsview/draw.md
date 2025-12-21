@@ -23,7 +23,7 @@ The default implementation does nothing. Subclasses should override this method 
 
 If your custom view is a direct `NSView` subclass, you do not need to call `super`. For all other views, call `super` at some point in your implementation so that the parent class can perform any additional drawing.
 
-> ❗ **Important**:  If the view’s [`isOpaque`](nsview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the view must completely fill the `dirtyRect` rectangle with opaque content.
+> ❗ **Important**:  If the view’s [`isOpaque`](nsview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the view must completely fill the `dirtyRect` rectangle with opaque content.
 
 For information about how to draw in your app, see [`Cocoa Drawing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290).
 

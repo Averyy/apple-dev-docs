@@ -6,8 +6,8 @@
 Marks the view as a view that activates content protection during scene capture events, such as screenshots, screen recordings, screensharing, etc.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

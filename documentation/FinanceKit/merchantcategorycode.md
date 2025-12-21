@@ -19,16 +19,11 @@ struct MerchantCategoryCode
 - [init(rawValue: Int16)](merchantcategorycode/init(rawvalue:).md)
   Creates a merchant category code with the provided value.
 ### Instance Properties
-- [let rawValue: Int16](merchantcategorycode/rawvalue-swift.property.md)
+- [let rawValue: Int16](merchantcategorycode/rawvalue.md)
   A integer that represents the raw value of a merchant category code.
-### Type Aliases
-- [MerchantCategoryCode.RawValue](merchantcategorycode/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations
 - [CustomStringConvertible Implementations](merchantcategorycode/customstringconvertible-implementations.md)
-- [Equatable Implementations](merchantcategorycode/equatable-implementations.md)
 - [LosslessStringConvertible Implementations](merchantcategorycode/losslessstringconvertible-implementations.md)
-- [RawRepresentable Implementations](merchantcategorycode/rawrepresentable-implementations.md)
 
 ## Relationships
 

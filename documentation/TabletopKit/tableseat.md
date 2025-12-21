@@ -61,6 +61,8 @@ To render seats using RealityKit, conform to the [`EntityTableSeat`](entitytable
 
 ## See Also
 
+- [struct TableState](tablestate.md)
+  The state of the table that can be queried and modified.
 - [protocol EntityTableSeat](entitytableseat.md)
   A protocol for seats at the table that you render using RealityKit.
 - [struct TableSeatIdentifier](tableseatidentifier.md)

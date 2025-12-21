@@ -6,7 +6,7 @@
 Creates a 3D representation of the image if one does not already exist.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,6 +19,12 @@ func generate() async throws
 This method checks for cancellation of an enclosing `Task` during generation, and cancels its own async generation early (by throwing an error) if task cancellation is detected.
 
 > **Note**: Throws an error if the underlying monoscopic image does not contain valid data to generate a spatial 3D representation; or if a spatial 3D representation has already been generated.
+
+Also throws an error if the image size does not meet the following requirements:
+
+- At least 320 pixels on its shortest side
+- At most 16,384 pixels on its largest side
+- Aspect ratio between 1:3 and 3:1
 
 
 ---

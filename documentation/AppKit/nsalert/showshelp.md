@@ -17,7 +17,7 @@ var showsHelp: Bool { get set }
 
 #### Discussion
 
-Set this property’s value to [`true`](https://developer.apple.com/documentation/swift/true) to specify that the alert has a help button, or [`false`](https://developer.apple.com/documentation/swift/false) to specify it does not.
+Set this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true) to specify that the alert has a help button, or [`false`](https://developer.apple.com/documentation/Swift/false) to specify it does not.
 
 When a user clicks an alert’s help button, the alert delegate ([`delegate`](nsalert/delegate.md)) receives an [`alertShowHelp(_:)`](nsalertdelegate/alertshowhelp(_:).md) message. The delegate is responsible for displaying the help information related to this particular alert.
 
@@ -25,7 +25,7 @@ Clicking an alert’s help button can alternately cause the [`openHelpAnchor(_:i
 
 - There is no alert delegate.
 - The alert delegate does not implement [`alertShowHelp(_:)`](nsalertdelegate/alertshowhelp(_:).md).
-- The alert delegate implements [`alertShowHelp(_:)`](nsalertdelegate/alertshowhelp(_:).md) but returns [`false`](https://developer.apple.com/documentation/swift/false). When this is the case, an exception is raised if no help anchor is set.
+- The alert delegate implements [`alertShowHelp(_:)`](nsalertdelegate/alertshowhelp(_:).md) but returns [`false`](https://developer.apple.com/documentation/Swift/false). When this is the case, an exception is raised if no help anchor is set.
 
 ## See Also
 

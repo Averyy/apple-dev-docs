@@ -21,7 +21,7 @@ var isStreamingContent: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the designated content item is identified as being streamable.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the designated content item is identified as being streamable.
 
 ## See Also
 

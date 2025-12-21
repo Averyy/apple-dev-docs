@@ -18,7 +18,7 @@ var allowsVOIP: Bool { get }
 
 #### Discussion
 
-A read-only Boolean value that is [`true`](https://developer.apple.com/documentation/swift/true) if the carrier allows making VoIP calls on its network, or [`false`](https://developer.apple.com/documentation/swift/false) if not.
+A read-only Boolean value that is [`true`](https://developer.apple.com/documentation/Swift/true) if the carrier allows making VoIP calls on its network, or [`false`](https://developer.apple.com/documentation/Swift/false) if not.
 
 If you configure a device for a carrier and then remove the SIM card, this property retains the Boolean value indicating the carrier’s policy regarding VoIP. If you then install a new SIM card, its VoIP policy Boolean replaces the previous value of this property.
 

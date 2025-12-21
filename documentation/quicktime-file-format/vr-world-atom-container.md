@@ -5,9 +5,6 @@
 
 An atom that contains name for the entire scene, the default node ID, and default imaging properties, as well as a list of the nodes contained in the QTVR track.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The VR world atom container (VR world for short) includes such information as the name for the entire scene, the default node ID, and default imaging properties, as well as a list of the nodes contained in the QTVR track.

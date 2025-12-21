@@ -53,8 +53,8 @@ The Foundation framework provides a base layer of functionality for apps and fra
   Create, read, write, and examine files and folders in the file system.
 - [Archives and Serialization](archives-and-serialization.md)
   Convert objects and values to and from property list, JSON, and other flat binary representations.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [Spotlight](spotlight.md)
   Search for files and other items on the local device, and index your app’s content for searching.
 - [iCloud](icloud.md)
@@ -79,16 +79,66 @@ The Foundation framework provides a base layer of functionality for apps and fra
 - [Foundation Enumerations](foundation-enumerations.md)
 - [Foundation Data Types](foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
+### Articles
+- [allocWithZone:](1807189-allocwithzone.md)
+  Returns an instance of the `NSMachPort` class.
+- [init](1808546-init.md)
+  Returns an initialized `NSOperation` object.
+- [initWithCoefficient:constant](1864803-initwithcoefficient.md)
+  Initializes the unit converter with the coefficient and constant you specify.
+- [intersectSet:](1807012-intersectset.md)
+  Removes from the receiving set each object that isn’t a member of another given set.
+- [isEqual:](1806686-isequal.md)
+  Returns a Boolean value that indicates whether the receiver and a given object have identical URL strings and base URLs.
+- [minusSet:](1807010-minusset.md)
+  Removes each object in another given set from the receiving set, if present.
+- [NSJavaBundleCleanup](1806670-nsjavabundlecleanup.md)
+  This function has been deprecated.
+- [NSJavaBundleSetup](1806677-nsjavabundlesetup.md)
+  This function has been deprecated.
+- [NSJavaClassesForBundle](1806687-nsjavaclassesforbundle.md)
+  Loads the Java classes located in the specified bundle.
+- [NSJavaClassesFromPath](1806697-nsjavaclassesfrompath.md)
+  Loads the Java classes located at the specified path.
+- [NSJavaDidCreateVirtualMachineNotification](nsjavadidcreatevirtualmachinenotification.md)
+  Notification sent after the Java virtual machine is created.
+- [NSJavaDidSetupVirtualMachineNotification](nsjavadidsetupvirtualmachinenotification.md)
+  Notification sent after the Java virtual machine is set up.
+- [NSJavaNeedsToLoadClasses](1806703-nsjavaneedstoloadclasses.md)
+  Returns a Boolean value that indicates whether a virtual machine is needed or if Java classes are provided.
+- [NSJavaNeedsVirtualMachine](1806712-nsjavaneedsvirtualmachine.md)
+  Returns a Boolean value that indicates whether a Java virtual machine is required.
+- [NSJavaObjectNamedInPath](1806720-nsjavaobjectnamedinpath.md)
+  Creates an instance of the named class using the class loader previously specified at the given path.
+- [NSJavaProvidesClasses](1806727-nsjavaprovidesclasses.md)
+  Returns a Boolean value that indicates whether Java classes are provided.
+- [NSJavaSetup](1806733-nsjavasetup.md)
+  Loads the Java virtual machine with specified parameters.
+- [NSJavaSetupVirtualMachine](1806737-nsjavasetupvirtualmachine.md)
+  Sets up the Java virtual machine.
+- [NSJavaWillCreateVirtualMachineNotification](nsjavawillcreatevirtualmachinenotification.md)
+  Notification sent before the Java virtual machine is created.
+- [NSJavaWillSetupVirtualMachineNotification](nsjavawillsetupvirtualmachinenotification.md)
+  Notification sent before the Java virtual machine is set up.
+- [NSLocaleSensitivePredicateOption](nslocalesensitivepredicateoption.md)
+  Indicates that strings to be compared using `<`, `<=`, `=`, `=>`, `>` should be handled in a locale-aware fashion.
+- [NSMaxXEdge](nsmaxxedge.md)
+  The maximum X edge. This is equivalent to [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/maxXEdge).
+- [NSMaxYEdge](nsmaxyedge.md)
+  The maximum X edge. This is equivalent to [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/maxXEdge).
+- [NSMinXEdge](nsminxedge.md)
+  The minimum X edge. This is equivalent to [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minXEdge).
+- [NSMinYEdge](nsminyedge.md)
+  The minimum Y edge. This is equivalent to [`CGRectEdge.minYEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minYEdge).
+- [objCType](1807278-objctype.md)
+  Returns a C string containing the Objective-C type of the data contained in the number object.
+- [setURI:](1806643-seturi.md)
+  Sets the URI of the receiver.
+- [unionSet:](1807006-unionset.md)
+  Adds each object in another given set to the receiving set, if not present.
 ### Structures
 - [struct DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
   A discontiguous portion of an attributed string.
-- [struct NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols.md)
-### Macros
-- [macro bundle() -> Bundle](bundle().md)
-  Returns the bundle most likely to contain resources for the calling code.
-### Enumerations
-- [enum NSFileManagerResumeSyncBehavior](nsfilemanagerresumesyncbehavior.md)
-- [enum NSFileManagerUploadLocalVersionConflictPolicy](nsfilemanageruploadlocalversionconflictpolicy.md)
 
 
 ---

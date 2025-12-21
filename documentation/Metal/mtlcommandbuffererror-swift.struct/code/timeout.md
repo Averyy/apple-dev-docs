@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 
 **Availability**:
 - iOS 8.0+
@@ -18,6 +18,13 @@ An error code that indicates the system interrupted and terminated the command b
 ```swift
 case timeout
 ```
+
+#### Discussion
+
+Possible causes include:
+
+- The commands in the buffer took more time to run than the system allows.
+- The command buffer timed out waiting for another workload to signal an [`MTLEvent`](mtlevent.md).
 
 ## See Also
 
@@ -41,16 +48,6 @@ case timeout
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 - [MTLCommandBufferError.Code.internal](mtlcommandbuffererror-swift.struct/code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
-  An error code that represents the absence of any problems.
-- [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
-  An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
-  An error code that indicates a process doesn’t have access to a GPU device.
-- [MTLCommandBufferError.Code.outOfMemory](mtlcommandbuffererror-swift.struct/code/outofmemory.md)
-  An error code that indicates the GPU device doesn’t have sufficient memory to execute a command buffer.
-- [MTLCommandBufferError.Code.invalidResource](mtlcommandbuffererror-swift.struct/code/invalidresource.md)
-  An error code that indicates the command buffer has an invalid reference to resource.
 
 
 ---

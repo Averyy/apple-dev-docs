@@ -17,11 +17,11 @@ func isLeafItem(_ item: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item is a leaf item; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item is a leaf item; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method may return [`false`](https://developer.apple.com/documentation/swift/false) if the item has never been displayed in the browser or accessed via [`item(at:)`](nsbrowser/item(at:).md). Overriding this method has no effect. It may be used only if the browser’s delegate implements the item data source methods.
+This method may return [`false`](https://developer.apple.com/documentation/Swift/false) if the item has never been displayed in the browser or accessed via [`item(at:)`](nsbrowser/item(at:).md). Overriding this method has no effect. It may be used only if the browser’s delegate implements the item data source methods.
 
 ## Parameters
 

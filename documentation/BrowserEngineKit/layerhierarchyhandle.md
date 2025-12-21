@@ -30,10 +30,10 @@ class LayerHierarchyHandle
   Creates an object representing this handle that you send to another process in an XPC message.
 ### Initializers
 - [init(port: mach_port_t, data: Data) throws](layerhierarchyhandle/init(port:data:).md)
-  takes ownership of the port right (even if it returns nil).
+  Decodes a handle form a `mach_port_t` send right and its accompanying metadata.
 ### Instance Methods
 - [func encode((mach_port_t, Data) -> Void)](layerhierarchyhandle/encode(_:).md)
-  passes a copy of the send right or `MACH_PORT_NULL` if inert. the receiver is responsible for disposing of `copiedPort`. the port and data should be consumed together and  once by `init(port:data:)`.
+  Encodes the handle into a `mach_port_t` send right and its accompanying metadata.
 
 ## Relationships
 

@@ -17,7 +17,7 @@ The color of newly spawned particles. Animatable.
 ## Declaration
 
 ```swift
-var particleColor: UIColor { get set }
+var particleColor: NSColor { get set }
 ```
 
 #### Discussion

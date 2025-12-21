@@ -22,7 +22,7 @@ func dealloc()
 
 #### Discussion
 
-This method behaves as described in the `NSObject` class specification under the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) instance method.
+This method behaves as described in the `NSObject` class specification under the [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) instance method.
 
 ## See Also
 

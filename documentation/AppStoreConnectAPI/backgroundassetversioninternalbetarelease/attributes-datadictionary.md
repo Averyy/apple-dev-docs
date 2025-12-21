@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a background asset version internal beta release resource.
+
 **Availability**:
 - App Store Connect API 4.0+
 

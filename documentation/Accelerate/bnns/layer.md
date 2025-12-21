@@ -13,7 +13,6 @@ The base class for layer objects that wrap filters and manage deinitialization.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

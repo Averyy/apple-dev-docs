@@ -22,7 +22,7 @@ enum Status
 
 ## Topics
 
-### Player Item Statuses
+### Player item statuses
 - [AVPlayerItem.Status.unknown](avplayeritem/status-swift.enum/unknown.md)
   The item’s status is unknown.
 - [AVPlayerItem.Status.readyToPlay](avplayeritem/status-swift.enum/readytoplay.md)

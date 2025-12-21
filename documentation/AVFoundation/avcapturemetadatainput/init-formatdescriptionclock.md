@@ -20,7 +20,7 @@ init(formatDescription desc: CMMetadataFormatDescription, clock: CMClock)
 ## Parameters
 
 - `desc`: A   that defines the metadata to be supplied by the client. Throws   if   is passed.
-- `clock`: A  doc://com.apple.documentation/documentation/coremedia/cmclock-u5q  that provides the timebase for the supplied samples. Throws   if   is passed.
+- `clock`: A   that provides the timebase for the supplied samples. Throws   if   is passed.
 
 
 ---

@@ -21,16 +21,17 @@ Asks the delegate whether to continue or abandon the rename process.
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to continue the rename process; [`false`](https://developer.apple.com/documentation/swift/false) to cancel the rename process.
+[`true`](https://developer.apple.com/documentation/Swift/true) to continue the rename process; [`false`](https://developer.apple.com/documentation/Swift/false) to cancel the rename process.
 
 #### Discussion
 
-Implement this method to return [`false`](https://developer.apple.com/documentation/swift/false) to prevent renaming.
+Implement this method to return [`false`](https://developer.apple.com/documentation/Swift/false) to prevent renaming.
 
-> ❗ **Important**:  UIKit might not call this method in certain situations, like when the system pushes a new navigation item onto the navigation bar. In these situations, UIKit calls [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) instead. Therefore, make sure to implement [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) to handle the cases when [`navigationItem(_:shouldEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:).md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+> ❗ **Important**:  UIKit might not call this method in certain situations, like when the system pushes a new navigation item onto the navigation bar. In these situations, UIKit calls [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) instead. Therefore, make sure to implement [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) to handle the cases when [`navigationItem(_:shouldEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:).md) returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
+- `_`: The navigation item attempting to continue the rename process.
 - `title`: The new title of the navigation item.
 
 ## See Also

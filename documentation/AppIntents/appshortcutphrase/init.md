@@ -18,15 +18,6 @@
 init(_ value: String)
 ```
 
-## See Also
-
-- [init(stringLiteral: String)](appshortcutphrase/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-- [init(stringInterpolation: AppShortcutPhrase<Intent>.StringInterpolation)](appshortcutphrase/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [AppShortcutPhrase.StringInterpolation](appshortcutphrase/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
-
 
 ---
 

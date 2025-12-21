@@ -30,14 +30,6 @@ static var completed: NSRegularExpression.MatchingFlags { get }
   Set when the current match depended on the location of the end of the search range.
 - [static var internalError: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/internalerror.md)
   Set when matching failed due to an internal error.
-- [static var progress: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/progress.md)
-  Set when the Block is called to report progress during a long-running match operation.
-- [static var hitEnd: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/hitend.md)
-  Set when the current match operation reached the end of the search range.
-- [static var requiredEnd: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/requiredend.md)
-  Set when the current match depended on the location of the end of the search range.
-- [static var internalError: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/internalerror.md)
-  Set when matching failed due to an internal error.
 
 
 ---

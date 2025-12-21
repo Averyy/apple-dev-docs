@@ -17,9 +17,9 @@ func performClose(_ sender: Any?)
 
 #### Discussion
 
-If the window’s delegate or the window itself implements [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md), the window sends that message with the window as the argument. The window sends only one such message; if both the delegate and the window implement the method, the delegate receives the message. If the [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the window doesn’t close. If neither the window nor the delegate implement [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md), or it returns [`true`](https://developer.apple.com/documentation/swift/true), this method invokes [`close()`](nswindow/close().md) to close the window.
+If the window’s delegate or the window itself implements [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md), the window sends that message with the window as the argument. The window sends only one such message; if both the delegate and the window implement the method, the delegate receives the message. If the [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) method returns [`false`](https://developer.apple.com/documentation/Swift/false), the window doesn’t close. If neither the window nor the delegate implement [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md), or it returns [`true`](https://developer.apple.com/documentation/Swift/true), this method invokes [`close()`](nswindow/close().md) to close the window.
 
-If the window doesn’t have a close button or can’t close (for example, if the delegate replies [`false`](https://developer.apple.com/documentation/swift/false) to a [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) message), the system emits the alert sound.
+If the window doesn’t have a close button or can’t close (for example, if the delegate replies [`false`](https://developer.apple.com/documentation/Swift/false) to a [`windowShouldClose(_:)`](nswindowdelegate/windowshouldclose(_:).md) message), the system emits the alert sound.
 
 ## Parameters
 

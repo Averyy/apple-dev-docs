@@ -21,7 +21,7 @@ protocol AVAssetWriterDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Responding to Segment Output
+### Responding to segment output
 - [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:).md)
   Tells the delegate that the asset writer output segment data.
 - [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:segmentreport:).md)

@@ -20,7 +20,7 @@ optional func toolbar(_ toolbar: NSToolbar, itemIdentifier: NSToolbarItem.Identi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the toolbar to place the item at the specified location, or [`false`](https://developer.apple.com/documentation/swift/false) to prevent the toolbar from placing the item in that location.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the toolbar to place the item at the specified location, or [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the toolbar from placing the item in that location.
 
 #### Discussion
 

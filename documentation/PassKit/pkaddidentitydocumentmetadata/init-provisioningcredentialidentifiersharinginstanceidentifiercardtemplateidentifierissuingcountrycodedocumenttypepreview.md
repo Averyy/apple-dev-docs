@@ -6,11 +6,11 @@
 Creates the identity document metadata with parameters that the issuer’s server configures to indicate the specific product instance to provision.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS ?+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -111,7 +111,7 @@ On return, `dftOutputInterleaved` contains the DFT result in the interleaved for
 
 vDSP provides routines for DFTs directly on interleaved data. Use these functions instead of using [`vDSP_ctoz`](vdsp_ctoz.md) and [`vDSP_ztoc`](vdsp_ztoc.md) to convert between interleaved and split formats.
 
-The following code performs the transform from the [`Performing Fourier transforms on interleaved-complex data`](performing-fourier-transforms-on-interleaved-complex-data.md) section directly on the interleaved data:
+The following code performs the transform from the [`Performing Fourier transforms on interleaved-complex data`](performing-fourier-transforms-on-interleaved-complex-data#Perform-a-Fourier-transform-on-split-data.md) section directly on the interleaved data:
 
 ```swift
 var interleavedOutput = [DSPComplex](repeating: DSPComplex(real: 0, imag: 0),

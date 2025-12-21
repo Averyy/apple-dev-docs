@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is delivered through an inhaler.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

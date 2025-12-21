@@ -21,30 +21,30 @@ struct MTLResourceOptions
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
 
 ## Topics
 
-### Initializing Resource Options
+### Initializing resource options
 - [init(rawValue: UInt)](mtlresourceoptions/init(rawvalue:).md)
-### Specifying CPU Cache Modes
+### Specifying CPU cache modes
 - [static var cpuCacheModeWriteCombined: MTLResourceOptions](mtlresourceoptions/cpucachemodewritecombined.md)
   A write-combined CPU cache mode that is optimized for resources that the CPU writes into, but never reads.
-### Specifying Storage Modes
+### Specifying storage modes
 - [static var storageModeShared: MTLResourceOptions](mtlresourceoptions/storagemodeshared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
 - [static var storageModeManaged: MTLResourceOptions](mtlresourceoptions/storagemodemanaged.md)
-  The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+  The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 - [static var storageModePrivate: MTLResourceOptions](mtlresourceoptions/storagemodeprivate.md)
   The resource is only available to the GPU.
 - [static var storageModeMemoryless: MTLResourceOptions](mtlresourceoptions/storagemodememoryless.md)
   The resource’s contents are only available to the GPU, and only exist temporarily during a render pass.
-### Specifying Hazard Tracking
+### Specifying hazard tracking
 - [static var hazardTrackingModeTracked: MTLResourceOptions](mtlresourceoptions/hazardtrackingmodetracked.md)
-  An option specifying that Metal prevents hazards when modifying this object’s contents.
+  An option that instructs Metal to apply safeguards for a resource at runtime to avoid memory hazards for the applicable commands.
 - [static var hazardTrackingModeUntracked: MTLResourceOptions](mtlresourceoptions/hazardtrackingmodeuntracked.md)
-  An option specifying that the app must prevent hazards when modifying this object’s contents.
-### Deprecated Options
+  A resource option that instructs Metal to ignore memory hazards for a resource at runtime.
+### Deprecated options
 - [static var optionCPUCacheModeWriteCombined: MTLResourceOptions](mtlresourceoptions/optioncpucachemodewritecombined.md)
   This constant was deprecated in iOS 9.0 and macOS 10.11.
 
@@ -62,6 +62,8 @@ struct MTLResourceOptions
 
 ## See Also
 
+- [typealias MTLGPUAddress](mtlgpuaddress.md)
+  A 64-bit unsigned integer type appropriate for storing GPU addresses.
 - [protocol MTLAllocation](mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
 - [protocol MTLResource](mtlresource.md)

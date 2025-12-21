@@ -6,12 +6,12 @@
 A resource representing a multi-dimensional array that you can use with machine learning workloads.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -32,7 +32,7 @@ protocol MTLTensor : MTLResource
   An array of sizes, in elements, one for each dimension of this tensor.
 - [var gpuResourceID: MTLResourceID](mtltensor/gpuresourceid.md)
   A handle that represents the GPU resource, which you can store in an argument buffer.
-- [var strides: MTLTensorExtents](mtltensor/strides.md)
+- [var strides: MTLTensorExtents?](mtltensor/strides.md)
   An array of strides, in elements, one for each dimension of this tensor.
 - [var usage: MTLTensorUsage](mtltensor/usage.md)
   A set of contexts in which you can use this tensor.
@@ -63,7 +63,8 @@ protocol MTLTensor : MTLResource
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
-- [enum MTLTensorError](mtltensorerror.md)
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
 - [enum MTLTensorDataType](mtltensordatatype.md)
   The possible data types for the elements of a tensor.

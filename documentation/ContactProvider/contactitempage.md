@@ -31,16 +31,6 @@ You can break an enumeration of all contact items into multiple pages to reduce 
   An offset from the page’s generation marker.
 - [static let initialPage: ContactItemPage](contactitempage/initialpage.md)
   A static value the system uses to indicate the start of a new content enumeration.
-### Encoding and decoding
-- [init(from: any Decoder) throws](contactitempage/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](contactitempage/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing contact item pages
-- [static func == (ContactItemPage, ContactItemPage) -> Bool](contactitempage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](contactitempage/equatable-implementations.md)
 
 ## Relationships
 

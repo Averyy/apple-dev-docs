@@ -14,12 +14,12 @@
 ## Declaration
 
 ```swift
-func MTL4BufferRangeMake(_ bufferAddress: UInt64, _ length: UInt64) -> MTL4BufferRange
+func MTL4BufferRangeMake(_ bufferAddress: MTLGPUAddress, _ length: UInt64) -> MTL4BufferRange
 ```
 
 #### Discussion
 
-(uint64_t)-1 represents the the range from the given address to the end of the buffer.
+Create a buffer range from a buffer’s GPU address (given by the gpuAddress property) and length. A length of (uint64_t)-1 represents the the range from the given address to the end of the buffer.
 
 ## See Also
 

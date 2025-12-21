@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+For use in a UI list or menu item.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -22,6 +24,7 @@ static var listItem: FormatStyleCapitalizationContext { get }
 
 - [static var unknown: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/unknown.md)
 - [static var standalone: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/standalone.md)
+  For stand-alone usage, such as an isolated name on a calendar page.
 - [static var beginningOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/beginningofsentence.md)
 - [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
 

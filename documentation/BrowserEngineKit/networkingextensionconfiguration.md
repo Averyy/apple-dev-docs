@@ -15,12 +15,6 @@
 @preconcurrency struct NetworkingExtensionConfiguration
 ```
 
-## Topics
-
-### Instance Methods
-- [func accept(connection: NSXPCConnection) -> Bool](networkingextensionconfiguration/accept(connection:).md)
-  A method the system calls when a host app tries to connect.
-
 ## Relationships
 
 ### Conforms To

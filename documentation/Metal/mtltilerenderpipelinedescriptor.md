@@ -21,38 +21,38 @@ class MTLTileRenderPipelineDescriptor
 
 ## Topics
 
-### Identifying the Render Pipeline
+### Identifying the render pipeline
 - [var label: String?](mtltilerenderpipelinedescriptor/label.md)
   A string that identifies the tile pipeline descriptor.
-### Specifying Graphics Functions and Associated Data
+### Specifying graphics functions and associated data
 - [var tileFunction: any MTLFunction](mtltilerenderpipelinedescriptor/tilefunction.md)
   The compute kernel or fragment function the pipeline calls.
 - [var tileBuffers: MTLPipelineBufferDescriptorArray](mtltilerenderpipelinedescriptor/tilebuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s tile function.
 - [var maxCallStackDepth: Int](mtltilerenderpipelinedescriptor/maxcallstackdepth.md)
-  The maximum function call depth from the top-most shader function.
-### Specifying Rasterization and Visibility State
+  The maximum call stack depth for indirect function calls in tile shaders.
+### Specifying rasterization and visibility state
 - [var threadgroupSizeMatchesTileSize: Bool](mtltilerenderpipelinedescriptor/threadgroupsizematchestilesize.md)
   A Boolean value that indicates whether all threadgroups for this pipeline completely cover tiles.
 - [var rasterSampleCount: Int](mtltilerenderpipelinedescriptor/rastersamplecount.md)
   The number of samples in each fragment.
-### Specifying Rendering Pipeline State
+### Specifying rendering pipeline state
 - [func reset()](mtltilerenderpipelinedescriptor/reset.md)
   Specifies the default rendering pipeline state values for the descriptor.
 - [var colorAttachments: MTLTileRenderPipelineColorAttachmentDescriptorArray](mtltilerenderpipelinedescriptor/colorattachments.md)
   An array of attachments that store color data.
-### Specifying Threads per Threadgroup
+### Specifying threads per threadgroup
 - [var maxTotalThreadsPerThreadgroup: Int](mtltilerenderpipelinedescriptor/maxtotalthreadsperthreadgroup.md)
   The maximum number of threads in a threadgroup when dispatching a command using the pipeline.
-### Specifying Precompiled Shader Binaries
+### Specifying precompiled shader binaries
 - [var supportAddingBinaryFunctions: Bool](mtltilerenderpipelinedescriptor/supportaddingbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 - [var binaryArchives: [any MTLBinaryArchive]?](mtltilerenderpipelinedescriptor/binaryarchives.md)
   An array of binary archives to search for precompiled versions of the shader.
-### Specifying Callable Functions for the Pipeline
+### Specifying callable functions for the pipeline
 - [var linkedFunctions: MTLLinkedFunctions!](mtltilerenderpipelinedescriptor/linkedfunctions.md)
   Functions that you can specify as function arguments for the tile shader when encoding commands that use the pipeline.
-### Specifying Shader Validation
+### Specifying shader validation
 - [var shaderValidation: MTLShaderValidation](mtltilerenderpipelinedescriptor/shadervalidation.md)
   A value that enables or disables shader validation for the pipeline.
 ### Instance Properties
@@ -87,7 +87,7 @@ class MTLTileRenderPipelineDescriptor
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

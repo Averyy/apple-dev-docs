@@ -21,7 +21,7 @@ optional func shouldEvaluateTrust(for connection: NWTCPConnection) -> Bool
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to take over the default trust evaluation, in which case the delegate method `evaluateTrustForConnection:peerCertificateChain:completionHandler`: will be called.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) to take over the default trust evaluation, in which case the delegate method `evaluateTrustForConnection:peerCertificateChain:completionHandler`: will be called.
 
 #### Discussion
 

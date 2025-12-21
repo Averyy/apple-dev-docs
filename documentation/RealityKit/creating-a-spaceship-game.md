@@ -36,7 +36,7 @@ To run this sample app, you need one of the following:
   Use RealityKit to create an interactive ride in visionOS.
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Creating a game with scene understanding](creating_a_game_with_scene_understanding.md)
+- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 
 

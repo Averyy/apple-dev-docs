@@ -32,13 +32,11 @@ An [`AnyCancellable`](anycancellable.md) instance automatically calls [`cancel()
 
 ## Topics
 
-### Creating a Type-Erased Cancellable
+### Creating a type-erased cancellable
 - [init(() -> Void)](anycancellable/init(_:)-3icn3.md)
   Initializes the cancellable object with the given cancel-time closure.
-### Canceling Actions
-- [func cancel()](anycancellable/cancel.md)
-  Cancel the activity.
-### Storing AnyCancellable Instances
+- [init<C>(C)](anycancellable/init(_:)-48fh3.md)
+### Storing instances
 - [func store<C>(in: inout C)](anycancellable/store(in:)-6cr9i.md)
   Stores this type-erasing cancellable instance in the specified collection.
 - [func store(in: inout Set<AnyCancellable>)](anycancellable/store(in:)-3hyxs.md)
@@ -46,16 +44,6 @@ An [`AnyCancellable`](anycancellable.md) instance automatically calls [`cancel()
 ### Operators
 - [static func == (AnyCancellable, AnyCancellable) -> Bool](anycancellable/==(_:_:).md)
   Returns a Boolean value that indicates whether two instances are equal, as determined by comparing whether their references point to the same instance.
-### Initializers
-- [init<C>(C)](anycancellable/init(_:)-48fh3.md)
-### Instance Properties
-- [var hashValue: Int](anycancellable/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](anycancellable/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](anycancellable/equatable-implementations.md)
 
 ## Relationships
 

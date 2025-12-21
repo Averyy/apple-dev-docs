@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: struct
 
+A mutable container of traits you use to set trait changes for an object and its descendants.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,9 +20,12 @@ struct UITraitOverrides
 
 ## Topics
 
-### Instance Methods
+### Inspecting overrides
 - [func contains(UITrait) -> Bool](uitraitoverrides-swift.struct/contains(_:).md)
+  Returns a Boolean value that indicates whether the trait overrides contain a change for the trait you provide.
+### Removing overrides
 - [func remove(UITrait)](uitraitoverrides-swift.struct/remove(_:).md)
+  Removes the change for the trait you provide.
 
 ## Relationships
 

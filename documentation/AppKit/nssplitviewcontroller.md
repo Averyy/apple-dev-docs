@@ -21,7 +21,7 @@ A split view controller manages a set of child views that it displays next to ea
 
 A split view controller owns an array of split view items ([`NSSplitViewItem`](nssplitviewitem.md)), each of which has a view controller ([`NSViewController`](nsviewcontroller.md)) and corresponding view. The split view controller’s [`splitView`](nssplitviewcontroller/splitview.md) object manages those child views and the dividers between them.
 
-By default, a split view arranges its child views vertically from top to bottom. To specify a horizontal (side-by-side) arrangement, implement the [`isVertical`](nssplitview/isvertical.md) property of the [`splitView`](nssplitviewcontroller/splitview.md) object to return [`true`](https://developer.apple.com/documentation/swift/true).
+By default, a split view arranges its child views vertically from top to bottom. To specify a horizontal (side-by-side) arrangement, implement the [`isVertical`](nssplitview/isvertical.md) property of the [`splitView`](nssplitviewcontroller/splitview.md) object to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The split view controller serves as the delegate of its [`splitView`](nssplitviewcontroller/splitview.md) object. If you override a split view delegate method, your override must call `super`.
 

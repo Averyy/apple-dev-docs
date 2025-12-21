@@ -21,11 +21,11 @@ func shouldArchiveValue(forKey key: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified property should be archived or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified property should be archived or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

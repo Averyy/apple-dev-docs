@@ -13,7 +13,6 @@ A value that specifies the gradient scaling factor.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

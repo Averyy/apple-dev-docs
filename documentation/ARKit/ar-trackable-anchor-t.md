@@ -6,7 +6,7 @@
 An anchor that can gain and lose its tracking state over the course of a session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

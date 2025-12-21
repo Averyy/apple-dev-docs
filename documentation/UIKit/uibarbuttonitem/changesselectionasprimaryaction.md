@@ -21,7 +21,7 @@ var changesSelectionAsPrimaryAction: Bool { get set }
 
 #### Discussion
 
-When a button has this property set to [`true`](https://developer.apple.com/documentation/swift/true), the button changes to a toggle button where tapping it changes it between selected and unselected.
+When a button has this property set to [`true`](https://developer.apple.com/documentation/Swift/true), the button changes to a toggle button where tapping it changes it between selected and unselected.
 
 ## See Also
 

@@ -17,7 +17,7 @@ Tells the delegate to export an image attached to a scene.
 ## Declaration
 
 ```swift
-optional func write(_ image: UIImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
+optional func write(_ image: NSImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
 ```
 
 #### Return Value

@@ -3,14 +3,14 @@
 **Framework**: StoreKit  
 **Kind**: protocol
 
-A protocol to which a downloader extension for Apple-Hosted Background Assets must conform.
+An app extension that uses the system implementation to schedule Apple-hosted asset-pack downloads automatically.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,7 @@ protocol StoreDownloaderExtension : ManagedDownloaderExtension
 
 #### Overview
 
-The protocol provides default implementations for all of the inherited `BADownloaderExtension` requirements. You can optionally implement the inherited `ManagedDownloaderExtension` requirements. For more information, see [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets).
-
-> ⚠️ **Warning**: Don’t implement any of the inherited `BADownloaderExtension` requirements.
+You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets).
 
 ## Relationships
 

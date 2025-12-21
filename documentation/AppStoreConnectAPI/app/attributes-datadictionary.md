@@ -18,13 +18,14 @@ object App.Attributes
 
 - [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 
 ## See Also
 
 - [Apps](apps.md)
   Manage your apps in App Store Connect.
 - [object App.Relationships](app/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

@@ -27,7 +27,7 @@ The possible display modes for this split behavior are:
 - [`UISplitViewController.DisplayMode.oneBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md)
 - [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md)
 
-If the current display mode is [`UISplitViewController.DisplayMode.oneBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md) and [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`true`](https://developer.apple.com/documentation/swift/true), the split view controller presents a special bar button item styled as a back-chevron icon. When a user taps this button, it changes the current display mode to [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md).
+If the current display mode is [`UISplitViewController.DisplayMode.oneBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md) and [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the split view controller presents a special bar button item styled as a back-chevron icon. When a user taps this button, it changes the current display mode to [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md).
 
 ## See Also
 

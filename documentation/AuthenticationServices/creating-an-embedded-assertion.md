@@ -68,7 +68,7 @@ For more information, see [`Authentication process`](authentication-process.md).
 - [Creating a refresh request](creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 
 ---

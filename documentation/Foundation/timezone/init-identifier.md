@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Returns a time zone initialized with a given identifier.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,12 @@
 ```swift
 init?(identifier: String)
 ```
+
+#### Discussion
+
+An example identifier is “America/Los_Angeles”.
+
+If `identifier` is an unknown identifier, then returns `nil`.
 
 
 ---

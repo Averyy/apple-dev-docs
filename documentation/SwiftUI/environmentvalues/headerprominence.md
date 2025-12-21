@@ -30,8 +30,6 @@ The default is [`Prominence.standard`](prominence/standard.md).
   Sets the header prominence for this view.
 - [enum Prominence](prominence.md)
   A type indicating the prominence of a view hierarchy.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
-  The default minimum height of a header in a list.
 
 
 ---

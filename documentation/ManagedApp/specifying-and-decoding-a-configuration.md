@@ -229,7 +229,7 @@ When the decoder finishes, the device reports the decoding results to the MDM se
 
 If the error doesn’t conform to [`ManagedAppConfigurationDecodingError`](managedappconfigurationdecodingerror.md) or if the error code is reserved, the device reports a generic error.
 
-For more information on status reporting, see [`Leveraging the declarative management data model to scale devices`](https://developer.apple.com/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices).
+For more information on status reporting, see [`Leveraging the declarative management data model to scale devices`](https://developer.apple.com/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices#Use-status-to-report-device-state).
 
 > ❗ **Important**: Because the framework logs errors, don’t include sensitive information in error messages.
 

@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+A symbol effect that applies the Wiggle animation to symbol images.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static var wiggle: WiggleSymbolEffect { get }
 ```
+
+#### Discussion
+
+The Wiggle animation applies a transitory translation or rotation effect to the symbol.
 
 ## See Also
 
@@ -33,7 +39,9 @@ static var wiggle: WiggleSymbolEffect { get }
 - [static var variableColor: VariableColorSymbolEffect](symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [static var breathe: BreatheSymbolEffect](symboleffect/breathe.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [static var rotate: RotateSymbolEffect](symboleffect/rotate.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 
 
 ---

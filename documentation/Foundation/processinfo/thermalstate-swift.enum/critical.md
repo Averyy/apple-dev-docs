@@ -34,12 +34,6 @@ Reduce usage of the CPU, GPU, and I/O such as Bluetooth or network to the minimu
   The thermal state is slightly elevated.
 - [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
   The thermal state is high.
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
-  The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
-  The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
-  The thermal state is high.
 
 
 ---

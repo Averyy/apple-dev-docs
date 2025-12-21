@@ -24,9 +24,9 @@ Run this sample code on a device that provides the required flash module, such a
 
 ## See Also
 
-- [Capturing Still and Live Photos](capturing-still-and-live-photos.md)
+- [Capturing still and Live Photos](capturing-still-and-live-photos.md)
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

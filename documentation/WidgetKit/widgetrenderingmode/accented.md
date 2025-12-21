@@ -10,7 +10,7 @@ The system divides the widget’s view hierarchy into an accent group and a defa
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

@@ -22,7 +22,9 @@ static var beginningOfSentence: FormatStyleCapitalizationContext { get }
 
 - [static var unknown: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/unknown.md)
 - [static var standalone: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/standalone.md)
+  For stand-alone usage, such as an isolated name on a calendar page.
 - [static var listItem: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/listitem.md)
+  For use in a UI list or menu item.
 - [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
 
 

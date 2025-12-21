@@ -7,7 +7,7 @@ The launch behavior for a scene.
 
 **Availability**:
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

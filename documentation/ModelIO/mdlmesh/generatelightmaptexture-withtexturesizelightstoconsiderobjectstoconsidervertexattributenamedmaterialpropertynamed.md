@@ -21,7 +21,7 @@ func generateLightMapTexture(withTextureSize textureSize: vector_int2, lightsToC
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if light map generation succeeded; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if light map generation succeeded; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

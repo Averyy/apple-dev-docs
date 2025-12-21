@@ -1,4 +1,4 @@
-# Processing HDR Images with Metal
+# Processing HDR images with Metal
 
 **Framework**: Metal
 
@@ -17,17 +17,17 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 
 ## See Also
 
-- [Displaying HDR Content in a Metal Layer](displaying-hdr-content-in-a-metal-layer.md)
+- [Displaying HDR content in a Metal layer](displaying-hdr-content-in-a-metal-layer.md)
   Bring your high dynamic range (HDR) content to compatible Mac displays.
-- [Determining Support for EDR Values](determining-support-for-edr-values.md)
+- [Determining support for EDR values](determining-support-for-edr-values.md)
   Check whether a display supports EDR.
-- [Using Color Spaces to Display HDR Content](using-color-spaces-to-display-hdr-content.md)
+- [Using color spaces to display HDR content](using-color-spaces-to-display-hdr-content.md)
   Use a color space when you don’t need to edit or process the pixel data.
-- [Using System Tone Mapping on Video Content](using-system-tone-mapping-on-video-content.md)
+- [Using system tone mapping on video content](using-system-tone-mapping-on-video-content.md)
   Use EDR metadata to apply the default system tone mapping to a layer.
-- [Performing Your Own Tone Mapping](performing-your-own-tone-mapping.md)
+- [Performing your own tone mapping](performing-your-own-tone-mapping.md)
   Apply your own tone mapping to get the exact behavior you want.
-- [Implementing Tone Mapping on Reference Displays](implementing-tone-mapping-on-reference-displays.md)
+- [Implementing tone mapping on reference displays](implementing-tone-mapping-on-reference-displays.md)
   Detect reference displays and keep your content within the capabilities of the display hardware.
 
 

@@ -20,6 +20,10 @@ An object that manages a graph of audio nodes, controls playback, and configures
 class AVAudioEngine
 ```
 
+## Mentions
+
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+
 #### Overview
 
 An audio engine object contains a group of [`AVAudioNode`](avaudionode.md) instances that you attach to form an audio processing chain.
@@ -169,6 +173,10 @@ audioEngine.stop()
   A representation of either a source or destination connection point in the audio engine.
 - [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:format:).md)
   Establishes a connection between a source node and multiple destination nodes.
+- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
+  Returns connection information about a node’s input bus.
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+  Returns connection information about a node’s output bus.
 ### Constants
 - [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
   Constants that describe error codes that the framework returns from manual rendering mode methods.
@@ -176,11 +184,6 @@ audioEngine.stop()
   The two modes for manual rendering.
 - [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
-### Instance Methods
-- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
-  Returns connection information about a node’s input bus.
-- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
-  Returns connection information about a node’s output bus.
 
 ## Relationships
 

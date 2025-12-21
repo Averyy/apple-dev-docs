@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates an instance of the component using the `default` blending mode
+Creates an instance of the component using the `default` blending mode.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

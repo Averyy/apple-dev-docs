@@ -31,27 +31,8 @@ enum CorrectMarkType
 ### Inspecting a type
 - [var debugDescription: String](assignabledocument/correctmarktype/debugdescription.md)
   A textual representation of this instance, suitable for debugging.
-- [var id: AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype/id-swift.property.md)
+- [var id: AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype/id.md)
   The stable identity of this enum value.
-### Operators
-- [static func == (AssignableDocument.CorrectMarkType, AssignableDocument.CorrectMarkType) -> Bool](assignabledocument/correctmarktype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](assignabledocument/correctmarktype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](assignabledocument/correctmarktype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [AssignableDocument.CorrectMarkType.AllCases](assignabledocument/correctmarktype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [AssignableDocument.CorrectMarkType.ID](assignabledocument/correctmarktype/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Type Properties
-- [static var allCases: [AssignableDocument.CorrectMarkType]](assignabledocument/correctmarktype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](assignabledocument/correctmarktype/equatable-implementations.md)
 
 ## Relationships
 

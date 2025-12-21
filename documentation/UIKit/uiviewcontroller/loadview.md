@@ -49,6 +49,8 @@ If you want to perform any additional initialization of your views, do so in the
   A localized string that represents the view this controller manages.
 - [var preferredContentSize: CGSize](uiviewcontroller/preferredcontentsize.md)
   The preferred size for the view controller’s view.
+- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+  SwiftUI ornaments to display adjacent to the view controller.
 
 
 ---

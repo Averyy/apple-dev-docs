@@ -128,7 +128,7 @@ Windows and volumes are a convenient way to display bounded 2D and 3D content, b
 
 ![An illustration of a window titled “Planet Earth” that contains text describing our planet, a button titled View Globe, and an image of the earth with two satellites tracking in orbit. The window floats in a room that has a dark grey fireplace affixed to a white brick wall. A green plant in a white vase sits atop a white mantle over the fireplace, and a picture hangs on the wall perpendicular to the fireplace. Suspended on the left side of the window is a globe of the earth with markers indicating its axis of rotation, and a button bar with four buttons beneath.](https://docs-assets.developer.apple.com/published/4e51011416061f44436a165e3e3d400b/window-examples%402x.png)
 
-For more information about when to use volumes, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows).
+For more information about when to use volumes, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows#visionOS).
 
 ##### Display 3d Content in a Persons Surroundings
 
@@ -182,6 +182,10 @@ When an app presents an [`ImmersiveSpace`](https://developer.apple.com/documenta
   Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 - [Introductory visionOS samples](introductory-visionos-samples.md)
   Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 
 
 ---

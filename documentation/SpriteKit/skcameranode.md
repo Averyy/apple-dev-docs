@@ -17,7 +17,6 @@ A node that determines which parts of the scene are visible within a view.
 ## Declaration
 
 ```swift
-@MainActor
 class SKCameraNode
 ```
 

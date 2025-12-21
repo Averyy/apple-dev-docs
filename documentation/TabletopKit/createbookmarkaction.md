@@ -46,6 +46,8 @@ To create a bookmark action, use the [`createBookmark(_:context:)`](tabletopacti
   An action that sets the current seats participating in the current turn.
 - [struct UpdateCounterAction](updatecounteraction.md)
   An action that updates the game counter.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

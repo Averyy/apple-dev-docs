@@ -22,8 +22,8 @@ A view that merchandises a collection of auto-renewable subscription options tha
 
 ## Mentions
 
-- [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
 
 #### Overview
 

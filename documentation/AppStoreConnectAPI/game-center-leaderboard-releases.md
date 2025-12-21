@@ -35,6 +35,8 @@ Read, create, and delete Game Center leaderboards releases.
   Read and manage image assets for Game Center leaderboards.
 - [Game Center leaderboard localizations](game-center-leaderboard-localizations.md)
   Manage localizations for Game Center leaderboards.
+- [Game Center leaderboard versions](game-center-leaderboard-versions.md)
+  Manage versions for your Game Center leaderboards.
 - [Game Center leaderboards scores](game-center-leaderboards-scores.md)
   Create and modify Game Center leaderboards scores.
 

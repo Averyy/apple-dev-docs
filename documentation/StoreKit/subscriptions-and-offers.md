@@ -33,7 +33,7 @@ Offer customers additional time-based content and services through purchases the
   Generate a signature using your private key and lightweight cryptography libraries.
 - [class SKPaymentDiscount](skpaymentdiscount.md)
   The signed discount to apply to a payment.
-### Subscription offer codes
+### Offer codes
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
   Provide subscription service for customers who redeem offer codes through the App Store or within an app that uses receipts.
 ### Subscription service entitlement

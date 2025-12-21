@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available.
 
 **Availability**:
 - iOS 7.0+

@@ -30,7 +30,7 @@ To learn more about using the threadgroup address space, see the [`Metal Shading
 
 ## Parameters
 
-- `length`: The size of the threadgroup memory, in bytes. Use be a multiple of   bytes.
+- `length`: The size of the threadgroup memory, in bytes, which needs to be a multiple of   bytes.
 - `index`: The index in the threadgroup memory argument table using this allocation.
 
 ## See Also

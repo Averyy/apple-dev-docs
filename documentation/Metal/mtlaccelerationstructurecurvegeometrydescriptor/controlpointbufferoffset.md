@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The offset, in bytes, to the control point data in the buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var controlPointBufferOffset: Int { get set }
 ```
+
+#### Discussion
+
+The offset needs to be a multiple of the format element size you configure with the [`controlPointFormat`](mtlaccelerationstructurecurvegeometrydescriptor/controlpointformat.md) property. You also need to align the offset to the platform’s buffer alignment requirement.
 
 
 ---

@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func centerOfTile(atColumn column: Int, row: Int) -> CGPoint
 ```
 

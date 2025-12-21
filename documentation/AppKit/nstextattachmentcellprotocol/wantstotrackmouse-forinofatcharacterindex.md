@@ -18,7 +18,7 @@ func wantsToTrackMouse(for theEvent: NSEvent, in cellFrame: NSRect, of controlVi
 
 #### Discussion
 
-`theEvent` is the event in question that occurred in `cellFrame` inside `controlView`. `charIndex` is the index of the attachment character within the text. If [`wantsToTrackMouse()`](nstextattachmentcellprotocol/wantstotrackmouse().md) returns [`true`](https://developer.apple.com/documentation/swift/true), this method allows the attachment to decide whether it wishes to do so for particular events.
+`theEvent` is the event in question that occurred in `cellFrame` inside `controlView`. `charIndex` is the index of the attachment character within the text. If [`wantsToTrackMouse()`](nstextattachmentcellprotocol/wantstotrackmouse().md) returns [`true`](https://developer.apple.com/documentation/Swift/true), this method allows the attachment to decide whether it wishes to do so for particular events.
 
 ## See Also
 

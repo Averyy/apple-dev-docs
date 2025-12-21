@@ -20,7 +20,7 @@ var showsPageRange: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you assign printable content to the [`printingItems`](uiprintinteractioncontroller/printingitems.md) property, the page-range control is not shown, even if `showPageRange` is [`true`](https://developer.apple.com/documentation/swift/true). In other cases, the number of pages to print must be greater than 1 form the page-range control to appear.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If you assign printable content to the [`printingItems`](uiprintinteractioncontroller/printingitems.md) property, the page-range control is not shown, even if `showPageRange` is [`true`](https://developer.apple.com/documentation/Swift/true). In other cases, the number of pages to print must be greater than 1 form the page-range control to appear.
 
 ## See Also
 

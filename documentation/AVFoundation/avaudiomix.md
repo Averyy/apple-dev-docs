@@ -22,7 +22,7 @@ class AVAudioMix
 
 ## Topics
 
-### Retrieving Input Parameters
+### Retrieving input parameters
 - [var inputParameters: [AVAudioMixInputParameters]](avaudiomix/inputparameters.md)
   An array of input parameters for the mix.
 

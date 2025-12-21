@@ -25,7 +25,7 @@ This class is a subclass of [`URLSessionTask`](https://developer.apple.com/docum
 
 ## Topics
 
-### Accessing Task Information
+### Accessing task information
 - [var urlAsset: AVURLAsset](avassetdownloadtask/urlasset.md)
   The asset that this task downloads.
 - [var loadedTimeRanges: [NSValue]](avassetdownloadtask/loadedtimeranges.md)
@@ -53,7 +53,7 @@ This class is a subclass of [`URLSessionTask`](https://developer.apple.com/docum
 
 ## See Also
 
-- [Using AVFoundation to play and persist HTTP Live Streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
+- [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadURLSession](avassetdownloadurlsession.md)
   A URL session that creates and executes asset download tasks.

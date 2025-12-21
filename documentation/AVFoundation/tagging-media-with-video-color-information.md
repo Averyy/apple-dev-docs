@@ -1,4 +1,4 @@
-# Tagging Media with Video Color Information
+# Tagging media with video color information
 
 **Framework**: AVFoundation
 
@@ -29,7 +29,7 @@ ColorSync uses these video parameters to generate one of the following video col
 
 ##### Tag Your Video Using Asset Writer
 
-When you initialize an [`AVAssetWriterInput`](avassetwriterinput.md) object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The [`AVVideoColorPropertiesKey`](avvideocolorpropertieskey.md) is a dictionary that contains properties specifying video color (see [`Setting Color Properties for a Specific Resolution`](setting-color-properties-for-a-specific-resolution.md) for the details). Set this key in the `AVAssetWriterInput` output settings dictionary to override the tagging of color properties in the video.
+When you initialize an [`AVAssetWriterInput`](avassetwriterinput.md) object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The [`AVVideoColorPropertiesKey`](avvideocolorpropertieskey.md) is a dictionary that contains properties specifying video color (see [`Setting color properties for a specific resolution`](setting-color-properties-for-a-specific-resolution.md) for the details). Set this key in the `AVAssetWriterInput` output settings dictionary to override the tagging of color properties in the video.
 
 If the video color properties key is present in the output settings, the writer tags the output as follows:
 
@@ -99,7 +99,7 @@ inputPixelBufferAdaptor.append(pixelBuffer, withPresentationTime: presentationTi
 
 You access the low-level details about an asset’s video track media using [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](avassettrack.md) [`formatDescriptions`](avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimariesKey) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
 
-Here’s an example that checks for the doc://com.apple.documentation/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2 color primary key value in the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimariesKey) extension:
+Here’s an example that checks for the [`kCMFormatDescriptionColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionColorPrimaries_ITU_R_709_2-swift.var) color primary key value in the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimariesKey) extension:
 
 ```swift
 let assetTracks = try await asset.loadTracks(withMediaType: .video)
@@ -177,11 +177,11 @@ class MyCustomVideoCompositor : AVVideoCompositing {
   Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Evaluating an App’s Video Color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
 - [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.

@@ -127,7 +127,7 @@ Content-Length: 601
 
 After receiving the error response, the device sets up Platform SSO as follows:
 
-1. It downloads the configuration profile that the `ProfileURL` key specifies (steps 4 and 5). The profile needs to contain an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload with a configuration to implement Platform SSO using the SSO extension that the package delivers.
+1. It downloads the configuration profile that the `ProfileURL` key specifies (steps 4 and 5). The profile needs to contain an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload with a configuration to implement Platform SSO using the SSO extension that the package delivers. The payload needs to contain an `EnableRegistrationDuringSetup` key set to `true` in the [`ExtensibleSingleSignOn.PlatformSSO`](extensiblesinglesignon/platformsso-data.dictionary.md) object.
 2. It installs the configuration profile (step 6).
 3. It downloads the manifest document that the `Package` key specifies, and installs the package that the manifest document specifies (steps 7 and 8). The package needs to contain an app that includes the SSO extension for Platform SSO.
 4. It installs the package (step 9). This installs the app and its SSO extension on the device.
@@ -135,6 +135,20 @@ After receiving the error response, the device sets up Platform SSO as follows:
 If any of the above steps fail, the device displays an error alert to the user and cycles back to a state that allows the user to try signing in again.
 
 > ❗ **Important**:  The package needs to install the app containing the SSO extension into the `/Applications` folder to ensure the device management service is managing the app.
+
+In addition to the [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload, the provided configuration profile can also contain the following profile payloads if needed:
+
+- [`ACMECertificate`](acmecertificate.md)
+- [`AssociatedDomains`](associateddomains.md)
+- [`CertificatePEM`](certificatepem.md)
+- [`CertificatePKCS1`](certificatepkcs1.md)
+- [`CertificatePKCS12`](certificatepkcs12.md)
+- [`CertificatePreference`](certificatepreference.md)
+- [`CertificateRoot`](certificateroot.md)
+- [`CertificateTransparency`](certificatetransparency.md)
+- [`IdentityPreference`](identitypreference.md)
+- [`ManagedPreferences`](managedpreferences.md)
+- [`SCEP`](scep.md)
 
 ##### Authenticate the User
 

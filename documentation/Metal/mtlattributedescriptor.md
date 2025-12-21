@@ -25,7 +25,7 @@ Attribute descriptors are part of an [`MTLVertexDescriptor`](mtlvertexdescriptor
 
 ## Topics
 
-### Defining Attribute Location
+### Defining attribute location
 - [var bufferIndex: Int](mtlattributedescriptor/bufferindex.md)
   The index in the buffer argument table for the buffer that contains the data for this attribute.
 - [var offset: Int](mtlattributedescriptor/offset.md)

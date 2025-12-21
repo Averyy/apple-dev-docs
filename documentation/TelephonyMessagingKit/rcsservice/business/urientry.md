@@ -6,8 +6,8 @@
 Structure containing details of a URI provided by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,16 +29,6 @@ struct URIEntry
   Label for URI.
 - [RCSService.Business.URIEntry.Label](rcsservice/business/urientry/label-swift.enum.md)
   Enumeration representing the URI label.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/urientry/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/urientry/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing URI entry instances
-- [static func == (RCSService.Business.URIEntry, RCSService.Business.URIEntry) -> Bool](rcsservice/business/urientry/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/urientry/equatable-implementations.md)
 
 ## Relationships
 

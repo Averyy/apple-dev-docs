@@ -55,6 +55,8 @@ Chart {
 - [init<Data, Y>(Data, xStart: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>, yStart: PlottableProjection<RectanglePlot<Content>.DataElement, Y>, yEnd: PlottableProjection<RectanglePlot<Content>.DataElement, Y>)](rectangleplot/init(_:xstart:xend:ystart:yend:)-741lz.md)
 - [init<Data>(Data, xStart: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>, xEnd: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>, yStart: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>, yEnd: KeyPath<RectanglePlot<Content>.DataElement, CGFloat>)](rectangleplot/init(_:xstart:xend:ystart:yend:)-ir9o.md)
 ### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedRectanglePlotContent](vectorizedrectangleplotcontent.md)
   An opaque vectorized chart content type.
 

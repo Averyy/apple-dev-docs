@@ -19,7 +19,7 @@ var anchorFromJointTransform: simd_float4x4 { get }
 - [var parentFromJointTransform: simd_float4x4](handskeleton/joint/parentfromjointtransform.md)
   The transform from the joint to its parent joint’s coordinate system.
 - [var isTracked: Bool](handskeleton/joint/istracked.md)
-  A Boolean value that indicates whether ARKit is currently tracking this joint.
+  A Boolean value that indicates whether ARKit tracks a hand joint.
 
 
 ---

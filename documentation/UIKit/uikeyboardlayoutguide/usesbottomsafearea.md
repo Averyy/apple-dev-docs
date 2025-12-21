@@ -20,9 +20,9 @@ var usesBottomSafeArea: Bool { get set }
 
 #### Discussion
 
-Defaults to [`true`](https://developer.apple.com/documentation/swift/true), indicating that the layout guide ties to the [`bottomAnchor`](uilayoutguide/bottomanchor.md) of the view’s [`safeAreaLayoutGuide`](uiview/safearealayoutguide.md).
+Defaults to [`true`](https://developer.apple.com/documentation/Swift/true), indicating that the layout guide ties to the [`bottomAnchor`](uilayoutguide/bottomanchor.md) of the view’s [`safeAreaLayoutGuide`](uiview/safearealayoutguide.md).
 
-Set to [`false`](https://developer.apple.com/documentation/swift/false) to tie the layout guide to the [`bottomAnchor`](uiview/bottomanchor.md) of the view instead.
+Set to [`false`](https://developer.apple.com/documentation/Swift/false) to tie the layout guide to the [`bottomAnchor`](uiview/bottomanchor.md) of the view instead.
 
 
 ---

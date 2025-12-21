@@ -103,7 +103,7 @@ Not all devices support background tag reading, so be sure to provide the user t
 - [Building an NFC Tag-Reader App](building-an-nfc-tag-reader-app.md)
   Read NFC tags with NDEF messages in your app.
 - [NFCReaderUsageDescription](../BundleResources/Information-Property-List/NFCReaderUsageDescription.md)
-  A message that tells the user why the app is requesting access to the device’s NFC hardware.
+  A message that tells people why the app is requesting access to the device’s NFC hardware.
 
 
 ---

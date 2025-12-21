@@ -81,7 +81,7 @@ class MTLMeshRenderPipelineDescriptor
 - [class MTL4MeshRenderPipelineDescriptor](mtl4meshrenderpipelinedescriptor.md)
   Groups together properties you use to create a mesh render pipeline state object.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

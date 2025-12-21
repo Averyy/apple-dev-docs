@@ -20,7 +20,7 @@ func isWhiteBalanceModeSupported(_ whiteBalanceMode: AVCaptureDevice.WhiteBalanc
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports the white balance mode; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports the white balance mode; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

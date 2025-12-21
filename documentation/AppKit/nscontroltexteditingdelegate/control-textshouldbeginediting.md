@@ -17,7 +17,7 @@ optional func control(_ control: NSControl, textShouldBeginEditing fieldEditor: 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the control’s field editor should be allowed to start editing the text; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the control’s field editor should be allowed to start editing the text; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

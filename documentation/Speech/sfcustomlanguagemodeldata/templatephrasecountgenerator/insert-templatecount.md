@@ -25,11 +25,7 @@ func insert(template: String, count: Int)
 
 ## See Also
 
-- [func define(className: String, values: [String])](sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:).md)
-  Define a class of tokens to be used in template strings.
-- [func hash(into: inout Hasher)](sfcustomlanguagemodeldata/templatephrasecountgenerator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [func makeAsyncIterator() -> SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/templatephrasecountgenerator/makeasynciterator.md)
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
 
 
 ---

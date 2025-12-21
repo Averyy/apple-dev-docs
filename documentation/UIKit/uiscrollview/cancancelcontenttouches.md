@@ -21,7 +21,7 @@ var canCancelContentTouches: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and a view in the content has begun tracking a finger touching it, and if the user drags the finger enough to initiate a scroll, the view receives a [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) message and the scroll view handles the touch as a scroll. If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the scroll view doesn’t scroll regardless of finger movement once the content view starts tracking.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and a view in the content has begun tracking a finger touching it, and if the user drags the finger enough to initiate a scroll, the view receives a [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) message and the scroll view handles the touch as a scroll. If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the scroll view doesn’t scroll regardless of finger movement once the content view starts tracking.
 
 ## See Also
 

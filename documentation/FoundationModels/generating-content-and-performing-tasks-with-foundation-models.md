@@ -6,26 +6,45 @@ Enhance the experience in your app by prompting an on-device large language mode
 
 #### Overview
 
-The Foundation Models framework lets you tap into the on-device large models at the core of Apple Intelligence. You can enhance your app by using generative models to create content or perform tasks. The framework supports language understanding and generation based on models capabilities like text extraction and summarization that you can use to:
-
-- Generate a title, description, or tags for content
-- Generate a list of search suggestions relevant to your app
-- Transform product reviews into structured data you can visualize
-- Invoke your own tools to assist the model with performing app-specific tasks
+The Foundation Models framework lets you tap into the on-device large models at the core of Apple Intelligence. You can enhance your app by using generative models to create content or perform tasks. The framework supports language understanding and generation based on model capabilities.
 
 For design guidance, see Human Interface Guidelines > Technologies > [`Generative AI`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/generative-ai).
 
+#### Understand Model Capabilities
+
+When considering features for your app, it helps to know what the on-device language model can do. The on-device model supports text generation and understanding that you can use to:
+
+| Capability | Prompt example |
+| --- | --- |
+| Summarize | “Summarize this article.” |
+| Extract entities | “List the people and places mentioned in this text.” |
+| Understand text | “What happens to the dog in this story?” |
+| Refine or edit text | “Change this story to be in second person.” |
+| Classify or judge text | “Is this text relevant to the topic ‘Swift’?” |
+| Compose creative writing | “Generate a short bedtime story about a fox.” |
+| Generate tags from text | “Provide two tags that describe the main topics of this text.” |
+| Generate game dialog | “Respond in the voice of a friendly inn keeper.” |
+
+The on-device language model may not be suitable for handling all requests, like:
+
+| Capabilities to avoid | Prompt example |
+| --- | --- |
+| Do basic math | “How many b’s are there in bagel?” |
+| Create code | “Generate a Swift navigation list.” |
+| Perform logical reasoning | “If I’m at Apple Park facing Canada, what direction is Texas?” |
+
+The model can complete complex generative tasks when you use guided generation or tool calling. For more on handling complex tasks, or tasks that require extensive world-knowledge, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md) and [`Expanding generation with tool calling`](expanding-generation-with-tool-calling.md).
+
 #### Check for Availability
 
-Check model availability by creating an instance of [`SystemLanguageModel`](systemlanguagemodel.md) with the [`default`](systemlanguagemodel/default.md) property. The [`default`](systemlanguagemodel/default.md) property provides the same model Apple Intelligence uses, and supports text generation.
+Before you use the on-device model in your app, check that the model is available by creating an instance of [`SystemLanguageModel`](systemlanguagemodel.md) with the [`default`](systemlanguagemodel/default.md) property.
 
 Model availability depends on device factors like:
 
 - The device must support Apple Intelligence.
-- The device must have Apple Intelligence turned on in System Settings.
-- The device must have sufficient battery and not be in Game Mode.
+- The device must have Apple Intelligence turned on in Settings.
 
-> **Note**: It can take some time for the model to download and become available when a person turns on Apple Intelligence. Models may not be available if the device is in low battery mode or it becomes too warm.
+> **Note**: It can take some time for the model to download and become available when a person turns on Apple Intelligence.
 
 Always verify model availability first, and plan for a fallback experience in case the model is unavailable.
 
@@ -93,7 +112,7 @@ Use content you trust in instructions because the model follows them more closel
 
 #### Generate a Response
 
-To call the model with a prompt, call [`respond(to:options:isolation:)`](languagemodelsession/respond(to:options:isolation:)-4z2jz.md) on your session. The response call is asynchronous because it may take a few seconds for Foundation Models to generate the response.
+To call the model with a prompt, call [`respond(to:options:)`](languagemodelsession/respond(to:options:)-b2re.md) on your session. The response call is asynchronous because it may take a few seconds for the on-device foundation model to generate the response.
 
 ```swift
 let instructions = """
@@ -112,6 +131,14 @@ let response = try await session.respond(to: prompt)
 Instead of working with raw string output from the model, the framework offers guided generation to generate a custom Swift data structure you define. For more information about guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
 
 When you make a request to the model, you can provide custom tools to help the model complete the request. If the model determines that a [`Tool`](tool.md) can assist with the request, the framework calls your [`Tool`](tool.md) to perform additional actions like retrieving content from your local database. For more information about tool calling, see [`Expanding generation with tool calling`](expanding-generation-with-tool-calling.md)
+
+#### Consider Context Size Limits Per Session
+
+The  is a limit on how much data the model can process for a session instance. A token is a chunk of text the model processes, and the system model supports up to 4,096 tokens. A single token corresponds to three or four characters in languages like English, Spanish, or German, and one token per character in languages like Japanese, Chinese, or Korean. In a single session, the sum of all tokens in the instructions, all prompts, and all outputs count toward the context window size.
+
+If your session processes a large amount of tokens that exceed the context window, the framework throws the error [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md). When you encounter the error, start a new session and try shortening your prompts. If you need to process a large amount of data that won’t fit in a single context window limit, break your data into smaller chunks, process each chunk in a separate session, and then combine the results.
+
+For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
 
 #### Tune Generation Options and Optimize Performance
 
@@ -134,8 +161,10 @@ When you test apps that use the framework, use Xcode Instruments to understand m
 
 ## See Also
 
-- [Improving safety from generative model output](improving-safety-from-generative-model-output.md)
+- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
   Create generative experiences that appropriately handle sensitive inputs and respect people.
+- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+  Generate content in the language people prefer when they interact with your app.
 - [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
 - [class SystemLanguageModel](systemlanguagemodel.md)

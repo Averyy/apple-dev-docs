@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-Something went wrong
+Something went wrong.
 
 **Availability**:
 - iOS 18.0+

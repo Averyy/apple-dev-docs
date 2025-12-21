@@ -20,10 +20,6 @@ A custom model trained to classify or tag natural language text.
 class NLModel
 ```
 
-## Mentions
-
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
-
 #### Overview
 
 With [`Natural Language`](NaturalLanguage.md), you can create text classifier ([`MLTextClassifier`](https://developer.apple.com/documentation/CreateML/MLTextClassifier)) or word tagger ([`MLWordTagger`](https://developer.apple.com/documentation/CreateML/MLWordTagger)) models. Use [`NLModel`](nlmodel.md) to integrate those models into your app. This integration ensures that your tokenization and tagger configurations are identical when you train your model and use it in your app.
@@ -52,7 +48,7 @@ do {
 }
 ```
 
-If you create a custom word tagger as described in [`Creating a word tagger model`](creating-a-word-tagger-model.md), you can integrate that model into your app and generate tags for new text input like this:
+If you create a custom word tagger as described in doc:creating-a-word-tagger-model, you can integrate that model into your app and generate tags for new text input like this:
 
 ```swift
 let text = "The iPad is my favorite Apple product."
@@ -122,7 +118,7 @@ do {
 
 - [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 
 

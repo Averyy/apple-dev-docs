@@ -21,7 +21,7 @@ var storeActionOptions: MTLStoreActionOptions { get set }
 
 ## Mentions
 
-- [Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
+- [Storing data a pass makes with custom sample positions for a subsequent pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
 #### Discussion
 

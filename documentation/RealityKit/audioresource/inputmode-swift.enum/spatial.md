@@ -10,7 +10,7 @@ a spatialized with all degrees of freedom. This treats a resource as a mono stre
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

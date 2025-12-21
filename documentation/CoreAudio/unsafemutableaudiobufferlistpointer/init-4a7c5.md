@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: init
 
+Construct from an `AudioBufferList` pointer.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

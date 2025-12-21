@@ -19,7 +19,7 @@ var isIndeterminate: Bool { get set }
 
 A determinate indicator displays how much of the task has been completed. An indeterminate indicator shows simply that the app is busy.
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the progress indicator is indeterminate; otherwise, it is determinate.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the progress indicator is indeterminate; otherwise, it is determinate.
 
 ## See Also
 

@@ -5,9 +5,6 @@
 
 An atom that contains general information about a hot spot.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Mentions
 
 - [Custom cursor atom](custom_cursor_atom.md)

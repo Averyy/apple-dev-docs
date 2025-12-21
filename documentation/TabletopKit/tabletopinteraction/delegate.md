@@ -22,9 +22,10 @@ Implement the [`update(interaction:)`](tabletopinteraction/delegate/update(inter
 
 ### Taking actions
 - [func update(interaction: TabletopInteraction)](tabletopinteraction/delegate/update(interaction:).md)
-### Instance Methods
+### Starting a toss
 - [func onTossStart(interaction: TabletopInteraction, outcomes: [TabletopInteraction.TossOutcome])](tabletopinteraction/delegate/ontossstart(interaction:outcomes:).md)
   Implement `onTossStart(interaction:outcomes)` to be notified that the toss has just started simulating and to receive the outcome of the simulation. If the provided outcome is set to the equipment via actions, the equipment will retain the final state of the simulation even after the simulation ended.
+### Accepting interactions
 - [func shouldAcceptDirectInteraction(initialValue: TabletopInteraction.Value, handoffValue: TabletopInteraction.Value?) -> TabletopInteraction.NewDirectInteractionIntent](tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue:handoffvalue:).md)
   Implement `shouldAcceptDirectInteraction(initialValue:handoffValue)` to provide the constants and initial configuration for the new direct interaction, and to decide if the new interaction should be accepted or rejected. If the function is not implemented, the default implementation will be used, which will call into the more generic `shouldAcceptInteraction(initialValue:handoffValue)`.
 - [func shouldAcceptIndirectInteraction(initialValue: TabletopInteraction.Value, handoffValue: TabletopInteraction.Value?) -> TabletopInteraction.NewIndirectInteractionIntent](tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue:handoffvalue:).md)
@@ -34,6 +35,12 @@ Implement the [`update(interaction:)`](tabletopinteraction/delegate/update(inter
 
 ## See Also
 
+- [TabletopInteraction.TossOutcome](tabletopinteraction/tossoutcome.md)
+  An object representing the final outcome of tossing one equipment, as it appears at the end of its simulation.
+- [func addAction(some TabletopAction)](tabletopinteraction/addaction(_:)-1cety.md)
+  Submit an action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
+- [func addAction(some CustomAction)](tabletopinteraction/addaction(_:)-4rx16.md)
+  Submit a custom action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func addActions(some Sequence<any TabletopAction>)](tabletopinteraction/addactions(_:).md)
   Submit a collection of actions tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func toss(equipmentID: EquipmentIdentifier, as: TossableRepresentation, linearVelocity: Vector3D?, angularVelocity: Vector3D?)](tabletopinteraction/toss(equipmentid:as:linearvelocity:angularvelocity:).md)

@@ -20,6 +20,13 @@ Layout scalars contiguously in first-major order.
 case firstMajorContiguous
 ```
 
+## See Also
+
+- [MLShapedArrayBufferLayout.lastMajorContiguous](mlshapedarraybufferlayout/lastmajorcontiguous.md)
+  Layout scalars contiguously in last-major order.
+- [MLShapedArrayBufferLayout.strides(_:)](mlshapedarraybufferlayout/strides(_:).md)
+  Layout scalars according to the strides.
+
 
 ---
 

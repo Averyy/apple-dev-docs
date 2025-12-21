@@ -22,7 +22,7 @@ func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> 
 
 #### Return Value
 
-The current velocity of the animation, or `nil` if the the velocity isn’t available.
+The current velocity of the animation, or `nil` if the velocity isn’t available.
 
 
 ---

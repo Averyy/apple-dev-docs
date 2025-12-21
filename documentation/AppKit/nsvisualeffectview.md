@@ -37,7 +37,7 @@ For visual effect views you create yourself, use the [`blendingMode`](nsvisualef
 
 ##### Enabling Vibrancy for Foreground Content
 
-The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/swift/true).
+The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > **Note**:  AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
 

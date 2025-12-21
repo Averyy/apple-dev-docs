@@ -34,8 +34,6 @@ case missingValue(operation: String)
   An error that indicates that an expected annotation is missing.
 - [case unrecognizedCategory(operation: String, category: String)](pipelinedataerror/unrecognizedcategory(operation:category:).md)
   An error that indicates that a new category was encountered after fitting.
-- [var errorDescription: String?](pipelinedataerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

@@ -17,11 +17,11 @@ func selectItem(withTag tag: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item was successfully selected; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item was successfully selected; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If no item with the specified tag is found, this method returns [`false`](https://developer.apple.com/documentation/swift/false) and leaves the menu state unchanged.
+If no item with the specified tag is found, this method returns [`false`](https://developer.apple.com/documentation/Swift/false) and leaves the menu state unchanged.
 
 You typically assign tags to menu items from Interface Builder, but you can also assign them programmatically using the setTag: method of [`NSMenuItem`](nsmenuitem.md).
 

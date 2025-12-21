@@ -20,12 +20,6 @@ An identifier for a music item relationship property from a specific root type t
 class MusicRelationshipProperty<Root, RelatedMusicItemType> where RelatedMusicItemType : MusicItem, RelatedMusicItemType : Decodable
 ```
 
-## Topics
-
-### Instance Properties
-- [var description: String](musicrelationshipproperty/description.md)
-  A textual representation of this instance.
-
 ## Relationships
 
 ### Inherits From

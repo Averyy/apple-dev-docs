@@ -28,8 +28,6 @@ This type supports the expansion of preview macros. You don’t use it directly.
 
 ### Initializers
 - [init()](previewunavailable/init.md)
-### Default Implementations
-- [Error Implementations](previewunavailable/error-implementations.md)
 
 ## Relationships
 

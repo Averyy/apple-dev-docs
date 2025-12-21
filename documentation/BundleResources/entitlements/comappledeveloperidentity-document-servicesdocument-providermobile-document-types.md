@@ -6,8 +6,8 @@
 An array of strings that represent the types of mobile documents (mdoc) that an identity document provider app can provide during an online web presentment.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Discussion
 

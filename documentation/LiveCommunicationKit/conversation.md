@@ -27,7 +27,7 @@ final class Conversation
   The current state of the conversation.
 - [Conversation.State](conversation/state-swift.enum.md)
   Values that describe the current state of a conversation.
-- [var uuid: UUID](conversation/uuid.md)
+- [let uuid: UUID](conversation/uuid.md)
   The unique identifier for a conversation.
 ### Observing a conversation
 - [Conversation.Event](conversation/event.md)
@@ -39,8 +39,6 @@ final class Conversation
   A type that describes new, changed, or deleted capabilities and attributes of a conversation.
 - [Conversation.Capabilities](conversation/capabilities.md)
   A type that describes capabilities of a conversation.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](conversation/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -57,6 +55,8 @@ final class Conversation
   An interface for managing and observing VoIP conversations.
 - [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
   Methods for managing conversations and receiving VoIP conversation updates.
+- [class ConversationHistoryManager](conversationhistorymanager.md)
+  An interface for managing and providing conversation history.
 
 
 ---

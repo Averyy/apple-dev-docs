@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The edge treatment type used for the immersive media Mask.
+The edge treatment type used for the immersive media mask.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -23,7 +23,7 @@ var rootRecord: CKRecord? { get }
 
 #### Discussion
 
-This property contains the root record of the shared record hierarchy if you set the [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) property of the operation that fetches the metadata to [`true`](https://developer.apple.com/documentation/swift/true). You can specify which fields CloudKit returns by setting the same operation’s [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) property.
+This property contains the root record of the shared record hierarchy if you set the [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) property of the operation that fetches the metadata to [`true`](https://developer.apple.com/documentation/Swift/true). You can specify which fields CloudKit returns by setting the same operation’s [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) property.
 
 The operation ignores the [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) and [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) properties when fetching a shared record zone’s metadata because, unlike a shared record hierarchy, a record zone doesn’t have a nominated root record.
 

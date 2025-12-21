@@ -21,7 +21,7 @@ case absolute
 
 ## Mentions
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
 
 ## See Also
 

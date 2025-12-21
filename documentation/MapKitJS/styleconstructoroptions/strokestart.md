@@ -11,7 +11,7 @@ The unit distance along the line where a stroke begins.
 ## Declaration
 
 ```swift
-attribute number strokeStart;
+strokeStart?: number;
 ```
 
 #### Discussion

@@ -6,9 +6,9 @@
 An object that enables the frame rate conversion on a frame processing session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 15.4+
 
 ## Declaration
@@ -54,6 +54,7 @@ class VTFrameRateConversionConfiguration
 - [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
 ### Type Properties
 - [class var isSupported: Bool](vtframerateconversionconfiguration/issupported.md)
+  Reports whether the system supports this processor.
 
 ## Relationships
 

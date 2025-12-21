@@ -6,7 +6,7 @@
 Creates a configuration for a widget that provides relevance clues to the system.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

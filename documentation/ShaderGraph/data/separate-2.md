@@ -10,7 +10,7 @@ Outputs each of the channels of a vector2 or integer2 as individual float or int
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 #### Parameter Types

@@ -13,7 +13,6 @@ Copies the specified subdiagonals and superdiagonals of a matrix, and sets other
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

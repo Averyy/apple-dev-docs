@@ -54,10 +54,11 @@ enum Code
 
 ## See Also
 
-- [struct MPError](mperror.md)
-  A structure that represents a framework error.
+- [static var errorDomain: String](mperror/errordomain.md)
 - [let MPErrorDomain: String](mperrordomain.md)
   The Media Player framework error domain.
+- [Error constants](error-constants.md)
+  Error code constants for framework operations.
 
 
 ---

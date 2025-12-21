@@ -22,36 +22,27 @@ struct MLShapedArraySlice<Scalar> where Scalar : MLShapedArrayScalar
 
 ## Topics
 
-### Creating a Shaped Array Slice
+### Creating a shaped array slice
 - [init(scalar: Scalar)](mlshapedarrayslice/init(scalar:).md)
   Creates a shaped array slice with exactly one value and zero dimensions.
 - [init<S>(scalars: S, shape: [Int])](mlshapedarrayslice/init(scalars:shape:).md)
   Initialize with a sequence and the shape.
-### Creating a Shaped Array Slice from Another Type
+- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarrayslice/init(mutating:shape:).md)
+  Creates a new `MLShapedArraySlice` using a pixel buffer as the backing storage.
+### Creating a shaped array slice from another type
 - [init(MLMultiArray)](mlshapedarrayslice/init(_:).md)
   Creates a new MLShapedArraySlice using a `MLMultiArray` as a backing storage.
 - [init<S>(concatenating: S, alongAxis: Int)](mlshapedarrayslice/init(concatenating:alongaxis:).md)
   Merges a sequence of shaped arrays into one shaped array along an axis.
-### Creating a Shaped Array Slice with Pointers to Memory
+### Creating a shaped array slice with pointers to memory
 - [init(unsafeUninitializedShape: [Int], initializingWith: (inout UnsafeMutableBufferPointer<Scalar>, [Int]) throws -> Void) rethrows](mlshapedarrayslice/init(unsafeuninitializedshape:initializingwith:).md)
   Creates a shaped array slice from a shape and a closure that initializes its memory.
-### Creating a Shaped Array Slice with Data
+### Creating a shaped array slice with data
 - [init(data: Data, shape: [Int])](mlshapedarrayslice/init(data:shape:).md)
   Creates a shaped array with a defined data and shape.
 - [init(data: Data, shape: [Int], strides: [Int])](mlshapedarrayslice/init(data:shape:strides:).md)
   Creates a shaped array with defined data, shape, and strides.
-### Encoding and Decoding an Array Slice
-- [init(from: any Decoder) throws](mlshapedarrayslice/init(from:).md)
-  Creates an array slice from the passed decoder.
-- [func encode(to: any Encoder) throws](mlshapedarrayslice/encode(to:).md)
-  Encodes the array slice.
-### Supporting Types
-- [Shaped Array Slice Collection Operations](shaped-array-slice-collection-operations.md)
-  Properties and methods a shaped array slice inherits from collection protocols.
-### Initializers
-- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarrayslice/init(mutating:shape:).md)
-  Creates a new `MLShapedArraySlice` using a pixel buffer as the backing storage.
-### Instance Methods
+### Shaping the array slice
 - [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/changinglayout(to:).md)
   Returns a copy with the specified buffer layout.
 - [func expandingShape(at: Int) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/expandingshape(at:).md)
@@ -64,8 +55,14 @@ struct MLShapedArraySlice<Scalar> where Scalar : MLShapedArrayScalar
   Returns a new transposed shaped array
 - [func transposed(permutation: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed(permutation:).md)
   Returns a new transposed shaped array using a custom permutation.
+### Modifying a shaped array type
 - [func withUnsafeMutableShapedBufferPointer<R>(using: MLShapedArrayBufferLayout, (inout UnsafeMutableBufferPointer<Scalar>, [Int], [Int]) throws -> R) rethrows -> R](mlshapedarrayslice/withunsafemutableshapedbufferpointer(using:_:).md)
   Calls the given closure with a pointer to the array’s mutable storage that has a specified buffer layout.
+### Encoding and decoding an array slice
+- [init(from: any Decoder) throws](mlshapedarrayslice/init(from:).md)
+  Creates an array slice from the passed decoder.
+- [func encode(to: any Encoder) throws](mlshapedarrayslice/encode(to:).md)
+  Encodes the array slice.
 ### Default Implementations
 - [Decodable Implementations](mlshapedarrayslice/decodable-implementations.md)
 - [Encodable Implementations](mlshapedarrayslice/encodable-implementations.md)

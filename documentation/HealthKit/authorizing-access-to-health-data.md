@@ -132,7 +132,7 @@ A Guest User session has the following affects on HealthKit:
 - The system obscures Health data in the Privacy and Security and Health Data panels in Settings.
 - Any attempts to save data or otherwise mutate data in the HealthKit store fails with an [`HKError.Code.errorNotPermissibleForGuestUserMode`](hkerror/code/errornotpermissibleforguestusermode.md) error (or [`HKError.Code.errorHealthDataRestricted`](hkerror/code/errorhealthdatarestricted.md) on apps running in iOS 17).
 
-> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session.
+> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session.
 
 Any attempt to request authorization for HealthKit data types fails silently. The system doesn’t display the authorization sheet during a Guest User session.
 

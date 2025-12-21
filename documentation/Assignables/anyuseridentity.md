@@ -44,12 +44,6 @@ struct AnyUserIdentity
 ### Comparing identities
 - [static func == (AnyUserIdentity, AnyUserIdentity) -> Bool](anyuseridentity/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](anyuseridentity/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](anyuseridentity/equatable-implementations.md)
-- [UserIdentity Implementations](anyuseridentity/useridentity-implementations.md)
 
 ## Relationships
 

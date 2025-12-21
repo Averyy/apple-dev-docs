@@ -24,7 +24,7 @@ case outOfMemory
 - [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
   An error code that represents the absence of any problems.
 - [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
 - [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
@@ -41,16 +41,6 @@ case outOfMemory
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 - [MTLCommandBufferError.Code.internal](mtlcommandbuffererror-swift.struct/code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
-  An error code that represents the absence of any problems.
-- [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
-- [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
-  An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
-  An error code that indicates a process doesn’t have access to a GPU device.
-- [MTLCommandBufferError.Code.invalidResource](mtlcommandbuffererror-swift.struct/code/invalidresource.md)
-  An error code that indicates the command buffer has an invalid reference to resource.
 
 
 ---

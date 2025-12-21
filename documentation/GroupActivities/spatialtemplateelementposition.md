@@ -35,17 +35,6 @@ struct BasicTemplate: SpatialTemplate {
 ### Modifying a position
 - [func offsetBy(x: Double, z: Double) -> SpatialTemplateElementPosition](spatialtemplateelementposition/offsetby(x:z:).md)
   Returns a new position at the specified distance from the origin of the shared coordinate space.
-### Operators
-- [static func == (SpatialTemplateElementPosition, SpatialTemplateElementPosition) -> Bool](spatialtemplateelementposition/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](spatialtemplateelementposition/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](spatialtemplateelementposition/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](spatialtemplateelementposition/equatable-implementations.md)
 
 ## Relationships
 

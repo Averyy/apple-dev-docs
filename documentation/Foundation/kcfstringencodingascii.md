@@ -22,6 +22,7 @@ var kCFStringEncodingASCII: CFStringEncoding { get }
 
 - [let NSOperationNotSupportedForKeyException: String](nsoperationnotsupportedforkeyexception.md)
 - [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+  Key in the userInfo dictionary of an NSError received during a failed upload.
 
 
 ---

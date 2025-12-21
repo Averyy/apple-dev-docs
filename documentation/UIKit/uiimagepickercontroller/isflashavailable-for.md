@@ -19,7 +19,7 @@ class func isFlashAvailable(for cameraDevice: UIImagePickerController.CameraDevi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `cameraDevice` can use flash illumination, or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `cameraDevice` can use flash illumination, or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 ## Parameters
 

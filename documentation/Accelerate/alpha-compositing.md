@@ -26,12 +26,8 @@ Composite images together.
   Performs premultiplied alpha compositing of two 32-bit-per-channel, 4-channel ARGB buffers.
 - [func vImagePremultipliedAlphaBlend_BGRA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablend_bgra8888(_:_:_:_:).md)
   Performs premultiplied alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers.
-- [vImagePremultipliedAlphaBlend_RGBA8888](vimagepremultipliedalphablend_rgba8888.md)
-  Performs premultiplied alpha compositing of two 8-bit-per-channel, 4-channel RGBA buffers.
 - [func vImagePremultipliedAlphaBlend_BGRAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablend_bgraffff(_:_:_:_:).md)
   Performs premultiplied alpha compositing of two 32-bit-per-channel, 4-channel BGRA buffers.
-- [vImagePremultipliedAlphaBlend_RGBAFFFF](vimagepremultipliedalphablend_rgbaffff.md)
-  Performs premultiplied alpha compositing of two 32-bit-per-channel, 4-channel RGBA buffers.
 ### Performing premultiplied alpha compositing with blend modes
 - [func vImagePremultipliedAlphaBlendLighten_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablendlighten_rgba8888(_:_:_:_:).md)
   Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers using the lighten blend mode.
@@ -73,8 +69,6 @@ Composite images together.
   Transforms an 8-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
 - [func vImagePremultiplyData_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultiplydata_rgba8888(_:_:_:).md)
   Transforms an 8-bit-per-channel, 4-channel RGBA buffer from nonpremultiplied alpha format to premultiplied alpha format.
-- [vImagePremultiplyData_BGRA8888](vimagepremultiplydata_bgra8888.md)
-  Transforms an 8-bit-per-channel, 4-channel BGRA buffer from nonpremultiplied alpha format to premultiplied alpha format.
 - [func vImagePremultiplyData_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultiplydata_argb16u(_:_:_:).md)
   Transforms an unsigned 16-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
 - [func vImagePremultiplyData_RGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultiplydata_rgba16u(_:_:_:).md)
@@ -89,8 +83,6 @@ Composite images together.
   Transforms a floating-point 32-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
 - [func vImagePremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultiplydata_rgbaffff(_:_:_:).md)
   Transforms a floating-point 32-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
-- [vImagePremultiplyData_BGRAFFFF](vimagepremultiplydata_bgraffff.md)
-  Transforms a floating-point 32-bit-per-channel, 4-channel BGRA buffer from nonpremultiplied alpha format to premultiplied alpha format.
 ### Converting from premultiplied to unpremultiplied format
 - [func vImageUnpremultiplyData_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_planar8(_:_:_:_:).md)
   Transforms an 8-bit planar buffer from premultiplied alpha format to nonpremultiplied alpha format.
@@ -100,8 +92,6 @@ Composite images together.
   Transforms an 8-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
 - [func vImageUnpremultiplyData_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba8888(_:_:_:).md)
   Transforms an 8-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [vImageUnpremultiplyData_BGRA8888](vimageunpremultiplydata_bgra8888.md)
-  Transforms an 8-bit-per-channel, 4-channel BGRA buffer from premultiplied alpha format to nonpremultiplied alpha format.
 - [func vImageUnpremultiplyData_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_argb16u(_:_:_:).md)
   Transforms an unsigned 16-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
 - [func vImageUnpremultiplyData_RGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgba16u(_:_:_:).md)
@@ -116,8 +106,6 @@ Composite images together.
   Transforms a 32-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
 - [func vImageUnpremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageunpremultiplydata_rgbaffff(_:_:_:).md)
   Transforms a 32-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
-- [vImageUnpremultiplyData_BGRAFFFF](vimageunpremultiplydata_bgraffff.md)
-  Transforms a 32-bit-per-channel, 4-channel BGRA buffer from premultiplied alpha format to nonpremultiplied alpha format.
 ### Clipping color values to alpha
 - [func vImageClipToAlpha_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_planar8(_:_:_:_:).md)
   Clamps the values of an 8-bit planar buffer to the corresponding alpha values.

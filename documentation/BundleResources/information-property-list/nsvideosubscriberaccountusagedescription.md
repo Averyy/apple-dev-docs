@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting access to the user’s TV provider account.
+A message that tells people why the app is requesting access to their TV provider account.
 
 **Availability**:
 - tvOS 9.0+

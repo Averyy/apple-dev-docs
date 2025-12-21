@@ -1,37 +1,25 @@
-# !=(_:_:)
+# ~=(_:_:)
 
 **Framework**: SwiftData  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
-
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- visionOS 1.0+
-- watchOS 10.0+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+- Swift 5.9+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func ~= (lhs: SwiftDataError, rhs: any Error) -> Bool
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/swiftdataerror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/swiftdataerror/~=(_:_:))*

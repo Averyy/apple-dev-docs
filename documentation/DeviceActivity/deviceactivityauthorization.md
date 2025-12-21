@@ -22,11 +22,8 @@ class DeviceActivityAuthorization
 - [init()](deviceactivityauthorization/init.md)
 ### Type Properties
 - [static var authorizedClientIdentifiers: [String]](deviceactivityauthorization/authorizedclientidentifiers.md)
-- [static var isAuthorized: Bool](deviceactivityauthorization/isauthorized.md)
 - [static var isOverridden: Bool](deviceactivityauthorization/isoverridden.md)
 - [static var sharingEnabled: Bool](deviceactivityauthorization/sharingenabled.md)
-### Type Methods
-- [static func isAuthorized(String) -> Bool](deviceactivityauthorization/isauthorized(_:).md)
 
 ## Relationships
 

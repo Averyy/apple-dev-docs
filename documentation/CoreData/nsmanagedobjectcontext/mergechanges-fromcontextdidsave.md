@@ -22,8 +22,8 @@ func mergeChanges(fromContextDidSave notification: Notification)
 
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
 - [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+- [Consuming relevant store changes](consuming-relevant-store-changes.md)
 
 #### Discussion
 

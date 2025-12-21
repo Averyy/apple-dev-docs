@@ -25,7 +25,7 @@ var allowsSelection: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), users can select rows. If you set it to [`false`](https://developer.apple.com/documentation/swift/false), they can’t select rows. Setting this property affects cell selection only when the table view isn’t in editing mode. If you want to restrict selection of cells in editing mode, use [`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), users can select rows. If you set it to [`false`](https://developer.apple.com/documentation/Swift/false), they can’t select rows. Setting this property affects cell selection only when the table view isn’t in editing mode. If you want to restrict selection of cells in editing mode, use [`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md).
 
 ## See Also
 

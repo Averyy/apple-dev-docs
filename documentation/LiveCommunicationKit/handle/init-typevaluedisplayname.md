@@ -24,11 +24,6 @@ init(type: Handle.Kind, value: String, displayName: String? = nil)
 - `value`: The raw value of the handle.
 - `displayName`: The name that people see for a participant of a conversation in the conversation UI. If the   is  , the system uses   instead.
 
-## See Also
-
-- [init(from: any Decoder) throws](handle/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

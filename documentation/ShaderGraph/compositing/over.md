@@ -10,7 +10,7 @@ A merge operation that layers foreground over background, using the alpha of the
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 #### Parameter Types

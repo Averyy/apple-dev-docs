@@ -24,9 +24,9 @@ var automaticallySync: Bool
 
 By default, the sync engine uses the system scheduler to automatically schedule both send and fetch operations. If an operation fails due to a recoverable error, such as a network failure or when the server is enforcing request limits, the engine reschedules those operations as necessary. Unless you have a specific need, prefer to use the default behavior in your app.
 
-If you set this property’s value to [`false`](https://developer.apple.com/documentation/swift/false), use [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) and [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) to invoke immediate sync operations, allowing for more control over when your app syncs its records. For example, you may want to sync at a specific time of day or deterministically simulate certain conditions in your unit tests.
+If you set this property’s value to [`false`](https://developer.apple.com/documentation/Swift/false), use [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) and [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) to invoke immediate sync operations, allowing for more control over when your app syncs its records. For example, you may want to sync at a specific time of day or deterministically simulate certain conditions in your unit tests.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

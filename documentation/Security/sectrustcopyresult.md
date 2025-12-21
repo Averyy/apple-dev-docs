@@ -22,7 +22,7 @@ func SecTrustCopyResult(_ trust: SecTrust) -> CFDictionary?
 
 #### Return Value
 
-A dictionary containing keys with values that describe the result of the trust evaluation, or `NULL` when no information is available or if the trust has not been evaluated. See [`Trust Result Dictionary Keys`](trust-result-dictionary-keys.md) for the list of possible keys. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free the dictionary’s memory when you are done with it.
+A dictionary containing keys with values that describe the result of the trust evaluation, or `NULL` when no information is available or if the trust has not been evaluated. See [`Trust Result Dictionary Keys`](trust-result-dictionary-keys.md) for the list of possible keys. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free the dictionary’s memory when you are done with it.
 
 #### Discussion
 

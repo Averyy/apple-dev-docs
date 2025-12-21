@@ -45,6 +45,8 @@ class ASAccessory
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [ASDiscoveredAccessory](asdiscoveredaccessory.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -57,6 +59,8 @@ class ASAccessory
 
 ## See Also
 
+- [class ASDiscoveredAccessory](asdiscoveredaccessory.md)
+  A discovered accessory, for use in creating a customized picker display item.
 - [ASAccessory.AccessoryState](asaccessory/accessorystate.md)
   An enumeration of possible authorization states of an accessory.
 

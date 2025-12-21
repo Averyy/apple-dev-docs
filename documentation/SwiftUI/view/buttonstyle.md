@@ -69,6 +69,7 @@ The [`menuStyle(_:)`](view/menustyle(_:).md) modifier causes the Terms and Condi
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

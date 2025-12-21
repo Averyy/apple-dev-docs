@@ -46,6 +46,8 @@ protocol ConversationManagerDelegate : AnyObject
 
 - [class ConversationManager](conversationmanager.md)
   An interface for managing and observing VoIP conversations.
+- [class ConversationHistoryManager](conversationhistorymanager.md)
+  An interface for managing and providing conversation history.
 - [class Conversation](conversation.md)
   A type that describes a video or audio conversation.
 

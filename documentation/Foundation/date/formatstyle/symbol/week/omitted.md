@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The option for not including the symbol in the formatted output.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -26,10 +26,6 @@ enum ModelAlgorithmType
 ### Comparing algorithms
 - [static func == (MLObjectDetector.ModelParameters.ModelAlgorithmType, MLObjectDetector.ModelParameters.ModelAlgorithmType) -> Bool](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/==(_:_:).md)
   Returns a Boolean value that indicates whether two algorithm are equal.
-- [static func != (Self, Self) -> Bool](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/equatable-implementations.md)
 
 ## Relationships
 
@@ -42,6 +38,8 @@ enum ModelAlgorithmType
 
 - [MLObjectDetector.ModelParameters.ValidationData](mlobjectdetector/modelparameters-swift.struct/validationdata.md)
   A validation dataset for an object detector.
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+  The underlying base model that extracts image features for an object-detector training session.
 
 
 ---

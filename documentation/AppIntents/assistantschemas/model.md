@@ -21,6 +21,7 @@ protocol Model
 ## Relationships
 
 ### Inherited By
+- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
 - [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
 - [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
 - [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)

@@ -6,9 +6,9 @@
 Initialize a list image row item with a text string, an array of @c CPListImageRowItemCardElement and a boolean to allow multiple lines in this row.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -24,6 +24,7 @@ If a nil @c text property is provided the cell will resize accordingly to hide t
 ## Parameters
 
 - `text`: The text visible at the top of the cell.
+- `elements`: The list of @c CPListImageRowItemCardElement  elements visible below the text.
 - `allowsMultipleLines`: Determines if the elements could be visible on more than a single line.
 
 

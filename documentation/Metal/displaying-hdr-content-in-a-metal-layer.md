@@ -1,4 +1,4 @@
-# Displaying HDR Content in a Metal Layer
+# Displaying HDR content in a Metal layer
 
 **Framework**: Metal
 
@@ -6,11 +6,11 @@ Bring your high dynamic range (HDR) content to compatible Mac displays.
 
 #### Overview
 
-In graphics content,  refers to the range of light intensities that a device is capable of displaying or recording, or the range of intensities recorded in a piece of media. Any Mac can display standard dynamic range (SDR) content. Color values are implicitly display-referred, meaning that the brightness value of the content is adapted to the current brightness of the display. When the user adjusts the brightness of their Mac’s display, the SDR content is adjusted directly and proportionally.
+In graphics content,  refers to the range of light intensities that a device is capable of displaying or recording, or the range of intensities recorded in a piece of media. Any Mac can display standard dynamic range (SDR) content. Color values are implicitly display-referred, meaning that the brightness value of the content is adapted to the current brightness of the display. When a person adjusts the brightness of a display they connect to a Mac, the SDR content adjusts directly and proportionally.
 
 ##### High Dynamic Range
 
-High dynamic range (HDR) content has a wider range of brightness levels than older displays can provide. While HDR doesn’t have a precise definition, many media standards, such as HDR10, define exactly how encoded values correspond to physical brightness levels. In macOS, you can play some forms of HDR video content using AVFoundation APIs like [`AVPlayerLayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayerLayer) or [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer). Those APIs handle all color management and tone mapping required to display HDR content, even on SDR displays. However, you can also render your own HDR content to a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). You might do this to support a wider range of brightness levels in a game, or if you are using Metal to process video content.
+High dynamic range (HDR) content has a wider range of brightness levels than older displays can provide. While HDR doesn’t have a precise definition, many media standards, such as HDR10, define exactly how encoded values correspond to physical brightness levels. In macOS, you can play some forms of HDR video content with [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) APIs such as [`AVPlayerLayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayerLayer) or [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer). Those APIs handle all color management and tone mapping required to display HDR content, even on SDR displays. However, you can also render your own HDR content to a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). You might do this to support a wider range of brightness levels in a game, or if you are using Metal to process video content.
 
 ##### Extended Dynamic Range
 
@@ -28,23 +28,23 @@ The Pro Display XDR is capable of acting as a reference display for HDR authorin
 
 Because many HDR standards use physical brightness levels and EDR uses relative brightness levels, you need to decide how best to adapt your HDR content to the EDR-capable display environment. In many cases, you can provide your HDR data to macOS and it adapts the data to the EDR-capable display. In other cases, you may want to get information about the display directly. Here are some common options:
 
-- If your video content is already tone-mapped and normalized, leave the content in its original form and use an appropriate color space to apply a transfer function to the pixel data. See [`Using Color Spaces to Display HDR Content`](using-color-spaces-to-display-hdr-content.md).
-- If you’re modifying video content and need tone mapping that’s consistent with playback in AVFoundation and other system playback mechanisms, use a linear color space and tell macOS to apply its tone-mapping algorithm to your content. See [`Using System Tone Mapping on Video Content`](using-system-tone-mapping-on-video-content.md).
-- If you’re rendering arbitrary content, rendering content for a reference display, or if performance is more important than matching the exact system tone mapping, disable system tone mapping and tone map the content yourself. When you render new video or animation frames, you determine the current range of possible values and map your content to match. See [`Performing Your Own Tone Mapping`](performing-your-own-tone-mapping.md) and [`Implementing Tone Mapping on Reference Displays`](implementing-tone-mapping-on-reference-displays.md).
+- If your video content is already tone-mapped and normalized, leave the content in its original form and use an appropriate color space to apply a transfer function to the pixel data. See [`Using color spaces to display HDR content`](using-color-spaces-to-display-hdr-content.md).
+- If you’re modifying video content and need tone mapping that’s consistent with playback in [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) and other system playback mechanisms, use a linear color space and tell macOS to apply its tone-mapping algorithm to your content. See [`Using system tone mapping on video content`](using-system-tone-mapping-on-video-content.md).
+- If you’re rendering arbitrary content, rendering content for a reference display, or if performance is more important than matching the exact system tone mapping, disable system tone mapping and tone map the content yourself. When you render new video or animation frames, you determine the current range of possible values and map your content to match. See [`Performing your own tone mapping`](performing-your-own-tone-mapping.md) and [`Implementing tone mapping on reference displays`](implementing-tone-mapping-on-reference-displays.md).
 
 ## See Also
 
-- [Processing HDR Images with Metal](processing-hdr-images-with-metal.md)
+- [Processing HDR images with Metal](processing-hdr-images-with-metal.md)
   Implement a post-processing pipeline using the latest features on Apple GPUs.
-- [Determining Support for EDR Values](determining-support-for-edr-values.md)
+- [Determining support for EDR values](determining-support-for-edr-values.md)
   Check whether a display supports EDR.
-- [Using Color Spaces to Display HDR Content](using-color-spaces-to-display-hdr-content.md)
+- [Using color spaces to display HDR content](using-color-spaces-to-display-hdr-content.md)
   Use a color space when you don’t need to edit or process the pixel data.
-- [Using System Tone Mapping on Video Content](using-system-tone-mapping-on-video-content.md)
+- [Using system tone mapping on video content](using-system-tone-mapping-on-video-content.md)
   Use EDR metadata to apply the default system tone mapping to a layer.
-- [Performing Your Own Tone Mapping](performing-your-own-tone-mapping.md)
+- [Performing your own tone mapping](performing-your-own-tone-mapping.md)
   Apply your own tone mapping to get the exact behavior you want.
-- [Implementing Tone Mapping on Reference Displays](implementing-tone-mapping-on-reference-displays.md)
+- [Implementing tone mapping on reference displays](implementing-tone-mapping-on-reference-displays.md)
   Detect reference displays and keep your content within the capabilities of the display hardware.
 
 

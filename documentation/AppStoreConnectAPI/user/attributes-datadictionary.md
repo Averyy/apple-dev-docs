@@ -19,7 +19,7 @@ object User.Attributes
 - [Users](users.md)
   Manage users on your App Store Connect team.
 - [object User.Relationships](user/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

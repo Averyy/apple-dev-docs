@@ -17,7 +17,7 @@ optional func menuHasKeyEquivalent(_ menu: NSMenu, for event: NSEvent, target: A
 
 #### Return Value
 
-If there is a valid and enabled menu item that corresponds to this key-down even, return [`true`](https://developer.apple.com/documentation/swift/true) after specifying the target and action. Return [`false`](https://developer.apple.com/documentation/swift/false) if there are no items with that key equivalent or if the item is disabled.
+If there is a valid and enabled menu item that corresponds to this key-down even, return [`true`](https://developer.apple.com/documentation/Swift/true) after specifying the target and action. Return [`false`](https://developer.apple.com/documentation/Swift/false) if there are no items with that key equivalent or if the item is disabled.
 
 #### Discussion
 

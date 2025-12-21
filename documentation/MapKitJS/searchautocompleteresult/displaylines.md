@@ -11,7 +11,7 @@ Lines of text to display to the user in an autocomplete menu.
 ## Declaration
 
 ```swift
-attribute string[] displayLines;
+displayLines: string[];
 ```
 
 ## See Also

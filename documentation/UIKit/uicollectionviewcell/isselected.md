@@ -21,7 +21,7 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-This property manages the selection state of the cell only. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which indicates an unselected state.
+This property manages the selection state of the cell only. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which indicates an unselected state.
 
 You typically don’t set the value of this property directly. Changing the value of this property programmatically doesn’t change the appearance of the cell. The preferred way to select the cell and highlight it’s to use the selection methods of the collection view object.
 

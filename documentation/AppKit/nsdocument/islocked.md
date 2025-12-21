@@ -17,7 +17,7 @@ var isLocked: Bool { get }
 
 #### Discussion
 
-This property may contain the value [`true`](https://developer.apple.com/documentation/swift/true) because the user lacks the appropriate write permissions, the “user immutable” flag was raised, the parent directory or volume is read only, or the [`checkAutosavingSafety()`](nsdocument/checkautosavingsafety().md) method returned [`false`](https://developer.apple.com/documentation/swift/false). Do not override this property.
+This property may contain the value [`true`](https://developer.apple.com/documentation/Swift/true) because the user lacks the appropriate write permissions, the “user immutable” flag was raised, the parent directory or volume is read only, or the [`checkAutosavingSafety()`](nsdocument/checkautosavingsafety().md) method returned [`false`](https://developer.apple.com/documentation/Swift/false). Do not override this property.
 
 ## See Also
 

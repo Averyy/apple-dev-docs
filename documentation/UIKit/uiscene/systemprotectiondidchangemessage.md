@@ -4,9 +4,9 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -20,8 +20,6 @@ struct SystemProtectionDidChangeMessage
 - [init(scene: UIScene)](uiscene/systemprotectiondidchangemessage/init(scene:).md)
 ### Instance Properties
 - [var scene: UIScene](uiscene/systemprotectiondidchangemessage/scene.md)
-### Type Methods
-- [static func makeNotification(UIScene.SystemProtectionDidChangeMessage) -> Notification](uiscene/systemprotectiondidchangemessage/makenotification(_:).md)
 
 ## Relationships
 

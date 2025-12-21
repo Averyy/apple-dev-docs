@@ -39,19 +39,19 @@ object StatusAccountListGoogle
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)
-  A status report of the client’s CalDAV accounts.
+  A status report of the client’s Calendar accounts.
 - [object StatusAccountListCardDAV](statusaccountlistcarddav.md)
-  A status report of the client’s CardDAV accounts.
+  A status report of the client’s Contacts accounts.
 - [object StatusAccountListExchange](statusaccountlistexchange.md)
-  A status report of the client’s exchange accounts.
+  A status report of the client’s Exchange accounts.
 - [object StatusAccountListLDAP](statusaccountlistldap.md)
-  A status report of the client’s LDAP accounts.
+  A status report of the client’s Lightweight Directory Access Protocol (LDAP) accounts.
 - [object StatusAccountListMailIncoming](statusaccountlistmailincoming.md)
-  A status report of the client’s incoming mail accounts.
+  A status report of the client’s incoming Mail accounts.
 - [object StatusAccountListMailOutgoing](statusaccountlistmailoutgoing.md)
-  A status report of the client’s outgoing mail accounts.
+  A status report of the client’s outgoing Mail accounts.
 - [object StatusAccountListSubscribedCalendar](statusaccountlistsubscribedcalendar.md)
-  A status report of the client’s calendar accounts.
+  A status report of the client’s subscribed calendars.
 
 
 ---

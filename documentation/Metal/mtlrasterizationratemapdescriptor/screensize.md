@@ -21,7 +21,7 @@ var screenSize: MTLSize { get set }
 
 ## Mentions
 
-- [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
 
 #### Discussion
 

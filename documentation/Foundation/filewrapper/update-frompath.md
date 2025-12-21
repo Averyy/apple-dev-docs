@@ -16,7 +16,7 @@ func update(fromPath path: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the update is carried out, [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t needed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the update is carried out, [`false`](https://developer.apple.com/documentation/Swift/false) if it isn’t needed.
 
 #### Discussion
 

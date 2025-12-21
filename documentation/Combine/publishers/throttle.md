@@ -22,15 +22,15 @@ struct Throttle<Upstream, Context> where Upstream : Publisher, Context : Schedul
 
 ## Topics
 
-### Creating a Throttle Publisher
+### Creating a throttle publisher
 - [init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, scheduler: Context, latest: Bool)](publishers/throttle/init(upstream:interval:scheduler:latest:).md)
   Creates a publisher that publishes either the most-recent or first element published by the upstream publisher in a specified time interval.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Throttle.Output](publishers/throttle/output.md)
   The kind of values published by this publisher.
 - [Publishers.Throttle.Failure](publishers/throttle/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/throttle/upstream.md)
   The publisher from which this publisher receives elements.
 - [let interval: Context.SchedulerTimeType.Stride](publishers/throttle/interval.md)
@@ -39,11 +39,6 @@ struct Throttle<Upstream, Context> where Upstream : Publisher, Context : Schedul
   The scheduler on which to publish elements.
 - [let latest: Bool](publishers/throttle/latest.md)
   A Boolean value indicating whether to publish the most recent element.
-### Applying Operators
-- [Publisher Operators](publishers-throttle-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/throttle/publisher-implementations.md)
 
 ## Relationships
 

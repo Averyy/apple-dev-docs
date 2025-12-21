@@ -3,10 +3,10 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The preferred video height to be used when sending and previewing frames. This is optional and a value of -1 will let the system decide the best resolution to use.
+The preferred video height to be used when sending and previewing frames. This is optional; a value of `-1` enables the system to decide the best resolution.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

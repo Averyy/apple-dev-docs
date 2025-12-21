@@ -6,8 +6,8 @@
 A structure that represents an SMS address.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A structure that represents an SMS address.
 ```swift
 struct SMSHandle
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 ## Topics
 
@@ -24,11 +28,6 @@ struct SMSHandle
 ### Accessing handle properties
 - [let phoneNumber: String](smshandle/phonenumber.md)
   The phone number for this handle.
-### Encoding and decoding
-- [init(from: any Decoder) throws](smshandle/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](smshandle/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

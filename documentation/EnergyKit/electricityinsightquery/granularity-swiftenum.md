@@ -6,10 +6,10 @@
 The specific temporal granularity of electricity insight records.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -30,22 +30,6 @@ enum Granularity
   A weekly aggregated insight record for at least six months.
 - [ElectricityInsightQuery.Granularity.yearly](electricityinsightquery/granularity-swift.enum/yearly.md)
   A yearly aggregated insight record for at least one calendar year.
-### Decoding
-- [init(from: any Decoder) throws](electricityinsightquery/granularity-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (ElectricityInsightQuery.Granularity, ElectricityInsightQuery.Granularity) -> Bool](electricityinsightquery/granularity-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](electricityinsightquery/granularity-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](electricityinsightquery/granularity-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](electricityinsightquery/granularity-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](electricityinsightquery/granularity-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

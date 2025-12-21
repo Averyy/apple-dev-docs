@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The `zxx` code: used in cases when the content is not in any particular languages, such as images, symbols, etc.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

@@ -17,7 +17,7 @@ var canBecomeKeyView: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the view can become the key view. In order to become the key view, the view must be visible, it must be installed in a window that supports keyboard entry, and the view’s [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) method must return [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the view can become the key view. In order to become the key view, the view must be visible, it must be installed in a window that supports keyboard entry, and the view’s [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) method must return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

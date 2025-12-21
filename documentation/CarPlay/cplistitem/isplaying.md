@@ -19,7 +19,7 @@ var isPlaying: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the list item displays its Now Playing indicator and positions it using the location that the [`playingIndicatorLocation`](cplistitem/playingindicatorlocation.md) property specifies. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the list item displays its Now Playing indicator and positions it using the location that the [`playingIndicatorLocation`](cplistitem/playingindicatorlocation.md) property specifies. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

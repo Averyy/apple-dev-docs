@@ -1,4 +1,4 @@
-# Device Inspection
+# Device inspection
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Locate and identify a GPU and the features it supports, and sample its counters.
 
 ## Topics
 
-### Checking a GPU Device’s Feature Support
+### Checking a GPU device’s feature support
 - [func supportsFamily(MTLGPUFamily) -> Bool](mtldevice/supportsfamily(_:).md)
   Returns a Boolean value that indicates whether the GPU device supports the feature set of a specific GPU family.
 - [enum MTLGPUFamily](mtlgpufamily.md)
@@ -15,12 +15,12 @@ Locate and identify a GPU and the features it supports, and sample its counters.
   Returns a Boolean value that indicates whether the GPU device supports a specific feature set.
 - [enum MTLFeatureSet](mtlfeatureset.md)
   The device feature sets that define specific platform, hardware, and software configurations.
-### Checking Compute Support
+### Checking compute support
 - [var maxThreadgroupMemoryLength: Int](mtldevice/maxthreadgroupmemorylength.md)
   The maximum threadgroup memory available to a compute kernel, in bytes.
 - [var maxThreadsPerThreadgroup: MTLSize](mtldevice/maxthreadsperthreadgroup.md)
   The maximum number of threads along each dimension of a threadgroup.
-### Checking Render Support
+### Checking render support
 - [var supportsRaytracing: Bool](mtldevice/supportsraytracing.md)
   A Boolean value that indicates whether the GPU device supports ray tracing.
 - [var supportsPrimitiveMotionBlur: Bool](mtldevice/supportsprimitivemotionblur.md)
@@ -41,7 +41,7 @@ Locate and identify a GPU and the features it supports, and sample its counters.
   A Boolean value that indicates whether the GPU supports raster order groups.
 - [var areBarycentricCoordsSupported: Bool](mtldevice/arebarycentriccoordssupported.md)
   A Boolean value that indicates whether the GPU supports barycentric coordinates.
-### Checking Texture and Sampler Support
+### Checking texture and sampler support
 - [var supports32BitFloatFiltering: Bool](mtldevice/supports32bitfloatfiltering.md)
   A Boolean value that indicates whether the GPU can filter a texture with a 32-bit floating-point format.
 - [var supportsBCTextureCompression: Bool](mtldevice/supportsbctexturecompression.md)
@@ -52,12 +52,12 @@ Locate and identify a GPU and the features it supports, and sample its counters.
   A Boolean value that indicates whether you can query the texture level of detail from within a shader.
 - [var readWriteTextureSupport: MTLReadWriteTextureTier](mtldevice/readwritetexturesupport.md)
   The GPU device’s texture support tier.
-### Checking Function Pointer Support
+### Checking function pointer support
 - [var supportsFunctionPointers: Bool](mtldevice/supportsfunctionpointers.md)
-  A Boolean value that indicates whether the GPU device supports pointers to compute kernel functions.
+  A Boolean value that indicates whether the device supports function pointers in compute kernel functions.
 - [var supportsFunctionPointersFromRender: Bool](mtldevice/supportsfunctionpointersfromrender.md)
-  A Boolean value that indicates whether the GPU device supports pointers to render functions.
-### Checking a GPU Device’s Memory
+  A Boolean value that indicates whether the device supports function pointers in render functions.
+### Checking a GPU device’s memory
 - [var currentAllocatedSize: Int](mtldevice/currentallocatedsize.md)
   The total amount of memory, in bytes, the GPU device is using for all of its resources.
 - [var recommendedMaxWorkingSetSize: UInt64](mtldevice/recommendedmaxworkingsetsize.md)
@@ -66,7 +66,7 @@ Locate and identify a GPU and the features it supports, and sample its counters.
   A Boolean value that indicates whether the GPU shares all of its memory with the CPU.
 - [var maxTransferRate: UInt64](mtldevice/maxtransferrate.md)
   The highest theoretical rate, in bytes per second, the system can copy between system memory and the GPU’s dedicated memory (VRAM).
-### Sampling a GPU Device’s Counters
+### Sampling a GPU device’s counters
 - [var counterSets: [any MTLCounterSet]?](mtldevice/countersets.md)
   The counter sets supported by the device object.
 - [func supportsCounterSampling(MTLCounterSamplingPoint) -> Bool](mtldevice/supportscountersampling(_:).md)
@@ -75,10 +75,10 @@ Locate and identify a GPU and the features it supports, and sample its counters.
   Options for different times when you can sample GPU counters.
 - [func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throws -> any MTLCounterSampleBuffer](mtldevice/makecountersamplebuffer(descriptor:).md)
   Creates a counter sample buffer.
-### Sampling GPU and CPU Timestamps Simultaneously
+### Sampling GPU and CPU timestamps simultaneously
 - [func sampleTimestamps() -> (cpu: MTLTimestamp, gpu: MTLTimestamp)](mtldevice/sampletimestamps.md)
   Captures and returns a CPU timestamp and a GPU timestamp from the same moment in time.
-### Identifying a GPU Device
+### Identifying a GPU device
 - [var name: String](mtldevice/name.md)
   The full name of the GPU device.
 - [var architecture: MTLArchitecture](mtldevice/architecture.md)
@@ -108,13 +108,13 @@ Locate and identify a GPU and the features it supports, and sample its counters.
 
 ## See Also
 
-- [Work Submission](work-submission.md)
+- [Work submission](work-submission.md)
   Create queues that submit work to the GPU or load assets into GPU resources, and indirect command buffers that group your frequent commands together.
-- [Pipeline State Creation](pipeline-state-creation.md)
+- [Pipeline state creation](pipeline-state-creation.md)
   Create pipeline states for render and compute passes, samplers, depth and stencil states, and indirect command buffers.
-- [Resource Creation](resource-creation.md)
+- [Resource creation](resource-creation.md)
   Load assets with input/output queues and make various resource instances, such as buffers, textures, acceleration structures, and memory heaps.
-- [Shader Library and Archive Creation](shader-library-and-archive-creation.md)
+- [Shader library and archive creation](shader-library-and-archive-creation.md)
   Create static and dynamic shader libraries, and binary shader archives.
 
 

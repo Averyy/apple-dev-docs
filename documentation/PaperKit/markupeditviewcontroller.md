@@ -6,9 +6,9 @@
 A view controller that manages the interface for inserting content into a canvas.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -30,7 +30,6 @@ A view controller that manages the interface for inserting content into a canvas
 - [let supportedFeatureSet: FeatureSet](markupeditviewcontroller/supportedfeatureset.md)
   The supported features of this edit UI.
 ### Instance Methods
-- [func viewDidLayoutSubviews()](markupeditviewcontroller/viewdidlayoutsubviews.md)
 - [func viewDidLoad()](markupeditviewcontroller/viewdidload.md)
 
 ## Relationships

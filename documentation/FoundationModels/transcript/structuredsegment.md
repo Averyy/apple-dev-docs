@@ -6,11 +6,11 @@
 A segment containing structured content.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,27 +21,12 @@ struct StructuredSegment
 ## Topics
 
 ### Creating a structured segment
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, source: String, content: GeneratedContent)](transcript/structuredsegment/init(id:source:content:).md)
 ### Inspecting a structured segment
-- [let content: GeneratedContent](transcript/structuredsegment/content.md)
+- [var content: GeneratedContent](transcript/structuredsegment/content.md)
   The content of the segment.
-- [var id: String](transcript/structuredsegment/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [Transcript.StructuredSegment.ID](transcript/structuredsegment/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var source: String](transcript/structuredsegment/source.md)
   A source that be used to understand which type content represents.
-### Encoding a structured segment
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing structured segments
-- [static func == (Transcript.StructuredSegment, Transcript.StructuredSegment) -> Bool](transcript/structuredsegment/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/structuredsegment/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/structuredsegment/equatable-implementations.md)
 
 ## Relationships
 
@@ -58,7 +43,7 @@ struct StructuredSegment
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)

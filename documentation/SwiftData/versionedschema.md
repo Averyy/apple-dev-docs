@@ -18,7 +18,7 @@ An interface for describing a specific version of a schema, including the models
 ## Declaration
 
 ```swift
-protocol VersionedSchema
+protocol VersionedSchema : SendableMetatype
 ```
 
 ## Topics
@@ -29,6 +29,11 @@ protocol VersionedSchema
 ### Specifying the included models
 - [static var models: [any PersistentModel.Type]](versionedschema/models.md)
   The models to include in this version of the schema.
+
+## Relationships
+
+### Inherits From
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

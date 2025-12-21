@@ -16,10 +16,10 @@ var additionalScopes: String { get set }
 
 ## Mentions
 
-- [Creating an embedded assertion](creating-an-embedded-assertion.md)
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
-- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
 - [Creating a refresh request](creating-a-refresh-request.md)
+- [Creating an embedded assertion](creating-an-embedded-assertion.md)
+- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
+- [Creating and validating a login request](creating-and-validating-a-login-request.md)
 
 #### Discussion
 

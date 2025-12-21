@@ -13,7 +13,6 @@ The index of the axis on which the function applies scale and bias.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

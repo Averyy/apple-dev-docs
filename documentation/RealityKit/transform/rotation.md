@@ -10,7 +10,7 @@ The rotation of the entity specified as a unit quaternion.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -18,10 +18,6 @@ The rotation of the entity specified as a unit quaternion.
 ```swift
 var rotation: simd_quatf
 ```
-
-## Mentions
-
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
 
 ## See Also
 

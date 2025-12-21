@@ -11,7 +11,7 @@ Data that you define and assign to the annotation.
 ## Declaration
 
 ```swift
-attribute Object data;
+data?: object;
 ```
 
 #### Discussion

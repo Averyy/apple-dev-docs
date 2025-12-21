@@ -23,7 +23,7 @@ var hasPrecisionRecallCurve: Bool { get }
 
 Precision refers to the percentage of your classification results that are relevant, while recall refers to the percentage of total relevant results correctly classified.
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then you can call precision and recall-related methods in this observation. If this property is [`false`](https://developer.apple.com/documentation/swift/false), then the  precision and recall-related methods won’t return meaningful data.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then you can call precision and recall-related methods in this observation. If this property is [`false`](https://developer.apple.com/documentation/Swift/false), then the  precision and recall-related methods won’t return meaningful data.
 
 ## See Also
 

@@ -17,9 +17,9 @@ var wantsNotificationForMarkedText: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the field editor should post text notification changes while editing marked text. When the value is NO, the field editor should delay notifications until the marked text is confirmed.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the field editor should post text notification changes while editing marked text. When the value is NO, the field editor should delay notifications until the marked text is confirmed.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Subclasses can override the property and change the value as appropriate.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses can override the property and change the value as appropriate.
 
 ## See Also
 

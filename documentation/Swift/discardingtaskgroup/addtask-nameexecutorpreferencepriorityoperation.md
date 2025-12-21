@@ -6,13 +6,13 @@
 Adds a child task to the group.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -23,8 +23,8 @@ mutating func addTask(name: String?, executorPreference taskExecutor: (any TaskE
 ## Parameters
 
 - `name`: Human readable name of this task.
-- `taskExecutor`: 
-- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
+- `taskExecutor`: The task executor that the child task should be started on and keep using.   Explicitly passing   as the executor preference is equivalent to   calling the   method without a preference, and effectively   means to inherit the outer context’s executor preference.   You can also pass the   global executor explicitly.
+- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.
 - `operation`: The operation to execute as part of the task group.
 
 

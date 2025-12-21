@@ -19,7 +19,7 @@ object PrereleaseVersion.Attributes
 - [Prerelease Versions](prerelease-versions.md)
   Platform-specific versions of your app intended for distribution to beta testers.
 - [object PrereleaseVersion.Relationships](prereleaseversion/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

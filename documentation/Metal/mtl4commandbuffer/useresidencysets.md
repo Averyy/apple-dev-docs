@@ -3,15 +3,15 @@
 **Framework**: Metal  
 **Kind**: method
 
-Marks an array of residency sets as part of the command buffer’s execution.
+Applies multiple residency sets to a command buffer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,11 +21,11 @@ func useResidencySets(_ residencySets: [any MTLResidencySet])
 
 #### Discussion
 
-Ensures that Metal makes resident the resources that residency sets contain during execution of this command buffer.
+Each command buffer can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySets`: Array of   instances to mark resident.
+- `residencySets`: An array of residency sets, each of which contains resource allocations, such as  ,  , and   instances.
 
 
 ---

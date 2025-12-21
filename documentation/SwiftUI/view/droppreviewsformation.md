@@ -6,7 +6,7 @@
 Describes the way previews for a drop are composed.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

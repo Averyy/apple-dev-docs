@@ -37,8 +37,8 @@ For additional information about how to use views and controls, see [`Human Inte
 - [class NSActionCell](nsactioncell.md)
   An active area inside a control.
 ### Container views
-- [Localization-Friendly Layouts in macOS](../xcode/localization-friendly_layouts_in_macos.md)
-  This project demonstrates localization-friendly auto layout constraints. It uses `NSGridView` as a container view to achieve localized layouts.
+- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+  This project demonstrates localization-friendly auto layout constraints.
 - [Grid View](grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.
 - [class NSSplitView](nssplitview.md)
@@ -109,9 +109,10 @@ For additional information about how to use views and controls, see [`Human Inte
   A legacy interface for grouping radio buttons or other types of cells together.
 ### Liquid Glass effects
 - [class NSGlassEffectView](nsglasseffectview.md)
-  NSGlassView embeds its content view in a dynamic glass effect.
+  A view that embeds its content view in a dynamic glass effect.
+- [NSGlassEffectView.Style](nsglasseffectview/style-swift.enum.md)
 - [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
-  NSGlassContainerView allows similar NSGlassViews in appropriate proximity to eachother to be merged together. Additionally, NSGlassContainerView can reduce the number of passes required to render similar glass views.
+  A view that efficiently merges descendant glass effect views together when they are within a specified proximity to each other.
 ### Interacting with adjacent views
 - [class NSBackgroundExtensionView](nsbackgroundextensionview.md)
   A view that extends content to fill its own bounds.

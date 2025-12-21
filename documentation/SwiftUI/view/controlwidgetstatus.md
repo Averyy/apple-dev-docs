@@ -9,8 +9,8 @@ The status of the control described by the modified label.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ The status of the control described by the modified label.
 
 #### Discussion
 
-This text will appear in Control Center when your control’s state changes. You can customize the text by applying this modifier to the control’s value label:
+This text appears in Control Center when your control’s state changes. You can customize the text by applying this modifier to the control’s value label:
 
 ```swift
 // Status Text: "Do Not Disturb Until This Evening" / "Do Not Disturb Disabled"

@@ -29,11 +29,11 @@ func render(_ image: CIImage, to buffer: CVPixelBuffer, bounds: CGRect, colorSpa
 ## See Also
 
 - [func createCGImage(CIImage, from: CGRect) -> CGImage?](cicontext/createcgimage(_:from:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object.
+  Creates a Core Graphics image from a region of a Core Image image instance.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling the pixel format and color space of the `CGImage`.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object with deferred rendering.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling when the image is rendered.
 - [func render(CIImage, toBitmap: UnsafeMutableRawPointer, rowBytes: Int, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpace?)](cicontext/render(_:tobitmap:rowbytes:bounds:format:colorspace:).md)
   Renders to the given bitmap.
 - [func render(CIImage, to: CVPixelBuffer)](cicontext/render(_:to:).md)

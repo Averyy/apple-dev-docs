@@ -21,6 +21,7 @@ func finish() async
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)

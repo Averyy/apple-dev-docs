@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s calendar accounts.
+A status report of the client’s subscribed calendars.
 
 **Availability**:
 - iOS 16.0+
@@ -34,24 +34,24 @@ object StatusAccountListSubscribedCalendar
 
 ### Objects
 - [object StatusAccountListSubscribedCalendarAccountObject](statusaccountlistsubscribedcalendaraccountobject.md)
-  A status report of the client’s calendar account details.
+  A status report of the client’s subscribed calendar details.
 
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)
-  A status report of the client’s CalDAV accounts.
+  A status report of the client’s Calendar accounts.
 - [object StatusAccountListCardDAV](statusaccountlistcarddav.md)
-  A status report of the client’s CardDAV accounts.
+  A status report of the client’s Contacts accounts.
 - [object StatusAccountListExchange](statusaccountlistexchange.md)
-  A status report of the client’s exchange accounts.
+  A status report of the client’s Exchange accounts.
 - [object StatusAccountListGoogle](statusaccountlistgoogle.md)
   A status report of the client’s Google accounts.
 - [object StatusAccountListLDAP](statusaccountlistldap.md)
-  A status report of the client’s LDAP accounts.
+  A status report of the client’s Lightweight Directory Access Protocol (LDAP) accounts.
 - [object StatusAccountListMailIncoming](statusaccountlistmailincoming.md)
-  A status report of the client’s incoming mail accounts.
+  A status report of the client’s incoming Mail accounts.
 - [object StatusAccountListMailOutgoing](statusaccountlistmailoutgoing.md)
-  A status report of the client’s outgoing mail accounts.
+  A status report of the client’s outgoing Mail accounts.
 
 
 ---

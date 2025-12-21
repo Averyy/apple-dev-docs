@@ -19,9 +19,6 @@ enum ValidationOutcome
 
 ## Topics
 
-### Operators
-- [static func == (MobileNationalIDCardDisplayRequest.Response.ValidationOutcome, MobileNationalIDCardDisplayRequest.Response.ValidationOutcome) -> Bool](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.approved](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/approved.md)
   A message that indicates the user approved the document response.
@@ -29,14 +26,6 @@ enum ValidationOutcome
   A message that indicates the user didn’t explicitly approve or reject the document response.
 - [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.rejected](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/rejected.md)
   A message that indicates the user rejected the document response.
-### Instance Properties
-- [var hashValue: Int](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

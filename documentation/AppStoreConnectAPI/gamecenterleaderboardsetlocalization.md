@@ -22,6 +22,18 @@ object GameCenterLeaderboardSetLocalization
 
 ## See Also
 
+- [object GameCenterLeaderboardSetLocalizationV2](gamecenterleaderboardsetlocalizationv2.md)
+  The data structure that represents a Game Center leaderboard set localization v2 resource.
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest](gamecenterleaderboardsetlocalizationv2createrequest.md)
+  The request body you use to create a Game Center leaderboard set localization v2.
+- [object GameCenterLeaderboardSetLocalizationV2Response](gamecenterleaderboardsetlocalizationv2response.md)
+  A response that contains a single Game Center leaderboard set localization v2 resource.
+- [object GameCenterLeaderboardSetLocalizationV2UpdateRequest](gamecenterleaderboardsetlocalizationv2updaterequest.md)
+  The request body you use to update a Game Center leaderboard set localization v2.
+- [object GameCenterLeaderboardSetLocalizationsV2Response](gamecenterleaderboardsetlocalizationsv2response.md)
+  A response that contains a single Game Center leaderboard set localization v2 resource.
+- [object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse](gamecenterleaderboardsetlocalizationv2imagelinkageresponse.md)
+  A response that contains a single Game Center leaderboard set localization v2 image linkage resource.
 - [object GameCenterLeaderboardSetLocalizationCreateRequest](gamecenterleaderboardsetlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
 - [object GameCenterLeaderboardSetLocalizationResponse](gamecenterleaderboardsetlocalizationresponse.md)

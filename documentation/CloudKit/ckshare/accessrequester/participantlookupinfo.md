@@ -3,16 +3,16 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-Convenience method to get the requester’s lookup info. This lookup info can be used in [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to approve the requester by fetching the corresponding participant and adding the participant to the share.
+Lookup information for the requester.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,6 +20,10 @@ Convenience method to get the requester’s lookup info. This lookup info can be
 @NSCopying
 var participantLookupInfo: CKUserIdentity.LookupInfo { get }
 ```
+
+#### Discussion
+
+Use this lookup info with [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to fetch the corresponding participant. Once fetched, add the participant to the share to approve the requester.
 
 
 ---

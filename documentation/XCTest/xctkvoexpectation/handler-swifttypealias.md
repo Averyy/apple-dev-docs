@@ -13,7 +13,7 @@ typealias Handler = (Any, [AnyHashable : Any]) -> Bool
 
 #### Return Value
 
-Your custom handler returns [`true`](https://developer.apple.com/documentation/swift/true) if the system fulfills the expectation after the observed change; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Your custom handler returns [`true`](https://developer.apple.com/documentation/Swift/true) if the system fulfills the expectation after the observed change; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets an object for the specified key in the key-value store.
+Sets the value of the specified key to a property list object.
 
 **Availability**:
 - iOS 5.0+
@@ -22,29 +22,29 @@ func set(_ anObject: Any?, forKey aKey: String)
 
 #### Discussion
 
-If the type of `anObject` is not one of the property list types, this method does not set it in the key-value store. Instead, it logs an error and silently ignores the object.
+Use this method to write property list object types to the iCloud key-value store.
 
 ## Parameters
 
-- `anObject`: The object you want to store. The type of the object must be one of the property list types:  ,  ,  ,  ,  , or  . The total size (in bytes) of the object must not exceed the per-key size limits.
-- `aKey`: The key under which to store the value. The length of this key must not exceed 64 bytes using UTF8 encoding.
+- `anObject`: The property list type to save to the iCloud key-value store.
+- `aKey`: The key to associate with the value.
 
 ## See Also
 
-- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
-  Sets an array object for the specified key in the key-value store.
 - [func set(Bool, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-8o8mq.md)
-  Sets a Boolean value for the specified key in the key-value store.
-- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
-  Sets a data object for the specified key in the key-value store.
-- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
-  Sets a dictionary object for the specified key in the key-value store.
+  Sets the value of the specified key to a Boolean value.
 - [func set(Double, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-1xml0.md)
-  Sets a double value for the specified key in the key-value store.
+  Sets the value of the specified key to a double value.
 - [func set(Int64, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-7tt20.md)
-  Sets a `long long` value for the specified key in the key-value store.
+  Sets the value of the specified key to a 64-bit integer value.
 - [func set(String?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-2rlp.md)
-  Sets a string object for the specified key in the key-value store.
+  Sets the value of the specified key to a string value.
+- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
+  Sets the value of the specified key to a data object.
+- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
+  Sets the value of the specified key to an array of property list objects.
+- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
+  Sets the value of the specified key to a dictionary of property list objects.
 
 
 ---

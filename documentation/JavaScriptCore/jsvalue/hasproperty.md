@@ -16,12 +16,12 @@ Returns a Boolean value indicating whether the JavaScript value has a defined pr
 ## Declaration
 
 ```swift
-func hasProperty(_ property: Any!) -> Bool
+func hasProperty(_ property: String!) -> Bool
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the JavaScript object has a defined property by that name; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the JavaScript object has a defined property by that name; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

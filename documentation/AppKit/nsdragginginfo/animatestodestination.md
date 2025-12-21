@@ -18,7 +18,7 @@ var animatesToDestination: Bool { get set }
 
 #### Discussion
 
-During the conclusion of an accepted drag, if this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the drag manager will animate each dragging image to their [`NSDraggingFormation.none`](nsdraggingformation/none.md) locations. Otherwise, the drag images are removed without any animation.
+During the conclusion of an accepted drag, if this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the drag manager will animate each dragging image to their [`NSDraggingFormation.none`](nsdraggingformation/none.md) locations. Otherwise, the drag images are removed without any animation.
 
 This property is inspected between prepareForDragOperation: and performDragOperation:. You should enumerate through the dragging items during performDragOperation: to set the item’s [`draggingFrame`](nsdraggingitem/draggingframe.md) to the correct destinations.
 

@@ -6,10 +6,10 @@
 An object you use to request information from multiple identity documents.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ class PKIdentityAnyOfDescriptor
 
 #### Discussion
 
-Use this class to support requests for one or more identity documents or when multiple identity documents are requested. For example, this class supports the return of a driver’s license or US photo ID, or the request for a driver’s license and a passport.
+Use this class to support requests for one or more identity documents or when multiple identity documents are requested. For example, this class supports the return of a driver’s license or digital ID, or the request for a driver’s license and a digital ID.
 
 ## Topics
 
@@ -58,6 +58,10 @@ Use this class to support requests for one or more identity documents or when mu
 
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+  Set up your environment to use Verify with Wallet.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
 - [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)

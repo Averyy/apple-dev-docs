@@ -19,7 +19,7 @@ var isGeneratingDeviceOrientationNotifications: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the shared [`UIDevice`](uidevice.md) object posts a [`orientationDidChangeNotification`](uidevice/orientationdidchangenotification.md) notification when the device changes orientation. If the value is [`false`](https://developer.apple.com/documentation/swift/false), it generates no orientation notifications. Device orientation notifications can only be generated between calls to the [`beginGeneratingDeviceOrientationNotifications()`](uidevice/begingeneratingdeviceorientationnotifications().md) and [`endGeneratingDeviceOrientationNotifications()`](uidevice/endgeneratingdeviceorientationnotifications().md) methods.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the shared [`UIDevice`](uidevice.md) object posts a [`orientationDidChangeNotification`](uidevice/orientationdidchangenotification.md) notification when the device changes orientation. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), it generates no orientation notifications. Device orientation notifications can only be generated between calls to the [`beginGeneratingDeviceOrientationNotifications()`](uidevice/begingeneratingdeviceorientationnotifications().md) and [`endGeneratingDeviceOrientationNotifications()`](uidevice/endgeneratingdeviceorientationnotifications().md) methods.
 
 ## See Also
 

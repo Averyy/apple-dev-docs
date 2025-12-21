@@ -17,11 +17,11 @@ optional func shouldPerformSegue(withIdentifier identifier: NSStoryboardSegue.Id
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow a segue to proceed or [`false`](https://developer.apple.com/documentation/swift/false) to stop it from proceeding.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow a segue to proceed or [`false`](https://developer.apple.com/documentation/Swift/false) to stop it from proceeding.
 
 #### Discussion
 
-Override this method to return [`false`](https://developer.apple.com/documentation/swift/false) for cases where you want to prevent the performance of a segue. By default, invocation of a segue results in the segue being performed.
+Override this method to return [`false`](https://developer.apple.com/documentation/Swift/false) for cases where you want to prevent the performance of a segue. By default, invocation of a segue results in the segue being performed.
 
 ## Parameters
 

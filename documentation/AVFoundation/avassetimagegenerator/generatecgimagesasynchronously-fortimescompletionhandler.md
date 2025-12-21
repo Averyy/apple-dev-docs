@@ -30,7 +30,7 @@ Swift clients should prefer the asynchronous `images(for:)` method instead.
 
 ## Topics
 
-### Data Types
+### Data types
 - [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)
   A type alias for a closure that provides the result of an image generation request.
 - [AVAssetImageGenerator.Result](avassetimagegenerator/result.md)
@@ -42,6 +42,8 @@ Swift clients should prefer the asynchronous `images(for:)` method instead.
   Generates an image for a requested time.
 - [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
   Generates images for times within the video timeline.
+- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
+  An asynchronous sequence of images created by an image generator.
 - [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](avassetimagegenerator/generatecgimageasynchronously(for:completionhandler:).md)
   Generates an image asynchronously for a requested time, and returns the result in a callback.
 - [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)

@@ -1,4 +1,4 @@
-# itemForFeatureCollection
+# itemForFeatureCollection(itemCollection, geoJSON)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,10 +11,10 @@ Overrides a feature collection.
 ## Declaration
 
 ```swift
-optional(mapkit.Annotation|mapkit.Overlay|(mapkit.Annotation|mapkit.Overlay)[]) itemForFeatureCollection(
-	ItemCollection itemCollection,
-	Object geoJSON
-);
+itemForFeatureCollection?<D extends GeoJSONTypes.FeatureCollection>(
+        itemCollection: ItemCollection<D>,
+        geoJSON: D,
+    ): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value
@@ -32,21 +32,21 @@ MapKit JS calls this method for every GeoJSON `FeatureCollection` object. The fr
 
 ## See Also
 
-- [itemForFeature](geojsondelegate/itemforfeature.md)
+- [itemForFeature(item, geoJSON)](geojsondelegate/itemforfeature.md)
   Overrides a feature.
-- [itemForLineString](geojsondelegate/itemforlinestring.md)
+- [itemForLineString(overlay, geoJSON)](geojsondelegate/itemforlinestring.md)
   Overrides a line string.
-- [itemForMultiLineString](geojsondelegate/itemformultilinestring.md)
+- [itemForMultiLineString(itemCollection, geoJSON)](geojsondelegate/itemformultilinestring.md)
   Overrides a multiline string.
-- [itemForPoint](geojsondelegate/itemforpoint.md)
+- [itemForPoint(coordinate, geoJSON)](geojsondelegate/itemforpoint.md)
   Overrides a point.
-- [itemForMultiPoint](geojsondelegate/itemformultipoint.md)
+- [itemForMultiPoint(itemCollection, geoJSON)](geojsondelegate/itemformultipoint.md)
   Overrides a multipoint object.
-- [itemForPolygon](geojsondelegate/itemforpolygon.md)
+- [itemForPolygon(overlay, geoJSON)](geojsondelegate/itemforpolygon.md)
   Overrides a polygon.
-- [itemForMultiPolygon](geojsondelegate/itemformultipolygon.md)
+- [itemForMultiPolygon(itemCollection, geoJSON)](geojsondelegate/itemformultipolygon.md)
   Overrides a multipolygon.
-- [styleForOverlay](geojsondelegate/styleforoverlay.md)
+- [styleForOverlay(overlay, geoJSON)](geojsondelegate/styleforoverlay.md)
   Overrides the style of overlays.
 
 

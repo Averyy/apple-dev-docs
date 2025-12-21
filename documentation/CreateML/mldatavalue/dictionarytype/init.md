@@ -1,9 +1,7 @@
-# init()
+# init(_:)
 
 **Framework**: Create ML  
 **Kind**: init
-
-Creates a new default instance of the conforming type when a data value is missing or invalid.
 
 **Availability**:
 - iOS 15.0+
@@ -16,10 +14,16 @@ Creates a new default instance of the conforming type when a data value is missi
 ## Declaration
 
 ```swift
-init()
+init(_ contents: [MLDataValue : MLDataValue])
 ```
+
+## See Also
+
+- [init<S>(uniqueKeysWithValues: S)](mldatavalue/dictionarytype/init(uniquekeyswithvalues:).md)
+- [MLDataValue.DictionaryType.Key](mldatavalue/dictionarytype/key.md)
+- [MLDataValue.DictionaryType.Value](mldatavalue/dictionarytype/value.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatavalue/dictionarytype/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatavalue/dictionarytype/init(_:))*

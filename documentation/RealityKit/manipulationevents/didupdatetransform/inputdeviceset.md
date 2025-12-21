@@ -6,7 +6,7 @@
 The active set of `InputDevice`s on the entity.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -17,11 +17,11 @@ func canAsynchronouslyWrite(to url: URL, ofType typeName: String, for saveOperat
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) by default; subclasses can override to return [`true`](https://developer.apple.com/documentation/swift/true), thereby enabling asynchronous writing.
+[`false`](https://developer.apple.com/documentation/Swift/false) by default; subclasses can override to return [`true`](https://developer.apple.com/documentation/Swift/true), thereby enabling asynchronous writing.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). You are strongly encouraged to override it and make it return [`true`](https://developer.apple.com/documentation/swift/true), after making sure your overrides of document writing methods can be safely invoked on a non-main thread, and making sure that the [`unblockUserInteraction()`](nsdocument/unblockuserinteraction().md) method is invoked at some appropriate time during writing.
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). You are strongly encouraged to override it and make it return [`true`](https://developer.apple.com/documentation/Swift/true), after making sure your overrides of document writing methods can be safely invoked on a non-main thread, and making sure that the [`unblockUserInteraction()`](nsdocument/unblockuserinteraction().md) method is invoked at some appropriate time during writing.
 
 ## Parameters
 

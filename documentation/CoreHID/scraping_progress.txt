@@ -1,4 +1,4 @@
 Completed scraping Core HID!
-Total pages scraped: 3439
-Pages skipped (unchanged): 6
+Total pages scraped: 3073
+Pages skipped (unchanged): 1
 Pages failed: 0

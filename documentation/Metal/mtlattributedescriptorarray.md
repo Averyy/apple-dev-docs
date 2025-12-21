@@ -25,7 +25,7 @@ An [`MTLAttributeDescriptorArray`](mtlattributedescriptorarray.md) defines the d
 
 ## Topics
 
-### Accessing Attribute State Objects
+### Accessing attribute state objects
 - [subscript(Int) -> MTLAttributeDescriptor!](mtlattributedescriptorarray/subscript(_:).md)
   Returns the state of the specified attribute.
 

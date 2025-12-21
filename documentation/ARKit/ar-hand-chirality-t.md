@@ -25,6 +25,8 @@ typedef enum { ... } ar_hand_chirality_t;
   Creates a hand anchor.
 - [ar_hand_anchor_get_chirality](ar_hand_anchor_get_chirality.md)
   Gets the value that indicates whether the hand is a left or right hand.
+- [ar_hand_anchor_get_fidelity](ar_hand_anchor_get_fidelity.md)
+  Get the fidelity of the hand anchor.
 - [ar_hand_tracking_configuration_t](ar_hand_tracking_configuration_t.md)
 - [ar_hand_tracking_provider_create](ar_hand_tracking_provider_create.md)
   A source of live data about the position of a person’s hands and hand joints.
@@ -43,7 +45,6 @@ typedef enum { ... } ar_hand_chirality_t;
 - [ar_hand_skeleton_joint_name_forearm_wrist](ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_forearm_wrist.md)
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_base](ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_base.md)
 - [ar_hand_skeleton_joint_name_index_finger_intermediate_tip](ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_intermediate_tip.md)
-- [ar_hand_skeleton_joint_name_index_finger_knuckle](ar_hand_skeleton_joint_name_t/ar_hand_skeleton_joint_name_index_finger_knuckle.md)
 
 
 ---

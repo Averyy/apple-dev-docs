@@ -16,7 +16,7 @@ var hidesOthers: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which leaves the visibility of other apps unchanged. Setting the property to [`true`](https://developer.apple.com/documentation/swift/true) hides all apps except the one that launched.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which leaves the visibility of other apps unchanged. Setting the property to [`true`](https://developer.apple.com/documentation/Swift/true) hides all apps except the one that launched.
 
 ## See Also
 

@@ -17,7 +17,6 @@ A mask that defines how this sprite is lit by light nodes in the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var lightingBitMask: UInt32 { get set }
 ```
 

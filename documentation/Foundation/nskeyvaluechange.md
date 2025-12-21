@@ -22,7 +22,7 @@ enum NSKeyValueChange
 
 #### Overview
 
-These constants are returned as the value for a [`kindKey`](nskeyvaluechangekey/kindkey.md) key in the change dictionary passed to doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalue indicating the type of change made.
+These constants are returned as the value for a [`kindKey`](nskeyvaluechangekey/kindkey.md) key in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)) indicating the type of change made.
 
 ## Topics
 

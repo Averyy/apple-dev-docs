@@ -33,6 +33,13 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 - `i`: A valid index of the collection.
 - `distance`: The distance to offset  .
 
+## See Also
+
+- [func index(after: Int) -> Int](slidingwindows/index(after:).md)
+  Returns the position immediately after the given index.
+- [func index(before: Int) -> Int](slidingwindows/index(before:).md)
+  Returns the position immediately before the given index.
+
 
 ---
 

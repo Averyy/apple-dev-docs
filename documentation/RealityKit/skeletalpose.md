@@ -10,7 +10,7 @@ A container that holds the position and orientation of each joint in a single an
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -26,7 +26,7 @@ Each index in [`jointNames`](skeletalpose/jointnames.md) directly corresponds to
 ## Topics
 
 ### Initializers
-- [init(id:from:)](skeletalpose/init(id:from:).md)
+- [init(id: SkeletalPose.ID, from: MeshResource.Skeleton)](skeletalpose/init(id:from:).md)
   Creates a skeletal pose from the rest pose of the model skeleton.
 - [init(id: SkeletalPose.ID, joints: [(String, JointTransforms.Element)])](skeletalpose/init(id:joints:).md)
   Creates a pose for the joint name and transformation pairs.

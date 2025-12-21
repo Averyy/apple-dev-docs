@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Return the type preserving attributed variant of this style.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var attributedStyle: Date.VerbatimFormatStyle.Attributed { get }
 ```
+
+#### Discussion
+
+This style attributes the formatted date with the `AttributeScopes.FoundationAttributes.DateFormatFieldAttribute`.
 
 
 ---

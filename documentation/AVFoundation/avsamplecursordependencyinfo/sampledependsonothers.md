@@ -22,7 +22,7 @@ var sampleDependsOnOthers: ObjCBool
 
 #### Discussion
 
-This value indicates whether the sample depends on other media samples when [`sampleIndicatesWhetherItDependsOnOthers`](avsamplecursordependencyinfo/sampleindicateswhetheritdependsonothers.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This value indicates whether the sample depends on other media samples when [`sampleIndicatesWhetherItDependsOnOthers`](avsamplecursordependencyinfo/sampleindicateswhetheritdependsonothers.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

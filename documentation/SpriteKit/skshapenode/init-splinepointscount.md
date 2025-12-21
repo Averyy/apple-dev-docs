@@ -17,7 +17,6 @@ Creates a shape node from a series of spline points.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(splinePoints points: UnsafeMutablePointer<CGPoint>, count numPoints: Int)
 ```
 

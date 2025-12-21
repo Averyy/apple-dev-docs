@@ -19,8 +19,8 @@ class ARAnchor
 ## Mentions
 
 - [Displaying an AR Experience with Metal](displaying-an-ar-experience-with-metal.md)
-- [Providing 3D Virtual Content with SceneKit](providing-3d-virtual-content-with-scenekit.md)
 - [Providing 2D Virtual Content with SpriteKit](providing-2d-virtual-content-with-spritekit.md)
+- [Providing 3D Virtual Content with SceneKit](providing-3d-virtual-content-with-scenekit.md)
 
 #### Overview
 
@@ -35,7 +35,7 @@ Some ARKit features automatically add special anchors to a session. World-tracki
 In addition to creating your own `ARAnchor` instances to track the real-world positions of your virtual content, you can also subclass `ARAnchor` to associate custom data with anchors you create. Ensure that your anchor classes behave correctly when ARKit updates frames or saves and loads anchors in an [`ARWorldMap`](arworldmap.md):
 
 - Anchor subclasses must fullfill the requirements of the [`ARAnchorCopying`](aranchorcopying.md) protocol. ARKit calls [`init(anchor:)`](aranchorcopying/init(anchor:).md) (on a background thread) to copy instances of your anchor class from each [`ARFrame`](arframe.md) to the next. Your implementation of this initializer should copy the values of any custom properties your subclass adds.
-- Anchor subclasses must also adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol. Override [`encode(with:)`](https://developer.apple.com/documentation/Foundation/NSCoding/encode(with:)) and doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) to save and restore the values your subclass’ custom properties when ARKit saves and loads them in a world map.
+- Anchor subclasses must also adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol. Override [`encode(with:)`](https://developer.apple.com/documentation/Foundation/NSCoding/encode(with:)) and [`init(coder:)`](https://developer.apple.com/documentation/Foundation/NSCoding/init(coder:)) to save and restore the values your subclass’ custom properties when ARKit saves and loads them in a world map.
 - Anchors are considered equal based on their [`identifier`](aranchor/identifier.md) property.
 - Only anchors that do not adopt [`ARTrackable`](artrackable.md) are included when you save a world map.
 

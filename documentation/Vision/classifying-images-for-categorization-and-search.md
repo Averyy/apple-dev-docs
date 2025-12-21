@@ -108,18 +108,10 @@ List {
 
 - [struct ClassifyImageRequest](classifyimagerequest.md)
   A request to classify an image.
-- [protocol ImageProcessingRequest](imageprocessingrequest.md)
-  A type for image-analysis requests that focus on a specific part of an image.
-- [class ImageRequestHandler](imagerequesthandler.md)
-  An object that processes one or more image-analysis requests pertaining to a single image.
-- [protocol VisionRequest](visionrequest.md)
-  A type for image-analysis requests.
-- [protocol VisionObservation](visionobservation.md)
-  A type for objects produced by image-analysis requests.
-- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
-  A request that detects a smudge on a lens from an image or video frame capture.
-- [struct SmudgeObservation](smudgeobservation.md)
-  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
+- [struct DetectHumanRectanglesRequest](detecthumanrectanglesrequest.md)
+  A request that finds rectangular regions that contain people in an image.
+- [struct RecognizeAnimalsRequest](recognizeanimalsrequest.md)
+  A request that recognizes animals in an image.
 
 
 ---

@@ -16,7 +16,7 @@ func openFile(_ fullPath: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file was successfully opened; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file was successfully opened; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

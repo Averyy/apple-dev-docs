@@ -22,7 +22,7 @@ static let clipToZRange: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that hit-testing searches only objects between the [`zNear`](scncamera/znear.md) and [`zFar`](scncamera/zfar.md) distances of the [`pointOfView`](scnscenerenderer/pointofview.md) camera. Specify [`false`](https://developer.apple.com/documentation/swift/false) to include objects outside this depth range in the search.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that hit-testing searches only objects between the [`zNear`](scncamera/znear.md) and [`zFar`](scncamera/zfar.md) distances of the [`pointOfView`](scnscenerenderer/pointofview.md) camera. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to include objects outside this depth range in the search.
 
 This option is valid only when hit-testing in the screen space of an [`SCNSceneRenderer`](scnscenerenderer.md) object with the [`hitTest(_:options:)`](scnscenerenderer/hittest(_:options:).md) method.
 

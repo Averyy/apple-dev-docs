@@ -24,6 +24,10 @@ The system no longer sends this error.
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
@@ -48,6 +52,8 @@ The system no longer sends this error.
   An error that indicates the transaction identifier represents an unsupported In-App Purchase type.
 - [object InvalidUserStatusError](invaliduserstatuserror.md)
   An error that indicates the value in the user status field is invalid.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

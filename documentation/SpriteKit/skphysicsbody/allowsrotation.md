@@ -22,7 +22,7 @@ var allowsRotation: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). This property is ignored on edge-based bodies, which are unaffected by forces in the system.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). This property is ignored on edge-based bodies, which are unaffected by forces in the system.
 
 ## See Also
 

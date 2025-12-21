@@ -16,13 +16,13 @@ func shouldBreakLine(byWordBeforeCharacterAt charIndex: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the line should be broken by a word break, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the line should be broken by a word break, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
 The typesetter calls this method, if implemented by a subclass, before breaking a line by word wrapping before the character at `charIndex`, enabling the subclass to control line breaking.
 
-A subclass can override this method to customize the text layout process. If the method returns [`false`](https://developer.apple.com/documentation/swift/false), the typesetter continues looking for a break point.
+A subclass can override this method to customize the text layout process. If the method returns [`false`](https://developer.apple.com/documentation/Swift/false), the typesetter continues looking for a break point.
 
 ## Parameters
 

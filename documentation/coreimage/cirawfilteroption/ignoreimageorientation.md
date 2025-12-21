@@ -21,7 +21,7 @@ static let ignoreImageOrientation: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a Boolean value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.  The default value is [`false`](https://developer.apple.com/documentation/swift/false). An image is usually loaded in its proper orientation, as long as the associated metadata records its orientation. For special purposes you might want to load the image in its physical orientation. The exact meaning of “physical orientation” is dependent on the specific image.
+The associated value is a Boolean value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.  The default value is [`false`](https://developer.apple.com/documentation/Swift/false). An image is usually loaded in its proper orientation, as long as the associated metadata records its orientation. For special purposes you might want to load the image in its physical orientation. The exact meaning of “physical orientation” is dependent on the specific image.
 
 ## See Also
 

@@ -25,7 +25,7 @@ When you add an authorization view as a custom view to a window or dialog box, y
 
 You can implement delegate methods that are invoked when the authorization view changes state. You can optionally implement the delegate methods to obtain the state of the authorization object when you are using an authorization view.
 
-When the user clicks a locked authorization view icon, the Security Server displays an authentication dialog (to request a user name and password, for example). When the user provides the requested credentials, the lock icon unlocks and the user is considered preauthorized to perform the functions specified by the authorization rights structure. You can call the [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) method to determine whether the user has been preauthorized: this method returns [`true`](https://developer.apple.com/documentation/swift/true) if the view is in the unlocked state, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Before committing changes or performing actions that require authorization, you should check the user’s authorization again, even if they are preauthorized.
+When the user clicks a locked authorization view icon, the Security Server displays an authentication dialog (to request a user name and password, for example). When the user provides the requested credentials, the lock icon unlocks and the user is considered preauthorized to perform the functions specified by the authorization rights structure. You can call the [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) method to determine whether the user has been preauthorized: this method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the view is in the unlocked state, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Before committing changes or performing actions that require authorization, you should check the user’s authorization again, even if they are preauthorized.
 
 The default behavior of this view is to preauthorize rights; if this is not possible it unlocks and waits for authorization to be checked when explicitly required.
 
@@ -60,7 +60,7 @@ The default behavior of this view is to preauthorize rights; if this is not poss
 - [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
   Returns the current state of the authorization view.
 - [func isEnabled() -> Bool](sfauthorizationview/isenabled.md)
-  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
+  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
 ### Setting the authorization state
 - [func authorize(Any!) -> Bool](sfauthorizationview/authorize(_:).md)
   Attempts to unlock the lock icon in the view.

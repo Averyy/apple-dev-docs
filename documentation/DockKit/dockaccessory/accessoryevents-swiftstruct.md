@@ -26,12 +26,8 @@ struct AccessoryEvents
 - [func makeAsyncIterator() -> DockAccessory.AccessoryEvents.Iterator](dockaccessory/accessoryevents-swift.struct/makeasynciterator.md)
   Creates and returns an iterator that traverses the list of dock accessory events.
 ### Type Aliases
-- [DockAccessory.AccessoryEvents.AsyncIterator](dockaccessory/accessoryevents-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [DockAccessory.AccessoryEvents.Element](dockaccessory/accessoryevents-swift.struct/element.md)
   A dock accessory event.
-### Default Implementations
-- [AsyncSequence Implementations](dockaccessory/accessoryevents-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

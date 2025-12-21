@@ -16,7 +16,7 @@ static func setMayContainProtectedContent(_ flag: Bool) -> Bool
 
 #### Discussion
 
-Uses the value of `flag` to specify whether the app may have protected content. Protected content is identified by a value of [`true`](https://developer.apple.com/documentation/swift/true) for `NSAccessibilityContainsProtectedContentAttribute`, but if `NSAccessibilitySetMayContainProtectedContent` returns [`false`](https://developer.apple.com/documentation/swift/false), the value of `NSAccessibilityContainsProtectedContentAttribute` is ignored. This function returns [`true`](https://developer.apple.com/documentation/swift/true) on success.
+Uses the value of `flag` to specify whether the app may have protected content. Protected content is identified by a value of [`true`](https://developer.apple.com/documentation/Swift/true) for `NSAccessibilityContainsProtectedContentAttribute`, but if `NSAccessibilitySetMayContainProtectedContent` returns [`false`](https://developer.apple.com/documentation/Swift/false), the value of `NSAccessibilityContainsProtectedContentAttribute` is ignored. This function returns [`true`](https://developer.apple.com/documentation/Swift/true) on success.
 
 
 ---

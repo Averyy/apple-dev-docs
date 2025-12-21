@@ -6,8 +6,8 @@
 Read and write essential Apple Immersive Video metadata.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 #### Overview
 
@@ -62,14 +62,14 @@ Immersive Media Support enables you to create custom workflows for processing Ap
 - [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
   Calibration mesh geometry based on USDZ data.
 - [class ImmersiveImageMask](immersiveimagemask.md)
-  Immersive media image masks are generated using an image file containing the alpha values for the mask.
+  An object that holds all the information needed to load immersive media masks from image data or from a file.
 - [class ImmersiveMediaRemotePreviewReceiver](immersivemediaremotepreviewreceiver.md)
-  An observable object that helps application to handle receiving of the commands and data sent from the immersive media remote preview sender object.
+  An observable object that helps apps handle receiving commands and data sent from an immersive media remote preview sender object.
 - [class ImmersiveMediaRemotePreviewSender](immersivemediaremotepreviewsender.md)
-  An observable object that can help the application to send all the required data to all the connected receiver applications to help facilitate the complete preview of the immersive media playback.
+  An observable object that helps an app send the required data to all connected receiver apps to help facilitate the complete preview of the immersive media playback.
 ### Structures
 - [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
-  This type holds the ILPD Meirives lens configuration parameters using which a camera calibration type instance can be generated.
+  This type holds the ILPD lens configuration parameters to generate camera calibration type instance.
 - [struct ImmersiveVideoFrame](immersivevideoframe.md)
   A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
 

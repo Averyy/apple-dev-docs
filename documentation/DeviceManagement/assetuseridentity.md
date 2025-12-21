@@ -23,6 +23,20 @@ object AssetUserIdentity
 
 Specify `com.apple.asset.useridentity` as the declaration type.
 
+##### Asset Example
+
+```json
+{
+  "Type": "com.apple.asset.useridentity",
+  "Identifier": "CB3E6C7F-2318-437B-8A9E-D50C69376DE4",
+  "ServerToken": "F25C68F6-D2E5-4A09-9170-F21E8FAD6A2F",
+  "Payload": {
+    "FullName": "A User",
+    "EmailAddress": "a.user@example.com"
+  }
+}
+```
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)
@@ -32,7 +46,7 @@ Specify `com.apple.asset.useridentity` as the declaration type.
 - [object AssetCredentialIdentity](assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
 - [object AssetCredentialSCEP](assetcredentialscep.md)
-  A reference to an SCEP identity.
+  A reference to a SCEP identity.
 - [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
 - [object AssetData](assetdata.md)

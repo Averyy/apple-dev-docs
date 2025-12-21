@@ -39,6 +39,8 @@ Synchronize the contents of entities locally or across the network.
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -47,6 +49,8 @@ Synchronize the contents of entities locally or across the network.
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

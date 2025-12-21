@@ -16,7 +16,7 @@ var appliesImmediately: Bool { get set }
 
 #### Discussion
 
-Default is [`true`](https://developer.apple.com/documentation/swift/true).
+Default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This property is observable using key-value observing.
 

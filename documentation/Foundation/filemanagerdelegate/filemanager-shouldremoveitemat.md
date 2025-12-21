@@ -22,11 +22,11 @@ optional func fileManager(_ fileManager: FileManager, shouldRemoveItemAt URL: UR
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified item should be removed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not be removed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified item should be removed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not be removed.
 
 #### Discussion
 
-Removed items are deleted immediately and not placed in the Trash. If the specified item is a directory, returning [`false`](https://developer.apple.com/documentation/swift/false) prevents both the directory and its children from being deleted.
+Removed items are deleted immediately and not placed in the Trash. If the specified item is a directory, returning [`false`](https://developer.apple.com/documentation/Swift/false) prevents both the directory and its children from being deleted.
 
 This method performs the same task as the [`fileManager(_:shouldRemoveItemAtPath:)`](filemanagerdelegate/filemanager(_:shouldremoveitematpath:).md) method and is preferred over that method in macOS 10.6 and later.
 

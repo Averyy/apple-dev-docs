@@ -22,7 +22,7 @@ func write(to url: URL, options: [String : Any]? = nil, delegate: (any SCNSceneE
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if exporting the scene was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if exporting the scene was successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

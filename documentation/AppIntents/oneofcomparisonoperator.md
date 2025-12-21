@@ -25,17 +25,6 @@ enum OneOfComparisonOperator
 ### Containment operators
 - [OneOfComparisonOperator.oneOf](oneofcomparisonoperator/oneof.md)
   An operator that determines if the parameter is equal to one of the values in the array.
-### Operators
-- [static func == (OneOfComparisonOperator, OneOfComparisonOperator) -> Bool](oneofcomparisonoperator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](oneofcomparisonoperator/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](oneofcomparisonoperator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](oneofcomparisonoperator/equatable-implementations.md)
 
 ## Relationships
 

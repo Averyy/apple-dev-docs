@@ -11,7 +11,7 @@ A Boolean value that determines whether to center the map on the user’s locati
 ## Declaration
 
 ```swift
-attribute boolean tracksUserLocation;
+tracksUserLocation?: boolean;
 ```
 
 #### Discussion

@@ -26,7 +26,7 @@ The authorization object is defined in [`Security Foundation`](https://developer
 - [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
   Returns the current state of the authorization view.
 - [func isEnabled() -> Bool](sfauthorizationview/isenabled.md)
-  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
+  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
 
 
 ---

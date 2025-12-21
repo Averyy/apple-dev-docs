@@ -28,7 +28,7 @@ On supported platforms, the [`AVCaptureMetadataOutput`](avcapturemetadataoutput.
 
 ## Topics
 
-### Getting Machine Readable Code Values
+### Getting machine-readable code values
 - [var corners: [CGPoint]](avmetadatamachinereadablecodeobject/corners-58qbe.md)
   A Swift array of corner points.
 - [var descriptor: CIBarcodeDescriptor?](avmetadatamachinereadablecodeobject/descriptor.md)
@@ -36,7 +36,7 @@ On supported platforms, the [`AVCaptureMetadataOutput`](avcapturemetadataoutput.
 - [var stringValue: String?](avmetadatamachinereadablecodeobject/stringvalue.md)
   Returns the error-corrected data decoded into a human-readable string.
 ### Constants
-- [Machine-Readable Object Types](machine-readable-object-types.md)
+- [Machine-readable object types](machine-readable-object-types.md)
   Constants used to specify the type of barcode to scan.
 
 ## Relationships

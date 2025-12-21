@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The rectangular region of the output image that your processor must provide.
+The rectangular region of the output image that your Core Image Processor Kernel must provide.
 
 **Availability**:
 - iOS 10.0+
@@ -22,16 +22,16 @@ var region: CGRect { get }
 
 #### Discussion
 
-Your image processor block may be invoked multiple times to provide output for multiple regions, and the region for which output is needed may not match the bounds of the output buffer, texture, or surface.
+> **Note**: This may be different (larger or smaller) than the `extent` that was passed to `/CIImageProcessorKernel/applyWithExtent:inputs:arguments:error:`.
 
 ## See Also
 
 - [var metalCommandBuffer: (any MTLCommandBuffer)?](ciimageprocessoroutput/metalcommandbuffer.md)
-  A command buffer to use for image processing using Metal.
+  Returns a Metal command buffer object that can be used for encoding commands.
 - [var bytesPerRow: Int](ciimageprocessoroutput/bytesperrow.md)
-  The number of bytes per row of pixels for the output image.
+  The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
 - [var format: CIFormat](ciimageprocessoroutput/format.md)
-  The per-pixel data format expected of the output image.
+  The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 
 ---

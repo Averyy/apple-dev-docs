@@ -27,8 +27,6 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
 ## Topics
 
 ### Providing instructions
-- [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
-  An array of instruction variants for the maneuver.
 - [var dashboardInstructionVariants: [String]](cpmaneuver/dashboardinstructionvariants.md)
   An array of instruction variants for the CarPlay dashboard.
 - [var notificationInstructionVariants: [String]](cpmaneuver/notificationinstructionvariants.md)
@@ -80,6 +78,9 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
   A custom object associated with the maneuver.
 ### Instance properties
 - [var cardBackgroundColor: UIColor?](cpmaneuver/cardbackgroundcolor.md)
+### Instance Properties
+- [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
+  An array of instruction variants for the maneuver.
 
 ## Relationships
 

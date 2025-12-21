@@ -18,7 +18,7 @@ Renders the view’s scene into a new image object.
 
 ```swift
 @MainActor
-func snapshot() -> UIImage
+func snapshot() -> NSImage
 ```
 
 #### Return Value

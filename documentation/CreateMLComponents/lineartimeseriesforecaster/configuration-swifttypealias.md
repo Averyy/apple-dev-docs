@@ -18,6 +18,11 @@
 typealias Configuration = LinearTimeSeriesForecasterConfiguration
 ```
 
+## See Also
+
+- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
+  A linear time-series forecasting model.
+
 
 ---
 

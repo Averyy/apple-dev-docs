@@ -12,7 +12,7 @@ The [`pinned`](skphysicsbody/pinned.md) property offers convenience because it r
 
 ##### Pin a Node Using the Pinned Property
 
-The following code demonstrates using the [`pinned`](skphysicsbody/pinned.md) property. The code creates a sprite node with an image of a pendulum (two circles of different sizes joined by a center rod). A physics body is created based on the generated texture, has its [`pinned`](skphysicsbody/pinned.md) property set to [`true`](https://developer.apple.com/documentation/swift/true), and is assigned to the node. The node is rotated 90 degrees—to align horizontally—so that gravity pulls the heavier end toward the ground.
+The following code demonstrates using the [`pinned`](skphysicsbody/pinned.md) property. The code creates a sprite node with an image of a pendulum (two circles of different sizes joined by a center rod). A physics body is created based on the generated texture, has its [`pinned`](skphysicsbody/pinned.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true), and is assigned to the node. The node is rotated 90 degrees—to align horizontally—so that gravity pulls the heavier end toward the ground.
 
 ```swift
 let pinned = SKSpriteNode(imageNamed: "pendulum")

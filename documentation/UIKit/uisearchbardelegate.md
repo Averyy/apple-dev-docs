@@ -50,6 +50,8 @@ A [`UISearchBar`](uisearchbar.md) object provides the user interface for a searc
 ### Responding to scope button changes
 - [func searchBar(UISearchBar, selectedScopeButtonIndexDidChange: Int)](uisearchbardelegate/searchbar(_:selectedscopebuttonindexdidchange:).md)
   Tells the delegate that the scope button selection changed.
+### Instance Methods
+- [func searchBar(UISearchBar, shouldChangeTextInRanges: [NSValue], replacementText: String) -> Bool](uisearchbardelegate/searchbar(_:shouldchangetextinranges:replacementtext:).md)
 
 ## Relationships
 

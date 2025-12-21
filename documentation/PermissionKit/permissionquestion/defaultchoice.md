@@ -6,11 +6,11 @@
 The default answer choice associated with the question.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,10 +26,6 @@ This default choice mirrors the expected experience as if the user has opted out
 
 ## See Also
 
-- [let id: UUID](permissionquestion/id-swift.property.md)
-  A unique identifier for the question.
-- [let topic: Topic](permissionquestion/topic.md)
-  A topic that can be used to interpret a user’s request.
 - [var choices: [PermissionChoice]](permissionquestion/choices.md)
   The possible answer choices associated with this question.
 

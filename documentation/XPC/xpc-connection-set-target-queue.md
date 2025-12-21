@@ -21,7 +21,7 @@ func xpc_connection_set_target_queue(_ connection: xpc_connection_t, _ targetq: 
 
 Setting the target queue is asynchronous and non-preemptive and therefore this method will not interrupt the execution of an already-running event handler block. Setting the target queue may be likened to issuing a barrier to the connection which does the actual work of changing the target queue.
 
-The XPC runtime guarantees this non-preemptiveness even for concurrent target queues. If the target queue is a concurrent queue, then XPC still guarantees that there will never be more than one invocation of the connection’s event handler block executing concurrently. If you wish to process events concurrently, you can [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async) to a concurrent queue from within the event handler.
+The XPC runtime guarantees this non-preemptiveness even for concurrent target queues. If the target queue is a concurrent queue, then XPC still guarantees that there will never be more than one invocation of the connection’s event handler block executing concurrently. If you wish to process events concurrently, you can [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async) to a concurrent queue from within the event handler.
 
 > ❗ **Important**:  When called from within the event handler block, [`dispatch_get_current_queue()`](https://developer.apple.com/documentation/Dispatch/dispatch_get_current_queue()) is NOT guaranteed to return a pointer to the queue set with this method.
 

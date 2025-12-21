@@ -30,7 +30,7 @@ config.isDiscretionary = true
 config.sessionSendsLaunchEvents = true
 ```
 
-Setting the [`isDiscretionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/isDiscretionary) property to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sessionSendsLaunchEvents) to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
+Setting the [`isDiscretionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/isDiscretionary) property to [`true`](https://developer.apple.com/documentation/Swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sessionSendsLaunchEvents) to [`true`](https://developer.apple.com/documentation/Swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
 
 Next, create the session and use the session to schedule a background download task.
 

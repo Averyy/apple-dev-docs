@@ -38,6 +38,8 @@ The seat identifier needs to be unique across all instances of the same tabletop
 
 ## See Also
 
+- [struct TableState](tablestate.md)
+  The state of the table that can be queried and modified.
 - [protocol TableSeat](tableseat.md)
   A protocol for seats at the table that players occupy.
 - [protocol EntityTableSeat](entitytableseat.md)

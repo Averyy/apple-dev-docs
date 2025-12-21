@@ -21,7 +21,7 @@ var authenticationMethod: NEVPNIKEAuthenticationMethod { get set }
 
 #### Discussion
 
-If this property is set to `NEVPNIKEAuthenticationMethodNone`, extended authentication will still be negotiated if [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) is set to [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is set to `NEVPNIKEAuthenticationMethodNone`, extended authentication will still be negotiated if [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

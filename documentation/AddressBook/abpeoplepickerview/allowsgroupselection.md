@@ -17,7 +17,7 @@ var allowsGroupSelection: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user can to select entire groups. If [`false`](https://developer.apple.com/documentation/swift/false), the user is required to select at least one person in the group.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the user can to select entire groups. If [`false`](https://developer.apple.com/documentation/Swift/false), the user is required to select at least one person in the group.
 
 ## See Also
 

@@ -10,7 +10,7 @@ The output texture where the postprocess callback writes the modified frame buff
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 
@@ -21,8 +21,8 @@ var targetColorTexture: any MTLTexture
 ## Mentions
 
 - [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
-- [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
 - [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
+- [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 

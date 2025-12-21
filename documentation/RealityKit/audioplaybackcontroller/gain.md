@@ -10,7 +10,7 @@ The individual gain in decibels of the audio playback controller output.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -21,6 +21,8 @@ The individual gain in decibels of the audio playback controller output.
 ```
 
 #### Discussion
+
+The gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 
 Use the [`fade(to:duration:)`](audioplaybackcontroller/fade(to:duration:).md) method to change the gain gradually and create smooth transitions.
 

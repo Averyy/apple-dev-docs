@@ -14,7 +14,7 @@ An abstract base class for managing discrete portions of your app’s data.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class UIDocument
 ```
 
@@ -49,7 +49,7 @@ The following outlines the life cycle of a typical document:
 3. The user requests that the document be integrated with cloud services (optional). You must enable the document for cloud storage. You must also resolve any conflicts between different versions of the same document.
 4. The user closes the document. Call [`close(completionHandler:)`](uidocument/close(completionhandler:).md) on the document instance. [`UIDocument`](uidocument.md) saves the document if there are any unsaved changes.
 
-A typical document-based app calls [`open(completionHandler:)`](uidocument/open(completionhandler:).md), [`close(completionHandler:)`](uidocument/close(completionhandler:).md), and [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) on the main thread. When the read or save operation kicked off by these methods concludes, the system executes the completion-handler block on the same dispatch queue as the system used to invoke the method, allowing you to complete any tasks contingent on the read or save operation. If the operation isn’t successful, the system passes [`false`](https://developer.apple.com/documentation/swift/false) to the completion-handler block.
+A typical document-based app calls [`open(completionHandler:)`](uidocument/open(completionhandler:).md), [`close(completionHandler:)`](uidocument/close(completionhandler:).md), and [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) on the main thread. When the read or save operation kicked off by these methods concludes, the system executes the completion-handler block on the same dispatch queue as the system used to invoke the method, allowing you to complete any tasks contingent on the read or save operation. If the operation isn’t successful, the system passes [`false`](https://developer.apple.com/documentation/Swift/false) to the completion-handler block.
 
 ##### Implement the Nsfilepresenter Protocol
 
@@ -78,7 +78,7 @@ If you have special requirements for reading and writing document data for which
 
 ###### Track Changes
 
-To enable the autosaving feature of [`UIDocument`](uidocument.md), you must notify it when users make changes to a document. [`UIDocument`](uidocument.md) periodically checks whether the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method returns [`true`](https://developer.apple.com/documentation/swift/true); if it does, it initiates the save operation for the document.
+To enable the autosaving feature of [`UIDocument`](uidocument.md), you must notify it when users make changes to a document. [`UIDocument`](uidocument.md) periodically checks whether the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true); if it does, it initiates the save operation for the document.
 
 There are two primary ways to implement change tracking in your [`UIDocument`](uidocument.md) subclass:
 
@@ -246,7 +246,13 @@ class EditorViewController: UIViewController,
 - [class let stateChangedNotification: NSNotification.Name](uidocument/statechangednotification.md)
   A notification the document object posts when there’s a change in the state of the document.
 ### Structures
+- [UIDocument.DidMoveToWritableLocationMessage](uidocument/didmovetowritablelocationmessage.md)
 - [UIDocument.StateChangedMessage](uidocument/statechangedmessage.md)
+### Type Properties
+- [class let didMoveToWritableLocationNotification: NSNotification.Name](uidocument/didmovetowritablelocationnotification.md)
+  A notification that the document posts when copying the file from a readonly location in order to write changes. This notification will be posted on the file presenter queue.
+- [class let didMoveToWritableLocationOldURLKey: String](uidocument/didmovetowritablelocationoldurlkey.md)
+  The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` dictionary that contains the previous readonly file URL.
 
 ## Relationships
 
@@ -264,7 +270,6 @@ class EditorViewController: UIViewController,
 - [NSFilePresenter](../Foundation/NSFilePresenter.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](../Foundation/ProgressReporting.md)
-- [Sendable](../Swift/Sendable.md)
 - [UIUserActivityRestoring](uiuseractivityrestoring.md)
 
 ## See Also

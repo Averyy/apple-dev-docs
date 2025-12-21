@@ -6,11 +6,11 @@
 A Boolean value indicating whether your app may access the camera region.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 #### Discussion
 
-Camera Region allows developers create a new SwiftUI element that acts as a frame that the user can place anywhere within their view, and then passes camera frames from that specified region back to the app for processing or display.  The region in space is fixed and stabilized, so if a user moves their head or looks around, they continue to get frames from the space they defined, as long as it is in their field of view.  Additionally, there is an optional configurable argument that enables image enhancement, providing a clearer and sharper version of the camera frames than the default camera frame provides.
+Camera Region allows developers to create a new SwiftUI element that acts as a frame which people can place anywhere within their view, and then pass camera frames from that specified region back to the app for processing or display. The specified region is fixed and stabilized in space, so if a person moves their head or looks around, they continue to get frames from the space they defined, as long as it’s in their field of view.  Additionally, there’s an optional configurable argument that enables image enhancement, providing a clearer and sharper version of the camera frames than what the default camera frame provides. For more information on how to implement a camera region within your app, refer to [`CameraRegionView`](https://developer.apple.comhttps://developer.apple.com/documentation/visionkit/cameraregionview).
 
 ## See Also
 
@@ -28,8 +28,8 @@ Camera Region allows developers create a new SwiftUI element that acts as a fram
   A Boolean value indicating whether your app may use a shared coordinate space.
 - [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
   A Boolean value indicating whether the system prohibits capturing your app’s content.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)

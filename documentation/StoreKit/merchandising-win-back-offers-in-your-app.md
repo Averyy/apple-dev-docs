@@ -16,7 +16,7 @@ For information on configuring win-back offers, handling redeemed offers, and mo
 
 By default, when StoreKit receives a [`winBackOffer`](message/reason-swift.struct/winbackoffer.md) message from the App Store, it displays a win-back offer sheet when the app launches. You don’t need any code to choose this default behavior.
 
-You may choose to delay this message, or suppress it if you customize the way your app presents win-back offers. Listen for messages using the [`messages`](message/messages-swift.type.property.md) asynchronous sequence when your app launches. Intercept the win-back offer message, which has a [`winBackOffer`](message/reason-swift.struct/winbackoffer.md) reason. To suppress the message, ignore it by doing nothing.
+You may choose to delay this message, or suppress it if you customize the way your app presents win-back offers. Listen for messages using the [`messages`](message/messages-swift.type.property.md) asynchronous sequence when your app launches. Intercept the win-back offer message, which has a [`winBackOffer`](message/reason-swift.struct/winbackoffer.md) reason. After you intercept the message, you can suppress it by not calling `displayStoreMessage`, as in the example below.
 
 The following example code suppresses the win-back offer redemption message, and displays all other App Store messages immediately.
 
@@ -59,10 +59,10 @@ To add a win-back offer to a purchase, include the win-back offer the customer c
 
 ## See Also
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
   Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
 - [Product.SubscriptionOffer](product/subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 - [Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype.md)

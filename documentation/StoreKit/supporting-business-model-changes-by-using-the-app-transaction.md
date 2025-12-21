@@ -2,11 +2,13 @@
 
 **Framework**: StoreKit
 
-Access the app transaction to learn when a customer first purchased an app, to determine the app features they’re entitled to.
+Access the app transaction to determine when a customer purchased an app and the features to which they’re entitled.
 
 #### Overview
 
 The [`originalAppVersion`](apptransaction/originalappversion.md) property indicates the app version that the customer purchased. If you change your business model from a paid app to a free app that offers in-app purchases, use this property to learn whether the customer purchased your app before you changed the business model. Then, use that information to determine your customers’ entitlement to features that were available in the paid app.
+
+##### Provide Features to All Customers
 
 For example, an app that is a paid app in version 1 has premium features available to everyone who buys it. For version 2, the developer changes the business model, making it a free app that offers in-app purchases. Version 2 of the app has the same premium features, but now they’re available as in-app purchases.
 
@@ -16,13 +18,17 @@ In version 2, the developer wants to continue to provide the premium features to
 2. The app compares the [`originalAppVersion`](apptransaction/originalappversion.md)  value with the constant. If the customer purchased the app before the business model changed, the app determines that they’re entitled to the premium features.
 3. The app also checks the [`currentEntitlements`](transaction/currententitlements.md) sequence and delivers any in-app purchases the customers may have made.
 
+##### Obtain an App Transaction
+
 An app that performs these steps ensures that paid customers can access the premium features that were included with the app they purchased.
 
-The code example below demonstrates how an app gets an [`AppTransaction`](apptransaction.md), compares the [`originalAppVersion`](apptransaction/originalappversion.md) with a constant that represents an app version, and determines the customer’s entitlements.
+The code examples below demonstrate how an app obtains an [`AppTransaction`](apptransaction.md), compares the [`originalAppVersion`](apptransaction/originalappversion.md) with a constant that represents a specific app version, and then determines the customer’s entitlements.
+
+Here’s how it looks in macOS:
 
 ```swift
 do {
-    // Get the appTransaction.
+    // Get the `appTransaction`.
     let shared = try await AppTransaction.shared
     if case .verified(let appTransaction) = shared {
         // Hard-code the major version number in which the app's business model changed.
@@ -37,7 +43,7 @@ do {
             // Deliver content that they're entitled to based on their app purchase.
         }
         else {
-            // This customer purchased the app after the business model changed.
+            // This person purchased the app after the business model changed.
         }
     }
 }
@@ -45,10 +51,43 @@ catch {
     // Handle errors.
 }
 
-// Iterate through any other products the customer purchased.
+
+// Iterate over any other products they purchased.
 for await result in Transaction.currentEntitlements {
     if case .verified(let transaction) = result {
-        // Deliver the content based on the customer's current entitlements.
+        // Deliver the content based on their current entitlements.
+    }
+}
+```
+
+Here’s an example of the code for an app in iOS, tvOS, watchOS, and visionOS:
+
+```swift
+do {
+    // Get the `appTransaction`.
+    let shared = try await AppTransaction.shared
+    if case .verified(let appTransaction) = shared {
+        // Hard-code the `CFBundleVersion` number in which the app's business model changed.
+        let newBusinessModelVersion = "2"
+
+        // Compare this number with the version number the person originally purchased.
+        if appTransaction.originalAppVersion < newBusinessModelVersion {
+            // Handle a case in which a person purchased the app before the business model changed.
+            // Deliver content that they're entitled to based on their app purchase.
+        }
+        else {
+            // This person purchased the app after the business model changed.
+        }
+    }
+}
+catch {
+    // Handle errors.
+}
+
+// Iterate over any other products they purchased.
+for await result in Transaction.currentEntitlements {
+    if case .verified(let transaction) = result {
+    // Deliver the content based on their current entitlements.
     }
 }
 ```

@@ -21,8 +21,8 @@ class HKHealthStore
 
 ## Mentions
 
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
 - [Executing Observer Queries](executing-observer-queries.md)
+- [Reading data from HealthKit](reading-data-from-healthkit.md)
 
 #### Overview
 

@@ -7,7 +7,7 @@ Initialize an instance of this type with the contents of the given URL.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

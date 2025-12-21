@@ -6,7 +6,7 @@
 Creates a new component by loading a monoscopic texture and (if present) a pair of spatial textures from the provided image source.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing fading out of the environment backdrops
+A value that represents fading out of the environment backdrops.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ case out
 ## See Also
 
 - [FadeEnvironmentCommand.FadeDirection.in](fadeenvironmentcommand/fadedirection/in.md)
-  A value representing fading in of the environment backdrops
+  A value that represents fading in of the environment backdrops.
 
 
 ---

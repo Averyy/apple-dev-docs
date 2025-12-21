@@ -21,31 +21,6 @@ A collection that efficiently provides the results of a completed fetch.
 struct FetchResultsCollection<Element>
 ```
 
-## Topics
-
-### Accessing a specific result
-- [subscript(Int) -> Element](fetchresultscollection/subscript(_:).md)
-  Accesses the element at the specified position.
-### Accessing indices
-- [var startIndex: Int](fetchresultscollection/startindex.md)
-  The position of the first element in a nonempty collection.
-- [var endIndex: Int](fetchresultscollection/endindex.md)
-  The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-### Type Aliases
-- [FetchResultsCollection.Index](fetchresultscollection/index.md)
-  A type that represents a position in the collection.
-- [FetchResultsCollection.Indices](fetchresultscollection/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [FetchResultsCollection.Iterator](fetchresultscollection/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [FetchResultsCollection.SubSequence](fetchresultscollection/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](fetchresultscollection/bidirectionalcollection-implementations.md)
-- [Collection Implementations](fetchresultscollection/collection-implementations.md)
-- [RandomAccessCollection Implementations](fetchresultscollection/randomaccesscollection-implementations.md)
-- [Sequence Implementations](fetchresultscollection/sequence-implementations.md)
-
 ## Relationships
 
 ### Conforms To

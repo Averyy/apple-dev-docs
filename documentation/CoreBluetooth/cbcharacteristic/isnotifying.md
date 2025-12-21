@@ -22,9 +22,9 @@ var isNotifying: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if you enabled notifications or indications for the characteristic by successfully calling the [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) method of the [`CBPeripheral`](cbperipheral.md) class. In this case, the peripheral updates its connected central that whenever the characteristic’s value changes.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if you enabled notifications or indications for the characteristic by successfully calling the [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) method of the [`CBPeripheral`](cbperipheral.md) class. In this case, the peripheral updates its connected central that whenever the characteristic’s value changes.
 
-If the value of the property is [`false`](https://developer.apple.com/documentation/swift/false), notifications (or indications) aren’t enabled for the characteristic, and the peripheral doesn’t update its connected central when the characteristic’s value changes.
+If the value of the property is [`false`](https://developer.apple.com/documentation/Swift/false), notifications (or indications) aren’t enabled for the characteristic, and the peripheral doesn’t update its connected central when the characteristic’s value changes.
 
 ## Topics
 

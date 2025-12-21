@@ -48,10 +48,6 @@ Use these flags with the [`typeKey(_:modifierFlags:)`](xcuielement/typekey(_:mod
   The Caps Lock key in a combination keystroke.
 - [static var alternate: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/alternate.md)
   The Option key in a combination keystroke.
-### Default Implementations
-- [Equatable Implementations](xcuielement/keymodifierflags/equatable-implementations.md)
-- [OptionSet Implementations](xcuielement/keymodifierflags/optionset-implementations.md)
-- [SetAlgebra Implementations](xcuielement/keymodifierflags/setalgebra-implementations.md)
 
 ## Relationships
 

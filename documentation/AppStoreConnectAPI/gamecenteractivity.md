@@ -25,6 +25,10 @@ object GameCenterActivity
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)
   A response that contains a list of activities resources.
+- [object GameCenterActivityAchievementsV2LinkagesRequest](gamecenteractivityachievementsv2linkagesrequest.md)
+  The data structure that represents a Game Center activity achievement linkage request resource.
+- [object GameCenterActivityLeaderboardsV2LinkagesRequest](gamecenteractivityleaderboardsv2linkagesrequest.md)
+  The data structure that represents a Game Center activity leaderboard linkage request resource.
 - [object GameCenterActivityAchievementsLinkagesRequest](gamecenteractivityachievementslinkagesrequest.md)
   The request body you use to create a link betweeen an achievement and an activity resource.
 - [object GameCenterActivityLeaderboardsLinkagesRequest](gamecenteractivityleaderboardslinkagesrequest.md)
@@ -40,6 +44,7 @@ object GameCenterActivity
 - [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
   The request body you use to create an activity version resource.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
+- [object StringToStringMap](stringtostringmap.md)
 
 
 ---

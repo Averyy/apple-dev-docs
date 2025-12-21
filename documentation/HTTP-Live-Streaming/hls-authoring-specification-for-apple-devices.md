@@ -24,11 +24,11 @@ Find additional information for HLS specifications at [`HTTP Live Streaming (HLS
 
 ##### About Spatial Video
 
-Spatial video is intended to produce a richer experience for the user. Spatial video MUST use the REQ-VIDEO-LAYOUT attribute to specify desired channel and projection specifiers. Please see HLS specification [https://developer.apple.com/streaming/HLS-draft-pantos.pdf] for valid channel and projection specifiers.
+Spatial video is intended to produce a richer experience for the user. Spatial video MUST use the REQ-VIDEO-LAYOUT attribute to specify desired channel and projection specifiers. Please see [`HLS specification`](https://developer.apple.comhttps://developer.apple.com/streaming/HLS-draft-pantos.pdf) for valid channel and projection specifiers.
 
 Spatial video media is split into following categories.
 
-This video relies on a special projection type, known as ‘PROJ-AIV’ which is defined outside the core HLS specification. For details, see [QuickTime and ISO Base Media File Formats and Spatial and Immersive Media] (https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf)
+This video relies on a special projection type, known as ‘PROJ-AIV’ which is defined outside the core HLS specification. For details, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf)
 
 > **Note**: Stereo, Immersive and stereo APMP video is only supported in visionOS. See amended requirements for visionOS.
 
@@ -36,7 +36,7 @@ This video relies on a special projection type, known as ‘PROJ-AIV’ which is
 
 Multi-format audio codecs support combinations of channels, audio objects, and ambisonics as opposed to multi-channel codecs that just support channels. Examples of such a multi-format codec are:
 
-- Apple Positional Audio Codec [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf)
+- Apple Positional Audio Codec [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf)
 - Dolby Digital Plus JOC
 
 ##### General Authoring Requirements
@@ -271,13 +271,15 @@ Following table provides a possible bit rate recommendations for AIV.
 | 7.1 (surround) | APAC | 384 |
 | 7.1 (surround) | Dolby Digital Plus | 384 |
 
-###### Bitrate Recommendations for Ambisonics Httpsdeveloperapplecomav Foundationapple Positional Audio Codecpdf Are As Follows
+###### Bitrate Recommendations for Ambisonics Are As Follows
 
 | Ambisonic order | Codec | Audio coding identifier | Total (kbit/s) |
 | --- | --- | --- | --- |
 | 1 | APAC | 1OA | 192 to 384 |
 | 2 | APAC | 2OA | 240 to 512 |
 | 3 | APAC | 3OA | /270 to 768 |
+
+See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) for more information about ambisonics.
 
 2.10. * You MAY change channel layout within a stream.
 
@@ -563,7 +565,7 @@ Following table provides a possible bit rate recommendations for AIV.
 
 9.19. The `SCORE` attribute (if present) MUST be on every variant. Otherwise, the `SCORE` attribute will be ignored.
 
-9.20. For APAC, the APAC profile and level MUST be provided as a part of Codec string. See [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) for more information about APAC profile and level.
+9.20. For APAC, the APAC profile and level MUST be provided as a part of Codec string. See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) for more information about APAC profile and level.
 
 ###### Delivery
 
@@ -899,6 +901,7 @@ The following table describes the changes to this document.
 
 | Date | Notes |
 | --- | --- |
+| 2025-06-26 | Fixed malformed URLs. |
 | 2025-06-24 | Added container format rule for AV1. |
 | 2025-05-08 | Added AIV bit-rate tiers. |
 | 2025-05-02 | Added Offline download guidelines. |

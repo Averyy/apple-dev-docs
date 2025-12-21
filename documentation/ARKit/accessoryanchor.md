@@ -6,7 +6,7 @@
 Represents a tracked accessory.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -54,6 +54,17 @@ struct AccessoryAnchor
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TrackableAnchor](trackableanchor.md)
+
+## See Also
+
+- [class AccessoryTrackingProvider](accessorytrackingprovider.md)
+  Provides the real time position of accessories in the user’s environment.
+- [struct Accessory](accessory.md)
+  Represents an accessory to be tracked.
+- [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
+  Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
+- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 
 ---

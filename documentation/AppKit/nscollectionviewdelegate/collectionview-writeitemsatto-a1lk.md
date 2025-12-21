@@ -16,13 +16,13 @@ optional func collectionView(_ collectionView: NSCollectionView, writeItemsAt in
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to begin the drag, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to begin the drag, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-To start the drag, you must first declare the pasteboard types that are supported by sending `pasteboard` a [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) method. You then place the data for the items at the specified indexes on `pasteboard`, and return [`true`](https://developer.apple.com/documentation/swift/true) from the method.
+To start the drag, you must first declare the pasteboard types that are supported by sending `pasteboard` a [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) method. You then place the data for the items at the specified indexes on `pasteboard`, and return [`true`](https://developer.apple.com/documentation/Swift/true) from the method.
 
-The drag image and other drag related information will be set up and provided by the view once this call returns [`true`](https://developer.apple.com/documentation/swift/true).
+The drag image and other drag related information will be set up and provided by the view once this call returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You need to implement this method for your collection view to be a drag source.
 

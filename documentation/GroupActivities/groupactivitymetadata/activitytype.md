@@ -28,17 +28,6 @@ struct ActivityType
   A shared listening activity, such as listening to music together.
 - [static let watchTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/watchtogether.md)
   A shared watching activity, such as watching an episode of a television show together.
-### Comparing Activity Types
-- [static func != (Self, Self) -> Bool](groupactivitymetadata/activitytype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (GroupActivityMetadata.ActivityType, GroupActivityMetadata.ActivityType) -> Bool](groupactivitymetadata/activitytype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](groupactivitymetadata/activitytype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](groupactivitymetadata/activitytype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let createTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/createtogether.md)
   A shared creation activity, such as drawing on an art canvas together.
@@ -52,8 +41,6 @@ struct ActivityType
   A shared shopping activity, such as browsing for products online together.
 - [static let workoutTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/workouttogether.md)
   A shared workout activity, such as participating in a fitness class together.
-### Default Implementations
-- [Equatable Implementations](groupactivitymetadata/activitytype/equatable-implementations.md)
 
 ## Relationships
 

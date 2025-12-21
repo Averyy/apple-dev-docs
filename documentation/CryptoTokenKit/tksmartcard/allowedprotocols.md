@@ -6,13 +6,13 @@
 The protocols allowed for communication with the Smart Card. [`any`](tksmartcardprotocol/any.md) by default.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 

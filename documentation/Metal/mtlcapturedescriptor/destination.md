@@ -26,7 +26,7 @@ The default value is [`MTLCaptureDestination.developerTools`](mtlcapturedestinat
 ## See Also
 
 - [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
-  The object whose contents should be captured.
+  The instance whose contents should be captured.
 - [var outputURL: URL?](mtlcapturedescriptor/outputurl.md)
   A URL for a file to write the capture data into.
 

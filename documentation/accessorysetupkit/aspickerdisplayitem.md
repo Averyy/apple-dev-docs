@@ -55,6 +55,7 @@ To enable different behaviors during setup, use the [`setupOptions`](aspickerdis
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
+- [ASDiscoveredDisplayItem](asdiscovereddisplayitem.md)
 - [ASMigrationDisplayItem](asmigrationdisplayitem.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
@@ -68,6 +69,8 @@ To enable different behaviors during setup, use the [`setupOptions`](aspickerdis
 
 ## See Also
 
+- [class ASDiscoveredDisplayItem](asdiscovereddisplayitem.md)
+  A picker display item created from customizing a discovered accessory.
 - [class ASMigrationDisplayItem](asmigrationdisplayitem.md)
   A previously-discovered accessory as presented by the discovery picker, for use when migrating it to AccessorySetupKit.
 

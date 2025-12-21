@@ -22,7 +22,7 @@ var isSearching: Bool { get }
 
 #### Discussion
 
-The search object sets the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) when you initiate a search. It remains in that state until the search object delivers search results (or an appropriate error), at which time the search object sets the value of the property to [`false`](https://developer.apple.com/documentation/swift/false).
+The search object sets the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) when you initiate a search. It remains in that state until the search object delivers search results (or an appropriate error), at which time the search object sets the value of the property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

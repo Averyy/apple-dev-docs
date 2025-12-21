@@ -32,16 +32,16 @@ Given that this is an immutable variant of the object, you should not allocate a
 
 ## Topics
 
-### Getting the Track ID
+### Getting the track ID
 - [var trackID: CMPersistentTrackID](avaudiomixinputparameters/trackid.md)
   The identifier of the audio track to which the parameters should be applied.
-### Getting Volume Ramps
+### Getting volume ramps
 - [func getVolumeRamp(for: CMTime, startVolume: UnsafeMutablePointer<Float>?, endVolume: UnsafeMutablePointer<Float>?, timeRange: UnsafeMutablePointer<CMTimeRange>?) -> Bool](avaudiomixinputparameters/getvolumeramp(for:startvolume:endvolume:timerange:).md)
   Retrieves the volume ramp that includes the specified time.
-### Getting an Audio Tap
+### Getting an audio tap
 - [var audioTapProcessor: MTAudioProcessingTap?](avaudiomixinputparameters/audiotapprocessor.md)
   The audio processing tap associated with the track.
-### Getting the Time Pitch Algorithm Setting
+### Getting the time pitch algorithm setting
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](avaudiomixinputparameters/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
 - [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)

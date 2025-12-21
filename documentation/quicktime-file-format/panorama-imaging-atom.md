@@ -5,9 +5,6 @@
 
 An atom describes the default imaging characteristics for all the panoramic nodes in a scene.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 A panorama-imaging atom describes the default imaging characteristics for all the panoramic nodes in a scene. This atom overrides QuickTime VR’s own defaults.

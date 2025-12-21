@@ -17,7 +17,7 @@ var sendsActionOnArrowKeys: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), pressing an arrow key scrolls the browser. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), it also sends the action message specified by [`action`](nscontrol/action.md).
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), pressing an arrow key scrolls the browser. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), it also sends the action message specified by [`action`](nscontrol/action.md).
 
 ## See Also
 

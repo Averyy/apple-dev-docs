@@ -19,7 +19,7 @@ var endpointAvailable: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the content server is available.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the content server is available.
 
 ## See Also
 

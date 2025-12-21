@@ -23,6 +23,8 @@ extern bool ar_room_anchor_is_current_room(ar_room_anchor_t room_anchor);
 - [ar_room_anchor_get_plane_anchor_identifiers](ar_room_anchor_get_plane_anchor_identifiers.md)
 - [ar_room_anchor_get_timestamp](ar_room_anchor_get_timestamp.md)
 - [ar_room_anchor_is_equal_to_room_anchor](ar_room_anchor_is_equal_to_room_anchor.md)
+- [ar_room_anchor_get_mesh_geometries_for_surface_classification](ar_room_anchor_get_mesh_geometries_for_surface_classification.md)
+  Get disjoint mesh geometries of a given surface classification.
 - [ar_room_anchors_enumerate_anchors](ar_room_anchors_enumerate_anchors.md)
 - [ar_room_anchors_enumerate_anchors_f](ar_room_anchors_enumerate_anchors_f.md)
 - [ar_room_anchors_get_count](ar_room_anchors_get_count.md)

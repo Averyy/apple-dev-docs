@@ -45,7 +45,7 @@ Because the login process can happen on any network, the system sends all HTTP r
 - [Creating a refresh request](creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 ### Login response
 - [Creating a JSON Web Encryption (JWE) login response](creating-a-json-web-encryption-jwe-login-response.md)
   Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).

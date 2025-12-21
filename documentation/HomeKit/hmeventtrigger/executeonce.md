@@ -21,7 +21,7 @@ var executeOnce: Bool { get }
 
 #### Discussion
 
-Disables the trigger after its first execution if [`true`](https://developer.apple.com/documentation/swift/true).
+Disables the trigger after its first execution if [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

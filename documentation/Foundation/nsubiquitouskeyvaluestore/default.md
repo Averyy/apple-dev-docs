@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Returns the shared iCloud key-value store object.
+The shared iCloud key-value store object.
 
 **Availability**:
 - iOS 5.0+
@@ -20,13 +20,9 @@ Returns the shared iCloud key-value store object.
 class var `default`: NSUbiquitousKeyValueStore { get }
 ```
 
-#### Return Value
-
-The shared iCloud key-value store object.
-
 #### Discussion
 
-An app must always use the default iCloud key-value store object to get and set values. This store is tied to the unique identifier string your app provides in its entitlement requests.
+Use this object to access the shared iCloud key-value store tied to your app and the current person. You must use this object to get and set stored values.
 
 
 ---

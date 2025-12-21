@@ -17,7 +17,7 @@ var showsHiddenFiles: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel displays hidden files; if [`false`](https://developer.apple.com/documentation/swift/false), it does not. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the panel displays hidden files; if [`false`](https://developer.apple.com/documentation/Swift/false), it does not. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

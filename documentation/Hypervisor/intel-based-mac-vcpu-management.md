@@ -7,9 +7,9 @@ Create and run virtual CPUs, and manage CPU-specific registers and features.
 ## Topics
 
 ### Creation and destruction
-- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:_:).md)
+- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpuid_t>, hv_vcpu_options_t) -> hv_return_t](hv_vcpu_create(_:_:).md)
   Creates a vCPU instance for the current thread.
-- [func hv_vcpu_destroy(hv_vcpu_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
+- [func hv_vcpu_destroy(hv_vcpuid_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
   Destroys the vCPU instance associated with the current thread.
 - [typealias hv_vcpu_options_t](hv_vcpu_options_t.md)
   Options for creating a new vCPU instance.
@@ -26,9 +26,9 @@ Create and run virtual CPUs, and manage CPU-specific registers and features.
   Invalidates the translation look-aside buffer (TLB) of a vCPU.
 - [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
   Flushes the cached state of a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpuid_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+- [func hv_vcpu_run(hv_vcpuid_t) -> hv_return_t](hv_vcpu_run(_:).md)
   Starts the execution of a vCPU.
 - [Execution Deadlines](3553338-execution-deadlines.md)
   An enumeration that describes available execution deadlines available to vCPUs.

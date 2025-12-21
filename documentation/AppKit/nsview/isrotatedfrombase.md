@@ -17,7 +17,7 @@ var isRotatedFromBase: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the view or any of its ancestors has had its [`frameRotation`](nsview/framerotation.md) or [`boundsRotation`](nsview/boundsrotation.md) properties modified at any time. The value is still [`true`](https://developer.apple.com/documentation/swift/true) if the rotation factor is changed to a nonzero value and then back to 0.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the view or any of its ancestors has had its [`frameRotation`](nsview/framerotation.md) or [`boundsRotation`](nsview/boundsrotation.md) properties modified at any time. The value is still [`true`](https://developer.apple.com/documentation/Swift/true) if the rotation factor is changed to a nonzero value and then back to 0.
 
 Use this information to optimize drawing and coordinate calculation. Do not use it to reflect the exact state of the view’s coordinate system.
 

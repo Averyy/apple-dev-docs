@@ -39,15 +39,15 @@ Before beginning the training process in Create ML with the 3D model asset, keep
 
 ##### Train a Machine Learning Model with the 3d Model Asset in Create Ml
 
-Object tracking requires a reference object file to track the spatial location and orientation of the corresponding real-world object. You use Create ML to train a machine learning model to create a reference object file unique to your object. The training of machine learning models with your 3D asset and the creation of the reference object file both run locally on your Mac.
+Object tracking requires a reference object file to track the spatial location and orientation of the corresponding real-world object. You use Create ML to train a machine learning model to create a reference object file unique to your object. The training of machine learning models with your 3D asset and the creation of the reference object file both run locally on your Mac. You can either train a model with the Create ML developer tool that comes with Xcode, or with the Create ML command-line tool.
 
-To set up the training:
+The following are the steps to train a model in the Create ML app:
 
 1. Open Xcode and choose Xcode > Open Developer Tool > Create ML.
-2. In the dialog that appears, click New Document.
-3. In the Choose a Template dialog, select the Spatial category in the left pane, select the Object Tracking template, and click Next.
-4. Enter your project name and other information, and click Next.
-5. Select a location for your project, and click Create.
+2. Click the New Document button in the Open Project dialog that Create ML presents at launch.
+3. In the Choose a Template dialog, select Object Tracking template, which is in the Spatial category, and click Next.
+4. Give your project a name and, optionally, enter additional information about the model, and click Next.
+5. Select a location for your project and click Create.
 6. Create ML opens a training configuration view with an empty 3D viewport. Drag the USDZ file of your 3D model asset into the 3D viewport.
 
 The 3D viewport is an interactive space where you can view your 3D model asset from different angles. After it appears in the viewport, check the appearance of the 3D model asset and confirm that it matches the absolute dimensions of your real-world object. Also make sure that the dimensions of the 3D model asset at the bottom right of the viewport match the actual dimensions of your object. If the scale doesn’t match, one option is to use Reality Composer Pro to rescale the 3D model and then add the adjusted USDZ file to Create ML.
@@ -77,6 +77,34 @@ Create ML supports training multiple machine learning models in the same object-
 > **Note**: You can track up to 10 different reference objects simultaneously without an impact to performance.
 
 After inspecting your 3D model asset and configuring the training settings, click Train to begin the training process. A progress bar indicates the amount of time until the machine learning training is complete. The machine learning training can take a few hours, depending on the configuration of your Mac. A more advanced processor and additional RAM significantly improve the training time.
+
+##### Train Your Assets with the Create Ml Command Line Tool
+
+Starting with Xcode 26, which requires macOS 15.4 or later, you can train a machine learning model with your 3D asset by running the Create ML developer tool from a command line prompt. With an asset in the USDZ file format, you can use the tool to train the asset and get a reference object file to use for object tracking.
+
+The Create ML command-line tool automates object tracking tasks in your workflow, like using your scripts and cloud-based parallel setups to run the training process. You can also use the tool when you need to automate training a large number of objects while you continue to work on other tasks.
+
+You need to have Xcode command-line tools installed before using the Create ML tool, which you can check by running the following command:
+
+```shell
+% xcode-select -p
+```
+
+> **Note**: You can use the Create ML command line tool if the command’s output refers to a `Contents/Developer` directory in Xcode or to the `/Library/Developer/CommandLineTools` directory. If the command returns an error that indicates that Xcode or the command-line tools can’t find the directory, install the command-line tools package by running the `xcode-select --install` command.
+
+Begin the training process by invoking the Create ML command-line tool with the `xcrun` command. You need to modify the example below to provide the locations on your system for the commands inputs and outputs.
+
+```shell
+% xcrun createml objecttracker -s source.usdz -o tracker.referenceobject
+```
+
+The system uses the `xcrun` prefix to locate the path of the training tool in the Xcode command-line tools. The `-s` flag points to the source path for the 3D asset of the physical object you want to train, and the `-o` flag points to the output path to store the final trained reference object file. Before running this command, update it to include the name of the source and output of your object.
+
+After you run the tool, it starts training your object. Use the `—help` option for more information on training and topics like viewing angles, objects to avoid, and redirection to alternative pipes:
+
+```shell
+% xcrun createml objecttracker --help
+```
 
 ##### Export the Reference Object File
 
@@ -108,10 +136,10 @@ For more information about object tracking, see [`Explore object tracking for vi
 
 ## See Also
 
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -128,8 +156,6 @@ For more information about object tracking, see [`Explore object tracking for vi
   Learn how everything fits together in RealityKit.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)

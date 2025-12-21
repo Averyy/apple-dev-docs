@@ -6,12 +6,12 @@
 Starts the execution of a vCPU.
 
 **Availability**:
-- macOS 11.0+
+- macOS ?+
 
 ## Declaration
 
 ```swift
-func hv_vcpu_run(_ vcpu: hv_vcpu_t) -> hv_return_t
+func hv_vcpu_run(_ vcpu: hv_vcpuid_t) -> hv_return_t
 ```
 
 #### Return Value
@@ -38,7 +38,7 @@ On an Intel-based Mac, [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) exits from causes
   Gets pending interrupts for a vCPU.
 - [func hv_vcpu_set_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, Bool) -> hv_return_t](hv_vcpu_set_pending_interrupt(_:_:_:).md)
   Sets pending interrupts for a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpuid_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
 - [struct hv_interrupt_type_t](hv_interrupt_type_t.md)
   The type that defines the vCPU’s interrupts.

@@ -17,7 +17,6 @@ A mask that defines which categories this field belongs to.
 ## Declaration
 
 ```swift
-@MainActor
 var categoryBitMask: UInt32 { get set }
 ```
 

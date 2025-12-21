@@ -22,8 +22,6 @@ func adaptedAsUpdatableEstimator() -> TabularTransformerToUpdatableEstimatorAdap
 
 ## See Also
 
-- [func appending<Other>(Other) -> ComposedTabularTransformer<Self, Other>](tabulartransformer/appending(_:)-7d5ca.md)
-  Composes this tabular transformer with another tabular transformer.
 - [func adaptedAsEstimator() -> TabularTransformerToEstimatorAdaptor<Self>](tabulartransformer/adaptedasestimator.md)
   Exposes this tabular transformer as a trivial tabular estimator.
 

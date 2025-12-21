@@ -83,7 +83,7 @@ You choose the number of increments and the ranges of wait times and skill level
 
 ##### Write an Expression That Matches Players By Skill Level
 
-Write an expression for a match rule where the expression returns a Boolean value of [`true`](https://developer.apple.com/documentation/swift/true) for an acceptable range of skill values that expands at specified time increments. An expression is a JMESPath formatted string with some Game Center matchmaking function additions.
+Write an expression for a match rule where the expression returns a Boolean value of [`true`](https://developer.apple.com/documentation/Swift/true) for an acceptable range of skill values that expands at specified time increments. An expression is a JMESPath formatted string with some Game Center matchmaking function additions.
 
 First use the `diff()` function (see [`Computing numeric differences`](https://developer.apple.com/documentation/AppStoreConnectAPI/computing-numeric-differences)) to compute the difference between the maximum and minimum skill values of players, where `skill` is a game-specific property name that you set in your code when you submit a match request.
 

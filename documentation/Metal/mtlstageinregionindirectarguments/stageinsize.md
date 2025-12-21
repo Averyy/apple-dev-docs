@@ -19,11 +19,6 @@ The size of the block.
 var stageInSize: (UInt32, UInt32, UInt32)
 ```
 
-## See Also
-
-- [var stageInOrigin: (UInt32, UInt32, UInt32)](mtlstageinregionindirectarguments/stageinorigin.md)
-  The location of the upper-left corner of the block.
-
 
 ---
 

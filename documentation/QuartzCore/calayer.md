@@ -280,9 +280,6 @@ If the layer object was created by a view, the view typically assigns itself as 
 - [class func cornerCurveExpansionFactor(CALayerCornerCurve) -> CGFloat](calayer/cornercurveexpansionfactor(_:).md)
 ### Instance Properties
 - [var toneMapMode: CALayer.ToneMapMode](calayer/tonemapmode-swift.property.md)
-### Instance Methods
-- [func createRemoteLayerBound(to: mach_port_t) -> (any JRSRemoteLayer & NSObjectProtocol)!](calayer/createremotelayerbound(to:).md)
-- [func hostRemoteLayer(UInt32)](calayer/hostremotelayer(_:).md)
 
 ## Relationships
 

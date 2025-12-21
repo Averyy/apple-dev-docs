@@ -31,19 +31,6 @@ enum Status
   The user has yet to decide whether to authorize the current app to use MusicKit.
 - [MusicAuthorization.Status.restricted](musicauthorization/status/restricted.md)
   Apps on this device can’t access MusicKit in a way that the user can’t change.
-### Initializers
-- [init?(rawValue: String)](musicauthorization/status/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](musicauthorization/status/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MusicAuthorization.Status.RawValue](musicauthorization/status/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicauthorization/status/customstringconvertible-implementations.md)
-- [Equatable Implementations](musicauthorization/status/equatable-implementations.md)
-- [RawRepresentable Implementations](musicauthorization/status/rawrepresentable-implementations.md)
 
 ## Relationships
 

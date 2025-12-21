@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns a Boolean value indicating whether the specified key is managed by an administrator.
+Returns a Boolean value that indicates whether an administrator provided the value for the specified key.
 
 **Availability**:
 - iOS 2.0+
@@ -22,20 +22,20 @@ func objectIsForced(forKey key: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value of the specified key is managed by an administrator, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if an administrator provides a value for the key, otherwise `false`.
 
 #### Discussion
 
-This method assumes that the key is a preference associated with the current user and application. For managed keys, the application should disable any user interface that allows the user to modify the value of `key`.
+Apps can’t change the value of managed keys, so use this method to determine if you can make changes to one of your app-specific keys. If a key is managed, disable any app-specific UI you use to change the value of that key.
 
 ## Parameters
 
-- `key`: The key whose status you want to check.
+- `key`: The name of the key to check.
 
 ## See Also
 
 - [func objectIsForced(forKey: String, inDomain: String) -> Bool](userdefaults/objectisforced(forkey:indomain:).md)
-  Returns a Boolean value indicating whether the key in the specified domain is managed by an administrator.
+  Returns a Boolean value that indicates whether an administrator provided the value for the key in the specified domain.
 
 
 ---

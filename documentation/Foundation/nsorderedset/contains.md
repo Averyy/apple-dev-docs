@@ -22,7 +22,7 @@ func contains(_ object: Any) -> Bool
 
 #### Return Value
 
-YES if `object` is present in the set, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+YES if `object` is present in the set, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

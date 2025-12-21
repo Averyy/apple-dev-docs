@@ -17,7 +17,7 @@ func SecTaskCreateWithAuditToken(_ allocator: CFAllocator?, _ token: audit_token
 
 #### Return Value
 
-A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free this task’s memory when you are done with it.
+A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this task’s memory when you are done with it.
 
 ## Parameters
 

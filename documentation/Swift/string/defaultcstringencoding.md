@@ -27,7 +27,7 @@ static var defaultCStringEncoding: String.Encoding { get }
 - [static func localizedName(of: String.Encoding) -> String](string/localizedname(of:).md)
   Returns a human-readable string giving the name of the specified encoding.
 - [var isContiguousUTF8: Bool](string/iscontiguousutf8.md)
-  Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+  Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
 - [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)

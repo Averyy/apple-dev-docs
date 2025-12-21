@@ -6,12 +6,11 @@
 The barcode symbologies that the request detects in an image.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,7 +27,7 @@ By default, a request scans for all symbologies. Specify a subset of symbologies
 - [var coalesceCompositeSymbologies: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/coalescecompositesymbologies.md)
   A Boolean value that indicates whether the request combines multiple codes.
 - [var enabled: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/enabled.md)
-  A Boolean value that indicates whether to detect barcodes in the document.
+  Boolean value that indicates whether to detect barcodes in the document.
 
 
 ---

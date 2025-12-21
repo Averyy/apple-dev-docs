@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+The ordinal position of the weekday unit within the month unit. For example, `2` in “2nd Wednesday in July”
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

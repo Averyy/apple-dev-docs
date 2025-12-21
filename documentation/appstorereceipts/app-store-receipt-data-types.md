@@ -43,4 +43,4 @@ Data types of objects that return in the receipt.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstorereceipts/app_store_receipt_data_types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstorereceipts/app-store-receipt-data-types)*

@@ -21,7 +21,7 @@ enum MTLMutability
 
 ## Topics
 
-### Enumeration Cases
+### Enumeration cases
 - [MTLMutability.default](mtlmutability/default.md)
   The default behavior, based on the buffer’s type.
 - [MTLMutability.mutable](mtlmutability/mutable.md)

@@ -22,15 +22,10 @@ struct RecordLabel
 
 ## Topics
 
-### Operators
-- [static func == (RecordLabel, RecordLabel) -> Bool](recordlabel/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var artwork: Artwork?](recordlabel/artwork.md)
   The record label’s artwork.
-- [var hashValue: Int](recordlabel/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](recordlabel/id-swift.property.md)
+- [let id: MusicItemID](recordlabel/id.md)
   The unique identifier for the record label.
 - [var latestReleases: MusicItemCollection<Album>?](recordlabel/latestreleases.md)
   A collection of the most recent releases for the record label.
@@ -44,20 +39,8 @@ struct RecordLabel
   A collection of top releases for the record label.
 - [var url: URL?](recordlabel/url.md)
   The URL for the record label.
-### Instance Methods
-- [func hash(into: inout Hasher)](recordlabel/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [RecordLabel.ID](recordlabel/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](recordlabel/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](recordlabel/customstringconvertible-implementations.md)
-- [Decodable Implementations](recordlabel/decodable-implementations.md)
-- [Encodable Implementations](recordlabel/encodable-implementations.md)
-- [Equatable Implementations](recordlabel/equatable-implementations.md)
 - [FilterableMusicItem Implementations](recordlabel/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](recordlabel/musicitem-implementations.md)
 
 ## Relationships
 

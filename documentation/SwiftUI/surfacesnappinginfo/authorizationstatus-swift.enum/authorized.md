@@ -6,7 +6,7 @@
 The user has authorized sharing information about their surroundings.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -25,7 +25,7 @@ This method has the same exact signature as the corresponding one declared by [`
 
 If the gesture recognizer is interpreting a continuous gesture, it should set its state to [`UIGestureRecognizer.State.began`](uigesturerecognizer/state-swift.enum/began.md) upon receiving this message. If at any point in its handling of the touch objects the gesture recognizer determines that the multi-touch event sequence is not its gesture, it should set it state to [`UIGestureRecognizer.State.cancelled`](uigesturerecognizer/state-swift.enum/cancelled.md).
 
-Multiple touches are disabled by default. In order to receive multiple touch events you must set the a [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property of the attached view instance to [`true`](https://developer.apple.com/documentation/swift/true).
+Multiple touches are disabled by default. In order to receive multiple touch events you must set the a [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property of the attached view instance to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

@@ -28,7 +28,7 @@ Provide an `InfoPlist.strings` file and include localized text for a custom key 
 "Toolbar Button Label for Identifier: translate" = "Przetłumacz";
 ```
 
-For more information, see [`Managing Your App’s Information Property List`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list#Localize-the-Information-Property-List).
 
 ##### Dynamically Change the Image of a Toolbar Item
 

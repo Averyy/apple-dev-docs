@@ -24,13 +24,13 @@ optional func tableView(_ tableView: UITableView, canHandle session: any UIDropS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the table view can accept the dragged data, or [`false`](https://developer.apple.com/documentation/swift/false) if it can’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the table view can accept the dragged data, or [`false`](https://developer.apple.com/documentation/Swift/false) if it can’t.
 
 #### Discussion
 
 Implement this method when you want to dynamically determine whether to accept dropped data in your table view. In your implementation, check the type of the dragged data and return a Boolean value indicating whether you can accept the drop. For example, you might call the [`hasItemsConforming(toTypeIdentifiers:)`](uidragdropsession/hasitemsconforming(totypeidentifiers:).md) method of the session object to determine whether it contains data that your app can accept.
 
-If you don’t implement this method, the table view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true). If you return [`false`](https://developer.apple.com/documentation/swift/false) from this method, the table view doesn’t call any more methods of your drop delegate for the given session.
+If you don’t implement this method, the table view assumes a return value of [`true`](https://developer.apple.com/documentation/Swift/true). If you return [`false`](https://developer.apple.com/documentation/Swift/false) from this method, the table view doesn’t call any more methods of your drop delegate for the given session.
 
 ## Parameters
 

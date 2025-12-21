@@ -6,7 +6,7 @@
 A component that supports general image presentation.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -89,7 +89,7 @@ If you created the component with a [`ImagePresentationComponent.Spatial3DImage`
 - [struct BillboardComponent](billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
 - [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
-  A component which controls how an entity will blend visually with objects in the user’s local environment
+  A component that controls how an entity blends visually with objects in the local environment.
 - [struct LensDistortionData](lensdistortiondata.md)
   A description of estimated lens distortion that can be used to rectify images.
 

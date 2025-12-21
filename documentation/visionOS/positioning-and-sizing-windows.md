@@ -73,8 +73,6 @@ WindowGroup(id: "globe") {
 .defaultSize(width: 1, height: 1, depth: 1, in: .meters)
 ```
 
-The volume maintains this size for its entire lifetime. People can’t change the size of a volume at runtime.
-
 Although you can specify a volume’s size in points, it’s typically better to use physical units, like the above code, which specifies a size in meters. This is because the system renders a volume with fixed scaling rather than dynamic scaling, unlike a regular window, which means the volume appears more like a physical object than a user interface. For information about the different kinds of scaling, see [`Spatial layout`](https://developer.apple.com/design/Human-Interface-Guidelines/spatial-layout).
 
 ## See Also

@@ -10,6 +10,8 @@ Add a challenge to a Game Center detail or group by referencing an existing lead
 
 ## Mentions
 
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
 ## See Also
@@ -20,6 +22,8 @@ Add a challenge to a Game Center detail or group by referencing an existing lead
   Get a list of versions for a specific Game Center challenge.
 - [Modify a challenge](patch-v1-gamecenterchallenges-_id_.md)
   Update details for a specific Game Center challenge.
+- [Modify the leaderboard for a Game Center challenge](patch-v1-gamecenterchallenges-_id_-relationships-leaderboardv2.md)
+  Update the leaderboard relationship for a specific Game Center challenge.
 - [Modify the leaderboard for a challenge](patch-v1-gamecenterchallenges-_id_-relationships-leaderboard.md)
   Update the relationship between a leaderbaord and a specific Game Center challenge.
 - [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)

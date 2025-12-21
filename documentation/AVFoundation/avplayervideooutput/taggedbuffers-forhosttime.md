@@ -20,6 +20,10 @@ func taggedBuffers(forHostTime hostTime: CMTime) -> (taggedBufferGroup: [CMTagge
 
 ## See Also
 
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+  Retrieves a video sample along with auxiliary information for display at the specified host time.
+- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+  A video frame along with auxiliary information for display at the specified presentation time.
 - [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
   An object that provides configuration information for the related player item.
 

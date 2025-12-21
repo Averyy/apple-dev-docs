@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -21,8 +21,6 @@ struct DidRenameVolumeMessage
 - [var oldLocalizedVolumeName: String](nsworkspace/didrenamevolumemessage/oldlocalizedvolumename.md)
 - [var oldVolumeURL: URL](nsworkspace/didrenamevolumemessage/oldvolumeurl.md)
 - [var volumeURL: URL](nsworkspace/didrenamevolumemessage/volumeurl.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidRenameVolumeMessage) -> Notification](nsworkspace/didrenamevolumemessage/makenotification(_:).md)
 
 ## Relationships
 

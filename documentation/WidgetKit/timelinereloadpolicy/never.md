@@ -10,7 +10,7 @@ A policy that specifies that the app prompts WidgetKit when a new timeline is av
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

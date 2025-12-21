@@ -41,6 +41,8 @@ See [`subscript(_:)`](mldatatable/subscript(_:)-10r4l.md) from [`MLDataTable`](m
 
 ## See Also
 
+- [subscript(_:)](mluntypedcolumn/subscript(_:).md)
+  Accesses the element at the given position.
 - [subscript(MLDataColumn<Bool>) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-8ot43.md)
   Creates a subset of the column by masking its elements with a data column of Booleans.
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: protocol
 
-A type `T` whose metatype `T.Type` is `Sendable`.
+A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 
 **Availability**:
 - iOS 8.0+
@@ -20,6 +20,50 @@ A type `T` whose metatype `T.Type` is `Sendable`.
 protocol SendableMetatype : ~Copyable, ~Escapable
 ```
 
+#### Overview
+
+A generic type `T` will need a `SendableMetatype` conformance when its metatype is shared across concurrency boundaries. For example,
+
+```swift
+protocol P {
+  static func f()
+}
+
+func useFromAnotherTask<T: P>(_: T.Type) {
+  Task { @concurrent in
+    T.f()   // error: capturing non-Sendable type `T.Type` in a concurrently-executing task
+  }
+}
+```
+
+The potential data race above would occur when `useFromAnotherTask` is provided with an isolated conformance to `P`. For example:
+
+```swift
+@MainActor
+class MyModel: @MainActor P {
+  /*implicitly @MainActor/*
+  static func f() {
+    /* on the main actor */
+  }
+}
+
+useFromAnotherTask(MyModel.self)
+```
+
+Here, the error within the body of `useFromAnotherTask` is preventing the isolated conformance from leaving the current task and actor. The signature of `useFromAnotherTask` can be adjusted to introduce a requirement on `SendableMetatype`:
+
+```swift
+func useFromAnotherTask<T: P & SendableMetatype>(_: T.Type) {
+  Task { @concurrent in
+    T.f()   // error: okay, T.Type is Sendable
+  }
+}
+
+useFromAnotherTask(MyModel.self) // error: cannot use main-actor-isolated conformance `MyModel: P` for a `SendableMetatype`-conforming type parameter `T`
+```
+
+The `Sendable` protocol inherits from `SendableMetatype`, so any generic type `T` with a requirement `T: Sendable` will have the implied requirement `T: SendableMetatype`.
+
 ## Relationships
 
 ### Inherited By
@@ -33,9 +77,6 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
-- [MainExecutor](mainexecutor.md)
-- [RunLoopExecutor](runloopexecutor.md)
-- [SchedulableExecutor](schedulableexecutor.md)
 - [Sendable](sendable.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
@@ -87,8 +128,6 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 - [AtomicStoreOrdering](../synchronization/atomicstoreordering.md)
 - [AtomicUpdateOrdering](../synchronization/atomicupdateordering.md)
 - [Bool](bool.md)
-- [CFMainExecutor](cfmainexecutor.md)
-- [CFTaskExecutor](cftaskexecutor.md)
 - [CancellationError](cancellationerror.md)
 - [Character](character.md)
 - [CheckedContinuation](checkedcontinuation.md)
@@ -117,8 +156,6 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 - [Dictionary.Values.Iterator](dictionary/values-swift.struct/iterator.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [DiscontiguousSlice.Index](discontiguousslice/index.md)
-- [DispatchGlobalTaskExecutor](dispatchglobaltaskexecutor.md)
-- [DispatchMainExecutor](dispatchmainexecutor.md)
 - [DistributedActorCodingError](../distributed/distributedactorcodingerror.md)
 - [Double](double.md)
 - [Double.SIMD16Storage](double/simd16storage.md)
@@ -130,8 +167,6 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 - [DropFirstSequence](dropfirstsequence.md)
 - [DropWhileSequence](dropwhilesequence.md)
 - [DropWhileSequence.Iterator](dropwhilesequence/iterator.md)
-- [DummyMainExecutor](dummymainexecutor.md)
-- [DummyTaskExecutor](dummytaskexecutor.md)
 - [Duration](duration.md)
 - [Duration.TimeFormatStyle](duration/timeformatstyle.md)
 - [Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.struct.md)
@@ -236,7 +271,11 @@ protocol SendableMetatype : ~Copyable, ~Escapable
 - [Never](never.md)
 - [ObjectIdentifier](objectidentifier.md)
 - [ObservationRegistrar](../observation/observationregistrar.md)
+- [Observations](../observation/observations.md)
+- [Observations.Iteration](../observation/observations/iteration.md)
 - [Optional](optional.md)
+- [OutputRawSpan](outputrawspan.md)
+- [OutputSpan](outputspan.md)
 - [PartialRangeFrom](partialrangefrom.md)
 - [PartialRangeFrom.Iterator](partialrangefrom/iterator.md)
 - [PartialRangeThrough](partialrangethrough.md)

@@ -10,7 +10,7 @@ A policy that specifies that WidgetKit requests a new timeline after the last da
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

@@ -6,13 +6,13 @@
 Do a scan checking for whether the contents are all-ASCII.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,8 @@ mutating func checkForASCII() -> Bool
 #### Discussion
 
 Updates the `isKnownASCII` bit if contents are all-ASCII.
+
+> **Note**: O(n)
 
 
 ---

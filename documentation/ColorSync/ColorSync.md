@@ -29,8 +29,12 @@ Reproduce colors accurately across a range of input, output, and display devices
 - [struct ColorSyncDataDepth](colorsyncdatadepth.md)
 - [struct ColorSyncMD5](colorsyncmd5.md)
 ### Variables
+- [var icVersion4Point4Number: Int](icversion4point4number.md)
 - [var kColorSyncAlphaNone: ColorSyncAlphaInfo](kcolorsyncalphanone.md)
+- [var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!](kcolorsyncdonotsubstituteprofiles.md)
 - [var kColorSyncTransformUseITU709OETF: Unmanaged<CFString>!](kcolorsynctransformuseitu709oetf.md)
+### Functions
+- [func ColorSyncProfileCreateWithURLAndOptions(CFURL!, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreatewithurlandoptions(_:_:_:).md)
 ### Type Aliases
 - [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
 - [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)

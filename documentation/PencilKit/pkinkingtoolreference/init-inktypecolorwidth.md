@@ -15,7 +15,7 @@ Creates an ink tool object with the specified color and line width values.
 ## Declaration
 
 ```swift
-init(inkType type: __PKInkType, color: UIColor, width: CGFloat)
+init(inkType type: __PKInkType, color: NSColor, width: CGFloat)
 ```
 
 #### Return Value

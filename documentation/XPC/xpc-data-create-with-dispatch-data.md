@@ -23,7 +23,7 @@ A new data object.
 
 #### Discussion
 
-The object returned by this method will refer to the buffer returned by [`dispatch_data_create_map`](https://developer.apple.com/documentation/dispatch/1452937-dispatch_data_create_map). The point where XPC will make the call to [`dispatch_data_create_map`](https://developer.apple.com/documentation/dispatch/1452937-dispatch_data_create_map) is undefined.
+The object returned by this method will refer to the buffer returned by [`dispatch_data_create_map`](https://developer.apple.com/documentation/Dispatch/dispatch_data_create_map). The point where XPC will make the call to [`dispatch_data_create_map`](https://developer.apple.com/documentation/Dispatch/dispatch_data_create_map) is undefined.
 
 ## Parameters
 

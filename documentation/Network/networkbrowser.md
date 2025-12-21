@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: class
 
+Discover advertised services and devices on the network.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -18,20 +20,27 @@
 final class NetworkBrowser<Provider> where Provider : BrowserProvider
 ```
 
+#### Overview
+
+Whenever services become available, get modified, or go away, the browser will generate a set of browse results tracking those changes. You can subscribe to and receive these updates as long as the browser is active.
+
 ## Topics
 
 ### Initializers
-- [convenience init(for: Provider, using: NWParameters?)](networkbrowser/init(for:using:).md)
-- [init(provider: Provider, using: NWParameters?)](networkbrowser/init(provider:using:).md)
+- [init(for: Provider, using: NWParameters?)](networkbrowser/init(for:using:).md)
+  Create a browser that will browse for the service specified by a BrowserProvider, with parameters.
 ### Instance Methods
-- [func onStateUpdate(NetworkBrowser<Provider>.StateUpdateHandler?) -> Self](networkbrowser/onstateupdate(_:).md)
-- [func run<Return>(([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.Result<Return>) async throws -> Return](networkbrowser/run(_:)-1zk2m.md)
+- [func onStateUpdate((NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self](networkbrowser/onstateupdate(_:).md)
+  Set a closure to be called when the browser’s state changes.
 - [func run(([Provider.Endpoint]) async throws -> Void) async throws](networkbrowser/run(_:)-31x4b.md)
+  Run the browser and receive updates when when the set of discovered endpoints change.
+- [func run<Return>(([Provider.Endpoint]) async throws -> NetworkBrowser<Provider>.RunResult<Return>) async throws -> Return](networkbrowser/run(_:)-wqyo.md)
 ### Type Aliases
-- [NetworkBrowser.State](networkbrowser/state.md)
 - [NetworkBrowser.StateUpdateHandler](networkbrowser/stateupdatehandler.md)
 ### Enumerations
-- [NetworkBrowser.Result](networkbrowser/result.md)
+- [NetworkBrowser.RunResult](networkbrowser/runresult.md)
+- [NetworkBrowser.State](networkbrowser/state.md)
+  Possible states for the browser to be in.
 
 ## Relationships
 

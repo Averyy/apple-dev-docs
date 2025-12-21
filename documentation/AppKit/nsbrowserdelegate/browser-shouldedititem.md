@@ -17,7 +17,7 @@ optional func browser(_ browser: NSBrowser, shouldEditItem item: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the editing session to begin; [`false`](https://developer.apple.com/documentation/swift/false) to disallow it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the editing session to begin; [`false`](https://developer.apple.com/documentation/Swift/false) to disallow it.
 
 ## Parameters
 

@@ -25,6 +25,8 @@ When you add an object that conforms to `RenderingExtension` in your extensionâ€
 ### Handling incoming XPC connections
 - [func handle(xpcConnection: xpc_connection_t)](renderingextension/handle(xpcconnection:).md)
   Accept or reject an incoming XPC connection.
+### Instance Methods
+- [func enableFeature(RenderingExtensionFeature)](renderingextension/enablefeature(_:).md)
 
 ## Relationships
 

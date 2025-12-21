@@ -26,7 +26,7 @@ func SecKeyCreateWithData(_ keyData: CFData, _ attributes: CFDictionary, _ error
 
 #### Return Value
 
-The restored key or `NULL` on failure. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free the key’s memory when you are done with it.
+The restored key or `NULL` on failure. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free the key’s memory when you are done with it.
 
 ## Parameters
 

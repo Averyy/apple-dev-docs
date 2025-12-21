@@ -19,13 +19,13 @@ class AVAssetWriterInputCaptionAdaptor
 
 ## Topics
 
-### Creating a Caption Adaptor
+### Creating a caption adaptor
 - [init(assetWriterInput: AVAssetWriterInput)](avassetwriterinputcaptionadaptor/init(assetwriterinput:).md)
   Creates a new caption adaptor that writes to the specified asset writer input.
-### Accessing the Writer Input
+### Accessing the writer input
 - [var assetWriterInput: AVAssetWriterInput](avassetwriterinputcaptionadaptor/assetwriterinput.md)
   The associated asset writer input.
-### Appending Captions
+### Appending captions
 - [func append(AVCaption) -> Bool](avassetwriterinputcaptionadaptor/append(_:)-910lp.md)
   Appends a caption to the writer input.
 - [func append(AVCaptionGroup) -> Bool](avassetwriterinputcaptionadaptor/append(_:)-4ils8.md)

@@ -17,7 +17,7 @@ object CustomerReviewResponseV1.Attributes
 ## See Also
 
 - [object CustomerReviewResponseV1.Relationships](customerreviewresponsev1/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

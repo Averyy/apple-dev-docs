@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Disable Nagle’s algorithm.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func noDelay(_ val: Bool) -> TCP
+func noDelay(_ noDelay: Bool) -> TCP
 ```
+
+#### Discussion
+
+A boolean indicating that TCP should disable Nagle’s algorithm (`TCP_NODELAY`).
+
+## Parameters
+
+- `noDelay`: True to disable Nagle’s algorithm, false otherwise.
 
 
 ---

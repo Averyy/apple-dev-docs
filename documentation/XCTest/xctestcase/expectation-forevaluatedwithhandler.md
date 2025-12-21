@@ -13,7 +13,7 @@ func expectation(for predicate: NSPredicate, evaluatedWith object: Any?, handler
 
 #### Discussion
 
-The expectation periodically evaluates the predicate and also may use notifications or other events to optimistically re-evaluate. The test fulfills the expectation when the predicate evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
+The expectation periodically evaluates the predicate and also may use notifications or other events to optimistically re-evaluate. The test fulfills the expectation when the predicate evaluates to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 When you use the resulting expectation from Swift and await using [`fulfillment(of:timeout:enforceOrder:)`](xctestcase/fulfillment(of:timeout:enforceorder:).md) rather than [`wait(for:)`](xctestcase/wait(for:).md), XCTest evaluates `predicate` on the main actor.
 

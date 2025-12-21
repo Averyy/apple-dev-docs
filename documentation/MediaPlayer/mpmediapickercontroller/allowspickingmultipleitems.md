@@ -19,7 +19,7 @@ var allowsPickingMultipleItems: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item picker allows the selection of multiple media items. When set to [`false`](https://developer.apple.com/documentation/swift/false), the media picker only allows the selection of a single media item. The label for the button that dismisses the picker is “Done” when this value is [`true`](https://developer.apple.com/documentation/swift/true) and “Cancel” when it’s [`false`](https://developer.apple.com/documentation/swift/false).
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the media item picker allows the selection of multiple media items. When set to [`false`](https://developer.apple.com/documentation/Swift/false), the media picker only allows the selection of a single media item. The label for the button that dismisses the picker is “Done” when this value is [`true`](https://developer.apple.com/documentation/Swift/true) and “Cancel” when it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

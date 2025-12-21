@@ -22,14 +22,14 @@ enum MLMultiArrayShapeConstraintType
 
 ## Topics
 
-### Enumeration Cases
+### Constraint types
 - [MLMultiArrayShapeConstraintType.enumerated](mlmultiarrayshapeconstrainttype/enumerated.md)
   The constraint is an array of allowed shapes.
 - [MLMultiArrayShapeConstraintType.range](mlmultiarrayshapeconstrainttype/range.md)
   The constraint is a set of ranges allowed for the array shape.
 - [MLMultiArrayShapeConstraintType.unspecified](mlmultiarrayshapeconstrainttype/unspecified.md)
   The constraint type is undefined.
-### Initializers
+### Creating a constraint type
 - [init?(rawValue: Int)](mlmultiarrayshapeconstrainttype/init(rawvalue:).md)
 
 ## Relationships

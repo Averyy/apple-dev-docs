@@ -6,12 +6,11 @@
 A request that detects a smudge on a lens from an image or video frame capture.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -48,18 +47,6 @@ func isGoodCapture(imageURL:URL) async throws -> Bool {
 ### Creating a request
 - [init(DetectLensSmudgeRequest.Revision?)](detectlenssmudgerequest/init(_:).md)
   Creates a request to detect whether the camera lens has a smudge.
-### Getting the revision
-- [let revision: DetectLensSmudgeRequest.Revision](detectlenssmudgerequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static var supportedRevisions: [DetectLensSmudgeRequest.Revision]](detectlenssmudgerequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectLensSmudgeRequest.Revision](detectlenssmudgerequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var cropAndScaleAction: ImageCropAndScaleAction](detectlenssmudgerequest/cropandscaleaction.md)
-  An optional setting that tells the algorithm how to scale an input image before generating the result.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
-  A scale to apply to an input image before performing a request.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -73,8 +60,21 @@ func isGoodCapture(imageURL:URL) async throws -> Bool {
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct SmudgeObservation](smudgeobservation.md)
   An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
+### Configuring a request
+- [var cropAndScaleAction: ImageCropAndScaleAction](detectlenssmudgerequest/cropandscaleaction.md)
+  An optional setting that tells the algorithm how to scale an input image before generating the result.
+- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+  A scale to apply to an input image before performing a request.
+### Getting the revision
+- [let revision: DetectLensSmudgeRequest.Revision](detectlenssmudgerequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static var supportedRevisions: [DetectLensSmudgeRequest.Revision]](detectlenssmudgerequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectLensSmudgeRequest.Revision](detectlenssmudgerequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -89,20 +89,14 @@ func isGoodCapture(imageURL:URL) async throws -> Bool {
 
 ## See Also
 
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
-  Analyze and label images using a Vision classification request.
-- [struct ClassifyImageRequest](classifyimagerequest.md)
-  A request to classify an image.
-- [protocol ImageProcessingRequest](imageprocessingrequest.md)
-  A type for image-analysis requests that focus on a specific part of an image.
-- [class ImageRequestHandler](imagerequesthandler.md)
-  An object that processes one or more image-analysis requests pertaining to a single image.
-- [protocol VisionRequest](visionrequest.md)
-  A type for image-analysis requests.
-- [protocol VisionObservation](visionobservation.md)
-  A type for objects produced by image-analysis requests.
-- [struct SmudgeObservation](smudgeobservation.md)
-  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
+- [Generating high-quality thumbnails from videos](generating-thumbnails-from-videos.md)
+  Identify the most visually pleasing frames in a video by using the image-aesthetics scores request.
+- [struct CalculateImageAestheticsScoresRequest](calculateimageaestheticsscoresrequest.md)
+  A request that analyzes an image for aesthetically pleasing attributes.
+- [struct GenerateAttentionBasedSaliencyImageRequest](generateattentionbasedsaliencyimagerequest.md)
+  An object that produces a heat map that identifies the parts of an image most likely to draw attention.
+- [struct GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
+  A request that generates a heat map that identifies the parts of an image most likely to represent objects.
 
 
 ---

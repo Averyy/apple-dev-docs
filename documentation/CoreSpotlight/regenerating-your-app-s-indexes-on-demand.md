@@ -61,7 +61,9 @@ Verify your app extension behaves as expected using the Xcode debugger. Start by
 
 Because you can’t predict when the system will run your app extension, you need to force the system to run it immediately using the `mdutil` command-line tool. Open Terminal and run that command with the `-cr` option, followed by the bundle identifier of your app extension. Here’s an example of this command:
 
-`mdutil -cr com.example.MyApp.MyIndexingExtension`
+```None
+mdutil -cr com.example.MyApp.MyIndexingExtension
+```
 
 The `mdutil` tool starts the reindexing process for the app extension you specify. If you set any breakpoints in your app extension’s code, the attached debugger stops at them and gives you a chance to examine the state of your extension.
 

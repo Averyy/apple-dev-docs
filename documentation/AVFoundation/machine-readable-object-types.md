@@ -1,4 +1,4 @@
-# Machine-Readable Object Types
+# Machine-readable object types
 
 **Framework**: AVFoundation
 

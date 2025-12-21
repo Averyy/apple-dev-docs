@@ -21,7 +21,7 @@ subscript(attachmentIndex: Int) -> MTLRenderPipelineColorAttachmentDescriptor! {
 
 #### Return Value
 
-A [`MTLRenderPipelineColorAttachmentDescriptor`](mtlrenderpipelinecolorattachmentdescriptor.md) object that describes the render pipeline information for a color attachment.
+An [`MTLRenderPipelineColorAttachmentDescriptor`](mtlrenderpipelinecolorattachmentdescriptor.md) instance that describes the render pipeline information for a color attachment.
 
 ## Parameters
 

@@ -22,7 +22,7 @@ var shouldProcessNamespaces: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parser reports namespace and qualified name, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the parser reports namespace and qualified name, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 The parser reports element names with the delegate methods [`parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)`](xmlparserdelegate/parser(_:didstartelement:namespaceuri:qualifiedname:attributes:).md) and [`parser(_:didEndElement:namespaceURI:qualifiedName:)`](xmlparserdelegate/parser(_:didendelement:namespaceuri:qualifiedname:).md).
 

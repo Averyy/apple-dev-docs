@@ -21,7 +21,7 @@ var instanceDescriptorStride: Int { get set }
 
 #### Discussion
 
-The stride must be at least 64 bytes and must be a multiple of 4 bytes. Defaults to 64 bytes.
+The stride needs to be at least 64 bytes and needs to be a multiple of 4 bytes. Defaults to 64 bytes.
 
 ## See Also
 

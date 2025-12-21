@@ -20,7 +20,7 @@ var usesDefaultHyphenation: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the layout manager makes a best-effort attempt to hyphenate text when wrapping lines. You may override this hyphenation behavior on a per-paragraph basis using the [`hyphenationFactor`](nsparagraphstyle/hyphenationfactor.md) property of [`NSParagraphStyle`](nsparagraphstyle.md) The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which prevents the layout manager from hyphenating text.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the layout manager makes a best-effort attempt to hyphenate text when wrapping lines. You may override this hyphenation behavior on a per-paragraph basis using the [`hyphenationFactor`](nsparagraphstyle/hyphenationfactor.md) property of [`NSParagraphStyle`](nsparagraphstyle.md) The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which prevents the layout manager from hyphenating text.
 
 ## See Also
 
@@ -34,7 +34,7 @@ When the value of this property is [`true`](https://developer.apple.com/document
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
 - [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool { get set }](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.

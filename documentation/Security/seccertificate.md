@@ -22,8 +22,8 @@ class SecCertificate
 
 ## Mentions
 
-- [Storing a DER-Encoded X.509 Certificate](storing-a-der-encoded-x-509-certificate.md)
 - [Getting a Certificate](getting-a-certificate.md)
+- [Storing a DER-Encoded X.509 Certificate](storing-a-der-encoded-x-509-certificate.md)
 - [Storing an Identity in the Keychain](storing-an-identity-in-the-keychain.md)
 
 #### Overview

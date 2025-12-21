@@ -20,13 +20,13 @@ optional func collectionView(_ collectionView: UICollectionView, shouldShowMenuF
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the editing menu should be shown positioned near the item and pointing to it or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the editing menu should be shown positioned near the item and pointing to it or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-If the user tap-holds a certain item in the collection view, this method (if implemented) is invoked first. Return [`true`](https://developer.apple.com/documentation/swift/true) if you want to permit the editing menu to be displayed. Return [`false`](https://developer.apple.com/documentation/swift/false) if the editing menu shouldn’t be shown—for example, you might return [`false`](https://developer.apple.com/documentation/swift/false) if the corresponding item contains data that should not be copied or pasted over.
+If the user tap-holds a certain item in the collection view, this method (if implemented) is invoked first. Return [`true`](https://developer.apple.com/documentation/Swift/true) if you want to permit the editing menu to be displayed. Return [`false`](https://developer.apple.com/documentation/Swift/false) if the editing menu shouldn’t be shown—for example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) if the corresponding item contains data that should not be copied or pasted over.
 
-If you do not implement this method, the default return value is [`false`](https://developer.apple.com/documentation/swift/false).
+If you do not implement this method, the default return value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

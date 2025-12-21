@@ -27,7 +27,7 @@ Use this method to search the finance store for transactions in a specific accou
 
 - `accountID`: An account identifier.
 - `token`: An optional   that describes a start time.
-- `isMonitoring`: A Boolean value that indicates the method should return records   asynchronously as the system updates the FinanceStore.
+- `isMonitoring`: A Boolean value that indicates the method should return records asynchronously as the system updates the FinanceStore.
 
 ## See Also
 

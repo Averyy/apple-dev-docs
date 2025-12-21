@@ -7,7 +7,6 @@ Specifies a named multipart POST body for this request.
 
 **Availability**:
 - macOS 10.8+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

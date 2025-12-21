@@ -84,14 +84,22 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 - [VideoToolbox Reference](videotoolbox-reference.md)
 ### Classes
 - [class VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+  Configuration that you use to program Video Toolbox frame processor for low-latency frame interpolation.
 - [class VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)
+  An object that contains both input and output parameters that the low-latency frame interpolation processor needs.
 - [class VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
+  An object you use to configure frame processor for low-latency super-resolution scaler processing.
 - [class VTLowLatencySuperResolutionScalerParameters](vtlowlatencysuperresolutionscalerparameters.md)
+  An object that contains both input and output parameters that the low-latency super-resolution scaler frame processor needs.
 - [class VTMotionEstimationSession](vtmotionestimationsession.md)
 - [class VTSuperResolutionScalerConfiguration](vtsuperresolutionscalerconfiguration.md)
+  Configuration that you use to set up the super-resolution processor.
 - [class VTSuperResolutionScalerParameters](vtsuperresolutionscalerparameters.md)
+  An object that contains both input and output parameters that the super-resolution processor needs to run on a frame.
 - [class VTTemporalNoiseFilterConfiguration](vttemporalnoisefilterconfiguration.md)
+  A configuration object to initiate a frame processor and use temporal noise-filter processor.
 - [class VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+  Encapsulates the frame-level parameters necessary for processing a source frame using temporal noise-filter processor.
 ### Variables
 - [let kVTCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString](kvtcameracalibrationextrinsicoriginsource_stereocamerasystembaseline.md)
 - [let kVTCameraCalibrationLensAlgorithmKind_ParametricLens: CFString](kvtcameracalibrationlensalgorithmkind_parametriclens.md)
@@ -123,21 +131,31 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 - [let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString](kvtcompressionpropertykey_vbvinitialdelaypercentage.md)
 - [let kVTCompressionPropertyKey_VBVMaxBitRate: CFString](kvtcompressionpropertykey_vbvmaxbitrate.md)
 - [let kVTCompressionPropertyKey_VariableBitRate: CFString](kvtcompressionpropertykey_variablebitrate.md)
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString](kvtdecodeframeoptionkey_contentanalyzercroprectangle.md)
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString](kvtdecodeframeoptionkey_contentanalyzerrotation.md)
 - [let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString](kvthdrmetadatainsertionmode_requestsdrrangepreservation.md)
 - [let kVTHeroEye_Left: CFString](kvtheroeye_left.md)
 - [let kVTHeroEye_Right: CFString](kvtheroeye_right.md)
 - [let kVTMotionEstimationSessionCreationOption_Label: CFString!](kvtmotionestimationsessioncreationoption_label.md)
+  A label you use to log and track resources.
 - [let kVTMotionEstimationSessionCreationOption_MotionVectorSize: CFString!](kvtmotionestimationsessioncreationoption_motionvectorsize.md)
+  The size of the search blocks that motion estimation session uses.
 - [let kVTMotionEstimationSessionCreationOption_UseMultiPassSearch: CFString!](kvtmotionestimationsessioncreationoption_usemultipasssearch.md)
+  An option to use for higher quality motion estimation.
 - [let kVTProjectionKind_Equirectangular: CFString](kvtprojectionkind_equirectangular.md)
 - [let kVTProjectionKind_HalfEquirectangular: CFString](kvtprojectionkind_halfequirectangular.md)
 - [let kVTProjectionKind_ParametricImmersive: CFString](kvtprojectionkind_parametricimmersive.md)
 - [let kVTProjectionKind_Rectilinear: CFString](kvtprojectionkind_rectilinear.md)
 - [let kVTRAWProcessingPropertyKey_MetadataForSidecarFile: CFString!](kvtrawprocessingpropertykey_metadataforsidecarfile.md)
+- [var kVTVideoEncoderAutoWhiteBalanceNotLockedErr: OSStatus](kvtvideoencoderautowhitebalancenotlockederr.md)
 - [let kVTViewPackingKind_OverUnder: CFString](kvtviewpackingkind_overunder.md)
 - [let kVTViewPackingKind_SideBySide: CFString](kvtviewpackingkind_sidebyside.md)
+### Functions
+- [func VTDecompressionSessionDecodeFrame(VTDecompressionSession, sampleBuffer: CMSampleBuffer, flags: VTDecodeFrameFlags, frameOptions: CFDictionary?, frameRefcon: UnsafeMutableRawPointer?, infoFlagsOut: UnsafeMutablePointer<VTDecodeInfoFlags>?) -> OSStatus](vtdecompressionsessiondecodeframe(_:samplebuffer:flags:frameoptions:framerefcon:infoflagsout:).md)
+- [func VTDecompressionSessionDecodeFrame(VTDecompressionSession, sampleBuffer: CMSampleBuffer, flags: VTDecodeFrameFlags, frameOptions: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTDecodeInfoFlags>?, outputHandler: VTDecompressionOutputHandler) -> OSStatus](vtdecompressionsessiondecodeframe(_:samplebuffer:flags:frameoptions:infoflagsout:outputhandler:).md)
 ### Type Aliases
 - [typealias VTMotionEstimationOutputHandler](vtmotionestimationoutputhandler.md)
+  A block invoked by motion-estimation session when frame processing is complete.
 
 
 ---

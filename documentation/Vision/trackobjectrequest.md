@@ -8,7 +8,6 @@ An image-analysis request that tracks the movement of a previously identified ob
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -30,16 +29,6 @@ Use this type of request to track the bounding boxes around objects previously i
   Creates an object tracking request.
 - [protocol BoundingBoxProviding](boundingboxproviding.md)
   A protocol for objects that have a bounding box.
-### Getting the revision
-- [let revision: TrackObjectRequest.Revision](trackobjectrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [TrackObjectRequest.Revision]](trackobjectrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [TrackObjectRequest.Revision](trackobjectrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [let inputObservation: any BoundingBoxProviding & VisionObservation](trackobjectrequest/inputobservation.md)
-  The object to track.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -53,8 +42,19 @@ Use this type of request to track the bounding boxes around objects previously i
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct DetectedObjectObservation](detectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image-analysis request detects.
+### Configuring a request
+- [let inputObservation: any BoundingBoxProviding & VisionObservation](trackobjectrequest/inputobservation.md)
+  The object to track.
+### Getting the revision
+- [let revision: TrackObjectRequest.Revision](trackobjectrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [TrackObjectRequest.Revision]](trackobjectrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [TrackObjectRequest.Revision](trackobjectrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -70,6 +70,10 @@ Use this type of request to track the bounding boxes around objects previously i
 
 ## See Also
 
+- [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
+  A request that detects the trajectories of shapes moving along a parabolic path.
+- [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
+  A request that determines the direction change of vectors for each pixel from a previous to current image.
 - [class TrackRectangleRequest](trackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
 

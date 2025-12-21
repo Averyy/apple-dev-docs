@@ -16,7 +16,7 @@ func CTFontManagerIsSupportedFont(_ fontURL: CFURL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file is in a supported font format; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file is in a supported font format; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

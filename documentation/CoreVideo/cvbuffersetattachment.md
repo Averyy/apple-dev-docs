@@ -33,7 +33,7 @@ To retrieve attachments, use the [`CVBufferGetAttachment(_:_:_:)`](cvbuffergetat
 ## Parameters
 
 - `buffer`: The buffer on which to add or set an attachment.
-- `key`: A string that identifies the attachment, which can be of any  doc://com.apple.documentation/documentation/corefoundation/cftype . See   and   for predefined values.
+- `key`: A string that identifies the attachment, which can be of any  . See   and   for predefined values.
 - `value`: The attachment in the form of a Core Foundation object. If this parameter is  , the function returns an error.
 - `attachmentMode`: The attachment mode for this attachment. See   for possible values. Any given attachment key may exist in only one mode at a time.
 

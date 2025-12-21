@@ -23,9 +23,9 @@ var groupsByEvent: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager automatically creates undo groups around each pass of the run loop, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the manager automatically creates undo groups around each pass of the run loop, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). If you turn automatic grouping off, you must close groups explicitly before invoking either [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md).
+The default is [`true`](https://developer.apple.com/documentation/Swift/true). If you turn automatic grouping off, you must close groups explicitly before invoking either [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md).
 
 ## See Also
 

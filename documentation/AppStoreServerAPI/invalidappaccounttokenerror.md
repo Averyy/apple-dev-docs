@@ -20,10 +20,14 @@ object InvalidAppAccountTokenError
 
 #### Discussion
 
-For more information about the `appAccountToken` field in a [`ConsumptionRequest`](consumptionrequest.md), see [`appAccountToken`](appaccounttoken.md).
+For more information about the `appAccountToken` field in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`appAccountToken`](appaccounttoken.md).
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidConsumptionStatusError](invalidconsumptionstatuserror.md)
@@ -48,6 +52,8 @@ For more information about the `appAccountToken` field in a [`ConsumptionRequest
   An error that indicates the value in the user status field is invalid.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

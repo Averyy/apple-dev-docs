@@ -59,8 +59,8 @@ In macOS versions 10.2 and earlier, this method is invoked repeatedly as necessa
   Overrides the specified attribute in the receiver or adds it if it does not exist, and sets its value to the specified value.
 - [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](nsobject-swift.class/accessibilitysetvalue(_:forattribute:).md)
   Sets the value of the specified attribute in the receiver to the specified value.
-- [func finalize()](nsobject-swift.class/finalize.md)
-  The garbage collector invokes this method on the receiver before disposing of the memory it uses.
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
+  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
 
 
 ---

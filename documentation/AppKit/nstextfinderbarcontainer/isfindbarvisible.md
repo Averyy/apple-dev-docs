@@ -17,9 +17,9 @@ var isFindBarVisible: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`findBarView`](nstextfinderbarcontainer/findbarview.md) property is set, then the find bar is displayed by the container. Otherwise, the find bar is not displayed.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the [`findBarView`](nstextfinderbarcontainer/findbarview.md) property is set, then the find bar is displayed by the container. Otherwise, the find bar is not displayed.
 
-The default value should be [`false`](https://developer.apple.com/documentation/swift/false).
+The default value should be [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

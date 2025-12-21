@@ -43,7 +43,7 @@ If your app downloads and compiles a model on the user’s device, you must use 
 
 ## Topics
 
-### Loading a Model
+### Loading a model
 - [class func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLModel](mlmodel/load(contentsof:configuration:).md)
   Construct a model asynchronously from a compiled model asset.
 - [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](mlmodel/load(_:configuration:completionhandler:).md)
@@ -56,39 +56,25 @@ If your app downloads and compiles a model on the user’s device, you must use 
   Creates a Core ML model instance from a compiled model file and a custom configuration.
 - [convenience init(contentsOfURL: URL) throws](mlmodel/init(contentsofurl:).md)
 - [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](mlmodel/init(contentsofurl:configuration:).md)
-### Compiling a Model
-- [class func compileModel(at: URL) async throws -> URL](mlmodel/compilemodel(at:)-45ao6.md)
-  Compile a model for a device.
+### Compiling a model
+- [class compileModel(at:)](mlmodel/compilemodel(at:).md)
 - [class func compileModel(at: URL, completionHandler: (Result<URL, any Error>) -> Void)](mlmodel/compilemodel(at:completionhandler:).md)
   Compile a model for a device.
-- [class func compileModel(at: URL) async throws -> URL](mlmodel/compilemodel(at:)-3nea.md)
-  Compile a model for a device.
-- [class func compileModel(at: URL) throws -> URL](mlmodel/compilemodel(at:)-6442s.md)
-  Compiles a model on the device to update the model in your app.
-### Making Predictions
-- [func prediction(from: any MLFeatureProvider) throws -> any MLFeatureProvider](mlmodel/prediction(from:)-9y2aa.md)
-  Generates a prediction from the feature values within the input feature provider.
-- [func prediction(from: [String : MLTensor]) async throws -> [String : MLTensor]](mlmodel/prediction(from:)-7vsm8.md)
-  Run a prediction on a model.
-- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](mlmodel/prediction(from:options:)-81mr6.md)
-  Generates a prediction from the feature values within the input feature provider using the prediction options.
-- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) async throws -> any MLFeatureProvider](mlmodel/prediction(from:options:)-3vg03.md)
-  Generates a prediction asynchronously from the feature values within the input feature provider using the prediction options.
+### Making predictions
+- [func prediction(from:)](mlmodel/prediction(from:).md)
+- [func prediction(from:options:)](mlmodel/prediction(from:options:).md)
 - [func predictions(fromBatch: any MLBatchProvider) throws -> any MLBatchProvider](mlmodel/predictions(frombatch:).md)
   Generates predictions for each input feature provider within the batch provider.
 - [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlmodel/predictions(from:options:).md)
   Generates a prediction for each input feature provider within the batch provider using the prediction options.
-- [func prediction(from: [String : MLTensor], using: MLState) async throws -> [String : MLTensor]](mlmodel/prediction(from:using:)-6whkh.md)
-  Run a stateful prediction on a model.
-- [func prediction(from: any MLFeatureProvider, using: MLState) throws -> any MLFeatureProvider](mlmodel/prediction(from:using:)-97bu1.md)
-  Run a stateful prediction synchronously.
-- [func prediction(from: any MLFeatureProvider, using: MLState, options: MLPredictionOptions) async throws -> any MLFeatureProvider](mlmodel/prediction(from:using:options:)-8b4qa.md)
-  Run a stateful prediction on a model asynchronously.
-- [func prediction(from: any MLFeatureProvider, using: MLState, options: MLPredictionOptions) throws -> any MLFeatureProvider](mlmodel/prediction(from:using:options:)-v4wp.md)
-  Run a stateful prediction synchronously with options.
+- [func prediction(from:using:)](mlmodel/prediction(from:using:).md)
+- [func prediction(from:using:options:)](mlmodel/prediction(from:using:options:).md)
 - [class MLPredictionOptions](mlpredictionoptions.md)
   The options available when making a prediction.
-### Inspecting a Model
+### Making state
+- [func makeState() -> MLState](mlmodel/makestate.md)
+  Creates a new state object.
+### Inspecting a model
 - [static var availableComputeDevices: [MLComputeDevice]](mlmodel/availablecomputedevices-6klyt.md)
   The list of available compute devices that the model’s prediction methods use.
 - [var configuration: MLModelConfiguration](mlmodel/configuration.md)
@@ -101,15 +87,12 @@ If your app downloads and compiles a model on the user’s device, you must use 
   Returns a model parameter value for a key.
 - [class MLParameterKey](mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
-### Supporting Types
+### Supporting types
 - [class MLModelConfiguration](mlmodelconfiguration.md)
   The settings for creating or updating a machine learning model.
 - [struct MLOptimizationHints](mloptimizationhints-swift.struct.md)
 - [class MLKey](mlkey.md)
   An abstract base class for machine learning key types.
-### Instance Methods
-- [func makeState() -> MLState](mlmodel/makestate.md)
-  Creates a new state object.
 
 ## Relationships
 

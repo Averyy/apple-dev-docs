@@ -17,7 +17,7 @@ var autorepeat: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the first mouse down will do one increment (decrement), and, after a delay of 0.5 seconds, will increment (decrement) at a rate of ten times per second. If [`false`](https://developer.apple.com/documentation/swift/false), the receiver will do one increment (decrement) on a mouse up. The default is [`true`](https://developer.apple.com/documentation/swift/true)
+If [`true`](https://developer.apple.com/documentation/Swift/true), the first mouse down will do one increment (decrement), and, after a delay of 0.5 seconds, will increment (decrement) at a rate of ten times per second. If [`false`](https://developer.apple.com/documentation/Swift/false), the receiver will do one increment (decrement) on a mouse up. The default is [`true`](https://developer.apple.com/documentation/Swift/true)
 
 ## See Also
 

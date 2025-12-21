@@ -21,7 +21,7 @@ func VTCopyVideoEncoderList(_ options: CFDictionary?, _ listOfVideoEncodersOut: 
 
 #### Discussion
 
-The caller must release the returned list using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+The caller must release the returned list using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Parameters
 

@@ -28,12 +28,6 @@ case lzma
   The LZFSE compression algorithm, recommended for use on Apple platforms.
 - [NSData.CompressionAlgorithm.zlib](nsdata/compressionalgorithm/zlib.md)
   The zlib compression algorithm, recommended for cross-platform compression.
-- [NSData.CompressionAlgorithm.lz4](nsdata/compressionalgorithm/lz4.md)
-  The LZ4 compression algorithm, recommended for fast compression.
-- [NSData.CompressionAlgorithm.lzfse](nsdata/compressionalgorithm/lzfse.md)
-  The LZFSE compression algorithm, recommended for use on Apple platforms.
-- [NSData.CompressionAlgorithm.zlib](nsdata/compressionalgorithm/zlib.md)
-  The zlib compression algorithm, recommended for cross-platform compression.
 
 
 ---

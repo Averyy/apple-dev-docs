@@ -8,7 +8,7 @@ Learn how functions and methods that take a completion handler are converted to 
 
 In Cocoa, methods that perform asynchronous operations take a completion handler as their last parameter, and the method calls that block after the operation finishes to return a result or an error. Swift 5.5 and later automatically translates Objective-C methods that take completion handlers into asynchronous methods using Swift’s native concurrency support, in addition to importing the callback-based version of the method into Swift. Because both Swift methods have the same behavior, they share the same page in the documentation.
 
-For information about asynchronous functions, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in The Swift Programming Language.
+For information about asynchronous functions, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
 ##### Understand How Swift Imports Completion Handlers
 

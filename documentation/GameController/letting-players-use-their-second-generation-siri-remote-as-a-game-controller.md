@@ -14,7 +14,7 @@ First configure your Xcode project to handle directional gamepads and multiple m
 
 On the Signing & Capabilities tab in the project editor, add the Game Controllers capability to your project and check Directional Gamepad under Game Controllers. For more information, see [`Configuring game controllers`](https://developer.apple.com/documentation/Xcode/configuring-game-controllers).
 
-On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key and set the value to `YES`. For more information, see [`Managing Your App’s Information Property List`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key and set the value to `YES`. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
 
 ##### Handle Multiple Micro Gamepads
 

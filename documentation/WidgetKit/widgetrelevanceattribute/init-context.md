@@ -10,7 +10,7 @@ Creates a new widget relevance that is relevant in a specific context.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration

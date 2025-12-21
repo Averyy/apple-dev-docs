@@ -20,7 +20,7 @@ var isApplicationAuthorizedForPlayback: Bool { get }
 
 This property reports whether or not the calling application is authorized to play the content associated with the item.
 
-Application authorization is independent of content authorization (see [`isContentAuthorizedForPlayback`](avplayeritem/iscontentauthorizedforplayback.md)) and that both must be granted in order for an application to be allowed to play protected content. Also, unlike content authorization, application authorization is not dependent on user credentials (that is, if `applicationAuthorizedForPlayback` is [`false`](https://developer.apple.com/documentation/swift/false), there are no means to obtain authorization).
+Application authorization is independent of content authorization (see [`isContentAuthorizedForPlayback`](avplayeritem/iscontentauthorizedforplayback.md)) and that both must be granted in order for an application to be allowed to play protected content. Also, unlike content authorization, application authorization is not dependent on user credentials (that is, if `applicationAuthorizedForPlayback` is [`false`](https://developer.apple.com/documentation/Swift/false), there are no means to obtain authorization).
 
 This property is not key-value observable.
 

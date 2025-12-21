@@ -31,8 +31,8 @@ The fitted transformer.
 
 ## See Also
 
-- [CategoricalImputer.Transformer](categoricalimputer/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 - [CategoricalImputer.Strategy](categoricalimputer/strategy-swift.enum.md)
   An imputation strategy.
 

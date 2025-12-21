@@ -6,11 +6,11 @@
 A locale from the module’s supported locales equivalent to the given locale.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -33,6 +33,13 @@ If there is no exact equivalent, this method will return a near-equivalent: a su
 ## Parameters
 
 - `locale`: An arbitrary locale.
+
+## See Also
+
+- [static var installedLocales: [Locale]](speechtranscriber/installedlocales.md)
+  The locales that the transcriber can transcribe into, considering only locales that are installed on the device.
+- [static var supportedLocales: [Locale]](speechtranscriber/supportedlocales.md)
+  The locales that the transcriber can transcribe into, including locales that may not be installed but are downloadable.
 
 
 ---

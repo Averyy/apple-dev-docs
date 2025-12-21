@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns `true` if `self` intersects any of the integers in `range`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

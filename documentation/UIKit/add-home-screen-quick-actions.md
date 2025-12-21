@@ -77,7 +77,7 @@ Don’t limit the number of quick actions provided to the [`shortcutItems`](uiap
 
 ##### Define Quick Action Icons
 
-Define quick action icons with `UIApplicationShortcutIcon` class defined two different ways: with a template image or SF Symbol.
+Define quick action icons with the `UIApplicationShortcutIcon` class in two different ways: with a template image or SF Symbol.
 
 With a template image name:
 
@@ -115,7 +115,7 @@ iOS prefers the symbol name icon if it’s defined, otherwise, the icon file if 
 
 ##### Pass Data with a Quick Action
 
-The dynamic quick actions in this sample all have the same [`type`](uiapplicationshortcutitem/type.md) because they all perform the same action. However, the contact information associated with each is different and the sample passes it to through the [`userInfo`](uiapplicationshortcutitem/userinfo.md) dictionary.
+The dynamic quick actions in this sample all have the same [`type`](uiapplicationshortcutitem/type.md) because they all perform the same action. However, the contact information associated with each is different and the sample passes it through to the [`userInfo`](uiapplicationshortcutitem/userinfo.md) dictionary.
 
 ```swift
 var quickActionUserInfo: [String: NSSecureCoding] {

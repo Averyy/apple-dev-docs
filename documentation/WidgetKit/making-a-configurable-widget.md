@@ -143,7 +143,7 @@ After a person edits the widget, WidgetKit passes the customized values to the p
 struct CharacterDetailProvider: AppIntentTimelineProvider {
     func timeline(for configuration: SelectCharacterIntent, in context: Context) async -> Timeline<CharacterDetailEntry> {
         // Create the timeline and return it. The .never reload policy indicates
-        // that the containing app will use WidgetCenter methods to reload the
+        // that the containing app uses WidgetCenter methods to reload the
         // widget's timeline when the details change.
         let entry = CharacterDetailEntry(date: Date(), detail: configuration.character)
         let timeline = Timeline(entries: [entry], policy: .never)
@@ -181,12 +181,6 @@ If you offer a preconfigured complication or widget, and your app receives new d
   An object describing the content of a widget that uses a custom intent to provide user-configurable options.
 - [struct WidgetInfo](widgetinfo.md)
   A structure that contains information about user-configured widgets.
-- [struct AppIntentRecommendation](appintentrecommendation.md)
-  An object that describes a recommended intent configuration for a user-customizable widget.
-- [struct IntentConfiguration](intentconfiguration.md)
-  An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
-- [struct IntentRecommendation](intentrecommendation.md)
-  An object that describes a recommended intent configuration for a user-customizable widget.
 
 
 ---

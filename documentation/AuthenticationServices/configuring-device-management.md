@@ -2,11 +2,11 @@
 
 **Framework**: Authentication Services
 
-Configure Device Management to support device and user registration for platform SSO.
+Configure Device Management to support device and user registration for Platform SSO.
 
 #### Overview
 
-Enable platform SSO through the `com.apple.extensiblesso` payload in [`Device Management`](https://developer.apple.com/documentation/DeviceManagement), for redirect extensions only, because these extensions are designed for modern authentication. The [`ExtensibleSingleSignOn.PlatformSSO`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignon/platformsso) dictionary in the payload contains the options to configure platform SSO. These options include choosing which key or keys to use, assigning group membership, creating users during login, and including support for registering devices and users.
+Enable Platform SSO through the `com.apple.extensiblesso` payload in [`Device Management`](https://developer.apple.com/documentation/DeviceManagement), for redirect extensions only, because these extensions are designed for modern authentication. The [`ExtensibleSingleSignOn.PlatformSSO`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignon/platformsso) dictionary in the payload contains the options to configure Platform SSO. These options include choosing which key or keys to use, assigning group membership, creating users during login, and including support for registering devices and users.
 
 > **Note**:  The extension data and registration token is user-specific if there’s a user-scoped `com.apple.extensiblesso` MDM payload for the same extension without the `PlatformSSO` dictionary.
 
@@ -16,7 +16,7 @@ Although the only required key is `AuthenticationMethod`, it’s recommended tha
 
 To use the recommended shared device keys, the Device Management profile needs to be a system profile because the configuration applies to all users. But, you can configure user-specific extenstion data and registration tokens for individual users.
 
-For more information about creating and configuring the extension for platform SSO, see [`Creating extensions that support platform SSO`](creating-extensions-that-support-platform-sso.md) and [`ExtensibleSingleSignOn`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOn).
+For more information about creating and configuring the extension for Platform SSO, see [`Creating extensions that support Platform SSO`](creating-extensions-that-support-platform-sso.md) and [`ExtensibleSingleSignOn`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOn).
 
 ##### Assign Group Membership
 
@@ -54,7 +54,7 @@ For more information, see [`Advanced smart card options on Mac`](https://develop
 
 ##### Register Devices and Users
 
-Identity providers (IdPs) who want to support platform SSO need to implement support for device and user registration. Registration enables the IdP to configure the device and decide if it’s eligible to receive SSO tokens to sign in to any app.
+Identity providers (IdPs) who want to support Platform SSO need to implement support for device and user registration. Registration enables the IdP to configure the device and decide if it’s eligible to receive SSO tokens to sign in to any app.
 
 A Mac needs to receive an Device Management configuration profile with the [`ExtensibleSingleSignOn`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOn) payload (`com.apple.extensiblesso`) that contains the authentication method. The authentication method defined in the SSO extension payload needs to be compatible with the authentication method supported and configured by the IdP. For example, if the configuration profile uses authentication with a secure enclave backed key, but the IdP supports only password authentication, then device registration won’t start.
 
@@ -68,12 +68,18 @@ After registration with the IdP is complete, the SSO extension can work with Pla
 - Access the device keys to sign, encrypt, and decrypt their own additional requests.
 - Restart registration if there’s an unrecoverable error.
 
+##### Migrating From User to Shared Keys
+
+To migrate from User keys to Shared keys, you need to create new Secure Enclave backed keys and register them with the server. The system calls `Device` registration on the SSO extension with the `.registrationDeviceKeyMigration` option set. During this call only, both the User keys and the new Shared keys become available. You can access them using the `loginManager.key`(for keyType: `ASAuthorizationProviderExtensionKeyType`) method. The SSO extension registers the new Shared keys with the server and can use the existing User keys to provide a chain of trust.
+
+After Device registration completes successfully, the system calls User registration with the `.registrationDeviceKeyMigration` option set. At this time, you should also migrate any user-specific login configuration to the `UserLoginConfiguration`. When User registration completes successfully, the system destroys the User keys and previous login configuration, making them no longer available. For subsequent users, you repeat the same User registration flow, and the system destroys the User keys after a successful response.
+
 For more information, see [`Registering devices and users`](registering-devices-and-users.md).
 
 ## See Also
 
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
-  Specify how platform SSO authenticates with the identity provider.
+  Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)

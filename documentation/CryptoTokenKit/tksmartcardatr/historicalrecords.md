@@ -6,13 +6,13 @@
 A list of compact TLV records parsed from historical bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 10.0+
+- iPadOS 10.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 

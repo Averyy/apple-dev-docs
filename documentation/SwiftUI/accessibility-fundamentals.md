@@ -19,7 +19,7 @@ For design guidance, see [`Accessibility`](https://developer.apple.com/design/Hu
 ## Topics
 
 ### Essentials
-- [Creating Accessible Views](creating_accessible_views.md)
+- [Creating accessible views](creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 ### Creating accessible elements
 - [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](view/accessibilityelement(children:).md)

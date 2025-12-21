@@ -32,9 +32,6 @@ The system provides an instance of this structure to your app when a person choo
 ### Accessing individual workouts
 - [var workouts: [JournalingSuggestion.Workout]](journalingsuggestion/workoutgroup/workouts.md)
   An array of workout suggestions that a person chooses in the picker.
-### Type Aliases
-- [JournalingSuggestion.WorkoutGroup.JournalingSuggestionContent](journalingsuggestion/workoutgroup/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

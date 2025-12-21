@@ -19,6 +19,10 @@ An invitation to join a match sent to the local player from another player.
 class GKInvite
 ```
 
+## Mentions
+
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+
 #### Overview
 
 Your game never directly creates `GKInvite` objects. Instead, these objects are created by GameKit and delivered to your game’s matchmaking event handler. The properties of the invitation object describe the match to which another player invites the local player.
@@ -59,6 +63,8 @@ Your game never directly creates `GKInvite` objects. Instead, these objects are 
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

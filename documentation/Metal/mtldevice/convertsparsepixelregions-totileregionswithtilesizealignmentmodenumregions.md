@@ -21,7 +21,7 @@ optional func convertSparsePixelRegions(_ pixelRegions: UnsafePointer<MTLRegion>
 
 ## Mentions
 
-- [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
 
 ## Parameters
 

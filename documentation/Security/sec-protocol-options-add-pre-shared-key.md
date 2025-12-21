@@ -20,9 +20,7 @@ func sec_protocol_options_add_pre_shared_key(_ options: sec_protocol_options_t, 
 
 #### Discussion
 
-```None
- Add a pre-shared key (PSK) and its identity to the options.
-```
+Add a pre-shared key (PSK) and its identity to the options.
 
 ## Parameters
 

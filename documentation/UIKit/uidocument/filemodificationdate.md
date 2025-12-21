@@ -14,7 +14,6 @@ The date and time your app last modified the document file.
 ## Declaration
 
 ```swift
-@MainActor
 var fileModificationDate: Date? { get set }
 ```
 

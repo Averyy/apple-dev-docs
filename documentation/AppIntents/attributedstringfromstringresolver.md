@@ -20,27 +20,6 @@ A resolver that converts a string into an attributed string.
 struct AttributedStringFromStringResolver
 ```
 
-## Topics
-
-### Resolving the type
-- [func resolve(from: String, context: IntentParameterContext<AttributedString>) async throws -> AttributedString?](attributedstringfromstringresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
-### Operators
-- [static func == (AttributedStringFromStringResolver, AttributedStringFromStringResolver) -> Bool](attributedstringfromstringresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](attributedstringfromstringresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](attributedstringfromstringresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [AttributedStringFromStringResolver.Input](attributedstringfromstringresolver/input.md)
-- [AttributedStringFromStringResolver.Output](attributedstringfromstringresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](attributedstringfromstringresolver/equatable-implementations.md)
-- [Resolver Implementations](attributedstringfromstringresolver/resolver-implementations.md)
-
 ## Relationships
 
 ### Conforms To

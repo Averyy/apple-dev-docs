@@ -261,7 +261,7 @@ For additional tips about debugging widgets, refer to [`Debugging widgets`](debu
 
 In iOS 16, macOS 13, watchOS 9 and earlier, configurable widgets use [`SiriKit`](https://developer.apple.com/documentation/SiriKit) and the system determines your widget’s relevance based on donations of SiriKit intents. For details about supporting older operating system versions, refer to [`Migrating widgets from SiriKit Intents to App Intents`](migrating-from-sirikit-intents-to-app-intents.md).
 
-Donating SiriKit Intents is very similar to donating app intents. Instead of using [`IntentDonationManager`](https://developer.apple.com/documentation/AppIntents/IntentDonationManager), you use [`INInteraction`](https://developer.apple.com/documentation/Intents/INInteraction) to donate an [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent). For more information about donating SiriKit Intents, refer to [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts) and [`Watch and Widget Support`](https://developer.apple.com/documentation/SiriKit/watch-and-widget-support).
+Donating SiriKit Intents is very similar to donating app intents. Instead of using [`IntentDonationManager`](https://developer.apple.com/documentation/AppIntents/IntentDonationManager), you use [`INInteraction`](https://developer.apple.com/documentation/Intents/INInteraction) to donate an [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent). For more information about donating SiriKit Intents, refer to [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts) and [`Apple Watch support`](https://developer.apple.com/documentation/SiriKit/watch-and-widget-support).
 
 ## See Also
 
@@ -276,9 +276,15 @@ Donating SiriKit Intents is very similar to donating app intents. Instead of usi
 - [struct WidgetRelevance](widgetrelevance.md)
   A type collecting the relevances for a widget kind.
 - [struct WidgetRelevanceAttribute](widgetrelevanceattribute.md)
-  A type describing when a specific widget could be relevant.
+  A type that describes when a specific widget could be relevant.
 - [struct WidgetRelevanceGroup](widgetrelevancegroup.md)
   A type for configuring widget behavior in the watchOS Smart Stack.
+- [struct AppIntentRecommendation](appintentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
+- [struct IntentConfiguration](intentconfiguration.md)
+  An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
+- [struct IntentRecommendation](intentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
 
 
 ---

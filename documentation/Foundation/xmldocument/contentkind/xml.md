@@ -23,12 +23,6 @@ case xml
   Outputs the string value of the document by extracting the string values from all text nodes.
 - [XMLDocument.ContentKind.xhtml](xmldocument/contentkind/xhtml.md)
   The document output is XHTML.
-- [XMLDocument.ContentKind.html](xmldocument/contentkind/html.md)
-  Outputs empty tags in HTML without a close tag, such as `<br>`.
-- [XMLDocument.ContentKind.text](xmldocument/contentkind/text.md)
-  Outputs the string value of the document by extracting the string values from all text nodes.
-- [XMLDocument.ContentKind.xhtml](xmldocument/contentkind/xhtml.md)
-  The document output is XHTML.
 
 
 ---

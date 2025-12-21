@@ -24,8 +24,8 @@ case numericUnderflow
 
 - [OptimizationError.numericOverflow](optimizationerror/numericoverflow.md)
   Numerical overflow. Step size parameter may be too large.
-- [var errorDescription: String?](optimizationerror/errordescription.md)
-  A localized message describing what error occurred.
+- [OptimizationError.unsupportedPlatform](optimizationerror/unsupportedplatform.md)
+  The optimization operation is not supported on this platform.
 
 
 ---

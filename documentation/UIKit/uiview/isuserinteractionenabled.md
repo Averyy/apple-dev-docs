@@ -22,15 +22,15 @@ var isUserInteractionEnabled: Bool { get set }
 ## Mentions
 
 - [Handling long-press gestures](handling-long-press-gestures.md)
-- [Handling swipe gestures](handling-swipe-gestures.md)
 - [Handling pan gestures](handling-pan-gestures.md)
-- [Handling tap gestures](handling-tap-gestures.md)
 - [Handling pinch gestures](handling-pinch-gestures.md)
 - [Handling rotation gestures](handling-rotation-gestures.md)
+- [Handling swipe gestures](handling-swipe-gestures.md)
+- [Handling tap gestures](handling-tap-gestures.md)
 
 #### Discussion
 
-When set to [`false`](https://developer.apple.com/documentation/swift/false), touch, press, keyboard, and focus events intended for the view are ignored and removed from the event queue. When set to [`true`](https://developer.apple.com/documentation/swift/true), events are delivered to the view normally. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`false`](https://developer.apple.com/documentation/Swift/false), touch, press, keyboard, and focus events intended for the view are ignored and removed from the event queue. When set to [`true`](https://developer.apple.com/documentation/Swift/true), events are delivered to the view normally. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 During an animation, user interactions are temporarily disabled for all views involved in the animation, regardless of the value in this property. You can disable this behavior by specifying the [`allowUserInteraction`](uiview/animationoptions/allowuserinteraction.md) option when configuring the animation.
 

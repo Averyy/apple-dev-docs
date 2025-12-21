@@ -6,8 +6,8 @@
 Creates a connectable Wi-Fi Aware endpoint from a browse result.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ A `WAEndpoint` that you can connect to, or `nil` if it can’t be created.
 
 #### Discussion
 
-> **Note**:  An error if the result isn’t valid.
+> **Note**: An error if the result isn’t valid.
 
 ## Parameters
 

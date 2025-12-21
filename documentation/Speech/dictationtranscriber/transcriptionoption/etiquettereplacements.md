@@ -6,17 +6,21 @@
 Replaces certain words and phrases with a redacted form.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 case etiquetteReplacements
 ```
+
+#### Discussion
+
+If included, a phrase recognized as an expletive would be transcribed with asterisks.
 
 ## See Also
 

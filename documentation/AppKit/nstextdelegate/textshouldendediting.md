@@ -17,7 +17,7 @@ optional func textShouldEndEditing(_ textObject: NSText) -> Bool
 
 #### Discussion
 
-If the delegate returns [`true`](https://developer.apple.com/documentation/swift/true), the text object proceeds to finish editing and resign first responder status. If the delegate returns [`false`](https://developer.apple.com/documentation/swift/false), the text object selects all of its text and remains the first responder.
+If the delegate returns [`true`](https://developer.apple.com/documentation/Swift/true), the text object proceeds to finish editing and resign first responder status. If the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false), the text object selects all of its text and remains the first responder.
 
 ## See Also
 

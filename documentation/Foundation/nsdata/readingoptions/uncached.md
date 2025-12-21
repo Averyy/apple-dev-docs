@@ -30,10 +30,6 @@ For data being read once and discarded, this option can improve performance.
   A hint indicating the file should be mapped into virtual memory, if possible and safe.
 - [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
   Hint to map the file in if possible.
-- [static var mappedIfSafe: NSData.ReadingOptions](nsdata/readingoptions/mappedifsafe.md)
-  A hint indicating the file should be mapped into virtual memory, if possible and safe.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
-  Hint to map the file in if possible.
 
 
 ---

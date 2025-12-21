@@ -15,12 +15,12 @@ A view containing the contents of the front-facing camera.
 ## Declaration
 
 ```swift
-var cameraPreviewView: UIView? { get }
+var cameraPreviewView: NSView? { get }
 ```
 
 #### Discussion
 
-When the value in the [`isCameraEnabled`](rpscreenrecorder/iscameraenabled.md) property is [`true`](https://developer.apple.com/documentation/swift/true), this property contains a view with the live camera view. If the camera isn’t enabled, the value in this property is `nil`. When the app runs in visionOS, the value in this property is `nil`.
+When the value in the [`isCameraEnabled`](rpscreenrecorder/iscameraenabled.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), this property contains a view with the live camera view. If the camera isn’t enabled, the value in this property is `nil`. When the app runs in visionOS, the value in this property is `nil`.
 
 ## See Also
 

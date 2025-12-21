@@ -20,7 +20,7 @@ class func canFilter(byProperty property: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the property you are testing can be used to construct a media property predicate of type [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the property you are testing can be used to construct a media property predicate of type [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

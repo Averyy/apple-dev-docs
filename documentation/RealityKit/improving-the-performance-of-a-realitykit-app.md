@@ -55,7 +55,7 @@ let defaultScaleFactor = arView.contentScaleFactor
 arView.contentScaleFactor = 0.75 * defaultScaleFactor
 ```
 
-Determine which adjustments you need for different kinds of hardware, and then choose different code paths based on the hardware you detect at runtime. To learn about identifying the available GPU hardware, see [`Detecting GPU Features and Metal Software Versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
+Determine which adjustments you need for different kinds of hardware, and then choose different code paths based on the hardware you detect at runtime. To learn about identifying the available GPU hardware, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
 
 ## Topics
 

@@ -15,7 +15,10 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   A component that anchors virtual content to a real world target.
 - [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
   Defines the kinds of real world objects to which an anchor entity can be tethered.
+- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
+  Options for how an entity tracks its target anchor.
 - [struct ARKitAnchorComponent](arkitanchorcomponent.md)
+  A component that exposes the backing ARKit data of an anchored entity.
 - [class AnchorEntity](anchorentity.md)
   An anchor that tethers entities to a scene.
 - [protocol HasAnchoring](hasanchoring.md)
@@ -25,6 +28,11 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Defines the alignment of real-world surfaces to seek as targets.
 - [AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification.md)
   Defines types of real-world surfaces to seek as targets.
+### Image and object tracking
+- [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
+  Defines the source of object anchoring target based on how it is created.
+- [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
+  Defines the source of object anchoring target based on how it is created.
 ### Hand tracking
 - [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
@@ -59,11 +67,16 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
 ### Accessory tracking
 - [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
   Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
+### Physics simulation space
+- [AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.enum.md)
+  Describes the physics simulation space of the entity and its descendants.
 
 ## See Also
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -72,6 +85,8 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

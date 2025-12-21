@@ -6,7 +6,7 @@
 Apply a default configuration to an entity to enable to it for use with manipulation component.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

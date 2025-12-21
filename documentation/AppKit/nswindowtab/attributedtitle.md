@@ -19,7 +19,7 @@ var attributedTitle: NSAttributedString? { get set }
 
 If you provide an attributed title, the window tab uses all of the attributes that are explicitly provided in the attributed string. Attributes that are left unspecified, including the font and foreground color, are automatically filled in using default values appropriate for the window tab.
 
-If the [`attributedTitle`](nswindowtab/attributedtitle.md) property is nil, the window tab uses the [`title`](nswindowtab/title.md) property instead. The default value is [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+If the [`attributedTitle`](nswindowtab/attributedtitle.md) property is nil, the window tab uses the [`title`](nswindowtab/title.md) property instead. The default value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 ## See Also
 

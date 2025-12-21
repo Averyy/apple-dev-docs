@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The camera lens smudge detection interval.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,9 +20,18 @@ var cameraLensSmudgeDetectionInterval: CMTime { get }
 
 #### Discussion
 
-The cameraLensSmudgeDetectionInterval as set by -[AVCaptureDevice setCameraLensSmudgeDetectionEnabled:detectionInterval:].
+[`cameraLensSmudgeDetectionInterval`](avcapturedevice/cameralenssmudgedetectioninterval.md) is set by calling [`setCameraLensSmudgeDetectionEnabled(_:detectionInterval:)`](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md). By default, this property returns `kCMTimeInvalid`.
 
-By default, this property is set to kCMTimeInvalid.
+## See Also
+
+- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+  Whether camera lens smudge detection is enabled.
+- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md)
+  Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
+- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
+  A value specifying the status of camera lens smudge detection.
+- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
+  Constants indicating the current camera lens smudge detection status.
 
 
 ---

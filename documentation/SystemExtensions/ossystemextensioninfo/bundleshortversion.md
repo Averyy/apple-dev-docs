@@ -12,6 +12,10 @@
 var bundleShortVersion: String { get }
 ```
 
+#### Discussion
+
+The bundle short version string of the extension (CFBundleShortVersionString)
+
 
 ---
 

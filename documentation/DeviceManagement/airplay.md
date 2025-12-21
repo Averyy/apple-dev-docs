@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure AirPlay settings.
+The payload that configures AirPlay settings.
 
 **Availability**:
 - iOS 7.0+
@@ -93,7 +93,7 @@ Specify `com.apple.airplay` as the payload type.
 ## See Also
 
 - [object AirPlaySecurity](airplaysecurity.md)
-  The payload you use to configure Apple TV for a particular style of AirPlay security.
+  The payload that configures Apple TV for a particular style of AirPlay security.
 
 
 ---

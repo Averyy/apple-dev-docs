@@ -15,10 +15,6 @@ Convert each element of a vector between radius-angle and Cartesian pairs.
   Converts single-precision polar coordinates to rectangular coordinates.
 - [static func convert<U, V>(polarCoordinates: U, toRectangularCoordinates: inout V)](vdsp/convert(polarcoordinates:torectangularcoordinates:)-22zz0.md)
   Converts double-precision polar coordinates to rectangular coordinates.
-- [vDSP_rect](vdsp_rect.md)
-  Converts single-precision polar coordinates to rectangular coordinates, using the specified stride.
-- [vDSP_rectD](vdsp_rectd.md)
-  Converts double-precision polar coordinates to rectangular coordinates, using the specified stride.
 ### Converting rectangular coordinates to polar coordinates
 - [static func rectangularToPolar<U>(U) -> [Float]](vdsp/rectangulartopolar(_:)-5p4kg.md)
   Returns single-precision polar coordinates converted from rectangular coordinates.
@@ -28,10 +24,6 @@ Convert each element of a vector between radius-angle and Cartesian pairs.
   Converts single-precision rectangular coordinates to polar coordinates.
 - [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](vdsp/convert(rectangularcoordinates:topolarcoordinates:)-84131.md)
   Converts double-precision rectangular coordinates to polar coordinates.
-- [vDSP_polar](vdsp_polar.md)
-  Converts single-precision rectangular coordinates to polar coordinates, using the specified stride.
-- [vDSP_polarD](vdsp_polard.md)
-  Converts double-precision rectangular coordinates to polar coordinates, using the specified stride.
 
 ## See Also
 

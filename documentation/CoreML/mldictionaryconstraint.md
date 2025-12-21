@@ -22,7 +22,7 @@ class MLDictionaryConstraint
 
 ## Topics
 
-### Accessing the Constraint
+### Accessing the constraint
 - [var keyType: MLFeatureType](mldictionaryconstraint/keytype.md)
   The key type for the dictionary.
 
@@ -42,6 +42,8 @@ class MLDictionaryConstraint
 
 ## See Also
 
+- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+  The state feature value constraint.
 - [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
 - [class MLImageConstraint](mlimageconstraint.md)

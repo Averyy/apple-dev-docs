@@ -32,7 +32,7 @@ Swift Charts supports localization and accessibility features. You can also over
 ### Charts
 - [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing_your_app_s_data.md)
+- [Visualizing your app’s data](visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [struct Chart](chart.md)
   A SwiftUI view that displays a chart.
@@ -42,6 +42,15 @@ Swift Charts supports localization and accessibility features. You can also over
   A result builder that you use to compose the contents of a chart.
 - [struct Plot](plot.md)
   A mechanism for grouping chart contents into a single entity.
+### 3D charts
+- [struct Chart3D](chart3d.md)
+  A SwiftUI view that displays interactive 3D charts and visualizations.
+- [protocol Chart3DContent](chart3dcontent.md)
+  A type that represents the three-dimensional content that you draw on a chart.
+- [struct Chart3DContentBuilder](chart3dcontentbuilder.md)
+  A result builder that you use to compose the three-dimensional contents of a chart.
+- [struct SurfacePlot](surfaceplot.md)
+  Chart content that represents a mathematical function of two variables using a 3D surface.
 ### Marks
 - [struct AreaMark](areamark.md)
   Chart content that represents data using the area of one or more regions.
@@ -158,25 +167,8 @@ Swift Charts supports localization and accessibility features. You can also over
   A type that configures the scroll behavior of charts.
 - [struct ChartScrollTargetBehaviorContext](chartscrolltargetbehaviorcontext.md)
   Contextual information that you can use to determine how to best adjust how charts scroll.
-### Protocols
-- [protocol AGChartsDecider](agchartsdecider.md)
-- [protocol Chart3DContent](chart3dcontent.md)
-- [protocol Chart3DSurfaceStyle](chart3dsurfacestyle.md)
-- [protocol Chart3DSymbolShape](chart3dsymbolshape.md)
-  A type that can act as a shape for the marks that you add to a chart.
 ### Structures
-- [struct AnyChart3DSymbolShape](anychart3dsymbolshape.md)
-  A type-erased plotting shape.
-- [struct BasicChart3DSurfaceStyle](basicchart3dsurfacestyle.md)
-- [struct BasicChart3DSymbolShape](basicchart3dsymbolshape.md)
-  A basic chart symbol shape.
-- [struct Chart3D](chart3d.md)
-- [struct Chart3DCameraPose](chart3dcamerapose.md)
-- [struct Chart3DCameraProjection](chart3dcameraprojection.md)
-- [struct Chart3DContentBuilder](chart3dcontentbuilder.md)
-- [struct Chart3DPose](chart3dpose.md)
 - [struct Chart3DRenderingStyle](chart3drenderingstyle.md)
-- [struct SurfacePlot](surfaceplot.md)
 
 
 ---

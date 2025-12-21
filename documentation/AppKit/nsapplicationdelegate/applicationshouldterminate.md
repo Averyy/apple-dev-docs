@@ -17,7 +17,7 @@ optional func applicationShouldTerminate(_ sender: NSApplication) -> NSApplicati
 
 #### Return Value
 
-One of the values defined in [`NSApplication.TerminateReply`](nsapplication/terminatereply.md) constants indicating whether the application should terminate. For compatibility reasons, a return value of [`false`](https://developer.apple.com/documentation/swift/false) is equivalent to [`NSApplication.TerminateReply.terminateCancel`](nsapplication/terminatereply/terminatecancel.md), and a return value of [`true`](https://developer.apple.com/documentation/swift/true) is equivalent to [`NSApplication.TerminateReply.terminateNow`](nsapplication/terminatereply/terminatenow.md).
+One of the values defined in [`NSApplication.TerminateReply`](nsapplication/terminatereply.md) constants indicating whether the application should terminate. For compatibility reasons, a return value of [`false`](https://developer.apple.com/documentation/Swift/false) is equivalent to [`NSApplication.TerminateReply.terminateCancel`](nsapplication/terminatereply/terminatecancel.md), and a return value of [`true`](https://developer.apple.com/documentation/Swift/true) is equivalent to [`NSApplication.TerminateReply.terminateNow`](nsapplication/terminatereply/terminatenow.md).
 
 #### Discussion
 

@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: struct
 
+A symbol effect that applies the Breathe animation to symbol images.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,14 +20,23 @@
 struct BreatheSymbolEffect
 ```
 
+#### Overview
+
+The Breathe animation smoothly scales a symbol up and down.
+
 ## Topics
 
 ### Instance Properties
 - [var byLayer: BreatheSymbolEffect](breathesymboleffect/bylayer.md)
+  Returns a copy of the effect requesting an animation that applies separately to each motion group.
 - [var configuration: SymbolEffectConfiguration](breathesymboleffect/configuration.md)
+  The configuration for the effect.
 - [var plain: BreatheSymbolEffect](breathesymboleffect/plain.md)
+  Returns a copy of the effect requesting an animation that makes the symbol breathe with no additional styling.
 - [var pulse: BreatheSymbolEffect](breathesymboleffect/pulse.md)
+  Returns a copy of the effect requesting an animation that pulses layers as they breathe.
 - [var wholeSymbol: BreatheSymbolEffect](breathesymboleffect/wholesymbol.md)
+  Returns a copy of the effect requesting an animation that applies to all motion groups simultaneously.
 
 ## Relationships
 
@@ -58,7 +69,9 @@ struct BreatheSymbolEffect
 - [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [struct RotateSymbolEffect](rotatesymboleffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 - [struct WiggleSymbolEffect](wigglesymboleffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

@@ -6,7 +6,7 @@ Manage user-initiated modifications to maintain privacy with server-to-server no
 
 #### Overview
 
-Sign in with Apple users can modify their accounts, including deleting or disabling their Apple IDs. If your app or website hosts such an account, Apple can alert you when these changes occur by delivering developer notifications to your server. To learn how your users manage their account preferences for your app, see [`Manage the apps that you use with Sign in with Apple`](https://developer.apple.comhttps://support.apple.com/en-us/HT210426).
+Sign in with Apple users can modify their accounts, including deleting or disabling their Apple Accounts. If your app or website hosts such an account, Apple can alert you when these changes occur by delivering developer notifications to your server. To learn how your users manage their account preferences for your app, see [`Manage the apps that you use with Sign in with Apple`](https://developer.apple.comhttps://support.apple.com/en-us/HT210426).
 
 ##### Set Up Your Server
 
@@ -14,7 +14,7 @@ To receive server notifications for Sign in with Apple, your server must support
 
 ##### Decode and Validate the Notifications
 
-These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key for verifying token signature`](https://developer.apple.com/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature).
+These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key to verify token signatures`](https://developer.apple.com/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature).
 
 After validating the token signature, your server performs work according to the `type` value in the `events` claim of the token. The notification payload object contains information about user-initiated account modification events. The event types include the following:
 
@@ -71,9 +71,9 @@ When a user disables email forwarding, Apple sends a JWT to your registered endp
 
 To allow or prevent sending emails to the email address, be sure to update your server’s records according to your process. For more information, see [`Communicating using the private email relay service`](communicating-using-the-private-email-relay-service.md).
 
-##### Process Disabling and Deleting a Users Apple Id
+##### Process Disabling and Deleting a Users Apple Account
 
-Users can disable their Apple ID for a specific primary app ID, or delete their Apple ID account entirely. When a user disables their Apple ID for an app or app group, Apple sends a JWT to your registered endpoint URL with the `type` value of `consent-revoked` in the `events` claim. A decoded payload for a consent-revoked notification has the following format:
+Users can disable their Apple Account for a specific primary app ID, or delete their Apple Account account entirely. When a user disables their Apple Account for an app or app group, Apple sends a JWT to your registered endpoint URL with the `type` value of `consent-revoked` in the `events` claim. A decoded payload for a consent-revoked notification has the following format:
 
 ```json
 {
@@ -89,7 +89,7 @@ Users can disable their Apple ID for a specific primary app ID, or delete their 
 }
 ```
 
-When a user requests for Apple to permanently delete their Apple ID, Apple sends a JWT to your registered endpoint URL with the `type` value of `account-delete` in the `events` claim. A decoded payload for an account-delete notification has the following format:
+When a user requests for Apple to permanently delete their Apple Account, Apple sends a JWT to your registered endpoint URL with the `type` value of `account-delete` in the `events` claim. A decoded payload for an account-delete notification has the following format:
 
 ```json
 {
@@ -105,16 +105,16 @@ When a user requests for Apple to permanently delete their Apple ID, Apple sends
 }
 ```
 
-> ❗ **Important**:  When a user permanently deletes their Apple ID, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/credentialRevokedNotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)) to respond to account deletion events.
+> ❗ **Important**:  When a user permanently deletes their Apple Account, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/credentialRevokedNotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)) to respond to account deletion events.
 
-To indicate when the user disables or permanently deletes their Apple ID, be sure to update your server’s records according to your process.
+To indicate when the user disables or permanently deletes their Apple Account, be sure to update your server’s records according to your process. For more information about handling Managed Apple Accounts, see [`Obtaining information about people and classes`](https://developer.apple.com/documentation/RosterAPI/obtaining-information-about-people-and-classes).
 
 ## See Also
 
-- [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)
-  Configure the appearance of Sign in with Apple buttons with CSS styles.
-- [Configuring your environment for Sign in with Apple](configuring-your-environment-for-sign-in-with-apple.md)
-  Authenticate users with your web service by associating an existing app with a Services ID and private key.
+- [Sign in with Apple JS](../signinwithapplejs/signinwithapplejs.md)
+  Provide users a fast, secure way to sign in to your web service with their Apple Account.
+- [Sign in with Apple REST API](../signinwithapplerestapi/signinwithapplerestapi.md)
+  Communicate between your app servers and Apple’s authentication servers.
 
 
 ---

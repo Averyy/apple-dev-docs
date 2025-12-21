@@ -74,6 +74,10 @@ For additional information about how to interact with your app in Simulator, see
   Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 - [Introductory visionOS samples](introductory-visionos-samples.md)
   Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 
 
 ---

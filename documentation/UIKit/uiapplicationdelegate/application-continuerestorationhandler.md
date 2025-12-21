@@ -21,17 +21,17 @@ optional func application(_ application: UIApplication, continue userActivity: N
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate that your app handled the activity or [`false`](https://developer.apple.com/documentation/swift/false) to let iOS know that your app didn’t handle the activity.
+[`true`](https://developer.apple.com/documentation/Swift/true) to indicate that your app handled the activity or [`false`](https://developer.apple.com/documentation/Swift/false) to let iOS know that your app didn’t handle the activity.
 
 #### Discussion
 
 The app calls this method when it receives data associated with a user activity, for example, when the user transfers an activity from a different device using Handoff.
 
-Implement this method to update your iOS app so that the user can continue the activity from where they left off. If you don’t implement this method or if your implementation returns [`false`](https://developer.apple.com/documentation/swift/false), iOS tries to create a document for your app to open using a URL.
+Implement this method to update your iOS app so that the user can continue the activity from where they left off. If you don’t implement this method or if your implementation returns [`false`](https://developer.apple.com/documentation/Swift/false), iOS tries to create a document for your app to open using a URL.
 
 Calling the block in the `restorationHandler` is optional and only needed when specific objects are capable of continuing the activity.
 
-This method isn’t called if either [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method isn’t called if either [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ##### Handling Activities From Sirikit
 
@@ -42,7 +42,7 @@ By default, the intent provides an [`NSUserActivity`](https://developer.apple.co
 When continuing activities from SiriKit:
 
 - Look for the intent specified in the [`interaction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/interaction) property. Resume handling this intent in your app.
-- Avoid accidentally repeating actions (such as making double payments). For example, check the doc://com.apple.documentation/documentation/sirikit/ininteraction object’s doc://com.apple.documentation/documentation/sirikit/ininteraction/1638817-intentresponse property to see if the action has already been completed.
+- Avoid accidentally repeating actions (such as making double payments). For example, check the [`INInteraction`](https://developer.apple.com/documentation/Intents/INInteraction) object’s [`intentResponse`](https://developer.apple.com/documentation/Intents/INInteraction/intentResponse) property to see if the action has already been completed.
 
 Intents may launch your app under the following circumstances:
 

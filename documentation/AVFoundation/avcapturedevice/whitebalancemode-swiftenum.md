@@ -20,7 +20,7 @@ enum WhiteBalanceMode
 
 ## Topics
 
-### White Balance Modes
+### White balance modes
 - [AVCaptureDevice.WhiteBalanceMode.locked](avcapturedevice/whitebalancemode-swift.enum/locked.md)
   A mode that locks the white balance state.
 - [AVCaptureDevice.WhiteBalanceMode.autoWhiteBalance](avcapturedevice/whitebalancemode-swift.enum/autowhitebalance.md)

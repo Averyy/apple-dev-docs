@@ -19,7 +19,7 @@ func GLKVector4AllEqualToScalar(_ vector: GLKVector4, _ value: Float) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all of the vector’s components are equal to `value`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if all of the vector’s components are equal to `value`, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

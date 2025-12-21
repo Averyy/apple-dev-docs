@@ -22,7 +22,7 @@ var signaledValue: UInt64 { get set }
 
 ## Mentions
 
-- [Synchronizing Events Between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
 
 #### Discussion
 

@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: init
 
+Creates an extension output instance.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

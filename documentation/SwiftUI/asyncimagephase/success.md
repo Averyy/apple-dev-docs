@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: case
 
-An image succesfully loaded.
+An image successfully loaded.
 
 **Availability**:
 - iOS 15.0+

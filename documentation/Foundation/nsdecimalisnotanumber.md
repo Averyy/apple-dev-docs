@@ -22,7 +22,7 @@ func NSDecimalIsNotANumber(_ dcm: UnsafePointer<Decimal>) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the value in `dcm` represents a valid number, otherwise [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) if the value in `dcm` represents a valid number, otherwise [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

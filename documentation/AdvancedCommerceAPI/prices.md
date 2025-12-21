@@ -110,7 +110,7 @@ The following currencies support two decimal places:
 - [Choosing tax codes for your SKUs](taxcodes.md)
   Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
 - [Handling subscription price changes](handling-subscription-price-changes.md)
-  Provide necessary customer communications to notify and gather applicable consent before you initiate a price change.
+  Initiate a price change and manage communications with your subscribers through the App Store.
 
 
 ---

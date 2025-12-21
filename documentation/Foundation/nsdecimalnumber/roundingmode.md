@@ -43,14 +43,6 @@ The rounding mode matters only if the [`scale()`](nsdecimalnumberbehaviors/scale
   Round return values up.
 - [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
   Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
-- [NSDecimalNumber.RoundingMode.plain](nsdecimalnumber/roundingmode/plain.md)
-  Round to the closest possible return value; when caught halfway between two positive numbers, round up; when caught between two negative numbers, round down.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
-  Round return values down.
-- [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
-  Round return values up.
-- [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
-  Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
 ### Initializers
 - [init?(rawValue: UInt)](nsdecimalnumber/roundingmode/init(rawvalue:).md)
 

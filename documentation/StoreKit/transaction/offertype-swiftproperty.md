@@ -22,6 +22,7 @@ var offerType: Transaction.OfferType? { get }
 ## Mentions
 
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 
 #### Discussion
 

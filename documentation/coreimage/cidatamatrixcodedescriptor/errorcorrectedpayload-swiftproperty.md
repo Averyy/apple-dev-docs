@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The error-corrected payload that comprises the Data Matrix code symbol.
+The error-corrected payload containing the data encoded in the Data Matrix code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,18 +21,18 @@ var errorCorrectedPayload: Data { get }
 
 #### Discussion
 
-The error-corrected payload contains the de-interleaved bits of the message.
+DataMatrix symbols are specified bn ISO/IEC 16022:2006(E). ECC 200-type symbols will always have an even number of rows and columns.
 
-Data Matrix symbols are specified by ISO/IEC 16022:2006(E).  ECC 200-type symbols will always have an even number of rows and columns.
+For ECC 200-type symbols, the phases of encoding data into a symbol are described in section 5.1 – Encode procedure overview. The error corrected payload comprises the de-interleaved bits of the message described at the end of Step 1: Data encodation.
 
 ## See Also
 
 - [var rowCount: Int](cidatamatrixcodedescriptor/rowcount-swift.property.md)
-  The number of module rows.
+  The number of rows in the Data Matrix code symbol.
 - [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
-  The number of module columns.
+  The number of columns in the Data Matrix code symbol.
 - [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.property.md)
-  The Data Matrix code ECC version.
+  The error correction version of the Data Matrix code symbol.
 
 
 ---

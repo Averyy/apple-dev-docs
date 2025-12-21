@@ -26,15 +26,15 @@ When any of the provided closures returns `true`, this publisher raises the `SIG
 
 ## Topics
 
-### Creating a Breakpoint Publisher
+### Creating a breakpoint publisher
 - [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Upstream.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?)](publishers/breakpoint/init(upstream:receivesubscription:receiveoutput:receivecompletion:).md)
   Creates a breakpoint publisher with the provided upstream publisher and breakpoint-raising closures.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Breakpoint.Output](publishers/breakpoint/output.md)
   The kind of values published by this publisher.
 - [Publishers.Breakpoint.Failure](publishers/breakpoint/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/breakpoint/upstream.md)
   The publisher from which this publisher receives elements.
 - [let receiveSubscription: ((any Subscription) -> Bool)?](publishers/breakpoint/receivesubscription.md)
@@ -43,11 +43,6 @@ When any of the provided closures returns `true`, this publisher raises the `SIG
   A closure that executes when the publisher receives output from the upstream publisher, and can raise a debugger signal by returning a true Boolean value.
 - [let receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?](publishers/breakpoint/receivecompletion.md)
   A closure that executes when the publisher receives completion, and can raise a debugger signal by returning a true Boolean value.
-### Applying Operators
-- [Publisher Operators](publishers-breakpoint-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/breakpoint/publisher-implementations.md)
 
 ## Relationships
 

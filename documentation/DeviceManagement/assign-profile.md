@@ -9,6 +9,10 @@ Assign a profile to a list of devices.
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Mentions
+
+- [Migrating managed devices](migrating-managed-devices.md)
+
 #### Discussion
 
 To avoid performance issues, limit requests to 1000 devices at a time.

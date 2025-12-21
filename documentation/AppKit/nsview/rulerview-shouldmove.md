@@ -17,7 +17,7 @@ func rulerView(_ ruler: NSRulerView, shouldMove marker: NSRulerMarker) -> Bool
 
 #### Discussion
 
-If the client returns [`true`](https://developer.apple.com/documentation/swift/true) the ruler view allows the user to move the marker; if the client returns [`false`](https://developer.apple.com/documentation/swift/false) the marker doesn’t move.
+If the client returns [`true`](https://developer.apple.com/documentation/Swift/true) the ruler view allows the user to move the marker; if the client returns [`false`](https://developer.apple.com/documentation/Swift/false) the marker doesn’t move.
 
 The user’s ability to move a marker is typically set on the marker itself, using NSRulerMarker’s [`isMovable`](nsrulermarker/ismovable.md) method. You should use this client view method only when the marker’s movability can vary depending on a variable condition (for example, if graphic items can be locked down to prevent them from being inadvertently moved).
 

@@ -30,14 +30,8 @@ An async sequence of cumulative human body action counts.
 
 ## See Also
 
-- [HumanBodyActionCounter.Input](humanbodyactioncounter/input.md)
-  The input type.
-- [HumanBodyActionCounter.Output](humanbodyactioncounter/output.md)
-  The output type.
 - [HumanBodyActionCounter.CumulativeSumSequence](humanbodyactioncounter/cumulativesumsequence.md)
   Cumulative human body action count sequence.
-- [HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/outputsequence.md)
-  The output async sequence type.
 
 
 ---

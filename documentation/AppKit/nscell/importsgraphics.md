@@ -17,7 +17,7 @@ var importsGraphics: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell can import images into its text and support the RTFD text format.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell can import images into its text and support the RTFD text format.
 
 ## See Also
 

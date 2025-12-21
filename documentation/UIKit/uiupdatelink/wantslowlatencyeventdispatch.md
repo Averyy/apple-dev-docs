@@ -20,9 +20,9 @@ var wantsLowLatencyEventDispatch: Bool { get set }
 
 #### Discussion
 
-By default, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which means dispatch for events that are eligible for low-latency is off.
+By default, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which means dispatch for events that are eligible for low-latency is off.
 
-Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to request dispatch of low-latency eligible events. Only pencil events are low-latency eligible, so this behavior is primarily useful for pencil-drawing or writing apps.
+Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to request dispatch of low-latency eligible events. Only pencil events are low-latency eligible, so this behavior is primarily useful for pencil-drawing or writing apps.
 
 Low-latency eligible events dispatch in the middle of a UI update. This timing gives an app half the amount of time to handle them as standard events. Check the value of [`completionDeadlineTime`](uiupdateinfo/completiondeadlinetime.md) for the precise completion deadline time.
 

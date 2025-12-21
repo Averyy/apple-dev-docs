@@ -20,6 +20,10 @@ A key for indicating whether the system excludes the resource from all backups o
 static let isExcludedFromBackupKey: URLResourceKey
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Discussion
 
 The value of this key is a read-write Boolean [`NSNumber`](nsnumber.md) object.

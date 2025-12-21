@@ -26,12 +26,12 @@ This batch provider supports an array of feature providers or a dictionary of ar
 
 ## Topics
 
-### Initializers
+### Creating a batch provider
 - [init(array: [any MLFeatureProvider])](mlarraybatchprovider/init(array:).md)
   Creates the batch provider based on the array of feature providers.
 - [init(dictionary: [String : [Any]]) throws](mlarraybatchprovider/init(dictionary:).md)
   Creates a batch provider based on feature names and their associated arrays of data.
-### Accessing the Feature Providers
+### Accessing the feature providers
 - [var array: [any MLFeatureProvider]](mlarraybatchprovider/array.md)
   The array of feature providers.
 

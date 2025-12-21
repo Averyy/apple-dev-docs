@@ -24,7 +24,6 @@ object RoutingAppCoverageUpdateRequest
 
 - [object RoutingAppCoverage](routingappcoverage.md)
   The data structure that represents the Routing App Coverages resource.
-- [object RoutingAppCoverageWithoutIncludesResponse](routingappcoveragewithoutincludesresponse.md)
 - [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
   The request body you use to create a Routing App Coverage.
 - [object RoutingAppCoverageResponse](routingappcoverageresponse.md)

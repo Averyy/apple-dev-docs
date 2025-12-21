@@ -20,7 +20,7 @@ var movieFragmentInterval: CMTime { get set }
 
 #### Discussion
 
-The default is 10 seconds. To disable movie fragment writing (not typically recommended), set to [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
+The default is 10 seconds. To disable movie fragment writing (not typically recommended), set to [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
 
 A QuickTime movie contains media samples and a table identifying their location in the file. A movie file without a sample table is unreadable.
 

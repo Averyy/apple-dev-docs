@@ -6,8 +6,8 @@
 A known Wi-Fi Aware device that your app can connect to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -46,22 +46,6 @@ Your app may request the system securely pair and grant access to remote devices
 ### Getting a string description
 - [var description: String](wapaireddevice/description.md)
   A string description of the publisher.
-### Creating a device
-- [init(from: any Decoder) throws](wapaireddevice/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (WAPairedDevice, WAPairedDevice) -> Bool](wapaireddevice/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](wapaireddevice/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](wapaireddevice/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](wapaireddevice/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](wapaireddevice/equatable-implementations.md)
 
 ## Relationships
 

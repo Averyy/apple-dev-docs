@@ -23,7 +23,7 @@ func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of childTaskResultType:
 
 #### Discussion
 
-A group waits for all of its child tasks to complete before it returns. Even cancelled tasks must run until completion before this function returns. Cancelled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
+A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
 To collect the results of the group’s child tasks, you can use a `for`-`await`-`in` loop:
 
@@ -46,12 +46,6 @@ group.cancelAll()
 return first + second
 ```
 
-### Task Group Cancellation
-
-You can cancel a task group and all of its child tasks by calling the `cancelAll()` method on the task group, or by canceling the task in which the group is running.
-
-If you call `addTask(name:priority:operation:)` to create a new task in a canceled group, that task is immediately canceled after creation. Alternatively, you can call `addTaskUnlessCancelled(name:priority:operation:)`, which doesn’t create the task if the group has already been canceled. Choosing between these two functions lets you control how to react to cancellation within a group: some child tasks need to run regardless of cancellation, but other tasks are better not even being created when you know they can’t produce useful results.
-
 ### Error Handling
 
 Throwing an error in one of the child tasks of a task group doesn’t immediately cancel the other tasks in that group. However, throwing out of the `body` of the `withThrowingTaskGroup` method does cancel the group, and all of its child tasks. For example, if you call `next()` in the task group and propagate its error, all other tasks are canceled. For example, in the code below, nothing is canceled and the group doesn’t throw an error:
@@ -73,6 +67,14 @@ try await withThrowingTaskGroup(of: Void.self) { group in
 
 An individual task throws its error in the corresponding call to `Group.next()`, which gives you a chance to handle the individual error or to let the group rethrow the error.
 
+Refer to [`TaskGroup`](taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
+
+> **Note**: [`TaskGroup`](taskgroup.md)
+
+> **Note**: [`ThrowingTaskGroup`](throwingtaskgroup.md)
+
+> **Note**: [`ThrowingDiscardingTaskGroup`](throwingdiscardingtaskgroup.md)
+
 ## See Also
 
 - [struct Task](task.md)
@@ -81,10 +83,6 @@ An individual task throws its error in the corresponding call to `Group.next()`,
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [struct TaskPriority](taskpriority.md)

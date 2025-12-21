@@ -27,22 +27,10 @@ enum Label
   The label is integer type.
 - [MLModelClassifierAdaptor.Label.string(_:)](mlmodelclassifieradaptor/label/string(_:).md)
   The label is string type.
-### Operators
-- [static func == (MLModelClassifierAdaptor<Scalar>.Label, MLModelClassifierAdaptor<Scalar>.Label) -> Bool](mlmodelclassifieradaptor/label/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mlmodelclassifieradaptor/label/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mlmodelclassifieradaptor/label/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mlmodelclassifieradaptor/label/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](mlmodelclassifieradaptor/label/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByIntegerLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebyintegerliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](mlmodelclassifieradaptor/label/expressiblebyunicodescalarliteral-implementations.md)
 
 ## Relationships
 

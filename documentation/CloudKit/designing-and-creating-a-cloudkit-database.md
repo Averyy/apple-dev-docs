@@ -32,7 +32,7 @@ Create a [`CKRecord`](ckrecord.md) object with a string representing the type of
 let record = CKRecord(recordType: "ToDoItem")
 ```
 
-Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use doc://com.apple.documentation/documentation/objectivec/nsobject/1417515-setvaluesforkeys. The values you set could be from a details sheet that the user fills out.
+Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValuesForKeys(_:)). The values you set could be from a details sheet that the user fills out.
 
 ```swift
 record.setValuesForKeys([

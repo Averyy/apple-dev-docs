@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), then the guide may be focusable. Some conditions, defined by the system, may prevent the guide from being focusable even if it’s enabled, such as when the guide’s frame overlaps with the currently focused view. However, if this property is set to [`false`](https://developer.apple.com/documentation/swift/false), then the guide isn’t focusable.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), then the guide may be focusable. Some conditions, defined by the system, may prevent the guide from being focusable even if it’s enabled, such as when the guide’s frame overlaps with the currently focused view. However, if this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), then the guide isn’t focusable.
 
 ## See Also
 

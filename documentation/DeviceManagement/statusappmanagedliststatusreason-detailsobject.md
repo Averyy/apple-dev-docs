@@ -8,7 +8,7 @@ A dictionary that contains additional details about a declarative managed app’
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.4+
 
 ## Declaration

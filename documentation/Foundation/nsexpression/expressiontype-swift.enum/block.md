@@ -44,14 +44,6 @@ case block
   An expression that defines an aggregate of `NSExpression` objects.
 - [NSExpression.ExpressionType.anyKey](nsexpression/expressiontype-swift.enum/anykey.md)
   An expression that represents any key.
-- [NSExpression.ExpressionType.constantValue](nsexpression/expressiontype-swift.enum/constantvalue.md)
-  An expression that always returns the same value.
-- [NSExpression.ExpressionType.evaluatedObject](nsexpression/expressiontype-swift.enum/evaluatedobject.md)
-  An expression that always returns the parameter object itself.
-- [NSExpression.ExpressionType.variable](nsexpression/expressiontype-swift.enum/variable.md)
-  An expression that always returns whatever value is associated with the key specified by ‘variable’ in the bindings dictionary.
-- [NSExpression.ExpressionType.keyPath](nsexpression/expressiontype-swift.enum/keypath.md)
-  An expression that returns something that can be used as a key path.
 
 
 ---

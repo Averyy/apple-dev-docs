@@ -17,7 +17,8 @@ object ExternalPurchaseReport
 ## Mentions
 
 - [Reporting tokens with transactions](reportwithtransactions.md)
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
+- [Reporting unrecognized and transactionless tokens](reportwithouttransactions.md)
+- [External Purchase Server API changelog](changelog.md)
 - [Reporting corrections](reportcorrections.md)
 
 #### Discussion
@@ -28,13 +29,14 @@ The `requestIdentifier` field identifies the report. Generate a UUID for each re
 
 > 💡 **Tip**: Store the [`requestIdentifier`](requestidentifier.md) value in your records with the external purchase token to identify your reports.
 
-The [`externalPurchaseId`](externalpurchaseid.md) field is the token’s identifier. To get that value, decode the external purchase token you receive in your app or on your website. For more information, see: [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
+The [`externalPurchaseId`](externalpurchaseid.md) field is the token’s identifier. To get that value, decode the external purchase token you receive in your app or on your website. For more information, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
 
-The [`status`](status.md) field represents the token’s status, which determines the report’s contents and whether it includes a `lineItems` array. The [`status`](status.md) value determines the three types of reports:
+The [`status`](status.md) field represents the token’s status, which you provide to indicate the report’s contents and whether it includes a `lineItems` array. The [`status`](status.md) value determines the type of report you send:
 
-- A `LINE_ITEM` status for a report with transactions that you list in the `lineItems` array.  Use this status when a token has associated transactions, and to send corrections to previously submitted line items. For more information, see [`Reporting tokens with transactions`](reportwithtransactions.md).
-- A `NO_LINE_ITEM` status for a report of a token that didn’t result in any successful transactions. Don’t include `lineItems` in the request with this status.  For more information, see: [`Reporting unrecognized tokens and tokens without transactions`](reportwithouttransactions.md)
-- An `UNRECOGNIZED_TOKEN` status for a report of a token you receive in an App Store Server Notification, but that you don’t have recorded in your system. Don’t include `lineItems` in the request with this status. For more information, see [`Reporting unrecognized tokens and tokens without transactions`](reportwithouttransactions.md)
+- Use a `LINE_ITEM` status to report a token with transactions that you list in the `lineItems` array.  Use this status when a token has associated transactions, and to send corrections to previously submitted line items. For more information, see [`Reporting tokens with transactions`](reportwithtransactions.md).
+- Use a `NO_LINE_ITEM` status for a report of a token that didn’t result in any successful transactions. Don’t include `lineItems` in the request with this status.  For more information, see [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md).
+- Use an `UNRECOGNIZED_TOKEN` status to report a token you receive in an App Store Server Notification, but that you don’t have recorded in your system. Don’t include `lineItems` in the request with this status. For more information, see [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md).
+- Use a `DUPLICATE_TOKEN` status to report a `SERVICES` or `ACQUISITION` token that you recognize, but which you aren’t using to report transactions because it’s a duplicate token. Don’t include `lineItems` in the request with this status. For more information, see [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md).
 
 You can also submit corrections to restate line items, or retract a previous submission. For more information, see [`Reporting corrections`](reportcorrections.md).
 
@@ -54,7 +56,7 @@ Include as many line items as there are transactions that apply to the token. If
 - [type externalPurchaseId](externalpurchaseid.md)
   The unique identifier of an external purchase token.
 - [type status](status.md)
-  A string value that represents the status of the token and the contents of the external purchase report.
+  A string value you provide to indicate the status of the token and the contents of the external purchase report.
 
 ## See Also
 

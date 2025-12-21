@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: op
 
-Indicates whether two extensions are equal
+Returns a Boolean value that indicates whether two identities are equal.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,12 +22,12 @@ static func == (lhs: AppExtensionIdentity, rhs: AppExtensionIdentity) -> Bool
 
 #### Return Value
 
-A Boolean value set to true if the two extension parameters are equal.
+`true` if the items are equal, or `false` if they aren’t.
 
 ## Parameters
 
-- `lhs`: The first extension to compare.
-- `rhs`: The second extension to compare.
+- `lhs`: The first identity to compare.
+- `rhs`: The second identity to compare.
 
 ## See Also
 

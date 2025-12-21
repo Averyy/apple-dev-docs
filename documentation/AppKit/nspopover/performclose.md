@@ -17,11 +17,11 @@ Attempts to close the popover.
 
 #### Discussion
 
-The popover will not be closed if it has a delegate and the delegate implements the returns [`popoverShouldClose(_:)`](nspopoverdelegate/popovershouldclose(_:).md) method returning [`false`](https://developer.apple.com/documentation/swift/false), or if a subclass of the NSPopover class implements `popoverShouldClose:` and returns [`false`](https://developer.apple.com/documentation/swift/false)).
+The popover will not be closed if it has a delegate and the delegate implements the returns [`popoverShouldClose(_:)`](nspopoverdelegate/popovershouldclose(_:).md) method returning [`false`](https://developer.apple.com/documentation/Swift/false), or if a subclass of the NSPopover class implements `popoverShouldClose:` and returns [`false`](https://developer.apple.com/documentation/Swift/false)).
 
 The operation will fail if the popover is displaying a nested popover or if it has a child window. A window will attempt to close its popovers when it receives a [`performClose(_:)`](nswindow/performclose(_:).md) message.
 
-The popover animates out when closed unless the [`animates`](nspopover/animates.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false).
+The popover animates out when closed unless the [`animates`](nspopover/animates.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

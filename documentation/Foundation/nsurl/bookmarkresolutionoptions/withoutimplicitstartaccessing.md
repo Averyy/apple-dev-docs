@@ -34,12 +34,6 @@ This option isn’t applicable to security-scoped bookmarks.
   Specifies that no volume should be mounted during resolution of the bookmark data.
 - [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
-- [static var withoutUI: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutui.md)
-  Specifies that no UI feedback should accompany resolution of the bookmark data.
-- [static var withoutMounting: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutmounting.md)
-  Specifies that no volume should be mounted during resolution of the bookmark data.
-- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
-  Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
 
 
 ---

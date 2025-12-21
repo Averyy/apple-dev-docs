@@ -23,6 +23,8 @@ A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if a
 
 #### Discussion
 
+Compares a JSValue with an unsigned 64-bit integer.
+
 `left` is converted to an integer according to the rules specified by the JavaScript language then compared with `right`.
 
 ## Parameters

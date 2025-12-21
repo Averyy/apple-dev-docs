@@ -16,7 +16,7 @@ func hasLearnedWord(_ word: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the spell checker has learned word, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the spell checker has learned word, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

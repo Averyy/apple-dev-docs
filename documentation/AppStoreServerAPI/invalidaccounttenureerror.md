@@ -20,10 +20,14 @@ object InvalidAccountTenureError
 
 #### Discussion
 
-For more information about `accountTenure` values in a [`ConsumptionRequest`](consumptionrequest.md), see [`accountTenure`](accounttenure.md).
+For more information about `accountTenure` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`accountTenure`](accounttenure.md).
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
   An error that indicates the value of the app account token field is invalid.
 - [object InvalidConsumptionStatusError](invalidconsumptionstatuserror.md)
@@ -48,6 +52,8 @@ For more information about `accountTenure` values in a [`ConsumptionRequest`](co
   An error that indicates the value in the user status field is invalid.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

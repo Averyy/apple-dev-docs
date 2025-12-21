@@ -17,7 +17,6 @@ Inserts a node into a specific position in the receiver’s list of child nodes.
 ## Declaration
 
 ```swift
-@MainActor
 func insertChild(_ node: SKNode, at index: Int)
 ```
 

@@ -42,12 +42,12 @@ let HKDevicePropertyKeySoftwareVersion: String
   The device’s UDI Device Identifier.
 - [let HKPredicateKeyPathCount: String](hkpredicatekeypathcount.md)
   A key path for the sample’s count.
-- [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
-- [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
-- [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
-  A quantity sample type that represents the rate at which the user is pedaling.
-- [static let cyclingFunctionalThresholdPower: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingfunctionalthresholdpower.md)
-  A quantity sample type that measures the estimated maximum average power sustained while riding a bike for 60 minutes.
+- [static let GAD7: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/gad7.md)
+- [static let PHQ9: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/phq9.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+  A constant that matches any operating system.
+- [let HKSourceRevisionAnyProductType: String](hksourcerevisionanyproducttype.md)
+  A constant that matches any product type.
 
 
 ---

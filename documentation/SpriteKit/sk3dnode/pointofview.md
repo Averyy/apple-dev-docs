@@ -17,7 +17,6 @@ The Scene Kit node from which the scene’s contents are viewed when rendered.
 ## Declaration
 
 ```swift
-@MainActor
 var pointOfView: SCNNode? { get set }
 ```
 

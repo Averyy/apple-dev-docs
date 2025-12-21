@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The number of control points in each curve segment.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var segmentControlPointCount: Int { get set }
 ```
+
+#### Discussion
+
+This value can be `2`, `3`, or `4`.
 
 
 ---

@@ -46,7 +46,7 @@ This function provides access to pixel formats not typically covered by the [`in
 - [class MPSImageDescriptor](mpsimagedescriptor.md)
   A description of the attributes used to create an [`MPSImage`](mpsimage.md).
 - [class MTLTextureDescriptor](../Metal/MTLTextureDescriptor.md)
-  An object that you use to configure new Metal texture objects.
+  An instance that you use to configure new Metal texture instances.
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](mpstemporaryimage/init(commandbuffer:texturedescriptor:featurechannels:).md)
 
 

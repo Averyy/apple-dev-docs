@@ -23,7 +23,7 @@ A filter shape object.
 - [var extent: CGRect](ciimage/extent.md)
   A rectangle that specifies the extent of the image.
 - [var properties: [String : Any]](ciimage/properties.md)
-  A dictionary containing metadata about the image.
+  Returns the metadata properties dictionary of the image.
 - [var url: URL?](ciimage/url.md)
   The URL from which the image was loaded.
 - [var colorSpace: CGColorSpace?](ciimage/colorspace.md)

@@ -22,7 +22,7 @@ enum MLShapedArrayBufferLayout
 
 ## Topics
 
-### Enumeration Cases
+### Buffer layouts
 - [MLShapedArrayBufferLayout.firstMajorContiguous](mlshapedarraybufferlayout/firstmajorcontiguous.md)
   Layout scalars contiguously in first-major order.
 - [MLShapedArrayBufferLayout.lastMajorContiguous](mlshapedarraybufferlayout/lastmajorcontiguous.md)
@@ -35,6 +35,11 @@ enum MLShapedArrayBufferLayout
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [enum MLModelStructure](mlmodelstructure-swift.enum.md)
+  An enum representing the structure of a model.
 
 
 ---

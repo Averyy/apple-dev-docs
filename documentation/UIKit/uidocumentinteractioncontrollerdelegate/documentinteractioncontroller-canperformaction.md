@@ -16,7 +16,7 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified action is supported for the associated document or [`false`](https://developer.apple.com/documentation/swift/false) if it is not. If you do not implement this method, the return value is assumed to be [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified action is supported for the associated document or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not. If you do not implement this method, the return value is assumed to be [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ When building the options menu (invoked, for example, by the user performing a l
 
 The supported `action` selectors for this method are `copy:` and `print:`. (The `print:` selector is available in iOS 4.2 and later. Printing is supported only on devices that support multitasking.)
 
-For each action that you implement in the [`documentInteractionController(_:performAction:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md) delegate method, return [`true`](https://developer.apple.com/documentation/swift/true) from this method if that action is available for the document.
+For each action that you implement in the [`documentInteractionController(_:performAction:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md) delegate method, return [`true`](https://developer.apple.com/documentation/Swift/true) from this method if that action is available for the document.
 
 ## Parameters
 

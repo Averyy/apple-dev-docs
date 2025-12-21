@@ -3,17 +3,22 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-Indicates the type of this measurement.
+The type of anchor message that the measurement derives from.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var measurementType: NIDLTDOAMeasurementType { get }
 ```
+
+## See Also
+
+- [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
+  The drift, as a ratio, across the frequencies of the receiver and the anchor.
 
 
 ---

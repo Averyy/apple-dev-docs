@@ -43,6 +43,7 @@ Upscale a rendering by following these steps for every render pass:
 ## Relationships
 
 ### Inherits From
+- [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 

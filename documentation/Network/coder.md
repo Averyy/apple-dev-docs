@@ -3,34 +3,42 @@
 **Framework**: Network  
 **Kind**: struct
 
+A protocol that frames and encodes/decodes Codable types.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-struct Coder<Sending, _Receiving, CoderType> where Sending : Encodable, _Receiving : Decodable, CoderType : NetworkCoder
+struct Coder<Sending, Receiving, CoderType> where Sending : Encodable, Receiving : Decodable, CoderType : NetworkCoder
 ```
+
+#### Overview
+
+Supports sending and receiving Codable types using a specified format.
 
 ## Topics
 
 ### Initializers
-- [init(Sending.Type, using: CoderType)](coder/init(_:using:).md)
 - [init<BelowProtocol>(Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(_:using:_:)-61vdl.md)
+  Create a Coder protocol.
 - [init<BelowProtocol>(Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(_:using:_:)-8o8kw.md)
-- [init<BelowProtocol>(receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, sending: Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(receiving:sending:using:_:)-4mm04.md)
-- [init<BelowProtocol>(receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, sending: Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(receiving:sending:using:_:)-7d2qd.md)
-- [init(sending: Sending.Type, receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, using: CoderType)](coder/init(sending:receiving:using:).md)
-- [init<BelowProtocol>(sending: Sending.Type, receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, using: CoderType, () -> BelowProtocol)](coder/init(sending:receiving:using:_:)-1579q.md)
-- [init<BelowProtocol>(sending: Sending.Type, receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, using: CoderType, () -> BelowProtocol)](coder/init(sending:receiving:using:_:)-7ox25.md)
-### Instance Properties
-- [let belowProtocol: any NetworkProtocolOptions](coder/belowprotocol.md)
+  Create a Coder protocol.
+- [init<BelowProtocol>(receiving: Receiving.Type, sending: Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(receiving:sending:using:_:)-4mm04.md)
+  Create a Coder protocol.
+- [init<BelowProtocol>(receiving: Receiving.Type, sending: Sending.Type, using: CoderType, () -> BelowProtocol)](coder/init(receiving:sending:using:_:)-7d2qd.md)
+  Create a Coder protocol
+- [init<BelowProtocol>(sending: Sending.Type, receiving: Receiving.Type, using: CoderType, () -> BelowProtocol)](coder/init(sending:receiving:using:_:)-1579q.md)
+  Create a Coder protocol
+- [init<BelowProtocol>(sending: Sending.Type, receiving: Receiving.Type, using: CoderType, () -> BelowProtocol)](coder/init(sending:receiving:using:_:)-7ox25.md)
+  Create a Coder protocol.
 
 ## Relationships
 

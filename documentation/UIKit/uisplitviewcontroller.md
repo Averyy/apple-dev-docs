@@ -31,7 +31,7 @@ A split view controller is a container view controller that manages child view c
 
 Split view interfaces are most suitable for filterable content or navigating content hierarchies, like traversing the folders and notes within the Notes app to view each note. In the Notes app, selecting a folder in the primary sidebar shows the list of notes in that folder, and selecting a note from the list shows the contents of that specific note in the secondary view.
 
-![Diagram showing a triple-column split view interface with the primary, supplementary, and secondary columns labeled. ](https://docs-assets.developer.apple.com/published/74861aa3da8a9ad0dd66cfda2d84a72e/media-3616480%402x.png)
+![Diagram showing a triple-column split view interface with the primary, supplementary,  secondary, and inspector columns labeled.](https://docs-assets.developer.apple.com/published/6a0c2099a8b42457fdfbcbd3c18c695b/UISplitViewController-1%402x.png)
 
 When you build your app’s user interface, the split view controller is typically the root view controller of your app’s window. The split view controller has no significant appearance of its own. Most of its appearance is defined by the child view controllers you install.
 
@@ -44,7 +44,9 @@ In iOS 14 and later, [`UISplitViewController`](uisplitviewcontroller.md) support
 - Use the [`UISplitViewController.Style.doubleColumn`](uisplitviewcontroller/style-swift.enum/doublecolumn.md) style to create a split view interface with a two-column layout. This style of split view controller manages two child view controllers, placed in the primary and secondary columns.
 - Use the [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md) style to create a split view interface with a three-column layout. This style of split view controller manages three child view controllers, placed in the primary, supplementary, and secondary columns.
 
-![Diagram showing a double-column and a triple-column split view interface. ](https://docs-assets.developer.apple.com/published/bb6ed731c35dd804f496bcd5a5d33f44/media-3616482%402x.png)
+![Diagram showing a double-column and a triple-column split view interface, each with an inspector.](https://docs-assets.developer.apple.com/published/23c5e4fd7c1663d788630da117b02829/UISplitViewController-2%402x.png)
+
+In either the two-column or three-column layout, [`UISplitViewController`](uisplitviewcontroller.md) supports an inspector column on the trailing edge of the view. Use the inspector column to provide auxiliary information related to the secondary column, or for controls that affect content in the secondary column.
 
 Before iOS 14, [`UISplitViewController`](uisplitviewcontroller.md) supported just one split view interface style with a primary view controller and a secondary view controller. This classic interface style applies to split view controllers created using any other approach than [`init(style:)`](uisplitviewcontroller/init(style:).md). Split view controllers with the classic interface have a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md) and they don’t respond to any of the column-style APIs introduced in iOS 14 and later.
 
@@ -60,6 +62,8 @@ The split view controller performs collapse and expand transitions in response t
 
 In a column-style split view interface, when the interface is collapsed, you can show a different view controller than your primary, supplementary, or secondary. Set the desired view controller for the [`UISplitViewController.Column.compact`](uisplitviewcontroller/column/compact.md) column using [`setViewController(_:for:)`](uisplitviewcontroller/setviewcontroller(_:for:).md). If you want to further customize transitions for collapsing and expanding the interface, see [`Column-style split views`](uisplitviewcontrollerdelegate#Column-style-split-views.md).
 
+Configure your own custom views and interactions to show or hide the inspector column. When the interface is collapsed, the split view controller displays the inspector as a sheet over the secondary column.
+
 For information about managing transitions in classic split view interfaces, see [`Classic split views`](uisplitviewcontrollerdelegate#Classic-split-views.md).
 
 ##### Display Mode
@@ -68,7 +72,7 @@ A split view controller’s current display mode represents the visual arrangeme
 
 You don’t set the display mode directly; instead, you set a preferred display mode by using the [`preferredDisplayMode`](uisplitviewcontroller/preferreddisplaymode.md) property. The split view controller makes every effort to respect the display mode you specify, but it may not be able to accommodate that mode visually because of space constraints. For example, the split view controller can’t display its child view controllers side-by-side in a horizontally compact environment. For possible configurations, see [`UISplitViewController.DisplayMode`](uisplitviewcontroller/displaymode-swift.enum.md).
 
-![Flow diagram showing the possible state transitions between display modes, based on split behavior and column style.](https://docs-assets.developer.apple.com/published/be15b86b1c34a056dcd35b2d58c2fefb/media-3624553%402x.png)
+![Flow diagram showing the possible state transitions between display modes, based on split behavior and column style.](https://docs-assets.developer.apple.com/published/3ca2e98704a9ec01f1bc5c968908aaf7/UISplitViewController-3%402x.png)
 
 After you set the preferred display mode, the split view controller updates itself and reflects the actual display mode in the [`displayMode`](uisplitviewcontroller/displaymode-swift.property.md) property. If you just want to change which columns are shown, try using [`show(_:)`](uisplitviewcontroller/show(_:).md) or [`hide(_:)`](uisplitviewcontroller/hide(_:).md). The split view controller will determine how to update the display mode to display the desired columns.
 
@@ -76,11 +80,11 @@ After you set the preferred display mode, the split view controller updates itse
 
 There are several ways for user interaction to change the current display mode.
 
-The split view controller installs a built-in gesture recognizer that lets the user change the display mode using a swipe. You can suppress this gesture recognizer by setting the [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) property to [`false`](https://developer.apple.com/documentation/swift/false). For example, you might set this property to [`false`](https://developer.apple.com/documentation/swift/false) if you want your primary view controller to always be visible.
+The split view controller installs a built-in gesture recognizer that lets the user change the display mode using a swipe. You can suppress this gesture recognizer by setting the [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). For example, you might set this property to [`false`](https://developer.apple.com/documentation/Swift/false) if you want your primary view controller to always be visible.
 
-If [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`true`](https://developer.apple.com/documentation/swift/true), the split view controller also presents a special bar button item for changing the display mode. The split view controller manages the behavior, appearance, and positioning of this item. It appears as a sidebar toggle icon for [`UISplitViewController.SplitBehavior.tile`](uisplitviewcontroller/splitbehavior-swift.enum/tile.md) and as a back-chevron icon for [`UISplitViewController.SplitBehavior.overlay`](uisplitviewcontroller/splitbehavior-swift.enum/overlay.md) and [`UISplitViewController.SplitBehavior.displace`](uisplitviewcontroller/splitbehavior-swift.enum/displace.md). Tapping this button transitions to a new display mode based on the current display mode and split behavior.
+If [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the split view controller also presents a special bar button item for changing the display mode. The split view controller manages the behavior, appearance, and positioning of this item. It appears as a sidebar toggle icon for [`UISplitViewController.SplitBehavior.tile`](uisplitviewcontroller/splitbehavior-swift.enum/tile.md) and as a back-chevron icon for [`UISplitViewController.SplitBehavior.overlay`](uisplitviewcontroller/splitbehavior-swift.enum/overlay.md) and [`UISplitViewController.SplitBehavior.displace`](uisplitviewcontroller/splitbehavior-swift.enum/displace.md). Tapping this button transitions to a new display mode based on the current display mode and split behavior.
 
-For three-column split view interfaces—those with a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md)—another property that affects display mode is [`showsSecondaryOnlyButton`](uisplitviewcontroller/showssecondaryonlybutton.md). When this property is [`true`](https://developer.apple.com/documentation/swift/true), the split view controller presents another bar button item for toggling the display mode to and from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md). The split view controller manages the behavior, appearance, and positioning of this item. It appears as a double-arrow icon. When a user taps this button, it toggles the display mode to or from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md).
+For three-column split view interfaces—those with a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md)—another property that affects display mode is [`showsSecondaryOnlyButton`](uisplitviewcontroller/showssecondaryonlybutton.md). When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the split view controller presents another bar button item for toggling the display mode to and from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md). The split view controller manages the behavior, appearance, and positioning of this item. It appears as a double-arrow icon. When a user taps this button, it toggles the display mode to or from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md).
 
 ##### Split Behavior
 
@@ -88,19 +92,15 @@ A split view controller’s split behavior controls how its secondary view contr
 
 You don’t set the split behavior directly; instead, you set a preferred split behavior by using the [`preferredSplitBehavior`](uisplitviewcontroller/preferredsplitbehavior.md) property. This change takes effect after the next layout occurs. The split view controller reflects the actual split behavior in the [`splitBehavior`](uisplitviewcontroller/splitbehavior-swift.property.md) property. The value of the [`splitBehavior`](uisplitviewcontroller/splitbehavior-swift.property.md) property affects which display modes are available for the split view controller. For possible configurations, see [`UISplitViewController.SplitBehavior`](uisplitviewcontroller/splitbehavior-swift.enum.md).
 
-![Diagram showing a triple-column split view interface using the tile, overlay, and displace split behaviors.](https://docs-assets.developer.apple.com/published/07e4766775c395fdd216e5ce3cd138da/media-3616615%402x.png)
+![Diagram showing a triple-column split view interface using the tile, overlay, and displace split behaviors.](https://docs-assets.developer.apple.com/published/21d48e2a49ece64105122059913f0374/UISplitViewController-4%402x.png)
 
 ##### Column Width Customization
 
-You can specify custom widths for the primary and supplementary columns of the split view interface by adjusting [`preferredPrimaryColumnWidthFraction`](uisplitviewcontroller/preferredprimarycolumnwidthfraction.md) and [`preferredSupplementaryColumnWidthFraction`](uisplitviewcontroller/preferredsupplementarycolumnwidthfraction.md). If you don’t specify values for these properties, they default to [`automaticDimension`](uisplitviewcontroller/automaticdimension.md), and the system determines the appropriate behavior based on the available space.
+You can specify custom widths for the primary, supplementary, secondary, and inspector columns of the split view interface by setting their respective minimum, maximum, and preferred width properties listed in [`Managing column dimensions`](uisplitviewcontroller#Managing-column-dimensions.md). If you don’t specify values for these properties, they default to [`automaticDimension`](uisplitviewcontroller/automaticdimension.md).
 
 ##### Message Forwarding
 
 A split view controller interposes itself between the app’s window and its child view controllers. As a result, all messages to the child view controllers must flow through the split view controller. Messages are forwarded as appropriate. For example, view appearance and disappearance messages are sent only when the corresponding child view controller actually appears onscreen.
-
-##### State Preservation
-
-If you assign a value to the split view controller’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property, it preserves any child view controllers that have their own valid restoration identifier. During the next launch cycle, the split view controller restores the preserved view controllers to their previous state. The child view controllers of a split view controller may use the same restoration identifiers. The split view controller automatically stores additional information to ensure that each child’s restoration path is unique.
 
 ## Topics
 
@@ -135,6 +135,8 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   Presents the view controller in the specified column of the split view interface.
 - [func hide(UISplitViewController.Column)](uisplitviewcontroller/hide(_:).md)
   Dismisses the view controller in the specified column of the split view interface.
+- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
+  A Boolean value that indicates whether the split view interface is showing the specified column.
 - [func show(UIViewController, sender: Any?)](uisplitviewcontroller/show(_:sender:).md)
   Presents the specified view controller as the primary view controller in the split view interface.
 - [func showDetailViewController(UIViewController, sender: Any?)](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md)
@@ -186,10 +188,25 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   The minimum width, in points, for the supplementary view controller’s content.
 - [var maximumSupplementaryColumnWidth: CGFloat](uisplitviewcontroller/maximumsupplementarycolumnwidth.md)
   The maximum width, in points, for the supplementary view controller’s content.
+- [var preferredSecondaryColumnWidth: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidth.md)
+  The preferred width, in points, for the secondary view controller’s content.
+- [var preferredSecondaryColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidthfraction.md)
+  The relative width of the secondary view controller’s content.
+- [var minimumSecondaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsecondarycolumnwidth.md)
+  The minimum width, in points, for the secondary view controller’s content.
+- [var preferredInspectorColumnWidth: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidth.md)
+  The preferred width, in points, for the inspector view controller’s content.
+- [var preferredInspectorColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidthfraction.md)
+  The relative width of the inspector view controller’s content.
+- [var maximumInspectorColumnWidth: CGFloat](uisplitviewcontroller/maximuminspectorcolumnwidth.md)
+  The maximum width, in points, for the inspector view controller’s content.
+- [var minimumInspectorColumnWidth: CGFloat](uisplitviewcontroller/minimuminspectorcolumnwidth.md)
+  The minimum width, in points, for the inspector view controller’s content.
 - [class let automaticDimension: CGFloat](uisplitviewcontroller/automaticdimension.md)
   The default value to apply to a dimension.
 ### Inspecting the layout environment
 - [UISplitViewController.LayoutEnvironment](uisplitviewcontroller/layoutenvironment.md)
+  Constants that indicate the current layout of the containing split view controller.
 ### Positioning the primary view controller
 - [var primaryEdge: UISplitViewController.PrimaryEdge](uisplitviewcontroller/primaryedge-swift.property.md)
   The side on which the primary view controller sits.
@@ -200,16 +217,6 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   The background style of the primary view controller.
 - [UISplitViewController.BackgroundStyle](uisplitviewcontroller/backgroundstyle.md)
   Styles that apply a visual effect to the background of a primary view controller.
-### Instance Properties
-- [var maximumInspectorColumnWidth: CGFloat](uisplitviewcontroller/maximuminspectorcolumnwidth.md)
-- [var minimumInspectorColumnWidth: CGFloat](uisplitviewcontroller/minimuminspectorcolumnwidth.md)
-- [var minimumSecondaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsecondarycolumnwidth.md)
-- [var preferredInspectorColumnWidth: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidth.md)
-- [var preferredInspectorColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidthfraction.md)
-- [var preferredSecondaryColumnWidth: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidth.md)
-- [var preferredSecondaryColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidthfraction.md)
-### Instance Methods
-- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
 
 ## Relationships
 

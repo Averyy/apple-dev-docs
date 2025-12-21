@@ -22,8 +22,8 @@ var storageMode: MTLStorageMode { get }
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 
@@ -42,7 +42,7 @@ The storage mode is set when you create the resource and cannot be changed.
 - [enum MTLStorageMode](mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
 - [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
-  The options you use to specify the hazard tracking mode.
+  Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 
 ---

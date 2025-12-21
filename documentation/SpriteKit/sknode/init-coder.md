@@ -17,7 +17,6 @@ Called when a node is initialized from an .sks file.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

@@ -16,7 +16,7 @@ optional func download(_ download: NSURLDownload, shouldDecodeSourceDataOfMIMETy
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to decode the file, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) to decode the file, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

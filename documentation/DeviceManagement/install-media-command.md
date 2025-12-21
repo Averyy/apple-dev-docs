@@ -18,7 +18,7 @@ Use Volume Purchase Program (VPP) Licensing to obtain books from the Book Store.
 
 Books that aren’t from the Book Store don’t require that the device has enabled App Store. These books don’t undergo backup, don’t sync with iTunes, and don’t remain on the device after removal of the MDM profile.
 
-If the book already exists, this command updates the book and makes it visable to the MDM server. The user doesn’t receive a prompt for a book installation or update unless they need to log in to complete a Book Store transaction.
+If the book already exists, this command updates the book and makes it visible to the MDM server. The user doesn’t receive a prompt for a book installation or update unless they need to log in to complete a Book Store transaction.
 
 If you install a book from the Book Store with the same `iTunesStoreID` as an existing managed book, the new book replaces the existing one.
 
@@ -36,9 +36,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response Enterprise Book
-
-##### Example Request and Response Vpp Book
+##### Example Request and Response
 
 ## Topics
 

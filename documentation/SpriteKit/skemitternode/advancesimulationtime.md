@@ -17,7 +17,6 @@ Advances the emitter particle simulation.
 ## Declaration
 
 ```swift
-@MainActor
 func advanceSimulationTime(_ sec: TimeInterval)
 ```
 

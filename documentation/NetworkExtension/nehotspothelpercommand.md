@@ -33,7 +33,7 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
 - [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
   The list of networks associated with the command.
 ### Networking on the hotspot network
-- [func bind(to command: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
+- [func bind(to: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [func createTCPConnection(NWEndpoint) -> NWTCPConnection](nehotspothelpercommand/createtcpconnection(_:).md)
   Create a new TCP connection over the network associated with the command.

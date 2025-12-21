@@ -72,7 +72,7 @@ A canvas doesn’t offer interactivity or accessibility for individual elements,
 
 ## See Also
 
-- [Add Rich Graphics to Your SwiftUI App](add_rich_graphics_to_your_swiftui_app.md)
+- [Add rich graphics to your SwiftUI app](add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.
 - [struct GraphicsContext](graphicscontext.md)
   An immediate mode drawing destination, and its current state.

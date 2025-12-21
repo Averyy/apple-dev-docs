@@ -21,13 +21,13 @@ optional func collectionView(_ collectionView: UICollectionView, canFocusItemAt 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item can receive be focused or [`false`](https://developer.apple.com/documentation/swift/false) if it can not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item can receive be focused or [`false`](https://developer.apple.com/documentation/Swift/false) if it can not.
 
 #### Discussion
 
 You can use this method, or a cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method, to control which items in the collection view can receive focus. The focus engine calls the cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method first, the default implementation of which defers to the collection view and this delegate method.
 
-If you do not implement this method, the ability to focus on items depends on whether the collection view’s items are selectable. When the items are selectable, they can also be focused as if this method had returned [`true`](https://developer.apple.com/documentation/swift/true); otherwise, they do not receive focus.
+If you do not implement this method, the ability to focus on items depends on whether the collection view’s items are selectable. When the items are selectable, they can also be focused as if this method had returned [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, they do not receive focus.
 
 ## Parameters
 

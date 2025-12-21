@@ -6,11 +6,11 @@
 The set of possible fullscreen states a webpage may be in.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,9 +26,9 @@ enum FullscreenState
 - [WebPage.FullscreenState.exitingFullscreen](webpage/fullscreenstate-swift.enum/exitingfullscreen.md)
   The page is exiting fullscreen.
 - [WebPage.FullscreenState.inFullscreen](webpage/fullscreenstate-swift.enum/infullscreen.md)
-  The page is currently in a fullscreen state.
+  The page is currently in fullscreen.
 - [WebPage.FullscreenState.notInFullscreen](webpage/fullscreenstate-swift.enum/notinfullscreen.md)
-  The page is not currently in a fullscreen state.
+  The page is not currently in fullscreen.
 
 ## Relationships
 

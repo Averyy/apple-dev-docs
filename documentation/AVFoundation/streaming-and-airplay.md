@@ -17,7 +17,7 @@ Stream content wirelessly to other devices using AirPlay, and handle requests in
   Configure your app for simple enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
 - [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
   Configure your app for flexible enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
-- [Integrating AirPlay for Long-Form Video Apps](integrating-airplay-for-long-form-video-apps.md)
+- [Integrating AirPlay for long-form video apps](integrating-airplay-for-long-form-video-apps.md)
   Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 ### Resource loading
 - [class AVAssetResourceLoader](avassetresourceloader.md)
@@ -34,7 +34,7 @@ Stream content wirelessly to other devices using AirPlay, and handle requests in
   An object for requesting data from a resource that an asset resource-loading request references.
 - [class AVAssetResourceLoadingContentInformationRequest](avassetresourceloadingcontentinformationrequest.md)
   A query for retrieving essential information about a resource that an asset resource-loading request references.
-### FairPlay Streaming
+### FairPlay streaming
 - [class AVContentKeySession](avcontentkeysession.md)
   An object that creates and tracks decryption keys for media data.
 - [protocol AVContentKeySessionDelegate](avcontentkeysessiondelegate.md)

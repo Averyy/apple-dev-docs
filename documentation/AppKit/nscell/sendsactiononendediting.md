@@ -17,13 +17,13 @@ var sendsActionOnEndEditing: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the control sends its action message when editing is complete. Editing is complete when the user does one of the following:
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the control sends its action message when editing is complete. Editing is complete when the user does one of the following:
 
 - Presses the Return key
 - Presses the Tab key to move out of the field
 - Clicks another text field
 
-When the value is [`false`](https://developer.apple.com/documentation/swift/false), the control sends its action message only when the user presses the Return key.
+When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the control sends its action message only when the user presses the Return key.
 
 ## See Also
 

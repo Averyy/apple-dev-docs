@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Initializes four positions of a vector with the provided values.
+Initialize a Core Image vector object with four values.
 
 **Availability**:
 - iOS 5.0+
@@ -19,31 +19,35 @@ Initializes four positions of a vector with the provided values.
 convenience init(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat)
 ```
 
+#### Return Value
+
+ An initialized [`CIVector`](civector.md) object of length 4.
+
 ## Parameters
 
-- `x`: The initialization value for the first position.
-- `y`: The initialization value for the second position.
-- `z`: The initialization value for the third position.
-- `w`: The initialization value for the fourth position.
+- `x`: The value for the first position in the vector.
+- `y`: The value for the second position in the vector.
+- `z`: The value for the third position in the vector.
+- `w`: The value for the forth position in the vector.
 
 ## See Also
 
 - [init(values: UnsafePointer<CGFloat>, count: Int)](civector/init(values:count:).md)
-  Initializes a vector with the provided values.
+  Initialize a Core Image vector object with the specified the values.
 - [convenience init(x: CGFloat)](civector/init(x:).md)
-  Initializes the first position of a vector with the provided values.
+  Initialize a Core Image vector object with one value.
 - [convenience init(x: CGFloat, y: CGFloat)](civector/init(x:y:).md)
-  Initializes the first two positions of a vector with the provided values.
+  Initialize a Core Image vector object with two values.
 - [convenience init(x: CGFloat, y: CGFloat, z: CGFloat)](civector/init(x:y:z:).md)
-  Initializes the first three positions of a vector with the provided values.
+  Initialize a Core Image vector object with three values.
 - [convenience init(string: String)](civector/init(string:).md)
-  Initializes a vector with values provided in a string representation.
+  Initialize a Core Image vector object with values provided in a string representation.
 - [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:).md)
-  Initializes a vector that is initialized with values provided by a `CGAffineTransform` structure.
+  Initialize a Core Image vector object with six values provided by a `CGAffineTransform` structure.
 - [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:).md)
-  Initializes a vector that is initialized with values provided by a `CGPoint` structure.
+  Initialize a Core Image vector object with two values provided by a `CGPoint` structure.
 - [convenience init(cgRect: CGRect)](civector/init(cgrect:).md)
-  Initializes a vector that is initialized with values provided by a `CGRect` structure.
+  Initialize a Core Image vector object with four values provided by a `CGRect` structure.
 
 
 ---

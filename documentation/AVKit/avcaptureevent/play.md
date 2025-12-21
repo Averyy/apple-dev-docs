@@ -3,11 +3,11 @@
 **Framework**: AVKit  
 **Kind**: method
 
-Plays the given capture sound through AirPods.
+Plays the specified capture sound through AirPods.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,15 +17,22 @@ func play(_ sound: AVCaptureEventSound) -> Bool
 
 #### Return Value
 
-A BOOL indicating whether a sound was played or not.
+A Boolean value that indicates whether the system played the sound.
 
 #### Discussion
 
-This method has no effect if `shouldPlaySound` is `NO` or if the event object’s lifetime exceeds 15 seconds.
+This method has no effect if [`shouldPlaySound`](avcaptureevent/shouldplaysound.md) is `false` or if the event object’s lifetime exceeds 15 seconds.
+
+> ❗ **Important**: To use AirPods Camera Control, it must be available in your country or region. AirPods Camera Control is not currently available in the European Union.
 
 ## Parameters
 
 - `sound`: The capture sound to play for this event.
+
+## See Also
+
+- [var shouldPlaySound: Bool](avcaptureevent/shouldplaysound.md)
+  A Boolean value that indicates whether you must play a sound manually.
 
 
 ---

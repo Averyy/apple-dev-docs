@@ -13,7 +13,7 @@ A Boolean value that indicates whether observer queries receive updates while ru
 
 #### Discussion
 
-If this key is [`true`](https://developer.apple.com/documentation/swift/true), your app can enable background delivery of [`HKObserverQuery`](https://developer.apple.com/documentation/HealthKit/HKObserverQuery) instances by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)) method. By default, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+If this key is [`true`](https://developer.apple.com/documentation/Swift/true), your app can enable background delivery of [`HKObserverQuery`](https://developer.apple.com/documentation/HealthKit/HKObserverQuery) instances by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)) method. By default, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

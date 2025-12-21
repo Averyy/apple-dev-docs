@@ -16,7 +16,7 @@ enum AccessBehavior
 
 ## Topics
 
-### Enumeration Cases
+### Working with defined behaviors
 - [NSPasteboard.AccessBehavior.alwaysAllow](nspasteboard/accessbehavior-swift.enum/alwaysallow.md)
   The system will automatically allow all pasteboard access, without notifying the user.  The app is listed in the corresponding System Settings pane.
 - [NSPasteboard.AccessBehavior.alwaysDeny](nspasteboard/accessbehavior-swift.enum/alwaysdeny.md)

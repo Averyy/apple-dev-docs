@@ -43,6 +43,11 @@ Constants of the [`UIStatusBarAnimation`](uistatusbaranimation.md) type are argu
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
+  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
+
 
 ---
 

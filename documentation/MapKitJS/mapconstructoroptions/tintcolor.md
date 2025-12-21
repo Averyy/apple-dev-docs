@@ -11,7 +11,7 @@ The CSS color that MapKit JS uses for the user interface controls on the map.
 ## Declaration
 
 ```swift
-attribute string tintColor;
+tintColor?: string;
 ```
 
 #### Discussion

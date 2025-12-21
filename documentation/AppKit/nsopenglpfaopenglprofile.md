@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: var
 
-The associated value can be any of the constants defined in [`OpenGL Profiles`](opengl-profiles.md). If it is present in the attribute arrays, only renderers capable of supporting an OpenGL context that provides the functionality promised by the profile are considered.
+A constant that represents an OpenGL profile.
 
 **Availability**:
 - macOS 10.7+
@@ -13,6 +13,10 @@ The associated value can be any of the constants defined in [`OpenGL Profiles`](
 ```swift
 var NSOpenGLPFAOpenGLProfile: Int { get }
 ```
+
+#### Discussion
+
+The associated value can be any of the constants defined in [`OpenGL Profiles`](opengl-profiles.md). If it is present in the attribute arrays, only renderers capable of supporting an OpenGL context that provides the functionality promised by the profile are considered.
 
 ## See Also
 

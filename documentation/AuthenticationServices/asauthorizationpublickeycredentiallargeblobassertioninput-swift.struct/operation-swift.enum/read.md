@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: case
 
+A value to represent the read operation.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -19,6 +21,7 @@ case read
 ## See Also
 
 - [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.write(_:)](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum/write(_:).md)
+  A value to represent the write operation.
 
 
 ---

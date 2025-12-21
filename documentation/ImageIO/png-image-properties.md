@@ -8,7 +8,7 @@ Metadata keys for the Portable Network Graphics (PNG) format.
 
 ### Dictionary
 - [let kCGImagePropertyPNGDictionary: CFString](kcgimagepropertypngdictionary.md)
-  A dictionary of key-value pairs for an image that uses Portable Network Graphics (PNG) format. See [`PNG Image Properties`](png-image-properties.md).
+  A dictionary of key-value pairs for an image that uses Portable Network Graphics (PNG) format.
 ### Properties
 - [let kCGImagePropertyPNGSource: CFString](kcgimagepropertypngsource.md)
 ### Image Properties

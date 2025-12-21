@@ -10,8 +10,8 @@ Get a list of price points for an auto-renewable subscription by territory.
 
 ## Mentions
 
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
+- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 
 ##### Discussion

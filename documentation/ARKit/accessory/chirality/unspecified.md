@@ -6,7 +6,7 @@
 Unspecified (non-handed accessory, not associated with a hand).
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

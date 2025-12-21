@@ -24,11 +24,6 @@ struct FrequentPushEnablementUpdates
   An iterator for accessing individual data entries from the series.
 - [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Element](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Type Aliases
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.AsyncIterator](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

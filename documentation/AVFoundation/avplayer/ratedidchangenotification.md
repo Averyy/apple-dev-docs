@@ -30,7 +30,7 @@ Observing this notification is similar to key-value observing the rate property,
 
 ## Topics
 
-### User Information Keys
+### User information keys
 - [class let rateDidChangeOriginatingParticipantKey: String](avplayer/ratedidchangeoriginatingparticipantkey.md)
   A key to retrieve the identifier of the participant that originates the rate change.
 - [class let rateDidChangeReasonKey: String](avplayer/ratedidchangereasonkey.md)

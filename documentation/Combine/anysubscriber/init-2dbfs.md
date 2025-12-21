@@ -26,6 +26,8 @@ init<S>(_ s: S) where Input == S.Input, Failure == S.Failure, S : Subscriber
 
 ## See Also
 
+- [init<S>(S)](anysubscriber/init(_:)-3t3eh.md)
+  Creates a type-erasing subscriber to wrap an existing subscriber.
 - [init(receiveSubscription: ((any Subscription) -> Void)?, receiveValue: ((Input) -> Subscribers.Demand)?, receiveCompletion: ((Subscribers.Completion<Failure>) -> Void)?)](anysubscriber/init(receivesubscription:receivevalue:receivecompletion:).md)
   Creates a type-erasing subscriber that executes the provided closures.
 

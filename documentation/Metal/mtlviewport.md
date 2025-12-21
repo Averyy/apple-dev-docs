@@ -21,12 +21,12 @@ struct MTLViewport
 
 ## Topics
 
-### Creating a Viewport
+### Creating a viewport
 - [init()](mtlviewport/init.md)
   Returns a new viewport.
 - [init(originX: Double, originY: Double, width: Double, height: Double, znear: Double, zfar: Double)](mtlviewport/init(originx:originy:width:height:znear:zfar:).md)
   Returns a new viewport of a specified size at a specified origin.
-### Specifying Viewport Boundaries
+### Specifying viewport boundaries
 - [var originX: Double](mtlviewport/originx.md)
   The x coordinate of the upper-left corner of the viewport.
 - [var originY: Double](mtlviewport/originy.md)

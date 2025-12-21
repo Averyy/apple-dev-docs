@@ -18,9 +18,6 @@ enum AdAttributionKitError
 
 ## Topics
 
-### Operators
-- [static func == (AdAttributionKitError, AdAttributionKitError) -> Bool](adattributionkiterror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [AdAttributionKitError.conversionTagNotSupported](adattributionkiterror/conversiontagnotsupported.md)
   The postback update failed due to an unsupported use of conversion tag
@@ -43,14 +40,6 @@ enum AdAttributionKitError
 ### Instance Properties
 - [var description: String](adattributionkiterror/description.md)
   A string that describes the error.
-- [var hashValue: Int](adattributionkiterror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](adattributionkiterror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](adattributionkiterror/equatable-implementations.md)
-- [Error Implementations](adattributionkiterror/error-implementations.md)
 
 ## Relationships
 

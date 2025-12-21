@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The number of `AudioBuffer`s in the `AudioBufferList` (`mNumberBuffers`).
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

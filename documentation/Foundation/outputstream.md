@@ -45,7 +45,7 @@ From the current write pointer, take up to the number of bytes specified in the 
 - If there was an error writing to the stream, return `-1`.
 - [`hasSpaceAvailable`](outputstream/hasspaceavailable.md)
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if the stream can currently accept more data, [`false`](https://developer.apple.com/documentation/swift/false) if it cannot. If you want to be semantically compatible with `NSOutputStream`, return [`true`](https://developer.apple.com/documentation/swift/true) if a write must be attempted to determine if space is available.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) if the stream can currently accept more data, [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot. If you want to be semantically compatible with `NSOutputStream`, return [`true`](https://developer.apple.com/documentation/Swift/true) if a write must be attempted to determine if space is available.
 
 ## Topics
 

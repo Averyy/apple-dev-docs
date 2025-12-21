@@ -5,11 +5,6 @@
 
 Sent when the contents of the assets library have changed from under the app that is using the data.
 
-**Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.0+
-
 ## Declaration
 
 ```swift

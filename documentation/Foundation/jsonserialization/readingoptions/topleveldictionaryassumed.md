@@ -48,16 +48,6 @@ When you use braces, you must use matched pairs. This means that with [`topLevel
   Specifies that reading serialized JSON data supports the JSON5 syntax.
 - [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
   A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
-- [static var mutableContainers: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutablecontainers.md)
-  Specifies that arrays and dictionaries in the returned object are mutable.
-- [static var mutableLeaves: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutableleaves.md)
-  Specifies that leaf strings in the JSON object graph are mutable.
-- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/fragmentsallowed.md)
-  Specifies that the parser allows top-level objects that aren’t arrays or dictionaries.
-- [static var json5Allowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/json5allowed.md)
-  Specifies that reading serialized JSON data supports the JSON5 syntax.
-- [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
-  A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
 
 
 ---

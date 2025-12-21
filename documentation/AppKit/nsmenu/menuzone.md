@@ -20,7 +20,7 @@ The zone from which `NSMenu` objects should be allocated.
 
 #### Discussion
 
-This is left in for compatibility and always returns doc://com.apple.documentation/documentation/foundation/1539819-nsdefaultmalloczone. It is not necessary to use this.
+This is left in for compatibility and always returns [`NSDefaultMallocZone`](https://developer.apple.com/documentation/Foundation/NSDefaultMallocZone). It is not necessary to use this.
 
 
 ---

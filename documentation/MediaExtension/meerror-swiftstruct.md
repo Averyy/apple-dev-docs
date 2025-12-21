@@ -46,19 +46,19 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 - [static var unsupportedFeature: MEError.Code](meerror-swift.struct/unsupportedfeature.md)
   An error code that indicates the extension doesn’t support an aspect of the media.
 ### Inspecting an error
-- [var code: Int { get }](../Foundation/NSError/code.md)
+- [var code: Int](../Foundation/NSError/code.md)
   The error code.
-- [var errorCode: Int { get }](../Foundation/CustomNSError/errorCode.md)
-- [var errorUserInfo: [String : Any] { get }](../Foundation/CustomNSError/errorUserInfo.md)
-- [var hashValue: Int { get }](../Swift/Hashable/hashValue.md)
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode.md)
+  The error code within the given domain.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo.md)
+  The user-info dictionary.
+- [var hashValue: Int](../Swift/Hashable/hashValue.md)
   The hash value.
-- [var localizedDescription: String](meerror-swift.struct/localizeddescription.md)
-  A string that contains the localized description of the error.
-- [var userInfo: [String : Any] { get }](../Foundation/NSError/userInfo.md)
+- [var userInfo: [String : Any]](../Foundation/NSError/userInfo.md)
   The user info dictionary.
 - [static func == (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/==(_:_:)-3axv1.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/!=(_:_:).md)
+- [static func != (Self, Self) -> Bool](../Swift/Equatable/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into hasher: inout Hasher)](../Swift/Hashable/hash(into:)-v52.md)
   Hashes the essential components of this value by feeding them into the given hasher.
@@ -66,12 +66,6 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
   An enumeration that models media extension error codes.
 ### Type Properties
 - [static var errorDomain: String](meerror-swift.struct/errordomain.md)
-  The domain of the error.
-### Default Implementations
-- [CustomNSError Implementations](meerror-swift.struct/customnserror-implementations.md)
-- [Equatable Implementations](meerror-swift.struct/equatable-implementations.md)
-- [Error Implementations](meerror-swift.struct/error-implementations.md)
-- [Hashable Implementations](meerror-swift.struct/hashable-implementations.md)
 
 ## Relationships
 

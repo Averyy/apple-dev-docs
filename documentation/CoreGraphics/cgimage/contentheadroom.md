@@ -20,6 +20,8 @@ var contentHeadroom: Float { get }
 
 ## See Also
 
+- [Enhancing high dynamic range image rendering](adopting-advancements-in-hdr-image-rendering.md)
+  Improve your app’s High Dynamic Range (HDR) image support with metadata.
 - [var calculatedContentHeadroom: Float](cgimage/calculatedcontentheadroom.md)
 - [var contentAverageLightLevel: Float](cgimage/contentaveragelightlevel.md)
 - [var calculatedContentAverageLightLevel: Float](cgimage/calculatedcontentaveragelightlevel.md)

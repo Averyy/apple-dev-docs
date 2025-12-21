@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+How often the event repeats
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

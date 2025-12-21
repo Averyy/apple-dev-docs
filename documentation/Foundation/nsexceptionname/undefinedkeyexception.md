@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Raised when a key value coding operation fails. `userInfo` keys are described in [`NSUndefinedKeyException userInfo Keys`](https://developer.apple.com/documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys)
+Raised when a key value coding operation fails.
 
 **Availability**:
 - iOS 2.0+
@@ -19,6 +19,10 @@ Raised when a key value coding operation fails. `userInfo` keys are described in
 ```swift
 static let undefinedKeyException: NSExceptionName
 ```
+
+#### Discussion
+
+`userInfo` keys are described in [`NSUndefinedKeyException userInfo Keys`](https://developer.apple.com/documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys).
 
 ## See Also
 

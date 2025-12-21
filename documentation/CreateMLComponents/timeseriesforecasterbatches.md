@@ -51,10 +51,10 @@ Note that 9 and 10 are never used as features because there would be no annotati
 
 ## Topics
 
-### Initializers
+### Creating a time series forecaster batch
 - [init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>, batchSize: Int, inputWindowSize: Int, forecastWindowSize: Int, shufflesBatches: Bool) throws](timeseriesforecasterbatches/init(features:annotations:batchsize:inputwindowsize:forecastwindowsize:shufflesbatches:).md)
   Creates a batch sequence.
-### Instance Properties
+### Inspecting a time series forecaster batch
 - [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
   The original annotations.
 - [let batchSize: Int](timeseriesforecasterbatches/batchsize.md)
@@ -67,14 +67,6 @@ Note that 9 and 10 are never used as features because there would be no annotati
   The input sample count.
 - [var shufflesBatches: Bool](timeseriesforecasterbatches/shufflesbatches.md)
   A Boolean value indicating whether to shuffle the batches.
-- [var underestimatedCount: Int](timeseriesforecasterbatches/underestimatedcount.md)
-  A value less than or equal to the number of elements in the sequence, calculated nondestructively.
-### Instance Methods
-- [func makeIterator() -> TimeSeriesForecasterBatches<Scalar>.Iterator](timeseriesforecasterbatches/makeiterator.md)
-  Returns an iterator over the elements of this sequence.
-### Type Aliases
-- [TimeSeriesForecasterBatches.Element](timeseriesforecasterbatches/element.md)
-  A type representing the sequence’s elements.
 ### Default Implementations
 - [Sequence Implementations](timeseriesforecasterbatches/sequence-implementations.md)
 

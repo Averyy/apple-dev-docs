@@ -6,7 +6,7 @@
 Returns a new effect with the given `HoverEffectPhaseOverride` applied to this effect.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

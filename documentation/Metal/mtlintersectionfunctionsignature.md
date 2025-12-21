@@ -25,10 +25,10 @@ For more information on declaring intersection functions in MSL, see [`Metal Sha
 
 ## Topics
 
-### Initializing the Intersection Function Signature
+### Initializing the intersection function signature
 - [init(rawValue: UInt)](mtlintersectionfunctionsignature/init(rawvalue:).md)
   Returns a new signature description from a specified raw value.
-### Specifying the Intersection Function Signature
+### Specifying the intersection function signature
 - [static var instancing: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/instancing.md)
   A flag indicating that function signature uses instancing.
 - [static var triangleData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/triangledata.md)

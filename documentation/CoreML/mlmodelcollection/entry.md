@@ -19,13 +19,13 @@ class Entry
 
 ## Topics
 
-### Identifying a Model
+### Identifying a model
 - [var modelIdentifier: String](mlmodelcollection/entry/modelidentifier.md)
   The name of the model, which is unique to the collection.
-### Locating a Compiled Model File
+### Locating a compiled model file
 - [var modelURL: URL](mlmodelcollection/entry/modelurl.md)
   The compiled model’s location on the device’s file system.
-### Comparing Model Collection Entries
+### Comparing model collection entries
 - [func isEqual(to: MLModelCollection.Entry) -> Bool](mlmodelcollection/entry/isequal(to:).md)
   Returns a Boolean value that indicates whether the two entries are equal.
 

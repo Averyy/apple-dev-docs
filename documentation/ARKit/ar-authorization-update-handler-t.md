@@ -6,7 +6,7 @@
 A handler for receiving updates in authorization status for a specific authorization type.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

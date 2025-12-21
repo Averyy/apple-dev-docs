@@ -19,7 +19,7 @@ optional func application(_ application: UIApplication, open url: URL, sourceApp
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate successfully handled the request or [`false`](https://developer.apple.com/documentation/swift/false) if the attempt to open the URL resource failed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the delegate successfully handled the request or [`false`](https://developer.apple.com/documentation/Swift/false) if the attempt to open the URL resource failed.
 
 #### Discussion
 
@@ -27,7 +27,7 @@ Your implementation of this method should open the specified URL and update its 
 
 If the URL refers to a file that was opened through a document interaction controller, the `annotation` parameter may contain additional data that the source app wanted to send along with the URL. The format of this data is defined by the app that sent it but the data must consist of objects that can be put into a property list.
 
-Files sent to your app through AirDrop or a document interaction controller are placed in the `Documents/Inbox` directory of your app’s home directory. Your app has permission to read and delete files in this directory but does not have permission to write to them. If you want to modify a file, you must move it to a different directory first. In addition, files in that directory are usually encrypted using data protection. If the file is protected and the user locks the device before this method is called, you will be unable to read the file’s contents immediately. In that case, you should save the URL and try to open the file later rather than return [`false`](https://developer.apple.com/documentation/swift/false) from this method. Use the [`isProtectedDataAvailable`](uiapplication/isprotecteddataavailable.md) property of the app object to determine if data protection is currently enabled.
+Files sent to your app through AirDrop or a document interaction controller are placed in the `Documents/Inbox` directory of your app’s home directory. Your app has permission to read and delete files in this directory but does not have permission to write to them. If you want to modify a file, you must move it to a different directory first. In addition, files in that directory are usually encrypted using data protection. If the file is protected and the user locks the device before this method is called, you will be unable to read the file’s contents immediately. In that case, you should save the URL and try to open the file later rather than return [`false`](https://developer.apple.com/documentation/Swift/false) from this method. Use the [`isProtectedDataAvailable`](uiapplication/isprotecteddataavailable.md) property of the app object to determine if data protection is currently enabled.
 
 There is no matching notification for this method.
 

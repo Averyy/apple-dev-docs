@@ -1,0 +1,41 @@
+# GeneratedContent.Kind.string(_:)
+
+**Framework**: Foundation Models  
+**Kind**: case
+
+Represents a string value.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+
+## Declaration
+
+```swift
+case string(String)
+```
+
+## Parameters
+
+- `value`: The string value.
+
+## See Also
+
+- [GeneratedContent.Kind.array(_:)](generatedcontent/kind-swift.enum/array(_:).md)
+  Represents an array of `GeneratedContent` elements.
+- [GeneratedContent.Kind.bool(_:)](generatedcontent/kind-swift.enum/bool(_:).md)
+  Represents a boolean value.
+- [GeneratedContent.Kind.null](generatedcontent/kind-swift.enum/null.md)
+  Represents a null value.
+- [GeneratedContent.Kind.number(_:)](generatedcontent/kind-swift.enum/number(_:).md)
+  Represents a numeric value.
+- [case structure(properties: [String : GeneratedContent], orderedKeys: [String])](generatedcontent/kind-swift.enum/structure(properties:orderedkeys:).md)
+  Represents a structured object with key-value pairs.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/generatedcontent/kind-swift.enum/string(_:))*

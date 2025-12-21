@@ -23,7 +23,7 @@ var zeroHistogram: Bool { get set }
 
 Determines whether the memory region in which the histogram results are to be written in the histogram buffer are to be zero-initialized or not.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

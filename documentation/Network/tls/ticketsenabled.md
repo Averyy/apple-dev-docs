@@ -3,20 +3,26 @@
 **Framework**: Network  
 **Kind**: method
 
+Enable TLS session ticket support.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func ticketsEnabled(_ val: Bool) -> TLS
+func ticketsEnabled(_ enabled: Bool) -> TLS
 ```
+
+## Parameters
+
+- `enabled`: True if enabled, false otherwise.
 
 
 ---

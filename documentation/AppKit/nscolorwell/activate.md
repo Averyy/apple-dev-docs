@@ -17,7 +17,7 @@ func activate(_ exclusive: Bool)
 
 #### Discussion
 
-When you call this method, the color well displays the standard color panel and sets the panel’s current color to the value in the color well. When someone changes the color in the color panel, the color well updates its selected color to match. If the color well’s [`isBordered`](nscolorwell/isbordered.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the color well highlights that border while it’s active.
+When you call this method, the color well displays the standard color panel and sets the panel’s current color to the value in the color well. When someone changes the color in the color panel, the color well updates its selected color to match. If the color well’s [`isBordered`](nscolorwell/isbordered.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the color well highlights that border while it’s active.
 
 ## Parameters
 

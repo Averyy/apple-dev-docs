@@ -5,9 +5,9 @@
 Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -23,6 +23,8 @@ Run this sample code on a device that supports Spatial Audio capture, like an iP
   A capture output that records video and provides access to video frames for processing.
 - [class AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)
   A capture output that records audio and provides access to audio sample buffers as they are recorded.
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+  An interface for generating a spatial audio timed metadata sample.
 
 
 ---

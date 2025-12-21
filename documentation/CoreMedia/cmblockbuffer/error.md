@@ -53,7 +53,7 @@ struct Error
 - [CMBlockBuffer.Flags](cmblockbuffer/flags.md)
   A structure that defines feature and control flags.
 - [CMBlockBuffer.Slice](cmblockbuffer/slice.md)
-  A structure that defines a slice of a block buffer.
+  A slice of a `CMBlockBuffer` instance.
 
 
 ---

@@ -10,7 +10,7 @@ Disable Remote Desktop on a device.
 
 #### Discussion
 
-This command prevents any further event processing. It removes any `PostEvent` Transparency Consent and Control (TCC) ability, unless the device already has an installed TCC configuration profile with that ability enabled.
+This command disables Remote Desktop on the device, and prevents any further remote event processing. It removes any `PostEvent` Transparency Consent and Control (TCC) ability, unless the device already has an installed TCC configuration profile with that ability enabled.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 

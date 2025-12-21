@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The key path to the field for comparison.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,10 @@
 ```swift
 var keyPath: PartialKeyPath<Compared>? { get }
 ```
+
+#### Discussion
+
+This value is `nil` when `Compared` is not an NSObject
 
 
 ---

@@ -10,7 +10,7 @@ An environment variable that indicates whether the background of a widget appear
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 8.0+
 
 ## Declaration

@@ -5,11 +5,6 @@
 
 Writes given image data and metadata to the Photos Album.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

@@ -19,17 +19,6 @@ The blue color channel is enabled.
 static var blue: MTLColorWriteMask { get }
 ```
 
-## See Also
-
-- [static var red: MTLColorWriteMask](mtlcolorwritemask/red.md)
-  The red color channel is enabled.
-- [static var green: MTLColorWriteMask](mtlcolorwritemask/green.md)
-  The green color channel is enabled.
-- [static var alpha: MTLColorWriteMask](mtlcolorwritemask/alpha.md)
-  The alpha color channel is enabled.
-- [static var all: MTLColorWriteMask](mtlcolorwritemask/all.md)
-  All color channels are enabled.
-
 
 ---
 

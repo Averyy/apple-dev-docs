@@ -29,11 +29,6 @@ struct PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator> where P
   The estimator.
 - [var preprocessor: Preprocessor](preprocessingsupervisedtemporalestimator/preprocessor.md)
   The preprocessing transformer.
-### Encoding and decoding
-- [func encode(PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingsupervisedtemporalestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedtemporalestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 ### Preprocesing and Fitting
 - [func preprocessed<InputSequence, FeatureSequence>(from: InputSequence, eventHandler: EventHandler?) async throws -> [AnnotatedFeature<PreprocessedFeatureSequence<Preprocessor.Output>, PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator>.Annotation>]](preprocessingsupervisedtemporalestimator/preprocessed(from:eventhandler:).md)
   Preprocesses a sequence of examples.
@@ -53,10 +48,8 @@ struct PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator> where P
   The intermediate type.
 - [PreprocessingSupervisedTemporalEstimator.Output](preprocessingsupervisedtemporalestimator/output.md)
   The output type.
-- [PreprocessingSupervisedTemporalEstimator.Transformer](preprocessingsupervisedtemporalestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTemporalEstimator Implementations](preprocessingsupervisedtemporalestimator/supervisedtemporalestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

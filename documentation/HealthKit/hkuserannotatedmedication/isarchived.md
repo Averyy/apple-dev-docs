@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+A Boolean value that indicates whether a medication is archived.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,7 @@ var isArchived: Bool { get }
 
 #### Discussion
 
-True if a user moves a medication to the archived section in the medication tracking experience. False if a medication is not in the archived section.
+The value is `true` if a person moves a medication to the archived section in the Health App. The value is `false` if a medication isn’t in the archived section.
 
 
 ---

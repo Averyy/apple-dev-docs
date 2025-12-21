@@ -22,7 +22,7 @@ func makeLibrary(source: String, options: MTLCompileOptions?) async throws -> an
 
 ## Mentions
 
-- [Minimizing the Binary Size of a Shader Library](minimizing-the-binary-size-of-a-shader-library.md)
+- [Minimizing the binary size of a shader library](minimizing-the-binary-size-of-a-shader-library.md)
 
 #### Discussion
 

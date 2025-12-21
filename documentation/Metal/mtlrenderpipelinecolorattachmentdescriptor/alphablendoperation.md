@@ -29,6 +29,8 @@ The default value is [`MTLBlendOperation.add`](mtlblendoperation/add.md).
   A Boolean value that determines whether blending is enabled.
 - [var rgbBlendOperation: MTLBlendOperation](mtlrenderpipelinecolorattachmentdescriptor/rgbblendoperation.md)
   The blend operation assigned for the RGB data.
+- [enum MTLBlendOperation](mtlblendoperation.md)
+  For every pixel, `MTLBlendOperation` determines how to combine and weight the source fragment values with the destination values. Some blend operations multiply the source values by a source blend factor (SBF), multiply the destination values by a destination blend factor (DBF), and then combine the results using addition or subtraction. Other blend operations use either a minimum or maximum function to determine the result.
 
 
 ---

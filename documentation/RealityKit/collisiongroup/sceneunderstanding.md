@@ -10,7 +10,7 @@ The default collision group for scene-understanding meshes.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

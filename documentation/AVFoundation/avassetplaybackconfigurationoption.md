@@ -22,21 +22,20 @@ struct AVAssetPlaybackConfigurationOption
 
 ## Topics
 
-### Configuration Options
+### Configuration options
 - [static let stereoVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereovideo.md)
   An option that indicates whether the asset can render as stereo video.
 - [static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereomultiviewvideo.md)
   An option that indicates whether the asset is in a multiview compression format and can render as stereo video.
 - [static let spatialVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/spatialvideo.md)
   An option that indicates whether the asset can render as spatial video.
-### Initializers
-- [init(rawValue: String)](avassetplaybackconfigurationoption/init(rawvalue:).md)
-  Creates a configuration option from its raw string value.
-### Type Properties
 - [static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/appleimmersivevideo.md)
   Indicates whether the asset is Apple Immersive Video.
 - [static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/nonrectilinearprojection.md)
   Indicates whether the asset calls for the use of a non-rectilinear projection for rendering video.
+### Initializers
+- [init(rawValue: String)](avassetplaybackconfigurationoption/init(rawvalue:).md)
+  Creates a configuration option from its raw string value.
 
 ## Relationships
 

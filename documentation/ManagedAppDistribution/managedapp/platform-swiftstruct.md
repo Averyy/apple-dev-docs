@@ -18,17 +18,6 @@ struct Platform
 
 ## Topics
 
-### Operators
-- [static func == (ManagedApp.Platform, ManagedApp.Platform) -> Bool](managedapp/platform-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var description: String](managedapp/platform-swift.struct/description.md)
-  A textual representation of this instance.
-- [var hashValue: Int](managedapp/platform-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](managedapp/platform-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static var iOS: ManagedApp.Platform](managedapp/platform-swift.struct/ios.md)
   iOS is a supported platform.
@@ -36,8 +25,6 @@ struct Platform
   macOS is a supported platform.
 - [static var visionOS: ManagedApp.Platform](managedapp/platform-swift.struct/visionos.md)
   visionOS is a supported platform.
-### Default Implementations
-- [Equatable Implementations](managedapp/platform-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

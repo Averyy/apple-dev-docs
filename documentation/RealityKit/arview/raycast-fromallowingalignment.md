@@ -9,8 +9,6 @@ Performs a ray cast, where a ray is cast into the scene from the center of the c
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -18,10 +16,6 @@ Performs a ray cast, where a ray is cast into the scene from the center of the c
 @MainActor
 @preconcurrency func raycast(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> [ARRaycastResult]
 ```
-
-## Mentions
-
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 
 #### Return Value
 

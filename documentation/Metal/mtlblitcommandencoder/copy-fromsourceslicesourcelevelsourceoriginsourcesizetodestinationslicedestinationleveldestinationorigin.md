@@ -22,7 +22,7 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 
 ## Mentions
 
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
 
 #### Discussion
 
@@ -48,6 +48,8 @@ For textures that use a PVRTC pixel format, you can use this method to copy the 
   Encodes a command that copies data from one texture to another.
 - [func copy(from: any MTLTexture, sourceSlice: Int, sourceLevel: Int, to: any MTLTexture, destinationSlice: Int, destinationLevel: Int, sliceCount: Int, levelCount: Int)](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:to:destinationslice:destinationlevel:slicecount:levelcount:).md)
   Encodes a command that copies slices of a texture to another texture’s slices.
+- [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:to:destinationorigin:destinationdimensions:).md)
+  Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
 
 
 ---

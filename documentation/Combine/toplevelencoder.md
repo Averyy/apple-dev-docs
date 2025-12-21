@@ -22,7 +22,7 @@ protocol TopLevelEncoder
 
 ## Topics
 
-### Declaring Encoder Topography
+### Declaring supporting types
 - [associatedtype Output](toplevelencoder/output.md)
   The type this encoder produces.
 ### Encoding

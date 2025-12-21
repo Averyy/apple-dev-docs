@@ -16,7 +16,7 @@ optional func render(withCGLContext cgl_ctx: CGLContextObj!, forBounds bounds: N
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; [`false`](https://developer.apple.com/documentation/swift/false) on failure or if the image provider doesn’t support GPU rendering.
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; [`false`](https://developer.apple.com/documentation/Swift/false) on failure or if the image provider doesn’t support GPU rendering.
 
 #### Discussion
 

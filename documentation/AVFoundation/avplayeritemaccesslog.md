@@ -26,7 +26,7 @@ An `AVPlayerItemAccessLog` object accumulates key metrics about network playback
 
 ## Topics
 
-### Accessing Log Data
+### Accessing log data
 - [var events: [AVPlayerItemAccessLogEvent]](avplayeritemaccesslog/events.md)
   A chronologically ordered array of player item access log events.
 - [func extendedLogData() -> Data?](avplayeritemaccesslog/extendedlogdata.md)

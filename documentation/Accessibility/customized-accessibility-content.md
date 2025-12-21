@@ -23,8 +23,6 @@ For example, in a photography app, you may want the user to know the date, time,
 
 - [Audio graphs](audio-graphs.md)
   Define an accessible representation of your chart for VoiceOver to generate an audio graph.
-- [Braille displays](braille-displays.md)
-  Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
 - [Hearing device support](hearing-device-support.md)
   Access information about paired hearing aid devices and streaming status.
 - [func AXNameFromColor(CGColor) -> String](axnamefromcolor(_:).md)

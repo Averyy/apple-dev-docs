@@ -20,7 +20,7 @@ object BetaAppReviewDetail
 - [object BetaAppReviewDetail.Attributes](betaappreviewdetail/attributes-data.dictionary.md)
   Attributes that describe a Beta App Review Details resource.
 - [object BetaAppReviewDetail.Relationships](betaappreviewdetail/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

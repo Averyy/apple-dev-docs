@@ -29,6 +29,8 @@ On macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 ### Samples
 - [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
+- [Connecting a network driver](connecting-a-network-driver.md)
+  Create an Ethernet driver that interfaces with the system’s network protocol stack.
 ### Device Interface
 - [Creating Custom PCIe Drivers for Thunderbolt Devices](creating-custom-pcie-drivers-for-thunderbolt-devices.md)
   Create a DriverKit extension to support your Thunderbolt device’s custom features.

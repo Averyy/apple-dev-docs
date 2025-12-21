@@ -23,6 +23,7 @@ func equipment<E>(of type: E.Type, matching equipmentIDs: some Sequence<Equipmen
 - [func equipmentIDs(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-f1sp.md)
 - [func state(matching: EquipmentIdentifier) -> (any EquipmentState)?](tablesnapshot/state(matching:)-u35k.md)
 - [func entity(matching: EquipmentIdentifier) -> Entity?](tablesnapshot/entity(matching:)-vb9w.md)
+- [func entity(forEquipment: some EntityEquipment) -> Entity?](tablesnapshot/entity(forequipment:).md)
 
 
 ---

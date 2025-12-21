@@ -6,7 +6,7 @@
 Place the video over the provided scene.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

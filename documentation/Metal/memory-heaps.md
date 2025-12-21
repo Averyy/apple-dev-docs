@@ -1,4 +1,4 @@
-# Memory Heaps
+# Memory heaps
 
 **Framework**: Metal
 
@@ -14,12 +14,12 @@ Create a heap by calling an [`MTLDevice`](mtldevice.md) instance’s [`makeHeap(
 
 ## Topics
 
-### Resource Memory Allocation and Management
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [protocol MTLHeap](mtlheap.md)
   A memory pool from which you can suballocate resources.
@@ -32,16 +32,16 @@ Create a heap by calling an [`MTLDevice`](mtldevice.md) instance’s [`makeHeap(
 
 ## See Also
 
-- [Resource Fundamentals](resource-fundamentals.md)
+- [Resource fundamentals](resource-fundamentals.md)
   Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
 - [Buffers](buffers.md)
   Create and manage untyped data your app uses to exchange information with its shader functions.
 - [Textures](textures.md)
   Create and manage typed data your app uses to exchange information with its shader functions.
-- [Resource Loading](resource-loading.md)
+- [Resource loading](resource-loading.md)
   Load assets in your games and apps quickly by running a dedicated input/output queue alongside your GPU tasks.
-- [Resource Synchronization](resource-synchronization.md)
-  Prevent multiple commands that can access the same resources simultaneously by coordinating those accesses with barriers, fences, or events.
+- [Resource synchronization](resource-synchronization.md)
+  Prevent multiple commands that can access the same resources simultaneously by coordinating those reads and writes with barriers, fences, or events.
 
 
 ---

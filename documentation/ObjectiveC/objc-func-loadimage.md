@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias objc_func_loadImage = (OpaquePointer) -> Void
+typealias objc_func_loadImage = (UnsafePointer<mach_header>) -> Void
 ```
 
 ## See Also

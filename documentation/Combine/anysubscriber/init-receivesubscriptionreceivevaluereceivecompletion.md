@@ -30,6 +30,8 @@ init(receiveSubscription: ((any Subscription) -> Void)? = nil, receiveValue: ((I
 
 - [init<S>(S)](anysubscriber/init(_:)-2dbfs.md)
   Creates a type-erasing subscriber to wrap an existing subscriber.
+- [init<S>(S)](anysubscriber/init(_:)-3t3eh.md)
+  Creates a type-erasing subscriber to wrap an existing subscriber.
 
 
 ---

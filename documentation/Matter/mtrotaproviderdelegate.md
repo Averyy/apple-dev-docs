@@ -32,6 +32,8 @@ protocol MTROTAProviderDelegate : NSObjectProtocol
 - [func handleNotifyUpdateApplied(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completionHandler: ((any Error)?) -> Void)](mtrotaproviderdelegate/handlenotifyupdateapplied(fornodeid:controller:params:completionhandler:).md)
 - [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterQueryImageParams, completion: (MTROTASoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handlequeryimage(fornodeid:controller:params:completion:).md)
 - [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterQueryImageParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handlequeryimage(fornodeid:controller:params:completionhandler:).md)
+- [func handleBDXTransferSessionEnd(forNodeID: NSNumber, controller: MTRDeviceController, metrics: MTRMetrics, error: (any Error)?)](mtrotaproviderdelegate/handlebdxtransfersessionend(fornodeid:controller:metrics:error:).md)
+  Notify the delegate when a BDX Session ends for some node.  The controller identifies the fabric the node is on, and the nodeID identifies the node within that fabric.
 
 ## Relationships
 

@@ -34,10 +34,10 @@ init(bytesNoCopy bytes: UnsafeRawPointer, shape: [Int], strides: [Int], dealloca
   Creates a shaped array type from an array of values.
 - [init(repeating: Self.Scalar, shape: [Int])](mlshapedarrayprotocol/init(repeating:shape:).md)
   Creates a shaped array type that initializes every element to the same value.
-- [init(identityMatrixOfSize: Int)](mlshapedarrayprotocol/init(identitymatrixofsize:)-77y0e.md)
-  Creates a shaped array type that’s an identity matrix of integers.
-- [init(randomScalarsIn: Range<Self.Scalar>, shape: [Int])](mlshapedarrayprotocol/init(randomscalarsin:shape:)-99fnn.md)
-  Creates a shaped array type that initializes the elements to random integer values within a range.
+- [init(identityMatrixOfSize:)](mlshapedarrayprotocol/init(identitymatrixofsize:).md)
+  Initialize as an identity matrix.
+- [init(randomScalarsIn:shape:)](mlshapedarrayprotocol/init(randomscalarsin:shape:).md)
+  Initialize the shaped array with random scalar values.
 - [init(bytesNoCopy: UnsafeRawPointer, shape: [Int], deallocator: Data.Deallocator)](mlshapedarrayprotocol/init(bytesnocopy:shape:deallocator:).md)
   Creates a shaped array type from a data pointer.
 - [init(unsafeUninitializedShape: [Int], initializingWith: (inout UnsafeMutableBufferPointer<Self.Scalar>, [Int]) throws -> Void) rethrows](mlshapedarrayprotocol/init(unsafeuninitializedshape:initializingwith:).md)

@@ -33,8 +33,9 @@ enum UIContainerBackgroundStyle
 
 ## See Also
 
-- [UIViewController.ViewLoading](uiviewcontroller/viewloading.md)
-  A property wrapper that loads the view controller’s view before accessing the property.
+- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
+- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
+- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
 
 
 ---

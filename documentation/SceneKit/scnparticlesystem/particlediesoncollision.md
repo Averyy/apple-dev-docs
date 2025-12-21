@@ -24,7 +24,7 @@ var particleDiesOnCollision: Bool { get set }
 
 This property has no effect if the [`colliderNodes`](scnparticlesystem/collidernodes.md) array is empty or contains no nodes with attached geometry.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that particles remain in the scene after a collision. The [`particleBounce`](scnparticlesystem/particlebounce.md) and [`particleFriction`](scnparticlesystem/particlefriction.md) properties determine whether and how particles bounce or slide after colliding with a geometry.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that particles remain in the scene after a collision. The [`particleBounce`](scnparticlesystem/particlebounce.md) and [`particleFriction`](scnparticlesystem/particlefriction.md) properties determine whether and how particles bounce or slide after colliding with a geometry.
 
 ## See Also
 

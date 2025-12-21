@@ -17,7 +17,7 @@ var peerGroupID: UInt64 { get }
 
 ## Mentions
 
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
 
 #### Discussion
 

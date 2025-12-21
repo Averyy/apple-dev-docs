@@ -29,12 +29,8 @@ struct Forecast<Element> where Element : Decodable, Element : Encodable, Element
 ### Creating the forecast
 - [init(from: any Decoder) throws](forecast/init(from:)-390k1.md)
 - [init(from: any Decoder) throws](forecast/init(from:)-4wobg.md)
-- [init(from: any Decoder) throws](forecast/init(from:)-51k1n.md)
-  Creates a new instance by decoding from the given decoder.
 ### Serializing objects
 - [func encode(to: any Encoder) throws](forecast/encode(to:)-5zuqd.md)
-- [func encode(to: any Encoder) throws](forecast/encode(to:)-6lmvg.md)
-  Encodes this value into the given encoder.
 - [func encode(to: any Encoder) throws](forecast/encode(to:)-fbco.md)
 ### Getting the properties
 - [var endIndex: Forecast<Element>.Index](forecast/endindex.md)
@@ -53,23 +49,7 @@ struct Forecast<Element> where Element : Decodable, Element : Encodable, Element
 - [typealias Index](forecast/index.md)
   The forecast index.
 ### Comparing forecasts
-- [static func == (Forecast<MinuteWeather>, Forecast<MinuteWeather>) -> Bool](forecast/==(_:_:)-9xlo4.md)
-### Operators
-- [static func == (Forecast<Element>, Forecast<Element>) -> Bool](forecast/==(_:_:)-n0ps.md)
-  Returns a Boolean value indicating whether two values are equal.
-### Type Aliases
-- [typealias Indices](forecast/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [typealias Iterator](forecast/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [typealias SubSequence](forecast/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](forecast/bidirectionalcollection-implementations.md)
-- [Collection Implementations](forecast/collection-implementations.md)
-- [Equatable Implementations](forecast/equatable-implementations.md)
-- [RandomAccessCollection Implementations](forecast/randomaccesscollection-implementations.md)
-- [Sequence Implementations](forecast/sequence-implementations.md)
+- [static func == (Forecast<MinuteWeather>, Forecast<MinuteWeather>) -> Bool](forecast/==(_:_:).md)
 
 ## Relationships
 

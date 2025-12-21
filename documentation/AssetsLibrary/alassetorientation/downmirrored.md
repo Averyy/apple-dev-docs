@@ -5,11 +5,6 @@
 
 Indicates that the picture has been rotated through 180 degrees with respect to up orientation, and then flipped horizontally.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

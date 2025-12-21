@@ -33,26 +33,6 @@ struct Transformer
 ### Performing the transformation
 - [func applied(to: Element, eventHandler: EventHandler?) -> Element](minmaxscaler/transformer/applied(to:eventhandler:).md)
   Scales the input values so that they all lie in the closed range `[minimum, maximum]`.
-### Operators
-- [static func == (MinMaxScaler<Element>.Transformer, MinMaxScaler<Element>.Transformer) -> Bool](minmaxscaler/transformer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](minmaxscaler/transformer/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](minmaxscaler/transformer/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MinMaxScaler.Transformer.Input](minmaxscaler/transformer/input.md)
-  The input type.
-- [MinMaxScaler.Transformer.Output](minmaxscaler/transformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](minmaxscaler/transformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](minmaxscaler/transformer/decodable-implementations.md)
-- [Encodable Implementations](minmaxscaler/transformer/encodable-implementations.md)
-- [Equatable Implementations](minmaxscaler/transformer/equatable-implementations.md)
-- [Transformer Implementations](minmaxscaler/transformer/transformer-implementations.md)
 
 ## Relationships
 

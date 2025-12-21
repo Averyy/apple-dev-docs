@@ -21,7 +21,7 @@ var isEditing: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the user begins editing text in this text field, and it is set to [`false`](https://developer.apple.com/documentation/swift/false) again when editing ends. The text field notifies its delegate when editing begins and ends.
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when the user begins editing text in this text field, and it is set to [`false`](https://developer.apple.com/documentation/Swift/false) again when editing ends. The text field notifies its delegate when editing begins and ends.
 
 ## See Also
 

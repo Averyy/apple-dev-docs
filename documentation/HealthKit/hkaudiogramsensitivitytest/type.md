@@ -17,6 +17,10 @@
 var type: HKAudiogramConductionType { get }
 ```
 
+#### Discussion
+
+The conduction type
+
 
 ---
 

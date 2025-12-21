@@ -17,7 +17,7 @@ var isLoaded: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), column 0 is loaded.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), column 0 is loaded.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var isDecelerating: Bool { get }
 
 #### Discussion
 
-The returned value is [`true`](https://developer.apple.com/documentation/swift/true) if user isn’t dragging the content but scrolling is still occurring.
+The returned value is [`true`](https://developer.apple.com/documentation/Swift/true) if user isn’t dragging the content but scrolling is still occurring.
 
 ## See Also
 

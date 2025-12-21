@@ -22,7 +22,7 @@ struct AVAssetReferenceRestrictions
 
 ## Topics
 
-### Reference Restrictions
+### Reference restrictions
 - [static var forbidAll: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidall.md)
   The asset can only reference media stored within its container file.
 - [static var forbidRemoteReferenceToLocal: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidremotereferencetolocal.md)

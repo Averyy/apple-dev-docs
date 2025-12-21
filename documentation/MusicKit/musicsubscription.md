@@ -25,23 +25,13 @@ struct MusicSubscription
 ### Structures
 - [MusicSubscription.Updates](musicsubscription/updates.md)
   An asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
-### Operators
-- [static func == (MusicSubscription, MusicSubscription) -> Bool](musicsubscription/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let canBecomeSubscriber: Bool](musicsubscription/canbecomesubscriber.md)
   A capability that allows your app to present subscription offers for Apple Music.
 - [let canPlayCatalogContent: Bool](musicsubscription/canplaycatalogcontent.md)
   A capability that allows your app to play subscription content using a music player.
-- [var description: String](musicsubscription/description.md)
-  A textual representation of this instance.
 - [let hasCloudLibraryEnabled: Bool](musicsubscription/hascloudlibraryenabled.md)
   A capability that allows your app to perform modifications to the user’s iCloud Music Library.
-- [var hashValue: Int](musicsubscription/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicsubscription/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static var current: MusicSubscription](musicsubscription/current.md)
   The current state of the user’s subscription to Apple Music.
@@ -50,8 +40,6 @@ struct MusicSubscription
 ### Enumerations
 - [MusicSubscription.Error](musicsubscription/error.md)
   An error that MusicKit can throw upon requesting the current music subscription of the user.
-### Default Implementations
-- [Equatable Implementations](musicsubscription/equatable-implementations.md)
 
 ## Relationships
 

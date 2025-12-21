@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-A flag that indicates whether the grid is ordered row major ([`true`](https://developer.apple.com/documentation/swift/true)), or column major ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+A flag that indicates whether the grid is in row major or column major order.
 
 **Availability**:
 - macOS 10.5+
@@ -13,6 +13,10 @@ A flag that indicates whether the grid is ordered row major ([`true`](https://de
 ```swift
 static let orderedByRow: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+The value is an `NSNumber` as `boolValue`. A value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates row major order, and [`false`](https://developer.apple.com/documentation/Swift/false) indicates column major order.
 
 ## See Also
 

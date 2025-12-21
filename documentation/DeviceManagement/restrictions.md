@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure restrictions on a device.
+The payload that configures restrictions on a device.
 
 **Availability**:
 - iOS 4.0+

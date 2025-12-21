@@ -19,11 +19,11 @@ var displaysSearchBarInNavigationBar: Bool { get set }
 
 #### Discussion
 
-When you return [`true`](https://developer.apple.com/documentation/swift/true) to display the search bar in a navigation bar, the system uses the search display controller’s [`navigationItem`](uisearchdisplaycontroller/navigationitem.md) property and ignores the navigation item, if set, of the [`searchContentsController`](uisearchdisplaycontroller/searchcontentscontroller.md) view controller. The displayed search field occupies as much width in the navigation bar as possible.
+When you return [`true`](https://developer.apple.com/documentation/Swift/true) to display the search bar in a navigation bar, the system uses the search display controller’s [`navigationItem`](uisearchdisplaycontroller/navigationitem.md) property and ignores the navigation item, if set, of the [`searchContentsController`](uisearchdisplaycontroller/searchcontentscontroller.md) view controller. The displayed search field occupies as much width in the navigation bar as possible.
 
 A search bar displayed in a navigation bar cannot have a scope bar.
 
-> ❗ **Important**:  The system raises an exception if you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in a search bar that is displayed in a navigation bar.
+> ❗ **Important**:  The system raises an exception if you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) in a search bar that is displayed in a navigation bar.
 
 ## See Also
 

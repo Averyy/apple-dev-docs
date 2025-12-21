@@ -13,7 +13,6 @@ The base class for fused convolution-normalization and fully connected-normaliza
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

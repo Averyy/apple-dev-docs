@@ -6,8 +6,8 @@
 An individual prediction of anticipated cellular network availability.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -40,21 +40,6 @@ Your app receives arrays of curent predictions from the [`servicePredictions`](s
   A type that represents the confidence in various aspects of the prediction.
 - [ServicePrediction.Confidence](serviceprediction/confidence.md)
   An enumeration of levels of confidence for a prediction or one of its properties.
-### Encoding and decoding
-- [init(from: any Decoder) throws](serviceprediction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](serviceprediction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](serviceprediction/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](serviceprediction/hashvalue.md)
-  The hash value.
-### Comparing service predictions
-- [static func == (ServicePrediction, ServicePrediction) -> Bool](serviceprediction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](serviceprediction/equatable-implementations.md)
 
 ## Relationships
 

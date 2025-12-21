@@ -50,8 +50,6 @@ After you add the `.license` and `.entitlements` files, you can implement and te
 
 - [Accessing the main camera](accessing-the-main-camera.md)
   Add camera-based features to enterprise apps.
-- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
-  Show video from devices connected with the Developer Strap in your visionOS app.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 

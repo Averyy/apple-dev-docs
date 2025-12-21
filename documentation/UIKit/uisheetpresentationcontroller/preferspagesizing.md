@@ -20,9 +20,9 @@ var prefersPageSizing: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). The default value indicates the sheet uses [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) behavior, in which the sheet width follows the readable width.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). The default value indicates the sheet uses [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) behavior, in which the sheet width follows the readable width.
 
-When the value is set to [`false`](https://developer.apple.com/documentation/swift/false), the sheet uses [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md) behavior, in which the sheet size follows the presented view controller’s [`preferredContentSize`](uiviewcontroller/preferredcontentsize.md).
+When the value is set to [`false`](https://developer.apple.com/documentation/Swift/false), the sheet uses [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md) behavior, in which the sheet size follows the presented view controller’s [`preferredContentSize`](uiviewcontroller/preferredcontentsize.md).
 
 ## See Also
 

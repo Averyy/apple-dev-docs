@@ -29,14 +29,14 @@ Measure, investigate, and address the use of system resources and issues impacti
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
 - [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
-  Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
+  Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 - [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
   Create a more responsive experience with your app by minimizing time spent in startup.
 - [Reducing terminations in your app](reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 ### Processor usage
+- [Addressing CPU bottlenecks](addressing-cpu-bottlenecks.md)
+  Locate and fix pipeline stalls, cache misses, and other performance issues.
 - [Analyzing CPU usage with the Processor Trace instrument](analyzing-cpu-usage-with-processor-trace.md)
   Identify code where your app uses the CPU inefficiently.
 ### Memory and size
@@ -54,6 +54,13 @@ Measure, investigate, and address the use of system resources and issues impacti
   Increase the available use time for your app on a single battery charge by reducing your appʼs power consumption.
 - [Measuring your app’s power use with Power Profiler](measuring-your-app-s-power-use-with-power-profiler.md)
   Profile your app’s power impact whether or not your device is connected to Xcode.
+- [Reducing your app’s battery use](reducing-your-app-s-battery-use.md)
+  Adopt design principles and recommended APIs to consume less power.
+### Disk usage
+- [Reducing disk writes](reducing-disk-writes.md)
+  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
+- [Reducing your app’s disk usage](reducing-your-app-s-disk-usage.md)
+  Measure and minimize the space your app uses to store its files.
 ### Network
 - [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.

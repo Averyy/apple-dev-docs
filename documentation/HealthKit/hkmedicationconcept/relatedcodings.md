@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The set of related clinical codings for the medication.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,7 @@ var relatedCodings: Set<HKClinicalCoding> { get }
 
 #### Discussion
 
-Contains a set of relevant codes for this particular medication.
+Each coding links the medication to an external medical terminology system, such as RxNorm.
 
 
 ---

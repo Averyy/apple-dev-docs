@@ -22,9 +22,9 @@ var isFault: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is a fault, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Knowing whether an object is a fault is useful in many situations when computations are optional. It can also be used to avoid growing the object graph unnecessarily (which may improve performance as it can avoid time-consuming fetches from data stores).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is a fault, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Knowing whether an object is a fault is useful in many situations when computations are optional. It can also be used to avoid growing the object graph unnecessarily (which may improve performance as it can avoid time-consuming fetches from data stores).
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), then the receiver’s data must be in memory. However, if this property is  [`true`](https://developer.apple.com/documentation/swift/true), it does  mean that the data is not in memory. The data may be in memory, or it may not, depending on many factors influencing caching.
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), then the receiver’s data must be in memory. However, if this property is  [`true`](https://developer.apple.com/documentation/Swift/true), it does  mean that the data is not in memory. The data may be in memory, or it may not, depending on many factors influencing caching.
 
 If the receiver is a fault, accessing this property does not cause it to fire.
 

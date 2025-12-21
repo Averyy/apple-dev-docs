@@ -58,6 +58,10 @@ Picker("Flavor", selection: $selectedFlavor) {
 
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](view/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
+  Requests that the containing list row use the provided hover effect.
+- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
+  Requests that the containing list row have its hover effect disabled.
 
 
 ---

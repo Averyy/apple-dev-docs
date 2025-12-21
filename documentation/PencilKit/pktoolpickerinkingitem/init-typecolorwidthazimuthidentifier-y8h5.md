@@ -8,7 +8,7 @@ Create a new inking tool item.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

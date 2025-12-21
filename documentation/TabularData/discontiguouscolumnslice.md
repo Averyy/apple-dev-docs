@@ -47,8 +47,6 @@ let slice = column.filter({ $0.isMultiple(of: 2) })
 ### Creating Transformed Columns
 - [func map<T>((DiscontiguousColumnSlice<WrappedElement>.Element) throws -> T?) rethrows -> Column<T>](discontiguouscolumnslice/map(_:).md)
   Creates a new column by applying a transformation to each element.
-- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](discontiguouscolumnslice/filled(with:).md)
-  Generates a filled column by replacing missing elements with a value.
 ### Inspecting a Column Slice
 - [var name: String](discontiguouscolumnslice/name.md)
   The name of the slice’s parent column.
@@ -98,15 +96,11 @@ let slice = column.filter({ $0.isMultiple(of: 2) })
   A text representation of the column slice.
 - [var debugDescription: String](discontiguouscolumnslice/debugdescription.md)
   A text representation of the column slice suitable for debugging.
-- [func description(options: FormattingOptions) -> String](discontiguouscolumnslice/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](discontiguouscolumnslice/custommirror.md)
   A mirror that reflects the column slice.
 ### Comparing Two Column Slices
 - [static func == (DiscontiguousColumnSlice<WrappedElement>, DiscontiguousColumnSlice<WrappedElement>) -> Bool](discontiguouscolumnslice/==(_:_:).md)
   Returns a Boolean that indicates whether the column slices are equal.
-- [static func != (Self, Self) -> Bool](discontiguouscolumnslice/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Modifying a Column Slice with a Value
 - [static func += (inout DiscontiguousColumnSlice<WrappedElement>, WrappedElement)](discontiguouscolumnslice/+=(_:_:)-1mzz0.md)
   Modifies a column slice by adding a value to each element.
@@ -139,49 +133,6 @@ let slice = column.filter({ $0.isMultiple(of: 2) })
   Modifies a floating-point column slice by dividing each element in the column by the corresponding value in a collection.
 - [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/_=(_:_:)-6lzj.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding optional value in a collection.
-### Generating a Column by Combining Two Column Slices
-- [static func + (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/+(_:_:)-7swqp.md)
-  Generates a column by adding each element in an optional column type to the corresponding elements of another.
-- [static func - (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/-(_:_:)-2hf72.md)
-  Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
-- [static func * (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/*(_:_:)-2tbo9.md)
-  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-1e5kt.md)
-  Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-6dcws.md)
-  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
-### Generating a Column by Adding a Value
-- [static func + (Self, Self.Element) -> Column<Self.Element>](discontiguouscolumnslice/+(_:_:)-75xxw.md)
-  Generates a column by adding a value to each element in a column.
-- [static func + (Self.Element, Self) -> Column<Self.Element>](discontiguouscolumnslice/+(_:_:)-2qwr7.md)
-  Generates a column by adding each element in a column to a value.
-- [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](discontiguouscolumnslice/+(_:_:)-2ba70.md)
-  Generates a column by adding a value to each element in an optional column.
-- [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/+(_:_:)-77c23.md)
-  Generates a column by adding each element in an optional column to a value.
-### Generating a Column by Subtracting a Value
-- [static func - (Self, Self.Element) -> Column<Self.Element>](discontiguouscolumnslice/-(_:_:)-2vlsk.md)
-  Generates a column by subtracting a value from each element in a column.
-- [static func - (Self.Element, Self) -> Column<Self.Element>](discontiguouscolumnslice/-(_:_:)-1ynwr.md)
-  Generates a column by subtracting each element in a column from a value.
-- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](discontiguouscolumnslice/-(_:_:)-hqv5.md)
-  Generates a column by subtracting a value from each element in an optional column type.
-- [static func - (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/-(_:_:)-5nwcb.md)
-  Generates a column by subtracting each element in an optional column from a value.
-### Generating a Column by Multiplying a Value
-- [static func * (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](discontiguouscolumnslice/*(_:_:)-8faxs.md)
-  Generates a column by multiplying each element in an optional column by a value.
-- [static func * (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/*(_:_:)-3dsxf.md)
-  Generates a column by multiplying a value by each element in an optional column type.
-### Generating a Column by Dividing a Value
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-51brc.md)
-  Generates an integer column by dividing each element in an optional column by a value.
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-3bul1.md)
-  Generates a floating-point column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-29za6.md)
-  Generates an integer column by dividing a value by each element in an optional column type.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-80g7i.md)
-  Generates a floating-point column by dividing a value by each element in an optional column type.
 ### Hashing a Column Slice
 - [func hash(into: inout Hasher)](discontiguouscolumnslice/hash(into:).md)
   Hashes the essential components of the column slice by feeding them into a hasher.
@@ -196,15 +147,11 @@ let slice = column.filter({ $0.isMultiple(of: 2) })
 ### Default Implementations
 - [BidirectionalCollection Implementations](discontiguouscolumnslice/bidirectionalcollection-implementations.md)
 - [Collection Implementations](discontiguouscolumnslice/collection-implementations.md)
-- [ColumnProtocol Implementations](discontiguouscolumnslice/columnprotocol-implementations.md)
 - [CustomDebugStringConvertible Implementations](discontiguouscolumnslice/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](discontiguouscolumnslice/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](discontiguouscolumnslice/customstringconvertible-implementations.md)
 - [Equatable Implementations](discontiguouscolumnslice/equatable-implementations.md)
 - [Hashable Implementations](discontiguouscolumnslice/hashable-implementations.md)
-- [MutableCollection Implementations](discontiguouscolumnslice/mutablecollection-implementations.md)
-- [OptionalColumnProtocol Implementations](discontiguouscolumnslice/optionalcolumnprotocol-implementations.md)
-- [Sequence Implementations](discontiguouscolumnslice/sequence-implementations.md)
 
 ## Relationships
 

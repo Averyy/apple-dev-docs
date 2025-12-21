@@ -15,6 +15,10 @@
 protocol QLPreviewItem : NSObjectProtocol
 ```
 
+#### Overview
+
+The QLPreviewItem protocol declares the methods that a QLPreviewController instance uses to access the contents of a given item.
+
 ## Topics
 
 ### Instance Properties

@@ -20,9 +20,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 
 ## Topics
 
-### Operators
-- [static func == (HIDReportType, HIDReportType) -> Bool](hidreporttype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [HIDReportType.feature](hidreporttype/feature.md)
   A feature report is bidirectional configuration data, typically used to alter device or software functionality.
@@ -30,14 +27,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
   An input report is data dispatched from the device to the system, typically sent in response to human interaction with one of the device controls.
 - [HIDReportType.output](hidreporttype/output.md)
   An output report is data sent from the system to the device, typically used to set a device control.
-### Instance Properties
-- [var hashValue: Int](hidreporttype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hidreporttype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hidreporttype/equatable-implementations.md)
 
 ## Relationships
 

@@ -69,9 +69,8 @@ The event handler queries the capture event to determine its phase, and when the
 ### Inspecting the interaction
 - [var isEnabled: Bool](avcaptureeventinteraction/isenabled.md)
   A Boolean value that indicates whether this capture event interaction is in an enabled state.
-### Type Properties
 - [class var defaultCaptureSoundDisabled: Bool](avcaptureeventinteraction/defaultcapturesounddisabled.md)
-  A boolean value indicating whether or not the default sound is disabled.
+  A Boolean value that indicates whether the default sound is in a disabled state.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 A type that provides information on how to render content into the frame’s textures.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

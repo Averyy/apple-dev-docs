@@ -22,11 +22,11 @@ var hasPassword: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver has a password, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has a password, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 This method does not attempt to retrieve the password.
 
-If this credential’s password is stored in the user’s keychain, [`password`](urlcredential/password.md) may return `nil` even if this method returns [`true`](https://developer.apple.com/documentation/swift/true)—getting the password may fail, or the user may refuse access.
+If this credential’s password is stored in the user’s keychain, [`password`](urlcredential/password.md) may return `nil` even if this method returns [`true`](https://developer.apple.com/documentation/Swift/true)—getting the password may fail, or the user may refuse access.
 
 ## See Also
 

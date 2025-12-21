@@ -28,6 +28,10 @@ For credential assertion requests, this property is empty.
   The hash of the client data for this assertion.
 - [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequest/userverificationpreference.md)
   The relying party’s user verification preference.
+- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+  An input for WebAuthn extensions.
+- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+  A type for WebAuthn extension inputs.
 
 
 ---

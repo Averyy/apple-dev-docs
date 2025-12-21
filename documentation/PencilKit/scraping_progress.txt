@@ -1,4 +1,4 @@
 Completed scraping PencilKit!
-Total pages scraped: 301
+Total pages scraped: 303
 Pages skipped (unchanged): 1
 Pages failed: 0

@@ -6,8 +6,8 @@
 A class that provides an interface for performing RCS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A class that provides an interface for performing RCS operations.
 ```swift
 final class RCSService
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -57,6 +61,7 @@ Task {
             case .composingIndicator(let composingIndicator): // ...
         }
     }
+}
 ```
 
 ## Topics

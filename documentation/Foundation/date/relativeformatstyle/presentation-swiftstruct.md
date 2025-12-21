@@ -32,8 +32,6 @@ Cases include `named` and `numeric`.
 - [static var numeric: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.struct/numeric.md)
   A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 ### Comparing Relative Date Style Presentations
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

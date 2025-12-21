@@ -21,7 +21,7 @@ case volatile
 
 ## Mentions
 
-- [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
 
 ## See Also
 

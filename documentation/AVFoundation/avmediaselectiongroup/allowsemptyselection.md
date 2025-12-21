@@ -22,7 +22,7 @@ var allowsEmptySelection: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you can deselect all of the available media options in the group by passing `nil` as the specified [`AVMediaSelectionOption`](avmediaselectionoption.md) object to [`select(_:in:)`](avplayeritem/select(_:in:).md).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), you can deselect all of the available media options in the group by passing `nil` as the specified [`AVMediaSelectionOption`](avmediaselectionoption.md) object to [`select(_:in:)`](avplayeritem/select(_:in:).md).
 
 
 ---

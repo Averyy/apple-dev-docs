@@ -17,7 +17,6 @@ The ambient color of the light.
 ## Declaration
 
 ```swift
-@MainActor
 var ambientColor: UIColor { get set }
 ```
 

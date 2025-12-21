@@ -9,10 +9,9 @@
 - iPadOS 13.0+ - Deprecated
 - Mac Catalyst ?+
 - macOS 10.15+ - Deprecated
+- tvOS 13.0+ - Deprecated
 - visionOS ?+
 - watchOS 6.0+ - Deprecated
-- Unknown ?+ - Deprecated
-- tvOS 13.0+ - Deprecated
 
 ## Declaration
 

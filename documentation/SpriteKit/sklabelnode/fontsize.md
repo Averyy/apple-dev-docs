@@ -17,7 +17,6 @@ The size of the font used in the label.
 ## Declaration
 
 ```swift
-@MainActor
 var fontSize: CGFloat { get set }
 ```
 

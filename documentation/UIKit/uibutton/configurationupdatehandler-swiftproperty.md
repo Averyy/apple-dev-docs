@@ -25,6 +25,8 @@ Use this property as an alternative to overriding [`updateConfiguration()`](uibu
 
 In iOS 18 and later, UIKit supports automatic trait tracking inside this closure for traits from this button’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
 
+This closure supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+
 ## See Also
 
 - [func updateConfiguration()](uibutton/updateconfiguration.md)

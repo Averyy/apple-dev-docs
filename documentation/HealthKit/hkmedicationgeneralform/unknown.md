@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The system doesn’t know the general form of the medication.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

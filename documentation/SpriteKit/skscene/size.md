@@ -17,7 +17,6 @@ The dimensions of the scene, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var size: CGSize { get set }
 ```
 

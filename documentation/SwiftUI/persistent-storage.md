@@ -15,7 +15,7 @@ You use the same kinds of storage in a SwiftUI app that you use in any other app
 ## Topics
 
 ### Saving state across app launches
-- [Restoring Your App’s State with SwiftUI](restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [func defaultAppStorage(UserDefaults) -> some View](view/defaultappstorage(_:).md)
   The default store used by `AppStorage` contained within the view.
@@ -24,7 +24,7 @@ You use the same kinds of storage in a SwiftUI app that you use in any other app
 - [struct SceneStorage](scenestorage.md)
   A property wrapper type that reads and writes to persisted, per-scene storage.
 ### Accessing Core Data
-- [Loading and Displaying a Large Data Feed](loading_and_displaying_a_large_data_feed.md)
+- [Loading and displaying a large data feed](loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [var managedObjectContext: NSManagedObjectContext](environmentvalues/managedobjectcontext.md)
 - [struct FetchRequest](fetchrequest.md)

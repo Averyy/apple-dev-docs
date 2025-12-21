@@ -76,6 +76,8 @@ You should associate your delegate with a unique instance of the [`FileManager`]
 
 - [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
   Prevent data loss and app crashes by interacting with the file system in a coordinated, asynchronous manner and by avoiding unnecessary disk I/O.
+- [Using the file system effectively](using-the-file-system-effectively.md)
+  Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 - [class FileManager](filemanager.md)
   A convenient interface to the contents of the file system, and the primary means of interacting with it.
 - [About Apple File System](about-apple-file-system.md)

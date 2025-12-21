@@ -16,7 +16,7 @@ var isBroadcastAddress: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the address is a broadcast address, or [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the address is a broadcast address, or [`false`](https://developer.apple.com/documentation/Swift/false) if it isn’t.
 
 ## See Also
 

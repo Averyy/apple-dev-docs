@@ -20,7 +20,7 @@ func handle(_ report: NEFilterReport)
 
 #### Discussion
 
-The framework calls this method when the data provider extension returns a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/swift/true). Override this method in a subclass if you want to handle the flow report.
+The framework calls this method when the data provider extension returns a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true). Override this method in a subclass if you want to handle the flow report.
 
 ## Parameters
 

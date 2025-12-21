@@ -10,7 +10,7 @@ An invisible 3D shape that detects when objects enter or exit a given region of 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

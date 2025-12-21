@@ -35,13 +35,6 @@ struct MLModelClassifierAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Scal
   Performs a prediction from a single input.
 - [MLModelClassifierAdaptor.Label](mlmodelclassifieradaptor/label.md)
   The classifier label type.
-### Type Aliases
-- [MLModelClassifierAdaptor.Input](mlmodelclassifieradaptor/input.md)
-  The input type.
-- [MLModelClassifierAdaptor.Output](mlmodelclassifieradaptor/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](mlmodelclassifieradaptor/transformer-implementations.md)
 
 ## Relationships
 

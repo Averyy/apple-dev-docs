@@ -17,7 +17,7 @@ The background color of the row.
 
 #### Discussion
 
-The property defaults to the table view’s [`backgroundColor`](nstableview/backgroundcolor.md), unless [`usesAlternatingRowBackgroundColors`](nstableview/usesalternatingrowbackgroundcolors.md) is set to [`true`](https://developer.apple.com/documentation/swift/true). In that case, the colors alternate, and are automatically updated as required by insertions and deletions.
+The property defaults to the table view’s [`backgroundColor`](nstableview/backgroundcolor.md), unless [`usesAlternatingRowBackgroundColors`](nstableview/usesalternatingrowbackgroundcolors.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true). In that case, the colors alternate, and are automatically updated as required by insertions and deletions.
 
 The value of the background color can be customized in the `NSTableViewDelegate` method `tableView:didAddRowView:forRow:`. The property is animatable.
 

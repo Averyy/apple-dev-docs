@@ -24,8 +24,9 @@ The content and behavior of the chart content.
 
 ## See Also
 
-- [associatedtype Body : ChartContent](chartcontent/body-swift.associatedtype.md)
-  The type of chart content contained in the body of this instance.
+- [struct VectorizedAreaPlotContent](vectorizedareaplotcontent.md)
+  An opaque vectorized chart content type.
+- [struct FunctionAreaPlotContent](functionareaplotcontent.md)
 
 
 ---

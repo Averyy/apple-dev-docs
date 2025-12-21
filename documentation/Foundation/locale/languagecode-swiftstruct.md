@@ -35,6 +35,7 @@ struct LanguageCode
   Returns an array of ISO-defined language codes.
 ### Instance Methods
 - [func identifier(Locale.LanguageCode.IdentifierType) -> String?](locale/languagecode-swift.struct/identifier(_:).md)
+  Returns the ISO code of the given identifier type. Returns nil if the language isn’t a valid ISO language, or if the specified identifier type isn’t available to the language.
 ### Type Properties
 - [static var ainu: Locale.LanguageCode](locale/languagecode-swift.struct/ainu.md)
 - [static var albanian: Locale.LanguageCode](locale/languagecode-swift.struct/albanian.md)
@@ -103,6 +104,7 @@ struct LanguageCode
 - [static var marathi: Locale.LanguageCode](locale/languagecode-swift.struct/marathi.md)
 - [static var mongolian: Locale.LanguageCode](locale/languagecode-swift.struct/mongolian.md)
 - [static let multiple: Locale.LanguageCode](locale/languagecode-swift.struct/multiple.md)
+  The `mul` code: represents the language of some content when there are more than one languages
 - [static var navajo: Locale.LanguageCode](locale/languagecode-swift.struct/navajo.md)
 - [static var nepali: Locale.LanguageCode](locale/languagecode-swift.struct/nepali.md)
 - [static var norwegian: Locale.LanguageCode](locale/languagecode-swift.struct/norwegian.md)
@@ -139,8 +141,11 @@ struct LanguageCode
 - [static var turkmen: Locale.LanguageCode](locale/languagecode-swift.struct/turkmen.md)
 - [static var ukrainian: Locale.LanguageCode](locale/languagecode-swift.struct/ukrainian.md)
 - [static let unavailable: Locale.LanguageCode](locale/languagecode-swift.struct/unavailable.md)
+  The `zxx` code: used in cases when the content is not in any particular languages, such as images, symbols, etc.
 - [static let uncoded: Locale.LanguageCode](locale/languagecode-swift.struct/uncoded.md)
+  The `mis` code: represents languages that have not been included in the ISO standard yet
 - [static let unidentified: Locale.LanguageCode](locale/languagecode-swift.struct/unidentified.md)
+  The `und` code: used in cases where the language has not been identified
 - [static var urdu: Locale.LanguageCode](locale/languagecode-swift.struct/urdu.md)
 - [static var uyghur: Locale.LanguageCode](locale/languagecode-swift.struct/uyghur.md)
 - [static var uzbek: Locale.LanguageCode](locale/languagecode-swift.struct/uzbek.md)
@@ -149,6 +154,7 @@ struct LanguageCode
 - [static var yiddish: Locale.LanguageCode](locale/languagecode-swift.struct/yiddish.md)
 ### Enumerations
 - [Locale.LanguageCode.IdentifierType](locale/languagecode-swift.struct/identifiertype.md)
+  Types of ISO 639 language code.
 
 ## Relationships
 

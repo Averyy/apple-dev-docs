@@ -19,7 +19,7 @@ class func supportsURL(_ URL: URL) -> Bool
 
 #### Return Value
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the URL is supported by Reading List; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), then the URL is supported by Reading List; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

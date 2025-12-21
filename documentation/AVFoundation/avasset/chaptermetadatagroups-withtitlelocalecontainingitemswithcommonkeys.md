@@ -21,7 +21,7 @@ func chapterMetadataGroups(withTitleLocale locale: Locale, containingItemsWithCo
 
 ## Mentions
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
 
 #### Return Value
 

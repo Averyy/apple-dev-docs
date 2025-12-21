@@ -17,11 +17,11 @@ var supportsAlpha: Bool { get set }
 
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), people can select only fully opaque colors from the color picker. A value of [`false`](https://developer.apple.com/documentation/swift/false) also hides the alpha slider. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) enables partial color opacity, and also makes the alpha slider visible.
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), people can select only fully opaque colors from the color picker. A value of [`false`](https://developer.apple.com/documentation/Swift/false) also hides the alpha slider. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) enables partial color opacity, and also makes the alpha slider visible.
 
-If [`ignoresAlpha`](nscolor/ignoresalpha.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property always returns [`false`](https://developer.apple.com/documentation/swift/false), disabling alpha globally.
+If [`ignoresAlpha`](nscolor/ignoresalpha.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this property always returns [`false`](https://developer.apple.com/documentation/Swift/false), disabling alpha globally.
 
-By default this value is [`true`](https://developer.apple.com/documentation/swift/true).
+By default this value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

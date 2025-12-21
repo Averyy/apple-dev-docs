@@ -22,24 +22,19 @@ struct TryDropWhile<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Drop While Publisher
+### Creating a try-drop-while publisher
 - [init(upstream: Upstream, predicate: (Publishers.TryDropWhile<Upstream>.Output) throws -> Bool)](publishers/trydropwhile/init(upstream:predicate:).md)
   Creates a publisher that omits elements from an upstream publisher until a given error-throwing closure returns false.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryDropWhile.Output](publishers/trydropwhile/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryDropWhile.Failure](publishers/trydropwhile/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/trydropwhile/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.TryDropWhile<Upstream>.Output) throws -> Bool](publishers/trydropwhile/predicate.md)
   The error-throwing closure that indicates whether to drop the element.
-### Applying Operators
-- [Publisher Operators](publishers-trydropwhile-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/trydropwhile/publisher-implementations.md)
 
 ## Relationships
 

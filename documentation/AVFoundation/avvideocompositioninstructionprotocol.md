@@ -25,20 +25,20 @@ A video composition maintains an array of instructions that describe how to comp
 
 ## Topics
 
-### Getting Track ID Settings
+### Getting track ID settings
 - [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstructionprotocol/passthroughtrackid.md)
   An identifier of a source track to pass through without compositing.
 - [var requiredSourceTrackIDs: [NSValue]?](avvideocompositioninstructionprotocol/requiredsourcetrackids.md)
   The identifiers of the video tracks the instruction requires to compose frames.
 - [var requiredSourceSampleDataTrackIDs: [NSNumber]](avvideocompositioninstructionprotocol/requiredsourcesampledatatrackids.md)
   The identifiers of the sample data tracks the instruction requires to compose frames.
-### Getting Tweening Settings
+### Getting tweening settings
 - [var containsTweening: Bool](avvideocompositioninstructionprotocol/containstweening.md)
   A Boolean value that indicates whether the composition contains tweening.
-### Getting Post-Processing Status
+### Getting post-processing status
 - [var enablePostProcessing: Bool](avvideocompositioninstructionprotocol/enablepostprocessing.md)
   A Boolean value that indicates whether the composition enables post-processing.
-### Getting Timing Settings
+### Getting timing settings
 - [var timeRange: CMTimeRange](avvideocompositioninstructionprotocol/timerange.md)
   The time range during which the instruction is effective.
 

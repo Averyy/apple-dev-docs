@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-A rectangle indicating the position and extent of the feature in image coordinates.
+A rectangle that indicates the position and extent of the text feature in image coordinates.
 
 **Availability**:
 - iOS 9.0+
@@ -21,11 +21,7 @@ var bounds: CGRect { get }
 
 #### Discussion
 
-This property identifies the rectangular region  containing the detected text region, not necessarily the shape of the region. A detected feature is rectangular in space, but may appear in perspective in the image. Use the properties listed in Identifying the Corners of a Detected Text Region to find the corners of the rectangle as it appears in perspective.
-
-## See Also
-
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+This property identifies the rectangular region of the image containing the detected text, not necessarily the shape of the text box. A detected feature is rectangular in space, but may appear as a four-sided polygon in the image. Use the properties listed in `CITextFeature` to find the corners of the rectangle as it appears in perspective.
 
 
 ---

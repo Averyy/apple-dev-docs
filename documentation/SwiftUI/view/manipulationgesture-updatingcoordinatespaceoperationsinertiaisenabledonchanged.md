@@ -6,7 +6,7 @@
 Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

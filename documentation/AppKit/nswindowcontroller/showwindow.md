@@ -17,7 +17,7 @@ Displays the window associated with the receiver.
 
 #### Discussion
 
-If the window is an [`NSPanel`](nspanel.md) object and has its [`becomesKeyOnlyIfNeeded`](nspanel/becomeskeyonlyifneeded.md) flag set to [`true`](https://developer.apple.com/documentation/swift/true), the window is displayed in front of all other windows but is not made key; otherwise it is displayed in front and is made key. This method is useful for menu actions.
+If the window is an [`NSPanel`](nspanel.md) object and has its [`becomesKeyOnlyIfNeeded`](nspanel/becomeskeyonlyifneeded.md) flag set to [`true`](https://developer.apple.com/documentation/Swift/true), the window is displayed in front of all other windows but is not made key; otherwise it is displayed in front and is made key. This method is useful for menu actions.
 
 ## Parameters
 

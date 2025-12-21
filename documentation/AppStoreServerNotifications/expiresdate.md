@@ -25,7 +25,7 @@ The `expiresDate` is a static value that applies for each transaction. When the 
 - [type autoRenewProductId](autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
 - [type expirationIntent](expirationintent.md)
-  The reason a subscription expired.
+  The reason an auto-renewable subscription expired.
 - [type isUpgraded](isupgraded.md)
   A Boolean value that indicates whether the customer upgraded to another subscription.
 - [type renewalDate](renewaldate.md)

@@ -17,12 +17,6 @@ struct AccountBalance
 
 ## Topics
 
-### Operators
-- [static func == (AccountBalance, AccountBalance) -> Bool](accountbalance/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](accountbalance/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [let accountID: UUID](accountbalance/accountid.md)
   The account ID the balance belongs to.
@@ -34,16 +28,8 @@ struct AccountBalance
   The balance currency.
 - [let currentBalance: CurrentBalance](accountbalance/currentbalance.md)
   The balance at a particular moment in time.
-- [let id: UUID](accountbalance/id-swift.property.md)
+- [let id: UUID](accountbalance/id.md)
   A unique account balance ID.
-### Instance Methods
-- [func encode(to: any Encoder) throws](accountbalance/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [AccountBalance.ID](accountbalance/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](accountbalance/equatable-implementations.md)
 
 ## Relationships
 

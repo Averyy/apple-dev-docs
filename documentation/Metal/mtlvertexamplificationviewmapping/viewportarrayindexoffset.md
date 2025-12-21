@@ -21,7 +21,7 @@ var viewportArrayIndexOffset: UInt32
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 

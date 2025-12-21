@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: enum
 
-Enables qualifying apps to offer external purchase links.
+A value that enables qualifying apps to offer external purchase links.
 
 **Availability**:
 - iOS 15.4+
@@ -22,14 +22,16 @@ enum ExternalPurchaseLink
 
 #### Overview
 
-This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement. For more information, see:
+This functionality is only available to apps with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.allowed-regions entitlement or the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
 
-- [`Using alternative payment options on the App Store in the European Union`](https://developer.apple.comhttps://developer.apple.com/go/?id=storekit-external-purchase-eu)
+For more information, see:
+
+- [`Communication and promotion of offers on the App Store in the EU`](https://developer.apple.comhttps://developer.apple.com/support/communication-and-promotion-of-offers-on-the-app-store-in-the-eu/)
 - [`Distributing dating apps in the Netherlands`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement/)
 - [`Distributing apps in Russia that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/contact/request/storekit-external-entitlement-ru/)
 - [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/)
 
-> **Note**:  If your app is running on iOS 15.4 through 17.3 or iPadOS 15.4 through 17.3 and is configured to use the External Purchase API, you must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, do not call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
+> **Note**:  You must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, don’t call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
 
 ## Topics
 

@@ -21,15 +21,15 @@ struct MTLCommonCounter
 
 ## Mentions
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 #### Overview
 
-This type defines the constants that let a GPU device declare which counters it supports within a counter set. For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+This type defines the constants that let a GPU device declare which counters it supports within a counter set. For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
 
-### Common Counter Names
+### Common counter names
 - [static let timestamp: MTLCommonCounter](mtlcommoncounter/timestamp.md)
   The common name for the counter that tracks the current time.
 - [static let tessellationInputPatches: MTLCommonCounter](mtlcommoncounter/tessellationinputpatches.md)
@@ -60,7 +60,7 @@ This type defines the constants that let a GPU device declare which counters it 
   The common name for the counter that tracks the number of cycles the GPU uses to run the tessellation stage during a pass.
 - [static let renderTargetWriteCycles: MTLCommonCounter](mtlcommoncounter/rendertargetwritecycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to write data to render targets during a render pass.
-### Swift Support
+### Swift support
 - [init(rawValue: String)](mtlcommoncounter/init(rawvalue:).md)
   Creates a common counter name from a raw value.
 
@@ -75,7 +75,7 @@ This type defines the constants that let a GPU device declare which counters it 
 
 ## See Also
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
 - [protocol MTLCounterSet](mtlcounterset.md)
   A collection of individual counters a GPU device supports for a counter set.

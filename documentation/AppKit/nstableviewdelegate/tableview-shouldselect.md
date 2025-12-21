@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, shouldSelect tableColumn: NSTa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit selection, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit selection, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

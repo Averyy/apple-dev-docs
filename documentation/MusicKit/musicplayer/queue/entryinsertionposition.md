@@ -21,22 +21,11 @@ enum EntryInsertionPosition
 
 ## Topics
 
-### Operators
-- [static func == (MusicPlayer.Queue.EntryInsertionPosition, MusicPlayer.Queue.EntryInsertionPosition) -> Bool](musicplayer/queue/entryinsertionposition/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicPlayer.Queue.EntryInsertionPosition.afterCurrentEntry](musicplayer/queue/entryinsertionposition/aftercurrententry.md)
   A position that allows prepending entries in the playback queue, similar to the Play Next feature in the Music app.
 - [MusicPlayer.Queue.EntryInsertionPosition.tail](musicplayer/queue/entryinsertionposition/tail.md)
   A position that allows appending entries in the playback queue, similar to the Play Later feature in the Music app.
-### Instance Properties
-- [var hashValue: Int](musicplayer/queue/entryinsertionposition/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicplayer/queue/entryinsertionposition/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](musicplayer/queue/entryinsertionposition/equatable-implementations.md)
 
 ## Relationships
 

@@ -20,7 +20,7 @@ func addAttachmentURL(_ attachmentURL: URL, withAlternateFilename alternateFilen
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attachment at the specified URL was successfully added to the message, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the attachment at the specified URL was successfully added to the message, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

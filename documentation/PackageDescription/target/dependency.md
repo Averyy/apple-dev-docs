@@ -42,9 +42,7 @@ enum Dependency
 - [static func byName(name: String) -> Target.Dependency](target/dependency/byname(name:).md)
   Creates a dependency that resolves to either a target or a product with the specified name.
 ### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](target/dependency/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](target/dependency/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](target/dependency/expressiblebyunicodescalarliteral-implementations.md)
 
 ## Relationships
 

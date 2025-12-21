@@ -22,7 +22,7 @@ class MLGPUComputeDevice
 
 ## Topics
 
-### Getting The Metal Device
+### Getting the metal device
 - [var metalDevice: (any MTLDevice)!](mlgpucomputedevice/metaldevice.md)
   The device that represents the underlying metal device.
 

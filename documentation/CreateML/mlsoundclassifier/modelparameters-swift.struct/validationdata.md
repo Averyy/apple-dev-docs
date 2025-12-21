@@ -34,6 +34,12 @@ enum ValidationData
 
 - [MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
   The algorithm options to train a sound classifier.
+- [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
+  The classifier options for a sound classifier training algorithm.
+- [MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md)
+  The feature-extractor options for a sound-classifier training algorithm.
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+  The type options for an Audio Feature Print feature extractor.
 
 
 ---

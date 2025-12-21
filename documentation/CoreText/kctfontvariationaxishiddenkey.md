@@ -22,7 +22,7 @@ let kCTFontVariationAxisHiddenKey: CFString
 
 #### Discussion
 
-This key contains a doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p value that is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) when the font designer recommends the axis not be exposed directly to end users in application interfaces.
+This key contains a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value that is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) when the font designer recommends the axis not be exposed directly to end users in application interfaces.
 
 Reasons for setting this flag might include that the axis is intended only for programmatic interaction, or is intended for font-internal use by the font developer.
 

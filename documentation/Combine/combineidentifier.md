@@ -30,26 +30,14 @@ let combineIdentifier = CombineIdentifier()
 
 ## Topics
 
-### Creating a Combine Identifier
+### Creating a Combine identifier
 - [init()](combineidentifier/init.md)
   Creates a unique Combine identifier.
 - [init(AnyObject)](combineidentifier/init(_:).md)
   Creates a Combine identifier, using the bit pattern of the provided object.
-### Hashing Identifiers
-- [func hash(into: inout Hasher)](combineidentifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](combineidentifier/hashvalue.md)
-  The hash value.
-### Providing a Description
+### Providing a description
 - [var description: String](combineidentifier/description.md)
   A textual representation of this instance.
-### Comparing Identifiers
-- [static func != (Self, Self) -> Bool](combineidentifier/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (CombineIdentifier, CombineIdentifier) -> Bool](combineidentifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](combineidentifier/equatable-implementations.md)
 
 ## Relationships
 

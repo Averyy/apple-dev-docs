@@ -20,7 +20,7 @@ enum Code
 
 ## Topics
 
-### Getting the error codes.
+### Getting the error codes
 - [CSSearchQueryError.Code.cancelled](cssearchqueryerror/code/cancelled.md)
   The query stopped because someone canceled it.
 - [CSSearchQueryError.Code.indexUnreachable](cssearchqueryerror/code/indexunreachable.md)

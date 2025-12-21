@@ -1,4 +1,4 @@
-# Implementing a Multistage Image Filter Using Heaps and Fences
+# Implementing a multistage image filter using heaps and fences
 
 **Framework**: Metal
 
@@ -31,7 +31,7 @@ The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS
 
 Storing textures in a heap gives the sample more control over how resource memory is allocated and accessed. It’s also much faster to allocate resources from a heap than from a device. When resources are allocated from a device, Metal creates and tracks additional state to ensure that the resource memory is allocated, synchronized, and made available throughout the lifetime of any command buffer that needs the given resource. It does so even if the resource itself is destroyed before the command buffer begins execution.
 
-Although Metal also carries out this process for heaps, it doesn’t do so for resources within the heap. Instead, the app must perform explicit fine-grained synchronization when it creates objects from the heap and reuses memory. However, the overall cost of allocating resources from a heap is much lower than that of allocating resources from a device, particularly in the middle of a frame.
+Although Metal also carries out this process for heaps, it doesn’t do so for resources within the heap. Instead, the app needs to perform explicit fine-grained synchronization when it creates objects from the heap and reuses memory. However, the overall cost of allocating resources from a heap is much lower than that of allocating resources from a device, particularly in the middle of a frame.
 
 ##### Create a Heap for Static Textures
 
@@ -254,9 +254,9 @@ Because the sample already calls the `waitForFence:` method to wait for the down
 
 ## See Also
 
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
 - [protocol MTLHeap](mtlheap.md)
   A memory pool from which you can suballocate resources.

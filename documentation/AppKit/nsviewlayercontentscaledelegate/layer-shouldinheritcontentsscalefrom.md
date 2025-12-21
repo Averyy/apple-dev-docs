@@ -25,7 +25,7 @@ When a resolution change occurs for a given window, the system traverses the lay
 
 Note that you don’t need to manage [`NSImage`](nsimage.md) contents and that this method is not called on the delegate of a layer whose content is an [`NSImage`](nsimage.md) object.
 
-If the delegate returns [`true`](https://developer.apple.com/documentation/swift/true), it should make any corresponding changes to the layer’s properties, as required by the resolution change. For example, a layer whose contents contain a CGImage object needs to determine whether an alternate CGImage object is available for the new scale factor. If the delegate finds a suitable CGImage object, then in addition to returning [`true`](https://developer.apple.com/documentation/swift/true), it should set the appropriate CGImage object as the layer’s new contents.
+If the delegate returns [`true`](https://developer.apple.com/documentation/Swift/true), it should make any corresponding changes to the layer’s properties, as required by the resolution change. For example, a layer whose contents contain a CGImage object needs to determine whether an alternate CGImage object is available for the new scale factor. If the delegate finds a suitable CGImage object, then in addition to returning [`true`](https://developer.apple.com/documentation/Swift/true), it should set the appropriate CGImage object as the layer’s new contents.
 
 ## Parameters
 

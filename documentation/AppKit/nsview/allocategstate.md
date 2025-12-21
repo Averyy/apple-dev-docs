@@ -28,7 +28,7 @@ Because graphics states occupy a fair amount of memory, they can actually degrad
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
 - [func unlockFocus()](nsview/unlockfocus.md)

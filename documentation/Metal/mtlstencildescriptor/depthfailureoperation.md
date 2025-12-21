@@ -33,6 +33,8 @@ The default value is [`MTLStencilOperation.keep`](mtlstenciloperation/keep.md), 
   The operation that is performed to update the values in the stencil attachment when both the stencil test and the depth test pass.
 - [var stencilCompareFunction: MTLCompareFunction](mtlstencildescriptor/stencilcomparefunction.md)
   The comparison that is performed between the masked reference value and a masked value in the stencil attachment.
+- [enum MTLStencilOperation](mtlstenciloperation.md)
+  The operation performed on a currently stored stencil value when a comparison test passes or fails.
 
 
 ---

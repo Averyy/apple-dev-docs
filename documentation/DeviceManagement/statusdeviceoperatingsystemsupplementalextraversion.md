@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the device’s operating system’s rapid security response identifier.
+A status report of the device’s operating system’s Background Security Improvement identifier.
 
 **Availability**:
 - iOS 16.1+

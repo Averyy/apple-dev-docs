@@ -21,7 +21,7 @@ enum MTLCPUCacheMode
 
 ## Topics
 
-### Specifying the Cache Mode
+### Specifying the cache mode
 - [MTLCPUCacheMode.defaultCache](mtlcpucachemode/defaultcache.md)
   The default CPU cache mode for the resource, which guarantees that read and write operations are executed in the expected order.
 - [MTLCPUCacheMode.writeCombined](mtlcpucachemode/writecombined.md)
@@ -52,7 +52,7 @@ enum MTLCPUCacheMode
 - [enum MTLStorageMode](mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
 - [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
-  The options you use to specify the hazard tracking mode.
+  Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 
 ---

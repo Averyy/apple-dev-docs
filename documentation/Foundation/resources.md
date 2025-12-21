@@ -9,6 +9,8 @@ Access assets and other data bundled with your app.
 ### Bundle Resources
 - [class Bundle](bundle.md)
   A representation of the code and resources stored in a bundle directory on disk.
+- [macro bundle() -> Bundle](bundle().md)
+  Expands to a bundle instance that’s most likely to contain resources for the calling code.
 ### On-Demand Resources
 - [class NSBundleResourceRequest](nsbundleresourcerequest.md)
   A resource manager you use to download content hosted on the App Store at the time your app needs it.

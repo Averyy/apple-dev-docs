@@ -10,7 +10,7 @@ Creates a new entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -22,10 +22,6 @@ Creates a new entity.
 
 ## See Also
 
-- [convenience init<each T>(components: repeat each T)](entity/init(components:)-80z41.md)
-  Creates an entity with one or multiple components.
-- [convenience init(components: [any Component])](entity/init(components:)-41rn1.md)
-  Creates an entity with multiple components.
 - [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
   Duplicates an entity to create a new entity.
 - [func didClone(from: Entity)](entity/didclone(from:).md)

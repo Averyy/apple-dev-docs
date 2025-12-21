@@ -6,9 +6,8 @@
 An object that describes the UI of the alert that appears when an alarm fires.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -43,12 +42,9 @@ secondaryButtonBehavior: .countdown)
   The behavior of the second button.
 - [AlarmPresentation.Alert.SecondaryButtonBehavior](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
   Describes the behaviour of the second button.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentation/alert-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentation/alert-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
+### Initializers
+- [init(title: LocalizedStringResource, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](alarmpresentation/alert-swift.struct/init(title:secondarybutton:secondarybuttonbehavior:).md)
+  Creates an alert for an alarm, with a system-provided stop control and optionally a second button.
 
 ## Relationships
 

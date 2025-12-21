@@ -13,7 +13,6 @@ An activation function that returns the sigmoid linear unit (SiLU) function of i
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -5,15 +5,6 @@
 
 The role of a participant.
 
-**Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-
 ## Declaration
 
 ```swift

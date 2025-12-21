@@ -35,10 +35,13 @@ The position and orientation can be relative to either a piece of equipment or t
 
 ## See Also
 
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
-  Sets which equipment the interaction can target.
+- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+  Sets the configuration of this interaction.
+- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
 - [TabletopInteraction.AllowedDestinations](tabletopinteraction/alloweddestinations.md)
   The possible destinations of equipment in an interaction.
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+  Sets which equipment the interaction can target.
 
 
 ---

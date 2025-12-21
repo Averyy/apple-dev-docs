@@ -22,18 +22,12 @@ struct StoredPaymentCardReadResult
 ### Instance Properties
 - [let generalCardData: String](storeandforwardbatch/storedpaymentcardreadresult/generalcarddata.md)
   A Base64-encoded string that contains general cardholder and terminal data in tag-length-value (TLV) format.
-- [let id: String](storeandforwardbatch/storedpaymentcardreadresult/id-swift.property.md)
+- [let id: String](storeandforwardbatch/storedpaymentcardreadresult/id.md)
   The unique identifier for the payment.
 - [let paymentCardData: String](storeandforwardbatch/storedpaymentcardreadresult/paymentcarddata.md)
   A Base64-encoded string that contains the encrypted payment information to send to your payment provider.
 - [let signature: String](storeandforwardbatch/storedpaymentcardreadresult/signature.md)
   The signature, as a Base64-encoded string, that guarantees the integrity of the payment
-### Instance Methods
-- [func encode(to: any Encoder) throws](storeandforwardbatch/storedpaymentcardreadresult/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [StoreAndForwardBatch.StoredPaymentCardReadResult.ID](storeandforwardbatch/storedpaymentcardreadresult/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

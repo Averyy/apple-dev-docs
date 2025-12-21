@@ -66,7 +66,7 @@ This sample inserts the Open command into the middle of the menu bar’s File me
 builder.insertChild(MenuController.openMenu(), atStartOfMenu: .file)
 ```
 
-Mac apps also typically include a Print menu command in the File menu. This sample includes both Print and Export as PDF menu commands in the File Menu. These menu commands are automatically inserted when the `Info.plist` contains the `UIApplicationSupportsPrintCommand` key whose value is set to `true`. The application responds to these print commands by implementing `UIResponder's` `printContent(_ sender: Any?)` function.
+Mac apps also typically include a Print menu command in the File menu. This sample includes both Print and Export as PDF menu commands in the File menu. These menu commands are automatically inserted when the `Info.plist` contains the `UIApplicationSupportsPrintCommand` key whose value is set to `true`. The application responds to these print commands by implementing `UIResponder's` `printContent(_ sender: Any?)` function.
 
 ##### Contribute to the Edit Menu
 

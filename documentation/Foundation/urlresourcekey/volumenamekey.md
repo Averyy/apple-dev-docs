@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-The name of the volume, returned as an `NSString` object (read-write). Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/swift/true).
+The name of the volume, returned as an string object.
 
 **Availability**:
 - iOS 5.0+
@@ -19,6 +19,10 @@ The name of the volume, returned as an `NSString` object (read-write). Settable 
 ```swift
 static let volumeNameKey: URLResourceKey
 ```
+
+#### Discussion
+
+Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

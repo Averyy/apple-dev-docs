@@ -53,8 +53,6 @@ struct AttributeName
 ### Initializers
 - [init(rawValue: String)](xcuielement/attributename/init(rawvalue:).md)
   Creates an attribute name dictionary key from a string value.
-### Default Implementations
-- [Equatable Implementations](xcuielement/attributename/equatable-implementations.md)
 
 ## Relationships
 

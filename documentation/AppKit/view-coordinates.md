@@ -16,7 +16,7 @@ Manage the frame and bounds rectangles that determine the size and position of t
 - [var frameRotation: CGFloat](nsview/framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
 - [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
-  Posted whenever the view’s frame rectangle changes to a new value, but only when the view’s [`postsFrameChangedNotifications`](nsview/postsframechangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+  A notification that posts when the view’s frame rectangle changes to a new value.
 - [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 ### Modifying the Bounds Rectangle
@@ -29,7 +29,7 @@ Manage the frame and bounds rectangles that determine the size and position of t
 - [var boundsRotation: CGFloat](nsview/boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
 - [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
-  Posted whenever the `NSView`‘s bounds rectangle changes to a new value independently of the frame rectangle, but only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+  A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
 - [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
 ### Examining Coordinate System Modifications

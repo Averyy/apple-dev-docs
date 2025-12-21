@@ -17,7 +17,7 @@ func mouseMoved(onCharacterIndex index: Int, coordinate point: NSPoint, withModi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if handled; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if handled; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

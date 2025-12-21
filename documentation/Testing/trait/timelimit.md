@@ -40,6 +40,8 @@ The testing library can use a shorter time limit than that specified by `timeLim
 
 If a test is parameterized, this time limit is applied to each of its test cases individually. If a test has more than one time limit associated with it, the testing library uses the shortest time limit.
 
+If you apply this trait to a test suite, then it sets the time limit for each test in the suite, or each test case in parameterized tests in the suite. For example, if a suite contains five tests and you apply a time limit trait with a duration of one minute, then each test in the suite may run for up to one minute.
+
 ## Parameters
 
 - `timeLimit`: The maximum amount of time the test may run for.

@@ -6,8 +6,8 @@
 An enumeration that represents the disposition of an RCS message, such as whether delivery succeeded or failed.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,22 +29,6 @@ enum Disposition
   The carrier used a non-CPM technology to deliver the message.
 - [RCSMessage.Disposition.interworkingFailed](rcsmessage/disposition/interworkingfailed.md)
   The carrier attempted to use a non-CPM technology to deliver the message, but failed.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/disposition/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSMessage.Disposition, RCSMessage.Disposition) -> Bool](rcsmessage/disposition/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsmessage/disposition/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsmessage/disposition/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsmessage/disposition/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/disposition/equatable-implementations.md)
 
 ## Relationships
 

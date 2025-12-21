@@ -16,7 +16,7 @@ case momentaryChange
 
 #### Discussion
 
-When the value of [`isHighlighted`](nscontrol/ishighlighted.md) is [`true`](https://developer.apple.com/documentation/swift/true), the button displays its alternate content (for example, its [`alternateImage`](nsbutton/alternateimage.md) or [`alternateTitle`](nsbutton/alternatetitle.md)). If the button has no alternate content to display, it may instead draw its normal content using an illuminated effect. When [`isHighlighted`](nscontrol/ishighlighted.md) is [`false`](https://developer.apple.com/documentation/swift/false), the button displays its normal content (for example, its [`image`](nsbutton/image.md) or [`title`](nsbutton/title.md)).
+When the value of [`isHighlighted`](nscontrol/ishighlighted.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the button displays its alternate content (for example, its [`alternateImage`](nsbutton/alternateimage.md) or [`alternateTitle`](nsbutton/alternatetitle.md)). If the button has no alternate content to display, it may instead draw its normal content using an illuminated effect. When [`isHighlighted`](nscontrol/ishighlighted.md) is [`false`](https://developer.apple.com/documentation/Swift/false), the button displays its normal content (for example, its [`image`](nsbutton/image.md) or [`title`](nsbutton/title.md)).
 
 This option corresponds to the Momentary Change type in Interface Builder’s Attributes inspector.
 

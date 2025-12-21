@@ -22,7 +22,7 @@ If your app has real-time rendering threads that operate on their own deadlines,
 - [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
   If your Audio Unit plug-in creates auxiliary real-time rendering threads, add them to the host app’s audio workgroup so the system can schedule them appropriately.
 ### Device Workgroup
-- [var kAudioDevicePropertyIOThreadOSWorkgroup: AudioObjectPropertySelector { get }](../CoreAudio/kAudioDevicePropertyIOThreadOSWorkgroup.md)
+- [var kAudioDevicePropertyIOThreadOSWorkgroup: AudioObjectPropertySelector](../CoreAudio/kAudioDevicePropertyIOThreadOSWorkgroup.md)
   The device’s workgroup object, which you use to coordinate your threads with the threads of the device.
 
 ## See Also

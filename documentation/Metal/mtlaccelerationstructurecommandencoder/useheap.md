@@ -26,9 +26,9 @@ This method makes all the resources in the heap resident for the duration of a c
 
 Call this method before issuing any dispatch calls that may access the resources in the heap.
 
-You can only read or sample resources in the specified heap. This method ignores render targets (textures that specify a [`renderTarget`](mtltextureusage/rendertarget.md) usage option) and writable textures (textures that specify a [`shaderWrite`](mtltextureusage/shaderwrite.md) usage option) within the heap. To use these resources, you must call the [`useResource(_:usage:)`](mtlcomputecommandencoder/useresource(_:usage:).md) method instead.
+You can only read or sample resources in the specified heap. This method ignores render targets (textures that specify a [`renderTarget`](mtltextureusage/rendertarget.md) usage option) and writable textures (textures that specify a [`shaderWrite`](mtltextureusage/shaderwrite.md) usage option) within the heap. To use these resources, you need to call the [`useResource(_:usage:)`](mtlcomputecommandencoder/useresource(_:usage:).md) method instead.
 
-> **Note**:  To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) objects.
+> **Note**:  You can synchronize memory operations to address dependency hazards with [`MTLFence`](mtlfence.md) instances.
 
 ## Parameters
 

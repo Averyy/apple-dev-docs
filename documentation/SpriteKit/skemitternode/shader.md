@@ -17,7 +17,6 @@ A custom shader used to determine how particles are rendered.
 ## Declaration
 
 ```swift
-@MainActor
 var shader: SKShader? { get set }
 ```
 

@@ -23,7 +23,7 @@ Produces the line number on which it appears.
 
 #### Overview
 
-This macro’s value can be changed by `#sourceLocation`, as described in [`Line Control Statement`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements#Line-Control-Statement) in .
+This macro’s value can be changed by `#sourceLocation`, as described in [`Line Control Statement`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements#Line-Control-Statement) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
 ## See Also
 

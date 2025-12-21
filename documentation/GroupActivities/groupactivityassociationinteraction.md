@@ -6,7 +6,7 @@
 An interaction configures a view’s association with the current SharePlay group activity.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -57,10 +57,6 @@ func removeGroupActivityAssociation() {
 ### Instance Properties
 - [var associationKind: GroupActivityAssociationKind?](groupactivityassociationinteraction/associationkind.md)
   An optional value that indicates the kind of group activity association, if any.
-- [var view: UIView?](groupactivityassociationinteraction/view.md)
-### Instance Methods
-- [func didMove(to: UIView?)](groupactivityassociationinteraction/didmove(to:).md)
-- [func willMove(to: UIView?)](groupactivityassociationinteraction/willmove(to:).md)
 
 ## Relationships
 
@@ -87,8 +83,7 @@ func removeGroupActivityAssociation() {
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
-- [nonisolated func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](../SwiftUI/View/groupActivityAssociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [struct GroupActivityAssociationKind](groupactivityassociationkind.md)
   An association a user-interface element can have with a SharePlay group activity.

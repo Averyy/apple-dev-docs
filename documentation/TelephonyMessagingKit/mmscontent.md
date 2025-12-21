@@ -6,8 +6,8 @@
 A structure that holds the content of an MMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A structure that holds the content of an MMS message.
 ```swift
 struct MMSContent
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -43,12 +47,6 @@ You can use this structure when sending and receiving MMS messages.
   The recipients of the MMS message, as an array of MMS handles.
 - [struct MMSHandle](mmshandle.md)
   A structure that represents an MMS address.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmscontent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](mmscontent/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -17,7 +17,6 @@ The dimensions of the sprite, in points.
 ## Declaration
 
 ```swift
-@MainActor
 var size: CGSize { get set }
 ```
 

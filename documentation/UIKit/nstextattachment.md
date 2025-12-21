@@ -54,7 +54,7 @@ In macOS 12 and iOS 15 and later, [`NSTextAttachmentViewProvider`](nstextattachm
 - [var lineLayoutPadding: CGFloat](nstextattachment/linelayoutpadding.md)
   The layout padding before and after the text attachment bounds.
 ### Setting the attachment cell
-- [var attachmentCell: (any NSTextAttachmentCellProtocol)? { get set }](../AppKit/NSTextAttachment/attachmentCell.md)
+- [var attachmentCell: (any NSTextAttachmentCellProtocol)?](../AppKit/NSTextAttachment/attachmentCell.md)
   The object that draws the icon for the text attachment and handles mouse events.
 ### Constants
 - [class var character: Int](nstextattachment/character.md)

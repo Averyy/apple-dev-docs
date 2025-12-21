@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 
 **Availability**:
 - iOS 8.0+
@@ -18,6 +18,13 @@ An error code that indicates the system interrupted and terminated the command b
 ```swift
 static var timeout: MTLCommandBufferError.Code { get }
 ```
+
+#### Discussion
+
+Possible causes include:
+
+- The commands in the buffer took more time to run than the system allows.
+- The command buffer timed out waiting for another workload to signal an [`MTLEvent`](mtlevent.md).
 
 ## See Also
 

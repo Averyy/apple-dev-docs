@@ -22,7 +22,7 @@ var isGathering: Bool { get }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the query is in the initial gathering phase; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property contains [`true`](https://developer.apple.com/documentation/Swift/true) when the query is in the initial gathering phase; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

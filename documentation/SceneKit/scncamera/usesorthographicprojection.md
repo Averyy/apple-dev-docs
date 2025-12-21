@@ -22,9 +22,9 @@ var usesOrthographicProjection: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), specifying a perspective projection. In a perspective projection, equally sized objects nearer to the camera appear larger than those farther away.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), specifying a perspective projection. In a perspective projection, equally sized objects nearer to the camera appear larger than those farther away.
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to specify an orthographic projection. In an orthographic projection, equally sized objects appear equally sized regardless of distance from the camera.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to specify an orthographic projection. In an orthographic projection, equally sized objects appear equally sized regardless of distance from the camera.
 
 To control the magnification factor of an orthographic camera, use its [`orthographicScale`](scncamera/orthographicscale.md) property.
 

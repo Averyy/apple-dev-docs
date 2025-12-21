@@ -32,7 +32,7 @@ object GameCenterActivityVersionUpdateRequest
 - [object GameCenterActivityVersionDefaultImageLinkageResponse](gamecenteractivityversiondefaultimagelinkageresponse.md)
 - [object GameCenterActivityVersionLocalizationsLinkagesResponse](gamecenteractivityversionlocalizationslinkagesresponse.md)
 - [object GameCenterActivityVersionsLinkagesResponse](gamecenteractivityversionslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
   A response that contains a list of activity version resources.
 

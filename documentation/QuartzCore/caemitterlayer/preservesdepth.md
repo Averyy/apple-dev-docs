@@ -21,9 +21,9 @@ var preservesDepth: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the layer renders its particles as if they directly inhabit the three-dimensional coordinate space of the layer’s superlayer. When enabled, the effect of the layer’s `filters`, `backgroundFilters`, and shadow related properties is undefined.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the layer renders its particles as if they directly inhabit the three-dimensional coordinate space of the layer’s superlayer. When enabled, the effect of the layer’s `filters`, `backgroundFilters`, and shadow related properties is undefined.
 
-Default is [`false`](https://developer.apple.com/documentation/swift/false).
+Default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

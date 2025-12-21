@@ -52,7 +52,7 @@ Note that you don’t need to configure the [`Associated Domains Entitlement`](h
 
 To test your launch experience with a local experience:
 
-1. Build and run your App Clip on your test device to make sure it’s cached on the test device. For example, with the Fruta sample code project, follow the instructions to configure it, then run the `Fruta iOS Clip` scheme. To download the sample code project, visit [`Fruta: Building a Feature-Rich App with SwiftUI`](fruta_building_a_feature-rich_app_with_swiftui.md).
+1. Build and run your App Clip on your test device to make sure it’s cached on the test device. For example, with the Fruta sample code project, follow the instructions to configure it, then run the `Fruta iOS Clip` scheme. To download the sample code project, visit [`Fruta: Building a feature-rich app with SwiftUI`](fruta-building-a-feature-rich-app-with-swiftui.md).
 2. On your test device, open the Settings app, navigate to the iOS developer settings by choosing Developer > Local Experiences, and select Register Local Experience.
 3. Enter the invocation URL you want to test. In some cases, it may be a simple URL prefix like `https://fruta.example.com`. It can also be a longer invocation URL with path and query parameters.
 4. Enter the bundle ID of your App Clip.
@@ -64,7 +64,7 @@ To test your launch experience with a local experience:
 
 The following screenshot shows the interface you use to configure a local experience on iPhone:
 
-![A screenshot of an iPhone that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is A local App Clip experience, and its call-to-action verb is Open.](https://docs-assets.developer.apple.com/published/85a371cd6be59ba5d0d87e1ff607aa61/media-3686646%402x.png)
+![A screenshot of an iPhone that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is A local App Clip experience, and its call-to-action verb is Open.](https://docs-assets.developer.apple.com/published/2a952ad63d25ae376798d8dc31152766/settings-local-experience%402x.png)
 
 When you configure a local experience on a device, the local experience takes precedence over App Clip experiences you configure in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). However, local experiences only launch an App Clip that’s signed for Development, Ad Hoc, or TestFlight distribution. They don’t launch an App Clip or full app that’s published on the App Store. Remember to remove the local experience before testing App Clip experiences you configure in App Store Connect.
 

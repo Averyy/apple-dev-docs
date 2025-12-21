@@ -22,7 +22,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Resolved Issues
 
-- Fixed: macOS Previews can now be interacted with directly in the canvas. You can press and hold the Live preview mode button to switch between previewing in Xcode and previewing in the app-under-preview.   (49271058)
+- Fixed: macOS Previews can now be interacted with directly in the canvas. You can press and hold the Live preview mode button to switch between previewing in Xcode and previewing in the app-under-preview. (49271058)
 - Fixed: For apps linked on or after iOS 17 and aligned OS versions, `URL` parsing has updated from the obsolete RFC 1738/1808 parsing to the same RFC 3986 parsing as `URLComponents`. This unifies the parsing behaviors of the `URL` and `URLComponents` APIs. Now, `URL` automatically percent- or IDNA-encodes invalid characters to help create a valid URL. To check if a `urlString` is strictly valid according to the RFC, use the new `URL(string: urlString, encodingInvalidCharacters: false)` initializer. This init leaves all characters as they are and will return `nil` if `urlString` is explicitly invalid.  (93368104)
 - Fixed: TypeScript (.ts) files are directly editable in Xcode.  (93525048) (FB10021626)
 - Fixed: Swift function declarations across multiple lines are now more reliably pinned by Xcode’s “Show Code Structure While Scrolling” feature.  (94476783) (FB10047088)
@@ -91,9 +91,9 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### New Features
 
-- Archive builds now support the same set of eager compilation optimizations as other build actions, improving build performance.   (98526053)
-- Xcode now automatically generates intermediate text-based dynamic library (TBD) files for dynamic libraries and frameworks in your project. These stubs allow linker dependencies to be tracked more accurately, meaning changes which don’t change the set of exported symbols no longer require all transitive dependencies to relink, speeding up incremental builds.   (99972271)
-- Xcode now supports building and consuming macros defined in Swift Packages.   (101818756)
+- Archive builds now support the same set of eager compilation optimizations as other build actions, improving build performance. (98526053)
+- Xcode now automatically generates intermediate text-based dynamic library (TBD) files for dynamic libraries and frameworks in your project. These stubs allow linker dependencies to be tracked more accurately, meaning changes which don’t change the set of exported symbols no longer require all transitive dependencies to relink, speeding up incremental builds. (99972271)
+- Xcode now supports building and consuming macros defined in Swift Packages. (101818756)
 - XCFrameworks can be created from mergeable libraries and frameworks and will be merged or have mergeable metadata removed as appropriate when they are used. See the documentation [`Configuring your project to use mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).  (109124251)
 
 ###### Resolved Issues
@@ -104,10 +104,10 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 ``` You must use: ```None
  OTHER_LDFLAGS = $(inherited) -weak_library $(SDKROOT)/usr/lib/swift/libswiftAppleArchive.tbd
 ``` In other cases where the files referenced by linker flags may be produced by another build task, such as a build rule or shell script build phase, ensure that the file is explicitly listed as an output file of that build rule or shell script build phase.  (92049062)
-- Fixed an issue where build warnings in Swift files sometimes disappeared after an incremental build.   (105421512)
+- Fixed an issue where build warnings in Swift files sometimes disappeared after an incremental build. (105421512)
 - Fixed: If Xcode isn’t used to generate your content for App Store submission, the `Signatures` folder from your `xcarchive` will need to be added sidecar content.  (106438176)
 - Fixed: Using single-file build actions such as Preprocess or Assemble now works correctly when used on files with an overridden File Type. Previously, this may have produced a “missing input and no rule to build it” error.  (107736241) (FB12102123)
-- Fixed an issue where localization export of dependent frameworks could fail after running a regular build of the project.   (108867135) (FB12165312)
+- Fixed an issue where localization export of dependent frameworks could fail after running a regular build of the project. (108867135) (FB12165312)
 
 ###### Deprecations
 
@@ -303,7 +303,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### New Features
 
-- A new linker has been written to significantly speed up static linking.  It’s the default for all macOS, iOS, tvOS and visionOS binaries and anyone using the “Mergeable Libraries” feature.  The classic linker can still be explicitly requested using -ld64, and will be removed in a future release.   (108915312)
+- A new linker has been written to significantly speed up static linking.  It’s the default for all macOS, iOS, tvOS and visionOS binaries and anyone using the “Mergeable Libraries” feature.  The classic linker can still be explicitly requested using -ld64, and will be removed in a future release. (108915312)
 
 ###### Known Issues
 

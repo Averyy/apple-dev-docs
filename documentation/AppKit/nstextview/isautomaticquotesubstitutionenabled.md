@@ -17,7 +17,7 @@ var isAutomaticQuoteSubstitutionEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), automatic quotation mark substitution is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), it is disabled.
+If [`true`](https://developer.apple.com/documentation/Swift/true), automatic quotation mark substitution is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), it is disabled.
 
 Automatic quote substitution causes ASCII quotation marks and apostrophes to be automatically replaced, on a context-dependent basis, with more typographically accurate symbols.
 

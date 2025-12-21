@@ -22,7 +22,7 @@ var predicate: NSPredicate? { get }
 
 #### Discussion
 
-By default, the value of this property is `nil`, which means that it evaluates as [`true`](https://developer.apple.com/documentation/swift/true).
+By default, the value of this property is `nil`, which means that it evaluates as [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

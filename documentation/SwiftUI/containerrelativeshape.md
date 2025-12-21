@@ -40,8 +40,8 @@ struct ContainerRelativeShape
 
 ## See Also
 
-- [func containerShape<T>(T) -> some View](view/containershape(_:).md)
-  Sets the container shape to use for any container relative shape within this view.
+- [func containerShape(_:)](view/containershape(_:).md)
+  Sets the container shape to use for any container relative shape or concentric rectangle within this view.
 - [protocol InsettableShape](insettableshape.md)
   A shape type that is able to inset itself to produce another shape.
 

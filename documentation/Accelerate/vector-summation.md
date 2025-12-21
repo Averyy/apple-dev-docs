@@ -23,26 +23,6 @@ Sum the values in a vector.
   Returns the double-precision vector sum of squares.
 - [static func sumOfSquares<U>(U) -> Float](vdsp/sumofsquares(_:)-2sew6.md)
   Returns the single-precision vector sum of squares.
-- [vDSP_sve](vdsp_sve.md)
-  Calculates the sum of values in a single-precision vector.
-- [vDSP_sveD](vdsp_sved.md)
-  Calculates the sum of values in a double-precision vector.
-- [vDSP_svemg](vdsp_svemg.md)
-  Calculates the sum of magnitudes in a single-precision vector.
-- [vDSP_svemgD](vdsp_svemgd.md)
-  Calculates the sum of magnitudes in a double-precision vector.
-- [vDSP_svesq](vdsp_svesq.md)
-  Calculates the sum of squares in a single-precision vector.
-- [vDSP_svesqD](vdsp_svesqd.md)
-  Calculates the sum of squares in a double-precision vector.
-- [vDSP_sve_svesq](vdsp_sve_svesq.md)
-  Calculates the sum of values and the sum of squares in a single-precision vector.
-- [vDSP_sve_svesqD](vdsp_sve_svesqd.md)
-  Calculates the sum of values and the sum of squares in a double-precision vector.
-- [vDSP_svs](vdsp_svs.md)
-  Calculates the sum of signed squares in a single-precision vector.
-- [vDSP_svsD](vdsp_svsd.md)
-  Calculates the sum of signed squares in a double-precision vector.
 
 ## See Also
 

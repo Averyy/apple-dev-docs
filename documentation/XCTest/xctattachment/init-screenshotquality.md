@@ -28,7 +28,7 @@ Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtype
   Creates an attachment containing a representation of the provided image at the requested image quality.
 - [convenience init(screenshot: XCUIScreenshot)](xctattachment/init(screenshot:).md)
   Creates an attachment containing a PNG representation of the provided screenshot.
-- [@MainActor class XCUIScreenshot](../XCUIAutomation/XCUIScreenshot.md)
+- [class XCUIScreenshot](../XCUIAutomation/XCUIScreenshot.md)
   A captured image of a screen, app, or UI element state.
 - [XCTAttachment.ImageQuality](xctattachment/imagequality.md)
   Compression quality options for image-based attachments.

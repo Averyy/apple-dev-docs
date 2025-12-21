@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-A depth and stencil state object that specifies the depth and stencil configuration and operations used in a render pass.
+A depth and stencil state instance that specifies the depth and stencil configuration and operations used in a render pass.
 
 **Availability**:
 - iOS 8.0+
@@ -21,22 +21,24 @@ protocol MTLDepthStencilState : NSObjectProtocol, Sendable
 
 #### Overview
 
-The [`MTLDepthStencilState`](mtldepthstencilstate.md) protocol defines the interface for a lightweight object used to encode how a graphics rendering pass should perform depth and stencil operations. The [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) uses a [`MTLDepthStencilState`](mtldepthstencilstate.md) object to set the depth and stencil state for a rendering pass.
+The [`MTLDepthStencilState`](mtldepthstencilstate.md) protocol defines the interface for a lightweight instance used to encode how a graphics rendering pass should perform depth and stencil operations. The [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) uses an [`MTLDepthStencilState`](mtldepthstencilstate.md) instance to set the depth and stencil state for a rendering pass.
 
-Do not use standard allocation and initialization techniques to create a [`MTLDepthStencilState`](mtldepthstencilstate.md) object. To create a [`MTLDepthStencilState`](mtldepthstencilstate.md) object:
+The standard allocation and initialization techniques don’t apply when creating an [`MTLDepthStencilState`](mtldepthstencilstate.md) instance. Instead, you can apply the following steps:
 
-1. Create a [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) object that defines the operations you want the rendering pass to use.
-2. Then call the [`makeDepthStencilState(descriptor:)`](mtldevice/makedepthstencilstate(descriptor:).md) method of [`MTLDevice`](mtldevice.md) to create a [`MTLDepthStencilState`](mtldepthstencilstate.md) object.
+1. Create an [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance that defines the operations you want the rendering pass to use.
+2. Create an [`MTLDepthStencilState`](mtldepthstencilstate.md) instance by passing the descriptor to an [`MTLDevice`](mtldevice.md) instance’s [`makeDepthStencilState(descriptor:)`](mtldevice/makedepthstencilstate(descriptor:).md) method.
 
-Typically, you create [`MTLDepthStencilState`](mtldepthstencilstate.md) objects when your app is first initialized and then reuse them throughout the lifetime of your app.
+Typically, you create [`MTLDepthStencilState`](mtldepthstencilstate.md) instances when your app is first initialized and then reuse them throughout the lifetime of your app.
 
 ## Topics
 
-### Identifying Properties
+### Identifying properties
 - [var device: any MTLDevice](mtldepthstencilstate/device.md)
   The device from which this state object was created.
 - [var label: String?](mtldepthstencilstate/label.md)
   A string that identifies this object.
+### Instance Properties
+- [var gpuResourceID: MTLResourceID](mtldepthstencilstate/gpuresourceid.md)
 
 ## Relationships
 
@@ -47,10 +49,10 @@ Typically, you create [`MTLDepthStencilState`](mtldepthstencilstate.md) objects 
 
 ## See Also
 
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
 - [class MTLDepthStencilDescriptor](mtldepthstencildescriptor.md)
-  An object that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md) objects.
+  An instance that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md) instances.
 - [class MTLStencilDescriptor](mtlstencildescriptor.md)
   An object that defines the front-facing or back-facing stencil operations of a depth and stencil state object.
 

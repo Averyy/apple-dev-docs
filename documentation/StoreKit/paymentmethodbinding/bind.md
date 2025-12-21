@@ -18,7 +18,7 @@ func bind() async throws
 
 #### Discussion
 
-> ❗ **Important**:  This method displays a system prompt that asks users to authenticate with their Apple ID. Call this method only after an explicit user action, like tapping or clicking a button.
+> ❗ **Important**:  This method displays a system prompt that asks users to authenticate with their Apple Account. Call this method only after an explicit user action, like tapping or clicking a button.
 
 This method displays an Apple sheet that asks the user to confirm whether to add the payment method associated with the in-app binding ID ([`id`](paymentmethodbinding/id.md)). If the user confirms adding the payment method, it becomes the user’s primary payment method for media purchases and subscriptions from Apple.
 

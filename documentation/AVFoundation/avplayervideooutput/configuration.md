@@ -48,6 +48,10 @@ class Configuration
 
 ## See Also
 
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+  Retrieves a video sample along with auxiliary information for display at the specified host time.
+- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+  A video frame along with auxiliary information for display at the specified presentation time.
 - [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
 
 

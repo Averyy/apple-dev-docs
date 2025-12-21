@@ -11,12 +11,12 @@ An optional end point for routing directions.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate?|Place? destination;
+destination?: Coordinate | Place;
 ```
 
 #### Discussion
 
-If you use [`mapkit.Coordinate`](mapkit.coordinate.md) to request directions with [`route`](mapkit.directions/route.md), MapKit JS returns a `mapkit.Coordinate` in the direction’s response. If you use a string or a [`Place`](place.md) to request directions, the property may be `null` or a `Place` instance.
+If you use [`Coordinate`](coordinate.md) to request directions with [`route(request, callback)`](directions/route.md), MapKit JS returns a `mapkit.Coordinate` in the direction’s response. If you use a string or a [`Place`](place.md) to request directions, the property may be `null` or a `Place` instance.
 
 When MapKit JS returns a `Place` instance, it may contain additional details that weren’t included in the original item used to request directions.
 

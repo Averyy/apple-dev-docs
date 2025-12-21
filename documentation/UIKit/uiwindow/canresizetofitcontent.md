@@ -21,7 +21,7 @@ var canResizeToFitContent: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the window to maintain a fixed size. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) allows the system to perform constraints-based window sizing, which updates the window’s size to match the space needed by its content. Window-size changes occur only when the app runs on macOS.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes the window to maintain a fixed size. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) allows the system to perform constraints-based window sizing, which updates the window’s size to match the space needed by its content. Window-size changes occur only when the app runs on macOS.
 
 ## See Also
 

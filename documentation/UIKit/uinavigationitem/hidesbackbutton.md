@@ -20,7 +20,7 @@ var hidesBackButton: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the Back button is hidden when this navigation item is the top item. This is true regardless of the value in the [`leftItemsSupplementBackButton`](uinavigationitem/leftitemssupplementbackbutton.md) property. When set to [`false`](https://developer.apple.com/documentation/swift/false), the Back button is shown if it’s still present. (It can be replaced by values in either the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) properties.) The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the Back button is hidden when this navigation item is the top item. This is true regardless of the value in the [`leftItemsSupplementBackButton`](uinavigationitem/leftitemssupplementbackbutton.md) property. When set to [`false`](https://developer.apple.com/documentation/Swift/false), the Back button is shown if it’s still present. (It can be replaced by values in either the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) properties.) The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

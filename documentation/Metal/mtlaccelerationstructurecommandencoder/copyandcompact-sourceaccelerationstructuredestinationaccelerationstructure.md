@@ -22,9 +22,9 @@ func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, d
 
 #### Discussion
 
-The source and destination acceleration structures must not overlap in memory. The destination acceleration structure must be at least as large as the compacted size of the source acceleration structure, which you obtain by using the [`writeCompactedSize(accelerationStructure:buffer:offset:)`](mtlaccelerationstructurecommandencoder/writecompactedsize(accelerationstructure:buffer:offset:).md) method.
+The source and destination acceleration structures can’t overlap in memory. The destination acceleration structure needs to be at least as large as the compact size of the source acceleration structure, which you obtain by using the [`writeCompactedSize(accelerationStructure:buffer:offset:)`](mtlaccelerationstructurecommandencoder/writecompactedsize(accelerationstructure:buffer:offset:).md) method.
 
-If the source acceleration structure contains references to other acceleration structures, the copied acceleration structure references the same child structures.
+If the source acceleration structure contains references to other acceleration structures, the copy of the acceleration structure refers to the same child structures.
 
 ## Parameters
 

@@ -16,7 +16,7 @@ func write(toFile path: String, atomically atomicFlag: Bool, updateFilenames upd
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the write operation is successful, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the write operation is successful, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

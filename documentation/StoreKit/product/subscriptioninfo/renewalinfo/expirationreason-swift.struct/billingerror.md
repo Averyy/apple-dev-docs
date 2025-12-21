@@ -28,7 +28,7 @@ Check the value of [`isInBillingRetry`](product/subscriptioninfo/renewalinfo/isi
 - [static let autoRenewDisabled: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/autorenewdisabled.md)
   The auto-renewable subscription expired because the customer voluntarily canceled their subscription.
 - [static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/didnotconsenttopriceincrease.md)
-  The subscription expired because the customer didn’t consent to an auto-renewable subscription price increase that requires customer consent.
+  The subscription expired because the customer didn’t consent to a price increase that requires customer consent.
 - [static let productUnavailable: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/productunavailable.md)
   The auto-renewable subscription expired because the product was unavailable for purchase at the time of the renewal.
 - [static let unknown: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/unknown.md)

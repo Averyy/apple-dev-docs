@@ -25,7 +25,7 @@ An [`MTLBufferLayoutDescriptorArray`](mtlbufferlayoutdescriptorarray.md) defines
 
 ## Topics
 
-### Array Accessors
+### Array accessors
 - [subscript(Int) -> MTLBufferLayoutDescriptor!](mtlbufferlayoutdescriptorarray/subscript(_:).md)
   Returns the state of the specified buffer layout.
 

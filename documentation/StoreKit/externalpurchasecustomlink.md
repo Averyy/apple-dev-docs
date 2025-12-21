@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: enum
 
-Enables qualifying apps to offer custom links for external purchases.
+A value that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
 
 **Availability**:
 - iOS 18.1+
@@ -19,31 +19,53 @@ Enables qualifying apps to offer custom links for external purchases.
 enum ExternalPurchaseCustomLink
 ```
 
+## Mentions
+
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+
 #### Overview
 
-This functionality is only available to apps with the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement. For more information, see:
+This functionality is only available to apps with the any of the following entitlements:
 
-- [`Using alternative payment options on the App Store in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/apps-using-alternative-payment-providers-in-the-eu/)
+- [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)
+- [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link)
+- doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming.allowed-regions
+- [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
+
+For more information, see:
+
+- [`Communication and promotion of offers on the App Store in the EU`](https://developer.apple.comhttps://developer.apple.com/support/communication-and-promotion-of-offers-on-the-app-store-in-the-eu/)
 - [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/)
 
-##### Support External Purchases with Custom Links in Your App
+##### Communicate and Promote Offers
 
-If your account receives the StoreKit External Purchase Link entitlement, implement the following to offer custom links for external purchases:
+If your account receives the StoreKit External Purchase Link (EU) entitlement or the StoreKit External Custom Purchase Link Regions entitlement, your app can communicate and promote offers for digital goods or services available for purchase or download, in a distribution channel of your choice. Implement the following:
 
-- Configure the entitlement for your app. For more information, see [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link).
-- Configure the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key. Include the country code for each permitted region where your app offers external purchase custom links.
-- Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) type to determine whether external purchase is available.
-- At launch, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
-- Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, and before linking out to external purchases.
+- Depending on the entitlement you receive, configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app, or configure the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement and the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key, including the country code for each permitted region where your app communicates and promotes offers.
+- Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime.
+- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
+- Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, and before communicating and promoting offers.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
-##### Check Eligibility and Request Tokens When the App Launches
+For information about testing in the sandbox environment, see [`Testing transactions that use custom link tokens`](testing-transactions-that-use-custom-link-tokens.md).
 
-When your app launches, check whether its eligible to use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API. For more information, see [`isEligible`](externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](appstore/canmakepayments.md).
+##### Communicate and Promote Offers for Music Streaming Apps
+
+If your account receives the Music Streaming Services (EEA) entitlement or the StoreKit External Purchase Link Regions For Music Streaming entitlement, your music-streaming app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to communicate and promote offers for music streaming services. Custom links can be to a distribution channel of your choice. Implement the following:
+
+- Depending on the entitlement you receive, configure the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming.allowed-regions entitlement for your app, or configure the [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming) entitlement and the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions) property list key, including the country code for each permitted region where your app communicates and promotes offers for music streaming.
+- Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether external purchase is available at runtime.
+- At launch and before every potential transaction, call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function to request the external purchase tokens, using the token types `ACQUISITION` and `SERVICES`. Associate these tokens with a customer account on your server.
+- Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, and before communicating and promoting offers.
+- From your server, report the external purchase tokens and the transactions associated with the tokens by using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+
+##### Check Eligibility and Request Tokens
+
+When your app launches, check whether its eligible to use the `ExternalPurchaseCustomLink` API. For more information, see [`isEligible`](externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](appstore/canmakepayments.md).
 
 If your app is eligible, request both the `ACQUISITION` and `SERVICES` external purchase tokens. Associate and store these tokens with a customer account on your server. Use the tokens to report transactions to Apple.
 
-The following example code shows how to check for eligibility and request tokens:
+The following example code shows how to check for eligibility and request custom link tokens:
 
 ```swift
 // Ensure the app is eligible to use the external purchase custom link API.
@@ -56,7 +78,10 @@ let tokenTypes = ["ACQUISITION", "SERVICES"]
 // Request the tokens.
 for tokenType in tokenTypes {
     do {
-        tokens[tokenType] = try await ExternalPurchaseCustomLink.token(for: tokenType)
+        let token = try await ExternalPurchaseCustomLink.token(for: tokenType)
+        if let token {
+            tokens[tokenType] = token.value
+        }
     }
     catch {
         // Failed to get a token of type `tokenType`.
@@ -64,13 +89,13 @@ for tokenType in tokenTypes {
     }
 }
 
-// Add your code to manage the tokens, for example to associate them with
-// a customer account on your server. 
+// Add your code to manage the tokens, for example to associate them
+// with a customer account on your server.
 ```
 
-##### Display the Disclosure Notice Before Presenting Custom Links for External Purchases
+##### Display the Disclosure Notice Before Communicating and Promoting Offers
 
-The following SwiftUI code example shows how to check for eligibility, and then show the disclosure notice to determine whether to continue to offer external purchases:
+The following SwiftUI code example shows how to check for eligibility, and then show the disclosure notice to determine whether to continue to promoting offers:
 
 ```swift
 struct MyView: View {
@@ -106,12 +131,14 @@ struct MyView: View {
 
 ### Checking eligibility
 - [static var isEligible: Bool](externalpurchasecustomlink/iseligible.md)
-  A Boolean value that indicates at runtime whether the app can use this API to offer custom links for external purchases.
+  A Boolean value that indicates at runtime whether the app can use this API for external purchases.
 ### Getting external purchase tokens
 - [static func token(for: String) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:).md)
   Requests an external purchase token of the specified type.
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
-  An external purchase token for use with custom links.
+  A token you use with the External Purchase custom link API.
+- [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
+  Receive tokens for external purchases that you use to report transactions to Apple.
 ### Displaying the disclosure sheet
 - [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(type:).md)
   Displays the system disclosure notice sheet and asks the customer whether to continue.
@@ -119,6 +146,9 @@ struct MyView: View {
   The custom link out style that informs the type of disclosure notice to display.
 - [ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/noticeresult.md)
   The result of showing the disclosure notice.
+### Testing external purchase transactions
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+  Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
 
 ## Relationships
 
@@ -129,11 +159,15 @@ struct MyView: View {
 ## See Also
 
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
-  An external purchase token for use with custom links.
+  A token you use with the External Purchase custom link API.
+- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+  An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-purchase-link](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
 - [SKExternalPurchaseCustomLinkRegions](../BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+  Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
 
 
 ---

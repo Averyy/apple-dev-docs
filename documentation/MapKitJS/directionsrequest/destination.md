@@ -11,7 +11,7 @@ The end point for routing directions.
 ## Declaration
 
 ```swift
-attribute string|mapkit.Coordinate|Place destination;
+destination: string | Coordinate | Place;
 ```
 
 #### Discussion
@@ -32,7 +32,7 @@ The destination can be a string that’s an address, a coordinate, or a [`Place`
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

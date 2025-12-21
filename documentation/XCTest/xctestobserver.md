@@ -5,9 +5,6 @@
 
 An object that observes test activity and events.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

@@ -22,7 +22,8 @@ Get information about a specific app custom product page.
   Get a list of all custom product pages for a specific app.
 - [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [GET /v1/appCustomProductPages/{id}/relationships/appCustomProductPageVersions](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+- [Get all version IDs for an app custom product page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+  Get a list of custom product page version IDs associated with a custom product page.
 - [Delete an app custom product page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.
 

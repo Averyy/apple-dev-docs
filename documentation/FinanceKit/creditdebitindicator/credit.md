@@ -15,6 +15,11 @@ A value that indicates an amount which increases an asset or decreases a liabili
 case credit
 ```
 
+## See Also
+
+- [CreditDebitIndicator.debit](creditdebitindicator/debit.md)
+  A value that indicates an amount which increases a liability or decreases an asset.
+
 
 ---
 

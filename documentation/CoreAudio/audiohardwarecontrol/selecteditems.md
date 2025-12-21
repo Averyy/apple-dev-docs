@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of UInt32s that are the IDs of the items currently selected.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

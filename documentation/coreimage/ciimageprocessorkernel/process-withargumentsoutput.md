@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Method to override for customizing the kernel’s image processing.
+Override this class method to implement your Core Image Processor Kernel subclass.
 
 **Availability**:
 - iOS 10.0+
@@ -21,23 +21,28 @@ class func process(with inputs: [any CIImageProcessorInput]?, arguments: [String
 
 #### Discussion
 
-Override this method to perform custom image processing.
+When a `CIImage` containing your `CIImageProcessorKernel` class is rendered, your class’ implementation of this method will be called as needed for that render.  The method may be called more than once if Core Image needs to tile to limit memory usage.
+
+When your implementation of this class method is called, use the provided `inputs` and `arguments` objects to return processed pixel data to Core Image via `output`.
+
+> ❗ **Important**: This is a class method so that you cannot use or capture any state by accident. All the parameters that affect the output results must be passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
 
 ## Parameters
 
-- `inputs`: Inputs to this processor stage.
-- `arguments`: Dictionary of arguments mapping keys such as   to their values.
-- `output`: The output image following processing.
+- `inputs`: An array of   that the class consumes to produce its output.   The   may be larger than the rect returned by  .
+- `arguments`: The arguments dictionary that was passed to  .
+- `output`: The   that the   must provide results to.
 
 ## See Also
 
 - [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md)
-  Method to override when applying a custom image processor kernel to an image and returning the result.
+  Call this method on your Core Image Processor Kernel subclass to create a new image of the specified extent.
 - [class func formatForInput(at: Int32) -> CIFormat](ciimageprocessorkernel/formatforinput(at:).md)
-  Method to override for returning the image processing kernel’s input pixel format.
+  Override this class method if you want your any of the inputs to be in a specific pixel format.
 - [class func roi(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> CGRect](ciimageprocessorkernel/roi(forinput:arguments:outputrect:).md)
-  Method to override for determining specific region of input image required to process in rendering a specified region of the output image.
+  Override this class method to implement your processor’s ROI callback.
 - [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
+  Override this class method to implement your processor’s tiled ROI callback.
 
 
 ---

@@ -27,8 +27,8 @@ func resume()
 - [Downloading files in the background](downloading-files-in-the-background.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
-- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Discussion
 

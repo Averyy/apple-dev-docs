@@ -17,7 +17,7 @@ var autohidesScrollers: Bool { get set }
 
 #### Discussion
 
-The horizontal and vertical scroll bars are hidden independently of each other. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the content of the scroll view doesn’t extend beyond the size of the clip view on a given axis, the scroller on that axis is removed to leave more room for the content.
+The horizontal and vertical scroll bars are hidden independently of each other. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the content of the scroll view doesn’t extend beyond the size of the clip view on a given axis, the scroller on that axis is removed to leave more room for the content.
 
 > **Note**:  The `autohidesScrollers` property introduced in OS X v10.3, while still relevant for legacy-style scrollers, does not apply to the automatic hiding behavior of overlay-style scrollers. The property may still be set, but is ignored by a scroll view that’s using overlay scrollers.
 

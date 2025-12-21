@@ -94,8 +94,6 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericlocation.md)
   The generic location representation of a timezone.
 ### Comparing Time Zones
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Enumerations
@@ -103,6 +101,7 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
   A type representing the width of a timezone in a format style.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

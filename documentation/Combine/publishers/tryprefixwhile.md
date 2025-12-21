@@ -22,24 +22,19 @@ struct TryPrefixWhile<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Prefix While Publisher
+### Creating a try-prefix-while publisher
 - [init(upstream: Upstream, predicate: (Publishers.TryPrefixWhile<Upstream>.Output) throws -> Bool)](publishers/tryprefixwhile/init(upstream:predicate:).md)
   Creates a publisher that republishes elements while an error-throwing predicate closure indicates publishing should continue.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryPrefixWhile.Output](publishers/tryprefixwhile/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryPrefixWhile.Failure](publishers/tryprefixwhile/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryprefixwhile/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.TryPrefixWhile<Upstream>.Output) throws -> Bool](publishers/tryprefixwhile/predicate.md)
   The error-throwing closure that determines whether publishing should continue.
-### Applying Operators
-- [Publisher Operators](publishers-tryprefixwhile-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryprefixwhile/publisher-implementations.md)
 
 ## Relationships
 

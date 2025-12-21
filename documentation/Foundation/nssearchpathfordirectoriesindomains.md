@@ -22,7 +22,7 @@ func NSSearchPathForDirectoriesInDomains(_ directory: FileManager.SearchPathDire
 
 #### Discussion
 
-Creates a list of path strings for the specified directories in the specified domains. The list is in the order in which you should search the directories. If `expandTilde` is [`true`](https://developer.apple.com/documentation/swift/true), tildes are expanded as described in [`expandingTildeInPath`](nsstring/expandingtildeinpath.md).
+Creates a list of path strings for the specified directories in the specified domains. The list is in the order in which you should search the directories. If `expandTilde` is [`true`](https://developer.apple.com/documentation/Swift/true), tildes are expanded as described in [`expandingTildeInPath`](nsstring/expandingtildeinpath.md).
 
 You should consider using the [`FileManager`](filemanager.md) methods [`urls(for:in:)`](filemanager/urls(for:in:).md) and [`url(for:in:appropriateFor:create:)`](filemanager/url(for:in:appropriatefor:create:).md). which return URLs, which are the preferred format.
 

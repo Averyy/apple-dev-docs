@@ -21,7 +21,7 @@ class AUParameterGroup
 
 #### Overview
 
-A parameter group is KVC-compliant for its children. For example, calling the parameter group’s doc://com.apple.documentation/documentation/objectivec/nsobject/1412591-value method, with a key value of , returns a child whose [`identifier`](auparameternode/identifier.md) value matches that key.
+A parameter group is KVC-compliant for its children. For example, calling the parameter group’s [`value(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKey:)) method, with a key value of , returns a child whose [`identifier`](auparameternode/identifier.md) value matches that key.
 
 ## Topics
 

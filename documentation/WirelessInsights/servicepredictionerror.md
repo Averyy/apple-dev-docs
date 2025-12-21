@@ -6,8 +6,8 @@
 A type that represents errors encountered while using the WirelessInsights framework.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,18 +23,6 @@ enum ServicePredictionError
 ### Handling connectivity errors
 - [ServicePredictionError.connectionError](servicepredictionerror/connectionerror.md)
   An unexpected error occurred while setting up the event stream.
-### Operators
-- [static func == (ServicePredictionError, ServicePredictionError) -> Bool](servicepredictionerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](servicepredictionerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](servicepredictionerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](servicepredictionerror/equatable-implementations.md)
-- [Error Implementations](servicepredictionerror/error-implementations.md)
 
 ## Relationships
 

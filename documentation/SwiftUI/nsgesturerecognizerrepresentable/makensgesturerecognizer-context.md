@@ -7,7 +7,7 @@
 Creates an instance of the represented gesture recognizer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

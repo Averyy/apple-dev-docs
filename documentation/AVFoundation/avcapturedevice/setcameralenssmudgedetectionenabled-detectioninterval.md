@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,16 +20,25 @@ func setCameraLensSmudgeDetectionEnabled(_ cameraLensSmudgeDetectionEnabled: Boo
 
 #### Discussion
 
-Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
+Each run of detection processes frames over a short period, and produces one detection result. Use `detectionInterval` to specify the interval time between each run of detections. For example, when [`isCameraLensSmudgeDetectionEnabled`](avcapturedevice/iscameralenssmudgedetectionenabled.md) is set to `true` and `detectionInterval` is set to 1 minute, detection runs once per minute, and updates [`AVCaptureCameraLensSmudgeDetectionStatus`](avcapturecameralenssmudgedetectionstatus.md). If `detectionInterval` is set to `kCMTimeInvalid`, detection runs only once after the session starts. If `detectionInterval` is set to `kCMTimeZero`, detection runs continuously.
 
-Each run of detection processes frames over a short period, and produces one detection result. Use `detectionInterval` to specify the interval time between each run of detections. For example, when `cameraLensSmudgeDetectionEnabled` is set to YES and `detectionInterval` is set to 1 minute, detection runs once per minute, and updates `AVCaptureCameraLensSmudgeDetectionStatus`. If `detectionInterval` is set to `kCMTimeInvalid`, detection will only run once after the session starts. If `detectionInterval` is set to `kCMTimeZero`, detection will run continuously.
-
-AVCaptureDevice throws an NSInvalidArgumentException if `cameraLensSmudgeDetectionSupported` property on the current active format returns NO. From disabled (or stopped) to enabling requires a lengthy reconfiguration of the capture render pipeline, so if you intend to enable this feature, you should enable this detection before calling -[AVCaptureSession startRunning] or within -[AVCaptureSession beginConfiguration] and -[AVCaptureSession commitConfiguration] while running.
+[`AVCaptureDevice`](avcapturedevice.md) throws an `NSInvalidArgumentException` if the [`isCameraLensSmudgeDetectionSupported`](avcapturedevice/format/iscameralenssmudgedetectionsupported.md) property on the current active format returns `false`. Enabling detection requires a lengthy reconfiguration of the capture render pipeline, so you should enable detection before calling [`startRunning()`](avcapturesession/startrunning().md) or within [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) while running.
 
 ## Parameters
 
 - `cameraLensSmudgeDetectionEnabled`: Specify whether camera lens smudge detection should be enabled.
 - `detectionInterval`: The detection running interval if detection is enabled.
+
+## See Also
+
+- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+  Whether camera lens smudge detection is enabled.
+- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
+  The camera lens smudge detection interval.
+- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
+  A value specifying the status of camera lens smudge detection.
+- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
+  Constants indicating the current camera lens smudge detection status.
 
 
 ---

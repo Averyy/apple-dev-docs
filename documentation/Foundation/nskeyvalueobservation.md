@@ -42,7 +42,9 @@
 ## See Also
 
 - [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+  A collection of key-value observations which may be registered with multiple observable objects
 - [class NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobserverssnapshot.md)
+  A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 
 
 ---

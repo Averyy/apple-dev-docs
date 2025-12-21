@@ -21,8 +21,8 @@ class UNNotificationCategory
 
 ## Mentions
 
-- [Generating a remote notification](generating-a-remote-notification.md)
 - [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Generating a remote notification](generating-a-remote-notification.md)
 
 #### Overview
 

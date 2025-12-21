@@ -1,4 +1,4 @@
-# Using Function Specialization to Build Pipeline Variants
+# Using function specialization to build pipeline variants
 
 **Framework**: Metal
 
@@ -36,7 +36,7 @@ Traditionally, branches that differ between draw calls are mitigated in one of t
 - Writing per-branch functions. Each branch is written as a complete and separate function, and the render loop determines which function to use at runtime. This approach greatly increases code duplication because all possible outcomes of each branch condition require their own standalone function. For example, a single `if` statement requires one function for the `true` outcome and another function for the `false` outcome.
 - Using preprocessor directives. Instead of using a regular `if` statement, functions can use the `#if` preprocessor directive that selectively compiles a function after evaluating its branch conditions. This approach avoids code duplication but reduces the performance benefits of precompiled Metal shading language code. Because the branch conditions can only be evaluated at runtime, the functions can’t be precompiled at build time.
 
-Metal’s  feature reduces branch performance costs, avoids code duplication, and leverages build time compilation. Function specialization allows you to create multiple executable versions of a single source function. You create specialized functions by declaring  in your Metal shading language code and setting their values at runtime. Doing so allows the front-end compiler to precompile your source function at build time and the back-end compiler to compile the specialized function at runtime, when the pipeline is created.
+The Metal  feature reduces branch performance costs, avoids code duplication, and leverages build time compilation. Function specialization allows you to create multiple executable versions of a single source function. You create specialized functions by declaring  in your Metal shading language code and setting their values at runtime. Doing so allows the front-end compiler to precompile your source function at build time and the back-end compiler to compile the specialized function at runtime, when the pipeline is created.
 
 ##### Define Your Lod Selection Criteria
 
@@ -50,7 +50,7 @@ The `isTexturedProperty:atQualityLevel:` method controls whether a material prop
 + (BOOL)isTexturedProperty:(AAPLFunctionConstant)propertyIndex atQualityLevel:(AAPLQualityLevel)quality
 {
     AAPLQualityLevel minLevelForProperty = AAPLQualityLevelHigh;
-    
+
     switch(propertyIndex)
     {
         case AAPLFunctionConstantBaseColorMapIndex:
@@ -60,7 +60,7 @@ The `isTexturedProperty:atQualityLevel:` method controls whether a material prop
         default:
             break;
     }
-    
+
     return quality <= minLevelForProperty;
 }
 ```
@@ -277,7 +277,7 @@ Finally, the render loop draws each submesh in the model with the specific LOD p
 
 - [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
-- [Shader Libraries](shader-libraries.md)
+- [Shader libraries](shader-libraries.md)
   Manage and load your app’s Metal shaders.
 
 

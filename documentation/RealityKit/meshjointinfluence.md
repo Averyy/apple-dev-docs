@@ -10,7 +10,7 @@ A binding to a joint, which consists of the joint’s index and the weight of th
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS ?+
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -44,8 +44,14 @@ To transform a vertex position by a joint, the initial vertex position is first 
 
 ## See Also
 
+- [MeshResource.Skeleton](meshresource/skeleton.md)
+  A skeleton consists of a hierarchy of joints. Each joint defines a coordinate space. Portions of a model may be thought of as having a position in a joint’s local space.
+- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
+  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
 - [struct MeshSkeletonCollection](meshskeletoncollection.md)
   An object that holds a collection of skeletons used by a mesh resource.
+- [MeshResource.JointInfluences](meshresource/jointinfluences.md)
+  A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
 
 
 ---

@@ -17,11 +17,11 @@ optional func collectionView(_ collectionView: NSCollectionView, canDragItemsAt 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag operation can begin or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drag operation can begin or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 
-If you do not implement this method and your collection view has only one section, the collection view calls the legacy [`collectionView(_:canDragItemsAt:with:)`](nscollectionviewdelegate/collectionview(_:candragitemsat:with:)-39rjh.md) method. If you do not implement either method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method and your collection view has only one section, the collection view calls the legacy [`collectionView(_:canDragItemsAt:with:)`](nscollectionviewdelegate/collectionview(_:candragitemsat:with:)-39rjh.md) method. If you do not implement either method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

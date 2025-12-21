@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: property
 
-A closure the system calles when an extension process exits.
+The closure to run if the app extension’s process exits unexpectedly.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ var onInterruption: () -> Void
 
 #### Discussion
 
-A closure that the system calls if the extension process created from this configuration exits. The configuration sets this property to nil before it calls the handler block.
+Use your closure to respond to the loss of the app extension process. For example, use it to try and reestablish connection to the app extension or to remove the app extension from the list of active extensions.
 
 
 ---

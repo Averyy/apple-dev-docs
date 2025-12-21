@@ -7,12 +7,12 @@
 Configures the store action for the stencil attachment.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,13 @@ func setStencilStoreAction(_ storeAction: MTLStoreAction)
 ## Parameters
 
 - `storeAction`: A store action for the stencil attachment that   can’t be  .
+
+## See Also
+
+- [func setColorStoreAction(MTLStoreAction, index: Int)](mtl4rendercommandencoder/setcolorstoreaction(_:index:).md)
+  Configures the store action for a color attachment.
+- [func setDepthStoreAction(MTLStoreAction)](mtl4rendercommandencoder/setdepthstoreaction(_:).md)
+  Configures the store action for the depth attachment.
 
 
 ---

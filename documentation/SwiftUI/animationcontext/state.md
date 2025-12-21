@@ -35,7 +35,7 @@ private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
 }
 ```
 
-To provide access the pausable state, the following code extends `AnimationContext` to include the `pausableState` property. This property returns an instance of the custom `PausableState` structure stored in [`state`](animationcontext/state.md), and it can also store a new `PausableState` instance in `state`.
+To provide access to the pausable state, the following code extends `AnimationContext` to include the `pausableState` property. This property returns an instance of the custom `PausableState` structure stored in [`state`](animationcontext/state.md), and it can also store a new `PausableState` instance in `state`.
 
 ```swift
 extension AnimationContext {

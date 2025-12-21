@@ -24,11 +24,11 @@ You may set the value of a capture device’s [`activeFormat`](avcapturedevice/a
 1. Set it directly using one of the formats in the device’s [`formats`](avcapturedevice/formats.md) property.
 2. The capture session sets it on your behalf when you set its [`sessionPreset`](avcapturesession/sessionpreset.md) property.
 
-Depending on the device and format, you may configure the default auto exposure behavior differently when you use one method or the other, resulting in non-uniform auto exposure behavior. Auto exposure defaults include [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), and [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md). You can set this property to [`true`](https://developer.apple.com/documentation/swift/true) to ensure that the system applies consistent default behaviors to the device regardless of the way you set the active format.
+Depending on the device and format, you may configure the default auto exposure behavior differently when you use one method or the other, resulting in non-uniform auto exposure behavior. Auto exposure defaults include [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), and [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md). You can set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to ensure that the system applies consistent default behaviors to the device regardless of the way you set the active format.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-> **Note**:  Manually setting the device’s [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), or [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  Manually setting the device’s [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), or [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

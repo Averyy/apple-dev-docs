@@ -21,7 +21,14 @@ If an asset account has a positive balance, then the [`CreditDebitIndicator`](cr
 
 If a liability account has a  balance, then the `CreditDebitIndicator` is `CreditDebitIndicator/debit`. If it has been  then the `CreditDebitIndicator` is `CreditDebitIndicator/credit`.
 
-> **Note**: FinanceKit considers a zero balance to be a credit balance.
+> **Note**:  FinanceKit considers a zero balance to be a credit balance.
+
+## See Also
+
+- [let amount: CurrencyAmount](balance/amount.md)
+  The amount of the balance.
+- [let asOfDate: Date](balance/asofdate.md)
+  The date and time the system calculated the balance.
 
 
 ---

@@ -20,6 +20,11 @@ The closure to execute on completion.
 final var receiveCompletion: (Subscribers.Completion<Failure>) -> Void { get }
 ```
 
+## See Also
+
+- [var receiveValue: (Input) -> Void](subscribers/sink/receivevalue.md)
+  The closure to execute on receipt of a value.
+
 
 ---
 

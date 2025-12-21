@@ -6,7 +6,7 @@
 A behavior that keeps the system’s immersive environment as is when opening a scene.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

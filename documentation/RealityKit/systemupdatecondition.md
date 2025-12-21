@@ -10,7 +10,7 @@ A condition which causes a system to update.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -29,6 +29,8 @@ struct SystemUpdateCondition
 
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
   Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
+- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
+  Rotate an entity around an axis using a Component and a System.
 - [protocol System](system.md)
   An object that affects multiple entities in every update of a RealityKit scene.
 - [struct SceneUpdateContext](sceneupdatecontext.md)

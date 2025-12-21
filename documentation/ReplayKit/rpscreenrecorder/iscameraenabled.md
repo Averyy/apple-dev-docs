@@ -20,7 +20,7 @@ var isCameraEnabled: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to enable the camera. When the app runs in visionOS, the value in this property is [`false`](https://developer.apple.com/documentation/swift/false) and assigning a new value has no effect.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to enable the camera. When the app runs in visionOS, the value in this property is [`false`](https://developer.apple.com/documentation/Swift/false) and assigning a new value has no effect.
 
 You can use this property for key-value observing.
 

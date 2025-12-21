@@ -6,8 +6,8 @@
 The role of the accessory’s Wi-Fi Aware’s service.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

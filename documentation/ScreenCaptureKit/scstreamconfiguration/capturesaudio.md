@@ -17,7 +17,7 @@ var capturesAudio: Bool { get set }
 
 #### Discussion
 
-A stream doesn’t capture audio by default. Set this value to [`true`](https://developer.apple.com/documentation/swift/true) if you require audio capture.
+A stream doesn’t capture audio by default. Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) if you require audio capture.
 
 ## See Also
 

@@ -63,8 +63,6 @@ The default date style is `numeric`.
 - [static let omitted: Date.FormatStyle.DateStyle](date/formatstyle/datestyle/omitted.md)
   A date style with no date-related components represented.
 ### Comparing Date Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

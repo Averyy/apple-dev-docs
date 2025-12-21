@@ -26,11 +26,11 @@ var hasLeftEyePosition: Bool { get }
 - [var hasMouthPosition: Bool](cifacefeature/hasmouthposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s mouth.
 - [var leftEyePosition: CGPoint](cifacefeature/lefteyeposition-swift.property.md)
-  The coordinates of the left eye, in image coordinates.
+  The image coordinate of the center of the left eye.
 - [var rightEyePosition: CGPoint](cifacefeature/righteyeposition-swift.property.md)
-  The coordinates of the right eye, in image coordinates
+  The image coordinate of the center of the right eye.
 - [var mouthPosition: CGPoint](cifacefeature/mouthposition-swift.property.md)
-  The coordinates of the mouth, in image coordinates
+  The image coordinate of the center of the mouth.
 - [var hasSmile: Bool](cifacefeature/hassmile-swift.property.md)
   A Boolean value that indicates whether a smile is detected in the face.
 - [var leftEyeClosed: Bool](cifacefeature/lefteyeclosed-swift.property.md)

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload to apply a set of declaration to the device through the Settings app.
+The payload that applies a set of declarations to the device through the Settings app.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,9 @@ object Declarations
 
 Specify `com.apple.declarations` as the payload type.
 
-> **Note**:  Install this profile manually, not through an MDM server, which enables manual installations of declarations when an MDM enrollment isn’t present.
+This profile applies a set of declarations to the device. Users use this profile to install declarations without requiring an MDM enrollment. A device management server can’t install a configuration profile containing this payload type. Device management servers need to use declarative device management to install declarations.
+
+> ❗ **Important**:  When a user installs the profile, the device only applies configuration declarations that allow a “local” enrollment. Consult the documentation for each configuration type to see if you can use it.
 
 ##### Profile Availability
 
@@ -103,21 +105,21 @@ Specify `com.apple.declarations` as the payload type.
 ## See Also
 
 - [object EnergySaver](energysaver.md)
-  The payload you use to configure energy-saver settings.
+  The payload that configures Energy Saver settings.
 - [object FileProvider](fileprovider.md)
-  The payload you use to configure file provider settings.
+  The payload that configures file provider settings.
 - [object Font](font.md)
-  The payload you use to configure fonts.
+  The payload that configures fonts.
 - [object LockScreenMessage](lockscreenmessage.md)
-  The payload you use to configure a Lock screen message.
+  The payload that configures a Lock Screen message.
 - [object Screensaver](screensaver.md)
-  The payload you use to configure the screen saver.
+  The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
-  The payload you use to configure system extensions.
+  The payload that configures system extensions.
 - [object SystemLogging](systemlogging.md)
-  The payload you use to configure system logging.
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
-  The payload you use to configure the time server.
+  The payload that configures the time server.
 
 
 ---

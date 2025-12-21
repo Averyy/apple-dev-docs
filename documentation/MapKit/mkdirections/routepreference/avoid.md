@@ -24,8 +24,6 @@ case avoid
 
 - [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
   The option that specifies any available route.
-- [MKDirections.RoutePreference.any](mkdirections/routepreference/any.md)
-  The option that specifies any available route.
 
 
 ---

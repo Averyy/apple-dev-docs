@@ -3,13 +3,15 @@
 **Framework**: Metal  
 **Kind**: class
 
+The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,11 +19,15 @@
 class MTL4CompilerTaskOptions
 ```
 
+#### Overview
+
+You can configure task-specific settings that affect a compilation task by creating an instance of this class, setting its properties, and passing it to one of the applicable methods of an [`MTL4Compiler`](mtl4compiler.md) instance.
+
 ## Topics
 
 ### Instance Properties
 - [var lookupArchives: [any MTL4Archive]?](mtl4compilertaskoptions/lookuparchives.md)
-  Specifies a set of archive instances this compilation process uses for accelerating the build process.
+  An array of archive instances that can potentially accelerate a compilation task.
 
 ## Relationships
 
@@ -38,11 +44,11 @@ class MTL4CompilerTaskOptions
 
 ## See Also
 
-- [Metal Libraries](metal-libraries.md)
+- [Metal libraries](metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal Dynamic Libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal Binary Archives](metal-binary-archives.md)
+- [Metal binary archives](metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
 - [protocol MTL4Compiler](mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
@@ -58,8 +64,6 @@ class MTL4CompilerTaskOptions
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
-  Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 

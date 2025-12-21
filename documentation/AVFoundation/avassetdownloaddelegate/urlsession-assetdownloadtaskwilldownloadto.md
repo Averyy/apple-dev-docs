@@ -39,6 +39,8 @@ Save the returned URL to instantiate the asset in the future.
   Tells the delegate that a download task finished downloading the requested asset.
 - [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, willDownloadVariants: [AVAssetVariant])](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadvariants:).md)
   Tells the delegate that a download task completed variant selection.
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didReceive: AVMetricEvent)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didreceive:).md)
+  Sent when a download task receives an AVMetricEvent.
 
 
 ---

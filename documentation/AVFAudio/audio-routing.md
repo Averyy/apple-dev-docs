@@ -30,6 +30,7 @@ Inspect and configure audio routes, ports, and data sources.
   An array of available data sources for the audio session’s current input port.
 - [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
   Selects a data source for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 ### Configuring outputs
 - [var outputDataSources: [AVAudioSessionDataSourceDescription]?](avaudiosession/outputdatasources.md)
   An array of available output data sources for the current audio route.

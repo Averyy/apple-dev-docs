@@ -22,7 +22,7 @@ func commit()
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Discussion

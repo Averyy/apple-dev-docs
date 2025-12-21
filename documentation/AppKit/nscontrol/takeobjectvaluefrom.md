@@ -32,7 +32,7 @@ You can use this method to link action messages between controls. It permits one
 - [func takeIntValueFrom(Any?)](nscontrol/takeintvaluefrom(_:).md)
   Sets the value of the receiver’s cell to an integer value obtained from the specified object.
 - [func takeIntegerValueFrom(Any?)](nscontrol/takeintegervaluefrom(_:).md)
-  Sets the value of the receiver’s cell to an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value obtained from the specified object.
+  Sets the value of the receiver’s cell to an `NSInteger` value obtained from the specified object.
 - [func takeStringValueFrom(Any?)](nscontrol/takestringvaluefrom(_:).md)
   Sets the value of the receiver’s cell to the string value obtained from the specified object.
 

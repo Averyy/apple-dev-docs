@@ -19,6 +19,8 @@ To add this entitlement to your app with the correct associated value, enable th
 
 ## See Also
 
+- [Account Creation Requires Phone Number](entitlements/com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
+  A Boolean value that indicates whether an app requires someone to provide a phone number to create an account.
 - [AutoFill Credential Provider Entitlement](entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 

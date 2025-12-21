@@ -41,50 +41,51 @@ view.traitOverrides.theme = .monochrome
 
 ## Topics
 
-### Defining custom traits
+### Getting and setting trait values
 - [var accessibilityContrast: UIAccessibilityContrast](uimutabletraits-13ja5/accessibilitycontrast.md)
-- [struct UITraitAccessibilityContrast](uitraitaccessibilitycontrast-swift.struct.md)
+  The accessibility contrast associated with the current environment.
 - [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
-- [struct UITraitActiveAppearance](uitraitactiveappearance-swift.struct.md)
+  A property that indicates whether the user interface has an active appearance.
 - [var displayGamut: UIDisplayGamut](uimutabletraits-13ja5/displaygamut.md)
-- [struct UITraitDisplayGamut](uitraitdisplaygamut-swift.struct.md)
+  The gamut of the current display.
 - [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)
-- [struct UITraitDisplayScale](uitraitdisplayscale-swift.struct.md)
+  The display scale of the trait collection.
 - [var forceTouchCapability: UIForceTouchCapability](uimutabletraits-13ja5/forcetouchcapability.md)
-- [struct UITraitForceTouchCapability](uitraitforcetouchcapability-swift.struct.md)
+  The Force Touch capability value of the trait collection.
 - [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](uimutabletraits-13ja5/headroomusagelimit.md)
-- [struct UITraitHDRHeadroomUsageLimit](uitraithdrheadroomusagelimit-swift.struct.md)
-- [enum UIHDRHeadroomUsageLimit](uihdrheadroomusagelimit.md)
+  The HDR headroom usage limit associated with the current environment.
 - [var horizontalSizeClass: UIUserInterfaceSizeClass](uimutabletraits-13ja5/horizontalsizeclass.md)
-- [struct UITraitHorizontalSizeClass](uitraithorizontalsizeclass-swift.struct.md)
+  The horizontal size class of the trait collection.
 - [var imageDynamicRange: UIImage.DynamicRange](uimutabletraits-13ja5/imagedynamicrange.md)
-- [struct UITraitImageDynamicRange](uitraitimagedynamicrange-swift.struct.md)
+  The image dynamic range associated with the current environment.
 - [var layoutDirection: UITraitEnvironmentLayoutDirection](uimutabletraits-13ja5/layoutdirection.md)
-- [struct UITraitLayoutDirection](uitraitlayoutdirection-swift.struct.md)
+  The layout direction associated with the current environment.
 - [var legibilityWeight: UILegibilityWeight](uimutabletraits-13ja5/legibilityweight.md)
-- [struct UITraitLegibilityWeight](uitraitlegibilityweight-swift.struct.md)
+  The font weight to apply to text.
 - [var listEnvironment: UIListEnvironment](uimutabletraits-13ja5/listenvironment.md)
-- [struct UITraitListEnvironment](uitraitlistenvironment-swift.struct.md)
+  The style of the containing list in a collection view or table view.
 - [var preferredContentSizeCategory: UIContentSizeCategory](uimutabletraits-13ja5/preferredcontentsizecategory.md)
-- [struct UITraitPreferredContentSizeCategory](uitraitpreferredcontentsizecategory-swift.struct.md)
+  The font sizing option preferred by the user.
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uimutabletraits-13ja5/resolvesnaturalalignmentwithbasewritingdirection.md)
+  The setting for whether the system resolves natural alignment with base writing direction for the current environment.
 - [var sceneCaptureState: UISceneCaptureState](uimutabletraits-13ja5/scenecapturestate.md)
-- [struct UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)
+  The scene capture state for the current environment.
 - [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uimutabletraits-13ja5/splitviewcontrollerlayoutenvironment.md)
-- [struct UITraitSplitViewControllerLayoutEnvironment](uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
+  The split view controller layout for the current environment.
 - [var tabAccessoryEnvironment: UITabAccessory.Environment](uimutabletraits-13ja5/tabaccessoryenvironment.md)
-- [struct UITraitTabAccessoryEnvironment](uitraittabaccessoryenvironment-swift.struct.md)
+  The tab accessory environment for the current trait collection.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](uimutabletraits-13ja5/toolbaritempresentationsize.md)
-- [struct UITraitToolbarItemPresentationSize](uitraittoolbaritempresentationsize-swift.struct.md)
+  The presentation size of a toolbar item in an AppKit toolbar.
 - [var typesettingLanguage: Locale.Language?](uimutabletraits-13ja5/typesettinglanguage.md)
-- [struct UITraitTypesettingLanguage](uitraittypesettinglanguage-swift.struct.md)
+  The typesetting language associated with the current environment.
 - [var userInterfaceIdiom: UIUserInterfaceIdiom](uimutabletraits-13ja5/userinterfaceidiom.md)
-- [struct UITraitUserInterfaceIdiom](uitraituserinterfaceidiom-swift.struct.md)
+  The user interface idiom of the trait collection.
 - [var userInterfaceLevel: UIUserInterfaceLevel](uimutabletraits-13ja5/userinterfacelevel.md)
-- [struct UITraitUserInterfaceLevel](uitraituserinterfacelevel-swift.struct.md)
+  The elevation level of the interface.
 - [var userInterfaceStyle: UIUserInterfaceStyle](uimutabletraits-13ja5/userinterfacestyle.md)
-- [struct UITraitUserInterfaceStyle](uitraituserinterfacestyle-swift.struct.md)
+  The style associated with the user interface.
 - [var verticalSizeClass: UIUserInterfaceSizeClass](uimutabletraits-13ja5/verticalsizeclass.md)
-- [struct UITraitVerticalSizeClass](uitraitverticalsizeclass-swift.struct.md)
+  The vertical size class of the trait collection.
 ### Subscripts
 - [subscript<T>(T.Type) -> T.Value](uimutabletraits-13ja5/subscript(_:)-19j2e.md)
 - [subscript<T>(T.Type) -> T.Value](uimutabletraits-13ja5/subscript(_:)-1b2k9.md)
@@ -114,8 +115,6 @@ view.traitOverrides.theme = .monochrome
 - [func modifyingTraits((inout any UIMutableTraits) -> Void) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
 - [Automatic trait tracking](automatic-trait-tracking.md)
   Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-  Change images and resources dynamically when the screen gamut on your device changes.
 - [class UITraitCollection](uitraitcollection.md)
   A collection of data that represents the environment for an individual element in your app’s user interface.
 - [protocol UITraitEnvironment](uitraitenvironment.md)

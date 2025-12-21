@@ -19,7 +19,7 @@ class NSMagnificationGestureRecognizer
 
 This object tracks pinch gestures on a track pad or other input device and stores the resulting magnification value for you to use in your code.
 
-This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Topics
 

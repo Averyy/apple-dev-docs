@@ -8,8 +8,8 @@ Codes that identify errors in Managed App Distribution.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 - visionOS 2.4+
 
 ## Declaration
@@ -20,9 +20,6 @@ enum ManagedAppDistributionError
 
 ## Topics
 
-### Creating an error object
-- [init(from: any Decoder) throws](managedappdistributionerror/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Inspecting errors
 - [ManagedAppDistributionError.deviceNotManaged](managedappdistributionerror/devicenotmanaged.md)
   An error that indicates this device isn’t managed.
@@ -53,25 +50,11 @@ enum ManagedAppDistributionError
   Attempt to recover from this error when someone selects the option at the given index.
 - [func attemptRecovery(optionIndex: Int, resultHandler: (Bool) -> Void)](managedappdistributionerror/attemptrecovery(optionindex:resulthandler:).md)
   Attempt to recover from this error when someone selects the option at the given index.
-### Operators
-- [static func == (ManagedAppDistributionError, ManagedAppDistributionError) -> Bool](managedappdistributionerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ManagedAppDistributionError.appNotManaged](managedappdistributionerror/appnotmanaged.md)
   An error that indicates that the calling app is not managed
 - [ManagedAppDistributionError.licenseNotFound](managedappdistributionerror/licensenotfound.md)
   An error that indicates that a license wasn’t found for requested app.
-### Instance Properties
-- [var hashValue: Int](managedappdistributionerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](managedappdistributionerror/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](managedappdistributionerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](managedappdistributionerror/equatable-implementations.md)
-- [Error Implementations](managedappdistributionerror/error-implementations.md)
 
 ## Relationships
 

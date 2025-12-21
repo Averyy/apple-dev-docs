@@ -6,7 +6,7 @@
 An optional value that indicates the kind of group activity association, if any.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

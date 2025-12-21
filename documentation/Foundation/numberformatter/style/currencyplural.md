@@ -44,18 +44,6 @@ This style behaves like the [`NumberFormatter.Style.currency`](numberformatter/s
   An accounting currency style format that uses the currency symbol defined by the number formatter locale.
 - [NumberFormatter.Style.currencyISOCode](numberformatter/style/currencyisocode.md)
   A currency style format that uses the ISO 4217 currency code defined by the number formatter locale.
-- [NumberFormatter.Style.none](numberformatter/style/none.md)
-  An integer representation.
-- [NumberFormatter.Style.decimal](numberformatter/style/decimal.md)
-  A decimal style format.
-- [NumberFormatter.Style.percent](numberformatter/style/percent.md)
-  A percent style format.
-- [NumberFormatter.Style.scientific](numberformatter/style/scientific.md)
-  A scientific style format.
-- [NumberFormatter.Style.spellOut](numberformatter/style/spellout.md)
-  A style format in which numbers are spelled out in the language defined by the number formatter locale.
-- [NumberFormatter.Style.ordinal](numberformatter/style/ordinal.md)
-  An ordinal style format.
 
 
 ---

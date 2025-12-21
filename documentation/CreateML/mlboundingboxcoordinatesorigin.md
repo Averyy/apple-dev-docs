@@ -21,18 +21,6 @@ enum MLBoundingBoxCoordinatesOrigin
   An origin at the image’s top-left corner.
 - [MLBoundingBoxCoordinatesOrigin.bottomLeft](mlboundingboxcoordinatesorigin/bottomleft.md)
   An origin at the image’s bottom-left corner.
-### Comparing errors
-- [static func == (MLBoundingBoxCoordinatesOrigin, MLBoundingBoxCoordinatesOrigin) -> Bool](mlboundingboxcoordinatesorigin/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlboundingboxcoordinatesorigin/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Getting the hash value
-- [func hash(into: inout Hasher)](mlboundingboxcoordinatesorigin/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mlboundingboxcoordinatesorigin/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](mlboundingboxcoordinatesorigin/equatable-implementations.md)
 
 ## Relationships
 

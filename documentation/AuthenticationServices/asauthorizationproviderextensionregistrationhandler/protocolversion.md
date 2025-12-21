@@ -14,7 +14,7 @@ optional func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOPr
 
 ## Mentions
 
-- [Creating extensions that support platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
 
 ## See Also
 

@@ -67,7 +67,7 @@ Your application can enable this capability on a global basis and then manually 
 
 Alternatively, your application can manually enable and disable this functionality. Creating a process assigns a counter that indicates if the process is safe to terminate. You decrement and increment the counter using the methods [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) and [`disableSuddenTermination()`](processinfo/disablesuddentermination().md). A value of `0` enables the system to terminate the process without first sending a notification or event.
 
-Your application can support sudden termination upon launch by adding a key to the application’s `Info.plist` file. If the [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination) key exists in the `Info.plist` file and has a value of [`true`](https://developer.apple.com/documentation/swift/true), it’s the equivalent of calling [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) during your application launch. This allows the system to terminate the process immediately. You can still override this behavior by invoking [`disableSuddenTermination()`](processinfo/disablesuddentermination().md).
+Your application can support sudden termination upon launch by adding a key to the application’s `Info.plist` file. If the [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination) key exists in the `Info.plist` file and has a value of [`true`](https://developer.apple.com/documentation/Swift/true), it’s the equivalent of calling [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) during your application launch. This allows the system to terminate the process immediately. You can still override this behavior by invoking [`disableSuddenTermination()`](processinfo/disablesuddentermination().md).
 
 Typically, you disable sudden termination whenever your app defers work that the app must complete before it terminates. If, for example, your app defers writing data to disk and enables sudden termination, you should bracket the sensitive operations with a call to [`disableSuddenTermination()`](processinfo/disablesuddentermination().md), perform the necessary operations, and then send a balancing [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) message.
 
@@ -102,6 +102,8 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   A Boolean value that indicates whether the process originated as an iOS app and runs on macOS.
 - [var isiOSAppOnMac: Bool](processinfo/isiosapponmac.md)
   A Boolean value that indicates whether the process is an iPhone or iPad app running on a Mac.
+- [var isiOSAppOnVision: Bool](processinfo/isiosapponvision.md)
+  A Boolean value that indicates whether the process is an iPhone or iPad app running on visionOS.
 - [var processIdentifier: Int32](processinfo/processidentifier.md)
   The identifier of the process (often called process ID).
 - [var processName: String](processinfo/processname.md)
@@ -132,8 +134,12 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   The version of the operating system on which the process is executing.
 - [func isOperatingSystemAtLeast(OperatingSystemVersion) -> Bool](processinfo/isoperatingsystematleast(_:).md)
   Returns a Boolean value indicating whether the version of the operating system on which the process is executing is the same or later than the given version.
+- [struct OperatingSystemVersion](operatingsystemversion.md)
+  A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers.
 - [func operatingSystem() -> Int](processinfo/operatingsystem.md)
   Returns a constant to indicate the operating system on which the process is executing.
+- [Anonymous](1552984-anonymous.md)
+  The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
 - [func operatingSystemName() -> String](processinfo/operatingsystemname.md)
   Returns a string containing the name of the operating system on which the process is executing.
 ### Getting Computer Information
@@ -158,21 +164,16 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   Synchronously perform an activity defined by a given block using the given options.
 - [func performExpiringActivity(withReason: String, using: (Bool) -> Void)](processinfo/performexpiringactivity(withreason:using:).md)
   Performs the specified block asynchronously and notifies you if the process is about to be suspended.
+- [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
+  Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
 ### Getting the Thermal State
 - [var thermalState: ProcessInfo.ThermalState](processinfo/thermalstate-swift.property.md)
   The current thermal state of the system.
+- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
+  Values used to indicate the system’s thermal state.
 ### Determining Whether Low Power Mode is Enabled
 - [var isLowPowerModeEnabled: Bool](processinfo/islowpowermodeenabled.md)
   A Boolean value that indicates the current state of Low Power Mode.
-### Constants
-- [struct OperatingSystemVersion](operatingsystemversion.md)
-  A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers.
-- [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
-  Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
-- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
-  Values used to indicate the system’s thermal state.
-- [Anonymous](1552984-anonymous.md)
-  The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
 ### Notifications
 - [class let thermalStateDidChangeNotification: NSNotification.Name](processinfo/thermalstatedidchangenotification.md)
   Posts when the thermal state of the system changes.

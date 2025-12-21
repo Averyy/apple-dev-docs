@@ -25,7 +25,7 @@ var renameFile: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.files.renameFile` schema:
 
 ```swift
-@AssistantIntent(schema: .files.renameFile)
+@AppIntent(schema: .files.renameFile)
 struct RenameFileIntent: AppIntent {
     @Parameter
     var target: ExampleFileEntity

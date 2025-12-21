@@ -24,7 +24,7 @@ Setting a [`sessionPreset`](avcapturesession/sessionpreset.md) value provides a 
 
 ## Topics
 
-### Quality Levels
+### Quality levels
 - [static let high: AVCaptureSession.Preset](avcapturesession/preset/high.md)
   A preset suitable for capturing high-quality output.
 - [static let medium: AVCaptureSession.Preset](avcapturesession/preset/medium.md)
@@ -34,10 +34,10 @@ Setting a [`sessionPreset`](avcapturesession/sessionpreset.md) value provides a 
 ### Photo
 - [static let photo: AVCaptureSession.Preset](avcapturesession/preset/photo.md)
   A preset suitable for capturing high-resolution photo quality output.
-### Manual Configuration
+### Manual configuration
 - [static let inputPriority: AVCaptureSession.Preset](avcapturesession/preset/inputpriority.md)
   A preset that doesn’t specify audio and video output settings for a capture session.
-### High Definition
+### High definition
 - [static let qHD960x540: AVCaptureSession.Preset](avcapturesession/preset/qhd960x540.md)
   A preset suitable for capturing quarter HD quality (960 x 540 pixel) video output.
 - [static let hd1280x720: AVCaptureSession.Preset](avcapturesession/preset/hd1280x720.md)

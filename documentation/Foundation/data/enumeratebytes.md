@@ -31,10 +31,6 @@ In some cases, (for example, a [`Data`](data.md) backed by a `dispatch_data_t`, 
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](data/foreach(_:).md)
-  Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](data/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
 - [func makeIterator() -> Data.Iterator](data/makeiterator.md)
   Returns an iterator over the contents of the data.
 

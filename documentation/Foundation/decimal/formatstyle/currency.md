@@ -56,6 +56,7 @@ struct Currency
   The locale of the format style.
 ### Instance Methods
 - [func notation(Decimal.FormatStyle.Currency.Configuration.Notation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/notation(_:).md)
+  Modifies the format style to use the specified notation.
 
 ## Relationships
 

@@ -21,10 +21,6 @@ func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier) a
 
 #### Discussion
 
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier) async throws -> EKVirtualConferenceDescriptor
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 To add calendar events using your virtual conference services, EventKit calls this method to retrieve the details for a virtual conference, including how a user joins the virtual conference. The room type identifier is one that your provider identified in a previous call to [`fetchAvailableRoomTypes(completionHandler:)`](ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:).md).
 
 ```swift

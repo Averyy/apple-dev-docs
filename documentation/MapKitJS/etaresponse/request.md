@@ -11,7 +11,7 @@ The request object associated with the estimated time of arrival response.
 ## Declaration
 
 ```swift
-attribute Object request;
+request: object;
 ```
 
 ## See Also

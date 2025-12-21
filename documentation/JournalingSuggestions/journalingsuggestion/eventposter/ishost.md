@@ -6,7 +6,7 @@
 Boolean whether the user is the host of the event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

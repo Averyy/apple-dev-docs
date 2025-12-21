@@ -6,8 +6,8 @@
 Creates a video stream analyzer for the given call participant and stream option.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

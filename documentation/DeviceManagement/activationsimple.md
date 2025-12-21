@@ -23,6 +23,8 @@ object ActivationSimple
 
 Specify `com.apple.activation.simple` as the declaration type.
 
+##### Activation Examples
+
 
 ---
 

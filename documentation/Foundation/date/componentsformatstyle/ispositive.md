@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Controls whether the format input is formatted as a positive or negative range.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var isPositive: Bool
 ```
+
+#### Discussion
+
+When the range is formatted as a positive value, the returned string describes the time from `lowerBound` to `upperBound`. When `isPositive` is set to `false`, the returned string describes the time from `upperBound` to `lowerBound`.
 
 
 ---

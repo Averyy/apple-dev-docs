@@ -47,6 +47,7 @@ This function offers thread safety for apps that intend to call [`update()`](pha
   Stops all audio playback.
 - [var renderingState: PHASESoundEvent.RenderingState](phaseengine/renderingstate.md)
   The status of the engine’s audio playback.
+- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
 
 
 ---

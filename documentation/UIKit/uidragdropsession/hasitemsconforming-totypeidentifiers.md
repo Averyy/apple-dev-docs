@@ -21,7 +21,7 @@ func hasItemsConforming(toTypeIdentifiers typeIdentifiers: [String]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a drag item in the session conforms to any UTI in the specified array; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if a drag item in the session conforms to any UTI in the specified array; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

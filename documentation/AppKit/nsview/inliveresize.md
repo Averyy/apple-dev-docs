@@ -17,7 +17,7 @@ var inLiveResize: Bool { get }
 
 #### Discussion
 
-AppKit sets the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) when a live resizing operation involving the view is underway. Use this property to determine when to optimize your view’s drawing behavior. Typically, you access this property from your [`draw(_:)`](nsview/draw(_:).md) method and use the value to change the fidelity of the content you draw, or to draw your content more efficiently.
+AppKit sets the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) when a live resizing operation involving the view is underway. Use this property to determine when to optimize your view’s drawing behavior. Typically, you access this property from your [`draw(_:)`](nsview/draw(_:).md) method and use the value to change the fidelity of the content you draw, or to draw your content more efficiently.
 
 ## See Also
 

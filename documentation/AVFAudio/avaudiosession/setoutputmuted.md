@@ -6,9 +6,9 @@
 Sets a Boolean value to inform the system to mute the session’s output audio. The default value is false (unmuted).
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -26,6 +26,21 @@ Changes in output mute state can be observed via [`outputMuteStateChangeNotifica
 - `error`: A pointer to an error object. If an error occurs, the framework sets the pointer to an error object that describes the failure.
 
 > **Note**: This will not mute system sounds and haptics.
+
+## See Also
+
+- [var isOutputMuted: Bool](avaudiosession/isoutputmuted.md)
+  A Boolean value that indicates whether audio output is in a muted state.
+- [class let outputMuteStateChangeNotification: NSNotification.Name](avaudiosession/outputmutestatechangenotification.md)
+  Notification sent to registered listeners when session’s output mute state changes.
+- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
+  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
+- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
+  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
 
 
 ---

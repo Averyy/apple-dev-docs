@@ -3,20 +3,28 @@
 **Framework**: Network  
 **Kind**: init
 
+Create TLV with the specified sizes for the type and length fields.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 init<T, L, BelowProtocol>(type: T.Type, length: L.Type, @ProtocolStackBuilder<BelowProtocol> _ builder: () -> BelowProtocol) where T : Sendable, T : UnsignedInteger, L : Sendable, L : UnsignedInteger, BelowProtocol : StreamProtocol
 ```
+
+## Parameters
+
+- `type`: The object type to use for the   field.
+- `length`: The object type to use for the   field.
+- `builder`: The protocol stack below TLV.
 
 
 ---

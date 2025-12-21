@@ -10,7 +10,7 @@ Options for the location on the shape of where particles are born, used by the b
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

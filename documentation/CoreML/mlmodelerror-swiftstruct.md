@@ -50,7 +50,6 @@ struct MLModelError
 ### Error Domain
 - [let MLModelErrorDomain: String](mlmodelerrordomain.md)
   The domain for Core ML errors.
-### Type Properties
 - [static var errorDomain: String](mlmodelerror-swift.struct/errordomain.md)
 
 ## Relationships

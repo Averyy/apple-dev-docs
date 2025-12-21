@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s CardDAV account details.
+A status report of the client’s Contacts account details.
 
 **Availability**:
 - iOS 16.0+

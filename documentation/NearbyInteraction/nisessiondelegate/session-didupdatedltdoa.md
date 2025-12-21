@@ -3,11 +3,11 @@
 **Framework**: Nearby Interaction  
 **Kind**: method
 
-This is called when new updates about DL-TDOA measurement are available.
+Provides device ranging estimates for a Downlink Time-Difference-of-Arrival session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,12 +17,12 @@ optional func session(_ session: NISession, didUpdateDLTDOA measurements: [NIDLT
 
 #### Discussion
 
-> **Note**: This will only be called after successfully running an NISession with an NIDLTDOAConfiguration.
+The framework invokes this callback to provide measurements for sessions that run [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md).
 
 ## Parameters
 
-- `session`: The session that updated NI DL-TDOA measurement.
-- `measurements`: The measurements update from a NI DL-TDOA session
+- `session`: The session that provides a Downlink Time-Difference-of-Arrival measurement.
+- `measurements`: The measurement updates for the session.
 
 
 ---

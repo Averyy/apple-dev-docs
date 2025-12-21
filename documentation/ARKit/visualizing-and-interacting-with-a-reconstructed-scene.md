@@ -11,18 +11,19 @@ Estimate the shape of the physical environment using a polygonal mesh.
 
 #### Overview
 
-On a fourth-generation iPad Pro running iPad OS 13.4 or later, ARKit uses the LiDAR Scanner to create a polygonal model of the physical environment. The LiDAR Scanner quickly retrieves depth information from a wide area in front of the user, so ARKit can estimate the shape of the real world without requiring the user to move. ARKit converts the depth information into a series of vertices that connect to form a . To partition the information, ARKit makes multiple anchors, each assigned a unique portion of the mesh. Collectively, the mesh anchors represent the real-world  around the user.
+On a fourth-generation iPad Pro running iPadOS 13.4 or later, ARKit uses the LiDAR Scanner to create a polygonal model of the physical environment. The LiDAR Scanner quickly retrieves depth information in front of the person for ARKit to estimate and reconstruct the shape of the real world. ARKit converts the depth information into a series of vertices that connect to form a mesh. To partition the information, ARKit makes multiple anchors, each assigned a unique portion of the mesh. Collectively, the mesh anchors represent the real-world scene around the person.
 
 With these meshes, you can:
 
-- More accurately locate points on real-world surfaces.
+- Locate points on real-world surfaces more accurately.
 - Classify real-world objects that ARKit can recognize.
 - Occlude your app’s virtual content with real-world objects that are in front of it.
-- Have virtual content interact with the physical environment realistically, for example, by bouncing a virtual ball off a real-world wall and having the ball follow the laws of physics.
+- Enable virtual content to interact with the physical environment realistically. For example, by bouncing a virtual ball off a real-world wall or having the ball follow the laws of physics.
+- Render shadows or re-light the real-world scene.
 
-This sample app presents an AR experience using RealityKit. The figure below illustrates how RealityKit leverages real-world information from ARKit, and creates a debug visualization when you run this app and point the device at a real-world chair.
+This sample app presents an AR experience using RealityKit. The figure below illustrates how RealityKit leverages real-world information from ARKit, and creates a debug visualization when you run this app and point the device at a chair in the real world.
 
-![Screenshot of a chair visible in the camera feed with a mesh overlay visualized by RealityKit.](https://docs-assets.developer.apple.com/published/29bde685f765a041c1b8598d443ece07/meshing3-annotated.png)
+![Screenshot of a chair visible in the camera feed with a mesh overlay visualized by RealityKit.](https://docs-assets.developer.apple.com/published/c10c2f87039acb45fadd7b33c6975a63/meshing3-annotated%402x.png)
 
 #### Visualize the Shape of the Physical Environment
 
@@ -50,7 +51,7 @@ arView.session.run(configuration)
 
 ##### Add Plane Detection
 
-When an app enables plane detection with scene reconstruction, ARKit considers that information when making the mesh. Where the LiDAR scanner may produce a slightly uneven mesh on a real-world surface, ARKit smooths out the mesh where it detects a plane on that surface.
+When an app enables plane detection with scene reconstruction, ARKit considers that information when making the mesh. Where the LiDAR scanner may produce a slightly uneven mesh on a real-world surface, ARKit flattens the mesh where it detects a plane on that surface.
 
 To demonstrate the difference that plane detection makes on meshes, this app displays a toggle button. In the button handler, the sample adjusts the plane-detection configuration and restarts the session to effect the change.
 
@@ -81,7 +82,7 @@ if let result = arView.raycast(from: tapLocation, allowing: .estimatedPlane, ali
     // ...
 ```
 
-![Figure of a meshed, real-world vase with a ray intersecting its surface.](https://docs-assets.developer.apple.com/published/8e1b0cf9f959aa288390653880cef84b/armchair-annotated.png)
+![Figure of a meshed, real-world chair with a ray intersecting its surface.](https://docs-assets.developer.apple.com/published/aa18949bf8ae46830224595cf0fce152/armchair-annotated%402x.png)
 
 When the user’s raycast returns a result, this app gives visual feedback by placing a small sphere at the intersection point.
 
@@ -91,7 +92,7 @@ resultAnchor.addChild(sphere(radius: 0.01, color: .lightGray))
 arView.scene.addAnchor(resultAnchor, removeAfter: 3)
 ```
 
-![Screenshot of a virtual sphere placed on the surface of a mesh that intersected the user's raycast.](https://docs-assets.developer.apple.com/published/f44bcf3882c5044d5d363edacec8867e/insersection-sphere-annotated.png)
+![Screenshot of a virtual sphere placed on the surface of a mesh that intersected the user's raycast.](https://docs-assets.developer.apple.com/published/7f0bd07b6b5a7950279f6ff321cd5c72/insersection-sphere-annotated%402x.png)
 
 #### Classify Real World Objects
 
@@ -99,7 +100,7 @@ ARKit has a classification feature that analyzes its meshed model of the world t
 
 If the user taps the screen and the raycast intersects with a meshed, real-world object, this app displays text of the mesh’s classification.
 
-![Figure of a meshed, real-world vase with a label that displays its classification.](https://docs-assets.developer.apple.com/published/088d0505c5e78f580315ab0614265770/classified-sized.png)
+![Figure of a meshed, real-world chair with a label that displays its classification.](https://docs-assets.developer.apple.com/published/3c7f59c876ad10dd6096ed1f0053e0d9/classified-sized%402x.png)
 
 When the [`automaticallyConfigureSession`](https://developer.apple.com/documentation/RealityKit/ARView/automaticallyConfigureSession) property of [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) is `true`, RealityKit disables classification by default because it isn’t required for occlusion and physics. To enable mesh classification, the sample overrides the default by setting the [`sceneReconstruction`](arworldtrackingconfiguration/scenereconstruction.md) property to [`meshWithClassification`](arconfiguration/scenereconstruction/meshwithclassification.md).
 
@@ -116,7 +117,7 @@ nearbyFaceWithClassification(to: result.worldTransform.position) { (centerOfFace
     // ...
 ```
 
-Every three vertices in the mesh form a triangle, called a  ARKit assigns a classification for each face, so the sample searches through the mesh for a face near the intersection point. If the face has a classification, this app displays it on screen. Because this routine involves extensive processing, the sample does the work asynchronously, so the renderer does not stall.
+The mesh consists of triangles, called . ARKit assigns a classification for each face, and the app searches through the mesh for a face near the intersection point. If the face has a classification, the app displays it onscreen. Because this routine involves extensive processing, the sample processes the mesh faces asynchronously, so the renderer doesn’t stall.
 
 ```swift
 DispatchQueue.global().async {
@@ -183,7 +184,7 @@ if let centerOfFace = centerOfFace {
 }
 ```
 
-![Screenshot of a virtual sphere that identifies the origin of a classified mesh.](https://docs-assets.developer.apple.com/published/fbb582ff4cccac286b4809b2209cd530/classified-text-annotated.png)
+![Screenshot of a virtual sphere that identifies the origin of a classified mesh.](https://docs-assets.developer.apple.com/published/d68eaeb34c4cfd4e3d524d23e939ab17/classified-text-annotated%402x.png)
 
 ##### Occlude Virtual Content with a Mesh
 
@@ -195,7 +196,7 @@ arView.environment.sceneUnderstanding.options.insert(.occlusion)
 
 At runtime, this app omits drawing portions of the virtual text that are behind any part of the meshed, real world.
 
-![Screenshot of a real-world table that occludes a virtual object placed by the app.](https://docs-assets.developer.apple.com/published/0c1bd38500afe3c9d33badfc08a024fb/table-floor-annotated.png)
+![Screenshot of a real-world table that occludes a virtual object placed by the app.](https://docs-assets.developer.apple.com/published/e31f1ad134fb6a739a9f04b3fbdae3c0/table-floor-annotated%402x.png)
 
 ##### Interact with Real World Objects Using Physics
 
@@ -205,7 +206,7 @@ With scene meshes, virtual content can interact with the physical environment re
 arView.environment.sceneUnderstanding.options.insert(.physics)
 ```
 
-To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`scene`](https://developer.apple.com/documentation/RealityKit/scene) extension.
+To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) extension.
 
 ```swift
 if model.collision == nil {
@@ -214,7 +215,7 @@ if model.collision == nil {
 }
 ```
 
-When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s doc://com.apple.documentation/documentation/realitykit/modelentity/physicsBody’s [`mode`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic), the text reacts to gravity by falling.
+When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s [`physicsBody`](https://developer.apple.com/documentation/RealityKit/HasPhysicsBody/physicsBody)’s [`mode`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic), the text reacts to gravity by falling.
 
 ```swift
 Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { (timer) in
@@ -224,7 +225,7 @@ Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { (timer) in
 
 As the text falls, it reacts when colliding with a meshed, real-world object, such as landing on the floor.
 
-![Screenshot of a virtual ball falling through the basket of a real-world basketball hoop.](https://docs-assets.developer.apple.com/published/611d960874841264017cc8bd2604b392/windows-annotated.png)
+![Screenshot of a real-world window with the virtual text window falling down to the floor.](https://docs-assets.developer.apple.com/published/97a3080a388ec8164d8ef1e75e82a7ef/windows-annotated%402x.png)
 
 ## See Also
 

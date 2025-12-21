@@ -7,7 +7,7 @@ An enumeration describing possible status a process will report on exit.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 
@@ -26,8 +26,6 @@ You can convert an instance of this type to an instance of [`ExitTest.Condition`
   The process exited with the given exit code.
 - [ExitStatus.signal(_:)](exitstatus/signal(_:).md)
   The process exited with the given signal.
-### Default Implementations
-- [Equatable Implementations](exitstatus/equatable-implementations.md)
 
 ## Relationships
 

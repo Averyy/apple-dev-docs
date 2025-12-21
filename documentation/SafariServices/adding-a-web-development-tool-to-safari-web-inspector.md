@@ -12,7 +12,7 @@ In Safari 16 or later, you can create a custom web development tool that can ins
 
 For example, you may build webpages with a custom web framework or architecture, where the built-in web development tools are not sufficient to see how components interact, how state is managed, or how events are processed. Your tool could provide support that specifically addresses the development needs of that custom web framework or architecture.
 
-You deliver your tool in a Safari web extension. When a user downloads your extension, your tool appears as a new tab in Web Inspector. For more information about creating a new extension, see [`Creating a Safari web extension`](creating-a-safari-web-extension.md). For more information about converting an existing web extension that works in another browser, see [`Converting a web extension for Safari`](converting-a-web-extension-for-safari.md). After you create or convert the extension, configure your Safari web extension manifest so that Safari adds your tool to Web Inspector, and satisfy requirements for Safari user permissions.
+You deliver your tool in a Safari web extension. When a user downloads your extension, your tool appears as a new tab in Web Inspector. For more information about creating a new extension, see [`Creating a Safari web extension`](creating-a-safari-web-extension.md). For more information about packaging an existing web extension that works in another browser, see [`Packaging a web extension for Safari`](packaging-a-web-extension-for-safari.md). After you create or package the extension, configure your Safari web extension manifest so that Safari adds your tool to Web Inspector, and satisfy requirements for Safari user permissions.
 
 ##### Add the Web Development Tool to Your Extension
 
@@ -49,8 +49,8 @@ Install and run your extension. For more information, see [`Running your Safari 
 
 - [Creating a Safari web extension](creating-a-safari-web-extension.md)
   Build a Safari web extension in Xcode.
-- [Converting a web extension for Safari](converting-a-web-extension-for-safari.md)
-  Convert your existing extension to a Safari web extension using Xcode’s command-line tool.
+- [Packaging a web extension for Safari](packaging-a-web-extension-for-safari.md)
+  Package your existing extension as a Safari web extension using Xcode’s command-line tool.
 - [Updating a Safari web extension](updating-a-safari-web-extension.md)
   Add new features and fix bugs in your Safari web extension using Xcode tools.
 - [Managing Safari web extension permissions](managing-safari-web-extension-permissions.md)

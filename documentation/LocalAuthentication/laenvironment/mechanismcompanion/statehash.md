@@ -19,6 +19,8 @@ var stateHash: Data? { get }
 
 #### Discussion
 
+Hash of the current companion pairing as returned by @c LAContext.domainState.companion.stateHash(for:)
+
 If no companion are paired for this companion type, @c stateHash property is @c nil. If at least one companion is paired for this companion type, @c stateHash is not @c nil and it changes whenever the set of paired companions of this type is changed.
 
 

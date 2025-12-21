@@ -41,12 +41,8 @@ Task.detached {
 - [func makeAsyncIterator() -> SystemCoordinator.GroupImmersionStyles.Iterator](systemcoordinator/groupimmersionstyles/makeasynciterator.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 ### Type Aliases
-- [SystemCoordinator.GroupImmersionStyles.AsyncIterator](systemcoordinator/groupimmersionstyles/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [SystemCoordinator.GroupImmersionStyles.Element](systemcoordinator/groupimmersionstyles/element.md)
   The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](systemcoordinator/groupimmersionstyles/asyncsequence-implementations.md)
 
 ## Relationships
 

@@ -77,6 +77,14 @@ By choosing custom styles for media text, people are requesting improved legibil
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that describes music and sound other than spoken dialog.
 - [let MAMediaCharacteristicTranscribesSpokenDialogForAccessibility: CFString](mamediacharacteristictranscribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that transcribes spoken dialog and identifies the speakers.
+### Profile settings
+- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](macaptionappearancecopyprofileids().md)
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
+- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](macaptionappearancecopyactiveprofileid().md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
+- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](macaptionappearanceexecuteblockforprofileid(_:_:).md)
+### Customization status
+- [func MACaptionAppearanceIsCustomized(MACaptionAppearanceDomain) -> Bool](macaptionappearanceiscustomized(_:).md)
 ### Constants
 - [enum MACaptionAppearanceDomain](macaptionappearancedomain.md)
   A value that specifies which domain to retrieve a preference setting from.

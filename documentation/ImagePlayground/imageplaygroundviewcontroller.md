@@ -30,7 +30,7 @@ Present this view controller from your interface and wait for it to deliver resu
 ## Topics
 
 ### Creating the view controller
-- [init()](imageplaygroundviewcontroller/init.md)
+- [convenience init()](imageplaygroundviewcontroller/init.md)
   Creates a new image-generation view controller for you to present.
 ### Processing a generated image
 - [var delegate: (any ImagePlaygroundViewController.Delegate)?](imageplaygroundviewcontroller/delegate-swift.property.md)

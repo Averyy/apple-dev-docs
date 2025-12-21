@@ -90,13 +90,11 @@ To configure your app to support multiple windows, click the arrow next to Suppo
 
 ##### Add an App Icon and App Store Icon
 
-Add an icon to represent your app in various locations on a device and on the App Store.
+Add an icon to represent your app in various locations on a device and on the App Store. You can use either a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) or an icon asset catalog to represent your icon. If you use an asset catalog, the system applies a Liquid Glass effect to the icon for you.
 
-A project created from a template already contains the image set for app icons. The App Icons and Launch Images section of the General pane displays the name of the asset. Open the asset in the asset catalog to configure the icon asset.
+To use an Icon Composer file, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md), and to use an asset catalog, see [`Configuring your app icon using an asset catalog`](configuring-your-app-icon.md).
 
-![Screenshot showing the Asset Catalog with an app icon asset selected to reveal image wells for adding images to use for your app’s icon.](https://docs-assets.developer.apple.com/published/7717e14eb0514d6c583e92d1bfd83621/preparing-your-app-for-distribution-4%402x.png)
-
-For information on configuring your icons, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md). For app icon design guidance, see [`Human Interface Guidelines > Foundations > App icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-icons).
+For app icon design guidance, see [`Human Interface Guidelines > Foundations > App icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ##### Provide a Launch Screen
 

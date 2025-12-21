@@ -20,7 +20,7 @@ Detect and resolve conflicts that occur when data is changed on multiple threads
 
 - [Using Core Data in the background](using-core-data-in-the-background.md)
   Use Core Data in both a single-threaded and multithreaded app.
-- [Loading and Displaying a Large Data Feed](../swiftui/loading_and_displaying_a_large_data_feed.md)
+- [Loading and displaying a large data feed](../SwiftUI/loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Batch processing](batch-processing.md)
   Use batch processes to manage large data changes.

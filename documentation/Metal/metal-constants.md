@@ -1,18 +1,18 @@
-# Metal Constants
+# Metal constants
 
 **Framework**: Metal
 
 ## Topics
 
-### Constants
+### Error domains
 - [let MTLLogStateErrorDomain: String](mtllogstateerrordomain.md)
 
 ## See Also
 
-- [Metal Structures](metal-structures.md)
-- [Metal Enumerations](metal-enumerations.md)
-- [Metal Data Types](metal-data-types.md)
-- [Metal Variables](metal-variables.md)
+- [Metal structures](metal-structures.md)
+- [Metal enumerations](metal-enumerations.md)
+- [Metal data types](metal-data-types.md)
+- [Metal variables](metal-variables.md)
 
 
 ---

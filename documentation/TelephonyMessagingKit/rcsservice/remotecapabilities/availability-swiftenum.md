@@ -6,8 +6,8 @@
 Enumeration indicating the availability of the remote end.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,22 +23,6 @@ enum Availability
   Remote end is available.
 - [RCSService.RemoteCapabilities.Availability.unavailable](rcsservice/remotecapabilities/availability-swift.enum/unavailable.md)
   Remote end is not available.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/remotecapabilities/availability-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.RemoteCapabilities.Availability, RCSService.RemoteCapabilities.Availability) -> Bool](rcsservice/remotecapabilities/availability-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/remotecapabilities/availability-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/remotecapabilities/availability-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/remotecapabilities/availability-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/remotecapabilities/availability-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

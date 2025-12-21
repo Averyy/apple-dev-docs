@@ -17,9 +17,9 @@ var centersPlaceholder: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the search field’s components become centered within the control if the field is empty and doesn’t have focus. If the field is empty when receiving focus, the centered objects animate to the edges of the control. When this property is set to [`false`](https://developer.apple.com/documentation/swift/false), the components are always at the edge. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the search field’s components become centered within the control if the field is empty and doesn’t have focus. If the field is empty when receiving focus, the centered objects animate to the edges of the control. When this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the components are always at the edge. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-> **Note**:  When set to [`true`](https://developer.apple.com/documentation/swift/true), [`wantsLayer`](nsview/wantslayer.md) is also [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  When set to [`true`](https://developer.apple.com/documentation/Swift/true), [`wantsLayer`](nsview/wantslayer.md) is also [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -12,7 +12,7 @@ Limit texture memory usage for large textures by loading or unloading image deta
 
 #### Overview
 
-This sample demonstrates sparse texture streaming by rendering a ground plane that samples from a 16K resolution texture. The renderer uses [`Managing Sparse Texture Memory`](managing-sparse-texture-memory.md) to subdivide the image into regions, or , and chooses the tiles to keep in memory. The GPU updates an access counter buffer, and the app determines the tiles it needs to load or discard. The sample shows a heat map of the available MIP levels on the lower left of the screen, where  represents level 0,  represents levels 1 to 3,  represents levels 4 and 5, and  represents the remaining MIP levels. The app contains a checkbox that toggles the camera animation. When the animation runs, the app updates the sparse texture as the camera moves through the scene. Lastly, this sample demonstrates asynchronous updates using [`Dispatch`](https://developer.apple.com/documentation/Dispatch), or , to update the sparse texture.
+This sample demonstrates sparse texture streaming by rendering a ground plane that samples from a 16K resolution texture. The renderer uses [`Managing sparse texture memory`](managing-sparse-texture-memory.md) to subdivide the image into regions, or , and chooses the tiles to keep in memory. The GPU updates an access counter buffer, and the app determines the tiles it needs to load or discard. The sample shows a heat map of the available MIP levels on the lower left of the screen, where  represents level 0,  represents levels 1 to 3,  represents levels 4 and 5, and  represents the remaining MIP levels. The app contains a checkbox that toggles the camera animation. When the animation runs, the app updates the sparse texture as the camera moves through the scene. Lastly, this sample demonstrates asynchronous updates using [`Dispatch`](https://developer.apple.com/documentation/Dispatch), or , to update the sparse texture.
 
 ![A screen capture of the sparse textures app showing the Apple Park texture and a heat map of the mapped sparse texture tiles.](https://docs-assets.developer.apple.com/published/492721f4ae4dbd9ca277e82d21e18460/sparse-textures-1-screen-capture.png)
 
@@ -196,7 +196,7 @@ float getResidencyBufferMipmap(const device char* residencyBuffer,
 }
 ```
 
-While the fragment stage is running, the GPU records the number of texture accesses by the shader. The app analyzes this buffer to stream and map new regions of texture data that aren’t resident.
+While the fragment stage is running, the GPU records the number of texture memory operations by the shader. The app analyzes this buffer to stream and map new regions of texture data that aren’t resident.
 
 The following figure shows an example of how the tiles sample resident parent tiles if a requested tile isn’t resident. The green tiles show a tile that the shader accessed and was resident. The red tiles show a tile that the shader accessed, but had to fall back to a lower MIP level. The app detects a tile it needs to map when the access counter is nonzero and the corresponding residency buffer is zero.
 
@@ -204,7 +204,7 @@ The following figure shows an example of how the tiles sample resident parent ti
 
 ##### Update the Sparse Texture
 
-The following figure shows how the update process decides when to map or unmap tiles. For every resident tile that the shader accessed, the tile moves to the front of the least-recently used (LRU) cache, a data structure that combines a linked list and an unordered map. The `processAccessCounters` method creates map requests for the accessed nonresident tile and its nonresident parent tiles. The parent tiles must form a chain from the bottom mipmap tail to the highest level tile. The update process checks for any dependencies and doesn’t create unmap requests for required parent tiles. And if the heap doesn’t have enough memory available, then `discardTilesFromLRU` unmaps unnecessary tiles to make room.
+The following figure shows how the update process decides when to map or unmap tiles. For every resident tile that the shader accessed, the tile moves to the front of the least-recently used (LRU) cache, a data structure that combines a linked list and an unordered map. The `processAccessCounters` method creates map requests for the accessed nonresident tile and its nonresident parent tiles. The parent tiles need to form a chain from the bottom mipmap tail to the highest level tile. The update process checks for any dependencies and doesn’t create unmap requests for required parent tiles. And if the heap doesn’t have enough memory available, then `discardTilesFromLRU` unmaps unnecessary tiles to make room.
 
 ![An illustration showing how the shader decides to map or unmap tiles. Levels 0, 1, and 2 are shown, along with the mipmap tail, with level 0 being the largest. Different colors denote whether a tile is discarded LRU, required, required parent, nonresident, or resident.](https://docs-assets.developer.apple.com/published/186f598d40e05c0e52ee513f36c4be0e/sparse-textures-6-texture-update%402x.png)
 
@@ -381,9 +381,9 @@ Once the resource state encoder maps the tiles, the blit encoder copies the text
 
 - [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
-- [Reading Pixel Data from a Drawable Texture](reading-pixel-data-from-a-drawable-texture.md)
+- [Reading pixel data from a drawable texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
-- [Creating and Sampling Textures](creating-and-sampling-textures.md)
+- [Creating and sampling textures](creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
 
 

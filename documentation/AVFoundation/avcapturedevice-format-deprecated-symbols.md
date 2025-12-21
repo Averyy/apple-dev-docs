@@ -1,4 +1,4 @@
-# Deprecated Symbols
+# Deprecated symbols
 
 **Framework**: AVFoundation
 
@@ -6,13 +6,13 @@ Review unsupported symbols and their replacements.
 
 ## Topics
 
-### Determining Video Stabilization Support
+### Determining video stabilization support
 - [var isVideoStabilizationSupported: Bool](avcapturedevice/format/isvideostabilizationsupported.md)
   A Boolean value that indicates whether the format supports video stabilization.
-### Determining Photo Quality
+### Determining photo quality
 - [var highResolutionStillImageDimensions: CMVideoDimensions](avcapturedevice/format/highresolutionstillimagedimensions.md)
   The highest resolution still image the system can produce for this format.
-### Determining Zoom Capabilities
+### Determining zoom capabilities
 - [var supportedVideoZoomFactorsForDepthDataDelivery: [CGFloat]](avcapturedevice/format/supportedvideozoomfactorsfordepthdatadelivery.md)
   The zoom factors that a format supports for depth data delivery.
 - [var videoMinZoomFactorForDepthDataDelivery: CGFloat](avcapturedevice/format/videominzoomfactorfordepthdatadelivery.md)

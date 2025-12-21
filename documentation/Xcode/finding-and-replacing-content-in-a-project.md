@@ -6,9 +6,9 @@ Search some or all of your project for text strings or symbol names, and perform
 
 #### Overview
 
-Xcode offers sophisticated search and replace capabilities in the Find navigator, which you access from the navigator area of your project. Use the Find Navigator to search for text and symbols across your entire project. To perform advanced searches, use regular expressions or use the navigator’s controls to narrow the scope of the search operations.
+Xcode offers sophisticated search and replace capabilities in the Find navigator, which you access from the navigator area of your project. Use the Find navigator to search for text and symbols across your entire project. To perform advanced searches, use regular expressions or use the navigator’s controls to narrow the scope of the search operations.
 
-To display the Find Navigator, click the magnifying glass icon in the navigator area of your project.
+To display the Find navigator, click the magnifying glass icon in the navigator area of your project.
 
 ![Perform advanced searches using the Find navigator.](https://docs-assets.developer.apple.com/published/6c5ce8aa8d50cf3d3c1a7f4f3d1ee027/find-navigator-overview%402x.png)
 
@@ -90,7 +90,7 @@ To find or replace text using a regular expression:
 ## See Also
 
 - [Configuring the Xcode project window](configuring-the-xcode-project-window.md)
-  Configure the appearance of Xcode project windows by showing and hiding editors, inspectors, and navigation content.
+  Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.
 
 
 ---

@@ -21,7 +21,7 @@ var hasUndeterminedDuration: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the sample’s [`endDate`](hksample/enddate.md) property is [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture).
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) if the sample’s [`endDate`](hksample/enddate.md) property is [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture).
 
 ## See Also
 

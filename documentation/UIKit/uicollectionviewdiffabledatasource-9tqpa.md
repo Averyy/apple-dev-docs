@@ -97,9 +97,9 @@ Then, you generate the current state of the data and display the data in the UI 
   The diffable data source’s handlers for expanding and collapsing items.
 - [UICollectionViewDiffableDataSource.SectionSnapshotHandlers](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct.md)
   Handlers for expanding and collapsing items.
-### Supporting protocol requirements
-- [Protocol implementations](uicollectionviewdiffabledatasource-protocol-implementations.md)
-  Access the diffable data source’s implementations of protocol methods.
+### Debugging a diffable data source
+- [func description() -> String](uicollectionviewdiffabledatasource-9tqpa/description.md)
+  Returns a string with a description of the diffable data source.
 ### Supporting bridging
 - [class UICollectionViewDiffableDataSourceReference](uicollectionviewdiffabledatasourcereference.md)
   The object you use to manage data and provide cells for a collection view.

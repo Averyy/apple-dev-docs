@@ -24,7 +24,7 @@ func allOf(@LaunchConstraintBuilder requirement: () -> [any LaunchConstraint]) -
 
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement? { get set }](../Foundation/Process/launchRequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/Process/launchRequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](anyof(requirement:)-6nicx.md)

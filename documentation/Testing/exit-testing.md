@@ -6,7 +6,7 @@ Use exit tests to test functionality that might cause a test process to exit.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 26.0+ (Beta)
+- Xcode 26.0+
 
 #### Overview
 

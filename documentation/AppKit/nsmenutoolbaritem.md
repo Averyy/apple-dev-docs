@@ -20,7 +20,7 @@ class NSMenuToolbarItem
 
 #### Overview
 
-If you set an action on an [`NSMenuToolbarItem`](nsmenutoolbaritem.md) control item, the user invokes the action when clicking on the item through pressing and holding to display the menu. If you set an action on the item and [`showsIndicator`](nsmenutoolbaritem/showsindicator.md) to [`true`](https://developer.apple.com/documentation/swift/true), the system displays the indicator as a separate segment so the user can invoke the menu with a click on that segment.
+If you set an action on an [`NSMenuToolbarItem`](nsmenutoolbaritem.md) control item, the user invokes the action when clicking on the item through pressing and holding to display the menu. If you set an action on the item and [`showsIndicator`](nsmenutoolbaritem/showsindicator.md) to [`true`](https://developer.apple.com/documentation/Swift/true), the system displays the indicator as a separate segment so the user can invoke the menu with a click on that segment.
 
 If you don’t set an action on the [`NSMenuToolbarItem`](nsmenutoolbaritem.md), a simple click invokes the menu, and the indicator is purely decorative.
 

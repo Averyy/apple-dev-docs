@@ -21,7 +21,7 @@ func JSObjectHasPropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ p
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object has a property with a name that matches `propertyKey`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the object has a property with a name that matches `propertyKey`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

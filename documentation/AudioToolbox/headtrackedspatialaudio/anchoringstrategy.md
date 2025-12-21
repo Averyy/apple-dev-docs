@@ -6,7 +6,7 @@
 The experience’s anchoring strategy.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

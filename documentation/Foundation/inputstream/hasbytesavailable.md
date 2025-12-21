@@ -22,7 +22,7 @@ var hasBytesAvailable: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has bytes available to read, otherwise [`false`](https://developer.apple.com/documentation/swift/false). May also return [`true`](https://developer.apple.com/documentation/swift/true) if a read must be attempted in order to determine the availability of bytes.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has bytes available to read, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). May also return [`true`](https://developer.apple.com/documentation/Swift/true) if a read must be attempted in order to determine the availability of bytes.
 
 ## See Also
 

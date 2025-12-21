@@ -17,11 +17,6 @@ The document type that this view presents.
 typealias Document = AssignedWorkDocument
 ```
 
-## See Also
-
-- [var body: some View](assignedworkdocumentview/body-swift.property.md)
-  The content and behavior of the view.
-
 
 ---
 

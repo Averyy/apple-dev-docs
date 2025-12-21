@@ -23,8 +23,8 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> Self.Transformer
 
 ## See Also
 
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](supervisedtabularestimator/encode(_:to:)-3db99.md)
-  Encodes a fitted encodable transformer.
+- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](supervisedtabularestimator/encode(_:to:).md)
+  Encodes a fitted transformer.
 
 
 ---

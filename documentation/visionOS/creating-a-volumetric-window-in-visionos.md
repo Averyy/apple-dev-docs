@@ -90,7 +90,7 @@ let viewBounds = content.convert(
 )
 ```
 
-The doc://com.apple.documentation/documentation/realitykit/entity/visualbounds(recursive:relativeto:excludeinactive:)/ method computes a bounding box that contains the outer dimensions of the entity.
+The [`visualBounds(recursive:relativeTo:excludeInactive:)`](https://developer.apple.com/documentation/RealityKit/HasTransform/visualBounds(recursive:relativeTo:excludeInactive:)) method computes a bounding box that contains the outer dimensions of the entity.
 
 The view bounding box places the model at the bottom of the y-axis value of the window’s view:
 

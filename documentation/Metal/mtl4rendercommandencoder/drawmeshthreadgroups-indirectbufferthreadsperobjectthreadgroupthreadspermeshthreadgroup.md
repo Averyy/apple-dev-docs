@@ -7,17 +7,17 @@
 Encodes a draw command that invokes a mesh shader and, optionally, an object shader with indirect arguments.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-func drawMeshThreadgroups(indirectBuffer: UInt64, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)
+func drawMeshThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)
 ```
 
 #### Discussion
@@ -31,6 +31,13 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 - `indirectBuffer`: GPUAddress of an   instance with data that matches the layout of the    structure. This address requires 4-byte alignment.
 - `threadsPerObjectThreadgroup`: A   instance that represents the number of threads in an object   shader threadgroup, if applicable.
 - `threadsPerMeshThreadgroup`: A   instance that represents the number of threads in a mesh shader   threadgroup.
+
+## See Also
+
+- [func drawMeshThreads(threadsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtl4rendercommandencoder/drawmeshthreads(threadspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+  Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threads.
+- [func drawMeshThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtl4rendercommandencoder/drawmeshthreadgroups(threadgroupspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+  Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threadgroups.
 
 
 ---

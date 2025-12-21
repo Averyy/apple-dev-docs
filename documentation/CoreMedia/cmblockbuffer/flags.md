@@ -44,7 +44,7 @@ struct Flags
 - [CMBlockBuffer.Error](cmblockbuffer/error.md)
   A structure that defines block buffer errors.
 - [CMBlockBuffer.Slice](cmblockbuffer/slice.md)
-  A structure that defines a slice of a block buffer.
+  A slice of a `CMBlockBuffer` instance.
 
 
 ---

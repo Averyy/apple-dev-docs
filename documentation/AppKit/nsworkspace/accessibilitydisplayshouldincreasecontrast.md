@@ -16,7 +16,7 @@ var accessibilityDisplayShouldIncreaseContrast: Bool { get }
 
 #### Discussion
 
-When this method returns [`true`](https://developer.apple.com/documentation/swift/true), present a high-contrast UI. For example, use a less subtle color palette or bolder lines.
+When this method returns [`true`](https://developer.apple.com/documentation/Swift/true), present a high-contrast UI. For example, use a less subtle color palette or bolder lines.
 
 Users can change this setting by choosing System Preferences > Accessibility > Display and selecting the “Increase contrast” option. To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
 

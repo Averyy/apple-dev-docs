@@ -20,18 +20,18 @@ var showsPointsOfInterest: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the map displays icons and labels for restaurants, schools, and other relevant points of interest. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the map displays icons and labels for restaurants, schools, and other relevant points of interest. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapsnapshotter/options/preferredconfiguration.md)
-  The map configuration style to use for snapshots.
+- [var filterType: MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.property.md)
+  The filter options for the search results.
+- [var pinColor: MKPinAnnotationColor](mkpinannotationview/pincolor.md)
+  The color of the pin head.
+- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
 - [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
   The map’s visual style.
-- [var showsBuildings: Bool](mkmapsnapshotter/options/showsbuildings.md)
-  A Boolean that indicates whether the map displays extruded building information.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkmapsnapshotter/options/pointofinterestfilter.md)
-  The filter to use for determining the points of interest that appear in the snapshot.
 
 
 ---

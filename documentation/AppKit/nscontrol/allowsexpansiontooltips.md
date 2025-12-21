@@ -17,7 +17,7 @@ var allowsExpansionToolTips: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the expansion tool tip will expand; [`false`](https://developer.apple.com/documentation/swift/false) means the tool tip won’t expand. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the expansion tool tip will expand; [`false`](https://developer.apple.com/documentation/Swift/false) means the tool tip won’t expand. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Expansion tooltips are shown when the cell cannot show the full content and the user hovers the pointer over the control. This is controlled by the [`NSCell`](nscell.md) class method [`expansionFrame(withFrame:in:)`](nscell/expansionframe(withframe:in:).md) and is drawn by [`draw(withExpansionFrame:in:)`](nscell/draw(withexpansionframe:in:).md). This value is encoded along with the control.
 

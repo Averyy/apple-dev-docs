@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: class
 
-A view controller that hosts remote views provided by an extension.
+A view controller that hosts remote views provided by an app extension.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -18,22 +18,33 @@ A view controller that hosts remote views provided by an extension.
 class EXHostViewController
 ```
 
+## Mentions
+
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+
+#### Overview
+
+Present this view controller from your app’s interface to display the content for an associated app extension. Configure the view controller with the app extension identity and the specific scene you want to display. Use the associated delegate object to receive notifications when the app extension becomes active or inactive.
+
+For more information about presenting this view controller and using it to display an app extension’s UI, see [`Including extension-based UI in your interface`](including-extension-based-ui-in-your-interface.md).
+
 ## Topics
 
-### Configuring the View Controller
+### Configuring the view controller
 - [var configuration: EXHostViewController.Configuration?](exhostviewcontroller/configuration-swift.property.md)
-  The view controller’s configuration.
+  The information the host view controller uses to fetch the appropriate scene from an app extension.
 - [EXHostViewController.Configuration](exhostviewcontroller/configuration-swift.struct.md)
   An object that holds configuration options for a host view controller.
 - [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
-  A view that’s used when the view controller has no content to display.
-### Connecting to the Extension
+  The view to display when the view controller has no app extension content to display.
+### Connecting to the app extension
 - [func makeXPCConnection() throws -> NSXPCConnection](exhostviewcontroller/makexpcconnection.md)
-  Attempts to connect to the extension over XPC.
+  Initiates an XPC connection to the app extension’s scene.
+### Responding to activation and deactivation events
 - [var delegate: (any EXHostViewControllerDelegate)?](exhostviewcontroller/delegate.md)
-  The connection delegate.
+  A custom delegate object you use to receive notifications about the activation and deactivation of the app extension.
 - [protocol EXHostViewControllerDelegate](exhostviewcontrollerdelegate.md)
-  The delegate for a hosted view controller.
+  An interface you use to track the activation and deactivation of an app extension.
 
 ## Relationships
 
@@ -68,8 +79,10 @@ class EXHostViewController
 
 ## See Also
 
+- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+  Show the app extensions available to your app, so that people can approve, enable, or disable them.
 - [class EXAppExtensionBrowserViewController](exappextensionbrowserviewcontroller.md)
-  A view controller that allows users to enable and disable extensions.
+  A view controller that displays an interface to enable or disable the host app’s extensions.
 
 
 ---

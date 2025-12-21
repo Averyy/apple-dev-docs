@@ -25,12 +25,6 @@ struct ProcessCodeSigningFlags
 ### Structures
 - [ProcessCodeSigningFlags.ValueSet](processcodesigningflags/valueset.md)
   Code signing flags that can be set on a process
-### Initializers
-- [init(from: any Decoder) throws](processcodesigningflags/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](processcodesigningflags/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Type Aliases
 - [ProcessCodeSigningFlags.DataType](processcodesigningflags/datatype.md)
   The basic input data type for this constraint: `ProcessCodeSigningFlags.ValueSet`

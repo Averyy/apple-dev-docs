@@ -26,7 +26,7 @@ You don’t normally subclass `NSUniqueIDSpecifier`.
 The evaluation of `NSUniqueIDSpecifier` objects follows these steps until the specified object is found:
 
 1. If the container implements a method whose selector matches the relevant `valueIn<Key>WithUniqueID:` pattern established by scripting key-value coding, the method is invoked. This method can potentially be very fast, and it may be relatively easy to implement.
-2. As is the case when evaluating any script object specifier, the container of the specified object is given a chance to evaluate the object specifier. If the container class implements the doc://com.apple.documentation/documentation/objectivec/nsobject/1417806-indicesofobjects method, the method is invoked. This method can potentially be very fast, but it is relatively difficult to implement.
+2. As is the case when evaluating any script object specifier, the container of the specified object is given a chance to evaluate the object specifier. If the container class implements the [`indicesOfObjects(byEvaluatingObjectSpecifier:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/indicesOfObjects(byEvaluatingObjectSpecifier:)) method, the method is invoked. This method can potentially be very fast, but it is relatively difficult to implement.
 3. An [`NSWhoseSpecifier`](nswhosespecifier.md) object that specifies the first object whose relevant `'ID  '` attribute matches the ID is synthesized and evaluated. The `NSWhoseSpecifier` object must search through all of the keyed elements in the container, looking for a match. The search is potentially very slow.
 
 ## Topics

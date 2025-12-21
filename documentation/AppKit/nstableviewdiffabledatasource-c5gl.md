@@ -65,6 +65,9 @@ Then, you generate the current state of the data and display the data in the UI 
   Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 - [var defaultRowAnimation: NSTableView.AnimationOptions](nstableviewdiffabledatasource-c5gl/defaultrowanimation.md)
   The default animation the UI uses to show differences between rows.
+### Providing the Number of Rows
+- [func numberOfRows(in: NSTableView) -> Int](nstableviewdatasource/numberofrows(in:).md)
+  Returns the number of records managed for `aTableView` by the data source object.
 ### Supporting Bridging
 - [class NSTableViewDiffableDataSourceReference](nstableviewdiffabledatasourcereference.md)
   The object you use to manage data and provide items for a table view.

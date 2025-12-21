@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure per-app VPN settings.
+The payload that configures per-app VPN settings.
 
 **Availability**:
 - macOS 10.9+
@@ -23,7 +23,7 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | macOS |
 | Allow manual install | macOS |
 | Requires supervision | NA |
 | Requires user-approved MDM | NA |
@@ -148,9 +148,9 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 ## See Also
 
 - [object AppLayerVPN](applayervpn.md)
-  The payload you use to configure add-on VPN software.
+  The payload that configures a per-app VPN.
 - [object VPN](vpn.md)
-  The payload you use to configure a VPN.
+  The payload that configures a VPN.
 
 
 ---

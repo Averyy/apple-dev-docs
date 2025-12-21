@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The profile you use to configure web clips on the device.
+The profile that configures web clips on the device.
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +20,7 @@ object WebClip
 
 Specify `com.apple.webClip.managed` as the payload type.
 
-Use this payload to add web clips to the Home screen of the user’s iOS device or to the Dock on a Mac. Web clips provide fast access to favorite webpages.
+Use this payload to add web clips to the Home Screen of the user’s iOS device or to the Dock on a Mac. Web clips provide fast access to favorite webpages.
 
 For iOS devices, if you prevent the user from removing the web clip, the only way to remove it is to remove the configuration profile that installed it. Also, for iOS devices it must have a display name and an icon URL for the payload to be valid.
 
@@ -89,7 +89,7 @@ For Shared iPad devices, the system supports this payload on the user channel on
 ## See Also
 
 - [object WebContentFilter](webcontentfilter.md)
-  The payload you use to configure web content filters.
+  The payload that configures web content filters.
 
 
 ---

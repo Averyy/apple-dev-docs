@@ -20,21 +20,10 @@ enum DateKind
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.DateKind, IntentParameter<Value>.DateKind) -> Bool](intentparameter/datekind-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.DateKind.date](intentparameter/datekind-swift.enum/date.md)
 - [IntentParameter.DateKind.dateTime](intentparameter/datekind-swift.enum/datetime.md)
 - [IntentParameter.DateKind.time](intentparameter/datekind-swift.enum/time.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/datekind-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/datekind-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentparameter/datekind-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

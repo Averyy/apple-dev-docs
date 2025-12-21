@@ -6,10 +6,9 @@
 A Boolean value that indicates whether the system can place the search bar among other toolbar items on iPhone.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -20,7 +19,7 @@ var searchBarPlacementAllowsToolbarIntegration: Bool { get set }
 
 #### Overview
 
-Defaults to [`true`](https://developer.apple.com/documentation/swift/true). Set to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the system from placing the search bar among other [`UIToolbar`](uitoolbar.md) items on iPhone.
+Defaults to [`true`](https://developer.apple.com/documentation/Swift/true). Set to [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the system from placing the search bar among other [`UIToolbar`](uitoolbar.md) items on iPhone.
 
 ## See Also
 

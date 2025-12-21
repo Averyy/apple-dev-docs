@@ -22,7 +22,7 @@ func intersects(_ rect2: MKMapRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `rect1` and `rect2` intersect each other, or [`false`](https://developer.apple.com/documentation/swift/false) if they don’t intersect or either rectangle is `null`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `rect1` and `rect2` intersect each other, or [`false`](https://developer.apple.com/documentation/Swift/false) if they don’t intersect or either rectangle is `null`.
 
 #### Discussion
 

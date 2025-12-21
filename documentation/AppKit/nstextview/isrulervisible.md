@@ -17,7 +17,7 @@ var isRulerVisible: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to show the ruler, [`false`](https://developer.apple.com/documentation/swift/false) to hide the ruler. By default, the ruler is hidden.
+[`true`](https://developer.apple.com/documentation/Swift/true) to show the ruler, [`false`](https://developer.apple.com/documentation/Swift/false) to hide the ruler. By default, the ruler is hidden.
 
 ## See Also
 

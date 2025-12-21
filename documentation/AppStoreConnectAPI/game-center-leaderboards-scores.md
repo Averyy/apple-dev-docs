@@ -29,10 +29,12 @@ This endpoint is different than most in App Store Connect API, with this you can
   Create and manage leaderboards for your apps.
 - [Game Center leaderboard images](game-center-leaderboard-images.md)
   Read and manage image assets for Game Center leaderboards.
-- [Game Center leaderboard releases](game-center-leaderboard-releases.md)
-  Read, create, and delete Game Center leaderboards releases.
 - [Game Center leaderboard localizations](game-center-leaderboard-localizations.md)
   Manage localizations for Game Center leaderboards.
+- [Game Center leaderboard versions](game-center-leaderboard-versions.md)
+  Manage versions for your Game Center leaderboards.
+- [Game Center leaderboard releases](game-center-leaderboard-releases.md)
+  Read, create, and delete Game Center leaderboards releases.
 
 
 ---

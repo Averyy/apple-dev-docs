@@ -20,15 +20,6 @@ A time-series forecaster batch sequence iterator.
 struct Iterator
 ```
 
-## Topics
-
-### Instance Methods
-- [func next() -> AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>?](timeseriesforecasterannotatedwindows/iterator/next.md)
-  Advances to the next element and returns it, or `nil` if no next element exists.
-### Type Aliases
-- [TimeSeriesForecasterAnnotatedWindows.Iterator.Element](timeseriesforecasterannotatedwindows/iterator/element.md)
-  The type of element traversed by the iterator.
-
 ## Relationships
 
 ### Conforms To

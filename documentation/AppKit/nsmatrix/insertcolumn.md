@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Inserts a new column of cells at the specified location. .
+Inserts a new column of cells at the specified location.
 
 **Availability**:
 - macOS ?+

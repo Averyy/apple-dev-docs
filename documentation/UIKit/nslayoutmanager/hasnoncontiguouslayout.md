@@ -34,7 +34,7 @@ For more information about noncontiguous layout, see [`Noncontiguous Layout`](ns
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
 - [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool { get set }](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.

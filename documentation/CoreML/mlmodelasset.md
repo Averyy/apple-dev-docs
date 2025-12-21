@@ -31,14 +31,14 @@ To use an in-memory model, create an [`MLModelAsset`](mlmodelasset.md) with an i
 ### Creating a model asset
 - [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
   Creates a model asset from an in-memory model specification.
-### Initializers
 - [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
 - [convenience init(url: URL) throws](mlmodelasset/init(url:).md)
   Constructs a ModelAsset from a compiled model URL.
-### Instance Methods
+### Getting function names
 - [func functionNames(completionHandler: ([String]?, (any Error)?) -> Void)](mlmodelasset/functionnames(completionhandler:).md)
   The list of function names in the model asset.
+### Getting the model description
 - [func modelDescription(completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(completionhandler:).md)
   The default model descripton.
 - [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(offunctionnamed:completionhandler:).md)
@@ -58,8 +58,6 @@ To use an in-memory model, create an [`MLModelAsset`](mlmodelasset.md) with an i
 
 ## See Also
 
-- [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](mlmodel/load(_:configuration:completionhandler:).md)
-  Construct a model asynchronously from a compiled model asset.
 - [Making Predictions with a Sequence of Inputs](making-predictions-with-a-sequence-of-inputs.md)
   Integrate a recurrent neural network model to process sequences of inputs.
 - [class MLFeatureValue](mlfeaturevalue.md)

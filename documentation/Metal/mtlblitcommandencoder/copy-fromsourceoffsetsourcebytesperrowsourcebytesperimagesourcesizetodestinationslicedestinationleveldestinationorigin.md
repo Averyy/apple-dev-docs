@@ -22,7 +22,7 @@ func copy(from sourceBuffer: any MTLBuffer, sourceOffset: Int, sourceBytesPerRow
 
 ## Mentions
 
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
 
 #### Discussion
 

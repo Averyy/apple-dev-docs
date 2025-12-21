@@ -6,8 +6,8 @@
 The maximum number of unique services your app can publish simultaneously.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ static var maximumPublishableServices: Int { get }
 - [static var maximumConnectableDevices: Int](wacapabilities/maximumconnectabledevices.md)
   The maximum number of unique devices your app can connect to simultaneously.
 - [static var maximumSubscribableServices: Int](wacapabilities/maximumsubscribableservices.md)
-  The maximum number of unique services to which your app can simultaneously subscribe.
+  The maximum number of unique services your app can simultaneously subscribe to.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An option that specifies that you can refit the acceleration structure if the geometry changes.
+An option that lets you update an acceleration structure after creating it.
 
 **Availability**:
 - iOS 14.0+
@@ -21,16 +21,20 @@ static var refit: MTLAccelerationStructureUsage { get }
 
 #### Discussion
 
-By default, you can’t change an acceleration structure after you create it. Enabling this option allows you to update the acceleration structure if the geometry changes positions. Typically, for refits to work, the change to the geometry must be small.
+Apply this option to make a modifiable acceleration structure, which you can update over time, such as for geometry changes. By default, the framework builds immutable acceleration structures for performance. When you apply the [`refit`](mtlaccelerationstructureusage/refit.md) option, the framework builds an acceleration structure more conservatively, which can reduce its intersection performance.
 
-Enabling this option require Metal to generate a more conservative acceleration structure, which can affect performance.
+> **Note**:  Refitting an acceleration structure generally works better when the geometry changes are relatively small.
 
 ## See Also
 
 - [static var preferFastBuild: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastbuild.md)
-  An option that specifies that Metal needs to build the acceleration structure quickly, even if that reduces ray-tracing performance.
+  An option that instructs Metal to build an acceleration structure quickly.
+- [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
+  An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
+- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+  An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
 - [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
-  A structure usage option that indicates you intend to use larger ray-tracing limits for the acceleration structure.
+  An option that increases an acceleration structure’s storage capacity.
 
 
 ---

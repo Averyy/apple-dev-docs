@@ -19,11 +19,6 @@ case authorizationChanged(type: ARKitSession.AuthorizationType, status: ARKitSes
 - `type`: The type of authorization status that changed.
 - `status`: The new state of authorization.
 
-## See Also
-
-- [case dataProviderStateChanged(dataProviders: [any DataProvider], newState: DataProviderState, error: ARKitSession.Error?)](arkitsession/event/dataproviderstatechanged(dataproviders:newstate:error:).md)
-  An event that represents a change in state of one of the data providers associated with a session.
-
 
 ---
 

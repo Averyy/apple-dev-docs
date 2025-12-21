@@ -8,7 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -105,7 +105,7 @@ struct ParticleEmitter
 - [ParticleEmitterComponent.ParticleEmitter.ParticleColor](particleemittercomponent/particleemitter/particlecolor.md)
   Options for specifying the behavior of the color of the particles.
 - [ParticleEmitterComponent.ParticleEmitter.SortOrder](particleemittercomponent/particleemitter/sortorder-swift.enum.md)
-  Options for the rendering order of particles, used by the sortingMode property.
+  Options for the rendering order of particles.
 
 ## Relationships
 

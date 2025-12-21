@@ -16,7 +16,6 @@ The focus behavior for a node.
 ## Declaration
 
 ```swift
-@MainActor
 var focusBehavior: SKNodeFocusBehavior { get set }
 ```
 

@@ -26,7 +26,7 @@ Query the pixel format using the [`pixelFormatType`](avportraiteffectsmatte/pixe
 
 ## See Also
 
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
 - [var pixelFormatType: OSType](avportraiteffectsmatte/pixelformattype.md)
   The pixel format type of this portrait effects matte’s internal image.

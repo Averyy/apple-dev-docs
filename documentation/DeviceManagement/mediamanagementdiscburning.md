@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure disc-burning settings.
+The payload that configures disc-burning settings.
 
 **Availability**:
 - macOS 10.7+

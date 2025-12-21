@@ -139,8 +139,8 @@ func collectionView(_ collectionView: UICollectionView, performPrimaryActionForI
   Optimize your iPad app’s user experience by adopting desktop-class enhancements for multitasking with Stage Manager, document interactions, text editing, search, and more.
 - [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
   Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
-- [Multitasking on iPad](multitasking-on-ipad.md)
-  Implement multitasking APIs to seamlessly integrate your app with iPadOS.
+- [Multitasking on iPad, Mac, and Apple Vision Pro](multitasking-on-ipad-mac-and-apple-vision-pro.md)
+  Implement multitasking APIs to seamlessly integrate your app with iPadOS, macOS, and visionOS.
 
 
 ---

@@ -20,7 +20,7 @@ case auto
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
 
 ## See Also
 

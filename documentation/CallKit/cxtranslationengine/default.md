@@ -15,11 +15,6 @@ The translation was provided by the system’s default translation engine.
 case `default`
 ```
 
-## See Also
-
-- [CXTranslationEngine.external](cxtranslationengine/external.md)
-  The translation was provided by an external translation engine.
-
 
 ---
 

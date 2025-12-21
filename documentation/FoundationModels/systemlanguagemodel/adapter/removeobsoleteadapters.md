@@ -6,16 +6,16 @@
 Remove all obsolete adapters that are no longer compatible with current system models.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-static func removeObsoleteAdapters()
+static func removeObsoleteAdapters() throws
 ```
 
 

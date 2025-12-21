@@ -30,6 +30,8 @@ The default value is [`AVCaptureMultichannelAudioMode.none`](avcapturemultichann
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
 - [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
+- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
 
 
 ---

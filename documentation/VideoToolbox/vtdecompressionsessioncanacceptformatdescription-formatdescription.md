@@ -21,7 +21,7 @@ func VTDecompressionSessionCanAcceptFormatDescription(_ session: VTDecompression
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the decompression session accepts the format description; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the decompression session accepts the format description; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

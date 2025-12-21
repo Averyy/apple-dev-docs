@@ -21,7 +21,7 @@ var isAccessibilityElement: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). If the receiver is a UIKit control, the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false). If the receiver is a UIKit control, the default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

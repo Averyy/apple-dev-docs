@@ -3,15 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Gets the status of the asset pack with the specified ID.
+Returns an asynchronous sequence of download-status updates for the specified asset pack.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,11 +27,21 @@ The asset pack’s status.
 
 This method attempts to get the latest asset-pack information from the server. No updates or removals are automatically triggered.
 
-> **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the specified ID is found.
+> **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the given ID is found.
 
 ## Parameters
 
-- `assetPackID`: The ID of the asset pack.
+- `assetPackID`: The asset pack’s ID.
+
+## See Also
+
+- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](assetpackmanager/statusupdates.md)
+  An asynchronous sequence of download-status updates for all asset packs.
+- [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
+](assetpackmanager/statusupdates(forassetpackwithid:).md)
+  Gets an asynchronous sequence of download-status updates for the asset pack with the specified ID.
+- [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
+  Statuses of an asset-pack download.
 
 
 ---

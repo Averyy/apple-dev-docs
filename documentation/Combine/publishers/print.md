@@ -32,25 +32,20 @@ This publisher prints log messages when receiving the following events:
 
 ## Topics
 
-### Creating a Print Publisher
+### Creating a print publisher
 - [init(upstream: Upstream, prefix: String, to: (any TextOutputStream)?)](publishers/print/init(upstream:prefix:to:).md)
   Creates a publisher that prints log messages for all publishing events.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Print.Output](publishers/print/output.md)
   The kind of values published by this publisher.
 - [Publishers.Print.Failure](publishers/print/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/print/upstream.md)
   The publisher from which this publisher receives elements.
 - [let prefix: String](publishers/print/prefix.md)
   A string with which to prefix all log messages.
 - [let stream: (any TextOutputStream)?](publishers/print/stream.md)
-### Applying Operators
-- [Publisher Operators](publishers-print-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/print/publisher-implementations.md)
 
 ## Relationships
 

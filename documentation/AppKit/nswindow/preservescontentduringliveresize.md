@@ -17,7 +17,7 @@ var preservesContentDuringLiveResize: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window tries to optimize live resize operations by preserving the content of views that have not moved; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, live-resize optimization is turned on.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window tries to optimize live resize operations by preserving the content of views that have not moved; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, live-resize optimization is turned on.
 
 When live-resize optimization is active, the window redraws only those views that moved (or do not support this optimization) during a live resize operation. You might consider disabling this optimization for the window if none of the window’s contained views can take advantage of it. Disabling the optimization for the window prevents it from checking each view to see if the optimization is supported.
 

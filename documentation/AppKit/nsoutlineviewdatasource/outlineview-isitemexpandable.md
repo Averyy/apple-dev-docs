@@ -17,7 +17,7 @@ optional func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: A
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `item` can be expanded to display its children, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `item` can be expanded to display its children, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

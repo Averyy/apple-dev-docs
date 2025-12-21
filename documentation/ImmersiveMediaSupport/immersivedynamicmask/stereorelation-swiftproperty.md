@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The stereo relation of the dynamic mask (How left eye mask is related to right eye mask).
+Represents how the left eye mask relates to the right eye mask.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

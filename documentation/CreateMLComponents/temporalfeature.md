@@ -28,16 +28,8 @@ struct TemporalFeature<Feature>
 ### Getting the properties
 - [var feature: Feature](temporalfeature/feature.md)
   The feature value.
-- [var id: TemporalSegmentIdentifier](temporalfeature/id-swift.property.md)
+- [var id: TemporalSegmentIdentifier](temporalfeature/id.md)
   The temporal segment identifier for this feature.
-### Type Aliases
-- [TemporalFeature.ID](temporalfeature/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Decodable Implementations](temporalfeature/decodable-implementations.md)
-- [Encodable Implementations](temporalfeature/encodable-implementations.md)
-- [Equatable Implementations](temporalfeature/equatable-implementations.md)
-- [Hashable Implementations](temporalfeature/hashable-implementations.md)
 
 ## Relationships
 

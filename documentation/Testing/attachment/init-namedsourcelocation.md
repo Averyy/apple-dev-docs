@@ -7,7 +7,7 @@ Initialize an instance of this type that encloses the given attachable value.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

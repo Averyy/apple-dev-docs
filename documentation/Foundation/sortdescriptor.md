@@ -71,7 +71,9 @@ struct SortDescriptor<Compared>
 - [init(any KeyPath<Compared, Int8?> & Sendable, order: SortOrder)](sortdescriptor/init(_:order:)-z7th.md)
 ### Instance Properties
 - [var keyPath: PartialKeyPath<Compared>?](sortdescriptor/keypath.md)
+  The key path to the field for comparison.
 - [var stringComparator: String.StandardComparator?](sortdescriptor/stringcomparator.md)
+  A `String.StandardComparator` value.
 
 ## Relationships
 

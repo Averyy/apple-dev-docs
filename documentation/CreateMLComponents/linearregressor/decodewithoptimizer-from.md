@@ -28,6 +28,11 @@ The decoded transformer.
 
 - `decoder`: A decoder.
 
+## See Also
+
+- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](linearregressor/encodewithoptimizer(_:to:).md)
+  Encodes the transformer and optimizer to an encoder.
+
 
 ---
 

@@ -48,6 +48,9 @@ Create a `PaymentCardTransactionRequest` to specify the amount of a purchase or 
 ### Setting the user interface language
 - [var userInterfaceLanguage: Locale.Language?](paymentcardtransactionrequest/userinterfacelanguage.md)
   The language the framework uses when localizing the user interface.
+### Instance Properties
+- [var useISOCurrencySymbol: Bool](paymentcardtransactionrequest/useisocurrencysymbol.md)
+  A boolean value that sets the system UI’s currency symbol to ISO 4217 three-letter code.
 ### Enumerations
 - [PaymentCardTransactionRequest.PaymentCycle](paymentcardtransactionrequest/paymentcycle.md)
   Values that specify the frequency of payments

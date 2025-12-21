@@ -26,9 +26,9 @@ func vImageVerticalReflect_CbCr16F(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 
 #### Discussion
 
-This function doesn’t scale or resample; instead, it copies unchanged individual pixels to new locations. The source and destination buffers must have the same height and the same width.
+This function doesn’t scale or resample; instead, it copies unchanged individual pixels to new locations. The source and destination buffers need to have the same height and the same width.
 
-This function doesn’t work in place — that is, the source and destination buffers must point to different memory.
+This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
 ## Parameters
 

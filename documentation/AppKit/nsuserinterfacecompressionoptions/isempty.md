@@ -16,7 +16,7 @@ var isEmpty: Bool { get }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the option is equivalent to the empty set, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the option is equivalent to the empty set, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

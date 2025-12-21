@@ -6,8 +6,8 @@
 Enumeration representing the label for media.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -21,22 +21,6 @@ enum Label
 ### Determining label type
 - [RCSService.Business.MediaEntry.Label.icon](rcsservice/business/mediaentry/label-swift.enum/icon.md)
   Icon label.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/mediaentry/label-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.MediaEntry.Label, RCSService.Business.MediaEntry.Label) -> Bool](rcsservice/business/mediaentry/label-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/mediaentry/label-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/mediaentry/label-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/mediaentry/label-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/mediaentry/label-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

@@ -29,8 +29,10 @@ Create an instance of this class when registering for a new credential using pla
 
 ## Topics
 
-### Instance Properties
+### Accessing request properties
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput?](asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-5ismm.md)
+  The request’s binary large object value.
+### Instance Properties
 - [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](asauthorizationplatformpublickeycredentialregistrationrequest/prf-3d9iw.md)
 - [var requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle](asauthorizationplatformpublickeycredentialregistrationrequest/requeststyle-swift.property.md)
 ### Enumerations

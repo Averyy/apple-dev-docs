@@ -10,7 +10,7 @@ Defines separate arrays for triangle and quad indices.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -21,7 +21,7 @@ case trianglesAndQuads(triangles: [UInt32], quads: [UInt32])
 
 #### Discussion
 
-The elements of the first array have three vertex indices for each triangle. The elements of the first array have four vertex indices for each quadrilateral.
+The elements of the first array have three vertex indices for each triangle. The elements of the second array have four vertex indices for each quadrilateral.
 
 For example, you can define three triangles with 9 vertex indices in the first array, and two quadrilaterals with 8 vertex indices in the second array.
 

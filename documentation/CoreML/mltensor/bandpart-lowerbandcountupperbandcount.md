@@ -68,6 +68,17 @@ t.bandPart(lowerBandCount: -1, upperBandCount: 0)
 - `lowerBandCount`: The number of diagonals in the lower triangle to keep. If  , keep the entire lower triangle.
 - `upperBandCount`: The number of diagonals in the upper triangle to keep. If  , keep the entire upper triangle.
 
+## See Also
+
+- [func expandingShape(at:)](mltensor/expandingshape(at:).md)
+  Returns a shape-expanded tensor with a dimension of 1 inserted at the specified shape indices.
+- [func tiled(multiples: [Int]) -> MLTensor](mltensor/tiled(multiples:).md)
+  Returns a tensor by replicating its elements multiple times.
+- [func sign() -> MLTensor](mltensor/sign.md)
+  Returns the sign of the tensor’s elements.
+- [func reciprocal() -> MLTensor](mltensor/reciprocal.md)
+  Computes the reciprocal of the tensor’s elements.
+
 
 ---
 

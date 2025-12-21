@@ -21,7 +21,7 @@ init(tessellationInputPatches: UInt64, vertexInvocations: UInt64, postTessellati
 
 #### Discussion
 
-Metal creates [`MTLCounterResultStatistic`](mtlcounterresultstatistic.md) instances for you when you resolve the counter set’s data (see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
+Metal creates [`MTLCounterResultStatistic`](mtlcounterresultstatistic.md) instances for you when you resolve the counter set’s data (see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
 
 ## Parameters
 

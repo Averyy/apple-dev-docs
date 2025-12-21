@@ -28,8 +28,6 @@ The formatter falls back to using [`RelativeDateTimeFormatter.DateTimeStyle.nume
 
 - [RelativeDateTimeFormatter.DateTimeStyle.numeric](relativedatetimeformatter/datetimestyle-swift.enum/numeric.md)
   A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
-- [RelativeDateTimeFormatter.DateTimeStyle.numeric](relativedatetimeformatter/datetimestyle-swift.enum/numeric.md)
-  A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 
 
 ---

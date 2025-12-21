@@ -45,9 +45,6 @@ struct TabularTransformerToUpdatableEstimatorAdaptor<Transformer> where Transfor
   Returns the pre-defined transformer.
 - [func update(inout Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](tabulartransformertoupdatableestimatoradaptor/update(_:with:eventhandler:).md)
   Does nothing since this estimator uses a pre-defined transformer.
-### Default Implementations
-- [TabularEstimator Implementations](tabulartransformertoupdatableestimatoradaptor/tabularestimator-implementations.md)
-- [UpdatableTabularEstimator Implementations](tabulartransformertoupdatableestimatoradaptor/updatabletabularestimator-implementations.md)
 
 ## Relationships
 

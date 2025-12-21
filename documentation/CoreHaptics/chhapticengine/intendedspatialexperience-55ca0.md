@@ -3,10 +3,10 @@
 **Framework**: Core Haptics  
 **Kind**: property
 
-The CHHapticEngine’s intended spatial experience.
+The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/AudioToolbox/SpatialAudioExperience).
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,9 @@ var intendedSpatialExperience: any SpatialAudioExperience { get set }
 
 #### Discussion
 
-Only useful for engines that have audio output. The default value of .automatic means the engine uses its AVAudioSession’s intended spatial experience. If the anchoring strategy is impossible (e.g. it uses a destroyed UIScene’s identifier), the engine follows a “front” anchoring strategy instead.
+Only useful for engines that have audio output.
+
+If unspecified, the property value defaults to [`AutomaticSpatialAudio`](https://developer.apple.com/documentation/AudioToolbox/AutomaticSpatialAudio).
 
 
 ---

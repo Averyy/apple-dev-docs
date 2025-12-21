@@ -22,9 +22,6 @@ enum Item
 
 ## Topics
 
-### Operators
-- [static func == (MusicPersonalRecommendation.Item, MusicPersonalRecommendation.Item) -> Bool](musicpersonalrecommendation/item/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicPersonalRecommendation.Item.album(_:)](musicpersonalrecommendation/item/album(_:).md)
   An item that corresponds to an album.
@@ -35,26 +32,12 @@ enum Item
 ### Instance Properties
 - [var artwork: Artwork?](musicpersonalrecommendation/item/artwork.md)
   The artwork of this item.
-- [var hashValue: Int](musicpersonalrecommendation/item/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](musicpersonalrecommendation/item/id-swift.property.md)
+- [var id: MusicItemID](musicpersonalrecommendation/item/id.md)
   The unique identifier of this item.
 - [var subtitle: String?](musicpersonalrecommendation/item/subtitle.md)
   The subtitle of this item.
 - [var title: String](musicpersonalrecommendation/item/title.md)
   The title of this item.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicpersonalrecommendation/item/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicPersonalRecommendation.Item.ID](musicpersonalrecommendation/item/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musicpersonalrecommendation/item/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musicpersonalrecommendation/item/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicpersonalrecommendation/item/decodable-implementations.md)
-- [Encodable Implementations](musicpersonalrecommendation/item/encodable-implementations.md)
-- [Equatable Implementations](musicpersonalrecommendation/item/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,8 +6,8 @@
 Returns the command queue that the layer uses for drawing operations.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# CMSimpleQueue APIs
+# CMSimpleQueue
 
 **Framework**: Core Media
 
@@ -45,9 +45,9 @@ You can reset a simple queue, which returns it to its newly created state, with 
 
 ## See Also
 
-- [CMBufferQueue APIs](cmbufferqueue-api.md)
+- [CMBufferQueue](cmbufferqueue-api.md)
   A queue of timed buffers.
-- [CMMemoryPool APIs](cmmemorypool-api.md)
+- [CMMemoryPool](cmmemorypool-api.md)
   An object that optimizes memory allocation when working with large blocks of memory.
 
 

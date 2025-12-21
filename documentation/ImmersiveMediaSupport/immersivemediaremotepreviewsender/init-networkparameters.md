@@ -6,7 +6,7 @@
 Creates a preview sender using the specified network parameters, if any.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ init(networkParameters: NWParameters? = nil) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails during initialization.
+> **Note**: This function throws if anything fails during initialization.
 
 ## Parameters
 

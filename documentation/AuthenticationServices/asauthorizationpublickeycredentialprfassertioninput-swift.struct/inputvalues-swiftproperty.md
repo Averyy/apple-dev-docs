@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
-If specified, the input values to use when generating the PRF extension output. When also using `perCredentialInputValues`, the corresponding value from that dictionary may be used instead.
+The input values to use when generating the PRF extension output, if specified.
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +17,15 @@ If specified, the input values to use when generating the PRF extension output. 
 ```swift
 let inputValues: ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues?
 ```
+
+#### Discussion
+
+When also using [`perCredentialInputValues`](asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues.md), you may use the corresponding value from that dictionary instead.
+
+## See Also
+
+- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues, perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues(_:percredentialinputvalues:).md)
+  The inputs for the PRF extension.
 
 
 ---

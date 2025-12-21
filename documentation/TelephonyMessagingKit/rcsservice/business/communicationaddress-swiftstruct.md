@@ -6,8 +6,8 @@
 Structure containing a business’ communication details.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -27,16 +27,6 @@ struct CommunicationAddress
   URI entries provided by business.
 - [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
   Structure containing details of a URI provided by a business.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/communicationaddress-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/communicationaddress-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing communication addresses
-- [static func == (RCSService.Business.CommunicationAddress, RCSService.Business.CommunicationAddress) -> Bool](rcsservice/business/communicationaddress-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/communicationaddress-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

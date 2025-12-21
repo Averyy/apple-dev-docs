@@ -20,11 +20,6 @@ An error that indicates that a default initialized transformer suitable for fitt
 case invalidState(debugDescription: String)
 ```
 
-## See Also
-
-- [var errorDescription: String?](modelupdateerror/errordescription.md)
-  A localized message describing what error occurred.
-
 
 ---
 

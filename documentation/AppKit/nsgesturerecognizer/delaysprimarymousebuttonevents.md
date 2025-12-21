@@ -17,9 +17,9 @@ var delaysPrimaryMouseButtonEvents: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), primary mouse button events are delivered to the target view only after gesture recognition fails. Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to prevent the view from processing events that might be recognized as part of a gesture. Once gesture recognition begins, all types of events are delayed until gesture recognition fails.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), primary mouse button events are delivered to the target view only after gesture recognition fails. Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to prevent the view from processing events that might be recognized as part of a gesture. Once gesture recognition begins, all types of events are delayed until gesture recognition fails.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

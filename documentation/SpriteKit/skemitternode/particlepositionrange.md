@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s position.
 ## Declaration
 
 ```swift
-@MainActor
 var particlePositionRange: CGVector { get set }
 ```
 

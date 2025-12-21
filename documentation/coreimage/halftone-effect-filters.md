@@ -4,6 +4,31 @@
 
 Simulate monochrome and CMYK halftone screens.
 
+## Topics
+
+### Filters
+- [class func circularScreen() -> any CIFilter & CICircularScreen](cifilter-swift.class/circularscreen.md)
+  Adds a circular overlay to an image.
+- [class func cmykHalftone() -> any CIFilter & CICMYKHalftone](cifilter-swift.class/cmykhalftone.md)
+  Adds a series of colorful dots to an image.
+- [class func dotScreen() -> any CIFilter & CIDotScreen](cifilter-swift.class/dotscreen.md)
+  Creates a monochrome image with a series of dots to add detail.
+- [class func hatchedScreen() -> any CIFilter & CIHatchedScreen](cifilter-swift.class/hatchedscreen.md)
+  Creates a monochrome image with a series of lines to add detail.
+- [class func lineScreen() -> any CIFilter & CILineScreen](cifilter-swift.class/linescreen.md)
+  Creates a monochrome image with a series of small lines to add detail.
+### Protocols
+- [protocol CICircularScreen](cicircularscreen.md)
+  The properties you use to configure a circular screen filter.
+- [protocol CICMYKHalftone](cicmykhalftone.md)
+  The properties you use to configure a CMYK halftone filter.
+- [protocol CIDotScreen](cidotscreen.md)
+  The properties you use to configure a dot screen filter.
+- [protocol CIHatchedScreen](cihatchedscreen.md)
+  The properties you use to configure a hatched screen filter.
+- [protocol CILineScreen](cilinescreen.md)
+  The properties you use to configure a line screen filter.
+
 ## See Also
 
 - [Blur Filters](blur-filters.md)

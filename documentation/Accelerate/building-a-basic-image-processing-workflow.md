@@ -33,7 +33,7 @@ defer {
 
 ##### Apply the Scale Operation
 
-If you’re rescaling an image with premultiplied alpha (that is, with a [`bitmapInfo`](vimage_cgimageformat/bitmapinfo.md) value with [`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedFirst) or [`CGImageAlphaInfo.premultipliedLast`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedLast)), before you apply the scale operation, see [`Building a Basic Image-Processing Workflow`](building-a-basic-image-processing-workflow.md).
+If you’re rescaling an image with premultiplied alpha (that is, with a [`bitmapInfo`](vimage_cgimageformat/bitmapinfo.md) value with [`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedFirst) or [`CGImageAlphaInfo.premultipliedLast`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedLast)), before you apply the scale operation, see [`Building a Basic Image-Processing Workflow`](building-a-basic-image-processing-workflow#Avoid-Artifacts-by-Unpremultiplying.md).
 
 Otherwise, with the source and destination buffers properly initialized, you’re ready to perform the scaling operation. Because your format contains four 8-bit channels, you use the [`vImageScale_ARGB8888(_:_:_:_:)`](vimagescale_argb8888(_:_:_:_:).md) function. This function works equally well on all channel orderings; for example, RGBA or BGRA.
 

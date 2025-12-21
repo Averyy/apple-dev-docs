@@ -51,14 +51,10 @@ enum Code
   An underlying failure with an unknown cause.
 ### Accessing the error domain
 - [static var errorDomain: String](aserror/errordomain.md)
-  The domain of the error.
 - [let ASErrorDomain: String](aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
 ### Working with raw values
 - [init?(rawValue: Int)](aserror/code/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](aserror/code/equatable-implementations.md)
-- [RawRepresentable Implementations](aserror/code/rawrepresentable-implementations.md)
 
 ## Relationships
 

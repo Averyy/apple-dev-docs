@@ -21,7 +21,7 @@ var isTracking: Bool { get }
 
 #### Discussion
 
-While tracking of a touch event is in progress, the control sets the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). When tracking ends or is canceled for any reason, it sets this property to [`false`](https://developer.apple.com/documentation/swift/false).
+While tracking of a touch event is in progress, the control sets the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true). When tracking ends or is canceled for any reason, it sets this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

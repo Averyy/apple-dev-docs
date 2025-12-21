@@ -18,7 +18,7 @@ class func checkAvailability(at coordinate: CLLocationCoordinate2D, completionHa
 
 #### Discussion
 
-This function returns [`false`](https://developer.apple.com/documentation/swift/false) under the following circumstances:
+This function returns [`false`](https://developer.apple.com/documentation/Swift/false) under the following circumstances:
 
 - ARKit lacks localization imagery for the argument GPS coordinate.
 - A network connection is unavailable to download localization imagery.

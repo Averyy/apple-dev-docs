@@ -3,7 +3,7 @@
 **Framework**: App Store Server Notifications  
 **Kind**: typealias
 
-The reason a subscription expired.
+The reason an auto-renewable subscription expired.
 
 **Availability**:
 - App Store Server Notifications 2.0+

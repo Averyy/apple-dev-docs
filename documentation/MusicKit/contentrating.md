@@ -26,25 +26,9 @@ A nil value means no rating is available for this resource.
 
 ## Topics
 
-### Operators
-- [static func == (ContentRating, ContentRating) -> Bool](contentrating/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ContentRating.clean](contentrating/clean.md)
 - [ContentRating.explicit](contentrating/explicit.md)
-### Initializers
-- [init(from: any Decoder) throws](contentrating/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](contentrating/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](contentrating/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](contentrating/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](contentrating/equatable-implementations.md)
 
 ## Relationships
 

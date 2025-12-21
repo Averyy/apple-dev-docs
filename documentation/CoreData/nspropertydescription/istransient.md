@@ -22,7 +22,7 @@ var isTransient: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is transient, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The transient flag specifies whether or not a property’s value is ignored when an object is saved to a persistent store. Transient properties are not saved to the persistent store, but are still managed for undo, redo, validation, and so on.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is transient, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The transient flag specifies whether or not a property’s value is ignored when an object is saved to a persistent store. Transient properties are not saved to the persistent store, but are still managed for undo, redo, validation, and so on.
 
 ##### Special Considerations
 

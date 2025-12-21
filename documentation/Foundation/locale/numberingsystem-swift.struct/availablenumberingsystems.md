@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A list of available numbering systems on the system.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

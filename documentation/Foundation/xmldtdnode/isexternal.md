@@ -13,6 +13,10 @@
 var isExternal: Bool { get }
 ```
 
+#### Discussion
+
+True if the system id is set. Valid for entities and notations.
+
 ## See Also
 
 - [var notationName: String?](xmldtdnode/notationname.md)

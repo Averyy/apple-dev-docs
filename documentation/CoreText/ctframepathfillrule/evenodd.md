@@ -22,7 +22,7 @@ case evenOdd
 
 #### Discussion
 
-Text is filled in the area that would be painted if the path were given to [`CGContextEOFillPath`](https://developer.apple.com/documentation/coregraphics/1454865-cgcontexteofillpath).
+Text is filled in the area that would be painted if the path were given to [`CGContextEOFillPath`](https://developer.apple.com/documentation/CoreGraphics/CGContextEOFillPath).
 
 ## See Also
 

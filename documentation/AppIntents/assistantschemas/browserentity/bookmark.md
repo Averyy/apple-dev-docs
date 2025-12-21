@@ -25,7 +25,7 @@ var bookmark: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.browser.bookmark` schema:
 
 ```swift
-@AssistantEntity(schema: .browser.bookmark)
+@AppEntity(schema: .browser.bookmark)
 struct BookmarkEntity: AppEntity {
     static var defaultQuery = Query()
 

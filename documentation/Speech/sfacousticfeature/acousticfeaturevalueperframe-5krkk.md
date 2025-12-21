@@ -6,10 +6,10 @@
 An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
 - visionOS ?+
 
 ## Declaration

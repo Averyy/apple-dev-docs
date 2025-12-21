@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

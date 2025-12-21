@@ -32,12 +32,6 @@ case performDefaultHandling
   Cancel the entire request. The provided credential parameter is ignored.
 - [URLSession.AuthChallengeDisposition.rejectProtectionSpace](urlsession/authchallengedisposition/rejectprotectionspace.md)
   Reject this challenge, and call the authentication delegate method again with the next authentication protection space. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.useCredential](urlsession/authchallengedisposition/usecredential.md)
-  Use the specified credential, which may be `nil`.
-- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
-  Cancel the entire request. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.rejectProtectionSpace](urlsession/authchallengedisposition/rejectprotectionspace.md)
-  Reject this challenge, and call the authentication delegate method again with the next authentication protection space. The provided credential parameter is ignored.
 
 
 ---

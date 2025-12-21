@@ -6,11 +6,11 @@
 An account for use in importing and exporting credentials.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ struct ASImportableAccount
 
 #### Overview
 
-This type is a representation of `Account` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Account` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/Foundation/JSONDecoder/decode(_:from:)).
+This type is a representation of `Account` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Account` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/Foundation/JSONDecoder/decode(_:from:)). When using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder), set the [`dateDecodingStrategy`](https://developer.apple.com/documentation/Foundation/JSONDecoder/dateDecodingStrategy-swift.property) property of the decoder to [`JSONDecoder.DateDecodingStrategy.secondsSince1970`](https://developer.apple.com/documentation/Foundation/JSONDecoder/DateDecodingStrategy-swift.enum/secondsSince1970).
 
 The account represents the user of the password manager app itself. You can export multiple accounts together by including them in an [`ASExportedCredentialData`](asexportedcredentialdata.md) instance.
 

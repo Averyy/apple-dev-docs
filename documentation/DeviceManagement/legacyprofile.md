@@ -23,9 +23,12 @@ object LegacyProfile
 
 Specify `com.apple.configuration.legacy` as the declaration type.
 
-This declaration specifies an MDM 1 profile for the device to download and install.
+This declaration specifies an MDMv1 profile for the device to download and install.
 
-The declaration may contain any profile that MDM supports. The system doesn’t allow MDM enrollment and Profile Services profiles.
+The profile may contain any payload type other than the following:
+
+- `com.apple.mdm`
+- `com.apple.declarations`
 
 ##### Configuration Availability
 
@@ -38,12 +41,25 @@ The declaration may contain any profile that MDM supports. The system doesn’t 
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+##### Configuration Example
+
+```json
+{
+    "Type": "com.apple.configuration.legacy",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ProfileURL": "https://www.example.com/profiles/passcode.mobileconfig"
+    }
+}
+```
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
-  The declaration to configure an address book account.
+  The declaration to configure a Contacts account.
 - [object AccountExchange](accountexchange.md)
   The declaration to configure an Exchange account.
 - [object AccountGoogle](accountgoogle.md)
@@ -53,7 +69,7 @@ The declaration may contain any profile that MDM supports. The system doesn’t 
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
-  The declaration to configure a Calendar subscription.
+  The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
@@ -61,11 +77,11 @@ The declaration may contain any profile that MDM supports. The system doesn’t 
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive, legacy profile.
+  The declaration to configure an interactive legacy profile.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
-  The declaration to test the MDM system.
+  The declaration to test declarative device management.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
 - [object Package](package.md)

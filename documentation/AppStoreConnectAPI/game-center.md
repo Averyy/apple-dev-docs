@@ -33,6 +33,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
   Manage localizations for your achievements.
 - [Game Center achievements images](game-center-achievements-images.md)
   Manage images for your Game Center achievements.
+- [Game Center achievement versions](game-center-achievement-versions.md)
+  Manage versions for your Game Center achievements.
 - [Game Center achievement releases](game-center-achievement-releases.md)
   Manage releases for your Game Center achievements.
 - [Game Center player achievements](game-center-player-achievements.md)
@@ -42,10 +44,12 @@ For more information about all you can do with Game Center, see the [`Game Cente
   Create and manage leaderboards for your apps.
 - [Game Center leaderboard images](game-center-leaderboard-images.md)
   Read and manage image assets for Game Center leaderboards.
-- [Game Center leaderboard releases](game-center-leaderboard-releases.md)
-  Read, create, and delete Game Center leaderboards releases.
 - [Game Center leaderboard localizations](game-center-leaderboard-localizations.md)
   Manage localizations for Game Center leaderboards.
+- [Game Center leaderboard versions](game-center-leaderboard-versions.md)
+  Manage versions for your Game Center leaderboards.
+- [Game Center leaderboard releases](game-center-leaderboard-releases.md)
+  Read, create, and delete Game Center leaderboards releases.
 - [Game Center leaderboards scores](game-center-leaderboards-scores.md)
   Create and modify Game Center leaderboards scores.
 ### Leaderboard sets
@@ -55,6 +59,8 @@ For more information about all you can do with Game Center, see the [`Game Cente
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
   Manage image assets for your Game Center leaderboard sets.
+- [Game Center leaderboard set versions](game-center-leaderboard-set-versions.md)
+  Manage versions for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)

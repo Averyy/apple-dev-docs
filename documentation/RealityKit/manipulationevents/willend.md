@@ -6,7 +6,7 @@
 The event that occurs at the end of a manipulation gesture, when the entity has reached its resting position, destination and the system no longer updates it.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

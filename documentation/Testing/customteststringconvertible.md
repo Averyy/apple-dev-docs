@@ -46,9 +46,9 @@ func isDelicious(_ food: Food) { ... }
 Then the values in the array need to be presented in the test output, but the default description of a value may not be adequately descriptive:
 
 ```None
-◇ Passing argument food → .paella to isDelicious(_:)
-◇ Passing argument food → .oden to isDelicious(_:)
-◇ Passing argument food → .ragu to isDelicious(_:)
+◇ Test case passing 1 argument food → .paella to isDelicious(_:) started.
+◇ Test case passing 1 argument food → .oden to isDelicious(_:) started.
+◇ Test case passing 1 argument food → .ragu to isDelicious(_:) started.
 ```
 
 By adopting [`CustomTestStringConvertible`](customteststringconvertible.md), customized descriptions can be included:
@@ -71,9 +71,9 @@ extension Food: CustomTestStringConvertible {
 The presentation of these values will then reflect the value of the [`testDescription`](customteststringconvertible/testdescription.md) property:
 
 ```None
-◇ Passing argument food → paella valenciana to isDelicious(_:)
-◇ Passing argument food → おでん to isDelicious(_:)
-◇ Passing argument food → ragù alla bolognese to isDelicious(_:)
+◇ Test case passing 1 argument food → paella valenciana to isDelicious(_:) started.
+◇ Test case passing 1 argument food → おでん to isDelicious(_:) started.
+◇ Test case passing 1 argument food → ragù alla bolognese to isDelicious(_:) started.
 ```
 
 ## Topics

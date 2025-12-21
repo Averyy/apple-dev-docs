@@ -36,7 +36,7 @@ Apple Archive provides fast compression that includes file attributes, such as, 
   Recreate an entire file system directory from an archive file.
 - [Compressing and saving a string to the file system](../Accelerate/compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and Parsing an Archived String](../Accelerate/decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](../Accelerate/decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 ### Apple Encrypted Archive essentials
 - [Encrypting and Decrypting a String](encrypting-and-decrypting-a-string.md)

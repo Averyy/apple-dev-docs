@@ -24,9 +24,7 @@ True if equal, and false otherwise.
 
 #### Discussion
 
-```None
- Compare two `sec_protocol_options_t` instances.
-```
+Compare two `sec_protocol_options_t` instances.
 
 ## Parameters
 

@@ -41,13 +41,6 @@ struct Model
 ### Performing the regression
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](multivariatelinearregressor/model/applied(to:eventhandler:).md)
   Performs a prediction on a shaped array.
-### Type Aliases
-- [MultivariateLinearRegressor.Model.Input](multivariatelinearregressor/model/input.md)
-  The input type.
-- [MultivariateLinearRegressor.Model.Output](multivariatelinearregressor/model/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](multivariatelinearregressor/model/transformer-implementations.md)
 
 ## Relationships
 

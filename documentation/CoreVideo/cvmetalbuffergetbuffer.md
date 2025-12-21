@@ -21,6 +21,10 @@ func CVMetalBufferGetBuffer(_ buffer: CVMetalBuffer) -> (any MTLBuffer)?
 
 Metal buffer
 
+#### Discussion
+
+Returns the Metal MTLBuffer object of the CVMetalBufferRef
+
 ## Parameters
 
 - `buffer`: Target CVMetalBuffer

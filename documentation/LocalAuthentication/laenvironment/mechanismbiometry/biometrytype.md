@@ -19,6 +19,8 @@ var biometryType: LABiometryType { get }
 
 #### Discussion
 
+Type of biometry supported by the device.
+
 This property does not indicate whether biometry is available or not. It always reads the type of biometry supported by device hardware. You should check @c isUsable property to see if it is available for use.
 
 

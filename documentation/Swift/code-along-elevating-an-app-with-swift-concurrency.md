@@ -4,6 +4,11 @@
 
 Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 270: [`Code-along: Elevate an app with Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/270/).

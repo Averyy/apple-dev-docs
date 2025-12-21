@@ -32,7 +32,7 @@ This method is used primarily by an [`NSWindow`](nswindow.md) object to determin
 - [func convert(NSPoint, to: NSView?) -> NSPoint](nsview/convert(_:to:)-6u9ir.md)
   Converts a point from the view’s coordinate system to that of a given view.
 - [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsview/acceptsfirstmouse(for:).md)
-  Overridden by subclasses to return [`true`](https://developer.apple.com/documentation/swift/true) if the view should be sent a [`mouseDown(with:)`](nsresponder/mousedown(with:).md) message for an initial mouse-down event, [`false`](https://developer.apple.com/documentation/swift/false) if not.
+  Returns a Boolean value that indicates whether the view accepts the initial mouse-down event.
 - [func isMousePoint(NSPoint, in: NSRect) -> Bool](nsview/ismousepoint(_:in:).md)
   Returns whether a region of the view contains a specified point, accounting for whether the view is flipped or not.
 - [func performKeyEquivalent(with: NSEvent) -> Bool](nsview/performkeyequivalent(with:).md)

@@ -107,6 +107,11 @@ content.add(dockingEntity)
 
 ![A screenshot of the visionOS app in Simulator showing the overview of the docking sample.](https://docs-assets.developer.apple.com/published/0eedf3d9c20f384e39b43d86a081292a/docking-base%402x.png)
 
+## See Also
+
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+
 
 ---
 

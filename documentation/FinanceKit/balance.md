@@ -17,12 +17,6 @@ struct Balance
 
 ## Topics
 
-### Operators
-- [static func == (Balance, Balance) -> Bool](balance/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](balance/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [let amount: CurrencyAmount](balance/amount.md)
   The amount of the balance.
@@ -30,15 +24,6 @@ struct Balance
   The date and time the system calculated the balance.
 - [let creditDebitIndicator: CreditDebitIndicator](balance/creditdebitindicator.md)
   A value that indicates whether the balance is a credit or a debit balance.
-- [var hashValue: Int](balance/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](balance/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](balance/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](balance/equatable-implementations.md)
 
 ## Relationships
 

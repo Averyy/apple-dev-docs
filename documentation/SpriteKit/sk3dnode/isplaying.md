@@ -17,13 +17,12 @@ A Boolean value that determines whether the scene is playing.
 ## Declaration
 
 ```swift
-@MainActor
 var isPlaying: Bool { get set }
 ```
 
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), SceneKit does not increment the scene time, so animations associated with the scene do not play. Change this property’s value to [`true`](https://developer.apple.com/documentation/swift/true) to start animating the scene.
+If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), SceneKit does not increment the scene time, so animations associated with the scene do not play. Change this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true) to start animating the scene.
 
 ## See Also
 

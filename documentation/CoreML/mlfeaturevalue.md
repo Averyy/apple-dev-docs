@@ -28,25 +28,28 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
 
 ## Topics
 
-### Creating Numeric Feature Values
+### Creating a feature value
+- [convenience init(MLSendableFeatureValue)](mlfeaturevalue/init(_:).md)
+  Creates a feature value from a sendable feature value.
+### Creating numeric feature values
 - [convenience init(int64: Int64)](mlfeaturevalue/init(int64:).md)
   Creates a feature value that contains an integer.
 - [convenience init(double: Double)](mlfeaturevalue/init(double:).md)
   Creates a feature value that contains a double.
-### Creating String Feature Values
+### Creating string feature values
 - [convenience init(string: String)](mlfeaturevalue/init(string:).md)
   Creates a feature value that contains a string.
-### Creating Multidimensional Feature Values
+### Creating multidimensional feature values
 - [convenience init(multiArray: MLMultiArray)](mlfeaturevalue/init(multiarray:).md)
   Creates a feature value that contains a multidimensional array.
 - [convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>)](mlfeaturevalue/init(shapedarray:).md)
   Creates a feature value that contains a shaped array.
-### Creating Collection Feature Values
+### Creating collection feature values
 - [convenience init(dictionary: [AnyHashable : NSNumber]) throws](mlfeaturevalue/init(dictionary:).md)
   Creates a feature value that contains a dictionary of numbers.
 - [convenience init(sequence: MLSequence)](mlfeaturevalue/init(sequence:).md)
   Creates a feature value that contains a sequence.
-### Creating Image Feature Values
+### Creating image feature values
 - [convenience init(pixelBuffer: CVPixelBuffer)](mlfeaturevalue/init(pixelbuffer:).md)
   Creates a feature value that contains an image from a pixel buffer.
 - [convenience init(CGImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]?) throws](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:).md)
@@ -69,13 +72,13 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
   The width, height, and pixel format constraints of an image feature.
 - [MLFeatureValue.ImageOption](mlfeaturevalue/imageoption.md)
   The initializer options you use to crop and scale an image when creating an image feature value.
-### Creating Undefined Feature Values
+### Creating undefined feature values
 - [convenience init(undefined: MLFeatureType)](mlfeaturevalue/init(undefined:).md)
   Creates a feature value with a type that represents an undefined or missing value.
-### Accessing the Feature’s Type
+### Accessing the feature’s type
 - [var type: MLFeatureType](mlfeaturevalue/type.md)
   The type of the feature value.
-### Accessing the Feature’s Value
+### Accessing the feature’s value
 - [var isUndefined: Bool](mlfeaturevalue/isundefined.md)
   A Boolean value that indicates whether the feature value is undefined or missing.
 - [var int64Value: Int64](mlfeaturevalue/int64value.md)
@@ -94,10 +97,10 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
   The underlying sequence of the feature value.
 - [var dictionaryValue: [AnyHashable : NSNumber]](mlfeaturevalue/dictionaryvalue.md)
   The underlying dictionary of the feature value.
-### Comparing Feature Values
+### Comparing feature values
 - [func isEqual(to: MLFeatureValue) -> Bool](mlfeaturevalue/isequal(to:).md)
   Returns a Boolean value that indicates whether a feature value is equal to another.
-### Supporting Types
+### Supporting types
 - [enum MLFeatureType](mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
 - [struct MLShapedArray](mlshapedarray.md)
@@ -108,9 +111,6 @@ If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and con
   A machine learning collection type that stores numeric values in an array with multiple dimensions.
 - [class MLSequence](mlsequence.md)
   A machine learning collection type that stores a series of strings or integers.
-### Initializers
-- [convenience init(MLSendableFeatureValue)](mlfeaturevalue/init(_:).md)
-  Creates a feature value from a sendable feature value.
 
 ## Relationships
 

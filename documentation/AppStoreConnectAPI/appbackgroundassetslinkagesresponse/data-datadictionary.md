@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The the type and ID of a background asset resource linked to an app.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Declaration
 

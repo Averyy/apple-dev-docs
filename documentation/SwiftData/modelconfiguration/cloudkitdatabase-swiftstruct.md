@@ -31,6 +31,12 @@ struct CloudKitDatabase
 - [static var none: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/none.md)
   Disables managed CloudKit sync.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)

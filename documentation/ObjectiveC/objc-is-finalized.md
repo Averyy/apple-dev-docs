@@ -9,9 +9,8 @@
 - Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
-- watchOS ?+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

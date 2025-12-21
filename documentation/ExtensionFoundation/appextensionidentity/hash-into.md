@@ -6,13 +6,13 @@
 Hashes the essential components of the extension by feeding them into the given hash function.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,12 +22,12 @@ func hash(into hasher: inout Hasher)
 
 ## Parameters
 
-- `hasher`: The hash function to use when combining the components of the color parameter.
+- `hasher`: The hash function to use when combining the components of the extension.
 
 ## See Also
 
 - [static func == (AppExtensionIdentity, AppExtensionIdentity) -> Bool](appextensionidentity/==(_:_:).md)
-  Indicates whether two extensions are equal
+  Returns a Boolean value that indicates whether two identities are equal.
 
 
 ---

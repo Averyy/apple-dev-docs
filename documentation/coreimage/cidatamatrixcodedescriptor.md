@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: class
 
-A Data Matrix code symbol.
+A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,27 +21,25 @@ class CIDataMatrixCodeDescriptor
 
 #### Overview
 
-A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a Data Matrix code symbol.
-
-Data Matrix codes are two-dimensional barcodes comprising black and white cells arranged in a square or rectangular matrix pattern.  They can encode text or numeric data.
+A Data Matrix code symbol is a 2D barcode format defined by the ISO/IEC 16022:2006(E) standard. It encodes data in square or rectangular symbol with solid lines on the left and bottom sides
 
 ## Topics
 
 ### Creating a Descriptor
 - [init?(payload: Data, rowCount: Int, columnCount: Int, eccVersion: CIDataMatrixCodeDescriptor.ECCVersion)](cidatamatrixcodedescriptor/init(payload:rowcount:columncount:eccversion:).md)
-  Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+  Initializes a Data Matrix code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload that comprises the Data Matrix code symbol.
+  The error-corrected payload containing the data encoded in the Data Matrix code symbol.
 - [var rowCount: Int](cidatamatrixcodedescriptor/rowcount-swift.property.md)
-  The number of module rows.
+  The number of rows in the Data Matrix code symbol.
 - [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
-  The number of module columns.
+  The number of columns in the Data Matrix code symbol.
 - [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.property.md)
-  The Data Matrix code ECC version.
+  The error correction version of the Data Matrix code symbol.
 ### Error Correction Constants
 - [CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.enum.md)
-  Constants concerning Data Matrix code ECC version.
+  Constants indicating the Data Matrix code ECC version.
 
 ## Relationships
 
@@ -63,11 +61,11 @@ Data Matrix codes are two-dimensional barcodes comprising black and white cells 
 - [class CIBarcodeDescriptor](cibarcodedescriptor.md)
   An abstract base class that represents a machine-readable code’s attributes.
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A square QR code symbol.
+  A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  An Aztec code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A PDF417 symbol.
+  A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
 
 
 ---

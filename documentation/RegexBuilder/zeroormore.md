@@ -67,12 +67,6 @@ struct ZeroOrMore<Output>
   Creates a regex component that matches the given component zero or more times.
 - [init(some RegexComponent, RegexRepetitionBehavior?)](zeroormore/init(_:_:)-9uicg.md)
   Creates a regex component that matches the given component zero or more times.
-### Instance Properties
-- [var regex: Regex<Output>](zeroormore/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [ZeroOrMore.RegexOutput](zeroormore/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

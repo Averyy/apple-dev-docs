@@ -29,8 +29,8 @@ case cameraAuthorizationRestricted
   An error that indicates that the VideoReader cannot find a video track.
 - [VideoReaderError.sourceCameraNotAvailable](videoreadererror/sourcecameranotavailable.md)
   An error that indicates that no cameras are available.
-- [var errorDescription: String?](videoreadererror/errordescription.md)
-  A localized message describing what error occurred.
+- [VideoReaderError.captureSessionStopped](videoreadererror/capturesessionstopped.md)
+  An error that indicates that the capture session stopped.
 
 
 ---

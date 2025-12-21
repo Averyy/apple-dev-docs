@@ -25,11 +25,6 @@ A new media item picker.
 
 - `mediaTypes`: A set representing the media types for the media item picker. See the   enumeration.
 
-## See Also
-
-- [init](mpmediapickercontroller-init.md)
-  Initializes a media item picker for all media types.
-
 
 ---
 

@@ -64,7 +64,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [init?(bitmapImageRep: NSBitmapImageRep)](ciimage/init(bitmapimagerep:).md)
   Initializes an image object with the specified bitmap image representation.
 - [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](ciimage/init(imageprovider:size:_:format:colorspace:options:).md)
-  Initializes an image object with  data provided by an image provider, using the specified options.
+  Initializes an image object based on pixels from an image provider object.
 - [init?(depthData: AVDepthData)](ciimage/init(depthdata:).md)
 - [init?(depthData: AVDepthData, options: [String : Any]?)](ciimage/init(depthdata:options:).md)
 - [init?(portaitEffectsMatte: AVPortraitEffectsMatte)](ciimage/init(portaiteffectsmatte:).md)
@@ -116,13 +116,13 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [func settingAlphaOne(in: CGRect) -> CIImage](ciimage/settingalphaone(in:).md)
   Returns a new image created by setting all alpha values to 1.0 within the specified rectangle and to 0.0 outside of that area.
 - [func applyingGaussianBlur(sigma: Double) -> CIImage](ciimage/applyinggaussianblur(sigma:).md)
-  Returns a new image created by applying a Gaussian Blur filter to the image.
+  Create an image by applying a gaussian blur to the receiver.
 - [func settingProperties([AnyHashable : Any]) -> CIImage](ciimage/settingproperties(_:).md)
-  Returns a new image created by adding the specified metadata properties to the image.
+  Return a new image by changing the receiver’s metadata properties.
 - [func insertingIntermediate() -> CIImage](ciimage/insertingintermediate.md)
-  Returns a new image created by inserting an intermediate.
+  Create an image that inserts a intermediate that is cacheable
 - [func insertingIntermediate(cache: Bool) -> CIImage](ciimage/insertingintermediate(cache:).md)
-  Returns a new image created by inserting a cacheable intermediate.
+  Create an image that inserts a intermediate that is cacheable.
 ### Creating Solid Colors
 - [init(color: CIColor)](ciimage/init(color:).md)
   Initializes an image of infinite extent whose entire content is the specified color.
@@ -142,7 +142,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [var extent: CGRect](ciimage/extent.md)
   A rectangle that specifies the extent of the image.
 - [var properties: [String : Any]](ciimage/properties.md)
-  A dictionary containing metadata about the image.
+  Returns the metadata properties dictionary of the image.
 - [var url: URL?](ciimage/url.md)
   The URL from which the image was loaded.
 - [var colorSpace: CGColorSpace?](ciimage/colorspace.md)
@@ -171,9 +171,9 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   The affine transform for changing the image to the given orientation.
 ### Sampling the Image
 - [func samplingNearest() -> CIImage](ciimage/samplingnearest.md)
-  Samples the image using nearest-neighbor and returns the result.
+  Create an image by changing the receiver’s sample mode to nearest neighbor.
 - [func samplingLinear() -> CIImage](ciimage/samplinglinear.md)
-  Samples the image using bilinear interpolation and returns the result.
+  Create an image by changing the receiver’s sample mode to bilinear interpolation.
 ### Accessing Original Image Content
 - [var cgImage: CGImage?](ciimage/cgimage.md)
   The CoreGraphics image object this image was created from, if applicable.
@@ -205,13 +205,17 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   The key for an OpenGL texture format.
 ### Instance Properties
 - [var contentHeadroom: Float](ciimage/contentheadroom.md)
+  Returns the content headroom of the image.
 - [var isOpaque: Bool](ciimage/isopaque.md)
+  Returns YES if the image is known to have and alpha value of `1.0` over the entire image extent.
 - [var metalTexture: (any MTLTexture)?](ciimage/metaltexture.md)
 - [var contentAverageLightLevel: Float](ciimage/contentaveragelightlevel.md)
   Returns the content average light level of the image.
 ### Instance Methods
 - [func applyingGainMap(CIImage) -> CIImage](ciimage/applyinggainmap(_:).md)
+  Create an image that applies a gain map Core Image image to the received Core Image image.
 - [func applyingGainMap(CIImage, headroom: Float) -> CIImage](ciimage/applyinggainmap(_:headroom:).md)
+  Create an image that applies a gain map Core Image image with a specified headroom to the received Core Image image.
 - [func insertingTiledIntermediate() -> CIImage](ciimage/insertingtiledintermediate.md)
   Create an image that inserts a intermediate that is cached in tiles
 - [func settingContentAverageLightLevel(Float) -> CIImage](ciimage/settingcontentaveragelightlevel(_:).md)
@@ -241,7 +245,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [Processing an Image Using Built-in Filters](processing-an-image-using-built-in-filters.md)
   Apply effects such as sepia tint, highlight strengthening, and scaling to images.
 - [class CIContext](cicontext.md)
-  An evaluation context for rendering image processing results and performing image analysis.
+  The Core Image context class provides an evaluation context for Core Image processing with Metal, OpenGL, or OpenCL.
 
 
 ---

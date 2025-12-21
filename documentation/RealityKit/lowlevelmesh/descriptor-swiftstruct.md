@@ -10,7 +10,7 @@ An object that describes the data format and layout of the buffers in a low-leve
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -49,6 +49,8 @@ struct Descriptor
 
 ## See Also
 
+- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+  Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)

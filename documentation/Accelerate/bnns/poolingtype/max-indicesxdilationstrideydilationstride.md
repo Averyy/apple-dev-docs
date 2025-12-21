@@ -13,7 +13,6 @@ A function for pooling that computes the maximum of each element in the pooling 
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

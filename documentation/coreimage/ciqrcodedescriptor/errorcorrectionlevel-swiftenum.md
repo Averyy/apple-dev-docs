@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: enum
 
-Constants that indicate the percentage of the symbol dedicated to error correction.
+Constants indicating the percentage of the symbol that is dedicated to error correction.
 
 **Availability**:
 - iOS ?+
@@ -22,14 +22,14 @@ enum ErrorCorrectionLevel
 ## Topics
 
 ### Enumeration Cases
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelL](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levell.md)
-  Low-percentage error correction: 20% of the symbol data is dedicated to error correction.
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelM](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelm.md)
-  Medium-percentage error correction: 37% of the symbol data is dedicated to error correction.
-- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelQ](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelq.md)
-  High-percentage error correction: 55% of the symbol data is dedicated to error correction.
 - [CIQRCodeDescriptor.ErrorCorrectionLevel.levelH](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelh.md)
-  Very-high-percentage error correction: 65% of the symbol data is dedicated to error correction.
+  Indicates that approximately 65% of the symbol data is dedicated to error correction.
+- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelL](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levell.md)
+  Indicates that approximately 20% of the symbol data is dedicated to error correction.
+- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelM](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelm.md)
+  Indicates that approximately 37% of the symbol data is dedicated to error correction.
+- [CIQRCodeDescriptor.ErrorCorrectionLevel.levelQ](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/levelq.md)
+  Indicates that approximately 55% of the symbol data is dedicated to error correction.
 ### Initializers
 - [init?(rawValue: Int)](ciqrcodedescriptor/errorcorrectionlevel-swift.enum/init(rawvalue:).md)
 

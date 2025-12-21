@@ -19,7 +19,7 @@ var userEnabled: Bool { get }
 
 #### Discussion
 
-By default, the property is [`true`](https://developer.apple.com/documentation/swift/true); however, If the user disables the domain in the System Preferences, the property is [`false`](https://developer.apple.com/documentation/swift/false).
+By default, the property is [`true`](https://developer.apple.com/documentation/Swift/true); however, If the user disables the domain in the System Preferences, the property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

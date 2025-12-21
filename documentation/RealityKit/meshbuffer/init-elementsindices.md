@@ -10,7 +10,7 @@ Create buffer from an array of element values and an array of indices into that 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS ?+
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

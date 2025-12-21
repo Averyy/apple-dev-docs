@@ -24,8 +24,8 @@ struct VerticalAlignment
 ## Mentions
 
 - [Aligning views across stacks](aligning-views-across-stacks.md)
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Building layouts with stack views](building-layouts-with-stack-views.md)
 
 #### Overview
 
@@ -75,7 +75,7 @@ Aligning a text view to its baseline rather than to the bottom of its frame prod
 
 ##### Custom Alignment Guides
 
-You can create a custom vertical alignment guide by first creating a type that conforms to the [`AlignmentID`](alignmentid.md) protocol, and then using that type to initalize a new static property on `VerticalAlignment`:
+You can create a custom vertical alignment guide by first creating a type that conforms to the [`AlignmentID`](alignmentid.md) protocol, and then using that type to initialize a new static property on `VerticalAlignment`:
 
 ```swift
 private struct FirstThirdAlignment: AlignmentID {

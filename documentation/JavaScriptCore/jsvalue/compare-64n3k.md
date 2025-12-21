@@ -23,6 +23,8 @@ A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if a
 
 #### Discussion
 
+Compare a JSValue with a uint64_t.
+
 The JSValue is converted to an integer according to the rules specified by the JavaScript language then compared with other.
 
 

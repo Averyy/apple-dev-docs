@@ -22,11 +22,6 @@ struct ParticipantStates
 - [SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/iterator.md)
 - [SystemCoordinator.ParticipantStates.Element](systemcoordinator/participantstates/element.md)
   The type of element produced by this asynchronous sequence.
-### Type Aliases
-- [SystemCoordinator.ParticipantStates.AsyncIterator](systemcoordinator/participantstates/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](systemcoordinator/participantstates/asyncsequence-implementations.md)
 
 ## Relationships
 

@@ -26,8 +26,6 @@ Specifies that representations of a measurement with the `NSTemperatureUnit` uni
 
 - [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
 - [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
-- [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
-- [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
 
 
 ---

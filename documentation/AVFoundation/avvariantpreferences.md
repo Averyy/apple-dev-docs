@@ -22,7 +22,7 @@ struct AVVariantPreferences
 
 ## Topics
 
-### Preference Settings
+### Preference settings
 - [static var scalabilityToLosslessAudio: AVVariantPreferences](avvariantpreferences/scalabilitytolosslessaudio.md)
   A preference that indicates the player item supports variant playlists that contain losslessly encoded audio when sufficient bandwidth is available.
 ### Initializers

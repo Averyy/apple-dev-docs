@@ -35,9 +35,6 @@ enum Button
   The device’s camera button.
 ### Initializers
 - [init?(rawValue: Int)](xcuidevice/button/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuidevice/button/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuidevice/button/rawrepresentable-implementations.md)
 
 ## Relationships
 

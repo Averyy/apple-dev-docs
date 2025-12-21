@@ -23,8 +23,6 @@ class FSModuleIdentity
   The module’s URL.
 - [var isEnabled: Bool](fsmoduleidentity/isenabled.md)
   A Boolean value that indicates if the module is enabled.
-### Default Implementations
-- [Identifiable Implementations](fsmoduleidentity/identifiable-implementations.md)
 
 ## Relationships
 

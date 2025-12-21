@@ -5,14 +5,20 @@
 ## Topics
 
 ### Deprecated Functions
-- [func async<T>(priority: TaskPriority?, operation: () async -> T) -> Task<T, Never>](async(priority:operation:)-6nw1p.md)
-- [func async<T>(priority: TaskPriority?, operation: () async throws -> T) -> Task<T, any Error>](async(priority:operation:)-6ud0e.md)
-- [func asyncDetached<T>(priority: TaskPriority?, operation: () async -> T) -> Task<T, Never>](asyncdetached(priority:operation:)-3np0.md)
-- [func asyncDetached<T>(priority: TaskPriority?, operation: () async throws -> T) -> Task<T, any Error>](asyncdetached(priority:operation:)-493is.md)
-- [func detach<T>(priority: TaskPriority?, operation: () async -> T) -> Task<T, Never>](detach(priority:operation:)-1z4ju.md)
-- [func detach<T>(priority: TaskPriority?, operation: () async -> T) -> Task<T, Never>](detach(priority:operation:)-1z4ju.md)
-- [func detach<T>(priority: TaskPriority?, operation: () async throws -> T) -> Task<T, any Error>](detach(priority:operation:)-4lt3t.md)
-- [func detach<T>(priority: TaskPriority?, operation: () async throws -> T) -> Task<T, any Error>](detach(priority:operation:)-4lt3t.md)
+- [func async<Success>(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](async(priority:operation:)-2y0dc.md)
+  Deprecated, available only for source compatibility reasons.
+- [func async<Success>(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](async(priority:operation:)-684z0.md)
+  Deprecated, available only for source compatibility reasons.
+- [func asyncDetached<Success>(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](asyncdetached(priority:operation:)-6wbk6.md)
+  Deprecated, available only for source compatibility reasons.
+- [func asyncDetached<Success>(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](asyncdetached(priority:operation:)-79mp7.md)
+  Deprecated, available only for source compatibility reasons.
+- [func asyncDetached<Success>(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](asyncdetached(priority:operation:)-79mp7.md)
+  Deprecated, available only for source compatibility reasons.
+- [func detach<Success>(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](detach(priority:operation:)-2h9ty.md)
+  Deprecated, available only for source compatibility reasons.
+- [func detach<Success>(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](detach(priority:operation:)-4948v.md)
+  Deprecated, available only for source compatibility reasons.
 ### Deprecated Type Aliases
 - [typealias ArrayLiteralConvertible](arrayliteralconvertible.md)
 - [typealias BidirectionalIndexable](bidirectionalindexable.md)

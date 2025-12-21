@@ -10,7 +10,7 @@ Creates an instance of an accessory widget background.
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

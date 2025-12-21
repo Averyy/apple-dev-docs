@@ -6,7 +6,7 @@ Asynchronous properties for compositions.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVCompositionTrack]>](avpartialasyncproperty/tracks-9eows.md)
   The tracks that a composition contains.
 

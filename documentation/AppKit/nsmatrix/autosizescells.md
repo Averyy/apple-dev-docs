@@ -17,7 +17,7 @@ var autosizesCells: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), whenever the matrix is resized, the sizes of the cells change in proportion, keeping the intercell space constant. This property verifies that the cell sizes and intercell spacing add up to the exact size of the matrix, adjusting the size of the cells and updating the matrix if they don’t. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), then the intercell spacing and cell size remain constant.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), whenever the matrix is resized, the sizes of the cells change in proportion, keeping the intercell space constant. This property verifies that the cell sizes and intercell spacing add up to the exact size of the matrix, adjusting the size of the cells and updating the matrix if they don’t. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), then the intercell spacing and cell size remain constant.
 
 ## See Also
 

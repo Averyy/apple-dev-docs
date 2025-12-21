@@ -20,7 +20,7 @@ var orientationMatchesAngle: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for custom accessories, and varies for system accessories.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for custom accessories, and varies for system accessories.
 
 
 ---

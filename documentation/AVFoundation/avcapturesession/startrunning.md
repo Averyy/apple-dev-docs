@@ -21,7 +21,7 @@ func startRunning()
 
 ## Mentions
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
 
 #### Discussion
 

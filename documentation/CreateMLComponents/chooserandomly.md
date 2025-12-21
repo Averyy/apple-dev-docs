@@ -28,11 +28,6 @@ struct ChooseRandomly<Element>
 ### Applying transformers
 - [func applied(to: Element, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Element](chooserandomly/applied(to:generator:eventhandler:).md)
   Chooses a random transformer from a list of transformers and applies the chosen transformer.
-### Type Aliases
-- [ChooseRandomly.Input](chooserandomly/input.md)
-  The input type.
-- [ChooseRandomly.Output](chooserandomly/output.md)
-  The output type.
 
 ## Relationships
 

@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mllinearregressor/description.md)
-  A text representation of the linear regressor.
-- [var debugDescription: String](mllinearregressor/debugdescription.md)
-  A text representation of the linear regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllinearregressor/playgrounddescription.md)
-  A description of the linear regressor shown in a playground.
+- [MLLinearRegressor.ModelParameters](mllinearregressor/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLLinearRegressor.ModelParameters](mllinearregressor/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

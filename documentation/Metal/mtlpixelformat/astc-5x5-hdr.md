@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-ASTC-compressed format with high-dynamic range content, a block width of 5, and a block height of 6.
+ASTC-compressed format with high-dynamic range content, a block width of 5, and a block height of 5.
 
 **Availability**:
 - iOS 13.0+

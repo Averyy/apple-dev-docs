@@ -28,8 +28,6 @@ struct HourCycle
 - [static let zeroBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](date/formatstyle/symbol/verbatimhour/hourcycle/zerobased.md)
   A hour cycle that indicates a clock that starts at zero.
 ### Comparing Verbatim Hour Clock HourCycles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

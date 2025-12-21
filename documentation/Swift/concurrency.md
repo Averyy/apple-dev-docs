@@ -20,10 +20,6 @@ Perform asynchronous and parallel operations.
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
@@ -73,7 +69,7 @@ Perform asynchronous and parallel operations.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type `T` whose metatype `T.Type` is `Sendable`.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
@@ -107,21 +103,6 @@ Perform asynchronous and parallel operations.
   The global concurrent executor that is used by default for Swift Concurrency tasks.
 - [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
   Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
-### Main and Task Executors
-- [protocol MainExecutor](mainexecutor.md)
-  The main executor must conform to these three protocols; we have to make this a protocol for compatibility with Embedded Swift.
-- [protocol RunLoopExecutor](runloopexecutor.md)
-  An executor that is backed by some kind of run loop.
-- [protocol SchedulableExecutor](schedulableexecutor.md)
-- [protocol ExecutorFactory](executorfactory.md)
-  An ExecutorFactory is used to create the default main and task executors.
-- [struct PlatformExecutorFactory](platformexecutorfactory.md)
-- [class CFMainExecutor](cfmainexecutor.md)
-- [class CFTaskExecutor](cftaskexecutor.md)
-- [class DispatchGlobalTaskExecutor](dispatchglobaltaskexecutor.md)
-- [class DispatchMainExecutor](dispatchmainexecutor.md)
-- [class DummyMainExecutor](dummymainexecutor.md)
-- [class DummyTaskExecutor](dummytaskexecutor.md)
 ### Deprecated
 - [struct Job](job.md)
   Deprecated equivalent of [`ExecutorJob`](executorjob.md).

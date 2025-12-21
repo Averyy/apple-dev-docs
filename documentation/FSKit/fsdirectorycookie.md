@@ -30,8 +30,6 @@ Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:pac
 ### Using defined cookie values
 - [static let initial: FSDirectoryCookie](fsdirectorycookie/initial.md)
   The constant initial value for the directory-enumeration cookie.
-### Default Implementations
-- [Equatable Implementations](fsdirectorycookie/equatable-implementations.md)
 
 ## Relationships
 

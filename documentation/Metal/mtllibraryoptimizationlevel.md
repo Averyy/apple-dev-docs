@@ -21,7 +21,7 @@ enum MTLLibraryOptimizationLevel
 
 ## Topics
 
-### Optimization Options
+### Optimization options
 - [MTLLibraryOptimizationLevel.default](mtllibraryoptimizationlevel/default.md)
   An optimization option for the Metal compiler that prioritizes runtime performance.
 - [MTLLibraryOptimizationLevel.size](mtllibraryoptimizationlevel/size.md)

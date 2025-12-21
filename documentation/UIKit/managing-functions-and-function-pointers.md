@@ -37,9 +37,9 @@ For example, if your `varargs` function requires a `long` integer and you pass i
 
 ##### Cast Objective C Messages in Proper Form
 
-If your code calls the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) function, or any other similar functions in the Objective-C runtime that send messages, you need to cast properly. Although the prototype for the message functions has a variadic form, the method function that’s called by the Objective-C runtime doesn’t share the same prototype.
+If your code calls the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) function, or any other similar functions in the Objective-C runtime that send messages, you need to cast properly. Although the prototype for the message functions has a variadic form, the method function that’s called by the Objective-C runtime doesn’t share the same prototype.
 
-The Objective-C runtime directly calls the function that implements the method, so the calling conventions are mismatched. You must cast the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) function to a prototype that matches the method function being called.
+The Objective-C runtime directly calls the function that implements the method, so the calling conventions are mismatched. You must cast the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) function to a prototype that matches the method function being called.
 
 The following code shows proper form for dispatching a message to an object, using the low-level message functions:
 
@@ -54,7 +54,7 @@ The following code shows proper form for dispatching a message to an object, usi
 }
 ```
 
-In this example, the `doSomething:` method takes a single parameter, `x`, and doesn’t have a variadic form. In `doSomethingElse`, it casts the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) function using the prototype of the method function. Note that a method function always takes an `id` variable and a selector as its first two parameters. After the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) function is cast to the function pointer named `action`, the call is dispatched through that same function pointer.
+In this example, the `doSomething:` method takes a single parameter, `x`, and doesn’t have a variadic form. In `doSomethingElse`, it casts the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) function using the prototype of the method function. Note that a method function always takes an `id` variable and a selector as its first two parameters. After the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) function is cast to the function pointer named `action`, the call is dispatched through that same function pointer.
 
 ## See Also
 

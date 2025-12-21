@@ -5,11 +5,6 @@
 
 Returns a Boolean value that indicates whether a video identified by a given URL is compatible with the Saved Photos album.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -18,7 +13,7 @@ func videoAtPathIs(compatibleWithSavedPhotosAlbum videoPathURL: URL!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the video identified by `videoPathURL` is compatible with the Saved Photos album, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the video identified by `videoPathURL` is compatible with the Saved Photos album, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

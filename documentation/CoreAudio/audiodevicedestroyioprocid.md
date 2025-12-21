@@ -15,6 +15,21 @@
 func AudioDeviceDestroyIOProcID(_ inDevice: AudioObjectID, _ inIOProcID: AudioDeviceIOProcID) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Destroys an AudioDeviceIOProcID.
+
+AudioDeviceIOProcIDs allow for the client to register the same function pointer with a device multiple times
+
+## Parameters
+
+- `inDevice`: The AudioDevice from which the ID came.
+- `inIOProcID`: The AudioDeviceIOProcID to get rid of.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

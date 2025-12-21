@@ -22,7 +22,7 @@ struct AVSampleCursorStorageRange
 
 ## Topics
 
-### Storage Range
+### Storage range
 - [var offset: Int64](avsamplecursorstoragerange/offset.md)
   The offset of the first byte of storage that a media sample or its chunk occupies.
 - [var length: Int64](avsamplecursorstoragerange/length.md)

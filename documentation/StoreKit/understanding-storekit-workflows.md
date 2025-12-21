@@ -5,10 +5,10 @@
 Implement an in-app store with several product types, using StoreKit views.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

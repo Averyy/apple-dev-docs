@@ -21,7 +21,7 @@ var openInPlace: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), copy the document to your app’s container before opening the file. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), open the existing URL in its current location.
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), copy the document to your app’s container before opening the file. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), open the existing URL in its current location.
 
 
 ---

@@ -26,7 +26,7 @@ The methods in this protocol are called by [`AVPlayerItemVideoOutput`](avplayeri
 
 ## Topics
 
-### Responding to Pixel Buffer Changes
+### Responding to pixel buffer changes
 - [func outputMediaDataWillChange(AVPlayerItemOutput)](avplayeritemoutputpulldelegate/outputmediadatawillchange(_:).md)
   Tells the delegate that new samples are about to arrive.
 - [func outputSequenceWasFlushed(AVPlayerItemOutput)](avplayeritemoutputpulldelegate/outputsequencewasflushed(_:).md)

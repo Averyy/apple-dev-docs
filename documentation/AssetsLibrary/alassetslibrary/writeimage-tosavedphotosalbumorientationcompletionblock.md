@@ -5,11 +5,6 @@
 
 Saves a given image to the Saved Photos album.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -22,7 +17,7 @@ func writeImage(toSavedPhotosAlbum imageRef: CGImage!, orientation: ALAssetOrien
 func writeImage(toSavedPhotosAlbum imageRef: CGImage!, orientation: ALAssetOrientation) async throws -> URL?
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
-If you want to save a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object, you can use the `UIImage` method [`CGImage`](https://developer.apple.com/documentation/uikit/uiimage/1624159-cgimage) to get a `CGImageRef`, and cast the image’s [`imageOrientation`](https://developer.apple.com/documentation/UIKit/UIImage/imageOrientation) to `ALAssetOrientation`.
+If you want to save a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object, you can use the `UIImage` method [`cgImage`](https://developer.apple.com/documentation/UIKit/UIImage/cgImage) to get a `CGImageRef`, and cast the image’s [`imageOrientation`](https://developer.apple.com/documentation/UIKit/UIImage/imageOrientation) to `ALAssetOrientation`.
 
 ## Parameters
 

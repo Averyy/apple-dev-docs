@@ -20,7 +20,7 @@ var showsDoneButton: Bool { get set }
 
 #### Discussion
 
-Use [`true`](https://developer.apple.com/documentation/swift/true) to show a Done button; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Use [`true`](https://developer.apple.com/documentation/Swift/true) to show a Done button; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

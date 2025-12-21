@@ -14,7 +14,7 @@ Returns the label for the given index.
 ## Declaration
 
 ```swift
-func ABMultiValueCopyLabelAtIndex(_ multiValue: ABMultiValue!, _ index: CFIndex) -> Unmanaged<CFString>!
+func ABMultiValueCopyLabelAtIndex(_ multiValue: ABMultiValueRef!, _ index: CFIndex) -> Unmanaged<CFString>!
 ```
 
 #### Return Value

@@ -28,8 +28,6 @@ The corresponding value is an [`NSTimeZone`](nstimezone.md).
 
 - [static var calendar: NSCalendar.Unit](nscalendar/unit/calendar.md)
   Identifier for the calendar of a date components object.
-- [static var calendar: NSCalendar.Unit](nscalendar/unit/calendar.md)
-  Identifier for the calendar of a date components object.
 
 
 ---

@@ -34,9 +34,6 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
 ### Structures
 - [SystemCoordinator.ParticipantState.Seat](systemcoordinator/participantstate/seat-swift.struct.md)
   A seat assigned to a single participant in a spatial template.
-### Operators
-- [static func == (SystemCoordinator.ParticipantState, SystemCoordinator.ParticipantState) -> Bool](systemcoordinator/participantstate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let pose: Pose3D?](systemcoordinator/participantstate/pose.md)
   The position and rotation of the participant – at the time the system coordinator state last changed.
@@ -44,8 +41,6 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
   The role assigned to this participant, if any.
 - [let seat: SystemCoordinator.ParticipantState.Seat?](systemcoordinator/participantstate/seat-swift.property.md)
   The seat assigned to this participant.
-### Default Implementations
-- [Equatable Implementations](systemcoordinator/participantstate/equatable-implementations.md)
 
 ## Relationships
 
@@ -62,8 +57,7 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
-- [nonisolated func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](../SwiftUI/View/groupActivityAssociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

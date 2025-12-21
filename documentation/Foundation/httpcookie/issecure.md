@@ -22,7 +22,7 @@ var isSecure: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if this cookie should only be sent over secure channels, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if this cookie should only be sent over secure channels, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

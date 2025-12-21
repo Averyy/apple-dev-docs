@@ -28,14 +28,6 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 - `hasher`: The hasher to use when combining the components   of this instance.
 
-## See Also
-
-- [func define(className: String, values: [String])](sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:).md)
-  Define a class of tokens to be used in template strings.
-- [func insert(template: String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).md)
-  Add a template to be used to generate data samples.
-- [func makeAsyncIterator() -> SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/templatephrasecountgenerator/makeasynciterator.md)
-
 
 ---
 

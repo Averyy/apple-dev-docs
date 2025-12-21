@@ -14,7 +14,6 @@ The localized name of the document.
 ## Declaration
 
 ```swift
-@MainActor
 var localizedName: String { get }
 ```
 

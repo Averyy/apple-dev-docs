@@ -2,7 +2,7 @@
 
 **Framework**: Bundle Resources
 
-Describe the data your app or third-party SDK collects and the reasons required APIs it uses.
+Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 
 #### Overview
 
@@ -13,7 +13,9 @@ Apps and third-party SDKs — distributed as XCFrameworks, Swift packages, or Xc
 
 For each type of data your app or third-party SDK collects and category of required reasons API it uses, the app or third-party SDK needs to record the reasons in its bundled privacy manifest file.
 
-> ❗ **Important**:  You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [`Upcoming third-party SDK requirements`](https://developer.apple.comhttps://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers to understand the API use and data-collection practices of your third-party SDK.
+> ❗ **Important**:  You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [`Upcoming third-party SDK requirements`](https://developer.apple.comhttps://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses a required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers understand the API use and data-collection practices of your third-party SDK.
+
+For information on editing the privacy manifest file, see [`Editing property list files`](https://developer.apple.com/documentation/Xcode/editing-property-list-files).
 
 ##### Create a Privacy Manifest
 
@@ -31,8 +33,6 @@ By default, the file is named `PrivacyInfo.xcprivacy`; this is the required file
 
 At the top level of this property list file, add the following keys to the dictionary:
 
-To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPrivacyTracking` to `true`.
-
 ## Topics
 
 ### Essentials
@@ -42,6 +42,8 @@ To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPriv
   Declare the data collected by your app or by third-party SDKs.
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
+- [Editing property list files](../Xcode/editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 - [App Privacy Configuration](app-privacy-configuration.md)
   A data structure that represents the root object in a privacy manifest file.
 

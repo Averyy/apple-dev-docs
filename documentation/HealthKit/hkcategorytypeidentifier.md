@@ -98,6 +98,8 @@ For the complete list of quantity type identifiers, see Activity.
 ### Initializers
 - [init(rawValue: String)](hkcategorytypeidentifier/init(rawvalue:).md)
   Returns a newly initialized category type identifier using the provided string.
+### Type Properties
+- [static let hypertensionEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/hypertensionevent.md)
 
 ## Relationships
 

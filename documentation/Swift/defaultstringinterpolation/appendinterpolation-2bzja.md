@@ -22,7 +22,7 @@ mutating func appendInterpolation<T>(_ value: T) where T : CustomStringConvertib
 
 #### Discussion
 
-Do not call this method directly. It is used by the compiler when interpreting string interpolations. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
+You don’t need to call this method directly. It’s used by the compiler when interpreting string interpolations. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 
 ```swift
 let price = 2

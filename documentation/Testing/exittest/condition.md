@@ -7,7 +7,7 @@ The possible conditions under which an exit test will complete.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

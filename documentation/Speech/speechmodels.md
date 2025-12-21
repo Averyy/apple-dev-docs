@@ -6,11 +6,11 @@
 Namespace for methods related to model management.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ enum SpeechModels
 
 ## Topics
 
-### Type Methods
+### Releasing cached models
 - [static func endRetention() async](speechmodels/endretention.md)
   Releases all models held by cached recognizer instances. The method does not return until all models are released.
 

@@ -16,7 +16,7 @@ case momentaryLight
 
 #### Discussion
 
-When the value of [`isHighlighted`](nscontrol/ishighlighted.md) is [`true`](https://developer.apple.com/documentation/swift/true), the button provides a visual indication of the highlight in its drawing. It might accomplish this indication by modifying the appearance of its content, its bezel, or both.
+When the value of [`isHighlighted`](nscontrol/ishighlighted.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the button provides a visual indication of the highlight in its drawing. It might accomplish this indication by modifying the appearance of its content, its bezel, or both.
 
 This type of button is best for triggering actions because it doesn’t show its [`state`](nsbutton/state.md); it always displays its normal image or title.
 

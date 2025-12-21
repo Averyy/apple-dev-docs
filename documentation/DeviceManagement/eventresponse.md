@@ -17,8 +17,8 @@ object EventResponse
 
 ## Mentions
 
-- [Managing Users](managing-users.md)
 - [Managing Assets](managing-assets.md)
+- [Managing Users](managing-users.md)
 
 ## Topics
 

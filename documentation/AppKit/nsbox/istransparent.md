@@ -17,7 +17,7 @@ var isTransparent: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the receiver is transparent, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the receiver is transparent, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

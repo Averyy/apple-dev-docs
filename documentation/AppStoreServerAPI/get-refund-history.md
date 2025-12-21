@@ -41,10 +41,6 @@ GET https://api.storekit.itunes.apple.com/inApps/v2/refund/lookup/{transactionId
 
 - [object RefundHistoryResponse](refundhistoryresponse.md)
   A response that contains an array of signed JSON Web Signature (JWS) refunded transactions, and paging information.
-- [Get Refund History V1](get-refund-history-v1.md)
-  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
-- [object RefundLookupResponse](refundlookupresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 
 ---

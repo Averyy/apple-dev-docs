@@ -38,16 +38,6 @@ When used in combination with [`stringWithFormat:`](nsstring/stringwithformat:.m
   The formatting context for the beginning of a sentence.
 - [Formatter.Context.middleOfSentence](formatter/context/middleofsentence.md)
   The formatting context for the middle of a sentence.
-- [Formatter.Context.unknown](formatter/context/unknown.md)
-  An unknown formatting context.
-- [Formatter.Context.standalone](formatter/context/standalone.md)
-  The formatting context for stand-alone usage.
-- [Formatter.Context.listItem](formatter/context/listitem.md)
-  The formatting context for a list or menu item.
-- [Formatter.Context.beginningOfSentence](formatter/context/beginningofsentence.md)
-  The formatting context for the beginning of a sentence.
-- [Formatter.Context.middleOfSentence](formatter/context/middleofsentence.md)
-  The formatting context for the middle of a sentence.
 
 
 ---

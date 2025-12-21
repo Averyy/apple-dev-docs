@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: class
 
-A square QR code symbol.
+A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,29 +21,25 @@ class CIQRCodeDescriptor
 
 #### Overview
 
-A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a square QR code symbol.
-
-ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity.
-
-QR codes can encode text, vCard contact information, or Uniform Resource Identifiers (URI).
+ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity. QR Codes can encode text, vCard contact information, or Uniform Resource Identifiers (URI).
 
 ## Topics
 
 ### Creating a Descriptor
 - [init?(payload: Data, symbolVersion: Int, maskPattern: UInt8, errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel)](ciqrcodedescriptor/init(payload:symbolversion:maskpattern:errorcorrectionlevel:).md)
-  Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+  Initializes a QR code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](ciqrcodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the QR code.
+  The error-corrected codeword payload that comprises the QR code symbol.
 - [var symbolVersion: Int](ciqrcodedescriptor/symbolversion-swift.property.md)
-  The version of the QR code.
+  The version of the QR code which corresponds to the size of the QR code symbol.
 - [var maskPattern: UInt8](ciqrcodedescriptor/maskpattern-swift.property.md)
-  The QR code’s mask pattern.
+  The data mask pattern for the QR code symbol.
 - [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](ciqrcodedescriptor/errorcorrectionlevel-swift.property.md)
-  The QR code error correction level.
+  The error correction level of the QR code symbol.
 ### Error Correction Constants
 - [CIQRCodeDescriptor.ErrorCorrectionLevel](ciqrcodedescriptor/errorcorrectionlevel-swift.enum.md)
-  Constants that indicate the percentage of the symbol dedicated to error correction.
+  Constants indicating the percentage of the symbol that is dedicated to error correction.
 
 ## Relationships
 
@@ -65,11 +61,11 @@ QR codes can encode text, vCard contact information, or Uniform Resource Identif
 - [class CIBarcodeDescriptor](cibarcodedescriptor.md)
   An abstract base class that represents a machine-readable code’s attributes.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  An Aztec code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A PDF417 symbol.
+  A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A Data Matrix code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 
 
 ---

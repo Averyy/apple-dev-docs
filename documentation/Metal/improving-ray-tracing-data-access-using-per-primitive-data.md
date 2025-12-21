@@ -1,4 +1,4 @@
-# Improving Ray-Tracing Data Access Using Per-Primitive Data
+# Improving ray-tracing data access using per-primitive data
 
 **Framework**: Metal
 
@@ -14,7 +14,7 @@ Consider the figure below, which describes one possible way to organize your app
 
 Retrieving the data needed to calculate the result requires the kernel to dereference multiple pointers, and to store more intermediate variables. In a complex renderer, the performance penalties for this might be small. On the other hand, when you run an intersector using primitives with custom intersection functions, the intersector might execute multiple intersection tests for each ray. Such functions are often much simpler than shaders, so the penalty for dereferencing additional pointers might be a larger part of the total time executing the kernel.
 
-For better performance, with Metal, you can copy primitive data into the acceleration structures and access it directly in your shaders. You avoid needing to perform a separate data lookup based on the primitive ID. Using per-primitive data simplifies your shaders and make them easier to read. It also reduces the cost of transversing your data, reducing the GPU overhead. For kernels or functions that you run frequently on the GPU, or functions that contain many memory accesses, using per-pixel data can also improve performance.
+For better Metal performance, copy primitive data into the acceleration structures and access it directly in your shaders. Using per-primitive data simplifies your shaders and make them easier to read, and you avoid needing to perform a separate data lookup based on the primitive ID. It also reduces the cost of transversing your data while simultaneously reducing GPU overhead. For kernels or functions that you run frequently on the GPU, or functions that contain many memory operations, use per-primitive data to improve performance.
 
 ##### Create a Data Type for the Primitive Data
 
@@ -39,7 +39,7 @@ struct TriangleData {
 };
 ```
 
-A per-primitive data type can store the same types as an argument buffer (see [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md)), including basic scalar types, vector types, and references to Metal resources. Metal doesn’t limit the size of per-primitive data structures, but acceleration structures with large primitive data may need significantly more memory and take longer to create, copy, and refit. The additional data may also affect your shaders’ performance at runtime. For best results, limit the data to values that are the same across multiple instances of the geometry, and store only those values needed to perform the most frequent or expensive tasks.
+A per-primitive data type can store the same types as an argument buffer (see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md)), including basic scalar types, vector types, and references to Metal resources. Metal doesn’t limit the size of per-primitive data structures, but acceleration structures with large primitive data may need significantly more memory and take longer to create, copy, and refit. The additional data may also affect your shaders’ performance at runtime. For best results, limit the data to values that are the same across multiple instances of the geometry, and store only those values needed to perform the most frequent or expensive tasks.
 
 > 💡 **Tip**:  Profile your app before and after you make any changes to how you store your data so that you can measure the benefit you gained from the changes.
 
@@ -47,7 +47,7 @@ One way to reduce a per-primitive structure’s size is by including a pointer t
 
 ##### Add the Per Primitive Data to Your Acceleration Structure
 
-You add the primitive data to your acceleration structure by including it when you create the acceleration structure. Start by copying the data for the primitives into a [`MTLBuffer`](mtlbuffer.md) object. Each primitive needs its own instance of the primitive data, stored in linear order.
+You add the primitive data to your acceleration structure by including it when you create the acceleration structure. Start by copying the data for the primitives into an [`MTLBuffer`](mtlbuffer.md) instance. Each primitive needs its own instance of the primitive data, stored in linear order.
 
 When you configure the geometry descriptor, set the [`primitiveDataBuffer`](mtlaccelerationstructuregeometrydescriptor/primitivedatabuffer.md) property to point to this buffer. If the data doesn’t start at the beginning of the buffer, set the [`primitiveDataBufferOffset`](mtlaccelerationstructuregeometrydescriptor/primitivedatabufferoffset.md) to the location of the first byte of per-primitive data within the buffer.
 
@@ -62,7 +62,7 @@ The [`MTLAccelerationStructureGeometryDescriptor`](mtlaccelerationstructuregeome
 - [`MTLAccelerationStructureBoundingBoxGeometryDescriptor`](mtlaccelerationstructureboundingboxgeometrydescriptor.md)
 - [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
 
-In the code listing below, the method configures per-primitive data for a triangle geometry descriptor with a buffer that contains one instance of the primitive data for each triangle.
+In the example below, the method configures per-primitive data for a triangle geometry descriptor with a buffer that contains one instance of the primitive data for each triangle.
 
 ```swift
 func configure(geometryDescriptor: MTLAccelerationStructureTriangleGeometryDescriptor,
@@ -165,9 +165,9 @@ committedPrimitiveData = (const device PrimitiveTextureData *) query.get_committ
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
-  An object for encoding commands that build or refit acceleration structures.
+  Encodes commands that build and refit acceleration structures for a single pass.
 - [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
-  Options that describe which tasks you can perform on an acceleration structure and how the system performs those tasks.
+  Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 - [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
 
 

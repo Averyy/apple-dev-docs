@@ -25,7 +25,7 @@ func customizationBehavior(_ behavior: ToolbarCustomizationBehavior) -> some Cus
 
 Customizable toolbar items support different kinds of customization:
 
-- A user can add an an item that is not in the toolbar.
+- A user can add an item that is not in the toolbar.
 - A user can remove an item that is in the toolbar.
 - A user can move an item within the toolbar.
 

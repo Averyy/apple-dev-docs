@@ -9,7 +9,7 @@ An accessibility event associated with a rotor navigation.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

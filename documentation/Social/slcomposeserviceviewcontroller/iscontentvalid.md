@@ -20,7 +20,7 @@ func isContentValid() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current content and attachments are valid for posting, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default return value is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the current content and attachments are valid for posting, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default return value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

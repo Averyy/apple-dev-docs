@@ -26,8 +26,6 @@ struct IntentDescription
 - [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource])](intentdescription/init(_:categoryname:searchkeywords:).md)
 ### Initializers
 - [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource], resultValueName: LocalizedStringResource?)](intentdescription/init(_:categoryname:searchkeywords:resultvaluename:).md)
-- [init(stringLiteral: String)](intentdescription/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
 ### Instance Properties
 - [var categoryName: LocalizedStringResource?](intentdescription/categoryname.md)
   The category in which this intent will be grouped into in the Shortcuts editor.
@@ -37,16 +35,6 @@ struct IntentDescription
   A name for the result of this intent, which will be displayed in the Shortcuts editor, such as when the output is used as a variable.
 - [var searchKeywords: [LocalizedStringResource]](intentdescription/searchkeywords.md)
   A set of keywords which, when searched in the Shortcuts editor, will reveal this intent.
-### Type Aliases
-- [IntentDescription.ExtendedGraphemeClusterLiteralType](intentdescription/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [IntentDescription.StringLiteralType](intentdescription/stringliteraltype.md)
-  A type that represents a string literal.
-- [IntentDescription.UnicodeScalarLiteralType](intentdescription/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](intentdescription/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](intentdescription/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

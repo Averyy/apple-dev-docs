@@ -22,7 +22,7 @@ func deleteRecording() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system deleted the file; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the system deleted the file; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -6,11 +6,11 @@
 Requests an instance of the game-save directory.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,6 +25,13 @@ This method returns immediately, and starts syncing the directory in the backgro
 ## Parameters
 
 - `containerIdentifier`: The identifier of the directory to request.   If you pass  , this method uses the first container identifier   listed in the   entitlements array.
+
+## See Also
+
+- [GameSaveSyncedDirectory.State](gamesavesynceddirectory/state-swift.enum.md)
+  The state of the directory.
+- [var state: GameSaveSyncedDirectory.State](gamesavesynceddirectory/state-swift.property.md)
+  The state that the game-save directory is in.
 
 
 ---

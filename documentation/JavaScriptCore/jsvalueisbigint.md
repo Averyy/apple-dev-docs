@@ -21,6 +21,10 @@ func JSValueIsBigInt(_ ctx: JSContextRef, _ value: JSValueRef) -> Bool
 
 True if value’s type is the BigInt type, otherwise false.
 
+#### Discussion
+
+Tests whether a JavaScript value’s type is the BigInt type.
+
 ## Parameters
 
 - `ctx`: The execution context to use.

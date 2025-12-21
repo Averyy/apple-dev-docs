@@ -20,9 +20,9 @@ var modalPresentationCapturesStatusBarAppearance: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-When you present a view controller by calling the [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method, status bar appearance control is transferred from the presenting to the presented view controller only if the presented controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) value is [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md). By setting this property to [`true`](https://developer.apple.com/documentation/swift/true), you specify the presented view controller controls status bar appearance, even though presented non-fullscreen.
+When you present a view controller by calling the [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method, status bar appearance control is transferred from the presenting to the presented view controller only if the presented controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) value is [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md). By setting this property to [`true`](https://developer.apple.com/documentation/Swift/true), you specify the presented view controller controls status bar appearance, even though presented non-fullscreen.
 
 The system ignores this property’s value for a view controller presented fullscreen.
 

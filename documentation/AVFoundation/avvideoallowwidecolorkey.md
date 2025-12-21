@@ -21,11 +21,11 @@ let AVVideoAllowWideColorKey: String
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 ## See Also
 
-- [Setting Color Properties for a Specific Resolution](setting-color-properties-for-a-specific-resolution.md)
+- [Setting color properties for a specific resolution](setting-color-properties-for-a-specific-resolution.md)
   Choose the proper color property keys for the desired color range.
 - [let AVVideoColorPrimariesKey: String](avvideocolorprimarieskey.md)
   The key to identify color primaries in a color properties dictionary.

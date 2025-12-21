@@ -6,7 +6,7 @@
 A configuration that specifies the modality, appearance, and behavior of the presentation.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

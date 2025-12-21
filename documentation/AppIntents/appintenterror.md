@@ -26,16 +26,13 @@ struct AppIntentError
 - [static var restartPerform: AppIntentError](appintenterror/restartperform.md)
 ### Enumerations
 - [AppIntentError.PermissionRequired](appintenterror/permissionrequired.md)
-  Errors that indicate that the app doesn’t have required permission to perform an action
+  Errors that indicate the app doesn’t have the required permission to perform an action.
 - [AppIntentError.Unrecoverable](appintenterror/unrecoverable.md)
-  Unknown or unrecoverable error that might have occurred due to either a system or user error.
+  Unknown or unrecoverable errors that might have occurred due to either a system or user error.
 - [AppIntentError.UserActionRequired](appintenterror/useractionrequired.md)
-  Errors that represent a state where a person needs to do respond in order to successfully completed successfully the action.
+  Errors that represent a state where a person needs to respond to successfully complete the action.
 ### Default Implementations
 - [CustomLocalizedStringResourceConvertible Implementations](appintenterror/customlocalizedstringresourceconvertible-implementations.md)
-- [CustomStringConvertible Implementations](appintenterror/customstringconvertible-implementations.md)
-- [Equatable Implementations](appintenterror/equatable-implementations.md)
-- [Error Implementations](appintenterror/error-implementations.md)
 
 ## Relationships
 

@@ -44,8 +44,6 @@ enum ColorType
   Returns a version of the color object that is compatible with the specified color type.
 - [var colorSpace: NSColorSpace](nscolor/colorspace.md)
   The color space associated with the color.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 - [struct NSColorSpaceName](nscolorspacename.md)
   Constants that specify color space names.
 

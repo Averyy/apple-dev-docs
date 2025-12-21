@@ -1,4 +1,4 @@
-# System Video Effects and Microphone Modes
+# System video effects and microphone modes
 
 **Framework**: AVFoundation
 
@@ -6,7 +6,7 @@ Configure the state of system video effects like Center Stage, and inspect enhan
 
 ## Topics
 
-### Performing Reaction Effects
+### Performing reaction effects
 - [class var reactionEffectsEnabled: Bool](avcapturedevice/reactioneffectsenabled.md)
   A Boolean value that indicates whether the app supports performing reaction effects.
 - [var canPerformReactionEffects: Bool](avcapturedevice/canperformreactioneffects.md)
@@ -37,24 +37,24 @@ Configure the state of system video effects like Center Stage, and inspect enhan
   A Boolean value that indicates whether Studio Light is active on a device.
 - [class var isStudioLightEnabled: Bool](avcapturedevice/isstudiolightenabled.md)
   A Boolean value that indicates whether a user enabled Studio Light on a device.
-### Inspecting the Portrait Effect Settings
+### Inspecting the Portrait Effect settings
 - [var isPortraitEffectActive: Bool](avcapturedevice/isportraiteffectactive.md)
   A Boolean value that indicates whether the Portrait video effect is active on a device.
 - [class var isPortraitEffectEnabled: Bool](avcapturedevice/isportraiteffectenabled.md)
   A Boolean value that indicates whether the user enabled the Portrait video effect in Control Center.
-### Inspecting the Microphone Mode
+### Inspecting the microphone mode
 - [class var activeMicrophoneMode: AVCaptureDevice.MicrophoneMode](avcapturedevice/activemicrophonemode.md)
   The device’s active microphone mode.
 - [class var preferredMicrophoneMode: AVCaptureDevice.MicrophoneMode](avcapturedevice/preferredmicrophonemode.md)
   The microphone mode that the user selects in Control Center.
 - [AVCaptureDevice.MicrophoneMode](avcapturedevice/microphonemode.md)
   Constants that define the available microphone modes.
-### Presenting the Configuration User Interface
+### Presenting the configuration user interface
 - [class func showSystemUserInterface(AVCaptureDevice.SystemUserInterface)](avcapturedevice/showsystemuserinterface(_:).md)
   Displays the system’s user interface to configure video effects or microphone modes.
 - [AVCaptureDevice.SystemUserInterface](avcapturedevice/systemuserinterface.md)
   Constants that describe the capture device configuration user interfaces.
-### Configuring Background Replacement
+### Configuring background replacement
 - [var isBackgroundReplacementActive: Bool](avcapturedevice/isbackgroundreplacementactive.md)
   A Boolean value that indicates whether Background Replacement is currently active on a capture device.
 - [class var isBackgroundReplacementEnabled: Bool](avcapturedevice/isbackgroundreplacementenabled.md)

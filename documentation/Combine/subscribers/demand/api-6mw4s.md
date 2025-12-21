@@ -44,12 +44,6 @@ When subtracting any value from `.unlimited`, the result is still `.unlimited`. 
   Subtracts one demand from another, and assigns the result to the first demand.
 - [static func -= (inout Subscribers.Demand, Int)](subscribers/demand/-=(_:_:)-9pwnc.md)
   Subtracts an integer from a demand, and assigns the result to the demand.
-- [static func ... (Self) -> PartialRangeFrom<Self>](subscribers/demand/'...(_:)-3qgos.md)
-  Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](subscribers/demand/'...(_:)-kb35.md)
-  Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](subscribers/demand/'...(_:_:).md)
-  Returns a closed range that contains both of its bounds.
 
 
 ---

@@ -28,8 +28,6 @@ You can use this option to ensure that, when overwriting a file package, the ove
 
 - [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
   Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
-- [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
-  Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
 
 
 ---

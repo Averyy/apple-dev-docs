@@ -21,6 +21,8 @@ True if the calling thread holds the lock otherwise false.
 
 #### Discussion
 
+Check if a recursive lock is held by the calling thread.
+
 If the lock is held by the calling thread, return true, otherwise the lock is unlocked, or held by another thread and false is returned.
 
 ## Parameters

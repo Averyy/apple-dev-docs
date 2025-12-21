@@ -1,4 +1,4 @@
 Completed scraping ImageCaptureCore!
-Total pages scraped: 683
+Total pages scraped: 669
 Pages skipped (unchanged): 1
 Pages failed: 0

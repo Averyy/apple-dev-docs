@@ -13,7 +13,7 @@ Draw a scene without rendering hidden geometry by checking whether each object i
 
 #### Overview
 
-This sample demonstrates how to use Metal’s visibility result buffer to perform  and . The visibility result buffer stores an array of integers that contain the number of times a fragment passes the depth and stencil tests. Before a draw call, the app sets the location of the 64-bit counter in the buffer and the hardware increments the counter during rasterization.
+This sample demonstrates how to use a visibility result buffer to perform  and . The visibility result buffer stores an array of integers that contain the number of times a fragment passes the depth and stencil tests. Before a draw call, the app sets the location of the 64-bit counter in the buffer and the hardware increments the counter during rasterization.
 
 The first mode of the app shows how to use fragment counting to determine the number of pixels that pass the depth and stencil tests. You can use this information to choose the level of detail for a 3D model, or to include or exclude the model from rendering. The second mode shows how to use the occlusion-culling technique to reduce the rendering load by eliminating invisible objects. To use this technique, the app renders a second pass of the objects it wants to test using proxy geometry instead of the full-resolution 3D model. It skips any object in the next frame if the number of pixels that passed the depth test is zero. You can toggle between the two modes by using the segment control in the upper-left corner of the window.
 
@@ -35,7 +35,7 @@ To run this sample, you need Xcode 12 and a physical device that supports [`MTLG
 - An iOS device with an A9 chip or later running iOS 12 or later
 - A tvOS device with an A12 chip or later running tvOS 13 or later
 
-This sample can only run on a physical device because it uses Metal’s counting occlusion query features that Simulator doesn’t support.
+This sample can only run on a physical device because it uses the counting occlusion query features that Simulator doesn’t support.
 
 ##### Create the Visibility Result Buffer
 
@@ -79,7 +79,7 @@ _readFromVisibilityResultBuffer = _visibilityBuffer[_visibilityBufferReadIndex].
 
 For the occlusion-culling mode, the app procedurally generates two geometric 3D primitives: a sphere and an icosahedron. The app uses an icosahedron as proxy geometry for the sphere in occlusion testing because it approximates a sphere using only 20 vertices.
 
-Because proxy geometries are efficient to render, the occlusion culling uses them to quickly test visibility. If the visibility result buffer contains a nonzero value, the proxy geometry isn’t occluded and the app presumes the original geometry is also not occluded. However, to use proxy geometry for visibility testing, the 3D primitive must cover at least the same pixels as the original geometry. For the occlusion-culling mode, the app generates an icosahedron so that it fully inscribes (contains) a sphere.
+Because proxy geometries are efficient to render, the occlusion culling uses them to quickly test visibility. If the visibility result buffer contains a nonzero value, the proxy geometry isn’t occluded and the app presumes the original geometry is also not occluded. However, to use proxy geometry for visibility testing, the 3D primitive needs to cover at least the same pixels as the original geometry. For the occlusion-culling mode, the app generates an icosahedron so that it fully inscribes (contains) a sphere.
 
 Using proxy geometry that only covers the original model works well for stationary geometry but may not be sufficient for animated geometry. In the occlusion-culling mode, the sample uses the geometry visible in the current frame to determine the objects to draw on the next frame. This is an efficient approach for apps encoding work on the CPU. However, as objects change positions, the visibility results of one frame may not be accurate for the next frame, which may lead to objects popping in on subsequent frames.
 
@@ -233,31 +233,31 @@ When Metal renders the frame, the GPU updates the visibility result buffer with 
 
 ## See Also
 
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a Custom Metal View](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing Order-Independent Transparency with Image Blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
 - [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with Hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

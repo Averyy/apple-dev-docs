@@ -22,7 +22,7 @@ func CMTimeRangeEqual(_ range1: CMTimeRange, _ range2: CMTimeRange) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two time ranges are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the two time ranges are equal; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

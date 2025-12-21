@@ -22,7 +22,7 @@ A new GIC configuration object.
 
 Guest physical address for the distributor base aligned to the byte value returned by [`hv_gic_get_distributor_base_alignment(_:)`](hv_gic_get_distributor_base_alignment(_:).md).
 
-Release this object with [`os_release`](https://developer.apple.com/documentation/os/1524245-os_release) when it’s no longer needed.
+Release this object with [`os_release`](https://developer.apple.com/documentation/os/os_release-c.func) when it’s no longer needed.
 
 ## Parameters
 

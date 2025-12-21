@@ -53,7 +53,7 @@ struct FlavorPicker: View {
 }
 ```
 
-The selection type of the [`Picker`](picker.md) is an `Optional<Flavor>` and so it will look for tags on its contents of `Optional<Flavor>`type. Since the tag modifier defaults to having `includeOptional` enabled, even though the tag for each option is a non-optional `Flavor`, the tag modifier writes values for both the non-optional, and optional versions of the value, allowing the contents to be selectable by the [`Picker`](picker.md).
+The selection type of the [`Picker`](picker.md) is an `Optional<Flavor>` and so it will look for tags on its contents of `Optional<Flavor>` type. Since the tag modifier defaults to having `includeOptional` enabled, even though the tag for each option is a non-optional `Flavor`, the tag modifier writes values for both the non-optional, and optional versions of the value, allowing the contents to be selectable by the [`Picker`](picker.md).
 
 A [`ForEach`](foreach.md) automatically applies a default tag to each enumerated view using the `id` parameter of the corresponding element. If the element’s `id` parameter and the picker’s `selection` input have exactly the same type, or the same type but optional, you can omit the explicit tag modifier.
 

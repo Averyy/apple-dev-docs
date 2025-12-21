@@ -23,6 +23,8 @@ A uint32_t with the result of conversion, or 0 if an exception is thrown. Since 
 
 #### Discussion
 
+Converts a JSValue to an unsigned 32-bit integer and returns the resulting integer.
+
 The JSValue is converted to an integer according to the rules specified by the JavaScript language. If the value is a BigInt, then the JSValue is truncated to a uint32_t.
 
 ## Parameters

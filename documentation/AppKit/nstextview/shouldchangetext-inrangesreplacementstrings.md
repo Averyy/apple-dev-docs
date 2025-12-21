@@ -17,7 +17,7 @@ func shouldChangeText(inRanges affectedRanges: [NSValue], replacementStrings: [S
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the change, [`false`](https://developer.apple.com/documentation/swift/false) to prohibit it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the change, [`false`](https://developer.apple.com/documentation/Swift/false) to prohibit it.
 
 #### Discussion
 
@@ -31,7 +31,7 @@ that modify the text, make sure to invoke this method to determine whether the c
 
 If you override this method, you must call `super` at the beginning of the override.
 
-If the receiver is not editable, this method automatically returns [`false`](https://developer.apple.com/documentation/swift/false). This result prevents instances in which a text view could be changed by user actions even though it had been set to be non-editable.
+If the receiver is not editable, this method automatically returns [`false`](https://developer.apple.com/documentation/Swift/false). This result prevents instances in which a text view could be changed by user actions even though it had been set to be non-editable.
 
 ## Parameters
 

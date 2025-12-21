@@ -6,12 +6,12 @@
 Records a sequence of GPU commands.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -49,12 +49,10 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   Pushes a string onto a stack of debug groups for this command buffer.
 - [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: MTL4BufferRange, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](mtl4commandbuffer/resolvecounterheap(_:range:buffer:fencetowait:fencetoupdate:).md)
   Encodes a command that resolves an opaque counter heap into a buffer.
-- [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: any MTLBuffer, offset: Int, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](mtl4commandbuffer/resolvecounterheap(_:range:buffer:offset:fencetowait:fencetoupdate:).md)
-  Encodes a command that resolves an opaque counter heap into a buffer.
 - [func useResidencySet(any MTLResidencySet)](mtl4commandbuffer/useresidencyset(_:).md)
-  Marks a residency set as part of the command buffer’s execution.
+  Applies a residency set to a command buffer.
 - [func useResidencySets([any MTLResidencySet])](mtl4commandbuffer/useresidencysets(_:).md)
-  Marks an array of residency sets as part of the command buffer’s execution.
+  Applies multiple residency sets to a command buffer.
 - [func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)](mtl4commandbuffer/writetimestamp(counterheap:index:).md)
   Writes a GPU timestamp into the given counter heap.
 
@@ -69,7 +67,8 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
 - [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [enum MTL4CommandQueueError](mtl4commandqueueerror.md)
+- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
 - [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
 - [class MTL4CommandBufferOptions](mtl4commandbufferoptions.md)
@@ -92,8 +91,6 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
-- [protocol MTL4CounterHeap](mtl4counterheap.md)
-  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

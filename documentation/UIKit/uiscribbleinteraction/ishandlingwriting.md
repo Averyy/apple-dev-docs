@@ -19,7 +19,7 @@ var isHandlingWriting: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) in between calls to [`scribbleInteractionWillBeginWriting(_:)`](uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting(_:).md) and [`scribbleInteractionDidFinishWriting(_:)`](uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting(_:).md) when the user is writing.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) in between calls to [`scribbleInteractionWillBeginWriting(_:)`](uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting(_:).md) and [`scribbleInteractionDidFinishWriting(_:)`](uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting(_:).md) when the user is writing.
 
 
 ---

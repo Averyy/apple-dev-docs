@@ -20,6 +20,10 @@ The temporary directory for the current user.
 var temporaryDirectory: URL { get }
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 ## See Also
 
 - [var homeDirectoryForCurrentUser: URL](filemanager/homedirectoryforcurrentuser.md)

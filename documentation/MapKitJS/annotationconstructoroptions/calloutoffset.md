@@ -11,7 +11,7 @@ The offset, in CSS pixels, of a callout from the top center of the element.
 ## Declaration
 
 ```swift
-attribute DOMPoint calloutOffset;
+calloutOffset?: DOMPoint;
 ```
 
 #### Discussion

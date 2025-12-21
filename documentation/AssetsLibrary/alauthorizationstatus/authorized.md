@@ -5,11 +5,6 @@
 
 User has authorized this application to access photos data.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

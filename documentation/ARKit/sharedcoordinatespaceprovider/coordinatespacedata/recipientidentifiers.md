@@ -6,7 +6,7 @@
 Participant identifiers of the intended recipient for this data. Data should be broadcast if the list is empty.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

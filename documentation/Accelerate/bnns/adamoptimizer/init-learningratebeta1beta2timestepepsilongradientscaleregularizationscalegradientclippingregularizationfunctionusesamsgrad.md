@@ -13,7 +13,6 @@ Returns a new Adam optimizer object with gradient clipped by value or clipped by
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

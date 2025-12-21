@@ -30,6 +30,8 @@ Use the `View/accessoryWidgetGroupStyle(_:)` modifier to set the desired style.
 
 ## See Also
 
+- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
+  Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
 - [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
   A view type that has a label at the top and three content views masked with a circle or rounded square.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)

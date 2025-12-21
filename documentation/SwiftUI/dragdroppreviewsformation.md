@@ -6,7 +6,7 @@
 On macOS, describes the way the dragged previews are visually composed. Both drag sources and drop destination can specify their desired preview formation.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -3,13 +3,13 @@
 **Framework**: ExtensionFoundation  
 **Kind**: struct
 
-ConnectionHandler handles incoming XPC connections.
+A type that contains a custom closure that handles incoming XPC connections.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 - visionOS 1.1+
 
 ## Declaration
@@ -19,13 +19,23 @@ ConnectionHandler handles incoming XPC connections.
 @preconcurrency struct ConnectionHandler
 ```
 
+## Mentions
+
+- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+
+#### Overview
+
+This type manages a closure in your app extension that accepts incoming XPC connections from a host app. Create an instance of this structure and initialize it with a closure for the type of XPC connection the host app uses with app extensions. Assign the instance you created to the [`configuration`](appextension/configuration-swift.property.md) property of your custom [`AppExtension`](appextension.md) type. When the host app tries to open a connection, the system runs your closure to accept that connection.
+
+Use this type to establish connections with either the [`Foundation`](https://developer.apple.com/documentation/Foundation) or [`XPC`](https://developer.apple.com/documentation/XPC) framework.
+
 ## Topics
 
-### Initializers
+### Initializing the connection handler
 - [init(onConnection: (NSXPCConnection) -> Bool)](connectionhandler/init(onconnection:).md)
-  Creates a `ConnectionHandler` with an `NSXPCConnection` request handler.
+  Initializes the connection handler with a closure that accepts a Foundation XPC object.
 - [init(onSessionRequest: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)](connectionhandler/init(onsessionrequest:).md)
-  Creates a `ConnectionHandler` with an `XPCSession` request handler.
+  Initializes the connection handler with a closure that accepts an XPC session.
 
 ## Relationships
 
@@ -33,6 +43,15 @@ ConnectionHandler handles incoming XPC connections.
 - [AppExtensionConfiguration](appextensionconfiguration.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+  Create an app extension to perform tasks in a separate process from a host app.
+- [protocol AppExtension](appextension.md)
+  An interface you use to declare the content, structure, and behavior of an app extension.
+- [protocol AppExtensionConfiguration](appextensionconfiguration.md)
+  An interface you use to configure the XPC connection in your app extension.
 
 
 ---

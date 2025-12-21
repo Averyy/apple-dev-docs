@@ -11,7 +11,7 @@ The fill color of a shape.
 ## Declaration
 
 ```swift
-attribute string fillColor;
+fillColor?: string;
 ```
 
 #### Discussion

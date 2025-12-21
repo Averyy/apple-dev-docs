@@ -25,7 +25,7 @@ A random Boolean value.
 
 #### Discussion
 
-When using the [`GKRandomDistribution`](gkrandomdistribution.md) class directly, generated Boolean values are uniform—any call to this method has an equal chance of returning [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false). Subclasses of [`GKRandomDistribution`](gkrandomdistribution.md) can alter the relative probability of generating either value.
+When using the [`GKRandomDistribution`](gkrandomdistribution.md) class directly, generated Boolean values are uniform—any call to this method has an equal chance of returning [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses of [`GKRandomDistribution`](gkrandomdistribution.md) can alter the relative probability of generating either value.
 
 ## See Also
 

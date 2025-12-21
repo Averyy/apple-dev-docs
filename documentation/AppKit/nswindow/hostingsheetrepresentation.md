@@ -6,7 +6,7 @@
 A class representing a SwiftUI view hosted in an AppKit sheet.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

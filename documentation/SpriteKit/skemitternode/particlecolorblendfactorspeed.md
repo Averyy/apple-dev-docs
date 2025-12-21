@@ -17,7 +17,6 @@ The rate at which the color blend factor changes per second.
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorBlendFactorSpeed: CGFloat { get set }
 ```
 

@@ -1,9 +1,9 @@
-# prefix(_:)
+# prefix
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: property
 
-Republishes elements up to the specified maximum count.
+A string with which to prefix all log messages.
 
 **Availability**:
 - iOS 13.0+
@@ -17,54 +17,16 @@ Republishes elements up to the specified maximum count.
 ## Declaration
 
 ```swift
-func prefix(_ maxLength: Int) -> Publishers.Output<Self>
+let prefix: String
 ```
-
-#### Return Value
-
-A publisher that publishes up to the specified number of elements.
-
-#### Discussion
-
-Use [`prefix(_:)`](publisher/prefix(_:).md) to limit the number of elements republished to the downstream subscriber.
-
-In the example below, the [`prefix(_:)`](publisher/prefix(_:).md) operator limits its output to the first two elements before finishing normally:
-
-```swift
-let numbers = (0...10)
-cancellable = numbers.publisher
-    .prefix(2)
-    .sink { print("\($0)", terminator: " ") }
-
-// Prints: "0 1"
-```
-
-## Parameters
-
-- `maxLength`: The maximum number of elements to republish.
 
 ## See Also
 
-- [func drop<P>(untilOutputFrom: P) -> Publishers.DropUntilOutput<Self, P>](publishers/print/drop(untiloutputfrom:).md)
-  Ignores elements from the upstream publisher until it receives an element from a second publisher.
-- [func dropFirst(Int) -> Publishers.Drop<Self>](publishers/print/dropfirst(_:).md)
-  Omits the specified number of elements before republishing subsequent elements.
-- [func drop(while: (Self.Output) -> Bool) -> Publishers.DropWhile<Self>](publishers/print/drop(while:).md)
-  Omits elements from the upstream publisher until a given closure returns false, before republishing all remaining elements.
-- [func tryDrop(while: (Self.Output) throws -> Bool) -> Publishers.TryDropWhile<Self>](publishers/print/trydrop(while:).md)
-  Omits elements from the upstream publisher until an error-throwing closure returns false, before republishing all remaining elements.
-- [func append(Self.Output...) -> Publishers.Concatenate<Self, Publishers.Sequence<[Self.Output], Self.Failure>>](publishers/print/append(_:).md)
-  Appends a publisher’s output with the specified elements.
-- [func prepend(Self.Output...) -> Publishers.Concatenate<Publishers.Sequence<[Self.Output], Self.Failure>, Self>](publishers/print/prepend(_:).md)
-  Prefixes a publisher’s output with the specified values.
-- [func prefix(while: (Self.Output) -> Bool) -> Publishers.PrefixWhile<Self>](publishers/print/prefix(while:).md)
-  Republishes elements while a predicate closure indicates publishing should continue.
-- [func tryPrefix(while: (Self.Output) throws -> Bool) -> Publishers.TryPrefixWhile<Self>](publishers/print/tryprefix(while:).md)
-  Republishes elements while an error-throwing predicate closure indicates publishing should continue.
-- [func prefix<P>(untilOutputFrom: P) -> Publishers.PrefixUntilOutput<Self, P>](publishers/print/prefix(untiloutputfrom:).md)
-  Republishes elements until another publisher emits an element.
+- [let upstream: Upstream](publishers/print/upstream.md)
+  The publisher from which this publisher receives elements.
+- [let stream: (any TextOutputStream)?](publishers/print/stream.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/print/prefix(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/print/prefix)*

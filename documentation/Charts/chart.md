@@ -111,6 +111,9 @@ You indicate which series a line mark belongs to by specifying its `series` inpu
   Creates a chart composed of a series of identifiable marks.
 - [init<Data, ID, C>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> C)](chart/init(_:id:content:).md)
   Creates a chart composed of a series of marks.
+### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 
 ## Relationships
 
@@ -123,7 +126,7 @@ You indicate which series a line mark belongs to by specifying its `series` inpu
 
 - [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing_your_app_s_data.md)
+- [Visualizing your app’s data](visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [protocol ChartContent](chartcontent.md)
   A type that represents the content that you draw on a chart.

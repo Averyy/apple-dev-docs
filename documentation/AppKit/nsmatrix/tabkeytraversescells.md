@@ -17,9 +17,9 @@ var tabKeyTraversesCells: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), pressing the Tab key should advance the key cell to the next selectable cell in the receiver. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) or if there aren’t any selectable cells after the current one, the next view in the window becomes key when the user presses the Tab key.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), pressing the Tab key should advance the key cell to the next selectable cell in the receiver. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) or if there aren’t any selectable cells after the current one, the next view in the window becomes key when the user presses the Tab key.
 
-Pressing Shift-Tab causes the key cell to advance in the opposite direction (if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), or if there aren’t any selectable cells before the current one, the previous view in the window becomes key).
+Pressing Shift-Tab causes the key cell to advance in the opposite direction (if the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), or if there aren’t any selectable cells before the current one, the previous view in the window becomes key).
 
 ## See Also
 

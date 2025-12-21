@@ -22,7 +22,7 @@ func CGPDFScannerScan(_ scanner: CGPDFScannerRef) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the entire stream is parsed successfully; [`false`](https://developer.apple.com/documentation/swift/false) if parsing fails (for example, if the stream data is corrupted).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the entire stream is parsed successfully; [`false`](https://developer.apple.com/documentation/Swift/false) if parsing fails (for example, if the stream data is corrupted).
 
 #### Discussion
 

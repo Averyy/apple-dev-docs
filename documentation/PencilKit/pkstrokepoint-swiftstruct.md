@@ -56,6 +56,8 @@ struct PKStrokePoint
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

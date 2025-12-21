@@ -34,7 +34,7 @@ Use this method to initialize a configuration object suitable for transferring d
 
 If an iOS app is terminated by the system and relaunched, the app can use the same `identifier` to create a new configuration object and session and to retrieve the status of transfers that were in progress at the time of termination. This behavior applies only for normal termination of the app by the system. If the user terminates the app from the multitasking screen, the system cancels all of the session’s background transfers. In addition, the system does not automatically relaunch apps that were force quit by the user. The user must explicitly relaunch the app before transfers can begin again.
 
-You can configure an background session to schedule transfers at the discretion of the system for optimal performance using the [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property. When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). For an example of using the background configuration, see [`Downloading files in the background`](downloading-files-in-the-background.md).
+You can configure an background session to schedule transfers at the discretion of the system for optimal performance using the [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property. When transferring large amounts of data, you are encouraged to set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true). For an example of using the background configuration, see [`Downloading files in the background`](downloading-files-in-the-background.md).
 
 ## Parameters
 

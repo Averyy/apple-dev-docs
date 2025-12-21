@@ -17,7 +17,7 @@ var usesItemFromMenu: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), a pull-down menu uses the title of the first menu item, and a pop-up menu uses the title of the currently selected menu (if no menu item is selected, the pop-up button displays no item and is drawn empty). When the value is [`false`](https://developer.apple.com/documentation/swift/false), the menu item set with [`menuItem`](nsmenuitemcell/menuitem.md) (`NSMenuItem`) is always displayed. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), a pull-down menu uses the title of the first menu item, and a pop-up menu uses the title of the currently selected menu (if no menu item is selected, the pop-up button displays no item and is drawn empty). When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the menu item set with [`menuItem`](nsmenuitemcell/menuitem.md) (`NSMenuItem`) is always displayed. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

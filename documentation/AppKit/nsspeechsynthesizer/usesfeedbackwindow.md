@@ -16,7 +16,7 @@ var usesFeedbackWindow: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the receiver uses the speech feedback window, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the receiver uses the speech feedback window, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 See the class description for details on the `UsesFeedbackWindow` attribute.
 

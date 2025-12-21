@@ -22,7 +22,7 @@ var allowsCopying: Bool { get }
 
 #### Discussion
 
-If the document is encrypted and the current password doesn’t grant permission to perform copying, this returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the document is encrypted and the current password doesn’t grant permission to perform copying, this returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

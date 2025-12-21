@@ -14,7 +14,6 @@ Reverts a document to the most recent document data stored on-disk.
 ## Declaration
 
 ```swift
-@MainActor
 func revert(toContentsOf url: URL) async -> Bool
 ```
 

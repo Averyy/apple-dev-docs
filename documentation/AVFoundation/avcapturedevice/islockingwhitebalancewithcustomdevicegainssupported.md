@@ -19,12 +19,14 @@ var isLockingWhiteBalanceWithCustomDeviceGainsSupported: Bool { get }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), calling the [`setWhiteBalanceModeLocked(with:completionHandler:)`](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md) method with a white balance gains value other than [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md) throws an exception.
+If the value is [`false`](https://developer.apple.com/documentation/Swift/false), calling the [`setWhiteBalanceModeLocked(with:completionHandler:)`](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md) method with a white balance gains value other than [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md) throws an exception.
 
 ## See Also
 
 - [func setWhiteBalanceModeLocked(with: AVCaptureDevice.WhiteBalanceGains, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md)
   Sets the white balance to locked mode with the specified white balance gains.
+- [func setWhiteBalanceModeLocked(whiteBalanceTemperatureAndTintValues: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues, handler: ((CMTime) -> Void)?)](avcapturedevice/setwhitebalancemodelocked(whitebalancetemperatureandtintvalues:handler:).md)
+  Sets white balance to locked mode with explicit temperature and tint values.
 
 
 ---

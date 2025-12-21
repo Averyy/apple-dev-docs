@@ -20,6 +20,18 @@ object GameCenterGroupResponse
   The data structure that represents a group resource.
 - [object GameCenterGroupCreateRequest](gamecentergroupcreaterequest.md)
   The request body you use to create a group.
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest](gamecentergroupgamecenterachievementsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center achievement linkage request resource.
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse](gamecentergroupgamecenterachievementsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center achievement linkage resources.
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsetsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center leaderboard set linkage request resource.
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsetsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center leaderboard set linkage resources.
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center leaderboard linkage request resource.
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center leaderboard linkage resources.
 - [object GameCenterGroupGameCenterAchievementsLinkagesRequest](gamecentergroupgamecenterachievementslinkagesrequest.md)
   The request body you use to create a relationship between a group and an achievement.
 - [object GameCenterGroupGameCenterAchievementsLinkagesResponse](gamecentergroupgamecenterachievementslinkagesresponse.md)
@@ -34,11 +46,6 @@ object GameCenterGroupResponse
   A response that confirms a relationship between a group and a leaderboard.
 - [object GameCenterGroupUpdateRequest](gamecentergroupupdaterequest.md)
   The request body you use to update a group.
-- [object GameCenterGroupsResponse](gamecentergroupsresponse.md)
-  A response that contains one or more groups.
-- [object GameCenterGroupGameCenterActivitiesLinkagesResponse](gamecentergroupgamecenteractivitieslinkagesresponse.md)
-- [object GameCenterGroupGameCenterChallengesLinkagesResponse](gamecentergroupgamecenterchallengeslinkagesresponse.md)
-- [object GameCenterGroupGameCenterDetailsLinkagesResponse](gamecentergroupgamecenterdetailslinkagesresponse.md)
 
 
 ---

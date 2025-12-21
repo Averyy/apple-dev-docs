@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Inserts the specified domain name into the receiver’s search list.
+Inserts settings for the specified domain into the search list of the current object.
 
 **Availability**:
 - iOS 2.0+
@@ -22,20 +22,20 @@ func addSuite(named suiteName: String)
 
 #### Discussion
 
-The `suiteName` domain is similar to a bundle identifier string, but isn’t necessarily tied to a particular application or bundle. A suite can be used to hold preferences that are shared between multiple applications.
+This method inserts the domain for your custom suite of settings after the app domain and before the global domain. This arrangement causes the `UserDefaults` object to return your app-specific settings first, followed by settings from the specified suite. If you call this method multiple times, the `UserDefaults` object searches your suites in the order you added them.
 
-The additional search lists of the `suiteName` domain are searched after the current domain, but before global defaults (that is, when a suite is added, the preferences subsystem first searches the app’s user preferences, then searches again as though it were an app with a bundle identifier equal to `suiteName`, and then finally searches the global preferences). Passing [`globalDomain`](userdefaults/globaldomain.md) or the current application’s bundle identifier is unsupported.
+This method doesn’t affect the destination for write operations. If you want to write settings to a custom suite, use the [`init(suiteName:)`](userdefaults/init(suitename:).md) initializer to construct a `UserDefaults` object specifically for that suite.
+
+> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
 
 ## Parameters
 
-- `suiteName`: The domain name to insert.
+- `suiteName`: The bundle identifier for the domain you want to add. You don’t need   to specify a bundle identifier for another app. Instead, you might specify the   app group identifier you use to share data between multiple apps or between your   app and an app extension. Don’t specify your app’s bundle identifier or the     identifier in this parameter.
 
 ## See Also
 
-- [class var standard: UserDefaults](userdefaults/standard.md)
-  Returns the shared defaults object.
 - [func removeSuite(named: String)](userdefaults/removesuite(named:).md)
-  Removes the specified domain name from the receiver’s search list.
+  Removes the specified domain from the search list of the current object.
 
 
 ---

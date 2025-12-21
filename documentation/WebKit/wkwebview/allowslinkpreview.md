@@ -21,17 +21,17 @@ var allowsLinkPreview: Bool { get set }
 
 #### Discussion
 
-In iOS, this property is available on devices that support 3D Touch. In iOS 10 and later, the default value is [`true`](https://developer.apple.com/documentation/swift/true); in previous versions of iOS, the default value is [`false`](https://developer.apple.com/documentation/swift/false).
+In iOS, this property is available on devices that support 3D Touch. In iOS 10 and later, the default value is [`true`](https://developer.apple.com/documentation/Swift/true); in previous versions of iOS, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If you set this property’s value to [`true`](https://developer.apple.com/documentation/swift/true), an iOS user can press links to preview link destinations and detected data such as addresses and phone numbers. Such previews are known to users as . If a user presses deeper on a link preview, the preview navigates (or , in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in for iOS apps.
+If you set this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true), an iOS user can press links to preview link destinations and detected data such as addresses and phone numbers. Such previews are known to users as . If a user presses deeper on a link preview, the preview navigates (or , in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in for iOS apps.
 
 If you want to support link preview in iOS but also want to keep users within your app, you can switch from using the [`WKWebView`](wkwebview.md) class to the [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) class. If you are using a web view as an in-app browser, making this change is best practice. The Safari view controller class automatically supports link previews.
 
-In macOS, this property is available on devices with a Force Touch trackpad. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+In macOS, this property is available on devices with a Force Touch trackpad. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-With this property set to its default value of [`true`](https://developer.apple.com/documentation/swift/true), a macOS user can force click a link to display a preview window showing the link’s destination. If the user then clicks the preview, the destination opens in Safari.
+With this property set to its default value of [`true`](https://developer.apple.com/documentation/Swift/true), a macOS user can force click a link to display a preview window showing the link’s destination. If the user then clicks the preview, the destination opens in Safari.
 
-On both platforms, all types of detected data respond to presses when this property is set to [`true`](https://developer.apple.com/documentation/swift/true). That is, in iOS 9 and OS X 10.11, you cannot specify which types of data are detected in the [`WKWebView`](wkwebview.md) class.
+On both platforms, all types of detected data respond to presses when this property is set to [`true`](https://developer.apple.com/documentation/Swift/true). That is, in iOS 9 and OS X 10.11, you cannot specify which types of data are detected in the [`WKWebView`](wkwebview.md) class.
 
 ## See Also
 

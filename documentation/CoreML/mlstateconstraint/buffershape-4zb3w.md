@@ -20,6 +20,11 @@ The shape of the state buffer.
 var bufferShape: [Int] { get }
 ```
 
+## See Also
+
+- [var dataType: MLMultiArrayDataType](mlstateconstraint/datatype.md)
+  The data type of scalars in the state buffer.
+
 
 ---
 

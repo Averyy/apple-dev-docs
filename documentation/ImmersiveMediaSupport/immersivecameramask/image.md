@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value defining a mask generated based on an image, see [`ImmersiveImageMask`](immersiveimagemask.md) for details.
+A value that defines an image based mask.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

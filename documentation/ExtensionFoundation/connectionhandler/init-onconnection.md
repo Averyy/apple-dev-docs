@@ -3,13 +3,13 @@
 **Framework**: ExtensionFoundation  
 **Kind**: init
 
-Creates a `ConnectionHandler` with an `NSXPCConnection` request handler.
+Initializes the connection handler with a closure that accepts a Foundation XPC object.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 - visionOS 1.1+
 
 ## Declaration
@@ -21,7 +21,12 @@ Creates a `ConnectionHandler` with an `NSXPCConnection` request handler.
 
 #### Discussion
 
-The `requestHandler` will be called every time the host process attempts to create an `NSXPCConnection` to the extension. The extension must respond to the request by either configuring and resuming the connection and returning `true` or rejecting by returning `false`.
+Use this initializer if your app extension communicates with the host app using [`XPC`](https://developer.apple.com/documentation/Foundation/xpc).
+
+## See Also
+
+- [init(onSessionRequest: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)](connectionhandler/init(onsessionrequest:).md)
+  Initializes the connection handler with a closure that accepts an XPC session.
 
 
 ---

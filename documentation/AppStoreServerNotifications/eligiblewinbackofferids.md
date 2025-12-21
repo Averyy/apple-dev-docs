@@ -21,13 +21,13 @@ An array of win-back offer identifiers that a customer is eligible to redeem, wh
 ## See Also
 
 - [type offerIdentifier](offeridentifier.md)
-  The string identifier of a subscription offer that you create in App Store Connect.
+  The string identifier of an offer that you create in App Store Connect.
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for a subscription offer for an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 
 
 ---

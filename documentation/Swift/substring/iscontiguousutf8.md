@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 
 **Availability**:
 - iOS 8.0+
@@ -22,7 +22,7 @@ var isContiguousUTF8: Bool { get }
 
 #### Discussion
 
-Contiguous strings always operate in O(1) time for withUTF8 and always give a result for String.UTF8View.withContiguousStorageIfAvailable. Contiguous strings also benefit from fast-paths and better optimizations.
+Contiguous strings always operate in O(1) time for withUTF8, always give a result for Substring.UTF8View.withContiguousStorageIfAvailable, and always return a non-nil value from `Substring._utf8Span` and `Substring.UTF8View._span`. Contiguous strings also benefit from fast-paths and better optimizations.
 
 
 ---

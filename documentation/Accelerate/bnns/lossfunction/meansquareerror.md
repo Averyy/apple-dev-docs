@@ -13,7 +13,6 @@ Mean square error (MSE) computation between input logits and one-hot encoded lab
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

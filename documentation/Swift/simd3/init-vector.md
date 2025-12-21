@@ -13,7 +13,6 @@ Returns a new vector from a Spatial point.
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -11,12 +11,12 @@ The state or province of the place.
 ## Declaration
 
 ```swift
-attribute string? administrativeArea;
+administrativeArea?: string;
 ```
 
 #### Discussion
 
-For example, the [`administrativeArea`](place/administrativearea.md) for the Golden Gate Park is “`California”`.
+For example, the [`administrativeArea`](place/administrativearea.md) for Golden Gate Park in San Francisco, CA is “`California"`.
 
 ## See Also
 

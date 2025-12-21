@@ -32,7 +32,7 @@ With an instance of this structure, your app can:
 
 ### Deserializing a prior scan
 - [init(from: any Decoder) throws](capturedroomdata/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
+  Creates captured room data by deserializing the decoder of a prior scan.
 ### Serializing a prior scan
 - [func encode(to: any Encoder) throws](capturedroomdata/encode(to:).md)
   Serializes captured room data to the specified encoder.

@@ -43,6 +43,11 @@ The tensor must be either a 4-dimensional float tensor of shape `[batch, channel
 - `size`: The new size for the spatial dimensions of the tensor. The size must be positive.
 - `method`: The resize method. The default value is  .
 
+## See Also
+
+- [MLTensor.ResizeMethod](mltensor/resizemethod.md)
+  A resize algorithm.
+
 
 ---
 

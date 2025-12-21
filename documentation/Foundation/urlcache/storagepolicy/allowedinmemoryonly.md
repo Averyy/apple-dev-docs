@@ -26,10 +26,6 @@ case allowedInMemoryOnly
   Storage in [`URLCache`](urlcache.md) is allowed without restriction.
 - [URLCache.StoragePolicy.notAllowed](urlcache/storagepolicy/notallowed.md)
   Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
-- [URLCache.StoragePolicy.allowed](urlcache/storagepolicy/allowed.md)
-  Storage in [`URLCache`](urlcache.md) is allowed without restriction.
-- [URLCache.StoragePolicy.notAllowed](urlcache/storagepolicy/notallowed.md)
-  Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
 
 
 ---

@@ -166,7 +166,7 @@ The autospectrum of the forward FFT contains a series of high-magnitude items, r
 
 ![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](https://docs-assets.developer.apple.com/published/c31d2ab888d9e5a277847b7ade375c87/media-4264726%402x.png)
 
-The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms.md).
+The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms#Scale-time--and-frequency-domain-data.md).
 
 ```swift
 let componentFrequencyAmplitudePairs = autospectrum.enumerated().filter {

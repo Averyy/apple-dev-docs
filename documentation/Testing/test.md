@@ -30,7 +30,7 @@ An instance of this type may represent:
 - An individual test function (possibly contained within a type); or
 - A test function parameterized over one or more sequences of inputs.
 
-Two instances of this type are considered to be equal if the values of their [`id`](test/id-swift.property.md) properties are equal.
+Two instances of this type are considered to be equal if the values of their `Test/id-swift.property` properties are equal.
 
 ## Topics
 
@@ -61,10 +61,6 @@ Two instances of this type are considered to be equal if the values of their [`i
 ### Type Properties
 - [static var current: Test?](test/current.md)
   The test that is running on the current task, if any.
-### Default Implementations
-- [Equatable Implementations](test/equatable-implementations.md)
-- [Hashable Implementations](test/hashable-implementations.md)
-- [Identifiable Implementations](test/identifiable-implementations.md)
 
 ## Relationships
 

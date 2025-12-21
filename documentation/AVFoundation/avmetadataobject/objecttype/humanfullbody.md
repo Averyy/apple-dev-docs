@@ -22,8 +22,12 @@ static let humanFullBody: AVMetadataObject.ObjectType
 
 - [static let humanBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/humanbody.md)
   A constant that identifies human body metadata.
+- [static let dogHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/doghead.md)
+  An identifier for an instance of a dog head object.
 - [static let dogBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/dogbody.md)
   A constant that identifies dog body metadata.
+- [static let catHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/cathead.md)
+  An identifier for an instance of a cat head object.
 - [static let catBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/catbody.md)
   A constant that identifies cat body metadata.
 

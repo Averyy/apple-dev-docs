@@ -11,7 +11,7 @@ The selected overlay on the map.
 ## Declaration
 
 ```swift
-attribute mapkit.Overlay selectedOverlay;
+selectedOverlay?: Overlay;
 ```
 
 #### Discussion

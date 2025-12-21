@@ -21,14 +21,14 @@ class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
-### Specifying the Number of Bounding Boxes
+### Specifying the number of bounding boxes
 - [var boundingBoxCount: Int](mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxcount.md)
   The number of bounding boxes in each bounding box buffer.
-### Specifying Bounding Boxes Data
+### Specifying bounding boxes data
 - [var boundingBoxBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxbuffers.md)
   A array of motion keyframes, each containing bounding box data.
 - [var boundingBoxStride: Int](mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxstride.md)
@@ -59,7 +59,7 @@ class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor
 - [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
   Describes motion bounding box geometry, suitable for motion ray tracing.
 - [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
-  Geometry data for a specific keyframe to use in a moving object.
+  Geometry data for a specific keyframe to use in a moving instance.
 
 
 ---

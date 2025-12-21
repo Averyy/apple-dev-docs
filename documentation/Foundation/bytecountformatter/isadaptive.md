@@ -24,7 +24,7 @@ var isAdaptive: Bool { get set }
 
 The “adaptive” algorithm is platform specific and uses a different number of fraction digits based on the magnitude (in OS X v10.8: 0 fraction digits for bytes and KB; 1 fraction digits for MB; 2 for GB and above). Otherwise the result always tries to show at least three significant digits, introducing fraction digits as necessary.
 
-Default is [`true`](https://developer.apple.com/documentation/swift/true).
+Default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

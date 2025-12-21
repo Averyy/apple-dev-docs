@@ -43,12 +43,6 @@ The inner transformer’s output must match the outer transformer input. The res
   The intermediate type.
 - [ComposedTransformer.Output](composedtransformer/output.md)
   The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](composedtransformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](composedtransformer/decodable-implementations.md)
-- [Encodable Implementations](composedtransformer/encodable-implementations.md)
-- [Equatable Implementations](composedtransformer/equatable-implementations.md)
-- [Transformer Implementations](composedtransformer/transformer-implementations.md)
 
 ## Relationships
 

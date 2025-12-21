@@ -35,6 +35,8 @@ If you don’t explicitly call this method, the system invokes it automatically 
 
 ## See Also
 
+- [func start() throws](avassetwriter/start.md)
+  Prepares the writer to write media data to its output file.
 - [func startWriting() -> Bool](avassetwriter/startwriting.md)
   Tells the writer to start writing its output.
 - [func startSession(atSourceTime: CMTime)](avassetwriter/startsession(atsourcetime:).md)

@@ -67,8 +67,6 @@ arView.scene.addAnchor(anchorEntity)
 
 ## See Also
 
-- [Creating 3D Content with Reality Composer](creating-3d-content-with-reality-composer.md)
-  Assemble assets into a dynamic 3D composition that you can add to a scene in your app, or share with AR Quick Look.
 - [Loading Reality Composer files using generated code](loading-reality-composer-files-using-generated-code.md)
   Leverage automatically generated code to load scenes from Xcode.
 - [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
@@ -79,8 +77,6 @@ arView.scene.addAnchor(anchorEntity)
   Define the appearance and behavior of objects in a scene.
 - [Arranging elements in a scene](arranging-elements-in-a-scene.md)
   Manipulate objects to complete your Reality Composer scene.
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
-  Make programmatic changes to your scenes at runtime.
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
   Incorporate assistive technologies in your augmented reality app.
 

@@ -24,7 +24,7 @@ static var isDecodable: AVAsyncProperty<Root, Bool> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the system can decode the track, even if decoding may be too slow for real-time playback.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system can decode the track, even if decoding may be too slow for real-time playback.
 
 ## See Also
 

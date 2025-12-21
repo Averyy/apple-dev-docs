@@ -54,6 +54,8 @@ Chart {
 - [init<Data, X>(Data, xStart: PlottableProjection<RulePlot<Content>.DataElement, X>, xEnd: PlottableProjection<RulePlot<Content>.DataElement, X>, y: PlottableProjection<RulePlot<Content>.DataElement, some Plottable>)](ruleplot/init(_:xstart:xend:y:)-8ehr7.md)
 - [init<Data, X>(Data, xStart: PlottableProjection<RulePlot<Content>.DataElement, X>, xEnd: PlottableProjection<RulePlot<Content>.DataElement, X>, y: CGFloat?)](ruleplot/init(_:xstart:xend:y:)-hx5a.md)
 ### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedRulePlotContent](vectorizedruleplotcontent.md)
   An opaque vectorized chart content type.
 

@@ -39,6 +39,8 @@ An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects that m
   Returns an array containing the media selection options from a given array that match given media characteristics.
 - [class func mediaSelectionOptions(from: [AVMediaSelectionOption], withoutMediaCharacteristics: [AVMediaCharacteristic]) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:withoutmediacharacteristics:).md)
   Returns an array containing the media selection options from a given array that do not match given media characteristics.
+- [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](avmediaselectiongroup/custommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
 
 
 ---

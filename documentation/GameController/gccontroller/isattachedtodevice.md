@@ -21,7 +21,7 @@ var isAttachedToDevice: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the controller may be formfitting or otherwise closely attach to the device so that the player can interact simultaneously with the controller and the device. If [`false`](https://developer.apple.com/documentation/swift/false), the controller doesn’t have an attachment to the device.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the controller may be formfitting or otherwise closely attach to the device so that the player can interact simultaneously with the controller and the device. If [`false`](https://developer.apple.com/documentation/Swift/false), the controller doesn’t have an attachment to the device.
 
 ## See Also
 

@@ -84,7 +84,7 @@ struct TrailEntityQuery: EntityQuery {
 }
 ```
 
-To offer a better user experience, provide a list of suggested entities that the system displays, at appropriate times, to let people quickly make a selection. To provide those entities, add the [`suggestedEntities()`](entityquery/suggestedentities().md) method to your query structure. If your data generates a small number of entities, return them all; otherwise, return a subset of those entities relevant to the current context. For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project  suggests a person’s favorite hiking trails.
+To offer a better user experience, provide a list of suggested entities that the system displays, at appropriate times, to let people quickly make a selection. To provide those entities, add the [`suggestedEntities()`](entityquery/suggestedentities().md) method to your query structure. If your data generates a small number of entities, return them all; otherwise, return a subset of those entities relevant to the current context. For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project suggests a person’s favorite hiking trails.
 
 ```swift
 func suggestedEntities() async throws -> [TrailEntity] {
@@ -95,7 +95,7 @@ func suggestedEntities() async throws -> [TrailEntity] {
 }
 ```
 
-To let people use arbitrary text to find specific entities, adopt the [`EntityStringQuery`](entitystringquery.md) protocol instead. Queries that adopt this protocol cause the system to display a search field above the list of suggested entities. Implement the required [`entities(matching:)`](entitystringquery/entities(matching:).md) function, and use the provided string to match against your data. For example, sample code that displays hiking trail information lets people search for a specific album by matching against the a hiking trail by name.
+To let people use arbitrary text to find specific entities, adopt the [`EntityStringQuery`](entitystringquery.md) protocol instead. Queries that adopt this protocol cause the system to display a search field above the list of suggested entities. Implement the required [`entities(matching:)`](entitystringquery/entities(matching:).md) function, and use the provided string to match against your data. For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project allows people to search for a specific trail. The following code snippet from the sample code project matches a person’s search input to the app’s trail information using the `name` property:
 
 ```swift
 func entities(matching string: String) async throws -> [TrailEntity] {

@@ -8,7 +8,7 @@ Store and access cryptographic keys in the keychain.
 
 The keychain is the best place to store small secrets, like passwords and cryptographic keys. You use the functions of the keychain services API to add, retrieve, delete, or modify keychain items.
 
-For information about storing cryptographic keys that you create with the [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) framework, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/cryptokit/storing_cryptokit_keys_in_the_keychain).
+For information about storing cryptographic keys that you create with the [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) framework, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/CryptoKit/storing-cryptokit-keys-in-the-keychain).
 
 ##### Create a Query Dictionary
 

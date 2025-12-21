@@ -6,8 +6,8 @@
 Structure representing an action to create a calendar event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,16 +29,6 @@ struct CreateCalendarEventAction
   Description of event.
 - [let fallbackURL: URL?](rcsservice/business/createcalendareventaction/fallbackurl.md)
   Fallback URL to use when unable to perform operation.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/createcalendareventaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/createcalendareventaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.CreateCalendarEventAction, RCSService.Business.CreateCalendarEventAction) -> Bool](rcsservice/business/createcalendareventaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/createcalendareventaction/equatable-implementations.md)
 
 ## Relationships
 

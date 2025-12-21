@@ -29,8 +29,6 @@ struct Stride
   Creates an immediate scheduler time interval from a binary integer type.
 - [init(floatLiteral: Double)](immediatescheduler/schedulertimetype/stride/init(floatliteral:).md)
   Creates an immediate scheduler time interval from a floating-point seconds value.
-- [init(from: any Decoder) throws](immediatescheduler/schedulertimetype/stride/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(integerLiteral: Int)](immediatescheduler/schedulertimetype/stride/init(integerliteral:).md)
   Creates an immediate scheduler time interval from an integer seconds value.
 ### Creating Scheduler Time Strides from Seconds
@@ -44,9 +42,6 @@ struct Stride
   Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
 - [static func seconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/seconds(_:)-9uwki.md)
   Converts the specified number of seconds into an instance of this scheduler time type.
-### Using Predefined Scheduler Time Strides
-- [static var zero: Self](immediatescheduler/schedulertimetype/stride/zero.md)
-  The zero value.
 ### Declaring Timekeeping Types
 - [ImmediateScheduler.SchedulerTimeType.Stride.FloatLiteralType](immediatescheduler/schedulertimetype/stride/floatliteraltype.md)
   The type used when evaluating floating-point literals.
@@ -57,48 +52,6 @@ struct Stride
 ### Expressing Scheduler Time Strides as Seconds
 - [var magnitude: Int](immediatescheduler/schedulertimetype/stride/magnitude-swift.property.md)
   The value of this time interval in seconds.
-### Creating Ranges
-- [static func ... (Self) -> PartialRangeFrom<Self>](immediatescheduler/schedulertimetype/stride/'...(_:)-3ep4j.md)
-  Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](immediatescheduler/schedulertimetype/stride/'...(_:)-4auj9.md)
-  Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](immediatescheduler/schedulertimetype/stride/'...(_:_:).md)
-  Returns a closed range that contains both of its bounds.
-### Performing Mathematical Operations
-- [func negate()](immediatescheduler/schedulertimetype/stride/negate.md)
-  Replaces this value with its additive inverse.
-- [static func * (ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/*(_:_:).md)
-  Multiplies two values and produces their product.
-- [static func *= (inout ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride)](immediatescheduler/schedulertimetype/stride/*=(_:_:).md)
-  Multiplies two values and stores the result in the left-hand-side variable.
-- [static func + (Self) -> Self](immediatescheduler/schedulertimetype/stride/+(_:).md)
-  Returns the given number unchanged.
-- [static func + (ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/+(_:_:).md)
-  Adds two values and produces their sum.
-- [static func += (inout ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride)](immediatescheduler/schedulertimetype/stride/+=(_:_:).md)
-  Adds two values and stores the result in the left-hand-side variable.
-- [static func - (Self) -> Self](immediatescheduler/schedulertimetype/stride/-(_:).md)
-  Returns the additive inverse of the specified value.
-- [static func - (ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/-(_:_:).md)
-  Subtracts one value from another and produces their difference.
-- [static func -= (inout ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride)](immediatescheduler/schedulertimetype/stride/-=(_:_:).md)
-  Subtracts the second value from the first and stores the difference in the left-hand-side variable.
-### Comparing Scheduler Time Strides
-- [static func != (Self, Self) -> Bool](immediatescheduler/schedulertimetype/stride/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride) -> Bool](immediatescheduler/schedulertimetype/stride/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Encoding Scheduler Time Strides
-- [func encode(to: any Encoder) throws](immediatescheduler/schedulertimetype/stride/encode(to:).md)
-  Encodes this value into the given encoder.
-### Operators
-- [static func < (ImmediateScheduler.SchedulerTimeType.Stride, ImmediateScheduler.SchedulerTimeType.Stride) -> Bool](immediatescheduler/schedulertimetype/stride/_(_:_:).md)
-  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-### Default Implementations
-- [AdditiveArithmetic Implementations](immediatescheduler/schedulertimetype/stride/additivearithmetic-implementations.md)
-- [Comparable Implementations](immediatescheduler/schedulertimetype/stride/comparable-implementations.md)
-- [Equatable Implementations](immediatescheduler/schedulertimetype/stride/equatable-implementations.md)
-- [SignedNumeric Implementations](immediatescheduler/schedulertimetype/stride/signednumeric-implementations.md)
 
 ## Relationships
 

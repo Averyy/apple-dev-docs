@@ -43,7 +43,6 @@ func withUnsafeAudioStreamPacketDescriptions<R>(_ body: (UnsafeBufferPointer<Aud
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 
 
 ---

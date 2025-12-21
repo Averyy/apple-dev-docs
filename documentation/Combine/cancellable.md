@@ -31,10 +31,10 @@ Calling [`cancel()`](cancellable/cancel().md) frees up any allocated resources. 
 
 ## Topics
 
-### Canceling Actions
+### Canceling actions
 - [func cancel()](cancellable/cancel.md)
   Cancel the activity.
-### Storing Cancellable Instances
+### Storing instances
 - [func store<C>(in: inout C)](cancellable/store(in:)-35vnt.md)
   Stores this cancellable instance in the specified collection.
 - [func store(in: inout Set<AnyCancellable>)](cancellable/store(in:)-95sfl.md)

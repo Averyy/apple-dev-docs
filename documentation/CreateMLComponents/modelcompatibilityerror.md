@@ -47,16 +47,11 @@ enum ModelCompatibilityError
   An error that indicates that the output is missing from the model.
 - [ModelCompatibilityError.missingPredictedFeature](modelcompatibilityerror/missingpredictedfeature.md)
   An error that indicates that the regressor model output is missing.
-- [var errorDescription: String?](modelcompatibilityerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (ModelCompatibilityError, ModelCompatibilityError) -> Bool](modelcompatibilityerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](modelcompatibilityerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](modelcompatibilityerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](modelcompatibilityerror/equatable-implementations.md)
-- [Error Implementations](modelcompatibilityerror/error-implementations.md)
-- [LocalizedError Implementations](modelcompatibilityerror/localizederror-implementations.md)
 
 ## Relationships
 

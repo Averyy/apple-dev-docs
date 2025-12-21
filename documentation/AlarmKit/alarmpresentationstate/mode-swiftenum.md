@@ -6,9 +6,8 @@
 A list of all modes the alarm can be in: either alert, countdown, or paused.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -37,22 +36,6 @@ This value is sent as part of [`AlarmPresentationState`](alarmpresentationstate.
   An object that specifies the current state of the alarm is paused.
 - [case paused(AlarmPresentationState.Mode.Paused)](alarmpresentationstate/mode-swift.enum/paused(_:).md)
   A mode indicating the alarm isn’t active.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentationstate/mode-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (AlarmPresentationState.Mode, AlarmPresentationState.Mode) -> Bool](alarmpresentationstate/mode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](alarmpresentationstate/mode-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentationstate/mode-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](alarmpresentationstate/mode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](alarmpresentationstate/mode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

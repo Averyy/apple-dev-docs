@@ -22,7 +22,7 @@ var sampleHasDependentSamples: ObjCBool
 
 #### Discussion
 
-This value indicates the sample has dependent samples when [`sampleIndicatesWhetherItHasDependentSamples`](avsamplecursordependencyinfo/sampleindicateswhetherithasdependentsamples.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This value indicates the sample has dependent samples when [`sampleIndicatesWhetherItHasDependentSamples`](avsamplecursordependencyinfo/sampleindicateswhetherithasdependentsamples.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

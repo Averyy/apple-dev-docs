@@ -6,10 +6,10 @@
 The level of detail the view is recommended to have.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -40,13 +40,11 @@ The system can update the levelOfDetail value based on user proximity or other s
 
 - [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
-- [@MainActor @preconcurrency func widgetTexture(_ material: WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
-- [@MainActor @preconcurrency func supportedMountingStyles(_ styles: [WidgetMountingStyle]) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

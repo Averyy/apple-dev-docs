@@ -24,11 +24,6 @@ struct DeviceActivityResults<Element>
 ### Instance Methods
 - [func makeAsyncIterator() -> DeviceActivityResults<Element>.Iterator<Element>](deviceactivityresults/makeasynciterator.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-### Type Aliases
-- [DeviceActivityResults.AsyncIterator](deviceactivityresults/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](deviceactivityresults/asyncsequence-implementations.md)
 
 ## Relationships
 

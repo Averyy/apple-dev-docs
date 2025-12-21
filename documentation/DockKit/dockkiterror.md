@@ -28,9 +28,6 @@ enum DockKitError
   The method isn’t supported on a specific platform.
 - [DockKitError.notSupportedByDevice](dockkiterror/notsupportedbydevice.md)
   The device doesn’t support the requested operation.
-### Operators
-- [static func == (DockKitError, DockKitError) -> Bool](dockkiterror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [DockKitError.cameraTCCMissing](dockkiterror/cameratccmissing.md)
   The camera terms and conditions are missing.
@@ -40,16 +37,6 @@ enum DockKitError
   The frame rate is too low to track an object.
 - [DockKitError.noSubjectFound](dockkiterror/nosubjectfound.md)
   There is no subject in the video frame.
-### Instance Properties
-- [var hashValue: Int](dockkiterror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockkiterror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockkiterror/equatable-implementations.md)
-- [Error Implementations](dockkiterror/error-implementations.md)
-- [LocalizedError Implementations](dockkiterror/localizederror-implementations.md)
 
 ## Relationships
 

@@ -58,10 +58,10 @@ protocol NFCReaderSessionProtocol : NSObjectProtocol
   A reader session for detecting NFC Data Exchange Format (NDEF) tags.
 - [class NFCTagReaderSession](nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
+- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+  A reader session that supports the use of payment tags.
 - [class NFCVASReaderSession](nfcvasreadersession.md)
   A reader session for processing Value Added Service (VAS) tags.
-- [class NFCReaderSession](nfcreadersession-swift.class.md)
-  The abstract base class that represents a reader session for detecting NFC tags.
 - [class NFCReaderSession](nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)

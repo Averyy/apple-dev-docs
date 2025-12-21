@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is taken as a powder.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

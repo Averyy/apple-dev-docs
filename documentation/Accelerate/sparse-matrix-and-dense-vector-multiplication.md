@@ -18,10 +18,6 @@ Multiply sparse matrices and dense vectors.
 ### Complex multiplication functions
 - [func SparseMultiply(SparseMatrix_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](sparsemultiply(_:_:_:)-6gzb3.md)
   Performs the multiplication `y = Ax` for complex float values
-- [SparseMultiply](sparsemultiply-15ysy.md)
-  Performs the multiplication `y = alpha * Ax` for complex double values.
-- [SparseMultiply](sparsemultiply-4xaml.md)
-  Performs the multiplication `y = alpha * Ax` for complex float values.
 - [func SparseMultiply(SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](sparsemultiply(_:_:_:)-6xiv8.md)
   Performs the multiplication `y = Ax` for complex double values
 ### Multiply-add functions
@@ -38,10 +34,6 @@ Multiply sparse matrices and dense vectors.
   Performs `y += Ax` for complex double values
 - [func SparseMultiplyAdd(SparseMatrix_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](sparsemultiplyadd(_:_:_:)-8dqy7.md)
   Performs `y += Ax` for complex float values
-- [SparseMultiplyAdd](sparsemultiplyadd-47egy.md)
-  Performs `y += alpha * Ax` for complex double values
-- [SparseMultiplyAdd](sparsemultiplyadd-8ym23.md)
-  Performs `y += alpha * Ax` for complex float values
 
 ## See Also
 

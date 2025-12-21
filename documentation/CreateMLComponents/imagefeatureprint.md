@@ -22,8 +22,6 @@ struct ImageFeaturePrint
 ## Topics
 
 ### Creating the extractor
-- [init(from: any Decoder) throws](imagefeatureprint/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(cropAndScale: VNImageCropAndScaleOption, context: CIContext)](imagefeatureprint/init(cropandscale:context:).md)
   Creates a FeaturePrint feature extractor.
 - [init(revision: Int, cropAndScale: VNImageCropAndScaleOption, context: CIContext)](imagefeatureprint/init(revision:cropandscale:context:).md)
@@ -38,16 +36,6 @@ struct ImageFeaturePrint
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) async throws -> MLShapedArray<Float>](imagefeatureprint/applied(to:eventhandler:).md)
   Extracts image features from an image.
-### Type Aliases
-- [ImageFeaturePrint.Input](imagefeatureprint/input.md)
-  The input type.
-- [ImageFeaturePrint.Output](imagefeatureprint/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](imagefeatureprint/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](imagefeatureprint/decodable-implementations.md)
-- [Encodable Implementations](imagefeatureprint/encodable-implementations.md)
-- [Transformer Implementations](imagefeatureprint/transformer-implementations.md)
 
 ## Relationships
 

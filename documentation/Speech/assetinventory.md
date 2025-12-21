@@ -3,14 +3,14 @@
 **Framework**: Speech  
 **Kind**: class
 
-Before using `SpeechAnalyzer`, you must install the assets required by the modules you use. These assets are machine-learning models downloaded from Apple’s servers.
+Manages the assets that are necessary for transcription or other analyses.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,36 +20,44 @@ final class AssetInventory
 
 #### Overview
 
-Once you have created the modules you wish to use, installation is a three-step process:
+Before using the [`SpeechAnalyzer`](speechanalyzer.md) class, you must install assets required by the modules you plan to use. These assets are machine-learning models downloaded from Apple’s servers and managed by the system. Once you download, install, or use an asset, the system retains and updates it automatically, and shares it with other apps. The system makes a certain number of locale-specific asset reservations available to your app to limit storage space and network usage.
 
-- Allocate the locales used by the modules. You may only allocate a limited number of locales at one time. This is done to limit the storage space and network usage. This is not required for modules whose assets are the same for all locales.
-- Start the download of the required assets. You don’t have to download again when you create new modules; the assets only depend on the configuration of each module, but not the module’s object identity.
-- Wait for the downloads to finish. Note that downloading may have already happened, because: - The assets were preinstalled on the system.
-- Another app already downloaded the assets.
-- A different configuration of modules you previously used happen to use the same assets.
+Your app does not work with assets directly. Instead, your app configures module objects. The system uses the modules’ configuration to determine what assets are relevant.
 
-All of these actions persist across launches of your app. Assets are shared between apps, so duplicates aren’t downloaded multiple times, and don’t take up storage space. However, the system may unsubscribe your app from assets that haven’t been used in a while.
+##### Install Assets
 
-Note that your app is never told about what assets are required, it only deals with the module objects and how they are configured.
+Installing an asset is a four-step process:
+
+1. Create analyzer modules in the configurations that you wish to use. These modules can be discarded when no longer needed; the system installs assets using the modules’ configuration, not their object identity.
+2. Assign your app’s asset reservations to those locales. The class does this automatically if needed, but you can also call [`reserve(locale:)`](assetinventory/reserve(locale:).md) to do this manually. This step is only necessary for modules with locale-specific assets; that is, modules conforming to [`LocaleDependentSpeechModule`](localedependentspeechmodule.md). You can skip this step for other modules.
+3. Start downloading the required assets for the modules’ configuration. Call [`assetInstallationRequest(supporting:)`](assetinventory/assetinstallationrequest(supporting:).md) to obtain an instance of [`AssetInstallationRequest`](assetinstallationrequest.md) and call its [`downloadAndInstall()`](assetinstallationrequest/downloadandinstall().md) method.
+4. Wait for the download to finish. Note that the download may finish immediately; the assets may have already been downloaded if the assets were preinstalled on the system, another app already downloaded them, or a previous module configuration used the same assets.
+
+Once assets are downloaded, they persist between app launches and are shared between apps. The system may unsubscribe your app from assets that haven’t been used in a while.
+
+##### Manage Assets
+
+When your app no longer needs assets for a particular locale, call [`release(reservedLocale:)`](assetinventory/release(reservedlocale:).md) to free up that reservation. The system will remove the assets at a later time.
 
 ## Topics
 
-### Type Properties
-- [static var allocatedLocales: [Locale]](assetinventory/allocatedlocales.md)
-  Before you can subscribe to assets supporting a module, you must allocate the locale used by that module.
-- [static var maximumAllocatedLocales: Int](assetinventory/maximumallocatedlocales.md)
-  The number of locale allocations permitted to an application.
-### Type Methods
-- [static func allocate(locale: Locale) async throws -> Bool](assetinventory/allocate(locale:).md)
-  Adds the locale to `allocatedLocales`. Throws if the number of locales would exceed `maximumAllocatedLocales`. Returns false if the locale is already in the set.
+### Downloading and installing assets
 - [static func assetInstallationRequest(supporting: [any SpeechModule]) async throws -> AssetInstallationRequest?](assetinventory/assetinstallationrequest(supporting:).md)
-  Returns an `AssetsInstallationRequest` object, which is used to initiate the asset download and monitor the progress.
-- [static func deallocate(locale: Locale) async -> Bool](assetinventory/deallocate(locale:).md)
-  Removes the locale from `allocatedLocales`. Returns false if the locale is not in the set.
+  Returns an installation request object, which is used to initiate the asset download and monitor its progress.
+### Checking asset status
 - [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
-  Returns the status for the list of modules. If the status differs between modules, it returns the lowest status.
-### Enumerations
+  Returns the status for the list of modules.
 - [AssetInventory.Status](assetinventory/status.md)
+### Type Properties
+- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+  The number of locale reservations permitted to an app.
+- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+  The app’s current asset locale reservations.
+### Type Methods
+- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+  Removes an asset locale reservation.
+- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+  Add an asset locale to the app’s current reservations.
 
 ## See Also
 

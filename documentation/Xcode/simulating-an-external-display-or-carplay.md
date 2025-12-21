@@ -41,7 +41,7 @@ Close the external display window, or choose I/O > External Displays > Disable t
 - [Interacting with your app in the visionOS simulator](interacting-with-your-app-in-the-visionos-simulator.md)
   Use your Mac to navigate spaces and control interactions with your visionOS apps in Simulator.
 - [Configuring Simulator for your working environment](configuring-a-simulator-for-your-environment.md)
-  Adjust Simulator settings for window or screen size, light or dark appearance, and audio settings, and restart or reset a simulated device.
+  Adjust Simulator settings for window or screen size, the light or dark appearance, and audio settings, and restart or reset a simulated device.
 - [Capturing screenshots and videos from Simulator](capturing-screenshots-and-videos-from-simulator.md)
   Record and share test results, or prepare for App Store distribution with screenshots and videos of your app from Simulator.
 

@@ -52,7 +52,7 @@ RealityView { content in
 
 ##### Add Real World Interactivity Using Collision Components
 
-You can make rendered 3D content more lifelike by having it appear to interact physically with objects in the person’s surroundings, like furniture and floors. Use RealityKit’s collision components and physics support to provide these interactions in your app. The [`generateStaticMesh(from:)`](https://developer.apple.com/documentation/RealityKit/ShapeResource/generateStaticMesh(from:)-693dx) method bridges between scene reconstruction and RealityKit’s physics simulation.
+You can make rendered 3D content more lifelike by having it appear to interact physically with objects in the person’s surroundings, like furniture and floors. Use RealityKit’s collision components and physics support to provide these interactions in your app. The [`generateStaticMesh(from:)`](https://developer.apple.com/documentation/RealityKit/ShapeResource/generateStaticMesh(from:)) method bridges between scene reconstruction and RealityKit’s physics simulation.
 
 > ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
 
@@ -111,10 +111,12 @@ People using an app that leverages scene reconstruction typically don’t need t
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building_local_experiences_with_room_tracking.md)
+- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 
 
 ---

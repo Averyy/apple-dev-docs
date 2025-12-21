@@ -6,8 +6,8 @@
 Enumeration indicating the height of the media.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,22 +25,6 @@ enum Height
   Medium height.
 - [RCSService.Business.Card.Media.Height.tall](rcsservice/business/card/media/height/tall.md)
   Tall height.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/card/media/height/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.Card.Media.Height, RCSService.Business.Card.Media.Height) -> Bool](rcsservice/business/card/media/height/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/card/media/height/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/card/media/height/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/card/media/height/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/media/height/equatable-implementations.md)
 
 ## Relationships
 

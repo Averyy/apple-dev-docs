@@ -21,15 +21,15 @@ static let activeEnergyBurned: HKQuantityTypeIdentifier
 
 ## Mentions
 
+- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
 - [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 - [Running workout sessions](running-workout-sessions.md)
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
 
 #### Discussion
 
-Active energy is the energy that the user has burned due to physical activity and exercise. These samples should not include the resting energy burned during the sample’s duration. Use the health store’s [`splitTotalEnergy(_:start:end:resultsHandler:)`](hkhealthstore/splittotalenergy(_:start:end:resultshandler:).md) method to split a workout’s total energy burned into the active and resting portions, and then save each portion in its own sample.
+Active energy is the energy that the user has burned due to physical activity and exercise. These samples should not include the resting energy burned during the sample’s duration. Use the health store’s [`splitTotalEnergy(_:start:end:resultsHandler:)`](hkhealthstore/splittotalenergy(_:start:end:resultshandler:).md) method to split a workout’s total energy burned into the active and resting portions, and then save each portion in its own sample. The system automatically records active energy samples on Apple Watch.
 
-Active energy samples use energy units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+Active energy samples use energy units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
 
 ## See Also
 

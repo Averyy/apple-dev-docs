@@ -6,9 +6,9 @@ Verify the contents of app receipts by decoding and parsing the receipt on the d
 
 #### Overview
 
-When users install apps from the App Store, the app contains a cryptographically signed receipt that Apple creates and stores inside the app bundle, which you can then validate. 
+When users install apps from the App Store, the app contains a cryptographically signed receipt that Apple creates and stores inside the app bundle, which you can then validate.
 
-> **Note**: The receipt isn’t necessary if you use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction) to validate the app download, or [`Transaction`](https://developer.apple.com/documentation/storekit/transaction) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction). 
+> **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction) to validate the app download, or [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/StoreKit/original-api-for-in-app-purchase), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction).
 
 Validating the receipt locally requires you to develop or use code to read and decode the receipt as a PKCS #7 container, as defined by [`RFC 2315`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc2315). The App Store encodes the payload of the container using Abstract Syntax Notation One (ASN.1), as defined by [`ITU-T X.690`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-X.690/). The payload contains a set of receipt attributes. Each receipt attribute contains a type, a version, and a value.
 
@@ -29,41 +29,41 @@ Payload ::= SET OF ReceiptAttribute
 END
 ```
 
-##### 3744732
+##### Validate the Receipt
 
-In macOS and Mac apps built with Mac Catalyst, implement receipt validation in the main function, before the app calls [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/appkit/nsapplicationmain(_:_:)).
+In macOS and Mac apps built with Mac Catalyst, implement receipt validation in the main function, before the app calls [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationMain(_:_:)).
 
 To validate the app receipt, perform the following tests in order:
 
-1. Locate and load the app receipt from the app’s bundle. The class [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) provides the location of the receipt with the property [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/appstorereceipturl). 
+1. Locate and load the app receipt from the app’s bundle. The class [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) provides the location of the receipt with the property [`appStoreReceiptURL`](https://developer.apple.com/documentation/Foundation/Bundle/appStoreReceiptURL).
 2. Decode the app receipt as a PKCS #7 container and verify that the chain of trust for the container’s signature traces back to the Apple Inc. Root certificate, available from [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/). Use the `receipt_creation_date`, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1) when validating the receipt signature.
-3. Verify that the bundle identifier, identified as [`ASN.1 Field Type 2`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), matches your app’s bundle identifier.
-4. Verify that the version identifier string, identified as [`ASN.1 Field Type 3`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), matches the version string in your app’s bundle.
-5. Compute a SHA-1 hash for the device that installs the app and verify that it matches the receipt’s hash, identified as [`ASN.1 Field Type 5`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1).
+3. Verify that the bundle identifier, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), matches your app’s bundle identifier.
+4. Verify that the version identifier string, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), matches the version string in your app’s bundle.
+5. Compute a SHA-1 hash for the device that installs the app and verify that it matches the receipt’s hash, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1).
 
 The validation passes if all of the tests pass. If any test fails, the validation fails.
 
-For information about the keys in a receipt, see [`Receipt Fields`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1).
+For information about the keys in a receipt, see [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1).
 
-##### 4180978
+##### Verify the Certificate Chain of Trust
 
 Decode the app receipt as a PKCS #7 container and verify that the chain of trust for the container’s signature traces back to the Apple Inc. Root certificate, available from [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/).
 
-> 💡 **Tip**: Don’t hardcode intermediate certificates in your app. Ensure that your code supports certificates that use SHA-256 and SHA-1 signing algorithms. 
+> 💡 **Tip**:  Don’t hardcode intermediate certificates in your app. Ensure that your code supports certificates that use SHA-256 and SHA-1 signing algorithms.
 
 Make sure your app uses the date from the `receipt_creation_date` field, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), to validate the receipt’s signature. Many cryptographic libraries default to using the device’s current time and date when validating a PKCS #7 package, but this may not produce the correct results when validating a receipt’s signature. For example, if the receipt was signed with a valid certificate, but the certificate has since expired, using the device’s current date incorrectly returns an invalid result.
 
-##### 3744656
+##### Compute the Sha 1 Hash
 
 Compute the SHA-1 hash to match the local device with the device hash inside the App Store reciept. When computing the SHA-1 hash, use the platform-specific data source. The source of bytes for each platform is:
 
-- watchOS: Use the raw bytes from the [`uuid`](https://developer.apple.com/documentation/foundation/uuid/uuid) property of the [`UUID`](https://developer.apple.com/documentation/foundation/uuid) that [`identifierForVendor`](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/identifierforvendor) provides.
-- iOS, iPadOS, tvOS, and iOS apps running on a Mac with Apple silicon: Use the raw bytes from the [`uuid`](https://developer.apple.com/documentation/foundation/uuid/uuid) property of the [`UUID`](https://developer.apple.com/documentation/foundation/uuid) that [`identifierForVendor`](https://developer.apple.com/documentation/uikit/uidevice/identifierforvendor) provides.
+- watchOS: Use the raw bytes from the [`uuid`](https://developer.apple.com/documentation/Foundation/UUID/uuid) property of the [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) that [`identifierForVendor`](https://developer.apple.com/documentation/WatchKit/WKInterfaceDevice/identifierForVendor) provides.
+- iOS, iPadOS, tvOS, and iOS apps running on a Mac with Apple silicon: Use the raw bytes from the [`uuid`](https://developer.apple.com/documentation/Foundation/UUID/uuid) property of the [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) that [`identifierForVendor`](https://developer.apple.com/documentation/UIKit/UIDevice/identifierForVendor) provides.
 - macOS and apps built with Mac Catalyst: Use the data that returns from `copy_mac_address` from the example code below.
 
 The following two code examples illustrate how to retrieve an identifier in macOS, as the `copy_mac_address` function shows, for validating an App Store receipt.
 
-In the following Swift code, the `io_service` function uses [`IOKit`](https://developer.apple.com/documentation/iokit) to retrieve network interfaces as an optional [`IOKit`](https://developer.apple.com/documentation/iokit) object. The `copy_mac_address` function looks up an appropriate network interface and returns the hardware address from the [`IOKit`](https://developer.apple.com/documentation/iokit) object as optional `CFData`. 
+In the following Swift code, the `io_service` function uses [`IOKit`](https://developer.apple.com/documentation/iokit) to retrieve network interfaces as an optional [`IOKit`](https://developer.apple.com/documentation/iokit) object. The `copy_mac_address` function looks up an appropriate network interface and returns the hardware address from the [`IOKit`](https://developer.apple.com/documentation/iokit) object as optional `CFData`.
 
 ```swift
 import IOKit
@@ -132,7 +132,7 @@ func copy_mac_address() -> CFData? {
 
 The following Objective-C code works in the same fashion. This example uses [`IOKit`](https://developer.apple.com/documentation/iokit) to look up the relevant network interface, and returns the bytes that identify the built-in network interface:
 
-```occ
+```objc
 #import <Foundation/Foundation.h>
 #import <IOKit/network/IONetworkLib.h>
 
@@ -217,17 +217,17 @@ CFDataRef copy_mac_address() {
 }
 ```
 
-##### 3744733
+##### Respond to Validation Failures
 
 If your app receipt validation fails, respond to that failure as follows:
 
 - Don’t try to terminate the app. Without a validated receipt, assume the user doesn’t have access to premium content. Provide a user interface to gracefully handle this case and inform the user what they can do to get full access to your app’s features.
-- If the app receipt is missing or corrupt, use the [`SKReceiptRefreshRequest`](https://developer.apple.com/documentation/storekit/skreceiptrefreshrequest) object to refresh the app receipt.
+- If the app receipt is missing or corrupt, use the [`SKReceiptRefreshRequest`](https://developer.apple.com/documentation/StoreKit/SKReceiptRefreshRequest) object to refresh the app receipt.
 - In the sandbox environment, if the app receipt is missing, assume the tester is a new customer and doesn’t have access to premium content.
 
-> **Note**: For apps in iOS and iPadOS running in the sandbox environment and in StoreKit testing in Xcode, the app receipt is present only after the tester makes their first in-app purchase. The app receipt is always present in TestFlight on devices running macOS.
+> **Note**:  For apps in iOS and iPadOS running in the sandbox environment and in StoreKit testing in Xcode, the app receipt is present only after the tester makes their first in-app purchase. The app receipt is always present in TestFlight on devices running macOS.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstorereceipts/validating-receipts-on-the-device)*

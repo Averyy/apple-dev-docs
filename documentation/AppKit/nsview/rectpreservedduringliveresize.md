@@ -19,7 +19,7 @@ var rectPreservedDuringLiveResize: NSRect { get }
 
 The rectangle in this property is in the coordinate system of your view and reflects the space your view previously occupied. This rectangle may be smaller or the same size as your view’s current bounds, depending on whether the view grew or shrunk.
 
-If your view does not support content preservation during live resizing, the rectangle will be empty. To support content preservation, override the [`preservesContentDuringLiveResize`](nsview/preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](https://developer.apple.com/documentation/swift/true).
+If your view does not support content preservation during live resizing, the rectangle will be empty. To support content preservation, override the [`preservesContentDuringLiveResize`](nsview/preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > **Note**:  The window containing your view must also support content preservation. To enable support for this feature in your window, use the [`preservesContentDuringLiveResize`](nswindow/preservescontentduringliveresize.md) method of `NSWindow`.
 

@@ -21,7 +21,7 @@ optional func tableView(_ tableView: UITableView, canPerformPrimaryActionForRowA
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the primary action can be performed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If you don’t implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true) when the table view isn’t in an editing state, and [`false`](https://developer.apple.com/documentation/swift/false) when it is.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the primary action can be performed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If you don’t implement this method, the default return value is [`true`](https://developer.apple.com/documentation/Swift/true) when the table view isn’t in an editing state, and [`false`](https://developer.apple.com/documentation/Swift/false) when it is.
 
 #### Discussion
 

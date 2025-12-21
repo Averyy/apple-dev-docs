@@ -22,7 +22,7 @@ convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: 
 
 ## Mentions
 
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
 
 #### Discussion
 
@@ -34,7 +34,7 @@ When using the [`Image I/O`](https://developer.apple.com/documentation/ImageIO) 
 
 ## See Also
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 - [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avportraiteffectsmatte/applyingexiforientation(_:).md)
   Returns a derivative portrait effects matte after applying the specified EXIF orientation.

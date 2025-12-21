@@ -1,4 +1,4 @@
-# Reading Pixel Data from a Drawable Texture
+# Reading pixel data from a drawable texture
 
 **Framework**: Metal
 
@@ -30,7 +30,7 @@ Because configuring the drawable textures for read access means that Metal may n
 
 ##### Determine Which Pixels to Copy
 
-The `AAPLViewController` class manages user interaction. When a user interacts with a view, AppKit and UIKit send events with positions specified in the view’s coordinate system. To determine which pixels to copy from the Metal drawable texture, the app transforms these view coordinates into Metal’s texture coordinate system.
+The `AAPLViewController` class manages user interaction. When a user interacts with a view, AppKit and UIKit send events with positions specified in the view’s coordinate system. To determine which pixels to copy from the Metal drawable texture, the app transforms these view coordinates into the Metal texture coordinate system.
 
 Because of differences in graphics coordinate systems and APIs, the code to convert between view coordinates and texture coordinates varies by platform.
 
@@ -109,7 +109,7 @@ NSUInteger bytesPerImage = size.height * bytesPerRow;
 _readBuffer = [texture.device newBufferWithLength:bytesPerImage options:MTLResourceStorageModeShared];
 ```
 
-Next, the method creates a [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md), which provides commands that copy data between Metal resources, fill resources with data, and perform other similar resource-related tasks that don’t directly involve computation or rendering. The sample encodes a blit command to copy the texture data to the beginning of the new buffer. It then ends the blit pass.
+Next, the method creates an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md), which provides commands that copy data between Metal resources, fill resources with data, and perform other similar resource-related tasks that don’t directly involve computation or rendering. The sample encodes a blit command to copy the texture data to the beginning of the new buffer. It then ends the blit pass.
 
 ```objective-c
 id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
@@ -133,7 +133,7 @@ Finally, it commits the command buffer and calls [`waitUntilCompleted()`](mtlcom
 ```objective-c
 [commandBuffer commit];
 
-// The app must wait for the GPU to complete the blit pass before it can
+// The app needs to wait for the GPU to complete the blit pass before it can
 // read data from _readBuffer.
 [commandBuffer waitUntilCompleted];
 ```
@@ -146,7 +146,7 @@ The app calls the buffer’s [`contents()`](mtlbuffer/contents().md) method to g
 AAPLPixelBGRA8Unorm *pixels = (AAPLPixelBGRA8Unorm *)pixelBuffer.contents;
 ```
 
-The sample copies the buffer’s data into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [`Creating and Sampling Textures`](creating-and-sampling-textures.md).
+The sample copies the buffer’s data into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [`Creating and sampling textures`](creating-and-sampling-textures.md).
 
 ```objective-c
 // Create an `NSData` object and initialize it with the pixel data.
@@ -166,7 +166,7 @@ The renderer returns this image object to the view controller for further proces
 
 - [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
-- [Creating and Sampling Textures](creating-and-sampling-textures.md)
+- [Creating and sampling textures](creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
 - [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)
   Limit texture memory usage for large textures by loading or unloading image detail on the basis of MIP and tile region.

@@ -129,7 +129,6 @@ extension OrderedSet: ExpressibleByArrayLiteral {
 ### Conforming Types
 - [Array](array.md)
 - [ArraySlice](arrayslice.md)
-- [ClockTraits](clocktraits.md)
 - [ContiguousArray](contiguousarray.md)
 - [SIMD16](simd16.md)
 - [SIMD2](simd2.md)

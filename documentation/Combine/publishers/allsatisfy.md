@@ -22,24 +22,19 @@ struct AllSatisfy<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating an All Satisfy Publisher
+### Creating an all satisfy publisher
 - [init(upstream: Upstream, predicate: (Upstream.Output) -> Bool)](publishers/allsatisfy/init(upstream:predicate:).md)
   Creates a publisher that publishes a single Boolean value that indicates whether all received elements pass a given predicate.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.AllSatisfy.Output](publishers/allsatisfy/output.md)
   The kind of values published by this publisher.
 - [Publishers.AllSatisfy.Failure](publishers/allsatisfy/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/allsatisfy/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Upstream.Output) -> Bool](publishers/allsatisfy/predicate.md)
   A closure that evaluates each received element.
-### Applying Operators
-- [Publisher Operators](publishers-allsatisfy-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/allsatisfy/publisher-implementations.md)
 
 ## Relationships
 

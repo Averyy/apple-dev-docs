@@ -17,7 +17,7 @@ var isBordered: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the color well has a border; if it’s [`false`](https://developer.apple.com/documentation/swift/false), the color well doesn’t have a border. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the color well has a border; if it’s [`false`](https://developer.apple.com/documentation/Swift/false), the color well doesn’t have a border. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 A borderless color well doesn’t display the Colors window when someone clicks it.
 

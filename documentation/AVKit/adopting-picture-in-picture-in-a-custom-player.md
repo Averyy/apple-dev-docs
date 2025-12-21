@@ -32,7 +32,7 @@ override func viewDidLoad() {
 }
 ```
 
-Use key-value observing (KVO) on the controller’s [`canStopPictureInPicture`](avpictureinpicturecontroller/canstoppictureinpicture.md) property to display the appropriate affordances and provide the correct behavior in your playback UI. If `false`, display a start PiP affordance. If `true`, your app stops your custom playback UI and displays UI affordances to swap if you’re creating a tvOS app. For more information about KVO, see `Using Key-Value Observing in Swift`.
+Use key-value observing (KVO) on the controller’s [`canStopPictureInPicture`](avpictureinpicturecontroller/canstoppictureinpicture.md) property to display the appropriate affordances and provide the correct behavior in your playback UI. If `false`, display a start PiP affordance. If `true`, your app stops your custom playback UI and displays UI affordances to swap if you’re creating a tvOS app. For more information about KVO, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
 
 ##### Create the Pip Controller
 

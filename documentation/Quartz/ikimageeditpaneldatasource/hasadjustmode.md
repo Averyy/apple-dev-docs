@@ -16,7 +16,7 @@ optional var hasAdjustMode: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the tab should be displayed, otherwise NO.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the tab should be displayed, otherwise NO.
 
 ## See Also
 

@@ -30,14 +30,8 @@ When the payment card issuer requests the PIN during a transaction, your partici
 - [init(rawValue: String)](paymentcardreadersession/pintoken/init(rawvalue:).md)
   Creates a token with the string your payment service provider gave you.
 ### Getting the token value
-- [let rawValue: String](paymentcardreadersession/pintoken/rawvalue-swift.property.md)
+- [let rawValue: String](paymentcardreadersession/pintoken/rawvalue.md)
   The raw token string from your payment service provider.
-### Type Aliases
-- [PaymentCardReaderSession.PINToken.RawValue](paymentcardreadersession/pintoken/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](paymentcardreadersession/pintoken/equatable-implementations.md)
-- [RawRepresentable Implementations](paymentcardreadersession/pintoken/rawrepresentable-implementations.md)
 
 ## Relationships
 

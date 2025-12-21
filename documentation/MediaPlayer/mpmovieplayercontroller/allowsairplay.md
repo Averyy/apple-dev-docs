@@ -20,7 +20,7 @@ var allowsAirPlay: Bool { get set }
 
 A movie player supports wireless movie playback to AirPlay-enabled hardware. When enabled, the user can select AirPlay-enabled hardware in the Control Panel when such hardware is in range.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). To disable AirPlay movie playback, set this property’s value to [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). To disable AirPlay movie playback, set this property’s value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

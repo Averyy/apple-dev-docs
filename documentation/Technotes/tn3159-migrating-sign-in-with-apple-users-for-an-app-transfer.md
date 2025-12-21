@@ -20,7 +20,7 @@ If you’re encountering errors during user migration, see [`TN3107: Resolving S
 
 #### Preparing to Migrate Users for an App Transfer
 
-To prepare your team-scoped user data for the recipient for the app transfer, you need to generate a transfer identifier (transfer ID) for each user in your database. If you have grouped your apps for Sign in with Apple, you will need to ungroup them before initiating the transfer. The Services ID associated with a primary App ID that has configured Sign in with Apple will also be transferred. If you don’t want the Service ID to be transferred to the recipient team, [`remove its association`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-sign-in-with-apple-for-the-web) before initiating the transfer.
+To prepare your team-scoped user data for the recipient for the app transfer, you need to [`Transferring your apps and users to another team`](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team) (transfer ID) for each user in your database. If you have grouped your apps for Sign in with Apple, you will need to ungroup them before initiating the transfer. The Services ID associated with a primary App ID that has configured Sign in with Apple will also be transferred. If you don’t want the Service ID to be transferred to the recipient team, [`remove its association`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-sign-in-with-apple-for-the-web) before initiating the transfer.
 
 Once the transfer IDs have been generated and the private user data has been prepared for the recipient team, you may initiate your app transfer. For more information about the app transfer process, see [`App Store Connect Help: Transfer an app – Overview of app transfer`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/transfer-an-app/overview-of-app-transfer).
 
@@ -41,10 +41,10 @@ For example, if Team A transferred the app to Team B more than 60 days ago, then
 Please follow the following steps to process the user migration from your team (Team A) to the recipient team (Team B):
 
 1. Team A obtains access token(s)
-2. Team A generates transfer identifers
+2. Team A generates transfer identifiers
 3. Team A initiates app transfer to Team B
 
-For more information about steps above, please see Transferring your apps and users to another team.
+For more information about steps above, please see [`Transferring your apps and users to another team`](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team).
 
 > **Note**: If you receive errors while obtaining access tokens or generating transfer identifiers, but have completed your app transfer within 60 days, see [`TN3107: Resolving Sign in with Apple response errors`](tn3107-resolving-sign-in-with-apple-response-errors.md). Otherwise, see [`Migrating users after the 60-day app transfer period`](tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer#Migrating-users-after-the-60-day-app-transfer-period.md) to learn how to proceed with your user migration.
 
@@ -53,7 +53,7 @@ For more information about steps above, please see Transferring your apps and us
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [`Generate and validate tokens`](https://developer.apple.com/documentation/signinwithapplerestapi/generate_and_validate_tokens) after the user authorization.
+- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) after the user authorization.
 
 The request below fetches the access token for Team A. The request also contains the following:
 
@@ -71,7 +71,7 @@ curl -v POST "https://appleid.apple.com/auth/token" \
 
 You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
 
-##### 2 Team a Generates Transfer Identifers
+##### 2 Team a Generates Transfer Identifiers
 
 The request below uses the access token for Team A, then generates an existing user’s transfer ID for Team B. The request also contains the following:
 
@@ -99,17 +99,17 @@ Once the transfer IDs have been generated and the private user data has been pre
 Please follow the following steps to process the user migration from the transferring team (Team A) to your team (Team B):
 
 1. Team B obtains access token(s)
-2. Team B exchanges transfer identifers
+2. Team B exchanges transfer identifiers
 3. Team B confirms successful user migration
 
-For more information about steps above, please see Bringing new apps and users into your team.
+For more information about steps above, please see [`https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team).
 
 ##### 4 Team B Obtains Access Tokens
 
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [`Generate and validate tokens`](https://developer.apple.com/documentation/signinwithapplerestapi/generate_and_validate_tokens) after the user authorization.
+- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) after the user authorization.
 
 The request below fetches the access token for Team B. The request also contains the following:
 
@@ -127,7 +127,7 @@ curl -v POST "https://appleid.apple.com/auth/token" \
 
 You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
 
-##### 5 Team B Exchanges Transfer Identifers
+##### 5 Team B Exchanges Transfer Identifiers
 
 The request below uses the access token for Team B, then exchanges the transfer ID provided by Team A. The request also contains the following:
 
@@ -146,7 +146,7 @@ curl -v POST "https://appleid.apple.com/auth/usermigrationinfo" \
 
 ##### 6 Team B Confirms Successful User Migration
 
-Within your app or web service, you can confirm the user migration was successful by checking the credential state of the user. Its value should be [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred). To learn more about this step, see Confirm the transferred credential state.
+Within your app or web service, you can confirm the user migration was successful by checking the credential state of the user. Its value should be [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred). To learn more about this step, see [`https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team).
 
 #### Revision History
 
@@ -155,6 +155,26 @@ Within your app or web service, you can confirm the user migration was successfu
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -165,26 +185,6 @@ Within your app or web service, you can confirm the user migration was successfu
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 - [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
   Inspect your active StoreKit configuration file for unexpected configurations.
-- [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
-  Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 
 
 ---

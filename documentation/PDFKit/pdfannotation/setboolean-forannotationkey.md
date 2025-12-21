@@ -21,7 +21,7 @@ func setBoolean(_ value: Bool, forAnnotationKey key: PDFAnnotationKey) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

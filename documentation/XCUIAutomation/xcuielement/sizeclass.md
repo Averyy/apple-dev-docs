@@ -32,9 +32,6 @@ enum SizeClass
   A constant that represents an element for the unspecified size class.
 ### Initializers
 - [init?(rawValue: Int)](xcuielement/sizeclass/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuielement/sizeclass/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuielement/sizeclass/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -25,14 +25,14 @@ See the playback coordinator’s [`beginSuspension(for:)`](avplaybackcoordinator
 
 ## Topics
 
-### Inspecting a Suspension
+### Inspecting a suspension
 - [var beginDate: Date](avcoordinatedplaybacksuspension/begindate.md)
   The time the suspension begins.
 - [var reason: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.property.md)
   The reason for the suspension.
 - [AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct.md)
   Constants that identify playback suspension reasons.
-### Ending a Suspension
+### Ending a suspension
 - [func end()](avcoordinatedplaybacksuspension/end.md)
   Ends a suspension.
 - [func end(proposingNewTime: CMTime)](avcoordinatedplaybacksuspension/end(proposingnewtime:).md)

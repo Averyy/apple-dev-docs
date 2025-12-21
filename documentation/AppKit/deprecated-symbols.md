@@ -12,7 +12,7 @@ Review symbols that are no longer supported, and find the replacements to use in
 - [class NSOpenGLContext](nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
 - [class NSOpenGLLayer](nsopengllayer.md)
-  A subclass of [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer) that is suitable for rendering OpenGL into layers.
+  A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
 - [class NSOpenGLPixelFormat](nsopenglpixelformat.md)
   An object that specifies the types of buffers and other attributes of the OpenGL context.
 - [class NSDrawer](nsdrawer.md)
@@ -26,8 +26,6 @@ Review symbols that are no longer supported, and find the replacements to use in
 ### Protocols
 - [NSAccessibility](nsaccessibility.md)
   A legacy, informal protocol that Apple doesn’t recommend for active use.
-- [NSEditor](nseditor-deprecated-symbols.md)
-  A set of methods that controllers and UI elements can implement to manage editing.
 - [protocol NSEditorRegistration](nseditorregistration.md)
   A set of methods that controllers can implement to enable an editor view to inform the controller when it has uncommitted changes.
 - [protocol NSInputServiceProvider](nsinputserviceprovider.md)
@@ -78,7 +76,7 @@ Review symbols that are no longer supported, and find the replacements to use in
   These constants specify how a cell formats numeric data.
 - [Anonymous](nsbuttontypes-anonymous.md)
 - [Additional Writing Directions](additional-writing-directions.md)
-  Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with `NSAttributedString/Key/writingDirection`.
+  Constants that specify additional options when setting the writing direction of attributed strings.
 - [Return values for modal operations](return-values-for-modal-operations.md)
   Historical return values for [`runModal(for:)`](nsapplication/runmodal(for:).md) and [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md).
 - [Tags of Views in the FontPanel](tags-of-views-in-the-fontpanel.md)

@@ -145,9 +145,6 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
-### Structures
-- [struct GlassProminentButtonStyle](glassprominentbuttonstyle.md)
-  A button style that applies prominent glass border artwork based on the button’s context.
 
 
 ---

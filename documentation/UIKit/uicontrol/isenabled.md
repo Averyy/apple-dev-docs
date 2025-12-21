@@ -21,9 +21,9 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to enable the control or [`false`](https://developer.apple.com/documentation/swift/false) to disable it. An enabled control is capable of responding to user interactions, whereas a disabled control ignores touch events and may draw itself differently. Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) adds the [`disabled`](uicontrol/state-swift.struct/disabled.md) flag to the control’s [`state`](uicontrol/state-swift.property.md) bitmask; enabling the control again removes that flag.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to enable the control or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it. An enabled control is capable of responding to user interactions, whereas a disabled control ignores touch events and may draw itself differently. Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) adds the [`disabled`](uicontrol/state-swift.struct/disabled.md) flag to the control’s [`state`](uicontrol/state-swift.property.md) bitmask; enabling the control again removes that flag.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for a newly created control. You can set a control’s initial enabled state in your storyboard file.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) for a newly created control. You can set a control’s initial enabled state in your storyboard file.
 
 ## See Also
 

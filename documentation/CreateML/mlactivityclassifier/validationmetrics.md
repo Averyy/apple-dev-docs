@@ -16,8 +16,12 @@ var validationMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+  Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 - [var trainingMetrics: MLClassifierMetrics](mlactivityclassifier/trainingmetrics.md)
   Measurements of the activity classifier’s performance on the training dataset.
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+  Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 
 
 ---

@@ -11,7 +11,8 @@ A language ID indicating the selected language.
 ## Declaration
 
 ```swift
-attribute string language;
+get language(): string;
+set language(language: string);
 ```
 
 ## Mentions

@@ -22,7 +22,7 @@ enum MLFeatureType
 
 ## Topics
 
-### Enumeration Cases
+### Feature types
 - [MLFeatureType.int64](mlfeaturetype/int64.md)
   The type for integer features and feature values.
 - [MLFeatureType.double](mlfeaturetype/double.md)
@@ -37,11 +37,11 @@ enum MLFeatureType
   The type for dictionary features and feature values.
 - [MLFeatureType.sequence](mlfeaturetype/sequence.md)
   The type for sequence features and feature values.
-- [MLFeatureType.invalid](mlfeaturetype/invalid.md)
-  The type for invalid feature values.
 - [MLFeatureType.state](mlfeaturetype/state.md)
   MLState. Represents a model state that may be updated in each inference.
-### Initializers
+- [MLFeatureType.invalid](mlfeaturetype/invalid.md)
+  The type for invalid feature values.
+### Creating a feature type
 - [init?(rawValue: Int)](mlfeaturetype/init(rawvalue:).md)
 
 ## Relationships

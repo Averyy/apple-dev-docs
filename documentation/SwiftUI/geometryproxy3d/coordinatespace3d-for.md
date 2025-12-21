@@ -6,7 +6,7 @@
 Returns a value that can be used for `CoordinateSpace3D` based coordinate conversions.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

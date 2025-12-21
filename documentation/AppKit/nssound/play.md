@@ -16,7 +16,7 @@ func play() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when playback is initiated, [`false`](https://developer.apple.com/documentation/swift/false) when playback is already in progress or when an error occurred.
+[`true`](https://developer.apple.com/documentation/Swift/true) when playback is initiated, [`false`](https://developer.apple.com/documentation/Swift/false) when playback is already in progress or when an error occurred.
 
 #### Discussion
 

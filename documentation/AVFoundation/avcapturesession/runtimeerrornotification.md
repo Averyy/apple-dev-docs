@@ -25,7 +25,7 @@ Retrieve the underlying error from the notification’s user information diction
 
 ## Topics
 
-### User Info Keys
+### User info keys
 - [let AVCaptureSessionErrorKey: String](avcapturesessionerrorkey.md)
   Key to retrieve the error object from a [`runtimeErrorNotification`](avcapturesession/runtimeerrornotification.md) user info dictionary.
 

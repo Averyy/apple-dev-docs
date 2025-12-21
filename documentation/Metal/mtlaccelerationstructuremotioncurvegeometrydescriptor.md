@@ -19,7 +19,7 @@ class MTLAccelerationStructureMotionCurveGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
@@ -66,7 +66,7 @@ class MTLAccelerationStructureMotionCurveGeometryDescriptor
 - [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
 - [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
-  Geometry data for a specific keyframe to use in a moving object.
+  Geometry data for a specific keyframe to use in a moving instance.
 
 
 ---

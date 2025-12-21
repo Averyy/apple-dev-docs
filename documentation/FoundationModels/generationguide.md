@@ -6,17 +6,21 @@
 Guides that control how values are generated.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 struct GenerationGuide<Value>
 ```
+
+## Mentions
+
+- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
 
 ## Topics
 
@@ -48,18 +52,12 @@ struct GenerationGuide<Value>
 - [static func maximumCount<Element>(Int) -> GenerationGuide<[Element]>](generationguide/maximumcount(_:).md)
   Enforces a maximum number of elements in the array.
 
-## Relationships
-
-### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-
 ## See Also
 
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a generable type.
+  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
 - [macro Guide(description:_:)](guide(description:_:).md)
-  Allows for influencing the allowed values of properties of a generable type.
+  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
 
 
 ---

@@ -4,13 +4,13 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ class AVMetricMediaRendition
 
 ## Topics
 
-### Instance Properties
+### Inspecting the rendition
 - [var stableID: String?](avmetricmediarendition/stableid.md)
 - [var url: URL?](avmetricmediarendition/url.md)
 
@@ -39,6 +39,21 @@ class AVMetricMediaRendition
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class AVMetricMediaResourceRequestEvent](avmetricmediaresourcerequestevent.md)
+  An event that represents a media resource request.
+- [class AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+  An event that represents a live streaming content key resource request.
+- [class AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
+  An event that represents a live streaming media segment resource request.
+- [class AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
+  An event that represents a live streaming playlist resource request.
+- [class AVMetricPlayerItemVariantSwitchStartEvent](avmetricplayeritemvariantswitchstartevent.md)
+  An event that represents when the player attempts a variant switch.
+- [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
+  An event that represents when the player completes a variant switch.
 
 
 ---

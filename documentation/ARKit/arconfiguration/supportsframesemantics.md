@@ -22,7 +22,7 @@ A boolean value that indicates whether the device supports the argument frame se
 
 #### Discussion
 
-Call this function before attempting to enable a frame semantic on your app’s configuration. For example, if you call `supportsFrameSemantic(.sceneDepth)` on [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md), the function returns [`true`](https://developer.apple.com/documentation/swift/true) on devices that support the LiDAR scanner’s depth buffer.
+Call this function before attempting to enable a frame semantic on your app’s configuration. For example, if you call `supportsFrameSemantic(.sceneDepth)` on [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md), the function returns [`true`](https://developer.apple.com/documentation/Swift/true) on devices that support the LiDAR scanner’s depth buffer.
 
 > ⚠️ **Warning**:  Do not call this function on the superclass, [`ARConfiguration`](arconfiguration.md). Only configuration subclasses support frame semantics, such as those listed in `Choose your session's configuration`.
 

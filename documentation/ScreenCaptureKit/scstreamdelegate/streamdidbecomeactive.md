@@ -15,7 +15,9 @@ optional func streamDidBecomeActive(_ stream: SCStream)
 
 #### Discussion
 
-Notifies the delegate the first time any window that was being shared in the stream is re-opened after all the windows being shared are closed.  When all the windows being shared are closed, the client will receive streamDidBecomeInactive:.
+streamDidBecomeActive:
+
+notifies the delegate the first time any window that was being shared in the stream is re-opened after all the windows being shared are closed.  When all the windows being shared are closed, the client will receive streamDidBecomeInactive:.
 
 ## Parameters
 

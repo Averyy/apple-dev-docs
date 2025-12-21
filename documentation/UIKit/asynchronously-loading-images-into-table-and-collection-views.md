@@ -12,13 +12,13 @@ Store and fetch images asynchronously to make your app more responsive.
 
 #### Overview
 
-Caching images can help you make the table and collection views in your app instantiate fast and respond quickly to scrolling. The app in the sample project demonstrates fetching images with URLs. The images are not part the assets catalog and instead are a part of the app bundle to simulate loading each asynchronously by URL. This ensures the user interface remains responsive. This project also supports Mac Catalyst.
+Caching images can help you make the table and collection views in your app instantiate fast and respond quickly to scrolling. The app in the sample project demonstrates fetching images with URLs. The images are not part of the assets catalog and instead are a part of the app bundle to simulate loading each asynchronously by URL. This ensures the user interface remains responsive. This project also supports Mac Catalyst.
 
 ##### Handle Image Loading and Caching
 
 In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) and caching the downloaded images using [`NSCache`](https://developer.apple.com/documentation/Foundation/NSCache). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
 
-As the user scrolls in a view, the app requests the same image repeatedly. This sample holds onto the relevant completion blocks until the image loads, then passes the image to all of the requesting blocks so the API only has to make one call to fetch an image for a given URL. The following code shows how the sample project consructs a basic caching and loading method:
+As the user scrolls in a view, the app requests the same image repeatedly. This sample holds onto the relevant completion blocks until the image loads, then passes the image to all of the requesting blocks so the API only has to make one call to fetch an image for a given URL. The following code shows how the sample project constructs a basic caching and loading method:
 
 ```swift
 // Returns the cached image if available, otherwise asynchronously loads and caches it.
@@ -66,7 +66,7 @@ An app that loads all of its data on launch risks running out of memory or termi
 
 > **Note**: To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See [`Prefetching collection view data`](prefetching-collection-view-data.md) for best practices of prefetching data.
 
-Generally the app should wait until the data source requests a cell to fetch and set an image. The sample project demonstrates one approach to fetching and displaying an image on a reusable view :
+Generally the app should wait until the data source requests a cell to fetch and set an image. The sample project demonstrates one approach to fetching and displaying an image on a reusable view:
 
 ```swift
 var content = cell.defaultContentConfiguration()

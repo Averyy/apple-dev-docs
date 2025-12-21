@@ -18,7 +18,7 @@ var isFullscreen: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Changing the value of this property causes the movie player to enter or exit full-screen mode immediately. If you want to animate the transition to full-screen mode, use the [`setFullscreen(_:animated:)`](mpmovieplayercontroller/setfullscreen(_:animated:).md) method instead.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Changing the value of this property causes the movie player to enter or exit full-screen mode immediately. If you want to animate the transition to full-screen mode, use the [`setFullscreen(_:animated:)`](mpmovieplayercontroller/setfullscreen(_:animated:).md) method instead.
 
 Whenever the movie player enters or exits full-screen mode, it posts appropriate notifications to reflect the change. For example, upon entering full-screen mode, it posts [`MPMoviePlayerWillEnterFullscreenNotification`](mpmovieplayerwillenterfullscreennotification.md) and [`MPMoviePlayerDidEnterFullscreenNotification`](mpmovieplayerdidenterfullscreennotification.md) notifications. Upon exiting from full-screen mode, it posts [`MPMoviePlayerWillExitFullscreenNotification`](mpmovieplayerwillexitfullscreennotification.md) and [`MPMoviePlayerDidExitFullscreenNotification`](mpmovieplayerdidexitfullscreennotification.md) notifications.
 

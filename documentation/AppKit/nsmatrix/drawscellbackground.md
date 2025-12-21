@@ -17,7 +17,7 @@ var drawsCellBackground: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix draws the cell background.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the matrix draws the cell background.
 
 ## See Also
 

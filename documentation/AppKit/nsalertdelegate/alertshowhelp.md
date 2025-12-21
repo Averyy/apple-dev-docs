@@ -17,7 +17,7 @@ optional func alertShowHelp(_ alert: NSAlert) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the delegate displayed help directly, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. When [`false`](https://developer.apple.com/documentation/swift/false) and the alert has a help anchor ([`helpAnchor`](nsalert/helpanchor.md)), the application’s help manager displays help using the help anchor.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the delegate displayed help directly, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. When [`false`](https://developer.apple.com/documentation/Swift/false) and the alert has a help anchor ([`helpAnchor`](nsalert/helpanchor.md)), the application’s help manager displays help using the help anchor.
 
 #### Discussion
 

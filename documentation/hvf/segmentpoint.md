@@ -25,18 +25,6 @@ enum SegmentPoint
 ### Enumeration Cases
 - [SegmentPoint.off](segmentpoint/off.md)
 - [SegmentPoint.on](segmentpoint/on.md)
-### Initializers
-- [init?(rawValue: Int)](segmentpoint/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](segmentpoint/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [SegmentPoint.RawValue](segmentpoint/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](segmentpoint/equatable-implementations.md)
-- [RawRepresentable Implementations](segmentpoint/rawrepresentable-implementations.md)
 
 ## Relationships
 

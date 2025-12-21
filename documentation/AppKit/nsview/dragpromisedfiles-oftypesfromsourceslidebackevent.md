@@ -17,7 +17,7 @@ func dragPromisedFiles(ofTypes typeArray: [String], from rect: NSRect, source so
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag operation is initiated successfully, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drag operation is initiated successfully, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
@@ -48,7 +48,7 @@ See [`Drag and Drop Programming Topics`](https://developer.apple.comhttps://deve
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
 - [func unlockFocus()](nsview/unlockfocus.md)

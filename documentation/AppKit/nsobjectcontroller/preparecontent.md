@@ -16,7 +16,7 @@ func prepareContent()
 
 #### Discussion
 
-Subclasses that implement this method are responsible for creating the new content object and setting it as the receiver’s content object. This method is only called if [`automaticallyPreparesContent`](nsobjectcontroller/automaticallypreparescontent.md) has been set to [`true`](https://developer.apple.com/documentation/swift/true).
+Subclasses that implement this method are responsible for creating the new content object and setting it as the receiver’s content object. This method is only called if [`automaticallyPreparesContent`](nsobjectcontroller/automaticallypreparescontent.md) has been set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

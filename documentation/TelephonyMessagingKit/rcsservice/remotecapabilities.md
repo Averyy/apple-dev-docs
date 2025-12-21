@@ -6,8 +6,8 @@
 Structure representing the capabilities of a remote handle.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -40,16 +40,6 @@ struct RemoteCapabilities
 ### Determining capability validity
 - [let validUntil: Date?](rcsservice/remotecapabilities/validuntil.md)
   Expiration date for the contained capabilities.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/remotecapabilities/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/remotecapabilities/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing remote capabilities
-- [static func == (RCSService.RemoteCapabilities, RCSService.RemoteCapabilities) -> Bool](rcsservice/remotecapabilities/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/remotecapabilities/equatable-implementations.md)
 
 ## Relationships
 

@@ -255,6 +255,7 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   Extract an attributed string from SwiftUI’s transferable representation in a certain environment.
 ### Instance Methods
 - [func inflected(locale: Locale, userTermOfAddress: TermOfAddress?, inflectionConcepts: [InflectionConcept]) -> AttributedString](attributedstring/inflected(locale:usertermofaddress:inflectionconcepts:).md)
+  Process automatic grammar agreement and formatting attributes.
 - [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](attributedstring/rangeofaudiotimerangeattributes(intersecting:).md)
   Returns the range of indices of the receiver that are part of given time range.
 - [func removeSubranges(RangeSet<AttributedString.Index>)](attributedstring/removesubranges(_:).md)
@@ -294,7 +295,6 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   The writing direction of a piece of text.
 ### Default Implementations
 - [AttributedStringProtocol Implementations](attributedstring/attributedstringprotocol-implementations.md)
-- [Transferable Implementations](attributedstring/transferable-implementations.md)
 
 ## Relationships
 

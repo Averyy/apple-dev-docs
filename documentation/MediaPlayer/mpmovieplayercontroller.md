@@ -22,7 +22,7 @@ class MPMoviePlayerController
 
 Playback occurs in a view owned by the movie player and takes place either fullscreen or inline. You can incorporate a movie player’s view into a view hierarchy owned by your app, or use an MPMoviePlayerViewController object to manage the presentation for you.
 
-Movie players support wireless movie playback to AirPlay-enabled hardware such as Apple TV. AirPlay playback is enabled by default. To disable AirPlay in your app, set the [`allowsAirPlay`](mpmovieplayercontroller/allowsairplay.md) property to [`false`](https://developer.apple.com/documentation/swift/false). In iOS 8.0 and later, users access AirPlay compatible hardware through the Control Panel; no AirPlay control is displayed by the movie player.
+Movie players support wireless movie playback to AirPlay-enabled hardware such as Apple TV. AirPlay playback is enabled by default. To disable AirPlay in your app, set the [`allowsAirPlay`](mpmovieplayercontroller/allowsairplay.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). In iOS 8.0 and later, users access AirPlay compatible hardware through the Control Panel; no AirPlay control is displayed by the movie player.
 
 When you add a movie player’s view to your app’s view hierarchy, be sure to size the frame correctly, as shown here:
 

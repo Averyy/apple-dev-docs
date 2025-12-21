@@ -3,12 +3,14 @@
 **Framework**: Swift Charts  
 **Kind**: method
 
+Set the rotation of a 3D symbol.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,6 +18,10 @@
 nonisolated
 func symbolRotation(_ rotation: Rotation3D) -> some Chart3DContent
 ```
+
+## Parameters
+
+- `rotation`: The symbol’s rotation.
 
 
 ---

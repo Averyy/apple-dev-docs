@@ -16,7 +16,7 @@ func write(toFile path: String?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) upon success and [`false`](https://developer.apple.com/documentation/swift/false) if the method fails to write the file.
+[`true`](https://developer.apple.com/documentation/Swift/true) upon success and [`false`](https://developer.apple.com/documentation/Swift/false) if the method fails to write the file.
 
 ## Parameters
 

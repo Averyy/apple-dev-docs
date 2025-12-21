@@ -62,12 +62,8 @@ Typically, `maxEnt` is the fastest training algorithm. If the text classifier’
 
 ## See Also
 
-- [init(validation: MLTextClassifier.ModelParameters.ValidationData, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validation:algorithm:language:).md)
-  Creates model parameters for a text classifier with the specified validation data, algorithm, and language.
-- [struct NLLanguage](../NaturalLanguage/NLLanguage.md)
-  The languages that the Natural Language framework supports.
-- [MLTextClassifier.ModelParameters.ValidationData](mltextclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
-  The validation data that a text classifier uses.
+- [MLTextClassifier.FeatureExtractorType](mltextclassifier/featureextractortype.md)
+  The text feature extractor type.
 
 
 ---

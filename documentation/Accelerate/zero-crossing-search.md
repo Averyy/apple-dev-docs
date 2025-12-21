@@ -11,10 +11,6 @@ Count and find the zero crossings in a vector.
   Returns the number of zero crossings in a double-precision vector.
 - [static func countZeroCrossings<U>(U) -> UInt](vdsp/countzerocrossings(_:)-3btsl.md)
   Returns the number of zero crossings in a single-precision vector.
-- [vDSP_nzcros](vdsp_nzcros.md)
-  Counts and finds the zero crossings in a single-precision vector.
-- [vDSP_nzcrosD](vdsp_nzcrosd.md)
-  Counts and finds the zero crossings in a double-precision vector.
 
 ## See Also
 

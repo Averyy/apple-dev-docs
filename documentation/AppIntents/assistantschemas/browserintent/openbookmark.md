@@ -25,7 +25,7 @@ var openBookmark: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.browser.openBookmark` schema:
 
 ```swift
-@AssistantIntent(schema: .browser.openBookmark)
+@AppIntent(schema: .browser.openBookmark)
 struct OpenBookmarkIntent: OpenIntent {
     @Parameter
     var tab: TabEntity?

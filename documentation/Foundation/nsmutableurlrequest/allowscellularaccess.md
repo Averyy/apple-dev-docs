@@ -22,7 +22,7 @@ var allowsCellularAccess: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) (the default) makes the request eligible to run over cellular, subject to other considerations (including, but not limited to, the [`allowsCellularAccess`](urlsessionconfiguration/allowscellularaccess.md) property of the [`URLSessionConfiguration`](urlsessionconfiguration.md)). Setting this value to [`false`](https://developer.apple.com/documentation/swift/false) ensures that the request will never run over cellular.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) (the default) makes the request eligible to run over cellular, subject to other considerations (including, but not limited to, the [`allowsCellularAccess`](urlsessionconfiguration/allowscellularaccess.md) property of the [`URLSessionConfiguration`](urlsessionconfiguration.md)). Setting this value to [`false`](https://developer.apple.com/documentation/Swift/false) ensures that the request will never run over cellular.
 
 ## See Also
 

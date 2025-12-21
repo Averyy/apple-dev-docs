@@ -36,10 +36,8 @@ Once you configure an [`MLImageClassifier.ModelParameters`](mlimageclassifier/mo
   Creates model training parameters.
 - [init(featureExtractor: MLImageClassifier.FeatureExtractorType, validation: MLImageClassifier.ModelParameters.ValidationData, maxIterations: Int, augmentationOptions: MLImageClassifier.ImageAugmentationOptions)](mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validation:maxiterations:augmentationoptions:).md)
   Creates a new set of training parameters for an image classifier with a validation dataset.
-- [init(featureExtractor: MLImageClassifier.FeatureExtractorType, validationData: MLImageClassifier.DataSource, maxIterations: Int, augmentationOptions: MLImageClassifier.ImageAugmentationOptions)](mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:)-42gf1.md)
+- [init(featureExtractor:validationData:maxIterations:augmentationOptions:)](mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:).md)
   Creates a new set of image classifier parameters with validation data represented by a data source.
-- [init(featureExtractor: MLImageClassifier.FeatureExtractorType, validationData: [String : [URL]]?, maxIterations: Int, augmentationOptions: MLImageClassifier.ImageAugmentationOptions)](mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:)-5we70.md)
-  Creates a new set of image classifier parameters with validation data represented by a dictionary.
 - [MLImageClassifier.ModelParameters.ClassifierType](mlimageclassifier/modelparameters-swift.struct/classifiertype.md)
   Type of classifier to be used.
 - [MLImageClassifier.ModelParameters.ModelAlgorithmType](mlimageclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
@@ -86,14 +84,14 @@ Once you configure an [`MLImageClassifier.ModelParameters`](mlimageclassifier/mo
 
 ## See Also
 
-- [static func train(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLActionClassifier>](mlactionclassifier/train(trainingdata:parameters:sessionparameters:).md)
-  Begins an asynchronous action classifier training session.
-- [init(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters) throws](mlimageclassifier/init(trainingdata:parameters:)-4r6hr.md)
-  Creates an image classifier with a training dataset represented by a data source.
-- [init(trainingData: [String : [URL]], parameters: MLImageClassifier.ModelParameters) throws](mlimageclassifier/init(trainingdata:parameters:)-7j4w6.md)
-  Creates an image classifier with a training dataset represented by a dictionary.
 - [MLImageClassifier.DataSource](mlimageclassifier/datasource.md)
   A data source for an image classifier.
+- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+  The underlying base model that extracts image features for image classifier training session.
+- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+  A custom feature extractor a training session uses to train an image classifier.
+- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+  The variations that the training process can use to generate more training data from the training data you provide.
 
 
 ---

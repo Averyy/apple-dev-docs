@@ -27,7 +27,7 @@ The specified attachment, if it exists.
 ## Parameters
 
 - `buffer`: The buffer whose attachment you want to retrieve.
-- `key`: A string that identifies the attachment, which can be of any  doc://com.apple.documentation/documentation/corefoundation/cftype . See   and   for predefined values.
+- `key`: A string that identifies the attachment, which can be of any  . See   and   for predefined values.
 - `attachmentMode`: On output, this value points to the mode of the attachment. See   for possible values. This value is   if the buffer doesn’t define an attachment mode.
 
 ## See Also

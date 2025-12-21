@@ -20,9 +20,6 @@ enum Duration
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Duration, IntentParameter<Value>.Duration) -> Bool](intentparameter/duration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Duration.hours](intentparameter/duration/hours.md)
 - [IntentParameter.Duration.microseconds](intentparameter/duration/microseconds.md)
@@ -31,15 +28,6 @@ enum Duration
 - [IntentParameter.Duration.nanoseconds](intentparameter/duration/nanoseconds.md)
 - [IntentParameter.Duration.picoseconds](intentparameter/duration/picoseconds.md)
 - [IntentParameter.Duration.seconds](intentparameter/duration/seconds.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/duration/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/duration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/duration/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/duration/equatable-implementations.md)
 
 ## Relationships
 

@@ -19,13 +19,13 @@ func shouldAutomaticallyForwardRotationMethods() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if rotation methods are forwarded or [`false`](https://developer.apple.com/documentation/swift/false) if they are not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if rotation methods are forwarded or [`false`](https://developer.apple.com/documentation/Swift/false) if they are not.
 
 #### Discussion
 
 This method is called to determine whether to automatically forward rotation-related containment callbacks to child view controllers.
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true). Subclasses of the [`UIViewController`](uiviewcontroller.md) class that implement containment logic may override this method to control how these methods are forwarded. If you override this method and return [`false`](https://developer.apple.com/documentation/swift/false), you are responsible for forwarding the following methods to child view controllers at the appropriate times:
+The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true). Subclasses of the [`UIViewController`](uiviewcontroller.md) class that implement containment logic may override this method to control how these methods are forwarded. If you override this method and return [`false`](https://developer.apple.com/documentation/Swift/false), you are responsible for forwarding the following methods to child view controllers at the appropriate times:
 
 - [`willRotate(to:duration:)`](uiviewcontroller/willrotate(to:duration:).md)
 - [`willAnimateRotation(to:duration:)`](uiviewcontroller/willanimaterotation(to:duration:).md)

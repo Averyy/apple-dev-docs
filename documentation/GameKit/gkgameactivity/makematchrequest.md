@@ -3,15 +3,15 @@
 **Framework**: GameKit  
 **Kind**: method
 
-Makes a `GKMatchRequest` object with information from the activity, which can be used to find matches for the local player.
+Makes a match request object with information from the activity, which you can use to find matches for the local player.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

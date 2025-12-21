@@ -30,11 +30,6 @@ struct PreprocessingTabularEstimator<Preprocessor, Estimator> where Preprocessor
   The estimator.
 - [var preprocessor: Preprocessor](preprocessingtabularestimator/preprocessor.md)
   The preprocessing transformer.
-### Encoding and decoding
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingtabularestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
-- [func encode(PreprocessingTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingtabularestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
 ### Preprocesing and fitting
 - [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](preprocessingtabularestimator/preprocessed(from:eventhandler:).md)
   Preprocesses a data frame of examples.
@@ -48,10 +43,8 @@ struct PreprocessingTabularEstimator<Preprocessor, Estimator> where Preprocessor
   The intermediate type.
 - [PreprocessingTabularEstimator.Output](preprocessingtabularestimator/output.md)
   The output type.
-- [PreprocessingTabularEstimator.Transformer](preprocessingtabularestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [TabularEstimator Implementations](preprocessingtabularestimator/tabularestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

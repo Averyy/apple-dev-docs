@@ -2,7 +2,11 @@
 
 **Framework**: App Store Server API
 
-Objects and data types for transaction that use the Advanced Commerce API.
+Objects and data types for transactions that use the Advanced Commerce API.
+
+#### Overview
+
+For more information about [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI), see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
 
 ## Topics
 
@@ -16,6 +20,9 @@ Objects and data types for transaction that use the Advanced Commerce API.
 - [type advancedCommercePeriod](advancedcommerceperiod.md)
 - [type advancedCommercePeriodCount](advancedcommerceperiodcount.md)
 - [type advancedCommercePrice](advancedcommerceprice.md)
+- [type advancedCommercePriceIncreaseInfoDependentSKU](advancedcommercepriceincreaseinfodependentsku.md)
+- [type advancedCommercePriceIncreaseInfoPrice](advancedcommercepriceincreaseinfoprice.md)
+- [type advancedCommercePriceIncreaseInfoStatus](advancedcommercepriceincreaseinfostatus.md)
 - [type advancedCommerceReason](advancedcommercereason.md)
 - [type advancedCommerceRefundAmount](advancedcommercerefundamount.md)
 - [type advancedCommerceRefundDate](advancedcommercerefunddate.md)
@@ -32,6 +39,7 @@ Objects and data types for transaction that use the Advanced Commerce API.
 ### Objects
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)
 - [object advancedCommerceOffer](advancedcommerceoffer.md)
+- [object advancedCommercePriceIncreaseInfo](advancedcommercepriceincreaseinfo.md)
 - [object advancedCommerceRefund](advancedcommercerefund.md)
 - [object advancedCommerceRenewalInfo](advancedcommercerenewalinfo.md)
 - [object advancedCommerceRenewalItem](advancedcommercerenewalitem.md)

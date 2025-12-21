@@ -24,19 +24,19 @@ Use instances of this class as input sources for [`AVCaptureSession`](avcaptures
 
 ## Topics
 
-### Initializing a Capture Screen Input
+### Initializing a capture screen input
 - [init?(displayID: CGDirectDisplayID)](avcapturescreeninput/init(displayid:).md)
   Initializes a capture screen input that provides media data from the specified display.
 - [init()](avcapturescreeninput/init.md)
   Initializes a capture screen input that provides media data from the main screen.
-### Setting Video Capture Options
+### Setting video capture options
 - [var minFrameDuration: CMTime](avcapturescreeninput/minframeduration.md)
   The screen input’s minimum frame duration.
 - [var cropRect: CGRect](avcapturescreeninput/croprect.md)
   Indicates the bounding rectangle of the screen area to be captured, in pixels.
 - [var scaleFactor: CGFloat](avcapturescreeninput/scalefactor.md)
   Indicates the factor by which video buffers captured from the screen are to be scaled.
-### Capturing Mouse Activity
+### Capturing mouse activity
 - [var capturesCursor: Bool](avcapturescreeninput/capturescursor.md)
   A Boolean value that specifies whether the mouse cursor appears in the captured output.
 - [var capturesMouseClicks: Bool](avcapturescreeninput/capturesmouseclicks.md)

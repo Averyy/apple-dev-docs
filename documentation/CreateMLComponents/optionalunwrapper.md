@@ -28,13 +28,6 @@ struct OptionalUnwrapper<Element>
 ### Performing the transformation
 - [func applied(to: Element?, eventHandler: EventHandler?) throws -> Element](optionalunwrapper/applied(to:eventhandler:).md)
   Unwraps an optional element or throws if the value is `nil`.
-### Type Aliases
-- [OptionalUnwrapper.Input](optionalunwrapper/input.md)
-  The input type.
-- [OptionalUnwrapper.Output](optionalunwrapper/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](optionalunwrapper/transformer-implementations.md)
 
 ## Relationships
 

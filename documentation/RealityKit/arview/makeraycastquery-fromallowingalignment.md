@@ -9,8 +9,6 @@ Creates a ray-cast query originating from a point in the view, centered on the c
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -16,20 +16,14 @@ Offer Live Activities, controls, animate data updates, and add interactivity to 
 
 ## See Also
 
+- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [WidgetKit updates](../Updates/WidgetKit.md)
+  Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
-  Offer widgets in additional contexts by adding support for various widget sizes.
-- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
-  Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [@MainActor @preconcurrency protocol Widget](../SwiftUI/Widget.md)
-  The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [@MainActor @preconcurrency protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
   A container used to expose multiple widgets from a single widget extension.
-- [struct StaticConfiguration](staticconfiguration.md)
-  An object describing the content of a widget that has no user-configurable options.
-- [enum WidgetFamily](widgetfamily.md)
-  Values that define the widget’s size and shape.
 
 
 ---

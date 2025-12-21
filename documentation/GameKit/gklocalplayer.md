@@ -23,8 +23,8 @@ class GKLocalPlayer
 ## Mentions
 
 - [Authenticating a player](authenticating-a-player.md)
-- [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
 - [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
+- [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
 #### Overview
 
@@ -65,7 +65,7 @@ After the local player signs in, their account data and GameKit features are ava
 - [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gklocalplayer/loadfriends(identifiedby:completionhandler:).md)
   Loads the player’s friends list, scoped by the identifiers, if the player and their friends grant access.
 - [NSGKFriendListUsageDescription](../BundleResources/Information-Property-List/NSGKFriendListUsageDescription.md)
-  A message that tells the user why the app needs access to their Game Center friends list.
+  A message that tells people why the app needs access to their Game Center friends list.
 - [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadchallengablefriends(completionhandler:).md)
   Loads players to whom the local player can issue a challenge.
 - [func loadRecentPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadrecentplayers(completionhandler:).md)
@@ -120,6 +120,7 @@ After the local player signs in, their account data and GameKit features are ava
 - [Equatable](../Swift/Equatable.md)
 - [GKSavedGameListener](gksavedgamelistener.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also

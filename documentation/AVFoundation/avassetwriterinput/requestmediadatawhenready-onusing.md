@@ -21,7 +21,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 
 #### Discussion
 
-Use this method when working with pull-style buffer sources, such as an [`AVAssetReaderOutput`](avassetreaderoutput.md). The callback you provide appends media data to the input until its [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property becomes [`false`](https://developer.apple.com/documentation/swift/false), or when there’s no more media data to process (at which point you may mark the input as finished by calling its [`markAsFinished()`](avassetwriterinput/markasfinished().md) method). If you don’t mark the input as finished, after the input processes the media data and becomes ready for more, it invokes the callback again to append more data. The example below shows a typical callback implementation.
+Use this method when working with pull-style buffer sources, such as an [`AVAssetReaderOutput`](avassetreaderoutput.md). The callback you provide appends media data to the input until its [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property becomes [`false`](https://developer.apple.com/documentation/Swift/false), or when there’s no more media data to process (at which point you may mark the input as finished by calling its [`markAsFinished()`](avassetwriterinput/markasfinished().md) method). If you don’t mark the input as finished, after the input processes the media data and becomes ready for more, it invokes the callback again to append more data. The example below shows a typical callback implementation.
 
 ```swift
 let serialQueue = DispatchQueue(label: "RequestMedia")
@@ -58,6 +58,16 @@ When working with push-style sources, such as an [`AVCaptureAudioDataOutput`](av
   Appends a sample buffer to an input to write to the output file.
 - [func markAsFinished()](avassetwriterinput/markasfinished.md)
   Marks the input as finished to indicate that you’re done appending samples to it.
+- [AVAssetWriterInput.SampleBufferReceiver](avassetwriterinput/samplebufferreceiver.md)
+  Provides an interface for writing sample buffers to an input.
+- [AVAssetWriterInput.PixelBufferReceiver](avassetwriterinput/pixelbufferreceiver.md)
+  Provides an interface for writing pixel buffers to an input.
+- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriterinput/taggedpixelbuffergroupreceiver.md)
+  Provides an interface for writing tagged pixel buffers to an input.
+- [AVAssetWriterInput.MetadataReceiver](avassetwriterinput/metadatareceiver.md)
+  Provides an interface for writing timed metadata groups to an input.
+- [AVAssetWriterInput.CaptionReceiver](avassetwriterinput/captionreceiver.md)
+  Provides an interface for writing caption data to an input.
 
 
 ---

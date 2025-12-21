@@ -26,12 +26,12 @@ Key-value observe the capture device’s [`systemPressureState`](avcapturedevice
 
 ## Topics
 
-### Overall Level
+### Overall level
 - [var level: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.property.md)
   The overall level of performance constraints on the capture system.
 - [AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct.md)
   A structure that defines system pressure state levels.
-### Contributing Factors
+### Contributing factors
 - [var factors: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.property.md)
   The set of underlying causes for the system pressure level.
 - [AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct.md)

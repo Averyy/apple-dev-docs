@@ -20,7 +20,7 @@ class func version() -> String?
 
 #### Discussion
 
-Use this method to determine the algorithm used by the movement disorder manager. If the current device supports gathering movement disorder data, this method returns a string with the version number in `<major>.<minor>.<fix>` format. It returns `nil` anytime [`isAvailable()`](cmmovementdisordermanager/isavailable().md) returns [`false`](https://developer.apple.com/documentation/swift/false). For information about the current version, see [`Movement disorder algorithm changelog`](movement-disorder-algorithm-changelog.md).
+Use this method to determine the algorithm used by the movement disorder manager. If the current device supports gathering movement disorder data, this method returns a string with the version number in `<major>.<minor>.<fix>` format. It returns `nil` anytime [`isAvailable()`](cmmovementdisordermanager/isavailable().md) returns [`false`](https://developer.apple.com/documentation/Swift/false). For information about the current version, see [`Movement disorder algorithm changelog`](movement-disorder-algorithm-changelog.md).
 
 > ❗ **Important**:  Your app uses the version of the algorithm provided by the current operating system running on the device. This means the algorithm your app uses might change, without requiring you to rebuild and resubmit your app.
 

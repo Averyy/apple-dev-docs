@@ -103,7 +103,7 @@ As the app’s videos are brief, and a person’s interactions with them are sho
 
 ## See Also
 
-- [Bringing multiple windows to your SwiftUI app](bringing_multiple_windows_to_your_swiftui_app.md)
+- [Bringing multiple windows to your SwiftUI app](bringing-multiple-windows-to-your-swiftui-app.md)
   Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 
 

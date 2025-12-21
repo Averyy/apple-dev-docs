@@ -82,8 +82,6 @@ let formatted = meetNow.formatted(.iso8601
 - [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timezoneseparator(_:).md)
   Modifies the ISO 8601 date format style to use the specified time zone separator.
 ### Comparing ISO 8601 Format Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Types
@@ -99,6 +97,7 @@ let formatted = meetNow.formatted(.iso8601
 - [init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator, timeSeparator: Date.ISO8601FormatStyle.TimeSeparator, timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator, includingFractionalSeconds: Bool, timeZone: TimeZone)](date/iso8601formatstyle/init(dateseparator:datetimeseparator:timeseparator:timezoneseparator:includingfractionalseconds:timezone:).md)
 ### Instance Properties
 - [var includingFractionalSeconds: Bool](date/iso8601formatstyle/includingfractionalseconds.md)
+  If set, the style includes fractional seconds when formatting. Before Swift 6.2, if true when parsing, fractional seconds must be present. If false when parsing, fractional seconds must not be present. After Swift 6.2, fractional seconds may be present in the String regardless of the setting of this property.
 - [var timeSeparator: Date.ISO8601FormatStyle.TimeSeparator](date/iso8601formatstyle/timeseparator-swift.property.md)
 - [var timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator](date/iso8601formatstyle/timezoneseparator-swift.property.md)
 

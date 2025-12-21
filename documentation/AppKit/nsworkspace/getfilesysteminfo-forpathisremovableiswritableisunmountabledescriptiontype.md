@@ -16,7 +16,7 @@ func getFileSystemInfo(forPath fullPath: String, isRemovable removableFlag: Unsa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the information was returned; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the information was returned; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

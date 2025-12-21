@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a device to run a single app.
+The payload that configures a device to run a single app.
 
 **Availability**:
 - iOS 6.0+
@@ -20,7 +20,7 @@ object AppLock
 
 Specify `com.apple.app.lock` as the payload type.
 
-With an app lock profile, the device locks to the specified app until removal of the profile. The home button is in a disabled state, and the device returns to the app automatically upon wake or restart.
+With an app lock profile, the device locks to the specified app until removal of the profile. The device returns to the app automatically upon wake or restart.
 
 Only use an app lock payload after installing the target app.
 
@@ -84,11 +84,11 @@ Only use an app lock payload after installing the target app.
 ## See Also
 
 - [object AssociatedDomains](associateddomains.md)
-  The payload you use to configure associated domains.
+  The payload that configures associated domains.
 - [object AutonomousSingleAppMode](autonomoussingleappmode.md)
-  The payload you use to configure Autonomous Single App mode.
+  The payload that configures Autonomous Single App mode.
 - [object NSExtensionManagement](nsextensionmanagement.md)
-  The payload you use to configure the extensions that the system allows or disallows to run on the device.
+  The payload that configures the extensions that the system allows or disallows to run on the device.
 
 
 ---

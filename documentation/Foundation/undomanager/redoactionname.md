@@ -31,6 +31,10 @@ For example, if the menu title is “Redo Delete,” the string returned is “D
 
 - [var undoActionName: String](undomanager/undoactionname.md)
   The name identifying the undo action.
+- [func setActionName(LocalizedStringResource?)](undomanager/setactionname(_:)-cci9.md)
+  Sets the name of the action associated with the Undo or Redo command using a localized string resource.
+- [func setActionName(String)](undomanager/setactionname(_:)-8lzip.md)
+  Sets the name of the action associated with the Undo or Redo command.
 
 
 ---

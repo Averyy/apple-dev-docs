@@ -22,7 +22,7 @@ func setFragmentBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 
 #### Discussion
 
-If you created the indirect command buffer with [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](https://developer.apple.com/documentation/swift/true), do not call this method. The command gets the arguments from the parent encoder when you execute the command.
+You don’t need to call this method if you create an indirect command buffer with its [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) equal to [`true`](https://developer.apple.com/documentation/Swift/true). The command gets the arguments from the parent encoder when it runs.
 
 If you need to pass other kinds of parameters to your shader, such as textures and samplers, create an argument buffer and pass it to the shader using this method.
 
@@ -35,7 +35,7 @@ If you need to pass other kinds of parameters to your shader, such as textures a
 ## See Also
 
 - [func setRenderPipelineState(any MTLRenderPipelineState)](mtlindirectrendercommand/setrenderpipelinestate(_:).md)
-  Sets the render pipeline state object used by the command.
+  Sets the render pipeline state for the command.
 - [func setVertexBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setvertexbuffer(_:offset:at:).md)
   Sets a vertex buffer argument for the command.
 

@@ -18,7 +18,7 @@ var isRemovable: Bool { get }
 
 ## Mentions
 
-- [Finding Multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
+- [Finding multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
 
 #### Discussion
 

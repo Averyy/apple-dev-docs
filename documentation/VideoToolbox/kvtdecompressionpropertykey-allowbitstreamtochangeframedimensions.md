@@ -3,6 +3,8 @@
 **Framework**: Video Toolbox  
 **Kind**: var
 
+A Boolean value that indicates whether a decoder is allowed to output buffers matching reduced frame dimensions in the bitstream rather than under-filling them.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,28 +21,15 @@ let kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions: CFString
 
 #### Discussion
 
-```not specified
-@constant	kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions
-@abstract
-	True if decoder is allowed to output buffers matching reduced frame dimensions in the bitstream rather than
-	under-filling them.
-@discussion
-	This is an optional property only supported by video decoders for bitstream formats which have a provision
-	for specifying output dimensions per-frame, such as AV1.
+This is an optional property only supported by video decoders for bitstream formats that have a provision for specifying output dimensions per-frame, such as AV1.
 
-	If a decoder does not support this property or if the property value is set to `kCFBooleanFalse`, all decoded
-	frames will have the same dimensions as specified in the format description. In this case, if the bitstream
-	changes the frame dimensions, the output buffer will be padded to the dimensions specified in the format
-	description.
+If a decoder doesn’t support this property or if the property value is set to `kCFBooleanFalse`, all decoded frames have the same dimensions as specified in the format description. In this case, if the bitstream changes the frame dimensions, the output buffer is padded to the dimensions specified in the format description.
 
-	When this property is set to `kCFBooleanTrue`, the decoder will set the dimensions of each output buffer to
-	match the dimensions specified in the bitstream for that frame.
+When this property is set to `kCFBooleanTrue`, the decoder sets the dimensions of each output buffer to match the dimensions specified in the bitstream for that frame.
 
-	In all cases, output buffer dimensions will never exceed the dimensions specified in the format description.
+In all cases, output buffer dimensions will never exceed the dimensions specified in the format description.
 
-	In apps linked to SDK versions before this property was added, the AV1 decoder will behave as if this property
-	is set to `kCFBooleanFalse`. Otherwise, value of this property defaults to `kCFBooleanTrue` where supported.
-```
+In apps linked to SDK versions before this property was added, the AV1 decoder will behave as if this property is set to `kCFBooleanFalse`. Otherwise, value of this property defaults to `kCFBooleanTrue` where supported.
 
 ## See Also
 

@@ -3,21 +3,24 @@
 **Framework**: Vision  
 **Kind**: property
 
-A configuration object for detected and recognized text within the document.
+Configuration for recognizing text in the document.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions
 ```
+
+#### Discussion
+
+Set properties such as what languages are detected.
 
 ## See Also
 
@@ -26,9 +29,9 @@ var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions
 - [RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.struct.md)
   A configuration object for detected and recognized text within the document.
 - [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.property.md)
-  A configuration object for detecting barcodes in a document.
+  Configuration for detecting machine-readable codes in the document.
 - [var supportedBarcodeSymbologies: [BarcodeSymbology]](recognizedocumentsrequest/supportedbarcodesymbologies.md)
-  The collection of barcode symbologies recognized by the request.
+  The collection of revisions the request supports.
 - [var supportedRecognitionLanguages: [Locale.Language]](recognizedocumentsrequest/supportedrecognitionlanguages.md)
   The identifiers of the languages that the request supports.
 

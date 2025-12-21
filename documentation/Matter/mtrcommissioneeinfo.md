@@ -23,6 +23,8 @@ class MTRCommissioneeInfo
 ## Topics
 
 ### Instance Properties
+- [var attributes: [MTRAttributePath : [String : Any]]?](mtrcommissioneeinfo/attributes.md)
+  Attributes that were read from the commissionee.  This will contain the following, if they are available:
 - [var endpointsById: [NSNumber : MTREndpointInfo]?](mtrcommissioneeinfo/endpointsbyid.md)
   Endpoint information for all endpoints of the commissionee. Will be present only if readEndpointInformation is set to YES on MTRCommissioningParameters.
 - [var productIdentity: MTRProductIdentity](mtrcommissioneeinfo/productidentity.md)

@@ -19,6 +19,7 @@ var attachment: ASAuthorizationPublicKeyCredentialAttachment { get }
 ## See Also
 
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md)
+  The request’s binary large object value.
 
 
 ---

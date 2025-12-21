@@ -32,30 +32,8 @@ enum MonitoringError
 ### Getting the Localized Message
 - [var errorDescription: String?](deviceactivitycenter/monitoringerror/errordescription.md)
   A localized message that describes what error occurred.
-- [var failureReason: String?](deviceactivitycenter/monitoringerror/failurereason.md)
-  A localized message that describes the reason for the failure.
-- [var helpAnchor: String?](deviceactivitycenter/monitoringerror/helpanchor.md)
-  A localized message that provides a help text if the user requests help.
-- [var localizedDescription: String](deviceactivitycenter/monitoringerror/localizeddescription.md)
-  A string that contains the localized description of the error.
 - [var recoverySuggestion: String?](deviceactivitycenter/monitoringerror/recoverysuggestion.md)
   A localized message that describes how to recover from the failure.
-### Comparing Errors
-- [static func != (Self, Self) -> Bool](deviceactivitycenter/monitoringerror/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values aren’t equal.
-### Operators
-- [static func == (DeviceActivityCenter.MonitoringError, DeviceActivityCenter.MonitoringError) -> Bool](deviceactivitycenter/monitoringerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](deviceactivitycenter/monitoringerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](deviceactivitycenter/monitoringerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](deviceactivitycenter/monitoringerror/equatable-implementations.md)
-- [Error Implementations](deviceactivitycenter/monitoringerror/error-implementations.md)
-- [LocalizedError Implementations](deviceactivitycenter/monitoringerror/localizederror-implementations.md)
 
 ## Relationships
 

@@ -23,7 +23,7 @@ var highQualityRendering: Bool { get }
 
 Specifies that the custom compositor should use higher quality, potentially slower algorithms.
 
-Generally this property is [`true`](https://developer.apple.com/documentation/swift/true) for non-real-time use cases.
+Generally this property is [`true`](https://developer.apple.com/documentation/Swift/true) for non-real-time use cases.
 
 ## See Also
 

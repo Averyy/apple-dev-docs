@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: property
 
-A filter that lists which address components to include or exclude in search results.
+An address filter that lists which address components to include or exclude in search results.
 
 **Availability**:
 - MapKit JS 5.78.1+
@@ -11,7 +11,7 @@ A filter that lists which address components to include or exclude in search res
 ## Declaration
 
 ```swift
-attribute mapkit.AddressFilter addressFilter;
+addressFilter?: AddressFilter;
 ```
 
 ## See Also

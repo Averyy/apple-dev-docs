@@ -48,6 +48,8 @@ The `summary` object appears in the [`responseBodyV2DecodedPayload`](responsebod
 
 - [object data](data.md)
   The payload data that contains app metadata and the signed renewal and transaction information.
+- [object appData](appdata.md)
+  The object that contains the app metadata and signed app transaction information.
 
 
 ---

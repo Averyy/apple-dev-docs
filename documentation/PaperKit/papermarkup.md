@@ -6,10 +6,10 @@
 The data model object for storing markup data created from a `PaperViewController`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,9 +19,6 @@ struct PaperMarkup
 
 ## Topics
 
-### Operators
-- [static func == (PaperMarkup, PaperMarkup) -> Bool](papermarkup/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(bounds: CGRect)](papermarkup/init(bounds:).md)
   Initializes and returns a new paper model with the specified bounds.
@@ -32,13 +29,14 @@ struct PaperMarkup
   The bounds of the paper.
 - [var contentsRenderFrame: CGRect](papermarkup/contentsrenderframe.md)
   The frame that tightly fits the rendered contents on the paper.
-- [var drawing: PKDrawing?](papermarkup/drawing.md)
-  The PencilKit drawing that is a part of this paper.
 - [var featureSet: FeatureSet](papermarkup/featureset.md)
   The set of features used by this data model.
+- [var indexableContent: String?](papermarkup/indexablecontent.md)
 ### Instance Methods
-- [func append(contentsOf: PaperMarkup)](papermarkup/append(contentsof:).md)
+- [func append(contentsOf: PaperMarkup)](papermarkup/append(contentsof:)-5668.md)
   Adds the contents of a data model on top of this paper.
+- [func append(contentsOf: PKDrawing)](papermarkup/append(contentsof:)-5tgti.md)
+  Adds the contents of a PencilKit drawing on top of this paper.
 - [func dataRepresentation() async throws -> Data](papermarkup/datarepresentation.md)
   Generate a serialized data representation of the data model.
 - [func draw(in: CGContext, frame: CGRect, options: RenderingOptions) async](papermarkup/draw(in:frame:options:).md)
@@ -57,8 +55,6 @@ struct PaperMarkup
   Remove all contents that is not supported by the provided feature set.
 - [func transformContent(CGAffineTransform)](papermarkup/transformcontent(_:).md)
   Transforms the contents of this paper with the specified transform.
-### Default Implementations
-- [Equatable Implementations](papermarkup/equatable-implementations.md)
 
 ## Relationships
 

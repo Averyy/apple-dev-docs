@@ -21,10 +21,10 @@ class UITextField
 
 ## Mentions
 
-- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
 
 #### Overview
 
@@ -80,8 +80,6 @@ Each notification contains a [`userInfo`](https://developer.apple.com/documentat
 
 ![A screenshot that demonstrates adjusting the position of a text field when the keyboard appears.](https://docs-assets.developer.apple.com/published/e17a65caa37c61e4c058c2cb6c175039/media-1965762%402x.png)
 
-For more information about managing keyboard interactions, see [`Text Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542).
-
 ##### Format the Text in a Text Field
 
 There are two types of formatting you can do to a text field’s text:
@@ -91,7 +89,7 @@ There are two types of formatting you can do to a text field’s text:
 
 The [`font`](uitextfield/font.md), [`textColor`](uitextfield/textcolor.md), and [`textAlignment`](uitextfield/textalignment.md) properties, among others, affect the appearance of the text field’s string. Modifying these properties applies the specified characteristic to the entire string. To specify more granular formatting, specify the text field’s text using an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object.
 
-The [`UITextField`](uitextfield.md) class doesn’t provide built-in support for formatting its string using an [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md) method to validate and format text while the user is typing. For information about how to use formatter objects, see [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
+The [`UITextField`](uitextfield.md) class doesn’t provide built-in support for formatting its string using an [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md) method to validate and format text while the user is typing. For information about how to use formatter objects, see [`Data Formatting`](https://developer.apple.com/documentation/Foundation/data-formatting).
 
 ##### Use Overlay Views to Edit Content
 
@@ -151,7 +149,7 @@ For more information about making iOS controls accessible, see the accessibility
 
 ##### State Preservation
 
-When you assign a value to a text field’s [`restorationIdentifier`](uiview/restorationidentifier.md) property, it preserves the selected range of text, if any. During the next launch cycle, the text field attempts to restore that selection. If the selection range can’t be applied to the current text, no selection is made. For more information about how state preservation and restoration works, see [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
+When you assign a value to a text field’s [`restorationIdentifier`](uiview/restorationidentifier.md) property, it preserves the selected range of text, if any. During the next launch cycle, the text field attempts to restore that selection. If the selection range can’t be applied to the current text, no selection is made.
 
 For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/text-fields/).
 

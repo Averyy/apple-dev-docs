@@ -4,7 +4,6 @@
 **Kind**: var
 
 **Availability**:
-- Unknown ?+ - Deprecated
 - macOS ?+
 
 ## Declaration

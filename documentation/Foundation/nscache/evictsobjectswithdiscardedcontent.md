@@ -22,7 +22,7 @@ var evictsObjectsWithDiscardedContent: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the cache will evict a discardable-content object after its content is discarded. If [`false`](https://developer.apple.com/documentation/swift/false), it will not. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the cache will evict a discardable-content object after its content is discarded. If [`false`](https://developer.apple.com/documentation/Swift/false), it will not. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

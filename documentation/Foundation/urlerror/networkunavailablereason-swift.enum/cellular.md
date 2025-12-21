@@ -22,7 +22,7 @@ case cellular
 
 #### Discussion
 
-This reason occurs when cellular is the only available network interface, but the [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsCellularAccess`](urlsessionconfiguration/allowscellularaccess.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+This reason occurs when cellular is the only available network interface, but the [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsCellularAccess`](urlsessionconfiguration/allowscellularaccess.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

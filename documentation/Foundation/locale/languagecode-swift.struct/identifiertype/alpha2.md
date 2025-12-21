@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+Two-letter alpha-2 code, e.g. “en” for English
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

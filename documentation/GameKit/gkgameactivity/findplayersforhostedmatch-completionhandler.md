@@ -6,12 +6,12 @@
 Use information from the activity to find server hosted players for the local player.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,7 +25,7 @@ func findPlayersForHostedMatch() async throws -> [GKPlayer]
 
 #### Discussion
 
-GameKit will create a classic server hosted match making request with the activity’s party code and other information, and return the players in the completion handler or any error that occurred. Error occurs if this activity doesn’t support party code, or has unsupported range of players, which is used to be configured as match request’s minPlayers and maxPlayers.
+GameKit creates a classic server hosted match making request with the activity’s party code and other information, and returns the players in the completion handler or any error that occurred. An error occurs if this activity doesn’t support party code, or has unsupported range of players, which is used to be configured as match request’s `minPlayers` and `maxPlayers`.
 
 ## See Also
 

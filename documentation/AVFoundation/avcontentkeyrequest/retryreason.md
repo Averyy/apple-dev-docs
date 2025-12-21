@@ -22,7 +22,7 @@ struct RetryReason
 
 ## Topics
 
-### Reasons for Content Key Request Retry
+### Reasons for content key request retry
 - [static let receivedObsoleteContentKey: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/receivedobsoletecontentkey.md)
   An obsolete key response that was set on the previous content key request.
 - [static let receivedResponseWithExpiredLease: AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason/receivedresponsewithexpiredlease.md)

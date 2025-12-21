@@ -25,7 +25,7 @@ For more information on the individual codecs, see the [`Algorithm`](https://dev
 
 ## Topics
 
-### Compression Codecs
+### Compression codecs
 - [MTLIOCompressionMethod.zlib](mtliocompressionmethod/zlib.md)
   Indicates that a file uses the zlib compression algorithm codec.
 - [MTLIOCompressionMethod.lzfse](mtliocompressionmethod/lzfse.md)

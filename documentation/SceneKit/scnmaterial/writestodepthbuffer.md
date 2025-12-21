@@ -22,7 +22,7 @@ var writesToDepthBuffer: Bool { get set }
 
 #### Discussion
 
-SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), specifying that SceneKit saves depth information for each rendered pixel for use by later rendering passes.
+SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that SceneKit saves depth information for each rendered pixel for use by later rendering passes.
 
 Typically, you disable writing to the depth buffer when rendering semitransparent objects, because later stages of the rendering process may require depth information about the opaque objects behind them.
 

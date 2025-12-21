@@ -33,6 +33,8 @@ When you upload a build that contains an App Clip, use the APIs provided by the 
 ### Objects
 - [object BuildBundle](buildbundle.md)
   The data structure that represents Build Bundles resource.
+- [type BuildBundleType](buildbundletype.md)
+  A string that represents the possible components of a build bundle.
 - [object AppClipDomainStatus](appclipdomainstatus.md)
   The data structure that represents the App Clip Domain Statuses resource.
 - [object BuildBundleFileSize](buildbundlefilesize.md)
@@ -50,6 +52,8 @@ When you upload a build that contains an App Clip, use the APIs provided by the 
   Manage builds for testers and submit builds for review.
 - [Build Icons](build-icons.md)
   Get icons from your app’s binary that are uploaded to App Store.
+- [Build uploads](build-uploads.md)
+  Read metadata for app builds you upload to App Store Connect.
 - [App Encryption Declarations](app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
 

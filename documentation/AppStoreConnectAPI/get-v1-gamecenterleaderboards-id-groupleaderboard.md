@@ -10,6 +10,12 @@ Read the group leadboard to which a leaderboard belongs.
 
 ## See Also
 
+- [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)
+  Get information about a specific Game Center leaderboard.
+- [List all versions for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
+  Get a list of versions for a specific Game Center leaderboard.
+- [Get all version IDs for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
+  Get a list of version resource IDs for a specific Game Center leaderboard.
 - [Read leaderboard information](get-v1-gamecenterleaderboards-_id_.md)
   Read information about a specific leaderboard.
 - [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)

@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: class
 
+An object that contains all images requested by the client.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+
@@ -17,8 +19,11 @@ class SCScreenshotOutput
 
 ### Instance Properties
 - [var fileURL: NSURL?](scscreenshotoutput/fileurl.md)
+  A URL property that specifies the location of the saved image.
 - [var hdrImage: CGImage?](scscreenshotoutput/hdrimage.md)
+  An output property that specifies the high dynamic range version of the screenshot.
 - [var sdrImage: CGImage?](scscreenshotoutput/sdrimage.md)
+  An output property that specifies the standard dynamic range version of the screenshot.
 
 ## Relationships
 
@@ -45,6 +50,7 @@ class SCScreenshotOutput
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
 
 
 ---

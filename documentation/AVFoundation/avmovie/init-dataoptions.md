@@ -34,7 +34,7 @@ Use this method to create movies from movie headers that aren’t stored in file
   Creates a movie that models the media at the specified URL.
 - [init(url: URL, options: [String : Any]?)](avmovie/init(url:options:).md)
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
-- [Initialization Options](initialization-options.md)
+- [Initialization options](initialization-options.md)
   Specify options to configure the initialization of a movie.
 
 

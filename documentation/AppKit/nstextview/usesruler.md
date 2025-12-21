@@ -17,7 +17,7 @@ var usesRuler: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to cause text views sharing the receiver’s layout manager to respond to [`NSRulerView`](nsrulerview.md) client messages and to paragraph-related menu actions, and update the ruler (when visible) as the selection changes with its paragraph and tab attributes, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to cause text views sharing the receiver’s layout manager to respond to [`NSRulerView`](nsrulerview.md) client messages and to paragraph-related menu actions, and update the ruler (when visible) as the selection changes with its paragraph and tab attributes, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

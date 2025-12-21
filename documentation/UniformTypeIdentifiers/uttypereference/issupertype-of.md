@@ -22,7 +22,7 @@ func isSupertype(of type: UTType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `type` directly or indirectly conforms to the type, but returns [`false`](https://developer.apple.com/documentation/swift/false) if it’s equal to the type.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `type` directly or indirectly conforms to the type, but returns [`false`](https://developer.apple.com/documentation/Swift/false) if it’s equal to the type.
 
 ## Parameters
 

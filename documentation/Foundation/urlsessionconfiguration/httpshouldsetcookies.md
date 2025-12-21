@@ -24,9 +24,9 @@ var httpShouldSetCookies: Bool { get set }
 
 This property controls whether tasks within sessions based on this configuration should automatically provide cookies from the shared cookie store when making requests.
 
-If you want to provide cookies yourself, set this value to [`false`](https://developer.apple.com/documentation/swift/false) and provide a `Cookie` header either through the session’s [`httpAdditionalHeaders`](urlsessionconfiguration/httpadditionalheaders.md) property or on a per-request level using a custom [`NSURLRequest`](nsurlrequest.md) object.
+If you want to provide cookies yourself, set this value to [`false`](https://developer.apple.com/documentation/Swift/false) and provide a `Cookie` header either through the session’s [`httpAdditionalHeaders`](urlsessionconfiguration/httpadditionalheaders.md) property or on a per-request level using a custom [`NSURLRequest`](nsurlrequest.md) object.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

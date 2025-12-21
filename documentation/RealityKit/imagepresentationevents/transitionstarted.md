@@ -6,7 +6,7 @@
 A transition between two viewing modes has started for an image presentation component.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

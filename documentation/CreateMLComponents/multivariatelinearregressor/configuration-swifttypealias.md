@@ -18,6 +18,17 @@
 typealias Configuration = MultivariateLinearRegressorConfiguration
 ```
 
+## See Also
+
+- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+  A trained multivariate linear regressor model.
+- [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
+  The annotation type.
+- [MultivariateLinearRegressor.Feature](multivariatelinearregressor/feature.md)
+  The feature type.
+- [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
+  The transformer type created by this estimator.
+
 
 ---
 

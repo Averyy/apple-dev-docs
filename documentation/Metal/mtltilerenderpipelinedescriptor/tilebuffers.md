@@ -28,7 +28,7 @@ This property returns an array of [`MTLPipelineBufferDescriptor`](mtlpipelinebuf
 - [var tileFunction: any MTLFunction](mtltilerenderpipelinedescriptor/tilefunction.md)
   The compute kernel or fragment function the pipeline calls.
 - [var maxCallStackDepth: Int](mtltilerenderpipelinedescriptor/maxcallstackdepth.md)
-  The maximum function call depth from the top-most shader function.
+  The maximum call stack depth for indirect function calls in tile shaders.
 
 
 ---

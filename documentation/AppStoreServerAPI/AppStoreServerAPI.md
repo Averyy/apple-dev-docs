@@ -16,17 +16,18 @@ Manage your customers’ App Store transactions from your server.
 
 #### Overview
 
-The App Store Server API is a REST API that you call from your server to request and provide information about your customers’ in-app purchases. The App Store signs the transaction and subscription renewal information that this API returns using the [`JSON Web Signature (JWS)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7515) specification. Most endpoints return data for a single customer of your app, indicated by a transaction identifier that you provide.
+The App Store Server API is a REST API that you call from your server to request and provide information about your customers’ In-App Purchases. The App Store signs the transaction and subscription renewal information that this API returns using the [`JSON Web Signature (JWS)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7515) specification. Most endpoints return data for a single customer of your app, indicated by a transaction identifier that you provide.
 
-The App Store Server API is independent of the app’s installation status on the customers’ devices. The App Store server returns information based on a customer’s in-app purchase history regardless of whether the customer installs, removes, or reinstalls the app on their devices.
+The App Store Server API is independent of the app’s installation status on the customers’ devices. The App Store server returns information based on a customer’s In-App Purchase history regardless of whether the customer installs, removes, or reinstalls the app on their devices.
 
 This API provides the following functionality:
 
 -  Get information for single transactions by calling [`Get Transaction Info`](get-transaction-info.md) or a customer’s entire transaction history using [`Get Transaction History`](get-transaction-history.md). Call [`Get All Subscription Statuses`](get-all-subscription-statuses.md) for up-to-date subscription status. Use this information to keep your customers’ purchase information current on your server.
--  Call [`Get Refund History`](get-refund-history.md) to get a customer’s refund history. Use the [`Send Consumption Information`](send-consumption-information.md) endpoint to send information to the App Store when customers request a refund for a consumable in-app purchase, after you receive the `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) from [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2). Your data helps inform refund decisions.
--  Call [`Get Notification History`](get-notification-history.md) to request the notifications your server may have missed in the past 180 days. Call [`Request a Test Notification`](request-a-test-notification.md) and [`Get Test Notification Status`](get-test-notification-status.md) to test if your server is successfully receiving notifications at its [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint.
+-  Call [`Get Refund History`](get-refund-history.md) to get a customer’s refund history. Use the [`Send Consumption Information`](send-consumption-information.md) endpoint to send information to the App Store when customers request a refund for an In-App Purchase, after you receive the `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) from [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2). Your data helps inform refund decisions.
+-  Call [`Get Notification History`](get-notification-history.md) to request the notifications your server may have missed in the past 180 days (or 30 days in the sandbox environment). Call [`Request a Test Notification`](request-a-test-notification.md) and [`Get Test Notification Status`](get-test-notification-status.md) to test if your server is successfully receiving notifications at its [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint.
 -  Call [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) and related endpoints to compensate your customers for temporary service outages, canceled events, or interruptions to live-streamed events by extending the renewal date of their paid, active subscription. For more information, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
--  Call [`Look Up Order ID`](look-up-order-id.md) to get in-app purchase information based on a customer’s order ID, found on the App Store receipt that customers receive in email.
+-  Call [`Look Up Order ID`](look-up-order-id.md) to get In-App Purchase information based on a customer’s order ID, found on the App Store receipt that customers receive in email.
+-  Call [`Get App Transaction Info`](get-app-transaction-info.md) to get details about the customer’s purchase of your app, such as the original purchase date and version. Use [`Set App Account Token`](set-app-account-token.md) to set an app account token when your customer makes an In-App Purchase outside your app, or to update its value.
 
 Your server must support the Transport Layer Security (TLS) protocol 1.2 or later to use the App Store Server API.
 
@@ -79,18 +80,21 @@ If you don’t have environment information, follow these steps:
   Recognize the rate limits that apply to App Store Server API endpoints and handle them in your code.
 - [App Store Server API changelog](app-store-server-api-changelog.md)
   Learn about new features and updates in the App Store Server API.
-### In-app purchase history
+### In-App Purchase history
 - [Get Transaction History](get-transaction-history.md)
   Get a customer’s in-app purchase transaction history for your app.
 - [object HistoryResponse](historyresponse.md)
   A response that contains the customer’s transaction history for an app.
-- [Get Transaction History V1](get-transaction-history-v1.md)
-  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
 ### Transaction information
 - [Get Transaction Info](get-transaction-info.md)
   Get information about a single transaction for your app.
 - [object TransactionInfoResponse](transactioninforesponse.md)
   A response that contains signed transaction information for a single transaction.
+### App Transaction information
+- [Get App Transaction Info](get-app-transaction-info.md)
+  Get a customer’s app transaction information for your app.
+- [object AppTransactionInfoResponse](apptransactioninforesponse.md)
+  A response that contains signed app transaction information for a customer.
 ### Subscription status
 - [Get All Subscription Statuses](get-all-subscription-statuses.md)
   Get the statuses for all of a customer’s auto-renewable subscriptions in your app.
@@ -101,11 +105,6 @@ If you don’t have environment information, follow these steps:
   Sets the app account token value for a purchase the customer makes outside of your app, or updates its value in an existing transaction.
 - [object UpdateAppAccountTokenRequest](updateappaccounttokenrequest.md)
   The request body that contains an app account token value.
-### Consumption information
-- [Send Consumption Information](send-consumption-information.md)
-  Send consumption information about a consumable in-app purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
-- [object ConsumptionRequest](consumptionrequest.md)
-  The request body containing consumption information.
 ### Order ID lookup
 - [Look Up Order ID](look-up-order-id.md)
   Get a customer’s in-app purchases from a receipt using the order ID.
@@ -113,15 +112,16 @@ If you don’t have environment information, follow these steps:
   The customer’s order ID from an App Store receipt for in-app purchases.
 - [object OrderLookupResponse](orderlookupresponse.md)
   A response that includes the order lookup status and an array of signed transactions for the in-app purchases in the order.
+### Consumption information
+- [Send Consumption Information](send-consumption-information.md)
+  Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequest](consumptionrequest.md)
+  The request body that contains consumption information for an In-App Purchase.
 ### Refund lookup
 - [Get Refund History](get-refund-history.md)
   Get a paginated list of all of a customer’s refunded in-app purchases for your app.
 - [object RefundHistoryResponse](refundhistoryresponse.md)
   A response that contains an array of signed JSON Web Signature (JWS) refunded transactions, and paging information.
-- [Get Refund History V1](get-refund-history-v1.md)
-  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
-- [object RefundLookupResponse](refundlookupresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 ### Subscription-renewal-date extension
 - [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
   Compensate eligible active subscribers for service interruptions by extending a subscription’s renewal date.
@@ -160,14 +160,18 @@ If you don’t have environment information, follow these steps:
 - [object CheckTestNotificationResponse](checktestnotificationresponse.md)
   A response that contains the contents of the App Store server’s test notification and the result from your server.
 ### JWS headers and payloads
-- [type JWSTransaction](jwstransaction.md)
-  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
-  Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
 - [object JWSDecodedHeader](jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
+- [type JWSAppTransaction](jwsapptransaction.md)
+  App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
+- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+  A decoded payload that contains app transaction information.
+- [type JWSTransaction](jwstransaction.md)
+  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 - [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)
   A decoded payload that contains transaction information.
+- [type JWSRenewalInfo](jwsrenewalinfo.md)
+  Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
 - [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
 - [Data types](data-types.md)
@@ -175,6 +179,17 @@ If you don’t have environment information, follow these steps:
 ### Error information
 - [Error codes](error-codes.md)
   Understand the error codes that App Store Server API responses return.
+### Deprecated
+- [Get Transaction History V1](get-transaction-history-v1.md)
+  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
+- [Get Refund History V1](get-refund-history-v1.md)
+  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
+- [Send Consumption Information V1](send-consumption-information-v1.md)
+  Send consumption information about a consumable In-App Purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequestV1](consumptionrequestv1.md)
+  The request body containing consumption information.
+- [object RefundLookupResponse](refundlookupresponse.md)
+  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 
 ---

@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Initializes a `shotFlop` command for a certain time, duration and offset.
+Creates a command instance for a certain time, duration and offset.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,10 @@ init(id: Int, time: CMTime, duration: CMTime, offset: CMTime? = nil)
 
 ## Parameters
 
-- `id`: The unique id of this command.
-- `time`: The time for this command to be activated during playback.
-- `duration`: The duration of the shotFlop during playback.
-- `offset`: The offset from the start time of this command. This parameter is usually unused and let in control of a PresentationDescriptorReader.
+- `id`: The unique ID of this command.
+- `time`: The time for this command to start during playback.
+- `duration`: The duration of this command during playback.
+- `offset`: The offset from the start time of this command.
 
 
 ---

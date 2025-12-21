@@ -21,7 +21,7 @@ var isAlphaToOneEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If enabled, alpha channel fragment values are only forced for `colorAttachments[0]`. Other attachments are unaffected.
 

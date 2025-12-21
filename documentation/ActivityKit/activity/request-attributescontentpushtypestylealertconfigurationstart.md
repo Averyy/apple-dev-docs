@@ -6,8 +6,8 @@
 Requests and schedules a Live Activity for a specific date.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,9 @@ The object that represents the Live Activity you started.
 
 #### Discussion
 
-Use this function to request Live Activity from your app while it’s in the foreground. Note that you can’t request a Live Activity while your app is in the background. The system starts the Live Activity at the specified date, even if the app is in the background. Note that you must provide an [`AlertConfiguration`](alertconfiguration.md). This makes sure that the system notifies people when your app starts the Live Activity.
+Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [`App Intents`](https://developer.apple.com/documentation/AppIntents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent).
+
+The system starts the Live Activity at the specified date, even if the app is in the background. Note that you must provide an [`AlertConfiguration`](alertconfiguration.md). This makes sure that the system notifies people when your app starts the Live Activity.
 
 > **Note**: The system limits the number of simultaneous ongoing Live Activities. Scheduled Live Activities count towards this limit.
 

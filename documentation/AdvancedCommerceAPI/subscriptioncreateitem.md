@@ -14,6 +14,10 @@ The data that describes a subscription item.
 object SubscriptionCreateItem
 ```
 
+## Mentions
+
+- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

@@ -17,7 +17,6 @@ A node that masks pixels drawn by its children so that only some pixels are seen
 ## Declaration
 
 ```swift
-@MainActor
 class SKCropNode
 ```
 

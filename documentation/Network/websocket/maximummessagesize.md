@@ -3,20 +3,32 @@
 **Framework**: Network  
 **Kind**: method
 
+Set the maximum allowed message size to be received by the WebSocket connection.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func maximumMessageSize(_ value: Int) -> WebSocket
+func maximumMessageSize(_ size: Int) -> WebSocket
 ```
+
+#### Discussion
+
+This does not limit the sending message size.
+
+A maximum message size of 0 means there is no receive limit. The default maximum message size is 0.
+
+## Parameters
+
+- `size`: The maximum message size.
 
 
 ---

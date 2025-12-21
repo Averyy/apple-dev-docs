@@ -6,7 +6,7 @@
 The styles that an immersive space can have.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

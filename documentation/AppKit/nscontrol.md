@@ -21,9 +21,13 @@ The [`NSControl`](nscontrol.md) class is abstract and must be subclassed to be u
 
 ##### About Delegate Methods
 
-The `NSControl` class provides several delegate methods for its subclasses that allow text editing, such as `NSTextField` and `NSMatrix`. These include: [`controlTextDidBeginEditing:`](https://developer.apple.com/documentation/objectivec/nsobject/1428934-controltextdidbeginediting), [`controlTextDidChange:`](https://developer.apple.com/documentation/objectivec/nsobject/1428982-controltextdidchange), and [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/objectivec/nsobject/1428847-controltextdidendediting).
+The `NSControl` class provides several delegate methods for its subclasses that allow text editing, such as `NSTextField` and `NSMatrix`. These include: [`controlTextDidBeginEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidBeginEditing:), [`controlTextDidChange:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidChange:), and [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidEndEditing:).
 
 Note that although `NSControl` defines delegate methods, it doesn’t itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it. In addition, a formal delegate protocol [`NSControlTextEditingDelegate`](nscontroltexteditingdelegate.md) also defines delegate methods used by control delegates.
+
+##### Responding to Mouse Events
+
+When the mouse button is pressed while the cursor is within the bounds of the receiver, the system calls [`mouseDown(with:)`](nsresponder/mousedown(with:).md). This method highlights the receiver’s cell and sends it a [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md) message. Whenever the cell finishes tracking the mouse (for example, because the cursor has left the cell’s bounds), the cell is unhighlighted. If the mouse button is still down and the cursor reenters the bounds, the cell is again highlighted and a new [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md) message is sent. This behavior repeats until the mouse button goes up. If it goes up with the cursor in the control, the state of the control is changed, and the action message is sent to the target. If the mouse button goes up when the cursor is outside the control, no action message is sent.
 
 ## Topics
 
@@ -43,7 +47,7 @@ Note that although `NSControl` defines delegate methods, it doesn’t itself hav
 - [var intValue: Int32](nscontrol/intvalue.md)
   The value of the receiver’s cell as an integer.
 - [var integerValue: Int](nscontrol/integervalue.md)
-  The value of the receiver’s cell as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value.
+  The value of the receiver’s cell as an integer value.
 - [var objectValue: Any?](nscontrol/objectvalue.md)
   The value of the receiver’s cell as an Objective-C object.
 - [var stringValue: String](nscontrol/stringvalue.md)
@@ -58,7 +62,7 @@ Note that although `NSControl` defines delegate methods, it doesn’t itself hav
 - [func takeIntValueFrom(Any?)](nscontrol/takeintvaluefrom(_:).md)
   Sets the value of the receiver’s cell to an integer value obtained from the specified object.
 - [func takeIntegerValueFrom(Any?)](nscontrol/takeintegervaluefrom(_:).md)
-  Sets the value of the receiver’s cell to an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value obtained from the specified object.
+  Sets the value of the receiver’s cell to an `NSInteger` value obtained from the specified object.
 - [func takeObjectValueFrom(Any?)](nscontrol/takeobjectvaluefrom(_:).md)
   Sets the value of the receiver’s cell to the object value obtained from the specified object.
 - [func takeStringValueFrom(Any?)](nscontrol/takestringvaluefrom(_:).md)
@@ -139,6 +143,8 @@ Note that although `NSControl` defines delegate methods, it doesn’t itself hav
 - [var refusesFirstResponder: Bool](nscontrol/refusesfirstresponder.md)
   A Boolean value indicating whether the receiver refuses the first responder role.
 ### Tracking the Mouse
+- [func mouseDown(with: NSEvent)](nsresponder/mousedown(with:).md)
+  Informs the receiver that the user has pressed the left mouse button.
 - [var ignoresMultiClick: Bool](nscontrol/ignoresmulticlick.md)
   A Boolean value indicating whether the receiver ignores multiple clicks made in rapid succession.
 ### Supporting Constraint-Based Layout

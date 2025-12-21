@@ -19,7 +19,7 @@ var isAtEnd: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has reached the end of the encoded data while decoding, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has reached the end of the encoded data while decoding, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 You can invoke this method after invoking `decodeObject` to discover whether the archive contains extra data following the encoded object graph. If it does, you can either ignore this anomaly or consider it an error.
 

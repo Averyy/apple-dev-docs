@@ -21,7 +21,7 @@ func setSamplePositions(_ positions: [MTLSamplePosition])
 
 #### Discussion
 
-Programmable sample positions must be floating-point values in the `[0.0, 1.0)` range along each axis, with the origin `(0,0)` defined at the top-left corner. Values can be set from `0/16` up to `15/16`, inclusive, in `1/16` increments along each axis.
+Programmable sample positions need to be floating-point values in the `[0.0, 1.0)` range along each axis, with the origin `(0,0)` defined at the top-left corner. Values can be set from `0/16` up to `15/16`, inclusive, in `1/16` increments along each axis.
 
 If the length of the array is `0`, the GPU uses the default sample positions for the render pass.
 
@@ -29,7 +29,7 @@ If the length of the array is `0`, the GPU uses the default sample positions for
 
 ## Parameters
 
-- `positions`: An array of programmable sample positions for the render pass. The number of programmable sample positions must match the render pass sample count you must specify an empty array.
+- `positions`: An array of programmable sample positions for the render pass with the   the same number of elements as the render pass sample count,   or an empty array to disable custom sample positions.
 
 ## See Also
 

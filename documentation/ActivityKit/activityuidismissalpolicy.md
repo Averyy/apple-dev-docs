@@ -24,11 +24,6 @@ struct ActivityUIDismissalPolicy
   The system immediately removes the Live Activity that ended.
 - [static func after(Date) -> ActivityUIDismissalPolicy](activityuidismissalpolicy/after(_:).md)
   The system removes the Live Activity that ended at the specified time within a four-hour window.
-### Operators
-- [static func == (ActivityUIDismissalPolicy, ActivityUIDismissalPolicy) -> Bool](activityuidismissalpolicy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](activityuidismissalpolicy/equatable-implementations.md)
 
 ## Relationships
 

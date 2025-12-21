@@ -1,4 +1,4 @@
-# Confirming which Counters and Counter Sets a GPU Supports
+# Confirming which counters and counter sets a GPU supports
 
 **Framework**: Metal
 
@@ -16,7 +16,7 @@ Even though a GPU device supports a counter set, it may only support some of the
 
 The method iterates through each counter in the device’s counter set, and compares its name to the [`MTLCommonCounter`](mtlcommoncounter.md) property.
 
-When you know a GPU supports a counter, your app can create and safely use an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance to store that counter’s data. See [`Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) for more information and next steps.
+When you know a GPU supports a counter, your app can create and safely use an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance to store that counter’s data. See [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) for more information and next steps.
 
 ## See Also
 

@@ -1,12 +1,12 @@
 # is_trial_period
 
 **Framework**: App Store Receipts  
-**Kind**: tdef
+**Kind**: typealias
 
 An indicator of whether an auto-renewable subscription is in the free trial period.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
 
 ## Declaration
 
@@ -16,9 +16,9 @@ string is_trial_period
 
 #### Discussion
 
-This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info.md) and [`responseBody.Receipt.In_app`](responsebody/receipt/in_app.md) arrays.
+This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
-You can use this value to determine whether the specific record is in a subscription trial period. If a previous subscription period in the receipt has the value `"true" `for either the `is_trial_period` or [`is_in_intro_offer_period`](is_in_intro_offer_period.md) keys, the user is not eligible for a free trial or introductory price within that subscription group.
+You can use this value to determine whether the specific record is in a subscription trial period. If a previous subscription period in the receipt has the value `"true"` for either the `is_trial_period` or [`is_in_intro_offer_period`](is_in_intro_offer_period.md) keys, the user is not eligible for a free trial or introductory price within that subscription group.
 
 ## See Also
 

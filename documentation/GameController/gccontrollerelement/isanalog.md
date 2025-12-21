@@ -25,7 +25,7 @@ var isAnalog: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the input value defined by the element can return a range (from a minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumbstick that allows for a range of physical movement. If this property is [`false`](https://developer.apple.com/documentation/swift/false), the input value is a discrete value, such as `0` if the element is off, and `1` if the element is on.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the input value defined by the element can return a range (from a minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumbstick that allows for a range of physical movement. If this property is [`false`](https://developer.apple.com/documentation/Swift/false), the input value is a discrete value, such as `0` if the element is off, and `1` if the element is on.
 
 
 ---

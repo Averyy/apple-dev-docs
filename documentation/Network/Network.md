@@ -16,8 +16,8 @@ Create network connections to send and receive data using transport and security
 
 ## Mentions
 
-- [Inspecting app activity data](inspecting-app-activity-data.md)
 - [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Inspecting app activity data](inspecting-app-activity-data.md)
 
 #### Overview
 
@@ -46,6 +46,8 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 ### Network Protocols
 - [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTCP](nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
 - [class NWProtocolTLS](nwprotocoltls.md)
@@ -98,39 +100,58 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [struct nw_path_unsatisfied_reason_t](nw_path_unsatisfied_reason_t.md)
 - [struct nw_quic_stream_type_t](nw_quic_stream_type_t.md)
 - [struct Bonjour](bonjour.md)
+  A browser that discovers Bonjour services.
 - [struct BonjourListenerProvider](bonjourlistenerprovider.md)
+  Advertise a Bonjour service.
 - [struct Coder](coder.md)
+  A protocol that frames and encodes/decodes Codable types.
 - [struct DefaultProtocolStorage](defaultprotocolstorage.md)
 - [struct Framer](framer.md)
+  An instance of a Framer protocol to load into a protocol stack.
 - [struct IP](ip.md)
+  The system definition of the Internet Protocol (IP).
 - [struct NWParametersBuilder](nwparametersbuilder.md)
+  An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 - [struct NWTXTRecord](nwtxtrecord.md)
   A dictionary representing a TXT record in a DNS packet.
 - [struct NetworkJSONCoder](networkjsoncoder.md)
 - [struct NetworkPropertyListCoder](networkpropertylistcoder.md)
 - [struct ProtocolMetadataBuilder](protocolmetadatabuilder.md)
+  A resultBuilder for configuring metadata in send methods in a declarative way.
 - [struct ProtocolStackBuilder](protocolstackbuilder.md)
+  A resultBuilder for specifying and configuring protocol stacks in a declarative way
 - [struct ProxyConfiguration](proxyconfiguration.md)
   A proxy configuration for Relays, Oblivious HTTP, HTTP CONNECT, or SOCKSv5.
 - [struct QUIC](quic.md)
-  The QUIC type can be used to insert QUIC into a protocol stack. As it conforms to MultiplexProtocol, it exposes configuration a multiplexing instance of QUIC to be used with NetworkConnection, which will in turn expose the ability to handle multiple streams of data over QUIC.
+  The system definition of the QUIC protocol.
 - [struct QUICDatagram](quicdatagram.md)
-  QUICDatagram exposes sending unreliable datagrams over QUIC via RFC 9221
+  Send and receive unreliable datagrams over QUIC via RFC 9221
 - [struct QUICStream](quicstream.md)
-  The default QUIC Stream type for Subconnection objects returned from a NetworkConnection over QUIC. Connection’s parameterized over QUICStream will expose a nearly identical stream interface as TCP. This type is not intended to be inserted into the protocol stack manually.
+  A QUIC stream that runs over a QUIC connection.
 - [struct TCP](tcp.md)
+  The system definition of the Transmission Control Protocol (TCP).
 - [struct TLS](tls.md)
+  The system definition of the Transport Layer Security (TLS) protocol.
 - [struct TLV](tlv.md)
+  A Type-Length-Value (TLV) framing protocol.
 - [struct TXTRecordDecoder](txtrecorddecoder.md)
 - [struct UDP](udp.md)
+  The system definition of the User Datagram Protocol (UDP).
 - [struct UnexpectedEndpointType](unexpectedendpointtype.md)
+  An error generated when an unexpected endpoint type is supplied.
 - [struct WebSocket](websocket.md)
+  The system definition of the WebSocket protocol.
 - [struct nw_link_quality_t](nw_link_quality_t.md)
 ### Classes
 - [class NWMultiplexGroup](nwmultiplexgroup.md)
 - [class NetworkBrowser](networkbrowser.md)
+  Discover advertised services and devices on the network.
+- [class NetworkChannel](networkchannel.md)
+  A base class supporting sending and recieving data through an arbitrary network channel.
 - [class NetworkConnection](networkconnection.md)
+  Connect to an endpoint on the network to send and receive data.
 - [class NetworkListener](networklistener.md)
+  Listen for incoming network connections.
 ### Reference
 - [Network Constants](network-constants.md)
   Access Network framework constants used in C.
@@ -139,27 +160,36 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [Network Data Types](network-data-types.md)
 ### Protocols
 - [protocol BrowserProvider](browserprovider.md)
+  BrowserProviders can be used when creating NetworkBrowsers.
 - [protocol Connectable](connectable.md)
-- [protocol ConnectionProtocol](connectionprotocol.md)
+  Describes types that can be used to make NetworkConnections.
 - [protocol ConnectionStorage](connectionstorage.md)
-  Types that conform to ConnectionStorage can be used as additional storage within a NetworkConnection
+  Types that conform to ConnectionStorage can be used as additional storage within a connection.
 - [protocol DatagramProtocol](datagramprotocol.md)
+  Types that conform to DatagramProtocol send and receive messages with minimal or no metadata, usually constrained to a fixed maximum size.
 - [protocol FramerProtocol](framerprotocol.md)
+  Framer protocols allow custom framing and serialization of messages on a connection.
 - [protocol ListenerProvider](listenerprovider.md)
+  Extensible support for configuring advertise descriptors to define the service a listener should advertise.
 - [protocol MessageProtocol](messageprotocol.md)
+  Types that conform to MessageProtocol send and receive messages. The conforming type is responsible for specifying its message-specific metadata.
 - [protocol MultiplexProtocol](multiplexprotocol.md)
-  Types that conform to MultiplexProtocol are allowed to be the top protocol in a network protocol stack for multiplexing network connection objects. Generally network protocols conforming to this will not directly expose send or receive methods. Instead, they usually expose methods to open and listen for multiplexed Subconnections which can be sent and received on
+  Types that conform to MultiplexProtocol are allowed to be the top protocol in a network protocol stack for multiplexing network connection objects.
 - [protocol NWParametersProvider](nwparametersprovider.md)
+  Types that conform to the NWParametersProvider protocol can be used to generate an NWParameters.
 - [protocol NetworkCoder](networkcoder.md)
 - [protocol NetworkDecoder](networkdecoder.md)
+  A type that conforms to the NetworkEncoder protocol can decode data to an Encodable object
 - [protocol NetworkEncoder](networkencoder.md)
+  A type that conforms to the NetworkEncoder protocol can encode a Encodable object to Data
 - [protocol NetworkFixedWidthInteger](networkfixedwidthinteger.md)
 - [protocol NetworkMetadataProtocol](networkmetadataprotocol.md)
+  Types that conform to NetworkProtocolOptions can be used when configuring protocol stacks.
 - [protocol NetworkProtocolOptions](networkprotocoloptions.md)
 - [protocol OneToOneProtocol](onetooneprotocol.md)
-  Types that conform to OneToOneProtocol are allowed to be the top protocol in a network protocol stack for standard, non-multiplexed Connections
+  Types that conform to OneToOneProtocol are allowed to be the top protocol in a network protocol stack for non-multiplexed connections.
 - [protocol StreamProtocol](streamprotocol.md)
-- [protocol SubConnectionProtocol](subconnectionprotocol.md)
+  Types that conform to the StreamProtocol protocol expose methods for sending and receiving byte streams.
 ### Variables
 - [let kNWErrorDomainWiFiAware: CFString](knwerrordomainwifiaware.md)
 - [var nw_error_domain_wifi_aware: nw_error_domain_t](nw_error_domain_wifi_aware.md)
@@ -172,8 +202,10 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [func nw_parameters_set_allow_ultra_constrained(nw_parameters_t, Bool)](nw_parameters_set_allow_ultra_constrained(_:_:).md)
 - [func nw_path_get_link_quality(nw_path_t) -> nw_link_quality_t](nw_path_get_link_quality(_:).md)
 - [func nw_path_is_ultra_constrained(nw_path_t) -> Bool](nw_path_is_ultra_constrained(_:).md)
-### Enumerations
-- [enum AdvertisedRoute](advertisedroute.md)
+- [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-1sik8.md)
+- [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-4wpc9.md)
+- [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-7skhi.md)
+- [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-887ho.md)
 
 
 ---

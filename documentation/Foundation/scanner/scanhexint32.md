@@ -22,7 +22,7 @@ func scanHexInt32(_ result: UnsafeMutablePointer<UInt32>?) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the receiver finds a valid hexadecimal integer representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Overflow is considered a valid hexadecimal integer representation.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver finds a valid hexadecimal integer representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Overflow is considered a valid hexadecimal integer representation.
 
 #### Discussion
 

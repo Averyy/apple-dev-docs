@@ -22,7 +22,7 @@ var isSessionOnly: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the cookie should be discarded at the end of the session (regardless of expiration date), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the cookie should be discarded at the end of the session (regardless of expiration date), otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

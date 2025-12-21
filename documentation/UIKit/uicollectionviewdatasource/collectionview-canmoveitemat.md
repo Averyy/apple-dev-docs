@@ -21,7 +21,7 @@ optional func collectionView(_ collectionView: UICollectionView, canMoveItemAt i
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item is allowed to move, or [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item is allowed to move, or [`false`](https://developer.apple.com/documentation/Swift/false) if it isn’t.
 
 #### Discussion
 

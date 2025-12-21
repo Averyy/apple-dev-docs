@@ -39,6 +39,11 @@ array.withPixelBuffer { backingPixelBuffer in
 
 - `body`: The closure to run with the pixel buffer.
 
+## See Also
+
+- [func withMutablePixelBufferIfAvailable<R>((CVPixelBuffer) throws -> R) rethrows -> R?](mlshapedarray/withmutablepixelbufferifavailable(_:).md)
+  Writes to the underlying pixel buffer.
+
 
 ---
 

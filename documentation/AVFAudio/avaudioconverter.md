@@ -42,6 +42,8 @@ A single audio converter instance may perform more than one of the above transfo
 ### Converting Audio Formats
 - [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: AVAudioConverterInputBlock) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
   Performs a conversion between audio formats, if the system supports it.
+- [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
+  A block to get input data for conversion, as necessary.
 - [func convert(to: AVAudioPCMBuffer, from: AVAudioPCMBuffer) throws](avaudioconverter/convert(to:from:).md)
   Performs a basic conversion between audio formats that doesn’t involve converting codecs or sample rates.
 - [enum AVAudioConverterInputStatus](avaudioconverterinputstatus.md)
@@ -95,6 +97,12 @@ A single audio converter instance may perform more than one of the above transfo
   Priming information for audio conversion.
 - [enum AVAudioConverterPrimeMethod](avaudioconverterprimemethod.md)
   Options for the prime method property.
+### Managing packet dependencies
+- [var audioSyncPacketFrequency: Int](avaudioconverter/audiosyncpacketfrequency.md)
+- [var contentSource: AVAudioContentSource](avaudioconverter/contentsource.md)
+- [enum AVAudioContentSource](avaudiocontentsource.md)
+- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
+- [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
 
 ## Relationships
 

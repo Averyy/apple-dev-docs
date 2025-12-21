@@ -57,7 +57,7 @@ The illustration below shows the original image on the left and the warped image
 
 ![Two versions of a grid divided by dotted lines into a 4 by 4 partition. The version on the left is a square grid and appears as a straight-on view. The version on the right is a square containing a grid warped so that the left edge of the square grid appears to be receding into the distance.](https://docs-assets.developer.apple.com/published/5b2299f0c1b7297c65c0e3a8915a93df/media-4165209%402x.png)
 
-> ❗ **Important**:  This function doesn’t work in place — that is, the source and destination buffers must point to different memory.
+> ❗ **Important**:  This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
 ## Parameters
 

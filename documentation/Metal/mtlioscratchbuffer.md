@@ -21,11 +21,11 @@ protocol MTLIOScratchBuffer : NSObjectProtocol
 
 #### Overview
 
-Your app can reintegrate a [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance’s underlying memory back into a memory pool by overriding your type’s [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) method. The system calls the method when an input/output command queue no longer needs a scratch buffer.
+Your app can reintegrate an [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance’s underlying memory back into a memory pool by overriding your type’s [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method. The system calls the method when an input/output command queue no longer needs a scratch buffer.
 
 ## Topics
 
-### Wrapping a Buffer
+### Wrapping a buffer
 - [var buffer: any MTLBuffer](mtlioscratchbuffer/buffer.md)
   A Metal buffer that serves as scratch memory for an input/output command queue.
 

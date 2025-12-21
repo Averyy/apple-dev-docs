@@ -6,11 +6,11 @@
 Time-coded audio data.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,12 +26,12 @@ The audio format may differ from one `AnalyzerInput` object to the next. The mod
 
 ## Topics
 
-### Initializers
+### Creating an input element
 - [init(buffer: AVAudioPCMBuffer)](analyzerinput/init(buffer:).md)
   Creates an audio input object.
 - [init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)](analyzerinput/init(buffer:bufferstarttime:).md)
   Creates an audio input object for audio that may be discontiguous with previous input.
-### Instance Properties
+### Inspecting an input element
 - [let buffer: AVAudioPCMBuffer](analyzerinput/buffer.md)
   The audio buffer containing this input.
 - [let bufferStartTime: CMTime?](analyzerinput/bufferstarttime.md)

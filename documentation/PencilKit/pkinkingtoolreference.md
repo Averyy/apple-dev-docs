@@ -61,6 +61,9 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](pktoolpick
 ### Instance Properties
 - [var azimuth: CGFloat](pkinkingtoolreference/azimuth.md)
   The base angle of the ink.
+### Type Methods
+- [class func invertColor(CGColor) -> Unmanaged<CGColor>](pkinkingtoolreference/invertcolor(_:).md)
+  Converts a color from light to dark appearance or vice versa.
 
 ## Relationships
 
@@ -72,6 +75,8 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](pktoolpick
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

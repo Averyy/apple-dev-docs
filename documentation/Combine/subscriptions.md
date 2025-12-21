@@ -22,7 +22,7 @@ enum Subscriptions
 
 ## Topics
 
-### Using Convenience Subscriptions
+### Using convenience subscriptions
 - [static var empty: any Subscription](subscriptions/empty.md)
   Returns the “empty” subscription.
 

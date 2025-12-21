@@ -18,6 +18,12 @@
 var allowsPersistentDNS: Bool { get set }
 ```
 
+#### Discussion
+
+Allows storing and usage of DNS answers, potentially beyond TTL expiry, in a persistent per-process cache. This should only be set for hostnames whose resolutions are not expected to change across networks.
+
+YES, if the DNS lookup for this request is allowed to use a persistent per-process cache, NO otherwise. Defaults to NO.
+
 
 ---
 

@@ -20,11 +20,10 @@ enum XCUIDeviceHandGesture
 ### Hand gestures
 - [XCUIDeviceHandGesture.doubleTap](xcuidevicehandgesture/doubletap.md)
   A double-tap hand gesture.
+### Enumeration Cases
+- [XCUIDeviceHandGesture.flick](xcuidevicehandgesture/flick.md)
 ### Initializers
 - [init?(rawValue: Int)](xcuidevicehandgesture/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuidevicehandgesture/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuidevicehandgesture/rawrepresentable-implementations.md)
 
 ## Relationships
 

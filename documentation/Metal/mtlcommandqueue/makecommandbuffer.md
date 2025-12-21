@@ -22,13 +22,13 @@ func makeCommandBuffer() -> (any MTLCommandBuffer)?
 
 ## Mentions
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
 
 #### Discussion
 
 The command buffers you create with this method maintain strong references to the resources you encode into it, including buffers, textures, samplers, and pipeline states. The command buffer releases these references after it finishes running on the GPU.
 
-This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`true`](https://developer.apple.com/documentation/swift/true) for the command buffer it creates.
+This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) for the command buffer it creates.
 
 Each command queue has a fixed number of command buffers for its lifetime (see [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md)). This method blocks the calling CPU thread when the queue doesn’t have any free command buffers, and returns after the GPU finishes executing one.
 

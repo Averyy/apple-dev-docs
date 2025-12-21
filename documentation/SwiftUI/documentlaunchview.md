@@ -42,7 +42,7 @@ struct BookEditor: View {
 }
 
 extension UTType {
-    static var book = UTType(exportedAs: "com.example.bookEditor")
+    static let book = UTType(exportedAs: "com.example.bookEditor")
 }
 ```
 

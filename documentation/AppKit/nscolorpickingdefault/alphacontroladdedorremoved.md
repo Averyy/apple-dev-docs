@@ -20,7 +20,7 @@ func alphaControlAddedOrRemoved(_ sender: Any?)
 
 This method is invoked automatically when the opacity slider of the `NSColorPanel` is added or removed; you never invoke this method directly.
 
-If the color picker has its own opacity controls, it should hide or display them, depending on whether the sender’s [`showsAlpha`](nscolorpanel/showsalpha.md) method returns [`false`](https://developer.apple.com/documentation/swift/false) or [`true`](https://developer.apple.com/documentation/swift/true).
+If the color picker has its own opacity controls, it should hide or display them, depending on whether the sender’s [`showsAlpha`](nscolorpanel/showsalpha.md) method returns [`false`](https://developer.apple.com/documentation/Swift/false) or [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

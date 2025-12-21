@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: method
 
-Creates an assertion request with a challenge, display name, and user ID.
+Creates a registration request with a challenge, display name, and user ID.
 
 **Availability**:
 - iOS 15.0+

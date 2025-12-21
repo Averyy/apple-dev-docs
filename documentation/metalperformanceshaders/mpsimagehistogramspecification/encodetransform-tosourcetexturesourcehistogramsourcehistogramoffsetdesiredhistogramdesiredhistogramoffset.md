@@ -34,9 +34,9 @@ The transform function will not begin to execute until after the command buffer 
 
 ## See Also
 
-- [func setBufferOffset(_ offset: Int, index: Int)](../Metal/MTLComputeCommandEncoder/setBufferOffset(_:index:).md)
+- [func setBufferOffset(Int, index: Int)](../Metal/MTLComputeCommandEncoder/setBufferOffset(_:index:).md)
   Changes where the data begins in a buffer already bound to the buffer argument table.
-- [func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)](../Metal/MTLComputeCommandEncoder/setBuffer(_:offset:index:).md)
+- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](../Metal/MTLComputeCommandEncoder/setBuffer(_:offset:index:).md)
   Binds a buffer to the buffer argument table, allowing compute kernels to access its data on the GPU.
 - [init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)](mpsimagehistogramspecification/init(device:histograminfo:).md)
   Initializes a histogram with specific information.

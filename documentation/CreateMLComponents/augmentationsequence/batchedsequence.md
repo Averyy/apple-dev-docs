@@ -25,7 +25,7 @@ struct BatchedSequence
 ### Creating an iterator
 - [func makeAsyncIterator() -> AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.BatchedSequence.AsyncIterator](augmentationsequence/batchedsequence/makeasynciterator.md)
   Creates the asynchronous iterator that produces batches.
-- [AugmentationSequence.BatchedSequence.Element](augmentationsequence/batchedsequence/element.md)
+- [AugmentationSequence.Element](augmentationsequence/element.md)
   The type of element produced by this asynchronous sequence.
 ### Default Implementations
 - [AsyncSequence Implementations](augmentationsequence/batchedsequence/asyncsequence-implementations.md)

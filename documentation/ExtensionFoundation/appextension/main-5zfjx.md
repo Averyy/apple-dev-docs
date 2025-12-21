@@ -3,7 +3,7 @@
 **Framework**: ExtensionFoundation  
 **Kind**: method
 
-The main entry point for a non-UI extension.
+The main entry point for an app extension that doesn’t present any UI.
 
 **Availability**:
 - iOS 16.0+
@@ -21,14 +21,14 @@ The main entry point for a non-UI extension.
 @preconcurrency static func main() throws
 ```
 
+#### Discussion
+
+Don’t call this method directly. When the host launches your app extension in a new process, the system calls this method to create your custom [`AppExtension`](appextension.md) type and prepare your extension for requests from the host app.
+
 ## See Also
 
-- [var configuration: Self.Configuration](appextension/configuration-swift.property.md)
-  The configuration object for this app extension.
-- [associatedtype Configuration : AppExtensionConfiguration](appextension/configuration-swift.associatedtype.md)
-  A type that provides the app extension configuration information.
 - [static func main() throws](appextension/main-w0u9.md)
-  The main entry point for a UI extension.
+  The main entry point for an app extension that doesn’t present any UI.
 
 
 ---

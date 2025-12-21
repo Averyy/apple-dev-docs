@@ -21,7 +21,7 @@ case customSampleDepthStore
 
 #### Discussion
 
-You can only set this action on a [`MTLRenderPassDepthAttachmentDescriptor`](mtlrenderpassdepthattachmentdescriptor.md) object.
+You can only set this action on an [`MTLRenderPassDepthAttachmentDescriptor`](mtlrenderpassdepthattachmentdescriptor.md) instance.
 
 Set this action when you need to read the depth data in a subsequent render pass or blit operation that is unaware of the programmable sample positions used to generate the data.
 

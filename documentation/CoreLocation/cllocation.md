@@ -22,8 +22,8 @@ class CLLocation
 
 ## Mentions
 
-- [Getting heading and course information](getting-heading-and-course-information.md)
 - [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
+- [Getting heading and course information](getting-heading-and-course-information.md)
 
 #### Overview
 

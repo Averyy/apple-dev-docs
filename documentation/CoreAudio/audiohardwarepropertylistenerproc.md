@@ -13,6 +13,21 @@
 typealias AudioHardwarePropertyListenerProc = (AudioHardwarePropertyID, UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+#### Return Value
+
+The return value is currently unused and should always be 0.
+
+#### Discussion
+
+Clients register an AudioHardwarePropertyListenerProc with the AudioSystemObject in order to receive notifications when the properties of the object change.
+
+Note that the same functionality is provided by AudioObjectPropertyListenerProc.
+
+## Parameters
+
+- `inPropertyID`: The AudioHardwarePropertyID of the property that changed.
+- `inClientData`: A pointer to client data established when the listener proc was registered   with the AudioSystemObject.
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

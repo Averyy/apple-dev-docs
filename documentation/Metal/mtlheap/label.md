@@ -24,11 +24,6 @@ var label: String? { get set }
 
 Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
 
-## See Also
-
-- [var device: any MTLDevice](mtlheap/device.md)
-  The device object that created the heap.
-
 
 ---
 

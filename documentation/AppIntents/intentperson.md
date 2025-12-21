@@ -59,12 +59,6 @@ struct IntentPerson
 - [IntentPerson.ValueType](intentperson/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](intentperson/defaultresolverspecification.md)
-### Default Implementations
-- [Decodable Implementations](intentperson/decodable-implementations.md)
-- [Encodable Implementations](intentperson/encodable-implementations.md)
-- [Equatable Implementations](intentperson/equatable-implementations.md)
-- [InstanceDisplayRepresentable Implementations](intentperson/instancedisplayrepresentable-implementations.md)
-- [TypeDisplayRepresentable Implementations](intentperson/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

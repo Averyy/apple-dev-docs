@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: method
 
+Returns a copy of the effect requesting an animation that moves back and forth along an axis with the passed in angle.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 func custom(angle: Double) -> WiggleSymbolEffect
 ```
+
+#### Discussion
+
+The angle is in degrees moving clockwise from the positive x-axis.
 
 
 ---

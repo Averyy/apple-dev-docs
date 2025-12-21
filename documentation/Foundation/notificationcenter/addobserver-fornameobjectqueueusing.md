@@ -53,6 +53,8 @@ This example stores the opaque observer object in an instance property called `t
   Adds an entry to the notification center to call the provided selector with the notification.
 - [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](notificationcenter/removeobserver(_:name:object:).md)
   Removes matching entries from the notification center’s dispatch table.
+- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+  Removes all entries specifying an observer from the notification center’s dispatch table.
 
 
 ---

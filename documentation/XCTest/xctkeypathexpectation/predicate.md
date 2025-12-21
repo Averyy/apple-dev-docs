@@ -9,7 +9,6 @@ A function the key path expectation uses to test the value of an observed proper
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- Unknown ?+ - Deprecated
 - tvOS 13.0+
 
 ## Declaration
@@ -20,7 +19,7 @@ typealias Predicate = (T, NSKeyValueObservedChange<V>) async -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the change fulfills the expectation; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the change fulfills the expectation; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

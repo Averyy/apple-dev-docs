@@ -17,9 +17,9 @@ var isTableScrollingHapticFeedbackEnabled: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true). In Apple Watch Series 4 and later, the watch provides haptic feedback as the user rotates the digital crown. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the watch provides haptic feedback whenever new rows scroll into view. However, if there are additional interface items at the top level, or if the table view contains a row that is taller than the screen, the crown falls back to providing linear feedback.
+By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true). In Apple Watch Series 4 and later, the watch provides haptic feedback as the user rotates the digital crown. When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the watch provides haptic feedback whenever new rows scroll into view. However, if there are additional interface items at the top level, or if the table view contains a row that is taller than the screen, the crown falls back to providing linear feedback.
 
-When this property is [`false`](https://developer.apple.com/documentation/swift/false), the watch provides linear feedback. For example, you can use this property to force linear feedback when a table contains rows of varying heights, and the row-based feedback doesn’t feel right.
+When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the watch provides linear feedback. For example, you can use this property to force linear feedback when a table contains rows of varying heights, and the row-based feedback doesn’t feel right.
 
 ## See Also
 

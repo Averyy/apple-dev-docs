@@ -15,6 +15,21 @@
 func AudioObjectAddPropertyListener(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ inListener: AudioObjectPropertyListenerProc, _ inClientData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Registers the given AudioObjectPropertyListenerProc to receive notifications when the given properties change.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to register the listener with.
+- `inAddress`: The AudioObjectPropertyAddresses indicating which property the listener   should be notified about.
+- `inListener`: The AudioObjectPropertyListenerProc to call.
+- `inClientData`: A pointer to client data that is passed to the listener when it is called.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

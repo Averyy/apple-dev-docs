@@ -20,10 +20,9 @@ Both [`FSFileSystem`](fsfilesystem.md) and [`FSUnaryFileSystem`](fsunaryfilesyst
 
 ## Topics
 
-### Instance Properties
+### Implementing essential functionality
 - [var containerStatus: FSContainerStatus](fsfilesystembase/containerstatus.md)
   The status of the file system container, indicating its readiness and activity.
-### Instance Methods
 - [func wipe(FSBlockDeviceResource, completionHandler: ((any Error)?) -> Void)](fsfilesystembase/wipe(_:completionhandler:).md)
   Wipes existing file systems on the specified resource.
 

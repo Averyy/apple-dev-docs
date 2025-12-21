@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: struct
 
+The defined identity types for use in retrieving credentials.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -18,12 +20,16 @@ struct IdentityTypes
 
 ## Topics
 
-### Initializers
-- [init(rawValue: UInt)](ascredentialidentitystore/identitytypes/init(rawvalue:).md)
-### Type Properties
+### Working with identity types
 - [static var passkey: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/passkey.md)
+  The passkey identity type.
 - [static var password: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/password.md)
+  The password identity type.
 - [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/onetimecode.md)
+  The one-time code identity type.
+### Working with raw values
+- [init(rawValue: UInt)](ascredentialidentitystore/identitytypes/init(rawvalue:).md)
+  Creates an instance with the specified raw value.
 
 ## Relationships
 

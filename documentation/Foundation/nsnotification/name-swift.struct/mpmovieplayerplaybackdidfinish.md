@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Posted when a movie has finished playing. The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerPlaybackDidFinishReasonUserInfoKey) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
+Posted when a movie has finished playing.
 
 **Availability**:
 - iOS 3.2+
@@ -18,6 +18,8 @@ static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name
 ```
 
 #### Discussion
+
+The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerPlaybackDidFinishReasonUserInfoKey) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
 
 The movie player whose state has changed is available as the object associated with the notification.
 

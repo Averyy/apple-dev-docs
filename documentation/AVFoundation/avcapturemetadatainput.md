@@ -23,10 +23,10 @@ This class provides input to an [`AVCaptureSession`](avcapturesession.md). An in
 
 ## Topics
 
-### Creating Metadata Input
+### Creating metadata input
 - [init(formatDescription: CMMetadataFormatDescription, clock: CMClock)](avcapturemetadatainput/init(formatdescription:clock:).md)
   Creates capture metadata input to provide timed groups to a capture session.
-### Providing Metadata
+### Providing metadata
 - [func append(AVTimedMetadataGroup) throws](avcapturemetadatainput/append(_:).md)
   Provides metadata to the capture session.
 
@@ -48,7 +48,7 @@ This class provides input to an [`AVCaptureSession`](avcapturesession.md). An in
   A capture output for processing timed metadata produced by a capture session.
 - [class AVMetadataObject](avmetadataobject.md)
   The abstract superclass for objects provided by a metadata capture output.
-- [Metadata Types](metadata-types.md)
+- [Metadata types](metadata-types.md)
   Inspect the supported metadata object types that the framework supports.
 
 

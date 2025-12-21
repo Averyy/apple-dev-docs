@@ -25,7 +25,7 @@ var completionDate: Date? { get set }
 
 #### Discussion
 
-Setting this property to a date will set [`isCompleted`](ekreminder/iscompleted.md) to [`true`](https://developer.apple.com/documentation/swift/true); setting this property to `nil` will set `completed` to [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property to a date will set [`isCompleted`](ekreminder/iscompleted.md) to [`true`](https://developer.apple.com/documentation/Swift/true); setting this property to `nil` will set `completed` to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

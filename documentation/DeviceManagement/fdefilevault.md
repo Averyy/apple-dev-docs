@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure FileVault.
+The payload that configures FileVault.
 
 **Availability**:
 - macOS 10.9+
@@ -83,9 +83,9 @@ As of macOS 10.15, FileVault settings require supervision or user approval when 
 ## See Also
 
 - [object FDEFileVaultOptions](fdefilevaultoptions.md)
-  The payload you use to configure FileVault options.
+  The payload that configures FileVault options.
 - [object FDERecoveryKeyEscrow](fderecoverykeyescrow.md)
-  The payload you use to configure FileVault recovery key escrow.
+  The payload that configures FileVault recovery key escrow.
 
 
 ---

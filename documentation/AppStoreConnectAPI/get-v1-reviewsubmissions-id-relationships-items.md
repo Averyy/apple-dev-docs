@@ -1,10 +1,12 @@
-# GET /v1/reviewSubmissions/{id}/relationships/items
+# List item Ids
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get the list of item IDs for a specific review submission.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## See Also
 
@@ -14,7 +16,8 @@
   Read information about a specific review submisison.
 - [List the items in a review submission](get-v1-reviewsubmissions-_id_-items.md)
   List all the items in a specific review submission.
-- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List review submission Ids](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+  Get the list of review submission IDs for a specific app.
 - [Modify a review submission](patch-v1-reviewsubmissions-_id_.md)
   Edit the details or contents of a review submission.
 - [Create a review submission](post-v1-reviewsubmissions.md)

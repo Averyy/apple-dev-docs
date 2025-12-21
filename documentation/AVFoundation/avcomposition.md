@@ -26,7 +26,7 @@ A composition is a container for one or more tracks of media. Its tracks are ins
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVCompositionTrack]>](avpartialasyncproperty/tracks-9eows.md)
   The tracks that a composition contains.
 - [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVCompositionTrack?, (any Error)?) -> Void)](avcomposition/loadtrack(withtrackid:completionhandler:).md)
@@ -35,7 +35,7 @@ A composition is a container for one or more tracks of media. Its tracks are ins
   Loads tracks that contain media of a specified type.
 - [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](avcomposition/loadtracks(withmediacharacteristic:completionhandler:).md)
   Loads tracks that contain media of a specified characteristic.
-### Accessing Tracks
+### Accessing tracks
 - [var tracks: [AVCompositionTrack]](avcomposition/tracks.md)
   The tracks that a composition contains.
 - [func track(withTrackID: CMPersistentTrackID) -> AVCompositionTrack?](avcomposition/track(withtrackid:).md)
@@ -46,17 +46,17 @@ A composition is a container for one or more tracks of media. Its tracks are ins
   Returns tracks that contain media of a specified characteristic.
 - [func unusedTrackID() -> CMPersistentTrackID](avcomposition/unusedtrackid.md)
   Returns an identifier that no other tracks in the asset use.
-### Accessing Track Groups
+### Accessing track groups
 - [var trackGroups: [AVAssetTrackGroup]](avcomposition/trackgroups.md)
   The track groups an asset contains.
-### Accessing Duration and Timing
+### Accessing duration and timing
 - [var duration: CMTime](avcomposition/duration.md)
   A time value that indicates the asset’s duration.
 - [var providesPreciseDurationAndTiming: Bool](avcomposition/providesprecisedurationandtiming.md)
   A Boolean value that indicates whether the asset provides precise duration and timing.
 - [var minimumTimeOffsetFromLive: CMTime](avcomposition/minimumtimeoffsetfromlive.md)
   A time value that indicates how closely playback follows the latest live stream content.
-### Accessing Metadata
+### Accessing metadata
 - [var metadata: [AVMetadataItem]](avcomposition/metadata.md)
   An array of metadata items for all metadata identifiers for which a value is available.
 - [var commonMetadata: [AVMetadataItem]](avcomposition/commonmetadata.md)
@@ -69,7 +69,7 @@ A composition is a container for one or more tracks of media. Its tracks are ins
   A metadata item that indicates the asset’s creation date.
 - [var lyrics: String?](avcomposition/lyrics.md)
   The lyrics of the asset in a language suitable for the current locale.
-### Determining Suitability
+### Determining suitability
 - [var isPlayable: Bool](avcomposition/isplayable.md)
   A Boolean value that indicates whether the asset has playable content.
 - [var isReadable: Bool](avcomposition/isreadable.md)
@@ -82,7 +82,7 @@ A composition is a container for one or more tracks of media. Its tracks are ins
   A Boolean value that indicates whether the asset is compatible with AirPlay Video.
 - [var isCompatibleWithSavedPhotosAlbum: Bool](avcomposition/iscompatiblewithsavedphotosalbum.md)
   A Boolean value that indicates whether you can write the composition to the Saved Photos album.
-### Inspecting Preferences
+### Inspecting preferences
 - [var preferredRate: Float](avcomposition/preferredrate.md)
   The asset’s rate preference for playing its media.
 - [var preferredVolume: Float](avcomposition/preferredvolume.md)
@@ -93,30 +93,30 @@ A composition is a container for one or more tracks of media. Its tracks are ins
   The default media selections for this asset’s media selection groups.
 - [var preferredDisplayCriteria: AVDisplayCriteria](avcomposition/preferreddisplaycriteria.md)
   The asset’s display mode preference for optimal playback of its content.
-### Accessing Media Selections
+### Accessing media selections
 - [var allMediaSelections: [AVMediaSelection]](avcomposition/allmediaselections.md)
   The array of available media selections for this asset.
 - [var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacteristic]](avcomposition/availablemediacharacteristicswithmediaselectionoptions.md)
   An array of media characteristics for which a media selection option is available.
 - [func mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristic) -> AVMediaSelectionGroup?](avcomposition/mediaselectiongroup(formediacharacteristic:).md)
   Returns a media selection group that contains one or more options with the specified media characteristic.
-### Accessing Chapter Metadata
+### Accessing chapter metadata
 - [var availableChapterLocales: [Locale]](avcomposition/availablechapterlocales.md)
   The locales of the asset’s chapter metadata.
 - [func chapterMetadataGroups(bestMatchingPreferredLanguages: [String]) -> [AVTimedMetadataGroup]](avcomposition/chaptermetadatagroups(bestmatchingpreferredlanguages:).md)
   Returns an array of chapters with a locale that best matches the list of preferred languages.
 - [func chapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]?) -> [AVTimedMetadataGroup]](avcomposition/chaptermetadatagroups(withtitlelocale:containingitemswithcommonkeys:).md)
   Returns an array of chapters that contain the specified title locale and common keys.
-### Accessing Visual Dimensions
+### Accessing visual dimensions
 - [var naturalSize: CGSize](avcomposition/naturalsize.md)
   The authored size of the visual portion of the composition.
-### Accessing Initialization Options
+### Accessing initialization options
 - [var urlAssetInitializationOptions: [String : Any]](avcomposition/urlassetinitializationoptions.md)
   The options you used to create a composition.
-### Determining Content Protections
+### Determining content protections
 - [var hasProtectedContent: Bool](avcomposition/hasprotectedcontent.md)
   A Boolean value that indicates whether the asset contains protected content.
-### Determining Fragment Support
+### Determining fragment support
 - [var canContainFragments: Bool](avcomposition/cancontainfragments.md)
   A Boolean value that indicates whether you can extend the asset by fragments.
 - [var containsFragments: Bool](avcomposition/containsfragments.md)

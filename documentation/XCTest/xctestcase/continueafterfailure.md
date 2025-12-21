@@ -13,7 +13,7 @@ var continueAfterFailure: Bool { get set }
 
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). Set this property to [`false`](https://developer.apple.com/documentation/swift/false) within a test method to end execution of that method as soon as a failure occurs. Other test methods in the suite may still execute after a test fails.
+The default is [`true`](https://developer.apple.com/documentation/Swift/true). Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) within a test method to end execution of that method as soon as a failure occurs. Other test methods in the suite may still execute after a test fails.
 
 ## See Also
 

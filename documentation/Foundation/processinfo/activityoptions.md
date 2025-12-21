@@ -98,12 +98,14 @@ NSActivityUserInitiated & ~NSActivitySuddenTerminationDisabled
 
 ## See Also
 
-- [struct OperatingSystemVersion](operatingsystemversion.md)
-  A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers.
-- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
-  Values used to indicate the system’s thermal state.
-- [Anonymous](1552984-anonymous.md)
-  The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
+- [func beginActivity(options: ProcessInfo.ActivityOptions, reason: String) -> any NSObjectProtocol](processinfo/beginactivity(options:reason:).md)
+  Begin an activity using the given options and reason.
+- [func endActivity(any NSObjectProtocol)](processinfo/endactivity(_:).md)
+  Ends the given activity.
+- [func performActivity(options: ProcessInfo.ActivityOptions, reason: String, using: () -> Void)](processinfo/performactivity(options:reason:using:).md)
+  Synchronously perform an activity defined by a given block using the given options.
+- [func performExpiringActivity(withReason: String, using: (Bool) -> Void)](processinfo/performexpiringactivity(withreason:using:).md)
+  Performs the specified block asynchronously and notifies you if the process is about to be suspended.
 
 
 ---

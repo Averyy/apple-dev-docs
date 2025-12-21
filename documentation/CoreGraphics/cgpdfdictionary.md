@@ -18,7 +18,7 @@ bool CGPDFDictionaryGet<DataType> (
 );
 ```
 
-These functions test whether there is an object associated with the specified key. If there is an object associated with the specified key, they test its data type. If there is no associated object, or if there is but it is not of the expected type, the function returns [`false`](https://developer.apple.com/documentation/swift/false). If there is an object associated with the specified key and it is of the expected type, the function returns [`true`](https://developer.apple.com/documentation/swift/true) and the object is passed back in the `value` parameter.
+These functions test whether there is an object associated with the specified key. If there is an object associated with the specified key, they test its data type. If there is no associated object, or if there is but it is not of the expected type, the function returns [`false`](https://developer.apple.com/documentation/Swift/false). If there is an object associated with the specified key and it is of the expected type, the function returns [`true`](https://developer.apple.com/documentation/Swift/true) and the object is passed back in the `value` parameter.
 
 This object is not derived from CFType and therefore there are no functions for retaining and releasing it. CGPDFDictionary objects exist only as constituent parts of a CGPDFDocument object, and they are managed by their container.
 

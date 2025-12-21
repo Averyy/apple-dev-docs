@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: method
 
+Construct the compute plan of a model asynchronously given the location of its on-disk representation.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -18,9 +20,15 @@
 static func load(contentsOf url: URL, configuration: MLModelConfiguration) async throws -> MLComputePlan
 ```
 
+## Parameters
+
+- `url`: The on-disk location of the compiled model (.mlmodelc directory).
+- `configuration`: The model configuration.
+
 ## See Also
 
 - [static func load(asset: MLModelAsset, configuration: MLModelConfiguration) async throws -> MLComputePlan](mlcomputeplan-1w21n/load(asset:configuration:).md)
+  Construct the compute plan of a model asynchronously given the model asset.
 
 
 ---

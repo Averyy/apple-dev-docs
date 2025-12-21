@@ -34,8 +34,6 @@ This is an optimized type used internally by the core scheduling operations.  It
 - [init<E>(complexEquality: E)](unownedserialexecutor/init(complexequality:).md)
   Opts the executor into complex “same exclusive execution context” equality checks.
 - [init<E>(ordinary: E)](unownedserialexecutor/init(ordinary:).md)
-### Instance Methods
-- [func asSerialExecutor() -> (any SerialExecutor)?](unownedserialexecutor/asserialexecutor.md)
 
 ## Relationships
 

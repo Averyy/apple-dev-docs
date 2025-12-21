@@ -6,13 +6,13 @@
 Returns the UTF8Span containing all the content up to the iterator’s current position.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,8 @@ func prefix() -> UTF8Span
 #### Discussion
 
 The resultant `UTF8Span` has the same lifetime constraints as `self`.
+
+> **Note**: O(1)
 
 
 ---

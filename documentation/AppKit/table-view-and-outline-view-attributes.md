@@ -20,7 +20,7 @@ Attributes that are specific to tables and outlines.
 - [static let selectedRows: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/selectedrows.md)
   The table’s selected rows (`NSArray`).
 - [static let sortDirection: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/sortdirection.md)
-  The column’s sort direction (`NSString`). See Column Sort Direction  for possible values.
+  The column’s sort direction (`NSString`).
 - [static let visibleColumns: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visiblecolumns.md)
   The table’s visible columns (`NSArray`).
 - [static let visibleRows: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visiblerows.md)

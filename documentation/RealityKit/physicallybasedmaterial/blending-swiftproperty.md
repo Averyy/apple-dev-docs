@@ -10,7 +10,7 @@ The transparency of an entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -42,7 +42,7 @@ To use a UV-mapped grayscale image texture to specify different opacity values f
 ```swift
 if let opacityResource = try? TextureResource.load(named:
 "entity_opacity") {
-    let opacityMap = MaterialParameterTypes.Texture(opacityResource)
+    let opacityMap = MaterialParameters.Texture(opacityResource)
     material.blending = .transparent(opacity: .init(texture: opacityMap))
 }
 ```

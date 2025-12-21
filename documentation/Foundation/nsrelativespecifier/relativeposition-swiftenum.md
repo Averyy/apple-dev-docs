@@ -22,10 +22,6 @@ enum RelativePosition
   Specifies a position after another object.
 - [NSRelativeSpecifier.RelativePosition.before](nsrelativespecifier/relativeposition-swift.enum/before.md)
   Specifies a position before another object.
-- [NSRelativeSpecifier.RelativePosition.after](nsrelativespecifier/relativeposition-swift.enum/after.md)
-  Specifies a position after another object.
-- [NSRelativeSpecifier.RelativePosition.before](nsrelativespecifier/relativeposition-swift.enum/before.md)
-  Specifies a position before another object.
 ### Initializers
 - [init?(rawValue: UInt)](nsrelativespecifier/relativeposition-swift.enum/init(rawvalue:).md)
 

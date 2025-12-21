@@ -33,6 +33,15 @@ Parameters:
 
 > **Note**: For t values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
 
+## See Also
+
+- [init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-5c4bo.md)
+  Creates a mark that graphs a parametric function (x, y) = f(t).
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-7bvyi.md)
+  Creates a mark that graphs a parametric function (x, y) = f(t).
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringResource, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-610ta.md)
+  Creates a mark that graphs a parametric function (x, y) = f(t).
+
 
 ---
 

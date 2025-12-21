@@ -17,7 +17,7 @@ class CMSDecoder
 
 #### Overview
 
-This is object is compatible with Core Foundation and uses standard Core Foundation semantics. Dispose of it with the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+This is object is compatible with Core Foundation and uses standard Core Foundation semantics. Dispose of it with the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 ## Relationships
 

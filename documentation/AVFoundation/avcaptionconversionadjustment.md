@@ -19,7 +19,7 @@ class AVCaptionConversionAdjustment
 
 ## Topics
 
-### Accessing the Adjustment Type
+### Accessing the adjustment type
 - [var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.property.md)
   The type of caption conversion adjustment.
 - [AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.struct.md)

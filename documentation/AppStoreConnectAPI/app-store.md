@@ -25,6 +25,8 @@ Manage all aspects of your app, App Clips, in-app purchases, and customer review
   Read metadata for app and App Clip binaries included in a build you upload to App Store Connect.
 - [Build Icons](build-icons.md)
   Get icons from your app’s binary that are uploaded to App Store.
+- [Build uploads](build-uploads.md)
+  Read metadata for app builds you upload to App Store Connect.
 - [App Encryption Declarations](app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
 ### In-App Purchases and Subscriptions
@@ -71,7 +73,7 @@ Manage all aspects of your app, App Clips, in-app purchases, and customer review
   Manage the settings that make your app available for pre-order.
 - [App availability](app-availability.md)
   Manage territory and date settings that make your app available for pre-order.
-### Apple hosted background assets
+### Apple-hosted background assets
 - [Background assets](background-assets.md)
   Assets for your app that you can upload and download separately from the Apple hosted app.
 ### Featuring Nominations
@@ -86,6 +88,9 @@ Manage all aspects of your app, App Clips, in-app purchases, and customer review
   Manage the localized assets, including screenshots and previews, for an App Store version experiment treatment.
 - [App Store Version Promotions](app-store-version-promotions.md)
   Apply a version experiment treatment to your app’s product page in the App Store, or to your upcoming App Store version.
+### Android to iOS app mapping
+- [Android to iOS App Mapping](android-to-ios-app-mapping.md)
+  Create and update the metadata that maps your Android apps to your iOS apps.
 
 
 ---

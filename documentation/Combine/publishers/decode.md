@@ -22,21 +22,16 @@ struct Decode<Upstream, Output, Coder> where Upstream : Publisher, Output : Deco
 
 ## Topics
 
-### Creating a Decode Publisher
+### Creating a decode publisher
 - [init(upstream: Upstream, decoder: Coder)](publishers/decode/init(upstream:decoder:).md)
   Creates a publisher that decodes elements received from an upstream publisher, using a given decoder.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.Decode.Failure](publishers/decode/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/decode/upstream.md)
-### Applying Operators
-- [Publisher Operators](publishers-decode-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/decode/publisher-implementations.md)
 
 ## Relationships
 

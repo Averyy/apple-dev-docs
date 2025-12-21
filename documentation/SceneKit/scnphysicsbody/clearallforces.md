@@ -22,7 +22,7 @@ func clearAllForces()
 
 #### Discussion
 
-When you pass [`false`](https://developer.apple.com/documentation/swift/false) for the `impulse` parameter in the [`applyForce(_:asImpulse:)`](scnphysicsbody/applyforce(_:asimpulse:).md), [`applyForce(_:at:asImpulse:)`](scnphysicsbody/applyforce(_:at:asimpulse:).md), or [`applyTorque(_:asImpulse:)`](scnphysicsbody/applytorque(_:asimpulse:).md) method, SceneKit waits until the end of the current simulation step before applying its effect. At that time, SceneKit sums all forces and torques applied during that simulation step and changes the velocity or angular velocity of the body according to the net effect of those forces and torques.
+When you pass [`false`](https://developer.apple.com/documentation/Swift/false) for the `impulse` parameter in the [`applyForce(_:asImpulse:)`](scnphysicsbody/applyforce(_:asimpulse:).md), [`applyForce(_:at:asImpulse:)`](scnphysicsbody/applyforce(_:at:asimpulse:).md), or [`applyTorque(_:asImpulse:)`](scnphysicsbody/applytorque(_:asimpulse:).md) method, SceneKit waits until the end of the current simulation step before applying its effect. At that time, SceneKit sums all forces and torques applied during that simulation step and changes the velocity or angular velocity of the body according to the net effect of those forces and torques.
 
 Call [`clearAllForces()`](scnphysicsbody/clearallforces().md) to cancel any forces and torques previously applied during the current simulation step.
 

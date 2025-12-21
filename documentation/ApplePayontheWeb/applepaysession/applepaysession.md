@@ -32,7 +32,7 @@ Check [`supportsVersion`](applepaysession/supportsversion.md) before using any A
 
 ## Parameters
 
-- `version`: The Apple Pay version number your website supports. See  doc://com.apple.documentation/documentation/apple_pay_on_the_web/apple_pay_on_the_web_version_history  for version information.
+- `version`: The Apple Pay version number your website supports. See   for version information.
 - `paymentRequest`: An   object that contains the information to be displayed on the Apple Pay payment sheet.
 
 ## See Also

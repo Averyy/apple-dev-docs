@@ -6,10 +6,8 @@
 A control that represents a single on-screen button.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,31 +22,15 @@ This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/do
 ## Topics
 
 ### Inspecting a button
-- [var collider: any TCCollider](tcbutton/collider.md)
-  The collider for the button.
-- [var highlightTime: simd_float1](tcbutton/highlighttime.md)
+- [var contents: TCControlContents?](tcbutton/contents.md)
+  The contents for the button in its normal state.
+- [var highlightDuration: TimeInterval](tcbutton/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var isToggle: Bool](tcbutton/istoggle.md)
-  A Boolean value that indicates whether the button is a toggle button.
-- [var layer: simd_int1](tcbutton/layer.md)
-  The layer of the button, used for z-sorting.
-- [var offset: CGPoint](tcbutton/offset.md)
-  The control’s offset from the anchor, which determines its position.
-- [var position: CGPoint](tcbutton/position.md)
-  The position of the button in points, with the origin at the top left corner of the screen.
-- [var size: CGSize](tcbutton/size.md)
-  The size (width, height) of the button in points.
-- [var toggleVisuals: TCControlVisuals?](tcbutton/togglevisuals.md)
-  The visuals for the button when it is toggled on.
-- [var touchController: TCTouchController](tcbutton/touchcontroller.md)
-  The touch controller that manages this button.
-- [var visuals: TCControlVisuals?](tcbutton/visuals.md)
-  The visuals for the button in its normal state.
-### Getting the anchor
-- [var anchor: TCTransformAnchor](tcbutton/anchor.md)
-  The anchor point that the control’s offset is relative to.
-- [enum TCTransformAnchor](tctransformanchor.md)
-  Defines the anchor point for a transform.
+### Getting the collider shape
+- [var colliderShape: TCColliderShape](tcbutton/collidershape.md)
+  The collider shape for the button.
+- [enum TCColliderShape](tccollidershape.md)
+  Defines the shape of a control collider.
 
 ## Relationships
 
@@ -62,7 +44,7 @@ This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/do
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [TCControl](tccontrol.md)
-- [TCTransform](tctransform.md)
+- [TCControlLayout](tccontrollayout.md)
 
 ## See Also
 
@@ -70,6 +52,8 @@ This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/do
   A protocol that defines the base properties and methods for all touch controls.
 - [class TCDirectionPad](tcdirectionpad.md)
   An object that represents a direction pad.
+- [class TCSwitch](tcswitch.md)
+  A control that represents a single on-screen switch.
 - [class TCThumbstick](tcthumbstick.md)
   Represents a single on-screen thumbstick.
 - [class TCThrottle](tcthrottle.md)

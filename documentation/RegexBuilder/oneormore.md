@@ -67,12 +67,6 @@ struct OneOrMore<Output>
   Creates a regex component that matches the given component one or more times.
 - [init<W, C1, C2, C3, C4>(some RegexComponent, RegexRepetitionBehavior?)](oneormore/init(_:_:)-yc32.md)
   Creates a regex component that matches the given component one or more times.
-### Instance Properties
-- [var regex: Regex<Output>](oneormore/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [OneOrMore.RegexOutput](oneormore/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

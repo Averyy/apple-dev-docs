@@ -16,7 +16,7 @@ static var frameDropped: MEDecodeFrameStatus { get }
 
 #### Discussion
 
-The decoder sets this value if [`doNotOutputFrame`](medecodeframeoptions/donotoutputframe.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The decoder sets this value if [`doNotOutputFrame`](medecodeframeoptions/donotoutputframe.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

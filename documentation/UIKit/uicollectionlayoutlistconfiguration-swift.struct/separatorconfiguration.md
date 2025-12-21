@@ -19,7 +19,7 @@ var separatorConfiguration: UIListSeparatorConfiguration { get set }
 
 #### Discussion
 
-This configuration only takes effect if [`showsSeparators`](uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This configuration only takes effect if [`showsSeparators`](uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 For more granular control over list separator appearance, use [`itemSeparatorHandler`](uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.property.md).
 

@@ -27,7 +27,7 @@ Clients should call [`invalidate()`](credentialtransaction/configuration/invalid
 ## See Also
 
 - [CredentialTransaction.Configuration](credentialtransaction/configuration.md)
-  An object that provides configuration information for a transaction that the client intends to peform.
+  An object that provides configuration information for a transaction that the client intends to perform.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an Adobe Photoshop image. See [`8BIM Image Properties`](8bim-image-properties.md).
+A dictionary of key-value pairs for an Adobe Photoshop image.
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an Adobe Photoshop image. See [`8BIM Image P
 ```swift
 let kCGImageProperty8BIMDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`8BIM Image Properties`](8bim-image-properties.md).
 
 
 ---

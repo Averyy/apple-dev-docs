@@ -16,7 +16,7 @@ var addsToRecentItems: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes AppKit to add the items to the Recent Items menu.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes AppKit to add the items to the Recent Items menu.
 
 ## See Also
 

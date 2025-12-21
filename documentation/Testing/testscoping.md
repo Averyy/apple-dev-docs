@@ -31,6 +31,7 @@ Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
+- [IssueHandlingTrait](issuehandlingtrait.md)
 - [ParallelizationTrait](parallelizationtrait.md)
 
 ## See Also

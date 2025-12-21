@@ -28,7 +28,7 @@ Use this property to simulate effects such as fireworks—one particle system si
 
 The default value of this property is `nil`, specifying that no additional systems are added to the scene on particle death.
 
-> ❗ **Important**:  Adding a new particle system to the scene for each particle death can drastically increase the total number of rendered particles. To maintain adequate rendering performance, set the [`loops`](scnparticlesystem/loops.md) property to [`false`](https://developer.apple.com/documentation/swift/false) for any particle system you assign to the [`systemSpawnedOnDying`](scnparticlesystem/systemspawnedondying.md) property.
+> ❗ **Important**:  Adding a new particle system to the scene for each particle death can drastically increase the total number of rendered particles. To maintain adequate rendering performance, set the [`loops`](scnparticlesystem/loops.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) for any particle system you assign to the [`systemSpawnedOnDying`](scnparticlesystem/systemspawnedondying.md) property.
 
 ## See Also
 

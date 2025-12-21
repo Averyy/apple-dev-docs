@@ -11,9 +11,7 @@ An option that constrains reverse lookup results to a specific language.
 ## Declaration
 
 ```swift
-dictionary GeocoderReverseLookupOptions {
-	string language;
-};
+interface GeocoderReverseLookupOptions
 ```
 
 #### Overview
@@ -28,13 +26,13 @@ Configure [`GeocoderReverseLookupOptions`](geocoderreverselookupoptions.md) when
 
 ## See Also
 
-- [lookup](mapkit.geocoder/lookup.md)
+- [lookup(place, callback, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [GeocoderLookupOptions](geocoderlookupoptions.md)
+- [interface GeocoderLookupOptions](geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup](mapkit.geocoder/reverselookup.md)
+- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
-- [GeocoderResponse](geocoderresponse.md)
+- [interface GeocoderResponse](geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 
 

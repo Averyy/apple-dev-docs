@@ -51,8 +51,12 @@ struct Name
   Posted after an item is removed from a toolbar.
 - [class let willAddItemNotification: NSNotification.Name](../AppKit/NSToolbar/willAddItemNotification.md)
   Posts before the toolbar adds a new item.
+- [class let boundsDidChangeNotification: NSNotification.Name](../AppKit/NSView/boundsDidChangeNotification.md)
+  A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
 - [class let didUpdateTrackingAreasNotification: NSNotification.Name](../AppKit/NSView/didUpdateTrackingAreasNotification.md)
   Posted whenever a view recalculates its tracking areas.
+- [class let frameDidChangeNotification: NSNotification.Name](../AppKit/NSView/frameDidChangeNotification.md)
+  A notification that posts when the view’s frame rectangle changes to a new value.
 - [class let didBecomeKeyNotification: NSNotification.Name](../AppKit/NSWindow/didBecomeKeyNotification.md)
   A notification that the window object became the key window.
 - [class let didBecomeMainNotification: NSNotification.Name](../AppKit/NSWindow/didBecomeMainNotification.md)
@@ -155,6 +159,8 @@ struct Name
   A notification that the workspace posts before the device goes to sleep.
 - [class let willUnmountNotification: NSNotification.Name](../AppKit/NSWorkspace/willUnmountNotification.md)
   A notification that the workspace posts when the Finder is about to unmount a device.
+- [class let didChangeNotification: NSNotification.Name](../AppKit/NSColorList/didChangeNotification.md)
+  Posted whenever a color list changes.
 - [class let didChangeNotification: NSNotification.Name](../AppKit/NSColorList/didChangeNotification.md)
   Posted whenever a color list changes.
 - [class let selectionDidChangeNotification: NSNotification.Name](../AppKit/NSComboBox/selectionDidChangeNotification.md)
@@ -288,88 +294,104 @@ struct Name
   Posted when the app’s occlusion state changes.
 - [class let didChangeScreenParametersNotification: NSNotification.Name](../AppKit/NSApplication/didChangeScreenParametersNotification.md)
   Posted when the configuration of the displays attached to the computer is changed.
+- [class let didFinishLaunchingNotification: NSNotification.Name](../AppKit/NSApplication/didFinishLaunchingNotification.md)
+  Posted at the end of the [`finishLaunching()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/finishLaunching()) method to indicate that the app has completed launching and is ready to run.
 - [class let didFinishRestoringWindowsNotification: NSNotification.Name](../AppKit/NSApplication/didFinishRestoringWindowsNotification.md)
   Posted when the app has finished restoring windows.
+- [class let didHideNotification: NSNotification.Name](../AppKit/NSApplication/didHideNotification.md)
+  Posted at the end of the [`hide(_:)`](doc://com.apple.appkit/documentation/AppKit/NSApplication/hide(_:)) method to indicate that the app is now hidden.
 - [class let didResignActiveNotification: NSNotification.Name](../AppKit/NSApplication/didResignActiveNotification.md)
   Posted immediately after the app gives up its active status to another app.
+- [class let didUnhideNotification: NSNotification.Name](../AppKit/NSApplication/didUnhideNotification.md)
+  Posted at the end of the [`unhideWithoutActivation()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/unhideWithoutActivation()) method to indicate that the app is now visible.
+- [class let didUpdateNotification: NSNotification.Name](../AppKit/NSApplication/didUpdateNotification.md)
+  Posted at the end of the [`updateWindows()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/updateWindows()) method to indicate that the app has finished updating its windows.
 - [class let willBecomeActiveNotification: NSNotification.Name](../AppKit/NSApplication/willBecomeActiveNotification.md)
   Posted immediately before the app becomes active.
+- [class let willFinishLaunchingNotification: NSNotification.Name](../AppKit/NSApplication/willFinishLaunchingNotification.md)
+  Posted at the start of the [`finishLaunching()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/finishLaunching()) method to indicate that the app has completed its initialization process and is about to finish launching.
+- [class let willHideNotification: NSNotification.Name](../AppKit/NSApplication/willHideNotification.md)
+  Posted at the start of the [`hide(_:)`](doc://com.apple.appkit/documentation/AppKit/NSApplication/hide(_:)) method to indicate that the app is about to be hidden.
 - [class let willResignActiveNotification: NSNotification.Name](../AppKit/NSApplication/willResignActiveNotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](../AppKit/NSApplication/willTerminateNotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
+- [class let willUnhideNotification: NSNotification.Name](../AppKit/NSApplication/willUnhideNotification.md)
+  Posted at the start of the [`unhideWithoutActivation()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/unhideWithoutActivation()) method to indicate that the app is about to become visible.
+- [class let willUpdateNotification: NSNotification.Name](../AppKit/NSApplication/willUpdateNotification.md)
+  Posted at the start of the [`updateWindows()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/updateWindows()) method to indicate that the app is about to update its windows.
 - [class let columnConfigurationDidChangeNotification: NSNotification.Name](../AppKit/NSBrowser/columnConfigurationDidChangeNotification.md)
   Notifies the delegate when the width of a browser column has changed.
 - [static let NSClassDescriptionNeededForClass: NSNotification.Name](nsnotification/name-swift.struct/nsclassdescriptionneededforclass.md)
   Posted by [`init(for:)`](nsclassdescription/init(for:).md) when a class description cannot be found for a class.
 - [static let NSApplicationProtectedDataDidBecomeAvailable: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationprotecteddatadidbecomeavailable.md)
 - [static let NSApplicationProtectedDataWillBecomeUnavailable: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationprotecteddatawillbecomeunavailable.md)
-- [static let announcementRequested: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1530633-announcementrequested.md)
-  This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key  and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate  to the `userInfo` dictionary.
-- [static let applicationActivated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1527225-applicationactivated.md)
-  This notification is posted after the app has been activated. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let applicationDeactivated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535292-applicationdeactivated.md)
-  This notification is posted after the app has been deactivated.  Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let applicationHidden: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1534213-applicationhidden.md)
-  This notification is posted after the app is hidden. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let applicationShown: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1527720-applicationshown.md)
-  This notification is posted after the app is shown. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let created: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1527609-created.md)
-  This notification is posted after an accessibility element is created. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let drawerCreated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1533192-drawercreated.md)
-  This notification is posted after a drawer appears. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let focusedUIElementChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1534777-focuseduielementchanged.md)
-  This notification is posted after an accessibility element gains focus. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let focusedWindowChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1531364-focusedwindowchanged.md)
-  This notification is posted after the key window changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let helpTagCreated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535267-helptagcreated.md)
-  This notification is posted after a help tag appears. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let layoutChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1524251-layoutchanged.md)
-  This notification is posted after the UI changes in a way that requires the attention of an accessibility client. This notification should be accompanied by a `userInfo` dictionary with the key  and an array containing the UI elements that have been added or changed. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let mainWindowChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535613-mainwindowchanged.md)
-  This notification is posted after the main window changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let moved: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1529933-moved.md)
-  This notification is posted after an accessibility element moves. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let resized: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1531722-resized.md)
-  This notification is posted after an accessibility element’s size changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let rowCollapsed: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1527187-rowcollapsed.md)
-  This notification is posted after a row collapses. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let rowCountChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1525029-rowcountchanged.md)
-  This notification is posted after a row is added or deleted. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let rowExpanded: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1526130-rowexpanded.md)
-  This notification is posted after a row expands. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedCellsChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1531991-selectedcellschanged.md)
-  This notification is posted after one or more cells in a cell-based table are selected or deselected. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedChildrenChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1531928-selectedchildrenchanged.md)
-  This notification is posted after one or more child elements are selected or deselected. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedChildrenMoved: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1525499-selectedchildrenmoved.md)
-  This notification is posted after the selected items in a layout area move. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedColumnsChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535491-selectedcolumnschanged.md)
-  This notification is posted after one or more columns are selected or deselected. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedRowsChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1525430-selectedrowschanged.md)
-  This notification is posted after one or more rows are selected or deselected. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let selectedTextChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535460-selectedtextchanged.md)
-  This notification is posted after text is selected or deselected.  Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let sheetCreated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1533617-sheetcreated.md)
-  This notification is posted after a sheet appears.  Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let titleChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1534878-titlechanged.md)
-  This notification is posted after an accessibility element’s title changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let uiElementDestroyed: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1530862-uielementdestroyed.md)
-  This notification is posted after an accessibility element is destroyed. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let unitsChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1524318-unitschanged.md)
-  This notification is posted after the units in a layout area change. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let valueChanged: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1524951-valuechanged.md)
-  This notification is posted after an accessibility element’s value changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let windowCreated: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1528694-windowcreated.md)
-  This notification is posted after a new window appears. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let windowDeminiaturized: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1526464-windowdeminiaturized.md)
-  This notification is posted after a window is restored to full size from the Dock.  Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let windowMiniaturized: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1528232-windowminiaturized.md)
-  This notification is posted after a window is put in the Dock. Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let windowMoved: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1526112-windowmoved.md)
-  This notification is posted after a window moves.  Post this notification using the  function instead of an `NSNotificationCenter` instance.
-- [static let windowResized: NSAccessibility.Notification](../appkit/nsaccessibility/notification/1535476-windowresized.md)
-  This notification is posted after a window’s size changes. Post this notification using the  function instead of an `NSNotificationCenter` instance.
+- [static let announcementRequested: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/announcementRequested.md)
+  This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key [`announcement`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/announcement) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/priority) to the `userInfo` dictionary.
+- [static let applicationActivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationActivated.md)
+  This notification is posted after the app has been activated. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let applicationDeactivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationDeactivated.md)
+  This notification is posted after the app has been deactivated.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let applicationHidden: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationHidden.md)
+  This notification is posted after the app is hidden. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let applicationShown: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationShown.md)
+  This notification is posted after the app is shown. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let created: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/created.md)
+  This notification is posted after an accessibility element is created. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let drawerCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/drawerCreated.md)
+  This notification is posted after a drawer appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let focusedUIElementChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/focusedUIElementChanged.md)
+  This notification is posted after an accessibility element gains focus. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let focusedWindowChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/focusedWindowChanged.md)
+  This notification is posted after the key window changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let helpTagCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/helpTagCreated.md)
+  This notification is posted after a help tag appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let layoutChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/layoutChanged.md)
+  This notification is posted after the UI changes in a way that requires the attention of an accessibility client. This notification should be accompanied by a `userInfo` dictionary with the key [`uiElements`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/uiElements) and an array containing the UI elements that have been added or changed. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let mainWindowChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/mainWindowChanged.md)
+  This notification is posted after the main window changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let moved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/moved.md)
+  This notification is posted after an accessibility element moves. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let resized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/resized.md)
+  This notification is posted after an accessibility element’s size changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let rowCollapsed: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowCollapsed.md)
+  This notification is posted after a row collapses. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let rowCountChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowCountChanged.md)
+  This notification is posted after a row is added or deleted. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let rowExpanded: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowExpanded.md)
+  This notification is posted after a row expands. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedCellsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedCellsChanged.md)
+  This notification is posted after one or more cells in a cell-based table are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedChildrenChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedChildrenChanged.md)
+  This notification is posted after one or more child elements are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedChildrenMoved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedChildrenMoved.md)
+  This notification is posted after the selected items in a layout area move. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedColumnsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedColumnsChanged.md)
+  This notification is posted after one or more columns are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedRowsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedRowsChanged.md)
+  This notification is posted after one or more rows are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let selectedTextChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedTextChanged.md)
+  This notification is posted after text is selected or deselected.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let sheetCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/sheetCreated.md)
+  This notification is posted after a sheet appears.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let titleChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/titleChanged.md)
+  This notification is posted after an accessibility element’s title changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let uiElementDestroyed: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/uiElementDestroyed.md)
+  This notification is posted after an accessibility element is destroyed. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let unitsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/unitsChanged.md)
+  This notification is posted after the units in a layout area change. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let valueChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/valueChanged.md)
+  This notification is posted after an accessibility element’s value changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let windowCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowCreated.md)
+  This notification is posted after a new window appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let windowDeminiaturized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowDeminiaturized.md)
+  This notification is posted after a window is restored to full size from the Dock.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let windowMiniaturized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowMiniaturized.md)
+  This notification is posted after a window is put in the Dock. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let windowMoved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowMoved.md)
+  This notification is posted after a window moves.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
+- [static let windowResized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowResized.md)
+  This notification is posted after a window’s size changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
 - [class let progressMarkNotification: NSNotification.Name](../AppKit/NSAnimation/progressMarkNotification.md)
   Posted when the current progress of a running animation reaches one of its progress marks.
 - [class let antialiasThresholdChangedNotification: NSNotification.Name](../AppKit/NSFont/antialiasThresholdChangedNotification.md)
@@ -679,7 +701,7 @@ struct Name
 - [static let MPMoviePlayerNowPlayingMovieDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayernowplayingmoviedidchange.md)
   Posted when the currently playing movie has changed. There is no `userInfo` dictionary.
 - [static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerplaybackdidfinish.md)
-  Posted when a movie has finished playing. The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerPlaybackDidFinishReasonUserInfoKey) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
+  Posted when a movie has finished playing.
 - [static let MPMoviePlayerPlaybackStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerplaybackstatedidchange.md)
   Posted when a movie player’s playback state has changed. There is no `userInfo` dictionary.
 - [static let MPMoviePlayerReadyForDisplayDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerreadyfordisplaydidchange.md)
@@ -691,9 +713,9 @@ struct Name
 - [static let MPMoviePlayerTimedMetadataUpdated: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayertimedmetadataupdated.md)
   Posted when new timed metadata arrives.
 - [static let MPMoviePlayerWillEnterFullscreen: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerwillenterfullscreen.md)
-  Posted when a movie player is about to enter full-screen mode. The `userInfo` dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/MediaPlayer/fullscreen-notification-keys).
+  Posted when a movie player is about to enter full-screen mode.
 - [static let MPMoviePlayerWillExitFullscreen: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerwillexitfullscreen.md)
-  Posted when a movie player is about to exit full-screen mode. The `userInfo` dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/MediaPlayer/fullscreen-notification-keys).
+  Posted when a movie player is about to exit full-screen mode.
 - [static let MPMovieSourceTypeAvailable: NSNotification.Name](nsnotification/name-swift.struct/mpmoviesourcetypeavailable.md)
   Posted when the source type of a movie was previously unknown and is newly available. There is no `userInfo` dictionary.
 - [static let MPVolumeViewWirelessRouteActiveDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpvolumeviewwirelessrouteactivedidchange.md)
@@ -702,7 +724,7 @@ struct Name
   Indicates the available wireless routes changed.
 ### MessageUI
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](nsnotification/name-swift.struct/mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
-  Posted when the value returned by the [`canSendText()`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController/canSendText()) class method has changed.
+  Posted when the current device’s ability to send text messages changes.
 ### NetworkExtension
 - [static let NEFilterConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nefilterconfigurationdidchange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.
@@ -720,7 +742,7 @@ struct Name
   A notification that PassKit posts when it adds or removes a pass on a paired remote device.
 ### PDFKit
 - [static let PDFDocumentDidBeginFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginfind.md)
-  A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method begins finding.
+  A notification that the document began a find operation.
 - [static let PDFDocumentDidBeginPageFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginpagefind.md)
   A notification that a find operation begins working on a new page of a document.
 - [static let PDFDocumentDidBeginPageWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginpagewrite.md)
@@ -728,7 +750,7 @@ struct Name
 - [static let PDFDocumentDidBeginWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidbeginwrite.md)
   A notification that a write operation begins working on a document.
 - [static let PDFDocumentDidEndFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendfind.md)
-  A notification that the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method returns.
+  A notification that the document finished a find operation.
 - [static let PDFDocumentDidEndPageFind: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagefind.md)
   A notification that a find operation finishes working on a page in a document.
 - [static let PDFDocumentDidEndPageWrite: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidendpagewrite.md)
@@ -738,7 +760,7 @@ struct Name
 - [static let PDFDocumentDidFindMatch: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidfindmatch.md)
   A notification that a string match is found in a document.
 - [static let PDFDocumentDidUnlock: NSNotification.Name](nsnotification/name-swift.struct/pdfdocumentdidunlock.md)
-  A notification that a document unlocks after a [`unlock(withPassword:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/unlock(withPassword:)) message.
+  A notification that a document unlocked.
 - [static let PDFThumbnailViewDocumentEdited: NSNotification.Name](nsnotification/name-swift.struct/pdfthumbnailviewdocumentedited.md)
 - [static let PDFViewAnnotationHit: NSNotification.Name](nsnotification/name-swift.struct/pdfviewannotationhit.md)
   A notification posted when the user clicks on an annotation.
@@ -807,143 +829,143 @@ struct Name
 - [static let TVTopShelfItemsDidChange: NSNotification.Name](nsnotification/name-swift.struct/tvtopshelfitemsdidchange.md)
   A notification to post when your app’s Top Shelf content has changed.
 ### UIKit
-- [nonisolated static let announcementDidFinishNotification: NSNotification.Name](../UIKit/UIAccessibility/announcementDidFinishNotification.md)
+- [static let announcementDidFinishNotification: NSNotification.Name](../UIKit/UIAccessibility/announcementDidFinishNotification.md)
   A notification that UIKit posts when the system finishes reading an announcement.
-- [nonisolated static let elementFocusedNotification: NSNotification.Name](../UIKit/UIAccessibility/elementFocusedNotification.md)
+- [static let elementFocusedNotification: NSNotification.Name](../UIKit/UIAccessibility/elementFocusedNotification.md)
   A notification that UIKit posts when an assistive app focuses on an accessibility element.
-- [nonisolated static let assistiveTouchStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/assistiveTouchStatusDidChangeNotification.md)
+- [static let assistiveTouchStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/assistiveTouchStatusDidChangeNotification.md)
   A notification that indicates a change in the status of AssistiveTouch.
-- [nonisolated static let boldTextStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/boldTextStatusDidChangeNotification.md)
+- [static let boldTextStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/boldTextStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Bold Text setting changes.
-- [nonisolated static let closedCaptioningStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/closedCaptioningStatusDidChangeNotification.md)
+- [static let closedCaptioningStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/closedCaptioningStatusDidChangeNotification.md)
   A notification that UIKit posts when the setting for Closed Captions + SDH changes.
-- [nonisolated static let darkerSystemColorsStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/darkerSystemColorsStatusDidChangeNotification.md)
+- [static let darkerSystemColorsStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/darkerSystemColorsStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Increase Contrast setting changes.
-- [nonisolated static let grayscaleStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/grayscaleStatusDidChangeNotification.md)
+- [static let grayscaleStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/grayscaleStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Grayscale setting changes.
-- [nonisolated static let guidedAccessStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/guidedAccessStatusDidChangeNotification.md)
+- [static let guidedAccessStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/guidedAccessStatusDidChangeNotification.md)
   A notification that indicates when a Guided Access session starts or ends.
-- [nonisolated static let hearingDevicePairedEarDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/hearingDevicePairedEarDidChangeNotification.md)
+- [static let hearingDevicePairedEarDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/hearingDevicePairedEarDidChangeNotification.md)
   A notification that UIKit posts when there’s a change to the currently paired hearing devices.
-- [nonisolated static let invertColorsStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/invertColorsStatusDidChangeNotification.md)
+- [static let invertColorsStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/invertColorsStatusDidChangeNotification.md)
   A notification that UIKit posts when the settings for inverted colors change.
-- [nonisolated static let monoAudioStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/monoAudioStatusDidChangeNotification.md)
+- [static let monoAudioStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/monoAudioStatusDidChangeNotification.md)
   A notification that UIKit posts when system audio changes from stereo to mono.
-- [nonisolated static let reduceMotionStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/reduceMotionStatusDidChangeNotification.md)
+- [static let reduceMotionStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/reduceMotionStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Reduce Motion setting changes.
-- [nonisolated static let reduceTransparencyStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/reduceTransparencyStatusDidChangeNotification.md)
+- [static let reduceTransparencyStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/reduceTransparencyStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Reduce Transparency setting changes.
-- [nonisolated static let shakeToUndoDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/shakeToUndoDidChangeNotification.md)
+- [static let shakeToUndoDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/shakeToUndoDidChangeNotification.md)
   A notification that UIKit posts when the system’s Shake to Undo setting changes.
-- [nonisolated static let speakScreenStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/speakScreenStatusDidChangeNotification.md)
+- [static let speakScreenStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/speakScreenStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Speak Screen setting changes.
-- [nonisolated static let speakSelectionStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/speakSelectionStatusDidChangeNotification.md)
+- [static let speakSelectionStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/speakSelectionStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Speak Selection setting changes.
-- [nonisolated static let switchControlStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/switchControlStatusDidChangeNotification.md)
+- [static let switchControlStatusDidChangeNotification: NSNotification.Name](../UIKit/UIAccessibility/switchControlStatusDidChangeNotification.md)
   A notification that UIKit posts when the system’s Switch Control setting changes.
-- [nonisolated class let didBecomeActiveNotification: NSNotification.Name](../UIKit/UIApplication/didBecomeActiveNotification.md)
+- [class let didBecomeActiveNotification: NSNotification.Name](../UIKit/UIApplication/didBecomeActiveNotification.md)
   A notification that posts when the app becomes active.
-- [nonisolated class let didEnterBackgroundNotification: NSNotification.Name](../UIKit/UIApplication/didEnterBackgroundNotification.md)
+- [class let didEnterBackgroundNotification: NSNotification.Name](../UIKit/UIApplication/didEnterBackgroundNotification.md)
   A notification that posts when the app enters the background.
-- [nonisolated class let didFinishLaunchingNotification: NSNotification.Name](../UIKit/UIApplication/didFinishLaunchingNotification.md)
+- [class let didFinishLaunchingNotification: NSNotification.Name](../UIKit/UIApplication/didFinishLaunchingNotification.md)
   A notification that posts immediately after the app finishes launching.
-- [nonisolated class let didReceiveMemoryWarningNotification: NSNotification.Name](../UIKit/UIApplication/didReceiveMemoryWarningNotification.md)
+- [class let didReceiveMemoryWarningNotification: NSNotification.Name](../UIKit/UIApplication/didReceiveMemoryWarningNotification.md)
   A notification that posts when the app receives a warning from the operating system about low memory availability.
-- [nonisolated class let significantTimeChangeNotification: NSNotification.Name](../UIKit/UIApplication/significantTimeChangeNotification.md)
+- [class let significantTimeChangeNotification: NSNotification.Name](../UIKit/UIApplication/significantTimeChangeNotification.md)
   A notification that posts when there’s a significant change in time.
-- [nonisolated class let userDidTakeScreenshotNotification: NSNotification.Name](../UIKit/UIApplication/userDidTakeScreenshotNotification.md)
+- [class let userDidTakeScreenshotNotification: NSNotification.Name](../UIKit/UIApplication/userDidTakeScreenshotNotification.md)
   A notification that posts when a person takes a screenshot on the device.
-- [nonisolated class let willEnterForegroundNotification: NSNotification.Name](../UIKit/UIApplication/willEnterForegroundNotification.md)
+- [class let willEnterForegroundNotification: NSNotification.Name](../UIKit/UIApplication/willEnterForegroundNotification.md)
   A notification that posts shortly before an app leaves the background state on its way to becoming the active app.
-- [nonisolated class let willResignActiveNotification: NSNotification.Name](../UIKit/UIApplication/willResignActiveNotification.md)
+- [class let willResignActiveNotification: NSNotification.Name](../UIKit/UIApplication/willResignActiveNotification.md)
   A notification that posts when the app is no longer active and loses focus.
-- [nonisolated class let willTerminateNotification: NSNotification.Name](../UIKit/UIApplication/willTerminateNotification.md)
+- [class let willTerminateNotification: NSNotification.Name](../UIKit/UIApplication/willTerminateNotification.md)
   A notification that posts when the app is about to terminate.
-- [nonisolated static let didChangeNotification: NSNotification.Name](../UIKit/UIContentSizeCategory/didChangeNotification.md)
+- [static let didChangeNotification: NSNotification.Name](../UIKit/UIContentSizeCategory/didChangeNotification.md)
   A notification that posts when the user changes the preferred content size setting.
-- [nonisolated class let proximityStateDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/proximityStateDidChangeNotification.md)
+- [class let proximityStateDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/proximityStateDidChangeNotification.md)
   A notification that posts when the state of the proximity sensor changes.
-- [nonisolated class let brightnessDidChangeNotification: NSNotification.Name](../UIKit/UIScreen/brightnessDidChangeNotification.md)
+- [class let brightnessDidChangeNotification: NSNotification.Name](../UIKit/UIScreen/brightnessDidChangeNotification.md)
   A notification that posts when a screen’s brightness changes.
-- [nonisolated class let didConnectNotification: NSNotification.Name](../UIKit/UIScreen/didConnectNotification.md)
+- [class let didConnectNotification: NSNotification.Name](../UIKit/UIScreen/didConnectNotification.md)
   A notification the system posts when a new screen connects to the device.
-- [nonisolated class let didDisconnectNotification: NSNotification.Name](../UIKit/UIScreen/didDisconnectNotification.md)
+- [class let didDisconnectNotification: NSNotification.Name](../UIKit/UIScreen/didDisconnectNotification.md)
   A notification the system posts when a screen disconnects from the device.
-- [nonisolated class let modeDidChangeNotification: NSNotification.Name](../UIKit/UIScreen/modeDidChangeNotification.md)
+- [class let modeDidChangeNotification: NSNotification.Name](../UIKit/UIScreen/modeDidChangeNotification.md)
   A notification that posts when a screen’s mode changes.
-- [nonisolated class let selectionDidChangeNotification: NSNotification.Name](../UIKit/UITableView/selectionDidChangeNotification.md)
+- [class let selectionDidChangeNotification: NSNotification.Name](../UIKit/UITableView/selectionDidChangeNotification.md)
   A notification that posts when the selected row in the posting table view changes.
-- [nonisolated class let textDidBeginEditingNotification: NSNotification.Name](../UIKit/UITextField/textDidBeginEditingNotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](../UIKit/UITextField/textDidBeginEditingNotification.md)
   A notification that alerts observers when an editing session begins in a text field.
-- [nonisolated class let textDidChangeNotification: NSNotification.Name](../UIKit/UITextField/textDidChangeNotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](../UIKit/UITextField/textDidChangeNotification.md)
   A notification that alerts observers when the text in a text field changes.
-- [nonisolated class let textDidEndEditingNotification: NSNotification.Name](../UIKit/UITextField/textDidEndEditingNotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](../UIKit/UITextField/textDidEndEditingNotification.md)
   A notification that alerts observers when the editing session ends for a text field.
-- [nonisolated class let currentInputModeDidChangeNotification: NSNotification.Name](../UIKit/UITextInputMode/currentInputModeDidChangeNotification.md)
+- [class let currentInputModeDidChangeNotification: NSNotification.Name](../UIKit/UITextInputMode/currentInputModeDidChangeNotification.md)
   A notification that posts when the current input mode changes.
-- [nonisolated class let textDidBeginEditingNotification: NSNotification.Name](../UIKit/UITextView/textDidBeginEditingNotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](../UIKit/UITextView/textDidBeginEditingNotification.md)
   A notification that alerts observers when an editing session begins in a text view.
-- [nonisolated class let textDidChangeNotification: NSNotification.Name](../UIKit/UITextView/textDidChangeNotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](../UIKit/UITextView/textDidChangeNotification.md)
   A notification that alerts observers when the text in a text view changes.
-- [nonisolated class let textDidEndEditingNotification: NSNotification.Name](../UIKit/UITextView/textDidEndEditingNotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](../UIKit/UITextView/textDidEndEditingNotification.md)
   A notification that alerts observers when the editing session ends for a text view.
-- [nonisolated class let showDetailTargetDidChangeNotification: NSNotification.Name](../UIKit/UIViewController/showDetailTargetDidChangeNotification.md)
+- [class let showDetailTargetDidChangeNotification: NSNotification.Name](../UIKit/UIViewController/showDetailTargetDidChangeNotification.md)
   Posted when a split view controller is expanded or collapsed.
-- [nonisolated class let didBecomeHiddenNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeHiddenNotification.md)
+- [class let didBecomeHiddenNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeHiddenNotification.md)
   A notification that posts when a window becomes hidden.
-- [nonisolated class let didBecomeKeyNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeKeyNotification.md)
+- [class let didBecomeKeyNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeKeyNotification.md)
   A notification that posts whenever a window becomes the key window.
-- [nonisolated class let didBecomeVisibleNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeVisibleNotification.md)
+- [class let didBecomeVisibleNotification: NSNotification.Name](../UIKit/UIWindow/didBecomeVisibleNotification.md)
   A notification that posts when a window becomes visible.
-- [nonisolated class let didResignKeyNotification: NSNotification.Name](../UIKit/UIWindow/didResignKeyNotification.md)
+- [class let didResignKeyNotification: NSNotification.Name](../UIKit/UIWindow/didResignKeyNotification.md)
   A notification that posts whenever a window resigns its status as main window.
-- [nonisolated class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](../UIKit/UIApplication/backgroundRefreshStatusDidChangeNotification.md)
+- [class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](../UIKit/UIApplication/backgroundRefreshStatusDidChangeNotification.md)
   A notification that posts when the app’s status for downloading content in the background changes.
-- [nonisolated class let didChangeStatusBarFrameNotification: NSNotification.Name](../UIKit/UIApplication/didChangeStatusBarFrameNotification.md)
+- [class let didChangeStatusBarFrameNotification: NSNotification.Name](../UIKit/UIApplication/didChangeStatusBarFrameNotification.md)
   Posted when the frame of the status bar changes.
-- [nonisolated class let didChangeStatusBarOrientationNotification: NSNotification.Name](../UIKit/UIApplication/didChangeStatusBarOrientationNotification.md)
+- [class let didChangeStatusBarOrientationNotification: NSNotification.Name](../UIKit/UIApplication/didChangeStatusBarOrientationNotification.md)
   Posted when the orientation of the app’s user interface changes.
-- [nonisolated class let willChangeStatusBarFrameNotification: NSNotification.Name](../UIKit/UIApplication/willChangeStatusBarFrameNotification.md)
+- [class let willChangeStatusBarFrameNotification: NSNotification.Name](../UIKit/UIApplication/willChangeStatusBarFrameNotification.md)
   Posted when the app is about to change the frame of the status bar.
-- [nonisolated class let willChangeStatusBarOrientationNotification: NSNotification.Name](../UIKit/UIApplication/willChangeStatusBarOrientationNotification.md)
+- [class let willChangeStatusBarOrientationNotification: NSNotification.Name](../UIKit/UIApplication/willChangeStatusBarOrientationNotification.md)
   Posted when the app is about to change the orientation of its interface.
-- [nonisolated class let batteryLevelDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/batteryLevelDidChangeNotification.md)
+- [class let batteryLevelDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/batteryLevelDidChangeNotification.md)
   A notification that posts when the battery level changes.
-- [nonisolated class let batteryStateDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/batteryStateDidChangeNotification.md)
+- [class let batteryStateDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/batteryStateDidChangeNotification.md)
   A notification that posts when battery state changes.
-- [nonisolated class let orientationDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/orientationDidChangeNotification.md)
+- [class let orientationDidChangeNotification: NSNotification.Name](../UIKit/UIDevice/orientationDidChangeNotification.md)
   A notification that posts when the orientation of the device changes.
-- [nonisolated class let stateChangedNotification: NSNotification.Name](../UIKit/UIDocument/stateChangedNotification.md)
+- [class let stateChangedNotification: NSNotification.Name](../UIKit/UIDocument/stateChangedNotification.md)
   A notification the document object posts when there’s a change in the state of the document.
-- [nonisolated class let keyboardDidChangeFrameNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidChangeFrameNotification.md)
+- [class let keyboardDidChangeFrameNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidChangeFrameNotification.md)
   A notification that posts immediately after a change in the keyboard’s frame.
-- [nonisolated class let keyboardDidHideNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidHideNotification.md)
+- [class let keyboardDidHideNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidHideNotification.md)
   A notification that posts immediately after dismissing the keyboard.
-- [nonisolated class let keyboardDidShowNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidShowNotification.md)
+- [class let keyboardDidShowNotification: NSNotification.Name](../UIKit/UIResponder/keyboardDidShowNotification.md)
   A notification that posts immediately after displaying the keyboard.
-- [nonisolated class let keyboardWillChangeFrameNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillChangeFrameNotification.md)
+- [class let keyboardWillChangeFrameNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillChangeFrameNotification.md)
   A notification that posts immediately prior to a change in the keyboard’s frame.
-- [nonisolated class let keyboardWillHideNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillHideNotification.md)
+- [class let keyboardWillHideNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillHideNotification.md)
   A notification that posts immediately prior to dismissing the keyboard.
-- [nonisolated class let keyboardWillShowNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillShowNotification.md)
+- [class let keyboardWillShowNotification: NSNotification.Name](../UIKit/UIResponder/keyboardWillShowNotification.md)
   A notification that posts immediately prior to displaying the keyboard.
-- [nonisolated class let didHideMenuNotification: NSNotification.Name](../UIKit/UIMenuController/didHideMenuNotification.md)
+- [class let didHideMenuNotification: NSNotification.Name](../UIKit/UIMenuController/didHideMenuNotification.md)
   Posted by the menu controller just after it hides the menu.
-- [nonisolated class let didShowMenuNotification: NSNotification.Name](../UIKit/UIMenuController/didShowMenuNotification.md)
+- [class let didShowMenuNotification: NSNotification.Name](../UIKit/UIMenuController/didShowMenuNotification.md)
   Posted by the menu controller just after it shows the menu.
-- [nonisolated class let menuFrameDidChangeNotification: NSNotification.Name](../UIKit/UIMenuController/menuFrameDidChangeNotification.md)
+- [class let menuFrameDidChangeNotification: NSNotification.Name](../UIKit/UIMenuController/menuFrameDidChangeNotification.md)
   Posted when the frame of a visible menu changes.
-- [nonisolated class let willHideMenuNotification: NSNotification.Name](../UIKit/UIMenuController/willHideMenuNotification.md)
+- [class let willHideMenuNotification: NSNotification.Name](../UIKit/UIMenuController/willHideMenuNotification.md)
   Posted by the menu controller just before it hides the menu.
-- [nonisolated class let willShowMenuNotification: NSNotification.Name](../UIKit/UIMenuController/willShowMenuNotification.md)
+- [class let willShowMenuNotification: NSNotification.Name](../UIKit/UIMenuController/willShowMenuNotification.md)
   Posted by the menu controller just before it shows the menu.
-- [nonisolated class let changedNotification: NSNotification.Name](../UIKit/UIPasteboard/changedNotification.md)
+- [class let changedNotification: NSNotification.Name](../UIKit/UIPasteboard/changedNotification.md)
   A notification that a pasteboard object posts when its contents change.
-- [nonisolated class let removedNotification: NSNotification.Name](../UIKit/UIPasteboard/removedNotification.md)
+- [class let removedNotification: NSNotification.Name](../UIKit/UIPasteboard/removedNotification.md)
   A notification that a pasteboard object posts just before an app removes it.
-- [nonisolated class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](../UIKit/UIApplication/protectedDataDidBecomeAvailableNotification.md)
+- [class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](../UIKit/UIApplication/protectedDataDidBecomeAvailableNotification.md)
   A notification that posts when the protected files become available for your code to access.
-- [nonisolated class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name](../UIKit/UIApplication/protectedDataWillBecomeUnavailableNotification.md)
+- [class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name](../UIKit/UIApplication/protectedDataWillBecomeUnavailableNotification.md)
   A notification that posts shortly before protected files are locked down and become inaccessible.
 ### WatchKit
 - [static let WKAccessibilityReduceMotionStatusDidChange: NSNotification.Name](nsnotification/name-swift.struct/wkaccessibilityreducemotionstatusdidchange.md)
@@ -1027,7 +1049,6 @@ struct Name
 - [static let GCStylusDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdidconnect.md)
 - [static let GCStylusDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdiddisconnect.md)
 - [static let HMCharacteristicPropertySupportsEvent: NSNotification.Name](nsnotification/name-swift.struct/hmcharacteristicpropertysupportsevent.md)
-- [static let JRSMenuDidReuseItem: NSNotification.Name](nsnotification/name-swift.struct/jrsmenudidreuseitem.md)
 - [static let MEVideoDecoderReadyForMoreMediaDataDidChange: NSNotification.Name](nsnotification/name-swift.struct/mevideodecoderreadyformoremediadatadidchange.md)
 - [static let NERelayConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nerelayconfigurationdidchange.md)
 - [static let NEURLFilterConfigurationDidChange: Notification.Name](nsnotification/name-swift.struct/neurlfilterconfigurationdidchange.md)

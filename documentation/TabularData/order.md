@@ -29,17 +29,6 @@ enum Order
   A sort ordering that starts with the highest value and monotonically proceeds to lower values.
 - [func areOrdered<T>(T, T) -> Bool](order/areordered(_:_:).md)
   Returns a Boolean that indicates whether the comparable types match the order’s state.
-### Operators
-- [static func == (Order, Order) -> Bool](order/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](order/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](order/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](order/equatable-implementations.md)
 
 ## Relationships
 

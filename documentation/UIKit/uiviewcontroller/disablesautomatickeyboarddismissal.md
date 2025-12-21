@@ -21,13 +21,13 @@ var disablesAutomaticKeyboardDismissal: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to prevent the dismissal of the input view or [`false`](https://developer.apple.com/documentation/swift/false) if the input view may be dismissed.
+[`true`](https://developer.apple.com/documentation/Swift/true) to prevent the dismissal of the input view or [`false`](https://developer.apple.com/documentation/Swift/false) if the input view may be dismissed.
 
 #### Discussion
 
 Override this method in a subclass to allow or disallow the dismissal of the current input view (usually the system keyboard) when changing from a control that wants the input view to one that does not. Under normal circumstances, when the user taps a control that requires an input view, the system automatically displays that view. Tapping in a control that does not want an input view subsequently causes the current input view to be dismissed but may not in all cases. You can override this method in those outstanding cases to allow the input view to be dismissed or use this method to prevent the view from being dismissed in other cases.
 
-The default implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true) when the modal presentation style of the view controller is set to [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md) and returns [`false`](https://developer.apple.com/documentation/swift/false) for other presentation styles. Thus, the system normally does not allow the keyboard to be dismissed for modal forms.
+The default implementation of this method returns [`true`](https://developer.apple.com/documentation/Swift/true) when the modal presentation style of the view controller is set to [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md) and returns [`false`](https://developer.apple.com/documentation/Swift/false) for other presentation styles. Thus, the system normally does not allow the keyboard to be dismissed for modal forms.
 
 ## See Also
 
@@ -35,6 +35,7 @@ The default implementation of this method returns [`true`](https://developer.app
   Presents a view controller in a primary context.
 - [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents a view controller in a secondary (or detail) context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
   Presents a view controller modally.
 - [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)

@@ -8,7 +8,7 @@ Error codes describing why the framework can’t perform a translation.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration
@@ -45,9 +45,6 @@ struct TranslationError
 ### Comparing errors
 - [static func ~= (TranslationError, any Error) -> Bool](translationerror/~=(_:_:).md)
   This operator allows you to check for a given value of a translation error and handle each error case.
-### Default Implementations
-- [Error Implementations](translationerror/error-implementations.md)
-- [LocalizedError Implementations](translationerror/localizederror-implementations.md)
 
 ## Relationships
 

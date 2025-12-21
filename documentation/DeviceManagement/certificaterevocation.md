@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure certificate revocation checking.
+The payload that configures certificate revocation checking.
 
 **Availability**:
 - iOS 14.2+
@@ -88,23 +88,23 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)
-  The payload you use to configure Automated Certificate Management Environment (ACME) Certificate settings.
+  The payload that configures Automated Certificate Management Environment (ACME) settings.
 - [object ActiveDirectoryCertificate](activedirectorycertificate.md)
-  The payload you use to configure Active Directory Certificate settings.
+  The payload that configures Active Directory Certificate settings.
 - [object CertificatePEM](certificatepem.md)
-  The payload you use to configure a PEM-formatted certificate.
+  The payload that configures a PEM-formatted certificate.
 - [object CertificatePKCS1](certificatepkcs1.md)
-  The payload you use to configure a PKCS #1-formatted certificate.
+  The payload that configures a PKCS #1-formatted certificate.
 - [object CertificatePKCS12](certificatepkcs12.md)
-  The payload you use to configure a PKCS #12-formatted certificate.
+  The payload that configures a PKCS #12-formatted certificate.
 - [object CertificateRoot](certificateroot.md)
-  The payload you use to configure a root certificate.
+  The payload that configures a root certificate.
 - [object CertificatePreference](certificatepreference.md)
-  The payload you use to configure a certificate preference.
+  The payload that configures a certificate preference.
 - [object CertificateTransparency](certificatetransparency.md)
-  The payload you use to configure certificate transparency enforcement.
+  The payload that configures certificate transparency enforcement.
 - [object SCEP](scep.md)
-  The payload you use to configure Simple Certificate Enrollment Protocol (SCEP).
+  The payload that configures Simple Certificate Enrollment Protocol (SCEP) settings.
 
 
 ---

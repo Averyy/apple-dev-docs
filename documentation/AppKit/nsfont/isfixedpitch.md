@@ -16,7 +16,7 @@ var isFixedPitch: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when all glyphs have the same advancement or [`false`](https://developer.apple.com/documentation/swift/false) when they do not. Some Japanese fonts encoded with the scheme “EUC12-NJE-CFEncoding” return that they have the same advancement, but actually encode glyphs with one of two advancements, for historical compatibility. You may need to handle such fonts specially for some applications.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when all glyphs have the same advancement or [`false`](https://developer.apple.com/documentation/Swift/false) when they do not. Some Japanese fonts encoded with the scheme “EUC12-NJE-CFEncoding” return that they have the same advancement, but actually encode glyphs with one of two advancements, for historical compatibility. You may need to handle such fonts specially for some applications.
 
 ## See Also
 

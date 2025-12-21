@@ -17,9 +17,9 @@ var allowsTextInputContextCandidates: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the candidate list item shows candidates from the text input client provided in the [`client`](nscandidatelisttouchbaritem/client.md) property, before those in the [`candidates`](nscandidatelisttouchbaritem/candidates.md) property.
+When [`true`](https://developer.apple.com/documentation/Swift/true), the candidate list item shows candidates from the text input client provided in the [`client`](nscandidatelisttouchbaritem/client.md) property, before those in the [`candidates`](nscandidatelisttouchbaritem/candidates.md) property.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

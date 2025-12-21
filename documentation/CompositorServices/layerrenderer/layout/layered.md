@@ -6,7 +6,7 @@
 A layout that specifies each view’s content as a slice of a single texture.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

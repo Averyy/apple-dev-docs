@@ -5,8 +5,8 @@
 Create a hike planning app using SwiftUI and RealityKit.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

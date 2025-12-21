@@ -1,4 +1,4 @@
-# Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass
+# Storing data a pass makes with custom sample positions for a subsequent pass
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Inform Metal when your app uses programmable sample positions for its depth rend
 
 #### Overview
 
-A render or compute pass usually stores its target’s depth data in a compressed format. Any subsequent pass has to use the correct sample positions to decompress the data before reading it. You can store depth data in a representation that uses arbitrary sample positions (see [`Positioning Samples Programmatically`](positioning-samples-programmatically.md)).
+A render or compute pass usually stores its target’s depth data in a compressed format. Any subsequent pass has to use the correct sample positions to decompress the data before reading it. You can store depth data in a representation that uses arbitrary sample positions (see [`Positioning samples programmatically`](positioning-samples-programmatically.md)).
 
 > ❗ **Important**:  You can sample depth positions programmatically only on devices that support programmable sample positions (see [`areProgrammableSamplePositionsSupported`](mtldevice/areprogrammablesamplepositionssupported.md)).
 
@@ -21,7 +21,7 @@ In this scenario, Metal may decompress the depth render target and store the unc
 
 ## See Also
 
-- [Positioning Samples Programmatically](positioning-samples-programmatically.md)
+- [Positioning samples programmatically](positioning-samples-programmatically.md)
   Configure the position of samples when rendering to a multisampled render target.
 
 

@@ -22,7 +22,7 @@ let AVAudioSessionInterruptionWasSuspendedKey: String
 
 #### Discussion
 
-This [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) key is present only in [`AVAudioSession.InterruptionType.began`](avaudiosession/interruptiontype/began.md) interruption events, where the interruption is a direct result of the operating system suspending the app. Its associated value is a Boolean [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), where a [`true`](https://developer.apple.com/documentation/swift/true) value indicates that the interruption is due to the system suspending the app, rather than being interrupted by another audio session.
+This [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) key is present only in [`AVAudioSession.InterruptionType.began`](avaudiosession/interruptiontype/began.md) interruption events, where the interruption is a direct result of the operating system suspending the app. Its associated value is a Boolean [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), where a [`true`](https://developer.apple.com/documentation/Swift/true) value indicates that the interruption is due to the system suspending the app, rather than being interrupted by another audio session.
 
 ## See Also
 

@@ -22,24 +22,22 @@ struct Filter<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Filter Publisher
+### Creating a filter publisher
 - [init(upstream: Upstream, isIncluded: (Upstream.Output) -> Bool)](publishers/filter/init(upstream:isincluded:).md)
   Creates a publisher that republishes all elements that match a provided closure.
-### Declaring Publisher Topography
+### Filtering elements
+- [func filter((Publishers.Filter<Upstream>.Output) -> Bool) -> Publishers.Filter<Upstream>](publishers/filter/filter(_:).md)
+- [func tryFilter((Publishers.Filter<Upstream>.Output) throws -> Bool) -> Publishers.TryFilter<Upstream>](publishers/filter/tryfilter(_:).md)
+### Declaring supporting types
 - [Publishers.Filter.Output](publishers/filter/output.md)
   The kind of values published by this publisher.
 - [Publishers.Filter.Failure](publishers/filter/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/filter/upstream.md)
   The publisher from which this publisher receives elements.
 - [let isIncluded: (Upstream.Output) -> Bool](publishers/filter/isincluded.md)
   A closure that indicates whether to republish an element.
-### Applying Operators
-- [Publisher Operators](publishers-filter-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/filter/publisher-implementations.md)
 
 ## Relationships
 

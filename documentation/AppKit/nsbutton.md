@@ -31,7 +31,7 @@ For most types of buttons, the value of the button matches its state—the value
 
 ## Topics
 
-### Creating Standard Buttons
+### Creating standard buttons
 - [convenience init(checkboxWithTitle: String, target: Any?, action: Selector?)](nsbutton/init(checkboxwithtitle:target:action:).md)
   Creates a standard checkbox with the title you specify.
 - [convenience init(image: NSImage, target: Any?, action: Selector?)](nsbutton/init(image:target:action:).md)
@@ -42,10 +42,10 @@ For most types of buttons, the value of the button matches its state—the value
   Creates a standard push button with a title and image.
 - [convenience init(title: String, target: Any?, action: Selector?)](nsbutton/init(title:target:action:).md)
   Creates a standard push button with the title you specify.
-### Configuring the Cell
+### Configuring the cell
 - [class NSButtonCell](nsbuttoncell.md)
   An object that defines the user interface of a button or other clickable region of a view.
-### Configuring Buttons
+### Configuring buttons
 - [func setButtonType(NSButton.ButtonType)](nsbutton/setbuttontype(_:).md)
   Sets the button’s type, which affects its user interface and behavior when clicked.
 - [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nsbutton/getperiodicdelay(_:interval:).md)
@@ -72,7 +72,13 @@ For most types of buttons, the value of the button matches its state—the value
   A Boolean value that indicates whether spring loading is enabled for the button.
 - [var maxAcceleratorLevel: Int](nsbutton/maxacceleratorlevel.md)
   An integer value indicating the maximum pressure level for a button of type [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md).
-### Configuring Button Images
+- [var tintProminence: NSTintProminence](nsbutton/tintprominence.md)
+  The tint prominence of the button. Use tint prominence to gently suggest a hierarchy when multiple buttons perform similar actions. A button with primary tint prominence suggests the most preferred option, while secondary prominence indicates a reasonable alternative. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
+- [enum NSTintProminence](nstintprominence.md)
+  Controls how strongly the tint color applies in a view.
+- [var borderShape: NSControl.BorderShape](nsbutton/bordershape.md)
+- [NSControl.BorderShape](nscontrol/bordershape.md)
+### Configuring button images
 - [var image: NSImage?](nsbutton/image.md)
   The image that appears on the button when it’s in an off state, or `nil` if there is no such image.
 - [var alternateImage: NSImage?](nsbutton/alternateimage.md)
@@ -95,14 +101,14 @@ For most types of buttons, the value of the button matches its state—the value
   A Boolean value that determines how the button’s image and title are positioned together within the button bezel.
 - [var imageScaling: NSImageScaling](nsbutton/imagescaling.md)
   The scaling mode applied to make the cell’s image fit the frame of the image view.
-### Managing Button Compression
+### Managing button compression
 - [var activeCompressionOptions: NSUserInterfaceCompressionOptions](nsbutton/activecompressionoptions.md)
   The compression options active for this button.
 - [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](nsbutton/compress(withprioritizedcompressionoptions:).md)
   Sets the priority compression options for this button.
 - [func minimumSize(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]) -> NSSize](nsbutton/minimumsize(withprioritizedcompressionoptions:).md)
   Returns the minimum size of the button by using the compression options.
-### Managing Button State
+### Managing button state
 - [var allowsMixedState: Bool](nsbutton/allowsmixedstate.md)
   A Boolean value that indicates whether the button allows a mixed state.
 - [var state: NSControl.StateValue](nsbutton/state.md)
@@ -111,17 +117,14 @@ For most types of buttons, the value of the button matches its state—the value
   Sets the button to its next state.
 - [func highlight(Bool)](nsbutton/highlight(_:).md)
   Highlights (or unhighlights) the button.
-### Accessing Key Equivalents
+### Accessing key equivalents
 - [var keyEquivalent: String](nsbutton/keyequivalent.md)
   The key-equivalent character of the button.
 - [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbutton/keyequivalentmodifiermask.md)
   The mask specifying the modifier keys for the button’s key equivalent.
-### Handling Keyboard Events
+### Handling keyboard events
 - [func performKeyEquivalent(with: NSEvent) -> Bool](nsbutton/performkeyequivalent(with:).md)
   Checks the button’s key equivalent against the specified event and, if they match, simulates the button being clicked.
-### Instance Properties
-- [var tintProminence: NSTintProminence](nsbutton/tintprominence.md)
-  The tint prominence of the button. Use tint prominence to gently suggest a hierarchy when multiple buttons perform similar actions. A button with primary tint prominence suggests the most preferred option, while secondary prominence indicates a reasonable alternative. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
 
 ## Relationships
 

@@ -3,27 +3,27 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets the container shape to use for any container relative shape within this view.
+Sets the container shape to use for any container relative shape or concentric rectangle within this view.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func containerShape<T>(_ shape: T) -> some View where T : InsettableShape
+func containerShape(_ shape: some RoundedRectangularShape) -> some View
 ```
 
 #### Discussion
 
-The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate.
+The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate. Any [`ConcentricRectangle`](concentricrectangle.md) within the `content` will match the corners to be concentric to the container corners.
 
 ```swift
 struct PlatterContainer<Content: View> : View {
@@ -37,6 +37,8 @@ struct PlatterContainer<Content: View> : View {
     var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 20) }
 }
 ```
+
+> **Note**: [`containerShape(_:)`](view/containershape(_:)-qn9q.md)
 
 ## See Also
 

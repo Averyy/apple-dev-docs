@@ -30,13 +30,6 @@ struct RandomImageNoiseGenerator
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](randomimagenoisegenerator/applied(to:eventhandler:).md)
   Adds random noise to the input image.
-### Type Aliases
-- [RandomImageNoiseGenerator.Input](randomimagenoisegenerator/input.md)
-  The input type.
-- [RandomImageNoiseGenerator.Output](randomimagenoisegenerator/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](randomimagenoisegenerator/transformer-implementations.md)
 
 ## Relationships
 

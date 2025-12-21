@@ -65,7 +65,7 @@ For example, an iOS device camera always encodes pixel data in the camera sensor
 
 ## See Also
 
-- [@frozen enum CGImagePropertyOrientation](../ImageIO/CGImagePropertyOrientation.md)
+- [enum CGImagePropertyOrientation](../ImageIO/CGImagePropertyOrientation.md)
   A value describing the intended display orientation for an image.
 - [var imageOrientation: UIImage.Orientation](uiimage/imageorientation.md)
   The orientation of the receiver’s image.

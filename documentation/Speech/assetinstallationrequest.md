@@ -6,11 +6,11 @@
 An object that describes, downloads, and installs a selection of assets.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ The system consolidates download and installation requests; you may obtain sever
 
 ## Topics
 
-### Instance Methods
+### Performing an installation request
 - [func downloadAndInstall() async throws](assetinstallationrequest/downloadandinstall.md)
   Downloads and installs assets not already on the device.
 

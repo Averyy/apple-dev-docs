@@ -26,15 +26,15 @@ Use this function for internal integrity checks that are active during testing b
 
 ## Topics
 
-### Creating an Assert No Failure Publisher
+### Creating an assert no failure publisher
 - [init(upstream: Upstream, prefix: String, file: StaticString, line: UInt)](publishers/assertnofailure/init(upstream:prefix:file:line:).md)
   Creates a publisher that raises a fatal error upon receiving any failure, and otherwise republishes all received input.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.AssertNoFailure.Output](publishers/assertnofailure/output.md)
   The kind of values published by this publisher.
 - [Publishers.AssertNoFailure.Failure](publishers/assertnofailure/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/assertnofailure/upstream.md)
   The publisher from which this publisher receives elements.
 - [let file: StaticString](publishers/assertnofailure/file.md)
@@ -43,11 +43,6 @@ Use this function for internal integrity checks that are active during testing b
   The line number used in the error message.
 - [let prefix: String](publishers/assertnofailure/prefix.md)
   The string used at the beginning of the fatal error message.
-### Applying Operators
-- [Publisher Operators](publishers-assertnofailure-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/assertnofailure/publisher-implementations.md)
 
 ## Relationships
 

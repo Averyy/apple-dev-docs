@@ -21,7 +21,7 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), the display link doesn’t send notifications to the target.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true), the display link doesn’t send notifications to the target.
 
 This property is thread safe, so you can set it from a thread separate to the one in which the display link runs.
 

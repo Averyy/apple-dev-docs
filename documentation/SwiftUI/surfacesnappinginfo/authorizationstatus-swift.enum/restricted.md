@@ -6,7 +6,7 @@
 The user is unable to grant authorization to share detailed information about their surroundings.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

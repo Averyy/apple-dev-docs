@@ -32,7 +32,7 @@ The current status of the requested key.
 
 ## See Also
 
-- [Deprecated Symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
+- [Deprecated symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 - [func loadValuesAsynchronously(forKeys: [String], completionHandler: (() -> Void)?)](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md)
   Tells the asset to load the values of all of the specified keys that aren’t already loaded.

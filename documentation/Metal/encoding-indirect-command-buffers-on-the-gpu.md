@@ -1,4 +1,4 @@
-# Encoding Indirect Command Buffers on the GPU
+# Encoding indirect command buffers on the GPU
 
 **Framework**: Metal
 
@@ -14,13 +14,13 @@ Maximize CPU to GPU parallelization by generating render commands on the GPU.
 
 This sample app demonstrates how to use  (ICB) to issue rendering instructions from the GPU. When you have a rendering algorithm that runs in a compute kernel, use ICBs to generate draw calls based on your algorithm’s results. The sample app uses a compute kernel to remove invisible objects submitted for rendering, and generates draw commands only for the objects currently visible in the scene.
 
-![Flow chart of an algorithm and its dependent rendering instructions being performed on the GPU. At left, a body representing the CPU dispatches the algorithm to the GPU via compute kernel. A line flows from the left obdy to another body, at center representing the GPU, which executes the compute kernel and generates its dependent rendering commands using an ICB. A line flows from the center body to a body at right, also representing the GPU,  which executes the rendering commands.](https://docs-assets.developer.apple.com/published/28f04960640b40e69469ea9294b3cd5f/icbs-with-gpu-encoding-1-GpuDrivenPipeline.png)
+![Flow chart of an algorithm and its dependent rendering instructions executing on the GPU. At left, a body representing the CPU dispatches the algorithm to the GPU via compute kernel. A line flows from the left body to another body, at center representing the GPU, which executes the compute kernel and generates its dependent rendering commands using an ICB. A line flows from the center body to a body at right, also representing the GPU, which executes the rendering commands.](https://docs-assets.developer.apple.com/published/28f04960640b40e69469ea9294b3cd5f/icbs-with-gpu-encoding-1-GpuDrivenPipeline.png)
 
-Without ICBs, you couldn’t submit rendering commands on the GPU. Instead, the CPU would wait for your compute kernel’s results before generating the render commands. Then, the GPU would wait for the rendering commands to make it across the CPU to GPU bridge, which amounts to a round trip slow path as seen in the following diagram:
+Without ICBs, you can’t submit rendering commands on the GPU. Instead, the CPU waits for your compute kernel’s results before generating the render commands. Then, the GPU waits for the rendering commands to make it across the CPU to GPU bridge. The following diagram shows how this creates a slower round trip:
 
 ![Flow chart of an algorithm being parallelized on the GPU with the CPU waiting on its results.](https://docs-assets.developer.apple.com/published/98a58b36c689a56c07a8588158bc6b88/icbs-with-gpu-encoding-2-CpuRoundTrip.png)
 
-The sample code project, [`Encoding Indirect Command Buffers on the CPU`](encoding-indirect-command-buffers-on-the-cpu.md) introduces ICBs by creating a single ICB to reuse its commands every frame. While the former sample saved expensive command-encoding time by reusing commands, this sample uses ICBs to effect a GPU-driven rendering pipeline.
+The sample code project, [`Encoding indirect command buffers on the CPU`](encoding-indirect-command-buffers-on-the-cpu.md) introduces ICBs by creating a single ICB to reuse its commands every frame. While the former sample saved expensive command-encoding time by reusing commands, this sample uses ICBs to effect a GPU-driven rendering pipeline.
 
 The techniques shown by this sample include issuing draw calls from the GPU, and the process of executing a select set of draws.
 
@@ -28,7 +28,8 @@ The techniques shown by this sample include issuing draw calls from the GPU, and
 
 This project contains targets for macOS and iOS. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
-The sample uses `MTLDebugComputeCommandEncoder` `dispatchThreads:threadsPerThreadgroup:` which is supported by GPUs of family greater than or equal to:
+The sample calls an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instances’s
+[`dispatchThreads(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreads(_:threadsperthreadgroup:).md) method, which is available to a GPU that supports the following feature sets and later:
 
 - MTLFeatureSet_iOS_GPUFamily4_v2
 - MTLFeatureSet_macOS_GPUFamily2_v1
@@ -109,7 +110,7 @@ By culling non-visible vertices from the data fed to the rendering pipeline, you
 
 ```metal
 // Check whether the object at 'objectIndex' is visible and set draw parameters if so.
-// Otherwise, reset the command so that nothing is done.
+// Otherwise, reset the command.
 kernel void
 cullMeshesAndEncodeCommands(uint                         objectIndex   [[ thread_position_in_grid ]],
                             constant AAPLFrameState     *frame_state   [[ buffer(AAPLKernelBufferIndexFrameState) ]],
@@ -155,7 +156,7 @@ cullMeshesAndEncodeCommands(uint                         objectIndex   [[ thread
                             objectIndex);
     }
     
-    // If the object is not visible, no draw command will be set since so long as the app has reset
+    // If the object isn't visible, Metal doesn't set a draw command as long as the app resets
     // the indirect command buffer commands with a blit encoder before encoding the draw.
 }
 ```
@@ -227,7 +228,7 @@ Optimize your ICB commands to remove empty commands or redundant state by callin
                                          withRange:NSMakeRange(0, AAPLNumObjects)];
 ```
 
-This sample optimizes ICB commands because redundant state results from the kernel setting a buffer for each draw, and encoding empty commands for each invisible object. By removing the empty commands, you can free up a significant number of blank spaces in the command buffer that Metal would otherwise spend time skipping at runtime.
+This sample optimizes ICB commands because redundant state results from the kernel setting a buffer for each draw, and encoding empty commands for each invisible object. By removing the empty commands, you can free up a significant number of blank spaces in the command buffer that Metal otherwise spends time skipping at runtime.
 
 > **Note**: If you optimize an indirect command buffer, you won’t be able to call `executeCommandsInBuffer:withRange:` with a range that starts in the optimized region. Instead, specify a range staring at the beginning and finishing within or at the end of the optimized region.
 
@@ -243,11 +244,11 @@ While you can encode an ICB’s commands in a compute kernel, you call `executeC
 
 ## See Also
 
-- [Creating an Indirect Command Buffer](creating-an-indirect-command-buffer.md)
+- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
   Configure a descriptor to specify the properties of an indirect command buffer.
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
   Use indirect commands if you don’t know your draw or dispatch call arguments when you encode the command.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
 - [protocol MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
   A command buffer containing reusable commands, encoded either on the CPU or GPU.

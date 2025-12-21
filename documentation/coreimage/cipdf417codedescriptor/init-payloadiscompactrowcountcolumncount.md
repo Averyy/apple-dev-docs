@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+Initializes an PDF417 code descriptor for the given payload and parameters.
 
 **Availability**:
 - iOS 11.0+
@@ -21,18 +21,14 @@ init?(payload errorCorrectedPayload: Data, isCompact: Bool, rowCount: Int, colum
 
 #### Return Value
 
-A PDF417 code descriptor encoding the specified payload with the specified row and column counts.
-
-#### Discussion
-
-The `CIBarcodeGenerator` filter can recreate a PDF417 code given the descriptor created using this method.
+ An initialized [`CIPDF417CodeDescriptor`](cipdf417codedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 
-- `errorCorrectedPayload`: The data to encode in the PDF417 code.
-- `isCompact`: A Boolean specifying whether or not the code is compact.
-- `rowCount`: The number of rows in the PDF417 code.
-- `columnCount`: The number of columns in the PDF417 code.
+- `errorCorrectedPayload`: The data to encode in the PDF417 code symbol.
+- `isCompact`: A Boolean indicating whether or not the PDF417 code is compact.
+- `rowCount`: The number of rows in the PDF417 code, from 3 to 90.
+- `columnCount`: The number of columns in the Aztec code, from 1 to 30.
 
 
 ---

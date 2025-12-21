@@ -6,7 +6,7 @@ Configure the device flash, torch, and low light settings.
 
 ## Topics
 
-### Configuring Flash Settings
+### Configuring flash settings
 - [var hasFlash: Bool](avcapturedevice/hasflash.md)
   A Boolean value that indicates whether the capture device has a flash.
 - [var isFlashAvailable: Bool](avcapturedevice/isflashavailable.md)
@@ -19,7 +19,7 @@ Configure the device flash, torch, and low light settings.
   Returns a Boolean value that indicates whether the device supports the given flash mode.
 - [AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.enum.md)
   Constants that specify the flash modes of a capture device.
-### Configuring Torch Settings
+### Configuring torch settings
 - [var hasTorch: Bool](avcapturedevice/hastorch.md)
   A Boolean value that specifies whether the capture device has a torch.
 - [var isTorchAvailable: Bool](avcapturedevice/istorchavailable.md)
@@ -38,7 +38,7 @@ Configure the device flash, torch, and low light settings.
   Sets the illumination level when in torch mode.
 - [class let maxAvailableTorchLevel: Float](avcapturedevice/maxavailabletorchlevel.md)
   A constant that indicates to set the torch to its maximum level.
-### Configuring Low Light Settings
+### Configuring low light settings
 - [var isLowLightBoostSupported: Bool](avcapturedevice/islowlightboostsupported.md)
   A Boolean value that indicates whether the capture device supports boosting images in low-light conditions.
 - [var isLowLightBoostEnabled: Bool](avcapturedevice/islowlightboostenabled.md)
@@ -62,7 +62,7 @@ Configure the device flash, torch, and low light settings.
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Color](capture-device-color.md)
   Manage HDR and color space settings for a device.

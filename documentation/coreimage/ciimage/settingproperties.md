@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Returns a new image created by adding the specified metadata properties to the image.
+Return a new image by changing the receiver’s metadata properties.
 
 **Availability**:
 - iOS 10.0+
@@ -21,15 +21,15 @@ func settingProperties(_ properties: [AnyHashable : Any]) -> CIImage
 
 #### Return Value
 
-An image object with the specified properties.
+ An autoreleased [`CIImage`](ciimage.md) instance with a copy of the new properties.
 
 #### Discussion
 
-When you create an image, Core Image sets an image’s [`properties`](ciimage/properties.md) dictionary to the metadata you specify (using the [`properties`](ciimageoption/properties.md) key in an `options` dictionary), or to the underlying image’s metadata (by calling the [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyPropertiesAtIndex(_:_:_:)) function). Use this method to override an image’s metadata properties with new values.
+When you create an image, Core Image sets an image’s properties to a metadata dictionary as described here: [`properties`](ciimage/properties.md). Use this method to override an image’s metadata properties with new values.
 
 ## Parameters
 
-- `properties`: A dictionary of metadata properties to associate with the image.
+- `properties`: A dictionary of metadata properties akin to the   function.
 
 ## See Also
 

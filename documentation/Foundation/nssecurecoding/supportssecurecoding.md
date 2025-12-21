@@ -23,7 +23,7 @@ static var supportsSecureCoding: Bool { get }
 
 #### Discussion
 
-When you write a class that supports secure coding, ensure that this class property’s getter returns [`true`](https://developer.apple.com/documentation/swift/true).
+When you write a class that supports secure coding, ensure that this class property’s getter returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

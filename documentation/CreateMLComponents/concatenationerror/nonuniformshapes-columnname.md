@@ -24,8 +24,6 @@ case nonUniformShapes(columnName: String)
 
 - [ConcatenationError.mismatchedShapes](concatenationerror/mismatchedshapes.md)
   Shaped arrays across columns have mismatched shapes and can’t be concatenated.
-- [var errorDescription: String?](concatenationerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

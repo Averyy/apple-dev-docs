@@ -26,11 +26,6 @@ struct StateChanges
   Creates and returns an iterator that traverses the list of dock accessory state changes.
 - [DockAccessory.StateChanges.Element](dockaccessory/statechanges/element.md)
   A dock accessory state change.
-### Type Aliases
-- [DockAccessory.StateChanges.AsyncIterator](dockaccessory/statechanges/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](dockaccessory/statechanges/asyncsequence-implementations.md)
 
 ## Relationships
 

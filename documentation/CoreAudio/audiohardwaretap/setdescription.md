@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: method
 
+Set the description property.
+
 **Availability**:
 - macOS 15.0+
 
@@ -11,6 +13,10 @@
 ```swift
 func setDescription(_ description: CATapDescription) throws
 ```
+
+## Parameters
+
+- `description`: The CATapDescription to describe the tap.
 
 
 ---

@@ -26,10 +26,6 @@ static var mappedIfSafe: NSData.ReadingOptions { get }
   A hint indicating the file should not be stored in the file-system caches.
 - [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
   Hint to map the file in if possible.
-- [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
-  A hint indicating the file should not be stored in the file-system caches.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
-  Hint to map the file in if possible.
 
 
 ---

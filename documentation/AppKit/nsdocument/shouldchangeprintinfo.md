@@ -17,11 +17,11 @@ func shouldChangePrintInfo(_ newPrintInfo: NSPrintInfo) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) by default; subclasses can override this method to return [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) by default; subclasses can override this method to return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method is invoked by the [`runPageLayout(_:)`](nsdocument/runpagelayout(_:).md) method, which sets a new `NSPrintInfo`object for the document only if this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method is invoked by the [`runPageLayout(_:)`](nsdocument/runpagelayout(_:).md) method, which sets a new `NSPrintInfo`object for the document only if this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

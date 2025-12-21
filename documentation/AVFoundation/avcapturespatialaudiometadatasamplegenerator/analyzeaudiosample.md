@@ -3,9 +3,11 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Analyzes the provided audio sample buffer for its contribution to the spatial audio timed metadata value.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,17 +17,24 @@ func analyzeAudioSample(_ sbuf: CMSampleBuffer) -> OSStatus
 
 #### Return Value
 
-Returns noErr if the sample was able to be analyzed.
+`noErr` if the sample is successfully analyzed, otherwise a non-zero error code.
 
 #### Discussion
 
-Analyzes the audio sample buffer for its contribution to the spatial audio timed metadata value.
-
-All of the spatial audio sample buffer that given to an AVAssetWriter need to be analyzed for the generation of the proper spatial audio timed metadata value.
+You must call this method with each and every spatial audio buffer you provide to [`AVAssetWriter`](avassetwriter.md), so it can be analyzed for the generation of a proper spatial audio timed metadata value.
 
 ## Parameters
 
-- `sbuf`: An CMSampleBuffer containing spatial audio.
+- `sbuf`: A sample buffer containing spatial audio.
+
+## See Also
+
+- [func newTimedMetadataSampleBufferAndResetAnalyzer() -> Unmanaged<CMSampleBuffer>?](avcapturespatialaudiometadatasamplegenerator/newtimedmetadatasamplebufferandresetanalyzer.md)
+  Creates a sample buffer containing a spatial audio timed metadata sample computed from all analyzed audio buffers, and resets the analyzer to its initial state.
+- [var timedMetadataSampleBufferFormatDescription: CMFormatDescription](avcapturespatialaudiometadatasamplegenerator/timedmetadatasamplebufferformatdescription.md)
+  Returns the format description of the sample buffer returned from the [`newTimedMetadataSampleBufferAndResetAnalyzer()`](avcapturespatialaudiometadatasamplegenerator/newtimedmetadatasamplebufferandresetanalyzer().md) method.
+- [func resetAnalyzer()](avcapturespatialaudiometadatasamplegenerator/resetanalyzer.md)
+  Calling this method resets the analyzer to its initial state so that a new run of audio sample buffers can be analyzed.
 
 
 ---

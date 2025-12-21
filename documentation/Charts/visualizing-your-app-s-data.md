@@ -29,4 +29,4 @@ Build complex and interactive charts using Swift Charts.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/charts/visualizing_your_app_s_data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/visualizing-your-app-s-data)*

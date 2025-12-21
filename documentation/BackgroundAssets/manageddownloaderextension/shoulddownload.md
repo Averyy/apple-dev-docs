@@ -4,15 +4,15 @@
 **Kind**: method  
 **Required**: Yes
 
-Determines whether a particular asset pack should be downloaded.
+Determines whether to download an asset pack.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func shouldDownload(_ assetPack: AssetPack) -> Bool
 
 ## Mentions
 
-- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
 
 #### Return Value
 

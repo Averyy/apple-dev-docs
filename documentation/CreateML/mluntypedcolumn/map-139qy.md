@@ -29,6 +29,8 @@ A new `MLDataColumn` typed to the return type of `lazyTransform`.
 
 ## See Also
 
+- [func map(_:)](mluntypedcolumn/map(_:).md)
+  Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
 - [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-9v61j.md)
   Creates a new column of typed values, potentially with missing values, by applying the given thread-safe transform to every non-missing element of this untyped column.
 - [func mapMissing<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/mapmissing(_:).md)

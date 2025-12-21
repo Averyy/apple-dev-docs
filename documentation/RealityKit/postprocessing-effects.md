@@ -8,7 +8,7 @@ Create special rendering effects for your RealityKit scenes.
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
-[`Core Image`](https://developer.apple.com/documentation/CoreImage), Metal kernal functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders), and [`SpriteKit`](https://developer.apple.com/documentation/SpriteKit) all execute on the GPU and can be effectively used to implement postprocessing effects.
+[`Core Image`](https://developer.apple.com/documentation/CoreImage), Metal kernal functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders), and [`SpriteKit`](https://developer.apple.com/documentation/SpriteKit) all execute on the GPU and can be effectively used to implement postprocessing effects.
 
 ## Topics
 
@@ -18,7 +18,7 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
 ### Metal effects
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
   Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
   Make sure your postprocess effect works on all devices.

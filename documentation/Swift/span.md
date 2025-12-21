@@ -11,7 +11,7 @@
 - Mac Catalyst 12.2+
 - macOS 10.14.4+
 - tvOS 12.2+
-- visionOS 1.1+
+- visionOS 1.0+
 - watchOS 5.2+
 
 ## Declaration
@@ -23,10 +23,12 @@ struct Span<Element> where Element : ~Copyable
 
 #### Overview
 
-A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` is created, it inherits the lifetime of the container owning the contiguous memory, ensuring temporal safety and avoiding use-after-free errors. Operations on `Span` are bounds-checked, ensuring spcial safety and avoiding buffer overflow errors.
+A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` is created, it inherits the lifetime of the container owning the contiguous memory, ensuring temporal safety and avoiding use-after-free errors. Operations on `Span` are bounds-checked, ensuring spatial safety and avoiding buffer overflow errors.
 
 ## Topics
 
+### Initializers
+- [init()](span/init.md)
 ### Instance Properties
 - [var bytes: RawSpan](span/bytes.md)
 - [var count: Int](span/count.md)
@@ -36,6 +38,24 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
 - [var isEmpty: Bool](span/isempty.md)
   A Boolean value indicating whether the span is empty.
 ### Instance Methods
+- [func extracting(Range<Span<Element>.Index>) -> Span<Element>](span/extracting(_:)-1c6e6.md)
+  Constructs a new span over the items within the supplied range of positions within this span.
+- [func extracting(some RangeExpression<Int>) -> Span<Element>](span/extracting(_:)-48neh.md)
+  Constructs a new span over the items within the supplied range of positions within this span.
+- [func extracting((UnboundedRange_) -> ()) -> Span<Element>](span/extracting(_:)-57peb.md)
+  Constructs a new span over all the items of this span.
+- [func extracting(droppingFirst: Int) -> Span<Element>](span/extracting(droppingfirst:).md)
+  Returns a span over all but the given number of initial elements.
+- [func extracting(droppingLast: Int) -> Span<Element>](span/extracting(droppinglast:).md)
+  Returns a span over all but the given number of trailing elements.
+- [func extracting(first: Int) -> Span<Element>](span/extracting(first:).md)
+  Returns a span containing the initial elements of this span, up to the specified maximum length.
+- [func extracting(last: Int) -> Span<Element>](span/extracting(last:).md)
+  Returns a span containing the final elements of the span, up to the given maximum length.
+- [func extracting(unchecked: ClosedRange<Span<Element>.Index>) -> Span<Element>](span/extracting(unchecked:)-46y0h.md)
+  Constructs a new span over the items within the supplied range of positions within this span.
+- [func extracting(unchecked: Range<Span<Element>.Index>) -> Span<Element>](span/extracting(unchecked:)-8hfj1.md)
+  Constructs a new span over the items within the supplied range of positions within this span.
 - [func indices(of: borrowing Span<Element>) -> Range<Span<Element>.Index>?](span/indices(of:).md)
   Returns the indices within `self` where the memory represented by `span` is located, or `nil` if `span` is not located within `self`.
 - [func isIdentical(to: Span<Element>) -> Bool](span/isidentical(to:).md)

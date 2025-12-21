@@ -25,7 +25,7 @@ To create a command buffer that generates additional information (when a GPU enc
 
 ## Topics
 
-### Inspecting Execution Information
+### Inspecting execution information
 - [var label: String](mtlcommandbufferencoderinfo/label.md)
   The name of the encoder that generates the error information.
 - [var debugSignposts: [String]](mtlcommandbufferencoderinfo/debugsignposts.md)

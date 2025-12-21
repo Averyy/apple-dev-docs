@@ -19,7 +19,7 @@ var automaticallyUpdatesLighting: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the view automatically creates one or more [`SCNLight`](https://developer.apple.com/documentation/SceneKit/SCNLight) objects, adds them to the scene, and updates their properties to reflect estimated lighting information from the camera scene. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) if you want to directly control all lighting in the SceneKit scene.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), the view automatically creates one or more [`SCNLight`](https://developer.apple.com/documentation/SceneKit/SCNLight) objects, adds them to the scene, and updates their properties to reflect estimated lighting information from the camera scene. Set this value to [`false`](https://developer.apple.com/documentation/Swift/false) if you want to directly control all lighting in the SceneKit scene.
 
 
 ---

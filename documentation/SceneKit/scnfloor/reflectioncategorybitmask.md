@@ -20,8 +20,6 @@ A mask that defines which categories of other objects show reflections on the fl
 var reflectionCategoryBitMask: Int { get set }
 ```
 
-#### Discussion
-
 ## See Also
 
 - [var reflectivity: CGFloat](scnfloor/reflectivity.md)

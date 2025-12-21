@@ -24,34 +24,33 @@ var kCMVideoCodecType_DVCNTSC: CMVideoCodecType { get }
 
 - [var kCMVideoCodecType_422YpCbCr8: CMVideoCodecType](kcmvideocodectype_422ypcbcr8.md)
   A type that identifies a component with the format of Y’CbCr 8-bit 4:2:2 ordered Cb Y’0 Cr Y’1.
+- [var kCMVideoCodecType_422YpCbCr8: CMVideoCodecType](kcmvideocodectype_422ypcbcr8.md)
+  A type that identifies a component with the format of Y’CbCr 8-bit 4:2:2 ordered Cb Y’0 Cr Y’1.
 - [var kCMVideoCodecType_Animation: CMVideoCodecType](kcmvideocodectype_animation.md)
   A type that identifies the apple animation format.
+- [var kCMVideoCodecType_Animation: CMVideoCodecType](kcmvideocodectype_animation.md)
+  A type that identifies the apple animation format.
+- [var kCMVideoCodecType_AppleProRes422: CMVideoCodecType](kcmvideocodectype_appleprores422.md)
+  A type that identifies the Apple ProRes 422 format.
+- [var kCMVideoCodecType_AppleProRes422HQ: CMVideoCodecType](kcmvideocodectype_appleprores422hq.md)
+  A type that identifies the Apple ProRes 422 HQ format.
+- [var kCMVideoCodecType_AppleProRes422LT: CMVideoCodecType](kcmvideocodectype_appleprores422lt.md)
+  A type that identifies the Apple ProRes 422 LT format.
+- [var kCMVideoCodecType_AppleProRes422Proxy: CMVideoCodecType](kcmvideocodectype_appleprores422proxy.md)
+  A type that identifies the Apple ProRes 422 proxy format.
+- [var kCMVideoCodecType_AppleProRes4444: CMVideoCodecType](kcmvideocodectype_appleprores4444.md)
+  A type that identifies the Apple ProRes 4444 format.
+- [var kCMVideoCodecType_AppleProRes4444XQ: CMVideoCodecType](kcmvideocodectype_appleprores4444xq.md)
+  A type that identifies the Apple ProRes 4444 XQ format.
+- [var kCMVideoCodecType_AppleProResRAW: CMVideoCodecType](kcmvideocodectype_appleproresraw.md)
+  A type that identifies the Apple ProRes RAW format.
+- [var kCMVideoCodecType_AppleProResRAWHQ: CMVideoCodecType](kcmvideocodectype_appleproresrawhq.md)
+  A type that identifies the Apple ProRes RAW HQ format.
+- [var kCMVideoCodecType_AV1: CMVideoCodecType](kcmvideocodectype_av1.md)
 - [var kCMVideoCodecType_Cinepak: CMVideoCodecType](kcmvideocodectype_cinepak.md)
   A type that identifies the cinepak format.
-- [var kCMVideoCodecType_JPEG: CMVideoCodecType](kcmvideocodectype_jpeg.md)
-  A type that identifies the Joint Photographic Experts Group (JPEG) format.
-- [var kCMVideoCodecType_JPEG_OpenDML: CMVideoCodecType](kcmvideocodectype_jpeg_opendml.md)
-  A type that identifies the JPEG format with Open-DML extensions.
-- [var kCMVideoCodecType_SorensonVideo: CMVideoCodecType](kcmvideocodectype_sorensonvideo.md)
-  A type that identifies the sorenson video format.
-- [var kCMVideoCodecType_SorensonVideo3: CMVideoCodecType](kcmvideocodectype_sorensonvideo3.md)
-  A type that identifies the sorenson 3 video format.
-- [var kCMVideoCodecType_H263: CMVideoCodecType](kcmvideocodectype_h263.md)
-  A type that identifies the ITU-T H.263 format.
-- [var kCMVideoCodecType_H264: CMVideoCodecType](kcmvideocodectype_h264.md)
-  A type that identifies the ITU-T H.264 format.
-- [var kCMVideoCodecType_MPEG4Video: CMVideoCodecType](kcmvideocodectype_mpeg4video.md)
-  A type that identifies the Moving Picture Experts Group (MPEG) MPEG-4 Part 2 video format.
-- [var kCMVideoCodecType_MPEG2Video: CMVideoCodecType](kcmvideocodectype_mpeg2video.md)
-  A type that identifies the MPEG-2 video format.
-- [var kCMVideoCodecType_MPEG1Video: CMVideoCodecType](kcmvideocodectype_mpeg1video.md)
-  A type that identifies the MPEG-1 video format.
-- [var kCMVideoCodecType_DVCPAL: CMVideoCodecType](kcmvideocodectype_dvcpal.md)
-  A type that identifies the DV PAL format.
-- [var kCMVideoCodecType_DVCProPAL: CMVideoCodecType](kcmvideocodectype_dvcpropal.md)
-  A type that identifies the Panasonic DVCPro PAL format.
-- [var kCMVideoCodecType_DVCPro50NTSC: CMVideoCodecType](kcmvideocodectype_dvcpro50ntsc.md)
-  A type that identifies the Panasonic DVCPro-50 NTSC format.
+- [var kCMVideoCodecType_Cinepak: CMVideoCodecType](kcmvideocodectype_cinepak.md)
+  A type that identifies the cinepak format.
 
 
 ---

@@ -23,10 +23,10 @@ struct URLRequest
 ## Mentions
 
 - [Uploading data to a website](uploading-data-to-a-website.md)
-- [Downloading files in the background](downloading-files-in-the-background.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Accessing cached data](accessing-cached-data.md)
+- [Downloading files from websites](downloading-files-from-websites.md)
+- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
@@ -81,9 +81,12 @@ Certain header fields are reserved; see [`Reserved HTTP headers`](nsurlrequest#R
 - [var allowsCellularAccess: Bool](urlrequest/allowscellularaccess.md)
   A Boolean value indicating whether the request is allowed to use the built-in cellular radios to satisfy the request.
 - [var allowsPersistentDNS: Bool](urlrequest/allowspersistentdns.md)
+  `true` if the request is allowed to store and use DNS answers, potentially beyond TTL expiry, in a persistent per-process cache, `false` otherwise. Defaults to `false`. This should only be set to `true` for hostnames whose resolutions are not expected to change across networks.
 - [var assumesHTTP3Capable: Bool](urlrequest/assumeshttp3capable.md)
+  `true` if server endpoint is known to support HTTP/3. Enables QUIC racing without HTTP/3 service discovery. Defaults to `false`. The default may be `true` in a future OS update.
 - [var cookiePartitionIdentifier: String?](urlrequest/cookiepartitionidentifier.md)
 - [var requiresDNSSECValidation: Bool](urlrequest/requiresdnssecvalidation.md)
+  `true` if the request is required to do DNSSEC validation during DNS lookup. `false` otherwise. Defaults to `false`.
 ### Supporting limited modes
 - [var allowsConstrainedNetworkAccess: Bool](urlrequest/allowsconstrainednetworkaccess.md)
   A Boolean value that indicates whether the request may use the network when the user has specified Low Data Mode.
@@ -107,6 +110,9 @@ Certain header fields are reserved; see [`Reserved HTTP headers`](nsurlrequest#R
 - [class NSMutableURLRequest](nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
 - [typealias MutableURLRequest](mutableurlrequest.md)
+### Instance Properties
+- [var allowsUltraConstrainedNetworkAccess: Bool](urlrequest/allowsultraconstrainednetworkaccess.md)
+  `true` if the receiver is allowed to use an interface marked as ultra-constrained to satify the request, `false` otherwise.
 
 ## Relationships
 

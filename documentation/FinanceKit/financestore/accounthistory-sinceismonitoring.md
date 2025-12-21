@@ -26,7 +26,7 @@ Use this method to list and monitor accounts present in a person’s Wallet. If 
 ## Parameters
 
 - `token`: An optional  .
-- `isMonitoring`: A Boolean value that indicates if the framework should return a    that indicates the changes to the accounts over time.   Defaults to 
+- `isMonitoring`: A Boolean value that indicates if the framework should return a   that indicates the changes to the accounts over time. Defaults to 
 
 ## See Also
 

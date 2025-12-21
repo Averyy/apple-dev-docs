@@ -1,26 +1,23 @@
-# init()
+# init(_:)
 
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a glass button style.
-
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.1+
+- iPadOS 26.1+
+- Mac Catalyst 26.1+
+- macOS 26.1+
+- tvOS 26.1+
+- watchOS 26.1+
 
 ## Declaration
 
 ```swift
-init()
+init(_ glass: Glass)
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/glassbuttonstyle/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/glassbuttonstyle/init(_:))*

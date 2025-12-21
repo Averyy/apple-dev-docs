@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An option specifying that the app must prevent hazards when modifying this object’s contents.
+An option that disables automatic memory hazard tracking in Metal for a resource at runtime.
 
 **Availability**:
 - iOS 13.0+
@@ -21,14 +21,18 @@ case untracked
 
 #### Discussion
 
-Metal does not do any dependency analysis on untracked resources. You are responsible for ensuring that resources are modified safely. See [`Resource Synchronization`](resource-synchronization.md). When you already have detailed knowledge of how your app works, using untracked resources can improve performance.
+Create resources with this option when you’re managing resource synchronization. Metal doesn’t track memory dependencies for untracked resources, which means you’re responsible for ensuring that commands access those resources safely with barriers, fences, or events.
+
+Untracked resources can improve runtime performance when you have detailed knowledge of how your app manages resource dependencies and can manually synchronize access more efficiently than with automatic tracking in Metal.
+
+For more information about hazard tracking and synchronization trade-offs, see [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md).
 
 ## See Also
 
 - [MTLHazardTrackingMode.default](mtlhazardtrackingmode/default.md)
-  An option specifying that the default tracking mode should be used.
+  An option that applies the default tracking behavior in Metal based on the resource or heap type you’re creating.
 - [MTLHazardTrackingMode.tracked](mtlhazardtrackingmode/tracked.md)
-  An option specifying that Metal prevents hazards when modifying this object’s contents.
+  An option that directs Metal to apply runtime safeguards that prevent memory hazards when commands access a resource.
 
 
 ---

@@ -28,6 +28,11 @@ The decoded transformer.
 
 - `decoder`: A decoder.
 
+## See Also
+
+- [func encodeWithOptimizer(LogisticRegressionClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](logisticregressionclassifier/encodewithoptimizer(_:to:).md)
+  Encodes the transformer and optimizer to an encoder.
+
 
 ---
 

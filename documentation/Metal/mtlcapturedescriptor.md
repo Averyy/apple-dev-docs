@@ -21,9 +21,9 @@ class MTLCaptureDescriptor
 
 ## Topics
 
-### Setting Capture Parameters
+### Setting capture parameters
 - [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
-  The object whose contents should be captured.
+  The instance whose contents should be captured.
 - [var destination: MTLCaptureDestination](mtlcapturedescriptor/destination.md)
   The destination for any captured command data.
 - [var outputURL: URL?](mtlcapturedescriptor/outputurl.md)
@@ -49,7 +49,7 @@ class MTLCaptureDescriptor
 - [enum MTLCaptureDestination](mtlcapturedestination.md)
   The kinds of destinations for captured command data.
 - [protocol MTLCaptureScope](mtlcapturescope.md)
-  A protocol that defines custom boundaries for a GPU frame capture.
+  A type that can programmatically customize a GPU frame capture.
 
 
 ---

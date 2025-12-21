@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: method
 
-Presents a notice sheet from Apple that informs people before showing external purchases and determines whether your app can present external purchases.
+Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
 
 **Availability**:
 - iOS 15.4+
@@ -26,11 +26,11 @@ static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult
 
 #### Return Value
 
-This returns [`ExternalPurchase.NoticeResult`](externalpurchase/noticeresult.md).
+This method returns [`ExternalPurchase.NoticeResult`](externalpurchase/noticeresult.md).
 
 #### Discussion
 
-This method is only available to apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see [`ExternalPurchase`](externalpurchase.md).
+This method is only available to apps with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase.allowed-regions or [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see [`ExternalPurchase`](externalpurchase.md).
 
 Call this method each time your app is ready to present an external purchase. To use this method, follow these steps:
 
@@ -47,10 +47,10 @@ try await ExternalPurchase.presentNoticeSheet()
 
 This method throws a [`StoreKitError`](storekiterror.md) in any of the following conditions:
 
-- Your app doesn’t have the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement.
-- Your app doesn’t have external purchases configured for the current App Store storefront; see [`SKExternalPurchase`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchase) and [`Storefront`](storefront.md).
 - The current App Store storefront doesn’t support external purchases.
 - The person is ineligible to make external purchases.
+- Your app doesn’t have the necessary entitlement.
+- Your app doesn’t configure external purchase for the current App Store storefront in [`SKExternalPurchase`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchase) when it has the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement.
 - A network or system error occurs.
 
 This method also throws a [`StoreKitError`](storekiterror.md) if its functionality is unavailable for the following reasons:

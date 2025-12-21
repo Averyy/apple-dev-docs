@@ -6,7 +6,7 @@
 A protocol that defines a type that receives enumerations of search results from your extension.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

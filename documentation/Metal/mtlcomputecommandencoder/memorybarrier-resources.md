@@ -32,9 +32,9 @@ To determine whether a GPU supports memory barriers, see the [`Metal feature set
 ## See Also
 
 - [func waitForFence(any MTLFence)](mtlcomputecommandencoder/waitforfence(_:).md)
-  Encodes a command that instructs the GPU to pause pass execution until a fence updates.
+  Encodes a command that instructs the GPU to pause the compute pass until another pass updates a fence.
 - [func updateFence(any MTLFence)](mtlcomputecommandencoder/updatefence(_:).md)
-  Encodes a command that instructs the GPU to update a fence, allowing passes waiting on the fence to start or resume.
+  Encodes a command that instructs the GPU to update a fence after the compute pass completes.
 - [func memoryBarrier(scope: MTLBarrierScope)](mtlcomputecommandencoder/memorybarrier(scope:).md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
 

@@ -100,9 +100,6 @@ enum RPRecordingErrorCode
 - [RPRecordingErrorCode.exportClipToURLInProgress](rprecordingerrorcode/exportcliptourlinprogress.md)
 ### Initializers
 - [init?(rawValue: Int)](rprecordingerrorcode/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](rprecordingerrorcode/equatable-implementations.md)
-- [RawRepresentable Implementations](rprecordingerrorcode/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -116,8 +113,9 @@ enum RPRecordingErrorCode
 
 ## See Also
 
-- [RPRecordingErrorDomain](rprecordingerrordomain-5gi.md)
-  The ReplayKit framework error domain.
+- [let RPRecordingErrorDomain: String](rprecordingerrordomain.md)
+  The ReplayKit error domain.
+- [let SCStreamErrorDomain: String](scstreamerrordomain.md)
 
 
 ---

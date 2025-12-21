@@ -3,19 +3,38 @@
 **Framework**: File Provider  
 **Kind**: property
 
-If the base version of the item trying to be uploaded doesn’t match the version of the file on server, the call to modifyItem should fail with a NSFileProviderErrorLocalVersionConflictingWithServer error.
+An option to fail an upload in the event of a version conflict.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 static var failOnConflict: NSFileProviderModifyItemOptions { get }
 ```
+
+#### Discussion
+
+If you adopt this option, and an uploaded item’s base version doesn’t match the version on the server, fail and return [`localVersionConflictingWithServer`](nsfileprovidererror/localversionconflictingwithserver.md) (Swift) or [`NSFileProviderError.Code.localVersionConflictingWithServer`](nsfileprovidererror/code/localversionconflictingwithserver.md) (Objective-C) in your implementation of `modifyItem`.
+
+To support the fail-on-conflict behavior in your file provider, indicate the support by adding the following key/value pair to the extension’s Info pane.
+
+```None
+<key>NSExtension</key>
+<dict>
+    <key>NSExtensionFileProviderSupportsFailingUploadOnConflict</key>
+    <true/>
+</dict>
+```
+
+## See Also
+
+- [static var mayAlreadyExist: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/mayalreadyexist.md)
+  An option that indicates the changes may already exist in your remote storage.
 
 
 ---

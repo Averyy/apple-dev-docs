@@ -7,7 +7,7 @@ Display a set of recent, personal events that inspire someone to contribute to y
 
 **Availability**:
 - iOS 17.2+
-- iPadOS 26.0+ (Beta)
+- iPadOS 26.0+
 
 #### Overview
 
@@ -37,12 +37,15 @@ For the picker to appear, your app needs a special entitlement in your app’s c
   A view that lists different types of recent events in a person’s life.
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
-- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
-  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
+### Notifications
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+  Register your app to receive journaling suggestions when a person taps a system notification.
 - [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
-  A token you use to modify the content of the presentation.
+  A container for a Journaling Suggestion identifier.
+- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+  The configuration for Journaling Suggestion notifications.
 
 
 ---

@@ -19,7 +19,7 @@ protocol AVCapturePhotoFileDataRepresentationCustomizer : NSObjectProtocol
 
 ## Mentions
 
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Overview
 
@@ -27,7 +27,7 @@ AVCapturePhoto is a wrapper representing a photo in a file container. To flatten
 
 ## Topics
 
-### Replacing or Removing Metadata
+### Replacing or removing metadata
 - [func replacementMetadata(for: AVCapturePhoto) -> [String : Any]?](avcapturephotofiledatarepresentationcustomizer/replacementmetadata(for:).md)
   A callback in which you can provide replacement metadata or direct [`AVCapturePhoto`](avcapturephoto.md) to strip existing metadata from the flattened file.
 - [func replacementEmbeddedThumbnailPixelBuffer(withPhotoFormat: AutoreleasingUnsafeMutablePointer<NSDictionary?>, for: AVCapturePhoto) -> Unmanaged<CVPixelBuffer>?](avcapturephotofiledatarepresentationcustomizer/replacementembeddedthumbnailpixelbuffer(withphotoformat:for:).md)

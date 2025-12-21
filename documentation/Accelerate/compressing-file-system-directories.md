@@ -99,7 +99,7 @@ On return, `directory.aar` exists in [`NSTemporaryDirectory()`](https://develope
   Recreate an entire file system directory from an archive file.
 - [Compressing and saving a string to the file system](compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and Parsing an Archived String](decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 
 

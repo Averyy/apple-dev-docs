@@ -27,6 +27,8 @@ The system automatically calls this method on playback, but calling it in advanc
 
 - [func play((() -> Void)?)](avmidiplayer/play(_:).md)
   Plays the MIDI sequence.
+- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+  A callback the system invokes when MIDI playback completes.
 - [func stop()](avmidiplayer/stop.md)
   Stops playing the sequence.
 - [var isPlaying: Bool](avmidiplayer/isplaying.md)

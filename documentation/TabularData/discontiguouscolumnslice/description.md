@@ -24,8 +24,6 @@ var description: String { get }
 
 - [var debugDescription: String](discontiguouscolumnslice/debugdescription.md)
   A text representation of the column slice suitable for debugging.
-- [func description(options: FormattingOptions) -> String](discontiguouscolumnslice/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](discontiguouscolumnslice/custommirror.md)
   A mirror that reflects the column slice.
 

@@ -36,6 +36,11 @@ An alternative to using a `CGShading` instance is to use the [`CGGradient`](cggr
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](cgshading/typeid.md)
   Returns the Core Foundation type identifier for Core Graphics shading objects.
+### Initializers
+- [init?(axialHeadroom: Float, space: CGColorSpace, start: CGPoint, end: CGPoint, function: CGFunction, extendStart: Bool, extendEnd: Bool)](cgshading/init(axialheadroom:space:start:end:function:extendstart:extendend:).md)
+- [init?(radialHeadroom: Float, space: CGColorSpace, start: CGPoint, startRadius: CGFloat, end: CGPoint, endRadius: CGFloat, function: CGFunction, extendStart: Bool, extendEnd: Bool)](cgshading/init(radialheadroom:space:start:startradius:end:endradius:function:extendstart:extendend:).md)
+### Instance Properties
+- [var contentHeadroom: Float](cgshading/contentheadroom.md)
 
 ## Relationships
 

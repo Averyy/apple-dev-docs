@@ -21,7 +21,7 @@ var isDetailSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of detail enhancement to apply to the image by setting [`detailAmount`](cirawfilter/detailamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of detail enhancement to apply to the image by setting [`detailAmount`](cirawfilter/detailamount.md).
 
 ## See Also
 

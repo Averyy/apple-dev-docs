@@ -19,7 +19,7 @@ var previewPixelBuffer: CVPixelBuffer? { get }
 
 ## Mentions
 
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
 
 #### Discussion
 

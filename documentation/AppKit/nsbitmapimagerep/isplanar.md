@@ -16,7 +16,7 @@ var isPlanar: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the data is in a planar configuration or [`false`](https://developer.apple.com/documentation/swift/false) if it is in a meshed configuration. In a planar configuration, the image data is segregated into a separate plane for each color and coverage component. In a meshed configuration, the data is integrated into a single plane.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the data is in a planar configuration or [`false`](https://developer.apple.com/documentation/Swift/false) if it is in a meshed configuration. In a planar configuration, the image data is segregated into a separate plane for each color and coverage component. In a meshed configuration, the data is integrated into a single plane.
 
 ## See Also
 

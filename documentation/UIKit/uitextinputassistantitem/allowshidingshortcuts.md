@@ -19,7 +19,7 @@ var allowsHidingShortcuts: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user may hide the shortcuts bar when the keyboard is visible. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the shortcuts bar remains visible while the keyboard is visible. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user may hide the shortcuts bar when the keyboard is visible. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the shortcuts bar remains visible while the keyboard is visible. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

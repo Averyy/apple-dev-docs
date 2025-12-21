@@ -33,8 +33,6 @@ struct TransformerToTemporalAdaptor<Base> where Base : Transformer
   The output type.
 - [TransformerToTemporalAdaptor.OutputSequence](transformertotemporaladaptor/outputsequence.md)
   The output sequence type.
-### Default Implementations
-- [TemporalTransformer Implementations](transformertotemporaladaptor/temporaltransformer-implementations.md)
 
 ## Relationships
 

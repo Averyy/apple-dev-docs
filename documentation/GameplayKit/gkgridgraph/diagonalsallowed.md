@@ -21,7 +21,7 @@ var diagonalsAllowed: Bool { get }
 
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), nodes in the grid are connected to their diagonal neighbors. If the value is [`false`](https://developer.apple.com/documentation/swift/false), nodes are connected only to their horizontal and vertical neighbors.
+If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), nodes in the grid are connected to their diagonal neighbors. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), nodes are connected only to their horizontal and vertical neighbors.
 
 You specify this option when creating a grid graph with the [`init(fromGridStartingAt:width:height:diagonalsAllowed:)`](gkgridgraph/init(fromgridstartingat:width:height:diagonalsallowed:).md) initializer. After initialization, you can use this property to examine the parameters the graph was created with—for example, to draw the grid as a debugging overlay in your game UI.
 

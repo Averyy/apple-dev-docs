@@ -94,7 +94,7 @@ In the [`GameCenterMatchmakingRuleCreateRequest.Data.Attributes`](https://develo
 
 An expression is a [`JMESPath`](https://developer.apple.comhttps://jmespath.org) formatted string with Game Center matchmaking function additions. Game Center uses the expression as a query on a set of requests, depending on the type of rule and stage of the matchmaking algorithm, to find the most compatible players. The algorithm applies compatible rules first, distance rules next, followed by match and team rules.
 
-If you set the `type` field to `COMPATIBLE`, the `requests` array in the expression contains two match requests. Use `requests[0]` to refer to the first one and `requests[1]` for the second one. For example, write an expression that returns [`true`](https://developer.apple.com/documentation/swift/true) if the theme game settings are the same.
+If you set the `type` field to `COMPATIBLE`, the `requests` array in the expression contains two match requests. Use `requests[0]` to refer to the first one and `requests[1]` for the second one. For example, write an expression that returns [`true`](https://developer.apple.com/documentation/Swift/true) if the theme game settings are the same.
 
 ```other
 requests[0].properties.theme == requests[1].properties.theme

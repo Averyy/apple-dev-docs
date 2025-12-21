@@ -6,10 +6,10 @@
 The seed used for the hashing function.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -27,6 +27,8 @@ The prefilter uses the MurmurHash3 function.
   The Bloom filter data.
 - [NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/prefilterdata.md)
   An enumeration that represents Bloom filter data, as used by a prefilter.
+- [let tag: String](neurlfilterprefilter/tag.md)
+  The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
 - [let bitCount: Int](neurlfilterprefilter/bitcount.md)
   The number of bits in the Bloom filter.
 - [let hashCount: Int](neurlfilterprefilter/hashcount.md)

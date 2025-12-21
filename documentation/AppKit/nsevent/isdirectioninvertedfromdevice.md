@@ -16,7 +16,7 @@ var isDirectionInvertedFromDevice: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) if the direction is inverted; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the direction is inverted; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is valid for `NSEventScrollWheel` and [`NSEvent.EventType.swipe`](nsevent/eventtype/swipe.md) events. The user may choose to change the scrolling behavior such that it feels like they are moving the content instead of the scroll bar.
 

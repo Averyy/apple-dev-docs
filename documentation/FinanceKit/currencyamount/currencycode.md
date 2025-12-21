@@ -19,6 +19,11 @@ let currencyCode: String
 
 FinanceKit expresses currencies as three character strings. These are usually ISO 4217 compliant, but aren’t guaranteed to be since not all currencies are expressible by the ISO 4217 standard.
 
+## See Also
+
+- [let amount: Decimal](currencyamount/amount.md)
+  The numeric value of the amount.
+
 
 ---
 

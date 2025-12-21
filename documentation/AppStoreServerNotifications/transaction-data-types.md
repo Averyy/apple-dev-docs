@@ -6,6 +6,9 @@ Refer to these data types for decoded transaction and renewal information payloa
 
 ## Topics
 
+### Environment
+- [type environment](environment.md)
+  The server environment, either sandbox or production.
 ### Transaction identifiers
 - [type originalTransactionId](originaltransactionid.md)
   The original transaction identifier of a purchase.
@@ -19,6 +22,8 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type appTransactionId](apptransactionid.md)
   The unique identifier of the app download transaction.
 ### App information
+- [type appAppleId](appappleid.md)
+  The unique identifier of an app in the App Store.
 - [type bundleId](bundleid.md)
   The bundle identifier of an app.
 ### Account information
@@ -43,17 +48,17 @@ Refer to these data types for decoded transaction and renewal information payloa
   The three-letter code that represents the country or region associated with the App Store storefront for the purchase.
 - [type storefrontId](storefrontid.md)
   An Apple-defined value that uniquely identifies an App Store storefront.
-### Subscription offers
+### Offers
 - [type eligibleWinBackOfferIds](eligiblewinbackofferids.md)
   An array of win-back offer identifiers that a customer is eligible to redeem, which sorts the identifiers to present the better offers first.
 - [type offerIdentifier](offeridentifier.md)
-  The string identifier of a subscription offer that you create in App Store Connect.
+  The string identifier of an offer that you create in App Store Connect.
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for a subscription offer for an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 ### Purchase dates
 - [type originalPurchaseDate](originalpurchasedate.md)
   The purchase date of the transaction associated with the original transaction identifier.
@@ -72,7 +77,7 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type autoRenewProductId](autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
 - [type expirationIntent](expirationintent.md)
-  The reason a subscription expired.
+  The reason an auto-renewable subscription expired.
 - [type expiresDate](expiresdate.md)
   The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 - [type isUpgraded](isupgraded.md)
@@ -87,11 +92,15 @@ Refer to these data types for decoded transaction and renewal information payloa
 ### Price increase status
 - [type priceIncreaseStatus](priceincreasestatus.md)
   The status that indicates whether an auto-renewable subscription is subject to a price increase.
-### Revocation date and reason
+### Revocations
 - [type revocationDate](revocationdate.md)
   The UNIX time, in milliseconds, that the App Store refunded the transaction or revoked it from Family Sharing.
+- [type revocationPercentage](revocationpercentage.md)
+  The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
 - [type revocationReason](revocationreason.md)
-  The reason for a refunded transaction.
+  The reason for a revoked or refunded transaction.
+- [type revocationType](revocationtype.md)
+  The type of the refund or revocation that applies to the transaction.
 ### Transaction reason
 - [type transactionReason](transactionreason.md)
   The cause of a purchase transaction, which indicates whether it’s a customer’s purchase or a renewal for an auto-renewable subscription that the system initiates.

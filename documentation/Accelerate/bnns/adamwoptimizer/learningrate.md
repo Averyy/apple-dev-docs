@@ -13,7 +13,6 @@ A value that specifies the learning rate.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -6,17 +6,22 @@
 `true` if the directory version is local; otherwise `false`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var isLocal: Bool { get }
 ```
+
+## See Also
+
+- [var url: URL](gamesavesynceddirectory/version/url.md)
+  The URL of a directory where you read and write game-save data.
 
 
 ---

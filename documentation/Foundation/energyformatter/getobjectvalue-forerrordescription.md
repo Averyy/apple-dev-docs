@@ -22,7 +22,7 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the conversion from string was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the conversion from string was successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

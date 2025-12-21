@@ -23,7 +23,7 @@ func applyingFilter(_ filterName: String) -> CIImage
 
 A convenience method for applying a single filter to the method receiver and returning the output image.  Identical to [`applyingFilter(_:parameters:)`](ciimage/applyingfilter(_:parameters:).md) with default parameters.
 
-> ❗ **Important**:  This method, though convenient, is inefficient if used multiple times in succession.  Achieve better performance by chaining filters without asking for the outputs of individual filters.
+> ❗ **Important**:  This method, though convenient, is inefficient if used multiple times in succession. Achieve better performance by chaining filters without asking for the outputs of individual filters. For more information, see [`Processing an Image Using Built-in Filters`](processing-an-image-using-built-in-filters.md).
 
 ## See Also
 

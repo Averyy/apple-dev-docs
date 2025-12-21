@@ -42,7 +42,7 @@ Obtain detailed information about skeletal and face geometry, and saved world da
   Analyze the video from the cameras and the accompanying data, and use ray-casting and depth-map information to determine the location of items.
 - [Camera, Lighting, and Effects](camera-lighting-and-effects.md)
   Determine the camera position and lighting for the current session, and apply effects, such as occlusion, to elements of the environment.
-- [Creating USD files for Apple devices](../RealityKit/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
 

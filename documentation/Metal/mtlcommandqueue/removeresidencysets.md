@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: method
 
-Detaches multiple residency sets from the command queue, which prevents Metal from attaching them to the queue’s command buffers as you commit them.
+Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
 
 **Availability**:
 - iOS 18.0+
@@ -21,13 +21,13 @@ func removeResidencySets(_ residencySets: [any MTLResidencySet])
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
 The method doesn’t remove the residency sets from command buffers the queue owns with a [`status`](mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md).
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
@@ -36,7 +36,7 @@ See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-
 ## See Also
 
 - [func removeResidencySet(any MTLResidencySet)](mtlcommandqueue/removeresidencyset(_:).md)
-  Detaches a residency set from the command queue, which prevents Metal from attaching it to the queue’s command buffers as you commit them.
+  Removes a residency set from a command queue’s list, which means Metal doesn’t apply it to the queue’s command buffers as you commit them.
 
 
 ---

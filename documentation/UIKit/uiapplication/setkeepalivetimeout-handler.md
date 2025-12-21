@@ -19,7 +19,7 @@ func setKeepAliveTimeout(_ timeout: TimeInterval, handler keepAliveHandler: (() 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the handler was installed or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the handler was installed or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 

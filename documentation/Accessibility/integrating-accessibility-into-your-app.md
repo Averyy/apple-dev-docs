@@ -37,8 +37,6 @@ To set an accessibility attribute value on an instance of one of these classes (
 button.setAccessibilityLabel(NSLocalizedString("My label", comment: "label to use for this button"))
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://setAccessibilityLabel)
-
 Alternatively, you can override the getter in the subclass’s implementation.
 
 ```swift
@@ -47,9 +45,7 @@ override func accessibilityLabel() -> String? {
 }
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://accessibilityLabel)
-
-[`NSAccessibility`](https://developer.apple.com/documentation/AppKit/nsaccessibility) contains the full list of accessibility properties.
+[`NSAccessibilityProtocol`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol) contains the full list of accessibility properties.
 
 ##### Add Accessibility Protocols to Custom Controls
 
@@ -69,8 +65,6 @@ For example, the following code sample creates a custom control that subclasses 
 class CustomButtonView: NSView {
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://customButtonDeclare)
-
 If a custom control doesn’t conform to an accessibility protocol, you need to implement the [`accessibilityRole`](https://developer.apple.com/documentation/AppKit/NSAccessibility-c.protocol/accessibilityRole) and [`isAccessibilityElement()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/isAccessibilityElement()) functions.
 
 ```swift
@@ -82,8 +76,6 @@ override func isAccessibilityElement() -> Bool {
     return true
 }
 ```
-
-[`View in Source`](https://developer.apple.comx-source-tag://customButtonAdoption)
 
 ##### Create an Accessibility Element
 
@@ -98,7 +90,7 @@ For objects that don’t have a backing view — for example, a single view that
 
 The Accessibility API includes two convenience methods in `AppKit/NSAccessibility.h` to simplify common accessibility tasks:
 
-- [`screenRect(fromView:rect:)`](https://developer.apple.com/documentation/AppKit/NSAccessibility-swift.struct/screenRect(fromView:rect:)) — This convenience method converts `frame` from the `parentView` coordinate space to the screen coordinate space. This is useful when you set an object’s accessibility frame using the [`accessibilityFrame()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/accessibilityFrame()) method.
+- [`screenRect(fromView:rect:)`](https://developer.apple.com/documentation/AppKit/NSAccessibility-swift.struct/screenRect(fromView:rect:)) — This convenience method converts `frame` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityFrame()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/accessibilityFrame()).
 - [`screenPoint(fromView:point:)`](https://developer.apple.com/documentation/AppKit/NSAccessibility-swift.struct/screenPoint(fromView:point:)) — This convenience method converts `point` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityActivationPoint()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/accessibilityActivationPoint()) coordinates.
 
 ##### Test the Accessibility Features on Your App
@@ -111,7 +103,7 @@ To test VoiceOver, choose System Settings > Accessibility > VoiceOver and click 
 
 - [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Creating Accessible Views](../swiftui/creating_accessible_views.md)
+- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
@@ -121,4 +113,4 @@ To test VoiceOver, choose System Settings > Accessibility > VoiceOver and click 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/integrating_accessibility_into_your_app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/integrating-accessibility-into-your-app)*

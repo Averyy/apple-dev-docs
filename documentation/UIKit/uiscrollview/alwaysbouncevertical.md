@@ -21,7 +21,7 @@ var alwaysBounceVertical: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and [`bouncesVertically`](uiscrollview/bouncesvertically.md) is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view allows vertical dragging even if the content is smaller than the bounds of the scroll view. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and [`bouncesVertically`](uiscrollview/bouncesvertically.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view allows vertical dragging even if the content is smaller than the bounds of the scroll view. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

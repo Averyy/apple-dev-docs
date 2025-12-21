@@ -35,6 +35,8 @@ func adaptedAsUpdatableEstimator() -> TransformerToUpdatableEstimatorAdaptor<Sel
 - [func adaptedAsRandomTransformer() -> some RandomTransformer<Self.Input, Self.Output>
 ](transformer/adaptedasrandomtransformer.md)
   Returns a random transformer wrapping a transformer.
+- [func adaptedAsTemporal()](transformer/adaptedastemporal.md)
+  Exposes this transformer as a temporal transformer.
 - [associatedtype Input](transformer/input.md)
   The input type.
 - [associatedtype Output](transformer/output.md)

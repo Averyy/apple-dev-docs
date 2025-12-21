@@ -10,7 +10,7 @@ The kinds of ray and convex shape cast queries that you can make.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -39,6 +39,8 @@ enum CollisionCastQueryType
 
 - [struct CollisionCastHit](collisioncasthit.md)
   A hit result of a collision cast.
+- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+  Information returned when ray intersects a triangle mesh.
 - [struct PixelCastHit](pixelcasthit.md)
 
 

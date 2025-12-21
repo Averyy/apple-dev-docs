@@ -10,8 +10,8 @@ Sets the app account token value for a purchase the customer makes outside of yo
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+- [Identifying rate limits](identifying-rate-limits.md)
 
 #### Discussion
 

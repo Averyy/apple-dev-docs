@@ -22,7 +22,7 @@ var needsSave: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the delegate for this user activity receives a [`userActivityWillSave(_:)`](nsuseractivitydelegate/useractivitywillsave(_:).md) callback before the activity is sent for continuation on another device.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the delegate for this user activity receives a [`userActivityWillSave(_:)`](nsuseractivitydelegate/useractivitywillsave(_:).md) callback before the activity is sent for continuation on another device.
 
 ## See Also
 

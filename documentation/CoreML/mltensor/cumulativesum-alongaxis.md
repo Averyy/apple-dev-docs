@@ -38,6 +38,11 @@ MLTensor([1, 2, 3]).cumulativeSum() = [1, 1 + 2, 1 + 2 + 3]
 
 - `axis`: The axis along which to perform the cumulative sum. The default value is  . Must be in the range    and have a rank greater than zero.
 
+## See Also
+
+- [func cumulativeProduct(alongAxis: Int) -> MLTensor](mltensor/cumulativeproduct(alongaxis:).md)
+  Computes the cumulative product along the specified axis.
+
 
 ---
 

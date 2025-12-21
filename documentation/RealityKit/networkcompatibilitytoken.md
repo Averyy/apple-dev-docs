@@ -10,7 +10,6 @@ An opaque token used to check the networking compatibility between two peers in 
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

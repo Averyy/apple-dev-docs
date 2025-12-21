@@ -30,9 +30,9 @@ The default value is `nil`.
 - [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtlcomputepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
   A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
-  The maximum number of threads in a threadgroup that you can dispatch to the compute function.
+  A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 - [var maxCallStackDepth: Int](mtlcomputepipelinedescriptor/maxcallstackdepth.md)
-  The maximum recursive call depth for dynamic library, visible, and intersection functions.
+  The maximum call stack depth for indirect function calls in compute shaders.
 
 
 ---

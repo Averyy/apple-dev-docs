@@ -22,7 +22,7 @@ An initialized `NSOpenGLPixelFormat` object whose attributes match the desired a
 
 On return, the Boolean attributes of the receiver match the values specified in `attribs`, and the integer attributes are as close to the specified values as can be provided by the system.
 
-The existence of a Boolean attribute constant in `attribs` implies a [`true`](https://developer.apple.com/documentation/swift/true) value. The Boolean attribute constants are:
+The existence of a Boolean attribute constant in `attribs` implies a [`true`](https://developer.apple.com/documentation/Swift/true) value. The Boolean attribute constants are:
 
 - `NSOpenGLPFAAllRenderers`
 - `NSOpenGLPFADoubleBuffer`

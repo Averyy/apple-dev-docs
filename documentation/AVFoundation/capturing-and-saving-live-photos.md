@@ -1,4 +1,4 @@
-# Capturing and Saving Live Photos
+# Capturing and saving Live Photos
 
 **Framework**: AVFoundation
 
@@ -8,7 +8,7 @@ Capture Live Photos like those created in the system Camera app and save them to
 
 A Live Photo is a picture that includes motion and sound from the moments just before and after its capture. Your app can capture and record Live Photos using the AVFoundation capture system and the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class.
 
-> **Note**:  If you’re not already familiar with capture sessions, input setup, and photo capture, see [`Setting Up a Capture Session`](setting-up-a-capture-session.md) and [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
+> **Note**:  If you’re not already familiar with capture sessions, input setup, and photo capture, see [`Setting up a capture session`](setting-up-a-capture-session.md) and [`Capturing still and Live Photos`](capturing-still-and-live-photos.md).
 
 ##### Enable Live Photo Capture
 
@@ -42,7 +42,7 @@ func configureSession() throws {
 }
 ```
 
-Because you’re already using a built-in camera device for video (see [`Setting Up a Capture Session`](setting-up-a-capture-session.md)), you can simply use the default audio capture device—the system automatically uses the best microphone configuration for the camera position.
+Because you’re already using a built-in camera device for video (see [`Setting up a capture session`](setting-up-a-capture-session.md)), you can simply use the default audio capture device—the system automatically uses the best microphone configuration for the camera position.
 
 Capturing Live Photos requires an internal reconfiguration of the capture pipeline, which takes time and interrupts any in-progress captures. Before shooting your first Live Photo, make sure you’ve configured the pipeline appropriately by enabling Live Photo capture on your [`AVCapturePhotoOutput`](avcapturephotooutput.md) object:
 
@@ -125,7 +125,7 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 
 ##### Save a Live Photo to the Photos Library
 
-Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving Captured Photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) change block, and first make sure that your app has the user’s permission to access Photos.
+Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving captured photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) change block, and first make sure that your app has the user’s permission to access Photos.
 
 ```swift
 func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) {    PHPhotoLibrary.requestAuthorization { status in
@@ -151,7 +151,7 @@ func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) 
 
 ##### Track Live Photo Progress
 
-Capturing Live Photos adds two additional steps to the process shown in [`Tracking Photo Capture Progress`](tracking-photo-capture-progress.md): after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)
+Capturing Live Photos adds two additional steps to the process shown in [`Tracking photo capture progress`](tracking-photo-capture-progress.md): after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)
 
 ![Diagram of numbered Live Photo capture process steps after calling capturePhoto().](https://docs-assets.developer.apple.com/published/128c17342e87a15ff120b1259fad4824/media-2961960%402x.png)
 
@@ -193,9 +193,9 @@ class LivePhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
 
 ## See Also
 
-- [Saving Captured Photos](saving-captured-photos.md)
+- [Saving captured photos](saving-captured-photos.md)
   Add an image and other data from a photo capture to the photo library.
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
   Monitor key events during capture to provide feedback in your camera UI.
 
 

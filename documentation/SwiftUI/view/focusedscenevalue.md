@@ -57,15 +57,8 @@ struct NavigationCommands: Commands {
     }
 }
 
-struct FilterActionKey: FocusedValuesKey {
-    typealias Value = () -> Void
-}
-
 extension FocusedValues {
-    var filterAction: (() -> Void)? {
-        get { self[FilterActionKey.self] }
-        set { self[FilterActionKey.self] = newValue }
-    }
+    @Entry var filterAction: (() -> Void)?
 }
 ```
 
@@ -83,7 +76,7 @@ extension FocusedValues {
 - [func focusedSceneValue<T>(T?) -> some View](view/focusedscenevalue(_:).md)
   Sets the focused value for the given object type at a scene-wide scope.
 - [struct FocusedValues](focusedvalues.md)
-  A collection of state exported by the focused view and its ancestors.
+  A collection of state exported by the focused scene or view and its ancestors.
 
 
 ---

@@ -26,11 +26,6 @@ enum Style
 - [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
 - [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
 - [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
-- [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
-- [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
 ### Initializers
 - [init?(rawValue: Int)](personnamecomponentsformatter/style-swift.enum/init(rawvalue:).md)
 

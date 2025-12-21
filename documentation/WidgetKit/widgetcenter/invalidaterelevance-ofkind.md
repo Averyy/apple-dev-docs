@@ -10,7 +10,7 @@ Mark the relevance for a kind as invalid.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration
@@ -23,7 +23,7 @@ func invalidateRelevance(ofKind kind: String)
 
 Call this function when the relevance returned for a widget has changed and needs to be reloaded.
 
-Marking relevance as invalid will cause the system to call, at a later time, the `relevance` function on the timeline provider that match the specified kind.
+Marking relevance as invalid causes the system to call, at a later time, the `relevance` function on the timeline provider that matches the specified kind.
 
 ## Parameters
 

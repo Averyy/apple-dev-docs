@@ -20,7 +20,7 @@ var isModalInPopover: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Setting it to [`true`](https://developer.apple.com/documentation/swift/true) causes an owning popover controller to disallow interactions outside this view controller while it is displayed. You can use this behavior to ensure that the popover is not dismissed by taps outside the popover controller.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Setting it to [`true`](https://developer.apple.com/documentation/Swift/true) causes an owning popover controller to disallow interactions outside this view controller while it is displayed. You can use this behavior to ensure that the popover is not dismissed by taps outside the popover controller.
 
 ## See Also
 

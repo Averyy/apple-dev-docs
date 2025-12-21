@@ -5,18 +5,13 @@
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 struct DidChangeLibraryMessage
 ```
-
-## Topics
-
-### Type Methods
-- [static func makeNotification(DidChangeLibraryMessage) -> Notification](didchangelibrarymessage/makenotification(_:).md)
 
 ## Relationships
 

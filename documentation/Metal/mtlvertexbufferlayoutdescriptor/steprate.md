@@ -29,6 +29,8 @@ The default value is `1`. The `stepRate` value, in conjunction with the [`stepFu
   The circumstances under which the vertex and its attributes are presented to the vertex function.
 - [var stride: Int](mtlvertexbufferlayoutdescriptor/stride.md)
   The number of bytes between the first byte of two consecutive vertices in a buffer.
+- [enum MTLVertexStepFunction](mtlvertexstepfunction.md)
+  The frequency with which the vertex function or post-tessellation vertex function fetches attribute data.
 
 
 ---

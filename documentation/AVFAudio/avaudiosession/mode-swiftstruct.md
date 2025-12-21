@@ -33,12 +33,16 @@ While categories set the base behaviors for your app, you use modes to assign sp
 ### Getting Standard Session Modes
 - [static let `default`: AVAudioSession.Mode](avaudiosession/mode-swift.struct/default.md)
   The default audio session mode.
+- [static let dualRoute: AVAudioSession.Mode](avaudiosession/mode-swift.struct/dualroute.md)
+  A mode that provides simultaneous use of the built-in microphone/speaker and a secondary audio device that supports input and output.
 - [static let gameChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/gamechat.md)
   A mode that the GameKit framework sets on behalf of an application that uses GameKit’s voice chat service.
 - [static let measurement: AVAudioSession.Mode](avaudiosession/mode-swift.struct/measurement.md)
   A mode that indicates that your app is performing measurement of audio input or output.
 - [static let moviePlayback: AVAudioSession.Mode](avaudiosession/mode-swift.struct/movieplayback.md)
   A mode that indicates that your app is playing back movie content.
+- [static let shortFormVideo: AVAudioSession.Mode](avaudiosession/mode-swift.struct/shortformvideo.md)
+  Appropriate for applications playing short-form video content.
 - [static let spokenAudio: AVAudioSession.Mode](avaudiosession/mode-swift.struct/spokenaudio.md)
   A mode used for continuous spoken audio to pause the audio when another app plays a short audio prompt.
 - [static let videoChat: AVAudioSession.Mode](avaudiosession/mode-swift.struct/videochat.md)
@@ -49,9 +53,6 @@ While categories set the base behaviors for your app, you use modes to assign sp
   A mode that indicates that your app is performing two-way voice communication, such as using Voice over Internet Protocol (VoIP).
 - [static let voicePrompt: AVAudioSession.Mode](avaudiosession/mode-swift.struct/voiceprompt.md)
   A mode that indicates that your app plays audio using text-to-speech.
-### Type Properties
-- [static let shortFormVideo: AVAudioSession.Mode](avaudiosession/mode-swift.struct/shortformvideo.md)
-  Appropriate for applications playing short-form video content.
 
 ## Relationships
 

@@ -54,9 +54,9 @@ Assign a delegate that Nearby Interaction can use to notify your app of importan
   The possible states of Camera Assistance.
 - [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
   The possible reasons for the Camera Assistance status.
-### Instance Methods
+### Monitoring DL-TDoA measurements
 - [func session(NISession, didUpdateDLTDOA: [NIDLTDOAMeasurement])](nisessiondelegate/session(_:didupdatedltdoa:).md)
-  This is called when new updates about DL-TDOA measurement are available.
+  Provides device ranging estimates for a Downlink Time-Difference-of-Arrival session.
 
 ## Relationships
 

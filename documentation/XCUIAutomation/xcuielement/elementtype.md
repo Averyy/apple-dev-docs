@@ -192,9 +192,6 @@ enum ElementType
   A constant that represents an element type for windows.
 ### Initializers
 - [init?(rawValue: UInt)](xcuielement/elementtype/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuielement/elementtype/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuielement/elementtype/rawrepresentable-implementations.md)
 
 ## Relationships
 

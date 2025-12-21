@@ -22,8 +22,8 @@ func useResource(_ resource: any MTLResource, usage: MTLResourceUsage, stages: M
 
 ## Mentions
 
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Discussion
 
@@ -31,13 +31,13 @@ You can make a resource  (available in GPU memory) for the remaining duration of
 
 > **Note**:  You don’t need to call this method if you bind a resource to a shader stage.
 
-For example, you can explicitly bind resources for the vertex stage with the methods in the [`Vertex Shader Resource Preparation Commands`](vertex-shader-resource-preparation-commands.md) collection.
+For example, you can explicitly bind resources for the vertex stage with the methods in the [`Vertex shader resource preparation commands`](vertex-shader-resource-preparation-commands.md) collection.
 
 The method also informs Metal when to apply hazard tracking for a resource you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). For a resource you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](mtlfence.md) or an [`MTLEvent`](mtlevent.md) to account for potential reading and writing hazards.
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.
 
-Apps typically call the method for a resource in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call the method for a resource in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 

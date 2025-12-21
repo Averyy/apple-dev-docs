@@ -21,6 +21,8 @@ Appropriate IOReturn code
 
 #### Discussion
 
+Updates state data for a channel with passed arguments
+
 Locked version of IOReporter::incrementChannelState(). This method may be overriden by sub-classes.
 
 Locking: Caller must ensure that the reporter (data) lock is held.

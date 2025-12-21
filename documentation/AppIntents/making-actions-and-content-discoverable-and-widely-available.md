@@ -55,7 +55,7 @@ People use app intents to automate workflows with custom shortcuts and [`App Sho
 
 For new functionality, use the App Intents framework to integrate your app with system experiences like widgets, controls, and Live Activities. Siri and Apple Intelligence automatically will leverage SiriKit intents. For existing functionality keep existing SiriKit implementations and take a measured approach to replacing SiriKit code with App Intents. If you remove code that uses SiriKit, give people advance notice about changes to avoid breaking their existing custom shortcuts and make sure to provide the same or comparable functionality that uses App Intents.
 
-For more information about migrating your SiriKit code to App Intents, see - [`Soup Chef with App Intents: Migrating custom intents`](https://developer.apple.com/documentation/SiriKit/soup-chef-with-app-intents-migrating-custom-intents).
+For more information about migrating your SiriKit code to App Intents, see [`Soup Chef with App Intents: Migrating custom intents`](https://developer.apple.com/documentation/SiriKit/soup-chef-with-app-intents-migrating-custom-intents).
 
 ## See Also
 

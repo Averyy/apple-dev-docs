@@ -22,14 +22,14 @@ static func showManageSubscriptions(in scene: UIWindowScene) async throws
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
-- [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
 
 #### Discussion
 
 Use this function to display the manage subscriptions sheet within your app. Consider adding a manage subscriptions option to your app. For design guidance on supporting this functionality, see [`Human Interface Guidelines > In-App Purchase > Helping People Manage Their Subscriptions`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/auto-renewable-subscriptions/#helping-people-manage-their-subscriptions).
 
-The [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) function presents a manage subscription sheet that’s the same as what customers can view in their account settings in the App Store app or by choosing Settings > Apple ID > Subscriptions on an iOS or iPadOS device. The sheet displays the customer’s currently active subscription for your app and the options to view, upgrade, downgrade, or cancel their subscription.
+The [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) function presents a manage subscription sheet that’s the same as what customers can view in their account settings in the App Store app or by choosing Settings > Apple Account > Subscriptions on an iOS or iPadOS device. The sheet displays the customer’s currently active subscription for your app and the options to view, upgrade, downgrade, or cancel their subscription.
 
 If you’re using SwiftUI, call the [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/manageSubscriptionsSheet(isPresented:))view modifier.
 

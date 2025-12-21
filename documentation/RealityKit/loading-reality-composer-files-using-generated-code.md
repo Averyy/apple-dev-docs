@@ -57,7 +57,7 @@ To use automatic anchoring, add the loaded scene to the view’s anchors:
 arView.scene.anchors.append(anchor)
 ```
 
-For more control, you can also anchor your scene manually. See [`Taking Control of Scene Anchoring`](taking-control-of-scene-anchoring.md).
+For more control, you can also anchor your scene manually. See doc:taking-control-of-scene-anchoring.
 
 ##### Remove the Scene
 
@@ -75,8 +75,6 @@ arView.scene.anchors.removeAll()
 
 ## See Also
 
-- [Creating 3D Content with Reality Composer](creating-3d-content-with-reality-composer.md)
-  Assemble assets into a dynamic 3D composition that you can add to a scene in your app, or share with AR Quick Look.
 - [Loading Reality Composer files manually without generated code](loading-reality-composer-files-manually-without-generated-code.md)
   Load Reality Composer files that aren’t part of your Xcode project.
 - [Adding elements to a 3D scene](adding-elements-to-a-3d-scene.md)
@@ -85,8 +83,6 @@ arView.scene.anchors.removeAll()
   Define the appearance and behavior of objects in a scene.
 - [Arranging elements in a scene](arranging-elements-in-a-scene.md)
   Manipulate objects to complete your Reality Composer scene.
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
-  Make programmatic changes to your scenes at runtime.
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
   Create procedurally generated shape primitives to your Reality Composer scene.
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)

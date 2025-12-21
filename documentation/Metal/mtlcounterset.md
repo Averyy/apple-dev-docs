@@ -25,14 +25,14 @@ You can determine which counter sets a GPU supports by checking an [`MTLDevice`]
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
-For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
 
-### Identifying a Counter Set
+### Identifying a counter set
 - [var name: String](mtlcounterset/name.md)
   The name of the GPU’s counter set instance.
-### Checking Which Counters a GPU Supports
+### Checking which counters a GPU supports
 - [var counters: [any MTLCounter]](mtlcounterset/counters.md)
   An array of the counter instances a GPU device supports.
 
@@ -45,7 +45,7 @@ For more information, see [`Confirming which Counters and Counter Sets a GPU Sup
 
 ## See Also
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
 - [struct MTLCommonCounterSet](mtlcommoncounterset.md)
   The name of a specific counter set that a GPU device can support.

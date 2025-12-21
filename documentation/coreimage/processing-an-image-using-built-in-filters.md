@@ -40,7 +40,7 @@ A [`CIFilter`](cifilter-swift.class.md) represents a single operation or recipe 
 
 ###### Tint Reddish Brown with the Sepia Filter
 
-Although you can chain filters without separating them into functions, the following example shows how to configure a single [`CIFilter`](cifilter-swift.class.md), the [`sepiaToneFilter`](cifilter-swift.class/sepiatonefilter.md) filter.
+Although you can chain filters without separating them into functions, the following example shows how to configure a single [`CIFilter`](cifilter-swift.class.md), the [`sepiaTone()`](cifilter-swift.class/sepiatone().md) filter.
 
 ```swift
 - (CIImage*) sepiaFilterImage: (CIImage*)inputImage withIntensity:(CGFloat)intensity {
@@ -79,7 +79,7 @@ The bloom filter accentuates the highlights of an image. You can apply it as par
 
 Like the sepia filter, the intensity of the bloom filter’s effect ranges between 0 and 1, with 1 being the most intense effect. The bloom filter has an additional r`adius` parameter to determine how much the glowing regions expand. Experiment with a range to values to fine tune the effect, or assign the input parameter to a control like a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) to allow your users to tweak its values.
 
-> **Note**:  The [`gloomFilter`](cifilter-swift.class/gloomfilter.md) filter performs the opposite effect.
+> **Note**:  The [`gloom()`](cifilter-swift.class/gloom().md) filter performs the opposite effect.
 
 To display the output, convert the [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
 
@@ -90,7 +90,7 @@ _filteredImageView.image = [UIImage imageWithCIImage:bloomCIImage];
 
 ###### Scale Image Size with the Lanczos Scale Filter
 
-Apply the [`lanczosScaleTransformFilter`](cifilter-swift.class/lanczosscaletransformfilter.md) to obtain a high-quality downsampling of the image, preserving the original image’s aspect ratio through the [`lanczosScaleTransformFilter`](cifilter-swift.class/lanczosscaletransformfilter.md) filter’s parameter `aspectRatio`. For built-in Core Image filters, calculate the aspect ratio as the image’s width over height.
+Apply the [`lanczosScaleTransform()`](cifilter-swift.class/lanczosscaletransform().md) to obtain a high-quality downsampling of the image, preserving the original image’s aspect ratio through the [`lanczosScaleTransform()`](cifilter-swift.class/lanczosscaletransform().md) filter’s parameter `aspectRatio`. For built-in Core Image filters, calculate the aspect ratio as the image’s width over height.
 
 ```swift
 CGFloat imageWidth = originalUIImage.size.width;
@@ -99,7 +99,7 @@ CGFloat aspectRatio = imageHeight / imageWidth;
 CIImage* scaledCIImage = [self scaleFilterImage:bloomCIImage withAspectRatio:aspectRatio scale:0.05];
 ```
 
-Like other built-in filters, the [`lanczosScaleTransformFilter`](cifilter-swift.class/lanczosscaletransformfilter.md) filter also outputs its result as a [`CIImage`](ciimage.md).
+Like other built-in filters, the [`lanczosScaleTransform()`](cifilter-swift.class/lanczosscaletransform().md) filter also outputs its result as a [`CIImage`](ciimage.md).
 
 ```swift
 - (CIImage*) scaleFilterImage: (CIImage*)inputImage withAspectRatio:(CGFloat)aspectRatio scale:(CGFloat)scale {
@@ -124,7 +124,7 @@ In addition to trying out the built-in filters for a fixed effect, you can combi
 ## See Also
 
 - [class CIContext](cicontext.md)
-  An evaluation context for rendering image processing results and performing image analysis.
+  The Core Image context class provides an evaluation context for Core Image processing with Metal, OpenGL, or OpenCL.
 - [class CIImage](ciimage.md)
   A representation of an image to be processed or produced by Core Image filters.
 

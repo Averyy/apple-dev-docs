@@ -22,7 +22,7 @@ var boolValue: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) on encountering one of “Y”, “y”, “T”, “t”, or a digit 1-9—the method ignores any trailing characters. This property is [`false`](https://developer.apple.com/documentation/swift/false) if the receiver doesn’t begin with a valid decimal text representation of a number.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) on encountering one of “Y”, “y”, “T”, “t”, or a digit 1-9—the method ignores any trailing characters. This property is [`false`](https://developer.apple.com/documentation/Swift/false) if the receiver doesn’t begin with a valid decimal text representation of a number.
 
 The property assumes a decimal representation and skips whitespace at the beginning of the string. It also skips initial whitespace characters, or optional -/+ sign followed by zeroes.
 

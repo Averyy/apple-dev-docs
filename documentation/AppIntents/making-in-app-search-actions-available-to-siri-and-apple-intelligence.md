@@ -10,7 +10,7 @@ To integrate your in-app search with Siri and Apple Intelligence, you use Swift 
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-Use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.system` domain and the [`search`](assistantschemas/systemintent/search.md) schema:
+Use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.system` domain and the [`search`](assistantschemas/systemintent/search.md) schema:
 
 ```swift
 import AppIntents

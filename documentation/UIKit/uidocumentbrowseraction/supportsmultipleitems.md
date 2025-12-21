@@ -19,7 +19,7 @@ var supportsMultipleItems: Bool { get set }
 
 #### Discussion
 
-This property defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+This property defaults to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

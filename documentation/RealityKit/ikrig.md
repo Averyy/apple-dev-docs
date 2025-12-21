@@ -10,7 +10,7 @@ A full body inverse kinematics rig definition for a single skeleton.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -54,7 +54,7 @@ The table below provides detailed mappings of these weights to their respective 
 - [struct JointCollection](ikrig/jointcollection.md)
   Ordered dictionary-like container with a fixed size.
 ### Initializers
-- [init(for:)](ikrig/init(for:).md)
+- [init(for: MeshResource.Skeleton) throws](ikrig/init(for:).md)
   Creates an inverse kinematics rig definition for the provided skeleton.
 ### Instance Properties
 - [var constraints: IKRig.ConstraintsCollection](ikrig/constraints.md)

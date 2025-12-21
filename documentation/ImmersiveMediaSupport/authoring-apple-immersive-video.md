@@ -5,8 +5,8 @@
 Prepare and package immersive video content for delivery.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

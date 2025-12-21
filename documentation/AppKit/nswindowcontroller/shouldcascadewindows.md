@@ -17,7 +17,7 @@ var shouldCascadeWindows: Bool { get set }
 
 #### Discussion
 
-Cascading in relation to other document windows means having a slightly offset location so that the title bars of previously displayed windows are still visible. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window will cascade in relation to other document windows, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Cascading in relation to other document windows means having a slightly offset location so that the title bars of previously displayed windows are still visible. The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window will cascade in relation to other document windows, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

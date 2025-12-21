@@ -21,8 +21,8 @@ case bgra8Unorm
 
 ## Mentions
 
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
 
 ## See Also
 

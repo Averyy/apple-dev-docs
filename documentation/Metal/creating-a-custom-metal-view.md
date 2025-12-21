@@ -1,4 +1,4 @@
-# Creating a Custom Metal View
+# Creating a custom Metal view
 
 **Framework**: Metal
 
@@ -24,9 +24,9 @@ This sample provides a number of options you can enable when building the app, s
 ```objective-c
 // When enabled, rendering occurs on the main application thread.
 // This can make responding to UI events during redraw simpler
-// to manage because UI calls usually must occur on the main thread.
+// to manage because UI calls usually need to occur on the main thread.
 // When disabled, rendering occurs on a background thread, allowing
-// the UI to respond more quickly in some cases because events can be 
+// the UI to respond more quickly in some cases because events can be
 // processed asynchronously from potentially CPU-intensive rendering code.
 #define RENDER_ON_MAIN_THREAD 1
 
@@ -48,9 +48,9 @@ This sample provides a number of options you can enable when building the app, s
 
 ##### Configure the View with a Metal Layer
 
-For Metal to render to the view, the view must be backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
+For Metal to render to the view, the view needs to be backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
 
-All views in UIKit are layer backed. To indicate the type of layer backing, the view implements the `layerClass` class method.  To indicate that your view should be backed by a `CAMetalLayer`, you must return the `CAMetalLayer` class type.
+All views in UIKit are layer backed. To indicate the type of layer backing, the view implements the `layerClass` class method.  To indicate that your view should be backed by a `CAMetalLayer`, you need to return the `CAMetalLayer` class type.
 
 ```objective-c
 + (Class) layerClass
@@ -99,7 +99,7 @@ if(!currentDrawable)
 _drawableRenderDescriptor.colorAttachments[0].texture = currentDrawable.texture;
 ```
 
-The rest of the rendering code is similar to that found in other Metal samples. For an explanation of a typical rendering path, see [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md).
+The rest of the rendering code is similar to that found in other Metal samples. For an explanation of a typical rendering path, see [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md).
 
 ##### Implement a Render Loop
 
@@ -120,7 +120,7 @@ To animate the view, the sample sets up a display link. The display link calls t
 }
 ```
 
-`AAPLNSView` uses a [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/cvdisplaylink-k0k) instead of a `CADisplayLink` because `CADisplayLink` is not available on macOS. `CVDisplayLink` and `CADisplayLink` API look different, but, in principle, have the same goal, which is to allow callbacks in sync with the display. `AAPLNSView` creates a `CVDisplayLink` in the `setupCVDisplayLinkForScreen` method.  The `setupCVDisplayLinkForScreen` method is called from [`viewDidMoveToWindow()`](https://developer.apple.com/documentation/AppKit/NSView/viewDidMoveToWindow()), which AppKit calls immediately after loading the view. If the view is moved to another screen, AppKit also calls `viewDidMoveToWindow`, and like the previous code for UIKit, the AppKit view must recreate the display link for the new screen.
+`AAPLNSView` uses a [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/cvdisplaylink-k0k) instead of a `CADisplayLink` because `CADisplayLink` is not available on macOS. `CVDisplayLink` and `CADisplayLink` API look different, but, in principle, have the same goal, which is to allow callbacks in sync with the display. `AAPLNSView` creates a `CVDisplayLink` in the `setupCVDisplayLinkForScreen` method.  The `setupCVDisplayLinkForScreen` method is called from [`viewDidMoveToWindow()`](https://developer.apple.com/documentation/AppKit/NSView/viewDidMoveToWindow()), which AppKit calls immediately after loading the view. If the view is moved to another screen, AppKit also calls `viewDidMoveToWindow`, and like the previous code for UIKit, the AppKit view needs to recreate the display link for the new screen.
 
 ```objective-c
 - (BOOL)setupCVDisplayLinkForScreen:(NSScreen*)screen
@@ -204,31 +204,31 @@ The macOS version of this code performs a few additional steps. After creating t
 
 ## See Also
 
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing Order-Independent Transparency with Image Blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
 - [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with Hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
 - [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

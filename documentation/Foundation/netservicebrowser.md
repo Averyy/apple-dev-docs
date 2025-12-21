@@ -38,7 +38,7 @@ The `NSNetServiceBrowser` class provides two ways to search for domains. In most
 - [var delegate: (any NetServiceBrowserDelegate)?](netservicebrowser/delegate.md)
   The delegate object for this instance.
 - [var includesPeerToPeer: Bool](netservicebrowser/includespeertopeer.md)
-  Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false), by default.
+  Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available.
 ### Using Network Service Browsers
 - [func searchForBrowsableDomains()](netservicebrowser/searchforbrowsabledomains.md)
   Initiates a search for domains visible to the host. This method returns immediately.

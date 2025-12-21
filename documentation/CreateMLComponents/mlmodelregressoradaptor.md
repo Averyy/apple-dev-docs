@@ -33,14 +33,6 @@ struct MLModelRegressorAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Scala
 ### Performing the prediction
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> Double](mlmodelregressoradaptor/applied(to:eventhandler:).md)
   Performs a prediction from a single input.
-### Type Aliases
-- [MLModelRegressorAdaptor.Input](mlmodelregressoradaptor/input.md)
-  The input type.
-- [MLModelRegressorAdaptor.Output](mlmodelregressoradaptor/output.md)
-  The output type.
-### Default Implementations
-- [Regressor Implementations](mlmodelregressoradaptor/regressor-implementations.md)
-- [Transformer Implementations](mlmodelregressoradaptor/transformer-implementations.md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 A type representing whether the user has granted permissions to provide more detailed information about the surface a scene is snapped to.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

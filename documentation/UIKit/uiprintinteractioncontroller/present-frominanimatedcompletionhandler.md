@@ -20,7 +20,7 @@ func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandl
 
 #### Discussion
 
-It is valid to call this method for applications on iPad devices. Calling this method on an iPhone or iPod touch with `animated` set to [`true`](https://developer.apple.com/documentation/swift/true) causes the printing options view to animate upward from the bottom of the screen.
+It is valid to call this method for applications on iPad devices. Calling this method on an iPhone or iPod touch with `animated` set to [`true`](https://developer.apple.com/documentation/Swift/true) causes the printing options view to animate upward from the bottom of the screen.
 
 If you call this method when the printing options are already displayed, `UIPrintInteractionController` hides the printing-options popover view. You must call the method again to display the options.
 

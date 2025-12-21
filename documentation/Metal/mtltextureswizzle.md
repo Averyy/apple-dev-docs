@@ -21,7 +21,7 @@ enum MTLTextureSwizzle
 
 ## Topics
 
-### Specifying Swizzle Channels
+### Specifying swizzle channels
 - [MTLTextureSwizzle.alpha](mtltextureswizzle/alpha.md)
   The alpha channel of the source pixel is copied to the destination channel.
 - [MTLTextureSwizzle.blue](mtltextureswizzle/blue.md)

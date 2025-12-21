@@ -10,7 +10,7 @@ The event raised when an animation reaches the end of its duration.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -38,6 +38,8 @@ This event isn’t triggered if you call the [`stop()`](animationplaybackcontrol
 
 ## See Also
 
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
+  The event raised when an animation has been started.
 - [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
   The event raised when an animation loops.
 - [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)

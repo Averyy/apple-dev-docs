@@ -15,6 +15,21 @@
 func AudioObjectRemovePropertyListenerBlock(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ inDispatchQueue: dispatch_queue_t?, _ inListener: @escaping AudioObjectPropertyListenerBlock) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Unregisters the given AudioObjectPropertyListenerBlock from receiving notifications when the given properties change.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to unregister the listener from.
+- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener   should be removed.
+- `inDispatchQueue`: The dispatch queue on which the listener block was being dispatched to.
+- `inListener`: The AudioObjectPropertyListenerBlock being removed.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

@@ -27,7 +27,9 @@ let kVTDecompressionPropertyKey_PropagatePerFrameHDRDisplayMetadata: CFString
 - [let kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata: CFString](kvtdecompressionpropertykey_generateperframehdrdisplaymetadata.md)
   A key that indicates to generate per frame HDR Metadata and attach it to the resulting decoded pixel buffers.
 - [let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString](kvtdecompressionpropertykey_decoderproducesrawoutput.md)
+  A value that indicates whether the decoder can produce RAW output requiring a RAW processing session for post-decode processing.
 - [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](kvtdecompressionpropertykey_requestrawoutput.md)
+  For decoders that produce RAW output, this property requests that the decompression session provides unprocessed output.
 
 
 ---

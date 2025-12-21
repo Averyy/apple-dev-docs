@@ -16,7 +16,7 @@ optional func webView(_ webView: WebView!, validate item: (any NSValidatedUserIn
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

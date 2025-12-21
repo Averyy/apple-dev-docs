@@ -23,7 +23,7 @@ static var containsFragments: AVAsyncProperty<Root, Bool> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-For QuickTime movie files and MPEG-4 files, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if [`canContainFragments`](avasset/cancontainfragments.md) is [`true`](https://developer.apple.com/documentation/swift/true) and at least one `moof` box is present after the `moov` box.
+For QuickTime movie files and MPEG-4 files, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if [`canContainFragments`](avasset/cancontainfragments.md) is [`true`](https://developer.apple.com/documentation/Swift/true) and at least one `moof` box is present after the `moov` box.
 
 ## See Also
 

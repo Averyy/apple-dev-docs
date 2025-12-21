@@ -43,6 +43,11 @@ class GCRacingWheel
   Returns a snapshot of the racing wheel with its current element values.
 - [var isSnapshot: Bool](gcracingwheel/issnapshot.md)
   A Boolean value that indicates whether the object is a snapshot of a racing wheel.
+### Structures
+- [GCRacingWheel.DidConnectMessage](gcracingwheel/didconnectmessage.md)
+  A message that posts after a racing wheel accessory connects to the device.
+- [GCRacingWheel.DidDisconnectMessage](gcracingwheel/diddisconnectmessage.md)
+  A message that posts after a racing wheel accessory disconnects from the device.
 
 ## Relationships
 

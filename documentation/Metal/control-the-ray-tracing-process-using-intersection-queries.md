@@ -1,4 +1,4 @@
-# Control the Ray Tracing Process Using Intersection Queries
+# Control the ray tracing process using intersection queries
 
 **Framework**: Metal
 

@@ -4,13 +4,17 @@
 **Kind**: method
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 optional func displayNames(forGroups groups: [String], using loginManager: ASAuthorizationProviderExtensionLoginManager) async -> [String : String]
 ```
+
+#### Discussion
+
+Request the display names for the supplied group identifiers.  The completion key is the identifier and the value is the display name.
 
 
 ---

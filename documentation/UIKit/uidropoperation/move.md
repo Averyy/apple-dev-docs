@@ -19,7 +19,7 @@ case move
 
 #### Discussion
 
-You may use this operation only if the drop session’s [`allowsMoveOperation`](uidragdropsession/allowsmoveoperation.md) property is [`true`](https://developer.apple.com/documentation/swift/true); otherwise, it’s treated as a [`UIDropOperation.cancel`](uidropoperation/cancel.md) operation. A move operation is allowed only within same app. Data shared with another app must be copied.
+You may use this operation only if the drop session’s [`allowsMoveOperation`](uidragdropsession/allowsmoveoperation.md) property is [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, it’s treated as a [`UIDropOperation.cancel`](uidropoperation/cancel.md) operation. A move operation is allowed only within same app. Data shared with another app must be copied.
 
 The system gives no special meaning to this operation. The [`UIDragInteractionDelegate`](uidraginteractiondelegate.md) object and the [`UIDropInteractionDelegate`](uidropinteractiondelegate.md) object must cooperate to produce the correct move results. For instance, the drop interaction delegate might insert the data in a new location while the drag interaction delegate removes the data from the old location.
 

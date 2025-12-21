@@ -23,9 +23,9 @@ A Boolean value indicating whether to open the URL in the `url` parameter.
 
 #### Discussion
 
-The system invokes this method when the user taps a URL link in a preview. If you return [`true`](https://developer.apple.com/documentation/swift/true), the Quick Look preview controller invokes the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method on the [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) object, sending it the value of the `url` parameter. If you return [`false`](https://developer.apple.com/documentation/swift/false), the system doesn’t invoke the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method.
+The system invokes this method when the user taps a URL link in a preview. If you return [`true`](https://developer.apple.com/documentation/Swift/true), the Quick Look preview controller invokes the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method on the [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) object, sending it the value of the `url` parameter. If you return [`false`](https://developer.apple.com/documentation/Swift/false), the system doesn’t invoke the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method.
 
-If you don’t implement this method, it defaults to returning [`true`](https://developer.apple.com/documentation/swift/true).
+If you don’t implement this method, it defaults to returning [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > **Note**:  The system doesn’t call this delegate method for Mac apps built with Mac Catalyst.
 

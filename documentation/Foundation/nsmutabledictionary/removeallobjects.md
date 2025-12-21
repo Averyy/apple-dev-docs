@@ -22,7 +22,7 @@ func removeAllObjects()
 
 #### Discussion
 
-Each key and corresponding value object is sent a [`release`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/1571957-release) message.
+Each key and corresponding value object is sent a [`release`](https://developer.apple.com/documentation/ObjectiveC/NSObject-c.protocol/release) message.
 
 ## See Also
 

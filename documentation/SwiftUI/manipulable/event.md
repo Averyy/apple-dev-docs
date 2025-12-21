@@ -6,7 +6,7 @@
 Describes an event generated during a manipulation gesture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -21,7 +21,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, shouldSel
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view controller’s tab should be selected or [`false`](https://developer.apple.com/documentation/swift/false) if the current tab should remain active.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view controller’s tab should be selected or [`false`](https://developer.apple.com/documentation/Swift/false) if the current tab should remain active.
 
 #### Discussion
 

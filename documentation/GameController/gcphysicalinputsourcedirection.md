@@ -30,7 +30,7 @@ struct GCPhysicalInputSourceDirection
   The physical input source supports the down direction.
 - [static var left: GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection/left.md)
   The physical input source supports the left direction.
-### Initializers
+### Creating the supported directions
 - [init(rawValue: UInt)](gcphysicalinputsourcedirection/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 

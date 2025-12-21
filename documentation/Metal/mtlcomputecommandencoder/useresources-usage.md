@@ -21,7 +21,7 @@ func useResources(_ resources: [any MTLResource], usage: MTLResourceUsage)
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
@@ -33,7 +33,7 @@ The method also informs Metal when to apply hazard tracking for a resource you c
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls with the [`useResource(_:usage:)`](mtlcomputecommandencoder/useresource(_:usage:).md) method.
 
-Apps typically call this method for a resource in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call this method for a resource in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 

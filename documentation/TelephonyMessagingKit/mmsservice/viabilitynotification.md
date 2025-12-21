@@ -6,8 +6,8 @@
 A notification that indicates if MMS is viable for a given cellular service.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,11 +23,6 @@ struct ViabilityNotification
   The cellular service identifier associated with this notification.
 - [let isViable: Bool](mmsservice/viabilitynotification/isviable.md)
   A Boolean value that indicates whether the device can peform MMS operations at this time.
-### Comparing notifications
-- [static func == (MMSService.ViabilityNotification, MMSService.ViabilityNotification) -> Bool](mmsservice/viabilitynotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](mmsservice/viabilitynotification/equatable-implementations.md)
 
 ## Relationships
 

@@ -42,7 +42,7 @@ Each of the signed JWS representations, `signedPayload`, `signedTransactionInfo`
 - [object responseBodyV2DecodedPayload](responsebodyv2decodedpayload.md)
   A decoded payload that contains the version 2 notification data.
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 

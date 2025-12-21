@@ -16,7 +16,7 @@ var isEmpty: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the path contains no elements, or [`false`](https://developer.apple.com/documentation/swift/false) if it contains at least one element.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the path contains no elements, or [`false`](https://developer.apple.com/documentation/Swift/false) if it contains at least one element.
 
 ## See Also
 

@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTabl
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow editing the cell, [`false`](https://developer.apple.com/documentation/swift/false) to deny editing.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow editing the cell, [`false`](https://developer.apple.com/documentation/Swift/false) to deny editing.
 
 #### Discussion
 

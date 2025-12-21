@@ -6,8 +6,8 @@
 A class that provides an interface for performing SMS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A class that provides an interface for performing SMS operations.
 ```swift
 final class SMSService
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -54,6 +58,7 @@ Task {
     for await notification in incomingMessageNotifications {
         let receivedMessage = notification.message
         // Process receivedMessage.
+    }
 }
 ```
 

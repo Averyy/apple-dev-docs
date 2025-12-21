@@ -25,8 +25,6 @@ struct TypeDisplayRepresentation
 ### Initializers
 - [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?)](typedisplayrepresentation/init(name:numericformat:).md)
 - [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?, synonyms: [LocalizedStringResource])](typedisplayrepresentation/init(name:numericformat:synonyms:).md)
-- [init(stringLiteral: String)](typedisplayrepresentation/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
 ### Instance Properties
 - [var name: LocalizedStringResource](typedisplayrepresentation/name.md)
   The singular type name, e.g. “Book”.
@@ -34,16 +32,6 @@ struct TypeDisplayRepresentation
   A string representing a count for the type, e.g. “2 books”.
 - [var synonyms: [LocalizedStringResource]](typedisplayrepresentation/synonyms.md)
   A list of localized phrases that are synonyms of this particular type display representation
-### Type Aliases
-- [TypeDisplayRepresentation.ExtendedGraphemeClusterLiteralType](typedisplayrepresentation/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [TypeDisplayRepresentation.StringLiteralType](typedisplayrepresentation/stringliteraltype.md)
-  A type that represents a string literal.
-- [TypeDisplayRepresentation.UnicodeScalarLiteralType](typedisplayrepresentation/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](typedisplayrepresentation/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](typedisplayrepresentation/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

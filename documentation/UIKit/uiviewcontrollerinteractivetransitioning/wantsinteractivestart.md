@@ -21,7 +21,7 @@ optional var wantsInteractiveStart: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the transition is interactive from the moment it starts. The property is [`false`](https://developer.apple.com/documentation/swift/false) when the transition starts off as noninteractive. However, even a transition that starts off as noninteractive may become interactive later if it implements the [`interruptibleAnimator(using:)`](uiviewcontrolleranimatedtransitioning/interruptibleanimator(using:).md) method of the [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) protocol.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the transition is interactive from the moment it starts. The property is [`false`](https://developer.apple.com/documentation/Swift/false) when the transition starts off as noninteractive. However, even a transition that starts off as noninteractive may become interactive later if it implements the [`interruptibleAnimator(using:)`](uiviewcontrolleranimatedtransitioning/interruptibleanimator(using:).md) method of the [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) protocol.
 
 ## See Also
 

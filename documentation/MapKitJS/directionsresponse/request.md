@@ -11,7 +11,7 @@ The request object associated with the direction’s response.
 ## Declaration
 
 ```swift
-attribute DirectionsRequest request;
+request: object;
 ```
 
 ## See Also

@@ -10,7 +10,7 @@ Maps the luminance of the `Image` in to the alpha channel, replacing color chann
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration

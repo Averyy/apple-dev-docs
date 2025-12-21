@@ -23,12 +23,12 @@ The `NSSlider` class uses the [`NSSliderCell`](nsslidercell.md) class to impleme
 
 ## Topics
 
-### Creating Sliders
+### Creating sliders
 - [convenience init(target: Any?, action: Selector?)](nsslider/init(target:action:).md)
   Creates a continuous horizontal slider whose values range from `0.0` to `1.0`.
 - [convenience init(value: Double, minValue: Double, maxValue: Double, target: Any?, action: Selector?)](nsslider/init(value:minvalue:maxvalue:target:action:).md)
   Creates a continuous horizontal slider that represents values over the specified range.
-### Managing the Slider’s Appearance
+### Managing the slider’s appearance
 - [var sliderType: NSSlider.SliderType](nsslider/slidertype-swift.property.md)
   The type of the slider, such as vertical or circular.
 - [NSSlider.SliderType](nsslider/slidertype-swift.enum.md)
@@ -41,15 +41,19 @@ The `NSSlider` class uses the [`NSSliderCell`](nsslidercell.md) class to impleme
   An integer indicating the orientation (horizontal or vertical) of the slider.
 - [var trackFillColor: NSColor?](nsslider/trackfillcolor.md)
   The color of the filled portion of the slider track, in appearances that support it.
-### Asking About the Value Limits
+- [var tintProminence: NSTintProminence](nsslider/tintprominence.md)
+  The tint prominence of the slider. The automatic behavior for a regular slider tints its track fill, while a slider with tick marks is untinted. Setting the tint prominence will override this default behavior and choose an explicit track fill tint behavior. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
+- [enum NSTintProminence](nstintprominence.md)
+  Controls how strongly the tint color applies in a view.
+### Asking about the value limits
 - [var maxValue: Double](nsslider/maxvalue.md)
   The maximum value the slider can send to its target.
 - [var minValue: Double](nsslider/minvalue.md)
   The minimum value the slider can send to its target.
-### Handling Mouse-Down Events
+### Handling mouse-down events
 - [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsslider/acceptsfirstmouse(for:).md)
   Returns a Boolean value indicating whether a mouse-down event both activates the window and starts dragging the slider’s knob.
-### Managing Tick Marks
+### Managing tick marks
 - [var allowsTickMarkValuesOnly: Bool](nsslider/allowstickmarkvaluesonly.md)
   A Boolean value that indicates whether the slider fixes its values to those values represented by its tick marks.
 - [func closestTickMarkValue(toValue: Double) -> Double](nsslider/closesttickmarkvalue(tovalue:).md)
@@ -69,8 +73,6 @@ The `NSSlider` class uses the [`NSSliderCell`](nsslidercell.md) class to impleme
 ### Instance Properties
 - [var neutralValue: Double](nsslider/neutralvalue.md)
   The value this slider will be filled from. This slider will be filled from its `neutralValue` to its current value. If `neutralValue` has not been explicitly set before, access to `neutralValue` will return `minValue`.
-- [var tintProminence: NSTintProminence](nsslider/tintprominence.md)
-  The tint prominence of the slider. The automatic behavior for a regular slider tints its track fill, while a slider with tick marks is untinted. Setting the tint prominence will override this default behavior and choose an explicit track fill tint behavior. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
 
 ## Relationships
 

@@ -58,8 +58,6 @@ Your volume can provide additional functionality by conforming to other volume o
   Methods and properties implemented by volumes that natively or partially support extended attributes.
 - [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
-### Default Implementations
-- [Identifiable Implementations](fsvolume/identifiable-implementations.md)
 
 ## Relationships
 

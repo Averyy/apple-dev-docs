@@ -26,10 +26,6 @@ case now
   The notification is posted at the end of the current notification callout or timer.
 - [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
   The notification is posted when the run loop is idle.
-- [NotificationQueue.PostingStyle.asap](notificationqueue/postingstyle/asap.md)
-  The notification is posted at the end of the current notification callout or timer.
-- [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
-  The notification is posted when the run loop is idle.
 
 
 ---

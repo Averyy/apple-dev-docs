@@ -10,7 +10,7 @@ When the built-in UIKit gesture recognizers don’t provide the behavior you wan
 
 You might also use a custom gesture recognizer to simplify the event-handling code in your app. For example, the [`Leveraging touch input for drawing apps`](leveraging-touch-input-for-drawing-apps.md) sample uses a gesture recognizer to capture input and display it onscreen, as shown in the following image.
 
-![A screenshot from an app which uses a custom gesture recognizer to allow a user to draw on the screen.](https://docs-assets.developer.apple.com/published/83675779848b8d1baece4a04cbbb6e88/media-2881148%402x.png)
+![A screenshot from an app which uses a custom gesture recognizer to allow a user to draw on the screen.](https://docs-assets.developer.apple.com/published/8c1ad4a11fc749881fd9f3b64868d482/implementing-a-custom-gesture-recognizer-1%402x.png)
 
 To define a custom gesture recognizer, subclass [`UIGestureRecognizer`](uigesturerecognizer.md) (or one of its subclasses). At the top of your source file, import the `UIGestureRecognizerSubclass.h` header file (for Objective-C) or the `UIKit.UIGestureRecognizerSubclass` module (for Swift), as shown in the following code. This file defines the methods and properties that you must override to implement your custom gesture recognizer.
 
@@ -21,7 +21,7 @@ In your custom subclass, implement whatever methods you need to process events. 
 ### Creating Custom Gesture Recognizers
 - [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
   Learn about the states and transitions of the state machine that underlies gesture recognizers.
-- [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
   If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it.
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
   For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer.

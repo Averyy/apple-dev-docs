@@ -17,7 +17,7 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the item is selected or [`false`](https://developer.apple.com/documentation/swift/false) when it is not.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the item is selected or [`false`](https://developer.apple.com/documentation/Swift/false) when it is not.
 
 ## See Also
 

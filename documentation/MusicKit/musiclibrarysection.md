@@ -35,12 +35,6 @@ Your app can also access the items contained in a library section with the [`ite
 ### Subscripts
 - [subscript<T>(dynamicMember _: KeyPath<SectionType, T>) -> T](musiclibrarysection/subscript(dynamicmember:).md)
   A subscript that allows your app to access any property of the requested section type directly on this library section object.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiclibrarysection/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiclibrarysection/customstringconvertible-implementations.md)
-- [Equatable Implementations](musiclibrarysection/equatable-implementations.md)
-- [Hashable Implementations](musiclibrarysection/hashable-implementations.md)
-- [Identifiable Implementations](musiclibrarysection/identifiable-implementations.md)
 
 ## Relationships
 

@@ -12,9 +12,7 @@ The first step to presenting ads in your app is to initialize an [`AppImpression
 
 #### Record View Through Impressions Using Custom Rendered Ads
 
-Custom rendered ads include ad content that overlays the app view. To record a view-through impression use the AdAttributionKit [`beginView()`](appimpression/beginview().md) and [`endView()`](appimpression/endview().md) methods as shown in the following SwiftUI example using the `onAppear()` and `onDisappear()` view modifiers:
-
-> **Note**: In UIKit, use the [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) and [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillDisappear(_:)) methods. Don’t use or rely on timer methods to determine when to end an ad impression view in either SwiftUI or UIKit.
+Custom rendered ads include content that overlays the app view. Record view-through impressions when your ad content has been displayed. To record a view-through impression, use the AdAttributionKit [`handleView()`](appimpression/handleview().md) method, as in the following SwiftUI example:
 
 ```swift
 struct AdContentView: View {
@@ -24,42 +22,41 @@ struct AdContentView: View {
         VStack {
             // Advertisement content
         }
-        .onAppear(perform: { handleAdAppeared() })
         .onDisappear(perform: { handleAdDisappeared() })
         .onTapGesture(perform: { handleAdTapped() })
     }
+
 
     init(impression: AppImpression) {
         self.impression = impression
     }
 
-    func handleAdAppeared() {
-        Task {
-            do {
-                try await impression.beginView()
-            }
-            catch {
-                print("Failed to begin view through impression: \(error).")
-            }
-        }
-    }
 
     func handleAdDisappeared() {
+        guard shouldRecordView() else {
+            return
+        }
+        
         Task {
             do {
-                try await impression.endView()
+                try await impression.handleView()
             }
             catch {
                 print("Failed to end view through impression: \(error).")
             }
         }
     }
+    
+    func shouldRecordView() -> Bool {
+        // TODO: Implement logic to determine if you need to record the view impression to your own system based on your app's ad display requirements.
+        return false
+    }
 }
 ```
 
-#### Record Click Through Impressions and Redirect a Person to Open or Install the Advertised App
+#### Record Click Through Impressions
 
-To respond to a click-through interaction, first display a [`UIEventAttributionView`](https://developer.apple.com/documentation/UIKit/UIEventAttributionView) over your ad content. Once the ad receives a tap, call [`handleTap()`](appimpression/handletap().md). The system then records a click-through impression, and if the app specified by the impression’s advertised item ID isn’t installed, the system launches the app’s product page on the App Store or alternative marketplace according to the user’s preferences in Settings. If the app is already installed, the system launches the app directly.
+To respond to a click-through interaction and redirect a person to open or install the advertised app, first display a [`UIEventAttributionView`](https://developer.apple.com/documentation/UIKit/UIEventAttributionView) over your ad content. Once the ad receives a tap, call [`handleTap()`](appimpression/handletap().md). The system then records a click-through impression, and if the app specified by the impression’s advertised item ID isn’t installed, the system launches the app’s product page on the App Store or alternative marketplace according to the user’s preferences in Settings. If the app is already installed, the system launches the app directly.
 
 ```swift
     func handleAdTapped(impression: AppImpression) async {

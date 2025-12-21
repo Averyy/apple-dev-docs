@@ -20,8 +20,6 @@ Specifies formatting behavior equivalent to that in OS X 10.0.
 
 - [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
 - [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
 
 
 ---

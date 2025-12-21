@@ -21,7 +21,7 @@ let kVTCompressionPropertyKey_DataRateLimits: CFString
 
 #### Discussion
 
-Each hard limit is described by a data size in bytes and a duration in seconds, and requires that the total size of compressed data for any contiguous segment of that duration (in decode time) not exceed the data size. By default, no data rate limits are set.  The property is a doc://com.apple.documentation/documentation/corefoundation/cfarray-s28 of an even number of doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd objects, alternating between bytes and seconds. Note that data rate settings only have an effect when timing information is provided for source frames, and that some codecs do not support limiting to specified data rates.
+Each hard limit is described by a data size in bytes and a duration in seconds, and requires that the total size of compressed data for any contiguous segment of that duration (in decode time) not exceed the data size. By default, no data rate limits are set.  The property is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of an even number of [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) objects, alternating between bytes and seconds. Note that data rate settings only have an effect when timing information is provided for source frames, and that some codecs do not support limiting to specified data rates.
 
 ## See Also
 

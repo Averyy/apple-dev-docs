@@ -20,28 +20,6 @@ A resolver that validates an integer is within the parameter’s inclusive range
 struct IntResolver
 ```
 
-## Topics
-
-### Resolving the type
-- [func resolve(from: Int, context: IntentParameterContext<Int>) async throws -> Int?](intresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
-### Operators
-- [static func == (IntResolver, IntResolver) -> Bool](intresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [IntResolver.Input](intresolver/input.md)
-- [IntResolver.Output](intresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](intresolver/equatable-implementations.md)
-- [RangeCheckingResolver Implementations](intresolver/rangecheckingresolver-implementations.md)
-- [Resolver Implementations](intresolver/resolver-implementations.md)
-
 ## Relationships
 
 ### Conforms To

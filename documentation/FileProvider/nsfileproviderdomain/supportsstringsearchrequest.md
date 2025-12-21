@@ -6,7 +6,7 @@
 A Boolean value that indicates whether the provider supports search.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -14,8 +14,12 @@
 ## Declaration
 
 ```swift
-var bufferAddress: UInt64
+var bufferAddress: MTLGPUAddress
 ```
+
+#### Discussion
+
+Buffer address returned by the gpuAddress property of an MTLBuffer plus any offset into the buffer
 
 
 ---

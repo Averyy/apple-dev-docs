@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The time zone to use for creating the date.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

@@ -6,7 +6,7 @@
 A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -14,6 +14,10 @@ A type that stores the texture formats, layout information, and other details yo
 ```swift
 struct Configuration
 ```
+
+## Mentions
+
+- [Defining layer renderer quality](defining-layer-renderer-quality.md)
 
 #### Overview
 
@@ -45,13 +49,15 @@ You don’t create this type directly. When implementing the [`makeConfiguration
   A value that indicates if the layer is using variable rasterization rates.
 - [var generateFlippedRasterizationRateMaps: Bool](layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.md)
   A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
-### Instance Properties
-- [var drawableRenderContextRasterSampleCount: Int](layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md)
-  Raster sample count for the drawable’s render context.
+### Configurating the render context
 - [var drawableRenderContextStencilFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.md)
-  The pixel format to use for the stencil texture in drawable’s render context.
+  The metal pixel format matching that of the stencil texture used in the layer renderer drawable’s render context.
+- [var drawableRenderContextRasterSampleCount: Int](layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md)
+  The multisample antialiasing sample count used for rendering.
+### Configuring quality level
 - [var maxRenderQuality: LayerRenderer.RenderQuality](layerrenderer/configuration-swift.struct/maxrenderquality.md)
   The max render quality the layer can use when drawing to the drawables.
+### Instance Properties
 - [var supportsMTL4: Bool](layerrenderer/configuration-swift.struct/supportsmtl4.md)
   Whether the layer supports drawing using Metal4, if false assumed to be using Metal3.
 - [var trackingAreasFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/trackingareasformat.md)

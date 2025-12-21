@@ -17,9 +17,9 @@ var invalidateDataSourceCounts: Bool { get }
 
 #### Discussion
 
-The collection view sets this property in response to specific layout invalidation scenarios. For example, the collection view sets the property to [`true`](https://developer.apple.com/documentation/swift/true) when you insert or delete items or call the collection view’s [`reloadData()`](nscollectionview/reloaddata().md) method.
+The collection view sets this property in response to specific layout invalidation scenarios. For example, the collection view sets the property to [`true`](https://developer.apple.com/documentation/Swift/true) when you insert or delete items or call the collection view’s [`reloadData()`](nscollectionview/reloaddata().md) method.
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the layout object must query the data source for the new number of sections and items. IT should also update its layout based on the updated number of sections and items.
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the layout object must query the data source for the new number of sections and items. IT should also update its layout based on the updated number of sections and items.
 
 ## See Also
 

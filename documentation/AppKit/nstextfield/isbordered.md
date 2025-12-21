@@ -17,7 +17,7 @@ var isBordered: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field draws a border; if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t draw a border.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the text field draws a border; if [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t draw a border.
 
 
 ---

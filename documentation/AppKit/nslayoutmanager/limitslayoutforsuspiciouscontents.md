@@ -16,7 +16,7 @@ var limitsLayoutForSuspiciousContents: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the layout manager to lay out whatever text you give it. Changing the value to [`true`](https://developer.apple.com/documentation/swift/true) causes the layout manager to generate invalid layout information when it detects potentially suspicious content.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes the layout manager to lay out whatever text you give it. Changing the value to [`true`](https://developer.apple.com/documentation/Swift/true) causes the layout manager to generate invalid layout information when it detects potentially suspicious content.
 
 ## See Also
 

@@ -22,7 +22,7 @@ var isBlackPassEnabled: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to enhance visual contrast when using additive blending. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to enhance visual contrast when using additive blending. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > ❗ **Important**:  Because a black pass requires rendering the entire particle system twice, enabling this option can severely affect rendering performance.
 

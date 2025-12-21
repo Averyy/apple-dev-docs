@@ -18,7 +18,7 @@ An interface that enables SwiftData to manage a Swift class as a stored model.
 ## Declaration
 
 ```swift
-protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable
+protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable, SendableMetatype
 ```
 
 ## Mentions
@@ -72,6 +72,7 @@ protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Observable](../Observation/Observable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

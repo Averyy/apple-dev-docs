@@ -22,7 +22,7 @@ func vImageConverter_MustOperateOutOfPlace(_ converter: vImageConverter, _ srcs:
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md) if the conversion will work in place, [`kvImageOutOfPlaceOperationRequired`](kvimageoutofplaceoperationrequired.md) if the conversion requires out of place operation; otherwise, one of the error codes described in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](kvimagenoerror.md) if the conversion will work in place, [`kvImageOutOfPlaceOperationRequired`](kvimageoutofplaceoperationrequired.md) if the conversion requires out of place operation; otherwise, one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes.
 
 #### Discussion
 

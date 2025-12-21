@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-You are looking to fetch an entity that does not exist
+No app entity matched the search criteria.
 
 **Availability**:
 - iOS 18.0+

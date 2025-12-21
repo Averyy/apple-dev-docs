@@ -33,7 +33,7 @@ If you need to revoke your token, click Revoke. This invalidates the token and y
   Show place information on a map using a URL.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
-- [mapkit](mapkit.md)
+- [class mapkit](mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 
 

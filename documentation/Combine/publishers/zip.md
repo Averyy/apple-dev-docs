@@ -30,30 +30,24 @@ If either upstream publisher finishes successfully or fails with an error, so to
 
 ## Topics
 
-### Creating a Zip Publisher
+### Creating a zip publisher
 - [init(_:_:)](publishers/zip/init(_:_:).md)
   Creates a publisher that applies the zip function to two upstream publishers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Zip.Output](publishers/zip/output.md)
   The kind of values published by this publisher.
 - [Publishers.Zip.Failure](publishers/zip/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/zip/a.md)
   A publisher to zip.
 - [let b: B](publishers/zip/b.md)
   Another publisher to zip.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Zip<A, B>, Publishers.Zip<A, B>) -> Bool](publishers/zip/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/zip/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-zip-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/zip/equatable-implementations.md)
-- [Publisher Implementations](publishers/zip/publisher-implementations.md)
 
 ## Relationships
 

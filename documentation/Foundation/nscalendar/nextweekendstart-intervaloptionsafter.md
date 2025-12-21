@@ -22,7 +22,7 @@ func nextWeekendStart(_ datep: AutoreleasingUnsafeMutablePointer<NSDate?>?, inte
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the calendar and locale do not have the concept of a weekend, otherwise [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) if the calendar and locale do not have the concept of a weekend, otherwise [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

@@ -17,7 +17,7 @@ func setAllowsDroppingOnItems(_ flag: Bool)
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -53,7 +53,7 @@ The iOS & iPadOS 13.4 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Resolved Issues
 
-- [`safeAreaInsets`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy/safeAreaInsets) in navigation and tab views now extend to the top edge as expected. If you previously used doc://com.apple.documentation/documentation/SwiftUI/AnyView/edgesIgnoringSafeArea(_:) as a workaround, it should now be removed. (52851281)
+- [`safeAreaInsets`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy/safeAreaInsets) in navigation and tab views now extend to the top edge as expected. If you previously used `edgesIgnoringSafeArea(_:)` as a workaround, it should now be removed. (52851281)
 
 ## See Also
 

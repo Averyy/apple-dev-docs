@@ -1,33 +1,36 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: AdAttributionKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two values are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 17.4+
+- iPadOS 17.4+
 - Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: AppImpression, rhs: AppImpression) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+Returns `true` if the values are equal; `false`, otherwise.
 
 ## Parameters
 
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
 
+## See Also
+
+- [func hash(into: inout Hasher)](appimpression/hash(into:).md)
+  A function that hashes the essential components of the value by passing them into the hasher.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/appimpression/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/appimpression/==(_:_:))*

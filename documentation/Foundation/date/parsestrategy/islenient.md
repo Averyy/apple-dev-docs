@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Indicates whether to use heuristics when parsing the representation.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

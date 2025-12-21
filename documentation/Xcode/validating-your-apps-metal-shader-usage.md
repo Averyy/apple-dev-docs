@@ -97,7 +97,15 @@ If you discover an error in your shader, consider taking a capture (see [`Captur
 - [Validating your app’s Metal API usage](validating-your-apps-metal-api-usage.md)
   Catch runtime issues in your Metal app using API Validation.
 - [Monitoring your Metal app’s graphics performance](monitoring-your-metal-apps-graphics-performance.md)
-  Catch performance issues using the Metal Performance HUD while your app is running.
+  Catch performance issues using the Metal Performance HUD while your app runs.
+- [Customizing the Metal Performance HUD](customizing-metal-performance-hud.md)
+  Modify the appearance of your Metal heads-up display to monitor your graphics performance.
+- [Understanding the Metal Performance HUD metrics](understanding-metal-performance-hud-metrics.md)
+  Learn what each of the metrics reported by the heads-up display indicates.
+- [Gaining performance insights with the Metal Performance HUD](gaining-performance-insights-with-metal-performance-hud.md)
+  Catch potential performance issues while your app runs using the Metal heads-up display.
+- [Generating performance reports with the Metal Performance HUD](generating-performance-reports-with-metal-performance-hud.md)
+  Record your app’s performance using the heads-up display.
 
 
 ---

@@ -17,7 +17,6 @@ A mask that defines which categories of physics fields can exert forces on the p
 ## Declaration
 
 ```swift
-@MainActor
 var fieldBitMask: UInt32 { get set }
 ```
 

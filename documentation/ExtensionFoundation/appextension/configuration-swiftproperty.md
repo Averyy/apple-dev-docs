@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The configuration object for this app extension.
+The configuration details for this app extension.
 
 **Availability**:
 - iOS 16.0+
@@ -22,14 +22,16 @@ The configuration object for this app extension.
 @preconcurrency var configuration: Self.Configuration { get }
 ```
 
+#### Discussion
+
+Implement this property in your custom type and use it to store the configuration details for your app extension. As part of the configuration, provide code to establish an XPC connection back to the host app.
+
+If your app extension sends only data to the host app, and doesn’t provide a UI, use this property to store a type that implements the [`AppExtensionConfiguration`](appextensionconfiguration.md) protocol. If your extension provides UI elements for the host app to display, instead store an instance of the [`AppExtensionSceneConfiguration`](https://developer.apple.com/documentation/ExtensionKit/AppExtensionSceneConfiguration) type.
+
 ## See Also
 
 - [associatedtype Configuration : AppExtensionConfiguration](appextension/configuration-swift.associatedtype.md)
-  A type that provides the app extension configuration information.
-- [static func main() throws](appextension/main-5zfjx.md)
-  The main entry point for a non-UI extension.
-- [static func main() throws](appextension/main-w0u9.md)
-  The main entry point for a UI extension.
+  A type that manages configuration data for an app extension.
 
 
 ---

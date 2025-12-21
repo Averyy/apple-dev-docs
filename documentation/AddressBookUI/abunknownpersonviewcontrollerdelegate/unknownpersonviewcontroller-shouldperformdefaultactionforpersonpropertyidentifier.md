@@ -18,7 +18,7 @@ optional func unknownPersonViewController(_ personViewController: ABUnknownPerso
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `unknownPersonViewController` should perform its default action. Your application may quit as a result of this action. [`false`](https://developer.apple.com/documentation/swift/false): if `unknownPersonViewController` should do nothing. The delegate may perform custom action processing.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `unknownPersonViewController` should perform its default action. Your application may quit as a result of this action. [`false`](https://developer.apple.com/documentation/Swift/false): if `unknownPersonViewController` should do nothing. The delegate may perform custom action processing.
 
 ## Parameters
 

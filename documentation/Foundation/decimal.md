@@ -192,12 +192,6 @@ struct Decimal
 - [func divide(by: Decimal)](decimal/divide(by:).md)
 - [func multiply(by: Decimal)](decimal/multiply(by:).md)
 - [func subtract(Decimal)](decimal/subtract(_:).md)
-### Default Implementations
-- [ConvertibleFromGeneratedContent Implementations](decimal/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](decimal/convertibletogeneratedcontent-implementations.md)
-- [Generable Implementations](decimal/generable-implementations.md)
-- [InstructionsRepresentable Implementations](decimal/instructionsrepresentable-implementations.md)
-- [PromptRepresentable Implementations](decimal/promptrepresentable-implementations.md)
 
 ## Relationships
 
@@ -226,9 +220,9 @@ struct Decimal
 
 ## See Also
 
-- [@frozen struct Int](../Swift/Int.md)
+- [struct Int](../Swift/Int.md)
   A signed integer value type.
-- [@frozen struct Double](../Swift/Double.md)
+- [struct Double](../Swift/Double.md)
   A double-precision, floating-point value type.
 - [class NumberFormatter](numberformatter.md)
   A formatter that converts between numeric values and their textual representations.

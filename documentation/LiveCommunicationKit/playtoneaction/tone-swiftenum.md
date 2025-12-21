@@ -27,18 +27,6 @@ enum Tone
   A person entered a digit.
 - [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
   A person entered a soft pause.
-### Initializers
-- [init?(rawValue: Int)](playtoneaction/tone-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](playtoneaction/tone-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [PlayToneAction.Tone.RawValue](playtoneaction/tone-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](playtoneaction/tone-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](playtoneaction/tone-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

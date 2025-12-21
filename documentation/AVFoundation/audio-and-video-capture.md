@@ -26,6 +26,8 @@ Capture audio and video directly to media files, or capture streams of media for
   A capture output that records video and provides access to video frames for processing.
 - [class AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)
   A capture output that records audio and provides access to audio sample buffers as they are recorded.
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+  An interface for generating a spatial audio timed metadata sample.
 ### Mac screen capture
 - [class AVCaptureScreenInput](avcapturescreeninput.md)
   A capture input for recording from a screen in macOS.

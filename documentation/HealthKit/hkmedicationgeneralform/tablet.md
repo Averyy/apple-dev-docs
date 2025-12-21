@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication comes in tablet form, such as a pill or caplet.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

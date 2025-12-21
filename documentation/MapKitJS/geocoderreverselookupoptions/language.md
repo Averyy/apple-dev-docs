@@ -11,7 +11,7 @@ The language to use when displaying the reverse lookup results.
 ## Declaration
 
 ```swift
-attribute string language;
+language?: string;
 ```
 
 #### Discussion

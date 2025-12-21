@@ -32,10 +32,6 @@ struct MinuteWeather
 ### Getting the date
 - [var date: Date](minuteweather/date.md)
   The start time of the minute weather.
-### Default Implementations
-- [Decodable Implementations](minuteweather/decodable-implementations.md)
-- [Encodable Implementations](minuteweather/encodable-implementations.md)
-- [Equatable Implementations](minuteweather/equatable-implementations.md)
 
 ## Relationships
 

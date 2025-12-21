@@ -50,6 +50,9 @@ You can:
   A proxy for a Safari webpage.
 - [class SFSafariTab](sfsafaritab.md)
   A proxy for a tab in a Safari window.
+### Safari Settings
+- [class SFSafariSettings](sfsafarisettings.md)
+  A class you use to open Safari Settings from your app.
 ### Safari content in your app
 - [class SFSafariViewController](sfsafariviewcontroller.md)
   An object that provides a visible standard interface for browsing the web.
@@ -74,7 +77,7 @@ You can:
   An object for adding items to a user’s Safari Reading List.
 - [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterrorcode.md)
+- [SSReadingListError.Code](ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 - [struct SSReadingListError](ssreadinglisterror.md)
   A Safari Reading List error.
@@ -84,15 +87,13 @@ You can:
 ### Miscellaneous errors
 - [struct SFError](sferror.md)
   A content blocker or Safari app extension error.
-- [SFError.Code](sferrorcode.md)
+- [SFError.Code](sferror/code.md)
   Messages that describe a content blocker or Safari app extension error.
 - [let SFErrorDomain: String](sferrordomain.md)
   The domain for content blocker or Safari app extension errors.
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Classes
-- [class SFSafariSettings](sfsafarisettings.md)
 
 
 ---

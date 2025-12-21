@@ -23,8 +23,8 @@ struct LocalizedStringKey
 
 ## Mentions
 
-- [Preparing views for localization](preparing-views-for-localization.md)
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
+- [Preparing views for localization](preparing-views-for-localization.md)
 
 #### Overview
 

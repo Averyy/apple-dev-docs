@@ -29,8 +29,10 @@ A [`VerificationResult`](verificationresult.md) or `nil` if the customer has no 
 
 ## See Also
 
-- [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
-  A sequence of the latest transactions that entitle a customer to In-App Purchases and subscriptions.
+- [static func currentEntitlements(for: String) -> Transaction.Transactions](transaction/currententitlements(for:).md)
+  Gets the transactions that entitle the user to items purchased under a product ID.
+- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
+  The string representation of the offer period applied to the subscription offer for this transaction.
 
 
 ---

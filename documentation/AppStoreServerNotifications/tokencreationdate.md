@@ -11,7 +11,7 @@ The field of an external purchase token that contains the UNIX date, in millisec
 ## Declaration
 
 ```swift
-int64 tokenCreationDate
+timestamp tokenCreationDate
 ```
 
 ## Mentions
@@ -26,6 +26,10 @@ This field represents the date when the system created the [`externalPurchaseTok
 
 - [type externalPurchaseId](externalpurchaseid.md)
   The field of an external purchase token that uniquely identifies the token.
+- [type tokenExpirationDate](tokenexpirationdate.md)
+  The field of a custom link token that contains the UNIX date, in milliseconds, when the token expires.
+- [type tokenType](tokentype.md)
+  The type of an external purchase custom link token.
 
 
 ---

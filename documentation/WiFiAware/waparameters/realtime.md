@@ -6,8 +6,8 @@
 The property that configures parameters that prioritize latency at the expense of throughput, power consumption, and other concurrent Wi-Fi use cases.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -21,7 +21,7 @@ enum MTLSparseTextureMappingMode
 
 ## Topics
 
-### Specifying the Mapping Mode
+### Specifying the mapping mode
 - [MTLSparseTextureMappingMode.map](mtlsparsetexturemappingmode/map.md)
   A request to map sparse tiles from the heap to a region in the texture.
 - [MTLSparseTextureMappingMode.unmap](mtlsparsetexturemappingmode/unmap.md)

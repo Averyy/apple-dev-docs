@@ -18,7 +18,7 @@ bool CGPDFArrayGet<DataType> (
 );
 ```
 
-These functions test the data type of the object at the specified index. If the object is not of the expected type, the function returns [`false`](https://developer.apple.com/documentation/swift/false). If the object is of the expected type, the function returns [`true`](https://developer.apple.com/documentation/swift/true), and the object is passed back in the `value` parameter.
+These functions test the data type of the object at the specified index. If the object is not of the expected type, the function returns [`false`](https://developer.apple.com/documentation/Swift/false). If the object is of the expected type, the function returns [`true`](https://developer.apple.com/documentation/Swift/true), and the object is passed back in the `value` parameter.
 
 This type is not derived from [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef) and therefore there are no functions for retaining and releasing it. [`CGPDFArrayRef`](cgpdfarrayref.md) objects exist only as constituent parts of a [`CGPDFDocument`](cgpdfdocument.md) object, and they are managed by their container.
 

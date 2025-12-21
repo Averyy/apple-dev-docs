@@ -12,13 +12,18 @@ Compose rich views by reacting to state changes and customize your app’s scene
 
 > **Note**: This sample code project is associated with WWDC22 session [`10061: Bring multiple windows to your SwiftUI app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10061/).
 
-##### 4164583
+##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 
 - To run the sample on an iOS device or Mac, make sure you select your team in the Signing & Capabilities tab in each target’s settings.
 
+## See Also
+
+- [Customizing window styles and state-restoration behavior in macOS](customizing-window-styles-and-state-restoration-behavior-in-macos.md)
+  Configure how your app’s windows look and function in macOS to provide an engaging and more coherent experience.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/bringing-multiple-windows-to-your-swiftui-app)*

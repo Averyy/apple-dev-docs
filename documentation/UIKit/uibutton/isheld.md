@@ -21,7 +21,7 @@ var isHeld: Bool { get }
 
 #### Discussion
 
-The property is [`true`](https://developer.apple.com/documentation/swift/true) if the button is presenting a menu in response to a long press. Buttons that set [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) to present a menu don’t set this property.
+The property is [`true`](https://developer.apple.com/documentation/Swift/true) if the button is presenting a menu in response to a long press. Buttons that set [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) to present a menu don’t set this property.
 
 ## See Also
 

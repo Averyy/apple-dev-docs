@@ -10,7 +10,7 @@ Browse notable changes in [`Accessibility`](https://developer.apple.com/document
 
 #### June 2025
 
-- Add [`Accessibility`](https://developer.apple.com/documentation/Accessibility) to your App Store product page to indicate which accessibility features your app supports.
+- Add [`Accessibility`](https://developer.apple.com/documentation/Accessibility#Add-Accessibility-Nutrition-Labels-to-your-product-page) to your App Store product page to indicate which accessibility features your app supports.
 - Support Assistive Access in iOS and iPadOS scenes with [`AssistiveAccess`](https://developer.apple.com/documentation/SwiftUI/AssistiveAccess).
 - Use [`AXBrailleTranslator`](https://developer.apple.com/documentation/Accessibility/AXBrailleTranslator) to translate print text to Braille and Braille to print text according to a given Braille table.
 - Use [`openSettings(for:)`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/openSettings(for:)) to open the Settings app to new sections of Accessibility settings, including [`AccessibilitySettings.Feature.assistiveTouch`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/assistiveTouch), [`AccessibilitySettings.Feature.assistiveTouchDevices`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/assistiveTouchDevices), and  [`AccessibilitySettings.Feature.dwellControl`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/dwellControl).

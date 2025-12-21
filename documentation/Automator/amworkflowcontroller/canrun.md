@@ -17,7 +17,7 @@ var canRun: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller’s workflow is able to run; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the controller’s workflow is able to run; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

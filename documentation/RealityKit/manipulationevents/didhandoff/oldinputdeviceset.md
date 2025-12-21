@@ -6,7 +6,7 @@
 The set of input devices active before handoff was initiated.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

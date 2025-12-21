@@ -30,12 +30,12 @@ A subject is a publisher that you can use to ”inject” values into a stream, 
 
 ## Topics
 
-### Delivering Elements to Subscribers
+### Delivering elements to subscribers
 - [func send(Self.Output)](subject/send(_:).md)
   Sends a value to the subscriber.
 - [func send()](subject/send.md)
   Sends a void value to the subscriber.
-### Delivering Life Cycle Events to Subscribers
+### Delivering life cycle events to subscribers
 - [func send(subscription: any Subscription)](subject/send(subscription:).md)
   Sends a subscription to the subscriber.
 - [func send(completion: Subscribers.Completion<Self.Failure>)](subject/send(completion:).md)

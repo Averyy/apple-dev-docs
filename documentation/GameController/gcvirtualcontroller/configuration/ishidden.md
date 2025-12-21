@@ -18,9 +18,9 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-To present your own virtual controller interface, set this property to [`true`](https://developer.apple.com/documentation/swift/true). Then when the state of controls in your interface changes, use the [`GCVirtualController`](gcvirtualcontroller.md) [`setValue(_:forButtonElement:)`](gcvirtualcontroller/setvalue(_:forbuttonelement:).md) and [`setPosition(_:forDirectionPadElement:)`](gcvirtualcontroller/setposition(_:fordirectionpadelement:).md) methods to update the corresponding elements.
+To present your own virtual controller interface, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). Then when the state of controls in your interface changes, use the [`GCVirtualController`](gcvirtualcontroller.md) [`setValue(_:forButtonElement:)`](gcvirtualcontroller/setvalue(_:forbuttonelement:).md) and [`setPosition(_:forDirectionPadElement:)`](gcvirtualcontroller/setposition(_:fordirectionpadelement:).md) methods to update the corresponding elements.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

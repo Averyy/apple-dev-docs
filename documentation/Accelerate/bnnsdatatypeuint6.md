@@ -20,6 +20,8 @@ var BNNSDataTypeUInt6: BNNSDataType { get }
 
 #### Discussion
 
+Storage data type
+
 Common bit to floating point types, this constant is not a valid type
 
 16-bit half precision floating point

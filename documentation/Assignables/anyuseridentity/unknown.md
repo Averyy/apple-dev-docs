@@ -1,27 +1,25 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Assignables  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value indicating whether two values are equal.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: AnyUserIdentity, rhs: AnyUserIdentity) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+A Boolean value indicating whether two values are equal.
 
 ## Parameters
 
@@ -31,4 +29,4 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/assignables/anyuseridentity/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/assignables/anyuseridentity/==(_:_:))*

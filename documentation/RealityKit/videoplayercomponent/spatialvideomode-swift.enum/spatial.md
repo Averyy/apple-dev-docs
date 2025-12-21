@@ -6,8 +6,8 @@
 Spatial rendering mode - head-pose based treatments in portal or in full immersive mode set by the immersiveViewingMode.
 
 **Availability**:
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

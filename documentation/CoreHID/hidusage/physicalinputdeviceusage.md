@@ -120,20 +120,8 @@ enum PhysicalInputDeviceUsage
 - [HIDUsage.PhysicalInputDeviceUsage.triggerRepeatInterval](hidusage/physicalinputdeviceusage/triggerrepeatinterval.md)
 - [HIDUsage.PhysicalInputDeviceUsage.typeSpecificBlockHandle](hidusage/physicalinputdeviceusage/typespecificblockhandle.md)
 - [HIDUsage.PhysicalInputDeviceUsage.typeSpecificBlockOffset](hidusage/physicalinputdeviceusage/typespecificblockoffset.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/physicalinputdeviceusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/physicalinputdeviceusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.PhysicalInputDeviceUsage.RawValue](hidusage/physicalinputdeviceusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/physicalinputdeviceusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/physicalinputdeviceusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/physicalinputdeviceusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

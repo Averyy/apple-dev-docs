@@ -32,7 +32,7 @@ For information about possible values, see [`AVAudioQuality`](avaudioquality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
 - [Encoder Settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time Pitch Algorithm Settings](../AVFoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

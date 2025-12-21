@@ -21,7 +21,7 @@ var isSelectable: Bool { get set }
 
 #### Discussion
 
-This property controls the ability of the user to select content and interact with URLs and text attachments. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property controls the ability of the user to select content and interact with URLs and text attachments. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -22,7 +22,7 @@ var isComposable: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you can use the composition as a segment within an [`AVCompositionTrack`](avcompositiontrack.md) object.
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you can use the composition as a segment within an [`AVCompositionTrack`](avcompositiontrack.md) object.
 
 ## See Also
 

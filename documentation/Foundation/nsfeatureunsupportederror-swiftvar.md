@@ -22,7 +22,7 @@ var NSFeatureUnsupportedError: Int { get }
 
 #### Discussion
 
-For example, some volumes may not support a Trash folder, so these methods will report failure by returning [`false`](https://developer.apple.com/documentation/swift/false) or `nil` and an [`NSError`](nserror.md) with [`NSFeatureUnsupportedError`](nsfeatureunsupportederror-swift.var.md).
+For example, some volumes may not support a Trash folder, so these methods will report failure by returning [`false`](https://developer.apple.com/documentation/Swift/false) or `nil` and an [`NSError`](nserror.md) with [`NSFeatureUnsupportedError`](nsfeatureunsupportederror-swift.var.md).
 
 ## See Also
 

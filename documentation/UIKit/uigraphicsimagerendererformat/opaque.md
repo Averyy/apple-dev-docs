@@ -20,7 +20,7 @@ var opaque: Bool { get set }
 
 #### Discussion
 
-Setting the value of this property to [`false`](https://developer.apple.com/documentation/swift/false) specifies that the underlying Core Graphics context has an alpha channel, whereas [`true`](https://developer.apple.com/documentation/swift/true) indicates it does not. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false) specifies that the underlying Core Graphics context has an alpha channel, whereas [`true`](https://developer.apple.com/documentation/Swift/true) indicates it does not. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 A Core Graphics context requires an alpha channel to express transparency. Without an alpha channel a Core Graphics context is said to be opaque, i.e. without transparency.
 

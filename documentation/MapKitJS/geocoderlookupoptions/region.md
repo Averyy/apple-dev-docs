@@ -11,7 +11,7 @@ A region for constraining lookup results.
 ## Declaration
 
 ```swift
-attribute mapkit.CoordinateRegion region;
+region?: CoordinateRegion;
 ```
 
 #### Discussion

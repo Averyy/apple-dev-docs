@@ -20,7 +20,7 @@ var hasRollAngle: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the value in the [`rollAngle`](avmetadatafaceobject/rollangle.md) property is invalid and must not be accessed.
+If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the value in the [`rollAngle`](avmetadatafaceobject/rollangle.md) property is invalid and must not be accessed.
 
 ## See Also
 

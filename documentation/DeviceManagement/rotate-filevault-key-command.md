@@ -24,9 +24,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | NA |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response Personal Recovery Key
-
-##### Example Request and Response Institutional Recovery Key
+##### Example Request and Response
 
 ## Topics
 

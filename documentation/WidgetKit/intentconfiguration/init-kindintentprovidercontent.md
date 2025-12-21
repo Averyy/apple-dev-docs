@@ -10,7 +10,7 @@ Creates a configuration for a widget by using a custom intent definition to prov
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration
@@ -29,7 +29,7 @@ Creates a configuration for a widget by using a custom intent definition to prov
 
 ## See Also
 
-- [@MainActor @preconcurrency var body: Self.Body { get }](../SwiftUI/WidgetConfiguration/body-swift.property.md)
+- [var body: Self.Body](../SwiftUI/WidgetConfiguration/body-swift.property.md)
   The content and behavior of this widget.
 
 

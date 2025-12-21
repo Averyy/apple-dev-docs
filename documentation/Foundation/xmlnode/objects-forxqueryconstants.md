@@ -17,7 +17,7 @@ func objects(forXQuery xquery: String, constants: [String : Any]?) throws -> [An
 
 #### Discussion
 
-The receiver acts as the context item for the query (”.”). If the receiver has been changed after parsing to have multiple adjacent text nodes, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](xmlelement/normalizeadjacenttextnodespreservingcdata(_:).md) (with an argument of [`false`](https://developer.apple.com/documentation/swift/false)) to coalesce the text nodes before querying.
+The receiver acts as the context item for the query (”.”). If the receiver has been changed after parsing to have multiple adjacent text nodes, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](xmlelement/normalizeadjacenttextnodespreservingcdata(_:).md) (with an argument of [`false`](https://developer.apple.com/documentation/Swift/false)) to coalesce the text nodes before querying.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 

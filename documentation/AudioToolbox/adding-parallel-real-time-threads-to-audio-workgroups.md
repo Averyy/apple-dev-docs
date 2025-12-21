@@ -10,7 +10,7 @@ If your app creates one or more auxiliary real-time threads that run in sync wit
 
 ##### Add Your Threads to the Audio Device Workgroup
 
-Begin by retrieving the audio device’s workgroup, so you can join your threads to it. Retrieve it from the I/O Audio Unit (AUHAL or AURemoteIO) using either the [`kAudioOutputUnitProperty_OSWorkgroup`](kaudiooutputunitproperty_osworkgroup.md) property for AUv2, or the [`AUAudioUnit`](auaudiounit.md) [`osWorkgroup`](auaudiounit/osworkgroup.md) property for AUv3. In macOS, you can also get it directly from the audio device by using the HAL API. Then, in your real-time thread, call [`os_workgroup_join`](https://developer.apple.com/documentation/os/3649707-os_workgroup_join) to join it to the workgroup, and call [`os_workgroup_leave`](https://developer.apple.com/documentation/os/3649708-os_workgroup_leave) when you’ve finished your work, as shown in the example below.
+Begin by retrieving the audio device’s workgroup, so you can join your threads to it. Retrieve it from the I/O Audio Unit (AUHAL or AURemoteIO) using either the [`kAudioOutputUnitProperty_OSWorkgroup`](kaudiooutputunitproperty_osworkgroup.md) property for AUv2, or the [`AUAudioUnit`](auaudiounit.md) [`osWorkgroup`](auaudiounit/osworkgroup.md) property for AUv3. In macOS, you can also get it directly from the audio device by using the HAL API. Then, in your real-time thread, call [`os_workgroup_join`](https://developer.apple.com/documentation/os/os_workgroup_join) to join it to the workgroup, and call [`os_workgroup_leave`](https://developer.apple.com/documentation/os/os_workgroup_leave) when you’ve finished your work, as shown in the example below.
 
 ```objc
 #import <AudioToolbox/AudioToolbox.h>

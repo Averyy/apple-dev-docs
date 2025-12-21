@@ -22,7 +22,7 @@ var surfaceProcessed: Bool { get }
 
 #### Discussion
 
-This value is [`false`](https://developer.apple.com/documentation/swift/false) if the flashing lights processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
+This value is [`false`](https://developer.apple.com/documentation/Swift/false) if the flashing lights processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
 
 ## See Also
 

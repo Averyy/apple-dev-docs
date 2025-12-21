@@ -6,11 +6,11 @@
 Analysis processing options.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,17 +20,16 @@ struct Options
 
 ## Topics
 
-### Initializers
+### Creating an options object
 - [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention)](speechanalyzer/options/init(priority:modelretention:).md)
   Creates a structure containing analysis processing options.
-### Instance Properties
+- [SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.enum.md)
+  A model caching strategy.
+### Inspecting options
 - [let modelRetention: SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.property.md)
   The analyzer’s model caching strategy.
 - [let priority: TaskPriority](speechanalyzer/options/priority.md)
   The priority of analysis processing work.
-### Enumerations
-- [SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.enum.md)
-  A model caching strategy.
 
 ## Relationships
 

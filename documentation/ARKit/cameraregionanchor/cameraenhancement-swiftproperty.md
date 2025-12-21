@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
-The camera enhancement used with this anchor.
+The enhancement applied to this anchor’s pixel buffer.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

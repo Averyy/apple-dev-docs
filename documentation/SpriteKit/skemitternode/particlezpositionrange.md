@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s depth.
 ## Declaration
 
 ```swift
-@MainActor
 var particleZPositionRange: CGFloat { get set }
 ```
 

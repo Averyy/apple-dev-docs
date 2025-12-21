@@ -3,7 +3,7 @@
 **Framework**: Audio Toolbox  
 **Kind**: var
 
-A mixer unit takes a number of input channels and mixes them to provide one or more output channels. For example, the `kAudioUnitSubType_StereoMixer` audio unit in macOS takes multiple mono or stereo inputs and produce a single stereo output.
+A mixer unit takes a number of input channels and mixes them to provide one or more output channels.
 
 **Availability**:
 - iOS ?+
@@ -18,6 +18,10 @@ A mixer unit takes a number of input channels and mixes them to provide one or m
 ```swift
 var kAudioUnitType_Mixer: UInt32 { get }
 ```
+
+#### Discussion
+
+For example, the [`kAudioUnitSubType_StereoMixer`](kaudiounitsubtype_stereomixer.md) audio unit in macOS takes multiple mono or stereo inputs and produces a single stereo output.
 
 ## See Also
 

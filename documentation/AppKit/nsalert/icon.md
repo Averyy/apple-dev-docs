@@ -21,6 +21,8 @@ By default, the image used in an alert is the app icon. If you set this property
 
 If you’ve set a custom alert icon, you can clear it by setting this property’s value to `nil`, which restores use of the app icon for the alert.
 
+> **Note**: AppKit may omit the icon from the alert if it’s the app icon and the alert’s context is clear, such as being presented as a sheet on an app window.
+
 
 ---
 

@@ -25,9 +25,7 @@ struct VideoReader
 - [init()](videoreader/init.md)
   Creates a video reader.
 ### Reading
-- [static func read<S>(S) async throws -> [VideoReader.AsyncFrames]](videoreader/read(_:)-4oyjh.md)
-  Reads a sequence of files as an array of async sequences of video frames.
-- [static func read<S, Annotation>(S) async throws -> [AnnotatedFeature<VideoReader.AsyncFrames, Annotation>]](videoreader/read(_:)-sluv.md)
+- [static read(_:)](videoreader/read(_:).md)
   Reads a sequence of annotated files as an array of annotated async sequences of video frames.
 - [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](videoreader/readcamera(configuration:).md)
   Reads an async sequence of video frames captured with a video camera.
@@ -42,13 +40,6 @@ struct VideoReader
 ### Applying
 - [func applied(to: URL, eventHandler: EventHandler?) async throws -> VideoReader.AsyncFrames](videoreader/applied(to:eventhandler:).md)
   Reads a video file as an async sequence of video frames.
-### Type Aliases
-- [VideoReader.Input](videoreader/input.md)
-  The input type.
-- [VideoReader.Output](videoreader/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](videoreader/transformer-implementations.md)
 
 ## Relationships
 

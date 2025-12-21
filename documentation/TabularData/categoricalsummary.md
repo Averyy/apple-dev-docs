@@ -37,9 +37,6 @@ Each categorical summary has 5 statistics about a collection:
   Creates a categorical summary with default values.
 - [init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])](categoricalsummary/init(somecount:nonecount:uniquecount:mode:).md)
   Creates a categorical summary.
-### Comparing Summaries
-- [static func != (Self, Self) -> Bool](categoricalsummary/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Inspecting a Summary
 - [var debugDescription: String](categoricalsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
@@ -53,17 +50,6 @@ Each categorical summary has 5 statistics about a collection:
   The number of missing elements in the column.
 - [var totalCount: Int](categoricalsummary/totalcount.md)
   The total number of elements in the column.
-### Operators
-- [static func == (CategoricalSummary<Element>, CategoricalSummary<Element>) -> Bool](categoricalsummary/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](categoricalsummary/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](categoricalsummary/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](categoricalsummary/equatable-implementations.md)
 
 ## Relationships
 

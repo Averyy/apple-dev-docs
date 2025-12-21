@@ -5,10 +5,10 @@
 Organize toolbars into related groupings to improve their appearance and utility.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -23,7 +23,7 @@ This sample demonstrates how to refine the system provided glass effect in toolb
 
 The system applies Liquid Glass to the toolbar items automatically.
 
-![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/1c1efa4a5ba686b18392730385956a34/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/5074257308473e4332f64b4f188098de/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
 
 #### Organize the Toolbar Items Into Logical Groupings
 

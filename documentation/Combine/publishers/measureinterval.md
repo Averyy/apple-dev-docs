@@ -22,24 +22,19 @@ struct MeasureInterval<Upstream, Context> where Upstream : Publisher, Context : 
 
 ## Topics
 
-### Creating a Measure Interval Publisher
+### Creating a measure interval publisher
 - [init(upstream: Upstream, scheduler: Context)](publishers/measureinterval/init(upstream:scheduler:).md)
   Creates a publisher that measures and emits the time interval between events received from an upstream publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.MeasureInterval.Output](publishers/measureinterval/output.md)
   The kind of values published by this publisher.
 - [Publishers.MeasureInterval.Failure](publishers/measureinterval/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/measureinterval/upstream.md)
   The publisher from which this publisher receives elements.
 - [let scheduler: Context](publishers/measureinterval/scheduler.md)
   The scheduler used for tracking the timing of events.
-### Applying Operators
-- [Publisher Operators](publishers-measureinterval-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/measureinterval/publisher-implementations.md)
 
 ## Relationships
 

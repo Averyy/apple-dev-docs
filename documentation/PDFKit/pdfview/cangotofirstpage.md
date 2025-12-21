@@ -22,7 +22,7 @@ var canGoToFirstPage: Bool { get }
 
 #### Discussion
 
-The return value will be [`true`](https://developer.apple.com/documentation/swift/true) unless the view is already displaying the first page.
+The return value will be [`true`](https://developer.apple.com/documentation/Swift/true) unless the view is already displaying the first page.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Pass incoming messages from the unreliable channel to the game.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,11 @@ func processIncomingUnreliableMessage(_ message: Data, from sender: TabletopNetw
 
 - `message`: The incoming message
 - `sender`: The peer that sent the message
+
+## See Also
+
+- [func processIncomingMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingmessage(_:from:).md)
+  Pass incoming messages from the reliable channel to the game.
 
 
 ---

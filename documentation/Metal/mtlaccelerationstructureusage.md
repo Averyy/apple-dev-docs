@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: struct
 
-Options that describe which tasks you can perform on an acceleration structure and how the system performs those tasks.
+Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 
 **Availability**:
 - iOS 14.0+
@@ -21,19 +21,20 @@ struct MTLAccelerationStructureUsage
 
 ## Topics
 
-### Creating Usage Options
-- [init(rawValue: UInt)](mtlaccelerationstructureusage/init(rawvalue:).md)
-  Creates new usage options from a raw integer value.
-### Usage Options
+### Applying options
 - [static var refit: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/refit.md)
-  An option that specifies that you can refit the acceleration structure if the geometry changes.
+  An option that lets you update an acceleration structure after creating it.
 - [static var preferFastBuild: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastbuild.md)
-  An option that specifies that Metal needs to build the acceleration structure quickly, even if that reduces ray-tracing performance.
-- [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
-  A structure usage option that indicates you intend to use larger ray-tracing limits for the acceleration structure.
-### Type Properties
-- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+  An option that instructs Metal to build an acceleration structure quickly.
 - [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
+  An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
+- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+  An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
+- [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
+  An option that increases an acceleration structure’s storage capacity.
+### Swift support
+- [init(rawValue: UInt)](mtlaccelerationstructureusage/init(rawvalue:).md)
+  Creates new usage options instance from a raw integer value.
 
 ## Relationships
 
@@ -49,7 +50,7 @@ struct MTLAccelerationStructureUsage
 
 ## See Also
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
@@ -66,7 +67,7 @@ struct MTLAccelerationStructureUsage
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
-  An object for encoding commands that build or refit acceleration structures.
+  Encodes commands that build and refit acceleration structures for a single pass.
 - [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
 
 

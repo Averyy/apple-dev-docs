@@ -20,9 +20,7 @@ typealias sec_protocol_key_update_t = (sec_protocol_metadata_t, @escaping sec_pr
 
 #### Discussion
 
-```None
- Block to be invoked when the protocol key MUST be updated.
-```
+Block to be invoked when the protocol key MUST be updated.
 
 ## Parameters
 

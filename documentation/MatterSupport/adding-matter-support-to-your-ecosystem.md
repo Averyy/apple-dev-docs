@@ -27,6 +27,7 @@ Define the home’s name, then create the topology and pass your ecosystem name 
 
 ```swift
 import MatterSupport
+import os.log
 
 let homes = [MatterAddDeviceRequest.Home(name: "My Home")]
 let topology = MatterAddDeviceRequest.Topology(ecosystemName: "MyEcosystemName", homes: homes)
@@ -41,9 +42,13 @@ let request = MatterAddDeviceRequest(topology: topology)
 You can optionally provide the Matter setup code programmatically while setting up a Matter device in an ecosystem. To do this, pass a string containing the payload information from the device’s packaging, such as a QR code. For more information on when this is appropriate, see [`Matter Allow Setup Payload`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.matter.allow-setup-payload).
 
 ```swift
-let onboardingPayload = "MT:<setup_code>"
-let qrCodeParser = MTRQRCodeSetupPayloadParser(base38Representation: onboardingPayload)
-request.setupPayload = qrCodeParser.populatePayload()
+// Provide the Matter setup code programmatically.
+let setupCode = "12345678910"
+request.setupPayload = MTRSetupPayload(payload: setupCode)
+
+// Provide the Matter setup code programmatically using a QR code and add the MT: prefix.
+let qrCodePayload = "MT:12345678910ABCDEFG12"
+request.setupPayload = MTRSetupPayload(payload: qrCodePayload)
 ```
 
 Next, start the user interface flow for adding the device. Handle any errors that may occur during the setup.
@@ -52,8 +57,23 @@ Next, start the user interface flow for adding the device. Handle any errors tha
 do {
     try await request.perform()
     print("Successfully set up device!")
+
+    // Handle the success full setup request and update your app's UI, register the device in your database, or set up any default automations.
+} catch let error as MyMatterAddDeviceExtensionRequestHandler {
+    // Handle specific Matter errors.
+    switch error {
+    case .cancelled:
+        print("Someone cancelled the setup process.")
+    case .accessDenied:
+        print("Access denied - check entitlements and permissions.")
+    case .unsupported:
+        print("Matter setup is not supported on this device.")
+    default:
+        print("Failed with Matter error: \(error.localizedDescription).")
+    }
 } catch {
-    print("Failed to set up device with error: \(error)")
+    // Handle other errors.
+    print("Failed to set up device with error: \(error.localizedDescription).")
 }
 ```
 
@@ -63,88 +83,112 @@ Subclass [`MatterAddDeviceExtensionRequestHandler`](matteradddeviceextensionrequ
 
 ```swift
 class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestHandler {
+    // Define an error type for pairing failures.
+    enum PairingError: Error {
+        case invalidCredentials
+        case pairingFailed
+    }
+
+    // Use OSLog to log debugging information.
+    private let logger = Logger(subsystem: "com.yourcompany.matterapp", category: "DeviceSetup")
+
     override init() {
         super.init()
+        logger.debug("MatterAddDeviceExtensionRequestHandler initialized")
     }
 
     // Override this method to return the rooms in the home.
     override func rooms(in home: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room] {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received request to fetch rooms in home: \(String(describing: home))")
+        logger.debug("Received request to fetch rooms in home: \(String(describing: home?.name)).")
 
-        var rooms: [String] = ["Living Room", "Bedroom", "Office"];
+        // In your app, fetch rooms from your database or ecosystem.
+        let rooms: [String] = ["Living Room", "Bedroom", "Office", "Kitchen", "Dining Room"]
         return rooms.map { MatterAddDeviceRequest.Room(displayName: $0) }
     }
 
-    // Override this method to commission the device.
+    // Override this method to commission the device to your application.
     override func commissionDevice(in home: MatterAddDeviceRequest.Home?, onboardingPayload: String, commissioningID: UUID) async throws {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received request to commission device in home \(String(describing: home)) using onboarding payload: \(onboardingPayload) and uuid: \(commissioningID)")
+        logger.debug("Commissioning device in home '\(String(describing: home?.name))' with payload: \(onboardingPayload).")
 
         do {
-            // Use Matter framework APIs to pair the accessory to your application with the provided onboardingPayload.            
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Successfully paired accessory: \(String(describing: accessory))")
+            // Parse the onboarding payload and commission the device to your app using the Matter framework APIs.
+            logger.info("Successfully commissioned device with ID: \(commissioningID)")
+
+            // Make sure that your application returns from this method when it finished pairing the accessory with your application.
+            // Returning from this method indicates to the MatterSupport framework that the pairing process is completed,
+
+            // and the system displays a view to indicate that the pairing process is completed.
         } catch {
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Failed to pair accessory: \(String(describing: error))")
-            throw error
+            logger.error("Failed to commission device: \(error.localizedDescription)")
+            throw PairingError.pairingFailed
         }
     }
 
-    // Override this method to commission the device to your application.
+    // Override this method to configure the device to your application.
     override func configureDevice(named name: String, in room: MatterAddDeviceRequest.Room?) async {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received request to configure device with name \(name) in room: \(String(describing: room))")
+        logger.debug("Configuring device '\(name)' in room: \(String(describing: room?.displayName))")
 
-        // Configure the device with selected attributes.
-        let accessory = <Your_Ecosystem_Accessory_Object>
-        accessory.name = name
-        accessory.roomName = room?.displayName ?? "Room Name Not Available"
+        // Retrieve and configure the newly paired device in your ecosystem;
+        // for example, find the device, set its name or room, apply default configurations, and save information in your database.
+        logger.info("Device '\(name)' successfully configured")
     }
 
     // Override this method to validate the device's credentials.
     override func validateDeviceCredential(_ deviceCredential: MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received request to validate device credential: \(String(describing: deviceCredential))")
+        logger.debug("Validating device credential")
 
-        // Performs verification and attestation checks.
-        var isValid = false
+        // This code snippet skips validation for better readability.
+        // Make sure to replace the following line with actual validation code.
+        let isValid = true
 
         if !isValid {
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Rejecting device credential: \(String(describing: deviceCredential))")
-                throw "Failed to validate device credentials"
+            logger.warning("Device credential validation failed")
+            throw PairingError.invalidCredentials
         } else {
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Confirming device credential: \(String(describing: deviceCredential))")
+            logger.info("Device credential successfully validated")
         }
     }
 
-    // Override this method to select a specific Wi-Fi network.
+    // Override this method to select a specific Wi-Fi network or to ask the Matter framework to select the default WiFi network.
     override func selectWiFiNetwork(from wifiScanResults: [MatterAddDeviceExtensionRequestHandler.WiFiScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received WiFi scan results: \(String(describing: wifiScanResults))")
-        
-        // If your application would like to specify a nondefault Wi-Fi network.
-        var shouldSelectNetwork = true
-        
-        if shouldSelectNetwork {
-            // Return the SSID and credentials known to your application.
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Selecting WiFi network with SSID: \(String(describing: ssid)) Credentials: \(String(describing: credentials))")
-            return .network(ssid: ssid, credentials: credentials)
+        logger.debug("Selecting WiFi network from \(wifiScanResults.count) scan results")
+
+        // Check if a specific network is available.
+        let preferredSSID = "YourPreferredNetwork"
+        let preferredNetwork = wifiScanResults.first { result in
+            result.ssid == preferredSSID && result.security != .open
+        }
+
+        if let network = preferredNetwork {
+            // Use stored credentials or prompt the person for their password.
+            let credentials = "YourSecurePassword"
+            logger.info("Selected specific WiFi network: \(network.ssid)")
+            return .network(ssid: network.ssid, credentials: credentials)
         } else {
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Selecting default WiFi network")
+            // Use the system's default network.
+            logger.info("Using default system WiFi network.")
             return .defaultSystemNetwork
         }
     }
 
-    // Override this method to select a specific Thread network.
+    // Override this method to select a specific Thread network or to ask the Matter framework to select the default Thread network.
     override func selectThreadNetwork(from threadScanResults: [MatterAddDeviceExtensionRequestHandler.ThreadScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation {
-        os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Received Thread scan results: \(String(describing: threadScanResults))")
-        
-        // If your application would like to specify a nondefault Thread network.
-        var shouldSelectNetwork = true
-        
-        if shouldSelectNetwork {
-            // Return `extendedPANID` of the Thread network known to your application.
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Selecting Thread network with extendedPANID: \(String(describing: extendedPANID))")
+        logger.debug("Selecting Thread network from \(threadScanResults.count) scan results")
+
+        // Check if a specific network is available by name.
+        let preferredNetworkName = "HomeThread"
+        let preferredNetwork = threadScanResults.first { result in
+            result.networkName == preferredNetworkName
+        }
+
+        if let network = preferredNetwork, let extendedPANID = network.extendedPANID {
+            logger.info("Selected specific Thread network: \(network.networkName ?? "Unnamed")")
             return .network(extendedPANID: extendedPANID)
         } else {
-            os_log_with_type(OS_LOG_DEFAULT, OS_LOG_TYPE_DEBUG,"Selecting default Thread network")
+            // Use the system's default Thread network.
+            logger.info("Using default system Thread network")
             return .defaultSystemNetwork
-        }        
+        }
     }
 }
 ```
@@ -152,6 +196,16 @@ class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestH
 ##### Set the Principal Class
 
 Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPrincipalClass) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
+
+```None
+<key>NSExtension</key>
+<dict>
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.matter.support.extension.device-setup</string>
+    <key>NSExtensionPrincipalClass</key>
+    <string>$(PRODUCT_MODULE_NAME).MyMatterAddDeviceExtensionRequestHandler</string>
+</dict>
+```
 
 ## See Also
 

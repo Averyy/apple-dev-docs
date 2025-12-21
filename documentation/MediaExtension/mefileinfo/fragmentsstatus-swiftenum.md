@@ -35,9 +35,6 @@ For QuickTime movie and ISO files, it indicates the presence of an `mvex` box, w
   The file is extendable by fragments, but doesn’t contain any fragments.
 ### Initializers
 - [init?(rawValue: Int)](mefileinfo/fragmentsstatus-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](mefileinfo/fragmentsstatus-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](mefileinfo/fragmentsstatus-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

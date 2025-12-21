@@ -21,11 +21,11 @@ func canAddTrackAssociation(withTrackOf input: AVAssetWriterInput, type trackAss
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system can make the association between tracks; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the system can make the association between tracks; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if the association type requires tracks of a media type that doesn’t match the input’s type, or if the output file type doesn’t support track associations.
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) if the association type requires tracks of a media type that doesn’t match the input’s type, or if the output file type doesn’t support track associations.
 
 ## Parameters
 

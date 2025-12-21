@@ -11,12 +11,12 @@ A value you set to specific the position of a badge on the Look Around preview.
 ## Declaration
 
 ```swift
-attribute mapkit.LookAroundPreview.BadgePositions badgePosition;
+badgePosition?: LookAroundBadgePosition;
 ```
 
 ## See Also
 
-- [mapkit.LookAround.BadgePositions](mapkit.lookaround.badgepositions.md)
+- [const LookAroundBadgePosition](lookaroundbadgeposition.md)
   Values that control the positions of a badge on a Look Around preview.
 
 

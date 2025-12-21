@@ -20,26 +20,6 @@ An opaque type that identifies a specific donation to the system.
 struct IntentDonationIdentifier
 ```
 
-## Topics
-
-### Creating an identifier
-- [init(from: any Decoder) throws](intentdonationidentifier/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Encoding the type
-- [func encode(to: any Encoder) throws](intentdonationidentifier/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing identifiers
-- [static func == (IntentDonationIdentifier, IntentDonationIdentifier) -> Bool](intentdonationidentifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentdonationidentifier/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentdonationidentifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentdonationidentifier/equatable-implementations.md)
-
 ## Relationships
 
 ### Conforms To

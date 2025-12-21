@@ -25,7 +25,7 @@ Call [`authorizationStatus(for:)`](avcapturedevice/authorizationstatus(for:).md)
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVAuthorizationStatus.notDetermined](avauthorizationstatus/notdetermined.md)
   A status that indicates the user hasn’t yet granted or denied authorization.
 - [AVAuthorizationStatus.restricted](avauthorizationstatus/restricted.md)

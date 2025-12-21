@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A pointer to the image data in CPU memory to be processed.
+The base address of CPU memory that your Core Image Processor Kernel can read pixels from.
 
 **Availability**:
 - iOS 10.0+
@@ -22,20 +22,16 @@ var baseAddress: UnsafeRawPointer { get }
 
 #### Discussion
 
-Use this property if you plan to process the image using a CPU-based routine that cannot make use of higher-level constructs for sharing memory.
-
-> **Note**:  If your image processing routine is GPU-based, use the the [`pixelBuffer`](ciimageprocessorinput/pixelbuffer.md), [`surface`](ciimageprocessorinput/surface.md), or [`metalTexture`](ciimageprocessorinput/metaltexture.md) property instead.
-
-Do not modify the memory addressed by this pointer.
+> ⚠️ **Warning**: This memory must not be modified by the [`CIImageProcessorKernel`](ciimageprocessorkernel.md).
 
 ## See Also
 
 - [var metalTexture: (any MTLTexture)?](ciimageprocessorinput/metaltexture.md)
-  A Metal texture containing the image data to be processed.
+  A MTLTexture object that can be bound for input using Metal.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessorinput/pixelbuffer.md)
-  A CoreVideo pixel buffer containing the image data to be processed.
+  An input pixel buffer object that your Core Image Processor Kernel can read from.
 - [var surface: IOSurfaceRef](ciimageprocessorinput/surface.md)
-  An IOSurface object containing the image data to be processed.
+  An input surface object that your Core Image Processor Kernel can read from.
 
 
 ---

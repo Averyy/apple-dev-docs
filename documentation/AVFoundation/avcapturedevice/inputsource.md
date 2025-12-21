@@ -20,7 +20,7 @@ A capture device may optionally present an array of input sources that represent
 
 ## Topics
 
-### Accessing Properties
+### Accessing properties
 - [var inputSourceID: String](avcapturedevice/inputsource/inputsourceid.md)
   An identifier for an input source.
 - [var localizedName: String](avcapturedevice/inputsource/localizedname.md)

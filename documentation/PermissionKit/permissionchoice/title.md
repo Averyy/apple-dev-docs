@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: property
 
-The title for this choice that will be displayed to the user by the system.
+The title of the choice that’s displayed to the person by the system.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ var title: String { get set }
 
 ## See Also
 
-- [var id: String](permissionchoice/id-swift.property.md)
+- [var id: String](permissionchoice/id.md)
   A unique identifier for this choice.
 
 

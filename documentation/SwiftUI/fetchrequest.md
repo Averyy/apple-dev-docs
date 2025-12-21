@@ -85,7 +85,7 @@ When you need to dynamically change the predicate or sort descriptors, access th
 
 ## See Also
 
-- [Loading and Displaying a Large Data Feed](loading_and_displaying_a_large_data_feed.md)
+- [Loading and displaying a large data feed](loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [var managedObjectContext: NSManagedObjectContext](environmentvalues/managedobjectcontext.md)
 - [struct FetchedResults](fetchedresults.md)

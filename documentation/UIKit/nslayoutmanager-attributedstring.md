@@ -14,7 +14,7 @@ This property is part of the `NSGlyphStorage` protocol, for use by the glyph gen
   The threshold controlling when hyphenation is done.
 - [layoutOptions](nslayoutmanager-layoutoptions.md)
   The layout manager’s current layout options.
-- [var usesScreenFonts: Bool { get set }](../AppKit/NSLayoutManager/usesScreenFonts.md)
+- [var usesScreenFonts: Bool](../AppKit/NSLayoutManager/usesScreenFonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

@@ -680,20 +680,8 @@ enum SensorsUsage
 - [HIDUsage.SensorsUsage.vendorReserved7](hidusage/sensorsusage/vendorreserved7.md)
 - [HIDUsage.SensorsUsage.vendorReserved8](hidusage/sensorsusage/vendorreserved8.md)
 - [HIDUsage.SensorsUsage.vendorReserved9](hidusage/sensorsusage/vendorreserved9.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/sensorsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/sensorsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.SensorsUsage.RawValue](hidusage/sensorsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/sensorsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/sensorsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/sensorsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

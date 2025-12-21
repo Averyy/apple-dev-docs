@@ -28,7 +28,7 @@ A [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRang
 
 Use the following guidelines when specifying a time range value:
 
-- For live content, return a time range with a duration of [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/1400789-positiveinfinity).
+- For live content, return a time range with a duration of [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity).
 - For nonlive content, return a time range that contains the current time of the sample buffer display layer’s timebase.
 - When there’s no content to play, return [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange/invalid).
 

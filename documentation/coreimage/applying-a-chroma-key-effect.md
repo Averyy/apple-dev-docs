@@ -12,9 +12,9 @@ Use the chroma key effect, also known as bluescreening or greenscreening, to rep
 
 You apply this technique in three steps:
 
-1. Create a cube map for the [`colorCubeFilter`](cifilter-swift.class/colorcubefilter.md) filter to determine which colors to set transparent.
-2. Apply the [`colorCubeFilter`](cifilter-swift.class/colorcubefilter.md) filter to the image to make pixels transparent.
-3. Use the [`sourceOverCompositingFilter`](cifilter-swift.class/sourceovercompositingfilter.md) filter to place the image over the background image.
+1. Create a cube map for the [`colorCube()`](cifilter-swift.class/colorcube().md) filter to determine which colors to set transparent.
+2. Apply the [`colorCube()`](cifilter-swift.class/colorcube().md) filter to the image to make pixels transparent.
+3. Use the [`sourceOverCompositing()`](cifilter-swift.class/sourceovercompositing().md) filter to place the image over the background image.
 
 ##### Create a Cube Map
 
@@ -69,8 +69,8 @@ To create the color cube, iterate across all values of red, green, and blue, ent
 1. Allocate memory. The color cube has three dimensions, each with four elements of data (RGBA).
 2. Use a for-loop to iterate through each color combination of red, green, and blue, simulating a color gradient.
 3. Convert RGB to HSV, as in the `hueFromRed` function. Even though the color cube exists in RGB color space, it’s easier to isolate and remove color based on hue. Input `0` for green hues to indicate complete removal; use `1` for other hues to leave those colors intact. To specify green as a hue value, convert its angle in the hue pie chart to a range of `0` to `1`. The green in the sample image has hue between `0.3` (`108` out of `360` degrees`)` and `0.4` (`144` out of `360` degrees). Your shade of green may differ, so adjust the range accordingly.
-4. The [`colorCubeFilter`](cifilter-swift.class/colorcubefilter.md) filter requires premultiplied alpha values, meaning that the values in the lookup table have their transparency baked into their stored entries rather than applied when accessed.
-5. Create a [`colorCubeFilter`](cifilter-swift.class/colorcubefilter.md) filter with the cube data.
+4. The [`colorCube()`](cifilter-swift.class/colorcube().md) filter requires premultiplied alpha values, meaning that the values in the lookup table have their transparency baked into their stored entries rather than applied when accessed.
+5. Create a [`colorCube()`](cifilter-swift.class/colorcube().md) filter with the cube data.
 
 > **Note**:  The framework doesn’t have built-in direct conversion between color spaces, but you can access the hue of a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) created with RGB values. Create a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) from the raw RGB values and then read the hue from it.
 
@@ -101,7 +101,7 @@ The filter passes through each pixel in the input image, looks up its color in t
 
 ##### Composite Over a Background Image
 
-Chain a [`sourceOverCompositingFilter`](cifilter-swift.class/sourceovercompositingfilter.md) filter to the color cube filter to composite a background image to the greenscreened output. The transparency in the colorcube-filtered image allows the composited background image to show through.
+Chain a [`sourceOverCompositing()`](cifilter-swift.class/sourceovercompositing().md) filter to the color cube filter to composite a background image to the greenscreened output. The transparency in the colorcube-filtered image allows the composited background image to show through.
 
 ```swift
 CIFilter<CICompositeOperation> *compositor = CIFilter.sourceOverCompositingFilter

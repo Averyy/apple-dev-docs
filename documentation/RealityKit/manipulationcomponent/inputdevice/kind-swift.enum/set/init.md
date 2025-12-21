@@ -6,7 +6,7 @@
 Creates a set of input device kinds containing only the specified input device kind.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

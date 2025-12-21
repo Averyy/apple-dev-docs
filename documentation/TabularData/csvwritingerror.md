@@ -31,7 +31,6 @@ enum CSVWritingError
   An error that indicates CSV data contains an invalid UTF-8 byte sequence.
 ### Default Implementations
 - [CustomStringConvertible Implementations](csvwritingerror/customstringconvertible-implementations.md)
-- [Error Implementations](csvwritingerror/error-implementations.md)
 
 ## Relationships
 

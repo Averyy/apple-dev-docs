@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mlrandomforestregressor/description.md)
-  A text representation of the random forest regressor.
-- [var debugDescription: String](mlrandomforestregressor/debugdescription.md)
-  A text representation of the random forest regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrandomforestregressor/playgrounddescription.md)
-  A description of the random forest regressor shown in a playground.
+- [MLRandomForestRegressor.ModelParameters](mlrandomforestregressor/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLRandomForestRegressor.ModelParameters](mlrandomforestregressor/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

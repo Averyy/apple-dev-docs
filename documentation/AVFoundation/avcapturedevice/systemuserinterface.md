@@ -20,7 +20,7 @@ enum SystemUserInterface
 
 ## Topics
 
-### User Interfaces
+### User interfaces
 - [AVCaptureDevice.SystemUserInterface.videoEffects](avcapturedevice/systemuserinterface/videoeffects.md)
   The system user interface for changing the state of video effects.
 - [AVCaptureDevice.SystemUserInterface.microphoneModes](avcapturedevice/systemuserinterface/microphonemodes.md)

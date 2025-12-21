@@ -6,9 +6,9 @@ Tune aspects of attribution flow, including the time available to register impre
 
 #### Overview
 
-AdAttributionKit provides a mechanism to configure the attribution rules that you change in your app by adding and configuring keys in the information property list file.
+AdAttributionKit provides a mechanism to configure the attribution rules that you change in your app by adding and configuring keys in the information property list.
 
-The structure of the AdAttributionKit additions to the information property list file include stanzas that you can use to control the duration of impressions that the system considers eligible for attribution for your app. You can also control the cooldown period — the minimum amount of time that needs to pass between conversions before the system accepts new conversions.
+The structure of the AdAttributionKit additions to the information property list include stanzas that you can use to control the duration of impressions that the system considers eligible for attribution for your app. You can also control the cooldown period — the minimum amount of time that needs to pass between conversions before the system accepts new conversions.
 
 There are two main configuration sections:
 
@@ -19,7 +19,7 @@ Inside each of these sections are additional keys that that tune the behavior of
 
 #### Understand the Adattributionkit Configuration Dictionary
 
-AdAttributionKit uses your app’s information property list file to hold its configuration settings. To enable this configuration, add a new dictionary named `AdAttributionKitConfigurations` to the information property list file.
+AdAttributionKit uses your app’s information property list to hold its configuration settings. To enable this configuration, add a new dictionary named `AdAttributionKitConfigurations` to the information property list.
 
 Inside this dictionary, you place additional dictionaries, or individual keys that control the attribution windows and cooldown periods, depending on your app’s requirements. To create the `AdAttributionKitConfigurations` dictionary, open your app’s Xcode project and follow these steps:
 
@@ -27,7 +27,7 @@ Inside this dictionary, you place additional dictionaries, or individual keys th
 2. Go to the file navigator.
 3. Locate your app’s target, and select its filename.
 4. Click the app’s Info panel.
-5. Click the plus (+) button next to any existing entry to create a new element in the information property list file.
+5. Click the plus (+) button next to any existing entry to create a new element in the information property list.
 6. Set the new element’s name to `AdAttributionKitConfigurations`.
 7. Click the Type menu for the new `AdAttributionKitConfigurations` element, and select `Dictionary` as its type.
 8. Click the disclosure triangle next to the `AdAttributionKitConfigurations` element to open it.
@@ -54,7 +54,7 @@ There are two types of global settings the attribution window settings support: 
 
 To override the built-in, global attribution window settings, follow these steps:
 
-1. Create a new dictionary named `global` inside the `AttributionWindows` dictionary in your app’s information property list file.
+1. Create a new dictionary named `global` inside the `AttributionWindows` dictionary in your app’s information property list.
 2. Inside this dictionary, create another, nested dictionary called `install`. This describes the kind of operation whose window you’re defining.
 3. Inside the `install` dictionary, you can specify numeric values for either `click` or `view` values. The click value determines the number of days that click impressions are valid for your app globally, with a range from `1` to `30` days. The view value determines the number of days that view impressions are valid for your app globally, with a range from  `1` to `7` days. This example shows an XML rendering of a `global` dictionary inside the `AttributionWindows` dictionary that constrains `view` to `3` days:
 
@@ -79,8 +79,8 @@ To override the built-in, global attribution window settings, follow these steps
 
 You can also overwrite attribution windows for your app on a per-ad network basis, giving you more granular control of your app’s attribution windows for each partner you work with. To configure an attribution window for an ad network, follow these steps:
 
-1. Create a new dictionary named `AttributionWindows` inside of the `AdAttributionKitConfigurations` dictionary in your app’s information property list file.
-2. Add additional dictionaries to the `AttributionWindows` dictionary — one per ad network — to control the `click` and `view` windows for that network. These network-specific dictionaries need to have a key name that matches the ad network’s ID (for example, `test.adattributionkit`). For more information on ad network IDs, see [`Registering an ad network`](registering-an-ad-network.md).
+1. Create a new dictionary named `AttributionWindows` inside of the `AdAttributionKitConfigurations` dictionary in your app’s information property list.
+2. Add additional dictionaries to the `AttributionWindows` dictionary — one per ad network — to control the `click` and `view` windows for that network. These network-specific dictionaries need to have a key name that matches the ad network’s ID (for example, `test.adattributionkit`). For more information on ad network IDs, see [`Registering an ad network`](registering-an-ad-network#Share-your-ad-network-ID-with-developers.md).
 3. Inside this dictionary, add an `install` dictionary — following the same steps as for the `global` configuration — to control either the `click` or `view` duration. As with the `global` settings, this `install` dictionary needs to be inside the `AttributionWindows` dictionary.
 
 The time ranges are the same as for the global install dictionary. This example shows an XML rendering of a dictionary for the ad network `test.adattributionkit`, constraining clicks to `23` days:

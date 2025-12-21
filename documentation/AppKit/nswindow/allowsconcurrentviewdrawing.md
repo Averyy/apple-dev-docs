@@ -17,7 +17,7 @@ var allowsConcurrentViewDrawing: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window allows multithreaded view drawing; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window allows multithreaded view drawing; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

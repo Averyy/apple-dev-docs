@@ -14,6 +14,10 @@ Returns by indirection the pixel data for the specified location in the bitmap i
 func getPixel(_ p: UnsafeMutablePointer<Int>, atX x: Int, y: Int)
 ```
 
+#### Discussion
+
+The origin is in the top-left corner.
+
 ## Parameters
 
 - `p`: On return, an array of integers containing raw pixel data in the appropriate order according to the object’s bitmap format. Smaller integer samples, such as 4-bit, are returned as an integer. Floating point values are cast to integer values and returned.

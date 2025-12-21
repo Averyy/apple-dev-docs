@@ -21,6 +21,7 @@ protocol UITraitChangeObservable
 
 ## Mentions
 
+- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 
 #### Overview
@@ -45,6 +46,51 @@ UIKit cleans up registrations at the end of the object lifecycle. Unregister onl
 - [UITraitChangeObservable.TraitChangeHandler](uitraitchangeobservable-67e94/traitchangehandler.md)
   A closure the system executes when observed traits change.
 - [protocol UITraitChangeRegistration](uitraitchangeregistration.md)
+### Registering traits for observation
+- [struct UITraitAccessibilityContrast](uitraitaccessibilitycontrast-swift.struct.md)
+  A struct that represents the accessibility contrast setting trait.
+- [struct UITraitActiveAppearance](uitraitactiveappearance-swift.struct.md)
+  A struct that represents the active appearance trait.
+- [struct UITraitDisplayGamut](uitraitdisplaygamut-swift.struct.md)
+  A struct that represents the display gamut trait.
+- [struct UITraitDisplayScale](uitraitdisplayscale-swift.struct.md)
+  A struct that represents the display scale trait.
+- [struct UITraitForceTouchCapability](uitraitforcetouchcapability-swift.struct.md)
+  A struct that represents the Force Touch capability trait.
+- [struct UITraitHDRHeadroomUsageLimit](uitraithdrheadroomusagelimit-swift.struct.md)
+  A struct that represents the HDR headroom usage limit trait.
+- [struct UITraitHorizontalSizeClass](uitraithorizontalsizeclass-swift.struct.md)
+  A struct that represents the horizontal size class trait.
+- [struct UITraitImageDynamicRange](uitraitimagedynamicrange-swift.struct.md)
+  A struct that represents the image dynamic range trait.
+- [struct UITraitLayoutDirection](uitraitlayoutdirection-swift.struct.md)
+  A struct that represents the layout direction trait.
+- [struct UITraitLegibilityWeight](uitraitlegibilityweight-swift.struct.md)
+  A struct that represents the legibility weight trait.
+- [struct UITraitListEnvironment](uitraitlistenvironment-swift.struct.md)
+  A struct that represents the list environment trait.
+- [struct UITraitPreferredContentSizeCategory](uitraitpreferredcontentsizecategory-swift.struct.md)
+  A struct that represents the preferred content size category trait.
+- [struct UITraitResolvesNaturalAlignmentWithBaseWritingDirection](uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
+  A struct that represents the trait that indicates whether the system resolves natural alignment with base writing direction.
+- [struct UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)
+  A struct that represents the scene capture state trait.
+- [struct UITraitSplitViewControllerLayoutEnvironment](uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
+  A struct that represents the split view controller layout environment trait.
+- [struct UITraitTabAccessoryEnvironment](uitraittabaccessoryenvironment-swift.struct.md)
+  A struct that represents tab accessory environment trait.
+- [struct UITraitToolbarItemPresentationSize](uitraittoolbaritempresentationsize-swift.struct.md)
+  A struct that represents the toolbar item presentation size trait.
+- [struct UITraitTypesettingLanguage](uitraittypesettinglanguage-swift.struct.md)
+  A struct that represents the typesetting language trait.
+- [struct UITraitUserInterfaceIdiom](uitraituserinterfaceidiom-swift.struct.md)
+  A struct that represents the user interface idiom trait.
+- [struct UITraitUserInterfaceLevel](uitraituserinterfacelevel-swift.struct.md)
+  A struct that represents the user interface level trait.
+- [struct UITraitUserInterfaceStyle](uitraituserinterfacestyle-swift.struct.md)
+  A struct that represents the user interface style trait.
+- [struct UITraitVerticalSizeClass](uitraitverticalsizeclass-swift.struct.md)
+  A struct that represents the vertical size class trait.
 
 ## Relationships
 
@@ -128,8 +174,6 @@ UIKit cleans up registrations at the end of the object lifecycle. Unregister onl
 
 - [Automatic trait tracking](automatic-trait-tracking.md)
   Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-  Change images and resources dynamically when the screen gamut on your device changes.
 - [class UITraitCollection](uitraitcollection.md)
   A collection of data that represents the environment for an individual element in your app’s user interface.
 - [protocol UITraitEnvironment](uitraitenvironment.md)

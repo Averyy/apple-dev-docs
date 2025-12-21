@@ -52,7 +52,7 @@ The Xcode build system manages the tools that transform your code and resource f
   Discover who signed a framework, and take action when that changes.
 - [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
 - [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
   Reduce the opportunities to treat pointers as data in your code.
@@ -64,9 +64,11 @@ The Xcode build system manages the tools that transform your code and resource f
 - [Projects and workspaces](projects-and-workspaces.md)
   Manage the code and resources you use to build apps, libraries, and other software for Apple platforms.
 - [Source control management](source-control-management.md)
-  Back up your files, collaborate with others, and tag your releases with source control support in Xcode.
+  Back up your files, collaborate with others, and tag your releases with Git source control support in Xcode.
 - [Capabilities](capabilities.md)
   Enable services that Apple provides, such as In-App Purchase, Push Notifications, Apple Pay, iCloud, and many others.
+- [Command-line tools](command-line-tools.md)
+  Develop and customize your projects in Terminal.
 
 
 ---

@@ -93,6 +93,15 @@ Key-value pairs that grant an executable access to secure resources, or enable h
   An integer value that indicates the level of additional runtime security protections your app or extension opts in to.
 - [Enable Read-Only Platform Memory](entitlements/com.apple.security.hardened-process.dyld-ro.md)
   An entitlement that marks memory used for internal platform state as read-only.
+### Hardware memory tagging
+- [Enable Hardware Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.md)
+  A Boolean value that enables tagging of pointers and memory allocations.
+- [Enable Soft Mode for Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
+  A Boolean value that indicates whether to log memory-tagging faults as a simulated crash, instead of terminating the process.
+- [Memory Tag Pure Data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
+  A Boolean value that indicates whether to tag memory that contains only data.
+- [Prevent Receiving Tagged Memory](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
+  A Boolean value that indicates whether to prevent receiving tagged memory from other processes.
 ### Application groups
 - [App Groups Entitlement](entitlements/com.apple.security.application-groups.md)
   A list of identifiers specifying the groups your app belongs to.

@@ -22,7 +22,7 @@ func setDefaultNTPWith(_ params: MTRTimeSynchronizationClusterSetDefaultNTPParam
 
 #### Discussion
 
-This command is used to set DefaultNTP.
+This command is used to set the DefaultNTP attribute.
 
 
 ---

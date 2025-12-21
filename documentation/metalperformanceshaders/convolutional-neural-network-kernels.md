@@ -9,11 +9,11 @@ Build neural networks with layers.
 - Think carefully about the edge mode requested for pooling layers. The default value is [`MPSImageEdgeMode.zero`](mpsimageedgemode/zero.md), but there are times when a [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) value may be better.
 - To avoid reading off the edge of an image for filters that have a filter area (convolution, pooling), set `MPSCNNKernel.offset = (MPSOffset){ .x = kernelWidth/2, .y = kernelHeight/2, .z = 0}` and reduce the size of the output image by `{kernelWidth-1, kernelHeight-1, 0}`. The filter area stretches up and to the left of the kernel offset by `{kernelWidth/2, kernelHeight/2}`.
 - Always remember the following distinction:
-- The [`MPSCNNConvolution`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnconvolution) class takes weights in the order `weight[outputChannels][kernelHeight][kernelWidth][inputChannels/groups]`.
-- The [`MPSCNNFullyConnected`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnfullyconnected) class takes weights in the order `weight[outputChannels][sourceWidth][sourceHeight][inputChannels]`.
-- Initialize [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) objects once and reuse them.
-- You can use [`MPSCNNNeuron`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnneuron) objects and similar to perform pre-processing of images, such as scaling and resizing.
-- Specify a neuron filter with an [`MPSCNNConvolutionDescriptor`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnconvolutiondescriptor) object to combine the convolution and neuron operations.
+- The [`MPSCNNConvolution`](mpscnnconvolution.md) class takes weights in the order `weight[outputChannels][kernelHeight][kernelWidth][inputChannels/groups]`.
+- The [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) class takes weights in the order `weight[outputChannels][sourceWidth][sourceHeight][inputChannels]`.
+- Initialize [`MPSCNNKernel`](mpscnnkernel.md) objects once and reuse them.
+- You can use [`MPSCNNNeuron`](mpscnnneuron.md) objects and similar to perform pre-processing of images, such as scaling and resizing.
+- Specify a neuron filter with an [`MPSCNNConvolutionDescriptor`](mpscnnconvolutiondescriptor.md) object to combine the convolution and neuron operations.
 - Use [`MPSTemporaryImage`](mpstemporaryimage.md) objects for intermediate images that live for a short period of time (one [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object).
 
 [`MPSTemporaryImage`](mpstemporaryimage.md) objects can reduce the amount of memory used by the CNN by several folds, and similarly reduce the amount of CPU time spent allocating storage and latency between the time a command buffer is committed and when it is actually executed on the GPU.
@@ -22,7 +22,7 @@ You cannot read or write to a [`MPSTemporaryImage`](mpstemporaryimage.md) object
 
 Please be sure to understand the purpose of the [`readCount`](mpstemporaryimage/readcount.md) property.
 
-- Because the Metal Performance Shaders framework encodes its work in place in your command buffer, you always have the option to insert your own code in between [`MPSCNNKernel`](https://developer.apple.comhttps://developer.apple.com/reference/metalperformanceshaders/mpscnnkernel) encodings as a Metal function for tasks not covered by the framework. You do not need to use the Metal Performance Shaders framework for everything.
+- Because the Metal Performance Shaders framework encodes its work in place in your command buffer, you always have the option to insert your own code in between [`MPSCNNKernel`](mpscnnkernel.md) encodings as a Metal function for tasks not covered by the framework. You do not need to use the Metal Performance Shaders framework for everything.
 
 ## Topics
 

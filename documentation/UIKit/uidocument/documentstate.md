@@ -14,7 +14,6 @@ The current state of the document.
 ## Declaration
 
 ```swift
-@MainActor
 var documentState: UIDocument.State { get }
 ```
 

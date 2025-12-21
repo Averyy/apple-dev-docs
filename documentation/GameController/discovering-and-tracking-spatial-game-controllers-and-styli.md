@@ -15,7 +15,7 @@ To begin developing with spatial game controllers, you need to configure your Xc
 1. In Xcode, select your project in Xcode’s project navigator.
 2. Select your project’s target.
 3. Click the Signing & Capabilities tab in the project editor.
-4. Add the Game Controller capabilitiy.
+4. Add the Game Controller capability.
 5. Select the Spatial Gamepad profile.
 
 > **Note**: You don’t need to enable the Spatial Gamepad profile if your app only supports stylus input.
@@ -74,7 +74,7 @@ For information on polling for input and receiving callbacks, see [`Handling inp
 
 In [`RealityKit`](https://developer.apple.com/documentation/RealityKit), an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) provides a way to tether virtual content to physical locations or objects in your real work space. For example, an image in your environment, your hands, or a spatial game controller. On visionOS, accessory anchoring works in immersive and shared spaces.
 
-Use [`AnchoringComponent.AccessoryAnchoringSource`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource) with a [`GCController`](gccontroller.md) or [`GCStylus`](gcstylus.md) to anchor virtual content onto the accessory. Each controller and stylus accessory has a list of possible locations you can anchor to, and depends on the accessory you use. You can anchor virtual content to a location on the accessory by specifying an [`AnchoringComponent.AccessoryLocationName`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryLocationName) from a list of possible [`accessoryLocationNames`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource/accessoryLocationNames).
+Use [`AnchoringComponent.AccessoryAnchoringSource`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource) with a [`GCController`](gccontroller.md) or [`GCStylus`](gcstylus.md) to anchor virtual content onto the accessory. Each controller and stylus accessory has a list of possible locations you can anchor to, and depends on the accessory you use. You can anchor virtual content to a location on the accessory by specifying a [`name`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryLocation/name) from a list of possible [`accessoryLocations`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource/accessoryLocations).
 
 ```swift
 let device = // A connected controller or stylus.
@@ -91,7 +91,7 @@ guard let source = try await AnchoringComponent.AccessoryAnchoringSource(device:
 }
 ```
 
-For apps that don’t depend on high location accuracy, use the [`predicted`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-1qdav/predicted) tracking mode. If you need higher location accuracy — at the cost of higher latency — use [`continuous`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-1qdav/continuous) tracking mode.
+For apps that don’t depend on high location accuracy, use the [`predicted`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/predicted) tracking mode. If you need higher location accuracy — at the cost of higher latency — use [`continuous`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/continuous) tracking mode.
 
 Before using [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) to get the transforms of a spatial game controller, your app needs request permission to track an accessory. Set [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAccessoryTrackingUsageDescription) in your app’s `Info.plist` file that explains how your app intends to use tracking information.
 
@@ -105,7 +105,7 @@ await session.run(configuration)
 let aimTransform = aimEntity.transformMatrix(relativeTo: nil)
 ```
 
-If you use [`ARKit`](https://developer.apple.com/documentation/ARKit), tracking works similarily to the object and image tracking APIs. For more information about tracking accessories, see [`Tracking accessories in volumetric windows`](https://developer.apple.com/documentation/ARKit/tracking-accessories-in-volumetric-windows).
+If you use [`ARKit`](https://developer.apple.com/documentation/ARKit), tracking works similarly to the object and image tracking APIs. For more information about tracking accessories, see [`Tracking accessories in volumetric windows`](https://developer.apple.com/documentation/ARKit/tracking-accessories-in-volumetric-windows).
 
 ## See Also
 

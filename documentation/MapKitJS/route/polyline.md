@@ -11,7 +11,7 @@ An instance of a polyline overlay that represents the path of a route.
 ## Declaration
 
 ```swift
-attribute mapkit.PolylineOverlay polyline;
+get polyline(): PolylineOverlay;
 ```
 
 ## Mentions

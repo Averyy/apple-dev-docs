@@ -34,14 +34,6 @@ struct JointsSelector
 ### Performing the selector
 - [func applied(to: Pose, eventHandler: EventHandler?) -> Pose](jointsselector/applied(to:eventhandler:).md)
   Select joints to be included in the pose. Ignored joints will be reset to zero in all fields.
-### Type Aliases
-- [JointsSelector.Input](jointsselector/input.md)
-  The input type.
-- [JointsSelector.Output](jointsselector/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](jointsselector/customdebugstringconvertible-implementations.md)
-- [Transformer Implementations](jointsselector/transformer-implementations.md)
 
 ## Relationships
 
@@ -54,7 +46,7 @@ struct JointsSelector
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

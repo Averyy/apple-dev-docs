@@ -22,7 +22,7 @@ var animatesDrop: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the map view animates the appearance of pin annotation views by making them appear to drop onto the map at the target point. This animation occurs whenever the view transitions from offscreen to onscreen.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the appearance of pin annotation views by making them appear to drop onto the map at the target point. This animation occurs whenever the view transitions from offscreen to onscreen.
 
 ## See Also
 

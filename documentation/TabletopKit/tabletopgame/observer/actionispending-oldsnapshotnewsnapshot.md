@@ -23,6 +23,8 @@ func actionIsPending(_ action: some TabletopAction, oldSnapshot: TableSnapshot, 
   Called once for each action which passed validation in the update in which it is confirmed as a part of the shared network table state. All players in a network session are guaranteed to observe the same sequence of `actionWasConfirmed` and `actionWasRolledBack` callbacks. In a network session, these callbacks are delayed behind `actionIsPending` callbacks by approximately a network round trip time.
 - [func actionWasRolledBack(some TabletopAction, snapshot: TableSnapshot)](tabletopgame/observer/actionwasrolledback(_:snapshot:).md)
   Called once for each action which failed validation in the update in which it failed to be confirmed as a part of the shared network table state.
+- [func actionWasDiscarded(some TabletopAction)](tabletopgame/observer/actionwasdiscarded(_:).md)
+  Called once for every local action that is discarded because there is insufficient space to enqueue and become pending. Every local action will, in order, generate either an `actionIsPending` or `actionWasDiscarded` callback in the next update after it was added.
 
 
 ---

@@ -1,4 +1,4 @@
-# Compute Passes
+# Compute passes
 
 **Framework**: Metal
 
@@ -8,7 +8,7 @@ Encode a compute pass that runs computations in parallel on a thread grid, proce
 
 Your app can perform large-scale computation or prepare data for a subsequent GPU pass by encoding a compute pass that works on Metal resources in parallel. Compute passes are the part of your Metal pipeline meant for heavy parallelization of tasks requiring fast math, such as ray tracing.
 
-Encode commands for your compute pass by creating a [`MTLCommandBuffer`](mtlcommandbuffer.md) and using it to create a new compute command encoder, using a method like [`makeComputeCommandEncoder()`](mtlcommandbuffer/makecomputecommandencoder().md) or [`makeComputeCommandEncoder(descriptor:)`](mtlcommandbuffer/makecomputecommandencoder(descriptor:).md). Add individual dispatches for functions and their data to the compute pass by calling the command encoder’s methods. At the end of assigning data and dispatching a function call to the encoder, create a command that runs in your compute pass with [`endEncoding()`](mtlcommandencoder/endencoding().md).
+Encode commands for your compute pass by creating an [`MTLCommandBuffer`](mtlcommandbuffer.md) and using it to create a new compute command encoder, using a method like [`makeComputeCommandEncoder()`](mtlcommandbuffer/makecomputecommandencoder().md) or [`makeComputeCommandEncoder(descriptor:)`](mtlcommandbuffer/makecomputecommandencoder(descriptor:).md). Add individual dispatches for functions and their data to the compute pass by calling the command encoder’s methods. At the end of assigning data and dispatching a function call to the encoder, create a command that runs in your compute pass with [`endEncoding()`](mtlcommandencoder/endencoding().md).
 
 > **Note**:  Everything used to set up your compute pass is CPU thread-safe, except for [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md). Synchronize [`MTLResource`](mtlresource.md) instances you share between the CPU and GPU with an [`MTLFence`](mtlfence.md), an [`MTLEvent`](mtlevent.md), or a completion callback.
 
@@ -16,7 +16,7 @@ For information on dispatching commands to encode, see the [`MTLComputeCommandEn
 
 The following two samples demonstrate basic compute passes:
 
-- See [`Performing Calculations on a GPU`](performing-calculations-on-a-gpu.md) for an example of configuring and running a compute pass that performs basic parallel math.
+- See [`Performing calculations on a GPU`](performing-calculations-on-a-gpu.md) for an example of configuring and running a compute pass that performs basic parallel math.
 - See [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md) for an example of using a compute pass to modify data for a render pass.
 
 ##### Kernel Arguments and Argument Tables
@@ -32,14 +32,14 @@ In addition, kernels also use a function table to take advantage of function poi
 For more information on function stitching, dynamic libraries, and ray tracing, see:
 
 - [`Customizing shaders using function pointers and stitching`](customizing-shaders-using-function-pointers-and-stitching.md)
-- [`Creating a Metal Dynamic Library`](creating-a-metal-dynamic-library.md)
-- [`Ray Tracing with Acceleration Structures`](ray-tracing-with-acceleration-structures.md)
+- [`Creating a Metal dynamic library`](creating-a-metal-dynamic-library.md)
+- [`Ray tracing with acceleration structures`](ray-tracing-with-acceleration-structures.md)
 
 For information on per-architecture support for function tables in compute passes and other restrictions, see the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
 ##### Argument Buffers and Memory Residency
 
-Compute kernels can access argument data to populate a Metal structure, using an [`MTLBuffer`](mtlbuffer.md) created by an [`MTLArgumentEncoder`](mtlargumentencoder.md). For an in-depth discussion of argument buffers, see [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md). Using a resource in an argument buffer requires that it’s resident in GPU memory for the duration of the pass. For a resource to be resident, allocate it with either the [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md) mode.
+Compute kernels can access argument data to populate a Metal structure, using an [`MTLBuffer`](mtlbuffer.md) created by an [`MTLArgumentEncoder`](mtlargumentencoder.md). For an in-depth discussion of argument buffers, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md). Using a resource in an argument buffer requires that it’s resident in GPU memory for the duration of the pass. For a resource to be resident, allocate it with either the [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md) mode.
 
 Resources become resident on a per-instance basis by calling methods like [`useResource(_:usage:)`](mtlcomputecommandencoder/useresource(_:usage:).md) and heaps become resident by calling methods like [`useHeap(_:)`](mtlcomputecommandencoder/useheap(_:).md).
 
@@ -65,20 +65,20 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 ## Topics
 
 ### Essentials
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 - [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
-### Encoding a Compute Pass
-- [Creating Threads and Threadgroups](creating-threads-and-threadgroups.md)
+### Encoding a compute pass
+- [Creating threads and threadgroups](creating-threads-and-threadgroups.md)
   Learn how Metal organizes compute-processing workloads.
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Calculating threadgroup and grid sizes](calculating-threadgroup-and-grid-sizes.md)
   Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
 - [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
-  Encodes a compute pass and other memory operations into a command buffer.
+  Encodes computation dispatches, resource copying commands, and acceleration structure building commands for a single pass into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
-  An interface for dispatching commands to encode in a compute pass.
-### Configuring a Compute Pipeline State
+  Encodes computation dispatch commands for a single compute pass into a command buffer.
+### Configuring a compute pipeline state
 - [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
   Describes a compute pipeline state.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
@@ -88,12 +88,12 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [struct MTLPipelineOption](mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
-### Configuring a Compute Pass
+### Configuring a compute pass
 - [class MTLComputePassDescriptor](mtlcomputepassdescriptor.md)
   A description of how to dispatch execution of pass commands and GPU performance sampling.
 - [enum MTLDispatchType](mtldispatchtype.md)
@@ -107,15 +107,15 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 
 ## See Also
 
-- [Render Passes](render-passes.md)
+- [Render passes](render-passes.md)
   Encode a render pass to draw graphics into an image.
-- [Machine-Learning Passes](machine-learning-passes.md)
+- [Machine-learning passes](machine-learning-passes.md)
   Add machine-learning model inference to your Metal app’s GPU workflow.
-- [Blit Passes](blit-passes.md)
+- [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
-- [Indirect Command Encoding](indirect-command-encoding.md)
+- [Indirect command encoding](indirect-command-encoding.md)
   Store draw commands in Metal buffers and run them at a later time on the GPU, either once or repeatedly.
-- [Ray Tracing with Acceleration Structures](ray-tracing-with-acceleration-structures.md)
+- [Ray tracing with acceleration structures](ray-tracing-with-acceleration-structures.md)
   Build a representation of your scene’s geometry using triangles and bounding volumes to quickly trace rays through the scene.
 
 

@@ -30,16 +30,6 @@ struct ImageCropper
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) throws -> CIImage](imagecropper/applied(to:eventhandler:).md)
   Perform the image crop operation on the input pixelBuffer.
-### Type Aliases
-- [ImageCropper.Input](imagecropper/input.md)
-  The input type.
-- [ImageCropper.Output](imagecropper/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](imagecropper/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](imagecropper/decodable-implementations.md)
-- [Encodable Implementations](imagecropper/encodable-implementations.md)
-- [Transformer Implementations](imagecropper/transformer-implementations.md)
 
 ## Relationships
 

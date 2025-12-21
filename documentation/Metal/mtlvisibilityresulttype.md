@@ -6,12 +6,12 @@
 This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -46,9 +46,9 @@ You can specify this property for `MTLRenderCommandEncoders` and for `MTL4Render
 ## See Also
 
 - [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
-  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
-  An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)

@@ -6,8 +6,8 @@
 A structure that represents file transfer content in an RCS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -28,20 +28,10 @@ When sending a file to a recipient, you use the [`RCSService`](rcsservice.md) to
 - [struct RCSFileTransferMetadata](rcsfiletransfermetadata.md)
   A structure that contains metadata about an RCS file transfer.
 ### Accessing file transfer properties
-- [let fileMetadata: RCSFileTransferMetadata](rcsmessage/filetransfer/filemetadata.md)
+- [var fileMetadata: RCSFileTransferMetadata](rcsmessage/filetransfer/filemetadata.md)
   Metadata for the transferred file.
-- [let thumbnailMetadata: RCSFileTransferMetadata?](rcsmessage/filetransfer/thumbnailmetadata.md)
+- [var thumbnailMetadata: RCSFileTransferMetadata?](rcsmessage/filetransfer/thumbnailmetadata.md)
   Metadata for the transferred thumbnail.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/filetransfer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsmessage/filetransfer/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing file transfer instances
-- [static func == (RCSMessage.FileTransfer, RCSMessage.FileTransfer) -> Bool](rcsmessage/filetransfer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/filetransfer/equatable-implementations.md)
 
 ## Relationships
 

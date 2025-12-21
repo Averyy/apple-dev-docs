@@ -24,8 +24,6 @@ Develop your system extension with Endpoint Security and package it in an app th
   A type used by Endpoint Security to notify your client when a monitored action occurs.
 - [Event Types](event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
-- [Monitoring System Events with Endpoint Security](monitoring-system-events-with-endpoint-security.md)
-  Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 ### Entitlements
 - [com.apple.developer.endpoint-security.client](../BundleResources/Entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.
@@ -99,6 +97,9 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_TCC_IDENTITY_TYPE_EXECUTABLE_PATH: es_tcc_identity_type_t](es_tcc_identity_type_executable_path.md)
 - [var ES_TCC_IDENTITY_TYPE_FILE_PROVIDER_DOMAIN_ID: es_tcc_identity_type_t](es_tcc_identity_type_file_provider_domain_id.md)
 - [var ES_TCC_IDENTITY_TYPE_POLICY_ID: es_tcc_identity_type_t](es_tcc_identity_type_policy_id.md)
+### Type Aliases
+- [typealias es_statfs_t](es_statfs_t.md)
+  This typedef is no longer used, but exists for API backwards compatibility.
 
 
 ---

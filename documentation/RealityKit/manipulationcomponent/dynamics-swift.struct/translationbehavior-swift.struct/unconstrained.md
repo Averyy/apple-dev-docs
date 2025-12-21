@@ -6,7 +6,7 @@
 Rotation is unconstrained in all axes.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

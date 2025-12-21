@@ -22,30 +22,24 @@ struct CollectByCount<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Collect by Count Publisher
+### Creating a collect by count publisher
 - [init(upstream: Upstream, count: Int)](publishers/collectbycount/init(upstream:count:).md)
   Creates a publisher that buffers a maximum number of items.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.CollectByCount.Output](publishers/collectbycount/output.md)
   The kind of values published by this publisher.
 - [Publishers.CollectByCount.Failure](publishers/collectbycount/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/collectbycount/upstream.md)
   The publisher that this publisher receives elements from.
 - [let count: Int](publishers/collectbycount/count.md)
   The maximum number of received elements to buffer before publishing.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.CollectByCount<Upstream>, Publishers.CollectByCount<Upstream>) -> Bool](publishers/collectbycount/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/collectbycount/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-collectbycount-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/collectbycount/equatable-implementations.md)
-- [Publisher Implementations](publishers/collectbycount/publisher-implementations.md)
 
 ## Relationships
 

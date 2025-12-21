@@ -16,7 +16,7 @@ var canInsertChild: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if a child object can be inserted into the tree controller’s content. This property is observable using key-value observing.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if a child object can be inserted into the tree controller’s content. This property is observable using key-value observing.
 
 ## See Also
 

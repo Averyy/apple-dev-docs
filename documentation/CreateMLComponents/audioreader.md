@@ -37,22 +37,13 @@ struct AudioReader
 ### Reading audio
 - [static func read(contentsOf: URL, configuration: AudioReader.Configuration) throws -> AudioReader.AsyncBuffers](audioreader/read(contentsof:configuration:).md)
   Reads an audio file as an async sequence of audio buffers.
-- [static func read<S>(S, configuration: AudioReader.Configuration) throws -> [AudioReader.AsyncBuffers]](audioreader/read(_:configuration:)-3nyda.md)
-  Reads a sequence of files as an array of async sequences of audio buffers.
-- [static func read<S, Annotation>(S, configuration: AudioReader.Configuration) throws -> [AnnotatedFeature<AudioReader.AsyncBuffers, Annotation>]](audioreader/read(_:configuration:)-4wma1.md)
+- [static read(_:configuration:)](audioreader/read(_:configuration:).md)
   Reads a sequence of annotated files as a lazy sequence of results each containing an audio buffers or an error.
 - [static func readMicrophone(configuration: AudioReader.Configuration) async throws -> AudioReader.MicrophoneAsyncBuffers](audioreader/readmicrophone(configuration:).md)
   Reads an async sequence of audio frames captured with a microphone.
 ### Applying
 - [func applied(to: URL, eventHandler: EventHandler?) throws -> AudioReader.AsyncBuffers](audioreader/applied(to:eventhandler:).md)
   Reads an audio file as an async sequence of audio buffers.
-### Type Aliases
-- [AudioReader.Input](audioreader/input.md)
-  The input type.
-- [AudioReader.Output](audioreader/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](audioreader/transformer-implementations.md)
 
 ## Relationships
 

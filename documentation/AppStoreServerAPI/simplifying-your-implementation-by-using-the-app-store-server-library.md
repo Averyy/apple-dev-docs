@@ -15,12 +15,12 @@ The App Store Server Library is an open source library from Apple, available in 
 
 Choose the language that best supports your server and expertise.
 
-The App Store Server Library offers four key capabilities:
+The App Store Server Library offers the following capabilities:
 
 - An API client that encodes [`App Store Server API`](AppStoreServerAPI.md) requests, decodes the responses, and creates the JSON Web Token (JWT) you use to authenticate the calls. For more information on using JWTs, see [`Generating JSON Web Tokens for API requests`](generating-json-web-tokens-for-api-requests.md).
 - Functions that verify JWS transactions, to verify that Apple signed the transaction data you get in API responses, from [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) and from devices using [`StoreKit`](https://developer.apple.com/documentation/StoreKit). See the functions `verifyAndDecodeTransaction`, `verifyAndDecodeAppTransaction`, and `verifyAndDecodeRenewalInfo`, available in each language the library supports.
-- A utility that extracts transaction identifiers from receipts. The App Store Server API endpoints take a transaction identifier in the path parameter. Use this utility as you migrate from using [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) with [`App Store Receipts`](https://developer.apple.com/documentation/appstorereceipts) to using the App Store Server API for transaction information.
-- A function that generates signatures for subscription promotional offers. For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
+- A utility that extracts transaction identifiers from receipts. The App Store Server API endpoints take a transaction identifier in the path parameter. Use this utility as you migrate from using [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) with [`App Store Receipts`](https://developer.apple.com/documentation/AppStoreReceipts) to using the App Store Server API for transaction information.
+- A function that generates JWS signatures, which you use in your app for promotional offer signatures, Advanced Commerce API in-app requests, and introductory offer eligibility. For more information, see [`Generating JWS to sign App Store requests`](https://developer.apple.com/documentation/StoreKit/generating-jws-to-sign-app-store-requests).
 
 For more information, see the WWDC23 session [`Meet the App Store Server Library`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10143/).
 

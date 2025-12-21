@@ -17,6 +17,8 @@ void IOLockUnlock(struct IOLock * lock);
 
 #### Discussion
 
+Unlock a mutex.
+
 Unlock the mutex and wake any blocked waiters. Results are undefined if the caller has not locked the mutex.
 
 ## Parameters

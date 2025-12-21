@@ -19,19 +19,6 @@ The alpha channel.
 var alpha: Double
 ```
 
-## See Also
-
-- [var blue: Double](mtlclearcolor/blue.md)
-  The blue color channel.
-- [var green: Double](mtlclearcolor/green.md)
-  The green color channel.
-- [var red: Double](mtlclearcolor/red.md)
-  The red color channel.
-- [var green: Double](mtlclearcolor/green.md)
-  The green color channel.
-- [var blue: Double](mtlclearcolor/blue.md)
-  The blue color channel.
-
 
 ---
 

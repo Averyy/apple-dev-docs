@@ -6,8 +6,8 @@
 The texture usage value used when creating the tracking areas textures for the layer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

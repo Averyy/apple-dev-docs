@@ -24,8 +24,6 @@ var debugDescription: String { get }
 
 - [var description: String](columnslice/description.md)
   A text representation of the column slice.
-- [func description(options: FormattingOptions) -> String](columnslice/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](columnslice/custommirror.md)
   A mirror that reflects the column slice.
 

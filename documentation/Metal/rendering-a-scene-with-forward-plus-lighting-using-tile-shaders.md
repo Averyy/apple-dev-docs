@@ -1,4 +1,4 @@
-# Rendering a Scene with Forward Plus Lighting Using Tile Shaders
+# Rendering a scene with forward plus lighting using tile shaders
 
 **Framework**: Metal
 
@@ -23,13 +23,13 @@ To run the app:
 
 ## See Also
 
-- [Rendering a Scene with Deferred Lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
+- [Rendering a scene with deferred lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
+- [Rendering a scene with deferred lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
+- [Rendering a scene with deferred lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering Reflections with Fewer Render Passes](rendering-reflections-with-fewer-render-passes.md)
+- [Rendering reflections with fewer render passes](rendering-reflections-with-fewer-render-passes.md)
   Use layer selection to reduce the number of render passes needed to generate an environment map.
 
 

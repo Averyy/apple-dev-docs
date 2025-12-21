@@ -21,7 +21,7 @@ var timestamp: CFTimeInterval { get }
 
 ## Mentions
 
-- [Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro](optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 #### Discussion
 

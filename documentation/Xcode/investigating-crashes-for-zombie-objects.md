@@ -10,7 +10,7 @@ Once an Objective-C or Swift object no longer has any strong references to it, t
 
 ##### Determine Whether a Crash Report Has Signs of a Zombie
 
-The Objective-C runtime can’t message objects deallocated from memory, so crashes often occur in the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend), `objc_retain`, or `objc_release` functions. For example, a crash where the Objective-C runtime can’t send a message to the deallocated object looks like this:
+The Objective-C runtime can’t message objects deallocated from memory, so crashes often occur in the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` functions. For example, a crash where the Objective-C runtime can’t send a message to the deallocated object looks like this:
 
 ```other
 Thread 0 Crashed:

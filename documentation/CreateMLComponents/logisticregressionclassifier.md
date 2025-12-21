@@ -33,10 +33,10 @@ struct LogisticRegressionClassifier<Scalar, Label> where Scalar : MLShapedArrayS
 - [var labels: Set<Label>](logisticregressionclassifier/labels.md)
   The set of possible labels.
 ### Encoding and decoding
-- [func encode(LogisticRegressionClassifierModel<Scalar, Label>, to: inout any EstimatorEncoder) throws](logisticregressionclassifier/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifierModel<Scalar, Label>](logisticregressionclassifier/decode(from:).md)
-  Decodes a previously fitted transformer.
+- [func encodeWithOptimizer(LogisticRegressionClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](logisticregressionclassifier/encodewithoptimizer(_:to:).md)
+  Encodes the transformer and optimizer to an encoder.
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/decodewithoptimizer(from:).md)
+  Reads the encoded transformer and optimizer with a decoder.
 ### Fitting
 - [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/fitted(to:eventhandler:).md)
   Fits a logistic regression classifier model to a sequence of examples while validating with a validation sequence.
@@ -47,7 +47,6 @@ struct LogisticRegressionClassifier<Scalar, Label> where Scalar : MLShapedArrayS
 - [LogisticRegressionClassifier.Transformer](logisticregressionclassifier/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [SupervisedEstimator Implementations](logisticregressionclassifier/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](logisticregressionclassifier/updatablesupervisedestimator-implementations.md)
 
 ## Relationships

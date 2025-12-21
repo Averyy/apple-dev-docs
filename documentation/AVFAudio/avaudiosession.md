@@ -75,20 +75,11 @@ The audio session uses this configuration when you activate the session using th
 - [func setMode(AVAudioSession.Mode) throws](avaudiosession/setmode(_:).md)
   Sets the audio session’s mode.
 ### Configuring the spatial experience in visionOS
+- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1bpnq.md)
+  The spatial audio experience your app intends to provide the user.
 - [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
   Sets the spatial audio experience your app intends to provide the user.
-- [protocol AVAudioSessionSpatialExperience](../AVFoundation/AVAudioSessionSpatialExperience.md)
-  A protocol that defines types of spatial audio experiences that the system supports.
-- [AVAudioSession.HeadTrackedSpatialExperience](avaudiosession/headtrackedspatialexperience.md)
-  An experience where the sound a size dictated by its sound stage and location dictated by its anchoring strategy.
-- [AVAudioSession.FixedSpatialExperience](avaudiosession/fixedspatialexperience.md)
-  An experience where the sound has a size dictated by its sound stage and is head-locked relative to the user.
-- [AVAudioSession.BypassedSpatialExperience](avaudiosession/bypassedspatialexperience.md)
-  An experience that bypasses system-provided audio spatialization.
-- [AVAudioSession.AnchoringStrategy](avaudiosession/anchoringstrategy.md)
-  Constants that specify how to set the origin of audio in a head-tracked spatial experience.
-- [AVAudioSession.SoundStageSize](avaudiosession/soundstagesize.md)
-  Constants that specify the perceived size of sounds the audio session plays.
+- [protocol AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
 - [var isNowPlayingCandidate: Bool](avaudiosession/isnowplayingcandidate.md)
   A Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
 - [func setIsNowPlayingCandidate(Bool) throws](avaudiosession/setisnowplayingcandidate(_:).md)
@@ -201,6 +192,21 @@ The audio session uses this configuration when you activate the session using th
   Sets a preference to enable echo-canceled input on supported hardware.
 - [var prefersEchoCancelledInput: Bool](avaudiosession/prefersechocancelledinput.md)
   A Boolean value that indicates the audio session’s preference for using an echo-canceled input.
+### Configuring audio muting
+- [var isOutputMuted: Bool](avaudiosession/isoutputmuted.md)
+  A Boolean value that indicates whether audio output is in a muted state.
+- [func setOutputMuted(Bool) throws](avaudiosession/setoutputmuted(_:).md)
+  Sets a Boolean value to inform the system to mute the session’s output audio. The default value is false (unmuted).
+- [class let outputMuteStateChangeNotification: NSNotification.Name](avaudiosession/outputmutestatechangenotification.md)
+  Notification sent to registered listeners when session’s output mute state changes.
+- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
+  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
+- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
+  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
 ### Configuring device settings
 - [Audio hardware](audio-hardware.md)
   Inspect and configure audio device settings including input gain, sample rate, and channel counts.
@@ -220,22 +226,16 @@ The audio session uses this configuration when you activate the session using th
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Instance Properties
-- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1bpnq.md)
-  the developer’s intended spatial experience for this audio session
-- [var isOutputMuted: Bool](avaudiosession/isoutputmuted.md)
-  A Boolean value that indicates whether audio output is in a muted state.
-### Instance Methods
-- [func setOutputMuted(Bool) throws](avaudiosession/setoutputmuted(_:).md)
-  Sets a Boolean value to inform the system to mute the session’s output audio. The default value is false (unmuted).
-### Type Properties
-- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
-- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
-  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
-- [class let outputMuteStateChangeNotification: NSNotification.Name](avaudiosession/outputmutestatechangenotification.md)
-  Notification sent to registered listeners when session’s output mute state changes.
-- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
-  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
+### Structures
+- [AVAudioSession.BypassedSpatialExperience](avaudiosession/bypassedspatialexperience.md)
+  An experience that bypasses system-provided audio spatialization.
+- [AVAudioSession.FixedSpatialExperience](avaudiosession/fixedspatialexperience.md)
+  An experience where the sound has a size dictated by its sound stage and is head-locked relative to the user.
+- [AVAudioSession.HeadTrackedSpatialExperience](avaudiosession/headtrackedspatialexperience.md)
+  An experience where the sound a size dictated by its sound stage and location dictated by its anchoring strategy.
+### Enumerations
+- [AVAudioSession.AnchoringStrategy](avaudiosession/anchoringstrategy.md)
+  Constants that specify how to set the origin of audio in a head-tracked spatial experience.
 
 ## Relationships
 
@@ -257,6 +257,8 @@ The audio session uses this configuration when you activate the session using th
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
 - [Responding to audio route changes](responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+  Map audio channels to specific devices in multiroute sessions for recording and playback.
 - [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
 - [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)

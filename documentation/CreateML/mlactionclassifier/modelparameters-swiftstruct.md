@@ -65,6 +65,8 @@ struct ModelParameters
 
 - [MLActionClassifier.DataSource](mlactionclassifier/datasource.md)
   A data source for an action classifier.
+- [MLActionClassifier.VideoAugmentationOptions](mlactionclassifier/videoaugmentationoptions.md)
+  The video augmentations for an action classifier training session.
 
 
 ---

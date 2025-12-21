@@ -6,11 +6,11 @@
 A Boolean value that indicates whether the microphone is currently enabled.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- visionOS ?+
 
 ## Declaration
 

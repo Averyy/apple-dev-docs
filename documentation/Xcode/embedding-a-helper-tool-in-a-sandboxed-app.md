@@ -214,8 +214,8 @@ To validate your work, follow the process described in [`Build and validate`](em
 
 ## See Also
 
-- [Managing Your App’s Information Property List](../BundleResources/managing-your-app-s-information-property-list.md)
-  Create and customize an information property list file for your app using Xcode.
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+  Customize the information property list values for your app using Xcode.
 - [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
 - [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)

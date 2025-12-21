@@ -24,7 +24,7 @@ Specify the constraints for the App Store Server Notification history entries yo
 
 If you provide both the `notificationType` and `subtype`, they need to be a valid combination, otherwise, the request returns an [`InvalidNotificationTypeError`](invalidnotificationtypeerror.md) error. For more information, see [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) and [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype).
 
-> **Note**:  Notification history is available for the past 180 days. Choose a `startDate` that’s within 180 days of the current date.
+> **Note**:  Notification history is available for the past 180 days in the production environment, and the past 30 days in the sandbox environment. Choose a `startDate` that’s within the past 180 days in the production environment, and within the past 30 days in the sandbox environment.
 
 ## Topics
 

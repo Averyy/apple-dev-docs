@@ -10,7 +10,7 @@ Creates the shape used to detect collisions between two entities that have colli
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -26,9 +26,9 @@ Creates the shape used to detect collisions between two entities that have colli
 
 #### Discussion
 
-Call this method on entities that adopt the [`HasModel`](hasmodel.md) and [`HasCollision`](hascollision.md) protocols to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](collisioncomponent.md) instance.
+Call this method on entities that have a mesh to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](collisioncomponent.md) instance.
 
-For non-model entities, the method has no effect. Nevertheless, the method is defined for all entities so that you can call it on any entity, and have the calculation propagate recursively to all that entity’s descendants.
+This method has no effect for entities without a mesh. Nevertheless, the method is defined for all entities so that you can call it on any entity, and have the calculation propagate recursively to all that entity’s descendants.
 
 ## Parameters
 
@@ -36,7 +36,7 @@ For non-model entities, the method has no effect. Nevertheless, the method is de
 
 ## See Also
 
-- [func generateCollisionShapes(recursive:static:)](entity/generatecollisionshapes(recursive:static:).md)
+- [func generateCollisionShapes(recursive: Bool, static: Bool)](entity/generatecollisionshapes(recursive:static:).md)
   Creates the shape used to detect collisions between two entities that have collision components.
 
 

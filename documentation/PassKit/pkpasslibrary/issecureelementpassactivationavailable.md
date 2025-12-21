@@ -21,7 +21,7 @@ var isSecureElementPassActivationAvailable: Bool { get }
 
 #### Discussion
 
-Secure Element pass activation requires a special entitlement that Apple provides. If the entitlement isn’t present, this property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
+Secure Element pass activation requires a special entitlement that Apple provides. If the entitlement isn’t present, this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

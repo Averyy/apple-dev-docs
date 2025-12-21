@@ -21,7 +21,7 @@ var isRemovedOnCompletion: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the animation is removed from the target layer’s animations once its active duration has passed. Defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+When [`true`](https://developer.apple.com/documentation/Swift/true), the animation is removed from the target layer’s animations once its active duration has passed. Defaults to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

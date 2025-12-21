@@ -116,6 +116,7 @@ For examples of how to use terms of address, see:
   The pronouns associated with a term of address.
 ### Type Properties
 - [static let currentUser: TermOfAddress](termofaddress/currentuser.md)
+  The term of address that should be used for addressing the user
 
 ## Relationships
 

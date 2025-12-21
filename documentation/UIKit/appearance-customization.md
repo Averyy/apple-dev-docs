@@ -24,8 +24,6 @@ Apply Liquid Glass to views, support Dark Mode in your app, customize the appear
 ### Appearance and content
 - [Configurations](configurations.md)
   Specify the appearance and content of your views and cells using configurations.
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
 ### Navigation bar appearance
 - [class UINavigationBarAppearance](uinavigationbarappearance.md)
   An object for customizing the appearance of a navigation bar.

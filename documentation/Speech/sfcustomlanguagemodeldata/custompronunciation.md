@@ -24,9 +24,9 @@ Attempts to add terms that are already in the model’s vocabulary will be ignor
 
 ## Topics
 
-### Initializers
+### Creating a term
 - [init(grapheme: String, phonemes: [String])](sfcustomlanguagemodeldata/custompronunciation/init(grapheme:phonemes:).md)
-### Instance Properties
+### Inspecting a term
 - [let grapheme: String](sfcustomlanguagemodeldata/custompronunciation/grapheme.md)
   The written representation of the term, the way it is expected to appear in transcriptions.
 - [let phonemes: [String]](sfcustomlanguagemodeldata/custompronunciation/phonemes.md)
@@ -46,16 +46,10 @@ Attempts to add terms that are already in the model’s vocabulary will be ignor
 
 ## See Also
 
-- [SFCustomLanguageModelData.CompoundTemplate](sfcustomlanguagemodeldata/compoundtemplate.md)
-  A class supporting the custom language model training data result builder. You are not intended to use this directly.
-- [SFCustomLanguageModelData.DataInsertableBuilder](sfcustomlanguagemodeldata/datainsertablebuilder.md)
-  A custom parameter attribute that constructs custom language model data from closures.
-- [SFCustomLanguageModelData.PhraseCount](sfcustomlanguagemodeldata/phrasecount.md)
-  A phrase used to bias the language model, along with a weight influencing the relative strength of the bias.
-- [SFCustomLanguageModelData.PhraseCountsFromTemplates](sfcustomlanguagemodeldata/phrasecountsfromtemplates.md)
-  A type that can be used to construct custom language model data by specifying a set of template classes and using the resuilt builder DSL to specify templates.
-- [SFCustomLanguageModelData.TemplateInsertableBuilder](sfcustomlanguagemodeldata/templateinsertablebuilder.md)
-  A custom parameter attribute that constructs custom language model data from closures.
+- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
+  Add a custom term to the vocabulary.
+- [static func supportedPhonemes(locale: Locale) -> [String]](sfcustomlanguagemodeldata/supportedphonemes(locale:).md)
+  List the supported subset of X-SAMPA pronunciations supported by this locale for the Speech framework.
 
 
 ---

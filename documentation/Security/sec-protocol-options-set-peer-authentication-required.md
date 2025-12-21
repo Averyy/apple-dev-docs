@@ -20,9 +20,7 @@ func sec_protocol_options_set_peer_authentication_required(_ options: sec_protoc
 
 #### Discussion
 
-```None
- Enable or disable peer authentication. Clients default to true, whereas servers default to false.
-```
+Enable or disable peer authentication. Clients default to true, whereas servers default to false.
 
 ## Parameters
 

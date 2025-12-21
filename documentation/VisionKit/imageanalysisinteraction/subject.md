@@ -34,7 +34,7 @@ Your app can also present a button that gives more information on an image’s s
   An image of the subjects with the background removed.
 ### Locating and sizing the subject
 - [var bounds: CGRect](imageanalysisinteraction/subject/bounds.md)
-  A rectangle that identifies the extremities of a subject within an image.
+  A rectangle that identifies the extremities of a subject within an image in relation to the interaction view’s bounds.
 ### Serializing a subject
 - [func hash(into: inout Hasher)](imageanalysisinteraction/subject/hash(into:).md)
   Serializes a subject with the given hasher.

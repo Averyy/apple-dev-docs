@@ -11,7 +11,7 @@ A string that constrains search results to within the provided countries.
 ## Declaration
 
 ```swift
-attribute string limitToCountries;
+limitToCountries?: string;
 ```
 
 #### Discussion
@@ -25,7 +25,7 @@ The string is a comma-separated list of two-digit ISO 3166-2 country and region 
 - [includeQueries](searchconstructoroptions/includequeries.md)
   A Boolean value that indicates whether the search results include queries.
 - [regionPriority](searchconstructoroptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+  A region priority value that controls whether results occur outside, or strictly within, the region.
 
 
 ---

@@ -32,22 +32,6 @@ The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode
   Frame the subject in the left side of the frame.
 - [DockAccessory.FramingMode.right](dockaccessory/framingmode-swift.enum/right.md)
   Frame the subject in the right side of the frame.
-### Operators
-- [static func == (DockAccessory.FramingMode, DockAccessory.FramingMode) -> Bool](dockaccessory/framingmode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](dockaccessory/framingmode-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/framingmode-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](dockaccessory/framingmode-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](dockaccessory/framingmode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/framingmode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

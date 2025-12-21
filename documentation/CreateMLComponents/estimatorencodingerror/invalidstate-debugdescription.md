@@ -20,11 +20,6 @@ An error that indicates that an estimator cannot perform encoding from its curre
 case invalidState(debugDescription: String)
 ```
 
-## See Also
-
-- [var errorDescription: String?](estimatorencodingerror/errordescription.md)
-  A localized message describing what error occurred.
-
 
 ---
 

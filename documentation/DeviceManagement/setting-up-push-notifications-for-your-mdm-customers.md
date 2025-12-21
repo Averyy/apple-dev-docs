@@ -45,7 +45,7 @@ Save the certificate and its chain as a file that ends in `.pem` and then verify
 
 To learn more about certificates and chains of trust, see [`Security Overview`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html).
 
-After you deliver the signed CSR back to the customer, the customer must log in to `https://identity.apple.com/pushcert` using a verified Apple ID and upload the CSR to the Apple Push Certificates Portal. The portal creates a certificate titled `MDM__Certificate.pem`. The customer then returns to your setup process to upload the APNs certificate for MDM.
+After you deliver the signed CSR back to the customer, the customer must log in to `https://identity.apple.com/pushcert` using a verified Apple Account and upload the CSR to the Apple Push Certificates Portal. The portal creates a certificate titled `MDM__Certificate.pem`. The customer then returns to your setup process to upload the APNs certificate for MDM.
 
 See the sample code references below for additional information.
 

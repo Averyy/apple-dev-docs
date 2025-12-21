@@ -1,4 +1,4 @@
-# Preparing Merchant Domains for Verification
+# Preparing merchant domains for verification
 
 **Framework**: Apple Pay Web Merchant Registration API
 
@@ -6,17 +6,21 @@ Host a domain verification file on each domain before requesting registration.
 
 #### Overview
 
-Before making a [`Register Merchant`](register-merchant.md) request, you must prepare each domain included in the request for verification. When Apple grants you access to use this API, Apple sends you a domain-verification file for each merchant ID you registered. Use these verification files for your merchant registrations.
+Before making a [`Register Merchant`](register-merchant.md) request, prepare each domain included in the request for verification.
 
-> ❗ **Important**:  The domain-verification files you receive when you’re granted access to the API are distinct from the file available in the Apple Merchant ID section of the Apple Developer portal. Only use the verification files you receive.
+Download and distribute to each merchant that has a domain registered via the Web Merchant Registration API. If merchants will be using Apple Pay via pages hosted on your domain, host this file on your own domain also.
+
+You can find the domain-verification file for each of your payment platform integrator IDs in your Apple Developer account.
+
+#### Host the Domain Verification File
 
 Host your domain-verification file at the following path for each domain you’re registering:
 
 `https://[DOMAIN_NAME]/.well-known/apple-developer-merchantid-domain-association`
 
-The domain-verification file must be in place before you invoke the [`Register Merchant`](register-merchant.md) API. Be sure to use the domain-verification file associated with the merchant ID that you provide in the `encryptTo` field.
+Make sure the domain-verification file is in place before invoking [`Register Merchant`](register-merchant.md). Use the domain-verification file associated with the payment platform integrator ID and payment platform identity certificate used to secure the Register Merchant request.
 
-Apple Pay servers don’t require domain verification in the sandbox environment. You receive domain-verfication files for merchant IDs that have access to production servers only.
+Apple Pay servers don’t require domain verification in the sandbox environment.
 
 ## See Also
 

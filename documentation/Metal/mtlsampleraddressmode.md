@@ -21,7 +21,7 @@ enum MTLSamplerAddressMode
 
 ## Topics
 
-### Address Mode Options
+### Address mode options
 - [MTLSamplerAddressMode.clampToEdge](mtlsampleraddressmode/clamptoedge.md)
   Texture coordinates are clamped between `0.0` and `1.0`, inclusive.
 - [MTLSamplerAddressMode.mirrorClampToEdge](mtlsampleraddressmode/mirrorclamptoedge.md)

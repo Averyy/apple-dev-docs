@@ -25,14 +25,6 @@ case noSubelement
   The middle element that meets the specifier test.
 - [NSWhoseSpecifier.SubelementIdentifier.randomSubelement](nswhosespecifier/subelementidentifier/randomsubelement.md)
   Any element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.indexSubelement](nswhosespecifier/subelementidentifier/indexsubelement.md)
-  An element at a given index that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.everySubelement](nswhosespecifier/subelementidentifier/everysubelement.md)
-  Every element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.middleSubelement](nswhosespecifier/subelementidentifier/middlesubelement.md)
-  The middle element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.randomSubelement](nswhosespecifier/subelementidentifier/randomsubelement.md)
-  Any element that meets the specifier test.
 
 
 ---

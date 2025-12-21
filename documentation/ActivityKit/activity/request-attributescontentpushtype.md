@@ -26,7 +26,7 @@ The object that represents the Live Activity you started.
 
 #### Discussion
 
-Use this function to request and start a standard Live Activity from your app while it’s in the foreground. Note that you can’t start a Live Activity while your app is in the background. The Live Activity that started continues until the app, a push notification, or a person ends it, or until it exceeds the maximum duration for Live Activities.
+Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [`App Intents`](https://developer.apple.com/documentation/AppIntents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent). The Live Activity that started continues until the app, a push notification, or a person ends it, or until it exceeds the maximum duration for Live Activities.
 
 Using this function is the same as passing [`ActivityStyle.standard`](activitystyle/standard.md) to [`request(attributes:content:pushType:style:)`](activity/request(attributes:content:pushtype:style:).md). To request a Live Activity that displays the expanded presentation in the Dynamic Island while the app is visible and ends automatically when a person performs other actions, use [`request(attributes:content:pushType:style:)`](activity/request(attributes:content:pushtype:style:).md) and pass [`ActivityStyle.transient`](activitystyle/transient.md) to its `style` parameter.
 

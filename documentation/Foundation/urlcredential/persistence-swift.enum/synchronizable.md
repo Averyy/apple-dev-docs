@@ -28,12 +28,6 @@ case synchronizable
   The credential should be stored only for this session.
 - [URLCredential.Persistence.permanent](urlcredential/persistence-swift.enum/permanent.md)
   The credential should be stored in the keychain.
-- [URLCredential.Persistence.none](urlcredential/persistence-swift.enum/none.md)
-  The credential should not be stored.
-- [URLCredential.Persistence.forSession](urlcredential/persistence-swift.enum/forsession.md)
-  The credential should be stored only for this session.
-- [URLCredential.Persistence.permanent](urlcredential/persistence-swift.enum/permanent.md)
-  The credential should be stored in the keychain.
 
 
 ---

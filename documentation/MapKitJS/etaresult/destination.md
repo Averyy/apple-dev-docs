@@ -11,7 +11,7 @@ The coordinates that represent the endpoint for estimated arrival time requests.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate destination;
+destination?: Coordinate;
 ```
 
 ## See Also

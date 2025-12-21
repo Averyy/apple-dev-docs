@@ -20,7 +20,7 @@ var isLowLatencyEventDispatchConfirmed: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the system runs low-latency event dispatch during the UI update. Use this information to determine whether to avoid doing the same work more than once. For example, when considering whether to render a pencil-drawing stroke in [`afterEventDispatch`](uiupdateactionphase/aftereventdispatch.md), if this property is `true`, but [`isPerformingLowLatencyPhases`](uiupdateinfo/isperforminglowlatencyphases.md) is `false`, you might consider waiting until after low-latency event dispatch to render the stroke.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the system runs low-latency event dispatch during the UI update. Use this information to determine whether to avoid doing the same work more than once. For example, when considering whether to render a pencil-drawing stroke in [`afterEventDispatch`](uiupdateactionphase/aftereventdispatch.md), if this property is `true`, but [`isPerformingLowLatencyPhases`](uiupdateinfo/isperforminglowlatencyphases.md) is `false`, you might consider waiting until after low-latency event dispatch to render the stroke.
 
 This value can change from `false` to `true` during the UI update, but not from `true` to `false`.
 

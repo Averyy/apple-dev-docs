@@ -28,10 +28,10 @@ Creating an `AVPlayerItemMetadataCollector` as shown in the example, will captur
 
 ## Topics
 
-### Creating a Metadata Collector
+### Creating a metadata collector
 - [init(identifiers: [String]?, classifyingLabels: [String]?)](avplayeritemmetadatacollector/init(identifiers:classifyinglabels:).md)
   Creates a metadata collector to access a stream’s metadata groups matching the specified array of identifiers and classifying labels.
-### Accessing the Delegate and Callback Queue
+### Accessing the delegate and callback queue
 - [func setDelegate((any AVPlayerItemMetadataCollectorPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemmetadatacollector/setdelegate(_:queue:).md)
   Sets the delegate and a dispatch queue on which the delegate will be called.
 - [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](avplayeritemmetadatacollector/delegate.md)
@@ -57,7 +57,7 @@ Creating an `AVPlayerItemMetadataCollector` as shown in the example, will captur
 
 ## See Also
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVMetadataGroup](avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.

@@ -3,12 +3,11 @@
 **Framework**: Vision  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two values are equal.
+Returns a Boolean value indicating whether two values are equal.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -18,6 +17,10 @@ Returns a Boolean value that indicates whether two values are equal.
 ```swift
 static func == (lhs: Self, rhs: Self) -> Bool
 ```
+
+#### Discussion
+
+Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 
 ## Parameters
 

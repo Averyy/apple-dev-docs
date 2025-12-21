@@ -20,7 +20,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to hide the item, or [`false`](https://developer.apple.com/documentation/swift/false) to display the item.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to hide the item, or [`false`](https://developer.apple.com/documentation/Swift/false) to display the item.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 A dictionary that contains further details about this error.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

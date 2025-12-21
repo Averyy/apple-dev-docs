@@ -21,8 +21,8 @@ var storageMode: MTLStorageMode { get set }
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Discussion
 

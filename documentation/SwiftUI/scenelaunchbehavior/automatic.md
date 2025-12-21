@@ -7,7 +7,7 @@ The automatic behavior.
 
 **Availability**:
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

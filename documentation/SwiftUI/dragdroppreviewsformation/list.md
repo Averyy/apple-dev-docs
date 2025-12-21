@@ -6,7 +6,7 @@
 Drag images are laid out vertically, non-overlapping, and the left edges are aligned.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

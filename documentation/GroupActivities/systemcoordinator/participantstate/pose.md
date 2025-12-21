@@ -6,7 +6,7 @@
 The position and rotation of the participant – at the time the system coordinator state last changed.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

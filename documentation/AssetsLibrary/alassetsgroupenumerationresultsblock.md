@@ -5,11 +5,6 @@
 
 Signature for the block executed during enumeration of assets.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -22,9 +17,9 @@ The block takes the following arguments:
 
 If no asset is found, index is set to `NSNotFound`.
 
-The value is set to [`true`](https://developer.apple.com/documentation/swift/true) if no asset is found.
+The value is set to [`true`](https://developer.apple.com/documentation/Swift/true) if no asset is found.
 
-If the application is not given access to the data, `result` is `nil`, `index` is `NSNotFound`, and `stop` points to [`true`](https://developer.apple.com/documentation/swift/true).
+If the application is not given access to the data, `result` is `nil`, `index` is `NSNotFound`, and `stop` points to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

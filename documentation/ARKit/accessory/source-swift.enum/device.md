@@ -6,7 +6,7 @@
 Device this accessory was initialized with.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -16,7 +16,7 @@ class let willBecomeActiveNotification: NSNotification.Name
 
 #### Discussion
 
-The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.
+The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
 ## See Also
 
@@ -41,7 +41,7 @@ The notification object is `NSApp`. This notification doesn’t contain a `userI
 - [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
 - [class let willUnhideNotification: NSNotification.Name](nsapplication/willunhidenotification.md)
   Posted at the start of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is about to become visible.
 - [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)

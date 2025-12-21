@@ -17,7 +17,7 @@ var isAccessoryViewDisclosed: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the accessory view is visible, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t. Setting the value of this property programmatically changes the visibility of the accessory panel. If no accessory panel is present, setting this property does nothing.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the accessory view is visible, and [`false`](https://developer.apple.com/documentation/Swift/false) when it isn’t. Setting the value of this property programmatically changes the visibility of the accessory panel. If no accessory panel is present, setting this property does nothing.
 
 ## See Also
 

@@ -21,7 +21,7 @@ static let introductory: Product.SubscriptionOffer.OfferType
 
 #### Discussion
 
-For more information about introductory offers, see [`Set an introductory offer for an auto-renewable subscription`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/deve1d49254f).
+For more information about introductory offers, see [`Set up introductory offers for an auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
 
 ## See Also
 

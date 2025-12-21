@@ -10,7 +10,7 @@ A representation of a shape.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -58,7 +58,7 @@ A representation of a shape.
   Creates a convex shape from the given mesh.
 - [static generateStaticMesh(from:)](shaperesource/generatestaticmesh(from:).md)
   Creates a static collision mesh from a mesh resource.
-- [static generateStaticMesh(positions:faceIndices:)](shaperesource/generatestaticmesh(positions:faceindices:).md)
+- [static func generateStaticMesh(positions: [SIMD3<Float>], faceIndices: [UInt16]) async throws -> ShapeResource](shaperesource/generatestaticmesh(positions:faceindices:).md)
   Creates a static collision mesh from an array of vertex positions and face indices.
 
 ## Relationships

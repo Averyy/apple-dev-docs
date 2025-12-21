@@ -17,9 +17,9 @@ var needsDisplay: Bool { get set }
 
 #### Discussion
 
-The `displayIfNeeded` methods check the value of this property to avoid unnecessary drawing, and all display methods set the value back to [`false`](https://developer.apple.com/documentation/swift/false) when the view is up to date.
+The `displayIfNeeded` methods check the value of this property to avoid unnecessary drawing, and all display methods set the value back to [`false`](https://developer.apple.com/documentation/Swift/false) when the view is up to date.
 
-Whenever the data or state affecting the view’s appearance changes, set this property to [`true`](https://developer.apple.com/documentation/swift/true). This marks the view as needing to update its display. On the next pass through the app’s event loop, the view is automatically redisplayed.
+Whenever the data or state affecting the view’s appearance changes, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). This marks the view as needing to update its display. On the next pass through the app’s event loop, the view is automatically redisplayed.
 
 ## See Also
 

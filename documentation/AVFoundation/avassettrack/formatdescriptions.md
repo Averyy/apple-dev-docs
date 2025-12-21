@@ -22,7 +22,7 @@ var formatDescriptions: [Any] { get }
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 #### Discussion
 

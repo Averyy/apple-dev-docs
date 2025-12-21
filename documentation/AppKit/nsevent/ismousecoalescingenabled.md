@@ -16,7 +16,7 @@ class var isMouseCoalescingEnabled: Bool { get set }
 
 #### Discussion
 
-Mouse movement events include mouse-moved, mouse-dragged, and tablet events. If this property is [`true`](https://developer.apple.com/documentation/swift/true), coalescing is enabled; otherwise, it’s disabled. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+Mouse movement events include mouse-moved, mouse-dragged, and tablet events. If this property is [`true`](https://developer.apple.com/documentation/Swift/true), coalescing is enabled; otherwise, it’s disabled. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

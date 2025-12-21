@@ -26,6 +26,9 @@ Use [`constraints`](nsview/constraints.md) to create an instance of this type.
   Returns the constraints held by the view.
 - [init()](nsview/invalidations/constraints/init.md)
   Creates the invalidation type.
+### Invalidating the constraints
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

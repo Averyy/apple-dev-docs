@@ -25,7 +25,7 @@ Scaling is applied before generating the feature print. The default value is [`V
 
 Scaling an image ensures that the entire image fits into the algorithm’s input image dimensions, which may require a change in aspect ratio. Each crop and scale option transforms the input image in a different way:
 
-![A photo of a flower cropped and scaled according to Vision image options](https://docs-assets.developer.apple.com/published/476a6197148640b76f4b73d478241743/media-3261301%402x.png)
+![A photo of a flower cropped and scaled according to Vision image options](https://docs-assets.developer.apple.com/published/f364baac9c906e2c98ec66ee3b303aab/scale-crop-options%402x.png)
 
 ## See Also
 

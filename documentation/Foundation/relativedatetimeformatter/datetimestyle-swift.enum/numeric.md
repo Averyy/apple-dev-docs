@@ -24,8 +24,6 @@ case numeric
 
 - [RelativeDateTimeFormatter.DateTimeStyle.named](relativedatetimeformatter/datetimestyle-swift.enum/named.md)
   A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
-- [RelativeDateTimeFormatter.DateTimeStyle.named](relativedatetimeformatter/datetimestyle-swift.enum/named.md)
-  A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
 
 
 ---

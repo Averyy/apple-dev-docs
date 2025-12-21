@@ -30,14 +30,6 @@ struct AudioConvertingTransformer
 ### Applying the transformer
 - [func applied(to: AVAudioPCMBuffer, eventHandler: EventHandler?) throws -> AVAudioPCMBuffer](audioconvertingtransformer/applied(to:eventhandler:).md)
   Performs conversion of the input audio buffer.
-### Type Aliases
-- [AudioConvertingTransformer.Input](audioconvertingtransformer/input.md)
-  The input type.
-- [AudioConvertingTransformer.Output](audioconvertingtransformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](audioconvertingtransformer/customdebugstringconvertible-implementations.md)
-- [Transformer Implementations](audioconvertingtransformer/transformer-implementations.md)
 
 ## Relationships
 

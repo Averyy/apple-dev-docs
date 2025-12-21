@@ -20,7 +20,7 @@ func presentOptionsMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the options menu was displayed or [`false`](https://developer.apple.com/documentation/swift/false) if it was not. The options menu may not be displayed in cases where there are no appropriate items to include in the menu.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the options menu was displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not. The options menu may not be displayed in cases where there are no appropriate items to include in the menu.
 
 #### Discussion
 

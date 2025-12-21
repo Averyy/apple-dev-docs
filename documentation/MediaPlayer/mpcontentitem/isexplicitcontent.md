@@ -21,7 +21,7 @@ var isExplicitContent: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the designated content item’s identified as containing explicit content.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the designated content item’s identified as containing explicit content.
 
 ## See Also
 

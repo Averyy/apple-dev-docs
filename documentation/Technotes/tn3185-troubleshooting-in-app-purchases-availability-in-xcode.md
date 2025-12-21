@@ -6,7 +6,7 @@ Inspect your active StoreKit configuration file for unexpected configurations.
 
 #### Overview
 
-When using [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) to test your In-App Purchases, your app may not display its products. StoreKit Testing in Xcode is a local test environment for testing In-App Purchases without requiring a connection to App Store servers. To set up testing in this environment, add a local or synced StoreKit configuration file that contains In-App Purchases to your Xcode project. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode). When you [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) in your Xcode project, this file becomes active. StoreKit uses data saved in the active configuration file when your app calls StoreKit APIs in the test environment. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+When using [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) to test your In-App Purchases, your app may not display its products. StoreKit Testing in Xcode is a local test environment for testing In-App Purchases without requiring a connection to App Store servers. To set up testing in this environment, add a local or synced StoreKit configuration file that contains In-App Purchases to your Xcode project. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Create-a-StoreKit-configuration-file). When you [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Enable-StoreKit-Testing-in-Xcode) in your Xcode project, this file becomes active. StoreKit uses data saved in the active configuration file when your app calls StoreKit APIs in the test environment. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
 
 To offer In-App Purchases in your app, call [`products(for:)`](https://developer.apple.com/documentation/StoreKit/Product/products(for:)) with a list of [`product identifiers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-information) (`Product ID`) matching these products in the test environment. `Product.products(for:)` returns an array that includes an instance of [`Product`](https://developer.apple.com/documentation/StoreKit/Product) for each of the In-App Purchases. Update your app’s UI with these returned instances, which contain all In-App Purchase information set up in the active configuration file for your app.
 
@@ -23,7 +23,7 @@ Inspect the active StoreKit configuration file in your Xcode project. Confirm ea
 
 #### Disable the Simulated Storekit Load Products Failure Setting
 
-A [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) includes settings you can use to specify test conditions or scenarios for your In-App Purchases such as Load Products. When you enable Load Products, the test environment simulates the load product failure scenario you specified such as network error. Calling [`products(for:)`](https://developer.apple.com/documentation/StoreKit/Product/products(for:)) in your app throws a [`StoreKitError`](https://developer.apple.com/documentation/StoreKit/StoreKitError). When you disable this setting, the function returns all your In-App Purchases that exist in the active configuration file. For more information, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code) in [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code).
+A [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Create-a-StoreKit-configuration-file) includes settings you can use to specify test conditions or scenarios for your In-App Purchases such as Load Products. When you enable Load Products, the test environment simulates the load product failure scenario you specified such as network error. Calling [`products(for:)`](https://developer.apple.com/documentation/StoreKit/Product/products(for:)) in your app throws a [`StoreKitError`](https://developer.apple.com/documentation/StoreKit/StoreKitError). When you disable this setting, the function returns all your In-App Purchases that exist in the active configuration file. For more information, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code#Change-settings-and-initiate-test-conditions) in [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code).
 
 To prevent the test environment from simulating a load products failure scenario, perform these steps in your Xcode project:
 
@@ -38,6 +38,26 @@ To prevent the test environment from simulating a load products failure scenario
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -48,26 +68,6 @@ To prevent the test environment from simulating a load products failure scenario
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 - [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
   Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
-- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
-  Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
 
 
 ---

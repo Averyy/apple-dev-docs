@@ -22,7 +22,7 @@ func CMTIME_IS_NUMERIC(_ time: CMTime) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the time is numeric; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the time is numeric; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

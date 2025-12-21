@@ -21,13 +21,13 @@ class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork]) 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user can make payments through any of the specified networks; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user can make payments through any of the specified networks; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 User may not be able to make payments for a variety of reasons. For example, this functionality may not be supported by their hardware, or it may be restricted by parental controls.
 
-If there are no configured payment cards, this method always returns [`false`](https://developer.apple.com/documentation/swift/false).
+If there are no configured payment cards, this method always returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

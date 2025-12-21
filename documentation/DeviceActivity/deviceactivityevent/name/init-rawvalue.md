@@ -37,8 +37,6 @@ print(DeviceActivityEvent.Name.event.rawValue)
 
 - [init(String)](deviceactivityevent/name/init(_:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](deviceactivityevent/name/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

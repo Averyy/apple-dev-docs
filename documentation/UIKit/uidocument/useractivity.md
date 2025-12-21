@@ -14,7 +14,6 @@ An object encapsulating a user activity supported by this document.
 ## Declaration
 
 ```swift
-@MainActor
 var userActivity: NSUserActivity? { get set }
 ```
 

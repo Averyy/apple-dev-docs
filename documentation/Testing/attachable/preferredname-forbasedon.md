@@ -8,7 +8,7 @@ Generate a preferred name for the given attachment.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

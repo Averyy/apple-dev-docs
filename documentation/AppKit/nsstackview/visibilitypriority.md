@@ -25,13 +25,6 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 ### Initializers
 - [init(Float)](nsstackview/visibilitypriority/init(_:).md)
 - [init(rawValue: Float)](nsstackview/visibilitypriority/init(rawvalue:).md)
-### Type Properties
-- [static let detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
-  The Auto Layout priority that results in detachment of a view when there is insufficient space in the stack view to display it fully.
-- [static let mustHold: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/musthold.md)
-  The default value, and maximum Auto Layout priority, that results in a view never detaching from the stack view.
-- [static let notVisible: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/notvisible.md)
-  The minimum Auto Layout priority that forces a view to detach from the stack view.
 ### Priorities
 - [static let mustHold: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/musthold.md)
   The default value, and maximum Auto Layout priority, that results in a view never detaching from the stack view.

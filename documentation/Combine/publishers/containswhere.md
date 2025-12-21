@@ -22,24 +22,19 @@ struct ContainsWhere<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Contains Where Publisher
+### Creating a contains where publisher
 - [init(upstream: Upstream, predicate: (Upstream.Output) -> Bool)](publishers/containswhere/init(upstream:predicate:).md)
   Creates a publisher that emits a Boolean value upon receiving an element that satisfies the predicate closure.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.ContainsWhere.Output](publishers/containswhere/output.md)
   The kind of values published by this publisher.
 - [Publishers.ContainsWhere.Failure](publishers/containswhere/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/containswhere/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Upstream.Output) -> Bool](publishers/containswhere/predicate.md)
   The closure that determines whether the publisher should consider an element as a match.
-### Applying Operators
-- [Publisher Operators](publishers-containswhere-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/containswhere/publisher-implementations.md)
 
 ## Relationships
 

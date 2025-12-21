@@ -27,9 +27,6 @@ enum SetXattrPolicy
   Delete the value, failing if the extended attribute doesn’t exist.
 ### Initializers
 - [init?(rawValue: UInt)](fsvolume/setxattrpolicy/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsvolume/setxattrpolicy/equatable-implementations.md)
-- [RawRepresentable Implementations](fsvolume/setxattrpolicy/rawrepresentable-implementations.md)
 
 ## Relationships
 

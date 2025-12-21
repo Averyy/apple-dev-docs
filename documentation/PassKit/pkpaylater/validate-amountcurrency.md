@@ -18,7 +18,7 @@ static func validate(amount: Decimal, currency: Locale.Currency) async -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the framework can display the requested information; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the framework can display the requested information; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

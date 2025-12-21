@@ -6,7 +6,7 @@
 Constants that indicate the axis and direction to use for a perspective projection matrix.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

@@ -6,8 +6,8 @@
 Fingerprint that can be used to verify the integrity of the media referred to by `url`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration

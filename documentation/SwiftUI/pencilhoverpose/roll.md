@@ -10,6 +10,7 @@ A value that represents the barrel roll angle of the hovering Apple Pencil.
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

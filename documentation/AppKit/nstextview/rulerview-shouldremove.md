@@ -17,11 +17,11 @@ func rulerView(_ ruler: NSRulerView, shouldRemove marker: NSRulerMarker) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aMarker` can be removed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aMarker` can be removed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-Only markers that represent tab stops can be removed. This method returns [`true`](https://developer.apple.com/documentation/swift/true) if `aMarker` represents an [`NSTextTab`](nstexttab.md) object, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Because this method can be invoked repeatedly as the user drags a ruler marker, it returns that value immediately. If the change is allowed and the user actually removes the marker, the receiver is also sent a [`rulerView(_:didRemove:)`](nstextview/rulerview(_:didremove:).md) message.
+Only markers that represent tab stops can be removed. This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if `aMarker` represents an [`NSTextTab`](nstexttab.md) object, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Because this method can be invoked repeatedly as the user drags a ruler marker, it returns that value immediately. If the change is allowed and the user actually removes the marker, the receiver is also sent a [`rulerView(_:didRemove:)`](nstextview/rulerview(_:didremove:).md) message.
 
 ## Parameters
 

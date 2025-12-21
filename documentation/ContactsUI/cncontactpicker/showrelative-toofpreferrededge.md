@@ -22,7 +22,7 @@ func showRelative(to positioningRect: NSRect, of positioningView: NSView, prefer
 
 ## See Also
 
-- [@MainActor class NSPopover](../AppKit/NSPopover.md)
+- [class NSPopover](../AppKit/NSPopover.md)
   A means to display additional content related to existing content on the screen.
 
 

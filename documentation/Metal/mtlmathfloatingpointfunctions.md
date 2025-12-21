@@ -21,7 +21,7 @@ enum MTLMathFloatingPointFunctions
 
 ## Topics
 
-### Function Sets
+### Function sets
 - [MTLMathFloatingPointFunctions.fast](mtlmathfloatingpointfunctions/fast.md)
   An indication that Metal uses the fast version of the 32b floating-point math functions.
 - [MTLMathFloatingPointFunctions.precise](mtlmathfloatingpointfunctions/precise.md)
@@ -41,6 +41,8 @@ enum MTLMathFloatingPointFunctions
 
 ## See Also
 
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 - [enum MTLLogStateError](mtllogstateerror.md)

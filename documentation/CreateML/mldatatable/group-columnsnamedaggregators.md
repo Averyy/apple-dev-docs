@@ -23,10 +23,10 @@ func group<S>(columnsNamed: String..., aggregators: S) -> MLDataTable where S : 
 
 A new data table.
 
-#### Discussion
+## Parameters
 
-- columnsNamed: The name of the columns to include in the new data table.
-- aggregators: A sequence of aggregators, each of which adds a column in the new data table.
+- `columnsNamed`: The name of the columns to include in the new data   table.
+- `aggregators`: A sequence of aggregators, each of which adds a column in   the new data table.
 
 ## See Also
 

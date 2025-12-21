@@ -6,7 +6,7 @@ Create and run virtual CPUs, and manage CPU-specific registers and features.
 
 #### Overview
 
-Hypervisor creates Virtual CPUs with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:_:).md). Call functions that operate on the vCPU from the same thread with the exception of [`hv_vcpus_exit(_:_:)`](hv_vcpus_exit(_:_:).md).
+Hypervisor creates Virtual CPUs with [`hv_vcpu_create(_:_:)`](hv_vcpu_create(_:_:).md). Call functions that operate on the vCPU from the same thread with the exception of [`hv_vcpus_exit(_:_:)`](hv_vcpus_exit(_:_:).md).
 
 Enter the vCPU by using [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md). The function runs until the guest traps or an other thread calls [`hv_vcpus_exit(_:_:)`](hv_vcpus_exit(_:_:).md). On exit, [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) populates the [`hv_vcpu_exit_t`](hv_vcpu_exit_t.md) with the exit reason.
 
@@ -30,14 +30,14 @@ Enter the vCPU by using [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md). The function ru
 ### Creation and destruction
 - [func hv_vm_get_max_vcpu_count(UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_vm_get_max_vcpu_count(_:).md)
   Returns the maximum number of vCPUs that the hypervisor supports.
-- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:_:).md)
+- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpuid_t>, hv_vcpu_options_t) -> hv_return_t](hv_vcpu_create(_:_:).md)
   Creates a vCPU instance for the current thread.
-- [func hv_vcpu_destroy(hv_vcpu_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
+- [func hv_vcpu_destroy(hv_vcpuid_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
   Destroys the vCPU instance associated with the current thread.
 - [typealias hv_vcpu_t](hv_vcpu_t.md)
   An opaque value that represents a vCPU instance.
 ### Runtime
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+- [func hv_vcpu_run(hv_vcpuid_t) -> hv_return_t](hv_vcpu_run(_:).md)
   Starts the execution of a vCPU.
 - [func hv_vcpus_exit(UnsafeMutablePointer<hv_vcpu_t>, UInt32) -> hv_return_t](hv_vcpus_exit(_:_:).md)
   Forces an immediate exit of a set of vCPUs of the VM.
@@ -45,7 +45,7 @@ Enter the vCPU by using [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md). The function ru
   Gets pending interrupts for a vCPU.
 - [func hv_vcpu_set_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, Bool) -> hv_return_t](hv_vcpu_set_pending_interrupt(_:_:_:).md)
   Sets pending interrupts for a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpuid_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
 - [struct hv_interrupt_type_t](hv_interrupt_type_t.md)
   The type that defines the vCPU’s interrupts.

@@ -17,7 +17,7 @@ optional func control(_ control: NSControl, textShouldEndEditing fieldEditor: NS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the insertion point should be allowed to end the editing session; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the insertion point should be allowed to end the editing session; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

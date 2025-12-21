@@ -15,6 +15,10 @@
 var isPrivate: Bool { get set }
 ```
 
+#### Discussion
+
+True if this tap is only visible to the client process that created the tap.
+
 
 ---
 

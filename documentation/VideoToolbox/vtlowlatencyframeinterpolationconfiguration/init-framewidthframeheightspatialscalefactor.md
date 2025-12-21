@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: init
 
+Creates a new low-latency frame interpolation configuration for spatial scaling and temporal scaling.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,13 +21,13 @@ init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)
 
 #### Discussion
 
-When configured for spatial scaling, the VTLowLatencyFrameInterpolation processor only supports 2x spatial upscaling and a single frame of temporal interpolation at a 0.5 interpolation phase.  Setting the numberOfInterpolatedFrames property will be ignored in this case.
+When you configure the processor for spatial scaling, the low-latency frame interpolation processor only supports 2x spatial upscaling and a single frame of temporal interpolation at a 0.5 interpolation phase.
 
 ## Parameters
 
 - `frameWidth`: Width of source frame in pixels.
 - `frameHeight`: Height of source frame in pixels.
-- `spatialScaleFactor`: The requested spatial scale factor as an integer.  Currently, only 2x spatial scaling is supported.
+- `spatialScaleFactor`: The requested spatial scale factor as an integer. Currently, the processor supports only 2x spatial scaling.
 
 
 ---

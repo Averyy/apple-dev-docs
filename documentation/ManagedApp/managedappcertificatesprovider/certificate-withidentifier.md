@@ -26,7 +26,7 @@ The MDM server can update the certificate at any time. After that, [`identifiers
 
 The MDM server can change the available certificates at any time. When that happens, the list of valid identifiers updates accordingly. For example, the list of valid identifiers might change between the time that the app accesses [`identifiers`](managedappidentitiesprovider/identifiers.md) and then calls this method passing in one of its elements. So, the app needs to handle the case that this method throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md).
 
-> ❗ **Important**: Avoid storing the certificate and instead, call this method whenever the app needs the certificate. For security reasons, avoid logging or displaying the certificate. Even though the cerificate is a “public” certificate, it can contain sensitive information.
+> ❗ **Important**: Avoid storing the certificate and instead, call this method whenever the app needs the certificate. For security reasons, avoid logging or displaying the certificate. Even though the certificate is a “public” certificate, it can contain sensitive information.
 
 > **Note**: [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no certificate exists with the specified identifier.
 

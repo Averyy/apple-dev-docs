@@ -31,10 +31,6 @@ struct PreprocessingUpdatableEstimator<Preprocessor, Estimator> where Preprocess
 - [var preprocessor: Preprocessor](preprocessingupdatableestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatableestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/decodewithoptimizer(from:).md)
   Reads the encoded transformer and optimizer.
 - [func encodeWithOptimizer(PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatableestimator/encodewithoptimizer(_:to:).md)
@@ -58,11 +54,8 @@ struct PreprocessingUpdatableEstimator<Preprocessor, Estimator> where Preprocess
   The intermediate type.
 - [PreprocessingUpdatableEstimator.Output](preprocessingupdatableestimator/output.md)
   The output type.
-- [PreprocessingUpdatableEstimator.Transformer](preprocessingupdatableestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [Estimator Implementations](preprocessingupdatableestimator/estimator-implementations.md)
-- [UpdatableEstimator Implementations](preprocessingupdatableestimator/updatableestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

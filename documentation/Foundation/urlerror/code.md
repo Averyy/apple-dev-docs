@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+The error code itself.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

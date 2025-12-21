@@ -38,9 +38,6 @@ An error bundles an [`EncodingError`](https://developer.apple.com/documentation/
   The underlying encoding error.
 - [var rowIndex: Int](columnencodingerror/rowindex.md)
   The index of the column’s element with the error.
-### Default Implementations
-- [Error Implementations](columnencodingerror/error-implementations.md)
-- [LocalizedError Implementations](columnencodingerror/localizederror-implementations.md)
 
 ## Relationships
 

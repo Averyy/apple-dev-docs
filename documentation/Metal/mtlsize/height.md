@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The number of elements in the y dimension.
+A value for the y-axis dimension.
 
 **Availability**:
 - iOS ?+
@@ -22,9 +22,9 @@ var height: Int
 ## See Also
 
 - [var width: Int](mtlsize/width.md)
-  The number of elements in the x dimension.
+  A value for the x-axis dimension.
 - [var depth: Int](mtlsize/depth.md)
-  The number of elements in the z dimension.
+  A value for the z-axis dimension.
 
 
 ---

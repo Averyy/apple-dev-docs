@@ -21,7 +21,7 @@ enum MTLCommandEncoderErrorState
 
 ## Topics
 
-### Getting the Error State
+### Getting the error state
 - [MTLCommandEncoderErrorState.completed](mtlcommandencodererrorstate/completed.md)
   A state that indicates the GPU successfully executed the commands without any errors.
 - [MTLCommandEncoderErrorState.pending](mtlcommandencodererrorstate/pending.md)

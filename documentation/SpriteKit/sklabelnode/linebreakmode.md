@@ -17,7 +17,6 @@ Determines the line-break mode for multiple lines.
 ## Declaration
 
 ```swift
-@MainActor
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 

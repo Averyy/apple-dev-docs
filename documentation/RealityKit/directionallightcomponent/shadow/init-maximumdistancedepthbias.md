@@ -10,7 +10,7 @@ Creates a directional light shadow with a maximum distance and depth bias.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -21,7 +21,7 @@ init(maximumDistance: Float = 5.0, depthBias: Float = 1.0)
 
 #### Discussion
 
-The `maximumDistance` parameter in this initializer is equivalent to setting `shadowProjection` to `.automatic(maximumDistance: maximumDistance)`.
+The `maximumDistance` parameter in this initializer is equivalent to setting [`shadowProjection`](directionallightcomponent/shadow/shadowprojection.md) to `.automatic(maximumDistance: maximumDistance)`.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ The `maximumDistance` parameter in this initializer is equivalent to setting `sh
 
 - [init()](directionallightcomponent/shadow/init.md)
   Creates a directional light shadow using default values.
-- [init(shadowProjection:depthBias:cullMode:)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
+- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
 
 

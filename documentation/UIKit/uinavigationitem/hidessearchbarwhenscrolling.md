@@ -20,7 +20,7 @@ var hidesSearchBarWhenScrolling: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the search bar is visible only when the scroll position equals the top of your content view. When the user scrolls down, the search bar collapses into the navigation bar. Scrolling back to the top reveals the search bar again. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the search bar remains regardless of the current scroll position.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the search bar is visible only when the scroll position equals the top of your content view. When the user scrolls down, the search bar collapses into the navigation bar. Scrolling back to the top reveals the search bar again. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the search bar remains regardless of the current scroll position.
 
 You must configure the [`searchController`](uinavigationitem/searchcontroller.md) property for this property to have any effect. The navigation controller hides and shows only the search bar provided by the search controller in that property.
 

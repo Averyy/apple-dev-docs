@@ -6,19 +6,19 @@
 Metadata for the transferred thumbnail.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
-let thumbnailMetadata: RCSFileTransferMetadata?
+var thumbnailMetadata: RCSFileTransferMetadata?
 ```
 
 ## See Also
 
-- [let fileMetadata: RCSFileTransferMetadata](rcsmessage/filetransfer/filemetadata.md)
+- [var fileMetadata: RCSFileTransferMetadata](rcsmessage/filetransfer/filemetadata.md)
   Metadata for the transferred file.
 
 

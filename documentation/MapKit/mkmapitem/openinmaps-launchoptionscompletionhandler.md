@@ -14,12 +14,6 @@ Opens the Maps app and displays the map item.
 func openInMaps(launchOptions: [String : Any]? = nil) async -> Bool
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func openInMaps(launchOptions: [String : Any]? = nil) async -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `launchOptions`: A dictionary of launch options to pass to the Maps app.

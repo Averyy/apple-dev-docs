@@ -91,7 +91,7 @@ Running another trace shows a drastic reduction in the number of initially loade
 
 ![Screenshot from the Instruments tool showing a small amount of views loading.](https://docs-assets.developer.apple.com/published/7a0742bb765ecedeb06c7c2997253a04/Creating-Performant-Scrollable-Stacks-4%402x.png)
 
-For more information about using the Instruments tool, see doc://com.apple.documentation/documentation/metrickit/improving_your_app_s_performance.
+For more information about using the Instruments tool, see [`Improving your app’s performance`](https://developer.apple.com/documentation/Xcode/improving-your-app-s-performance).
 
 ## See Also
 

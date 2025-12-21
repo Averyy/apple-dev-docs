@@ -13,7 +13,6 @@ The pixel shuffle for the NCHW format, equivalent to depth-to-space in Column Ro
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

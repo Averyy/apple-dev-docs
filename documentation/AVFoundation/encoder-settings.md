@@ -1,4 +1,4 @@
-# Encoder Settings
+# Encoder settings
 
 **Framework**: AVFoundation
 
@@ -17,11 +17,11 @@ The constants that define the audio encoder settings for the audio recorder clas
 
 ## See Also
 
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
+- [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
 - [enum AVAudioQuality](../AVFAudio/AVAudioQuality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
-- [Time Pitch Algorithm Settings](time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

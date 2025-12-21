@@ -25,7 +25,7 @@ var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 
 #### Discussion
 
-This property contains the minimum layout margins expected by the system for the view controller’s root view. Do not override this property. To stop considering the system’s minimum layout margins for the root view, set the [`viewRespectsSystemMinimumLayoutMargins`](uiviewcontroller/viewrespectssystemminimumlayoutmargins.md) property to [`false`](https://developer.apple.com/documentation/swift/false). This property does not affect the margins associated with subviews of the root view.
+This property contains the minimum layout margins expected by the system for the view controller’s root view. Do not override this property. To stop considering the system’s minimum layout margins for the root view, set the [`viewRespectsSystemMinimumLayoutMargins`](uiviewcontroller/viewrespectssystemminimumlayoutmargins.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). This property does not affect the margins associated with subviews of the root view.
 
 If you assign a custom value to the [`directionalLayoutMargins`](uiview/directionallayoutmargins.md) property of the view controller’s root view, the root view’s actual margins are set to either your custom values or the minimum values defined by this property, whichever values are greater. For example, if the value for one system minimum margin is `20` points and you specify a value of `10` for the same margin on the view, the view uses the value `20` for the margin.
 

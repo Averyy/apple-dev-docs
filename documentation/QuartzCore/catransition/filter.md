@@ -21,7 +21,7 @@ If specified, the filter must support both [`kCIInputImageKey`](https://develope
 
 Defaults to `nil`. When a transition filter is specified the [`type`](catransition/type.md) and [`subtype`](catransition/subtype.md) properties are ignored.
 
-The [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) that contains the transitioning layer must have its [`layerUsesCoreImageFilters`](https://developer.apple.com/documentation/AppKit/NSView/layerUsesCoreImageFilters) set to [`true`](https://developer.apple.com/documentation/swift/true).
+The [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) that contains the transitioning layer must have its [`layerUsesCoreImageFilters`](https://developer.apple.com/documentation/AppKit/NSView/layerUsesCoreImageFilters) set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The following code shows how you can transition between the two states of a [`CATextLayer`](catextlayer.md) named `transitioningLayer`. When the layer is first created, its [`backgroundColor`](calayer/backgroundcolor.md) is set to red and its [`string`](catextlayer/string.md) property is set to `Red`. When the `runTransition()` function is called, a new [`CATransition`](catransition.md) object is created and added to `transitioningLayer`, and the state of the layer is changed so that its background color is blue and its rendered text reads `Blue`.
 

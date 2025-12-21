@@ -17,7 +17,7 @@ Changes the currently visible portion of the map, allowing you to specify additi
 
 ```swift
 @MainActor
-func setVisibleMapRect(_ mapRect: MKMapRect, edgePadding insets: UIEdgeInsets, animated animate: Bool)
+func setVisibleMapRect(_ mapRect: MKMapRect, edgePadding insets: NSEdgeInsets, animated animate: Bool)
 ```
 
 ## Parameters

@@ -6,7 +6,7 @@
 Places all of an audio stream’s channels near the layout’s front.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

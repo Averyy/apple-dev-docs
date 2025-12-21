@@ -21,37 +21,37 @@ struct MTLAccelerationStructureMotionInstanceDescriptor
 
 ## Topics
 
-### Creating an Instance Descriptor
+### Creating an instance descriptor
 - [init()](mtlaccelerationstructuremotioninstancedescriptor/init.md)
-  Creates a default acceleration structure instance.
+  Creates an acceleration-structure motion instance with default property values.
 - [init(options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectionFunctionTableOffset: UInt32, accelerationStructureIndex: UInt32, userID: UInt32, motionTransformsStartIndex: UInt32, motionTransformsCount: UInt32, motionStartBorderMode: MTLMotionBorderMode, motionEndBorderMode: MTLMotionBorderMode, motionStartTime: Float, motionEndTime: Float)](mtlaccelerationstructuremotioninstancedescriptor/init(options:mask:intersectionfunctiontableoffset:accelerationstructureindex:userid:motiontransformsstartindex:motiontransformscount:motionstartbordermode:motionendbordermode:motionstarttime:motionendtime:).md)
-  Creates a new acceleration structure instance.
-### Specifying the Instance
+  Creates an acceleration-structure motion instance with the property values you provide.
+### Specifying the instance
 - [var accelerationStructureIndex: UInt32](mtlaccelerationstructuremotioninstancedescriptor/accelerationstructureindex.md)
-  The index of the acceleration structure to use for this instance.
-### Specifying Motion Data
+  The index of an acceleration structure which applies to the next acceleration-structure motion instance you create with the descriptor.
+### Specifying motion data
 - [var motionStartTime: Float](mtlaccelerationstructuremotioninstancedescriptor/motionstarttime.md)
-  The start time for the range of motion described by the keyframe data.
+  A starting time for the range of motion that the key-frame data represents.
 - [var motionEndTime: Float](mtlaccelerationstructuremotioninstancedescriptor/motionendtime.md)
-  The end time for the range of motion described by the keyframe data.
+  An ending time for the range of motion that the key-frame data represents.
 - [var motionStartBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionstartbordermode.md)
-  The mode to use when handling timestamps before the start time.
+  A behavior that configures how a motion instance handles timestamps before a starting time.
 - [var motionEndBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionendbordermode.md)
-  The mode to use when handling timestamps after the end time.
+  A behavior that configures how a motion instance handles timestamps after an ending time.
 - [var motionTransformsStartIndex: UInt32](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md)
-  The index for the instance’s first keyframe motion data.
+  The index of motion data that represents the first key-frame motion data, which applies to the next acceleration-structure motion instance you create with the descriptor.
 - [var motionTransformsCount: UInt32](mtlaccelerationstructuremotioninstancedescriptor/motiontransformscount.md)
-  The number of keyframes for this instance.
-### Customizing Intersection and Hit Tests for the Instance
+  The number of motion data key-frames, which applies to the next acceleration-structure motion instance you create with the descriptor.
+### Customizing intersection and hit tests for the instance
 - [var intersectionFunctionTableOffset: UInt32](mtlaccelerationstructuremotioninstancedescriptor/intersectionfunctiontableoffset.md)
-  An offset used to determine which function in the intersection function table Metal should call when testing a ray against this instance.
+  An offset into the intersection-function table for ray tracing, which applies to the next acceleration-structure motion instance you create with the descriptor.
 - [var options: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructuremotioninstancedescriptor/options.md)
-  The options for this instance.
+  An option set which applies to the next acceleration structure motion-instance you create with the descriptor.
 - [var mask: UInt32](mtlaccelerationstructuremotioninstancedescriptor/mask.md)
-  A mask used for this instance when testing a ray against the geometry.
-### Specifying the User Identifier
+  A mask for testing ray-tracing rays with a scene’s geometry, which applies to the next acceleration-structure motion instance you create with the descriptor.
+### Specifying the user identifier
 - [var userID: UInt32](mtlaccelerationstructuremotioninstancedescriptor/userid.md)
-  The user identifier for the instance.
+  An unique identifier, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 ## Relationships
 

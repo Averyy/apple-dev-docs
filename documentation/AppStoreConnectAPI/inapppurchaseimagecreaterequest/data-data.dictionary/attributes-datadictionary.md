@@ -17,7 +17,7 @@ object InAppPurchaseImageCreateRequest.Data.Attributes
 ## See Also
 
 - [object InAppPurchaseImageCreateRequest.Data.Relationships](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

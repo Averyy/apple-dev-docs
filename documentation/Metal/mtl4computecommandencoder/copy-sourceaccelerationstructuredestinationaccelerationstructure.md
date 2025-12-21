@@ -7,12 +7,12 @@
 Encodes an acceleration structure copy operation into the command buffer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -30,6 +30,13 @@ Typically, the destination acceleration structure is at least as large as the so
 
 - `sourceAccelerationStructure`: Acceleration structure to copy from.
 - `destinationAccelerationStructure`: Acceleration structure to copy to.
+
+## See Also
+
+- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+  Encodes a command to copy and compact an acceleration structure.
+- [func writeCompactedSize(sourceAccelerationStructure: any MTLAccelerationStructure, destinationBuffer: MTL4BufferRange)](mtl4computecommandencoder/writecompactedsize(sourceaccelerationstructure:destinationbuffer:).md)
+  Encodes a command to compute the size an acceleration structure can compact into, writing the result into a buffer.
 
 
 ---

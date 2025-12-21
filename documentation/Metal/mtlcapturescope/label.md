@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A string that identifies the capture scope.
+A string that helps you identify the capture scope.
 
 **Availability**:
 - iOS 11.0+
@@ -22,7 +22,7 @@ var label: String? { get set }
 
 #### Discussion
 
-Setting this property on a capture scope makes it easier to discover specific capture scopes in Xcode. See `Label Your Capture Scope for Use in the Debug Bar`.
+Setting a capture scope’s label makes it easier to find in Xcode. See [`Creating and using custom capture scopes`](https://developer.apple.com/documentation/Xcode/Creating-and-using-custom-capture-scopes) for more information.
 
 ## See Also
 

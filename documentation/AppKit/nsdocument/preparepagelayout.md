@@ -17,13 +17,13 @@ func preparePageLayout(_ pageLayout: NSPageLayout) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successfully prepared; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successfully prepared; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 The [`runModalPageLayoutWithPrintInfo:`](nsdocument/runmodalpagelayoutwithprintinfo:.md) and [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](nsdocument/runmodalpagelayout(with:delegate:didrun:contextinfo:).md) methods call this method to allow the document to customize the Page Layout panel `pageLayout`. You might use this method to add a document-related accessory view.
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

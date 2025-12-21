@@ -6,12 +6,12 @@
 Enumerates possible behaviors of how a pipeline maps its logical outputs to its color attachments.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -51,8 +51,6 @@ enum MTL4LogicalToPhysicalColorAttachmentMappingState
   Serves as the base descriptor for creating a Metal library.
 - [class MTL4LibraryFunctionDescriptor](mtl4libraryfunctiondescriptor.md)
   Describes a shader function from a Metal library.
-- [class MTL4LinkedFunctions](mtl4linkedfunctions.md)
-  Groups together functions to link.
 - [typealias MTL4NewBinaryFunctionCompletionHandler](mtl4newbinaryfunctioncompletionhandler.md)
   Provides a signature for a callback block that Metal calls when the compiler finishes a build task for a binary function.
 - [typealias MTL4NewMachineLearningPipelineStateCompletionHandler](mtl4newmachinelearningpipelinestatecompletionhandler.md)
@@ -71,6 +69,7 @@ enum MTL4LogicalToPhysicalColorAttachmentMappingState
   Groups together properties that describe a shader function suitable for stitching.
 - [class MTLFunctionReflection](mtlfunctionreflection.md)
   Represents a reflection object containing information about a function in a Metal library.
+- [typealias MTLNewDynamicLibraryCompletionHandler](mtlnewdynamiclibrarycompletionhandler.md)
 
 
 ---

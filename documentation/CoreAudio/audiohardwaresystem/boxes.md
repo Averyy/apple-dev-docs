@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of AudioHardwareBoxes that represent all the box objects on the system.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

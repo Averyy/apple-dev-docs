@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-User needs to grant location permission to the app.
+The person needs to allow the app to access their location.
 
 **Availability**:
 - iOS 18.0+
@@ -22,7 +22,7 @@ static func location(precise: Bool = false) -> AppIntentError
 
 #### Discussion
 
-The error message will differ based on whether they need to grant Precise or Approximate Location.
+The error message differs based on whether a person needs to give the app access to their precise or approximate location.
 
 
 ---

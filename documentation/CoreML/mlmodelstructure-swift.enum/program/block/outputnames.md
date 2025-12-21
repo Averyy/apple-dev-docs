@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The output names.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,7 +23,9 @@ let outputNames: [String]
 ## See Also
 
 - [let inputs: [MLModelStructure.Program.NamedValueType]](mlmodelstructure-swift.enum/program/block/inputs.md)
+  The inputs to the block.
 - [let operations: [MLModelStructure.Program.Operation]](mlmodelstructure-swift.enum/program/block/operations.md)
+  The operations in the block.
 
 
 ---

@@ -3,17 +3,21 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
-takes ownership of the port right (even if it returns nil).
+Decodes a coordinator form a `mach_port_t` send right and its accompanying metadata.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 init(port: mach_port_t, data: Data) throws
 ```
+
+#### Discussion
+
+- This method takes ownership of the port right (even if it returns an error).
 
 
 ---

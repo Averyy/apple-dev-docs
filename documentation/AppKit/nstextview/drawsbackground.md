@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to cause the receiver to fill its background with the background color,  [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) to cause the receiver to fill its background with the background color,  [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

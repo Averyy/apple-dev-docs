@@ -17,7 +17,7 @@ func printDocumentView()
 
 #### Discussion
 
-This method is invoked if the [`documentViewShouldHandlePrint`](webframeview/documentviewshouldhandleprint.md) method returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method is invoked if the [`documentViewShouldHandlePrint`](webframeview/documentviewshouldhandleprint.md) method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -21,7 +21,7 @@ var displaysAnnotations: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the page will draw annotations when a drawing method is called.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the page will draw annotations when a drawing method is called.
 
 ## See Also
 

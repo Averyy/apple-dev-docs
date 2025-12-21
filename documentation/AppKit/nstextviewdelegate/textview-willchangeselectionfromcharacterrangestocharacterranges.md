@@ -21,7 +21,7 @@ An array containing the actual character ranges for the new selection.
 
 #### Discussion
 
-Invoked before an `NSTextView` object finishes changing the selection—that is, when the last argument to a [`setSelectedRange(_:affinity:stillSelecting:)`](nstextview/setselectedrange(_:affinity:stillselecting:).md) or [`setSelectedRanges(_:affinity:stillSelecting:)`](nstextview/setselectedranges(_:affinity:stillselecting:).md) message is [`false`](https://developer.apple.com/documentation/swift/false).
+Invoked before an `NSTextView` object finishes changing the selection—that is, when the last argument to a [`setSelectedRange(_:affinity:stillSelecting:)`](nstextview/setselectedrange(_:affinity:stillselecting:).md) or [`setSelectedRanges(_:affinity:stillSelecting:)`](nstextview/setselectedranges(_:affinity:stillselecting:).md) message is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Non-selectable text views do not process any mouse events. If for some reason it is necessary to disallow user selection change in a text view that handles mouse events, this can be achieved by making the text view selectable but implementing this delegate method to disallow selection changes.
 

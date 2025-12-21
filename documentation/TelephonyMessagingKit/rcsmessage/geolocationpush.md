@@ -6,8 +6,8 @@
 A structure that represents geolocation push content in an RCS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -19,26 +19,16 @@ struct GeolocationPush
 ## Topics
 
 ### Accessing geolocation properties
-- [let latitude: Double](rcsmessage/geolocationpush/latitude.md)
+- [var latitude: Double](rcsmessage/geolocationpush/latitude.md)
   The latitude of the location.
-- [let longitude: Double](rcsmessage/geolocationpush/longitude.md)
+- [var longitude: Double](rcsmessage/geolocationpush/longitude.md)
   The longitude of the location.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/geolocationpush/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsmessage/geolocationpush/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing geolocation push instances
-- [static func == (RCSMessage.GeolocationPush, RCSMessage.GeolocationPush) -> Bool](rcsmessage/geolocationpush/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(latitude: Double, longitude: Double, description: String?)](rcsmessage/geolocationpush/init(latitude:longitude:description:).md)
   Creates a geolocation push content instance with the given latitude and longitude.
 ### Instance Properties
-- [let description: String?](rcsmessage/geolocationpush/description.md)
+- [var description: String?](rcsmessage/geolocationpush/description.md)
   A textual description of the location.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/geolocationpush/equatable-implementations.md)
 
 ## Relationships
 

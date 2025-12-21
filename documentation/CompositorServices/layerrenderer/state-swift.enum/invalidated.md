@@ -6,7 +6,7 @@
 A state that indicates the layer no longer supports drawing operations.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

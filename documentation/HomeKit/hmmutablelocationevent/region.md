@@ -20,7 +20,7 @@ var region: CLRegion? { get set }
 
 #### Discussion
 
-Use this property to set the region on which the location event is triggered. The region object must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) or [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) set to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this property to set the region on which the location event is triggered. The region object must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) or [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This property is `nil` when an application is not authorized for location services.
 

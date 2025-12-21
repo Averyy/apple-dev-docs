@@ -3,7 +3,7 @@
 **Framework**: ExtensionKit  
 **Kind**: class
 
-A view controller that allows users to enable and disable extensions.
+A view controller that displays an interface to enable or disable the host app’s extensions.
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +17,16 @@ A view controller that allows users to enable and disable extensions.
 @MainActor
 class EXAppExtensionBrowserViewController
 ```
+
+## Mentions
+
+- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+
+#### Overview
+
+When your host app supports app extensions, use this view controller to give people a way to enable or disable those extensions. When you present this view controller, the system displays an out-of-process UI with a list of all app extensions that support your app’s extension points. Someone using your app can use the presented interface to enable or disable extensions selectively. App extensions you include inside your host app’s bundle are enabled by default, but extensions that ship in separate apps are disabled by default.
+
+Present this view controller modally from your app, or embed the view controller as a child in one of your existing view controller interfaces. For example, you might choose to embed the view controller in a tab of your app’s preferences interface.
 
 ## Relationships
 
@@ -53,8 +63,10 @@ class EXAppExtensionBrowserViewController
 
 ## See Also
 
+- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+  Show the app extensions available to your app, so that people can approve, enable, or disable them.
 - [class EXHostViewController](exhostviewcontroller.md)
-  A view controller that hosts remote views provided by an extension.
+  A view controller that hosts remote views provided by an app extension.
 
 
 ---

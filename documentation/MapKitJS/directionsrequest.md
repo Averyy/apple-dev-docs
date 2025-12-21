@@ -11,30 +11,22 @@ The requested start and end points for a route, as well as the planned mode of t
 ## Declaration
 
 ```swift
-dictionary DirectionsRequest {
-	string|mapkit.Coordinate|Place origin;
-	string|mapkit.Coordinate|Place destination;
-	mapkit.Directions.Transport? transportType;
-	boolean? requestsAlternateRoutes;
-	Date? arrivalDate;
-	Date? departureDate;
-	boolean? avoidTolls;
-};
+interface DirectionsRequest
 ```
 
 #### Overview
 
-Provide a `DirectionsRequest` object to the [`route`](mapkit.directions/route.md) method to get directions between two points, as shown in the code listing that follows. Direction requests require [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
+Provide a `DirectionsRequest` object to the [`route(request, callback)`](directions/route.md) method to get directions between two points, as shown in the code listing that follows. Direction requests require [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
 
 ```javascript
 const myDirections = new mapkit.Directions();
-myDirections.route({ 
-  origin: "San Francisco, CA", 
-  destination: "Oakland, CA", 
-  transportType: mapkit.Directions.Transport.Automobile }, 
-  function(error, data) { 
-    // Results return asynchronously via this callback function, in `data`
-  } 
+myDirections.route({
+  origin: "San Francisco, CA",
+  destination: "Oakland, CA",
+  transportType: TransportType/Automobile },
+  function(error, data) {
+    // Results return asynchronously via this callback function, in `data`.
+  }
 );
 ```
 
@@ -55,18 +47,18 @@ myDirections.route({
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 ## See Also
 
-- [route](mapkit.directions/route.md)
+- [route(request, callback)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
-- [DirectionsResponse](directionsresponse.md)
+- [interface DirectionsResponse](directionsresponse.md)
   The directions and estimated travel time that return for a route.
-- [Route](route.md)
+- [class Route](route.md)
   Information about a route, including step-by-step instructions, distance, and estimated travel time.
-- [RouteStep](routestep.md)
+- [class RouteStep](routestep.md)
   A single step of the route between the requested start and end points.
 
 

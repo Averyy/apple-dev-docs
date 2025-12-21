@@ -8,9 +8,9 @@ A view that displays a managed app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.4+
 
 ## Declaration
 
@@ -24,14 +24,6 @@ A view that displays a managed app.
 ### Creating a view
 - [init(app: ManagedApp)](managedappview/init(app:).md)
   Create a managed app view from a managed app.
-### Getting the properties
-- [var body: some View](managedappview/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [ManagedAppView.Body](managedappview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](managedappview/view-implementations.md)
 
 ## Relationships
 

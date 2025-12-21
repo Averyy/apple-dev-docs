@@ -36,14 +36,14 @@ Check whether your captured query signature is long enough to search for a match
   The raw data for the signature.
 - [var duration: TimeInterval](shsignature/duration.md)
   The duration of the audio you use to generate the signature.
-### Getting the content type
-- [static var shazamSignature: UTType { get }](../UniformTypeIdentifiers/UTType-swift.struct/shazamSignature.md)
-  A type that represents a signature.
-### Structures
-- [SHSignature.Slices](shsignature/slices.md)
-### Instance Methods
+### Slicing signature segments
 - [func slices(from: TimeInterval, duration: TimeInterval, stride: TimeInterval?) throws -> SHSignature.Slices](shsignature/slices(from:duration:stride:).md)
   Returns a sequence of signatures of the specified duration from a starting value, stepping by the stride.
+- [SHSignature.Slices](shsignature/slices.md)
+  A sequence of signature segments.
+### Getting the content type
+- [static var shazamSignature: UTType](../UniformTypeIdentifiers/UTType-swift.struct/shazamSignature.md)
+  A type that represents a signature.
 
 ## Relationships
 

@@ -4,6 +4,12 @@
 
 Persist data in your app intuitively with the Swift native persistence framework.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 This sample project is designed to help you understand how to adopt SwiftData in an existing Core Data app. The SampleTrips app fetches and displays all upcoming trips from the store, and allows people to create or remove trips, and to add, update, or remove information from the itinerary for each trip. There are three versions of this app:

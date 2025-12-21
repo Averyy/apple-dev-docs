@@ -6,12 +6,12 @@
 The date when the activity was officially ended.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ var endDate: Date? { get }
 ## See Also
 
 - [var duration: TimeInterval](gkgameactivity/duration.md)
-  Total time elapsed while in active state.
+  The total time elapsed while in active state.
 - [var startDate: Date?](gkgameactivity/startdate.md)
   The date when the activity was initially started.
 - [var creationDate: Date](gkgameactivity/creationdate.md)

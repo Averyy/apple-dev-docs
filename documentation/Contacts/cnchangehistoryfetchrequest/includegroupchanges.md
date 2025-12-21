@@ -21,7 +21,7 @@ var includeGroupChanges: Bool { get set }
 
 #### Discussion
 
-Specify [`true`](https://developer.apple.com/documentation/swift/true) to receive group changes. Default is [`false`](https://developer.apple.com/documentation/swift/false).
+Specify [`true`](https://developer.apple.com/documentation/Swift/true) to receive group changes. Default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

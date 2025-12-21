@@ -26,22 +26,11 @@ To learn more about the IETF worldwide standard for language tags, see [`RFC5646
   Creates an instance initialized to the given value.
 - [init?(rawValue: String)](languagetag/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](languagetag/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 ### Describing a Language Tag
 - [var description: String](languagetag/description.md)
   A textual representation of the language tag.
-### Hashing
-- [func hash(into: inout Hasher)](languagetag/hash(into:).md)
-  Hashes the language tag by feeding the item into the given hasher.
-- [var hashValue: Int](languagetag/hashvalue.md)
-  The hash value for language tag.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](languagetag/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Default Implementations
 - [CustomStringConvertible Implementations](languagetag/customstringconvertible-implementations.md)
-- [Equatable Implementations](languagetag/equatable-implementations.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral Implementations](languagetag/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](languagetag/expressiblebystringliteral-implementations.md)
 - [ExpressibleByUnicodeScalarLiteral Implementations](languagetag/expressiblebyunicodescalarliteral-implementations.md)

@@ -19,7 +19,7 @@ var activationMode: UIUserNotificationActivationMode { get set }
 
 #### Discussion
 
-If the value in this property is [`UIMutableUserNotificationAction`](uimutableusernotificationaction.md), the value of the [`isAuthenticationRequired`](uimutableusernotificationaction/isauthenticationrequired.md) property is assumed to be [`true`](https://developer.apple.com/documentation/swift/true) regardless of its actual value.
+If the value in this property is [`UIMutableUserNotificationAction`](uimutableusernotificationaction.md), the value of the [`isAuthenticationRequired`](uimutableusernotificationaction/isauthenticationrequired.md) property is assumed to be [`true`](https://developer.apple.com/documentation/Swift/true) regardless of its actual value.
 
 ## See Also
 

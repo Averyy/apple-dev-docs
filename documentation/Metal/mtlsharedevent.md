@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-An object you use to synchronize access to Metal resources across multiple CPUs, GPUs, and processes.
+A type that synchronizes memory operations to one or more resources across multiple CPUs, GPUs, and processes.
 
 **Availability**:
 - iOS 12.0+
@@ -21,29 +21,39 @@ protocol MTLSharedEvent : MTLEvent
 
 ## Mentions
 
-- [About Synchronization Events](about-synchronization-events.md)
+- [About synchronization events](about-synchronization-events.md)
+- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
 
 #### Overview
 
-The [`MTLSharedEvent`](mtlsharedevent.md) protocol inherits from and adds additional behaviors to [`MTLEvent`](mtlevent.md). Use shared events only when you need to synchronize changes to resources across multiple Metal device objects, across processes, or between a device object and CPU access to resources. Otherwise, use nonshared events.
+The [`MTLSharedEvent`](mtlsharedevent.md) protocol inherits the [`MTLEvent`](mtlevent.md) protocol. An event can only synchronize memory operations that run on a single Metal device. A shared event can synchronize memory operations across multiple Metal devices and the CPU. Shared events work anywhere you can work with a regular event.
 
-Don’t implement this protocol yourself; instead, to create a [`MTLSharedEvent`](mtlsharedevent.md) object, call the [`makeSharedEvent()`](mtldevice/makesharedevent().md) method of a [`MTLDevice`](mtldevice.md) object.
+> 💡 **Tip**: Start with an [`MTLEvent`](mtlevent.md) instance until you need to synchronize work with a task that runs on the CPU or another Metal device, because an [`MTLSharedEvent`](mtlsharedevent.md) can add overhead that may affect your app’s performance.
 
-To pass this event to another process, first create a handle to the shared event by calling its [`makeSharedEventHandle()`](mtlsharedevent/makesharedeventhandle().md) method. Then, transfer the handle to another process with XPC, and from that process, call the [`makeSharedEvent(handle:)`](mtldevice/makesharedevent(handle:).md) of a [`MTLDevice`](mtldevice.md) object.
+Create an [`MTLSharedEvent`](mtlsharedevent.md) by calling the [`makeSharedEvent()`](mtldevice/makesharedevent().md) method of an [`MTLDevice`](mtldevice.md) instance.
 
-For more information, see [`Synchronizing Events Across Multiple Devices or Processes`](synchronizing-events-across-multiple-devices-or-processes.md) and [`Synchronizing Events Between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md).
+To pass this event to another process:
+
+1. Create a handle to the shared event by calling the [`makeSharedEventHandle()`](mtlsharedevent/makesharedeventhandle().md) method.
+2. Transfer the handle to another process with XPC.
+3. From the other process, call the [`makeSharedEvent(handle:)`](mtldevice/makesharedevent(handle:).md) method.
+
+For more information about shared events and synchronizing memory operations to resources, see:
+
+- [`Synchronizing events across multiple devices or processes`](synchronizing-events-across-multiple-devices-or-processes.md)
+- [`Synchronizing events between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md).
+- [`Resource synchronization`](resource-synchronization.md)
 
 ## Topics
 
-### Synchronizing a Shareable Event
+### Synchronizing a shareable event
 - [var signaledValue: UInt64](mtlsharedevent/signaledvalue.md)
   The current signal value for the shareable event.
 - [func notify(MTLSharedEventListener, atValue: UInt64, block: MTLSharedEventNotificationBlock)](mtlsharedevent/notify(_:atvalue:block:).md)
   Schedules a notification handler to be called after the shareable event’s signal value equals or exceeds a given value.
-### Creating a Shared Event Handle
+### Creating a shared event handle
 - [func makeSharedEventHandle() -> MTLSharedEventHandle](mtlsharedevent/makesharedeventhandle.md)
   Creates a new shareable event handle.
 ### Instance Methods
@@ -60,20 +70,20 @@ For more information, see [`Synchronizing Events Across Multiple Devices or Proc
 
 ## See Also
 
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [About Synchronization Events](about-synchronization-events.md)
+- [About synchronization events](about-synchronization-events.md)
   Synchronize access to resources in your app by signaling events.
-- [Synchronizing Events Within a Single Device](synchronizing-events-within-a-single-device.md)
+- [Synchronizing events within a single device](synchronizing-events-within-a-single-device.md)
   Use nonshareable events to synchronize your app’s work within a single device.
-- [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
   Use shareable events to synchronize your app’s work across multiple devices or processes.
-- [Synchronizing Events Between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
   Use shareable events to synchronize your app’s work between a GPU and the CPU.
 - [protocol MTLEvent](mtlevent.md)
-  A simple semaphore to synchronize access to Metal resources.
+  A type that synchronizes memory operations to one or more resources within a single Metal device.
 - [class MTLSharedEventHandle](mtlsharedeventhandle.md)
-  An object you use to recreate a shareable event.
+  An instance you use to recreate a shareable event.
 - [class MTLSharedEventListener](mtlsharedeventlistener.md)
   A listener for shareable event notifications.
 - [typealias MTLSharedEventNotificationBlock](mtlsharedeventnotificationblock.md)

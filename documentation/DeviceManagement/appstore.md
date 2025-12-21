@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure macOS App Store restrictions.
+The payload that configures macOS App Store restrictions.
 
 **Availability**:
 - macOS 10.9+

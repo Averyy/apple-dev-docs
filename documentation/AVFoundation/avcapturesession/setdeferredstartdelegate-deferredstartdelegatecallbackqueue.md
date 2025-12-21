@@ -6,11 +6,11 @@
 Sets a delegate object for the session to call when performing deferred start.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -20,11 +20,11 @@ func setDeferredStartDelegate(_ deferredStartDelegate: (any AVCaptureSessionDefe
 
 #### Discussion
 
-This delegate receives a call to the `sessionWillRunDeferredStart` method when deferred start is about to run. It is non-blocking, so it’s also possible that by the time this method is called, the deferred start is already underway. If you want your app to perform initialization (potentially) concurrently with deferred start (e.g. user-facing camera features that are not needed to display the first preview frame, but are available to the user as soon as possible) it may be done in the delegate’s `sessionWillRunDeferredStart` method. To wait until deferred start is finished to perform some remaining initialization work, use the `sessionDidRunDeferredStart` method instead.
+This delegate receives a call to the [`sessionWillRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart(_:).md) method when deferred start is about to run. It is non-blocking, so by the time this method is called, the deferred start may already be underway. If you want your app to perform initialization (potentially) concurrently with deferred start (e.g. user-facing camera features that are not needed to display the first preview frame, but are available to the user as soon as possible) it may be done in the delegate’s [`sessionWillRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart(_:).md) method. To wait until deferred start is finished to perform some remaining initialization work, use the [`sessionDidRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart(_:).md) method instead.
 
-The delegate receives a call to the `sessionDidRunDeferredStart` method when the deferred start finishes running. This allows you to run less-critical application initialization code. For example, if you’ve deferred an [`AVCapturePhotoOutput`](avcapturephotooutput.md) by setting its `deferredStartEnabled` property to `true`, and you’d like to do some app-specific initialization related to still capture, here might be a good place to put it.
+The delegate receives a call to the [`sessionDidRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart(_:).md) method when the deferred start finishes running. This allows you to run less-critical application initialization code. For example, if you’ve deferred an [`AVCapturePhotoOutput`](avcapturephotooutput.md) by setting its [`isDeferredStartEnabled`](avcaptureoutput/isdeferredstartenabled.md) property to `true`, and you’d like to do some app-specific initialization related to still capture, here might be a good place to put it.
 
-If the delegate is non-nil, the session still calls the `sessionWillRunDeferredStart` and `sessionDidRunDeferredStart` methods regardless of the value of the session’s [`automaticallyRunsDeferredStart`](avcapturesession/automaticallyrunsdeferredstart.md) property.
+If the delegate is non-nil, the session still calls the [`sessionWillRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart(_:).md) and [`sessionDidRunDeferredStart(_:)`](avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart(_:).md) methods regardless of the value of the session’s [`automaticallyRunsDeferredStart`](avcapturesession/automaticallyrunsdeferredstart.md) property.
 
 To minimize the capture session’s startup latency, defer all unnecessary work until after the session starts. This delegate provides callbacks for you to schedule deferred work without impacting session startup performance.
 
@@ -34,13 +34,13 @@ If [`deferredStartDelegate`](avcapturesession/deferredstartdelegate.md) is not `
 
 ## Parameters
 
-- `deferredStartDelegate`: An object conforming to the ‘AVCaptureSessionDeferredStartDelegate’ protocol that receives events about deferred start.
+- `deferredStartDelegate`: An object conforming to the   protocol that receives events about deferred start.
 - `deferredStartDelegateCallbackQueue`: A dispatch queue on which deferredStart delegate methods are called.
 
 ## See Also
 
 - [var isManualDeferredStartSupported: Bool](avcapturesession/ismanualdeferredstartsupported.md)
-  A Boolean value that indicates whether the session supports manually running deferred start.
+  A `BOOL` value that indicates whether the session supports manually running deferred start.
 - [var automaticallyRunsDeferredStart: Bool](avcapturesession/automaticallyrunsdeferredstart.md)
   A Boolean value that indicates whether deferred start runs automatically.
 - [func runDeferredStartWhenNeeded()](avcapturesession/rundeferredstartwhenneeded.md)

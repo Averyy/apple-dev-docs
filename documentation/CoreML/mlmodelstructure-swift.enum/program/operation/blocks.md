@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+Nested blocks for loops and conditionals, e.g., a conditional block will have two entries here.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,8 +23,11 @@ let blocks: [MLModelStructure.Program.Block]
 ## See Also
 
 - [let inputs: [String : MLModelStructure.Program.Argument]](mlmodelstructure-swift.enum/program/operation/inputs.md)
+  The arguments to the Operation.
 - [let operatorName: String](mlmodelstructure-swift.enum/program/operation/operatorname.md)
+  The name of the operator, e.g., “conv”, “pool”, “softmax”, etc.
 - [let outputs: [MLModelStructure.Program.NamedValueType]](mlmodelstructure-swift.enum/program/operation/outputs.md)
+  The outputs of the Operation.
 
 
 ---

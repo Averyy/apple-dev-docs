@@ -4,11 +4,16 @@
 
 Inform Siri when your app’s shortcuts may be useful to the user.
 
+**Availability**:
+- watchOS 5.0+
+
 #### Overview
 
 The Siri watch face can suggest shortcuts to the user based on a situation, time of day, or location. You determine which actions in your app are pertinent to the user and may be something they’d like to do in the future, such as starting a workout when arriving at a gym. Your app tells Siri about these actions by specifying them as relevant shortcuts.
 
-> **Note**:  An iOS app can set relevant shortcuts and display them on the Siri watch face, whether it has a companion watchOS app or not. If a watchOS app and its iOS companion both set relevant shortcuts, the Siri watch face uses the list of shortcuts set most recently across either app.
+An iOS app can set relevant shortcuts and display them on the Siri watch face, whether it has a companion watchOS app or not. If a watchOS app and its iOS companion both set relevant shortcuts, the Siri watch face uses the list of shortcuts set most recently across either app.
+
+> ❗ **Important**: The Siri Watch Face is available in watchOS 11 and earlier. To make content available in the Smart Stack on Apple Watch using widgets, refer to [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit), [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks), and [`App Intents`](https://developer.apple.com/documentation/AppIntents). For more information about migrating your SiriKit code to App Intents, refer to [`Migrating widgets from SiriKit Intents to App Intents`](https://developer.apple.com/documentation/WidgetKit/Migrating-from-SiriKit-Intents-to-App-Intents) and [`Soup Chef with App Intents: Migrating custom intents`](soup-chef-with-app-intents-migrating-custom-intents.md).
 
 ##### Create a Relevant Shortcut
 
@@ -119,14 +124,14 @@ Replace the list when your app needs to add or remove a relevant shortcut. It is
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
 - [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
 - [Intent Phrases](intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
+- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+  Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 
 ---

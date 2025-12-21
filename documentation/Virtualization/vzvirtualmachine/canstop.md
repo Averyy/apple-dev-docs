@@ -16,7 +16,7 @@ var canStop: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the VM is in a state that allows you to stop it. Call the [`stop(completionHandler:)`](vzvirtualmachine/stop(completionhandler:).md) to stop the VM.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the VM is in a state that allows you to stop it. Call the [`stop(completionHandler:)`](vzvirtualmachine/stop(completionhandler:).md) to stop the VM.
 
 ## See Also
 

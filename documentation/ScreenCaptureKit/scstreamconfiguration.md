@@ -86,6 +86,7 @@ Creating an instance of this class provides a default configuration for a stream
   Configures how to present streaming notifications to a streamer of Presenter Overlay.
 ### Enumerations
 - [enum SCCaptureDynamicRange](sccapturedynamicrange.md)
+  Specifies whether the captured screen output is standard or high dynamic range.
 - [SCStreamConfiguration.Preset](scstreamconfiguration/preset.md)
 ### Initializers
 - [convenience init(preset: SCStreamConfiguration.Preset)](scstreamconfiguration/init(preset:).md)
@@ -119,7 +120,9 @@ Creating an instance of this class provides a default configuration for a stream
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
+  An object that contains all images requested by the client.
 
 
 ---

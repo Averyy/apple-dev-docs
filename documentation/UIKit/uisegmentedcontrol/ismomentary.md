@@ -21,7 +21,7 @@ var isMomentary: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If it’s set to [`true`](https://developer.apple.com/documentation/swift/true), segments in the control don’t show selected state and don’t update the value of [`selectedSegmentIndex`](uisegmentedcontrol/selectedsegmentindex.md) after tracking ends.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). If it’s set to [`true`](https://developer.apple.com/documentation/Swift/true), segments in the control don’t show selected state and don’t update the value of [`selectedSegmentIndex`](uisegmentedcontrol/selectedsegmentindex.md) after tracking ends.
 
 ## See Also
 

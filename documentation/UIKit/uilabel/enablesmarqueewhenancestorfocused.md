@@ -17,9 +17,9 @@ var enablesMarqueeWhenAncestorFocused: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), then the label ignores [`lineBreakMode`](uilabel/linebreakmode.md), [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md), and [`allowsDefaultTighteningForTruncation`](uilabel/allowsdefaulttighteningfortruncation.md). The label scrolls its text when any ancestor in its view hierarchy has focus.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), then the label ignores [`lineBreakMode`](uilabel/linebreakmode.md), [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md), and [`allowsDefaultTighteningForTruncation`](uilabel/allowsdefaulttighteningfortruncation.md). The label scrolls its text when any ancestor in its view hierarchy has focus.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

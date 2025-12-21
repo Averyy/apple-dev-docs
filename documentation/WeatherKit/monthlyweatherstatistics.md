@@ -26,12 +26,6 @@ Weather statistics for each month are derived from data for that month, collecte
 
 ## Topics
 
-### Operators
-- [static func == (MonthlyWeatherStatistics<T>, MonthlyWeatherStatistics<T>) -> Bool](monthlyweatherstatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](monthlyweatherstatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var baselineStartDate: Date](monthlyweatherstatistics/baselinestartdate.md)
   The year the statistics collection began.
@@ -43,29 +37,9 @@ Weather statistics for each month are derived from data for that month, collecte
   An ordered collection of month weather statistics data of type `T`, for each requested month.
 - [var startIndex: MonthlyWeatherStatistics<T>.Index](monthlyweatherstatistics/startindex.md)
   The start index for the monthly weather statistics.
-### Instance Methods
-- [func encode(to: any Encoder) throws](monthlyweatherstatistics/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Subscripts
 - [subscript(MonthlyWeatherStatistics<T>.Index) -> MonthlyWeatherStatistics<T>.Element](monthlyweatherstatistics/subscript(_:).md)
   The month weather statistics at the provided index.
-### Type Aliases
-- [MonthlyWeatherStatistics.Element](monthlyweatherstatistics/element.md)
-  A type representing the sequence’s elements.
-- [MonthlyWeatherStatistics.Index](monthlyweatherstatistics/index.md)
-  A type that represents a position in the collection.
-- [MonthlyWeatherStatistics.Indices](monthlyweatherstatistics/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [MonthlyWeatherStatistics.Iterator](monthlyweatherstatistics/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [MonthlyWeatherStatistics.SubSequence](monthlyweatherstatistics/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](monthlyweatherstatistics/bidirectionalcollection-implementations.md)
-- [Collection Implementations](monthlyweatherstatistics/collection-implementations.md)
-- [Equatable Implementations](monthlyweatherstatistics/equatable-implementations.md)
-- [RandomAccessCollection Implementations](monthlyweatherstatistics/randomaccesscollection-implementations.md)
-- [Sequence Implementations](monthlyweatherstatistics/sequence-implementations.md)
 
 ## Relationships
 

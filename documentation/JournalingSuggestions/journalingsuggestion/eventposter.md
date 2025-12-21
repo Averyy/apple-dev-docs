@@ -6,7 +6,7 @@
 A suggestion for a poster image of an event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -39,9 +39,6 @@ The system provides a `EventPoster` value to your app when a person chooses a su
 ### Distinguishing the organizer
 - [var isHost: Bool?](journalingsuggestion/eventposter/ishost.md)
   Boolean whether the user is the host of the event.
-### Type Aliases
-- [JournalingSuggestion.EventPoster.JournalingSuggestionContent](journalingsuggestion/eventposter/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

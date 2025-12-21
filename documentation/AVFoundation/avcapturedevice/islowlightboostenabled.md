@@ -19,7 +19,7 @@ var isLowLightBoostEnabled: Bool { get }
 
 #### Discussion
 
-The value of this property indicates whether the capture device currently enhancing images to improve quality due to low light conditions. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the capture device has switched into a special mode in which it perceives more light in images.
+The value of this property indicates whether the capture device currently enhancing images to improve quality due to low light conditions. When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the capture device has switched into a special mode in which it perceives more light in images.
 
 This property is key-value observable.
 

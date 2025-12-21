@@ -17,7 +17,7 @@ var needsSizing: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the next attempt to obtain size information about the menu cause the [`calcSize()`](nsmenuitemcell/calcsize().md) method to be called. When the value of the property is [`false`](https://developer.apple.com/documentation/swift/false), the size information is obtained from the currently cached values.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the next attempt to obtain size information about the menu cause the [`calcSize()`](nsmenuitemcell/calcsize().md) method to be called. When the value of the property is [`false`](https://developer.apple.com/documentation/Swift/false), the size information is obtained from the currently cached values.
 
 Subclasses that drastically change the way a menu item is drawn can change the value of this property to update the menu item information. Other parts of your application should not need to change this property directly. The cell checks this value of this property as necessary when the content of its menu item changes.
 

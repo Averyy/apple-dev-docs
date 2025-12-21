@@ -23,8 +23,6 @@ case invalidOutput(String)
 
 - [MLModelImageFeatureExtractor.Error.invalidInput(_:)](mlmodelimagefeatureextractor/error/invalidinput(_:).md)
   An error indicating that the mlmodel does not take required input.
-- [var debugDescription: String](mlmodelimagefeatureextractor/error/debugdescription.md)
-  A text representation of the error.
 
 
 ---

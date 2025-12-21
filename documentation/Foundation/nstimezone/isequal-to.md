@@ -22,7 +22,7 @@ func isEqual(to aTimeZone: TimeZone) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aTimeZone` and the receiver have the same name and data, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aTimeZone` and the receiver have the same name and data, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

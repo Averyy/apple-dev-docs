@@ -3,14 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: enum
 
+A type that indicates which app extensions may bind to a host app.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,17 +22,22 @@ enum Restriction
 
 ## Topics
 
-### Enumeration Cases
-- [AppExtensionPoint.Scope.Restriction.application](appextensionpoint/scope/restriction/application.md)
+### Getting the restriction types
 - [AppExtensionPoint.Scope.Restriction.none](appextensionpoint/scope/restriction/none.md)
-  Only app extension contained in the current app may bind to the extension point
+  A value that allows app extensions in any app to bind to the host app.
+- [AppExtensionPoint.Scope.Restriction.application](appextensionpoint/scope/restriction/application.md)
+  A value that requires an app extension to reside inside the same app to which it’s binding.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [init(restriction: AppExtensionPoint.Scope.Restriction)](appextensionpoint/scope/init(restriction:).md)
+  Initializes the scope type with the specified restriction value.
 
 
 ---

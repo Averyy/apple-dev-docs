@@ -19,7 +19,7 @@ var arrangedSubviews: [NSView] { get }
 
 This array contains a subset of the views in the split view’s [`subviews`](nsview/subviews.md) property. The views in this array may appear in a different order than in the [`subviews`](nsview/subviews.md) array.
 
-If the value of [`arrangesAllSubviews`](nssplitview/arrangesallsubviews.md) is [`true`](https://developer.apple.com/documentation/swift/true), this array is identical to the [`subviews`](nsview/subviews.md) array.
+If the value of [`arrangesAllSubviews`](nssplitview/arrangesallsubviews.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this array is identical to the [`subviews`](nsview/subviews.md) array.
 
 ## See Also
 

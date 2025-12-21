@@ -1,4 +1,4 @@
-# Compiling and Linking Metal Dynamic Libraries
+# Compiling and linking Metal dynamic libraries
 
 **Framework**: Metal
 
@@ -15,7 +15,7 @@ This article tells you how to build a dynamic library from the command line with
 - `utilities.metal`, a metal source file that contains your utility functions
 - `shaders.ir`, an intermediate representation from the Metal compiler containing shaders that call functions in `utilities.metal`
 
-For instructions on compiling an intermediate representation for Metal, see [`Building a Shader Library by Precompiling Source Files`](building-a-shader-library-by-precompiling-source-files.md). For an example of an app that builds and links dynamic libraries at runtime, see [`Creating a Metal Dynamic Library`](creating-a-metal-dynamic-library.md).
+For instructions on compiling an intermediate representation for Metal, see [`Building a shader library by precompiling source files`](building-a-shader-library-by-precompiling-source-files.md). For an example of an app that builds and links dynamic libraries at runtime, see [`Creating a Metal dynamic library`](creating-a-metal-dynamic-library.md).
 
 ##### Compile Shaders to a Dynamic Library
 
@@ -29,9 +29,9 @@ Start by compiling your utility functions to a dynamic library. Use the `metal` 
 
 ##### Add Binary Archives to Your Dynamic Library Optionally
 
-Binary archives are prebuilt shader functions for GPUs you specify at compile time. Use binary archives when you prefer to make the tradeoff of distributing larger files for your app while avoiding the cost of compiling shaders from Metal IR at runtime. For more information on binary archives, see [`Metal Binary Archives`](metal-binary-archives.md).
+Binary archives are prebuilt shader functions for GPUs you specify at compile time. Use binary archives when you prefer to make the tradeoff of distributing larger files for your app while avoiding the cost of compiling shaders from Metal IR at runtime. For more information on binary archives, see [`Metal binary archives`](metal-binary-archives.md).
 
-The Metal translator allows you to create a dynamic library with GPU-specific binaries alongside the Metal IR slices. The code example below provides the command-line arguments that `metal-tt` uses to add Metal 3 binaries to `libUtility.metalir.metallib`. Then, the combined output writes to `libUtility.metallib`.
+The Metal translator allows you to create a dynamic library with GPU-specific binaries alongside the Metal IR slices. The example below provides the command-line arguments that `metal-tt` uses to add Metal 3 binaries to `libUtility.metalir.metallib`. Then, the combined output writes to `libUtility.metallib`.
 
 ```shell
 % xcrun -sdk macosx metal-tt libUtility.metalir.metallib -o libUtility.metallib $(xcrun -sdk macosx metal-config --native-arch-flags --gpu-family=metal3)
@@ -39,7 +39,7 @@ The Metal translator allows you to create a dynamic library with GPU-specific bi
 
 For more information on `metal-config`, run `man metal-config` in Terminal.
 
-For more information about the Metal translator and how you can customize which binaries to build from a Metal IR file, see [`Creating Binary Archives from Device-Built Pipeline State Objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) and [`Compiling Binary Archives from a Custom Configuration Script`](compiling-binary-archives-from-a-custom-configuration-script.md).
+For more information about the Metal translator and how you can customize which binaries to build from a Metal IR file, see [`Creating binary archives from device-built pipeline state objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) and [`Compiling binary archives from a custom configuration script`](compiling-binary-archives-from-a-custom-configuration-script.md).
 
 ##### Link Utility Shaders to Your Metal Library
 
@@ -59,7 +59,7 @@ Use the [`makeDynamicLibrary(url:)`](mtldevice/makedynamiclibrary(url:).md) meth
 
 ## See Also
 
-- [Creating a Metal Dynamic Library](creating-a-metal-dynamic-library.md)
+- [Creating a Metal dynamic library](creating-a-metal-dynamic-library.md)
   Compile a library of shaders and write it to a file as a dynamically linked library.
 
 

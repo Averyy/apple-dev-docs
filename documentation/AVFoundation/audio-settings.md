@@ -12,23 +12,23 @@ Configure audio processing settings using standard key and value constants.
 - [class AVAudioChannelLayout](../AVFAudio/AVAudioChannelLayout.md)
   An object that describes the roles of a set of audio channels.
 - [let AVChannelLayoutKey: String](../AVFAudio/AVChannelLayoutKey.md)
-- [Linear PCM Format Settings](linear-pcm-format-settings.md)
+- [Linear PCM format settings](linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
-- [Format Settings](format-settings.md)
+- [Format settings](format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 ### Settings
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
+- [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
 - [enum AVAudioQuality](../AVFAudio/AVAudioQuality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
-- [Encoder Settings](encoder-settings.md)
+- [Encoder settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time Pitch Algorithm Settings](time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 ### Constants
-- [Encoder Bit Rate Strategy Values](encoder-bit-rate-strategy-values.md)
+- [Encoder bit rate strategy values](encoder-bit-rate-strategy-values.md)
   The constants that represent the possible bit rate strategy values.
-- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32 { get }](../AVFAudio/AVAUDIOENGINE_HAVE_AUAUDIOUNIT.md)
+- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](../AVFAudio/AVAUDIOENGINE_HAVE_AUAUDIOUNIT.md)
 
 ## See Also
 

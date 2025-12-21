@@ -22,7 +22,7 @@ func hasActions() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the node has any executing actions; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the node has any executing actions; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

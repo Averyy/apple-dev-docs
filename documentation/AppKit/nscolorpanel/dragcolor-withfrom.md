@@ -17,7 +17,7 @@ class func dragColor(_ color: NSColor, with event: NSEvent, from sourceView: NSV
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true)
+[`true`](https://developer.apple.com/documentation/Swift/true)
 
 #### Discussion
 

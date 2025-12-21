@@ -6,8 +6,8 @@
 The translation was provided by the system’s default translation engine.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,8 +17,8 @@ case `default`
 
 ## See Also
 
-- [SetTranslatingAction.TranslationEngine.external](settranslatingaction/translationengine/external.md)
-  The translation was provided by an external translation engine.
+- [SetTranslatingAction.TranslationEngine.custom](settranslatingaction/translationengine/custom.md)
+  The translation was provided by a custom translation engine.
 
 
 ---

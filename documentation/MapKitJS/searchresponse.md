@@ -11,11 +11,7 @@ The result of a search, including the original search query, the bounding region
 ## Declaration
 
 ```swift
-dictionary SearchResponse {
-	string query;
-	mapkit.CoordinateRegion boundingRegion;
-	Place[] places;
-};
+interface SearchResponse
 ```
 
 ## Mentions
@@ -38,11 +34,11 @@ The search callback function provides the search response in its data parameter.
 
 ## See Also
 
-- [search](mapkit.search/search.md)
+- [search(query, callback, options)](search/search.md)
   Retrieves the results of a search query.
-- [SearchDelegate](searchdelegate.md)
+- [type SearchDelegate](searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.
-- [SearchOptions](searchoptions.md)
+- [interface SearchOptions](searchoptions.md)
   An object that contains options to adjust a search.
 
 

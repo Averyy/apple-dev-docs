@@ -6,23 +6,14 @@
 The optional details describing the failed connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ConnectionFailedDetails
 ```
-
-## Topics
-
-### Generating initializers
-- [init(from: any Decoder) throws](waerror/connectionfaileddetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/connectionfaileddetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

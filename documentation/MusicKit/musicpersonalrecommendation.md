@@ -22,15 +22,10 @@ struct MusicPersonalRecommendation
 
 ## Topics
 
-### Operators
-- [static func == (MusicPersonalRecommendation, MusicPersonalRecommendation) -> Bool](musicpersonalrecommendation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var albums: MusicItemCollection<Album>](musicpersonalrecommendation/albums.md)
   The albums for the personal recommendation.
-- [var hashValue: Int](musicpersonalrecommendation/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](musicpersonalrecommendation/id-swift.property.md)
+- [let id: MusicItemID](musicpersonalrecommendation/id.md)
   The unique identifier for the personal recommendation.
 - [var items: MusicItemCollection<MusicPersonalRecommendation.Item>](musicpersonalrecommendation/items.md)
   The items for the personal recommendation.
@@ -46,21 +41,9 @@ struct MusicPersonalRecommendation
   The title for the personal recommendation.
 - [var types: [any MusicPersonalRecommendationItem.Type]](musicpersonalrecommendation/types.md)
   The types of items in the personal recommendation.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicpersonalrecommendation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicPersonalRecommendation.ID](musicpersonalrecommendation/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Enumerations
 - [MusicPersonalRecommendation.Item](musicpersonalrecommendation/item.md)
   An item that represents an album, a playlist, or a station for a personal recommendation.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musicpersonalrecommendation/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musicpersonalrecommendation/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicpersonalrecommendation/decodable-implementations.md)
-- [Encodable Implementations](musicpersonalrecommendation/encodable-implementations.md)
-- [Equatable Implementations](musicpersonalrecommendation/equatable-implementations.md)
 
 ## Relationships
 

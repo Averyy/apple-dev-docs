@@ -17,7 +17,7 @@ var isOpaque: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the cell is completely opaque or [`false`](https://developer.apple.com/documentation/swift/false) if it contains some transparency.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the cell is completely opaque or [`false`](https://developer.apple.com/documentation/Swift/false) if it contains some transparency.
 
 
 ---

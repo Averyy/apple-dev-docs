@@ -21,12 +21,12 @@ var boundingBoxBufferOffset: Int { get set }
 
 #### Discussion
 
-The offset must be a multiple of [`boundingBoxStride`](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md), and must be aligned to the platform’s buffer offset alignment.
+The offset needs be a multiple of [`boundingBoxStride`](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md), and you need to align it to the platform’s buffer offset alignment.
 
 ## See Also
 
 - [var boundingBoxBuffer: (any MTLBuffer)?](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
-  A buffer that contains bounding box data.
+  A buffer that contains an array of bounding box structures.
 - [var boundingBoxStride: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
   The stride, in bytes, between bounding boxes in the buffer.
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure FileVault recovery key redirection.
+The payload that configures FileVault recovery key redirection.
 
 **Availability**:
 - macOS 10.9+
@@ -40,23 +40,23 @@ Note these cautions:
 ## See Also
 
 - [object AIMAccount](aimaccount.md)
-  The payload you use to configure an AIM account on the device.
+  The payload that configures an AIM account on the device.
 - [object APN](apn.md)
-  The payload you use to configure access point names.
+  The payload that configures access point names.
 - [object JabberAccount](jabberaccount.md)
-  The payload you use to configure a Jabber account.
+  The payload that configures a Jabber account.
 - [object MacOSServerAccount](macosserveraccount.md)
-  The payload you use to configure a macOS server account.
+  The payload that configures a macOS Server account.
 - [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
-  The payload you use to configure media management.
+  The payload that configures media management.
 - [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload you use to configure the parental control dashboard allow list.
+  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
-  The payload you use to configure parental control for dictation and profanity.
+  The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)
-  The payload you use to configure ShareKit.
+  The payload that configures ShareKit.
 - [object SystemPreferences](systempreferences.md)
-  The payload you use to configure the preference panes.
+  The payload that configures the preference panes.
 
 
 ---

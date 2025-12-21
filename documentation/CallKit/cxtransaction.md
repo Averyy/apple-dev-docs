@@ -18,6 +18,10 @@ An object that contains zero or more action objects for a call controller to per
 class CXTransaction
 ```
 
+## Mentions
+
+- [Making and receiving VoIP calls](making-and-receiving-voip-calls.md)
+
 ## Topics
 
 ### Creating New Transactions

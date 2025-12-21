@@ -22,7 +22,7 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the node (and all of its descendants) are skipped when a scene processes actions.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the node (and all of its descendants) are skipped when a scene processes actions.
 
 ## See Also
 

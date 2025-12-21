@@ -23,16 +23,16 @@ class URLSession
 ## Mentions
 
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Analyzing HTTP traffic with Instruments](analyzing-http-traffic-with-instruments.md)
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Downloading files in the background](downloading-files-in-the-background.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
-- [Uploading streams of data](uploading-streams-of-data.md)
 - [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
 - [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
+- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
 
@@ -147,7 +147,9 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
 - [func data(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/data(from:delegate:).md)
   Retrieves the contents of a URL and delivers the data asynchronously.
 - [func data(for: URLRequest) async throws -> (Data, URLResponse)](urlsession/data(for:).md)
+  Convenience method to load data using a URLRequest, creates and resumes a URLSessionDataTask internally.
 - [func data(from: URL) async throws -> (Data, URLResponse)](urlsession/data(from:).md)
+  Convenience method to load data using a URL, creates and resumes a URLSessionDataTask internally.
 - [func download(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(for:delegate:).md)
   Retrieves the contents of a URL based on the specified URL request and delivers the URL of the saved file asynchronously.
 - [func download(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(from:delegate:).md)
@@ -159,7 +161,9 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
 - [func upload(for: URLRequest, fromFile: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:delegate:).md)
   Uploads data to a URL and delivers the result asynchronously.
 - [func upload(for: URLRequest, from: Data) async throws -> (Data, URLResponse)](urlsession/upload(for:from:).md)
+  Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
 - [func upload(for: URLRequest, fromFile: URL) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:).md)
+  Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
 - [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
 ### Adding data tasks to a session
@@ -206,7 +210,9 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
 - [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](urlsession/uploadtask(withstreamedrequest:).md)
   Creates a task that performs an HTTP request for uploading data based on the specified URL request.
 - [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:).md)
+  Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
 - [func uploadTask(withResumeData: Data, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:completionhandler:).md)
+  Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
 - [class URLSessionUploadTask](urlsessionuploadtask.md)
   A URL session task that uploads data to the network in a request body.
 - [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)

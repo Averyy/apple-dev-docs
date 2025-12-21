@@ -22,8 +22,8 @@ class vImageConverter
 
 ## Mentions
 
-- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
 - [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
 - [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 
 #### Overview

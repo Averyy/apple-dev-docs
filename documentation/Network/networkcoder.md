@@ -4,13 +4,13 @@
 **Kind**: protocol
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,9 @@ protocol NetworkCoder : Sendable
 - [init()](networkcoder/init.md)
 ### Instance Methods
 - [func makeDecoder() -> Self.Decoder](networkcoder/makedecoder.md)
+  Returns an instance of NetworkDecoder
 - [func makeEncoder() -> Self.Encoder](networkcoder/makeencoder.md)
+  Returns an instance of NetworkEncoder
 ### Type Properties
 - [static var json: NetworkJSONCoder](networkcoder/json.md)
 - [static var propertyList: NetworkPropertyListCoder](networkcoder/propertylist.md)

@@ -26,7 +26,7 @@ The size of the buffer.
 
 #### Discussion
 
-The vImage library defines a buffer’s width and height as [`vImagePixelCount`](vimagepixelcount.md) values that may be larger than doc://com.apple.documentation/documentation/corefoundation/cgfloat/1845207-greatestfinitemagnitude. This function rounds down the buffer’s dimensions to the nearest representable [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values that are less than, or equal to, the size of the buffer.
+The vImage library defines a buffer’s width and height as [`vImagePixelCount`](vimagepixelcount.md) values that may be larger than [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/FloatingPoint/greatestFiniteMagnitude). This function rounds down the buffer’s dimensions to the nearest representable [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values that are less than, or equal to, the size of the buffer.
 
 ## Parameters
 

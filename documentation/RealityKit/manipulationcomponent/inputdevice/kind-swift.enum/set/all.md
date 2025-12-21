@@ -6,7 +6,7 @@
 A set of all available input device kinds.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

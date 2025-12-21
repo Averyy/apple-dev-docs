@@ -48,6 +48,7 @@ struct PayWithApplePayButtonLabel
 - [class PKPaymentButton](pkpaymentbutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
 - [struct PayWithApplePayButton](paywithapplepaybutton.md)
+  A type that provides a button to pay with Apple pay.
 - [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
 
 

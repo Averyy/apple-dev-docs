@@ -17,7 +17,7 @@ func getRow(_ row: UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a cell exists at the specified point; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if a cell exists at the specified point; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

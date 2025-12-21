@@ -10,7 +10,7 @@ A property that identifies the content margins of a widget.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration

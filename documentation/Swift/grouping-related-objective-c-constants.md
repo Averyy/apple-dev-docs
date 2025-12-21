@@ -171,7 +171,7 @@ extension FavoriteColor {
 - [Improving Objective-C API Declarations for Swift](improving-objective-c-api-declarations-for-swift.md)
   Use the `NS_REFINED_FOR_SWIFT` macro to change how an API is imported into Swift.
 - [Marking API Availability in Objective-C](marking-api-availability-in-objective-c.md)
-  Use `a` macro to denote the availability of an Objective-C API.
+  Use a macro to denote the availability of an Objective-C API.
 - [Making Objective-C APIs Unavailable in Swift](making-objective-c-apis-unavailable-in-swift.md)
   Use the `NS_SWIFT_UNAVAILABLE` macro to prevent an API from being used in Swift.
 

@@ -15,6 +15,25 @@
 func AudioObjectSetPropertyData(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ inQualifierDataSize: UInt32, _ inQualifierData: UnsafeRawPointer?, _ inDataSize: UInt32, _ inData: UnsafeRawPointer) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Tells an AudioObject to change the value of the given property using the provided data.
+
+Note that the value of the property should not be considered changed until the HAL has called the listeners as many properties values are changed asynchronously.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to change.
+- `inAddress`: An AudioObjectPropertyAddress indicating which property is being changed.
+- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData.   Note that not all properties require qualification, in which case this   value will be 0.
+- `inQualifierData`: A buffer of data to be used in determining the data of the property being   queried. Note that not all properties require qualification, in which case   this value will be NULL.
+- `inDataSize`: A UInt32 indicating the size of the buffer pointed to by inData.
+- `inData`: The buffer containing the data to be used to change the property’s value.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

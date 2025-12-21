@@ -18,9 +18,9 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-When [`false`](https://developer.apple.com/documentation/swift/false), CarPlay doesn’t call the button’s handler, and it changes the button’s appearance to reflect its disabled state.
+When [`false`](https://developer.apple.com/documentation/Swift/false), CarPlay doesn’t call the button’s handler, and it changes the button’s appearance to reflect its disabled state.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

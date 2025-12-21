@@ -22,13 +22,11 @@ enum MPNowPlayingInfoMediaType
 
 ## Topics
 
-### Enumeration Cases
+### Media types
 - [MPNowPlayingInfoMediaType.none](mpnowplayinginfomediatype/none.md)
   There is no now playing media item.
 - [MPNowPlayingInfoMediaType.audio](mpnowplayinginfomediatype/audio.md)
   The now playing media item is an audio item.
-- [MPNowPlayingInfoMediaType.none](mpnowplayinginfomediatype/none.md)
-  There is no now playing media item.
 - [MPNowPlayingInfoMediaType.video](mpnowplayinginfomediatype/video.md)
   The now playing media item is a video item.
 ### Initializers

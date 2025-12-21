@@ -52,7 +52,7 @@ struct GarageDoorOpener: ControlWidget {
 
 struct MyPushHandler: ControlPushHandler {
 	func pushTokensDidChange(controls: [ControlInfo]) {
-		// TODO: Send push tokens and subscription info to server
+		// Send push tokens and subscription info to your server.
 		// ...
 	}
 }
@@ -66,7 +66,7 @@ The following code queries for the current set of controls and gets any push tok
 let controls = await ControlCenter.shared.currentControls()
 let pushTokens = controls.compactMap { $0.pushInfo?.token }
 
-// Sync push tokens with server.
+// Sync push tokens with your server.
 ```
 
 Use APNs when your server has a state change to communicate to controls on someone’s devices. The POST request indicates that state changed for the single control representing that given push token, and the system reloads the control.

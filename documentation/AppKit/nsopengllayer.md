@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: class
 
-A subclass of [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer) that is suitable for rendering OpenGL into layers.
+A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
 
 **Availability**:
 - macOS 10.6+

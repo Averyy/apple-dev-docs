@@ -11,7 +11,7 @@ A Boolean value that indicates whether the server returns multiple routes when t
 ## Declaration
 
 ```swift
-attribute boolean? requestsAlternateRoutes;
+requestsAlternateRoutes?: boolean;
 ```
 
 #### Discussion
@@ -34,7 +34,7 @@ The default value of this property is `true`.
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

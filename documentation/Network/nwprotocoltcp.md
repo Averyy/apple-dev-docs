@@ -43,6 +43,8 @@ class NWProtocolTCP
 
 - [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTLS](nwprotocoltls.md)
   A network protocol for connections that use Transport Layer Security.
 - [class NWProtocolQUIC](nwprotocolquic.md)

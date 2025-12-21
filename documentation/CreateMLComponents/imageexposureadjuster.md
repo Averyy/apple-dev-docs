@@ -30,13 +30,6 @@ struct ImageExposureAdjuster
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imageexposureadjuster/applied(to:eventhandler:).md)
   Adjusts the exposure of the input image.
-### Type Aliases
-- [ImageExposureAdjuster.Input](imageexposureadjuster/input.md)
-  The input type.
-- [ImageExposureAdjuster.Output](imageexposureadjuster/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](imageexposureadjuster/transformer-implementations.md)
 
 ## Relationships
 

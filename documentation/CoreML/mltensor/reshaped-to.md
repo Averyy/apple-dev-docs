@@ -34,6 +34,11 @@ y.shape // is [1, 2, 1]
 
 - `newShape`: The new shape of the array. The number of scalars matches the new shape.
 
+## See Also
+
+- [func flattened() -> MLTensor](mltensor/flattened.md)
+  Reshape to a one-dimensional tensor.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The end time for the range of motion described by the keyframe data.
+An ending time for the range of motion that the key-frame data represents.
 
 **Availability**:
 - iOS 15.0+
@@ -21,20 +21,22 @@ var motionEndTime: Float
 
 #### Discussion
 
-The default value is `1.0f`.
+The [`motionTransformsStartIndex`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md) and [`motionTransformsCount`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformscount.md) properties represent the key-frame motion data.
+
+The property’s default value is  `1.0`.
 
 ## See Also
 
 - [var motionStartTime: Float](mtlaccelerationstructuremotioninstancedescriptor/motionstarttime.md)
-  The start time for the range of motion described by the keyframe data.
+  A starting time for the range of motion that the key-frame data represents.
 - [var motionStartBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionstartbordermode.md)
-  The mode to use when handling timestamps before the start time.
+  A behavior that configures how a motion instance handles timestamps before a starting time.
 - [var motionEndBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionendbordermode.md)
-  The mode to use when handling timestamps after the end time.
+  A behavior that configures how a motion instance handles timestamps after an ending time.
 - [var motionTransformsStartIndex: UInt32](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md)
-  The index for the instance’s first keyframe motion data.
+  The index of motion data that represents the first key-frame motion data, which applies to the next acceleration-structure motion instance you create with the descriptor.
 - [var motionTransformsCount: UInt32](mtlaccelerationstructuremotioninstancedescriptor/motiontransformscount.md)
-  The number of keyframes for this instance.
+  The number of motion data key-frames, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 
 ---

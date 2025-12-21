@@ -80,10 +80,6 @@ struct DayWeather
   A breakdown of amounts of all forms of precipitation forecasted for the day.
 - [var restOfDayForecast: DayPartForecast?](dayweather/restofdayforecast.md)
   The forecast from now until midnight local time.
-### Default Implementations
-- [Decodable Implementations](dayweather/decodable-implementations.md)
-- [Encodable Implementations](dayweather/encodable-implementations.md)
-- [Equatable Implementations](dayweather/equatable-implementations.md)
 
 ## Relationships
 

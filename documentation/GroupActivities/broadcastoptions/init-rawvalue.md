@@ -25,7 +25,7 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](broadcastoptions/rawvalue-swift.property.md)
+- [let rawValue: Int](broadcastoptions/rawvalue.md)
   The raw value.
 
 

@@ -25,16 +25,11 @@ enum CompatibilityError
 ### Analyzing the Error
 - [CompatibilityError.unsupportedRevision(_:)](compatibilityerror/unsupportedrevision(_:).md)
   An error that indicates that the revision is not supported.
-- [var errorDescription: String?](compatibilityerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (CompatibilityError, CompatibilityError) -> Bool](compatibilityerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](compatibilityerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](compatibilityerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](compatibilityerror/equatable-implementations.md)
-- [Error Implementations](compatibilityerror/error-implementations.md)
-- [LocalizedError Implementations](compatibilityerror/localizederror-implementations.md)
 
 ## Relationships
 

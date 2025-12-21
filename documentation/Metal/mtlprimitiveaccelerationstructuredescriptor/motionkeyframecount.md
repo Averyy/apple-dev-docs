@@ -21,7 +21,7 @@ var motionKeyframeCount: Int { get set }
 
 #### Discussion
 
-The default value is `1`. If the value is greater than `1`, all geometry descriptors that you attach to this descriptor must be motion descriptors, and each must have exactly that many [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) objects.
+The default value is `1`. If the value is greater than `1`, all geometry descriptors that you attach to this descriptor need to be motion descriptors, and each needs to have exactly that many [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) objects.
 
 ## See Also
 

@@ -6,10 +6,11 @@
 Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene with the given identifier and presented value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- visionOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

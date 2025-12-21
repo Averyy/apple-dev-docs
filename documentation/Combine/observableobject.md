@@ -52,7 +52,7 @@ print(john.haveBirthday())
 
 ## Topics
 
-### Publishing Changes
+### Publishing changes
 - [var objectWillChange: Self.ObjectWillChangePublisher](observableobject/objectwillchange.md)
   A publisher that emits before the object has changed.
 - [associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher](observableobject/objectwillchangepublisher.md)

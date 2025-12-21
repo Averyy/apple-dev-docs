@@ -17,7 +17,7 @@ var smartInsertDeleteEnabled: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver should insert or delete space around selected words so as to preserve proper spacing and punctuation, [`false`](https://developer.apple.com/documentation/swift/false) if it should insert and delete exactly what’s selected.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver should insert or delete space around selected words so as to preserve proper spacing and punctuation, [`false`](https://developer.apple.com/documentation/Swift/false) if it should insert and delete exactly what’s selected.
 
 ## See Also
 

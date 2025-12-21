@@ -6,7 +6,12 @@
 Registers a video decoder for the specified codec type, if one exists on the current system.
 
 **Availability**:
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
 - macOS 11.0+
+- tvOS 26.2+
+- visionOS 26.2+
 
 ## Declaration
 

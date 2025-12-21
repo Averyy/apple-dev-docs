@@ -29,11 +29,6 @@ A tuple of two row groupings.
 - `proportion`: A proportion in the range  .
 - `seed`: A seed number for a random-number generator.
 
-## See Also
-
-- [func randomSplit(by: Double) -> (Self, Self)](rowgrouping/randomsplit(by:).md)
-  Generates two row groupings by randomly splitting the original with a proportion.
-
 
 ---
 

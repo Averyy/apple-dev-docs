@@ -6,7 +6,7 @@
 Stops further execution of your code until the layer renderer leaves the paused state.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

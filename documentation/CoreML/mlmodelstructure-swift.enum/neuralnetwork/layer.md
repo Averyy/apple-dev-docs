@@ -20,17 +20,26 @@ struct Layer
 
 ## Topics
 
-### Instance Properties
+### Accessing layer properties
 - [let inputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/inputnames.md)
+  The input names.
 - [let name: String](mlmodelstructure-swift.enum/neuralnetwork/layer/name.md)
+  The layer name.
 - [let outputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/outputnames.md)
+  The output names.
 - [let type: String](mlmodelstructure-swift.enum/neuralnetwork/layer/type.md)
+  The type of the layer, e,g, “elementwise”, “pooling”, etc.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let layers: [MLModelStructure.NeuralNetwork.Layer]](mlmodelstructure-swift.enum/neuralnetwork/layers.md)
+  The topologically sorted layers in the NeuralNetwork.
 
 
 ---

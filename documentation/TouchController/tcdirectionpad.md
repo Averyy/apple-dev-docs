@@ -6,10 +6,8 @@
 An object that represents a direction pad.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,49 +22,37 @@ You can configure this object to behave as either a composite direction pad (mir
 ## Topics
 
 ### Inspecting the direction pad
-- [var collider: any TCCollider](tcdirectionpad/collider.md)
-  The collider for the direction pad.
 - [var compositeLabel: TCControlLabel?](tcdirectionpad/compositelabel.md)
   A composite control label.
+- [var downContents: TCControlContents?](tcdirectionpad/downcontents.md)
+  The contents for the down button.
 - [var downLabel: TCControlLabel?](tcdirectionpad/downlabel.md)
   The label for the down button, if the control isn’t a composite direction pad.
-- [var downVisuals: TCControlVisuals?](tcdirectionpad/downvisuals.md)
-  The visuals for the down button.
-- [var hasMutuallyExclusiveInput: Bool](tcdirectionpad/hasmutuallyexclusiveinput.md)
-  A Boolean value that indicates whether the control has mutally exclusive input.
-- [var highlightTime: simd_float1](tcdirectionpad/highlighttime.md)
+- [var highlightDuration: TimeInterval](tcdirectionpad/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
+- [var inputIsMutuallyExclusive: Bool](tcdirectionpad/inputismutuallyexclusive.md)
+  A Boolean value that indicates whether the control has mutally exclusive input.
 - [var isDigital: Bool](tcdirectionpad/isdigital.md)
   A Boolean value that indicates whether the control behaves as a digital button.
 - [var isRadial: Bool](tcdirectionpad/isradial.md)
   A Boolean value that indicates whether the control behaves as a swipeable radial button.
-- [var layer: simd_int1](tcdirectionpad/layer.md)
-  The layer of the direction pad, used for z-sorting.
+- [var leftContents: TCControlContents?](tcdirectionpad/leftcontents.md)
+  The contents for the left button.
 - [var leftLabel: TCControlLabel?](tcdirectionpad/leftlabel.md)
   The label for the left button, if the control isn’t a composite direction pad.
-- [var leftVisuals: TCControlVisuals?](tcdirectionpad/leftvisuals.md)
-  The visuals for the left button.
-- [var offset: CGPoint](tcdirectionpad/offset.md)
-  The control’s offset from the anchor, which determines its position.
-- [var position: CGPoint](tcdirectionpad/position.md)
-  The position of the direction pad in points, with the origin at the top left corner of the screen.
+- [var rightContents: TCControlContents?](tcdirectionpad/rightcontents.md)
+  The contents for the right button.
 - [var rightLabel: TCControlLabel?](tcdirectionpad/rightlabel.md)
   The label for the right button, if the control isn’t a composite direction pad.
-- [var rightVisuals: TCControlVisuals?](tcdirectionpad/rightvisuals.md)
-  The visuals for the right button.
-- [var size: CGSize](tcdirectionpad/size.md)
-  The size (width, height) of the direction pad in points.
-- [var touchController: TCTouchController](tcdirectionpad/touchcontroller.md)
-  The touch controller that manages this direction pad.
+- [var upContents: TCControlContents?](tcdirectionpad/upcontents.md)
+  The contents for the up button.
 - [var upLabel: TCControlLabel?](tcdirectionpad/uplabel.md)
   The label for the up button, if the control isn’t a composite direction pad.
-- [var upVisuals: TCControlVisuals?](tcdirectionpad/upvisuals.md)
-  The visuals for the up button.
-### Getting the anchor
-- [var anchor: TCTransformAnchor](tcdirectionpad/anchor.md)
-  The anchor point that the direction pad’s offset is relative to.
-- [enum TCTransformAnchor](tctransformanchor.md)
-  Defines the anchor point for a transform.
+### Getting the collider shape
+- [var colliderShape: TCColliderShape](tcdirectionpad/collidershape.md)
+  The collider shape for the direction pad.
+- [enum TCColliderShape](tccollidershape.md)
+  Defines the shape of a control collider.
 
 ## Relationships
 
@@ -80,7 +66,7 @@ You can configure this object to behave as either a composite direction pad (mir
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [TCControl](tccontrol.md)
-- [TCTransform](tctransform.md)
+- [TCControlLayout](tccontrollayout.md)
 
 ## See Also
 
@@ -88,6 +74,8 @@ You can configure this object to behave as either a composite direction pad (mir
   A protocol that defines the base properties and methods for all touch controls.
 - [class TCButton](tcbutton.md)
   A control that represents a single on-screen button.
+- [class TCSwitch](tcswitch.md)
+  A control that represents a single on-screen switch.
 - [class TCThumbstick](tcthumbstick.md)
   Represents a single on-screen thumbstick.
 - [class TCThrottle](tcthrottle.md)

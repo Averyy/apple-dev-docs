@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers: CFString
 
 #### Discussion
 
-This is an optional property for video decoders to implement. This property value is an array of doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum objects describing different reduced frame delivery options supported by the decoder.
+This is an optional property for video decoders to implement. This property value is an array of [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) objects describing different reduced frame delivery options supported by the decoder.
 
 The first dictionary in the array should contain the set of properties that restore the default (full) quality of service; later dictionaries should contain property sets with decreasing qualities of service.  Clients can work their way down these tiers until they are able to keep up with the frame rate. The dictionaries can be applied directly on the decompression session using [`VTSessionSetProperties(_:propertyDictionary:)`](vtsessionsetproperties(_:propertydictionary:).md) in order to request that quality of service tier be enforced.
 
@@ -52,6 +52,7 @@ The first dictionary in the array should contain the set of properties that rest
 - [let kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport: CFString](kvtdecompressionpropertykey_pixelformatswithreducedresolutionsupport.md)
   Pixel formats that support reduced-resolution decoding (optional).
 - [let kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions: CFString](kvtdecompressionpropertykey_allowbitstreamtochangeframedimensions.md)
+  A Boolean value that indicates whether a decoder is allowed to output buffers matching reduced frame dimensions in the bitstream rather than under-filling them.
 
 
 ---

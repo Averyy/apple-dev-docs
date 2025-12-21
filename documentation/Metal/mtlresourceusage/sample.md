@@ -23,13 +23,6 @@ static var sample: MTLResourceUsage { get }
 
 Specify this option only if the resource is a texture.
 
-## See Also
-
-- [static var read: MTLResourceUsage](mtlresourceusage/read.md)
-  An option that enables reading from the resource.
-- [static var write: MTLResourceUsage](mtlresourceusage/write.md)
-  An option that enables writing to the resource.
-
 
 ---
 

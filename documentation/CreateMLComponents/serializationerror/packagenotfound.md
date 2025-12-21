@@ -26,8 +26,6 @@ case packageNotFound(URL)
   An error that indicates that the transformer cannot be represented as a CoreML model.
 - [SerializationError.packageAlreadyExists(_:)](serializationerror/packagealreadyexists(_:).md)
   An error that indicates that the package already exists at the URL.
-- [var errorDescription: String?](serializationerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

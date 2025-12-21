@@ -21,7 +21,7 @@ For guidance on choosing a data management strategy for your app, see [`Personal
 - [com.apple.developer.video-subscriber-single-sign-on](entitlements/com.apple.developer.video-subscriber-single-sign-on.md)
   A Boolean value that indicates whether your app can use the TV Provider Authentication service.
 - [com.apple.smoot.subscriptionservice](entitlements/com.apple.smoot.subscriptionservice.md)
-  A Boolean value that indicates whether your app can integrate with APIs to provide different feed based content.
+  A Boolean value that indicates whether your app meets the requirements of the video-partner program.
 
 
 ---

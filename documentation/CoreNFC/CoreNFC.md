@@ -26,20 +26,20 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
 - [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
   Allow users to scan NFC tags without an app using background tag reading.
 - [NFCReaderUsageDescription](../BundleResources/Information-Property-List/NFCReaderUsageDescription.md)
-  A message that tells the user why the app is requesting access to the device’s NFC hardware.
+  A message that tells people why the app is requesting access to the device’s NFC hardware.
 ### Reader sessions
 - [class NFCNDEFReaderSession](nfcndefreadersession.md)
   A reader session for detecting NFC Data Exchange Format (NDEF) tags.
 - [class NFCTagReaderSession](nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
+- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+  A reader session that supports the use of payment tags.
 - [class NFCVASReaderSession](nfcvasreadersession.md)
   A reader session for processing Value Added Service (VAS) tags.
 - [class NFCReaderSession](nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [class NFCReaderSession](nfcreadersession-swift.class.md)
-  The abstract base class that represents a reader session for detecting NFC tags.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 ### Tag types
@@ -88,7 +88,6 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
 ### Classes
 - [class NFCISO15693CustomCommandConfiguration](nfciso15693customcommandconfiguration.md)
 - [class NFCISO15693ReadMultipleBlocksConfiguration](nfciso15693readmultipleblocksconfiguration.md)
-- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
 ### Structures
 - [struct NFCFeliCaPollingResponse](nfcfelicapollingresponse.md)
 - [struct NFCFeliCaRequestSpecificationVersionResponse](nfcfelicarequestspecificationversionresponse.md)

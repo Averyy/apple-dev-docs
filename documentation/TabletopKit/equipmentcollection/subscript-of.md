@@ -6,7 +6,7 @@
 Returns the identifiers and corresponding states of all equipment that conform to the given type.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

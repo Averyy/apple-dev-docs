@@ -7,7 +7,7 @@
 The identifier for this search result.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

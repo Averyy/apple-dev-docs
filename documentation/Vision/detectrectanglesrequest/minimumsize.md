@@ -8,7 +8,6 @@ The minimum size of the rectangle to be detected, as a proportion of the smalles
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,11 +27,11 @@ Any smaller rectangles that the framework might detect aren’t returned.
 ## See Also
 
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
-  The maximum aspect ratio of the rectangle to detect.
+  The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
   The maximum number of rectangles Vision returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
-  The minimum aspect ratio of the rectangle(s) to detect.
+  The smallest aspect ratio the rectangle request detects.
 - [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)

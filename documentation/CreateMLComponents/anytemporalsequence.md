@@ -25,18 +25,6 @@ struct AnyTemporalSequence<Feature>
 ### Creating a sequence
 - [init<S>(S)](anytemporalsequence/init(_:).md)
 - [init<S>(S, count: Int?)](anytemporalsequence/init(_:count:).md)
-### Inspecting a sequence
-- [let count: Int?](anytemporalsequence/count.md)
-  The number of elements in the sequence if available, calculated nondestructively.
-### Making an iterator
-- [func makeAsyncIterator() -> AnyTemporalIterator<AnyTemporalSequence<Feature>.Element>](anytemporalsequence/makeasynciterator.md)
-  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [AnyTemporalSequence.AsyncIterator](anytemporalsequence/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [AnyTemporalSequence.Element](anytemporalsequence/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](anytemporalsequence/asyncsequence-implementations.md)
 
 ## Relationships
 

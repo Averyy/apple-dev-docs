@@ -29,7 +29,7 @@ Create an [`MTLCommandQueue`](mtlcommandqueue.md) or [`MTLCommandBuffer`](mtlcom
 
 When you attach a log state to a command queue, the command queue shares the log state with all the command buffers it creates. If you attach different log states to a command buffer and command queue, then the system uses the state attached to the command buffer.
 
-Because logging incurs an overhead, regardless of whether the system prints messages, you must explicitly enable logging with [`enableLogging`](mtlcompileoptions/enablelogging.md).
+Because logging incurs an overhead, regardless of whether the system prints messages, you need to explicitly enable logging with [`enableLogging`](mtlcompileoptions/enablelogging.md).
 
 ## Topics
 

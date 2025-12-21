@@ -22,7 +22,7 @@ func isEnabled(type: OSLogType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if logging at the specified level is in an enabled state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if logging at the specified level is in an enabled state; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

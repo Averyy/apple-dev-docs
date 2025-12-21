@@ -6,8 +6,8 @@
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,6 +19,7 @@ static var compact: ManagedContentStyle { get }
 
 - [static var automatic: ManagedContentStyle](managedcontentstyle/automatic.md)
 - [static var header: ManagedContentStyle](managedcontentstyle/header.md)
+- [static var vertical: ManagedContentStyle](managedcontentstyle/vertical.md)
 
 
 ---

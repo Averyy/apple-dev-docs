@@ -35,7 +35,7 @@ func getNumberOfRows(_ rowCount: UnsafeMutablePointer<Int>?, columns colCount: U
 - [var cellSize: NSSize](nsmatrix/cellsize.md)
   The size of each cell in the matrix.
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func insertColumn(Int, with: [NSCell]?)](nsmatrix/insertcolumn(_:with:).md)
   Inserts a new column of cells before the specified column, using the given cells.
 - [func insertRow(Int)](nsmatrix/insertrow(_:).md)

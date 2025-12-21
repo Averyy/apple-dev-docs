@@ -13,6 +13,10 @@
 typealias PGPhysicalMemoryRange_t = PGPhysicalMemoryRange_s
 ```
 
+#### Discussion
+
+A struct for a guest physical memory range
+
 
 ---
 

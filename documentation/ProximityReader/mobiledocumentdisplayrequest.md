@@ -6,10 +6,10 @@
 A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -32,19 +32,10 @@ struct MobileDocumentDisplayRequest
 ### Handling the response
 - [MobileDocumentDisplayRequest.Response](mobiledocumentdisplayrequest/response.md)
   A type that contains the response information from a successful mobile document display request.
-### Operators
-- [static func == (MobileDocumentDisplayRequest, MobileDocumentDisplayRequest) -> Bool](mobiledocumentdisplayrequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var elements: [MobileDocumentDisplayRequest.Element]](mobiledocumentdisplayrequest/elements.md)
   The document elements you’re requesting.
-- [var hashValue: Int](mobiledocumentdisplayrequest/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledocumentdisplayrequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobiledocumentdisplayrequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobiledocumentdisplayrequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
@@ -79,7 +70,7 @@ struct MobileDocumentDisplayRequest
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

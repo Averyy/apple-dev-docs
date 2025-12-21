@@ -23,7 +23,7 @@ string BetaInviteType
 - [type BetaTesterState](betatesterstate.md)
   String that describes the state of a beta tester.
 - [object BetaTester.Relationships](betatester/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

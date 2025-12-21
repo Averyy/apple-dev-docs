@@ -10,7 +10,7 @@ The intensity of the point light, measured in lumen.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -29,6 +29,8 @@ See [`PointLightComponent`](pointlightcomponent.md) for more information about h
 
 - [var attenuationRadius: Float](pointlightcomponent/attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
+- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+  The exponent value for the light’s intensity falloff-transition curve.
 
 
 ---

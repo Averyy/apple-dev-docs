@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: class
 
-A PDF417 symbol.
+A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,24 +21,24 @@ class CIPDF417CodeDescriptor
 
 #### Overview
 
-A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a PDF417 symbol.
+PDF417 is a stacked linear barcode symbol format used predominantly in transport, ID cards, and inventory management. Each pattern in the code comprises 4 bars and spaces, 17 units long.
 
-PDF417 is a stacked linear barcode symbol format used predominantly in transport, ID cards, and inventory management.  Each pattern in the code comprises 4 bars and spaces, 17 units long.
+Refer to the ISO/IEC 15438:2006(E) for the PDF417 symbol specification.
 
 ## Topics
 
 ### Creating a Descriptor
 - [init?(payload: Data, isCompact: Bool, rowCount: Int, columnCount: Int)](cipdf417codedescriptor/init(payload:iscompact:rowcount:columncount:).md)
-  Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+  Initializes an PDF417 code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](cipdf417codedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the PDF417 code.
+  The error-corrected payload containing the data encoded in the PDF417 code symbol.
 - [var isCompact: Bool](cipdf417codedescriptor/iscompact-swift.property.md)
   A boolean value telling if the PDF417 code is compact.
 - [var rowCount: Int](cipdf417codedescriptor/rowcount-swift.property.md)
-  The number of rows in the PDF417 code.
+  The number of rows in the PDF417 code symbol.
 - [var columnCount: Int](cipdf417codedescriptor/columncount-swift.property.md)
-  The number of columns in the PDF417 code.
+  The number of columns in the PDF417 code symbol.
 
 ## Relationships
 
@@ -60,11 +60,11 @@ PDF417 is a stacked linear barcode symbol format used predominantly in transport
 - [class CIBarcodeDescriptor](cibarcodedescriptor.md)
   An abstract base class that represents a machine-readable code’s attributes.
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A square QR code symbol.
+  A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  An Aztec code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A Data Matrix code symbol.
+  A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 
 
 ---

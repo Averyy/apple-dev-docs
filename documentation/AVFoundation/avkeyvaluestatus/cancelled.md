@@ -29,7 +29,7 @@ case cancelled
 - [AVKeyValueStatus.loaded](avkeyvaluestatus/loaded.md)
   The property value is ready to use.
 - [AVKeyValueStatus.failed](avkeyvaluestatus/failed.md)
-  The system is unable to load the propery value.
+  The system is unable to load the property value.
 
 
 ---

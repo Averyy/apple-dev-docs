@@ -46,6 +46,8 @@ If you specify a value for this key, the system uses it to determine how to hand
   A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
 - [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
   A value that specifies the attribution of the URLs that this asset requests.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 
 ---

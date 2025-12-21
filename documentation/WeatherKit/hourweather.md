@@ -69,10 +69,6 @@ struct HourWeather
   The amount of precipitation for the hour.
 - [var snowfallAmount: Measurement<UnitLength>](hourweather/snowfallamount.md)
   The amount of snowfall for the hour.
-### Default Implementations
-- [Decodable Implementations](hourweather/decodable-implementations.md)
-- [Encodable Implementations](hourweather/encodable-implementations.md)
-- [Equatable Implementations](hourweather/equatable-implementations.md)
 
 ## Relationships
 

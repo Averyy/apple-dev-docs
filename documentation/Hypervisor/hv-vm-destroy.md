@@ -6,7 +6,7 @@
 Destroys the VM instance associated with the current process.
 
 **Availability**:
-- macOS 11.0+
+- macOS 10.10+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func hv_vm_destroy() -> hv_return_t
 
 - [func hv_vm_config_create() -> hv_vm_config_t](hv_vm_config_create().md)
   Creates a virtual machine configuration object.
-- [func hv_vm_create(hv_vm_config_t?) -> hv_return_t](hv_vm_create(_:).md)
+- [func hv_vm_create(hv_vm_options_t) -> hv_return_t](hv_vm_create(_:).md)
   Creates a VM instance for the current process.
 - [protocol OS_hv_vm_config](os_hv_vm_config.md)
   Creates a virtual machine configuration object.

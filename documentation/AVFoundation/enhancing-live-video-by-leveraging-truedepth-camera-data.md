@@ -1,4 +1,4 @@
-# Enhancing Live Video by Leveraging TrueDepth Camera Data
+# Enhancing live video by leveraging TrueDepth camera data
 
 **Framework**: AVFoundation
 
@@ -38,7 +38,7 @@ sessionQueue.async {
 }
 ```
 
-Setting up the camera for video capture follows many of the same steps as normal video capture. See [`Setting Up a Capture Session`](setting-up-a-capture-session.md) for details on configuring streaming setup.
+Setting up the camera for video capture follows many of the same steps as normal video capture. See [`Setting up a capture session`](setting-up-a-capture-session.md) for details on configuring streaming setup.
 
 On top of normal setup, request depth data by declaring a separate output:
 
@@ -188,15 +188,15 @@ previewView.image = output
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
 - [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying Filters to a Capture Stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming Depth Data from the TrueDepth Camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
 - [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.

@@ -36,7 +36,7 @@ The default content type [`plain`](accessibilitytextcontenttype/plain.md).
 - [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
   Sets the accessibility level of this heading.
 - [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
-  The hierarchy of a heading in relation other headings.
+  The hierarchy of a heading in relation to other headings.
 - [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 

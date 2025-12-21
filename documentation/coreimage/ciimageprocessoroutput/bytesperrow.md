@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The number of bytes per row of pixels for the output image.
+The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 **Availability**:
 - iOS 10.0+
@@ -23,11 +23,11 @@ var bytesPerRow: Int { get }
 ## See Also
 
 - [var region: CGRect](ciimageprocessoroutput/region.md)
-  The rectangular region of the output image that your processor must provide.
+  The rectangular region of the output image that your Core Image Processor Kernel must provide.
 - [var metalCommandBuffer: (any MTLCommandBuffer)?](ciimageprocessoroutput/metalcommandbuffer.md)
-  A command buffer to use for image processing using Metal.
+  Returns a Metal command buffer object that can be used for encoding commands.
 - [var format: CIFormat](ciimageprocessoroutput/format.md)
-  The per-pixel data format expected of the output image.
+  The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 
 ---

@@ -20,9 +20,9 @@ var roundsToMinuteInterval: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), [`date`](uidatepicker/date.md) always rounds to the [`minuteInterval`](uidatepicker/minuteinterval.md) and only produces dates that align with the minute interval. If this property is [`false`](https://developer.apple.com/documentation/swift/false), changes to [`date`](uidatepicker/date.md) ignore the [`minuteInterval`](uidatepicker/minuteinterval.md) property.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), [`date`](uidatepicker/date.md) always rounds to the [`minuteInterval`](uidatepicker/minuteinterval.md) and only produces dates that align with the minute interval. If this property is [`false`](https://developer.apple.com/documentation/Swift/false), changes to [`date`](uidatepicker/date.md) ignore the [`minuteInterval`](uidatepicker/minuteinterval.md) property.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

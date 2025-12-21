@@ -35,6 +35,11 @@ The render pipeline’s default blend color value is `0.0` for each parameter, w
 - `blue`: A value for the blue component for the blend color constant.
 - `alpha`: A value for the alpha component for the blend color constant.
 
+## See Also
+
+- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap?)](mtlrendercommandencoder/setcolorattachmentmap(_:).md)
+  Sets the mapping from logical shader color output to physical render pass color attachments.
+
 
 ---
 

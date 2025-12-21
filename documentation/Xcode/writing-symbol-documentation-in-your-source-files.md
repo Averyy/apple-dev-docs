@@ -83,7 +83,7 @@ The Throws section appears in the symbol’s reference page, in the Quick Help p
 
 - [Adding supplemental content to a documentation catalog](adding-supplemental-content-to-a-documentation-catalog.md)
   Include articles and extension files to extend your source documentation comments or provide supporting conceptual content.
-- [SlothCreator: Building DocC Documentation in Xcode](slothcreator_building_docc_documentation_in_xcode.md)
+- [SlothCreator: Building DocC documentation in Xcode](slothcreator-building-docc-documentation-in-xcode.md)
   Build DocC documentation for a Swift package that contains a DocC Catalog.
 
 

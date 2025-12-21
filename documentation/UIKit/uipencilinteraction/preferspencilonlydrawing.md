@@ -9,6 +9,7 @@ A person’s preference for drawing with Apple Pencil only, as specified in the 
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 

@@ -32,8 +32,16 @@ struct TableSnapshot
 ### Getting cursors
 - [var cursors: [TableCursor]](tablesnapshot/cursors.md)
 - [func cursor(matching: TableCursorIdentifier) -> TableCursor?](tablesnapshot/cursor(matching:).md)
+- [func cursor(controlling: EquipmentIdentifier) -> TableCursor?](tablesnapshot/cursor(controlling:).md)
+  Returns the cursor corresponding to an interaction controlling the given equipment ID, or `nil` if no such cursors could be found.
 - [func cursors(forPlayer: Player) -> [TableCursor]](tablesnapshot/cursors(forplayer:).md)
 - [func cursors(hovering: EquipmentIdentifier) -> [TableCursor]](tablesnapshot/cursors(hovering:).md)
+- [func cursors(controlling: some Sequence<EquipmentIdentifier>) -> [TableCursor]](tablesnapshot/cursors(controlling:).md)
+  Finds and returns all the cursors corresponding to an interactions controlling any of the given equipment IDs. Duplicate equipment IDs are ignored.
+- [func cursors(for: Player) -> [TableCursor]](tablesnapshot/cursors(for:).md)
+  Finds and returns all the cursors corresponding to an interactions owned by the given player.
+- [func cursors(matching: TabletopInteraction.Identifier) -> [TableCursor]](tablesnapshot/cursors(matching:).md)
+  Finds and returns all the cursors corresponding to a given interaction.
 ### Getting information on equipment
 - [func equipment<E>(of: E.Type) -> [(E, E.State)]](tablesnapshot/equipment(of:).md)
 - [func equipment<E>(of: E.Type, childrenOf: some Equipment) -> [(E, E.State)]](tablesnapshot/equipment(of:childrenof:)-4z4s1.md)
@@ -45,19 +53,10 @@ struct TableSnapshot
 - [func equipmentIDs(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-f1sp.md)
 - [func state(matching: EquipmentIdentifier) -> (any EquipmentState)?](tablesnapshot/state(matching:)-u35k.md)
 - [func entity(matching: EquipmentIdentifier) -> Entity?](tablesnapshot/entity(matching:)-vb9w.md)
+- [func entity(forEquipment: some EntityEquipment) -> Entity?](tablesnapshot/entity(forequipment:).md)
 ### Getting score counters
 - [var counters: [ScoreCounter]](tablesnapshot/counters.md)
 - [func counter(matching: ScoreCounter.ID) -> ScoreCounter?](tablesnapshot/counter(matching:).md)
-### Instance Methods
-- [func cursor(controlling: EquipmentIdentifier) -> TableCursor?](tablesnapshot/cursor(controlling:).md)
-  Returns the cursor corresponding to an interaction controlling the given equipment ID, or `nil` if no such cursors could be found.
-- [func cursors(controlling: some Sequence<EquipmentIdentifier>) -> [TableCursor]](tablesnapshot/cursors(controlling:).md)
-  Finds and returns all the cursors corresponding to an interactions controlling any of the given equipment IDs. Duplicate equipment IDs are ignored.
-- [func cursors(for: Player) -> [TableCursor]](tablesnapshot/cursors(for:).md)
-  Finds and returns all the cursors corresponding to an interactions owned by the given player.
-- [func cursors(matching: TabletopInteraction.Identifier) -> [TableCursor]](tablesnapshot/cursors(matching:).md)
-  Finds and returns all the cursors corresponding to a given interaction.
-- [func entity(forEquipment: some EntityEquipment) -> Entity?](tablesnapshot/entity(forequipment:).md)
 
 ## Relationships
 
@@ -67,6 +66,8 @@ struct TableSnapshot
 
 ## See Also
 
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TossableRepresentation](tossablerepresentation.md)

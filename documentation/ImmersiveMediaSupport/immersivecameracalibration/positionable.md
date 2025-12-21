@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-A Boolean value that indicates whether this calibration can be anchored in mixed reality 3D space rather than being centered on the user’s eye position or not.
+A Boolean value that indicates whether to anchor this calibration in mixed reality 3D space rather than centering it on the person’s eye position.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

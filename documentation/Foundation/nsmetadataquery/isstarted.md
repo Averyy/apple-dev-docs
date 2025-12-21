@@ -22,7 +22,7 @@ var isStarted: Bool { get }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the receiver has executed the `startQuery` method; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property contains [`true`](https://developer.apple.com/documentation/Swift/true) when the receiver has executed the `startQuery` method; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

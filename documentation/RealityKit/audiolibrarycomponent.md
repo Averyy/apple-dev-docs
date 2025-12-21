@@ -10,7 +10,7 @@ A container for audio resources that you can look up by user-defined names.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -111,6 +111,10 @@ entity.playAudio(audioResource)
   An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
 - [class AudioResource](audioresource.md)
   A playable audio resource
+- [AudioResource.Calibration](audioresource/calibration.md)
+  A container for different calibration modes that can be applied for playback.
+- [AudioResource.Normalization](audioresource/normalization.md)
+  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 
 ---

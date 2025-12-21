@@ -28,12 +28,6 @@ static var nanosecond: NSCalendar.Unit { get }
   Identifier for the minute unit.
 - [static var second: NSCalendar.Unit](nscalendar/unit/second.md)
   Identifier for the second unit.
-- [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
-  Identifier for the hour unit.
-- [static var minute: NSCalendar.Unit](nscalendar/unit/minute.md)
-  Identifier for the minute unit.
-- [static var second: NSCalendar.Unit](nscalendar/unit/second.md)
-  Identifier for the second unit.
 
 
 ---

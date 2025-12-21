@@ -4,13 +4,13 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,13 +20,17 @@ enum CGContentToneMappingInfo
 
 ## Topics
 
+### Structures
+- [CGContentToneMappingInfo.DefaultOptions](cgcontenttonemappinginfo-swift.enum/defaultoptions.md)
+- [CGContentToneMappingInfo.EXRGammaOptions](cgcontenttonemappinginfo-swift.enum/exrgammaoptions.md)
+- [CGContentToneMappingInfo.ITURecommendedOptions](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions.md)
 ### Enumeration Cases
-- [case `default`(preferredDynamicRange: CGContentToneMappingInfo.DynamicRange, contentAverageLightLevel: CGContentToneMappingInfo.LightLevel)](cgcontenttonemappinginfo-swift.enum/default(preferreddynamicrange:contentaveragelightlevel:).md)
-- [case exrGamma(defog: Float, exposure: Float, kneeLow: Float, kneeHigh: Float)](cgcontenttonemappinginfo-swift.enum/exrgamma(defog:exposure:kneelow:kneehigh:).md)
-- [case imageSpecificLumaScaling(preferredDynamicRange: CGContentToneMappingInfo.DynamicRange, contentAverageLightLevel: CGContentToneMappingInfo.LightLevel)](cgcontenttonemappinginfo-swift.enum/imagespecificlumascaling(preferreddynamicrange:contentaveragelightlevel:).md)
-- [case ituRecommended(use100nitsHLGOOTF: Bool, useBT1886ForCoreVideoGamma: Bool, skipBoostToHDR: Bool, useLegacyHDREcosystem: Bool)](cgcontenttonemappinginfo-swift.enum/iturecommended(use100nitshlgootf:usebt1886forcorevideogamma:skipboosttohdr:uselegacyhdrecosystem:).md)
+- [case `default`(CGContentToneMappingInfo.DefaultOptions)](cgcontenttonemappinginfo-swift.enum/default(_:).md)
+- [case exrGamma(CGContentToneMappingInfo.EXRGammaOptions)](cgcontenttonemappinginfo-swift.enum/exrgamma(_:).md)
+- [case imageSpecificLumaScaling(CGContentToneMappingInfo.DefaultOptions)](cgcontenttonemappinginfo-swift.enum/imagespecificlumascaling(_:).md)
+- [case ituRecommended(CGContentToneMappingInfo.ITURecommendedOptions)](cgcontenttonemappinginfo-swift.enum/iturecommended(_:).md)
 - [CGContentToneMappingInfo.none](cgcontenttonemappinginfo-swift.enum/none.md)
-- [case referenceWhiteBased(preferredDynamicRange: CGContentToneMappingInfo.DynamicRange, contentAverageLightLevel: CGContentToneMappingInfo.LightLevel)](cgcontenttonemappinginfo-swift.enum/referencewhitebased(preferreddynamicrange:contentaveragelightlevel:).md)
+- [case referenceWhiteBased(CGContentToneMappingInfo.DefaultOptions)](cgcontenttonemappinginfo-swift.enum/referencewhitebased(_:).md)
 ### Enumerations
 - [CGContentToneMappingInfo.DynamicRange](cgcontenttonemappinginfo-swift.enum/dynamicrange.md)
 - [CGContentToneMappingInfo.LightLevel](cgcontenttonemappinginfo-swift.enum/lightlevel.md)

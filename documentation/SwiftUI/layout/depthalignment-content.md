@@ -6,7 +6,7 @@
 Creates a layout view with the specified depth alignment.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

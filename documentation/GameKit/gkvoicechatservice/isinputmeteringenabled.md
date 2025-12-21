@@ -17,7 +17,7 @@ var isInputMeteringEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), your application can read the [`inputMeterLevel`](gkvoicechatservice/inputmeterlevel.md) property to monitor the sound level of the microphone. If [`false`](https://developer.apple.com/documentation/swift/false), the value of the [`inputMeterLevel`](gkvoicechatservice/inputmeterlevel.md) property is undefined. Default is [`false`](https://developer.apple.com/documentation/swift/false). When your application doesn’t need to monitor the microphone, it should set this property to [`false`](https://developer.apple.com/documentation/swift/false) to improve performance.
+If [`true`](https://developer.apple.com/documentation/Swift/true), your application can read the [`inputMeterLevel`](gkvoicechatservice/inputmeterlevel.md) property to monitor the sound level of the microphone. If [`false`](https://developer.apple.com/documentation/Swift/false), the value of the [`inputMeterLevel`](gkvoicechatservice/inputmeterlevel.md) property is undefined. Default is [`false`](https://developer.apple.com/documentation/Swift/false). When your application doesn’t need to monitor the microphone, it should set this property to [`false`](https://developer.apple.com/documentation/Swift/false) to improve performance.
 
 ## See Also
 

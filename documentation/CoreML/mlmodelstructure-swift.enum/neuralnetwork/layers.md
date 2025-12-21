@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The topologically sorted layers in the NeuralNetwork.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -17,6 +19,10 @@
 ```swift
 let layers: [MLModelStructure.NeuralNetwork.Layer]
 ```
+
+## See Also
+
+- [MLModelStructure.NeuralNetwork.Layer](mlmodelstructure-swift.enum/neuralnetwork/layer.md)
 
 
 ---

@@ -6,9 +6,8 @@
 The time left before an alert, in seconds.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,7 +23,7 @@ When set to a non-nil value, the system shows the countdown in the Lock Screen f
 
 - [struct CountdownDuration](alarm/countdownduration-swift.struct.md)
   An object that defines the durations used in an alarm that has a countdown.
-- [var id: UUID](alarm/id-swift.property.md)
+- [var id: UUID](alarm/id.md)
   The unique identifier of the alarm.
 - [Alarm.State](alarm/state-swift.enum.md)
   An enum that lists all possible states of an alarm.

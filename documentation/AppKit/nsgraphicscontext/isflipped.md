@@ -16,7 +16,7 @@ var isFlipped: Bool { get }
 
 #### Discussion
 
-The state is determined by sending `flipped` to the receiver’s view that has focus. If no view has focus, returns [`false`](https://developer.apple.com/documentation/swift/false) unless the receiver is instantiated using [`init(cgContext:flipped:)`](nsgraphicscontext/init(cgcontext:flipped:).md) specifying [`true`](https://developer.apple.com/documentation/swift/true) as the `flipped` parameter.
+The state is determined by sending `flipped` to the receiver’s view that has focus. If no view has focus, returns [`false`](https://developer.apple.com/documentation/Swift/false) unless the receiver is instantiated using [`init(cgContext:flipped:)`](nsgraphicscontext/init(cgcontext:flipped:).md) specifying [`true`](https://developer.apple.com/documentation/Swift/true) as the `flipped` parameter.
 
 ## See Also
 

@@ -17,7 +17,6 @@ The average starting depth of a particle.
 ## Declaration
 
 ```swift
-@MainActor
 var particleZPosition: CGFloat { get set }
 ```
 

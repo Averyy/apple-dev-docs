@@ -19,7 +19,7 @@ for await response in responses {
 }
 ```
 
-Use `CommunicationLimits/knownhandles(in:)-59j52` to determine the people a parent or guardian approved for their child. Some examples of known handles include a person’s name, or a custom username in your app. This method establishes a connection between your app’s list of trusted entities and the settings a parent or guardian configured for their child in [`CommunicationLimits`](communicationlimits.md). You can conceal UI elements within lists, such as a message preview in a conversation list.
+Use [`knownHandles(in:)`](communicationlimits/knownhandles(in:).md) to determine the people a parent or guardian approved for their child. Some examples of known handles include a person’s name, or a custom username in your app. This method establishes a connection between your app’s list of trusted entities and the settings a parent or guardian configured for their child in [`CommunicationLimits`](communicationlimits.md). You can conceal UI elements within lists, such as a message preview in a conversation list.
 
 ```swift
 let knownHandles = CommunicationLimits.current.knownHandles(in: 
@@ -66,9 +66,16 @@ question.defaultChoice = approveIndefinitely
 
 ##### Send a Permission Question
 
-To send a permission question, make an explicit request. When you call the `CommunicationLimits/ask(_:in:)-7lcls` method, the system validates the question, the sender, and the intended recipients. Depending on the specific scenario, the system displays the appropriate prompts, such as the new composed Message screen. You receive a [`PermissionResponse`](permissionresponse.md) as an `AsyncSequence` that you obtained earlier.
+To send a permission question, make an explicit request. When you call the [`ask(_:in:)`](askcenter/ask(_:in:)-39vi7.md) method, the system validates the question, the sender, and the intended recipients. Depending on the specific scenario, the system displays the appropriate prompts, such as the new composed Message screen. You receive a [`PermissionResponse`](permissionresponse.md) as an `AsyncSequence` that you obtained earlier.
 
 At any point during the send request flow, the child has the option to cancel the request, and decide not to send the question to their parent or guardian. In this scenario, the system doesn’t deliver a response to the calling app for that specific question.
+
+## See Also
+
+- [class AskCenter](askcenter.md)
+  A class that manages permission requests you send to parents or guardians for approval.
+- [class PermissionQuestion](permissionquestion.md)
+  A class that captures a permission question posed by a person.
 
 
 ---

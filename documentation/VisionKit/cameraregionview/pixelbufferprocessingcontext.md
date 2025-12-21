@@ -3,10 +3,10 @@
 **Framework**: VisionKit  
 **Kind**: struct
 
-Pixel buffer processing context currently provides the pixel buffer for a passthrough frame.
+A context which provides the pixel buffer for a passthrough frame.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,11 +16,11 @@ struct PixelBufferProcessingContext
 
 ## Topics
 
-### Instance Properties
+### Specifying the context properties
 - [let pixelBuffer: CVReadOnlyPixelBuffer](cameraregionview/pixelbufferprocessingcontext/pixelbuffer.md)
   The pixel buffer of the passthrough frame.
 - [let timestamp: TimeInterval](cameraregionview/pixelbufferprocessingcontext/timestamp.md)
-  The timestamp of this update.
+  The timestamp of the update.
 
 
 ---

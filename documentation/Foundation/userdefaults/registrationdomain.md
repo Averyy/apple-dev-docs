@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-The domain consisting of a set of temporary defaults whose values can be set by the application to ensure that searches will always be successful.
+The identifier for the domain that contains your app’s registered default values.
 
 **Availability**:
 - iOS 2.0+
@@ -20,12 +20,22 @@ The domain consisting of a set of temporary defaults whose values can be set by 
 class let registrationDomain: String
 ```
 
+## Mentions
+
+- [Accessing settings from your code](accessing-settings-from-your-code.md)
+
+#### Discussion
+
+The settings in this domain represent default values you want to use for its settings. To register your app’s default settings, call the [`register(defaults:)`](userdefaults/register(defaults:).md) method shortly after launch.
+
 ## See Also
 
 - [class let argumentDomain: String](userdefaults/argumentdomain.md)
-  The domain consisting of defaults parsed from the application’s arguments. These are one or more pairs of the form  included in the command-line invocation of the application.
+  The identifier for the domain that contains command-line settings.
 - [class let globalDomain: String](userdefaults/globaldomain.md)
-  The domain consisting of defaults meant to be seen by all applications.
+  The identifier for the domain that contains system-specified settings for all apps.
+- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
+  An array of identifiers for the volatile domains associated with the current object.
 
 
 ---

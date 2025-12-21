@@ -23,7 +23,7 @@ func isNode(_ node: SCNNode, insideFrustumOf pointOfView: SCNNode) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bounding box of the tested node intersects the view frustum defined by the `pointOfView` node; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the bounding box of the tested node intersects the view frustum defined by the `pointOfView` node; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -31,7 +31,7 @@ Any node containing a camera or spotlight may serve as a point of view (see the 
 
 Use this method to test whether a node lies within the viewing frustum defined by another node (which may or may not be the scene renderer’s current [`pointOfView`](scnscenerenderer/pointofview.md) node). For example, in a game scene containing multiple camera nodes, you could use this method to determine which camera is currently best for viewing a moving player character.
 
-Note that this method does not perform occlusion testing. That is, it returns [`true`](https://developer.apple.com/documentation/swift/true) if the tested node lies within the specified viewing frustum regardless of whether that node’s contents are obscured by other geometry.
+Note that this method does not perform occlusion testing. That is, it returns [`true`](https://developer.apple.com/documentation/Swift/true) if the tested node lies within the specified viewing frustum regardless of whether that node’s contents are obscured by other geometry.
 
 ## Parameters
 

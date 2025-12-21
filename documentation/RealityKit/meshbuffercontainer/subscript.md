@@ -11,7 +11,7 @@ The buffer for a given semantic. There can only be one buffer for any given ID.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

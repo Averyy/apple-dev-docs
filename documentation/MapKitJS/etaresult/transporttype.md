@@ -11,7 +11,7 @@ The mode of transportation used to estimate the arrival time.
 ## Declaration
 
 ```swift
-attribute mapkit.Directions.Transport transportType;
+transportType: TransportType;
 ```
 
 ## See Also

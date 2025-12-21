@@ -12,6 +12,10 @@
 var hpkePreSharedKeyID: Data? { get set }
 ```
 
+#### Discussion
+
+The PreSharedKey Id to be used for HPKE PSK or AuthPSK mode.  This is requred if the hpkePreSharedKey is set.
+
 
 ---
 

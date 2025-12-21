@@ -25,12 +25,15 @@ var mediaType: AVMediaType? { get }
 
 - [var device: AVCaptureDevice?](averror-swift.struct/device-5iio4.md)
   The capture device in use.
+- [var device: String?](averror-swift.struct/device-1qfzr.md)
 - [var fileSize: Int64?](averror-swift.struct/filesize.md)
   The asset file size.
 - [var fileType: AVFileType?](averror-swift.struct/filetype.md)
   The asset file type.
 - [var mediaSubtypes: [Int]?](averror-swift.struct/mediasubtypes.md)
   An array of media subtypes.
+- [var mediaType: String?](averror-swift.struct/mediatype-5d8ie.md)
+  The media type.
 - [var persistentTrackID: CMPersistentTrackID?](averror-swift.struct/persistenttrackid.md)
   The persistent track ID, if the track exists.
 - [var presentationTimeStamp: CMTime?](averror-swift.struct/presentationtimestamp.md)

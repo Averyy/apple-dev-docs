@@ -9,8 +9,6 @@ Available scene-understanding options.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
-- macOS 10.15+
-- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -43,7 +41,7 @@ struct Options
 
 ## See Also
 
-- [Creating a game with scene understanding](creating_a_game_with_scene_understanding.md)
+- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 - [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
   Detect objects in an AR scene or create a detailed 3D reconstruction of the real-world environment.

@@ -30,9 +30,11 @@ The device creates an assertion when signing in with an existing credential. Use
   The concrete assertion request type for platform credentials.
 - [class ASAuthorizationPlatformPublicKeyCredentialDescriptor](asauthorizationplatformpublickeycredentialdescriptor.md)
   An object that holds the credential.
+### Accessing assertion properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md)
+  The request’s binary large object value.
 ### Instance Properties
 - [var attachment: ASAuthorizationPublicKeyCredentialAttachment](asauthorizationplatformpublickeycredentialassertion/attachment.md)
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md)
 - [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/prf-8o9sr.md)
 
 ## Relationships

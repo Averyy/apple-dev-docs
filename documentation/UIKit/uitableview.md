@@ -21,9 +21,9 @@ class UITableView
 
 ## Mentions
 
+- [Adding headers and footers to table sections](adding-headers-and-footers-to-table-sections.md)
 - [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
 - [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
-- [Adding headers and footers to table sections](adding-headers-and-footers-to-table-sections.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 

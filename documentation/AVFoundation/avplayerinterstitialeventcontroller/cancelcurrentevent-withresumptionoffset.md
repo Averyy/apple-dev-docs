@@ -34,6 +34,8 @@ When you cancel interstitial events using this method, the resumption offset val
 
 - [var events: [AVPlayerInterstitialEvent]!](avplayerinterstitialeventcontroller/events.md)
   The current schedule of interstitial events.
+- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
+  Causes the playback of the currently playing interstital event to be abandoned.
 
 
 ---

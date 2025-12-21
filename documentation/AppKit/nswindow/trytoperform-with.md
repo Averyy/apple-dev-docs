@@ -17,7 +17,7 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the window or its delegate perform `action` with `object`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) when the window or its delegate perform `action` with `object`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

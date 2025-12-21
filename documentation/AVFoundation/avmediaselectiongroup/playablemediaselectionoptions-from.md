@@ -38,6 +38,8 @@ An array containing the media selection options from `array` that are playable.
   Returns an array containing the media selection options from a given array that do not match given media characteristics.
 - [class func mediaSelectionOptions(from: [AVMediaSelectionOption], filteredAndSortedAccordingToPreferredLanguages: [String]) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:filteredandsortedaccordingtopreferredlanguages:).md)
   Returns an array of media selection options, filtering them according to whether their locales match one of the specified languages.
+- [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](avmediaselectiongroup/custommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
 
 
 ---

@@ -6,7 +6,7 @@ Make your app’s actions and content available to Siri and Apple Intelligence w
 
 #### Overview
 
-To enable enhanced understanding and more conversational interactions with Siri for your app, choose a domain and a schema that match your app’s functionality. By conforming your app intent, app entity, or your app enumeration to a schema, you ensure that Apple Intelligence understands your app’s actions and content. When you’ve identified the schema to use, leverage the [`AssistantIntent(schema:)`](assistantintent(schema:).md), [`AssistantEntity(schema:)`](assistantentity(schema:).md), and [`AssistantEnum(schema:)`](assistantenum(schema:).md) macros to write schema-conforming code.
+To enable enhanced understanding and more conversational interactions with Siri for your app, choose a domain and a schema that match your app’s functionality. By conforming your app intent, app entity, or your app enumeration to a schema, you ensure that Apple Intelligence understands your app’s actions and content. When you’ve identified the schema to use, leverage the [`AppIntent(schema:)`](appintent(schema:).md), [`AppEntity(schema:)`](appentity(schema:).md), and [`AppEnum(schema:)`](appenum(schema:).md) macros to write schema-conforming code.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
@@ -61,6 +61,11 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
   Assistant schema conformance for app intents that offer file management functionality.
 - [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
   Assistant schema conformance for app entities that describe files.
+### iPhone side button access (only in Japan)
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
+- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
+  Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
 ### Journaling
 - [Making journaling actions available to Siri and Apple Intelligence](making-journaling-actions-available-to-siri-and-apple-intelligence.md)
   Create app intents and entities to integrate your app’s journaling functionality with Siri and Apple Intelligence.
@@ -137,7 +142,7 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 - [Making onscreen content available to Siri and Apple Intelligence](making-onscreen-content-available-to-siri-and-apple-intelligence.md)
   Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
 - [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
 
 ---

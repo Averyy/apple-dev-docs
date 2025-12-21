@@ -22,7 +22,7 @@ init(rawValue: Int32)
 
 ## See Also
 
-- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue-swift.property.md)
+- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue.md)
   A raw value for the export option.
 
 

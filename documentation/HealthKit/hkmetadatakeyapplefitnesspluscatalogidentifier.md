@@ -19,6 +19,8 @@ let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String
 
 #### Discussion
 
+Contains the catalog identifier of the Fitness+ workout.
+
 This key only exists if the workout was completed in Fitness+. The expected value type is an NSString containing the Fitness+ catalog identifier.
 
 ## See Also

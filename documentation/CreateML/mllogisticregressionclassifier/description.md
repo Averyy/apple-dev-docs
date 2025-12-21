@@ -21,8 +21,6 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mllogisticregressionclassifier/model.md)
-  The Core ML model.
 - [var debugDescription: String](mllogisticregressionclassifier/debugdescription.md)
   A text representation of the logistic regression classifier that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mllogisticregressionclassifier/playgrounddescription.md)

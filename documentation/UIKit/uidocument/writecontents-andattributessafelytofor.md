@@ -14,7 +14,6 @@ Ensures that document data is written safely to a specified location in the appl
 ## Declaration
 
 ```swift
-@MainActor
 func writeContents(_ contents: Any, andAttributes additionalFileAttributes: [AnyHashable : Any]? = nil, safelyTo url: URL, for saveOperation: UIDocument.SaveOperation) throws
 ```
 

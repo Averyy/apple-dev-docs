@@ -28,7 +28,7 @@ You can also enable the same compiler setting through the command line:
 xcrun metal -std=metal3.2 -fmetal-enable-logging -o helloTriangle.metallib helloTriangle.metal
 ```
 
-If you’re creating a Metal Library by compiling source code using `newLibraryWithSource`, use the `MTLCompileOptions` object’s [`enableLogging`](mtlcompileoptions/enablelogging.md) property to set the compile option:
+If you’re creating a Metal Library by compiling source code using `newLibraryWithSource`, use the `MTLCompileOptions` instance’s [`enableLogging`](mtlcompileoptions/enablelogging.md) property to set the compile option:
 
 ```objective-c
 MTLCompileOptions *options = [MTLCompileOptions new];
@@ -74,7 +74,7 @@ uint index [[thread_position_in_grid]];
 }
 ```
 
-If you want to filter the log messages you preview, use `os_log` functions along with subsystems and categories. To specify the subsystems and categories, create an `os_log` object. You can then use this object and call logging functions similarly to the code snippet above. The subsystem, category, and format strings should be less than 1024 characters per message. Exceeding this limit can result in truncated messages:
+If you want to filter the log messages you preview, use `os_log` functions along with subsystems and categories. To specify the subsystems and categories, create an `os_log` instance. You can then use this instance and call logging functions similarly to the code snippet above. The subsystem, category, and format strings should be less than 1024 characters per message. Exceeding this limit can result in truncated messages:
 
 ```metal
 constant os_log logger(/*subsystem=*/"com.metal.xyz", /*category=*/"abc");
@@ -104,7 +104,7 @@ To view the logs through the Xcode debug console, set the environment variable `
 
 The above methods enable shader logging for the entire app. However, if you want to enable logging for a specific command buffer or command queue, you can use the Metal API, [`MTLLogState`](mtllogstate.md).
 
-To create an `MTLLogState`, first create a [`MTLLogStateDescriptor`](mtllogstatedescriptor.md), and set its buffer size and log level:
+To create an `MTLLogState`, first create an [`MTLLogStateDescriptor`](mtllogstatedescriptor.md), and set its buffer size and log level:
 
 ```objective-c
 MTLLogStateDescriptor *logStateDesc = [MTLLogStateDescriptor new];
@@ -156,8 +156,8 @@ In the absence of using log handlers, your CPU adds a default handler that inter
 
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Capturing Metal commands programmatically](capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
   Prototype and test your Metal apps in Simulator.
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
@@ -166,9 +166,9 @@ In the absence of using log handlers, your CPU adds a default handler that inter
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+- [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
-- [Metal Debugging Types](metal-debugging-types.md)
+- [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 

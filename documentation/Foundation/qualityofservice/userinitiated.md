@@ -28,10 +28,6 @@ Used for performing work that has been explicitly requested by the user, and for
 - [QualityOfService.utility](qualityofservice/utility.md)
 - [QualityOfService.background](qualityofservice/background.md)
 - [QualityOfService.default](qualityofservice/default.md)
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
 
 
 ---

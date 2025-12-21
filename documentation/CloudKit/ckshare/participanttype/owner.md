@@ -5,15 +5,6 @@
 
 The type of an owner.
 
-**Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-
 ## Declaration
 
 ```swift

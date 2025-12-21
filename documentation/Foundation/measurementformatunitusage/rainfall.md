@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Used to format the rainfall amount
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

@@ -26,7 +26,7 @@ func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> S
 
 ## See Also
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 - [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.

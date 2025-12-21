@@ -17,6 +17,8 @@ var companions: [LAEnvironment.MechanismCompanion] { get }
 
 #### Discussion
 
+Companion authentication mechanisms.
+
 Companion mechanisms such as Apple Watch can appear and disappear as they get in and out of reach, but this property enumerates paired companions, even if they are not reachable at the moment. Check @c isUsable property to determine if a particular companion type is available for use. Note that items in this array represent paired companion types, not individual devices. Therefore, even if the user has paired multiple Apple Watch devices for companion authentication, the array will contain only one
 
 

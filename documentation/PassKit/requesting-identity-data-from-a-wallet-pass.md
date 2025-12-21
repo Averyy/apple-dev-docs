@@ -6,7 +6,7 @@ Initiate a request for identity information by prompting a user for permission a
 
 #### Overview
 
-The Wallet app allows people to store a state identification card, mobile driver’s license (mDL), or national identification card from a government issuing authority, such as the department of motor vehicles. These documents are between a person and the issuing authority — Apple doesn’t create or see the documents.
+The Wallet app allows people to store an identification card, for example, a mobile driver’s license (mDL), or national identification card from a government issuing authority, or a digital ID issued by Apple.
 
 Beginning on iPhone with iOS 16, you can request information from IDs in Wallet to verify a person’s age or identity. If a person accepts the request, the system gets the information from their issuing authority and your app receives a payload. After decryption, the payload contains data that follows the ISO 18013-5 specification. To use the elements your app requests, send the payload to your server for verification.
 
@@ -81,28 +81,14 @@ Even if you don’t live in an area that supports IDs in Wallet, you can test yo
 
 ## See Also
 
-- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
-  An object you use to request information from a user’s photo ID or equivalent document.
-- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
-  An object you use to request information from multiple identity documents.
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
-  An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
-  The object for specifying the metadata necessary to provision identity documents.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
-  Configuration to define the identity document.
-- [struct JPKIPassContents](jpkipasscontents.md)
-  A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
-  Configuration to define the identity document.
-- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
-  A preview object that contains information representing the pass you add to Wallet.
-- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
-  A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
-- [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
-  An object for requesting information from a user’s national ID card.
-- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
-  A class that contains metadata indicating the specific product instance to provision.
+- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
+  A list of identifiers that specify pass types that your app can access in Wallet.
+- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+  A list of merchant IDs your app uses for Apple Pay support.
+- [com.apple.developer.in-app-identity-presentment](../BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.md)
+  An entitlement that verifies age or identity.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 
 
 ---

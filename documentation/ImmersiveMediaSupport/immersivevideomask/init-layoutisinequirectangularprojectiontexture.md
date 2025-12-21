@@ -6,8 +6,8 @@
 Creates an immersive video mask object.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,8 +17,8 @@ init(layout: ImmersiveVideoMask.Layout, isInEquirectangularProjection: Bool, tex
 
 ## Parameters
 
-- `layout`: How the left and right sides of the mask are represented within the texture. See   for valid options.
-- `isInEquirectangularProjection`: Boolean value that indicates whether the generated mask texture is in equirectangular projection space or not.
+- `layout`: The layout of the mask within the texture. See   for valid options.
+- `isInEquirectangularProjection`: A Boolean value that indicates whether the generated mask texture is in equirectangular projection space.
 - `texture`: The MTLTexture containing the mask ready for rendering.
 
 

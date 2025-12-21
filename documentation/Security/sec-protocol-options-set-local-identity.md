@@ -20,9 +20,7 @@ func sec_protocol_options_set_local_identity(_ options: sec_protocol_options_t, 
 
 #### Discussion
 
-```None
- Set the local identity to be used for this protocol instance.
-```
+Set the local identity to be used for this protocol instance.
 
 ## Parameters
 

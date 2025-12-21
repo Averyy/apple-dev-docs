@@ -17,7 +17,7 @@ struct AutomaticUpdate
 
 #### Overview
 
-Your app’s [`MarketplaceExtension`](marketplaceextension.md) provides the operating system an instance of this structure when asked via your implementation of the [`automaticUpdates(for:)`](marketplaceextension/automaticupdates(for:).md) callback.
+Your app’s [`MarketplaceAppExtension`](marketplaceappextension.md) provides the operating system an instance of this structure when asked via your implementation of the [`automaticUpdates(for:)`](marketplaceappextension/automaticupdates(for:).md) callback.
 
 ## Topics
 
@@ -39,7 +39,7 @@ Your app’s [`MarketplaceExtension`](marketplaceextension.md) provides the oper
 ## See Also
 
 - [class AppLibrary](applibrary.md)
-  An object that manages search characteristics, licensing, and the installation of apps.
+  A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
 - [struct AppVersion](appversion.md)
   Information that describes an app, including its identifier and version number.
 - [struct InstallRequirements](installrequirements.md)

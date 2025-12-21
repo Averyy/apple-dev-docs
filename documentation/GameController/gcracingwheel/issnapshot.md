@@ -17,7 +17,7 @@ var isSnapshot: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the racing wheel is a snapshot at a moment in time of a real device; otherwise, it’s an actual racing wheel.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the racing wheel is a snapshot at a moment in time of a real device; otherwise, it’s an actual racing wheel.
 
 ## See Also
 

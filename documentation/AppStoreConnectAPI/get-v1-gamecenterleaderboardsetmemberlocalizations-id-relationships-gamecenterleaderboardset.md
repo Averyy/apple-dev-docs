@@ -12,6 +12,8 @@
   Get information about leaderboard member set localizations.
 - [Read leaderboard information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboard.md)
   Get information about a leaderboard for a specific leaderboard set member localization.
+- [Read tge leaderboard ID for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboard.md)
+  Get the leaderboard ID for a specific leaderboard set member localization.
 - [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
 - [Create a leaderboard set member localization](post-v1-gamecenterleaderboardsetmemberlocalizations.md)

@@ -13,7 +13,6 @@ Returns a new fused unary arithmetic parameters structure.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

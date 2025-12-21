@@ -17,7 +17,7 @@ var isActive: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the app is active or [`false`](https://developer.apple.com/documentation/swift/false) if it’s not.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the app is active or [`false`](https://developer.apple.com/documentation/Swift/false) if it’s not.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func modifyFont(_ sender: Any?)
 
 #### Discussion
 
-By default, the action message is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject/1462311-changefont). This action method causes the receiver to send its action message up the responder chain.
+By default, the action message is [`changeFont:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/changeFont:). This action method causes the receiver to send its action message up the responder chain.
 
 When a responder replies by providing a font to convert in a [`convert(_:)`](nsfontmanager/convert(_:).md) message, the receiver converts the font in the manner specified by `sender`. The conversion is determined by sending a `tag` message to `sender` and invoking a corresponding method:
 

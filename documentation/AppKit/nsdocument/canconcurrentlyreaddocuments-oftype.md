@@ -17,13 +17,13 @@ class func canConcurrentlyReadDocuments(ofType typeName: String) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) by default; subclasses can override to return [`true`](https://developer.apple.com/documentation/swift/true), thereby causing documents of the specified type to be read concurrently.
+[`false`](https://developer.apple.com/documentation/Swift/false) by default; subclasses can override to return [`true`](https://developer.apple.com/documentation/Swift/true), thereby causing documents of the specified type to be read concurrently.
 
 #### Discussion
 
-Your [`NSDocument`](nsdocument.md) subclass can implement this method to return [`true`](https://developer.apple.com/documentation/swift/true) to enable loading of documents concurrently, using background threads. When this facility is enabled in this way, [`init(contentsOf:ofType:)`](nsdocument/init(contentsof:oftype:).md) executes on a background thread when opening files via the Open panel or from the Finder. This allows concurrent reading of multiple documents and also allows the app to be responsive while reading a large document.
+Your [`NSDocument`](nsdocument.md) subclass can implement this method to return [`true`](https://developer.apple.com/documentation/Swift/true) to enable loading of documents concurrently, using background threads. When this facility is enabled in this way, [`init(contentsOf:ofType:)`](nsdocument/init(contentsof:oftype:).md) executes on a background thread when opening files via the Open panel or from the Finder. This allows concurrent reading of multiple documents and also allows the app to be responsive while reading a large document.
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). A subclass override should return [`true`](https://developer.apple.com/documentation/swift/true) only for document types whose reading is thread-safe, as described in [`Multicore Considerations`](nsdocument#Multicore-Considerations.md). You should disable undo registration during document reading, which is a good idea even in the absence of concurrency.
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). A subclass override should return [`true`](https://developer.apple.com/documentation/Swift/true) only for document types whose reading is thread-safe, as described in [`Multicore Considerations`](nsdocument#Multicore-Considerations.md). You should disable undo registration during document reading, which is a good idea even in the absence of concurrency.
 
 If you are checking the current Apple Event for a search string, you should not enable concurrent document opening, because code handling a document opening triggered by an Apple Event cannot get the current Apple Event. This happens because the event is suspended until all documents are read to enable correct reporting of success or error.
 

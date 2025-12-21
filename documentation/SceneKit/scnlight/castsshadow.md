@@ -22,7 +22,7 @@ var castsShadow: Bool { get set }
 
 #### Discussion
 
-Geometries illuminated by the light cast shadows only if the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`type`](scnlight/type.md) property of the light is [`spot`](scnlight/lighttype/spot.md) or [`directional`](scnlight/lighttype/directional.md). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Geometries illuminated by the light cast shadows only if the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the [`type`](scnlight/type.md) property of the light is [`spot`](scnlight/lighttype/spot.md) or [`directional`](scnlight/lighttype/directional.md). The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

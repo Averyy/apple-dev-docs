@@ -6,13 +6,13 @@
 A scene that presents an interface appropriate for Assistive Access on iOS and iPadOS. On other platforms, this scene is unused.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ struct AssistiveAccess<Content> where Content : View
 
 ### Initializers
 - [init(content: () -> Content)](assistiveaccess/init(content:).md)
-  Creates a Assistive Access scene.
+  Creates an Assistive Access scene.
 
 ## Relationships
 

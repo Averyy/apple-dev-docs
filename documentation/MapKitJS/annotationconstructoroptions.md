@@ -11,34 +11,12 @@ An object that contains options for creating annotation features.
 ## Declaration
 
 ```swift
-dictionary AnnotationConstructorOptions {
-	string title;
-	string subtitle;
-	string accessibilityLabel;
-	Object data;
-	boolean draggable;
-	boolean visible;
-	boolean enabled;
-	boolean selected;
-	boolean calloutEnabled;
-	boolean animates;
-	string appearanceAnimation;
-	DOMPoint anchorOffset;
-	DOMPoint calloutOffset;
-	AnnotationCalloutDelegate callout;
-	Object size;
-	number displayPriority;
-	string collisionMode;
-	mapkit.Padding padding;
-	string clusteringIdentifier;
-	Place place;
-	string id;
-};
+interface AnnotationConstructorOptions
 ```
 
 #### Overview
 
-Use [`AnnotationConstructorOptions`](annotationconstructoroptions.md) when you need to create a custom view to provide features beyond those that the [`mapkit.ImageAnnotation`](mapkit.imageannotation.md) object provides.
+Use [`AnnotationConstructorOptions`](annotationconstructoroptions.md) when you need to create a custom view to provide features beyond those that the [`ImageAnnotation`](imageannotation.md) object provides.
 
 ## Topics
 
@@ -51,7 +29,7 @@ Use [`AnnotationConstructorOptions`](annotationconstructoroptions.md) when you n
   The text to display as a subtitle on the second line of an annotation’s callout.
 - [accessibilityLabel](annotationconstructoroptions/accessibilitylabel.md)
   Accessibility text for the annotation.
-### Setting position and appearance attributes
+### Setting position and appearances
 - [anchorOffset](annotationconstructoroptions/anchoroffset.md)
   The offset, in CSS pixels, of the element from the bottom center.
 - [appearanceAnimation](annotationconstructoroptions/appearanceanimation.md)
@@ -74,7 +52,7 @@ Use [`AnnotationConstructorOptions`](annotationconstructoroptions.md) when you n
 - [selected](annotationconstructoroptions/selected.md)
   A Boolean value that determines whether the map displays the annotation in a selected state.
 - [place](annotationconstructoroptions/place.md)
-  An object that allows a custom annotation to potentially supecede a point of interest at the same map coordinates.
+  An object that allows a custom annotation to potentially supersede a point of interest at the same map coordinates.
 ### Creating callouts
 - [callout](annotationconstructoroptions/callout.md)
   A delegate that enables you to customize the annotation’s callout.
@@ -89,19 +67,28 @@ Use [`AnnotationConstructorOptions`](annotationconstructoroptions.md) when you n
   A mode that determines the shape of the collision frame.
 - [id](annotationconstructoroptions/id.md)
   A Place ID that uniquely identifies a feature.
+### Instance Properties
+- [coordinate](annotationconstructoroptions/coordinate.md)
+  Sets the coordinate of the annotation.
+- [element](annotationconstructoroptions/element.md)
+  Sets the element of the annotation.
+- [map](annotationconstructoroptions/map.md)
+  Sets the annotation’s map.
+- [selectionAccessory](annotationconstructoroptions/selectionaccessory.md)
+  The accessory that displays place information when a person selects a place.
+- [selectionAccessoryOffset](annotationconstructoroptions/selectionaccessoryoffset.md)
+  The offset that changes the selection accessory’s default anchor point.
+
+## Relationships
+
+### Inherited By
+- [ImageAnnotationConstructorOptions](imageannotationconstructoroptions.md)
+- [MarkerAnnotationConstructorOptions](markerannotationconstructoroptions.md)
 
 ## See Also
 
-- [mapkit.Annotation](mapkit.annotation/mapkit.annotation.md)
+- [new Annotation(location, factory, options)](annotation/annotationconstructor.md)
   Creates a new annotation given its location and initialization options.
-- [mapkit.Annotation.CollisionMode](mapkit.annotation.collisionmode.md)
-  Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view.
-- [mapkit.Annotation.DisplayPriority](mapkit.annotation.displaypriority.md)
-  Constant values that provide a hint the map uses to prioritize displaying annotations.
-- [addEventListener](mapkit.annotation/addeventlistener.md)
-  Adds an event listener to handle events that user interactions with annotations trigger.
-- [removeEventListener](mapkit.annotation/removeeventlistener.md)
-  Removes an event listener.
 
 
 ---

@@ -21,7 +21,7 @@ var defersCurrentPageDisplay: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) so that, when the user taps the control to go to a new page, the class defers updating the page control until it calls [`updateCurrentPageDisplay()`](uipagecontrol/updatecurrentpagedisplay().md). Set the value to [`false`](https://developer.apple.com/documentation/swift/false) (the default) to have the page control updated immediately.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) so that, when the user taps the control to go to a new page, the class defers updating the page control until it calls [`updateCurrentPageDisplay()`](uipagecontrol/updatecurrentpagedisplay().md). Set the value to [`false`](https://developer.apple.com/documentation/Swift/false) (the default) to have the page control updated immediately.
 
 ## See Also
 

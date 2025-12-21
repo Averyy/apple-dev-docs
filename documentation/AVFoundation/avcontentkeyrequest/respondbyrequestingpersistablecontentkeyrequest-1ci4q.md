@@ -20,13 +20,6 @@ func respondByRequestingPersistableContentKeyRequest()
 
 To create a key that persists across multiple playback sessions, use this method to request an [`AVPersistableContentKeyRequest`](avpersistablecontentkeyrequest.md) object. If the underlying protocol supports persistable content keys, the delegate receives a persistable content key request via the [`contentKeySession(_:didProvide:)`](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md) method. An [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) is returned if your delegate does not respond to [`contentKeySession(_:didProvide:)`](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md).
 
-## See Also
-
-- [func processContentKeyResponse(AVContentKeyResponse)](avcontentkeyrequest/processcontentkeyresponse(_:).md)
-  Sends the specified content key response to the receiver for processing.
-- [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
-  Tells the receiver that the app was unable to obtain a content key response.
-
 
 ---
 

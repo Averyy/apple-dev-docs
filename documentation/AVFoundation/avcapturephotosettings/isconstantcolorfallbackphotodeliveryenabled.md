@@ -20,7 +20,7 @@ var isConstantColorFallbackPhotoDeliveryEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to receive a fallback photo that you can use if the main constant color photo’s confidence level doesn’t meet your requirement.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to receive a fallback photo that you can use if the main constant color photo’s confidence level doesn’t meet your requirement.
 
 ## See Also
 

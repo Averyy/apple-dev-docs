@@ -20,10 +20,9 @@ class PhraseCountGenerator
 
 ## Topics
 
-### Classes
-- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
-### Initializers
+### Protocol requirements
 - [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
+- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
 
 ## Relationships
 
@@ -39,6 +38,8 @@ class PhraseCountGenerator
 
 ## See Also
 
+- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](sfcustomlanguagemodeldata/insert(phrasecountgenerator:).md)
+  Add a stream of samples to the body of training data.
 - [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
   A `PhraseCountGenerator` that produces `PhraseCount` values based on templates.
 

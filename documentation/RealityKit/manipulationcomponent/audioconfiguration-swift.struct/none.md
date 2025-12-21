@@ -6,7 +6,7 @@
 The system will not apply any sounds.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

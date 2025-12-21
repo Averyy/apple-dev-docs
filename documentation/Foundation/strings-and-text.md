@@ -7,7 +7,7 @@ Create and process strings of Unicode characters, use regular expressions to fin
 ## Topics
 
 ### Strings
-- [@frozen struct String](../Swift/String.md)
+- [struct String](../Swift/String.md)
   A Unicode string value that is a collection of characters.
 - [String Encodings](1497293-string-encodings.md)
   Constants for encoding standards used when converting raw data to and from string representations.
@@ -25,7 +25,7 @@ Create and process strings of Unicode characters, use regular expressions to fin
 ### Characters
 - [struct CharacterSet](characterset.md)
   A set of Unicode character values for use in search operations.
-- [typealias UnicodeScalar = Unicode.Scalar](../Swift/UnicodeScalar.md)
+- [typealias UnicodeScalar](../Swift/UnicodeScalar.md)
 ### Pattern Matching
 - [class Scanner](scanner.md)
   A string parser that scans for substrings or characters in a character set, and for numeric values from decimal, hexadecimal, and floating-point representations.

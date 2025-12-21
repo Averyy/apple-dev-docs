@@ -22,7 +22,7 @@ optional func itemThumbnailData(for csc: UICloudSharingController) -> Data?
 
 Implement this method to return image data representing the shared recording. Returning `nil` tells the [`UICloudSharingController`](uicloudsharingcontroller.md) instance to display the generic image. Not implementing this method is the same as returning `nil`.
 
-[`itemThumbnailData(for:)`](uicloudsharingcontrollerdelegate/itemthumbnaildata(for:).md) is called only when creating a new share. For an existing share, the thumbnail image is retrieved from the share using the [`CKShareThumbnailImageDataKey`](https://developer.apple.com/documentation/cloudkit/cksharethumbnailimagedatakey) key.
+[`itemThumbnailData(for:)`](uicloudsharingcontrollerdelegate/itemthumbnaildata(for:).md) is called only when creating a new share. For an existing share, the thumbnail image is retrieved from the share using the [`CKShareThumbnailImageDataKey`](https://developer.apple.com/documentation/CloudKit/CKShareThumbnailImageDataKey-1rxdx) key.
 
 The following code shows an example of retrieving the image data from a data set stored in an asset catalog found in the main bundle.
 

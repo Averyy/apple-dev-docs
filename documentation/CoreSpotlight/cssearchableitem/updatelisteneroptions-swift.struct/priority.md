@@ -18,6 +18,11 @@ A value that describes the listener priority options.
 static var priority: CSSearchableItem.UpdateListenerOptions { get }
 ```
 
+## See Also
+
+- [static var summarization: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/summarization.md)
+  A value that describes the listener summarization options.
+
 
 ---
 

@@ -52,7 +52,7 @@ struct Note: Transferable {
 }
 
  extension UTType {
-     static var todo: UTType { UTType(exportedAs: "com.example.todo") }
+     static let todo = UTType(exportedAs: "com.example.todo")
  }
 ```
 
@@ -79,11 +79,6 @@ Use [`FileRepresentation`](FileRepresentation.md) or [`DataRepresentation`](Data
   Creates a transfer representation that’s imported by proxy through another transfer representation.
 - [init(importing: (ProxyRepresentation) throws -> Item)](proxyrepresentation/init(importing:)-pq40.md)
   Creates a transfer representation that’s imported by proxy through another transfer representation.
-### Type Aliases
-- [ProxyRepresentation.Body](proxyrepresentation/body.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](proxyrepresentation/transferrepresentation-implementations.md)
 
 ## Relationships
 

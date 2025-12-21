@@ -1,4 +1,4 @@
-# Creating and Sampling Textures
+# Creating and sampling textures
 
 **Framework**: Metal
 
@@ -37,7 +37,7 @@ Metal requires all textures to be formatted with a specific [`MTLPixelFormat`](m
 
 ![Bit Layout of the BGRA8Unorm Pixel Format](https://docs-assets.developer.apple.com/published/c3d70e8002863ea924bf136c372c5bcf/1-BGRA8UnormBitLayout.png)
 
-Before you can populate a Metal texture, you must format the image data into the texture’s pixel format. TGA files can provide pixel data either in a 32-bit-per-pixel format or a 24-bit-per-pixel format. TGA files that use 32 bits per pixel are already arranged in this format, so you just copy the pixel data. To convert a 24-bit-per-pixel BGR image, copy the red, green, and blue channels and set the alpha channel to 255, indicating a fully opaque pixel.
+Before you can populate a Metal texture, you need to format the image data into the texture’s pixel format. TGA files can provide pixel data either in a 32-bit-per-pixel format or a 24-bit-per-pixel format. TGA files that use 32 bits per pixel are already arranged in this format, so you just copy the pixel data. To convert a 24-bit-per-pixel BGR image, copy the red, green, and blue channels and set the alpha channel to 255, indicating a fully opaque pixel.
 
 ```objective-c
 // Initialize a source pointer with the source image data that's in BGR form
@@ -53,14 +53,14 @@ uint8_t *dstImageData = mutableData.mutableBytes;
 for(NSUInteger y = 0; y < _height; y++)
 {
     // If bit 5 of the descriptor is not set, flip vertically
-    // to transform the data to Metal's top-left texture origin
+    // to transform the data to the Metal texture origin, which is the top-left.
     NSUInteger srcRow = (tgaInfo->topOrigin) ? y : _height - 1 - y;
 
     // For every column of the current row
     for(NSUInteger x = 0; x < _width; x++)
     {
         // If bit 4 of the descriptor is set, flip horizontally
-        // to transform the data to Metal's top-left texture origin
+        // to transform the data to the Metal texture origin, which is the top-left.
         NSUInteger srcColumn = (tgaInfo->rightOrigin) ? _width - 1 - x : x;
 
         // Calculate the index for the first byte of the pixel you're
@@ -140,7 +140,7 @@ Call the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/repla
 
 ##### Map the Texture Onto a Geometric Primitive
 
-You can’t render a texture on its own; you must map it onto geometric primitives (in this example, a pair of triangles) that are output by the vertex stage and turned into fragments by the rasterizer. Each fragment needs to know which part of the texture should be applied to it. You define this mapping with : floating-point positions that map locations on a texture image to locations on the geometric surface.
+You can’t render a texture on its own; you need to map it onto geometric primitives (in this example, a pair of triangles) that are output by the vertex stage and turned into fragments by the rasterizer. Each fragment needs to know which part of the texture should be applied to it. You define this mapping with : floating-point positions that map locations on a texture image to locations on the geometric surface.
 
 For 2D textures, normalized texture coordinates are values from 0.0 to 1.0 in both x and y directions. A value of (0.0, 0.0) specifies the texel at the first byte of the texture data (the top-left corner of the image). A value of (1.0, 1.0) specifies the texel at the last byte of the texture data (the bottom-right corner of the image).
 
@@ -237,7 +237,7 @@ The process for encoding and submitting drawing commands is the same as that sho
 
 - [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
   Create textures by running copy and dispatch commands in a compute pass on a GPU.
-- [Reading Pixel Data from a Drawable Texture](reading-pixel-data-from-a-drawable-texture.md)
+- [Reading pixel data from a drawable texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)
   Limit texture memory usage for large textures by loading or unloading image detail on the basis of MIP and tile region.

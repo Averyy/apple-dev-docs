@@ -34,8 +34,6 @@ struct StandaloneWeekday
 - [static var wide: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/wide.md)
   The full representation of a standalone weekday.
 ### Comparing Standalone Weekdays
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

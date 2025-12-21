@@ -6,10 +6,10 @@
 A type representing an element that you can request from a photo ID.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,15 +19,6 @@ struct Element
 
 ## Topics
 
-### Operators
-- [static func == (MobilePhotoIDRawDataRequest.Element, MobilePhotoIDRawDataRequest.Element) -> Bool](mobilephotoidrawdatarequest/element/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilephotoidrawdatarequest/element/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilephotoidrawdatarequest/element/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let address: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/address.md)
   The photo ID holder’s address on record with the issuer.
@@ -54,8 +45,6 @@ struct Element
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the photo ID holder’s age is at least the given age.
-### Default Implementations
-- [Equatable Implementations](mobilephotoidrawdatarequest/element/equatable-implementations.md)
 
 ## Relationships
 
@@ -68,7 +57,7 @@ struct Element
 ## See Also
 
 - [init(retainedElements: [MobilePhotoIDRawDataRequest.Element], nonRetainedElements: [MobilePhotoIDRawDataRequest.Element])](mobilephotoidrawdatarequest/init(retainedelements:nonretainedelements:).md)
-  Returns a mobile driver’s license raw data request.
+  Returns a photo ID raw data request.
 - [var nonRetainedElements: [MobilePhotoIDRawDataRequest.Element]](mobilephotoidrawdatarequest/nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than is necessary to process the result in realtime.
 - [var retainedElements: [MobilePhotoIDRawDataRequest.Element]](mobilephotoidrawdatarequest/retainedelements.md)

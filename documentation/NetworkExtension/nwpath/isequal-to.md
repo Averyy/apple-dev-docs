@@ -21,7 +21,7 @@ func isEqual(to path: NWPath) -> Bool
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the objects are equal, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If two [`NWPath`](nwpath.md) objects are equal, this means that the underlying network configuration (routes, interfaces, address, etc.) are the same between them.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the objects are equal, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. If two [`NWPath`](nwpath.md) objects are equal, this means that the underlying network configuration (routes, interfaces, address, etc.) are the same between them.
 
 ## Parameters
 

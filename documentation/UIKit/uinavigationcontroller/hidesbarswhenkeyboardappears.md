@@ -20,7 +20,7 @@ var hidesBarsWhenKeyboardAppears: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the appearance of the keyboard causes the navigation controller to hide its navigation bar and toolbar. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the appearance of the keyboard causes the navigation controller to hide its navigation bar and toolbar. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

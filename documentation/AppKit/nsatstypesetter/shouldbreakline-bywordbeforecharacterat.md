@@ -16,7 +16,7 @@ func shouldBreakLine(byWordBeforeCharacterAt charIndex: Int) -> Bool
 
 #### Discussion
 
-The typesetter calls this method, if implemented by a subclass, before breaking a line by word-wrapping before the character at the given character index, enabling the subclass to control line breaking. A subclass can override this method to customize the text layout process. If the method returns [`false`](https://developer.apple.com/documentation/swift/false), the typesetter continues looking for a break point.
+The typesetter calls this method, if implemented by a subclass, before breaking a line by word-wrapping before the character at the given character index, enabling the subclass to control line breaking. A subclass can override this method to customize the text layout process. If the method returns [`false`](https://developer.apple.com/documentation/Swift/false), the typesetter continues looking for a break point.
 
 ## See Also
 

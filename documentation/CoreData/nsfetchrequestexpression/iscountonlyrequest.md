@@ -22,7 +22,7 @@ var isCountOnlyRequest: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents a count-only fetch request, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the managed object context (from the [`contextExpression`](nsfetchrequestexpression/contextexpression.md)) will perform [`fetch(_:)`](nsmanagedobjectcontext/fetch(_:)-38ys1.md): with the [`requestExpression`](nsfetchrequestexpression/requestexpression.md); if this method returns [`true`](https://developer.apple.com/documentation/swift/true), the managed object context will perform [`count(for:)`](nsmanagedobjectcontext/count(for:)-93zbm.md) with the [`requestExpression`](nsfetchrequestexpression/requestexpression.md).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver represents a count-only fetch request, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), the managed object context (from the [`contextExpression`](nsfetchrequestexpression/contextexpression.md)) will perform [`fetch(_:)`](nsmanagedobjectcontext/fetch(_:)-38ys1.md): with the [`requestExpression`](nsfetchrequestexpression/requestexpression.md); if this method returns [`true`](https://developer.apple.com/documentation/Swift/true), the managed object context will perform [`count(for:)`](nsmanagedobjectcontext/count(for:)-93zbm.md) with the [`requestExpression`](nsfetchrequestexpression/requestexpression.md).
 
 ## See Also
 

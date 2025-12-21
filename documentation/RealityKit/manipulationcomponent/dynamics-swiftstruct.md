@@ -6,7 +6,7 @@
 Settings that allow customization of the interaction behavior per target.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

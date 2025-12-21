@@ -22,9 +22,6 @@ enum TopResult
 
 ## Topics
 
-### Operators
-- [static func == (MusicLibrarySearchResponse.TopResult, MusicLibrarySearchResponse.TopResult) -> Bool](musiclibrarysearchresponse/topresult/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicLibrarySearchResponse.TopResult.album(_:)](musiclibrarysearchresponse/topresult/album(_:).md)
   An item that corresponds to an album.
@@ -39,24 +36,10 @@ enum TopResult
 ### Instance Properties
 - [var artwork: Artwork?](musiclibrarysearchresponse/topresult/artwork.md)
   The artwork of this top result for library search.
-- [var hashValue: Int](musiclibrarysearchresponse/topresult/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](musiclibrarysearchresponse/topresult/id-swift.property.md)
+- [var id: MusicItemID](musiclibrarysearchresponse/topresult/id.md)
   The unique identifier of this item.
 - [var title: String](musiclibrarysearchresponse/topresult/title.md)
   The title of this top result for library search.
-### Instance Methods
-- [func hash(into: inout Hasher)](musiclibrarysearchresponse/topresult/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicLibrarySearchResponse.TopResult.ID](musiclibrarysearchresponse/topresult/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiclibrarysearchresponse/topresult/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiclibrarysearchresponse/topresult/customstringconvertible-implementations.md)
-- [Decodable Implementations](musiclibrarysearchresponse/topresult/decodable-implementations.md)
-- [Encodable Implementations](musiclibrarysearchresponse/topresult/encodable-implementations.md)
-- [Equatable Implementations](musiclibrarysearchresponse/topresult/equatable-implementations.md)
 
 ## Relationships
 

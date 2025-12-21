@@ -21,7 +21,7 @@ optional func collectionView(_ collectionView: UICollectionView, canEditItemAt i
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the item is editable, [`false`](https://developer.apple.com/documentation/swift/false) if it’s not. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the item is editable, [`false`](https://developer.apple.com/documentation/Swift/false) if it’s not. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

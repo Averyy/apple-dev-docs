@@ -24,7 +24,7 @@ You cannot call this function until after you have called the [`CMSDecoderFinali
 
 A CMS message can be signed by multiple signers; this function returns the status associated with one signer as specified by the `signerIndex` parameter.
 
-If you both pass in [`false`](https://developer.apple.com/documentation/swift/false) for the `evaluateSecTrust` parameter and `NULL` for the `secTrustOut` parameter, no evaluation of the signer certificate can occur.
+If you both pass in [`false`](https://developer.apple.com/documentation/Swift/false) for the `evaluateSecTrust` parameter and `NULL` for the `secTrustOut` parameter, no evaluation of the signer certificate can occur.
 
 ## Parameters
 

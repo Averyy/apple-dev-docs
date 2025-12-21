@@ -14,7 +14,7 @@ Removes a person from a group.
 ## Declaration
 
 ```swift
-func ABGroupRemoveMember(_ group: ABRecord!, _ member: ABRecord!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ABGroupRemoveMember(_ group: ABGroupRef!, _ personToRemove: ABPersonRef!) -> Bool
 ```
 
 #### Return Value
@@ -24,8 +24,8 @@ func ABGroupRemoveMember(_ group: ABRecord!, _ member: ABRecord!, _ error: Unsaf
 ## Parameters
 
 - `group`: The group that you wish to remove   from.
-- `personToRemove`: The member that you wish to remove from  .
 - `member`: The person that you wish to remove from group.
+- `personToRemove`: The member that you wish to remove from  .
 
 ## See Also
 

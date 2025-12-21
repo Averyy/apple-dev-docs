@@ -21,7 +21,7 @@ var reasserting: Bool { get set }
 
 #### Discussion
 
-The Tunnel Provider should set this property to [`true`](https://developer.apple.com/documentation/swift/true) whenever it starts to reconnect to the tunnel server. Once the Tunnel Provider completes the process of reconnecting it should set this property to [`false`](https://developer.apple.com/documentation/swift/false).
+The Tunnel Provider should set this property to [`true`](https://developer.apple.com/documentation/Swift/true) whenever it starts to reconnect to the tunnel server. Once the Tunnel Provider completes the process of reconnecting it should set this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

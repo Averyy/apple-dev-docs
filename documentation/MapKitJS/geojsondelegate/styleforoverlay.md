@@ -1,4 +1,4 @@
-# styleForOverlay
+# styleForOverlay(overlay, geoJSON)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,19 +11,19 @@ Overrides the style of overlays.
 ## Declaration
 
 ```swift
-mapkit.Style styleForOverlay(
-	mapkit.Overlay overlay,
-	Object geoJSON
-);
+styleForOverlay?(
+        overlay: PolylineOverlay | PolygonOverlay,
+        geoJSON: GeoJSONTypes.LineString | GeoJSONTypes.Polygon,
+    ): Style;
 ```
 
 #### Return Value
 
-This method returns a [`mapkit.Style`](mapkit.style.md) object for the provided overlay.
+This method returns a [`Style`](style.md) object for the provided overlay.
 
 #### Discussion
 
-MapKit JS calls this method for each overlay, and after each call to [`itemForPoint`](geojsondelegate/itemforpoint.md) and [`itemForPolygon`](geojsondelegate/itemforpolygon.md).
+MapKit JS calls this method for each overlay, and after each call to [`itemForPoint(coordinate, geoJSON)`](geojsondelegate/itemforpoint.md) and [`itemForPolygon(overlay, geoJSON)`](geojsondelegate/itemforpolygon.md).
 
 ## Parameters
 
@@ -32,21 +32,21 @@ MapKit JS calls this method for each overlay, and after each call to [`itemForPo
 
 ## See Also
 
-- [itemForFeature](geojsondelegate/itemforfeature.md)
+- [itemForFeature(item, geoJSON)](geojsondelegate/itemforfeature.md)
   Overrides a feature.
-- [itemForFeatureCollection](geojsondelegate/itemforfeaturecollection.md)
+- [itemForFeatureCollection(itemCollection, geoJSON)](geojsondelegate/itemforfeaturecollection.md)
   Overrides a feature collection.
-- [itemForLineString](geojsondelegate/itemforlinestring.md)
+- [itemForLineString(overlay, geoJSON)](geojsondelegate/itemforlinestring.md)
   Overrides a line string.
-- [itemForMultiLineString](geojsondelegate/itemformultilinestring.md)
+- [itemForMultiLineString(itemCollection, geoJSON)](geojsondelegate/itemformultilinestring.md)
   Overrides a multiline string.
-- [itemForPoint](geojsondelegate/itemforpoint.md)
+- [itemForPoint(coordinate, geoJSON)](geojsondelegate/itemforpoint.md)
   Overrides a point.
-- [itemForMultiPoint](geojsondelegate/itemformultipoint.md)
+- [itemForMultiPoint(itemCollection, geoJSON)](geojsondelegate/itemformultipoint.md)
   Overrides a multipoint object.
-- [itemForPolygon](geojsondelegate/itemforpolygon.md)
+- [itemForPolygon(overlay, geoJSON)](geojsondelegate/itemforpolygon.md)
   Overrides a polygon.
-- [itemForMultiPolygon](geojsondelegate/itemformultipolygon.md)
+- [itemForMultiPolygon(itemCollection, geoJSON)](geojsondelegate/itemformultipolygon.md)
   Overrides a multipolygon.
 
 

@@ -35,16 +35,9 @@ struct Transformer
   Performs a one-hot encoding on a sequence of inputs.
 - [func applied(to: Category?, eventHandler: EventHandler?) throws -> [Int]](onehotencoder/transformer/applied(to:eventhandler:).md)
   Performs a one-hot encoding on a single input.
-### Type Aliases
-- [OneHotEncoder.Transformer.Input](onehotencoder/transformer/input.md)
-  The input type.
-- [OneHotEncoder.Transformer.Output](onehotencoder/transformer/output.md)
-  The output type.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](onehotencoder/transformer/customdebugstringconvertible-implementations.md)
 - [Decodable Implementations](onehotencoder/transformer/decodable-implementations.md)
 - [Encodable Implementations](onehotencoder/transformer/encodable-implementations.md)
-- [Transformer Implementations](onehotencoder/transformer/transformer-implementations.md)
 
 ## Relationships
 

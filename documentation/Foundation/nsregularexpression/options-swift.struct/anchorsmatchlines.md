@@ -34,18 +34,6 @@ static var anchorsMatchLines: NSRegularExpression.Options { get }
   Treat only `\n` as a line separator (otherwise, all standard line separators are used).
 - [static var useUnicodeWordBoundaries: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunicodewordboundaries.md)
   Use Unicode `TR#29` to specify word boundaries (otherwise, traditional regular expression word boundaries are used).
-- [static var caseInsensitive: NSRegularExpression.Options](nsregularexpression/options-swift.struct/caseinsensitive.md)
-  Match letters in the pattern independent of case.
-- [static var allowCommentsAndWhitespace: NSRegularExpression.Options](nsregularexpression/options-swift.struct/allowcommentsandwhitespace.md)
-  Ignore whitespace and #-prefixed comments in the pattern.
-- [static var ignoreMetacharacters: NSRegularExpression.Options](nsregularexpression/options-swift.struct/ignoremetacharacters.md)
-  Treat the entire pattern as a literal string.
-- [static var dotMatchesLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md)
-  Allow `.` to match any character, including line separators.
-- [static var useUnixLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunixlineseparators.md)
-  Treat only `\n` as a line separator (otherwise, all standard line separators are used).
-- [static var useUnicodeWordBoundaries: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunicodewordboundaries.md)
-  Use Unicode `TR#29` to specify word boundaries (otherwise, traditional regular expression word boundaries are used).
 
 
 ---

@@ -3,11 +3,11 @@
 **Framework**: Compositor Services  
 **Kind**: method
 
-Adds a render context to a drawable. This object will draw any content that the compositor needs to render in the application.
+Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,9 +17,14 @@ func addRenderContext(commandBuffer cmd_buffer: any MTLCommandBuffer) -> LayerRe
 
 #### Discussion
 
-> **Note**: The render context can only be used when the layer renderer is using layered layout or in platforms that only render one view (ex: simulator)
+This object draws any content that the compositor needs to render in the app. The [`LayerRenderer.Drawable.RenderContext`](layerrenderer/drawable/rendercontext.md) can only be used when the layer renderer is using layered layout or on platforms that only render one view, such as the Simulator. The `RenderContext` makes use of the [`deviceAnchor`](layerrenderer/drawable/deviceanchor.md) set in [`cp_drawable_set_device_anchor`](cp_drawable_set_device_anchor.md). Only use the `deviceAnchor` in the layer renderer drawable before calling [`addRenderContext(commandBuffer:)`](layerrenderer/drawable/addrendercontext(commandbuffer:).md).
 
-> **Note**: The render context makes use of the device_anchor set in [`cp_drawable_set_device_anchor`](cp_drawable_set_device_anchor.md) the device_anchor should be set in the drawable before calling [`addRenderContext(commandBuffer:)`](layerrenderer/drawable/addrendercontext(commandbuffer:).md).
+## See Also
+
+- [LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/rendercontext.md)
+  An object the compositer uses for rendering all effects associated with a layer renderer drawable.
+- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext.md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` that draws any content required by the compositor.
 
 
 ---

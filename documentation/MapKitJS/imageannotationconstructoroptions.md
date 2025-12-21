@@ -11,9 +11,8 @@ An object containing options for creating an image annotation.
 ## Declaration
 
 ```swift
-dictionary ImageAnnotationConstructorOptions {
-	Object url;
-};
+interface ImageAnnotationConstructorOptions
+    extends AnnotationConstructorOptions
 ```
 
 ## Topics
@@ -22,9 +21,14 @@ dictionary ImageAnnotationConstructorOptions {
 - [url](imageannotationconstructoroptions/url.md)
   An object containing URLs for the image assets in multiple resolutions.
 
+## Relationships
+
+### Inherits From
+- [AnnotationConstructorOptions](annotationconstructoroptions.md)
+
 ## See Also
 
-- [mapkit.ImageAnnotation](mapkit.imageannotation/mapkit.imageannotation.md)
+- [new ImageAnnotation(location, options)](imageannotation/imageannotationconstructor.md)
   Creates an image annotation with a URL to its image and a coordinate.
 
 

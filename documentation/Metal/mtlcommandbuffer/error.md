@@ -22,7 +22,7 @@ var error: (any Error)? { get }
 
 ## Mentions
 
-- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
+- [Preparing your Metal app to run in the background](preparing-your-metal-app-to-run-in-the-background.md)
 
 #### Discussion
 

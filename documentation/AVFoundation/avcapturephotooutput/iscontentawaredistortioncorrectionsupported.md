@@ -21,7 +21,7 @@ var isContentAwareDistortionCorrectionSupported: Bool { get }
 
 Optical design and geometric distortion correction use a rectilinear model that preserves lines but not area, angles, or distance. The wider the field of view of a lens, the greater the areal distortion along the edges of images. Content-aware distortion correction intelligently adjusts its behavior to correct distortions based on the photo’s content. For example, the algorithm may not apply correction to faces in the center of a photo, but may apply it to faces near the photo’s edges.
 
-Switching cameras or formats, or enabling depth data delivery, may result in a change to this property value. When the property changes from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), [`isContentAwareDistortionCorrectionEnabled`](avcapturephotooutput/iscontentawaredistortioncorrectionenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/swift/false).
+Switching cameras or formats, or enabling depth data delivery, may result in a change to this property value. When the property changes from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false), [`isContentAwareDistortionCorrectionEnabled`](avcapturephotooutput/iscontentawaredistortioncorrectionenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is key-value observable.
 

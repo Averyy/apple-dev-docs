@@ -22,7 +22,7 @@ func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder
 
 #### Discussion
 
-Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargumentencoder.md) object must match the structure of the argument buffer located at the specified buffer index. If you want to interpret a regular structure as an argument buffer, at least one of the members of the structure must have an `[[id(n)]]` attribute.
+Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargumentencoder.md) object need to match the structure of the argument buffer located at the specified buffer index. If you want to interpret a regular structure as an argument buffer, at least one of the members of the structure needs to have an `[[id(n)]]` attribute.
 
 ## Parameters
 

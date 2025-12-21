@@ -26,7 +26,7 @@ Use this object to define constraints for the temporal arrangement of the track 
 
 ## Topics
 
-### Configuring Track Properties
+### Configuring track properties
 - [var isEnabled: Bool](avmutablecompositiontrack/isenabled.md)
   A Boolean value that indicates whether the tracks is in an enabled state.
 - [var naturalTimeScale: CMTimeScale](avmutablecompositiontrack/naturaltimescale.md)
@@ -39,7 +39,7 @@ Use this object to define constraints for the temporal arrangement of the track 
   The preferred transformation of the visual media data for display purposes.
 - [var preferredVolume: Float](avmutablecompositiontrack/preferredvolume.md)
   The volume the track prefers for its audible media data.
-### Managing Time Ranges
+### Managing time ranges
 - [var segments: [AVCompositionTrackSegment]!](avmutablecompositiontrack/segments.md)
   The track segments that a composition track contains.
 - [func insertEmptyTimeRange(CMTimeRange)](avmutablecompositiontrack/insertemptytimerange(_:).md)
@@ -52,15 +52,15 @@ Use this object to define constraints for the temporal arrangement of the track 
   Removes a time range of media from a composition track.
 - [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablecompositiontrack/scaletimerange(_:toduration:).md)
   Changes the duration of a time range of the track.
-### Associating Tracks
+### Associating tracks
 - [func addTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](avmutablecompositiontrack/addtrackassociation(to:type:).md)
   Establishes a track association of a specific type between two tracks.
 - [func removeTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](avmutablecompositiontrack/removetrackassociation(to:type:).md)
   Removes an association from a composition track.
-### Replacing Format Descriptions
+### Replacing format descriptions
 - [func replaceFormatDescription(CMFormatDescription, with: CMFormatDescription?)](avmutablecompositiontrack/replaceformatdescription(_:with:).md)
   Replaces a format description with another or cancels a previous replacement.
-### Validating Segments
+### Validating segments
 - [func validateSegments([AVCompositionTrackSegment]) throws](avmutablecompositiontrack/validatesegments(_:).md)
   Returns a Boolean value that indicates whether a given array of track segments conform to the timing rules for a composition track.
 

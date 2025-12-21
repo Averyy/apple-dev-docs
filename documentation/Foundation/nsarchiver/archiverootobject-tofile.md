@@ -19,11 +19,11 @@ class func archiveRootObject(_ rootObject: Any, toFile path: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the archive was written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the archive was written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This convenience method invokes [`archivedData(withRootObject:)`](nsarchiver/archiveddata(withrootobject:).md) to get the encoded data, and then sends that data object the message [`write(toFile:atomically:)`](nsdata/write(tofile:atomically:).md), using `path` for the first argument and [`true`](https://developer.apple.com/documentation/swift/true) for the second.
+This convenience method invokes [`archivedData(withRootObject:)`](nsarchiver/archiveddata(withrootobject:).md) to get the encoded data, and then sends that data object the message [`write(toFile:atomically:)`](nsdata/write(tofile:atomically:).md), using `path` for the first argument and [`true`](https://developer.apple.com/documentation/Swift/true) for the second.
 
 The archived data should be retrieved from the archive by an [`NSUnarchiver`](nsunarchiver.md) object.
 

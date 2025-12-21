@@ -21,11 +21,11 @@ class var requiresConstraintBasedLayout: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view must be in a window using constraint-based layout to function properly, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view must be in a window using constraint-based layout to function properly, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-Custom views should override this to return [`true`](https://developer.apple.com/documentation/swift/true) if they cannot layout correctly using autoresizing.
+Custom views should override this to return [`true`](https://developer.apple.com/documentation/Swift/true) if they cannot layout correctly using autoresizing.
 
 ## See Also
 

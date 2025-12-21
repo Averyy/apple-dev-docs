@@ -5,11 +5,6 @@
 
 Indicates that the picture has been flipped horizontally with respect to the up orientation.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

@@ -28,7 +28,7 @@ A new download task.
 
 ## Topics
 
-### Download Option Keys
+### Download option keys
 - [let AVAssetDownloadTaskMinimumRequiredMediaBitrateKey: String](avassetdownloadtaskminimumrequiredmediabitratekey.md)
   A key that indicates the minimum bit rate of the variant to download.
 - [let AVAssetDownloadTaskMinimumRequiredPresentationSizeKey: String](avassetdownloadtaskminimumrequiredpresentationsizekey.md)

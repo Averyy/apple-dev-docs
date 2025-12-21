@@ -6,6 +6,7 @@
 The display manager that handles requests for screen resolution, refresh rate, and HDR mode information.
 
 **Availability**:
+- tvOS 11.2+
 - visionOS 1.0+
 
 ## Declaration

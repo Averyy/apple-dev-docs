@@ -52,7 +52,7 @@ object StatusDeviceOperatingSystemSupplementalBuildVersion
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
   A status report of the device’s operating system family.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s rapid security response identifier.
+  A status report of the device’s operating system’s Background Security Improvement identifier.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
   A status report of the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)

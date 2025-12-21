@@ -71,12 +71,8 @@ To access the underlying information in a data value, you can use the properties
 - [MLDataValue.MultiArrayType](mldatavalue/multiarraytype.md)
   A multidimensional array of data values.
 ### Comparing data values
-- [static func != (Self, Self) -> Bool](mldatavalue/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (MLDataValue, MLDataValue) -> Bool](mldatavalue/==(_:_:).md)
   Returns a Boolean value indicating whether two data values wrap the same underlying value.
-- [var hashValue: Int](mldatavalue/hashvalue.md)
-  The hash value.
 ### Describing a data value
 - [var description: String](mldatavalue/description.md)
   A text representation of the data value.
@@ -91,7 +87,6 @@ To access the underlying information in a data value, you can use the properties
 - [CustomDebugStringConvertible Implementations](mldatavalue/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mldatavalue/customstringconvertible-implementations.md)
 - [Equatable Implementations](mldatavalue/equatable-implementations.md)
-- [Hashable Implementations](mldatavalue/hashable-implementations.md)
 
 ## Relationships
 
@@ -106,7 +101,7 @@ To access the underlying information in a data value, you can use the properties
 
 - [struct MLDataTable](mldatatable.md)
   A table of data for training or evaluating a machine learning model.
-- [Data Visualizations](data-visualizations.md)
+- [Data visualizations](data-visualizations.md)
   Render images of data tables and columns in a playground.
 
 

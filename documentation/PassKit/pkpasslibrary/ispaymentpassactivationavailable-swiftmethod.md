@@ -21,11 +21,11 @@ func isPaymentPassActivationAvailable() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports adding payment passes.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports adding payment passes.
 
 #### Discussion
 
-Activating payment passes requires a special entitlement from Apple. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/swift/false).  For more information about requesting this entitlement, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
+Activating payment passes requires a special entitlement from Apple. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).  For more information about requesting this entitlement, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
 
 ## See Also
 

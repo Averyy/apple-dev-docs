@@ -16,7 +16,7 @@ var videoFieldMode: AVVideoFieldMode { get set }
 
 #### Discussion
 
-The property only applies to a video connection and when [`isVideoFieldModeSupported`](avcaptureconnection/isvideofieldmodesupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The property only applies to a video connection and when [`isVideoFieldModeSupported`](avcaptureconnection/isvideofieldmodesupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -7,10 +7,12 @@
 The maximum number of concurrent compilation tasks the device is running.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.3+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# Creating Threads and Threadgroups
+# Creating threads and threadgroups
 
 **Framework**: Metal
 
@@ -85,12 +85,12 @@ The thread shown in red in [`Figure 5`](compute_passes/creating_threads_and_thre
 
 ## See Also
 
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Calculating threadgroup and grid sizes](calculating-threadgroup-and-grid-sizes.md)
   Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
 - [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
-  Encodes a compute pass and other memory operations into a command buffer.
+  Encodes computation dispatches, resource copying commands, and acceleration structure building commands for a single pass into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
-  An interface for dispatching commands to encode in a compute pass.
+  Encodes computation dispatch commands for a single compute pass into a command buffer.
 
 
 ---

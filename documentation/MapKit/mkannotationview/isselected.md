@@ -22,7 +22,7 @@ var isSelected: Bool { get set }
 
 #### Discussion
 
-Don’t set the value of this property directly. If the property contains [`true`](https://developer.apple.com/documentation/swift/true), the annotation view is displaying a callout.
+Don’t set the value of this property directly. If the property contains [`true`](https://developer.apple.com/documentation/Swift/true), the annotation view is displaying a callout.
 
 ## See Also
 

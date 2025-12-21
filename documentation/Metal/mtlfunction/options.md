@@ -33,7 +33,7 @@ var options: MTLFunctionOptions { get }
 - [enum MTLFunctionType](mtlfunctiontype.md)
   The type of a top-level Metal Shading Language (MSL) function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 
 
 ---

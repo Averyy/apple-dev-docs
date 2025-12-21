@@ -64,13 +64,6 @@ struct PinAnnotationMapView: View {
 ### Conforms To
 - [MapAnnotationProtocol](mapannotationprotocol.md)
 
-## See Also
-
-- [struct MapAnnotation](mapannotation.md)
-  A customizable annotation that marks a map location.
-- [struct MapMarker](mapmarker.md)
-  A balloon-shaped annotation used to indicate the location on a map.
-
 
 ---
 

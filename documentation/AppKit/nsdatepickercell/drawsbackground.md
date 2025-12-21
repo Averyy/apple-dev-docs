@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell draws its background.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell draws its background.
 
 ## See Also
 

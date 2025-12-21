@@ -6,8 +6,8 @@
 Displays a view to upgrade an accessory with additional technology permissions.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

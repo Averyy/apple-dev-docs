@@ -42,6 +42,8 @@ When unregistering an observer, use the most specific detail possible. For examp
   Adds an entry to the notification center to receive notifications that passed to the provided block.
 - [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](notificationcenter/addobserver(_:selector:name:object:).md)
   Adds an entry to the notification center to call the provided selector with the notification.
+- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+  Removes all entries specifying an observer from the notification center’s dispatch table.
 
 
 ---

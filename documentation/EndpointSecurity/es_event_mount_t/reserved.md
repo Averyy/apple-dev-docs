@@ -19,8 +19,6 @@ var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UI
 
 - [var statfs: UnsafeMutablePointer<statfs>](es_event_mount_t/statfs.md)
   The statistics of the mounted file system.
-- [typealias es_statfs_t](es_statfs_t.md)
-  A type that represents statistics about a file system.
 
 
 ---

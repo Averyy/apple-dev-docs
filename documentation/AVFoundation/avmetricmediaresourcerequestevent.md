@@ -62,6 +62,7 @@ class AVMetricMediaResourceRequestEvent
   An event that represents when the player attempts a variant switch.
 - [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
+- [class AVMetricMediaRendition](avmetricmediarendition.md)
 
 
 ---

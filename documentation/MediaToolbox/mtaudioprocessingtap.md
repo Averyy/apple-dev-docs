@@ -19,12 +19,6 @@ An audio processing tap object.
 class MTAudioProcessingTap
 ```
 
-## Topics
-
-### Default Implementations
-- [Equatable Implementations](mtaudioprocessingtap/equatable-implementations.md)
-- [Hashable Implementations](mtaudioprocessingtap/hashable-implementations.md)
-
 ## Relationships
 
 ### Conforms To

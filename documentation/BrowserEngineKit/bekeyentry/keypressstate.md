@@ -26,9 +26,6 @@ enum KeyPressState
   The key is up.
 ### Creating a key-press state
 - [init?(rawValue: Int)](bekeyentry/keypressstate/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](bekeyentry/keypressstate/equatable-implementations.md)
-- [RawRepresentable Implementations](bekeyentry/keypressstate/rawrepresentable-implementations.md)
 
 ## Relationships
 

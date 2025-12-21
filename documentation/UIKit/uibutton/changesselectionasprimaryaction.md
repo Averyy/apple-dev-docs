@@ -23,11 +23,11 @@ var changesSelectionAsPrimaryAction: Bool { get set }
 
 This behavior of this property composes with [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) and the [`menu`](uibutton/menu.md) property.
 
-If [`menu`](uibutton/menu.md) is `nil`, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button toggle its [`selected`](uicontrol/state-swift.struct/selected.md) state.
+If [`menu`](uibutton/menu.md) is `nil`, setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) makes the button toggle its [`selected`](uicontrol/state-swift.struct/selected.md) state.
 
-If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`false`](https://developer.apple.com/documentation/swift/false), setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button a toggle button. The menu functions as a contextual menu, which appears after a long press.
+If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`false`](https://developer.apple.com/documentation/Swift/false), setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) makes the button a toggle button. The menu functions as a contextual menu, which appears after a long press.
 
-If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`true`](https://developer.apple.com/documentation/swift/true), setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes the button function as a pop-up. The button presents the menu on touch, the menu tracks the selection in its [`selectedElements`](uimenu/selectedelements.md) property, and the button title updates to reflect the selection.
+If you set a menu and [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md) is [`true`](https://developer.apple.com/documentation/Swift/true), setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) makes the button function as a pop-up. The button presents the menu on touch, the menu tracks the selection in its [`selectedElements`](uimenu/selectedelements.md) property, and the button title updates to reflect the selection.
 
 ## See Also
 

@@ -21,7 +21,7 @@ enum MTLShaderValidation
 
 ## Topics
 
-### Validation States
+### Validation states
 - [MTLShaderValidation.default](mtlshadervalidation/default.md)
   The default value when the property isn’t set.
 - [MTLShaderValidation.disabled](mtlshadervalidation/disabled.md)
@@ -43,6 +43,8 @@ enum MTLShaderValidation
 
 ## See Also
 
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 - [enum MTLLogStateError](mtllogstateerror.md)

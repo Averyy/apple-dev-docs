@@ -41,6 +41,7 @@ struct Song: AppEntity {
   Creates an identifier for the specified entity
 - [init<Entity>(for: Entity.Type, identifier: Entity.ID)](entityidentifier/init(for:identifier:).md)
   Creates an `EntityIdentifier` representing an instance of the specified entity type backed by the specified identifier value.
+- [init?(activityIdentifier: String)](entityidentifier/init(activityidentifier:).md)
 ### Getting the identifier details
 - [let identifier: String](entityidentifier/identifier.md)
   Value uniquely identifying the entity instance within its type
@@ -48,28 +49,12 @@ struct Song: AppEntity {
   The type of `AppEntity` represented by this identifier
 - [static let valueMaximumLength: Int](entityidentifier/valuemaximumlength.md)
   Maximum allowed length for the `identifier` value. This is a constraint imposed by the system and thus forces us to truncate the identifier if it exceeds the maximum length.
-### Describing the identifier
-- [var description: String](entityidentifier/description.md)
-  A textual representation of this instance.
-### Providing a hash value
-- [func hash(into: inout Hasher)](entityidentifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Operators
-- [static func == (EntityIdentifier, EntityIdentifier) -> Bool](entityidentifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init?(activityIdentifier: String)](entityidentifier/init(activityidentifier:).md)
-### Instance Properties
-- [var hashValue: Int](entityidentifier/hashvalue.md)
-  The hash value.
 ### Type Aliases
 - [EntityIdentifier.Specification](entityidentifier/specification.md)
 - [EntityIdentifier.UnwrappedType](entityidentifier/unwrappedtype.md)
 - [EntityIdentifier.ValueType](entityidentifier/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<EntityIdentifier>](entityidentifier/defaultresolverspecification.md)
-### Default Implementations
-- [Equatable Implementations](entityidentifier/equatable-implementations.md)
 
 ## Relationships
 

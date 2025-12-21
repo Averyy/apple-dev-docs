@@ -12,6 +12,12 @@
 case cancelled
 ```
 
+## See Also
+
+- [TabletopInteraction.Value.Phase.ended](tabletopinteraction/value-swift.struct/phase-swift.enum/ended.md)
+- [TabletopInteraction.Value.Phase.started](tabletopinteraction/value-swift.struct/phase-swift.enum/started.md)
+- [TabletopInteraction.Value.Phase.update](tabletopinteraction/value-swift.struct/phase-swift.enum/update.md)
+
 
 ---
 

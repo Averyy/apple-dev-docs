@@ -45,6 +45,8 @@ This applies only to immersive media types.
   A material that supports animated textures.
 - [class VideoPlaybackController](videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
+- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+  Options for viewing video playback.
 
 
 ---

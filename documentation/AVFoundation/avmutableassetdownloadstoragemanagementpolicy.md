@@ -20,7 +20,7 @@ class AVMutableAssetDownloadStorageManagementPolicy
 
 ## Topics
 
-### Managing Storage
+### Managing storage
 - [var expirationDate: Date](avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
   The expiration date for an asset.
 - [var priority: AVAssetDownloadedAssetEvictionPriority](avmutableassetdownloadstoragemanagementpolicy/priority.md)

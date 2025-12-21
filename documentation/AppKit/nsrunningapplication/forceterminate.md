@@ -16,15 +16,15 @@ func forceTerminate() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the application successfully terminated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the application successfully terminated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method will return [`false`](https://developer.apple.com/documentation/swift/false) if the application is no longer running when the `forceTerminate` message is sent to the receiver.
+This method will return [`false`](https://developer.apple.com/documentation/Swift/false) if the application is no longer running when the `forceTerminate` message is sent to the receiver.
 
 This method may return before the receiver exits; you should observe the terminated property to determine when the application terminates.
 
-Sandboxed applications can’t use this method to terminate other applciations. This method returns [`false`](https://developer.apple.com/documentation/swift/false) when called from a sandboxed application.
+Sandboxed applications can’t use this method to terminate other applciations. This method returns [`false`](https://developer.apple.com/documentation/Swift/false) when called from a sandboxed application.
 
 ## See Also
 

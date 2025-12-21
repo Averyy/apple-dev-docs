@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Change the representation of the minute in the format.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 func minute(_ format: Date.FormatStyle.Symbol.Minute = .defaultDigits) -> Date.FormatStyle.Attributed
 ```
+
+## Parameters
+
+- `format`: Set the symbol representation or pass   to remove it.
 
 
 ---

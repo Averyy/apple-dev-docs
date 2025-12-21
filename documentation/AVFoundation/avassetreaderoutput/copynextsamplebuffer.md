@@ -27,6 +27,14 @@ The output sample buffer, or `nil` if you’ve read all samples or an error occu
 
 This method returns `nil` when you’ve read all available sample buffers, or if there’s an error. Check the value of the asset reader’s [`status`](avassetreader/status-swift.property.md) property to determine the reason.
 
+## See Also
+
+- [AVAssetReaderOutput.Provider](avassetreaderoutput/provider.md)
+  An object that reads a collection of samples of a common media type from an asset reader.
+- [AVAssetReaderOutput.RandomAccessController](avassetreaderoutput/randomaccesscontroller.md)
+  Object used to reset an output provider to read specified time ranges.
+- [AVAssetReaderOutput.SupportedPayload](avassetreaderoutput/supportedpayload.md)
+
 
 ---
 

@@ -10,7 +10,7 @@ Gesture recognizers are the simplest way to handle touch or press events in your
 
 Gesture recognizers use the target-action design pattern to send notifications. When the [`UITapGestureRecognizer`](uitapgesturerecognizer.md) object detects a single-finger tap in the view, it calls an action method of the view’s view controller, which you use to provide a response.
 
-![A diagram demonstrating how a gesture recognizer links user interactions with your view controller action methods.](https://docs-assets.developer.apple.com/published/d4f8ab2ce69f156de01ba25b662eb7c6/media-3004401%402x.png)
+![A diagram demonstrating how a gesture recognizer links user interactions with your view controller action methods.](https://docs-assets.developer.apple.com/published/e0f3c0b200ea9d469efc115be5be3dd8/handling-uikit-gestures-1%402x.png)
 
 Gesture recognizers come in two types: discrete and continuous. A  calls your action method exactly once after the gesture is recognized. After its initial recognition criteria are met, a  performs calls your action method many times, notifying you whenever the information in the gesture’s event changes. For example, a [`UIPanGestureRecognizer`](uipangesturerecognizer.md) object calls your action method each time the touch position changes.
 

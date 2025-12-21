@@ -6,9 +6,9 @@
 An object that represents a upcoming pass information entry for an specific upcoming event.
 
 **Availability**:
-- iOS 19.0+
-- iPadOS 19.0+
-- watchOS 12.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -26,6 +26,12 @@ object UpcomingPassInformationEntryType
 
 ## See Also
 
+- [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
+  An object that represents the groups of fields that display the information for an event ticket.
+- [object SemanticTags](semantictags.md)
+  An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
+- [object SemanticTagType](semantictagtype.md)
+  A compilation of data object types for semantic tags.
 - [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
   An object that represents the ordered list of all upcoming pass information entries.
 

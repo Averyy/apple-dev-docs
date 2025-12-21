@@ -21,14 +21,14 @@ var numberOfFramesDisplayedUsingOptimizedCompositing: Int { get }
 
 ## See Also
 
-- [var totalNumberOfFrames: Int](avvideoperformancemetrics/totalnumberofframes.md)
-  The total number of frames that display if no frames drop.
-- [var numberOfDroppedFrames: Int](avvideoperformancemetrics/numberofdroppedframes.md)
-  The total number of frames the system drops prior to decoding or from missing the display deadline.
 - [var numberOfCorruptedFrames: Int](avvideoperformancemetrics/numberofcorruptedframes.md)
   The total number of corrupted frames.
+- [var numberOfDroppedFrames: Int](avvideoperformancemetrics/numberofdroppedframes.md)
+  The total number of frames the system drops prior to decoding or from missing the display deadline.
 - [var totalAccumulatedFrameDelay: TimeInterval](avvideoperformancemetrics/totalaccumulatedframedelay.md)
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
+- [var totalNumberOfFrames: Int](avvideoperformancemetrics/totalnumberofframes.md)
+  The total number of frames that display if no frames drop.
 
 
 ---

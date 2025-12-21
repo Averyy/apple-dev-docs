@@ -22,9 +22,9 @@ typealias hv_vcpu_options_t = UInt64
 
 ## See Also
 
-- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:_:).md)
+- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpuid_t>, hv_vcpu_options_t) -> hv_return_t](hv_vcpu_create(_:_:).md)
   Creates a vCPU instance for the current thread.
-- [func hv_vcpu_destroy(hv_vcpu_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
+- [func hv_vcpu_destroy(hv_vcpuid_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
   Destroys the vCPU instance associated with the current thread.
 - [vCPU Creation Behavior](1447317-vcpu-creation-behavior.md)
   An enumeration representing the default creation options for virtual CPUs.

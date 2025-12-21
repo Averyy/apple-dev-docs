@@ -18,6 +18,10 @@ A closure that handles the cell registration and configuration.
 typealias Handler = (Cell, IndexPath, Item) -> Void
 ```
 
+#### Discussion
+
+The closure takes the following parameters:
+
 ## See Also
 
 - [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](uicollectionview/cellregistration/init(handler:).md)

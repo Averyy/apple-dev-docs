@@ -6,9 +6,9 @@
 Initializes an instance of this object with the given values.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS ?+
 
 ## Declaration

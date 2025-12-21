@@ -95,7 +95,7 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
 - [func menu(for: NSTextCheckingResult, string: String, options: [NSSpellChecker.OptionKey : Any]?, atLocation: NSPoint, in: NSView) -> NSMenu?](nsspellchecker/menu(for:string:options:atlocation:in:).md)
   Provides a menu containing contextual menu items suitable for certain kinds of detected results.
 - [NSSpellChecker.OptionKey](nsspellchecker/optionkey.md)
-  The constants are optional keys that can be used in the options dictionary parameter of the [`check(_:range:types:options:inSpellDocumentWithTag:orthography:wordCount:)`](nsspellchecker/check(_:range:types:options:inspelldocumentwithtag:orthography:wordcount:).md), [`requestChecking(of:range:types:options:inSpellDocumentWithTag:completionHandler:)`](nsspellchecker/requestchecking(of:range:types:options:inspelldocumentwithtag:completionhandler:).md), and [`menu(for:string:options:atLocation:in:)`](nsspellchecker/menu(for:string:options:atlocation:in:).md) methods.
+  Constants that define options for text checking.
 ### Automatic Spelling Correction
 - [func correction(forWordRange: NSRange, in: String, language: String, inSpellDocumentWithTag: Int) -> String?](nsspellchecker/correction(forwordrange:in:language:inspelldocumentwithtag:).md)
   Returns a single proposed correction if a word is mis-spelled.

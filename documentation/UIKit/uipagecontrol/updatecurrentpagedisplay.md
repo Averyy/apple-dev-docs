@@ -21,7 +21,7 @@ func updateCurrentPageDisplay()
 
 #### Discussion
 
-This method updates the page indicator so that the current page (the white dot) matches the value returned from [`currentPage`](uipagecontrol/currentpage.md). The class ignores this method if the value of [`defersCurrentPageDisplay`](uipagecontrol/deferscurrentpagedisplay.md) is [`false`](https://developer.apple.com/documentation/swift/false). Setting the [`currentPage`](uipagecontrol/currentpage.md) value directly updates the indicator immediately.
+This method updates the page indicator so that the current page (the white dot) matches the value returned from [`currentPage`](uipagecontrol/currentpage.md). The class ignores this method if the value of [`defersCurrentPageDisplay`](uipagecontrol/deferscurrentpagedisplay.md) is [`false`](https://developer.apple.com/documentation/Swift/false). Setting the [`currentPage`](uipagecontrol/currentpage.md) value directly updates the indicator immediately.
 
 ## See Also
 

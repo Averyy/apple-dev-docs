@@ -20,7 +20,7 @@ var hasContentPending: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session has received data in the background but has not yet delivered that data to the session’s delegate. The following methods send data in the background:
+[`true`](https://developer.apple.com/documentation/Swift/true) if the session has received data in the background but has not yet delivered that data to the session’s delegate. The following methods send data in the background:
 
 - [`updateApplicationContext(_:)`](wcsession/updateapplicationcontext(_:).md)
 - [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md)

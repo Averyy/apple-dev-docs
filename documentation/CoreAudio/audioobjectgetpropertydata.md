@@ -15,6 +15,23 @@
 func AudioObjectGetPropertyData(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ inQualifierDataSize: UInt32, _ inQualifierData: UnsafeRawPointer?, _ ioDataSize: UnsafeMutablePointer<UInt32>, _ outData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Queries an AudioObject to get the data of the given property and places it in the provided buffer.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to query.
+- `inAddress`: An AudioObjectPropertyAddress indicating which property is being queried.
+- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData.   Note that not all properties require qualification, in which case this   value will be 0.
+- `inQualifierData`: A buffer of data to be used in determining the data of the property being   queried. Note that not all properties require qualification, in which case   this value will be NULL.
+- `ioDataSize`: A UInt32 which on entry indicates the size of the buffer pointed to by   outData and on exit indicates how much of the buffer was used.
+- `outData`: The buffer into which the AudioObject will put the data for the given   property.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

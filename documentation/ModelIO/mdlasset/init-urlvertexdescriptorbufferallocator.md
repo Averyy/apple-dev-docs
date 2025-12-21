@@ -25,7 +25,7 @@ A new asset object.
 
 #### Discussion
 
-Using this initializer is equivalent to using the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md) initializer, passing [`false`](https://developer.apple.com/documentation/swift/false) for the `preserveTopology` parameter and ignoring errors.
+Using this initializer is equivalent to using the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md) initializer, passing [`false`](https://developer.apple.com/documentation/Swift/false) for the `preserveTopology` parameter and ignoring errors.
 
 ## Parameters
 

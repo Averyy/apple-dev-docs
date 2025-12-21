@@ -17,10 +17,8 @@ struct MLSupportVectorClassifier
 ## Topics
 
 ### Creating and training a support vector classifier
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLSupportVectorClassifier.ModelParameters) throws](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7t1yb.md)
+- [init(trainingData:targetColumn:featureColumns:parameters:)](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
   Creates a support vector classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLSupportVectorClassifier.ModelParameters) throws](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9ob53.md)
-  Creates a Support Vector Classifier from the feature columns in the training data to predict the categories in the target column.
 - [MLSupportVectorClassifier.ModelParameters](mlsupportvectorclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 - [let modelParameters: MLSupportVectorClassifier.ModelParameters](mlsupportvectorclassifier/modelparameters-swift.property.md)
@@ -29,21 +27,16 @@ struct MLSupportVectorClassifier
   The name of the column you selected at initialization to define which categories the classifier predicts.
 - [var featureColumns: [String]](mlsupportvectorclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
-### Assessing model accuracy
+### Evaluating a support vector classifier
+- [func evaluation(on:)](mlsupportvectorclassifier/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var trainingMetrics: MLClassifierMetrics](mlsupportvectorclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 - [var validationMetrics: MLClassifierMetrics](mlsupportvectorclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
-### Evaluating a support vector classifier
-- [func evaluation(on: DataFrame) -> MLClassifierMetrics](mlsupportvectorclassifier/evaluation(on:)-3fvw.md)
-  Evaluates the classifier on the provided labeled data.
-- [func evaluation(on: MLDataTable) -> MLClassifierMetrics](mlsupportvectorclassifier/evaluation(on:)-815go.md)
-  Evaluates the classifier on the provided labeled data.
 ### Testing a support vector classifier
-- [func predictions(from: DataFrame) throws -> AnyColumn](mlsupportvectorclassifier/predictions(from:)-p5qk.md)
+- [func predictions(from:)](mlsupportvectorclassifier/predictions(from:).md)
   Predicts a column of labels for the given testing data.
-- [func predictions(from: MLDataTable) throws -> MLUntypedColumn](mlsupportvectorclassifier/predictions(from:)-8pjz.md)
-  Classifies the provided data into the target categories.
 ### Saving a support vector classifier
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlsupportvectorclassifier/write(to:metadata:).md)
   Exports a Core ML model file for use in your app.

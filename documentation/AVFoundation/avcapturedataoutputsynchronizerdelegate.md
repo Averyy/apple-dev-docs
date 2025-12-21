@@ -19,7 +19,7 @@ protocol AVCaptureDataOutputSynchronizerDelegate : NSObjectProtocol
 
 ## Topics
 
-### Receiving Synchronized Capture Data
+### Receiving synchronized capture data
 - [func dataOutputSynchronizer(AVCaptureDataOutputSynchronizer, didOutput: AVCaptureSynchronizedDataCollection)](avcapturedataoutputsynchronizerdelegate/dataoutputsynchronizer(_:didoutput:).md)
   Provides a collection of synchronized capture data to the delegate.
 

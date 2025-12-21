@@ -6,7 +6,7 @@ Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom over
 
 #### Overview
 
-This sample uses the [`importGeoJSON`](mapkit/importgeojson.md) method from MapKit JS to import data in [`Indoor Mapping Data Format (IMDF)`](https://developer.apple.comhttps://register.apple.com/resources/imdf/), and render an indoor map in your browser. The sample app demonstrates decoding, rendering, and styling of a small subset of the IMDF feature types and properties.
+This sample uses the [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) method from MapKit JS to import data in [`Indoor Mapping Data Format (IMDF)`](https://developer.apple.comhttps://register.apple.com/resources/imdf/), and render an indoor map in your browser. The sample app demonstrates decoding, rendering, and styling of a small subset of the IMDF feature types and properties.
 
 Use these examples to create your own indoor map with a style that is consistent with your app’s design. You can handle feature categories specific to your venue, and configure the map style using your own colors, icons, and level picker.
 
@@ -22,12 +22,18 @@ To run this sample code:
 
 ## See Also
 
-- [importGeoJSON](mapkit/importgeojson.md)
-  Converts imported GeoJSON data to MapKit JS items.
-- [GeoJSONDelegate](geojsondelegate.md)
+- [importGeoJSON(data, callback)](mapkit/importgeojson.md)
+  Converts imported GeoJSON data to MapKit JS compatible items.
+- [interface GeoJSONDelegate](geojsondelegate.md)
   A delegate object that controls a GeoJSON import to override default behavior and provide custom style.
-- [ItemCollection](itemcollection.md)
+- [type Item](item.md)
+  A type alias that represents all objects that the framework sets in an item collection.
+- [class ItemCollection](itemcollection.md)
   A tree structure containing annotations, overlays, and nested item collection objects.
+- [type GeoJSONImporterCallback](geojsonimportercallback.md)
+  A callback function that MapKit JS invokes when importing a GeoJSON object.
+- [class GeoJSONImportError](geojsonimporterror.md)
+  An error object that indicates an error occurred while importing a GeoJSON object.
 
 
 ---

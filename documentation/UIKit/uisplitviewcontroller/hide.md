@@ -35,6 +35,8 @@ After you call this method, you can use the split view controller’s [`transiti
 
 - [func show(UISplitViewController.Column)](uisplitviewcontroller/show(_:).md)
   Presents the view controller in the specified column of the split view interface.
+- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
+  A Boolean value that indicates whether the split view interface is showing the specified column.
 - [func show(UIViewController, sender: Any?)](uisplitviewcontroller/show(_:sender:).md)
   Presents the specified view controller as the primary view controller in the split view interface.
 - [func showDetailViewController(UIViewController, sender: Any?)](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md)

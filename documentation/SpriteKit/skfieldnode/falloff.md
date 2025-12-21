@@ -17,7 +17,6 @@ The exponent that defines the rate of decay for the strength of the field as the
 ## Declaration
 
 ```swift
-@MainActor
 var falloff: Float { get set }
 ```
 

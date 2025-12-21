@@ -21,7 +21,7 @@ var hasBetterPath: Bool { get }
 
 #### Discussion
 
-Evaluates to [`true`](https://developer.apple.com/documentation/swift/true) if a new session to the remote endpoint would use a different and preferred path. If the current session is not viable, this can be used as a hint to try again. If the current session is still viable, this can indicate that the system or user has a preference for the newly available network path. For example, if the session is established over a cellular data network and Wi-Fi is now available, then the session has a better path available and this property is set to [`true`](https://developer.apple.com/documentation/swift/true). Use the `initWithUpgradeForSession:` initializer to create a new session with the same parameters as the current session. Use Key-Value Observing to watch this property.
+Evaluates to [`true`](https://developer.apple.com/documentation/Swift/true) if a new session to the remote endpoint would use a different and preferred path. If the current session is not viable, this can be used as a hint to try again. If the current session is still viable, this can indicate that the system or user has a preference for the newly available network path. For example, if the session is established over a cellular data network and Wi-Fi is now available, then the session has a better path available and this property is set to [`true`](https://developer.apple.com/documentation/Swift/true). Use the `initWithUpgradeForSession:` initializer to create a new session with the same parameters as the current session. Use Key-Value Observing to watch this property.
 
 ## See Also
 

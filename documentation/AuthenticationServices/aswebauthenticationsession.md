@@ -22,8 +22,8 @@ class ASWebAuthenticationSession
 
 ## Mentions
 
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
 - [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
 
 #### Overview
 
@@ -35,12 +35,14 @@ For more details, see [`Authenticating a User Through a Web Service`](authentica
 
 ## Topics
 
-### Creating a Session
-- [init(url: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:).md)
-  Creates a web authentication session instance.
+### Creating a session
+- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:).md)
+  Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
+- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  An object for evaluating navigation events in an authentication session.
 - [ASWebAuthenticationSession.CompletionHandler](aswebauthenticationsession/completionhandler.md)
   A completion handler for the web authentication session.
-### Configuring a Session
+### Configuring a session
 - [var prefersEphemeralWebBrowserSession: Bool](aswebauthenticationsession/prefersephemeralwebbrowsersession.md)
   A Boolean value that indicates whether the session should ask the browser for a private authentication session.
 ### Starting and Stopping a Session
@@ -62,12 +64,12 @@ For more details, see [`Authenticating a User Through a Web Service`](authentica
   The error domain for a web authentication session.
 - [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
   The error code for a web authentication session error.
-### Initializers
-- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:).md)
-### Instance Properties
+### Instance properties
 - [var additionalHeaderFields: [String : String]?](aswebauthenticationsession/additionalheaderfields.md)
-### Classes
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  Any additional header fields to set when loading the initial URL.
+### Deprecated symbols
+- [init(url: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:).md)
+  Creates a web authentication session instance.
 
 ## Relationships
 

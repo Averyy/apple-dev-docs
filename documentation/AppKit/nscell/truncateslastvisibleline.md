@@ -17,7 +17,7 @@ var truncatesLastVisibleLine: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell truncates text and adds an ellipsis character to the last visible line when the text does not fit. The value in the [`lineBreakMode`](nscell/linebreakmode.md) property must be [`NSLineBreakMode.byWordWrapping`](nslinebreakmode/bywordwrapping.md) or [`NSLineBreakMode.byCharWrapping`](nslinebreakmode/bycharwrapping.md) for this option to have any effect.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell truncates text and adds an ellipsis character to the last visible line when the text does not fit. The value in the [`lineBreakMode`](nscell/linebreakmode.md) property must be [`NSLineBreakMode.byWordWrapping`](nslinebreakmode/bywordwrapping.md) or [`NSLineBreakMode.byCharWrapping`](nslinebreakmode/bycharwrapping.md) for this option to have any effect.
 
 ## See Also
 

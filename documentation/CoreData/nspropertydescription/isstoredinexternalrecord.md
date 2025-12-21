@@ -22,7 +22,7 @@ var isStoredInExternalRecord: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the property data should be written out in an external record file corresponding to the managed object, otherwise [`false`](https://developer.apple.com/documentation/swift/false). For additional information, see [`Core Data Spotlight Integration Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpotlightCoreData/Introduction/introSpotlightCoreData.html#//apple_ref/doc/uid/TP40008065).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the property data should be written out in an external record file corresponding to the managed object, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). For additional information, see [`Core Data Spotlight Integration Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpotlightCoreData/Introduction/introSpotlightCoreData.html#//apple_ref/doc/uid/TP40008065).
 
 ##### Special Considerations
 

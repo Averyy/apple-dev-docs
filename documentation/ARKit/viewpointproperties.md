@@ -31,6 +31,11 @@ struct ViewpointProperties
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [class StereoPropertiesProvider](stereopropertiesprovider.md)
+  The StereoPropertiesProvider serves the latest viewpoint properties on the device.
+
 
 ---
 

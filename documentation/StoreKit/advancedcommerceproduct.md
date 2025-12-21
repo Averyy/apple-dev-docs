@@ -19,6 +19,10 @@ A product configured as a generic SKU in App Store Connect for use with the Adva
 struct AdvancedCommerceProduct
 ```
 
+#### Overview
+
+For more information about [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI), see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
+
 ## Topics
 
 ### Getting the product ID and type

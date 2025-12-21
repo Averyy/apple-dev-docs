@@ -19,6 +19,10 @@ Notifies the view controller that its view is about to be removed from a view hi
 func viewWillDisappear(_ animated: Bool)
 ```
 
+## Mentions
+
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+
 #### Discussion
 
 This method is called in response to a view being removed from a view hierarchy. This method is called before the view is actually removed and before any animations are configured.

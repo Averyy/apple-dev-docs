@@ -21,7 +21,7 @@ var hasUncommittedUpdates: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), avoid making any significant changes to the collection view. Specifically, don’t reload the collection view’s data, as doing so deletes all placeholders and recreates items from the data source.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), avoid making any significant changes to the collection view. Specifically, don’t reload the collection view’s data, as doing so deletes all placeholders and recreates items from the data source.
 
 ## See Also
 

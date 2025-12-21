@@ -53,6 +53,8 @@ struct PKStrokePath
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

@@ -12,7 +12,7 @@ Learn what’s new in the Apple Search Ads iAd Attribution API.
 | June 2020 | Updated error responses. See [`ADClientError`](adclienterror-swift.struct.md) enumerations. |
 | October 2019 | Added `iad-keyword-id` to the attribution dictionary. See Retrieve the Attribution Dictionary in [`Retrieve the Attribution Dictionary`](setting-up-apple-search-ads-attribution#Retrieve-the-Attribution-Dictionary.md). |
 
-> ❗ **Important**:  The Apple Search Ads iAd Attribution API is deprecated. Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
+> ❗ **Important**:  The Apple Search Ads iAd Attribution API is deprecated. Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
 ## See Also
 

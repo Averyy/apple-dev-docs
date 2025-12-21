@@ -49,32 +49,6 @@ struct CheckingType
   Matches a phone number.
 - [static var transitInformation: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/transitinformation.md)
   Matches a transit information, for example, flight information.
-- [static var orthography: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/orthography.md)
-  Attempts to identify the language
-- [static var spelling: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/spelling.md)
-  Checks spelling.
-- [static var grammar: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/grammar.md)
-  Checks grammar.
-- [static var date: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/date.md)
-  Attempts to locate dates.
-- [static var address: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/address.md)
-  Attempts to locate addresses.
-- [static var link: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/link.md)
-  Attempts to locate URL links.
-- [static var quote: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/quote.md)
-  Replaces quotes with smart quotes.
-- [static var dash: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/dash.md)
-  Replaces dashes with em-dashes.
-- [static var replacement: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/replacement.md)
-  Replaces characters such as (c) with the appropriate symbol (in this case ©).
-- [static var correction: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/correction.md)
-  Performs autocorrection on misspelled words.
-- [static var regularExpression: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/regularexpression.md)
-  Matches a regular expression.
-- [static var phoneNumber: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/phonenumber.md)
-  Matches a phone number.
-- [static var transitInformation: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/transitinformation.md)
-  Matches a transit information, for example, flight information.
 ### Initializers
 - [init(rawValue: UInt64)](nstextcheckingresult/checkingtype/init(rawvalue:).md)
 ### Type Properties

@@ -27,9 +27,6 @@ This enumeration represents true headings.
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](wind/compassdirection-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Describing the compass direction
 - [var abbreviation: String](wind/compassdirection-swift.enum/abbreviation.md)
   A localized short abbreviation of the wind compass direction.
@@ -54,20 +51,6 @@ This enumeration represents true headings.
 - [Wind.CompassDirection.west](wind/compassdirection-swift.enum/west.md)
 - [Wind.CompassDirection.westNorthwest](wind/compassdirection-swift.enum/westnorthwest.md)
 - [Wind.CompassDirection.westSouthwest](wind/compassdirection-swift.enum/westsouthwest.md)
-### Instance Properties
-- [var rawValue: String](wind/compassdirection-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Wind.CompassDirection.AllCases](wind/compassdirection-swift.enum/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [Wind.CompassDirection.RawValue](wind/compassdirection-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [Wind.CompassDirection]](wind/compassdirection-swift.enum/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](wind/compassdirection-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](wind/compassdirection-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -22,7 +22,7 @@ func contains(_ indexSet: IndexSet) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the receiving index set contains a superset of the indexes in `indexSet`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the receiving index set contains a superset of the indexes in `indexSet`, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

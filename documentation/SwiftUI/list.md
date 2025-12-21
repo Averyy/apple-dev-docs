@@ -25,10 +25,10 @@ A container that presents rows of data arranged in a single column, optionally p
 
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
-- [Performing a search operation](performing-a-search-operation.md)
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Performing a search operation](performing-a-search-operation.md)
 
 #### Overview
 
@@ -262,7 +262,7 @@ SwiftUI chooses a display style for a list based on the platform and the view ty
 - [init(content: () -> Content)](list/init(content:).md)
   Creates a list with the given content.
 - [init(selection:content:)](list/init(selection:content:).md)
-  Creates a list with the given content that supports selecting a single row that cannot be deselcted.
+  Creates a list with the given content that supports selecting a single row that cannot be deselected.
 ### Creating a list from enumerated data
 - [init(_:rowContent:)](list/init(_:rowcontent:).md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data.
@@ -283,13 +283,13 @@ SwiftUI chooses a display style for a list based on the platform and the view ty
   Creates a hierarchical list that identifies its rows based on a key path to the identifier of the underlying data and allowing users to have exactly one row always selected.
 ### Creating a list from editable data
 - [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:editactions:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable data and allows to edit the collection.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
 - [init(_:editActions:selection:rowContent:)](list/init(_:editactions:selection:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable data, allows to edit the collection, and requires a selection of a single row.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 - [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:id:editactions:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable data and allows to edit the collection.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
 - [init(_:id:editActions:selection:rowContent:)](list/init(_:id:editactions:selection:rowcontent:).md)
-  Creates a list that computes its rows on demand from an underlying collection of identifiable, allows to edit the collection, and requires a selection of a single row.
+  Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 ### Supporting types
 - [var body: some View](list/body.md)
   The content of the list.

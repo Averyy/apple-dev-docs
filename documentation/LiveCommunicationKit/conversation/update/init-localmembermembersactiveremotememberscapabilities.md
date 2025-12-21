@@ -25,11 +25,6 @@ init(localMember: Handle? = nil, members: Set<Handle>? = nil, activeRemoteMember
 - `activeRemoteMembers`: The active remote participants.
 - `capabilities`: The conversation’s capabilities.
 
-## See Also
-
-- [init(from: any Decoder) throws](conversation/update/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

@@ -21,7 +21,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
 - [MTLCounterSampleBufferError.Code.invalid](mtlcountersamplebuffererror-swift.struct/code/invalid.md)

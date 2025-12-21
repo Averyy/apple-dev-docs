@@ -42,8 +42,6 @@ enum StoreError
   The Store and Forward store is empty.
 - [PaymentCardReaderStore.StoreError.unknown(code:)](paymentcardreaderstore/storeerror/unknown(code:).md)
   An unexpected error happened, try again.
-### Default Implementations
-- [Error Implementations](paymentcardreaderstore/storeerror/error-implementations.md)
 
 ## Relationships
 

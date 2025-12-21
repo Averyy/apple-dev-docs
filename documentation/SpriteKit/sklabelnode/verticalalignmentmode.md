@@ -17,7 +17,6 @@ The vertical position of the text within the node.
 ## Declaration
 
 ```swift
-@MainActor
 var verticalAlignmentMode: SKLabelVerticalAlignmentMode { get set }
 ```
 

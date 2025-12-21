@@ -7,7 +7,7 @@ Download streamed content to disk to allow offline playback, and define policies
 ## Topics
 
 ### Asset downloading
-- [Using AVFoundation to play and persist HTTP Live Streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
+- [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadURLSession](avassetdownloadurlsession.md)
   A URL session that creates and executes asset download tasks.

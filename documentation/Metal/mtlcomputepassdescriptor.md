@@ -21,14 +21,14 @@ class MTLComputePassDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
-### Configuring the Dispatch Mechanism
+### Configuring the dispatch mechanism
 - [var dispatchType: MTLDispatchType](mtlcomputepassdescriptor/dispatchtype.md)
   The strategy for dispatching any compute commands encoded in the compute pass.
-### Specifying Sample Buffers for GPU Counters
+### Specifying sample buffers for GPU counters
 - [var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray](mtlcomputepassdescriptor/samplebufferattachments.md)
   The sample buffers that the compute pass can access.
 

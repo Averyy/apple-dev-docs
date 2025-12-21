@@ -16,7 +16,7 @@ class let didChangeScreenProfileNotification: NSNotification.Name
 
 #### Discussion
 
-NSWindow sends this notification only if the value of [`displaysWhenScreenProfileChanges`](nswindow/displayswhenscreenprofilechanges.md) is [`true`](https://developer.apple.com/documentation/swift/true), and in the following situations:
+NSWindow sends this notification only if the value of [`displaysWhenScreenProfileChanges`](nswindow/displayswhenscreenprofilechanges.md) is [`true`](https://developer.apple.com/documentation/Swift/true), and in the following situations:
 
 - When most of the window moves to a screen whose profile is different from the previous screen
 - When the ColorSync profile for the current screen changes

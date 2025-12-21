@@ -27,9 +27,6 @@ enum TimeZoneSeparator
   Specifies a colon character separating the time and time zone in an ISO 8601 date format style.
 - [Date.ISO8601FormatStyle.TimeZoneSeparator.omitted](date/iso8601formatstyle/timezoneseparator-swift.enum/omitted.md)
   Specifies no separator between the time and time zone in an ISO 8601 date format style.
-### Comparing ISO 8601 Format Style Time Zone Separators
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 
 ## Relationships
 

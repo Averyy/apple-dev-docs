@@ -4,7 +4,7 @@
 **Kind**: class
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -15,6 +15,11 @@ class NSSplitViewItemAccessoryViewController
 
 ## Topics
 
+### Configuring the scroll edge effect
+- [var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle](nssplitviewitemaccessoryviewcontroller/preferredscrolledgeeffectstyle.md)
+  The split view item accessory’s preferred effect for content scrolling behind it.
+- [class NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle.md)
+  Styles for a scroll view’s edge effect.
 ### Instance Properties
 - [var automaticallyAppliesContentInsets: Bool](nssplitviewitemaccessoryviewcontroller/automaticallyappliescontentinsets.md)
   Whether or not standard content insets should be applied to the view. Defaults to YES.

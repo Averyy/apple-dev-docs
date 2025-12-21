@@ -16,7 +16,7 @@ var isReadOnly: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the guest operating system may read the contents of the disk image, but may not write to it.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the guest operating system may read the contents of the disk image, but may not write to it.
 
 ## See Also
 

@@ -21,7 +21,7 @@ enum Status
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVAssetWriter.Status.unknown](avassetwriter/status-swift.enum/unknown.md)
   The asset writer’s status isn’t known.
 - [AVAssetWriter.Status.writing](avassetwriter/status-swift.enum/writing.md)

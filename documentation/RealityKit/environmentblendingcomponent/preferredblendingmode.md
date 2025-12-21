@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Specifies how the entity and its descendants blend against environments which encompass them
+Specifies how the entity and its descendants blend against environments which encompass them.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

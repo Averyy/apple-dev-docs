@@ -131,7 +131,7 @@ To offer an App Shortcut for your first app intent:
 
 For more information about creating App Shortcuts, see [`App Shortcuts`](app-shortcuts.md) and [`Create App Shortcuts`](acceleratingappinteractionswithappintents#Create-App-Shortcuts.md).
 
-To learn more about supporting the Action button on iPhone and Apple Watch, see [`Responding to the Action button on Apple Watch Ultra`](actionbuttonarticle.md).
+To learn more about supporting the Action button, refer to [`Action button on iPhone and Apple Watch`](actionbutton.md).
 
 ##### Donate App Intents to the System
 

@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: UICollectionView, dragSessionAllo
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to cancel the drag session if move is not allowed; otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) to cancel the drag session if move is not allowed; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-If you don’t implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true).
+If you don’t implement this method, the default return value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

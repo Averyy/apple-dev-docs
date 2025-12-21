@@ -17,7 +17,7 @@ unowned(unsafe) var dataSource: (any NSComboBoxDataSource)? { get set }
 
 #### Discussion
 
-Assigning an object to this property does not automatically set the [`usesDataSource`](nscombobox/usesdatasource.md) property to [`true`](https://developer.apple.com/documentation/swift/true). If the  [`usesDataSource`](nscombobox/usesdatasource.md) property is [`false`](https://developer.apple.com/documentation/swift/false), accessing this property logs a warning. The default value of this property is `nil`.
+Assigning an object to this property does not automatically set the [`usesDataSource`](nscombobox/usesdatasource.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). If the  [`usesDataSource`](nscombobox/usesdatasource.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), accessing this property logs a warning. The default value of this property is `nil`.
 
 For information about how to implement a combo box data source, see `NSComboBoxDataSource`.
 

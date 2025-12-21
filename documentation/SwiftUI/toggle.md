@@ -23,8 +23,8 @@ struct Toggle<Label> where Label : View
 ## Mentions
 
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Laying out a simple view](laying-out-a-simple-view.md)
 - [Declaring a custom view](declaring-a-custom-view.md)
+- [Laying out a simple view](laying-out-a-simple-view.md)
 - [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview

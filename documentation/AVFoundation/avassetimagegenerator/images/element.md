@@ -27,7 +27,7 @@ enum Element
   A result that indicates an image generation request succeeded.
 - [AVAssetImageGenerator.Images.Element.failure(requestedTime:error:)](avassetimagegenerator/images/element/failure(requestedtime:error:).md)
   A result that indicates an image generation request failed.
-### Accessing Image Data
+### Accessing image data
 - [var image: CGImage](avassetimagegenerator/images/element/image.md)
   An image for a requested time.
 - [var requestedTime: CMTime](avassetimagegenerator/images/element/requestedtime.md)

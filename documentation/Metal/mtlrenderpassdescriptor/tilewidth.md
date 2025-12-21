@@ -21,7 +21,7 @@ var tileWidth: Int { get set }
 
 #### Discussion
 
-The valid tile sizes are `32 x 32`, `32 x 16`, and `16 x 16`.  If you do not set a tile size, Metal device object chooses a default size.
+The valid tile sizes are `32 x 32`, `32 x 16`, and `16 x 16`. The Metal driver chooses a default size when your app doesn’t set a tile size.
 
 ## See Also
 

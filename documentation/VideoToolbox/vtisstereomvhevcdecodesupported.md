@@ -21,11 +21,11 @@ func VTIsStereoMVHEVCDecodeSupported() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system supports MV-HEVC decoding; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the system supports MV-HEVC decoding; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-A return value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t guarantee that decoding resources are available at all times.
+A return value of [`true`](https://developer.apple.com/documentation/Swift/true) doesn’t guarantee that decoding resources are available at all times.
 
 ## See Also
 

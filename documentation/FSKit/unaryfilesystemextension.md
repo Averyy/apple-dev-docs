@@ -23,12 +23,11 @@ Your app needs to do the following to implement a FSKit-compatible minimal file 
 
 ## Topics
 
-### Associated Types
-- [associatedtype FileSystem : FSUnaryFileSystem, FSUnaryFileSystemOperations](unaryfilesystemextension/filesystem-swift.associatedtype.md)
-  The type of file system your app extension provides.
-### Instance Properties
+### Declaring the implemented file system
 - [var fileSystem: Self.FileSystem](unaryfilesystemextension/filesystem-swift.property.md)
   The instance of your file system type that your app extension provides.
+- [associatedtype FileSystem : FSUnaryFileSystem, FSUnaryFileSystemOperations](unaryfilesystemextension/filesystem-swift.associatedtype.md)
+  The type of file system your app extension provides.
 
 ## Relationships
 

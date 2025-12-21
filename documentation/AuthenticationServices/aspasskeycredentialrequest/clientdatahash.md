@@ -28,6 +28,10 @@ Use the client data hash for both registration and assertion challenges.
   The relying party’s user verification preference.
 - [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](aspasskeycredentialrequest/supportedalgorithms-74mad.md)
   A list of cryptographic signature algorithms that the relying party supports.
+- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+  An input for WebAuthn extensions.
+- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+  A type for WebAuthn extension inputs.
 
 
 ---

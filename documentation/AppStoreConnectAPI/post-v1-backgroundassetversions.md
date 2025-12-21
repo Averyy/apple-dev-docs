@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Create an asset pack version record for your Apple hosted background assets.
+Create an asset pack version record for your Apple-hosted background assets.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -15,7 +15,7 @@ Create an asset pack version record for your Apple hosted background assets.
 ## See Also
 
 - [Create asset pack record](post-v1-backgroundassets.md)
-  Create an asset pack record for your Apple hosted background assets.
+  Create an asset pack record for your Apple-hosted background assets.
 
 
 ---

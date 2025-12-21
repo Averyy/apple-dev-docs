@@ -22,7 +22,7 @@ func CGPDFScannerPopObject(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

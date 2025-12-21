@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: case
 
+Specifies that the screenshot renders with canonical display attributes optimizing output for presentation on a high dynamic range display.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

@@ -16,7 +16,7 @@ func insert(_ object: Any, atArrangedObjectIndex index: Int)
 
 #### Discussion
 
-Subclasses can override this method to provide customized arranged objects support. An error is returned if the given index is outside of the [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) range, or if the given object would not appear in the arrangedObjects. Set the [`clearsFilterPredicateOnInsertion`](nsarraycontroller/clearsfilterpredicateoninsertion.md) to [`true`](https://developer.apple.com/documentation/swift/true) to allow insertion.
+Subclasses can override this method to provide customized arranged objects support. An error is returned if the given index is outside of the [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) range, or if the given object would not appear in the arrangedObjects. Set the [`clearsFilterPredicateOnInsertion`](nsarraycontroller/clearsfilterpredicateoninsertion.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to allow insertion.
 
 ## See Also
 

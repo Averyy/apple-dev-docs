@@ -6,7 +6,7 @@
 Adds an [`ImmersiveMediaRemotePreviewReceiver`](immersivemediaremotepreviewreceiver.md) to the sender as an active participant of the network preview. Any updates on the sender will be propagated to all active receivers (frames, camera information, static metadata).
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ func connectReceiver(name: String, endpoint: NWEndpoint) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails establishing the connection to the receiver..
+> **Note**: This function throws if anything fails establishing the connection to the receiver..
 
 ## Parameters
 

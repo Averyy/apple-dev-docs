@@ -39,6 +39,11 @@ await y.shapedArray(of: Float.self) // is [27]
 
 - `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
 
+## See Also
+
+- [func sum(alongAxes:keepRank:)](mltensor/sum(alongaxes:keeprank:).md)
+  Returns the sum along the specified axes.
+
 
 ---
 

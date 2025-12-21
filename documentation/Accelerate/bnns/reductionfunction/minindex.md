@@ -8,12 +8,11 @@ A function for reduction that computes the index of the minimum value.
 **Availability**:
 - iOS 14.0+ - Deprecated
 - iPadOS 14.0+ - Deprecated
+- Mac Catalyst ?+
 - macOS 11.0+ - Deprecated
 - tvOS 14.0+ - Deprecated
 - visionOS ?+
 - watchOS 7.0+ - Deprecated
-- Unknown ?+ - Deprecated
-- Mac Catalyst ?+
 
 ## Declaration
 

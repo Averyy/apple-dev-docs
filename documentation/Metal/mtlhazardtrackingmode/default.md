@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An option specifying that the default tracking mode should be used.
+An option that applies the default tracking behavior in Metal based on the resource or heap type you’re creating.
 
 **Availability**:
 - iOS 13.0+
@@ -21,18 +21,21 @@ case `default`
 
 #### Discussion
 
-The default behavior varies depending on the type of object being tracked:
+When you choose the [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md) option, Metal assigns a tracking mode based on the type you’re creating:
 
-| Resource | [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md) |
-| --- | --- |
-| Heap | [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) |
+- The default tracking mode for an [`MTLHeap`](mtlheap.md) is [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) because heaps typically contain many resources that you manage manually.
+- The default tracking mode for a type that inherits [`MTLResource`](mtlresource.md) is [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md) because individual resources benefit from automatic hazard tracking.
+
+For example, Metal tracks hazards for [`MTLBuffer`](mtlbuffer.md) and [`MTLTexture`](mtltexture.md) instances when you create them with [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md).
+
+For more information, see [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md).
 
 ## See Also
 
 - [MTLHazardTrackingMode.untracked](mtlhazardtrackingmode/untracked.md)
-  An option specifying that the app must prevent hazards when modifying this object’s contents.
+  An option that disables automatic memory hazard tracking in Metal for a resource at runtime.
 - [MTLHazardTrackingMode.tracked](mtlhazardtrackingmode/tracked.md)
-  An option specifying that Metal prevents hazards when modifying this object’s contents.
+  An option that directs Metal to apply runtime safeguards that prevent memory hazards when commands access a resource.
 
 
 ---

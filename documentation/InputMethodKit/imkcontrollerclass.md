@@ -1,27 +1,20 @@
 # IMKControllerClass
 
-**Framework**: InputMethodKit  
-**Kind**: var
+**Framework**: InputMethodKit
 
-**Availability**:
-- macOS 10.5+
+The input method controller class key.
 
-## Declaration
+## Topics
 
-```swift
-let IMKControllerClass: String
-```
-
-#### Discussion
-
-The key used to find an input method  input controller class name from the input method  bundle.
+### Constants
+- [let IMKControllerClass: String](imkcontrollerclass.md)
 
 ## See Also
 
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
-- [let IMKDelegateClass: String](imkdelegateclass.md)
-- [let IMKModeDictionary: String](imkmodedictionary.md)
+- [IMKModeDictionary](imkmodedictionary.md)
+  The input method mode dictionary key.
+- [IMKDelegateClass](imkdelegateclass.md)
+  The input method delegate class key.
 
 
 ---

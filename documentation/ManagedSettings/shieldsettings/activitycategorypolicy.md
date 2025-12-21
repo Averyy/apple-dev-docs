@@ -26,12 +26,8 @@ enum ActivityCategoryPolicy<Activity>
 - [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](shieldsettings/activitycategorypolicy/specific(_:except:).md)
   A policy that indicates the device shields specific categories of activity, with some exceptions.
 ### Getting the Range
-- [static func != (Self, Self) -> Bool](shieldsettings/activitycategorypolicy/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ShieldSettings.ActivityCategoryPolicy<Activity>, ShieldSettings.ActivityCategoryPolicy<Activity>) -> Bool](shieldsettings/activitycategorypolicy/==(_:_:).md)
   Returns a Boolean value that indicates whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](shieldsettings/activitycategorypolicy/equatable-implementations.md)
 
 ## Relationships
 

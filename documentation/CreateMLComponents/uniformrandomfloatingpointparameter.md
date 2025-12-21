@@ -41,11 +41,6 @@ Note that a new transformer is created every time this transformer is applied. T
 ### Applying
 - [func applied(to: RandomTransformer.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> RandomTransformer.Output](uniformrandomfloatingpointparameter/applied(to:generator:eventhandler:).md)
   Performs the random apply operation on the input.
-### Type Aliases
-- [UniformRandomFloatingPointParameter.Input](uniformrandomfloatingpointparameter/input.md)
-  The input type.
-- [UniformRandomFloatingPointParameter.Output](uniformrandomfloatingpointparameter/output.md)
-  The output type.
 
 ## Relationships
 

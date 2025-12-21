@@ -22,7 +22,7 @@ func containsAttachments(in range: NSRange) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attributed string contains a property configured as [`attachment`](nsattributedstring/key/attachment.md) with [`character`](https://developer.apple.com/documentation/AppKit/NSTextAttachment/character) in `range`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the attributed string contains a property configured as [`attachment`](nsattributedstring/key/attachment.md) with [`character`](https://developer.apple.com/documentation/AppKit/NSTextAttachment/character) in `range`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

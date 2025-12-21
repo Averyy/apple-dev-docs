@@ -6,7 +6,7 @@
 A person started manipulating the view but failed to successfully end the manipulation gesture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

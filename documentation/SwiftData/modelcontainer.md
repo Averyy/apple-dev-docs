@@ -87,16 +87,11 @@ struct RecipesList: View {
 ### Deleting the container
 - [func deleteAllData()](modelcontainer/deletealldata.md)
   Removes all persisted model data from the app’s persistent storage.
-### Comparing model containers
-- [static func == (ModelContainer, ModelContainer) -> Bool](modelcontainer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [convenience init(for: any PersistentModel.Type..., configurations: any DataStoreConfiguration...) throws](modelcontainer/init(for:configurations:)-621ei.md)
 - [init(for: Schema, configurations: [any DataStoreConfiguration]) throws](modelcontainer/init(for:configurations:)-93ifi.md)
 ### Instance Methods
 - [func erase() throws](modelcontainer/erase.md)
-### Default Implementations
-- [Equatable Implementations](modelcontainer/equatable-implementations.md)
 
 ## Relationships
 

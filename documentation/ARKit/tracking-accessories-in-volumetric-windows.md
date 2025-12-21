@@ -5,8 +5,8 @@
 Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -87,7 +87,7 @@ private func monitorARKitSessionEvents() async {
 
 ##### Track Accessories
 
-Within its tracking code, the sample requests all available controllers with [`controllers()`](https://developer.apple.com/documentation/GameController/GCController/controllers()). Create a trackable ARKit [`Accessory`](accessory.md) object from the returned [`GCController`](https://developer.apple.com/documentation/GameController/GCController) device. Passing the available accessories to the [`AccessoryTrackingProvider`](accessorytrackingprovider.md) allows the sample to access [`Anchor`](Anchor.md) updates when running in an [`ARSession`](arsession.md) object. Accessory events are available asynchronously from `anchorUpdates`. During tracking, the sample performs several operations — verifying the controllers presence within the volume, syncing the tennis ball position with the controllers, and checking for the player performing a throw or shake action.
+Within its tracking code, the sample requests all available controllers with [`controllers()`](https://developer.apple.com/documentation/GameController/GCController/controllers()). Create a trackable ARKit [`Accessory`](accessory.md) object from the returned [`GCController`](https://developer.apple.com/documentation/GameController/GCController) device. Passing the available accessories to the [`AccessoryTrackingProvider`](accessorytrackingprovider.md) allows the sample to access [`Anchor`](Anchor.md) updates when running in an [`ARSession`](arsession.md) object. Accessory events are available asynchronously from [`anchorUpdates`](accessorytrackingprovider/anchorupdates.md). During tracking, the sample performs several operations — verifying the controllers presence within the volume, syncing the tennis ball position with the controllers, and checking for the player performing a throw or shake action.
 
 ```swift
 let accessoryTracking = AccessoryTrackingProvider(accessories: accessories)
@@ -107,7 +107,7 @@ for await update in accessoryTracking.anchorUpdates {
 
 The system uses the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) update closure to verify that the controllers are located within the volume, and the sample generates a bounding box that the volume determines. If at least one controller is connected and located within the volume bounds, the app state updates accordingly. If all controllers exist outside the bounds, an Out of Bounds message displays on the volume’s toolbar.
 
-For each tracked accessory, the app generates a tennis ball entity, and repositions it while handling accessory-tracking anchor updates. The transform of [`AccessoryAnchor`](accessoryanchor.md) is relative to `WorldReferenceCoordinateSpace`. The app contains the tennis ball model within a `RealityView`, in a volume, unaligned with the world reference coordinate space. It’s a complex process to convert the tracked accessory position to the placement of the tennis ball. The sample determines whether the accessory is inside the volume using the anchor’s `coordinateSpace(for:correction:)` method to eliminate the complexity. The tennis ball entity doesn’t render when the accessories move outside the volume.
+For each tracked accessory, the app generates a tennis ball entity, and repositions it while handling accessory-tracking anchor updates. The transform of [`AccessoryAnchor`](accessoryanchor.md) is relative to [`WorldReferenceCoordinateSpace`](https://developer.apple.com/documentation/Spatial/WorldReferenceCoordinateSpace). The app contains the tennis ball model within a `RealityView`, in a volume, unaligned with the world reference coordinate space. It’s a complex process to convert the tracked accessory position to the placement of the tennis ball. The sample determines whether the accessory is inside the volume using the anchor’s [`coordinateSpace(for:correction:)`](accessoryanchor/coordinatespace(for:correction:).md) method to eliminate the complexity. The tennis ball entity doesn’t render when the accessories move outside the volume.
 
 ```swift
 let aimPoint = controllerAnchor.coordinateSpace(for: .aim, correction: .rendered)
@@ -213,6 +213,12 @@ If the shake direction changes six times, the app performs the action and resets
 
 ## See Also
 
+- [class AccessoryTrackingProvider](accessorytrackingprovider.md)
+  Provides the real time position of accessories in the user’s environment.
+- [struct Accessory](accessory.md)
+  Represents an accessory to be tracked.
+- [struct AccessoryAnchor](accessoryanchor.md)
+  Represents a tracked accessory.
 - [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
   Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 

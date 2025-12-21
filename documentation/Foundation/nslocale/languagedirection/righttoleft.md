@@ -30,14 +30,6 @@ case rightToLeft
   The language direction is from top to bottom.
 - [NSLocale.LanguageDirection.bottomToTop](nslocale/languagedirection/bottomtotop.md)
   The language direction is from bottom to top.
-- [NSLocale.LanguageDirection.unknown](nslocale/languagedirection/unknown.md)
-  The direction of the language is unknown.
-- [NSLocale.LanguageDirection.leftToRight](nslocale/languagedirection/lefttoright.md)
-  The language direction is from left to right.
-- [NSLocale.LanguageDirection.topToBottom](nslocale/languagedirection/toptobottom.md)
-  The language direction is from top to bottom.
-- [NSLocale.LanguageDirection.bottomToTop](nslocale/languagedirection/bottomtotop.md)
-  The language direction is from bottom to top.
 
 
 ---

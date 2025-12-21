@@ -29,11 +29,6 @@ A classification distribution.
 - `input`: The classifier input.
 - `eventHandler`: An event handler.
 
-## See Also
-
-- [LogisticRegressionClassifierModel.Input](logisticregressionclassifiermodel/input.md)
-  The input type.
-
 
 ---
 

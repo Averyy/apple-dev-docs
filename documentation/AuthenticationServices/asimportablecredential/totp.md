@@ -6,11 +6,11 @@
 A type to represent a time-based one-time password generator (TOTP).
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -41,7 +41,7 @@ This type is a representation of `TOTP` as defined in the Credential Exchange Fo
 - [init(secret: Data, period: UInt16, digits: UInt16, userName: String?, algorithm: ASImportableCredential.TOTP.Algorithm, issuer: String?)](asimportablecredential/totp/init(secret:period:digits:username:algorithm:issuer:).md)
 ### Instance Properties
 - [var userName: String?](asimportablecredential/totp/username.md)
-  The user name associated with the generator.
+  The user name associated with the generator. When instantiating from JSON, this property will be populated from the “username” field.
 
 ## Relationships
 

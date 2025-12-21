@@ -3,7 +3,7 @@
 **Framework**: TipKit  
 **Kind**: method
 
-DatastoreLocation for persisting tips at a custom URL.
+Configuration option for persisting tips at a custom on-disk location.
 
 **Availability**:
 - iOS 17.0+
@@ -20,9 +20,24 @@ DatastoreLocation for persisting tips at a custom URL.
 static func url(_ url: URL) -> Tips.ConfigurationOption.DatastoreLocation
 ```
 
+#### Discussion
+
+```swift
+do {
+    let tipsDatastoreLocation = URL.applicationSupportDirectory.appendingPathComponent("LandmarkTips")
+    // Save the tips datastore at the specified URL.
+    try Tips.configure([
+        .datastoreLocation(.url(tipsDatastoreLocation))
+    ])
+}
+catch {
+    print("Error initializing TipKit \(error)")
+}
+```
+
 ## Parameters
 
-- `url`: URL for persisting tips datastore.
+- `url`: URL for on-disk location of the tips datastore.
 
 
 ---

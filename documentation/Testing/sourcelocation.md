@@ -38,14 +38,6 @@ struct SourceLocation
   The line in the source file.
 - [var moduleName: String](sourcelocation/modulename.md)
   The name of the module containing the source file.
-### Default Implementations
-- [Comparable Implementations](sourcelocation/comparable-implementations.md)
-- [CustomDebugStringConvertible Implementations](sourcelocation/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](sourcelocation/customstringconvertible-implementations.md)
-- [Decodable Implementations](sourcelocation/decodable-implementations.md)
-- [Encodable Implementations](sourcelocation/encodable-implementations.md)
-- [Equatable Implementations](sourcelocation/equatable-implementations.md)
-- [Hashable Implementations](sourcelocation/hashable-implementations.md)
 
 ## Relationships
 

@@ -3,16 +3,16 @@
 **Framework**: CloudKit  
 **Kind**: property
 
-This block is called when the operation completes.
+A block called when the entire share access request operation completes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,11 +22,17 @@ var shareAccessRequestResultBlock: ((Result<Void, any Error>) -> Void)? { get se
 
 #### Discussion
 
-The top-level error will never be `CKError.partialFailure`.  Instead, per-item errors are surfaced in prior invocations of `perShareResultBlock`.
+Use this block to handle the overall success or failure of the operation.
 
-The `Operation.completionBlock` will also be called if both are set.
+The top-level error returned here will never be `CKError.partialFailure`. Individual share errors are reported through the [`perShareAccessRequestResultBlock`](cksharerequestaccessoperation/pershareaccessrequestresultblock.md).
 
-Each [`CKOperation`](ckoperation.md) instance has a private serial queue. This queue is used for all callback block invocations. This block may share mutable state with other blocks assigned to this operation, but any such mutable state should not be concurrently used outside of blocks assigned to this operation.
+If the completionBlock is set on the [`CKOperation`](ckoperation.md), it will also be called after this block.
+
+Each [`CKOperation`](ckoperation.md) instance uses a private serial queue for callback block invocations. This queue ensures serialized execution and thread safety for mutable state shared within the operation’s blocks. Any mutable state should not be concurrently accessed outside these callback blocks.
+
+## Parameters
+
+- `result`: A result indicating success ( ) or an error.
 
 
 ---

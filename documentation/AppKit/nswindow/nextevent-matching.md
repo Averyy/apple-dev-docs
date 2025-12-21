@@ -21,7 +21,7 @@ The next event whose mask matches `mask`; `nil` when no matching event was found
 
 #### Discussion
 
-This method calls the [`nextEvent(matching:until:inMode:dequeue:)`](nswindow/nextevent(matching:until:inmode:dequeue:).md) method, where the matching mask parameter is the specified `mask`, the `until` (Swift) or `untilDate` (Objective-C) parameter is [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture), the `inMode` parameter is [`NSEventTrackingRunLoopMode`](nseventtrackingrunloopmode.md), and the `dequeue` parameter is [`true`](https://developer.apple.com/documentation/swift/true).
+This method calls the [`nextEvent(matching:until:inMode:dequeue:)`](nswindow/nextevent(matching:until:inmode:dequeue:).md) method, where the matching mask parameter is the specified `mask`, the `until` (Swift) or `untilDate` (Objective-C) parameter is [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture), the `inMode` parameter is [`NSEventTrackingRunLoopMode`](nseventtrackingrunloopmode.md), and the `dequeue` parameter is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

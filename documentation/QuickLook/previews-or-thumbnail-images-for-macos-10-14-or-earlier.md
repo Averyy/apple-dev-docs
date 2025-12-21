@@ -162,7 +162,7 @@ If your app targets macOS 10.15 and later, use the [`Quick Look Thumbnailing`](h
 
 - [class QLPreviewController](qlpreviewcontroller.md)
   A specialized view controller for previewing an item.
-- [protocol QLPreviewItem : NSObjectProtocol](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.

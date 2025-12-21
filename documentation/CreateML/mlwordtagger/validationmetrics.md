@@ -14,8 +14,16 @@ Measurements of the tagger’s performance on the validation data set.
 let validationMetrics: MLWordTaggerMetrics
 ```
 
+## Mentions
+
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
+
 ## See Also
 
+- [func evaluation(on:tokenColumn:labelColumn:)](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).md)
+  Computes evaluation metrics.
+- [func evaluation(on: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics](mlwordtagger/evaluation(on:).md)
+  Computes evaluation metrics.
 - [let trainingMetrics: MLWordTaggerMetrics](mlwordtagger/trainingmetrics.md)
   Measurements of the tagger’s performance on the training data set.
 - [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)

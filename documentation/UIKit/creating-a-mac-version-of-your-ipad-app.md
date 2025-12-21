@@ -6,15 +6,15 @@ Bring your iPad app to macOS with Mac Catalyst.
 
 #### Overview
 
-With Xcode 11 and later, you can create a Mac version of your iPad app using Mac Catalyst. Configuring your app for Mac can take just a click in a checkbox, although you may need more steps, depending on the features and frameworks that your app uses.
+Configuring your iPad app for Mac can be as simple as adding an entry to the list of your target’s supported destinations in Xcode. Depending on the features and frameworks that your app uses, the configuration process may require a few extra steps, such as manually excluding other frameworks or content.
 
-> **Note**:  For information about designing a Mac version of your iPad app, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/introduction).
+> **Note**:  For information about designing a Mac version of your iPad app, see [`Human Interface Guidelines > Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/introduction).
 
 ##### Configure Your App for Mac
 
-To add support for Mac, open your Xcode project and select the iOS target that you want to configure. In the General tab, under Deployment Info, select the Mac checkbox. (If your app supports iPhone only, the checkbox is unavailable.)
+To add support for Mac, open your Xcode project and select the iOS target that you want to configure. In the General tab, under Supported Destinations, click the Add button (+) to add a destination. Select Mac, then Mac Catalyst to add the destination.
 
-![A screenshot of Xcode with the Mac device selected in the Deployment Info section.](https://docs-assets.developer.apple.com/published/915c7f10fcb9ba05f21ded243af6412b/media-3533634%402x.png)
+![A screenshot of Xcode with the Mac (Mac Catalyst) destination in the Supported Destinations list.](https://docs-assets.developer.apple.com/published/a77376c1a67b5343e4b8facbcf37667e/creating-a-mac-version-of-your-ipad-app-1%402x.png)
 
 When you enable Mac support, Xcode adds the [`App Sandbox Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.app-sandbox) to your project. Xcode only includes this entitlement in the Mac version of your app, not the iOS version. Xcode also adds My Mac to the list of destinations. Select this destination to run your Mac app from Xcode.
 
@@ -29,9 +29,9 @@ You may find that the Mac version of your app still doesn’t build because:
 
 When you enable Mac support, Xcode automatically excludes incompatible frameworks and embedded content where possible for Mac builds of your project. Still, you may need to manually exclude other frameworks or content.
 
-To manually exclude an item, open Frameworks, Libraries, and Embedded Content under the General tab for your iOS target. Then select iOS as the platform setting for the item. This setting excludes the item from the Mac version of your app.
+To manually exclude an item, open Frameworks, Libraries, and Embedded Content under the General tab for your iOS target. Then select only iOS under Filters for the item. This setting excludes the item from the Mac version of your app.
 
-![A screenshot of Xcode showing iOS selected as the supported platform for the framework SomeFramework.](https://docs-assets.developer.apple.com/published/47b583b81199a6e18d4ae8f9c11bc609/media-3533654%402x.png)
+![A screenshot of Xcode showing iOS selected as the supported platform for the framework SomeFramework.](https://docs-assets.developer.apple.com/published/058fa3986142e9d43f3b10cfc406199c/creating-a-mac-version-of-your-ipad-app-2%402x.png)
 
 If you have source code referencing APIs unavailable to the Mac version of your app, enclose the code in a compilation conditional block that uses the `targetEnvironment()` (Swift) or `TARGET_OS_MACCATALYST` (Objective-C) platform condition.
 

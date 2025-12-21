@@ -21,7 +21,7 @@ func contains(_ point: VNPoint) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) if the point is contained within this circle, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) if the point is contained within this circle, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

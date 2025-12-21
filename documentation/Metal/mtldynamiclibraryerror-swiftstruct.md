@@ -21,7 +21,7 @@ struct MTLDynamicLibraryError
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [static var none: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/none.md)
   An error code that represents the absence of any problems.
 - [static var invalidFile: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/invalidfile.md)
@@ -36,7 +36,7 @@ struct MTLDynamicLibraryError
   An error code that indicates the GPU device doesn’t support dynamic libraries.
 - [MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/code.md)
   Error codes that Metal can generate when creating dynamic libraries.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtldynamiclibraryerror-swift.struct/errordomain.md)
   The current dynamic library error domain.
 - [let MTLDynamicLibraryDomain: String](mtldynamiclibrarydomain.md)
@@ -54,6 +54,7 @@ struct MTLDynamicLibraryError
 
 ## See Also
 
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)

@@ -1,7 +1,7 @@
 # RouteStep
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: class
 
 A single step of the route between the requested start and end points.
 
@@ -11,12 +11,7 @@ A single step of the route between the requested start and end points.
 ## Declaration
 
 ```swift
-dictionary RouteStep {
-	mapkit.Coordinate[] path;
-	string instructions;
-	number distance;
-	mapkit.Directions.Transport transportType;
-};
+class RouteStep
 ```
 
 #### Overview
@@ -35,18 +30,18 @@ A [`RouteStep`](routestep.md) encapsulates information for a discrete segment of
   The step distance, in meters.
 - [transportType](routestep/transporttype.md)
   The transport type of the step.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 ## See Also
 
-- [route](mapkit.directions/route.md)
+- [route(request, callback)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
-- [DirectionsRequest](directionsrequest.md)
+- [interface DirectionsRequest](directionsrequest.md)
   The requested start and end points for a route, as well as the planned mode of transportation.
-- [DirectionsResponse](directionsresponse.md)
+- [interface DirectionsResponse](directionsresponse.md)
   The directions and estimated travel time that return for a route.
-- [Route](route.md)
+- [class Route](route.md)
   Information about a route, including step-by-step instructions, distance, and estimated travel time.
 
 

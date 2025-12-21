@@ -32,8 +32,6 @@ If a failure occurs or the session ends, the session object transitions to the [
   The possible states of a session.
 - [let id: UUID](groupsession/id.md)
   The unique identifier of the current session.
-- [var description: String](groupsession/description.md)
-  A textual representation of this instance.
 
 
 ---

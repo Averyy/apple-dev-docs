@@ -1,12 +1,12 @@
 # status
 
 **Framework**: App Store Receipts  
-**Kind**: tdef
+**Kind**: typealias
 
 The status of the app receipt.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ int status
 
 #### Discussion
 
-The [`verifyReceipt`](verifyreceipt.md) endpoint returns this field in the JSON response, [`responseBody`](responsebody.md).
+The [`verifyReceipt`](verify-receipt.md) endpoint returns this field in the JSON response, [`responseBody`](responsebody.md).
 
 The value for `status` is `0` if the receipt is valid, or a status code if there’s an error. The status code reflects the status of the app receipt as a whole. For example, if you send a valid app receipt that contains an expired subscription, the response is `0` because the receipt is valid.
 

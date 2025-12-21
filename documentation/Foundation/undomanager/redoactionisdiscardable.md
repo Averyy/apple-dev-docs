@@ -23,7 +23,7 @@ var redoActionIsDiscardable: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action is discardable; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the action is discardable; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 Specifies that the latest redo action may be safely discarded when a document can not be saved for any reason. These are typically actions that don’t affect persistent state.
 

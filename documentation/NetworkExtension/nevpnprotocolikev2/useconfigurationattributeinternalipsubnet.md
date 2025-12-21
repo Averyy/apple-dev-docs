@@ -21,9 +21,9 @@ var useConfigurationAttributeInternalIPSubnet: Bool { get set }
 
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), split tunnel configurations may still be communicated via Traffic Selectors during IKE negotiation.
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), split tunnel configurations may still be communicated via Traffic Selectors during IKE negotiation.
 
-Some IKEv2 servers use the INTERNAL_IP4_SUBNET and INTERNAL_IP6_SUBNET protocol message attributes to communicate split tunnel routes to IKEv2 clients. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Some IKEv2 servers use the INTERNAL_IP4_SUBNET and INTERNAL_IP6_SUBNET protocol message attributes to communicate split tunnel routes to IKEv2 clients. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

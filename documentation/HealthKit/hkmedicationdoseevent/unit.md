@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The unit that the system associates with the medication when the person logs the dose.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -17,6 +19,10 @@
 @NSCopying
 var unit: HKUnit { get }
 ```
+
+#### Discussion
+
+This ensures that the dose quantity is recorded with the correct measurement unit.
 
 
 ---

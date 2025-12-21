@@ -24,9 +24,9 @@ optional func connectionShouldUseCredentialStorage(_ connection: NSURLConnection
 
 This method is called before any attempt to authenticate is made.
 
-If you return [`false`](https://developer.apple.com/documentation/swift/false), the connection does not consult the credential storage automatically, and does not store credentials. However, in your connection:didReceiveAuthenticationChallenge: method, you can consult the credential storage yourself and store credentials yourself, as needed.
+If you return [`false`](https://developer.apple.com/documentation/Swift/false), the connection does not consult the credential storage automatically, and does not store credentials. However, in your connection:didReceiveAuthenticationChallenge: method, you can consult the credential storage yourself and store credentials yourself, as needed.
 
-Not implementing this method is the same as returning [`true`](https://developer.apple.com/documentation/swift/true).
+Not implementing this method is the same as returning [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > ❗ **Important**:  Prior to iOS 7 and OS X v10.9, the `connectionShouldUseCredentialStorage:` method is never called on delegates that implement the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method. In later operating systems, if the delegate implements the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method, the `connectionShouldUseCredentialStorage:` method is called  if the app’s deployment target is at least iOS 7 or OS X v10.9.
 

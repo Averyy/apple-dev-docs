@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A String that contains the bundle identifier for the plugin.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

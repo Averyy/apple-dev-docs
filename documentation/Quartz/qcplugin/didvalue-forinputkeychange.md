@@ -16,7 +16,7 @@ func didValue(forInputKeyChange key: String!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value on the input port changed since the last time the [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md) method was called; always returns [`false`](https://developer.apple.com/documentation/swift/false) if called outside of the `execute:atTime:withArguments:` method.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value on the input port changed since the last time the [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md) method was called; always returns [`false`](https://developer.apple.com/documentation/Swift/false) if called outside of the `execute:atTime:withArguments:` method.
 
 ## Parameters
 

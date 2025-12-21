@@ -74,17 +74,17 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
 - [var changeInLength: Int](nstextstorage/changeinlength.md)
   The difference between the current length of the edited range and its length before editing.
 ### Accessing scriptable properties
-- [var attributeRuns: [NSTextStorage] { get set }](../AppKit/NSTextStorage/attributeRuns.md)
+- [var attributeRuns: [NSTextStorage]](../AppKit/NSTextStorage/attributeRuns.md)
   The text storage contents as an array of attribute runs.
-- [var paragraphs: [NSTextStorage] { get set }](../AppKit/NSTextStorage/paragraphs.md)
+- [var paragraphs: [NSTextStorage]](../AppKit/NSTextStorage/paragraphs.md)
   The text storage contents as an array of paragraphs.
-- [var words: [NSTextStorage] { get set }](../AppKit/NSTextStorage/words.md)
+- [var words: [NSTextStorage]](../AppKit/NSTextStorage/words.md)
   The text storage contents as an array of words.
-- [var characters: [NSTextStorage] { get set }](../AppKit/NSTextStorage/characters.md)
+- [var characters: [NSTextStorage]](../AppKit/NSTextStorage/characters.md)
   The text storage contents as an array of characters.
-- [var font: NSFont? { get set }](../AppKit/NSTextStorage/font.md)
+- [var font: NSFont?](../AppKit/NSTextStorage/font.md)
   The font for the text storage.
-- [var foregroundColor: NSColor? { get set }](../AppKit/NSTextStorage/foregroundColor.md)
+- [var foregroundColor: NSColor?](../AppKit/NSTextStorage/foregroundColor.md)
   The color for the text.
 ### Constants
 - [NSTextStorage.EditActions](nstextstorage/editactions.md)

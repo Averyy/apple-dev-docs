@@ -3,41 +3,18 @@
 **Framework**: MetalFX  
 **Kind**: protocol
 
-A common abstraction to all denoiser scalers.
-
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
 ```swift
-protocol MTLFXTemporalDenoisedScalerBase : NSObjectProtocol
+protocol MTLFXTemporalDenoisedScalerBase : MTLFXFrameInterpolatableScaler
 ```
-
-#### Overview
-
-This protocol defines properties common to all denoiser scalers. You access these properties through any denoiser scaler instance you create by calling construction methods such as [`newTemporalDenoisedScaler(with:)`](mtlfxtemporaldenoisedscalerdescriptor/newtemporaldenoisedscaler(with:).md).
-
-##### Conforming to Texture Usage Requirements
-
-Denoiser scaler instances expose properties, such as [`colorTextureUsage`](mtlfxtemporaldenoisedscalerbase/colortextureusage.md), that indicate requirements for your textures to be compatible with it. These properties indicate the minimum set of `MTLTextureUsage` bits that you are responsible for setting in your texture descriptors for this denoise scaler to use them.
-
-Your game or app can set extra usage bits on your textures without losing compatibility, as long at its maintains the minimum set the denoiser scaler requests.
-
-##### Assigning Input and Output Textures
-
-When you use an instance of a class that conforms to this protocol, you typically set its input and output textures, as well as other properties, and then encode its work to a command buffer.
-
-MetalFX doesn’t track that you assign the same texture instances to each property across different batches of work, the only requirement is that you provide textures that match the pixel formats and dimensions you specify in the [`MTLFXTemporalDenoisedScalerDescriptor`](mtlfxtemporaldenoisedscalerdescriptor.md) descriptor instance that creates the scaler instance.
-
-##### Encoding Work
-
-Once you configure all properties for the current frame of your game or app, you indicate to the scaler instance into which command buffer it encodes its work. You achieve this by calling, for example, [`encode(to:)`](mtlfxtemporaldenoisedscaler/encode(to:).md).
 
 ## Topics
 
@@ -152,6 +129,7 @@ Once you configure all properties for the current frame of your game or app, you
 ## Relationships
 
 ### Inherits From
+- [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
 - [MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)

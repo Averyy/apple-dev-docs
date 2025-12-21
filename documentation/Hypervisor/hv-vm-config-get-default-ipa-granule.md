@@ -4,7 +4,7 @@
 **Kind**: func
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -15,6 +15,10 @@ func hv_vm_config_get_default_ipa_granule(_ granule: UnsafeMutablePointer<hv_ipa
 #### Return Value
 
 HV_SUCCESS on success, an error code otherwise.
+
+#### Discussion
+
+Return the default intermediate physical address granule.
 
 ## Parameters
 

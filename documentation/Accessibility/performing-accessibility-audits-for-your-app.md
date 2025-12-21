@@ -82,7 +82,7 @@ This export provides a single HTML file that contains a summary of every audit r
 
 ##### Add Audits to Your Ui Tests
 
-In addition to performing accessibility audits manually in Accessibility Inspector, you can automate these audits in your UI tests. Calling [`performAccessibilityAudit(for:_:)`](https://developer.apple.com/documentation/XCTest/XCUIApplication/performAccessibilityAudit(for:_:)) on your [`XCUIApplication`](https://developer.apple.com/documentation/XCTest/XCUIApplication) audits the current screen for accessibility issues the same way that running an audit in Accessibility Inspector does. If the UI test finds any audit issues, it automatically fails.
+In addition to performing accessibility audits manually in Accessibility Inspector, you can automate these audits in your UI tests. Calling [`performAccessibilityAudit(for:_:)`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication/performAccessibilityAudit(for:_:)) on your [`XCUIApplication`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication) audits the current screen for accessibility issues the same way that running an audit in Accessibility Inspector does. If the UI test finds any audit issues, it automatically fails.
 
 For more information about automating audits, see [`Perform accessibility audits for your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10035).
 

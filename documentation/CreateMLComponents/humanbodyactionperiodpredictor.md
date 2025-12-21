@@ -27,14 +27,8 @@ struct HumanBodyActionPeriodPredictor
 ### Performing the transformation
 - [func applied(to: [Pose], eventHandler: EventHandler?) async throws -> [HumanBodyActionPeriodPredictor.Prediction]](humanbodyactionperiodpredictor/applied(to:eventhandler:).md)
   Predicts human body action periods from an array of poses.
-- [HumanBodyActionPeriodPredictor.Input](humanbodyactionperiodpredictor/input.md)
-  The input type.
-- [HumanBodyActionPeriodPredictor.Output](humanbodyactionperiodpredictor/output.md)
-  The output type.
 - [HumanBodyActionPeriodPredictor.Prediction](humanbodyactionperiodpredictor/prediction.md)
   A human body action period prediction.
-### Default Implementations
-- [Transformer Implementations](humanbodyactionperiodpredictor/transformer-implementations.md)
 
 ## Relationships
 
@@ -45,7 +39,7 @@ struct HumanBodyActionPeriodPredictor
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

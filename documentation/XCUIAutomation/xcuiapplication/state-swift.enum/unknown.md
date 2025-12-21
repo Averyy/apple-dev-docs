@@ -1,9 +1,9 @@
-# !=(_:_:)
+# XCUIApplication.State.unknown
 
 **Framework**: XCUIAutomation  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+The application’s current state is unknown.
 
 **Availability**:
 - iOS ?+
@@ -18,21 +18,21 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [XCUIApplication.State.notRunning](xcuiapplication/state-swift.enum/notrunning.md)
+  The application isn’t running.
+- [XCUIApplication.State.runningBackgroundSuspended](xcuiapplication/state-swift.enum/runningbackgroundsuspended.md)
+  The application is running in the background, but is suspended.
+- [XCUIApplication.State.runningBackground](xcuiapplication/state-swift.enum/runningbackground.md)
+  The application is running in the background.
+- [XCUIApplication.State.runningForeground](xcuiapplication/state-swift.enum/runningforeground.md)
+  The application is running in the foreground.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum/unknown)*

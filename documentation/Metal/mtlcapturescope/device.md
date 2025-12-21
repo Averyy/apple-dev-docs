@@ -23,7 +23,7 @@ var device: any MTLDevice { get }
 ## See Also
 
 - [var label: String?](mtlcapturescope/label.md)
-  A string that identifies the capture scope.
+  A string that helps you identify the capture scope.
 - [var commandQueue: (any MTLCommandQueue)?](mtlcapturescope/commandqueue.md)
   The command queue that this capture scope uses to limit which commands are recorded.
 

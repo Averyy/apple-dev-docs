@@ -17,6 +17,10 @@
 static var defaultValue: Self.Value { get }
 ```
 
+## Mentions
+
+- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+
 ## See Also
 
 - [static var affectsColorAppearance: Bool](uitraitdefinition-64c15/affectscolorappearance.md)

@@ -18,9 +18,9 @@ Creates a hand pose classifier from a training session checkpoint.
 init(checkpoint: MLCheckpoint) throws
 ```
 
-#### Discussion
+## Parameters
 
-- checkpoint: An [`MLCheckpoint`](mlcheckpoint.md) instance from a hand pose training session.
+- `checkpoint`: An   instance from a hand pose training session.
 
 
 ---

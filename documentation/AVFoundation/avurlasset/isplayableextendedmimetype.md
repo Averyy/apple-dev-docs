@@ -22,7 +22,7 @@ class func isPlayableExtendedMIMEType(_ extendedMIMEType: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the asset is playable with the specified codec and container type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the asset is playable with the specified codec and container type; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
@@ -34,6 +34,8 @@ class func isPlayableExtendedMIMEType(_ extendedMIMEType: String) -> Bool
   Returns an array of the file types the asset supports.
 - [class func audiovisualMIMETypes() -> [String]](avurlasset/audiovisualmimetypes.md)
   Returns an array of the MIME types the asset supports.
+- [class var audiovisualContentTypes: [UTType]](avurlasset/audiovisualcontenttypes.md)
+  Provides the content types the AVURLAsset class understands.
 
 
 ---

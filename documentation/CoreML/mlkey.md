@@ -26,7 +26,7 @@ You don’t create use this class directly. Instead, use a class that inherits f
 
 ## Topics
 
-### Retrieving a Key’s Information
+### Retrieving a key’s information
 - [var name: String](mlkey/name.md)
   The name of the machine learning key.
 - [var scope: String?](mlkey/scope.md)

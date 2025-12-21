@@ -18,6 +18,8 @@ var parentID: EquipmentIdentifier { get }
 
 - [var equipmentID: EquipmentIdentifier](moveequipmentaction/equipmentid.md)
   The ID of the equipment being moved.
+- [var playerID: Player.ID?](moveequipmentaction/playerid.md)
+  The ID of the player who is moving the equipment.
 - [var order: MoveEquipmentAction.Order?](moveequipmentaction/order-swift.property.md)
   The order in which the equipment should be inserted.
 - [MoveEquipmentAction.Order](moveequipmentaction/order-swift.enum.md)

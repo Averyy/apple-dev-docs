@@ -3,13 +3,15 @@
 **Framework**: Video Toolbox  
 **Kind**: class
 
+An object that contains both input and output parameters that the low-latency frame interpolation processor needs.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,9 @@ class VTLowLatencyFrameInterpolationParameters
 
 #### Overview
 
-VTLowLatencyFrameInterpolationParameters are frame level parameters.
+Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
+
+`VTLowLatencyFrameInterpolationParameters` are frame-level parameters.
 
 ## Topics
 
@@ -28,7 +32,9 @@ VTLowLatencyFrameInterpolationParameters are frame level parameters.
 ### Instance Properties
 - [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
 - [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+  Previous frame that you provided when creating the low-latency frame interpolation parameters object.
 - [var sourceFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/sourceframe.md)
+  Source frame that you provided when creating the low-latency frame interpolation parameters object.
 
 ## Relationships
 

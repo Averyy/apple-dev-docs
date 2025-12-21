@@ -20,7 +20,7 @@ var canPerformReactionEffects: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) when a device’s [`reactionEffectsEnabled`](avcapturedevice/reactioneffectsenabled.md) and its active format’s [`reactionEffectsSupported`](avcapturedevice/format/reactioneffectssupported.md) property values are [`true`](https://developer.apple.com/documentation/swift/true).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) when a device’s [`reactionEffectsEnabled`](avcapturedevice/reactioneffectsenabled.md) and its active format’s [`reactionEffectsSupported`](avcapturedevice/format/reactioneffectssupported.md) property values are [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

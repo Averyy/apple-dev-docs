@@ -66,7 +66,7 @@ When you build your Swift package, Xcode treats each target as a Swift module. I
 
 If you want to make a package resource available to apps that depend on your Swift package, declare a public constant for it. For example, use the following to expose a property list file to apps that use your Swift package:
 
-`let settingsURL = Bundle.module.url(forResource: "settings", withExtension: "plist")`
+`public let settingsURL = Bundle.module.url(forResource: "settings", withExtension: "plist")`
 
 ## See Also
 

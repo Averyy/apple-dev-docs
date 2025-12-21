@@ -22,11 +22,6 @@ struct SecureElementInfo
   A string that encodes the hardware and software release versions of the Secure Element.
 - [let secureElementPlatformSigningCertificate: Data](credentialsession/secureelementinfo-swift.struct/secureelementplatformsigningcertificate.md)
   A certificate you use to authenticate against the Certification Authority of the Secure Element hardware.
-### Encoding and decoding
-- [init(from: any Decoder) throws](credentialsession/secureelementinfo-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](credentialsession/secureelementinfo-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+Key in the userInfo dictionary of an NSError received during a failed upload.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

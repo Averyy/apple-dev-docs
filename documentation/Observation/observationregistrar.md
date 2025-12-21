@@ -39,11 +39,6 @@ You don’t need to create an instance of `ObservationRegistrar` when using the 
   Registers access to a specific property for observation.
 - [func withMutation<Subject, Member, T>(of: Subject, keyPath: KeyPath<Subject, Member>, () throws -> T) rethrows -> T](observationregistrar/withmutation(of:keypath:_:).md)
   Identifies mutations to the transactions registered for observers.
-### Default Implementations
-- [Decodable Implementations](observationregistrar/decodable-implementations.md)
-- [Encodable Implementations](observationregistrar/encodable-implementations.md)
-- [Equatable Implementations](observationregistrar/equatable-implementations.md)
-- [Hashable Implementations](observationregistrar/hashable-implementations.md)
 
 ## Relationships
 

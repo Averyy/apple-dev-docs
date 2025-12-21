@@ -6,8 +6,8 @@
 A structure that describes a recent conversation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -18,41 +18,45 @@ struct RecentConversation
 
 ## Topics
 
-### Accessing a recent conversation
+### Accessing conversation attributes
 - [let date: Date](conversationhistorymanager/recentconversation/date.md)
   The point in time when the conversation started.
 - [let direction: ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.property.md)
   The direction of this conversation.
+- [ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.enum.md)
+  Values that indicate whether a conversation was initiated or received.
 - [let duration: TimeInterval](conversationhistorymanager/recentconversation/duration.md)
   The duration of the conversation from the time the system connected the participants.
 - [let handles: [Handle]](conversationhistorymanager/recentconversation/handles.md)
   The handles of the conversation’s participants.
 - [let isRead: Bool](conversationhistorymanager/recentconversation/isread.md)
   A value that indicates whether a person marked the recent conversation as read.
-- [let status: ConversationHistoryManager.RecentConversation.ConnectedStatus](conversationhistorymanager/recentconversation/status.md)
+- [let status: ConversationHistoryManager.RecentConversation.Status](conversationhistorymanager/recentconversation/status-swift.property.md)
   The status of the conversation.
-- [ConversationHistoryManager.RecentConversation.ConnectedStatus](conversationhistorymanager/recentconversation/connectedstatus.md)
+- [ConversationHistoryManager.RecentConversation.Status](conversationhistorymanager/recentconversation/status-swift.enum.md)
   Values that indicate the connection status of a recent conversation.
-- [ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.enum.md)
-  Values that indicate whether a conversation was initiated or received.
 ### Identifying a recent conversation
-- [let id: UUID](conversationhistorymanager/recentconversation/id-swift.property.md)
+- [let id: UUID](conversationhistorymanager/recentconversation/id.md)
   The unique identifier of the recent conversation.
-- [ConversationHistoryManager.RecentConversation.ID](conversationhistorymanager/recentconversation/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 
 ### Conforms To
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [func addDelegate(delegate: any ConversationHistoryManagerDelegate)](conversationhistorymanager/adddelegate(delegate:).md)
-  Adds a delegate that receives callbacks about changes to the available conversation history.
-- [func fetch(request: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](conversationhistorymanager/fetch(request:).md)
-  Queries the conversation history for conversations that match a given condition.
-- [func markAsRead(recentConversations: [ConversationHistoryManager.RecentConversation]) async throws](conversationhistorymanager/markasread(recentconversations:).md)
+- [func recentConversations(matching: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](conversationhistorymanager/recentconversations(matching:).md)
+  Returns a list of recent conversations that match the given predicate.
+- [func markConversationAsRead(ConversationHistoryManager.RecentConversation) async throws](conversationhistorymanager/markconversationasread(_:).md)
+  Marks a conversation as read.
+- [func markConversationsAsRead([ConversationHistoryManager.RecentConversation]) async throws](conversationhistorymanager/markconversationsasread(_:).md)
   Marks the a list of conversations as read.
 
 

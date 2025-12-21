@@ -31,10 +31,6 @@ struct PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator> where 
 - [var preprocessor: Preprocessor](preprocessingupdatablesupervisedestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedestimator/decodewithoptimizer(from:).md)
   Reads the encoded transformer and optimizer with a decoder.
 - [func encodeWithOptimizer(PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedestimator/encodewithoptimizer(_:to:).md)
@@ -64,11 +60,8 @@ struct PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator> where 
   The intermediate type.
 - [PreprocessingUpdatableSupervisedEstimator.Output](preprocessingupdatablesupervisedestimator/output.md)
   The output type.
-- [PreprocessingUpdatableSupervisedEstimator.Transformer](preprocessingupdatablesupervisedestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedEstimator Implementations](preprocessingupdatablesupervisedestimator/supervisedestimator-implementations.md)
-- [UpdatableSupervisedEstimator Implementations](preprocessingupdatablesupervisedestimator/updatablesupervisedestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

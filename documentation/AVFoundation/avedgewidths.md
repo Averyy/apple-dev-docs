@@ -22,7 +22,7 @@ struct AVEdgeWidths
 
 ## Topics
 
-### Edge Widths
+### Edge widths
 - [var left: CGFloat](avedgewidths/left.md)
   The left-edge width.
 - [var top: CGFloat](avedgewidths/top.md)

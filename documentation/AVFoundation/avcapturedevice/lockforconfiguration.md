@@ -37,7 +37,7 @@ To set hardware properties on a capture device, such as the [`focusMode`](avcapt
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.

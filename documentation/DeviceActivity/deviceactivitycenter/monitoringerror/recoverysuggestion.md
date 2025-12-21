@@ -20,12 +20,6 @@ var recoverySuggestion: String? { get }
 
 - [var errorDescription: String?](deviceactivitycenter/monitoringerror/errordescription.md)
   A localized message that describes what error occurred.
-- [var failureReason: String?](deviceactivitycenter/monitoringerror/failurereason.md)
-  A localized message that describes the reason for the failure.
-- [var helpAnchor: String?](deviceactivitycenter/monitoringerror/helpanchor.md)
-  A localized message that provides a help text if the user requests help.
-- [var localizedDescription: String](deviceactivitycenter/monitoringerror/localizeddescription.md)
-  A string that contains the localized description of the error.
 
 
 ---

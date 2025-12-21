@@ -25,10 +25,8 @@ Assigning an invalid Column to a column name in a DataTable will remove any Colu
 
 ## See Also
 
-- [init(repeating: Element, count: Int)](mldatacolumn/init(repeating:count:)-5rxbo.md)
+- [init(repeating:count:)](mldatacolumn/init(repeating:count:).md)
   Creates a new column with a repeating element.
-- [init(repeating: MLDataValue, count: Int)](mldatacolumn/init(repeating:count:)-4ljwl.md)
-  Constructs a new Column containing the specified number of a single, repeated MLDataValue.
 - [init<S>(S)](mldatacolumn/init(_:).md)
   Creates a new column from a given sequence of elements.
 

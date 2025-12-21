@@ -6,9 +6,9 @@
 A list of labels that visual intelligence uses to classify items onscreen or visual intelligence camera.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -22,7 +22,9 @@ let labels: [String]
 
 #### Discussion
 
-Visual intelligence defines the possible label values. Use them to search for content in your app, for example, `book` or `car`, and return matching content to visual search.
+Visual Intelligence defines the possible label values. Use them to search for content in your app and return matching content to visual search.
+
+> **Note**: Labels are general, high-level terms in the `en_US` locale and might change over time. Visual Intelligence doesn’t translate them or include synonyms. For example, `SemanticContentDescriptor` might provide the labels `tower` or `building` for a well-known building. It won’t provide the building’s actual name as a label.
 
 ## See Also
 

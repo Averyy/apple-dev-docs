@@ -1,20 +1,20 @@
-# Metal Data Types
+# Metal data types
 
 **Framework**: Metal
 
 ## Topics
 
-### Data Types
+### Data types
 - [struct NSDeviceCertification](nsdevicecertification.md)
 - [struct NSProcessPerformanceProfile](nsprocessperformanceprofile.md)
   A value describing the device’s performance profile.
 
 ## See Also
 
-- [Metal Structures](metal-structures.md)
-- [Metal Enumerations](metal-enumerations.md)
-- [Metal Constants](metal-constants.md)
-- [Metal Variables](metal-variables.md)
+- [Metal structures](metal-structures.md)
+- [Metal enumerations](metal-enumerations.md)
+- [Metal constants](metal-constants.md)
+- [Metal variables](metal-variables.md)
 
 
 ---

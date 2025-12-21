@@ -27,18 +27,6 @@ enum Kind
   A phone number.
 - [Handle.Kind.generic](handle/kind/generic.md)
   An unspecified handle type.
-### Initializers
-- [init?(rawValue: Int)](handle/kind/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](handle/kind/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Handle.Kind.RawValue](handle/kind/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](handle/kind/equatable-implementations.md)
-- [RawRepresentable Implementations](handle/kind/rawrepresentable-implementations.md)
 
 ## Relationships
 

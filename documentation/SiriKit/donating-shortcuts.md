@@ -6,15 +6,13 @@ Tell Siri about shortcuts to actions that the user performed in your app.
 
 #### Overview
 
-Siri can predict shortcuts to actions that a user may want to perform using your app, and suggest those shortcuts to the user in places such as Spotlight search, Lock Screen, and the Siri watch face. Siri learns about the shortcuts available for your app through donations that your app makes to Siri. Users can also use donated shortcuts to add personalized voice phrases to Siri. To learn more about adding phrases to Siri, see doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui.
+Siri can predict shortcuts to actions that a user may want to perform using your app, and suggest those shortcuts to the user in places such as Spotlight search and the Lock Screen. Siri learns about the shortcuts available for your app through donations that your app makes to Siri. Users can also use donated shortcuts to add personalized voice phrases to Siri. To learn more about adding phrases to Siri, see [`Shortcut-Related UI`](shortcut-related-ui.md).
 
 ##### Donate Shortcuts at the Right Time
 
 Donate a shortcut each time the user performs the action in your app. Make one, and only one, donation per action at the time the user performs the action. If the user performs the same action again, make another donation. For example, if the user can order soup from a restaurant using your app, donate a shortcut for the  action after the user places their order. If the user places another order, then make another  donation.
 
 However, don’t make more than one shortcut donation for an action at the time the user performs the action. Additionally, don’t make donations for actions the user hasn’t completed in your app; if the user never places an order for soup, don’t donate a shortcut for the  action.
-
-> **Note**:  To have Siri display the shortcut on the Siri watch face, save the shortcut as a  shortcut. For more information, see doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support.
 
 Your app can make donations using one of the following objects:
 
@@ -27,9 +25,9 @@ Your app can make donations using one of the following objects:
 
 [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) provides a lightweight approach for making a donation that also integrates with other Apple features such as Handoff and Spotlight search.
 
-To make a donation using [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), define the activity as a type in the `NSUserActivityTypes` array in your . The activity type should be a reverse domain name that’s unique within the list.
+To make a donation using [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), define the activity as a type in the `NSUserActivityTypes` array in your `Info.plist`. The activity type should be a reverse domain name that’s unique within the list.
 
-In your app, create an instance of [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) and set its [`title`](https://developer.apple.com/documentation/Foundation/NSUserActivity/title), [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo), and [`requiredUserInfoKeys`](https://developer.apple.com/documentation/Foundation/NSUserActivity/requiredUserInfoKeys) with information that your app needs to resume the activity at a later time. Also set the [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) to a unique string value, which you need in order to delete the donation (see [`Deleting Donated Shortcuts`](deleting-donated-shortcuts.md)). You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri by setting the [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/Foundation/NSUserActivity/suggestedInvocationPhrase) property on the user activity.
+In your app, create an instance of [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) and set its [`title`](https://developer.apple.com/documentation/Foundation/NSUserActivity/title), [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo), and [`requiredUserInfoKeys`](https://developer.apple.com/documentation/Foundation/NSUserActivity/requiredUserInfoKeys) with information that your app needs to resume the activity at a later time. Also set the [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property to [`true`](https://developer.apple.com/documentation/Swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) to a unique string value, which you need in order to delete the donation (see [`Deleting Donated Shortcuts`](deleting-donated-shortcuts.md)). You can also suggest the voice phrase that a user may want to use when adding a phrase to Siri by setting the [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/Foundation/NSUserActivity/suggestedInvocationPhrase) property on the user activity.
 
 Next, call the [`becomeCurrent()`](https://developer.apple.com/documentation/Foundation/NSUserActivity/becomeCurrent()) method on the user activity object to mark it as current, which donates the activity to Siri. Alternatively, you can attach the object to a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object, which also marks the activity as current.
 
@@ -77,12 +75,12 @@ Even if you provide an Intents App Extension, you should always implement the [`
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
+- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+  Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Intent Phrases](intent-phrases.md)
+  The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 
 
 ---

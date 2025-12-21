@@ -31,7 +31,7 @@ If you name your function `ConvertToType`, you declare it like this:
 JSValueRef ConvertToType(JSContextRef ctx, JSObjectRef object, JSType type, JSValueRef* exception);
 ```
 
-If this function returns [`false`](https://developer.apple.com/documentation/swift/false), the conversion request forwards to the object’s parent class chain (which includes the default object class).
+If this function returns [`false`](https://developer.apple.com/documentation/Swift/false), the conversion request forwards to the object’s parent class chain (which includes the default object class).
 
 The system only invokes this function when converting an object to [`kJSTypeNumber`](kjstypenumber.md) or [`kJSTypeString`](kjstypestring.md). An object that converts to [`kJSTypeBoolean`](kjstypeboolean.md) is `true`. An object that converts to [`kJSTypeObject`](kjstypeobject.md) is itself.
 

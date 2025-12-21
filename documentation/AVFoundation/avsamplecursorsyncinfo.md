@@ -22,7 +22,7 @@ struct AVSampleCursorSyncInfo
 
 ## Topics
 
-### Sync Information
+### Sync information
 - [var sampleIsFullSync: ObjCBool](avsamplecursorsyncinfo/sampleisfullsync.md)
   A Boolean value that indicates whether a sample is a full sync sample.
 - [var sampleIsPartialSync: ObjCBool](avsamplecursorsyncinfo/sampleispartialsync.md)

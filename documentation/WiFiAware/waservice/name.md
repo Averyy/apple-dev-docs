@@ -4,11 +4,11 @@
 **Kind**: property  
 **Required**: Yes
 
-The fully qualified name of the service, as sent over the air.
+The full name of the service, as sent over the air.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -29,7 +29,7 @@ The RFC rules require that the service string have a unique name that conforms t
 - Don’t start or end with a hyphen (`-`).
 - Don’t exceed 15 characters.
 
-The fully qualified service name string then:
+The full service name string then:
 
 - Prepends an underscore (`_`) to the name component
 - Adds a dot (`.`) separator
@@ -37,12 +37,14 @@ The fully qualified service name string then:
 
 The table below shows some examples:
 
-| Name component | Protocol component | Fully qualified service name string |
+Examples:
+
+| Name Component | Protocol Component | Full Service Name string |
 | --- | --- | --- |
 | `example-service` | `_tcp` | `_example-service._tcp` |
 | `example-service` | `_udp` | `_example-service._udp` |
 
-The name in the `Info.plist` must be this fully qualified name, exactly as it’s sent over the air. Invalid service names in the `Info.plist` cause the app to crash.
+The name in the `Info.plist` must be this full service name, exactly as it’s sent over the air. Invalid service names in the `Info.plist` cause the app to crash.
 
 
 ---

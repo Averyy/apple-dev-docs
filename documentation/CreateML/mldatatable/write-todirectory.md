@@ -19,9 +19,9 @@ Exports a binary file of the data table to the given directory path.
 func write(toDirectory path: String) throws
 ```
 
-#### Discussion
+## Parameters
 
-- path: A file system directory path where the data table file should be written.
+- `path`: A file system directory path where the data table file should be written.
 
 ## See Also
 

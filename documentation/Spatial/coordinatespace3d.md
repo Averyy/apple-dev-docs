@@ -6,13 +6,13 @@
 A type that represents a coordinate space which you can use to convert values to and from other coordinate spaces.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -27,8 +27,6 @@ protocol CoordinateSpace3D
 ### Instance Properties
 - [var ancestorSpace: Self.AncestorCoordinateSpace?](coordinatespace3d/ancestorspace.md)
   An ancestor coordinate space.
-- [var coordinateSpaceID: String?](coordinatespace3d/coordinatespaceid.md)
-  The identifier for this space.
 ### Instance Methods
 - [func ancestorFromSpaceTransform() throws -> ProjectiveTransform3D](coordinatespace3d/ancestorfromspacetransform.md)
   This space’s transform relative to its ancestor.

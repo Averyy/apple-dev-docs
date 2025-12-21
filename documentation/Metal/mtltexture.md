@@ -22,25 +22,25 @@ protocol MTLTexture : MTLResource
 ## Mentions
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Overview
 
-Don’t implement this protocol yourself; instead, use one of the following methods to create a [`MTLTexture`](mtltexture.md) instance:
+Don’t implement this protocol yourself; instead, use one of the following methods to create an [`MTLTexture`](mtltexture.md) instance:
 
 - Create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the texture’s properties and then call the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) method of the [`MTLDevice`](mtldevice.md) protocol to create the texture.
 - To create a texture that uses an existing [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface) to hold the texture data, create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the image data in the surface. Call the [`makeTexture(descriptor:iosurface:plane:)`](mtldevice/maketexture(descriptor:iosurface:plane:).md) method to create the texture.
 - To create a texture that reinterprets another texture’s data as if it has a different format, call one of the following texture methods: - [`makeTextureView(pixelFormat:)`](mtltexture/maketextureview(pixelformat:).md)
 - [`makeTextureView(pixelFormat:textureType:levels:slices:)`](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:).md) (Swift)
 - [`newTextureViewWithPixelFormat:textureType:levels:slices:`](mtltexture/newtextureviewwithpixelformat:texturetype:levels:slices:.md) (Objective-C) You need to choose a pixel format for the new texture compatible with the source texture’s pixel format. The new texture shares the same storage allocation as the source texture. If you make changes to the new texture, the source texture reflects those changes, and vice versa.
-- To create a texture that uses an [`MTLBuffer`](mtlbuffer.md) instance’s contents to hold pixel data, create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) object to describe the texture’s properties. Then call the [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method on the buffer object. The new texture object shares the storage allocation of the source buffer object. If you make changes to the texture, the buffer reflects those changes, and vice versa.
+- To create a texture that uses an [`MTLBuffer`](mtlbuffer.md) instance’s contents to hold pixel data, create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the texture’s properties. Then call the [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method on the buffer instance. The new texture instance shares the storage allocation of the source buffer instance. If you make changes to the texture, the buffer reflects those changes, and vice versa.
 
-After you create a [`MTLTexture`](mtltexture.md) object, most of its characteristics, such as its size, type, and pixel format are all immutable. Only the texture’s pixel data is mutable.
+After you create an [`MTLTexture`](mtltexture.md) instance, most of its characteristics, such as its size, type, and pixel format are all immutable. Only the texture’s pixel data is mutable.
 
 To copy pixel data from system memory into the texture, call [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) or [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md).
 
@@ -48,24 +48,24 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 
 ## Topics
 
-### Copying Data into a Texture Image
+### Copying data into a texture image
 - [func replace(region: MTLRegion, mipmapLevel: Int, slice: Int, withBytes: UnsafeRawPointer, bytesPerRow: Int, bytesPerImage: Int)](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md)
   Copies pixel data into a section of a texture slice.
 - [func replace(region: MTLRegion, mipmapLevel: Int, withBytes: UnsafeRawPointer, bytesPerRow: Int)](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md)
   Copies a block of pixels into a section of texture slice 0.
-### Copying Data from a Texture Image
+### Copying data from a texture image
 - [func getBytes(UnsafeMutableRawPointer, bytesPerRow: Int, bytesPerImage: Int, from: MTLRegion, mipmapLevel: Int, slice: Int)](mtltexture/getbytes(_:bytesperrow:bytesperimage:from:mipmaplevel:slice:).md)
   Copies pixel data from the texture to a buffer in system memory.
 - [func getBytes(UnsafeMutableRawPointer, bytesPerRow: Int, from: MTLRegion, mipmapLevel: Int)](mtltexture/getbytes(_:bytesperrow:from:mipmaplevel:).md)
   Copies pixel data from the first slice of the texture to a buffer in system memory.
-### Creating Textures by Reinterpreting Existing Texture Data
+### Creating textures by reinterpreting existing texture data
 - [func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:).md)
   Creates a new view of the texture, reinterpreting its data using a different pixel format.
 - [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:).md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
 - [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:swizzle:).md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
-### Querying Texture Attributes
+### Querying texture attributes
 - [var textureType: MTLTextureType](mtltexture/texturetype.md)
   The dimension and arrangement of the texture image data.
 - [var pixelFormat: MTLPixelFormat](mtltexture/pixelformat.md)
@@ -96,12 +96,12 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
 - [struct MTLTextureUsage](mtltextureusage.md)
   An enumeration for the various options that determine how you can use a texture.
-### Getting Information about the IOSurface the Texture Was Created From
+### Getting information about the IOSurface the texture was created from
 - [var iosurface: IOSurfaceRef?](mtltexture/iosurface.md)
   A reference to the underlying surface instance for the texture, if applicable.
 - [var iosurfacePlane: Int](mtltexture/iosurfaceplane.md)
   The number of a plane within the underlying surface instance for the texture, if applicable.
-### Getting Information about Ancestor Resources
+### Getting information about ancestor resources
 - [var parent: (any MTLTexture)?](mtltexture/parent.md)
   The parent texture used to create this texture, if any.
 - [var parentRelativeLevel: Int](mtltexture/parentrelativelevel.md)
@@ -116,15 +116,15 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
   The number of bytes in each row of the texture’s source buffer.
 - [var rootResource: (any MTLResource)?](mtltexture/rootresource.md)
   The resource that owns the storage for this texture.
-### Creating a Shared Texture Handle
+### Creating a shared texture handle
 - [func makeSharedTextureHandle() -> MTLSharedTextureHandle?](mtltexture/makesharedtexturehandle.md)
   Creates a new texture handle from a shareable texture.
-### Creating Views of Textures on Other GPUs
+### Creating views of textures on other GPUs
 - [func makeRemoteTextureView(any MTLDevice) -> (any MTLTexture)?](mtltexture/makeremotetextureview(_:).md)
   Creates a remote texture view for another GPU in the same peer group.
 - [var remoteStorageTexture: (any MTLTexture)?](mtltexture/remotestoragetexture.md)
   The texture on another GPU that the texture was created from, if any.
-### Querying Sparse Properties
+### Querying sparse properties
 - [var isSparse: Bool](mtltexture/issparse.md)
   A Boolean value that indicates whether this is a sparse texture.
 - [var firstMipmapInTail: Int](mtltexture/firstmipmapintail.md)
@@ -147,13 +147,13 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 
 ## See Also
 
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
-  An object that you use to configure new Metal texture objects.
+  An instance that you use to configure new Metal texture instances.
 - [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)

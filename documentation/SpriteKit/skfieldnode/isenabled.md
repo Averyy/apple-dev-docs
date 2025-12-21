@@ -17,7 +17,6 @@ A Boolean value that indicates whether the field is active.
 ## Declaration
 
 ```swift
-@MainActor
 var isEnabled: Bool { get set }
 ```
 

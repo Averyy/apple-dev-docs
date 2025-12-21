@@ -24,9 +24,9 @@ var usesSignificantDigits: Bool { get set }
 
 The [`NumberFormatter`](numberformatter.md) class has two ways of determining how many digits to represent:_ _using integer and fraction digits and using significant digits.
 
-When this property is set to [`false`](https://developer.apple.com/documentation/swift/false), numbers are formatted according to whether you want them formatted as fractions or as integers. For more information, see Configuring Integer and Fraction Digits. This property is [`false`](https://developer.apple.com/documentation/swift/false) by default.
+When this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), numbers are formatted according to whether you want them formatted as fractions or as integers. For more information, see Configuring Integer and Fraction Digits. This property is [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to format numbers according to the significant digits configuration specified by the [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) and [`maximumSignificantDigits`](numberformatter/maximumsignificantdigits.md) properties. By default, the minimum number of significant digits is 1, and the maximum number of significant digits is 6.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to format numbers according to the significant digits configuration specified by the [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) and [`maximumSignificantDigits`](numberformatter/maximumsignificantdigits.md) properties. By default, the minimum number of significant digits is 1, and the maximum number of significant digits is 6.
 
 > **Note**:  When a number formatter is configured to use significant digits, it ignores any minimum or maximum values used to set integer or fraction digits.
 

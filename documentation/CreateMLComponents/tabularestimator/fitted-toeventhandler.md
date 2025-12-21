@@ -34,6 +34,7 @@ The fitted transformer.
 
 - [func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -> TabularEstimatorToSupervisedAdaptor<Self, Annotation>](tabularestimator/adaptedassupervised(annotationcolumnid:).md)
   Exposes this tabular estimator as a supervised tabular estimator.
+- [func fitted(to:)](tabularestimator/fitted(to:).md)
 
 
 ---

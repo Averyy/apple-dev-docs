@@ -21,7 +21,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [MTLBinaryArchiveError.Code.none](mtlbinaryarchiveerror-swift.struct/code/none.md)
   An error code that represents the absence of any problems.
 - [MTLBinaryArchiveError.Code.invalidFile](mtlbinaryarchiveerror-swift.struct/code/invalidfile.md)

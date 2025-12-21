@@ -22,9 +22,6 @@ enum WeatherSeverity
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](weatherseverity/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting the properties
 - [WeatherSeverity.minor](weatherseverity/minor.md)
   Minimal or no known threat.
@@ -41,20 +38,6 @@ enum WeatherSeverity
   A localized accessibility description describing the weather severity.
 - [var description: String](weatherseverity/description.md)
   A localized string describing the weather severity.
-### Instance Properties
-- [var rawValue: String](weatherseverity/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [WeatherSeverity.AllCases](weatherseverity/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [WeatherSeverity.RawValue](weatherseverity/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [WeatherSeverity]](weatherseverity/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](weatherseverity/equatable-implementations.md)
-- [RawRepresentable Implementations](weatherseverity/rawrepresentable-implementations.md)
 
 ## Relationships
 

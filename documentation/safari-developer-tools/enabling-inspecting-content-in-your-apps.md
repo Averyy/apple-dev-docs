@@ -96,9 +96,9 @@ if (@available(macOS 13.3, iOS 16.4, tvOS 16.4, *))
 ## See Also
 
 - [Inspecting Safari on macOS](inspecting-safari-macos.md)
-  Inspect webpages, Service Workers, and extensions in Safari on macOS.
+  Inspect webpages, service workers, and extensions in Safari on macOS.
 - [Inspecting iOS and iPadOS](inspecting-ios.md)
-  Inspect webpages, Service Workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
+  Inspect webpages, service workers, Home Screen web apps, extensions, and content inside apps on iOS and iPadOS devices and simulators from a connected Mac.
 - [Inspecting visionOS](inspecting-visionos.md)
   Inspect webpages, service workers, extensions, and content inside apps in visionOS from a Mac on the same network.
 - [Inspecting tvOS](inspecting-tvos.md)

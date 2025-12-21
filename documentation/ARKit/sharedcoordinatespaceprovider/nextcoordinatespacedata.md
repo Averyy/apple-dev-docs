@@ -6,7 +6,7 @@
 Get the next coordinate space data to be broadcast to all participants.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

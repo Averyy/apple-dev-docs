@@ -116,13 +116,10 @@ You can create as many of these objects as you have memory for. This type assume
 - [static func == (AssignableDocument, AssignableDocument) -> Bool](assignabledocument/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Hashing the assignable document
-- [var hashValue: Int](assignabledocument/hashvalue.md)
-  The hash value.
 - [func hash(into: inout Hasher)](assignabledocument/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [Assignable Implementations](assignabledocument/assignable-implementations.md)
-- [Equatable Implementations](assignabledocument/equatable-implementations.md)
 - [MergeableDocument Implementations](assignabledocument/mergeabledocument-implementations.md)
 
 ## Relationships

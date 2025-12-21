@@ -22,7 +22,7 @@ let kCVPixelBufferPlaneAlignmentKey: CFString
 
 #### Discussion
 
-The value for this key is of type doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd. Planes start on a byte number that’s a multiple of this value.
+The value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). Planes start on a byte number that’s a multiple of this value.
 
 ## See Also
 

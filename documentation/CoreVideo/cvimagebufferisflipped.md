@@ -22,7 +22,7 @@ func CVImageBufferIsFlipped(_ imageBuffer: CVImageBuffer) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if `{0,0}` represents the upper left of the image, or [`false`](https://developer.apple.com/documentation/swift/false) if `{0,0}` represents the lower left of the image.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `{0,0}` represents the upper left of the image, or [`false`](https://developer.apple.com/documentation/Swift/false) if `{0,0}` represents the lower left of the image.
 
 ## Parameters
 

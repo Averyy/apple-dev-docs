@@ -20,7 +20,7 @@ object CustomerReviewResponseV1
 - [object CustomerReviewResponseV1.Attributes](customerreviewresponsev1/attributes-data.dictionary.md)
   The attributes of the response to a customer’s review including its content.
 - [object CustomerReviewResponseV1.Relationships](customerreviewresponsev1/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

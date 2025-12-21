@@ -6,8 +6,8 @@
 A notification that indicates whether SMS is viable for a given cellular service.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,11 +23,6 @@ struct ViabilityNotification
   The cellular service identifier associated with the notification.
 - [let isViable: Bool](smsservice/viabilitynotification/isviable.md)
   A Boolean value that indicates whether the device can peform SMS operations at this time.
-### Operators
-- [static func == (SMSService.ViabilityNotification, SMSService.ViabilityNotification) -> Bool](smsservice/viabilitynotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](smsservice/viabilitynotification/equatable-implementations.md)
 
 ## Relationships
 

@@ -4,7 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 3.6+
 
 ## Declaration
 
@@ -15,6 +15,7 @@ object AppCustomProductPageLocalization.Attributes
 ## See Also
 
 - [object AppCustomProductPageLocalization.Relationships](appcustomproductpagelocalization/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

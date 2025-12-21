@@ -21,7 +21,7 @@ class MTLType
 
 ## Topics
 
-### Identifying the Data Type
+### Identifying the data type
 - [var dataType: MTLDataType](mtltype/datatype.md)
   The data type of the function argument.
 
@@ -52,7 +52,7 @@ class MTLType
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLPointerType](mtlpointertype.md)
   A description of a pointer.
 - [class MTLTextureReferenceType](mtltexturereferencetype.md)

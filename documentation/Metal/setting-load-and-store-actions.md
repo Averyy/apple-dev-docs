@@ -1,4 +1,4 @@
-# Setting Load and Store Actions
+# Setting load and store actions
 
 **Framework**: Metal
 
@@ -26,7 +26,7 @@ Several options are available, depending on which of the following scenarios des
 
 ![A block diagram that shows the previous contents of a render target and its loaded contents after a Load load action.](https://docs-assets.developer.apple.com/published/d46146edb2f07bd96ccd8cb2a93b51d2/media-3174621%402x.png)
 
-> **Note**:  You canʼt choose [`MTLLoadAction.load`](mtlloadaction/load.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
+> **Note**:  You canʼt choose [`MTLLoadAction.load`](mtlloadaction/load.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a resource storage mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
 
 ##### Choose a Store Action
 
@@ -51,9 +51,9 @@ Several options are available, depending on which of the following scenarios des
 
 To store and resolve a multisample texture in a single render pass, always choose the [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md) action and use a single render command encoder.
 
- In some cases, you might not know which store action to use for a particular render target until you gather more render pass information. To defer your store action choice, set the temporary [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value when you create your [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object. Setting an unknown store action may avoid potential costs incurred by setting another store action prematurely. However, you must specify a valid store action before you finish encoding your render pass; otherwise, an error occurs.
+ In some cases, you might not know which store action to use for a particular render target until you gather more render pass information. To defer your store action choice, set the temporary [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value when you create your [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object. Setting an unknown store action may avoid potential costs incurred by setting another store action prematurely. However, you need to specify a valid store action before you finish encoding your render pass; otherwise, an error occurs.
 
-> **Note**:  You canʼt choose [`MTLStoreAction.store`](mtlstoreaction/store.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
+> **Note**:  You canʼt choose [`MTLStoreAction.store`](mtlstoreaction/store.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a resource storage mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
 
 ##### Evaluate Actions Between Render Passes
 
@@ -71,11 +71,11 @@ You can use the same render targets across multiple render passes. Several load 
 
 ## See Also
 
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
   Run draw commands that render to different outputs using the same vertex data multiple times.
 
 

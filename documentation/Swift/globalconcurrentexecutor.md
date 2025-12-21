@@ -10,10 +10,9 @@ The global concurrent executor that is used by default for Swift Concurrency tas
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 18.0+
 - visionOS 2.0+
 - watchOS 11.0+
-- Unknown ?+ - Deprecated
-- tvOS 18.0+
 
 ## Declaration
 

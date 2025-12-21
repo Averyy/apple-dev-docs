@@ -22,11 +22,11 @@ var argumentBuffersSupport: MTLArgumentBuffersTier { get }
 
 ## Mentions
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
 
 ## Topics
 
-### Argument Buffer Tiers
+### Argument buffer tiers
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 

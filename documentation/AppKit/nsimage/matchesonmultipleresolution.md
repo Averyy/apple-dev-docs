@@ -16,9 +16,9 @@ var matchesOnMultipleResolution: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`false`](https://developer.apple.com/documentation/swift/false), only image representations whose resolution is exactly the same as the device resolution are matches. If the property is set to [`true`](https://developer.apple.com/documentation/swift/true) and multiple image representations fit this criteria, the one whose resolution is closest to the device resolution is chosen.
+When this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), only image representations whose resolution is exactly the same as the device resolution are matches. If the property is set to [`true`](https://developer.apple.com/documentation/Swift/true) and multiple image representations fit this criteria, the one whose resolution is closest to the device resolution is chosen.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

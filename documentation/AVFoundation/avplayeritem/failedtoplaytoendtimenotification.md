@@ -28,7 +28,7 @@ The notification’s object is the player item that finished playing.
 
 ## Topics
 
-### Error Keys
+### Error keys
 - [let AVPlayerItemFailedToPlayToEndTimeErrorKey: String](avplayeritemfailedtoplaytoendtimeerrorkey.md)
   The key to retrieve the error object from the notification’s user information dictionary.
 

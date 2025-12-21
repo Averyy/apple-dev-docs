@@ -18,7 +18,7 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to display the contact and dismiss the picker. [`false`](https://developer.apple.com/documentation/swift/false) to do nothing.
+[`true`](https://developer.apple.com/documentation/Swift/true) to display the contact and dismiss the picker. [`false`](https://developer.apple.com/documentation/Swift/false) to do nothing.
 
 ## Parameters
 

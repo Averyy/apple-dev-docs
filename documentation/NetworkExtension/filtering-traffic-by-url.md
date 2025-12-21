@@ -4,6 +4,11 @@
 
 Perform fast and robust filtering of full URLs by managing URL filtering configurations.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 234: [`Filter and tunnel network traffic with NetworkExtension`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc25/234/).

@@ -129,7 +129,6 @@ Extensions to the `Copyable` protocol are not allowed.
 - [DiscardingTaskGroup](discardingtaskgroup.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [DiscontiguousSlice.Index](discontiguousslice/index.md)
-- [DispatchMainExecutor](dispatchmainexecutor.md)
 - [Double](double.md)
 - [DropFirstSequence](dropfirstsequence.md)
 - [DropWhileSequence](dropwhilesequence.md)

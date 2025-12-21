@@ -26,9 +26,6 @@ If the result is `Swift/Result/success`, then the publisher waits until it recei
 
 ## Topics
 
-### Declaring Publisher Topology
-- [Result.Publisher.Output](result/publisher-swift.struct/output.md)
-  The kind of values published by this publisher.
 ### Creating a Result Publisher
 - [init(Result<Result<Success, Failure>.Publisher.Output, Failure>)](result/publisher-swift.struct/init(_:)-516t.md)
   Creates a publisher that delivers the specified result.
@@ -39,9 +36,6 @@ If the result is `Swift/Result/success`, then the publisher waits until it recei
 ### Inspecting Publisher Properties
 - [let result: Result<Result<Success, Failure>.Publisher.Output, Failure>](result/publisher-swift.struct/result.md)
   The result to deliver to each subscriber.
-### Working with Subscribers
-- [func receive<S>(subscriber: S)](result/publisher-swift.struct/receive(subscriber:).md)
-  Attaches the specified subscriber to this publisher.
 ### Instance Methods
 - [func allSatisfy((Result<Success, Failure>.Publisher.Output) -> Bool) -> Result<Bool, Failure>.Publisher](result/publisher-swift.struct/allsatisfy(_:).md)
 - [func collect() -> Result<[Result<Success, Failure>.Publisher.Output], Failure>.Publisher](result/publisher-swift.struct/collect.md)
@@ -73,9 +67,6 @@ If the result is `Swift/Result/success`, then the publisher waits until it recei
 - [func tryReduce<T>(T, (T, Result<Success, Failure>.Publisher.Output) throws -> T) -> Result<T, any Error>.Publisher](result/publisher-swift.struct/tryreduce(_:_:).md)
 - [func tryRemoveDuplicates(by: (Result<Success, Failure>.Publisher.Output, Result<Success, Failure>.Publisher.Output) throws -> Bool) -> Result<Result<Success, Failure>.Publisher.Output, any Error>.Publisher](result/publisher-swift.struct/tryremoveduplicates(by:).md)
 - [func tryScan<T>(T, (T, Result<Success, Failure>.Publisher.Output) throws -> T) -> Result<T, any Error>.Publisher](result/publisher-swift.struct/tryscan(_:_:).md)
-### Default Implementations
-- [Equatable Implementations](result/publisher-swift.struct/equatable-implementations.md)
-- [Publisher Implementations](result/publisher-swift.struct/publisher-implementations.md)
 
 ## Relationships
 

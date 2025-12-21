@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Represents a family 2 Mac GPU when running an app you built with Mac Catalyst.
+Represents a family 2 Mac GPU when running an app you built with Mac Catalyst.
 
 **Availability**:
 - iOS 13.0+
@@ -22,7 +22,7 @@ case macCatalyst2
 ## See Also
 
 - [MTLGPUFamily.macCatalyst1](mtlgpufamily/maccatalyst1.md)
-  Represents a family 1 Mac GPU when running an app you built with Mac Catalyst.
+  Represents a family 1 Mac GPU when running an app you built with Mac Catalyst.
 
 
 ---

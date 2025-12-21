@@ -29,10 +29,10 @@ Use an image generator to extract images from a video asset at particular times 
 
 ## Topics
 
-### Creating an Image Generator
+### Creating an image generator
 - [init(asset: AVAsset)](avassetimagegenerator/init(asset:).md)
   Creates an object that generates images for times within a video asset.
-### Configuring Image Generation
+### Configuring image generation
 - [var maximumSize: CGSize](avassetimagegenerator/maximumsize.md)
   The maximum size of images to generate.
 - [var requestedTimeToleranceBefore: CMTime](avassetimagegenerator/requestedtimetolerancebefore.md)
@@ -49,16 +49,18 @@ Use an image generator to extract images from a video asset at particular times 
   Specifies the aperture mode for the generated image.
 - [AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct.md)
   Constants that define aperture modes to use when generating images.
-### Configuring Compositing
+### Configuring compositing
 - [var videoComposition: AVVideoComposition?](avassetimagegenerator/videocomposition.md)
   A video composition to use when extracting images from assets with multiple video tracks.
 - [var customVideoCompositor: (any AVVideoCompositing)?](avassetimagegenerator/customvideocompositor.md)
   A custom video compositor to use when extracting images from assets with multiple video tracks.
-### Generating Images
+### Generating images
 - [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](avassetimagegenerator/image(at:).md)
   Generates an image for a requested time.
 - [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
   Generates images for times within the video timeline.
+- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
+  An asynchronous sequence of images created by an image generator.
 - [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](avassetimagegenerator/generatecgimageasynchronously(for:completionhandler:).md)
   Generates an image asynchronously for a requested time, and returns the result in a callback.
 - [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](avassetimagegenerator/generatecgimagesasynchronously(fortimes:completionhandler:).md)
@@ -69,12 +71,9 @@ Use an image generator to extract images from a video asset at particular times 
   Cancels all pending image generation requests.
 - [func copyCGImage(at: CMTime, actualTime: UnsafeMutablePointer<CMTime>?) throws -> CGImage](avassetimagegenerator/copycgimage(at:actualtime:).md)
   Returns an image for the asset at or near a specified time.
-### Accessing the Asset
+### Accessing the asset
 - [var asset: AVAsset](avassetimagegenerator/asset.md)
   The asset that initialized the image generator.
-### Structures
-- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
-  An asynchronous sequence of images created by an image generator.
 
 ## Relationships
 

@@ -18,6 +18,10 @@ Indicates a compact size class.
 case compact
 ```
 
+## Mentions
+
+- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+
 ## See Also
 
 - [UIUserInterfaceSizeClass.unspecified](uiuserinterfacesizeclass/unspecified.md)

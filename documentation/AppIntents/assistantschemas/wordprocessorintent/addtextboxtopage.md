@@ -25,7 +25,7 @@ var addTextBoxToPage: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.wordProcessor.addTextBoxToPage` schema:
 
 ```swift
-@AssistantIntent(schema: .wordProcessor.addTextBoxToPage)
+@AppIntent(schema: .wordProcessor.addTextBoxToPage)
 struct AddTextBoxToWordProcessorPageIntent: AppIntent {
     @Parameter
     var target: WordProcessorPageEntity

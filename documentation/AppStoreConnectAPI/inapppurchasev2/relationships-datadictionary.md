@@ -21,6 +21,8 @@ object InAppPurchaseV2.Relationships
 - [object InAppPurchaseV2.Relationships.Images](inapppurchasev2/relationships-data.dictionary/images-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.InAppPurchaseAvailability](inapppurchasev2/relationships-data.dictionary/inapppurchaseavailability-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations](inapppurchasev2/relationships-data.dictionary/inapppurchaselocalizations-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships.OfferCodes](inapppurchasev2/relationships-data.dictionary/offercodes-data.dictionary.md)
+  The data and links that describe the offer codes of the in-app purchase.
 - [object InAppPurchaseV2.Relationships.PricePoints](inapppurchasev2/relationships-data.dictionary/pricepoints-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.PromotedPurchase](inapppurchasev2/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
 

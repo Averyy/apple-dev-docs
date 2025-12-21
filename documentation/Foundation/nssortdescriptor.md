@@ -67,6 +67,7 @@ You can use sort descriptors for the following:
   Forces a securely decoded sort descriptor to allow evaluation.
 ### Initializers
 - [convenience init<Compared>(SortDescriptor<Compared>)](nssortdescriptor/init(_:)-527yl.md)
+  Creates an `NSSortDescriptor` representing the same sort as the given `SortDescriptor`.
 
 ## Relationships
 

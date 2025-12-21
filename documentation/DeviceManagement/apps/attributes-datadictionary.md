@@ -15,6 +15,10 @@ The attributes for an apps resource.
 object Apps.Attributes
 ```
 
+## Mentions
+
+- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+
 ## Topics
 
 ### Related Objects

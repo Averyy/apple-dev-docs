@@ -1,20 +1,26 @@
 # OverlayStyle
 
 **Framework**: Maps Web Snapshots  
-**Kind**: dict
+**Kind**: dictionary
 
 A  JSON object that describes reusable styles for an overlay.
 
 **Availability**:
-- Maps Web Snapshots 1.0+ (Beta)
+- Maps Web Snapshots 1.0+
+
+## Declaration
+
+```swift
+object OverlayStyle
+```
 
 #### Discussion
 
-You pass the `OverlayStyle` object properties from the `overlayStyles` query parameter. You can set the object properties and reuse the styles for multiple objects. Any changes made to an `OverlayStyle` object property automatically changes the styles associated with that object, unless they’re overwritten using the `Overlay` object. 
+You pass the `OverlayStyle` object properties from the `overlayStyles` query parameter. You can set the object properties and reuse the styles for multiple objects. Any changes made to an `OverlayStyle` object property automatically changes the styles associated with that object, unless they’re overwritten using the `Overlay` object.
 
 The following example shows `OverlayStyle` properties passed into the `overlayStyles` query parameter:
 
-```other
+```javascript
 /snapshot?center=0,0&z=7&overlays=[{
 "type": "polygon",
 "points":["1,1","1,-1","-1,-1","-1,1"],
@@ -32,15 +38,15 @@ The following example shows `OverlayStyle` properties passed into the `overlaySt
 ## Topics
 
 ### Objects
-- [object OverlayStyle.LineGradient](overlaystyle/linegradient.md)
+- [object OverlayStyle.LineGradient](overlaystyle/linegradient-data.dictionary.md)
   A property that sets the color stops for the gradient, positioned by offsets between 0 and 1.
-- [object OverlayStyle.LineGradientIndexes](overlaystyle/linegradientindexes.md)
+- [object OverlayStyle.LineGradientIndexes](overlaystyle/linegradientindexes-data.dictionary.md)
   A property that sets the color stops for the gradient, positioned by indexes of points on the polyline.
 
 ## See Also
 
-- [Generating a URL and Signature to Create a Maps Web Snapshot](generating_a_url_and_signature_to_create_a_maps_web_snapshot.md)
-  Create a Snapshot URL and generate a signature to validate the request. 
+- [Generating a URL and Signature to Create a Maps Web Snapshot](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)
+  Create a Snapshot URL and generate a signature to validate the request.
 - [object Annotation](annotation.md)
   An object for a Snapshot URL that describes annotation characteristics.
 - [object Overlay](overlay.md)

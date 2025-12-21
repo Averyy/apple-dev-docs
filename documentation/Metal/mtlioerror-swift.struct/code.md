@@ -21,7 +21,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [MTLIOError.Code.urlInvalid](mtlioerror-swift.struct/code/urlinvalid.md)
   An error code that represents a problem with a file URL.
 - [MTLIOError.Code.internal](mtlioerror-swift.struct/code/internal.md)

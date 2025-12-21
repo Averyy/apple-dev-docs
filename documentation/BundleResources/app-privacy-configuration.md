@@ -40,6 +40,8 @@ Use the keys and values in this object in the privacy manifest for your app or t
   Declare the data collected by your app or by third-party SDKs.
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
   Ensure your use of covered API is consistent with policy.
+- [Editing property list files](../Xcode/editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 
 
 ---

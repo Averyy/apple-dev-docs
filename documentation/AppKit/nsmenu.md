@@ -172,11 +172,6 @@ class NSMenu
   Posted just before the application dispatches a menu item’s action method to the menu item’s target.
 ### Instance Properties
 - [var automaticallyInsertsWritingToolsItems: Bool](nsmenu/automaticallyinsertswritingtoolsitems.md)
-### Instance Methods
-- [func isJavaMenu() -> Bool](nsmenu/isjavamenu.md)
-- [func setJavaMenuDelegate((any JRSMenuDelegate)!)](nsmenu/setjavamenudelegate(_:).md)
-### Type Methods
-- [class func javaMenu(withTitle: String!) -> NSMenu!](nsmenu/javamenu(withtitle:).md)
 
 ## Relationships
 

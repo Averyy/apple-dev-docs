@@ -18,7 +18,7 @@ var shouldAutoplay: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). This property determines whether the playback of network-based content begins automatically when there is enough buffered data to ensure uninterrupted playback.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). This property determines whether the playback of network-based content begins automatically when there is enough buffered data to ensure uninterrupted playback.
 
 ## See Also
 

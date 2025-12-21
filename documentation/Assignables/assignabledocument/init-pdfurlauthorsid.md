@@ -8,9 +8,8 @@ Initializes a new assessment document that is based on the PDF located at the pr
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- visionOS ?+
-- Unknown ?+ - Deprecated
 - Mac Catalyst 17.4+
+- visionOS ?+
 
 ## Declaration
 

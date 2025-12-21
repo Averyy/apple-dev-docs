@@ -26,7 +26,7 @@ When using a High Dynamic Range (HDR) camera, SceneKit applies a process called 
 
 The default value is `1.0`. By setting this property to a higher or lower value, you can produce more gradual or more abrupt transitions between shadows and highlights.
 
-This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

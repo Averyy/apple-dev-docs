@@ -21,7 +21,7 @@ var isPersistent: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the data store writes data to disk, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the data store writes data to disk, or [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 ## See Also
 

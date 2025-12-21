@@ -6,7 +6,7 @@
 Creates a control size from its ControlSize equivalent.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

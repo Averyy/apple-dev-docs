@@ -47,7 +47,7 @@ var height: Int { get }
   The number of bytes from the first byte of one pixel to the first byte of the next pixel, in storage order. (Includes padding.)
 - [var texture: any MTLTexture](mpsimage/texture.md)
   The underlying texture.
-- [protocol MTLTexture : MTLResource](../Metal/MTLTexture.md)
+- [protocol MTLTexture](../Metal/MTLTexture.md)
   A resource that holds formatted image data.
 - [var label: String?](mpsimage/label.md)
   A string to help identify this object.

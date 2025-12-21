@@ -21,7 +21,7 @@ var framebufferOnly: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the [`CAMetalLayer`](cametallayer.md) class allocates its [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects with only the [`renderTarget`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/renderTarget) usage flag. Core Animation can then optimize the texture for display purposes. However, you may not sample, read from, or write to those textures. To support sampling and pixel read/write operations (at a cost to performance), set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), the [`CAMetalLayer`](cametallayer.md) class allocates its [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects with only the [`renderTarget`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/renderTarget) usage flag. Core Animation can then optimize the texture for display purposes. However, you may not sample, read from, or write to those textures. To support sampling and pixel read/write operations (at a cost to performance), set this value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

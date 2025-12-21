@@ -17,7 +17,7 @@ Returns a new matrix created by concatenating the specified matrix with a rotati
 ## Declaration
 
 ```swift
-func SCNMatrix4Rotate(_ m: SCNMatrix4, _ angle: Float, _ x: Float, _ y: Float, _ z: Float) -> SCNMatrix4
+func SCNMatrix4Rotate(_ m: SCNMatrix4, _ angle: CGFloat, _ x: CGFloat, _ y: CGFloat, _ z: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

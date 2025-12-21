@@ -25,6 +25,11 @@ func encodeWithOptimizer(_ transformer: FullyConnectedNetworkClassifier<Scalar, 
 - `transformer`: A fully connected network classifier model.
 - `encoder`: An encoder for the estimator.
 
+## See Also
+
+- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/decode(from:).md)
+  Decodes the estimator.
+
 
 ---
 

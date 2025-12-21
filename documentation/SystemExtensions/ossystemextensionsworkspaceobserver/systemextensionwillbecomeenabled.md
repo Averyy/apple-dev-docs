@@ -12,6 +12,10 @@
 optional func systemExtensionWillBecomeEnabled(_ systemExtensionInfo: OSSystemExtensionInfo)
 ```
 
+#### Discussion
+
+This delegate method will be called when a system extension has been validated and allowed by the user to run.
+
 
 ---
 

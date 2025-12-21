@@ -11,36 +11,33 @@
 
 ## See Also
 
-- [ar_plane_alignment_t](ar_plane_alignment_t.md)
-  The kinds of alignment — horizontal or vertical — that a plane anchor can have.
-- [ar_plane_classification_t](ar_plane_classification_t.md)
-  The kinds of object classification a plane anchor can have.
-- [ar_plane_classification_ceiling](ar_plane_classification_t/ar_plane_classification_ceiling.md)
-  A ceiling.
-- [ar_plane_classification_door](ar_plane_classification_t/ar_plane_classification_door.md)
-  A door.
-- [ar_plane_classification_floor](ar_plane_classification_t/ar_plane_classification_floor.md)
-  A floor.
-- [ar_plane_classification_seat](ar_plane_classification_t/ar_plane_classification_seat.md)
-  A seat.
-- [ar_plane_classification_status_not_available](ar_plane_classification_t/ar_plane_classification_status_not_available.md)
-  A plane classification is currently unavailable.
-- [ar_plane_classification_status_undetermined](ar_plane_classification_t/ar_plane_classification_status_undetermined.md)
-  A plane classification is undetermined.
-- [ar_plane_classification_status_unknown](ar_plane_classification_t/ar_plane_classification_status_unknown.md)
-  A plane classification isn’t one of the known classes.
-- [ar_plane_classification_table](ar_plane_classification_t/ar_plane_classification_table.md)
-  A table.
-- [ar_plane_classification_wall](ar_plane_classification_t/ar_plane_classification_wall.md)
-  A wall.
-- [ar_plane_classification_window](ar_plane_classification_t/ar_plane_classification_window.md)
-  A window.
-- [ar_plane_anchor_get_alignment](ar_plane_anchor_get_alignment.md)
-  Gets the alignment — horizontal or vertical — of a plane anchor relative to gravity.
-- [ar_plane_anchor_get_geometry](ar_plane_anchor_get_geometry.md)
-  Gets the shape of a plane anchor.
-- [ar_plane_anchor_get_plane_classification](ar_plane_anchor_get_plane_classification.md)
-  Gets the kind of real-world object that ARKit determines the plane anchor might be.
+- [protocol OS_ar_anchor](os_ar_anchor.md)
+  The identity, location, and orientation of an object in world space.
+- [protocol OS_ar_trackable_anchor](os_ar_trackable_anchor.md)
+  An anchor that can gain and lose its tracking state over the course of a session.
+- [protocol OS_ar_authorization_result](os_ar_authorization_result.md)
+  An authorization result.
+- [protocol OS_ar_authorization_results](os_ar_authorization_results.md)
+  A collection of authorization results.
+- [protocol OS_ar_data_provider](os_ar_data_provider.md)
+  A source of live data from ARKit.
+- [protocol OS_ar_device_anchor](os_ar_device_anchor.md)
+  The position and orientation of Apple Vision Pro.
+- [protocol OS_ar_error](os_ar_error.md)
+  An error reported by ARKit.
+- [protocol OS_ar_data_providers](os_ar_data_providers.md)
+  A source of live data from ARKit.
+- [protocol OS_ar_geometry_element](os_ar_geometry_element.md)
+  A container for vertex indices of lines or triangles.
+- [protocol OS_ar_geometry_source](os_ar_geometry_source.md)
+  A container for geometrical vector data.
+- [protocol OS_ar_hand_anchor](os_ar_hand_anchor.md)
+  A hand’s position in a person’s surroundings.
+- [protocol OS_ar_hand_skeleton](os_ar_hand_skeleton.md)
+- [protocol OS_ar_hand_tracking_provider](os_ar_hand_tracking_provider.md)
+  A source of live data about the position of a person’s hands and hand joints.
+- [protocol OS_ar_hand_tracking_configuration](os_ar_hand_tracking_configuration.md)
+- [protocol OS_ar_image_tracking_configuration](os_ar_image_tracking_configuration.md)
 
 
 ---

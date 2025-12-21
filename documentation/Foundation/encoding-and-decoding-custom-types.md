@@ -185,7 +185,7 @@ For more information about the container types used when customizing the encodin
 
 ## See Also
 
-- [typealias Codable = Decodable & Encodable](../Swift/Codable.md)
+- [typealias Codable](../Swift/Codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)
   A protocol that enables an object to be encoded and decoded for archiving and distribution.

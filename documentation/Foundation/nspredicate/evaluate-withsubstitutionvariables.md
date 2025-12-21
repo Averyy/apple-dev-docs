@@ -22,7 +22,7 @@ func evaluate(with object: Any?, substitutionVariables bindings: [String : Any]?
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `object` matches the conditions specified by the predicate after substituting in the values in `bindings` for any replacement tokens, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `object` matches the conditions specified by the predicate after substituting in the values in `bindings` for any replacement tokens, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

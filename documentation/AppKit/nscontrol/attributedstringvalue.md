@@ -30,7 +30,7 @@ If the cell is being edited, setting this property aborts all editing before set
 - [var intValue: Int32](nscontrol/intvalue.md)
   The value of the receiver’s cell as an integer.
 - [var integerValue: Int](nscontrol/integervalue.md)
-  The value of the receiver’s cell as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value.
+  The value of the receiver’s cell as an integer value.
 - [var objectValue: Any?](nscontrol/objectvalue.md)
   The value of the receiver’s cell as an Objective-C object.
 - [var stringValue: String](nscontrol/stringvalue.md)

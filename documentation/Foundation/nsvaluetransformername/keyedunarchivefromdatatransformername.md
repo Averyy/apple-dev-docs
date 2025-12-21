@@ -27,11 +27,11 @@ The transformer this property references returns the [`NSData`](nsdata.md) insta
 ## See Also
 
 - [static let isNilTransformerName: NSValueTransformerName](nsvaluetransformername/isniltransformername.md)
-  This value transformer returns [`true`](https://developer.apple.com/documentation/swift/true) if the value is `nil`.
+  This value transformer returns true if the value is nil.
 - [static let isNotNilTransformerName: NSValueTransformerName](nsvaluetransformername/isnotniltransformername.md)
-  This value transformer returns [`true`](https://developer.apple.com/documentation/swift/true) if the value is non-`nil`.
+  This value transformer returns true if the value is non-nil.
 - [static let negateBooleanTransformerName: NSValueTransformerName](nsvaluetransformername/negatebooleantransformername.md)
-  This value transformer negates a boolean value, transforming [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false) and [`false`](https://developer.apple.com/documentation/swift/false) to [`true`](https://developer.apple.com/documentation/swift/true).
+  This value transformer negates a boolean value, transforming true to false and false to true.
 - [static let unarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/unarchivefromdatatransformername.md)
   The name of the value transformer that attempts to unarchive data from an object you provide.
 - [static let secureUnarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/secureunarchivefromdatatransformername.md)

@@ -22,23 +22,6 @@ enum CreditDebitIndicator
   A value that indicates an amount which increases an asset or decreases a liability.
 - [CreditDebitIndicator.debit](creditdebitindicator/debit.md)
   A value that indicates an amount which increases a liability or decreases an asset.
-### Initializers
-- [init?(rawValue: Int16)](creditdebitindicator/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int16](creditdebitindicator/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [CreditDebitIndicator.AllCases](creditdebitindicator/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [CreditDebitIndicator.RawValue](creditdebitindicator/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [CreditDebitIndicator]](creditdebitindicator/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](creditdebitindicator/equatable-implementations.md)
-- [RawRepresentable Implementations](creditdebitindicator/rawrepresentable-implementations.md)
 
 ## Relationships
 

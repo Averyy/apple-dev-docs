@@ -48,15 +48,15 @@ When no stereo view components are available on a video track, even if it’s en
 
 ## See Also
 
-- [CMMetadata APIs](cmmetadata.md)
+- [CMMetadata](cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag APIs](cmtag-api.md)
+- [CMTag](cmtag-api.md)
   Types and interfaces for working with Core Media tags.
 - [class CMTag](cmtag-swift.class.md)
   A tag to set additional metadata on media buffers.
 - [class CMTypedTag](cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection APIs](cmtagcollection.md)
+- [CMTagCollection](cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
 - [enum CMProjectionType](cmprojectiontype.md)
   Constants describing the projection surface information in a 3D video buffer or channel.

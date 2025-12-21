@@ -67,10 +67,6 @@ The current conditions may not be a literal observation, but rather the result o
   The percentage of the sky covered with low-altitude, middle altitude and high-altitude clouds during the period.
 - [var precipitationIntensity: Measurement<UnitSpeed>](currentweather/precipitationintensity.md)
   The current precipitation intensity in kilometers per hour.
-### Default Implementations
-- [Decodable Implementations](currentweather/decodable-implementations.md)
-- [Encodable Implementations](currentweather/encodable-implementations.md)
-- [Equatable Implementations](currentweather/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,8 +6,8 @@
 A property that returns a set of supported features, or an empty set if the current platform doesn’t support Wi-Fi Aware.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -26,7 +26,7 @@ When using a High Dynamic Range (HDR) camera, SceneKit applies a process called 
 
 SceneKit automatically determines the overall duration of exposure-level animations based on the values of this property and the [`exposureAdaptationDarkeningSpeedFactor`](scncamera/exposureadaptationdarkeningspeedfactor.md) property. The default value is `0.4`, resulting in brightening animations that are slightly faster than darkening animations.
 
-This property has no effect if either of the [`wantsHDR`](scncamera/wantshdr.md) or [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) values is [`false`](https://developer.apple.com/documentation/swift/false).
+This property has no effect if either of the [`wantsHDR`](scncamera/wantshdr.md) or [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) values is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

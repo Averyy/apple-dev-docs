@@ -20,7 +20,7 @@ func tryLock() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a lock was acquired, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a lock was acquired, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

@@ -16,9 +16,9 @@ var autosaves: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s attributes are automatically stored, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s attributes are automatically stored, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

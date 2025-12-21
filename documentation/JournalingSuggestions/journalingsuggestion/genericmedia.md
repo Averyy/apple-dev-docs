@@ -35,9 +35,6 @@ The system provides an instance of this structure to your app when a person choo
   The media item’s playback date.
 - [var title: String?](journalingsuggestion/genericmedia/title.md)
   The title or name of a media item.
-### Type Aliases
-- [JournalingSuggestion.GenericMedia.JournalingSuggestionContent](journalingsuggestion/genericmedia/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

@@ -24,6 +24,8 @@ To bridge this gap and enhance the developer experience, this project provides a
 - 🔗 **Smart link resolution** - Internal links converted to searchable queries
 - 💡 **Token management** - Control response size (1K-25K tokens)
 - 🤖 **MCP compatible** - Works with Claude Desktop, Claude Code, and other MCP clients
+- 📍 **Stateful framework selection** - Set an active framework to scope all searches (v1.1.0)
+- 🔤 **Wildcard search** - Use `*` and `?` patterns like `*View` or `UI*` (v1.1.0)
 
 ## 🔑 Environment Variables
 
@@ -212,9 +214,9 @@ cd scripts && python3 index_to_meilisearch.py
 Search Apple's documentation with natural language queries.
 
 **Parameters:**
-- `query` - Your search query (required)
-- `framework` - Filter by framework (e.g., "SwiftUI", "UIKit")
-- `strict_framework` - Only show results from specified framework (default: false)
+- `query` - Your search query (required). Supports wildcards: `*` (any characters), `?` (single character)
+- `framework` - Filter by framework (e.g., "SwiftUI", "UIKit"). If not specified, uses active framework if set.
+- `strict_framework` - Only show results from specified framework (default: false, but true when using active framework)
 - `platform` - Filter by platform: ios, macos, tvos, watchos, visionos, all (default: all)
 - `limit` - Number of results (1-20, default: 10)
 - `offset` - Pagination offset (default: 0)
@@ -222,19 +224,43 @@ Search Apple's documentation with natural language queries.
 - `summary_mode` - Return condensed summaries (default: false)
 
 **Example queries:**
-- "SwiftUI Button custom style" - Smart relevance prioritizes core components
-- "async await URLSession" - Finds modern async patterns
-- "MapKit annotations" - Returns results with internal links as search hints
+- `"SwiftUI Button custom style"` - Smart relevance prioritizes core components
+- `"async await URLSession"` - Finds modern async patterns
+- `"*View"` - Wildcard search for all View types
+- `"UI*Controller"` - Find UIKit controllers
 
 ### `expand_result`
-Get the full content of a specific documentation file.
+Get the full content of a specific documentation file or symbol.
 
 **Parameters:**
-- `file_path` - Path from search results (supports both absolute and relative paths)
+- `file_path` - Symbol name (e.g., "Button", "NavigationStack") or file path from search results. Uses active framework if set.
 - `sections` - Optional: specific sections to extract
+
+**Examples:**
+- `expand_result { "file_path": "Button" }` - Look up Button symbol directly
+- `expand_result { "file_path": "documentation/SwiftUI/View.md" }` - Full file path
 
 ### `list_frameworks`
 Browse all 360 available frameworks with document counts.
+
+**Parameters:**
+- `query` - Optional filter to search framework names (e.g., "UI", "Core", "Kit")
+
+### `choose_framework`
+Select a framework to scope all subsequent searches. Once set, searches default to this framework.
+
+**Parameters:**
+- `framework` - Framework name (e.g., "SwiftUI", "UIKit"). Use "clear" to remove selection.
+
+**Examples:**
+- `choose_framework { "framework": "SwiftUI" }` - Select SwiftUI
+- `choose_framework { "framework": "clear" }` - Clear selection
+
+### `current_framework`
+Show the currently selected framework and available next steps.
+
+### `get_version`
+Get server version and status information including document counts.
 
 ## 📦 Requirements
 

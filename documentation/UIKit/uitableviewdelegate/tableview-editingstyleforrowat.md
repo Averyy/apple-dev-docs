@@ -25,7 +25,7 @@ The editing style of the cell for the row identified by `indexPath`.
 
 #### Discussion
 
-This method allows the delegate to customize the editing style of the cell located at`indexPath`. If the delegate does not implement this method and the `UITableViewCell` object is editable (that is, it has its [`isEditing`](uitableviewcell/isediting.md) property set to [`true`](https://developer.apple.com/documentation/swift/true)), the cell has the [`UITableViewCell.EditingStyle.delete`](uitableviewcell/editingstyle-swift.enum/delete.md) style set for it.
+This method allows the delegate to customize the editing style of the cell located at`indexPath`. If the delegate does not implement this method and the `UITableViewCell` object is editable (that is, it has its [`isEditing`](uitableviewcell/isediting.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true)), the cell has the [`UITableViewCell.EditingStyle.delete`](uitableviewcell/editingstyle-swift.enum/delete.md) style set for it.
 
 ## Parameters
 

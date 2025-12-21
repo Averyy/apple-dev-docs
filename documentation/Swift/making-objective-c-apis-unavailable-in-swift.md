@@ -37,7 +37,7 @@ To make an Objective-C declaration unavailable at compile time in both Swift and
 - [Grouping Related Objective-C Constants](grouping-related-objective-c-constants.md)
   Add macros to your Objective-C types to group their values in Swift.
 - [Marking API Availability in Objective-C](marking-api-availability-in-objective-c.md)
-  Use `a` macro to denote the availability of an Objective-C API.
+  Use a macro to denote the availability of an Objective-C API.
 
 
 ---

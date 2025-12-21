@@ -21,9 +21,9 @@ class GKMatchmaker
 
 ## Mentions
 
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Creating activities for your game](creating-activities-for-your-game.md)
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 
 #### Overview
 
@@ -106,6 +106,8 @@ If you provide a SharePlay interface for inviting players, use the [`startGroupA
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

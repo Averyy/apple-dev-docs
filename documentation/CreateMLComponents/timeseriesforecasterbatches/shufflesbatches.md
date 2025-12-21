@@ -20,6 +20,19 @@ A Boolean value indicating whether to shuffle the batches.
 var shufflesBatches: Bool
 ```
 
+## See Also
+
+- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
+  The original annotations.
+- [let batchSize: Int](timeseriesforecasterbatches/batchsize.md)
+  The batch size.
+- [let features: MLShapedArray<Scalar>](timeseriesforecasterbatches/features.md)
+  The original features.
+- [let forecastWindowSize: Int](timeseriesforecasterbatches/forecastwindowsize.md)
+  The prediction sample count.
+- [let inputWindowSize: Int](timeseriesforecasterbatches/inputwindowsize.md)
+  The input sample count.
+
 
 ---
 

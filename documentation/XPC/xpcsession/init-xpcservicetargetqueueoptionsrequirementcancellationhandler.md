@@ -6,8 +6,8 @@
 Creates a new session object representing a connection to the named service, and requires that the session peer has the specified requirement.
 
 **Availability**:
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A Boolean that indicates whether the app can act as the user’s default web browser.
+An entitlement that indicates whether the app can act as the user’s default web browser.
 
 **Availability**:
 - iOS 14.0+
@@ -16,9 +16,9 @@ For more information about using this entitlement, see [`Preparing your app to b
 ## See Also
 
 - [com.apple.developer.web-browser.public-key-credential](entitlements/com.apple.developer.web-browser.public-key-credential.md)
-  A Boolean value that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
+  An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
 - [com.apple.developer.browser.app-installation](entitlements/com.apple.developer.browser.app-installation.md)
-  The entitlement that enables a browser to install alternative-distribution apps from a website.
+  An entitlement that enables a browser to install alternative distribution apps from a website.
 
 
 ---

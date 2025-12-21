@@ -51,6 +51,8 @@ BarPlot(
 - [init<Data, X>(Data, xStart: PlottableProjection<BarPlot<Content>.DataElement, X>, xEnd: PlottableProjection<BarPlot<Content>.DataElement, X>, yStart: KeyPath<BarPlot<Content>.DataElement, CGFloat>, yEnd: KeyPath<BarPlot<Content>.DataElement, CGFloat>)](barplot/init(_:xstart:xend:ystart:yend:)-mtdv.md)
 - [init<Data, Y>(Data, xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableProjection<BarPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<BarPlot<Content>.DataElement, Y>)](barplot/init(_:xstart:xend:ystart:yend:)-raqh.md)
 ### Supporting types
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedBarPlotContent](vectorizedbarplotcontent.md)
   An opaque vectorized chart content type.
 

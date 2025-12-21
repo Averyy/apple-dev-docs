@@ -26,7 +26,7 @@ var shouldRasterize: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the effect node caches the filtered image for use in future frames. If the value is [`false`](https://developer.apple.com/documentation/swift/false), then SpriteKit discards the rendered image and redraws it from scratch the next time the node is rendered. The default value is [`false`](https://developer.apple.com/documentation/swift/false). Caching the rendered image uses more memory and may take more time to render. However, if the effect node’s descendants rarely change, caching can improve performance.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the effect node caches the filtered image for use in future frames. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), then SpriteKit discards the rendered image and redraws it from scratch the next time the node is rendered. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Caching the rendered image uses more memory and may take more time to render. However, if the effect node’s descendants rarely change, caching can improve performance.
 
 When caching is enabled, changes to the effect node’s children trigger updates to the cached image in the next frame of animation. However, changing the filter’s properties does not.
 

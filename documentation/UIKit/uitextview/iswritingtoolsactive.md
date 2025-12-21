@@ -24,6 +24,16 @@ Use this property to determine when someone is using the writing tools to rewrit
 
 To receive notifications when writing tools interactions start and stop, implement the  [`textViewWritingToolsWillBegin(_:)`](uitextviewdelegate/textviewwritingtoolswillbegin(_:).md) and [`textViewWritingToolsDidEnd(_:)`](uitextviewdelegate/textviewwritingtoolsdidend(_:).md) delegate methods.
 
+## See Also
+
+- [var writingToolsBehavior: UIWritingToolsBehavior](uitextview/writingtoolsbehavior.md)
+  The level of Writing Tools support to use in the text view.
+- [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextview/allowedwritingtoolsresultoptions.md)
+  The type of content Writing Tools generates for your text view.
+- [var writingToolsCoordinator: UIWritingToolsCoordinator](uitextview/writingtoolscoordinator.md)
+  The object that coordinates interactions between Writing Tools and the text view.
+- [var subclassForWritingToolsCoordinator: AnyClass](uitextview/subclassforwritingtoolscoordinator.md)
+
 
 ---
 

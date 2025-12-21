@@ -6,7 +6,7 @@
 Creates the gesture with a desired coordinate space 3D.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

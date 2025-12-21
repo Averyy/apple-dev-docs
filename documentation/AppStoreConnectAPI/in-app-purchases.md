@@ -48,6 +48,8 @@ Create, modify, and delete in-app purchases for your app.
 - [List in-app purchase images](get-v2-inapppurchases-_id_-images.md)
   List all images for a specific in-app purchase.
 - [GET /v2/inAppPurchases/{id}/relationships/images](get-v2-inapppurchases-_id_-relationships-images.md)
+- [GET /v2/inAppPurchases/{id}/offerCodes](get-v2-inapppurchases-_id_-offercodes.md)
+- [GET /v2/inAppPurchases/{id}/relationships/offerCodes](get-v2-inapppurchases-_id_-relationships-offercodes.md)
 ### Objects
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)
 - [object InAppPurchasesV2Response](inapppurchasesv2response.md)
@@ -72,6 +74,8 @@ Create, modify, and delete in-app purchases for your app.
 - [object InAppPurchaseV2InAppPurchaseLocalizationsLinkagesResponse](inapppurchasev2inapppurchaselocalizationslinkagesresponse.md)
 - [object InAppPurchaseV2PricePointsLinkagesResponse](inapppurchasev2pricepointslinkagesresponse.md)
 - [object InAppPurchaseV2PromotedPurchaseLinkageResponse](inapppurchasev2promotedpurchaselinkageresponse.md)
+- [object InAppPurchaseV2OfferCodesLinkagesResponse](inapppurchasev2offercodeslinkagesresponse.md)
+  A response that contains a list of in-app purchase offer codes linkage resources.
 
 ## See Also
 

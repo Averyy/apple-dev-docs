@@ -22,7 +22,7 @@ var containsTweening: Bool { get }
 
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that rendering a frame from the same source buffers and the same composition instruction at two different [`compositionTime`](avasynchronousvideocompositionrequest/compositiontime.md) values may yield different output frames. A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates that two compositions yield the same frame.
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates that rendering a frame from the same source buffers and the same composition instruction at two different [`compositionTime`](avasynchronousvideocompositionrequest/compositiontime.md) values may yield different output frames. A value of [`false`](https://developer.apple.com/documentation/Swift/false) indicates that two compositions yield the same frame.
 
 
 ---

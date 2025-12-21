@@ -72,7 +72,7 @@ struct NSExceptionName
 - [static let rangeException: NSExceptionName](nsexceptionname/rangeexception.md)
   Name of an exception that occurs when attempting to access outside the bounds of some data, such as beyond the end of a string.
 - [static let undefinedKeyException: NSExceptionName](nsexceptionname/undefinedkeyexception.md)
-  Raised when a key value coding operation fails. `userInfo` keys are described in [`NSUndefinedKeyException userInfo Keys`](https://developer.apple.com/documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys)
+  Raised when a key value coding operation fails.
 - [static let inconsistentArchiveException: NSExceptionName](nsexceptionname/inconsistentarchiveexception.md)
   The name of an exception raised by [`NSArchiver`](nsarchiver.md) if there are problems initializing or encoding.
 - [static let NSPPDIncludeNotFoundException: NSExceptionName](nsexceptionname/nsppdincludenotfoundexception.md)

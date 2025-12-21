@@ -13,6 +13,12 @@
 var childViewControllerForPreferredContainerBackgroundStyle: UIViewController? { get }
 ```
 
+## See Also
+
+- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
+- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
+- [enum UIContainerBackgroundStyle](uicontainerbackgroundstyle.md)
+
 
 ---
 

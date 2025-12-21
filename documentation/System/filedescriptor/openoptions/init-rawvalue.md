@@ -22,10 +22,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [var rawValue: CInt](filedescriptor/openoptions/rawvalue-swift.property.md)
+- [var rawValue: CInt](filedescriptor/openoptions/rawvalue.md)
   The raw C options.
-- [FileDescriptor.OpenOptions.RawValue](filedescriptor/openoptions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

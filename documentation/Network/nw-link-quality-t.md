@@ -20,12 +20,7 @@ struct nw_link_quality_t
 
 #### Overview
 
-```None
-Link quality measurement is a representation of the expected capabilities of the link layer network
-attachment. Use this value to tune initial values for algorithms that can scale with the
-capabilities of the network. Do not use this value to gate connection attempts or to override
-adjustments that would be made based on actual network performance.
-```
+Link quality measurement is a representation of the expected capabilities of the link layer network attachment. Use this value to tune initial values for algorithms that can scale with the capabilities of the network. Do not use this value to gate connection attempts or to override adjustments that would be made based on actual network performance.
 
 ## Topics
 

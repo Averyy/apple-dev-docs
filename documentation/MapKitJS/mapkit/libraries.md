@@ -6,12 +6,12 @@
 The list of available libraries.
 
 **Availability**:
-- MapKit JS 5.73+
+- MapKit JS 5.75+
 
 ## Declaration
 
 ```swift
-readonly attribute string[] Libraries;
+get Libraries(): string[] | undefined;
 ```
 
 #### Discussion
@@ -22,18 +22,14 @@ readonly attribute string[] Libraries;
 
 - [Handling initialization events](handling-initialization-events.md)
   Respond to events that trigger when MapKit JS initializes.
-- [init](mapkit/init.md)
+- [init(options)](mapkit/init.md)
   Initializes MapKit JS by providing an authorization callback function and optional language.
-- [MapKitInitOptions](mapkitinitoptions.md)
+- [interface MapKitInitializationOptions](mapkitinitializationoptions.md)
   Initialization options for MapKit JS.
 - [loadedLibraries](mapkit/loadedlibraries.md)
   A string that describes the list of loaded libraries.
-- [load](mapkit/load.md)
+- [load(libraryNames)](mapkit/load.md)
   Tells MapKit JS which libraries to load.
-- [addEventListener](mapkit/addeventlistener.md)
-  Subscribes a listener function to an event type.
-- [removeEventListener](mapkit/removeeventlistener.md)
-  Unsubscribes a listener function from an event type.
 
 
 ---

@@ -6,8 +6,8 @@
 Get the preferred output port.  Will be nil if no preference has been set.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

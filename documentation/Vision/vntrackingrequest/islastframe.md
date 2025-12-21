@@ -21,7 +21,7 @@ var isLastFrame: Bool { get set }
 
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/swift/true), the current tracker will be released to the pool of available trackers when the current frame finishes processing.
+If set to [`true`](https://developer.apple.com/documentation/Swift/true), the current tracker will be released to the pool of available trackers when the current frame finishes processing.
 
 ## See Also
 

@@ -10,7 +10,6 @@ A token containing the local peer’s networking compatibility info.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

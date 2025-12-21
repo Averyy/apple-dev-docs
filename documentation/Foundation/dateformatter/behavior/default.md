@@ -26,8 +26,6 @@ Specifies default formatting behavior.
 
 - [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
 - [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
 
 
 ---

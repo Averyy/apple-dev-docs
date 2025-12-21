@@ -18,8 +18,12 @@ object InvalidAppIdentifierError
 
 - [object AccountNotFoundError](accountnotfounderror.md)
   An error that indicates the App Store account wasn’t found.
+- [object AdvancedCommerceTransactionNotSupportedError](advancedcommercetransactionnotsupportederror.md)
+  An error that indicates Advanced Commerce API transactions are not supported by the endpoint.
 - [object AppNotFoundError](appnotfounderror.md)
   An error that indicates the app wasn’t found.
+- [object AppTransactionDoesNotExistError](apptransactiondoesnotexisterror.md)
+  An error response that indicates an app transaction doesn’t exist for the specified customer.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
@@ -41,11 +45,7 @@ object InvalidAppIdentifierError
 - [object InvalidOriginalTransactionIdError](invalidoriginaltransactioniderror.md)
   An error that indicates an invalid original transaction identifier.
 - [object InvalidRefundPreferenceError](invalidrefundpreferenceerror.md)
-  An error that indicates an invalid refund preference code.
-- [object InvalidRequestIdentifierError](invalidrequestidentifiererror.md)
-  An error that indicates an invalid request identifier.
-- [object InvalidRequestRevisionError](invalidrequestrevisionerror.md)
-  An error that indicates an invalid request revision.
+  An error that indicates an invalid refund preference value.
 
 
 ---

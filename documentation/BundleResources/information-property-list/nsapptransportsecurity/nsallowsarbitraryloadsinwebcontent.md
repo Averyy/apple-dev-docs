@@ -13,13 +13,7 @@ A Boolean value indicating whether all App Transport Security restrictions are d
 
 #### Discussion
 
-Set this key’s value to `YES` to exempt your app’s web views from App Transport Security restrictions without affecting your [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) connections. Domains you specify in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary aren’t affected by this key’s value.
-
-A web view is an instance of any of the following classes:
-
-- [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)
-- [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) (iOS only)
-- doc://com.apple.documentation/documentation/webkit/webview (macOS only)
+Set this key’s value to `YES` to exempt your app’s [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) instances from App Transport Security restrictions without affecting your [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) connections. Domains you specify in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary aren’t affected by this key’s value.
 
 In iOS 10 and later and in macOS 10.12 and later, if you include this key with any value, then App Transport Security ignores the value of the [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md) key, instead using that key’s default value of `NO`. For more information about how the OS version affects ATS behavior, see the [`NSAppTransportSecurity`](information-property-list/nsapptransportsecurity.md) key’s Versioning section.
 

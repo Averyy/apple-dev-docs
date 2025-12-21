@@ -25,7 +25,7 @@ You receive a segment report through the [`assetWriter(_:didOutputSegmentData:se
 
 ## Topics
 
-### Inspecting a Report
+### Inspecting a report
 - [var segmentType: AVAssetSegmentType](avassetsegmentreport/segmenttype.md)
   The type of segment data.
 - [enum AVAssetSegmentType](avassetsegmenttype.md)

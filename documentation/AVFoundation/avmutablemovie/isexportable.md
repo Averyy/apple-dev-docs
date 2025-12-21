@@ -20,7 +20,7 @@ var isExportable: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you can export the composition using [`AVAssetExportSession`](avassetexportsession.md).
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you can export the composition using [`AVAssetExportSession`](avassetexportsession.md).
 
 ## See Also
 

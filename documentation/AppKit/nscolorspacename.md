@@ -59,8 +59,6 @@ struct NSColorSpaceName
   Constants that indicate the color’s type, and which methods may be called on the color object.
 - [var colorSpace: NSColorSpace](nscolor/colorspace.md)
   The color space associated with the color.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 
 
 ---

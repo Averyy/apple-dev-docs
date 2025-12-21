@@ -10,7 +10,7 @@ A component that provides access to the current weights associated with all blen
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -27,9 +27,9 @@ You can access the weights associated with an entity’s blend shapes by using t
 let blendShapeWeightsComponent = BlendShapeWeightsComponent(
     weightsMapping: weightsMapping)
 entity.components.set(blendShapeWeightsComponent)
-let weightValues: [Float] = [0.3, 0.8]
-entity.components[BlendShapeWeightsComponent.self]!.weightSets[0].weights
-    = weightValues
+let weightValues = BlendShapeWeights([0.3, 0.8])
+entity.components[BlendShapeWeightsComponent.self]!.weightSets[0].weights =
+    weightValues
 ```
 
 ## Topics

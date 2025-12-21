@@ -20,6 +20,8 @@ The notification object is the WebView that finished loading. This notification 
 
 ## See Also
 
+- [var estimatedProgress: Double](../WebKit/WebView-swift.class/estimatedProgress.md)
+  An estimate, as a percentage, of the amount of content that is currently loaded.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.
 - [static let WebHistoryItemChanged: NSNotification.Name](nsnotification/name-swift.struct/webhistoryitemchanged.md)

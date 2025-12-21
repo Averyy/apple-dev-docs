@@ -26,12 +26,12 @@ An instance of this object represents the languages and media characteristics of
 
 ## Topics
 
-### Creating Media Selection Criteria
+### Creating media selection criteria
 - [init(preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaCharacteristic]?)](avplayermediaselectioncriteria/init(preferredlanguages:preferredmediacharacteristics:).md)
   Creates media selection criteria with the preferred languages and media characteristics.
 - [init(principalMediaCharacteristics: [AVMediaCharacteristic]?, preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaCharacteristic]?)](avplayermediaselectioncriteria/init(principalmediacharacteristics:preferredlanguages:preferredmediacharacteristics:).md)
   Creates media selection criteria with the principal media characteristics, and preferred languages and media characteristics.
-### Retrieving Selection Criteria Settings
+### Retrieving selection criteria settings
 - [var preferredLanguages: [String]?](avplayermediaselectioncriteria/preferredlanguages.md)
   An array of language identifiers in preferred order.
 - [var preferredMediaCharacteristics: [AVMediaCharacteristic]?](avplayermediaselectioncriteria/preferredmediacharacteristics.md)
@@ -55,7 +55,7 @@ An instance of this object represents the languages and media characteristics of
 
 ## See Also
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 - [class AVMediaSelection](avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
@@ -65,6 +65,12 @@ An instance of this object represents the languages and media characteristics of
   An object that represents a specific option for the presentation of media within a group of options.
 - [class AVMutableMediaSelection](avmutablemediaselection.md)
   A mutable object that represents a complete rendition of media selection options on an asset.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 
 ---

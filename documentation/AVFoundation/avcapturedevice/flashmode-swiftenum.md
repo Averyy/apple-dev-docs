@@ -20,7 +20,7 @@ enum FlashMode
 
 ## Topics
 
-### Flash Modes
+### Flash modes
 - [AVCaptureDevice.FlashMode.off](avcapturedevice/flashmode-swift.enum/off.md)
   A mode that indicates the flash is off.
 - [AVCaptureDevice.FlashMode.on](avcapturedevice/flashmode-swift.enum/on.md)

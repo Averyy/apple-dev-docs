@@ -10,6 +10,7 @@ The normalized distance between the screen and a hovering Apple Pencil.
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

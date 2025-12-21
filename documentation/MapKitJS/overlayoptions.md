@@ -11,12 +11,7 @@ A dictionary of options that determines an overlay’s data, and indicates wheth
 ## Declaration
 
 ```swift
-dictionary OverlayOptions {
-	Object data;
-	boolean visible;
-	boolean enabled;
-	boolean selected;
-};
+interface OverlayOptions
 ```
 
 #### Overview
@@ -34,23 +29,27 @@ Use [`OverlayOptions`](overlayoptions.md) to set the initial state of your overl
   A Boolean value that indicates whether the overlay is in a selected state.
 - [visible](overlayoptions/visible.md)
   A Boolean value that determines if an overlay is visible.
+- [style](overlayoptions/style.md)
+  An object literal of style properties.
 
 ## See Also
 
 - [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
   Configure and respond to overlays to make them interactive.
-- [mapkit.Overlay](mapkit.overlay.md)
-  An abstract base object that defines the methods and attributes for map overlays.
-- [mapkit.Style](mapkit.style.md)
-  A set of observable attributes for overlays, including the color and opacity of strokes and fills, and line styles.
-- [mapkit.CircleOverlay](mapkit.circleoverlay.md)
+- [class Overlay](overlay.md)
+  An abstract base object that defines the methods and properties for map overlays.
+- [class Style](style.md)
+  A set of observable style properties for overlays, including the color and opacity of strokes and fills, and line styles.
+- [class CircleOverlay](circleoverlay.md)
   A circular overlay with a configurable radius that centers on a specific geographic coordinate.
-- [mapkit.PolylineOverlay](mapkit.polylineoverlay.md)
+- [class PolylineOverlay](polylineoverlay.md)
   An overlay of connected line segments that don’t form a closed shape.
-- [mapkit.PolygonOverlay](mapkit.polygonoverlay.md)
+- [class PolygonOverlay](polygonoverlay.md)
   An overlay consisting of one or more points that forms a closed shape.
-- [mapkit.TileOverlay](mapkit.tileoverlay.md)
+- [class TileOverlay](tileoverlay.md)
   An overlay that covers an area of the map with bitmapped tiles.
+- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+  A type that specifies the URL template for a tile overlay.
 
 
 ---

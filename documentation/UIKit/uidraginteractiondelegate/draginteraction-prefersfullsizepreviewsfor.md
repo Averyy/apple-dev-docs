@@ -20,11 +20,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, prefersFullSizeP
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to tell the system the preview should appear in its original size; otherwise [`false`](https://developer.apple.com/documentation/swift/false), which is the default if you don’t provide this method.
+[`true`](https://developer.apple.com/documentation/Swift/true) to tell the system the preview should appear in its original size; otherwise [`false`](https://developer.apple.com/documentation/Swift/false), which is the default if you don’t provide this method.
 
 #### Discussion
 
-The return value is a recommendation to the system. The system may choose to scale the preview to a smaller size, according to its own rules, even if you return [`true`](https://developer.apple.com/documentation/swift/true).
+The return value is a recommendation to the system. The system may choose to scale the preview to a smaller size, according to its own rules, even if you return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

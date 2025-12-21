@@ -1,10 +1,10 @@
-# Metal Variables
+# Metal variables
 
 **Framework**: Metal
 
 ## Topics
 
-### Global Variables
+### Global variables
 - [var MTLResourceCPUCacheModeMask: UInt](mtlresourcecpucachemodemask.md)
 - [var MTLResourceCPUCacheModeShift: Int32](mtlresourcecpucachemodeshift.md)
 - [var MTLResourceHazardTrackingModeMask: UInt](mtlresourcehazardtrackingmodemask.md)
@@ -20,10 +20,10 @@
 
 ## See Also
 
-- [Metal Structures](metal-structures.md)
-- [Metal Enumerations](metal-enumerations.md)
-- [Metal Constants](metal-constants.md)
-- [Metal Data Types](metal-data-types.md)
+- [Metal structures](metal-structures.md)
+- [Metal enumerations](metal-enumerations.md)
+- [Metal constants](metal-constants.md)
+- [Metal data types](metal-data-types.md)
 
 
 ---

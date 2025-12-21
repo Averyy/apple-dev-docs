@@ -28,17 +28,6 @@ struct Identifier
   The dock accessory’s unique identifier.
 - [var debugDescription: String](dockaccessory/identifier-swift.struct/debugdescription.md)
   The text description of the dock accessory state.
-### Operators
-- [static func == (DockAccessory.Identifier, DockAccessory.Identifier) -> Bool](dockaccessory/identifier-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/identifier-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/identifier-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/identifier-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

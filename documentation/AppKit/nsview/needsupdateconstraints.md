@@ -17,7 +17,7 @@ var needsUpdateConstraints: Bool { get set }
 
 #### Discussion
 
-When a property of your view changes in a way that would impact constraints, set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to indicate that the constraints need to be updated at some point in the future. The next time the layout process happens, the constraint-based layout system uses the value of this property to determine whether it needs to call [`updateConstraints()`](nsview/updateconstraints().md) on the view. Use this as an optimization tool to batch constraint changes. Updating constraints all at once just before they are needed ensures that you don’t needlessly recalculate constraints when multiple changes are made to your view in between layout passes.
+When a property of your view changes in a way that would impact constraints, set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that the constraints need to be updated at some point in the future. The next time the layout process happens, the constraint-based layout system uses the value of this property to determine whether it needs to call [`updateConstraints()`](nsview/updateconstraints().md) on the view. Use this as an optimization tool to batch constraint changes. Updating constraints all at once just before they are needed ensures that you don’t needlessly recalculate constraints when multiple changes are made to your view in between layout passes.
 
 ## See Also
 

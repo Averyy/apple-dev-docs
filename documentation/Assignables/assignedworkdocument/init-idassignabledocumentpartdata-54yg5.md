@@ -9,7 +9,6 @@ Construct an instance of this object with the parts data passed in.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- Unknown ?+ - Deprecated
 - visionOS ?+
 
 ## Declaration

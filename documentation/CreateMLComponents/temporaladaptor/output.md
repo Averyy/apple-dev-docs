@@ -20,6 +20,13 @@ The output type.
 typealias Output = Base.Output
 ```
 
+## See Also
+
+- [TemporalAdaptor.Input](temporaladaptor/input.md)
+  The input type.
+- [TemporalAdaptor.OutputSequence](temporaladaptor/outputsequence.md)
+  The output sequence type.
+
 
 ---
 

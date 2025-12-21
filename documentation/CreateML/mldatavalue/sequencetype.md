@@ -22,18 +22,9 @@ struct SequenceType
 ## Topics
 
 ### Creating a dictionary type
-- [init<S>(S)](mldatavalue/sequencetype/init(_:)-1vvdf.md)
-- [init<S>(S)](mldatavalue/sequencetype/init(_:)-3u0oh.md)
+- [init(_:)](mldatavalue/sequencetype/init(_:).md)
 ### Default Implementations
-- [BidirectionalCollection Implementations](mldatavalue/sequencetype/bidirectionalcollection-implementations.md)
-- [Collection Implementations](mldatavalue/sequencetype/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](mldatavalue/sequencetype/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mldatavalue/sequencetype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mldatavalue/sequencetype/equatable-implementations.md)
-- [ExpressibleByArrayLiteral Implementations](mldatavalue/sequencetype/expressiblebyarrayliteral-implementations.md)
 - [MLDataValueConvertible Implementations](mldatavalue/sequencetype/mldatavalueconvertible-implementations.md)
-- [RandomAccessCollection Implementations](mldatavalue/sequencetype/randomaccesscollection-implementations.md)
-- [Sequence Implementations](mldatavalue/sequencetype/sequence-implementations.md)
 
 ## Relationships
 

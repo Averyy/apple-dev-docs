@@ -22,10 +22,10 @@ class AVAssetPlaybackAssistant
 
 ## Topics
 
-### Creating a Playback Assistant
+### Creating a playback assistant
 - [convenience init(asset: AVAsset)](avassetplaybackassistant/init(asset:).md)
   Creates a playback assistant to inspect the specified asset.
-### Loading Playback Configuration Options
+### Loading playback configuration options
 - [func loadPlaybackConfigurationOptions(completionHandler: ([AVAssetPlaybackConfigurationOption]) -> Void)](avassetplaybackassistant/loadplaybackconfigurationoptions(completionhandler:).md)
   Loads playback configuration options for an asset.
 

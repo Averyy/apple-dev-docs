@@ -36,7 +36,7 @@ Determine the camera position and lighting for the current session, and apply ef
   Analyze the video from the cameras and the accompanying data, and use ray-casting and depth-map information to determine the location of items.
 - [Data Management](data-management.md)
   Obtain detailed information about skeletal and face geometry, and saved world data.
-- [Creating USD files for Apple devices](../RealityKit/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
 

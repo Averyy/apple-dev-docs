@@ -26,8 +26,8 @@ A Boolean value that indicates whether an app can use the Apple Neural Engine to
   A Boolean value indicating whether your app may use a shared coordinate space.
 - [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
   A Boolean value indicating whether the system prohibits capturing your app’s content.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
   A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
 

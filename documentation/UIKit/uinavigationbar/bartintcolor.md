@@ -21,7 +21,7 @@ var barTintColor: UIColor? { get set }
 
 #### Discussion
 
-This color is made translucent by default unless you set the [`isTranslucent`](uinavigationbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+This color is made translucent by default unless you set the [`isTranslucent`](uinavigationbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

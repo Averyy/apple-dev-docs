@@ -22,7 +22,7 @@ enum Status
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVPlayer.Status.unknown](avplayer/status-swift.enum/unknown.md)
   A value that indicates a player hasn’t attempted to load media for playback.
 - [AVPlayer.Status.readyToPlay](avplayer/status-swift.enum/readytoplay.md)

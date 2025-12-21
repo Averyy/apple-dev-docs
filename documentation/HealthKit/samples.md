@@ -99,12 +99,6 @@ HealthKit uses different [`HKSample`](hksample.md) subclasses to store different
 ### Walking steadiness classifications
 - [enum HKAppleWalkingSteadinessClassification](hkapplewalkingsteadinessclassification.md)
   A classification of a score based on the steadiness of the user’s gait.
-- [HKAppleWalkingSteadinessClassificationForQuantity](hkapplewalkingsteadinessclassificationforquantity.md)
-  Provides a classification for a score that measures the steadiness of the user’s gait.
-- [HKAppleWalkingSteadinessMaximumQuantityForClassification](hkapplewalkingsteadinessmaximumquantityforclassification.md)
-  Returns the maximum score for the steadiness of the user’s gait based on the provided classification.
-- [HKAppleWalkingSteadinessMinimumQuantityForClassification](hkapplewalkingsteadinessminimumquantityforclassification.md)
-  Returns the minimum score for the steadiness of the user’s gait based on the provided classification.
 ### Attachments
 - [class HKAttachment](hkattachment.md)
   A file that is attached to a sample in the HealthKit store.

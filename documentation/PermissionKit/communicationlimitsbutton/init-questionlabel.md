@@ -6,11 +6,12 @@
 Creates a new instance.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- Unknown ?+ - Deprecated
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -26,7 +27,7 @@ Creates a new instance.
 
 ## See Also
 
-- [var body: some View](communicationlimitsbutton/body-swift.property.md)
+- [var body: some View](communicationlimitsbutton/body.md)
   The body of the view.
 - [let question: PermissionQuestion<CommunicationTopic>](communicationlimitsbutton/question.md)
   The question to ask a parent or guardian about making an exception to their child’s communication limits.

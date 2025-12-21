@@ -30,10 +30,8 @@ You are responsible for managing the lifetime and validity of `FileDescriptor` v
 ### Creating a File Descriptor
 - [init(rawValue: CInt)](filedescriptor/init(rawvalue:).md)
   Creates a strongly-typed file handle from a raw C file handle.
-- [let rawValue: CInt](filedescriptor/rawvalue-swift.property.md)
+- [let rawValue: CInt](filedescriptor/rawvalue.md)
   The raw C file handle.
-- [FileDescriptor.RawValue](filedescriptor/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Opening a File
 - [static func open(FilePath, FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions, permissions: FilePermissions?, retryOnInterrupt: Bool) throws -> FileDescriptor](filedescriptor/open(_:_:options:permissions:retryoninterrupt:)-4ql4b.md)
   Opens or creates a file for reading or writing.
@@ -67,16 +65,6 @@ You are responsible for managing the lifetime and validity of `FileDescriptor` v
   Deletes a file descriptor.
 - [func closeAfter<R>(() throws -> R) throws -> R](filedescriptor/closeafter(_:).md)
   Runs a closure and then closes the file descriptor, even if an error occurs.
-### Encoding File Descriptors
-- [init(from: any Decoder) throws](filedescriptor/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
-- [func encode(to: any Encoder) throws](filedescriptor/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `Int32`.
-### Comparing File Descriptors
-- [static func != (Self, Self) -> Bool](filedescriptor/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](filedescriptor/hash(into:).md)
-- [var hashValue: Int](filedescriptor/hashvalue.md)
 ### Instance Methods
 - [func duplicate(as: FileDescriptor?, retryOnInterrupt: Bool) throws -> FileDescriptor](filedescriptor/duplicate(as:retryoninterrupt:).md)
   Duplicates this file descriptor and return the newly created copy.
@@ -92,9 +80,6 @@ You are responsible for managing the lifetime and validity of `FileDescriptor` v
 ### Type Methods
 - [static func pipe() throws -> (readEnd: FileDescriptor, writeEnd: FileDescriptor)](filedescriptor/pipe.md)
   Creates a unidirectional data channel, which can be used for interprocess communication.
-### Default Implementations
-- [Equatable Implementations](filedescriptor/equatable-implementations.md)
-- [RawRepresentable Implementations](filedescriptor/rawrepresentable-implementations.md)
 
 ## Relationships
 

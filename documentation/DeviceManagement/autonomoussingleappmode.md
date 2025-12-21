@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure Autonomous Single App mode.
+The payload that configures Autonomous Single App mode.
 
 **Availability**:
 - macOS 10.13.4+
@@ -86,11 +86,11 @@ The system only allows installation of one profile of this type, and it requires
 ## See Also
 
 - [object AppLock](applock.md)
-  The payload you use to configure a device to run a single app.
+  The payload that configures a device to run a single app.
 - [object AssociatedDomains](associateddomains.md)
-  The payload you use to configure associated domains.
+  The payload that configures associated domains.
 - [object NSExtensionManagement](nsextensionmanagement.md)
-  The payload you use to configure the extensions that the system allows or disallows to run on the device.
+  The payload that configures the extensions that the system allows or disallows to run on the device.
 
 
 ---

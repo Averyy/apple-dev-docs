@@ -26,9 +26,22 @@ You call this method in your implementation of [`enumerateDirectory(_:startingAt
 
 - `name`: The item’s name.
 - `itemType`: The type of the item.
-- `itemID`: The item’s identifier.
+- `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by   like  .
 - `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the   parameter on the next call to  . Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
 - `attributes`: The item’s attributes. Pass   if the enumeration call didn’t request attributes.
+
+## See Also
+
+- [FSItem.ItemType](fsitem/itemtype.md)
+  An enumeration of item types, such as file, directory, or symbolic link.
+- [FSItem.Identifier](fsitem/identifier.md)
+  The unique identifier for an item.
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [FSItem.Attributes](fsitem/attributes.md)
+  Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 
 ---

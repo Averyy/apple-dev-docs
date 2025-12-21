@@ -9,8 +9,8 @@ A type that uses a custom intent to provide a value to a control template.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -56,7 +56,7 @@ struct DoorValueProvider: AppIntentControlValueProvider {
 ## See Also
 
 - [protocol ControlValueProvider](controlvalueprovider.md)
-  A type that provides a value to a control widget template.
+  A type that provides a value to a control template.
 
 
 ---

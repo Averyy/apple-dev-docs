@@ -17,7 +17,7 @@ var importsGraphics: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver allows the user to import files by dragging; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the receiver allows the user to import files by dragging; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t.
 
 If the receiver is set to accept dragged files, it’s also made a rich text object. Subclasses may or may not accept dragged files by default.
 

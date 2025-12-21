@@ -28,7 +28,7 @@ Kernel-based and fragment-based tile pipeline dispatches act as a barrier agains
 - [var tileBuffers: MTLPipelineBufferDescriptorArray](mtltilerenderpipelinedescriptor/tilebuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s tile function.
 - [var maxCallStackDepth: Int](mtltilerenderpipelinedescriptor/maxcallstackdepth.md)
-  The maximum function call depth from the top-most shader function.
+  The maximum call stack depth for indirect function calls in tile shaders.
 
 
 ---

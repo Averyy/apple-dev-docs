@@ -44,15 +44,15 @@ The [`CAShapeLayer`](https://developer.apple.com/documentation/QuartzCore/CAShap
 
 ##### Draw the Layers Content Dynamically
 
-Dynamic content scaling requires you to draw your layer’s contents using one of the prescribed methods. If you define a custom subclass of [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer), draw your layer’s content in the [`draw(in:)`](https://developer.apple.com/documentation/QuartzCore/CALayer/draw(in:)) method. If you use a [`CALayerDelegate`](https://developer.apple.com/documentation/QuartzCore/CALayerDelegate) object to draw the layer’s content, use the delgate’s [`draw(_:in:)`](https://developer.apple.com/documentation/QuartzCore/CALayerDelegate/draw(_:in:)) method instead.
+Dynamic content scaling requires you to draw your layer’s contents using one of the prescribed methods. If you define a custom subclass of [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer), draw your layer’s content in the [`draw(in:)`](https://developer.apple.com/documentation/QuartzCore/CALayer/draw(in:)) method. If you use a [`CALayerDelegate`](https://developer.apple.com/documentation/QuartzCore/CALayerDelegate) object to draw the layer’s content, use the delegate’s [`draw(_:in:)`](https://developer.apple.com/documentation/QuartzCore/CALayerDelegate/draw(_:in:)) method instead.
 
 When you enable dynamic content scaling for a layer, the system captures your app’s drawing commands for playback later. As the person’s eyes move, the system draws the layer at higher resolutions when someone looks directly at it, or at lower resolutions otherwise. Because the redraw operations implicitly communicate what the person is looking at, the system performs them outside of your app’s process. Letting the system handle these operations maintains the person’s privacy while still giving your app the benefits of high-resolution drawing.
 
 Some Core Graphics routines are incompatible with dynamic content scaling. Even if you enable dynamic content scaling for your layer, the system automatically disables the feature if your layer uses any of the following:
 
 - Core Graphics shaders.
-- APIs that set intent, quality, or other bitmap-related properties. For example, don’t call [`CGContextSetInterpolationQuality`](https://developer.apple.com/documentation/coregraphics/1455656-cgcontextsetinterpolationquality).
-- A doc://com.apple.documentation/documentation/coregraphics/cgbitmapcontext to draw content.
+- APIs that set intent, quality, or other bitmap-related properties. For example, don’t call [`CGContextSetInterpolationQuality`](https://developer.apple.com/documentation/CoreGraphics/CGContextSetInterpolationQuality).
+- A `CGBitmapContext` to draw content.
 
 If your app creates timer-based animations, don’t animate layer changes using your drawing method. Calling [`setNeedsDisplay()`](https://developer.apple.com/documentation/QuartzCore/CALayer/setNeedsDisplay()) on your layer repeatedly in a short time causes the system to draw the layer multiple times in quick succession. Because visionOS needs a little extra time to draw a layer at high resolution, each redraw request forces it to throw away work. A better option is to animate layer-based properties to achieve the same effect, or use a [`CAShapeLayer`](https://developer.apple.com/documentation/QuartzCore/CAShapeLayer) to animate paths when needed.
 
@@ -78,6 +78,10 @@ Complex drawing code can also lead to performance issues. A layer with many stro
   Build fully immersive experiences by combining spaces with content you create using RealityKit or Metal.
 - [Introductory visionOS samples](introductory-visionos-samples.md)
   Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 
 
 ---

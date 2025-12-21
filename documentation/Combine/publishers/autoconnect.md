@@ -26,22 +26,17 @@ This publisher calls [`connect()`](connectablepublisher/connect().md) on the ups
 
 ## Topics
 
-### Creating an Autoconnect Publisher
+### Creating an autoconnect publisher
 - [init(upstream: Upstream)](publishers/autoconnect/init(upstream:).md)
   Creates a publisher that automatically connects to an upstream connectable publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Autoconnect.Output](publishers/autoconnect/output.md)
   The kind of values published by this publisher.
 - [Publishers.Autoconnect.Failure](publishers/autoconnect/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/autoconnect/upstream.md)
   The publisher from which this publisher receives elements.
-### Applying Operators
-- [Publisher Operators](publishers-autoconnect-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/autoconnect/publisher-implementations.md)
 
 ## Relationships
 

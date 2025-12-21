@@ -18,8 +18,6 @@ typealias ABMultiValueIdentifier = Int32
 
 ## See Also
 
-- [typealias ABRecord](abrecord-swift.typealias.md)
-  A reference to an ABRecord object or any of its derivedopaque types.
 - [typealias ABAddressBookRequestAccessCompletionHandler](abaddressbookrequestaccesscompletionhandler.md)
   Definition for a block callback invoked when an access request has completed.
 - [typealias ABExternalChangeCallback](abexternalchangecallback.md)

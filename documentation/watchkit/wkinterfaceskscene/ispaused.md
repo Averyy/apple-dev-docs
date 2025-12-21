@@ -20,7 +20,7 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
 
 ## See Also
 

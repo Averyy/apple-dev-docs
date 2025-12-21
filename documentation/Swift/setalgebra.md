@@ -105,7 +105,6 @@ When implementing a custom type that conforms to the `SetAlgebra` protocol, you 
 ### Inherited By
 - [OptionSet](optionset.md)
 ### Conforming Types
-- [ClockTraits](clocktraits.md)
 - [Set](set.md)
 
 

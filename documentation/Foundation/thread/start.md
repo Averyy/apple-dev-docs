@@ -22,7 +22,7 @@ func start()
 
 #### Discussion
 
-This method asynchronously spawns the new thread and invokes the receiver’s [`main()`](thread/main().md) method on the new thread. The [`isExecuting`](thread/isexecuting.md) property returns [`true`](https://developer.apple.com/documentation/swift/true) once the thread starts executing, which may occur after the [`start()`](thread/start().md) method returns.
+This method asynchronously spawns the new thread and invokes the receiver’s [`main()`](thread/main().md) method on the new thread. The [`isExecuting`](thread/isexecuting.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true) once the thread starts executing, which may occur after the [`start()`](thread/start().md) method returns.
 
 If you initialized the receiver with a target and selector, the default [`main()`](thread/main().md) method invokes that selector automatically.
 

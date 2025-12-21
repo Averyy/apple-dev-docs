@@ -23,6 +23,7 @@ func submitScore(_ score: Int, context: Int, player: GKPlayer) async throws
 ## Mentions
 
 - [Creating recurring leaderboards](creating-recurring-leaderboards.md)
+- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
 - [Choosing a leaderboard for your challenges](choosing-a-leaderboard-for-your-challenges.md)
 - [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
 

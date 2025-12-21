@@ -6,8 +6,8 @@
 The duration of the command - this can be .zero if the command has no duration
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,11 +20,11 @@ var duration: CMTime
 - [var direction: FadeEnvironmentCommand.FadeDirection](fadeenvironmentcommand/direction.md)
   Fade direction for this command instance.
 - [var id: Int](fadeenvironmentcommand/id.md)
-  A unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command ID for the immersive media file.
 - [var offset: CMTime?](fadeenvironmentcommand/offset.md)
-  Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
+  The offset from the start time of this command.
 - [var opacity: Float](fadeenvironmentcommand/opacity.md)
-  The fade opacity value between 0.0 to 1.0. This value represents the target opacity of the environment backdrops during playback after fading completes.
+  The fade opacity value between `0.0` to `1.0`. This value represents the target opacity of the environment backdrops during playback after fading completes.
 - [var time: CMTime](fadeenvironmentcommand/time.md)
   The time this command starts during playback.
 

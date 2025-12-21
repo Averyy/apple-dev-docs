@@ -22,7 +22,7 @@ func setDelegateQueue(_ queue: OperationQueue?)
 
 #### Discussion
 
-By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/swift/false) for the `startImmediately` parameter, you can instead schedule the connection on an operation queue before starting it with the [`start()`](nsurlconnection/start().md) method.
+By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/Swift/false) for the `startImmediately` parameter, you can instead schedule the connection on an operation queue before starting it with the [`start()`](nsurlconnection/start().md) method.
 
 You cannot reschedule a connection after it has started.
 

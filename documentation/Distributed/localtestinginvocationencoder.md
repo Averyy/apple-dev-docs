@@ -18,23 +18,6 @@
 struct LocalTestingInvocationEncoder
 ```
 
-## Topics
-
-### Instance Methods
-- [func doneRecording() throws](localtestinginvocationencoder/donerecording.md)
-  Invoked to signal to the encoder that no further `record...` calls will be made on it.
-- [func recordArgument<Value>(RemoteCallArgument<Value>) throws](localtestinginvocationencoder/recordargument(_:).md)
-  Record an argument of `Argument` type. This will be invoked for every argument of the target, in declaration order.
-- [func recordErrorType<E>(E.Type) throws](localtestinginvocationencoder/recorderrortype(_:).md)
-  Record the error type of the distributed method. This method will not be invoked if the target is not throwing.
-- [func recordGenericSubstitution<T>(T.Type) throws](localtestinginvocationencoder/recordgenericsubstitution(_:).md)
-  The arguments must be encoded order-preserving, and once `decodeGenericSubstitutions` is called, the substitutions must be returned in the same order in which they were recorded.
-- [func recordReturnType<R>(R.Type) throws](localtestinginvocationencoder/recordreturntype(_:).md)
-  Record the return type of the distributed method. This method will not be invoked if the target is returning `Void`.
-### Type Aliases
-- [LocalTestingInvocationEncoder.SerializationRequirement](localtestinginvocationencoder/serializationrequirement.md)
-  The serialization requirement that the types passed to `recordArgument` and `recordReturnType` are required to conform to.
-
 ## Relationships
 
 ### Conforms To

@@ -26,6 +26,12 @@ Use this resource to:
   Edit the reference name for a group.
 - [Delete a group](delete-v1-gamecentergroups-_id_.md)
   Remove a group.
+- [List all Game Center achievements for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterachievementsv2.md)
+  Get a list of achievements for a specific Game Center group.
+- [List all Game Center leaderboard sets for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsetsv2.md)
+  Get a list of leaderboard sets for a specific Game Center group.
+- [List all Game Center leaderboards for a Game Center group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsv2.md)
+  Get a list of leaderboards for a specific Game Center group.
 - [List the achievements in a group](get-v1-gamecentergroups-_id_-gamecenterachievements.md)
   List achievements information for a specific group.
 - [List Game Center details for a group](get-v1-gamecentergroups-_id_-gamecenterdetails.md)
@@ -43,6 +49,18 @@ Use this resource to:
   Get challenge information for a specific Game Center group.
 - [GET /v1/gameCenterGroups/{id}/relationships/gameCenterChallenges](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
 ### Reading and modifying group relationships
+- [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)
+  Get a list of achievement resource IDs for a specific Game Center group.
+- [Get all leaderboard set IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboardsetsv2.md)
+  Get a list of leaderboard set resource IDs for a specific Game Center group.
+- [Get all leaderboard IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboardsv2.md)
+  Get a list of leaderboard resource IDs for a specific Game Center group.
+- [Modify the achievements for a Game Center group](patch-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)
+  Update the achievements relationship for a specific Game Center group.
+- [Modify the leaderboard sets for a Game Center group](patch-v1-gamecentergroups-_id_-relationships-gamecenterleaderboardsetsv2.md)
+  Update the leaderboard sets relationship for a specific Game Center group.
+- [Modify the leaderboards for a Game Center group](patch-v1-gamecentergroups-_id_-relationships-gamecenterleaderboardsv2.md)
+  Update the leaderboards relationship for a specific Game Center group.
 - [Read the achievements in a group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievements.md)
   List all the achievements associated with a specific group.
 - [Read the leaderboard sets in a group](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboardsets.md)
@@ -60,6 +78,18 @@ Use this resource to:
   The data structure that represents a group resource.
 - [object GameCenterGroupCreateRequest](gamecentergroupcreaterequest.md)
   The request body you use to create a group.
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest](gamecentergroupgamecenterachievementsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center achievement linkage request resource.
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse](gamecentergroupgamecenterachievementsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center achievement linkage resources.
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsetsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center leaderboard set linkage request resource.
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsetsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center leaderboard set linkage resources.
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsv2linkagesrequest.md)
+  The data structure that represents a Game Center group Game Center leaderboard linkage request resource.
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsv2linkagesresponse.md)
+  A response that contains a list of Game Center group Game Center leaderboard linkage resources.
 - [object GameCenterGroupGameCenterAchievementsLinkagesRequest](gamecentergroupgamecenterachievementslinkagesrequest.md)
   The request body you use to create a relationship between a group and an achievement.
 - [object GameCenterGroupGameCenterAchievementsLinkagesResponse](gamecentergroupgamecenterachievementslinkagesresponse.md)

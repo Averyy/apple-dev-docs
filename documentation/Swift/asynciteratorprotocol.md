@@ -110,6 +110,7 @@ If the iterator needs to clean up on cancellation, it can do so after checking f
 - [AsyncThrowingMapSequence.Iterator](asyncthrowingmapsequence/iterator.md)
 - [AsyncThrowingPrefixWhileSequence.Iterator](asyncthrowingprefixwhilesequence/iterator.md)
 - [AsyncThrowingStream.Iterator](asyncthrowingstream/iterator.md)
+- [Observations.Iterator](../observation/observations/iterator.md)
 - [TaskGroup.Iterator](taskgroup/iterator.md)
 - [ThrowingTaskGroup.Iterator](throwingtaskgroup/iterator.md)
 

@@ -21,7 +21,7 @@ var characterBoxes: [VNRectangleObservation]? { get }
 
 #### Discussion
 
-If the associated [`VNDetectTextRectanglesRequest`](vndetecttextrectanglesrequest.md) request indicates interest in character boxes by setting the option `reportCharacterBoxes` to [`true`](https://developer.apple.com/documentation/swift/true), this property is non-`nil`. If no characters are found, it remains empty.
+If the associated [`VNDetectTextRectanglesRequest`](vndetecttextrectanglesrequest.md) request indicates interest in character boxes by setting the option `reportCharacterBoxes` to [`true`](https://developer.apple.com/documentation/Swift/true), this property is non-`nil`. If no characters are found, it remains empty.
 
 
 ---

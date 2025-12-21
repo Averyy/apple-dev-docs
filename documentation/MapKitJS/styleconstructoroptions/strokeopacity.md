@@ -11,7 +11,7 @@ The opacity of the stroke color.
 ## Declaration
 
 ```swift
-attribute number strokeOpacity;
+strokeOpacity?: number;
 ```
 
 #### Discussion

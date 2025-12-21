@@ -22,8 +22,8 @@ func SecTrustCreateWithCertificates(_ certificates: CFTypeRef, _ policies: CFTyp
 
 ## Mentions
 
-- [Creating a Trust Object](creating-a-trust-object.md)
 - [Configuring a Trust](configuring-a-trust.md)
+- [Creating a Trust Object](creating-a-trust-object.md)
 
 #### Return Value
 

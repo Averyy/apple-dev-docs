@@ -16,7 +16,7 @@ var isHapticFeedbackEnabled: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true). In Apple Watch Series 4 and later, the watch provides linear haptic feedback as the user rotates the digital crown. Set this property to [`false`](https://developer.apple.com/documentation/swift/false) to disable the haptic feedback while the crown sequencer has the focus. For example, you can use this property to disable haptic feedback if the feedback does not match the screen’s animation.
+By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true). In Apple Watch Series 4 and later, the watch provides linear haptic feedback as the user rotates the digital crown. Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) to disable the haptic feedback while the crown sequencer has the focus. For example, you can use this property to disable haptic feedback if the feedback does not match the screen’s animation.
 
 ## See Also
 

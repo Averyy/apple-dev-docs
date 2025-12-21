@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to grant local network access to the app
+The person needs to allow the app to access the local network.
 
 **Availability**:
 - iOS 18.0+

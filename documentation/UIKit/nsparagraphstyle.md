@@ -61,7 +61,7 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 - [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.
 ### Getting text block and list information
-- [var textBlocks: [NSTextBlock] { get }](../AppKit/NSParagraphStyle/textBlocks.md)
+- [var textBlocks: [NSTextBlock]](../AppKit/NSParagraphStyle/textBlocks.md)
   The text blocks that contain the paragraph.
 - [var textLists: [NSTextList]](nsparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
@@ -78,12 +78,12 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsparagraphstyle/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float { get }](../AppKit/NSParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../AppKit/NSParagraphStyle/tighteningFactorForTruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
-### Getting the html header level
-- [var headerLevel: Int { get }](../AppKit/NSParagraphStyle/headerLevel.md)
+### Getting the HTML header level
+- [var headerLevel: Int](../AppKit/NSParagraphStyle/headerLevel.md)
   The paragraph’s header level for HTML generation.
 ### Determining writing direction
 - [class func defaultWritingDirection(forLanguage: String?) -> NSWritingDirection](nsparagraphstyle/defaultwritingdirection(forlanguage:).md)

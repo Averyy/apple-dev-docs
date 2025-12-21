@@ -3,17 +3,23 @@
 **Framework**: Video Toolbox  
 **Kind**: enum
 
+Available algorithm revisions.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 enum Revision
 ```
+
+#### Overview
+
+A new enum case with a higher revision number is added when the processing algorithm is updated. The [`defaultRevision`](vtsuperresolutionscalerconfiguration/defaultrevision.md) property provides the default algorithm revision.
 
 ## Topics
 

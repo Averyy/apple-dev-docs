@@ -33,6 +33,11 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VectorizedChartContent](vectorizedchartcontent.md)
 
+## See Also
+
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
+
 
 ---
 

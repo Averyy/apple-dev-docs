@@ -44,7 +44,7 @@ class MTLFXSpatialScalerDescriptor
 - [func makeSpatialScaler(device: any MTLDevice) -> (any MTLFXSpatialScaler)?](mtlfxspatialscalerdescriptor/makespatialscaler(device:).md)
   Creates a spatial scaler instance from this descriptor’s current property values.
 ### Instance Methods
-- [func newSpatialScaler(with: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXSpatialScaler)?](mtlfxspatialscalerdescriptor/newspatialscaler(with:compiler:).md)
+- [func makeSpatialScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXSpatialScaler)?](mtlfxspatialscalerdescriptor/makespatialscaler(device:compiler:).md)
   Creates a spatial scaler instance for a Metal device.
 ### Type Methods
 - [class func supportsMetal4FX(any MTLDevice) -> Bool](mtlfxspatialscalerdescriptor/supportsmetal4fx(_:).md)

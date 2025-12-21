@@ -3,11 +3,11 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-Indicates the anchor’s coordinates:
+A triplet that represents the location in 3D space of the anchor that provides the measurement.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,14 @@ var coordinates: simd_double3 { get }
 
 #### Discussion
 
-When coordinatesType == NIDLTDOACoordinatesTypeGeodetic: coordinates represent geodetic position in 3D space with format {latitude, longitude, altitude}. When coordinatesType == NIDLTDOACoordinatesTypeRelative: coordinates represent distances from anchor(s) along the 3 axes in 3D space  with format {x, y, z}.
+The measurement’s [`coordinatesType`](nidltdoameasurement/coordinatestype.md) determines the manner in which you interpret this property’s value.
+
+## See Also
+
+- [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
+  The type of coordinate system that the measurement conforms to.
+- [var signalStrength: Double](nidltdoameasurement/signalstrength.md)
+  A value that represents the signal strength, in dBm, to the anchor that provides the measurement.
 
 
 ---

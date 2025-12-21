@@ -33,13 +33,10 @@ struct CategoricalImputer<Element> where Element : Decodable, Element : Encodabl
 ### Fitting
 - [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](categoricalimputer/fitted(to:eventhandler:).md)
   Fits a categorical imputer to a sequence of elements.
-- [CategoricalImputer.Transformer](categoricalimputer/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 - [CategoricalImputer.Strategy](categoricalimputer/strategy-swift.enum.md)
   An imputation strategy.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](categoricalimputer/customdebugstringconvertible-implementations.md)
-- [Estimator Implementations](categoricalimputer/estimator-implementations.md)
 
 ## Relationships
 

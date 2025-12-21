@@ -25,7 +25,7 @@ func commitInsertion(dataSourceUpdates: (IndexPath) -> Void) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the placeholder was replaced by your content or [`false`](https://developer.apple.com/documentation/swift/false) if the placeholder was no longer in the collection view.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the placeholder was replaced by your content or [`false`](https://developer.apple.com/documentation/Swift/false) if the placeholder was no longer in the collection view.
 
 #### Discussion
 

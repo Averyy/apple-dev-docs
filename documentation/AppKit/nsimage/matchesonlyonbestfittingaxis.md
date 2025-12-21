@@ -16,7 +16,7 @@ var matchesOnlyOnBestFittingAxis: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image is drawn only on the best fitting axis; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image is drawn only on the best fitting axis; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). This property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 NSImage has always tried to use a representation with at least as many pixels as the destination rectangle. Many apps try to implement banners and 3 part / 9 part images by stretching an NSImage over a much larger area (usually only on a single axis).
 

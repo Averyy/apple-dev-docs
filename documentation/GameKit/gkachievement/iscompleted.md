@@ -22,7 +22,7 @@ var isCompleted: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the `percentComplete` property is equal to `100.0`; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) if the `percentComplete` property is equal to `100.0`; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

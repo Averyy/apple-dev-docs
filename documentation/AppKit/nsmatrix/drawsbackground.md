@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix draws its background (the space between the cells).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the matrix draws its background (the space between the cells).
 
 ## See Also
 

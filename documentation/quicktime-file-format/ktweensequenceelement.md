@@ -5,9 +5,6 @@
 
 An atom that specifies an entry in a tween sequence.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Its parent is the tween QT atom container (which you specify with the constant `kParentAtomIsContainer`).

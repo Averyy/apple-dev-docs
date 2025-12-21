@@ -17,7 +17,6 @@ Initializes a node whose content is to be loaded from the referenced URL.
 ## Declaration
 
 ```swift
-@MainActor
 init?(url referenceURL: URL)
 ```
 

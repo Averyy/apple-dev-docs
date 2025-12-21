@@ -19,14 +19,14 @@ class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
 ### Instance Properties
 - [var endOfEncoderSampleIndex: Int](mtlaccelerationstructurepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)
 - [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlaccelerationstructurepasssamplebufferattachmentdescriptor/samplebuffer.md)
-  A specialized memory buffer that the GPU uses to store its counter data during the acceleration structure pass.
+  A specialized memory buffer that the GPU uses to store its counter data during the acceleration structure pass.
 - [var startOfEncoderSampleIndex: Int](mtlaccelerationstructurepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
 
 ## Relationships

@@ -8,13 +8,13 @@ Profile your app’s power impact whether or not your device is connected to Xco
 
 Various subsystems of a device require the device to draw additional power from its battery when your app uses them. Using these subsystems efficiently can reduce your app’s power demand, increasing the time before someone needs to recharge the battery and improving their experience of using your app. For more information, see [`Analyzing your app’s battery use`](analyzing-your-app-s-battery-use.md).
 
-Use Power Profiler in Instruments to gather and analyze data on your app’s use of device subsystems that increase power consumption. Alternatively, record a performance trace using Power Profiler on your device while you’re away from your desk, and visualize the data in Instruments.
+Use Power Profiler in Instruments to gather and analyze data on your app’s use of device subsystems that increase power consumption. Alternatively, record a performance trace using Power Profiler on your device while you’re away from your desk, and visualize the data in Instruments. Power Profiler is available on iPhone with iOS 26 or later, and iPad with iPadOS 26 or later.
 
 Create a plan to adopt power-efficient designs and API best practice to reduce your app’s power consumption, based on what you find in your analysis. Compare the trace data before and after you make changes to verify that the changes reduce your app’s power consumption.
 
 ##### Record and Analyze a Power Trace Using Instruments
 
-Make sure your device is available in Xcode, either wirelessly or using a cable, and set the Run Destination in Xcode to the device you want to use. For more information, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md). Record a power trace by following these steps:
+Make sure your device is available in Xcode, either wirelessly or using a cable, and set the run destination in Xcode to the device you want to use. For more information, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md). Record a power trace by following these steps:
 
 1. In Xcode, choose Product > Profile.
 2. In Instruments the Choose a Template… window opens, choose the Blank template.
@@ -24,12 +24,16 @@ Make sure your device is available in Xcode, either wirelessly or using a cable,
 6. Interact with the features in your app that you want to analyze.
 7. In Instruments, click the Stop button to stop gathering data.
 
+![A screenshot of Instruments. The Power Profiler track shows lanes for overall system power usage, display brightness, thermal state, and charging state. The app’s track shows lanes for power impact from different device subsystems.](https://docs-assets.developer.apple.com/published/d58b6fb752e912317fab4203c73d98ed/power-profiler-1%402x.png)
+
 The Power Profiler track in Instruments shows the overall system power usage, represented as a fraction of total battery energy consumed per hour. Additionally, it shows the following information:
 
 - Whether the device is connected to a charger
 - The device’s thermal state
 - The display brightness
 - Periods when Apple silicon is asleep
+
+Xcode keeps Apple silicon awake while it’s paired with your device, so Instruments only shows sleep and wake events when you collect a performance trace on a device that isn’t connected with Xcode. See [`Gather power-consumption data on a device`](measuring-your-app-s-power-use-with-power-profiler#Gather-power-consumption-data-on-a-device.md).
 
 > **Note**:  When the device is charging, either via a cable or MagSafe, Instruments reports the overall system power usage as `0`. To record overall system power usage, pair your device to Xcode and use wireless debugging.
 
@@ -57,6 +61,8 @@ To set up a device to gather a performance trace that contains power metrics:
 8. Tap Add a Control.
 9. Choose the Performance Trace control.
 
+![A screenshot of the control library in Control Center on iPhone, showing the Performance Trace control.](https://docs-assets.developer.apple.com/published/1693b48acd69c4b1e59f06963b766958/power-profiler-2%402x.png)
+
 To gather a power trace:
 
 1. Open Control Center.
@@ -77,11 +83,11 @@ In Finder, double-click the `*.aar` file you receive to expand it into a `*.atrc
 
 Combine the information from Power Profiler with data you gather using other tools to identify how your app’s features use power, and plan your performance-engineering work.
 
-If your app uses a lot of CPU power, combine Power Profiler with the Time Profiler or Processor Trace instruments to correlate the high power usage with the code your app runs and identify functions to make more efficient. For more information, see [`Analyzing CPU usage with the Processor Trace instrument`](analyzing-cpu-usage-with-processor-trace.md).
+If your app uses a lot of CPU power, combine Power Profiler with the CPU Profiler, Processor Trace, or CPU Counters instruments to correlate the high power usage with the code your app runs and identify functions to make more efficient. For more information, see [`Analyzing CPU usage with the Processor Trace instrument`](analyzing-cpu-usage-with-processor-trace.md) and [`Addressing CPU bottlenecks`](addressing-cpu-bottlenecks.md).
 
 If your app uses a lot of GPU power, use the Metal debugger to identify opportunities to make your app’s GPU usage more efficient. For more information, see [`Optimizing GPU performance`](optimizing-gpu-performance.md).
 
-If your app uses a lot of display power, consider adapting your app’s UI to reduce its average pixel luminance. For example, make sure your app supports Dark Mode. For more information, see [`Supporting Dark Mode in your interface`](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface).
+If your app uses a lot of display power, consider adapting your app’s UI to reduce its average pixel luminance. For example, make sure your app supports the dark appearance. For more information, see [`Supporting Dark Mode in your interface`](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface).
 
 If your app uses a lot of networking power, combine Power Profiler with the Network Connections and HTTP Traffic instruments to correlate the high power usage with the network requests your app makes, and identify strategies to reduce the frequency of network connections or the amount of data the app transfers. For more information, see [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
 
@@ -91,6 +97,8 @@ After you make a change, use Power Profiler again to validate that your change i
 
 - [Analyzing your app’s battery use](analyzing-your-app-s-battery-use.md)
   Increase the available use time for your app on a single battery charge by reducing your appʼs power consumption.
+- [Reducing your app’s battery use](reducing-your-app-s-battery-use.md)
+  Adopt design principles and recommended APIs to consume less power.
 
 
 ---

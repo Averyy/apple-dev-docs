@@ -19,7 +19,7 @@ var showsSelectionIndicator: Bool { get set }
 
 #### Discussion
 
-If the value of the property is [`true`](https://developer.apple.com/documentation/swift/true), the picker view shows a clear overlay across the current row. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of the property is [`true`](https://developer.apple.com/documentation/Swift/true), the picker view shows a clear overlay across the current row. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

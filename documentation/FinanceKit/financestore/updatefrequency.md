@@ -3,11 +3,11 @@
 **Framework**: FinanceKit  
 **Kind**: enum
 
-The frequencies that apps can register for updates with.
+Frequencies of background delivery updates.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,13 +17,12 @@ enum UpdateFrequency
 
 #### Overview
 
-These represent the expected interval that can occur between updates delivered to background delivery registrations.
+These represent the expected minimum interval between updates delivered to a `BackgroundDeliveryExtension` and if no data changes, no updates will occur. After an update is delivered, if data changes again within the interval, the next update won’t happen until the interval has passed.
+
+> **Note**:  The window of time to process data is larger for longer update frequencies.
 
 ## Topics
 
-### Operators
-- [static func == (FinanceStore.UpdateFrequency, FinanceStore.UpdateFrequency) -> Bool](financestore/updatefrequency/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [FinanceStore.UpdateFrequency.daily](financestore/updatefrequency/daily.md)
   Get notified within a day of data updating.
@@ -31,20 +30,6 @@ These represent the expected interval that can occur between updates delivered t
   Get notified within an hour of data updating.
 - [FinanceStore.UpdateFrequency.weekly](financestore/updatefrequency/weekly.md)
   Get notified within a week of data updating.
-### Initializers
-- [init(from: any Decoder) throws](financestore/updatefrequency/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](financestore/updatefrequency/hashvalue.md)
-  The hash value.
-- [var interval: TimeInterval](financestore/updatefrequency/interval.md)
-### Instance Methods
-- [func encode(to: any Encoder) throws](financestore/updatefrequency/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](financestore/updatefrequency/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](financestore/updatefrequency/equatable-implementations.md)
 
 ## Relationships
 
@@ -55,6 +40,17 @@ These represent the expected interval that can occur between updates delivered t
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [FinanceStore.ContainsOrderResult](financestore/containsorderresult.md)
+  Result type for queries against the finance store’s orders.
+- [FinanceStore.DataType](financestore/datatype.md)
+  Values that describe the kinds of data in the finance store.
+- [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
+  Result type for the finance store’s save order method.
+- [FinanceStore.BackgroundDataType](financestore/backgrounddatatype.md)
+  Types of data in the finance store supported by background delivery.
 
 
 ---

@@ -113,7 +113,7 @@ For more information on using the keychain to store sensitive information, refer
 
 ##### Offer Sign in with Apple
 
-App Clips may use any technology to allow users to sign in to their account or create one. However, if your App Clip requires users to log in to an account, consider offering doc://com.apple.documentation/documentation/sign_in_with_apple. In addition to helping provide a simple, secure, and privacy-preserving account creation and sign-in experience, it offers a positive experience when a user starts using the full app.
+App Clips may use any technology to allow users to sign in to their account or create one. However, if your App Clip requires users to log in to an account, consider offering [`Sign in with Apple`](https://developer.apple.com/documentation/SigninwithApple). In addition to helping provide a simple, secure, and privacy-preserving account creation and sign-in experience, it offers a positive experience when a user starts using the full app.
 
 If you offer Sign in with Apple and create a shared data container, create a user experience that doesn’t require users to log in again when they start using the full app. The following code stores the [`ASAuthorizationAppleIDCredential`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDCredential) in a shared [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) instance:
 

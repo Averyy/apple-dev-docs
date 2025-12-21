@@ -19,7 +19,7 @@ func personViewController(_ personViewController: ABPersonViewController, should
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `personViewController` should perform its default action. Your application may quit as a result of this action. [`false`](https://developer.apple.com/documentation/swift/false): if `personViewController` should do nothing. The delegate may perform custom action processing.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `personViewController` should perform its default action. Your application may quit as a result of this action. [`false`](https://developer.apple.com/documentation/Swift/false): if `personViewController` should do nothing. The delegate may perform custom action processing.
 
 ## Parameters
 

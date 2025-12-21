@@ -6,7 +6,7 @@
 The input devices that a person is using to manipulate a view.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

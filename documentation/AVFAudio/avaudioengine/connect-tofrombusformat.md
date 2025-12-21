@@ -35,6 +35,10 @@ Connections that use this method are either one-to-one or one-to-many.
 
 - [class AVAudioConnectionPoint](avaudioconnectionpoint.md)
   A representation of either a source or destination connection point in the audio engine.
+- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
+  Returns connection information about a node’s input bus.
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+  Returns connection information about a node’s output bus.
 
 
 ---

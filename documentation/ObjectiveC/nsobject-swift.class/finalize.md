@@ -13,7 +13,6 @@ The garbage collector invokes this method on the receiver before disposing of th
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
@@ -75,8 +74,8 @@ It is an error to store `self` into a new or existing live object (colloquially 
   Overrides the specified attribute in the receiver or adds it if it does not exist, and sets its value to the specified value.
 - [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](nsobject-swift.class/accessibilitysetvalue(_:forattribute:).md)
   Sets the value of the specified attribute in the receiver to the specified value.
-- [func fontManager(Any, willIncludeFont: String) -> Bool](nsobject-swift.class/fontmanager(_:willincludefont:).md)
-  Requests permission from the Font panel delegate to display the given font name in the Font panel.
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
+  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
 
 
 ---

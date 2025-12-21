@@ -3,14 +3,14 @@
 **Framework**: Speech  
 **Kind**: struct
 
-A result from the speech detector.
+A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ struct Result
 
 ## Topics
 
-### Instance Properties
+### Getting detection results
 - [let speechDetected: Bool](speechdetector/result/speechdetected.md)
 
 ## Relationships
@@ -30,11 +30,6 @@ struct Result
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SpeechModuleResult](speechmoduleresult.md)
-
-## See Also
-
-- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
-  Allows clients to customize an instance of a speech detector.
 
 
 ---

@@ -6,7 +6,7 @@
 Get the identifier of the local participant.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -77,7 +77,7 @@ The fields in the POST body are:
 | `subject_token` | The `token` in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) request. |
 | `subject_token_type` | The subject token type, `ietf:params:oauth:token-type:access_token`. |
 
-> ❗ **Important**: `client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps).
+> ❗ **Important**: `client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps#Track-the-number-of-simultaneous-app-installs-for-an-account).
 
 Your token endpoint responds to the request with an access token and, optionally, a refresh token. Here’s an example response:
 

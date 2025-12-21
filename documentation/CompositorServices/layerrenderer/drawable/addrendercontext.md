@@ -3,11 +3,11 @@
 **Framework**: Compositor Services  
 **Kind**: method
 
-Adds a render context to a drawable. This object will draw any content that the compositor needs to render in the application.
+Adds and returns a render context to a `LayerRenderer.Drawable` that draws any content required by the compositor.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,9 +17,14 @@ func addRenderContext() -> LayerRenderer.Drawable.RenderContext
 
 #### Discussion
 
-> **Note**: The render context can only be used when the layer renderer is using layered layout or in platforms that only render one view (ex: simulator)
+Call `renderContext.drawMaskOnStencilAttachment(self:commandEncoder:value:)` on the returned [`LayerRenderer.Drawable.RenderContext`](layerrenderer/drawable/rendercontext.md) to render only the necessary pixels. You can only use the [`LayerRenderer.Drawable.RenderContext`](layerrenderer/drawable/rendercontext.md) API in the context of layered layout rendering or on platforms that only render one view, such as the Simulator. The `RenderContext` uses the [`deviceAnchor`](layerrenderer/drawable/deviceanchor.md) set in [`cp_drawable_set_device_anchor`](cp_drawable_set_device_anchor.md). Set the `deviceAnchor` in the layer renderer drawable before calling [`addRenderContext(commandBuffer:)`](layerrenderer/drawable/addrendercontext(commandbuffer:).md).
 
-> **Note**: The render context makes use of the device_anchor set in [`cp_drawable_set_device_anchor`](cp_drawable_set_device_anchor.md) the device_anchor should be set in the drawable before calling [`addRenderContext(commandBuffer:)`](layerrenderer/drawable/addrendercontext(commandbuffer:).md).
+## See Also
+
+- [LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/rendercontext.md)
+  An object the compositer uses for rendering all effects associated with a layer renderer drawable.
+- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext(commandbuffer:).md)
+  Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
 
 
 ---

@@ -16,7 +16,7 @@ func SecAccessCopyMatchingACLList(_ accessRef: SecAccess, _ authorizationTag: CF
 
 #### Return Value
 
-An array containing the selected access control list entries. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) method to release the array when you are finished using it.
+An array containing the selected access control list entries. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) method to release the array when you are finished using it.
 
 #### Discussion
 

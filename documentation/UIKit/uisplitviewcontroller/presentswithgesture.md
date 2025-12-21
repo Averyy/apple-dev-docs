@@ -20,13 +20,13 @@ var presentsWithGesture: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the split view controller installs a gesture recognizer for changing the current display mode. In a column-style split view interface, the gesture is interactive.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the split view controller installs a gesture recognizer for changing the current display mode. In a column-style split view interface, the gesture is interactive.
 
 In a classic split view interface, the gesture recognizer applies the display mode returned by the delegate’s [`targetDisplayModeForAction(in:)`](uisplitviewcontrollerdelegate/targetdisplaymodeforaction(in:).md) method. If that method returns the [`UISplitViewController.DisplayMode.automatic`](uisplitviewcontroller/displaymode-swift.enum/automatic.md) mode, the split view controller applies the most appropriate display mode given its current configuration and size class.
 
-When this property is [`false`](https://developer.apple.com/documentation/swift/false), the split view controller doesn’t install a gesture recognizer for changing the display mode. The split view controller also doesn’t display a button to change the display mode.
+When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the split view controller doesn’t install a gesture recognizer for changing the display mode. The split view controller also doesn’t display a button to change the display mode.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

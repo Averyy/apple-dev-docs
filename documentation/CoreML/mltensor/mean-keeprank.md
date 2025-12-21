@@ -39,6 +39,19 @@ await y.shapedArray(of: Float.self) // is [4.5]
 
 - `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
 
+## See Also
+
+- [func min(alongAxes:keepRank:)](mltensor/min(alongaxes:keeprank:).md)
+  Returns the minimum values along the specified axes.
+- [func min(keepRank: Bool) -> MLTensor](mltensor/min(keeprank:).md)
+  Returns the minimum value in the array.
+- [func max(alongAxes:keepRank:)](mltensor/max(alongaxes:keeprank:).md)
+  Returns the maximum values along the specified axes.
+- [func max(keepRank: Bool) -> MLTensor](mltensor/max(keeprank:).md)
+  Returns the maximum value in the array.
+- [func mean(alongAxes:keepRank:)](mltensor/mean(alongaxes:keeprank:).md)
+  Returns the mean along the specified axes.
+
 
 ---
 

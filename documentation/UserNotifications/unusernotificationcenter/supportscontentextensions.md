@@ -22,7 +22,7 @@ var supportsContentExtensions: Bool { get }
 
 #### Discussion
 
-Notification content extensions let you customize the appearance of the alerts displayed for your app’s notifications. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for devices that support notification content extensions and [`false`](https://developer.apple.com/documentation/swift/false) for devices that do not support them. For information about how to implement a notification content extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/UserNotificationsUI/customizing-the-appearance-of-notifications).
+Notification content extensions let you customize the appearance of the alerts displayed for your app’s notifications. The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) for devices that support notification content extensions and [`false`](https://developer.apple.com/documentation/Swift/false) for devices that do not support them. For information about how to implement a notification content extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/UserNotificationsUI/customizing-the-appearance-of-notifications).
 
 ## See Also
 

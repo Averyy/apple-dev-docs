@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Returns text viewport layout controller associated with the layout manager’s text container.
+The text viewport layout controller associated with the layout manager’s text container.
 
 **Availability**:
 - macOS 12.0+
@@ -13,6 +13,10 @@ Returns text viewport layout controller associated with the layout manager’s t
 ```swift
 var textViewportLayoutController: NSTextViewportLayoutController { get }
 ```
+
+#### Discussion
+
+The value of this property is `nil` if the text layout manager’s text container is `nil`. Set [`textContainer`](nstextlayoutmanager/textcontainer.md) before accessing this property.
 
 ## See Also
 

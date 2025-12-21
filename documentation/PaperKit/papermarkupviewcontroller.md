@@ -6,10 +6,10 @@
 A view controller for interactively creating, and showing markup.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -39,6 +39,8 @@ Task { [weak self] in
 - [init(markup: PaperMarkup?, supportedFeatureSet: FeatureSet)](papermarkupviewcontroller/init(markup:supportedfeatureset:).md)
   Create a new `PaperMarkupViewController` with the provided data model.
 ### Instance Properties
+- [var acceptsFirstResponder: Bool](papermarkupviewcontroller/acceptsfirstresponder.md)
+- [var canBecomeFirstResponder: Bool](papermarkupviewcontroller/canbecomefirstresponder.md)
 - [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
   The content that markup happens on top of.
 - [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
@@ -63,8 +65,13 @@ Task { [weak self] in
   The paper data shown in this view controller.
 - [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
   The selected contents in the UI.
+- [var showsHorizontalScrollIndicator: Bool](papermarkupviewcontroller/showshorizontalscrollindicator.md)
+  A Boolean value that controls whether the horizontal scroll indicator is visible.
+- [var showsVerticalScrollIndicator: Bool](papermarkupviewcontroller/showsverticalscrollindicator.md)
+  A Boolean value that controls whether the vertical scroll indicator is visible.
 - [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
   The supported PaperKIt features on this canvas.
+- [var undoManager: UndoManager?](papermarkupviewcontroller/undomanager.md)
 - [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
   A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
 ### Instance Methods
@@ -73,14 +80,12 @@ Task { [weak self] in
   Zooms to a specific area of the content so that it’s visible in the scroll view.
 - [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
   The frame that should be used for inserting shapes and other content.
-- [func toolPickerIsRulerActiveDidChange(PKToolPicker)](papermarkupviewcontroller/toolpickerisruleractivedidchange(_:).md)
-- [func toolPickerSelectedToolItemDidChange(PKToolPicker)](papermarkupviewcontroller/toolpickerselectedtoolitemdidchange(_:).md)
+- [func viewDidAppear()](papermarkupviewcontroller/viewdidappear.md)
+- [func viewDidLayout()](papermarkupviewcontroller/viewdidlayout.md)
 - [func viewDidLoad()](papermarkupviewcontroller/viewdidload.md)
 ### Enumerations
 - [PaperMarkupViewController.TouchMode](papermarkupviewcontroller/touchmode.md)
   The canvas behavior for touches.
-### Default Implementations
-- [Delegate Implementations](papermarkupviewcontroller/delegate-implementations.md)
 
 ## Relationships
 

@@ -22,7 +22,7 @@ protocol VSAccountManagerDelegate : NSObjectProtocol
 
 Use the [`VSAccountManagerDelegate`](vsaccountmanagerdelegate.md) methods to aid in displaying and dismissing authentication view controllers.
 
-If the person isn’t authenticated when your app calls [`enqueue(_:completionHandler:)`](vsaccountmanager/enqueue(_:completionhandler:).md) with [`isInterruptionAllowed`](vsaccountmetadatarequest/isinterruptionallowed.md) set to [`true`](https://developer.apple.com/documentation/swift/true), the system sends an authentication view controller to the delegate in the [`accountManager(_:present:)`](vsaccountmanagerdelegate/accountmanager(_:present:).md) method for your app to present to them.
+If the person isn’t authenticated when your app calls [`enqueue(_:completionHandler:)`](vsaccountmanager/enqueue(_:completionhandler:).md) with [`isInterruptionAllowed`](vsaccountmetadatarequest/isinterruptionallowed.md) set to [`true`](https://developer.apple.com/documentation/Swift/true), the system sends an authentication view controller to the delegate in the [`accountManager(_:present:)`](vsaccountmanagerdelegate/accountmanager(_:present:).md) method for your app to present to them.
 
 ## Topics
 

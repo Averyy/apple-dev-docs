@@ -10,8 +10,6 @@ When you create your App Clip, register a . By creating a default App Clip exper
 
 Additionally, you can display the App Clip card on your website if a person’s device runs iOS 15 or later. This makes your App Clip even more discoverable and reduces the number of taps required to launch your App Clip.
 
-![Two screenshots of a website in Safari on iPhone. One screenshot shows the Smart App Banner on the website. The other screenshot shows the App Clip card in Safari.](https://docs-assets.developer.apple.com/published/4984d42c98963fb04ce57a2fa0b2529c/media-3886822%402x.png)
-
 Note that the Smart App Banner only appears on your website if:
 
 - You associated your App Clip with the website where you want to display the banner.
@@ -60,7 +58,7 @@ In addition to the above requirements, you must provide the preview image that a
 
 To enable your App Clip or full app to respond to the invocation from a website that displays the Smart App Banner or the App Clip card in Safari, retrieve the website’s URL upon invocation. Then, use the URL to update the interface of your App Clip to best match the content on the website. For more information on accessing the invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
 
-![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](https://docs-assets.developer.apple.com/published/f455903036d0b3eae53cdfd46a6609f3/media-3737844%402x.png)
+![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](https://docs-assets.developer.apple.com/published/97635dff8996bd29f1983dd2a2909adc/food-truck-app-clip-message%402x.png)
 
 ##### Add the Smart App Banner and App Clip Card to Multiple Websites
 

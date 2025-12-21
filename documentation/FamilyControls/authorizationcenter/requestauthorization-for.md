@@ -35,8 +35,6 @@ You can revoke authorization by calling [`revokeAuthorization(completionHandler:
 
 - [func revokeAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/revokeauthorization(completionhandler:).md)
   Revokes authorization to provide parental controls.
-- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/requestauthorization(completionhandler:).md)
-  Requests authorization to provide parental controls for a child.
 
 
 ---

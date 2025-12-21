@@ -19,6 +19,10 @@ A Boolean value that indicates whether the person can make purchases.
 static var canMakePayments: Bool { get }
 ```
 
+## Mentions
+
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+
 #### Discussion
 
 Use [`canMakePayments`](appstore/canmakepayments.md) to determine at runtime whether a person can authorize payments. If the value is `false`, a person can’t authorize payments, so don’t offer In-App Purchases or external purchases.

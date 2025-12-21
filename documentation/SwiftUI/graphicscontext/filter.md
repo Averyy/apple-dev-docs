@@ -57,7 +57,7 @@ Create and configure a filter that produces an image processing effect, like add
   Returns a filter that replaces each pixel with alpha components within a range by a constant color, or transparency otherwise.
 ### Adding a transformation
 - [static func projectionTransform(ProjectionTransform) -> GraphicsContext.Filter](graphicscontext/filter/projectiontransform(_:).md)
-  Returns a filter that that transforms the rasterized form of subsequent graphics primitives.
+  Returns a filter that transforms the rasterized form of subsequent graphics primitives.
 ### Using a custom Metal shader
 - [static func colorShader(Shader) -> GraphicsContext.Filter](graphicscontext/filter/colorshader(_:).md)
   Returns a filter that applies `shader` to the color of each source pixel.

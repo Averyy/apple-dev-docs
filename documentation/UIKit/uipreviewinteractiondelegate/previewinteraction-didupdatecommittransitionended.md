@@ -22,7 +22,7 @@ optional func previewInteraction(_ previewInteraction: UIPreviewInteraction, did
 
 This method is called repeatedly during the commit phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the  effect in view controller preview transitions progressively increases the size of the child view controller as the transition progresses.
 
-The `ended` parameter is false throughout the commit phase and becomes [`true`](https://developer.apple.com/documentation/swift/true) when the phase is completed. At this point, the preview interaction is complete, and you should update the UI appropriately. For example, in view controller preview interactions, the child view controller becomes the main view controller.
+The `ended` parameter is false throughout the commit phase and becomes [`true`](https://developer.apple.com/documentation/Swift/true) when the phase is completed. At this point, the preview interaction is complete, and you should update the UI appropriately. For example, in view controller preview interactions, the child view controller becomes the main view controller.
 
 ## Parameters
 

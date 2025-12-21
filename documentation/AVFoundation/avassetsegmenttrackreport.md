@@ -21,7 +21,7 @@ class AVAssetSegmentTrackReport
 
 ## Topics
 
-### Inspecting a Report
+### Inspecting a report
 - [var trackID: CMPersistentTrackID](avassetsegmenttrackreport/trackid.md)
   A persistent unique identifier for a track.
 - [var mediaType: AVMediaType](avassetsegmenttrackreport/mediatype.md)

@@ -26,10 +26,6 @@ case medium
   Specifies a short unit style.
 - [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
   Specifies a long unit style.
-- [Formatter.UnitStyle.short](formatter/unitstyle/short.md)
-  Specifies a short unit style.
-- [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
-  Specifies a long unit style.
 
 
 ---

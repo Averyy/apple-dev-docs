@@ -1,4 +1,4 @@
-# tvOS 26 Beta 2 Release Notes
+# tvOS 26 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
 
 ##### App Store
 
@@ -19,6 +19,12 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 ###### Resolved Issues
 
 - Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
+
+##### Apple Tv
+
+###### Resolved Issues
+
+- Fixed: Apple TV might fail to authorize and attempt to launch a properly signed app that is being run immediately after installation from Xcode, with a spurious error indicating that the Developer App certificate needs to be trusted on the device.  (154812309)
 
 ##### Assistantschemas
 
@@ -41,10 +47,20 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: The system might not deliver status updates to your app for ongoing asset pack downloads.  (151647839)
 - Fixed: Pausing and resuming an app installation or update while the system is downloading essential asset packs might cause the installation or update to stall indefinitely.  (151942388)
 - Fixed: Settings for Development Overrides are unavailable on tvOS.  (152131750)
+- Fixed: The installation of large asset packs might fail.  (153128086)
+- Fixed: The URL Override setting doesn’t save an entered URL’s port number. The device always attempts to communicate with the mock server over port 443.  (156113742) (FB18913475)
 
-###### Known Issues
+##### Coredata
 
-- The installation of large asset packs might fail.  (153128086)
+###### Resolved Issues
+
+- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines. `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
+
+##### Fitness+
+
+###### Resolved Issues
+
+- Fixed: Fitness+ might crash when attempting to use Search.  (157146534)
 
 ##### Foundation
 
@@ -57,6 +73,18 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: Functions that initialize a string from a C-string pointer do not validate that the provided encoding is a valid encoding for C-strings.  (143756086) (FB16417968)
 - Fixed: `Locale.preferredLocale` API availability for tvOS and watchOS is specified incorrectly.  (151205096)
 
+##### Game Controller
+
+###### New Features
+
+- Pair multiple Apple devices to your DualSense or DualSense Edge controller and easily switch between them directly using the controller or Bluetooth settings. See [`this PlayStation blog post`](https://developer.apple.comhttps://blog.playstation.com/2025/07/23/new-ps5-system-update-beta-previews-dualsense-wireless-controller-pairing-across-multiple-devices/) for details.  (137782227)
+
+##### Memory Tools
+
+###### Known Issues
+
+- Leaks might be falsely reported by memory analysis tools when a target has instances of types that use Obj-C properties implemented in Swift using bridged types with `@objc @implementation`. Memory analysis tools include the `leaks` CLI tool, Leaks instrument, and Xcode memory graph debugger.  (157798911)
+
 ##### Metal
 
 ###### New Features
@@ -65,18 +93,18 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Resolved Issues
 
+- Fixed: If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
 - Fixed: Metal Shader Validation might not work with shaders that use Metal Performance Primitives.  (149263281)
 
 ###### Known Issues
 
-- If you’re using Metal 4 command encoders, you should add render and compute pipelines that support indirect command buffers to your residency sets. The Metal device driver currently does not enforce this requirement.  (145066238)
 - Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
 
-###### Known Issues
+###### Resolved Issues
 
-- Temporal upscaling for MTL4CommandBuffer’s `MTL4FXTemporalScaler` does not work.  (146436741)
+- Fixed: Temporal upscaling for MTL4CommandBuffer’s `MTL4FXTemporalScaler` does not work.  (146436741)
 
 ##### Nslog
 
@@ -86,9 +114,9 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Playback
 
-###### Known Issues
+###### Resolved Issues
 
-- AirPlay to Stereo Pair might not work after a group is created or removed from Home Theater setup in the Home app.  (152107026)  Start playback on stereo-paired HomePods via top cap or Siri before re-attempting AirPlay.
+- Fixed: AirPlay to Stereo Pair might not work after a group is created or removed from Home Theater setup in the Home app.  (152107026)
 
 ##### Realitykit
 
@@ -143,6 +171,14 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: Subscription status updates might not be reported correctly if the subscription went into billing retry in StoreKit Testing in Xcode.  (133799135) (FB14789854)
 - Fixed: Price of offers is not displayed in the payment sheet when making a purchase to a subscription with a higher level of service in StoreKit Testing in Xcode.  (140635780) (FB15980635)
 - Fixed: Renewal transactions might be created regardless of the Ask to Buy status of the purchase request in StoreKit Testing in Xcode.  (145242611)
+- Fixed: `SKProduct` from the original StoreKit API fails to decode products when using StoreKit Testing in Xcode.  (150851879)
+- Fixed: Transactions might not finish, resulting in subsequent purchases of the same product failing.  (155449267)
+
+##### Swift Charts
+
+###### Resolved Issues
+
+- Fixed: Annotations on a scrollable chart might be clipped.  (109164195)
 
 ##### Swiftui
 
@@ -221,6 +257,8 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
 - Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
+- Fixed: Gestures do not have the same lower priority over the view’s existing `UIGestureRecognizer`s and `NSGestureRecognizer`s as they do over the view’s existing SwiftUI gestures. In apps built with iOS 26, macOS 26, tvOS 26, and visionOS 26, use [`highPriorityGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/highprioritygesture(_:isenabled:)) to make sure your gesture takes precedence over the view’s existing gestures, or use [`simultaneousGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/simultaneousgesture(_:isenabled:)) to give your gesture the same priority as the view’s existing gestures.  (155581361)
+- Fixed: On visionOS, tvOS, and watchOS, sheets presented within toolbar items might fail to present if the toolbar item’s label view is a `Label`.  (157326248)
 
 ###### Deprecations
 
@@ -230,19 +268,38 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- Design updates in tvOS 19 are not carried forward to Apple TV 4K (1st generation) and older models. The updates are only testable on Apple TV 4K 2nd and 3rd generation models.  (152111626)
+- Design updates in tvOS 26 are not carried forward to Apple TV 4K (1st generation) and older models. The updates are only testable on Apple TV 4K 2nd and 3rd generation models.  (152111626)
 
 ##### Textkit
 
 ###### New Features
 
-- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed prior to this release. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in this major release: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
+
+###### Resolved Issues
+
+- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine. With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
+
+##### Uikit
+
+###### Deprecations
+
+- `UIScreen.mainScreen` has been changed from `API_TO_BE_DEPRECATED` to deprecated in iOS 26, tvOS 26, and visionOS 26.  (142902390)
 
 ##### Virtualization
 
 ###### Known Issues
 
 - You might encounter an issue when changing the MTU size of the logical network with which VZVmnetNetworkDeviceAttachment is initialized.  (152170606)  Use the default MTU size instead of customizing it when creating the logical network through the vmnet framework.
+
+## See Also
+
+- [tvOS 26.3 Beta Release Notes](tvos-26_3-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [tvOS 26.2 Release Notes](tvos-26_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [tvOS 26.1 Release Notes](tvos-26_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

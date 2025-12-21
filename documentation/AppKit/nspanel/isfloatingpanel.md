@@ -17,7 +17,7 @@ var isFloatingPanel: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the receiver is a floating panel, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the receiver is a floating panel, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 By default, panels do not float above other windows. It’s appropriate for a panel to float above other windows only if all of the following conditions are true:
 

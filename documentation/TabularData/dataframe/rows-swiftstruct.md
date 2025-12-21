@@ -30,22 +30,6 @@ struct Rows
   Accesses a row at an index.
 - [subscript(Range<Int>) -> DataFrame.Rows](dataframe/rows-swift.struct/subscript(_:)-2qzx7.md)
   Returns a row collection from an index range.
-### Type Aliases
-- [DataFrame.Rows.Element](dataframe/rows-swift.struct/element.md)
-  A type representing the sequence’s elements.
-- [DataFrame.Rows.Index](dataframe/rows-swift.struct/index.md)
-  A type that represents a position in the collection.
-- [DataFrame.Rows.Indices](dataframe/rows-swift.struct/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [DataFrame.Rows.Iterator](dataframe/rows-swift.struct/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [DataFrame.Rows.SubSequence](dataframe/rows-swift.struct/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](dataframe/rows-swift.struct/bidirectionalcollection-implementations.md)
-- [Collection Implementations](dataframe/rows-swift.struct/collection-implementations.md)
-- [MutableCollection Implementations](dataframe/rows-swift.struct/mutablecollection-implementations.md)
-- [Sequence Implementations](dataframe/rows-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
@@ -57,8 +41,6 @@ struct Rows
 
 ## See Also
 
-- [var isEmpty: Bool](dataframe/isempty.md)
-  A Boolean that indicates whether the data frame type is empty.
 - [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
   The number of rows and columns in the data frame.
 - [var columns: [AnyColumn]](dataframe/columns.md)

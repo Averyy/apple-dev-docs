@@ -22,6 +22,8 @@ var imageConstraint: MLImageConstraint? { get }
 
 ## See Also
 
+- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+  The state feature value constraint.
 - [class MLImageConstraint](mlimageconstraint.md)
   The width, height, and pixel format constraints of an image feature.
 - [var dictionaryConstraint: MLDictionaryConstraint?](mlfeaturedescription/dictionaryconstraint.md)

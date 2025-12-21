@@ -32,19 +32,6 @@ When you call [`prepareForActivation()`](groupactivity/prepareforactivation().md
   A result that indicates the user disabled the automatic sharing of activities, or prefers to perform the activity locally.
 - [GroupActivityActivationResult.cancelled](groupactivityactivationresult/cancelled.md)
   A result that indicates the user canceled the activation request.
-### Comparing reliability options
-- [static func != (Self, Self) -> Bool](groupactivityactivationresult/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (GroupActivityActivationResult, GroupActivityActivationResult) -> Bool](groupactivityactivationresult/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](groupactivityactivationresult/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](groupactivityactivationresult/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](groupactivityactivationresult/equatable-implementations.md)
 
 ## Relationships
 
@@ -59,7 +46,7 @@ When you call [`prepareForActivation()`](groupactivity/prepareforactivation().md
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

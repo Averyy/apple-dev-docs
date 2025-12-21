@@ -11,7 +11,7 @@ The route distance in meters.
 ## Declaration
 
 ```swift
-attribute number distance;
+distance: number;
 ```
 
 ## See Also

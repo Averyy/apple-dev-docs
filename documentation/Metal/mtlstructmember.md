@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An object that provides information about a field in a structure.
+An instance that provides information about a field in a structure.
 
 **Availability**:
 - iOS 8.0+
@@ -21,13 +21,13 @@ class MTLStructMember
 
 #### Overview
 
-[`MTLStructMember`](mtlstructmember.md) is part of the reflection API that allows Metal framework code to query details about an argument of a Metal shading language function. A [`MTLStructMember`](mtlstructmember.md) object describes the data type of one field in a struct that is passed as a [`MTLFunction`](mtlfunction.md) argument, which is represented by [`MTLArgument`](mtlargument.md).
+[`MTLStructMember`](mtlstructmember.md) is part of the reflection API that allows Metal framework code to query details about an argument of a Metal shading language function. An [`MTLStructMember`](mtlstructmember.md) instance describes the data type of one field in a struct that is passed as an [`MTLFunction`](mtlfunction.md) argument, which is represented by [`MTLArgument`](mtlargument.md).
 
-Don’t create [`MTLStructMember`](mtlstructmember.md) objects directly. You obtain a [`MTLStructMember`](mtlstructmember.md) object from either the [`members`](mtlstructtype/members.md) property or the [`memberByName(_:)`](mtlstructtype/memberbyname(_:).md) method of a [`MTLStructType`](mtlstructtype.md) object. The [`dataType`](mtlstructmember/datatype.md) property of the [`MTLStructMember`](mtlstructmember.md) object tells you what kind of data is stored in the member. Recursively drill down every struct member until you reach a data type that is neither a struct nor an array.
+Don’t create [`MTLStructMember`](mtlstructmember.md) instances directly. You obtain an [`MTLStructMember`](mtlstructmember.md) instance from either the [`members`](mtlstructtype/members.md) property or the [`memberByName(_:)`](mtlstructtype/memberbyname(_:).md) method of an [`MTLStructType`](mtlstructtype.md) instance. The [`dataType`](mtlstructmember/datatype.md) property of the [`MTLStructMember`](mtlstructmember.md) instance tells you what kind of data is stored in the member. Recursively drill down every struct member until you reach a data type that is neither a struct nor an array.
 
 ## Topics
 
-### Describing the Struct Member
+### Describing the struct member
 - [var name: String](mtlstructmember/name.md)
   The name of the struct member.
 - [var dataType: MTLDataType](mtlstructmember/datatype.md)
@@ -36,7 +36,7 @@ Don’t create [`MTLStructMember`](mtlstructmember.md) objects directly. You obt
   The location of this member relative to the start of its struct, in bytes.
 - [var argumentIndex: Int](mtlstructmember/argumentindex.md)
   The index in the argument table that corresponds to the struct member.
-### Obtaining Struct Member Details
+### Obtaining struct member details
 - [func arrayType() -> MTLArrayType?](mtlstructmember/arraytype.md)
   Provides a description of the underlying array when the struct member holds an array.
 - [func structType() -> MTLStructType?](mtlstructmember/structtype.md)

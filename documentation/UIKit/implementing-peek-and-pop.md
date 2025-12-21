@@ -63,7 +63,7 @@ func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewCont
         let cell = tableView.cellForRow(at: indexPath)
         else { return nil }
 
-    // Enable blurring of other UI elements, and a zoom in animation while peeking.
+    // Enable blurring of other UI elements and a zoom-in animation while peeking.
     previewingContext.sourceRect = cell.frame
 
     // Create and configure an instance of the color item view controller to show for the peek.
@@ -78,7 +78,7 @@ func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewCont
 }
 ```
 
-When the system detects enough pressure in the 3D Touch to pop the view controller, it calls [`previewingContext(_:commit:)`](uiviewcontrollerpreviewingdelegate/previewingcontext(_:commit:).md). Take the passed in view controller and present to the user.
+When the system detects enough pressure in the 3D Touch to pop the view controller, it calls [`previewingContext(_:commit:)`](uiviewcontrollerpreviewingdelegate/previewingcontext(_:commit:).md). Take the passed-in view controller and present it to the user.
 
 ```swift
 func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {

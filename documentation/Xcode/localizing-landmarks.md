@@ -5,10 +5,10 @@
 Add localizations to the Landmarks sample code project.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -22,6 +22,8 @@ This is an unlocalized version of [`Landmarks`](https://developer.apple.comhttps
   Internationalize your app’s strings, images, and other resource types to prepare for the translation process.
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
   Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+- [Using generated localizable symbols in your code](using-generated-localizable-symbols-in-your-code.md)
+  Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 
 
 ---

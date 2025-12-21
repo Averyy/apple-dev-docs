@@ -12,7 +12,7 @@ Adopt the Enhanced Security capability in your Xcode project to enable a collect
 
 > ❗ **Important**:  The Enhanced Security capability enables security checks that can impact the performance and stability of an app that isn’t designed and built with security in mind. Review your app’s threat model, and only adopt the Enhanced Security capability if the protections it enables align with your app’s security goals. Test your app thoroughly to ensure that you address all situations in which Enhanced Security mitigations could lead to your app crashing.
 
-Enhanced Security is available for apps and extensions built for iOS, iPadOS, macOS, and visionOS; App Clips in iOS; and DriverKit extensions in iPadOS and macOS.
+Enhanced Security compiler settings and runtime checks are available for apps and extensions built for iOS, iPadOS, macOS, and visionOS; App Clips in iOS; and DriverKit extensions in iPadOS and macOS. Additionally, you can create Enhanced Security helper extensions on iOS, iPadOS, and macOS to which the system provides further protections; for more information, see [`Creating enhanced security helper extensions`](creating-enhanced-security-helper-extensions.md).
 
 ##### Adopt the Enhanced Security Capability
 
@@ -32,7 +32,7 @@ The sections below describe the individual entitlements and build settings that 
 
 The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app when you adopt the capability by setting the `ENABLE_POINTER_AUTHENTICATION` build setting to `Yes`. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables .
 
-When pointer authentication is enabled, the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects. Then the system validates that the signatures are unchanged when your app accesses the memory addressed by those pointers. If the signature for a pointer isn’t valid, the system encounters an exception and crashes your app. Doing so helps to protect against an attacker overwriting memory in your app to compromise the app’s control flow.
+When you enable pointer authentication, the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects. Then the system validates that the signatures are unchanged when your app accesses the memory addressed by those pointers. If the signature for a pointer isn’t valid, the system encounters an exception and crashes your app. Doing so helps to protect against an attacker overwriting memory in your app to compromise the app’s control flow.
 
 To adopt pointer authentication, use the `__ptrauth` type qualifier to instruct the compiler to generate pointer authentication protection for variables in your code that store data and function pointers.
 
@@ -46,11 +46,25 @@ When you adopt the Enhanced Security capability, Xcode configures build settings
 
 To turn off typed allocator support for your target, uncheck the Enable Typed Allocators checkbox in the Signing and Capabilities editor, or set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting to `No` for C code, and the `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` build setting to `No` for C++ code.
 
+##### Adopt Memory Integrity Enforcement
+
+When you enable hardware memory tagging, each new memory allocation and any pointers to that memory include an embedded value called a . Accessing to memory through a pointer requires that the pointer’s tag matches the allocation’s tag. If the tags don’t match — for example, because of a use-after-free error or out-of-bounds access — the app crashes instead of performing the unsafe access.
+
+To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement to your app.
+
+To enable additional diagnostics while debugging, navigate to the Scheme Editor and select the Run action, then select the Diagnostics pane and enable Hardware Memory Tagging.
+
+When you enable memory tagging in Xcode, it also adds the [`Enable Soft Mode for Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in , where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
+
+You can also enable the [`Memory Tag Pure Data`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`Prevent Receiving Tagged Memory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
+
+> **Note**:  This setting is available on iOS 26 and later on iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max, or iPhone Air.
+
 ##### Initialize Stack Variables to Zero
 
-When you enable the Enhanced Security capability for your target, Xcode sets the `CLANG_TRIVIAL_AUTO_VAR_INIT` build setting to the string `zero`. This build setting configures the compiler to intialize automatic variables in your code with zeroes. Doing so helps to protect against particular types of use-after-free vulnerability, because your app zeroes out previous values in stack memory before it reuses them for other variables.
+When you enable the Enhanced Security capability for your target, Xcode sets the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `Yes`. This build setting configures the compiler to initialize automatic variables in your code with zeroes. Doing so helps to protect against particular types of use-after-free vulnerability, because your app zeroes out previous values in stack memory before it reuses them for other variables.
 
-If you need to turn off zero-initialization of stack variables for your target, set the `CLANG_TRIVIAL_AUTO_VAR_INIT` build setting to `uninitialized`.
+If you need to turn off zero-initialization of stack variables for your target, set the `CLANG_ENABLE_STACK_ZERO_INIT` build setting to `No`.
 
 ##### Address Security Related Compiler Warnings
 
@@ -102,7 +116,7 @@ If you need to turn off read-only memory for the dynamic loader, uncheck the Ena
 
 ##### Adopt Bounds Checking in C
 
-When you enable build settings for Enhanced Security, Xcode sets the `ENABLE_C_BOUNDS_SAFETY` build setting with the value `Yes` for all targets in your app.
+Optionally, enable bounds checking for your target that complements the security features in Enhanced Security.
 
 The `ENABLE_C_BOUNDS_SAFETY` build setting adds the `-fbounds-safety` flag to the compiler invocation when Xcode compiles C source files. This is an extension to the C programming language that prevents out-of-bounds memory access by enforcing bounds safety.
 
@@ -118,15 +132,11 @@ For more information, see [`-fbounds-safety: Enforcing bounds safety for C`](htt
 
 To turn off bounds checking in C, set the value of the `ENABLE_C_BOUNDS_SAFETY` build setting to `No`.
 
-##### Adopt Enhanced Security for Extensions
-
-Enabling the Enhanced Security capability for your projects adds build settings and entitlements to your app and extension targets. To enable all protections and ensure your extension works correctly with Enhanced Security, you need to make some additional code changes. For more information, see [`Creating extensions with enhanced security`](creating-extensions-with-enhanced-security.md).
-
 ## See Also
 
 - [Verifying the origin of your XCFrameworks](verifying-the-origin-of-your-xcframeworks.md)
   Discover who signed a framework, and take action when that changes.
-- [Creating extensions with enhanced security](creating-extensions-with-enhanced-security.md)
+- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
 - [Adopting type-aware memory allocation](adopting-type-aware-memory-allocation.md)
   Reduce the opportunities to treat pointers as data in your code.

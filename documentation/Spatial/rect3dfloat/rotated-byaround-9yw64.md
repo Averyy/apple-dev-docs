@@ -4,13 +4,13 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,10 @@ func rotated(by quaternion: simd_quatf, around pivot: Point3DFloat) -> Rect3DFlo
 #### Return Value
 
 A point that’s rotated by the specified rotation.
+
+#### Discussion
+
+Returns a rectangle that’s rotated by a quaternion around a specified pivot.
 
 ## Parameters
 

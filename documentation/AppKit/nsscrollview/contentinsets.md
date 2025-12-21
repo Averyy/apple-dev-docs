@@ -21,7 +21,7 @@ When the value of this property is equal to `NSEdgeInsetsZero`, traditional tili
 
 See [`NSEdgeInsets`](https://developer.apple.com/documentation/Foundation/NSEdgeInsets) for possible values.
 
-When the value of the [`automaticallyAdjustsContentInsets`](nsscrollview/automaticallyadjustscontentinsets.md) property is [`true`](https://developer.apple.com/documentation/swift/true), any value of this property is overridden during tiling.
+When the value of the [`automaticallyAdjustsContentInsets`](nsscrollview/automaticallyadjustscontentinsets.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), any value of this property is overridden during tiling.
 
 ## See Also
 

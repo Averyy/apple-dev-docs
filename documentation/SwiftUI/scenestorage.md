@@ -58,7 +58,7 @@ If the `Scene` is explicitly destroyed (e.g. the switcher snapshot is destroyed 
 
 ## See Also
 
-- [Restoring Your App’s State with SwiftUI](restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [func defaultAppStorage(UserDefaults) -> some View](view/defaultappstorage(_:).md)
   The default store used by `AppStorage` contained within the view.

@@ -27,20 +27,8 @@ enum VRControlsUsage
 - [HIDUsage.VRControlsUsage.oculometer](hidusage/vrcontrolsusage/oculometer.md)
 - [HIDUsage.VRControlsUsage.stereoEnable](hidusage/vrcontrolsusage/stereoenable.md)
 - [HIDUsage.VRControlsUsage.vest](hidusage/vrcontrolsusage/vest.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/vrcontrolsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/vrcontrolsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.VRControlsUsage.RawValue](hidusage/vrcontrolsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/vrcontrolsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/vrcontrolsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/vrcontrolsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

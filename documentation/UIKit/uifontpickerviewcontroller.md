@@ -22,7 +22,7 @@ class UIFontPickerViewController
 
 Use a [`UIFontPickerViewController`](uifontpickerviewcontroller.md) to provide the user access to all the fonts on their device. Directly querying [`UIFont`](uifont.md) provides only system fonts, but the user may have additional fonts on their device. When the user selects one of these nonsystem fonts in the font picker, the system grants your app access to the font.
 
-The font picker has several customization options collected into a [`UIFontPickerViewController.Configuration`](uifontpickerviewcontroller/configuration-swift.class.md) object. For example, you can set [`includeFaces`](uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](https://developer.apple.com/documentation/swift/true) so that the user can select not only the font but a bold or italic face within that font family. Customize the configuration object first, then pass it as an argument in the font picker’s [`init(configuration:)`](uifontpickerviewcontroller/init(configuration:).md) method.
+The font picker has several customization options collected into a [`UIFontPickerViewController.Configuration`](uifontpickerviewcontroller/configuration-swift.class.md) object. For example, you can set [`includeFaces`](uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](https://developer.apple.com/documentation/Swift/true) so that the user can select not only the font but a bold or italic face within that font family. Customize the configuration object first, then pass it as an argument in the font picker’s [`init(configuration:)`](uifontpickerviewcontroller/init(configuration:).md) method.
 
 ```swift
     func showFontPicker(_ sender: Any) {

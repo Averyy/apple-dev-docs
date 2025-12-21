@@ -148,7 +148,7 @@ engine.stop()
 ## See Also
 
 - [Building a signal generator](building-a-signal-generator.md)
-  Use an audio source node and a custom render callback to generate audio signals.
+  Generate audio signals using an audio source node and a custom render callback.
 - [class AVAudioSourceNode](avaudiosourcenode.md)
   An object that supplies audio data.
 - [class AVAudioSinkNode](avaudiosinknode.md)

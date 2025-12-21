@@ -128,6 +128,12 @@ For additional information, refer to [`Accessing location information in widgets
 
 - [WidgetKit updates](../Updates/WidgetKit.md)
   Learn about important changes in WidgetKit.
+- [Creating a widget extension](creating-a-widget-extension.md)
+  Display your app’s content in a convenient, informative widget on various devices.
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
+- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+  A container used to expose multiple widgets from a single widget extension.
 
 
 ---

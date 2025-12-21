@@ -129,7 +129,7 @@ physics.isAffectedByGravity = false
 sphereEntity.components.set(physics)
 ```
 
-The collision component includes the entity in the scene’s physics simulation. The physics body component defines the entity’s physical shape and mass. By default, entities with a physics body component react to gravity, but the app makes the spheres float in the scene by setting the component’s `PhysicsBodyComponent/isAffectedByGravity` property to `false`.
+The collision component includes the entity in the scene’s physics simulation. The physics body component defines the entity’s physical shape and mass. By default, entities with a physics body component react to gravity, but the app makes the spheres float in the scene by setting the component’s [`isAffectedByGravity`](physicsbodycomponent/isaffectedbygravity.md) property to `false`.
 
 ##### Add Attraction Forces Between All the Spheres By Creating a Custom System
 

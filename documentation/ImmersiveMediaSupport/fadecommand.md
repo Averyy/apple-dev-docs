@@ -6,8 +6,8 @@
 A command type for color fading during immersive media playback.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,23 +28,23 @@ Fade commands can be absolute time based or offset based. If fade commands are a
 - [init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirection, color: simd_float3, offset: CMTime?)](fadecommand/init(id:time:duration:direction:color:offset:).md)
   Initializes a color fade command.
 ### Instance Properties
-- [var color: simd_float3?](fadecommand/color.md)
-  The fade color value between 0.0 to 1.0 for each color channel. If color is set to black, and the direction is `in`, then it fades from black color to the video frame.
+- [var color: simd_float3](fadecommand/color.md)
+  The fade color value ranging from `0.0` to `1.0` for each color channel representing RGB color space. If the color is set to black, and the direction is `in`, then it fades from black to the video frame.
 - [var direction: FadeCommand.FadeDirection](fadecommand/direction.md)
   Fade direction for this command instance.
 - [var duration: CMTime](fadecommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration
+  The duration of the command.
 - [var id: Int](fadecommand/id.md)
-  A unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command ID for the entire immersive media file.
 - [var offset: CMTime?](fadecommand/offset.md)
-  Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
+  The offset from the start time of this command.
 - [var time: CMTime](fadecommand/time.md)
   The time this command starts during playback.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](fadecommand/encode(to:).md)
 ### Enumerations
 - [FadeCommand.FadeDirection](fadecommand/fadedirection.md)
-  A value representing the direction of the fade command.
+  A value that represents the direction of the fade command.
 
 ## Relationships
 

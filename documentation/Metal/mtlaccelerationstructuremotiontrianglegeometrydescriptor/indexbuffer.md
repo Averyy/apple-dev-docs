@@ -21,7 +21,7 @@ var indexBuffer: (any MTLBuffer)? { get set }
 
 #### Discussion
 
-This property can be `nil`, in which case the vertex data defines the triangle list implicitly. You must store indices in a packed data format.
+This property can be `nil`, in which case the vertex data defines the triangle list implicitly. You need to store indices in a packed data format.
 
 ## See Also
 

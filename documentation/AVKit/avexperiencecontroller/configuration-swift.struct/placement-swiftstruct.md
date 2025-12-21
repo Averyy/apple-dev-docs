@@ -6,7 +6,7 @@
 A struct used to set the placement for the media playback to be experienced.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ enum PaddingMode
 
 ## Topics
 
-### Enumeration Cases
+### Padding modes
 - [MLTensor.PaddingMode.constant(_:)](mltensor/paddingmode/constant(_:).md)
   Pads the input tensor boundaries with a constant value.
 - [MLTensor.PaddingMode.reflection](mltensor/paddingmode/reflection.md)
@@ -39,6 +39,13 @@ enum PaddingMode
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](mltensor/padded(forsizes:mode:).md)
+  Returns a padded tensor according to the specified padding sizes and mode.
+- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](mltensor/padded(forsizes:with:).md)
+  Returns a tensor padded with the given constant according to the specified padding sizes.
 
 
 ---

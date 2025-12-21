@@ -6,7 +6,7 @@
 Remove an anchor with a given ID from camera region.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

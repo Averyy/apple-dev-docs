@@ -29,6 +29,8 @@ For other localization tips, tools, and resources, see [`Expanding Your App to N
   Internationalize your app’s strings, images, and other resource types to prepare for the translation process.
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
   Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+- [Using generated localizable symbols in your code](using-generated-localizable-symbols-in-your-code.md)
+  Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 - [Localizing Landmarks](localizing-landmarks.md)
   Add localizations to the Landmarks sample code project.
 ### Strings and text
@@ -41,10 +43,10 @@ For other localization tips, tools, and resources, see [`Expanding Your App to N
 ### Layouts and views
 - [Preparing views for localization](../SwiftUI/Preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
-- [Autosizing Views for Localization in iOS](autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
-- [Localization-Friendly Layouts in macOS](localization-friendly_layouts_in_macos.md)
-  This project demonstrates localization-friendly auto layout constraints. It uses `NSGridView` as a container view to achieve localized layouts.
+- [Localization-friendly layouts in macOS](localization-friendly-layouts-in-macos.md)
+  This project demonstrates localization-friendly auto layout constraints.
 ### Languages and regions
 - [Adding support for languages and regions](adding-support-for-languages-and-regions.md)
   Select the resources that you want to localize for each language and region you support.

@@ -45,12 +45,12 @@ enum UIAccessibilityNavigationStyle
 
 - [UIAccessibilityContainer](uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
-- [@MainActor var accessibilityActivationPoint: CGPoint { get set }](../ObjectiveC/NSObject-swift.class/accessibilityActivationPoint.md)
-- [var accessibilityFocusedUIElement: Any? { get }](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
-- [@MainActor var accessibilityFrame: CGRect { get set }](../ObjectiveC/NSObject-swift.class/accessibilityFrame.md)
-- [func accessibilityHitTest(_ point: NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
-- [@MainActor var accessibilityNavigationStyle: UIAccessibilityNavigationStyle { get set }](../ObjectiveC/NSObject-swift.class/accessibilityNavigationStyle.md)
-- [@MainActor @NSCopying var accessibilityPath: UIBezierPath? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityPath.md)
+- [var accessibilityActivationPoint: CGPoint](../ObjectiveC/NSObject-swift.class/accessibilityActivationPoint.md)
+- [var accessibilityFocusedUIElement: Any?](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
+- [var accessibilityFrame: CGRect](../ObjectiveC/NSObject-swift.class/accessibilityFrame.md)
+- [func accessibilityHitTest(NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
+- [var accessibilityNavigationStyle: UIAccessibilityNavigationStyle](../ObjectiveC/NSObject-swift.class/accessibilityNavigationStyle.md)
+- [var accessibilityPath: UIBezierPath?](../ObjectiveC/NSObject-swift.class/accessibilityPath.md)
 - [static func zoomFocusChanged(zoomType: UIAccessibility.ZoomType, toFrame: CGRect, in: UIView)](uiaccessibility/zoomfocuschanged(zoomtype:toframe:in:).md)
   Notifies the system when the app’s focus changes to a new location.
 - [UIAccessibility.ZoomType](uiaccessibility/zoomtype.md)

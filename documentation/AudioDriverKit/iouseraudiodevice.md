@@ -97,6 +97,7 @@ The [`IOUserAudioDevice`](iouseraudiodevice.md) class subclasses [`IOUserAudioCl
 ### Instance Methods
 - [GetCurrentClientIOTime](iouseraudiodevice/getcurrentclientiotime.md)
 - [SetIOOperationHandler](iouseraudiodevice/setiooperationhandler.md)
+- [SetWantsStreamFormatsRestored](iouseraudiodevice/setwantsstreamformatsrestored.md)
 
 ## Relationships
 

@@ -19,7 +19,7 @@ var proprietaryApplicationDataCoding: Bool { get }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), data in the [`applicationData`](nfciso7816tag/applicationdata.md) property follows the ISO14443-3 specification.
+If the value is [`false`](https://developer.apple.com/documentation/Swift/false), data in the [`applicationData`](nfciso7816tag/applicationdata.md) property follows the ISO14443-3 specification.
 
 ## See Also
 

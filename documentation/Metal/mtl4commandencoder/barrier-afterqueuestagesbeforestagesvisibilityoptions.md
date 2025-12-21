@@ -6,12 +6,12 @@
 Encodes a consumer barrier on work you commit to the same command queue.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,8 @@ func barrier(afterQueueStages: MTLStages, beforeStages: MTLStages, visibilityOpt
 
 ## Mentions
 
-- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
+- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
 
 #### Discussion
 

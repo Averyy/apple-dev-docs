@@ -22,26 +22,21 @@ struct ReceiveOn<Upstream, Context> where Upstream : Publisher, Context : Schedu
 
 ## Topics
 
-### Creating a Receive-On Publisher
+### Creating a receive-on Publisher
 - [init(upstream: Upstream, scheduler: Context, options: Context.SchedulerOptions?)](publishers/receiveon/init(upstream:scheduler:options:).md)
   Creates a publisher that delivers elements to its downstream subscriber on a specific scheduler.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.ReceiveOn.Output](publishers/receiveon/output.md)
   The kind of values published by this publisher.
 - [Publishers.ReceiveOn.Failure](publishers/receiveon/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/receiveon/upstream.md)
   The publisher from which this publisher receives elements.
 - [let scheduler: Context](publishers/receiveon/scheduler.md)
   The scheduler the publisher uses to deliver elements.
 - [let options: Context.SchedulerOptions?](publishers/receiveon/options.md)
   Scheduler options used to customize element delivery.
-### Applying Operators
-- [Publisher Operators](publishers-receiveon-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/receiveon/publisher-implementations.md)
 
 ## Relationships
 

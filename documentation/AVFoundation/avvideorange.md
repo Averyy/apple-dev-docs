@@ -22,7 +22,7 @@ struct AVVideoRange
 
 ## Topics
 
-### Video Ranges
+### Video ranges
 - [static let pq: AVVideoRange](avvideorange/pq.md)
   Indicates Perceptual Quantizer (PQ) high-dynamic-range video.
 - [static let hlg: AVVideoRange](avvideorange/hlg.md)

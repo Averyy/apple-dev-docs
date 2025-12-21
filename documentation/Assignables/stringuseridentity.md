@@ -20,8 +20,6 @@ struct StringUserIdentity
 ## Topics
 
 ### Creating a user identity
-- [init(from: any Decoder) throws](stringuseridentity/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(value: String)](stringuseridentity/init(value:).md)
   Initializes a `StringUserIdentity` with the given string value.
 ### Inspecting an identity
@@ -33,20 +31,6 @@ struct StringUserIdentity
   A unique type identifier for this user identity.
 - [var value: String](stringuseridentity/value.md)
   The value of the string to contain in this user identity.
-### Operators
-- [static func == (StringUserIdentity, StringUserIdentity) -> Bool](stringuseridentity/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](stringuseridentity/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](stringuseridentity/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](stringuseridentity/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](stringuseridentity/equatable-implementations.md)
-- [UserIdentity Implementations](stringuseridentity/useridentity-implementations.md)
 
 ## Relationships
 

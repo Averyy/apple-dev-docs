@@ -16,10 +16,6 @@
 required init(from decoder: any Decoder) throws
 ```
 
-## See Also
-
-- [init()](sfcustomlanguagemodeldata/templatephrasecountgenerator/init.md)
-
 
 ---
 

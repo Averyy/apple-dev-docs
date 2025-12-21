@@ -22,9 +22,20 @@ init?(sampleBuffer: CMSampleBuffer)
 
 An instance of AVTimedMetadataGroup.
 
+#### Discussion
+
+Initializes an instance of AVTimedMetadataGroup with a sample buffer.
+
 ## Parameters
 
 - `sampleBuffer`: A CMSampleBuffer with media type kCMMediaType_Metadata.
+
+## See Also
+
+- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
+  Creates a timed metadata group with a sample buffer.
+- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
+  Creates a timed metadata group initialized with the given metadata items.
 
 
 ---

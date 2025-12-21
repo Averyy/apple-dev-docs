@@ -23,8 +23,8 @@ var status: AVPlayerItem.Status { get }
 
 ## Mentions
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 
 #### Discussion
 

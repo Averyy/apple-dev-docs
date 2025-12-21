@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-A Boolean value that specifies whether the receiver should use only the phonetic representations of name components. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 
 **Availability**:
 - iOS 9.0+
@@ -19,6 +19,10 @@ A Boolean value that specifies whether the receiver should use only the phonetic
 ```swift
 var isPhonetic: Bool { get set }
 ```
+
+#### Discussion
+
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

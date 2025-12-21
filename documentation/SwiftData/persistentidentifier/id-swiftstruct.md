@@ -20,20 +20,6 @@ A type that represents the stable identity of a SwiftData model.
 struct ID
 ```
 
-## Topics
-
-### Hashing
-- [func hash(into: inout Hasher)](persistentidentifier/id-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing IDs
-- [static func == (PersistentIdentifier.ID, PersistentIdentifier.ID) -> Bool](persistentidentifier/id-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](persistentidentifier/id-swift.struct/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](persistentidentifier/id-swift.struct/equatable-implementations.md)
-
 ## Relationships
 
 ### Conforms To

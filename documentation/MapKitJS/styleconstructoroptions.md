@@ -11,21 +11,7 @@ Initial values of options for applying style to overlays.
 ## Declaration
 
 ```swift
-dictionary StyleConstructorOptions {
-	string strokeColor;
-	number strokeOpacity;
-	number strokeStart;
-	number strokeEnd;
-	number lineWidth;
-	string lineCap;
-	string lineJoin;
-	number[] lineDash;
-	number lineDashOffset;
-	mapkit.LineGradient lineGradient;
-	string fillColor;
-	number fillOpacity;
-	string fillRule;
-};
+interface StyleConstructorOptions
 ```
 
 ## Topics
@@ -62,7 +48,7 @@ dictionary StyleConstructorOptions {
 
 ## See Also
 
-- [mapkit.Style](mapkit.style/mapkit.style.md)
+- [new Style(options)](style/styleconstructor.md)
   Creates and initializes a style object.
 
 

@@ -15,12 +15,6 @@
 @preconcurrency struct WebContentExtensionConfiguration
 ```
 
-## Topics
-
-### Instance Methods
-- [func accept(connection: NSXPCConnection) -> Bool](webcontentextensionconfiguration/accept(connection:).md)
-  A method the system calls when a host app tries to connect.
-
 ## Relationships
 
 ### Conforms To

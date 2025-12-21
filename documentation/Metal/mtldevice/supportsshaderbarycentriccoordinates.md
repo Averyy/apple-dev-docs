@@ -22,7 +22,7 @@ var supportsShaderBarycentricCoordinates: Bool { get }
 
 #### Discussion
 
-If a GPU device supports barycentric coordinates, a fragment shader can receive them by adding the `[[barycentric_coord]]` attribute to one of its arguments. See the [`Metal Shading Language specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) and [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md) for more information.
+If a GPU device supports barycentric coordinates, a fragment shader can receive them by adding the `[[barycentric_coord]]` attribute to one of its arguments. See the [`Metal Shading Language specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) and [`Detecting GPU features and Metal software versions`](detecting-gpu-features-and-metal-software-versions.md) for more information.
 
 ## See Also
 

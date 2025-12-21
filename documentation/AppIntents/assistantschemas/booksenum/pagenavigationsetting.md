@@ -25,7 +25,7 @@ var pageNavigationSetting: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.books.pageNavigationSetting` schema:
 
 ```swift
-@AssistantEnum(schema: .books.pageNavigationSetting)
+@AppEnum(schema: .books.pageNavigationSetting)
 enum BookPageNavigationSetting: AppEnum {
     case continuousScroll
     case pageTurning

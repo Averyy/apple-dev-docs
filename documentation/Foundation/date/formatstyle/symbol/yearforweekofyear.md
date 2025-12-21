@@ -30,12 +30,11 @@ struct YearForWeekOfYear
 - [static func padded(Int) -> Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/padded(_:).md)
   Returns a custom format style that represents the three or more digits of the year in week-of-year calendars, zero-padded if necessary.
 ### Comparing a Year for Week-of-Year
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

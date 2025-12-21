@@ -1,10 +1,11 @@
-# Metal Structures
+# Metal structures
 
 **Framework**: Metal
 
 ## Topics
 
 ### Structures
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
@@ -24,10 +25,10 @@
 
 ## See Also
 
-- [Metal Enumerations](metal-enumerations.md)
-- [Metal Constants](metal-constants.md)
-- [Metal Data Types](metal-data-types.md)
-- [Metal Variables](metal-variables.md)
+- [Metal enumerations](metal-enumerations.md)
+- [Metal constants](metal-constants.md)
+- [Metal data types](metal-data-types.md)
+- [Metal variables](metal-variables.md)
 
 
 ---

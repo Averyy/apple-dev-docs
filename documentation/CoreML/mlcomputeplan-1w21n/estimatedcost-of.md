@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: method
 
+Returns the estimated cost of executing a MLProgram operation.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -18,10 +20,18 @@
 func estimatedCost(of operation: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?
 ```
 
+#### Return Value
+
+The estimated cost of executing the operation.
+
+## Parameters
+
+- `operation`: A MLProgram operation
+
 ## See Also
 
-- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
-- [func deviceUsage(for: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-7cdlm.md)
+- [MLComputePlan.Cost](mlcomputeplan-1w21n/cost.md)
+  A struct containing information on the estimated cost of executing a layer/operation.
 
 
 ---

@@ -111,7 +111,7 @@ destColor = (srcTopColor * constAlpha * 255  + (255*255 - srcTopAlpha * constAlp
 destAlpha =  (srcTopAlpha * constAlpha * 255 + (255*255 - srcTopAlpha * constAlpha) * srcBottomAlpha + 127*255 ) / (255*255);
 ```
 
-To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending.md) with the following code:
+To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending#Perform-an-alpha-composite.md) with the following code:
 
 ```swift
 // Perform the composite operation.

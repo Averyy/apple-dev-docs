@@ -22,13 +22,9 @@ struct Iterator
 
 ## Topics
 
-### Iterating over Elements
+### Iterating over elements
 - [func next() async -> P.Output?](asyncpublisher/iterator/next.md)
   Produces the next element in the prefix sequence.
-### Type Aliases
-- [AsyncPublisher.Iterator.Element](asyncpublisher/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncpublisher/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

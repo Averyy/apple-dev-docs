@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: struct
 
-A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the user’s eye
+A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,12 +18,7 @@ struct CameraOrigin
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](immersivecameracalibration/cameraorigin/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(left: Point3DFloat, right: Point3DFloat)](immersivecameracalibration/cameraorigin/init(left:right:).md)
-### Instance Methods
-- [func encode(to: any Encoder) throws](immersivecameracalibration/cameraorigin/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Type Properties
 - [static let zero: ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin/zero.md)
   The default immersive camera origin.

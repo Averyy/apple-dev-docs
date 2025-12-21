@@ -32,6 +32,10 @@ func annotation<C>(position: AnnotationPosition = .automatic, alignment: Alignme
 
 - [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-65emh.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
 
 
 ---

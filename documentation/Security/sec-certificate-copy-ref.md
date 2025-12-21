@@ -24,9 +24,7 @@ The underlying `SecCertificateRef` instance.
 
 #### Discussion
 
-```None
- Copy a retained reference to the underlying `SecCertificateRef` instance.
-```
+Copy a retained reference to the underlying `SecCertificateRef` instance.
 
 ## Parameters
 

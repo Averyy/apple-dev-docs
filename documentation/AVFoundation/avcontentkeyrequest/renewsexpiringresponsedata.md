@@ -28,6 +28,8 @@ The value of this property is `YES` if the request renews previously provided re
 
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
   The identifier for the content key.
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 - [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
 - [var error: (any Error)?](avcontentkeyrequest/error.md)

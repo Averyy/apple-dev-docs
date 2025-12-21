@@ -17,7 +17,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to edit text and attributes of all text views sharing the receiver’s layout manager, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to edit text and attributes of all text views sharing the receiver’s layout manager, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 If a text view is made editable, it’s also made selectable. Text views are editable by default.
 

@@ -30,28 +30,20 @@ Be aware that [`Publishers.Share`](publishers/share.md) is a class rather than a
 
 ## Topics
 
-### Creating a Share Publisher
+### Creating a share publisher
 - [init(upstream: Upstream)](publishers/share/init(upstream:).md)
   Creates a publisher that shares the output of an upstream publisher with multiple subscribers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Share.Output](publishers/share/output.md)
   The kind of values published by this publisher.
 - [Publishers.Share.Failure](publishers/share/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/share/upstream.md)
   The publisher from which this publisher receives elements.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Share<Upstream>, Publishers.Share<Upstream>) -> Bool](publishers/share/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/share/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-share-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Equatable Implementations](publishers/share/equatable-implementations.md)
-- [Publisher Implementations](publishers/share/publisher-implementations.md)
 
 ## Relationships
 

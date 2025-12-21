@@ -34,6 +34,8 @@ Instead, activate the feature for smaller groups of users over a period of time.
   Verify that connections to your server come from legitimate instances of your app.
 - [Assessing fraud risk](assessing-fraud-risk.md)
   Request and analyze risk data using server-to-server calls.
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+  Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
 - [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)

@@ -23,7 +23,7 @@ AppKit in macOS Ventura 13 includes new features, as well as API changes and dep
 
 ###### Nsnib
 
-- The doc://com.apple.documentation/documentation/appkit/nsnib/1547299-initwithcontentsofurl initializer (deprecated since 10.8) now throws an assertion. Use [`init(nibNamed:bundle:)`](https://developer.apple.com/documentation/AppKit/NSNib/init(nibNamed:bundle:)) instead.
+- The `initWithContentsOfURL` initializer (deprecated since 10.8) now throws an assertion. Use [`init(nibNamed:bundle:)`](https://developer.apple.com/documentation/AppKit/NSNib/init(nibNamed:bundle:)) instead.
 
 ###### Nstableview and Nsoutlineview
 
@@ -40,6 +40,17 @@ AppKit in macOS Ventura 13 includes new features, as well as API changes and dep
 ###### Nstoolbar
 
 - Placing an NSToolbarItem item taller than the toolbar height is not supported and will result in clipping. When drawing a custom badge, use alignmentRectInsets of the control to describe where the button is and draw within the inset area.
+
+## See Also
+
+- [AppKit Release Notes for macOS Sonoma 14](appkit-release-notes-for-macos-14.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Big Sur 11](appkit-release-notes-for-macos-11.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

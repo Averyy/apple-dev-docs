@@ -27,24 +27,8 @@ protocol TemporalEstimator<Transformer>
 - [func write(Self.Transformer, to: URL, overwrite: Bool) throws](temporalestimator/write(_:to:overwrite:).md)
   Writes the encoded transformer to a file.
 ### Appending
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other>>
-](temporalestimator/appending(_:)-3ywtc.md)
-  Composes this temporal estimator with a temporal transformer.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](temporalestimator/appending(_:)-40b0.md)
+- [func appending(_:)](temporalestimator/appending(_:).md)
   Composes this temporal estimator with a supervised temporal estimator.
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>>
-](temporalestimator/appending(_:)-43khh.md)
-  Composes this temporal estimator with an estimator.
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other>>>
-](temporalestimator/appending(_:)-5bepa.md)
-  Composes this temporal estimator with a transformer.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Other.Annotation>
-](temporalestimator/appending(_:)-90283.md)
-  Composes this temporal estimator with a supervised temporal estimator.
-- [func appending<Other>(Other) -> some TemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>>
-](temporalestimator/appending(_:)-933dy.md)
-  Composes this temporal estimator with another temporal estimator.
 ### Adapting and fitting
 - [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> TemporalEstimatorToSupervisedAdaptor<Self, Annotation>](temporalestimator/adaptedassupervised(annotationtype:).md)
   Exposes this temporal estimator as a supervised temporal estimator.

@@ -20,6 +20,15 @@ struct CSetting
   Provides a header search path relative to the target’s directory.
 - [static func unsafeFlags([String], BuildSettingCondition?) -> CSetting](csetting/unsafeflags(_:_:).md)
   Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
+### Type Methods
+- [static func disableWarning(String, BuildSettingCondition?) -> CSetting](csetting/disablewarning(_:_:).md)
+  Disable a specific C compiler warning group.
+- [static func enableWarning(String, BuildSettingCondition?) -> CSetting](csetting/enablewarning(_:_:).md)
+  Enable a specific C compiler warning group.
+- [static func treatAllWarnings(as: WarningLevel, BuildSettingCondition?) -> CSetting](csetting/treatallwarnings(as:_:).md)
+  Controls how all C compiler warnings are treated during compilation.
+- [static func treatWarning(String, as: WarningLevel, BuildSettingCondition?) -> CSetting](csetting/treatwarning(_:as:_:).md)
+  Controls how a specific C compiler warning is treated during compilation.
 
 ## Relationships
 

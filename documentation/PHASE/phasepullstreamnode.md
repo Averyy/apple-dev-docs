@@ -19,6 +19,8 @@ class PHASEPullStreamNode
 
 #### Overview
 
+An object for addessing an instance of a stream in an executing sound event
+
 ## Topics
 
 ### Instance Properties

@@ -20,7 +20,7 @@ var date: Date { get set }
 
 #### Discussion
 
-Use this property to get and set the currently selected date. The default value of this property is the date when the [`UIDatePicker`](uidatepicker.md) object is created. Setting this property animates the date picker by spinning the wheels to the new date and time; if you don’t want any animation to occur when you set the date, use the [`setDate(_:animated:)`](uidatepicker/setdate(_:animated:).md) method, passing [`false`](https://developer.apple.com/documentation/swift/false) for the `animated` parameter. This behavior of this property is undefined when the mode is set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md); refer instead to the [`countDownDuration`](uidatepicker/countdownduration.md) property.
+Use this property to get and set the currently selected date. The default value of this property is the date when the [`UIDatePicker`](uidatepicker.md) object is created. Setting this property animates the date picker by spinning the wheels to the new date and time; if you don’t want any animation to occur when you set the date, use the [`setDate(_:animated:)`](uidatepicker/setdate(_:animated:).md) method, passing [`false`](https://developer.apple.com/documentation/Swift/false) for the `animated` parameter. This behavior of this property is undefined when the mode is set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md); refer instead to the [`countDownDuration`](uidatepicker/countdownduration.md) property.
 
 ## See Also
 

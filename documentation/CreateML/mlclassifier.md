@@ -34,28 +34,21 @@ When you create an [`MLClassifier`](mlclassifier.md), Create ML inspects your da
 ## Topics
 
 ### Creating and training a classifier
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?) throws](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-6ojd1.md)
+- [init(trainingData:targetColumn:featureColumns:)](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:).md)
   Creates a classifier.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?) throws](mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-p3f6.md)
-  Creates a classifier from the feature columns in the training data to predict the categories in the target column.
 - [var targetColumn: String](mlclassifier/targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
 - [var featureColumns: [String]](mlclassifier/featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
-### Assessing model accuracy
+### Evaluating a classifier
+- [func evaluation(on:)](mlclassifier/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var trainingMetrics: MLClassifierMetrics](mlclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 - [var validationMetrics: MLClassifierMetrics](mlclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
-### Evaluating a classifier
-- [func evaluation(on: DataFrame) -> MLClassifierMetrics](mlclassifier/evaluation(on:)-3xetj.md)
-  Evaluates the classifier on the provided labeled data.
-- [func evaluation(on: MLDataTable) -> MLClassifierMetrics](mlclassifier/evaluation(on:)-6433y.md)
-  Evaluates the classifier on the provided labeled data.
 ### Testing a classifier
-- [func predictions(from: DataFrame) throws -> AnyColumn](mlclassifier/predictions(from:)-7mww4.md)
-- [func predictions(from: MLDataTable) throws -> MLUntypedColumn](mlclassifier/predictions(from:)-50jlv.md)
-  Classifies the provided data into the target categories.
+- [func predictions(from:)](mlclassifier/predictions(from:).md)
 ### Saving a classifier
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlclassifier/write(to:metadata:).md)
   Exports a Core ML model file for use in your app.
@@ -109,7 +102,7 @@ When you create an [`MLClassifier`](mlclassifier.md), Create ML inspects your da
 
 ## See Also
 
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [enum MLRegressor](mlregressor.md)
   A model you train to estimate continuous values.

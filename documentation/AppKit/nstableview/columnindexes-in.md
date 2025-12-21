@@ -21,7 +21,7 @@ New [`NSIndexSet`](https://developer.apple.com/documentation/Foundation/NSIndexS
 
 #### Discussion
 
-Columns that return [`true`](https://developer.apple.com/documentation/swift/true) for the `NSTableColumn` method [`isHidden`](nstablecolumn/ishidden.md) are excluded from the results.
+Columns that return [`true`](https://developer.apple.com/documentation/Swift/true) for the `NSTableColumn` method [`isHidden`](nstablecolumn/ishidden.md) are excluded from the results.
 
 ## Parameters
 

@@ -34,7 +34,7 @@ Upon creation, the values of the [`defaultMediaDataStorage`](avmovie/defaultmedi
   Creates a movie that models the media at the specified URL.
 - [init(data: Data, options: [String : Any]?)](avmovie/init(data:options:).md)
   Creates a movie object from a movie file’s data.
-- [Initialization Options](initialization-options.md)
+- [Initialization options](initialization-options.md)
   Specify options to configure the initialization of a movie.
 
 

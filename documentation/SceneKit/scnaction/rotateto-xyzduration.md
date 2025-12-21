@@ -26,7 +26,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`rotation`](scnnode/rotation.md) property animates to the new angle. Calling this method is equivalent to calling [`rotateTo(x:y:z:duration:usesShortestUnitArc:)`](scnaction/rotateto(x:y:z:duration:usesshortestunitarc:).md) and passing [`false`](https://developer.apple.com/documentation/swift/false) for the `shortestUnitArc` parameter.
+When the action executes, the node’s [`rotation`](scnnode/rotation.md) property animates to the new angle. Calling this method is equivalent to calling [`rotateTo(x:y:z:duration:usesShortestUnitArc:)`](scnaction/rotateto(x:y:z:duration:usesshortestunitarc:).md) and passing [`false`](https://developer.apple.com/documentation/Swift/false) for the `shortestUnitArc` parameter.
 
 This action is not reversible; the reverse of this action has the same duration but does not change anything.
 

@@ -16,7 +16,7 @@ func startSpeaking(_ string: String, to url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when synthesis starts successfully, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when synthesis starts successfully, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

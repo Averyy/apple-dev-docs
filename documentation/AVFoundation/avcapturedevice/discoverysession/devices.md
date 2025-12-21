@@ -21,7 +21,7 @@ var devices: [AVCaptureDevice] { get }
 
 ## Mentions
 
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
 
 #### Discussion
 

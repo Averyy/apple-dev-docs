@@ -21,9 +21,9 @@ var canPerformMultiplePassesOverSourceMediaData: Bool { get set }
 
 #### Discussion
 
-When the value for this property is [`true`](https://developer.apple.com/documentation/swift/true), the export session can produce higher quality results at the expense of longer export times. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) may also require the export session to write temporary data to disk during the export. To control the location of temporary data, use the property [`directoryForTemporaryFiles`](avassetexportsession/directoryfortemporaryfiles.md).
+When the value for this property is [`true`](https://developer.apple.com/documentation/Swift/true), the export session can produce higher quality results at the expense of longer export times. Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) may also require the export session to write temporary data to disk during the export. To control the location of temporary data, use the property [`directoryForTemporaryFiles`](avassetexportsession/directoryfortemporaryfiles.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Not all export session configurations can benefit from performing multiple passes over the source media. In these cases, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) has no effect.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Not all export session configurations can benefit from performing multiple passes over the source media. In these cases, setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) has no effect.
 
 You can’t set this property after the export starts.
 

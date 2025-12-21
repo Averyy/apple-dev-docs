@@ -26,8 +26,6 @@ case notRepresentableAsCoreML(debugDescription: String)
   An error that indicates that the package already exists at the URL.
 - [SerializationError.packageNotFound(_:)](serializationerror/packagenotfound(_:).md)
   An error that indicates that the package at specified URL was not found.
-- [var errorDescription: String?](serializationerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

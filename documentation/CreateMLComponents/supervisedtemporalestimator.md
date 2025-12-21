@@ -31,24 +31,8 @@ protocol SupervisedTemporalEstimator<Transformer, Annotation>
 - [associatedtype Transformer : TemporalTransformer](supervisedtemporalestimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-1vtjj.md)
-  Composes this supervised temporal estimator with a supervised estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-3xipm.md)
-  Composes this supervised temporal estimator with a transformer.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-4a6ux.md)
+- [func appending(_:)](supervisedtemporalestimator/appending(_:).md)
   Composes this supervised temporal estimator with another supervised temporal estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-4km9v.md)
-  Composes this supervised temporal estimator with a temporal estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-4vdf2.md)
-  Composes this supervised temporal estimator with an estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other>>, Self.Annotation>
-](supervisedtemporalestimator/appending(_:)-9g19r.md)
-  Composes this supervised temporal estimator with a transformer.
 ### Fitting
 - [func fitted<InputSequence, FeatureSequence>(to: InputSequence) async throws -> Self.Transformer](supervisedtemporalestimator/fitted(to:).md)
 - [func fitted<InputSequence, FeatureSequence>(to: InputSequence, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedtemporalestimator/fitted(to:eventhandler:).md)

@@ -6,7 +6,7 @@
 Adds a data provider to a collection.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -45,6 +45,7 @@ extern void ar_data_providers_add_data_provider(ar_data_providers_t data_provide
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](ar_data_providers_enumerator_function_t.md)
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 
 
 ---

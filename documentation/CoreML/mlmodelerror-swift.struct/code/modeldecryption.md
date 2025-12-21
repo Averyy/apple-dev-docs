@@ -24,6 +24,8 @@ case modelDecryption
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the framework can’t decrypt a model.
 
+The framework can’t decrypt encrypted models in macOS if System Integrity Protection (SIP) is disabled.
+
 ## See Also
 
 - [MLModelError.Code.featureType](mlmodelerror-swift.struct/code/featuretype.md)

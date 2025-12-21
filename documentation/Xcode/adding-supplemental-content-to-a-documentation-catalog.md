@@ -33,7 +33,7 @@ After the Overview section, additional sections and subsections use a double has
 To add an article to your documentation catalog in Xcode, do the following:
 
 1. Select your documentation catalog in the Project navigator.
-2. Choose File > New > File to open the file template chooser.
+2. Choose File > New > File from Template.
 3. Select the Article File template in the Documentation section and click Next.
 4. Enter a filename and click Create. Xcode creates a new article file with a default name.
 5. Modify the first line of the file to specify its title.
@@ -46,7 +46,7 @@ To add an article to your documentation catalog in Xcode, do the following:
 DocC supports supplementing or completely replacing source documentation comments with content in extension files. To add an extension file to your documentation catalog, do the following:
 
 1. In Xcode, select your documentation catalog in the Project navigator.
-2. Choose File > New > File to open the file template chooser.
+2. Choose File > New > File from Template.
 3. Select the Extension File template in the Documentation section and click Next.
 4. Enter the symbol name as the filename and click Create.
 5. Modify the first line of the file to identify the symbol that the file relates to.
@@ -59,7 +59,7 @@ In the extension file, replace the `Symbol` placeholder with the absolute path t
 
 - [Writing symbol documentation in your source files](writing-symbol-documentation-in-your-source-files.md)
   Add reference documentation to your symbols that explains how to use them.
-- [SlothCreator: Building DocC Documentation in Xcode](slothcreator_building_docc_documentation_in_xcode.md)
+- [SlothCreator: Building DocC documentation in Xcode](slothcreator-building-docc-documentation-in-xcode.md)
   Build DocC documentation for a Swift package that contains a DocC Catalog.
 
 

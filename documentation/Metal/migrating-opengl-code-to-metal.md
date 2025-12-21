@@ -1,4 +1,4 @@
-# Migrating OpenGL Code to Metal
+# Migrating OpenGL code to Metal
 
 **Framework**: Metal
 
@@ -23,7 +23,7 @@ To run the app:
 
 ## See Also
 
-- [Mixing Metal and OpenGL Rendering in a View](mixing-metal-and-opengl-rendering-in-a-view.md)
+- [Mixing Metal and OpenGL rendering in a view](mixing-metal-and-opengl-rendering-in-a-view.md)
   Draw with Metal and OpenGL in the same view using an interoperable texture.
 
 

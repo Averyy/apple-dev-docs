@@ -20,9 +20,6 @@ enum Angle
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Angle, IntentParameter<Value>.Angle) -> Bool](intentparameter/angle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Angle.arcMinutes](intentparameter/angle/arcminutes.md)
 - [IntentParameter.Angle.arcSeconds](intentparameter/angle/arcseconds.md)
@@ -30,15 +27,6 @@ enum Angle
 - [IntentParameter.Angle.gradians](intentparameter/angle/gradians.md)
 - [IntentParameter.Angle.radians](intentparameter/angle/radians.md)
 - [IntentParameter.Angle.revolutions](intentparameter/angle/revolutions.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/angle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/angle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/angle/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/angle/equatable-implementations.md)
 
 ## Relationships
 

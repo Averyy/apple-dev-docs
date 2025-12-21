@@ -59,7 +59,7 @@ let browser = UIDocumentBrowserViewController(forOpeningFilesWithContentTypes: [
 
 ###### Enable Multiple Document Selection
 
-By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ###### Enable New Document Creation
 

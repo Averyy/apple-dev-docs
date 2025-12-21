@@ -15,6 +15,8 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   The main entry point for receiving data from ARKit.
 - [ar_session_create](ar_session_create.md)
   Creates a new session.
+- [ar_session_create_with_device](ar_session_create_with_device.md)
+  Create a session connected to the specified device.
 - [ar_session_query_authorization_results](ar_session_query_authorization_results.md)
   Checks whether the current session is authorized for particular authorization types without requesting authorization.
 - [ar_session_query_authorization_results_f](ar_session_query_authorization_results_f.md)
@@ -29,14 +31,17 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Sets the handler for receiving updates in authorization status for a specific authorization type.
 - [ar_session_set_authorization_update_handler_f](ar_session_set_authorization_update_handler_f.md)
   Sets the handler for receiving updates in authorization status for a specific authorization type.
+- [ar_session_copy_data_providers](ar_session_copy_data_providers.md)
+  Get a copy of the collection of all data providers on this session.
 - [ar_session_set_data_provider_state_change_handler](ar_session_set_data_provider_state_change_handler.md)
-  Sets the handler for responding to a change in the state of one or more data providers.
+  Sets the handler for responding to a state change of one or more data providers.
 - [ar_session_set_data_provider_state_change_handler_f](ar_session_set_data_provider_state_change_handler_f.md)
-  Sets the handler for responding to a change in the state of one or more data providers.
+  Sets the handler function for responding to a state change of one or more data providers.
 - [ar_session_data_provider_state_change_handler_t](ar_session_data_provider_state_change_handler_t.md)
-  A handler for receiving updates to data provider states.
+  A handler that the session calls when one or more data providers associated with it change state.
 - [ar_session_stop](ar_session_stop.md)
   Stops a session.
+- [typealias ar_device_t](ar_device_t.md)
 ### Memory Management
 - [ar_release](ar_release-c.func.md)
   Releases a reference count on an ARKit object.
@@ -111,6 +116,8 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   A collection of world anchors.
 - [ar_world_anchors_enumerator_t](ar_world_anchors_enumerator_t.md)
   A handler for enumerating a collection of world anchors.
+- [ar_world_anchor_sharing_availability_t](ar_world_anchor_sharing_availability_t.md)
+  Enumeration indicating the availability of world anchor sharing.
 - [ar_plane_anchor_t](ar_plane_anchor_t.md)
   An anchor that represents horizontal and vertical planes.
 - [ar_plane_anchors_t](ar_plane_anchors_t.md)
@@ -123,8 +130,6 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   An enumeration that describes hand joint names.
 - [ar_hand_anchor_query_status_t](ar_hand_anchor_query_status_t.md)
   An enumeration that describes the status of a hand anchor query.
-- [world_tracking_h](world_tracking_h.md)
-- [anchor_h](anchor_h.md)
 ### Data providers
 - [ar_data_provider_state_t](ar_data_provider_state_t.md)
   The possible states of a data provider.
@@ -156,6 +161,7 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](ar_data_providers_enumerator_function_t.md)
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 - [ar_data_provider_t](ar_data_provider_t.md)
   A source of live data from ARKit.
 ### Geometry
@@ -231,6 +237,8 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Enumerates a collection of plane anchors.
 - [ar_plane_anchors_get_count](ar_plane_anchors_get_count.md)
   Gets the number of plane anchors in a collection.
+- [ar_plane_anchor_get_surface_classification](ar_plane_anchor_get_surface_classification.md)
+  Get the surface classification of a plane anchor.
 - [ar_plane_detection_configuration_t](ar_plane_detection_configuration_t.md)
 - [ar_plane_detection_provider_create](ar_plane_detection_provider_create.md)
   Creates a plane detection provider for the types of planes you want to detect.
@@ -268,14 +276,27 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_plane_detection_update_handler_function_t](ar_plane_detection_update_handler_function_t.md)
 - [ARPlaneClassificationStatus](arplaneclassificationstatus.md)
   Possible states of ARKit’s process for classifying plane anchors.
-- [plane_detection_h](plane_detection_h.md)
+- [ar_surface_classification_t](ar_surface_classification_t.md)
+  A value describing the classification of a surface.
 ### World tracking
 - [ar_world_anchor_create_with_origin_from_anchor_transform](ar_world_anchor_create_with_origin_from_anchor_transform.md)
   Creates a world anchor from a position and orientation in world space.
+- [ar_world_anchor_is_shared_with_nearby_participants](ar_world_anchor_is_shared_with_nearby_participants.md)
+  Check if a world anchor is marked to be shared with nearby participants.
+- [ar_world_anchor_shared_with_nearby_participants_create](ar_world_anchor_shared_with_nearby_participants_create.md)
+  Initialize a world anchor that should be shared with nearby participants.
+- [ar_world_anchor_sharing_availability_update_handler_function_t](ar_world_anchor_sharing_availability_update_handler_function_t.md)
+  Function pointer called when there is a change in world anchor sharing availability.
+- [ar_world_anchor_sharing_availability_update_handler_t](ar_world_anchor_sharing_availability_update_handler_t.md)
+  Handler called when there is a change in world anchor sharing availability.
 - [ar_world_tracking_add_anchor_completion_handler_t](ar_world_tracking_add_anchor_completion_handler_t.md)
   A handler to call upon completion of a request to add a world anchor.
 - [ar_world_tracking_remove_anchor_completion_handler_t](ar_world_tracking_remove_anchor_completion_handler_t.md)
   A handler to call upon completion of a request to remove a world anchor.
+- [ar_world_tracking_remove_all_anchors_completion_handler_function_t](ar_world_tracking_remove_all_anchors_completion_handler_function_t.md)
+  Function called when a request to remove all known world anchors has completed (successfully or not).
+- [ar_world_tracking_remove_all_anchors_completion_handler_t](ar_world_tracking_remove_all_anchors_completion_handler_t.md)
+  Function called when a request to remove all known world anchors has completed (successfully or not).
 - [ar_world_tracking_anchor_update_handler_t](ar_world_tracking_anchor_update_handler_t.md)
   A handler for receiving updates to world anchors.
 - [ar_world_tracking_configuration_create](ar_world_tracking_configuration_create.md)
@@ -308,6 +329,16 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Removes a world anchor from a world tracking provider.
 - [ar_world_tracking_provider_remove_anchor_f](ar_world_tracking_provider_remove_anchor_f.md)
   Removes a world anchor from a world tracking provider.
+- [ar_world_tracking_provider_remove_all_anchors](ar_world_tracking_provider_remove_all_anchors.md)
+  Removes all known world anchors from the world tracking provider asynchronously.
+- [ar_world_tracking_provider_remove_all_anchors_f](ar_world_tracking_provider_remove_all_anchors_f.md)
+  Removes all known world anchors from the world tracking provider asynchronously.
+- [ar_world_tracking_provider_remove_anchor_with_identifier_f](ar_world_tracking_provider_remove_anchor_with_identifier_f.md)
+  Remove a world anchor from the world tracking provider using its identifier.
+- [ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler](ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler.md)
+  Set the handler for receiving world anchor sharing availability updates.
+- [ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler_f](ar_world_tracking_provider_set_world_anchor_sharing_availability_update_handler_f.md)
+  Set the function for receiving world anchor sharing availability updates
 - [ar_world_tracking_configuration_t](ar_world_tracking_configuration_t.md)
 - [ar_device_anchor_t](ar_device_anchor_t.md)
 - [ar_device_anchor_create](ar_device_anchor_create.md)
@@ -371,7 +402,6 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_scene_reconstruction_update_handler_t](ar_scene_reconstruction_update_handler_t.md)
   A handler for receiving updates to mesh anchors.
 - [ar_scene_reconstruction_update_handler_function_t](ar_scene_reconstruction_update_handler_function_t.md)
-- [scene_reconstruction_h](scene_reconstruction_h.md)
 ### Hand tracking
 - [ar_hand_chirality_t](ar_hand_chirality_t.md)
   The values identifying hand chirality.
@@ -379,6 +409,8 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
   Creates a hand anchor.
 - [ar_hand_anchor_get_chirality](ar_hand_anchor_get_chirality.md)
   Gets the value that indicates whether the hand is a left or right hand.
+- [ar_hand_anchor_get_fidelity](ar_hand_anchor_get_fidelity.md)
+  Get the fidelity of the hand anchor.
 - [ar_hand_tracking_configuration_t](ar_hand_tracking_configuration_t.md)
 - [ar_hand_tracking_provider_create](ar_hand_tracking_provider_create.md)
   A source of live data about the position of a person’s hands and hand joints.
@@ -429,6 +461,8 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_hand_tracking_update_handler_t](ar_hand_tracking_update_handler_t.md)
   A handler for receiving updates to hand anchors.
 - [ar_hand_tracking_update_handler_function_t](ar_hand_tracking_update_handler_function_t.md)
+- [ar_hand_fidelity_t](ar_hand_fidelity_t.md)
+  Enum for hand fidelity.
 ### Image tracking
 - [ar_image_anchor_get_estimated_scale_factor](ar_image_anchor_get_estimated_scale_factor.md)
   Gets the estimated scale factor between the tracked image’s physical size and the reference image’s size.
@@ -494,6 +528,301 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 - [ar_image_anchors_enumerator_function_t](ar_image_anchors_enumerator_function_t.md)
 - [ar_image_tracking_update_handler_function_t](ar_image_tracking_update_handler_function_t.md)
 - [ar_reference_images_enumerator_function_t](ar_reference_images_enumerator_function_t.md)
+### Accessory tracking
+- [ar_accessories_enumerator_function_t](ar_accessories_enumerator_function_t.md)
+  Function for enumerating a collection of accessories.
+- [ar_accessories_enumerator_t](ar_accessories_enumerator_t.md)
+  Handler for enumerating a collection of accessories.
+- [ar_accessories_t](ar_accessories_t.md)
+- [ar_accessory_anchor_t](ar_accessory_anchor_t.md)
+- [ar_accessory_anchors_enumerator_function_t](ar_accessory_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of accessory anchors.
+- [ar_accessory_anchors_enumerator_t](ar_accessory_anchors_enumerator_t.md)
+  Handler for enumerating a collection of accessory anchors.
+- [ar_accessory_anchors_t](ar_accessory_anchors_t.md)
+- [ar_accessory_device_load_completion_handler_function_t](ar_accessory_device_load_completion_handler_function_t.md)
+  Function triggered when a request to load an accessory from a `GCDevice` has completed.
+- [ar_accessory_device_load_completion_handler_t](ar_accessory_device_load_completion_handler_t.md)
+  Handler triggered when a request to load an accessory from a `GCDevice` has completed.
+- [ar_accessory_t](ar_accessory_t.md)
+- [ar_accessory_tracking_configuration_t](ar_accessory_tracking_configuration_t.md)
+- [ar_accessory_tracking_provider_t](ar_accessory_tracking_provider_t.md)
+- [ar_accessory_tracking_update_handler_function_t](ar_accessory_tracking_update_handler_function_t.md)
+  Function called when there are updates to accessory anchors.
+- [ar_accessory_tracking_update_handler_t](ar_accessory_tracking_update_handler_t.md)
+  Handler called when there are updates to accessory anchors.
+- [ar_accessory_location_name_aim](ar_accessory_location_name_aim.md)
+  Pre-defined accessory location name for spatial gamepad and stylus aim point.
+- [ar_accessory_location_name_grip](ar_accessory_location_name_grip.md)
+  Pre-defined accessory location name for spatial gamepad grip.
+- [ar_accessory_location_name_grip_surface](ar_accessory_location_name_grip_surface.md)
+  Pre-defined accessory location name for spatial gamepad grip surface.
+- [ar_accessories_add_accessories](ar_accessories_add_accessories.md)
+  Add accessories to a collection.
+- [ar_accessories_add_accessory](ar_accessories_add_accessory.md)
+  Add an accessory to a collection.
+- [ar_accessories_create](ar_accessories_create.md)
+  Create an empty collection of accessories.
+- [ar_accessories_enumerate_accessories](ar_accessories_enumerate_accessories.md)
+  Enumerate a collection of accessories.
+- [ar_accessories_enumerate_accessories_f](ar_accessories_enumerate_accessories_f.md)
+  Enumerate a collection of reference objects.
+- [ar_accessories_get_count](ar_accessories_get_count.md)
+  Get the count of accessories in the collection.
+- [ar_accessories_remove_accessory](ar_accessories_remove_accessory.md)
+  Remove an accessory from a collection.
+- [ar_accessories_remove_accessories](ar_accessories_remove_accessories.md)
+  Remove accessories from a collection.
+- [ar_accessory_anchor_create](ar_accessory_anchor_create.md)
+  Create an uninitialized accessory anchor.
+- [ar_accessory_anchor_get_accessory](ar_accessory_anchor_get_accessory.md)
+  Returns the accessory that is being tracked by the anchor.
+- [ar_accessory_anchor_get_anchor_from_location_transform_with_correction](ar_accessory_anchor_get_anchor_from_location_transform_with_correction.md)
+  Get the transform from an anchor to the coordinate system of a location on the accessory.
+- [ar_accessory_anchor_get_angular_velocity](ar_accessory_anchor_get_angular_velocity.md)
+  Get the estimated angular velocity of the accessory in the local coordinate system.
+- [ar_accessory_anchor_get_held_chirality](ar_accessory_anchor_get_held_chirality.md)
+  Get the held state of this accessory anchor.
+- [ar_accessory_anchor_get_identifier](ar_accessory_anchor_get_identifier.md)
+  Get the identifier of an anchor.
+- [ar_accessory_anchor_get_origin_from_anchor_transform](ar_accessory_anchor_get_origin_from_anchor_transform.md)
+  Get the transform from an anchor to the origin coordinate system.
+- [ar_accessory_anchor_get_origin_from_anchor_transform_with_correction](ar_accessory_anchor_get_origin_from_anchor_transform_with_correction.md)
+  Get the transform from an anchor to the origin coordinate system.
+- [ar_accessory_anchor_get_timestamp](ar_accessory_anchor_get_timestamp.md)
+  Get the timestamp corresponding to the accessory anchor.
+- [ar_accessory_anchor_get_tracking_state](ar_accessory_anchor_get_tracking_state.md)
+  Get the tracking state of the accessory anchor.
+- [ar_accessory_anchor_get_velocity](ar_accessory_anchor_get_velocity.md)
+  Get the estimated velocity of the accessory in the local coordinate system.
+- [ar_accessory_anchor_is_equal_to_accessory_anchor](ar_accessory_anchor_is_equal_to_accessory_anchor.md)
+  Returns a Boolean value that indicates whether the two accessory anchors are equal.
+- [ar_accessory_anchor_is_held](ar_accessory_anchor_is_held.md)
+  Returns a Boolean value that indicates whether the accessory is held.
+- [ar_accessory_anchor_is_tracked](ar_accessory_anchor_is_tracked.md)
+  Determine whether an accessory anchor is tracked.
+- [ar_accessory_anchors_enumerate_anchors](ar_accessory_anchors_enumerate_anchors.md)
+  Enumerate a collection of accessory anchors.
+- [ar_accessory_anchors_enumerate_anchors_f](ar_accessory_anchors_enumerate_anchors_f.md)
+  Enumerate a collection of acessory anchors.
+- [ar_accessory_anchors_get_count](ar_accessory_anchors_get_count.md)
+  Get the count of accessory anchors in the collection.
+- [ar_accessory_copy_location_names](ar_accessory_copy_location_names.md)
+  Gets the names of locations with pre-defined coordinate systems available for this accessory.
+- [ar_accessory_get_identifier](ar_accessory_get_identifier.md)
+  Get identifier for the accessory.
+- [ar_accessory_get_inherent_chirality](ar_accessory_get_inherent_chirality.md)
+  Get inherent chirality for the accessory (what hand it is designed to be held in).
+- [ar_accessory_get_name](ar_accessory_get_name.md)
+  Get an accessory’s name.
+- [ar_accessory_get_source_device](ar_accessory_get_source_device.md)
+  Gets the `GCDevice` that was used to initialize the accessory.
+- [ar_accessory_get_source_type](ar_accessory_get_source_type.md)
+  Gets type of source that was used to load an accessory.
+- [ar_accessory_get_usdz_file_path](ar_accessory_get_usdz_file_path.md)
+  Get path to a USDZ file for the accessory, if it has one.
+- [ar_accessory_is_equal_to_accessory](ar_accessory_is_equal_to_accessory.md)
+  Indicates whether two accessories are equal.
+- [ar_accessory_load_from_device](ar_accessory_load_from_device.md)
+  Load an accessory from a `GCDevice`.
+- [ar_accessory_load_from_device_f](ar_accessory_load_from_device_f.md)
+  Load an accessory from a `GCDevice`.
+- [ar_accessory_tracking_configuration_create](ar_accessory_tracking_configuration_create.md)
+  Create an accessory tracking configuration.
+- [ar_accessory_tracking_configuration_set_accessories](ar_accessory_tracking_configuration_set_accessories.md)
+  Set accessories to track for the configuration.
+- [ar_accessory_tracking_provider_create](ar_accessory_tracking_provider_create.md)
+  Create an accessory tracking provider.
+- [ar_accessory_tracking_provider_get_latest_anchors](ar_accessory_tracking_provider_get_latest_anchors.md)
+  Retrieves the latest anchors updated with the most recent inertial data.
+- [ar_accessory_tracking_provider_get_required_authorization_type](ar_accessory_tracking_provider_get_required_authorization_type.md)
+  Get the authorization type required by the accessory tracking provider.
+- [ar_accessory_tracking_provider_is_supported](ar_accessory_tracking_provider_is_supported.md)
+  Determines whether this device supports the accessory tracking provider.
+- [ar_accessory_tracking_provider_predict_anchor_at_timestamp](ar_accessory_tracking_provider_predict_anchor_at_timestamp.md)
+  Predict an accessory anchor to a target timestamp.
+- [ar_accessory_tracking_provider_set_update_handler](ar_accessory_tracking_provider_set_update_handler.md)
+  Set the handler for receiving accessory anchor updates.
+- [ar_accessory_tracking_provider_set_update_handler_f](ar_accessory_tracking_provider_set_update_handler_f.md)
+  Set the function for receiving accessory tracking updates.
+- [ar_accessory_anchor_tracking_state_t](ar_accessory_anchor_tracking_state_t.md)
+  Tracking status for accessory anchors.
+- [ar_accessory_chirality_t](ar_accessory_chirality_t.md)
+  The chirality of an accessory.
+- [ar_accessory_source_type_t](ar_accessory_source_type_t.md)
+  The type of input that was used to initialize an `ar_accessory_t`.
+- [ar_accessory_tracking_error_code_t](ar_accessory_tracking_error_code_t.md)
+  Error codes specific to accessory tracking.
+- [ar_transform_correction_t](ar_transform_correction_t.md)
+  A correction type to apply for transforms returned from ARKit APIs.
+### Camera sampling
+- [ar_camera_frame_sample_enumerator_function_t](ar_camera_frame_sample_enumerator_function_t.md)
+  Function for enumerating camera frame samples.
+- [ar_camera_frame_sample_enumerator_t](ar_camera_frame_sample_enumerator_t.md)
+  Handler for enumerating camera frame samples.
+- [ar_camera_frame_samples_t](ar_camera_frame_samples_t.md)
+- [ar_camera_frame_get_frame_samples](ar_camera_frame_get_frame_samples.md)
+  Get the collection of camera frame samples for this camera frame.
+- [ar_camera_frame_samples_enumerate_frame_samples](ar_camera_frame_samples_enumerate_frame_samples.md)
+  Enumerate all camera frame samples in this collection.
+- [ar_camera_frame_samples_enumerate_frame_samples_f](ar_camera_frame_samples_enumerate_frame_samples_f.md)
+  Enumerate all supported camera frame samples for this configuration using a function.
+- [ar_camera_frame_samples_get_count](ar_camera_frame_samples_get_count.md)
+  Get the count of camera frame samples in the collection.
+- [ar_camera_video_format_get_camera_rectification_type](ar_camera_video_format_get_camera_rectification_type.md)
+  Get the camera rectification type for this video format.
+- [ar_camera_rectification_type_t](ar_camera_rectification_type_t.md)
+  A value describing the type of rectification applied to a video format.
+### Camera region
+- [ar_camera_region_add_anchor_completion_handler_function_t](ar_camera_region_add_anchor_completion_handler_function_t.md)
+  Function called when a request to add a camera region anchor has completed (successfully or not).
+- [ar_camera_region_add_anchor_completion_handler_t](ar_camera_region_add_anchor_completion_handler_t.md)
+  Handler called when a request to add a camera region anchor has completed (successfully or not).
+- [ar_camera_region_anchor_t](ar_camera_region_anchor_t.md)
+- [ar_camera_region_anchor_update_handler_function_t](ar_camera_region_anchor_update_handler_function_t.md)
+  Function called when there are updates to a specific camera region anchor.
+- [ar_camera_region_anchor_update_handler_t](ar_camera_region_anchor_update_handler_t.md)
+  Handler called when there are updates to a specific camera region anchor.
+- [ar_camera_region_anchors_enumerator_function_t](ar_camera_region_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of camera region anchors.
+- [ar_camera_region_anchors_enumerator_t](ar_camera_region_anchors_enumerator_t.md)
+  Handler for enumerating a collection of camera region anchors.
+- [ar_camera_region_anchors_t](ar_camera_region_anchors_t.md)
+- [ar_camera_region_configuration_t](ar_camera_region_configuration_t.md)
+- [ar_camera_region_provider_t](ar_camera_region_provider_t.md)
+- [ar_camera_region_remove_anchor_completion_handler_function_t](ar_camera_region_remove_anchor_completion_handler_function_t.md)
+  Function called when a request to remove a camera region anchor has completed (successfully or not).
+- [ar_camera_region_remove_anchor_completion_handler_t](ar_camera_region_remove_anchor_completion_handler_t.md)
+  Handler called when a request to remove a camera region anchor has completed (successfully or not).
+- [ar_camera_region_remove_anchor_with_identifier_completion_handler_function_t](ar_camera_region_remove_anchor_with_identifier_completion_handler_function_t.md)
+  Function called when a request to remove a camera region anchor by its identifier has completed (successfully or not).
+- [ar_camera_region_remove_anchor_with_identifier_completion_handler_t](ar_camera_region_remove_anchor_with_identifier_completion_handler_t.md)
+  Handler called when a request to remove a camera region anchor by its identifier has completed (successfully or not).
+- [ar_camera_region_anchor_create_with_parameters](ar_camera_region_anchor_create_with_parameters.md)
+  Create a camera region anchor using a transform from the anchor to the origin coordinate system, a specified size, and a camera enhancement.
+- [ar_camera_region_anchor_get_camera_enhancement](ar_camera_region_anchor_get_camera_enhancement.md)
+  Get the camera enhancement type for a given anchor.
+- [ar_camera_region_anchor_get_height](ar_camera_region_anchor_get_height.md)
+  Get the height of a given anchor.
+- [ar_camera_region_anchor_get_identifier](ar_camera_region_anchor_get_identifier.md)
+  Get the identifier of an anchor.
+- [ar_camera_region_anchor_get_origin_from_anchor_transform](ar_camera_region_anchor_get_origin_from_anchor_transform.md)
+  Get the transform from an anchor to the origin coordinate system.
+- [ar_camera_region_anchor_get_pixel_buffer](ar_camera_region_anchor_get_pixel_buffer.md)
+  Get the `CVPixelBufferRef` for this anchor.
+- [ar_camera_region_anchor_get_timestamp](ar_camera_region_anchor_get_timestamp.md)
+  Get the timestamp corresponding to an anchor.
+- [ar_camera_region_anchor_get_width](ar_camera_region_anchor_get_width.md)
+  Get the width of a given anchor.
+- [ar_camera_region_anchor_is_equal_to_camera_region_anchor](ar_camera_region_anchor_is_equal_to_camera_region_anchor.md)
+  Returns a bool value that indicates whether the two camera region anchors are equal.
+- [ar_camera_region_anchors_enumerate_anchors](ar_camera_region_anchors_enumerate_anchors.md)
+  Enumerate a collection of camera region anchors.
+- [ar_camera_region_anchors_enumerate_anchors_f](ar_camera_region_anchors_enumerate_anchors_f.md)
+  Enumerate a collection of camera region anchors using a function.
+- [ar_camera_region_anchors_get_count](ar_camera_region_anchors_get_count.md)
+  Get the count of camera region anchors in a collection.
+- [ar_camera_region_configuration_create](ar_camera_region_configuration_create.md)
+  Create a camera region configuration.
+- [ar_camera_region_provider_add_camera_region_anchor](ar_camera_region_provider_add_camera_region_anchor.md)
+  Add a camera region anchor to a camera region provider.
+- [ar_camera_region_provider_add_camera_region_anchor_f](ar_camera_region_provider_add_camera_region_anchor_f.md)
+  Add a camera region anchor to an camera region provider using a function.
+- [ar_camera_region_provider_create](ar_camera_region_provider_create.md)
+  Create a camera region provider.
+- [ar_camera_region_provider_get_required_authorization_type](ar_camera_region_provider_get_required_authorization_type.md)
+  Get the authorization type required by the camera region provider.
+- [ar_camera_region_provider_is_supported](ar_camera_region_provider_is_supported.md)
+  Determine whether this device supports the camera region provider.
+- [ar_camera_region_provider_remove_camera_region_anchor](ar_camera_region_provider_remove_camera_region_anchor.md)
+  Remove a camera region anchor from a camera region provider.
+- [ar_camera_region_provider_remove_camera_region_anchor_f](ar_camera_region_provider_remove_camera_region_anchor_f.md)
+  Remove a camera region anchor from a camera region provider using a function.
+- [ar_camera_region_provider_remove_camera_region_anchor_with_identifier](ar_camera_region_provider_remove_camera_region_anchor_with_identifier.md)
+  Remove a camera region anchor from a camera region provider by its identifier.
+- [ar_camera_region_provider_remove_camera_region_anchor_with_identifier_f](ar_camera_region_provider_remove_camera_region_anchor_with_identifier_f.md)
+  Remove a camera region anchor from a camera region provider by its identifier using a function.
+- [ar_camera_region_provider_set_update_handler_for_anchor_with_identifier](ar_camera_region_provider_set_update_handler_for_anchor_with_identifier.md)
+  Set the handler for receiving camera region updates for a specific anchor identifier.
+- [ar_camera_region_provider_set_update_handler_for_anchor_with_identifier_f](ar_camera_region_provider_set_update_handler_for_anchor_with_identifier_f.md)
+  Set the function for receiving camera region updates for a specific anchor identifier.
+- [ar_camera_region_camera_enhancement_t](ar_camera_region_camera_enhancement_t.md)
+  Enum describing camera enhancement types.
+- [ar_camera_region_error_code_t](ar_camera_region_error_code_t.md)
+  Error codes specific to the camera region provider.
+### Coordinate spaces
+- [ar_coordinate_space_data_t](ar_coordinate_space_data_t.md)
+- [ar_coordinate_space_data_copy_cfdata](ar_coordinate_space_data_copy_cfdata.md)
+  Copy out a `CFDataRef` that archives the coordinate space data.
+- [ar_coordinate_space_data_copy_recipient_identifers](ar_coordinate_space_data_copy_recipient_identifers.md)
+  Copy the list of participant identifiers of the intended recipient for this data. Data should be broadcast if the list is empty.
+- [ar_coordinate_space_data_create_from_cfdata](ar_coordinate_space_data_create_from_cfdata.md)
+  Create and initialize an `ar_coordinate_space_data_t` from a `CFDataRef`.
+### Shared coordinate spaces
+- [ar_shared_coordinate_space_configuration_t](ar_shared_coordinate_space_configuration_t.md)
+- [ar_shared_coordinate_space_connected_participants_update_handler_function_t](ar_shared_coordinate_space_connected_participants_update_handler_function_t.md)
+  Function called when there are updates to shared coordinate space participant status.
+- [ar_shared_coordinate_space_connected_participants_update_handler_t](ar_shared_coordinate_space_connected_participants_update_handler_t.md)
+  Handler called when there is an update to shared coordinate space connected participants.
+- [ar_shared_coordinate_space_provider_t](ar_shared_coordinate_space_provider_t.md)
+- [ar_shared_coordinate_space_sharing_status_update_handler_function_t](ar_shared_coordinate_space_sharing_status_update_handler_function_t.md)
+  Function called when there is an update to shared coordinate space sharing status.
+- [ar_shared_coordinate_space_sharing_status_update_handler_t](ar_shared_coordinate_space_sharing_status_update_handler_t.md)
+  Handler called when there is an update to shared coordinate space sharing status.
+- [ar_shared_coordinate_provider_set_connected_participants_update_handler_f](ar_shared_coordinate_provider_set_connected_participants_update_handler_f.md)
+  Set the function for receiving shared coordinate space connected participants updates.
+- [ar_shared_coordinate_space_configuration_create](ar_shared_coordinate_space_configuration_create.md)
+  Create a shared coordinate space configuration.
+- [ar_shared_coordinate_space_provider_copy_next_coordinate_space_data](ar_shared_coordinate_space_provider_copy_next_coordinate_space_data.md)
+  Copy the next collaboration data.
+- [ar_shared_coordinate_space_provider_create](ar_shared_coordinate_space_provider_create.md)
+  Create a shared coordinate space provider.
+- [ar_shared_coordinate_space_provider_get_participant_identifier](ar_shared_coordinate_space_provider_get_participant_identifier.md)
+  Get the identifier used to identify the participant in the shared coordinate space.
+- [ar_shared_coordinate_space_provider_get_required_authorization_type](ar_shared_coordinate_space_provider_get_required_authorization_type.md)
+  Get the authorization type required by the shared coordinate space provider.
+- [ar_shared_coordinate_space_provider_is_supported](ar_shared_coordinate_space_provider_is_supported.md)
+  Determines whether this device supports the shared coordinate space provider.
+- [ar_shared_coordinate_space_provider_push_data](ar_shared_coordinate_space_provider_push_data.md)
+  Push data to shared coordinate space.
+- [ar_shared_coordinate_space_provider_set_connected_participants_update_handler](ar_shared_coordinate_space_provider_set_connected_participants_update_handler.md)
+  Set the handler for receiving shared coordinate space connected participants updates.
+- [ar_shared_coordinate_space_provider_set_sharing_status_update_handler](ar_shared_coordinate_space_provider_set_sharing_status_update_handler.md)
+  Set the handler for receiving sharing status updates.
+- [ar_shared_coordinate_space_provider_set_sharing_status_update_handler_f](ar_shared_coordinate_space_provider_set_sharing_status_update_handler_f.md)
+  Set the function for receiving sharing status updates.
+### Rendering
+- [ar_stereo_properties_configuration_t](ar_stereo_properties_configuration_t.md)
+- [ar_stereo_properties_provider_t](ar_stereo_properties_provider_t.md)
+- [ar_stereo_properties_configuration_create](ar_stereo_properties_configuration_create.md)
+  Create a stereo properties configuration object.
+- [ar_stereo_properties_provider_create](ar_stereo_properties_provider_create.md)
+  Create a stereo properties provider.
+- [ar_stereo_properties_provider_get_required_authorization_type](ar_stereo_properties_provider_get_required_authorization_type.md)
+  Get the authorization type required by the stereo properties provider.
+- [ar_stereo_properties_provider_get_viewpoint_properties](ar_stereo_properties_provider_get_viewpoint_properties.md)
+  Returns the latest viewpoint properties.
+- [ar_stereo_properties_provider_is_supported](ar_stereo_properties_provider_is_supported.md)
+  Determines whether this device supports the stereo properties provider.
+- [ar_viewpoint_properties_create](ar_viewpoint_properties_create.md)
+  Create an `ar_viewpoint_properties_t`.
+- [ar_viewpoint_properties_get_device_from_left_viewpoint_transform](ar_viewpoint_properties_get_device_from_left_viewpoint_transform.md)
+  Get the transformation matrix that converts from the left viewpoint to the device’s coordinate space.
+- [ar_viewpoint_properties_get_device_from_right_viewpoint_transform](ar_viewpoint_properties_get_device_from_right_viewpoint_transform.md)
+  Get the transformation matrix that converts from the right viewpoint to the device’s coordinate space.
+- [ar_viewpoint_properties_t](ar_viewpoint_properties_t.md)
+### Strings
+- [ar_strings_enumerator_function_t](ar_strings_enumerator_function_t.md)
+  Function for enumerating a collection of strings.
+- [ar_strings_enumerator_t](ar_strings_enumerator_t.md)
+  Handler for enumerating a collection of strings.
+- [ar_strings_t](ar_strings_t.md)
+- [ar_strings_enumerate_strings](ar_strings_enumerate_strings.md)
+  Enumerate a collection of strings.
+- [ar_strings_enumerate_strings_f](ar_strings_enumerate_strings_f.md)
+  Enumerate a collection of strings using a function.
+- [ar_strings_get_count](ar_strings_get_count.md)
+  Returns the number of strings in this collection.
 ### Objective-C compatibility
 - [ARKit Functions](arkit-functions.md)
 - [ARKit Data Types](arkit-data-types.md)
@@ -512,18 +841,6 @@ ARKit in visionOS includes a full C API for compatibility with C and Objective-C
 ### Protocols
 - [AR_EXTERN_C_BEGIN](ar_extern_c_begin.md)
 - [AR_EXTERN_C_END](ar_extern_c_end.md)
-- [ar_object_h](ar_object_h.md)
-- [authorization_h](authorization_h.md)
-- [barcode_detection_h](barcode_detection_h.md)
-- [data_h](data_h.md)
-- [data_provider_h](data_provider_h.md)
-- [environment_light_estimation_h](environment_light_estimation_h.md)
-- [error_h](error_h.md)
-- [hand_skeleton_h](hand_skeleton_h.md)
-- [hand_tracking_h](hand_tracking_h.md)
-- [image_tracking_h](image_tracking_h.md)
-- [session_h](session_h.md)
-- [skeleton_joint_h](skeleton_joint_h.md)
 
 ## See Also
 

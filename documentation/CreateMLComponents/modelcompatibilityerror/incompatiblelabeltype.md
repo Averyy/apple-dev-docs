@@ -44,8 +44,6 @@ case incompatibleLabelType
   An error that indicates that the output is missing from the model.
 - [ModelCompatibilityError.missingPredictedFeature](modelcompatibilityerror/missingpredictedfeature.md)
   An error that indicates that the regressor model output is missing.
-- [var errorDescription: String?](modelcompatibilityerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

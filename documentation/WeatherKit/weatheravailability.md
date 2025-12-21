@@ -33,10 +33,6 @@ struct WeatherAvailability
   The minute forecast availability.
 - [WeatherAvailability.AvailabilityKind](weatheravailability/availabilitykind.md)
   The availability kind.
-### Default Implementations
-- [Decodable Implementations](weatheravailability/decodable-implementations.md)
-- [Encodable Implementations](weatheravailability/encodable-implementations.md)
-- [Equatable Implementations](weatheravailability/equatable-implementations.md)
 
 ## Relationships
 

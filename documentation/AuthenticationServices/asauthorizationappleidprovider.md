@@ -83,7 +83,7 @@ provider.getCredentialState(forUserID: user) { state, error in
 - [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
-  The view that creates the Sign in with Apple button for display.
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)

@@ -26,10 +26,11 @@ var isEmpty: Bool { get }
 
 #### Discussion
 
-At the start of the body of a `withTaskGroup(of:returning:body:)` call, the task group is always empty. It`s guaranteed to be empty when returning from that body because a task group waits for all child tasks to complete before returning.
+At the start of the body of a `withTaskGroup(of:returning:body:)` call, the task group is always empty. It’s guaranteed to be empty when returning from that body because a task group waits for all child tasks to complete before returning.
 
 ## See Also
 
+- [func next() async -> ChildTaskResult?](taskgroup/next.md)
 - [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
   Waits for the next child task to complete, and returns the value it returned.
 - [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)

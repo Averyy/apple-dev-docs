@@ -17,7 +17,7 @@ func runModal(forDirectory path: String!, file name: String!) -> Int
 
 #### Discussion
 
-This method returns a result code from the doc://com.apple.documentation/documentation/appkit/nssavepanel/1539053-runmodalfordirectory method of the [`NSSavePanel`](https://developer.apple.com/documentation/AppKit/NSSavePanel) class: [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) if the user clicks the OK button or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton) if the user clicks the Cancel button.
+This method returns a result code from the [`runModalForDirectory:file:types:`](https://developer.apple.com/documentation/AppKit/NSOpenPanel/runModalForDirectory:file:types:) method of the [`NSSavePanel`](https://developer.apple.com/documentation/AppKit/NSSavePanel) class: [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) if the user clicks the OK button or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton) if the user clicks the Cancel button.
 
 Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the keychain created by the user.
 

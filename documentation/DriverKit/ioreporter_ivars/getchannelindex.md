@@ -21,6 +21,8 @@ Appropriate IOReturn code
 
 #### Discussion
 
+Returns the index of a channel from internal data structures
+
 For efficiently and thread-safely reading channels
 
 Locking: Caller must ensure that the reporter (data) lock is held.

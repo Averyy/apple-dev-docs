@@ -21,13 +21,13 @@ class MTLArgument
 
 #### Overview
 
-A [`MTLArgument`](mtlargument.md) object describes a single argument to a Metal function. Your app uses the [`MTLArgument`](mtlargument.md) properties to read details about a function argument as it was defined in the Metal Shading Language. You can determine the argument’s data type, access restrictions, and its associated resource type. For buffer, texture, and threadgroup memory arguments, additional properties can be read to determine more details about the argument.
+An [`MTLArgument`](mtlargument.md) instance describes a single argument to a Metal function. Your app uses the [`MTLArgument`](mtlargument.md) properties to read details about a function argument as it was defined in the Metal Shading Language. You can determine the argument’s data type, access restrictions, and its associated resource type. For buffer, texture, and threadgroup memory arguments, additional properties can be read to determine more details about the argument.
 
-Your app does not create a [`MTLArgument`](mtlargument.md) object directly. Creating a [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) or [`MTLComputePipelineState`](mtlcomputepipelinestate.md) object can generate a reflection object ([`MTLRenderPipelineReflection`](mtlrenderpipelinereflection.md) or [`MTLComputePipelineReflection`](mtlcomputepipelinereflection.md)) that contains [`MTLArgument`](mtlargument.md) objects.
+Your app does not create an [`MTLArgument`](mtlargument.md) instance directly. Creating an [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) or [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance can generate a reflection instance ([`MTLRenderPipelineReflection`](mtlrenderpipelinereflection.md) or [`MTLComputePipelineReflection`](mtlcomputepipelinereflection.md)) that contains [`MTLArgument`](mtlargument.md) instances.
 
 ## Topics
 
-### Describing the Argument
+### Describing the argument
 - [var name: String](mtlargument/name.md)
   The name of the argument.
 - [var isActive: Bool](mtlargument/isactive.md)
@@ -38,7 +38,7 @@ Your app does not create a [`MTLArgument`](mtlargument.md) object directly. Crea
   The argument’s resource type.
 - [var access: MTLBindingAccess](mtlargument/access.md)
   The argument’s read and/or write access.
-### Describing a Buffer Argument
+### Describing a buffer argument
 - [var bufferAlignment: Int](mtlargument/bufferalignment.md)
   The required byte alignment in memory for the buffer data.
 - [var bufferDataSize: Int](mtlargument/bufferdatasize.md)
@@ -49,17 +49,17 @@ Your app does not create a [`MTLArgument`](mtlargument.md) object directly. Crea
   A description of the structure data of a buffer argument.
 - [var bufferPointerType: MTLPointerType?](mtlargument/bufferpointertype.md)
   A description of the pointer to a buffer argument.
-### Describing a Texture Argument
+### Describing a texture argument
 - [var textureDataType: MTLDataType](mtlargument/texturedatatype.md)
   The data type of a texture argument.
 - [var textureType: MTLTextureType](mtlargument/texturetype.md)
   The texture type of a texture argument.
 - [var isDepthTexture: Bool](mtlargument/isdepthtexture.md)
   A Boolean value that indicates whether the texture is a depth texture.
-### Describing an Array Argument
+### Describing an array argument
 - [var arrayLength: Int](mtlargument/arraylength.md)
   The number of elements, if the argument is an array.
-### Describing a Threadgroup Memory Argument
+### Describing a threadgroup memory argument
 - [var threadgroupMemoryAlignment: Int](mtlargument/threadgroupmemoryalignment.md)
   The required byte alignment in memory for the threadgroup data.
 - [var threadgroupMemoryDataSize: Int](mtlargument/threadgroupmemorydatasize.md)
@@ -84,7 +84,7 @@ Your app does not create a [`MTLArgument`](mtlargument.md) object directly. Crea
 - [class MTLAttribute](mtlattribute.md)
   An object that describes an attribute defined in the stage-in argument for a shader.
 - [class MTLVertexAttribute](mtlvertexattribute.md)
-  An object that represents an attribute of a vertex function.
+  An instance that represents an attribute of a vertex function.
 - [typealias MTLAutoreleasedArgument](mtlautoreleasedargument.md)
   A convenience type alias for an autoreleased argument instance.
 - [enum MTLArgumentType](mtlargumenttype.md)

@@ -20,6 +20,8 @@ typealias Pixel_ARGB_16F = (UInt16, UInt16, UInt16, UInt16)
 
 #### Discussion
 
+A four-channel, 16-bit floating-point per channel pixel.
+
 The channel order is generally given by the function that consumes the value.
 
 ## See Also

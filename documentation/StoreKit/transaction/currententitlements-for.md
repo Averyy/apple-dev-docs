@@ -35,8 +35,10 @@ If an ID for a regular IAP is provided, the returned sequence will contain no mo
 
 ## See Also
 
-- [static func all(for: String) -> Transaction.Transactions](transaction/all(for:).md)
-  Gets all the transactions associated with this product ID.
+- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](transaction/currententitlement(for:).md)
+  Gets the latest transactions that entitle the customer to a specified product.
+- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
+  The string representation of the offer period applied to the subscription offer for this transaction.
 
 
 ---

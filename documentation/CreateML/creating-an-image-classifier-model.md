@@ -107,7 +107,7 @@ When you’re satisfied with the model’s performance, save it to the file syst
 
 ##### Add the Model to Your App
 
-The last step is to add your trained model to an Xcode project. For example, your image classifier model can replace the model in the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/model_integration_samples/classifying_images_with_vision_and_core_ml) sample.
+The last step is to add your trained model to an Xcode project. For example, your image classifier model can replace the model in the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml) sample.
 
 Download the sample and open the project in Xcode. Drag your model file into the navigation pane. Xcode adds the model to your project and shows you the model’s metadata, operating system availability, class labels, and so on.
 

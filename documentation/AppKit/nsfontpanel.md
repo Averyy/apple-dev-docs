@@ -25,7 +25,7 @@ Actual changes to the font panel are made through conversion messages sent to th
 - [class var shared: NSFontPanel](nsfontpanel/shared.md)
   Returns the single `NSFontPanel` instance for the application, creating it if necessary.
 - [class var sharedFontPanelExists: Bool](nsfontpanel/sharedfontpanelexists.md)
-  Returns [`true`](https://developer.apple.com/documentation/swift/true) if the shared Font panel has been created, [`false`](https://developer.apple.com/documentation/swift/false) if it hasn’t.
+  A Boolean value that indicates whether the shared Font panel has been created.
 ### Enabling Font Changes
 - [var isEnabled: Bool](nsfontpanel/isenabled.md)
   A Boolean that shows whether the receiver’s Set button is enabled.

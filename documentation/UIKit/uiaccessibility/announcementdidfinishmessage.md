@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ struct AnnouncementDidFinishMessage
 ### Instance Properties
 - [var announcement: String](uiaccessibility/announcementdidfinishmessage/announcement.md)
 - [var wasSuccessful: Bool](uiaccessibility/announcementdidfinishmessage/wassuccessful.md)
-### Type Methods
-- [static func makeNotification(UIAccessibility.AnnouncementDidFinishMessage) -> Notification](uiaccessibility/announcementdidfinishmessage/makenotification(_:).md)
 
 ## Relationships
 

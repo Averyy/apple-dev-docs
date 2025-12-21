@@ -20,9 +20,7 @@ func sec_protocol_options_set_max_tls_protocol_version(_ options: sec_protocol_o
 
 #### Discussion
 
-```None
- Set the maximum support TLS version.
-```
+Set the maximum support TLS version.
 
 ## Parameters
 

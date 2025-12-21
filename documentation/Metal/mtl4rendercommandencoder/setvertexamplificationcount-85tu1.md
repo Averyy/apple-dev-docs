@@ -6,12 +6,12 @@
 Sets the vertex amplification count and its view mapping for each amplification ID.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,6 +26,11 @@ Each view mapping element describes how to route the corresponding amplification
 ## Parameters
 
 - `count`: The number of outputs to create. The maximum value is  .
+
+## See Also
+
+- [func setVertexAmplificationCount([MTLVertexAmplificationViewMapping])](mtl4rendercommandencoder/setvertexamplificationcount(_:)-911ja.md)
+  Sets the vertex amplification count and its view mapping for each amplification ID.
 
 
 ---

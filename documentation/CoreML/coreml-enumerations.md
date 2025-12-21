@@ -7,6 +7,8 @@
 ### Enumerations
 - [enum MLModelStructure](mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
+- [enum MLShapedArrayBufferLayout](mlshapedarraybufferlayout.md)
+  Buffer layout enum
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The coordinates of the left eye, in image coordinates.
+The image coordinate of the center of the left eye.
 
 **Availability**:
 - iOS 5.0+
@@ -19,6 +19,10 @@ The coordinates of the left eye, in image coordinates.
 var leftEyePosition: CGPoint { get }
 ```
 
+#### Discussion
+
+> **Note**: The left eye is on the left side of the face from the observer’s perspective. It is not the left eye from the subject’s perspective.
+
 ## See Also
 
 - [var hasLeftEyePosition: Bool](cifacefeature/haslefteyeposition-swift.property.md)
@@ -28,9 +32,9 @@ var leftEyePosition: CGPoint { get }
 - [var hasMouthPosition: Bool](cifacefeature/hasmouthposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s mouth.
 - [var rightEyePosition: CGPoint](cifacefeature/righteyeposition-swift.property.md)
-  The coordinates of the right eye, in image coordinates
+  The image coordinate of the center of the right eye.
 - [var mouthPosition: CGPoint](cifacefeature/mouthposition-swift.property.md)
-  The coordinates of the mouth, in image coordinates
+  The image coordinate of the center of the mouth.
 - [var hasSmile: Bool](cifacefeature/hassmile-swift.property.md)
   A Boolean value that indicates whether a smile is detected in the face.
 - [var leftEyeClosed: Bool](cifacefeature/lefteyeclosed-swift.property.md)

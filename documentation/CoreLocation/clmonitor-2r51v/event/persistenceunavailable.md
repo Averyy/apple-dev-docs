@@ -19,7 +19,7 @@ var persistenceUnavailable: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then location updates are suspended because the app has a persistence failure.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then location updates are suspended because the app has a persistence failure.
 
 ## See Also
 

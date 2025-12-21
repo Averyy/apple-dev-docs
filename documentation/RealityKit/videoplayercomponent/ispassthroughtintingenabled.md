@@ -15,6 +15,11 @@ A Boolean value that indicates whether the passthrough camera feed is tinted, em
 var isPassthroughTintingEnabled: Bool { get set }
 ```
 
+## See Also
+
+- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode.md)
+  The viewer’s selected content-viewing mode.
+
 
 ---
 

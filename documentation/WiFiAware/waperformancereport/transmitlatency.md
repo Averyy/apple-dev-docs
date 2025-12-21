@@ -6,8 +6,8 @@
 The measured transmit latency per access category that is in use with the remote devices and that the system can measure.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

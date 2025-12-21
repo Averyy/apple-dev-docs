@@ -26,7 +26,7 @@ The delegate of an [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) obj
 
 ## Topics
 
-### Managing Sample Buffer Behavior
+### Managing sample buffer behavior
 - [func captureOutput(AVCaptureOutput, didOutput: CMSampleBuffer, from: AVCaptureConnection)](avcaptureaudiodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md)
   Notifies the delegate that a sample buffer was written.
 

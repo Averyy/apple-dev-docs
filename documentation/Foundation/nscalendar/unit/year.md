@@ -34,14 +34,7 @@ The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitYear`.
   Identifier for the quarter of the calendar.
 - [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
   Identifier for the month unit.
-- [static var era: NSCalendar.Unit](nscalendar/unit/era.md)
-  Identifier for the era unit.
-- [static var yearForWeekOfYear: NSCalendar.Unit](nscalendar/unit/yearforweekofyear.md)
-  Identifier for the week-counting year unit.
-- [static var quarter: NSCalendar.Unit](nscalendar/unit/quarter.md)
-  Identifier for the quarter of the calendar.
-- [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
-  Identifier for the month unit.
+- [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
 
 
 ---

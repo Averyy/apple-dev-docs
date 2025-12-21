@@ -10,7 +10,7 @@ Copies texture data to another texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -75,8 +75,6 @@ bytes.withUnsafeMutableBytes { bytesPtr in
 
 ## See Also
 
-- [func copy(to: any MTLTexture) async throws](textureresource/copy(to:)-3lfen.md)
-  Asynchronously copies texture data to another texture.
 - [func copyAsync(to: any MTLTexture, completionHandler: ((any Error)?) -> Void)](textureresource/copyasync(to:completionhandler:).md)
   Asynchronously copies texture data to another texture.
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns the count of integers in `self` that intersect `range`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

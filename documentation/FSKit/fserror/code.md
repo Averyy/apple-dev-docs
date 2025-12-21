@@ -33,9 +33,6 @@ enum Code
   An operation is paused.
 ### Working with raw values
 - [init?(rawValue: Int)](fserror/code/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fserror/code/equatable-implementations.md)
-- [RawRepresentable Implementations](fserror/code/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -36,7 +36,7 @@ This property’s value is set when the object is first initialized, whether by 
 - [var addresses: [Data]?](netservice/addresses.md)
   A read-only array containing `NSData` objects, each of which contains a socket address for the service.
 - [var includesPeerToPeer: Bool](netservice/includespeertopeer.md)
-  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available.
 - [func getInputStream(UnsafeMutablePointer<InputStream?>?, outputStream: UnsafeMutablePointer<OutputStream?>?) -> Bool](netservice/getinputstream(_:outputstream:).md)
   Creates a pair of input and output streams for the receiver and returns a Boolean value that indicates whether they were retrieved successfully.
 - [var name: String](netservice/name.md)

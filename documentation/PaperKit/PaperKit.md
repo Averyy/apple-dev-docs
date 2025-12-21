@@ -5,6 +5,12 @@
 
 Add drawings, shapes, and a consistent markup experience to your app.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+
 #### Overview
 
 PaperKit builds on top of [`PencilKit`](https://developer.apple.com/documentation/PencilKit) and [`PDFKit`](https://developer.apple.com/documentation/PDFKit) to provide a consistent way to add drawing and shapes in your app.

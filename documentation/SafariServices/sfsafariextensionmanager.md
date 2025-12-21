@@ -3,10 +3,14 @@
 **Framework**: Safari Services  
 **Kind**: class
 
-A class that your app uses to find out the current state of a Safari app extension.
+A class that your app uses to find out the current state of a Safari extension.
 
 **Availability**:
+- iOS 26.2+
+- iPadOS 26.2+
+- Mac Catalyst 26.2+
 - macOS 10.12+
+- visionOS 26.2+
 
 ## Declaration
 
@@ -14,11 +18,17 @@ A class that your app uses to find out the current state of a Safari app extensi
 class SFSafariExtensionManager
 ```
 
+#### Overview
+
+In macOS, use this class to find out the current state of either a Safari app extension or Safari web extension. In iOS and visionOS, use this class to find out the current state of a Safari web extension.
+
 ## Topics
 
-### Checking on the State of an App Extension
+### Checking on the state of an extension
 - [class func getStateOfSafariExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofsafariextension(withidentifier:completionhandler:).md)
-  Gets the current state of the Safari app extension.
+  Returns the current state of a Safari extension.
+- [class func getStateOfExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofextension(withidentifier:completionhandler:).md)
+  Returns the current state of a Safari web extension.
 
 ## Relationships
 
@@ -31,6 +41,8 @@ class SFSafariExtensionManager
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -45,7 +57,7 @@ class SFSafariExtensionManager
 - [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
 - [class SFSafariExtensionState](sfsafariextensionstate.md)
-  The state of a Safari app extension.
+  The state of a Safari extension.
 - [class SFSafariPageProperties](sfsafaripageproperties.md)
   An object that captures information about a webpage.
 - [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)

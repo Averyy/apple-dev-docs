@@ -50,6 +50,8 @@ If the next child task throws an error and you propagate that error from this me
 ## See Also
 
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+  Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 - [var isEmpty: Bool](throwingtaskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 - [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)

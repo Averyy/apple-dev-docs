@@ -16,7 +16,7 @@ Initializes an index path with the indexes of a specific item and section in a c
 ## Declaration
 
 ```swift
-convenience init(item: Int, section: Int)
+init(forItem item: Int, inSection section: Int)
 ```
 
 #### Return Value

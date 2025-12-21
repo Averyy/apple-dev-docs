@@ -29,8 +29,10 @@ struct Script
 - [var identifier: String](locale/script/identifier.md)
 ### Using defined scripts
 - [static let unknown: Locale.Script](locale/script/unknown.md)
+  Represents an uncoded script
 ### Instance Properties
 - [var isISOScript: Bool](locale/script/isisoscript.md)
+  Returns if the script is an ISO 15924 script
 ### Type Properties
 - [static var adlam: Locale.Script](locale/script/adlam.md)
 - [static var arabic: Locale.Script](locale/script/arabic.md)

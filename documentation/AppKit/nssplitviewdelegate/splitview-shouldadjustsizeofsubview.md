@@ -17,7 +17,7 @@ optional func splitView(_ splitView: NSSplitView, shouldAdjustSizeOfSubview view
 
 #### Return Value
 
-If [`adjustSubviews()`](nssplitview/adjustsubviews().md) can change the size of the subview, [`true`](https://developer.apple.com/documentation/swift/true); otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By returning [`false`](https://developer.apple.com/documentation/swift/false), you lock the size of the split view `subview` while the split view resizes.
+If [`adjustSubviews()`](nssplitview/adjustsubviews().md) can change the size of the subview, [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By returning [`false`](https://developer.apple.com/documentation/Swift/false), you lock the size of the split view `subview` while the split view resizes.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ If [`adjustSubviews()`](nssplitview/adjustsubviews().md) can change the size of 
 
 Regardless of the value that this method returns, [`adjustSubviews()`](nssplitview/adjustsubviews().md) may change the origin of the subview. Nonresizable subviews may resize to prevent an invalid subview layout.
 
-If a split view has no delegate, or if its delegate doesn’t respond to this message, the split view behaves as if this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+If a split view has no delegate, or if its delegate doesn’t respond to this message, the split view behaves as if this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

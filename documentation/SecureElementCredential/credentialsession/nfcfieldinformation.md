@@ -22,17 +22,6 @@ enum NFCFieldInformation
   No NFC reader RF field is present.
 - [CredentialSession.NFCFieldInformation.fieldPresent](credentialsession/nfcfieldinformation/fieldpresent.md)
   An NFC reader’s RF field is present.
-### Operators
-- [static func == (CredentialSession.NFCFieldInformation, CredentialSession.NFCFieldInformation) -> Bool](credentialsession/nfcfieldinformation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](credentialsession/nfcfieldinformation/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](credentialsession/nfcfieldinformation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](credentialsession/nfcfieldinformation/equatable-implementations.md)
 
 ## Relationships
 

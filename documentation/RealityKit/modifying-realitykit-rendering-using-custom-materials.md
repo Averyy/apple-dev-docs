@@ -196,7 +196,7 @@ You can download RealityKit’s custom shader Metal API documentation from [`the
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
-  Create dynamic materials without Metal.
+  A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

@@ -5,11 +5,6 @@
 
 An instance of `ALAssetsLibrary` provides access to the videos and photos that are under the control of the Photos application.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -46,7 +41,6 @@ Many of the methods declared by `ALAssetsLibrary` take blocks for failure and su
 ### Enumerating Assets
 - [func enumerateGroups(withTypes: ALAssetsGroupType, using: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroups(withtypes:using:failureblock:).md)
   Invokes a given block passing as a parameter each of the asset groups that match the given asset group type.
-- [func enumerateGroupsWithTypes(UInt32, usingBlock: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroupswithtypes(_:usingblock:failureblock:).md)
 ### Saving Assets
 - [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
   Saves a video identified by a given URL to the Saved Photos album.

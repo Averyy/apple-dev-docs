@@ -15,7 +15,7 @@ Creates an ink tool object with the default line width and the specified color.
 ## Declaration
 
 ```swift
-convenience init(inkType type: __PKInkType, color: UIColor)
+convenience init(inkType type: __PKInkType, color: NSColor)
 ```
 
 #### Return Value

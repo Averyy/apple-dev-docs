@@ -21,9 +21,9 @@ var automaticallyUpdatesBackgroundConfiguration: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the cell automatically calls `updated(for:)` on its [`backgroundConfiguration`](uitableviewcell/backgroundconfiguration-24e8e.md) when the cell’s [`configurationState`](uitableviewcell/configurationstate-4xwj0.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the cell automatically calls `updated(for:)` on its [`backgroundConfiguration`](uitableviewcell/backgroundconfiguration-24e8e.md) when the cell’s [`configurationState`](uitableviewcell/configurationstate-4xwj0.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If you override [`updateConfiguration(using:)`](uitableviewcell/updateconfiguration(using:).md) to manually update and customize the background configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you override [`updateConfiguration(using:)`](uitableviewcell/updateconfiguration(using:).md) to manually update and customize the background configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

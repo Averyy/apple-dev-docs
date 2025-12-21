@@ -8,7 +8,6 @@ A request that produces a mask of individual people it finds in the input image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,13 +27,6 @@ The request returns the resulting image mask in an instance of [`InstanceMaskObs
 ### Creating a request
 - [init(GeneratePersonInstanceMaskRequest.Revision?)](generatepersoninstancemaskrequest/init(_:).md)
   Creates a person instance mask request.
-### Getting the revision
-- [let revision: GeneratePersonInstanceMaskRequest.Revision](generatepersoninstancemaskrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [GeneratePersonInstanceMaskRequest.Revision]](generatepersoninstancemaskrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [GeneratePersonInstanceMaskRequest.Revision](generatepersoninstancemaskrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -48,8 +40,16 @@ The request returns the resulting image mask in an instance of [`InstanceMaskObs
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct InstanceMaskObservation](instancemaskobservation.md)
   An observation that contains an instance mask that labels instances in the mask.
+### Getting the revision
+- [let revision: GeneratePersonInstanceMaskRequest.Revision](generatepersoninstancemaskrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [GeneratePersonInstanceMaskRequest.Revision]](generatepersoninstancemaskrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [GeneratePersonInstanceMaskRequest.Revision](generatepersoninstancemaskrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -64,12 +64,10 @@ The request returns the resulting image mask in an instance of [`InstanceMaskObs
 
 ## See Also
 
+- [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
+  A request that generates an instance mask of noticeable objects to separate from the background.
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
-- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
-  A request that detects rectangular regions that contain text in the input image.
-- [protocol StatefulRequest](statefulrequest.md)
-  The protocol for a type that builds evidence of a condition over time.
 
 
 ---

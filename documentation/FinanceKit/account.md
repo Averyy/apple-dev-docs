@@ -21,17 +21,11 @@ Accounts can include a variety of financial account types such as a bank account
 
 ## Topics
 
-### Operators
-- [static func == (Account, Account) -> Bool](account/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
+### Enumeration Casess
 - [case asset(AssetAccount)](account/asset(_:).md)
   An asset account.
 - [case liability(LiabilityAccount)](account/liability(_:).md)
   A liability account.
-### Initializers
-- [init(from: any Decoder) throws](account/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var accountDescription: String?](account/accountdescription.md)
   A person’s description of this account.
@@ -41,7 +35,7 @@ Accounts can include a variety of financial account types such as a bank account
   The ISO 4217 currency code that identifies the currency that denominates the account.
 - [var displayName: String](account/displayname.md)
   The name for this account that a person provided.
-- [var id: UUID](account/id-swift.property.md)
+- [var id: UUID](account/id.md)
   The unique account ID for this account.
 - [var institutionName: String](account/institutionname.md)
   The name of the institution that holds this account.
@@ -49,14 +43,6 @@ Accounts can include a variety of financial account types such as a bank account
   A liability account.
 - [var openingDate: Date?](account/openingdate.md)
   The date the account was opened, if known.
-### Instance Methods
-- [func encode(to: any Encoder) throws](account/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [typealias ID](account/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](account/equatable-implementations.md)
 
 ## Relationships
 

@@ -16,8 +16,15 @@ A platform-specific type that indicates the kind of user interface element to us
 ## Declaration
 
 ```swift
-typealias ASPresentationAnchor = UIWindow
+typealias ASPresentationAnchor = NSWindow
 ```
+
+## See Also
+
+- [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-56ki6.md)
+  Creates an export manager, anchored by the given AppKit window.
+- [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-904gt.md)
+  Creates an export manager, anchored by the given UIKit window.
 
 
 ---

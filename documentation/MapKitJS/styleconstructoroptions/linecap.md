@@ -11,7 +11,7 @@ The style to use when drawing line endings.
 ## Declaration
 
 ```swift
-attribute string lineCap;
+lineCap?: CanvasLineCap;
 ```
 
 #### Discussion

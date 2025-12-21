@@ -5,15 +5,6 @@
 
 The type of a public owner.
 
-**Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-
 ## Declaration
 
 ```swift

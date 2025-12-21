@@ -22,7 +22,7 @@ static let boundingBoxOnly: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that hit-testing searches should test against node geometry. Specifying [`true`](https://developer.apple.com/documentation/swift/true) for this option increases search performance at the expense of geometric accuracy.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that hit-testing searches should test against node geometry. Specifying [`true`](https://developer.apple.com/documentation/Swift/true) for this option increases search performance at the expense of geometric accuracy.
 
 ## See Also
 

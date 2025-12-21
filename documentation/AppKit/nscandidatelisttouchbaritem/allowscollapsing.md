@@ -17,9 +17,9 @@ var allowsCollapsing: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the candidate list item can be collapsed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+When [`true`](https://developer.apple.com/documentation/Swift/true), the candidate list item can be collapsed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

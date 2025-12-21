@@ -9,7 +9,6 @@ Performs the request on a Core Media buffer and produces observations.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -41,8 +40,6 @@ The observation — or list of observations — the request produces.
   Performs the request on a pixel buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
-- [struct ImageAestheticsScoresObservation](imageaestheticsscoresobservation.md)
-  An observation that provides an overall score of aesthetic attributes for an image.
 
 
 ---

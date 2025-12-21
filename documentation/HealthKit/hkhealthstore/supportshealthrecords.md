@@ -20,7 +20,7 @@ func supportsHealthRecords() -> Bool
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the device is set to a locale where clinical records are supported, or if the user already has clinical records downloaded to their HealthKit store. Otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the device is set to a locale where clinical records are supported, or if the user already has clinical records downloaded to their HealthKit store. Otherwise, it returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This method lets users switch their locale without losing their health records.
 

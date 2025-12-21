@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func setQuaternion(_ quaternion: simd_quatf)
 ```
 

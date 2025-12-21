@@ -16,7 +16,7 @@ optional func webView(_ webView: WebView!, shouldBeginEditingIn range: DOMRange!
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user is allowed to edit `webView`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user is allowed to edit `webView`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

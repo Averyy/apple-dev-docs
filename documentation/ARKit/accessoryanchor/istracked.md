@@ -6,7 +6,7 @@
 Whether this anchor is currently tracked or not.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

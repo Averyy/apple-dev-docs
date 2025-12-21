@@ -6,7 +6,7 @@
 Sets the window anchor point used when the size of the view changes such that the window must resize.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -55,13 +55,15 @@ struct HeightResizingExample: View {
 }
 ```
 
-The default anchor varies by scene type and is used when `anchor` is nil. Generally, it defaults to `.topLeading`.
+The default anchor varies by scene type and is used when `anchor` is nil. Generally, it resolves to the `.topLeading` corner.
 
 > **Note**: Animated window resizes are only supported in SwiftUI app-lifecycle apps. However, the anchor point is respected in all cases.
 
+> **Note**: When animating windows on macOS, it can be helpful to explicitly specify `.topLeading` to avoid pixel cracking between the hosting view and the hosting window.
+
 ## Parameters
 
-- `anchor`: The window point fixed under programmtic size   changes caused by the content size of the window changing.   Defaults to a system defined value when  .
+- `anchor`: The window point fixed under programmatic size   changes caused by the content size of the window changing.   Defaults to a system defined value when  .
 
 
 ---

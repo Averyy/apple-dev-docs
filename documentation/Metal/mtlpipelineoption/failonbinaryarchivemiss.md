@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An option that specifies that Metal only creates the pipeline state object if the compiled shader is present inside a linked binary archive.
+An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 
 **Availability**:
 - iOS 14.0+
@@ -21,11 +21,11 @@ static var failOnBinaryArchiveMiss: MTLPipelineOption { get }
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 #### Discussion
 
-When this value is `true` and a compiled shader isn’t available, Metal produces an error rather than attempting to recompile on-demand on the GPU.
+By default, Metal compiles the functions for a pipeline state if they aren’t in a binary archive. When you set this option, Metal returns an error instead of compiling a missing function.
 
 ## See Also
 

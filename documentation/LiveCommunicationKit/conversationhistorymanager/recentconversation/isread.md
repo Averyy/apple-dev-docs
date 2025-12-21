@@ -6,8 +6,8 @@
 A value that indicates whether a person marked the recent conversation as read.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -22,16 +22,16 @@ let isRead: Bool
   The point in time when the conversation started.
 - [let direction: ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.property.md)
   The direction of this conversation.
+- [ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.enum.md)
+  Values that indicate whether a conversation was initiated or received.
 - [let duration: TimeInterval](conversationhistorymanager/recentconversation/duration.md)
   The duration of the conversation from the time the system connected the participants.
 - [let handles: [Handle]](conversationhistorymanager/recentconversation/handles.md)
   The handles of the conversation’s participants.
-- [let status: ConversationHistoryManager.RecentConversation.ConnectedStatus](conversationhistorymanager/recentconversation/status.md)
+- [let status: ConversationHistoryManager.RecentConversation.Status](conversationhistorymanager/recentconversation/status-swift.property.md)
   The status of the conversation.
-- [ConversationHistoryManager.RecentConversation.ConnectedStatus](conversationhistorymanager/recentconversation/connectedstatus.md)
+- [ConversationHistoryManager.RecentConversation.Status](conversationhistorymanager/recentconversation/status-swift.enum.md)
   Values that indicate the connection status of a recent conversation.
-- [ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.enum.md)
-  Values that indicate whether a conversation was initiated or received.
 
 
 ---

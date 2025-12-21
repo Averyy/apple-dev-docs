@@ -30,6 +30,8 @@ This characteristic differentiates original content from supplementary or deriva
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
 - [static let isAuxiliaryContent: AVMediaCharacteristic](avmediacharacteristic/isauxiliarycontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
+- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+  A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 
 ---

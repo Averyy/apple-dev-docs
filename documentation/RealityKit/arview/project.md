@@ -10,7 +10,7 @@ Projects a point from the 3D world coordinate system of the scene to the 2D pixe
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

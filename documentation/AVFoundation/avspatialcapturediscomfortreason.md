@@ -20,7 +20,7 @@ struct AVSpatialCaptureDiscomfortReason
 
 ## Topics
 
-### Discomfort Reasons
+### Discomfort reasons
 - [static let notEnoughLight: AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason/notenoughlight.md)
   A value that indicates the lighting of the current scene isn’t bright enough.
 - [static let subjectTooClose: AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason/subjecttooclose.md)

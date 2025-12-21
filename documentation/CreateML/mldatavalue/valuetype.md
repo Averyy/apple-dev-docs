@@ -41,22 +41,9 @@ enum ValueType
   A text representation of the data value type.
 - [var debugDescription: String](mldatavalue/valuetype/debugdescription.md)
   A text representation of the data value type that’s suitable for output during debugging.
-### Comparing value types
-- [static func != (Self, Self) -> Bool](mldatavalue/valuetype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Operators
-- [static func == (MLDataValue.ValueType, MLDataValue.ValueType) -> Bool](mldatavalue/valuetype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mldatavalue/valuetype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mldatavalue/valuetype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mldatavalue/valuetype/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mldatavalue/valuetype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mldatavalue/valuetype/equatable-implementations.md)
 
 ## Relationships
 

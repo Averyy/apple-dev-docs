@@ -27,6 +27,24 @@ object ManagementServerCapabilities
 
 Specify `com.apple.management.server-capabilities` as the declaration type.
 
+##### Management Declaration Example
+
+```json
+{
+    "Type": "com.apple.management.server-capabilities",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "Version": "1.0.0",
+        "SupportedFeatures": {
+            "Example Feature": {
+                "parameter1": 1
+            }
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects

@@ -65,15 +65,6 @@ Non-numerical columns are left in the data frame unchanged. Supported numeric ty
 ### Applying
 - [func applied(to: DataFrame, eventHandler: EventHandler?) throws -> DataFrame](columnconcatenator/applied(to:eventhandler:).md)
   Combines every numerical column in a data frame into to a shaped array for each row.
-### Type Aliases
-- [ColumnConcatenator.Input](columnconcatenator/input.md)
-  The input type.
-- [ColumnConcatenator.Output](columnconcatenator/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](columnconcatenator/customdebugstringconvertible-implementations.md)
-- [TabularTransformer Implementations](columnconcatenator/tabulartransformer-implementations.md)
-- [Transformer Implementations](columnconcatenator/transformer-implementations.md)
 
 ## Relationships
 

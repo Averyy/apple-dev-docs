@@ -17,7 +17,8 @@ Submits a closure to the context’s queue for asynchronous execution.
 ## Declaration
 
 ```swift
-func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType = .immediate, _ block: @escaping () throws -> T) async rethrows -> T
+@preconcurrency
+nonisolated func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType = .immediate, _ block: @escaping () throws -> T) async rethrows -> T
 ```
 
 ## Parameters

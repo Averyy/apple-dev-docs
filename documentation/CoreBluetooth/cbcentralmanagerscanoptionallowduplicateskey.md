@@ -22,7 +22,7 @@ let CBCentralManagerScanOptionAllowDuplicatesKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. If [`true`](https://developer.apple.com/documentation/swift/true), the central disables filtering and generates a discovery event each time it receives an advertising packet from the peripheral. If [`false`](https://developer.apple.com/documentation/swift/false) (the default), the central coalesces multiple discoveries of the same peripheral into a single discovery event.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. If [`true`](https://developer.apple.com/documentation/Swift/true), the central disables filtering and generates a discovery event each time it receives an advertising packet from the peripheral. If [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the central coalesces multiple discoveries of the same peripheral into a single discovery event.
 
 > ❗ **Important**:  Disabling this filtering can have an adverse effect on battery life; use it only if necessary.
 

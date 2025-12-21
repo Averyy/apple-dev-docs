@@ -30,11 +30,6 @@ struct TemporalFileSegment
   The time range in seconds.
 - [var url: URL](temporalfilesegment/url.md)
   The file URL.
-### Default Implementations
-- [Decodable Implementations](temporalfilesegment/decodable-implementations.md)
-- [Encodable Implementations](temporalfilesegment/encodable-implementations.md)
-- [Equatable Implementations](temporalfilesegment/equatable-implementations.md)
-- [Hashable Implementations](temporalfilesegment/hashable-implementations.md)
 
 ## Relationships
 

@@ -10,7 +10,7 @@ A specification for the context of a widget preview.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration
@@ -49,8 +49,6 @@ struct Widget_Previews: PreviewProvider {
 
 - [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
   Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
-- [Debugging widgets](debugging-widgets.md)
-  Set environment variables in Xcode to control your widget’s configuration in the debugger.
 - [Preview macros](preview-macros.md)
   Use Swift macros to create widget previews in Xcode.
 

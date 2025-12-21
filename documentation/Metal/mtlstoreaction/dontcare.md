@@ -21,11 +21,11 @@ case dontCare
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
 
 #### Discussion
 
-Use this option when you need the attachment’s contents during the render pass but not afterwards. Some GPUs may still store the contents back to the texture, but you can’t rely on that behavior. You must assume that GPU discarded the texture’s contents.
+Use this option when you need the attachment’s contents during the render pass but not afterwards. Some GPUs may still store the contents back to the texture, but you can’t rely on that behavior. You need to assume that GPU discarded the texture’s contents.
 
 ## See Also
 

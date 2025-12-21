@@ -6,7 +6,7 @@
 A `CustomHoverEffect` that activates a named group of effects.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

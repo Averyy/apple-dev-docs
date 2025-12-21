@@ -35,6 +35,11 @@ struct ScoreCounter
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct CounterCollection](countercollection.md)
+  A collection of score counters that can be inspected and modified.
+
 
 ---
 

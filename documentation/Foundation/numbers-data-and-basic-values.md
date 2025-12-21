@@ -7,9 +7,9 @@ Work with primitive values and other fundamental types used throughout Cocoa.
 ## Topics
 
 ### Numbers
-- [@frozen struct Int](../Swift/Int.md)
+- [struct Int](../Swift/Int.md)
   A signed integer value type.
-- [@frozen struct Double](../Swift/Double.md)
+- [struct Double](../Swift/Double.md)
   A double-precision, floating-point value type.
 - [struct Decimal](decimal.md)
   A structure representing a base-10 number.
@@ -35,7 +35,7 @@ Work with primitive values and other fundamental types used throughout Cocoa.
 - [struct UUID](uuid.md)
   A universally unique value to identify types, interfaces, and other items.
 ### Geometry
-- [@frozen struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
+- [struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
 - [typealias NSPoint](nspoint.md)
   A point in a Cartesian coordinate system.

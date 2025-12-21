@@ -15,6 +15,8 @@ func requestSharingOfWindow(usingPreview image: NSImage, title: String) async th
 
 #### Discussion
 
+Request sharing of window to be provided later.  If there is an available ScreenCaptureKit sharing session, an alert will be presented asking the user to confirm the share.  The delegate will be asked to provide the window to share via windowForSharingRequestFromWindow:
+
 The error will be non-nil if the request does not result in a window being shared.  The error will be NSUserCancelledError if there is no ScreenCaptureKit session, or if the user rejects the offer to share.  If sharing fails for some other reason, the error will provide the details.
 
 ## Parameters

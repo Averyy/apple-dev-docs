@@ -20,7 +20,7 @@ var automaticallyShowsSearchResultsController: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true). When it’s [`true`](https://developer.apple.com/documentation/swift/true), [`UISearchController`](uisearchcontroller.md) automatically shows its results controller based on the contents of its text property. If you set [`showsSearchResultsController`](uisearchcontroller/showssearchresultscontroller.md), this property becomes [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true). When it’s [`true`](https://developer.apple.com/documentation/Swift/true), [`UISearchController`](uisearchcontroller.md) automatically shows its results controller based on the contents of its text property. If you set [`showsSearchResultsController`](uisearchcontroller/showssearchresultscontroller.md), this property becomes [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

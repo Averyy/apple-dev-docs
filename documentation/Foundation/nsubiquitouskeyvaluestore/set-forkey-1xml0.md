@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets a double value for the specified key in the key-value store.
+Sets the value of the specified key to a double value.
 
 **Availability**:
 - iOS 5.0+
@@ -20,27 +20,31 @@ Sets a double value for the specified key in the key-value store.
 func set(_ value: Double, forKey aKey: String)
 ```
 
+#### Discussion
+
+This method places the double value in an [`NSNumber`](nsnumber.md) type before writing the key and value to the store.
+
 ## Parameters
 
-- `value`: The double value to store.
-- `aKey`: The key under which to store the value. The length of this key must not exceed 64 bytes using UTF8 encoding.
+- `value`: The double value to save to the iCloud key-value store.
+- `aKey`: The key to associate with the value.
 
 ## See Also
 
-- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
-  Sets an array object for the specified key in the key-value store.
 - [func set(Bool, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-8o8mq.md)
-  Sets a Boolean value for the specified key in the key-value store.
-- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
-  Sets a data object for the specified key in the key-value store.
-- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
-  Sets a dictionary object for the specified key in the key-value store.
+  Sets the value of the specified key to a Boolean value.
 - [func set(Int64, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-7tt20.md)
-  Sets a `long long` value for the specified key in the key-value store.
-- [func set(Any?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9e3de.md)
-  Sets an object for the specified key in the key-value store.
+  Sets the value of the specified key to a 64-bit integer value.
 - [func set(String?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-2rlp.md)
-  Sets a string object for the specified key in the key-value store.
+  Sets the value of the specified key to a string value.
+- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
+  Sets the value of the specified key to a data object.
+- [func set(Any?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9e3de.md)
+  Sets the value of the specified key to a property list object.
+- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
+  Sets the value of the specified key to an array of property list objects.
+- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
+  Sets the value of the specified key to a dictionary of property list objects.
 
 
 ---

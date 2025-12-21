@@ -20,7 +20,7 @@ class func canAddPaymentPass() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app can add cards to Apple Pay.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the app can add cards to Apple Pay.
 
 
 ---

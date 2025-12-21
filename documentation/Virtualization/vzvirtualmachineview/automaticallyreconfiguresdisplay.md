@@ -17,11 +17,11 @@ var automaticallyReconfiguresDisplay: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to automatically resize or reconfigure this graphics display when the view properties update. For example, resizing the display when the view has a live resize operation. When enabled, the graphics display automatically reconfigures to match the host display environment.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to automatically resize or reconfigure this graphics display when the view properties update. For example, resizing the display when the view has a live resize operation. When enabled, the graphics display automatically reconfigures to match the host display environment.
 
 You can set this property on only a single [`VZVirtualMachineView`](vzvirtualmachineview.md) targeting a particular [`VZGraphicsDisplay`](vzgraphicsdisplay.md) at a time. If multiple `VZVirtualMachineView` views targeting the same VZGraphicsDisplay enable this property, only one view respects the property, and the framework disables the property on the other views.
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

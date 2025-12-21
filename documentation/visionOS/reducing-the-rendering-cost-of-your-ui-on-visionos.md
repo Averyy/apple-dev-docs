@@ -18,7 +18,7 @@ The Translucent UI Meshes metric in the Core Animation section of the RealityKit
 
 ![An Instrument window shows profile data from the RealityKit Trace template. The top of the window displays the RealityKit Metrics instrument timeline with a graph of Translucent UI Meshes. The detail view at the bottom of the window displays a summary of the average, minimum, and maximum number of meshes that include transparency.](https://docs-assets.developer.apple.com/published/1941c8f9cc272bb7fa65a8cf9e77a623/translucent-ui-meshes-metric%402x.png)
 
-Other visual effects that involve , the need to draw pixels multiple times to produce a final result, also increase rendering work. In the Shared Space, overdraw can result from interactions with the content from other apps, so minimizing translucent content might have a greater impact. For design guidance, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows). Visual effects can also cause offscreen passes. To reduce offscreen passes, see [`Reducing the rendering cost of your UI on visionOS`](reducing-the-rendering-cost-of-your-UI-on-visionOS.md).
+Other visual effects that involve , the need to draw pixels multiple times to produce a final result, also increase rendering work. In the Shared Space, overdraw can result from interactions with the content from other apps, so minimizing translucent content might have a greater impact. For design guidance, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows#visionOS). Visual effects can also cause offscreen passes. To reduce offscreen passes, see [`Reducing the rendering cost of your UI on visionOS`](reducing-the-rendering-cost-of-your-UI-on-visionOS#Reduce-redraw-and-offscreen-rendering.md).
 
 ##### Reduce the Size of Static Ui Views
 
@@ -34,7 +34,7 @@ For more information on dynamic content scaling, see [`Drawing sharp layer-based
 
 ##### Reduce Redraw and Offscreen Rendering
 
-The performance cost of numerous redraws and offscreen render passes adds up. Offscreen passes can also contribute to additional overdraw. Some complex renderers require offscreen passes but you can avoid them in many cases. Learn more about offscreen render passes in [`Customizing Render Pass Setup`](https://developer.apple.com/documentation/Metal/customizing-render-pass-setup). To reduce the number of redraw and offscreen render passes your app performs:
+The performance cost of numerous redraws and offscreen render passes adds up. Offscreen passes can also contribute to additional overdraw. Some complex renderers require offscreen passes but you can avoid them in many cases. Learn more about offscreen render passes in [`Customizing render pass setup`](https://developer.apple.com/documentation/Metal/customizing-render-pass-setup). To reduce the number of redraw and offscreen render passes your app performs:
 
 - Lower the update rates of animations.
 - Pause or stop animations.

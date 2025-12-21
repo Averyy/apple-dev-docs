@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Rasterize a point at each vertex. The vertex shader must provide `[[point_size]]`, or the point size is undefined.
+Rasterize a point at each vertex. The vertex shader needs to provide `[[point_size]]`, or the point size is undefined.
 
 **Availability**:
 - iOS 8.0+

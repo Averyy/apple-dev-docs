@@ -22,7 +22,7 @@ struct AVAudioSpatializationFormats
 
 ## Topics
 
-### Spatialization Formats
+### Spatialization formats
 - [static var monoAndStereo: AVAudioSpatializationFormats](avaudiospatializationformats/monoandstereo.md)
   A value that indicates the player item only supports mono and stereo layouts for audio spatialization.
 - [static var multichannel: AVAudioSpatializationFormats](avaudiospatializationformats/multichannel.md)

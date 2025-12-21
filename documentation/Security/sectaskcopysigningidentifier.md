@@ -17,7 +17,7 @@ func SecTaskCopySigningIdentifier(_ task: SecTask, _ error: UnsafeMutablePointer
 
 #### Return Value
 
-A string representing the code signing identifier for the task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free this string’s memory when you are done with it.
+A string representing the code signing identifier for the task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this string’s memory when you are done with it.
 
 ## Parameters
 

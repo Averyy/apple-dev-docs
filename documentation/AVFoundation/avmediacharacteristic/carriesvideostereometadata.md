@@ -43,6 +43,8 @@ The value of this characteristic is `com.apple.quicktime.video.stereo-metadata`.
   A media characteristic that indicates that a track contains stereoscopic video captured in a multiview compression format.
 - [static let indicatesHorizontalFieldOfView: AVMediaCharacteristic](avmediacharacteristic/indicateshorizontalfieldofview.md)
   A media characteristic that indicates the video track carries information related to the horizontal field of view.
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+  A media characteristic that indicates the video track carries information related to how it should be projected for display.
 
 
 ---

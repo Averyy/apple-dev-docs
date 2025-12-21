@@ -28,7 +28,7 @@ To use this method, pass in a contact from the user’s contacts database, avail
 
 You can, alternatively, pass in a [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) object you create at runtime. Such a contact must have at least a first name or a last name. The quick action icon returned from this method is then a monogram built from the contact’s name. With this approach, it isn’t possible for you to provide an image for the quick action icon.
 
-Finally, you can call this method with an empty contact that you create by using the [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) class’s inherited [`alloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571958-alloc) and `init` methods. With this approach, the resulting icon is a monochrome silhouette.
+Finally, you can call this method with an empty contact that you create by using the [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) class’s inherited [`alloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/alloc) and `init` methods. With this approach, the resulting icon is a monochrome silhouette.
 
 When providing a set of contact quick actions, ensure that every one of them has an icon. This ensures the best appearance for the set of quick actions.
 

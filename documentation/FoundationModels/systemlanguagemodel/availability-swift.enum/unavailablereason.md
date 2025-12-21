@@ -6,11 +6,11 @@
 The unavailable reason.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,16 +27,6 @@ enum UnavailableReason
   The device does not support Apple Intelligence.
 - [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md)
   The model(s) aren’t available on the user’s device.
-### Getting the hash value
-- [var hashValue: Int](systemlanguagemodel/availability-swift.enum/unavailablereason/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](systemlanguagemodel/availability-swift.enum/unavailablereason/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing the reason
-- [static func == (SystemLanguageModel.Availability.UnavailableReason, SystemLanguageModel.Availability.UnavailableReason) -> Bool](systemlanguagemodel/availability-swift.enum/unavailablereason/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](systemlanguagemodel/availability-swift.enum/unavailablereason/equatable-implementations.md)
 
 ## Relationships
 

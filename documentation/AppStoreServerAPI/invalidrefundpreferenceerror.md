@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: dictionary
 
-An error that indicates an invalid refund preference code.
+An error that indicates an invalid refund preference value.
 
 **Availability**:
 - App Store Server API 1.11+
@@ -16,14 +16,18 @@ object InvalidRefundPreferenceError
 
 #### Discussion
 
-This error applies to the [`refundPreference`](refundpreference.md) value you provide in a [`ConsumptionRequest`](consumptionrequest.md).
+This error applies to the [`refundPreference`](refundpreference.md) value you provide in a [`ConsumptionRequest`](consumptionrequest.md), or the [`refundPreferenceV1`](refundpreferencev1.md) value in a [`ConsumptionRequestV1`](consumptionrequestv1.md).
 
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)
   An error that indicates the App Store account wasn’t found.
+- [object AdvancedCommerceTransactionNotSupportedError](advancedcommercetransactionnotsupportederror.md)
+  An error that indicates Advanced Commerce API transactions are not supported by the endpoint.
 - [object AppNotFoundError](appnotfounderror.md)
   An error that indicates the app wasn’t found.
+- [object AppTransactionDoesNotExistError](apptransactiondoesnotexisterror.md)
+  An error response that indicates an app transaction doesn’t exist for the specified customer.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
@@ -46,10 +50,6 @@ This error applies to the [`refundPreference`](refundpreference.md) value you pr
   An error that indicates an invalid reason code.
 - [object InvalidOriginalTransactionIdError](invalidoriginaltransactioniderror.md)
   An error that indicates an invalid original transaction identifier.
-- [object InvalidRequestIdentifierError](invalidrequestidentifiererror.md)
-  An error that indicates an invalid request identifier.
-- [object InvalidRequestRevisionError](invalidrequestrevisionerror.md)
-  An error that indicates an invalid request revision.
 
 
 ---

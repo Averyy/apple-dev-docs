@@ -23,17 +23,17 @@ This object renders a caption scene for a given time from a collection of captio
 
 ## Topics
 
-### Configuring the Renderer
+### Configuring the renderer
 - [var captions: [AVCaption]](avcaptionrenderer/captions.md)
   The captions to render.
 - [var bounds: CGRect](avcaptionrenderer/bounds.md)
   The drawing bounds of caption scenes.
-### Determining Scene Changes
+### Determining scene changes
 - [func captionSceneChanges(in: CMTimeRange) -> [AVCaptionRenderer.Scene]](avcaptionrenderer/captionscenechanges(in:).md)
   Determine render time ranges within an enclosing time range to account for visual changes among captions.
 - [AVCaptionRenderer.Scene](avcaptionrenderer/scene.md)
   An object that holds a time range and an associated state which indicates when the renderer draws output.
-### Rendering a Caption
+### Rendering a caption
 - [func render(in: CGContext, for: CMTime)](avcaptionrenderer/render(in:for:).md)
   Draw the captions for the time you specify.
 

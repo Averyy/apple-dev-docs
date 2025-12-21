@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A CoreVideo pixel buffer to which you can write output pixel data.
+An output pixelBuffer object that your Core Image Processor Kernel can write to.
 
 **Availability**:
 - iOS 10.0+
@@ -20,18 +20,14 @@ A CoreVideo pixel buffer to which you can write output pixel data.
 var pixelBuffer: CVPixelBuffer? { get }
 ```
 
-#### Discussion
-
-Use this property to process the image using routines that can make use of memory shared with Core Video. For example, if your image processing technology uses OpenGL or OpenGL ES, you can create a GL texture from a Core Video pixel buffer with the [`CVOpenGLBufferPool`](https://developer.apple.com/documentation/CoreVideo/CVOpenGLBufferPool) or [`CVOpenGLESTextureCache`](https://developer.apple.com/documentation/CoreVideo/CVOpenGLESTextureCache) API.
-
 ## See Also
 
 - [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
-  A pointer to CPU memory at which to write output pixel data.
+  The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
 - [var metalTexture: (any MTLTexture)?](ciimageprocessoroutput/metaltexture.md)
-  A Metal texture to which you can write output pixel data.
+  A Metal texture object that can be bound for output using Metal.
 - [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
-  An IOSurface object to which you can write output pixel data.
+  An output surface object that your Core Image Processor Kernel can write to.
 
 
 ---

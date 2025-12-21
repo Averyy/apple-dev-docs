@@ -68,7 +68,7 @@ You can find out more about custom executors, by referring to the [`SerialExecut
 - [actor MainActor](mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type `T` whose metatype `T.Type` is `Sendable`.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

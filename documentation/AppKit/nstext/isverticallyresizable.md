@@ -17,7 +17,7 @@ var isVerticallyResizable: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) it does; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false) it doesn’t.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) it does; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false) it doesn’t.
 
 ## See Also
 

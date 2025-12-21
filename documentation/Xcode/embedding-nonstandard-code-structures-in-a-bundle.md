@@ -244,6 +244,10 @@ In most cases, however, it’s easier and better to rewrite everything to use rp
 
 - [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+  Customize the information property list values for your app using Xcode.
+- [Editing property list files](editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 
 
 ---

@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: struct
 
-Marks the property as a binding to an extension point
+A property wrapper that binds an app extension to an extension point of a host app.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,14 +21,37 @@ Marks the property as a binding to an extension point
 struct Bind
 ```
 
+## Mentions
+
+- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+
 #### Overview
 
-When included in an AppExtension target, the `AppExtension.boundAppExtensionPoint` will binding the appex to the extension point specified by `AppExtensionPoint.Identifier`. This
+Apply this property wrapper to a variable that contains an [`AppExtensionPoint`](appextensionpoint.md) type. Use the variable to define the extension point that your app extension supports. An app extension can bind to only one extension point in a host app.
+
+When configuring the [`AppExtensionPoint`](appextensionpoint.md) type for your variable, specify the host app and extension point details using an [`AppExtensionPoint.Identifier`](appextensionpoint/identifier.md) type. The following example shows how to create the variable in your app extension, specify the extension point you want, and create the binding:
+
+```None
+struct MyAppExtension: AppExtension {
+    @AppExtensionPoint.Bind
+    var extensionPoint: AppExtensionPoint {
+        AppExtensionPoint.Identifier("com.example.hostapp”, name “HostAppFeature”)
+    }
+}
+```
+
+To ensure the system discovers your app extension’s bindings, add a user-defined build setting to your app extension target in Xcode. Set the build setting name to `EX_ENABLE_EXTENSION_POINT_GENERATION` and configure it with a value of `YES`. When this setting is present, the compiler places the necessary binding information in your app extension’s `Info.plist` file.
 
 ## Topics
 
-### Type Methods
+### Annotating a binding
 - [static func buildBlock(AppExtensionPoint.Identifier) -> AppExtensionPoint](appextensionpoint/bind/buildblock(_:).md)
+  Passes an identifier to the extension point type.
+
+## See Also
+
+- [AppExtensionPoint.Identifier](appextensionpoint/identifier.md)
+  The details of an extension point that your app extension supports.
 
 
 ---

@@ -6,7 +6,7 @@
 A spatial audio experience determined by the system.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -21,8 +21,6 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mllinearregressor/model.md)
-  The Core ML model.
 - [var debugDescription: String](mllinearregressor/debugdescription.md)
   A text representation of the linear regressor that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mllinearregressor/playgrounddescription.md)

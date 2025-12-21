@@ -20,21 +20,6 @@ Specifies that the padding should occur before the suffix.
 case beforeSuffix
 ```
 
-## See Also
-
-- [NumberFormatter.PadPosition.beforePrefix](numberformatter/padposition/beforeprefix.md)
-  Specifies that the padding should occur before the prefix.
-- [NumberFormatter.PadPosition.afterPrefix](numberformatter/padposition/afterprefix.md)
-  Specifies that the padding should occur after the prefix.
-- [NumberFormatter.PadPosition.afterSuffix](numberformatter/padposition/aftersuffix.md)
-  Specifies that the padding should occur after the suffix.
-- [NumberFormatter.PadPosition.beforePrefix](numberformatter/padposition/beforeprefix.md)
-  Specifies that the padding should occur before the prefix.
-- [NumberFormatter.PadPosition.afterPrefix](numberformatter/padposition/afterprefix.md)
-  Specifies that the padding should occur after the prefix.
-- [NumberFormatter.PadPosition.afterSuffix](numberformatter/padposition/aftersuffix.md)
-  Specifies that the padding should occur after the suffix.
-
 
 ---
 

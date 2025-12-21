@@ -21,7 +21,7 @@ func tableStyle<S>(_ style: S) -> some View where S : TableStyle
 
 ## See Also
 
-- [Building a Great Mac App with SwiftUI](building_a_great_mac_app_with_swiftui.md)
+- [Building a great Mac app with SwiftUI](building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
 - [struct Table](table.md)
   A container that presents rows of data arranged in one or more columns, optionally providing the ability to select one or more members.

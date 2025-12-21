@@ -17,7 +17,7 @@ var lockInterval: UInt32
 
 #### Discussion
 
-If you set [`useLockInterval`](seckeychainsettings/uselockinterval.md) to [`false`](https://developer.apple.com/documentation/swift/false), set [`lockInterval`](seckeychainsettings/lockinterval.md) to `INT_MAX` to indicate that the keychain never locks.
+If you set [`useLockInterval`](seckeychainsettings/uselockinterval.md) to [`false`](https://developer.apple.com/documentation/Swift/false), set [`lockInterval`](seckeychainsettings/lockinterval.md) to `INT_MAX` to indicate that the keychain never locks.
 
 
 ---

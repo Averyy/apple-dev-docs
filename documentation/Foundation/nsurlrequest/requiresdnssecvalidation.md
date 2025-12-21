@@ -18,6 +18,12 @@
 var requiresDNSSECValidation: Bool { get }
 ```
 
+#### Discussion
+
+Sets whether a request is required to do DNSSEC validation during DNS lookup.
+
+YES, if the DNS lookup for this request should require DNSSEC validation, No otherwise. Defaults to NO.
+
 
 ---
 

@@ -45,6 +45,8 @@ When configuring an alert with the [`UIAlertController.Style.alert`](uialertcont
   Descriptive text that provides more details about the reason for the alert.
 - [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
   The style of the alert controller.
+- [UIAlertController.Style](uialertcontroller/style.md)
+  Constants indicating the type of alert to display.
 ### Configuring the user actions
 - [func addAction(UIAlertAction)](uialertcontroller/addaction(_:).md)
   Attaches an action object to the alert or action sheet.
@@ -62,9 +64,6 @@ When configuring an alert with the [`UIAlertController.Style.alert`](uialertcont
   Indicates the severity of the alert.
 - [enum UIAlertControllerSeverity](uialertcontrollerseverity.md)
   Constants for specifying the severity of an alert in apps built with Mac Catalyst.
-### Constants
-- [UIAlertController.Style](uialertcontroller/style.md)
-  Constants indicating the type of alert to display.
 
 ## Relationships
 
@@ -98,7 +97,7 @@ When configuring an alert with the [`UIAlertController.Style.alert`](uialertcont
 ## See Also
 
 - [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
-  Present important information to the user or prompt the user about an important choice.
+  Present important information to a person or prompt them about an important choice.
 - [class UIAlertAction](uialertaction.md)
   An action that can be taken when the user taps a button in an alert.
 

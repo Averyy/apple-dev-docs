@@ -19,7 +19,7 @@ object BetaAppReviewDetail.Attributes
 - [Beta App Review Detail](beta-app-review-detail.md)
   Information about your app required for beta app review.
 - [object BetaAppReviewDetail.Relationships](betaappreviewdetail/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

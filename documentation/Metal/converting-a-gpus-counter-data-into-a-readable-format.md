@@ -1,4 +1,4 @@
-# Converting a GPU’s Counter Data into a Readable Format
+# Converting a GPU’s counter data into a readable format
 
 **Framework**: Metal
 
@@ -6,9 +6,9 @@ Inspect and use the data within a GPU’s counter sample buffer by resolving it 
 
 #### Overview
 
-To use the data a GPU driver stores in an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance (see [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md)), your app must  it. Resolving the data converts the counter data from the GPU’s internal data structure into a common format that Metal defines.
+To use the data a GPU driver stores in an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance (see [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md)), your app needs to  it. Resolving the data converts the counter data from the GPU’s internal data structure into a common format that Metal defines.
 
-You can resolve the data in a counter sample buffer by creating a blit pass that converts the data as it copies it to an [`MTLBuffer`](mtlbuffer.md). If the CPU can access a counter sample buffer, you can also resolve the data after the GPU finishes running a command buffer. See [`Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) for information about making a CPU-accessible counter sample buffer.
+You can resolve the data in a counter sample buffer by creating a blit pass that converts the data as it copies it to an [`MTLBuffer`](mtlbuffer.md). If the CPU can access a counter sample buffer, you can also resolve the data after the GPU finishes running a command buffer. See [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) for information about making a CPU-accessible counter sample buffer.
 
 ##### Resolve the Counter Sample Buffer with the Cpu
 
@@ -42,7 +42,7 @@ You can also use the result type instances to check whether the GPU stores any e
 
 Any time the GPU encounters a runtime error while sampling a counter, it sets the counter datum to the sentinel value [`MTLCounterErrorValue`](mtlcountererrorvalue.md).
 
-> **Note**:  A GPU typically stores timestamp values from its internal clock. You can convert those timestamps into more meaningful time values, in nanoseconds, with [`sampleTimestamps()`](mtldevice/sampletimestamps().md) — see [`Converting GPU Timestamps into CPU Time`](converting-gpu-timestamps-into-cpu-time.md).
+> **Note**:  A GPU typically stores timestamp values from its internal clock. You can convert those timestamps into more meaningful time values, in nanoseconds, with [`sampleTimestamps()`](mtldevice/sampletimestamps().md) — see [`Converting GPU timestamps into CPU time`](converting-gpu-timestamps-into-cpu-time.md).
 
 ## See Also
 

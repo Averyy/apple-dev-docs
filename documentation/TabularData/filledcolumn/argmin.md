@@ -17,7 +17,7 @@ Returns the index of the element with the lowest value.
 ## Declaration
 
 ```swift
-func argmin() -> Base.Index?
+func argmin() -> FilledColumn<Base>.Index?
 ```
 
 ## See Also

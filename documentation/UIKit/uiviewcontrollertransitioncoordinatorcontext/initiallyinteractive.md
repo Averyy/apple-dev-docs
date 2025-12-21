@@ -22,7 +22,7 @@ var initiallyInteractive: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the transition was initiated interactively and the [`isAnimated`](uiviewcontrollertransitioncoordinatorcontext/isanimated.md) property is also set to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property doesn’t change during the course of a transition. To determine whether the transition is currently interactive, use the [`isInteractive`](uiviewcontrollertransitioncoordinatorcontext/isinteractive.md) method instead.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the transition was initiated interactively and the [`isAnimated`](uiviewcontrollertransitioncoordinatorcontext/isanimated.md) property is also set to [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false). The value of this property doesn’t change during the course of a transition. To determine whether the transition is currently interactive, use the [`isInteractive`](uiviewcontrollertransitioncoordinatorcontext/isinteractive.md) method instead.
 
 ## See Also
 

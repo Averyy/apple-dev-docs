@@ -20,6 +20,9 @@ Set up an MDM server and send commands to managed devices.
   Optimize deployment of profiles and provisioning profiles.
 - [Setting Up Push Notifications for Your MDM Customers](setting-up-push-notifications-for-your-mdm-customers.md)
   Create and sign a certificate signing request (CSR) to enable push notifications.
+### Identity Management
+- [Validating a Managed Device Attestation](validating-a-managed-device-attestation-attestation.md)
+  Verify an attestation that a managed device returns by performing the required steps.
 ### Devices and Users
 - [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
   Manage devices and users as separate entities in macOS.
@@ -29,6 +32,8 @@ Set up an MDM server and send commands to managed devices.
   Ensure data security by managing device passcodes and compliance with policies.
 - [Dealing with Inactive MDM Devices and Invalid Push Tokens](dealing-with-inactive-mdm-devices-and-invalid-push-tokens.md)
   Handle when devices become unmanageable due to inactivity or invalid push tokens.
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+  Use a device management service to return managed devices to service quickly after use.
 ### Commands
 - [Sending MDM Commands to a Device](sending-mdm-commands-to-a-device.md)
   Execute commands on a device and receive responses that contain the results of each operation.
@@ -43,6 +48,8 @@ Set up an MDM server and send commands to managed devices.
   Authenticate devices and maintain push tokens with these commands.
 - [Account-driven enrollment](account-driven-enrollment.md)
   Authenticate devices using a user identity-focused workflow.
+- [Migrating managed devices](migrating-managed-devices.md)
+  Migrate managed devices from one device management service to another.
 
 
 ---

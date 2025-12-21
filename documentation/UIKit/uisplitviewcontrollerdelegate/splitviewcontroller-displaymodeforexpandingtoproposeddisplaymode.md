@@ -38,6 +38,8 @@ When the split view controller transitions from a horizontally compact to a hori
 
 - [func splitViewController(UISplitViewController, willShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:).md)
   Tells the delegate that the specified column is about to be shown.
+- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
+  Tells the delegate that the system completed showing the specified column.
 - [func splitViewControllerDidExpand(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerdidexpand(_:).md)
   Tells the delegate that the split view controller interface has expanded.
 

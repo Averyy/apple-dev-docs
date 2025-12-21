@@ -20,7 +20,7 @@ func SecCertificateCopyValues(_ certificate: SecCertificate, _ keys: CFArray?, _
 
 #### Return Value
 
-A dictionary containing the specified values from the certificate or `NULL` if an error occurs. In Objective-C, free this dictionary with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function when you are done with it.
+A dictionary containing the specified values from the certificate or `NULL` if an error occurs. In Objective-C, free this dictionary with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
 
 #### Discussion
 

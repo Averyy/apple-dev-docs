@@ -35,7 +35,7 @@ static let volumeMaximumFileSizeKey: URLResourceKey
 - [static let volumeLocalizedNameKey: URLResourceKey](urlresourcekey/volumelocalizednamekey.md)
   The name of the volume as it should be displayed in the user interface, returned as an `NSString` object (read-only).
 - [static let volumeNameKey: URLResourceKey](urlresourcekey/volumenamekey.md)
-  The name of the volume, returned as an `NSString` object (read-write). Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/swift/true).
+  The name of the volume, returned as an string object.
 - [static let volumeResourceCountKey: URLResourceKey](urlresourcekey/volumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as an `NSNumber` object (read-only).
 - [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)

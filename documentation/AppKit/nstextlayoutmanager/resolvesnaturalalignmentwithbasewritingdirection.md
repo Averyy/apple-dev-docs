@@ -6,7 +6,7 @@
 Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

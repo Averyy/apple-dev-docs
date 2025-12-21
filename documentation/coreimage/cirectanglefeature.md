@@ -21,13 +21,13 @@ class CIRectangleFeature
 
 #### Overview
 
-> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectRectanglesRequest).
+> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectFaceRectanglesRequest))
 
-A detected rectangle feature isn’t necessarily rectangular in the plane of the image; rather, the feature identifies a shape that may be rectangular in space but which appears in perspective in the image — for example, a paper or book on a desk. The properties of a [`CIRectangleFeature`](cirectanglefeature.md) object identify its corners in image coordinates.
+A detected rectangle feature is not necessarily rectangular in the plane of the image; rather, the feature identifies a shape that may be rectangular in space (for example a book on a desk) but which appears as a four-sided polygon in the image. The properties of a `CIRectangleFeature` object identify its four corners in image coordinates.
 
-For example, you can use rectangle feature detection together with the [`CIPerspectiveCorrection`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIPerspectiveCorrection) filter to detect rectangular objects in an image or video and transform them to their original orientation.
+You can use rectangle feature detection together with the `CIPerspectiveCorrection` filter to transform the feature to a normal orientation.
 
-To detect rectangles in an image or video, choose the [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) type when initializing a [`CIDetector`](cidetector.md) object, and use the [`CIDetectorAspectRatio`](cidetectoraspectratio.md) and [`CIDetectorFocalLength`](cidetectorfocallength.md) options to specify the approximate shape of rectangular features to search for. The detector returns at most one rectangle feature, the most prominent found in the image.
+To detect rectangles in an image or video, choose [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) when initializing a [`CIDetector`](cidetector.md) object, and use the `CIDetectorAspectRatio` and `CIDetectorFocalLength` options to specify the approximate shape of rectangular features to search for. The detector returns at most one rectangle feature, the most prominent found in the image.
 
 ## Topics
 
@@ -65,7 +65,7 @@ To detect rectangles in an image or video, choose the [`CIDetectorTypeRectangle`
 - [class CIFaceFeature](cifacefeature.md)
   Information about a face detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 - [class CIQRCodeFeature](ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 

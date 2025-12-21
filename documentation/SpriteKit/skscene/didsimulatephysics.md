@@ -17,7 +17,6 @@ Tells your app to peform any necessary logic after physics simulations are perfo
 ## Declaration
 
 ```swift
-@MainActor
 func didSimulatePhysics()
 ```
 

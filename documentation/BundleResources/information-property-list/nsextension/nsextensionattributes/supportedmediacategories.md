@@ -16,7 +16,7 @@ Types of media supported by an app extension’s media-playing intents.
 
 Specify one or more media categories to allow Siri to invoke your app’s intent handling when a user asks to play media. Use `INMediaCategoryGeneral` for media that doesn’t fit into any of the other categories, like white noise or sound effects.
 
-To specify this information in Xcode, add doc://com.apple.documentation/documentation/sirikit/inplaymediaintent to your extension’s list of Supported Intents. Then select the relevant media types in the list that appears.
+To specify this information in Xcode, add [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent) to your extension’s list of Supported Intents. Then select the relevant media types in the list that appears.
 
 ## See Also
 

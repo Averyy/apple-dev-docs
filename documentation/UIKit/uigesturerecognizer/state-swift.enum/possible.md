@@ -21,7 +21,7 @@ case possible
 ## Mentions
 
 - [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
-- [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
 
 #### Discussion
 

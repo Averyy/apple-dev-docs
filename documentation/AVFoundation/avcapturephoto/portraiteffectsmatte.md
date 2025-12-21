@@ -19,7 +19,7 @@ var portraitEffectsMatte: AVPortraitEffectsMatte? { get }
 
 ## Mentions
 
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 ## See Also
 

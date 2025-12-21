@@ -25,7 +25,7 @@ case failure(any Error)
 - [AsyncImagePhase.empty](asyncimagephase/empty.md)
   No image is loaded.
 - [AsyncImagePhase.success(_:)](asyncimagephase/success(_:).md)
-  An image succesfully loaded.
+  An image successfully loaded.
 
 
 ---

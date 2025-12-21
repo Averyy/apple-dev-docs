@@ -23,6 +23,8 @@ If anObject is non-NULL and present within the set, false otherwise.
 
 Checks the set for the presence of an object.
 
+Checks the set for the presence of an object.
+
 ## Parameters
 
 - `anObject`: The OSMetaClassBase-derived object to check for in the set.

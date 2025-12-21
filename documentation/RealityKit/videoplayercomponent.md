@@ -10,7 +10,7 @@ A component that supports general video-playback experience with an AV player.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -123,6 +123,8 @@ The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeW
 ### Configuring the video player
 - [var isPassthroughTintingEnabled: Bool](videoplayercomponent/ispassthroughtintingenabled.md)
   A Boolean value that indicates whether the passthrough camera feed is tinted, emphasizing the video content.
+- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode.md)
+  The viewer’s selected content-viewing mode.
 ### Accessing video player properties
 - [var avPlayer: AVPlayer?](videoplayercomponent/avplayer.md)
   The AV player that the component plays.
@@ -132,6 +134,8 @@ The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeW
   The video resolution size.
 - [var videoRenderer: AVSampleBufferVideoRenderer?](videoplayercomponent/videorenderer.md)
   The component’s video renderer.
+- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
+  The current content-viewing mode for video playback.
 ### Playing immersive media
 - [var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/desiredimmersiveviewingmode.md)
   The viewer’s selected immersive-viewing mode.
@@ -141,16 +145,8 @@ The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeW
 - [var currentRenderingStatus: VideoPlayerComponent.RenderingStatus](videoplayercomponent/currentrenderingstatus.md)
 - [var desiredSpatialVideoMode: VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/desiredspatialvideomode.md)
   The viewer’s selected spatial video rendering mode.
-- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode-2cahn.md)
-  The viewer’s selected content-viewing mode.
-- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode-9iqp4.md)
-  The viewer’s selected content-viewing mode.
 - [var spatialVideoMode: VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/spatialvideomode-swift.property.md)
   The currently active spatial video rendering mode.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode-6bzre.md)
-  The current content-viewing mode for video playback.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode-9sqva.md)
-  The current content-viewing mode for video playback.
 ### Enumerations
 - [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
@@ -172,6 +168,8 @@ The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeW
   A material that supports animated textures.
 - [class VideoPlaybackController](videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
+- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+  Options for viewing video playback.
 
 
 ---

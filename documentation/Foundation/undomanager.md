@@ -29,6 +29,8 @@ After you register an undo operation, you can call [`undo()`](undomanager/undo()
 
 Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). For example, UIKit implements undo and redo in its text view object, making it easy for you to undo and redo actions in objects along the responder chain. [`UndoManager`](undomanager.md) also serves as a general-purpose state manager, which you can use to undo and redo many kinds of actions. For example, an interactive command-line utility can use this class to undo the last command run, or a networking library can undo a request by sending another request that invalidates the previous one.
 
+> ❗ **Important**: `UndoManager` is [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor)-isolated in Swift, making it safe to use in UI frameworks like [`AppKit`](https://developer.apple.com/documentation/AppKit) and [`UIKit`](https://developer.apple.com/documentation/UIKit) that expect to execute code on the main thread, queue, or actor. When registering an undoable action with [`registerUndo(withTarget:handler:)`](undomanager/registerundo(withtarget:handler:).md), the `handler` closure is also [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor)-isolated to ensure safety and simplify ergonomics.
+
 ## Topics
 
 ### Registering undo operations
@@ -88,6 +90,10 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
   The name identifying the undo action.
 - [var redoActionName: String](undomanager/redoactionname.md)
   The name identifying the redo action.
+- [func setActionName(LocalizedStringResource?)](undomanager/setactionname(_:)-cci9.md)
+  Sets the name of the action associated with the Undo or Redo command using a localized string resource.
+- [func setActionName(String)](undomanager/setactionname(_:)-8lzip.md)
+  Sets the name of the action associated with the Undo or Redo command.
 ### Getting and localizing the menu item title
 - [var undoMenuItemTitle: String](undomanager/undomenuitemtitle.md)
   The title of the Undo menu command, such as Undo Paste.
@@ -119,38 +125,41 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
 - [var redoActionIsDiscardable: Bool](undomanager/redoactionisdiscardable.md)
   A Boolean value that indicates whether the next redo action is discardable.
 ### Working with notifications
+- [static let NSUndoManagerWillUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillundochange.md)
+  Posted just before an undo manager performs an undo operation.
+- [static let NSUndoManagerDidUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidundochange.md)
+  Posted just after an undo manager performs an undo operation.
+- [static let NSUndoManagerWillRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillredochange.md)
+  Posted just before an undo manager performs a redo operation.
+- [static let NSUndoManagerDidRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidredochange.md)
+  Posted just after an undo manager performs a redo operation.
 - [static let NSUndoManagerCheckpoint: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagercheckpoint.md)
   Posted whenever an undo manager opens or closes an undo group (except when it opens a top-level group) and when checking the redo stack.
 - [static let NSUndoManagerDidOpenUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidopenundogroup.md)
   Posted whenever an undo manager opens an undo group.
-- [static let NSUndoManagerDidRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidredochange.md)
-  Posted just after an undo manager performs a redo operation.
-- [static let NSUndoManagerDidUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidundochange.md)
-  Posted just after an undo manager performs an undo operation.
 - [static let NSUndoManagerWillCloseUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillcloseundogroup.md)
   Posted before an undo manager closes an undo group.
 - [static let NSUndoManagerDidCloseUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup.md)
   Posted after an undo manager closes an undo group.
-- [static let NSUndoManagerWillRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillredochange.md)
-  Posted just before an undo manager performs a redo operation.
-- [static let NSUndoManagerWillUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillundochange.md)
-  Posted just before an undo manager performs an undo operation.
 - [let NSUndoManagerGroupIsDiscardableKey: String](nsundomanagergroupisdiscardablekey.md)
   A key, used in a notification’s user info, that indicates the undo group contains only discardable actions.
-### Structures
-- [UndoManager.CheckpointMessage](undomanager/checkpointmessage.md)
-- [UndoManager.DidCloseUndoGroupMessage](undomanager/didcloseundogroupmessage.md)
-- [UndoManager.DidOpenUndoGroupMessage](undomanager/didopenundogroupmessage.md)
-- [UndoManager.DidRedoChangeMessage](undomanager/didredochangemessage.md)
-- [UndoManager.DidUndoChangeMessage](undomanager/didundochangemessage.md)
-- [UndoManager.WillCloseUndoGroupMessage](undomanager/willcloseundogroupmessage.md)
-- [UndoManager.WillRedoChangeMessage](undomanager/willredochangemessage.md)
+### Working with notification messages
 - [UndoManager.WillUndoChangeMessage](undomanager/willundochangemessage.md)
-### Instance Methods
-- [func setActionName(String)](undomanager/setactionname(_:)-8lzip.md)
-  Sets the name of the action associated with the Undo or Redo command.
-- [func setActionName(LocalizedStringResource?)](undomanager/setactionname(_:)-cci9.md)
-  Set the name of the action associated with the Undo or Redo command.
+  A message that an undo manager sends before undoing a change.
+- [UndoManager.DidUndoChangeMessage](undomanager/didundochangemessage.md)
+  A message that an undo manager sends after undoing a change.
+- [UndoManager.WillRedoChangeMessage](undomanager/willredochangemessage.md)
+  A message that an undo manager sends before redoing a change.
+- [UndoManager.DidRedoChangeMessage](undomanager/didredochangemessage.md)
+  A message that an undo manager sends after redoing a change.
+- [UndoManager.CheckpointMessage](undomanager/checkpointmessage.md)
+  A message that an undo manager sends at certain checkpoints.
+- [UndoManager.DidOpenUndoGroupMessage](undomanager/didopenundogroupmessage.md)
+  A message that an undo manager sends after opening an undo group.
+- [UndoManager.WillCloseUndoGroupMessage](undomanager/willcloseundogroupmessage.md)
+  A message that an undo manager sends before closing an undo group.
+- [UndoManager.DidCloseUndoGroupMessage](undomanager/didcloseundogroupmessage.md)
+  A message that an undo manager sends after closing an undo group.
 
 ## Relationships
 

@@ -31,10 +31,6 @@ Callers may want to set a deactivation policy because [`deactivateItem(_:replyHa
   An option to always perform deactivation calls.
 ### Working with raw values
 - [init(rawValue: UInt)](fsvolume/itemdeactivationoptions/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsvolume/itemdeactivationoptions/equatable-implementations.md)
-- [OptionSet Implementations](fsvolume/itemdeactivationoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](fsvolume/itemdeactivationoptions/setalgebra-implementations.md)
 
 ## Relationships
 

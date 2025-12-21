@@ -22,7 +22,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [AVError.Code.airPlayControllerRequiresInternet](averror-swift.struct/code/airplaycontrollerrequiresinternet.md)
   The AirPlay controller requires an internet connection to function.
 - [AVError.Code.airPlayReceiverRequiresInternet](averror-swift.struct/code/airplayreceiverrequiresinternet.md)
@@ -33,6 +33,7 @@ enum Code
   The app isn’t authorized to play media.
 - [AVError.Code.applicationIsNotAuthorizedToUseDevice](averror-swift.struct/code/applicationisnotauthorizedtousedevice.md)
   The user denied this app permission to capture media.
+- [AVError.Code.autoWhiteBalanceNotLocked](averror-swift.struct/code/autowhitebalancenotlocked.md)
 - [AVError.Code.compositionTrackSegmentsNotContiguous](averror-swift.struct/code/compositiontracksegmentsnotcontiguous.md)
   The composition can’t add the source media because it contains gaps.
 - [AVError.Code.contentIsNotAuthorized](averror-swift.struct/code/contentisnotauthorized.md)
@@ -57,6 +58,8 @@ enum Code
   Your app can’t access the device because another session is currently using it.
 - [AVError.Code.deviceInUseByAnotherApplication](averror-swift.struct/code/deviceinusebyanotherapplication.md)
   Your app can’t access the device because another app is currently using it.
+- [AVError.Code.deviceIsNotAvailableInBackground](averror-swift.struct/code/deviceisnotavailableinbackground.md)
+  You attempted to start a capture session in the background, which isn’t allowed in iOS.
 - [AVError.Code.deviceLockedForConfigurationByAnotherProcess](averror-swift.struct/code/devicelockedforconfigurationbyanotherprocess.md)
   Your app can’t change device settings because another process currently controls the device.
 - [AVError.Code.deviceNotConnected](averror-swift.struct/code/devicenotconnected.md)
@@ -91,6 +94,7 @@ enum Code
   The system can’t open the file because it’s in an unrecognized format.
 - [AVError.Code.fileTypeDoesNotSupportSampleReferences](averror-swift.struct/code/filetypedoesnotsupportsamplereferences.md)
   The file type doesn’t support sample references.
+- [AVError.Code.followExternalSyncDeviceTimedOut](averror-swift.struct/code/followexternalsyncdevicetimedout.md)
 - [AVError.Code.formatUnsupported](averror-swift.struct/code/formatunsupported.md)
   The current asset format isn’t supported.
 - [AVError.Code.incompatibleAsset](averror-swift.struct/code/incompatibleasset.md)
@@ -125,6 +129,8 @@ enum Code
   Recording stopped because the format of the source media changed.
 - [AVError.Code.mediaDiscontinuity](averror-swift.struct/code/mediadiscontinuity.md)
   Recording stopped because there was an interruption in the input media.
+- [AVError.Code.mediaExtensionConflict](averror-swift.struct/code/mediaextensionconflict.md)
+- [AVError.Code.mediaExtensionDisabled](averror-swift.struct/code/mediaextensiondisabled.md)
 - [AVError.Code.mediaServicesWereReset](averror-swift.struct/code/mediaserviceswerereset.md)
   The system couldn’t perform the operation because media services were unavailable.
 - [AVError.Code.noCompatibleAlternatesForExternalDisplay](averror-swift.struct/code/nocompatiblealternatesforexternaldisplay.md)
@@ -135,6 +141,7 @@ enum Code
   No image is available in the media at the indicated time.
 - [AVError.Code.noLongerPlayable](averror-swift.struct/code/nolongerplayable.md)
   The asset is no longer playable.
+- [AVError.Code.noSmartFramingsEnabled](averror-swift.struct/code/nosmartframingsenabled.md)
 - [AVError.Code.noSourceTrack](averror-swift.struct/code/nosourcetrack.md)
   The asset doesn’t contain a source track.
 - [AVError.Code.operationCancelled](averror-swift.struct/code/operationcancelled.md)
@@ -185,11 +192,6 @@ enum Code
   Your app requested unsupported output settings.
 - [AVError.Code.videoCompositorFailed](averror-swift.struct/code/videocompositorfailed.md)
   The compositor couldn’t composite video frames.
-- [AVError.Code.deviceIsNotAvailableInBackground](averror-swift.struct/code/deviceisnotavailableinbackground.md)
-  You attempted to start a capture session in the background, which isn’t allowed in iOS.
-### Enumeration Cases
-- [AVError.Code.mediaExtensionConflict](averror-swift.struct/code/mediaextensionconflict.md)
-- [AVError.Code.mediaExtensionDisabled](averror-swift.struct/code/mediaextensiondisabled.md)
 ### Initializers
 - [init?(rawValue: Int)](averror-swift.struct/code/init(rawvalue:).md)
 

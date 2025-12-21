@@ -6,13 +6,18 @@
 The automatic behavior moves and rotates the object to ensure that it does not penetrate the collision targets.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 case automatic
 ```
+
+## See Also
+
+- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.disabled](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/disabled.md)
+  Use this value to disable collision resolution.
 
 
 ---

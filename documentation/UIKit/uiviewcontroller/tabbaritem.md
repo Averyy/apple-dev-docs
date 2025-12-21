@@ -27,6 +27,7 @@ The default value is a tab bar item that displays the view controller’s title.
 
 ## See Also
 
+- [var tab: UITab?](uiviewcontroller/tab.md)
 - [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
   The full-screen scroll view to synchronize with a scrolling tab bar.
 

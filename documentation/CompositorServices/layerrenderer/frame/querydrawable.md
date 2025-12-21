@@ -22,6 +22,11 @@ The drawable type, or `nil` if the layer is in the [`LayerRenderer.State.paused`
 
 Fetch the drawable when you’re ready to encode the drawing commands for the frame. The [`LayerRenderer.Drawable`](layerrenderer/drawable.md) type contains the textures and other information you need to set up your render descriptor in Metal.
 
+## See Also
+
+- [func queryDrawables() -> [LayerRenderer.Drawable]](layerrenderer/frame/querydrawables.md)
+  Returns the array of drawables expected to be used for the given frame. These drawables each have textures, transforms and timing information for drawing the frame.
+
 
 ---
 

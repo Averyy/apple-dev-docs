@@ -5,8 +5,8 @@
 Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

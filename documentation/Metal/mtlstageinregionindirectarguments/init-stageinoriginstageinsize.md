@@ -17,10 +17,6 @@
 init(stageInOrigin: (UInt32, UInt32, UInt32), stageInSize: (UInt32, UInt32, UInt32))
 ```
 
-## See Also
-
-- [init()](mtlstageinregionindirectarguments/init.md)
-
 
 ---
 

@@ -18,7 +18,7 @@ var animatesToStartingPositionsOnCancelOrFail: Bool { get set }
 
 This property should be set immediately after creating the dragging session.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

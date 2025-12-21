@@ -4,6 +4,12 @@
 
 Converts data into human-readable text using formatters and locales.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 222: [`Enhance your app’s multilingual experience`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/222).

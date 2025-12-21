@@ -42,8 +42,6 @@ static let source: MetricsKey
   A key associated with a validation maximum error metric.
 - [static let validationMeanAveragePrecision: MetricsKey](metricskey/validationmeanaverageprecision.md)
   A key associated with a validation mean average precision metric.
-- [var rawValue: String](metricskey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

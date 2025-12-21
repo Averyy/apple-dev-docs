@@ -20,6 +20,10 @@ Creates a new memory fence instance.
 func makeFence() -> (any MTLFence)?
 ```
 
+## Mentions
+
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+
 ## See Also
 
 - [func makeEvent() -> (any MTLEvent)?](mtldevice/makeevent.md)

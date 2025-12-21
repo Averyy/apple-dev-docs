@@ -29,9 +29,6 @@ The system provides an instance of this structure to your app when a person choo
   The contact’s full name.
 - [let photo: URL?](journalingsuggestion/contact/photo.md)
   The URL to an image on disk for the contact photo.
-### Type Aliases
-- [JournalingSuggestion.Contact.JournalingSuggestionContent](journalingsuggestion/contact/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

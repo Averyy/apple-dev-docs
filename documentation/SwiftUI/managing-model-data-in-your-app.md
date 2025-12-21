@@ -105,7 +105,7 @@ However, `LibraryView` doesn’t form a dependency on the property `title` becau
 
 > **Note**: Observation tracks changes to any observable property that appears in the execution scope of a view’s [`body`](view/body-8kl5o.md) property.
 
-You can also share an observable model data object with another view. The receiving view forms a dependency if it reads any properties of the object in the its [`body`](view/body-8kl5o.md). For example, in the following code `LibraryView` shares an instance of `Book` with `BookView`, and `BookView` displays the book’s `title`. If the book’s `title` changes, SwiftUI updates only `BookView`, and not `LibraryView`, because only `BookView` reads the `title` property.
+You can also share an observable model data object with another view. The receiving view forms a dependency if it reads any properties of the object in its [`body`](view/body-8kl5o.md). For example, in the following code `LibraryView` shares an instance of `Book` with `BookView`, and `BookView` displays the book’s `title`. If the book’s `title` changes, SwiftUI updates only `BookView`, and not `LibraryView`, because only `BookView` reads the `title` property.
 
 ```swift
 struct LibraryView: View {
@@ -158,7 +158,7 @@ struct BookView: View {
 }
 ```
 
-However, a view that stores a reference to the observable object updates if the reference changes. This happens because the stored reference is part of the view’s value and not because the object is observable. For example, if the reference to book in the follow code changes, SwiftUI updates the view:
+However, a view that stores a reference to the observable object updates if the reference changes. This happens because the stored reference is part of the view’s value and not because the object is observable. For example, if the reference to book in the following code changes, SwiftUI updates the view:
 
 ```swift
 struct BookView: View {
@@ -363,7 +363,7 @@ struct BookEditView: View {
 }
 ```
 
-You can use the [`Bindable`](bindable.md) property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) object. This includes global variables, properties that exists outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
+You can use the [`Bindable`](bindable.md) property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) object. This includes global variables, properties that exist outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
 
 ```swift
 struct LibraryView: View {
@@ -384,7 +384,7 @@ The `@Bindable` variable `book` provides a binding that connects [`TextField`](t
 
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../Observation/Observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
@@ -392,7 +392,7 @@ The `@Bindable` variable `book` provides a binding that connects [`TextField`](t
   A property wrapper type that instantiates an observable object.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject : AnyObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../Combine/ObservableObject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

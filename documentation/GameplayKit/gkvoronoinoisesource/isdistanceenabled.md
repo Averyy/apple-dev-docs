@@ -23,7 +23,7 @@ var isDistanceEnabled: Bool { get set }
 
 A Voronoi noise source generates a field of noise values by randomly picking seed points at random positions in a space, then dividing the space into cells so that all the points in a cell are closer to that cell’s seed point than to any other seed point.
 
-After dividing space into cells, the noise source randomly assigns a unique value to each. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false) (the default), all points within a cell have the same value, creating a crystalline appearance. If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), the noise source adds to each point’s value the distance from that point to the nearest seed point. With a low value for the [`displacement`](gkvoronoinoisesource/displacement.md) property, adding distance to noise can create textures like cracked mud; with a high displacement value, adding distance creates textures like bubbling liquid.
+After dividing space into cells, the noise source randomly assigns a unique value to each. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), all points within a cell have the same value, creating a crystalline appearance. If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), the noise source adds to each point’s value the distance from that point to the nearest seed point. With a low value for the [`displacement`](gkvoronoinoisesource/displacement.md) property, adding distance to noise can create textures like cracked mud; with a high displacement value, adding distance creates textures like bubbling liquid.
 
 ## See Also
 

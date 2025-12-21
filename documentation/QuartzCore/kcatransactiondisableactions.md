@@ -21,7 +21,7 @@ let kCATransactionDisableActions: String
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), implicit actions for property changes made within the transaction group are suppressed.  The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+If [`true`](https://developer.apple.com/documentation/Swift/true), implicit actions for property changes made within the transaction group are suppressed.  The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
 
 ## See Also
 

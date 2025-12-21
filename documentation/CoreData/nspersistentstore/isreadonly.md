@@ -22,7 +22,7 @@ var isReadOnly: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is read-only, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is read-only, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

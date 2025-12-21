@@ -15,9 +15,6 @@ enum AuthorizationStatus
 
 ## Topics
 
-### Operators
-- [static func == (AuthorizationStatus, AuthorizationStatus) -> Bool](authorizationstatus/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [AuthorizationStatus.authorized](authorizationstatus/authorized.md)
   A person authorized the app to use FinanceKit services.
@@ -25,19 +22,6 @@ enum AuthorizationStatus
   A person denied the use of FinanceKit services for the app.
 - [AuthorizationStatus.notDetermined](authorizationstatus/notdetermined.md)
   A person has not chosen whether the app can use FinanceKit services.
-### Initializers
-- [init(from: any Decoder) throws](authorizationstatus/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](authorizationstatus/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](authorizationstatus/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](authorizationstatus/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](authorizationstatus/equatable-implementations.md)
 
 ## Relationships
 

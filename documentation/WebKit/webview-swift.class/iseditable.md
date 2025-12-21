@@ -17,7 +17,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver allows the user to edit the HTML document, [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver allows the user to edit the HTML document, [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 You can change the receiver’s document programmatically regardless of this setting.
 

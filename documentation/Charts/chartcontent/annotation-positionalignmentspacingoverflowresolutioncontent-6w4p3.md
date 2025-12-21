@@ -29,6 +29,15 @@ func annotation<C>(position: AnnotationPosition = .automatic, alignment: Alignme
 - `overflowResolution`: How to resolve the annotation exceeding the boundary of the plot.
 - `content`: A view builder that creates the annotation.
 
+## See Also
+
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-65emh.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-26b2f.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+
 
 ---
 

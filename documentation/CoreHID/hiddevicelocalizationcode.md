@@ -22,9 +22,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceLocalizationCode, HIDDeviceLocalizationCode) -> Bool](hiddevicelocalizationcode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [HIDDeviceLocalizationCode.arabic](hiddevicelocalizationcode/arabic.md)
   This maps to Arabic in the HID specification.
@@ -98,14 +95,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
   This maps to Not Supported in the HID specification.
 - [HIDDeviceLocalizationCode.yugoslavia](hiddevicelocalizationcode/yugoslavia.md)
   This maps to Yugoslavia in the HID specification.
-### Instance Properties
-- [var hashValue: Int](hiddevicelocalizationcode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hiddevicelocalizationcode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hiddevicelocalizationcode/equatable-implementations.md)
 
 ## Relationships
 

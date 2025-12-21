@@ -57,7 +57,6 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](contiguousarray/withunsafemutablebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
-- [Attachable Implementations](contiguousarray/attachable-implementations.md)
 - [BidirectionalCollection Implementations](contiguousarray/bidirectionalcollection-implementations.md)
 - [Collection Implementations](contiguousarray/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](contiguousarray/customdebugstringconvertible-implementations.md)

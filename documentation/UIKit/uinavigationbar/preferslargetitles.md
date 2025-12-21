@@ -20,9 +20,9 @@ var prefersLargeTitles: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the navigation bar allows the title to be displayed out-of-line and using a larger font. The navigation item used to build the bar must specify whether it wants its title displayed in the large or small format. Use the [`largeTitleDisplayMode`](uinavigationitem/largetitledisplaymode-swift.property.md) property to configure the title’s appearance.
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the navigation bar allows the title to be displayed out-of-line and using a larger font. The navigation item used to build the bar must specify whether it wants its title displayed in the large or small format. Use the [`largeTitleDisplayMode`](uinavigationitem/largetitledisplaymode-swift.property.md) property to configure the title’s appearance.
 
-When the property is set to [`false`](https://developer.apple.com/documentation/swift/false), the navigation bar displays the title inline with the other bar button items.
+When the property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the navigation bar displays the title inline with the other bar button items.
 
 ## See Also
 

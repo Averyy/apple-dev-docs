@@ -21,6 +21,7 @@ case verified(SignedType)
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion

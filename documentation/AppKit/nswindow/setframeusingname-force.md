@@ -17,7 +17,7 @@ func setFrameUsingName(_ name: NSWindow.FrameAutosaveName, force: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when `name` is read and the frame is set successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) when `name` is read and the frame is set successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

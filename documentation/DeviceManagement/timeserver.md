@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the time server.
+The payload that configures the time server.
 
 **Availability**:
 - macOS 10.12.4+
@@ -73,21 +73,21 @@ If multiple profiles with this payload are sent, the system sets the device’s 
 ## See Also
 
 - [object Declarations](declarations.md)
-  The payload to apply a set of declaration to the device through the Settings app.
+  The payload that applies a set of declarations to the device through the Settings app.
 - [object EnergySaver](energysaver.md)
-  The payload you use to configure energy-saver settings.
+  The payload that configures Energy Saver settings.
 - [object FileProvider](fileprovider.md)
-  The payload you use to configure file provider settings.
+  The payload that configures file provider settings.
 - [object Font](font.md)
-  The payload you use to configure fonts.
+  The payload that configures fonts.
 - [object LockScreenMessage](lockscreenmessage.md)
-  The payload you use to configure a Lock screen message.
+  The payload that configures a Lock Screen message.
 - [object Screensaver](screensaver.md)
-  The payload you use to configure the screen saver.
+  The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
-  The payload you use to configure system extensions.
+  The payload that configures system extensions.
 - [object SystemLogging](systemlogging.md)
-  The payload you use to configure system logging.
+  The payload that configures system logging.
 
 
 ---

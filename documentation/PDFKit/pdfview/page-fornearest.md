@@ -22,7 +22,7 @@ func page(for point: NSPoint, nearest: Bool) -> PDFPage?
 
 #### Discussion
 
-Returns `NULL` if there’s no page at the specified point and `nearest` is set to [`false`](https://developer.apple.com/documentation/swift/false).
+Returns `NULL` if there’s no page at the specified point and `nearest` is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

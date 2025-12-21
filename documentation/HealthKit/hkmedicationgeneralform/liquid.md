@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is taken as a liquid, such as a syrup.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

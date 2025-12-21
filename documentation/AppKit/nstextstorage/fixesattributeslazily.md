@@ -16,7 +16,7 @@ var fixesAttributesLazily: Bool { get }
 
 #### Discussion
 
-When subclassing, the default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), meaning that your subclass fixes attributes immediately when they change. The system’s concrete subclass overrides this property and sets it to [`true`](https://developer.apple.com/documentation/swift/true).
+When subclassing, the default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), meaning that your subclass fixes attributes immediately when they change. The system’s concrete subclass overrides this property and sets it to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

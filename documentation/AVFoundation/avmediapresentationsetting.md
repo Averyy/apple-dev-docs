@@ -6,13 +6,13 @@
 For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -47,6 +47,25 @@ Each selectable setting is associated with a media characteristic that one or mo
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+  Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
+- [class AVMediaSelection](avmediaselection.md)
+  An object that represents a complete rendition of media selection options on an asset.
+- [class AVMediaSelectionGroup](avmediaselectiongroup.md)
+  An object that represents a collection of mutually exclusive options for the presentation of media within an asset.
+- [class AVMediaSelectionOption](avmediaselectionoption.md)
+  An object that represents a specific option for the presentation of media within a group of options.
+- [class AVMutableMediaSelection](avmutablemediaselection.md)
+  A mutable object that represents a complete rendition of media selection options on an asset.
+- [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
+  An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
 
 
 ---

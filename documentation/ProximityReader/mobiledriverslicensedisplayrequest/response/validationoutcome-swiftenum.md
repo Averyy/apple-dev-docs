@@ -19,9 +19,6 @@ enum ValidationOutcome
 
 ## Topics
 
-### Operators
-- [static func == (MobileDriversLicenseDisplayRequest.Response.ValidationOutcome, MobileDriversLicenseDisplayRequest.Response.ValidationOutcome) -> Bool](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MobileDriversLicenseDisplayRequest.Response.ValidationOutcome.approved](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/approved.md)
   A message that indicates the user approved the document response.
@@ -29,14 +26,6 @@ enum ValidationOutcome
   A message that indicates the user didn’t explicitly approve or reject the document response.
 - [MobileDriversLicenseDisplayRequest.Response.ValidationOutcome.rejected](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/rejected.md)
   A message that indicates the user rejected the document response.
-### Instance Properties
-- [var hashValue: Int](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mobiledriverslicensedisplayrequest/response/validationoutcome-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

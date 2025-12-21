@@ -16,7 +16,7 @@ optional func widgetDidBeginEditing()
 
 #### Discussion
 
-This method can be called when [`widgetAllowsEditing`](ncwidgetproviding/widgetallowsediting.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method can be called when [`widgetAllowsEditing`](ncwidgetproviding/widgetallowsediting.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

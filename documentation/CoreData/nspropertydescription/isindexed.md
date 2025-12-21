@@ -22,7 +22,7 @@ var isIndexed: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver should be indexed for searching, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Object stores can optionally use this information upon store creation for operations such as defining indexes.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver should be indexed for searching, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Object stores can optionally use this information upon store creation for operations such as defining indexes.
 
 ##### Special Considerations
 

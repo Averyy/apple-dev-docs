@@ -4,11 +4,11 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,10 +19,7 @@ class Provider
 
 #### Overview
 
-```None
-      When the containing menu for a responder-based deferred element is presented, the system asks the
-      responder chain for one of these element providers for the deferred element.
-```
+Represents an element provider for a deferred menu element. When the containing menu for a responder-based deferred element is presented, the system asks the responder chain for one of these element providers for the deferred element.
 
 ## Topics
 

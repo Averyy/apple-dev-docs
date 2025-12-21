@@ -22,7 +22,7 @@ You should prefer the use of this function over your own custom code for handlin
 
 This function uses the top-left and bottom-right corner images to determine the widths and heights of the edge areas that need to be filled. If the width or height of the bottom-left and top-right images are not sized appropriately, they may be scaled to fill their corner area. Edge areas between the corners are tiled using the corresponding image. Similarly, the center area is tiled using the specified center image.
 
-The `flipped` parameter lets you reorient the contents of each image when drawing in a flipped coordinate system. By default, images use an internal coordinate system that is not flipped. Rendering such an image in a flipped coordinate system would therefore cause the image to appear upside down. Passing [`true`](https://developer.apple.com/documentation/swift/true) for the `flipped` parameter adjusts the image’s internal coordinate system to draw it correctly in a flipped environment.
+The `flipped` parameter lets you reorient the contents of each image when drawing in a flipped coordinate system. By default, images use an internal coordinate system that is not flipped. Rendering such an image in a flipped coordinate system would therefore cause the image to appear upside down. Passing [`true`](https://developer.apple.com/documentation/Swift/true) for the `flipped` parameter adjusts the image’s internal coordinate system to draw it correctly in a flipped environment.
 
 ## Parameters
 

@@ -40,6 +40,7 @@ This property is queried once before any composition request is sent to the comp
   A Boolean value that indicates whether the compositor handles source frames that contains wide color properties.
 - [var canConformColorOfSourceFrames: Bool](avvideocompositing/canconformcolorofsourceframes.md)
   A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space.
+- [var supportsSourceTaggedBuffers: Bool](avvideocompositing/supportssourcetaggedbuffers.md)
 
 
 ---

@@ -27,12 +27,17 @@ Don’t override the `view` property in your `NSTitlebarAccessoryViewController`
 
 ## Topics
 
-### Configuring a Title Bar Accessory View Controller
+### Configuring a title bar accessory view controller
 - [var fullScreenMinHeight: CGFloat](nstitlebaraccessoryviewcontroller/fullscreenminheight.md)
   The visual minimum height of an accessory view that displays below the title bar when the window is in full screen mode.
 - [var layoutAttribute: NSLayoutConstraint.Attribute](nstitlebaraccessoryviewcontroller/layoutattribute.md)
   The location of the accessory view, in relation to the window’s title bar.
-### Responding to View Events
+### Configuring the scroll edge effect
+- [var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle](nstitlebaraccessoryviewcontroller/preferredscrolledgeeffectstyle.md)
+  The titlebar accessory’s preferred effect for content scrolling behind it.
+- [class NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle.md)
+  Styles for a scroll view’s edge effect.
+### Responding to view events
 - [func viewDidAppear()](nstitlebaraccessoryviewcontroller/viewdidappear.md)
   Called when the title bar accessory view controller’s view is fully transitioned onto the screen.
 - [func viewDidDisappear()](nstitlebaraccessoryviewcontroller/viewdiddisappear.md)

@@ -65,6 +65,9 @@ A [`PKDrawing`](pkdrawing-swift.struct.md) object stores the user-drawn content 
 ### Using reference types
 - [class PKDrawingReference](pkdrawingreference.md)
   A data structure that contains the drawing information captured by a canvas view.
+### Instance Methods
+- [func draw(in: CGContext, frame: CGRect, from: CGRect, darkUserInterfaceStyle: Bool) async](pkdrawing-swift.struct/draw(in:frame:from:darkuserinterfacestyle:).md)
+  Draws the drawing in the specified rectangle.
 
 ## Relationships
 
@@ -73,6 +76,8 @@ A [`PKDrawing`](pkdrawing-swift.struct.md) object stores the user-drawn content 
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

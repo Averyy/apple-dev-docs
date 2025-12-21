@@ -19,7 +19,7 @@ var initialSelectedAID: String { get }
 
 #### Discussion
 
-The value matches one of the entries in the [`com.apple.developer.nfc.readersession.iso7816.select-identifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key.
+The value matches one of the entries in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key.
 
 ## See Also
 

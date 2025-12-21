@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+A Boolean value that indicates the newly created passkey supports the PRF extension.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,11 @@
 ```swift
 static var supported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput { get }
 ```
+
+## See Also
+
+- [static var unsupported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md)
+  A Boolean value that indicates the newly created passkey doesn’t support the PRF extension.
 
 
 ---

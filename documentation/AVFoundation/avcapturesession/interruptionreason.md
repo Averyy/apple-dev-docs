@@ -31,8 +31,8 @@ enum InterruptionReason
   An interruption caused when your app is running in Slide Over, Split View, or Picture in Picture mode on iPad.
 - [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md)
   An interruption due to system pressure, such as thermal duress.
-### Enumeration Cases
 - [AVCaptureSession.InterruptionReason.sensitiveContentMitigationActivated](avcapturesession/interruptionreason/sensitivecontentmitigationactivated.md)
+  An interruption caused by a `SCVideoStreamAnalyzer` when it detects sensitive content on an associated [`AVCaptureDeviceInput`](avcapturedeviceinput.md).  To resume your capture session, call your analyzer’s `SCVideoStreamAnalyzer/continueStream` method.
 ### Initializers
 - [init?(rawValue: Int)](avcapturesession/interruptionreason/init(rawvalue:).md)
 

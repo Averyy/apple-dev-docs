@@ -58,20 +58,6 @@ You can subclass [`NSNotification`](nsnotification.md) to contain information in
   The object associated with the notification.
 - [var userInfo: [AnyHashable : Any]?](nsnotification/userinfo.md)
   The user information dictionary associated with the notification.
-### Type Properties
-- [static let AVPlayableDidCompleteEnterFullscreen: NSNotification.Name](nsnotification/avplayabledidcompleteenterfullscreen.md)
-- [static let AVPlayableDidCompleteExitFullscreen: NSNotification.Name](nsnotification/avplayabledidcompleteexitfullscreen.md)
-- [static let AVPlayableDidEnterViewingModeImmersive: NSNotification.Name](nsnotification/avplayabledidenterviewingmodeimmersive.md)
-- [static let AVPlayableDidEnterViewingModeMono: NSNotification.Name](nsnotification/avplayabledidenterviewingmodemono.md)
-- [static let AVPlayableDidEnterViewingModeSpatial: NSNotification.Name](nsnotification/avplayabledidenterviewingmodespatial.md)
-- [static let AVPlayableDidEnterViewingModeStereo: NSNotification.Name](nsnotification/avplayabledidenterviewingmodestereo.md)
-- [static let AVPlayableDidPause: NSNotification.Name](nsnotification/avplayabledidpause.md)
-- [static let AVPlayableDidPlay: NSNotification.Name](nsnotification/avplayabledidplay.md)
-- [static let AVPlayableDidToggleInline: NSNotification.Name](nsnotification/avplayabledidtoggleinline.md)
-- [static let AVPlayableDidToggleMuted: NSNotification.Name](nsnotification/avplayabledidtogglemuted.md)
-- [static let AVPlayableVideoBoundsDidChange: NSNotification.Name](nsnotification/avplayablevideoboundsdidchange.md)
-- [static let AVPlayableWantsPiPStart: NSNotification.Name](nsnotification/avplayablewantspipstart.md)
-- [static let AVPlayableWantsPiPStop: NSNotification.Name](nsnotification/avplayablewantspipstop.md)
 
 ## Relationships
 

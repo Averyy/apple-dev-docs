@@ -3,15 +3,15 @@
 **Framework**: Metal  
 **Kind**: struct
 
-Describes stages of GPU work.
+The segments of command execution within the Metal pass types.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,44 +21,58 @@ struct MTLStages
 
 ## Mentions
 
-- [Synchronizing resource accesses with subsequent passes with a producer-based queue barrier](synchronizing-resource-accesses-with-subsequent-passes-with-a-producer-based-queue-barrier.md)
-- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
-- [Synchronizing resource accesses within a single pass with an intrapass barrier](synchronizing-resource-accesses-within-a-single-pass-with-an-intrapass-barrier.md)
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
+- [Synchronizing passes with producer barriers](synchronizing-passes-with-producer-barriers.md)
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
 
 #### Overview
 
-All commands you encoder into command buffers relate to one or more shader stages, for example, a compute dispatch command from a compute command encoder relates to stage [`dispatch`](mtlstages/dispatch.md).
+Metal associates each command with one or more stages within a pass. Use these stage identifiers to synchronize command execution within a pass by selecting which stages wait for other stages to complete.
 
-Use these stages to issue barriers between shader stages to ensure Metal correctly synchronizes GPU commands.
+Metal 4 introduces the following unified command encoders that combine multiple stages into a single pass:
+
+- [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) instances encode render passes that run vertex, fragment, object, mesh, and tile stages.
+- [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) instances encode unified compute passes that run blit, dispatch, and acceleration structure stages.
+- [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) instances encode passes that run machine learning stages.
+
+Metal 3 provides separate command encoders for different types of work:
+
+- [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instances encode render passes that run vertex, fragment, object, mesh, and tile stages.
+- [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instances encode compute passes that run dispatch stages.
+- [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) instances encode blit passes that run blit stages, which initialize and copy data for resources, such as buffers and textures.
+- [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecommandencoder.md) instances encode passes that run acceleration structure stages, such as for ray tracing.
 
 ## Topics
 
-### Initializers
-- [init(rawValue: UInt)](mtlstages/init(rawvalue:).md)
-### Type Properties
-- [static var accelerationStructure: MTLStages](mtlstages/accelerationstructure.md)
-  Represents all acceleration structure operations.
-- [static var all: MTLStages](mtlstages/all.md)
-  Convenience mask representing all stages of GPU work.
-- [static var blit: MTLStages](mtlstages/blit.md)
-  Represents all blit operations in a pass.
-- [static var dispatch: MTLStages](mtlstages/dispatch.md)
-  Represents all compute dispatches in a compute pass.
-- [static var fragment: MTLStages](mtlstages/fragment.md)
-  Represents all fragment shader stage work in a render pass.
-- [static var machineLearning: MTLStages](mtlstages/machinelearning.md)
-  Represents all machine learning network dispatch operations.
-- [static var mesh: MTLStages](mtlstages/mesh.md)
-  Represents all mesh shader stage work work in a render pass.
-- [static var object: MTLStages](mtlstages/object.md)
-  Represents all object shader stage work in a render pass.
-- [static var resourceState: MTLStages](mtlstages/resourcestate.md)
-  Represents all sparse and placement sparse resource mapping updates.
-- [static var tile: MTLStages](mtlstages/tile.md)
-  Represents all tile shading stage work in a render pass.
+### Render pass stages
 - [static var vertex: MTLStages](mtlstages/vertex.md)
   Represents all vertex shader stage work in a render pass.
+- [static var fragment: MTLStages](mtlstages/fragment.md)
+  Represents all fragment shader stage work in a render pass.
+- [static var tile: MTLStages](mtlstages/tile.md)
+  Represents all tile shading stage work in a render pass.
+- [static var object: MTLStages](mtlstages/object.md)
+  Represents all object shader stage work in a render pass.
+- [static var mesh: MTLStages](mtlstages/mesh.md)
+  Represents all mesh shader stage work work in a render pass.
+### Compute pass stages
+- [static var dispatch: MTLStages](mtlstages/dispatch.md)
+  Represents all compute dispatches in a compute pass.
+- [static var blit: MTLStages](mtlstages/blit.md)
+  Represents all blit operations in a pass.
+- [static var accelerationStructure: MTLStages](mtlstages/accelerationstructure.md)
+  Represents all acceleration structure operations.
+- [static var machineLearning: MTLStages](mtlstages/machinelearning.md)
+  Represents all machine learning network dispatch operations.
+### Resource pass stages
+- [static var resourceState: MTLStages](mtlstages/resourcestate.md)
+  Represents all sparse and placement sparse resource mapping updates.
+### Convenience values
+- [static var all: MTLStages](mtlstages/all.md)
+  Convenience mask representing all stages of GPU work.
+### Swift support
+- [init(rawValue: UInt)](mtlstages/init(rawvalue:).md)
 
 ## Relationships
 
@@ -74,20 +88,20 @@ Use these stages to issue barriers between shader stages to ensure Metal correct
 
 ## See Also
 
-- [Synchronizing resource accesses within a single pass with an intrapass barrier](synchronizing-resource-accesses-within-a-single-pass-with-an-intrapass-barrier.md)
-  Resolve resource access conflicts between stages within a single pass by adding an intrapass barrier.
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by signaling a fence in one pass and waiting for it in another.
-- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a consumer-based intraqueue barrier.
-- [Synchronizing resource accesses with subsequent passes with a producer-based queue barrier](synchronizing-resource-accesses-with-subsequent-passes-with-a-producer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a producer-based intraqueue barrier.
-- [Synchronizing CPU and GPU Work](synchronizing-cpu-and-gpu-work.md)
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+  Block GPU stages in the a pass from running until other stages in the same pass finish.
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+  Block GPU stages in a pass until another pass unblocks it by signaling a fence.
+- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
+  Block GPU stages in a pass, and all subsequent passes, from running until stages from earlier passes finish.
+- [Synchronizing passes with producer barriers](synchronizing-passes-with-producer-barriers.md)
+  Block GPU stages in subsequent passes from running until stages in a pass, and earlier passes, finish.
+- [Synchronizing CPU and GPU work](synchronizing-cpu-and-gpu-work.md)
   Avoid stalls between CPU and GPU work by using multiple instances of a resource.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [protocol MTLFence](mtlfence.md)
-  A memory fence to capture, track, and manage resource dependencies across command encoders.
+  A synchronization mechanism that orders memory operations between GPU passes.
 - [struct MTLRenderStages](mtlrenderstages.md)
   The stages in a render pass that triggers a synchronization command.
 - [struct MTLBarrierScope](mtlbarrierscope.md)

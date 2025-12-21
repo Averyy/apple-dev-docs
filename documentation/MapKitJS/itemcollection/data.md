@@ -11,16 +11,17 @@ The raw GeoJSON data.
 ## Declaration
 
 ```swift
-attribute Object data;
+get data(): D | undefined;
+set data(data: D | undefined);
 ```
 
 #### Discussion
 
-Use the [`data`](itemcollection/data.md) object to view the original GeoJSON data. To retrieve the data as MapKit JS items, use the [`items`](itemcollection/items.md) or [`getFlattenedItemList`](itemcollection/getflatteneditemlist.md) objects.
+Use the [`data`](itemcollection/data.md) object to view the original GeoJSON data. To retrieve the data as MapKit JS items, use the [`items`](itemcollection/items.md) or [`getFlattenedItemList()`](itemcollection/getflatteneditemlist.md) objects.
 
 ## See Also
 
-- [getFlattenedItemList](itemcollection/getflatteneditemlist.md)
+- [getFlattenedItemList()](itemcollection/getflatteneditemlist.md)
   A flattened array of items that includes annotations and overlays.
 - [items](itemcollection/items.md)
   A nested list of annotations, overlays, and other item collections.

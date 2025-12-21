@@ -19,12 +19,6 @@ Returns a cookie policy that indicates whether the cookie store allows cookie st
 var cookiePolicy: WKHTTPCookieStore.CookiePolicy { get async }
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-var cookiePolicy: WKHTTPCookieStore.CookiePolicy { get async }
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `completionHandler`: The completion handler block to execute asynchronously with the cookie policy. This block has no return value, and takes the following parameter:

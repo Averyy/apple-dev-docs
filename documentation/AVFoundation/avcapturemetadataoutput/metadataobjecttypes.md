@@ -34,6 +34,8 @@ The default is an empty [`NSArray`](https://developer.apple.com/documentation/Fo
   An array of strings identifying the types of metadata objects that can be captured.
 - [var rectOfInterest: CGRect](avcapturemetadataoutput/rectofinterest.md)
   A rectangle of interest for limiting the search area for visual metadata.
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+  The required metadata object types when Cinematic Video capture is enabled.
 
 
 ---

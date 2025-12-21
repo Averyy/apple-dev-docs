@@ -11,7 +11,7 @@ The transport type of the step.
 ## Declaration
 
 ```swift
-attribute mapkit.Directions.Transport transportType;
+transportType?: string;
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ This property reflects the transport type employed by the step and may differ fr
   The written instructions for following the path that the step represents.
 - [distance](routestep/distance.md)
   The step distance, in meters.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

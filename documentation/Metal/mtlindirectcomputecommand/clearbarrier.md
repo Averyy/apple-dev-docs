@@ -22,7 +22,7 @@ func clearBarrier()
 
 #### Discussion
 
-You must set or clear barriers (as needed) before executing any of the commands in the indirect command buffer.
+You need to set or clear barriers (as needed) before executing any of the commands in the indirect command buffer.
 
 ## See Also
 

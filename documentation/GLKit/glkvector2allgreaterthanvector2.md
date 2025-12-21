@@ -19,7 +19,7 @@ func GLKVector2AllGreaterThanVector2(_ vectorLeft: GLKVector2, _ vectorRight: GL
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if each component in the first vector is greater than the corresponding component of the second vector, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if each component in the first vector is greater than the corresponding component of the second vector, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

@@ -3,8 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
+The camera rectification for this video format.
+
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

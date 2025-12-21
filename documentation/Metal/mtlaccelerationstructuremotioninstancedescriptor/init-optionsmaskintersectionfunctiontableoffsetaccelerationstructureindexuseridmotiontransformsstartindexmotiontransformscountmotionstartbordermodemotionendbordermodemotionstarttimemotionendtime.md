@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: init
 
-Creates a new acceleration structure instance.
+Creates an acceleration-structure motion instance with the property values you provide.
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +19,13 @@ Creates a new acceleration structure instance.
 init(options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectionFunctionTableOffset: UInt32, accelerationStructureIndex: UInt32, userID: UInt32, motionTransformsStartIndex: UInt32, motionTransformsCount: UInt32, motionStartBorderMode: MTLMotionBorderMode, motionEndBorderMode: MTLMotionBorderMode, motionStartTime: Float, motionEndTime: Float)
 ```
 
+#### Discussion
+
+The initializer sets the descriptor instance’s properties to the values you pass to the initializer’s parameters. However, you can change the descriptor’s property values at any time, such as between creating separate acceleration-structure motion instances. For example, apps typically assign a unique value to [`userID`](mtlaccelerationstructuremotioninstancedescriptor/userid.md) before they create each motion instance with the same descriptor.
+
 ## Parameters
 
-- `options`: An option set for new acceleration-structure motion-instances.
+- `options`: An option set for new acceleration-structure motion instances.
 - `mask`: A mask for testing ray-tracing rays in a scene’s geometry   for new acceleration-structure motion-instances.
 - `intersectionFunctionTableOffset`: An offset into the intersection-function   table for ray tracing.
 - `accelerationStructureIndex`: The index of an acceleration structure   that applies to new acceleration-structure motion-instances.
@@ -36,7 +40,7 @@ init(options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectio
 ## See Also
 
 - [init()](mtlaccelerationstructuremotioninstancedescriptor/init.md)
-  Creates a default acceleration structure instance.
+  Creates an acceleration-structure motion instance with default property values.
 
 
 ---

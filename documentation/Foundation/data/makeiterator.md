@@ -26,10 +26,6 @@ The iterator will increment byte-by-byte.
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](data/foreach(_:).md)
-  Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](data/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
 - [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](data/enumeratebytes(_:).md)
   Enumerates the contents of the data’s buffer.
 

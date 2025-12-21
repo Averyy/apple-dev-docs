@@ -22,7 +22,7 @@ let kCTFontDownloadedAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p.  If it is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), corresponding Font Asset has been downloaded.
+The value associated with this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean).  If it is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), corresponding Font Asset has been downloaded.
 
 > **Note**:  It may still be necessary to call appropriate API in order to use the font in the Font Asset.
 

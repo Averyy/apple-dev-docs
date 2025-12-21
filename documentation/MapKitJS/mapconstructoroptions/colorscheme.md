@@ -6,17 +6,17 @@
 The map’s color scheme when displaying standard or muted standard map types.
 
 **Availability**:
-- MapKit JS 5.12+
+- MapKit JS 5.13+
 
 ## Declaration
 
 ```swift
-attribute string colorScheme;
+colorScheme?: ColorScheme;
 ```
 
 #### Discussion
 
-This property accepts a property from [`mapkit.Map.ColorSchemes`](mapkit.map.colorschemes.md) to determine whether the map displays with a dark or light theme when [`Standard`](mapkit.map.maptypes/standard.md) or [`MutedStandard`](mapkit.map.maptypes/mutedstandard.md) are the configured [`mapType`](mapkit.map/maptype.md). The default is [`Light`](mapkit.map.colorschemes/light.md).
+This property accepts a property from [`ColorScheme`](colorscheme.md) to determine whether the map displays with a dark or light theme when [`Standard`](maptype/standard.md) or [`MutedStandard`](maptype/mutedstandard.md) are the configured [`mapType`](map/maptype.md). The default is [`Light`](colorscheme/light.md).
 
 The grid, user location accuracy ring, labels for marker annotations, and controls of the map change appearance to complement the Dark Mode style.
 

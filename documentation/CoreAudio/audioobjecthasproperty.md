@@ -15,6 +15,19 @@
 func AudioObjectHasProperty(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>) -> Bool
 ```
 
+#### Return Value
+
+A Boolean indicating whether or not the AudioObject has the given property.
+
+#### Discussion
+
+Queries an AudioObject about whether or not it has the given property.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to query.
+- `inAddress`: An AudioObjectPropertyAddress indicating which property is being queried.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

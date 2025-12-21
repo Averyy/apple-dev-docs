@@ -22,7 +22,7 @@ func pause()
 
 #### Discussion
 
-This method invokes the block for [`pausingHandler`](progress/pausinghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](progress/ispaused.md) property return [`true`](https://developer.apple.com/documentation/swift/true).
+This method invokes the block for [`pausingHandler`](progress/pausinghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](progress/ispaused.md) property return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If the receiver has suboperations, the system pauses their progress as well.
 

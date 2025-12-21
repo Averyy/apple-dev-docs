@@ -22,7 +22,7 @@ enum Direction
 
 ## Topics
 
-### Buffer Direction
+### Buffer direction
 - [AVSampleBufferRequest.Direction.forward](avsamplebufferrequest/direction-swift.enum/forward.md)
   The number of following samples may be zero or greater.
 - [AVSampleBufferRequest.Direction.none](avsamplebufferrequest/direction-swift.enum/none.md)

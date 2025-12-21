@@ -21,15 +21,15 @@ class AVPlayerItemLegibleOutput
 
 ## Topics
 
-### Creating a Legible Output
+### Creating a legible output
 - [init(mediaSubtypesForNativeRepresentation: [NSNumber])](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md)
   Creates an initialized legible-output object.
-### Configuring Text Styling
+### Configuring text styling
 - [var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.property.md)
   A string identifier indicating the degree of text styling to be applied to attributed strings vended by the  object.
 - [AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct.md)
   A text styling resolution.
-### Configuring the Delegate
+### Configuring the delegate
 - [var delegate: (any AVPlayerItemLegibleOutputPushDelegate)?](avplayeritemlegibleoutput/delegate.md)
   The delegate of the output class.
 - [func setDelegate((any AVPlayerItemLegibleOutputPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemlegibleoutput/setdelegate(_:queue:).md)

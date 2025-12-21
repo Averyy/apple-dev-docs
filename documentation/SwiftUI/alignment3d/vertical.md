@@ -6,7 +6,7 @@
 The alignment on the vertical axis.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

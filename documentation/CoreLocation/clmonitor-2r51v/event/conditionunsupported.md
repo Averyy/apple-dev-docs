@@ -19,7 +19,7 @@ var conditionUnsupported: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app isn’t receiving location updates because it’s monitoring a type of condition that isn’t supported.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then the app isn’t receiving location updates because it’s monitoring a type of condition that isn’t supported.
 
 ## See Also
 

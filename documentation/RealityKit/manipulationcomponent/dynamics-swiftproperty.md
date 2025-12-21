@@ -6,7 +6,7 @@
 The dynamics controlling the object’s movement and behaviors during the interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

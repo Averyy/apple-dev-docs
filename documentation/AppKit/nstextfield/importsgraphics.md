@@ -17,7 +17,7 @@ var importsGraphics: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field accepts dragged images; if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t. You can add images programmatically regardless of this setting.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the text field accepts dragged images; if [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t. You can add images programmatically regardless of this setting.
 
 ## See Also
 

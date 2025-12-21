@@ -8,7 +8,6 @@ A type for analyzing two images together.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -35,10 +34,16 @@ protocol TargetedRequest : VisionRequest
 
 ## See Also
 
-- [class TrackTranslationalImageRegistrationRequest](tracktranslationalimageregistrationrequest.md)
-  An image-analysis request that you track over time to determine the affine transform necessary to align the content of two images.
-- [class TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
-  An image-analysis request that you track over time to determine the perspective warp matrix necessary to align the content of two images.
+- [protocol ImageProcessingRequest](imageprocessingrequest.md)
+  A type for image-analysis requests that focus on a specific part of an image.
+- [protocol PoseProviding](poseproviding.md)
+  An observation that provides a collection of joints that make up a pose.
+- [protocol StatefulRequest](statefulrequest.md)
+  The protocol for a type that builds evidence of a condition over time.
+- [protocol VisionObservation](visionobservation.md)
+  A type for objects produced by image-analysis requests.
+- [protocol VisionRequest](visionrequest.md)
+  A type for image-analysis requests.
 
 
 ---

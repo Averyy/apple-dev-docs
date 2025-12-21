@@ -16,7 +16,7 @@ var accessibilityDisplayShouldInvertColors: Bool { get }
 
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), the system inverts the display. In this case, you may need to adjust your app’s drawing for optimal display.  To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
+If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), the system inverts the display. In this case, you may need to adjust your app’s drawing for optimal display.  To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
 
 ## See Also
 

@@ -21,7 +21,7 @@ class MTLPipelineBufferDescriptorArray
 
 ## Topics
 
-### Accessing Array Elements
+### Accessing array elements
 - [subscript(Int) -> MTLPipelineBufferDescriptor!](mtlpipelinebufferdescriptorarray/subscript(_:).md)
   Returns the pipeline buffer descriptor at the specified array index.
 
@@ -48,7 +48,7 @@ class MTLPipelineBufferDescriptorArray
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [struct MTLPipelineOption](mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
 

@@ -54,26 +54,6 @@ enum CLanguageStandard
   The identifier for the ISO C 2017 language standard.
 - [CLanguageStandard.iso9899_2018](clanguagestandard/iso9899_2018.md)
   The identifier for the ISO C 2017 language standard.
-### Hashing
-- [func hash(into: inout Hasher)](clanguagestandard/hash(into:).md)
-  Hashes the C language standard by feeding the item into the given hasher.
-- [var hashValue: Int](clanguagestandard/hashvalue.md)
-  The hash value for the C language standard.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](clanguagestandard/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Creating a Value
-- [init?(rawValue: String)](clanguagestandard/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](clanguagestandard/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [CLanguageStandard.RawValue](clanguagestandard/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](clanguagestandard/equatable-implementations.md)
-- [RawRepresentable Implementations](clanguagestandard/rawrepresentable-implementations.md)
 
 ## Relationships
 

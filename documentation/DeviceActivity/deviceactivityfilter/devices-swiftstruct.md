@@ -22,23 +22,12 @@ Users can control whether a device shares its data with other devices in their c
 
 ## Topics
 
-### Operators
-- [static func == (DeviceActivityFilter.Devices, DeviceActivityFilter.Devices) -> Bool](deviceactivityfilter/devices-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(Set<DeviceActivityData.Device.Model>)](deviceactivityfilter/devices-swift.struct/init(_:).md)
   Filters data for the provided device models.
-### Instance Properties
-- [var hashValue: Int](deviceactivityfilter/devices-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](deviceactivityfilter/devices-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let all: DeviceActivityFilter.Devices](deviceactivityfilter/devices-swift.struct/all.md)
   Filters data for all devices that are sharing activity data with the current device.
-### Default Implementations
-- [Equatable Implementations](deviceactivityfilter/devices-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

@@ -11,7 +11,7 @@ The offset, in CSS pixels, of the element from the bottom center.
 ## Declaration
 
 ```swift
-attribute DOMPoint anchorOffset;
+anchorOffset?: DOMPoint;
 ```
 
 ## Mentions

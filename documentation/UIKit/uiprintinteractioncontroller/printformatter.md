@@ -24,7 +24,7 @@ Assign to this property an instance of one of the concrete subclasses of [`UIPri
 
 If you set this property, `UIPrintInteractionController` sets the [`printingItems`](uiprintinteractioncontroller/printingitems.md), [`printingItem`](uiprintinteractioncontroller/printingitem.md), and [`printPageRenderer`](uiprintinteractioncontroller/printpagerenderer.md) properties to `nil`. (Only one of these properties can be set for a print job.)
 
-If this property is set and the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true)—and if the formatter represents content of more than one page—the printing options include the control for selecting a page range.
+If this property is set and the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true)—and if the formatter represents content of more than one page—the printing options include the control for selecting a page range.
 
 ## See Also
 

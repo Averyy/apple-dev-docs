@@ -17,7 +17,7 @@ func isMousePoint(_ point: NSPoint, in rect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aRect` contains `aPoint`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aRect` contains `aPoint`, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
@@ -34,12 +34,12 @@ Never use the Foundation’s [`NSPointInRect(_:_:)`](https://developer.apple.com
 
 - [func convert(NSPoint, from: NSView?) -> NSPoint](nsview/convert(_:from:)-1dq9l.md)
   Converts a point from the coordinate system of a given view to that of the view.
-- [func NSMouseInRect(_ aPoint: NSPoint, _ aRect: NSRect, _ flipped: Bool) -> Bool](../Foundation/NSMouseInRect(_:_:_:).md)
+- [func NSMouseInRect(NSPoint, NSRect, Bool) -> Bool](../Foundation/NSMouseInRect(_:_:_:).md)
   Returns a Boolean value that indicates whether the point is in the specified rectangle.
 - [var isFlipped: Bool](nsview/isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.
 - [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsview/acceptsfirstmouse(for:).md)
-  Overridden by subclasses to return [`true`](https://developer.apple.com/documentation/swift/true) if the view should be sent a [`mouseDown(with:)`](nsresponder/mousedown(with:).md) message for an initial mouse-down event, [`false`](https://developer.apple.com/documentation/swift/false) if not.
+  Returns a Boolean value that indicates whether the view accepts the initial mouse-down event.
 - [func hitTest(NSPoint) -> NSView?](nsview/hittest(_:).md)
   Returns the farthest descendant of the view in the view hierarchy (including itself) that contains a specified point, or `nil` if that point lies completely outside the view.
 - [func performKeyEquivalent(with: NSEvent) -> Bool](nsview/performkeyequivalent(with:).md)

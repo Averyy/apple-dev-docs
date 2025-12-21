@@ -25,7 +25,7 @@ A new sky cube texture object.
 
 #### Discussion
 
-The newly created texture is a cube texture; that is, its [`isCube`](mdltexture/iscube.md) property is [`true`](https://developer.apple.com/documentation/swift/true), and its [`dimensions`](mdltexture/dimensions.md) property reflects the vertical layout of cube faces.
+The newly created texture is a cube texture; that is, its [`isCube`](mdltexture/iscube.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), and its [`dimensions`](mdltexture/dimensions.md) property reflects the vertical layout of cube faces.
 
 This initializer does not generate texel data; the [`MDLSkyCubeTexture`](mdlskycubetexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](mdltexture.md) methods listed in Accessing Texture Data.
 

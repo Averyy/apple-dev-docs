@@ -32,19 +32,13 @@ enum VideoReaderError
   An error that indicates that the VideoReader cannot find a video track.
 - [VideoReaderError.sourceCameraNotAvailable](videoreadererror/sourcecameranotavailable.md)
   An error that indicates that no cameras are available.
-- [var errorDescription: String?](videoreadererror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (VideoReaderError, VideoReaderError) -> Bool](videoreadererror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
 - [VideoReaderError.captureSessionStopped](videoreadererror/capturesessionstopped.md)
   An error that indicates that the capture session stopped.
+### Getting the debug description
+- [var debugDescription: String](videoreadererror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](videoreadererror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](videoreadererror/equatable-implementations.md)
-- [Error Implementations](videoreadererror/error-implementations.md)
-- [LocalizedError Implementations](videoreadererror/localizederror-implementations.md)
 
 ## Relationships
 

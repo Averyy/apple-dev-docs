@@ -22,9 +22,9 @@ let AVURLAssetPreferPreciseDurationAndTimingKey: String
 
 #### Discussion
 
-Setting a value of [`true`](https://developer.apple.com/documentation/swift/true) indicates longer loading times are acceptable in cases where you require precise timing. Container formats like QuickTime and MPEG-4 provide sufficient timing information and don’t require additional parsing to retrieve it. Other formats don’t provide sufficient summary information, and the system can’t accurately calculate the resource’s duration and timing without examining the media content.
+Setting a value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates longer loading times are acceptable in cases where you require precise timing. Container formats like QuickTime and MPEG-4 provide sufficient timing information and don’t require additional parsing to retrieve it. Other formats don’t provide sufficient summary information, and the system can’t accurately calculate the resource’s duration and timing without examining the media content.
 
-If you only intend to play the asset, the default value of [`false`](https://developer.apple.com/documentation/swift/false) is sufficient because [`AVPlayer`](avplayer.md) supports approximate random access by time when full precision isn’t available. If you intend to insert the asset into [`AVMutableComposition`](avmutablecomposition.md) or [`AVMutableMovie`](avmutablemovie.md), precise random access is typically desirable, and you should set this option to [`true`](https://developer.apple.com/documentation/swift/true).
+If you only intend to play the asset, the default value of [`false`](https://developer.apple.com/documentation/Swift/false) is sufficient because [`AVPlayer`](avplayer.md) supports approximate random access by time when full precision isn’t available. If you intend to insert the asset into [`AVMutableComposition`](avmutablecomposition.md) or [`AVMutableMovie`](avmutablemovie.md), precise random access is typically desirable, and you should set this option to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 
@@ -48,6 +48,8 @@ If you only intend to play the asset, the default value of [`false`](https://dev
   A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
 - [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
   A value that specifies the attribution of the URLs that this asset requests.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 
 ---

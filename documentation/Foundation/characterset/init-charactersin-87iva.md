@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize with a closed range of integers.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,10 @@
 ```swift
 init(charactersIn range: ClosedRange<Unicode.Scalar>)
 ```
+
+#### Discussion
+
+It is the caller’s responsibility to ensure that the values represent valid `Unicode.Scalar` values, if that is what is desired.
 
 
 ---

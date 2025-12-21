@@ -21,7 +21,7 @@ func canApply(outputSettings: [String : Any]?, forMediaType mediaType: AVMediaTy
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the format supports the output settings; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the format supports the output settings; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

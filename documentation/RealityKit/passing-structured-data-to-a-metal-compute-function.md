@@ -8,7 +8,7 @@ Send nontexture data from Swift to your Metal shaders using a shared header file
 
 [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder) provides [`setTexture(_:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setTexture(_:index:)) to pass image data to a Metal compute function. Compute functions can access those textures using `[[texture(``)]]`. The compute command encoder doesn’t, however, provide an easy way to pass structured data to a compute function. You pass all nonimage data as an unstructured buffer using the encoder’s [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) methods. It’s possible to use [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) to pass data contained in a Swift struct to your compute function, which can receive it as a Metal struct as long as the two structs use the same exact memory layout. By using a bridging header and defining the struct in C, Metal and Swift can import the same header file and use the same struct with the same layout in memory.
 
-> **Note**: This article shows how to use a struct contained in a single header file that’s imported by both Swift and Metal. See the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code for two different examples of passing data, one that uses a separate Swift and Metal struct with the same layout in memory, and another that uses the approach from this article.
+> **Note**: This article shows how to use a struct contained in a single header file that’s imported by both Swift and Metal. See the <doc:implementing-special-rendering-effects-with-realitykit-postprocessing sample code for two different examples of passing data, one that uses a separate Swift and Metal struct with the same layout in memory, and another that uses the approach from this article.
 
 ##### Create a Header File
 
@@ -81,7 +81,7 @@ void myPostProcess(uint2 gid [[thread_position_in_grid]],
 
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
   Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
   Make sure your postprocess effect works on all devices.

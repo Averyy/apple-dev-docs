@@ -13,7 +13,6 @@ Sums the loss of all samples in the batch.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

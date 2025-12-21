@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The `AudioChannelDescription`s that describe the layout.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

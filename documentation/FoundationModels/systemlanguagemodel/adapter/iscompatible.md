@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Returns true when an asset pack is an Foundation Models Adapter and compatible with current system base model.
+Returns a Boolean value that indicates whether an asset pack is an on-device foundation model adapter and is compatible with the system base model version on the runtime device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,9 @@ static func isCompatible(_ assetPack: AssetPack) -> Bool
 
 #### Discussion
 
-This compatibility check is designed to run before downloading the asset pack. It only performs validation on the asset pack name and metadata. `SystemLanguageModel/init(adapterName:)` might still throw errors even if the corresponding asset pack is compatible.
+Use this check when choosing an adapter asset pack to download. This check only validates the asset pack name and metadata, so initializing the adapter with [`init(name:)`](systemlanguagemodel/adapter/init(name:).md) — or loading the adapter onto the base model with [`init(adapter:guardrails:)`](systemlanguagemodel/init(adapter:guardrails:).md) — may throw errors if the adapter has a compatibility issue despite having correct metadata.
+
+> **Note**: Run this check before you download an adapter asset pack to confirm if it’s usable on the runtime device.
 
 ## See Also
 

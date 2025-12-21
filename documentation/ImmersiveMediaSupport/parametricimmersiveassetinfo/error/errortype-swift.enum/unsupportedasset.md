@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-An indication that the asset cannot be converted due to currently unsupported camera model or capture mode.
+Indicates that the asset can’t be converted due to a currently unsupported camera model or capture mode.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

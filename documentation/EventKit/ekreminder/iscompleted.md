@@ -21,11 +21,11 @@ var isCompleted: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) will set [`completionDate`](ekreminder/completiondate.md) to the current date; setting this property to [`false`](https://developer.apple.com/documentation/swift/false) will set `completionDate` to `nil`.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) will set [`completionDate`](ekreminder/completiondate.md) to the current date; setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) will set `completionDate` to `nil`.
 
 ##### Special Considerations
 
-If the reminder was completed using a different client, you may encounter the case where this property is [`true`](https://developer.apple.com/documentation/swift/true), but `completionDate` is `nil`.
+If the reminder was completed using a different client, you may encounter the case where this property is [`true`](https://developer.apple.com/documentation/Swift/true), but `completionDate` is `nil`.
 
 ## See Also
 

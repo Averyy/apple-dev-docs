@@ -200,6 +200,8 @@ For information on automating Xcode Cloud with the App Store Connect API, see [`
 
 ## See Also
 
+- [Getting started with Xcode Cloud](getting-started-with-xcode-cloud.md)
+  A quick start guide to getting your project set up with Xcode Cloud for continuous integration, development, and distribution.
 - [About continuous integration and delivery with Xcode Cloud](about-continuous-integration-and-delivery-with-xcode-cloud.md)
   Learn how continuous integration and delivery with Xcode Cloud helps you create high-quality apps and frameworks.
 - [Setting up your project to use Xcode Cloud](setting-up-your-project-to-use-xcode-cloud.md)

@@ -36,24 +36,10 @@ This object uses a convolutional neural network for training the style transfer 
   A text representation of the model parameters that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mlstyletransfer/modelparameters/modelalgorithmtype/playgrounddescription.md)
   A description of the model parameters shown in a playground.
-### Hashing an algorithm type
-- [var hashValue: Int](mlstyletransfer/modelparameters/modelalgorithmtype/hashvalue.md)
-- [func hash(into: inout Hasher)](mlstyletransfer/modelparameters/modelalgorithmtype/hash(into:).md)
-- [static func != (Self, Self) -> Bool](mlstyletransfer/modelparameters/modelalgorithmtype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Working with raw values
-- [init?(rawValue: String)](mlstyletransfer/modelparameters/modelalgorithmtype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-- [var rawValue: String](mlstyletransfer/modelparameters/modelalgorithmtype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.RawValue](mlstyletransfer/modelparameters/modelalgorithmtype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customdebugstringconvertible-implementations.md)
 - [CustomPlaygroundDisplayConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/equatable-implementations.md)
-- [RawRepresentable Implementations](mlstyletransfer/modelparameters/modelalgorithmtype/rawrepresentable-implementations.md)
 
 ## Relationships
 

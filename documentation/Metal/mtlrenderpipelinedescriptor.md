@@ -21,10 +21,10 @@ class MTLRenderPipelineDescriptor
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
-- [Rendering to Multiple Texture Slices in a Draw Command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Overview
 
@@ -41,10 +41,10 @@ If the vertex shader has an argument with per-vertex input attributes, set the [
 If a color attachment supports multisampling (essentially, the attachment is an [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) type color texture), you can create multiple samples per fragment, and the following rendering pipeline descriptor properties determine coverage:
 
 - [`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md) is the number of samples for each pixel.
-- If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU uses the alpha channel fragment output for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
-- If [`isAlphaToOneEnabled`](mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU changes alpha channel fragment values for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
+- If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the GPU uses the alpha channel fragment output for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
+- If [`isAlphaToOneEnabled`](mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the GPU changes alpha channel fragment values for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
 
-If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
+If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
 
 To determine a final coverage mask, the function performs a logical `AND` on the resulting coverage mask `alphaCoverageMask` with the masks from the rasterizer and fragment shader, as the following code shows:
 
@@ -59,10 +59,10 @@ finalCoverageMask = originalRasterizerCoverageMask
 
 ## Topics
 
-### Identifying the Render Pipeline State Object
+### Identifying the render pipeline state object
 - [var label: String?](mtlrenderpipelinedescriptor/label.md)
   A string that identifies the render pipeline descriptor.
-### Specifying Graphics Functions and Associated Data
+### Specifying graphics functions and associated data
 - [var vertexFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/vertexfunction.md)
   The vertex function the pipeline calls to process vertices.
 - [var fragmentFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/fragmentfunction.md)
@@ -71,15 +71,15 @@ finalCoverageMask = originalRasterizerCoverageMask
   The maximum function call depth from the top-most vertex shader function.
 - [var maxFragmentCallStackDepth: Int](mtlrenderpipelinedescriptor/maxfragmentcallstackdepth.md)
   The maximum function call depth from the top-most fragment shader function.
-### Specifying Buffer Layouts and Fetch Behavior
+### Specifying buffer layouts and fetch behavior
 - [var vertexDescriptor: MTLVertexDescriptor?](mtlrenderpipelinedescriptor/vertexdescriptor.md)
   The organization of vertex data in an attribute’s argument table.
-### Specifying Buffer Mutability
+### Specifying buffer mutability
 - [var vertexBuffers: MTLPipelineBufferDescriptorArray](mtlrenderpipelinedescriptor/vertexbuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s vertex function.
 - [var fragmentBuffers: MTLPipelineBufferDescriptorArray](mtlrenderpipelinedescriptor/fragmentbuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s fragment function.
-### Specifying Rendering Pipeline State
+### Specifying rendering pipeline state
 - [func reset()](mtlrenderpipelinedescriptor/reset.md)
   Specifies the default rendering pipeline state values for the descriptor.
 - [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinedescriptor/colorattachments.md)
@@ -88,7 +88,7 @@ finalCoverageMask = originalRasterizerCoverageMask
   The pixel format of the attachment that stores depth data.
 - [var stencilAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/stencilattachmentpixelformat.md)
   The pixel format of the attachment that stores stencil data.
-### Specifying Rasterization and Visibility State
+### Specifying rasterization and visibility state
 - [var isAlphaToCoverageEnabled: Bool](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
   A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
 - [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)
@@ -103,7 +103,7 @@ finalCoverageMask = originalRasterizerCoverageMask
   The primitive topologies available for rendering.
 - [var sampleCount: Int](mtlrenderpipelinedescriptor/samplecount.md)
   The number of samples the pipeline applies for each fragment.
-### Specifying Tessellation State
+### Specifying tessellation state
 - [var maxTessellationFactor: Int](mtlrenderpipelinedescriptor/maxtessellationfactor.md)
   The maximum tessellation factor that the tessellator uses when tessellating patches.
 - [var isTessellationFactorScaleEnabled: Bool](mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
@@ -126,25 +126,25 @@ finalCoverageMask = originalRasterizerCoverageMask
   Options for specifying the step function that determines the tessellation factors for a patch from the tessellation factor buffer.
 - [enum MTLTessellationPartitionMode](mtltessellationpartitionmode.md)
   Options for choosing the partition mode that the tessellator applies when deriving the number and spacing of segments for subdividing a corresponding edge.
-### Specifying Indirect Command Buffers Usage
+### Specifying indirect command buffers usage
 - [var supportIndirectCommandBuffers: Bool](mtlrenderpipelinedescriptor/supportindirectcommandbuffers.md)
   A Boolean value that determines whether you can encode commands into an indirect command buffer using the render pipeline.
-### Specifying the Maximum Vertex Amplification Count
+### Specifying the maximum vertex amplification count
 - [var maxVertexAmplificationCount: Int](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)
   The maximum vertex amplification count you can set when encoding render commands.
-### Specifying Precompiled Shader Binaries
+### Specifying precompiled shader binaries
 - [var supportAddingVertexBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingvertexbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the vertex shader’s callable functions list.
 - [var supportAddingFragmentBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingfragmentbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the fragment shader’s callable functions list.
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlrenderpipelinedescriptor/binaryarchives.md)
   An array of binary archives to search for precompiled versions of the shader.
-### Specifying Callable Functions for the Pipeline
+### Specifying callable functions for the pipeline
 - [var vertexLinkedFunctions: MTLLinkedFunctions!](mtlrenderpipelinedescriptor/vertexlinkedfunctions.md)
   Functions that you can specify as function arguments for the vertex shader when encoding commands that use the pipeline.
 - [var fragmentLinkedFunctions: MTLLinkedFunctions!](mtlrenderpipelinedescriptor/fragmentlinkedfunctions.md)
   Functions that you can specify as function arguments for the fragment shader when encoding commands that use the pipeline.
-### Specifying Shader Validation
+### Specifying shader validation
 - [var shaderValidation: MTLShaderValidation](mtlrenderpipelinedescriptor/shadervalidation.md)
   A value that enables or disables shader validation for the pipeline.
 ### Instance Properties
@@ -177,7 +177,7 @@ finalCoverageMask = originalRasterizerCoverageMask
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

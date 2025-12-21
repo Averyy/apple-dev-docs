@@ -6,7 +6,7 @@
 Coordinate spaces are unaltered and represent actual locations.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

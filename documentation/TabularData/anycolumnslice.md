@@ -57,25 +57,16 @@ struct AnyColumnSlice
 ### Comparing Two Column Slices
 - [static func == (AnyColumnSlice, AnyColumnSlice) -> Bool](anycolumnslice/==(_:_:).md)
   Returns a Boolean that indicates whether the column slices are equal.
-- [static func != (Self, Self) -> Bool](anycolumnslice/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Hashing a Column Slice
 - [func hash(into: inout Hasher)](anycolumnslice/hash(into:).md)
   Hashes the essential components of the column slice by feeding them into a hasher.
-### Instance Properties
-- [var hashValue: Int](anycolumnslice/hashvalue.md)
-  The hash value.
 ### Default Implementations
-- [BidirectionalCollection Implementations](anycolumnslice/bidirectionalcollection-implementations.md)
-- [Collection Implementations](anycolumnslice/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](anycolumnslice/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](anycolumnslice/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](anycolumnslice/customstringconvertible-implementations.md)
 - [Equatable Implementations](anycolumnslice/equatable-implementations.md)
 - [Hashable Implementations](anycolumnslice/hashable-implementations.md)
-- [MutableCollection Implementations](anycolumnslice/mutablecollection-implementations.md)
 - [RandomAccessCollection Implementations](anycolumnslice/randomaccesscollection-implementations.md)
-- [Sequence Implementations](anycolumnslice/sequence-implementations.md)
 
 ## Relationships
 

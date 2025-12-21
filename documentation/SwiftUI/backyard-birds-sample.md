@@ -109,7 +109,7 @@ struct BackyardWidgetIntent: WidgetConfigurationIntent {
 
 ##### Provide a New in App Purchase Experience
 
-The sample app uses [`ProductView`](https://developer.apple.com/documentation/StoreKit/ProductView) to display several different bird food upgrades available for purchase on a store shelf. To prominently feature an in-app purchase item, the app uses the [`productViewStyle(_:)`](https://developer.apple.com/documentation/storekit/productview/4202371-productviewstyle) modifier:
+The sample app uses [`ProductView`](https://developer.apple.com/documentation/StoreKit/ProductView) to display several different bird food upgrades available for purchase on a store shelf. To prominently feature an in-app purchase item, the app uses the [`productViewStyle(_:)`](View/productViewStyle(_:).md) modifier:
 
 ```swift
 ProductView(id: product.id) {
@@ -143,9 +143,9 @@ SubscriptionStoreView(
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Food Truck: Building a SwiftUI multiplatform app](food_truck_building_a_swiftui_multiplatform_app.md)
+- [Food Truck: Building a SwiftUI multiplatform app](food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
-- [Fruta: Building a Feature-Rich App with SwiftUI](../appclip/fruta_building_a_feature-rich_app_with_swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
   Use a scene-based life cycle in SwiftUI while keeping your existing codebase.

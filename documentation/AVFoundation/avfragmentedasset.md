@@ -28,7 +28,7 @@ Associate a fragmented asset with an instance of [`AVFragmentedAssetMinder`](avf
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVFragmentedAssetTrack]>](avpartialasyncproperty/tracks-9z3j9.md)
   The tracks an asset contains.
 - [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVFragmentedAssetTrack?, (any Error)?) -> Void)](avfragmentedasset/loadtrack(withtrackid:completionhandler:).md)
@@ -37,7 +37,7 @@ Associate a fragmented asset with an instance of [`AVFragmentedAssetMinder`](avf
   Loads tracks that contain media of a specified type.
 - [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVFragmentedAssetTrack]?, (any Error)?) -> Void)](avfragmentedasset/loadtracks(withmediacharacteristic:completionhandler:).md)
   Loads tracks that contain media of a specified characteristic.
-### Accessing Tracks
+### Accessing tracks
 - [var tracks: [AVFragmentedAssetTrack]](avfragmentedasset/tracks.md)
   The tracks an asset contains.
 - [func track(withTrackID: CMPersistentTrackID) -> AVFragmentedAssetTrack?](avfragmentedasset/track(withtrackid:).md)

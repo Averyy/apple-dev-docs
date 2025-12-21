@@ -15,6 +15,17 @@ A memo that provides information about the transaction.
 case memo
 ```
 
+## See Also
+
+- [TransactionStatus.authorized](transactionstatus/authorized.md)
+  The transaction is in an authorized state.
+- [TransactionStatus.booked](transactionstatus/booked.md)
+  The transaction is in a booked state.
+- [TransactionStatus.pending](transactionstatus/pending.md)
+  The transaction is in a pending state.
+- [TransactionStatus.rejected](transactionstatus/rejected.md)
+  The transaction is in a rejected state.
+
 
 ---
 

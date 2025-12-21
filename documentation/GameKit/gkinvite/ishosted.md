@@ -19,9 +19,13 @@ A Boolean value that indicates whether you host the game on your own servers.
 var isHosted: Bool { get }
 ```
 
+## Mentions
+
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you host the game on your own servers. If the value is [`false`](https://developer.apple.com/documentation/swift/false), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), you host the game on your own servers. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

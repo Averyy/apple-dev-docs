@@ -19,7 +19,7 @@ enum Status
 
 ## Topics
 
-### Validation Statuses
+### Validation statuses
 - [AVCaptionConversionValidator.Status.unknown](avcaptionconversionvalidator/status-swift.enum/unknown.md)
   A status that indicates the system didn’t initialize the validation operation.
 - [AVCaptionConversionValidator.Status.validating](avcaptionconversionvalidator/status-swift.enum/validating.md)

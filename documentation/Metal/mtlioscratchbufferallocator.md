@@ -25,7 +25,7 @@ An allocator returns instances of [`MTLIOScratchBuffer`](mtlioscratchbuffer.md),
 
 ## Topics
 
-### Providing Scratch Memory to a Queue
+### Providing scratch memory to a queue
 - [func makeScratchBuffer(minimumSize: Int) -> (any MTLIOScratchBuffer)?](mtlioscratchbufferallocator/makescratchbuffer(minimumsize:).md)
   Creates a scratch memory buffer for an input/output command queue.
 

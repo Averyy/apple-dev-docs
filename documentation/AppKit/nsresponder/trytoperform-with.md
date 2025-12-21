@@ -17,11 +17,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if no responder is found that responds to `action;` otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if no responder is found that responds to `action;` otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-If the receiver responds to `action`, it invokes the method with `object` as the argument and returns [`true`](https://developer.apple.com/documentation/swift/true). If the receiver doesn’t respond, it sends this message to its next responder with the same selector and object.
+If the receiver responds to `action`, it invokes the method with `object` as the argument and returns [`true`](https://developer.apple.com/documentation/Swift/true). If the receiver doesn’t respond, it sends this message to its next responder with the same selector and object.
 
 ## Parameters
 

@@ -40,7 +40,7 @@ class XCTAttachment
   Creates an attachment containing a PNG representation of the provided screenshot.
 - [convenience init(screenshot: XCUIScreenshot, quality: XCTAttachment.ImageQuality)](xctattachment/init(screenshot:quality:).md)
   Creates an attachment containing a representation of the provided screenshot at the requested image quality.
-- [@MainActor class XCUIScreenshot](../XCUIAutomation/XCUIScreenshot.md)
+- [class XCUIScreenshot](../XCUIAutomation/XCUIScreenshot.md)
   A captured image of a screen, app, or UI element state.
 - [XCTAttachment.ImageQuality](xctattachment/imagequality.md)
   Compression quality options for image-based attachments.

@@ -21,7 +21,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-Check [`isValid`](mldatatable/isvalid.md) after you create or mutate a data table to ensure the data table is still valid. If it’s [`false`](https://developer.apple.com/documentation/swift/false), the data table encountered an error and you can’t use it for training or subsequent operations. The following are some of the actions that can invalidate a data table:
+Check [`isValid`](mldatatable/isvalid.md) after you create or mutate a data table to ensure the data table is still valid. If it’s [`false`](https://developer.apple.com/documentation/Swift/false), the data table encountered an error and you can’t use it for training or subsequent operations. The following are some of the actions that can invalidate a data table:
 
 - Adding a column with the name of a column that already exists in the data table
 - Adding an invalid column

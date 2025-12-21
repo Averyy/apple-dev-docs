@@ -22,9 +22,6 @@ enum KeyboardType
 
 ## Topics
 
-### Operators
-- [static func == (String.IntentInputOptions.KeyboardType, String.IntentInputOptions.KeyboardType) -> Bool](string/intentinputoptions/keyboardtype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [String.IntentInputOptions.KeyboardType.URL](string/intentinputoptions/keyboardtype-swift.enum/url.md)
   A keyboard that provides URL entry.
@@ -35,14 +32,6 @@ enum KeyboardType
   A numeric keypad.
 - [String.IntentInputOptions.KeyboardType.numbersAndPunctuation](string/intentinputoptions/keyboardtype-swift.enum/numbersandpunctuation.md)
   A keyboard that displays numbers and punctuation.
-### Instance Properties
-- [var hashValue: Int](string/intentinputoptions/keyboardtype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](string/intentinputoptions/keyboardtype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](string/intentinputoptions/keyboardtype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

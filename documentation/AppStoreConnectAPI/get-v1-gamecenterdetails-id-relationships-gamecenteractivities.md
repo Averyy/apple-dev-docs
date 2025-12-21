@@ -10,6 +10,10 @@
 
 - [Create an activity](post-v1-gamecenteractivities.md)
   Create an activity for your Game Center detail or Game Center group.
+- [Add an achievement to a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)
+  Add an achievement to a Game Center activity.
+- [Add a leaderboard to a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
+  Add a leaderboard to a Game Center activity.
 - [Modify the achievements for a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
   Update the relationship between achievements and a specific Game Center activity.
 - [Modify the leaderboards for a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
@@ -28,10 +32,10 @@
   Update details for a specific Game Center activity.
 - [Delete an activity](delete-v1-gamecenteractivities-_id_.md)
   Remove a specific Game Center activity.
-- [Remove an achievement from an activity](delete-v1-gamecenteractivities-_id_-relationships-achievements.md)
-  Remove the relationship between an achievement and a Game Center activity.
-- [Remove a leaderboard from an activity](delete-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
-  Remove the relationship between a leaderboard and a Game Center activity.
+- [Remove an achievement](delete-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)
+  Remove an achievement from a Game Center activity.
+- [Remove a leaderboard](delete-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
+  Remove a leaderboard from a Game Center activity.
 
 
 ---

@@ -20,11 +20,11 @@ optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupportin
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the paste or drop operation should not be animated; otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) if the paste or drop operation should not be animated; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-If you don’t want the system to animate the paste or drop operation, implement this method and return [`false`](https://developer.apple.com/documentation/swift/false). The operation is animated if you return [`true`](https://developer.apple.com/documentation/swift/true) or if this method isn’t implemented.
+If you don’t want the system to animate the paste or drop operation, implement this method and return [`false`](https://developer.apple.com/documentation/Swift/false). The operation is animated if you return [`true`](https://developer.apple.com/documentation/Swift/true) or if this method isn’t implemented.
 
 ## Parameters
 

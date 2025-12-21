@@ -25,14 +25,12 @@ struct PKPassKitError
 - [init(Code, userInfo: [String : Any])](../passkit_apple_pay_and_wallet/pkpasskiterror/3727669-init.md)
   Creates a pass error object of the specified type with the specified user information.
 ### Error information
-- [var code: Code](../passkit_apple_pay_and_wallet/pkpasskiterror/3727666-code.md)
-  The code that provides context for the error.
-- [var errorCode: Int](../passkit_apple_pay_and_wallet/pkpasskiterror/2887005-errorcode.md)
-  The code that provides context for the error.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
 - [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpasskiterror/3727670-userinfo.md)
   A dictionary that contains custom information that relates to the error.
-- [var errorUserInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkpasskiterror/2887007-erroruserinfo.md)
-  A dictionary that contains custom information that relates to the error.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 ### Error codes
 - [static var invalidDataError: PKPassKitError.Code](pkpasskiterror/invaliddataerror.md)
 - [static var invalidSignature: PKPassKitError.Code](pkpasskiterror/invalidsignature.md)

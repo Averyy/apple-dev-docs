@@ -17,7 +17,7 @@ var allowsEmptySelection: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix allows one or zero cells to be selected. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix allows one and only one cell (not zero cells) to be selected. This setting has effect only in the `NSRadioModeMatrix` selection mode.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the matrix allows one or zero cells to be selected. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the matrix allows one and only one cell (not zero cells) to be selected. This setting has effect only in the `NSRadioModeMatrix` selection mode.
 
 ## See Also
 

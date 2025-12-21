@@ -23,8 +23,8 @@ protocol ASAuthorizationControllerDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
 - [Supporting passkeys](supporting-passkeys.md)
+- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
 - [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## Topics

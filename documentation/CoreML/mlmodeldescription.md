@@ -22,26 +22,28 @@ class MLModelDescription
 
 ## Topics
 
-### Accessing Feature Descriptions
+### Accessing feature descriptions
+- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
+  Description of the state features.
 - [var inputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/inputdescriptionsbyname.md)
   A dictionary of input feature descriptions, which the model keys by the input’s name.
 - [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)
   A dictionary of output feature descriptions, which the model keys by the output’s name.
 - [class MLFeatureDescription](mlfeaturedescription.md)
   The name, type, and constraints of an input or output feature.
-### Accessing Metadata
+### Accessing metadata
 - [var classLabels: [Any]?](mlmodeldescription/classlabels.md)
   An array of labels, which can be either strings or a numbers, for classifier models.
 - [var metadata: [MLModelMetadataKey : Any]](mlmodeldescription/metadata.md)
   A dictionary of the model’s creation information, such as its description, author, version, and license.
 - [struct MLModelMetadataKey](mlmodelmetadatakey.md)
   The set of keys the model uses to store values in its metadata dictionary.
-### Accessing Prediction Names
+### Accessing prediction names
 - [var predictedFeatureName: String?](mlmodeldescription/predictedfeaturename.md)
   The name of the primary prediction feature output description.
 - [var predictedProbabilitiesName: String?](mlmodeldescription/predictedprobabilitiesname.md)
   The name of the feature output description for all probabilities of a prediction.
-### Accessing Update Descriptions
+### Accessing update descriptions
 - [var isUpdatable: Bool](mlmodeldescription/isupdatable.md)
   A Boolean value that indicates whether you can update the model with additional training.
 - [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/traininginputdescriptionsbyname.md)
@@ -50,9 +52,6 @@ class MLModelDescription
   A dictionary of the descriptions for the model’s parameters.
 - [class MLParameterDescription](mlparameterdescription.md)
   A description of a model parameter that includes a default value and a constraint, if applicable.
-### Instance Properties
-- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
-  Description of the state features.
 
 ## Relationships
 

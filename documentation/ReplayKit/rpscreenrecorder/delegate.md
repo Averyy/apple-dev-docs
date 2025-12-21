@@ -6,12 +6,12 @@
 The delegate for the screen recorder.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

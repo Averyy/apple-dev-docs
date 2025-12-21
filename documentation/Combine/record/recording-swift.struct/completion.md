@@ -20,6 +20,11 @@ The completion which will be sent to a `Subscriber`.
 var completion: Subscribers.Completion<Failure> { get }
 ```
 
+## See Also
+
+- [var output: [Output]](record/recording-swift.struct/output.md)
+  The output which will be sent to a `Subscriber`.
+
 
 ---
 

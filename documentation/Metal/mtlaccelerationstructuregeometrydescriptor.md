@@ -21,7 +21,7 @@ class MTLAccelerationStructureGeometryDescriptor
 
 ## Mentions
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 #### Overview
 
@@ -29,7 +29,7 @@ Don’t use this base class directly. Use one of the derived classes instead, as
 
 ## Topics
 
-### Specifying Base Geometry Properties
+### Specifying base geometry properties
 - [var label: String?](mtlaccelerationstructuregeometrydescriptor/label.md)
   A label for the geometry structure, suitable for debugging.
 - [var intersectionFunctionTableOffset: Int](mtlaccelerationstructuregeometrydescriptor/intersectionfunctiontableoffset.md)
@@ -79,6 +79,7 @@ Don’t use this base class directly. Use one of the derived classes instead, as
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveBasis](mtlcurvebasis.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)

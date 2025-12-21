@@ -16,7 +16,7 @@ var isPlanar: Bool { get }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the specified window `depth` is planar and [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the specified window `depth` is planar and [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## See Also
 

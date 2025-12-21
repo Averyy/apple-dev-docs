@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+A new collection of observables for an observable object of the given class
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

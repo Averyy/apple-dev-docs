@@ -38,7 +38,7 @@ Any time you use device-specific information to make decisions, provide reasonab
 
 The macOS desktop makes it easy for an app to display multiple windows simultaneously, and many apps use that support to display different documents side-by-side. Most iOS apps display a single window, but the introduction of scenes in iOS 13 and iPadOS 13 provides an equivalent type of multiwindow support to iOS apps. Because supporting multiple windows requires you to manage your data differently, you must tell the system that your app supports multiple scenes. If you opt in, your app gains automatic support for multiple windows in macOS.
 
-To enable multiple scenes in iOS, add the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with the value of [`true`](https://developer.apple.com/documentation/swift/true) to your app’s `Info.plist` file. The presence of this key tells macOS to enable multiple window support for your app. For information about how to add scene support to your app, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad).
+To enable multiple scenes in iOS, add the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with the value of [`true`](https://developer.apple.com/documentation/Swift/true) to your app’s `Info.plist` file. The presence of this key tells macOS to enable multiple window support for your app. For information about how to add scene support to your app, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad).
 
 ##### Make Your Windows Resizable Using Ipad Multitasking
 
@@ -53,7 +53,7 @@ If your app already supports iPad multitasking, you don’t need to do any extra
 
 > ❗ **Important**: An app that you build to deploy only on iPhone always runs in a fixed-size window.
 
-For more information about iPad multitasking, see [`Multitasking on iPad`](https://developer.apple.com/documentation/UIKit/multitasking-on-ipad).
+For more information about iPad multitasking, see [`Multitasking on iPad, Mac, and Apple Vision Pro`](https://developer.apple.com/documentation/UIKit/multitasking-on-ipad-mac-and-apple-vision-pro).
 
 ##### Support Native Resolution of a Mac Display in Full Screen Mode
 

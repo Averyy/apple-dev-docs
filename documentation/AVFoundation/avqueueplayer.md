@@ -23,9 +23,9 @@ class AVQueuePlayer
 
 ## Mentions
 
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
 - [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 
@@ -33,10 +33,10 @@ Use an instance of this class to manage a queue of player items.
 
 ## Topics
 
-### Creating a Queue Player
+### Creating a queue player
 - [init(items: [AVPlayerItem])](avqueueplayer/init(items:).md)
   Creates an object that plays a queue of items.
-### Managing the Player Queue
+### Managing the player queue
 - [func items() -> [AVPlayerItem]](avqueueplayer/items.md)
   Returns an array of the currently enqueued items.
 - [func advanceToNextItem()](avqueueplayer/advancetonextitem.md)

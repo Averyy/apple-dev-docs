@@ -5,8 +5,8 @@
 Configure a compression session to encode video for live streaming.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

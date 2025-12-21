@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: method
 
-Attaches multiple residency sets to the command buffer.
+Applies multiple residency sets to a command buffer.
 
 **Availability**:
 - iOS 18.0+
@@ -21,11 +21,11 @@ func useResidencySets(_ residencySets: [any MTLResidencySet])
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+Each command buffer can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
@@ -34,7 +34,7 @@ See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-
 ## See Also
 
 - [func useResidencySet(any MTLResidencySet)](mtlcommandbuffer/useresidencyset(_:).md)
-  Attaches a residency set to the command buffer.
+  Applies a residency set to a command buffer.
 
 
 ---

@@ -11,7 +11,7 @@ The text to display in the annotation’s callout.
 ## Declaration
 
 ```swift
-attribute string title;
+title?: string;
 ```
 
 #### Discussion

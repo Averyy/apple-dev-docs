@@ -16,7 +16,7 @@ func isMember(ofGroup group: CBGroupIdentity) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the identity is a member of the group; [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the identity is a member of the group; [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## Parameters
 

@@ -6,7 +6,7 @@ Associate app and book purchases with users or devices.
 
 #### Overview
 
-Organizations use Apple School Manager and Apple Business Manager to purchase their apps and books, then assign them to users and devices through the use of an MDM client. If a user no longer needs an app, you can reclaim it and assign it to a different user. Similarly, you can assign an app to a device’s serial number so an Apple ID isn’t necessary to download an app. Books aren’t device-assignable so you can’t reassign them among users.
+Organizations use Apple School Manager and Apple Business Manager to purchase their apps and books, then assign them to users and devices through the use of an MDM client. If a user no longer needs an app, you can reclaim it and assign it to a different user. Similarly, you can assign an app to a device’s serial number so an Apple Account isn’t necessary to download an app. Books aren’t device-assignable so you can’t reassign them among users.
 
 ##### Authenticate
 
@@ -55,7 +55,7 @@ If the provided `token` is within the expiration warning period (currently, 15 d
 
 ##### Handle Permissions
 
-Organization administrators can tailor different sets of privileges for an individual content manager’s `cToken` using Managed Apple IDs, which allows a fine level of control over what those users can do. For example, a content manager with read-only privileges can use the [`Get Assets`](get-assets-4ski1.md), [`Get Assignments`](get-assignments-9wv1e.md), and [`Get Users`](get-users-4mwln.md) endpoints, but can’t use the [`User Management`](app-and-book-management#User-Management.md) or [`Asset Management`](app-and-book-management#Asset-Management.md) endpoints. You can also assign content managers the Can Purchase and the Can Manage privileges, so that an individual content manager can manage assets, but not buy them.
+Organization administrators can tailor different sets of privileges for an individual content manager’s `cToken` using Managed Apple Accounts, which allows a fine level of control over what those users can do. For example, a content manager with read-only privileges can use the [`Get Assets`](get-assets-4ski1.md), [`Get Assignments`](get-assignments-9wv1e.md), and [`Get Users`](get-users-4mwln.md) endpoints, but can’t use the [`User Management`](app-and-book-management#User-Management.md) or [`Asset Management`](app-and-book-management#Asset-Management.md) endpoints. You can also assign content managers the Can Purchase and the Can Manage privileges, so that an individual content manager can manage assets, but not buy them.
 
 ##### Identify the Current Mdm Client
 

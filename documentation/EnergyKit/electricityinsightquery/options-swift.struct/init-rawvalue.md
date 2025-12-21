@@ -6,10 +6,10 @@
 Creates an option set with the given raw value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [let rawValue: UInt](electricityinsightquery/options-swift.struct/rawvalue-swift.property.md)
+- [let rawValue: UInt](electricityinsightquery/options-swift.struct/rawvalue.md)
   The raw value of the option set.
 
 

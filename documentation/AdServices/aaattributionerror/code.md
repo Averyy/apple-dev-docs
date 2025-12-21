@@ -31,10 +31,10 @@ enum Code
 - [AAAttributionError.Code.platformNotSupported](aaattributionerror/code/platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
 ### Getting information about error codes
-- [var localizedDescription: String { get }](../Swift/Error/localizedDescription.md)
+- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
   Retrieve the localized description for this error.
 ### Comparing errors
-- [func != (lhs: (), rhs: ()) -> Bool](../Swift/!=(_:_:)-18co7.md)
+- [func != ((), ()) -> Bool](../Swift/!=(_:_:)-18co7.md)
   Returns a Boolean value indicating whether any corresponding components of the two tuples are not equal.
 
 ## Relationships

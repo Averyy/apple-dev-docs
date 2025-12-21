@@ -32,17 +32,6 @@ enum PaymentType
 - [IntentPaymentMethod.PaymentType.savings](intentpaymentmethod/paymenttype-swift.enum/savings.md)
 - [IntentPaymentMethod.PaymentType.store](intentpaymentmethod/paymenttype-swift.enum/store.md)
 - [IntentPaymentMethod.PaymentType.unknown](intentpaymentmethod/paymenttype-swift.enum/unknown.md)
-### Operators
-- [static func == (IntentPaymentMethod.PaymentType, IntentPaymentMethod.PaymentType) -> Bool](intentpaymentmethod/paymenttype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentpaymentmethod/paymenttype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentpaymentmethod/paymenttype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentpaymentmethod/paymenttype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

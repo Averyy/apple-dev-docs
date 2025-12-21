@@ -22,7 +22,7 @@ var canWrap: Bool { get }
 
 #### Discussion
 
-For non-sequential switches, this property is always [`true`](https://developer.apple.com/documentation/swift/true).
+For non-sequential switches, this property is always [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

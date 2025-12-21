@@ -6,7 +6,9 @@ Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
 #### Overview
 
-The Safari Web Extension Packager enables you to package and distribute your Safari extensions using App Store Connect from any web browser, without requiring a Mac or access to Xcode. After packaging your extension, you can use TestFlight to test your extension or submit it to the App Store for distribution.
+The Safari web extension packager enables you to package and distribute your Safari extensions using App Store Connect from any web browser, without requiring a Mac or access to Xcode. After packaging your extension, you can use TestFlight to test your extension or submit it to the App Store for distribution.
+
+Safari web extension packager is also available as a command line tool which you can use alongside Xcode on a Mac. To learn more about using the command line tool, see doc:safari-web-extensions/packaging-a-web-extension-for-safari.md.
 
 ##### Create an Apple Developer Account
 
@@ -16,7 +18,7 @@ To access and use the Safari Extension Packager, you need to enroll your Apple a
 
 To create an app record, the Account Holder, Admin, or an App Manager opens [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/). Alternately, a team member with a Developer or Marketing role with access to create app records in App Store Connect can create this app record.
 
-> **Note**: The Safari Web Extension Packager can create apps for both macOS and iOS. People can use the iOS app and extension on iOS, iPadOS, and visionOS.
+> **Note**: The Safari web extension packager can create apps for both macOS and iOS. People can use the iOS app and extension on iOS, iPadOS, and visionOS.
 
 Follow these steps:
 
@@ -36,7 +38,7 @@ For more information about creating an app record, see [`Add a new app`](https:/
 
 After creating an app record, navigate to the Xcode Cloud tab. Under Safari Web Extension Packager, click Upload.
 
-Select and upload your extension files. The Safari Web Extension Packager converts and assembles the app for your extension. You need to upload the full contents of your extension, including the manifest and all related resources.
+Select and upload your extension files. The Safari Web Extension Package assembles the app for your extension. You need to upload the full contents of your extension, including the manifest and all related resources.
 
 You can see the status of the packaging process on the Builds page. You can upload multiple builds at once. When packaging is complete, distribute your extension to beta testers using TestFlight. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases)
 
@@ -44,7 +46,7 @@ Review any reported exceptions, and see [`Assessing your Safari web extension’
 
 > **Note**: The compute time needed to package web extensions is deducted from the 25 hours per month of Xcode Cloud included in your Apple Developer Program membership.
 
-![A screenshot of the Safari Web Extension Packager tool. The Upload Web Extension screen is open for someone to upload their web extension resources zip file.](https://docs-assets.developer.apple.com/published/a04fcb3e822c928eac0dab6f4ffa0fee/safari-web-extension-packager-upload-extension-files.png)
+![A screenshot of the Safari web extension packager tool. The Upload Web Extension screen is open for someone to upload their web extension resources zip file.](https://docs-assets.developer.apple.com/published/a04fcb3e822c928eac0dab6f4ffa0fee/safari-web-extension-packager-upload-extension-files.png)
 
 ##### Distribute to Beta Testers with Testflight
 
@@ -72,8 +74,8 @@ Once your app is approved and ready for distribution on the App Store, its statu
 
 ## See Also
 
-- [Converting a web extension for Safari](converting-a-web-extension-for-safari.md)
-  Convert your existing extension to a Safari web extension using Xcode’s command-line tool.
+- [Packaging a web extension for Safari](packaging-a-web-extension-for-safari.md)
+  Package your existing extension as a Safari web extension using Xcode’s command-line tool.
 - [Converting a Safari app extension to a Safari web extension](converting-a-safari-app-extension-to-a-safari-web-extension.md)
   Unify your web extensions and simplify development by sharing code with a Safari web extension.
 

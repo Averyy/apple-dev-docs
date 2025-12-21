@@ -5,9 +5,6 @@
 
 An atom that identified the hot spot type.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Depending on the value of the `hotSpotType` field in the hot spot info atom there may also be a type specific information atom. The atom type of the type-specific atom is the hot spot type.

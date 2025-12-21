@@ -22,7 +22,7 @@ struct MLModelMetadataKey
 
 ## Topics
 
-### Metadata Keys
+### Metadata keys
 - [static let author: MLModelMetadataKey](mlmodelmetadatakey/author.md)
   Key for the author of the model.
 - [static let description: MLModelMetadataKey](mlmodelmetadatakey/description.md)
@@ -33,7 +33,7 @@ struct MLModelMetadataKey
   Key for the version of the model.
 - [static let creatorDefinedKey: MLModelMetadataKey](mlmodelmetadatakey/creatordefinedkey.md)
   Key for the model creator’s custom metadata.
-### Creating Metadata
+### Creating metadata
 - [init(rawValue: String)](mlmodelmetadatakey/init(rawvalue:).md)
 
 ## Relationships

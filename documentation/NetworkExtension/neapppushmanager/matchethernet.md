@@ -3,10 +3,12 @@
 **Framework**: Network Extension  
 **Kind**: property
 
+A property that indicates Ethernet support for Local Push Connectivity.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -16,7 +18,12 @@ var matchEthernet: Bool { get set }
 
 #### Discussion
 
-If set to YES NEAppPushProvider is started when iOS device is connected to an Ethernet network and the ethernet network is the primary route on the device. NEAppPushProvider must determine viability of its functionality on the network. If the network does not support its operation it must call [NEAppPushProvider unmatchEthernet:] method to stop itself.
+If this value is `true` (Swift) or `YES` (Objective-C), the system starts the [`NEAppPushProvider`](neapppushprovider.md) when the following criteria are true:
+
+- The iOS device is connected to an Ethernet network.
+- The Ethernet network is the primary route on the device.
+
+Have your [`NEAppPushProvider`](neapppushprovider.md) determine that its functionality is viable on the network. If the network doesn’t support the provider running over Ethernet, your provider needs to call [`unmatchEthernet()`](neapppushprovider/unmatchethernet().md) to stop itself.
 
 
 ---

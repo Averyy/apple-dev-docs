@@ -21,7 +21,7 @@ var duration: CMTime { get }
 
 #### Discussion
 
-The value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) if there’s no information available.
+The value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if there’s no information available.
 
 ## See Also
 

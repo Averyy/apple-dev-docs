@@ -20,9 +20,7 @@ func sec_protocol_options_append_tls_ciphersuite(_ options: sec_protocol_options
 
 #### Discussion
 
-```None
- Append a TLS ciphersuite to the set of enabled ciphersuites.
-```
+Append a TLS ciphersuite to the set of enabled ciphersuites.
 
 ## Parameters
 

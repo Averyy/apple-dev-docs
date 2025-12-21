@@ -32,7 +32,7 @@ The method records the encoder’s current rendering state and resources the com
 - `indexCount`: An integer that represents the number of vertices the command reads from   for each instance.
 - `indexType`: An   instance that represents the index’s format, including   and  .
 - `indexBuffer`: An   instance that contains the   vertex indices of the   format.
-- `indexBufferOffset`: An integer that represents the location that’s a multiple of 4 bytes from the start of   where the vertex indices begin.
+- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of   where the vertex indices begin.
 - `instanceCount`: An integer that represents the number of times the command draws   with   vertices.
 - `baseVertex`: For more information about the   argument attribute for vertex shaders, see the  .
 - `baseInstance`: For more information about the   argument attribute for vertex shaders, see the  .

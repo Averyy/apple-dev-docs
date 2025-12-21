@@ -1,4 +1,4 @@
-# Creating a Model from Tabular Data
+# Creating a model from tabular data
 
 **Framework**: Create ML
 
@@ -9,9 +9,9 @@ Train a machine learning model by using Core ML to import and manage tabular dat
 
 #### Overview
 
-This sample playground uses the  framework to train two [`Core ML`](https://developer.apple.com/documentation/coreml) models, a regressor and a classifier.
+This sample playground uses the [`Create ML`](CreateML.md) framework to train two [`Core ML`](https://developer.apple.com/documentation/CoreML) models, a regressor and a classifier.
 
-![Diagram](https://docs-assets.developer.apple.com/published/aee7d30eac/b3d08991-9b93-4139-88cc-b7032eb0d51c.png)
+![A diagram that shows the data flow where the data feeds into Create ML and produces a Core ML model file.](https://docs-assets.developer.apple.com/published/38976948d8275d3ec653e82667c6e840/tabular-data-flow%402x.png)
 
 The playground imports a CSV file, which contains Martian housing data, into a data table. The data table contains the following columns of information about a habitat on Mars:
 
@@ -25,7 +25,7 @@ The playground trains the regressor and classifier models, each with a group of 
 
 The playground concludes by saving each model to a file, ready for integration into an app.
 
-##### 3130363
+##### Import the Data
 
 Use any [`MLDataTable`](mldatatable.md) initializer to import your data in to a data table. In this sample, the playground initializes its first data table with the contents of the CSV file embedded within the playground.
 
@@ -65,7 +65,7 @@ print(dataTable)
  */
 ```
 
-##### 3130364
+##### Isolate the Relevant Model Data
 
 If necessary, generate a new data table that includes only relevant columns for your model.
 
@@ -76,7 +76,7 @@ For example, to predict price, the playground’s regressor needs only four colu
 - `greenhouses`
 - `size`
 
-The playground generates a new data table, specifically tailored for the regressor, by passing an array of column names to the first data table’s [`subscript(_:)`](mldatatable/subscript(_:)-2wkan.md).
+The playground generates a new data table, specifically tailored for the regressor, by passing an array of column names to the first data table’s [`subscript(_:)`](mldatatable/subscript(_:).md).
 
 ```swift
 let regressorColumns = ["price", "solarPanels", "greenhouses", "size"]
@@ -95,7 +95,7 @@ let classifierColumns = ["purpose", "solarPanels", "greenhouses", "size"]
 let classifierTable = dataTable[classifierColumns]
 ```
 
-##### 3130365
+##### Divide the Data for Training and Evaluation
 
 If you intend to evaluate your model after training, reserve some of your data table’s rows for evaluation by separating them from the training data. By evaluating your model with data not present for training, your model’s evaluation better represents its real-world performance.
 
@@ -110,18 +110,17 @@ let (classifierEvaluationTable, classifierTrainingTable) = classifierTable.rando
 
 The amount of data your model needs for evaluation versus training will vary with each app. Generally, training your model with more examples leads to better performance.
 
-##### 3130366
+##### Train the Regressor
 
 The playground trains the regressor by providing its initializer with the training data table and the name of the target column. The `targetColumn` parameter determines what information you want the model to provide in its predictions. The playground tells the regressor to predict the price of a habitat by specifying `price` as the model’s target column.
 
 ```swift
-let regressor = try MLLinearRegressor(trainingData: regressorTrainingTable,
-                                      targetColumn: "price")
+let regressor = try MLRegressor(trainingData: regressorTable, targetColumn: "price")
 ```
 
-During training,  automatically sets aside a small percentage of the training data to use for validating the model’s progress during the training phase. The training process gauges the model’s performance based on the validation data. Depending on the validation accuracy, the training algorithm can adjust values within the model or even stop the training process, if the accuracy is high enough. Because the split is done randomly, you might get a different result each time you train a model.
+During training, [`Create ML`](CreateML.md) automatically sets aside a small percentage of the training data to use for validating the model’s progress during the training phase. The training process gauges the model’s performance based on the validation data. Depending on the validation accuracy, the training algorithm can adjust values within the model or even stop the training process, if the accuracy is high enough. Because the split is done randomly, you might get a different result each time you train a model.
 
-##### 3130367
+##### Evaluate the Regressor
 
 To see how accurately the regressor performed during training and validation, the playground gets the [`maximumError`](mlregressormetrics/maximumerror.md) property of its [`trainingMetrics`](mlregressor/trainingmetrics.md) and [`validationMetrics`](mlregressor/validationmetrics.md) properties.
 
@@ -131,7 +130,7 @@ let worstTrainingError = regressor.trainingMetrics.maximumError
 let worstValidationError = regressor.validationMetrics.maximumError
 ```
 
-> **Note**:  [`MLRegressorMetrics`](mlregressormetrics.md) also has a [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md) property.
+> **Note**: [`MLRegressorMetrics`](mlregressormetrics.md) also has a [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md) property.
 
 The playground evaluates the regressor’s performance by passing its evaluation data table.
 
@@ -146,10 +145,10 @@ let worstEvaluationError = regressorEvalutation.maximumError
 If your regressor’s evaluation performance isn’t good enough, you may need to:
 
 - Retrain with more rows of data.
-- Choose a different, specific regressor type (see “Supporting Types” under [`MLRegressor`](mlregressor.md)).
-- Make other adjustments (see `Improving Your Model’s Accuracy`).
+- Choose a different, specific regressor type (see “Supporting Types” under [`MLRegressor`](mlregressor.md).
+- Make other adjustments (see [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md)).
 
-##### 3130368
+##### Train the Classifier
 
 The playground trains the classifier to predict the purpose of a habitat. It does so by targeting a classifier on the `purpose` column of its training data table.
 
@@ -162,7 +161,7 @@ A classifier can only predict values provided in its training data, unlike a reg
 
 > **Note**: As an alternative, you may also train a classifier with numerical values instead of textual labels (strings) demonstrated here. As with textual labels, classifiers can only return specific numerical values from its training data, and will not interpolate or extrapolate new values, unlike a regressor.
 
-##### 3130369
+##### Evaluate the Classifier
 
 To see how accurately the classifier performed during training and validation, the playground gets the [`classificationError`](mlclassifiermetrics/classificationerror.md) property of its [`trainingMetrics`](mlclassifier/trainingmetrics.md) and [`validationMetrics`](mlclassifier/validationmetrics.md) properties.
 
@@ -191,14 +190,14 @@ If your classifier’s evaluation performance isn’t good enough, you may need 
 
 - Retrain with more rows of data.
 - Choose a different, specific classifier type (see “Supporting Types” under [`MLClassifier`](mlclassifier.md)).
-- Make other adjustments (see `Improving Your Model’s Accuracy`).
+- Make other adjustments (see [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md)).
 
-##### 3130370
+##### Save the Model
 
 When you are satisfied with your modelʼs performance, save it to a file for later use in your app. The playground saves the price regressor, along with metadata, to the user’s desktop with its [`write(to:metadata:)`](mlregressor/write(to:metadata:).md) method.
 
 ```swift
-let regressorMetadata = MLModelMetadata(author: "John Appleseed",
+let regressorMetadata = MLModelMetadata(author: "Maria Ruiz",
                                         shortDescription: "Predicts the price of a habitat on Mars.",
                                         version: "1.0")
 /// Save the trained regressor model to the Desktop.
@@ -209,7 +208,7 @@ try regressor.write(to: desktopPath.appendingPathComponent("MarsHabitatPricer.ml
 The playground similarly saves the purpose classifier to the user’s desktop.
 
 ```swift
-let classifierMetadata = MLModelMetadata(author: "John Appleseed",
+let classifierMetadata = MLModelMetadata(author: "Maria Ruiz",
                                          shortDescription: "Predicts the purpose of a habitat on Mars.",
                                          version: "1.0")
 
@@ -220,20 +219,24 @@ try classifier.write(to: desktopPath.appendingPathComponent("MarsHabitatPurposeC
 
 > **Note**: To see the author, version, and description of a model’s [`MLModelMetadata`](mlmodelmetadata.md), select the model in Xcode’s project navigator after you add it to an app.
 
-##### 3130371
+##### Add the Model to an App
 
-To add your model to an app, see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app).
+To add your model to an app, see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app).
 
 ## See Also
 
-- [enum MLClassifier](mlclassifier.md)
-  A model you train to classify data into discrete categories.
-- [enum MLRegressor](mlregressor.md)
-  A model you train to estimate continuous values.
-- [struct MLRecommender](mlrecommender.md)
-  A model you train to make recommendations based on item similarity, grouping, and, optionally, item ratings.
+- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](mldatatable/init(contentsof:options:).md)
+  Creates a data table from an imported JSON or CSV file.
+- [init(dictionary: [String : any MLDataValueConvertible]) throws](mldatatable/init(dictionary:).md)
+  Creates a data table from a dictionary of column names and data values.
+- [init(namedColumns: [String : MLUntypedColumn]) throws](mldatatable/init(namedcolumns:).md)
+  Creates a data table from a dictionary of column names and untyped columns.
+- [init()](mldatatable/init.md)
+  Creates an empty table containing no rows or columns.
+- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+  The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating_a_model_from_tabular_data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating-a-model-from-tabular-data)*

@@ -6,7 +6,7 @@
 An interface for specifying the texture configurations and rendering behaviors to use with your Metal rendering engine.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

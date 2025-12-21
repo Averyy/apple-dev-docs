@@ -27,13 +27,9 @@ When you’re satisfied with an activity classifier, save it as a Core ML model 
 ## Topics
 
 ### Training an activity classifier asynchronously
-- [static func train(trainingData: MLActivityClassifier.DataSource, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLActivityClassifier>](mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-6oapt.md)
+- [static train(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).md)
   Begins an asynchronous activity classifier training session with a training dataset represented by a data source.
-- [static func train(trainingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLActivityClassifier>](mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-43yhp.md)
-  Begins an asynchronous activity classifier training session with a training dataset represented by a data table.
-- [static func makeTrainingSession(trainingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActivityClassifier>](mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-3ic8k.md)
-  Creates an asynchronous training session for an activity classifier.
-- [static func makeTrainingSession(trainingData: MLActivityClassifier.DataSource, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActivityClassifier>](mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-dk66.md)
+- [static makeTrainingSession(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)](mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).md)
   Creates an asynchronous training session for an activity classifier.
 - [static func resume(MLTrainingSession<MLActivityClassifier>) throws -> MLJob<MLActivityClassifier>](mlactivityclassifier/resume(_:).md)
   Begins or continues an asynchronous activity classifier training session.
@@ -43,24 +39,19 @@ When you’re satisfied with an activity classifier, save it as a Core ML model 
 - [init(checkpoint: MLCheckpoint) throws](mlactivityclassifier/init(checkpoint:).md)
   Creates an activity classifier from a training session checkpoint.
 ### Training an activity classifier synchronously
-- [init(trainingData: MLActivityClassifier.DataSource, featureColumns: [String], labelColumn: String?, recordingFileColumn: String?, parameters: MLActivityClassifier.ModelParameters) throws](mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:)-6ltei.md)
+- [init(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:)](mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:).md)
   Creates an activity classifier with a training dataset represented by a data source.
-- [init(trainingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters) throws](mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:)-1z9ai.md)
-  Creates an activity classifier with a training dataset represented by a data table.
-### Assessing model accuracy
+### Evaluating an activity classifier
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+  Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 - [var trainingMetrics: MLClassifierMetrics](mlactivityclassifier/trainingmetrics.md)
   Measurements of the activity classifier’s performance on the training dataset.
 - [var validationMetrics: MLClassifierMetrics](mlactivityclassifier/validationmetrics.md)
   Measurements of the activity classifier’s performance on the validation dataset.
-### Evaluating an activity classifier
-- [func evaluation(on: MLActivityClassifier.DataSource, featureColumns: [String], labelColumn: String?, recordingFileColumn: String?) -> MLClassifierMetrics](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-1ib5p.md)
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
   Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
-- [func evaluation(on: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String) -> MLClassifierMetrics](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-3r5em.md)
-  Generates metrics describing the activity classifier’s performance on labeled activities in a data table.
 ### Testing an activity classifier
-- [func predictions(from: DataFrame, perWindowPrediction: Bool?) throws -> [String]](mlactivityclassifier/predictions(from:perwindowprediction:)-492gd.md)
-  Predict activities from new observations.
-- [func predictions(from: MLDataTable, perWindowPrediction: Bool?) throws -> [String]](mlactivityclassifier/predictions(from:perwindowprediction:)-6tatv.md)
+- [func predictions(from:perWindowPrediction:)](mlactivityclassifier/predictions(from:perwindowprediction:).md)
   Predict activities from new observations.
 ### Saving an activity classifier
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlactivityclassifier/write(to:metadata:).md)

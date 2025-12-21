@@ -21,7 +21,7 @@ optional func splitViewController(_ splitViewController: UISplitViewController, 
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to let the split view controller try to incorporate the secondary view controller’s content into the collapsed interface, or [`true`](https://developer.apple.com/documentation/swift/true) to indicate that you do not want the split view controller to do anything with the secondary view controller.
+[`false`](https://developer.apple.com/documentation/Swift/false) to let the split view controller try to incorporate the secondary view controller’s content into the collapsed interface, or [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that you do not want the split view controller to do anything with the secondary view controller.
 
 #### Discussion
 
@@ -29,9 +29,9 @@ This delegate method only applies to classic split view interfaces. For more inf
 
 This method is your opportunity to perform any necessary tasks related to the transition to a collapsed interface. After this method returns, the split view controller removes the secondary view controller from its [`viewControllers`](uisplitviewcontroller/viewcontrollers.md) array, leaving the primary view controller as its only child. In your implementation of this method, you might prepare the primary view controller for display in a compact environment, or you might attempt to incorporate the secondary view controller’s content into the newly collapsed interface.
 
-Returning [`false`](https://developer.apple.com/documentation/swift/false) tells the split view controller to use its default behavior to try to incorporate the secondary view controller into the collapsed interface. When you return [`false`](https://developer.apple.com/documentation/swift/false), the split view controller calls the [`collapseSecondaryViewController(_:for:)`](uiviewcontroller/collapsesecondaryviewcontroller(_:for:).md) method of the primary view controller, giving it a chance to do something with the secondary view controller’s content. Most view controllers do nothing by default, but the [`UINavigationController`](uinavigationcontroller.md) class responds by pushing the secondary view controller onto its navigation stack.
+Returning [`false`](https://developer.apple.com/documentation/Swift/false) tells the split view controller to use its default behavior to try to incorporate the secondary view controller into the collapsed interface. When you return [`false`](https://developer.apple.com/documentation/Swift/false), the split view controller calls the [`collapseSecondaryViewController(_:for:)`](uiviewcontroller/collapsesecondaryviewcontroller(_:for:).md) method of the primary view controller, giving it a chance to do something with the secondary view controller’s content. Most view controllers do nothing by default, but the [`UINavigationController`](uinavigationcontroller.md) class responds by pushing the secondary view controller onto its navigation stack.
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) from this method tells the split view controller not to apply any default behavior. You might return [`true`](https://developer.apple.com/documentation/swift/true) in cases where you do not want the secondary view controller’s content incorporated into the resulting interface.
+Returning [`true`](https://developer.apple.com/documentation/Swift/true) from this method tells the split view controller not to apply any default behavior. You might return [`true`](https://developer.apple.com/documentation/Swift/true) in cases where you do not want the secondary view controller’s content incorporated into the resulting interface.
 
 ## Parameters
 

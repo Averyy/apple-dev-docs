@@ -21,7 +21,7 @@ var requiresExclusiveTouchType: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the gesture recognizer automatically ignores new touches whose type doesn’t match the type of the initial touch. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the gesture recognizer receives all touches whose types are listed in the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) property.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the gesture recognizer automatically ignores new touches whose type doesn’t match the type of the initial touch. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the gesture recognizer receives all touches whose types are listed in the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) property.
 
 ## See Also
 

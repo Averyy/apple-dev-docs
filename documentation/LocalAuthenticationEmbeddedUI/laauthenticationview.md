@@ -17,7 +17,7 @@ class LAAuthenticationView
 
 #### Overview
 
-In the view that you use to manage authentication, add a local authentication view as a subview and provide it with an [`LAContext`](https://developer.apple.com/documentation/LocalAuthentication/LAContext) instance. For example, you can do this in the doc://com.apple.documentation/documentation/appkit/nsviewcontroller/1434405-loadview method of your view controller:
+In the view that you use to manage authentication, add a local authentication view as a subview and provide it with an [`LAContext`](https://developer.apple.com/documentation/LocalAuthentication/LAContext) instance. For example, you can do this in the [`loadView()`](https://developer.apple.com/documentation/AppKit/NSViewController/loadView()) method of your view controller:
 
 ```swift
 func loadView() {

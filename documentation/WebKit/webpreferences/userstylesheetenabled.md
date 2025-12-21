@@ -16,7 +16,7 @@ var userStyleSheetEnabled: Bool { get set }
 
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the user style sheets should be enabled in the web view, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](https://developer.apple.com/documentation/Swift/true) if the user style sheets should be enabled in the web view, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

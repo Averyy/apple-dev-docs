@@ -6,8 +6,8 @@
 An encapsulation of the act of translating a call.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,25 +19,26 @@ class CXSetTranslatingCallAction
 
 [`CXSetTranslatingCallAction`](cxsettranslatingcallaction.md) is a concrete subclass of [`CXCallAction`](cxcallaction.md). When a caller chooses to translate a conversation, the system provides translated captions, and a translated transcript of the call and the [`CXProvider`](cxprovider.md) sends the [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-43atg.md) to its delegate. The provider’s delegate calls the [`fulfill()`](cxaction/fulfill().md) method to indicate that the action was successfully performed.
 
+> ❗ **Important**: To avoid interrupting or impeding call translation when a person mutes their audio during a conversation, don’t deactivate the upstream audio. Instead, mute your app’s audio input using [`CXSetMutedCallAction`](cxsetmutedcallaction.md) and keep the upstream audio active to allow translated audio to flow when a person mutes the hardware microphone.
+
 ## Topics
 
 ### Creating New Actions
-- [init(call: UUID, isTranslating: Bool, localLocale: Locale, remoteLocale: Locale)](cxsettranslatingcallaction/init(call:istranslating:locallocale:remotelocale:).md)
-  Initializes a translation action for a call identified by a given UUID, with local and remote locales and a value that indicates whether translation is active.
 - [init?(coder: NSCoder)](cxsettranslatingcallaction/init(coder:).md)
   Creates a new action to start or stop translating a call with the provided data.
 ### Accessing Action Attributes
-- [var remoteLocale: Locale](cxsettranslatingcallaction/remotelocale.md)
-  The locale of the call’s remote participant.
 - [var isTranslating: Bool](cxsettranslatingcallaction/istranslating.md)
   A value that indicates whether translation is active for a call.
-- [var localLocale: Locale](cxsettranslatingcallaction/locallocale.md)
-  The locale of the call’s local participant.
 ### Completing Actions
-- [func fulfill(with: CXTranslationEngine)](cxsettranslatingcallaction/fulfill(with:).md)
-  Reports that the translation action was successful.
 - [enum CXTranslationEngine](cxtranslationengine.md)
   Values that describe the translation engine that provided a translation.
+### Initializers
+- [init(call: UUID, isTranslating: Bool, localLanguage: String, remoteLanguage: String)](cxsettranslatingcallaction/init(call:istranslating:locallanguage:remotelanguage:).md)
+### Instance Properties
+- [var localLanguage: String](cxsettranslatingcallaction/locallanguage.md)
+- [var remoteLanguage: String](cxsettranslatingcallaction/remotelanguage.md)
+### Instance Methods
+- [func fulfill(using: CXTranslationEngine)](cxsettranslatingcallaction/fulfill(using:).md)
 
 ## Relationships
 

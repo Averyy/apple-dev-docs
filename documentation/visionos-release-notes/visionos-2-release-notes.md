@@ -539,7 +539,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ## See Also
 
-- [visionOS 2.6 Beta Release Notes](visionos-2_6-release-notes.md)
+- [visionOS 2.6 Release Notes](visionos-2_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 2.5 Release Notes](visionos-2_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

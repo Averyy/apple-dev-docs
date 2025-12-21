@@ -29,12 +29,6 @@ struct Annotation
 ### Encoding and decoding
 - [ObjectDetectionAnnotation.Annotation.CodingKeys](objectdetectionannotation/annotation/codingkeys.md)
   Coding keys for Annotation.
-### Operators
-- [static func == (ObjectDetectionAnnotation<Label>.Annotation, ObjectDetectionAnnotation<Label>.Annotation) -> Bool](objectdetectionannotation/annotation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Decodable Implementations](objectdetectionannotation/annotation/decodable-implementations.md)
-- [Equatable Implementations](objectdetectionannotation/annotation/equatable-implementations.md)
 
 ## Relationships
 

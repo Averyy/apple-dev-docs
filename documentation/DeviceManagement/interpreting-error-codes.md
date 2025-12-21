@@ -46,12 +46,12 @@ The `errorMessage` field contains human-readable text explaining the error. The 
 | 9632 | Too many recent manage-license calls with identical request: If MDM gets precisely the same request to `manageVPPLicensesByAdamIdSrv` too many times within too short a time (generally several minutes), it  return this error code. |
 | 9633 | Data for a batch token passed could not be recovered. |
 | 9634 | Returned when a caller tries to use a formerly deprecated featured that has been removed. |
-| 9635 | The Apple ID passed for iTunes Store association cannot be found or is not applicable to organization of the user (see [`Managed Apple IDs`](associating-an-apple-id-with-a-volume-purchase-program-vpp-user#Managed-Apple-IDs.md)). |
+| 9635 | The Apple Account passed for iTunes Store association cannot be found or is not applicable to organization of the user (see [`Managed Apple Accounts`](associating-an-apple-id-with-a-volume-purchase-program-vpp-user#Managed-Apple-Accounts.md)). |
 | 9636 | Registered user not found. |
 | 9637 | `sToken` is not allowed to perform the operation requested. |
 | 9638 | The content manager account that generated `sToken` has no Managed ID organization ID and cannot manipulate the content manager requested. |
-| 9641 | The Apple ID already associated to registered user. |
-| 9642 | The Apple ID passed cannot be used at this time because it’s a VPP manager and the iTunes Store account not yet created and such creation requires user to agree to Terms. |
+| 9641 | The Apple Account already associated to registered user. |
+| 9642 | The Apple Account passed cannot be used at this time because it’s a VPP manager and the iTunes Store account not yet created and such creation requires user to agree to Terms. |
 | 9643 | The license is currently locked for a pending transfer. Please try again later. |
 | 9644 | Volume Purchase Program is currently in maintenance mode. Please try again later. |
 | 9645 | This location is managed by Apple’s cloud MDM. Only read operations are allowed for this location. |

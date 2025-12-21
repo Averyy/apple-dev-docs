@@ -23,7 +23,7 @@ You can set this value to true only if [`isContentAwareDistortionCorrectionSuppo
 
 Applying distortion correction to preserve natural-looking content may result in a small change in the field of view compared to what you see in [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md). The amount lost or gained is content specific and varies from photo to photo.
 
-Enabling this property requires a lengthy reconfiguration of the capture render pipeline, so set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
+Enabling this property requires a lengthy reconfiguration of the capture render pipeline, so set this property to [`true`](https://developer.apple.com/documentation/Swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
 
 ## See Also
 

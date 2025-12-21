@@ -25,7 +25,7 @@ var allowsMultipleSelectionDuringEditing: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If you set it to [`true`](https://developer.apple.com/documentation/swift/true), check marks appear next to selected rows in editing mode. In addition, [`UITableView`](uitableview.md) doesn’t query for editing styles when it goes into editing mode. If you access [`indexPathsForSelectedRows`](uitableview/indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). If you set it to [`true`](https://developer.apple.com/documentation/Swift/true), check marks appear next to selected rows in editing mode. In addition, [`UITableView`](uitableview.md) doesn’t query for editing styles when it goes into editing mode. If you access [`indexPathsForSelectedRows`](uitableview/indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
 
 ## See Also
 

@@ -17,7 +17,7 @@ optional func textShouldBeginEditing(_ textObject: NSText) -> Bool
 
 #### Discussion
 
-If the delegate returns [`true`](https://developer.apple.com/documentation/swift/true), the text object proceeds to make changes. If the delegate returns [`false`](https://developer.apple.com/documentation/swift/false), the text object abandons the editing operation. This method is also invoked when the user drags and drops a file onto the text object.
+If the delegate returns [`true`](https://developer.apple.com/documentation/Swift/true), the text object proceeds to make changes. If the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false), the text object abandons the editing operation. This method is also invoked when the user drags and drops a file onto the text object.
 
 ## See Also
 

@@ -25,6 +25,9 @@ enum IdentifierType
   A URL service identifier.
 - [ASCredentialServiceIdentifier.IdentifierType.domain](ascredentialserviceidentifier/identifiertype/domain.md)
   A domain service identifier.
+### Enumeration Cases
+- [ASCredentialServiceIdentifier.IdentifierType.app](ascredentialserviceidentifier/identifiertype/app.md)
+  The service identifier represents an App ID. When a service identifier of this type is provided to your extension for saving a password, the ASCredentialServiceIdentifier object will have a non-nil `displayName` property that contains a user friendly name for the app.
 ### Initializers
 - [init?(rawValue: Int)](ascredentialserviceidentifier/identifiertype/init(rawvalue:).md)
 

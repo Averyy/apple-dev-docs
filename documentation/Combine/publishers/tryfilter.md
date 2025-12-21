@@ -22,24 +22,22 @@ struct TryFilter<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Filter Publisher
+### Creating a try-filter publisher
 - [init(upstream: Upstream, isIncluded: (Upstream.Output) throws -> Bool)](publishers/tryfilter/init(upstream:isincluded:).md)
   Creates a publisher that republishes all elements that match a provided error-throwing closure.
-### Declaring Publisher Topography
+### Filtering elements
+- [func filter((Publishers.TryFilter<Upstream>.Output) -> Bool) -> Publishers.TryFilter<Upstream>](publishers/tryfilter/filter(_:).md)
+- [func tryFilter((Publishers.TryFilter<Upstream>.Output) throws -> Bool) -> Publishers.TryFilter<Upstream>](publishers/tryfilter/tryfilter(_:).md)
+### Declaring supporting types
 - [Publishers.TryFilter.Output](publishers/tryfilter/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryFilter.Failure](publishers/tryfilter/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/tryfilter/upstream.md)
   The publisher from which this publisher receives elements.
 - [let isIncluded: (Upstream.Output) throws -> Bool](publishers/tryfilter/isincluded.md)
   An error-throwing closure that indicates whether this filter should republish an element.
-### Applying Operators
-- [Publisher Operators](publishers-tryfilter-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/tryfilter/publisher-implementations.md)
 
 ## Relationships
 

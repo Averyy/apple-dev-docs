@@ -31,7 +31,7 @@ nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresent
   Presents a StoreKit overlay when a given condition is true.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](view/managesubscriptionssheet(ispresented:).md)
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
-  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)

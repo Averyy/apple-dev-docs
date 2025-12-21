@@ -19,7 +19,7 @@ var intersectionFunctionBufferSize: UInt64
 
 #### Discussion
 
-For ray tracing.
+The maximum range in bytes of intersectionFunctionBuffer that can be used for ray tracing.
 
 
 ---

@@ -10,7 +10,7 @@ An anchor that tethers entities to a scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -23,9 +23,8 @@ An anchor that tethers entities to a scene.
 ## Mentions
 
 - [Handling different-sized objects in physics simulations](handling-different-sized-objects-in-physics-simulations.md)
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
-- [Loading entities from a file](loading-entities-from-a-file.md)
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
+- [Loading entities from a file](loading-entities-from-a-file.md)
 
 #### Overview
 
@@ -54,18 +53,17 @@ You can have multiple anchors in a RealityKit scene. For example, one anchor can
 
 > **Note**: By default, physics bodies and colliders affect only entities that share the same anchor.
 
-An entity and its descendants can participate in the physics simulation at the root of your scene by setting its `AnchoringComponent/physicsSimulation-swift.property` to `AnchoringComponent/PhysicsSimulation-swift.enum/none`.
+An entity and its descendants can participate in the physics simulation at the root of your scene by setting its [`physicsSimulation`](anchoringcomponent/physicssimulation-swift.property.md) to [`AnchoringComponent.PhysicsSimulation.none`](anchoringcomponent/physicssimulation-swift.enum/none.md).
 
 ## Topics
 
 ### Creating an anchor
 - [init()](anchorentity/init.md)
   Creates a new anchor entity.
-- [convenience init(any Anchor)](anchorentity/init(_:)-8k2z3.md)
 - [init(AnchoringComponent.Target)](anchorentity/init(_:)-9rdwu.md)
   Creates an anchor entity targeting a particular kind of anchor.
-- [convenience(_:trackingMode:)](anchorentity/init(_:trackingmode:).md)
-- [convenience(_:trackingMode:physicsSimulation:)](anchorentity/init(_:trackingmode:physicssimulation:).md)
+- [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchorentity/init(_:trackingmode:).md)
+- [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchorentity/init(_:trackingmode:physicssimulation:).md)
 - [convenience init(anchor: ARAnchor)](anchorentity/init(anchor:).md)
   Creates an anchor entity that uses an existing AR anchor.
 - [convenience init(plane: AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](anchorentity/init(plane:classification:minimumbounds:).md)
@@ -108,7 +106,10 @@ An entity and its descendants can participate in the physics simulation at the r
   A component that anchors virtual content to a real world target.
 - [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
   Defines the kinds of real world objects to which an anchor entity can be tethered.
+- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
+  Options for how an entity tracks its target anchor.
 - [struct ARKitAnchorComponent](arkitanchorcomponent.md)
+  A component that exposes the backing ARKit data of an anchored entity.
 - [protocol HasAnchoring](hasanchoring.md)
   An interface that enables anchoring of virtual content to a real-world object in an AR scene.
 

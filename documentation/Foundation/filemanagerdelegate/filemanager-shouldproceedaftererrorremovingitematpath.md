@@ -22,11 +22,11 @@ optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError er
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The file manager calls this method when there is a problem deleting the item to the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager continues deleting any remaining items and ignores the error.
+The file manager calls this method when there is a problem deleting the item to the specified location. If you return [`true`](https://developer.apple.com/documentation/Swift/true), the file manager continues deleting any remaining items and ignores the error.
 
 This method performs the same task as the [`fileManager(_:shouldProceedAfterError:removingItemAt:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:removingitemat:).md) method, which is preferred over this method in macOS 10.6 and later.
 

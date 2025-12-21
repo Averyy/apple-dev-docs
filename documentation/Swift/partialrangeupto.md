@@ -52,7 +52,6 @@ print(numbers[..<3])
 ### Instance Properties
 - [let upperBound: Bound](partialrangeupto/upperbound.md)
 ### Default Implementations
-- [CustomTestStringConvertible Implementations](partialrangeupto/customteststringconvertible-implementations.md)
 - [Decodable Implementations](partialrangeupto/decodable-implementations.md)
 - [Encodable Implementations](partialrangeupto/encodable-implementations.md)
 - [RangeExpression Implementations](partialrangeupto/rangeexpression-implementations.md)

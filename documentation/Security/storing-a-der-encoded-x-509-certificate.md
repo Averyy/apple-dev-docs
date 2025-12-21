@@ -12,7 +12,7 @@ You might send this data object over a network connection or store it in a `.cer
 
 When you receive such a data object, you use the [`SecCertificateCreateWithData(_:_:)`](seccertificatecreatewithdata(_:_:).md) function to reverse the process:
 
-By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
+By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
 
 
 ---

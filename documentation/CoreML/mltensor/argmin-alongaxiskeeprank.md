@@ -39,6 +39,17 @@ await y.shapedArray(of: Int32.self) // is 0 0
 - `axis`: The axis to reduce.
 - `keepRank`: A Boolean indicating whether to keep the reduced axis or not. The default value is  .
 
+## See Also
+
+- [func argmax() -> MLTensor](mltensor/argmax.md)
+  Returns the index of the maximum value of the flattened scalars.
+- [func argmax(alongAxis: Int, keepRank: Bool) -> MLTensor](mltensor/argmax(alongaxis:keeprank:).md)
+  Returns the indices of the maximum values along the specified axis.
+- [func argmin() -> MLTensor](mltensor/argmin.md)
+  Returns the index of the minimum value of the flattened scalars.
+- [func argsort(alongAxis: Int, descendingOrder: Bool) -> MLTensor](mltensor/argsort(alongaxis:descendingorder:).md)
+  Returns the indices (or arguments) of a tensor that give its sorted order along the specified axis.
+
 
 ---
 

@@ -14,6 +14,8 @@ Images, videos, audio, music, and ARKit files serve a variety of purposes in you
 
 When you use such files, you provide the encoded URL in an Apple News Format property, and the asset based on the specifications given here. Which URL property you use depends on whether the file is an image, video, audio, music, or ARKit file, and how you use it.
 
+> ❗ **Important**:  The maximum allowable file size for your article bundle, including remote and local media assets, is 450 MB. Verify that the total size of your article bundle doesn’t exceed this limit.
+
 ##### Provide the Url in an Apple News Format Property
 
 To include an asset in your article, provide a well-formatted and encoded URL to specify the location of the asset file.

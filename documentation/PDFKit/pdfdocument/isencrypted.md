@@ -21,7 +21,7 @@ var isEncrypted: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document is encrypted, whether it is locked or unlocked; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the document is encrypted, whether it is locked or unlocked; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

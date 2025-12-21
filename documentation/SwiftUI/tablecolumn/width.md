@@ -11,7 +11,6 @@ Sets the column’s width.
 - Mac Catalyst 16.0+
 - macOS 12.0+
 - visionOS 1.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

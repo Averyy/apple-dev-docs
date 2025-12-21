@@ -22,21 +22,16 @@ struct Encode<Upstream, Coder> where Upstream : Publisher, Coder : TopLevelEncod
 
 ## Topics
 
-### Creating a Encode Publisher
+### Creating a encode publisher
 - [init(upstream: Upstream, encoder: Coder)](publishers/encode/init(upstream:encoder:).md)
   Creates a publisher that decodes elements received from an upstream publisher, using a given decoder.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Encode.Output](publishers/encode/output.md)
   The kind of values published by this publisher.
 - [Publishers.Encode.Failure](publishers/encode/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/encode/upstream.md)
-### Applying Operators
-- [Publisher Operators](publishers-encode-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/encode/publisher-implementations.md)
 
 ## Relationships
 

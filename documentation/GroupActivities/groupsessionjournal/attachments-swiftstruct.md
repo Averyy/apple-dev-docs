@@ -44,11 +44,6 @@ let attachmentListener = Task {
   The asynchronous iterator that produces a sequence of attachments.
 - [GroupSessionJournal.Attachments.Element](groupsessionjournal/attachments-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Type Aliases
-- [GroupSessionJournal.Attachments.AsyncIterator](groupsessionjournal/attachments-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](groupsessionjournal/attachments-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

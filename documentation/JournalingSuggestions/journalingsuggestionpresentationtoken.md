@@ -3,10 +3,10 @@
 **Framework**: Journaling Suggestions  
 **Kind**: struct
 
-A token you use to modify the content of the presentation.
+A container for a Journaling Suggestion identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -14,16 +14,21 @@ A token you use to modify the content of the presentation.
 struct JournalingSuggestionPresentationToken
 ```
 
+## Mentions
+
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+
+#### Overview
+
+When your app receives a Journaling Suggestion notification, the system launches your app and provides an ID that refers to a specific suggestion from the notification.
+
+Create an instance of this class and display a [`JournalingSuggestionsPicker`](journalingsuggestionspicker.md) by passing the token to the `JournalingSuggestionsPicker/journalingSuggestionsPicker(isPresented:onCompletion:)` view modifier, which enables the picker to preload its contents with the notified suggestion.
+
 ## Topics
 
 ### Initializing a presentation token
 - [init(suggestionIdentifier: UUID?)](journalingsuggestionpresentationtoken/init(suggestionidentifier:).md)
   Creates a token used to modify the content of JournalingSuggestionsPicker presentation.
-### Comparing tokens
-- [static func == (JournalingSuggestionPresentationToken, JournalingSuggestionPresentationToken) -> Bool](journalingsuggestionpresentationtoken/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](journalingsuggestionpresentationtoken/equatable-implementations.md)
 
 ## Relationships
 
@@ -32,14 +37,10 @@ struct JournalingSuggestionPresentationToken
 
 ## See Also
 
-- [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)
-  A view that lists different types of recent events in a person’s life.
-- [struct JournalingSuggestion](journalingsuggestion.md)
-  High-level information about a suggestion that a person chooses in the journaling suggestions picker.
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+  Register your app to receive journaling suggestions when a person taps a system notification.
 - [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
-  The scheduled configuration settings for your app.
-- [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
-  An interface for the content that the suggestions picker presents.
+  The configuration for Journaling Suggestion notifications.
 
 
 ---

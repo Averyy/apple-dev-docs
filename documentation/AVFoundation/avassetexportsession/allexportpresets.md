@@ -21,7 +21,7 @@ class func allExportPresets() -> [String]
 
 #### Return Value
 
-See [`Export Presets`](export-presets.md) for values an asset export session supports.
+See [`Export presets`](export-presets.md) for values an asset export session supports.
 
 #### Discussion
 

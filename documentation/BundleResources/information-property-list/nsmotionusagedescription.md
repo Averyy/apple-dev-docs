@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting access to the device’s motion data.
+A message that tells people why the app is requesting access to the device’s motion data.
 
 **Availability**:
 - iOS 7.0+

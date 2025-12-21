@@ -129,8 +129,6 @@ These constants represent the set of modifier, navigation, function, and other k
   Initializes a constant with a string that represents a keyboard key.
 - [init(rawValue: String)](xcuikeyboardkey/init(rawvalue:).md)
   Initializes a constant with a string that represents a keyboard key.
-### Default Implementations
-- [Equatable Implementations](xcuikeyboardkey/equatable-implementations.md)
 
 ## Relationships
 

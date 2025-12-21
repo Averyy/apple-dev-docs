@@ -140,7 +140,7 @@ See [`Build System Release Notes for Xcode 10`](build-system-release-notes-for-x
 
 - Instruments may fail to launch if Xcode has not finished preparing any attached devices for development. (43066159)  Wait for Xcode’s device setup phase to complete and then open Instruments.
 - Instruments may not profile library or framework unit tests in iOS simulator. (39334812)
-- When stopping a recording that includes signposts (e.g. [`pointsOfInterest`](https://developer.apple.com/documentation/os/OSLog/Category/pointsOfInterest), [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u), or [`os_log(_:dso:log:_:_:)`](https://developer.apple.com/documentation/os/3019240-os_log) instruments), the recording button may not reactivate for an extended period of time. (43361649)  Launch Console on your Mac, select the target device, and leave Console running. This connection between Console and the target will be enough keep Instruments from hanging at the end of a recording.
+- When stopping a recording that includes signposts (e.g. [`pointsOfInterest`](https://developer.apple.com/documentation/os/OSLog/Category/pointsOfInterest), [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u), or [`os_log(_:dso:log:_:_:)`](https://developer.apple.com/documentation/os/os_log(_:dso:log:_:_:)) instruments), the recording button may not reactivate for an extended period of time. (43361649)  Launch Console on your Mac, select the target device, and leave Console running. This connection between Console and the target will be enough keep Instruments from hanging at the end of a recording.
 
 ###### Resolved Issues
 

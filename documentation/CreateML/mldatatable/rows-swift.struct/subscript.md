@@ -19,17 +19,6 @@ Subscript by index. This returns a row in the data table.
 subscript(index: Int) -> MLDataTable.Rows.Element { get }
 ```
 
-## See Also
-
-- [var first: Self.Element?](mldatatable/rows-swift.struct/first.md)
-  The first element of the collection.
-- [var last: Self.Element?](mldatatable/rows-swift.struct/last.md)
-  The last element of the collection.
-- [func randomElement() -> Self.Element?](mldatatable/rows-swift.struct/randomelement.md)
-  Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](mldatatable/rows-swift.struct/randomelement(using:).md)
-  Returns a random element of the collection, using the given generator as a source for randomness.
-
 
 ---
 

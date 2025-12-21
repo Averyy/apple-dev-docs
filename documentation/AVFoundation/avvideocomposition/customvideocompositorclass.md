@@ -39,6 +39,11 @@ The default is `nil`, which indicates to use the internal video compositor. The 
   The transfer function used for video composition.
 - [var colorYCbCrMatrix: String?](avvideocomposition/colorycbcrmatrix.md)
   The YCbCr matrix used for video composition.
+- [var outputBufferDescription: [[CMTag]]?](avvideocomposition/outputbufferdescription-3ayt8.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
+- [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](avvideocomposition/spatialvideoconfigurations-80iab.md)
+  Indicates the spatial configurations that are available to associate with the output of the video composition.
+- [struct AVSpatialVideoConfiguration](avspatialvideoconfiguration-swift.struct.md)
 
 
 ---

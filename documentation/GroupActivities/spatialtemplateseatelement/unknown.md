@@ -1,31 +1,25 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Group Activities  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two values are equal.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: SpatialTemplateSeatElement, rhs: SpatialTemplateSeatElement) -> Bool
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/spatialtemplateseatelement/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/spatialtemplateseatelement/==(_:_:))*

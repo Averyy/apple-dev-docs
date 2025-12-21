@@ -7,7 +7,7 @@
 Provides a collection of conditions under which a specific widget could be relevant.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

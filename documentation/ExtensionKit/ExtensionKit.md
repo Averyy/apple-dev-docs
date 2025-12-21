@@ -3,7 +3,7 @@
 **Framework**: ExtensionKit  
 **Kind**: module
 
-Create executable bundles to extend the functionality of other apps by presenting a user interface.
+Make custom UI from an app extension available in a host app, and manage the list of enabled and disabled app extensions.
 
 **Availability**:
 - iOS 16.1+
@@ -14,34 +14,39 @@ Create executable bundles to extend the functionality of other apps by presentin
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Mentions
+
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+
 #### Overview
 
-Extensions are executable code bundles, in one app that perform functions in a second,  app. Host apps declare  that control the kinds of functionality its extensions can implement. Extensions allow iOS and Mac apps to include code that runs inside system apps. For example, [`Messages`](https://developer.apple.com/documentation/Messages) provides extension points so apps can create [`Messages`](https://developer.apple.com/documentation/Messages). Messages automatically finds extension bundles that target its extension points and makes them available in its app drawer. A Mac app can also declare its own extension points so that other apps can extend the Mac app’s functionality.
+An app extension is a code bundle that extends the capabilities of the system, or the capabilities of another app. At the system level, app extensions give you a way to add your custom capabilities to system features. For example, [`Creating a widget extension`](https://developer.apple.com/documentation/WidgetKit/Creating-a-Widget-Extension) display your app’s content in specific locations like the iOS Home Screen and Lock screen. System features typically provide a custom workflow for building the associated app extension, but still use this framework to implement support for those features.
 
-Prior to macOS 13, apps use [`NSExtension`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension) property lists to declare and configure extensions. ExtensionKit supports this approach, but also adds the ability to configure extensions and extension points entirely in Swift code.
-
-Extensions come in two basic forms: UI and non-UI.
-
-An iMessage app, which can include sophisticated user interfaces — even entire games — is an example of a UI extension. [`SiriKit`](https://developer.apple.com/documentation/SiriKit) app intents, which gives people the ability to interact with your app using Siri, is an example of a non-UI extension.
-
-Use ExtensionKit, in combination with [`ExtensionFoundation`](https://developer.apple.com/documentation/ExtensionFoundation), to create extensions and extension points for UI extensions. To create extensions with no user interface, use [`ExtensionFoundation`](https://developer.apple.com/documentation/ExtensionFoundation).
+If your app supports the incorporation of content from custom app extensions, adopt this framework and the [`ExtensionFoundation`](https://developer.apple.com/documentation/ExtensionFoundation) framework to support that capability. Adopt `ExtensionKit` in your app extensions and use it to define the views you want to display. In a host app, use this framework to present the interfaces that app extensions provide. This framework also provides a view controller to show enabled and disabled app extensions from your app’s interface.
 
 ## Topics
 
-### UI App Extensions
+### Essentials
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+  Build app extensions that provide a custom UI, and host those views in your app’s interface.
+### UI definition
 - [protocol AppExtensionScene](appextensionscene.md)
-  A protocol that defines the user interface for an application extension.
-- [struct AppExtensionSceneConfiguration](appextensionsceneconfiguration.md)
-  An object that holds configuration options for an extension scene.
+  An interface you use to provide a specific scene from your app extension’s UI.
+- [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
+  A type you use to deliver the contents of your app-extension-based UI.
 - [struct AppExtensionSceneBuilder](appextensionscenebuilder.md)
   A custom parameter attribute that constructs extension scenes from closures.
-- [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
-  A primitive you use to compose specialized app extension points.
-### Host Apps
+### App extension configuration
+- [struct AppExtensionSceneConfiguration](appextensionsceneconfiguration.md)
+  An object you use to configure an app extension that provides a custom UI.
+### Host app presentation
+- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+  Show the app extensions available to your app, so that people can approve, enable, or disable them.
 - [class EXHostViewController](exhostviewcontroller.md)
-  A view controller that hosts remote views provided by an extension.
+  A view controller that hosts remote views provided by an app extension.
 - [class EXAppExtensionBrowserViewController](exappextensionbrowserviewcontroller.md)
-  A view controller that allows users to enable and disable extensions.
+  A view controller that displays an interface to enable or disable the host app’s extensions.
 
 
 ---

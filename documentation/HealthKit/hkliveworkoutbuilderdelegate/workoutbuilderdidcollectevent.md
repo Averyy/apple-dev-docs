@@ -7,9 +7,9 @@
 Tells the delegate that a new event has been added to the builder.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS ?+
 - watchOS 5.0+
 

@@ -22,7 +22,7 @@ var hasFaceAngle: Bool { get }
 ## See Also
 
 - [var bounds: CGRect](cifacefeature/bounds-swift.property.md)
-  A rectangle indicating the position and dimensions of the face in image coordinates.
+  A rectangle indicating the position and extent of the face feature in image coordinates.
 - [var faceAngle: Float](cifacefeature/faceangle-swift.property.md)
   The rotation of the face.
 

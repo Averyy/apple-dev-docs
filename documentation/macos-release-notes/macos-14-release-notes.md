@@ -62,7 +62,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### New Features
 
-- See [`AppKit Release Notes for macOS 14`](appkit-release-notes-for-macos-14.md).  (110084217)
+- See [`AppKit Release Notes for macOS Sonoma 14`](appkit-release-notes-for-macos-14.md).  (110084217)
 
 ##### Ats and Atsui
 

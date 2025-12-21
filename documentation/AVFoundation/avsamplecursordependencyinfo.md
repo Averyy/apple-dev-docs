@@ -22,7 +22,7 @@ struct AVSampleCursorDependencyInfo
 
 ## Topics
 
-### Dependency Information
+### Dependency information
 - [var sampleIndicatesWhetherItHasDependentSamples: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetherithasdependentsamples.md)
   A Boolean value that determines whether the sample indicates if other samples depend on it.
 - [var sampleHasDependentSamples: ObjCBool](avsamplecursordependencyinfo/samplehasdependentsamples.md)

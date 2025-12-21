@@ -24,7 +24,7 @@ var showsBuildings: Bool { get set }
 
 > **Note**:  In iOS 16 and macOS 13, and later, when overlay content is present, this property has no effect and the map renders buildings and trees as transparent. This enables content to be clearly visible while preserving the context of the surroundings.
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the camera has a pitch angle greater than zero, the map extrudes buildings so that they extend above the map plane, creating a 3D effect. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the camera has a pitch angle greater than zero, the map extrudes buildings so that they extend above the map plane, creating a 3D effect. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 To display extruded buildings, set the [`mapType`](mkmapview/maptype.md) property to [`MKMapType.standard`](mkmaptype/standard.md) or [`MKMapType.mutedStandard`](mkmaptype/mutedstandard.md).
 

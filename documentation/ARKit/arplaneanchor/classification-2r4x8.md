@@ -17,7 +17,7 @@ var classification: ARPlaneAnchor.Classification { get }
 
 #### Discussion
 
-On supported devices, ARKit automatically attempts to characterize each detected plane, describing it as a real-world surface such as as a wall, floor, or table. You can then use this information to enhance the realism of your AR experience; for example, by placing certain virtual content only on floors.
+On supported devices, ARKit automatically attempts to characterize each detected plane, describing it as a real-world surface such as a wall, floor, or table. You can then use this information to enhance the realism of your AR experience; for example, by placing certain virtual content only on floors.
 
 Plane classification can take longer than plane detection, and ARKit reports classifications only for planes where it has a high confidence in the result. If ARKit currently has no classification result for a plane, this property’s value is [`ARPlaneAnchor.Classification.none(_:)`](arplaneanchor/classification-swift.enum/none(_:).md), with an associated [`ARPlaneAnchor.Classification.Status`](arplaneanchor/classification-swift.enum/status.md) value indicating why.
 

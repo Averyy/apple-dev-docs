@@ -6,11 +6,11 @@
 A basic chart symbol shape.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,11 @@ struct BasicChart3DSymbolShape
 
 ### Conforms To
 - [Chart3DSymbolShape](chart3dsymbolshape.md)
+
+## See Also
+
+- [protocol Chart3DSymbolShape](chart3dsymbolshape.md)
+  A type that can act as a shape for the marks that you add to a chart.
 
 
 ---

@@ -5,8 +5,8 @@
 Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - macOS 11.0+
 - Xcode 17.0+
 

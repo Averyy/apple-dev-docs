@@ -52,6 +52,8 @@ enum ContentMode
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
+  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
@@ -74,7 +76,6 @@ enum ContentMode
   Applies a 3D transformation to this view’s rendered output.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
-- [struct ProjectionTransform](projectiontransform.md)
 
 
 ---

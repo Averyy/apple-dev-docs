@@ -27,7 +27,7 @@ A view that uses the specified content as a background.
 
 #### Discussion
 
-Use this modifier to place one or more views behind another view. For example, you can place a collection of stars beind a [`Text`](text.md) view:
+Use this modifier to place one or more views behind another view. For example, you can place a collection of stars behind a [`Text`](text.md) view:
 
 ```swift
 Text("ABCDEF")

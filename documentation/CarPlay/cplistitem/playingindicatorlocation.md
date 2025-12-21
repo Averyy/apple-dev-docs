@@ -19,7 +19,7 @@ var playingIndicatorLocation: CPListItemPlayingIndicatorLocation { get set }
 
 #### Discussion
 
-If the list item’s [`isPlaying`](cplistitem/isplaying.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), it uses the value of this property to position its Now Playing indicator. The default value is [`CPListItemPlayingIndicatorLocation.leading`](cplistitemplayingindicatorlocation/leading.md).
+If the list item’s [`isPlaying`](cplistitem/isplaying.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), it uses the value of this property to position its Now Playing indicator. The default value is [`CPListItemPlayingIndicatorLocation.leading`](cplistitemplayingindicatorlocation/leading.md).
 
 ## See Also
 

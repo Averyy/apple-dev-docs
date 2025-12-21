@@ -6,10 +6,10 @@
 A type that represents an element you can request from a photo ID.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,15 +19,6 @@ struct Element
 
 ## Topics
 
-### Operators
-- [static func == (MobilePhotoIDDataRequest.Element, MobilePhotoIDDataRequest.Element) -> Bool](mobilephotoiddatarequest/element/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobilephotoiddatarequest/element/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilephotoiddatarequest/element/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let address: MobilePhotoIDDataRequest.Element](mobilephotoiddatarequest/element/address.md)
   The photo ID holder’s address on record with the issuer.
@@ -54,8 +45,6 @@ struct Element
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobilePhotoIDDataRequest.Element](mobilephotoiddatarequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the photo ID holder’s age is at least the given age.
-### Default Implementations
-- [Equatable Implementations](mobilephotoiddatarequest/element/equatable-implementations.md)
 
 ## Relationships
 

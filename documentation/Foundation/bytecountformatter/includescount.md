@@ -22,13 +22,13 @@ var includesCount: Bool { get set }
 
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/swift/true) and [`includesUnit`](bytecountformatter/includesunit.md) is set to [`false`](https://developer.apple.com/documentation/swift/false), no unit is displayed. For example, a value of 723 KB is formatted as `723`.
+If set to [`true`](https://developer.apple.com/documentation/Swift/true) and [`includesUnit`](bytecountformatter/includesunit.md) is set to [`false`](https://developer.apple.com/documentation/Swift/false), no unit is displayed. For example, a value of 723 KB is formatted as `723`.
 
-You can get the set this property to [`true`](https://developer.apple.com/documentation/swift/true) and the [`includesUnit`](bytecountformatter/includesunit.md) to [`true`](https://developer.apple.com/documentation/swift/true) individually to get both parts, separately. Note that putting them together yourself via string concatenation may be incorrect for some locales.
+You can get the set this property to [`true`](https://developer.apple.com/documentation/Swift/true) and the [`includesUnit`](bytecountformatter/includesunit.md) to [`true`](https://developer.apple.com/documentation/Swift/true) individually to get both parts, separately. Note that putting them together yourself via string concatenation may be incorrect for some locales.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-> **Note**:  Setting this value to [`false`](https://developer.apple.com/documentation/swift/false) and [`allowedUnits`](bytecountformatter/allowedunits.md) to [`false`](https://developer.apple.com/documentation/swift/false) results in an empty string.
+> **Note**:  Setting this value to [`false`](https://developer.apple.com/documentation/Swift/false) and [`allowedUnits`](bytecountformatter/allowedunits.md) to [`false`](https://developer.apple.com/documentation/Swift/false) results in an empty string.
 
 ## See Also
 

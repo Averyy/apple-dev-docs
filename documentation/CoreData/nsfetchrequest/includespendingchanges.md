@@ -22,13 +22,13 @@ var includesPendingChanges: Bool { get set }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if when the fetch is executed, the fetch will match against currently unsaved changes in the managed object context; otherwise the value is [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if when the fetch is executed, the fetch will match against currently unsaved changes in the managed object context; otherwise the value is [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), the fetch request doesn’t check unsaved changes and only returns objects that matched the predicate in the persistent store.
+If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the fetch request doesn’t check unsaved changes and only returns objects that matched the predicate in the persistent store.
 
 ##### Special Considerations
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) is not supported in conjunction with the result type [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md), including calculation of aggregate results (such as `max` and `min`). For dictionaries, the array returned from the fetch reflects the current state in the persistent store, and does not take into account any pending changes, insertions, or deletions in the context.
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) is not supported in conjunction with the result type [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md), including calculation of aggregate results (such as `max` and `min`). For dictionaries, the array returned from the fetch reflects the current state in the persistent store, and does not take into account any pending changes, insertions, or deletions in the context.
 
 If you need to take pending changes into account for some simple aggregations like `max` and `min`, you can instead use a normal fetch request, sorted on the attribute you want, with a fetch limit of 1.
 

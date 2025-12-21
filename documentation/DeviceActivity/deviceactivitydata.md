@@ -28,27 +28,17 @@ struct DeviceActivityData
   A device for which to report activity data.
 - [DeviceActivityData.User](deviceactivitydata/user-swift.struct.md)
 - [DeviceActivityData.WebDomainActivity](deviceactivitydata/webdomainactivity.md)
-### Operators
-- [static func == (DeviceActivityData, DeviceActivityData) -> Bool](deviceactivitydata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment>](deviceactivitydata/activitysegments.md)
   The activity of the user divided into segments.
 - [var device: DeviceActivityData.Device](deviceactivitydata/device-swift.property.md)
   The device associated with the activity report.
-- [var hashValue: Int](deviceactivitydata/hashvalue.md)
-  The hash value.
 - [var lastUpdatedDate: Date](deviceactivitydata/lastupdateddate.md)
   The date when the system last updated the data for this device.
 - [var segmentInterval: DeviceActivityFilter.SegmentInterval](deviceactivitydata/segmentinterval.md)
   The segment interval of each [`DeviceActivityData.ActivitySegment`](deviceactivitydata/activitysegment.md) in [`activitySegments`](deviceactivitydata/activitysegments.md).
 - [var user: DeviceActivityData.User](deviceactivitydata/user-swift.property.md)
   The user associated with the activity report.
-### Instance Methods
-- [func hash(into: inout Hasher)](deviceactivitydata/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](deviceactivitydata/equatable-implementations.md)
 
 ## Relationships
 

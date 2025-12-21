@@ -22,9 +22,9 @@ protocol UICalendarSelectionWeekOfYearDelegate : NSObjectProtocol
 
 ### Handling week-of-year selections
 - [func week(ofYearSelection: UICalendarSelectionWeekOfYear, canSelectWeekOfYear: DateComponents?) -> Bool](uicalendarselectionweekofyeardelegate/week(ofyearselection:canselectweekofyear:).md)
-  Notifies the delegate after a person selects a week in the calendar view.
-- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](uicalendarselectionweekofyeardelegate/week(ofyearselection:didselectweekofyear:).md)
   Determines if a week is available for selection.
+- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](uicalendarselectionweekofyeardelegate/week(ofyearselection:didselectweekofyear:).md)
+  Notifies the delegate after a person selects a week in the calendar view.
 
 ## Relationships
 

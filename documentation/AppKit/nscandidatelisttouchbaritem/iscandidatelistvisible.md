@@ -17,11 +17,11 @@ var isCandidateListVisible: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the candidate list is currently visible, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+If [`true`](https://developer.apple.com/documentation/Swift/true), then the candidate list is currently visible, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-When [`isCollapsed`](nscandidatelisttouchbaritem/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/swift/false), and the item is not obscured by UI then this property is true.
+When [`isCollapsed`](nscandidatelisttouchbaritem/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/Swift/false), and the item is not obscured by UI then this property is true.
 
-This property is KVO compliant, and you should supply a candidate list when its value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property is KVO compliant, and you should supply a candidate list when its value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

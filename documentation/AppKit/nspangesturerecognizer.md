@@ -19,7 +19,7 @@ class NSPanGestureRecognizer
 
 The gesture is recognized when the user clicks all of specified buttons, drags the mouse, and releases one or more of the buttons. Use the pan gesture recognizer object to retrieve the distance traveled during the pan and the location of the mouse as it pans.
 
-Upon creation, the gesture recognizer is configured to recognize pan gestures involving only the primary button. It also delays sending primary button events to the view by setting the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true). To change the set of buttons to track, modify the [`buttonMask`](nspangesturerecognizer/buttonmask.md) property.
+Upon creation, the gesture recognizer is configured to recognize pan gestures involving only the primary button. It also delays sending primary button events to the view by setting the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). To change the set of buttons to track, modify the [`buttonMask`](nspangesturerecognizer/buttonmask.md) property.
 
 In this gesture recognizer, the [`location(in:)`](nsgesturerecognizer/location(in:).md) method always reports the current mouse point, which changes as the user drags the mouse.
 

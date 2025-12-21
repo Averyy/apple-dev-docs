@@ -23,8 +23,6 @@ init(unicodeScalarLiteral value: String)
   Creates an instance initialized to the given value.
 - [init?(rawValue: String)](languagetag/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](languagetag/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

@@ -21,7 +21,7 @@ var reportsAbsoluteDpadValues: Bool { get set }
 
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), the profile assumes the location where the user first touches the pad is the origin value (`0.0,0.0`) for the pad. The profile calculates all subsequent values relative to this position until the user lifts their finger. The next time the user touches the pad, the profile uses that location as the new origin. If this property is [`true`](https://developer.apple.com/documentation/swift/true), the profile calculates values relative to the physical center of the touchpad. The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), the profile assumes the location where the user first touches the pad is the origin value (`0.0,0.0`) for the pad. The profile calculates all subsequent values relative to this position until the user lifts their finger. The next time the user touches the pad, the profile uses that location as the new origin. If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the profile calculates values relative to the physical center of the touchpad. The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

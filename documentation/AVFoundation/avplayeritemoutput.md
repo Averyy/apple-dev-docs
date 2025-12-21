@@ -28,14 +28,14 @@ This class provides basic methods for converting time values to the timebase of 
 
 ## Topics
 
-### Time Conversion
+### Time conversion
 - [func itemTime(forHostTime: CFTimeInterval) -> CMTime](avplayeritemoutput/itemtime(forhosttime:).md)
   Converts a host time, specified in seconds, to the item’s timebase.
 - [func itemTime(forMachAbsoluteTime: Int64) -> CMTime](avplayeritemoutput/itemtime(formachabsolutetime:).md)
   Converts a Mach host time to the item’s timebase.
 - [func itemTime(for: CVTimeStamp) -> CMTime](avplayeritemoutput/itemtime(for:).md)
   Converts a Core Video timestamp to the item’s timebase.
-### Configuring the Playback Options
+### Configuring the playback options
 - [var suppressesPlayerRendering: Bool](avplayeritemoutput/suppressesplayerrendering.md)
   A Boolean value that indicates whether the player object renders the receiver’s output.
 

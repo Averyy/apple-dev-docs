@@ -39,6 +39,15 @@ struct VNVideoProcessingOption
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct VNComputeStage](vncomputestage.md)
+  Types that represent the compute stage.
+- [class VNGeometryUtils](vngeometryutils.md)
+  Utility methods to determine the geometries of various Vision types.
+- [class VNVideoProcessor](vnvideoprocessor.md)
+  An object that performs offline analysis of video content.
+
 
 ---
 

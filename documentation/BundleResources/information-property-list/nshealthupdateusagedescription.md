@@ -21,7 +21,7 @@ A message to the user that explains why the app requested permission to save sam
 - [NSHealthClinicalHealthRecordsShareUsageDescription](information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
   A message to the user that explains why the app requested permission to read clinical records.
 - [NSHealthShareUsageDescription](information-property-list/nshealthshareusagedescription.md)
-  A message to the user that explains why the app requested permission to read samples from the HealthKit store.
+  A message that explains to people why the app requests permission to read samples from the HealthKit store.
 - [NSHealthRequiredReadAuthorizationTypeIdentifiers](information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
   The clinical record data types that your app must get permission to read.
 

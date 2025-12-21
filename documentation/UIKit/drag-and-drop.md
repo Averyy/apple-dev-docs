@@ -22,7 +22,7 @@ When dragging is in progress, the source and destination apps continue to run no
 
 Unlike in macOS, iOS drag and drop supports multiple simultaneous drag activities—as many as the user’s fingers can handle. You can design your app so that the user can sequentially add drag items to an in-progress drag session, and a destination app can accept multiple, simultaneous drops.
 
-Text views and text fields automatically support drag and drop. Collection views and table views offer dedicated, view-specific methods and properties, and text views offer APIs for customizing the views’ drag-and-drop behavior. You can configure any custom view to support drag and drop, as well.
+Text views and text fields automatically support drag and drop. Collection views and table views offer dedicated, view-specific methods and properties, and text views offer APIs for customizing the views’ drag-and-drop behavior. You can configure any custom view to support drag and drop.
 
 > **Note**:  The system handles all security aspects of inter-app drag and drop in iOS. You don’t need to perform additional configuration like setting special entitlements or `Info.plist` keys.
 
@@ -82,9 +82,9 @@ Text views and text fields automatically support drag and drop. Collection views
   Share data between iPad apps during a drag and drop operation using an item provider.
 - [class NSItemProvider](../Foundation/NSItemProvider.md)
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
-- [protocol NSItemProviderReading : NSObjectProtocol](../Foundation/NSItemProviderReading.md)
+- [protocol NSItemProviderReading](../Foundation/NSItemProviderReading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting : NSObjectProtocol](../Foundation/NSItemProviderWriting.md)
+- [protocol NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
 - [protocol UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 - [protocol UIItemProviderReadingAugmentationDesignating](uiitemproviderreadingaugmentationdesignating.md)

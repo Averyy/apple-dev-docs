@@ -20,9 +20,7 @@ func sec_protocol_options_set_challenge_block(_ options: sec_protocol_options_t,
 
 #### Discussion
 
-```None
- Set the challenge block.
-```
+Set the challenge block.
 
 ```None
  A `sec_protocol_challenge_t` block.

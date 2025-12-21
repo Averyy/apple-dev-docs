@@ -7,7 +7,7 @@
 Finish enumerating a page of results, and optionally provide a location within the results to continue the enumeration.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

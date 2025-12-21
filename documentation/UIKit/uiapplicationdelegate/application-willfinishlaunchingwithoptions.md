@@ -21,12 +21,12 @@ optional func application(_ application: UIApplication, willFinishLaunchingWithO
 
 ## Mentions
 
-- [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
 - [About the app launch sequence](about-the-app-launch-sequence.md)
+- [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
 
 #### Return Value
 
-Return [`false`](https://developer.apple.com/documentation/swift/false) if the app can’t handle the URL resource or continue a user activity, or if the app doesn’t need to perform the [`application(_:performActionFor:completionHandler:)`](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md) method because you’re handling the invocation of a Home Screen quick action in this method; otherwise return [`true`](https://developer.apple.com/documentation/swift/true). The system ignores the return value if the app launches as a result of a remote notification.
+Return [`false`](https://developer.apple.com/documentation/Swift/false) if the app can’t handle the URL resource or continue a user activity, or if the app doesn’t need to perform the [`application(_:performActionFor:completionHandler:)`](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md) method because you’re handling the invocation of a Home Screen quick action in this method; otherwise return [`true`](https://developer.apple.com/documentation/Swift/true). The system ignores the return value if the app launches as a result of a remote notification.
 
 #### Discussion
 
@@ -34,7 +34,7 @@ Use this method (and the corresponding [`application(_:didFinishLaunchingWithOpt
 
 If the system launched your app for a specific reason, the `launchOptions` dictionary contains data indicating the reason for the launch. For some launch reasons, the system may call additional methods of your app delegate. For example, if your app launched to open a URL, the system calls the [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method after your app finishes initializing itself. The presence of the launch keys gives you the opportunity to plan for that behavior. In the case of a URL to open, you might want to prevent state restoration if the URL represents a document that the person wanted to open.
 
-When the system asks to open a URL, the system combines the return result from this method with the return result from the [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method to determine whether to handle a URL. If either method returns [`false`](https://developer.apple.com/documentation/swift/false), the system doesn’t call the [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method. If you don’t implement one of the methods, the system only considers the return value of the implemented method.
+When the system asks to open a URL, the system combines the return result from this method with the return result from the [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method to determine whether to handle a URL. If either method returns [`false`](https://developer.apple.com/documentation/Swift/false), the system doesn’t call the [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method. If you don’t implement one of the methods, the system only considers the return value of the implemented method.
 
 In some cases, a person launches your app with a Home Screen quick action. To ensure you handle this launch case correctly, read the discussion in the [`application(_:performActionFor:completionHandler:)`](uiapplicationdelegate/application(_:performactionfor:completionhandler:).md) method.
 

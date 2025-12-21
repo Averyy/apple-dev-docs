@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a list with the given content that supports selecting a single row that cannot be deselcted.
+Creates a list with the given content that supports selecting a single row that cannot be deselected.
 
 **Availability**:
 - macOS 13.0+

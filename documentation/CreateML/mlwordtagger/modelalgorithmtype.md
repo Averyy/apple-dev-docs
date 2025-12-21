@@ -47,10 +47,8 @@ enum ModelAlgorithmType
 
 ## See Also
 
-- [init(validation: MLWordTagger.ModelParameters.ValidationData, algorithm: MLWordTagger.ModelAlgorithmType, language: NLLanguage?)](mlwordtagger/modelparameters-swift.struct/init(validation:algorithm:language:).md)
-  Creates model parameters.
-- [MLWordTagger.ModelParameters.ValidationData](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum.md)
-  The validation data.
+- [MLWordTagger.FeatureExtractorType](mlwordtagger/featureextractortype.md)
+  The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
 
 
 ---

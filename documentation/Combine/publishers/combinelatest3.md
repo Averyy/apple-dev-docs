@@ -22,28 +22,17 @@ struct CombineLatest3<A, B, C> where A : Publisher, B : Publisher, C : Publisher
 
 ## Topics
 
-### Creating a Combine Latest-Three Publisher
+### Creating a combine latest-three publisher
 - [init(A, B, C)](publishers/combinelatest3/init(_:_:_:).md)
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.CombineLatest3.Output](publishers/combinelatest3/output.md)
   The kind of values published by this publisher.
 - [Publishers.CombineLatest3.Failure](publishers/combinelatest3/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/combinelatest3/a.md)
 - [let b: B](publishers/combinelatest3/b.md)
 - [let c: C](publishers/combinelatest3/c.md)
-### Comparing Publishers
-- [static func == (Publishers.CombineLatest3<A, B, C>, Publishers.CombineLatest3<A, B, C>) -> Bool](publishers/combinelatest3/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](publishers/combinelatest3/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-combinelatest3-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Equatable Implementations](publishers/combinelatest3/equatable-implementations.md)
-- [Publisher Implementations](publishers/combinelatest3/publisher-implementations.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to stop mirroring the display on another device.
+The command to stop mirroring the display to another device.
 
 **Availability**:
 - iOS 7.0+

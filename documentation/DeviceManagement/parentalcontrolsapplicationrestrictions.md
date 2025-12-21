@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure parental controls for apps.
+The payload that configures parental controls for apps.
 
 **Availability**:
 - macOS 10.7+
@@ -106,13 +106,13 @@ To determine if an app can be launched, the app is evaluated with these rules:
 ## See Also
 
 - [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
-  The payload you use to configure the parental control web content filters.
+  The payload that configures the parental control web content filters.
 - [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
-  The payload you use to configure parental control dictionary restrictions.
+  The payload that configures parental control dictionary restrictions.
 - [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
-  The payload you use to configure Game Center parental controls.
+  The payload that configures Game Center parental controls.
 - [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
-  The payload you use to configure parental control time limits.
+  The payload that configures parental control time limits.
 
 
 ---

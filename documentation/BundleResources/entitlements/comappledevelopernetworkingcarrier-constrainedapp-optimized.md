@@ -6,12 +6,12 @@
 A Boolean value that indicates whether your app is optimized for a carrier-provided satellite network.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Discussion
 
-By default, this entitlement returns `false`. Returning `true` indicates to Apple that your app is optimized for a carrier-provided satellite network.
+Returning `true` indicates to Apple that your app is optimized for a carrier-provided satellite network.
 
 ## See Also
 
@@ -32,6 +32,8 @@ By default, this entitlement returns `false`. Returning `true` indicates to Appl
 - [5G Network Slicing Traffic Category](entitlements/com.apple.developer.networking.slicing.trafficcategory.md)
   The key that defines the traffic category entitlement to enable Cellular Network Slicing.
 - [com.apple.developer.networking.vmnet](entitlements/com.apple.developer.networking.vmnet.md)
+- [Configuring your app for ultra-constrained networks](configuring-your-app-for-ultra-constrained-networks.md)
+  Prepare to deliver data over resource-limited data networks.
 - [com.apple.developer.networking.carrier-constrained.appcategory](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md)
   The key that defines an app’s category for accessing a carrier-provided satellite network.
 

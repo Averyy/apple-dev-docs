@@ -2,11 +2,11 @@
 
 **Framework**: Authentication Services
 
-Specify how platform SSO authenticates with the identity provider.
+Specify how Platform SSO authenticates with the identity provider.
 
 #### Overview
 
-Use a login configuration to instruct platform SSO how to authenticate with the identity provider.
+Use a login configuration to instruct Platform SSO how to authenticate with the identity provider.
 
 Use [`additionalAuthorizationScopes`](asauthorizationproviderextensionloginconfiguration/additionalauthorizationscopes.md) to differentiate authentication requests for network account authorization from other login requests. For example, these requests can return temporary admin group membership.
 
@@ -14,7 +14,7 @@ The [`accountDisplayName`](asauthorizationproviderextensionloginconfiguration/ac
 
 ##### Configure for Federation
 
-Federation enables authentication between security domains, such as from a local IdP to a cloud IdP.  You have two options to configure platform SSO for federation:
+Federation enables authentication between security domains, such as from a local IdP to a cloud IdP.  You have two options to configure Platform SSO for federation:
 
 To use WS-Trust, set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/wstrust.md). This federation type sends the WS-Trust request to the URLs in the metadata exchange data (MEX) response. The required configuration values are:
 
@@ -22,7 +22,7 @@ To use Dynamic WS-Trust, set [`federationType`](asauthorizationproviderextension
 
 ##### Use the Login Manager to Interface with Platform Sso
 
-The SSO extension uses [`ASAuthorizationProviderExtensionLoginManager`](asauthorizationproviderextensionloginmanager.md) to interface with platform SSO. The system provides and instance of the login manager for each authentication request. The login manager can:
+The SSO extension uses [`ASAuthorizationProviderExtensionLoginManager`](asauthorizationproviderextensionloginmanager.md) to interface with Platform SSO. The system provides and instance of the login manager for each authentication request. The login manager can:
 
 - Update the login configuration.
 - Update SSO tokens.
@@ -32,13 +32,15 @@ The SSO extension uses [`ASAuthorizationProviderExtensionLoginManager`](asauthor
 
 If the extension detects that the keys or the device become compromised due to a security exploit, it can reset the keys and request device registration again. In this case, the extension needs to return `failedNoRetry` during registration until macOS is patched.
 
+The loginConfiguration.additionalAuthorizationScopes can be used to differentiate authentication requests for Network Account Authorization from other login requests. For example, temporary admin group membership could be returned for these requests.
+
 ##### Migrate From Per User Device Keys to Shared Device Keys
 
 Devices keys represent the device to the IdP. They keys can either be , which means each user on the device has separate keys, or , which means all users on the device use the same keys. Shared device keys enable a device to authenticate with the IdP before a user logs in. Shared keys are available in macOS 14 and later.
 
 The following table summarizes feature availability for per-user device keys and shared device keys:
 
-| Feature | Per-User Device Keys | Shared Device Keys |
+| Feature | Device Keys  (macOS 13 and later ) | Shared Device Keys |
 | --- | --- | --- |
 |  |  |  |
 | Password | ✓ | ✓ |
@@ -48,8 +50,8 @@ The following table summarizes feature availability for per-user device keys and
 | Password |  | ✓ |
 | SmartCard |  | ✓ |
 |  |  |  |
-| Login window |  | ✓ (platform SSO 2.0 only) |
-| Screensaver unlock |  | ✓ (platform SSO 2.0 only) |
+| Login window |  | ✓  (Platform SSO 2.0 only) |
+| Screensaver unlock |  | ✓  (Platform SSO 2.0 only) |
 |  |  |  |
 | Group membership | ✓ | ✓ |
 | Network account authorization |  | ✓ |
@@ -61,7 +63,7 @@ When Device registration completes successfully, the system initiates user regis
 ## See Also
 
 - [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for platform SSO.
+  Configure Device Management to support device and user registration for Platform SSO.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)

@@ -31,7 +31,7 @@ A value indicating the app’s authorization status for this type. For a list of
 
 This method checks the authorization status for saving data to the HealthKit store.
 
-> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session. For more information, refer to [`Authorizing access to health data`](authorizing-access-to-health-data.md).
+> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session. For more information, refer to [`Authorizing access to health data`](authorizing-access-to-health-data.md).
 
 To help prevent possible leaks of sensitive health information, your app cannot determine whether or not a user has granted permission to read data. If you are not given permission, it  simply appears as if there is no data of the requested type in the HealthKit store. If your app is given share permission but not read permission, you see only the data that your app has written to the store. Data from other sources remains hidden.
 

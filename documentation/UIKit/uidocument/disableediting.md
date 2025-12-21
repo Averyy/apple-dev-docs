@@ -14,7 +14,6 @@ Disables editing when it’s unsafe to make changes to a document.
 ## Declaration
 
 ```swift
-@MainActor
 func disableEditing()
 ```
 

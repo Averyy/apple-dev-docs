@@ -20,7 +20,7 @@ func handleNewFlow(_ flow: NEAppProxyFlow) -> Bool
 
 #### Return Value
 
-A Boolean value set to [`true`](https://developer.apple.com/documentation/swift/true) if the proxy implementation decides to handle the flow, or [`false`](https://developer.apple.com/documentation/swift/false) if it instead decides to terminate the flow.
+A Boolean value set to [`true`](https://developer.apple.com/documentation/Swift/true) if the proxy implementation decides to handle the flow, or [`false`](https://developer.apple.com/documentation/Swift/false) if it instead decides to terminate the flow.
 
 #### Discussion
 

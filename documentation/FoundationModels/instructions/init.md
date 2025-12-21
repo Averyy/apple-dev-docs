@@ -4,11 +4,11 @@
 **Kind**: init
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ init(@InstructionsBuilder _ content: () throws -> Instructions) rethrows
 - [struct InstructionsBuilder](instructionsbuilder.md)
   A type that represents an instructions builder.
 - [protocol InstructionsRepresentable](instructionsrepresentable.md)
-  Conforming types represent instructions.
+  A type that can be represented as instructions.
 
 
 ---

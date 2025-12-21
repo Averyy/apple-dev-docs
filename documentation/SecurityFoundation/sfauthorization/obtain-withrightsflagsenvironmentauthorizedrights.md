@@ -16,7 +16,7 @@ func obtain(withRights rights: UnsafePointer<AuthorizationRights>!, flags: Autho
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if operation completes successfully.
+[`true`](https://developer.apple.com/documentation/Swift/true) if operation completes successfully.
 
 #### Discussion
 
@@ -26,11 +26,11 @@ The second reason to use this method is to authorize rights before performing a 
 
 The third reason to use this method is to authorize partial rights. By specifying the `kAuthorizationFlagPartialRights`, `kAuthorizationFlagInteractionAllowed`, and `kAuthorizationFlagExtendRights` masks as authorization options, the Security framework grants all rights it can authorize. On return, the authorized set contains all the rights.
 
-If you do not specify the `kAuthorizationFlagPartialRights` mask and the Security framework denies at least one right, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationDenied`.
+If you do not specify the `kAuthorizationFlagPartialRights` mask and the Security framework denies at least one right, then the method returns [`false`](https://developer.apple.com/documentation/Swift/false) and the `error` parameter returns `errAuthorizationDenied`.
 
-If you do not specify the `kAuthorizationFlagInteractionAllowed` mask and the Security framework requires user interaction, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationInteractionNotAllowed`.
+If you do not specify the `kAuthorizationFlagInteractionAllowed` mask and the Security framework requires user interaction, then the method returns [`false`](https://developer.apple.com/documentation/Swift/false) and the `error` parameter returns `errAuthorizationInteractionNotAllowed`.
 
-If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user cancels the authentication process, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationCanceled`.
+If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user cancels the authentication process, then the method returns [`false`](https://developer.apple.com/documentation/Swift/false) and the `error` parameter returns `errAuthorizationCanceled`.
 
 > **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
 

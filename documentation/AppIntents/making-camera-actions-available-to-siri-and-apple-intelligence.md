@@ -10,7 +10,7 @@ To integrate your app’s camera capabilities with Siri and Apple Intelligence, 
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-For example, if your app allows a person to take a photo or video, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.camera` domain and the [`startCapture`](assistantschemas/cameraintent/startcapture.md) schema:
+For example, if your app allows a person to take a photo or video, use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.camera` domain and the [`startCapture`](assistantschemas/cameraintent/startcapture.md) schema:
 
 ```swift
 @AppIntent(schema: .camera.startCapture)
@@ -29,7 +29,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ##### Make Sure Your Enumeration Meets Requirements
 
-To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.camera` domain and a schema to it. The following example uses the [`captureMode`](assistantschemas/cameraenum/capturemode.md) schema:
+To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AppEnum(schema:)`](appenum(schema:).md) macro. Then, pass the `.camera` domain and a schema to it. The following example uses the [`captureMode`](assistantschemas/cameraenum/capturemode.md) schema:
 
 ```swift
 @AppEnum(schema: .camera.captureMode)

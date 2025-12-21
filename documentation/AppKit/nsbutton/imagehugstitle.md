@@ -17,9 +17,9 @@ var imageHugsTitle: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default value), the button’s image is positioned according to the [`imagePosition`](nsbutton/imageposition.md) property at the edge of the button bezel, and the title is positioned within the remaining space.
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) (the default value), the button’s image is positioned according to the [`imagePosition`](nsbutton/imageposition.md) property at the edge of the button bezel, and the title is positioned within the remaining space.
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the button’s image is positioned directly adjacent to the title based on the [`imagePosition`](nsbutton/imageposition.md) property, and the image and title are positioned within the button bezel as a single unit.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the button’s image is positioned directly adjacent to the title based on the [`imagePosition`](nsbutton/imageposition.md) property, and the image and title are positioned within the button bezel as a single unit.
 
 ## See Also
 

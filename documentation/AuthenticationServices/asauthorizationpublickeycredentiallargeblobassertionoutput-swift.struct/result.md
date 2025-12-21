@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+The result of the requested large binary object operation.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -15,6 +17,11 @@
 ```swift
 var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult
 ```
+
+## See Also
+
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult.md)
+  A type that represents the result of the requested binary large object operation.
 
 
 ---

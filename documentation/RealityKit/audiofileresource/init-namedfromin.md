@@ -10,7 +10,7 @@ Initializes a preconfigured AudioFileResource asynchronously from a Reality Comp
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -26,7 +26,7 @@ Initializes a preconfigured AudioFileResource asynchronously from a Reality Comp
 
 ## See Also
 
-- [convenience(named:in:configuration:)](audiofileresource/init(named:in:configuration:).md)
+- [convenience init(named: String, in: Bundle?, configuration: AudioFileResource.Configuration) async throws](audiofileresource/init(named:in:configuration:).md)
   Initializes an AudioFileResource asynchronously.
 
 

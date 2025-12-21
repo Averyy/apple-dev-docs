@@ -6,10 +6,8 @@
 A Boolean value that indicates whether the touch controller is connected to the Game Controller framework.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,12 +25,14 @@ var isConnected: Bool { get }
   The Metal device the touch control uses for rendering the touch controls.
 - [var directionPads: [TCDirectionPad]](tctouchcontroller/directionpads.md)
   An array containing all the direction pad controls managed by this controller.
-- [var scaleFactor: CGFloat](tctouchcontroller/scalefactor.md)
-  The scale factor of the screen.
-- [var screenHeight: CGFloat](tctouchcontroller/screenheight.md)
-  The height of the screen in points.
-- [var screenWidth: CGFloat](tctouchcontroller/screenwidth.md)
-  The width of the screen in points.
+- [var drawableSize: CGSize](tctouchcontroller/drawablesize.md)
+  The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
+- [var size: CGSize](tctouchcontroller/size.md)
+  The size of the view the touch controller’s drawable is embedded in, in points.
+- [var switches: [TCSwitch]](tctouchcontroller/switches.md)
+  An array containing all the switch controls managed by this controller.
+- [class var isSupported: Bool](tctouchcontroller/issupported.md)
+  Whether touch controllers are supported for the device.
 - [var throttles: [TCThrottle]](tctouchcontroller/throttles.md)
   An array containing all the throttle controls managed by this controller.
 - [var thumbsticks: [TCThumbstick]](tctouchcontroller/thumbsticks.md)

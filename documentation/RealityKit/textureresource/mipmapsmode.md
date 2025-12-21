@@ -10,7 +10,7 @@ An enumeration for specifying how to allocate and generate mipmaps for a texture
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -29,7 +29,7 @@ enum MipmapsMode
 - [TextureResource.MipmapsMode.allocateAndGenerateAll](textureresource/mipmapsmode/allocateandgenerateall.md)
   Allocate and generate all mipmaps for the texture resource.
 ### Comparing enumeration values
-- [static ==(_:_:)](textureresource/==(_:_:).md)
+- [static func == (TextureResource, TextureResource) -> Bool](textureresource/==(_:_:).md)
   Indicates whether two texture resources are equal.
 
 ## Relationships
@@ -47,6 +47,8 @@ enum MipmapsMode
   A representation of a texture.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
   An object that holds texture resource creation options.
+- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+  An object for controlling the texture-sampling quality.
 - [TextureResource.Semantic](textureresource/semantic-swift.enum.md)
   An object for specifying the intended use of a texture.
 

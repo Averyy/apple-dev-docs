@@ -28,15 +28,15 @@ If any upstream publisher finishes successfully or fails with an error, so too d
 
 ## Topics
 
-### Creating a Zip Four Publisher
+### Creating a zip-four Publisher
 - [init(A, B, C, D)](publishers/zip4/init(_:_:_:_:).md)
   Creates a publisher created by applying the zip function to four upstream publishers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Zip4.Output](publishers/zip4/output.md)
   The kind of values published by this publisher.
 - [Publishers.Zip4.Failure](publishers/zip4/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/zip4/a.md)
   A publisher to zip.
 - [let b: B](publishers/zip4/b.md)
@@ -45,17 +45,11 @@ If any upstream publisher finishes successfully or fails with an error, so too d
   A third publisher to zip.
 - [let d: D](publishers/zip4/d.md)
   A fourth publisher to zip.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Zip4<A, B, C, D>, Publishers.Zip4<A, B, C, D>) -> Bool](publishers/zip4/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/zip4/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-zip4-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/zip4/equatable-implementations.md)
-- [Publisher Implementations](publishers/zip4/publisher-implementations.md)
 
 ## Relationships
 

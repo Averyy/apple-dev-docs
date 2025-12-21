@@ -25,9 +25,6 @@ struct Options
 - [static var noAutoRename: NetService.Options](netservice/options/noautorename.md)
   Specifies that the network service should not rename itself in the event of a name collision.
 - [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
-- [static var noAutoRename: NetService.Options](netservice/options/noautorename.md)
-  Specifies that the network service should not rename itself in the event of a name collision.
-- [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
 ### Initializers
 - [init(rawValue: UInt)](netservice/options/init(rawvalue:).md)
 

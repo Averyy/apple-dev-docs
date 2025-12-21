@@ -29,15 +29,8 @@ After receiving the raw token data from your provider, create an instance of thi
 - [init(rawValue: String)](storeandforwardbatchdeletiontoken/init(rawvalue:).md)
   Creates a token with the string your payment service provider provides.
 ### Getting the token value
-- [let rawValue: String](storeandforwardbatchdeletiontoken/rawvalue-swift.property.md)
+- [let rawValue: String](storeandforwardbatchdeletiontoken/rawvalue.md)
   The raw token string your payment service provider supplies.
-- [var hashValue: Int](storeandforwardbatchdeletiontoken/hashvalue.md)
-### Type Aliases
-- [StoreAndForwardBatchDeletionToken.RawValue](storeandforwardbatchdeletiontoken/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](storeandforwardbatchdeletiontoken/equatable-implementations.md)
-- [RawRepresentable Implementations](storeandforwardbatchdeletiontoken/rawrepresentable-implementations.md)
 
 ## Relationships
 

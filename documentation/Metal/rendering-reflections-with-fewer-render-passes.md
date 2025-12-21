@@ -1,4 +1,4 @@
-# Rendering Reflections with Fewer Render Passes
+# Rendering reflections with fewer render passes
 
 **Framework**: Metal
 
@@ -16,7 +16,7 @@ This sample demonstrates dynamic reflections on a chrome sphere, using layer sel
 
 ![Reflections with Layer Selection](https://docs-assets.developer.apple.com/published/e4a361c089b944adfd6aca1902e22f80/reflections-with-layer-selection-1-ReflectionsWithLayerSelections.png)
 
-You can implement an object that reflects its environment by sampling its reflections from a cube map of the environment. A cube map is a single texture composed of six 2D texture layers arranged in the shape of a cube. The reflections vary based on the positions of other objects in the environment, so each of the cube map’s six faces must be rendered dynamically in every frame. This would normally require six separate render passes, one for each face, but Metal allows you to render an entire cube map in a single pass.
+You can implement an object that reflects its environment by sampling its reflections from a cube map of the environment. A cube map is a single texture composed of six 2D texture layers arranged in the shape of a cube. The reflections vary based on the positions of other objects in the environment, so each of the cube map’s six faces needs to be rendered dynamically in every frame. This would normally require six separate render passes, one for each face, but Metal allows you to render an entire cube map in a single pass.
 
 ![Render Passes](https://docs-assets.developer.apple.com/published/257f04c7dc2202916dc67845aa682fdc/reflections-with-layer-selection-2-RenderPasses.png)
 
@@ -24,9 +24,9 @@ You can implement an object that reflects its environment by sampling its reflec
 
 This sample contains macOS and iOS targets. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
-Layer Selection is supported on all macOS GPUs but only iOS GPUs which support the `MTLFeatureSet_iOS_GPUFamily5_v1` feature set.
+Layer Selection is supported on all macOS GPUs but only iOS GPUs which support the [`MTLFeatureSet.iOS_GPUFamily5_v1`](mtlfeatureset/ios_gpufamily5_v1.md) feature set.
 
-You check the GPU that you choose at runtime if it supports ICBs using `MTLDevice`’s supportsFeatureSet::
+You check the GPU that you choose at runtime supports indirect command buffers (ICBs) by calling an [`MTLDevice`](mtldevice.md) instance’s [`supportsFeatureSet(_:)`](mtldevice/supportsfeatureset(_:).md) method.
 
 ```objective-c
 supportsLayerSelection = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUFamily5_v1];
@@ -184,7 +184,7 @@ else
 
 ##### Configure Render Targets for the Final Pass
 
-The render target for the final pass is the view’s , a displayable resource obtained by accessing the view’s `currentRenderPassDescriptor` property. However, you must not access this property prematurely because it implicitly retrieves a drawable. Drawables are expensive system resources created and maintained by the Core Animation framework. You should always hold a drawable as briefly as possible to avoid resource stalls. In this sample, a drawable is acquired just before the final render pass is encoded.
+The render target for the final pass is the view’s , a displayable resource obtained by accessing the view’s `currentRenderPassDescriptor` property. However, don’t access this property prematurely because it implicitly retrieves a drawable. Drawables are expensive system resources created and maintained by the Core Animation framework. Hold a drawable as briefly as possible to avoid resource stalls. In this sample, a drawable is acquired just before the final render pass is encoded.
 
 ```objective-c
 MTLRenderPassDescriptor* finalPassDescriptor = view.currentRenderPassDescriptor;
@@ -218,13 +218,13 @@ The final pass renders the final frame directly to the view’s drawable, which 
 
 ## See Also
 
-- [Rendering a Scene with Forward Plus Lighting Using Tile Shaders](rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
+- [Rendering a scene with forward plus lighting using tile shaders](rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
   Implement a forward plus renderer using the latest features on Apple GPUs.
-- [Rendering a Scene with Deferred Lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
+- [Rendering a scene with deferred lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
+- [Rendering a scene with deferred lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a Scene with Deferred Lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
+- [Rendering a scene with deferred lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
 
 

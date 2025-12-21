@@ -24,7 +24,7 @@ With [`OAuth 2.0`](https://developer.apple.comhttps://datatracker.ietf.org/doc/h
 ### Using and revoking tokens
 - [Request an authorization](request-an-authorization.md)
   Request a user authorization to Account & Organizational Data Sharing apps and web services.
-- [Revoke tokens](revoke-tokens.md)
+- [Token revocation](revoke-tokens.md)
   Invalidate the tokens and associated user authorizations for someone when they are no longer associated with your app.
 ### Common objects
 - [object JWKSet](jwkset.md)

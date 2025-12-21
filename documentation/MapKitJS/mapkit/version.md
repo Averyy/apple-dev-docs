@@ -11,7 +11,7 @@ The version of MapKit JS.
 ## Declaration
 
 ```swift
-readonly attribute string version;
+get version(): string;
 ```
 
 #### Discussion

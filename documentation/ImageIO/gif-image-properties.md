@@ -8,7 +8,7 @@ Metadata keys for the Graphics Interchange Format (GIF).
 
 ### Dictionary
 - [let kCGImagePropertyGIFDictionary: CFString](kcgimagepropertygifdictionary.md)
-  A dictionary of key-value pairs for an image that uses Graphics Interchange Format (GIF). See [`GIF Image Properties`](gif-image-properties.md).
+  A dictionary of key-value pairs for an image that uses Graphics Interchange Format (GIF).
 ### Image Properties
 - [let kCGImagePropertyGIFCanvasPixelHeight: CFString](kcgimagepropertygifcanvaspixelheight.md)
   The height of the main image, in pixels.

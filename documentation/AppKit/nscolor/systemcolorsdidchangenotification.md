@@ -18,11 +18,6 @@ class let systemColorsDidChangeNotification: NSNotification.Name
 
 This notification contains no notification object and no `userInfo` dictionary.
 
-## See Also
-
-- [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
-  Sent after the user changes control tint preference.
-
 
 ---
 

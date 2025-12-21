@@ -24,12 +24,12 @@ You don’t create instances of this class directly. Instead, an [`AVCaptureConn
 
 ## Topics
 
-### Configuring a Channel
+### Configuring a channel
 - [var isEnabled: Bool](avcaptureaudiochannel/isenabled.md)
   A Boolean value that indicates whether the channel is in an enabled state.
 - [var volume: Float](avcaptureaudiochannel/volume.md)
   The current volume (gain) of the channel.
-### Accessing Power Levels
+### Accessing power levels
 - [var averagePowerLevel: Float](avcaptureaudiochannel/averagepowerlevel.md)
   The instantaneous average power level in decibels.
 - [var peakHoldLevel: Float](avcaptureaudiochannel/peakholdlevel.md)

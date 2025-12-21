@@ -25,7 +25,7 @@ The URL connection for the URL request. Returns `nil` if a connection can’t be
 
 #### Discussion
 
-This is equivalent to calling [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) and passing [`true`](https://developer.apple.com/documentation/swift/true) for `startImmediately`.
+This is equivalent to calling [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) and passing [`true`](https://developer.apple.com/documentation/Swift/true) for `startImmediately`.
 
 ##### Special Considerations
 

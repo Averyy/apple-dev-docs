@@ -97,7 +97,6 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 ### Instance Properties
 - [let lowerBound: Bound](partialrangefrom/lowerbound.md)
 ### Default Implementations
-- [CustomTestStringConvertible Implementations](partialrangefrom/customteststringconvertible-implementations.md)
 - [Decodable Implementations](partialrangefrom/decodable-implementations.md)
 - [Encodable Implementations](partialrangefrom/encodable-implementations.md)
 - [RangeExpression Implementations](partialrangefrom/rangeexpression-implementations.md)

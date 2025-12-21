@@ -11,7 +11,7 @@ The desired dimensions of the annotation, in CSS pixels.
 ## Declaration
 
 ```swift
-attribute Object size;
+size?: Size;
 ```
 
 #### Discussion

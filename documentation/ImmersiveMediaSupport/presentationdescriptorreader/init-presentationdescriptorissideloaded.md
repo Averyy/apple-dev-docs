@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Initializes an instance containing the specified presentation descriptor.
+Initializes an instance that contains the specified presentation descriptor.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ init(presentationDescriptor: PresentationDescriptor, isSideloaded: Bool = false)
 
 ## Parameters
 
-- `presentationDescriptor`: Current presentation commands to be used/parsed.
+- `presentationDescriptor`: The current presentation commands to use or parse.
 - `isSideloaded`: Signals the player this is a sideloaded dynamic metadata and not real-time - in that case   the player will not delete old commands as playback continues (to support seek)
 
 

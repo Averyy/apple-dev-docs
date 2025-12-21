@@ -6,7 +6,7 @@ Asynchronous properties for mutable movies.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMutableMovieTrack]>](avpartialasyncproperty/tracks-2lj40.md)
   The tracks that a movie contains.
 

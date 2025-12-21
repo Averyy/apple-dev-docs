@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure network proxies for a device.
+The payload that configures network proxies for a device.
 
 **Availability**:
 - macOS 10.7+
@@ -88,9 +88,9 @@ Specify `com.apple.SystemConfiguration` as the payload type.
 ## See Also
 
 - [object DNSProxy](dnsproxy.md)
-  The payload you use to configure DNS proxies.
+  The payload that configures DNS proxies.
 - [object GlobalHTTPProxy](globalhttpproxy.md)
-  The payload you use to configure a global HTTP proxy.
+  The payload that configures a global HTTP proxy.
 
 
 ---

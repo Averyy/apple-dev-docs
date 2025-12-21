@@ -6,7 +6,7 @@ Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 
 #### Overview
 
-Web Inspector helps you inspect all the resources and activity on webpages, Service Workers, Mac and Home Screen web apps, and JavaScript running inside your applications, making development more efficient across Apple platforms. The clean, unified design puts each core function in a separate tab, which you can rearrange to fit your workflow.
+Web Inspector helps you inspect all the resources and activity on webpages, service workers, Mac and Home Screen web apps, and JavaScript running inside your applications, making development more efficient across Apple platforms. The clean, unified design puts each core function in a separate tab, which you can rearrange to fit your workflow.
 
 The most complete resource for Web Inspector is the [`Web Inspector Reference`](https://developer.apple.comhttps://webkit.org/web-inspector/), and help links in Web Inspector itself can take you to help specific to the current part of the tools you are using.
 
@@ -24,6 +24,8 @@ Each tab contains a set of related tools and features to make it easier to find 
   Access tools for debugging webpages in Safari, as well as tools for debugging web content in other apps and on other devices.
 - [Responsive Design Mode](responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
+- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+  Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 

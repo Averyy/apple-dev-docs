@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The ruler units (`NSString`). See Measurement Unit Attributes for possible values.
+The ruler units (`NSString`).
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ The ruler units (`NSString`). See Measurement Unit Attributes for possible value
 ```swift
 static let units: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+See [`Measurement Unit Attributes`](measurement-unit-attributes.md) for possible values.
 
 ## See Also
 

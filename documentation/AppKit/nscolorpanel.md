@@ -21,12 +21,12 @@ class NSColorPanel
 
 ## Topics
 
-### Obtaining the Shared Color-Panel Object
+### Obtaining the shared color panel
 - [class var shared: NSColorPanel](nscolorpanel/shared.md)
   Returns the shared `NSColorPanel` instance, creating it if necessary.
 - [class var sharedColorPanelExists: Bool](nscolorpanel/sharedcolorpanelexists.md)
   Returns  a Boolean value indicating whether the `NSColorPanel` has been created already.
-### Setting Color Picker Modes
+### Setting color picker modes
 - [class func setPickerMode(NSColorPanel.Mode)](nscolorpanel/setpickermode(_:).md)
   Specifies the color panel’s initial picker.
 - [var mode: NSColorPanel.Mode](nscolorpanel/mode-swift.property.md)
@@ -37,7 +37,7 @@ class NSColorPanel
   Determines which color selection modes are available in an application’s `NSColorPanel`.
 - [NSColorPanel.Options](nscolorpanel/options.md)
   The color modes that are enabled for a color panel.
-### Configuring the Color Panel
+### Configuring the color panel
 - [var accessoryView: NSView?](nscolorpanel/accessoryview.md)
   The accessory view.
 - [var isContinuous: Bool](nscolorpanel/iscontinuous.md)
@@ -48,20 +48,23 @@ class NSColorPanel
   Sets the target of the receiver.
 - [var showsAlpha: Bool](nscolorpanel/showsalpha.md)
   A Boolean value that indicates whether the receiver shows alpha values and an opacity slider.
-### Managing Color Lists
+### Managing color lists
 - [func attachColorList(NSColorList)](nscolorpanel/attachcolorlist(_:).md)
   Adds the list of `NSColor` objects specified to all the color pickers in the receiver that display color lists by invoking [`attachColorList(_:)`](nscolorpanel/attachcolorlist(_:).md) on all color pickers in the application.
 - [func detachColorList(NSColorList)](nscolorpanel/detachcolorlist(_:).md)
   Removes the list of colors from all the color pickers in the receiver that display color lists by invoking [`detachColorList(_:)`](nscolorpanel/detachcolorlist(_:).md) on all color pickers in the application.
-### Setting Color
+### Setting color
 - [class func dragColor(NSColor, with: NSEvent, from: NSView) -> Bool](nscolorpanel/dragcolor(_:with:from:).md)
   Drags a color into a destination view from the specified source view.
 - [var color: NSColor](nscolorpanel/color.md)
   The color of the receiver.
-### Getting Transparency Information
+### Supporting high dynamic range (HDR) colors
+- [var maximumLinearExposure: CGFloat](nscolorpanel/maximumlinearexposure.md)
+  The maximum linear exposure that can be set on a color picked in the color panel. Defaults to 1 and ignores any value less than 1. If set to a value >= 2, the color picked by the panel may have a linear exposure applied to it.
+### Getting transparency information
 - [var alpha: CGFloat](nscolorpanel/alpha.md)
   The receiver’s current alpha value based on its opacity slider.
-### Responding to a Color Change
+### Responding to a color change
 - [protocol NSColorChanging](nscolorchanging.md)
 - [class let colorDidChangeNotification: NSNotification.Name](nscolorpanel/colordidchangenotification.md)
   Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](nscolorpanel.md) is invoked.

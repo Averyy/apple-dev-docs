@@ -1,0 +1,1337 @@
+{
+  "metadata": {
+    "last_updated": "2025-12-20T20:20:53.906905",
+    "total_pages": 166,
+    "session_id": "2025-12-20T20:20:42.031769"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/RetentionMessaging.json": {
+      "hash": "3e38edaead029c1da708149e5909bce0c7d7d528ebe27b98aae0b0b6f02a97e1",
+      "last_checked": "2025-12-20T20:20:42.556566",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"579c52351a40bed647e5c73896ba0dd2\"",
+      "file_path": "documentation/RetentionMessaging/RetentionMessaging.md"
+    },
+    "https://developer.apple.com/documentation/RetentionMessaging": {
+      "hash": "3e38edaead029c1da708149e5909bce0c7d7d528ebe27b98aae0b0b6f02a97e1",
+      "last_checked": "2025-12-20T20:20:42.335612",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"579c52351a40bed647e5c73896ba0dd2\"",
+      "file_path": "documentation/RetentionMessaging/RetentionMessaging.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/setting-up-retention-messages.json": {
+      "hash": "fa3e0a5a02be98c78fd1dba43f5600328305bcda70e7aec0ce28bdc431ca2fdd",
+      "last_checked": "2025-12-20T20:20:43.025391",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9368e2dcd5646d58b503934f526845bf\"",
+      "file_path": "documentation/RetentionMessaging/setting-up-retention-messages.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/setting-up-retention-messages": {
+      "hash": "fa3e0a5a02be98c78fd1dba43f5600328305bcda70e7aec0ce28bdc431ca2fdd",
+      "last_checked": "2025-12-20T20:20:43.025453",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9368e2dcd5646d58b503934f526845bf\"",
+      "file_path": "documentation/RetentionMessaging/setting-up-retention-messages.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/identifying-rate-limits.json": {
+      "hash": "dac794080d4878b707819195d5e3e61e231a3a0b21b78911b0ba4ed8f7467299",
+      "last_checked": "2025-12-20T20:20:43.155802",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e414d96dd298077f76a585a654cce514\"",
+      "file_path": "documentation/RetentionMessaging/identifying-rate-limits.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/identifying-rate-limits": {
+      "hash": "dac794080d4878b707819195d5e3e61e231a3a0b21b78911b0ba4ed8f7467299",
+      "last_checked": "2025-12-20T20:20:43.155858",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e414d96dd298077f76a585a654cce514\"",
+      "file_path": "documentation/RetentionMessaging/identifying-rate-limits.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/retention-messaging-changelog.json": {
+      "hash": "3db28c424250616847f826475afbf3f473ec95d56640472dcf24cb135dd95c74",
+      "last_checked": "2025-12-20T20:20:43.466851",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8f45851e2e73d2afdd301446a9928aaa\"",
+      "file_path": "documentation/RetentionMessaging/retention-messaging-changelog.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/retention-messaging-changelog": {
+      "hash": "3db28c424250616847f826475afbf3f473ec95d56640472dcf24cb135dd95c74",
+      "last_checked": "2025-12-20T20:20:43.466896",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8f45851e2e73d2afdd301446a9928aaa\"",
+      "file_path": "documentation/RetentionMessaging/retention-messaging-changelog.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/upload-image.json": {
+      "hash": "28f7da0d7a0b8ddb92793e53b3930640f22b57b4e08393fe3f7f292219c83d28",
+      "last_checked": "2025-12-20T20:20:43.600370",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3315c6b7f55653a317468e96ec8e06c3\"",
+      "file_path": "documentation/RetentionMessaging/upload-image.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/upload-image": {
+      "hash": "28f7da0d7a0b8ddb92793e53b3930640f22b57b4e08393fe3f7f292219c83d28",
+      "last_checked": "2025-12-20T20:20:43.600431",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3315c6b7f55653a317468e96ec8e06c3\"",
+      "file_path": "documentation/RetentionMessaging/upload-image.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/delete-image.json": {
+      "hash": "4b65646b9b4445f6629fd2b41150c98f4ce675f9746d8e7428d21efad3f93dbb",
+      "last_checked": "2025-12-20T20:20:43.694534",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3da441977db431674117d5a22acd8456\"",
+      "file_path": "documentation/RetentionMessaging/delete-image.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/delete-image": {
+      "hash": "4b65646b9b4445f6629fd2b41150c98f4ce675f9746d8e7428d21efad3f93dbb",
+      "last_checked": "2025-12-20T20:20:43.694591",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3da441977db431674117d5a22acd8456\"",
+      "file_path": "documentation/RetentionMessaging/delete-image.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/get-image-list.json": {
+      "hash": "98e21161c83f7d3051fb63be171e5e1563374b5c070065dd01f0afbc7c7724ca",
+      "last_checked": "2025-12-20T20:20:43.815302",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"364023d4e9e9a77a33536d1d670b8f46\"",
+      "file_path": "documentation/RetentionMessaging/get-image-list.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/get-image-list": {
+      "hash": "98e21161c83f7d3051fb63be171e5e1563374b5c070065dd01f0afbc7c7724ca",
+      "last_checked": "2025-12-20T20:20:43.815339",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"364023d4e9e9a77a33536d1d670b8f46\"",
+      "file_path": "documentation/RetentionMessaging/get-image-list.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/getimagelistresponse.json": {
+      "hash": "274477d928cafaa1568eb772654f7119bda7f031e3263430d36780981d465adc",
+      "last_checked": "2025-12-20T20:20:43.914487",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"600c17bbb5464447e95254b5738d59aa\"",
+      "file_path": "documentation/RetentionMessaging/getimagelistresponse.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/getimagelistresponse": {
+      "hash": "274477d928cafaa1568eb772654f7119bda7f031e3263430d36780981d465adc",
+      "last_checked": "2025-12-20T20:20:43.914531",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"600c17bbb5464447e95254b5738d59aa\"",
+      "file_path": "documentation/RetentionMessaging/getimagelistresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/getimagelistresponseitem.json": {
+      "hash": "5d4d389408f53d30c1f98fef21667d44fa1cf1a4cc9f39273711197b0792fda2",
+      "last_checked": "2025-12-20T20:20:44.062691",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"4d106e56a1d32ebd2211df496117a508\"",
+      "file_path": "documentation/RetentionMessaging/getimagelistresponseitem.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/getimagelistresponseitem": {
+      "hash": "5d4d389408f53d30c1f98fef21667d44fa1cf1a4cc9f39273711197b0792fda2",
+      "last_checked": "2025-12-20T20:20:44.062736",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"4d106e56a1d32ebd2211df496117a508\"",
+      "file_path": "documentation/RetentionMessaging/getimagelistresponseitem.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/upload-message.json": {
+      "hash": "be73b5e4d6e533e9c7e026f2786262cdfe080c53cc7d16198ae7b2955e0fa61d",
+      "last_checked": "2025-12-20T20:20:44.184289",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9e1bf5c7a1da3f5883283c50c917bead\"",
+      "file_path": "documentation/RetentionMessaging/upload-message.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/upload-message": {
+      "hash": "be73b5e4d6e533e9c7e026f2786262cdfe080c53cc7d16198ae7b2955e0fa61d",
+      "last_checked": "2025-12-20T20:20:44.184358",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9e1bf5c7a1da3f5883283c50c917bead\"",
+      "file_path": "documentation/RetentionMessaging/upload-message.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/delete-message.json": {
+      "hash": "dfab0be9f7809b530de886432f19602a2b12a28964b513ca1c99d8e4871f3638",
+      "last_checked": "2025-12-20T20:20:44.292358",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"87ddd98020952a81d65cd2dbbb2512cc\"",
+      "file_path": "documentation/RetentionMessaging/delete-message.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/delete-message": {
+      "hash": "dfab0be9f7809b530de886432f19602a2b12a28964b513ca1c99d8e4871f3638",
+      "last_checked": "2025-12-20T20:20:44.292411",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"87ddd98020952a81d65cd2dbbb2512cc\"",
+      "file_path": "documentation/RetentionMessaging/delete-message.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/get-message-list.json": {
+      "hash": "33dff0e69d4e32e8e2f7f2ac8058a6e340944c0d3bb392f2baf7d8ff1abb72ba",
+      "last_checked": "2025-12-20T20:20:44.451401",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"03bdb9b4513aa56efc8849abd890f8a0\"",
+      "file_path": "documentation/RetentionMessaging/get-message-list.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/get-message-list": {
+      "hash": "33dff0e69d4e32e8e2f7f2ac8058a6e340944c0d3bb392f2baf7d8ff1abb72ba",
+      "last_checked": "2025-12-20T20:20:44.451440",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"03bdb9b4513aa56efc8849abd890f8a0\"",
+      "file_path": "documentation/RetentionMessaging/get-message-list.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/uploadmessagerequestbody.json": {
+      "hash": "1b77bafb5ef50bab43afbc8c1e483b1428cafc5002fc59b316c91e416f86bb9c",
+      "last_checked": "2025-12-20T20:20:44.548315",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e90534e29224a65a2ef6a6f77ecf5145\"",
+      "file_path": "documentation/RetentionMessaging/uploadmessagerequestbody.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/uploadmessagerequestbody": {
+      "hash": "1b77bafb5ef50bab43afbc8c1e483b1428cafc5002fc59b316c91e416f86bb9c",
+      "last_checked": "2025-12-20T20:20:44.548366",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e90534e29224a65a2ef6a6f77ecf5145\"",
+      "file_path": "documentation/RetentionMessaging/uploadmessagerequestbody.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/uploadmessageimage.json": {
+      "hash": "f32d75a15b8acd35bf287fe76ef4032db9842f934660a579b5288e01e244ea66",
+      "last_checked": "2025-12-20T20:20:44.683030",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b1ec183ec7c5a6d6c6faf57e6c0e6b60\"",
+      "file_path": "documentation/RetentionMessaging/uploadmessageimage.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/uploadmessageimage": {
+      "hash": "f32d75a15b8acd35bf287fe76ef4032db9842f934660a579b5288e01e244ea66",
+      "last_checked": "2025-12-20T20:20:44.683075",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b1ec183ec7c5a6d6c6faf57e6c0e6b60\"",
+      "file_path": "documentation/RetentionMessaging/uploadmessageimage.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/getmessagelistresponse.json": {
+      "hash": "f7f75f5a8e01fbc96d3915be0cf4cd35883409825c2005e6668e13e50e164f1a",
+      "last_checked": "2025-12-20T20:20:44.837797",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"14ba36a9b72892659893e2816cd48c00\"",
+      "file_path": "documentation/RetentionMessaging/getmessagelistresponse.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/getmessagelistresponse": {
+      "hash": "f7f75f5a8e01fbc96d3915be0cf4cd35883409825c2005e6668e13e50e164f1a",
+      "last_checked": "2025-12-20T20:20:44.837839",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"14ba36a9b72892659893e2816cd48c00\"",
+      "file_path": "documentation/RetentionMessaging/getmessagelistresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/getmessagelistresponseitem.json": {
+      "hash": "7fc2a6b334348947451a7932144563af280b4169b21422f6042e8c324fd40a46",
+      "last_checked": "2025-12-20T20:20:45.143437",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ac21aa3a170d188f9f6a86e83f4d528f\"",
+      "file_path": "documentation/RetentionMessaging/getmessagelistresponseitem.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/getmessagelistresponseitem": {
+      "hash": "7fc2a6b334348947451a7932144563af280b4169b21422f6042e8c324fd40a46",
+      "last_checked": "2025-12-20T20:20:45.143476",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ac21aa3a170d188f9f6a86e83f4d528f\"",
+      "file_path": "documentation/RetentionMessaging/getmessagelistresponseitem.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/configure-default-message.json": {
+      "hash": "40e76cbb13c8f2d880666cc4f723b3c099d75fec46dc76926daefd4bc3a304a3",
+      "last_checked": "2025-12-20T20:20:45.242017",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"f208d105badb42729217ee5f88e050a3\"",
+      "file_path": "documentation/RetentionMessaging/configure-default-message.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/configure-default-message": {
+      "hash": "40e76cbb13c8f2d880666cc4f723b3c099d75fec46dc76926daefd4bc3a304a3",
+      "last_checked": "2025-12-20T20:20:45.242079",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"f208d105badb42729217ee5f88e050a3\"",
+      "file_path": "documentation/RetentionMessaging/configure-default-message.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/delete-default-message.json": {
+      "hash": "755443d9bc64546f4cab5e233ef49a62c0bcab6c6978272e1503cf09d3b6fdb2",
+      "last_checked": "2025-12-20T20:20:45.376289",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"92da0fce0fe7150dde398d45d60dfa50\"",
+      "file_path": "documentation/RetentionMessaging/delete-default-message.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/delete-default-message": {
+      "hash": "755443d9bc64546f4cab5e233ef49a62c0bcab6c6978272e1503cf09d3b6fdb2",
+      "last_checked": "2025-12-20T20:20:45.376331",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"92da0fce0fe7150dde398d45d60dfa50\"",
+      "file_path": "documentation/RetentionMessaging/delete-default-message.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/defaultconfigurationrequest.json": {
+      "hash": "77958b876d940b9370622b7b17db5251c686906ced77a36b6a272abd28fd9ac1",
+      "last_checked": "2025-12-20T20:20:45.463096",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"639e30ff47a5c849eb4b7e06820daf93\"",
+      "file_path": "documentation/RetentionMessaging/defaultconfigurationrequest.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/defaultconfigurationrequest": {
+      "hash": "77958b876d940b9370622b7b17db5251c686906ced77a36b6a272abd28fd9ac1",
+      "last_checked": "2025-12-20T20:20:45.463136",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"639e30ff47a5c849eb4b7e06820daf93\"",
+      "file_path": "documentation/RetentionMessaging/defaultconfigurationrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/setting-up-retention-messaging-endpoint.json": {
+      "hash": "16a1784c505a4c532c75a73390013edf27be876bb5b9c81dceee1ff73b1801e5",
+      "last_checked": "2025-12-20T20:20:45.635240",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9815817b6d7049c635ab4c5e79ac15ee\"",
+      "file_path": "documentation/RetentionMessaging/setting-up-retention-messaging-endpoint.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/setting-up-retention-messaging-endpoint": {
+      "hash": "16a1784c505a4c532c75a73390013edf27be876bb5b9c81dceee1ff73b1801e5",
+      "last_checked": "2025-12-20T20:20:45.635286",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9815817b6d7049c635ab4c5e79ac15ee\"",
+      "file_path": "documentation/RetentionMessaging/setting-up-retention-messaging-endpoint.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/responding-to-realtime-retention-messaging-requests.json": {
+      "hash": "836c0a9bc16d10cfe5865613761298aa9faaa637461c67ca48f6e960469e07db",
+      "last_checked": "2025-12-20T20:20:45.732192",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"0b00d5e336a89e94cad9fd7c99970876\"",
+      "file_path": "documentation/RetentionMessaging/responding-to-realtime-retention-messaging-requests.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/responding-to-realtime-retention-messaging-requests": {
+      "hash": "836c0a9bc16d10cfe5865613761298aa9faaa637461c67ca48f6e960469e07db",
+      "last_checked": "2025-12-20T20:20:45.732253",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"0b00d5e336a89e94cad9fd7c99970876\"",
+      "file_path": "documentation/RetentionMessaging/responding-to-realtime-retention-messaging-requests.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/realtimerequestbody.json": {
+      "hash": "49b9a7138f1a84de0fd750a5898034a9446e530a7fe1c9f7561feb5d201f3956",
+      "last_checked": "2025-12-20T20:20:45.877487",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9aa407e2d09c4c07246300cd359a18a7\"",
+      "file_path": "documentation/RetentionMessaging/realtimerequestbody.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/realtimerequestbody": {
+      "hash": "49b9a7138f1a84de0fd750a5898034a9446e530a7fe1c9f7561feb5d201f3956",
+      "last_checked": "2025-12-20T20:20:45.877535",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9aa407e2d09c4c07246300cd359a18a7\"",
+      "file_path": "documentation/RetentionMessaging/realtimerequestbody.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/decodedrealtimerequestbody.json": {
+      "hash": "45386e03c980320f2c0aa9d4d1c826d7092f492b1af9a6c6ec619f8d09aea08b",
+      "last_checked": "2025-12-20T20:20:45.995817",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"330ff9b1b792d894f5016d7e3f0664ed\"",
+      "file_path": "documentation/RetentionMessaging/decodedrealtimerequestbody.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/decodedrealtimerequestbody": {
+      "hash": "45386e03c980320f2c0aa9d4d1c826d7092f492b1af9a6c6ec619f8d09aea08b",
+      "last_checked": "2025-12-20T20:20:45.995869",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"330ff9b1b792d894f5016d7e3f0664ed\"",
+      "file_path": "documentation/RetentionMessaging/decodedrealtimerequestbody.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/realtimeresponsebody.json": {
+      "hash": "983fe22fb884ccbe1f3abc313d507a12b7b6d9aa66f1219c2a7a3ebe46a1e3fd",
+      "last_checked": "2025-12-20T20:20:46.123423",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fe24060ea3b99a3f17b7589428572a08\"",
+      "file_path": "documentation/RetentionMessaging/realtimeresponsebody.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/realtimeresponsebody": {
+      "hash": "983fe22fb884ccbe1f3abc313d507a12b7b6d9aa66f1219c2a7a3ebe46a1e3fd",
+      "last_checked": "2025-12-20T20:20:46.123473",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fe24060ea3b99a3f17b7589428572a08\"",
+      "file_path": "documentation/RetentionMessaging/realtimeresponsebody.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/initiate-performance-test.json": {
+      "hash": "592a4ba5fd4ab3d12321ec9e003432cf68d252a598964b5a3baad8245e6ead96",
+      "last_checked": "2025-12-20T20:20:46.279900",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"dc796b0273f697cf43f06f39cc8fb3b3\"",
+      "file_path": "documentation/RetentionMessaging/initiate-performance-test.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/initiate-performance-test": {
+      "hash": "592a4ba5fd4ab3d12321ec9e003432cf68d252a598964b5a3baad8245e6ead96",
+      "last_checked": "2025-12-20T20:20:46.279943",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"dc796b0273f697cf43f06f39cc8fb3b3\"",
+      "file_path": "documentation/RetentionMessaging/initiate-performance-test.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/get-performance-test-results.json": {
+      "hash": "b444ff099fa00780ada7eb614ddcfdab1cf1d10fe99d9ca902199dfb97e8aaae",
+      "last_checked": "2025-12-20T20:20:46.377078",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"cdf8fb82343e63e5b2685bbdde0b0394\"",
+      "file_path": "documentation/RetentionMessaging/get-performance-test-results.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/get-performance-test-results": {
+      "hash": "b444ff099fa00780ada7eb614ddcfdab1cf1d10fe99d9ca902199dfb97e8aaae",
+      "last_checked": "2025-12-20T20:20:46.377123",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"cdf8fb82343e63e5b2685bbdde0b0394\"",
+      "file_path": "documentation/RetentionMessaging/get-performance-test-results.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/data-types.json": {
+      "hash": "5f32cd092c1c859f7244c3ce73c1905a6756a04d81b22d916f332fd24b5d70d2",
+      "last_checked": "2025-12-20T20:20:46.682118",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"26bbd25d6005f31af759167a36a895dd\"",
+      "file_path": "documentation/RetentionMessaging/data-types.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/data-types": {
+      "hash": "5f32cd092c1c859f7244c3ce73c1905a6756a04d81b22d916f332fd24b5d70d2",
+      "last_checked": "2025-12-20T20:20:46.682178",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"26bbd25d6005f31af759167a36a895dd\"",
+      "file_path": "documentation/RetentionMessaging/data-types.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/error-codes.json": {
+      "hash": "a79c260b58cf86cfe7a23be1f5c051eaf31b1035ea634a61e0f31733575d2afd",
+      "last_checked": "2025-12-20T20:20:46.770465",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9ba2dff586e1b6a4e827496cba416a77\"",
+      "file_path": "documentation/RetentionMessaging/error-codes.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/error-codes": {
+      "hash": "a79c260b58cf86cfe7a23be1f5c051eaf31b1035ea634a61e0f31733575d2afd",
+      "last_checked": "2025-12-20T20:20:46.770519",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9ba2dff586e1b6a4e827496cba416a77\"",
+      "file_path": "documentation/RetentionMessaging/error-codes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imageidentifier.json": {
+      "hash": "b5f3931a79833e47eac78610fde92558f42a2b1a73191fdf34725ce774b22599",
+      "last_checked": "2025-12-20T20:20:46.879442",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3cbafcbe62b76bf86cb97a2b6cbb1834\"",
+      "file_path": "documentation/RetentionMessaging/imageidentifier.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imageidentifier": {
+      "hash": "b5f3931a79833e47eac78610fde92558f42a2b1a73191fdf34725ce774b22599",
+      "last_checked": "2025-12-20T20:20:46.879490",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3cbafcbe62b76bf86cb97a2b6cbb1834\"",
+      "file_path": "documentation/RetentionMessaging/imageidentifier.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imagestate.json": {
+      "hash": "410a1cba62e8f628a502898d86c0f361ae54c7b275e29cfc0d7b1812929c088a",
+      "last_checked": "2025-12-20T20:20:47.047780",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8d2f65a7fa3e9ea28ff4dba597ecb23b\"",
+      "file_path": "documentation/RetentionMessaging/imagestate.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imagestate": {
+      "hash": "410a1cba62e8f628a502898d86c0f361ae54c7b275e29cfc0d7b1812929c088a",
+      "last_checked": "2025-12-20T20:20:47.047820",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8d2f65a7fa3e9ea28ff4dba597ecb23b\"",
+      "file_path": "documentation/RetentionMessaging/imagestate.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/alttext.json": {
+      "hash": "3e216f3993c5d055c3f23e7019daff2d08517440a49b9a828807de85987fc7b4",
+      "last_checked": "2025-12-20T20:20:47.157402",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"a9bb7d61b6d38a25d20e84f2b027f3e3\"",
+      "file_path": "documentation/RetentionMessaging/alttext.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/alttext": {
+      "hash": "3e216f3993c5d055c3f23e7019daff2d08517440a49b9a828807de85987fc7b4",
+      "last_checked": "2025-12-20T20:20:47.157441",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"a9bb7d61b6d38a25d20e84f2b027f3e3\"",
+      "file_path": "documentation/RetentionMessaging/alttext.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/messageidentifier.json": {
+      "hash": "739a7e32bfec2643cfd0cdf948db9d6a9fe0ef9cfd169b73be6823d14cdfc099",
+      "last_checked": "2025-12-20T20:20:47.313546",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6af0a82bb3ce29b4079bf431391e537c\"",
+      "file_path": "documentation/RetentionMessaging/messageidentifier.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/messageidentifier": {
+      "hash": "739a7e32bfec2643cfd0cdf948db9d6a9fe0ef9cfd169b73be6823d14cdfc099",
+      "last_checked": "2025-12-20T20:20:47.313584",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6af0a82bb3ce29b4079bf431391e537c\"",
+      "file_path": "documentation/RetentionMessaging/messageidentifier.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/messagestate.json": {
+      "hash": "f640f0c80028707d92f2bbb0e421e6e11f1deac4563bacefb31151f6c106cff3",
+      "last_checked": "2025-12-20T20:20:47.409298",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"aa7420f31cf519ac0d71ebb972754374\"",
+      "file_path": "documentation/RetentionMessaging/messagestate.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/messagestate": {
+      "hash": "f640f0c80028707d92f2bbb0e421e6e11f1deac4563bacefb31151f6c106cff3",
+      "last_checked": "2025-12-20T20:20:47.409344",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"aa7420f31cf519ac0d71ebb972754374\"",
+      "file_path": "documentation/RetentionMessaging/messagestate.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/body.json": {
+      "hash": "9f43b1a378c24321ba72e540cf3cc821bafe2d6c998259e0e0865e0a86ca0bac",
+      "last_checked": "2025-12-20T20:20:47.511620",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e085ccbb99e802d36cf13947ce54a365\"",
+      "file_path": "documentation/RetentionMessaging/body.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/body": {
+      "hash": "9f43b1a378c24321ba72e540cf3cc821bafe2d6c998259e0e0865e0a86ca0bac",
+      "last_checked": "2025-12-20T20:20:47.511661",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e085ccbb99e802d36cf13947ce54a365\"",
+      "file_path": "documentation/RetentionMessaging/body.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/header.json": {
+      "hash": "2958f6603bcde43729fbda80085cc5bc06f34bf6124e0e5e0e498d18cebb81cf",
+      "last_checked": "2025-12-20T20:20:47.619642",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8f32ce5bcd5ef6cdfead1e92015b0791\"",
+      "file_path": "documentation/RetentionMessaging/header.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/header": {
+      "hash": "2958f6603bcde43729fbda80085cc5bc06f34bf6124e0e5e0e498d18cebb81cf",
+      "last_checked": "2025-12-20T20:20:47.619686",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8f32ce5bcd5ef6cdfead1e92015b0791\"",
+      "file_path": "documentation/RetentionMessaging/header.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/locale.json": {
+      "hash": "5786d46281e7d7cfc5d19559b9da55f972f14683ddf3d358ed1efe9d05df7105",
+      "last_checked": "2025-12-20T20:20:47.824027",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"c60e6041762b07a5a22d5c76333dff55\"",
+      "file_path": "documentation/RetentionMessaging/locale.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/locale": {
+      "hash": "5786d46281e7d7cfc5d19559b9da55f972f14683ddf3d358ed1efe9d05df7105",
+      "last_checked": "2025-12-20T20:20:47.824065",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"c60e6041762b07a5a22d5c76333dff55\"",
+      "file_path": "documentation/RetentionMessaging/locale.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/productid.json": {
+      "hash": "64b0c8a2e9a235e71730dbfbe47beb80867f2fff42fc91154e4e59ce6c0d69f8",
+      "last_checked": "2025-12-20T20:20:47.923879",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"5ed9f2c82a0a503b43c7bfa0ccd195d2\"",
+      "file_path": "documentation/RetentionMessaging/productid.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/productid": {
+      "hash": "64b0c8a2e9a235e71730dbfbe47beb80867f2fff42fc91154e4e59ce6c0d69f8",
+      "last_checked": "2025-12-20T20:20:47.923912",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"5ed9f2c82a0a503b43c7bfa0ccd195d2\"",
+      "file_path": "documentation/RetentionMessaging/productid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/signedpayload.json": {
+      "hash": "9051830aab6fd1fe82d7506df6cae791e8a26b7c7281ebf2723770634eb0bd68",
+      "last_checked": "2025-12-20T20:20:48.019877",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"1ba6e0dfe63a6f21663be344fa334535\"",
+      "file_path": "documentation/RetentionMessaging/signedpayload.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/signedpayload": {
+      "hash": "9051830aab6fd1fe82d7506df6cae791e8a26b7c7281ebf2723770634eb0bd68",
+      "last_checked": "2025-12-20T20:20:48.019920",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"1ba6e0dfe63a6f21663be344fa334535\"",
+      "file_path": "documentation/RetentionMessaging/signedpayload.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/originaltransactionid.json": {
+      "hash": "e2d22e72fb1856c4951a888b131b96038b805ddeb15efd241741783cf65de8df",
+      "last_checked": "2025-12-20T20:20:48.155824",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"326d53928cca00d4f5d5557ace3db103\"",
+      "file_path": "documentation/RetentionMessaging/originaltransactionid.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/originaltransactionid": {
+      "hash": "e2d22e72fb1856c4951a888b131b96038b805ddeb15efd241741783cf65de8df",
+      "last_checked": "2025-12-20T20:20:48.155870",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"326d53928cca00d4f5d5557ace3db103\"",
+      "file_path": "documentation/RetentionMessaging/originaltransactionid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/appappleid.json": {
+      "hash": "e8f91f538f378c8cd6721cbce7be90328ac9b92445aa349af6a019af23109da1",
+      "last_checked": "2025-12-20T20:20:48.289724",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ee2d10ba408c43afab24f342d32cef81\"",
+      "file_path": "documentation/RetentionMessaging/appappleid.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/appappleid": {
+      "hash": "e8f91f538f378c8cd6721cbce7be90328ac9b92445aa349af6a019af23109da1",
+      "last_checked": "2025-12-20T20:20:48.289760",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ee2d10ba408c43afab24f342d32cef81\"",
+      "file_path": "documentation/RetentionMessaging/appappleid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/requestidentifier.json": {
+      "hash": "1da46e1097fb675c935244851f396be5562ccfd77ad0df57a5d93f5237ed22ae",
+      "last_checked": "2025-12-20T20:20:48.435136",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"1db448229c80a7a74a50fe87882ffb9b\"",
+      "file_path": "documentation/RetentionMessaging/requestidentifier.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/requestidentifier": {
+      "hash": "1da46e1097fb675c935244851f396be5562ccfd77ad0df57a5d93f5237ed22ae",
+      "last_checked": "2025-12-20T20:20:48.435173",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"1db448229c80a7a74a50fe87882ffb9b\"",
+      "file_path": "documentation/RetentionMessaging/requestidentifier.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/signeddate.json": {
+      "hash": "3fe51b13c5c757be5b3524e818327865057cafcd59096289b3852057ae71b38f",
+      "last_checked": "2025-12-20T20:20:48.531448",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"967a390faa668b9e8070794696e8d9b3\"",
+      "file_path": "documentation/RetentionMessaging/signeddate.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/signeddate": {
+      "hash": "3fe51b13c5c757be5b3524e818327865057cafcd59096289b3852057ae71b38f",
+      "last_checked": "2025-12-20T20:20:48.531507",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"967a390faa668b9e8070794696e8d9b3\"",
+      "file_path": "documentation/RetentionMessaging/signeddate.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/environment.json": {
+      "hash": "787132d68cc12e8c2dff59e47ef68da996ae838c7ca247fd96fbc57e73a8bd0a",
+      "last_checked": "2025-12-20T20:20:48.710014",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"113e1405d6ffaea92acf08a003319693\"",
+      "file_path": "documentation/RetentionMessaging/environment.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/environment": {
+      "hash": "787132d68cc12e8c2dff59e47ef68da996ae838c7ca247fd96fbc57e73a8bd0a",
+      "last_checked": "2025-12-20T20:20:48.710055",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"113e1405d6ffaea92acf08a003319693\"",
+      "file_path": "documentation/RetentionMessaging/environment.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/jwsdecodedheader.json": {
+      "hash": "11f54745aa713610dd3e9c83cc05ebbb3dc60f0f773e3a29eba229fe1d3ef2d2",
+      "last_checked": "2025-12-20T20:20:48.852292",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ca43e685f90697a8d5d7742a8ada3a40\"",
+      "file_path": "documentation/RetentionMessaging/jwsdecodedheader.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/jwsdecodedheader": {
+      "hash": "11f54745aa713610dd3e9c83cc05ebbb3dc60f0f773e3a29eba229fe1d3ef2d2",
+      "last_checked": "2025-12-20T20:20:48.852354",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ca43e685f90697a8d5d7742a8ada3a40\"",
+      "file_path": "documentation/RetentionMessaging/jwsdecodedheader.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/alg.json": {
+      "hash": "cae4704b0dd774ee067e76a43a42a5d177305935eaea1a62c21cf633d99d779d",
+      "last_checked": "2025-12-20T20:20:48.954023",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"19d0989b60e898eb8ae892909b8cd053\"",
+      "file_path": "documentation/RetentionMessaging/alg.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/alg": {
+      "hash": "cae4704b0dd774ee067e76a43a42a5d177305935eaea1a62c21cf633d99d779d",
+      "last_checked": "2025-12-20T20:20:48.954062",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"19d0989b60e898eb8ae892909b8cd053\"",
+      "file_path": "documentation/RetentionMessaging/alg.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/x5c.json": {
+      "hash": "fb86176801c261547cf06a4929f9a20d934b4a15252d65ce4cda28de9ffa93e3",
+      "last_checked": "2025-12-20T20:20:49.066824",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"02a590108fedff2102624e248c2e9041\"",
+      "file_path": "documentation/RetentionMessaging/x5c.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/x5c": {
+      "hash": "fb86176801c261547cf06a4929f9a20d934b4a15252d65ce4cda28de9ffa93e3",
+      "last_checked": "2025-12-20T20:20:49.066863",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"02a590108fedff2102624e248c2e9041\"",
+      "file_path": "documentation/RetentionMessaging/x5c.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/message.json": {
+      "hash": "e0215a2cd7168226046278b627ab73f65c9aa5fbf3f6d98a0ed7970719e052b6",
+      "last_checked": "2025-12-20T20:20:49.190635",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"d1e348bbf33c77121980d291d754b012\"",
+      "file_path": "documentation/RetentionMessaging/message.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/message": {
+      "hash": "e0215a2cd7168226046278b627ab73f65c9aa5fbf3f6d98a0ed7970719e052b6",
+      "last_checked": "2025-12-20T20:20:49.190697",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"d1e348bbf33c77121980d291d754b012\"",
+      "file_path": "documentation/RetentionMessaging/message.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/alternateproduct.json": {
+      "hash": "690cda436a47c9ea3b894101efadb6ff7149e8710db41e332cb7dd17ad6ab5da",
+      "last_checked": "2025-12-20T20:20:49.383196",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"743e717678f2b2fd5a6eb18aa51d6a27\"",
+      "file_path": "documentation/RetentionMessaging/alternateproduct.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/alternateproduct": {
+      "hash": "690cda436a47c9ea3b894101efadb6ff7149e8710db41e332cb7dd17ad6ab5da",
+      "last_checked": "2025-12-20T20:20:49.383241",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"743e717678f2b2fd5a6eb18aa51d6a27\"",
+      "file_path": "documentation/RetentionMessaging/alternateproduct.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/promotionaloffer.json": {
+      "hash": "689d4498e60f85c9e6f898c7423e7d187d14b94f6c3aae17247c5fc740709333",
+      "last_checked": "2025-12-20T20:20:49.482569",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"cc6f96bdce43d52fde5b70b354c48db1\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffer.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/promotionaloffer": {
+      "hash": "689d4498e60f85c9e6f898c7423e7d187d14b94f6c3aae17247c5fc740709333",
+      "last_checked": "2025-12-20T20:20:49.482615",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"cc6f96bdce43d52fde5b70b354c48db1\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffer.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/advancedcommerceinfo.json": {
+      "hash": "f80553e6e071c2e1cae5e7e032f0cf5b6c7272a118d9a253db74ec2dc001376b",
+      "last_checked": "2025-12-20T20:20:49.629093",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9c39f98df51b0901ff0cb7b7b7bf4adf\"",
+      "file_path": "documentation/RetentionMessaging/advancedcommerceinfo.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/advancedcommerceinfo": {
+      "hash": "f80553e6e071c2e1cae5e7e032f0cf5b6c7272a118d9a253db74ec2dc001376b",
+      "last_checked": "2025-12-20T20:20:49.629134",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9c39f98df51b0901ff0cb7b7b7bf4adf\"",
+      "file_path": "documentation/RetentionMessaging/advancedcommerceinfo.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/advancedcommercedata.json": {
+      "hash": "3ab307ca46e18926029063abd423f2a71069ef77f256f056f1763a5b71670150",
+      "last_checked": "2025-12-20T20:20:49.768460",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"09fb2a9c561c0c621d19cb4f1b74b5d7\"",
+      "file_path": "documentation/RetentionMessaging/advancedcommercedata.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/advancedcommercedata": {
+      "hash": "3ab307ca46e18926029063abd423f2a71069ef77f256f056f1763a5b71670150",
+      "last_checked": "2025-12-20T20:20:49.768500",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"09fb2a9c561c0c621d19cb4f1b74b5d7\"",
+      "file_path": "documentation/RetentionMessaging/advancedcommercedata.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestconfig.json": {
+      "hash": "91906f1eecc63156061c879aa9d5432c038ece2766cdcf3ada997ca6065d78a1",
+      "last_checked": "2025-12-20T20:20:49.895861",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8a444208c635d88c1daec9e3e71a2bb2\"",
+      "file_path": "documentation/RetentionMessaging/performancetestconfig.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestconfig": {
+      "hash": "91906f1eecc63156061c879aa9d5432c038ece2766cdcf3ada997ca6065d78a1",
+      "last_checked": "2025-12-20T20:20:49.895909",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"8a444208c635d88c1daec9e3e71a2bb2\"",
+      "file_path": "documentation/RetentionMessaging/performancetestconfig.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestrequest.json": {
+      "hash": "033cbb5f82080ad2683589bc273cb1722477bca538e8fda1bd5d5a3a7e0ce8a8",
+      "last_checked": "2025-12-20T20:20:50.027203",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"dc3da22280ae51b9f7ab86d62c3c1673\"",
+      "file_path": "documentation/RetentionMessaging/performancetestrequest.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestrequest": {
+      "hash": "033cbb5f82080ad2683589bc273cb1722477bca538e8fda1bd5d5a3a7e0ce8a8",
+      "last_checked": "2025-12-20T20:20:50.027240",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"dc3da22280ae51b9f7ab86d62c3c1673\"",
+      "file_path": "documentation/RetentionMessaging/performancetestrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestresponse.json": {
+      "hash": "94feb7afd154ecca8de8066151f564cfd6c888da66d0a6e9973ccc9841ad2568",
+      "last_checked": "2025-12-20T20:20:50.122729",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"47804570e2b0ba529dbe8d1df5e5f14f\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresponse.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestresponse": {
+      "hash": "94feb7afd154ecca8de8066151f564cfd6c888da66d0a6e9973ccc9841ad2568",
+      "last_checked": "2025-12-20T20:20:50.122773",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"47804570e2b0ba529dbe8d1df5e5f14f\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestresponsetimes.json": {
+      "hash": "f3b8c03ab2d15ad3aef5de8bdf16f83146c9dc981e452ba2f83a01454407356a",
+      "last_checked": "2025-12-20T20:20:50.242614",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"bd8735aec9bc392255f9ec4b608007ed\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresponsetimes.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestresponsetimes": {
+      "hash": "f3b8c03ab2d15ad3aef5de8bdf16f83146c9dc981e452ba2f83a01454407356a",
+      "last_checked": "2025-12-20T20:20:50.242655",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"bd8735aec9bc392255f9ec4b608007ed\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresponsetimes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestresultresponse.json": {
+      "hash": "4e775abae71f1053639a3342df08cad2b8942f6db8f727a69fb4fc7128332d20",
+      "last_checked": "2025-12-20T20:20:50.407850",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b42eeb8e08ba37fad69ce9e6048fea6e\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresultresponse.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestresultresponse": {
+      "hash": "4e775abae71f1053639a3342df08cad2b8942f6db8f727a69fb4fc7128332d20",
+      "last_checked": "2025-12-20T20:20:50.407895",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b42eeb8e08ba37fad69ce9e6048fea6e\"",
+      "file_path": "documentation/RetentionMessaging/performancetestresultresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performanceteststatus.json": {
+      "hash": "fe4915938cdb56d380a054d2dea878ccb7b3e0cc9252b32b0572403f2d186e1a",
+      "last_checked": "2025-12-20T20:20:50.582732",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"5a7be6c0acd713d7f9e003c91b02e661\"",
+      "file_path": "documentation/RetentionMessaging/performanceteststatus.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performanceteststatus": {
+      "hash": "fe4915938cdb56d380a054d2dea878ccb7b3e0cc9252b32b0572403f2d186e1a",
+      "last_checked": "2025-12-20T20:20:50.582778",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"5a7be6c0acd713d7f9e003c91b02e661\"",
+      "file_path": "documentation/RetentionMessaging/performanceteststatus.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/failures.json": {
+      "hash": "9b1559c484f8955981687e9f062b62aaa84b36d478e7d3bc82e728de18751ac4",
+      "last_checked": "2025-12-20T20:20:50.696470",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"67ae2525e3e1ac5f4df5545c5e411c12\"",
+      "file_path": "documentation/RetentionMessaging/failures.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/failures": {
+      "hash": "9b1559c484f8955981687e9f062b62aaa84b36d478e7d3bc82e728de18751ac4",
+      "last_checked": "2025-12-20T20:20:50.696513",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"67ae2525e3e1ac5f4df5545c5e411c12\"",
+      "file_path": "documentation/RetentionMessaging/failures.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/sendattemptresult.json": {
+      "hash": "6700ebf83aaf552208884c9c188c971b0a09be799041668823f73212be3cef4b",
+      "last_checked": "2025-12-20T20:20:50.805998",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"f700161dd02fb08eeca02ddf447d0ccc\"",
+      "file_path": "documentation/RetentionMessaging/sendattemptresult.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/sendattemptresult": {
+      "hash": "6700ebf83aaf552208884c9c188c971b0a09be799041668823f73212be3cef4b",
+      "last_checked": "2025-12-20T20:20:50.806045",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"f700161dd02fb08eeca02ddf447d0ccc\"",
+      "file_path": "documentation/RetentionMessaging/sendattemptresult.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/requestid.json": {
+      "hash": "75d6e7fe931d2b284a12f6f869557e625827a6784a0e346c65cb18eb400ee6bd",
+      "last_checked": "2025-12-20T20:20:50.988866",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"692345ec4ebc9e4589343c73babc926c\"",
+      "file_path": "documentation/RetentionMessaging/requestid.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/requestid": {
+      "hash": "75d6e7fe931d2b284a12f6f869557e625827a6784a0e346c65cb18eb400ee6bd",
+      "last_checked": "2025-12-20T20:20:50.988911",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"692345ec4ebc9e4589343c73babc926c\"",
+      "file_path": "documentation/RetentionMessaging/requestid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/promotionaloffersignaturev2.json": {
+      "hash": "c293f148b01905ddfdabfbfbd5a9192309cccfe1831d621f44fbfb8e173c809d",
+      "last_checked": "2025-12-20T20:20:51.132253",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"18010ad1586b75702a6f46cb78daec57\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffersignaturev2.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/promotionaloffersignaturev2": {
+      "hash": "c293f148b01905ddfdabfbfbd5a9192309cccfe1831d621f44fbfb8e173c809d",
+      "last_checked": "2025-12-20T20:20:51.132295",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"18010ad1586b75702a6f46cb78daec57\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffersignaturev2.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/promotionaloffersignaturev1.json": {
+      "hash": "85cec555412314e3dd0cc3e7945f5d1fbb07f43b0940036bdc8f5052204d16a8",
+      "last_checked": "2025-12-20T20:20:51.236488",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e04823563e23bdc3a171b18684c3e03b\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffersignaturev1.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/promotionaloffersignaturev1": {
+      "hash": "85cec555412314e3dd0cc3e7945f5d1fbb07f43b0940036bdc8f5052204d16a8",
+      "last_checked": "2025-12-20T20:20:51.236528",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"e04823563e23bdc3a171b18684c3e03b\"",
+      "file_path": "documentation/RetentionMessaging/promotionaloffersignaturev1.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/alttexttoolongerror.json": {
+      "hash": "aedf9591734af4268181710d566ad4ab4ce1d3db7993cb069748edf1eef40e08",
+      "last_checked": "2025-12-20T20:20:51.354988",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6881bfac2682f7e95f3cd4f721eb723c\"",
+      "file_path": "documentation/RetentionMessaging/alttexttoolongerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/alttexttoolongerror": {
+      "hash": "aedf9591734af4268181710d566ad4ab4ce1d3db7993cb069748edf1eef40e08",
+      "last_checked": "2025-12-20T20:20:51.355038",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6881bfac2682f7e95f3cd4f721eb723c\"",
+      "file_path": "documentation/RetentionMessaging/alttexttoolongerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/bodytoolongerror.json": {
+      "hash": "56c992084a2b2ca9967a5a7da6c18700a620d1e8f44f190900e6b8be47a6ea89",
+      "last_checked": "2025-12-20T20:20:51.564198",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9ccf5ad55e433127f7b739e413191104\"",
+      "file_path": "documentation/RetentionMessaging/bodytoolongerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/bodytoolongerror": {
+      "hash": "56c992084a2b2ca9967a5a7da6c18700a620d1e8f44f190900e6b8be47a6ea89",
+      "last_checked": "2025-12-20T20:20:51.564243",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"9ccf5ad55e433127f7b739e413191104\"",
+      "file_path": "documentation/RetentionMessaging/bodytoolongerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/existingperformancetestrunerror.json": {
+      "hash": "b6975878df0a29eac0cfa158c236c43ca0d4f1d365c4ef4c200651b32d4be044",
+      "last_checked": "2025-12-20T20:20:51.717795",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"231a1c2e6267fee090207cab235f5c87\"",
+      "file_path": "documentation/RetentionMessaging/existingperformancetestrunerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/existingperformancetestrunerror": {
+      "hash": "b6975878df0a29eac0cfa158c236c43ca0d4f1d365c4ef4c200651b32d4be044",
+      "last_checked": "2025-12-20T20:20:51.717850",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"231a1c2e6267fee090207cab235f5c87\"",
+      "file_path": "documentation/RetentionMessaging/existingperformancetestrunerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/headertoolongerror.json": {
+      "hash": "59bbb8044a4a75aace24b76ca533ab23e077663f61fd3abc630e56d98165af05",
+      "last_checked": "2025-12-20T20:20:51.813568",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fb81761e37a9a528d7241bcf77955d0c\"",
+      "file_path": "documentation/RetentionMessaging/headertoolongerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/headertoolongerror": {
+      "hash": "59bbb8044a4a75aace24b76ca533ab23e077663f61fd3abc630e56d98165af05",
+      "last_checked": "2025-12-20T20:20:51.813617",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fb81761e37a9a528d7241bcf77955d0c\"",
+      "file_path": "documentation/RetentionMessaging/headertoolongerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imagealreadyexistserror.json": {
+      "hash": "e073d7e0285db2a4c9a7a6e3cc582da3475dad35b8dcc4481ad51c785c5e99e2",
+      "last_checked": "2025-12-20T20:20:51.918832",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3aeb2c63e1da8f369a3169ad4a374aba\"",
+      "file_path": "documentation/RetentionMessaging/imagealreadyexistserror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imagealreadyexistserror": {
+      "hash": "e073d7e0285db2a4c9a7a6e3cc582da3475dad35b8dcc4481ad51c785c5e99e2",
+      "last_checked": "2025-12-20T20:20:51.918882",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"3aeb2c63e1da8f369a3169ad4a374aba\"",
+      "file_path": "documentation/RetentionMessaging/imagealreadyexistserror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imageinuseerror.json": {
+      "hash": "c352031f8b7b127d9963a2ed0fe004d87d262ab9de93522bfc0c560d1aab31cb",
+      "last_checked": "2025-12-20T20:20:52.045921",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2c6b81c45fcd8f782cc5d29f711e65a7\"",
+      "file_path": "documentation/RetentionMessaging/imageinuseerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imageinuseerror": {
+      "hash": "c352031f8b7b127d9963a2ed0fe004d87d262ab9de93522bfc0c560d1aab31cb",
+      "last_checked": "2025-12-20T20:20:52.045967",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2c6b81c45fcd8f782cc5d29f711e65a7\"",
+      "file_path": "documentation/RetentionMessaging/imageinuseerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imagenotapprovederror.json": {
+      "hash": "95851fc9929b4e111138ec1fa1c78bba1c8839ebc7cdced9901a542b0d6f821e",
+      "last_checked": "2025-12-20T20:20:52.167950",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2ba1518aa13de03e5791445e85c74d1c\"",
+      "file_path": "documentation/RetentionMessaging/imagenotapprovederror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imagenotapprovederror": {
+      "hash": "95851fc9929b4e111138ec1fa1c78bba1c8839ebc7cdced9901a542b0d6f821e",
+      "last_checked": "2025-12-20T20:20:52.168005",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2ba1518aa13de03e5791445e85c74d1c\"",
+      "file_path": "documentation/RetentionMessaging/imagenotapprovederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/imagenotfounderror.json": {
+      "hash": "449bcfb7d278fd0a71a2d066d41980679c45287519a348fe184f0d00220951db",
+      "last_checked": "2025-12-20T20:20:52.321979",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6efe77afa51040e8716331c5ead57fc4\"",
+      "file_path": "documentation/RetentionMessaging/imagenotfounderror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/imagenotfounderror": {
+      "hash": "449bcfb7d278fd0a71a2d066d41980679c45287519a348fe184f0d00220951db",
+      "last_checked": "2025-12-20T20:20:52.322034",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"6efe77afa51040e8716331c5ead57fc4\"",
+      "file_path": "documentation/RetentionMessaging/imagenotfounderror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/invalidimageerror.json": {
+      "hash": "74c58b2b416cd7955d2bc0ef5ffa97b7941aa4f16533578e5fcf149909ae02aa",
+      "last_checked": "2025-12-20T20:20:52.434989",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"d7cff21a6e0d58b95eb11e5a62c22b35\"",
+      "file_path": "documentation/RetentionMessaging/invalidimageerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/invalidimageerror": {
+      "hash": "74c58b2b416cd7955d2bc0ef5ffa97b7941aa4f16533578e5fcf149909ae02aa",
+      "last_checked": "2025-12-20T20:20:52.435029",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"d7cff21a6e0d58b95eb11e5a62c22b35\"",
+      "file_path": "documentation/RetentionMessaging/invalidimageerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/invalidlocaleerror.json": {
+      "hash": "c61d84bf943377422bb7c1a929389a541cdeef3b3e5251d92965505dcbc73204",
+      "last_checked": "2025-12-20T20:20:52.524612",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"7fd903196920898bf167a8eb9f457e4a\"",
+      "file_path": "documentation/RetentionMessaging/invalidlocaleerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/invalidlocaleerror": {
+      "hash": "c61d84bf943377422bb7c1a929389a541cdeef3b3e5251d92965505dcbc73204",
+      "last_checked": "2025-12-20T20:20:52.524670",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"7fd903196920898bf167a8eb9f457e4a\"",
+      "file_path": "documentation/RetentionMessaging/invalidlocaleerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/invalidperformancetestrequesterror.json": {
+      "hash": "88818379b24be81fa4a9d93df07f6786fea8cf82eca0618bebf5ca4062abeff5",
+      "last_checked": "2025-12-20T20:20:52.688583",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"388a5f9c1252bb6be16e9d6a2d6adc26\"",
+      "file_path": "documentation/RetentionMessaging/invalidperformancetestrequesterror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/invalidperformancetestrequesterror": {
+      "hash": "88818379b24be81fa4a9d93df07f6786fea8cf82eca0618bebf5ca4062abeff5",
+      "last_checked": "2025-12-20T20:20:52.688626",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"388a5f9c1252bb6be16e9d6a2d6adc26\"",
+      "file_path": "documentation/RetentionMessaging/invalidperformancetestrequesterror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/invalidproductiderror.json": {
+      "hash": "572b5f67e580efd0051a00754a5f4e60fe37280e384e5649128fe30a5dae44f2",
+      "last_checked": "2025-12-20T20:20:52.818540",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"4338e45da0d9bb5513c6c380455cfa4c\"",
+      "file_path": "documentation/RetentionMessaging/invalidproductiderror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/invalidproductiderror": {
+      "hash": "572b5f67e580efd0051a00754a5f4e60fe37280e384e5649128fe30a5dae44f2",
+      "last_checked": "2025-12-20T20:20:52.818599",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"4338e45da0d9bb5513c6c380455cfa4c\"",
+      "file_path": "documentation/RetentionMessaging/invalidproductiderror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/invalidrequestiderror.json": {
+      "hash": "540c06d5c497b76ff6d74219e74c2ee1ce8a739322b4955f01a6813153bda3fd",
+      "last_checked": "2025-12-20T20:20:52.937493",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2a1e9bb177f8f37d129ca44f9783a2e2\"",
+      "file_path": "documentation/RetentionMessaging/invalidrequestiderror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/invalidrequestiderror": {
+      "hash": "540c06d5c497b76ff6d74219e74c2ee1ce8a739322b4955f01a6813153bda3fd",
+      "last_checked": "2025-12-20T20:20:52.937547",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"2a1e9bb177f8f37d129ca44f9783a2e2\"",
+      "file_path": "documentation/RetentionMessaging/invalidrequestiderror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/maximumnumberofimagesreachederror.json": {
+      "hash": "6cdd82756e80ca2b82a496a2965552fef14945b1ab64c1759223ba7aafa54117",
+      "last_checked": "2025-12-20T20:20:53.065913",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"547f992a07792ada3a4d893b5abdf703\"",
+      "file_path": "documentation/RetentionMessaging/maximumnumberofimagesreachederror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/maximumnumberofimagesreachederror": {
+      "hash": "6cdd82756e80ca2b82a496a2965552fef14945b1ab64c1759223ba7aafa54117",
+      "last_checked": "2025-12-20T20:20:53.065957",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"547f992a07792ada3a4d893b5abdf703\"",
+      "file_path": "documentation/RetentionMessaging/maximumnumberofimagesreachederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/maximumnumberofmessagesreachederror.json": {
+      "hash": "7e8a1c6dfb6bcdb633360038ef5881bbed59cd00941ba6e1c8fbe05a4fb0ee09",
+      "last_checked": "2025-12-20T20:20:53.175606",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"da072367b6152368c0b47664421891e9\"",
+      "file_path": "documentation/RetentionMessaging/maximumnumberofmessagesreachederror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/maximumnumberofmessagesreachederror": {
+      "hash": "7e8a1c6dfb6bcdb633360038ef5881bbed59cd00941ba6e1c8fbe05a4fb0ee09",
+      "last_checked": "2025-12-20T20:20:53.175650",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"da072367b6152368c0b47664421891e9\"",
+      "file_path": "documentation/RetentionMessaging/maximumnumberofmessagesreachederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/messagealreadyexistserror.json": {
+      "hash": "be73f02fe6cf01233303465fff5c772205088be448b55f02e32add7a4e2b07b8",
+      "last_checked": "2025-12-20T20:20:53.309780",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"95453f4ab7cca539d9a66cc16a76699f\"",
+      "file_path": "documentation/RetentionMessaging/messagealreadyexistserror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/messagealreadyexistserror": {
+      "hash": "be73f02fe6cf01233303465fff5c772205088be448b55f02e32add7a4e2b07b8",
+      "last_checked": "2025-12-20T20:20:53.309823",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"95453f4ab7cca539d9a66cc16a76699f\"",
+      "file_path": "documentation/RetentionMessaging/messagealreadyexistserror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/messagenotapprovederror.json": {
+      "hash": "10a3762140fcee2534afc926a63ec1b15b3945b2a2a4d2956903df30135870ff",
+      "last_checked": "2025-12-20T20:20:53.438218",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"feaaed9a06b42ee37680dcb156871f1f\"",
+      "file_path": "documentation/RetentionMessaging/messagenotapprovederror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/messagenotapprovederror": {
+      "hash": "10a3762140fcee2534afc926a63ec1b15b3945b2a2a4d2956903df30135870ff",
+      "last_checked": "2025-12-20T20:20:53.438270",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"feaaed9a06b42ee37680dcb156871f1f\"",
+      "file_path": "documentation/RetentionMessaging/messagenotapprovederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/messagenotfounderror.json": {
+      "hash": "20fe7dafb84fb9848767b54f8f57a5f2b8e1fbe0d0e6f0370e17a41039d01a02",
+      "last_checked": "2025-12-20T20:20:53.561238",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ebd78536936d00171b19992aa3d72b39\"",
+      "file_path": "documentation/RetentionMessaging/messagenotfounderror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/messagenotfounderror": {
+      "hash": "20fe7dafb84fb9848767b54f8f57a5f2b8e1fbe0d0e6f0370e17a41039d01a02",
+      "last_checked": "2025-12-20T20:20:53.561292",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"ebd78536936d00171b19992aa3d72b39\"",
+      "file_path": "documentation/RetentionMessaging/messagenotfounderror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/performancetestrunnotfounderror.json": {
+      "hash": "2bec6b267848805a7483e12a895f2406ee5f2a785c600b3be924216afcec1815",
+      "last_checked": "2025-12-20T20:20:53.681523",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b9cda8cab20ac28018483df6e58914bf\"",
+      "file_path": "documentation/RetentionMessaging/performancetestrunnotfounderror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/performancetestrunnotfounderror": {
+      "hash": "2bec6b267848805a7483e12a895f2406ee5f2a785c600b3be924216afcec1815",
+      "last_checked": "2025-12-20T20:20:53.681574",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"b9cda8cab20ac28018483df6e58914bf\"",
+      "file_path": "documentation/RetentionMessaging/performancetestrunnotfounderror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/ratelimitexceedederror.json": {
+      "hash": "6b292f8f2096e0670fe800b0401c36ba9b6d5356fcd5bbd3c034e289f59f489b",
+      "last_checked": "2025-12-20T20:20:53.779524",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fdbc94cc67a35c1c95866f651b597ffb\"",
+      "file_path": "documentation/RetentionMessaging/ratelimitexceedederror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/ratelimitexceedederror": {
+      "hash": "6b292f8f2096e0670fe800b0401c36ba9b6d5356fcd5bbd3c034e289f59f489b",
+      "last_checked": "2025-12-20T20:20:53.779574",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"fdbc94cc67a35c1c95866f651b597ffb\"",
+      "file_path": "documentation/RetentionMessaging/ratelimitexceedederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/retentionmessaging/generalinternalerror.json": {
+      "hash": "c8cf8f93aff242ae6c4d13a0f3da726313884335d2d98a31024bbb6cb2ffef97",
+      "last_checked": "2025-12-20T20:20:53.906226",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"c03c6c64fbb82acfd1127b3b16b0dbe9\"",
+      "file_path": "documentation/RetentionMessaging/generalinternalerror.md"
+    },
+    "https://developer.apple.com/documentation/retentionmessaging/generalinternalerror": {
+      "hash": "c8cf8f93aff242ae6c4d13a0f3da726313884335d2d98a31024bbb6cb2ffef97",
+      "last_checked": "2025-12-20T20:20:53.906264",
+      "status": "new",
+      "session_id": "2025-12-20T20:20:42.031769",
+      "etag": "W/\"c03c6c64fbb82acfd1127b3b16b0dbe9\"",
+      "file_path": "documentation/RetentionMessaging/generalinternalerror.md"
+    }
+  }
+}

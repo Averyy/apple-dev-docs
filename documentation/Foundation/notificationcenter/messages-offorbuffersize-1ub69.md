@@ -3,20 +3,41 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns an asynchronous sequence of messages produced by this center for a given subject type and identifier.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func messages<Identifier, Message>(of subject: Message.Subject.Type, for identifier: Identifier, bufferSize limit: Int = 10) -> some AsyncSequence<Message, Never> where Identifier : NotificationCenter.MessageIdentifier, Message : NotificationCenter.AsyncMessage, Message == Identifier.MessageType
+func messages<Identifier, Message>(of subject: Message.Subject.Type, for identifier: Identifier, bufferSize limit: Int = 10) -> some Sendable & AsyncSequence<Message, Never> where Identifier : NotificationCenter.MessageIdentifier, Message : NotificationCenter.AsyncMessage, Message == Identifier.MessageType
 ```
+
+#### Return Value
+
+An asynchronous sequence of messages produced by this center.
+
+## Parameters
+
+- `subject`: The metatype to observe all values for a given type.
+- `identifier`: An identifier representing a specific message type.
+- `limit`: The maximum number of messages allowed to buffer.
+
+## See Also
+
+- [func messages<Identifier, Message>(of: Message.Subject, for: Identifier, bufferSize: Int) -> some Sendable & AsyncSequence<Message, Never>
+](notificationcenter/messages(of:for:buffersize:)-4tof0.md)
+  Returns an asynchronous sequence of messages produced by this center for a given subject and identifier.
+- [func messages<Message>(of: Message.Subject?, for: Message.Type, bufferSize: Int) -> some Sendable & AsyncSequence<Message, Never>
+](notificationcenter/messages(of:for:buffersize:)-623kg.md)
+  Returns an asynchronous sequence of messages produced by this center for a given subject and message type.
 
 
 ---

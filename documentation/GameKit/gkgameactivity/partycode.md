@@ -6,12 +6,12 @@
 If the game supports party code, this is the party code that can be shared among players to join the party.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,9 +25,7 @@ var partyCode: String? { get }
 
 #### Discussion
 
-If the game does not support party code, this value will be nil.
-
-> **Note**: `-[GKGameActivity startWithDefinition:partyCode:completionHandler:]` for creating a game activity with a custom party code.
+If the game doesn’t support party code, this value will be `nil`. Use [`start(definition:partyCode:)`](gkgameactivity/start(definition:partycode:).md) to create a game activity with a custom party code.
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-A type that provides the app extension configuration information.
+A type that manages configuration data for an app extension.
 
 **Availability**:
 - iOS 16.0+
@@ -28,11 +28,7 @@ When you create a custom app extension, Swift infers this type from your impleme
 ## See Also
 
 - [var configuration: Self.Configuration](appextension/configuration-swift.property.md)
-  The configuration object for this app extension.
-- [static func main() throws](appextension/main-5zfjx.md)
-  The main entry point for a non-UI extension.
-- [static func main() throws](appextension/main-w0u9.md)
-  The main entry point for a UI extension.
+  The configuration details for this app extension.
 
 
 ---

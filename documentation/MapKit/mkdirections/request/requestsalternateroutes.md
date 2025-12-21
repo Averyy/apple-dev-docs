@@ -22,9 +22,9 @@ var requestsAlternateRoutes: Bool { get set }
 
 #### Discussion
 
-When this property is [`false`](https://developer.apple.com/documentation/swift/false), the server returns a single route between the start and end points. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the server may return additional routes for the user to follow. The server returns additional routes only if they’re available and represent a reasonable path that the user might take.
+When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the server returns a single route between the start and end points. When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the server may return additional routes for the user to follow. The server returns additional routes only if they’re available and represent a reasonable path that the user might take.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

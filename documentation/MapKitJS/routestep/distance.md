@@ -11,7 +11,7 @@ The step distance, in meters.
 ## Declaration
 
 ```swift
-attribute number distance;
+distance: number;
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ This property reflects the distance that the user covers while traveling along t
   The written instructions for following the path that the step represents.
 - [transportType](routestep/transporttype.md)
   The transport type of the step.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

@@ -22,7 +22,7 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 ## Parameters
 
 - `buffer`: The   instance containing the commands to execute.
-- `indirectRangeBuffer`: An indirect buffer containing the execution range, laid out in an   instance. The maximum length of the range is   commands.
+- `indirectRangeBuffer`: When running on Metal devices that belong to the   GPU family, the maximum value for the   property of that structure is 0x4000 (16,384).   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
 - `offset`: The number of bytes from the start of   containing the execution range to use. Align the offset on a multiple of  .
 
 ## See Also

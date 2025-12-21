@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+A Boolean value that indicates whether to check for PRF support.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,11 @@
 ```swift
 let shouldCheckForSupport: Bool
 ```
+
+## See Also
+
+- [static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/checkforsupport.md)
+  A check to determine extension support for the newly created passkey.
 
 
 ---

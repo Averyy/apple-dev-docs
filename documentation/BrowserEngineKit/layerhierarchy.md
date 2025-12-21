@@ -18,8 +18,8 @@ class LayerHierarchy
 
 ## Mentions
 
-- [Propagating view visibility information to extension processes](propagating-view-visibility-information-to-browser-extensions.md)
 - [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
+- [Propagating view visibility information to extension processes](propagating-view-visibility-information-to-browser-extensions.md)
 
 #### Overview
 

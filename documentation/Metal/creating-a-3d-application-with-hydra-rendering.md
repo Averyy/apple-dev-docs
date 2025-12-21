@@ -1,4 +1,4 @@
-# Creating a 3D application with Hydra rendering
+# Creating a 3D application with hydra rendering
 
 **Framework**: Metal
 
@@ -10,7 +10,7 @@ Build a 3D application that integrates with Hydra and USD.
 
 ##### Configure the Sample Code Project
 
-This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [`get and build the USD source code`](https://developer.apple.comhttps://github.com/PixarAnimationStudios/USD/blob/release/README.md#getting-and-building-the-code) from Pixar’s GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [`download the latest version of CMake`](https://developer.apple.comhttps://cmake.org/download/) to your Applications folder.
+This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [`get and build the USD source code`](https://developer.apple.comhttps://github.com/PixarAnimationStudios/OpenUSD/blob/release/README.md#getting-and-building-the-code) from the Pixar GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [`download the latest version of CMake`](https://developer.apple.comhttps://cmake.org/download/) to your Applications folder.
 
 CMake is both a GUI and command-line app. To use the command-line tool, open a Terminal window and add the `/Contents/bin` folder from the `CMake.app` application bundle to your `PATH` environment variable, like this:
 
@@ -51,21 +51,21 @@ Finally, open the generated Xcode project, and change the scheme to `hydraplayer
 
 ## See Also
 
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing Render Pass Setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a Custom Metal View](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing Order-Independent Transparency with Image Blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
@@ -74,8 +74,8 @@ Finally, open the generated Xcode project, and change the scheme to `hydraplayer
 - [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

@@ -26,20 +26,21 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
 
 ## Topics
 
-### Structures
-- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
-  A linear time-series forecasting model.
-### Initializers
+### Creating a linear time series forecaster
 - [init(configuration: LinearTimeSeriesForecaster<Scalar>.Configuration)](lineartimeseriesforecaster/init(configuration:).md)
   Creates a linear time-series forecaster.
-### Instance Properties
+### Inspecting a linear time series forecaster
 - [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](lineartimeseriesforecaster/configuration-swift.property.md)
   The configuration.
 - [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
   The number of predicted samples.
 - [var inputWindowSize: Int](lineartimeseriesforecaster/inputwindowsize.md)
   The number of input samples.
-### Instance Methods
+### Updating and fitting
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](lineartimeseriesforecaster/update(_:with:).md)
+  Updates a model with a new batch of examples.
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](lineartimeseriesforecaster/update(_:withwindows:eventhandler:).md)
+  Updates a model with a sequence of windows.
 - [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(to:eventhandler:).md)
   Fits a model to a sequence of examples.
 - [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(to:validateon:eventhandler:).md)
@@ -48,16 +49,10 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
   Fits a model to a sequence of windows.
 - [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(towindows:validateon:eventhandler:).md)
   Fits a model to a sequence of annotated windows with validation.
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](lineartimeseriesforecaster/update(_:with:).md)
-  Updates a model with a new batch of examples.
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](lineartimeseriesforecaster/update(_:withwindows:eventhandler:).md)
-  Updates a model with a sequence of windows.
-### Type Aliases
-- [LinearTimeSeriesForecaster.Annotation](lineartimeseriesforecaster/annotation.md)
-  The annotation type.
+### Supporting types
 - [LinearTimeSeriesForecaster.Configuration](lineartimeseriesforecaster/configuration-swift.typealias.md)
-- [LinearTimeSeriesForecaster.Transformer](lineartimeseriesforecaster/transformer.md)
-  The transformer type created by this estimator.
+- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
+  A linear time-series forecasting model.
 ### Default Implementations
 - [SupervisedEstimator Implementations](lineartimeseriesforecaster/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](lineartimeseriesforecaster/updatablesupervisedestimator-implementations.md)

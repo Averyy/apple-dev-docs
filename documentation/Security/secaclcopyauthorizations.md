@@ -16,7 +16,7 @@ func SecACLCopyAuthorizations(_ acl: SecACL) -> CFArray
 
 #### Return Value
 
-An array containing the authorizations for this entry. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) method when you are done with it.
+An array containing the authorizations for this entry. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) method when you are done with it.
 
 #### Discussion
 

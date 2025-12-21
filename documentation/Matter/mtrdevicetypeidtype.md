@@ -51,7 +51,6 @@ enum MTRDeviceTypeIDType
 - [MTRDeviceTypeIDType.flowSensorID](mtrdevicetypeidtype/flowsensorid.md)
 - [MTRDeviceTypeIDType.genericSwitchID](mtrdevicetypeidtype/genericswitchid.md)
 - [MTRDeviceTypeIDType.heatPumpID](mtrdevicetypeidtype/heatpumpid.md)
-- [MTRDeviceTypeIDType.heatingCoolingUnitID](mtrdevicetypeidtype/heatingcoolingunitid.md)
 - [MTRDeviceTypeIDType.humiditySensorID](mtrdevicetypeidtype/humiditysensorid.md)
 - [MTRDeviceTypeIDType.laundryDryerID](mtrdevicetypeidtype/laundrydryerid.md)
 - [MTRDeviceTypeIDType.laundryWasherID](mtrdevicetypeidtype/laundrywasherid.md)

@@ -6,11 +6,11 @@
 Options relating to the transcriber’s result delivery.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,7 +20,7 @@ enum ReportingOption
 
 ## Topics
 
-### Enumeration Cases
+### Reporting options
 - [DictationTranscriber.ReportingOption.alternativeTranscriptions](dictationtranscriber/reportingoption/alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
 - [DictationTranscriber.ReportingOption.frequentFinalization](dictationtranscriber/reportingoption/frequentfinalization.md)
@@ -39,6 +39,8 @@ enum ReportingOption
 
 ## See Also
 
+- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
+  Expected characteristics of the spoken audio content and its delivery.
 - [DictationTranscriber.ResultAttributeOption](dictationtranscriber/resultattributeoption.md)
   Options relating to the attributes of the transcription.
 - [DictationTranscriber.TranscriptionOption](dictationtranscriber/transcriptionoption.md)

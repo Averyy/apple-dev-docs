@@ -1,4 +1,4 @@
-# Detecting Human Actions in a Live Video Feed
+# Detecting human actions in a live video feed
 
 **Framework**: Create ML
 
@@ -11,45 +11,39 @@ Identify body movements by sending a person’s pose data from a series of video
 
 #### Overview
 
-This sample app recognizes a person’s body moves, called , by analyzing a series of video frames with [`Vision`](https://developer.apple.com/documentation/vision) and predicting the name of the movement by applying an action classifier. The action classifier in this sample recognizes three exercises:
+This sample app recognizes a person’s body moves, called , by analyzing a series of video frames with [`Vision`](https://developer.apple.com/documentation/Vision) and predicting the name of the movement by applying an action classifier. The action classifier in this sample recognizes three exercises:
 
 - Jumping jacks
 - Lunges
 - Burpees
 
-![Flow diagram that illustrates the purpose of an action classifier starting with a human performing jumping jacks in front of the device’s camera and ending with a prediction label. Starting at the top of the flow diagram, a camera generates video frames. The Vision framework consumes the frames to generate a data window of body location data. The action classifier consumes the data window and predicts the label: Jumping Jacks.](https://docs-assets.developer.apple.com/published/6969ad3794/rendered2x-1612563032.png)
-
-> **Note**: See `Creating an Action Classifier Model` for information about creating your own action classifier.
+![Flow diagram that illustrates the purpose of an action classifier starting with a human performing jumping jacks in front of the device’s camera and ending with a prediction label.](https://docs-assets.developer.apple.com/published/75929e2897662f60b99a1231b050d753/detecting-human-actions-1%402x.png)
 
 The app continually presents its current action prediction on top of a live, full-screen video feed from the device’s camera. When the app recognizes one or more people in the frame, it overlays a wireframe body pose on each person. At the same time, the app predicts the  person’s current action; typically this is the person closest to the camera.
 
-![A diagram that represents the sample app’s main view. The image prominently shows a human figure performing jumping jacks. The app draws a body wireframe of circles connected by lines at key locations, overlaid on the arms, legs, and torso. Two text labels at the bottom of the view read Jumping Jacks and 98.7%. ](https://docs-assets.developer.apple.com/published/799c02125a/rendered2x-1612816327.png)
+![A diagram that represents the sample app’s main view.](https://docs-assets.developer.apple.com/published/7884307fabe284474a34bad3c1e1e742/detecting-human-actions-2%402x.png)
 
-At launch, the app configures the device’s camera to generate video frames and then directs the frames through a series of methods it chains together with [`Combine`](https://developer.apple.com/documentation/combine). These methods work together to analyze the frames and make action predictions by performing the following sequence of steps:
+At launch, the app configures the device’s camera to generate video frames and then directs the frames through a series of methods it chains together with [`Combine`](https://developer.apple.com/documentation/Combine). These methods work together to analyze the frames and make action predictions by performing the following sequence of steps:
 
 1. Locate all human body poses in each frame.
 2. Isolate the prominent pose.
 3. Aggregate the prominent pose’s position data over time.
 4. Make action predictions by sending the aggregate data to the action classifier.
 
-![A flow diagram that illustrates the path of video frames through the sample app, beginning with the device camera, and continuing through a video capture, video-processing chain, and the main view controller, ending at a mockup of the app’s interface. The interface shows a human figure augmented with a wireframe overlaid on the arms, legs, and torso, performing jumping jacks above two labels that read: “Jumping Jacks” and “98.7%.”](https://docs-assets.developer.apple.com/published/d6120914d4/rendered2x-1612816330.png)
+![A flow diagram that illustrates the path of video frames through the sample app,](https://docs-assets.developer.apple.com/published/d60ff302fc0e9dce6cb6b9011e42b408/detecting-human-actions-3%402x.png)
 
-##### 3744220
+#### Configure the Sample Code Project
 
 This sample app uses a camera, so you can’t run it in Simulator — you need to run it on an iOS or iPadOS device.
 
-##### 3744221
+#### Start a Video Capture Session
 
-The app’s `VideoCapture` class configures the device’s camera to generate video frames by creating an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession).
+The app’s `VideoCapture`class configures the device’s camera to generate video frames by creating an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession).
 
 When the app first launches, or when the user rotates the device or switches between cameras, video capture configures a camera input, a frame output, and the connection between them in its `configureCaptureSession()` method.
 
 ```swift
-// Set the video camera to run at the action classifier's frame rate.
-let modelFrameRate = ExerciseClassifier.frameRate
-
-let input = AVCaptureDeviceInput.createCameraInput(position: cameraPosition,
-                                                   frameRate: modelFrameRate)
+let input = AVCaptureDeviceInput.createCameraInput(position: cameraPosition)
 
 let output = AVCaptureVideoDataOutput.withPixelFormatType(kCVPixelFormatType_32BGRA)
 
@@ -57,11 +51,11 @@ let success = configureCaptureConnection(input, output)
 return success ? output : nil
 ```
 
-The `createCameraInput(position:frameRate:)` method selects the front- or rear-facing camera and configures its frame rate so it matches that of the action classifier.
+The  `createCameraInput(position:frameRate:)` method selects the front- or rear-facing camera and configures its frame rate so it matches that of the action classifier.
 
 > ❗ **Important**: If you replace the `ExerciseClassifier.mlmodel` file with your own action classifier model, set the `frameRate` property to match the Frame Rate training parameter you used in the Create ML developer tool.
 
-The `AVCaptureVideoDataOutput.withPixelFormatType(_:)` method creates an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput) that produces frames with a specific pixel format.
+The `AVCaptureVideoDataOutput.withPixelFormatType(_:)` method creates an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput) that produces frames with a specific pixel format.
 
 The `configureCaptureConnection(_:_:)` method configures the relationship between the capture session’s camera input and video output by:
 
@@ -88,18 +82,18 @@ if connection.isVideoStabilizationSupported {
 }
 ```
 
-The method keeps the app operating in real time — and avoids building up a frame backlog — by setting the video output’s [`alwaysDiscardsLateVideoFrames`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/alwaysdiscardslatevideoframes) property to `true`.
+The method keeps the app operating in real time — and avoids building up a frame backlog — by setting the video output’s [`alwaysDiscardsLateVideoFrames`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput/alwaysDiscardsLateVideoFrames) property to `true`.
 
 ```swift
 // Discard newer frames if the app is busy with an earlier frame.
 output.alwaysDiscardsLateVideoFrames = true
 ```
 
-See [`Setting Up a Capture Session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session) for more information on how to configure capture sessions and connect their inputs and outputs.
+See [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) for more information on how to configure capture sessions and connect their inputs and outputs.
 
-##### 3744222
+#### Create a Frame Publisher
 
-The video capture publishes frames from its capture session by creating a [`PassthroughSubject`](https://developer.apple.com/documentation/combine/passthroughsubject) in its `createVideoFramePublisher()` method.
+The video capture publishes frames from its capture session by creating a [`PassthroughSubject`](https://developer.apple.com/documentation/Combine/PassthroughSubject) in its `createVideoFramePublisher()` method.
 
 ```swift
 // Create a new passthrough subject that publishes frames to subscribers.
@@ -109,16 +103,16 @@ let passthroughSubject = PassthroughSubject<Frame, Never>()
 framePublisher = passthroughSubject
 ```
 
-A passthrough subject is a concrete implementation of [`Subject`](https://developer.apple.com/documentation/combine/subject) that adapts imperative code to work with [`Combine`](https://developer.apple.com/documentation/combine). It immediately publishes the instance you pass to its [`send(_:)`](https://developer.apple.com/documentation/combine/subject/send(_:)) method, if it has a subscriber at that time.
+A passthrough subject is a concrete implementation of [`Subject`](https://developer.apple.com/documentation/Combine/Subject) that adapts imperative code to work with [`Combine`](https://developer.apple.com/documentation/Combine). It immediately publishes the instance you pass to its [`send(_:)`](https://developer.apple.com/documentation/Combine/Subject/send(_:)) method, if it has a subscriber at that time.
 
-Next, the video capture registers itself as the video output’s delegate so it receives the video frames from the capture session by calling the output’s [`setSampleBufferDelegate(_:queue:)`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/setsamplebufferdelegate(_:queue:)) method.
+Next, the video capture registers itself as the video output’s delegate so it receives the video frames from the capture session by calling the output’s [`setSampleBufferDelegate(_:queue:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput/setSampleBufferDelegate(_:queue:)) method.
 
 ```swift
 // Set the video capture as the video output's delegate.
 videoDataOutput.setSampleBufferDelegate(self, queue: videoCaptureQueue)
 ```
 
-The video capture forwards each frame it receives to its `framePublisher` by passing the frame to its [`send(_:)`](https://developer.apple.com/documentation/combine/subject/send(_:)) method.
+The video capture forwards each frame it receives to its `framePublisher` by passing the frame to its [`send(_:)`](https://developer.apple.com/documentation/Combine/Subject/send(_:)) method.
 
 ```swift
 extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -132,9 +126,9 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
 }
 ```
 
-##### 3744223
+#### Build a Publisher Chain
 
-The sample processes each video frame, and its derivative data, with a series of methods that it connects together into a chain of [`Combine`](https://developer.apple.com/documentation/combine) publishers in the `VideoProcessingChain` class.
+The sample processes each video frame, and its derivative data, with a series of methods that it connects together into a chain of [`Combine`](https://developer.apple.com/documentation/Combine) publishers in the `VideoProcessingChain` class.
 
 Each time the video capture creates a new frame publisher it notifies the main view controller, which then assigns the publisher to the video-processing chain’s `upstreamFramePublisher` property:
 
@@ -150,16 +144,16 @@ func videoCapture(_ videoCapture: VideoCapture,
 
 Each time the property’s value changes, the video-processing chain creates a new daisy chain of publishers by calling its `buildProcessingChain()` method.
 
-![Flow diagram of the video-processing chain that consumes video frames and produces information to the main view controller. The first two items in the chain are Convert to CGImage and Find poses. The final item in the chain is Send Prediction, which the diagram separates from the Find Poses item with a vertical ellipsis that indicates an indeterminate number of chain items in between. An arrow, labeled CGImage plus poses, goes from the chain item Find Poses to the main view controller. Another arrow, labeled action prediction goes from the chain item Send Prediction to the main view controller. ](https://docs-assets.developer.apple.com/published/e599394187/rendered2x-1612563035.png)
+![Flow diagram of the video-processing chain that consumes video frames and produces information to the main view controller.](https://docs-assets.developer.apple.com/published/ab0288b62b5f7bc9fbf9aeb4f4391de5/build-publisher-chain%402x.png)
 
-The method creates each new publisher by calling one of the following [`Publisher`](https://developer.apple.com/documentation/combine/publisher) methods:
+The method creates each new publisher by calling one of the following [`Publisher`](https://developer.apple.com/documentation/Combine/Publisher) methods:
 
-- [`map(_:)`](https://developer.apple.com/documentation/combine/publisher/map(_:)-99evh),
-- [`compactMap(_:)`](https://developer.apple.com/documentation/combine/publisher/compactmap(_:)),
-- [`scan(_:_:)`](https://developer.apple.com/documentation/combine/publisher/scan(_:_:)).
-- [`filter(_:)`](https://developer.apple.com/documentation/combine/publisher/filter(_:))
+- [`map(_:)`](https://developer.apple.com/documentation/Combine/Publisher/map(_:)-99evh)
+- [`compactMap(_:)`](https://developer.apple.com/documentation/Combine/Publisher/compactMap(_:))
+- [`scan(_:_:)`](https://developer.apple.com/documentation/Combine/Publisher/scan(_:_:))
+- [`filter(_:)`](https://developer.apple.com/documentation/Combine/Publisher/filter(_:))
 
-For example, the publisher that subscribes to the initial frame publisher is a [`Publishers.CompactMap`](https://developer.apple.com/documentation/combine/publishers/compactmap) that converts each `Frame` (a type alias of `CMSampleBuffer`) it receives into a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) by calling the video-processing chain’s `imageFromFrame(_:)` method.
+For example, the publisher that subscribes to the initial frame publisher is a [`Publishers.CompactMap`](https://developer.apple.com/documentation/Combine/Publishers/CompactMap) that converts each `Frame` (a type alias of [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer)) it receives into a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) by calling the video-processing chain’s `imageFromFrame(_:)` method.
 
 ```swift
 // Create the chain of publisher-subscribers that transform the raw video
@@ -180,11 +174,12 @@ frameProcessingChain = upstreamFramePublisher
 
 The next sections explain the remaining publishers in the chain and the methods they use to transform their inputs.
 
-##### 3744224
+#### Analyze Each Frame for Body Poses
 
-The next publisher in the chain is a [`Publishers.Map`](https://developer.apple.com/documentation/combine/publishers/map) that receives each [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) from the previous publisher (the compact map) by subscribing to it. The map publisher locates any human body poses in the frame by using the video-processing chain’s `findPosesInFrame(_:)` method. The method invokes a [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest) by creating a [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler) with the image and submitting the video-processing chain’s `humanBodyPoseRequest` property to the handler’s [`perform(_:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/perform(_:)) method.
+The next publisher in the chain is a [`Publishers.Map`](https://developer.apple.com/documentation/Combine/Publishers/Map) that receives each [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) from the previous publisher (the compact map) by subscribing to it. The map publisher locates any human body poses in the frame by using the video-processing chain’s `findPosesInFrame(_:)` method. The method invokes a [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/Vision/VNDetectHumanBodyPoseRequest) by creating a [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler) with the image and submitting the video-processing chain’s `humanBodyPoseRequest` property to the handler’s [`perform(_:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/perform(_:))
+method.
 
-> ❗ **Important**: Improve your app’s efficiency by creating and reusing a single [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest) instance.
+> ❗ **Important**: Improve your app’s efficiency by creating and reusing a single [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/Vision/VNDetectHumanBodyPoseRequest) instance.
 
 ```swift
 // Create a request handler for the image.
@@ -196,7 +191,7 @@ do { try visionRequestHandler.perform([humanBodyPoseRequest]) } catch {
 }
 ```
 
-When the request completes, the method creates and returns a `Pose` array that contains one pose for every [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/vision/vnhumanbodyposeobservation) instance in the request’s [`results`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest/results) property.
+When the request completes, the method creates and returns a `Pose` array that contains one pose for every [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/Vision/VNHumanBodyPoseObservation) instance in the request’s [`results`](https://developer.apple.com/documentation/Vision/VNDetectHumanBodyPoseRequest/results) property.
 
 ```swift
 let poses = Pose.fromObservations(humanBodyPoseRequest.results)
@@ -208,11 +203,11 @@ The `Pose` structure in this sample serves three main purposes:
 - Storing the the observation’s multiarray (see “Retrieve the Multiarray”)
 - Drawing an observation as a wireframe of points and lines (see “Present the Poses to the User”)
 
-For more information about using a [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest), see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images).
+For more information about using a [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/Vision/VNDetectHumanBodyPoseRequest), see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
 
-##### 3744225
+#### Isolate a Body Pose
 
-The next publisher in the chain is a map that chooses a single pose from the array of poses by using the video-processing chain’s `isolateLargestPose(_:)` method. This method selects the the most prominent pose by passing a closure to the pose array’s [`max(by:)`](https://developer.apple.com/documentation/swift/array/max(by:)) method.
+The next publisher in the chain is a map that chooses a single pose from the array of poses by using the video-processing chain’s `isolateLargestPose(_:)` method. This method selects the the most prominent pose by passing a closure to the pose array’s [`max(by:)`](https://developer.apple.com/documentation/Swift/Array/max(by:)) method.
 
 ```swift
 private func isolateLargestPose(_ poses: [Pose]?) -> Pose? {
@@ -222,11 +217,11 @@ private func isolateLargestPose(_ poses: [Pose]?) -> Pose? {
 
 The closure compares the poses’ area estimates, with the goal of consistently selecting the same person’s pose over time, when multiple people are in frame.
 
-> ❗ **Important**: Get the most accurate predictions from an action classifier by using whatever technique you think best tracks a person from frame to frame, and use the multiarray from that person’s [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/vision/vnhumanbodyposeobservation) result.
+> ❗ **Important**: Get the most accurate predictions from an action classifier by using whatever technique you think best tracks a person from frame to frame, and use the multiarray from that person’s [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/Vision/VNHumanBodyPoseObservation) result.
 
-##### 3744226
+#### Retrieve the Multiarray
 
-The next publisher in the chain is a map that publishes the [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray) from the pose’s `multiArray` property by using the video processing chain’s `multiArrayFromPose(_:)` method.
+The next publisher in the chain is a map that publishes the [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray) from the pose’s `multiArray` property by using the video processing chain’s `multiArrayFromPose(_:)` method.
 
 ```swift
 private func multiArrayFromPose(_ item: Pose?) -> MLMultiArray? {
@@ -234,18 +229,18 @@ private func multiArrayFromPose(_ item: Pose?) -> MLMultiArray? {
 }
 ```
 
-The `Pose` initializer copies the multiarray from its [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/vision/vnhumanbodyposeobservation) parameter by calling the observation’s [`keypointsMultiArray()`](https://developer.apple.com/documentation/vision/vnrecognizedpointsobservation/keypointsmultiarray()) method.
+The `Pose` initializer copies the multiarray from its [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/Vision/VNHumanBodyPoseObservation) parameter by calling the observation’s [`keypointsMultiArray()`](https://developer.apple.com/documentation/Vision/VNRecognizedPointsObservation/keypointsMultiArray()) method.
 
 ```swift
 // Save the multiarray from the observation.
 multiArray = try? observation.keypointsMultiArray()
 ```
 
-##### 3744227
+#### Gather a Window of Multiarrays
 
-The next publisher in the chain is a [`Publishers.Scan`](https://developer.apple.com/documentation/combine/publishers/scan) that receives each multiarray from its upstream publisher and gathers them into an array by providing two arguments:
+The next publisher in the chain is a [`Publishers.Scan`](https://developer.apple.com/documentation/Combine/Publishers/Scan) that receives each multiarray from its upstream publisher and gathers them into an array by providing two arguments:
 
-- An empty multiarray-optional array (`[`[`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray)`?]`) as the scan publisher’s initial value
+- An empty multiarray-optional array as the scan publisher’s initial value.
 - The video-processing chain’s `gatherWindow(previousWindow:multiArray:)` method as the scan publisher’s transform.
 
 ```swift
@@ -286,14 +281,15 @@ The method:
 1. Copies the `previousWindow` parameter to `currentWindow`
 2. Removes `windowStride` elements from the front of `currentWindow`, if it’s full
 3. Appends the `multiArray` parameter to the end of `currentWindow`
+4. Returns `currentWindow`, which becomes the new state of the scan publisher and the next value for `previousWindow` when the scan publisher receives the next value from its upstream publisher and invokes the method
 
 The video-processing chain considers a window to be full if it contains `predictionWindowSize` elements. When the window is full, this method removes (in step 2) the oldest elements to make room for newer elements, effectively sliding the window forward in time.
 
-The Exercise Classifier’s `calculatePredictionWindowSize()` method determines the value of the prediction window size at runtime by inspecting the model’s [`modelDescription`](https://developer.apple.com/documentation/coreml/mlmodel/modeldescription) property.
+The Exercise Classifier’s `calculatePredictionWindowSize()` method determines the value of the prediction window size at runtime by inspecting the model’s [`modelDescription`](https://developer.apple.com/documentation/CoreML/MLModel/modelDescription) property.
 
-##### 3744228
+#### Monitor the Window Size
 
-The next publisher in the chain is a [`Publishers.Filter`](https://developer.apple.com/documentation/combine/publishers/filter), which only publishes an array window when the `gateWindow(_:)` method returns `true`.
+The next publisher in the chain is a [`Publishers.Filter`](https://developer.apple.com/documentation/Combine/Publishers/Filter), which only publishes an array window when the `gateWindow(_:)` method returns `true`.
 
 ```swift
 // Only publish a window when it grows to the correct size.
@@ -310,9 +306,9 @@ private func gateWindow(_ currentWindow: [MLMultiArray?]) -> Bool {
 }
 ```
 
-This filter publisher, in combination with its upstream scan publisher, publishes an array of multiarray optionals (`[`[`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray)`?]`) once per each number of frames defined in `windowStride`.
+This filter publisher, in combination with its upstream scan publisher, publishes an array of multiarray optionals once per each number of frames defined in `windowStride`.
 
-##### 3744229
+#### Predict the Persons Action
 
 The next publisher in the chain makes an `ActionPrediction` from the multiarray window by using the `predictActionWithWindow(_:)` method as its transform.
 
@@ -323,7 +319,7 @@ The next publisher in the chain makes an `ActionPrediction` from the multiarray 
 // ---- ActionPrediction -- ActionPrediction ----
 ```
 
-The method’s input array contains multiarray optionals where each `nil` element represents a frame in which [`Vision`](https://developer.apple.com/documentation/vision) wasn’t able to find any human body poses. An action classifier requires a valid, non-`nil` multiarray for every frame. To remove the `nil` elements in the array, the method creates a new multiarray, `filledWindow`, by:
+The method’s input array contains multiarray optionals where each `nil` element represents a frame in which [`Vision`](https://developer.apple.com/documentation/Vision) wasn’t able to find any human body poses. An action classifier requires a valid, non-`nil` multiarray for every frame. To remove the `nil` elements in the array, the method creates a new multiarray, `filledWindow`, by:
 
 - Copying each each valid element in `currentWindow`
 - Replacing each `nil` element in `currentWindow` with an `emptyPoseMultiArray`
@@ -345,7 +341,7 @@ let filledWindow: [MLMultiArray] = currentWindow.map { multiArray in
 The empty pose multiarray has:
 
 - Every element set to zero
-- The same value for its [`shape`](https://developer.apple.com/documentation/coreml/mlmultiarray/shape) property as a multiarray from a human body-pose observation
+- The same value for its [`shape`](https://developer.apple.com/documentation/CoreML/MLMultiArray/shape) property as a multiarray from a human body-pose observation
 
 As the method iterates through each element in `currentWindow`, it tallies the number of non-`nil` elements with `poseCount`.
 
@@ -360,7 +356,7 @@ guard poseCount >= minimum else {
 }
 ```
 
-Otherwise, the method merges the array of multiarrays into a single, combined multiarray by calling the [`init(byConcatenatingMultiArrays:alongAxis:dataType:)`](https://developer.apple.com/documentation/coreml/mlmultiarray/init(byconcatenatingmultiarrays:alongaxis:datatype:)) initializer.
+Otherwise, the method merges the array of multiarrays into a single, combined multiarray by calling the [`init(byConcatenatingMultiArrays:alongAxis:dataType:)`](https://developer.apple.com/documentation/CoreML/MLMultiArray/init(byConcatenatingMultiArrays:alongAxis:dataType:)) initializer.
 
 ```swift
 // Merge the array window of multiarrays into one multiarray.
@@ -382,7 +378,7 @@ return checkConfidence(prediction)
 
 The method checks the prediction’s confidence by passing the prediction to the `checkConfidence(_:)` helper method, which returns the same prediction if its confidence is high enough; otherwise `lowConfidencePrediction`.
 
-##### 3744230
+#### Present the Prediction to the User
 
 The final component in the chain is a subscriber that notifies the video-processing chain’s delegate with the prediction using the `sendPrediction(_:)` method.
 
@@ -421,9 +417,9 @@ func videoProcessingChain(_ chain: VideoProcessingChain,
 
 The main view controller also updates its `actionFrameCounts` property for action labels that come from the model, which it later sends to the Summary View Controller when the user taps the `Summary` button.
 
-##### 3744231
+#### Present the Poses to the User
 
-The app visualizes the result of each human body-pose request by drawing the poses on top of the frame in which [`Vision`](https://developer.apple.com/documentation/vision) found them. Each time the video-processing chain’s `findPosesInFrame(_:)` creates an array of `Pose` instances, it sends the poses to its delegate, the main view controller.
+The app visualizes the result of each human body-pose request by drawing the poses on top of the frame in which [`Vision`](https://developer.apple.com/documentation/Vision) found them. Each time the video-processing chain’s `findPosesInFrame(_:)` creates an array of `Pose` instances, it sends the poses to its delegate, the main view controller.
 
 ```swift
 // Send the frame and poses, if any, to the delegate on the main queue.
@@ -457,18 +453,7 @@ The main view controller presents the finished image to the user by assigning it
 DispatchQueue.main.async { self.imageView.image = frameWithPosesRendering }
 ```
 
-## See Also
-
-- [Creating an Action Classifier Model](creating-an-action-classifier-model.md)
-  Train a machine learning model to recognize a person’s body movements.
-- [struct MLActionClassifier](mlactionclassifier.md)
-  A model you train with videos to classify a person’s body movements.
-- [struct MLHandActionClassifier](mlhandactionclassifier.md)
-  A task that creates a hand action classification model by training with videos of people’s hand movements that you provide.
-- [struct MLStyleTransfer](mlstyletransfer.md)
-  A model you train to apply an image’s style to other images or videos.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/detecting_human_actions_in_a_live_video_feed)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/detecting-human-actions-in-a-live-video-feed)*

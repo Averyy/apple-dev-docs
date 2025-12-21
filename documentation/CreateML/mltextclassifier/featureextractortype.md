@@ -18,6 +18,10 @@ The text feature extractor type.
 enum FeatureExtractorType
 ```
 
+## Mentions
+
+- [Creating a text classifier model](creating-a-text-classifier-model.md)
+
 ## Topics
 
 ### Selecting a feature extractor type
@@ -55,12 +59,8 @@ enum FeatureExtractorType
 
 ## See Also
 
-- [MLTextClassifier.ModelAlgorithmType.crf(revision:)](mltextclassifier/modelalgorithmtype/crf(revision:).md)
-  A text classification algorithm that uses a statistical model of transition probabilities between words.
-- [MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)](mltextclassifier/modelalgorithmtype/maxent(revision:).md)
-  A text classification algorithm that uses multinomial logistic regression based on the frequencies of words, independent of context.
-- [case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)](mltextclassifier/modelalgorithmtype/transferlearning(_:revision:).md)
-  A text classification algorithm that uses transfer learning by leveraging a feature extractor to generate embeddings.
+- [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
+  The type of algorithm that a text classifier uses.
 
 
 ---

@@ -24,9 +24,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 
 ## Topics
 
-### Operators
-- [static func == (HIDUsage, HIDUsage) -> Bool](hidusage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case arcade(HIDUsage.ArcadeUsage?)](hidusage/arcade(_:).md)
 - [case auxiliaryDisplay(HIDUsage.AuxiliaryDisplayUsage?)](hidusage/auxiliarydisplay(_:).md)
@@ -66,15 +63,10 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 - [init(page: UInt16, usage: UInt16?)](hidusage/init(page:usage:).md)
   Creates a HID usage page from raw page and usage values.
 ### Instance Properties
-- [var hashValue: Int](hidusage/hashvalue.md)
-  The hash value.
 - [var page: UInt16](hidusage/page.md)
   The usage page value.
 - [var usage: UInt16?](hidusage/usage.md)
   The usage value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hidusage/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [HIDUsage.ArcadeUsage](hidusage/arcadeusage.md)
 - [HIDUsage.AuxiliaryDisplayUsage](hidusage/auxiliarydisplayusage.md)
@@ -109,9 +101,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 - [HIDUsage.TelephonyDeviceUsage](hidusage/telephonydeviceusage.md)
 - [HIDUsage.VESAVirtualControlsUsage](hidusage/vesavirtualcontrolsusage.md)
 - [HIDUsage.VRControlsUsage](hidusage/vrcontrolsusage.md)
-### Default Implementations
-- [CustomStringConvertible Implementations](hidusage/customstringconvertible-implementations.md)
-- [Equatable Implementations](hidusage/equatable-implementations.md)
 
 ## Relationships
 

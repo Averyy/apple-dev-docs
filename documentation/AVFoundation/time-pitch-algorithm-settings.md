@@ -1,4 +1,4 @@
-# Time Pitch Algorithm Settings
+# Time pitch algorithm settings
 
 **Framework**: AVFoundation
 
@@ -28,11 +28,11 @@ For scaled audio edits, such as when the [`timeMapping`](avassettracksegment/tim
 
 ## See Also
 
-- [Sample Rate Conversion Settings](sample-rate-conversion-settings.md)
+- [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
 - [enum AVAudioQuality](../AVFAudio/AVAudioQuality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
-- [Encoder Settings](encoder-settings.md)
+- [Encoder settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
 
 

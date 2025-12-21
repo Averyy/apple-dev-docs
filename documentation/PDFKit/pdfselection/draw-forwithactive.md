@@ -21,7 +21,7 @@ func draw(for page: PDFPage, with box: PDFDisplayBox, active: Bool)
 
 #### Discussion
 
-The selection is drawn using the current highlight color. If active is [`true`](https://developer.apple.com/documentation/swift/true), drawing uses `selectedTextBackgroundColor`. If [`false`](https://developer.apple.com/documentation/swift/false), it uses `secondarySelectedControlColor`. Refer to the [`PDFPage`](pdfpage.md) class for the list of available box types.
+The selection is drawn using the current highlight color. If active is [`true`](https://developer.apple.com/documentation/Swift/true), drawing uses `selectedTextBackgroundColor`. If [`false`](https://developer.apple.com/documentation/Swift/false), it uses `secondarySelectedControlColor`. Refer to the [`PDFPage`](pdfpage.md) class for the list of available box types.
 
 Page space is a 72 dpi coordinate system with the origin at the lower-left corner of the current page.
 

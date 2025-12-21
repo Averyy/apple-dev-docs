@@ -23,7 +23,7 @@ var filters: [Any]? { get set }
 
 The filters you add to this property affect the content of the layer, including its border, filled background and sublayers. The default value of this property is `nil`.
 
-Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior. It is possible to modify filter parameters after attaching them to the layer but you must use the layer’s doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior. It is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 The following code shows how to create a text layer and apply a [`CIPointillize`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIPointillize) filter to it.
 

@@ -16,7 +16,7 @@ var accessibilityDisplayShouldReduceMotion: Bool { get }
 
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), avoid large animations, especially those that simulate the third dimension. To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
+If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), avoid large animations, especially those that simulate the third dimension. To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
 
 ## See Also
 

@@ -25,10 +25,10 @@ protocol EquipmentState : Equatable
 - [var pose: TableVisualState.Pose2D](equipmentstate/pose.md)
   The 2D position and rotation of the equipment relative to the parent equipment, or table.
 ### Controlling the equipment
-- [var lockedBy: PlayerIdentifier?](equipmentstate/lockedby.md)
-  The identifier for the player who exclusively controls the equipment.
 - [var seatControl: ControllingSeats](equipmentstate/seatcontrol.md)
   The seats that can manipulate or interact with this equipment.
+- [var lockedBy: PlayerIdentifier?](equipmentstate/lockedby.md)
+  The identifier for the player who exclusively controls the equipment.
 
 ## Relationships
 
@@ -45,14 +45,24 @@ protocol EquipmentState : Equatable
 
 ## See Also
 
+- [Implementing playing card overlap and physical characteristics](implementing-playing-card-overlap-and-physical-characteristics.md)
+  Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
 - [protocol Equipment](equipment.md)
   A protocol for equipment that players directly interact with in a game.
+- [struct EquipmentCollection](equipmentcollection.md)
+  A collection of equipment whose state can be inspected and modified.
 - [protocol EntityEquipment](entityequipment.md)
   A protocol for equipment in a game that you render using RealityKit.
 - [struct EquipmentIdentifier](equipmentidentifier.md)
   A unique identifier for equipment.
+- [struct EquipmentStateCollection](equipmentstatecollection.md)
+  A collection of equipment states that can be inspected and modified.
 - [struct BaseEquipmentState](baseequipmentstate.md)
   A state for equipment that contains no equipment-specific data.
+- [protocol CustomEquipmentState](customequipmentstate.md)
+  A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
+- [protocol MutableEquipmentState](mutableequipmentstate.md)
+  A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
 - [struct CardState](cardstate.md)
   A state for cards that contains face up and down information.
 - [struct DieState](diestate.md)

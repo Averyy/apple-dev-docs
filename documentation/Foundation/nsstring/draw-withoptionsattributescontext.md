@@ -17,7 +17,7 @@ Draws the attributed string in the specified bounding rectangle using the provid
 ## Declaration
 
 ```swift
-func draw(with rect: CGRect, options: NSStringDrawingOptions = [], attributes: [NSAttributedString.Key : Any]? = nil, context: NSStringDrawingContext?)
+func draw(with rect: CGRect, options: NSString.DrawingOptions = [], attributes: [NSAttributedString.Key : Any]? = nil, context: NSStringDrawingContext?)
 ```
 
 #### Discussion

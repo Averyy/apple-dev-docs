@@ -20,6 +20,8 @@ var integrator: quadrature_integrator
 
 #### Discussion
 
+Integrators
+
 Simple non-adaptive automatic integrator using Gauss-Kronrod-Patterson quadrature coefficients. Evaluates 21, or 43, or 87 points in the interval until the requested accuracy is reached. No workspace is necessary for this integrator.
 
 Simple globally adaptive integrator. Allows selection of the number of Gauss-Kronrod points used in each subinterval, and the max number of subintervals.

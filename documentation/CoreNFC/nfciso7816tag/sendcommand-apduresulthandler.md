@@ -18,7 +18,7 @@ func sendCommand(apdu: NFCISO7816APDU, resultHandler: @escaping (Result<NFCISO78
 
 #### Discussion
 
-When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`com.apple.developer.nfc.readersession.iso7816.select-identifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `resultHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
+When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `resultHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
 
 The session calls `resultHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object.
 

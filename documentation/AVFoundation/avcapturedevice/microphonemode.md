@@ -20,7 +20,7 @@ enum MicrophoneMode
 
 ## Topics
 
-### Microphone Modes
+### Microphone modes
 - [AVCaptureDevice.MicrophoneMode.standard](avcapturedevice/microphonemode/standard.md)
   A mode that processes microphone audio with standard voice DSP.
 - [AVCaptureDevice.MicrophoneMode.wideSpectrum](avcapturedevice/microphonemode/widespectrum.md)

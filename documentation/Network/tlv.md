@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: struct
 
+A Type-Length-Value (TLV) framing protocol.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -18,16 +20,21 @@
 struct TLV
 ```
 
+#### Overview
+
+This protocol will infer the length of the data based on the content passed to it in send.
+
+Supports sending and receiving messages.
+
 ## Topics
 
 ### Initializers
-- [init()](tlv/init.md)
 - [init<BelowProtocol>(() -> BelowProtocol)](tlv/init(_:)-8ka4w.md)
 - [init<BelowProtocol>(() -> BelowProtocol)](tlv/init(_:)-8qsbh.md)
 - [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](tlv/init(type:length:_:)-7awe.md)
+  Create TLV with the specified sizes for the type and length fields.
 - [init<T, L, BelowProtocol>(type: T.Type, length: L.Type, () -> BelowProtocol)](tlv/init(type:length:_:)-h8s.md)
-### Instance Properties
-- [let belowProtocol: any NetworkProtocolOptions](tlv/belowprotocol.md)
+  Create TLV with the specified sizes for the type and length fields.
 
 ## Relationships
 

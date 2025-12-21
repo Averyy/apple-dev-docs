@@ -21,7 +21,7 @@ func write(to nsurl: URL, type: CFString) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if export succeeded; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if export succeeded; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

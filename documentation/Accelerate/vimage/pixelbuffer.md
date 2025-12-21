@@ -25,10 +25,10 @@ struct PixelBuffer<Format> where Format : PixelFormat
 - [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
 - [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
 - [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
+- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 - [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 - [Optimizing image-processing performance](optimizing-image-processing-performance.md)
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
-- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
 #### Overview
 

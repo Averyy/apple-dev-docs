@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The column’s sort direction (`NSString`). See Column Sort Direction  for possible values.
+The column’s sort direction (`NSString`).
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ The column’s sort direction (`NSString`). See Column Sort Direction  for possi
 ```swift
 static let sortDirection: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+See [`Column Sort Direction`](column-sort-direction.md) for possible values.
 
 ## See Also
 

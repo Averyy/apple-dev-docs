@@ -1,4 +1,4 @@
-# Rendering at Different Rasterization Rates
+# Rendering at different rasterization rates
 
 **Framework**: Metal
 
@@ -31,16 +31,16 @@ Not all GPUs support VRR. Before attempting to use it, check for support on the 
 
 ## See Also
 
-- [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
   Define the rasterization rates for each part of your render target.
-- [Rendering with a Rasterization Rate Map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
   Create offscreen textures to hold intermediate rasterized data.
-- [Scaling Variable Rasterization Rate Content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
   Use the rate map data to scale the content to fill your destination texture.
 - [class MTLRasterizationRateMapDescriptor](mtlrasterizationratemapdescriptor.md)
   An object that you use to configure new rasterization rate maps.
 - [protocol MTLRasterizationRateMap](mtlrasterizationratemap.md)
-  A compiled read-only object that determines how to apply variable rasterization rates when rendering.
+  A compiled read-only instance that determines how to apply variable rasterization rates when rendering.
 - [typealias MTLCoordinate2D](mtlcoordinate2d.md)
   A coordinate in the viewport.
 - [func MTLCoordinate2DMake(Float, Float) -> MTLCoordinate2D](mtlcoordinate2dmake(_:_:).md)

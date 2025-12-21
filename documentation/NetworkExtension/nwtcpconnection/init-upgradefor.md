@@ -23,7 +23,7 @@ init(upgradeFor connection: NWTCPConnection)
 
 An upgraded connection will be initialized using the same remote endpoint and set of parameters from the original connection. If the original connection becomes disconnected or cancelled, the new upgrade connection will automatically be considered better.
 
-The caller should create an [`NWTCPConnection`](nwtcpconnection.md) and watch for the `hasBetterPath` property. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the caller should attempt to create a new upgrade connection, with the goal to start transferring data on the new connection path as soon as possible to reduce power and avoid expensive networks. When the new connection is successfully connected the caller can start using the new connection and cancel the original one.
+The caller should create an [`NWTCPConnection`](nwtcpconnection.md) and watch for the `hasBetterPath` property. When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the caller should attempt to create a new upgrade connection, with the goal to start transferring data on the new connection path as soon as possible to reduce power and avoid expensive networks. When the new connection is successfully connected the caller can start using the new connection and cancel the original one.
 
 ## See Also
 

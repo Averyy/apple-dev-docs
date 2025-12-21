@@ -23,7 +23,7 @@ func canInsert(_ item: AVPlayerItem, after afterItem: AVPlayerItem?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `item` can be appended to the queue, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `item` can be appended to the queue, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

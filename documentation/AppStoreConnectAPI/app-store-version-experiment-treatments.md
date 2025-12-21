@@ -21,9 +21,13 @@ Create and update the metadata and the optional icon that represent the treatmen
 ### Objects
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)
 - [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)
+  The request body you use to create an store resource.
 - [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
+  A response that contains a single app store version experiment treatment response resource.
 - [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
+  The request body you use to update an app store version experiment treatment update request.
 - [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
+  A response that contains a list of app store version experiment treatments response resources.
 - [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)

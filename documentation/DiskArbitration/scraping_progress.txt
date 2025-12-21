@@ -1,4 +1,4 @@
 Completed scraping Disk Arbitration!
-Total pages scraped: 147
+Total pages scraped: 142
 Pages skipped (unchanged): 1
 Pages failed: 0

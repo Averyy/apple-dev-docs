@@ -27,14 +27,9 @@ struct DictionaryType
 - [MLDataValue.DictionaryType.Key](mldatavalue/dictionarytype/key.md)
 - [MLDataValue.DictionaryType.Value](mldatavalue/dictionarytype/value.md)
 ### Getting an element
-- [subscript(MLDataValue.DictionaryType.Key) -> MLDataValue.DictionaryType.Value?](mldatavalue/dictionarytype/subscript(_:)-80qj2.md)
+- [subscript(MLDataValue.DictionaryType.Key) -> MLDataValue.DictionaryType.Value?](mldatavalue/dictionarytype/subscript(_:).md)
 ### Default Implementations
-- [Collection Implementations](mldatavalue/dictionarytype/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](mldatavalue/dictionarytype/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mldatavalue/dictionarytype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mldatavalue/dictionarytype/equatable-implementations.md)
 - [MLDataValueConvertible Implementations](mldatavalue/dictionarytype/mldatavalueconvertible-implementations.md)
-- [Sequence Implementations](mldatavalue/dictionarytype/sequence-implementations.md)
 
 ## Relationships
 

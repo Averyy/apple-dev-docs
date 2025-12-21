@@ -25,8 +25,7 @@
 - [init(some StringProtocol, isIncluded: (Product) -> Bool, footer: () -> Footer)](subscriptionoptionsection/init(_:isincluded:footer:)-36k79.md)
 - [init(isIncluded: (Product) -> Bool, header: () -> Header, footer: () -> Footer)](subscriptionoptionsection/init(isincluded:header:footer:).md)
 ### Choosing a subscription option group style
-- [nonisolated func subscriptionStoreOptionGroupStyle(_ style: some SubscriptionOptionGroupStyle) -> some View
-](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships

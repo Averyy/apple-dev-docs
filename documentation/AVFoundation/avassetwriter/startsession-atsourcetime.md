@@ -35,6 +35,8 @@ To end a session, call [`endSession(atSourceTime:)`](avassetwriter/endsession(at
 
 ## See Also
 
+- [func start() throws](avassetwriter/start.md)
+  Prepares the writer to write media data to its output file.
 - [func startWriting() -> Bool](avassetwriter/startwriting.md)
   Tells the writer to start writing its output.
 - [func endSession(atSourceTime: CMTime)](avassetwriter/endsession(atsourcetime:).md)

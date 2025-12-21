@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: init
 
-Creates new usage options from a raw integer value.
+Creates new usage options instance from a raw integer value.
 
 **Availability**:
 - iOS 14.0+

@@ -6,7 +6,7 @@
 A localized message describing how one might recover from the failure.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

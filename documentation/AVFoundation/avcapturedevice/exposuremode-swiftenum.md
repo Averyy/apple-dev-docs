@@ -20,7 +20,7 @@ enum ExposureMode
 
 ## Topics
 
-### Exposure Modes
+### Exposure modes
 - [AVCaptureDevice.ExposureMode.locked](avcapturedevice/exposuremode-swift.enum/locked.md)
   A mode that locks exposure for the device.
 - [AVCaptureDevice.ExposureMode.autoExpose](avcapturedevice/exposuremode-swift.enum/autoexpose.md)

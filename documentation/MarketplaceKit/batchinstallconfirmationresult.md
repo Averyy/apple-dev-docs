@@ -23,14 +23,9 @@ Your marketplace app supplies code in the closure that facilitates any prerequis
 
 ## Topics
 
-### Operators
-- [static func == (BatchInstallConfirmationResult, BatchInstallConfirmationResult) -> Bool](batchinstallconfirmationresult/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [BatchInstallConfirmationResult.cancel](batchinstallconfirmationresult/cancel.md)
 - [case confirmed(installVerificationTokens: [AppleItemID : String], authenticationContext: LAContext?)](batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).md)
-### Default Implementations
-- [Equatable Implementations](batchinstallconfirmationresult/equatable-implementations.md)
 
 ## Relationships
 

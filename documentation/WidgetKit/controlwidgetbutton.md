@@ -9,8 +9,8 @@ A control template representing a button.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ A control template representing a button.
 
 #### Overview
 
-Buttons do not have state and are used for fire-and-forget actions such as playing a sound or launching an app.
+Buttons don’t have state; use them for fire-and-forget actions such as playing a sound or launching an app.
 
 ## Topics
 
@@ -55,10 +55,16 @@ Buttons do not have state and are used for fire-and-forget actions such as playi
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
 - [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
   Customize the way controls display across the system and offer people the ability to configure them.
+- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+  The description of a control that has no user-configurable options.
+- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+  The description of a control that uses a custom app intent to provide user-configurable options.
+- [class ControlCenter](controlcenter.md)
+  An object you use to access configuration information for controls and reload them.
+- [struct ControlInfo](controlinfo.md)
+  A structure that contains information about user-configured controls.
 - [struct ControlWidgetToggle](controlwidgettoggle.md)
   A control template representing a toggle.
-- [class ControlCenter](controlcenter.md)
-  An object that contains a list of user-configured controls and is used for reloading controls.
 
 
 ---

@@ -20,7 +20,7 @@ var requiresFelicaSecureElement: Bool { get set }
 
 #### Discussion
 
-This property can be used as a filter to determine which cards are shown in the [`PKAddPaymentPassViewController`](pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+This property can be used as a filter to determine which cards are shown in the [`PKAddPaymentPassViewController`](pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -21,7 +21,7 @@ var afterScreenUpdates: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the web view to incorporate any recent changes to the view’s content and then generate the snapshot. If you change the value to [`false`](https://developer.apple.com/documentation/swift/false), the web view takes the snapshot immediately, and before incorporating any new changes.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes the web view to incorporate any recent changes to the view’s content and then generate the snapshot. If you change the value to [`false`](https://developer.apple.com/documentation/Swift/false), the web view takes the snapshot immediately, and before incorporating any new changes.
 
 
 ---

@@ -21,7 +21,7 @@ struct Reason
 
 ## Topics
 
-### Suspension Reasons
+### Suspension reasons
 - [static let audioSessionInterrupted: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/audiosessioninterrupted.md)
   The system interrupts a participant’s audio session.
 - [static let coordinatedPlaybackNotPossible: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/coordinatedplaybacknotpossible.md)

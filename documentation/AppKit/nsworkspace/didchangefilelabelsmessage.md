@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct DidChangeFileLabelsMessage
 
 ### Initializers
 - [init()](nsworkspace/didchangefilelabelsmessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidChangeFileLabelsMessage) -> Notification](nsworkspace/didchangefilelabelsmessage/makenotification(_:).md)
 
 ## Relationships
 

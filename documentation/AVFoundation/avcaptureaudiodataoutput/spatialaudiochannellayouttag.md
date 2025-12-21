@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The audio channel layout tag of the audio sample buffers produced by the audio data output.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,17 +20,18 @@ var spatialAudioChannelLayoutTag: AudioChannelLayoutTag { get set }
 
 #### Discussion
 
-Specifies the audio channel layout tag that describes the audio channel layout to be output by the AVCaptureAudioDataOutput.
+When you set your audio data output’s associated [`multichannelAudioMode`](avcapturedeviceinput/multichannelaudiomode.md) property to `AVCaptureMultichannelAudioModeFirstOrderAmbisonics`, the [`AVCaptureSession`](avcapturesession.md) allows up to two [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) instances to be connected to the First-order Ambisonsics (FOA) input. If you connect a single [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) instance, you must configure its [`spatialAudioChannelLayoutTag`](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md) property to produce either four channels of FOA audio or two channels of Stereo audio. If you connect two [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) instances, you must configure one to output four channels of FOA audio and the other to output two channels of Stereo audio.
 
-The value of this property is from the AudioChannelLayoutTag enumeration defined in CoreAudioBaseTypes.h. Currently, the only two supported values are kAudioChannelLayoutTag_Stereo or ( kAudioChannelLayoutTag_HOA_ACN_SN3D | 4 ) which will provide either a Stereo channel pair or four channels of First Order Ambisonic audio data output. The default value is kAudioChannelLayoutTag_Unknown which results in an AudioChannelLayout determined by the AVCaptureDeviceInput’s configuration.
+Thus, when you set your associated [`multichannelAudioMode`](avcapturedeviceinput/multichannelaudiomode.md) property to `AVCaptureMultichannelAudioModeFirstOrderAmbisonics`, you must set your connected [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) instance’s [`spatialAudioChannelLayoutTag`](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md) property to either `kAudioChannelLayoutTag_Stereo` for stereo, or `(kAudioChannelLayoutTag_HOA_ACN_SN3D | 4)` for FOA (see [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayoutTag)). When you set your associated [`multichannelAudioMode`](avcapturedeviceinput/multichannelaudiomode.md) to any other value, the [`AVCaptureSession`](avcapturesession.md) only supports one [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md), and you may only set [`spatialAudioChannelLayoutTag`](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md) to `kAudioChannelLayoutTag_Unknown` (the default value).
 
-The rules for allowed values in a given AVCaptureSession are as follows:
+Your [`AVCaptureSession`](avcapturesession.md) validates your app’s adherence to the the above rules when you call `AVCaptureSession/startRunning:` or [`commitConfiguration()`](avcapturesession/commitconfiguration().md) and throws a `NSInvalidArgumentException` if necessary.
 
-When the associated AVCaptureDeviceInput’s multichannelAudioMode property is set to AVCaptureMultichannelAudioModeFirstOrderAmbisonics, the AVCaptureSession can support up to two AVCaptureAudioDataOutput instances. If a single AVCaptureAudioDataOutput is present it can produce either four channels of First Order Ambisonic audio or two channels of Stereo audio. If two AVCaptureAudioDataOutputs are present, one of them must output four channels of First Order Ambisonic audio and the other must output two channels of Stereo audio.
+## See Also
 
-When the associated AVCaptureDeviceInput’s multichannelAudioMode property is set to anything other than AVCaptureMultichannelAudioModeFirstOrderAmbisonics, there must be only one AVCaptureAudioDataOutput present in the AVCaptureSession with its spatialAudioChannelLayoutTag property set to kAudioChannelLayoutTag_Unknown or left at the default value.
-
-These rules are validated when a client calls -[AVCaptureSession startRunning:] or -[AVCaptureSession commitConfiguration:]. If the validation fails an exception will be thrown indicating the invalid setting and the session will not start running.
+- [var audioSettings: [String : Any]!](avcaptureaudiodataoutput/audiosettings.md)
+  The settings used to decode or re-encode audio before it’s output.
+- [func recommendedAudioSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](avcaptureaudiodataoutput/recommendedaudiosettingsforassetwriter(writingto:).md)
+  Specifies the recommended settings for use with an `AVAssetWriterInput`.
 
 
 ---

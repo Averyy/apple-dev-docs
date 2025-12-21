@@ -16,9 +16,9 @@ var isEnteringProximity: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the pointing device enters the proximity of its tablet and [`false`](https://developer.apple.com/documentation/swift/false) when it leaves.
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when the pointing device enters the proximity of its tablet and [`false`](https://developer.apple.com/documentation/Swift/false) when it leaves.
 
-This method is valid only for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events; otherwise it is set to [`false`](https://developer.apple.com/documentation/swift/false).
+This method is valid only for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events; otherwise it is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -31,7 +31,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         collectForce = trackedTouch!.type == .pencil || view?.traitCollection.forceTouchCapability == .available
         if !isForPencil {
             // Give other gestures, such as pan and pinch, a chance by
-            // slightly delaying the `.begin.
+            // slightly delaying the .began state.
             fingerStartTimer = Timer.scheduledTimer(
                 withTimeInterval: cancellationTimeInterval,
                 repeats: false,
@@ -111,7 +111,7 @@ var isForPencil: Bool = false {
 }
 ```
 
-Each time the user draws a stroke on the screen, the stroke gesture recognizer calls the `strokeUpdate(_:)` method. This method checks to see if the recognizer is for Apple Pencil, and if so, puts the app into pencil mode. While the app is in pencil mode, the user can use one finger to pan the drawing canvas. When the app isn’t in pencil mode—that is, when the user is drawing with their finger—the user uses two fingers to pan the drawing canvas.
+Each time the user draws a stroke on the screen, the stroke gesture recognizer calls the `strokeUpdate(_:)` method. This method checks to see if the recognizer is for Apple Pencil, and if so, puts the app into pencil mode. While the app is in pencil mode, the user can use one finger to pan the drawing canvas. When the app isn’t in pencil mode — that is, when the user is drawing with their finger — the user uses two fingers to pan the drawing canvas.
 
 ```swift
 var pencilMode = false {
@@ -286,7 +286,7 @@ func drawDebugMarkings(in context: CGContext, fromSample: StrokeSample) {
 }
 ```
 
-Starting with the second generation Apple Pencil, users can double-tap their finger on Apple Pencil to request an action from the app (see [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information). When possible, apps should honor the system settings for double-tap actions on Apple Pencil, which include:
+Starting with the second generation Apple Pencil, users can double tap their finger on Apple Pencil to request an action from the app (see [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information). When possible, apps should honor the system settings for double-tap actions on Apple Pencil, which include:
 
 - Switching to the eraser or the last used tool
 - Displaying a color pallet

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload properties that are common across all profiles.
+The properties common to all payloads.
 
 **Availability**:
 - iOS 4.0+
@@ -36,7 +36,7 @@ object CommonPayloadKeys
 ## See Also
 
 - [object TopLevel](toplevel.md)
-  The top-level payload properties you use to configure all profiles.
+  The top-level payload properties for all profiles.
 
 
 ---

@@ -21,13 +21,13 @@ class GCDirectionalGamepad
 
 #### Overview
 
-The directional gamepad profile is similar to a micro gamepad profile except it doesn’t support motion or rotation. The controller’s [`motion`](gccontroller/motion.md) property is `nil` and the inherited [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+The directional gamepad profile is similar to a micro gamepad profile except it doesn’t support motion or rotation. The controller’s [`motion`](gccontroller/motion.md) property is `nil` and the inherited [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If you select Micro Gamepad when you add the Game Controllers capability ([`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) ) to your project, and you also support the GCDirectionalGamepad profile, select Directional Gamepad as well.
 
 If you support the second-generation Siri Remote and later, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key to `YES` in the information property list in your project.
 
-In addition, the directional pad element may report digital or analog values. If the directional pad’s [`isAnalog`](gccontrollerelement/isanalog.md) property is [`false`](https://developer.apple.com/documentation/swift/false), it reports absolute directional pad values (the [`reportsAbsoluteDpadValues`](gcmicrogamepad/reportsabsolutedpadvalues.md) property is [`true`](https://developer.apple.com/documentation/swift/true)).
+In addition, the directional pad element may report digital or analog values. If the directional pad’s [`isAnalog`](gccontrollerelement/isanalog.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), it reports absolute directional pad values (the [`reportsAbsoluteDpadValues`](gcmicrogamepad/reportsabsolutedpadvalues.md) property is [`true`](https://developer.apple.com/documentation/Swift/true)).
 
 ## Topics
 

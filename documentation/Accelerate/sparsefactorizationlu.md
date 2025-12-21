@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-Types of factorization than can be performed.
+Default LU factorization, currently LU with TPP.
 
 **Availability**:
 - iOS 18.5+
@@ -20,16 +20,14 @@ Types of factorization than can be performed.
 var SparseFactorizationLU: SparseFactorization_t { get }
 ```
 
-#### Discussion
-
 ## See Also
 
 - [var SparseFactorizationLUSPP: SparseFactorization_t](sparsefactorizationluspp.md)
-  Types of factorization than can be performed.
+  LU factorization with partial pivoting restricted to within supernodes only.
 - [var SparseFactorizationLUTPP: SparseFactorization_t](sparsefactorizationlutpp.md)
-  Types of factorization than can be performed.
+  LU factorization with threshold partial pivoting.
 - [var SparseFactorizationLUUnpivoted: SparseFactorization_t](sparsefactorizationluunpivoted.md)
-  Types of factorization than can be performed.
+  LU factorization with no numerical pivoting.
 
 
 ---

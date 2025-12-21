@@ -19,7 +19,7 @@ protocol LiveActivityIntent : SystemIntent
 
 #### Overview
 
-To gain permission for starting Live Activities, conform to this protocol. Create and start a Live Activity manually in your [`perform()`](appintent/perform().md) method. For more information, see the [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) framework.
+To gain permission for starting Live Activities, conform to this protocol. In general, your app needs to be in the foreground to start a Live Activity. However, you can use a `LiveActivityIntent` and start the Live Activity in its [`perform()`](appintent/perform().md) method. When the system performs the intent, the system launches your app process without opening the app, performs the intent, and starts the Live Activity. For example, people might place a control in Control Center that performs a `LiveActivityIntent` and starts the activity without opening your app. For more information about app intents, refer to [`App Intents`](AppIntents.md) and [`Making actions and content discoverable and widely available`](Making-actions-and-content-discoverable-and-widely-available.md).
 
 ## Relationships
 

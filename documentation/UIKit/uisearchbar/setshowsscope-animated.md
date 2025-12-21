@@ -21,7 +21,7 @@ func setShowsScope(_ show: Bool, animated animate: Bool)
 
 #### Discussion
 
-If the search bar is owned by a [`UISearchController`](uisearchcontroller.md), then calling this method implicitly sets the search controller’s [`automaticallyShowsScopeBar`](uisearchcontroller/automaticallyshowsscopebar.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+If the search bar is owned by a [`UISearchController`](uisearchcontroller.md), then calling this method implicitly sets the search controller’s [`automaticallyShowsScopeBar`](uisearchcontroller/automaticallyshowsscopebar.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

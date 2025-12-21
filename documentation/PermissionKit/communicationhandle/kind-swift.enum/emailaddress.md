@@ -6,11 +6,11 @@
 A person’s email address.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ case emailAddress
 - [CommunicationHandle.Kind.phoneNumber](communicationhandle/kind-swift.enum/phonenumber.md)
   A person’s phone number.
 - [CommunicationHandle.Kind.custom](communicationhandle/kind-swift.enum/custom.md)
-  A unique identifier, such as a custom communication handle or user ID, that distinguishes one person from another.
+  A unique identifier that distinguishes one person from another.
 
 
 ---

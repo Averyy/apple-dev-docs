@@ -11,12 +11,12 @@ The country or region associated with the place.
 ## Declaration
 
 ```swift
-attribute string countryCode;
+countryCode?: string;
 ```
 
 #### Discussion
 
-The country or region associated with this place, denoted by the standard abbreviation used to refer to the country or region. For example, the [`countryCode`](place/countrycode.md) for the Golden Gate Park is “`US”`.
+The country or region associated with this place, denoted by the standard abbreviation used to refer to the country or region. For example, the [`countryCode`](place/countrycode.md) for Golden Gate Park in San Francisco, CA is `"US"`.
 
 ## See Also
 

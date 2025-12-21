@@ -31,34 +31,10 @@ enum StringSearchScope
   The app supports searching for structured movie content.
 - [StringSearchScope.tv](stringsearchscope/tv.md)
   The app supports searching for structured TV content including shows, seasons, or episodes.
-### Providing descriptions
-- [static var caseDisplayRepresentations: [StringSearchScope : DisplayRepresentation]](stringsearchscope/casedisplayrepresentations.md)
-  A dictionary that maps each value to the visual elements that represent it.
-- [static var typeDisplayRepresentation: TypeDisplayRepresentation](stringsearchscope/typedisplayrepresentation.md)
-  A short, localized, human-readable name for the type.
-### Creating a search scope
-- [init?(rawValue: String)](stringsearchscope/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](stringsearchscope/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 ### Type Aliases
-- [StringSearchScope.AllCases](stringsearchscope/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [StringSearchScope.RawValue](stringsearchscope/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 - [StringSearchScope.Specification](stringsearchscope/specification.md)
 - [StringSearchScope.UnwrappedType](stringsearchscope/unwrappedtype.md)
 - [StringSearchScope.ValueType](stringsearchscope/valuetype.md)
-### Type Properties
-- [static var allCases: [StringSearchScope]](stringsearchscope/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [AppEnum Implementations](stringsearchscope/appenum-implementations.md)
-- [CaseDisplayRepresentable Implementations](stringsearchscope/casedisplayrepresentable-implementations.md)
-- [Equatable Implementations](stringsearchscope/equatable-implementations.md)
-- [PersistentlyIdentifiable Implementations](stringsearchscope/persistentlyidentifiable-implementations.md)
-- [RawRepresentable Implementations](stringsearchscope/rawrepresentable-implementations.md)
 
 ## Relationships
 

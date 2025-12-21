@@ -32,7 +32,7 @@ An alternate way to compose emails is to create and open a URL that uses the `ma
 
 ##### Checking the Availability of the Composition Interface
 
-Before presenting the mail compose view controller, always call the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method returns [`false`](https://developer.apple.com/documentation/swift/false).
+Before presenting the mail compose view controller, always call the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ##### Configuring and Displaying the Composition Interface
 

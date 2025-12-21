@@ -21,11 +21,11 @@ struct MTLDispatchThreadgroupsIndirectArguments
 
 ## Mentions
 
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
 
 ## Topics
 
-### Specifying the Size of the Threadgroup
+### Specifying the size of the threadgroup
 - [init()](mtldispatchthreadgroupsindirectarguments/init.md)
   Returns a new data layout for dispatching threadgroups over indirect buffer calls.
 - [init(threadgroupsPerGrid: (UInt32, UInt32, UInt32))](mtldispatchthreadgroupsindirectarguments/init(threadgroupspergrid:).md)

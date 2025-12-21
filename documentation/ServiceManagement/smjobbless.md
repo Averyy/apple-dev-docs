@@ -16,11 +16,11 @@ func SMJobBless(_ domain: CFString!, _ executableLabel: CFString, _ auth: Author
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the job was successfully submitted; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the job was successfully submitted; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-`SMJobBless` submits the executable for the given label as a `launchd` job. This function removes the need for a `setuid(_:)` helper invoked through [`AuthorizationExecuteWithPrivileges`](https://developer.apple.com/documentation/security/1540038-authorizationexecutewithprivileg) in order to install a `launchd` property list. If the job is already installed, this methods returns [`true`](https://developer.apple.com/documentation/swift/true).
+`SMJobBless` submits the executable for the given label as a `launchd` job. This function removes the need for a `setuid(_:)` helper invoked through [`AuthorizationExecuteWithPrivileges`](https://developer.apple.com/documentation/Security/AuthorizationExecuteWithPrivileges) in order to install a `launchd` property list. If the job is already installed, this methods returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 In order to use this function, the app must meet the following requirements:
 

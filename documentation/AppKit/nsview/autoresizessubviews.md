@@ -17,9 +17,9 @@ var autoresizesSubviews: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the view’s frame changes, the view automatically calls the [`resizeSubviews(withOldSize:)`](nsview/resizesubviews(witholdsize:).md) method to facilitate the resizing of its subviews. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the view does not autoresize its subviews.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the view’s frame changes, the view automatically calls the [`resizeSubviews(withOldSize:)`](nsview/resizesubviews(witholdsize:).md) method to facilitate the resizing of its subviews. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the view does not autoresize its subviews.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -6,8 +6,8 @@
 An asynchronous sequence that publishes a new value when authorization for the alarms and timers system changes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,11 +24,6 @@ struct AlarmAuthorizationStateUpdates
   Returns an asynchronous iterator over the elements of this sequence.
 - [AlarmManager.AlarmAuthorizationStateUpdates.Element](alarmmanager/alarmauthorizationstateupdates/element.md)
   A type representing the sequence’s elements.
-### Type Aliases
-- [AlarmManager.AlarmAuthorizationStateUpdates.AsyncIterator](alarmmanager/alarmauthorizationstateupdates/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](alarmmanager/alarmauthorizationstateupdates/asyncsequence-implementations.md)
 
 ## Relationships
 

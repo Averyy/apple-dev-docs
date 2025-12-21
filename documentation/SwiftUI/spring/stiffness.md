@@ -22,7 +22,7 @@ var stiffness: Double { get }
 
 #### Discussion
 
-Increasing the stiffness reduces the number of oscillations and will reduce the settling duration. Decreasing the stiffness increases the the number of oscillations and will increase the settling duration.
+Increasing the stiffness reduces the number of oscillations and will reduce the settling duration. Decreasing the stiffness increases the number of oscillations and will increase the settling duration.
 
 ## See Also
 

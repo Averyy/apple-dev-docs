@@ -17,7 +17,7 @@ func canStoreColor() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the window’s depth limit allows it to store color values; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) when the window’s depth limit allows it to store color values; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

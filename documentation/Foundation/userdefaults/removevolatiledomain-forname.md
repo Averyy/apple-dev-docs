@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Removes the specified volatile domain from the user’s defaults.
+Removes the keys and values from the specified volatile domain.
 
 **Availability**:
 - iOS 2.0+
@@ -20,18 +20,26 @@ Removes the specified volatile domain from the user’s defaults.
 func removeVolatileDomain(forName domainName: String)
 ```
 
+#### Discussion
+
+This method removes all of the keys and values from the specified domain. After clearing the domain’s contents, this method generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
+
 ## Parameters
 
-- `domainName`: The volatile domain you want to remove.
+- `domainName`: The name of the domain to clear.
 
 ## See Also
 
-- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
-  The current volatile domain names.
+- [func persistentDomain(forName: String) -> [String : Any]?](userdefaults/persistentdomain(forname:).md)
+  Retrieves the settings from the specified persistent domain.
+- [func setPersistentDomain([String : Any], forName: String)](userdefaults/setpersistentdomain(_:forname:).md)
+  Replaces the keys and values in the specified domain with the new keys and values you supply.
 - [func volatileDomain(forName: String) -> [String : Any]](userdefaults/volatiledomain(forname:).md)
-  Returns the dictionary for the specified volatile domain.
+  Retrieves the settings from the specified volatile domain.
 - [func setVolatileDomain([String : Any], forName: String)](userdefaults/setvolatiledomain(_:forname:).md)
-  Sets the dictionary for the specified volatile domain.
+  Replaces the keys and values in the specified domain with the new keys and values you supply.
+- [func removePersistentDomain(forName: String)](userdefaults/removepersistentdomain(forname:).md)
+  Removes the keys and values from the specified persistent domain.
 
 
 ---

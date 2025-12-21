@@ -42,8 +42,6 @@ static let validationMeanAveragePrecision: MetricsKey
   A key associated with a validation loss metric.
 - [static let validationMaximumError: MetricsKey](metricskey/validationmaximumerror.md)
   A key associated with a validation maximum error metric.
-- [var rawValue: String](metricskey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

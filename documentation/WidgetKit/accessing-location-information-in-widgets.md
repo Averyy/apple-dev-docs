@@ -43,6 +43,11 @@ If your app provides multiple widgets and only some of the widgets use location,
 
 For more information, see the Declare Multiple Widgets in Your App Extension section in [`Creating a widget extension`](creating-a-widget-extension.md).
 
+## See Also
+
+- [Making network requests in a widget extension](making-network-requests-in-a-widget-extension.md)
+  Update your widget with new information you fetch with a network request.
+
 
 ---
 

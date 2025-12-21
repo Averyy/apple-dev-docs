@@ -18,11 +18,11 @@ var automaticallyEnablesStillImageStabilizationWhenAvailable: Bool { get set }
 
 #### Discussion
 
-If [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`true`](https://developer.apple.com/documentation/swift/true), image stabilization may be applied to reduce blur commonly found in low light photos. When stabilization is enabled, still image captures incur additional latency.
+If [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`true`](https://developer.apple.com/documentation/Swift/true), image stabilization may be applied to reduce blur commonly found in low light photos. When stabilization is enabled, still image captures incur additional latency.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) when supported by the input device; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true) when supported by the input device; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Setting this property throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if [`isStillImageStabilizationSupported`](avcapturestillimageoutput/isstillimagestabilizationsupported.md) returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

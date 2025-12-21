@@ -38,8 +38,6 @@ struct EstimatorToTemporalAdaptor<Base> where Base : Estimator
   The output type.
 - [EstimatorToTemporalAdaptor.Transformer](estimatortotemporaladaptor/transformer.md)
   The transformer type created by this estimator.
-### Default Implementations
-- [TemporalEstimator Implementations](estimatortotemporaladaptor/temporalestimator-implementations.md)
 
 ## Relationships
 

@@ -38,7 +38,7 @@ This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](h
 
 ## See Also
 
-- [func CFStreamCreateBoundPair(_ alloc: CFAllocator!, _ readStream: UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, _ writeStream: UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, _ transferBufferSize: CFIndex)](../CoreFoundation/CFStreamCreateBoundPair(_:_:_:_:).md)
+- [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](../CoreFoundation/CFStreamCreateBoundPair(_:_:_:_:).md)
   Creates a bound pair of read and write streams.
 
 

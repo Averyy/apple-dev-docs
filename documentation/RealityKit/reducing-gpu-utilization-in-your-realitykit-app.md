@@ -17,7 +17,6 @@ RealityKit helps you get the most out of textures. For example, the framework au
 You can take additional steps to minimize memory consumption and reduce GPU utilization:
 
 - Use the smallest texture that still produces visually appealing results. Textures rendered on an iPhone or an iPad don’t need more than about 2048 pixels on a side. Also, it’s typically most efficient to use sizes that are powers of 2.
-- Convert your usdz files to Reality files, because these automatically compress textures. A compressed texture enables faster GPU processing. You create a Reality file using Reality Composer. See [`Creating 3D Content with Reality Composer`](creating-3d-content-with-reality-composer.md).
 - Combine multiple textures into a single texture atlas, where possible. Having fewer individual texture files helps to reduce memory consumption.
 - Use multiple textures of varying sizes to cover a mesh that doesn’t require maximum resolution everywhere.
 

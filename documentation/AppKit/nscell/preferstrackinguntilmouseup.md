@@ -17,11 +17,11 @@ class var prefersTrackingUntilMouseUp: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if tracking stops when the cursor leaves the cell, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if tracking stops when the cursor leaves the cell, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false). Subclasses may override this method to return a different value.
+The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses may override this method to return a different value.
 
 ## See Also
 

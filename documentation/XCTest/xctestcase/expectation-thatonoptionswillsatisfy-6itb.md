@@ -9,7 +9,6 @@ Creates an expectation using key-value observing the test fulfills when the valu
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- Unknown ?+ - Deprecated
 - tvOS 13.0+
 
 ## Declaration

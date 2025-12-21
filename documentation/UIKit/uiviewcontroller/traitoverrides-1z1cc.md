@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+A mutable container of traits you use to set trait changes for this view controller and its views.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -20,6 +22,9 @@
 ## See Also
 
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
+- [func updateTraitsIfNeeded()](uiviewcontroller/updatetraitsifneeded.md)
+  Updates traits immediately for this view controller and its view, including any view controllers and views in this subtree.
 
 
 ---

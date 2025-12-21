@@ -18,7 +18,7 @@ var isForcedReadOnly: Bool { get }
 
 The `forcedReadOnly` parameter affects how the Virtualization framework exposes the network block device (NBD) client to the guest operating system by the storage controller.
 
-As part of the NBD protocol, during the handshake phase, the server advertises whether or not the disk the server exposes is read-only. Setting `forcedReadOnly` to [`true`](https://developer.apple.com/documentation/swift/true) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
+As part of the NBD protocol, during the handshake phase, the server advertises whether or not the disk the server exposes is read-only. Setting `forcedReadOnly` to [`true`](https://developer.apple.com/documentation/Swift/true) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
 
 ## See Also
 

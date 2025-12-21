@@ -5,8 +5,6 @@
 ## Topics
 
 ### Initializers
-- [init()](mldatavalue/dictionarytype/init.md)
-  Creates a new default instance of the conforming type when a data value is missing or invalid.
 - [init?(from: MLDataValue)](mldatavalue/dictionarytype/init(from:).md)
   Creates a data-value dictionary from another dictionary.
 ### Instance Properties

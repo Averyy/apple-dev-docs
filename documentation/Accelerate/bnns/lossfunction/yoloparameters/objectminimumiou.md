@@ -13,7 +13,6 @@ The value that specifies intersection over union (IOU) that’s the minimum the 
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

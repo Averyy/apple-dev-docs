@@ -26,17 +26,6 @@ enum State
   The dock accessory contains a device.
 - [var debugDescription: String](dockaccessory/state/debugdescription.md)
   The text description of the dock accessory state.
-### Operators
-- [static func == (DockAccessory.State, DockAccessory.State) -> Bool](dockaccessory/state/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/state/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/state/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/state/equatable-implementations.md)
 
 ## Relationships
 

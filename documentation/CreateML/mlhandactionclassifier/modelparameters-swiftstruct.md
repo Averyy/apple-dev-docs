@@ -69,6 +69,8 @@ struct ModelParameters
 
 - [MLHandActionClassifier.DataSource](mlhandactionclassifier/datasource.md)
   A hand action classifier dataset that contains annotated videos or hand joint location data.
+- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+  Options a hand action classification training session can use to generate additional training data from the videos you provide.
 
 
 ---

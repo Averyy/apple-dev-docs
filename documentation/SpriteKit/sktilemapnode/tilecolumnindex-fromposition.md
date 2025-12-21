@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func tileColumnIndex(fromPosition position: CGPoint) -> Int
 ```
 

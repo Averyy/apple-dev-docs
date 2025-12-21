@@ -22,7 +22,7 @@ func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan c
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it’s possible for any sample earlier in decode order than the sample at the position of the receiver can have a presentation timestamp later than that of the specified sample cursor; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if it’s possible for any sample earlier in decode order than the sample at the position of the receiver can have a presentation timestamp later than that of the specified sample cursor; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

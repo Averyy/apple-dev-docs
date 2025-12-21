@@ -6,9 +6,9 @@ Launch your app in a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, o
 
 #### Overview
 
-To test your app, build and run it on a simulated or real device. Use simulated devices to debug your app on a variety of hardware to which you don’t have immediate access. The tradeoff is that simulated devices run within the Simulator app on your Mac and don’t replicate the performance or features of an actual device. To verify your app runs exactly as intended, run it on one or more real devices. You can connect a real device to your Mac using a cable, or connect it over Wi-Fi after you pair it with Xcode.
+To test your app, build and run it on a simulated or real device. Use simulated devices to debug your app on a variety of hardware to which you don’t have immediate access. The tradeoff is that simulated devices run within the Simulator app on your Mac and don’t replicate the performance or features of an actual device. To verify that your app runs exactly as intended, run it on one or more real devices. You can connect a real device to your Mac using a cable, or connect it over Wi-Fi after you pair it with Xcode.
 
-SwiftUI previews let you see your app’s interface without building and running your app. For more information on these dynamic previews, see [`Previews in Xcode`](https://developer.apple.com/documentation/SwiftUI/Previews-in-Xcode).
+Xcode previews let you see your app’s interface without building and running your app. For more information, see [`Previewing your app’s interface in Xcode`](previewing-your-apps-interface-in-xcode.md).
 
 ##### Select a Build Scheme and Run Destination
 
@@ -22,17 +22,17 @@ To learn more about schemes, see [`Customizing the build schemes for a project`]
 
 ##### Configure the List of Simulated Devices
 
-Manage real and simulated devices in the Devices and Simulators window in Xcode. To view this window, choose Window > Devices and Simulators. View and configure simulated devices from the Simulators tab.
+Manage real and simulated devices in the Devices and Simulators window in Xcode. To view this window, choose Window > Devices and Simulators. To view the available simulated devices, click the Simulators tab in the sidebar.
 
-![Screenshot of the Devices and Simulators window. At the top of the left sidebar is a segmented control with Simulators selected. The sidebar includes a list of simulators with iPhone 14 Pro Max selected and a (+) button at the bottom for configuring additional simulators.](https://docs-assets.developer.apple.com/published/7ba20e3d92a7a0ab228d68e218d96098/running-your-app-in-the-simulator-or-on-a-device-2%402x.png)
+![A screenshot of the Devices and Simulators window. At the top of the left sidebar is a segmented control with Simulators selected. The sidebar includes a list of simulators with iPhone 17 Pro selected and an Add button (+) at the bottom for configuring additional simulators.](https://docs-assets.developer.apple.com/published/400305557fbd707c9944bd095e3173c0/running-your-app-in-the-simulator-or-on-a-device-2%402x.png)
 
-To add a new simulated device, click the plus (+) button at the bottom of the list of simulators and specify the configuration you want. You can add new simulators to specify a different device type or operating system version than the default set. To remove a simulator from the list, select it and press Delete.
+To add a new simulated device, click the Add button (+) at the bottom of the list of simulators and specify the configuration you want. You can add new simulators to specify a different device type or operating system version than the default set. To remove a simulator from the list, select it and press Delete.
 
-> **Note**: Xcode requires the Simulator runtime for each platform and system version for which you build and run Simulator. If Xcode doesn’t display device types for a platform, you might need to install that platform’s Simulator runtime. For more information on this installation, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
+> **Note**: Xcode requires the Simulator runtime for each platform and system version for which you build and run Simulator. If Xcode doesn’t display device types for a platform, you might need to install that platform’s Simulator runtime. For more information, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
 
 ##### Connect Real Devices to Your Mac
 
-To view and manage connections to your real devices, choose the Devices tab in the Devices and Simulators window in Xcode. The Devices tab shows the currently connected and disconnected devices and can help you diagnose problems that might occur. For example, Xcode might show a device as unavailable if it’s not running an operating system version your app supports. It also shows new devices available for pairing with your Xcode installation. Pair a device with Xcode to include them in the list of run destinations for your projects.
+To manage connections to your real devices, choose the Devices tab in the Devices and Simulators window in Xcode. The Devices tab shows the currently connected and disconnected devices and can help you diagnose problems that might occur. For example, Xcode might show a device as unavailable if it’s not running an operating system version your app supports. It also shows new devices available for pairing with your Xcode installation. Pair a device with Xcode to include them in the list of run destinations for your projects.
 
 To pair a device with a physical connection, connect the device to your Mac using an appropriate cable. Unlock the device and follow any instructions that appear in Xcode or on the device.
 
@@ -43,7 +43,7 @@ To pair Apple Vision Pro or Apple TV without a physical connection:
 3. Select the device from the list in the Devices and Simulators window in Xcode and click the pairing button which triggers a code to appear on the target device.
 4. Enter the code on the Mac to complete the pairing process.
 
-After pairing is complete, the device shows up under connected devices in Devices and Simulators window in Xcode. You don’t need to keep a paired device physically connected to your Mac to install and run apps. If your device is connected to Wi-Fi on the same network as your Mac, Xcode can use that connection to install and run your app.
+After pairing is complete, the device shows up under connected devices in the Devices and Simulators window in Xcode. You don’t need to keep a paired device physically connected to your Mac to install and run apps. If your device is connected to Wi-Fi on the same network as your Mac, Xcode can use that connection to install and run your app.
 
 To pair an Apple Watch to a Mac, connect its companion iPhone to the Mac with a cable, and ensure that the iPhone is paired for development. After this step, follow any instructions on the Apple Watch to trust the Mac. When paired through an iPhone running iOS 17 or later, Xcode connects to the Apple Watch over Wi-Fi. Series 5 and older models of Apple Watch additionally require the Apple Watch and Mac to be associated with the same Bonjour-compatible Wi-Fi network. When paired through an iPhone running older versions of iOS, Xcode requires the iPhone to remain connected to the Mac in order to develop on any model of Apple Watch.
 
@@ -59,11 +59,11 @@ Before installing your app, perform a few additional steps:
 
 ##### Run the App
 
-Click the Run button in the toolbar or choose Product > Run to build and run the app on the selected simulated or real device. View the status of the build in the activity area of the toolbar.
+To build and run the app on the selected simulated or real device, click the Run button in the toolbar or choose Product > Run. View the status of the build in the activity area of the toolbar.
 
-If the build is successful, Xcode runs the app and opens a debugging session in the debug area. Use the controls in the debug area to step through your code, inspect variables, and interact with the debugger.
+If the build is successful, Xcode runs the app and opens a debugging session in the debug area. Use the controls in the debug area to step through your code, inspect variables, and interact with the debugger. To run the app without the debugger, disable the Debug executable option in the Info tab of the scheme editor.
 
-If the build is unsuccessful, click the indicators in the activity area to read the error or warning messages in the Issue navigator. Alternatively, choose View > Navigators > Show Issue Navigator to view the messages.
+If the build is unsuccessful, click the indicators in the activity area to read the error or warning messages in the Issue navigator. Alternatively, choose View > Navigators > Issues to view the messages.
 
 When you’re done testing the app, click the Stop button in the toolbar.
 

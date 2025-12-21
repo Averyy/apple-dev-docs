@@ -20,10 +20,6 @@ The forecasted precipitation intensity.
 var precipitationIntensity: Measurement<UnitSpeed>
 ```
 
-#### Discussion
-
-The value’s unit is kilometers per hour.
-
 ## See Also
 
 - [var precipitation: Precipitation](minuteweather/precipitation.md)

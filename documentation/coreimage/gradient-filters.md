@@ -4,6 +4,31 @@
 
 Generate linear and radial gradients.
 
+## Topics
+
+### Filters
+- [class func gaussianGradient() -> any CIFilter & CIGaussianGradient](cifilter-swift.class/gaussiangradient.md)
+  Generates a gradient that varies from one color to another using a Gaussian distribution.
+- [class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGradient](cifilter-swift.class/huesaturationvaluegradient.md)
+  Generates a gradient representing a specified color space.
+- [class func linearGradient() -> any CIFilter & CILinearGradient](cifilter-swift.class/lineargradient.md)
+  Generates a color gradient that varies along a linear axis between two defined endpoints.
+- [class func radialGradient() -> any CIFilter & CIRadialGradient](cifilter-swift.class/radialgradient.md)
+  Generates a gradient that varies radially between two circles having the same center.
+- [class func smoothLinearGradient() -> any CIFilter & CISmoothLinearGradient](cifilter-swift.class/smoothlineargradient.md)
+  Generates a gradient that blends colors along a linear axis between two defined endpoints.
+### Protocols
+- [protocol CIGaussianGradient](cigaussiangradient.md)
+  The properties you use to configure a Gaussian gradient filter.
+- [protocol CIHueSaturationValueGradient](cihuesaturationvaluegradient.md)
+  The properties you use to configure a hue-saturation-value gradient filter.
+- [protocol CILinearGradient](cilineargradient.md)
+  The properties you use to configure a linear gradient filter.
+- [protocol CIRadialGradient](ciradialgradient.md)
+  The properties you use to configure a radial gradient filter.
+- [protocol CISmoothLinearGradient](cismoothlineargradient.md)
+  The properties you use to configure a smooth linear gradient filter.
+
 ## See Also
 
 - [Blur Filters](blur-filters.md)

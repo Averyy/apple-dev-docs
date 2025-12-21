@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to clear the restrictions password and the restrictions on a device.
+The command to clear the Screen Time password and the restrictions on a device.
 
 **Availability**:
 - iOS 8.0+

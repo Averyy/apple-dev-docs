@@ -55,7 +55,7 @@ You can get a better understanding of how well your detector performs by drawing
 
 To draw bounding boxes, see [`Recognizing Objects in Live Capture`](https://developer.apple.com/documentation/Vision/recognizing-objects-in-live-capture).
 
-##### Determine When a Roll Has Ended
+##### Determine Wwhen a Roll Has Ended
 
 When playing a dice game, users want to know the result of a roll. The app determines that the roll has ended by waiting for the dice’s positions and values to stabilize.
 

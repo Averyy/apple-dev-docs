@@ -17,6 +17,8 @@ void IORecursiveLockFree(struct IORecursiveLock * lock);
 
 #### Discussion
 
+Frees a recursive lock.
+
 Frees a lock allocated with IORecursiveLockAlloc. Lock should be unlocked with no waiters.
 
 ## Parameters

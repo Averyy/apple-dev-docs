@@ -1,4 +1,4 @@
-# CMFormatDescription APIs
+# CMFormatDescription
 
 **Framework**: Core Media
 
@@ -250,67 +250,77 @@ A media format descriptor that describes the samples in a sample buffer.
 - [Audio Codec Types](audio-codec-types.md)
   Constants that represent audio codec types.
 ### Constants
-- [Format Description Error Codes](format-description-errors.md)
-  Errors the system returns from format description calls.
-- [Format Description Bridge Error Codes](format-description-bridge-errors.md)
-  Bridge errors the system returns from format description calls.
-- [Format Description Constants](format-description-constants.md)
-  Constants that identify format descriptions.
-- [Text Format Description Constants](text-format-description-constants.md)
-  Constants that identify text format descriptions.
-- [Metadata Format Description Constants](metadata-format-description-constants.md)
-  Constants that identify metadata format descriptions.
-- [Time Code Format Description Constants](time-code-format-description-constants.md)
-  Constants that identify time code format descriptions.
-- [Pixel Aspect Ratio Extension Constants](pixel-aspect-ratio-extension-constants.md)
-  Constants that identify pixel aspect ratio extensions.
+- [Audio Format Description Mask Codes](audio-format-desc-codes.md)
+  Mask codes that identify audio formats.
 - [Chroma Location Extension Constants](chroma-location-extension-constants.md)
   Constants that identify chroma location extensions.
 - [Clean Aperture Extension Constants](clean-aperture-extension-constants.md)
   Constants that identify clean aperture extensions.
+- [Closed Caption Format Type Constants](closed-caption-formats.md)
+  Types that identify closed caption formats.
 - [Color Primary Extension Constants](color-primary-extension-constants.md)
   Constants that identify color primary extensions.
 - [Field Detail Extension Constants](field-detail-extension-constants.md)
   Constants that identify field detail extensions.
-- [Transfer Function Extension Constants](transfer-function-extension-constants.md)
-  Constants that identify transfer function extensions.
-- [MPEG-2-conformant Formats](mpeg-2-conformant-formats.md)
-  Constants that identify MPEG-2 formats.
+- [Format Description Bridge Error Codes](format-description-bridge-errors.md)
+  Bridge errors the system returns from format description calls.
+- [Format Description Constants](format-description-constants.md)
+  Constants that identify format descriptions.
+- [Format Description Error Codes](format-description-errors.md)
+  Errors the system returns from format description calls.
 - [HEVC Temporal Level Info Constants](hevc-temporal-level-info-constants.md)
   Constants that identify HEVC temporal level information.
-- [YCbCrMatrix Extension Constants](ycbcrmatrix-extension-constants.md)
-  Constants that identify YCbCrMatrix extensions.
-- [Audio Format Description Mask Codes](audio-format-desc-codes.md)
-  Mask codes that identify audio formats.
-- [Closed Caption Format Type Constants](closed-caption-formats.md)
-  Types that identify closed caption formats.
-- [Time Code Flags](time-code-flags.md)
-  Flags that identify time codes.
+- [Metadata Format Description Constants](metadata-format-description-constants.md)
+  Constants that identify metadata format descriptions.
+- [MPEG-2-conformant Formats](mpeg-2-conformant-formats.md)
+  Constants that identify MPEG-2 formats.
+- [Pixel Aspect Ratio Extension Constants](pixel-aspect-ratio-extension-constants.md)
+  Constants that identify pixel aspect ratio extensions.
 - [Text Display Flags](text-display-flags.md)
   Flags that identify text display methods.
 - [Text Format Constants](text-format-constants.md)
   Types that identify text formats.
+- [Text Format Description Constants](text-format-description-constants.md)
+  Constants that identify text format descriptions.
 - [Text Justification Constants](text-justification-constants.md)
   Types that identify text justifications.
+- [Time Code Flags](time-code-flags.md)
+  Flags that identify time codes.
+- [Time Code Format Description Constants](time-code-format-description-constants.md)
+  Constants that identify time code format descriptions.
+- [Transfer Function Extension Constants](transfer-function-extension-constants.md)
+  Constants that identify transfer function extensions.
+- [Video Codec Constants](video-codec-constants.md)
+  Types that identify video codecs.
 - [Video Pixel Formats](video-pixel-formats.md)
   Constants that identify video pixel formats.
 - [Video Profile Constants](video-profile-constants.md)
   Constants that identify video profiles.
-- [Video Codec Constants](video-codec-constants.md)
-  Types that identify video codecs.
+- [YCbCrMatrix Extension Constants](ycbcrmatrix-extension-constants.md)
+  Constants that identify YCbCrMatrix extensions.
 
 ## See Also
 
-- [CMSampleBuffer APIs](cmsamplebuffer-api.md)
+- [CMSampleBuffer](cmsamplebuffer-api.md)
   An object that contains zero or more media samples of a uniform media type.
-- [CMBlockBuffer APIs](cmblockbuffer-api.md)
+- [CMBlockBuffer](cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
+- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+  Objective-C types and interfaces for working with Core Media tagged buffer groups.
+- [CMAttachment](cmattachment-api.md)
+  Add supporting metadata to sample buffers.
 - [struct CMTaggedBuffer](cmtaggedbuffer.md)
   An instance of a media buffer containing metadata tags.
-- [CMTaggedBufferGroup APIs](cmtaggedbuffergroup.md)
-  Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMAttachment APIs](cmattachment-api.md)
-  Add supporting metadata to sample buffers.
+- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+  A block buffer that provides read-write access to a range of bytes.
+- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+  A block buffer that provides read-only access to the a range of bytes.
+- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+  Buffer carrying readily available samples of media data.
+- [struct CMSampleDataReference](cmsampledatareference.md)
+  References sample data in at a URL.
+- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+  Contains a collection of tags associated with a read-only media buffer.
 
 
 ---

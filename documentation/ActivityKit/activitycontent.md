@@ -30,8 +30,6 @@ struct ActivityContent<State> where State : Decodable, State : Encodable, State 
   The date when the system considers the Live Activity to be out of date.
 - [let relevanceScore: Double](activitycontent/relevancescore.md)
   A score you assign that determines the order in which your Live Activities appear when you start several Live Activities for your app.
-### Default Implementations
-- [CustomStringConvertible Implementations](activitycontent/customstringconvertible-implementations.md)
 
 ## Relationships
 

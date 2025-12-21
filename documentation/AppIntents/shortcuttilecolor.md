@@ -53,17 +53,6 @@ enum ShortcutTileColor
   A teal color.
 - [ShortcutTileColor.yellow](shortcuttilecolor/yellow.md)
   A yellow color.
-### Operators
-- [static func == (ShortcutTileColor, ShortcutTileColor) -> Bool](shortcuttilecolor/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](shortcuttilecolor/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](shortcuttilecolor/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](shortcuttilecolor/equatable-implementations.md)
 
 ## Relationships
 

@@ -26,7 +26,7 @@ var showExistingMatches: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the view controller shows matches that are in progress or complete. If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the view controller only offers the ability to create new matches. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the view controller shows matches that are in progress or complete. If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the view controller only offers the ability to create new matches. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

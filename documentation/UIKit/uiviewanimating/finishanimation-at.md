@@ -22,7 +22,7 @@ func finishAnimation(at finalPosition: UIViewAnimatingPosition)
 
 #### Discussion
 
-After putting the animator object into the [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md) state, call this method to perform any final cleanup tasks. It is a programmer error to call this method at any time except after a call to the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method where you pass [`false`](https://developer.apple.com/documentation/swift/false) for the `withoutFinishing` parameter. Calling this method is not required, but is recommended in cases where you want to ensure that completion blocks or other final tasks are performed.
+After putting the animator object into the [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md) state, call this method to perform any final cleanup tasks. It is a programmer error to call this method at any time except after a call to the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method where you pass [`false`](https://developer.apple.com/documentation/Swift/false) for the `withoutFinishing` parameter. Calling this method is not required, but is recommended in cases where you want to ensure that completion blocks or other final tasks are performed.
 
 Implementations of this method are responsible for setting the state of the animator object to [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) and for performing any final cleanup tasks, such as executing completion blocks.
 

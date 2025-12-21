@@ -4,25 +4,21 @@
 
 Use Icon Composer to stylize your app icon for different platforms and appearances.
 
-**Availability**:
-- macOS 16.0+
-- Xcode 17.0+
-
 #### Overview
 
-You use Icon Composer to create a single file representation of your Liquid Glass app icon for all the icon and widget style appearances and sizes that you use in iOS, iPadOS, macOS, and watchOS. You can continue using your favorite design tool to create the artwork for your app icon, but save some design decisions for Icon Composer, where you can take full advantage of the dynamic properties of [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass). Then, use Icon Composer to organize and stylize the artwork for Liquid Glass and to customize your app icon variants for different platforms and appearances.
+Use Icon Composer to create a single multilayer file that you can add to your Xcode project to represent your Liquid Glass app icon everywhere your app icon appears across iOS, iPadOS, macOS, watchOS, and the App Store. Use your favorite design tool to create the artwork for your app icon, but save some design decisions for Icon Composer, where you can refine the dynamic properties of [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) and customize variants of your app icon for different platforms and appearances.
 
-![A screenshot of Icon Composer that shows a group selected in the sidebar, iOS, macOS platform and mono appearance selected in the canvas, and Liquid Glass settings in the Appearance inspector. The canvas shows the icon over a custom background image with 50% blur and translucency Liquid Glass settings.](https://docs-assets.developer.apple.com/published/582c19c224fd11437d934e60bd387e62/icon-composer-hero-overview%402x.png)
+![A screenshot of Icon Composer that shows a group selected in the sidebar, iOS, macOS platform and mono appearance selected in the canvas, and Liquid Glass settings in the Appearance inspector. The canvas shows the icon over a custom background image with 50% blur and translucency Liquid Glass settings.](https://docs-assets.developer.apple.com/published/4d66768899a2f11c38516ebb5146bdaa/icon-composer-hero-overview%402x.png)
 
-The system renders your app icon for the different platforms, appearances, and sizes from the single Icon Composer file located in your app’s bundle. For previous releases that don’t have the same icon and widget style appearances and Liquid Glass material, Xcode generates the app icon images at build time from the Icon Composer file.
+Before building your app, add the Icon Composer file to your Xcode project to include it in your app’s bundle. The system automatically renders your app icon for the different platforms, appearances, and sizes from your single Icon Composer file. If your app supports previous releases (in the Minimum Deployments settings in the target’s General pane) that don’t have the same icon and widget style appearances and Liquid Glass material, Xcode automatically generates app icon images at build time for those releases from the Icon Composer file.
 
-If you choose not to use Icon Composer, you can still use an `AppIcon` asset catalog in your project containing individual app icon images and let the system apply the Liquid Glass material.
+> ❗ **Important**: If you add an Icon Composer file to your Xcode project, it replaces any existing icon asset catalog that you previously used to represent your app icon. Xcode automatically generates a similar-looking version of the Liquid Glass icon for previous releases. If you want your existing icon to appear in previous releases, continue to use asset catalogs to represent your app icon.
 
 To learn more, see the following resources:
 
 - For guidance on designing your app icon, see [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons).
-- For converting older app icons to use the Liquid Glass material, see [`Adopting Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass).
-- For more information on Liquid Glass and Icon Composer, watch [`Say hello to the new look of app icons`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/9911/) and [`Create icons with Icon Composer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/10087/).
+- For converting older app icons to use the Liquid Glass material, see [`Adopting Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass#App-icons).
+- For more information on Liquid Glass and Icon Composer, watch [`Say hello to the new look of app icons`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/220/) and [`Create icons with Icon Composer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/361/).
 - For tvOS and visionOS targets that still use an `AppIcon` asset catalog, see [`Configuring your app icon using an asset catalog`](configuring-your-app-icon.md).
 
 ##### Prepare Your Artwork for Export
@@ -47,17 +43,17 @@ When you’re ready to export layers from your third-party tool, choose the SVG 
 
 ##### Create Your Icon Composer File
 
-To launch Icon Composer in the latest version of Xcode, choose Xcode > Open Developer Tool > Icon Composer. If you don’t install Xcode, download Icon Composer from [`Downloads > Applications`](https://developer.apple.comhttps://developer.apple.com/download/applications) instead.
+To launch Icon Composer in the latest version of Xcode, choose Xcode > Open Developer Tool > Icon Composer. If you don’t install Xcode, go to [`Icon Composer`](https://developer.apple.comhttps://developer.apple.com/icon-composer) to download it instead.
 
-Icon Composer shows a default app icon with a solid background color. Give the file a name that you want to use later in the Xcode project, such as `AppIcon`. Choose File > Save and in the dialog that appears, enter the filename and click Save.
+Icon Composer shows a default app icon with a solid background color. Give the file a name that you want to use later in the Xcode project, such as `AppIcon`. Choose File > Save and in the dialog that appears, enter the filename and click Save. Alternatively, click `Untitled` in the toolbar and change the name and location in the dialog that appears.
 
-![A screenshot of Icon Composer with callouts showing the groups and layers for the Landmarks sample app in the sidebar, the iOS, macOS platform and default appearance selected in the canvas, and the settings for a group in the Appearance inspector.](https://docs-assets.developer.apple.com/published/e17074b4a845debd62160b3074e74a91/icon-composer-app-anatomy%402x.png)
+![A screenshot of Icon Composer with callouts showing the groups and layers for the Landmarks sample app in the sidebar, the iOS, macOS platform and default appearance selected in the canvas, and the settings for a group in the Appearance inspector.](https://docs-assets.developer.apple.com/published/e4aea2562f33b63cb9b0d3bd84404fc8/icon-composer-app-anatomy%402x.png)
 
 You use the sidebar on the left to organize layers into groups, the canvas in the middle to preview variants, and the inspectors on the right to modify appearances. In the canvas area, you use the controls at the bottom to select combinations of platforms and appearances, and the controls at the top to apply a grid or simulate device conditions.
 
 You can continue using Icon Composer to fine-tune your app icon and add it to your Xcode project later. To add your app icon to an Xcode project and associate it with your app target, see [`Add your Icon Composer file to an Xcode project`](creating-your-app-icon-using-icon-composer#Add-your-Icon-Composer-file-to-an-Xcode-project.md).
 
-If your Icon Composer file is in your Xcode project, you can select it in the project navigator and see a preview in the canvas area. To open an Icon Composer file that’s in your Xcode project, click Open with Icon Composer under the preview, or Control-click the file in the project navigator and choose Open with External Editor.
+If your Icon Composer file is in your Xcode project, you can select it in the Project navigator and see a preview in the canvas area. To open an Icon Composer file that’s in your Xcode project, click Open with Icon Composer under the preview, or Control-click the file in the Project navigator and choose Open with External Editor.
 
 ##### Import Your Graphic Files
 
@@ -65,13 +61,9 @@ After you export your artwork from your design tool, import the graphic files, i
 
 Drag one or more graphic files from the Finder to the sidebar and each becomes a layer in a default group that Icon Composer creates. Alternatively, drag folders containing graphic files to the sidebar. Then the folders become groups and the files in the folders become layers in those groups. Icon Composer organizes the groups and layers alphabetically using the same names as the folders and files.
 
-![A screenshot that shows the group and layer hierarchy after you drop a folder on the sidebar. There are three groups with different numbers of layers. The groups and layers appear alphabetically from bottom to top in the sidebar. ](https://docs-assets.developer.apple.com/published/1d16649924924a6624cedf4e3fb75956/icon-composer-layer-import-groups%402x.png)
+Alternatively, click the Add button (+) under the sidebar and choose New Image from the pop-up menu. In the dialog that appears, select one or more files (use Command-click to select multiple files) and click Open.
 
-A preview of the app icon using the graphic files appears in the canvas area. If you use the same canvas size as Icon Composer when exporting your files, the graphics in your layers appear in the same relative location.
-
-Alternatively, click the Add button (+) under the sidebar and choose Image from the pop-up menu. In the dialog that appears, select one or more files (use Command-click to select multiple files) and click Open.
-
-![A screenshot of the Add button pop-up menu at the bottom of the sidebar with the Group menu item selected.](https://docs-assets.developer.apple.com/published/63422a9ae66fd67edd2b5f1026e1318e/icon-composer-add-new-layer%402x.png)
+![A screenshot of the Add button pop-up menu at the bottom of the sidebar with the New Image menu item selected.](https://docs-assets.developer.apple.com/published/fdd248093a92ca4908aaf0ab1509bb16/icon-composer-add-new-layer%402x.png)
 
 Later, if you want to change the graphic file associated with a layer, select the layer in the sidebar and choose Replace from the Image pop-up menu under Composition in the Appearance inspector. Then, from the dialog that appears, select the new graphic file.
 
@@ -79,21 +71,27 @@ Later, if you want to change the graphic file associated with a layer, select th
 
 After you import the graphic files, organize the layers that appear in the default group into a maximum of four groups to reduce complexity. The groups become the layers in the app icon image the platform renders to give the icon its depth. The system renders the layers in the z-plane from the bottom to the top as they appear in the sidebar. Groups also allow you to apply common settings to multiple layers.
 
-![A screenshot of the sidebar with callouts that show the groups and layers in the Landmarks sample app icon.](https://docs-assets.developer.apple.com/published/7c2c6f97d78fcd3fad8c5af6e7d6ac11/icon-composer-layer-groups%402x.png)
+![A screenshot of the sidebar with callouts that show the groups and layers in the Landmarks sample app icon.](https://docs-assets.developer.apple.com/published/6380db00b4ba44152d808487c20eaeca/icon-composer-layer-groups%402x.png)
 
 You can use the sidebar to make the following edits:
 
-- To create a group, click the Add button at the bottom of the sidebar and choose Group from the pop-up menu.
+- To create a group, click the Add button at the bottom of the sidebar and choose New Group from the pop-up menu.
 - To change the name of a group or layer, double-click it and enter a name.
 - To move layers into groups, drag them to the groups you want them to be in.
-- To change the order of a group or layer, drag them up or down.
+- To change the order of a group or layer, drag them up or down. Alternatively, select a layer or group and choose Arrange > Bring [Group | Layer] Forward or Arrange > Send [Group | Layer] Backward (or similar) menu item.
 - To add another layer, click the Add button and choose Image.
+
+For more edits, Control-click a layer or group and choose an action from the contextual menu.
+
+To collapse groups in the outline, click the disclosure triangle to the left of the group. To hide or show layers and groups in the canvas, click the eye icon to the right of the group or layer in the sidebar when you hold the pointer over it. Alternatively, hide or show layers and groups using the Visible toggle under Composition in the Appearance inspector.
+
+To delete groups, layers, or graphics in a layer, select them in the sidebar or canvas, and press Delete. To revert your changes, choose Edit > Undo Delete.
 
 ##### Customize the Icon Composer Interface
 
 Before you begin previewing variants and adding effects to your app icon, consider customizing the Icon Composer interface to show only the platforms that your app supports. Click the Document button in the upper-right corner and choose the platforms from the Document inspector.
 
-![A screenshot of the Document inspector that shows the platform controls where you can select the platforms you support to reduce the complexity of the interface.](https://docs-assets.developer.apple.com/published/a05545bad04c0dd9ede13b3cb28260d5/icon-composer-document-target-platforms%402x.png)
+![A screenshot of the Document inspector that shows the platform controls where you can select the platforms you support to reduce the complexity of the interface.](https://docs-assets.developer.apple.com/published/471bb47eb7fb0310fe330f9811f743e5/icon-composer-document-target-platforms%402x.png)
 
 For example, if your app runs in iOS only, choose iOS Only from the iOS, macOS pop-up menu and toggle watchOS to off. Icon Composer hides the macOS and watchOS controls so that you can focus on the iOS app icon design.
 
@@ -111,7 +109,7 @@ To preview clear and tinted variants, click Mono and then click Options. From th
 
 To preview your app icon in a different context, use the controls in the toolbar above the canvas area. These controls only change the simulated device where your app icon appears; they don’t edit your app icon.
 
-![A screenshot with callouts that shows the background, grid, lighting angle, and icon size controls.](https://docs-assets.developer.apple.com/published/33df354c986cc3df7ca713c13cebaa8f/icon-composer-canvas-preview-settings%402x.png)
+![A screenshot with callouts that shows the background, grid, lighting angle, and icon size controls.](https://docs-assets.developer.apple.com/published/b2fbc19d3476b14c82cb9da262a38c09/icon-composer-canvas-preview-settings%402x.png)
 
 You can use the toolbar controls to set the following:
 
@@ -121,11 +119,12 @@ You can use the toolbar controls to set the following:
 - To add grid lines, choose Light or Dark from the Grid pop-up menu.
 - To toggle the grid lines on or off, click the Grid button.
 - To view the app icon in different lighting directions, rotate the lighting angle dial.
-- To zoom in or out, choose a percentage from the Size pop-up menu.
+- To view a specific size of the app icon, choose the size from the “Select preview size” pop-up menu.
+- To zoom in or out, choose a percentage from the “Change zoom level” pop-up menu.
 
 You can use these controls to see the transparency in the clear and tinted modes using your own backgrounds. For example, to preview the clear dark variant over a sample image, select iOS or macOS as the platform and Mono as the appearance. From the Mono options dialog, toggle Tinted off. Then choose Add Background from the Background Image pop-up menu at the top of the canvas and select the screenshot in the dialog that appears.
 
-![A screenshot of the canvas that shows the mono appearance over a blue background image.](https://docs-assets.developer.apple.com/published/997ee30f0ae58a91bce696e525d1cbcb/icon-composer-background-preview-mode-clear-dark%402x.png)
+![A screenshot of the canvas that shows the mono appearance over a blue background image.](https://docs-assets.developer.apple.com/published/85acb4ca264331cb594ef7863a4d34e4/icon-composer-background-preview-mode-clear-dark%402x.png)
 
 ##### Apply Effects to the Background Groups and Layers
 
@@ -133,9 +132,23 @@ As you preview the variants of your app icon on different platforms and device s
 
 In general, settings under Color are useful for creating variants for dark and mono appearances. For groups and layers, you customize the dynamic material under Liquid Glass. Then use the controls under Composition for varying your design on different platforms.
 
-![A screenshot of the Appearance inspector with callouts that show the Color, Liquid Glass, and Composition areas of the settings.](https://docs-assets.developer.apple.com/published/a83f5a9b92bededf6d5c6679684b7f78/icon-composer-applying-effects-inspector%402x.png)
+![A screenshot of the Appearance inspector with callouts that show the Color, Liquid Glass, and Composition areas of the settings.](https://docs-assets.developer.apple.com/published/d5f6984e6f682fb1fa8385dae1e37ff3/icon-composer-applying-effects-inspector%402x.png)
 
-For example, under Color, apply a gradient to your app icon’s background following these steps:
+To quickly duplicate settings, you can Control-click an individual setting or a section, and choose Copy [Setting | Section] or Paste [Setting | Section] from the contextual menu. Alternatively, Control-click a layer or group in the sidebar and choose Copy Style or Paste Style from the contextual menu (Edit > Copy Style and Edit > Paste Style).
+
+For any text fields where you enter numbers, you can enter an equation and Xcode calculates the value for you. For example, enter `35*3` or to double an existing value, `*2`.
+
+To remove any changes you make in the Appearance inspector, choose Edit > Undo.
+
+##### Apply a Gradient Fill and Opacity
+
+Under Color in the Appearance inspector, you can change a layer’s fill from the default value (Automatic) that Icon Composer gets from the graphic file. Select the layer in the sidebar, and from the Fill pop-up menu in the Appearance inspector, choose None, Solid, or Gradient.
+
+![A screenshot of the Color settings for a layer that shows Fill set to Gradient with yellow as the “From” color and orange as the “To” color.](https://docs-assets.developer.apple.com/published/4e791cf1b42918c64c7c27b53a336cb4/icon-composer-color-app-icon-layer%402x.png)
+
+> 💡 **Tip**: To set an RGB value or hexadecimal (hex) color number for a color, use the RGB sliders in the Color Sliders inspector in the Color picker.
+
+For example, apply a gradient to your app icon’s background following these steps:
 
 1. In the sidebar, click the icon filename.
 2. In the canvas, select a platform and, optionally, an appearance.
@@ -144,17 +157,13 @@ For example, under Color, apply a gradient to your app icon’s background follo
 5. From the Fill pop-up menu, choose Gradient.
 6. From the two color wells that appear below, select the “From” and “To” colors.
 
-![A screenshot of the Color settings for the app icon that shows Fill set to Gradient with Auto as the “From” color and blue as the “To” color.](https://docs-assets.developer.apple.com/published/5f3e813e85b6c701b6b5fc2db0ade47e/icon-composer-color-app-icon-base%402x.png)
+![A screenshot of the Color settings for the app icon that shows Fill set to Gradient with Auto as the “From” color and blue as the “To” color.](https://docs-assets.developer.apple.com/published/5d623b8b5ece365b45f3375578ddd013/icon-composer-color-app-icon-base%402x.png)
 
-Similarly, you can change a layer’s fill from the default value (Automatic) that Icon Composer gets from the graphic file. Select the layer in the sidebar, and from the Fill pop-up menu in the Appearance inspector, choose None, Solid, or Gradient.
+To switch the colors, click the arrows to the left of the Gradient color wells when you hold the pointer over them. For layers, you can use the dots in the canvas that appear on the layer to change the “From” and “To” locations of the gradient.
 
-![A screenshot of the Color settings for a layer that shows Fill set to Gradient with yellow as the “From” color and orange as the “To” color.](https://docs-assets.developer.apple.com/published/7aaffc46cc7badc7739bb86ab9c4f461/icon-composer-color-app-icon-layer%402x.png)
+![A screenshot that shows a layer selected in the sidebar on the left, the gradient dots on a shape in the canvas in the middle, and a from and to color set under Gradient on the right.](https://docs-assets.developer.apple.com/published/5495337f65a37b1565eb6255688626ff/icon-composer-gradient-dots%402x.png)
 
-> 💡 **Tip**: To set an RGB value or hexadecimal (hex) color number for a color, use the RGB sliders in the Color Sliders inspector in the Color picker.
-
-You can also make a group or layer transparent to reveal details behind using the Opacity setting under Color. Hide or show layers and groups using the Visible toggle under Composition. Alternatively, click the eye icon next to the group or layer in the sidebar.
-
-To remove any changes you make in the Appearance inspector, choose Edit > Undo.
+You can also make a group or layer transparent to reveal details behind using the Opacity setting under Color.
 
 ##### Apply Liquid Glass Effects to Groups and Layers
 
@@ -170,17 +179,19 @@ To turn Liquid Glass off for an individual layer, select the layer in the sideba
 
 ##### Change the Position and Scale of Graphics
 
-You can reposition and scale graphics in your layers using Icon Composer.
+You can reposition and scale graphics in your layers using Icon Composer. Just drag the graphics you want to move within the canvas area.
 
-First, turn the grid on so you can see where to place your graphics. In the toolbar, click the Grid button or choose Light or Dark from the Grid pop-up menu. Icon Composer overlays grid lines on the preview of your app icon in the color that you choose. To remove the grid lines, toggle Grid off.
+To move multiple groups, layers, or individual graphics, Command-click them in the sidebar or canvas first, or select them by dragging a bounding box in the canvas. Icon Composer highlights the selection in both the sidebar and canvas. To unselect all graphics, press the Escape key.
 
-![A screenshot that shows Dark selected from the Grid pop-up menu at the top of the canvas.](https://docs-assets.developer.apple.com/published/95f9d388e0b39434f9d28d3fbd523845/icon-composer-grid-toggle%402x.png)
+Use the guidelines that appear while dragging to align the selection with other graphics. To make more precise edits, you can enter an x, y, and scale in the Layout section of the Appearance inspector under Composition. To make single point changes, use the Up Arrow and Down Arrow keys
 
-To reposition graphics in a layer, select a group or layer in the sidebar and drag the graphics within the canvas area. If you select a group, you drag all layers in that group.
+![A screenshot that shows the Layout section under Composition with the x, y, and scale settings. ](https://docs-assets.developer.apple.com/published/dbb0f178dec0543ae41a3f4ba818e482/icon-composer-composition-edit-selection%402x.png)
 
-To make more precise edits, select a group or layer, and in the Appearance inspector under Composition, enter an x, y, and scale in the Layout section.
+Optionally, turn the grid on so you can see where to place your graphics. In the toolbar, click the Grid button or choose Light or Dark from the Grid pop-up menu. Icon Composer overlays grid lines on the preview of your app icon in the color that you choose. To remove the grid lines, toggle Grid off.
 
-![A screenshot that shows the Layout section under Composition with the x, y, and scale settings. ](https://docs-assets.developer.apple.com/published/cbd2966a9ea8cf8f31b5bd41d37dac15/icon-composer-composition-edit-selection%402x.png)
+![A screenshot that shows Dark selected from the Grid pop-up menu at the top of the canvas.](https://docs-assets.developer.apple.com/published/a500841c2535d1a45f27d21cd857d83d/icon-composer-grid-toggle%402x.png)
+
+For other ways to reposition the selection, use the Arrange > Align and Arrange > Distribute menu items.
 
 ##### Customize Variants of Your App Icon
 
@@ -188,19 +199,19 @@ You can customize specific platform and appearance variants of your app icon usi
 
 To see settings that you customize, select the icon, a group, or a layer in the sidebar and choose All from the Color, Liquid Glass, or Composition pop-up menu in the Appearance inspector. The custom settings appear below the main setting. For example, if you change the Blend Mode setting for the dark and mono appearances in iOS, then a Dark and Mono setting appears below the Blend Mode setting. The main setting applies to the variants that you don’t customize.
 
-![A screenshot that shows custom settings for dark and mono appearances when you choose All from the Color pop-up menu.](https://docs-assets.developer.apple.com/published/6b5e4d25f6790524ba4e8e5822752e67/icon-composer-inspector-color-varied-by-mode%402x.png)
+![A screenshot that shows custom settings for dark and mono appearances when you choose All from the Color pop-up menu.](https://docs-assets.developer.apple.com/published/0ce8fcfce0850effb570c9ff9815e07f/icon-composer-inspector-color-varied-by-mode%402x.png)
 
 The Appearance inspector enables the controls for the platform or appearance that you select in the canvas. For example, to enable the Dark setting that appears below Blend Mode, select the dark appearance in the canvas.
 
 To add another custom setting, select the platform or appearance in the canvas that you want to vary and in the Appearance inspector, click the icon next to the setting. Choose Vary for [appearance | platform] from the Add button pop-up menu. For example, select iOS / macOS and Default in the canvas and choose Vary for iOS / macOS from the Blur pop-up menu under Liquid Glass.
 
-![A screenshot that shows the Vary for pop-up menu under the Blur setting when you choose All from the Liquid Glass pop-up menu.](https://docs-assets.developer.apple.com/published/ad239bc90d1bcaaf9c16dd619f4a5b2b/icon-composer-edit-all-exception%402x.png)
+![A screenshot that shows the Vary for pop-up menu under the Blur setting when you choose All from the Liquid Glass pop-up menu.](https://docs-assets.developer.apple.com/published/a0078f96de7a8678eb838dbfe62b6bfe/icon-composer-edit-all-exception%402x.png)
 
 To remove custom settings, click the X next to the platform or appearance. For example, to remove the Dark setting under the Blend Mode setting, click the X next to Dark.
 
 Alternatively, choose the appearance that you select in the canvas from the Color or Liquid Glass pop-up menu. Then the controls in that section only apply to that appearance. Similarly, choose the platform that you select in the canvas from the Composition pop-up menu and the controls in that section apply only to that platform. The controls behave in this way so that the appearance of your app icon remains consistent and only the geometry varies across platforms.
 
-![A screenshot that shows Dark selected from the Color pop-up menu when you select the dark appearance in the canvas.](https://docs-assets.developer.apple.com/published/0f3eb4e976a728bad22139607a08d500/icon-composer-color-edit-selection%402x.png)
+![A screenshot that shows Dark selected from the Color pop-up menu when you select the dark appearance in the canvas.](https://docs-assets.developer.apple.com/published/900cee3fbd372908feb9f2ead14b5a5a/icon-composer-color-edit-selection%402x.png)
 
 Then you can switch back to seeing all the custom settings you made for platforms and appearances in one place by choosing All from the Color, Liquid Glass, and Composition pop-up menus.
 
@@ -208,7 +219,7 @@ Then you can switch back to seeing all the custom settings you made for platform
 
 If you create your Icon Composer file outside of Xcode, you can add it to your Xcode project anytime to view your icon in Simulator and on real devices.
 
-Just drag the Icon Composer file from Finder to the project navigator, and Xcode provides feedback on where to drop it in a target folder. Alternatively, choose Add Files from the Add button at the bottom of the project navigator and select your Icon Composer file in the dialog that appears.
+Just drag the Icon Composer file from Finder to the Project navigator, and Xcode provides feedback on where to drop it in a target folder. Alternatively, choose Add Files from the Add button at the bottom of the Project navigator and select your Icon Composer file in the dialog that appears.
 
 In the project editor, select the target and the General tab. Under App Icons and Launch Screen, ensure that the name in the App Icon text field matches the name of the Icon Composer file without the extension. You can have multiple Icon Composer files in your project but only one that matches the name in the App Icon text field.
 
@@ -222,7 +233,7 @@ For more information on running your app in Xcode, see [`Running your app in Sim
 
 ## See Also
 
-- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
+- [Configuring your app to use alternate app icons](configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
   Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.

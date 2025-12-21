@@ -18,7 +18,7 @@ init(sortDescriptors: [SortDescriptor<AccountBalance>] = [], predicate: Predicat
 ## Parameters
 
 - `sortDescriptors`: An array of   sort descriptors.
-- `predicate`: A    to filter the   records with.
+- `predicate`: A   to filter the   records with.
 - `limit`: An integer that indicates the maximum number of  records to return.
 - `offset`: An integer that indicates the number of records to offset the result by.
 

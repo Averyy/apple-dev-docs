@@ -43,7 +43,7 @@ let foregroundBuffer = try vImage.PixelBuffer<vImage.Interleaved8x4>(
 
 ```
 
-Because the perspective warp doesn’t work in place (that is, the source and destination buffers must point to different underlying memory), create a third destination buffer.
+Because the perspective warp doesn’t work in place (that is, the source and destination buffers need to point to different underlying memory), create a third destination buffer.
 
 ```swift
 let warpedBuffer = vImage.PixelBuffer<vImage.Interleaved8x4>(

@@ -31,15 +31,8 @@ struct Row
 ### Getting a row
 - [func index(forKey: MLDataTable.Row.Key) -> MLDataTable.Row.Index?](mldatatable/row/index(forkey:).md)
 ### Accessing rows
-- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:)-7fw28.md)
+- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:).md)
 - [subscript<T>(MLDataTable.Row.Key, T.Type) -> T?](mldatatable/row/subscript(_:_:).md)
-### Default Implementations
-- [Collection Implementations](mldatatable/row/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](mldatatable/row/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mldatatable/row/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mldatatable/row/customstringconvertible-implementations.md)
-- [Equatable Implementations](mldatatable/row/equatable-implementations.md)
-- [Sequence Implementations](mldatatable/row/sequence-implementations.md)
 
 ## Relationships
 
@@ -54,8 +47,10 @@ struct Row
 
 ## See Also
 
-- [MLDataTable.Rows.Element](mldatatable/rows-swift.struct/element.md)
-  The Element of a DataTable is a Row. This is represented as a Dictionary-like type containing all Column names and their corresponding values.
+- [var rows: MLDataTable.Rows](mldatatable/rows-swift.property.md)
+  The rows of data in the table.
+- [MLDataTable.Rows](mldatatable/rows-swift.struct.md)
+  A collection of rows in a data table.
 
 
 ---

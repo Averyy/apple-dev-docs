@@ -28,9 +28,7 @@ An async sequence of camera video frames.
 
 ## See Also
 
-- [static func read<S>(S) async throws -> [VideoReader.AsyncFrames]](videoreader/read(_:)-4oyjh.md)
-  Reads a sequence of files as an array of async sequences of video frames.
-- [static func read<S, Annotation>(S) async throws -> [AnnotatedFeature<VideoReader.AsyncFrames, Annotation>]](videoreader/read(_:)-sluv.md)
+- [static read(_:)](videoreader/read(_:).md)
   Reads a sequence of annotated files as an array of annotated async sequences of video frames.
 - [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](videoreader/read(contentsof:).md)
   Reads a video file as an async sequence of video frames.

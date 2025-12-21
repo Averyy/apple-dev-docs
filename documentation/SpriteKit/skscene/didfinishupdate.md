@@ -17,7 +17,6 @@ Tells your app to peform any necessary logic after the scene has finished all of
 ## Declaration
 
 ```swift
-@MainActor
 func didFinishUpdate()
 ```
 

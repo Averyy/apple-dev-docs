@@ -30,15 +30,6 @@ The vDSP library provides functions that calculate the convolution and correlati
   Calculates the correlation of a double-precision signal vector and a filter vector.
 - [static func correlate<T, U, V>(T, withKernel: U, result: inout V)](vdsp/correlate(_:withkernel:result:)-377zj.md)
   Calculates the correlation of a single-precision signal vector and a filter vector.
-- [vDSP_conv](vdsp_conv.md)
-  Performs either correlation or convolution on two real single-precision vectors.
-- [vDSP_convD](vdsp_convd.md)
-  Performs either correlation or convolution on two real double-precision vectors.
-### Complex Vectors
-- [vDSP_zconv](vdsp_zconv.md)
-  Performs either correlation or convolution on two complex single-precision vectors.
-- [vDSP_zconvD](vdsp_zconvd.md)
-  Performs either correlation or convolution on two complex double-precision vectors.
 
 ## See Also
 

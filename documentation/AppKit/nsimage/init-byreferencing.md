@@ -26,7 +26,7 @@ The `url` parameter should include a file extension that identifies the type of 
 
 Because this method doesn’t actually create image representations for the image data, your app should do error checking before attempting to use the image; one way to do so is by accessing the [`isValid`](nsimage/isvalid.md) property to check whether the image can be drawn.
 
-This method invokes [`setDataRetained:`](nsimage/setdataretained:.md) with an argument of [`true`](https://developer.apple.com/documentation/swift/true), thus enabling it to hold onto its URL. When archiving an image created with this method, only the image’s URL is written to the archive.
+This method invokes [`setDataRetained:`](nsimage/setdataretained:.md) with an argument of [`true`](https://developer.apple.com/documentation/Swift/true), thus enabling it to hold onto its URL. When archiving an image created with this method, only the image’s URL is written to the archive.
 
 ## Parameters
 

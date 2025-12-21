@@ -22,7 +22,7 @@ var isAnalog: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) for most axis inputs.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) for most axis inputs.
 
 ## See Also
 

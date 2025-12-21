@@ -134,6 +134,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(collectionViewIndexPaths: [IndexPath])](nsset/init(collectionviewindexpaths:).md)
 - [convenience init(objects: Any...)](nsset/init(objects:).md)
 - [convenience init(set: NSSet)](nsset/init(set:)-7a7ws.md)
+  Initializes a newly allocated set and adds to it objects from another given set.
 ### Instance Methods
 - [func enumerateIndexPaths(options: NSEnumerationOptions, using: (IndexPath, UnsafeMutablePointer<ObjCBool>) -> Void)](nsset/enumerateindexpaths(options:using:).md)
 ### Default Implementations

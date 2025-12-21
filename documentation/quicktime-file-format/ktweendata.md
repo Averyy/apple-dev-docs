@@ -5,9 +5,6 @@
 
 An atom that contains data for a tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Its parent atom is a `kTweenEntry` atom.

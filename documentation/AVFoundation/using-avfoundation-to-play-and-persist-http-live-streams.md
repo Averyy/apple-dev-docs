@@ -1,4 +1,4 @@
-# Using AVFoundation to play and persist HTTP Live Streams
+# Using AVFoundation to play and persist HTTP live streams
 
 **Framework**: AVFoundation
 
@@ -25,7 +25,7 @@ If you want to add your own streams to test with this sample, add an entry into 
 
 If any of the streams you add aren’t hosted securely, you’ll need to add an Application Transport Security (ATS) exception in the `Info.plist` file in the Xcode project. For more information on ATS and the relevant property list keys see [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity)
 
-##### Play an Http Live Stream
+##### Play a Stream
 
 To play an item, tap one of the rows in the table. Tapping the item causes a transition to a new view controller. As part of that transition, the table view creates an `AssetPlaybackManager` and assigns the appropriate asset to it, as shown in the following example:
 
@@ -100,7 +100,7 @@ playerItemObserver = playerItem?.observe(\AVPlayerItem.status, options: [.new, .
     }
 ```
 
-##### Download an Http Live Stream
+##### Download a Stream
 
 When the person initiates a download by tapping the button in the corresponding stream’s table view cell, an instance of `AssetPersistenceManager` calls the following function to create an `AVAssetDownloadTask` object with an `AVAssetDownloadConfiguration` to download multiple [`AVMediaSelection`](avmediaselection.md) for the [`AVURLAsset`](avurlasset.md) of the stream:
 
@@ -153,7 +153,7 @@ func downloadStream(for asset: Asset) async throws {
 
 > **Note**: You can’t save an HTTP Live Stream while it’s in progress. If you try to save a live stream, the system throws an exception. Only Video On Demand (VOD) streams support offline playback.
 
-##### Cancel an Http Live Stream
+##### Cancel an in Progress Download
 
 Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in `AssetPersistenceManager` cancels the download by calling the `URLSessionTask` [`cancel()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/cancel()) method.
 
@@ -170,7 +170,7 @@ func cancelDownload(for asset: Asset) {
 }
 ```
 
-##### Remove an Http Live Stream From Disk
+##### Remove a Downloaded Stream From Disk
 
 Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Delete to delete the downloaded stream file. The following function in `AssetPersistenceManager` removes a downloaded stream on the device. First the asset URL corresponding to the file on the device is identified, then the `FileManager` [`removeItem(at:)`](https://developer.apple.com/documentation/Foundation/FileManager/removeItem(at:)) method is called to remove the downloaded stream at the specified URL.
 

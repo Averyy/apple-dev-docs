@@ -29,7 +29,7 @@ var board: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.whiteboard.board` schema:
 
 ```swift
-@AssistantEntity(schema: .whiteboard.board)
+@AppEntity(schema: .whiteboard.board)
 struct CanvasEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [CanvasEntity.ID]) async throws -> [CanvasEntity] { [] }

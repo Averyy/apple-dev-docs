@@ -24,8 +24,6 @@ let NSMapTableCopyIn: NSPointerFunctions.Options
 
 - [static var copyIn: NSPointerFunctions.Options](nspointerfunctions/options/copyin.md)
   Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](nspointerfunctions/acquirefunction.md)).
-- [static var copyIn: NSPointerFunctions.Options](nspointerfunctions/options/copyin.md)
-  Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](nspointerfunctions/acquirefunction.md)).
 
 
 ---

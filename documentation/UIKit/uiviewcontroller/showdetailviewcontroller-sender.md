@@ -21,8 +21,8 @@ func showDetailViewController(_ vc: UIViewController, sender: Any?)
 
 ## Mentions
 
-- [Customizing the behavior of segue-based presentations](customizing-the-behavior-of-segue-based-presentations.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Customizing the behavior of segue-based presentations](customizing-the-behavior-of-segue-based-presentations.md)
 
 #### Discussion
 
@@ -41,6 +41,7 @@ You can override this method in custom view controllers to display `vc` yourself
 
 - [func show(UIViewController, sender: Any?)](uiviewcontroller/show(_:sender:).md)
   Presents a view controller in a primary context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
   Presents a view controller modally.
 - [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)

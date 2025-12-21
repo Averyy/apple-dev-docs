@@ -3,6 +3,8 @@
 **Framework**: FSKit  
 **Kind**: enum
 
+The unique identifier for an item.
+
 **Availability**:
 - macOS 15.4+
 
@@ -12,17 +14,21 @@
 enum Identifier
 ```
 
+#### Overview
+
+Use this type when packing items for an enumeration in [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](fsdirectoryentrypacker/packentry(name:itemtype:itemid:nextcookie:attributes:).md). Either provide a unique identifier like an inode number, or one of the special enumeration cases this type defines, like [`FSItem.Identifier.rootDirectory`](fsitem/identifier/rootdirectory.md).
+
 ## Topics
 
-### Enumeration Cases
+### Working with special identifiers
 - [FSItem.Identifier.invalid](fsitem/identifier/invalid.md)
+  The identifier for an invalid item.
 - [FSItem.Identifier.parentOfRoot](fsitem/identifier/parentofroot.md)
+  The identifier for an item that serves as the parent of the root directory.
 - [FSItem.Identifier.rootDirectory](fsitem/identifier/rootdirectory.md)
-### Initializers
+  The item identifier for the root directory.
+### Working with raw values
 - [init?(rawValue: UInt64)](fsitem/identifier/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsitem/identifier/equatable-implementations.md)
-- [RawRepresentable Implementations](fsitem/identifier/rawrepresentable-implementations.md)
 
 ## Relationships
 

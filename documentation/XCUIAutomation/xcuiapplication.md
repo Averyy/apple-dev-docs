@@ -22,6 +22,10 @@ A proxy that can launch, monitor, and terminate a test application.
 class XCUIApplication
 ```
 
+## Mentions
+
+- [Recording UI automation for testing](recording-ui-automation-for-testing.md)
+
 #### Overview
 
 Use this class to launch, monitor, and terminate your app in a UI test. Use [`wait(for:timeout:)`](xcuiapplication/wait(for:timeout:).md) to launch your app and wait for it to reach an expected state before you check test conditions.

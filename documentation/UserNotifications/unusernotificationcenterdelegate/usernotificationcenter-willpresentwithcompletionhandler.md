@@ -22,8 +22,8 @@ optional func userNotificationCenter(_ center: UNUserNotificationCenter, willPre
 
 ## Mentions
 
-- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
 - [Asking permission to use notifications](asking-permission-to-use-notifications.md)
+- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
 
 #### Discussion
 

@@ -22,7 +22,7 @@ var constantValues: MTLFunctionConstantValues? { get set }
 
 #### Discussion
 
-The default value is `nil`. If you are creating a function object for a specialized function, you must provide an array of valid constant values for all required function constants.
+The default value is `nil`. If you are creating a function object for a specialized function, you need to provide an array of valid constant values for all required function constants.
 
 ## See Also
 
@@ -35,9 +35,9 @@ The default value is `nil`. If you are creating a function object for a speciali
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 - [class MTLLinkedFunctions](mtllinkedfunctions.md)
-  A set of related functions that Metal links to when necessary to create the function object.
+  A set of related functions that Metal links to when necessary to create the function instance.
 
 
 ---

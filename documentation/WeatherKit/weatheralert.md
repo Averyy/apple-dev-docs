@@ -40,10 +40,6 @@ Weather alerts often contains severe weather information; however, not all alert
   The site for more details about the weather alert.
 - [var source: String](weatheralert/source.md)
   The name of the source issuing the weather alert.
-### Default Implementations
-- [Decodable Implementations](weatheralert/decodable-implementations.md)
-- [Encodable Implementations](weatheralert/encodable-implementations.md)
-- [Equatable Implementations](weatheralert/equatable-implementations.md)
 
 ## Relationships
 

@@ -22,7 +22,7 @@ class AVMetadataItemValueRequest
 
 ## Topics
 
-### Handling the Response
+### Handling the response
 - [func respond(value: any NSCopying & NSObjectProtocol)](avmetadataitemvaluerequest/respond(value:).md)
   Returns the metadata item’s value.
 - [func respond(error: any Error)](avmetadataitemvaluerequest/respond(error:).md)

@@ -22,7 +22,7 @@ var maxThreadsPerThreadgroup: MTLSize { get }
 
 #### Discussion
 
-This size isn’t guaranteed for all shaders. The number of trival shaders supported at once on device determines this value. For more accurate information on the allowable maximum threads per threadgroup in an individual pass, inspect your associated pipeline state.
+This property reports the maximum thread group size the device can support for a trivial shader. This size isn’t guaranteed for all shaders. For the actual thread group size of a specific compute shader, see the [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of your compute pipeline state.
 
 For more information on the specific threadgroup limits of each GPU family, see the Metal feature set tables:
 

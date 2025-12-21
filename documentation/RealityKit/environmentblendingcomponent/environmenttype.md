@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
-An enumeration of the environment types which support environment-blending
+An enumeration of the environment types which support environment-blending.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ enum EnvironmentType
 
 ### Enumeration Cases
 - [EnvironmentBlendingComponent.EnvironmentType.surroundings](environmentblendingcomponent/environmenttype/surroundings.md)
-  The real-world surroundings of the user
+  The real-world surroundings of the user.
 
 ## Relationships
 

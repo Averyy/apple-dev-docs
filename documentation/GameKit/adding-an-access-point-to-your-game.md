@@ -29,13 +29,13 @@ GKAccessPoint.shared.location = .topLeading
 
 For right-to-left languages, such as Arabic and Hebrew, the system flips the location. For example, [`GKAccessPoint.Location.topLeading`](gkaccesspoint/location-swift.enum/topleading.md) specifies the upper-right corner and [`GKAccessPoint.Location.bottomLeading`](gkaccesspoint/location-swift.enum/bottomleading.md) specifies the bottom-left corner.
 
-To display highlights when the access point appears, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/swift/true):
+To display highlights when the access point appears, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/Swift/true):
 
 ```swift
 GKAccessPoint.shared.showHighlights = true
 ```
 
-When you’re done configuring the access point, set the [`isActive`](gkaccesspoint/isactive.md) property to [`true`](https://developer.apple.com/documentation/swift/true):
+When you’re done configuring the access point, set the [`isActive`](gkaccesspoint/isactive.md) property to [`true`](https://developer.apple.com/documentation/Swift/true):
 
 ```swift
 GKAccessPoint.shared.isActive = true
@@ -93,7 +93,7 @@ Then use the [`trigger(state:handler:)`](gkaccesspoint/trigger(state:handler:).m
 
 ##### Configure the Access Point on Visionos
 
-The location of the access point and dashboard varies depending on the type of visionOS game. To change the default behavior below, set the [`location`](gkaccesspoint/location-swift.property.md) and [`parentWindow`](gkaccesspoint/parentwindow.md) properties before you set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/swift/true). For example, if you don’t set the parent window of volumetric games, the access point doesn’t appear.
+The location of the access point and dashboard varies depending on the type of visionOS game. To change the default behavior below, set the [`location`](gkaccesspoint/location-swift.property.md) and [`parentWindow`](gkaccesspoint/parentwindow.md) properties before you set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/Swift/true). For example, if you don’t set the parent window of volumetric games, the access point doesn’t appear.
 
 | Type | Access point behavior |
 | --- | --- |

@@ -20,9 +20,7 @@ func sec_protocol_options_set_key_update_block(_ options: sec_protocol_options_t
 
 #### Discussion
 
-```None
- Set the key update block.
-```
+Set the key update block.
 
 ```None
  A `dispatch_queue_t` on which the key update block should be called.

@@ -19,15 +19,15 @@ struct MTL4BufferRange
 
 #### Overview
 
-The length is generally optional, which a value of (uint64_t)-1 representing the range from the given address to the end of the buffer. However, providing the length can enable more accurate API validation, especially when sub-allocating ranges of a buffer.
+A struct representing a range of a Metal buffer. The offset into the buffer is included in the address. The length is generally optional, which a value of (uint64_t)-1 representing the range from the given address to the end of the buffer. However, providing the length can enable more accurate API validation, especially when sub-allocating ranges of a buffer.
 
 ## Topics
 
 ### Initializers
 - [init()](mtl4bufferrange/init.md)
-- [init(bufferAddress: UInt64, length: UInt64)](mtl4bufferrange/init(bufferaddress:length:).md)
+- [init(bufferAddress: MTLGPUAddress, length: UInt64)](mtl4bufferrange/init(bufferaddress:length:).md)
 ### Instance Properties
-- [var bufferAddress: UInt64](mtl4bufferrange/bufferaddress.md)
+- [var bufferAddress: MTLGPUAddress](mtl4bufferrange/bufferaddress.md)
 - [var length: UInt64](mtl4bufferrange/length.md)
 
 ## Relationships
@@ -46,7 +46,7 @@ The length is generally optional, which a value of (uint64_t)-1 representing the
   A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
 - [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](mtlpackedfloat3make(_:_:_:).md)
   Returns a new packed vector with three floating-point values.
-- [func MTL4BufferRangeMake(UInt64, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
 
 
 ---

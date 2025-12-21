@@ -3,10 +3,10 @@
 **Framework**: App Store Server API  
 **Kind**: dictionary
 
-The request body containing consumption information.
+The request body that contains consumption information for an In-App Purchase.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.19+
 
 ## Declaration
 
@@ -14,54 +14,39 @@ The request body containing consumption information.
 object ConsumptionRequest
 ```
 
-## Mentions
-
-- [App Store Server API changelog](app-store-server-api-changelog.md)
-
 #### Discussion
 
-Use `ConsumptionRequest` to provide information about the customer’s consumable in-app purchase or auto-renewable subscription when you call the [`Send Consumption Information`](send-consumption-information.md) endpoint.
+Use `ConsumptionRequest` to provide information about the customer’s In-App Purchase when you call the [`Send Consumption Information`](send-consumption-information.md) endpoint.
 
-To create a valid request and avoid an `HTTP 400 Bad Request` error, [`ConsumptionRequest`](consumptionrequest.md) must contain all the required fields with proper data types and valid values. However, you can choose whether or not to provide information for most fields. Most fields have a valid option if you choose not to provide the information.
+> **Note**: The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
 
-> **Note**:  Use the field value for , where available, if you choose not to provide information.
+You can provide consumption information for any type of product: consumable, non-consumable, non-renewing subscription, and auto-renewable subscription.
 
-For example, if you choose not to provide information for the [`accountTenure`](consumptionrequest/accounttenure.md) field, set [`accountTenure`](consumptionrequest/accounttenure.md) to `0`. If you choose not to provide information for the [`appAccountToken`](consumptionrequest/appaccounttoken.md) field, set its value to an empty string. Refer to each field’s documentation for the list of valid values, including the undeclared value where available.
+Consider the following constraints when providing an optional [`refundPreference`](consumptionrequest/refundpreference.md):
 
-The App Store server rejects requests that have a [`customerConsented`](consumptionrequest/customerconsented.md) value other than `true` by returning an `HTTP 400` error with an `InvalidCustomerConsentError`.
+- The system supports the `GRANT_FULL` and `DECLINE` values for all product types.
+- If you choose `GRANT_PRORATED` for an auto-renewable subscription, don’t include a [`consumptionPercentage`](consumptionrequest/consumptionpercentage.md). The system automatically calculates the percentage.
+
+If the [`deliveryStatus`](consumptionrequest/deliverystatus.md) isn’t `DELIVERED`, set the `consumptionPercentage` to `0`; otherwise the request fails with an error.
 
 ## Topics
 
-### Consumption Data Types
-- [type accountTenure](accounttenure.md)
-  The age of the customer’s account.
-- [type appAccountToken](appaccounttoken.md)
-  The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
-- [type consumptionStatus](consumptionstatus.md)
-  A value that indicates the extent to which the customer consumed the in-app purchase.
+### Consumption data types
 - [type customerConsented](customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
+- [type consumptionPercentage](consumptionpercentage.md)
+  An integer that indicates the percentage, in milliunits, of the In-App Purchase the customer consumed.
 - [type deliveryStatus](deliverystatus.md)
-  A value that indicates whether the app successfully delivered an in-app purchase that works properly.
-- [type lifetimeDollarsPurchased](lifetimedollarspurchased.md)
-  A value that indicates the dollar amount of in-app purchases the customer has made in your app, since purchasing the app, across all platforms.
-- [type lifetimeDollarsRefunded](lifetimedollarsrefunded.md)
-  A value that indicates the dollar amount of refunds the customer has received in your app, since purchasing the app, across all platforms.
-- [type platform](platform.md)
-  The platform on which the customer consumed the in-app purchase.
-- [type playTime](playtime.md)
-  A value that indicates the amount of time that the customer used the app.
+  A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 - [type refundPreference](refundpreference.md)
   A value that indicates your preferred outcome for the refund request.
 - [type sampleContentProvided](samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
-- [type userStatus](userstatus.md)
-  The status of a customer’s account within your app.
 
 ## See Also
 
 - [Send Consumption Information](send-consumption-information.md)
-  Send consumption information about a consumable in-app purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
+  Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.
 
 
 ---

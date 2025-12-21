@@ -18,15 +18,15 @@ var isPending: Bool { get }
 
 #### Discussion
 
-Use this property to determine whether an [`MSMessage`](msmessage.md) instance represents an unsent message—for example, to determine whether the conversation’s [`selectedMessage`](msconversation/selectedmessage.md) property refers to a message in the transcript ([`false`](https://developer.apple.com/documentation/swift/false)) or to a message in the Messages app’s input field ([`true`](https://developer.apple.com/documentation/swift/true)).
+Use this property to determine whether an [`MSMessage`](msmessage.md) instance represents an unsent message—for example, to determine whether the conversation’s [`selectedMessage`](msconversation/selectedmessage.md) property refers to a message in the transcript ([`false`](https://developer.apple.com/documentation/Swift/false)) or to a message in the Messages app’s input field ([`true`](https://developer.apple.com/documentation/Swift/true)).
 
 This property’s value is set based on the following rules:
 
-- This property is set to [`true`](https://developer.apple.com/documentation/swift/true) when your app calls the [`insert(_:completionHandler:)`](msconversation/insert(_:completionhandler:)-3g248.md) method to place the message in the Messages app’s input field.
-- It’s set to [`false`](https://developer.apple.com/documentation/swift/false) when the system calls the [`didStartSending(_:conversation:)`](msmessagesappviewcontroller/didstartsending(_:conversation:).md) method (either because the user sent the message from the input field or because you called the [`send(_:completionHandler:)`](msconversation/send(_:completionhandler:)-9krz.md) method to send it directly).
-- This property is set to [`false`](https://developer.apple.com/documentation/swift/false) on messages received from other participants.
+- This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when your app calls the [`insert(_:completionHandler:)`](msconversation/insert(_:completionhandler:)-3g248.md) method to place the message in the Messages app’s input field.
+- It’s set to [`false`](https://developer.apple.com/documentation/Swift/false) when the system calls the [`didStartSending(_:conversation:)`](msmessagesappviewcontroller/didstartsending(_:conversation:).md) method (either because the user sent the message from the input field or because you called the [`send(_:completionHandler:)`](msconversation/send(_:completionhandler:)-9krz.md) method to send it directly).
+- This property is set to [`false`](https://developer.apple.com/documentation/Swift/false) on messages received from other participants.
 
-In other words, the property is [`true`](https://developer.apple.com/documentation/swift/true) only for the selected method of the active conversation when there’s an [`MSMessagesAppViewController`](msmessagesappviewcontroller.md) instance in the Messages app’s input field.
+In other words, the property is [`true`](https://developer.apple.com/documentation/Swift/true) only for the selected method of the active conversation when there’s an [`MSMessagesAppViewController`](msmessagesappviewcontroller.md) instance in the Messages app’s input field.
 
 ## See Also
 

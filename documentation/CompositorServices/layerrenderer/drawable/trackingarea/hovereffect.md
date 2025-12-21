@@ -6,8 +6,8 @@
 Hover effect that will be automatically rendered by CompositorServices, when the area is looked at.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

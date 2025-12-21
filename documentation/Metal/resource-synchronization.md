@@ -1,65 +1,71 @@
-# Resource Synchronization
+# Resource synchronization
 
 **Framework**: Metal
 
-Prevent multiple commands that can access the same resources simultaneously by coordinating those accesses with barriers, fences, or events.
+Prevent multiple commands that can access the same resources simultaneously by coordinating those reads and writes with barriers, fences, or events.
 
 #### Overview
 
-You need to synchronize the commands you submit to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance that have conflicting resource accesses. An  is when multiple commands can access the same resource at the same time, and at least one of those accesses is a write operation. Access conflicts can cause problems in your app, such as nondeterministic behavior. For example, one command that reads from a resource might start before another command finishes writing its data to the same resource on which that the first commands depends.
+By design, GPUs can run multiple commands in parallel. Many of those commands access underlying memory of resources, including buffers and textures, with read and write operations. Commands can have an  when one or more of them has a memory write, or , operation and at least one other command has a memory read, or , operation.
 
-First, identify which resources’ accesses are in conflict, and then address the conflict with one of the following synchronization mechanisms.
+Synchronize commands submitted to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance when they have an access conflict with a resource. Access conflicts can cause problems in your app, such as nondeterministic behavior. For example, without synchronization, a draw command that reads from a texture to get the results of an earlier draw command might start loading from the texture’s memory before the other command finishes writing its output to that texture.
 
-> ❗ **Important**: The value of an [`MTLResource`](mtlresource.md) instance’s  [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md) property has no effect on the work you submit to an [`MTL4CommandQueue`](mtl4commandqueue.md).
+> ❗ **Important**: The value of an [`MTLResource`](mtlresource.md) instance’s [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md) property has no effect on the work you submit to an [`MTL4CommandQueue`](mtl4commandqueue.md).
 
-##### Identify Memory Access Aliasing
+##### Look for Resources with Access Conflicts
 
-Start by finding which resources you need to synchronize by identifying the commands that have conflicting memory accesses. Every  to a Metal resource, including buffers and textures, is either a load or a store operation:
+Start by identifying the commands that access the same resource, such as an [`MTLBuffer`](mtlbuffer.md) or an [`MTLTexture`](mtltexture.md) instance. Consider any resource that multiple passes can access concurrently by any means, including:
 
-Aliasing isn’t a problem if all the commands only read from the communal resource with load operations because none of the commands modify the resource’s underlying memory by writing to it with a store operation.
+- Resource bindings, which you configure directly with the [`MTLCommandEncoder`](mtlcommandencoder.md) or [`MTL4ArgumentTable`](mtl4argumenttable.md) protocols
+- Argument buffers, which you create and configure (see [`Managing groups of resources with argument buffers`](managing-groups-of-resources-with-argument-buffers.md))
+- Attachments for a render pass, which are textures that store rendering information, such as color, depth, or stencil data
 
-For example, multiple commands can load segments of the same resource at the same time, even if those segments overlap, because none of them are writing to that memory.
+It’s okay for multiple commands to load data from the same resource memory at the same time because they all read from memory without modifying it. For example, multiple commands can load segments of a buffer at the same time, even if those segments overlap, because none of them are writing to that memory.
 
-![None](https://docs-assets.developer.apple.com/published/55b7de25fbb234c8d0189cced32ddc02/resource-synchronization-1%402x.png)
+![A diagram showing multiple commands loading data from the same buffer memory simultaneously without conflicts because they only read from memory.](https://docs-assets.developer.apple.com/published/55b7de25fbb234c8d0189cced32ddc02/resource-synchronization-1%402x.png)
 
-##### Identify Potential Memory Access Conflicts
+However, an app can introduce an access conflict when it encodes commands that both read and write to the same memory of a resource.
 
-An app can introduce an access  when it encodes commands that both read and write to the same resource. A GPU typically runs multiple commands at the same time — by design, and each access conflict that can run concurrently creates a race condition because the overlapping memory load and store accesses don’t always run in the same order relative to each other. For example, encoding commands that both load from and store to the same bytes of an [`MTLBuffer`](mtlbuffer.md) instance creates an access conflict.
+![A diagram showing commands that both read and write to the same resource memory, creating an access conflict.](https://docs-assets.developer.apple.com/published/9a22c358356855e3b640292e0475ae44/resource-synchronization-2%402x.png)
 
-![None](https://docs-assets.developer.apple.com/published/9a22c358356855e3b640292e0475ae44/resource-synchronization-2%402x.png)
+Locate potential access conflicts by checking which resources apply to multiple commands, where at least one of those commands modifies the resource with a store operation. Commands with an access conflict that run concurrently create a race condition that can yield inconsistent results. This is because any overlapping memory load and store operations don’t always run in the same order relative to each other. Each time a GPU runs a batch of commands without synchronization, a load operation from one command can run before, during, or after a store operation.
 
-The load operation from one command might run before, after, or at the same time as the other command’s store operation because a GPU can run these commands in parallel.
+> **Note**:  Even though race conditions typically arise from an implementation mistake, some apps intentionally introduce them as an optimization technique, such as two commands that don’t need synchronization because they store the same modifications to a resource.
 
-> **Note**:  Even though a race condition is typically the result of an implementation mistake, some apps intentionally introduce race conditions as an optimization technique, such as running two identical resource stores that have consistent results that don’t need synchronization.
+##### Check Render Pass Commands That Access Its Attachments
 
-Locate potential access conflicts by checking which resources apply to multiple commands, where at least one of those commands modifies the resource with a store operation. Consider resources that multiple encoders can access through any means, including argument buffers and resource bindings, which you configure directly to an encoder or with an argument table. Access conflicts can also apply to a render pass’s color, depth, and stencil texture attachments.
+A render pass that writes to an attachment may introduce an access conflict because a render pass can have implicit load and store operations for that attachment. For render passes, look for potential conflicts with its attachment textures by:
 
-> ❗ **Important**:  Apps that encode a render pass that accesses an attachment may introduce an access conflict because a render encoder can implicitly add load and store operations for those attachments.
+- Noting the attachments the pass loads and stores at the beginning and end of the pass, respectively
+- Finding any commands that read or modify those attachment textures
 
-Render command encoders add a load operation, a store operation, or both for each applicable texture attachment of the render pass it encodes. The attachment load operations run at the beginning of the render pass and the attachment store operations run at the end of it.
+Render command encoders add a load operation, a store operation, or both for each applicable texture attachment of the render pass it encodes. You configure which attachments, if any, the GPU loads at the beginning of the pass when you configure the [`loadAction`](mtlrenderpassattachmentdescriptor/loadaction.md) property of the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance that applies to each attachment. Similarly, you configure which attachments, if any, the GPU stores at the end of the pass by setting the [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property of the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance that applies to each attachment.
 
-You configure which attachments, if any, the GPU loads at the beginning of the pass by setting the [`loadAction`](mtlrenderpassattachmentdescriptor/loadaction.md) property of the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance that applies to that attachment to [`MTLLoadAction.load`](mtlloadaction/load.md). Separately, you configure which attachments, if any, the GPU stores stores at the end of the pass by setting the [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property of the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance that applies to that attachment to [`MTLStoreAction.store`](mtlstoreaction/store.md).
+Note which attachment textures that have a load action that’s equal to [`MTLLoadAction.load`](mtlloadaction/load.md), or a store action that’s equal to [`MTLStoreAction.store`](mtlstoreaction/store.md), then look for commands that also load and store those attachments.
 
 > **Note**:  You can use any combination of load and store actions for each attachment.
 
-Also consider commands from a single encoder that can run concurrently. For example, the Metal 4 type [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) encodes a pass that only runs  its commands concurrently on the GPU, which means any two commands that access the same memory can be a potential access conflict. One of the equivalent types, [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md), encodes a pass that runs its command serially by default, but you can configure it to encode a concurrent compute pass by setting an [`MTLComputePassDescriptor`](mtlcomputepassdescriptor.md) instance’s [`dispatchType`](mtlcomputepassdescriptor/dispatchtype.md) property to [`MTLDispatchType.concurrent`](mtldispatchtype/concurrent.md).
+##### Check Compute Pass Commands That Can Run Concurrently
 
-##### Skip the Accesses the System Already Guarantees
+An [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) instance creates a compute pass that runs commands concurrently on the GPU, which can introduce access conflicts.
+
+By default, an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) encodes a compute pass that runs its commands serially, However, you can create one that encodes a concurrent compute pass by configuring an [`MTLComputePassDescriptor`](mtlcomputepassdescriptor.md) instance’s [`dispatchType`](mtlcomputepassdescriptor/dispatchtype.md) property to [`MTLDispatchType.concurrent`](mtldispatchtype/concurrent.md).
+
+##### Ignore Memory Operations the System Already Guarantees
 
 Metal provides several built-in resource ordering guarantees within compute and render passes, which your app doesn’t need to synchronize.
 
 For example, you don’t need to synchronize compute or render passes when they access an instance of an atomic type because they serially access those instances. See section 2.6  in the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
 
-Render passes also enforce access ordering for specific access types, including:
+Render passes also order memory operations for specific cases, including:
 
-- Accesses to render-pass attachments run in primitive order for each fragment, which is the order of your app’s draw commands and the order of each primitive within a draw call.
-- Raster-order group accesses from a fragment shader run in primitive order for each fragment.
-- Tile shader accesses to resources.
-- Accesses to tile memory, which run in the order of your app’s draw commands and tile-shader dispatch calls within the same tile.
+- A render-pass attachment’s load and store operations run in primitive order for each fragment, which is the order of your app’s draw commands and the order of each primitive within a draw call.
+- A fragment shader’s load and store operations for a raster-order group run in primitive order for each fragment.
+- A tile shader’s load and store operations run in the same order as your app’s tile dispatch calls and on a per-tile basis.
 
-##### Resolve Conflicting Accesses with Synchronization
+##### Resolve Access Conflicts with Synchronization
 
-You can address a race condition from a memory access conflict by synchronizing those accesses with an appropriate mechanism. Synchronization ensures that a store operation completely finishes writing all updates to a resource’s underlying memory before another command loads that the same resource, including the recent updates to its memory. Each synchronization mechanism forces the GPU to pause before it runs a stage that accesses a resource, until another stage finishes.
+You can address access conflicts with one or more synchronization mechanisms. Each synchronization mechanism forces the GPU to pause before it runs a stage that accesses a resource, until another stage finishes. This means the memory operations from one stage completely finish before another stage can run its memory operations.
 
 You can choose one of the following synchronization mechanisms, which are in order of increasing scope:
 
@@ -70,52 +76,52 @@ You can choose one of the following synchronization mechanisms, which are in ord
 The Metal framework automatically synchronizes resource access conflicts for the commands you submit to an [`MTLCommandQueue`](mtlcommandqueue.md) instance, and only for the resources that:
 
 - You configure its [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md) property to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md)
-- You directly bind to an encoder type that conforms to [`MTLCommandEncoder`](mtlcommandencoder.md)
+- You directly bind that resource to an encoder type that adopts the [`MTLCommandEncoder`](mtlcommandencoder.md) protocol
 
-Resources you create from an [`MTLDevice`](mtldevice.md) instance default to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md), and the resources you create from an [`MTLHeap`](mtlheap.md) instance default to [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md). For more information, see [`Resource Fundamentals`](resource-fundamentals.md) and  [`Memory Heaps`](memory-heaps.md).
+Resources you create from an [`MTLDevice`](mtldevice.md) instance default to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md), and the resources you create from an [`MTLHeap`](mtlheap.md) instance default to [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md). For more information, see [`Resource fundamentals`](resource-fundamentals.md) and [`Memory heaps`](memory-heaps.md).
 
 ## Topics
 
-### Synchronization
-- [Synchronizing resource accesses within a single pass with an intrapass barrier](synchronizing-resource-accesses-within-a-single-pass-with-an-intrapass-barrier.md)
-  Resolve resource access conflicts between stages within a single pass by adding an intrapass barrier.
-- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by signaling a fence in one pass and waiting for it in another.
-- [Synchronizing resource accesses with earlier passes with a consumer-based queue barrier](synchronizing-resource-accesses-with-earlier-passes-with-a-consumer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a consumer-based intraqueue barrier.
-- [Synchronizing resource accesses with subsequent passes with a producer-based queue barrier](synchronizing-resource-accesses-with-subsequent-passes-with-a-producer-based-queue-barrier.md)
-  Resolve resource access conflicts between multiple passes within a single command queue by creating a producer-based intraqueue barrier.
-- [Synchronizing CPU and GPU Work](synchronizing-cpu-and-gpu-work.md)
+### Synchronizing with barriers and fences
+- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+  Block GPU stages in the a pass from running until other stages in the same pass finish.
+- [Synchronizing passes with a fence](synchronizing-passes-with-a-fence.md)
+  Block GPU stages in a pass until another pass unblocks it by signaling a fence.
+- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
+  Block GPU stages in a pass, and all subsequent passes, from running until stages from earlier passes finish.
+- [Synchronizing passes with producer barriers](synchronizing-passes-with-producer-barriers.md)
+  Block GPU stages in subsequent passes from running until stages in a pass, and earlier passes, finish.
+- [Synchronizing CPU and GPU work](synchronizing-cpu-and-gpu-work.md)
   Avoid stalls between CPU and GPU work by using multiple instances of a resource.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [struct MTLStages](mtlstages.md)
-  Describes stages of GPU work.
+  The segments of command execution within the Metal pass types.
 - [protocol MTLFence](mtlfence.md)
-  A memory fence to capture, track, and manage resource dependencies across command encoders.
+  A synchronization mechanism that orders memory operations between GPU passes.
 - [struct MTLRenderStages](mtlrenderstages.md)
   The stages in a render pass that triggers a synchronization command.
 - [struct MTLBarrierScope](mtlbarrierscope.md)
   Describes the types of resources that a barrier operates on.
 - [struct MTL4VisibilityOptions](mtl4visibilityoptions.md)
   Memory consistency options for synchronization commands.
-### Signal Events
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+### Synchronizing with events
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [About Synchronization Events](about-synchronization-events.md)
+- [About synchronization events](about-synchronization-events.md)
   Synchronize access to resources in your app by signaling events.
-- [Synchronizing Events Within a Single Device](synchronizing-events-within-a-single-device.md)
+- [Synchronizing events within a single device](synchronizing-events-within-a-single-device.md)
   Use nonshareable events to synchronize your app’s work within a single device.
-- [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
   Use shareable events to synchronize your app’s work across multiple devices or processes.
-- [Synchronizing Events Between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
   Use shareable events to synchronize your app’s work between a GPU and the CPU.
 - [protocol MTLEvent](mtlevent.md)
-  A simple semaphore to synchronize access to Metal resources.
+  A type that synchronizes memory operations to one or more resources within a single Metal device.
 - [protocol MTLSharedEvent](mtlsharedevent.md)
-  An object you use to synchronize access to Metal resources across multiple CPUs, GPUs, and processes.
+  A type that synchronizes memory operations to one or more resources across multiple CPUs, GPUs, and processes.
 - [class MTLSharedEventHandle](mtlsharedeventhandle.md)
-  An object you use to recreate a shareable event.
+  An instance you use to recreate a shareable event.
 - [class MTLSharedEventListener](mtlsharedeventlistener.md)
   A listener for shareable event notifications.
 - [typealias MTLSharedEventNotificationBlock](mtlsharedeventnotificationblock.md)
@@ -123,15 +129,15 @@ Resources you create from an [`MTLDevice`](mtldevice.md) instance default to [`M
 
 ## See Also
 
-- [Resource Fundamentals](resource-fundamentals.md)
+- [Resource fundamentals](resource-fundamentals.md)
   Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
 - [Buffers](buffers.md)
   Create and manage untyped data your app uses to exchange information with its shader functions.
 - [Textures](textures.md)
   Create and manage typed data your app uses to exchange information with its shader functions.
-- [Memory Heaps](memory-heaps.md)
+- [Memory heaps](memory-heaps.md)
   Take control of your app’s GPU memory management by creating a large memory allocation for various buffers, textures, and other resources.
-- [Resource Loading](resource-loading.md)
+- [Resource loading](resource-loading.md)
   Load assets in your games and apps quickly by running a dedicated input/output queue alongside your GPU tasks.
 
 

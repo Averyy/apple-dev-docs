@@ -25,7 +25,7 @@ var createWindow: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.browser.createWindow` schema:
 
 ```swift
-@AssistantIntent(schema: .browser.createWindow)
+@AppIntent(schema: .browser.createWindow)
 struct CreateWindowIntent: AppIntent {
     @Parameter
     var url: URL?

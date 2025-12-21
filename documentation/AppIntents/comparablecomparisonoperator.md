@@ -31,17 +31,6 @@ enum ComparableComparisonOperator
   An operator that determines if the parameter is less than the value.
 - [ComparableComparisonOperator.lessThanOrEqualTo](comparablecomparisonoperator/lessthanorequalto.md)
   An operator that determines if the parameter is less than or equal to the value.
-### Operators
-- [static func == (ComparableComparisonOperator, ComparableComparisonOperator) -> Bool](comparablecomparisonoperator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](comparablecomparisonoperator/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](comparablecomparisonoperator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](comparablecomparisonoperator/equatable-implementations.md)
 
 ## Relationships
 

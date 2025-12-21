@@ -26,7 +26,7 @@ This method makes the resource resident for the duration of a compute pass and e
 
 Call this method before issuing any dispatch calls that may access the resource. Calling this method again, or calling [`useHeap(_:)`](mtlcomputecommandencoder/useheap(_:).md), overwrites any previously specified usage options for future dispatch calls within the same compute command encoder.
 
-> **Note**:  To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) separately.
+> **Note**:  You can track resource access and dependency hazards with [`MTLFence`](mtlfence.md) instances.
 
 ## Parameters
 

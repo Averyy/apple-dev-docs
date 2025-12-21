@@ -22,10 +22,6 @@ struct Iterator
 ### Iterating over state changes
 - [func next() async -> DockAccessory.StateChange?](dockaccessory/statechanges/iterator/next.md)
   Provide the next dock accessory state change in the list.
-### Type Aliases
-- [DockAccessory.StateChanges.Iterator.Element](dockaccessory/statechanges/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](dockaccessory/statechanges/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

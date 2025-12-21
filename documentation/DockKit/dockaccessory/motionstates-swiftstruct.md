@@ -26,11 +26,6 @@ struct MotionStates
   Creates and returns an iterator that traverses the list of dock accessory motion states.
 - [DockAccessory.MotionStates.Element](dockaccessory/motionstates-swift.struct/element.md)
   A dock accessory motion state.
-### Type Aliases
-- [DockAccessory.MotionStates.AsyncIterator](dockaccessory/motionstates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](dockaccessory/motionstates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

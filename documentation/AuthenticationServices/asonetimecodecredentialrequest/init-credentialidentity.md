@@ -16,6 +16,10 @@
 init(credentialIdentity: ASOneTimeCodeCredentialIdentity)
 ```
 
+#### Discussion
+
+Initializes an instance of ASOneTimeCodeCredentialRequest.
+
 ## Parameters
 
 - `credentialIdentity`: The credential identity to use for this request.

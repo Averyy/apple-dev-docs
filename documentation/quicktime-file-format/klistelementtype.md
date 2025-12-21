@@ -5,9 +5,6 @@
 
 An element that specifies the atom type of the elements in a list tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Its parent atom is a `kTweenData` atom.

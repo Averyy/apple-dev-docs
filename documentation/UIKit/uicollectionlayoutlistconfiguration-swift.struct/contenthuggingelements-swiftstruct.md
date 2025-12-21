@@ -23,9 +23,6 @@ struct ContentHuggingElements
 ### Specifying content-hugging elements
 - [static let supplementaryHeader: UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct/supplementaryheader.md)
   A mode where supplementary headers in the collection view tightly hug their content.
-### Supporting protocol requirements
-- [Protocol implementations](contenthuggingelements-protocol-implementations.md)
-  Access the content-hugging elements structure’s implementations of protocol methods.
 
 ## Relationships
 

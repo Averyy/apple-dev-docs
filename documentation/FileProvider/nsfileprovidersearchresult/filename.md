@@ -7,7 +7,7 @@
 The result’s file name.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

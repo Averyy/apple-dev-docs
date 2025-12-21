@@ -6,7 +6,7 @@
 A bezel style with a glass effect
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -20,7 +20,7 @@ var backgroundInsets: NSDirectionalEdgeInsets { get set }
 
 #### Discussion
 
-This property applies to the custom view. The default value is [`NSDirectionalEdgeInsetsZero`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsetsZero).
+This property applies to the custom view. The default value is [`zero`](nsdirectionaledgeinsets/zero.md).
 
 ## See Also
 

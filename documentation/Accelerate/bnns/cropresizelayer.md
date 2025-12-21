@@ -13,7 +13,6 @@ A layer object that wraps a crop-resize filter and manages its deinitialization.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

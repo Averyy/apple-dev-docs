@@ -16,7 +16,7 @@ optional func webView(_ webView: WebView!, shouldEndEditingIn range: DOMRange!) 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to end editing `webView`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If this method returns[`true`](https://developer.apple.com/documentation/swift/true), `webView` ends editing and resigns as the first responder.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user should be allowed to end editing `webView`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If this method returns[`true`](https://developer.apple.com/documentation/Swift/true), `webView` ends editing and resigns as the first responder.
 
 #### Discussion
 

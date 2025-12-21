@@ -28,6 +28,8 @@ If unspecified, an [`NSLocale`](nslocale.md) object representing the current sys
 
 - [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
   The options for how the unit is formatted.
+- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+  Measurement formatter options.
 - [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
   The unit style.
 - [var numberFormatter: NumberFormatter!](measurementformatter/numberformatter.md)

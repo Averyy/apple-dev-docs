@@ -17,7 +17,7 @@ func present(_ viewController: any NSViewController & GKViewController) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the dashboard is presented. [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the dashboard is presented. [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurs.
 
 #### Discussion
 

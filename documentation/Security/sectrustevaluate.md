@@ -87,7 +87,7 @@ If the trust failure was caused by an untrusted root certificate and your app as
 
 It is not safe to call this function concurrently with any other function that uses the same trust management object, or to re-enter this function for the same trust management object.
 
-Because this function might look on the network for certificates in the certificate chain, the function might block while attempting network access. You should never call it from your main thread; call it only from within a function running on a dispatch queue or on a separate thread. Alternatively, in macOS, you can use [`SecTrustEvaluateAsync(_:_:_:)`](sectrustevaluateasync(_:_:_:).md) from your main thread. In iOS, you can do the same thing using [`dispatch_once`](https://developer.apple.com/documentation/dispatch/1447169-dispatch_once).
+Because this function might look on the network for certificates in the certificate chain, the function might block while attempting network access. You should never call it from your main thread; call it only from within a function running on a dispatch queue or on a separate thread. Alternatively, in macOS, you can use [`SecTrustEvaluateAsync(_:_:_:)`](sectrustevaluateasync(_:_:_:).md) from your main thread. In iOS, you can do the same thing using [`dispatch_once`](https://developer.apple.com/documentation/Dispatch/dispatch_once-c.func).
 
 ## Parameters
 

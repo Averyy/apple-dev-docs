@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An array object that contains rasterization rates.
+An array instance that contains rasterization rates.
 
 **Availability**:
 - iOS 13.0+
@@ -21,11 +21,11 @@ class MTLRasterizationRateSampleArray
 
 #### Overview
 
-The [`horizontal`](mtlrasterizationratelayerdescriptor/horizontal.md) and [`vertical`](mtlrasterizationratelayerdescriptor/vertical.md) properties of a [`MTLRasterizationRateLayerDescriptor`](mtlrasterizationratelayerdescriptor.md) point to [`MTLRasterizationRateSampleArray`](mtlrasterizationratesamplearray.md) objects that contains rasterization rates for the layer map. You can use array subscript syntax to access the samples. [`MTLRasterizationRateSampleArray`](mtlrasterizationratesamplearray.md) objects perform bounds checking on any accesses you make to their sample data.
+The [`horizontal`](mtlrasterizationratelayerdescriptor/horizontal.md) and [`vertical`](mtlrasterizationratelayerdescriptor/vertical.md) properties of an [`MTLRasterizationRateLayerDescriptor`](mtlrasterizationratelayerdescriptor.md) point to [`MTLRasterizationRateSampleArray`](mtlrasterizationratesamplearray.md) instances that contains rasterization rates for the layer map. You can use array subscript syntax to access the samples. [`MTLRasterizationRateSampleArray`](mtlrasterizationratesamplearray.md) instances perform bounds checking on any memory operations you make to their sample data.
 
 ## Topics
 
-### Accessing the Array
+### Accessing the array
 - [subscript(Int) -> Float](mtlrasterizationratesamplearray/subscript(_:).md)
   Retrieves the sample value at the specified index.
 

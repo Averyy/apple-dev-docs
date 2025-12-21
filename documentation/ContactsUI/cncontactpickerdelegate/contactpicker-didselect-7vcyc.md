@@ -15,7 +15,7 @@ Called after a contact has been selected by the user.
 ## Declaration
 
 ```swift
-optional func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact)
+optional func contactPicker(_ picker: CNContactPicker, didSelect contact: CNContact)
 ```
 
 #### Discussion

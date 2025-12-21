@@ -24,7 +24,7 @@ This value matches the result of the [`canSendText()`](mfmessagecomposeviewcontr
 ## See Also
 
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange.md)
-  Posted when the value returned by the [`canSendText()`](doc://com.apple.documentation/documentation/MessageUI/MFMessageComposeViewController/canSendText()) class method has changed.
+  Posted when the current device’s ability to send text messages changes.
 
 
 ---

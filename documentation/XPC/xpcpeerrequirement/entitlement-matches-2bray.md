@@ -6,8 +6,8 @@
 Create a requirement that the peer has the specified entitlement with the matching string value
 
 **Availability**:
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

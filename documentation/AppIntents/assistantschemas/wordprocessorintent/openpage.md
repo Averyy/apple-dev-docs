@@ -25,7 +25,7 @@ var openPage: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.wordProcessor.openPage` schema:
 
 ```swift
-@AssistantIntent(schema: .wordProcessor.openPage)
+@AppIntent(schema: .wordProcessor.openPage)
 struct OpenWordProcessorPageIntent: OpenIntent {
     @Parameter
     var target: WordProcessorPageEntity

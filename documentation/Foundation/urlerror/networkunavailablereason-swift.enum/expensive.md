@@ -27,7 +27,7 @@ The system determines what constitutes “expensive” based on the nature of th
 This reason occurs when the following conditions are true:
 
 - The only available network interfaces are expensive.
-- The [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsExpensiveNetworkAccess`](urlsessionconfiguration/allowsexpensivenetworkaccess.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+- The [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsExpensiveNetworkAccess`](urlsessionconfiguration/allowsexpensivenetworkaccess.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

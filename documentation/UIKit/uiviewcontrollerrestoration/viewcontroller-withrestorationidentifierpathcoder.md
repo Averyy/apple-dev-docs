@@ -22,8 +22,8 @@ static func viewController(withRestorationIdentifierPath identifierComponents: [
 
 ## Mentions
 
-- [About the UI restoration process](about-the-ui-restoration-process.md)
 - [About the UI preservation process](about-the-ui-preservation-process.md)
+- [About the UI restoration process](about-the-ui-restoration-process.md)
 
 #### Return Value
 

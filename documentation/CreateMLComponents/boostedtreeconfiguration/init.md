@@ -20,11 +20,6 @@ Creates a default boosted tree configuration.
 init()
 ```
 
-## See Also
-
-- [init(from: any Decoder) throws](boostedtreeconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

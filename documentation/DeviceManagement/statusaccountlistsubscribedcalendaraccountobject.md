@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s calendar account details.
+A status report of the client’s subscribed calendar details.
 
 **Availability**:
 - iOS 16.0+

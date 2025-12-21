@@ -1,4 +1,4 @@
-# CMClock APIs
+# CMClock
 
 **Framework**: Core Media
 
@@ -58,9 +58,9 @@ A reference clock you use to synchronize applications and devices.
 
 ## See Also
 
-- [CMAudioClock APIs](cmaudioclock-api.md)
+- [CMAudioClock](cmaudioclock-api.md)
   A specialized reference clock that synchronizes with audio sources.
-- [CMTimebase APIs](cmtimebase-api.md)
+- [CMTimebase](cmtimebase-api.md)
   A model of a timeline under application control.
 
 

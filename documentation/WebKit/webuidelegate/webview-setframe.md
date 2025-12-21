@@ -16,7 +16,7 @@ optional func webView(_ sender: WebView!, setFrame frame: NSRect)
 
 #### Discussion
 
-The sender invokes this method instead of setting the window’s frame directly, allowing delegates to augment the behavior by, for example, saving the original window size before resizing as a result of JavaScript running. If you do not implement this method, the `NSWindow` method [`setFrame(_:display:)`](https://developer.apple.com/documentation/AppKit/NSWindow/setFrame(_:display:)) is sent to the window that contains `sender`, with [`true`](https://developer.apple.com/documentation/swift/true) passed as the display argument.
+The sender invokes this method instead of setting the window’s frame directly, allowing delegates to augment the behavior by, for example, saving the original window size before resizing as a result of JavaScript running. If you do not implement this method, the `NSWindow` method [`setFrame(_:display:)`](https://developer.apple.com/documentation/AppKit/NSWindow/setFrame(_:display:)) is sent to the window that contains `sender`, with [`true`](https://developer.apple.com/documentation/Swift/true) passed as the display argument.
 
 ## Parameters
 

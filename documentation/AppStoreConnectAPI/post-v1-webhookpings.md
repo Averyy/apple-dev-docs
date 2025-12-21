@@ -10,7 +10,7 @@ Send an event to your server to verify your server-side webhook configuration.
 
 ## Mentions
 
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
+- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
 
 ---

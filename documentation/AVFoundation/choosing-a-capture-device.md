@@ -1,4 +1,4 @@
-# Choosing a Capture Device
+# Choosing a capture device
 
 **Framework**: AVFoundation
 
@@ -49,6 +49,8 @@ func bestDevice(in position: AVCaptureDevice.Position) -> AVCaptureDevice {
 
 ## See Also
 
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+  Capture the optimal shot by providing automatic framing recommendations.
 - [class AVCaptureDevice](avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)

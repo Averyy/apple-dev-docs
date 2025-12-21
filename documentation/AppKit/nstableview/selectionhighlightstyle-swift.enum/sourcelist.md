@@ -16,7 +16,7 @@ case sourceList
 
 The source list style of NSTableView. On 10.5, a light blue gradient is used to highlight selected rows.
 
-> **Note**:  When using this style, cell subclasses that implement `drawsBackground` must set the value to [`false`](https://developer.apple.com/documentation/swift/false). Otherwise, the cells will draw over the tableview’s highlighting.
+> **Note**:  When using this style, cell subclasses that implement `drawsBackground` must set the value to [`false`](https://developer.apple.com/documentation/Swift/false). Otherwise, the cells will draw over the tableview’s highlighting.
 
 ## See Also
 

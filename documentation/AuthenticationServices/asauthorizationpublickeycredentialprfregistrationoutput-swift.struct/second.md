@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
-A second SymmetricKey that is unique to this passkey, and derived from `input2` if it was specified.
+A second symmetric key that’s unique to the passkey, and derives from the second input, if specified.
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +17,11 @@ A second SymmetricKey that is unique to this passkey, and derived from `input2` 
 ```swift
 let second: SymmetricKey?
 ```
+
+## See Also
+
+- [let first: SymmetricKey?](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/first.md)
+  A symmetric key that’s unique to the passkey and derives from the first input, if specified.
 
 
 ---

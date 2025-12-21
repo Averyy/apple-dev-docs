@@ -37,14 +37,6 @@ For information about testing your app under different thermal states, see [`Tes
   The thermal state is high.
 - [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
-  The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
-  The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
-  The thermal state is high.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
-  The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 ### Initializers
 - [init?(rawValue: Int)](processinfo/thermalstate-swift.enum/init(rawvalue:).md)
 
@@ -60,12 +52,8 @@ For information about testing your app under different thermal states, see [`Tes
 
 ## See Also
 
-- [struct OperatingSystemVersion](operatingsystemversion.md)
-  A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers.
-- [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
-  Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
-- [Anonymous](1552984-anonymous.md)
-  The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
+- [var thermalState: ProcessInfo.ThermalState](processinfo/thermalstate-swift.property.md)
+  The current thermal state of the system.
 
 
 ---

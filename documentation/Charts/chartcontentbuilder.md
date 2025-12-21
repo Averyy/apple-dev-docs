@@ -60,7 +60,7 @@ You don’t call the methods of the result builder directly. Instead, Swift uses
 
 - [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing_your_app_s_data.md)
+- [Visualizing your app’s data](visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [struct Chart](chart.md)
   A SwiftUI view that displays a chart.

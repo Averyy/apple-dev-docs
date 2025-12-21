@@ -22,7 +22,7 @@ var alignsStartWithPrimarySegmentBoundary: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the system adjusts the start time or date of the interstitial to the nearest segment boundary when the primary player is playing an HTTP Live Streaming asset.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the system adjusts the start time or date of the interstitial to the nearest segment boundary when the primary player is playing an HTTP Live Streaming asset.
 
 ## See Also
 

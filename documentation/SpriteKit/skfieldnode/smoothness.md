@@ -17,7 +17,6 @@ The smoothness of the noise used to generate the forces.
 ## Declaration
 
 ```swift
-@MainActor
 var smoothness: Float { get set }
 ```
 

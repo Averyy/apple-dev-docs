@@ -21,7 +21,7 @@ var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false) in iOS and [`true`](https://developer.apple.com/documentation/swift/true) in macOS.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false) in iOS and [`true`](https://developer.apple.com/documentation/Swift/true) in macOS.
 
 ## See Also
 

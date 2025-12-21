@@ -15,6 +15,10 @@
 init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)
 ```
 
+#### Discussion
+
+Initializes a new document context with plain text.
+
 ## Parameters
 
 - `selectedText`: The currently selected text, or nil in the case of a caret selection.   This string may be empty but non-nil if non-textual content is selected, in which case a single call to -deleteBackward will not delete from contextBeforeSelection.   May be empty if its outside of the context’s area, even if it exists elsewhere in the document.

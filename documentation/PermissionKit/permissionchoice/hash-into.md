@@ -6,11 +6,11 @@
 Performs a hash operation on the value by feeding its hash values into the given hasher.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ func hash(into hasher: inout Hasher)
 ## Parameters
 
 - `hasher`: The hasher to use when combining the values of this instance.
+
+## See Also
+
+- [static func == (PermissionChoice, PermissionChoice) -> Bool](permissionchoice/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
 
 
 ---

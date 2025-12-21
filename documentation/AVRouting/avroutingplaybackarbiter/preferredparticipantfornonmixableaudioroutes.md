@@ -6,7 +6,7 @@
 The participant that has priority to play audio when it’s not possible to play multiple audio sources concurrently.
 
 **Availability**:
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

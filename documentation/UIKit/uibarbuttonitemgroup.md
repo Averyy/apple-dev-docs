@@ -86,7 +86,7 @@ After configuring a group, assign it to the [`UITextInputAssistantItem`](uitexti
 - [class UISearchBar](uisearchbar.md)
   A specialized view for receiving search-related information from the user.
 - [class UIToolbar](uitoolbar.md)
-  A control that displays one or more buttons along the bottom edge of your interface.
+  A control that displays one or more buttons along an edge of your interface.
 - [class UITabBar](uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
 - [class UITabBarItem](uitabbaritem.md)

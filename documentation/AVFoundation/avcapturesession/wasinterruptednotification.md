@@ -25,7 +25,7 @@ Retrieve the underlying error from the notification’s user information diction
 
 ## Topics
 
-### User-Infomation Keys
+### User-infomation keys
 - [let AVCaptureSessionInterruptionSystemPressureStateKey: String](avcapturesessioninterruptionsystempressurestatekey.md)
   A key to retrieve a state value that indicates the system pressure level and contributing factors that caused the interruption.
 - [let AVCaptureSessionInterruptionReasonKey: String](avcapturesessioninterruptionreasonkey.md)

@@ -10,7 +10,7 @@ A Boolean that you use to control whether the directional light operates as a pr
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

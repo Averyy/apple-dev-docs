@@ -21,7 +21,7 @@ var needsDisplayOnBoundsChange: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the layer automatically calls its [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method whenever its [`bounds`](calayer/bounds.md) property changes. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the layer automatically calls its [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method whenever its [`bounds`](calayer/bounds.md) property changes. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

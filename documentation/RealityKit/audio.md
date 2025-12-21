@@ -1,39 +1,45 @@
-# audio
+# Audio
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Kind**: enum
 
-The location of an audio file.
+A namespace for types that are used commonly in audio.
 
-#### Overview
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 26.0+
+- visionOS 1.0+
 
-The default value is blank. Each instance of `AudioAction` must supply its own value for this property and an accompanying music file by the same name within the asset.
+## Declaration
 
-##### Declaration
-
-```other
-uniform asset audio
+```swift
+enum Audio
 ```
 
-##### Define an Audio File
+## Topics
 
-The following line shows how to define a path to an audio file named `backgroundMusic.m4a`:
-
-```other
-uniform asset audio = @backgroundMusic.m4a@
-```
+### Type Aliases
+- [typealias Decibel](audio/decibel.md)
+  The unit for measuring intensity of sound on a logarithmic scale.
+- [typealias GeneratorRenderHandler](audio/generatorrenderhandler.md)
+  A handler that generates real-time audio.
+### Enumerations
+- [Audio.Directivity](audio/directivity.md)
+  The radiation pattern of sound emitted from an entity.
+- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+  The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 ## See Also
 
-- [info:id](info-id.md)
-  The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
-  A list of prims that respond to the notification.
-- [type](type.md)
-  An option that controls the order in which the actions execute.
-- [gain](gain.md)
-  A value that controls the audio volume.
-- [auralMode](auralmode.md)
-  An option that controls the audio signal’s spacial dynamics.
+- [typealias Decibel](audio/decibel.md)
+  The unit for measuring intensity of sound on a logarithmic scale.
+- [Audio.Directivity](audio/directivity.md)
+  The radiation pattern of sound emitted from an entity.
+- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+  The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 
 ---

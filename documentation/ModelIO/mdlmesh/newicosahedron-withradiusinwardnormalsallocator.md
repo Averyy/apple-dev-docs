@@ -27,7 +27,7 @@ A new mesh object.
 
 This method generates vertex data for an icosahedron centered at the origin of its local coordinate system. An icosahedron is a rough approximation of a sphere—to generate a more precise approximation, create an icosahedron and use the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](mdlmesh/newsubdividedmesh(_:submeshindex:subdivisionlevels:).md) method to turn it into a geodesic sphere.
 
-The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/swift/false) if the mesh will be viewed from outside.
+The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/Swift/false) if the mesh will be viewed from outside.
 
 ## Parameters
 

@@ -24,8 +24,8 @@ case numericOverflow
 
 - [OptimizationError.numericUnderflow](optimizationerror/numericunderflow.md)
   Numerical underflow (not enough progress).
-- [var errorDescription: String?](optimizationerror/errordescription.md)
-  A localized message describing what error occurred.
+- [OptimizationError.unsupportedPlatform](optimizationerror/unsupportedplatform.md)
+  The optimization operation is not supported on this platform.
 
 
 ---

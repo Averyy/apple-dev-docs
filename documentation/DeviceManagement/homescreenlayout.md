@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the Home screen layout.
+The payload that configures the Home Screen layout.
 
 **Availability**:
 - iOS 9.3+
@@ -20,9 +20,9 @@ object HomeScreenLayout
 
 Specify `com.apple.homescreenlayout` as the payload type.
 
-This payload defines a layout of apps, folders, and web clips for the Home screen. On iOS, this layout is locked and can’t be modified by the user.
+This payload defines a layout of apps, folders, and web clips for the Home Screen. This layout is locked and can’t be modified by the user.
 
-If a home screen layout puts more than four items in the iPhone or iPod touch dock the location of the fifth and succeeding items may be undefined but they will not be omitted.
+If a Home Screen layout puts more than four items in the iPhone Dock the location of the fifth and succeeding items may be undefined but they will not be omitted.
 
 To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restrictions`](restrictions.md).
 
@@ -185,23 +185,23 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 ## See Also
 
 - [object Accessibility](accessibility.md)
-  The payload you use to configure the accessibility features of the device.
+  The payload that configures the accessibility features of the device.
 - [object Desktop](desktop.md)
-  The payload you use to configure the desktop.
+  The payload that configures the desktop wallpaper.
 - [object Dock](dock.md)
-  The payload you use to configure the dock.
+  The payload that configures the Dock.
 - [object Finder](finder.md)
-  The payload you use to configure Finder settings.
+  The payload that configures Finder settings.
 - [object ManagedMenuExtras](managedmenuextras.md)
-  The payload you use to configure menu extras.
+  The payload that configures menu extras.
 - [object Notifications](notifications.md)
-  The payload you use to configure notifications.
+  The payload that configures notifications.
 - [object ScreensaverUser](screensaveruser.md)
-  The payload you use to configure a user’s screen-saver settings.
+  The payload that configures a user’s screen saver settings.
 - [object SetupAssistant](setupassistant.md)
-  The payload you use to configure setup-assistant settings.
+  The payload that configures Setup Assistant settings.
 - [object TimeMachine](timemachine.md)
-  The payload you use to configure Time Machine.
+  The payload that configures Time Machine.
 
 
 ---

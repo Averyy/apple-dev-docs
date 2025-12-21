@@ -8,13 +8,14 @@ An array of time ranges that identify interstitial content.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 @MainActor
-var interstitialTimeRanges: [AVInterstitialTimeRange] { get }
+var interstitialTimeRanges: [AVInterstitialTimeRange] { get set }
 ```
 
 #### Discussion
@@ -29,6 +30,8 @@ Interstitial content is material that’s unrelated to a player item’s primary
   An integrated timeline that represents the player item timing including its scheduled interstitial events.
 - [var automaticallyHandlesInterstitialEvents: Bool](avplayeritem/automaticallyhandlesinterstitialevents.md)
   A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives.
+- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
+  A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
 - [var template: AVPlayerItem?](avplayeritem/template.md)
   The template player item that initializes this instance.
 

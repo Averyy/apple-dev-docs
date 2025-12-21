@@ -21,7 +21,7 @@ class AVFragmentedMovie
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVFragmentedMovieTrack]>](avpartialasyncproperty/tracks-7fr6q.md)
   The tracks that a movie contains.
 - [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVFragmentedMovieTrack?, (any Error)?) -> Void)](avfragmentedmovie/loadtrack(withtrackid:completionhandler:).md)
@@ -30,7 +30,7 @@ class AVFragmentedMovie
   Loads tracks that contain media of a specified type.
 - [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVFragmentedMovieTrack]?, (any Error)?) -> Void)](avfragmentedmovie/loadtracks(withmediacharacteristic:completionhandler:).md)
   Loads tracks that contain media of a specified characteristic.
-### Accessing Tracks
+### Accessing tracks
 - [var tracks: [AVFragmentedMovieTrack]](avfragmentedmovie/tracks.md)
   The tracks that a movie contains.
 - [func track(withTrackID: CMPersistentTrackID) -> AVFragmentedMovieTrack?](avfragmentedmovie/track(withtrackid:).md)

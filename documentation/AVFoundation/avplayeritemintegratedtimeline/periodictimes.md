@@ -22,7 +22,7 @@ struct PeriodicTimes
 
 ## Topics
 
-### Iterating Elements
+### Iterating elements
 - [AVPlayerItemIntegratedTimeline.PeriodicTimes.Iterator](avplayeritemintegratedtimeline/periodictimes/iterator.md)
 
 ## Relationships

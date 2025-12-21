@@ -4,13 +4,18 @@
 **Kind**: case
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 case programmatic(TabletopInteraction.ProgrammaticInteractionConstants)
 ```
+
+## See Also
+
+- [case direct(TabletopInteraction.DirectInteractionConstants)](tabletopinteraction/constants/direct(_:).md)
+- [case indirect(TabletopInteraction.IndirectInteractionConstants)](tabletopinteraction/constants/indirect(_:).md)
 
 
 ---

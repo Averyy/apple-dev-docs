@@ -5,11 +5,6 @@
 
 Adds a new assets group to the library.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -18,7 +13,7 @@ func addAssetsGroupAlbum(withName name: String!, resultBlock: ALAssetsLibraryGro
 
 #### Discussion
 
-The name of the new asset group is `name`, its type is [`ALAssetsGroupAlbum`](alassetsgroupalbum.md), and the [`isEditable`](alassetsgroup/iseditable.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+The name of the new asset group is `name`, its type is [`ALAssetsGroupAlbum`](alassetsgroupalbum.md), and the [`isEditable`](alassetsgroup/iseditable.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This method is asynchronous. When the assets group is added, the user may be asked to confirm the application’s access to the data; the method, though, returns immediately. You should perform whatever work you want with the group in `resultBlock`.
 

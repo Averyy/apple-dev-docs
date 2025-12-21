@@ -22,12 +22,12 @@ optional func application(_ application: UIApplication, didFinishLaunchingWithOp
 ## Mentions
 
 - [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
-- [About the UI restoration process](about-the-ui-restoration-process.md)
 - [About the app launch sequence](about-the-app-launch-sequence.md)
+- [About the UI restoration process](about-the-ui-restoration-process.md)
 
 #### Return Value
 
-Return [`false`](https://developer.apple.com/documentation/swift/false) if the app can’t handle the URL resource or continue a user activity, otherwise return [`true`](https://developer.apple.com/documentation/swift/true). The system ignores the return value if the app launches as a result of a remote notification.
+Return [`false`](https://developer.apple.com/documentation/Swift/false) if the app can’t handle the URL resource or continue a user activity, otherwise return [`true`](https://developer.apple.com/documentation/Swift/true). The system ignores the return value if the app launches as a result of a remote notification.
 
 #### Discussion
 
@@ -49,7 +49,7 @@ This method represents your last chance to process any keys in the `launchOption
 
 Objects that aren’t the app delegate can access the same `launchOptions` dictionary values by observing the notification named [`didFinishLaunchingNotification`](uiapplication/didfinishlaunchingnotification.md) and accessing the notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary. The system sends that notification shortly after this method returns.
 
-The system combines the return result from this method with the return result from the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) method to determine whether to handle a URL. If either method returns [`false`](https://developer.apple.com/documentation/swift/false), the system doesn’t handle the URL. If you don’t implement one of the methods, the system only considers the return value of the implemented method.
+The system combines the return result from this method with the return result from the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) method to determine whether to handle a URL. If either method returns [`false`](https://developer.apple.com/documentation/Swift/false), the system doesn’t handle the URL. If you don’t implement one of the methods, the system only considers the return value of the implemented method.
 
 ## Parameters
 

@@ -6,8 +6,8 @@
 Whether the layer supports drawing using Metal4, if false assumed to be using Metal3.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

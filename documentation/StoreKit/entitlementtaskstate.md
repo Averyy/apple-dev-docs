@@ -55,17 +55,13 @@ To get an entitlement task state, use [`currentEntitlementTask(for:priority:acti
 
 ## See Also
 
-- [nonisolated func storeProductTask(for id: Product.ID, priority: TaskPriority = .medium, action: @escaping (Product.TaskState) async -> ()) -> some View
-](../SwiftUI/View/storeProductTask(for:priority:action:).md)
+- [func storeProductTask(for: Product.ID, priority: TaskPriority, action: (Product.TaskState) async -> ()) -> some View](../SwiftUI/View/storeProductTask(for:priority:action:).md)
   Declares the view as dependent on an In-App Purchase product and returns a modified view.
-- [nonisolated func storeProductsTask(for ids: some Collection<String> & Equatable & Sendable, priority: TaskPriority = .medium, action: @escaping (Product.CollectionTaskState) async -> ()) -> some View
-](../SwiftUI/View/storeProductsTask(for:priority:action:).md)
+- [func storeProductsTask(for: some Collection<String> & Equatable & Sendable, priority: TaskPriority, action: (Product.CollectionTaskState) async -> ()) -> some View](../SwiftUI/View/storeProductsTask(for:priority:action:).md)
   Declares the view as dependent on a collection of In-App Purchase products and returns a modified view.
-- [nonisolated func currentEntitlementTask(for productID: String, priority: TaskPriority = .medium, action: @escaping (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View
-](../SwiftUI/View/currentEntitlementTask(for:priority:action:).md)
+- [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](../SwiftUI/View/currentEntitlementTask(for:priority:action:).md)
   Declares the view as dependent on the entitlement of an In-App Purchase product, and returns a modified view.
-- [nonisolated func subscriptionStatusTask(for groupID: String, priority: TaskPriority = .medium, action: @escaping (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View
-](../SwiftUI/View/subscriptionStatusTask(for:priority:action:).md)
+- [func subscriptionStatusTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View](../SwiftUI/View/subscriptionStatusTask(for:priority:action:).md)
   Declares the view as dependent on the status of an auto-renewable subscription group, and returns a modified view.
 - [Product.CollectionTaskState](product/collectiontaskstate.md)
   The state of a task that loads a collection of products in the background.

@@ -16,7 +16,7 @@ let kQLThumbnailPropertyBaseBundlePathKey: CFString!
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh. By default, the Quick Look feature only accepts files within the current document bundle. To generate thumbnails for files at a different location, use `kQLThumbnailPropertyBaseBundlePathKey` with [`QLThumbnailRequestSetImageAtURL(_:_:_:)`](qlthumbnailrequestsetimageaturl(_:_:_:).md) or [`QLThumbnailRequestSetThumbnailWithURLRepresentation(_:_:_:_:_:)`](qlthumbnailrequestsetthumbnailwithurlrepresentation(_:_:_:_:_:).md).
+The associated value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). By default, the Quick Look feature only accepts files within the current document bundle. To generate thumbnails for files at a different location, use `kQLThumbnailPropertyBaseBundlePathKey` with [`QLThumbnailRequestSetImageAtURL(_:_:_:)`](qlthumbnailrequestsetimageaturl(_:_:_:).md) or [`QLThumbnailRequestSetThumbnailWithURLRepresentation(_:_:_:_:_:)`](qlthumbnailrequestsetthumbnailwithurlrepresentation(_:_:_:_:_:).md).
 
 ## See Also
 

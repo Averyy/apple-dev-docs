@@ -21,7 +21,7 @@ let kVTDecompressionResolutionKey_Height: CFString
 
 #### Discussion
 
-The value is a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
 
 ## See Also
 

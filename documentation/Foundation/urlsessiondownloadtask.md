@@ -22,8 +22,8 @@ class URLSessionDownloadTask
 
 ## Mentions
 
-- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
 
 #### Overview

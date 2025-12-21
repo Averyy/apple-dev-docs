@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A transcript that documents interactions with a language model. Transcripts contain an ordered list of entries, representing inputs to and outputs from the model.
+A linear history of entries that reflect an interaction with a session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,13 +22,58 @@ struct Transcript
 
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 
+#### Overview
+
+Use a `Transcript` to visualize previous instructions, prompts and model responses. If you use tool calling, a `Transcript` includes a history of tool calls and their results.
+
+```swift
+struct HistoryView: View {
+    let session: LanguageModelSession
+
+    var body: some View {
+        ScrollView {
+            ForEach(session.transcript) { entry in
+                switch entry {
+                case let .instructions(instructions):
+                    MyInstructionsView(instructions)
+                case let .prompt(prompt)
+                    MyPromptView(prompt)
+                case let .toolCalls(toolCalls):
+                    MyToolCallsView(toolCalls)
+                case let .toolOutput(toolOutput):
+                    MyToolOutputView(toolOutput)
+                case let .response(response):
+                    MyResponseView(response)
+                }
+            }
+        }
+    }
+}
+```
+
+When you create a new [`LanguageModelSession`](languagemodelsession.md) it doesn’t contain the state of a previous session. You can initialize a new session with a list of entries you get from a session [`transcript`](languagemodelsession/transcript.md):
+
+```swift
+// Create a new session with the first and last entries from a previous session.
+func newContextualSession(with originalSession: LanguageModelSession) -> LanguageModelSession {
+    let allEntries = originalSession.transcript
+
+    // Collect the entries to keep from the original session.
+    let entries = [allEntries.first, allEntries.last].compactMap { $0 }
+    let transcript = Transcript(entries: entries)
+
+    // Create a new session with the result and preload the session resources.
+    var session = LanguageModelSession(transcript: transcript)
+    session.prewarm()
+    return session
+}
+```
+
 ## Topics
 
 ### Creating a transcript
 - [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
   Creates a transcript.
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [Transcript.Entry](transcript/entry.md)
   An entry in a transcript.
 - [Transcript.Segment](transcript/segment.md)
@@ -37,7 +82,7 @@ struct Transcript
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)
@@ -54,39 +99,6 @@ struct Transcript
   A definition of a tool.
 - [Transcript.ToolOutput](transcript/tooloutput.md)
   A tool output provided back to the model.
-### Encoding a transcript
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing a transcript
-- [static func == (Transcript, Transcript) -> Bool](transcript/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var endIndex: Int](transcript/endindex.md)
-  The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var startIndex: Int](transcript/startindex.md)
-  The position of the first element in a nonempty collection.
-### Subscripts
-- [subscript(Transcript.Index) -> Transcript.Entry](transcript/subscript(_:).md)
-  Accesses the element at the specified position.
-### Type Aliases
-- [Transcript.Element](transcript/element.md)
-  A type representing the sequence’s elements.
-- [Transcript.Index](transcript/index.md)
-  A type that represents a position in the collection.
-- [Transcript.Indices](transcript/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Transcript.Iterator](transcript/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [Transcript.SubSequence](transcript/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](transcript/bidirectionalcollection-implementations.md)
-- [Collection Implementations](transcript/collection-implementations.md)
-- [Decodable Implementations](transcript/decodable-implementations.md)
-- [Encodable Implementations](transcript/encodable-implementations.md)
-- [Equatable Implementations](transcript/equatable-implementations.md)
-- [RandomAccessCollection Implementations](transcript/randomaccesscollection-implementations.md)
-- [Sequence Implementations](transcript/sequence-implementations.md)
 
 ## Relationships
 
@@ -104,10 +116,14 @@ struct Transcript
 
 ## See Also
 
+- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+  Tailor your prompts to get effective results from an on-device model.
+- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
+  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [class LanguageModelSession](languagemodelsession.md)
-  An object that represents a session that interacts with a large language model.
+  An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)
-  Instructions define the model’s intended behavior on prompts.
+  Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct GenerationOptions](generationoptions.md)

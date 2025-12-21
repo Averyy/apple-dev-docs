@@ -64,7 +64,7 @@ In this example, tapping the label titled “Mint” pushes a `ColorDetail(color
 
 When you use [`init(destination:label:)`](navigationlink/init(destination:label:).md), note that:
 
-- SwiftUI tracks the navigation state and the content of the navigation path; however, there are no stateful hooks for your app that indicate when a view has been pushed.
+- SwiftUI tracks the navigation state and the content of the navigation path; however, there are no stateful hooks for your app that indicate when the system pushes a view.
 - Its state can’t be restored programmatically.
 
 Use the stateful navigation techniques described in [`Manage navigation state and compose links`](understanding-the-composition-of-navigation-stack#Manage-navigation-state-and-compose-links.md) to track when a navigation link triggers, instead of [`onAppear(perform:)`](view/onappear(perform:).md) or [`task(priority:_:)`](view/task(priority:_:).md).
@@ -394,7 +394,7 @@ The logs print because view-destination navigation links don’t cause any state
 
 State restoration for a navigation path enables you restore your interface to the previous interaction point during a subsequent launch, providing continuity for people using your app.
 
-In iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. For this reason, it’s important to think about state restoration for navigation path in the same way you handle restoring your app’s state at the window or scene level. See [`Restoring Your App’s State with SwiftUI`](restoring_your_app_s_state_with_swiftui.md) to learn about storing scene data.
+In iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. For this reason, it’s important to think about state restoration for navigation path in the same way you handle restoring your app’s state at the window or scene level. See [`Restoring your app’s state with SwiftUI`](restoring-your-app-s-state-with-swiftui.md) to learn about storing scene data.
 
 Using `Codable`, you can manually persist and load the navigation stack path in one of two ways, depending on whether the path data type is homogeneous or heterogeneous. Store a homogenous path as in the following example:
 
@@ -462,7 +462,7 @@ struct ContentView: View {
 }
 ```
 
-In the above example, when the `path` changes, `didSet` property observer triggers and the `save` function is called. The function saves the new path to disk so it can be restored when the app initializes `NavigationManager`.
+In the above example, when the `path` changes, `didSet` property observer triggers and the `save` function is called. The function saves the new path to disk enabling the app to restore it when initializing `NavigationManager`.
 
 Store a heterogeneous path using `NavigationPath`, as shown in the following example:
 

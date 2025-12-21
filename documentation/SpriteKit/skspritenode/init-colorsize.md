@@ -17,8 +17,7 @@ Initializes a single-color sprite node.
 ## Declaration
 
 ```swift
-@MainActor
-convenience init(color: NSColor, size: CGSize)
+convenience init(color: UIColor, size: CGSize)
 ```
 
 #### Return Value

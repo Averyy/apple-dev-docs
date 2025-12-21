@@ -6,13 +6,13 @@
 Translates print text to Braille and Braille to print text according to the given Braille table.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -41,6 +41,15 @@ class AXBrailleTranslator
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [Braille displays](braille-displays.md)
+  Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
+- [class AXBrailleTable](axbrailletable.md)
+  A rule for translating print text to Braille, and back-translating Braille to print text.
+- [class AXBrailleTranslationResult](axbrailletranslationresult.md)
+  The result of translation or back-translation.
 
 
 ---

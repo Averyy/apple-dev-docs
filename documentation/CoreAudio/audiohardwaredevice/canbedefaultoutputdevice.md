@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A Bool where true indicates that the device is a possible selection for default output device.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

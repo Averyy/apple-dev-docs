@@ -32,6 +32,8 @@ func adaptedAsRandomTransformer() -> some RandomTransformer<Self.Input, Self.Out
   Returns an annotated-prediction transformer that transforms the predictions using this transformer while leaving the annotations unchanged.
 - [func adaptedAsEstimator() -> TransformerToEstimatorAdaptor<Self>](transformer/adaptedasestimator.md)
   Exposes this transformer as a trivial estimator.
+- [func adaptedAsTemporal()](transformer/adaptedastemporal.md)
+  Exposes this transformer as a temporal transformer.
 - [func adaptedAsUpdatableEstimator() -> TransformerToUpdatableEstimatorAdaptor<Self>](transformer/adaptedasupdatableestimator.md)
   Exposes this transformer as a trivial estimator.
 - [associatedtype Input](transformer/input.md)

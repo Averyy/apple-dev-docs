@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+Whether camera lens smudge detection is supported.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,9 +20,7 @@ var isCameraLensSmudgeDetectionSupported: Bool { get }
 
 #### Discussion
 
-A BOOL value specifying whether camera lens smudge detection is supported.
-
-This property returns YES if the session’s current configuration supports lens smudge detection. When switching cameras or formats this property may change. When this property changes from YES to NO, cameraLensSmudgeDetectionEnabled also reverts to NO. If you’ve previously opted in for lens smudge detection and then change configurations, you may need to set cameraLensSmudgeDetectionEnabled = YES again.
+This property returns `true` if the session’s current configuration supports lens smudge detection. When switching cameras or formats, this property may change. When this property changes from `true` to `false`, [`isCameraLensSmudgeDetectionEnabled`](avcapturedevice/iscameralenssmudgedetectionenabled.md) also reverts to `false`. If you opt in for lens smudge detection and then change configurations, you should set [`isCameraLensSmudgeDetectionEnabled`](avcapturedevice/iscameralenssmudgedetectionenabled.md) to `true` again.
 
 
 ---

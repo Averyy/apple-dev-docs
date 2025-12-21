@@ -11,7 +11,7 @@ The list of points of interest that match the request options.
 ## Declaration
 
 ```swift
-attribute Place[] places;
+places: Place[];
 ```
 
 

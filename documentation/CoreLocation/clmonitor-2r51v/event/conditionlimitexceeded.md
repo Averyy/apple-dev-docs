@@ -19,7 +19,7 @@ var conditionLimitExceeded: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app isn’t receiving location updates because it’s monitoring too many other conditions of this type.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then the app isn’t receiving location updates because it’s monitoring too many other conditions of this type.
 
 ## See Also
 

@@ -24,7 +24,7 @@ This article describes several best practices to help you avoid introducing hang
 
 Make sure your app uses the main thread only to interact with the user interface (UIKit, AppKit, or SwiftUI). Direct all other operations to a background thread, operation queue, or Grand Central Dispatch queue. To learn more about hangs and why it’s essential to keep the main thread free from non-UI work, see [`Understanding hangs in your app`](understanding-hangs-in-your-app.md).
 
-With [`Swift concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), make sure not to accidentally execute work on the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor). The correct approach to get work off of the main actor depends on whether you can refactor the heavy work into a non-actor-isolated asynchronous function. If you can wrap the long-running work in such a way to make it `async` and `nonisolated`, it’s easy to execute it off of the main actor with a `Task` and `await`. If this isn’t possible, execute the synchronous function inside a call to the [`detached(priority:operation:)`](https://developer.apple.com/documentation/Swift/Task/detached(priority:operation:)-d24l) function.
+With [`Swift concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), make sure not to accidentally execute work on the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor). The correct approach to get work off of the main actor depends on whether you can refactor the heavy work into a non-actor-isolated asynchronous function. If you can wrap the long-running work in such a way to make it `async` and `nonisolated`, it’s easy to execute it off of the main actor with a `Task` and `await`. If this isn’t possible, execute the synchronous function inside a call to the [`detached(name:priority:operation:)`](https://developer.apple.com/documentation/Swift/Task/detached(name:priority:operation:)-795w1) function.
 
 Below there are three almost identical code examples. The first one shows how to correctly get off of the main actor if you can wrap the long-running work in a `nonisolated` `async` function. The second example shows a common mistake where the code looks as if it avoids the hang, but doesn’t. This example just causes a hang a little later due to a `Task` implicitly inheriting the actor-constraint from its surrounding context. The last example shows how to break this implicit actor-constraint inheritance by using a detached `Task` instead. The subtle differences in these examples cause completely different execution behavior. Be aware of these in your own Swift concurrency code.
 
@@ -201,13 +201,11 @@ The operating systems on Apple devices monitor for hangs and hitches for running
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
 - [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
-  Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
+  Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 - [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
   Create a more responsive experience with your app by minimizing time spent in startup.
 - [Reducing terminations in your app](reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
-- [Reducing disk writes](reducing-disk-writes.md)
-  Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 
 
 ---

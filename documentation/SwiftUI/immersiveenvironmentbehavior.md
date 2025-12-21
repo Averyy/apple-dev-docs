@@ -6,7 +6,7 @@
 The behavior of the system-provided immersive environments when a scene is opened by your app.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

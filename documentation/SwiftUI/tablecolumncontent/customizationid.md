@@ -23,7 +23,7 @@ Sets the identifier to be associated with a column when persisting its state wit
 
 This is required to allow user customization of a specific table column, in addition to the table as a whole being provided a binding to a `TableColumnCustomization`.
 
-The identifier needs to to be stable, including across app version updates, since it is used to persist the user customization.
+The identifier needs to be stable, including across app version updates, since it is used to persist the user customization.
 
 ## Parameters
 

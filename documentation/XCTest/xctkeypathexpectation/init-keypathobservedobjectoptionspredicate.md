@@ -10,7 +10,6 @@ Creates an expectation that the system fulfills when the value of the observed p
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
@@ -20,7 +19,7 @@ convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueO
 
 #### Discussion
 
-Use this initializer to create an expectation that observes changes on the observed object until the predicate returns [`true`](https://developer.apple.com/documentation/swift/true), fulfilling the expectation.
+Use this initializer to create an expectation that observes changes on the observed object until the predicate returns [`true`](https://developer.apple.com/documentation/Swift/true), fulfilling the expectation.
 
 ## Parameters
 

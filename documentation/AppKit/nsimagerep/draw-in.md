@@ -16,7 +16,7 @@ func draw(in rect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If the size of the image has not yet been set, this method returns [`false`](https://developer.apple.com/documentation/swift/false) immediately.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If the size of the image has not yet been set, this method returns [`false`](https://developer.apple.com/documentation/Swift/false) immediately.
 
 #### Discussion
 

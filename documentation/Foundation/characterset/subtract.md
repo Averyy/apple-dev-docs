@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Sets the value to a `CharacterSet` created by removing elements in `other` from `self`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

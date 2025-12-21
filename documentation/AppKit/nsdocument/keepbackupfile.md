@@ -17,7 +17,7 @@ var keepBackupFile: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes each new save operation to replace the document’s on-disk content. If you override this method and return [`true`](https://developer.apple.com/documentation/swift/true), a save operation saves the document’s previous contents in a backup file before saving the current contents.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes each new save operation to replace the document’s on-disk content. If you override this method and return [`true`](https://developer.apple.com/documentation/Swift/true), a save operation saves the document’s previous contents in a backup file before saving the current contents.
 
 ## See Also
 

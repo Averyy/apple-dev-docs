@@ -20,7 +20,7 @@ object Profile
 - [object Profile.Attributes](profile/attributes-data.dictionary.md)
   Attributes that describe a Profiles resource.
 - [object Profile.Relationships](profile/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

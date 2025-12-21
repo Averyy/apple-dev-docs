@@ -16,36 +16,75 @@ Initiate an outgoing call with a VoIP app in any of the following ways:
 - Open a link with a supported custom URL scheme.
 - Begin a VoIP call using Siri.
 
-For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling protocol.
+For more information about registering and handling URLs, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app). For more information about initiating a call using Siri, see the [`INStartCallIntentHandling`](https://developer.apple.com/documentation/Intents/INStartCallIntentHandling) protocol.
 
-To make an outgoing call, an app requests a [`CXStartCallAction`](cxstartcallaction.md) object from its [`CXCallController`](cxcallcontroller.md) object. The action consists of a UUID to uniquely identify the call and a [`CXHandle`](cxhandle.md) object to specify the recipient, as the following code example shows:
+To make an outgoing call, request a [`CXStartCallAction`](cxstartcallaction.md) object. The action consists of a UUID to uniquely identify the call and a [`CXHandle`](cxhandle.md) object to specify the recipient, as shown in the following example from the [`VoIP calling with CallKit`](voip-calling-with-callkit.md) sample code project:
 
 ```swift
-let uuid = UUID()
-let handle = CXHandle(type: .emailAddress, value: "mruiz2@icloud.com")
- 
-let startCallAction = CXStartCallAction(call: uuid)
-startCallAction.destination = handle
- 
-let transaction = CXTransaction(action: startCallAction)
-callController.request(transaction) { error in
-    if let error = error {
-        print("Error requesting transaction: \(error)")
-    } else {
-        print("Requested transaction successfully")
+func startCall(handle: String, video: Bool = false) {
+    let handle = CXHandle(type: .phoneNumber, value: handle)
+    let startCallAction = CXStartCallAction(call: UUID(), handle: handle)
+
+    startCallAction.isVideo = video
+
+    let transaction = CXTransaction()
+    transaction.addAction(startCallAction)
+
+    requestTransaction(transaction)
+}
+
+private func requestTransaction(_ transaction: CXTransaction) {
+    callController.request(transaction) { error in
+        if let error = error {
+            print("Error requesting transaction:", error.localizedDescription)
+        } else {
+            print("Requested transaction successfully")
+        }
     }
 }
 ```
 
 The `CXHandle` object specifies metadata for the outgoing call. In the example above, it uses an email address. The system on the receiving device uses this metadata to display caller information in the CallKit interface by looking for a matching contact in the recipient’s Contacts app. If the system finds a match, the CallKit interface uses the matching contact data to display the name and a photo as a poster or contact icon. If the recipient’s system can’t find a matching contact in the Contacts app and you provide a Call Directory app extension, it uses the extension to identify the caller and display rich contact information in the CallKit interface. For more information about creating a Call Directory app extension, see [`Identifying and blocking calls`](identifying-and-blocking-calls.md).
 
-After the recipient answers the call, the system calls the provider delegate’s [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-2lem5.md) method. In your implementation of that method, configure an [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) and call the [`fulfill()`](cxaction/fulfill().md) method on the action object when it finishes, as in the code example below:
+After you request to start a VoIP call using a [`CXTransaction`](cxtransaction.md), you need to wait for confirmation from the system to actually start the call. After you requested a call as shown in the example above, the system calls your provider delegate’s [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-2lem5.md) method to let you know that it accepted the [`CXTransaction`](cxtransaction.md) you created and that you can start your VoIP session. In your implementation of the [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-2lem5.md) callback method, configure an [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) and call the [`fulfill()`](cxaction/fulfill().md) method on the action object when it finishes, as shown in the following code snippet from the [`VoIP calling with CallKit`](voip-calling-with-callkit.md) sample code project:
 
 ```swift
-func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
-    // Configure the audio session.
-    // ...
-    action.fulfill()
+func provider(_ provider: CXProvider, perform action: CXStartCallAction) {
+    // Create and configure an instance of SpeakerboxCall to represent the new outgoing call.
+    let call = SpeakerboxCall(uuid: action.callUUID, isOutgoing: true)
+    call.handle = action.handle.value
+
+    /*
+     Configure the audio session but do not start call audio here.
+     Call audio should not be started until the audio session is activated by the system,
+     after having its priority elevated.
+     */
+    configureAudioSession()
+
+    /*
+     Set callbacks for significant events in the call's lifecycle,
+     so that the CXProvider can be updated to reflect the updated state.
+     */
+    call.hasStartedConnectingDidChange = { [weak self] in
+        self?.provider.reportOutgoingCall(with: call.uuid, startedConnectingAt: call.connectingDate)
+    }
+    call.hasConnectedDidChange = {[weak self] in
+        self?.provider.reportOutgoingCall(with: call.uuid, connectedAt: call.connectDate)
+    }
+
+    // Trigger the call to be started via the underlying network service.
+    call.startSpeakerboxCall { success in
+        if success {
+            // Signal to the system that the action was successfully performed.
+            action.fulfill()
+
+            // Add the new outgoing call to the app's list of calls.
+            self.callManager.addCall(call)
+        } else {
+            // Signal to the system that the action was unable to be performed.
+            action.fail()
+        }
+    }
 }
 ```
 

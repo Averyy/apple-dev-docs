@@ -21,7 +21,7 @@ enum MTLSparseTextureRegionAlignmentMode
 
 ## Topics
 
-### Specifying the Alignment Mode
+### Specifying the alignment mode
 - [MTLSparseTextureRegionAlignmentMode.outward](mtlsparsetextureregionalignmentmode/outward.md)
   The tile region includes any partially covered tiles.
 - [MTLSparseTextureRegionAlignmentMode.inward](mtlsparsetextureregionalignmentmode/inward.md)

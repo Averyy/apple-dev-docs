@@ -5,11 +5,6 @@
 
 All the photos in the Camera Roll.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

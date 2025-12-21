@@ -6,11 +6,11 @@
 A type that the model uses when responding to prompts.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,39 +20,49 @@ protocol Generable : ConvertibleFromGeneratedContent, ConvertibleToGeneratedCont
 
 ## Mentions
 
+- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
+- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
 
 #### Overview
 
-Annotate your Swift structure or enumeration with the `@Generable` macro to allow the model to respond to prompts by generating an instance of your type. Use the `@Guide` macro to provide natural language descriptions of your properties, and programmatically control the values that the model can generate.
+Annotate your Swift structure or enumeration with the `Generable` macro to allow the model to respond to prompts by generating an instance of your type. Use the `Guide` macro to provide natural language descriptions of your properties, and programmatically control the values that the model can generate.
 
 ```swift
 @Generable
 struct SearchSuggestions {
-    @Guide(description: "A list of suggested search terms", .count(4))
+    @Guide(description: "A list of suggested search terms.", .count(4))
     var searchTerms: [SearchTerm]
-
     @Generable
     struct SearchTerm {
-        // Use a generation identifier for types the framework generates.
+        // Use a generation identifier for data structures the framework generates.
         var id: GenerationID
-
-        @Guide(description: "A 2 or 3 word search term, like 'Beautiful sunsets'")
+        @Guide(description: "A two- or three- word search term, like 'Beautiful sunsets'.")
         var searchTerm: String
     }
 }
 ```
 
+For every [`Generable`](generable.md) type in a request, the framework converts its type and format information to a JSON schema and provides it to the model. This contributes to the available context window size. If the [`LanguageModelSession`](languagemodelsession.md) exceeds the available context size, it throws [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md). To reduce the size of your generable type:
+
+- Reduce the complexity of your [`Generable`](generable.md) type by evaluating whether properties are necessary to complete the task.
+- Give your properties short and clear names.
+- Use [`Guide(description:)`](guide(description:).md) on properties only when it improves response quality.
+- Add a [`Guide(description:_:)`](guide(description:_:).md) with [`maximumCount(_:)`](generationguide/maximumcount(_:).md) to reduce token usage.
+
+If the [`Generable`](generable.md) type includes properties with clear names the model may have all it needs to generate your type, eliminating the need of [`Guide(description:)`](guide(description:).md). For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+
 ## Topics
 
 ### Defining a generable type
 - [macro Generable(description: String?)](generable(description:).md)
-  Conforms a type to generable.
+  Conforms a type to [`Generable`](generable.md) protocol.
 ### Creating a guide
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a generable type.
+  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
 - [macro Guide(description:_:)](guide(description:_:).md)
-  Allows for influencing the allowed values of properties of a generable type.
+  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
 - [struct GenerationGuide](generationguide.md)
   Guides that control how values are generated.
 ### Getting the schema

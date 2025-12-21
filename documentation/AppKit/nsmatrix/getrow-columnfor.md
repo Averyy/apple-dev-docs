@@ -17,7 +17,7 @@ func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<I
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point lies within one of the cells in the receiver; [`false`](https://developer.apple.com/documentation/swift/false) if the point falls outside the bounds of the receiver or lies within an intercell spacing.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the point lies within one of the cells in the receiver; [`false`](https://developer.apple.com/documentation/Swift/false) if the point falls outside the bounds of the receiver or lies within an intercell spacing.
 
 ## Parameters
 

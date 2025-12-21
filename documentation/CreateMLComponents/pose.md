@@ -35,7 +35,6 @@ struct Pose
 ### Default Implementations
 - [Decodable Implementations](pose/decodable-implementations.md)
 - [Encodable Implementations](pose/encodable-implementations.md)
-- [Equatable Implementations](pose/equatable-implementations.md)
 
 ## Relationships
 
@@ -49,7 +48,7 @@ struct Pose
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct JointKey](jointkey.md)
   A key that uniquely identifies a joint.

@@ -50,12 +50,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static var twoDigits: Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute/twodigits.md)
   The custom format style that shows the two-digit numeric minute, zero-padded if necessary.
 ### Comparing a Minute
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

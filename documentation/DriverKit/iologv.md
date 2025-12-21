@@ -17,6 +17,8 @@ int IOLogv(const char * format, va_list ap);
 
 #### Discussion
 
+Log a message to console in text mode, and os_log.
+
 This function allows a driver to log diagnostic information to the screen during verbose boots, and to os_log.
 
 ## Parameters

@@ -16,7 +16,7 @@ optional func webViewAreToolbarsVisible(_ sender: WebView!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a web view’s window has any toolbars that are currently visible (other than the status bar); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if a web view’s window has any toolbars that are currently visible (other than the status bar); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

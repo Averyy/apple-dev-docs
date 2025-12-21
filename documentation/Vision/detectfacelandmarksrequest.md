@@ -8,7 +8,6 @@ An image-analysis request that finds facial features like eyes and mouth in an i
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -30,16 +29,6 @@ If you already located all the faces in an image, or want to detect landmarks in
 ### Creating a request
 - [init(DetectFaceLandmarksRequest.Revision?)](detectfacelandmarksrequest/init(_:).md)
   Creates a face landmark detection request.
-### Getting the revision
-- [let revision: DetectFaceLandmarksRequest.Revision](detectfacelandmarksrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectFaceLandmarksRequest.Revision]](detectfacelandmarksrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectFaceLandmarksRequest.Revision](detectfacelandmarksrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var inputFaceObservations: [FaceObservation]?](detectfacelandmarksrequest/inputfaceobservations.md)
-  An array of face-observation objects to process as part of the request.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -53,8 +42,19 @@ If you already located all the faces in an image, or want to detect landmarks in
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct FaceObservation](faceobservation.md)
   An image-analysis request that identifies facial features in an image.
+### Configuring a request
+- [var inputFaceObservations: [FaceObservation]?](detectfacelandmarksrequest/inputfaceobservations.md)
+  An array of face-observation objects to process as part of the request.
+### Getting the revision
+- [let revision: DetectFaceLandmarksRequest.Revision](detectfacelandmarksrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectFaceLandmarksRequest.Revision]](detectfacelandmarksrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectFaceLandmarksRequest.Revision](detectfacelandmarksrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -71,12 +71,10 @@ If you already located all the faces in an image, or want to detect landmarks in
 
 - [Analyzing a selfie and visualizing its content](analyzing-a-selfie-and-visualizing-its-content.md)
   Calculate face-capture quality and visualize facial features for a collection of images using the Vision framework.
-- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
-  A request that finds faces within an image.
 - [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [struct DetectHumanRectanglesRequest](detecthumanrectanglesrequest.md)
-  A request that finds rectangular regions that contain people in an image.
+- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
+  A request that finds faces within an image.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Creates and returns a new [`NSBezierPath`](https://developer.apple.com/documentation/AppKit/NSBezierPath) object with each point in the given path transformed by the receiver.
+Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 
 **Availability**:
 - macOS 10.0+

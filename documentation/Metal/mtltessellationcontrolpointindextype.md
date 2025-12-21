@@ -21,7 +21,7 @@ enum MTLTessellationControlPointIndexType
 
 ## Topics
 
-### Constants
+### Index types
 - [MTLTessellationControlPointIndexType.none](mtltessellationcontrolpointindextype/none.md)
   No size. This value should only be used when drawing patches without a control point index buffer.
 - [MTLTessellationControlPointIndexType.uint16](mtltessellationcontrolpointindextype/uint16.md)

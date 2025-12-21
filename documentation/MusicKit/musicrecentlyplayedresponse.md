@@ -25,13 +25,6 @@ struct MusicRecentlyPlayedResponse<MusicItemType> where MusicItemType : MusicRec
 ### Instance Properties
 - [let items: MusicItemCollection<MusicItemType>](musicrecentlyplayedresponse/items.md)
   A collection of items the user has recently played.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musicrecentlyplayedresponse/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musicrecentlyplayedresponse/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicrecentlyplayedresponse/decodable-implementations.md)
-- [Encodable Implementations](musicrecentlyplayedresponse/encodable-implementations.md)
-- [Equatable Implementations](musicrecentlyplayedresponse/equatable-implementations.md)
-- [Hashable Implementations](musicrecentlyplayedresponse/hashable-implementations.md)
 
 ## Relationships
 

@@ -23,12 +23,12 @@ Ruby characters are small annotations, typically used in Japanese content, that 
 
 ## Topics
 
-### Creating Ruby Text
+### Creating Ruby text
 - [init(text: String)](avcaption/ruby/init(text:).md)
   Creates ruby text.
 - [convenience init(text: String, position: AVCaptionRubyPosition, alignment: AVCaptionRubyAlignment)](avcaption/ruby/init(text:position:alignment:).md)
   Creates ruby text with position and alignment.
-### Accessing Text Properties
+### Accessing text properties
 - [var text: String](avcaption/ruby/text.md)
   The ruby text.
 - [var position: AVCaptionRubyPosition](avcaption/ruby/position.md)

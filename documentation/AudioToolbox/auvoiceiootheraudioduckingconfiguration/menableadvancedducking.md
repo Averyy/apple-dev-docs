@@ -23,7 +23,7 @@ var mEnableAdvancedDucking: DarwinBoolean
 
 Advanced ducking ducks other non-voice audio based on the presence of voice activity from local and remote chat participants.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

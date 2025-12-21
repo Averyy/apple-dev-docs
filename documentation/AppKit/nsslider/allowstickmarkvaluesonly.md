@@ -17,7 +17,7 @@ var allowsTickMarkValuesOnly: Bool { get set }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the slider fixes its values to the values represented by its tick marks; otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false). For example, if a slider has a minimum value of `0`, a maximum value of `100`, and five markers, the allowable values are `0`, `25`, `50`, `75`, and `100`. When users move the slider’s knob, it jumps to the tick mark nearest the cursor when the mouse button is released. This method has no effect if the slider has no tick marks. In its implementation of this method, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the slider fixes its values to the values represented by its tick marks; otherwise it’s [`false`](https://developer.apple.com/documentation/Swift/false). For example, if a slider has a minimum value of `0`, a maximum value of `100`, and five markers, the allowable values are `0`, `25`, `50`, `75`, and `100`. When users move the slider’s knob, it jumps to the tick mark nearest the cursor when the mouse button is released. This method has no effect if the slider has no tick marks. In its implementation of this method, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance.
 
 ## See Also
 

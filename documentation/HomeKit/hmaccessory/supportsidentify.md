@@ -21,7 +21,7 @@ var supportsIdentify: Bool { get }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), any calls to the [`identify(completionHandler:)`](hmaccessory/identify(completionhandler:).md) method return an error. However, even if this property is [`true`](https://developer.apple.com/documentation/swift/true), calls to [`identify(completionHandler:)`](hmaccessory/identify(completionhandler:).md) may not succeed.
+If [`false`](https://developer.apple.com/documentation/Swift/false), any calls to the [`identify(completionHandler:)`](hmaccessory/identify(completionhandler:).md) method return an error. However, even if this property is [`true`](https://developer.apple.com/documentation/Swift/true), calls to [`identify(completionHandler:)`](hmaccessory/identify(completionhandler:).md) may not succeed.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 The Boolean value that indicates whether a manipulation gesture is currently active.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

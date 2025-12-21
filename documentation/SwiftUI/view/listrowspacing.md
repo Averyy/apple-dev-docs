@@ -36,10 +36,18 @@ List {
 
 ## See Also
 
+- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+  Applies an inset to the rows in a list.
+- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+  The default minimum height of rows in a list.
+- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+  The default minimum height of a header in a list.
 - [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
   Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
 - [struct ListSectionSpacing](listsectionspacing.md)
   The spacing options between two adjacent sections in a list.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 
 
 ---

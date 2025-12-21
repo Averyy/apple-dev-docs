@@ -24,6 +24,7 @@ class GKMatchmakerViewController
 
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 
@@ -127,6 +128,8 @@ For the complete matchmaking flow with code fragments, see [`Finding multiple pl
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

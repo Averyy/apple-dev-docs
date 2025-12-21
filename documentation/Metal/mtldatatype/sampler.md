@@ -22,7 +22,7 @@ case sampler
 ## See Also
 
 - [protocol MTLSamplerState](mtlsamplerstate.md)
-  An object that defines how a texture should be sampled.
+  An instance that defines how a texture should be sampled.
 - [MTLDataType.renderPipeline](mtldatatype/renderpipeline.md)
   A Metal render pipeline instance.
 - [MTLDataType.computePipeline](mtldatatype/computepipeline.md)

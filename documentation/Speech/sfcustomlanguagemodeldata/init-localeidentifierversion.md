@@ -20,7 +20,7 @@ init(locale: Locale, identifier: String, version: String)
 
 #### Discussion
 
-The `CustomLanguageModelData` class accumulates language model training and custom vocabulary data, both associated with a specified locale. This initializer creates an object that initially holds no data.
+The `SFCustomLanguageModelData` class accumulates language model training and custom vocabulary data, both associated with a specified locale. This initializer creates an object that initially holds no data.
 
 ## Parameters
 
@@ -32,6 +32,8 @@ The `CustomLanguageModelData` class accumulates language model training and cust
 
 - [convenience init(locale: Locale, identifier: String, version: String, builder: () -> any DataInsertable)](sfcustomlanguagemodeldata/init(locale:identifier:version:builder:).md)
   Constructs a data container using a builder
+- [SFCustomLanguageModelData.DataInsertableBuilder](sfcustomlanguagemodeldata/datainsertablebuilder.md)
+  A custom parameter attribute that constructs custom language model data from closures.
 
 
 ---

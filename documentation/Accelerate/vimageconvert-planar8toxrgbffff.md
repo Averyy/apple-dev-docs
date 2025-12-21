@@ -26,7 +26,7 @@ func vImageConvert_Planar8ToXRGBFFFF(_ alpha: Pixel_F, _ red: UnsafePointer<vIma
 
 #### Discussion
 
-The source and destination buffers must have the same height and width.
+The source and destination buffers need to have the same height and width.
 
 ## Parameters
 

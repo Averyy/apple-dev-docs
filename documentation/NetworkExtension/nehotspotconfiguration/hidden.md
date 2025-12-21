@@ -20,9 +20,9 @@ var hidden: Bool { get set }
 
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to make the system perform an active scan for the Service Set Identifier (SSID). If the access point is already broadcasting the SSID, set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to make the system perform an active scan for the Service Set Identifier (SSID). If the access point is already broadcasting the SSID, set this value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

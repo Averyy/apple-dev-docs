@@ -5,9 +5,9 @@
 ## Topics
 
 ### Views
-- [@MainActor class PDFView](../PDFKit/PDFView.md)
+- [class PDFView](../PDFKit/PDFView.md)
   An object that encapsulates the functionality of PDF Kit into a single widget that you can add to your application using Interface Builder.
-- [@MainActor class PDFThumbnailView](../PDFKit/PDFThumbnailView.md)
+- [class PDFThumbnailView](../PDFKit/PDFThumbnailView.md)
   An object that contains a set of thumbnails, each of which represents a page in a PDF document.
 ### Content Model
 - [class PDFDocument](../PDFKit/PDFDocument.md)

@@ -20,21 +20,11 @@ You can use this structure to inspect the initial position of a participant in y
 
 ## Topics
 
-### Operators
-- [static func == (SystemCoordinator.ParticipantState.Seat, SystemCoordinator.ParticipantState.Seat) -> Bool](systemcoordinator/participantstate/seat-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var hashValue: Int](systemcoordinator/participantstate/seat-swift.struct/hashvalue.md)
-  The hash value.
 - [let pose: Pose3D](systemcoordinator/participantstate/seat-swift.struct/pose.md)
   The position and rotation of the seat.
 - [let role: (any SpatialTemplateRole)?](systemcoordinator/participantstate/seat-swift.struct/role.md)
   The role attached to this seat, if any.
-### Instance Methods
-- [func hash(into: inout Hasher)](systemcoordinator/participantstate/seat-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](systemcoordinator/participantstate/seat-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

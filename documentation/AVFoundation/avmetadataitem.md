@@ -22,9 +22,9 @@ class AVMetadataItem
 
 ## Mentions
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
 - [Loading media data asynchronously](loading-media-data-asynchronously.md)
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Retrieving media metadata](retrieving-media-metadata.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
 
 #### Overview
 
@@ -41,15 +41,15 @@ To filter arrays of metadata items, you use the methods of this class. For examp
 
 ## Topics
 
-### Creating a Metadata Item
+### Creating a metadata item
 - [init(propertiesOfMetadataItem: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](avmetadataitem/init(propertiesofmetadataitem:valueloadinghandler:).md)
   Creates a metadata item whose value loads on an on-demand basis only.
 - [class AVMetadataItemValueRequest](avmetadataitemvaluerequest.md)
   An object that responds to a request to load the value of a metadata item.
-### Identifying Metadata Items
+### Identifying metadata items
 - [var identifier: AVMetadataIdentifier?](avmetadataitem/identifier.md)
   An identifier for a metadata item.
-### Loading Values
+### Loading values
 - [var dataType: String?](avmetadataitem/datatype.md)
   The data type of the metadata item’s value.
 - [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](avpartialasyncproperty/value.md)
@@ -64,26 +64,26 @@ To filter arrays of metadata items, you use the methods of this class. For examp
   The value of the metadata item as a data value.
 - [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](avpartialasyncproperty/extraattributes.md)
   A dictionary of additional attributes for the item.
-### Accessing Keys and Key Spaces
+### Accessing keys and key spaces
 - [var key: (any NSCopying & NSObjectProtocol)?](avmetadataitem/key.md)
   The key of the metadata item.
 - [var commonKey: AVMetadataKey?](avmetadataitem/commonkey.md)
   The common key of the metadata item.
 - [var keySpace: AVMetadataKeySpace?](avmetadataitem/keyspace.md)
   The key space for the metadata item’s key.
-### Accessing Timing
+### Accessing timing
 - [var time: CMTime](avmetadataitem/time.md)
   The timestamp of the metadata item.
 - [var startDate: Date?](avmetadataitem/startdate.md)
   The start date of the timed metadata.
 - [var duration: CMTime](avmetadataitem/duration.md)
   The duration of the metadata item.
-### Accessing Language Support
+### Accessing language support
 - [var locale: Locale?](avmetadataitem/locale.md)
   The locale of the metadata item.
 - [var extendedLanguageTag: String?](avmetadataitem/extendedlanguagetag.md)
   The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
-### Filtering Arrays of Metadata Items
+### Filtering arrays of metadata items
 - [class func metadataItems(from: [AVMetadataItem], filteredByIdentifier: AVMetadataIdentifier) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:filteredbyidentifier:).md)
   Returns metadata items for the specified identifier.
 - [class func metadataItems(from: [AVMetadataItem], withKey: Any?, keySpace: AVMetadataKeySpace?) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:withkey:keyspace:).md)
@@ -94,14 +94,14 @@ To filter arrays of metadata items, you use the methods of this class. For examp
   Returns metadata items whose locales match one of the specified language identifiers.
 - [class func metadataItems(from: [AVMetadataItem], filteredBy: AVMetadataItemFilter) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:filteredby:).md)
   Returns filtered metadata items.
-### Translating Metadata Items
+### Translating metadata items
 - [class func identifier(forKey: Any, keySpace: AVMetadataKeySpace) -> AVMetadataIdentifier?](avmetadataitem/identifier(forkey:keyspace:).md)
   Returns a metadata identifier for the specified key and key space.
 - [class func key(forIdentifier: AVMetadataIdentifier) -> Any?](avmetadataitem/key(foridentifier:).md)
   Returns a metadata key for the specified identifier.
 - [class func keySpace(forIdentifier: AVMetadataIdentifier) -> AVMetadataKeySpace?](avmetadataitem/keyspace(foridentifier:).md)
   Returns a metadata key space for the specified identifier.
-### Accessing Values
+### Accessing values
 - [var value: (any NSCopying & NSObjectProtocol)?](avmetadataitem/value.md)
   The value of the metadata item.
 - [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmetadataitem/extraattributes.md)

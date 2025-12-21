@@ -21,9 +21,9 @@ var drawsAsynchronously: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the graphics context used to draw the layer’s contents queues drawing commands and executes them on a background thread rather than executing them synchronously. Performing these commands asynchronously can improve performance in some apps. However, you should always measure the actual performance benefits before enabling this capability.
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the graphics context used to draw the layer’s contents queues drawing commands and executes them on a background thread rather than executing them synchronously. Performing these commands asynchronously can improve performance in some apps. However, you should always measure the actual performance benefits before enabling this capability.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

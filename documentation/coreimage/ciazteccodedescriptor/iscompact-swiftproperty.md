@@ -19,14 +19,18 @@ A Boolean value telling if the Aztec code is compact.
 var isCompact: Bool { get }
 ```
 
+#### Discussion
+
+Compact Aztec symbols use one-fewer ring in the central finder pattern than full-range Aztec symbols of the same number of data layers.
+
 ## See Also
 
 - [var errorCorrectedPayload: Data](ciazteccodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the Aztec code.
+  The error-corrected payload that comprises the the Aztec code symbol.
 - [var layerCount: Int](ciazteccodedescriptor/layercount-swift.property.md)
-  The number of layers embedded in the Aztec code.
+  The number of data layers in the Aztec code symbol.
 - [var dataCodewordCount: Int](ciazteccodedescriptor/datacodewordcount-swift.property.md)
-  The number of data codewords in the Aztec code.
+  The number of non-error-correction codewords carried by the Aztec code symbol.
 
 
 ---

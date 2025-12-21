@@ -31,22 +31,6 @@ enum OptimizationStrategy
   An optimization strategy that minimizes memory use.
 - [OptimizationStrategy.nonSmooth](optimizationstrategy/nonsmooth.md)
   An optimization strategy that can handle non-smooth problems.
-### Creating an optimization strategy
-- [init(from: any Decoder) throws](optimizationstrategy/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (OptimizationStrategy, OptimizationStrategy) -> Bool](optimizationstrategy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](optimizationstrategy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](optimizationstrategy/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](optimizationstrategy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](optimizationstrategy/equatable-implementations.md)
 
 ## Relationships
 

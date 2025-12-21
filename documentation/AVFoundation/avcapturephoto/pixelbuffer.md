@@ -20,7 +20,7 @@ var pixelBuffer: CVPixelBuffer? { get }
 
 ## Mentions
 
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
 
 #### Discussion
 

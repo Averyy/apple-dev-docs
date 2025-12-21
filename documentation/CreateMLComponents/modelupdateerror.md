@@ -25,16 +25,11 @@ enum ModelUpdateError
 ### Analyzing the error
 - [ModelUpdateError.invalidState(debugDescription:)](modelupdateerror/invalidstate(debugdescription:).md)
   An error that indicates that a default initialized transformer suitable for fitting cannot perform apply before performing an update.
-- [var errorDescription: String?](modelupdateerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (ModelUpdateError, ModelUpdateError) -> Bool](modelupdateerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](modelupdateerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](modelupdateerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](modelupdateerror/equatable-implementations.md)
-- [Error Implementations](modelupdateerror/error-implementations.md)
-- [LocalizedError Implementations](modelupdateerror/localizederror-implementations.md)
 
 ## Relationships
 

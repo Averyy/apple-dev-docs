@@ -6,8 +6,8 @@
 A structure that represents an MMS message identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,13 +25,8 @@ struct MMSMessageID
 - [var description: String](mmsmessageid/description.md)
   A textual representation of the identifier.
 ### Working with raw values
-- [let rawValue: UInt32](mmsmessageid/rawvalue-swift.property.md)
+- [let rawValue: UInt32](mmsmessageid/rawvalue.md)
   The identifier of an MMS message.
-- [MMSMessageID.RawValue](mmsmessageid/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](mmsmessageid/equatable-implementations.md)
-- [RawRepresentable Implementations](mmsmessageid/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -47,8 +42,6 @@ struct MMSMessageID
 
 ## See Also
 
-- [func receiveMessage(using: CellularServiceID, messageID: MMSMessageID) async throws -> MMSMessage](mmsservice/receivemessage(using:messageid:).md)
-  Retrieves an MMS message that matches the given identifiers.
 - [struct CellularServiceID](cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
 - [var incomingMessageNotifications: some AsyncSequence<MMSService.IncomingMessageNotification, Never>](mmsservice/incomingmessagenotifications.md)

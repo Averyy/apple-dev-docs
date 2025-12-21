@@ -17,7 +17,7 @@ var indentationMarkerFollowsCell: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the indentation marker is indented along with the cell contents. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the marker is always displayed left-justified in the column. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the indentation marker is indented along with the cell contents. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the marker is always displayed left-justified in the column. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

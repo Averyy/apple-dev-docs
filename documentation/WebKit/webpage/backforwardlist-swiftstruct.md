@@ -3,14 +3,14 @@
 **Framework**: WebKit  
 **Kind**: struct
 
-An observable representation of a webpage’s navigations.
+An observable representation of a webpage’s previously loaded resources.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,68 @@ struct BackForwardList
 #### Overview
 
 This type can be used to facilitate navigating to prior or subsequent loaded resources and for observing when new entries get added or removed.
+
+In this example, the back-forward list is used to create a SwiftUI View to facilitate navigating to previous or next items:
+
+```swift
+private struct BackForwardMenuView: View {
+    struct LabelConfiguration {
+        let text: String
+        let systemImage: String
+    }
+
+    let list: [WebPage.BackForwardList.Item]
+    let label: LabelConfiguration
+    let navigateToItem: (WebPage.BackForwardList.Item) -> Void
+
+    var body: some View {
+        Menu {
+            ForEach(list) { item in
+                Button(item.title ?? item.url.absoluteString) {
+                    navigateToItem(item)
+                }
+            }
+        } label: {
+            Label(label.text, systemImage: label.systemImage)
+                .labelStyle(.iconOnly)
+        } primaryAction: {
+            navigateToItem(list.first!)
+        }
+        .disabled(list.isEmpty)
+    }
+}
+```
+
+The view can then be used for both the back and forward list using a specific [`WebPage`](webpage.md):
+
+```swift
+struct ContentView: some View {
+    @State private var page = WebPage()
+
+    var body: some View {
+        WebView(page)
+            .toolbar {
+                ToolbarItemGroup {
+                    ToolbarBackForwardMenuView(
+                        list: page.backForwardList.backList.reversed(),
+                        label: .init(text: "Backward", systemImage: "chevron.backward")
+                    ) {
+                        viewModel.page.load($0)
+                    }
+
+                    ToolbarBackForwardMenuView(
+                        list: page.backForwardList.forwardList,
+                        label: .init(text: "Forward", systemImage: "chevron.forward")
+                    ) {
+                        viewModel.page.load($0)
+                    }
+                }
+            }
+    }
+}
+```
+
+Because [`backForwardList`](webpage/backforwardlist-swift.property.md) is an observable property, the states of these buttons are automatically updated.
 
 ## Topics
 
@@ -48,8 +110,6 @@ This type can be used to facilitate navigating to prior or subsequent loaded res
 
 ## See Also
 
-- [WebPage.NavigationID](webpage/navigationid.md)
-  An opaque identifier which can be used to uniquely identify a load request for a web page.
 - [WebPage.NavigationEvent](webpage/navigationevent.md)
   A particular state that occurs during the progression of a navigation.
 

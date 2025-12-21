@@ -17,13 +17,13 @@ optional func application(_ application: NSApplication, willContinueUserActivity
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you notify the user that your app is about to continue the activity or [`false`](https://developer.apple.com/documentation/swift/false) if you want AppKit to notify the user.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you notify the user that your app is about to continue the activity or [`false`](https://developer.apple.com/documentation/Swift/false) if you want AppKit to notify the user.
 
 #### Discussion
 
 Use this method to provide immediate feedback to the user that an activity is about to continue on this device. The app calls this method as soon as the user confirms that an activity should be continued but possibly before the data associated with that activity is available.
 
-This method is called on the main thread as soon as the user indicates they want to continue an activity in your app. The `NSUserActivity` object may not be available instantly, so use this as an opportunity to show the user that an activity will be continued shortly and return [`true`](https://developer.apple.com/documentation/swift/true). If you leave this method unimplemented or return [`false`](https://developer.apple.com/documentation/swift/false), AppKit displays a default indication.
+This method is called on the main thread as soon as the user indicates they want to continue an activity in your app. The `NSUserActivity` object may not be available instantly, so use this as an opportunity to show the user that an activity will be continued shortly and return [`true`](https://developer.apple.com/documentation/Swift/true). If you leave this method unimplemented or return [`false`](https://developer.apple.com/documentation/Swift/false), AppKit displays a default indication.
 
 For each invocation of this method, the app delegate is guaranteed to get exactly one invocation of [`application(_:continue:restorationHandler:)`](nsapplicationdelegate/application(_:continue:restorationhandler:).md) on success, or [`application(_:didFailToContinueUserActivityWithType:error:)`](nsapplicationdelegate/application(_:didfailtocontinueuseractivitywithtype:error:).md) if an error was encountered.
 

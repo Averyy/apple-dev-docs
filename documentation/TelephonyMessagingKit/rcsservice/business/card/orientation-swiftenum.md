@@ -6,8 +6,8 @@
 Enumeration indicating the orientation of a card.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,22 +23,6 @@ enum Orientation
   Vertical orientation.
 - [RCSService.Business.Card.Orientation.horizontal](rcsservice/business/card/orientation-swift.enum/horizontal.md)
   Horizontal orientation.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/card/orientation-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.Card.Orientation, RCSService.Business.Card.Orientation) -> Bool](rcsservice/business/card/orientation-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/card/orientation-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/card/orientation-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/card/orientation-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/orientation-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

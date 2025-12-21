@@ -22,7 +22,7 @@ optional func intersects(_ mapRect: MKMapRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if any part of the map rectangle intersects the receiver’s shape, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if any part of the map rectangle intersects the receiver’s shape, or [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 #### Discussion
 

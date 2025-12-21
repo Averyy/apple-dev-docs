@@ -22,12 +22,6 @@ struct DayTemperatureStatistics
 
 ## Topics
 
-### Operators
-- [static func == (DayTemperatureStatistics, DayTemperatureStatistics) -> Bool](daytemperaturestatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](daytemperaturestatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var averageHighTemperature: Measurement<UnitTemperature>](daytemperaturestatistics/averagehightemperature.md)
   The average observed high temperature for the day.
@@ -35,11 +29,6 @@ struct DayTemperatureStatistics
   The average observed low temperature for the day.
 - [var day: Int](daytemperaturestatistics/day.md)
   The day of the year, in UTC.
-### Instance Methods
-- [func encode(to: any Encoder) throws](daytemperaturestatistics/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](daytemperaturestatistics/equatable-implementations.md)
 
 ## Relationships
 

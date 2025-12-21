@@ -23,9 +23,6 @@ enum Context
 ### Initialization
 - [init?(rawValue: Int)](beavailability/context/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-### Default Implementations
-- [Equatable Implementations](beavailability/context/equatable-implementations.md)
-- [RawRepresentable Implementations](beavailability/context/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -18,9 +18,9 @@ var isLightEstimationEnabled: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), a running AR session provides scene lighting information in the [`lightEstimate`](arframe/lightestimate.md) property of each [`ARFrame`](arframe.md) object it captures.
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), a running AR session provides scene lighting information in the [`lightEstimate`](arframe/lightestimate.md) property of each [`ARFrame`](arframe.md) object it captures.
 
-If you render your own overlay graphics for the AR scene, you can use this information in shading algorithms to help make those graphics match the real-world lighting conditions of the scene captured by the camera. (The [`ARSCNView`](arscnview.md) class automatically uses this information to configure SceneKit lighting.)
+If you render your own overlay graphics for the AR scene, you can use this information in shading algorithms to help make those graphics match the real-world lighting conditions of the scene captured by the camera. (A [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) or [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) automatically uses this information to configure RealityKit lighting.)
 
 ## See Also
 

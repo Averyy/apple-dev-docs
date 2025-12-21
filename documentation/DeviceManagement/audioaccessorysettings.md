@@ -6,8 +6,8 @@
 The declaration to configure audio accessory settings.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,11 @@ object AudioAccessorySettings
 #### Discussion
 
 Specify `com.apple.configuration.audio-accessory.settings` as the declaration type.
+
+Setting `TemporaryPairing` to `false` disables only the temporary pairing feature, without impacting any other use of audio accessories, so users can still:
+
+- Pair and use audio accessories - the device records the pairing and synchronizes it to their iCloud account.
+- Use the audio accessory AirPods Sharing feature.
 
 ##### Configuration Availability
 
@@ -30,6 +35,28 @@ Specify `com.apple.configuration.audio-accessory.settings` as the declaration ty
 | Allowed in system scope | iOS, Shared iPad |
 | Allowed in user scope | NA |
 
+##### Configuration Example
+
+This configuration enables temporary pairing and sets an unpairing time of 6 pm.
+
+```json
+{
+    "Type": "com.apple.configuration.audio-accessory.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "TemporaryPairing": {
+            "Configuration": {
+                "UnpairingTime": {
+                    "Policy": "Hour",
+                    "Hour": 18
+                }
+            }
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
@@ -41,7 +68,7 @@ Specify `com.apple.configuration.audio-accessory.settings` as the declaration ty
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
-  The declaration to configure an address book account.
+  The declaration to configure a Contacts account.
 - [object AccountExchange](accountexchange.md)
   The declaration to configure an Exchange account.
 - [object AccountGoogle](accountgoogle.md)
@@ -51,19 +78,19 @@ Specify `com.apple.configuration.audio-accessory.settings` as the declaration ty
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
-  The declaration to configure a Calendar subscription.
+  The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive, legacy profile.
+  The declaration to configure an interactive legacy profile.
 - [object LegacyProfile](legacyprofile.md)
   The declaration to configure a legacy profile.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
-  The declaration to test the MDM system.
+  The declaration to test declarative device management.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
 - [object Package](package.md)

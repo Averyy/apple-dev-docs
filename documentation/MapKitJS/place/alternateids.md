@@ -11,7 +11,7 @@ A list of alternate Place IDs referencing a feature.
 ## Declaration
 
 ```swift
-attribute string[]? alternateIds;
+alternateIds?: string[];
 ```
 
 #### Discussion

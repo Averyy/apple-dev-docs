@@ -49,7 +49,6 @@ The purpose of this API is to allow you to create a sample buffer with timing an
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 
 
 ---

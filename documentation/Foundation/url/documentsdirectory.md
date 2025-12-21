@@ -20,6 +20,10 @@ The standard directory for document files.
 static var documentsDirectory: URL { get }
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Discussion
 
 In iOS, this directory is within the app’s sandbox directory. In macOS, it’s within the app’s sandbox directory for sandboxed apps, or in the current user’s home directory `(~/Documents)` if the app isn’t sandboxed.

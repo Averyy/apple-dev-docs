@@ -15,6 +15,23 @@
 enum CATapMuteBehavior
 ```
 
+#### Overview
+
+CATapMuteBehavior describes the playback behavior of the process being tapped. The default value is CATapUnmuted.
+
+```None
+Audio is captured by the tap and also sent to the audio hardware
+```
+
+```None
+Audio is captured by the tap but no audio is sent from the process to the audio hardware
+```
+
+```None
+Audio is captured by the tap and also sent to the audio hardware until the tap is read by another audio client. 
+For the duration of the read activity on the tap no audio is sent to the audio hardware.
+```
+
 ## Topics
 
 ### Enumeration Cases

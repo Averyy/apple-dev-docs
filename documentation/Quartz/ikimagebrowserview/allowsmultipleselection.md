@@ -17,7 +17,7 @@ func allowsMultipleSelection() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver allows the user to select more than one cell at a time; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver allows the user to select more than one cell at a time; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

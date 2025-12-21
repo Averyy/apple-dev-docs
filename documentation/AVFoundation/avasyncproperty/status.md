@@ -27,7 +27,7 @@ enum Status
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVAsyncProperty.Status.notYetLoaded](avasyncproperty/status/notyetloaded.md)
   The system hasn’t loaded a property value.
 - [AVAsyncProperty.Status.loading](avasyncproperty/status/loading.md)

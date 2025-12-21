@@ -41,6 +41,8 @@ You can use this method to ascertain which control events trigger actions. More 
 - [func actions(forTarget: Any?, forControlEvent: UIControl.Event) -> [String]?](uicontrol/actions(fortarget:forcontrolevent:).md)
   Returns the actions performed on a target object when the specified event occurs.
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](uicontrol/enumerateeventhandlers(_:).md)
+- [UIControl.Event](uicontrol/event.md)
+  Constants describing the types of events possible for controls.
 
 
 ---

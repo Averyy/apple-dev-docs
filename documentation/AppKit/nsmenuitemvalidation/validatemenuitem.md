@@ -18,7 +18,7 @@ func validateMenuItem(_ menuItem: NSMenuItem) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to enable `menuItem`, [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to enable `menuItem`, [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
 
 #### Discussion
 

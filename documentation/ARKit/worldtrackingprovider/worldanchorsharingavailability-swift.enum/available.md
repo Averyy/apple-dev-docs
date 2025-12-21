@@ -6,8 +6,8 @@
 World anchors can be shared with nearby participants. Indicates that the device is in a SharePlay session with nearby participants.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

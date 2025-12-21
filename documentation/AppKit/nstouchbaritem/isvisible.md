@@ -20,7 +20,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), this item is shown in a currently visible bar. This property is always [`false`](https://developer.apple.com/documentation/swift/false) for spaces, proxy items, and groups.
+When [`true`](https://developer.apple.com/documentation/Swift/true), this item is shown in a currently visible bar. This property is always [`false`](https://developer.apple.com/documentation/Swift/false) for spaces, proxy items, and groups.
 
 This property is key-value observable.
 

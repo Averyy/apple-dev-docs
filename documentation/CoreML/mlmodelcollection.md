@@ -25,20 +25,20 @@ To access the newest model collection from a deployment, call the [`beginAccessi
 
 ## Topics
 
-### Accessing a Model Collection
+### Accessing a model collection
 - [class func endAccessing(identifier: String) async throws -> Bool](mlmodelcollection/endaccessing(identifier:).md)
   Terminates access to a model collection.
-### Identifying a Model Collection
+### Identifying a model collection
 - [var identifier: String](mlmodelcollection/identifier.md)
   The name of the model collection, unique to the development team.
 - [var deploymentID: String](mlmodelcollection/deploymentid.md)
   The unique identifier of the model collection’s deployment.
-### Retreiving Models from a Collection
+### Retreiving models from a collection
 - [var entries: [String : MLModelCollection.Entry]](mlmodelcollection/entries.md)
   A dictionary of model entries keyed to the models’ identifiers.
 - [MLModelCollection.Entry](mlmodelcollection/entry.md)
   A model and its identifier within a model collection.
-### Registering for Model Collection Updates
+### Registering for model collection updates
 - [class let didChangeNotification: NSNotification.Name](mlmodelcollection/didchangenotification.md)
   The notification the framework sends when it receives an update to a model collection.
 

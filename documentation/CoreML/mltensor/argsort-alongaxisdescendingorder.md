@@ -39,6 +39,17 @@ await y.shapedArray(of: Int32.self) // is [0, 2, 1]
 - `axis`: The axis along which to sort. The default is  , which sorts the last axis.
 - `descendingOrder`: A Boolean value that determines the sort order. The default is   which   sorts from largest to least.
 
+## See Also
+
+- [func argmax() -> MLTensor](mltensor/argmax.md)
+  Returns the index of the maximum value of the flattened scalars.
+- [func argmax(alongAxis: Int, keepRank: Bool) -> MLTensor](mltensor/argmax(alongaxis:keeprank:).md)
+  Returns the indices of the maximum values along the specified axis.
+- [func argmin() -> MLTensor](mltensor/argmin.md)
+  Returns the index of the minimum value of the flattened scalars.
+- [func argmin(alongAxis: Int, keepRank: Bool) -> MLTensor](mltensor/argmin(alongaxis:keeprank:).md)
+  Returns the indices of the minimum values along the specified axis.
+
 
 ---
 

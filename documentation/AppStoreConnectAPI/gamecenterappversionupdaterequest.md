@@ -33,6 +33,8 @@ object GameCenterAppVersionUpdateRequest
 - [object GameCenterAppVersionsResponse](gamecenterappversionsresponse.md)
   A response that contains a list of app version resources.
 - [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
+- [type GameCenterVersionState](gamecenterversionstate.md)
+  A string representing the state of a Game Center version.
 
 
 ---

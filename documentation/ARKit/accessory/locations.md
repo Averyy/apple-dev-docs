@@ -6,7 +6,7 @@
 A list of locations on this accessory for which coordinate transforms are provided.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

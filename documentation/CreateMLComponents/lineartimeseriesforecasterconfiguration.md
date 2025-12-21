@@ -22,15 +22,10 @@ struct LinearTimeSeriesForecasterConfiguration
 
 ## Topics
 
-### Operators
-- [static func == (LinearTimeSeriesForecasterConfiguration, LinearTimeSeriesForecasterConfiguration) -> Bool](lineartimeseriesforecasterconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](lineartimeseriesforecasterconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
+### Creating a linear time series forecasater configuration
 - [init(inputWindowSize: Int, forecastWindowSize: Int)](lineartimeseriesforecasterconfiguration/init(inputwindowsize:forecastwindowsize:).md)
   Creates a configuration.
-### Instance Properties
+### Inspecting a linear time series forecasater configuration
 - [var batchSize: Int](lineartimeseriesforecasterconfiguration/batchsize.md)
   The number of examples in each training batch.
 - [var earlyStoppingIterationCount: Int](lineartimeseriesforecasterconfiguration/earlystoppingiterationcount.md)
@@ -39,8 +34,6 @@ struct LinearTimeSeriesForecasterConfiguration
   The early-stopping tolerance.
 - [var forecastWindowSize: Int](lineartimeseriesforecasterconfiguration/forecastwindowsize.md)
   The number of predicted samples.
-- [var hashValue: Int](lineartimeseriesforecasterconfiguration/hashvalue.md)
-  The hash value.
 - [var inputWindowSize: Int](lineartimeseriesforecasterconfiguration/inputwindowsize.md)
   The number of input samples.
 - [var learningRate: Float](lineartimeseriesforecasterconfiguration/learningrate.md)
@@ -49,13 +42,6 @@ struct LinearTimeSeriesForecasterConfiguration
   The maximum number of allowed passes through the data.
 - [var randomSeed: Int?](lineartimeseriesforecasterconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations.
-### Instance Methods
-- [func encode(to: any Encoder) throws](lineartimeseriesforecasterconfiguration/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](lineartimeseriesforecasterconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](lineartimeseriesforecasterconfiguration/equatable-implementations.md)
 
 ## Relationships
 

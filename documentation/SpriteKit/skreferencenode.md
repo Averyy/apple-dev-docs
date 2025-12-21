@@ -17,7 +17,6 @@ A node that’s defined in an archived `.sks` file.
 ## Declaration
 
 ```swift
-@MainActor
 class SKReferenceNode
 ```
 

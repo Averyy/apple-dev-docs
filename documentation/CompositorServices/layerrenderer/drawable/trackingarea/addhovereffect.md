@@ -6,8 +6,8 @@
 Add an hover effect for this tracking area. No hover effect will be rendered if this isn’t called.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

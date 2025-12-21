@@ -21,7 +21,7 @@ func setEditing(_ editing: Bool, animated: Bool)
 
 #### Discussion
 
-Subclasses that use an edit-done button must override this method to change their view to an editable state if [`isEditing`](uiviewcontroller/isediting.md) is [`true`](https://developer.apple.com/documentation/swift/true) and a non-editable state if it is [`false`](https://developer.apple.com/documentation/swift/false). This method should invoke super’s implementation before updating its view.
+Subclasses that use an edit-done button must override this method to change their view to an editable state if [`isEditing`](uiviewcontroller/isediting.md) is [`true`](https://developer.apple.com/documentation/Swift/true) and a non-editable state if it is [`false`](https://developer.apple.com/documentation/Swift/false). This method should invoke super’s implementation before updating its view.
 
 ## Parameters
 

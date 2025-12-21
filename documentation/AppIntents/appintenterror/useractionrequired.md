@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: enum
 
-Errors that represent a state where a person needs to do respond in order to successfully completed successfully the action.
+Errors that represent a state where a person needs to respond to successfully complete the action.
 
 **Availability**:
 - iOS 18.0+
@@ -22,17 +22,17 @@ enum UserActionRequired
 
 #### Overview
 
-Use the system-defined errors to inform a person about steps they can take to fix the error.
+Use these system-defined errors to inform people about steps they can take to fix the error.
 
 ## Topics
 
 ### Type Properties
 - [static let accountSetup: AppIntentError](appintenterror/useractionrequired/accountsetup.md)
-  User needs to setup their account
+  The person needs to set up their account.
 - [static let confirmation: AppIntentError](appintenterror/useractionrequired/confirmation.md)
-  User needs to confirm the action
+  The person needs to confirm the action.
 - [static let signin: AppIntentError](appintenterror/useractionrequired/signin.md)
-  User needs to sign in to continue
+  The person needs to sign in to continue.
 
 
 ---

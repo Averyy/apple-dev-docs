@@ -22,7 +22,7 @@ var rollAngle: CGFloat { get }
 
 The roll angle represents the side-to-side tilt of the face relative to the metadata’s bounding rectangle. A value of `0.0` yields a face that is level relative to the picture, whereas a value of `90` yields a face that is perpendicular relative to the picture.
 
-You must check the value of the [`hasRollAngle`](avmetadatafaceobject/hasrollangle.md) property before accessing this property. If the value in the [`hasRollAngle`](avmetadatafaceobject/hasrollangle.md) property is [`false`](https://developer.apple.com/documentation/swift/false), reading the value in this property raises an exception.
+You must check the value of the [`hasRollAngle`](avmetadatafaceobject/hasrollangle.md) property before accessing this property. If the value in the [`hasRollAngle`](avmetadatafaceobject/hasrollangle.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), reading the value in this property raises an exception.
 
 ## See Also
 

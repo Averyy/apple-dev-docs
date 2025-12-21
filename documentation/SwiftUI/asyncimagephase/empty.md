@@ -23,7 +23,7 @@ case empty
 ## See Also
 
 - [AsyncImagePhase.success(_:)](asyncimagephase/success(_:).md)
-  An image succesfully loaded.
+  An image successfully loaded.
 - [AsyncImagePhase.failure(_:)](asyncimagephase/failure(_:).md)
   An image failed to load with an error.
 

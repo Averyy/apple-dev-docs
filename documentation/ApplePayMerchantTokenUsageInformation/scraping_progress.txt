@@ -1,0 +1,4 @@
+Completed scraping Apple Pay Merchant Token Usage Information API!
+Total pages scraped: 12
+Pages skipped (unchanged): 1
+Pages failed: 0

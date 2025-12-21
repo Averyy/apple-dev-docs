@@ -22,7 +22,7 @@ func resume()
 
 #### Discussion
 
-This method invokes the block for [`resumingHandler`](progress/resuminghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](progress/ispaused.md) property return [`false`](https://developer.apple.com/documentation/swift/false).
+This method invokes the block for [`resumingHandler`](progress/resuminghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](progress/ispaused.md) property return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If the receiver has suboperations, the system resumes their progress as well.
 

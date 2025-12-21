@@ -17,7 +17,7 @@ func shouldChangeText(in affectedCharRange: NSRange, replacementString: String?)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the change, [`false`](https://developer.apple.com/documentation/swift/false) to prohibit it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the change, [`false`](https://developer.apple.com/documentation/Swift/false) to prohibit it.
 
 #### Discussion
 
@@ -29,7 +29,7 @@ This method must be invoked at the start of any sequence of user-initiated editi
 
 If you override this method, you must call `super` at the beginning of the override.
 
-If the receiver is not editable, this method automatically returns [`false`](https://developer.apple.com/documentation/swift/false). This result prevents instances in which a text view could be changed by user actions even though it had been set to be non-editable.
+If the receiver is not editable, this method automatically returns [`false`](https://developer.apple.com/documentation/Swift/false). This result prevents instances in which a text view could be changed by user actions even though it had been set to be non-editable.
 
 In macOS 10.4 and later, if there are multiple selections, this method acts on the first selected subrange.
 

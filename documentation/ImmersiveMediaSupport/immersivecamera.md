@@ -6,8 +6,8 @@
 A structure that holds the required information for an immersive media camera to process and render video frames.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,32 +22,24 @@ This type holds information including the camera identifier, type, default prese
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](immersivecamera/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType, presentationFrameRate: Int, pose: Pose3DFloat)](immersivecamera/init(id:calibration:type:presentationframerate:pose:).md)
 ### Instance Properties
 - [var calibration: ImmersiveCameraCalibration](immersivecamera/calibration.md)
   Calibration details for this camera.
-- [var id: String](immersivecamera/id-swift.property.md)
-  An identifier string for this immersive camera. Must be unique for each immersive camera and cannot be blank.
+- [var id: String](immersivecamera/id.md)
+  A unique and non empty identifier string for this immersive camera.
 - [var pose: Pose3DFloat](immersivecamera/pose.md)
   The pose of this immersive camera.
 - [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
 - [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
-  Type of camera. Currently only the “stereoCamera” type is supported.
-### Instance Methods
-- [func encode(to: any Encoder) throws](immersivecamera/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [ImmersiveCamera.ID](immersivecamera/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
+  Represents the type of the camera.
 ### Type Properties
 - [static let defaultPresentationFrameRate: Int](immersivecamera/defaultpresentationframerate.md)
   Default presentation frame rate for any immersive camera.
 ### Enumerations
 - [ImmersiveCamera.CameraType](immersivecamera/cameratype.md)
-  A value representing the type of immersive camera.
+  A value that represents the type of immersive camera.
 
 ## Relationships
 

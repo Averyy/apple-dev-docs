@@ -21,7 +21,7 @@ var delaysContentTouches: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view delays handling the touch-down gesture until it can determine if scrolling is the intent. If the value is [`false`](https://developer.apple.com/documentation/swift/false) , the scroll view immediately calls [`touchesShouldBegin(_:with:in:)`](uiscrollview/touchesshouldbegin(_:with:in:).md). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view delays handling the touch-down gesture until it can determine if scrolling is the intent. If the value is [`false`](https://developer.apple.com/documentation/Swift/false) , the scroll view immediately calls [`touchesShouldBegin(_:with:in:)`](uiscrollview/touchesshouldbegin(_:with:in:).md). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 See the class description for a fuller discussion.
 

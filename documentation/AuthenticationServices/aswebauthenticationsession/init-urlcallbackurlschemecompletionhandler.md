@@ -23,13 +23,8 @@ init(url URL: URL, callbackURLScheme: String?, completionHandler: @escaping ASWe
 ## Parameters
 
 - `URL`: A URL with the   or   scheme pointing to the authentication webpage.
-- `callbackURLScheme`: The custom URL scheme that the app expects in the callback URL.
+- `callbackURLScheme`: The custom URL scheme that the app requires in the callback URL.
 - `completionHandler`: A completion handler the session calls when it completes successfully, or when the user cancels the session.
-
-## See Also
-
-- [ASWebAuthenticationSession.CompletionHandler](aswebauthenticationsession/completionhandler.md)
-  A completion handler for the web authentication session.
 
 
 ---

@@ -22,7 +22,7 @@ struct AVAudioTimePitchAlgorithm
 
 ## Topics
 
-### Type Properties
+### Type properties
 - [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/lowqualityzerolatency.md)
   A low-quality and very low computationally intensive pitch algorithm.
 - [static let spectral: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/spectral.md)

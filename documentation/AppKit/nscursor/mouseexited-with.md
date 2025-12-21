@@ -26,14 +26,8 @@ For a more complete explanation, see [`Mouse-Tracking and Cursor-Update Events`]
 
 ## See Also
 
-- [class func pop()](nscursor/pop-swift.type.method.md)
-  Pops the current cursor off the top of the stack.
-- [func pop()](nscursor/pop-swift.method.md)
-  Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver’s class.
-- [func push()](nscursor/push.md)
-  Puts the receiver on top of the cursor stack and makes it the current cursor.
-- [func set()](nscursor/set.md)
-  Makes the receiver the current cursor.
+- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
+  Initializes the cursor with the specified image and hot spot.
 - [func mouseEntered(with: NSEvent)](nscursor/mouseentered(with:).md)
   Automatically sent to the receiver when the cursor enters a cursor rectangle owned by the receiver.
 - [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)

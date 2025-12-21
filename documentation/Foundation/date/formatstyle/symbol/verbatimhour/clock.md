@@ -28,8 +28,6 @@ struct Clock
 - [static let twentyFourHour: Date.FormatStyle.Symbol.VerbatimHour.Clock](date/formatstyle/symbol/verbatimhour/clock/twentyfourhour.md)
   A clock that portrays the hour using a 24-hour clock.
 ### Comparing Verbatim Hour Clocks
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

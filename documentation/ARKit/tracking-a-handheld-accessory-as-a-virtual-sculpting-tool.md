@@ -5,8 +5,8 @@
 Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -18,6 +18,12 @@ Because this sample app has hardware requirements, it won’t run in Simulator. 
 
 ## See Also
 
+- [class AccessoryTrackingProvider](accessorytrackingprovider.md)
+  Provides the real time position of accessories in the user’s environment.
+- [struct Accessory](accessory.md)
+  Represents an accessory to be tracked.
+- [struct AccessoryAnchor](accessoryanchor.md)
+  Represents a tracked accessory.
 - [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
   Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
 

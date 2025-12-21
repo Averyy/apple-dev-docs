@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: struct
 
+A struct containing information on the estimated cost of executing a layer/operation.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -20,8 +22,9 @@ struct Cost
 
 ## Topics
 
-### Instance Properties
+### Accessing the weight
 - [let weight: Double](mlcomputeplan-1w21n/cost/weight.md)
+  The estimated workload of executing the operation over the total model evaluation. The value is between [0.0, 1.0].
 
 ## Relationships
 
@@ -31,7 +34,8 @@ struct Cost
 
 ## See Also
 
-- [MLComputePlan.DeviceUsage](mlcomputeplan-1w21n/deviceusage.md)
+- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](mlcomputeplan-1w21n/estimatedcost(of:).md)
+  Returns the estimated cost of executing a MLProgram operation.
 
 
 ---

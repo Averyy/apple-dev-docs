@@ -29,14 +29,14 @@ Sample group structures of roll-group type with a constant roll distance are use
 
 > **Note**: The effect of using sample group structures in the track in this manner is that the edit list’s media time and track duration fields do not include encoder delay, as specified above in [`Edit list atom ('elst')`](edit_list_atom.md).
 
-Two sample group structure atoms are used to represent the amount of encoder delay and remainder samples which must be trimmed: [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) and [`Sample-to-group atom ('sbpd')`](sample-to-group_atom.md).
+Two sample group structure atoms are used to represent the amount of encoder delay and remainder samples which must be trimmed: [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) and [`Sample-to-group atom ('sbgp')`](sample-to-group_atom.md).
 
 ## Topics
 
 ### Sample group structures
 - [Sample group description atom ('sgpd')](sample_group_description_atom.md)
   An atom that gives information about the characteristics of sample groups.
-- [Sample-to-group atom ('sbpd')](sample-to-group_atom.md)
+- [Sample-to-group atom ('sbgp')](sample-to-group_atom.md)
   An atom that associates a sample with a sample group description.
 
 ## See Also

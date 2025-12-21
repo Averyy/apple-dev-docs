@@ -22,7 +22,7 @@ var isRegularFile: Bool { get }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the file wrapper object is a regular-file wrapper, otherwise it contains [`false`](https://developer.apple.com/documentation/swift/false). Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value of this property if the type of the file on disk has changed.
+This property contains [`true`](https://developer.apple.com/documentation/Swift/true) when the file wrapper object is a regular-file wrapper, otherwise it contains [`false`](https://developer.apple.com/documentation/Swift/false). Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value of this property if the type of the file on disk has changed.
 
 ## See Also
 

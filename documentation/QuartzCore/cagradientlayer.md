@@ -23,7 +23,7 @@ class CAGradientLayer
 
 You use a gradient layer to create a color gradient containing an arbitrary number of colors. By default, the colors are spread uniformly across the layer, but you can optionally specify locations for control over the color positions through the gradient.
 
-The following code shows how to create a gradient layer containing four colors that are evenly distributed through the gradient. Rotating the layer by 90° (doc://com.apple.documentation/documentation/corefoundation/cgfloat/1845230-pi `/ 2` radians) gives a horizontal gradient.
+The following code shows how to create a gradient layer containing four colors that are evenly distributed through the gradient. Rotating the layer by 90° ([`pi`](https://developer.apple.com/documentation/Swift/FloatingPoint/pi) ⁄ `2` radians) gives a horizontal gradient.
 
 ```objc
 gradientLayer.colors = [UIColor.red.cgColor,

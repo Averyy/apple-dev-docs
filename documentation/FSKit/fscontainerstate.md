@@ -31,9 +31,6 @@ This enumeration represents values for a container’s state engine. Containers 
   The container is active, and one or more volumes are active.
 ### Working with raw values
 - [init?(rawValue: Int)](fscontainerstate/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fscontainerstate/equatable-implementations.md)
-- [RawRepresentable Implementations](fscontainerstate/rawrepresentable-implementations.md)
 
 ## Relationships
 

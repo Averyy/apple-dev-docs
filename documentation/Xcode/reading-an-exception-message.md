@@ -18,7 +18,7 @@ The following sections each describe common mistakes in using framework APIs and
 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil'
 ```
 
-If you need to add an object to a `Foundation` or `CoreFoundation` collection class that represents a lack of any valid value, use doc://com.apple.documentation/documentation/foundation/nsnull/1520557-null or [`kCFNull`](https://developer.apple.com/documentation/CoreFoundation/kCFNull). Otherwise, test an object’s value before you add it to a collection and don’t add it if the object is `nil`.
+If you need to add an object to a `Foundation` or `CoreFoundation` collection class that represents a lack of any valid value, use [`null`](https://developer.apple.com/documentation/Foundation/NSNull/null) or [`kCFNull`](https://developer.apple.com/documentation/CoreFoundation/kCFNull). Otherwise, test an object’s value before you add it to a collection and don’t add it if the object is `nil`.
 
 ##### Address a Crash Caused By Using a Null Object in Apis That Require Non Null Parameters
 

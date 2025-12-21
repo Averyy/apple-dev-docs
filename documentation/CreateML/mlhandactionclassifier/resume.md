@@ -22,9 +22,9 @@ static func resume(_ session: MLTrainingSession<MLHandActionClassifier>) throws 
 
 An [`MLJob`](mljob.md) that represents the hand action training session.
 
-#### Discussion
+## Parameters
 
-- session: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
+- `session`: An   instance that represents the   training session.
 
 ## See Also
 

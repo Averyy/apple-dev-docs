@@ -58,9 +58,9 @@ class FinanceStore
 - [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
   Result type for the finance store’s save order method.
 - [FinanceStore.BackgroundDataType](financestore/backgrounddatatype.md)
-  The types of data in the finance store supported by background delivery.
+  Types of data in the finance store supported by background delivery.
 - [FinanceStore.UpdateFrequency](financestore/updatefrequency.md)
-  The frequencies that apps can register for updates with.
+  Frequencies of background delivery updates.
 ### Structures
 - [FinanceStore.Changes](financestore/changes.md)
   A structure that records changes to the finance store.
@@ -70,7 +70,7 @@ class FinanceStore
   A structure that describes the starting point to use for financial data queries.
 ### Instance Methods
 - [func disableAllBackgroundDelivery()](financestore/disableallbackgrounddelivery.md)
-  Disables all background delivery.
+  Disables background delivery for all data types.
 - [func disableBackgroundDelivery(for: [FinanceStore.BackgroundDataType])](financestore/disablebackgrounddelivery(for:).md)
   Disables background delivery for the specified types.
 - [func enableBackgroundDelivery(for: [FinanceStore.BackgroundDataType], frequency: FinanceStore.UpdateFrequency)](financestore/enablebackgrounddelivery(for:frequency:).md)

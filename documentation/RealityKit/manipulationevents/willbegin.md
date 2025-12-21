@@ -6,7 +6,7 @@
 The event that occurs when someone is about to start an entity manipulation gesture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

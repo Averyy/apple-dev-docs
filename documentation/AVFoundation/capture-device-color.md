@@ -6,15 +6,15 @@ Manage HDR and color space settings for a device.
 
 ## Topics
 
-### Configuring HDR Settings
+### Configuring HDR settings
 - [var automaticallyAdjustsVideoHDREnabled: Bool](avcapturedevice/automaticallyadjustsvideohdrenabled.md)
   A Boolean value that indicates whether the device automatically manages the state of high dynamic range (HDR) video streaming.
 - [var isVideoHDREnabled: Bool](avcapturedevice/isvideohdrenabled.md)
   A Boolean value that indicates whether the device streams high dynamic range video buffers, also known as extended dynamic range (EDR).
-### Enabling Global Tone Mapping
+### Enabling global tone mapping
 - [var isGlobalToneMappingEnabled: Bool](avcapturedevice/isglobaltonemappingenabled.md)
   A Boolean value that indicates whether the device should use global tone mapping.
-### Configuring Color Space Settings
+### Configuring color space settings
 - [var activeColorSpace: AVCaptureColorSpace](avcapturedevice/activecolorspace.md)
   The currently active color space for capture.
 - [enum AVCaptureColorSpace](avcapturecolorspace.md)
@@ -36,7 +36,7 @@ Manage HDR and color space settings for a device.
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.

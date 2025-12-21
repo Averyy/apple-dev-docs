@@ -24,7 +24,7 @@ var includeAllNetworks: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the system routes network traffic through the tunnel except traffic for designated system services necessary for maintaining expected device functionality.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system routes network traffic through the tunnel except traffic for designated system services necessary for maintaining expected device functionality.
 
 You can exclude some types of traffic using the [`excludeAPNs`](nevpnprotocol/excludeapns.md), [`excludeLocalNetworks`](nevpnprotocol/excludelocalnetworks.md), and [`excludeCellularServices`](nevpnprotocol/excludecellularservices.md) properties in combination with this property. The system always excludes the following network traffic from the tunnel regardless of this property value:
 
@@ -33,7 +33,7 @@ You can exclude some types of traffic using the [`excludeAPNs`](nevpnprotocol/ex
 - Certain cellular services traffic that uses the cellular network only, such as VoLTE.
 - Traffic that communicates with a companion device, such as an Apple Watch.
 
-[`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property. The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+[`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property. The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

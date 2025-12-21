@@ -22,23 +22,18 @@ struct FirstWhere<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a First-Where Publisher
+### Creating a first-where publisher
 - [init(upstream: Upstream, predicate: (Publishers.FirstWhere<Upstream>.Output) -> Bool)](publishers/firstwhere/init(upstream:predicate:).md)
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.FirstWhere.Output](publishers/firstwhere/output.md)
   The kind of values published by this publisher.
 - [Publishers.FirstWhere.Failure](publishers/firstwhere/failure.md)
   The kind of errors this publisher might publish.
-### Applying Operators
-- [Publisher Operators](publishers-firstwhere-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Instance Properties
-- [let predicate: (Publishers.FirstWhere<Upstream>.Output) -> Bool](publishers/firstwhere/predicate.md)
-  The closure that determines whether to publish an element.
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/firstwhere/upstream.md)
   The publisher from which this publisher receives elements.
-### Default Implementations
-- [Publisher Implementations](publishers/firstwhere/publisher-implementations.md)
+- [let predicate: (Publishers.FirstWhere<Upstream>.Output) -> Bool](publishers/firstwhere/predicate.md)
+  The closure that determines whether to publish an element.
 
 ## Relationships
 

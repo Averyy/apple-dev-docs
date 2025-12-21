@@ -1,4 +1,4 @@
-# hv_vcpu_create(_:_:_:)
+# hv_vcpu_create(_:_:)
 
 **Framework**: Hypervisor  
 **Kind**: func
@@ -6,12 +6,12 @@
 Creates a vCPU instance for the current thread.
 
 **Availability**:
-- macOS 11.0+
+- macOS 10.10+
 
 ## Declaration
 
 ```swift
-func hv_vcpu_create(_ vcpu: UnsafeMutablePointer<hv_vcpu_t>, _ exit: UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, _ config: hv_vcpu_config_t?) -> hv_return_t
+func hv_vcpu_create(_ vcpu: UnsafeMutablePointer<hv_vcpuid_t>, _ flags: hv_vcpu_options_t) -> hv_return_t
 ```
 
 #### Return Value
@@ -29,14 +29,12 @@ Intel-based Mac computers have different parameters:
 ## Parameters
 
 - `vcpu`: An argument that the hypervisor populates with the instance of a vCPU on a successful return.
-- `exit`: Apple silicon only.
-- `config`: Apple silicon only.
 
 ## See Also
 
 - [func hv_vm_get_max_vcpu_count(UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_vm_get_max_vcpu_count(_:).md)
   Returns the maximum number of vCPUs that the hypervisor supports.
-- [func hv_vcpu_destroy(hv_vcpu_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
+- [func hv_vcpu_destroy(hv_vcpuid_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
   Destroys the vCPU instance associated with the current thread.
 - [typealias hv_vcpu_t](hv_vcpu_t.md)
   An opaque value that represents a vCPU instance.
@@ -44,4 +42,4 @@ Intel-based Mac computers have different parameters:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:))*

@@ -27,7 +27,7 @@ class Book: ObservableObject {
 }
 ```
 
-The system automatically infers the [`ObjectWillChangePublisher`](https://developer.apple.com/documentation/Combine/ObservableObject/ObjectWillChangePublisher) associated type for the class and synthesizes the required doc://com.apple.documentation/documentation/Combine/ObservableObject/objectWillChange-2oa5v method that emits the changed values of published properties. To publish a property, add the [`Published`](https://developer.apple.com/documentation/Combine/Published) property wrapper to the property’s declaration:
+The system automatically infers the [`ObjectWillChangePublisher`](https://developer.apple.com/documentation/Combine/ObservableObject/ObjectWillChangePublisher) associated type for the class and synthesizes the required [`objectWillChange`](https://developer.apple.com/documentation/Combine/ObservableObject/objectWillChange) method that emits the changed values of published properties. To publish a property, add the [`Published`](https://developer.apple.com/documentation/Combine/Published) property wrapper to the property’s declaration:
 
 ```swift
 class Book: ObservableObject {
@@ -176,13 +176,13 @@ The binding connects the view element to the underlying model so that a person m
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../Observation/Observable().md)
   Defines and implements conformance of the Observable protocol.
 - [struct StateObject](stateobject.md)
   A property wrapper type that instantiates an observable object.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject : AnyObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../Combine/ObservableObject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

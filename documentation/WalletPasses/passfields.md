@@ -45,8 +45,14 @@ object PassFields
 
 ## See Also
 
-- [object PassFieldContent](passfieldcontent.md)
-  An object that represents the information to display in a field on a pass.
+- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+  Create the directory structure and add source files and images to define a pass.
+- [Building a Pass](building-a-pass.md)
+  Build a distributable pass.
+- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+  Distribute a pass to your users or update an existing pass.
+- [object Pass](pass.md)
+  An object that represents a pass.
 
 
 ---

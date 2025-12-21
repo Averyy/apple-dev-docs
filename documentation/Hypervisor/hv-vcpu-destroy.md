@@ -6,12 +6,12 @@
 Destroys the vCPU instance associated with the current thread.
 
 **Availability**:
-- macOS 11.0+
+- macOS 10.10+
 
 ## Declaration
 
 ```swift
-func hv_vcpu_destroy(_ vcpu: hv_vcpu_t) -> hv_return_t
+func hv_vcpu_destroy(_ vcpu: hv_vcpuid_t) -> hv_return_t
 ```
 
 #### Return Value
@@ -30,7 +30,7 @@ func hv_vcpu_destroy(_ vcpu: hv_vcpu_t) -> hv_return_t
 
 - [func hv_vm_get_max_vcpu_count(UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_vm_get_max_vcpu_count(_:).md)
   Returns the maximum number of vCPUs that the hypervisor supports.
-- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:_:).md)
+- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpuid_t>, hv_vcpu_options_t) -> hv_return_t](hv_vcpu_create(_:_:).md)
   Creates a vCPU instance for the current thread.
 - [typealias hv_vcpu_t](hv_vcpu_t.md)
   An opaque value that represents a vCPU instance.

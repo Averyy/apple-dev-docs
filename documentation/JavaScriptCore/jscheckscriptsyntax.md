@@ -21,7 +21,7 @@ func JSCheckScriptSyntax(_ ctx: JSContextRef!, _ script: JSStringRef!, _ sourceU
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the script is syntactically correct; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the script is syntactically correct; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

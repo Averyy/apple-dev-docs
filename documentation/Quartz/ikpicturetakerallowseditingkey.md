@@ -16,7 +16,7 @@ let IKPictureTakerAllowsEditingKey: String
 
 #### Discussion
 
-The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

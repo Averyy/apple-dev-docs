@@ -21,14 +21,14 @@ struct MTLAccelerationStructureSizes
 
 ## Topics
 
-### Retrieving the Sizes
+### Retrieving the sizes
 - [var accelerationStructureSize: Int](mtlaccelerationstructuresizes/accelerationstructuresize.md)
   The size of the acceleration structure, in bytes.
 - [var buildScratchBufferSize: Int](mtlaccelerationstructuresizes/buildscratchbuffersize.md)
   The amount of scratch memory, in bytes, the GPU devices needs to build the acceleration structure.
 - [var refitScratchBufferSize: Int](mtlaccelerationstructuresizes/refitscratchbuffersize.md)
   The amount of scratch memory, in bytes, the GPU device needs to refit the acceleration structure.
-### Creating an Acceleration Size Structure
+### Creating an acceleration size structure
 - [init()](mtlaccelerationstructuresizes/init.md)
   Creates an acceleration sizes instance with default values.
 - [init(accelerationStructureSize: Int, buildScratchBufferSize: Int, refitScratchBufferSize: Int)](mtlaccelerationstructuresizes/init(accelerationstructuresize:buildscratchbuffersize:refitscratchbuffersize:).md)

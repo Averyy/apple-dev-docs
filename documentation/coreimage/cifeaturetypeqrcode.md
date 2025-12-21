@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: var
 
-The discovered feature is a Quick Response code (2D barcode).
+A Core Image feature type for QR code object.
 
 **Availability**:
 - iOS ?+
@@ -21,16 +21,18 @@ let CIFeatureTypeQRCode: String
 
 #### Discussion
 
-Use the [`CIQRCodeFeature`](ciqrcodefeature.md) class to find more information about the detected feature.
+To detect QR codes in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
+
+Use the [`CIQRCodeFeature`](ciqrcodefeature.md) class to find more information about the detected QR code.
 
 ## See Also
 
 - [let CIFeatureTypeFace: String](cifeaturetypeface.md)
-  The discovered feature is a person’s face.
+  A Core Image feature type for person’s face.
 - [let CIFeatureTypeRectangle: String](cifeaturetyperectangle.md)
-  The discovered feature is a rectangular object, though it might appear in perspective in the image.
+  A Core Image feature type for rectangular object.
 - [let CIFeatureTypeText: String](cifeaturetypetext.md)
-  The discovered feature is a region likely to contain upright text.
+  A Core Image feature type for text.
 
 
 ---

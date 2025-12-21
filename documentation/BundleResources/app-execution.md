@@ -84,6 +84,9 @@ Your app interacts with the system during normal execution by calling system API
   A Boolean value indicating whether the system may terminate the app to log out or shut down more quickly.
 - [UIApplicationExitsOnSuspend](information-property-list/uiapplicationexitsonsuspend.md)
   A Boolean value indicating whether the app terminates, rather than moves to the background, when the app quits.
+### Logging
+- [OSLogPreferences](information-property-list/oslogpreferences.md)
+  A dictionary that defines the logging configuration profile for the app.
 
 ## See Also
 

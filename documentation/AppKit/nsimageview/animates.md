@@ -17,9 +17,9 @@ var animates: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the image view plays animated images automatically using the timing and looping characteristics stored in the image data. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the image view plays animated images automatically using the timing and looping characteristics stored in the image data. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-Decoding an animated GIF file is the only way to create an animated [`NSImage`](nsimage.md) object. If the image view has been assigned an image that was created from animated GIF data, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) enables automatic playback of the animation. If this property is set to [`false`](https://developer.apple.com/documentation/swift/false), only the first frame of an animated image is displayed.
+Decoding an animated GIF file is the only way to create an animated [`NSImage`](nsimage.md) object. If the image view has been assigned an image that was created from animated GIF data, setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) enables automatic playback of the animation. If this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), only the first frame of an animated image is displayed.
 
 Loading an animated GIF file using an [`NSImage`](nsimage.md) object produces an image that uses an [`NSBitmapImageRep`](nsbitmapimagerep.md) object. The [`currentFrame`](nsbitmapimagerep/propertykey/currentframe.md), [`currentFrameDuration`](nsbitmapimagerep/propertykey/currentframeduration.md), and [`frameCount`](nsbitmapimagerep/propertykey/framecount.md) properties of the bitmap image representation determine the timing and looping characteristics of the animation. For more information, see [`NSBitmapImageRep`](nsbitmapimagerep.md).
 

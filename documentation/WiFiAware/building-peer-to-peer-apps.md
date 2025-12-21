@@ -4,6 +4,11 @@
 
 Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 This sample app uses the Wi-Fi Aware framework to build a peer-to-peer app. One device acts as a publisher by running a local simulation and advertising a service. Nearby devices connect to the publisher and subscribe to the simulation movements. The Wi-Fi Aware framework provides a secure, low-latency connection between the publisher and connected devices.
@@ -19,17 +24,17 @@ Because this sample app relies on using Wi-Fi Aware to make a network connection
 1. Launch the app on two nearby devices.
 2. Tap Host Simulation on one device to start it in publisher mode.
 3. Tap View Simulation on the other device to start it in subscriber mode.
-4. Pair the devices. - Tap Add Device on both devices.
+4. Pair the devices. - Tap  on both devices.
 - On the subscriber device, select the publisher device to pair with, and follow the on-screen steps to complete the pairing.
 - After the pairing is complete, each device shows the other device under the  section. Dismiss the pairing views on both devices.
 5. Connect the devices. - On the publisher device, tap Advertise.
-- On the subscriber device, tap Find & Connect.
+- On the subscriber device, tap Discover & Connect.
 
 The devices then make a Wi-Fi Aware connection, and the satellite position on the subscriber device mirrors that of the one on the publisher. You can control the position of the satellite on the publisher device by tapping on it and moving it around, and you can observe the position of the satellite on the subscriber devices mirroring the one on the publisher device.
 
 ##### Authorize the App to Publish and Subscribe
 
-The sample app can use the Wi-Fi Aware framework with the addition of the [`com.apple.developer.wifi-aware`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.wifi-aware) entitlement as a capability array. To enable the sample app to perform publish and subscribe operations, add `Publish` and `Subscribe` strings to the capability array:
+The sample app uses the Wi-Fi Aware framework with the addition of the [`com.apple.developer.wifi-aware`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.wifi-aware) entitlement as a capability array. To perform both publish and subscribe operations, the sample app adds the `Publish` and `Subscribe` strings to the capability array:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -90,10 +95,10 @@ extension WASubscribableService {
 
 To set up a connection between devices, you need to pair the devices. Both the  [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/DeviceDiscoveryUI) and [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit) frameworks work for pairing. The sample app uses `DeviceDiscoveryUI` to pair devices.
 
-To start a browser that can discover nearby devices, the app uses the [`DevicePicker`](https://developer.apple.com/documentation/DeviceDiscoveryUI/DevicePicker) view, providing it with an empty device list and `simulationService` as the service:
+To start a browser that can discover nearby devices, the app uses the [`DevicePicker`](https://developer.apple.com/documentation/DeviceDiscoveryUI/DevicePicker) view, providing it with `userSpecifiedDevices` as the list of allowed devices and `simulationService` as the service:
 
 ```swift
-DevicePicker(.wifiAware(.connecting(to: .selected([]), from: .simulationService))) { endpoint in
+DevicePicker(.wifiAware(.connecting(to: .userSpecifiedDevices, from: .simulationService))) { endpoint in
     logger.info("Paired Endpoint: \(endpoint)")
 } label: {
     Image(systemName: "plus")
@@ -104,10 +109,10 @@ DevicePicker(.wifiAware(.connecting(to: .selected([]), from: .simulationService)
 }
 ```
 
-To start a listener that allows nearby devices to discover and pair, the app uses [`DevicePairingView`](https://developer.apple.com/documentation/DeviceDiscoveryUI/DevicePairingView) with `simulationService` as the service and an empty device list:
+To start a listener that allows nearby devices to discover and pair, the app uses [`DevicePairingView`](https://developer.apple.com/documentation/DeviceDiscoveryUI/DevicePairingView) with `simulationService` as the service and `userSpecifiedDevices` as the list of allowed devices:
 
 ```swift
-DevicePairingView(.wifiAware(.connecting(to: .simulationService, from: .selected([])))) {
+DevicePairingView(.wifiAware(.connecting(to: .simulationService, from: .userSpecifiedDevices))) {
     Image(systemName: "plus")
     Text("Add Device")
 } fallback: {
@@ -116,7 +121,7 @@ DevicePairingView(.wifiAware(.connecting(to: .simulationService, from: .selected
 }
 ```
 
-To perform pairing, tap the `Add Devices` button in the app on the two devices, one running in publisher mode and the other in subscriber mode.
+To perform pairing, tap the  button in the app on the two devices, one running in publisher mode and the other in subscriber mode.
 
 ##### Access Paired Devices
 
@@ -140,7 +145,7 @@ do {
 
 ##### Consider Performance
 
-Before using Wi-Fi Aware in an app, it’s important to decide on the [`WAPerformanceMode`](waperformancemode.md) to use for the connections. The first option is [`WAPerformanceMode.bulk`](waperformancemode/bulk.md), the recommended option for almost all use cases. The second option is [`WAPerformanceMode.realtime`](waperformancemode/realtime.md), which is for instances that require low latency. The sample app uses `realtime` as it needs to send position updates roughly once very 16 ms and thus requires very low latency.
+Before using Wi-Fi Aware in an app, it’s important to decide on the [`WAPerformanceMode`](waperformancemode.md) to use for the connections. The first option is [`WAPerformanceMode.bulk`](waperformancemode/bulk.md), the recommended option for almost all use cases. The second option is [`WAPerformanceMode.realtime`](waperformancemode/realtime.md), which is for instances that require low latency. The sample app uses `realtime` as it needs to send position updates for every frame of the simulation scene and thus requires very low latency.
 
 Changing the performance mode from `realtime` to `bulk` in the app demonstrates the difference between the two modes. To change the performance mode in the sample app, change the following line in `NetworkConfig.swift`:
 
@@ -160,9 +165,9 @@ let appAccessCategory: WAAccessCategory = .interactiveVideo
 let appAccessCategory: WAAccessCategory = .bestEffort
 ```
 
-##### Publish and Subscribe with the Network Framework
+##### Connect Using the Network Framework
 
-The sample app uses the [`Network`](https://developer.apple.com/documentation/Network) framework to publish and subscribe. The Wi-Fi Aware framework implements the [`ListenerProvider`](https://developer.apple.com/documentation/Network/ListenerProvider) and [`BrowserProvider`](https://developer.apple.com/documentation/Network/BrowserProvider) protocols in the Network framework. It creates a network listener and browser using [`NetworkListener`](https://developer.apple.com/documentation/Network/NetworkListener) and [`NetworkBrowser`](https://developer.apple.com/documentation/Network/NetworkBrowser), respectively. Running these instances results in Wi-Fi Aware publish and subscribe operations. After the app discovers the network endpoints, it creates a Wi-Fi Aware connection using [`NetworkConnection`](https://developer.apple.com/documentation/Network/NetworkConnection).
+The sample app uses the [`Network`](https://developer.apple.com/documentation/Network) framework to publish and subscribe. The Wi-Fi Aware framework implements the [`ListenerProvider`](https://developer.apple.com/documentation/Network/ListenerProvider) and [`BrowserProvider`](https://developer.apple.com/documentation/Network/BrowserProvider) protocols in the Network framework. The app creates a network listener and browser using [`NetworkListener`](https://developer.apple.com/documentation/Network/NetworkListener) and [`NetworkBrowser`](https://developer.apple.com/documentation/Network/NetworkBrowser), respectively. Running these instances results in Wi-Fi Aware publish and subscribe operations. After the app discovers the network endpoints, it creates a Wi-Fi Aware connection using [`NetworkConnection`](https://developer.apple.com/documentation/Network/NetworkConnection).
 
 ##### Publish a Service
 
@@ -197,18 +202,26 @@ using: .parameters {
 To start subscribing, the app creates a `NetworkBrowser` instance by providing it `simulationService` as the service, and specifying the paired devices that it can discover.
 
 ```swift
-try await NetworkBrowser(for:
+let browser = NetworkBrowser(for:
     .wifiAware(.connecting(to: .allPairedDevices, from: .simulationService))
 )
 .onStateUpdate { browser, state in
-    logger.info("\(String(describing: browser)) : \(String(describing: state))")
+    logger.info("\(String(describing: browser)): \(String(describing: state))")
 
     // Process the browser state update.
 }
-.run { waEndpoints in
-    logger.info("Discovered: \(waEndpoints)")
+```
 
-    // Make a connection.
+To start the subscriber, the sample app uses the `run` method on the `NetworkBrowser` instance. The app then selects the first discovered endpoint advertising the service and stops the browse operation by returning `.finish(firstEndpoint)`. Typically, an app evaluates the list of discovered endpoints and decides to continue the browse operation until the desired endpoint is found.
+
+```swift
+let endpoint = try await browser.run { waEndpoints in
+    logger.info("Discovered: \(waEndpoints)")
+    if let firstEndpoint = waEndpoints.first {
+        return .finish(firstEndpoint)
+    } else {
+        return .continue
+    }
 }
 ```
 
@@ -322,6 +335,14 @@ The Wi-Fi Aware framework reports the measured transmit latency of packets sent 
 
 ```swift
 performanceReport.transmitLatency[appAccessCategory]?.average
+```
+
+##### Get Wi Fi Aware Errors
+
+The Wi-Fi Aware framework extends [`NWError`](https://developer.apple.com/documentation/Network/NWError) with a [`wifiAware`](https://developer.apple.com/documentation/Network/NWError/wifiAware) property that provides Wi-Fi Aware with specific errors that occur on the `NetworkListener`, `NetworkBrowser` or `NetworkConnection` instances. The app gets the underlying Wi-Fi Aware error from the NWError the Network framework provides as part of the [`NWListener.State.failed(_:)`](https://developer.apple.com/documentation/Network/NWListener/State-swift.enum/failed(_:)), [`NWBrowser.State.failed(_:)`](https://developer.apple.com/documentation/Network/NWBrowser/State-swift.enum/failed(_:)), and [`NWConnection.State.failed(_:)`](https://developer.apple.com/documentation/Network/NWConnection/State-swift.enum/failed(_:)) states depending on whether the app is publishing, browsing, or connecting.
+
+```swfit
+case .failed(let error): // Get the Wi-Fi Aware from the NWError as error.wifiAware
 ```
 
 ## See Also

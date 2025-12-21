@@ -22,7 +22,7 @@ var isEmpty: Bool { get }
 
 #### Discussion
 
-An empty segment has a valid target time range, but its [`sourceURL`](avcompositiontracksegment/sourceurl.md) value is `nil` and the source start time is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid). It doesn’t set values for its other properties.
+An empty segment has a valid target time range, but its [`sourceURL`](avcompositiontracksegment/sourceurl.md) value is `nil` and the source start time is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid). It doesn’t set values for its other properties.
 
 ## See Also
 

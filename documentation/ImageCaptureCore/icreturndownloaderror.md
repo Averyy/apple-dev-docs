@@ -44,10 +44,8 @@ struct ICReturnDownloadError
 
 ## See Also
 
-- [ICReturn](icreturn.md)
-  An error returned from ImageCaptureCore.
-- [ICLegacyReturn](iclegacyreturn.md)
-  A legacy error returned from ImageCaptureCore.
+- [struct ICReturn](icreturn.md)
+- [struct ICLegacyReturn](iclegacyreturn.md)
 - [struct ICReturnConnectionError](icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
 - [struct ICReturnMetadataError](icreturnmetadataerror.md)

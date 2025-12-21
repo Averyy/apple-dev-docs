@@ -28,10 +28,6 @@ Indicates no explicit quality of service information. Whenever possible, an appr
 - [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
 - [QualityOfService.utility](qualityofservice/utility.md)
 - [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
 
 
 ---

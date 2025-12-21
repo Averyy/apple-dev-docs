@@ -28,6 +28,21 @@ func shadow(color: Color = Color(.sRGBLinear, white: 0, opacity: 0.33), radius: 
 - `x`: An amount to offset the shadow horizontally.
 - `y`: An amount to offset the shadow vertically.
 
+## See Also
+
+- [func foregroundStyle<S>(S) -> some ChartContent](chartcontent/foregroundstyle(_:).md)
+  Sets the foreground style for the chart content.
+- [func opacity(Double) -> some ChartContent](chartcontent/opacity(_:).md)
+  Sets the opacity for the chart content.
+- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
+  Applies a Gaussian blur to this chart content.
+- [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](chartcontent/cornerradius(_:style:).md)
+  Sets the corner radius of the chart content.
+- [func lineStyle(StrokeStyle) -> some ChartContent](chartcontent/linestyle(_:).md)
+  Sets the style for line marks.
+- [func interpolationMethod(InterpolationMethod) -> some ChartContent](chartcontent/interpolationmethod(_:).md)
+  Plots line and area marks with the interpolation method that you specify.
+
 
 ---
 

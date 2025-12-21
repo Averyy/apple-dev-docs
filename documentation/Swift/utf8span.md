@@ -6,13 +6,13 @@
 A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -35,12 +35,15 @@ struct UTF8Span
   Creates a UTF8Span containing `codeUnits`. Validates that the input is valid UTF-8, otherwise throws an error.
 ### Instance Properties
 - [var count: Int](utf8span/count.md)
+  The number of UTF-8 code units in the span.
 - [var isEmpty: Bool](utf8span/isempty.md)
+  A Boolean value that indicates whether the UTF-8 span is empty.
 - [var isKnownASCII: Bool](utf8span/isknownascii.md)
   Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there  be non-ASCII content.
 - [var isKnownNFC: Bool](utf8span/isknownnfc.md)
   Returns whether the contents are known to be NFC. This is not always checked at initialization time and is set by `checkForNFC`.
 - [var span: Span<UInt8>](utf8span/span.md)
+  A span used to access the code units.
 ### Instance Methods
 - [func bytesEqual(to: some Sequence<UInt8>) -> Bool](utf8span/bytesequal(to:).md)
   Whether this span has the same bytes as `other`.

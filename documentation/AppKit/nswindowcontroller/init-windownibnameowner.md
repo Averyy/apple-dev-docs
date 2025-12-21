@@ -17,7 +17,7 @@ convenience init(windowNibName: NSNib.Name, owner: Any)
 
 #### Discussion
 
-The default initialization turns on cascading, sets the [`shouldCloseDocument`](nswindowcontroller/shouldclosedocument.md) property to [`false`](https://developer.apple.com/documentation/swift/false), and sets the autosave name for the window’s frame to an empty string.
+The default initialization turns on cascading, sets the [`shouldCloseDocument`](nswindowcontroller/shouldclosedocument.md) property to [`false`](https://developer.apple.com/documentation/Swift/false), and sets the autosave name for the window’s frame to an empty string.
 
 ## Parameters
 

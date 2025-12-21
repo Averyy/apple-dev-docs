@@ -15,11 +15,11 @@ The [`UIAccessibilityElement`](uiaccessibilityelement.md) class, which represent
 ## Topics
 
 ### Supporting basic accessibility
-- [@MainActor var isAccessibilityElement: Bool { get set }](../ObjectiveC/NSObject-swift.class/isAccessibilityElement.md)
-- [@MainActor var accessibilityLabel: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityLabel.md)
-- [@MainActor var accessibilityValue: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityValue.md)
-- [@MainActor var accessibilityHint: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityHint.md)
-- [@MainActor var accessibilityTraits: UIAccessibilityTraits { get set }](../ObjectiveC/NSObject-swift.class/accessibilityTraits.md)
+- [var isAccessibilityElement: Bool](../ObjectiveC/NSObject-swift.class/isAccessibilityElement.md)
+- [var accessibilityLabel: String?](../ObjectiveC/NSObject-swift.class/accessibilityLabel.md)
+- [var accessibilityValue: String?](../ObjectiveC/NSObject-swift.class/accessibilityValue.md)
+- [var accessibilityHint: String?](../ObjectiveC/NSObject-swift.class/accessibilityHint.md)
+- [var accessibilityTraits: UIAccessibilityTraits](../ObjectiveC/NSObject-swift.class/accessibilityTraits.md)
 - [struct UIAccessibilityTraits](uiaccessibilitytraits.md)
   Constants that describe how an accessibility element behaves.
 ### Defining accessibility text and language
@@ -27,21 +27,21 @@ The [`UIAccessibilityElement`](uiaccessibilityelement.md) class, which represent
   Apply attributes to text in an attributed string to modify the pronunciation of that text.
 - [Text attributes for attributed strings](text-attributes-for-attributed-strings.md)
   Apply attributes to text in an attributed string to convey extra information about the text.
-- [@MainActor var accessibilityHeaderElements: [Any]? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityHeaderElements.md)
-- [@MainActor @NSCopying var accessibilityAttributedHint: NSAttributedString? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityAttributedHint.md)
-- [@MainActor @NSCopying var accessibilityAttributedLabel: NSAttributedString? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityAttributedLabel.md)
-- [@MainActor var accessibilityLanguage: String? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityLanguage.md)
-- [@MainActor var accessibilityTextualContext: UIAccessibilityTextualContext? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityTextualContext.md)
-- [@MainActor var accessibilityUserInputLabels: [String]! { get set }](../ObjectiveC/NSObject-swift.class/accessibilityUserInputLabels.md)
-- [@MainActor var accessibilityAttributedUserInputLabels: [NSAttributedString]! { get set }](../ObjectiveC/NSObject-swift.class/accessibilityAttributedUserInputLabels.md)
-- [@MainActor @NSCopying var accessibilityAttributedValue: NSAttributedString? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityAttributedValue.md)
+- [var accessibilityHeaderElements: [Any]?](../ObjectiveC/NSObject-swift.class/accessibilityHeaderElements.md)
+- [var accessibilityAttributedHint: NSAttributedString?](../ObjectiveC/NSObject-swift.class/accessibilityAttributedHint.md)
+- [var accessibilityAttributedLabel: NSAttributedString?](../ObjectiveC/NSObject-swift.class/accessibilityAttributedLabel.md)
+- [var accessibilityLanguage: String?](../ObjectiveC/NSObject-swift.class/accessibilityLanguage.md)
+- [var accessibilityTextualContext: UIAccessibilityTextualContext?](../ObjectiveC/NSObject-swift.class/accessibilityTextualContext.md)
+- [var accessibilityUserInputLabels: [String]!](../ObjectiveC/NSObject-swift.class/accessibilityUserInputLabels.md)
+- [var accessibilityAttributedUserInputLabels: [NSAttributedString]!](../ObjectiveC/NSObject-swift.class/accessibilityAttributedUserInputLabels.md)
+- [var accessibilityAttributedValue: NSAttributedString?](../ObjectiveC/NSObject-swift.class/accessibilityAttributedValue.md)
 ### Configuring behavior
-- [@MainActor var accessibilityCustomRotors: [UIAccessibilityCustomRotor]? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityCustomRotors.md)
-- [@MainActor var accessibilityElementsHidden: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityElementsHidden.md)
-- [@MainActor var accessibilityRespondsToUserInteraction: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityRespondsToUserInteraction.md)
-- [@MainActor var accessibilityViewIsModal: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityViewIsModal.md)
-- [@MainActor var shouldGroupAccessibilityChildren: Bool { get set }](../ObjectiveC/NSObject-swift.class/shouldGroupAccessibilityChildren.md)
-- [@MainActor var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions { get set }](../ObjectiveC/NSObject-swift.class/accessibilityDirectTouchOptions.md)
+- [var accessibilityCustomRotors: [UIAccessibilityCustomRotor]?](../ObjectiveC/NSObject-swift.class/accessibilityCustomRotors.md)
+- [var accessibilityElementsHidden: Bool](../ObjectiveC/NSObject-swift.class/accessibilityElementsHidden.md)
+- [var accessibilityRespondsToUserInteraction: Bool](../ObjectiveC/NSObject-swift.class/accessibilityRespondsToUserInteraction.md)
+- [var accessibilityViewIsModal: Bool](../ObjectiveC/NSObject-swift.class/accessibilityViewIsModal.md)
+- [var shouldGroupAccessibilityChildren: Bool](../ObjectiveC/NSObject-swift.class/shouldGroupAccessibilityChildren.md)
+- [var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions](../ObjectiveC/NSObject-swift.class/accessibilityDirectTouchOptions.md)
 - [UIAccessibility.DirectTouchOptions](uiaccessibility/directtouchoptions.md)
   Constants that configure how VoiceOver produces audio for direct touch areas.
 ### Handling notifications
@@ -56,14 +56,14 @@ The [`UIAccessibilityElement`](uiaccessibilityelement.md) class, which represent
 ### Navigating elements
 - [UIAccessibilityContainer](uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
-- [@MainActor var accessibilityActivationPoint: CGPoint { get set }](../ObjectiveC/NSObject-swift.class/accessibilityActivationPoint.md)
-- [var accessibilityFocusedUIElement: Any? { get }](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
-- [@MainActor var accessibilityFrame: CGRect { get set }](../ObjectiveC/NSObject-swift.class/accessibilityFrame.md)
-- [func accessibilityHitTest(_ point: NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
-- [@MainActor var accessibilityNavigationStyle: UIAccessibilityNavigationStyle { get set }](../ObjectiveC/NSObject-swift.class/accessibilityNavigationStyle.md)
+- [var accessibilityActivationPoint: CGPoint](../ObjectiveC/NSObject-swift.class/accessibilityActivationPoint.md)
+- [var accessibilityFocusedUIElement: Any?](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
+- [var accessibilityFrame: CGRect](../ObjectiveC/NSObject-swift.class/accessibilityFrame.md)
+- [func accessibilityHitTest(NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
+- [var accessibilityNavigationStyle: UIAccessibilityNavigationStyle](../ObjectiveC/NSObject-swift.class/accessibilityNavigationStyle.md)
 - [enum UIAccessibilityNavigationStyle](uiaccessibilitynavigationstyle.md)
   Constants that describe how to navigate an object’s elements with an assistive app.
-- [@MainActor @NSCopying var accessibilityPath: UIBezierPath? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityPath.md)
+- [var accessibilityPath: UIBezierPath?](../ObjectiveC/NSObject-swift.class/accessibilityPath.md)
 - [static func zoomFocusChanged(zoomType: UIAccessibility.ZoomType, toFrame: CGRect, in: UIView)](uiaccessibility/zoomfocuschanged(zoomtype:toframe:in:).md)
   Notifies the system when the app’s focus changes to a new location.
 - [UIAccessibility.ZoomType](uiaccessibility/zoomtype.md)

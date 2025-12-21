@@ -6,8 +6,8 @@
 Structure representing font style attributes in a card.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,23 +25,6 @@ struct FontStyle
   Bold style.
 - [static let underline: RCSService.Business.Card.FontStyle](rcsservice/business/card/fontstyle/underline.md)
   Underline style.
-### Working with raw values
-- [init(rawValue: Int)](rcsservice/business/card/fontstyle/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-- [let rawValue: Int](rcsservice/business/card/fontstyle/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [RCSService.Business.Card.FontStyle.RawValue](rcsservice/business/card/fontstyle/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Supporting types
-- [RCSService.Business.Card.FontStyle.Element](rcsservice/business/card/fontstyle/element.md)
-  The element type of the option set.
-- [RCSService.Business.Card.FontStyle.ArrayLiteralElement](rcsservice/business/card/fontstyle/arrayliteralelement.md)
-  The type of the elements of an array literal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/fontstyle/equatable-implementations.md)
-- [OptionSet Implementations](rcsservice/business/card/fontstyle/optionset-implementations.md)
-- [RawRepresentable Implementations](rcsservice/business/card/fontstyle/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](rcsservice/business/card/fontstyle/setalgebra-implementations.md)
 
 ## Relationships
 

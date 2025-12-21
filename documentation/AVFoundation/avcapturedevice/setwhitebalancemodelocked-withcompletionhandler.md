@@ -32,7 +32,7 @@ Before changing the value the white balance gains, you must call [`lockForConfig
 
 ## Topics
 
-### White Balance Constants
+### White balance constants
 - [class let currentWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains](avcapturedevice/currentwhitebalancegains.md)
   A special constant representing the current white balance setting.
 
@@ -40,6 +40,8 @@ Before changing the value the white balance gains, you must call [`lockForConfig
 
 - [var isLockingWhiteBalanceWithCustomDeviceGainsSupported: Bool](avcapturedevice/islockingwhitebalancewithcustomdevicegainssupported.md)
   A Boolean value that indicates whether the device supports locking white balance to specific gain values.
+- [func setWhiteBalanceModeLocked(whiteBalanceTemperatureAndTintValues: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues, handler: ((CMTime) -> Void)?)](avcapturedevice/setwhitebalancemodelocked(whitebalancetemperatureandtintvalues:handler:).md)
+  Sets white balance to locked mode with explicit temperature and tint values.
 
 
 ---

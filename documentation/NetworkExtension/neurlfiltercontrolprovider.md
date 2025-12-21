@@ -6,10 +6,10 @@
 A protocol that defines an object that’s responsible for fetching pre-filter data.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -29,8 +29,8 @@ Create a class that conforms to this protocol in your app extension, then provid
 - [func stop(reason: NEProviderStopReason) async throws](neurlfiltercontrolprovider/stop(reason:).md)
   Prepares the filter to stop, in response to a call from the framework.
 ### Fetching a prefilter
-- [func fetchPrefilter() async throws -> NEURLFilterPrefilter?](neurlfiltercontrolprovider/fetchprefilter.md)
-  Fetches pre-filter data, in response to a call from the framework.
+- [func fetchPrefilter(existingPrefilterTag: String?) async throws -> NEURLFilterPrefilter?](neurlfiltercontrolprovider/fetchprefilter(existingprefiltertag:).md)
+  Fetches prefilter data, in response to a call from the framework.
 - [struct NEURLFilterPrefilter](neurlfilterprefilter.md)
   A structure containing a prefilter returned by a filter control provider.
 

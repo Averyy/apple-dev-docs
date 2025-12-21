@@ -22,11 +22,11 @@ class UITextView
 ## Mentions
 
 - [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 
 #### Overview
 
@@ -140,9 +140,16 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   A Boolean value that enables a text view’s built-in find interaction.
 - [var findInteraction: UIFindInteraction?](uitextview/findinteraction.md)
   The text view’s built-in find interaction.
-### Getting the writing tools status
+### Getting the Writing Tools configuration
+- [var writingToolsBehavior: UIWritingToolsBehavior](uitextview/writingtoolsbehavior.md)
+  The level of Writing Tools support to use in the text view.
+- [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextview/allowedwritingtoolsresultoptions.md)
+  The type of content Writing Tools generates for your text view.
 - [var isWritingToolsActive: Bool](uitextview/iswritingtoolsactive.md)
   A Boolean value that indicates whether the writing tools are currently interacting with the text view’s content.
+- [var writingToolsCoordinator: UIWritingToolsCoordinator](uitextview/writingtoolscoordinator.md)
+  The object that coordinates interactions between Writing Tools and the text view.
+- [var subclassForWritingToolsCoordinator: AnyClass](uitextview/subclassforwritingtoolscoordinator.md)
 ### Accessing TextKit Objects
 - [var textLayoutManager: NSTextLayoutManager?](uitextview/textlayoutmanager.md)
   The text layout manager that lays out text for the text view’s text container.
@@ -159,12 +166,8 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [UITextView.TextDidChangeMessage](uitextview/textdidchangemessage.md)
 - [UITextView.TextDidEndEditingMessage](uitextview/textdidendeditingmessage.md)
 ### Instance Properties
-- [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextview/allowedwritingtoolsresultoptions.md)
 - [var selectedRanges: [NSRange]](uitextview/selectedranges-70g3h.md)
-- [var subclassForWritingToolsCoordinator: AnyClass](uitextview/subclassforwritingtoolscoordinator.md)
 - [var textFormattingConfiguration: UITextFormattingViewController.Configuration?](uitextview/textformattingconfiguration.md)
-- [var writingToolsBehavior: UIWritingToolsBehavior](uitextview/writingtoolsbehavior.md)
-- [var writingToolsCoordinator: UIWritingToolsCoordinator](uitextview/writingtoolscoordinator.md)
 
 ## Relationships
 

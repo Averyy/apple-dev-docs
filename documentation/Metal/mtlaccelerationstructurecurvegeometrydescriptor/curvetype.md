@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+A curve type for curves in the geometry.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var curveType: MTLCurveType { get set }
 ```
+
+#### Discussion
+
+The default value is [`MTLCurveType.round`](mtlcurvetype/round.md).
 
 
 ---

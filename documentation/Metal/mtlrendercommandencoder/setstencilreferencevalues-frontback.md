@@ -39,6 +39,8 @@ The render pass’s default reference value for the front and back stencil compa
   Configures the adjustments a render pass applies to depth values from fragment functions by a scaling factor and bias.
 - [func setDepthClipMode(MTLDepthClipMode)](mtlrendercommandencoder/setdepthclipmode(_:).md)
   Configures how the render pipeline handles fragments outside the near and far planes of the view frustum.
+- [func setDepthTestBounds(ClosedRange<Float>)](mtlrendercommandencoder/setdepthtestbounds(_:).md)
+  Configures the range for depth bounds testing.
 - [func setStencilReferenceValue(UInt32)](mtlrendercommandencoder/setstencilreferencevalue(_:).md)
   Configures the same comparison value for front- and back-facing primitives.
 

@@ -8,7 +8,6 @@ Types that represent the compute stage.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -43,8 +42,16 @@ The main compute stage represents the essential functionality of a request. Requ
 
 ## See Also
 
-- [class VideoProcessor](videoprocessor.md)
-  An object that performs offline analysis of video content.
+- [var supportedIdentifiers: [String]?](coremlrequest/supportedidentifiers.md)
+  The classification identifiers supported by the request.
+- [let modelContainer: CoreMLModelContainer](coremlrequest/modelcontainer.md)
+  The model to base the image analysis request on.
+- [struct CoreMLModelContainer](coremlmodelcontainer.md)
+  A model container to use with an image-analysis request.
+- [var cropAndScaleAction: ImageCropAndScaleAction](coremlrequest/cropandscaleaction.md)
+  An optional setting that tells the Vision algorithm how to scale an input image.
+- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+  A scale to apply to an input image before performing a request.
 
 
 ---

@@ -30,8 +30,8 @@ A fully connected network classifier model.
 
 ## See Also
 
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encode(_:to:).md)
-  Encodes a fitted encodable transformer.
+- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encodewithoptimizer(_:to:).md)
+  Encodes a fitted transformer with an optimizer.
 
 
 ---

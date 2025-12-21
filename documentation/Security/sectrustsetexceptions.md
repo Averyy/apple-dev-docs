@@ -22,7 +22,7 @@ func SecTrustSetExceptions(_ trust: SecTrust, _ exceptions: CFData?) -> Bool
 
 #### Return Value
 
-A Boolean that is [`true`](https://developer.apple.com/documentation/swift/true) if the exceptions cookies was valid and matches the current leaf certificate, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+A Boolean that is [`true`](https://developer.apple.com/documentation/Swift/true) if the exceptions cookies was valid and matches the current leaf certificate, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

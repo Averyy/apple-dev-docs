@@ -1,4 +1,4 @@
-# Shader Library and Archive Creation
+# Shader library and archive creation
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Create static and dynamic shader libraries, and binary shader archives.
 
 ## Topics
 
-### Creating Shader Libraries
+### Creating shader libraries
 - [func makeDefaultLibrary() -> (any MTLLibrary)?](mtldevice/makedefaultlibrary.md)
   Creates a Metal library instance that contains the functions from your app’s default Metal library.
 - [func makeDefaultLibrary(bundle: Bundle) throws -> any MTLLibrary](mtldevice/makedefaultlibrary(bundle:).md)
@@ -29,7 +29,7 @@ Create static and dynamic shader libraries, and binary shader archives.
   A completion handler signature a method calls when it finishes creating a Metal library.
 - [func makeLibrary(filepath: String) throws -> any MTLLibrary](mtldevice/makelibrary(filepath:).md)
   Creates a Metal library instance that contains the functions in the Metal library file at a file path.
-### Creating Dynamic Shader Libraries
+### Creating dynamic shader libraries
 - [var supportsDynamicLibraries: Bool](mtldevice/supportsdynamiclibraries.md)
   A Boolean value that indicates whether the GPU device can create and use dynamic libraries in compute pipelines.
 - [var supportsRenderDynamicLibraries: Bool](mtldevice/supportsrenderdynamiclibraries.md)
@@ -42,7 +42,7 @@ Create static and dynamic shader libraries, and binary shader archives.
   Error codes that Metal can generate when creating dynamic libraries.
 - [let MTLDynamicLibraryDomain: String](mtldynamiclibrarydomain.md)
   The domain for Metal dynamic library errors.
-### Creating Binary Shader Archives
+### Creating binary shader archives
 - [func makeBinaryArchive(descriptor: MTLBinaryArchiveDescriptor) throws -> any MTLBinaryArchive](mtldevice/makebinaryarchive(descriptor:).md)
   Creates a Metal binary archive instance.
 - [class MTLBinaryArchiveDescriptor](mtlbinaryarchivedescriptor.md)
@@ -54,13 +54,13 @@ Create static and dynamic shader libraries, and binary shader archives.
 
 ## See Also
 
-- [Device Inspection](device-inspection.md)
+- [Device inspection](device-inspection.md)
   Locate and identify a GPU and the features it supports, and sample its counters.
-- [Work Submission](work-submission.md)
+- [Work submission](work-submission.md)
   Create queues that submit work to the GPU or load assets into GPU resources, and indirect command buffers that group your frequent commands together.
-- [Pipeline State Creation](pipeline-state-creation.md)
+- [Pipeline state creation](pipeline-state-creation.md)
   Create pipeline states for render and compute passes, samplers, depth and stencil states, and indirect command buffers.
-- [Resource Creation](resource-creation.md)
+- [Resource creation](resource-creation.md)
   Load assets with input/output queues and make various resource instances, such as buffers, textures, acceleration structures, and memory heaps.
 
 

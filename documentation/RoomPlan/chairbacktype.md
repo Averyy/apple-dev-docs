@@ -27,29 +27,6 @@ When the framework observes a chair in the physical environment during a scan, i
   A type of chair that has a back.
 - [ChairBackType.missing](chairbacktype/missing.md)
   A type of chair that has no back.
-### Identifying a chair back type
-- [var shortIdentifier: String](chairbacktype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a chair back type
-- [static var parentCategory: CapturedElementCategory?](chairbacktype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a chair back type
-- [init?(rawValue: String)](chairbacktype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](chairbacktype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ChairBackType.AllCases](chairbacktype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [ChairBackType.RawValue](chairbacktype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [ChairBackType]](chairbacktype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](chairbacktype/equatable-implementations.md)
-- [RawRepresentable Implementations](chairbacktype/rawrepresentable-implementations.md)
 
 ## Relationships
 

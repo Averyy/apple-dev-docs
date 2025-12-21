@@ -19,6 +19,8 @@ func addObserver(_ observer: any LAEnvironment.Observer)
 
 #### Discussion
 
+Adds observer to monitor changes of the environment.
+
 The observer will be held weakly so its instance should be kept alive by the caller.
 
 

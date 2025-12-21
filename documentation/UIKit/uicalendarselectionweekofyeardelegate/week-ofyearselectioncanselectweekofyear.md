@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Notifies the delegate after a person selects a week in the calendar view.
+Determines if a week is available for selection.
 
 **Availability**:
 - iOS 18.0+
@@ -21,7 +21,7 @@ optional func week(ofYearSelection selection: UICalendarSelectionWeekOfYear, can
 ## See Also
 
 - [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](uicalendarselectionweekofyeardelegate/week(ofyearselection:didselectweekofyear:).md)
-  Determines if a week is available for selection.
+  Notifies the delegate after a person selects a week in the calendar view.
 
 
 ---

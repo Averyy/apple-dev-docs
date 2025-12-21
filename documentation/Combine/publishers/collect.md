@@ -22,28 +22,22 @@ struct Collect<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Collect Publisher
+### Creating a collect publisher
 - [init(upstream: Upstream)](publishers/collect/init(upstream:).md)
   Creates a publisher that buffers items.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Collect.Output](publishers/collect/output.md)
   The kind of values published by this publisher.
 - [Publishers.Collect.Failure](publishers/collect/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/collect/upstream.md)
   The publisher that this publisher receives elements from.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Collect<Upstream>, Publishers.Collect<Upstream>) -> Bool](publishers/collect/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/collect/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-collect-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/collect/equatable-implementations.md)
-- [Publisher Implementations](publishers/collect/publisher-implementations.md)
 
 ## Relationships
 

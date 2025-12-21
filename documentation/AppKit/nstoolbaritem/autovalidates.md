@@ -20,7 +20,7 @@ var autovalidates: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar automatically validates the item; otherwise, it doesn’t validate the item automatically. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the toolbar automatically validates the item; otherwise, it doesn’t validate the item automatically. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

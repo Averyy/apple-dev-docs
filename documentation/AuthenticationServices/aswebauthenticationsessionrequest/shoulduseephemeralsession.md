@@ -22,10 +22,10 @@ var shouldUseEphemeralSession: Bool { get }
 
 - [var url: URL](aswebauthenticationsessionrequest/url.md)
   The web address the browser should use to perform the authentication request.
-- [var callbackURLScheme: String?](aswebauthenticationsessionrequest/callbackurlscheme.md)
-  The scheme the browser should use to return the result of the authentication attempt to the app requesting it.
 - [var uuid: UUID](aswebauthenticationsessionrequest/uuid.md)
   A unique identifier for the request.
+- [var additionalHeaderFields: [String : String]?](aswebauthenticationsessionrequest/additionalheaderfields.md)
+  Additional headers to send when loading the initial URL.
 
 
 ---

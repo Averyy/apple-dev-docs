@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+The passkey identity type.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -19,6 +21,9 @@ static var passkey: ASCredentialIdentityStore.IdentityTypes { get }
 ## See Also
 
 - [static var password: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/password.md)
+  The password identity type.
+- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/onetimecode.md)
+  The one-time code identity type.
 
 
 ---

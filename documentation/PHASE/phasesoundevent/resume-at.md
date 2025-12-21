@@ -4,12 +4,12 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,8 @@ func resume(at time: AVAudioTime?)
 ```
 
 #### Discussion
+
+Resume the sound event at a specific time
 
 A nil time parameter will resume immediately. The device time is not scaled by UnitsPerSecond and is in seconds.
 

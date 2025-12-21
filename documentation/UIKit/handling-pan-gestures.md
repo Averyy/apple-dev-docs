@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram demonstrating a single-finger pan gesture](https://docs-assets.developer.apple.com/published/acae33ffbe085ca3e2e6e886554aeaa7/media-3004404%402x.png)
+![A diagram demonstrating a single-finger pan gesture.](https://docs-assets.developer.apple.com/published/a55542b478cf749779ee3eecda67ba90/handling-pan-gestures-1%402x.png)
 
 Use pan gesture recognizers for tasks that require you to track the movement of the user’s fingers onscreen. You might use a pan gesture recognizer to drag objects around in your interface or update their appearance based on the position of the user’s finger. Pan gestures are continuous, so your action method is called whenever the touch information changes, giving you a chance to update your content.
 
@@ -51,7 +51,7 @@ var initialCenter = CGPoint()  // The initial center point of the view.
 
 If the code for your pan gesture recognizer isn’t called, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - The number of touches is between the values specified in the [`minimumNumberOfTouches`](uipangesturerecognizer/minimumnumberoftouches.md) and [`maximumNumberOfTouches`](uipangesturerecognizer/maximumnumberoftouches.md) properties.
 - For a [`UIScreenEdgePanGestureRecognizer`](uiscreenedgepangesturerecognizer.md) object, the [`edges`](uiscreenedgepangesturerecognizer/edges.md) property is configured and touches start at the appropriate edge.
 

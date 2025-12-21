@@ -12,7 +12,7 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Resolved Issues
 
-- Fixed: Xcode is now deterministic about the order in which string comments are concatenated when updating String Catalogs.   (119389516)
+- Fixed: Xcode is now deterministic about the order in which string comments are concatenated when updating String Catalogs. (119389516)
 
 ###### Known Issues
 
@@ -122,10 +122,10 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Resolved Issues
 
-- Fixed: Newly created .strings and .stringsdict files are now marked as localized in the source language by default.   (64910037)
-- Fixed an issue where Xcode could fail to export or import localizations when the path to Xcode.app contains spaces.   (109700392) (FB12199098)
-- Fixed an issue where “Export Localizations” could fail for targets supporting iOS and visionOS.   (113228759)
-- Fixed: Languages in the String Catalog Editor will now show a minimum of 1% translation progress if any strings are translated at all.   (118790070) (FB13410677)
+- Fixed: Newly created .strings and .stringsdict files are now marked as localized in the source language by default. (64910037)
+- Fixed an issue where Xcode could fail to export or import localizations when the path to Xcode.app contains spaces. (109700392) (FB12199098)
+- Fixed an issue where “Export Localizations” could fail for targets supporting iOS and visionOS. (113228759)
+- Fixed: Languages in the String Catalog Editor will now show a minimum of 1% translation progress if any strings are translated at all. (118790070) (FB13410677)
 
 ##### Metal Debugger
 

@@ -11,6 +11,26 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -31,14 +51,10 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
 - [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
   Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
 - [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
   Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
 - [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
   Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
   Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 - [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
@@ -79,8 +95,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Test your existing apps against EventKit API latest changes.
 - [TN3152: Migrating to the latest Calendar access levels](tn3152-migrating-to-the-latest-calendar-access-levels.md)
   Follow these guidelines to update your app to use the new Calendar access levels.
-- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
-  Learn which networking API is best for you.
 - [TN3149: Fetching Contacts change history events](tn3149-fetching-change-history-events.md)
   Learn how to fetch and process the most recent changes to the Contacts database.
 - [TN3150: Getting ready for dataless files](tn3150-getting-ready-for-data-less-files.md)
@@ -101,8 +115,6 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
   Learn about the supported use cases for low-level networking on watchOS.
 - [TN3128: Starting SharePlay without an existing FaceTime call](tn3128-starting-shareplay-without-an-existing-facetime-call.md)
   Use the share sheet or group activity sharing controller to start SharePlay directly from your app without an existing FaceTime call.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 - [TN3132: Changes to EventKit and EventKitUI in iOS 16](tn3132-changes-eventkit-and-eventkitui-in-ios16.md)
   Test your apps against EventKit and EventKitUI API changes in iOS 16.
 - [TN3130: Changes to EventKit in macOS Ventura 13](tn3130-changes-to-eventkit-in-macos13-ventura.md)
@@ -126,15 +138,13 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 - [TN3120: Expected use cases for Network Extension packet tunnel providers](tn3120-expected-use-cases-for-network-extension-packet-tunnel-providers.md)
   Learn the expected use cases for Network Extension packet tunnel providers, and about use cases that are not supported.
 - [TN3106: Customizing the appearance of UINavigationBar](tn3106-customizing-uinavigationbar-appearance.md)
-  Adopt UINavigationBarAppearance for a navigation bar background color that’s consistent on iOS 13 and later.
+  Adopt UINavigationBarAppearance for a navigation bar background color that’s consistent on iOS 13 through 18.
 - [TN3105: Customizing the UIKit status bar style](tn3105-customizing-uistatusbar-syle.md)
   Configure the device’s status bar style to work well with your app’s user interface.
 - [TN3118: Debugging your app’s launch screen](tn3118-debugging-your-apps-launch-screen.md)
   Understand why your app’s launch screen is not displayed or updated.
 - [TN3107: Resolving Sign in with Apple response errors](tn3107-resolving-sign-in-with-apple-response-errors.md)
   Diagnose errors received by the Sign in with Apple client, or its server infrastructure, by identifying the underlying causes of common error codes and explore their potential solutions.
-- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
-  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
 - [TN3110: Resolving generic Xcode archive issue](tn3110-resolving-generic-xcode-archive-issue.md)
   Identify common configurations that cause a generic Xcode archive.
 - [TN3109: Resolving common archiving issues](tn3109-resolving-common-archiving-issues.md)

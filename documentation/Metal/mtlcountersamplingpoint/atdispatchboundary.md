@@ -21,11 +21,11 @@ case atDispatchBoundary
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-When a Metal device object supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlcomputecommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on a [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to sample the counters between individual dispatch commands.
+When a Metal device instance supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlcomputecommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to sample the counters between individual dispatch commands.
 
 ## See Also
 

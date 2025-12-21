@@ -22,7 +22,7 @@ func applyTransform(_ transform: StringTransform, reverse: Bool, range: NSRange,
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the transform was successfully applied. Otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the transform was successfully applied. Otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

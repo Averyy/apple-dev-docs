@@ -62,6 +62,7 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
 - [object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse](subscriptionoffercodeonetimeusecodevalueslinkageresponse.md)
 - [object SubscriptionOfferCodeOneTimeUseCodesLinkagesResponse](subscriptionoffercodeonetimeusecodeslinkagesresponse.md)
 - [object SubscriptionOfferCodePricesLinkagesResponse](subscriptionoffercodepriceslinkagesresponse.md)
+- [object SubscriptionOfferCodesLinkagesResponse](subscriptionoffercodeslinkagesresponse.md)
 
 ## See Also
 

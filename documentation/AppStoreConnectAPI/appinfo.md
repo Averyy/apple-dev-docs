@@ -20,7 +20,7 @@ object AppInfo
 - [object AppInfo.Attributes](appinfo/attributes-data.dictionary.md)
   Attributes that describe an App Infos resource.
 - [object AppInfo.Relationships](appinfo/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

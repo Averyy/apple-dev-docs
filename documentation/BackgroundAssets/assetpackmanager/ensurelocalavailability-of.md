@@ -6,12 +6,12 @@
 Ensures that the specified asset pack be available locally.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ func ensureLocalAvailability(of assetPack: AssetPack) async throws
 
 ## Mentions
 
-- [Downloading asset packs hosted by Apple](downloading-asset-packs-hosted-by-apple.md)
+- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
 
 #### Discussion
 
@@ -32,6 +32,13 @@ This method checks if the asset pack is currently downloaded. If it isn’t, the
 ## Parameters
 
 - `assetPack`: The asset pack the local availability of which to ensure.
+
+## See Also
+
+- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](assetpackmanager/checkforupdates.md)
+  Gets the latest asset-pack information from the server, updates outdated asset packs, and removes obsolete asset packs.
+- [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
+  Removes the specified asset pack from the device.
 
 
 ---

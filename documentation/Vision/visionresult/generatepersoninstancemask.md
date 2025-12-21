@@ -8,7 +8,6 @@ A result from performing a generate person instance mask request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,10 +20,11 @@ case generatePersonInstanceMask(GeneratePersonInstanceMaskRequest, InstanceMaskO
 
 ## See Also
 
-- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
-  A result from performing a detect document segmentation request.
 - [case generatePersonSegmentation(GeneratePersonSegmentationRequest, PixelBufferObservation)](visionresult/generatepersonsegmentation(_:_:).md)
   A result from performing a generate person segmentation request.
+- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
+  A result from performing a detect document segmentation request.
+- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
 
 
 ---

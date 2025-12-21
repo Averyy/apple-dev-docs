@@ -26,7 +26,7 @@ A Core Video Metal texture cache creates and manages [`CVMetalTexture`](cvmetalt
 - [Cache Attributes](cvmetaltexturecache-cache-attributes.md)
   Attributes specifying texture cache behavior, used with the [`CVMetalTextureCacheCreate(_:_:_:_:_:)`](cvmetaltexturecachecreate(_:_:_:_:_:).md) function.
 ### Related Documentation
-- [Setting Up a Command Structure](../Metal/setting-up-a-command-structure.md)
+- [Setting up a command structure](../Metal/setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 
 ## See Also

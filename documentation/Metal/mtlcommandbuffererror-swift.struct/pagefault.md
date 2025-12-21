@@ -28,7 +28,7 @@ The underlying cause may be a buffer read/write attribute mismatch or an out-of-
 - [static var none: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/none.md)
   An error code that represents the absence of any problems.
 - [static var timeout: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [static var notPermitted: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/notpermitted.md)
   An error code that indicates a process doesn’t have access to a GPU device.
 - [static var outOfMemory: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/outofmemory.md)

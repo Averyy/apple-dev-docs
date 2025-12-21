@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+A flag that indicates whether the object contains protected content.
 
 **Availability**:
 - macOS 10.9+
@@ -13,6 +13,10 @@ A flag that indicates whether the object contains protected content ([`true`](ht
 ```swift
 static let containsProtectedContent: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+The value is an `NSNumber` as `boolValue`. The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the object contains protected content, and [`false`](https://developer.apple.com/documentation/Swift/false) if not.
 
 ## See Also
 

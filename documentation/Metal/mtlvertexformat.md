@@ -21,7 +21,7 @@ enum MTLVertexFormat
 
 ## Topics
 
-### Constants
+### Vertex formats
 - [MTLVertexFormat.invalid](mtlvertexformat/invalid.md)
   An invalid vertex format.
 - [MTLVertexFormat.uchar](mtlvertexformat/uchar.md)
@@ -141,6 +141,15 @@ enum MTLVertexFormat
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var format: MTLVertexFormat](mtlvertexattributedescriptor/format.md)
+  The format of the vertex attribute.
+- [var offset: Int](mtlvertexattributedescriptor/offset.md)
+  The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
+- [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
+  The index in the argument table for the associated vertex buffer.
 
 
 ---

@@ -20,7 +20,7 @@ var prefersFullSizePreview: Bool { get set }
 
 #### Discussion
 
-Set [`prefersFullSizePreview`](uidropproposal/prefersfullsizepreview.md) to [`true`](https://developer.apple.com/documentation/swift/true) to show the preview at its original size, not scaled down to a smaller size. For example, you might set this property to [`true`](https://developer.apple.com/documentation/swift/true) when the user moves items from a nearby view and scaling down the preview is distracting.
+Set [`prefersFullSizePreview`](uidropproposal/prefersfullsizepreview.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to show the preview at its original size, not scaled down to a smaller size. For example, you might set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when the user moves items from a nearby view and scaling down the preview is distracting.
 
 This property applies only to drag and drop activities performed within the same app.
 

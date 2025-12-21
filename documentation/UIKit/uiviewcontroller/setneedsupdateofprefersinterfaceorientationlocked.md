@@ -3,12 +3,12 @@
 **Framework**: UIKit  
 **Kind**: method
 
-Call whenever the view controller’s preference for interface orientation lock has changed
+Indicates that the view controller changed the interface orientation lock preference.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -26,9 +26,9 @@ func setNeedsUpdateOfPrefersInterfaceOrientationLocked()
 - [func setNeedsUpdateOfSupportedInterfaceOrientations()](uiviewcontroller/setneedsupdateofsupportedinterfaceorientations.md)
   Notifies the view controller about a change in supported interface orientations or preferred interface orientation for presentation.
 - [var prefersInterfaceOrientationLocked: Bool](uiviewcontroller/prefersinterfaceorientationlocked.md)
-  Whether this view controller prefers the scene’s interface orientation to be locked when shown. The default is `NO`. Note that this preference may or may not be honored. See `UIWindowScene.Geometry` for the current state of interface orientation lock.
-- [var childViewControllerForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childviewcontrollerforinterfaceorientationlock.md)
-  Override to return a child view controller or nil. If non-nil, that view controller’s preference for interface orientation lock will be used. If nil, `self` is used. Whenever the return value changes, call `setNeedsUpdateOfPrefersInterfaceOrientationLocked()`.
+  A Boolean value that indicates whether the view controller prefers to lock the scene’s interface orientation when the scene is visible.
+- [var childForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childforinterfaceorientationlock.md)
+  A child view controller to query for the interface orientation lock preference.
 
 
 ---

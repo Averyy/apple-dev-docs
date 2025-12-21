@@ -21,7 +21,7 @@ var isActive: Bool { get }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), this attribute is inactive and can be ignored.
+If [`false`](https://developer.apple.com/documentation/Swift/false), this attribute is inactive and can be ignored.
 
 ## See Also
 

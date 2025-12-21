@@ -20,6 +20,11 @@ The strategy that should work well for most applications.
 case `default`
 ```
 
+## See Also
+
+- [MLOptimizationHints.SpecializationStrategy.fastPrediction](mloptimizationhints-swift.struct/specializationstrategy-swift.enum/fastprediction.md)
+  Prefer the prediction latency at the potential cost of specialization time, memory footprint, and the disk space usage of specialized artifacts.
+
 
 ---
 

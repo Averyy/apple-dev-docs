@@ -23,12 +23,6 @@ init(_ column: MLDataColumn<Element>)
 
 - [init(MLUntypedColumn)](array/init(_:)-86ka8.md)
   Constructs an Array with the elements of an MLUntypedColumn.
-- [init?(from: MLDataValue)](array/init(from:)-51fkv.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](array/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](array/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 
 
 ---

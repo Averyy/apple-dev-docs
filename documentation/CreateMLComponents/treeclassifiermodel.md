@@ -35,15 +35,6 @@ struct TreeClassifierModel<Label> where Label : Hashable
 ### Applying
 - [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](treeclassifiermodel/applied(to:eventhandler:).md)
   Performs a classification on a data frame.
-### Type Aliases
-- [TreeClassifierModel.Input](treeclassifiermodel/input.md)
-  The input type.
-- [TreeClassifierModel.Output](treeclassifiermodel/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](treeclassifiermodel/customdebugstringconvertible-implementations.md)
-- [TabularTransformer Implementations](treeclassifiermodel/tabulartransformer-implementations.md)
-- [Transformer Implementations](treeclassifiermodel/transformer-implementations.md)
 
 ## Relationships
 

@@ -86,6 +86,7 @@ Use the [`gamePlayerID`](gkplayer/gameplayerid.md) property as a unique identifi
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also

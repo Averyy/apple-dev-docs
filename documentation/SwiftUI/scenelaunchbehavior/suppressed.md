@@ -7,7 +7,7 @@ The suppressed behavior. The scene will not present itself in the absence of any
 
 **Availability**:
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -27,11 +27,11 @@ To use the sample app, open the sample code project in Xcode and select My Mac a
 
 The sample app includes a `Settings.bundle` file that the system uses to automatically add the standard Preferences menu item to the app menu. Selecting the menu item displays a Preferences window that the system generates based on the preference specifiers defined in the Settings bundle. To learn more, see [`Displaying a Preferences window`](displaying-a-preferences-window.md).
 
-The Settings bundle for the sample app has a preference specifier for setting the background color of the main view. It also has a child pane preference specifier, which displays a second tab of preferences in the Preferences windows. The Settings bundle file `Root.plist` defines these specifiers, while the file `OtherSettings.plist` defines the preference specifiers for the child pane.
+The Settings bundle for the sample app has a preference specifier for setting the background color of the main view. It also has a child pane preference specifier, which displays a second tab of preferences in the Preferences window. The Settings bundle file `Root.plist` defines these specifiers, while the file `OtherSettings.plist` defines the preference specifiers for the child pane.
 
 ##### Register Default Preference Values
 
-When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults). However, when you launch the sample app for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) returns `nil`.
+When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults). However, when the sample app launches for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) returns `nil`.
 
 To ensure that the app always retrieves a non-`nil` value, the sample app registers the default preference values with the registration domain. However, this domain doesn’t persist these values between app launches, so the sample app registers the default values each time the user launches the app.
 

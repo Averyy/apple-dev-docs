@@ -21,7 +21,7 @@ optional func readSelection(from pboard: NSPasteboard) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your implementation was able to read the pasteboard data successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if your implementation was able to read the pasteboard data successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

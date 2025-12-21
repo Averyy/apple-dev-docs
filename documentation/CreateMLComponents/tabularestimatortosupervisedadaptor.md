@@ -38,10 +38,8 @@ struct TabularEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimato
 ### Fitting
 - [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Estimator.Transformer](tabularestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
   Returns the tabular transformer fitted using the provided tabular estimator.
-- [TabularEstimatorToSupervisedAdaptor.Transformer](tabularestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTabularEstimator Implementations](tabularestimatortosupervisedadaptor/supervisedtabularestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

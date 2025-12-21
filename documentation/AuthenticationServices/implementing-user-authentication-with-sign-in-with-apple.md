@@ -37,6 +37,8 @@ func setupProviderLoginView() {
 }
 ```
 
+For more information about which Sign in with Apple buttons are available on different Apple platforms, see [`Displaying Sign in with Apple buttons in your app`](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app).
+
 > ❗ **Important**: When adding the Sign in with Apple button to your storyboard, you must also set the control’s class value to `ASAuthorizationAppleIDButton` in Xcode’s Identity Inspector.
 
 ##### Request Authorization with Apple Id
@@ -71,7 +73,7 @@ If the user is signed in at the system-level with their Apple ID, the sheet appe
 
 ##### Handle User Credentials
 
-If the authentication succeeds, the authorization controller invokes the `ASAuthorizationControllerDelegate.authorizationController(controller:didCompleteWithAuthorization:)` delegate function, which the app uses to store the user’s data in the keychain.
+If the authentication succeeds, the authorization controller invokes the [`authorizationController(controller:didCompleteWithAuthorization:)`](ASAuthorizationControllerDelegate/authorizationController(controller:didCompleteWithAuthorization:).md) delegate function, which the app uses to store the user’s data in the keychain.
 
 ```swift
 func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
@@ -169,7 +171,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 - [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
-  The view that creates the Sign in with Apple button for display.
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)

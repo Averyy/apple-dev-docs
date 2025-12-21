@@ -6,7 +6,7 @@
 The object animates back to its initial pose relative to its parent.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

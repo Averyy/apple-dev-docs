@@ -19,22 +19,12 @@ struct MergeablePartsContainerPartID
 
 ## Topics
 
-### Operators
-- [static func == (MergeablePartsContainerPartID, MergeablePartsContainerPartID) -> Bool](mergeablepartscontainerpartid/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(String)](mergeablepartscontainerpartid/init(_:).md)
   Initiailizes an instance of a document part ID.
 ### Instance Properties
-- [var hashValue: Int](mergeablepartscontainerpartid/hashvalue.md)
-  The hash value.
 - [var rawValue: String](mergeablepartscontainerpartid/rawvalue.md)
   The underlying value of the part ID.
-### Instance Methods
-- [func hash(into: inout Hasher)](mergeablepartscontainerpartid/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mergeablepartscontainerpartid/equatable-implementations.md)
 
 ## Relationships
 

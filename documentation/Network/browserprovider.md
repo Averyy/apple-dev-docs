@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: protocol
 
+BrowserProviders can be used when creating NetworkBrowsers.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,7 +25,8 @@ protocol BrowserProvider : Sendable
 ### Associated Types
 - [associatedtype Endpoint : Connectable](browserprovider/endpoint.md)
 ### Type Methods
-- [static func bonjour(String, domain: String?, metadata: Bool) -> Bonjour](browserprovider/bonjour(_:domain:metadata:).md)
+- [static func bonjour(String, domain: String?, includeTxtRecord: Bool) -> Bonjour](browserprovider/bonjour(_:domain:includetxtrecord:).md)
+  Create a Bonjour browser provider used to browse for Bonjour services.
 - [static func wifiAware(WASubscriberBrowser.Action, active: Duration?) -> Self](browserprovider/wifiaware(_:active:).md)
   Setup a `NetworkBrowser` to subscribe to Wi-Fi Aware services on selected, paired devices.
 

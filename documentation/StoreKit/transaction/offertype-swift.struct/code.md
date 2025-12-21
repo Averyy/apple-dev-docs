@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-An offer with a subscription offer code for an auto-renewable subscription.
+An offer code.
 
 **Availability**:
 - iOS 15.0+
@@ -21,9 +21,12 @@ static let code: Transaction.OfferType
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion
+
+You create and define offer codes in App Store Connect. Offer codes are available for any In-App Purchase product type.
 
 For more information about offer codes, see [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes).
 

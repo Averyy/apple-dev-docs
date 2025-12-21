@@ -19,7 +19,7 @@ func GLKVector4AllGreaterThanScalar(_ vector: GLKVector4, _ value: Float) -> Boo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all of the vector’s components are greater than the scalar value, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if all of the vector’s components are greater than the scalar value, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

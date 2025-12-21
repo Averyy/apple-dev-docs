@@ -22,7 +22,7 @@ func isEqual(to indexSet: IndexSet) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the indexes in the receiving index set are the same indexes `indexSet` contains, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the indexes in the receiving index set are the same indexes `indexSet` contains, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

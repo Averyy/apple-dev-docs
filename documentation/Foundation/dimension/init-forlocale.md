@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a `Dimension` which the specified `locale` prefers.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

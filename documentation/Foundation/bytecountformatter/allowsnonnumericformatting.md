@@ -26,7 +26,7 @@ Displays a more natural display of some values, such as zero, where it may be di
 
 Special handling of certain values such as zero is especially important in some languages, so it’s highly recommended that this property be left in its default state.
 
-Default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

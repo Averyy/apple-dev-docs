@@ -24,11 +24,6 @@ init(shape: [Int])
 
 - `shape`: The target shape.
 
-## See Also
-
-- [init(from: any Decoder) throws](reshaper/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

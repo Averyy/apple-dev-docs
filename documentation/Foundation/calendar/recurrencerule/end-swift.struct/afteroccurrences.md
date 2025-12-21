@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+The event stops repeating after a given number of times
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 static func afterOccurrences(_ count: Int) -> Calendar.RecurrenceRule.End
 ```
+
+## Parameters
+
+- `count`: How many times to repeat the event, including   the first occurrence.   must be greater   than 
 
 
 ---

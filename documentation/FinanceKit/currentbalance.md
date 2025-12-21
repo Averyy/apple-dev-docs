@@ -17,9 +17,6 @@ enum CurrentBalance
 
 ## Topics
 
-### Operators
-- [static func == (CurrentBalance, CurrentBalance) -> Bool](currentbalance/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [CurrentBalance.available(_:)](currentbalance/available(_:).md)
   Only the available balance is present.
@@ -27,19 +24,6 @@ enum CurrentBalance
   Both available and booked balances are present.
 - [CurrentBalance.booked(_:)](currentbalance/booked(_:).md)
   Only the booked balance is present.
-### Initializers
-- [init(from: any Decoder) throws](currentbalance/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](currentbalance/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](currentbalance/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](currentbalance/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](currentbalance/equatable-implementations.md)
 
 ## Relationships
 

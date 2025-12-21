@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The `und` code: used in cases where the language has not been identified
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

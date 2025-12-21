@@ -1,4 +1,4 @@
-# Initialization Options
+# Initialization options
 
 **Framework**: AVFoundation
 

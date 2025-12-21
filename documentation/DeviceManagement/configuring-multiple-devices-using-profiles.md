@@ -28,12 +28,12 @@ Each payload’s contents contain profile-specific keys (see [`Profile-Specific 
 
 ##### Encrypt and Sign a Profile
 
-Both iOS and macOS support using encryption to protect the contents of profiles from unauthorized access. The encrypted profile can only be decrypted using a private key previously installed on a device. To encrypt a profile:
+Encrypting a profile protects its contents from unauthorized access. The encrypted profile can only be decrypted using a private key previously installed on a device. To encrypt a profile:
 
 1. Remove the `PayloadContent` array and serialize it as a property list. Note that the top-level object in this property list is an array, not a dictionary.
 2. CMS-encrypt the serialized property list as enveloped data.
 3. Serialize the encrypted data in DER (Distinguished Encoding Rules) format.
-4. Set the serialized data as the value of as a data property list item in the profile, using the `EncryptedPayloadContent` key.
+4. Set the serialized data as the value of the `EncryptedPayloadContent` key in the profile.
 
 Signing a profile guarantees data integrity. To sign a profile, place the XML property list in a DER-encoded, CMS Signed Data structure. When replacing a signed configuration profile, if you don’t sign the replacement using the exact same signing identity, the device rejects the replacement, unless installing the replacement through MDM or OTA.
 

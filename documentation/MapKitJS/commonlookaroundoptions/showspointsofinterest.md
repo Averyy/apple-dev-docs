@@ -11,7 +11,7 @@ A Boolean value that indicates whether the Look Around view display points of in
 ## Declaration
 
 ```swift
-attribute boolean showsPointsOfInterest;
+showsPointsOfInterest?: boolean;
 ```
 
 ## See Also

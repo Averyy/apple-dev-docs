@@ -15,6 +15,10 @@
 var muteBehavior: CATapMuteBehavior { get set }
 ```
 
+#### Discussion
+
+Set the tap’s mute behavior. See CATapMuteBehavior above.
+
 
 ---
 

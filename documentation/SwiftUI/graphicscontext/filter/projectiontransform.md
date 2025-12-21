@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Returns a filter that that transforms the rasterized form of subsequent graphics primitives.
+Returns a filter that transforms the rasterized form of subsequent graphics primitives.
 
 **Availability**:
 - iOS 15.0+

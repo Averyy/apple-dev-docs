@@ -22,21 +22,11 @@ struct Translation
 
 ## Topics
 
-### Operators
-- [static func == (PartRenderer.Translation, PartRenderer.Translation) -> Bool](partrenderer/translation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(dx: Double, dy: Double)](partrenderer/translation/init(dx:dy:).md)
 ### Instance Properties
 - [var dx: Double](partrenderer/translation/dx.md)
 - [var dy: Double](partrenderer/translation/dy.md)
-- [var hashValue: Int](partrenderer/translation/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](partrenderer/translation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](partrenderer/translation/equatable-implementations.md)
 
 ## Relationships
 

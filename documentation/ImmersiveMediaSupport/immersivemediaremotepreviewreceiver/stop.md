@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Stops receiving remote Immersive Video frames.
+Stops receiving remote immersive video frames.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -3,15 +3,15 @@
 **Framework**: GameKit  
 **Kind**: method
 
-Removes all achievements if exist.
+Removes all achievements if they exist.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ func removeAchievements(_ achievements: [GKAchievement])
 - [func setProgress(on: GKAchievement, to: Double)](gkgameactivity/setprogress(on:to:).md)
   Set a progress for an achievement for a player.
 - [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
-  Convenience method to set a progress to 100% for an achievement for a player.
+  Set progress to 100% for an achievement for a player.
 
 
 ---

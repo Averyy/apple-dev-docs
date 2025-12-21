@@ -1,4 +1,4 @@
-# Encoding Argument Buffers on the GPU
+# Encoding argument buffers on the GPU
 
 **Framework**: Metal
 
@@ -12,13 +12,13 @@ Use a compute pass to encode an argument buffer and access its arguments in a su
 
 #### Overview
 
-In [`Using Argument Buffers with Resource Heaps`](using-argument-buffers-with-resource-heaps.md), you learned how to combine argument buffers with arrays of resources and resource heaps.
+In [`Using argument buffers with resource heaps`](using-argument-buffers-with-resource-heaps.md), you learned how to combine argument buffers with arrays of resources and resource heaps.
 
 In this sample, you’ll learn how to encode resources into argument buffers with a graphics or compute function. In particular, you’ll learn how to write data into an argument buffer from a compute pass and then read that data in a render pass. The sample renders a grid of multiple quad instances with two textures applied to each, where the textures slide from left to right within the quad and move from left to right between quads.
 
 ##### Getting Started
 
-The sample can run only on devices that support Tier 2 argument buffers. Tier 2 devices allow graphics or compute functions to encode data into an argument buffer, whereas Tier 1 devices only allow these functions to read data from an argument buffer. Additionally, Tier 2 devices can access more textures in an instanced draw call than Tier 1 devices. See [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
+The sample can run only on devices that support Tier 2 argument buffers. Tier 2 devices allow graphics or compute functions to encode data into an argument buffer, whereas Tier 1 devices only allow these functions to read data from an argument buffer. Additionally, Tier 2 devices can access more textures in an instanced draw call than Tier 1 devices. See [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
 
 This sample checks for Tier 2 argument buffer support when the renderer is initialized.
 
@@ -150,26 +150,26 @@ The fragment function outputs the selected sample. The left texture slides in fr
 
 ##### Next Steps
 
-In this sample, you learned how to encode resources into argument buffers with a graphics or compute function. In [`Rendering Terrain Dynamically with Argument Buffers`](rendering-terrain-dynamically-with-argument-buffers.md), you’ll learn how to combine several argument buffer techniques to render a dynamic terrain in real time.
+In this sample, you learned how to encode resources into argument buffers with a graphics or compute function. In [`Rendering terrain dynamically with argument buffers`](rendering-terrain-dynamically-with-argument-buffers.md), you’ll learn how to combine several argument buffer techniques to render a dynamic terrain in real time.
 
 ## See Also
 
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
   Optimize your app’s performance by grouping your resources into argument buffers.
 - [Managing groups of resources with argument buffers](managing-groups-of-resources-with-argument-buffers.md)
   Create argument buffers to organize related resources.
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
   Optimize resource performance within an argument buffer.
-- [Indexing Argument Buffers](indexing-argument-buffers.md)
+- [Indexing argument buffers](indexing-argument-buffers.md)
   Assign resource indices within an argument buffer.
-- [Rendering Terrain Dynamically with Argument Buffers](rendering-terrain-dynamically-with-argument-buffers.md)
+- [Rendering terrain dynamically with argument buffers](rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
 - [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
 - [protocol MTLArgumentEncoder](mtlargumentencoder.md)
-  An object used to encode data into an argument buffer.
+  An interface you can use to encode argument data into an argument buffer.
 - [let MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 
 

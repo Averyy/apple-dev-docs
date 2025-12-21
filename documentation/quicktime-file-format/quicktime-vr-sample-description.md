@@ -5,9 +5,6 @@
 
 Describe QuickTime VR samples.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Whereas the QuickTime VR media sample is simply the node information itself, all sample descriptions are required by QuickTime to have a certain structure for the first several bytes. The structure for the QuickTime VR sample description is as follows:

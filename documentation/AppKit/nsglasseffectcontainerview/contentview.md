@@ -3,10 +3,10 @@
 **Framework**: AppKit  
 **Kind**: property
 
-NSGlassViews that are descendents of an NSGlassContainerView’s contentView will 1) have their z-order elevated above that of the contentView 2) if the NSGlassViews are sufficiently similar, they will merge together in close proximity 3) can process similar NSGlassViews as a batch, to improve performance.
+The view that contains descendant views to merge together when in proximity to each other.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -14,6 +14,14 @@ NSGlassViews that are descendents of an NSGlassContainerView’s contentView wil
 @MainActor
 var contentView: NSView? { get set }
 ```
+
+#### Discussion
+
+The glass effect container view does the following:
+
+1. Elevates the z-order of descendants of `contentView` to position them above the `contentView`.
+2. Merges descendants together if the views are sufficiently similar and within the proximity specified in [`spacing`](nsglasseffectcontainerview/spacing.md).
+3. Processes similar glass effect views as a batch to improve performance.
 
 
 ---

@@ -19,7 +19,7 @@ class AVCaptureSynchronizedMetadataObjectData
 
 ## Topics
 
-### Accessing Synchronized Data
+### Accessing synchronized data
 - [var metadataObjects: [AVMetadataObject]](avcapturesynchronizedmetadataobjectdata/metadataobjects.md)
   The list of metadata objects captured at this synchronization timestamp.
 

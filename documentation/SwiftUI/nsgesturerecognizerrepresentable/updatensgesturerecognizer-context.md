@@ -7,7 +7,7 @@
 Updates the `NSGestureRecognizer` (and coordinator) to the latest configuration.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

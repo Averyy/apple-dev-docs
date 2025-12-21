@@ -21,7 +21,7 @@ struct AVMovieWritingOptions
 
 ## Topics
 
-### Writing Options
+### Writing options
 - [static var addMovieHeaderToDestination: AVMovieWritingOptions](avmoviewritingoptions/addmovieheadertodestination.md)
   The new movie header overwrites any existing movie header.
 - [static var truncateDestinationToMovieHeaderOnly: AVMovieWritingOptions](avmoviewritingoptions/truncatedestinationtomovieheaderonly.md)

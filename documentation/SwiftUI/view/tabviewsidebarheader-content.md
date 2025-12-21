@@ -49,6 +49,8 @@ TabView {
 
 ## See Also
 
+- [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
+  Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
 - [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](view/tabviewsidebarfooter(content:).md)
   Adds a custom footer to the sidebar of a tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](view/tabviewsidebarbottombar(content:).md)

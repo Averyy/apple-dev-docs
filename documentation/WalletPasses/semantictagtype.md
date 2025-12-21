@@ -30,12 +30,12 @@ object SemanticTagType
 - [object SemanticTagType.Seat](semantictagtype/seat-data.dictionary.md)
   An object that represents the identification of a seat for a transit journey or an event.
 - [object SemanticTagType.WifiNetwork](semantictagtype/wifinetwork-data.dictionary.md)
-  An object that contains information required to connect to a WiFi network.
+  An object that contains information required to connect to a Wi-Fi network. Optionally, this object may contain keys required to perform authentication with captive portal.
 
 ## See Also
 
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
-  Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
+- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
+  An object that represents the groups of fields that display the information for a boarding pass.
 - [object SemanticTags](semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
 

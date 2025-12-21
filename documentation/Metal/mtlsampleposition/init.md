@@ -19,11 +19,6 @@ Returns a new sample position on a subpixel grid.
 init()
 ```
 
-## See Also
-
-- [init(x: Float, y: Float)](mtlsampleposition/init(x:y:).md)
-  Returns a new sample position on a subpixel grid at specified coordinates.
-
 
 ---
 

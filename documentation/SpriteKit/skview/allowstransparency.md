@@ -26,9 +26,9 @@ var allowsTransparency: Bool { get set }
 
 #### Discussion
 
-This property tells the drawing system as to how it should treat the view. If set to [`false`](https://developer.apple.com/documentation/swift/false), the drawing system treats the view as fully opaque, which allows the drawing system to optimize some drawing operations and improve performance. If set to [`true`](https://developer.apple.com/documentation/swift/true), the drawing system composites the view normally with other content. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+This property tells the drawing system as to how it should treat the view. If set to [`false`](https://developer.apple.com/documentation/Swift/false), the drawing system treats the view as fully opaque, which allows the drawing system to optimize some drawing operations and improve performance. If set to [`true`](https://developer.apple.com/documentation/Swift/true), the drawing system composites the view normally with other content. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-An opaque view is expected to fill its bounds with entirely opaque content—that is, the content should have an alpha value of 1.0. If the view is opaque and either does not fill its bounds or contains wholly or partially transparent content, the results are unpredictable. Always set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false) if the view is fully or partially transparent.
+An opaque view is expected to fill its bounds with entirely opaque content—that is, the content should have an alpha value of 1.0. If the view is opaque and either does not fill its bounds or contains wholly or partially transparent content, the results are unpredictable. Always set the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false) if the view is fully or partially transparent.
 
 ## See Also
 

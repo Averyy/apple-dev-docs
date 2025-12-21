@@ -22,10 +22,6 @@ struct Iterator
 ### Instance Methods
 - [func next() async -> DockAccessory.AccessoryEvent?](dockaccessory/accessoryevents-swift.struct/iterator/next.md)
   Provide the next dock accessory event in the list.
-### Type Aliases
-- [DockAccessory.AccessoryEvents.Iterator.Element](dockaccessory/accessoryevents-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](dockaccessory/accessoryevents-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

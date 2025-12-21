@@ -26,10 +26,6 @@ case binary
   Specifies the ASCII property list format inherited from the OpenStep APIs.
 - [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
   Specifies the XML property list format.
-- [PropertyListSerialization.PropertyListFormat.openStep](propertylistserialization/propertylistformat/openstep.md)
-  Specifies the ASCII property list format inherited from the OpenStep APIs.
-- [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
-  Specifies the XML property list format.
 
 
 ---

@@ -28,8 +28,6 @@ struct History<Model> where Model : Identifiable
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [FinanceStore.History.Element](financestore/history/element.md)
   An alias for the type that this asynchronous sequence holds.
-### Default Implementations
-- [AsyncSequence Implementations](financestore/history/asyncsequence-implementations.md)
 
 ## Relationships
 
@@ -37,6 +35,13 @@ struct History<Model> where Model : Identifiable
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [FinanceStore.Changes](financestore/changes.md)
+  A structure that records changes to the finance store.
+- [FinanceStore.HistoryToken](financestore/historytoken.md)
+  A structure that describes the starting point to use for financial data queries.
 
 
 ---

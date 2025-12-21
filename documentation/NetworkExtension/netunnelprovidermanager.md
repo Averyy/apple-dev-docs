@@ -78,7 +78,7 @@ The MDM client running on the device creates one app rule in the VPN configurati
 
 Per-App VPN On Demand
 
-The Per-App VPN app rules serve as both routing rules and VPN On Demand rules. This is in contrast to IP destination-based routing, where the VPN On Demand rules are configured separately from the routing rules. When the `onDemandEnabled` property is set to [`true`](https://developer.apple.com/documentation/swift/true) and an app that matches the Per-App VPN rules attempts to communicate over the network, the VPN will be started automatically.
+The Per-App VPN app rules serve as both routing rules and VPN On Demand rules. This is in contrast to IP destination-based routing, where the VPN On Demand rules are configured separately from the routing rules. When the `onDemandEnabled` property is set to [`true`](https://developer.apple.com/documentation/Swift/true) and an app that matches the Per-App VPN rules attempts to communicate over the network, the VPN will be started automatically.
 
 It is possible to set regular VPN On Demand rules in a Per-App VPN configuration via the [`onDemandRules`](nevpnmanager/ondemandrules.md) property, but only [`NEOnDemandRuleDisconnect`](neondemandruledisconnect.md) rules will be used. When a `NEOnDemandRuleDisconnect` rule matches, apps which match the Per-App VPN rules will bypass the VPN.
 

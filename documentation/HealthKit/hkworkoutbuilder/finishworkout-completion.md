@@ -26,7 +26,11 @@ func finishWorkout() async throws -> HKWorkout?
 
 #### Discussion
 
-You must call [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) before calling this method.
+You must call [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withend:completion:).md) before calling this method. This function returns `nil` if finishing the workout succeeded but the workout sample is not available because the device is locked.
+
+## Parameters
+
+- `completion`: A completion handler that the system calls after the HKWorkout object has been created and saved. This handler takes the following parameters:
 
 ## See Also
 

@@ -25,7 +25,7 @@ Use this method to play the standard system keyboard click in response to a user
 To enable a custom input or accessory view for input clicks, perform the following two steps:
 
 1. Adopt the [`UIInputViewAudioFeedback`](uiinputviewaudiofeedback.md) protocol in your input view class.
-2. Implement the [`enableInputClicksWhenVisible`](uiinputviewaudiofeedback/enableinputclickswhenvisible.md) delegate method to return [`true`](https://developer.apple.com/documentation/swift/true).
+2. Implement the [`enableInputClicksWhenVisible`](uiinputviewaudiofeedback/enableinputclickswhenvisible.md) delegate method to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 For more information, see [`Text Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009542).
 

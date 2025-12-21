@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure printers.
+The payload that configures printers.
 
 **Availability**:
 - macOS 10.7+
@@ -15,8 +15,6 @@ object Printing
 ```
 
 #### Discussion
-
-Specify `com.apple.mcxprinting` as the payload type.
 
 Specify `com.apple.mcxprinting` as the payload type.
 
@@ -121,7 +119,7 @@ Removing this profile from a device doesn’t automatically remove printers from
 ## See Also
 
 - [object AirPrint](airprint.md)
-  The payload you use to configure AirPrint printers in the user’s printer list.
+  The payload that configures AirPrint printer discoverability in the user’s printer list.
 
 
 ---

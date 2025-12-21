@@ -25,14 +25,14 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
 
 ## Topics
 
-### Specifying the Instance Structures
+### Specifying the instance structures
 - [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](mtlinstanceaccelerationstructuredescriptor/instancedescriptortype.md)
   The format of the instance data in the descriptor buffer.
 - [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
   The bottom-level acceleration structures that instances use in the instance acceleration structure .
 - [enum MTLAccelerationStructureInstanceDescriptorType](mtlaccelerationstructureinstancedescriptortype.md)
   Options for specifying different kinds of instance types.
-### Specifying the List of Instances
+### Specifying the list of instances
 - [var instanceCount: Int](mtlinstanceaccelerationstructuredescriptor/instancecount.md)
   The number of instances in the instance descriptor buffer.
 - [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
@@ -41,7 +41,7 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
   The offset, in bytes, to the descripton of the first instance.
 - [var instanceDescriptorStride: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
   The stride, in bytes, between instance descriptions.
-### Specifying Motion Data
+### Specifying motion data
 - [var motionTransformCount: Int](mtlinstanceaccelerationstructuredescriptor/motiontransformcount.md)
   The number of motion transforms in the motion transform buffer.
 - [var motionTransformBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
@@ -68,7 +68,7 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
 
 ## See Also
 
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
@@ -83,9 +83,9 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
 - [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
   Descriptor for an instance acceleration structure.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
-  An object for encoding commands that build or refit acceleration structures.
+  Encodes commands that build and refit acceleration structures for a single pass.
 - [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
-  Options that describe which tasks you can perform on an acceleration structure and how the system performs those tasks.
+  Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 - [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
 
 

@@ -46,7 +46,7 @@ People can review your app at any time on the App Store. To make it easier for p
 - [func callAsFunction()](requestreviewaction/callasfunction.md)
   Tells StoreKit to ask the user to rate or review your app, if appropriate.
 ### Environment value
-- [var requestReview: RequestReviewAction { get }](../SwiftUI/EnvironmentValues/requestReview.md)
+- [var requestReview: RequestReviewAction](../SwiftUI/EnvironmentValues/requestReview.md)
 
 ## Relationships
 

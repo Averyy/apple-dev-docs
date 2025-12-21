@@ -22,25 +22,27 @@ class AVContentKeyRequest
 
 ## Topics
 
-### Getting Content Key Request Data
+### Getting content key request data
 - [func makeStreamingContentKeyRequestData(forApp: Data, contentIdentifier: Data?, options: [String : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeyrequest/makestreamingcontentkeyrequestdata(forapp:contentidentifier:options:completionhandler:).md)
   Obtains encrypted key request data for a specific combination of app and content.
 - [let AVContentKeyRequestProtocolVersionsKey: String](avcontentkeyrequestprotocolversionskey.md)
   A key that specifies the versions of the content protection protocol supported by the application.
 - [let AVContentKeyRequestRequiresValidationDataInSecureTokenKey: String](avcontentkeyrequestrequiresvalidationdatainsecuretokenkey.md)
   A key that requires the secure token to have extended validation data.
-### Responding to the Content Key Request
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
+- [let AVContentKeyRequestRandomDeviceIdentifierSeedKey: String](avcontentkeyrequestrandomdeviceidentifierseedkey.md)
+  Value is an NSData containing a 16-byte seed to randomize the user’s deviceID contained in the SPC blob during FairPlay key exchange
+- [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
+  Value is an Boolean indicating whether the user’s deviceID contained in the SPC blob during FairPlay key exchange should be randomized using a system generated seed
+### Responding to the content key request
 - [func processContentKeyResponse(AVContentKeyResponse)](avcontentkeyrequest/processcontentkeyresponse(_:).md)
   Sends the specified content key response to the receiver for processing.
 - [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
   Tells the receiver that the app was unable to obtain a content key response.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
-### Getting Content Key Request Properties
+### Getting content key request properties
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
   The identifier for the content key.
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 - [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
 - [var error: (any Error)?](avcontentkeyrequest/error.md)
@@ -53,7 +55,7 @@ class AVContentKeyRequest
   The current state of the content key request.
 - [AVContentKeyRequest.Status](avcontentkeyrequest/status-swift.enum.md)
   The status for a content key request.
-### Inspecting a Request
+### Inspecting a request
 - [var contentKey: AVContentKey?](avcontentkeyrequest/contentkey.md)
   The generated content key.
 - [var contentKeySpecifier: AVContentKeySpecifier](avcontentkeyrequest/contentkeyspecifier.md)
@@ -62,10 +64,9 @@ class AVContentKeyRequest
   A dictionary of options used to initialize key loading.
 - [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
-### Instance Properties
-- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
-  The AVContentKeyRecipient which initiated this request, if any.
 ### Instance Methods
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
+  Tells the receiver that the app requires a persistable content key request object for processing.
 - [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-7i2pw.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 

@@ -21,7 +21,8 @@ class DiscoverySession
 
 ## Mentions
 
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
 
 #### Overview
 
@@ -29,10 +30,10 @@ After creating a device discovery session, query its [`devices`](avcapturedevice
 
 ## Topics
 
-### Creating a Session
+### Creating a session
 - [convenience init(deviceTypes: [AVCaptureDevice.DeviceType], mediaType: AVMediaType?, position: AVCaptureDevice.Position)](avcapturedevice/discoverysession/init(devicetypes:mediatype:position:).md)
   Creates a discovery session that finds devices that match the specified criteria.
-### Finding Devices
+### Finding devices
 - [var devices: [AVCaptureDevice]](avcapturedevice/discoverysession/devices.md)
   A list of devices that match the search criteria of the discovery session.
 - [var supportedMultiCamDeviceSets: [Set<AVCaptureDevice>]](avcapturedevice/discoverysession/supportedmulticamdevicesets.md)

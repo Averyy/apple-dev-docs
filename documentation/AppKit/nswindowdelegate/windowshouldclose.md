@@ -17,7 +17,7 @@ optional func windowShouldClose(_ sender: NSWindow) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow `sender` to be closed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow `sender` to be closed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -17,7 +17,6 @@ The rate at which the red component of a particle’s color changes per second.
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorRedSpeed: CGFloat { get set }
 ```
 

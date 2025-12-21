@@ -6,10 +6,10 @@
 An object you use to request information from a user’s photo ID or equivalent document.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ class PKIdentityPhotoIDDescriptor
 
 ##### Discussion
 
-Use this class to help create a credential in Wallet for chip-based identification, like a passport or US photo ID. This ID is available to use in person, within apps, and on the web.
+Use this class to help create a digital ID in Wallet, which is an Apple issued ID credential based on government-issued ICAO compliant passport. This ID is available to use in person, within apps, and on the web.
 
 For the elements you request, the response contains the corresponding elements present in the user’s identity document. The following table shows the mapping from [`PKIdentityElement`](pkidentityelement.md) to elements in the `PKIdentityPhotoIDDescriptor`. If the [`PKIdentityElement`](pkidentityelement.md) corresponds to more than one of the mobile doc elements, all of the elements are returned.
 
@@ -33,7 +33,7 @@ For the elements you request, the response contains the corresponding elements p
 | `givenNameElement` | `given_name_unicode`, `given_name_latin1` | First name(s), other name(s), or secondary identifier, of the holder. |
 | `portraitElement` | `portrait` | Portrait data as specified in ISO/IEC 18013-2:2020, C.4.5. |
 | `addressElement` | `resident_address_unicode`, `resident_city_unicode`, `resident_city_latin1`, `resident_postal_code`, `resident_country` | The place where the ID holder resides and may be contacted. |
-| `issuingAuthority` | `issuing_authority_unicode`, `issuing_subdivision`, `issuing_country` | The issuer of the ID. |
+| `issuingAuthority` | `issuing_authority_unicode`, `issuing_subdivision`, `issuing_country` | The issuer of the digital ID credential. |
 | `documentIssueDateElement` | `issue_date` | The issue date for the underlying physical ID. |
 | `documentExpirationDateElement` | `expiry_date` | Date when the ID expires (Note: This is intended to be the date of the underlying physical document, if appropriate. The mdoc-specific dates are included in the ValidityInfo within the MSO.) |
 | `documentNumberElement` | `document_number` | The number assigned or calculated by the issuing authority. |
@@ -59,6 +59,10 @@ For the elements you request, the response contains the corresponding elements p
 
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+  Set up your environment to use Verify with Wallet.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
   An object you use to request information from multiple identity documents.
 - [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)

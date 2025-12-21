@@ -7,12 +7,12 @@
 Encodes a command to compute the size an acceleration structure can compact into, writing the result into a buffer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,6 +28,13 @@ This size is potentially smaller than the acceleration structure. To perform com
 
 - `accelerationStructure`: Source acceleration structure.
 - `buffer`: Destination size buffer. Metal writes the compacted size as a 64-bit unsigned integer   value, representing the compacted size in bytes.
+
+## See Also
+
+- [func copy(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copy(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+  Encodes an acceleration structure copy operation into the command buffer.
+- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+  Encodes a command to copy and compact an acceleration structure.
 
 
 ---

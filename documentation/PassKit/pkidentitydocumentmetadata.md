@@ -25,16 +25,16 @@ This class contains the required and optional metadata you need to configure a p
 ## Topics
 
 ### Instance Properties
-- [var cardConfigurationIdentifier: String { get }](PKIdentityDocumentMetadata/cardConfigurationIdentifier.md)
-- [var cardTemplateIdentifier: String { get }](PKIdentityDocumentMetadata/cardTemplateIdentifier.md)
-- [var credentialIdentifier: String { get }](PKIdentityDocumentMetadata/credentialIdentifier.md)
-- [var serverEnvironmentIdentifier: String { get set }](PKIdentityDocumentMetadata/serverEnvironmentIdentifier.md)
+- [var cardConfigurationIdentifier: String](PKIdentityDocumentMetadata/cardConfigurationIdentifier.md)
+- [var cardTemplateIdentifier: String](PKIdentityDocumentMetadata/cardTemplateIdentifier.md)
+- [var credentialIdentifier: String](PKIdentityDocumentMetadata/credentialIdentifier.md)
+- [var serverEnvironmentIdentifier: String](PKIdentityDocumentMetadata/serverEnvironmentIdentifier.md)
   An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
-- [var sharingInstanceIdentifier: String { get }](PKIdentityDocumentMetadata/sharingInstanceIdentifier.md)
+- [var sharingInstanceIdentifier: String](PKIdentityDocumentMetadata/sharingInstanceIdentifier.md)
   A unique identifier that refers to an instance of sharing credentials to a person’s device that another user, device, or the web initiates.
-- [var documentType: PKAddIdentityDocumentType { get }](PKIdentityDocumentMetadata/documentType.md)
+- [var documentType: PKAddIdentityDocumentType](PKIdentityDocumentMetadata/documentType.md)
   Identifies the type of the identity document.
-- [var issuingCountryCode: String { get }](PKIdentityDocumentMetadata/issuingCountryCode.md)
+- [var issuingCountryCode: String](PKIdentityDocumentMetadata/issuingCountryCode.md)
   Identifies the issuing country of the identity document.
 - [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
 - [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
@@ -67,6 +67,10 @@ This class contains the required and optional metadata you need to configure a p
 
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+  Set up your environment to use Verify with Wallet.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
 - [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)

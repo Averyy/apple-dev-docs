@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-Not every action was completed
+Not every action was completed.
 
 **Availability**:
 - iOS 18.0+

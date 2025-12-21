@@ -21,7 +21,7 @@ var isLuminanceNoiseReductionSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of luminance noise reduction to apply to the image by setting [`luminanceNoiseReductionAmount`](cirawfilter/luminancenoisereductionamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of luminance noise reduction to apply to the image by setting [`luminanceNoiseReductionAmount`](cirawfilter/luminancenoisereductionamount.md).
 
 ## See Also
 

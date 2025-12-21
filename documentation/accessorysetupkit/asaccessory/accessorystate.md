@@ -26,9 +26,6 @@ enum AccessoryState
   The accessory is selected, but full authorization is still pending.
 - [ASAccessory.AccessoryState.authorized](asaccessory/accessorystate/authorized.md)
   The accessory is authorized and available.
-### Default Implementations
-- [Equatable Implementations](asaccessory/accessorystate/equatable-implementations.md)
-- [RawRepresentable Implementations](asaccessory/accessorystate/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -44,6 +41,8 @@ enum AccessoryState
 
 - [class ASAccessory](asaccessory.md)
   An accessory discovered by the accessory session.
+- [class ASDiscoveredAccessory](asdiscoveredaccessory.md)
+  A discovered accessory, for use in creating a customized picker display item.
 
 
 ---

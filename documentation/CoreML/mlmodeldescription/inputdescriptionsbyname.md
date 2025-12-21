@@ -22,6 +22,8 @@ var inputDescriptionsByName: [String : MLFeatureDescription] { get }
 
 ## See Also
 
+- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
+  Description of the state features.
 - [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)
   A dictionary of output feature descriptions, which the model keys by the output’s name.
 - [class MLFeatureDescription](mlfeaturedescription.md)

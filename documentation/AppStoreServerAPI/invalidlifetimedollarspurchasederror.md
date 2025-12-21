@@ -20,10 +20,14 @@ object InvalidLifetimeDollarsPurchasedError
 
 #### Discussion
 
-For valid `lifetimeDollarsPurchased` values in a [`ConsumptionRequest`](consumptionrequest.md), see [`lifetimeDollarsPurchased`](lifetimedollarspurchased.md).
+For valid `lifetimeDollarsPurchased` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`lifetimeDollarsPurchased`](lifetimedollarspurchased.md).
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
@@ -48,6 +52,8 @@ For valid `lifetimeDollarsPurchased` values in a [`ConsumptionRequest`](consumpt
   An error that indicates the value in the user status field is invalid.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

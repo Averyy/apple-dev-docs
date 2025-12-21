@@ -21,8 +21,6 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var model: MLModel](mldecisiontreeregressor/model.md)
-  The Core ML model.
 - [var description: String](mldecisiontreeregressor/description.md)
   A text representation of the decision tree regressor.
 - [var debugDescription: String](mldecisiontreeregressor/debugdescription.md)

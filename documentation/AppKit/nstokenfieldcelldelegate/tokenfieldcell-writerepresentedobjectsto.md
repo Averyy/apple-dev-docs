@@ -17,7 +17,7 @@ optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, writeRepresente
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate writes the represented objects to the pasteboard, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If [`false`](https://developer.apple.com/documentation/swift/false), the token field writes the display strings to the [`NSStringPboardType`](nsstringpboardtype.md) pasteboard.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the delegate writes the represented objects to the pasteboard, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. If [`false`](https://developer.apple.com/documentation/Swift/false), the token field writes the display strings to the [`NSStringPboardType`](nsstringpboardtype.md) pasteboard.
 
 ## Parameters
 

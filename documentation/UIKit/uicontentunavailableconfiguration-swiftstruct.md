@@ -24,7 +24,7 @@ A content-unavailable configuration is a composable description of a view that i
 
 The following screenshot shows an example of a content-unavailable view configured by setting the [`image`](uicontentunavailableconfiguration-swift.struct/image.md), [`text`](uicontentunavailableconfiguration-swift.struct/text.md), and [`secondaryText`](uicontentunavailableconfiguration-swift.struct/secondarytext.md) properties.
 
-![A screenshot of a content-unavailable view indicating that a user has no files in the iCloud Drive Downloads folder.](https://docs-assets.developer.apple.com/published/7c656513bf8e80dc345aa2d89f317248/media-4274239%402x.png)
+![A screenshot of a content-unavailable view indicating that there are no reminders in the Work folder.](https://docs-assets.developer.apple.com/published/e180a04649bca008fc44d2d51fe69894/uicontentunavailableconfiguration%402x.png)
 
 ## Topics
 

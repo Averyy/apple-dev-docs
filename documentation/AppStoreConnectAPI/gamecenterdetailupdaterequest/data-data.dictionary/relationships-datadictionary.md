@@ -18,6 +18,9 @@ object GameCenterDetailUpdateRequest.Data.Relationships
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboard-data.dictionary.md)
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboard](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboard-data.dictionary.md)
 - [object GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+### Dictionaries
+- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboardV2](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboardv2-data.dictionary.md)
+- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboardv2-data.dictionary.md)
 
 ## See Also
 

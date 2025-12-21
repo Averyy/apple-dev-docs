@@ -38,7 +38,7 @@ Browser
 
 ##### Superclass Overrides
 
-- [`isOpaque`](nsview/isopaque.md) returns [`true`](https://developer.apple.com/documentation/swift/true) when the browser doesn’t have a title and its background color’s alpha component is `1.0`; otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
+- [`isOpaque`](nsview/isopaque.md) returns [`true`](https://developer.apple.com/documentation/Swift/true) when the browser doesn’t have a title and its background color’s alpha component is `1.0`; otherwise, it returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ##### Protocol Implementations
 

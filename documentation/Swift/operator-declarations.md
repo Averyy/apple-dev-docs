@@ -6,7 +6,7 @@ Work with prefix, postfix, and infix operators.
 
 #### Overview
 
-The tables below list the operators declared by the Swift standard library. For more information about operation declarations, see [`Operator Declaration`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID380) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+The tables below list the operators declared by the Swift standard library. For more information about operation declarations, see [`Operator Declaration`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Operator-Declaration) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
 The prefix operators are as follows:
 

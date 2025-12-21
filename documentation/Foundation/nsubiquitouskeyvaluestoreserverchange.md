@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+A constant that indicates a value changed in iCloud.
+
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
@@ -20,13 +22,22 @@ var NSUbiquitousKeyValueStoreServerChange: Int { get }
 
 #### Discussion
 
-A value changed in iCloud. This occurs when another device, running another instance of your app and attached to the same iCloud account, uploads a new value.
+This type of change occurs when another instance of your app changes the value on a different device.
 
 ## See Also
 
+- [class let didChangeExternallyNotification: NSNotification.Name](nsubiquitouskeyvaluestore/didchangeexternallynotification.md)
+  Posted when the value of one or more keys changes due to incoming data from iCloud.
+- [let NSUbiquitousKeyValueStoreChangeReasonKey: String](nsubiquitouskeyvaluestorechangereasonkey.md)
+  A key that indicates the reason why the key-value store changed.
+- [let NSUbiquitousKeyValueStoreChangedKeysKey: String](nsubiquitouskeyvaluestorechangedkeyskey.md)
+  A key that indicates which keys changed in the iCloud key-value store.
 - [var NSUbiquitousKeyValueStoreInitialSyncChange: Int](nsubiquitouskeyvaluestoreinitialsyncchange.md)
+  A constant that indicates the initial attempt to load keys and values from iCloud is in progress.
 - [var NSUbiquitousKeyValueStoreQuotaViolationChange: Int](nsubiquitouskeyvaluestorequotaviolationchange.md)
+  A constant that indicates an attempt to write data exceeded the quota limits.
 - [var NSUbiquitousKeyValueStoreAccountChange: Int](nsubiquitouskeyvaluestoreaccountchange.md)
+  A constant that indicates the current Apple account changed.
 
 
 ---

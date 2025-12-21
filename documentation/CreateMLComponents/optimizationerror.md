@@ -27,25 +27,13 @@ enum OptimizationError
   Numerical overflow. Step size parameter may be too large.
 - [OptimizationError.numericUnderflow](optimizationerror/numericunderflow.md)
   Numerical underflow (not enough progress).
-- [var errorDescription: String?](optimizationerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (OptimizationError, OptimizationError) -> Bool](optimizationerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
 - [OptimizationError.unsupportedPlatform](optimizationerror/unsupportedplatform.md)
   The optimization operation is not supported on this platform.
-### Instance Properties
-- [var hashValue: Int](optimizationerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](optimizationerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
+### Getting the debug description
+- [var debugDescription: String](optimizationerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](optimizationerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](optimizationerror/equatable-implementations.md)
-- [Error Implementations](optimizationerror/error-implementations.md)
-- [LocalizedError Implementations](optimizationerror/localizederror-implementations.md)
 
 ## Relationships
 

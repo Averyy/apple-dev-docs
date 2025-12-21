@@ -6,6 +6,7 @@
 Creates an instance that represents the current device.
 
 **Availability**:
+- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
@@ -13,8 +14,6 @@ Creates an instance that represents the current device.
 - visionOS ?+
 - watchOS ?+
 - Xcode 16.3+
-- Unknown ?+ - Deprecated
-- iOS ?+
 
 ## Declaration
 

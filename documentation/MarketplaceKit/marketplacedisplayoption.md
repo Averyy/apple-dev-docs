@@ -25,12 +25,6 @@ The [`MarketplaceSceneDelegate`](marketplacescenedelegate.md) function [`scene(_
 - [MarketplaceDisplayOption.authentication(account:)](marketplacedisplayoption/authentication(account:).md)
 - [case productPage(appleItemID: AppleItemID, appleVersionID: AppleVersionID?)](marketplacedisplayoption/productpage(appleitemid:appleversionid:).md)
 - [MarketplaceDisplayOption.searchResults(query:)](marketplacedisplayoption/searchresults(query:).md)
-### Initializers
-- [init(from: any Decoder) throws](marketplacedisplayoption/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](marketplacedisplayoption/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

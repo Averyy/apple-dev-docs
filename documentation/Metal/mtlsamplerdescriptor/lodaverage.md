@@ -21,9 +21,9 @@ var lodAverage: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), an average LOD may be used across four fragment shader threads. If this value is [`false`](https://developer.apple.com/documentation/swift/false), no averaging is performed and each thread accesses its own LOD.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), an average LOD may be used across four fragment shader threads. If this value is [`false`](https://developer.apple.com/documentation/Swift/false), no averaging is performed and each thread accesses its own LOD.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > **Note**:  This optional Boolean value is used as a performance optimization hint and it is ignored on some GPUs. Enabling LOD averaging may provide a performance benefit for shaders that sample from explicit per-fragment mipmap levels, or apply per-fragment LOD bias, at the potential cost of reduced texture sample quality.
 

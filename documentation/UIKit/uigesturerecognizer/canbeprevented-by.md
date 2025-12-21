@@ -21,7 +21,7 @@ func canBePrevented(by preventingGestureRecognizer: UIGestureRecognizer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate that `preventingGestureRecognizer` can block the receiver from recognizing its gesture, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to indicate that `preventingGestureRecognizer` can block the receiver from recognizing its gesture, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

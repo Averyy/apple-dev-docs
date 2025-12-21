@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure DNS proxies.
+The payload that configures DNS proxies.
 
 **Availability**:
 - iOS 11.0+
@@ -90,9 +90,9 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 ## See Also
 
 - [object GlobalHTTPProxy](globalhttpproxy.md)
-  The payload you use to configure a global HTTP proxy.
+  The payload that configures a global HTTP proxy.
 - [object NetworkProxyConfiguration](networkproxyconfiguration.md)
-  The payload you use to configure network proxies for a device.
+  The payload that configures network proxies for a device.
 
 
 ---

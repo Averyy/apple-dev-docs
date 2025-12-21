@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false), by default.
+Whether to browse over peer-to-peer Bluetooth and Wi-Fi, if available.
 
 **Availability**:
 - iOS 7.0+

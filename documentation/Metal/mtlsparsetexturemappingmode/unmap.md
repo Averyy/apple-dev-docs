@@ -21,7 +21,7 @@ case unmap
 
 ## Mentions
 
-- [Assigning Memory to Sparse Textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
 
 ## See Also
 

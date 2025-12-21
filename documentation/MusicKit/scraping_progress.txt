@@ -1,4 +1,4 @@
 Completed scraping MusicKit!
-Total pages scraped: 2972
+Total pages scraped: 926
 Pages skipped (unchanged): 3
 Pages failed: 0

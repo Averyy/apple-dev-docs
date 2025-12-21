@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Adds a new `ImmersiveCamera` definition to this `VenueDescriptor`.
+Adds a new immersive camera definition to the venue descriptor.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ final func addCamera(_ camera: ImmersiveCamera) throws
 
 #### Discussion
 
-> **Note**: This function will throw an error if the `ImmersiveCamera` information points to invalid data, for example invalid calibration or mask files.
+> **Note**: This function throws an error if the `ImmersiveCamera` information points to invalid data; for example, invalid calibration or mask files.
 
 ## Parameters
 
@@ -26,9 +26,9 @@ final func addCamera(_ camera: ImmersiveCamera) throws
 ## See Also
 
 - [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
-  Property contains information about all the ImmersiveCameras contained in this `VenueDescriptor`.
+  An array of all the immersive cameras contained in the venue descriptor.
 - [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
-  Removes an `ImmersiveCamera` definition from this `VenueDescriptor`.
+  Removes an immersive camera definition from the venue descriptor.
 - [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](venuedescriptor/cameraviewmodel(for:).md)
   Returns the camera view model for the given immersive camera identifier.
 

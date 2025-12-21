@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an image that uses JPEG File Interchange Format (JFIF). See [`JFIF Image Properties`](jfif-image-properties.md).
+A dictionary of key-value pairs for an image that uses JPEG File Interchange Format (JFIF).
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an image that uses JPEG File Interchange For
 ```swift
 let kCGImagePropertyJFIFDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`JFIF Image Properties`](jfif-image-properties.md).
 
 
 ---

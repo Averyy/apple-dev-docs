@@ -25,7 +25,7 @@ typealias Element = SHSession.Result
 - [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
   Creates an asynchronous iterate that produces results from an asynchronous sequence.
 - [SHSession.Results.Iterator](shsession/results-swift.struct/iterator.md)
-  An interator for accessing session results.
+  An iterator for accessing session results.
 
 
 ---

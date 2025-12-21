@@ -16,7 +16,7 @@ To execute a custom script at build time, add a Run Script build phase to your t
 
 To add a Run Script build phase to a target:
 
-1. In the project navigator, select your project.
+1. In the Project navigator, select your project.
 2. Select the target you want to modify.
 3. Click the Build Phases tab.
 4. Click the Add button (+), then choose “New Run Script Phase” from the pop-up menu.

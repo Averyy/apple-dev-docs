@@ -32,7 +32,7 @@ Calling this method is equivalent to the following sequence of steps:
 3. Setting the remaining filter parameters from the `params` dictionary
 4. Retrieving the [`outputImage`](cifilter-swift.class/outputimage.md) object from the filter
 
-> ❗ **Important**:  This method, though convenient, is inefficient if used multiple times in succession.  Achieve better performance by chaining filters without asking for the outputs of individual filters.
+> ❗ **Important**:  This method, though convenient, is inefficient if used multiple times in succession. Achieve better performance by chaining filters without asking for the outputs of individual filters. For more information, see [`Processing an Image Using Built-in Filters`](processing-an-image-using-built-in-filters.md).
 
 ## Parameters
 

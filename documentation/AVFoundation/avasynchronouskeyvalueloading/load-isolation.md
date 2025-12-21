@@ -17,7 +17,7 @@ Loads two or more properties asynchronously and returns the values.
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16, iOS 19, tvOS 19, watchOS 12, visionOS 3)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 func load<A, B, each C>(_ firstProperty: AVAsyncProperty<Self, A>, _ secondProperty: AVAsyncProperty<Self, B>, _ properties: repeat AVAsyncProperty<Self, each C>, isolation: isolated (any Actor)? = #isolation) async throws -> (A, B, repeat each C)
 ```
 

@@ -26,10 +26,6 @@ case never
   Accept all cookies.
 - [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
   Accept cookies only from the main document domain.
-- [HTTPCookie.AcceptPolicy.always](httpcookie/acceptpolicy/always.md)
-  Accept all cookies.
-- [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
-  Accept cookies only from the main document domain.
 
 
 ---

@@ -30,7 +30,7 @@ These status values are returned by [`incrementalLoad(from:complete:)`](nsbitmap
 - [NSBitmapImageRep.LoadStatus.invalidData](nsbitmapimagerep/loadstatus/invaliddata.md)
   An error occurred during image decompression. The image contains the portions of the data that have already been successfully decompressed, if any
 - [NSBitmapImageRep.LoadStatus.unexpectedEOF](nsbitmapimagerep/loadstatus/unexpectedeof.md)
-  [`incrementalLoad(from:complete:)`](nsbitmapimagerep/incrementalload(from:complete:).md) was called with [`true`](https://developer.apple.com/documentation/swift/true), but not enough data was available for decompression. The image contains the portions of the data that have already been successfully decompressed, if any.
+  Not enough data was available to fully decompress the image.
 - [NSBitmapImageRep.LoadStatus.completed](nsbitmapimagerep/loadstatus/completed.md)
   Enough data has been provided to successfully decompress the image (regardless of the complete: flag).
 ### Initializers

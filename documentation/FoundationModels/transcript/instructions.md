@@ -6,11 +6,11 @@
 Instructions you provide to the model that define its behavior.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,28 +25,13 @@ Instructions are typically provided to define the role and behavior of the model
 ## Topics
 
 ### Creating instructions
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, segments: [Transcript.Segment], toolDefinitions: [Transcript.ToolDefinition])](transcript/instructions/init(id:segments:tooldefinitions:).md)
   Initialize instructions by describing how you want the model to behave using natural language.
 ### Inspecting instructions
-- [var id: String](transcript/instructions/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [Transcript.Instructions.ID](transcript/instructions/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var segments: [Transcript.Segment]](transcript/instructions/segments.md)
   The content of the instructions, in natural language.
 - [var toolDefinitions: [Transcript.ToolDefinition]](transcript/instructions/tooldefinitions.md)
   A list of tools made available to the model.
-### Encoding instructions
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing instructions
-- [static func == (Transcript.Instructions, Transcript.Instructions) -> Bool](transcript/instructions/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/instructions/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/instructions/equatable-implementations.md)
 
 ## Relationships
 
@@ -61,7 +46,7 @@ Instructions are typically provided to define the role and behavior of the model
 ## See Also
 
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)

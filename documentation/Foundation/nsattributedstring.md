@@ -153,6 +153,7 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
   Returns the index of the first character of the word after or before the specified index.
 ### Performing automatic grammar agreement
 - [func inflecting() -> NSAttributedString](nsattributedstring/inflecting.md)
+  If the string has portions tagged with NSInflectionRuleAttributeName that have no format specifiers, create a new string with those portions inflected by following the rule in the attribute.
 ### Calculating ranges for common elements
 - [func itemNumber(in: NSTextList, at: Int) -> Int](nsattributedstring/itemnumber(in:at:).md)
   Returns the index of the item at the specified location within the list.
@@ -179,8 +180,6 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Migrate your code away from using these symbols.
-### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

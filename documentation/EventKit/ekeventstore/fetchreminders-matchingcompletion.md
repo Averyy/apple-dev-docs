@@ -29,7 +29,7 @@ A value that represents the asynchronous fetch request. To cancel a fetch reques
 
 #### Discussion
 
-Only committed reminders are included in the results. To include reminders saved using [`save(_:commit:)`](ekeventstore/save(_:commit:).md) with the `commit` parameter set to [`false`](https://developer.apple.com/documentation/swift/false), call [`commit()`](ekeventstore/commit().md) first.
+Only committed reminders are included in the results. To include reminders saved using [`save(_:commit:)`](ekeventstore/save(_:commit:).md) with the `commit` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false), call [`commit()`](ekeventstore/commit().md) first.
 
 This method fetches reminders asynchronously.
 

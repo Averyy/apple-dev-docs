@@ -21,7 +21,7 @@ func isNull() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the unit is null; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the unit is null; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

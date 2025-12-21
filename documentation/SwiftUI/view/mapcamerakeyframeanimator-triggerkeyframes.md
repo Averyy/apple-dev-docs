@@ -32,9 +32,9 @@ If the user performs a gesture while the animation is in progress, the animation
 
 ## See Also
 
-- [@MainActor @preconcurrency struct LocationButton](../CoreLocationUI/LocationButton.md)
+- [struct LocationButton](../CoreLocationUI/LocationButton.md)
   A SwiftUI button that grants one-time location authorization.
-- [@MainActor @preconcurrency struct Map<Content> where Content : View](../MapKit/Map.md)
+- [struct Map](../MapKit/Map.md)
   A view that displays an embedded map interface.
 - [func mapStyle(MapStyle) -> some View](view/mapstyle(_:).md)
   Specifies the map style to be used.

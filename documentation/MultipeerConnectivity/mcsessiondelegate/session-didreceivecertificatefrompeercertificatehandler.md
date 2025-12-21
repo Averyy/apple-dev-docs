@@ -21,7 +21,7 @@ optional func session(_ session: MCSession, didReceiveCertificate certificate: [
 
 #### Discussion
 
-Your app should inspect the nearby peer’s certificate, and then should decide whether to trust that certificate. Upon making that determination, your app should call the provided `certificateHandler` block, passing either [`true`](https://developer.apple.com/documentation/swift/true) (to trust the nearby peer) or [`false`](https://developer.apple.com/documentation/swift/false) (to reject it).
+Your app should inspect the nearby peer’s certificate, and then should decide whether to trust that certificate. Upon making that determination, your app should call the provided `certificateHandler` block, passing either [`true`](https://developer.apple.com/documentation/Swift/true) (to trust the nearby peer) or [`false`](https://developer.apple.com/documentation/Swift/false) (to reject it).
 
 For information about validating certificates, read [`Cryptographic Services Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172).
 

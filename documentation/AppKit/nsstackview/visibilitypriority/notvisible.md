@@ -16,10 +16,10 @@ static let notVisible: NSStackView.VisibilityPriority
 
 ## See Also
 
-- [static let detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
-  The Auto Layout priority that results in detachment of a view when there is insufficient space in the stack view to display it fully.
 - [static let mustHold: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/musthold.md)
   The default value, and maximum Auto Layout priority, that results in a view never detaching from the stack view.
+- [static let detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
+  The Auto Layout priority that results in detachment of a view when there is insufficient space in the stack view to display it fully.
 
 
 ---

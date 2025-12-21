@@ -5,8 +5,8 @@
 Use a Core Audio tap to capture outgoing audio from a process or group of processes.
 
 **Availability**:
-- macOS 14.2+
-- Xcode 15.1+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -79,7 +79,7 @@ if var listAsArray = list as? [CFString] {
     // Set the list back on the aggregate device.
     list = listAsArray as CFArray
     _ = withUnsafeMutablePointer(to: &list) { list in
-        AudioObjectSetPropertyData(tapID, &propertyAddress, 0, nil, propertySize, list)
+        AudioObjectSetPropertyData(aggregateDeviceID, &propertyAddress, 0, nil, propertySize, list)
     }
 }
 ```

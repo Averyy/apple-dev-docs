@@ -6,23 +6,14 @@
 The optional details describing the terminated connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ConnectionTerminatedDetails
 ```
-
-## Topics
-
-### Initializers - generated
-- [init(from: any Decoder) throws](waerror/connectionterminateddetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/connectionterminateddetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -34,10 +25,8 @@ struct ConnectionTerminatedDetails
 
 ## See Also
 
-- [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
-  The optional details describing the timed out publisher.
-- [WAError.SubscriberTimeoutDetails](waerror/subscribertimeoutdetails.md)
-  The optional details describing the timed-out subscriber.
+- [case connectionTerminated(WAError.ConnectionTerminatedDetails)](waerror/connectionterminated(_:).md)
+  An error that occurs if the connection was terminated.
 
 
 ---

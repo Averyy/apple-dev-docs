@@ -14,8 +14,8 @@ var federationUserPreauthenticationURL: URL? { get set }
 
 ## Mentions
 
-- [Performing a preauthentication request](performing-a-preauthentication-request.md)
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+- [Performing a preauthentication request](performing-a-preauthentication-request.md)
 
 ## See Also
 

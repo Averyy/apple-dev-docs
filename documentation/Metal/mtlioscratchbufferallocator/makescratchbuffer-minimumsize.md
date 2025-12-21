@@ -22,7 +22,7 @@ func makeScratchBuffer(minimumSize: Int) -> (any MTLIOScratchBuffer)?
 
 #### Return Value
 
-A [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance that your app implements or `nil`.
+An [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance that your app implements or `nil`.
 
 #### Discussion
 

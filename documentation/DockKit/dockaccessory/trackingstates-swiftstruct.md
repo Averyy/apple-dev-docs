@@ -26,12 +26,8 @@ struct TrackingStates
 - [func makeAsyncIterator() -> DockAccessory.TrackingStates.Iterator](dockaccessory/trackingstates-swift.struct/makeasynciterator.md)
   Create and return an iterator that traverses the list of tracking session states.
 ### Type Aliases
-- [DockAccessory.TrackingStates.AsyncIterator](dockaccessory/trackingstates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [DockAccessory.TrackingStates.Element](dockaccessory/trackingstates-swift.struct/element.md)
   A tracking session state.
-### Default Implementations
-- [AsyncSequence Implementations](dockaccessory/trackingstates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

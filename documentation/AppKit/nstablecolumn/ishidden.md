@@ -17,7 +17,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the table column is hidden. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the table column is hidden. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Columns that are hidden still exist in the table view object’s [`tableColumns`](nstableview/tablecolumns.md) array and are included in the table view’s [`numberOfColumns`](nstableview/numberofcolumns.md) count.
 

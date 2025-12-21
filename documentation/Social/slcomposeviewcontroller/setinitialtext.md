@@ -23,7 +23,7 @@ Returns a Boolean value that indicates whether the text was successfully set.
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if `text` does not fit in the currently available character space or if the view controller has already been presented to the user (and therefore cannot be changed). Character limits are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) if `text` does not fit in the currently available character space or if the view controller has already been presented to the user (and therefore cannot be changed). Character limits are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
 
 ## Parameters
 

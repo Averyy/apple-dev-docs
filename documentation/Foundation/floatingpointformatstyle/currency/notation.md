@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Modifies the format style to use the specified notation.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,14 @@
 ```swift
 func notation(_ notation: FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency
 ```
+
+#### Return Value
+
+A floating-point currency format style modified to use the specified notation.
+
+## Parameters
+
+- `notation`: The notation to apply to the format style.
 
 
 ---

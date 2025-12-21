@@ -16,12 +16,10 @@ var isForPrinting: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the app to open documents and URLs. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) if you want the app to print the items instead.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which causes the app to open documents and URLs. Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) if you want the app to print the items instead.
 
 ## See Also
 
-- [var requiresUniversalLinks: Bool](nsworkspace/openconfiguration/requiresuniversallinks.md)
-  A Boolean value indicating whether you require the URL to have an associated universal link.
 - [var requiresUniversalLinks: Bool](nsworkspace/openconfiguration/requiresuniversallinks.md)
   A Boolean value indicating whether you require the URL to have an associated universal link.
 

@@ -22,9 +22,9 @@ var collapsesLargestUnit: Bool { get set }
 
 #### Discussion
 
-An example of when this property might apply is when expressing 63 seconds worth of time. When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the formatted value would be “63s”. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the formatted value would be “1m 3s”.
+An example of when this property might apply is when expressing 63 seconds worth of time. When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the formatted value would be “63s”. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the formatted value would be “1m 3s”.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

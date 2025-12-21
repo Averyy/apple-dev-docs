@@ -25,6 +25,16 @@ Packing allows your implementation to provide information FSKit needs, including
 ### Packing entries
 - [func packEntry(name: FSFileName, itemType: FSItem.ItemType, itemID: FSItem.Identifier, nextCookie: FSDirectoryCookie, attributes: FSItem.Attributes?) -> Bool](fsdirectoryentrypacker/packentry(name:itemtype:itemid:nextcookie:attributes:).md)
   Provides a directory entry during enumeration.
+- [FSItem.ItemType](fsitem/itemtype.md)
+  An enumeration of item types, such as file, directory, or symbolic link.
+- [FSItem.Identifier](fsitem/identifier.md)
+  The unique identifier for an item.
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [FSItem.Attributes](fsitem/attributes.md)
+  Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 ## Relationships
 

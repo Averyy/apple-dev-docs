@@ -10,6 +10,7 @@ An extra-large widget.
 - iPadOS 15.0+
 - Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,9 +26,7 @@ case systemExtraLarge
 
 #### Discussion
 
-The extra-large system widget can appear on the Home Screen or in the Today View in iPadOS. In macOS, the extra-large system widget can appear on the desktop or in Notification Center.
-
-> **Note**: This value is only available in iPadOS and macOS.
+Extra-large widgets are available in iPadOS and macOS. To add an extra-large widget to your visionOS app, use [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md). To add an extra-large visionOS widget to a compatible iOS and iPadOS app, use the `systemExtraLarge` widget family. The extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) widget of a visionOS app.
 
 ## See Also
 
@@ -37,6 +36,8 @@ The extra-large system widget can appear on the Home Screen or in the Today View
   A medium-sized widget.
 - [WidgetFamily.systemLarge](widgetfamily/systemlarge.md)
   A large widget.
+- [WidgetFamily.systemExtraLargePortrait](widgetfamily/systemextralargeportrait.md)
+  An extra-large widget that uses a portrait orientation.
 
 
 ---

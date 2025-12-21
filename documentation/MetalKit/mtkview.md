@@ -30,9 +30,9 @@ The view requires a [`MTLDevice`](https://developer.apple.com/documentation/Meta
 
 The MTKView class supports three drawing modes:
 
-- Timed updates: The view redraws its contents based on an internal timer. In this case, which is the default behavior, both [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) are set to [`false`](https://developer.apple.com/documentation/swift/false). Use this mode for games and other animated content that’s regularly updated.
-- Draw notifications: The view redraws itself when something invalidates its contents, usually because of a call to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()) or some other view-related behavior. In this case, set [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`true`](https://developer.apple.com/documentation/swift/true). Use this mode for apps with a more traditional workflow, where updates happen when data changes, but not on a regular timed interval.
-- Explicit drawing: The view redraws its contents only when you explicitly call the [`draw()`](mtkview/draw().md) method. In this case, set [`isPaused`](mtkview/ispaused.md) to [`true`](https://developer.apple.com/documentation/swift/true) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`false`](https://developer.apple.com/documentation/swift/false). Use this mode to create your own custom workflow.
+- Timed updates: The view redraws its contents based on an internal timer. In this case, which is the default behavior, both [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) are set to [`false`](https://developer.apple.com/documentation/Swift/false). Use this mode for games and other animated content that’s regularly updated.
+- Draw notifications: The view redraws itself when something invalidates its contents, usually because of a call to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()) or some other view-related behavior. In this case, set [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`true`](https://developer.apple.com/documentation/Swift/true). Use this mode for apps with a more traditional workflow, where updates happen when data changes, but not on a regular timed interval.
+- Explicit drawing: The view redraws its contents only when you explicitly call the [`draw()`](mtkview/draw().md) method. In this case, set [`isPaused`](mtkview/ispaused.md) to [`true`](https://developer.apple.com/documentation/Swift/true) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`false`](https://developer.apple.com/documentation/Swift/false). Use this mode to create your own custom workflow.
 
 ##### Drawing the Views Contents
 
@@ -54,7 +54,7 @@ After rendering the contents, you must present the drawable to update the view�
 
 When a command queue schedules a command buffer for execution, the drawable tracks all render or write requests on itself in that command buffer. The operating system doesn’t present the drawable onscreen until the commands have finished executing. By asking the command buffer to present the drawable, you guarantee that presentation happens after the command queue has scheduled this command buffer. Don’t wait for the command buffer to finish executing before registering the drawable’s presentation.
 
-> 💡 **Tip**:  For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
+> 💡 **Tip**:  For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer#Keeping-References-to-Drawables).
 
 ## Topics
 

@@ -10,7 +10,7 @@ Returns an entity by synchronously loading it from a file URL.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -22,7 +22,6 @@ Returns an entity by synchronously loading it from a file URL.
 
 ## Mentions
 
-- [Taking Control of Scene Anchoring](taking-control-of-scene-anchoring.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
 
 #### Return Value

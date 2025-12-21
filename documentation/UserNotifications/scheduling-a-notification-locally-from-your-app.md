@@ -26,7 +26,7 @@ content.body = "Every Tuesday at 2pm"
 
 Specify the conditions for delivering your notification using a [`UNCalendarNotificationTrigger`](uncalendarnotificationtrigger.md), [`UNTimeIntervalNotificationTrigger`](untimeintervalnotificationtrigger.md), or [`UNLocationNotificationTrigger`](unlocationnotificationtrigger.md) object. Each trigger object requires different parameters. For example, a calendar-based trigger requires you to specify the date and time of delivery.
 
-Listing 2 shows you how to configure a notification for the system to deliver every Tuesday at 2pm. The [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) structure specifies the timing for the event. Configuring the trigger with the `repeats` parameter set to [`true`](https://developer.apple.com/documentation/swift/true) causes the system to reschedule the event after its delivery.
+Listing 2 shows you how to configure a notification for the system to deliver every Tuesday at 2pm. The [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) structure specifies the timing for the event. Configuring the trigger with the `repeats` parameter set to [`true`](https://developer.apple.com/documentation/Swift/true) causes the system to reschedule the event after its delivery.
 
 Listing 2. Configuring a recurring date-based trigger
 

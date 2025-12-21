@@ -21,6 +21,10 @@ To manage activities, be sure you have one of the following user roles:
 ### Managing Game Center activities
 - [Create an activity](post-v1-gamecenteractivities.md)
   Create an activity for your Game Center detail or Game Center group.
+- [Add an achievement to a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)
+  Add an achievement to a Game Center activity.
+- [Add a leaderboard to a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
+  Add a leaderboard to a Game Center activity.
 - [Modify the achievements for a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
   Update the relationship between achievements and a specific Game Center activity.
 - [Modify the leaderboards for a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
@@ -40,6 +44,10 @@ To manage activities, be sure you have one of the following user roles:
   Update details for a specific Game Center activity.
 - [Delete an activity](delete-v1-gamecenteractivities-_id_.md)
   Remove a specific Game Center activity.
+- [Remove an achievement](delete-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)
+  Remove an achievement from a Game Center activity.
+- [Remove a leaderboard](delete-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
+  Remove a leaderboard from a Game Center activity.
 - [Remove an achievement from an activity](delete-v1-gamecenteractivities-_id_-relationships-achievements.md)
   Remove the relationship between an achievement and a Game Center activity.
 - [Remove a leaderboard from an activity](delete-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
@@ -49,6 +57,10 @@ To manage activities, be sure you have one of the following user roles:
   A response that contains a list of activities resources.
 - [object GameCenterActivity](gamecenteractivity.md)
   The data structure that represents a Game Center activity resource.
+- [object GameCenterActivityAchievementsV2LinkagesRequest](gamecenteractivityachievementsv2linkagesrequest.md)
+  The data structure that represents a Game Center activity achievement linkage request resource.
+- [object GameCenterActivityLeaderboardsV2LinkagesRequest](gamecenteractivityleaderboardsv2linkagesrequest.md)
+  The data structure that represents a Game Center activity leaderboard linkage request resource.
 - [object GameCenterActivityAchievementsLinkagesRequest](gamecenteractivityachievementslinkagesrequest.md)
   The request body you use to create a link betweeen an achievement and an activity resource.
 - [object GameCenterActivityLeaderboardsLinkagesRequest](gamecenteractivityleaderboardslinkagesrequest.md)
@@ -64,6 +76,7 @@ To manage activities, be sure you have one of the following user roles:
 - [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
   The request body you use to create an activity version resource.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
+- [object StringToStringMap](stringtostringmap.md)
 
 ## See Also
 

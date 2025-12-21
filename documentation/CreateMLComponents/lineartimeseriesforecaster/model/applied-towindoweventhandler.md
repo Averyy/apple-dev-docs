@@ -29,6 +29,11 @@ A shaped array of predictions with shape `[forecastWindowSize, annotationSize]`.
 - `input`: An window of input features with shape  .
 - `eventHandler`: An event handler.
 
+## See Also
+
+- [func applied(to:eventHandler:)](lineartimeseriesforecaster/model/applied(to:eventhandler:).md)
+  Performs a prediction on a shaped array of features.
+
 
 ---
 

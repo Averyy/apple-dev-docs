@@ -21,7 +21,7 @@ var automaticallyShowsScopeBar: Bool { get set }
 
 #### Discussion
 
-By default, [`UISearchController`](uisearchcontroller.md) shows the search bar’s scope bar when search becomes active and hides it when the user dismisses the search. Set this to [`false`](https://developer.apple.com/documentation/swift/false) if you want to show and hide the scope bar in your own code. If you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property, that also changes this property to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, [`UISearchController`](uisearchcontroller.md) shows the search bar’s scope bar when search becomes active and hides it when the user dismisses the search. Set this to [`false`](https://developer.apple.com/documentation/Swift/false) if you want to show and hide the scope bar in your own code. If you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property, that also changes this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > **Note**:  The search bar doesn’t show its scope bar at all if there are fewer than two titles in the search bar’s [`scopeButtonTitles`](uisearchbar/scopebuttontitles.md).
 

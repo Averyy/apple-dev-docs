@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: init
 
-Asks the user’s parents and/or guardians to communicate with a set of people using their handle or account identifier, with default binary approve/deny choices.
+Creates a permission question that asks parents or guardians for permission to communicate with multiple people.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,16 @@ convenience init(handles: [CommunicationHandle])
 
 ## Parameters
 
-- `handles`: Unique identifiers for a group of people, including phone numbers,   email addresses, or custom user names.
+- `handles`: The communication handles for the people the child wants to communicate with, such as phone numbers, email addresses, or custom identifiers.
 
 ## See Also
 
 - [convenience init(handle: CommunicationHandle)](permissionquestion/init(handle:).md)
-  Asks the user’s parents and/or guardians to communicate with someone using their handle or account identifier, with default binary approve/deny choices.
+  Creates a permission question that asks parents or guardians for permission to communicate with a person.
 - [convenience init(communicationTopic: Topic)](permissionquestion/init(communicationtopic:).md)
-  Asks the user’s parents and/or guardians to communicate with a set of people with the given metadata.
+  Creates a permission question that asks parents or guardians for communication permission.
+- [convenience init(significantAppUpdateTopic: Topic)](permissionquestion/init(significantappupdatetopic:).md)
+  Creates a permission question that asks parents or guardians for permission to continue using your app after a significant update.
 
 
 ---

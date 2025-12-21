@@ -6,7 +6,7 @@ Configure the automatic focus behavior of a camera, or manually set its lens pos
 
 ## Topics
 
-### Configuring Automatic Focus
+### Configuring automatic focus
 - [func isFocusModeSupported(AVCaptureDevice.FocusMode) -> Bool](avcapturedevice/isfocusmodesupported(_:).md)
   Returns a Boolean value that indicates whether the device supports the specified focus mode.
 - [var focusMode: AVCaptureDevice.FocusMode](avcapturedevice/focusmode-swift.property.md)
@@ -27,15 +27,24 @@ Configure the automatic focus behavior of a camera, or manually set its lens pos
   A value that controls the allowable range for automatic focusing.
 - [AVCaptureDevice.AutoFocusRangeRestriction](avcapturedevice/autofocusrangerestriction-swift.enum.md)
   Constants to specify the autofocus range of a capture device.
-### Setting a Focus Point of Interest
+### Setting a focus point of interest
 - [var isFocusPointOfInterestSupported: Bool](avcapturedevice/isfocuspointofinterestsupported.md)
   A Boolean value that indicates whether the device supports a point of interest for focus.
 - [var focusPointOfInterest: CGPoint](avcapturedevice/focuspointofinterest.md)
   The point of interest for focusing.
-### Monitoring Focus Changes
+### Setting a focus rectangle of interest
+- [var isFocusRectOfInterestSupported: Bool](avcapturedevice/isfocusrectofinterestsupported.md)
+  Whether the receiver supports focus rectangles of interest.
+- [var focusRectOfInterest: CGRect](avcapturedevice/focusrectofinterest.md)
+  The device’s current focus rectangle of interest, if it has one.
+- [var minFocusRectOfInterestSize: CGSize](avcapturedevice/minfocusrectofinterestsize.md)
+  The minimum size you may use when specifying a rectangle of interest.
+- [func defaultRectForFocusPoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforfocuspoint(ofinterest:).md)
+  The default rectangle of interest used for a given focus point of interest.
+### Monitoring focus changes
 - [var isAdjustingFocus: Bool](avcapturedevice/isadjustingfocus.md)
   A Boolean value that indicates whether the device is currently adjusting its focus setting.
-### Setting Focus Manually
+### Setting focus manually
 - [var isLockingFocusWithCustomLensPositionSupported: Bool](avcapturedevice/islockingfocuswithcustomlenspositionsupported.md)
   A Boolean value that indicates whether the device supports locking focus to a specific lens position.
 - [var lensPosition: Float](avcapturedevice/lensposition.md)
@@ -44,7 +53,7 @@ Configure the automatic focus behavior of a camera, or manually set its lens pos
   A constant that represents the current lens position.
 - [func setFocusModeLocked(lensPosition: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md)
   Locks the lens position at the specified value, and sets the focus mode to a locked state.
-### Inspecting the Focus Distance
+### Inspecting the focus distance
 - [var minimumFocusDistance: Int](avcapturedevice/minimumfocusdistance.md)
   The capture device’s minimum focus distance in millimeters.
 
@@ -62,7 +71,7 @@ Configure the automatic focus behavior of a camera, or manually set its lens pos
   Configure capture formats and camera frame rates.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.

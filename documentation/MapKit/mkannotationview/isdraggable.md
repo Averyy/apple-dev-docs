@@ -21,9 +21,9 @@ var isDraggable: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) makes an annotation draggable by the user. If [`true`](https://developer.apple.com/documentation/swift/true), the associated annotation object needs to also implement the [`setCoordinate:`](mkannotation/setcoordinate:.md) method. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) makes an annotation draggable by the user. If [`true`](https://developer.apple.com/documentation/Swift/true), the associated annotation object needs to also implement the [`setCoordinate:`](mkannotation/setcoordinate:.md) method. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) lets the map view know that the annotation is draggable. You can’t conditionalize drag operations by attempting to stop an operation the user initiates. Doing so can lead to undefined behavior. After it begins, the drag operation needs to continue to completion.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) lets the map view know that the annotation is draggable. You can’t conditionalize drag operations by attempting to stop an operation the user initiates. Doing so can lead to undefined behavior. After it begins, the drag operation needs to continue to completion.
 
 ## See Also
 

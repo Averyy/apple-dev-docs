@@ -21,7 +21,7 @@ typealias JSObjectSetPropertyCallback = (JSContextRef?, JSObjectRef?, JSStringRe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if setting the property succeeds; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if setting the property succeeds; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

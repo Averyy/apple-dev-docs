@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure Apple TV for a particular style of AirPlay security.
+The payload that configures Apple TV for a particular style of AirPlay security.
 
 **Availability**:
 - tvOS 11.0+
@@ -73,7 +73,7 @@ Specify `com.apple.airplay.security` as the payload type.
 ## See Also
 
 - [object AirPlay](airplay.md)
-  The payload you use to configure AirPlay settings.
+  The payload that configures AirPlay settings.
 
 
 ---

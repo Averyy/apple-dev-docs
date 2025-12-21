@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the system policy.
+The payload that configures the system policy.
 
 **Availability**:
 - macOS 10.8+
@@ -15,8 +15,6 @@ object SystemPolicyRule
 ```
 
 #### Discussion
-
-Specify `com.apple.systempolicy.rule` as the payload type.
 
 Specify `com.apple.systempolicy.rule` as the payload type.
 
@@ -77,11 +75,11 @@ This payload can only exist in a device profile. If the payload is present in a 
 ## See Also
 
 - [object SystemPolicyControl](systempolicycontrol.md)
-  The payload you use to configure the system policy for assessments.
+  The payload that configures the system policy for assessments.
 - [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)
-  The payload you use to configure the kernel extension policies.
+  The payload that configures the kernel extension policies.
 - [object SystemPolicyManaged](systempolicymanaged.md)
-  The payload you use to configure the Finder’s contextual menu to bypass the system policy.
+  The payload that configures the Finder’s contextual menu to bypass the system policy.
 
 
 ---

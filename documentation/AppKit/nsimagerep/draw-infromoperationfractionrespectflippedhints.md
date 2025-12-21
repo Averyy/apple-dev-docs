@@ -16,7 +16,7 @@ func draw(in dstSpacePortionRect: NSRect, from srcSpacePortionRect: NSRect, oper
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -8,7 +8,6 @@ A request that finds rectangular regions that contain people in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,16 +27,6 @@ The request returns the resulting rectangle data in a collection of [`HumanObser
 ### Creating a request
 - [init(DetectHumanRectanglesRequest.Revision?)](detecthumanrectanglesrequest/init(_:).md)
   Creates a human detection request.
-### Getting the revision
-- [let revision: DetectHumanRectanglesRequest.Revision](detecthumanrectanglesrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectHumanRectanglesRequest.Revision]](detecthumanrectanglesrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectHumanRectanglesRequest.Revision](detecthumanrectanglesrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var upperBodyOnly: Bool](detecthumanrectanglesrequest/upperbodyonly.md)
-  A Boolean value that indicates whether the request requires only detecting a human upper body to produce a result.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -51,8 +40,19 @@ The request returns the resulting rectangle data in a collection of [`HumanObser
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct HumanObservation](humanobservation.md)
   An object that represents a person that the request detects.
+### Configuring a request
+- [var upperBodyOnly: Bool](detecthumanrectanglesrequest/upperbodyonly.md)
+  A Boolean value that indicates whether the request requires only detecting a human upper body to produce a result.
+### Getting the revision
+- [let revision: DetectHumanRectanglesRequest.Revision](detecthumanrectanglesrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectHumanRectanglesRequest.Revision]](detecthumanrectanglesrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectHumanRectanglesRequest.Revision](detecthumanrectanglesrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -67,14 +67,12 @@ The request returns the resulting rectangle data in a collection of [`HumanObser
 
 ## See Also
 
-- [Analyzing a selfie and visualizing its content](analyzing-a-selfie-and-visualizing-its-content.md)
-  Calculate face-capture quality and visualize facial features for a collection of images using the Vision framework.
-- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
-  A request that finds faces within an image.
-- [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
-  An image-analysis request that finds facial features like eyes and mouth in an image.
-- [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
-  A request that produces a floating-point number that represents the capture quality of a face in a photo.
+- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
+  Analyze and label images using a Vision classification request.
+- [struct ClassifyImageRequest](classifyimagerequest.md)
+  A request to classify an image.
+- [struct RecognizeAnimalsRequest](recognizeanimalsrequest.md)
+  A request that recognizes animals in an image.
 
 
 ---

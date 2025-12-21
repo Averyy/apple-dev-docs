@@ -17,7 +17,6 @@ Determines the number of lines to draw.
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfLines: Int { get set }
 ```
 

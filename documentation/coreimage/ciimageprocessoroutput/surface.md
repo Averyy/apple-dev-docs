@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-An IOSurface object to which you can write output pixel data.
+An output surface object that your Core Image Processor Kernel can write to.
 
 **Availability**:
 - iOS 10.0+
@@ -20,18 +20,14 @@ An IOSurface object to which you can write output pixel data.
 var surface: IOSurfaceRef { get }
 ```
 
-#### Discussion
-
-Use this property if you plan to process the image using routines that can make use of memory shared with other processes or technologies.
-
 ## See Also
 
 - [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
-  A pointer to CPU memory at which to write output pixel data.
+  The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
 - [var metalTexture: (any MTLTexture)?](ciimageprocessoroutput/metaltexture.md)
-  A Metal texture to which you can write output pixel data.
+  A Metal texture object that can be bound for output using Metal.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessoroutput/pixelbuffer.md)
-  A CoreVideo pixel buffer to which you can write output pixel data.
+  An output pixelBuffer object that your Core Image Processor Kernel can write to.
 
 
 ---

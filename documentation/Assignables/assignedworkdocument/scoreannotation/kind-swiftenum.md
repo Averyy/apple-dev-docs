@@ -28,25 +28,9 @@ enum Kind
   A score mark indicating an incorrect answer.
 - [AssignedWorkDocument.ScoreAnnotation.Kind.unknown](assignedworkdocument/scoreannotation/kind-swift.enum/unknown.md)
   An unknown kind. This value may occur if an older version of this framework is deserializing a newer document version.
-### Creating a score annotation
-- [init?(rawValue: Int)](assignedworkdocument/scoreannotation/kind-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Instance Properties
 - [var debugDescription: String](assignedworkdocument/scoreannotation/kind-swift.enum/debugdescription.md)
   A textual representation of this instance, suitable for debugging.
-- [var rawValue: Int](assignedworkdocument/scoreannotation/kind-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [AssignedWorkDocument.ScoreAnnotation.Kind.AllCases](assignedworkdocument/scoreannotation/kind-swift.enum/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [AssignedWorkDocument.ScoreAnnotation.Kind.RawValue](assignedworkdocument/scoreannotation/kind-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [AssignedWorkDocument.ScoreAnnotation.Kind]](assignedworkdocument/scoreannotation/kind-swift.enum/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](assignedworkdocument/scoreannotation/kind-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](assignedworkdocument/scoreannotation/kind-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

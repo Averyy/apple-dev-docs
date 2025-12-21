@@ -21,7 +21,7 @@ var isPatchData: Bool { get }
 
 #### Discussion
 
-This value is always [`false`](https://developer.apple.com/documentation/swift/false) if the vertex function is not a post-tessellation vertex function.
+This value is always [`false`](https://developer.apple.com/documentation/Swift/false) if the vertex function is not a post-tessellation vertex function.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The decoded object, or `nil` if decoding fails.
 
 #### Discussion
 
-This method is equivalent to [`decodeObject(of:forKey:)`](nscoder/decodeobject(of:forkey:)-7tmft.md), but accepts a set of classes that the decoded object can match. If [`requiresSecureCoding`](nscoder/requiressecurecoding.md) is [`true`](https://developer.apple.com/documentation/swift/true), the decoded object’s class must be a member of the `classes` parameter, or a sublcass of a member.
+This method is equivalent to [`decodeObject(of:forKey:)`](nscoder/decodeobject(of:forkey:)-7tmft.md), but accepts a set of classes that the decoded object can match. If [`requiresSecureCoding`](nscoder/requiressecurecoding.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the decoded object’s class must be a member of the `classes` parameter, or a sublcass of a member.
 
 ## Parameters
 

@@ -42,7 +42,7 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
-  The view that creates the Sign in with Apple button for display.
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
@@ -56,6 +56,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   A mechanism for generating requests to perform keychain credential sharing.
 - [class ASPasswordCredential](aspasswordcredential.md)
   A password credential.
+- [Password use in web browsers](password-use-in-web-browsers.md)
+  Register and authenticate website users by using passwords.
 ### Passkeys
 - [Public-Private Key Authentication](public-private-key-authentication.md)
   Register and authenticate users with passkeys and security keys, without using passwords.
@@ -123,47 +125,33 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [class ASAuthorizationAccountCreationPlatformPublicKeyCredentialRequest](asauthorizationaccountcreationplatformpublickeycredentialrequest.md)
 - [class ASAuthorizationAccountCreationProvider](asauthorizationaccountcreationprovider.md)
 - [class ASAuthorizationProviderExtensionUserLoginConfiguration](asauthorizationproviderextensionuserloginconfiguration.md)
+- [class ASCredentialDataManager](ascredentialdatamanager.md)
+  This class allows submitting credentials and events to any credential manager enabled on the system.
+- [class ASGeneratePasswordsRequest](asgeneratepasswordsrequest.md)
+- [class ASGeneratedPassword](asgeneratedpassword.md)
 - [class ASOneTimeCodeCredentialIdentity](asonetimecodecredentialidentity.md)
-### Protocols
-- [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest.md)
-- [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s.md)
-  A protocol for creating passkey requests.
-- [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest.md)
+- [class ASSavePasswordRequest](assavepasswordrequest.md)
 ### Structures
 - [struct ASAuthorizationProviderExtensionEncryptionAlgorithm](asauthorizationproviderextensionencryptionalgorithm.md)
 - [struct ASAuthorizationProviderExtensionSigningAlgorithm](asauthorizationproviderextensionsigningalgorithm.md)
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md)
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md)
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md)
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
-  This type represents the inputs for the WebAuthentication PRF extension, when used during assertion requests. The PRF extension lets you create general purpose SymmetricKeys from passkeys, which could useful for tasks such as encryption of user data. The same input values used with the same passkey will always produce the same SymmetricKey.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput](asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md)
-  The outputs of the WebAuthentication PRF extension, when requested during an assertion. This object represents one or two SymmetricKeys which are available anywhere the passkey can be used. These are general purpose keys which can be used for application-specific needs, such as encryption of user data. These keys should not be stored or exported. They should only ever be derived as the result of an assertion operation, and then discarded when finished.
-- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct.md)
-- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
+- [struct ASAutoFillURLScope](asautofillurlscope.md)
+  This structure represents the subset of URL components supported for the AutoFill of credentials.
 - [struct ASEmailIdentifier](asemailidentifier.md)
 - [struct ASImportableCredentialScope](asimportablecredentialscope.md)
   The scope for where a credential should be usable.
 - [struct ASImportableEditableField](asimportableeditablefield.md)
   A field that someone can edit within a credential.
-- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
-- [struct ASPasskeyAssertionCredentialExtensionOutput](aspasskeyassertioncredentialextensionoutput-swift.struct.md)
-- [struct ASPasskeyRegistrationCredentialExtensionInput](aspasskeyregistrationcredentialextensioninput-swift.struct.md)
-- [struct ASPasskeyRegistrationCredentialExtensionOutput](aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
 - [struct ASPhoneNumberIdentifier](asphonenumberidentifier.md)
 - [struct ASPublicKeyCredentialClientData](aspublickeycredentialclientdata-swift.struct.md)
+- [struct CredentialDataManager](credentialdatamanager.md)
 ### Variables
 - [let ASCredentialExchangeActivity: String](ascredentialexchangeactivity.md)
   The activity type used in user activity objects sent to importing apps.
 - [let ASCredentialImportToken: String](ascredentialimporttoken.md)
   The key for the token in the user info dictionary of the user activity sent to importing apps.
-### Type Aliases
-- [typealias ASImage](asimage-8ysl.md)
 ### Enumerations
 - [enum ASContactIdentifier](ascontactidentifier.md)
 - [enum ASContactIdentifierRequest](ascontactidentifierrequest.md)
-- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The object whose contents should be captured.
+The instance whose contents should be captured.
 
 **Availability**:
 - iOS 13.0+
@@ -21,13 +21,13 @@ var captureObject: Any? { get set }
 
 #### Discussion
 
-The default value is `nil`, but you must set an object before using this descriptor to start a capture session.
+The default value is `nil`, but you need to set an instance before using this descriptor to start a capture session.
 
-The behavior of the capture session depends on the kind of object being captured:
+The behavior of the capture session depends on the kind of instance being captured:
 
-- Specify a [`MTLDevice`](mtldevice.md) object to capture commands in command buffers created on any command queues created by the device object.
-- Specify a [`MTLCommandQueue`](mtlcommandqueue.md) object to capture commands in command buffers created by a specific command queue.
-- Specify a [`MTLCaptureScope`](mtlcapturescope.md) object to indirectly define which commands are captured.
+- Specify an [`MTLDevice`](mtldevice.md) instance to capture commands in command buffers created on any command queues created by the device instance.
+- Specify an [`MTLCommandQueue`](mtlcommandqueue.md) instance to capture commands in command buffers created by a specific command queue.
+- Specify an [`MTLCaptureScope`](mtlcapturescope.md) instance to indirectly define which commands are captured.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var isUserInteractionEnabled: Bool { get set }
 
 #### Discussion
 
-[`UILabel`](uilabel.md) inherits this property from the [`UIView`](uiview.md) parent class. This class changes the default value of this property to [`false`](https://developer.apple.com/documentation/swift/false).
+[`UILabel`](uilabel.md) inherits this property from the [`UIView`](uiview.md) parent class. This class changes the default value of this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

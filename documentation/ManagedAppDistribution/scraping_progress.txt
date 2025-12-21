@@ -1,4 +1,4 @@
 Completed scraping ManagedAppDistribution!
-Total pages scraped: 1685
+Total pages scraped: 74
 Pages skipped (unchanged): 1
 Pages failed: 0

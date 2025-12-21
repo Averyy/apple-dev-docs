@@ -30,15 +30,6 @@ struct TreeRegressorModel
 ### Applying
 - [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](treeregressormodel/applied(to:eventhandler:).md)
   Performs a regression on a data frame.
-### Type Aliases
-- [TreeRegressorModel.Input](treeregressormodel/input.md)
-  The input type.
-- [TreeRegressorModel.Output](treeregressormodel/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](treeregressormodel/customdebugstringconvertible-implementations.md)
-- [TabularTransformer Implementations](treeregressormodel/tabulartransformer-implementations.md)
-- [Transformer Implementations](treeregressormodel/transformer-implementations.md)
 
 ## Relationships
 

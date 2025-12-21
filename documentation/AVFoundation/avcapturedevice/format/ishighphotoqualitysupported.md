@@ -20,7 +20,7 @@ var isHighPhotoQualitySupported: Bool { get }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the format produces higher image quality when selecting a quality prioritization of [`AVCapturePhotoOutput.QualityPrioritization.balanced`](avcapturephotooutput/qualityprioritization/balanced.md) or [`AVCapturePhotoOutput.QualityPrioritization.quality`](avcapturephotooutput/qualityprioritization/quality.md) in comparison to [`AVCapturePhotoOutput.QualityPrioritization.speed`](avcapturephotooutput/qualityprioritization/speed.md).
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the format produces higher image quality when selecting a quality prioritization of [`AVCapturePhotoOutput.QualityPrioritization.balanced`](avcapturephotooutput/qualityprioritization/balanced.md) or [`AVCapturePhotoOutput.QualityPrioritization.quality`](avcapturephotooutput/qualityprioritization/quality.md) in comparison to [`AVCapturePhotoOutput.QualityPrioritization.speed`](avcapturephotooutput/qualityprioritization/speed.md).
 
 High-quality formats adhere to the following rules:
 

@@ -18,13 +18,13 @@ People can anchor apps to their space in a few different ways:
 
 Locking and persisting content in visionOS makes the user experience more natural and integrated by letting people attach apps to specific places in their real world. This means people can easily return to what they were doing, creating a smoother and more immersive experience. Knowing the kind of surface the app snaps to allows for more useful and personalized apps, giving developers the ability to show content that’s relevant to a given situation.
 
-> **Note**: Watch the WWDC25 session [`Set the scene with SwiftUI in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/209/) for more information on system behavior and API usage.
+> **Note**: Watch the WWDC25 session [`Set the scene with SwiftUI in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/290/) for more information on system behavior and API usage.
 
 #### Handle Scene Restoration
 
 Scene restoration is an important part of a seamless experience on visionOS. People expect content to persist where they’ve placed it, and they expect to be able to pick up where they left off. To ensure the system correctly restores windows and maintains a person’s desired layout, you’ll need to handle your app’s scene restoration.
 
-> **Note**: To learn more, download the sample code project in [`Restoring Your App’s State with SwiftUI`](https://developer.apple.com/documentation/swiftui/restoring_your_app_s_state_with_swiftui).
+> **Note**: To learn more, download the sample code project in [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/restoring-your-app-s-state-with-swiftui).
 
 However, there are some cases in which you might not want to restore scenes, especially for those that serve a temporary or context-specific purpose, including:
 

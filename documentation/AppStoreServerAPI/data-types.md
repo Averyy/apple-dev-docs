@@ -24,12 +24,18 @@ Refer to these data types for decoded transaction and renewal information payloa
   The unique identifier of an app in the App Store.
 - [type bundleId](bundleid.md)
   The bundle identifier of an app.
+- [type originalApplicationVersion](originalapplicationversion.md)
+  The app version that the customer originally purchased from the App Store.
+- [type originalPlatform](originalplatform.md)
+  The platform on which a customer originally purchases an app.
+- [type preorderDate](preorderdate.md)
+  The date a customer places an order for the app before it’s available in the App Store, expressed in UNIX time, in milliseconds.
 ### Account information
 - [type appAccountToken](appaccounttoken.md)
   The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 ### Product information
 - [type productId](productid.md)
-  The unique identifier of the product, which you create in App Store Connect.
+  The unique identifier of the product.
 - [type type](type.md)
   The type of In-App Purchase products you can offer in your app.
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
@@ -46,7 +52,7 @@ Refer to these data types for decoded transaction and renewal information payloa
   The three-letter code that represents the country or region associated with the App Store storefront of the purchase.
 - [type storefrontId](storefrontid.md)
   An Apple-defined value that uniquely identifies an App Store storefront.
-### Subscription offers
+### Offers
 - [type eligibleWinBackOfferIds](eligiblewinbackofferids.md)
   An array of win-back offer identifiers that a customer is eligible to redeem, which sorts the identifiers with the best offers first.
 - [type offerIdentifier](offeridentifier.md)
@@ -54,10 +60,10 @@ Refer to these data types for decoded transaction and renewal information payloa
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for subscription offers on an auto-renewable subscription.
-### Purchase dates
+  The payment mode for a discount offer on an In-App Purchase.
+### Product purchase dates
 - [type originalPurchaseDate](originalpurchasedate.md)
   The purchase date of the transaction associated with the original transaction identifier.
 - [type purchaseDate](purchasedate.md)
@@ -92,31 +98,41 @@ Refer to these data types for decoded transaction and renewal information payloa
 ### Price increase status
 - [type priceIncreaseStatus](priceincreasestatus.md)
   The status that indicates whether an auto-renewable subscription is subject to a price increase.
-### Revocation date and reason
+### Revocation
 - [type revocationDate](revocationdate.md)
   The UNIX time, in milliseconds, that the App Store refunded the transaction or revoked it from Family Sharing.
 - [type revocationReason](revocationreason.md)
   The reason for a refunded transaction.
+- [type revocationPercentage](revocationpercentage.md)
+  The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
+- [type revocationType](revocationtype.md)
+  The type of the refund or revocation that applies to the transaction.
 ### Transaction reason
 - [type transactionReason](transactionreason.md)
   The cause of a purchase transaction, which indicates whether it’s a customer’s purchase or a renewal for an auto-renewable subscription that the system initiates.
-### JWS signature date
+### JSON Web Signature (JWS) date
 - [type signedDate](signeddate.md)
   The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
+- [type receiptCreationDate](receiptcreationdate.md)
+  The date that the App Store signs a JSON Web Signature (JWS) app transaction.
 ### Advanced Commerce API data
 - [Data types for Advanced Commerce API](advancedcommerce-datatypes.md)
-  Objects and data types for transaction that use the Advanced Commerce API.
+  Objects and data types for transactions that use the Advanced Commerce API.
 
 ## See Also
 
-- [type JWSTransaction](jwstransaction.md)
-  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
-  Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
 - [object JWSDecodedHeader](jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
+- [type JWSAppTransaction](jwsapptransaction.md)
+  App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
+- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+  A decoded payload that contains app transaction information.
+- [type JWSTransaction](jwstransaction.md)
+  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 - [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)
   A decoded payload that contains transaction information.
+- [type JWSRenewalInfo](jwsrenewalinfo.md)
+  Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
 - [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
 

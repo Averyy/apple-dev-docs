@@ -22,9 +22,9 @@ var kvImageHighQualityResampling: Int { get }
 
 ## Mentions
 
-- [Resampling in vImage](resampling-in-vimage.md)
 - [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
 - [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Resampling in vImage](resampling-in-vimage.md)
 
 #### Discussion
 

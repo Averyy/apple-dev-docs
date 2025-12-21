@@ -22,7 +22,7 @@ var isRunning: Bool { get }
 
 #### Discussion
 
-This property reflects whether the animation is running either in the forward or reverse direction. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) only after a call to the [`startAnimation()`](uiviewanimating/startanimation().md) method. The value is [`false`](https://developer.apple.com/documentation/swift/false) when the animator is paused or stopped.
+This property reflects whether the animation is running either in the forward or reverse direction. The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) only after a call to the [`startAnimation()`](uiviewanimating/startanimation().md) method. The value is [`false`](https://developer.apple.com/documentation/Swift/false) when the animator is paused or stopped.
 
 ## See Also
 

@@ -16,7 +16,7 @@ optional func drawerShouldClose(_ sender: NSDrawer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the drawer to close; [`false`](https://developer.apple.com/documentation/swift/false) to prevent it from closing.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the drawer to close; [`false`](https://developer.apple.com/documentation/Swift/false) to prevent it from closing.
 
 #### Discussion
 

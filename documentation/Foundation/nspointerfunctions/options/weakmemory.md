@@ -30,14 +30,6 @@ static var weakMemory: NSPointerFunctions.Options { get }
   Take no action when pointers are deleted.
 - [static var strongMemory: NSPointerFunctions.Options](nspointerfunctions/options/strongmemory.md)
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
-- [static var machVirtualMemory: NSPointerFunctions.Options](nspointerfunctions/options/machvirtualmemory.md)
-  Use Mach memory.
-- [static var mallocMemory: NSPointerFunctions.Options](nspointerfunctions/options/mallocmemory.md)
-  Use `free()` on removal, `calloc()` on copy in.
-- [static var opaqueMemory: NSPointerFunctions.Options](nspointerfunctions/options/opaquememory.md)
-  Take no action when pointers are deleted.
-- [static var strongMemory: NSPointerFunctions.Options](nspointerfunctions/options/strongmemory.md)
-  Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
 - [let NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
   Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
 - [let NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)

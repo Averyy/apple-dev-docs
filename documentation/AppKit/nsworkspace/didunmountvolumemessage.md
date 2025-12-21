@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,8 +19,6 @@ struct DidUnmountVolumeMessage
 ### Instance Properties
 - [var localizedVolumeName: String](nsworkspace/didunmountvolumemessage/localizedvolumename.md)
 - [var volumeURL: URL](nsworkspace/didunmountvolumemessage/volumeurl.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidUnmountVolumeMessage) -> Notification](nsworkspace/didunmountvolumemessage/makenotification(_:).md)
 
 ## Relationships
 

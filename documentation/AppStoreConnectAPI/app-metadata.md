@@ -15,6 +15,8 @@ Manage the metadata of apps in App Store Connect.
   Manage versions of your app that are available in App Store.
 - [App Store Version Localizations](app-store-version-localizations.md)
   Create and maintain version-specific App Store metadata that’s localized.
+- [App tags](app-tags.md)
+  Read or modify Apple created app tags.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
 - [Accessibility declarations](accessibility-declarations.md)
@@ -36,8 +38,8 @@ Manage the metadata of apps in App Store Connect.
 ### Managing Categories and Age Declarations
 - [App Categories](app-categories.md)
   Get App Store categories and subcategories for apps.
-- [Age Rating Declarations](age-rating-declarations.md)
-  Update required declarations that determine your app’s age rating.
+- [Age Ratings](age-ratings.md)
+  Read and update age ratings and declarations for your app.
 ### Managing License Agreements
 - [End User License Agreements (EULA)](end-user-license-agreements-eula.md)
   Manage custom End User License Agreements (EULA) that are related to territories.

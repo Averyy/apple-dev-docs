@@ -21,13 +21,13 @@ optional func textView(_ textView: UITextView, shouldInteractWith URL: URL, in c
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if interaction with the URL should be allowed; [`false`](https://developer.apple.com/documentation/swift/false) if interaction should not be allowed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if interaction with the URL should be allowed; [`false`](https://developer.apple.com/documentation/Swift/false) if interaction should not be allowed.
 
 #### Discussion
 
 This method is called on only the first interaction with the URL link. For example, this method is called when the user wants their first interaction with a URL to display a list of actions they can take; if the user chooses an open action from the list, this method is not called, because “open” represents the second interaction with the same URL.
 
-> ❗ **Important**:  Links in text views are interactive only if the text view is selectable but noneditable. That is, if the value of the [`UITextView`](uitextview.md) [`isSelectable`](uitextview/isselectable.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`isEditable`](uitextview/iseditable.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+> ❗ **Important**:  Links in text views are interactive only if the text view is selectable but noneditable. That is, if the value of the [`UITextView`](uitextview.md) [`isSelectable`](uitextview/isselectable.md) property is [`true`](https://developer.apple.com/documentation/Swift/true) and the [`isEditable`](uitextview/iseditable.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

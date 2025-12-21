@@ -28,7 +28,7 @@ Use this property to simulate effects such as rain—one particle system simulat
 
 The default value of this property is `nil`, specifying that no additional systems are added to the scene on particle collision.
 
-> ❗ **Important**:  Adding a new particle system to the scene for each collision can drastically increase the total number of rendered particles. To maintain adequate rendering performance, set the [`loops`](scnparticlesystem/loops.md) property to [`false`](https://developer.apple.com/documentation/swift/false) for any particle system you assign to the [`systemSpawnedOnCollision`](scnparticlesystem/systemspawnedoncollision.md) property.
+> ❗ **Important**:  Adding a new particle system to the scene for each collision can drastically increase the total number of rendered particles. To maintain adequate rendering performance, set the [`loops`](scnparticlesystem/loops.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) for any particle system you assign to the [`systemSpawnedOnCollision`](scnparticlesystem/systemspawnedoncollision.md) property.
 
 ## See Also
 

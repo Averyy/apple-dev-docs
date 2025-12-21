@@ -6,9 +6,9 @@
 A configuration object that enables optical flow on a frame processing session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 15.4+
 
 ## Declaration
@@ -51,6 +51,7 @@ class VTOpticalFlowConfiguration
 - [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
 ### Type Properties
 - [class var isSupported: Bool](vtopticalflowconfiguration/issupported.md)
+  Reports whether the system supports this processor.
 
 ## Relationships
 

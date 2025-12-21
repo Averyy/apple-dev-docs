@@ -49,7 +49,6 @@ Pass the [`audioBufferListAssure16ByteAlignment`](cmsamplebuffer/flags/audiobuff
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 
 
 ---

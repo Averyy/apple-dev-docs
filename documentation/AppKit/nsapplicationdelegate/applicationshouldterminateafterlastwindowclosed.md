@@ -17,13 +17,13 @@ optional func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplic
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the application should not be terminated when its last window is closed; otherwise, [`true`](https://developer.apple.com/documentation/swift/true) to terminate the application.
+[`false`](https://developer.apple.com/documentation/Swift/false) if the application should not be terminated when its last window is closed; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true) to terminate the application.
 
 #### Discussion
 
 The application sends this message to your delegate when the application’s last window is closed. It sends this message regardless of whether there are still panels open. (A panel in this case is defined as being an instance of `NSPanel` or one of its subclasses.)
 
-If your implementation returns [`false`](https://developer.apple.com/documentation/swift/false), control returns to the main event loop and the application is not terminated. If you return [`true`](https://developer.apple.com/documentation/swift/true), your delegate’s [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md) method is subsequently invoked to confirm that the application should be terminated.
+If your implementation returns [`false`](https://developer.apple.com/documentation/Swift/false), control returns to the main event loop and the application is not terminated. If you return [`true`](https://developer.apple.com/documentation/Swift/true), your delegate’s [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md) method is subsequently invoked to confirm that the application should be terminated.
 
 ## Parameters
 

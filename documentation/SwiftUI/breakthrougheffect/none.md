@@ -6,7 +6,7 @@
 The element is clipped by occluding content. This is not supported when used to customize a sheet breakthrough effect.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

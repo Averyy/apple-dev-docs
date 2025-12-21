@@ -34,14 +34,6 @@ This sequence eagerly stores the results of preprocessing a temporal estimator.
   The stored temporal feature count.
 - [var features: [TemporalFeature<Feature>]](preprocessedfeaturesequence/features.md)
   The stored temporal features.
-### Creating an iterator
-- [func makeAsyncIterator() -> PreprocessedFeatureSequence<Feature>.AsyncIterator](preprocessedfeaturesequence/makeasynciterator.md)
-  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-### Type Aliases
-- [PreprocessedFeatureSequence.Element](preprocessedfeaturesequence/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](preprocessedfeaturesequence/asyncsequence-implementations.md)
 
 ## Relationships
 

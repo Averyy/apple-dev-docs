@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Presents an Open dialog and delivers the results to a completion handler as an array of URLs for the chosen files (or `nil`).
+Presents an Open dialog and delivers the results to a completion handler as an array of URLs for the chosen files, or nil.
 
 **Availability**:
 - macOS 10.8+
@@ -38,9 +38,9 @@ If you override this method, your method should typically call the underlying me
 - [func runModalOpenPanel(NSOpenPanel, forTypes: [String]?) -> Int](nsdocumentcontroller/runmodalopenpanel(_:fortypes:).md)
   Presents a modal Open dialog and limits selection to specific file types.
 - [var currentDirectory: String?](nsdocumentcontroller/currentdirectory.md)
-  The directory path to be used as the starting point in the Open panel.
+  The directory path to use as the starting point in the Open dialog.
 - [func urlsFromRunningOpenPanel() -> [URL]?](nsdocumentcontroller/urlsfromrunningopenpanel.md)
-  An array of URLs corresponding to the files selected in a running open panel.
+  An array of URLs that correspond to the selected files in a running Open dialog.
 
 
 ---

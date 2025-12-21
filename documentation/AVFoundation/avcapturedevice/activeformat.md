@@ -19,6 +19,10 @@ The capture format in use by the device.
 var activeFormat: AVCaptureDevice.Format { get set }
 ```
 
+## Mentions
+
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+
 #### Discussion
 
 In iOS, a device’s active format and a capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) are mutually exclusive. If you set a device’s active format, the session to which it’s attached changes its preset to [`inputPriority`](avcapturesession/preset/inputpriority.md). Likewise if you set a preset on a capture session, the session assumes control of its input devices, and configures their active format appropriately.

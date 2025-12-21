@@ -3,14 +3,14 @@
 **Framework**: WebKit  
 **Kind**: property
 
-Indicates whether you can inspect the view with Safari Web Inspector.
+Indicates whether you can inspect the page with Safari Web Inspector.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ final var isInspectable: Bool { get set }
 
 #### Discussion
 
-Set to true at any point in the view’s lifetime to allow Safari Web Inspector access to inspect the view’s content. Then, select your view in Safari’s Develop menu for either your computer or an attached device to inspect it.
+Set to `true` at any point in the page’s lifetime to allow Safari Web Inspector access to inspect the view’s content. Then, select your view in Safari’s Develop menu for either your computer or an attached device to inspect it.
 
 If you set this value to false during inspection, the system immediately closes Safari Web Inspector and does not provide any further information about the web content.
 
@@ -36,7 +36,7 @@ The default value of this property is `false`.
 - [var url: URL?](webpage/url.md)
   The URL for the current webpage.
 - [var mediaType: WebPage.CSSMediaType?](webpage/mediatype.md)
-  The media type for the contents of the web view.
+  The media type for the contents of the webpage.
 - [var customUserAgent: String?](webpage/customuseragent.md)
   The custom user agent string.
 - [var serverTrust: SecTrust?](webpage/servertrust.md)
@@ -48,7 +48,7 @@ The default value of this property is `false`.
 - [var isBlockedByScreenTime: Bool](webpage/isblockedbyscreentime.md)
   Indicates whether Screen Time blocking has occurred.
 - [var isWritingToolsActive: Bool](webpage/iswritingtoolsactive.md)
-  Indicates whether Writing Tools is active for the view.
+  Indicates whether Writing Tools is active for the page.
 
 
 ---

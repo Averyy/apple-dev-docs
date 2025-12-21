@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var SEC_OS_OSX_INCLUDES: Bool { get }
+var SEC_OS_OSX_INCLUDES: Int32 { get }
 ```
 
 

@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The element’s orientation, which can have the value [`horizontal`](nsaccessibility-swift.struct/orientationvalue/horizontal.md) or  [`vertical`](nsaccessibility-swift.struct/orientationvalue/vertical.md).
+The element’s orientation.
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ The element’s orientation, which can have the value [`horizontal`](nsaccessibi
 ```swift
 static let orientation: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+The value can be [`horizontal`](nsaccessibility-swift.struct/orientationvalue/horizontal.md) or [`vertical`](nsaccessibility-swift.struct/orientationvalue/vertical.md).
 
 ## See Also
 

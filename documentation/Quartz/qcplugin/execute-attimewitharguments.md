@@ -16,7 +16,7 @@ func execute(_ context: (any QCPlugInContext)!, atTime time: TimeInterval, withA
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) indicates the custom patch was not able to execute successfully. In this case, the Quartz Composer engine stops rendering the current frame.
+[`false`](https://developer.apple.com/documentation/Swift/false) indicates the custom patch was not able to execute successfully. In this case, the Quartz Composer engine stops rendering the current frame.
 
 #### Discussion
 

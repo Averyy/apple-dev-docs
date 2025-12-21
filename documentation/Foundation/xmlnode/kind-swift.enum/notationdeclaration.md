@@ -41,12 +41,6 @@ case notationDeclaration
   Specifies an attribute-list declaration node.
 - [XMLNode.Kind.elementDeclaration](xmlnode/kind-swift.enum/elementdeclaration.md)
   Specifies an element declaration node.
-- [XMLNode.Kind.invalid](xmlnode/kind-swift.enum/invalid.md)
-  Indicates a node object created without a valid kind being specified (as returned by the [`kind`](xmlnode/kind-swift.property.md) method).
-- [XMLNode.Kind.document](xmlnode/kind-swift.enum/document.md)
-  Specifies a document node.
-- [XMLNode.Kind.element](xmlnode/kind-swift.enum/element.md)
-  Specifies an element node.
 
 
 ---

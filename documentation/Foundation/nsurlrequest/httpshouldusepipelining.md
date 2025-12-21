@@ -22,7 +22,7 @@ var httpShouldUsePipelining: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the request should continue transmitting data; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the request should continue transmitting data; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

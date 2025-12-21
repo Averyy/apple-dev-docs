@@ -117,6 +117,8 @@ Use UTF-16 encoding for non-ASCII characters.
   Distribute a pass to your users or update an existing pass.
 - [object Pass](pass.md)
   An object that represents a pass.
+- [object PassFields](passfields.md)
+  An object that represents the groups of fields that display information on the front and back of a pass.
 
 
 ---

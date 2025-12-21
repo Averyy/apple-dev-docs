@@ -28,7 +28,7 @@ It’s also possible to return `false` from the presentation delegate’s [`pres
 
 ##### Explain Why the User Cant Dismiss a Presentation
 
-To perform an action when the user attempts to dismiss a presentation that has a disabled dismissal, set the presentation’s delegate as the code below shows:
+To perform an action when the user attempts to dismiss a presentation that has disabled dismissal, set the presentation’s delegate as the code below shows:
 
 ```swift
 // Set the editViewController to be the delegate of the presentationController for this presentation.

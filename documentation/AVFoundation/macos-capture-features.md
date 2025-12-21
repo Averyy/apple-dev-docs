@@ -1,4 +1,4 @@
-# macOS Capture Features
+# macOS capture features
 
 **Framework**: AVFoundation
 
@@ -6,7 +6,7 @@ Control the transport behavior and input sources of capture hardware in macOS.
 
 ## Topics
 
-### Controlling Transport Behavior
+### Controlling transport behavior
 - [var transportControlsSupported: Bool](avcapturedevice/transportcontrolssupported.md)
   A Boolean value that indicates whether the device supports transport control commands.
 - [var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode](avcapturedevice/transportcontrolsplaybackmode-swift.property.md)
@@ -19,14 +19,14 @@ Control the transport behavior and input sources of capture hardware in macOS.
   The current playback speed.
 - [AVCaptureDevice.TransportControlsSpeed](avcapturedevice/transportcontrolsspeed-swift.typealias.md)
   A constant that specifies speed of transport controls.
-### Configuring Input Sources
+### Configuring input sources
 - [var inputSources: [AVCaptureDevice.InputSource]](avcapturedevice/inputsources.md)
   An array of input sources that the device supports.
 - [var activeInputSource: AVCaptureDevice.InputSource?](avcapturedevice/activeinputsource.md)
   The currently active input source of the device.
 - [AVCaptureDevice.InputSource](avcapturedevice/inputsource.md)
   A distinct input source on a capture device.
-### Accessing Linked Devices
+### Accessing linked devices
 - [var linkedDevices: [AVCaptureDevice]](avcapturedevice/linkeddevices.md)
   An array of capture devices that are physically linked to a device.
 

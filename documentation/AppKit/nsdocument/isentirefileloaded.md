@@ -17,11 +17,11 @@ var isEntireFileLoaded: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document’s entire file is loaded into memory; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the document’s entire file is loaded into memory; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which signifies that the entire file is loaded into memory. You can override this property to return [`false`](https://developer.apple.com/documentation/swift/false) if additional data needs to be read from the file. `NSDocument` may use this value to do things like prevent volume ejection or warn the user when a partially loaded file disappears from the file system.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which signifies that the entire file is loaded into memory. You can override this property to return [`false`](https://developer.apple.com/documentation/Swift/false) if additional data needs to be read from the file. `NSDocument` may use this value to do things like prevent volume ejection or warn the user when a partially loaded file disappears from the file system.
 
 ## See Also
 

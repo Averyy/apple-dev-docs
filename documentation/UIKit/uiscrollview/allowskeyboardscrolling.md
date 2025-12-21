@@ -20,9 +20,9 @@ var allowsKeyboardScrolling: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view animates its content offset in response to input from hardware keyboard keys like Page Up, Page Down, Home, End, and the arrow keys. The scroll view needs to have focus or be first responder to receive these key events.
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view animates its content offset in response to input from hardware keyboard keys like Page Up, Page Down, Home, End, and the arrow keys. The scroll view needs to have focus or be first responder to receive these key events.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) for apps that link against iOS 17 and later. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) to disable the ability to scroll content with hardware keyboard keys.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true) for apps that link against iOS 17 and later. Set this value to [`false`](https://developer.apple.com/documentation/Swift/false) to disable the ability to scroll content with hardware keyboard keys.
 
 
 ---

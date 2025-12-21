@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the annotation view ignores touch events and isn’t selectable. Subclasses may also display the annotation contents differently depending on the value of this property.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the annotation view ignores touch events and isn’t selectable. Subclasses may also display the annotation contents differently depending on the value of this property.
 
 ## See Also
 

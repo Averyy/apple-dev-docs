@@ -17,7 +17,7 @@ var automaticallyAdjustsContentInsets: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), and the clip view is used as the [`contentView`](nsscrollview/contentview.md) of an [`NSScrollView`](nsscrollview.md), the clip view automatically accounts for other scroll view subviews, such as rulers and headers. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), and the clip view is used as the [`contentView`](nsscrollview/contentview.md) of an [`NSScrollView`](nsscrollview.md), the clip view automatically accounts for other scroll view subviews, such as rulers and headers. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

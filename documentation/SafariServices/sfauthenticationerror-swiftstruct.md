@@ -21,7 +21,8 @@ struct SFAuthenticationError
 - [static var canceledLogin: SFAuthenticationError.Code](sfauthenticationerror-swift.struct/canceledlogin.md)
 - [static var errorDomain: String](sfauthenticationerror-swift.struct/errordomain.md)
 ### Enumerations
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
+  Messages that describe an authentication error.
 
 ## Relationships
 
@@ -41,7 +42,8 @@ struct SFAuthenticationError
   Messages that describe a content blocker error.
 - [class SFAuthenticationSession](sfauthenticationsession.md)
   A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
+  Messages that describe an authentication error.
 - [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
   The domain for authentication errors.
 

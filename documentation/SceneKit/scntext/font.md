@@ -17,7 +17,7 @@ The font that SceneKit uses to create geometry from the text.
 ## Declaration
 
 ```swift
-var font: UIFont! { get set }
+var font: NSFont! { get set }
 ```
 
 #### Discussion

@@ -20,10 +20,10 @@ enum CXTranslationEngine
 ### Types
 - [CXTranslationEngine.default](cxtranslationengine/default.md)
   The translation was provided by the system’s default translation engine.
-- [CXTranslationEngine.external](cxtranslationengine/external.md)
-  The translation was provided by an external translation engine.
+### Enumeration Cases
+- [CXTranslationEngine.custom](cxtranslationengine/custom.md)
 ### Initializers
-- [init?(rawValue: UInt)](cxtranslationengine/init(rawvalue:).md)
+- [init?(rawValue: Int)](cxtranslationengine/init(rawvalue:).md)
 
 ## Relationships
 
@@ -34,11 +34,6 @@ enum CXTranslationEngine
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [func fulfill(with: CXTranslationEngine)](cxsettranslatingcallaction/fulfill(with:).md)
-  Reports that the translation action was successful.
 
 
 ---

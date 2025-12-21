@@ -6,7 +6,7 @@
 The index of the view’s texture in an array-based texture type.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

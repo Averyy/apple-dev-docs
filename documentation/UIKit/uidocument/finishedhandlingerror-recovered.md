@@ -14,7 +14,6 @@ Tells UIKit that you finished handling the error.
 ## Declaration
 
 ```swift
-@MainActor
 func finishedHandlingError(_ error: any Error, recovered: Bool)
 ```
 

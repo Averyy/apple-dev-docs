@@ -20,15 +20,15 @@ let MTLBufferLayoutStrideDynamic: Int
 ## See Also
 
 - [class MTLVertexDescriptor](mtlvertexdescriptor.md)
-  An object that describes how to organize and map data to a vertex function.
+  An instance that describes how to organize and map data to a vertex function.
 - [class MTLVertexAttributeDescriptor](mtlvertexattributedescriptor.md)
   An object that determines how to store attribute data in memory and map it to the arguments of a vertex function.
 - [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
-  An array of vertex attribute descriptor objects.
+  An array of vertex attribute descriptor instances.
 - [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
 - [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
-  An array of vertex buffer layout descriptor objects.
+  An array of vertex buffer layout descriptor instances.
 
 
 ---

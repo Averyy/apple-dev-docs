@@ -6,11 +6,11 @@
 A tool call containing a tool name and the arguments to invoke it with.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,8 +20,6 @@ case toolCalls(Transcript.ToolCalls)
 
 ## See Also
 
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [case instructions(Transcript.Instructions)](transcript/entry/instructions(_:).md)
   Instructions, typically provided by you, the developer.
 - [case prompt(Transcript.Prompt)](transcript/entry/prompt(_:).md)

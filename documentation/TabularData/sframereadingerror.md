@@ -39,7 +39,6 @@ enum SFrameReadingError
   An error that indicates the scalable data frame contains an unknown or unsupported data type.
 ### Default Implementations
 - [CustomStringConvertible Implementations](sframereadingerror/customstringconvertible-implementations.md)
-- [Error Implementations](sframereadingerror/error-implementations.md)
 - [LocalizedError Implementations](sframereadingerror/localizederror-implementations.md)
 
 ## Relationships

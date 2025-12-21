@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: class
 
+A clinical coding that represents a medical concept using a standardized coding system.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,16 +21,22 @@ class HKClinicalCoding
 
 #### Overview
 
-Typically represents a single abstract concept within a coding system. This model is closely related to the FHIR model for codings. (https://build.fhir.org/datatypes.html#Coding)
+A clinical coding pairs a [`system`](hkclinicalcoding/system.md), an optional [`version`](hkclinicalcoding/version.md), and a [`code`](hkclinicalcoding/code.md) which identify a medical concept.
+
+This model is closely related to the [`FHIR Coding model`](https://developer.apple.comhttps://build.fhir.org/datatypes.html#Coding).
 
 ## Topics
 
 ### Initializers
 - [init(system: String, version: String?, code: String)](hkclinicalcoding/init(system:version:code:).md)
+  Creates a clinical coding with the specified system, version, and code.
 ### Instance Properties
 - [var code: String](hkclinicalcoding/code.md)
+  The clinical code that represents a medical concept inside the coding system.
 - [var system: String](hkclinicalcoding/system.md)
+  The string that identifies the coding system that defines this clinical code.
 - [var version: String?](hkclinicalcoding/version.md)
+  The version of the coding system.
 
 ## Relationships
 
@@ -50,16 +58,19 @@ Typically represents a single abstract concept within a coding system. This mode
 ## See Also
 
 - [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+  A unique identifier for a specific health concept within a domain.
 - [class HKMedicationConcept](hkmedicationconcept.md)
+  An object that describes a specific medication concept.
 - [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
 - [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
 - [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+  A reference to the tracked medication and the details a person can customize.
 - [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
 - [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
 - [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
-  Represents the domain of a HKHealthConceptIdentifier
+  A domain that represents a health concept.
 - [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
-  Represents a medications general form.
+  The manufactured form of a medication.
 - [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
 
 

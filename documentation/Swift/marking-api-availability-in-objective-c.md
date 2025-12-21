@@ -2,13 +2,13 @@
 
 **Framework**: Swift
 
-Use `a` macro to denote the availability of an Objective-C API.
+Use a macro to denote the availability of an Objective-C API.
 
 #### Overview
 
 In Swift, you use the `@available` attribute to control whether a declaration is available to use when building an app for a particular target platform. Similarly, you use the availability condition `#available` to execute code conditionally based on required platform and version conditions. Both kinds of availability specifier are also available in Objective-C.
 
-For detailed information about specifying platform availability, see [`Declaration Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Attributes.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+For detailed information about specifying and checking platform availability, see [`available`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#available) and [`Checking API Availability`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow#Checking-API-Availability) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
 ##### Mark Availability
 

@@ -25,15 +25,15 @@ This object always provides depth data in the format expressed by the source [`A
 
 ## Topics
 
-### Creating a Depth Data Output
+### Creating a depth data output
 - [init()](avcapturedepthdataoutput/init.md)
   Initializes a depth data output object.
-### Configuring Depth Data Capture
+### Configuring depth data capture
 - [var alwaysDiscardsLateDepthData: Bool](avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md)
   A Boolean value that determines whether the capture output should discard any depth data that is not processed before the next depth data is captured.
 - [var isFilteringEnabled: Bool](avcapturedepthdataoutput/isfilteringenabled.md)
   A Boolean value that determines whether the depth data output should filter depth data to smooth out noise and fill invalid values.
-### Receiving Captured Depth Data
+### Receiving captured depth data
 - [func setDelegate((any AVCaptureDepthDataOutputDelegate)?, callbackQueue: dispatch_queue_t?)](avcapturedepthdataoutput/setdelegate(_:callbackqueue:).md)
   Designates a delegate object to receive depth data and a dispatch queue for delivering that data.
 - [var delegate: (any AVCaptureDepthDataOutputDelegate)?](avcapturedepthdataoutput/delegate.md)
@@ -57,17 +57,17 @@ This object always provides depth data in the format expressed by the source [`A
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
 - [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying Filters to a Capture Stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming Depth Data from the TrueDepth Camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing Live Video by Leveraging TrueDepth Camera Data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
 - [class AVDepthData](avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.

@@ -18,8 +18,8 @@ protocol ActivityAttributes : Decodable, Encodable
 ## Mentions
 
 - [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 - [Launching your app from a Live Activity](launching-your-app-from-a-live-activity.md)
+- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
 #### Overview
 

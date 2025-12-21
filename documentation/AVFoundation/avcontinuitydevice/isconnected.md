@@ -16,7 +16,7 @@ var isConnected: Bool { get }
 
 #### Discussion
 
-The value of the property can change from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), but not the reverse. Instead, the system creates a new [`AVContinuityDevice`](avcontinuitydevice.md) instance when the same physical device reconnects to the system.
+The value of the property can change from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false), but not the reverse. Instead, the system creates a new [`AVContinuityDevice`](avcontinuitydevice.md) instance when the same physical device reconnects to the system.
 
 
 ---

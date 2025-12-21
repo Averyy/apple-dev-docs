@@ -10,7 +10,7 @@ Creates an anchoring component for a given target, tracking mode and physics sim
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -29,9 +29,7 @@ init(_ target: AnchoringComponent.Target, trackingMode: AnchoringComponent.Track
 
 - [init(AnchoringComponent.Target)](anchoringcomponent/init(_:)-2wng6.md)
   Creates an anchoring component for a given target.
-- [init(_:trackingMode:)](anchoringcomponent/init(_:trackingmode:).md)
-- [init(ARAnchor)](anchoringcomponent/init(_:)-5dney.md)
-  Creates an anchoring component with the given AR anchor.
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchoringcomponent/init(_:trackingmode:).md)
 
 
 ---

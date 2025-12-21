@@ -8,7 +8,7 @@ The error domain associated with errors reported by the System Configuration fra
 
 ### Constants
 - [let kCFErrorDomainSystemConfiguration: CFString](kcferrordomainsystemconfiguration.md)
-  A string constant identifying a Core Foundation error domain. See doc://com.apple.documentation/documentation/corefoundation/cferror-ru8 for further information on error domains.
+  A string constant identifying a Core Foundation error domain. See [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) for further information on error domains.
 
 ## See Also
 

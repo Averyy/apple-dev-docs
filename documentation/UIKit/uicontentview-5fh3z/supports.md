@@ -22,7 +22,7 @@ func supports(_ configuration: any UIContentConfiguration) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view supports this configuration being set to its [`configuration`](uicontentview-5fh3z/configuration.md) property and is capable of updating itself for the configuration; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view supports this configuration being set to its [`configuration`](uicontentview-5fh3z/configuration.md) property and is capable of updating itself for the configuration; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

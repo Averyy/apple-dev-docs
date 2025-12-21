@@ -25,26 +25,18 @@ struct Model
 
 ## Topics
 
-### Instance Properties
+### Getting the stride
 - [var stride: Int](timeseriesclassifier/model/stride.md)
   The number of samples between temporal predictions.
-### Instance Methods
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<Label>](timeseriesclassifier/model/applied(to:eventhandler:)-x9iv.md)
+### Applying and exporting
+- [func applied(to:eventHandler:)](timeseriesclassifier/model/applied(to:eventhandler:).md)
   Performs a classification on a shaped array of input features.
 - [func export(to: URL) throws](timeseriesclassifier/model/export(to:).md)
   Exports this transformer as a CoreML model package.
 - [func export(to: URL, metadata: ModelMetadata) throws](timeseriesclassifier/model/export(to:metadata:).md)
   Exports this transformer as a CoreML model package with user-supplied metadata.
-### Type Aliases
-- [TimeSeriesClassifier.Model.Input](timeseriesclassifier/model/input.md)
-  The input type.
-- [TimeSeriesClassifier.Model.Output](timeseriesclassifier/model/output.md)
-  The output type.
 ### Default Implementations
-- [Decodable Implementations](timeseriesclassifier/model/decodable-implementations.md)
-- [Encodable Implementations](timeseriesclassifier/model/encodable-implementations.md)
 - [TemporalTransformer Implementations](timeseriesclassifier/model/temporaltransformer-implementations.md)
-- [Transformer Implementations](timeseriesclassifier/model/transformer-implementations.md)
 
 ## Relationships
 
@@ -56,6 +48,10 @@ struct Model
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 - [Transformer](transformer.md)
+
+## See Also
+
+- [TimeSeriesClassifier.Configuration](timeseriesclassifier/configuration-swift.typealias.md)
 
 
 ---

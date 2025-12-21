@@ -17,7 +17,6 @@ A scene graph node that serves as a placeholder for content to be loaded from a 
 ## Declaration
 
 ```swift
-@MainActor
 class SCNReferenceNode
 ```
 

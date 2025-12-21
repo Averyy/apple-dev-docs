@@ -22,7 +22,7 @@ class func canHandle(_ request: URLRequest) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a preflight operation determines that a connection with `request` can be created and the associated I/O can be started, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a preflight operation determines that a connection with `request` can be created and the associated I/O can be started, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

@@ -9,6 +9,7 @@ A person’s preferred double-tap action for Apple Pencil, as specified in the S
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 

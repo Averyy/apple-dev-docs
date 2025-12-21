@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates an instance which binds over an arbitrary type, `T`.
+Create an instance which binds over an arbitrary type, `V`.
 
 **Availability**:
 - iOS 13.0+

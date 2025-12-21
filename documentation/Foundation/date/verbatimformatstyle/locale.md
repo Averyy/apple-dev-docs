@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Use system locale if nil or unspecified.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

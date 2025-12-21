@@ -22,8 +22,8 @@ func receive<S>(on scheduler: S, options: S.SchedulerOptions? = nil) -> Publishe
 
 ## Mentions
 
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
 - [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
 
 #### Return Value
 

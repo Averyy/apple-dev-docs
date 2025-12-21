@@ -19,7 +19,7 @@ enum Scroll
 
 ## Topics
 
-### Scroll Values
+### Scroll values
 - [AVCaptionRegion.Scroll.none](avcaptionregion/scroll-swift.enum/none.md)
   A type that indicates no scrolling.
 - [AVCaptionRegion.Scroll.rollUp](avcaptionregion/scroll-swift.enum/rollup.md)

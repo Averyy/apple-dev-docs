@@ -17,9 +17,9 @@ var isHighlighted: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell draws itself with a highlighted appearance. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell draws itself with a highlighted appearance. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Assigning a new value to this property has no effect by default. Subclasses can override the property to provide a highlighting behavior. For example, the [`NSButtonCell`](nsbuttoncell.md) class overrides this property, so that when the value is [`true`](https://developer.apple.com/documentation/swift/true) the button draws the button with a highlight appearance specified by [`NSCell.Attribute.cellLightsByBackground`](nscell/attribute/celllightsbybackground.md), [`NSCell.Attribute.cellLightsByContents`](nscell/attribute/celllightsbycontents.md), or [`NSCell.Attribute.cellLightsByGray`](nscell/attribute/celllightsbygray.md).
+Assigning a new value to this property has no effect by default. Subclasses can override the property to provide a highlighting behavior. For example, the [`NSButtonCell`](nsbuttoncell.md) class overrides this property, so that when the value is [`true`](https://developer.apple.com/documentation/Swift/true) the button draws the button with a highlight appearance specified by [`NSCell.Attribute.cellLightsByBackground`](nscell/attribute/celllightsbybackground.md), [`NSCell.Attribute.cellLightsByContents`](nscell/attribute/celllightsbycontents.md), or [`NSCell.Attribute.cellLightsByGray`](nscell/attribute/celllightsbygray.md).
 
 ## See Also
 

@@ -35,10 +35,10 @@ Use [`makeConnectable()`](publisher/makeconnectable().md) to create a [`Connecta
 
 ## Topics
 
-### Performing Explicit Connections
+### Performing explicit connections
 - [func connect() -> any Cancellable](connectablepublisher/connect.md)
   Connects to the publisher, allowing it to produce elements, and returns an instance with which to cancel publishing.
-### Connecting Automatically
+### Connecting automatically
 - [func autoconnect() -> Publishers.Autoconnect<Self>](connectablepublisher/autoconnect.md)
   Automates the process of connecting or disconnecting from this connectable publisher.
 

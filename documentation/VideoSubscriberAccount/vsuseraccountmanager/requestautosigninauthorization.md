@@ -6,9 +6,9 @@
 Presents a modal sheet that offers a person to opt in to Automatic Sign-In.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 

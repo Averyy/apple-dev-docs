@@ -1,4 +1,4 @@
-# Configuring Camera Capture to Collect a Portrait Effects Matte
+# Configuring camera capture to collect a Portrait Effects matte
 
 **Framework**: AVFoundation
 

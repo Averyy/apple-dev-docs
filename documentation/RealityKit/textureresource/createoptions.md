@@ -10,7 +10,7 @@ An object that holds texture resource creation options.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -30,16 +30,17 @@ struct CreateOptions
 - [var semantic: TextureResource.Semantic?](textureresource/createoptions/semantic.md)
   The intended use of the texture.
 ### Initializers
-- [init(semantic:compression:mipmapsMode:)](textureresource/createoptions/init(semantic:compression:mipmapsmode:).md)
+- [init(semantic: TextureResource.Semantic?, compression: TextureResource.Compression, mipmapsMode: TextureResource.MipmapsMode)](textureresource/createoptions/init(semantic:compression:mipmapsmode:).md)
   Creates a texture creation options structure.
 ### Instance Properties
-- [var compression: TextureResource.Compression](textureresource/createoptions/compression-4mnmx.md)
-- [var compression: TextureResource.Compression](textureresource/createoptions/compression-95t4y.md)
+- [var compression: TextureResource.Compression](textureresource/createoptions/compression.md)
 
 ## See Also
 
 - [class TextureResource](textureresource.md)
   A representation of a texture.
+- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+  An object for controlling the texture-sampling quality.
 - [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
 - [TextureResource.Semantic](textureresource/semantic-swift.enum.md)

@@ -19,7 +19,7 @@ var sampleBufferWasDropped: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), sample buffers were captured for this synchronization point but could not be delivered. This situation differs from that where no sample buffer capture for the synchronization timestamp occurs. In that case, there is no [`AVCaptureSynchronizedSampleBufferData`](avcapturesynchronizedsamplebufferdata.md) object present in the [`AVCaptureSynchronizedDataCollection`](avcapturesynchronizeddatacollection.md) object delivered to your delegate method.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), sample buffers were captured for this synchronization point but could not be delivered. This situation differs from that where no sample buffer capture for the synchronization timestamp occurs. In that case, there is no [`AVCaptureSynchronizedSampleBufferData`](avcapturesynchronizedsamplebufferdata.md) object present in the [`AVCaptureSynchronizedDataCollection`](avcapturesynchronizeddatacollection.md) object delivered to your delegate method.
 
 ## See Also
 

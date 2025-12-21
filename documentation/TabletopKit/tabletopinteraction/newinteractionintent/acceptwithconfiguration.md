@@ -12,6 +12,10 @@
 case acceptWithConfiguration(TabletopInteraction.Configuration)
 ```
 
+## See Also
+
+- [TabletopInteraction.NewInteractionIntent.reject](tabletopinteraction/newinteractionintent/reject.md)
+
 
 ---
 

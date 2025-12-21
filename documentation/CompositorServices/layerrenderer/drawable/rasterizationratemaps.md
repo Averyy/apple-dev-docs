@@ -6,7 +6,7 @@
 The rasterization rate maps to use when rendering the frame.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

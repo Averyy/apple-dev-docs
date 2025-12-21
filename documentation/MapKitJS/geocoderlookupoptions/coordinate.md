@@ -11,7 +11,7 @@ Coordinates for constraining the lookup results.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate coordinate;
+coordinate?: Coordinate;
 ```
 
 #### Discussion

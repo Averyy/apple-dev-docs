@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The event repeats indefinitely
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

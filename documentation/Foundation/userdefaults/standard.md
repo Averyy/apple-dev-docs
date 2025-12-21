@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Returns the shared defaults object.
+The shared defaults object for the current app.
 
 **Availability**:
 - iOS 2.0+
@@ -22,24 +22,20 @@ class var standard: UserDefaults { get }
 
 #### Return Value
 
-The shared defaults object.
+The shared defaults object for the app.
 
 #### Discussion
 
-If the shared defaults object doesn’t yet exist, it’s created with a search list containing the names of the following domains, in this order:
+Each app maintains a single, shared defaults object for you to use in your code. The first time your app retrieves the value of this property, it creates the shared object and caches the result. Subsequent retrieval attempts return the cached object.
 
-- For managed devices only, a domain containing defaults set by an administrator
-- [`argumentDomain`](userdefaults/argumentdomain.md), consisting of defaults parsed from the application’s arguments
-- For managed devices by an educational institution only, a domain containing defaults set in the iCloud key-value store
-- A domain identified by the application’s bundle identifier
-- [`globalDomain`](userdefaults/globaldomain.md), consisting of defaults meant to be seen by all applications
-- [`registrationDomain`](userdefaults/registrationdomain.md), a set of temporary defaults whose values can be set by the application to ensure that searches will always be successful
-
-The defaults are initialized for the current user. Subsequent modifications to the standard search list remain in effect even when this method is invoked again—the search list is guaranteed to be standard only the first time this method is invoked.
+The shared object retrieves settings from all of the standard domains. If you add a domain using the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method, the object retrieves values from that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or the app exits. When you write settings using the shared object, it writes them to the current app’s settings.
 
 ## See Also
 
-- [Preferences and Settings Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html#//apple_ref/doc/uid/10000059i)
+- [convenience init()](userdefaults/init.md)
+  Creates a new defaults object and initializes it with the app’s current settings.
+- [init?(suiteName: String?)](userdefaults/init(suitename:).md)
+  Creates a new defaults object and initializes it with the settings from the specified database.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: enum
 
+A type that represents the result of the requested binary large object operation.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,9 +20,16 @@ enum OperationResult
 
 ## Topics
 
-### Enumeration Cases
+### Results
 - [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.read(data:)](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult/read(data:).md)
+  A result that represents data the system reads from the blob.
 - [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.write(success:)](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult/write(success:).md)
+  A result that represents data the system writes to the blob.
+
+## See Also
+
+- [var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/result.md)
+  The result of the requested large binary object operation.
 
 
 ---

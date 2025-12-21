@@ -21,7 +21,7 @@ var highlightedTextColor: UIColor? { get set }
 
 #### Discussion
 
-Subclasses that use labels to implement a type of text button can use the value in this property when drawing the pressed state for the button. The label uses this value to display text whenever the [`isHighlighted`](uilabel/ishighlighted.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+Subclasses that use labels to implement a type of text button can use the value in this property when drawing the pressed state for the button. The label uses this value to display text whenever the [`isHighlighted`](uilabel/ishighlighted.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The default value of this property is `nil`.
 

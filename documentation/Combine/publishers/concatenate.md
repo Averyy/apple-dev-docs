@@ -22,30 +22,24 @@ struct Concatenate<Prefix, Suffix> where Prefix : Publisher, Suffix : Publisher,
 
 ## Topics
 
-### Creating a Concatenate Publisher
+### Creating a concatenate publisher
 - [init(prefix: Prefix, suffix: Suffix)](publishers/concatenate/init(prefix:suffix:).md)
   Creates a publisher that emits all of one publisher’s elements before those from another publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Concatenate.Output](publishers/concatenate/output.md)
   The kind of values published by this publisher.
 - [Publishers.Concatenate.Failure](publishers/concatenate/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let prefix: Prefix](publishers/concatenate/prefix.md)
   The publisher to republish, in its entirety, before republishing elements from `suffix`.
 - [let suffix: Suffix](publishers/concatenate/suffix.md)
   The publisher to republish only after `prefix` finishes.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Concatenate<Prefix, Suffix>, Publishers.Concatenate<Prefix, Suffix>) -> Bool](publishers/concatenate/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/concatenate/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-concatenate-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/concatenate/equatable-implementations.md)
-- [Publisher Implementations](publishers/concatenate/publisher-implementations.md)
 
 ## Relationships
 

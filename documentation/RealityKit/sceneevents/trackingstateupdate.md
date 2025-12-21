@@ -6,7 +6,7 @@
 Event that triggers on a change of device tracking state
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,12 @@ struct TrackingStateUpdate
 ## Topics
 
 ### Instance Properties
-- [let current: Scene.AnchoringTrackingState](sceneevents/trackingstateupdate/current.md)
+- [let current: SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/current.md)
   current tracking state of the device
-- [let previous: Scene.AnchoringTrackingState](sceneevents/trackingstateupdate/previous.md)
+- [let previous: SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/previous.md)
   previous tracking state of the device
+### Enumerations
+- [SceneEvents.TrackingStateUpdate.State](sceneevents/trackingstateupdate/state.md)
 
 ## Relationships
 
@@ -28,6 +30,13 @@ struct TrackingStateUpdate
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [SceneEvents.Update](sceneevents/update.md)
+  An event invoked once per frame interval that you can use to execute custom logic for each frame.
+- [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
+  An event invoked when the anchored state of an anchoring entity changes.
 
 
 ---

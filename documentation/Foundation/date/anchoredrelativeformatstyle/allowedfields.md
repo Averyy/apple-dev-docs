@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The fields that can be used in the formatted output.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

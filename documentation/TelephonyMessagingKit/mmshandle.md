@@ -6,8 +6,8 @@
 A structure that represents an MMS address.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -24,12 +24,6 @@ struct MMSHandle
 ### Accessing handle properties
 - [var phoneNumber: String](mmshandle/phonenumber.md)
   The phone number for the handle.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmshandle/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](mmshandle/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

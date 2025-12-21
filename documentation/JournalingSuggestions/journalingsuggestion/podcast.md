@@ -34,9 +34,6 @@ The system provides an instance of this structure to your app when a person choo
 ### Inspecting interaction details
 - [var date: Date?](journalingsuggestion/podcast/date.md)
   The podcast’s recent play date.
-### Type Aliases
-- [JournalingSuggestion.Podcast.JournalingSuggestionContent](journalingsuggestion/podcast/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

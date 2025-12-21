@@ -17,7 +17,6 @@ The exponent for the rate of decay of the light source.
 ## Declaration
 
 ```swift
-@MainActor
 var falloff: CGFloat { get set }
 ```
 

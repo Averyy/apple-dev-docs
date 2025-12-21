@@ -20,9 +20,6 @@ enum Pressure
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Pressure, IntentParameter<Value>.Pressure) -> Bool](intentparameter/pressure/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Pressure.bars](intentparameter/pressure/bars.md)
 - [IntentParameter.Pressure.gigapascals](intentparameter/pressure/gigapascals.md)
@@ -34,15 +31,6 @@ enum Pressure
 - [IntentParameter.Pressure.millimetersOfMercury](intentparameter/pressure/millimetersofmercury.md)
 - [IntentParameter.Pressure.newtonsPerMetersSquared](intentparameter/pressure/newtonspermeterssquared.md)
 - [IntentParameter.Pressure.poundsForcePerSquareInch](intentparameter/pressure/poundsforcepersquareinch.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/pressure/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/pressure/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/pressure/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/pressure/equatable-implementations.md)
 
 ## Relationships
 

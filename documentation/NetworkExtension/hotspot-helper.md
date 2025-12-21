@@ -25,7 +25,7 @@ For more about creating a hotspot helper, see the [`Hotspot Network Subsystem Pr
 - [class NEHotspotNetwork](nehotspotnetwork.md)
   Information about a Wi-Fi network associated with a command or a response.
 ### Hotspot communication
-- [func bind(to command: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
+- [func bind(to: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [In-Provider Networking](in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.

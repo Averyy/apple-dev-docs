@@ -5,11 +5,6 @@
 
 The key to retrieve the location information of the asset.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

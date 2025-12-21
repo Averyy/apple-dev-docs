@@ -21,7 +21,7 @@ var isRotateEnabled: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the framework associates a valid camera with the map, the map uses the camera’s heading angle to rotate the plane of the map around its center point. When this property is [`false`](https://developer.apple.com/documentation/swift/false), the map view ignores the camera’s heading angle and the map orients so that the map view situates true north at the top.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the framework associates a valid camera with the map, the map uses the camera’s heading angle to rotate the plane of the map around its center point. When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the map view ignores the camera’s heading angle and the map orients so that the map view situates true north at the top.
 
 ## See Also
 

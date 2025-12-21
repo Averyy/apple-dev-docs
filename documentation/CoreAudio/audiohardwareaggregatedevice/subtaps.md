@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An array of AudioHardwareTaps for all the subtaps contained in the aggregate device.
+
 **Availability**:
 - macOS 15.0+
 

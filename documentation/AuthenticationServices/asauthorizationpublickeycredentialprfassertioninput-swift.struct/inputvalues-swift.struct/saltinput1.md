@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+A salt for the hashing function.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

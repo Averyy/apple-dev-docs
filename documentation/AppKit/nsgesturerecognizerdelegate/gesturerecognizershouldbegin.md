@@ -17,11 +17,11 @@ optional func gestureRecognizerShouldBegin(_ gestureRecognizer: NSGestureRecogni
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to let the gesture recognizer transition out of the Possible ([`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md)) and continue trying to recognize the gesture or [`false`](https://developer.apple.com/documentation/swift/false) to prevent it from trying to recognize its gesture. If you do not implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) to let the gesture recognizer transition out of the Possible ([`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md)) and continue trying to recognize the gesture or [`false`](https://developer.apple.com/documentation/Swift/false) to prevent it from trying to recognize its gesture. If you do not implement this method, the default return value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-When a gesture recognizer attempts to transition from the Possible ([`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md)) state to a different state, such as [`NSGestureRecognizer.State.began`](nsgesturerecognizer/state-swift.enum/began.md), the gesture recognizer calls this method to see if the transition should occur. Returning [`false`](https://developer.apple.com/documentation/swift/false) from this delegate method causes the gesture recognizer to transition to the [`NSGestureRecognizer.State.failed`](nsgesturerecognizer/state-swift.enum/failed.md) state.
+When a gesture recognizer attempts to transition from the Possible ([`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md)) state to a different state, such as [`NSGestureRecognizer.State.began`](nsgesturerecognizer/state-swift.enum/began.md), the gesture recognizer calls this method to see if the transition should occur. Returning [`false`](https://developer.apple.com/documentation/Swift/false) from this delegate method causes the gesture recognizer to transition to the [`NSGestureRecognizer.State.failed`](nsgesturerecognizer/state-swift.enum/failed.md) state.
 
 For information about gesture states and transitions, see [`State Transitions`](nsgesturerecognizer#State-Transitions.md) in [`NSGestureRecognizer`](nsgesturerecognizer.md).
 

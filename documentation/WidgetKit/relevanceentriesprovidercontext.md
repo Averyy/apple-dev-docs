@@ -6,7 +6,7 @@
 An object that contains details about how a widget is rendered, including its size.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

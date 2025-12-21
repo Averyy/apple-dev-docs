@@ -22,9 +22,6 @@ enum AudioVariant
 
 ## Topics
 
-### Operators
-- [static func == (AudioVariant, AudioVariant) -> Bool](audiovariant/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [AudioVariant.dolbyAtmos](audiovariant/dolbyatmos.md)
   Dolby Atmos is an immersive audio experience that surrounds you with sound from all sides, including above.
@@ -38,23 +35,6 @@ enum AudioVariant
   Lossy stereo uses compression used to store sound data.
 - [AudioVariant.spatialAudio](audiovariant/spatialaudio.md)
   Spatial audio is a fallback mode if the content is Dolby Atmos or Dolby Audio, but hardware capabilities don’t support them.
-### Instance Properties
-- [var hashValue: Int](audiovariant/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](audiovariant/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [AudioVariant.AllCases](audiovariant/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Type Properties
-- [static var allCases: [AudioVariant]](audiovariant/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [CustomStringConvertible Implementations](audiovariant/customstringconvertible-implementations.md)
-- [Decodable Implementations](audiovariant/decodable-implementations.md)
-- [Encodable Implementations](audiovariant/encodable-implementations.md)
-- [Equatable Implementations](audiovariant/equatable-implementations.md)
 
 ## Relationships
 

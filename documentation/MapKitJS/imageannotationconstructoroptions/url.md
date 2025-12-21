@@ -11,7 +11,7 @@ An object containing URLs for the image assets in multiple resolutions.
 ## Declaration
 
 ```swift
-attribute Object url;
+url: ImageDelegate | ImageHashObject;
 ```
 
 #### Discussion

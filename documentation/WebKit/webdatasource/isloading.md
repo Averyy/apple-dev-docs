@@ -16,7 +16,7 @@ var isLoading: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data source is in the process of loading its content; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the data source is in the process of loading its content; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

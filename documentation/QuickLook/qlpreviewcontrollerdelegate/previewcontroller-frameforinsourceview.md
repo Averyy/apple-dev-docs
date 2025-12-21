@@ -35,7 +35,7 @@ The system only invokes this method when your app uses the animation option for 
 [parentController dismissModalViewControllerAnimated: YES];
 ```
 
-If you use Boolean [`false`](https://developer.apple.com/documentation/swift/false) in these statements, the [`QLPreviewController`](qlpreviewcontroller.md) displays the preview full screen immediately, with no transition effect.
+If you use Boolean [`false`](https://developer.apple.com/documentation/Swift/false) in these statements, the [`QLPreviewController`](qlpreviewcontroller.md) displays the preview full screen immediately, with no transition effect.
 
 The preview item, and its origin point, can change while displaying a preview. For example, the user may navigate to a different item using the controller, or may rotate the device. Return the correct origin point when zooming to full screen, and when zooming back to your representation of the item.
 

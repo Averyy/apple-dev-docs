@@ -13,7 +13,6 @@ Applies the layer to a set of input array descriptors, writing the result to a s
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

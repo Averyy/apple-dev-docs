@@ -31,7 +31,7 @@ The framework reassigns all text containers and text views attached to the old l
 - [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
   The text container’s layout manager.
 - [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
-- [weak var textView: NSTextView? { get set }](../AppKit/NSTextContainer/textView.md)
+- [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)
   The text container’s text view.
 
 

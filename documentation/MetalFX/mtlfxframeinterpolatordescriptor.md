@@ -6,11 +6,11 @@
 A set of properties that configure a frame interpolator, and a factory method that creates the effect.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -29,16 +29,12 @@ When you configure this descriptor, set the properties that determine the pixel 
 ### Instance Properties
 - [var colorTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/colortextureformat.md)
   The pixel format of the input color texture for the frame interpolator you create with this descriptor.
-- [var denoiserScaler: (any MTLFXTemporalDenoisedScaler)?](mtlfxframeinterpolatordescriptor/denoiserscaler.md)
-  An optional denoiser scaler for the frame interpolator you create from this descriptor.
-- [var denoiserScaler4: (any MTL4FXTemporalDenoisedScaler)?](mtlfxframeinterpolatordescriptor/denoiserscaler4.md)
-  An optional denoiser scaler for the frame interpolator you create from this descriptor.
 - [var depthTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/depthtextureformat.md)
   The pixel format of the input depth texture for the frame interpolator you create with this descriptor.
 - [var inputHeight: Int](mtlfxframeinterpolatordescriptor/inputheight.md)
-  The height, in pixels, of the input color texture for the frame interpolator.
+  The height, in pixels, of the input motion and depth texture for the frame interpolator.
 - [var inputWidth: Int](mtlfxframeinterpolatordescriptor/inputwidth.md)
-  The width, in pixels, of the input color texture for the frame interpolator.
+  The width, in pixels, of the input motion and depth texture for the frame interpolator.
 - [var motionTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/motiontextureformat.md)
   The pixel format of the input motion texture for the frame interpolator you create with this descriptor.
 - [var outputHeight: Int](mtlfxframeinterpolatordescriptor/outputheight.md)
@@ -47,16 +43,13 @@ When you configure this descriptor, set the properties that determine the pixel 
   The pixel format of the output color texture for the frame interpolator you create with this descriptor.
 - [var outputWidth: Int](mtlfxframeinterpolatordescriptor/outputwidth.md)
   The width, in pixels, of the output color texture for the frame interpolator.
-- [var scaler: (any MTLFXTemporalScaler)?](mtlfxframeinterpolatordescriptor/scaler.md)
-  An optional temporal scaler for the frame interpolator you create from this descriptor.
-- [var scaler4: (any MTL4FXTemporalScaler)?](mtlfxframeinterpolatordescriptor/scaler4.md)
-  An optional temporal scaler for the frame interpolator you create from this descriptor.
+- [var scaler: (any MTLFXFrameInterpolatableScaler)?](mtlfxframeinterpolatordescriptor/scaler.md)
 - [var uiTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/uitextureformat.md)
   The pixel format for the frame interpolator of an input texture containing your game’s custom UI.
 ### Instance Methods
-- [func newFrameInterpolator(with: any MTLDevice) -> (any MTLFXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/newframeinterpolator(with:).md)
+- [func makeFrameInterpolator(device: any MTLDevice) -> (any MTLFXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:).md)
   Creates a frame interpolator instance for a Metal device.
-- [func newFrameInterpolator(with: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/newframeinterpolator(with:compiler:).md)
+- [func makeFrameInterpolator(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:compiler:).md)
   Creates a frame interpolator instance for a Metal device.
 ### Type Methods
 - [class func supportsDevice(any MTLDevice) -> Bool](mtlfxframeinterpolatordescriptor/supportsdevice(_:).md)

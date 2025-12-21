@@ -16,11 +16,11 @@ func removeSubgroup(_ group: ABGroup!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the `group` argument is not a subgroup, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). If `group` is `nil`, this method raises an exception.
+If the `group` argument is not a subgroup, this method does nothing and returns [`false`](https://developer.apple.com/documentation/Swift/false). If `group` is `nil`, this method raises an exception.
 
 ## Parameters
 

@@ -39,7 +39,7 @@ static let activationPoint: NSAccessibility.Attribute
 - [static let columns: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columns.md)
   The table’s columns (`NSArray`).
 - [static let containsProtectedContent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/containsprotectedcontent.md)
-  A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+  A flag that indicates whether the object contains protected content.
 
 
 ---

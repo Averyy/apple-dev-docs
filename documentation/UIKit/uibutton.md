@@ -23,8 +23,8 @@ class UIButton
 
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
-- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
+- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
 
 #### Overview
 

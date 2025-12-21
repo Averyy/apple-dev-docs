@@ -10,7 +10,7 @@ Add a new webhook configuration.
 
 ## Mentions
 
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
+- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 - [Understanding webhook events](webhook-events.md)
 
 ## See Also

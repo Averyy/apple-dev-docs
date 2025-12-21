@@ -6,7 +6,7 @@
 Checks if the session value describes the same drag session as the object provided by AppKit.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

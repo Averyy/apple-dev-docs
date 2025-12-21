@@ -16,7 +16,7 @@ let IKPictureTakerAllowsVideoCaptureKey: String
 
 #### Discussion
 
-The associated value is an `NSNumber` value (`BOOL`) whose default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The associated value is an `NSNumber` value (`BOOL`) whose default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -22,12 +22,12 @@ func CVBufferHasAttachment(_ buffer: CVBuffer, _ key: CFString) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the buffer contains the attachment; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the buffer contains the attachment; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
 - `buffer`: A Core Video buffer to query.
-- `key`: A string that identifies the attachment, which can be of any  doc://com.apple.documentation/documentation/corefoundation/cftype .
+- `key`: A string that identifies the attachment, which can be of any  .
 
 ## See Also
 

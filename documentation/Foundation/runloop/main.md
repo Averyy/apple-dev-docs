@@ -33,7 +33,7 @@ An object representing the main thread’s run loop.
 - [func limitDate(forMode: RunLoop.Mode) -> Date?](runloop/limitdate(formode:).md)
   Performs one pass through the run loop in the specified mode and returns the date at which the next timer is scheduled to fire.
 - [func getCFRunLoop() -> CFRunLoop](runloop/getcfrunloop.md)
-  Returns the receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) object.
+  Returns the receiver’s underlying run loop object.
 - [RunLoop.Mode](runloop/mode.md)
   Modes that a run loop operates in.
 

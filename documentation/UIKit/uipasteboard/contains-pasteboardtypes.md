@@ -19,7 +19,7 @@ func contains(pasteboardTypes: [String]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pasteboard item holds data of the indicated representation type, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the pasteboard item holds data of the indicated representation type, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -8,7 +8,7 @@ A set of methods you use to tell the Font panel to display some or all of its el
 
 ### Constants
 - [Mode Masks](mode-masks.md)
-  The following constants correspond to the available font panel mode masks returned by [`validModesForFontPanel:`](https://developer.apple.com/documentation/objectivec/nsobject/1534415-validmodesforfontpanel).
+  Constants that represent the available font panel mode masks.
 
 ## See Also
 

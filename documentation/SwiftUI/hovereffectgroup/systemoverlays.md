@@ -6,7 +6,7 @@
 A `HoverEffectGroup` that becomes active when system overlays are visible.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

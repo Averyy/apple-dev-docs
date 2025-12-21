@@ -6,7 +6,7 @@
 The object moves as if it is weightless.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

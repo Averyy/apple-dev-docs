@@ -26,8 +26,6 @@ Specifies that representations of measurements are reduced and converted into a 
 
 - [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
 - [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
-- [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
-- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
 
 
 ---

@@ -22,17 +22,12 @@ struct Curator
 
 ## Topics
 
-### Operators
-- [static func == (Curator, Curator) -> Bool](curator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var artwork: Artwork?](curator/artwork.md)
   The curator artwork.
 - [var editorialNotes: EditorialNotes?](curator/editorialnotes.md)
   The notes about the curator that appear in the Music catalog.
-- [var hashValue: Int](curator/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](curator/id-swift.property.md)
+- [let id: MusicItemID](curator/id.md)
   The unique identifier for the curator.
 - [var kind: Curator.Kind](curator/kind-swift.property.md)
   The kind of curator.
@@ -42,23 +37,11 @@ struct Curator
   The curator’s associated playlists.
 - [var url: URL?](curator/url.md)
   The URL for the curator.
-### Instance Methods
-- [func hash(into: inout Hasher)](curator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](curator/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Enumerations
 - [Curator.Kind](curator/kind-swift.enum.md)
   The available kinds of curators.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](curator/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](curator/customstringconvertible-implementations.md)
-- [Decodable Implementations](curator/decodable-implementations.md)
-- [Encodable Implementations](curator/encodable-implementations.md)
-- [Equatable Implementations](curator/equatable-implementations.md)
 - [FilterableMusicItem Implementations](curator/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](curator/musicitem-implementations.md)
 
 ## Relationships
 

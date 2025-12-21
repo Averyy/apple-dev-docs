@@ -35,6 +35,7 @@ struct CameraVideoFormat
   A textual representation of this camera video format.
 ### Instance Properties
 - [var cameraRectification: CameraFrameProvider.CameraRectification](cameravideoformat/camerarectification.md)
+  The camera rectification for this video format.
 
 ## Relationships
 

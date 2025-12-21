@@ -20,6 +20,18 @@ object GameCenterDetailResponse
   The data structure that represents a Game Center detail resource.
 - [object GameCenterDetailCreateRequest](gamecenterdetailcreaterequest.md)
   The request body you use to create a Game Center detail.
+- [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest](gamecenterdetailgamecenterachievementsv2linkagesrequest.md)
+  The data structure that represents a Game Center detail Game Center achievement linkage request resource.
+- [object GameCenterDetailGameCenterAchievementsV2LinkagesResponse](gamecenterdetailgamecenterachievementsv2linkagesresponse.md)
+  A response that contains a list of Game Center detail Game Center achievement linkage resources.
+- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesRequest](gamecenterdetailgamecenterleaderboardsetsv2linkagesrequest.md)
+  The data structure that represents a Game Center detail Game Center leaderboard set linkage request resource.
+- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesResponse](gamecenterdetailgamecenterleaderboardsetsv2linkagesresponse.md)
+  A response that contains a list of Game Center detail Game Center leaderboard set linkage resources.
+- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesRequest](gamecenterdetailgamecenterleaderboardsv2linkagesrequest.md)
+  The data structure that represents a Game Center detail Game Center leaderboard linkage request resource.
+- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesResponse](gamecenterdetailgamecenterleaderboardsv2linkagesresponse.md)
+  A response that contains a list of Game Center detail Game Center leaderboard linkage resources.
 - [object GameCenterDetailGameCenterAchievementsLinkagesRequest](gamecenterdetailgamecenterachievementslinkagesrequest.md)
   The request body you use to create a relationship between a Game Center detail and an achievement.
 - [object GameCenterDetailGameCenterAchievementsLinkagesResponse](gamecenterdetailgamecenterachievementslinkagesresponse.md)
@@ -34,15 +46,6 @@ object GameCenterDetailResponse
   A response that confirms a relationship between a Game Center detail and a leaderboard.
 - [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest](gamecenterdetailchallengesminimumplatformversionslinkagesrequest.md)
   The data structure that represents a detail resource.
-- [object GameCenterDetailUpdateRequest](gamecenterdetailupdaterequest.md)
-  The request body you use to update a Game Center detail.
-- [object GameCenterDetailsResponse](gamecenterdetailsresponse.md)
-  A response that contains a list of Game Center detail resources.
-- [object AppGameCenterDetailLinkageResponse](appgamecenterdetaillinkageresponse.md)
-- [object GameCenterDetailAchievementReleasesLinkagesResponse](gamecenterdetailachievementreleaseslinkagesresponse.md)
-- [object GameCenterDetailActivityReleasesLinkagesResponse](gamecenterdetailactivityreleaseslinkagesresponse.md)
-- [object GameCenterDetailChallengeReleasesLinkagesResponse](gamecenterdetailchallengereleaseslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
 
 
 ---

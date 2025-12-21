@@ -13,6 +13,12 @@
 typealias AudioStreamID = AudioObjectID
 ```
 
+#### Discussion
+
+AudioStream is the base class for all objects that represent a stream of data on an audio device.
+
+AudioStream is a subclass of AudioObject and can contain AudioControls.
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

@@ -16,7 +16,7 @@ func SecIdentityCopyPreferred(_ name: CFString, _ keyUsage: CFArray?, _ validIss
 
 #### Return Value
 
-Returns an identity, or `nil` if no identity from one of the specified issuers has been set as the preferred identity for the specified name and usage. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the identity’s memory when you are done with it.
+Returns an identity, or `nil` if no identity from one of the specified issuers has been set as the preferred identity for the specified name and usage. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the identity’s memory when you are done with it.
 
 #### Discussion
 

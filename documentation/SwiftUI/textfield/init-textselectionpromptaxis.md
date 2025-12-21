@@ -21,7 +21,7 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>, selection: Binding<T
 
 #### Discussion
 
-The following example shows a text field with a binding the the current selection:
+The following example shows a text field with a binding to the current selection:
 
 ```swift
 @State private var message: String = ""

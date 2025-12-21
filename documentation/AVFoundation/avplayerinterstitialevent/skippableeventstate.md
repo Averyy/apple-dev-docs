@@ -6,13 +6,13 @@
 These constants describe the state for a skippable AVPlayerInterstitialEvent.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ enum SkippableEventState
 
 ## Topics
 
-### Enumeration Cases
+### Event states
 - [AVPlayerInterstitialEvent.SkippableEventState.eligible](avplayerinterstitialevent/skippableeventstate/eligible.md)
   Indicates that the interstitial event is currently skippable.
 - [AVPlayerInterstitialEvent.SkippableEventState.noLongerEligible](avplayerinterstitialevent/skippableeventstate/nolongereligible.md)
@@ -43,6 +43,13 @@ enum SkippableEventState
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var skipControlLocalizedLabelBundleKey: String?](avplayerinterstitialevent/skipcontrollocalizedlabelbundlekey.md)
+  The key defined in the AVPlayerInterstitialEventController’s localizedStringsBundle that points to the localized label for the skip button.
+- [var skipControlTimeRange: CMTimeRange](avplayerinterstitialevent/skipcontroltimerange.md)
+  The time range within the duration of the interstitial event for which a skip button should be displayed.
 
 
 ---

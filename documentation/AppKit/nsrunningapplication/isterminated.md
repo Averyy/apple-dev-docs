@@ -16,7 +16,7 @@ var isTerminated: Bool { get }
 
 #### Discussion
 
-The value of terminated is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s application has terminated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The value of terminated is [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s application has terminated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is observable using key-value observing.
 

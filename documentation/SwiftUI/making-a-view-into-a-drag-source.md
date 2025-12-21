@@ -119,7 +119,7 @@ struct ContentView: View {
 
 ##### Enable List Reordering
 
-Within a [`List`](list.md), you can use the `onMove(perform:)` modifier to enable reordering. The modifier allows you to reorder list items by using a long press on a row, and then dragging it to a new location. Add the `onMove(perform:)` modifier to a `List` to enable the interaction.
+Within a [`List`](list.md), you can use the [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md) modifier to enable reordering. The modifier allows you to reorder list items by using a long press on a row, and then dragging it to a new location. Add the `onMove(perform:)` modifier to a `List` to enable the interaction.
 
 ```swift
     List {

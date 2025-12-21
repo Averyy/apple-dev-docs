@@ -18,7 +18,7 @@ optional func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequ
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the web view should begin loading content; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) .
+[`true`](https://developer.apple.com/documentation/Swift/true) if the web view should begin loading content; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) .
 
 ## Parameters
 

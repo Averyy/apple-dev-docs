@@ -22,7 +22,7 @@ var hasChanges: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been inserted, has been deleted, or has unsaved changes, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The result is the equivalent of OR-ing the values of [`isInserted`](nsmanagedobject/isinserted.md), [`isDeleted`](nsmanagedobject/isdeleted.md), and [`isUpdated`](nsmanagedobject/isupdated.md).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has been inserted, has been deleted, or has unsaved changes, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The result is the equivalent of OR-ing the values of [`isInserted`](nsmanagedobject/isinserted.md), [`isDeleted`](nsmanagedobject/isdeleted.md), and [`isUpdated`](nsmanagedobject/isupdated.md).
 
 ## See Also
 

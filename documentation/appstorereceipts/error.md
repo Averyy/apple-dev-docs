@@ -1,16 +1,22 @@
 # error
 
 **Framework**: App Store Receipts  
-**Kind**: dict
+**Kind**: dictionary
 
 Error information that returns in the response body when a request isn’t successful.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
+
+## Declaration
+
+```swift
+object error
+```
 
 ## See Also
 
-- [verifyReceipt](verifyreceipt.md)
+- [verifyReceipt](verify-receipt.md)
   Send a receipt to the App Store for verification.
 - [object requestBody](requestbody.md)
   The JSON contents you submit with the request to the App Store.

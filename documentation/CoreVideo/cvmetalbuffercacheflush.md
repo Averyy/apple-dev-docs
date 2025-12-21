@@ -19,6 +19,8 @@ func CVMetalBufferCacheFlush(_ bufferCache: CVMetalBufferCache, _ options: CVOpt
 
 #### Discussion
 
+Performs internal housekeeping/recycling operations
+
 This call must be made periodically to give the buffer cache a chance to do internal housekeeping operations.
 
 ## Parameters

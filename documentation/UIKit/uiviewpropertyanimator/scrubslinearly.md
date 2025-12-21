@@ -21,7 +21,7 @@ var scrubsLinearly: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the animator to use a linear timing function during scrubbing. Setting the property to [`false`](https://developer.apple.com/documentation/swift/false) causes the animator to use its specified timing curve.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes the animator to use a linear timing function during scrubbing. Setting the property to [`false`](https://developer.apple.com/documentation/Swift/false) causes the animator to use its specified timing curve.
 
 ## See Also
 

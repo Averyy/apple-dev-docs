@@ -20,7 +20,7 @@ case automatic
 
 #### Discussion
 
-With this behavior, the system automatically shows an indicator if the button shows a menu and has single-selection behavior (when its [`isContextMenuInteractionEnabled`](uicontrol/iscontextmenuinteractionenabled.md), [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md), and [`changesSelectionAsPrimaryAction`](uibutton/changesselectionasprimaryaction.md) properties are [`true`](https://developer.apple.com/documentation/swift/true)).
+With this behavior, the system automatically shows an indicator if the button shows a menu and has single-selection behavior (when its [`isContextMenuInteractionEnabled`](uicontrol/iscontextmenuinteractionenabled.md), [`showsMenuAsPrimaryAction`](uicontrol/showsmenuasprimaryaction.md), and [`changesSelectionAsPrimaryAction`](uibutton/changesselectionasprimaryaction.md) properties are [`true`](https://developer.apple.com/documentation/Swift/true)).
 
 ## See Also
 

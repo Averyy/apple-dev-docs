@@ -14,15 +14,14 @@ Initiates automatic saving of documents with unsaved changes.
 ## Declaration
 
 ```swift
-@MainActor
 func autosave() async -> Bool
 ```
 
 #### Discussion
 
-[`UIDocument`](uidocument.md) periodically invokes this method to initiate a save operation if there are unsaved changes. You shouldn’t call this method directly. Subclasses can override it if they want to do special things with autosaving. The default implementation of this method invokes the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method and, if that returns [`true`](https://developer.apple.com/documentation/swift/true), it invokes the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method.
+[`UIDocument`](uidocument.md) periodically invokes this method to initiate a save operation if there are unsaved changes. You shouldn’t call this method directly. Subclasses can override it if they want to do special things with autosaving. The default implementation of this method invokes the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method and, if that returns [`true`](https://developer.apple.com/documentation/Swift/true), it invokes the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method.
 
-This method should only be invoked for period-based saves. You may invoke it with the `success` parameter of the completion-handler parameter set to [`false`](https://developer.apple.com/documentation/swift/false) and return; this makes it safe to not actually save when [`autosave(completionHandler:)`](uidocument/autosave(completionhandler:).md) is invoked. However, if you call [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md), saving of document data must occur.
+This method should only be invoked for period-based saves. You may invoke it with the `success` parameter of the completion-handler parameter set to [`false`](https://developer.apple.com/documentation/Swift/false) and return; this makes it safe to not actually save when [`autosave(completionHandler:)`](uidocument/autosave(completionhandler:).md) is invoked. However, if you call [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md), saving of document data must occur.
 
 ## Parameters
 

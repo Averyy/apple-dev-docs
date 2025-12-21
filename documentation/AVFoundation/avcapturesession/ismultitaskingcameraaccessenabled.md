@@ -18,11 +18,11 @@ var isMultitaskingCameraAccessEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-> ❗ **Important**:  For apps that have the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement, this property value defaults to [`true`](https://developer.apple.com/documentation/swift/true) if [`isMultitaskingCameraAccessSupported`](avcapturesession/ismultitaskingcameraaccesssupported.md) is also [`true`](https://developer.apple.com/documentation/swift/true).
+> ❗ **Important**:  For apps that have the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement, this property value defaults to [`true`](https://developer.apple.com/documentation/Swift/true) if [`isMultitaskingCameraAccessSupported`](avcapturesession/ismultitaskingcameraaccesssupported.md) is also [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If the value of the [`isMultitaskingCameraAccessSupported`](avcapturesession/ismultitaskingcameraaccesssupported.md) property is [`true`](https://developer.apple.com/documentation/swift/true), you can enable multitasking camera access by setting this value to [`true`](https://developer.apple.com/documentation/swift/true) prior to starting the capture session.
+If the value of the [`isMultitaskingCameraAccessSupported`](avcapturesession/ismultitaskingcameraaccesssupported.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), you can enable multitasking camera access by setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) prior to starting the capture session.
 
 This property is key-value observable.
 

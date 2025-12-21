@@ -19,7 +19,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the receiver is displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is displayed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -391,6 +391,8 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A JPEG-XL encoded image.
 - [static var linkPresentationMetadata: UTType](uttype-swift.struct/linkpresentationmetadata.md)
   Serialized LinkPresentation metadata.
+- [static let paperkit: UTType](uttype-swift.struct/paperkit.md)
+  The UTType for storing paper data.
 - [static var tarArchive: UTType](uttype-swift.struct/tararchive.md)
   A tar Archive.
 ### Default Implementations

@@ -10,7 +10,7 @@ Blending between 2 IBLs. The Float is in [0; 1]: 0 will use the first IBL and 1 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -22,17 +22,12 @@ struct MusicCatalogChartsRequest
 
 ## Topics
 
-### Operators
-- [static func == (MusicCatalogChartsRequest, MusicCatalogChartsRequest) -> Bool](musiccatalogchartsrequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(genre: Genre?, kinds: [MusicCatalogChartKind], types: [any MusicCatalogChartRequestable.Type])](musiccatalogchartsrequest/init(genre:kinds:types:).md)
   Creates a catalog charts request for a specified genre and list of types to include in the catalog charts response.
 ### Instance Properties
 - [var genre: Genre?](musiccatalogchartsrequest/genre.md)
   The genre for the request.
-- [var hashValue: Int](musiccatalogchartsrequest/hashvalue.md)
-  The hash value.
 - [var kinds: [MusicCatalogChartKind]](musiccatalogchartsrequest/kinds.md)
   The kinds of requested catalog charts.
 - [var limit: Int?](musiccatalogchartsrequest/limit.md)
@@ -42,12 +37,8 @@ struct MusicCatalogChartsRequest
 - [var types: [any MusicCatalogChartRequestable.Type]](musiccatalogchartsrequest/types.md)
   The list of requested types for the catalog charts response.
 ### Instance Methods
-- [func hash(into: inout Hasher)](musiccatalogchartsrequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 - [func response() async throws -> MusicCatalogChartsResponse](musiccatalogchartsrequest/response.md)
   Fetches the most popular items of the requested types that match the genre and kinds for the request.
-### Default Implementations
-- [Equatable Implementations](musiccatalogchartsrequest/equatable-implementations.md)
 
 ## Relationships
 

@@ -11,7 +11,7 @@ The map’s rotation, in degrees.
 ## Declaration
 
 ```swift
-attribute number rotation;
+rotation?: number;
 ```
 
 #### Discussion

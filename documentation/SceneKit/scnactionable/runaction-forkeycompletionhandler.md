@@ -23,10 +23,6 @@ func runAction(_ action: SCNAction, forKey key: String?) async
 
 #### Discussion
 
-> **Note**:  In Swift, you can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func runAction(_ action: SCNAction, forKey key: String?) async
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This method is identical to [`runAction(_:completionHandler:)`](scnactionable/runaction(_:completionhandler:).md), but the action is stored and identified so that you can retrieve or cancel it later. If an action using the same key is already running, SceneKit removes it before adding the new action.
 
 SceneKit calls your block after the action’s duration is complete. For example, you can use this method with a wait action to execute some code after a timed delay. If during the delay period you need to prevent the code from running, use the [`removeAction(forKey:)`](scnactionable/removeaction(forkey:).md) method to cancel it.

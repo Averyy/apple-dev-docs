@@ -21,7 +21,7 @@ var keepNetworkOutput: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false); otherwise, the request ignores [`outputPixelFormat`](vntrackopticalflowrequest/outputpixelformat.md).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false); otherwise, the request ignores [`outputPixelFormat`](vntrackopticalflowrequest/outputpixelformat.md).
 
 ## See Also
 

@@ -36,12 +36,12 @@ struct MLHandPoseClassifier
 - [init(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassifier.ModelParameters) throws](mlhandposeclassifier/init(trainingdata:parameters:).md)
   Creates a hand pose classifier by starting a synchronous training session.
 ### Evaluating a hand pose classifier
+- [func evaluation(on: MLHandPoseClassifier.DataSource) throws -> MLClassifierMetrics](mlhandposeclassifier/evaluation(on:).md)
+  Generates metrics that describe the hand pose classifier’s performance with a dataset of labeled images.
 - [var trainingMetrics: MLClassifierMetrics](mlhandposeclassifier/trainingmetrics.md)
   Measurements of the hand pose classifier’s performance on the training dataset.
 - [var validationMetrics: MLClassifierMetrics](mlhandposeclassifier/validationmetrics.md)
   Measurements of the hand pose classifier’s performance on the validation dataset.
-- [func evaluation(on: MLHandPoseClassifier.DataSource) throws -> MLClassifierMetrics](mlhandposeclassifier/evaluation(on:).md)
-  Generates metrics that describe the hand pose classifier’s performance with a dataset of labeled images.
 ### Testing a hand pose classifier
 - [func prediction(from: URL) throws -> [(label: String, confidence: Double)]](mlhandposeclassifier/prediction(from:).md)
   Generates a hand pose prediction for an image.
@@ -69,7 +69,6 @@ struct MLHandPoseClassifier
   A hand pose classifier dataset that contains annotated images or hand joint location data.
 - [MLHandPoseClassifier.ModelParameters](mlhandposeclassifier/modelparameters-swift.struct.md)
   A set of parameters that affect the training process of a hand pose classifier task.
-### Structures
 - [MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions.md)
   Options a hand pose classification training session can use to generate additional training data from the images you provide.
 ### Default Implementations

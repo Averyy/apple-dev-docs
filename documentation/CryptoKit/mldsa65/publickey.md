@@ -6,13 +6,13 @@
 The public key for MLDSA65.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -28,10 +28,10 @@ struct PublicKey
 ### Getting the raw representation
 - [var rawRepresentation: Data](mldsa65/publickey/rawrepresentation.md)
   A serialized representation of the public key.
-### Validating a signature
-- [func isValidSignature<S, D>(signature: S, for: D) -> Bool](mldsa65/publickey/isvalidsignature(signature:for:).md)
+### Instance Methods
+- [func isValidSignature<S, D>(S, for: D) -> Bool](mldsa65/publickey/isvalidsignature(_:for:).md)
   Verifies a MLDSA65 signature.
-- [func isValidSignature<S, D, C>(signature: S, for: D, context: C) -> Bool](mldsa65/publickey/isvalidsignature(signature:for:context:).md)
+- [func isValidSignature<S, D, C>(S, for: D, context: C) -> Bool](mldsa65/publickey/isvalidsignature(_:for:context:).md)
   Verifies a MLDSA65 signature, in a specific context.
 
 ## Relationships

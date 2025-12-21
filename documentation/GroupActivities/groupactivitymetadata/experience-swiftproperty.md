@@ -9,7 +9,6 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- Unknown ?+ - Deprecated
 - visionOS 1.0+
 
 ## Declaration

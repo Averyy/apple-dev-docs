@@ -3,14 +3,14 @@
 **Framework**: WidgetKit  
 **Kind**: init
 
-Creates a toggle template for a control widget.
+Creates a toggle template for a control.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -32,13 +32,13 @@ The toggle will use “On” and “Off” as default value label.
 ## See Also
 
 - [init(isOn: Bool, action: Action, label: () -> Label, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(ison:action:label:valuelabel:).md)
-  Creates a toggle template for a control widget.
+  Creates a toggle template for a control.
 - [init(some StringProtocol, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-33wfq.md)
-  Creates a toggle template for a control widget.
+  Creates a toggle template for a control.
 - [init(LocalizedStringKey, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-5o6bn.md)
-  Creates a toggle template for a control widget.
+  Creates a toggle template for a control.
 - [init(LocalizedStringResource, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-4lk32.md)
-  Creates a toggle template for a control widget.
+  Creates a toggle template for a control.
 
 
 ---

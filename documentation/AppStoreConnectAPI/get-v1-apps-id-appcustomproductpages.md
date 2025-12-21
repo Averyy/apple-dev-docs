@@ -23,7 +23,8 @@ Get a list of all custom product pages for a specific app.
 - [Read the End User License Agreement Information of an App](get-v1-apps-_id_-enduserlicenseagreement.md)
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
 - [GET /v1/apps/{id}/relationships/endUserLicenseAgreement](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
-- [GET /v1/apps/{id}/relationships/appCustomProductPages](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+- [Get all custom product page resource IDs for an app](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+  Get a list of custom product page resource IDs associated with an app.
 - [GET /v1/apps/{id}/appStoreVersionExperimentsV2](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
 - [GET /v1/apps/{id}/relationships/appStoreVersionExperimentsV2](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
 

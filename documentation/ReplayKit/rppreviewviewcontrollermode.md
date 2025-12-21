@@ -6,7 +6,7 @@
 The modes used to determine whether the preview view controller or the share screen appears when editing a replay.
 
 **Availability**:
-- tvOS 10.0+
+- tvOS ?+
 
 ## Declaration
 
@@ -23,9 +23,6 @@ enum RPPreviewViewControllerMode
   Share/AirDrop screen displayed when editing a replay.
 ### Initializers
 - [init?(rawValue: Int)](rppreviewviewcontrollermode/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](rppreviewviewcontrollermode/equatable-implementations.md)
-- [RawRepresentable Implementations](rppreviewviewcontrollermode/rawrepresentable-implementations.md)
 
 ## Relationships
 

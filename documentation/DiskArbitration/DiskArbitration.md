@@ -23,7 +23,6 @@ For related documentation, see [`Mac Technology Overview`](https://developer.app
   Register for mount/unmount notifications, and block mount/unmount events.
 - [DiskArbitration Enumerations](diskarbitration-enumerations.md)
 - [DiskArbitration Constants](diskarbitration-constants.md)
-- [DiskArbitration Functions](diskarbitration-functions.md)
 - [DiskArbitration Data Types](diskarbitration-data-types.md)
 ### Articles
 - [DAReturn](enum_(unnamed)-3ky11.md)
@@ -36,19 +35,6 @@ For related documentation, see [`Mac Technology Overview`](https://developer.app
 - [let kDADiskDescriptionFSKitPrefix: CFString](kdadiskdescriptionfskitprefix.md)
 - [let kDADiskDescriptionRepairRunningKey: CFString](kdadiskdescriptionrepairrunningkey.md)
 - [var kDADiskMountOptionNoFollow: Int](kdadiskmountoptionnofollow.md)
-- [var kDAReturnBadArgument: Int](kdareturnbadargument.md)
-- [var kDAReturnBusy: Int](kdareturnbusy.md)
-- [var kDAReturnError: Int](kdareturnerror.md)
-- [var kDAReturnExclusiveAccess: Int](kdareturnexclusiveaccess.md)
-- [var kDAReturnNoResources: Int](kdareturnnoresources.md)
-- [var kDAReturnNotFound: Int](kdareturnnotfound.md)
-- [var kDAReturnNotMounted: Int](kdareturnnotmounted.md)
-- [var kDAReturnNotPermitted: Int](kdareturnnotpermitted.md)
-- [var kDAReturnNotPrivileged: Int](kdareturnnotprivileged.md)
-- [var kDAReturnNotReady: Int](kdareturnnotready.md)
-- [var kDAReturnNotWritable: Int](kdareturnnotwritable.md)
-- [var kDAReturnSuccess: Int](kdareturnsuccess.md)
-- [var kDAReturnUnsupported: Int](kdareturnunsupported.md)
 
 
 ---

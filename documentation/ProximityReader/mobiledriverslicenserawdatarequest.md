@@ -31,17 +31,7 @@ struct MobileDriversLicenseRawDataRequest
 ### Handling the response
 - [MobileDriversLicenseRawDataRequest.Response](mobiledriverslicenserawdatarequest/response.md)
   A type that contains the response information from a successful mobile driver’s license raw data request.
-### Operators
-- [static func == (MobileDriversLicenseRawDataRequest, MobileDriversLicenseRawDataRequest) -> Bool](mobiledriverslicenserawdatarequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobiledriverslicenserawdatarequest/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledriverslicenserawdatarequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobiledriverslicenserawdatarequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobiledriverslicenserawdatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
@@ -78,7 +68,7 @@ struct MobileDriversLicenseRawDataRequest
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)

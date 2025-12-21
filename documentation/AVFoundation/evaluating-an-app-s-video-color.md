@@ -1,4 +1,4 @@
-# Evaluating an App’s Video Color
+# Evaluating an app’s video color
 
 **Framework**: AVFoundation
 
@@ -24,36 +24,36 @@ You can use a variety of techniques to verify that the system properly manages c
 
 Appropriate color management of your video during playback requires tagging your content, using frameworks that offer implicit color management of video, and evaluating your results.
 
-For more information about color tags, see [`Tagging Media with Video Color Information`](tagging-media-with-video-color-information.md).
+For more information about color tags, see [`Tagging media with video color information`](tagging-media-with-video-color-information.md).
 
 ##### Evaluate Video Using Test Pattern Files
 
-Use test pattern files to evaluate the color characteristics of your AVFoundation-based app or workflow. These files produce expected results when displayed on Apple devices and operating systems. Open these files in the QuickTime Player App or with other apps or workflows that properly support the QuickTime File Format Specification. Read the display buffer pixel values using the Digital Color Meter app. See [`Evaluating Video Using QuickTime Test Pattern Files`](evaluating-video-using-quicktime-test-pattern-files.md).
+Use test pattern files to evaluate the color characteristics of your AVFoundation-based app or workflow. These files produce expected results when displayed on Apple devices and operating systems. Open these files in the QuickTime Player App or with other apps or workflows that properly support the QuickTime File Format Specification. Read the display buffer pixel values using the Digital Color Meter app. See [`Evaluating video using QuickTime test pattern files`](evaluating-video-using-quicktime-test-pattern-files.md).
 
 ##### Evaluate Video Using a Vectorscope or Waveform Analyzer
 
-Output test patterns to a vectorscope or waveform analyzer to analyze the video signals. View the test pattern on a vectorscope and verify the correct colorspace conversion matrices. Verify the gamma, quantization errors, and range expansion and compression on a waveform monitor. See [`Evaluating an App’s Video Color Using Video Test Equipment`](evaluating-an-app-s-video-color-using-video-test-equipment.md).
+Output test patterns to a vectorscope or waveform analyzer to analyze the video signals. View the test pattern on a vectorscope and verify the correct colorspace conversion matrices. Verify the gamma, quantization errors, and range expansion and compression on a waveform monitor. See [`Evaluating an app’s video color using video test equipment`](evaluating-an-app-s-video-color-using-video-test-equipment.md).
 
 ##### Evaluate Video Using a Spectroradiometer or Colorimeter
 
-Output the test pattern files to a spectroradiometer or colorimeter to measure front-of-screen (FoS) luminance. Measure and compare your results against the expected FoS values. See [`Evaluating an App’s Video Color Using Light-Measurement Instruments`](evaluating-an-app-s-video-color-using-light-measurement-instruments.md).
+Output the test pattern files to a spectroradiometer or colorimeter to measure front-of-screen (FoS) luminance. Measure and compare your results against the expected FoS values. See [`Evaluating an app’s video color using light-measurement Instruments`](evaluating-an-app-s-video-color-using-light-measurement-instruments.md).
 
 ##### Ensure Accurate Color Application of Your Apps Video
 
 To ensure application of the appropriate color management to your video during playback:
 
 - Use high-level frameworks integrated with ColorSync, such as AVFoundation, for implicit color management.
-- Tag all video content with color information to avoid inconsistent color across different devices. In most cases, the system treats untagged media as if the author created it in the SD color space. See [`Tagging Media with Video Color Information`](tagging-media-with-video-color-information.md).
+- Tag all video content with color information to avoid inconsistent color across different devices. In most cases, the system treats untagged media as if the author created it in the SD color space. See [`Tagging media with video color information`](tagging-media-with-video-color-information.md).
 - Evaluate all results using the techniques described here.
 
 ## Topics
 
-### Video Evaluation
-- [Evaluating Video Using QuickTime Test Pattern Files](evaluating-video-using-quicktime-test-pattern-files.md)
+### Video evaluation
+- [Evaluating video using QuickTime test pattern files](evaluating-video-using-quicktime-test-pattern-files.md)
   Check color reproduction of your app or workflow by using test pattern files.
-- [Evaluating an App’s Video Color Using Video Test Equipment](evaluating-an-app-s-video-color-using-video-test-equipment.md)
+- [Evaluating an app’s video color using video test equipment](evaluating-an-app-s-video-color-using-video-test-equipment.md)
   Output test pattern files to a vectorscope or waveform analyzer to review the video signals.
-- [Evaluating an App’s Video Color Using Light-Measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
+- [Evaluating an app’s video color using light-measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
   Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
 ## See Also
@@ -62,11 +62,11 @@ To ensure application of the appropriate color management to your video during p
   Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.
 - [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.

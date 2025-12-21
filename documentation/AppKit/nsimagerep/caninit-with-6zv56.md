@@ -16,11 +16,11 @@ class func canInit(with data: Data) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver understands the format of the specified data and can use it to initialize itself; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver understands the format of the specified data and can use it to initialize itself; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method should be overridden by subclasses. Note that this method does not need to do a comprehensive check of the image data; it should return [`false`](https://developer.apple.com/documentation/swift/false) only if it knows it cannot initialize itself from the data.
+This method should be overridden by subclasses. Note that this method does not need to do a comprehensive check of the image data; it should return [`false`](https://developer.apple.com/documentation/Swift/false) only if it knows it cannot initialize itself from the data.
 
 ## Parameters
 

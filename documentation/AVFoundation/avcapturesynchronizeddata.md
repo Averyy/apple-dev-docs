@@ -19,7 +19,7 @@ class AVCaptureSynchronizedData
 
 ## Topics
 
-### Correlating Synchronized Data
+### Correlating synchronized data
 - [var timestamp: CMTime](avcapturesynchronizeddata/timestamp.md)
   The time at which this synchronized data was captured.
 

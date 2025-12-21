@@ -6,12 +6,12 @@
 Groups together arguments for an operation to update a sparse texture mapping.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS ?+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ struct MTL4UpdateSparseTextureMappingOperation
 
 When performing a sparse mapping update, you are responsible for issuing a barrier against stage `MTLStageResourceState`.
 
-You can determine the sparse texture tier by calling `MTLTexture/sparseTextureTier`.
+You can determine the sparse texture tier by calling [`sparseTextureTier`](mtltexture/sparsetexturetier.md).
 
 ## Topics
 

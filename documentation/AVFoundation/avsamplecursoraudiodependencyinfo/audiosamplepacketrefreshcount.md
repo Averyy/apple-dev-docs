@@ -22,7 +22,7 @@ var audioSamplePacketRefreshCount: Int
 
 #### Discussion
 
-The value of [`audioSampleIsIndependentlyDecodable`](avsamplecursoraudiodependencyinfo/audiosampleisindependentlydecodable.md) must be [`true`](https://developer.apple.com/documentation/swift/true) for this value to take effect.
+The value of [`audioSampleIsIndependentlyDecodable`](avsamplecursoraudiodependencyinfo/audiosampleisindependentlydecodable.md) must be [`true`](https://developer.apple.com/documentation/Swift/true) for this value to take effect.
 
 The value of this property is `0` for Immediate Playout Frames (IPFs).
 

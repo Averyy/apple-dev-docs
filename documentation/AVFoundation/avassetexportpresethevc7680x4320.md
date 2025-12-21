@@ -6,11 +6,11 @@
 A preset to export a 7680 by 4320 movie that contains HEVC video and AAC audio.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 12.1+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,6 +28,7 @@ let AVAssetExportPresetHEVC7680x4320: String
   A preset to export a 1920 by 1080 movie that contains HEVC video with alpha and AAC audio.
 - [let AVAssetExportPresetHEVC3840x2160WithAlpha: String](avassetexportpresethevc3840x2160withalpha.md)
   A preset to export a 3840 by 2160 movie that contains HEVC video with alpha and AAC audio.
+- [let AVAssetExportPresetHEVC4320x2160: String](avassetexportpresethevc4320x2160.md)
 
 
 ---

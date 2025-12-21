@@ -16,7 +16,7 @@ The point where a line ends, in annotation-space coordinates.
 ## Declaration
 
 ```swift
-var endPoint: CGPoint { get set }
+var endPoint: NSPoint { get set }
 ```
 
 ## See Also

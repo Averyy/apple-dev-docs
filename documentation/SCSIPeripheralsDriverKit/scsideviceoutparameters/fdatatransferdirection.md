@@ -18,9 +18,9 @@ uint8_t fDataTransferDirection;
 
 Use the following `DriverKit/storage/SCSITask.h` direction values to populate this field:
 
-- [`kSCSIDataTransfer_NoDataTransfer`](https://developer.apple.com/documentation/driverkit/3583340-anonymous/kscsidatatransfer_nodatatransfer)
-- [`kSCSIDataTransfer_FromInitiatorToTarget`](https://developer.apple.com/documentation/driverkit/3583340-anonymous/kscsidatatransfer_frominitiatortotarget)
-- [`kSCSIDataTransfer_FromTargetToInitiator`](https://developer.apple.com/documentation/driverkit/3583340-anonymous/kscsidatatransfer_fromtargettoinitiator)
+- [`kSCSIDataTransfer_NoDataTransfer`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_nodatatransfer)
+- [`kSCSIDataTransfer_FromInitiatorToTarget`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_frominitiatortotarget)
+- [`kSCSIDataTransfer_FromTargetToInitiator`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_fromtargettoinitiator)
 
 ## See Also
 

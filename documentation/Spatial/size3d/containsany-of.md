@@ -13,7 +13,6 @@ Returns a Boolean value that indicates whether the size contains the specified p
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

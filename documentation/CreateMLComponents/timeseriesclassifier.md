@@ -19,30 +19,24 @@ struct TimeSeriesClassifier<Scalar, Label> where Scalar : MLShapedArrayScalar, S
 
 ## Topics
 
-### Structures
-- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
-  A time-series classifier model.
-### Initializers
+### Creating a time series classifier
 - [init(labels: Set<Label>, configuration: TimeSeriesClassifierConfiguration)](timeseriesclassifier/init(labels:configuration:).md)
   Creates a time series classifier.
-### Instance Properties
+### Inspecting a time series classifier
 - [var configuration: TimeSeriesClassifierConfiguration](timeseriesclassifier/configuration-swift.property.md)
   The configuration.
 - [var labels: Set<Label>](timeseriesclassifier/labels.md)
   The set of possible labels.
-### Instance Methods
+### Fitting a time series classifier
 - [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:eventhandler:).md)
   Fits a time series classifier model to a sequence of examples.
 - [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:validateon:eventhandler:).md)
   Fits a time series classifier model to a sequence of examples.
-### Type Aliases
-- [TimeSeriesClassifier.Annotation](timeseriesclassifier/annotation.md)
-  The annotation type.
+### Supporting types
 - [TimeSeriesClassifier.Configuration](timeseriesclassifier/configuration-swift.typealias.md)
-- [TimeSeriesClassifier.Transformer](timeseriesclassifier/transformer.md)
-  The transformer type created by this estimator.
+- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
+  A time-series classifier model.
 ### Default Implementations
-- [SupervisedEstimator Implementations](timeseriesclassifier/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](timeseriesclassifier/updatablesupervisedestimator-implementations.md)
 
 ## Relationships

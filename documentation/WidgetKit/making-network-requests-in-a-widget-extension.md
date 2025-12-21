@@ -29,6 +29,11 @@ After invoking [`onBackgroundURLSessionEvents(matching:_:)`](https://developer.a
 
 To refresh your widget’s timeline after the network request completes, call the needed [`WidgetCenter`](widgetcenter.md) methods from your implementation of `SessionDidFinishEvents(forBackgroundURLSession:)`. Once you finish handling the events, call the completion handler of `onBackgroundURLSessionEvents(matching:_:)` that you previously stored.
 
+## See Also
+
+- [Accessing location information in widgets](accessing-location-information-in-widgets.md)
+  Incorporate location information into your widget presentation to make it more relevant and contextual.
+
 
 ---
 

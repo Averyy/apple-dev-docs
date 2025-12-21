@@ -6,7 +6,7 @@
 The rotation behavior describing how an object rotates due to pose changes from the primary input source, for example a single hand pose re-orienting.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

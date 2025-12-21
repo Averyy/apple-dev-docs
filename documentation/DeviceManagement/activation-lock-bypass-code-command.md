@@ -17,7 +17,7 @@ Get the code to bypass Activation Lock on a device.
 
 #### Discussion
 
-This command allows organizations to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password. Use this command to retrieve the device’s bypass code.
+This command allows organizations to retrieve the device’s bypass code. Organizations can use the bypass code to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password.
 
 Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and Using Bypass Codes`](creating-and-using-bypass-codes.md).
 

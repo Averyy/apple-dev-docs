@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to confirm the action
+The person needs to confirm the action.
 
 **Availability**:
 - iOS 18.0+

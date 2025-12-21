@@ -11,7 +11,7 @@ The expected travel time, in seconds.
 ## Declaration
 
 ```swift
-attribute number expectedTravelTime;
+expectedTravelTime: number;
 ```
 
 #### Discussion
@@ -30,7 +30,7 @@ This expected travel time reflects the time it takes to traverse the route under
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

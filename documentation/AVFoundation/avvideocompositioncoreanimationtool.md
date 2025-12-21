@@ -24,24 +24,22 @@ class AVVideoCompositionCoreAnimationTool
 Any animations will be interpreted on the video’s timeline, not real-time, so you should:
 
 1. Set animations’ [`beginTime`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/beginTime) property to [`AVCoreAnimationBeginTimeAtZero`](avcoreanimationbegintimeatzero.md) rather than `0` (which CoreAnimation replaces with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()));
-2. Set [`isRemovedOnCompletion`](https://developer.apple.com/documentation/QuartzCore/CAAnimation/isRemovedOnCompletion) to [`false`](https://developer.apple.com/documentation/swift/false) on animations so they are not automatically removed;
+2. Set [`isRemovedOnCompletion`](https://developer.apple.com/documentation/QuartzCore/CAAnimation/isRemovedOnCompletion) to [`false`](https://developer.apple.com/documentation/Swift/false) on animations so they are not automatically removed;
 3. Avoid using layers that are associated with [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) objects.
 
 ## Topics
 
-### Creating a Composition Tool
+### Creating a composition tool
 - [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
   Composes the composited video frame with a Core Animation layer.
 - [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
   Composes the composited video frames with the Core Animation layer.
-### Structures
-- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
-  Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
-### Initializers
 - [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
   Compose the composited video frames with the Core Animation layer.
+- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 ## Relationships
 

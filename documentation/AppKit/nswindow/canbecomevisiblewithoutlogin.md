@@ -17,7 +17,7 @@ var canBecomeVisibleWithoutLogin: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window can be displayed at the login window; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window can be displayed at the login window; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

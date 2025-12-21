@@ -17,8 +17,8 @@ protocol CLKComplicationDataSource : NSObjectProtocol
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Enabling Complications for Your watchOS App](enabling-complications-for-your-watchos-app.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Overview
 

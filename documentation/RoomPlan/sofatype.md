@@ -33,29 +33,6 @@ When the framework observes a sofa in the physical environment during a scan, it
   The short side of the L-shape sofa.
 - [SofaType.unidentified](sofatype/unidentified.md)
   An uncategorized sofa shape.
-### Identifying a sofa type
-- [var shortIdentifier: String](sofatype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a sofa type
-- [static var parentCategory: CapturedElementCategory?](sofatype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a sofa type
-- [init?(rawValue: String)](sofatype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](sofatype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [typealias AllCases](sofatype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [typealias RawValue](sofatype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [SofaType]](sofatype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](sofatype/equatable-implementations.md)
-- [RawRepresentable Implementations](sofatype/rawrepresentable-implementations.md)
 
 ## Relationships
 

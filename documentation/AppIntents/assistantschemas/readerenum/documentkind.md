@@ -29,7 +29,7 @@ var documentKind: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.reader.documentKind` schema:
 
 ```swift
-@AssistantEnum(schema: .reader.documentKind)
+@AppEnum(schema: .reader.documentKind)
 enum ReaderDocumentKind: AppEnum, Codable {
     case image
     case pdf

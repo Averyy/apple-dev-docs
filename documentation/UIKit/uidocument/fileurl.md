@@ -14,7 +14,6 @@ The file URL you use to initialize the document.
 ## Declaration
 
 ```swift
-@MainActor
 var fileURL: URL { get }
 ```
 

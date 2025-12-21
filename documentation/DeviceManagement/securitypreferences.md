@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure security preferences.
+The payload that configures security preferences.
 
 **Availability**:
 - macOS 10.10+
@@ -69,9 +69,9 @@ Specify `com.apple.preference.security` as the payload type.
 ## See Also
 
 - [object Passcode](passcode.md)
-  The payload you use to configure a passcode policy.
+  The payload that configures a passcode policy.
 - [object SmartCard](smartcard.md)
-  The payload you use to configure a smart card.
+  The payload that configures a smart card.
 
 
 ---

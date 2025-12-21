@@ -21,7 +21,7 @@ class func `default`(_ deviceType: AVCaptureDevice.DeviceType, for mediaType: AV
 
 ## Mentions
 
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
 
 #### Return Value
 

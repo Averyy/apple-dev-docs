@@ -22,7 +22,7 @@ static func sleep<C>(for duration: C.Instant.Duration, tolerance: C.Instant.Dura
 
 #### Discussion
 
-If the task is cancelled before the time ends, this function throws `CancellationError`.
+If the task is canceled before the time ends, this function throws `CancellationError`.
 
 This function doesn’t block the underlying thread.
 

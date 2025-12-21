@@ -29,8 +29,6 @@ typealias MTLNewDynamicLibraryCompletionHandler = ((any MTLDynamicLibrary)?, (an
   Serves as the base descriptor for creating a Metal library.
 - [class MTL4LibraryFunctionDescriptor](mtl4libraryfunctiondescriptor.md)
   Describes a shader function from a Metal library.
-- [class MTL4LinkedFunctions](mtl4linkedfunctions.md)
-  Groups together functions to link.
 - [enum MTL4LogicalToPhysicalColorAttachmentMappingState](mtl4logicaltophysicalcolorattachmentmappingstate.md)
   Enumerates possible behaviors of how a pipeline maps its logical outputs to its color attachments.
 - [typealias MTL4NewBinaryFunctionCompletionHandler](mtl4newbinaryfunctioncompletionhandler.md)
@@ -49,6 +47,8 @@ typealias MTLNewDynamicLibraryCompletionHandler = ((any MTLDynamicLibrary)?, (an
   Groups together properties to drive a static linking process.
 - [class MTL4StitchedFunctionDescriptor](mtl4stitchedfunctiondescriptor.md)
   Groups together properties that describe a shader function suitable for stitching.
+- [class MTLFunctionReflection](mtlfunctionreflection.md)
+  Represents a reflection object containing information about a function in a Metal library.
 
 
 ---

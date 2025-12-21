@@ -22,6 +22,7 @@ case int32
 
 ## See Also
 
+- [MLMultiArrayDataType.int8](mlmultiarraydatatype/int8.md)
 - [MLMultiArrayDataType.float16](mlmultiarraydatatype/float16.md)
   Designates the multiarray’s elements as 16-bit floats.
 - [MLMultiArrayDataType.float32](mlmultiarraydatatype/float32.md)

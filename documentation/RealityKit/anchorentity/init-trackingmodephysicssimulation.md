@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -21,10 +22,9 @@
 
 - [init()](anchorentity/init.md)
   Creates a new anchor entity.
-- [convenience init(any Anchor)](anchorentity/init(_:)-8k2z3.md)
 - [init(AnchoringComponent.Target)](anchorentity/init(_:)-9rdwu.md)
   Creates an anchor entity targeting a particular kind of anchor.
-- [convenience(_:trackingMode:)](anchorentity/init(_:trackingmode:).md)
+- [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchorentity/init(_:trackingmode:).md)
 - [convenience init(anchor: ARAnchor)](anchorentity/init(anchor:).md)
   Creates an anchor entity that uses an existing AR anchor.
 - [convenience init(plane: AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](anchorentity/init(plane:classification:minimumbounds:).md)

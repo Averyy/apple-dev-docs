@@ -3,10 +3,12 @@
 **Framework**: Visual Intelligence  
 **Kind**: typealias
 
+A type that represents the unwrapped value of a semantic content descriptor.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -14,12 +16,18 @@
 typealias UnwrappedType = SemanticContentDescriptor
 ```
 
+#### Discussion
+
+This type defines the underlying type that the system uses when unwrapping a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance. It’s part of App Intents’ internal type system for handling visual intelligence data.
+
 ## See Also
 
 - [static var defaultResolverSpecification: some ResolverSpecification](semanticcontentdescriptor/defaultresolverspecification.md)
   A default implementation of an internal type that the App Intents framework uses to convert data values with resolvers.
 - [SemanticContentDescriptor.Specification](semanticcontentdescriptor/specification.md)
+  A type that specifies how the system resolves a semantic content descriptor.
 - [SemanticContentDescriptor.ValueType](semanticcontentdescriptor/valuetype.md)
+  A type that represents the value of a semantic content descriptor.
 
 
 ---

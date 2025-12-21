@@ -6,7 +6,7 @@
 The number of additional frames for which the system displays the same content.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

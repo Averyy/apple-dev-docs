@@ -16,7 +16,7 @@ object WebhookCreateRequest.Data.Attributes
 
 ## Mentions
 
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
+- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
 
 ---

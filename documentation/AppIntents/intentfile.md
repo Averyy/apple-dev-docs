@@ -62,13 +62,6 @@ Provide an intent file entity implementation to describe data you store in a fil
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentFile>](intentfile/defaultresolverspecification.md)
 ### Enumerations
 - [IntentFile.IntentFileError](intentfile/intentfileerror.md)
-### Default Implementations
-- [Decodable Implementations](intentfile/decodable-implementations.md)
-- [Encodable Implementations](intentfile/encodable-implementations.md)
-- [Equatable Implementations](intentfile/equatable-implementations.md)
-- [Hashable Implementations](intentfile/hashable-implementations.md)
-- [InstanceDisplayRepresentable Implementations](intentfile/instancedisplayrepresentable-implementations.md)
-- [TypeDisplayRepresentable Implementations](intentfile/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

@@ -41,12 +41,6 @@ case invalid
   Specifies an element declaration node.
 - [XMLNode.Kind.notationDeclaration](xmlnode/kind-swift.enum/notationdeclaration.md)
   Specifies a notation declaration node.
-- [XMLNode.Kind.document](xmlnode/kind-swift.enum/document.md)
-  Specifies a document node.
-- [XMLNode.Kind.element](xmlnode/kind-swift.enum/element.md)
-  Specifies an element node.
-- [XMLNode.Kind.attribute](xmlnode/kind-swift.enum/attribute.md)
-  Specifies an attribute node
 
 
 ---

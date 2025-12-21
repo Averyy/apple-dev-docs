@@ -41,7 +41,7 @@ In some situations, it’s worthwhile to subclass [`NSDocumentController`](nsdoc
 - [func openDocument(withContentsOf: URL, display: Bool, completionHandler: (NSDocument?, Bool, (any Error)?) -> Void)](nsdocumentcontroller/opendocument(withcontentsof:display:completionhandler:).md)
   Opens a document located by a URL, optionally presents its user interface, and calls the passed-in completion handler.
 - [func openUntitledDocumentAndDisplay(Bool) throws -> NSDocument](nsdocumentcontroller/openuntitleddocumentanddisplay(_:).md)
-  Creates a new untitled document, presents its user interface if `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), and returns the document if successful.
+  Creates a new untitled document, presents its user interface if `displayDocument` is `true`, and returns the document if successful.
 - [func makeDocument(for: URL?, withContentsOf: URL, ofType: String) throws -> NSDocument](nsdocumentcontroller/makedocument(for:withcontentsof:oftype:).md)
   Instantiates a document located by a URL, of a specified type, but by reading the contents for the document from another URL, and returns it if successful.
 - [func makeDocument(withContentsOf: URL, ofType: String) throws -> NSDocument](nsdocumentcontroller/makedocument(withcontentsof:oftype:).md)
@@ -91,15 +91,15 @@ In some situations, it’s worthwhile to subclass [`NSDocumentController`](nsdoc
   As the action method called by the Save All command, saves all open documents of the application that need to be saved.
 ### Managing the Open Dialog
 - [func beginOpenPanel(completionHandler: ([URL]?) -> Void)](nsdocumentcontroller/beginopenpanel(completionhandler:).md)
-  Presents an Open dialog and delivers the results to a completion handler as an array of URLs for the chosen files (or `nil`).
+  Presents an Open dialog and delivers the results to a completion handler as an array of URLs for the chosen files, or nil.
 - [func beginOpenPanel(NSOpenPanel, forTypes: [String]?, completionHandler: (Int) -> Void)](nsdocumentcontroller/beginopenpanel(_:fortypes:completionhandler:).md)
   Presents a nonmodal Open dialog that displays files you can open from a list of UTIs.
 - [func runModalOpenPanel(NSOpenPanel, forTypes: [String]?) -> Int](nsdocumentcontroller/runmodalopenpanel(_:fortypes:).md)
   Presents a modal Open dialog and limits selection to specific file types.
 - [var currentDirectory: String?](nsdocumentcontroller/currentdirectory.md)
-  The directory path to be used as the starting point in the Open panel.
+  The directory path to use as the starting point in the Open dialog.
 - [func urlsFromRunningOpenPanel() -> [URL]?](nsdocumentcontroller/urlsfromrunningopenpanel.md)
-  An array of URLs corresponding to the files selected in a running open panel.
+  An array of URLs that correspond to the selected files in a running Open dialog.
 ### Managing the Open Recent Menu
 - [var maximumRecentDocumentCount: Int](nsdocumentcontroller/maximumrecentdocumentcount.md)
   The maximum number of items that may be presented in the standard Open Recent menu.

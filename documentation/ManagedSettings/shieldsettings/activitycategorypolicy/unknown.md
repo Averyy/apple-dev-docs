@@ -16,11 +16,6 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: ShieldSettings.ActivityCategoryPolicy<Activity>, rhs: ShieldSettings.ActivityCategoryPolicy<Activity>) -> Bool
 ```
 
-## See Also
-
-- [static func != (Self, Self) -> Bool](shieldsettings/activitycategorypolicy/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-
 
 ---
 

@@ -21,7 +21,7 @@ static var unknown: MTLTextureUsage { get }
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Discussion
 
@@ -37,6 +37,8 @@ In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to 
   An option for reading or sampling from the texture in a shader.
 - [static var shaderWrite: MTLTextureUsage](mtltextureusage/shaderwrite.md)
   An option for writing to the texture in a shader.
+- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
+  An option that enables atomic memory operations on texture elements in shader code.
 - [static var renderTarget: MTLTextureUsage](mtltextureusage/rendertarget.md)
   An option for rendering to the texture in a render pass.
 - [static var pixelFormatView: MTLTextureUsage](mtltextureusage/pixelformatview.md)

@@ -6,8 +6,8 @@
 A type to define errors that can occur when performing RCS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -39,24 +39,6 @@ enum Error
   A required resource wasn’t found.
 - [RCSService.Error.maximumSizeExceeded](rcsservice/error/maximumsizeexceeded.md)
   The RCS message exceeded the maximum allowed size.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/error/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Error, RCSService.Error) -> Bool](rcsservice/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/error/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/error/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/error/equatable-implementations.md)
-- [Error Implementations](rcsservice/error/error-implementations.md)
-- [LocalizedError Implementations](rcsservice/error/localizederror-implementations.md)
 
 ## Relationships
 

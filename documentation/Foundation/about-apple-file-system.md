@@ -68,6 +68,8 @@ You can’t use [`FileHandle`](filehandle.md) to create a sparse file from an ex
 
 - [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
   Prevent data loss and app crashes by interacting with the file system in a coordinated, asynchronous manner and by avoiding unnecessary disk I/O.
+- [Using the file system effectively](using-the-file-system-effectively.md)
+  Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 - [class FileManager](filemanager.md)
   A convenient interface to the contents of the file system, and the primary means of interacting with it.
 - [protocol FileManagerDelegate](filemanagerdelegate.md)

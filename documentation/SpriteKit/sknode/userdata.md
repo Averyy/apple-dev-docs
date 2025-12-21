@@ -17,7 +17,6 @@ A dictionary containing arbitrary data.
 ## Declaration
 
 ```swift
-@MainActor
 var userData: NSMutableDictionary? { get set }
 ```
 

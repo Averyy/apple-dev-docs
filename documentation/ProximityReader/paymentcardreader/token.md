@@ -26,14 +26,8 @@ You must create a secure token to use Tap to Pay on iPhone. Your payment service
 - [init(rawValue: String)](paymentcardreader/token/init(rawvalue:).md)
   Creates a token with the string your payment service provider gave you.
 ### Getting the token value
-- [let rawValue: String](paymentcardreader/token/rawvalue-swift.property.md)
+- [let rawValue: String](paymentcardreader/token/rawvalue.md)
   The raw token string from your payment service provider.
-### Type Aliases
-- [PaymentCardReader.Token.RawValue](paymentcardreader/token/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](paymentcardreader/token/equatable-implementations.md)
-- [RawRepresentable Implementations](paymentcardreader/token/rawrepresentable-implementations.md)
 
 ## Relationships
 

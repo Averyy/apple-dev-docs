@@ -19,8 +19,8 @@ protocol NSFileProviderEnumerator : NSObjectProtocol
 
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
 - [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
 
 ## Topics
 

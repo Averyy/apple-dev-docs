@@ -21,7 +21,7 @@ var colorTransferFunction: String? { get set }
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 #### Discussion
 

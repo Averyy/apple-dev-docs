@@ -22,7 +22,7 @@ func filtered(using predicate: NSPredicate) -> [Any]
 
 #### Return Value
 
-A new array containing the objects in the receiving array for which `predicate` returns [`true`](https://developer.apple.com/documentation/swift/true).
+A new array containing the objects in the receiving array for which `predicate` returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Objects in the resulting array appear in the same order as they do in the receiver.
 

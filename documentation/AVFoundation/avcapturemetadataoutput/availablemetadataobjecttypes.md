@@ -28,6 +28,8 @@ Each string in the array corresponds to a possible value in the [`type`](avmetad
   An array of strings identifying the types of metadata objects  to process.
 - [var rectOfInterest: CGRect](avcapturemetadataoutput/rectofinterest.md)
   A rectangle of interest for limiting the search area for visual metadata.
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+  The required metadata object types when Cinematic Video capture is enabled.
 
 
 ---

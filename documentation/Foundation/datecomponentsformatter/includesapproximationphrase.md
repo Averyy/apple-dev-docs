@@ -22,9 +22,9 @@ var includesApproximationPhrase: Bool { get set }
 
 #### Discussion
 
-Setting the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) adds phrasing to output strings to reflect that the given time value is approximate and not exact. Using this property yields more correct phrasing than simply prepending the string “About” to an output string.
+Setting the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) adds phrasing to output strings to reflect that the given time value is approximate and not exact. Using this property yields more correct phrasing than simply prepending the string “About” to an output string.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

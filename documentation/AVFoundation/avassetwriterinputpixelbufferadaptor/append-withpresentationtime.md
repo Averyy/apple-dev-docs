@@ -21,7 +21,7 @@ func append(_ pixelBuffer: CVPixelBuffer, withPresentationTime presentationTime:
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the adaptor appends the pixel buffer; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the adaptor appends the pixel buffer; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

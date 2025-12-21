@@ -25,19 +25,19 @@ class AVMovie
 
 ## Topics
 
-### Creating a Movie
+### Creating a movie
 - [convenience init(url: URL)](avmovie/init(url:).md)
   Creates a movie that models the media at the specified URL.
 - [init(url: URL, options: [String : Any]?)](avmovie/init(url:options:).md)
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?)](avmovie/init(data:options:).md)
   Creates a movie object from a movie file’s data.
-- [Initialization Options](initialization-options.md)
+- [Initialization options](initialization-options.md)
   Specify options to configure the initialization of a movie.
-### Determining Supported File Types
+### Determining supported file types
 - [class func movieTypes() -> [AVFileType]](avmovie/movietypes.md)
   Returns the file types that a movie supports.
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMovieTrack]>](avpartialasyncproperty/tracks-80a83.md)
   The tracks that a movie contains.
 - [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVMovieTrack?, (any Error)?) -> Void)](avmovie/loadtrack(withtrackid:completionhandler:).md)
@@ -46,7 +46,7 @@ class AVMovie
   Loads tracks that contain media of a specified type.
 - [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVMovieTrack]?, (any Error)?) -> Void)](avmovie/loadtracks(withmediacharacteristic:completionhandler:).md)
   Loads tracks that contain media of a specified characteristic.
-### Creating and Writing Headers
+### Creating and writing headers
 - [func `is`(compatibleWithFileType: AVFileType) -> Bool](avmovie/is(compatiblewithfiletype:).md)
   Returns a Boolean value that indicates whether the system can create a movie header of the specified type.
 - [func makeMovieHeader(fileType: AVFileType) throws -> Data](avmovie/makemovieheader(filetype:).md)
@@ -55,17 +55,17 @@ class AVMovie
   Writes the movie header to the specified URL.
 - [struct AVMovieWritingOptions](avmoviewritingoptions.md)
   A structure that defines options to control the writing of a movie header to a destination URL.
-### Determining Fragment Support
+### Determining fragment support
 - [var canContainMovieFragments: Bool](avmovie/cancontainmoviefragments.md)
   A Boolean value that indicates whether fragments can extend the movie file.
 - [var containsMovieFragments: Bool](avmovie/containsmoviefragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the movie file.
-### Accessing Movie Information
+### Accessing movie information
 - [var url: URL?](avmovie/url.md)
   A URL to a QuickTime or ISO base media file.
 - [var data: Data?](avmovie/data.md)
   A data object that contains the movie file’s data.
-### Accessing Tracks
+### Accessing tracks
 - [var tracks: [AVMovieTrack]](avmovie/tracks.md)
   The tracks that a movie contains.
 - [func track(withTrackID: CMPersistentTrackID) -> AVMovieTrack?](avmovie/track(withtrackid:).md)
@@ -74,7 +74,7 @@ class AVMovie
   Retrieves tracks in the movie that present media of the specified type.
 - [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMovieTrack]](avmovie/tracks(withmediacharacteristic:).md)
   Retrieves tracks in the movie that present media of the specified characteristic.
-### Accessing Data Storage
+### Accessing data storage
 - [var defaultMediaDataStorage: AVMediaDataStorage?](avmovie/defaultmediadatastorage.md)
   The default storage container for media data added to a movie.
 

@@ -47,11 +47,8 @@ struct UpdatableTemporalEstimatorToSupervisedAdaptor<Estimator, Annotation> wher
   Updates a transformer with a new sequence of examples.
 - [func update<InputSequence, Validation, FeatureSequence>(inout UpdatableTemporalEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](updatabletemporalestimatortosupervisedadaptor/update(_:with:validateon:eventhandler:).md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [UpdatableTemporalEstimatorToSupervisedAdaptor.Transformer](updatabletemporalestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTemporalEstimator Implementations](updatabletemporalestimatortosupervisedadaptor/supervisedtemporalestimator-implementations.md)
-- [UpdatableSupervisedTemporalEstimator Implementations](updatabletemporalestimatortosupervisedadaptor/updatablesupervisedtemporalestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

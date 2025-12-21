@@ -38,6 +38,8 @@ If you schedule interstitial events with dates that coincide either with the dat
 
 - [func cancelCurrentEvent(withResumptionOffset: CMTime)](avplayerinterstitialeventcontroller/cancelcurrentevent(withresumptionoffset:).md)
   Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
+- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
+  Causes the playback of the currently playing interstital event to be abandoned.
 
 
 ---

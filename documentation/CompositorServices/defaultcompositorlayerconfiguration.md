@@ -6,7 +6,7 @@
 A type that configures the layer with the default texture configurations and rendering behaviors for the current device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

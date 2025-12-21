@@ -49,6 +49,11 @@ Pass built-in traits to test functions or suite types to comment, categorize, cl
   Constructs a bug to track with a test.
 - [static func bug(String?, id: some Numeric, Comment?) -> Self](trait/bug(_:id:_:)-3vtpl.md)
   Constructs a bug to track with a test.
+### Handling issues
+- [static func compactMapIssues((Issue) -> Issue?) -> Self](trait/compactmapissues(_:).md)
+  Constructs an trait that transforms issues recorded by a test.
+- [static func filterIssues((Issue) -> Bool) -> Self](trait/filterissues(_:).md)
+  Constructs a trait that filters issues recorded by a test.
 ### Creating custom traits
 - [protocol Trait](trait.md)
   A protocol describing traits that can be added to a test function or to a test suite.
@@ -65,6 +70,8 @@ Pass built-in traits to test functions or suite types to comment, categorize, cl
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

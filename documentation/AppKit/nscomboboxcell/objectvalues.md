@@ -17,7 +17,7 @@ var objectValues: [Any] { get }
 
 #### Discussion
 
-Accessing this property logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+Accessing this property logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

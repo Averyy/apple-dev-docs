@@ -21,8 +21,8 @@ var startDate: Date { get }
 
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
 - [Adding samples to a workout](adding-samples-to-a-workout.md)
+- [Running workout sessions](running-workout-sessions.md)
 
 #### Discussion
 

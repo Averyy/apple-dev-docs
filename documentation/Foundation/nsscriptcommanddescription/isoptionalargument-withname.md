@@ -17,7 +17,7 @@ func isOptionalArgument(withName argumentName: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified argument exists and is optional; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified argument exists and is optional; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

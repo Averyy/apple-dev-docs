@@ -24,11 +24,6 @@ struct ActivityUpdates
   An iterator for accessing individual data entries from the series.
 - [Activity.ActivityUpdates.Element](activity/activityupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Type Aliases
-- [Activity.ActivityUpdates.AsyncIterator](activity/activityupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](activity/activityupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

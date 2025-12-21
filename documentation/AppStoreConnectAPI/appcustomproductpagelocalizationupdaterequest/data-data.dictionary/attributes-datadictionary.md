@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an app custom product page localization update request resource.
+
 **Availability**:
 - App Store Connect API 1.7+
 

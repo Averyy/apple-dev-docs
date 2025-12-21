@@ -19,11 +19,6 @@ The inside tessellation factor.
 var insideTessellationFactor: UInt16
 ```
 
-## See Also
-
-- [var edgeTessellationFactor: (UInt16, UInt16, UInt16)](mtltriangletessellationfactorshalf/edgetessellationfactor.md)
-  The edge tessellation factors, with each index value providing the tessellation factor for a particular edge.
-
 
 ---
 

@@ -19,7 +19,7 @@ The editor lets you modify many of the properties of a particle emitter, includi
 
 ##### Add a Particle Emitter Resource File to Your Project
 
-1. Choose File > New > File.
+1. Choose File > New > File from Template.
 2. Choose Resource > SpriteKit Particle File, and click Next.
 3. Select one of the preinstalled particle emitter textures, and click Next.
 4. In the next sheet, choose a location and enter a filename.

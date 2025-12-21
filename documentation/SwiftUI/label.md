@@ -22,9 +22,9 @@ struct Label<Title, Icon> where Title : View, Icon : View
 
 ## Mentions
 
-- [Preparing views for localization](preparing-views-for-localization.md)
 - [Performing a search operation](performing-a-search-operation.md)
 - [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Preparing views for localization](preparing-views-for-localization.md)
 
 #### Overview
 

@@ -21,7 +21,7 @@ var hasAmbiguousLayout: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the view’s location is incompletely specified, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the view’s location is incompletely specified, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 If there aren’t enough constraints in the system to uniquely determine layout, the layout is considered ambiguous. For example, if the only constraint in the system is `x = y + 100`, the layout is ambiguous because there are many possible values for `x` and `y`. UIKit does not automatically detect every ambiguous layout, so you may need to look for symptoms of ambiguity, such as views that jump from place to place, or that are in the wrong place.
 

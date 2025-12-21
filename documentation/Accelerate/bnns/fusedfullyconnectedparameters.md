@@ -13,7 +13,6 @@ A structure that contains the parameters for a fused fully connected layer.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

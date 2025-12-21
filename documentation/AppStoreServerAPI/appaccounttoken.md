@@ -24,29 +24,16 @@ When a customer initiates an In-App Purchase in your app, you can optionally gen
 
 To provide an app account token for a transaction that the customer completes outside of your app, or to update the value of an existing app account token, call the [`Set App Account Token`](set-app-account-token.md) endpoint.
 
-##### Use the App Account Token with Consumption Requests
-
-The [`ConsumptionRequest`](consumptionrequest.md) response body requires that you set the `appAccountToken` value to a valid value of either a UUID or an empty string. Set the `appAccountToken` value to the value you received in the `CONSUMPTION_REQUEST` notification, or, if you choose not to provide this information, set the value to an empty string.
-
-If you receive a `CONSUMPTION_REQUEST` notification for a transaction, find its associated `appAccountToken` value as follows:
-
-- If you receive App Store Server Notifications version 2, the `appAccountToken` value is in [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransactionDecodedPayload).
-- If you receive App Store Server Notifications version 1, the `appAccountToken` value is in [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/AppStoreServerNotifications/unified_receipt/Latest_receipt_info-data.dictionary).
-
-The `appAccountToken` value may be an empty string if your app doesn’t use app account tokens.
-
-For more information about App Store Server Notifications versions, see [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-changelog).
-
 ## See Also
 
 - [type accountTenure](accounttenure.md)
   The age of the customer’s account.
 - [type consumptionStatus](consumptionstatus.md)
-  A value that indicates the extent to which the customer consumed the in-app purchase.
+  A value that indicates the extent to which the customer consumed the In-App Purchase.
 - [type customerConsented](customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type deliveryStatus](deliverystatus.md)
-  A value that indicates whether the app successfully delivered an in-app purchase that works properly.
+- [type deliveryStatusV1](deliverystatusv1.md)
+  A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 - [type lifetimeDollarsPurchased](lifetimedollarspurchased.md)
   A value that indicates the dollar amount of in-app purchases the customer has made in your app, since purchasing the app, across all platforms.
 - [type lifetimeDollarsRefunded](lifetimedollarsrefunded.md)
@@ -55,7 +42,7 @@ For more information about App Store Server Notifications versions, see [`App St
   The platform on which the customer consumed the in-app purchase.
 - [type playTime](playtime.md)
   A value that indicates the amount of time that the customer used the app.
-- [type refundPreference](refundpreference.md)
+- [type refundPreferenceV1](refundpreferencev1.md)
   A value that indicates your preferred outcome for the refund request.
 - [type sampleContentProvided](samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.

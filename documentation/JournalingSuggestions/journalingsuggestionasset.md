@@ -54,10 +54,6 @@ When a person makes a selection in a [`JournalingSuggestionsPicker`](journalings
   A view that lists different types of recent events in a person’s life.
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
-- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
-  The scheduled configuration settings for your app.
-- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
-  A token you use to modify the content of the presentation.
 
 
 ---

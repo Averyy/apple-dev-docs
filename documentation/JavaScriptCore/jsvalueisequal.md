@@ -21,7 +21,7 @@ func JSValueIsEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRef!, _ 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two values are equal according to the JavaScript `==` operator; [`false`](https://developer.apple.com/documentation/swift/false) if they’re unequal or the system throws an exception.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the two values are equal according to the JavaScript `==` operator; [`false`](https://developer.apple.com/documentation/Swift/false) if they’re unequal or the system throws an exception.
 
 ## Parameters
 

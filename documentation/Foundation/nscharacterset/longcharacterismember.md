@@ -22,7 +22,7 @@ func longCharacterIsMember(_ theLongChar: UTF32Char) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `theLongChar` is in the receiver, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `theLongChar` is in the receiver, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

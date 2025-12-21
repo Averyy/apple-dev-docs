@@ -50,10 +50,8 @@ Add the sound classifier’s Core ML model to an Xcode project and use it to cre
 ## Topics
 
 ### Training a sound classifier asynchronously
-- [static func train(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-5hdqg.md)
+- [static train(trainingData:parameters:sessionParameters:)](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:).md)
   Begins an asynchronous sound classifier training session with a training dataset represented by a data source.
-- [static func train(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-6z4c8.md)
-  Begins an asynchronous sound classifier training session with a training dataset represented by a dictionary.
 - [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
   Creates an asynchronous training session for a sound classifier.
 - [static func resume(MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/resume(_:).md)
@@ -68,20 +66,15 @@ Add the sound classifier’s Core ML model to an Xcode project and use it to cre
 - [init(checkpoint: MLCheckpoint) throws](mlsoundclassifier/init(checkpoint:).md)
   Creates a sound classifier from a training session checkpoint.
 ### Training a sound classifier synchronously
-- [init(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters) throws](mlsoundclassifier/init(trainingdata:parameters:)-bztx.md)
+- [init(trainingData:parameters:)](mlsoundclassifier/init(trainingdata:parameters:).md)
   Creates a sound classifier with a training dataset represented by a data source.
-- [init(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters) throws](mlsoundclassifier/init(trainingdata:parameters:)-83tih.md)
-  Creates a sound classifier with a training dataset represented by a dictionary.
-### Assessing model accuracy
+### Evaluating a sound classifier
+- [func evaluation(on:)](mlsoundclassifier/evaluation(on:).md)
+  Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a data source.
 - [var trainingMetrics: MLClassifierMetrics](mlsoundclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 - [var validationMetrics: MLClassifierMetrics](mlsoundclassifier/validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
-### Evaluating a sound classifier
-- [func evaluation(on: MLSoundClassifier.DataSource) -> MLClassifierMetrics](mlsoundclassifier/evaluation(on:)-7fmux.md)
-  Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a data source.
-- [func evaluation(on: [String : [URL]]) -> MLClassifierMetrics](mlsoundclassifier/evaluation(on:)-8kplo.md)
-  Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a dictionary.
 ### Testing a sound classifier
 - [func predictions(from: [URL]) throws -> [String]](mlsoundclassifier/predictions(from:).md)
   Generates predictions for an array of audio files.

@@ -31,7 +31,7 @@
 ### Image sequence analysis
 - [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting Human Actions in a Live Video Feed](../createml/detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.
@@ -274,6 +274,8 @@
   Utility methods to determine the geometries of various Vision types.
 - [class VNVideoProcessor](vnvideoprocessor.md)
   An object that performs offline analysis of video content.
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
 ### Common data types
 - [class VNCircle](vncircle.md)
   An immutable 2D circle represented by its center point and radius.
@@ -319,9 +321,6 @@
   A constant for specifying an unspecified request revision.
 ### Macros
 - [Macros](vision-macros.md)
-### Structures
-- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
-  Options to pass to the video processor when adding requests.
 
 
 ---

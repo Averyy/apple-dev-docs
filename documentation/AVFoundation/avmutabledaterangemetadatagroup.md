@@ -22,10 +22,10 @@ class AVMutableDateRangeMetadataGroup
 
 ## Topics
 
-### Configuring the Metadata
+### Configuring the metadata
 - [var items: [AVMetadataItem]](avmutabledaterangemetadatagroup/items.md)
   An array of associated metadata items.
-### Configuring the Date Range
+### Configuring the date range
 - [var startDate: Date](avmutabledaterangemetadatagroup/startdate.md)
   The start date for the metadata date range group.
 - [var endDate: Date?](avmutabledaterangemetadatagroup/enddate.md)
@@ -47,7 +47,7 @@ class AVMutableDateRangeMetadataGroup
 
 ## See Also
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVMetadataGroup](avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.

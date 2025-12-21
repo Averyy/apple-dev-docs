@@ -18,7 +18,7 @@ var valuePending: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) if a progress indicator should be displayed, to show users that a configuration item’s value is about to display. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) if a progress indicator should be displayed, to show users that a configuration item’s value is about to display. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

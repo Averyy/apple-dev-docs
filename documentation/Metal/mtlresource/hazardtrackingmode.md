@@ -37,7 +37,7 @@ This value can be either [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmo
 - [enum MTLStorageMode](mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
 - [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
-  The options you use to specify the hazard tracking mode.
+  Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 
 ---

@@ -30,6 +30,8 @@ A user-readable string that represents the measurement.
 
 ## See Also
 
+- [func string<UnitType>(from: Measurement<UnitType>) -> String](measurementformatter/string(from:)-6rcb1.md)
+  Creates and returns a localized string representation of the provided measurement.
 - [func string(from: Unit) -> String](measurementformatter/string(from:)-4hwjz.md)
   Creates and returns a localized string representation of the provided unit of measure.
 

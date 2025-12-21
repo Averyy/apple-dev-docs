@@ -22,10 +22,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [var rawValue: CInt](filedescriptor/accessmode/rawvalue-swift.property.md)
+- [var rawValue: CInt](filedescriptor/accessmode/rawvalue.md)
   The raw C access mode.
-- [FileDescriptor.AccessMode.RawValue](filedescriptor/accessmode/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

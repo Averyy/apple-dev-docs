@@ -6,7 +6,7 @@
 Requests additional margins for drawing beyond the bounds of the window.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

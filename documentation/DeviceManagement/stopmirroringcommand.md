@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to stop mirroring the display on another device.
+The command to stop mirroring the display to another device.
 
 **Availability**:
 - iOS 7.0+
@@ -20,12 +20,12 @@ object StopMirroringCommand
 
 ### Objects
 - [object StopMirroringCommand.Command](stopmirroringcommand/command-data.dictionary.md)
-  The command to stop mirroring the display on another device.
+  The command to stop mirroring the display to another device.
 
 ## See Also
 
 - [object StopMirroringResponse](stopmirroringresponse.md)
-  A response from the device after it processes the command to stop mirroring the display on another device.
+  A response from the device after it processes the command to stop mirroring the display to another device.
 
 
 ---

@@ -22,9 +22,9 @@ var isCancelled: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been cancelled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has been cancelled, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If your thread supports cancellation, it should check this property periodically and exit if it ever returns [`true`](https://developer.apple.com/documentation/swift/true).
+If your thread supports cancellation, it should check this property periodically and exit if it ever returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

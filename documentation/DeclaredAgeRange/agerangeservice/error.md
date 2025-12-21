@@ -6,10 +6,10 @@
 An error that occurs when an age range request fails.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -21,20 +21,9 @@ enum Error
 
 ### Interpreting error responses
 - [AgeRangeService.Error.notAvailable](agerangeservice/error/notavailable.md)
-  The system was unable to share the person’s age.
+  Indicates the system was unable to share the person’s age range.
 - [AgeRangeService.Error.invalidRequest](agerangeservice/error/invalidrequest.md)
-  The request is invalid.
-### Comparing values
-- [static func == (AgeRangeService.Error, AgeRangeService.Error) -> Bool](agerangeservice/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [var hashValue: Int](agerangeservice/error/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](agerangeservice/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](agerangeservice/error/equatable-implementations.md)
-- [Error Implementations](agerangeservice/error/error-implementations.md)
-- [LocalizedError Implementations](agerangeservice/error/localizederror-implementations.md)
+  Indicates your request contains invalid parameters or configuration.
 
 ## Relationships
 

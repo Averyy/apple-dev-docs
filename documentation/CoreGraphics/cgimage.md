@@ -22,7 +22,7 @@ class CGImage
 
 #### Overview
 
-A bitmap (or sampled) image is a rectangular array of pixels, with each pixel representing a single sample or data point in a source image.
+A bitmap image is a rectangular array of pixels, each of which represents a single sample or data point from a source image.
 
 ## Topics
 
@@ -81,7 +81,9 @@ A bitmap (or sampled) image is a rectangular array of pixels, with each pixel re
 ### Creating image masks
 - [init?(maskWidth: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool)](cgimage/init(maskwidth:height:bitspercomponent:bitsperpixel:bytesperrow:provider:decode:shouldinterpolate:).md)
   Creates a bitmap image mask from data supplied by a data provider.
-### High dynamic range
+### Adopting high dynamic range (HDR)
+- [Enhancing high dynamic range image rendering](adopting-advancements-in-hdr-image-rendering.md)
+  Improve your app’s High Dynamic Range (HDR) image support with metadata.
 - [var contentHeadroom: Float](cgimage/contentheadroom.md)
 - [var calculatedContentHeadroom: Float](cgimage/calculatedcontentheadroom.md)
 - [var contentAverageLightLevel: Float](cgimage/contentaveragelightlevel.md)

@@ -6,8 +6,8 @@
 Returns a tracking area which is create on the drawable’s list of tracking areas.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

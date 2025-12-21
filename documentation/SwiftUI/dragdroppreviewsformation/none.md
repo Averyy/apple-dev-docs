@@ -6,7 +6,7 @@
 Drag images maintain their set positions relative to each other.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

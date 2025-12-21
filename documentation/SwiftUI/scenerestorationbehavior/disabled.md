@@ -7,7 +7,7 @@ The disabled behavior. The scene’s windows will not be restored.
 
 **Availability**:
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

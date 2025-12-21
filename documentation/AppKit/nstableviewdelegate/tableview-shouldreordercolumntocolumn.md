@@ -17,11 +17,11 @@ optional func tableView(_ tableView: NSTableView, shouldReorderColumn columnInde
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the column reordering should be allowed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the column reordering should be allowed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-When a column is initially dragged by the user, the delegate is first called with a `newColumnIndex` value of `-1`. Returning [`false`](https://developer.apple.com/documentation/swift/false) will disallow that column from being reordered at all. Returning [`true`](https://developer.apple.com/documentation/swift/true) allows it to be reordered, and the delegate will be called again when the column reaches a new location.
+When a column is initially dragged by the user, the delegate is first called with a `newColumnIndex` value of `-1`. Returning [`false`](https://developer.apple.com/documentation/Swift/false) will disallow that column from being reordered at all. Returning [`true`](https://developer.apple.com/documentation/Swift/true) allows it to be reordered, and the delegate will be called again when the column reaches a new location.
 
 The actual [`NSTableColumn`](nstablecolumn.md) instance can be retrieved from the [`tableColumns`](nstableview/tablecolumns.md) array.
 

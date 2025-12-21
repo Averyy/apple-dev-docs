@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: class
 
-A container for coordinate values, direction vectors, matrices, and other non-scalar values, typically used in Core Image for filter parameters.
+The Core Image class that defines a vector object.
 
 **Availability**:
 - iOS 5.0+
@@ -19,27 +19,33 @@ A container for coordinate values, direction vectors, matrices, and other non-sc
 class CIVector
 ```
 
+#### Overview
+
+A `CIVector` can store one or more `CGFloat` in one object. They can store a group of float values for a variety of different uses such as coordinate points, direction vectors, geometric rectangles, transform matrices, convolution weights, or just a list a parameter values.
+
+You use `CIVector` objects in conjunction with other Core Image classes, such as [`CIFilter`](cifilter-swift.class.md) and [`CIKernel`](cikernel.md).  Many of the built-in Core Image filters have one or more `CIVector` inputs that you can set to affect the filter’s behavior.
+
 ## Topics
 
 ### Initializing a Vector
 - [init(values: UnsafePointer<CGFloat>, count: Int)](civector/init(values:count:).md)
-  Initializes a vector with the provided values.
+  Initialize a Core Image vector object with the specified the values.
 - [convenience init(x: CGFloat)](civector/init(x:).md)
-  Initializes the first position of a vector with the provided values.
+  Initialize a Core Image vector object with one value.
 - [convenience init(x: CGFloat, y: CGFloat)](civector/init(x:y:).md)
-  Initializes the first two positions of a vector with the provided values.
+  Initialize a Core Image vector object with two values.
 - [convenience init(x: CGFloat, y: CGFloat, z: CGFloat)](civector/init(x:y:z:).md)
-  Initializes the first three positions of a vector with the provided values.
+  Initialize a Core Image vector object with three values.
 - [convenience init(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat)](civector/init(x:y:z:w:).md)
-  Initializes four positions of a vector with the provided values.
+  Initialize a Core Image vector object with four values.
 - [convenience init(string: String)](civector/init(string:).md)
-  Initializes a vector with values provided in a string representation.
+  Initialize a Core Image vector object with values provided in a string representation.
 - [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:).md)
-  Initializes a vector that is initialized with values provided by a `CGAffineTransform` structure.
+  Initialize a Core Image vector object with six values provided by a `CGAffineTransform` structure.
 - [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:).md)
-  Initializes a vector that is initialized with values provided by a `CGPoint` structure.
+  Initialize a Core Image vector object with two values provided by a `CGPoint` structure.
 - [convenience init(cgRect: CGRect)](civector/init(cgrect:).md)
-  Initializes a vector that is initialized with values provided by a `CGRect` structure.
+  Initialize a Core Image vector object with four values provided by a `CGRect` structure.
 ### Getting Values From a Vector
 - [func value(at: Int) -> CGFloat](civector/value(at:).md)
   Returns a value from a specific position in the vector.
@@ -52,15 +58,15 @@ class CIVector
 - [var z: CGFloat](civector/z.md)
   The value located in the third position in the vector.
 - [var w: CGFloat](civector/w.md)
-  The value located in the fourth position in the vector.
+  The value located in the forth position in the vector.
 - [var stringRepresentation: String](civector/stringrepresentation.md)
-  The string representation of the vector.
+  Returns a formatted string with all the values of a `CIVector`.
 - [var cgAffineTransformValue: CGAffineTransform](civector/cgaffinetransformvalue.md)
-  The values in the vector represented as an affine transform.
+  Returns the values in the vector as a `CGAffineTransformValue` structure.
 - [var cgPointValue: CGPoint](civector/cgpointvalue.md)
-  The values in the vector as a Core Graphics point structure.
+  Returns the values in the vector as a `CGPoint` structure.
 - [var cgRectValue: CGRect](civector/cgrectvalue.md)
-  The values in the vector as a Core Graphics rectangle structure.
+  Returns the values in the vector as a `CGRect` structure.
 
 ## Relationships
 
@@ -86,7 +92,7 @@ class CIVector
 - [class CIRAWFilter](cirawfilter.md)
   A filter subclass that produces an image by manipulating RAW image sensor data from a digital camera or scanner.
 - [class CIColor](cicolor.md)
-  The component values defining a color in a specific color space.
+  The Core Image class that defines a color object.
 
 
 ---

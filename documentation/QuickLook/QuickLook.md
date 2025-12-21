@@ -43,14 +43,14 @@ To provide a data-based preview extension, implement a subclass of [`QLPreviewPr
 ### Previews
 - [class QLPreviewController](qlpreviewcontroller.md)
   A specialized view controller for previewing an item.
-- [protocol QLPreviewItem : NSObjectProtocol](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.
 - [Previews or thumbnail images for macOS 10.14 or earlier](previews-or-thumbnail-images-for-macos-10-14-or-earlier.md)
   Create thumbnail images or previews of common files and custom file types in earlier versions of macOS.
 ### Preview extensions
-- [protocol QLPreviewingController : NSObjectProtocol](../QuickLookUI/QLPreviewingController.md)
+- [protocol QLPreviewingController](../QuickLookUI/QLPreviewingController.md)
   A protocol for implementing a custom controller to create previews of files.
 ### Data-based preview extensions
 - [class QLPreviewProvider](../QuickLookUI/QLPreviewProvider.md)

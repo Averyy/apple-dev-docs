@@ -22,7 +22,7 @@ func setProperty(_ property: Any?, forKey key: Stream.PropertyKey) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value is accepted by the receiver, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value is accepted by the receiver, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

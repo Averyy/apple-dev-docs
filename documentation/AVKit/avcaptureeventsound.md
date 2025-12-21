@@ -6,8 +6,8 @@
 A sound object for a capture event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,17 +15,21 @@ A sound object for a capture event.
 class AVCaptureEventSound
 ```
 
+#### Overview
+
+> ❗ **Important**: To use AirPods Camera Control, it must be available in your country or region. AirPods Camera Control is not currently available in the European Union.
+
 ## Topics
 
 ### Creating a sound
-- [init(url: URL!) throws](avcaptureeventsound/init(url:).md)
-  Initializer for an AVCaptureEventSound with a custom sound.
+- [init(url: URL) throws](avcaptureeventsound/init(url:).md)
+  Creates a sound object for a capture event.
 ### Accessing default sounds
-- [class var cameraShutter: AVCaptureEventSound!](avcaptureeventsound/camerashutter.md)
+- [class var cameraShutter: AVCaptureEventSound](avcaptureeventsound/camerashutter.md)
   The default sound for photo capture.
-- [class var beginVideoRecording: AVCaptureEventSound!](avcaptureeventsound/beginvideorecording.md)
+- [class var beginVideoRecording: AVCaptureEventSound](avcaptureeventsound/beginvideorecording.md)
   The default sound for starting a video recording.
-- [class var endVideoRecording: AVCaptureEventSound!](avcaptureeventsound/endvideorecording.md)
+- [class var endVideoRecording: AVCaptureEventSound](avcaptureeventsound/endvideorecording.md)
   The default sound for ending a video recording.
 
 ## Relationships

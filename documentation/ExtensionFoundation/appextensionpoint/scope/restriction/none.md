@@ -3,13 +3,13 @@
 **Framework**: ExtensionFoundation  
 **Kind**: case
 
-Only app extension contained in the current app may bind to the extension point
+A value that allows app extensions in any app to bind to the host app.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 - visionOS 1.1+
 
 ## Declaration
@@ -17,6 +17,11 @@ Only app extension contained in the current app may bind to the extension point
 ```swift
 case none
 ```
+
+## See Also
+
+- [AppExtensionPoint.Scope.Restriction.application](appextensionpoint/scope/restriction/application.md)
+  A value that requires an app extension to reside inside the same app to which it’s binding.
 
 
 ---

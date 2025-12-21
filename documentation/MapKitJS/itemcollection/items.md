@@ -11,18 +11,19 @@ A nested list of annotations, overlays, and other item collections.
 ## Declaration
 
 ```swift
-attribute (mapkit.Annotation|mapkit.Overlay|ItemCollection)[] items;
+get items(): Item[];
+set items(items: Item | Item[] | null);
 ```
 
 #### Discussion
 
-Access the original GeoJSON data in the [`data`](itemcollection/data.md) object. To retrieve the data as MapKit JS items, use the [`items`](itemcollection/items.md) or [`getFlattenedItemList`](itemcollection/getflatteneditemlist.md) objects.
+Access the original GeoJSON data in the [`data`](itemcollection/data.md) object. To retrieve the data as MapKit JS items, use the [`items`](itemcollection/items.md) or [`getFlattenedItemList()`](itemcollection/getflatteneditemlist.md) objects.
 
 ## See Also
 
 - [data](itemcollection/data.md)
   The raw GeoJSON data.
-- [getFlattenedItemList](itemcollection/getflatteneditemlist.md)
+- [getFlattenedItemList()](itemcollection/getflatteneditemlist.md)
   A flattened array of items that includes annotations and overlays.
 
 

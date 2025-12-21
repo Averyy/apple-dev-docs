@@ -34,24 +34,15 @@ protocol SupervisedTabularEstimator<Transformer, Annotation>
 - [associatedtype Transformer : TabularTransformer](supervisedtabularestimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-1x6qv.md)
-  Composes this tabular supervised estimator with a tabular estimator.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-54zun.md)
-  Composes this supervised tabular estimator with a tabular transformer.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedtabularestimator/appending(_:)-r8hb.md)
+- [func appending(_:)](supervisedtabularestimator/appending(_:).md)
   Composes this supervised tabular estimator with another supervised tabular estimator.
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](supervisedtabularestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
 ### Fitting
 - [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedtabularestimator/fitted(to:validateon:eventhandler:).md)
   Fits a transformer to a data frame
 - [func fitted(to: DataFrame, validateOn: DataFrame?) async throws -> Self.Transformer](supervisedtabularestimator/fitted(to:validateon:).md)
 ### Encoding and decoding
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](supervisedtabularestimator/encode(_:to:)-3db99.md)
-  Encodes a fitted encodable transformer.
+- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](supervisedtabularestimator/encode(_:to:).md)
+  Encodes a fitted transformer.
 - [func decode(from: inout any EstimatorDecoder) throws -> Self.Transformer](supervisedtabularestimator/decode(from:).md)
   Decodes a previously fitted transformer.
 

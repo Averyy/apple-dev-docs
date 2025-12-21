@@ -6,9 +6,9 @@
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.4+
 
 ## Declaration
 
@@ -24,14 +24,6 @@ struct ManagedContentView<Icon> where Icon : View
   Create a view with the layout of a managed app view and customized labels using localized string keys.
 - [init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol, tertiaryLabel: any StringProtocol, quaternaryLabel: any StringProtocol, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](managedcontentview/init(primarylabel:secondarylabel:tertiarylabel:quaternarylabel:offerstate:offeraction:icon:)-8l3xw.md)
   Create a content view with the layout of a managed app view and customized labels using strings.
-### Inspecting the view
-- [var body: some View](managedcontentview/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [ManagedContentView.Body](managedcontentview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](managedcontentview/view-implementations.md)
 
 ## Relationships
 

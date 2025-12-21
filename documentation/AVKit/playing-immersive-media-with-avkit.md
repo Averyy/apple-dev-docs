@@ -5,8 +5,8 @@
 Adopt the system playback interface to provide an immersive video watching experience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

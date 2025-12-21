@@ -27,8 +27,6 @@ struct Base64DecodingOptions
 ### Constants
 - [static var ignoreUnknownCharacters: NSData.Base64DecodingOptions](nsdata/base64decodingoptions/ignoreunknowncharacters.md)
   Modify the decoding algorithm so that it ignores unknown non-Base-64 bytes, including line ending characters.
-- [static var ignoreUnknownCharacters: NSData.Base64DecodingOptions](nsdata/base64decodingoptions/ignoreunknowncharacters.md)
-  Modify the decoding algorithm so that it ignores unknown non-Base-64 bytes, including line ending characters.
 
 ## Relationships
 

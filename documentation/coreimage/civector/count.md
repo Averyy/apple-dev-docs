@@ -30,15 +30,15 @@ var count: Int { get }
 - [var z: CGFloat](civector/z.md)
   The value located in the third position in the vector.
 - [var w: CGFloat](civector/w.md)
-  The value located in the fourth position in the vector.
+  The value located in the forth position in the vector.
 - [var stringRepresentation: String](civector/stringrepresentation.md)
-  The string representation of the vector.
+  Returns a formatted string with all the values of a `CIVector`.
 - [var cgAffineTransformValue: CGAffineTransform](civector/cgaffinetransformvalue.md)
-  The values in the vector represented as an affine transform.
+  Returns the values in the vector as a `CGAffineTransformValue` structure.
 - [var cgPointValue: CGPoint](civector/cgpointvalue.md)
-  The values in the vector as a Core Graphics point structure.
+  Returns the values in the vector as a `CGPoint` structure.
 - [var cgRectValue: CGRect](civector/cgrectvalue.md)
-  The values in the vector as a Core Graphics rectangle structure.
+  Returns the values in the vector as a `CGRect` structure.
 
 
 ---

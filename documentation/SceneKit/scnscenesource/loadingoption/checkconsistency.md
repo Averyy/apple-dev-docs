@@ -22,9 +22,9 @@ static let checkConsistency: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If you set this option’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit adds a consistency checking step before initializing or loading contents from scene source. This step delays loading to verify that the format of the scene file matches its specification. If validation fails, SceneKit stops loading and returns an error. Use this option if you need to determine that a scene file is intact and valid before using it.
+If you set this option’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit adds a consistency checking step before initializing or loading contents from scene source. This step delays loading to verify that the format of the scene file matches its specification. If validation fails, SceneKit stops loading and returns an error. Use this option if you need to determine that a scene file is intact and valid before using it.
 
 ## See Also
 

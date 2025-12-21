@@ -6,7 +6,7 @@
 Creates a configuration with a set of anchor capabilities and scene understanding capabilities.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

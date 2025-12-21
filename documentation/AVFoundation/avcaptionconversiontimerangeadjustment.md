@@ -19,7 +19,7 @@ class AVCaptionConversionTimeRangeAdjustment
 
 ## Topics
 
-### Accessing Time Offsets
+### Accessing time offsets
 - [var startTimeOffset: CMTime](avcaptionconversiontimerangeadjustment/starttimeoffset.md)
   The time value by which the system offsets the start times of captions to correct a problem.
 - [var durationOffset: CMTime](avcaptionconversiontimerangeadjustment/durationoffset.md)

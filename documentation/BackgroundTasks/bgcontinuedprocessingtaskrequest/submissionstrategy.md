@@ -6,8 +6,8 @@
 The ways your app suggests the system handle your task’s submission under varying conditions.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

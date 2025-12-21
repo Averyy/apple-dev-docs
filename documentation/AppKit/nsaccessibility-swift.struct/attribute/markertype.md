@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The type of the marker (`NSString`). See Ruler Marker Type Values for possible values.
+The type of the marker (`NSString`).
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ The type of the marker (`NSString`). See Ruler Marker Type Values for possible v
 ```swift
 static let markerType: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+See [`Ruler Marker Type Values`](ruler-marker-type-values.md) for possible values.
 
 ## See Also
 

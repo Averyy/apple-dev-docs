@@ -25,7 +25,7 @@ An initialized image view object.
 
 #### Discussion
 
-The images you specify are used to configure the initial size of the image view itself. Use constraints and the image view’s content mode to adjust the image view’s final size onscreen. This method disables user interactions for the image view by setting the [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+The images you specify are used to configure the initial size of the image view itself. Use constraints and the image view’s content mode to adjust the image view’s final size onscreen. This method disables user interactions for the image view by setting the [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If you specify an animated image whose duration is greater than `0`, the image view automatically starts playing the animation.
 

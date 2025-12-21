@@ -18,27 +18,10 @@
 struct IntentSchema
 ```
 
-## Topics
-
-### Default Implementations
-- [BooksIntent Implementations](assistantschema/intentschema/booksintent-implementations.md)
-- [BrowserIntent Implementations](assistantschema/intentschema/browserintent-implementations.md)
-- [CameraIntent Implementations](assistantschema/intentschema/cameraintent-implementations.md)
-- [FilesIntent Implementations](assistantschema/intentschema/filesintent-implementations.md)
-- [JournalIntent Implementations](assistantschema/intentschema/journalintent-implementations.md)
-- [MailIntent Implementations](assistantschema/intentschema/mailintent-implementations.md)
-- [PhotosIntent Implementations](assistantschema/intentschema/photosintent-implementations.md)
-- [PresentationIntent Implementations](assistantschema/intentschema/presentationintent-implementations.md)
-- [ReaderIntent Implementations](assistantschema/intentschema/readerintent-implementations.md)
-- [SpreadsheetIntent Implementations](assistantschema/intentschema/spreadsheetintent-implementations.md)
-- [SystemIntent Implementations](assistantschema/intentschema/systemintent-implementations.md)
-- [VisualIntelligenceIntent Implementations](assistantschema/intentschema/visualintelligenceintent-implementations.md)
-- [WhiteboardIntent Implementations](assistantschema/intentschema/whiteboardintent-implementations.md)
-- [WordProcessorIntent Implementations](assistantschema/intentschema/wordprocessorintent-implementations.md)
-
 ## Relationships
 
 ### Conforms To
+- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
 - [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
 - [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
 - [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)

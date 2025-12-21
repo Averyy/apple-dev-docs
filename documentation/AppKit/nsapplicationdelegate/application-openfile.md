@@ -17,11 +17,11 @@ optional func application(_ sender: NSApplication, openFile filename: String) ->
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file was successfully opened or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file was successfully opened or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 
-Sent directly by `theApplication` to the delegate. The method should open the file `filename`, returning [`true`](https://developer.apple.com/documentation/swift/true) if the file is successfully opened, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If the user started up the application by double-clicking a file, the delegate receives the [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md) message before receiving [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). ([`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) is sent before [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md).)
+Sent directly by `theApplication` to the delegate. The method should open the file `filename`, returning [`true`](https://developer.apple.com/documentation/Swift/true) if the file is successfully opened, and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. If the user started up the application by double-clicking a file, the delegate receives the [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md) message before receiving [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). ([`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) is sent before [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md).)
 
 ## Parameters
 

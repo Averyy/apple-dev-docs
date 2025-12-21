@@ -21,17 +21,17 @@ class MTLComputePassSampleBufferAttachmentDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 
-For more context about configuring sample buffer attachments for compute passes, see [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md). That article is one of a series in [`GPU Counters and Counter Sample Buffers`](gpu-counters-and-counter-sample-buffers.md) about sampling Metal hardware counters for performance measurement.
+For more context about configuring sample buffer attachments for compute passes, see [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md). That article is one of a series in [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-buffers.md) about sampling Metal hardware counters for performance measurement.
 
 ## Topics
 
-### Configuring the Sample Buffer Attachment
+### Configuring the sample buffer attachment
 - [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlcomputepasssamplebufferattachmentdescriptor/samplebuffer.md)
-  A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
+  A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
 - [var startOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a compute pass.
 - [var endOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)

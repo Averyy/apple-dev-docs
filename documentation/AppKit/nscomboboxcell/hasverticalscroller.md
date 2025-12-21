@@ -17,9 +17,9 @@ var hasVerticalScroller: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the combo box displays a vertical scroller; when the value is [`false`](https://developer.apple.com/documentation/swift/false), it does not. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Note that the scroller is displayed even if the pop-up list contains fewer items than will fit in the area specified for display.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the combo box displays a vertical scroller; when the value is [`false`](https://developer.apple.com/documentation/Swift/false), it does not. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). Note that the scroller is displayed even if the pop-up list contains fewer items than will fit in the area specified for display.
 
-If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) and the combo box cell has more list items (either in its internal item list or from its data source) than are allowed by [`numberOfVisibleItems`](nscomboboxcell/numberofvisibleitems.md), only a subset are displayed. The [`NSComboBoxCell`](nscomboboxcell.md) `scroll...` methods can be used to position this subset within the pop-up list.
+If you set this property to [`false`](https://developer.apple.com/documentation/Swift/false) and the combo box cell has more list items (either in its internal item list or from its data source) than are allowed by [`numberOfVisibleItems`](nscomboboxcell/numberofvisibleitems.md), only a subset are displayed. The [`NSComboBoxCell`](nscomboboxcell.md) `scroll...` methods can be used to position this subset within the pop-up list.
 
 ## See Also
 

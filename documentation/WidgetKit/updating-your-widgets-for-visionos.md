@@ -13,7 +13,10 @@ Widgets in visionOS work like widgets on other platforms, they:
 - Have interaction, animation, networking, and location access capabilities
 - Update their content with timelines and WidgetKit push notifications you send with the Apple Push Notification service (APNs)
 
-visionOS supports all system family widget sizes, from [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) to [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) and [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md).
+visionOS supports all system family widget sizes, from [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) to [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) and [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md). However, supporting extra-large widgets in visionOS depends on whether your app is a visionOS app or a compatible iOS or iPadOS app:
+
+- To add an extra-large widget to your visionOS app, use [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md).
+- To add an extra-large visionOS widget to a compatible iOS and iPadOS app, use the `systemExtraLarge` widget family. The extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) widget of a visionOS app.
 
 If your iPhone or iPad app already includes widgets and you enable visionOS compatibility mode, they automatically adopt new spatial and visual treatments for visionOS. However, widgets in visionOS are three-dimensional objects, and have additional capabilities that help them feel at home in a person’s surroundings, keeping information from your app ambient, relevant, and close by.
 
@@ -61,7 +64,7 @@ struct CaffeineTrackerWidget: Widget {
         .configurationDisplayName("Caffeine Tracker")
         .supportedMountingStyles([.elevated])
         .widgetTexture(.paper)
-        .supportedFamilies([.systemExtraLarge, .systemExtraLargePortrait])
+        .supportedFamilies([.systemExtraLarge])
     }
 }
 ```
@@ -111,13 +114,11 @@ struct TotalCaffeineView: View {
 
 ## See Also
 
-- [@MainActor @preconcurrency func widgetTexture(_ material: WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
-- [@MainActor @preconcurrency func supportedMountingStyles(_ styles: [WidgetMountingStyle]) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

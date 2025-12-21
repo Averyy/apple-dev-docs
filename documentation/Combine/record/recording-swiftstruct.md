@@ -22,27 +22,26 @@ struct Recording
 
 ## Topics
 
-### Initializers
+### Creating a recording
 - [init()](record/recording-swift.struct/init.md)
   Set up a recording in a state ready to receive output.
 - [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/init(output:completion:).md)
   Set up a complete recording with the specified output and completion.
-### Instance Properties
-- [var completion: Subscribers.Completion<Failure>](record/recording-swift.struct/completion.md)
-  The completion which will be sent to a `Subscriber`.
-- [var output: [Output]](record/recording-swift.struct/output.md)
-  The output which will be sent to a `Subscriber`.
-### Instance Methods
-- [func encode(into: any Encoder) throws](record/recording-swift.struct/encode(into:).md)
+### Receiving elements
 - [func receive(Record<Output, Failure>.Recording.Input)](record/recording-swift.struct/receive(_:).md)
   Add an output to the recording.
+### Receiving life cycle events
 - [func receive(completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/receive(completion:).md)
   Add a completion to the recording.
-### Type Aliases
+### Encoding
+- [func encode(into: any Encoder) throws](record/recording-swift.struct/encode(into:).md)
+### Inspecting publisher properties
+- [var output: [Output]](record/recording-swift.struct/output.md)
+  The output which will be sent to a `Subscriber`.
+- [var completion: Subscribers.Completion<Failure>](record/recording-swift.struct/completion.md)
+  The completion which will be sent to a `Subscriber`.
+### Declaring supporting types
 - [Record.Recording.Input](record/recording-swift.struct/input.md)
-### Default Implementations
-- [Decodable Implementations](record/recording-swift.struct/decodable-implementations.md)
-- [Encodable Implementations](record/recording-swift.struct/encodable-implementations.md)
 
 ## Relationships
 
@@ -50,6 +49,11 @@ struct Recording
 - [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+
+## See Also
+
+- [let recording: Record<Output, Failure>.Recording](record/recording-swift.property.md)
+  The recorded output and completion.
 
 
 ---

@@ -10,8 +10,8 @@ Browse notable changes in [`MapKit JS`](https://developer.apple.comhttps://devel
 
 #### June 2025
 
-- Render Look Around views and Look Around previews that allow someone to see a street-level view of a place by using [`mapkit.LookAround`](https://developer.apple.com/documentation/MapKitJS/mapkit.LookAround) and [`mapkit.LookAroundPreview`](https://developer.apple.com/documentation/MapKitJS/mapkit.LookAroundPreview).
-- Request cycling directions and ETAs using the [`Cycling`](https://developer.apple.com/documentation/MapKitJS/mapkit.Directions.Transport/Cycling) transport type.
+- Render Look Around views and Look Around previews that allow someone to see a street-level view of a place by using [`LookAround`](https://developer.apple.com/documentation/MapKitJS/LookAround) and [`LookAroundPreview`](https://developer.apple.com/documentation/MapKitJS/LookAroundPreview).
+- Request cycling directions and ETAs using the [`Cycling`](https://developer.apple.com/documentation/MapKitJS/TransportType/Cycling) transport type.
 
 #### June 2024
 

@@ -5,10 +5,10 @@
 Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -19,7 +19,7 @@ Learn how to incorporate live speech-to-text transcription into your app with Sp
 - [actor SpeechAnalyzer](speechanalyzer.md)
   Analyzes spoken audio content in various ways and manages the analysis session.
 - [class AssetInventory](assetinventory.md)
-  Before using `SpeechAnalyzer`, you must install the assets required by the modules you use. These assets are machine-learning models downloaded from Apple’s servers.
+  Manages the assets that are necessary for transcription or other analyses.
 
 
 ---

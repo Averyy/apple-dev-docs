@@ -22,10 +22,6 @@ struct MEDecodeFrameStatus
 ### Inspecting a status
 - [static var frameDropped: MEDecodeFrameStatus](medecodeframestatus/framedropped.md)
   A frame decode operation status that indicates the system dropped the output of the frame for a reason other than an error.
-### Default Implementations
-- [Equatable Implementations](medecodeframestatus/equatable-implementations.md)
-- [OptionSet Implementations](medecodeframestatus/optionset-implementations.md)
-- [SetAlgebra Implementations](medecodeframestatus/setalgebra-implementations.md)
 
 ## Relationships
 

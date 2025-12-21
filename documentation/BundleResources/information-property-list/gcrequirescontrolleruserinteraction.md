@@ -36,8 +36,6 @@ For apps built for visionOS, use only a [`visionOS`](information-property-list/g
   A key that ignores the system spatial-audio toggle in Control Center.
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
-  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
@@ -48,6 +46,8 @@ For apps built for visionOS, use only a [`visionOS`](information-property-list/g
   A Boolean value indicating whether the app supports Game Mode.
 - [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
+- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 
 ---

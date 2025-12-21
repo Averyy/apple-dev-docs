@@ -10,7 +10,7 @@ A hit result of a collision cast.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -38,18 +38,12 @@ The frame of reference for the position and normal of the hit depends on the ref
 - [var distance: Float](collisioncasthit/distance.md)
   The distance from the ray origin to the hit, or the convex shape travel distance.
 ### Structures
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-6r489.md)
-  Information returned when ray intersects a triangle mesh.
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-7itg3.md)
+- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
   Information returned when ray intersects a triangle mesh.
 ### Instance Properties
-- [var shapeIndex: Int](collisioncasthit/shapeindex-17tm2.md)
+- [var shapeIndex: Int](collisioncasthit/shapeindex.md)
   The index of the shape that was hit.
-- [var shapeIndex: Int](collisioncasthit/shapeindex-5hawu.md)
-  The index of the shape that was hit.
-- [var triangleHit: CollisionCastHit.TriangleHit?](collisioncasthit/trianglehit-1yhxb.md)
-  Information the system provides when a ray touches or intersects a triangle mesh.
-- [var triangleHit: CollisionCastHit.TriangleHit?](collisioncasthit/trianglehit-940pv.md)
+- [var triangleHit: CollisionCastHit.TriangleHit?](collisioncasthit/trianglehit-swift.property.md)
   Information the system provides when a ray touches or intersects a triangle mesh.
 
 ## Relationships
@@ -59,6 +53,8 @@ The frame of reference for the position and normal of the hit depends on the ref
 
 ## See Also
 
+- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+  Information returned when ray intersects a triangle mesh.
 - [enum CollisionCastQueryType](collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
 - [struct PixelCastHit](pixelcasthit.md)

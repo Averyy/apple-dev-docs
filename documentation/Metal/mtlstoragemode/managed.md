@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -17,18 +17,18 @@ case managed
 
 ## Mentions
 
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Optimizing Texture Data](optimizing-texture-data.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Optimizing texture data](optimizing-texture-data.md)
+- [Adjusting for GPU memory bandwidth tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
 
 #### Discussion
 
-On Intel-based Mac computers, this is the default storage mode for [`MTLTexture`](mtltexture.md) objects. In iOS and tvOS, the managed storage mode isn’t available. With managed storage, you synchronize changes between the CPU and GPU manually. For instructions and examples of resource synchronization, see [`Synchronizing a Managed Resource in macOS`](synchronizing-a-managed-resource-in-macos.md).
+On Intel-based Mac computers, this is the default storage mode for [`MTLTexture`](mtltexture.md) objects. In iOS and tvOS, the managed storage mode isn’t available. With managed storage, you synchronize changes between the CPU and GPU manually. For instructions and examples of resource synchronization, see [`Synchronizing a managed resource in macOS`](synchronizing-a-managed-resource-in-macos.md).
 
-For more guidance on how to choose storage modes, see [`Setting Resource Storage Modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ## See Also
 

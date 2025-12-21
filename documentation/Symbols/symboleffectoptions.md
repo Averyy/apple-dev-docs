@@ -45,10 +45,13 @@ struct SymbolEffectOptions
   A default set of effect options with a preferred speed multiplier.
 ### Structures
 - [SymbolEffectOptions.RepeatBehavior](symboleffectoptions/repeatbehavior.md)
+  The behavior to use when requesting any repetition on a `SymbolEffect`.
 ### Instance Methods
 - [func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-316cr.md)
+  Creates a set of symbol effect options that repeats with a preferred behavior.
 ### Type Methods
 - [static func `repeat`(SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-3klm2.md)
+  Sets the preferred repeat behavior.
 
 ## Relationships
 

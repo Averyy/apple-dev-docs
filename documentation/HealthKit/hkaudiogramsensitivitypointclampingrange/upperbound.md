@@ -18,6 +18,10 @@
 var upperBound: HKQuantity? { get }
 ```
 
+#### Discussion
+
+The upper bound of the clamping range, if any, in dBHL.
+
 
 ---
 

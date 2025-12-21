@@ -13,6 +13,10 @@ Remotely and immediately erase a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+
 #### Discussion
 
 This command allows the server to immediately erase a device, even a locked device, without warning the user. The device sends a response to the server, but it doesn’t retry if it isn’t successful the first time.

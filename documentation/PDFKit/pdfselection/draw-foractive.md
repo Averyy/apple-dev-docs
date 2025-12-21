@@ -21,7 +21,7 @@ func draw(for page: PDFPage, active: Bool)
 
 #### Discussion
 
-The default value is `kPDFDisplayBoxCropBox`. If active is [`true`](https://developer.apple.com/documentation/swift/true), drawing uses `selectedTextBackgroundColor`. If [`false`](https://developer.apple.com/documentation/swift/false), it uses `secondarySelectedControlColor`.
+The default value is `kPDFDisplayBoxCropBox`. If active is [`true`](https://developer.apple.com/documentation/Swift/true), drawing uses `selectedTextBackgroundColor`. If [`false`](https://developer.apple.com/documentation/Swift/false), it uses `secondarySelectedControlColor`.
 
 ## See Also
 

@@ -17,7 +17,7 @@ var autohidesScroller: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the scroller is automatically hidden.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the scroller is automatically hidden.
 
 ## See Also
 

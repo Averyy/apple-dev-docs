@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+If the string has portions tagged with NSInflectionRuleAttributeName that have no format specifiers, create a new string with those portions inflected by following the rule in the attribute.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

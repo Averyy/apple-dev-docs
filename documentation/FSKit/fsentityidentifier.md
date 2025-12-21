@@ -36,8 +36,6 @@ An [`FSEntityIdentifier`](fsentityidentifier.md) is a UUID to identify a contain
   A UUID to uniquely identify this entity.
 - [var qualifier: Data?](fsentityidentifier/qualifier.md)
   An optional piece of data to distinguish entities that otherwise share the same UUID.
-### Default Implementations
-- [Identifiable Implementations](fsentityidentifier/identifiable-implementations.md)
 
 ## Relationships
 

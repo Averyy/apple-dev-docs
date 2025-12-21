@@ -6,8 +6,8 @@
 The app has begun to fade out. It is not re-positioned yet.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

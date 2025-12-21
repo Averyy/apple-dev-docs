@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: method
 
-A delegate method the view controller calls when a connection succeeds.
+Tells the host that the app extension is active and ready to accept an XPC connection.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -18,18 +18,22 @@ A delegate method the view controller calls when a connection succeeds.
 optional func hostViewControllerDidActivate(_ viewController: EXHostViewController)
 ```
 
+## Mentions
+
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+
 #### Discussion
 
-This delegate method gets called when the extension process has launched and the remote scene connects. After this delegate method gets called the host view controller can establish an XPC connection with the scene in the extension process.
+The host view controller calls this method after it launches an app extension and connects to its remote scene. Use this method to establish an XPC connection to the newly created UI instance.
 
 ## Parameters
 
-- `viewController`: The user interface object from the remote process.
+- `viewController`: The host view controller that initiated the connection.
 
 ## See Also
 
 - [func hostViewControllerWillDeactivate(EXHostViewController, error: (any Error)?)](exhostviewcontrollerdelegate/hostviewcontrollerwilldeactivate(_:error:).md)
-  A delegate method the host view controller calls when an extension disconnects.
+  Tells the host that the app extension disconnected and is no longer available.
 
 
 ---

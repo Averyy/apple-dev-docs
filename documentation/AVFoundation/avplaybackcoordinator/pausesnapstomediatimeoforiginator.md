@@ -21,9 +21,9 @@ var pauseSnapsToMediaTimeOfOriginator: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), all participants seek to the originator’s stop time after they pause. Use this setting if it counteracts network delays that result from communicating the originator’s pause state to the other participants.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), all participants seek to the originator’s stop time after they pause. Use this setting if it counteracts network delays that result from communicating the originator’s pause state to the other participants.
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), it’s acceptable for participants to stop at slightly different times, and a pause doesn’t cause the time of other participants to jump back.
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), it’s acceptable for participants to stop at slightly different times, and a pause doesn’t cause the time of other participants to jump back.
 
 ## See Also
 

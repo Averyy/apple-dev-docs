@@ -18,7 +18,7 @@ var isDualCameraDualPhotoDeliverySupported: Bool { get }
 
 #### Discussion
 
-Not all devices and capture formats support dual camera capture. This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes. If a camera or format change causes this property’s value to become [`false`](https://developer.apple.com/documentation/swift/false), the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotooutput/isdualcameradualphotodeliveryenabled.md) property’s value also becomes [`false`](https://developer.apple.com/documentation/swift/false).
+Not all devices and capture formats support dual camera capture. This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes. If a camera or format change causes this property’s value to become [`false`](https://developer.apple.com/documentation/Swift/false), the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotooutput/isdualcameradualphotodeliveryenabled.md) property’s value also becomes [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is key-value observable.
 

@@ -26,7 +26,7 @@ The currently selected [`AVMediaSelectionOption`](avmediaselectionoption.md). Th
 
 #### Discussion
 
-This method returns the currently selected [`AVMediaSelectionOption`](avmediaselectionoption.md) in the specified [`AVMediaSelectionGroup`](avmediaselectiongroup.md), but may return `nil` if media selection group’s [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) is set to [`true`](https://developer.apple.com/documentation/swift/true).
+This method returns the currently selected [`AVMediaSelectionOption`](avmediaselectionoption.md) in the specified [`AVMediaSelectionGroup`](avmediaselectiongroup.md), but may return `nil` if media selection group’s [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

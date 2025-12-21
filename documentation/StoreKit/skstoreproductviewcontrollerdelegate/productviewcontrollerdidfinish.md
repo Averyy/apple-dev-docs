@@ -19,7 +19,7 @@ optional func productViewControllerDidFinish(_ viewController: SKStoreProductVie
 
 #### Discussion
 
-Your delegate should call the [`dismissModalViewControllerAnimated:`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621369-dismissmodalviewcontrolleranimat) method on the view controller that originally presented the store screen. If your app paused any other activities before presenting the store, it can restart those services in this method.
+Your delegate should call the [`dismissModalViewControllerAnimated:`](https://developer.apple.com/documentation/UIKit/UIViewController/dismissModalViewControllerAnimated:) method on the view controller that originally presented the store screen. If your app paused any other activities before presenting the store, it can restart those services in this method.
 
 ## Parameters
 

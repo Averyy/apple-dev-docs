@@ -32,24 +32,8 @@ protocol SupervisedEstimator<Transformer, Annotation>
 - [associatedtype Transformer : Transformer](supervisedestimator/transformer.md)
   The transformer type created by this estimator.
 ### Appending
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>, Self.Annotation>
-](supervisedestimator/appending(_:)-2436m.md)
-  Composes this supervised estimator with a supervised temporal estimator.
-- [func appending<Other>(Other) -> some SupervisedEstimator<ComposedTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedestimator/appending(_:)-36sou.md)
-  Composes this supervised estimator with another supervised estimator.
-- [func appending<Other>(Other) -> some SupervisedEstimator<ComposedTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](supervisedestimator/appending(_:)-48wwd.md)
+- [func appending(_:)](supervisedestimator/appending(_:).md)
   Composes this supervised estimator with an estimator.
-- [func appending<Other>(Other) -> some SupervisedEstimator<ComposedTransformer<Self.Transformer, Other>, Self.Annotation>
-](supervisedestimator/appending(_:)-629ia.md)
-  Composes this supervised estimator with a transformer.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>, Self.Annotation>
-](supervisedestimator/appending(_:)-8mm57.md)
-  Composes this supervised estimator with a temporal estimator.
-- [func appending<Other>(Other) -> some SupervisedTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other>, Self.Annotation>
-](supervisedestimator/appending(_:)-m18k.md)
-  Composes this supervised estimator with a temporal transformer.
 ### Adapting and fitting
 - [func adaptedAsTemporal() -> SupervisedEstimatorToTemporalAdaptor<Self>](supervisedestimator/adaptedastemporal.md)
   Exposes this supervised estimator as a temporal supervised estimator.

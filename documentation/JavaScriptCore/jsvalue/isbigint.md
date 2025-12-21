@@ -17,6 +17,10 @@
 var isBigInt: Bool { get }
 ```
 
+#### Discussion
+
+Check if a JSValue is a BigInt.
+
 
 ---
 

@@ -16,7 +16,7 @@ var javaScriptCanOpenWindowsAutomatically: Bool { get set }
 
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the web view should allow JavaScript to open windows automatically, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](https://developer.apple.com/documentation/Swift/true) if the web view should allow JavaScript to open windows automatically, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Explicit calls to a JavaScript window opener that are activated by user action (such as a button click) are not affected by this setting.
 

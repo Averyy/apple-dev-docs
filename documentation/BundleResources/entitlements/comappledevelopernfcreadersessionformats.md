@@ -25,6 +25,10 @@ To add this entitlement to your app, enable the Near Field Communication Tag Rea
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 - [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
   An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
+- [ISO18092 system codes for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+  A list of FeliCa system codes that the app supports.
+- [ISO7816 application identifiers for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+  A list of application identifiers that the app supports.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
 - [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)

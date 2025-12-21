@@ -22,7 +22,7 @@ var counters: [any MTLCounter] { get }
 
 ## Mentions
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ Check whether a GPU device supports a specific counter by comparing its common n
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
-For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 
 ---

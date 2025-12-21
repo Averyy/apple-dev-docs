@@ -12,6 +12,11 @@
 init(allowedDestinations: TabletopInteraction.AllowedDestinations)
 ```
 
+## See Also
+
+- [init()](tabletopinteraction/configuration/init.md)
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignment: TabletopInteraction.HoverAlignmentBehavior)](tabletopinteraction/configuration/init(alloweddestinations:hoveralignment:).md)
+
 
 ---
 

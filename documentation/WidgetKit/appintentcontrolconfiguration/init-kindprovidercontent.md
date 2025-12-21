@@ -3,14 +3,14 @@
 **Framework**: WidgetKit  
 **Kind**: init
 
-Creates a configuration for a control widget by using a custom intent to provide user-configurable options.
+Creates a configuration for a control that uses a custom app intent to provide user-configurable options.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 

@@ -61,7 +61,7 @@ struct LaunchOptions
 - [NSWorkspace.LaunchConfigurationKey](nsworkspace/launchconfigurationkey.md)
   The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](nsworkspace/launchapplication(at:options:configuration:).md) method.  Each key is optional, and if omitted, default behavior is applied.
 - [NSWorkspace.FileOperationName](nsworkspace/fileoperationname.md)
-  These constants specify different types of file operations used by [`performFileOperation(_:source:destination:files:tag:)`](nsworkspace/performfileoperation(_:source:destination:files:tag:).md).
+  Constants that define types of file operations.
 
 
 ---

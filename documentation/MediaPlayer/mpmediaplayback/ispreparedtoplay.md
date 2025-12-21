@@ -21,7 +21,7 @@ var isPreparedToPlay: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media player is ready to begin playing the queued media items.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the media player is ready to begin playing the queued media items.
 
 ## See Also
 

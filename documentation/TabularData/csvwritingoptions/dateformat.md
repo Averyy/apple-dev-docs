@@ -13,7 +13,6 @@ The format the CSV file generator uses to create date strings.
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

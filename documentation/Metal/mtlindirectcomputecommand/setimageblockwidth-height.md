@@ -28,7 +28,7 @@ func setImageblockWidth(_ width: Int, height: Int)
 ## See Also
 
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
-  Sets the command’s compute pipeline state object.
+  Sets the command’s compute pipeline state.
 - [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)
   Sets a buffer for the compute function.
 - [func setThreadgroupMemoryLength(Int, index: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:index:).md)

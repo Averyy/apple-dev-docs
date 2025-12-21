@@ -24,11 +24,6 @@ struct PushTokenUpdates
   An iterator for accessing individual data entries from the series.
 - [Activity.PushTokenUpdates.Element](activity/pushtokenupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Type Aliases
-- [Activity.PushTokenUpdates.AsyncIterator](activity/pushtokenupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](activity/pushtokenupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

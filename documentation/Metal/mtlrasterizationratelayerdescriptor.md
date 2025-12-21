@@ -29,12 +29,12 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
 
 ## Topics
 
-### Creating a Layer Rasterization Rate Descriptor
+### Creating a layer rasterization rate descriptor
 - [init(sampleCount: MTLSize)](mtlrasterizationratelayerdescriptor/init(samplecount:).md)
   Initializes the layer map with an empty grid.
 - [convenience init(horizontal: [Float], vertical: [Float])](mtlrasterizationratelayerdescriptor/init(horizontal:vertical:).md)
   Initializes a layer rate map with a set of horizontal and vertical rasterization rates.
-### Inspecting the Layer Rate Function Parameters
+### Inspecting the layer rate function parameters
 - [var sampleCount: MTLSize](mtlrasterizationratelayerdescriptor/samplecount.md)
   The number of rows and columns in the layer map.
 - [var maxSampleCount: MTLSize](mtlrasterizationratelayerdescriptor/maxsamplecount.md)
@@ -44,7 +44,7 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
 - [var vertical: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/vertical.md)
   The vertical rasterization rates for the layer map’s rows.
 - [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
-  An array object that contains rasterization rates.
+  An array instance that contains rasterization rates.
 
 ## Relationships
 

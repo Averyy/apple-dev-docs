@@ -20,7 +20,7 @@ case overCurrentContext
 
 #### Discussion
 
-Using this presentation style, the current view controller’s content is displayed over the view controller whose [`definesPresentationContext`](uiviewcontroller/definespresentationcontext.md) property is [`true`](https://developer.apple.com/documentation/swift/true). UIKit may walk up the view controller hierarchy to find a view controller that wants to define the presentation context. The views beneath the presented content are not removed from the view hierarchy when the presentation finishes. So if the presented view controller does not fill the screen with opaque content, the underlying content shows through.
+Using this presentation style, the current view controller’s content is displayed over the view controller whose [`definesPresentationContext`](uiviewcontroller/definespresentationcontext.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). UIKit may walk up the view controller hierarchy to find a view controller that wants to define the presentation context. The views beneath the presented content are not removed from the view hierarchy when the presentation finishes. So if the presented view controller does not fill the screen with opaque content, the underlying content shows through.
 
 When presenting a view controller in a popover, this presentation style is supported only if the transition style is [`UIModalTransitionStyle.coverVertical`](uimodaltransitionstyle/coververtical.md). Attempting to use a different transition style triggers an exception. However, you may use other transition styles (except the partial curl transition) if the parent view controller is not in a popover.
 

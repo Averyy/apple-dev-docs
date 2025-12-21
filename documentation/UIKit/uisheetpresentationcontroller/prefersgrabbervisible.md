@@ -19,9 +19,9 @@ var prefersGrabberVisible: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means the sheet doesn’t show a grabber. A  is a visual affordance that indicates that a sheet is resizable. Showing a grabber may be useful when it isn’t apparent that a sheet can resize or when the sheet can’t dismiss interactively.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which means the sheet doesn’t show a grabber. A  is a visual affordance that indicates that a sheet is resizable. Showing a grabber may be useful when it isn’t apparent that a sheet can resize or when the sheet can’t dismiss interactively.
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) for the system to draw a grabber in the standard system-defined location. The system automatically hides the grabber at appropriate times, like when the sheet is full screen in a compact-height size class or when another sheet presents on top of it.
+Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) for the system to draw a grabber in the standard system-defined location. The system automatically hides the grabber at appropriate times, like when the sheet is full screen in a compact-height size class or when another sheet presents on top of it.
 
 ## See Also
 

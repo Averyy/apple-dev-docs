@@ -36,6 +36,8 @@ typealias AVAudioPacketCount = UInt32
   The number of packets currently in the buffer.
 - [var packetDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>?](avaudiocompressedbuffer/packetdescriptions.md)
   The buffer’s array of packet descriptions.
+- [var packetDependencies: [AudioStreamPacketDependencyDescription]?](avaudiocompressedbuffer/packetdependencies-3a6ln.md)
+  The buffer’s array of packet dependencies.
 
 
 ---

@@ -25,12 +25,12 @@ func finishTransaction(_ transaction: SKPaymentTransaction)
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Finishing a transaction](finishing-a-transaction.md)
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
-- [Testing complete transactions](testing-complete-transactions.md)
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
+- [Testing complete transactions](testing-complete-transactions.md)
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
+- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
 - [Testing resubscribing from the subscriptions page](testing-resubscribing-from-the-subscriptions-page.md)
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 
 #### Discussion
 

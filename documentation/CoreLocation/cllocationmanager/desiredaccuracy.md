@@ -26,7 +26,7 @@ var desiredAccuracy: CLLocationAccuracy { get set }
 
 #### Discussion
 
-The location service does its best to achieve the requested accuracy; however, apps must be prepared to use less accurate data. If your app isn’t authorized to access precise location information (`isAuthorizedForPreciseLocation` is [`false`](https://developer.apple.com/documentation/swift/false)), changes to this property’s value have no effect; the accuracy is always [`kCLLocationAccuracyReduced`](kcllocationaccuracyreduced.md).
+The location service does its best to achieve the requested accuracy; however, apps must be prepared to use less accurate data. If your app isn’t authorized to access precise location information (`isAuthorizedForPreciseLocation` is [`false`](https://developer.apple.com/documentation/Swift/false)), changes to this property’s value have no effect; the accuracy is always [`kCLLocationAccuracyReduced`](kcllocationaccuracyreduced.md).
 
 To reduce your app’s impact on battery life, assign a value to this property that’s appropriate for your usage. For example, if you need the current location only within a kilometer, specify [`kCLLocationAccuracyKilometer`](kcllocationaccuracykilometer.md). More accurate location data also takes more time to become available.
 

@@ -6,11 +6,11 @@
 Creates an instance from the given decoder.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,8 +24,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](communicationtopic/personinformation-swift.struct/encode(to:).md)
-  Performs the inverse of the decoding process.
+- [init(handle: CommunicationHandle, nameComponents: PersonNameComponents?, avatarImage: CGImage?)](communicationtopic/personinformation-swift.struct/init(handle:namecomponents:avatarimage:).md)
+  Creates person information with contact details and optional display information.
 
 
 ---

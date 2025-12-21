@@ -21,7 +21,7 @@ var hasRecurrenceRules: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has recurrence rules; otherwise it does not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the calendar item has recurrence rules; otherwise it does not.
 
 ##### Special Considerations
 

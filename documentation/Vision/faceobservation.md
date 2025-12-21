@@ -8,7 +8,6 @@ An image-analysis request that identifies facial features in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -39,12 +38,11 @@ struct FaceObservation
   The roll angle of a face.
 - [let yaw: Measurement<UnitAngle>](faceobservation/yaw.md)
   The yaw angle of a face.
-### Structures
-- [FaceObservation.CaptureQuality](faceobservation/capturequality-swift.struct.md)
-  An indicator of the quality of a face capture.
-### Instance Properties
+### Getting the capture quality
 - [var captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
   The quality of the face capture.
+- [FaceObservation.CaptureQuality](faceobservation/capturequality-swift.struct.md)
+  An indicator of the quality of a face capture.
 
 ## Relationships
 
@@ -59,21 +57,6 @@ struct FaceObservation
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
-
-## See Also
-
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
-  Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
-  Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
-  Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
-  Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
-  Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
-  Performs the request on a Core Image image and produces observations.
 
 
 ---

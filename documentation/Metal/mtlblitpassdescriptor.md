@@ -21,7 +21,7 @@ class MTLBlitPassDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 
@@ -29,7 +29,7 @@ You can customize an encoder for a blit pass by creating and configuring an [`MT
 
 ## Topics
 
-### Configuring Sample Buffer Attachment Descriptors for a Blit Pass
+### Configuring sample buffer attachment descriptors for a blit pass
 - [var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray](mtlblitpassdescriptor/samplebufferattachments.md)
   An array of counter sample buffer attachments that you configure for a blit pass.
 

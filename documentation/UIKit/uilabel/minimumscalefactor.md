@@ -21,7 +21,7 @@ var minimumScaleFactor: CGFloat { get set }
 
 #### Discussion
 
-If the [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/swift/true), use this property to specify the smallest multiplier for the current font size that yields an acceptable font size for the label’s text. If you specify a value of `0` for this property, the label doesn’t scale the text down. The default value of this property is `0`.
+If the [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/Swift/true), use this property to specify the smallest multiplier for the current font size that yields an acceptable font size for the label’s text. If you specify a value of `0` for this property, the label doesn’t scale the text down. The default value of this property is `0`.
 
 To reveal the text field for editing minimum scale factor in Interface Builder, choose Minimum Font Scale from the Autoshrink pop-up menu in the label’s Attributes inspector.
 

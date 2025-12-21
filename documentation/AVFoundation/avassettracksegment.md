@@ -22,7 +22,7 @@ class AVAssetTrackSegment
 
 ## Topics
 
-### Retrieving Segment Information
+### Retrieving segment information
 - [var timeMapping: CMTimeMapping](avassettracksegment/timemapping.md)
   The time range of the track that this segment presents.
 - [var isEmpty: Bool](avassettracksegment/isempty.md)

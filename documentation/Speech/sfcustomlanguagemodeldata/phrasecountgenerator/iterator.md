@@ -23,6 +23,10 @@ class Iterator
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
 
+## See Also
+
+- [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
+
 
 ---
 

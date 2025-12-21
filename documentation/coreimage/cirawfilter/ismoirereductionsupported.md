@@ -21,7 +21,7 @@ var isMoireReductionSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of moire artifact reduction to apply to the image by setting [`moireReductionAmount`](cirawfilter/moirereductionamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of moire artifact reduction to apply to the image by setting [`moireReductionAmount`](cirawfilter/moirereductionamount.md).
 
 ## See Also
 

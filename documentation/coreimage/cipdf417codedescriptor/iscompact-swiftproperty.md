@@ -19,14 +19,18 @@ A boolean value telling if the PDF417 code is compact.
 var isCompact: Bool { get }
 ```
 
+#### Discussion
+
+Compact PDF417 symbols have abbreviated right-side guard bars.
+
 ## See Also
 
 - [var errorCorrectedPayload: Data](cipdf417codedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the PDF417 code.
+  The error-corrected payload containing the data encoded in the PDF417 code symbol.
 - [var rowCount: Int](cipdf417codedescriptor/rowcount-swift.property.md)
-  The number of rows in the PDF417 code.
+  The number of rows in the PDF417 code symbol.
 - [var columnCount: Int](cipdf417codedescriptor/columncount-swift.property.md)
-  The number of columns in the PDF417 code.
+  The number of columns in the PDF417 code symbol.
 
 
 ---

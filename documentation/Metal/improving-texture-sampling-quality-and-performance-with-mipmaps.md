@@ -1,4 +1,4 @@
-# Improving Texture Sampling Quality and Performance with Mipmaps
+# Improving texture sampling quality and performance with mipmaps
 
 **Framework**: Metal
 
@@ -22,23 +22,23 @@ For example, to filter a 256 x 256 texture to an 8 x 8 rendering, the GPU needs 
 
 Mipmapped textures can also help improve your app’s performance because a GPU uses less memory bandwidth and memory cache by sampling from the smaller mipmaps.
 
-You can create a mipmapped texture and initialize its mipmap chain by following the steps in [`Creating a Mipmapped Texture`](creating-a-mipmapped-texture.md) and [`Generating Mipmap Data`](generating-mipmap-data.md), respectively.
+You can create a mipmapped texture and initialize its mipmap chain by following the steps in [`Creating a mipmapped texture`](creating-a-mipmapped-texture.md) and [`Generating mipmap data`](generating-mipmap-data.md), respectively.
 
 ## See Also
 
-- [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
-- [Dynamically Adjusting Texture Level of Detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

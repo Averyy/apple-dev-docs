@@ -22,7 +22,7 @@ var yawAngle: CGFloat { get }
 
 The yaw angle represents the rotation of the face around the vertical axis. A value of `0.0` yields a face that is looking directly at the camera, whereas a yaw angle of `90` degrees yields a face whose eye line is perpendicular to that of the camera.
 
-You must check the value of the [`hasYawAngle`](avmetadatafaceobject/hasyawangle.md) property before accessing this property. If the value in the [`hasYawAngle`](avmetadatafaceobject/hasyawangle.md) property is [`false`](https://developer.apple.com/documentation/swift/false), reading the value in this property raises an exception.
+You must check the value of the [`hasYawAngle`](avmetadatafaceobject/hasyawangle.md) property before accessing this property. If the value in the [`hasYawAngle`](avmetadatafaceobject/hasyawangle.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), reading the value in this property raises an exception.
 
 ## See Also
 

@@ -61,6 +61,7 @@ object DeclarationBase
 - `Predicate`: (string) The predicate description of the predicate that failed to parse.
 - `Error.Unknown`: An unrecognized NSError was generated. - `Domain`: (string) NSError’s domain.
 - `Code`: (string) NSError’s code.
+- `Error.UnknownDeclarationType`: The declaration type is not known. - `UnknownDeclarationType`: (string) The `Type` of the declaration.
 - `Error.UnknownPayloadKeys`: A declaration contains unknown payloads keys. - `UnknownPayloadKeys`: (array) Array of strings containing each unknown key-path.
 - `Info.NotReferencedByActivation`: A configuration is not referenced in any activation. - `Identifier`: (string) The `Identifier` of the configuration.
 - `ServerToken`: (string) The `ServerToken` of the configuration.

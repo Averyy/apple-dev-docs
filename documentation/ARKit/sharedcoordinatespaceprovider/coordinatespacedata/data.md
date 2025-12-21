@@ -6,7 +6,7 @@
 Extract a `Data` object to be transported over network.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

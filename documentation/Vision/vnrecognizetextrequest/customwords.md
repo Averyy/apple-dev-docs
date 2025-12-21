@@ -25,7 +25,7 @@ var customWords: [String] { get set }
 
 #### Discussion
 
-Custom words take precedence over the standard lexicon. The request ignores this value if [`usesLanguageCorrection`](vnrecognizetextrequest/useslanguagecorrection.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+Custom words take precedence over the standard lexicon. The request ignores this value if [`usesLanguageCorrection`](vnrecognizetextrequest/useslanguagecorrection.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -27,16 +27,6 @@ Your app creates instances of this type in your implementations of [`ContactItem
 ### Identifying the item
 - [ContactItem.Identifier](contactitem/identifier.md)
   The app’s identifier for an item in the contact database.
-### Hashing
-- [func hash(into: inout Hasher)](contactitem/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](contactitem/hashvalue.md)
-  The hash value.
-### Comparing contact items
-- [static func == (ContactItem, ContactItem) -> Bool](contactitem/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](contactitem/equatable-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ var isVirtualDeviceFusionSupported: Bool { get }
 
 When using a virtual capture device, the system can fuse the images from its constituent cameras to improve image quality.
 
-If the current configuration doesn’t support virtual device fusion, your capture requests always resolve [`isVirtualDeviceFusionEnabled`](avcaptureresolvedphotosettings/isvirtualdevicefusionenabled.md) to [`false`](https://developer.apple.com/documentation/swift/false).
+If the current configuration doesn’t support virtual device fusion, your capture requests always resolve [`isVirtualDeviceFusionEnabled`](avcaptureresolvedphotosettings/isvirtualdevicefusionenabled.md) to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is key-value observable.
 

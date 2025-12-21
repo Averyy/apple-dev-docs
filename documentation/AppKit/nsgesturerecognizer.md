@@ -175,7 +175,7 @@ For more information about using the delegate to control the behavior of your ge
   Called when one or more fingers are removed from contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
 - [func touchesMoved(with: NSEvent)](nsgesturerecognizer/touchesmoved(with:).md)
   Called when one or more fingers, associated with an in-progress event, move within an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
-- [func mouseCancelled(NSEvent)](nsgesturerecognizer/mousecancelled(_:).md)
+- [func mouseCancelled(with: NSEvent)](nsgesturerecognizer/mousecancelled(with:).md)
 
 ## Relationships
 

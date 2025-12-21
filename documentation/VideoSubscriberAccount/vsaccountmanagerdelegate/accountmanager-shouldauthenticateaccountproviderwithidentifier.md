@@ -20,7 +20,7 @@ optional func accountManager(_ accountManager: VSAccountManager, shouldAuthentic
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to attempt authentication with the selected provider; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false) to respond with an unsupported provider error.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) to attempt authentication with the selected provider; otherwise, return [`false`](https://developer.apple.com/documentation/Swift/false) to respond with an unsupported provider error.
 
 #### Discussion
 

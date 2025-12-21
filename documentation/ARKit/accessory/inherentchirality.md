@@ -6,7 +6,7 @@
 The hand that this accessory is designed to be held in.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -8,9 +8,9 @@ Create overlays to highlight geographic regions or paths.
 
 You can enhance your maps by adding  shapes that appear on top of the map. There are three overlay shapes:
 
-- Circle ([`mapkit.CircleOverlay`](mapkit.circleoverlay.md))
-- Polyline ([`mapkit.PolylineOverlay`](mapkit.polylineoverlay.md))
-- Polygon ([`mapkit.PolygonOverlay`](mapkit.polygonoverlay.md))
+- Circle ([`CircleOverlay`](circleoverlay.md))
+- Polyline ([`PolylineOverlay`](polylineoverlay.md))
+- Polygon ([`PolygonOverlay`](polygonoverlay.md))
 
 These three objects can satisfy a wide variety of purposes, such as outlining routes, highlighting map areas, enabling users to make selections, and more.
 
@@ -25,20 +25,22 @@ Overlays belong to their own layer that lies above map tiles and below annotatio
 ### Overlays
 - [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
   Configure and respond to overlays to make them interactive.
-- [mapkit.Overlay](mapkit.overlay.md)
-  An abstract base object that defines the methods and attributes for map overlays.
-- [mapkit.Style](mapkit.style.md)
-  A set of observable attributes for overlays, including the color and opacity of strokes and fills, and line styles.
-- [mapkit.CircleOverlay](mapkit.circleoverlay.md)
+- [class Overlay](overlay.md)
+  An abstract base object that defines the methods and properties for map overlays.
+- [class Style](style.md)
+  A set of observable style properties for overlays, including the color and opacity of strokes and fills, and line styles.
+- [class CircleOverlay](circleoverlay.md)
   A circular overlay with a configurable radius that centers on a specific geographic coordinate.
-- [mapkit.PolylineOverlay](mapkit.polylineoverlay.md)
+- [class PolylineOverlay](polylineoverlay.md)
   An overlay of connected line segments that don’t form a closed shape.
-- [mapkit.PolygonOverlay](mapkit.polygonoverlay.md)
+- [class PolygonOverlay](polygonoverlay.md)
   An overlay consisting of one or more points that forms a closed shape.
-- [OverlayOptions](overlayoptions.md)
+- [interface OverlayOptions](overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
-- [mapkit.TileOverlay](mapkit.tileoverlay.md)
+- [class TileOverlay](tileoverlay.md)
   An overlay that covers an area of the map with bitmapped tiles.
+- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+  A type that specifies the URL template for a tile overlay.
 
 ## See Also
 

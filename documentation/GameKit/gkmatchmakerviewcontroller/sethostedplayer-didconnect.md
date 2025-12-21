@@ -20,6 +20,10 @@ Updates the connection status of a player in a hosted game.
 func setHostedPlayer(_ player: GKPlayer, didConnect connected: Bool)
 ```
 
+## Mentions
+
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+
 #### Discussion
 
 When you connect or disconnect a player from your server in a hosted game, use this method to update the player’s status that appears in the matchmaker view controllers on other player’s devices. For example, invoke this method after you connect a player from the [`matchmakerViewController(_:hostedPlayerDidAccept:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:hostedplayerdidaccept:).md) delegate method.

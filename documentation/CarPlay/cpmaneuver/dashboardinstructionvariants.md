@@ -24,8 +24,6 @@ Localize each variant for display to the user, and make sure the array contains 
 
 ## See Also
 
-- [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
-  An array of instruction variants for the maneuver.
 - [var notificationInstructionVariants: [String]](cpmaneuver/notificationinstructionvariants.md)
   An array of instruction variants for notification banners.
 

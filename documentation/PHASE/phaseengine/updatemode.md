@@ -6,12 +6,12 @@
 Modes that determine when the framework consumes API calls and updates internal state.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -47,6 +47,8 @@ To define the manner in which PHASE processes commands and updates internal stat
 
 - [class PHASEEngine](phaseengine.md)
   An object that manages audio assets, controls playback, and configures environmental effects.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 - [class PHASEAssetRegistry](phaseassetregistry.md)
   A central repository of audio assets.
 - [enum PHASENormalizationMode](phasenormalizationmode.md)

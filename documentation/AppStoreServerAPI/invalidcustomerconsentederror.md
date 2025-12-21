@@ -20,10 +20,14 @@ object InvalidCustomerConsentedError
 
 #### Discussion
 
-If the `customerConsented` field in a [`ConsumptionRequest`](consumptionrequest.md) is any value other than `true`, the App Store server rejects the request. For more information, see [`customerConsented`](customerconsented.md).
+If the `customerConsented` field in [`ConsumptionRequest`](consumptionrequest.md) or [`ConsumptionRequestV1`](consumptionrequestv1.md) is any value other than `true`, the App Store server rejects the request. For more information, see [`customerConsented`](customerconsented.md).
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
@@ -48,6 +52,8 @@ If the `customerConsented` field in a [`ConsumptionRequest`](consumptionrequest.
   An error that indicates the value in the user status field is invalid.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

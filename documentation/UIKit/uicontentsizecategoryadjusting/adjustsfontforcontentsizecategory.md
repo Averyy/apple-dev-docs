@@ -26,7 +26,7 @@ var adjustsFontForContentSizeCategory: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to allow the element to update its font when the size category changes. Set the value to [`false`](https://developer.apple.com/documentation/swift/false) to ignore the size category changes.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to allow the element to update its font when the size category changes. Set the value to [`false`](https://developer.apple.com/documentation/Swift/false) to ignore the size category changes.
 
 For this property to take effect, the element’s font must be vended one of the following ways:
 
@@ -35,7 +35,7 @@ For this property to take effect, the element’s font must be vended one of the
 
 Because fonts are immutable, any element that adjusts for an updated content size category doesn’t modify the font itself. Instead, the element replaces the assigned font with a new instance based on the original settings.
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), the element adjusts for a new content size category on a [`didChangeNotification`](uicontentsizecategory/didchangenotification.md).
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), the element adjusts for a new content size category on a [`didChangeNotification`](uicontentsizecategory/didchangenotification.md).
 
 
 ---

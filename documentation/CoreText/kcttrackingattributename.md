@@ -22,7 +22,7 @@ let kCTTrackingAttributeName: CFString
 
 #### Discussion
 
-The value associated with this attribute must be a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd float. The default is `0` (no tracking).
+The value associated with this attribute must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) float. The default is `0` (no tracking).
 
 Tracking adds space, in points, between the specified [`character cluster`](https://developer.apple.comhttps://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries). A positive value increases the spacing between characters, while a negative value brings the characters closer together. For example, setting [`kCTTrackingAttributeName`](kcttrackingattributename.md) to 0.1 adds 0.1 point of spacing between each character of the text.
 

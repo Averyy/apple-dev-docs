@@ -30,11 +30,6 @@ struct PreprocessingEstimator<Preprocessor, Estimator> where Preprocessor : Tran
   The estimator.
 - [var preprocessor: Preprocessor](preprocessingestimator/preprocessor.md)
   The preprocessing transformer.
-### Encoding and decoding
-- [func encode(PreprocessingEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](preprocessingestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 ### Preprocesing and fitting
 - [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](preprocessingestimator/preprocessed(from:eventhandler:).md)
   Preprocesses a sequence of examples.
@@ -48,10 +43,8 @@ struct PreprocessingEstimator<Preprocessor, Estimator> where Preprocessor : Tran
   The intermediate type.
 - [PreprocessingEstimator.Output](preprocessingestimator/output.md)
   The output type.
-- [PreprocessingEstimator.Transformer](preprocessingestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [Estimator Implementations](preprocessingestimator/estimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

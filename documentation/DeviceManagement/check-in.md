@@ -49,6 +49,8 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
   Manage the configuration and behavior of your devices.
 - [Account-driven enrollment](account-driven-enrollment.md)
   Authenticate devices using a user identity-focused workflow.
+- [Migrating managed devices](migrating-managed-devices.md)
+  Migrate managed devices from one device management service to another.
 
 
 ---

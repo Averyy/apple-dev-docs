@@ -22,7 +22,7 @@ func matchesContents(of url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the contents of the file wrapper match the contents of `url`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the contents of the file wrapper match the contents of `url`, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

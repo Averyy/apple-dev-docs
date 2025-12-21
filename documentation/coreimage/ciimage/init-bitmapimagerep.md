@@ -46,7 +46,7 @@ The initialized image object, or `nil` if the object could not be initialized.
 - [init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)](ciimage/init(bitmapdata:bytesperrow:size:format:colorspace:).md)
   Initializes an image object with bitmap data.
 - [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](ciimage/init(imageprovider:size:_:format:colorspace:options:).md)
-  Initializes an image object with  data provided by an image provider, using the specified options.
+  Initializes an image object based on pixels from an image provider object.
 - [init?(depthData: AVDepthData)](ciimage/init(depthdata:).md)
 - [init?(depthData: AVDepthData, options: [String : Any]?)](ciimage/init(depthdata:options:).md)
 - [init?(portaitEffectsMatte: AVPortraitEffectsMatte)](ciimage/init(portaiteffectsmatte:).md)

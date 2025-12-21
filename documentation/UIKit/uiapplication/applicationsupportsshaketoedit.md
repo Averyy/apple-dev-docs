@@ -20,7 +20,7 @@ var applicationSupportsShakeToEdit: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). Set the property to [`false`](https://developer.apple.com/documentation/swift/false) if you don’t want your app to display the Undo and Redo buttons when users shake the device.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). Set the property to [`false`](https://developer.apple.com/documentation/Swift/false) if you don’t want your app to display the Undo and Redo buttons when users shake the device.
 
 ## See Also
 

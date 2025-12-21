@@ -19,6 +19,8 @@ class PHASEPullStreamNodeDefinition
 
 #### Overview
 
+An object for defining a pull stream sound event node when building a sound event.
+
 ## Topics
 
 ### Initializers

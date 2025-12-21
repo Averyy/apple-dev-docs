@@ -10,7 +10,7 @@ An error reported by SafetyKit.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 10.1+
+- watchOS 9.0+
 
 ## Declaration
 
@@ -24,6 +24,7 @@ struct SAError
 - [var localizedDescription: String](saerror/localizeddescription.md)
   Retrieve the localized description for this error.
 - [static var errorDomain: String](saerror/errordomain.md)
+  The domain of the error.
 ### Comparing errors
 - [static func != (Self, Self) -> Bool](saerror/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.

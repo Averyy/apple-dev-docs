@@ -13,7 +13,6 @@ Applies the layer to a set of input objects, writing the result to a set of outp
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

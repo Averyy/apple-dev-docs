@@ -32,15 +32,6 @@ This sequence allows iterating through the microphone audio frames.
   Constructs an iterator.
 - [AudioReader.MicrophoneAsyncBuffers.Iterator](audioreader/microphoneasyncbuffers/iterator.md)
   An async iterator of audio frames.
-- [AudioReader.MicrophoneAsyncBuffers.AsyncIterator](audioreader/microphoneasyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [AudioReader.MicrophoneAsyncBuffers.Feature](audioreader/microphoneasyncbuffers/feature.md)
-  The feature type.
-### Type Aliases
-- [AudioReader.MicrophoneAsyncBuffers.Element](audioreader/microphoneasyncbuffers/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](audioreader/microphoneasyncbuffers/asyncsequence-implementations.md)
 
 ## Relationships
 

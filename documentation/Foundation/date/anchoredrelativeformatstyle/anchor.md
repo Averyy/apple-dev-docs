@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The date the formatted output refers to from the perspective of the input values.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

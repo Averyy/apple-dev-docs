@@ -15,6 +15,18 @@
 func AudioConvertNanosToHostTime(_ inNanos: UInt64) -> UInt64
 ```
 
+#### Return Value
+
+A UInt64 containining the converted nanosecond time.
+
+#### Discussion
+
+Convert the given nanosecond time into a host time.
+
+## Parameters
+
+- `inNanos`: A UInt64 containing the nanosecond time to convert.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

@@ -195,7 +195,7 @@ To learn how to set up your app to process tags that iOS reads in the background
 - [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
   Allow users to scan NFC tags without an app using background tag reading.
 - [NFCReaderUsageDescription](../BundleResources/Information-Property-List/NFCReaderUsageDescription.md)
-  A message that tells the user why the app is requesting access to the device’s NFC hardware.
+  A message that tells people why the app is requesting access to the device’s NFC hardware.
 
 
 ---

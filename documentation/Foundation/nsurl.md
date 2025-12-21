@@ -92,7 +92,7 @@ Security-scoped URLs provide access to resources outside an app’s sandbox. In 
 
 To gain access to a security-scoped URL, you must call the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStartAccessingSecurityScopedResource(_:)) function). For iOS apps, if you use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) to access the URL, it automatically manages the security-scoped URL for you.
 
-If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScopedResource`) returns [`true`](https://developer.apple.com/documentation/swift/true), you must relinquish your access by calling the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStopAccessingSecurityScopedResource(_:)) function). You should relinquish your access as soon as you have finished using the file. After you call these methods, you immediately lose access to the resource in question.
+If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScopedResource`) returns [`true`](https://developer.apple.com/documentation/Swift/true), you must relinquish your access by calling the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStopAccessingSecurityScopedResource(_:)) function). You should relinquish your access as soon as you have finished using the file. After you call these methods, you immediately lose access to the resource in question.
 
 > ⚠️ **Warning**:  If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, using Powerbox, security-scoped bookmarks, or similar APIs, until relaunched.
 
@@ -272,6 +272,7 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
   Writes the URL to the specified pasteboard.
 ### Using Quick Looks
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsurl/customplaygroundquicklook.md)
+  A custom playground Quick Look for this instance.
 ### Constants
 - [NSURL Schemes](nsurl-schemes.md)
   The schemes that the `NSURL` class is able to parse.
@@ -280,6 +281,8 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 
@@ -300,7 +303,7 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 - [NSPasteboardReading](../AppKit/NSPasteboardReading.md)
 - [NSPasteboardWriting](../AppKit/NSPasteboardWriting.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
+- [QLPreviewItem](../QuickLook/QLPreviewItem.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

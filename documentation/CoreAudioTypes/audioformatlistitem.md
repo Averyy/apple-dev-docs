@@ -20,6 +20,8 @@ struct AudioFormatListItem
 
 #### Overview
 
+This struct is used as output from the kAudioFormatProperty_FormatList property
+
 ```None
             an AudioStreamBasicDescription
 ```

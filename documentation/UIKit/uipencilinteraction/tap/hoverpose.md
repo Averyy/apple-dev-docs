@@ -9,6 +9,7 @@ The hover pose of Apple Pencil during a double-tap interaction.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

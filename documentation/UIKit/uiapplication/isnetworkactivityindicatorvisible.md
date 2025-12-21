@@ -19,7 +19,7 @@ var isNetworkActivityIndicatorVisible: Bool { get set }
 
 #### Discussion
 
-Specify [`true`](https://developer.apple.com/documentation/swift/true) if the app should show network activity and [`false`](https://developer.apple.com/documentation/swift/false) if it should not. The default value is [`false`](https://developer.apple.com/documentation/swift/false). A spinning indicator in the status bar shows network activity. The app may explicitly hide or show this indicator.
+Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the app should show network activity and [`false`](https://developer.apple.com/documentation/Swift/false) if it should not. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). A spinning indicator in the status bar shows network activity. The app may explicitly hide or show this indicator.
 
 ## See Also
 

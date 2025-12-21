@@ -19,13 +19,6 @@ A text representation of the error.
 var debugDescription: String { get }
 ```
 
-## See Also
-
-- [MLModelImageFeatureExtractor.Error.invalidInput(_:)](mlmodelimagefeatureextractor/error/invalidinput(_:).md)
-  An error indicating that the mlmodel does not take required input.
-- [MLModelImageFeatureExtractor.Error.invalidOutput(_:)](mlmodelimagefeatureextractor/error/invalidoutput(_:).md)
-  An error indicating that the mlmodel does not produce the required output.
-
 
 ---
 

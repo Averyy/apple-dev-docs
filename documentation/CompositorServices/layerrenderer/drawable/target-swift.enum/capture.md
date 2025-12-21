@@ -6,8 +6,8 @@
 A drawable that will be used for capture purposes, this could be used for video or AirPlay streaming and will be visible to users outside of the device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

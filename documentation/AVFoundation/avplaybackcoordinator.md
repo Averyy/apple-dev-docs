@@ -30,7 +30,7 @@ The framework provides two playback coordinator subclasses that manage different
 
 ## Topics
 
-### Configuring Playback Policies
+### Configuring playback policies
 - [func participantLimitForWaitingOutSuspensions(withReason: AVCoordinatedPlaybackSuspension.Reason) -> Int](avplaybackcoordinator/participantlimitforwaitingoutsuspensions(withreason:).md)
   Returns the limit on the number of partipants that a group may contain before the coordinator stops waiting on suspensions that occur for a particular reason.
 - [func setParticipantLimit(Int, forWaitingOutSuspensionsWithReason: AVCoordinatedPlaybackSuspension.Reason)](avplaybackcoordinator/setparticipantlimit(_:forwaitingoutsuspensionswithreason:).md)
@@ -39,26 +39,26 @@ The framework provides two playback coordinator subclasses that manage different
   The reasons that cause a coordinator to suspend playback.
 - [var pauseSnapsToMediaTimeOfOriginator: Bool](avplaybackcoordinator/pausesnapstomediatimeoforiginator.md)
   A Boolean value that indicates whether participants mirror the originator’s stop time when they pause.
-### Suspending State Coordination
+### Suspending state coordination
 - [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](avplaybackcoordinator/beginsuspension(for:).md)
   Tells the coordinator to stop sending playback commands temporarily when the playback object disconnects from the group activity.
 - [class AVCoordinatedPlaybackSuspension](avcoordinatedplaybacksuspension.md)
   An object that represents a temporary suspension of coordinated playback.
 - [func expectedItemTime(atHostTime: CMTime) -> CMTime](avplaybackcoordinator/expecteditemtime(athosttime:).md)
   Returns a time in the current item’s timeline that the coordinator expects to play at the specified host time.
-### Observing Suspension Reasons
+### Observing suspension reasons
 - [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](avplaybackcoordinator/suspensionreasons.md)
   The reasons a coordinator is currently unable to participate in a group playback activity.
 - [class let suspensionReasonsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/suspensionreasonsdidchangenotification.md)
   A notification that the coordinator posts when its suspension reasons change.
-### Observing Other Participants
+### Observing other participants
 - [var otherParticipants: [AVCoordinatedPlaybackParticipant]](avplaybackcoordinator/otherparticipants.md)
   The identifiers of the other participants in a group.
 - [class AVCoordinatedPlaybackParticipant](avcoordinatedplaybackparticipant.md)
   An object that represents a participant in a coordinated playback session.
 - [class let otherParticipantsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/otherparticipantsdidchangenotification.md)
   A notification that the coordinator posts when its other participants change.
-### Coordinating with Group Sessions
+### Coordinating with group sessions
 - [func coordinateWithSession<T>(GroupSession<T>)](avplaybackcoordinator/coordinatewithsession(_:).md)
   Begins coordination of a player with a group session.
 
@@ -83,12 +83,13 @@ The framework provides two playback coordinator subclasses that manage different
 
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting Coordinated Media Playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 
 
 ---

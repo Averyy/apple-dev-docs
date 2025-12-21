@@ -33,10 +33,6 @@ Metadata information includes the location, date of the request, the date the da
   The time the weather data expires.
 - [var location: CLLocation](weathermetadata/location.md)
   The location of the request.
-### Default Implementations
-- [Decodable Implementations](weathermetadata/decodable-implementations.md)
-- [Encodable Implementations](weathermetadata/encodable-implementations.md)
-- [Equatable Implementations](weathermetadata/equatable-implementations.md)
 
 ## Relationships
 

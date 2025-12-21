@@ -20,7 +20,7 @@ var forceAuthentication: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), your app cannot use cached credentials; if [`false`](https://developer.apple.com/documentation/swift/false), your app attempts to use any available cached credentials.
+If [`true`](https://developer.apple.com/documentation/Swift/true), your app cannot use cached credentials; if [`false`](https://developer.apple.com/documentation/Swift/false), your app attempts to use any available cached credentials.
 
 ## See Also
 

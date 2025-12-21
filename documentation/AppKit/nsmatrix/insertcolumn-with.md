@@ -43,7 +43,7 @@ This method redraws the receiver. Your code may need to send [`sizeToCells()`](n
 - [func getNumberOfRows(UnsafeMutablePointer<Int>?, columns: UnsafeMutablePointer<Int>?)](nsmatrix/getnumberofrows(_:columns:).md)
   Obtains the number of rows and columns in the receiver.
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func insertRow(Int)](nsmatrix/insertrow(_:).md)
   Inserts a new row of cells before the specified row.
 - [func insertRow(Int, with: [NSCell]?)](nsmatrix/insertrow(_:with:).md)

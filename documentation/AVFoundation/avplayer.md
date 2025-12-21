@@ -28,8 +28,8 @@ class AVPlayer
 - [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
 - [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 #### Overview
 
@@ -57,26 +57,26 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 
 ## Topics
 
-### Creating a Player
+### Creating a player
 - [init(url: URL)](avplayer/init(url:).md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
 - [init(playerItem: AVPlayerItem?)](avplayer/init(playeritem:).md)
   Creates a new player to play the specified player item.
 - [init()](avplayer/init.md)
   Creates a player object.
-### Managing the Player Item
+### Managing the player item
 - [var currentItem: AVPlayerItem?](avplayer/currentitem.md)
   The item for which the player is currently controlling playback.
 - [func replaceCurrentItem(with: AVPlayerItem?)](avplayer/replacecurrentitem(with:).md)
   Replaces the current item with a new item.
-### Determining Player Readiness
+### Determining player readiness
 - [var status: AVPlayer.Status](avplayer/status-swift.property.md)
   A value that indicates the readiness of a player object for playback.
 - [AVPlayer.Status](avplayer/status-swift.enum.md)
   Status values that indicate whether a player can successfully play media.
 - [var error: (any Error)?](avplayer/error.md)
   An error that caused a failure.
-### Controlling Playback
+### Controlling playback
 - [var defaultRate: Float](avplayer/defaultrate.md)
   A default rate at which to begin playback.
 - [func play()](avplayer/play.md)
@@ -87,7 +87,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   The current playback rate.
 - [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
-### Observing Playback Time
+### Observing playback time
 - [func currentTime() -> CMTime](avplayer/currenttime.md)
   Returns the current time of the current player item.
 - [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](avplayer/addperiodictimeobserver(forinterval:queue:using:).md)
@@ -96,7 +96,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   Requests the invocation of a block when specified times are traversed during normal playback.
 - [func removeTimeObserver(Any)](avplayer/removetimeobserver(_:).md)
   Cancels a previously registered periodic or boundary time observer.
-### Seeking Through Media
+### Seeking through media
 - [func seek(to: CMTime)](avplayer/seek(to:)-87h2r.md)
   Requests that the player seek to a specified time.
 - [func seek(to: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-75bls.md)
@@ -109,7 +109,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   Requests that the player seek to a specified date.
 - [func seek(to: Date, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-wr1l.md)
   Requests that the player seek to a specified date, and to notify you when the seek is complete.
-### Configuring Waiting Behavior
+### Configuring waiting behavior
 - [var automaticallyWaitsToMinimizeStalling: Bool](avplayer/automaticallywaitstominimizestalling.md)
   A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling.
 - [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](avplayer/reasonforwaitingtoplay.md)
@@ -122,22 +122,22 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   Constants that indicate the state of playback control.
 - [func playImmediately(atRate: Float)](avplayer/playimmediately(atrate:).md)
   Plays the available media data immediately, at the specified rate.
-### Responding When Playback Ends
+### Responding when playback ends
 - [var actionAtItemEnd: AVPlayer.ActionAtItemEnd](avplayer/actionatitemend-swift.property.md)
   The action to perform when the current player item has finished playing.
 - [AVPlayer.ActionAtItemEnd](avplayer/actionatitemend-swift.enum.md)
   The actions a player can take when it finishes playing.
-### Configuring Media Selection Criteria
+### Configuring media selection criteria
 - [var appliesMediaSelectionCriteriaAutomatically: Bool](avplayer/appliesmediaselectioncriteriaautomatically.md)
   A Boolean value that indicates whether the receiver should apply the current selection criteria automatically to player items.
 - [func mediaSelectionCriteria(forMediaCharacteristic: AVMediaCharacteristic) -> AVPlayerMediaSelectionCriteria?](avplayer/mediaselectioncriteria(formediacharacteristic:).md)
   Returns the automatic selection criteria for media items with the specified media characteristic.
 - [func setMediaSelectionCriteria(AVPlayerMediaSelectionCriteria?, forMediaCharacteristic: AVMediaCharacteristic)](avplayer/setmediaselectioncriteria(_:formediacharacteristic:).md)
   Applies automatic selection criteria for media that has the specified media characteristic.
-### Accessing Player Output
+### Accessing player output
 - [var videoOutput: AVPlayerVideoOutput?](avplayer/videooutput.md)
   The video output for this player.
-### Configuring Audio Behavior
+### Configuring audio behavior
 - [var volume: Float](avplayer/volume.md)
   The audio playback volume for the player.
 - [var isMuted: Bool](avplayer/ismuted.md)
@@ -146,12 +146,16 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   The source audio channel layouts the player item supports for spatialization.
 - [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
-### Configuring Background Playback
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+  Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+  The player’s intended Spatial Audio experience.
+### Configuring background playback
 - [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayer/audiovisualbackgroundplaybackpolicy.md)
   A policy that determines how playback of audiovisual media continues when the app transitions to the background.
 - [enum AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayeraudiovisualbackgroundplaybackpolicy.md)
   Policies that describe playback behavior when an app transitions to the background while playing video.
-### Managing External Playback
+### Managing external playback
 - [var allowsExternalPlayback: Bool](avplayer/allowsexternalplayback.md)
   A Boolean value that indicates whether the player allows switching to external playback mode.
 - [var isExternalPlaybackActive: Bool](avplayer/isexternalplaybackactive.md)
@@ -160,7 +164,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   A Boolean value that indicates whether the player should automatically switch to external playback mode while the external screen mode is active.
 - [var externalPlaybackVideoGravity: AVLayerVideoGravity](avplayer/externalplaybackvideogravity.md)
   The video gravity of the player for external playback mode only.
-### Determining HDR Playback Eligibility
+### Determining HDR playback eligibility
 - [class var eligibleForHDRPlayback: Bool](avplayer/eligibleforhdrplayback.md)
   A Boolean value that indicates whether the current device can present content to an HDR display.
 - [class var availableHDRModes: AVPlayer.HDRMode](avplayer/availablehdrmodes.md)
@@ -169,10 +173,10 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   A bitfield type that specifies an HDR mode.
 - [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](avplayer/eligibleforhdrplaybackdidchangenotification.md)
   A notification that’s posted whenever HDR playback eligibility changes.
-### Coordinating Playback
+### Coordinating playback
 - [var playbackCoordinator: AVPlayerPlaybackCoordinator](avplayer/playbackcoordinator.md)
   The playback coordinator for the player.
-### Synchronizing Multiple Players
+### Synchronizing multiple players
 - [func setRate(Float, time: CMTime, atHostTime: CMTime)](avplayer/setrate(_:time:athosttime:).md)
   Synchronizes the playback rate and time of the current item with an external source.
 - [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](avplayer/preroll(atrate:completionhandler:).md)
@@ -183,42 +187,37 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   A clock the player uses for item time bases.
 - [var masterClock: CMClock?](avplayer/masterclock.md)
   The host clock for item time bases.
-### Preventing Sleep and Backgrounding
+### Preventing sleep and backgrounding
 - [var preventsDisplaySleepDuringVideoPlayback: Bool](avplayer/preventsdisplaysleepduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents display and device sleep.
 - [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](avplayer/preventsautomaticbackgroundingduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents the system from automatically backgrounding the app.
-### Determining Content Protections
+### Determining content protections
 - [var isOutputObscuredDueToInsufficientExternalProtection: Bool](avplayer/isoutputobscuredduetoinsufficientexternalprotection.md)
   A Boolean value that indicates whether output is being obscured because of insufficient external protection.
-### Configuring Audio and Video Devices
+### Configuring audio and video devices
 - [var audioOutputDeviceUniqueID: String?](avplayer/audiooutputdeviceuniqueid.md)
   Specifies the unique ID of the Core Audio output device used to play audio.
 - [var preferredVideoDecoderGPURegistryID: UInt64](avplayer/preferredvideodecodergpuregistryid.md)
   The registry identifier for the GPU used for video decoding.
-### Configuring AirPlay Behavior
+### Configuring the network resource priority
+- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.property.md)
+  Indicates the priority of this player for network bandwidth resource distribution.
+- [AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.enum.md)
+  This defines the network resource priority for a player.
+### Configuring observation
+- [class var isObservationEnabled: Bool](avplayer/isobservationenabled.md)
+  AVPlayer and other AVFoundation types can optionally be observed using Swift Observation.
+### Configuring AirPlay behavior
 - [var allowsAirPlayVideo: Bool](avplayer/allowsairplayvideo.md)
   A Boolean value that indicates whether the player allows AirPlay video playback.
 - [var isAirPlayVideoActive: Bool](avplayer/isairplayvideoactive.md)
   A Boolean value that indicates whether the player is playing video through AirPlay.
 - [var usesAirPlayVideoWhileAirPlayScreenIsActive: Bool](avplayer/usesairplayvideowhileairplayscreenisactive.md)
   A Boolean value that indicates whether the player automatically switches to AirPlay Video while AirPlay Screen is active.
-### Displaying Closed Captions
+### Displaying closed captions
 - [var isClosedCaptionDisplayEnabled: Bool](avplayer/isclosedcaptiondisplayenabled.md)
   A Boolean value that indicates whether the player uses closed captioning.
-### Instance Properties
-- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
-  Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
-- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
-  The AVPlayer’s intended spatial audio experience.
-- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.property.md)
-  Indicates the priority of this player for network bandwidth resource distribution.
-### Type Properties
-- [class var isObservationEnabled: Bool](avplayer/isobservationenabled.md)
-  AVPlayer and other AVFoundation types can optionally be observed using Swift Observation.
-### Enumerations
-- [AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.enum.md)
-  This defines the network resource priority for a player.
 
 ## Relationships
 

@@ -26,7 +26,7 @@ object UserNameAndPasswordCredential
 - [object IdentityCredential](identitycredential.md)
   The data for a PKCS #12 password-protected identity.
 - [object SCEPCredential](scepcredential.md)
-  An SCEP identity that the device generates.
+  A SCEP identity that the device generates.
 
 
 ---

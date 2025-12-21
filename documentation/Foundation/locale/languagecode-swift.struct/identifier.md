@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns the ISO code of the given identifier type. Returns nil if the language isn’t a valid ISO language, or if the specified identifier type isn’t available to the language.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

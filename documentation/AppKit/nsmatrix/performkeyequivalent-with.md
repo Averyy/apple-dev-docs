@@ -17,7 +17,7 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a cell in the receiver responds to the key equivalent in `theEvent`, [`false`](https://developer.apple.com/documentation/swift/false) if no cell responds.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a cell in the receiver responds to the key equivalent in `theEvent`, [`false`](https://developer.apple.com/documentation/Swift/false) if no cell responds.
 
 #### Discussion
 

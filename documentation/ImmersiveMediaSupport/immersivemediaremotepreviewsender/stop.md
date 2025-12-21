@@ -6,7 +6,7 @@
 Stops the sender - all current connected receivers will be disconnected and streaming will stop.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 An impact level for severe interruption, including substantially lowered throughput and the potential to lose data capability.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

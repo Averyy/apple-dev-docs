@@ -27,11 +27,11 @@ You create a reflection instance at the same time as the pipeline state that it 
 
 > ❗ **Important**:  Only create reflection instances if you need them because each one can require a significant amount of memory.
 
-For more information, see [`Pipeline State Creation`](pipeline-state-creation.md).
+For more information, see [`Pipeline state creation`](pipeline-state-creation.md).
 
 ## Topics
 
-### Inspecting a Shader’s Parameter
+### Inspecting a shader’s parameter
 - [var fragmentBindings: [any MTLBinding]](mtlrenderpipelinereflection/fragmentbindings.md)
   An array of binding instances, each of which represents a parameter of the pipeline state’s fragment shader.
 - [var meshBindings: [any MTLBinding]](mtlrenderpipelinereflection/meshbindings.md)

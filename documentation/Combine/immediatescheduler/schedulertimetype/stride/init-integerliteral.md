@@ -28,8 +28,6 @@ init(integerLiteral value: Int)
   Creates an immediate scheduler time interval from a binary integer type.
 - [init(floatLiteral: Double)](immediatescheduler/schedulertimetype/stride/init(floatliteral:).md)
   Creates an immediate scheduler time interval from a floating-point seconds value.
-- [init(from: any Decoder) throws](immediatescheduler/schedulertimetype/stride/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

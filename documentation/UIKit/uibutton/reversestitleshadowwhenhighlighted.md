@@ -21,7 +21,7 @@ var reversesTitleShadowWhenHighlighted: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

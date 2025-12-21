@@ -4,15 +4,15 @@
 **Kind**: method  
 **Required**: Yes
 
-Removes a residency set from the command queue.
+Removes a residency set from a command queue’s list, which means Metal doesn’t apply it to the queue’s command buffers as you commit them.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,11 +22,13 @@ func removeResidencySet(_ residencySet: any MTLResidencySet)
 
 #### Discussion
 
-After calling this method ensures only the remaining residency sets remain resident during the execution of the command buffers you commit this command queue.
+The method doesn’t remove the residency set from command buffers the queue owns with an [`status`](mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md).
+
+See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySet`:   instance to remove from the command queue.
+- `residencySet`: A residency set that contains resource allocations, such as  ,  , and   instances.
 
 
 ---

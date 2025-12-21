@@ -6,7 +6,7 @@
 An array with the names of all receives currently receiving data from this instance. When a receiver goes offline, this array will be automatically updated.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

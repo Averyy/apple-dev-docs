@@ -17,6 +17,8 @@ To add this entitlement to a target, enable the AutoFill Credential Provider cap
 
 ## See Also
 
+- [Account Creation Requires Phone Number](entitlements/com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
+  A Boolean value that indicates whether an app requires someone to provide a phone number to create an account.
 - [Sign in with Apple Entitlement](entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 

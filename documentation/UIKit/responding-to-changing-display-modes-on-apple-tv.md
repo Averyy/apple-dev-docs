@@ -39,20 +39,8 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 
 ## See Also
 
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [class UITraitCollection](uitraitcollection.md)
-  A collection of data that represents the environment for an individual element in your app’s user interface.
-- [protocol UITraitEnvironment](uitraitenvironment.md)
-  A set of methods that makes the iOS interface environment available to your app.
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-  A type that calls your code in reaction to changes in the trait environment.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
-  A mutable container of traits.
-- [protocol UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
-  A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
-- [protocol UIContentContainer](uicontentcontainer.md)
-  A set of methods for adapting the contents of your view controllers to size and trait changes.
+- [Traits and the trait environment](traits-and-the-trait-environment.md)
+  Get information about traits and the environment in which your app runs, and share data with your view hierarchy.
 
 
 ---

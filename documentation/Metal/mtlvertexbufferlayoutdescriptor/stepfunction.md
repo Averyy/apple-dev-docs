@@ -23,11 +23,11 @@ var stepFunction: MTLVertexStepFunction { get set }
 
 The default value is [`MTLVertexStepFunction.perVertex`](mtlvertexstepfunction/pervertex.md).
 
-If `stepFunction` is [`MTLVertexStepFunction.perVertex`](mtlvertexstepfunction/pervertex.md), the function fetches new attribute data based on the `[[ vertex_id ]]` attribute qualifier. The function fetches new attribute data each time a new vertex is processed. In this case, `stepRate` must be set to `1`, which is its default value.
+If `stepFunction` is [`MTLVertexStepFunction.perVertex`](mtlvertexstepfunction/pervertex.md), the function fetches new attribute data based on the `[[ vertex_id ]]` attribute qualifier. The function fetches new attribute data each time a new vertex is processed. In this case, `stepRate` needs to be set to `1`, which is its default value.
 
-If `stepFunction` is [`MTLVertexStepFunction.perInstance`](mtlvertexstepfunction/perinstance.md), the function fetches new attribute data based on the `[[ instance_id ]]` attribute qualifier.  In this case, `stepRate` must be greater than `0` and its value determines how often the function fetches new attribute data.
+If `stepFunction` is [`MTLVertexStepFunction.perInstance`](mtlvertexstepfunction/perinstance.md), the function fetches new attribute data based on the `[[ instance_id ]]` attribute qualifier.  In this case, `stepRate` needs to be greater than `0` and its value determines how often the function fetches new attribute data.
 
-If `stepFunction` is [`MTLVertexStepFunction.constant`](mtlvertexstepfunction/constant.md), the function fetches attribute data just once, and that attribute data is used for every vertex. In this case,`stepRate` must be set to `0`.
+If `stepFunction` is [`MTLVertexStepFunction.constant`](mtlvertexstepfunction/constant.md), the function fetches attribute data just once, and that attribute data is used for every vertex. In this case,`stepRate` needs to be set to `0`.
 
 ## See Also
 
@@ -37,6 +37,8 @@ If `stepFunction` is [`MTLVertexStepFunction.constant`](mtlvertexstepfunction/co
   The interval at which the vertex and its attributes are presented to the vertex function.
 - [var stride: Int](mtlvertexbufferlayoutdescriptor/stride.md)
   The number of bytes between the first byte of two consecutive vertices in a buffer.
+- [enum MTLVertexStepFunction](mtlvertexstepfunction.md)
+  The frequency with which the vertex function or post-tessellation vertex function fetches attribute data.
 
 
 ---

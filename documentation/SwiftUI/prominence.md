@@ -43,8 +43,6 @@ enum Prominence
   Sets the header prominence for this view.
 - [var headerProminence: Prominence](environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
-  The default minimum height of a header in a list.
 
 
 ---

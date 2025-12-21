@@ -1,34 +1,32 @@
-# !=(_:_:)
+# AssignedWorkDocument.ScoreAnnotation.Kind.unknown
 
 **Framework**: Assignables  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An unknown kind. This value may occur if an older version of this framework is deserializing a newer document version.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [AssignedWorkDocument.ScoreAnnotation.Kind.bonus](assignedworkdocument/scoreannotation/kind-swift.enum/bonus.md)
+  A score mark indicating a bonus to an answer.
+- [AssignedWorkDocument.ScoreAnnotation.Kind.correct](assignedworkdocument/scoreannotation/kind-swift.enum/correct.md)
+  A score mark indicating an correct answer.
+- [AssignedWorkDocument.ScoreAnnotation.Kind.incorrect](assignedworkdocument/scoreannotation/kind-swift.enum/incorrect.md)
+  A score mark indicating an incorrect answer.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/unknown)*

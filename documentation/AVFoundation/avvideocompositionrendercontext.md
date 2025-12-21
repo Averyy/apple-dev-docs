@@ -25,10 +25,12 @@ A render context provides size and scaling information and offers a service for 
 
 ## Topics
 
-### Creating the Pixel Buffer
+### Creating the pixel buffer
 - [func newPixelBuffer() -> CVPixelBuffer?](avvideocompositionrendercontext/newpixelbuffer.md)
   Returns a pixel buffer to use for rendering.
-### Getting the Render Settings
+- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](avvideocompositionrendercontext/makemutablepixelbuffer.md)
+  Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
+### Getting the render settings
 - [var videoComposition: AVVideoComposition](avvideocompositionrendercontext/videocomposition.md)
   The video composition being rendered.
 - [var highQualityRendering: Bool](avvideocompositionrendercontext/highqualityrendering.md)
@@ -39,7 +41,7 @@ A render context provides size and scaling information and offers a service for 
   A transform to apply to the source image.
 - [var size: CGSize](avvideocompositionrendercontext/size.md)
   The width and height for the rendering frames.
-### Getting Pixel and Edge Width Information
+### Getting pixel and edge width information
 - [var edgeWidths: AVEdgeWidths](avvideocompositionrendercontext/edgewidths.md)
   The width of the edge processing region on the left, top, right, and bottom edges, in pixels.
 - [struct AVEdgeWidths](avedgewidths.md)
@@ -48,9 +50,6 @@ A render context provides size and scaling information and offers a service for 
   The pixel aspect ratio for rendered frames.
 - [struct AVPixelAspectRatio](avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
-### Instance Methods
-- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](avvideocompositionrendercontext/makemutablepixelbuffer.md)
-  Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
 
 ## Relationships
 

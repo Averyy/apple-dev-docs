@@ -17,7 +17,7 @@ class func tapIsEnabled(tap: CFMachPort) -> Bool
 
 #### Return Value
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the specified event tap is enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the specified event tap is enabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

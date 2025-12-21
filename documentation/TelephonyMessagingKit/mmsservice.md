@@ -6,8 +6,8 @@
 A class that provides an interface for performing MMS operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A class that provides an interface for performing MMS operations.
 ```swift
 final class MMSService
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -73,27 +77,19 @@ Task {
 
 ```
 
-To receive messages, iterate over the [`incomingMessageNotifications`](mmsservice/incomingmessagenotifications.md) asynchronous sequence, and call [`receiveMessage(using:messageID:)`](mmsservice/receivemessage(using:messageid:).md) with the identifiers from each notification, as shown here:
+To receive messages, iterate over the [`incomingMessageNotifications`](mmsservice/incomingmessagenotifications.md) asynchronous sequence, and retrieve messages from each notification as it arrives, as shown below:
 
 ```swift
 import TelephonyMessagingKit
 
-let service = TelephonyMessagingSession.shared.smsService
+let service = TelephonyMessagingSession.shared.mmsService
 
 let incomingMessageNotifications = try service.incomingMessageNotifications
 Task {
     for await notification in incomingMessageNotifications {
-        try await handleIncomingMMS(for: notification.cellularServiceID,
-                                    messageID: notification.messageID)
+        let receivedMessage = notification.message
+        // Process receivedMessage.
     }
-}
-
-func handleIncomingMMS(for cellularServiceID: CellularServiceID, messageID: MMSMessageID) async throws {
-    // Retrieve MMS message with identifiers from incomingMessageNotifications.
-    // A client may also delay retrieving the message if MMS isn't currently viable.
-    let message = try await service.receiveMessage(using: cellularServiceID,
-                                                   messageID: messageID)
-    // Process message.
 }
 ```
 
@@ -106,14 +102,17 @@ func handleIncomingMMS(for cellularServiceID: CellularServiceID, messageID: MMSM
   An asynchronous sequence of service viability notifications produced by the service.
 - [MMSService.ViabilityNotification](mmsservice/viabilitynotification.md)
   A notification that indicates if MMS is viable for a given cellular service.
+### Managing MMS configuration
+- [func configuration(for: CellularServiceID) async throws -> MMSService.Configuration](mmsservice/configuration(for:).md)
+  Retrieves the MMS configuration for the carrier.
+- [MMSService.Configuration](mmsservice/configuration.md)
+  A structure that provides information about MMS messages sent and received using the current carrier.
 ### Sending messages
 - [func sendMessage(MMSMessage) async throws](mmsservice/sendmessage(_:).md)
   Sends an MMS message to the given destination.
 - [struct MMSMessage](mmsmessage.md)
   A structure that contains the data of an MMS message.
 ### Receiving messages
-- [func receiveMessage(using: CellularServiceID, messageID: MMSMessageID) async throws -> MMSMessage](mmsservice/receivemessage(using:messageid:).md)
-  Retrieves an MMS message that matches the given identifiers.
 - [struct CellularServiceID](cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
 - [struct MMSMessageID](mmsmessageid.md)
@@ -128,12 +127,9 @@ func handleIncomingMMS(for cellularServiceID: CellularServiceID, messageID: MMSM
 ### Handling errors
 - [MMSService.Error](mmsservice/error.md)
   Enumeration for errors that can occur when performing MMS operations.
-### Structures
-- [MMSService.Configuration](mmsservice/configuration.md)
-  A structure that provides information about MMS messages sent and received using the current carrier.
-### Instance Methods
-- [func configuration(for: CellularServiceID) async throws -> MMSService.Configuration](mmsservice/configuration(for:).md)
-  Retrieves the MMS configuration for the carrier.
+### Deprecated symbols
+- [func receiveMessage(using: CellularServiceID, messageID: MMSMessageID) async throws -> MMSMessage](mmsservice/receivemessage(using:messageid:).md)
+  Retrieves an MMS message that matches the given identifiers.
 
 ## Relationships
 

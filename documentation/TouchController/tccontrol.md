@@ -6,33 +6,27 @@
 A protocol that defines the base properties and methods for all touch controls.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
-protocol TCControl : TCTransform
+protocol TCControl : TCControlLayout
 ```
 
 ## Topics
 
 ### Inspecting a control
-- [var collider: any TCCollider](tccontrol/collider.md)
-  The collider for the control.
-- [var enabled: Bool](tccontrol/enabled.md)
+- [var isEnabled: Bool](tccontrol/isenabled.md)
   A Boolean value that indicates whether the control is enabled.
-- [var highlightFactor: Float](tccontrol/highlightfactor.md)
-  The factor by which to highlight the control when pressed.
-- [var highlightTime: simd_float1](tccontrol/highlighttime.md)
+- [var highlightDuration: TimeInterval](tccontrol/highlightduration.md)
   The duration of the highlight animation.
 - [var label: TCControlLabel](tccontrol/label.md)
   The label associated with the control.
 - [class TCControlLabel](tccontrollabel.md)
   A label you associate with a touch control and provides a semantic description.
-- [var pressed: Bool](tccontrol/pressed.md)
+- [var isPressed: Bool](tccontrol/ispressed.md)
   Indicates whether the control is currently pressed.
 ### Handling touches
 - [func handleTouchBegan(at: CGPoint)](tccontrol/handletouchbegan(at:).md)
@@ -41,18 +35,21 @@ protocol TCControl : TCTransform
   Handles a touch moved event at the specified point.
 - [func handleTouchEnded(at: CGPoint)](tccontrol/handletouchended(at:).md)
   Handles a touch ended event at the specified point.
-### Updating the layout
-- [func layoutIfNeeded()](tccontrol/layoutifneeded.md)
-  Updates the layout of the control.
+### Getting the collider shape
+- [var colliderShape: TCColliderShape](tccontrol/collidershape.md)
+  The collider shape for the control.
+- [enum TCColliderShape](tccollidershape.md)
+  Defines the shape of a control collider.
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [TCTransform](tctransform.md)
+- [TCControlLayout](tccontrollayout.md)
 ### Conforming Types
 - [TCButton](tcbutton.md)
 - [TCDirectionPad](tcdirectionpad.md)
+- [TCSwitch](tcswitch.md)
 - [TCThrottle](tcthrottle.md)
 - [TCThumbstick](tcthumbstick.md)
 - [TCTouchpad](tctouchpad.md)
@@ -63,6 +60,8 @@ protocol TCControl : TCTransform
   A control that represents a single on-screen button.
 - [class TCDirectionPad](tcdirectionpad.md)
   An object that represents a direction pad.
+- [class TCSwitch](tcswitch.md)
+  A control that represents a single on-screen switch.
 - [class TCThumbstick](tcthumbstick.md)
   Represents a single on-screen thumbstick.
 - [class TCThrottle](tcthrottle.md)

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: protocol
 
-An object that represents a public shader function in a Metal library.
+A interface that represents a public shader function in a Metal library.
 
 **Availability**:
 - iOS 8.0+
@@ -21,22 +21,22 @@ protocol MTLFunction : NSObjectProtocol, Sendable
 
 #### Overview
 
-Use [`MTLFunction`](mtlfunction.md) objects to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline state objects, see [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md).
+Use [`MTLFunction`](mtlfunction.md) instances to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline states, see [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md).
 
-A [`MTLFunction`](mtlfunction.md) object is a  function if the shader contains function constants, otherwise it is a  function.
+An [`MTLFunction`](mtlfunction.md) instance is a  function if the shader contains function constants, otherwise it is a  function.
 
-Don’t use standard allocation and initialization techniques to create a [`MTLFunction`](mtlfunction.md) object. Instead, use the function creation methods provided by the [`MTLLibrary`](mtllibrary.md) protocol. To create a nonspecialized function, call the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method.
+Don’t use standard allocation and initialization techniques to create an [`MTLFunction`](mtlfunction.md) instance. Instead, use the function creation methods provided by the [`MTLLibrary`](mtllibrary.md) protocol. To create a nonspecialized function, call the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method.
 
 To create a specialized function, call one of these [`MTLLibrary`](mtllibrary.md) methods:
 
 - [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
 - [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md)
 
-[`MTLFunction`](mtlfunction.md) objects can use a significant amount of memory; release any strong references to them after you finish creating pipeline objects.
+[`MTLFunction`](mtlfunction.md) instances can use a significant amount of memory; release any strong references to them after you finish creating pipeline instances.
 
 ## Topics
 
-### Identifying Shader Functions
+### Identifying shader functions
 - [var device: any MTLDevice](mtlfunction/device.md)
   The device object that created the shader function.
 - [var label: String?](mtlfunction/label.md)
@@ -50,23 +50,23 @@ To create a specialized function, call one of these [`MTLLibrary`](mtllibrary.md
 - [var options: MTLFunctionOptions](mtlfunction/options.md)
   The options that Metal used to compile this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
-### Identifying the Tessellation Patch
+  Options that define how Metal compiles a GPU function.
+### Identifying the tessellation patch
 - [var patchType: MTLPatchType](mtlfunction/patchtype.md)
   The tessellation patch type of a post-tessellation vertex function.
 - [var patchControlPointCount: Int](mtlfunction/patchcontrolpointcount.md)
   The number of patch control points in the post-tessellation vertex function.
 - [enum MTLPatchType](mtlpatchtype.md)
   Types of tessellation patches that can be inputs of a post-tessellation vertex function.
-### Retrieving Function Attributes
+### Retrieving function attributes
 - [var vertexAttributes: [MTLVertexAttribute]?](mtlfunction/vertexattributes.md)
   An array that describes the vertex input attributes to a vertex function.
 - [var stageInputAttributes: [MTLAttribute]?](mtlfunction/stageinputattributes.md)
   An array that describes the input attributes to the function.
-### Retrieving Function Constants
+### Retrieving function constants
 - [var functionConstantsDictionary: [String : MTLFunctionConstant]](mtlfunction/functionconstantsdictionary.md)
   A dictionary of function constants for a specialized function.
-### Creating Argument Encoders
+### Creating argument encoders
 - [func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:).md)
   Creates an argument encoder for an argument buffer that’s one of this function’s arguments.
 - [func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:reflection:).md)

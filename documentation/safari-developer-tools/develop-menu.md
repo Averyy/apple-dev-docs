@@ -26,17 +26,21 @@ Browsers send a string that identifies the browser type to servers, called the U
 
 #### Devices and Simulators
 
-Safari in macOS can inspect web content running in other applications in macOS, as well as inspect Safari, Home Screen web apps, Service Workers, and other apps in iOS, iPadOS ([`Inspecting iOS and iPadOS`](inspecting-ios.md)), and visionOS ([`Inspecting visionOS`](inspecting-visionos.md)) and JavaScript and TVML in tvOS ([`Inspecting tvOS`](inspecting-tvos.md)).
+Safari in macOS can inspect web content running in other applications in macOS, as well as inspect Safari, Home Screen web apps, service workers, and other apps in iOS, iPadOS ([`Inspecting iOS and iPadOS`](inspecting-ios.md)), and visionOS ([`Inspecting visionOS`](inspecting-visionos.md)) and JavaScript and TVML in tvOS ([`Inspecting tvOS`](inspecting-tvos.md)).
 
 The Develop menu displays your Mac here and shows Mac web apps and other apps that have enabled inspection of their web content (see [`Enabling inspecting content in your apps`](enabling-inspecting-content-in-your-apps.md)). The Develop menu lists each inspectable device or simulator with their name and OS version to make it easier to find the specific device you want to inspect.
 
 Each device (including the Mac you are using) and simulator has its own menu that lists the inspectable content on that device, as well as device-specific options. Not all options are available for all devices, and each option only applies to a specific device or simulator, not all of them.
 
+#### Inspect Apps and Devices
+
+The [`Inspect Apps and Devices`](inspect-apps-and-devices.md) menu item opens a window that lists all inspectable web content running in applications on your Mac and on other connected devices that are configured for inspection. This is also where you can configure automatic inspection for JSContexts and service workers.
+
 #### Service Workers
 
-[`Service Workers`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
+[`Service workers`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
-When a service worker is running it will appear in the  menu.
+When a service worker is running, it will appear in the  menu and in the [`Inspect Apps and Devices`](inspect-apps-and-devices.md) window for the app that launched it.
 
 #### Web Extension Background Content
 
@@ -64,6 +68,8 @@ At the bottom of the  menu, there are quick links to both [`Changing Developer s
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 - [Responsive Design Mode](responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
+- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+  Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 

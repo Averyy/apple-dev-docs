@@ -21,7 +21,7 @@ var adjustsImageWhenHighlighted: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the image is drawn lighter when the button is highlighted. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the image is drawn lighter when the button is highlighted. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

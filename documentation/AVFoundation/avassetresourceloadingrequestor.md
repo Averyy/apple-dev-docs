@@ -21,7 +21,7 @@ class AVAssetResourceLoadingRequestor
 
 ## Topics
 
-### Retrieving Expired Session Reports
+### Retrieving expired session reports
 - [var providesExpiredSessionReports: Bool](avassetresourceloadingrequestor/providesexpiredsessionreports.md)
   A Boolean value that indicates whether the requestor provides expired session reports.
 

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The number of rows in the PDF417 code.
+The number of rows in the PDF417 code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -19,14 +19,18 @@ The number of rows in the PDF417 code.
 var rowCount: Int { get }
 ```
 
+#### Discussion
+
+Valid row count values are from 3 to 90.
+
 ## See Also
 
 - [var errorCorrectedPayload: Data](cipdf417codedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload containing the data encoded in the PDF417 code.
+  The error-corrected payload containing the data encoded in the PDF417 code symbol.
 - [var isCompact: Bool](cipdf417codedescriptor/iscompact-swift.property.md)
   A boolean value telling if the PDF417 code is compact.
 - [var columnCount: Int](cipdf417codedescriptor/columncount-swift.property.md)
-  The number of columns in the PDF417 code.
+  The number of columns in the PDF417 code symbol.
 
 
 ---

@@ -26,7 +26,7 @@ func SecCertificateCopyData(_ certificate: SecCertificate) -> CFData
 
 #### Return Value
 
-The DER representation of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `certificate` parameter is not a valid certificate object.
+The DER representation of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `certificate` parameter is not a valid certificate object.
 
 ## Parameters
 

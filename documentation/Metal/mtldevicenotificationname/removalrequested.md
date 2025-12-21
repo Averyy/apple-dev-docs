@@ -16,13 +16,13 @@ static let removalRequested: MTLDeviceNotificationName
 
 ## Mentions
 
-- [Handling External GPU Additions and Removals](handling-external-gpu-additions-and-removals.md)
+- [Handling external GPU additions and removals](handling-external-gpu-additions-and-removals.md)
 
 #### Discussion
 
 This notification tells your app to stop using an [`MTLDevice`](mtldevice.md) instance by releasing any objects and resources your app created with it.
 
-> **Note**:  Metal removes the device instance from the array it returns with its methods — such as [`MTLCopyAllDevices()`](mtlcopyalldevices().md) — before sending this notification.
+> **Note**:  Metal removes the device instance from the array it returns with its methods — such as [`MTLCopyAllDevices()`](mtlcopyalldevices().md) — before sending this notification.
 
 ## See Also
 

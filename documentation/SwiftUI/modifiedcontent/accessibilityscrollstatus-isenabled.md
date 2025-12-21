@@ -6,13 +6,13 @@
 Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -25,7 +25,20 @@ func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Boo
 
 Use this modifier to provide a description of the content at the current position in the scroll view. For example, you could use this modifier to announce the current month being scrolled to in a view that contains a calendar.
 
-ScrollView { LazyVStack { ForEach(months) { months in MonthView(month: months) } } .scrollTargetLayout() } .scrollPosition($position) .accessibilityScrollStatus(”(months.name(position.viewID)) (year)”)
+```swift
+@State private var position = ScrollPosition(idType: Month.ID.self)
+
+ScrollView {
+    LazyVStack {
+        ForEach(months) { months in
+            MonthView(month: months)
+        }
+    }
+    .scrollTargetLayout()
+}
+.scrollPosition($position)
+.accessibilityScrollStatus("\(months.name(position.viewID)) \(year)")
+```
 
 By default, VoiceOver announces “Page X of Y” while scrolling.
 

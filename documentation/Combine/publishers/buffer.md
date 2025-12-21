@@ -22,15 +22,15 @@ struct Buffer<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Buffer Publisher
+### Creating a buffer publisher
 - [init(upstream: Upstream, size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>)](publishers/buffer/init(upstream:size:prefetch:whenfull:).md)
   Creates a publisher that buffers elements received from an upstream publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Buffer.Output](publishers/buffer/output.md)
   The kind of values published by this publisher.
 - [Publishers.Buffer.Failure](publishers/buffer/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/buffer/upstream.md)
   The publisher from which this publisher receives elements.
 - [let size: Int](publishers/buffer/size.md)
@@ -39,11 +39,6 @@ struct Buffer<Upstream> where Upstream : Publisher
   The strategy for initially populating the buffer.
 - [let whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>](publishers/buffer/whenfull.md)
   The action to take when the buffer becomes full.
-### Applying Operators
-- [Publisher Operators](publishers-buffer-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/buffer/publisher-implementations.md)
 
 ## Relationships
 

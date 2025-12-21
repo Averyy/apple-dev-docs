@@ -21,11 +21,11 @@ case ended
 ## Mentions
 
 - [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
-- [Handling rotation gestures](handling-rotation-gestures.md)
-- [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
 - [Handling long-press gestures](handling-long-press-gestures.md)
 - [Handling pan gestures](handling-pan-gestures.md)
 - [Handling pinch gestures](handling-pinch-gestures.md)
+- [Handling rotation gestures](handling-rotation-gestures.md)
+- [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
 
 #### Discussion
 

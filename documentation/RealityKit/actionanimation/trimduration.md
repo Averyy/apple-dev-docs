@@ -10,7 +10,7 @@ An optional duration that overrides the calculated duration.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -23,9 +23,12 @@ var trimDuration: TimeInterval? { get set }
 
 The framework calculates `AnimationAction/duration`, but you can set this property to override it. This property is `nil` by default, which indicates that the animation stops after one play that spans `AnimationAction/duration`.
 
-If you set a value for this property and both `AnimationAction/trimStart` and `AnimationAction/trimEnd` are `nil`, the animation observes this property as an edited duration.
+If you set a non-zero value for this property and both `AnimationAction/trimStart` and `AnimationAction/trimEnd` are `nil`, the animation observes this property as an edited duration.
 
-A value greater than `AnimationAction/duration` causes the animation to repeat, applying the characteristics defined by `AnimationAction/repeatMode`. Assign this property [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Double/greatestFiniteMagnitude) to repeat indefinitely.
+When you set `AnimationAction/repeatMode` to make the animation repeat:
+
+- If this property is `nil`, the animation repeats forever.
+- If set to a value greater than `AnimationAction/duration`, the animation repeats for the specified duration.
 
 
 ---

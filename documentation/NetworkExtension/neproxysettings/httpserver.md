@@ -22,7 +22,7 @@ var httpServer: NEProxyServer? { get set }
 
 #### Discussion
 
-If [`autoProxyConfigurationEnabled`](neproxysettings/autoproxyconfigurationenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false) and [`httpEnabled`](neproxysettings/httpenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), then the proxy server specified in this property will be used for HTTP connections.
+If [`autoProxyConfigurationEnabled`](neproxysettings/autoproxyconfigurationenabled.md) is [`false`](https://developer.apple.com/documentation/Swift/false) and [`httpEnabled`](neproxysettings/httpenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), then the proxy server specified in this property will be used for HTTP connections.
 
 ## See Also
 

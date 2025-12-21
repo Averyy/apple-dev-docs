@@ -34,6 +34,7 @@ Playgrounds and the debugger will show a representation similar to the one used 
 - [Mirror.DisplayStyle.collection](mirror/displaystyle-swift.enum/collection.md)
 - [Mirror.DisplayStyle.dictionary](mirror/displaystyle-swift.enum/dictionary.md)
 - [Mirror.DisplayStyle.enum](mirror/displaystyle-swift.enum/enum.md)
+- [Mirror.DisplayStyle.foreignReference](mirror/displaystyle-swift.enum/foreignreference.md)
 - [Mirror.DisplayStyle.optional](mirror/displaystyle-swift.enum/optional.md)
 - [Mirror.DisplayStyle.set](mirror/displaystyle-swift.enum/set.md)
 - [Mirror.DisplayStyle.struct](mirror/displaystyle-swift.enum/struct.md)

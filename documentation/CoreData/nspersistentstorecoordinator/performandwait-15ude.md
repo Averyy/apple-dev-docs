@@ -17,6 +17,7 @@ Executes the provided closure on the coordinator’s queue and waits for it to f
 ## Declaration
 
 ```swift
+@preconcurrency
 func performAndWait<T>(_ block: () throws -> T) rethrows -> T
 ```
 

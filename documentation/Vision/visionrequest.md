@@ -8,7 +8,6 @@ A type for image-analysis requests.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -31,14 +30,16 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 ### Setting the compute device
 - [func setComputeDevice(MLComputeDevice?, for: ComputeStage)](visionrequest/setcomputedevice(_:for:).md)
   Assigns a compute device for a compute stage.
+### Getting the descriptor
+- [var descriptor: RequestDescriptor](visionrequest/descriptor.md)
+  An enum that identifies the request and request revision.
 ### Performing the request
 - [associatedtype Result](visionrequest/result.md)
   An associated type that represents the result.
 - [enum VisionResult](visionresult.md)
   The result the framework produces by performing a request.
-### Instance Properties
-- [var descriptor: RequestDescriptor](visionrequest/descriptor.md)
-  An enum that identifies the request and request revision.
+### Default Implementations
+- [CustomStringConvertible Implementations](visionrequest/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -89,20 +90,16 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 
 ## See Also
 
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
-  Analyze and label images using a Vision classification request.
-- [struct ClassifyImageRequest](classifyimagerequest.md)
-  A request to classify an image.
 - [protocol ImageProcessingRequest](imageprocessingrequest.md)
   A type for image-analysis requests that focus on a specific part of an image.
-- [class ImageRequestHandler](imagerequesthandler.md)
-  An object that processes one or more image-analysis requests pertaining to a single image.
+- [protocol PoseProviding](poseproviding.md)
+  An observation that provides a collection of joints that make up a pose.
+- [protocol StatefulRequest](statefulrequest.md)
+  The protocol for a type that builds evidence of a condition over time.
+- [protocol TargetedRequest](targetedrequest.md)
+  A type for analyzing two images together.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
-- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
-  A request that detects a smudge on a lens from an image or video frame capture.
-- [struct SmudgeObservation](smudgeobservation.md)
-  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 
 
 ---

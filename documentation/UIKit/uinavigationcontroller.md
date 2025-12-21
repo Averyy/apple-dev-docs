@@ -28,15 +28,15 @@ class UINavigationController
 
 #### Overview
 
-A navigation controller is a container view controller that manages one or more child view controllers in a navigation interface. In this type of interface, only one child view controller is visible at a time. Selecting an item in the view controller pushes a new view controller onscreen using an animation, hiding the previous view controller. Tapping the back button in the navigation bar at the top of the interface removes the top view controller, thereby revealing the view controller underneath.
+A navigation controller is a container view controller that manages one or more contained view controllers in a navigation interface. In this type of interface, only one contained view controller is visible at a time. Selecting an item in the view controller pushes a new view controller onscreen using an animation, hiding the previous view controller. Tapping the back button in the navigation bar at the top of the interface removes the top view controller, thereby revealing the view controller underneath.
 
-Use a navigation interface to mimic the organization of hierarchical data managed by your app. At each level of the hierarchy, you provide an appropriate screen (managed by a custom view controller) to display the content at that level. The following image shows an example of the navigation interface presented by the Settings application in iOS Simulator. The first screen presents the user with the list of applications that contain preferences. Selecting an application reveals individual settings and groups of settings for that application. Selecting a group yields more settings and so on. For all but the root view, the navigation controller provides a back button to allow the user to move back up the hierarchy.
+Use a navigation interface to mimic the organization of hierarchical data managed by your app. At each level of the hierarchy, you provide an appropriate screen (managed by a custom view controller) to display the content at that level. The following image shows an example of the navigation interface presented by the Settings application in a simulated iOS device. The first screen presents the user with the list of groups that organize preferences. Selecting a group reveals individual settings and groups of settings for that application. For all but the root view, the navigation controller provides a back button to allow the user to move back up the hierarchy.
 
 ![A sample navigation interface](https://docs-assets.developer.apple.com/published/ec22a982d6cb1673c1190305d79cb382/media-1965789%402x.png)
 
-A navigation controller object manages its child view controllers using an ordered array, known as the . The first view controller in the array is the root view controller and represents the bottom of the stack. The last view controller in the array is the topmost item on the stack, and represents the view controller currently being displayed. You add and remove view controllers from the stack using segues or using the methods of this class. The user can also remove the topmost view controller using the back button in the navigation bar or using a left-edge swipe gesture.
+A navigation controller object manages the view controllers it contains using an ordered array, known as the . The first view controller in the array is the root view controller and represents the bottom of the stack. The last view controller in the array is the topmost item on the stack, and represents the view controller that the system is currently displaying. You add and remove view controllers from the stack using segues or using the methods of this class. The user can also remove the topmost view controller using the back button in the navigation bar or using a swipe gesture.
 
-The navigation controller manages the navigation bar at the top of the interface and an optional toolbar at the bottom of the interface. The navigation bar is always present and is managed by the navigation controller itself, which updates the navigation bar using the content provided by its child view controllers. When the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the navigation controller similarly updates the toolbar with contents provided by the topmost view controller.
+The navigation controller manages the navigation bar at the top of the interface and an optional toolbar at the bottom of the interface. The navigation bar is always present and is managed by the navigation controller itself, which updates the navigation bar using the content provided by its contained view controllers. When the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the navigation controller similarly updates the toolbar with contents provided by the topmost view controller.
 
 A navigation controller coordinates its behavior with its [`delegate`](uinavigationcontroller/delegate.md) object. The delegate object can override the pushing or popping of view controllers, provide custom animation transitions, and specify the preferred orientation for the navigation interface. The delegate object you provide must conform to the [`UINavigationControllerDelegate`](uinavigationcontrollerdelegate.md) protocol.
 
@@ -46,21 +46,23 @@ The following image shows the relationships between the navigation controller an
 
 ##### Navigation Controller Views
 
-A navigation controller is a container view controller — that is, it embeds the content of other view controllers inside of itself. You access a navigation controller’s view from its [`view`](uiviewcontroller/view.md) property. This view incorporates the navigation bar, an optional toolbar, and the content view corresponding to the topmost view controller. The following image shows how these views are assembled to present the overall navigation interface. (In this figure, the navigation interface is further embedded inside a tab bar interface.) Although the content of the navigation bar and toolbar views changes, the views themselves don’t. The only view that actually changes is the custom content view provided by the topmost view controller on the navigation stack.
+A navigation controller is a container view controller — that is, it embeds the content of other view controllers inside of itself. You access a navigation controller’s view from its [`view`](uiviewcontroller/view.md) property. This view incorporates the navigation bar, an optional toolbar, and the content view corresponding to the topmost view controller. The following image shows how these views assemble to present the overall navigation interface. In this figure, the navigation interface is further embedded inside a tab bar interface. Although the content of the navigation bar and toolbar views changes, the views themselves don’t. The only view that actually changes is the custom content view provided by the topmost view controller on the navigation stack.
 
 ![The views of a navigation controller](https://docs-assets.developer.apple.com/published/aaa68d2967e5dacf95bed1c774852347/media-1965793%402x.png)
 
-> **Note**:  Because the content view underlaps the navigation bar in iOS 7 and later, you must consider that space when designing your view controller content.
+> **Note**:  Because the content view underlaps the navigation bar, consider that space when designing your view controller content.
 
-The navigation controller manages the creation, configuration, and display of the navigation bar and optional navigation toolbar. It’s permissible to customize the navigation bar’s appearance-related properties but you must never change its [`frame`](uiview/frame.md), [`bounds`](uiview/bounds.md), or [`alpha`](uiview/alpha.md) values directly. If you subclass [`UINavigationBar`](uinavigationbar.md), you must initialize your navigation controller using the [`init(navigationBarClass:toolbarClass:)`](uinavigationcontroller/init(navigationbarclass:toolbarclass:).md) method. To hide or show the navigation bar, use the [`isNavigationBarHidden`](uinavigationcontroller/isnavigationbarhidden.md) property or [`setNavigationBarHidden(_:animated:)`](uinavigationcontroller/setnavigationbarhidden(_:animated:).md) method.
+The navigation controller manages the creation, configuration, and display of the navigation bar and optional navigation toolbar. Don’t change the navigation bar’s [`frame`](uiview/frame.md), [`bounds`](uiview/bounds.md), or [`alpha`](uiview/alpha.md) values directly. If you subclass [`UINavigationBar`](uinavigationbar.md), initialize your navigation controller using the [`init(navigationBarClass:toolbarClass:)`](uinavigationcontroller/init(navigationbarclass:toolbarclass:).md) method. To hide or show the navigation bar, use the [`isNavigationBarHidden`](uinavigationcontroller/isnavigationbarhidden.md) property or [`setNavigationBarHidden(_:animated:)`](uinavigationcontroller/setnavigationbarhidden(_:animated:).md) method.
 
-A navigation controller builds the contents of the navigation bar dynamically using the navigation item objects (instances of the [`UINavigationItem`](uinavigationitem.md) class) associated with the view controllers on the navigation stack. To customize the overall appearance of a navigation bar, use [`UIAppearance`](uiappearance.md) APIs. To change the contents of the navigation bar, you must therefore configure the navigation items of your custom view controllers. For more information about navigation items, see [`UINavigationItem`](uinavigationitem.md).
+A navigation controller builds the contents of the navigation bar dynamically using the navigation item objects (instances of the [`UINavigationItem`](uinavigationitem.md) class) associated with the view controllers on the navigation stack. To change the contents of the navigation bar, configure the navigation items of your custom view controllers. For more information about navigation items, see [`UINavigationItem`](uinavigationitem.md).
+
+> 💡 **Tip**: Avoid using custom backgrounds and [`UIAppearance`](uiappearance.md) APIs to prevent interfering with Liquid Glass in your navigation bar.
 
 ##### Updating the Navigation Bar
 
 Each time the top-level view controller changes, the navigation controller updates the navigation bar accordingly. Specifically, the navigation controller updates the bar button items displayed in each of the three navigation bar positions: left, middle, and right. Bar button items are instances of the [`UIBarButtonItem`](uibarbuttonitem.md) class. You can create items with custom content or create standard system items depending on your needs.
 
-Tinting of the navigation bar is controlled by properties of the navigation bar itself. Use the [`tintColor`](uinavigationbar/tintcolor.md) property to change the tint color of items in the bar and use the [`barTintColor`](uinavigationbar/bartintcolor.md) property to change the tint color of the bar itself. Navigation bars don’t inherit their tint color from the currently displayed view controller.
+When your navigation bar displays with Liquid Glass, don’t add a background or apply a tint color. Add color to the text or image in a bar button item with [`tintColor`](uibarbuttonitem/tintcolor.md). To add color to the background of a bar button item, set the [`style`](uibarbuttonitem/style-swift.property.md) to [`UIBarButtonItem.Style.prominent`](uibarbuttonitem/style-swift.enum/prominent.md).
 
 For more information about the navigation bar, see [`UINavigationBar`](uinavigationbar.md). For more information about how to create bar button items, see [`UIBarButtonItem`](uibarbuttonitem.md).
 
@@ -70,9 +72,10 @@ For all but the root view controller on the navigation stack, the item on the le
 
 - If the new top-level view controller has a custom left bar button item, that item is displayed. To specify a custom left bar button item, set the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) property of the view controller’s navigation item.
 - If the top-level view controller doesn’t have a custom left bar button item, but the navigation item of the previous view controller has an object in its [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md) property, the navigation bar displays that item.
-- If a custom bar button item isn’t specified by either of the view controllers, a default back button is used and its title is set to the value of the [`title`](uiviewcontroller/title.md) property of the previous view controller — that is, the view controller one level down on the stack. (If there’s only one view controller on the navigation stack, no back button is displayed.)
+- If a custom bar button item isn’t specified by either of the view controllers, the system uses a default back button that displays a back image.
+- If there’s only one view controller on the navigation stack, it doesn’t display a back button.
 
-> **Note**:  In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left bar button item — an object in the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) property of its navigation item—the navigation bar doesn’t change the button title.
+> **Note**:  In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left-bar button item — an object in the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) property of its navigation item — the navigation bar doesn’t change the button title.
 
 ###### The Middle Item
 
@@ -85,8 +88,8 @@ The navigation controller updates the middle of the navigation bar as follows:
 
 The navigation controller updates the right side of the navigation bar as follows:
 
-- If the new top-level view controller has a custom right bar button item, that item is displayed. To specify a custom right bar button item, set the [`rightBarButtonItem`](uinavigationitem/rightbarbuttonitem.md) property of the view controller’s navigation item.
-- If no custom right bar button item is specified, the navigation bar displays nothing on the right side of the bar.
+- If the new top-level view controller has custom right bar button items, it displays those items. To specify a custom right-bar button item or items, set the [`rightBarButtonItem`](uinavigationitem/rightbarbuttonitem.md) or [`rightBarButtonItems`](uinavigationitem/rightbarbuttonitems.md) property of the view controller’s navigation item.
+- If the view controller doesn’t have any custom right-bar button items, the navigation bar doesn’t display anything on the right side of the bar.
 
 ##### Displaying a Toolbar
 
@@ -108,9 +111,9 @@ A navigation controller supports the following behaviors for its interface:
 
 ##### State Preservation
 
-When you assign a value to a navigation controller’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property, it attempts to preserve itself and the child view controllers on its navigation stack. The navigation controller starts at the bottom of the stack and moves upward, encoding each view controller that also has a valid restoration identifier string. During the next launch cycle, the navigation controller restores the preserved view controllers to the navigation stack in the same order that they were preserved.
+When you assign a value to a navigation controller’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property, it attempts to preserve itself and the contained view controllers on its navigation stack. The navigation controller starts at the bottom of the stack and moves upward, encoding each view controller that also has a valid restoration identifier string. During the next launch cycle, the navigation controller restores the preserved view controllers to the navigation stack in the same order that they were preserved.
 
-The child view controllers you push onto the navigation stack may use the same restoration identifiers. The navigation controller automatically stores additional information to ensure that each child’s restoration path is unique.
+The view controllers you push onto the navigation stack may use the same restoration identifiers. The navigation controller automatically stores additional information to ensure that each view controller’s restoration path is unique.
 
 For more information about how state preservation and restoration works, see [`Preserving your app’s UI across launches`](preserving-your-app-s-ui-across-launches.md).
 
@@ -149,7 +152,9 @@ For more information about how state preservation and restoration works, see [`P
 - [func popToViewController(UIViewController, animated: Bool) -> [UIViewController]?](uinavigationcontroller/poptoviewcontroller(_:animated:).md)
   Pops view controllers until the specified view controller is at the top of the navigation stack.
 - [var interactivePopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivepopgesturerecognizer.md)
-  The gesture recognizer responsible for popping the top view controller off the navigation stack.
+  The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+- [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
+  The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person pans horizontally in the view.
 ### Configuring navigation bars
 - [var navigationBar: UINavigationBar](uinavigationcontroller/navigationbar.md)
   The navigation bar managed by the navigation controller.
@@ -184,9 +189,6 @@ For more information about how state preservation and restoration works, see [`P
 ### Displaying view controllers
 - [func show(UIViewController, sender: Any?)](uinavigationcontroller/show(_:sender:).md)
   Presents the specified view controller in the navigation interface.
-### Instance Properties
-- [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
-  The interactive content pop gesture recognizes on the entire content area of the navigation controller in cases that are not covered by the interactive pop gesture recognizer and initiates an interactive pop. This property should only be used to set up failure requirements with it.
 
 ## Relationships
 

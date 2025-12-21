@@ -16,7 +16,7 @@ func startExecution(_ context: (any QCPlugInContext)!) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) indicates a fatal error occurred and prevents the Quartz Composer engine from starting.
+[`false`](https://developer.apple.com/documentation/Swift/false) indicates a fatal error occurred and prevents the Quartz Composer engine from starting.
 
 #### Discussion
 

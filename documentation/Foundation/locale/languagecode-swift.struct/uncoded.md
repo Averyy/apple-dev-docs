@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The `mis` code: represents languages that have not been included in the ISO standard yet
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

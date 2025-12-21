@@ -22,7 +22,7 @@ func containsTime(_ time: CMTime) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the time range contains the `time` value; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the time range contains the `time` value; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

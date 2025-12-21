@@ -22,7 +22,7 @@ enum AVQueuedSampleBufferRenderingStatus
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVQueuedSampleBufferRenderingStatus.unknown](avqueuedsamplebufferrenderingstatus/unknown.md)
   The object doesn’t have any sample buffers enqueued.
 - [AVQueuedSampleBufferRenderingStatus.rendering](avqueuedsamplebufferrenderingstatus/rendering.md)

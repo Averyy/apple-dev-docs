@@ -23,7 +23,7 @@ var predicate: NSPredicate { get }
 
 #### Discussion
 
-A predicate contains one or more expressions that evaluate to [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false). Expressions are often value-based comparisons, but predicates support other types of operators, including string comparisons and aggregate operations. For guidelines on how to construct predicates for your queries, see [`Predicate Rules for Query Objects`](ckquery#Predicate-Rules-for-Query-Objects.md).
+A predicate contains one or more expressions that evaluate to [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false). Expressions are often value-based comparisons, but predicates support other types of operators, including string comparisons and aggregate operations. For guidelines on how to construct predicates for your queries, see [`Predicate Rules for Query Objects`](ckquery#Predicate-Rules-for-Query-Objects.md).
 
 ## See Also
 

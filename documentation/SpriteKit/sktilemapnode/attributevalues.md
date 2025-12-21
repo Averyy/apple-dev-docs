@@ -17,7 +17,6 @@ The values of each attribute associated with the node’s attached shader.
 ## Declaration
 
 ```swift
-@MainActor
 var attributeValues: [String : SKAttributeValue] { get set }
 ```
 

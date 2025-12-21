@@ -20,7 +20,7 @@ init(coder: NSCoder)
 ## See Also
 
 - [init(imageContent: Data)](nsadaptiveimageglyph/init(imagecontent:).md)
-  Create an adaptive image glyph from the previously saved data.
+  Create an adaptive image glyph from previously saved data.
 
 
 ---

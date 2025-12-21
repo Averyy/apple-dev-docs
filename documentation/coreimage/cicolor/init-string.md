@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Creates a color object using the RGBA color component values specified by a string.
+Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
 
 **Availability**:
 - iOS 5.0+
@@ -21,16 +21,20 @@ convenience init(string representation: String)
 
 #### Return Value
 
-A Core Image color object that represents an RGB color in the color space specified by the Quartz 2D constant [`kCGColorSpaceGenericRGB`](https://developer.apple.com/documentation/CoreGraphics/kCGColorSpaceGenericRGB).
+ An autoreleased [`CIColor`](cicolor.md) instance.
+
+#### Discussion
+
+On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 
 ## Parameters
 
-- `representation`: indicates an RGB color whose components are 50% red, 70% green, 30% blue, and 100% opaque (alpha value of  ). The string representation always has four components—red, green, blue, and alpha. The default value for the alpha component is  .
+- `representation`: A string that contains color and alpha float values.   For example, the string:   indicates an RGB color whose components   are 50% red, 70% green, 30% blue, and 100% opaque.   If the string contains only 3 float values, the alpha component will be    If the string contains no float values, then   will be returned.
 
 ## See Also
 
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/init(red:green:blue:).md)
-  Creates a color object using the specified RGB color component values
+  Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 
 
 ---

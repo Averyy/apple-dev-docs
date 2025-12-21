@@ -6,18 +6,24 @@
 A textual representation of this instance.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var description: String { get }
 ```
+
+## See Also
+
+- [let confidence: Float](smudgeobservation/confidence.md)
+  The level of confidence in the observation’s accuracy of smudge detection on a lens.
+- [enum RequestDescriptor](requestdescriptor.md)
+  A type that describes the request and revision combination.
 
 
 ---

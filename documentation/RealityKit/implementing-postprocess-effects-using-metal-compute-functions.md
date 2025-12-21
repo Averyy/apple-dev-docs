@@ -10,7 +10,7 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
 
 One way to implement postprocess effects is to write custom Metal compute functions to process the rendered scene. Writing your own custom compute function gives you tremendous flexibility and allows you to create virtually any postprocessing effect. Because compute functions run on the GPU, they’re a good choice for implementing custom postprocessing effects.
 
-You can also implement many common postprocessing effects without writing your own compute functions by using image filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework or [`Core Image`](https://developer.apple.com/documentation/CoreImage), which also run on the GPU. For information on using the Metal Performance Shaders framework for postprocess effects, see [`Using Metal performance shaders to create custom postprocess effects`](using-metal-performance-shaders-to-create-custom-postprocess-effects.md). For information on using Core Image for postprocess effects, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
+You can also implement many common postprocessing effects without writing your own compute functions by using image filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders) framework or [`Core Image`](https://developer.apple.com/documentation/CoreImage), which also run on the GPU. For information on using the Metal Performance Shaders framework for postprocess effects, see [`Using Metal performance shaders to create custom postprocess effects`](using-metal-performance-shaders-to-create-custom-postprocess-effects.md). For information on using Core Image for postprocess effects, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
 
 ##### Check the Output Texture Pixel Format
 
@@ -112,13 +112,13 @@ To apply the effect, register the function as the [`postProcess`](arview/renderc
 arView.renderCallbacks.postProcess = postProcess
 ```
 
-> **Note**: For more information on writing Metal compute functions to implement postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including compute functions.
+> **Note**: For more information on writing Metal compute functions to implement postprocess effects, see the [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including compute functions.
 
 ## See Also
 
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
   Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
   Make sure your postprocess effect works on all devices.

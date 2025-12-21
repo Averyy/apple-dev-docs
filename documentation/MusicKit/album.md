@@ -22,9 +22,6 @@ struct Album
 
 ## Topics
 
-### Operators
-- [static func == (Album, Album) -> Bool](album/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var appearsOn: MusicItemCollection<Playlist>?](album/appearson.md)
   A collection of playlists that include tracks from the album.
@@ -48,9 +45,7 @@ struct Album
   The names of the album’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](album/genres.md)
   The genres for the album.
-- [var hashValue: Int](album/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](album/id-swift.property.md)
+- [let id: MusicItemID](album/id.md)
   The unique identifier for the album.
 - [var isAppleDigitalMaster: Bool?](album/isappledigitalmaster.md)
   A Boolean value that indicates whether the album is an Apple Digital Master.
@@ -88,20 +83,8 @@ struct Album
   The universal product code (UPC) for the album.
 - [var url: URL?](album/url.md)
   The URL for the album.
-### Instance Methods
-- [func hash(into: inout Hasher)](album/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](album/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](album/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](album/customstringconvertible-implementations.md)
-- [Decodable Implementations](album/decodable-implementations.md)
-- [Encodable Implementations](album/encodable-implementations.md)
-- [Equatable Implementations](album/equatable-implementations.md)
 - [FilterableMusicItem Implementations](album/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](album/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](album/musiclibraryrequestable-implementations.md)
 
 ## Relationships

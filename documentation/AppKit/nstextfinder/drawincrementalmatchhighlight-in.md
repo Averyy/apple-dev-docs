@@ -16,7 +16,7 @@ class func drawIncrementalMatchHighlight(in rect: NSRect)
 
 #### Discussion
 
-If [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`false`](https://developer.apple.com/documentation/swift/false), it is recommended to highlight incremental matches in your own view. However, some applications may choose to show incremental search values in a different manner.
+If [`incrementalSearchingShouldDimContentView`](nstextfinder/incrementalsearchingshoulddimcontentview.md) is [`false`](https://developer.apple.com/documentation/Swift/false), it is recommended to highlight incremental matches in your own view. However, some applications may choose to show incremental search values in a different manner.
 
 This method is not recommended to be overridden. The text finder never calls it. The view calls it to get the standard highlight behavior. It is recommended that views use this method do draw the highlight for consistency and to allow Application Kit to tweak the behavior in the future. If the view wants custom drawing, then it should be implemented by the view.
 

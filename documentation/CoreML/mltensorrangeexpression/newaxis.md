@@ -30,6 +30,13 @@ let y = x[.newAxis, ...]
 y.shape // is [1, 1, 3, 28, 28]
 ```
 
+## See Also
+
+- [static var squeezeAxis: any MLTensorRangeExpression](mltensorrangeexpression/squeezeaxis.md)
+  Squeeze the tensor at the specified dimension.
+- [static var fillAll: any MLTensorRangeExpression](mltensorrangeexpression/fillall.md)
+  The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
+
 
 ---
 

@@ -28,26 +28,20 @@ In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/
 
 ## Topics
 
-### Creating a Just Publisher
+### Creating a just ublisher
 - [init(Output)](just/init(_:).md)
   Initializes a publisher that emits the specified output just once.
-### Declaring Publisher Topography
-- [typealias Failure](just/failure.md)
-  The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let output: Output](just/output.md)
   The one element that the publisher emits.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Just<Output>, Just<Output>) -> Bool](just/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](just/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
+### Applying operators
 - [Publisher Operators](just-publisher-operators.md)
   Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](just/equatable-implementations.md)
-- [Publisher Implementations](just/publisher-implementations.md)
 
 ## Relationships
 

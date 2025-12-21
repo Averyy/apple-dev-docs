@@ -16,7 +16,7 @@ init(url URL: URL, timeout: TimeInterval, isForcedReadOnly forcedReadOnly: Bool,
 
 #### Discussion
 
-The `forcedReadOnly` parameter affects how framework exposes the NBD client to the guest operating system by the storage controller. As part of the NBD protocol, the NBD server advertises whether or not the disk exposed by the NBD client is read-only during the handshake phase of the protocol. Setting `forcedReadOnly` to [`true`](https://developer.apple.com/documentation/swift/true) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
+The `forcedReadOnly` parameter affects how framework exposes the NBD client to the guest operating system by the storage controller. As part of the NBD protocol, the NBD server advertises whether or not the disk exposed by the NBD client is read-only during the handshake phase of the protocol. Setting `forcedReadOnly` to [`true`](https://developer.apple.com/documentation/Swift/true) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
 
 ## Parameters
 

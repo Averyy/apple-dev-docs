@@ -146,6 +146,15 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   An interaction that indicates the view’s intent to receive game controller events through the Game Controller framework.
 ### Identifying the activation context
 - [class GCGameControllerActivationContext](gcgamecontrolleractivationcontext.md)
+### Structures
+- [GCController.DidBecomeCurrentMessage](gccontroller/didbecomecurrentmessage.md)
+  A message that posts after a game controller becomes the most recently used controller.
+- [GCController.DidConnectMessage](gccontroller/didconnectmessage.md)
+  A message that posts after a game controller accessory connects to the device.
+- [GCController.DidDisconnectMessage](gccontroller/diddisconnectmessage.md)
+  A message that posts after a game controller accessory disconnects from the device.
+- [GCController.DidStopBeingCurrentMessage](gccontroller/didstopbeingcurrentmessage.md)
+  A message that posts after a game controller stops being the most recently used controller.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 Describes hand chirality (left or right) of an input device.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

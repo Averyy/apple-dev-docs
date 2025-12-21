@@ -22,10 +22,7 @@ var dataPointer: UnsafeMutableRawPointer { get }
 
 ## See Also
 
-- [subscript(Int) -> NSNumber](mlmultiarray/subscript(_:)-2hh91.md)
-  Accesses the multiarray by using a linear offset.
-- [subscript([NSNumber]) -> NSNumber](mlmultiarray/subscript(_:)-3d9el.md)
-  Accesses the multiarray by using a number array that has an element for each dimension.
+- [subscript(_:)](mlmultiarray/subscript(_:).md)
 - [var pixelBuffer: CVPixelBuffer?](mlmultiarray/pixelbuffer.md)
   A reference to the multiarray’s underlying pixel buffer.
 

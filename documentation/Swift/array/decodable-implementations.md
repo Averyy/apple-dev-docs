@@ -5,7 +5,7 @@
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](array/init(from:)-6rmxq.md)
+- [init(from: any Decoder) throws](array/init(from:).md)
   Creates a new array by decoding from the given decoder.
 
 

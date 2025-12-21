@@ -58,7 +58,7 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
   A constant that represents an integer from the audio quality enumeration.
 - [Encoder Settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time Pitch Algorithm Settings](../AVFoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

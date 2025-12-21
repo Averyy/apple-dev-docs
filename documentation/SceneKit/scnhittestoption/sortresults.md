@@ -22,7 +22,7 @@ static let sortResults: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that the array of hit-test results is sorted from nearest to farthest. (When using the [`hitTestWithSegment(from:to:options:)`](scnnode/hittestwithsegment(from:to:options:).md) method, “nearest” is defined as closer to the point specified in the first parameter.) If you specify [`false`](https://developer.apple.com/documentation/swift/false), results are returned in an arbitrary order.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that the array of hit-test results is sorted from nearest to farthest. (When using the [`hitTestWithSegment(from:to:options:)`](scnnode/hittestwithsegment(from:to:options:).md) method, “nearest” is defined as closer to the point specified in the first parameter.) If you specify [`false`](https://developer.apple.com/documentation/Swift/false), results are returned in an arbitrary order.
 
 ## See Also
 

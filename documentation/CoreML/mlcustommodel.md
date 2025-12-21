@@ -35,10 +35,10 @@ This defines the Objective-C name for the class, which Core ML needs to access y
 
 ## Topics
 
-### Creating the Model
+### Creating the model
 - [init(modelDescription: MLModelDescription, parameters: [String : Any]) throws](mlcustommodel/init(modeldescription:parameters:).md)
   Creates a custom model with the given description and parameters.
-### Making Predictions
+### Making predictions
 - [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](mlcustommodel/prediction(from:options:).md)
   Predicts output values from the given input features.
 - [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlcustommodel/predictions(from:options:).md)

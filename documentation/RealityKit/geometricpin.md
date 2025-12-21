@@ -10,7 +10,7 @@ A structure that identifies a local transform relative to an entity or entity’
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -37,7 +37,7 @@ let entity = Entity()
 entity.components.set(pinsComponent)
 ```
 
-Another way to attach a pin is to add the `GeometricPin` to the `Entity/pins` collection directly.
+Another way to attach a pin is to add the `GeometricPin` to the [`pins`](entity/pins.md) collection directly.
 
 ```swift
 let entity = Entity()

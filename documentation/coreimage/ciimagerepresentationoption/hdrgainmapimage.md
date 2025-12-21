@@ -25,7 +25,7 @@ The value for this key needs to be a monochrome [`CIImage`](ciimage.md) instance
 
 If the [`hdrGainMapAsRGB`](ciimagerepresentationoption/hdrgainmapasrgb.md) option it true, then it needs to be an RGB [`CIImage`](ciimage.md) instance.
 
-The [`properties`](ciimage/properties.md) should contain metadata information equivalent to what is returned when initializing an image using [`auxiliaryHDRGainMap`](ciimageoption/auxiliaryhdrgainmap.md).
+The `/CIImage/properties` should contain metadata information equivalent to what is returned when initializing an image using [`auxiliaryHDRGainMap`](ciimageoption/auxiliaryhdrgainmap.md).
 
 
 ---

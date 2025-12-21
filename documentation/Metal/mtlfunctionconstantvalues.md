@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-A set of constant values that specialize a graphics or compute function.
+A set of constant values that specialize a graphics or compute GPU function.
 
 **Availability**:
 - iOS 10.0+
@@ -21,22 +21,24 @@ class MTLFunctionConstantValues
 
 #### Overview
 
-A [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) object sets constant values for function constants. Function constants are declared with the `[[ function_constant(index) ]]` attribute in Metal shading language source code. Refer to the [`Metal Shading Language Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) for more information.
+An [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) instance sets constant values for function constants. You declare function constants with the `[[ function_constant(index) ]]` attribute in MSL (Metal Shading Language) source code. See the [`Metal Shading Language specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
 
-Single constant values can be set individually by index or name. Multiple constant values can be set together with an index range.
+With an [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) instance, you can set each constant value individually with an index or a name, or set multiple constant values with an index range.
 
-A single [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) object can be applied to multiple [`MTLFunction`](mtlfunction.md) objects (for example, a vertex function and a fragment function). After a specialized function has been created, any changes to its constant values have no further effect on it. However, you can reset, add, or modify any constant values in the [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) object and reuse it to create another [`MTLFunction`](mtlfunction.md) object.
+You can apply a single [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) instance to multiple [`MTLFunction`](mtlfunction.md) instances of any kind, such as a vertex function and a fragment function. When you create a specialized function, subsequent changes to its constant values have no effect. However, you can reset, add, or modify a constant value in your [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) instance and reuse it to create another [`MTLFunction`](mtlfunction.md) instance.
+
+> 💡 **Tip**:  See [`Using function specialization to build pipeline variants`](using-function-specialization-to-build-pipeline-variants.md) for a sample code project that applies function constant values.
 
 ## Topics
 
-### Setting Constant Values
+### Setting constant values
 - [func setConstantValue(UnsafeRawPointer, type: MTLDataType, index: Int)](mtlfunctionconstantvalues/setconstantvalue(_:type:index:).md)
   Sets a value for a function constant at a specific index.
 - [func setConstantValue(UnsafeRawPointer, type: MTLDataType, withName: String)](mtlfunctionconstantvalues/setconstantvalue(_:type:withname:).md)
   Sets a value for a function constant with a specific name.
 - [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](mtlfunctionconstantvalues/setconstantvalues(_:type:range:).md)
   Sets values for a group of function constants within a specific index range.
-### Resetting Constant Values
+### Resetting constant values
 - [func reset()](mtlfunctionconstantvalues/reset.md)
   Deletes all previously set constant values.
 

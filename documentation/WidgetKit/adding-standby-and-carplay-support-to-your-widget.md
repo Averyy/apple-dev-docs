@@ -46,18 +46,12 @@ To test widgets in CarPlay, preview your widget in Xcode to verify that your wid
 
 ## See Also
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-  Create widgets that support additional platforms and adapt to their context.
+- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
+  Offer widgets in additional contexts by adding support for various widget sizes.
 - [Displaying the right widget background](displaying-the-right-widget-background.md)
   Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
 - [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
-  Implement glanceable views with WidgetKit and SwiftUI.
-- [SwiftUI views for widgets](swiftui-views.md)
-  Present your app’s content in widgets with SwiftUI views.
-- [Introducing SwiftUI](https://developer.apple.com/tutorials/SwiftUI)
-  SwiftUI is a modern way to declare user interfaces for any Apple platform. Create beautiful, dynamic apps faster than ever before.
 - [struct WidgetRenderingMode](widgetrenderingmode.md)
   Constants that indicate the rendering mode for a widget.
 - [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)

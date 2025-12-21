@@ -17,7 +17,7 @@ var shouldCloseWithWindow: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the web view should close; otherwise, it should not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the web view should close; otherwise, it should not.
 
 ## See Also
 

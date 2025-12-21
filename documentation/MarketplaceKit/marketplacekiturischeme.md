@@ -19,8 +19,8 @@ let MarketplaceKitURIScheme: String
 
 - [Installing your app from your website](installing-your-app-from-your-website.md)
 - [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 - [Distributing your app from your website](distributing-your-app-from-your-website.md)
+- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 - [Ingesting an alternative distribution package](ingesting-an-alternative-distribution-package.md)
 
 #### Discussion
@@ -57,7 +57,7 @@ The fully qualified domain in the `alternateDistributionPackage` value needs to 
 ## See Also
 
 - [class AppLibrary](applibrary.md)
-  An object that manages search characteristics, licensing, and the installation of apps.
+  A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
 - [struct AppVersion](appversion.md)
   Information that describes an app, including its identifier and version number.
 - [struct AutomaticUpdate](automaticupdate.md)

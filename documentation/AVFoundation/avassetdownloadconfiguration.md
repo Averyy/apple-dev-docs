@@ -22,10 +22,10 @@ class AVAssetDownloadConfiguration
 
 ## Topics
 
-### Creating a Configuration
+### Creating a configuration
 - [convenience init(asset: AVURLAsset, title: String)](avassetdownloadconfiguration/init(asset:title:).md)
   Creates a download configuration for a media asset.
-### Accessing Configuration Details
+### Accessing configuration details
 - [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
   A data value that represents the asset’s artwork.
 - [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](avassetdownloadconfiguration/primarycontentconfiguration.md)
@@ -36,7 +36,6 @@ class AVAssetDownloadConfiguration
   A configuration object that contains variant qualifiers and media options.
 - [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
-### Instance Methods
 - [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
   Sets media selection on interstitials for this asset
 

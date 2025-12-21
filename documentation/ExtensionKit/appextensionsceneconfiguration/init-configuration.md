@@ -23,11 +23,11 @@ Creates a scene configuration object from a closure and extension configuration.
 
 #### Discussion
 
-To provide a user interface, the extension’s `configuration` must be an [`AppExtensionSceneConfiguration`](appextensionsceneconfiguration.md), which combines an [`AppExtensionScene`](appextensionscene.md) with an optional non-UI [`AppExtensionConfiguration`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionConfiguration). The `configuration` value you pass manages global interprocess comunications with the host process, while the `content` value you pass defines the extension’s user interface.
+To provide a user interface, the extension’s `configuration` must be an [`AppExtensionSceneConfiguration`](appextensionsceneconfiguration.md), which combines an [`AppExtensionScene`](appextensionscene.md) with an optional non-UI [`AppExtensionConfiguration`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionConfiguration). The `configuration` value you pass manages global interprocess communications with the host process, while the `content` value defines the extension’s user interface.
 
 ## Parameters
 
-- `content`: The SwiftUI closure from which to build the user interface for the scene configuration.
+- `content`: The SwiftUI closure from which to build the scene’s content.
 - `configuration`: An optional extension configuration file.
 
 ## See Also

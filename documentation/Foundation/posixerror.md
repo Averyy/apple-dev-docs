@@ -24,6 +24,7 @@ struct POSIXError
 
 ### Type Aliases
 - [POSIXError.Code](posixerror/code.md)
+  The type of an error code.
 ### Type Properties
 - [static var E2BIG: POSIXErrorCode](posixerror/e2big.md)
   Argument list too long.
@@ -180,6 +181,7 @@ struct POSIXError
 - [static var EOWNERDEAD: POSIXErrorCode](posixerror/eownerdead.md)
   Previous owner died.
 - [static var EPERM: POSIXErrorCode](posixerror/eperm.md)
+  Operation not permitted.
 - [static var EPFNOSUPPORT: POSIXErrorCode](posixerror/epfnosupport.md)
   Protocol family not supported.
 - [static var EPIPE: POSIXErrorCode](posixerror/epipe.md)

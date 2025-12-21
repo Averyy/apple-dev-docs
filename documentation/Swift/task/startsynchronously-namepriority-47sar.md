@@ -4,21 +4,39 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
-- Unknown ?+ - Deprecated
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 @discardableResult
-static func startSynchronously(name: String? = nil, priority: TaskPriority? = nil, _ operation: @escaping @isolated(any) () async throws -> Success) -> Task<Success, any Error>
+static func startSynchronously(name: String? = nil, priority: TaskPriority? = nil, _ operation: sending @escaping @isolated(any) () async throws -> Success) -> Task<Success, any Error>
 ```
+
+## See Also
+
+- [typealias Group](task/group.md)
+- [typealias Handle](task/handle.md)
+- [typealias Priority](task/priority.md)
+- [static func CancellationError() -> CancellationError](task/cancellationerror.md)
+- [func getResult() async -> Result<Success, Failure>](task/getresult.md)
+- [func get() async throws -> Success](task/get-4i2gt.md)
+- [func get() async -> Success](task/get-4ohks.md)
+- [static func sleep(UInt64) async](task/sleep(_:).md)
+- [static func suspend() async](task/suspend.md)
+- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-38jhc.md)
+- [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
+- [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 
 
 ---

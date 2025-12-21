@@ -36,10 +36,10 @@ For more information on creating systems, see [`Implementing systems for entitie
 
 ## See Also
 
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -54,8 +54,6 @@ For more information on creating systems, see [`Implementing systems for entitie
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)

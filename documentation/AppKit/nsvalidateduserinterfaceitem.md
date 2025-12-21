@@ -18,7 +18,7 @@ protocol NSValidatedUserInterfaceItem
 
 The [`NSValidatedUserInterfaceItem`](nsvalidateduserinterfaceitem.md) protocol works with the [`NSUserInterfaceValidations`](nsuserinterfacevalidations.md) protocol to enable or disable a control automatically, depending on whether any responder in the responder chain can handle the control’s action method. The [`NSMenuItem`](nsmenuitem.md) and [`NSToolbarItem`](nstoolbaritem.md) classes implement this protocol.
 
-By conforming to this protocol, your control can participate in this validation mechanism. To validate a control, the application calls [`validateUserInterfaceItem(_:)`](nsuserinterfacevalidations/validateuserinterfaceitem(_:).md) for each item in the responder chain, starting with the first responder. If no responder returns [`true`](https://developer.apple.com/documentation/swift/true), the item is disabled. For example, a menu item that sends the `copy:` action message would disable itself if no responder in the responder chain can be copied.
+By conforming to this protocol, your control can participate in this validation mechanism. To validate a control, the application calls [`validateUserInterfaceItem(_:)`](nsuserinterfacevalidations/validateuserinterfaceitem(_:).md) for each item in the responder chain, starting with the first responder. If no responder returns [`true`](https://developer.apple.com/documentation/Swift/true), the item is disabled. For example, a menu item that sends the `copy:` action message would disable itself if no responder in the responder chain can be copied.
 
 ## Topics
 

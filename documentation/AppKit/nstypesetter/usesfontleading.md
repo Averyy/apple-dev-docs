@@ -16,7 +16,7 @@ var usesFontLeading: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it uses the information in the font metrics, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if it uses the information in the font metrics, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

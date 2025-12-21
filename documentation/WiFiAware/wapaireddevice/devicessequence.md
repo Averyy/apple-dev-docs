@@ -6,8 +6,8 @@
 A sequence that vends updates to a paired device list, as the list changes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -29,11 +29,8 @@ The `DevicesSequence` produces an asynchronous sequence of [`WAPairedDevice.Devi
   An iterator for the sequence of devices.
 - [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](wapaireddevice/devicessequence/makeasynciterator.md)
   Makes an asynchronous iterator that provides successive device snapshots when the list of paired devices known to the app changes.
-### Type Aliases - generated
 - [WAPairedDevice.DevicesSequence.Element](wapaireddevice/devicessequence/element.md)
   A dictionary holding a snapshot of currently paired devices accessible to your app.
-### Default Implementations
-- [AsyncSequence Implementations](wapaireddevice/devicessequence/asyncsequence-implementations.md)
 
 ## Relationships
 

@@ -150,7 +150,7 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
   Creates a new color with specified HDR content headroom.
 ### Working with high dynamic range (HDR) colors
 - [func resolveHDR(in: EnvironmentValues) -> Color.ResolvedHDR](color/resolvehdr(in:).md)
-  Evaluates this color to a resolved color with content headroom, given a set of environment values. /
+  Evaluates this color to a resolved color with content headroom, given a set of environment values.
 - [struct ResolvedHDR](color/resolvedhdr.md)
   A concrete color value, including HDR headroom information.
 ### Describing a color

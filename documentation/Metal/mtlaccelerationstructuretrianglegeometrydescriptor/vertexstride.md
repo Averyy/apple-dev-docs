@@ -21,12 +21,14 @@ var vertexStride: Int { get set }
 
 #### Discussion
 
-The stride must be at least 12 bytes and must be a multiple of 4 bytes. The default value is 12 bytes.
+The stride needs to be at least 12 bytes and needs to be a multiple of 4 bytes. The default value is 12 bytes.
 
 ## See Also
 
+- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+  The format of each vertex position in the vertex buffer property.
 - [var vertexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md)
-  A buffer  that contains vertex data.
+  A buffer that contains vertex data.
 - [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
 

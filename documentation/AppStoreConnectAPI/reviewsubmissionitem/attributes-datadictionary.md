@@ -15,6 +15,7 @@ object ReviewSubmissionItem.Attributes
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships](reviewsubmissionitem/relationships-data.dictionary.md)
+  The relationships you include in the request and those you can operate on.
 
 
 ---

@@ -10,7 +10,7 @@ Creates a new sphere mesh with the specified radius.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -34,9 +34,9 @@ The sphere is centered at the entity’s origin.
 
 ## See Also
 
-- [static generateCone(height:radius:)](meshresource/generatecone(height:radius:).md)
+- [static func generateCone(height: Float, radius: Float) -> MeshResource](meshresource/generatecone(height:radius:).md)
   Creates a new cone mesh with the specified dimensions.
-- [static generateCylinder(height:radius:)](meshresource/generatecylinder(height:radius:).md)
+- [static func generateCylinder(height: Float, radius: Float) -> MeshResource](meshresource/generatecylinder(height:radius:).md)
   Creates a new cylinder mesh with the specified dimensions.
 
 

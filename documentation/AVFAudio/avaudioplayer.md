@@ -20,6 +20,10 @@ An object that plays audio data from a file or buffer.
 class AVAudioPlayer
 ```
 
+## Mentions
+
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+
 #### Overview
 
 Use an audio player to:
@@ -75,6 +79,9 @@ For more information about preparing your app to play audio, see [`Configuring y
   The current playback time, in seconds, within the audio timeline.
 - [var duration: TimeInterval](avaudioplayer/duration.md)
   The total duration, in seconds, of the player’s audio.
+### Configuring the Spatial Audio experience
+- [var intendedSpatialExperience: any SpatialAudioExperience](avaudioplayer/intendedspatialexperience-27klj.md)
+  The intended spatial experience for this player.
 ### Managing audio channels
 - [var numberOfChannels: Int](avaudioplayer/numberofchannels.md)
   The number of audio channels in the player’s audio.
@@ -108,9 +115,6 @@ For more information about preparing your app to play audio, see [`Configuring y
   The unique identifier of the current audio player.
 - [var deviceCurrentTime: TimeInterval](avaudioplayer/devicecurrenttime.md)
   The time value, in seconds, of the audio output device’s clock.
-### Instance Properties
-- [var intendedSpatialExperience: any SpatialAudioExperience](avaudioplayer/intendedspatialexperience-27klj.md)
-  The AVAudioPlayer’s intended spatial experience.
 
 ## Relationships
 

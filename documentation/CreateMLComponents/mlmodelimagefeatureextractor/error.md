@@ -26,14 +26,9 @@ enum Error
   An error indicating that the mlmodel does not take required input.
 - [MLModelImageFeatureExtractor.Error.invalidOutput(_:)](mlmodelimagefeatureextractor/error/invalidoutput(_:).md)
   An error indicating that the mlmodel does not produce the required output.
+### Getting the debug description
 - [var debugDescription: String](mlmodelimagefeatureextractor/error/debugdescription.md)
   A text representation of the error.
-### Operators
-- [static func == (MLModelImageFeatureExtractor.Error, MLModelImageFeatureExtractor.Error) -> Bool](mlmodelimagefeatureextractor/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](mlmodelimagefeatureextractor/error/equatable-implementations.md)
-- [Error Implementations](mlmodelimagefeatureextractor/error/error-implementations.md)
 
 ## Relationships
 

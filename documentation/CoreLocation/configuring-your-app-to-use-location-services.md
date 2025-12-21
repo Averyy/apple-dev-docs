@@ -34,7 +34,7 @@ if CLLocationManager.headingAvailable() {
 }
 ```
 
-If your app can’t function without specific location services, declare those requirements in advance using your app’s `Info.plist` file. For more information, see Declare the device capabilities your app requires below.
+If your app can’t function without specific location services, declare those requirements in advance using your app’s Information Property list. For more information, see Declare the device capabilities your app requires below.
 
 ##### Start Receiving Location Updates and Authorization Status Changes
 
@@ -42,7 +42,7 @@ You can request location updates in your code immediately. If the system hasn’
 
 > 💡 **Tip**:  Begin requesting location updates where your app uses location data, such as from the view that displays location-related data. Don’t make requests at launch time or from a part of your app that isn’t connected to location, unless absolutely necessary. Someone might not fully understand why your app is asking for authorization and deny the request.
 
-Location updates and authorization status changes arrive in an asynchronous fashion. Check for both the presence of a location update and authentication status changes within the loop. The loop doesn’t terminate unless you explicitly use `return`, `break`, or throw an exception.
+Location updates and authorization status changes arrive in an asynchronous fashion. Check for both the presence of a location update and authorization status changes within the loop. The loop doesn’t terminate unless you explicitly use `return`, `break`, or throw an exception.
 
 ```swift
 // Obtain an asynchronous stream of updates.
@@ -66,7 +66,7 @@ If your app always needs authorization, it needs to create and hold a privileged
 
 Core Location generates location updates using a combination of Wi-Fi, cellular, and GPS hardware, and it generates compass updates using magnetometer hardware. For location updates, Core Location doesn’t use every piece of hardware every time. You specify the level of precision you want in your [`CLLocationManager`](cllocationmanager.md) object, and Core Location turns on the hardware it needs to deliver that data in the most power-efficient way.
 
-If your app can’t function without a particular piece of hardware, add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s `Info.plist` file. The presence of this key tells the App Store to prevent the installation of your app on devices without the specified hardware or capabilities. The value of the key is an array of strings, and you can include one of the following strings for location-related requirements: `location-services`, `gps`, or `magnetometer`.
+If your app can’t function without a particular piece of hardware, add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s Information Property List. The presence of this key tells the App Store to prevent the installation of your app on devices without the specified hardware or capabilities. The value of the key is an array of strings, and you can include one of the following strings for location-related requirements: `location-services`, `gps`, or `magnetometer`.
 
 Include the `gps` key only if you require the highest level of precision for location data. Typically, only navigation apps require that kind of precision, but other apps might also need it to ensure precise location is available when needed. If your app requires heading information, include the `magnetometer` key.
 

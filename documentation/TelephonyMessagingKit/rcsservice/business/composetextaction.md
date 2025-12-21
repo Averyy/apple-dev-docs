@@ -6,8 +6,8 @@
 Compose a draft text message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,16 +23,6 @@ struct ComposeTextAction
   Destination phone number.
 - [let text: String](rcsservice/business/composetextaction/text.md)
   Contents of text to send.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/composetextaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/composetextaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.ComposeTextAction, RCSService.Business.ComposeTextAction) -> Bool](rcsservice/business/composetextaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/composetextaction/equatable-implementations.md)
 
 ## Relationships
 

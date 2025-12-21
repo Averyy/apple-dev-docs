@@ -19,15 +19,15 @@ class AVMutableCaption
 
 ## Topics
 
-### Configuring Text and Timing
+### Configuring text and timing
 - [var text: String](avmutablecaption/text.md)
   The caption text.
 - [var timeRange: CMTimeRange](avmutablecaption/timerange.md)
   The time range over which the system presents the caption.
-### Configuring the Region
+### Configuring the region
 - [var region: AVCaptionRegion](avmutablecaption/region.md)
   The region in which the caption exists.
-### Configuring Font Styles
+### Configuring font styles
 - [AVCaption.FontStyle](avcaption/fontstyle.md)
   Font styles for caption text.
 - [func setFontStyle(AVCaption.FontStyle, in: NSRange)](avmutablecaption/setfontstyle(_:in:).md)
@@ -46,7 +46,7 @@ class AVMutableCaption
   Sets a decoration for a range of text.
 - [func removeDecoration(in: NSRange)](avmutablecaption/removedecoration(in:).md)
   Removes a decoration from a range of text.
-### Configuring Colors
+### Configuring colors
 - [func setTextColor(CGColor, in: NSRange)](avmutablecaption/settextcolor(_:in:).md)
   Sets the text color for a range of text.
 - [func removeTextColor(in: NSRange)](avmutablecaption/removetextcolor(in:).md)
@@ -55,17 +55,17 @@ class AVMutableCaption
   Sets the background color for a range of text.
 - [func removeBackgroundColor(in: NSRange)](avmutablecaption/removebackgroundcolor(in:).md)
   Removes a background color from a range of text.
-### Configuring Alignment
+### Configuring alignment
 - [var textAlignment: AVCaption.TextAlignment](avmutablecaption/textalignment.md)
   The alignment of the caption text.
 - [AVCaption.TextAlignment](avcaption/textalignment-swift.enum.md)
   Text alignment options for a caption.
-### Configuring Animation
+### Configuring animation
 - [var animation: AVCaption.Animation](avmutablecaption/animation.md)
   Animations to apply to the caption text.
 - [AVCaption.Animation](avcaption/animation-swift.enum.md)
   Animation options for a caption.
-### Configuring Advanced Typography
+### Configuring advanced typography
 - [AVCaption.Ruby](avcaption/ruby.md)
   An object that presents ruby characters.
 - [func setRuby(AVCaption.Ruby, in: NSRange)](avmutablecaption/setruby(_:in:).md)

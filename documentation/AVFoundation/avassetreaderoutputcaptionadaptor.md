@@ -19,18 +19,18 @@ class AVAssetReaderOutputCaptionAdaptor
 
 ## Topics
 
-### Creating a Caption Adaptor
+### Creating a caption adaptor
 - [init(assetReaderTrackOutput: AVAssetReaderTrackOutput)](avassetreaderoutputcaptionadaptor/init(assetreadertrackoutput:).md)
   Creates a caption adaptor that reads from a track output.
-### Accessing the Track Output
+### Accessing the track output
 - [var assetReaderTrackOutput: AVAssetReaderTrackOutput](avassetreaderoutputcaptionadaptor/assetreadertrackoutput.md)
   The associated asset reader track output.
-### Managing the Validation Delegate
+### Managing the validation delegate
 - [var validationDelegate: (any AVAssetReaderCaptionValidationHandling)?](avassetreaderoutputcaptionadaptor/validationdelegate.md)
   A delegate object that handles callbacks to the caption adaptor.
 - [protocol AVAssetReaderCaptionValidationHandling](avassetreadercaptionvalidationhandling.md)
   A protocol that defines the methods for caption validation events.
-### Reading Caption Groups
+### Reading caption groups
 - [func nextCaptionGroup() -> AVCaptionGroup?](avassetreaderoutputcaptionadaptor/nextcaptiongroup.md)
   Returns the next caption group.
 - [func captionsNotPresentInPreviousGroups(in: AVCaptionGroup) -> [AVCaption]](avassetreaderoutputcaptionadaptor/captionsnotpresentinpreviousgroups(in:).md)

@@ -24,6 +24,8 @@ Make credential identities available to users directly as AutoFill suggestions b
 
 Be sure to update the shared store whenever your app’s database changes to avoid showing stale identities as AutoFill suggestions. Take advantage of the incremental change methods [`saveCredentialIdentities(_:completion:)`](ascredentialidentitystore/savecredentialidentities(_:completion:)-1bbx6.md) and [`removeCredentialIdentities(_:completion:)`](ascredentialidentitystore/removecredentialidentities(_:completion:)-67lcw.md) to avoid rewriting the entire store every time you need to make a change.
 
+You can fetch previously saved credential identities with [`credentialIdentities(forService:credentialIdentityTypes:)`](ascredentialidentitystore/credentialidentities(forservice:credentialidentitytypes:).md). Call this method when preparing to store a credential to check whether your app has a saved credential for this domain.
+
 When the user disables your extension, the system clears and disables your shared store. So before making updates, check to see that the store’s enabled to avoid unnecessary activity:
 
 ## Topics
@@ -51,6 +53,13 @@ When the user disables your extension, the system clears and disables your share
   A description that uniquely identifies a particular passkey credential.
 - [class ASPasswordCredentialIdentity](aspasswordcredentialidentity.md)
   A description that uniquely identifies a particular password credential.
+### Fetching saved credential identities
+- [func credentialIdentities(forService: ASCredentialServiceIdentifier?, credentialIdentityTypes: ASCredentialIdentityStore.IdentityTypes) async -> [any ASCredentialIdentity]](ascredentialidentitystore/credentialidentities(forservice:credentialidentitytypes:).md)
+  Retrieves an array of all previously saved credential identities in the store for your extension.
+- [class ASCredentialServiceIdentifier](ascredentialserviceidentifier.md)
+  An identifier representing a particular service for which the user needs a credential, like a web site.
+- [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
+  The defined identity types for use in retrieving credentials.
 ### Recognizing errors
 - [struct ASCredentialIdentityStoreError](ascredentialidentitystoreerror.md)
   A credential identity store error.
@@ -65,10 +74,6 @@ When the user disables your extension, the system clears and disables your share
   Replaces existing credential identities with new credential identities.
 - [func removeCredentialIdentities([ASPasswordCredentialIdentity], completion: ((Bool, (any Error)?) -> Void)?)](ascredentialidentitystore/removecredentialidentities(_:completion:)-2ygnf.md)
   Removes the given credential identities from the store.
-### Instance Methods
-- [func credentialIdentities(forService: ASCredentialServiceIdentifier?, credentialIdentityTypes: ASCredentialIdentityStore.IdentityTypes) async -> [any ASCredentialIdentity]](ascredentialidentitystore/credentialidentities(forservice:credentialidentitytypes:).md)
-### Structures
-- [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
 
 ## Relationships
 

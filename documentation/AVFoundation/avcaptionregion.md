@@ -23,7 +23,7 @@ The framework defines four regions, and doesn’t support configuring region set
 
 ## Topics
 
-### Accessing Defined Regions
+### Accessing defined regions
 - [class var appleITTTop: AVCaptionRegion](avcaptionregion/appleitttop.md)
   The top region for iTT format captions.
 - [class var appleITTBottom: AVCaptionRegion](avcaptionregion/appleittbottom.md)
@@ -34,38 +34,38 @@ The framework defines four regions, and doesn’t support configuring region set
   The right region for iTT format captions.
 - [class var subRipTextBottom: AVCaptionRegion](avcaptionregion/subriptextbottom.md)
   The bottom caption region for SubRip Text (SRT) format captions.
-### Identifying a Region
+### Identifying a region
 - [var identifier: String?](avcaptionregion/identifier.md)
   A string that identifies the region.
-### Accessing Dimensions
+### Accessing dimensions
 - [struct AVCaptionDimension](avcaptiondimension.md)
   A structure that defines a caption dimension.
-### Accessing the Location
+### Accessing the location
 - [var origin: AVCaptionPoint](avcaptionregion/origin.md)
   The region’s top-left position.
 - [struct AVCaptionPoint](avcaptionpoint.md)
   A structure that defines the origin point for a caption.
-### Accessing the Size
+### Accessing the size
 - [var size: AVCaptionSize](avcaptionregion/size.md)
   The height and width of the region.
 - [struct AVCaptionSize](avcaptionsize.md)
   A structure that defines the height and width of a caption.
-### Accessing the Display Alignment
+### Accessing the display alignment
 - [var displayAlignment: AVCaptionRegion.DisplayAlignment](avcaptionregion/displayalignment-swift.property.md)
   The alignment of lines for the region.
 - [AVCaptionRegion.DisplayAlignment](avcaptionregion/displayalignment-swift.enum.md)
   Constants that indicate the alignment of lines in a region.
-### Accessing the Scroll Mode
+### Accessing the scroll mode
 - [var scroll: AVCaptionRegion.Scroll](avcaptionregion/scroll-swift.property.md)
   The scroll mode of the region.
 - [AVCaptionRegion.Scroll](avcaptionregion/scroll-swift.enum.md)
   Constants that indicate the scrolling effects the system applies to a region.
-### Accessing the Writing Mode
+### Accessing the writing mode
 - [var writingMode: AVCaptionRegion.WritingMode](avcaptionregion/writingmode-swift.property.md)
   The block and inline progression direction of the region.
 - [AVCaptionRegion.WritingMode](avcaptionregion/writingmode-swift.enum.md)
   Constants that indicate the writing mode for a region.
-### Processing Regions
+### Processing regions
 - [func mutableCopy(with: NSZone?) -> Any](avcaptionregion/mutablecopy(with:).md)
   Creates a mutable copy of a caption region.
 - [func encode(with: NSCoder)](avcaptionregion/encode(with:).md)

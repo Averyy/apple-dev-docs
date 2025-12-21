@@ -18,6 +18,10 @@
 optional func copyPublicKey() -> SecKey
 ```
 
+#### Discussion
+
+Returns a copy of the public key for the keypair.
+
 
 ---
 

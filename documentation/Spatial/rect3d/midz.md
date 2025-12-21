@@ -9,9 +9,8 @@
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- watchOS 10.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 10.0+
 
 ## Declaration
 

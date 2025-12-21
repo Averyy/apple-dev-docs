@@ -23,7 +23,7 @@ struct CGVector
 ## Topics
 
 ### Special Values
-- [static var zero: CGVector { get }](CGVector/zero.md)
+- [static var zero: CGVector](CGVector/zero.md)
 - [init()](cgvector/init.md)
   Creates a vector whose components are both zero.
 ### Geometric Properties

@@ -60,7 +60,7 @@ The [`NSDocument`](nsdocument.md) class implements the file coordination support
 
 ##### Multicore Considerations
 
-In macOS 10.6 and later, `NSDocument` supports the ability to open multiple documents concurrently. However, this support requires the cooperation of the document object. If your document subclass is able to read specific document types independently of other similar documents, you should override the [`canConcurrentlyReadDocuments(ofType:)`](nsdocument/canconcurrentlyreaddocuments(oftype:).md) class method and return [`true`](https://developer.apple.com/documentation/swift/true) for the appropriate document types. If specific document types rely on shared state information, however, you should return [`false`](https://developer.apple.com/documentation/swift/false) for those types.
+In macOS 10.6 and later, `NSDocument` supports the ability to open multiple documents concurrently. However, this support requires the cooperation of the document object. If your document subclass is able to read specific document types independently of other similar documents, you should override the [`canConcurrentlyReadDocuments(ofType:)`](nsdocument/canconcurrentlyreaddocuments(oftype:).md) class method and return [`true`](https://developer.apple.com/documentation/Swift/true) for the appropriate document types. If specific document types rely on shared state information, however, you should return [`false`](https://developer.apple.com/documentation/Swift/false) for those types.
 
 ## Topics
 
@@ -165,17 +165,17 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
   Saves the interface-related state of the document.
 ### Configuring the Autosave Behavior
 - [class var autosavesInPlace: Bool](nsdocument/autosavesinplace.md)
-  Returns whether the receiver supports autosaving in place.
+  A Boolean value that indicates whether the document subclass supports autosaving in place.
 - [class var autosavesDrafts: Bool](nsdocument/autosavesdrafts.md)
   A Boolean value that indicates whether the document subclass supports autosaving of drafts.
 - [class var preservesVersions: Bool](nsdocument/preservesversions.md)
-  Returns whether the document subclass supports version management.
+  A Boolean value that indicates whether the document subclass supports version management.
 - [var autosavedContentsFileURL: URL?](nsdocument/autosavedcontentsfileurl.md)
   The location of the most recently autosaved document contents.
 - [var autosavingFileType: String?](nsdocument/autosavingfiletype.md)
-  Returns the document type to use for an autosave operation.
+  The document type to use for an autosave operation.
 - [var autosavingIsImplicitlyCancellable: Bool](nsdocument/autosavingisimplicitlycancellable.md)
-  Returns a Boolean value that indicates whether you can cancel an in-progress autosave operation.
+  A Boolean value that indicates whether you can cancel an in-progress autosave operation.
 ### Autosaving the Document
 - [func checkAutosavingSafety() throws](nsdocument/checkautosavingsafety.md)
   Returns a Boolean value that indicates whether it is safe to autosave document changes.

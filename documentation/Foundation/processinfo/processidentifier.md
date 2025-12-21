@@ -32,6 +32,8 @@ var processIdentifier: Int32 { get }
   A Boolean value that indicates whether the process originated as an iOS app and runs on macOS.
 - [var isiOSAppOnMac: Bool](processinfo/isiosapponmac.md)
   A Boolean value that indicates whether the process is an iPhone or iPad app running on a Mac.
+- [var isiOSAppOnVision: Bool](processinfo/isiosapponvision.md)
+  A Boolean value that indicates whether the process is an iPhone or iPad app running on visionOS.
 - [var processName: String](processinfo/processname.md)
   The name of the process.
 

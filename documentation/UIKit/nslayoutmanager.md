@@ -55,7 +55,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 ### Accessing the text storage
 - [var textStorage: NSTextStorage?](nslayoutmanager/textstorage.md)
   The text storage object that contains the content to lay out.
-- [func replaceTextStorage(_ newTextStorage: NSTextStorage)](../AppKit/NSLayoutManager/replaceTextStorage(_:).md)
+- [func replaceTextStorage(NSTextStorage)](../AppKit/NSLayoutManager/replaceTextStorage(_:).md)
   Replaces the layout manager’s current text storage object with the specified object.
 ### Configuring the global layout manager options
 - [var allowsNonContiguousLayout: Bool](nslayoutmanager/allowsnoncontiguouslayout.md)
@@ -68,7 +68,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
 - [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool { get set }](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.
@@ -87,7 +87,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   Associates a text container with the specified range of glyphs.
 - [func textContainerChangedGeometry(NSTextContainer)](nslayoutmanager/textcontainerchangedgeometry(_:).md)
   Invalidates the layout information, and possibly glyphs, for the specified text container and all subsequent text container objects.
-- [func textContainerChangedTextView(_ container: NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
+- [func textContainerChangedTextView(NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
   Updates the information necessary to manage text view objects for the specified text container.
 - [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:).md)
   Returns the text container that manages the layout for the specified glyph, causing layout to happen as necessary.
@@ -119,7 +119,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   Forces the layout manager to perform layout for the specified glyph range if it hasn’t already.
 - [func ensureLayout(for: NSTextContainer)](nslayoutmanager/ensurelayout(for:).md)
   Forces the layout manager to perform layout for the specified text container if it hasn’t already.
-- [var glyphGenerator: NSGlyphGenerator { get set }](../AppKit/NSLayoutManager/glyphGenerator.md)
+- [var glyphGenerator: NSGlyphGenerator](../AppKit/NSLayoutManager/glyphGenerator.md)
   The glyph generator that the layout manager uses.
 ### Accessing glyphs
 - [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:properties:characterindexes:bidilevels:).md)
@@ -233,62 +233,62 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 - [func underlineGlyphRange(NSRange, underlineType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
   Calculates subranges to underline for the specified glyphs and draws the underlining as appropriate.
 ### Handling layout for text blocks
-- [func setLayoutRect(_ rect: NSRect, for block: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setLayoutRect(_:for:glyphRange:).md)
+- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setLayoutRect(_:for:glyphRange:).md)
   Sets the layout rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for block: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:glyphRange:).md)
+- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:glyphRange:).md)
   Returns the rectangle for the layout of the specified text block and glyph range.
-- [func setBoundsRect(_ rect: NSRect, for block: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setBoundsRect(_:for:glyphRange:).md)
+- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setBoundsRect(_:for:glyphRange:).md)
   Sets the bounding rectangle that encloses the specified text block and glyph range.
-- [func boundsRect(for block: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:glyphRange:).md)
+- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:glyphRange:).md)
   Returns the bounding rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for block: NSTextBlock, at glyphIndex: Int, effectiveRange effectiveGlyphRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:at:effectiveRange:).md)
+- [func layoutRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:at:effectiveRange:).md)
   Returns the rectangle for the layout of the specified text block and glyph.
-- [func boundsRect(for block: NSTextBlock, at glyphIndex: Int, effectiveRange effectiveGlyphRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:at:effectiveRange:).md)
+- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:at:effectiveRange:).md)
   Returns the bounding rectangle for the specified text block and glyph.
 ### Managing attachments
-- [var defaultAttachmentScaling: NSImageScaling { get set }](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
+- [var defaultAttachmentScaling: NSImageScaling](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
-- [func showAttachmentCell(_ cell: NSCell, in rect: NSRect, characterIndex attachmentIndex: Int)](../AppKit/NSLayoutManager/showAttachmentCell(_:in:characterIndex:).md)
+- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](../AppKit/NSLayoutManager/showAttachmentCell(_:in:characterIndex:).md)
   Draws an attachment cell.
 ### Handling Rulers
-- [func rulerAccessoryView(for view: NSTextView, paragraphStyle style: NSParagraphStyle, ruler: NSRulerView, enabled isEnabled: Bool) -> NSView?](../AppKit/NSLayoutManager/rulerAccessoryView(for:paragraphStyle:ruler:enabled:).md)
+- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](../AppKit/NSLayoutManager/rulerAccessoryView(for:paragraphStyle:ruler:enabled:).md)
   Returns the accessory view that the text system uses for its ruler.
-- [func rulerMarkers(for view: NSTextView, paragraphStyle style: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../AppKit/NSLayoutManager/rulerMarkers(for:paragraphStyle:ruler:).md)
+- [func rulerMarkers(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../AppKit/NSLayoutManager/rulerMarkers(for:paragraphStyle:ruler:).md)
   Returns an array of text ruler objects for the current selection.
 ### Managing the responder chain
-- [func layoutManagerOwnsFirstResponder(in window: NSWindow) -> Bool](../AppKit/NSLayoutManager/layoutManagerOwnsFirstResponder(in:).md)
+- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](../AppKit/NSLayoutManager/layoutManagerOwnsFirstResponder(in:).md)
   Indicates whether the first responder in the specified window is a text view for the layout manager.
-- [unowned(unsafe) var firstTextView: NSTextView? { get }](../AppKit/NSLayoutManager/firstTextView.md)
+- [var firstTextView: NSTextView?](../AppKit/NSLayoutManager/firstTextView.md)
   The first text view in the layout manager’s series of text views.
-- [unowned(unsafe) var textViewForBeginningOfSelection: NSTextView? { get }](../AppKit/NSLayoutManager/textViewForBeginningOfSelection.md)
+- [var textViewForBeginningOfSelection: NSTextView?](../AppKit/NSLayoutManager/textViewForBeginningOfSelection.md)
   The text view that contains the first glyph in the selection.
 ### Managing the typesetter
-- [var typesetter: NSTypesetter { get set }](../AppKit/NSLayoutManager/typesetter.md)
+- [var typesetter: NSTypesetter](../AppKit/NSLayoutManager/typesetter.md)
   The current typesetter.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior { get set }](../AppKit/NSLayoutManager/typesetterBehavior-swift.property.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](../AppKit/NSLayoutManager/typesetterBehavior-swift.property.md)
   The default typesetter behavior.
 - [NSLayoutManager.TypesetterBehavior](../AppKit/NSLayoutManager/TypesetterBehavior-swift.enum.md)
   Constants that determine the layout manager’s behavior during layout.
-- [func defaultLineHeight(for theFont: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultLineHeight(for:).md)
+- [func defaultLineHeight(for: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultLineHeight(for:).md)
   Returns the default line height for a line of text that uses a specified font.
-- [func defaultBaselineOffset(for theFont: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultBaselineOffset(for:).md)
+- [func defaultBaselineOffset(for: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultBaselineOffset(for:).md)
   Returns the default baseline offset that the layout manager’s typesetter uses for the specified font.
 ### Managing temporary attribute support
-- [func addTemporaryAttributes(_ attrs: [NSAttributedString.Key : Any] = [:], forCharacterRange charRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttributes(_:forCharacterRange:).md)
+- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttributes(_:forCharacterRange:).md)
   Appends one or more temporary attributes to the attributes dictionary of the specified character range.
-- [func addTemporaryAttribute(_ attrName: NSAttributedString.Key, value: Any, forCharacterRange charRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttribute(_:value:forCharacterRange:).md)
+- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttribute(_:value:forCharacterRange:).md)
   Adds a temporary attribute to the characters in the specified range.
-- [func setTemporaryAttributes(_ attrs: [NSAttributedString.Key : Any], forCharacterRange charRange: NSRange)](../AppKit/NSLayoutManager/setTemporaryAttributes(_:forCharacterRange:).md)
+- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/NSLayoutManager/setTemporaryAttributes(_:forCharacterRange:).md)
   Sets one or more temporary attributes for the specified character range.
-- [func removeTemporaryAttribute(_ attrName: NSAttributedString.Key, forCharacterRange charRange: NSRange)](../AppKit/NSLayoutManager/removeTemporaryAttribute(_:forCharacterRange:).md)
+- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](../AppKit/NSLayoutManager/removeTemporaryAttribute(_:forCharacterRange:).md)
   Removes a temporary attribute from the list of attributes for the specified character range.
-- [func temporaryAttribute(_ attrName: NSAttributedString.Key, atCharacterIndex location: Int, effectiveRange range: NSRangePointer?) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:effectiveRange:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:effectiveRange:).md)
   Returns the value for the temporary attribute of a character, and the range it applies to.
-- [func temporaryAttribute(_ attrName: NSAttributedString.Key, atCharacterIndex location: Int, longestEffectiveRange range: NSRangePointer?, in rangeLimit: NSRange) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:longestEffectiveRange:in:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:longestEffectiveRange:in:).md)
   Returns the value for the temporary attribute of a character, and the maximum range it applies to.
-- [func temporaryAttributes(atCharacterIndex charIndex: Int, effectiveRange effectiveCharRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:effectiveRange:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:effectiveRange:).md)
   Returns the dictionary of temporary attributes for the specified character range.
-- [func temporaryAttributes(atCharacterIndex location: Int, longestEffectiveRange range: NSRangePointer?, in rangeLimit: NSRange) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:longestEffectiveRange:in:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:longestEffectiveRange:in:).md)
   Returns the temporary attributes for a character, and the maximum range they apply to.
 ### Supporting types
 - [NSLayoutManager.TextLayoutOrientation](nslayoutmanager/textlayoutorientation.md)

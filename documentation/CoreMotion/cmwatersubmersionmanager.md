@@ -41,7 +41,7 @@ guard CMWaterSubmersionManager.waterSubmersionAvailable else {
 }
 ```
 
-If the [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) property is [`true`](https://developer.apple.com/documentation/swift/true), instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) object and assign a delegate.
+If the [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) object and assign a delegate.
 
 ```swift
 // Instantiate the submersion manager.

@@ -38,6 +38,8 @@ Manage releases for your Game Center achievements.
   Manage localizations for your achievements.
 - [Game Center achievements images](game-center-achievements-images.md)
   Manage images for your Game Center achievements.
+- [Game Center achievement versions](game-center-achievement-versions.md)
+  Manage versions for your Game Center achievements.
 - [Game Center player achievements](game-center-player-achievements.md)
   Manage Game Center achievements by player for your apps.
 

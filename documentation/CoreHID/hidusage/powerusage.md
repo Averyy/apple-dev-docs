@@ -92,20 +92,8 @@ enum PowerUsage
 - [HIDUsage.PowerUsage.used](hidusage/powerusage/used.md)
 - [HIDUsage.PowerUsage.voltagOutOfRange](hidusage/powerusage/voltagoutofrange.md)
 - [HIDUsage.PowerUsage.voltage](hidusage/powerusage/voltage.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/powerusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/powerusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.PowerUsage.RawValue](hidusage/powerusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/powerusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/powerusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/powerusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -61,7 +61,7 @@ print("Got random number \(number).")
 
 The `async`-`await` syntax in Swift can also replace the use of a future entirely, for the case where you want to perform some operation after an asynchronous task completes.
 
-You do this with the function doc://com.apple.documentation/documentation/swift/withCheckedContinuation(function:_:) and its throwing equivalent, doc://com.apple.documentation/documentation/swift/swift/withCheckedThrowingContinuation(function:_:). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
+You do this with the function [`withCheckedContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/Swift/withCheckedContinuation(isolation:function:_:)) and its throwing equivalent, [`withCheckedThrowingContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/Swift/withCheckedThrowingContinuation(isolation:function:_:)). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
 
 ```swift
 func generateAsyncRandomNumberFromContinuation() async -> Int {
@@ -84,21 +84,16 @@ For more information on continuations, see the [`Concurrency`](https://developer
 
 ## Topics
 
-### Creating a Future
+### Creating a future
 - [init((Future<Output, Failure>.Promise) -> Void)](future/init(_:).md)
   Creates a publisher that invokes a promise closure when the publisher emits an element.
 - [typealias Promise](future/promise.md)
   A type that represents a closure to invoke in the future, when an element or error is available.
-### Accessing the Value Asynchronously
+### Accessing the value asynchronously
 - [var value: Output](future/value-9iwjz.md)
   The published value of the future, delivered asynchronously.
 - [var value: Output](future/value-5iprp.md)
   The published value of the future or an error, delivered asynchronously.
-### Applying Operators
-- [Publisher Operators](future-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](future/publisher-implementations.md)
 
 ## Relationships
 

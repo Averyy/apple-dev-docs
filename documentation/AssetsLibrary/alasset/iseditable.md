@@ -5,11 +5,6 @@
 
 Indicates whether the asset is editable.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -18,7 +13,7 @@ var isEditable: Bool { get }
 
 #### Discussion
 
-The property value is [`true`](https://developer.apple.com/documentation/swift/true) if the application is able to edit the asset, and [`false`](https://developer.apple.com/documentation/swift/false) if the application is not able to edit the asset. Applications are only allowed to edit assets that they originally wrote.
+The property value is [`true`](https://developer.apple.com/documentation/Swift/true) if the application is able to edit the asset, and [`false`](https://developer.apple.com/documentation/Swift/false) if the application is not able to edit the asset. Applications are only allowed to edit assets that they originally wrote.
 
 ## See Also
 

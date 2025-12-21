@@ -3,14 +3,14 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Create dynamic materials without Metal.
+A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +19,29 @@ Create dynamic materials without Metal.
 struct ShaderGraphMaterial
 ```
 
+#### Overview
+
+Use ShaderGraphMaterial when retrieving a shaders you build in Reality Composer Pro’s shader graph. The following code demonstrates retrieving the first material from an entity loaded from a Reality Composer Proj project and sets a new value for one of its named parameters:
+
+```swift` if var modelComponent = entity.modelComponent { modelComponent.materials = modelComponent.materials.map { guard var material = $0 as? ShaderGraphMaterial else { return $0 } if material.parameterNames.contains(myMaterialParameterName) { do { try material.setParameter(name: myMaterialParameterName, value: .float(isPowered ? 1.0 : 0.0)) } catch { // Handle error. } } return material } entity.modelComponent = modelComponent }
+
+```None
+
+In addition to creating instances of `ShaderGraphMaterial` from Reality Composer Pro's shader graph, you can also create them directly from Material X shaders.
+
+You can also load shader graph materials directly from `.reality` files:
+
+```swift
+let shader = try! await ShaderGraphMaterial(named: "/Root/Glass", from: "Scene.usda")
+```
+
+For more information on using custom parameters in a `ShaderGraphMaterial`,  see doc://documentation.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos.
+
+Create dynamic materials without Metal.
+
 ## Topics
 
 ### Shader Graph fundamentals
-- [Designing RealityKit content with Reality Composer Pro](../visionOS/designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [protocol Material](material.md)
   A type that describes the material aspects of a mesh, like color and texture.
 - [struct MaterialParameterTypes](materialparametertypes.md)

@@ -36,14 +36,6 @@ While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) a
   Creates an instance with a specified width.
 - [init(Artwork, width: CGFloat, height: CGFloat)](artworkimage/init(_:width:height:).md)
   Creates an instance with a specified width and height.
-### Instance Properties
-- [var body: some View](artworkimage/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [ArtworkImage.Body](artworkimage/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](artworkimage/view-implementations.md)
 
 ## Relationships
 

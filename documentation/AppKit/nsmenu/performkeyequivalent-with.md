@@ -16,7 +16,7 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if `event` is a key equivalent that the menu should handle, otherwise returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `event` is a key equivalent that the menu should handle, otherwise returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

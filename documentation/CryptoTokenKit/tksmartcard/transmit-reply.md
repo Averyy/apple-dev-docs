@@ -6,13 +6,13 @@
 Transmits data in Application Protocol Data Unit (APDU) format to the Smart Card.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 
@@ -21,10 +21,6 @@ func transmit(_ request: Data) async throws -> Data
 ```
 
 #### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func transmit(_ request: Data) async throws -> Data
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 You should only call this method after a session to the Smart Card has been established using the [`beginSession(reply:)`](tksmartcard/beginsession(reply:).md) method, and before the session is terminated using the [`endSession()`](tksmartcard/endsession().md) method.
 

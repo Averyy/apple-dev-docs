@@ -17,7 +17,7 @@ var allowsScrolling: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), scrolling is allowed; if [`false`](https://developer.apple.com/documentation/swift/false), it is not. If the frame contains a scrolling element, then that value is used as the default; otherwise, the default is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](https://developer.apple.com/documentation/Swift/true), scrolling is allowed; if [`false`](https://developer.apple.com/documentation/Swift/false), it is not. If the frame contains a scrolling element, then that value is used as the default; otherwise, the default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

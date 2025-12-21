@@ -22,26 +22,21 @@ struct Reduce<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Reduce Publisher
+### Creating a reduce publisher
 - [init(upstream: Upstream, initial: Output, nextPartialResult: (Output, Upstream.Output) -> Output)](publishers/reduce/init(upstream:initial:nextpartialresult:).md)
   Creates a publisher that applies a closure to all received elements and produces an accumulated value when the upstream publisher finishes.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.Reduce.Failure](publishers/reduce/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/reduce/upstream.md)
   The publisher from which this publisher receives elements.
 - [let initial: Output](publishers/reduce/initial.md)
   The initial value provided on the first invocation of the closure.
 - [let nextPartialResult: (Output, Upstream.Output) -> Output](publishers/reduce/nextpartialresult.md)
   A closure that takes the previously-accumulated value and the next element from the upstream publisher to produce a new value.
-### Applying Operators
-- [Publisher Operators](publishers-reduce-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/reduce/publisher-implementations.md)
 
 ## Relationships
 

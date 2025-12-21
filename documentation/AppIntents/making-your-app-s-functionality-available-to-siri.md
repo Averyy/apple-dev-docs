@@ -2,19 +2,17 @@
 
 **Framework**: App Intents
 
-Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- macOS 15.2+
-- Xcode 16.2+
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
 Using this sample app, people can keep track of photos and videos they capture with their device and can use Siri to access app functionality. To make its main functionality available to Siri, the app uses the App Intents framework.
-
-> **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 > **Note**: Session 10133: [`Bring your app to Siri`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10133/)
 
@@ -125,7 +123,7 @@ var body: some View {
     // ...
 ```
 
-Using app entities to make onscreen content available to Siri and Apple Intelligence need to conform to an assistant schema only if you support iOS 18. For more information, refer to [`Making onscreen content available to Siri and Apple Intelligence`](Making-onscreen-content-available-to-siri-and-apple-intelligence.md).
+For more information about making onscreen content available to Siri and Apple Intelligence, refer to [`Making onscreen content available to Siri and Apple Intelligence`](Making-onscreen-content-available-to-siri-and-apple-intelligence.md).
 
 ## See Also
 

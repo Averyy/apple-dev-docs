@@ -16,7 +16,7 @@ func intersects(_ options: NSUserInterfaceCompressionOptions) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if at least one of the supplied options is present in the instance’s options, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if at least one of the supplied options is present in the instance’s options, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

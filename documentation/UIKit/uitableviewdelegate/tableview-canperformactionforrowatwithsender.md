@@ -20,11 +20,11 @@ optional func tableView(_ tableView: UITableView, canPerformAction action: Selec
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the command corresponding to `action` should appear in the editing menu, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the command corresponding to `action` should appear in the editing menu, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method is invoked after [`tableView(_:shouldShowMenuForRowAt:)`](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md). It gives the developer the opportunity to exclude one of the commands—Copy or Paste—from the editing menu. For example, the user might have copied some cell content from one row but wants to paste into another row that doesn’t take the copied content. In a case like this, return [`false`](https://developer.apple.com/documentation/swift/false) from this method.
+This method is invoked after [`tableView(_:shouldShowMenuForRowAt:)`](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md). It gives the developer the opportunity to exclude one of the commands—Copy or Paste—from the editing menu. For example, the user might have copied some cell content from one row but wants to paste into another row that doesn’t take the copied content. In a case like this, return [`false`](https://developer.apple.com/documentation/Swift/false) from this method.
 
 ## Parameters
 

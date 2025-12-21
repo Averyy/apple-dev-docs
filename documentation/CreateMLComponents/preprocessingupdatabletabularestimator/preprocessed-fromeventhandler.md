@@ -47,8 +47,8 @@ The preprocessed examples.
   The intermediate type.
 - [PreprocessingUpdatableTabularEstimator.Output](preprocessingupdatabletabularestimator/output.md)
   The output type.
-- [PreprocessingUpdatableTabularEstimator.Transformer](preprocessingupdatabletabularestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

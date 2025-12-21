@@ -30,7 +30,7 @@ A new value object that contains the matrix information.
 
 ## See Also
 
-- [typealias SCNMatrix4 = CATransform3D](../SceneKit/SCNMatrix4-swift.typealias.md)
+- [typealias SCNMatrix4](../SceneKit/SCNMatrix4-swift.typealias.md)
   A representation of a 4 x 4 matrix.
 - [init(SCNVector3: SCNVector3)](nsvalue/init(scnvector3:).md)
   Creates a value object that contains the specified three-element SceneKit vector.

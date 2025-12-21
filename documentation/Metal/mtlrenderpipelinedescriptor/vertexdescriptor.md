@@ -22,7 +22,7 @@ var vertexDescriptor: MTLVertexDescriptor? { get set }
 
 #### Discussion
 
-A [`MTLVertexDescriptor`](mtlvertexdescriptor.md) object is used to describe the organization of per-vertex input structs passed in an argument of a vertex shader function.
+An [`MTLVertexDescriptor`](mtlvertexdescriptor.md) instance is used to describe the organization of per-vertex input structs passed in an argument of a vertex shader function.
 
 
 ---

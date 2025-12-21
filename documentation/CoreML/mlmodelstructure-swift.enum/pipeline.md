@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: struct
 
+A struct representing the structure of a Pipeline model..
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -20,9 +22,11 @@ struct Pipeline
 
 ## Topics
 
-### Instance Properties
+### Accessing the pipeline model
 - [let subModelNames: [String]](mlmodelstructure-swift.enum/pipeline/submodelnames.md)
+  The names of the sub models in the Pipeline.
 - [let subModels: [MLModelStructure]](mlmodelstructure-swift.enum/pipeline/submodels.md)
+  The structure of sub models in the Pipeline.
 
 ## Relationships
 
@@ -33,7 +37,9 @@ struct Pipeline
 ## See Also
 
 - [MLModelStructure.NeuralNetwork](mlmodelstructure-swift.enum/neuralnetwork.md)
+  A struct representing the structure of a NeuralNetwork model..
 - [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+  A struct representing the structure of an ML Program model.
 
 
 ---

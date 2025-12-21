@@ -3,8 +3,6 @@
 **Framework**: FSKit  
 **Kind**: property
 
-The domain of the error.
-
 **Availability**:
 - macOS 15.4+
 

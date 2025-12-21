@@ -58,7 +58,7 @@ enum HKWorkoutSessionState
 - [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
-  A session that tracks the user’s workout on Apple Watch.
+  A session that tracks a person’s workout.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
 - [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)

@@ -7,7 +7,7 @@
 Cancels a currently-running enumeration, in respone to a call from the framework.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ var isDownloadable: Bool { get }
 
 #### Discussion
 
-You can associate a set of data files with the App Store Connect record you created for a product. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if at least one file has been associated with the product.
+You can associate a set of data files with the App Store Connect record you created for a product. The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if at least one file has been associated with the product.
 
 ## See Also
 

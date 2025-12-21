@@ -15,6 +15,10 @@
 var deviceUID: String? { get set }
 ```
 
+#### Discussion
+
+An optional deviceUID that will have a value if this tap only taps a specific hardware device
+
 
 ---
 

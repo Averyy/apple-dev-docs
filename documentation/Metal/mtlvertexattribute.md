@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An object that represents an attribute of a vertex function.
+An instance that represents an attribute of a vertex function.
 
 **Availability**:
 - iOS 8.0+
@@ -21,11 +21,11 @@ class MTLVertexAttribute
 
 #### Overview
 
-A [`MTLVertexAttribute`](mtlvertexattribute.md) object represents an attribute for per-vertex input in a vertex function. You use vertex attribute objects to inspect the inputs of a vertex function by examining the [`vertexAttributes`](mtlfunction/vertexattributes.md) property of the corresponding [`MTLFunction`](mtlfunction.md) object.
+An [`MTLVertexAttribute`](mtlvertexattribute.md) instance represents an attribute for per-vertex input in a vertex function. You use vertex attribute instances to inspect the inputs of a vertex function by examining the [`vertexAttributes`](mtlfunction/vertexattributes.md) property of the corresponding [`MTLFunction`](mtlfunction.md) instance.
 
 ## Topics
 
-### Describing the Attribute
+### Describing the attribute
 - [var name: String](mtlvertexattribute/name.md)
   The name of the attribute.
 - [var attributeIndex: Int](mtlvertexattribute/attributeindex.md)

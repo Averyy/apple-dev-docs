@@ -19,7 +19,7 @@ A default header string that includes the print job title and date.
 
 Typically, the print job title is the same as the window title. A printable view class can override this property to provide its own content in place of the default value. You should not need to access this property directly. The printing system accesses it once per page during printing.
 
-Headers are generated only if the user defaults contain the key `NSPrintHeaderAndFooter` with the value [`true`](https://developer.apple.com/documentation/swift/true).
+Headers are generated only if the user defaults contain the key `NSPrintHeaderAndFooter` with the value [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

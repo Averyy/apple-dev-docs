@@ -56,11 +56,11 @@ If you bundle 3D assets with your app, or download them from the network into lo
 
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
-- [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [convenience(contentsOf:withName:)](entity/init(contentsof:withname:).md)
+- [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.
-- [convenience(named:in:)](entity/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
   Creates an entity by asynchronously loading it from a bundle.
 - [struct ReferenceComponent](referencecomponent.md)
   A component that can load another entity from a file.

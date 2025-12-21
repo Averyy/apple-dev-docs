@@ -6,7 +6,7 @@
 A RealityKit component that manages a SwiftUI view hierarchy.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

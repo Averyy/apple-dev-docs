@@ -20,7 +20,7 @@ func print(to printer: UIPrinter, completionHandler completion: UIPrintInteracti
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if printing was successful or [`false`](https://developer.apple.com/documentation/swift/false) if there was a problem.
+[`true`](https://developer.apple.com/documentation/Swift/true) if printing was successful or [`false`](https://developer.apple.com/documentation/Swift/false) if there was a problem.
 
 #### Discussion
 

@@ -4,9 +4,9 @@
 **Kind**: class
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ class CPListImageRowItemCardElement
 
 ### Initializers
 - [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showsimagefullheight:title:subtitle:tintcolor:).md)
-  Initialize an element that is constituted of an image, boolean to entierely cover the element with the image, title, subtitle and a tint color.
+  Initialize an element that is constituted of an image, boolean to entirely cover the element with the image, title, subtitle and a tint color.
 ### Instance Properties
 - [var showsImageFullHeight: Bool](cplistimagerowitemcardelement/showsimagefullheight.md)
   A Boolean value indicating whether the element should be fill with the image.

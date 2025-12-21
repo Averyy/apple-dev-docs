@@ -23,15 +23,8 @@ protocol UpdatableSupervisedTabularEstimator<Transformer, Annotation> : Supervis
 ## Topics
 
 ### Appending
-- [func appending<Other>(Other) -> some UpdatableSupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](updatablesupervisedtabularestimator/appending(_:)-2cr8d.md)
+- [func appending(_:)](updatablesupervisedtabularestimator/appending(_:).md)
   Composes this supervised tabular estimator with another supervised tabular estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](updatablesupervisedtabularestimator/appending(_:)-5wg05.md)
-  Composes this supervised tabular estimator with an updatable tabular estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>, Self.Annotation>
-](updatablesupervisedtabularestimator/appending(_:)-66swx.md)
-  Composes this supervised tabular estimator with a tabular transformer.
 ### Encoding and decoding
 - [func encodeWithOptimizer(Self.Transformer, to: inout any EstimatorEncoder) throws](updatablesupervisedtabularestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.

@@ -24,7 +24,7 @@ The method you use to delete a donation made with [`NSUserActivity`](https://dev
 
 ###### Persisted Activities
 
-If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property is set to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) property is set to a unique string identifying the activity, then:
+If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) property is set to a unique string identifying the activity, then:
 
 - Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
 - Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteAllSavedUserActivities(completionHandler:)) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
@@ -65,14 +65,14 @@ For more information about Spotlight indexing, see [`Core Spotlight`](https://de
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
 - [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Intent Phrases](intent-phrases.md)
+  The keys that you include in your global vocabulary file to show how users engage your app from Siri.
+- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+  Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 
 ---

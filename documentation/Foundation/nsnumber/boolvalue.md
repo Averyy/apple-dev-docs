@@ -22,7 +22,7 @@ var boolValue: Bool { get }
 
 #### Discussion
 
-A `0` value always means [`false`](https://developer.apple.com/documentation/swift/false), and any nonzero value is interpreted as [`true`](https://developer.apple.com/documentation/swift/true).
+A `0` value always means [`false`](https://developer.apple.com/documentation/Swift/false), and any nonzero value is interpreted as [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

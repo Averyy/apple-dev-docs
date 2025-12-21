@@ -33,7 +33,7 @@ The `imageBuffer` parameter must be in one of the following formats:
 
 ## Parameters
 
-- `imageBuffer`: A    object in a supported pixel format constant. For more information, see   and  .
+- `imageBuffer`: A    object in a supported pixel format constant. For more information, see  .
 
 ## See Also
 
@@ -61,7 +61,7 @@ The `imageBuffer` parameter must be in one of the following formats:
 - [init?(bitmapImageRep: NSBitmapImageRep)](ciimage/init(bitmapimagerep:).md)
   Initializes an image object with the specified bitmap image representation.
 - [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](ciimage/init(imageprovider:size:_:format:colorspace:options:).md)
-  Initializes an image object with  data provided by an image provider, using the specified options.
+  Initializes an image object based on pixels from an image provider object.
 - [init?(depthData: AVDepthData)](ciimage/init(depthdata:).md)
 - [init?(depthData: AVDepthData, options: [String : Any]?)](ciimage/init(depthdata:options:).md)
 

@@ -13,7 +13,7 @@ typealias Handler = () -> Bool
 
 #### Return Value
 
-Your custom handler should return [`true`](https://developer.apple.com/documentation/swift/true) if the expectation is considered fulfilled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Your custom handler should return [`true`](https://developer.apple.com/documentation/Swift/true) if the expectation is considered fulfilled, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

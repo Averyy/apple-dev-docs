@@ -30,7 +30,7 @@ To support drag operations, override the implementation of this property and upd
 
 Changing the state to the [`MKAnnotationView.DragState.dragging`](mkannotationview/dragstate-swift.enum/dragging.md) or [`MKAnnotationView.DragState.none`](mkannotationview/dragstate-swift.enum/none.md) value is the way to signal to the map view when you finish performing animations. For example, when a drag operation begins for an annotation, the class executes an animation to lift the view off the map. Similarly, when the user drops the annotation, the class performs a drop animation. Even if you don’t perform any animations, it’s best practice to change the value of this property to reflect the correct state.
 
-Don’t try to stop a new drag operation by changing the state from `starting` to `none`. If you don’t want your annotation view to be draggable, set the [`isDraggable`](mkannotationview/isdraggable.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+Don’t try to stop a new drag operation by changing the state from `starting` to `none`. If you don’t want your annotation view to be draggable, set the [`isDraggable`](mkannotationview/isdraggable.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

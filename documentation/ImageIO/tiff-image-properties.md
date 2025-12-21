@@ -8,7 +8,7 @@ Metadata keys for the Tagged Image File Format (TIFF).
 
 ### Dictionary
 - [let kCGImagePropertyTIFFDictionary: CFString](kcgimagepropertytiffdictionary.md)
-  A dictionary of key-value pairs for an image that uses Tagged Image File Format (TIFF). See [`TIFF Image Properties`](tiff-image-properties.md).
+  A dictionary of key-value pairs for an image that uses Tagged Image File Format (TIFF).
 ### Image Quality
 - [let kCGImagePropertyTIFFCompression: CFString](kcgimagepropertytiffcompression.md)
   The compression scheme used on the image data.

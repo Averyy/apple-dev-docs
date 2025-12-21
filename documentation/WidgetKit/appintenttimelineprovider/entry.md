@@ -11,7 +11,7 @@ A type that specifies the date to display a widget, and, optionally, indicates t
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 10.0+
 
 ## Declaration

@@ -20,28 +20,32 @@ class ASWebAuthenticationSessionRequest
 
 ## Topics
 
-### Interpreting a Request
+### Interpreting a request
 - [var url: URL](aswebauthenticationsessionrequest/url.md)
   The web address the browser should use to perform the authentication request.
-- [var callbackURLScheme: String?](aswebauthenticationsessionrequest/callbackurlscheme.md)
-  The scheme the browser should use to return the result of the authentication attempt to the app requesting it.
 - [var shouldUseEphemeralSession: Bool](aswebauthenticationsessionrequest/shoulduseephemeralsession.md)
   A Boolean that indicates whether the browser should use a private browsing session.
 - [var uuid: UUID](aswebauthenticationsessionrequest/uuid.md)
   A unique identifier for the request.
-### Finishing a Request
+- [var additionalHeaderFields: [String : String]?](aswebauthenticationsessionrequest/additionalheaderfields.md)
+  Additional headers to send when loading the initial URL.
+### Finishing a request
+- [var callback: ASWebAuthenticationSession.Callback?](aswebauthenticationsessionrequest/callback.md)
+  The callback to listen for, which completes the request.
+- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  An object for evaluating navigation events in an authentication session.
 - [func complete(withCallbackURL: URL)](aswebauthenticationsessionrequest/complete(withcallbackurl:).md)
   Indicates that the browser successfully completed the authentication attempt.
 - [func cancelWithError(any Error)](aswebauthenticationsessionrequest/cancelwitherror(_:).md)
   Indicates that the browser canceled the authentication attempt.
-### Indicating Completion
+### Indicating completion
 - [var delegate: (any ASWebAuthenticationSessionRequestDelegate)?](aswebauthenticationsessionrequest/delegate.md)
   A delegate that the session request instance informs about authentication completion.
 - [protocol ASWebAuthenticationSessionRequestDelegate](aswebauthenticationsessionrequestdelegate.md)
   An interface through which the session request can inform its delegate, which is typically a browser, about the outcome of the authentication attempt.
-### Instance Properties
-- [var additionalHeaderFields: [String : String]?](aswebauthenticationsessionrequest/additionalheaderfields.md)
-- [var callback: ASWebAuthenticationSession.Callback?](aswebauthenticationsessionrequest/callback.md)
+### Deprecated symbols
+- [var callbackURLScheme: String?](aswebauthenticationsessionrequest/callbackurlscheme.md)
+  The scheme for the browser to use when returning the result of the authentication attempt to the app requesting it.
 
 ## Relationships
 

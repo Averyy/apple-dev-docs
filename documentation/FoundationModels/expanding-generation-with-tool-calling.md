@@ -48,7 +48,7 @@ struct BreadDatabaseTool: Tool {
         var link: URL
     }
     
-    func call(arguments: Arguments) async throws -> ToolOutput {
+    func call(arguments: Arguments) async throws -> [String] {
         var recipes: [Recipe] = []
         
         // Put your code here to retrieve a list of recipes from your database.
@@ -56,12 +56,12 @@ struct BreadDatabaseTool: Tool {
         let formattedRecipes = recipes.map {
             "Recipe for '\($0.name)': \($0.description) Link: \($0.link)"
         }
-        return ToolOutput(GeneratedContent(properties: ["recipes": formattedRecipes]))
+        return formattedRecipes
     }
 }
 ```
 
-When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency.
+When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency. For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
 
 Tools use guided generation for the [`Arguments`](tool/arguments.md) property. For more information about guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
 
@@ -97,14 +97,15 @@ struct WeatherTool: Tool {
       var temperature: Int
   }
 
-  func call(arguments: Arguments) async throws -> ToolOutput {
-      var temperature = "unknown"
-      // Get the temperature for the city by using `WeatherKit`.
-      let forecast = GeneratedContent(properties: [
-          "city": arguments.city,
-          "temperature": temperature,
-      ])
-      return ToolOutput(forecast)
+  func call(arguments: Arguments) async throws -> String {
+      // Get a random temperature value. Use `WeatherKit` to get 
+      // a temperature for the city.
+      let temperature = Int.random(in: 30...100)
+      let formattedResult = """
+          The forecast for '\(arguments.city)' is '\(temperature)' \
+          degrees Fahrenheit. 
+          """
+      return formattedResult
   }
 }
 
@@ -122,7 +123,7 @@ let response = try await session.respond(
 
 #### Handle Errors Thrown By a Tool
 
-When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string [`ToolOutput`](tooloutput.md) that briefly tells the model what didn’t work, like “Cannot access the database.”
+When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string that briefly tells the model what didn’t work, like “Cannot access the database.”
 
 ```swift
 do {

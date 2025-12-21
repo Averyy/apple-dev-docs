@@ -10,7 +10,6 @@ A goal that determines when the step ends.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -21,7 +20,7 @@ var goal: WorkoutGoal
 
 ## See Also
 
-- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (WorkoutAlert)?](workoutstep/alert.md)
   Alerts used during the step.
 
 

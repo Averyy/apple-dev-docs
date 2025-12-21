@@ -35,8 +35,6 @@ struct TemporalTransformerToEstimatorAdaptor<Transformer> where Transformer : Te
 ### Fitting
 - [func fitted<InputSequence>(to: InputSequence, eventHandler: EventHandler?) async throws -> Transformer](temporaltransformertoestimatoradaptor/fitted(to:eventhandler:).md)
   Returns the pre-defined transformer.
-### Default Implementations
-- [TemporalEstimator Implementations](temporaltransformertoestimatoradaptor/temporalestimator-implementations.md)
 
 ## Relationships
 

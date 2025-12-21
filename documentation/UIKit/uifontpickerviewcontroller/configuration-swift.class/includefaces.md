@@ -20,7 +20,7 @@ var includeFaces: Bool { get set }
 
 #### Discussion
 
-By default, the font picker only lists font families, like Times New Roman or Helvetica. Set [`includeFaces`](uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](https://developer.apple.com/documentation/swift/true) so the user can select a specific font face, such as Times New Roman Bold or Helvetica Light Oblique.
+By default, the font picker only lists font families, like Times New Roman or Helvetica. Set [`includeFaces`](uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](https://developer.apple.com/documentation/Swift/true) so the user can select a specific font face, such as Times New Roman Bold or Helvetica Light Oblique.
 
 ## See Also
 

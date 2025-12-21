@@ -21,9 +21,9 @@ var canReplaceMapContent: Bool { get set }
 
 #### Discussion
 
-If the tile content you provide can cover the entire drawing area with opaque content, set this property to [`true`](https://developer.apple.com/documentation/swift/true). Doing so serves as a hint to the map view that it doesn’t need to draw any additional content underneath your tiles. Set this property to [`false`](https://developer.apple.com/documentation/swift/false) if your tiles contain any transparency.
+If the tile content you provide can cover the entire drawing area with opaque content, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). Doing so serves as a hint to the map view that it doesn’t need to draw any additional content underneath your tiles. Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) if your tiles contain any transparency.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

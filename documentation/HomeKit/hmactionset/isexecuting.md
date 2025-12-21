@@ -21,7 +21,7 @@ var isExecuting: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) while executing, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) while executing, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

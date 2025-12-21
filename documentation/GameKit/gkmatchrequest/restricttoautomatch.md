@@ -22,7 +22,7 @@ var restrictToAutomatch: Bool { get set }
 
 #### Discussion
 
-Use this property to match the local player only with players who are also actively looking for a match. If [`true`](https://developer.apple.com/documentation/swift/true), the local player can’t invite contacts, friends, or nearby players. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Use this property to match the local player only with players who are also actively looking for a match. If [`true`](https://developer.apple.com/documentation/Swift/true), the local player can’t invite contacts, friends, or nearby players. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

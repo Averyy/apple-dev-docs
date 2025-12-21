@@ -30,9 +30,6 @@ Use the `IntentResult.result()` family of functions to create instances
 - [var activityIdentifier: String?](intentresultcontainer/activityidentifier.md)
 - [var dialog: IntentDialog?](intentresultcontainer/dialog.md)
 - [var opensIntent: OpensAppIntent?](intentresultcontainer/opensintent.md)
-- [var value: Value?](intentresultcontainer/value.md)
-### Default Implementations
-- [IntentResult Implementations](intentresultcontainer/intentresult-implementations.md)
 
 ## Relationships
 

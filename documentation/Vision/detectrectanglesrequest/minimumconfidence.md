@@ -8,7 +8,6 @@ The minimum acceptable confidence level for detected rectangles.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,11 +27,11 @@ The confidence score ranges from `0.0` to `1.0`, inclusive, where `0.0` represen
 ## See Also
 
 - [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
-  The maximum aspect ratio of the rectangle to detect.
+  The largest aspect ratio the rectangle request detects.
 - [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
   The maximum number of rectangles Vision returns.
 - [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
-  The minimum aspect ratio of the rectangle(s) to detect.
+  The smallest aspect ratio the rectangle request detects.
 - [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
   The minimum size of the rectangle to be detected, as a proportion of the smallest dimension.
 - [var quadratureToleranceDegrees: Float](detectrectanglesrequest/quadraturetolerancedegrees.md)

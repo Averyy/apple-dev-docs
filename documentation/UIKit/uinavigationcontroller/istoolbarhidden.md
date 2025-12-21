@@ -20,7 +20,7 @@ var isToolbarHidden: Bool { get set }
 
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the toolbar is not visible. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the toolbar is not visible. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

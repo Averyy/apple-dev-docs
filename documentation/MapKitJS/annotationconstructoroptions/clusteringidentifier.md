@@ -11,7 +11,7 @@ An identifier for grouping annotations into the same cluster.
 ## Declaration
 
 ```swift
-attribute string clusteringIdentifier;
+clusteringIdentifier?: string | null;
 ```
 
 #### Discussion

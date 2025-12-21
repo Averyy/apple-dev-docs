@@ -6,7 +6,7 @@
 Configure the distribution of audio channels in 3D space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

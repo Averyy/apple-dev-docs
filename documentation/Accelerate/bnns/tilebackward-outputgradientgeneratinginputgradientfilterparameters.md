@@ -13,7 +13,6 @@ Applies a tile filter backward to generate an input gradient.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

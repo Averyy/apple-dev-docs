@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Remove an installed managed app.
+Remove an app.
 
 **Availability**:
 - iOS 5.0+
@@ -15,7 +15,9 @@ Remove an installed managed app.
 
 #### Discussion
 
-This command only applies to managed apps and also removes the data for the removed app.
+This command allows a server to remove managed apps. It also allows a server to remove unmanaged and system deletable apps on supervised devices in iOS 26 and later, tvOS 26 and later, visionOS 26 and later, and watchOS 26 and later. When the device removes an app, it also removes the data for the app.
+
+This command fails for apps that Declarative Device Management is managing.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
@@ -25,8 +27,8 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | NA |
-| Requires supervision | macOS |
-| Allowed in user enrollment | iOS, visionOS |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
@@ -35,9 +37,9 @@ Refer to the following sections to determine supported channels and requirements
 
 ### Commands and responses
 - [object RemoveApplicationCommand](removeapplicationcommand.md)
-  The command to remove an installed managed app.
+  The command to remove an app.
 - [object RemoveApplicationResponse](removeapplicationresponse.md)
-  A response from the device after it processes the command to remove an installed managed app.
+  A response from the device after it processes the command to remove an app.
 
 ## Request Body
 
@@ -49,12 +51,14 @@ The request object the server returns for the Remove Application Command.
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
+- [Managed Application List](managed-application-list-command.md)
+  Get the status of all managed apps on a device.
 - [Apply Redemption Code](apply-redemption-code-command.md)
   Complete the installation of an app using a redemption code.
 - [Validate Applications](validate-applications-command.md)
   Force validation of developer and universal provisioning profiles for enterprise apps.
-- [Managed Application List](managed-application-list-command.md)
-  Get the status of all managed apps on a device.
 - [Managed Application Attributes](managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
 - [Managed Application Configuration](managed-application-configuration-command.md)

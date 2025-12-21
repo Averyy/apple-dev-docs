@@ -6,10 +6,8 @@
 The initial value of this control.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,30 +17,18 @@ var baseValue: CGFloat { get set }
 
 ## See Also
 
-- [var backgroundVisuals: TCControlVisuals?](tcthrottle/backgroundvisuals.md)
-  The visuals for the background of the throttle.
-- [var collider: any TCCollider](tcthrottle/collider.md)
-  The collider for the throttle.
-- [var highlightTime: simd_float1](tcthrottle/highlighttime.md)
+- [var backgroundContents: TCControlContents?](tcthrottle/backgroundcontents.md)
+  The contents for the background of the throttle.
+- [var highlightDuration: TimeInterval](tcthrottle/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
+- [var indicatorContents: TCControlContents?](tcthrottle/indicatorcontents.md)
+  The contents for the indicator of the throttle.
 - [var indicatorSize: CGSize](tcthrottle/indicatorsize.md)
   The size (width, height) of the indicator itself in points.
-- [var indicatorVisuals: TCControlVisuals?](tcthrottle/indicatorvisuals.md)
-  The visuals for the indicator of the throttle.
-- [var layer: simd_int1](tcthrottle/layer.md)
-  The layer of the throttle, used for z-sorting.
-- [var offset: CGPoint](tcthrottle/offset.md)
-  The control’s offset from the anchor, which determines its position.
-- [var position: CGPoint](tcthrottle/position.md)
-  The position of the throttle in points, with the origin at the top left corner of the screen.
-- [var size: CGSize](tcthrottle/size.md)
-  The size (width, height) of the throttle in points.
-- [var snapToBaseValue: Bool](tcthrottle/snaptobasevalue.md)
+- [var snapsToBaseValue: Bool](tcthrottle/snapstobasevalue.md)
   A Boolean value that indicates whether the control reverts to it’s base value.
 - [var throttleSize: CGSize](tcthrottle/throttlesize.md)
   The size (width, height) of the throttle itself, providing boundaries for the indicator, in points.
-- [var touchController: TCTouchController](tcthrottle/touchcontroller.md)
-  The touch controller that manages this throttle.
 
 
 ---

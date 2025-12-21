@@ -20,6 +20,8 @@ struct BNNSImageStackDescriptor
 
 #### Overview
 
+Image stack descriptor (DEPRECATED, Use BNNSNDArrayDescriptor)
+
 An image stack is a sequence of images with the same width and height. Each image in the sequence is called a channel. For example, a RGB image will be stored as three separate channels. A pixel has only one scalar value, stored using the type described by data_type.
 
 Pixel P(c,x,y) at position (x,y) in channel c is stored in data[x + row_stride * y + image_stride * c], with x=0..width-1, y=0..height-1, c=0..channels-1. row_stride ≥ width, image_stride ≥ row_stride * height.

@@ -49,6 +49,7 @@ enum Code
 - [VTFrameProcessorError.Code.unsupportedResolution](vtframeprocessorerror-swift.struct/code/unsupportedresolution.md)
   The processor failed due to an unsupported resolution.
 - [VTFrameProcessorError.Code.assetDownloadFailed](vtframeprocessorerror-swift.struct/code/assetdownloadfailed.md)
+  Returned if download of a required model asset for the processor failed
 ### Initializers
 - [init?(rawValue: Int)](vtframeprocessorerror-swift.struct/code/init(rawvalue:).md)
 

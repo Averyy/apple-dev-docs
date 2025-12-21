@@ -22,7 +22,7 @@ struct SSReadingListError
 - [static var urlSchemeNotAllowed: SSReadingListError.Code](ssreadinglisterror/urlschemenotallowed.md)
 - [static var errorDomain: String](ssreadinglisterror/errordomain.md)
 ### Enumerations
-- [SSReadingListError.Code](ssreadinglisterrorcode.md)
+- [SSReadingListError.Code](ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 
 ## Relationships
@@ -41,7 +41,7 @@ struct SSReadingListError
   An object for adding items to a user’s Safari Reading List.
 - [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterrorcode.md)
+- [SSReadingListError.Code](ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 
 

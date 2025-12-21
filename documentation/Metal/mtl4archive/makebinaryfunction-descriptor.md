@@ -4,15 +4,15 @@
 **Kind**: method  
 **Required**: Yes
 
-Method used to create a binary function, with a given descriptor, from the contents of the archive.
+Synchronously creates a binary version of a GPU visible function or GPU intersection function.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,11 +22,11 @@ func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor) throws -> any 
 
 #### Return Value
 
-A binary function object, otherwise `nil`.
+A new GPU binary function instance if the method succeeds; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: The function descriptor for a visible or intersection function.
+- `descriptor`: A configuration that tells the method which GPU function to   make into a binary function and which options to apply when compiling it.
 
 
 ---

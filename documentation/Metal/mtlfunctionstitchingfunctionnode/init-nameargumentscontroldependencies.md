@@ -23,7 +23,7 @@ init(name: String, arguments: [any MTLFunctionStitchingNode], controlDependencie
 
 - `name`: The name of the function to call.
 - `arguments`: An ordered list of the nodes that provide the function’s arguments.
-- `controlDependencies`: The list of nodes that must execute before executing this node.
+- `controlDependencies`: The list of nodes that need to run before executing this node.
 
 
 ---

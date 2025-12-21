@@ -5,9 +5,6 @@
 
 An object that logs test failures and errors.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

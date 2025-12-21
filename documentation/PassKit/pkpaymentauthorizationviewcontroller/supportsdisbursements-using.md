@@ -21,7 +21,7 @@ class func supportsDisbursements(using supportedNetworks: [PKPaymentNetwork]) ->
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device can process disbursement requests using the specified payment networks; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device can process disbursement requests using the specified payment networks; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -21,15 +21,15 @@ struct MTLBlitOption
 
 ## Topics
 
-### Depth and Stencil Buffer Options
+### Depth and stencil buffer options
 - [static var depthFromDepthStencil: MTLBlitOption](mtlblitoption/depthfromdepthstencil.md)
   A blit option that copies the depth portion of a combined depth and stencil texture to or from a buffer.
 - [static var stencilFromDepthStencil: MTLBlitOption](mtlblitoption/stencilfromdepthstencil.md)
   A blit option that copies the stencil portion of a combined depth and stencil texture to or from a buffer.
-### Texture Compression Options
+### Texture compression options
 - [static var rowLinearPVRTC: MTLBlitOption](mtlblitoption/rowlinearpvrtc.md)
   A blit option that copies PVRTC data between a texture and a buffer.
-### Clearing Options
+### Swift support
 - [init(rawValue: UInt)](mtlblitoption/init(rawvalue:).md)
   Creates a blit option from a raw value.
 
@@ -48,7 +48,7 @@ struct MTLBlitOption
 ## See Also
 
 - [protocol MTLBlitCommandEncoder](mtlblitcommandencoder.md)
-  An interface you can use to encode GPU commands that copy and modify the underlying memory of various Metal resources.
+  Encodes commands that copy and modify resources for a single blit pass.
 
 
 ---

@@ -27,35 +27,57 @@ To create a throwing task group, call the `withThrowingTaskGroup(of:returning:bo
 
 Don’t use a task group from outside the task where you created it. In most cases, the Swift type system prevents a task group from escaping like that because adding a child task to a task group is a mutating operation, and mutation operations can’t be performed from concurrent execution contexts like a child task.
 
-##### Task Execution Order
-
-Tasks added to a task group execute concurrently, and may be scheduled in any order.
+Refer to [`TaskGroup`](taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
 ##### Cancellation Behavior
 
-A task group becomes cancelled in one of the following ways:
+A task group becomes canceled in one of the following ways:
 
 - when [`cancelAll()`](throwingtaskgroup/cancelall().md) is invoked on it,
 - when an error is thrown out of the `withThrowingTaskGroup(...) { }` closure,
-- when the [`Task`](task.md) running this task group is cancelled.
+- when the [`Task`](task.md) running this task group is canceled.
 
 Since a `ThrowingTaskGroup` is a structured concurrency primitive, cancellation is automatically propagated through all of its child-tasks (and their child tasks).
 
-A cancelled task group can still keep adding tasks, however they will start being immediately cancelled, and may act accordingly to this. To avoid adding new tasks to an already cancelled task group, use `addTaskUnlessCancelled(priority:body:)` rather than the plain `addTask(priority:body:)` which adds tasks unconditionally.
+A canceled task group can still keep adding tasks, however they will start being immediately canceled, and may act accordingly to this. To avoid adding new tasks to an already canceled task group, use `addTaskUnlessCancelled(priority:body:)` rather than the plain `addTask(priority:body:)` which adds tasks unconditionally.
 
 For information about the language-level concurrency model that `ThrowingTaskGroup` is part of, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+
+> **Note**: [`TaskGroup`](taskgroup.md)
+
+> **Note**: [`DiscardingTaskGroup`](discardingtaskgroup.md)
+
+> **Note**: [`ThrowingDiscardingTaskGroup`](throwingdiscardingtaskgroup.md)
 
 ## Topics
 
 ### Adding Tasks to a Throwing Task Group
 - [func addTask(priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(priority:operation:).md)
   Adds a child task to the group.
+- [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(executorpreference:priority:operation:).md)
+  Adds a child task to the group.
+- [func addTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:priority:operation:).md)
+  Adds a child task to the group.
+- [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
+  Adds a child task to the group.
 - [func addTaskUnlessCancelled(priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(priority:operation:).md)
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
+- [func addTaskUnlessCancelled(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(name:executorpreference:priority:operation:).md)
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
+- [func addTaskUnlessCancelled(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(executorpreference:priority:operation:).md)
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
+- [func addTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(name:priority:operation:).md)
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
+- [func addImmediateTask(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetask(name:priority:executorpreference:operation:).md)
+  Add a child task to the group and immediately start running it in the context of the calling thread/task.
+- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addimmediatetaskunlesscancelled(name:priority:executorpreference:operation:).md)
+  Add a child task to the group and immediately start running it in the context of the calling thread/task.
 ### Accessing Individual Results
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
 - [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+  Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 - [var isEmpty: Bool](throwingtaskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 - [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
@@ -119,21 +141,6 @@ For information about the language-level concurrency model that `ThrowingTaskGro
 - [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/asyncunlesscancelled(priority:operation:).md)
 - [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/spawn(priority:operation:).md)
 - [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/spawnunlesscancelled(priority:operation:).md)
-### Instance Methods
-- [func addImmediateTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetask(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
-- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetaskunlesscancelled(name:priority:operation:).md)
-  Create and immediately start running a new child task in the context of the calling thread/task.
-- [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(executorpreference:priority:operation:).md)
-  Adds a child task to the group.
-- [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
-  Adds a child task to the group.
-- [func addTaskUnlessCancelled(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(executorpreference:priority:operation:).md)
-  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
-- [func addTaskUnlessCancelled(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(name:executorpreference:priority:operation:).md)
-  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
-- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
-  Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 ### Default Implementations
 - [AsyncSequence Implementations](throwingtaskgroup/asyncsequence-implementations.md)
 
@@ -152,10 +159,6 @@ For information about the language-level concurrency model that `ThrowingTaskGro
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of throwing child tasks.
 - [struct TaskPriority](taskpriority.md)

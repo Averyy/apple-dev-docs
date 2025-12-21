@@ -42,7 +42,7 @@ struct LaunchConfigurationKey
 - [NSWorkspace.LaunchOptions](nsworkspace/launchoptions.md)
   Constants specifying how you want to launch an app
 - [NSWorkspace.FileOperationName](nsworkspace/fileoperationname.md)
-  These constants specify different types of file operations used by [`performFileOperation(_:source:destination:files:tag:)`](nsworkspace/performfileoperation(_:source:destination:files:tag:).md).
+  Constants that define types of file operations.
 
 
 ---

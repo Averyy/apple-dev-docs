@@ -6,8 +6,8 @@
 Fetches a one-time snapshot of all paired devices that are currently known and  accessible to your app.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ The [`WAPairedDevice.Devices`](wapaireddevice/devices.md) dictionary holds a sna
 guard let devices = try await WAPairedDevice.allDevices.current() { return }
 ```
 
-Don’t use this method if you need to monitor for changes to the paired device list, or change app behavior in response to such changes. Instead, use:
+Don’t use this method if you need to monitor for changes to the paired device list, or change app behavior in response to such changes. Instead, use
 
 ```swift
 for try await devices in WAPairedDevice.allDevices {
@@ -35,7 +35,11 @@ for try await devices in WAPairedDevice.allDevices {
 }
 ```
 
-> **Note**:  An error if the system can’t read the sequence, or if the app isn’t permitted to access Wi-Fi Aware devices.
+> **Note**: An error if the system can’t read the sequence, or if the app isn’t permitted to access Wi-Fi Aware devices.
+
+> **Note**: [`allDevices`](wapaireddevice/alldevices.md)
+
+> **Note**: [`allDevices(matching:)`](wapaireddevice/alldevices(matching:).md)
 
 
 ---

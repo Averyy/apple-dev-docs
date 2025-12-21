@@ -21,6 +21,8 @@ var position: CGPoint { get }
 
 - [var pixelBuffer: CVPixelBuffer](avrenderedcaptionimage/pixelbuffer.md)
   An object that contains pixel data for the rendered caption.
+- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](avrenderedcaptionimage/readonlypixelbuffer.md)
+  A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
 
 
 ---

@@ -21,7 +21,7 @@ var cancelsTouchesInView: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default) and the gesture recognizer recognizes its gesture, the touches of that gesture that are pending aren’t delivered to the view and previously delivered touches are canceled through a [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) message sent to the view. If a gesture recognizer doesn’t recognize its gesture or if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the view receives all touches in the multi-touch sequence.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default) and the gesture recognizer recognizes its gesture, the touches of that gesture that are pending aren’t delivered to the view and previously delivered touches are canceled through a [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) message sent to the view. If a gesture recognizer doesn’t recognize its gesture or if the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the view receives all touches in the multi-touch sequence.
 
 ## See Also
 

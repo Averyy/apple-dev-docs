@@ -34,7 +34,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 ##### Converting Kvo Code to Use Combine
 
-To convert KVO code to Combine, replace the `observe(_:options:changeHandler:)` method with an doc://com.apple.documentation/documentation/objectivec/NSObject/KeyValueObservingPublisher. You get an instance of this publisher by calling `publisher(for:)` on the parent object, as shown in the following example’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method:
+To convert KVO code to Combine, replace the `observe(_:options:changeHandler:)` method with an [`NSObject.KeyValueObservingPublisher`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/KeyValueObservingPublisher). You get an instance of this publisher by calling `publisher(for:)` on the parent object, as shown in the following example’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method:
 
 ```swift
 class UserInfo: NSObject {

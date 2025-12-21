@@ -24,6 +24,15 @@ typealias AVBeatRange = _AVBeatRange
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [func beats(forHostTime: UInt64, error: NSErrorPointer) -> AVMusicTimeStamp](avaudiosequencer/beats(forhosttime:error:).md)
+  Gets the beat the system plays at the specified host time.
+- [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
+  Gets the beat position (timestamp) for the specified time in the track.
+- [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
+  A timestamp you use to access all events in a music track through a beat range.
+
 
 ---
 

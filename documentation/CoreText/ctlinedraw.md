@@ -22,7 +22,7 @@ func CTLineDraw(_ line: CTLine, _ context: CGContext)
 
 #### Discussion
 
-This is a convenience function because the line could be drawn run-by-run by getting the glyph runs, getting the glyphs out of them, and calling a function such as [`CGContextShowGlyphsAtPositions`](https://developer.apple.com/documentation/coregraphics/1456200-cgcontextshowglyphsatpositions). This call can leave the graphics context in any state and does not flush the context after the draw operation.
+This is a convenience function because the line could be drawn run-by-run by getting the glyph runs, getting the glyphs out of them, and calling a function such as [`CGContextShowGlyphsAtPositions`](https://developer.apple.com/documentation/CoreGraphics/CGContextShowGlyphsAtPositions). This call can leave the graphics context in any state and does not flush the context after the draw operation.
 
 ## Parameters
 

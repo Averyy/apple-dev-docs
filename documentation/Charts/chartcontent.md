@@ -69,10 +69,14 @@ BarMark(
   Sets the foreground style for the chart content.
 - [func opacity(Double) -> some ChartContent](chartcontent/opacity(_:).md)
   Sets the opacity for the chart content.
+- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
+  Applies a Gaussian blur to this chart content.
 - [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](chartcontent/cornerradius(_:style:).md)
   Sets the corner radius of the chart content.
 - [func lineStyle(StrokeStyle) -> some ChartContent](chartcontent/linestyle(_:).md)
   Sets the style for line marks.
+- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/shadow(color:radius:x:y:).md)
+  A chart content that adds a shadow to this chart content.
 - [func interpolationMethod(InterpolationMethod) -> some ChartContent](chartcontent/interpolationmethod(_:).md)
   Plots line and area marks with the interpolation method that you specify.
 ### Positioning marks
@@ -113,6 +117,15 @@ BarMark(
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
 - [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-26b2f.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3.md)
+  Annotates this mark or collection of marks with a view positioned relative to its bounds.
+### Layering chart content
+- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
+- [func zIndex(Double) -> some ChartContent](chartcontent/zindex(_:).md)
+  Controls the display order of overlapping chart content.
 ### Masking and clipping
 - [func mask<C>(content: () -> C) -> some ChartContent](chartcontent/mask(content:).md)
   Masks chart content using the alpha channel of the specified content.
@@ -129,11 +142,15 @@ BarMark(
   Adds a label to the chart content that describes its contents.
 - [func accessibilityLabel(Text) -> some ChartContent](chartcontent/accessibilitylabel(_:)-28985.md)
   Adds a label to the chart content that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilitylabel(_:)-9tbjv.md)
+  Adds a label to the chart content that describes its contents.
 - [func accessibilityValue(LocalizedStringKey) -> some ChartContent](chartcontent/accessibilityvalue(_:)-33c0e.md)
   Adds a description of the value that the chart content contains.
 - [func accessibilityValue<S>(S) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4k545.md)
   Adds a description of the value that the chart content contains.
 - [func accessibilityValue(Text) -> some ChartContent](chartcontent/accessibilityvalue(_:)-5g7o4.md)
+  Adds a description of the value that the chart content contains.
+- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4f8vo.md)
   Adds a description of the value that the chart content contains.
 ### Implementing chart content
 - [var body: Self.Body](chartcontent/body-swift.property.md)
@@ -143,23 +160,6 @@ BarMark(
 ### Supporting types
 - [struct AnyChartContent](anychartcontent.md)
   A type-erased chart content.
-### Instance Methods
-- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilitylabel(_:)-9tbjv.md)
-  Adds a label to the chart content that describes its contents.
-- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4f8vo.md)
-  Adds a description of the value that the chart content contains.
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
-  Annotates this mark or collection of marks with a view positioned relative to its bounds.
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3.md)
-  Annotates this mark or collection of marks with a view positioned relative to its bounds.
-- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
-  Applies a Gaussian blur to this chart content.
-- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
-- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
-- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/shadow(color:radius:x:y:).md)
-  A chart content that adds a shadow to this chart content.
-- [func zIndex(Double) -> some ChartContent](chartcontent/zindex(_:).md)
-  Controls the display order of overlapping chart content.
 
 ## Relationships
 
@@ -197,7 +197,7 @@ BarMark(
 
 - [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing_your_app_s_data.md)
+- [Visualizing your app’s data](visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [struct Chart](chart.md)
   A SwiftUI view that displays a chart.

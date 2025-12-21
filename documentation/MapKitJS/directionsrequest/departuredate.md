@@ -11,7 +11,7 @@ The departure date for the trip.
 ## Declaration
 
 ```swift
-attribute Date? departureDate;
+departureDate?: Date;
 ```
 
 ## Mentions
@@ -36,7 +36,7 @@ Specify either a `departureDate` or an [`arrivalDate`](directionsrequest/arrival
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

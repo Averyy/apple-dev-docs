@@ -6,9 +6,9 @@
 A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - tvOS 16.0+
 
 ## Declaration

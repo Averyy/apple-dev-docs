@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+A relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -22,10 +24,14 @@ struct AnchoredRelativeFormatStyle
 
 ### Initializers
 - [init(anchor: Date, allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](date/anchoredrelativeformatstyle/init(anchor:allowedfields:presentation:unitsstyle:locale:calendar:capitalizationcontext:).md)
+  Create a relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
 - [init(anchor: Date, presentation: Date.AnchoredRelativeFormatStyle.Presentation, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle, locale: Locale, calendar: Calendar, capitalizationContext: FormatStyleCapitalizationContext)](date/anchoredrelativeformatstyle/init(anchor:presentation:unitsstyle:locale:calendar:capitalizationcontext:).md)
+  Create a relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
 ### Instance Properties
 - [var allowedFields: Set<Date.AnchoredRelativeFormatStyle.Field>](date/anchoredrelativeformatstyle/allowedfields.md)
+  The fields that can be used in the formatted output.
 - [var anchor: Date](date/anchoredrelativeformatstyle/anchor.md)
+  The date the formatted output refers to from the perspective of the input values.
 - [var calendar: Calendar](date/anchoredrelativeformatstyle/calendar.md)
 - [var capitalizationContext: FormatStyleCapitalizationContext](date/anchoredrelativeformatstyle/capitalizationcontext.md)
 - [var locale: Locale](date/anchoredrelativeformatstyle/locale.md)

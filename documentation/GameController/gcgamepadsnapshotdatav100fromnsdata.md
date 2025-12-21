@@ -21,7 +21,7 @@ func GCGamepadSnapShotDataV100FromNSData(_ snapshotData: UnsafeMutablePointer<GC
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data could be copied, [`false`](https://developer.apple.com/documentation/swift/false) if `snapshotData` is `nil`, `data` is `nil`, or if the contents of `data` do not contain a compatible snapshot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the data could be copied, [`false`](https://developer.apple.com/documentation/Swift/false) if `snapshotData` is `nil`, `data` is `nil`, or if the contents of `data` do not contain a compatible snapshot.
 
 ## Parameters
 

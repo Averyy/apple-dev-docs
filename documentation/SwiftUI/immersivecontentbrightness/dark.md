@@ -14,6 +14,17 @@ A dark content brightness.
 static let dark: ImmersiveContentBrightness
 ```
 
+## See Also
+
+- [static let automatic: ImmersiveContentBrightness](immersivecontentbrightness/automatic.md)
+  The default content brightness.
+- [static let dim: ImmersiveContentBrightness](immersivecontentbrightness/dim.md)
+  A dimmed content brightness.
+- [static let bright: ImmersiveContentBrightness](immersivecontentbrightness/bright.md)
+  A bright content brightness.
+- [static func custom(Double) -> ImmersiveContentBrightness](immersivecontentbrightness/custom(_:).md)
+  Creates a content brightness with a custom value.
+
 
 ---
 

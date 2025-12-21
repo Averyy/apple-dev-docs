@@ -26,7 +26,7 @@ This object provides an immutable composition track. The framework also provides
 
 ## Topics
 
-### Accessing Track Information
+### Accessing track information
 - [var isPlayable: Bool](avcompositiontrack/isplayable.md)
   A Boolean value that indicates whether the track is playable in the current environment.
 - [var isDecodable: Bool](avcompositiontrack/isdecodable.md)
@@ -39,7 +39,7 @@ This object provides an immutable composition track. The framework also provides
   The total number of bytes of sample data the track requires.
 - [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avcompositiontrack/hasmediacharacteristic(_:).md)
   Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
-### Accessing Temporal Information
+### Accessing temporal information
 - [var timeRange: CMTimeRange](avcompositiontrack/timerange.md)
   The time range of the track within the overall timeline of the asset.
 - [var naturalTimeScale: CMTimeScale](avcompositiontrack/naturaltimescale.md)
@@ -48,36 +48,36 @@ This object provides an immutable composition track. The framework also provides
   The estimated data rate, in bits per second, of the media that the track references.
 - [func samplePresentationTime(forTrackTime: CMTime) -> CMTime](avcompositiontrack/samplepresentationtime(fortracktime:).md)
   Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
-### Accessing Language Support
+### Accessing language support
 - [var languageCode: String?](avcompositiontrack/languagecode.md)
   The language code of the track.
 - [var extendedLanguageTag: String?](avcompositiontrack/extendedlanguagetag.md)
   The language tag of the track.
-### Managing Format Descriptions
+### Managing format descriptions
 - [var formatDescriptions: [Any]](avcompositiontrack/formatdescriptions.md)
   The format descriptions of the media samples that a track references.
 - [var formatDescriptionReplacements: [AVCompositionTrackFormatDescriptionReplacement]](avcompositiontrack/formatdescriptionreplacements.md)
   The replacement format descriptions.
 - [class AVCompositionTrackFormatDescriptionReplacement](avcompositiontrackformatdescriptionreplacement.md)
   An object that represents a format description and its replacement.
-### Accessing Visual Characteristics
+### Accessing visual characteristics
 - [var naturalSize: CGSize](avcompositiontrack/naturalsize.md)
   The natural dimensions of the media data that the track references.
 - [var preferredTransform: CGAffineTransform](avcompositiontrack/preferredtransform.md)
   The track’s transform preference to apply to its visual content during presentation or processing.
-### Accessing Audible Characteristics
+### Accessing audible characteristics
 - [var preferredVolume: Float](avcompositiontrack/preferredvolume.md)
   The track’s volume preference for playing its audible media.
 - [var hasAudioSampleDependencies: Bool](avcompositiontrack/hasaudiosampledependencies.md)
   A Boolean value that indicates whether the track has sample dependencies.
-### Accessing Frame-Based Characteristics
+### Accessing frame-based characteristics
 - [var nominalFrameRate: Float](avcompositiontrack/nominalframerate.md)
   The frame rate of the track, in frames per second.
 - [var minFrameDuration: CMTime](avcompositiontrack/minframeduration.md)
   The minimum duration of the track’s frames.
 - [var requiresFrameReordering: Bool](avcompositiontrack/requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
-### Accessing Metadata
+### Accessing metadata
 - [var metadata: [AVMetadataItem]](avcompositiontrack/metadata.md)
   An array of metadata items for all metadata identifiers that have a value.
 - [var commonMetadata: [AVMetadataItem]](avcompositiontrack/commonmetadata.md)
@@ -86,17 +86,17 @@ This object provides an immutable composition track. The framework also provides
   An array of metadata formats available for the track.
 - [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avcompositiontrack/metadata(forformat:).md)
   Returns metadata items that a track contains for the specified format.
-### Accessing Track Segments
+### Accessing track segments
 - [var segments: [AVCompositionTrackSegment]](avcompositiontrack/segments.md)
   The time mappings from the track’s media samples to its timeline.
 - [func segment(forTrackTime: CMTime) -> AVCompositionTrackSegment?](avcompositiontrack/segment(fortracktime:).md)
   Returns a segment whose target time range contains, or is closest to, the specified track time.
-### Accessing Track Associations
+### Accessing track associations
 - [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](avcompositiontrack/availabletrackassociationtypes.md)
   An array of association types that the track uses to associate with other tracks.
 - [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](avcompositiontrack/associatedtracks(oftype:).md)
   Returns an array of associated tracks that have the specified association type.
-### Determining Sample Cursor Support
+### Determining sample cursor support
 - [var canProvideSampleCursors: Bool](avcompositiontrack/canprovidesamplecursors.md)
   A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
 

@@ -20,7 +20,7 @@ enum FocusMode
 
 ## Topics
 
-### Focus Modes
+### Focus modes
 - [AVCaptureDevice.FocusMode.locked](avcapturedevice/focusmode-swift.enum/locked.md)
   A mode that locks device focus.
 - [AVCaptureDevice.FocusMode.autoFocus](avcapturedevice/focusmode-swift.enum/autofocus.md)

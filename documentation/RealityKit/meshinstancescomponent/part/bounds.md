@@ -3,15 +3,15 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The bounding box to use for the instance group drawn by this part. This bounds should encompass all of your instances.
+The bounding box to encompass all of the instances this group part draws.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,9 +21,9 @@ var bounds: BoundingBox?
 
 #### Discussion
 
-If bounds is nil, RealityKit calculates a bounding box for you each time you update your instances within LowLevelInstanceData
+If bounds is `nil`, RealityKit calculates a bounding box for you each time you update your instances within [`LowLevelInstanceData`](lowlevelinstancedata.md).
 
-> ⚠️ **Warning**: Automatic bounds calculation is not supported when LowLevelInstanceData is updated via replace(using:). A non-nil bounds value must be provided when updating instances with Metal.
+Automatic bounds calculation is not supported when [`LowLevelInstanceData`](lowlevelinstancedata.md) is updated via [`replace(using:)`](lowlevelinstancedata/replace(using:).md). Provide a non-nil bounds value when updating instances with Metal.
 
 
 ---

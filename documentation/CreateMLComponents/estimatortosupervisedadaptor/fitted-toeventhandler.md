@@ -33,8 +33,8 @@ The pre-defined transformer.
 
 - [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
   Fits a transformer to a sequence of examples.
-- [EstimatorToSupervisedAdaptor.Transformer](estimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

@@ -20,7 +20,7 @@ var hidesBottomBarWhenPushed: Bool { get set }
 
 #### Discussion
 
-A view controller added as a child of a navigation controller can display an optional toolbar at the bottom of the screen. The value of this property on the topmost view controller determines whether the toolbar is visible. If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar is hidden. If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the bar is visible.
+A view controller added as a child of a navigation controller can display an optional toolbar at the bottom of the screen. The value of this property on the topmost view controller determines whether the toolbar is visible. If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the toolbar is hidden. If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the bar is visible.
 
 ## See Also
 

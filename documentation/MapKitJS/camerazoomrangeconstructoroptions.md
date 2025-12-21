@@ -11,10 +11,7 @@ Initialization options for the camera zoom range.
 ## Declaration
 
 ```swift
-dictionary CameraZoomRangeConstructorOptions {
-	number minCameraDistance;
-	number maxCameraDistance;
-};
+interface CameraZoomRangeConstructorOptions
 ```
 
 ## Topics
@@ -27,8 +24,12 @@ dictionary CameraZoomRangeConstructorOptions {
 
 ## See Also
 
-- [mapkit.CameraZoomRange](mapkit.camerazoomrange/mapkit.camerazoomrange.md)
-  Describes the minimum and maximum camera distance in meters.
+- [new CameraZoomRange()](camerazoomrange/camerazoomrangeconstructor.md)
+  Constructs an instance of a camera zoom range object with no minimum or maximum camera distance.
+- [new CameraZoomRange(rangeParams)](camerazoomrange/camerazoomrangeconstructor1.md)
+  Creates an instance of a camera zoom range object with an object literal.
+- [new CameraZoomRange(min, max)](camerazoomrange/camerazoomrangeconstructor2.md)
+  Creates an instance of a camera zoom range object with the specified numeric arguments that specify minimum and maximum camera distances.
 
 
 ---

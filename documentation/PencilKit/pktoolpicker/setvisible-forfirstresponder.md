@@ -19,7 +19,7 @@ func setVisible(_ visible: Bool, forFirstResponder responder: UIResponder)
 
 #### Discussion
 
-Each time you call this method with the `visible` parameter set to [`true`](https://developer.apple.com/documentation/swift/true), the tool picker adds `responder` to a list of objects to monitor. When any object in the list becomes the first responder, the tool picker displays the palette. Calling this method with the `visible` parameter set to [`false`](https://developer.apple.com/documentation/swift/false) removes `responder` from the list of monitored objects.
+Each time you call this method with the `visible` parameter set to [`true`](https://developer.apple.com/documentation/Swift/true), the tool picker adds `responder` to a list of objects to monitor. When any object in the list becomes the first responder, the tool picker displays the palette. Calling this method with the `visible` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false) removes `responder` from the list of monitored objects.
 
 ## Parameters
 

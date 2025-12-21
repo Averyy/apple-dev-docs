@@ -6,11 +6,11 @@
 A response from the model.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,27 +21,12 @@ struct Response
 ## Topics
 
 ### Creating a response
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, assetIDs: [String], segments: [Transcript.Segment])](transcript/response/init(id:assetids:segments:).md)
 ### Inspecting a response
-- [var id: String](transcript/response/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [Transcript.Response.ID](transcript/response/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
   Ordered prompt segments.
 - [var assetIDs: [String]](transcript/response/assetids.md)
   Version aware identifiers for all assets used to generate this response.
-### Encoding a response
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing responses
-- [static func == (Transcript.Response, Transcript.Response) -> Bool](transcript/response/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/response/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/response/equatable-implementations.md)
 
 ## Relationships
 
@@ -58,7 +43,7 @@ struct Response
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)
   Specifies a response format that the model must conform its output to.
 - [Transcript.StructuredSegment](transcript/structuredsegment.md)

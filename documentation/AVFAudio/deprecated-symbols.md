@@ -33,8 +33,8 @@ Review unsupported symbols and their replacements.
 - [protocol AVAudioSessionDelegate](avaudiosessiondelegate.md)
   A protocol that defines responses to changes in state for the audio session.
 ### Handling audio session interruptions
-- [Interruption flags](1616458-interruption-flags.md)
-  Constants that indicate the state of the audio session following an interruption.
+- [var AVAudioSessionInterruptionFlags_ShouldResume: Int](avaudiosessioninterruptionflags_shouldresume.md)
+  Indicates that your audio session is active and ready for use.
 
 
 ---

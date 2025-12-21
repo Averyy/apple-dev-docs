@@ -38,19 +38,6 @@ for (m = 0; m < M; ++m)
 
 The temporary buffer versions perform the same operation but use a temporary buffer for improved performance.
 
-## Topics
-
-### Out-of-Place FFT Functions
-- [vDSP_fftm_zop](vdsp_fftm_zop.md)
-  Computes a forward or inverse out-of-place, single-precision complex FFT on multiple signals.
-- [vDSP_fftm_zopD](vdsp_fftm_zopd.md)
-  Computes a forward or inverse out-of-place, double-precision complex FFT on multiple signals.
-### Out-of-Place FFT Functions with Temporary Buffer
-- [vDSP_fftm_zopt](vdsp_fftm_zopt.md)
-  Computes a forward or inverse out-of-place, single-precision complex FFT on multiple signals using a temporary buffer.
-- [vDSP_fftm_zoptD](vdsp_fftm_zoptd.md)
-  Computes a forward or inverse out-of-place, double-precision complex FFT on multiple signals using a temporary buffer.
-
 ## See Also
 
 - [In-Place Functions for 1D Multiple-Signal Complex FFT](in-place-functions-for-1d-multiple-signal-complex-fft.md)

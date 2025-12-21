@@ -17,8 +17,7 @@ Initializes a textured sprite in color using an existing texture object.
 ## Declaration
 
 ```swift
-@MainActor
-init(texture: SKTexture?, color: NSColor, size: CGSize)
+init(texture: SKTexture?, color: UIColor, size: CGSize)
 ```
 
 #### Return Value

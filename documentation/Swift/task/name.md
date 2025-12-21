@@ -6,13 +6,13 @@
 Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -35,6 +35,12 @@ func process(items: [Int]) async {
   }
 }
 ```
+
+##### Task Name Availability
+
+The task name is only available when running with a recent runtime (Swift 6.2+).
+
+[`Task`](task.md) initializers which may accept a task name are more available than this property, for convenience purposes, in order to not have to set task names conditionally however their effect is runtime dependent, and is reflected in the availability of this property.
 
 
 ---

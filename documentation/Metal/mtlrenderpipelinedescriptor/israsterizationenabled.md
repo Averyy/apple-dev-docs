@@ -21,9 +21,9 @@ var isRasterizationEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), indicating that primitives are rasterized. If the value is [`false`](https://developer.apple.com/documentation/swift/false), then primitives are dropped prior to rasterization (i.e. rasterization is disabled). Disabling rasterization may be useful to gather data from vertex-only transformations.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), indicating that primitives are rasterized. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), then primitives are dropped prior to rasterization (i.e. rasterization is disabled). Disabling rasterization may be useful to gather data from vertex-only transformations.
 
-When this value is [`false`](https://developer.apple.com/documentation/swift/false), no fragments are processed and the vertex shader function must return `void`.
+When this value is [`false`](https://developer.apple.com/documentation/Swift/false), no fragments are processed and the vertex shader function needs to return `void`.
 
 ## See Also
 

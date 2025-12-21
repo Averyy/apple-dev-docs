@@ -18,6 +18,15 @@
 func max(by areInIncreasingOrder: (Publishers.Sequence<Elements, Failure>.Output, Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher
 ```
 
+## See Also
+
+- [func count() -> Just<Int>](publishers/sequence/count-5rrw2.md)
+- [func count() -> Result<Int, Failure>.Publisher](publishers/sequence/count-5hb52.md)
+- [func count() -> Result<Int, Failure>.Publisher](publishers/sequence/count-b8ct.md)
+- [func max() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/max.md)
+- [func min() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/min.md)
+- [func min(by: (Publishers.Sequence<Elements, Failure>.Output, Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/min(by:).md)
+
 
 ---
 

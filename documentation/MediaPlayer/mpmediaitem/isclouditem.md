@@ -20,7 +20,7 @@ var isCloudItem: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item is an iCloud Music Library item.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the media item is an iCloud Music Library item.
 
 ## See Also
 

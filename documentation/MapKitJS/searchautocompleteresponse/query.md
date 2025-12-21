@@ -11,7 +11,7 @@ The query string used to perform the autocomplete request.
 ## Declaration
 
 ```swift
-attribute string query;
+query: string;
 ```
 
 #### Discussion

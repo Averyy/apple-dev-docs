@@ -6,18 +6,24 @@
 The index of the mipmap level in the source texture.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS ?+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var sourceLevel: Int
 ```
+
+#### Discussion
+
+Provide a value between `0` and the source texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
+
+When [`sourceLevel`](mtl4copysparsetexturemappingoperation/sourcelevel.md) is equal to the source texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md), set [`destinationLevel`](mtl4copysparsetexturemappingoperation/destinationlevel.md) to the destination texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
 
 
 ---

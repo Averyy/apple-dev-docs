@@ -69,6 +69,8 @@ struct MyControls: View {
 
 ## See Also
 
+- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+  The size to apply to controls within a view.
 - [enum ControlSize](controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 

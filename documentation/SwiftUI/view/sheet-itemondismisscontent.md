@@ -67,6 +67,27 @@ struct InventoryItem: Identifiable {
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
 
+##### Breakthrough Effect
+
+In visionOS, most system presentations appear with a breakthrough effect by default. To change how the enclosing presentation breaks through content occluding it, use [`presentationBreakthroughEffect(_:)`](view/presentationbreakthrougheffect(_:).md), like in the following example:
+
+```swift
+.sheet(item: $sheetDetail,
+       onDismiss: didDismiss) { detail in
+    VStack(alignment: .leading, spacing: 20) {
+        Text("Part Number: \(detail.partNumber)")
+        Text("Name: \(detail.name)")
+        Text("Quantity On-Hand: \(detail.quantity)")
+    }
+    .presentationBreakthroughEffect(.prominent)
+    .onTapGesture {
+        sheetDetail = nil
+    }
+}
+```
+
+> **Note**: Passing a `.none` value for a sheet has no effect.
+
 ## Parameters
 
 - `item`: A binding to an optional source of truth for the sheet.   When   is non- , the system passes the item’s content to   the modifier’s closure. You display this content in a sheet that you   create that the system displays to the user. If   changes,   the system dismisses the sheet and replaces it with a new one   using the same process.

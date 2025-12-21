@@ -34,7 +34,7 @@ func MTLPackedFloat3Make(_ x: Float, _ y: Float, _ z: Float) -> MTLPackedFloat3
 - [typealias MTLPackedFloat4x3](mtlpackedfloat4x3-swift.typealias.md)
   A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
 - [struct MTL4BufferRange](mtl4bufferrange.md)
-- [func MTL4BufferRangeMake(UInt64, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
 
 
 ---

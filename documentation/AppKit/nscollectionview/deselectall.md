@@ -17,7 +17,7 @@ Deselects all items in the collection view.
 
 #### Discussion
 
-This method works only when the [`isSelectable`](nscollectionview/isselectable.md) and [`allowsEmptySelection`](nscollectionview/allowsemptyselection.md) properties are both true  [`true`](https://developer.apple.com/documentation/swift/true). If either property is set to [`false`](https://developer.apple.com/documentation/swift/false), this method quietly does nothing and any connected menu item is disabled.
+This method works only when the [`isSelectable`](nscollectionview/isselectable.md) and [`allowsEmptySelection`](nscollectionview/allowsemptyselection.md) properties are both true  [`true`](https://developer.apple.com/documentation/Swift/true). If either property is set to [`false`](https://developer.apple.com/documentation/Swift/false), this method quietly does nothing and any connected menu item is disabled.
 
 This method consults the delegate object regarding the selection. Specifically, it calls the delegate’s [`collectionView(_:shouldDeselectItemsAt:)`](nscollectionviewdelegate/collectionview(_:shoulddeselectitemsat:).md) method to see if the items should be selected. For any items that are selected, it calls the [`collectionView(_:didDeselectItemsAt:)`](nscollectionviewdelegate/collectionview(_:diddeselectitemsat:).md) method.
 

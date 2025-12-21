@@ -21,7 +21,7 @@ func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: 
 
 #### Return Value
 
-Return [`false`](https://developer.apple.com/documentation/swift/false) if you don’t want the scroll view to send event messages to `view`. If you want `view` to receive those messages, return [`true`](https://developer.apple.com/documentation/swift/true) (the default).
+Return [`false`](https://developer.apple.com/documentation/Swift/false) if you don’t want the scroll view to send event messages to `view`. If you want `view` to receive those messages, return [`true`](https://developer.apple.com/documentation/Swift/true) (the default).
 
 #### Discussion
 

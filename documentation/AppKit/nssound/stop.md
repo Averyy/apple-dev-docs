@@ -16,7 +16,7 @@ func stop() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when playback is concluded successfully or if it’s paused, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) when playback is concluded successfully or if it’s paused, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

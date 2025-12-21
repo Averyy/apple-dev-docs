@@ -1,10 +1,12 @@
-# GET /v1/apps/{id}/relationships/reviewSubmissions
+# List review submission Ids
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get the list of review submission IDs for a specific app.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## See Also
 

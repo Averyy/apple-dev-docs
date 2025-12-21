@@ -31,16 +31,13 @@ struct TossableRepresentation
   Creates a sphere with the specified radius that the player tosses during gameplay.
 - [static func tetrahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/tetrahedron(height:in:restitution:).md)
   Creates a regular tetrahedron, a pyramid with four triangular faces, that the player tosses during gameplay.
-### Protocols
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
-  A protocol that represents a face of a tossable shape.
-### Structures
-- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
-  An object that represents an infinitely small area on the surface of a sphere (effectively a point).
-### Instance Methods
+### Getting the face
 - [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](tossablerepresentation/face(for:).md)
   For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
-### Enumerations
+- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+  A protocol that represents a face of a tossable shape.
+- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+  An object that represents an infinitely small area on the surface of a sphere (effectively a point).
 - [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
   One of the faces of a cube
 - [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
@@ -64,6 +61,8 @@ struct TossableRepresentation
 
 ## See Also
 
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TableSnapshot](tablesnapshot.md)

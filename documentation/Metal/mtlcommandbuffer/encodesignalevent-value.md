@@ -22,7 +22,7 @@ func encodeSignalEvent(_ event: any MTLEvent, value: UInt64)
 
 ## Mentions
 
-- [About Synchronization Events](about-synchronization-events.md)
+- [About synchronization events](about-synchronization-events.md)
 
 #### Discussion
 

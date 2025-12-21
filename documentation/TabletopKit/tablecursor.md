@@ -24,7 +24,7 @@ struct TableCursor
   The player that owns the interaction.
 ### Getting information about the equipment in the interaction
 - [let controlledEquipmentPose: EquipmentPose3D](tablecursor/controlledequipmentpose.md)
-  The identifier of the equipment and the pose of the equipment in table space.
+  The identifier of the equipment and the pose of the equipment in table space. NOTE: the equipment pose returned here does not include the resting orientation, similarly to the `pose` and `initialPose`in `TabletopInteraction.Value`. This is unlike the `pose` returned in `TableVisualState`, which does include resting orientation.
 - [var hovering: TabletopInteraction.Destination?](tablecursor/hovering.md)
   The current destination for the equipment, if the interaction were to end now. `nil` if no destination is currently available.
 ### Getting the cursor identifier
@@ -40,6 +40,8 @@ struct TableCursor
 
 ## See Also
 
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TossableRepresentation](tossablerepresentation.md)

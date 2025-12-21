@@ -16,7 +16,7 @@ var isMovable: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to drag the marker image in the ruler, [`false`](https://developer.apple.com/documentation/swift/false) to make it immobile.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to drag the marker image in the ruler, [`false`](https://developer.apple.com/documentation/Swift/false) to make it immobile.
 
 By default, ruler markers are movable.
 

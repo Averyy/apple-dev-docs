@@ -22,12 +22,6 @@ struct PrecipitationAmountByType
 
 ## Topics
 
-### Operators
-- [static func == (PrecipitationAmountByType, PrecipitationAmountByType) -> Bool](precipitationamountbytype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](precipitationamountbytype/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var hail: Measurement<UnitLength>](precipitationamountbytype/hail.md)
   The amount of hail for the period.
@@ -41,11 +35,6 @@ struct PrecipitationAmountByType
   The amount of sleet for the period.
 - [var snowfallAmount: SnowfallAmount](precipitationamountbytype/snowfallamount.md)
   Describes the amount of snowfall for the period.
-### Instance Methods
-- [func encode(to: any Encoder) throws](precipitationamountbytype/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](precipitationamountbytype/equatable-implementations.md)
 
 ## Relationships
 

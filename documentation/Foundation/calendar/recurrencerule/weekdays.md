@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+On which days of the week the event should occur
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

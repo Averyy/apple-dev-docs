@@ -41,7 +41,7 @@ Pixel format attributes for OpenGL.
 - [var NSOpenGLPFAMultisample: Int](nsopenglpfamultisample.md)
 - [var NSOpenGLPFANoRecovery: Int](nsopenglpfanorecovery.md)
 - [var NSOpenGLPFAOpenGLProfile: Int](nsopenglpfaopenglprofile.md)
-  The associated value can be any of the constants defined in [`OpenGL Profiles`](opengl-profiles.md). If it is present in the attribute arrays, only renderers capable of supporting an OpenGL context that provides the functionality promised by the profile are considered.
+  A constant that represents an OpenGL profile.
 - [var NSOpenGLPFARendererID: Int](nsopenglpfarendererid.md)
 - [var NSOpenGLPFASampleAlpha: Int](nsopenglpfasamplealpha.md)
   A Boolean attribute. If present and used with [`NSOpenGLPFASampleBuffers`](nsopenglpfasamplebuffers.md) and [`NSOpenGLPFASampleBuffers`](nsopenglpfasamplebuffers.md), this attribute hints to OpenGL to update multi-sample alpha values to ensure the most accurate rendering. If pixel format is not requesting antialiasing then this hint does nothing.

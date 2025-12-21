@@ -75,10 +75,6 @@ struct ManagedApp
   The app’s localized developer release notes.
 - [let releaseDate: Date?](managedapp/releasedate.md)
   The app’s release date.
-### Default Implementations
-- [Equatable Implementations](managedapp/equatable-implementations.md)
-- [Hashable Implementations](managedapp/hashable-implementations.md)
-- [Identifiable Implementations](managedapp/identifiable-implementations.md)
 
 ## Relationships
 

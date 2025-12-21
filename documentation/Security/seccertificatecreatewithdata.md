@@ -26,7 +26,7 @@ func SecCertificateCreateWithData(_ allocator: CFAllocator?, _ data: CFData) -> 
 
 #### Return Value
 
-The newly created certificate object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `data` parameter is not a valid DER-encoded X.509 certificate.
+The newly created certificate object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `data` parameter is not a valid DER-encoded X.509 certificate.
 
 #### Discussion
 

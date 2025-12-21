@@ -22,7 +22,7 @@ func prefersRTFD(in range: NSRange) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the range of text prefers RTFD formatting, or [`false`](https://developer.apple.com/documentation/swift/false) if you can use the RTF format instead.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the range of text prefers RTFD formatting, or [`false`](https://developer.apple.com/documentation/Swift/false) if you can use the RTF format instead.
 
 #### Discussion
 

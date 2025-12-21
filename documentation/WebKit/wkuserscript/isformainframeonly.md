@@ -21,7 +21,7 @@ var isForMainFrameOnly: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view injects the script only into the main frame. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the web view injects the script into all frames.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the web view injects the script only into the main frame. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the web view injects the script into all frames.
 
 ## See Also
 

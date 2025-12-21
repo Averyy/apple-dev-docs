@@ -1,4 +1,4 @@
-# Adjusting for GPU Memory Bandwidth Tradeoffs
+# Adjusting for GPU memory bandwidth tradeoffs
 
 **Framework**: Metal
 
@@ -26,7 +26,7 @@ Additionally, transferring data from one GPU to another can be even more expensi
 
 ##### Select the Appropriate Storage Mode for Your Resources
 
-You can minimize the bandwidth costs — the number of data transfers across a bus — by selecting an appropriate storage mode for your app’s resources. For more information about selecting a storage mode for specific GPUs, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md) and [`Choosing a Resource Storage Mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md). Metal uses a resource’s storage mode to determine which memory location to save it in. The storage mode options for a resource include the following:
+You can minimize the bandwidth costs — the number of data transfers across a bus — by selecting an appropriate storage mode for your app’s resources. For more information about selecting a storage mode for specific GPUs, see [`Choosing a resource storage mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md) and [`Choosing a resource storage mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md). Metal uses a resource’s storage mode to determine which memory location to save it in. The storage mode options for a resource include the following:
 
 Discrete and external GPUs have the highest data transfer costs when they access a shared resource because their access to system memory is relatively slow.
 
@@ -40,7 +40,7 @@ Managed resources can have modest data transfer costs for discrete and external 
 
 ![A system diagram that recommends a setup where a discrete GPU and an external GPU each store a managed resource both in its dedicated video memory (discrete and external, respectively) over a direct, fast connection, and in system memory. Both GPUs and the CPU can access system memory through different connections: The discrete GPU connects through an internal PCIe connection, the external GPU connects through an external Thunderbolt 3 connection, and the CPU connects directly to system memory. Each GPU can access the other GPU’s managed resource by using the system memory’s copy of that resource.](https://docs-assets.developer.apple.com/published/b01c231495f1bdcdf4d0af58141c56e6/media-4085392%402x.png)
 
-You can keep the copies in sync by efficiently running sparse blit operations (see [`Synchronizing a Managed Resource in macOS`](synchronizing-a-managed-resource-in-macos.md)).
+You can keep the copies in sync by efficiently running sparse blit operations (see [`Synchronizing a managed resource in macOS`](synchronizing-a-managed-resource-in-macos.md)).
 
 ##### Render a Drawable on the Same Gpu That Drives the Destination Display
 
@@ -58,11 +58,11 @@ Similarly, Mac systems with multiple built-in GPUs may need to transfer a drawab
 
 ## See Also
 
-- [Assessing Multi-GPU and Multi-Display Setups on an Intel-Based Mac](assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac.md)
+- [Assessing multi-GPU and multi-display setups on an Intel-based Mac](assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac.md)
   Learn the possible GPU and display configurations for a Mac and their limitations.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Selecting Device Objects for Compute Processing](selecting-device-objects-for-compute-processing.md)
+- [Selecting device objects for compute processing](selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
 
 

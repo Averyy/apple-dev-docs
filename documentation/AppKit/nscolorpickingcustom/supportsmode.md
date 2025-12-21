@@ -18,7 +18,7 @@ func supportsMode(_ mode: NSColorPanel.Mode) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the color picker supports the specified color picking mode; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the color picker supports the specified color picking mode; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

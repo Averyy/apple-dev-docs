@@ -17,7 +17,7 @@ static let removeDuplicatesOption: NSFontCollectionMatchingOptionKey
 ## See Also
 
 - [static let includeDisabledFontsOption: NSFontCollectionMatchingOptionKey](nsfontcollectionmatchingoptionkey/includedisabledfontsoption.md)
-  An NSNumber object containing a Boolean value specifying whether disabled fonts should be included in the list of matching descriptors; [`true`](https://developer.apple.com/documentation/swift/true) if they should be included, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. When unspecified, CoreText assumes [`false`](https://developer.apple.com/documentation/swift/false). This option is intended only for font management applications. This option will make descriptor matching slower.
+  An NSNumber object containing a Boolean value specifying whether disabled fonts should be included in the list of matching descriptors.
 - [static let disallowAutoActivationOption: NSFontCollectionMatchingOptionKey](nsfontcollectionmatchingoptionkey/disallowautoactivationoption.md)
   An NSNumber object containing a Boolean value specifying that auto-activation should not be used to find missing fonts.
 

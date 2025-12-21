@@ -24,7 +24,7 @@ When writing data to the pasteboard, you can use the NSData object as the first 
 ## See Also
 
 - [func readRTFD(fromFile: String) -> Bool](nstext/readrtfd(fromfile:).md)
-  Attempts to read the RTFD file at `path`, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful and [`false`](https://developer.apple.com/documentation/swift/false) if not.
+  Attempts to read the RTFD file at the specified path.
 - [func writeRTFD(toFile: String, atomically: Bool) -> Bool](nstext/writertfd(tofile:atomically:).md)
   Writes the receiver’s text as RTF with attachments to a file or directory at `path`.
 - [func rtfd(from: NSRange) -> Data?](nstext/rtfd(from:).md)

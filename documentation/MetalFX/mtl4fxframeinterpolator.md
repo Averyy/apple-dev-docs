@@ -4,11 +4,11 @@
 **Kind**: protocol
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ protocol MTL4FXFrameInterpolator : MTLFXFrameInterpolatorBase
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any MTL4CommandBuffer)](mtl4fxframeinterpolator/encode(to:).md)
+- [func encode(commandBuffer: any MTL4CommandBuffer)](mtl4fxframeinterpolator/encode(commandbuffer:).md)
   Encode this frame interpolator’s work into a command buffer.
 
 ## Relationships

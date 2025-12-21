@@ -22,7 +22,7 @@ var isExecuting: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the operation is currently executing its main task or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the operation is currently executing its main task or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 When implementing a concurrent operation object, you must override the implementation of this property so that you can return the execution state of your operation. In your custom implementation, you must generate KVO notifications for the `isExecuting` key path whenever the execution state of your operation object changes. For more information about manually generating KVO notifications, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

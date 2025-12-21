@@ -10,7 +10,7 @@ A basic material that responds to lights in the scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -51,19 +51,15 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 ### Creating a simple material
 - [init()](simplematerial/init.md)
   Creates a simple material.
-- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-mwh5.md)
-  Creates a simple material with specific characteristics in macOS.
-- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-1qshm.md)
-  Creates a simple material with specific characteristics in macOS.
 ### Characterizing a material
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
   The material’s color.
 - [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
   The base color of the material.
-- [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
-  A tint color applied to the base color in macOS.
-- [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)
-  A tint color applied to the base color in macOS.
+- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [SimpleMaterial.Texture](simplematerial/texture.md)
+  The type used to represent textures.
 - [var metallic: MaterialScalarParameter](simplematerial/metallic.md)
   A value that you set to control whether the material has a metallic look.
 - [var roughness: MaterialScalarParameter](simplematerial/roughness.md)
@@ -72,33 +68,21 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 - [init(color:roughness:isMetallic:)](simplematerial/init(color:roughness:ismetallic:).md)
   Creates a simple material with specific characteristics in macOS.
 ### Instance Properties
-- [var faceCulling: SimpleMaterial.FaceCulling](simplematerial/faceculling-6lmly.md)
+- [var faceCulling: SimpleMaterial.FaceCulling](simplematerial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var faceCulling: SimpleMaterial.FaceCulling](simplematerial/faceculling-9izub.md)
-  A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var readsDepth: Bool](simplematerial/readsdepth-26hjz.md)
+- [var readsDepth: Bool](simplematerial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var readsDepth: Bool](simplematerial/readsdepth-l9cl.md)
-  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
+- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+  A tint color applied to the base color in macOS.
+- [var tintColor: UIColor](simplematerial/tintcolor-74a0x.md)
+  A tint color applied to the base color in macOS.
 - [var triangleFillMode: SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
-- [var writesDepth: Bool](simplematerial/writesdepth-4nh0k.md)
-  A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
-- [var writesDepth: Bool](simplematerial/writesdepth-9o9eg.md)
+- [var writesDepth: Bool](simplematerial/writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Type Aliases
-- [SimpleMaterial.BaseColor](simplematerial/basecolor-10zk1.md)
-  The type used to represent base color.
-- [SimpleMaterial.BaseColor](simplematerial/basecolor-8p27k.md)
-  The type used to represent base color.
-- [SimpleMaterial.FaceCulling](simplematerial/faceculling-203bc.md)
+- [SimpleMaterial.FaceCulling](simplematerial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [SimpleMaterial.FaceCulling](simplematerial/faceculling-5lval.md)
-  An alias for the cull mode object that’s appropriate for this material class.
-- [SimpleMaterial.Texture](simplematerial/texture-1uofr.md)
-  The type used to represent textures.
-- [SimpleMaterial.Texture](simplematerial/texture-36h1v.md)
-  The type used to represent textures.
 - [SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.typealias.md)
 
 ## Relationships
@@ -108,6 +92,12 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 
 ## See Also
 
+- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [SimpleMaterial.Texture](simplematerial/texture.md)
+  The type used to represent textures.
+- [SimpleMaterial.FaceCulling](simplematerial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
 - [SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.typealias.md)
 
 

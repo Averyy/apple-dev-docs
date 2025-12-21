@@ -8,7 +8,6 @@ An indicator of the quality of a face capture.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -21,11 +20,12 @@ struct CaptureQuality
 
 ## Topics
 
-### Instance Properties
-- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/capturequality-swift.struct/originatingrequestdescriptor.md)
-  The descriptor of the request that produced the capture quality.
+### Getting the score
 - [let score: Float](faceobservation/capturequality-swift.struct/score.md)
   A value that indicates the quality of the face capture.
+### Accessing the originating descriptor
+- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/capturequality-swift.struct/originatingrequestdescriptor.md)
+  The descriptor of the request that produced the capture quality.
 
 ## Relationships
 
@@ -37,6 +37,11 @@ struct CaptureQuality
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
+  The quality of the face capture.
 
 
 ---

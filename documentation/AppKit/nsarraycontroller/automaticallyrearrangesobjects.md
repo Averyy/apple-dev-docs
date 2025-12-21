@@ -16,7 +16,7 @@ var automaticallyRearrangesObjects: Bool { get set }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

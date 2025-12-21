@@ -7,11 +7,12 @@
 Sets the mapping from logical shader color output to physical render pass color attachments.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,11 +24,16 @@ func setColorAttachmentMap(_ mapping: MTLLogicalToPhysicalColorAttachmentMap?)
 
 Use this method to define how the physical color attachments you specify via [`colorAttachments`](mtlrenderpassdescriptor/colorattachments.md) map to the logical color output the fragment shader writes to.
 
-To use this feature, make sure to set [`supportColorAttachmentMapping`](mtlrenderpassdescriptor/supportcolorattachmentmapping.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+To use this feature, make sure to set [`supportColorAttachmentMapping`](mtlrenderpassdescriptor/supportcolorattachmentmapping.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 
 - `mapping`: Mapping from logical shader outputs to physical outputs.
+
+## See Also
+
+- [func setBlendColor(red: Float, green: Float, blue: Float, alpha: Float)](mtlrendercommandencoder/setblendcolor(red:green:blue:alpha:).md)
+  Configures each pixel component value, including alpha, for the render pipeline’s constant blend color.
 
 
 ---

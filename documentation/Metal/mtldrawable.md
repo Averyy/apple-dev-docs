@@ -21,7 +21,8 @@ protocol MTLDrawable : NSObjectProtocol
 
 ## Mentions
 
-- [Adjusting for GPU Memory Bandwidth Tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
+- [Managing your Metal app window in iPadOS](managing-your-metal-app-window-in-ipados.md)
+- [Adjusting for GPU memory bandwidth tradeoffs](adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
 
 #### Overview
 
@@ -31,17 +32,17 @@ Don’t implement this protocol yourself; instead, see [`CAMetalLayer`](https://
 
 ## Topics
 
-### Identifying the Drawable
+### Identifying the drawable
 - [var drawableID: Int](mtldrawable/drawableid.md)
   A positive integer that identifies the drawable.
-### Presenting the Drawable
+### Presenting the drawable
 - [func present()](mtldrawable/present.md)
   Presents the drawable onscreen as soon as possible.
 - [func present(afterMinimumDuration: CFTimeInterval)](mtldrawable/present(afterminimumduration:).md)
   Presents the drawable onscreen as soon as possible after a previous drawable is visible for the specified duration.
 - [func present(at: CFTimeInterval)](mtldrawable/present(at:).md)
   Presents the drawable onscreen at a specific host time.
-### Getting Presentation Information
+### Getting presentation information
 - [func addPresentedHandler(MTLDrawablePresentedHandler)](mtldrawable/addpresentedhandler(_:).md)
   Registers a block of code to be called immediately after the drawable is presented.
 - [var presentedTime: CFTimeInterval](mtldrawable/presentedtime.md)

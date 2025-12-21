@@ -10,8 +10,8 @@ Get a list of promoted in-app purchases, including promoted auto-renewable subsc
 
 ## Mentions
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 #### Discussion
 

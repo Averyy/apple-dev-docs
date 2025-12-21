@@ -8,9 +8,9 @@ Manage text storage and perform custom layout of text-based content in your app�
 
 TextKit provides several classes to control the layout of text, such as [`NSTextContentStorage`](nstextcontentstorage.md), [`NSTextLayoutManager`](nstextlayoutmanager.md), and [`NSTextContainer`](nstextcontainer.md).
 
-Additionally, TextKit uses [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects extensively. The [`NSTextStorage`](nstextstorage.md) class is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString), and many of the TextKit classes, for example, the classes listed in `Formatted content`, focus on creating complex [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) instances. Use these classes to specify your text’s format.
+Additionally, TextKit uses [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects extensively. The [`NSTextStorage`](nstextstorage.md) class is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString), and many of the TextKit classes focus on creating complex [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) instances. Use these classes to specify your text’s format.
 
-Most of the time, you can use TextKit to fine tune the formatting and layout of a [`UITextView`](uitextview.md) by modifying the view’s [`textContainer`](https://developer.apple.com/documentation/AppKit/NSTextView/textContainer), [`layoutManager`](https://developer.apple.com/documentation/AppKit/NSTextView/layoutManager), or [`textStorage`](https://developer.apple.com/documentation/AppKit/NSTextView/textStorage) properties. If you need more control, you can also use TextKit to build custom text controls.
+Most of the time, you can use TextKit to fine tune the formatting and layout of a [`UITextView`](uitextview.md) by modifying the view’s [`textContainer`](uitextview/textcontainer.md), [`layoutManager`](uitextview/layoutmanager.md), or [`textStorage`](uitextview/textstorage.md) properties. If you need more control, you can also use TextKit to build custom text controls.
 
 ## Topics
 

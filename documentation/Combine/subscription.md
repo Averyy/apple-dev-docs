@@ -35,7 +35,7 @@ Canceling a subscription frees up any resources previously allocated by attachin
 
 ## Topics
 
-### Requesting Elements
+### Requesting elements
 - [func request(Subscribers.Demand)](subscription/request(_:).md)
   Tells a publisher that it may send more values to the subscriber.
 - [Subscribers.Demand](subscribers/demand.md)

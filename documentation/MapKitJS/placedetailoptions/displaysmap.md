@@ -3,13 +3,15 @@
 **Framework**: MapKit JS  
 **Kind**: property
 
+A Boolean value that indicates whether to display the map in the place detail view.
+
 **Availability**:
 - MapKit JS 5.78.1+
 
 ## Declaration
 
 ```swift
-attribute boolean displaysMap;
+displaysMap?: boolean;
 ```
 
 

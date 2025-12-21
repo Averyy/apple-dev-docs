@@ -19,7 +19,7 @@ class NSColor
 Many methods in AppKit require you to specify color data using an [`NSColor`](nscolor.md) object; when drawing you use them to set the current fill and stroke colors. Color objects are immutable and thread-safe. You can create color objects in many ways:
 
 - Load colors from an asset catalog. Colors created from assets can adapt automatically to system appearance changes.
-- Use the semantic colors for custom UI elements, so that they match the appearance of other AppKit views; see [`UI Element Colors`](ui-element-colors.md).
+- Use the semantic colors for custom UI elements, so that they match the appearance of other AppKit views; see [`UI element colors`](ui-element-colors.md).
 - Use the adaptable system colors, such as [`systemBlue`](nscolor/systemblue.md), when you want a specific tint that looks correct in both light and dark environments.
 - Create a color object from another object, such as a Core Graphics representation of a color, or a Core Image color.
 - Create a color from an [`NSImage`](nsimage.md) object, and paint a repeating pattern instead of using a solid color.
@@ -43,23 +43,23 @@ It is a programmer error to access color components of a color space that the `N
 
 If you have a color object in an unknown color space and you want to extract its components, convert the color object to a known color space and then use the component accessor methods of that color space.
 
-For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/visual-design/color/).
+For design guidance, see Human Interface Guidelines > [`Color`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color/).
 
 ## Topics
 
-### Getting and Creating Colors
-- [UI Element Colors](ui-element-colors.md)
+### Getting and creating colors
+- [UI element colors](ui-element-colors.md)
   Retrieve standard color objects for use with windows, controls, labels, text, selections and other content in your app.
-- [Standard Colors](standard-colors.md)
+- [Standard colors](standard-colors.md)
   Retrieve the standard color objects for common colors like red, blue, green, black, white, and more.
-- [Color Creation](color-creation.md)
+- [Color creation](color-creation.md)
   Load colors from asset catalogs, and create colors from raw component values, such as those used by grayscale, RGB, HSB, and CMYK colors.
-### Applying Specific Appearances to Colors
+### Applying specific appearances to colors
 - [func withSystemEffect(NSColor.SystemEffect) -> NSColor](nscolor/withsystemeffect(_:).md)
   Returns a new color object that represents the current color modified to include the specified visual effect.
 - [NSColor.SystemEffect](nscolor/systemeffect.md)
   Constants for user interactions that change the appearance of a view or control.
-### Transforming Existing Color Objects
+### Transforming existing color objects
 - [func usingColorSpace(NSColorSpace) -> NSColor?](nscolor/usingcolorspace(_:).md)
   Creates a new color object representing the color of the current color object in the specified color space.
 - [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](nscolor/blended(withfraction:of:).md)
@@ -70,19 +70,12 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Creates a new color object that represents a blend between the current color and the highlight color.
 - [func shadow(withLevel: CGFloat) -> NSColor?](nscolor/shadow(withlevel:).md)
   Creates a new color object that represents a blend between the current color and the shadow color.
-- [func usingColorSpaceName(NSColorSpaceName) -> NSColor?](nscolor/usingcolorspacename(_:).md)
-  Creates a new color object whose color is the same as the receiver’s, except that the new color object is in the specified color space.
-- [func usingColorSpaceName(NSColorSpaceName?, device: [NSDeviceDescriptionKey : Any]?) -> NSColor?](nscolor/usingcolorspacename(_:device:).md)
-  Creates a new color object for the same color, but in the specified color space and specific to the provided device.
-### Determining the Alpha Support of Colors
-- [class var ignoresAlpha: Bool](nscolor/ignoresalpha.md)
-  A Boolean value that indicates whether the app supports alpha.
-### Copying and Pasting Color Information
+### Copying and pasting color Information
 - [init?(from: NSPasteboard)](nscolor/init(from:).md)
   Creates a color object from color data currently on the pasteboard.
 - [func write(to: NSPasteboard)](nscolor/write(to:).md)
   Writes the color object’s data to the specified pasteboard.
-### Retrieving Component Values from Color Objects
+### Retrieving component values from color objects
 - [func getCyan(UnsafeMutablePointer<CGFloat>?, magenta: UnsafeMutablePointer<CGFloat>?, yellow: UnsafeMutablePointer<CGFloat>?, black: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](nscolor/getcyan(_:magenta:yellow:black:alpha:).md)
   Returns the color object’s CMYK and opacity values.
 - [func getHue(UnsafeMutablePointer<CGFloat>?, saturation: UnsafeMutablePointer<CGFloat>?, brightness: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](nscolor/gethue(_:saturation:brightness:alpha:).md)
@@ -95,7 +88,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The number of components in the color.
 - [func getComponents(UnsafeMutablePointer<CGFloat>)](nscolor/getcomponents(_:).md)
   Returns the components of the color as an array.
-### Retrieving Individual Components
+### Retrieving individual components
 - [var alphaComponent: CGFloat](nscolor/alphacomponent.md)
   The alpha (opacity) component value of the color.
 - [var whiteComponent: CGFloat](nscolor/whitecomponent.md)
@@ -128,7 +121,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The name of the color.
 - [var localizedColorNameComponent: String](nscolor/localizedcolornamecomponent.md)
   The localized version of the color name.
-### Working with the Color Space
+### Working with the color space
 - [var type: NSColor.ColorType](nscolor/type.md)
   The type of the color object.
 - [func usingType(NSColor.ColorType) -> NSColor?](nscolor/usingtype(_:).md)
@@ -137,14 +130,19 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Constants that indicate the color’s type, and which methods may be called on the color object.
 - [var colorSpace: NSColorSpace](nscolor/colorspace.md)
   The color space associated with the color.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 - [struct NSColorSpaceName](nscolorspacename.md)
   Constants that specify color space names.
-### Retrieving Core Graphics Color Information
+### Supporting high dynamic range (HDR) colors
+- [var linearExposure: CGFloat](nscolor/linearexposure.md)
+  For HDR colors, the linear brightness multiplier that was applied when generating the color. Colors created with an exposure by NSColor create CGColors that are tagged with a contentHeadroom value. While CGColors created without a contentHeadroom tag will return 0 from CGColorGetHeadroom, NSColors generated in a similar fashion return a linearExposure of 1.0.
+- [var standardDynamicRange: NSColor](nscolor/standarddynamicrange.md)
+  In some cases it is useful to recover the color that was base the SDR color that was exposed to generate an HDR color. If a color’s `linearExposure` is > 1, then this will return the base SDR color. If the color is not an HDR color, this will return `self`.
+- [func applyingContentHeadroom(CGFloat) -> NSColor](nscolor/applyingcontentheadroom(_:).md)
+  Reinterpret the color by applying a new `contentHeadroom` without changing the color components. Changing the `contentHeadroom` redefines the color relative to a different peak white, changing its behavior under tone mapping and the result of calling `standardDynamicRangeColor`. The new color will have a `contentHeadroom` >= 1.0. If called on a color with a color space that does not support extended range, or does not have an equivalent extended range counterpart, this will return `self`.
+### Retrieving core graphics color information
 - [var cgColor: CGColor](nscolor/cgcolor.md)
   The Core Graphics color object corresponding to the color.
-### Drawing with Colors
+### Drawing with colors
 - [func drawSwatch(in: NSRect)](nscolor/drawswatch(in:).md)
   Draws the current color in the specified rectangle.
 - [func set()](nscolor/set.md)
@@ -153,9 +151,18 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Sets the fill color of subsequent drawing to the color object’s color.
 - [func setStroke()](nscolor/setstroke.md)
   Sets the stroke color of subsequent drawing to the color object’s color.
-### Determining When Colors Change
+### Determining when colors change
 - [class let systemColorsDidChangeNotification: NSNotification.Name](nscolor/systemcolorsdidchangenotification.md)
   Sent when the system colors have changed, such as through a system control panel interface.
+### Deprecated
+- [class var ignoresAlpha: Bool](nscolor/ignoresalpha.md)
+  A Boolean value that indicates whether the app supports alpha.
+- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
+  The name of the color space associated with the color.
+- [func usingColorSpaceName(NSColorSpaceName) -> NSColor?](nscolor/usingcolorspacename(_:).md)
+  Creates a new color object whose color is the same as the receiver’s, except that the new color object is in the specified color space.
+- [func usingColorSpaceName(NSColorSpaceName?, device: [NSDeviceDescriptionKey : Any]?) -> NSColor?](nscolor/usingcolorspacename(_:device:).md)
+  Creates a new color object for the same color, but in the specified color space and specific to the provided device.
 - [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
 

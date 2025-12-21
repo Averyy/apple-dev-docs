@@ -21,7 +21,7 @@ This algorithm indicates that the signing function should first create an SHA-51
 
 With a key and an algorithm selected, you can test the compatibility of these with the signing operation using the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function:
 
-This function might return [`false`](https://developer.apple.com/documentation/swift/false), for example, if the key’s [`kSecAttrCanSign`](ksecattrcansign.md) attribute is set to [`false`](https://developer.apple.com/documentation/swift/false). This situation might happen if you used a public key instead of a private one (despite the variable name). Similarly, if you attempt to use an RSA key with one of the ECDSA algorithms, the check fails.
+This function might return [`false`](https://developer.apple.com/documentation/Swift/false), for example, if the key’s [`kSecAttrCanSign`](ksecattrcansign.md) attribute is set to [`false`](https://developer.apple.com/documentation/Swift/false). This situation might happen if you used a public key instead of a private one (despite the variable name). Similarly, if you attempt to use an RSA key with one of the ECDSA algorithms, the check fails.
 
 Finally, you can create the signature with a call to the [`SecKeyCreateSignature(_:_:_:_:)`](seckeycreatesignature(_:_:_:_:).md) function:
 
@@ -31,9 +31,9 @@ If something goes wrong, the function returns a `nil` signature and populates th
 
 After you successfully generate a signature, you transmit the data and signature to any interested party. Using your public key, the recipient then verifies the signature by performing a set of operations that resemble the signing process. As the receiver, you first retrieve the public key, possibly from a certificate, as described in [`Getting an Existing Key`](getting-an-existing-key.md). Then, using the same algorithm as was used for signing, you test that the key and algorithm are mutually compatible with the verification operation:
 
-The [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function returns [`false`](https://developer.apple.com/documentation/swift/false) if you use the wrong kind of key for the operation or algorithm. You then conduct the verification with a call to the [`SecKeyVerifySignature(_:_:_:_:_:)`](seckeyverifysignature(_:_:_:_:_:).md) function:
+The [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function returns [`false`](https://developer.apple.com/documentation/Swift/false) if you use the wrong kind of key for the operation or algorithm. You then conduct the verification with a call to the [`SecKeyVerifySignature(_:_:_:_:_:)`](seckeyverifysignature(_:_:_:_:_:).md) function:
 
-If the call succeeds and the signature and data are intact, the return value is [`true`](https://developer.apple.com/documentation/swift/true). If the function returns [`false`](https://developer.apple.com/documentation/swift/false), either the data or signature has been altered, the public key doesn’t match the private key, or some other error has occurred. Handle the error and transfer error object ownership to the system as needed.
+If the call succeeds and the signature and data are intact, the return value is [`true`](https://developer.apple.com/documentation/Swift/true). If the function returns [`false`](https://developer.apple.com/documentation/Swift/false), either the data or signature has been altered, the public key doesn’t match the private key, or some other error has occurred. Handle the error and transfer error object ownership to the system as needed.
 
 
 ---

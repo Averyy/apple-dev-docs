@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The default minimum height of a row in a list.
+The default minimum height of rows in a list.
 
 **Availability**:
 - iOS 13.0+
@@ -20,18 +20,24 @@ The default minimum height of a row in a list.
 var defaultMinListRowHeight: CGFloat { get set }
 ```
 
+#### Discussion
+
+The height of list rows is bounded below by this default value, and is otherwise determined by the height of the row’s content and the row insets.
+
 ## See Also
 
 - [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
-- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
-  Requests that the containing list row use the provided hover effect.
-- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
-  Requests that the containing list row have its hover effect disabled.
-- [func listItemTint(_:)](view/listitemtint(_:).md)
-  Sets a fixed tint color for content in a list.
-- [struct ListItemTint](listitemtint.md)
-  A tint effect configuration that you can apply to content in a list.
+- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+  The default minimum height of a header in a list.
+- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+  Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
+  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
+- [struct ListSectionSpacing](listsectionspacing.md)
+  The spacing options between two adjacent sections in a list.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 
 
 ---

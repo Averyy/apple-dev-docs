@@ -19,7 +19,7 @@ class AVCapturePhotoBracketSettings
 
 ## Mentions
 
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 
@@ -45,17 +45,17 @@ Listing 1. Capturing a Multi-Exposure Bracket
 
 ## Topics
 
-### Creating a Bracket Settings Object
+### Creating a bracket settings object
 - [convenience init(rawPixelFormatType: OSType, rawFileType: AVFileType?, processedFormat: [String : Any]?, processedFileType: AVFileType?, bracketedSettings: [AVCaptureBracketedStillImageSettings])](avcapturephotobracketsettings/init(rawpixelformattype:rawfiletype:processedformat:processedfiletype:bracketedsettings:).md)
   Creates a photo settings object for capture in both RAW format and a processed format.
 - [convenience init(rawPixelFormatType: OSType, processedFormat: [String : Any]?, bracketedSettings: [AVCaptureBracketedStillImageSettings])](avcapturephotobracketsettings/init(rawpixelformattype:processedformat:bracketedsettings:).md)
   Creates a photo settings object for the specified bracket of captures, in the specified formats.
-### Working with Bracketed Settings
+### Working with bracketed settings
 - [var bracketedSettings: [AVCaptureBracketedStillImageSettings]](avcapturephotobracketsettings/bracketedsettings.md)
   An array describing the number of and settings for images to produce in a bracketed capture.
 - [var isLensStabilizationEnabled: Bool](avcapturephotobracketsettings/islensstabilizationenabled.md)
   A Boolean value that specifies whether to stabilize the lens for the duration of the bracketed capture.
-### Bracketed Settings Types
+### Bracketed settings types
 - [class AVCaptureAutoExposureBracketedStillImageSettings](avcaptureautoexposurebracketedstillimagesettings.md)
   A configuration for defining bracketed photo captures in terms of bias relative to automatic exposure.
 - [class AVCaptureManualExposureBracketedStillImageSettings](avcapturemanualexposurebracketedstillimagesettings.md)

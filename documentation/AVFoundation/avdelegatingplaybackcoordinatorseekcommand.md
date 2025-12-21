@@ -21,7 +21,7 @@ class AVDelegatingPlaybackCoordinatorSeekCommand
 
 ## Topics
 
-### Accessing Command Details
+### Accessing command details
 - [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)
   A Boolean value that indicates whether the player starts buffering in anticipation of a request to begin playback.
 - [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)

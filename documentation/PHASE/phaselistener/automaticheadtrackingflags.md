@@ -9,13 +9,17 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var automaticHeadTrackingFlags: PHASEAutomaticHeadTrackingFlags { get set }
 ```
+
+#### Discussion
+
+A combination of flags to express automatic headtracking behaviors for this listener.
 
 
 ---

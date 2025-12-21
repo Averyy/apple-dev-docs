@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-init(image: UIImage)
+init(image: NSImage)
 ```
 
 

@@ -1,7 +1,7 @@
 # annotationForCluster
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: property
 
 Modifies cluster annotations.
 
@@ -11,14 +11,14 @@ Modifies cluster annotations.
 ## Declaration
 
 ```swift
-void annotationForCluster(
-	mapkit.Annotation clusterAnnotation
-);
+annotationForCluster?: (
+        clusterAnnotation: ClusterAnnotation,
+    ) => Annotation | undefined;
 ```
 
 #### Discussion
 
-See [`annotationForCluster`](mapkit.map/annotationforcluster.md) for more details.
+See [`annotationForCluster`](map/annotationforcluster.md) for more details.
 
 ## See Also
 

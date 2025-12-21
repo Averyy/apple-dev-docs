@@ -83,7 +83,7 @@ Collection views are a collaboration between many different objects, including:
 
 ## See Also
 
-- [Autosizing Views for Localization in iOS](../xcode/autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Table views](table-views.md)
   Display data in a single column of customizable rows.

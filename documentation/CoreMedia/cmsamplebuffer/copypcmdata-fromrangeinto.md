@@ -48,7 +48,6 @@ The audio buffer list must contain the same number of channels, and must be appr
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 
 
 ---

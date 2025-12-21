@@ -28,12 +28,10 @@ This class accumulates text data that will later be used to train a language mod
 
 ## See Also
 
-- [func export(to: URL) async throws](sfcustomlanguagemodeldata/export(to:).md)
-  Export the accumulated data to a file.
-- [func insert(phraseCount: SFCustomLanguageModelData.PhraseCount)](sfcustomlanguagemodeldata/insert(phrasecount:).md)
-  Add a sample to the body of training data.
-- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
-  Add a custom term to the vocabulary.
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
+  A `PhraseCountGenerator` that produces `PhraseCount` values based on templates.
+- [SFCustomLanguageModelData.PhraseCountGenerator](sfcustomlanguagemodeldata/phrasecountgenerator.md)
+  Abstract base class defining the interface for classes that generate `PhraseCount` via an iterator.
 
 
 ---

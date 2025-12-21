@@ -21,9 +21,11 @@ For more information on how these targets work together to support a custom web 
 
 ##### Configure the Sample Code Project
 
-To build a web browser that uses an alternative browser engine, including the one in this sample project, you need to apply for certain entitlements from WWDR. For more information on how to use these entitlements, see [`Creating browser extensions in Xcode`](creating-browser-extensions-in-xcode.md). For information on applying for the entitlements, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+To build a web browser that uses an alternative browser engine, including the one in this sample project, apply for the entitlements from Apple. The entitlement request process varies by region:
 
-To build the sample code project for a device, you must target an iPhone that supports the `arm64e` instruction set. `BrowserEngineKit` doesn’t support iPadOS, so this project won’t build for iPad.
+For more information on which entitlements to use, see [`Creating browser extensions in Xcode`](creating-browser-extensions-in-xcode.md).
+
+To build the sample code project for a device, you must target an iPhone that supports the `arm64e` instruction set. The project doesn’t support iPad.
 
 ##### Open a New Tab
 

@@ -21,9 +21,9 @@ var isActive: Bool { get set }
 
 #### Discussion
 
-When the user taps in the search field of a managed search bar, the search controller automatically displays the search results controller. Usually, you get the value of this property to determine whether the search results are displayed. However, you can set this property to [`true`](https://developer.apple.com/documentation/swift/true) to force the search interface to appear, even if the user hasn’t tapped in the search field.
+When the user taps in the search field of a managed search bar, the search controller automatically displays the search results controller. Usually, you get the value of this property to determine whether the search results are displayed. However, you can set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to force the search interface to appear, even if the user hasn’t tapped in the search field.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

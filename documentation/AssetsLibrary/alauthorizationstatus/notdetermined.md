@@ -5,11 +5,6 @@
 
 User has not yet made a choice with regards to this application.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

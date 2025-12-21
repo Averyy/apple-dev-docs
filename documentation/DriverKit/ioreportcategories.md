@@ -17,6 +17,8 @@ typedef uint16_t IOReportCategories;
 
 #### Discussion
 
+Encapsulate important, multi-purpose “tags” for channels
+
 IOReportCategories is the type for the .categories field of IOReportChanelType.  These categories are inteded to empower a limited number of clients to retrieve a broad range of channels without knowing much about them.  They can be OR’d together as needed.  Groups and subgroups are a more extensible mechanism for aggregating channels produced by different drivers.
 
 ## See Also

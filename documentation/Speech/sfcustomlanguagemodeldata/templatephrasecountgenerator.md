@@ -20,22 +20,23 @@ class TemplatePhraseCountGenerator
 
 ## Topics
 
+### Defining template tokens
+- [func define(className: String, values: [String])](sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:).md)
+  Define a class of tokens to be used in template strings.
+### Adding a template
+- [func insert(template: String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).md)
+  Add a template to be used to generate data samples.
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
 ### Classes
 - [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator.md)
-### Structures
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
 ### Operators
 - [static func == (SFCustomLanguageModelData.TemplatePhraseCountGenerator, SFCustomLanguageModelData.TemplatePhraseCountGenerator) -> Bool](sfcustomlanguagemodeldata/templatephrasecountgenerator/==(_:_:).md)
 ### Initializers
 - [init()](sfcustomlanguagemodeldata/templatephrasecountgenerator/init.md)
 - [init(from: any Decoder) throws](sfcustomlanguagemodeldata/templatephrasecountgenerator/init(from:).md)
 ### Instance Methods
-- [func define(className: String, values: [String])](sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:).md)
-  Define a class of tokens to be used in template strings.
 - [func hash(into: inout Hasher)](sfcustomlanguagemodeldata/templatephrasecountgenerator/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [func insert(template: String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).md)
-  Add a template to be used to generate data samples.
 - [func makeAsyncIterator() -> SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/templatephrasecountgenerator/makeasynciterator.md)
 
 ## Relationships
@@ -52,6 +53,8 @@ class TemplatePhraseCountGenerator
 
 ## See Also
 
+- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](sfcustomlanguagemodeldata/insert(phrasecountgenerator:).md)
+  Add a stream of samples to the body of training data.
 - [SFCustomLanguageModelData.PhraseCountGenerator](sfcustomlanguagemodeldata/phrasecountgenerator.md)
   Abstract base class defining the interface for classes that generate `PhraseCount` via an iterator.
 

@@ -25,7 +25,7 @@ optional func application(_ application: UIApplication, shouldAllowExtensionPoin
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to disallow use of a specified app extension type, or [`true`](https://developer.apple.com/documentation/swift/true) to allow use of the type.
+[`false`](https://developer.apple.com/documentation/Swift/false) to disallow use of a specified app extension type, or [`true`](https://developer.apple.com/documentation/Swift/true) to allow use of the type.
 
 #### Discussion
 

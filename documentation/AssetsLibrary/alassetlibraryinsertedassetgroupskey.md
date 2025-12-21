@@ -5,11 +5,6 @@
 
 Value is a set of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects identifying the assets that were inserted.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

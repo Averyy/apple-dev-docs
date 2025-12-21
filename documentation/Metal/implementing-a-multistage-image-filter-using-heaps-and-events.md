@@ -1,4 +1,4 @@
-# Implementing a Multistage Image Filter Using Heaps and Events
+# Implementing a multistage image filter using heaps and events
 
 **Framework**: Metal
 
@@ -22,7 +22,7 @@ This sample demonstrates:
 
 ![Screenshot of the sample app running to show a filtered image.](https://docs-assets.developer.apple.com/published/a0e0be8f7c006a6b14466de6eb449c11/image-filtering-with-heaps-and-events-1-ImageFilterGraphWithHeapsAndEvents.png)
 
-This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [`Implementing a Multistage Image Filter Using Heaps and Fences`](implementing-a-multistage-image-filter-using-heaps-and-fences.md).
+This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [`Implementing a multistage image filter using heaps and fences`](implementing-a-multistage-image-filter-using-heaps-and-fences.md).
 
 ##### Getting Started
 
@@ -230,9 +230,9 @@ Finally, the sample calls the `signal:` method to indicate that the frame has be
 
 ## See Also
 
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [protocol MTLHeap](mtlheap.md)
   A memory pool from which you can suballocate resources.

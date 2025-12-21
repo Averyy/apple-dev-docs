@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: init
 
-Asynchronously finds an existing extension process or launches a one.
+Finds an existing process for the specified app extension or creates a new one asynchronously.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,18 +22,20 @@ init(configuration: AppExtensionProcess.Configuration) async throws
 
 #### Discussion
 
-This initializer finds an existing extension process that matches the provided configuration object. If it’s unable to find an existing process, it launches a new extension process.
+Use this initializer to request a process for the specified app extension and receive the results asynchronously. If a process for the extension already exists, the returned type uses that process. If no process exists, the system creates one and runs the app extension’s startup code before returning.
+
+After receiving an instance of this type, use its methods to configure an XPC connection to the app extension. The system gives the app extension’s process enough runtime for your app to establish a connection. If you don’t create a connection right away, the system eventually suspends the app extension’s process. The system resumes the process again if you later try to create an XPC connection to it.
 
 ## Parameters
 
-- `configuration`: The configuration options for the process to find or launch.
+- `configuration`: A type that contains the identity of the app extension and additional   configuration details. The initializer copies the information it needs from your configuration   structure and doesn’t maintain a reference to it.
 
 ## See Also
 
 - [init(configuration: AppExtensionProcess.Configuration) throws](appextensionprocess/init(configuration:)-2g0cy.md)
-  Synchronously finds an existing extension process or launches a new one.
+  Finds an existing process for the specified app extension or creates a new one synchronously.
 - [AppExtensionProcess.Configuration](appextensionprocess/configuration.md)
-  An object that holds configuration options for an app extension process.
+  A structure that holds the identity of an app extension and process-related details.
 
 
 ---

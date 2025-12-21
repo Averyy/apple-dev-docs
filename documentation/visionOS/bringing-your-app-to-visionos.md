@@ -67,7 +67,7 @@ For additional information about how to isolate code to the iOS version of your 
 
 After your existing code runs correctly in visionOS, look for ways to improve the experience you offer on the platform. In visionOS, you can display content using more than just windows. Think about ways to incorporate the following elements into your interface:
 
--  Many SwiftUI views use visual effects to add depth. Look for similar ways to incorporate depth into your own custom views. For guidance on how best to incorporate depth and 3D elements in your interface, see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
+-  Many SwiftUI views use visual effects to add depth. Look for similar ways to incorporate depth into your own custom views. For guidance on how best to incorporate depth and 3D elements in your interface, see Human Interface Guidelines.
 -  Think about where you might incorporate 3D models and shapes into your content. Use RealityKit to implement your content, and a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) to present that content from your app. See [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
 -  Present a space to immerse someone in your app’s content. Spaces let you place content anywhere in a person’s surroundings. You can also create fully immersive experiences that display only your app’s content. See [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
 -  Use ARKit to facilitate interactions between your content and the surroundings. For example, detect planar surfaces to use as anchor points for your content. See [`ARKit`](https://developer.apple.com/documentation/ARKit) for more details.

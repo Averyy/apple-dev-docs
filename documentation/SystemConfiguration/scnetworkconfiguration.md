@@ -4,7 +4,7 @@
 
 #### Overview
 
-The `SCNetworkConfiguration` programming interface provides access to the stored network configuration. The functions include providing access to the network-capable devices on the system, the network sets, network services, and network protocols. Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+The `SCNetworkConfiguration` programming interface provides access to the stored network configuration. The functions include providing access to the network-capable devices on the system, the network sets, network services, and network protocols. Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 Note that when using the functions in this programming interface, you must call the [`SCPreferencesCommitChanges(_:)`](scpreferencescommitchanges(_:).md) function to ensure that your changes are committed to permanent storage.
 

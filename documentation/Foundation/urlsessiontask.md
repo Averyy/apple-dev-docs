@@ -22,8 +22,8 @@ class URLSessionTask
 
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
+- [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
 

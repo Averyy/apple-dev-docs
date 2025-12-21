@@ -17,7 +17,7 @@ func lockTextureRepresentation(with colorSpace: CGColorSpace!, forBounds bounds:
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) is successful; [`false`](https://developer.apple.com/documentation/swift/false) if texture can’t be created.
+[`true`](https://developer.apple.com/documentation/Swift/true) is successful; [`false`](https://developer.apple.com/documentation/Swift/false) if texture can’t be created.
 
 #### Discussion
 

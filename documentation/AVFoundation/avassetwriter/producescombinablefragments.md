@@ -21,7 +21,7 @@ var producesCombinableFragments: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) when you use multiple asset writers to produce distinct streams that complement each other, such as HLS encodings or bit rate variants.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) when you use multiple asset writers to produce distinct streams that complement each other, such as HLS encodings or bit rate variants.
 
 You can’t set this property after writing starts.
 

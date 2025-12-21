@@ -18,13 +18,6 @@
 func encodeLabels(_ annotations: some Collection<Optional<Label>>) throws -> (labels: [String?], encoded: [Int])
 ```
 
-## See Also
-
-- [func encode(TreeClassifierModel<Label>, to: inout any EstimatorEncoder) throws](boostedtreeclassifier/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> TreeClassifierModel<Label>](boostedtreeclassifier/decode(from:).md)
-  Decodes a previously fitted transformer.
-
 
 ---
 

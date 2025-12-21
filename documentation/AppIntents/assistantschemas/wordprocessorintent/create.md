@@ -25,7 +25,7 @@ var create: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.wordProcessor.create` schema:
 
 ```swift
-@AssistantIntent(schema: .wordProcessor.create)
+@AppIntent(schema: .wordProcessor.create)
 struct CreateWordProcessorDocumentIntent: AppIntent {
     @Parameter
     var template: WordProcessorDocumentTemplateEntity?

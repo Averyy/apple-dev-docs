@@ -25,7 +25,7 @@ A section snapshot represents the data for a single section in a collection view
 
 You can use section snapshots with or instead of an [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md), which represents the data in the entire view. Use a section snapshot when you need precise management of the data in a section of your layout, such as when the sections of your layout acquire their data from different sources. You can also use a section snapshot to represent data with a hierarchical structure, such as an outline with expandable items.
 
-The following example creates a section snapshot with one root item that contains three child items:
+The following example creates a section snapshot with two root items, with one that contains three child items:
 
 ```swift
 for section in Section.allCases {

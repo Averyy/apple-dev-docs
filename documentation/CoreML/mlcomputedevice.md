@@ -22,14 +22,14 @@ enum MLComputeDevice
 
 ## Topics
 
-### Device Types
+### Device types
 - [case cpu(MLCPUComputeDevice)](mlcomputedevice/cpu(_:).md)
   A device that represents a CPU compute device.
 - [case gpu(MLGPUComputeDevice)](mlcomputedevice/gpu(_:).md)
   A device that represents a GPU compute device.
 - [case neuralEngine(MLNeuralEngineComputeDevice)](mlcomputedevice/neuralengine(_:).md)
   A device that represents a Neural Engine compute device.
-### Getting All Devices
+### Getting all devices
 - [static var allComputeDevices: [MLComputeDevice]](mlcomputedevice/allcomputedevices.md)
   Returns an array that contains all of the compute devices that are accessible.
 

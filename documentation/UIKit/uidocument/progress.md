@@ -14,7 +14,6 @@ The upload or download progress of a document.
 ## Declaration
 
 ```swift
-@MainActor
 var progress: Progress? { get }
 ```
 

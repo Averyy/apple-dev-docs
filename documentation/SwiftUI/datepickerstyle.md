@@ -64,7 +64,7 @@ extension MyCustomType: Transition {
   A type alias for the properties of a `DatePicker`.
 - [associatedtype Body : View](datepickerstyle/body.md)
   A view representing the appearance and interaction of a `DatePicker`.
-### Suporting types
+### Supporting types
 - [struct DefaultDatePickerStyle](defaultdatepickerstyle.md)
   The default style for date pickers.
 - [struct CompactDatePickerStyle](compactdatepickerstyle.md)

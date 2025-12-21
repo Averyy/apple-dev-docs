@@ -70,9 +70,6 @@ enum XCUIProtectedResource
   The protected resource case for the use of Apple Events.
 ### Initializers
 - [init?(rawValue: Int)](xcuiprotectedresource/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuiprotectedresource/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuiprotectedresource/rawrepresentable-implementations.md)
 
 ## Relationships
 

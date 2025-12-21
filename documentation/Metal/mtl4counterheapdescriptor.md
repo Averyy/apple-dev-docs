@@ -6,12 +6,12 @@
 Groups together parameters for configuring a counter heap object at creation time.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,8 +23,6 @@ class MTL4CounterHeapDescriptor
 
 ### Instance Properties
 - [var count: Int](mtl4counterheapdescriptor/count.md)
-  Assigns the number of entries in the heap.
-- [var entryCount: Int](mtl4counterheapdescriptor/entrycount.md)
   Assigns the number of entries in the heap.
 - [var type: MTL4CounterHeapType](mtl4counterheapdescriptor/type.md)
   Assigns the type of data that the heap contains.
@@ -48,7 +46,8 @@ class MTL4CounterHeapDescriptor
   An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
 - [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [enum MTL4CommandQueueError](mtl4commandqueueerror.md)
+- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
 - [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
 - [protocol MTL4CommandBuffer](mtl4commandbuffer.md)
@@ -71,8 +70,6 @@ class MTL4CounterHeapDescriptor
   Represents options to configure a commit operation on a command queue.
 - [protocol MTL4CommitFeedback](mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
-- [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
-  Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 
 ---

@@ -29,6 +29,8 @@ If unspecified, an [`NumberFormatter`](numberformatter.md) object with [`NumberF
 
 - [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
   The options for how the unit is formatted.
+- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+  Measurement formatter options.
 - [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
   The unit style.
 - [var locale: Locale!](measurementformatter/locale.md)

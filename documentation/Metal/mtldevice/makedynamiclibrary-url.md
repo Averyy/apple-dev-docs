@@ -22,7 +22,7 @@ func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary
 
 ## Mentions
 
-- [Compiling and Linking Metal Dynamic Libraries](compiling-and-linking-metal-dynamic-libraries.md)
+- [Compiling and linking Metal dynamic libraries](compiling-and-linking-metal-dynamic-libraries.md)
 
 #### Return Value
 

@@ -8,10 +8,8 @@ Requests an array of precision estimates for each landmark point.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
 
 ## Declaration
 

@@ -44,8 +44,8 @@ func update<InputSequence>(_ transformer: inout PreprocessingUpdatableEstimator<
   The intermediate type.
 - [PreprocessingUpdatableEstimator.Output](preprocessingupdatableestimator/output.md)
   The output type.
-- [PreprocessingUpdatableEstimator.Transformer](preprocessingupdatableestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

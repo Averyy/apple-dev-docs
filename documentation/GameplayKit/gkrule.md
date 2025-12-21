@@ -45,7 +45,7 @@ GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md
 Subclasses of [`GKRule`](gkrule.md) must implement both of the following methods:
 
 - Override the [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) method to evaluate your rule in the context of the provided rule system.
-- Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perform whatever actions should result when your rule is satisfied (that is, when your [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) implementation returns [`true`](https://developer.apple.com/documentation/swift/true)) in the context of the provided rule system.
+- Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perform whatever actions should result when your rule is satisfied (that is, when your [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) implementation returns [`true`](https://developer.apple.com/documentation/Swift/true)) in the context of the provided rule system.
 
 ###### Alternatives to Subclassing
 

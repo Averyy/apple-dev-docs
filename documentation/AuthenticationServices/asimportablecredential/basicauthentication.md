@@ -6,11 +6,11 @@
 A type to represent a basic authentication password.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -33,7 +33,7 @@ This type is a representation of `BasicAuth` as defined in the Credential Exchan
 - [init(userName: ASImportableEditableField?, password: ASImportableEditableField?)](asimportablecredential/basicauthentication/init(username:password:).md)
 ### Instance Properties
 - [var userName: ASImportableEditableField?](asimportablecredential/basicauthentication/username.md)
-  The user name associated with this credential.
+  The user name associated with this credential. When instantiating from JSON, this property will be populated from the “username” field.
 
 ## Relationships
 

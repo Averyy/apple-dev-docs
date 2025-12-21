@@ -6,12 +6,12 @@
 Connects the playback coordinator to the coordination medium
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,6 +26,11 @@ This connects the playback coordinator to a coordination medium to enable sendin
 ## Parameters
 
 - `coordinationMedium`: The coordination medium the playback coordinator connects to. If NULL, the playback coordinator disconnects from any existing coordination medium.
+
+## See Also
+
+- [var playbackCoordinationMedium: AVPlaybackCoordinationMedium?](avplayerplaybackcoordinator/playbackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium this playback coordinator is connected to.
 
 
 ---

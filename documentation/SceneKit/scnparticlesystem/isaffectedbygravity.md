@@ -27,7 +27,7 @@ Gravity applies a constant acceleration to all particles in the system. SceneKit
 - The [`isAffectedByGravity`](scnparticlesystem/isaffectedbygravity.md) property, which uses the [`gravity`](scnphysicsworld/gravity.md) vector specified by the [`physicsWorld`](scnscene/physicsworld.md) object of the scene containing the particle system. Use this option when you want the system’s particles to be affected by the same gravity as the [`SCNPhysicsBody`](scnphysicsbody.md) objects in your scene.
 - The [`acceleration`](scnparticlesystem/acceleration.md) property, which is independent of the simulation SceneKit uses for physics bodies in the scene. Use acceleration to simulate gravity if you have no [`SCNPhysicsBody`](scnphysicsbody.md) objects in your scene, or if you want particles to be affected both by the physics world’s gravity and another constant acceleration (such as wind).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that the physics world’s gravity does not affect particles.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that the physics world’s gravity does not affect particles.
 
 ## See Also
 

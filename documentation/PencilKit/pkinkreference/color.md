@@ -15,7 +15,7 @@ The base color for this ink.
 ## Declaration
 
 ```swift
-var color: UIColor { get }
+var color: NSColor { get }
 ```
 
 ## See Also

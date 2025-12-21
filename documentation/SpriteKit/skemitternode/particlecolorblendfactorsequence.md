@@ -17,7 +17,6 @@ The sequence used to specify the color blend factor of a particle over its lifet
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorBlendFactorSequence: SKKeyframeSequence? { get set }
 ```
 

@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-An error that occurs if someone terminates the connection.
+An error that occurs if the connection was terminated.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,8 @@ case connectionTerminated(WAError.ConnectionTerminatedDetails)
 
 ## See Also
 
-- [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
-  An error that occurs due to publisher timeout.
-- [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](waerror/subscribertimeout(_:).md)
-  An error that occurs due to subscriber timeout.
+- [WAError.ConnectionTerminatedDetails](waerror/connectionterminateddetails.md)
+  The optional details describing the terminated connection.
 
 
 ---

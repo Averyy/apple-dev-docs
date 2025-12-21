@@ -17,7 +17,7 @@ func discardEditing()
 
 #### Discussion
 
-The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/objectivec/nsobject/1458076-discardediting) on any current editors.
+The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/discardEditing) on any current editors.
 
 ## See Also
 
@@ -26,7 +26,7 @@ The receiver invokes [`discardEditing`](https://developer.apple.com/documentatio
 - [func objectDidEndEditing(any NSEditor)](nscontroller/objectdidendediting(_:).md)
   Invoked to inform the receiver that `editor` has committed or discarded its changes.
 - [func commitEditing() -> Bool](nscontroller/commitediting.md)
-  Causes the receiver to attempt to commit any pending edits, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful or no edits were pending.
+  Attempts to commit any pending edits.
 - [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nscontroller/commitediting(withdelegate:didcommit:contextinfo:).md)
   Attempts to commit any pending changes in known editors of the receiver.
 - [var isEditing: Bool](nscontroller/isediting.md)

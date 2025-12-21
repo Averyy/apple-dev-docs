@@ -22,13 +22,13 @@ convenience init(array: [Any], copyItems flag: Bool)
 
 #### Return Value
 
-An array initialized to contain the objects—or if `flag` is [`true`](https://developer.apple.com/documentation/swift/true), copies of the objects—in `array`. The returned object might be different than the original receiver.
+An array initialized to contain the objects—or if `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), copies of the objects—in `array`. The returned object might be different than the original receiver.
 
 #### Discussion
 
 After an immutable array has been initialized in this way, it cannot be modified.
 
-The [`copy(with:)`](nscopying/copy(with:).md) method performs a shallow copy. If you have a collection of arbitrary depth, passing [`true`](https://developer.apple.com/documentation/swift/true) for the `flag` parameter will perform an immutable copy of the first level below the surface. If you pass [`false`](https://developer.apple.com/documentation/swift/false) the mutability of the first level is unaffected. In either case, the mutability of all deeper levels is unaffected.
+The [`copy(with:)`](nscopying/copy(with:).md) method performs a shallow copy. If you have a collection of arbitrary depth, passing [`true`](https://developer.apple.com/documentation/Swift/true) for the `flag` parameter will perform an immutable copy of the first level below the surface. If you pass [`false`](https://developer.apple.com/documentation/Swift/false) the mutability of the first level is unaffected. In either case, the mutability of all deeper levels is unaffected.
 
 ## Parameters
 

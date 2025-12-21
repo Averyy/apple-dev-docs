@@ -31,6 +31,8 @@ For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/
 
 - [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
   Creates a video output object using the specified pixel buffer attributes.
+- [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](avplayeritemvideooutput/init(pixelbufferattributes:)-18izh.md)
+  Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
 
 
 ---

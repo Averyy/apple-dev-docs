@@ -20,7 +20,7 @@ var isTransferring: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the data has not yet been transferred or [`false`](https://developer.apple.com/documentation/swift/false) if the transfer is complete.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the data has not yet been transferred or [`false`](https://developer.apple.com/documentation/Swift/false) if the transfer is complete.
 
 ## See Also
 

@@ -17,7 +17,7 @@ Horizontal field of view in thousandths of a degree (i.e., 123456 is 123.456 deg
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16.0, iOS 19.0, tvOS 19.0, watchOS 12.0, visionOS 3.0)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 static var horizontalFieldOfView: CMFormatDescription.Extensions.Key { get }
 ```
 

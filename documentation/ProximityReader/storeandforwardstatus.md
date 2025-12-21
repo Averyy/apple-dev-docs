@@ -30,17 +30,6 @@ Call [`status()`](storeandforwardpaymentcardreadersession/status().md) to get th
   The date when the Store and Forward session expires.
 - [let readCount: Int](storeandforwardstatus/readcount.md)
   The number of successful reads the framework performed using a Store and Forward session.
-### Operators
-- [static func == (StoreAndForwardStatus, StoreAndForwardStatus) -> Bool](storeandforwardstatus/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](storeandforwardstatus/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](storeandforwardstatus/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](storeandforwardstatus/equatable-implementations.md)
 
 ## Relationships
 

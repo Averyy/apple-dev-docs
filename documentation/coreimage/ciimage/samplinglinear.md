@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Samples the image using bilinear interpolation and returns the result.
+Create an image by changing the receiver’s sample mode to bilinear interpolation.
 
 **Availability**:
 - iOS 11.0+
@@ -19,14 +19,14 @@ Samples the image using bilinear interpolation and returns the result.
 func samplingLinear() -> CIImage
 ```
 
-#### Discussion
+#### Return Value
 
-Returns the image sampled using bilinear interpolation.
+ An autoreleased [`CIImage`](ciimage.md) instance with a bilinear sampling.
 
 ## See Also
 
 - [func samplingNearest() -> CIImage](ciimage/samplingnearest.md)
-  Samples the image using nearest-neighbor and returns the result.
+  Create an image by changing the receiver’s sample mode to nearest neighbor.
 
 
 ---

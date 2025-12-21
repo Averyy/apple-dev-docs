@@ -1,7 +1,7 @@
 # MapConstructorOptions
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: struct
 
 An object that contains options for creating a map’s features.
 
@@ -78,12 +78,27 @@ Use [`MapConstructorOptions`](mapconstructoroptions.md) to set the initial chara
 ### Setting the loading priority
 - [loadPriority](mapconstructoroptions/loadpriority.md)
   A value MapKit JS uses for prioritizing the visibility of specific map features before the underlaying map tiles.
-- [mapkit.Map.LoadPriorities](mapkit.map.loadpriorities.md)
+- [const LoadPriority](loadpriority.md)
   Values for prioritizing the visibility of specific map features while the map is loading.
+### Instance Properties
+- [annotationForMapFeature](mapconstructoroptions/annotationformapfeature.md)
+  The method MapKit JS calls when the framework creates a map feature annotation.
+- [cameraBoundary](mapconstructoroptions/cameraboundary.md)
+  The boundary of the area within which the map view’s center needs to remain.
+- [cameraDistance](mapconstructoroptions/cameradistance.md)
+  The altitude of the camera relative to the elevation of the center of the map.
+- [cameraZoomRange](mapconstructoroptions/camerazoomrange.md)
+  Values that set the minimum and maximum distances of the camera from the map center.
+- [distances](mapconstructoroptions/distances.md)
+  The system of measurement that displays on the map.
+- [selectableMapFeatures](mapconstructoroptions/selectablemapfeatures.md)
+  An array of map features that someone can select from the map.
+- [tileOverlays](mapconstructoroptions/tileoverlays.md)
+  An array of the map tile overlays.
 
 ## See Also
 
-- [mapkit.Map](mapkit.map/mapkit.map.md)
+- [new Map(parent, options)](map/mapconstructor.md)
   Creates a map you embed on a webpage and initializes it with the constructor options you choose.
 
 

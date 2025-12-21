@@ -21,11 +21,6 @@ init(value: String)
 
 - `value`: The value of the string to contain in this user identity.
 
-## See Also
-
-- [init(from: any Decoder) throws](stringuseridentity/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

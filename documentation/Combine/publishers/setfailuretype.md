@@ -26,26 +26,23 @@ The publisher can’t actually fail with the specified type and finishes normall
 
 ## Topics
 
-### Creating a Set Failure Type Publisher
+### Creating a set failure type publisher
 - [init(upstream: Upstream)](publishers/setfailuretype/init(upstream:).md)
   Creates a publisher that appears to send a specified failure type.
-### Declaring Publisher Topography
+### Setting failure type
+- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Upstream, E>](publishers/setfailuretype/setfailuretype(to:).md)
+  Changes the failure type declared by the upstream publisher.
+### Declaring supporting types
 - [Publishers.SetFailureType.Output](publishers/setfailuretype/output.md)
   The kind of values published by this publisher.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/setfailuretype/upstream.md)
   The publisher from which this publisher receives elements.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.SetFailureType<Upstream, Failure>, Publishers.SetFailureType<Upstream, Failure>) -> Bool](publishers/setfailuretype/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/setfailuretype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-setfailuretype-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/setfailuretype/equatable-implementations.md)
-- [Publisher Implementations](publishers/setfailuretype/publisher-implementations.md)
 
 ## Relationships
 

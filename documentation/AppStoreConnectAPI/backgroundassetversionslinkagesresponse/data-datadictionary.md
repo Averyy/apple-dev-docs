@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data structure that represents a background asset versions linkages response resource.
+
 **Availability**:
 - App Store Connect API 4.0+
 

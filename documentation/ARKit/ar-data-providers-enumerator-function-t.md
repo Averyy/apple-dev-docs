@@ -4,7 +4,7 @@
 **Kind**: typealias
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -44,6 +44,7 @@ typedef _Bool (*)(void *, NSObject<OS_ar_data_provider> *) ar_data_providers_enu
 - [ar_data_providers_remove_data_providers](ar_data_providers_remove_data_providers.md)
   Removes multiple data providers from a collection.
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 
 
 ---

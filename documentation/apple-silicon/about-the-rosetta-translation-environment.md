@@ -27,7 +27,7 @@ Rosetta can translate most Intel-based apps, including apps that contain just-in
 - Kernel extensions
 - Virtual Machine apps that virtualize x86_64 computer platforms
 
-Rosetta translates all `x86_64` instructions, but it doesn’t support the execution of some newer instruction sets and processor features, such as AVX, AVX2, and AVX512 vector instructions. If you include these newer instructions in your code, execute them only after verifying that they are available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname) function to check the `hw.optional.avx512f` attribute.
+Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2 instruction set, but it doesn’t support the execution of AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname) function to check the `hw.optional.avx512f` attribute.
 
 ##### Determine Whether Your App Is Running As a Translated Binary
 

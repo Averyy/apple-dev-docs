@@ -8,6 +8,10 @@ Get information about a specific alternative distribution package.
 **Availability**:
 - App Store Connect API 3.3+
 
+## Mentions
+
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+
 #### Discussion
 
 ##### Example Request and Response

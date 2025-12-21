@@ -55,7 +55,7 @@ For design guidance, see [`Focus and selection`](https://developer.apple.com/des
 - [func focusedSceneValue(_:_:)](view/focusedscenevalue(_:_:).md)
   Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused scene.
 - [struct FocusedValues](focusedvalues.md)
-  A collection of state exported by the focused view and its ancestors.
+  A collection of state exported by the focused scene or view and its ancestors.
 ### Exposing reference types to focused views
 - [func focusedObject(_:)](view/focusedobject(_:).md)
   Creates a new view that exposes the provided object to other views whose whose state depends on the focused view hierarchy.

@@ -23,23 +23,9 @@ struct Platform
   iOS is a supported platform.
 - [static var macOS: Platform](platform/macos.md)
   macOS is a supported platform.
-### Inspecting the object
-- [var description: String](platform/description.md)
-  A textual representation of this instance.
-### Operators
-- [static func == (Platform, Platform) -> Bool](platform/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](platform/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](platform/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static var visionOS: Platform](platform/visionos.md)
   visionOS is a supported platform.
-### Default Implementations
-- [Equatable Implementations](platform/equatable-implementations.md)
 
 ## Relationships
 

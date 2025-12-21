@@ -32,7 +32,7 @@ An alternate way to compose SMS messages is to create and open a URL that uses t
 
 ##### Checking the Availability of the Composition Interface
 
-Before presenting the message compose view controller, always call the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method to see if the person configured the current device to send messages. If the user’s device isn’t set up to send or receive messages, you can notify the user or disable the messaging features in your application. You shouldn’t attempt to use this interface if the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method returns [`false`](https://developer.apple.com/documentation/swift/false). If messaging is available, you can also use the [`canSendAttachments()`](mfmessagecomposeviewcontroller/cansendattachments().md) and [`canSendSubject()`](mfmessagecomposeviewcontroller/cansendsubject().md) methods to determine if those specific messaging features are available.
+Before presenting the message compose view controller, always call the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method to see if the person configured the current device to send messages. If the user’s device isn’t set up to send or receive messages, you can notify the user or disable the messaging features in your application. You shouldn’t attempt to use this interface if the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false). If messaging is available, you can also use the [`canSendAttachments()`](mfmessagecomposeviewcontroller/cansendattachments().md) and [`canSendSubject()`](mfmessagecomposeviewcontroller/cansendsubject().md) methods to determine if those specific messaging features are available.
 
 ##### Configuring and Displaying the Composition Interface
 
@@ -87,9 +87,12 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 - [func insertCollaborationItemProvider(NSItemProvider) -> Bool](mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).md)
 ### Handling notifications
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange.md)
-  Posted when the value returned by the [`canSendText()`](doc://com.apple.documentation/documentation/MessageUI/MFMessageComposeViewController/canSendText()) class method has changed.
+  Posted when the current device’s ability to send text messages changes.
 - [let MFMessageComposeViewControllerTextMessageAvailabilityKey: String](mfmessagecomposeviewcontrollertextmessageavailabilitykey.md)
   The value of this key is a number object that contains a Boolean value.
+### Configuring device validation
+- [func setUPIVerificationCodeSendCompletion((Bool) -> Void)](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md)
+  Configures the instance of a view for Unified Payments Interface (UPI) device validation.
 
 ## Relationships
 

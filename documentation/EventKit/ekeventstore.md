@@ -141,6 +141,9 @@ After receiving an object from an event store, don’t use that object with a di
 ### Deprecated methods
 - [func requestAccess(to: EKEntityType, completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestaccess(to:completion:).md)
   Prompts the person using your app to grant or deny access to event or reminder data.
+### Structures
+- [EKEventStore.EventStoreChanged](ekeventstore/eventstorechanged.md)
+  A notification posted when changes are made to the Calendar or Reminders database.
 
 ## Relationships
 

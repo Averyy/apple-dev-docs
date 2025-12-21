@@ -17,7 +17,7 @@ var hasAmbiguousLayout: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the view’s location or size cannot be determined definitively based on the current constraints.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the view’s location or size cannot be determined definitively based on the current constraints.
 
 Accessing this property engages the layout engine to determine whether any other frame would also satisfy the constraints on the view. Because this process involves laying out the view, accessing the property can be an expensive operation but it can also provide useful debugging information. AppKit automatically calls this method when a window is asked to visualize its constraints using the [`visualizeConstraints(_:)`](nswindow/visualizeconstraints(_:).md) method.
 

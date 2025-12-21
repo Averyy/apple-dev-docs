@@ -34,8 +34,6 @@ If the result is mutated and is not a unique reference, then the `Data` will sti
 
 - [init()](data/init.md)
   Creates an empty data buffer.
-- [init<S>(S)](data/init(_:).md)
-  Creates a new instance of a collection containing the elements of a sequence.
 - [init<SourceType>(buffer: UnsafeBufferPointer<SourceType>)](data/init(buffer:)-75sng.md)
   Creates a data buffer with copied memory content using a buffer pointer.
 - [init<SourceType>(buffer: UnsafeMutableBufferPointer<SourceType>)](data/init(buffer:)-6xgv4.md)

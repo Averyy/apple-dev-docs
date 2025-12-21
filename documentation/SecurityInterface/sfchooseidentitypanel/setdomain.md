@@ -17,7 +17,7 @@ func setDomain(_ domainString: String!)
 
 #### Discussion
 
-Call this method to associate a domain with the chosen identity. If the user chooses an identity and a domain is set, an identity preference item is created in the default keychain. Subsequent calls to  [`SecIdentitySearchCreate`](https://developer.apple.com/documentation/security/1396821-secidentitysearchcreate) and [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/1396825-secidentitysearchcopynext) return the preferred identity for this domain first.
+Call this method to associate a domain with the chosen identity. If the user chooses an identity and a domain is set, an identity preference item is created in the default keychain. Subsequent calls to  [`SecIdentitySearchCreate`](https://developer.apple.com/documentation/Security/SecIdentitySearchCreate) and [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/Security/SecIdentitySearchCopyNext) return the preferred identity for this domain first.
 
 ## Parameters
 

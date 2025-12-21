@@ -6,7 +6,7 @@
 The list of depth formats that the layer supports
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

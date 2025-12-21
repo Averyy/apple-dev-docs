@@ -9,6 +9,7 @@ A person’s preference for whether holding a supported model of Apple Pencil cl
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

@@ -24,7 +24,7 @@ var isWrapped: Bool { get set }
 
 When you define a layout rectangle for the text using its [`containerFrame`](scntext/containerframe.md) property, SceneKit uses the [`isWrapped`](scntext/iswrapped.md) property to determine whether each line of text that is wider than the layout rectangle automatically wraps onto the next line.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), specifying that long lines of text do not wrap. (If you specify a container frame, long lines of text extend beyond its width.)
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that long lines of text do not wrap. (If you specify a container frame, long lines of text extend beyond its width.)
 
 ## See Also
 

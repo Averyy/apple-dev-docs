@@ -4,14 +4,6 @@
 
 Compute the quadratic interpolation between the neighboring elements in a vector.
 
-## Topics
-
-### Vector-to-Vector Quadratic Interpolation
-- [vDSP_vqint](vdsp_vqint.md)
-  Calculates single-precision vector quadratic interpolation.
-- [vDSP_vqintD](vdsp_vqintd.md)
-  Calculates double-precision vector quadratic interpolation.
-
 ## See Also
 
 - [Linear interpolation functions](linear-interpolation-functions.md)

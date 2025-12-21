@@ -4,11 +4,11 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ enum Status
 
 ## Topics
 
-### Enumeration Cases
+### Asset status
 - [AssetInventory.Status.downloading](assetinventory/status/downloading.md)
   The system is currently downloading the assets, or waiting for conditions to improve and continue downloading later.
 - [AssetInventory.Status.installed](assetinventory/status/installed.md)
@@ -35,6 +35,11 @@ enum Status
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
+  Returns the status for the list of modules.
 
 
 ---

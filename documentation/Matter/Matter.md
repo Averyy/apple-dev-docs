@@ -181,6 +181,7 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [class MTRCommissionerControlClusterCommissioningRequestResultEvent](mtrcommissionercontrolclustercommissioningrequestresultevent.md)
 - [class MTRCommissionerControlClusterRequestCommissioningApprovalParams](mtrcommissionercontrolclusterrequestcommissioningapprovalparams.md)
 - [class MTRCommissionerControlClusterReverseOpenCommissioningWindowParams](mtrcommissionercontrolclusterreverseopencommissioningwindowparams.md)
+- [class MTRCommissioningOperation](mtrcommissioningoperation.md)
 - [class MTRContentAppObserverClusterContentAppMessageParams](mtrcontentappobserverclustercontentappmessageparams.md)
 - [class MTRContentAppObserverClusterContentAppMessageResponseParams](mtrcontentappobserverclustercontentappmessageresponseparams.md)
 - [class MTRDataTypeAtomicAttributeStatusStruct](mtrdatatypeatomicattributestatusstruct.md)
@@ -345,6 +346,7 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [class MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams](mtrwifinetworkmanagementclusternetworkpassphraseresponseparams.md)
 - [class MTRXPCDeviceControllerParameters](mtrxpcdevicecontrollerparameters.md)
 ### Protocols
+- [protocol MTRCommissioningDelegate](mtrcommissioningdelegate.md)
 - [protocol MTRXPCClientProtocol](mtrxpcclientprotocol.md)
 - [protocol MTRXPCClientProtocol_MTRDevice](mtrxpcclientprotocol_mtrdevice.md)
 - [protocol MTRXPCClientProtocol_MTRDeviceController](mtrxpcclientprotocol_mtrdevicecontroller.md)

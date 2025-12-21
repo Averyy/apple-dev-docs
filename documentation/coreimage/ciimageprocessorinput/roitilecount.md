@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+This property tells a tiled-input processor how many input tiles will be processed.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,10 +20,18 @@
 var roiTileCount: Int { get }
 ```
 
+#### Discussion
+
+This property is only relevant if your processor implements `/CIImageProcessorKernel/roiTileArrayForInput:arguments:outputRect:`
+
+This can be useful if the processor needs to do work [`CIImageProcessorOutput`](ciimageprocessoroutput.md) after the last tile is processed.
+
 ## See Also
 
 - [var digest: UInt64](ciimageprocessorinput/digest.md)
+  A 64-bit digest that uniquely describes the contents of the input to a processor.
 - [var roiTileIndex: Int](ciimageprocessorinput/roitileindex.md)
+  This property tells a tiled-input processor which input tile index is being processed.
 
 
 ---

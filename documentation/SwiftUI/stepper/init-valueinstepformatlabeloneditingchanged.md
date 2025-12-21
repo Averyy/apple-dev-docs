@@ -28,9 +28,9 @@ The example below shows a stepper that displays the effect of incrementing or de
 
 ```swift
 struct StepperView: View {
-    @State private var value = 0
-    let step = 5
-    let range = 1...50
+    @State private var value = 0.0
+    let step = 5.0
+    let range = 1.0...50.0
 
     var body: some View {
         Stepper(value: $value,

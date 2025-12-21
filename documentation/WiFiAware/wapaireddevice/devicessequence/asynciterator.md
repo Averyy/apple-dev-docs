@@ -6,8 +6,8 @@
 An iterator for the sequence of devices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ class AsyncIterator
 ### Throwing an error
 - [WAPairedDevice.DevicesSequence.AsyncIterator.Failure](wapaireddevice/devicessequence/asynciterator/failure.md)
   The type of error that the sequence can produce.
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](wapaireddevice/devicessequence/asynciterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
@@ -37,6 +35,8 @@ class AsyncIterator
 
 - [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](wapaireddevice/devicessequence/makeasynciterator.md)
   Makes an asynchronous iterator that provides successive device snapshots when the list of paired devices known to the app changes.
+- [WAPairedDevice.DevicesSequence.Element](wapaireddevice/devicessequence/element.md)
+  A dictionary holding a snapshot of currently paired devices accessible to your app.
 
 
 ---

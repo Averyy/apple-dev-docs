@@ -4,11 +4,11 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,8 +22,6 @@ struct DidEnterBackgroundMessage
 - [init(scene: UIScene)](uiscene/didenterbackgroundmessage/init(scene:).md)
 ### Instance Properties
 - [var scene: UIScene](uiscene/didenterbackgroundmessage/scene.md)
-### Type Methods
-- [static func makeNotification(UIScene.DidEnterBackgroundMessage) -> Notification](uiscene/didenterbackgroundmessage/makenotification(_:).md)
 
 ## Relationships
 

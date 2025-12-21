@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The format of the control points in the buffer.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var controlPointFormat: MTLAttributeFormat { get set }
 ```
+
+#### Discussion
+
+The default value is [`MTLAttributeFormat.float3`](mtlattributeformat/float3.md).
 
 
 ---

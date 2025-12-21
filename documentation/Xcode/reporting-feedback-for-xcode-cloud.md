@@ -6,7 +6,7 @@ Provide feedback on issues you encounter when building with Xcode Cloud.
 
 #### Overview
 
-You can file feedback about Xcode Cloud directly from a build in the Report Navigator. When you file feedback from a build, the system prepopulates the feedback form with build-specific context that Apple can use to triage a bug.
+You can file feedback about Xcode Cloud directly from a build in the Report navigator. When you file feedback from a build, the system prepopulates the feedback form with build-specific context that Apple can use to triage a bug.
 
 The prepopulated information includes details describing the build as well as logs and build artifacts that may provide clues about the causes of a bug.
 
@@ -16,7 +16,7 @@ The prepopulated information includes details describing the build as well as lo
 
 To report feedback that’s not related to a specific build, select Help > Provide Feedback in Xcode or launch the Feedback Assistant app. In cases where you need to report feedback that includes build-specific context:
 
-1. Navigate to the specific build number in the Report Navigator’s outline view.
+1. Navigate to the specific build number in the Report navigator’s outline view.
 2. Control-click on the build number to open a context menu.
 3. Choose Send Feedback.
 

@@ -21,11 +21,11 @@ func resolveCounters(_ sampleBuffer: any MTLCounterSampleBuffer, range: Range<In
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
-For an example of how and when to use this method, see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For an example of how and when to use this method, see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
 
 > **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 

@@ -26,8 +26,6 @@ var customMirror: Mirror { get }
   A text representation of the data frame.
 - [var debugDescription: String](dataframe/debugdescription.md)
   A text representation of the data frame suitable for debugging.
-- [func description(options: FormattingOptions) -> String](dataframe/description(options:).md)
-  Generates a text representation of the data frame type.
 
 
 ---

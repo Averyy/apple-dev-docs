@@ -62,6 +62,7 @@ struct Currency
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 ### Instance Methods
 - [func notation(FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/notation(_:).md)
+  Modifies the format style to use the specified notation.
 
 ## Relationships
 

@@ -6,10 +6,10 @@
 A physical site that uses or produces electricity at that location.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -20,29 +20,21 @@ struct EnergyVenue
 ## Topics
 
 ### Returning electricity sites
-- [static func venue(for: UUID) async -> EnergyVenue?](energyvenue/venue(for:).md)
-  Returns an electricity venue for the given venue identifier, if found.
-- [static func venue(matchingHomeUniqueIdentifier: UUID) async -> EnergyVenue?](energyvenue/venue(matchinghomeuniqueidentifier:).md)
+- [static func venue(for: UUID) async throws -> EnergyVenue](energyvenue/venue(for:).md)
+  Returns an electricity venue for the given venue identifier.
+- [static func venue(matchingHomeUniqueIdentifier: UUID) async throws -> EnergyVenue](energyvenue/venue(matchinghomeuniqueidentifier:).md)
   Returns an energy venue for the given HomeKit identifier.
-- [static func venues(near: CLLocation) async -> [EnergyVenue]](energyvenue/venues(near:).md)
-  Returns a list of electricity venues near the given coordinates.
 ### Submitting load events
 - [func submitEvents<Event>([Event]) async throws](energyvenue/submitevents(_:).md)
   Submits electrical load events to be used by EnergyKit to generate energy insights.
 ### Identifying the location
-- [let id: UUID](energyvenue/id-swift.property.md)
+- [let id: UUID](energyvenue/id.md)
   A unique identifier for the venue.
 - [let name: String](energyvenue/name.md)
   The name of the Home to which the venue corresponds.
-### Decoding
-- [init(from: any Decoder) throws](energyvenue/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](energyvenue/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [EnergyVenue.ID](energyvenue/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
+### Type Methods
+- [static func venues() async throws -> [EnergyVenue]](energyvenue/venues.md)
+  Returns a list of electricity venues.
 
 ## Relationships
 

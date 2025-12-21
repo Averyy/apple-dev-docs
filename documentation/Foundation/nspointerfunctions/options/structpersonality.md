@@ -32,16 +32,6 @@ static var structPersonality: NSPointerFunctions.Options { get }
   Use shifted pointer for the hash value and direct comparison to determine equality; use the `description` method for a description.
 - [static var opaquePersonality: NSPointerFunctions.Options](nspointerfunctions/options/opaquepersonality.md)
   Use shifted pointer for the hash value and direct comparison to determine equality.
-- [static var cStringPersonality: NSPointerFunctions.Options](nspointerfunctions/options/cstringpersonality.md)
-  Use a string hash and `strcmp`; C-string ‘`%s`’ style description.
-- [static var integerPersonality: NSPointerFunctions.Options](nspointerfunctions/options/integerpersonality.md)
-  Use unshifted value as hash and equality.
-- [static var objectPersonality: NSPointerFunctions.Options](nspointerfunctions/options/objectpersonality.md)
-  Use `hash` and `isEqual` methods for hashing and equality comparisons, use the `description` method for a description.
-- [static var objectPointerPersonality: NSPointerFunctions.Options](nspointerfunctions/options/objectpointerpersonality.md)
-  Use shifted pointer for the hash value and direct comparison to determine equality; use the `description` method for a description.
-- [static var opaquePersonality: NSPointerFunctions.Options](nspointerfunctions/options/opaquepersonality.md)
-  Use shifted pointer for the hash value and direct comparison to determine equality.
 - [let NSMapTableObjectPointerPersonality: NSPointerFunctions.Options](nsmaptableobjectpointerpersonality.md)
   Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
 

@@ -11,7 +11,7 @@ The opacity level of the overlay.
 ## Declaration
 
 ```swift
-attribute number opacity;
+opacity: number;
 ```
 
 #### Discussion

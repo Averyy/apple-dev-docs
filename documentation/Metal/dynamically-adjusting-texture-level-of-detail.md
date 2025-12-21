@@ -1,4 +1,4 @@
-# Dynamically Adjusting Texture Level of Detail
+# Dynamically adjusting texture level of detail
 
 **Framework**: Metal
 
@@ -10,17 +10,17 @@ While the most common use for mipmaps is to improve sampling quality and perform
 
 ##### Provide Data for Smaller Mipmaps
 
-Start by creating the textures, as described in [`Creating a Mipmapped Texture`](creating-a-mipmapped-texture.md). Remember that Metal allocates memory for all of the mipmaps when you create the texture. Instead of loading data for all mipmaps, pick a lower mipmap, and provide data for it and any mipmaps lower in the chain. For example, if you started at mipmap level 3, as shown in the figure below, you are loading only about 2% of the total texture data required for the entire mipmap chain.
+Start by creating the textures, as described in [`Creating a mipmapped texture`](creating-a-mipmapped-texture.md). Remember that Metal allocates memory for all of the mipmaps when you create the texture. Instead of loading data for all mipmaps, pick a lower mipmap, and provide data for it and any mipmaps lower in the chain. For example, if you started at mipmap level 3, as shown in the figure below, you are loading only about 2% of the total texture data required for the entire mipmap chain.
 
 ![A figure showing a chain of seven mipmaps. Only mipmaps 3 through 6 have image data.](https://docs-assets.developer.apple.com/published/dafb29f75ae2b8c6a374ac3dcac03377/media-3374146%402x.png)
 
 ##### Limit Access to Higher Mipmaps
 
-You need to keep track of the highest mipmap you’ve loaded and pass this information to your shader so that it samples only from mipmaps that contain data. You can do this by passing in an appropriately configured sampler, or, on some GPUs, by passing in the minimum level of detail (LOD) to your shader and using it as the minimum LOD when you sample the texture. See [`Control Mipmap Selection When You Sample the Texture`](restricting-access-to-specific-mipmaps#Control-Mipmap-Selection-When-You-Sample-the-Texture.md).
+You need to keep track of the highest mipmap you’ve loaded and pass this information to your shader so that it samples only from mipmaps that contain data. You can do this by passing in an appropriately configured sampler, or, on some GPUs, by passing in the minimum level of detail (LOD) to your shader and using it as the minimum LOD when you sample the texture. See [`Control mipmap selection when you sample the texture`](restricting-access-to-specific-mipmaps#Control-mipmap-selection-when-you-sample-the-texture.md).
 
 ##### Determine When Objects Get Closer to the Camera
 
-As the scene animates, some objects may get closer to the camera. Detect when this happens by asking the shader which mipmap it needs to access or by performing a calculation based on the rendered image size, as described in [`Predicting Which Mips the GPU Samples with Level-of-Detail Queries`](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md) and [`Using Function Specialization to Build Pipeline Variants`](using-function-specialization-to-build-pipeline-variants.md).
+As the scene animates, some objects may get closer to the camera. Detect when this happens by asking the shader which mipmap it needs to access or by performing a calculation based on the rendered image size, as described in [`Predicting which mips the GPU samples with level-of-detail queries`](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md) and [`Using function specialization to build pipeline variants`](using-function-specialization-to-build-pipeline-variants.md).
 
 ##### Update the Mipmaps
 
@@ -30,19 +30,19 @@ When it seems likely that an app needs more detailed textures, start preparing n
 
 ## See Also
 
-- [Improving Texture Sampling Quality and Performance with Mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
 
 

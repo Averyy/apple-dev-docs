@@ -3,15 +3,15 @@
 **Framework**: GameKit  
 **Kind**: init
 
-Initializes a game activity with definition.
+Creates a game activity with definition.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ init(definition activityDefinition: GKGameActivityDefinition)
 ## See Also
 
 - [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](gkgameactivity/start(definition:).md)
-  Initializes and starts a game activity with definition.
+  Creates and starts a game activity with a definition.
 - [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](gkgameactivity/start(definition:partycode:).md)
   Creates and starts a new game activity with a custom party code.
 

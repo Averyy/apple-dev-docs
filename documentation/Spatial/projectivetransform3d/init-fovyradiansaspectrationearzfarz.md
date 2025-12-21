@@ -22,6 +22,10 @@ init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)
 
 A projective transform with right-hand side perspective.
 
+#### Discussion
+
+Returns a projective transform with right-hand side perspective.
+
 ## Parameters
 
 - `fovyRadians`: The field of view angle on the @p y axis.

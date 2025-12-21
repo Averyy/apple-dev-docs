@@ -16,7 +16,7 @@ Returns the text between the two specified points in page space.
 ## Declaration
 
 ```swift
-func selection(from startPoint: CGPoint, to endPoint: CGPoint) -> PDFSelection?
+func selection(from startPoint: NSPoint, to endPoint: NSPoint) -> PDFSelection?
 ```
 
 #### Discussion

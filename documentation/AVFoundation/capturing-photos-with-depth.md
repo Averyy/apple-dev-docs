@@ -1,4 +1,4 @@
-# Capturing Photos with Depth
+# Capturing photos with depth
 
 **Framework**: AVFoundation
 
@@ -12,7 +12,7 @@ You can use a depth map together with a photo to create image-processing effects
 
 ![Figure showing how iOS creates a Portrait photo effect using a color camera image and a depth map](https://docs-assets.developer.apple.com/published/d06edb877980433bf589ec401cb91f66/media-2978410%402x.png)
 
-You can add depth capture to many of the other photography workflows covered in [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md) by adding the following steps.
+You can add depth capture to many of the other photography workflows covered in [`Capturing still and Live Photos`](capturing-still-and-live-photos.md) by adding the following steps.
 
 ##### Prepare for Depth Photo Capture
 
@@ -22,8 +22,8 @@ Capturing depth also requires an internal reconfiguration of the capture pipelin
 
 ```swift
 // Select a depth-capable capture device.
-guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera,
-    for: .video, position: .unspecified)
+guard let videoDevice = AVCaptureDevice.default(.builtInDualCamera,
+    for: .video, position: .back)
     else { fatalError("No dual camera.") }
 guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice),
     self.captureSession.canAddInput(videoDeviceInput)
@@ -97,15 +97,15 @@ captureSession.commitConfiguration()
 
 ## See Also
 
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
 - [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying Filters to a Capture Stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming Depth Data from the TrueDepth Camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing Live Video by Leveraging TrueDepth Camera Data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
 - [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.

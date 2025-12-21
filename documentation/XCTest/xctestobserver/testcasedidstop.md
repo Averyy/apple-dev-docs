@@ -5,9 +5,6 @@
 
 Notifies the observer when a test case stops.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

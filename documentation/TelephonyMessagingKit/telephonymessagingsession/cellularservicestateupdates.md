@@ -6,8 +6,8 @@
 An asynchronous sequence of cellular service state updates produced by this session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ An asynchronous sequence of cellular service state updates produced by this sess
 ```swift
 final var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, Never> { get }
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 #### Discussion
 

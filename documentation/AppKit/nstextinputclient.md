@@ -17,7 +17,6 @@ protocol NSTextInputClient
 ## Mentions
 
 - [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
 
 #### Overview
 

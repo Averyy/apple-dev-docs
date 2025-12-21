@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The AudioHardwareClock that is currently serving as the main time base of the device.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

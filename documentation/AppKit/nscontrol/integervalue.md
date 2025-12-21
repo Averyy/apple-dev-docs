@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The value of the receiver’s cell as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value.
+The value of the receiver’s cell as an integer value.
 
 **Availability**:
 - macOS ?+

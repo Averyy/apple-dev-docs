@@ -11,7 +11,7 @@ A Boolean value that determines whether the user location control is visible.
 ## Declaration
 
 ```swift
-attribute boolean showsUserLocationControl;
+showsUserLocationControl?: boolean;
 ```
 
 #### Discussion

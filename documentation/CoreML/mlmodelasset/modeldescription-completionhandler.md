@@ -32,6 +32,11 @@ let modelDescription = try await modelAsset.modelDescription()
 print(modelDescription)
 ```
 
+## See Also
+
+- [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(offunctionnamed:completionhandler:).md)
+  The model descripton for a specified function.
+
 
 ---
 

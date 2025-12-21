@@ -30,7 +30,7 @@ The value of this property doesn’t change during a process’s lifetime, so it
 
 ## See Also
 
-- [var accessibilityAssistiveAccessEnabled: Bool { get }](../SwiftUI/EnvironmentValues/accessibilityAssistiveAccessEnabled.md)
+- [var accessibilityAssistiveAccessEnabled: Bool](../SwiftUI/EnvironmentValues/accessibilityAssistiveAccessEnabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
 - [Assistive Access](assistive-access.md)
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.

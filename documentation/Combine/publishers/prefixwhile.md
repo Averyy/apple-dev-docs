@@ -22,24 +22,19 @@ struct PrefixWhile<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Prefix While Publisher
+### Creating a prefix while publisher
 - [init(upstream: Upstream, predicate: (Publishers.PrefixWhile<Upstream>.Output) -> Bool)](publishers/prefixwhile/init(upstream:predicate:).md)
   Creates a publisher that republishes elements while a predicate closure indicates publishing should continue.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.PrefixWhile.Output](publishers/prefixwhile/output.md)
   The kind of values published by this publisher.
 - [Publishers.PrefixWhile.Failure](publishers/prefixwhile/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/prefixwhile/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.PrefixWhile<Upstream>.Output) -> Bool](publishers/prefixwhile/predicate.md)
   The closure that determines whether publishing should continue.
-### Applying Operators
-- [Publisher Operators](publishers-prefixwhile-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/prefixwhile/publisher-implementations.md)
 
 ## Relationships
 

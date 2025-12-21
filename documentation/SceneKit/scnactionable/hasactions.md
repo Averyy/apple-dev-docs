@@ -23,7 +23,7 @@ var hasActions: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the node has any executing actions; otherwise the value is [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the node has any executing actions; otherwise the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

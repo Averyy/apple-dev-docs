@@ -5,11 +5,11 @@
 **Required**: Yes
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,6 +19,8 @@ associatedtype Result : SpeechModuleResult, Sendable where Self.Result == Self.R
 
 ## See Also
 
+- [var results: Self.Results](speechmodule/results-swift.property.md)
+  An asynchronous sequence containing this module’s analysis results. Results are added to the sequence as they are created.
 - [associatedtype Results : Sendable, AsyncSequence](speechmodule/results-swift.associatedtype.md)
 
 

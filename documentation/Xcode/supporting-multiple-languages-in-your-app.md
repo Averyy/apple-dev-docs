@@ -51,6 +51,8 @@ After you localize your app’s assets, you need to test the translations. Run y
 
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
   Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+- [Using generated localizable symbols in your code](using-generated-localizable-symbols-in-your-code.md)
+  Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 - [Localizing Landmarks](localizing-landmarks.md)
   Add localizations to the Landmarks sample code project.
 

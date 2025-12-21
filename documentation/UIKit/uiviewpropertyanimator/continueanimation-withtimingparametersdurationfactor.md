@@ -21,7 +21,7 @@ func continueAnimation(withTimingParameters parameters: (any UITimingCurveProvid
 
 #### Discussion
 
-This method overrides the timing and duration parameters for the current animations. When calling this method, the animator must be active and currently paused. It’s a programmer error to call this method when the animator is inactive, running, or its [`isInterruptible`](uiviewpropertyanimator/isinterruptible.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false).
+This method overrides the timing and duration parameters for the current animations. When calling this method, the animator must be active and currently paused. It’s a programmer error to call this method when the animator is inactive, running, or its [`isInterruptible`](uiviewpropertyanimator/isinterruptible.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This method overrides the original timing and duration values only until the current animations finish. The original timing and duration values are restored when the animator transitions back to the inactive state.
 

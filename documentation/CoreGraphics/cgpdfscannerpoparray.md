@@ -22,7 +22,7 @@ func CGPDFScannerPopArray(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the array object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the array object is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

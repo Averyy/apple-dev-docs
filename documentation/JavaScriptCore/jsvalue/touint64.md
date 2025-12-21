@@ -19,6 +19,8 @@ func toUInt64() -> UInt64
 
 #### Discussion
 
+Convert a JSValue to a uint64_t.
+
 The JSValue is converted to an integer according to the rules specified by the JavaScript language. If the value is a BigInt, then the value is truncated to a uint64_t.
 
 

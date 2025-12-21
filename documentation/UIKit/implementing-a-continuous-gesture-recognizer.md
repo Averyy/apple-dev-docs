@@ -114,7 +114,7 @@ override func reset() {
 
 - [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
   Learn about the states and transitions of the state machine that underlies gesture recognizers.
-- [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
   If your gesture involves a specific pattern of events, consider implementing a discrete gesture recognizer for it.
 
 

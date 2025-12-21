@@ -77,7 +77,7 @@ There is no direct relationship between the app’s state and the interface’s 
 | Situation | App state | Interface state |
 | --- | --- | --- |
 | Running on screen | Active | Active |
-| Running in the dock | Inactive, and the extension’s [`isApplicationRunningInDock`](wkextension/isapplicationrunningindock.md) property is [`true`](https://developer.apple.com/documentation/swift/true) | Active, shown in the dock |
+| Running in the dock | Inactive, and the extension’s [`isApplicationRunningInDock`](wkextension/isapplicationrunningindock.md) property is [`true`](https://developer.apple.com/documentation/Swift/true) | Active, shown in the dock |
 | Running as the frontmost app | Inactive | Inactive |
 | Displaying a dynamic notification interface | Inactive or background | Notification interface is active |
 | Processing a snapshot background task | Background | Active, but not shown on screen |

@@ -16,7 +16,7 @@ The fill color to use for the path.
 ## Declaration
 
 ```swift
-var fillColor: UIColor? { get set }
+var fillColor: NSColor? { get set }
 ```
 
 ## See Also

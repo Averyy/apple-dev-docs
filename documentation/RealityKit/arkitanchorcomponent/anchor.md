@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+represents the backing anchor on visionOS.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

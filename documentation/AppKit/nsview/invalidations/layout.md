@@ -26,6 +26,9 @@ Use [`layout`](nsviewinvalidating/layout.md) to create an instance of this type.
   Perform layout in concert with the constraint-based layout system.
 - [init()](nsview/invalidations/layout/init.md)
   Creates the invalidation type.
+### Invalidating the layout
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

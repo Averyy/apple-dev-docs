@@ -1,9 +1,9 @@
-# !=(_:_:)
+# <(_:_:)
 
 **Framework**: SwiftData  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
 **Availability**:
 - iOS 17.0+
@@ -13,18 +13,17 @@ Returns a Boolean value indicating whether two values are not equal.
 - tvOS 17.0+
 - visionOS 1.0+
 - watchOS 10.0+
+- Swift 5.9+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func < (lhs: Schema.Version, rhs: Schema.Version) -> Bool
 ```
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+The precedence is determined according to rules described in the [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org) standard, paragraph 11.
 
 ## Parameters
 
@@ -34,4 +33,4 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/schema/version-swift.struct/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/schema/version-swift.struct/_(_:_:))*

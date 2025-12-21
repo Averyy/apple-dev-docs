@@ -63,6 +63,10 @@ The Platform App Installs report includes install data from the App Store, TestF
   Analyze how often people open your App Store apps, and the average session duration.
 - [CarPlay App Usage](carplay-app-usage.md)
   Review how people use CarPlay in your app.
+- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+  Analyze how often people run shortcuts with your app’s actions.
+- [Shortcut App Usage](shortcut-app-usage.md)
+  Analyze how often people use a shortcut action in your app.
 
 
 ---

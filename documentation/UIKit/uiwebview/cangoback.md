@@ -18,7 +18,7 @@ var canGoBack: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), able to move backward; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), able to move backward; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

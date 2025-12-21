@@ -22,7 +22,7 @@ var minimumSignificantDigits: Int { get set }
 
 #### Discussion
 
-You must set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in order for this property to affect formatting behavior. By default, the minimum number of significant digits is 1.
+You must set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) in order for this property to affect formatting behavior. By default, the minimum number of significant digits is 1.
 
 The following code demonstrates the effect of setting [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) when formatting various numbers:
 

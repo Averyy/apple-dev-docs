@@ -17,13 +17,12 @@ A Boolean value that indicates whether the audio should play in a loop when the 
 ## Declaration
 
 ```swift
-@MainActor
 var autoplayLooped: Bool { get set }
 ```
 
 #### Discussion
 
-If the property value is [`true`](https://developer.apple.com/documentation/swift/true), then the audio starts playing as soon as the node is added to the scene, and repeats after it completes. If [`false`](https://developer.apple.com/documentation/swift/false), then the audio node’s content never plays automatically. It must be explicitly scheduled using the scene’s audio engine. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the property value is [`true`](https://developer.apple.com/documentation/Swift/true), then the audio starts playing as soon as the node is added to the scene, and repeats after it completes. If [`false`](https://developer.apple.com/documentation/Swift/false), then the audio node’s content never plays automatically. It must be explicitly scheduled using the scene’s audio engine. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

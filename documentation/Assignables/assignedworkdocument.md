@@ -94,8 +94,6 @@ You can create as many of these objects as you have memory for. This type assume
 - [static func == (AssignedWorkDocument, AssignedWorkDocument) -> Bool](assignedworkdocument/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 ### Hashing the work document
-- [var hashValue: Int](assignedworkdocument/hashvalue.md)
-  The hash value.
 - [func hash(into: inout Hasher)](assignedworkdocument/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Accessing work documents
@@ -104,7 +102,6 @@ You can create as many of these objects as you have memory for. This type assume
 - [subscript(AssignedWorkDocument.ScoreAnnotation.ID) -> AssignedWorkDocument.ScoreAnnotation?](assignedworkdocument/subscript(_:)-5h89c.md)
   Access the score annotation that the identifier refers to, if any.
 ### Default Implementations
-- [Equatable Implementations](assignedworkdocument/equatable-implementations.md)
 - [MergeableDocument Implementations](assignedworkdocument/mergeabledocument-implementations.md)
 
 ## Relationships

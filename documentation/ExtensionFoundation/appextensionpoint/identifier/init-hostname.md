@@ -3,22 +3,31 @@
 **Framework**: ExtensionFoundation  
 **Kind**: init
 
-Create an Identifier with a host bundle identifier and extension point name
+Creates an identifier for binding to a host app’s extension point.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 init(host bundleIdentifier: StaticString, name: StaticString)
 ```
+
+## Parameters
+
+- `name`: The name of the host app’s extension point. This name must match the value   in the   portion of an extension point definition.
+
+## See Also
+
+- [init(StaticString)](appextensionpoint/identifier/init(_:).md)
+  Creates an identifier for binding to a system-defined extension point.
 
 
 ---

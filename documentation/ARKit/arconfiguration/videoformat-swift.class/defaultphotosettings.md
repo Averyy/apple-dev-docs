@@ -6,9 +6,9 @@
 The default AVCapturePhotoSettings object that ARKit uses when capturing a high resolution frame using this video format.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

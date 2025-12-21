@@ -10,7 +10,7 @@ An  is a machine learning model that identifies a person’s body movements in a
 
 Create an action classifier with Create ML by gathering example videos of individuals performing each action you want the classifier to recognize and identify. For example, to train an exercise action classifier, gather videos of individuals performing various exercises, such as jumping jacks, squats, and lunges.
 
-![Flow diagram of two stacks of video files labeled squats and lunges flowing into Create ML, which then produces a Core ML model file named “Action Classifier”.](https://docs-assets.developer.apple.com/published/5f62002f76ff0d8afd66ed9b60af059c/creating-an-action-classifier-model-1%402x.png)
+![Flow diagram of two stacks of video files labeled squats and lunges flowing into Create ML, which then produces a Core ML model file named “Action Classifier”.](https://docs-assets.developer.apple.com/published/a2a2cb9e649e38d60cbf42c3d0790baf/creating-an-action-classifier-model-1%402x.png)
 
 Create ML uses [`Vision`](https://developer.apple.com/documentation/Vision) during training to find significant points on a person’s body, called , in each frame of a video. Action classifiers learn to recognize the movement patterns of these points over time. For more information about how to use Vision to locate body landmarks, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
 
@@ -18,7 +18,7 @@ The Create ML developer tool helps you train, assess, and preview an action clas
 
 At runtime, your app uses the action classifier to identify a person’s action by analyzing a series of video frames from a camera or file.
 
-![Flow diagram that starts with a person performing jumping jacks in front of a camera, then through the Vision framework and into an action classifier, which produces the prediction label, jumping jacks.](https://docs-assets.developer.apple.com/published/d974efe940e63662a713fb837a7f83c2/creating-an-action-classifier-model-2%402x.png)
+![Flow diagram that starts with a person performing jumping jacks in front of a camera, then through the Vision framework and into an action classifier, which produces the prediction label, jumping jacks.](https://docs-assets.developer.apple.com/published/152f89bc0bbb977a0c9ed40469167c6c/creating-an-action-classifier-model-2%402x.png)
 
 Training an action classifier with the Create ML developer tool follows the same general workflow as other model types, such as an image classifier (see [`Creating an Image Classifier Model`](creating-an-image-classifier-model.md)). However, the workflow for an action classifier has some important differences, including:
 
@@ -54,7 +54,7 @@ The Create ML developer tool supports several types of data sources, each with i
 - Single-action video files sorted into labeled folders
 - Single- or multiple-action video files and one annotation file
 
-![Flow diagram that shows two file-arrangement alternatives. On the left, a parent folder named Training Data 1 contains three labeled folders named, Squats, Lunges, and Jumping Jacks. Next to each labeled folder is a stack of video file icons with an arrow pointing toward its corresponding labeled directory. On the right, a parent folder named Training Data 2 contains 5 files named: annotations.csv, Squats1.mov, Squats2.mov, Jumping Jacks.mov, and Exercise montage 1.mov.](https://docs-assets.developer.apple.com/published/3318893c1d27da226d0e6a006fefa1b8/creating-an-action-classifier-model-3%402x.png)
+![Flow diagram that shows two file-arrangement alternatives. On the left, a parent folder named Training Data 1 contains three labeled folders named, Squats, Lunges, and Jumping Jacks. Next to each labeled folder is a stack of video file icons with an arrow pointing toward its corresponding labeled directory. On the right, a parent folder named Training Data 2 contains 5 files named: annotations.csv, Squats1.mov, Squats2.mov, Jumping Jacks.mov, and Exercise montage 1.mov.](https://docs-assets.developer.apple.com/published/c049c29698f004a1ed179f0358ca3ab7/creating-an-action-classifier-model-3%402x.png)
 
 See [`Building an Action Classifier Data Source`](building-an-action-classifier-data-source.md) for detailed instructions on organizing your video files into one of these arrangements.
 
@@ -127,7 +127,7 @@ To save an action classifier as a Core ML file, select the Output tab and click 
 
 For an example app that integrates and applies an action classifier, see the related sample code projects:
 
-- [`Detecting Human Actions in a Live Video Feed`](detecting_human_actions_in_a_live_video_feed.md)
+- [`Detecting human actions in a live video feed`](detecting-human-actions-in-a-live-video-feed.md)
 - [`Building a feature-rich app for sports analysis`](https://developer.apple.com/documentation/Vision/building-a-feature-rich-app-for-sports-analysis)
 
 ## Topics
@@ -140,7 +140,7 @@ For an example app that integrates and applies an action classifier, see the rel
 
 ## See Also
 
-- [Detecting Human Actions in a Live Video Feed](detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [struct MLActionClassifier](mlactionclassifier.md)
   A model you train with videos to classify a person’s body movements.

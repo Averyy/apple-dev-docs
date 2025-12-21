@@ -17,7 +17,7 @@ func enterFullScreenMode(_ screen: NSScreen, withOptions options: [NSView.FullSc
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view was able to enter full screen mode, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view was able to enter full screen mode, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

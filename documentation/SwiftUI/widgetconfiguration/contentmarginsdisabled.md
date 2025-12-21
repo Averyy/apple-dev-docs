@@ -10,7 +10,7 @@ Disable default content margins.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration
@@ -26,7 +26,7 @@ A modified widget configuration that doesn’t use default content margins.
 
 #### Discussion
 
-When you disable content margins for a widget, the system doesn’t automatically add margins around the widget’s content, and you are responsible for specifying margins and padding around your widget content for each context. To specify custom margins, use [`widgetContentMargins`](EnvironmentValues/widgetContentMargins.md) in combination with doc://com.apple.documentation/swiftui/View/padding(_) to selectively or partially apply the default content margins.
+When you disable content margins for a widget, the system doesn’t automatically add margins around the widget’s content, and you are responsible for specifying margins and padding around your widget content for each context. To specify custom margins, use [`widgetContentMargins`](EnvironmentValues/widgetContentMargins.md) in combination with [`padding(_:)`](View/padding(_:).md) to selectively or partially apply the default content margins.
 
 This modifier has no effect on operation system versions prior to iOS 17, watchOS 10, or macOS 14.
 

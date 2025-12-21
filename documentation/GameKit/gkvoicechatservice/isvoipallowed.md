@@ -17,7 +17,7 @@ class func isVoIPAllowed() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if voice chat is available to the application.
+[`true`](https://developer.apple.com/documentation/Swift/true) if voice chat is available to the application.
 
 #### Discussion
 

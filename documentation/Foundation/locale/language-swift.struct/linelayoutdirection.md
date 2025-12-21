@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Ordering of lines within a page. For example, top-to-bottom for English; right-to-left for Mongolian in the Mongolian Script
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -17,6 +19,10 @@
 ```swift
 var lineLayoutDirection: Locale.LanguageDirection { get }
 ```
+
+#### Discussion
+
+> **Note**: See also `characterDirection`.
 
 
 ---

@@ -16,7 +16,7 @@ var prefersColorMatch: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the image attempts to match the color capabilities of the rendering device first. When it is [`false`](https://developer.apple.com/documentation/swift/false), the image prefers resolution-matching first. The default value is [`true`](https://developer.apple.com/documentation/swift/true). Both color-matching and resolution-matching may influence the choice of an image representation. You use this method to choose which technique should be used first during the selection process.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the image attempts to match the color capabilities of the rendering device first. When it is [`false`](https://developer.apple.com/documentation/Swift/false), the image prefers resolution-matching first. The default value is [`true`](https://developer.apple.com/documentation/Swift/true). Both color-matching and resolution-matching may influence the choice of an image representation. You use this method to choose which technique should be used first during the selection process.
 
 ## See Also
 

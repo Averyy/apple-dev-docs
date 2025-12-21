@@ -19,7 +19,7 @@ var entersReaderIfAvailable: Bool { get set }
 
 #### Discussion
 
-Set the value to [`true`](https://developer.apple.com/documentation/swift/true) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set this configuration property instead of initializing a view controller with [`init(url:entersReaderIfAvailable:)`](sfsafariviewcontroller/init(url:entersreaderifavailable:).md).
+Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Set this configuration property instead of initializing a view controller with [`init(url:entersReaderIfAvailable:)`](sfsafariviewcontroller/init(url:entersreaderifavailable:).md).
 
 ## See Also
 

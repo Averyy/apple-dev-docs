@@ -6,7 +6,7 @@
 Returns the parent space of this ARKit coordinate space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

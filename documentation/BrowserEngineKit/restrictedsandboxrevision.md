@@ -25,28 +25,8 @@ Design your browser to support the latest revision to the restricted sandbox in 
 ### Sandbox restriction revisions
 - [RestrictedSandboxRevision.revision1](restrictedsandboxrevision/revision1.md)
   Revision 1 of the restricted sandbox rules.
-### Operators
-- [static func == (RestrictedSandboxRevision, RestrictedSandboxRevision) -> Bool](restrictedsandboxrevision/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func < (RestrictedSandboxRevision, RestrictedSandboxRevision) -> Bool](restrictedsandboxrevision/_(_:_:).md)
-  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 ### Enumeration Cases
 - [RestrictedSandboxRevision.revision2](restrictedsandboxrevision/revision2.md)
-### Instance Properties
-- [var hashValue: Int](restrictedsandboxrevision/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](restrictedsandboxrevision/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [RestrictedSandboxRevision.AllCases](restrictedsandboxrevision/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Type Properties
-- [static var allCases: [RestrictedSandboxRevision]](restrictedsandboxrevision/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Comparable Implementations](restrictedsandboxrevision/comparable-implementations.md)
-- [Equatable Implementations](restrictedsandboxrevision/equatable-implementations.md)
 
 ## Relationships
 

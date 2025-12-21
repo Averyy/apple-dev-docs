@@ -20,9 +20,9 @@ var iconMode: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to generate a thumbnail that’s appropriate to use as a file icon. Depending on the platform, the thumbnail may be embedded in a frame, show a curled corner, or display a background or drop shadow. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), [`QLThumbnailGenerator`](qlthumbnailgenerator.md) generates a raw, undecorated thumbnail.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to generate a thumbnail that’s appropriate to use as a file icon. Depending on the platform, the thumbnail may be embedded in a frame, show a curled corner, or display a background or drop shadow. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), [`QLThumbnailGenerator`](qlthumbnailgenerator.md) generates a raw, undecorated thumbnail.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

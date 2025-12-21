@@ -17,7 +17,7 @@ func commitEditing(withDelegate delegate: Any?, didCommit didCommitSelector: Sel
 
 #### Discussion
 
-The receiver must have been registered as the editor of an object using [`objectDidBeginEditing:`](https://developer.apple.com/documentation/objectivec/nsobject/1458092-objectdidbeginediting), and has not yet been unregistered by a subsequent invocation of [`objectDidEndEditing:`](https://developer.apple.com/documentation/objectivec/nsobject/1458187-objectdidendediting). When the committing has either succeeded or failed, send the `delegate` the message specified by `didCommitSelector`.
+The receiver must have been registered as the editor of an object using [`objectDidBeginEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/objectDidBeginEditing:), and has not yet been unregistered by a subsequent invocation of [`objectDidEndEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/objectDidEndEditing:). When the committing has either succeeded or failed, send the `delegate` the message specified by `didCommitSelector`.
 
 The `didCommitSelector` method must have the following method signature:.
 

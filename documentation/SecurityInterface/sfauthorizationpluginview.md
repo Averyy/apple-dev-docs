@@ -18,7 +18,7 @@ class SFAuthorizationPluginView
 
 If you’re developing an authorization plug-in, you can subclass the [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) class to create views that provide a custom user interface for your plug-in. By subclassing the [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) class, you avoid changing or duplicating the Apple-provided authentication or login window dialogs to display your custom view.
 
-To instantiate your [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) subclass, you need the callbacks structure containing entry points to the Security Server that you receive in your plug-in’s [`AuthorizationPluginCreate`](https://developer.apple.com/documentation/security/1543160-authorizationplugincreate) function and the authorization engine handle you receive in your plug-in’s [`MechanismCreate`](https://developer.apple.com/documentation/security/authorizationplugininterface/1543181-mechanismcreate) function.
+To instantiate your [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) subclass, you need the callbacks structure containing entry points to the Security Server that you receive in your plug-in’s [`AuthorizationPluginCreate`](https://developer.apple.com/documentation/Security/AuthorizationPluginCreate) function and the authorization engine handle you receive in your plug-in’s [`MechanismCreate`](https://developer.apple.com/documentation/Security/AuthorizationPluginInterface/MechanismCreate) function.
 
 Your custom subclass of [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) must override the following methods:
 

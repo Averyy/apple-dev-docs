@@ -11,12 +11,12 @@ Common names of the area in which the place resides.
 ## Declaration
 
 ```swift
-attribute string[]? areasOfInterest;
+areasOfInterest?: string[];
 ```
 
 #### Discussion
 
-For example, the [`areasOfInterest`](place/areasofinterest.md) for the Golden Gate Park are `[”Lindley Meadow”, “Golden Gate Park”]`.
+For example, the [`areasOfInterest`](place/areasofinterest.md) for a specific location in Golden Gate Park in San Francisco, California, are `["Lindley Meadow", "Golden Gate Park"]`.
 
 ## See Also
 

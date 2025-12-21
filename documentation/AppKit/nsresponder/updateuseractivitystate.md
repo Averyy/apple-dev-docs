@@ -17,7 +17,7 @@ func updateUserActivityState(_ userActivity: NSUserActivity)
 
 #### Discussion
 
-Subclasses override this method to update the state of the supplied `userActivity`. Add state representing the user’s activity into `userActivity` using its [`addUserInfoEntries(from:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/addUserInfoEntries(from:)) method. When the state is dirty, set the [`needsSave`](https://developer.apple.com/documentation/Foundation/NSUserActivity/needsSave) property to [`true`](https://developer.apple.com/documentation/swift/true).
+Subclasses override this method to update the state of the supplied `userActivity`. Add state representing the user’s activity into `userActivity` using its [`addUserInfoEntries(from:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/addUserInfoEntries(from:)) method. When the state is dirty, set the [`needsSave`](https://developer.apple.com/documentation/Foundation/NSUserActivity/needsSave) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 When an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object managed by AppKit is updated, an empty `userInfo` dictionary is given to the user activity, and all of the objects associated with the user activity are sent an [`NSResponder`](nsresponder.md) message.
 

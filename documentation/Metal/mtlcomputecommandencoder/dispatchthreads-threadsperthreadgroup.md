@@ -22,7 +22,7 @@ func dispatchThreads(_ threadsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)
 
 ## Mentions
 
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Calculating threadgroup and grid sizes](calculating-threadgroup-and-grid-sizes.md)
 
 #### Discussion
 

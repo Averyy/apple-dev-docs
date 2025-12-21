@@ -26,12 +26,12 @@ protocol AppIntent : PersistentlyIdentifiable, _SupportsAppDependencies, Sendabl
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
 
 #### Overview
 
-To expose your app’s functionality to system experiences like Siri or the Shortcuts app, and to support interactivity in widgets, you need to implement the `AppIntent` protocol. Use it to provide phrases that can trigger the functionality, describe the needed data for the functionality you make available, and implement the method that performs the functionality.
+To expose your app’s functionality to system experiences like Siri or the Shortcuts app, and to support interactivity in widgets, you need to implement the `AppIntent` protocol. Use it to provide phrases that can launch the functionality, describe the needed data for the functionality you make available, and implement the method that performs the functionality.
 
 The system instantiates an app intent you create parameter-less using the [`init()`](appintent/init().md) initializer whenever a person invokes it through a system service like Siri, Shortcuts, and so on. If available, the system sets parameters based on user input or other available sources. With set parameters, the system attempts to resolve them in the order of their declaration in the `AppIntent` body. After it resolves all parameters, the system calls [`perform()`](appintent/perform().md) to perform the app intent with its configured parameters. Note that the system retains the app intent and its output only for the duration of the invocation.
 

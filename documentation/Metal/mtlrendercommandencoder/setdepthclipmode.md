@@ -36,6 +36,8 @@ The render pass’s default clip mode is [`MTLDepthClipMode.clip`](mtldepthclipm
   Configures the combined depth and stencil state.
 - [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtlrendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
   Configures the adjustments a render pass applies to depth values from fragment functions by a scaling factor and bias.
+- [func setDepthTestBounds(ClosedRange<Float>)](mtlrendercommandencoder/setdepthtestbounds(_:).md)
+  Configures the range for depth bounds testing.
 - [func setStencilReferenceValue(UInt32)](mtlrendercommandencoder/setstencilreferencevalue(_:).md)
   Configures the same comparison value for front- and back-facing primitives.
 - [func setStencilReferenceValues(front: UInt32, back: UInt32)](mtlrendercommandencoder/setstencilreferencevalues(front:back:).md)

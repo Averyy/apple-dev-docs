@@ -62,12 +62,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static var wide: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/wide.md)
   The full representation of a month.
 ### Comparing a Month
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

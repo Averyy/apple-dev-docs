@@ -12,7 +12,7 @@ A Boolean value indicating whether your app can access information about the con
 
 #### Discussion
 
-This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/systemconfiguration/1614126-cncopycurrentnetworkinfo) function to obtain information about the current Wi-Fi network.
+This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/SystemConfiguration/CNCopyCurrentNetworkInfo) function to obtain information about the current Wi-Fi network.
 
 To add this entitlement to your app, enable the Access WiFi Information capability in Xcode.
 
@@ -26,8 +26,12 @@ To add this entitlement to your app, enable the Access WiFi Information capabili
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 - [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
   An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
+- [ISO18092 system codes for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+  A list of FeliCa system codes that the app supports.
 - [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [ISO7816 application identifiers for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+  A list of application identifiers that the app supports.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
 - [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)

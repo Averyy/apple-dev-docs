@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to be connected to internet
+The person needs to be connected to the internet.
 
 **Availability**:
 - iOS 18.0+

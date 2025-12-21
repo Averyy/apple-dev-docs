@@ -5,9 +5,6 @@
 
 An atom that specifies the duration of a tween operation.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 When a QuickTime movie includes a tween track, the time units for the duration are those of the tween track. If a tween component is used outside of a movie, the application using the tween data determines how the duration value and values returned by the component are interpreted.

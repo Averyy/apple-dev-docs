@@ -17,7 +17,7 @@ var showsToolbarButton: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the standard toolbar button is currently displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). When clicked, the toolbar control button shows or hides a window’s toolbar. The toolbar control button appears in a window’s title bar. If the window does not have a toolbar, this property has no effect.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the standard toolbar button is currently displayed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). When clicked, the toolbar control button shows or hides a window’s toolbar. The toolbar control button appears in a window’s title bar. If the window does not have a toolbar, this property has no effect.
 
 ## See Also
 

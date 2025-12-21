@@ -26,12 +26,12 @@ You typically use this class to save a low-level representation of a composition
 
 ## Topics
 
-### Creating a Segment
+### Creating a segment
 - [init(timeRange: CMTimeRange)](avcompositiontracksegment/init(timerange:).md)
   Creates an object that presents an empty composition track segment.
 - [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:).md)
   Creates an object that presents a segment of a media file that the specified URL references.
-### Accessing Segment Properties
+### Accessing segment properties
 - [var sourceURL: URL?](avcompositiontracksegment/sourceurl.md)
   A URL of the container file whose media this track segment presents.
 - [var sourceTrackID: CMPersistentTrackID](avcompositiontracksegment/sourcetrackid.md)

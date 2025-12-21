@@ -16,7 +16,7 @@ func drawRepresentation(_ imageRep: NSImageRep, in rect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image was successfully drawn; otherwise, returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

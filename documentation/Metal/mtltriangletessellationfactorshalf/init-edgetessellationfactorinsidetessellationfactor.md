@@ -17,10 +17,6 @@
 init(edgeTessellationFactor: (UInt16, UInt16, UInt16), insideTessellationFactor: UInt16)
 ```
 
-## See Also
-
-- [init()](mtltriangletessellationfactorshalf/init.md)
-
 
 ---
 

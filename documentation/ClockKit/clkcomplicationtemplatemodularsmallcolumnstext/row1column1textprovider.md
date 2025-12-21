@@ -17,7 +17,7 @@ var row1Column1TextProvider: CLKTextProvider { get set }
 
 #### Discussion
 
-When the [`highlightColumn2`](clkcomplicationtemplatemodularsmallcolumnstext/highlightcolumn2.md) property is [`false`](https://developer.apple.com/documentation/swift/false), a tint color is applied to this text. In multicolor environments, the text provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
+When the [`highlightColumn2`](clkcomplicationtemplatemodularsmallcolumnstext/highlightcolumn2.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), a tint color is applied to this text. In multicolor environments, the text provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
 
 ## See Also
 

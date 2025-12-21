@@ -6,7 +6,7 @@
 Init with label (required by RawRepresentable).
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

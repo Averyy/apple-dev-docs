@@ -13,7 +13,6 @@ A simd three-element vector that contains the x-, y-, and z-coordinate values.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

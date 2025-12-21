@@ -13,7 +13,6 @@ Applies an activation function on the specified axes.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

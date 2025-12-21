@@ -6,7 +6,7 @@
 The framework is currently tracking both the anchor’s position and its orientation.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

@@ -24,9 +24,9 @@ var isHittable: Bool { get }
 
 #### Discussion
 
-[`isHittable`](xcuielement/ishittable.md) returns [`true`](https://developer.apple.com/documentation/swift/true) if the element exists and can be clicked, tapped, or pressed at its current location. It returns [`false`](https://developer.apple.com/documentation/swift/false) if the element doesn’t exist, is offscreen, or is covered by another element.
+[`isHittable`](xcuielement/ishittable.md) returns [`true`](https://developer.apple.com/documentation/Swift/true) if the element exists and can be clicked, tapped, or pressed at its current location. It returns [`false`](https://developer.apple.com/documentation/Swift/false) if the element doesn’t exist, is offscreen, or is covered by another element.
 
-> **Note**:  [`isHittable`](xcuielement/ishittable.md) only returns [`true`](https://developer.apple.com/documentation/swift/true) if the element is already visible and hittable onscreen. It returns [`false`](https://developer.apple.com/documentation/swift/false) for an offscreen element in a scrollable view, even if the element can be scrolled into a hittable position by calling [`click()`](xcuielement/click().md), [`tap()`](xcuielement/tap().md), or another hit-point-related interaction method.
+> **Note**:  [`isHittable`](xcuielement/ishittable.md) only returns [`true`](https://developer.apple.com/documentation/Swift/true) if the element is already visible and hittable onscreen. It returns [`false`](https://developer.apple.com/documentation/Swift/false) for an offscreen element in a scrollable view, even if the element can be scrolled into a hittable position by calling [`click()`](xcuielement/click().md), [`tap()`](xcuielement/tap().md), or another hit-point-related interaction method.
 
 ## See Also
 

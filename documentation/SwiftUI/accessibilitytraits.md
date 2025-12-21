@@ -57,7 +57,7 @@ struct AccessibilityTraits
   The accessibility element frequently updates its label or value.
 ### Type Properties
 - [static let isTabBar: AccessibilityTraits](accessibilitytraits/istabbar.md)
-  The accessibility element is a tab bar
+  The accessibility element is a tab bar.
 
 ## Relationships
 

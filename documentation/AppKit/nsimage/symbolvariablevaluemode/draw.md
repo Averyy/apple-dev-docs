@@ -6,7 +6,7 @@
 The “draw” variable value mode. Changes the drawn length of each variable layer to either based on how its range relates to the current value.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

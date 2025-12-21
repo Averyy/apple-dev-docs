@@ -8,7 +8,6 @@ A request that produces a matte image for a person it finds in the input image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,22 +27,6 @@ Perform this request to detect and generate an image mask for a person in an ima
 ### Creating a request
 - [init(GeneratePersonSegmentationRequest.Revision?, frameAnalysisSpacing: CMTime?)](generatepersonsegmentationrequest/init(_:frameanalysisspacing:).md)
   Creates a person-segmentation request.
-### Getting the revision
-- [let revision: GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [GeneratePersonSegmentationRequest.Revision]](generatepersonsegmentationrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
-  A value that indicates how the request balances accuracy and performance.
-- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
-  Constants that define the levels of quality for a person-segmentation request.
-- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
-  The desired pixel format of the observation.
-- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
-  The collection of supported pixel format types.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -57,8 +40,25 @@ Perform this request to detect and generate an image mask for a person in an ima
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct PixelBufferObservation](pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
+### Configuring a request
+- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
+  A value that indicates how the request balances accuracy and performance.
+- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
+  Constants that define the levels of quality for a person-segmentation request.
+- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
+  The desired pixel format of the observation.
+- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
+  The collection of supported pixel format types.
+### Getting the revision
+- [let revision: GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [GeneratePersonSegmentationRequest.Revision]](generatepersonsegmentationrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -74,12 +74,10 @@ Perform this request to detect and generate an image mask for a person in an ima
 
 ## See Also
 
+- [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
+  A request that generates an instance mask of noticeable objects to separate from the background.
 - [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
   A request that produces a mask of individual people it finds in the input image.
-- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
-  A request that detects rectangular regions that contain text in the input image.
-- [protocol StatefulRequest](statefulrequest.md)
-  The protocol for a type that builds evidence of a condition over time.
 
 
 ---

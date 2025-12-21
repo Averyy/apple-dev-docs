@@ -21,9 +21,9 @@ var automaticallyUpdatesContentConfiguration: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the cell automatically calls [`updated(for:)`](uicontentconfiguration-9eib5/updated(for:).md) on its [`contentConfiguration`](uitableviewheaderfooterview/contentconfiguration-6b4eg.md) when the view’s [`configurationState`](uitableviewheaderfooterview/configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the cell automatically calls [`updated(for:)`](uicontentconfiguration-9eib5/updated(for:).md) on its [`contentConfiguration`](uitableviewheaderfooterview/contentconfiguration-6b4eg.md) when the view’s [`configurationState`](uitableviewheaderfooterview/configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If you override [`updateConfiguration(using:)`](uitableviewheaderfooterview/updateconfiguration(using:).md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you override [`updateConfiguration(using:)`](uitableviewheaderfooterview/updateconfiguration(using:).md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

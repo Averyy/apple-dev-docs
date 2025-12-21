@@ -27,17 +27,6 @@ enum Reason
   Save the card information for later.
 - [PaymentCardVerificationRequest.Reason.other](paymentcardverificationrequest/reason/other.md)
   Verify the card information.
-### Operators
-- [static func == (PaymentCardVerificationRequest.Reason, PaymentCardVerificationRequest.Reason) -> Bool](paymentcardverificationrequest/reason/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](paymentcardverificationrequest/reason/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](paymentcardverificationrequest/reason/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](paymentcardverificationrequest/reason/equatable-implementations.md)
 
 ## Relationships
 

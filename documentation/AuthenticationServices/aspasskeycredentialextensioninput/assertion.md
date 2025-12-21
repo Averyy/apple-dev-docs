@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: case
 
+An extension input for an assertion.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,17 @@
 ```swift
 case assertion(ASPasskeyAssertionCredentialExtensionInput)
 ```
+
+## See Also
+
+- [ASPasskeyCredentialExtensionInput.none](aspasskeycredentialextensioninput/none.md)
+  An empty extension input.
+- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey assertion.
+- [case registration(ASPasskeyRegistrationCredentialExtensionInput)](aspasskeycredentialextensioninput/registration(_:).md)
+  An extension input for a registration.
+- [struct ASPasskeyRegistrationCredentialExtensionInput](aspasskeyregistrationcredentialextensioninput-swift.struct.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey registration.
 
 
 ---

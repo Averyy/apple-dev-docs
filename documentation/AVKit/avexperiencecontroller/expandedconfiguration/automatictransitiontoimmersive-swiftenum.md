@@ -6,7 +6,7 @@
 The expanded experience automatic transition behavior into the immersive experience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

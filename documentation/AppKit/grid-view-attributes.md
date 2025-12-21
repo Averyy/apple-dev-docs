@@ -10,7 +10,7 @@ Attributes that are used with grid views, such as thumbnails and media browsers 
 - [static let columnCount: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/columncount.md)
   The number of columns in the grid (`NSNumber` as `intValue`).
 - [static let orderedByRow: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/orderedbyrow.md)
-  A flag that indicates whether the grid is ordered row major ([`true`](https://developer.apple.com/documentation/swift/true)), or column major ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+  A flag that indicates whether the grid is in row major or column major order.
 - [static let rowCount: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/rowcount.md)
   The number of rows in the grid (`NSNumber` as `intValue`).
 

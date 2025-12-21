@@ -21,7 +21,7 @@ An integer tag identifying the tooltip; you can use this tag to remove the toolt
 
 #### Discussion
 
-The tooltip string is obtained dynamically from `owner` by invoking either the `NSToolTipOwner` informal protocol method [`view:stringForToolTip:point:userData:`](https://developer.apple.com/documentation/objectivec/nsobject/1483693-view), if implemented, or the [`NSObjectProtocol`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol) protocol method [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description).
+The tooltip string is obtained dynamically from `owner` by invoking either the `NSToolTipOwner` informal protocol method [`view:stringForToolTip:point:userData:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/view:stringForToolTip:point:userData:), if implemented, or the [`NSObjectProtocol`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol) protocol method [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description).
 
 ## Parameters
 

@@ -90,13 +90,8 @@ The system will only provide your extension with device activity data if the use
 - [init(DeviceActivityReport.Context, filter: DeviceActivityFilter)](deviceactivityreport/init(_:filter:).md)
   Creates a new device activity report.
 ### Instance Properties
-- [var body: some View](deviceactivityreport/body-swift.property.md)
+- [var body: some View](deviceactivityreport/body.md)
   The content of the device activity report.
-### Type Aliases
-- [DeviceActivityReport.Body](deviceactivityreport/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](deviceactivityreport/view-implementations.md)
 
 ## Relationships
 

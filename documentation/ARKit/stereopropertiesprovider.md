@@ -40,6 +40,11 @@ final class StereoPropertiesProvider
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct ViewpointProperties](viewpointproperties.md)
+  The ViewpointProperties is a record of render camera transforms at some particular time.
+
 
 ---
 

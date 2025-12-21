@@ -31,6 +31,8 @@ With a Free trial payment mode, customers pay nothing during the discount period
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
 - [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
   A payment mode of a product discount that applies the discount up front.
+- [static var oneTime: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md)
+  A payment mode for a consumable, non-consumable, or non-renewing subscription offer that indicates a one-time purchase.
 
 
 ---

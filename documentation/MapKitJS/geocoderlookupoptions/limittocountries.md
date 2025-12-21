@@ -11,7 +11,7 @@ A list of countries for constraining the lookup results.
 ## Declaration
 
 ```swift
-attribute string limitToCountries;
+limitToCountries?: string;
 ```
 
 #### Discussion

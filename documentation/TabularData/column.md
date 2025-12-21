@@ -58,8 +58,6 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
   Creates a new column by applying a transformation to every element.
 - [func mapNonNil<T>((WrappedElement) throws -> T?) rethrows -> Column<T>](column/mapnonnil(_:).md)
   Creates a new column by applying the transformation to every element that isn’t missing.
-- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](column/filled(with:).md)
-  Generates a filled column by replacing missing elements with a value.
 ### Inspecting a Column
 - [var name: String](column/name.md)
   The name of the column.
@@ -139,13 +137,8 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
   A text representation of the column.
 - [var debugDescription: String](column/debugdescription.md)
   A text representation of the column suitable for debugging.
-- [func description(options: FormattingOptions) -> String](column/description(options:).md)
-  Generates a string description of the optional column type.
 - [var customMirror: Mirror](column/custommirror.md)
   A mirror that reflects the column.
-### Comparing Two Columns
-- [static func != (Self, Self) -> Bool](column/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Modifying a Column with a Value
 - [static func += (inout Column<WrappedElement>, WrappedElement)](column/+=(_:_:)-94q8g.md)
   Modifies a column by adding a value to each element.
@@ -178,76 +171,17 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
   Modifies a floating-point column by dividing each element in the column by the corresponding value in a collection.
 - [static func /= <C>(inout Column<WrappedElement>, C)](column/_=(_:_:)-3acz8.md)
   Modifies a floating-point column by dividing each element in the column by the corresponding optional value in a collection.
-### Generating a Column by Combining Two Columns
-- [static func + (Self, Self) -> Column<Self.WrappedElement>](column/+(_:_:)-3hy3o.md)
-  Generates a column by adding each element in an optional column type to the corresponding elements of another.
-- [static func - (Self, Self) -> Column<Self.WrappedElement>](column/-(_:_:)-9ltja.md)
-  Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
-- [static func * (Self, Self) -> Column<Self.WrappedElement>](column/*(_:_:)-8n0od.md)
-  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](column/_(_:_:)-2bk2d.md)
-  Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](column/_(_:_:)-8jh9v.md)
-  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
-### Generating a Column by Adding a Value
-- [static func + (Self, Self.Element) -> Column<Self.Element>](column/+(_:_:)-9v8t0.md)
-  Generates a column by adding a value to each element in a column.
-- [static func + (Self.Element, Self) -> Column<Self.Element>](column/+(_:_:)-579cq.md)
-  Generates a column by adding each element in a column to a value.
-- [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](column/+(_:_:)-7jy9x.md)
-  Generates a column by adding a value to each element in an optional column.
-- [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](column/+(_:_:)-8uo1v.md)
-  Generates a column by adding each element in an optional column to a value.
-### Generating a Column by Subtracting a Value
-- [static func - (Self, Self.Element) -> Column<Self.Element>](column/-(_:_:)-6xjm8.md)
-  Generates a column by subtracting a value from each element in a column.
-- [static func - (Self.Element, Self) -> Column<Self.Element>](column/-(_:_:)-9dgkf.md)
-  Generates a column by subtracting each element in a column from a value.
-- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](column/-(_:_:)-5zgbu.md)
-  Generates a column by subtracting a value from each element in an optional column type.
-- [static func - (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](column/-(_:_:)-326lu.md)
-  Generates a column by subtracting each element in an optional column from a value.
-### Generating a Column by Multiplying a Value
-- [static func * (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](column/*(_:_:)-8ndcj.md)
-  Generates a column by multiplying each element in an optional column by a value.
-- [static func * (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](column/*(_:_:)-3dm6q.md)
-  Generates a column by multiplying a value by each element in an optional column type.
-### Generating a Column by Dividing a Value
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](column/_(_:_:)-60cwp.md)
-  Generates an integer column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](column/_(_:_:)-7or0v.md)
-  Generates an integer column by dividing a value by each element in an optional column type.
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](column/_(_:_:)-1rwra.md)
-  Generates a floating-point column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](column/_(_:_:)-2p0ex.md)
-  Generates a floating-point column by dividing a value by each element in an optional column type.
 ### Instance Methods
 - [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement>) throws -> R) rethrows -> R?](column/withcontiguousmutablestorageifavailable(_:)-9j9p8.md)
   Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous mutable storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
 - [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement>) throws -> R) rethrows -> R?](column/withcontiguousstorageifavailable(_:)-6nbz3.md)
   Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
-### Type Aliases
-- [typealias Index](column/index.md)
-  A type that represents a position in the collection.
-- [typealias Indices](column/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [typealias Iterator](column/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [typealias SubSequence](column/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
 - [BidirectionalCollection Implementations](column/bidirectionalcollection-implementations.md)
-- [Collection Implementations](column/collection-implementations.md)
-- [ColumnProtocol Implementations](column/columnprotocol-implementations.md)
 - [CustomDebugStringConvertible Implementations](column/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](column/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](column/customstringconvertible-implementations.md)
-- [Decodable Implementations](column/decodable-implementations.md)
-- [Encodable Implementations](column/encodable-implementations.md)
-- [Equatable Implementations](column/equatable-implementations.md)
-- [Hashable Implementations](column/hashable-implementations.md)
 - [MutableCollection Implementations](column/mutablecollection-implementations.md)
-- [OptionalColumnProtocol Implementations](column/optionalcolumnprotocol-implementations.md)
 - [Sequence Implementations](column/sequence-implementations.md)
 
 ## Relationships

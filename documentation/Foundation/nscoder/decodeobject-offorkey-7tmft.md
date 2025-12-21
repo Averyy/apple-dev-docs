@@ -26,7 +26,7 @@ The decoded object, or `nil` if decoding fails.
 
 #### Discussion
 
-If the coder responds [`true`](https://developer.apple.com/documentation/swift/true) to [`requiresSecureCoding`](nscoder/requiressecurecoding.md), then the coder calls [`failWithError(_:)`](nscoder/failwitherror(_:).md) in either of the following cases:
+If the coder responds [`true`](https://developer.apple.com/documentation/Swift/true) to [`requiresSecureCoding`](nscoder/requiressecurecoding.md), then the coder calls [`failWithError(_:)`](nscoder/failwitherror(_:).md) in either of the following cases:
 
 - The class indicated by `cls` doesn’t implement [`NSSecureCoding`](nssecurecoding.md).
 - The unarchived class doesn’t match `cls`, nor do any of its superclasses.

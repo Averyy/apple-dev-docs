@@ -14,6 +14,11 @@ The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature
 timestamp signedDate
 ```
 
+## See Also
+
+- [type receiptCreationDate](receiptcreationdate.md)
+  The date that the App Store signs a JSON Web Signature (JWS) app transaction.
+
 
 ---
 

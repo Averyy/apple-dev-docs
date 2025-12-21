@@ -21,7 +21,7 @@ var isCumulative: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle. If [`false`](https://developer.apple.com/documentation/swift/false), the value of the property is simply the value calculated for the current repeat cycle. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), then the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle. If [`false`](https://developer.apple.com/documentation/Swift/false), the value of the property is simply the value calculated for the current repeat cycle. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

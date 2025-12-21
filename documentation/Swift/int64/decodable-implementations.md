@@ -5,7 +5,7 @@
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](int64/init(from:)-5zuem.md)
+- [init(from: any Decoder) throws](int64/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 
 

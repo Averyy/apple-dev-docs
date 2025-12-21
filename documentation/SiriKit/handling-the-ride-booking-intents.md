@@ -20,7 +20,7 @@ Maps may send the same [`INGetRideStatusIntent`](https://developer.apple.com/doc
 
 ##### Book Rides From Shortcuts and Siri Suggestions
 
-Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIntent`](https://developer.apple.com/documentation/intents/inrequestrideintent) objects to resolve, confirm, and handle. For more details about this sequence, see doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents. Implement the methods in the [`INRequestRideIntentHandling`](https://developer.apple.com/documentation/intents/inrequestrideintenthandling) protocol to prompt the user for additional information and confirm the details of their trip.
+Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIntent`](https://developer.apple.com/documentation/intents/inrequestrideintent) objects to resolve, confirm, and handle. For more details about this sequence, see [`Resolving and Handling Intents`](resolving-and-handling-intents.md). Implement the methods in the [`INRequestRideIntentHandling`](https://developer.apple.com/documentation/intents/inrequestrideintenthandling) protocol to prompt the user for additional information and confirm the details of their trip.
 
 ## Topics
 
@@ -54,14 +54,14 @@ Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIn
   Validate the parameters of an intent and make sure that you have the information you need to continue.
 - [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
 - [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Intent Phrases](intent-phrases.md)
+  The keys that you include in your global vocabulary file to show how users engage your app from Siri.
+- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+  Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 
 ---

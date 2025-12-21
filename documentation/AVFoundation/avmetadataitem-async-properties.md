@@ -6,7 +6,7 @@ Asynchronous properties for metadata items.
 
 ## Topics
 
-### Loading Values
+### Loading values
 - [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](avpartialasyncproperty/value.md)
   The value of the metadata item.
 - [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](avpartialasyncproperty/extraattributes.md)

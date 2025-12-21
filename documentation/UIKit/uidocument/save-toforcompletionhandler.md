@@ -14,7 +14,6 @@ Saves document data to the specified location in the application sandbox.
 ## Declaration
 
 ```swift
-@MainActor
 func save(to url: URL, for saveOperation: UIDocument.SaveOperation) async -> Bool
 ```
 

@@ -11,9 +11,8 @@ An activation function that returns random numbers from the Gumbel distribution.
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- watchOS 7.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 7.0+
 
 ## Declaration
 

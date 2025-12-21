@@ -47,8 +47,16 @@ The default value of this property is [`automaticDimension`](uisplitviewcontroll
   The width, in points, of the supplementary view controller’s content.
 - [var minimumSupplementaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsupplementarycolumnwidth.md)
   The minimum width, in points, for the supplementary view controller’s content.
-- [class let automaticDimension: CGFloat](uisplitviewcontroller/automaticdimension.md)
-  The default value to apply to a dimension.
+- [var preferredSecondaryColumnWidth: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidth.md)
+  The preferred width, in points, for the secondary view controller’s content.
+- [var preferredSecondaryColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidthfraction.md)
+  The relative width of the secondary view controller’s content.
+- [var minimumSecondaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsecondarycolumnwidth.md)
+  The minimum width, in points, for the secondary view controller’s content.
+- [var preferredInspectorColumnWidth: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidth.md)
+  The preferred width, in points, for the inspector view controller’s content.
+- [var preferredInspectorColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidthfraction.md)
+  The relative width of the inspector view controller’s content.
 
 
 ---

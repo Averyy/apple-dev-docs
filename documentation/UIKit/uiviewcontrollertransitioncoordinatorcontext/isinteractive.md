@@ -24,7 +24,7 @@ var isInteractive: Bool { get }
 
 Every interactive transition has at least one noninteractive segment — namely, when it’s completing. In addition, you can design an interactive transition to have intermediate segments that are noninteractive.
 
-If the [`initiallyInteractive`](uiviewcontrollertransitioncoordinatorcontext/initiallyinteractive.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false), the value of this property can be [`true`](https://developer.apple.com/documentation/swift/true) only when the [`isInterruptible`](uiviewcontrollertransitioncoordinatorcontext/isinterruptible.md) property is also [`true`](https://developer.apple.com/documentation/swift/true).
+If the [`initiallyInteractive`](uiviewcontrollertransitioncoordinatorcontext/initiallyinteractive.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the value of this property can be [`true`](https://developer.apple.com/documentation/Swift/true) only when the [`isInterruptible`](uiviewcontrollertransitioncoordinatorcontext/isinterruptible.md) property is also [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

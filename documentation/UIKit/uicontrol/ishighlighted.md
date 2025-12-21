@@ -21,9 +21,9 @@ var isHighlighted: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the control draws a highlight; otherwise, the control doesn’t draw a highlight. Controls automatically set and clear this state in response to appropriate touch events. You can change the value of this property as needed to apply or remove a highlight programmatically
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the control draws a highlight; otherwise, the control doesn’t draw a highlight. Controls automatically set and clear this state in response to appropriate touch events. You can change the value of this property as needed to apply or remove a highlight programmatically
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for a newly created control. You can set a control’s initial selected state in your storyboard file.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for a newly created control. You can set a control’s initial selected state in your storyboard file.
 
 ## See Also
 

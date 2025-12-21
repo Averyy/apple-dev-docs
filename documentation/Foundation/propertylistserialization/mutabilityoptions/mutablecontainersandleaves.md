@@ -24,8 +24,6 @@ static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptio
 
 - [static var mutableContainers: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainers.md)
   Causes the returned property list to have mutable containers but immutable leaves.
-- [static var mutableContainers: PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions/mutablecontainers.md)
-  Causes the returned property list to have mutable containers but immutable leaves.
 
 
 ---

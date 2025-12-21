@@ -16,7 +16,7 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was performed successfully or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the action was performed successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 

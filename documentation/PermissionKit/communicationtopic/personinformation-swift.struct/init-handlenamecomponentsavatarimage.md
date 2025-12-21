@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: init
 
-Creates an object with the specified display name and contact information.
+Creates person information with contact details and optional display information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,14 @@ init(handle: CommunicationHandle, nameComponents: PersonNameComponents? = nil, a
 
 ## Parameters
 
-- `handle`: The custom handle of a person.
-- `nameComponents`: The name components of a person.
-- `avatarImage`: The avatar of a person.
+- `handle`: The handle you use to identify the person.
+- `nameComponents`: The person’s name components.
+- `avatarImage`: An image that represents the person.
+
+## See Also
+
+- [init(from: any Decoder) throws](communicationtopic/personinformation-swift.struct/init(from:).md)
+  Creates an instance from the given decoder.
 
 
 ---

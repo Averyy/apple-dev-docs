@@ -18,7 +18,7 @@ Adjustable level of detail. Pixel texture coordinates
 
 #### Parameter Types
 
-> ❗ **Important**: This node requires a device with a [`MTLGPUFamily.apple3`](https://developer.apple.com/documentation/Metal/MTLGPUFamily/apple3) or later GPU and may not be available on certain devices. To determine GPU feature support at runtime, see [`Detecting GPU Features and Metal Software Versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
+> ❗ **Important**: This node requires a device with a [`MTLGPUFamily.apple3`](https://developer.apple.com/documentation/Metal/MTLGPUFamily/apple3) or later GPU and may not be available on certain devices. To determine GPU feature support at runtime, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
 
 ## See Also
 

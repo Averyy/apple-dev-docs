@@ -6,35 +6,37 @@ Develop apps in SwiftUI with an interactive preview that keeps the code and layo
 
 #### Overview
 
-If you choose the SwiftUI framework to develop your app, you can see an interactive preview as you lay out your user interface. Xcode keeps the changes you make to the source code, the user interface layout, and the inspector in sync. For example, when you edit attributes in the inspector, Xcode adds the corresponding code to the source file.
+If you choose the SwiftUI framework to develop your app, you can see an interactive preview in the canvas as you lay out your user interface. Xcode keeps the changes you make to the source code, the user interface layout, and the canvas in sync. For example, when you edit views in the source editor, Xcode updates the corresponding views in the canvas.
+
+If you create your project from the Multiplatform template or choose SwiftUI as the interface when you select another template, Xcode adds default preview macros to the SwiftUI code for you. Otherwise, you can generate a preview using coding intelligence or add preview macros yourself.
+
+For more information about Xcode templates, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md). For more details about adding previews, see [`Previewing your app’s interface in Xcode`](previewing-your-apps-interface-in-xcode.md).
 
 ##### Display the Swiftui Preview
 
-To show the preview, select a file that uses SwiftUI in the project navigator, and choose Editor > Canvas. Then click the Resume button in the upper-right corner of the canvas to start the preview. Xcode builds and runs the code, displaying the results directly in the canvas.
+To show the preview, select a file that contains a preview macro in the Project navigator and, if necessary, choose Editor > Canvas to show the canvas. Then click the Resume button in the upper-right corner of the canvas to start the preview. Xcode builds and runs the code, displaying the results directly in the canvas.
 
-![Screenshot showing a SwiftUI file selected in the project navigator and preview displayed in the editor area.](https://docs-assets.developer.apple.com/published/a311c2ad23768cbb9cf5bc4056725ba4/creating-your-app-s-interface-with-swiftui-1%402x.png)
+![Screenshot showing a SwiftUI file selected in the Project navigator and preview displayed in the canvas.](https://docs-assets.developer.apple.com/published/68c5d648f4b4d7f25dcf2194a9f248e5/creating-your-app-s-interface-with-swiftui-1%402x.png)
 
-Use the controls at the bottom of the preview to run the app on a simulated device in the canvas, with or without a debug session, or run the app on a connected device.
+Use the controls at the bottom of the canvas to switch between different preview modes, add variants for appearances, select device settings such as orientation, and change the device.
 
-##### Add Views and Modifiers
+> **Note**: If you add multiple preview and playground macros to a file, you can switch between them using the tabs that appear at the top of the canvas. To add playgrounds to your Swift code, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
 
-To add views and modifiers to your app, click the Library button (+) in the toolbar to open the library, then drag user interface elements from the library to either the canvas or source code. Regardless of where you drop the elements, Xcode keeps the source code and the layout in sync.
+##### Add Views and Modifiers Using the Library
 
-![Screenshot showing the library when a SwiftUI element is selected.](https://docs-assets.developer.apple.com/published/01fa3adce78feb9482de961b08675184/creating-your-app-s-interface-with-swiftui-2%402x.png)
+You can add views and modifiers to your code from the library, and Xcode keeps the preview in sync with your changes.
+
+To open the library, choose View > Show Library (press the Option key to open it as a window). Then click the Views or Modifiers button in the toolbar and drag user interface elements from the library to your source code. To find elements more quickly, begin entering the element’s name in the search field at the top of the Library.
+
+![Screenshot showing the library with the Views tab selected, and a SwiftUI element selected.](https://docs-assets.developer.apple.com/published/d0060b8a4c49daf47b1750025833c2d8/creating-your-app-s-interface-with-swiftui-2%402x.png)
 
 ##### Edit User Interface Elements
 
-Edit element attributes using either the Action menu or the inspector, or by entering code in the source editor. Command-click the element in the canvas or the structure in the code, choose Show SwiftUI Inspector from the Action menu, then change the attributes in the next pane. Alternatively, choose View > Inspectors > Show Attributes Inspector, and change the attributes in the Attributes inspector that appears on the right.
+Edit the user interface elements in your source code to see the changes in the preview. To highlight elements in the source code that appear in the preview, click the Selectable mode below the canvas and click the elements in the preview. Then go back to the default Live mode to test and interact with your views in the preview.
 
-![Screenshot showing the Action menu in the canvas with the Show Attributes Inspector menu item selected.](https://docs-assets.developer.apple.com/published/a1a83f62dbc1ce7d1bfd93509df4963d/creating-your-app-s-interface-with-swiftui-3%402x.png)
+![Screenshot showing an element selected in the preview on the right and the associated code highlighted in the source editor on the left.](https://docs-assets.developer.apple.com/published/59407de53b479558caf20e5d720b04b3/creating-your-app-s-interface-with-swiftui-3%402x.png)
 
-##### Embed User Interface Elements
-
-Additionally, you can modify the user interface by embedding elements in other structures. Command-click an element in the source code or in the canvas, then choose an “Embed in [Generic Structure]” action from the pop-up menu. For example, choose “Embed in HStack” to embed an element that arranges a view’s children in a horizontal line.
-
-![Screenshot showing the Action menu in the source editor with the Embed in HStack menu item selected.](https://docs-assets.developer.apple.com/published/940b4aaf4747f3eb1b6a22e50615b155/creating-your-app-s-interface-with-swiftui-4%402x.png)
-
-To learn more about SwiftUI, go to [`Introducing SwiftUI`](https://developer.apple.com/tutorials/SwiftUI).
+Then use code completion, code intelligence, and the library of code snippets to help you write Swift and SwiftUI code. For more information, see [`Editing source files in Xcode`](editing-source-files-in-xcode.md) and [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
 
 ## See Also
 

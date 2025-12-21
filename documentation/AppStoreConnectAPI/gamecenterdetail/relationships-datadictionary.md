@@ -30,8 +30,18 @@ object GameCenterDetail.Relationships
 - [object GameCenterDetail.Relationships.ActivityReleases](gamecenterdetail/relationships-data.dictionary/activityreleases-data.dictionary.md)
 - [object GameCenterDetail.Relationships.ChallengeReleases](gamecenterdetail/relationships-data.dictionary/challengereleases-data.dictionary.md)
 - [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions](gamecenterdetail/relationships-data.dictionary/challengesminimumplatformversions-data.dictionary.md)
+- [object GameCenterDetail.Relationships.DefaultGroupLeaderboardV2](gamecenterdetail/relationships-data.dictionary/defaultgroupleaderboardv2-data.dictionary.md)
+  The data that describes the default group leaderboard of the Game Center detail.
+- [object GameCenterDetail.Relationships.DefaultLeaderboardV2](gamecenterdetail/relationships-data.dictionary/defaultleaderboardv2-data.dictionary.md)
+  The data that describes the default leaderboard of the Game Center detail.
+- [object GameCenterDetail.Relationships.GameCenterAchievementsV2](gamecenterdetail/relationships-data.dictionary/gamecenterachievementsv2-data.dictionary.md)
+  The data and links that describe the Game Center achievements of the Game Center detail.
 - [object GameCenterDetail.Relationships.GameCenterActivities](gamecenterdetail/relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
 - [object GameCenterDetail.Relationships.GameCenterChallenges](gamecenterdetail/relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
+- [object GameCenterDetail.Relationships.GameCenterLeaderboardSetsV2](gamecenterdetail/relationships-data.dictionary/gamecenterleaderboardsetsv2-data.dictionary.md)
+  The data and links that describe the Game Center leaderboard sets of the Game Center detail.
+- [object GameCenterDetail.Relationships.GameCenterLeaderboardsV2](gamecenterdetail/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
+  The data and links that describe the Game Center leaderboards of the Game Center detail.
 
 ## See Also
 

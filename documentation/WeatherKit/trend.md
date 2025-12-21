@@ -22,12 +22,6 @@ struct Trend<Dimension> where Dimension : Dimension
 
 ## Topics
 
-### Operators
-- [static func == (Trend<Dimension>, Trend<Dimension>) -> Bool](trend/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](trend/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var baseline: TrendBaseline<Dimension>](trend/baseline.md)
   The manner in which the comparison between the baseline and current values are compared.
@@ -35,11 +29,6 @@ struct Trend<Dimension> where Dimension : Dimension
   The current recorded value for the condition in which the trend is compared against.
 - [var deviation: Deviation](trend/deviation.md)
   Semantically describes the manner in which the observed trend compares the current value against the baseline value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](trend/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](trend/equatable-implementations.md)
 
 ## Relationships
 

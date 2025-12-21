@@ -16,6 +16,11 @@ nonisolated
 final func requestLicenseRenewal(appleItemIDs: [UInt64]) async throws
 ```
 
+## See Also
+
+- [func requestAppUpdate(AppLibrary.InstallationRequest) async throws](applibrary/requestappupdate(_:).md)
+  Requests an app update for the given app distribution package and account information.
+
 
 ---
 

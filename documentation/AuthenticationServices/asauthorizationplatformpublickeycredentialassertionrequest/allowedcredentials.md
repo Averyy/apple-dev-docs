@@ -23,6 +23,12 @@ var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor] {
 
 - [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
 
+## See Also
+
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
+  The request’s binary large object value.
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
+
 
 ---
 

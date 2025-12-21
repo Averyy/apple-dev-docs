@@ -291,6 +291,8 @@ The `setPosition()` method moves the sphere to the new position over a set rate 
 
 ## See Also
 
+- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+  Substitute a person’s hands with custom models in a fully immersive space.
 - [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
 - [Tracking and visualizing hand movement](tracking-and-visualizing-hand-movement.md)

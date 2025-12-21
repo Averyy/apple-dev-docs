@@ -179,7 +179,7 @@ You can also create custom layout values by creating a layout key. Set a value o
 
 ## See Also
 
-- [Composing custom layouts with SwiftUI](composing_custom_layouts_with_swiftui.md)
+- [Composing custom layouts with SwiftUI](composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [struct LayoutSubview](layoutsubview.md)
   A proxy that represents one subview of a layout.

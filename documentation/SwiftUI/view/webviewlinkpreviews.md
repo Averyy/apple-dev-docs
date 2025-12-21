@@ -6,10 +6,10 @@
 Determines whether pressing a link displays a preview of the destination for the link.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- macOS 15.4+
-- visionOS 2.4+
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,9 @@ func webViewLinkPreviews(_ value: WebView.LinkPreviewBehavior) -> some View
 
 ## See Also
 
-- [@MainActor @preconcurrency struct WebView](../WebKit/WebView-swift.struct.md)
+- [struct WebView](../WebKit/WebView-swift.struct.md)
   A view that displays some web content.
-- [@MainActor final class WebPage](../WebKit/WebPage.md)
+- [class WebPage](../WebKit/WebPage.md)
   An object that controls and manages the behavior of interactive web content.
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)
   Determines whether horizontal swipe gestures trigger backward and forward page navigation.

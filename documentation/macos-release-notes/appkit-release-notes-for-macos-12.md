@@ -12,8 +12,8 @@ AppKit in macOS Monterey 12 includes new features, as well as API changes and de
 
 ###### Nsbutton
 
-- Buttons no longer highlight using the accent color when clicked. Before using any subclass that performs custom drawing, inspect the button cell’s doc://com.apple.documentation/documentation/appkit/nscell/1526141-interiorbackgroundstyle property to determine if the bezel draws in a normal or emphasized state.
-- Buttons now support custom tinting with the [`bezelColor`](https://developer.apple.com/documentation/AppKit/NSButton/bezelColor) property. This property — previously applied only in the Touch Bar — now functions for all in-window buttons using the doc://com.apple.documentation/documentation/appkit/nsbuttontype/nsbuttontypemomentarypushin style.
+- Buttons no longer highlight using the accent color when clicked. Before using any subclass that performs custom drawing, inspect the button cell’s `interiorBackgroundStyle` property to determine if the bezel draws in a normal or emphasized state.
+- Buttons now support custom tinting with the [`bezelColor`](https://developer.apple.com/documentation/AppKit/NSButton/bezelColor) property. This property — previously applied only in the Touch Bar — now functions for all in-window buttons using the `NSButtonTypeMomentaryPushIn` style.
 
 ###### Nsslider
 
@@ -64,13 +64,24 @@ AppKit in macOS Monterey 12 includes new features, as well as API changes and de
 
 ###### Nsopenpanel
 
-- Setting [`canChooseFiles`](https://developer.apple.com/documentation/AppKit/NSOpenPanel/canChooseFiles) to `false` automatically disabled files, but all of the directory contents were sent to [`panel(_:shouldEnable:)`](https://developer.apple.com/documentation/AppKit/NSOpenSavePanelDelegate/panel(_:shouldEnable:)) or [`panel:shouldShowFilename:`](https://developer.apple.com/documentation/objectivec/nsobject/1539030-panel). In macOS Monterey 12, files aren’t sent to the delegate methods unless `canChooseFiles` is `true`. In addition, file packages are excluded unless `treatsFilePackagesAsDirectoriesis` is `true`. This change allows optimization in the delegate method.
+- Setting [`canChooseFiles`](https://developer.apple.com/documentation/AppKit/NSOpenPanel/canChooseFiles) to `false` automatically disabled files, but all of the directory contents were sent to [`panel(_:shouldEnable:)`](https://developer.apple.com/documentation/AppKit/NSOpenSavePanelDelegate/panel(_:shouldEnable:)) or [`panel:shouldShowFilename:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/panel:shouldShowFilename:). In macOS Monterey 12, files aren’t sent to the delegate methods unless `canChooseFiles` is `true`. In addition, file packages are excluded unless `treatsFilePackagesAsDirectoriesis` is `true`. This change allows optimization in the delegate method.
 
 ###### Textkit 2
 
 - TextKit 2 introduces a new text layout engine and its associated API. You can use TextKit 2  alongside the existing [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit) API.
 - [`NSTextContentStorage`](https://developer.apple.com/documentation/UIKit/NSTextContentStorage) and [`NSTextLayoutManager`](https://developer.apple.com/documentation/UIKit/NSTextLayoutManager) are the two main controller objects superseding [`NSTextStorage`](https://developer.apple.com/documentation/AppKit/NSTextStorage) and [`NSLayoutManager`](https://developer.apple.com/documentation/AppKit/NSLayoutManager) respectively. [`NSTextParagraph`](https://developer.apple.com/documentation/UIKit/NSTextParagraph) managed by `NSTextContentStorage` represents a paragraph of text. `NSTextLayoutManager` stores the layout information in its model objects: [`NSTextLayoutFragment`](https://developer.apple.com/documentation/UIKit/NSTextLayoutFragment) and [`NSTextLineFragment`](https://developer.apple.com/documentation/UIKit/NSTextLineFragment).
 - In TextKit 2, [`NSTextSelection`](https://developer.apple.com/documentation/UIKit/NSTextSelection) encapsulates information associated with a text selection while [`NSTextSelectionNavigation`](https://developer.apple.com/documentation/UIKit/NSTextSelectionNavigation) manipulates and converts the selection object based on keyboard and mouse navigation actions.
+
+## See Also
+
+- [AppKit Release Notes for macOS Sonoma 14](appkit-release-notes-for-macos-14.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Big Sur 11](appkit-release-notes-for-macos-11.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

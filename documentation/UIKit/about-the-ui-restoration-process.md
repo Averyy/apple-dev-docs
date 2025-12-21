@@ -6,7 +6,7 @@ Learn how to customize the UIKit state restoration process.
 
 #### Overview
 
-The following diagram shows the sequence of calls that happens from the time your app launches until the time it’s restored. Restoration occurs during the middle of your app’s initialization, and it proceeds only when a state restoration archive is available and your app delegate’s [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md) method returns [`true`](https://developer.apple.com/documentation/swift/true).
+The following diagram shows the sequence of calls that happens from the time your app launches until the time it’s restored. Restoration occurs during the middle of your app’s initialization, and it proceeds only when a state restoration archive is available and your app delegate’s [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md) method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ![Flow diagram of the interface restoration process.](https://docs-assets.developer.apple.com/published/8ae9ad9ee6c3db2adb3b3d2ed01aa1a6/media-2934436%402x.png)
 

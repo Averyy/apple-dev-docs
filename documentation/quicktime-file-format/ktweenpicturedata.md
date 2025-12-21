@@ -5,9 +5,6 @@
 
 An atom that contains the data for a QuickDraw picture.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Used only by a `kTweenTypeQDRegion` atom.

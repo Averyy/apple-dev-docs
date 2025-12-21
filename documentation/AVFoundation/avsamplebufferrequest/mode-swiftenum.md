@@ -22,7 +22,7 @@ enum Mode
 
 ## Topics
 
-### Mode Scheduling
+### Mode scheduling
 - [AVSampleBufferRequest.Mode.immediate](avsamplebufferrequest/mode-swift.enum/immediate.md)
   A mode that indicates that sample buffer creation requests load data as soon as possible.
 - [AVSampleBufferRequest.Mode.scheduled](avsamplebufferrequest/mode-swift.enum/scheduled.md)

@@ -16,7 +16,7 @@ var deletesFileUponFailure: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if partially downloaded files should be deleted when a download stops prematurely, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if partially downloaded files should be deleted when a download stops prematurely, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

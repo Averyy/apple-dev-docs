@@ -21,15 +21,15 @@ protocol MTLIndirectComputeCommand : NSObjectProtocol
 
 #### Overview
 
-Don’t implement this protocol; you get objects of this type by asking a [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) for them.
+Don’t implement this protocol; you get instances of this type by asking an [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) for them.
 
-Use this object to reset or encode a command. You must always reset a command before encoding a new command.
+Use this instance to reset or encode a command. You need to reset a command before encoding a new command.
 
 ## Topics
 
-### Setting a Command’s Arguments
+### Setting a command’s arguments
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
-  Sets the command’s compute pipeline state object.
+  Sets the command’s compute pipeline state.
 - [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
   Sets the size, in pixels, of the imageblock.
 - [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)
@@ -42,17 +42,17 @@ Use this object to reset or encode a command. You must always reset a command be
   Sets the region of the stage-in attributes to apply to the compute kernel.
 - [func setStageIn(MTLRegion)](mtlindirectcomputecommand/setstagein(_:).md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
-### Synchronizing Command Execution
+### Synchronizing command execution
 - [func setBarrier()](mtlindirectcomputecommand/setbarrier.md)
   Adds a barrier to ensure that commands executed prior to this command are complete before this command executes.
 - [func clearBarrier()](mtlindirectcomputecommand/clearbarrier.md)
   Removes any barrier set on the command.
-### Encoding a Compute Command
+### Encoding a compute command
 - [func concurrentDispatchThreadgroups(MTLSize, threadsPerThreadgroup: MTLSize)](mtlindirectcomputecommand/concurrentdispatchthreadgroups(_:threadsperthreadgroup:).md)
   Encodes a compute command using a grid aligned to threadgroup boundaries.
 - [func concurrentDispatchThreads(MTLSize, threadsPerThreadgroup: MTLSize)](mtlindirectcomputecommand/concurrentdispatchthreads(_:threadsperthreadgroup:).md)
   Encodes a compute command using an arbitrarily sized grid.
-### Resetting a Command
+### Resetting a command
 - [func reset()](mtlindirectcomputecommand/reset.md)
   Resets the command to its default state.
 ### Instance Methods
@@ -66,9 +66,9 @@ Use this object to reset or encode a command. You must always reset a command be
 ## See Also
 
 - [struct MTLRegion](mtlregion.md)
-  The bounds for a subset of an object’s elements.
+  The bounds for a subset of an instance’s elements.
 - [struct MTLSize](mtlsize.md)
-  The dimensions of an object.
+  A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
 - [struct MTLOrigin](mtlorigin.md)
   The coordinates for the front upper-left corner of a region.
 - [struct MTLStageInRegionIndirectArguments](mtlstageinregionindirectarguments.md)

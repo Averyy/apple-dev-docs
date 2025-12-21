@@ -49,6 +49,11 @@ The behavior of a multilevel accelerator button is reliant on a system that supp
   The sound that plays when the user clicks the button.
 - [var isSpringLoaded: Bool](nsbutton/isspringloaded.md)
   A Boolean value that indicates whether spring loading is enabled for the button.
+- [var tintProminence: NSTintProminence](nsbutton/tintprominence.md)
+  The tint prominence of the button. Use tint prominence to gently suggest a hierarchy when multiple buttons perform similar actions. A button with primary tint prominence suggests the most preferred option, while secondary prominence indicates a reasonable alternative. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
+- [enum NSTintProminence](nstintprominence.md)
+  Controls how strongly the tint color applies in a view.
+- [var borderShape: NSControl.BorderShape](nsbutton/bordershape.md)
 
 
 ---

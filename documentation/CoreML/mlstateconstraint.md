@@ -22,7 +22,7 @@ class MLStateConstraint
 
 ## Topics
 
-### Instance Properties
+### Inspecting a state constraint
 - [var bufferShape: [Int]](mlstateconstraint/buffershape-4zb3w.md)
   The shape of the state buffer.
 - [var dataType: MLMultiArrayDataType](mlstateconstraint/datatype.md)

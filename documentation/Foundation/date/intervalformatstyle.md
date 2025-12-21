@@ -150,8 +150,6 @@ if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
 - [func year() -> Date.IntervalFormatStyle](date/intervalformatstyle/year.md)
   Modifies the date interval format style to include the year.
 ### Comparing Date Interval Format Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Types

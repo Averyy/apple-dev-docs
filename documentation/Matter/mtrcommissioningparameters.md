@@ -32,6 +32,12 @@ class MTRCommissioningParameters
 - [var wifiCredentials: Data?](mtrcommissioningparameters/wificredentials.md)
 - [var wifiSSID: Data?](mtrcommissioningparameters/wifissid.md)
 - [var csrNonce: Data?](mtrcommissioningparameters/csrnonce-8gx94.md)
+- [var extraAttributesToRead: [MTRAttributeRequestPath]?](mtrcommissioningparameters/extraattributestoread.md)
+  List of attribute paths to read from the commissionee (in addition to whatever attributes are already read to handle readEndpointInformation being YES, or to handle other commissioning tasks).
+- [var forceThreadScan: Bool](mtrcommissioningparameters/forcethreadscan.md)
+  Whether to force a network scan before requesting Thread credentials. The default is NO.
+- [var forceWiFiScan: Bool](mtrcommissioningparameters/forcewifiscan.md)
+  Whether to force a network scan before requesting Wi-Fi credentials. The default is NO.
 - [var readEndpointInformation: Bool](mtrcommissioningparameters/readendpointinformation.md)
   Read device type information from all endpoints during commissioning. Defaults to NO.
 

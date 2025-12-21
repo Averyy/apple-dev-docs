@@ -81,7 +81,7 @@ private func attributeCustomerAccountCreated() async {
 
 #### Opt in to Receive a Copy of the Winning Postback
 
-Devices can send a copy of the winning postback to the developer of the advertised app. Developers opt in to receive the postback by specifying a server endpoint in their app’s `Info.plist` file. For more information about opting in and specifying the endpoint, see [`Configuring an advertised app`](configuring-an-advertised-app.md). The postback that developers receive is an exact copy of the winning postback that the device sends to the ad network. The device sends the postback to developers at the same time it sends the winning postback to the ad network. To verify the postback, see [`Verifying a postback`](verifying-a-postback.md).
+Devices can send a copy of the winning postback to the developer of the advertised app. Developers opt in to receive the postback by specifying a server endpoint in their app’s information property list. For more information about opting in and specifying the endpoint, see [`Configuring an advertised app`](configuring-an-advertised-app.md). The postback that developers receive is an exact copy of the winning postback that the device sends to the ad network. The device sends the postback to developers at the same time it sends the winning postback to the ad network. To verify the postback, see [`Verifying a postback`](verifying-a-postback.md).
 
 #### Limit the Number of View Through Ad Impressions From a Publisher App
 

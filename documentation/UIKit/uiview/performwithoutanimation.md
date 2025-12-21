@@ -29,6 +29,7 @@ class func performWithoutAnimation(_ actionsWithoutAnimation: () -> Void)
   Returns a Boolean value indicating whether animations are enabled.
 - [class func setAnimationsEnabled(Bool)](uiview/setanimationsenabled(_:).md)
   Sets whether animations are enabled.
+- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(_:changes:completion:).md)
 - [class func animate(springDuration: TimeInterval, bounce: CGFloat, initialSpringVelocity: CGFloat, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(springduration:bounce:initialspringvelocity:delay:options:animations:completion:).md)
   Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
 - [class func animate(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:delay:options:animations:completion:).md)

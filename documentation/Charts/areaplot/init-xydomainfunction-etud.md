@@ -32,6 +32,23 @@ Parameters:
 
 > **Note**: For x values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
 
+## See Also
+
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-2fab1.md)
+  Creates a mark that fills the area between zero and the given function.
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-1jmpp.md)
+  Creates a mark that fills the area between zero and the given function.
+- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-39eit.md)
+  Creates a mark that fills the area between zero and the given function.
+- [init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-etcn.md)
+  Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
+- [init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-9gui6.md)
+  Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
+- [init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-5akqm.md)
+  Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
+- [init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-23gxe.md)
+  Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
+
 
 ---
 

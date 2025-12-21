@@ -17,7 +17,7 @@ var isBordered: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the button has a border, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. A button’s border isn’t the single line of most other controls’ borders—instead, it’s a raised bezel. By default, buttons are bordered. If the bordered state of a button changes, it gets redrawn.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the button has a border, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. A button’s border isn’t the single line of most other controls’ borders—instead, it’s a raised bezel. By default, buttons are bordered. If the bordered state of a button changes, it gets redrawn.
 
 ## See Also
 

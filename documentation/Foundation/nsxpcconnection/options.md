@@ -24,7 +24,6 @@ struct Options
 
 ### Constants
 - [static var privileged: NSXPCConnection.Options](nsxpcconnection/options/privileged.md)
-- [static var privileged: NSXPCConnection.Options](nsxpcconnection/options/privileged.md)
 ### Initializers
 - [init(rawValue: UInt)](nsxpcconnection/options/init(rawvalue:).md)
 

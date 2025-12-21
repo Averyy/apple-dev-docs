@@ -16,7 +16,7 @@ class func load(atPath path: String!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful.
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful.
 
 #### Discussion
 

@@ -25,7 +25,7 @@ func allocateRenderResources() throws
 
 #### Discussion
 
-- [`false`](https://developer.apple.com/documentation/swift/false) if the operation failed.
+- [`false`](https://developer.apple.com/documentation/Swift/false) if the operation failed.
 
 #### Discussion
 

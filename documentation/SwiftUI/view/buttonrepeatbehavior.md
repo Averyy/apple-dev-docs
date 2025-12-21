@@ -57,6 +57,7 @@ This affects all system button styles, as well as automatically affects custom `
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

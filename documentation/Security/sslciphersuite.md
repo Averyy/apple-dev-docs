@@ -17,7 +17,7 @@ A type for storing cipher suite values.
 ## Declaration
 
 ```swift
-typealias SSLCipherSuite = UInt16
+typealias SSLCipherSuite = UInt32
 ```
 
 #### Discussion

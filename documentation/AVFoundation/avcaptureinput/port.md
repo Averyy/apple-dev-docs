@@ -24,7 +24,7 @@ Instances of [`AVCaptureInput`](avcaptureinput.md) have one or more input ports,
 
 ## Topics
 
-### Inspecting an Input Port
+### Inspecting an input port
 - [var isEnabled: Bool](avcaptureinput/port/isenabled.md)
   A Boolean value that indicates whether the port is in an enabled state.
 - [var mediaType: AVMediaType](avcaptureinput/port/mediatype.md)
@@ -37,10 +37,10 @@ Instances of [`AVCaptureInput`](avcaptureinput.md) have one or more input ports,
   The position of the source device providing input through this port.
 - [var clock: CMClock?](avcaptureinput/port/clock.md)
   An object that represents the capture device’s clock.
-### Observing Format Changes
+### Observing format changes
 - [class let formatDescriptionDidChangeNotification: NSNotification.Name](avcaptureinput/port/formatdescriptiondidchangenotification.md)
   A notification the system posts when the capture input port’s format description changes.
-### Accessing the Input
+### Accessing the input
 - [var input: AVCaptureInput](avcaptureinput/port/input.md)
   The input object that owns the port.
 

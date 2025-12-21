@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Posted when the value of one or more keys in the local key-value store changed due to incoming data pushed from iCloud.
+Posted when the value of one or more keys changes due to incoming data from iCloud.
 
 **Availability**:
 - iOS 5.0+
@@ -22,16 +22,29 @@ class let didChangeExternallyNotification: NSNotification.Name
 
 #### Discussion
 
-This notification is sent only upon a change received from iCloud; it is not sent when your app sets a value.
+If your app is running when iCloud delivers changes from another device, the system generates this notification for your app. Use it to update your app’s content in response to the new data.
 
-The user info dictionary can contain the reason for the notification as well as a list of which values changed, as follows:
+The user info dictionary can contain additional data about the reason for the notification:
 
-- The value of the [`NSUbiquitousKeyValueStoreChangeReasonKey`](nsubiquitouskeyvaluestorechangereasonkey.md) key, when present, indicates why the key-value store changed. Its value is one of the constants in [`Change Reason Values`](1433687-change-reason-values.md).
-- The value of the [`NSUbiquitousKeyValueStoreChangedKeysKey`](nsubiquitouskeyvaluestorechangedkeyskey.md), when present, is an array of strings, each the name of a key whose value changed.
+- When the [`NSUbiquitousKeyValueStoreChangeReasonKey`](nsubiquitouskeyvaluestorechangereasonkey.md) key is present, it indicates the reason why the key-value store changed. The value of this key is one of the constants [`NSUbiquitousKeyValueStoreServerChange`](nsubiquitouskeyvaluestoreserverchange.md), [`NSUbiquitousKeyValueStoreInitialSyncChange`](nsubiquitouskeyvaluestoreinitialsyncchange.md), [`NSUbiquitousKeyValueStoreQuotaViolationChange`](nsubiquitouskeyvaluestorequotaviolationchange.md), or [`NSUbiquitousKeyValueStoreAccountChange`](nsubiquitouskeyvaluestoreaccountchange.md).
+- When the [`NSUbiquitousKeyValueStoreChangedKeysKey`](nsubiquitouskeyvaluestorechangedkeyskey.md) key is present, its value is an array of strings, each of which contains the name of a key that changed.
 
-The notification object is the [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvaluestore.md) object whose contents changed.
+To receive this notification, register for it shortly after launch. Specify the default key-value store object as the object from which you want to receive notifications.
 
-> ❗ **Important**: Early in your app’s launch sequence, register for the [`didChangeExternallyNotification`](nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification using the [`NotificationCenter`](notificationcenter.md) class. Specify the default key-value store object (obtained using the [`default`](nsubiquitouskeyvaluestore/default.md) class method) as the object whose notifications you want to receive.
+## See Also
+
+- [let NSUbiquitousKeyValueStoreChangeReasonKey: String](nsubiquitouskeyvaluestorechangereasonkey.md)
+  A key that indicates the reason why the key-value store changed.
+- [let NSUbiquitousKeyValueStoreChangedKeysKey: String](nsubiquitouskeyvaluestorechangedkeyskey.md)
+  A key that indicates which keys changed in the iCloud key-value store.
+- [var NSUbiquitousKeyValueStoreServerChange: Int](nsubiquitouskeyvaluestoreserverchange.md)
+  A constant that indicates a value changed in iCloud.
+- [var NSUbiquitousKeyValueStoreInitialSyncChange: Int](nsubiquitouskeyvaluestoreinitialsyncchange.md)
+  A constant that indicates the initial attempt to load keys and values from iCloud is in progress.
+- [var NSUbiquitousKeyValueStoreQuotaViolationChange: Int](nsubiquitouskeyvaluestorequotaviolationchange.md)
+  A constant that indicates an attempt to write data exceeded the quota limits.
+- [var NSUbiquitousKeyValueStoreAccountChange: Int](nsubiquitouskeyvaluestoreaccountchange.md)
+  A constant that indicates the current Apple account changed.
 
 
 ---

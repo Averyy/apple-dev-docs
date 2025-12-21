@@ -105,8 +105,8 @@ Core Animation provides high frame rates and smooth animations without burdening
 - [class CARenderer](carenderer.md)
   A layer that allows an application to render a layer tree into a Core OpenGL context.
 ### ProMotion
-- [Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro](optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro.md)
-  Provide custom animated content for ProMotion displays.
+- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+  Improve your app’s visual appearance and save power by requesting preferred refresh rates and synchronizing your animations with the system.
 ### Remote Display of Layer Content
 - [class CARemoteLayerClient](caremotelayerclient.md)
   A legacy class for cross-process rendering.

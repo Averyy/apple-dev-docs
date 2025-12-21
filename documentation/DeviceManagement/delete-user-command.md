@@ -18,10 +18,10 @@ Refer to the following sections to determine supported channels and requirements
 
 An error response uses one of the following error codes:
 
-- 12071: The user doesn’t exist.
-- 12072: The user is currently logged in.
-- 12073: The user has data to sync and ForceDeletion is false or unspecified.
-- 12074: Unable to delete the user. In macOS, this error code also returns for an attempt to delete the last administrator account.
+- `12071`: The user doesn’t exist.
+- `12072`: The user is currently logged in.
+- `12073`: The user has data to sync and ForceDeletion is false or unspecified.
+- `12074`: Unable to delete the user. In macOS, this error code also returns for an attempt to delete the last administrator account.
 
 ##### Command Availability
 

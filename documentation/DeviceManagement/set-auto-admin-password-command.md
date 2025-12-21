@@ -41,7 +41,7 @@ The request object the server returns for the Set Auto Admin Password Command.
 - [Clear Passcode](clear-passcode-command.md)
   Remove the passcode from a device.
 - [Clear Restrictions Password](clear-restrictions-password-command.md)
-  Clear the restrictions password and the restrictions on a device.
+  Clear the Screen Time password and the restrictions on a device.
 - [Unlock User Account](unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
 - [Set Firmware Password](set-firmware-password-command.md)

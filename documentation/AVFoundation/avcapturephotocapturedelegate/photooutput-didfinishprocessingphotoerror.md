@@ -20,14 +20,14 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPho
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
-- [Saving Captured Photos](saving-captured-photos.md)
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
+- [Saving captured photos](saving-captured-photos.md)
 
 #### Discussion
 

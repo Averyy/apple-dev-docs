@@ -24,8 +24,8 @@ class NSCompoundPredicate
 
 Use [`NSCompoundPredicate`](nscompoundpredicate.md) to create an `AND` or `OR` compound predicate of one or more other predicates, or the `NOT` of a single predicate. For the logical `AND` and `OR` operations:
 
-- An `AND` predicate with no subpredicates evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
-- An `OR` predicate with no subpredicates evaluates to [`false`](https://developer.apple.com/documentation/swift/false).
+- An `AND` predicate with no subpredicates evaluates to [`true`](https://developer.apple.com/documentation/Swift/true).
+- An `OR` predicate with no subpredicates evaluates to [`false`](https://developer.apple.com/documentation/Swift/false).
 - A compound predicate with one or more subpredicates evaluates to the truth of its subpredicates.
 
 ## Topics

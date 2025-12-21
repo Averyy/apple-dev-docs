@@ -17,7 +17,7 @@ optional func textView(_ textView: NSTextView, doCommandBy commandSelector: Sele
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) indicates that the delegate handled the command and the text view will not attempt to perform it; [`false`](https://developer.apple.com/documentation/swift/false) indicates that the delegate did not handle the command the text view will attempt to perform it.
+[`true`](https://developer.apple.com/documentation/Swift/true) indicates that the delegate handled the command and the text view will not attempt to perform it; [`false`](https://developer.apple.com/documentation/Swift/false) indicates that the delegate did not handle the command the text view will attempt to perform it.
 
 #### Discussion
 

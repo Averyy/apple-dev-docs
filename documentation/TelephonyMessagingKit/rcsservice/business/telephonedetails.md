@@ -6,8 +6,8 @@
 Structure containing the telephone number details provided by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,16 +25,6 @@ struct TelephoneDetails
   Phone number provided by business.
 - [let phoneNumberType: String](rcsservice/business/telephonedetails/phonenumbertype.md)
   A string to represent the type of phone number; for example, “Work”.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/telephonedetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/telephonedetails/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing details
-- [static func == (RCSService.Business.TelephoneDetails, RCSService.Business.TelephoneDetails) -> Bool](rcsservice/business/telephonedetails/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/telephonedetails/equatable-implementations.md)
 
 ## Relationships
 

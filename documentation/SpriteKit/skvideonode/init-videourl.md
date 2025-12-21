@@ -17,7 +17,6 @@ Initializes a video node using a URL that points to a video file.
 ## Declaration
 
 ```swift
-@MainActor
 init(videoURL url: URL)
 ```
 

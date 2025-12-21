@@ -23,8 +23,8 @@ typealias Output = Estimator.Transformer.Output
 - [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> ColumnSelector<Estimator, UnwrappedInput>.Transformer](columnselector/fitted(to:eventhandler:).md)
   Fits a transformer to a data frame
 - [ColumnSelector.Input](columnselector/input.md)
-- [ColumnSelector.Transformer](columnselector/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

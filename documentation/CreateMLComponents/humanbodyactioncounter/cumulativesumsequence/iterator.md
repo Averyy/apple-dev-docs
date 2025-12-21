@@ -24,10 +24,6 @@ struct Iterator
 ### Getting the next element
 - [func next() async throws -> TemporalFeature<Float>?](humanbodyactioncounter/cumulativesumsequence/iterator/next.md)
   Advances to the next element and returns it, or nil if no next element exists.
-### Type Aliases
-- [HumanBodyActionCounter.CumulativeSumSequence.Iterator.Element](humanbodyactioncounter/cumulativesumsequence/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](humanbodyactioncounter/cumulativesumsequence/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
@@ -38,10 +34,6 @@ struct Iterator
 
 - [func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/makeasynciterator.md)
   Constructs an iterator.
-- [HumanBodyActionCounter.CumulativeSumSequence.AsyncIterator](humanbodyactioncounter/cumulativesumsequence/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [HumanBodyActionCounter.CumulativeSumSequence.Feature](humanbodyactioncounter/cumulativesumsequence/feature.md)
-  The feature type.
 
 
 ---

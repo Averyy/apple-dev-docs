@@ -1,8 +1,8 @@
-# Configuring and parsing App Store Connect webhook notifications
+# Configuring and parsing App Store Connect API webhook notifications
 
 **Framework**: App Store Connect API
 
-Manage the configuration, testing, and processing of App Store Connect notifications for your app.
+Manage the configuration, testing, and processing of App Store Connect API notifications for your app.
 
 #### Overview
 

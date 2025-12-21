@@ -15,6 +15,14 @@
 func AudioGetHostClockFrequency() -> Float64
 ```
 
+#### Return Value
+
+A Float64 containing the number of ticks per second in the host time base.
+
+#### Discussion
+
+Gets the number of ticks per second in the host time base.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

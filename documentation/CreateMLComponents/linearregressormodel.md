@@ -33,14 +33,6 @@ struct LinearRegressorModel<Scalar> where Scalar : MLShapedArrayScalar, Scalar :
 ### Performing the regression
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> Scalar](linearregressormodel/applied(to:eventhandler:).md)
   Performs a regression on a single input.
-- [LinearRegressorModel.Input](linearregressormodel/input.md)
-  The input type.
-### Type Aliases
-- [LinearRegressorModel.Output](linearregressormodel/output.md)
-  The output type.
-### Default Implementations
-- [Regressor Implementations](linearregressormodel/regressor-implementations.md)
-- [Transformer Implementations](linearregressormodel/transformer-implementations.md)
 
 ## Relationships
 

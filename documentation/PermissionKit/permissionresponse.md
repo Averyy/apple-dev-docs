@@ -6,11 +6,11 @@
 A full permission response that includes the original question and chosen answer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ struct PermissionResponse<Topic> where Topic : QuestionTopic
 
 ## Topics
 
-### Summarizing a permission response
+### Getting response information
 - [let choice: PermissionChoice](permissionresponse/choice.md)
   The choice made by the person initiating this response.
 - [let question: PermissionQuestion<Topic>](permissionresponse/question.md)
@@ -32,10 +32,15 @@ struct PermissionResponse<Topic> where Topic : QuestionTopic
 
 ## See Also
 
+- [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
+](askcenter/responses(for:).md)
+  Registers the topic type with the system and returns an asynchronous sequence of responses.
+- [struct CommunicationHandle](communicationhandle.md)
+  Contact information for identifying and communicating with a person.
+- [struct PermissionChoice](permissionchoice.md)
+  A class that uniquely identifies a specific, statically defined permission choice.
 - [class CommunicationLimits](communicationlimits.md)
   A type that encapsulates the communication limits for your app.
-- [struct CommunicationHandle](communicationhandle.md)
-  A piece of identifying information that can be used to communicate with someone.
 
 
 ---

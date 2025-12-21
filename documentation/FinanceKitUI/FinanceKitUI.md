@@ -5,6 +5,11 @@
 
 Add orders to Apple Wallet.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+
 #### Overview
 
 The `FinanceKitUI` framework contains a standardized UI that interacts securely with [`FinanceKit`](https://developer.apple.com/documentation/FinanceKit) and the [`FinanceStore`](https://developer.apple.com/documentation/FinanceKit/FinanceStore) to support the addition of orders to a person’s Apple Wallet.

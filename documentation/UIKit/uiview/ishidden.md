@@ -21,13 +21,13 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-Setting the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) hides the receiver and setting it to [`false`](https://developer.apple.com/documentation/swift/false) shows the receiver. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) hides the receiver and setting it to [`false`](https://developer.apple.com/documentation/Swift/false) shows the receiver. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 A hidden view disappears from its window and does not receive input events. It remains in its superview’s list of subviews, however, and participates in autoresizing as usual. Hiding a view with subviews has the effect of hiding those subviews and any view descendants they might have. This effect is implicit and does not alter the hidden state of the receiver’s descendants.
 
 Hiding the view that is the window’s current first responder causes the view’s next valid key view to become the new first responder.
 
-The value of this property reflects the state of the receiver only and does not account for the state of the receiver’s ancestors in the view hierarchy. Thus this property can be [`false`](https://developer.apple.com/documentation/swift/false) but the receiver may still be hidden if an ancestor is hidden.
+The value of this property reflects the state of the receiver only and does not account for the state of the receiver’s ancestors in the view hierarchy. Thus this property can be [`false`](https://developer.apple.com/documentation/Swift/false) but the receiver may still be hidden if an ancestor is hidden.
 
 ## See Also
 

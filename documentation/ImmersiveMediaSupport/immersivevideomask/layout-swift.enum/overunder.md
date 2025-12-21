@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing over under mask layout
+A value that represents over-under mask layout.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,11 +18,11 @@ case overUnder
 ## See Also
 
 - [ImmersiveVideoMask.Layout.mono](immersivevideomask/layout-swift.enum/mono.md)
-  A value representing mono mask layout i.e single mask for both the eyes
+  A value that represents mono mask layout.
 - [ImmersiveVideoMask.Layout.separate](immersivevideomask/layout-swift.enum/separate.md)
-  A value representing stereo mask but separated
+  A value that represents stereo mask, but separated.
 - [ImmersiveVideoMask.Layout.sideBySide](immersivevideomask/layout-swift.enum/sidebyside.md)
-  A value representing side by side mask layout
+  A value that represents side by side mask layout.
 
 
 ---

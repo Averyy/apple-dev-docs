@@ -10,7 +10,7 @@ To integrate your app’s photo and video capabilities with Siri and Apple Intel
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-For example, if your app allows someone to open a photo, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.photos` domain and the [`openAsset`](assistantschemas/photosintent/openasset.md) schema:
+For example, if your app allows someone to open a photo, use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.photos` domain and the [`openAsset`](assistantschemas/photosintent/openasset.md) schema:
 
 ```swift
 @AppIntent(schema: .photos.openAsset)
@@ -40,7 +40,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ##### Ensure Your Entity Meets Requirements
 
-If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `AssetEntity`. The following code snippet shows how the `AssetEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
+If you use app entities to describe custom data types, annotate the app entity implementation with the [`AppEntity(schema:)`](appentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `AssetEntity`. The following code snippet shows how the `AssetEntity` implementation uses the [`AppEntity(schema:)`](appentity(schema:).md) macro:
 
 ```swift
 @AppEntity(schema: .photos.asset)
@@ -76,7 +76,7 @@ For a list of available app entity schemas in the `.photos` domain, see [`Assist
 
 ##### Ensure Your Enumeration Meets Requirements
 
-To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.photos` domain and a schema to it. The following example uses the [`assetType`](assistantschemas/photosenum/assettype.md) schema:
+To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AppEnum(schema:)`](appenum(schema:).md) macro. Then, pass the `.photos` domain and a schema to it. The following example uses the [`assetType`](assistantschemas/photosenum/assettype.md) schema:
 
 ```swift
 @AppEnum(schema: .photos.assetType)

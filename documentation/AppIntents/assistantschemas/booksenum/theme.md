@@ -27,7 +27,7 @@ Use Swift macros that generate additional properties and add protocol conformanc
 The following example shows an app enum that conforms to the `.books.theme` schema:
 
 ```swift
-@AssistantEnum(schema: .books.theme)
+@AppEnum(schema: .books.theme)
 enum BookTheme: AppEnum {
     case lightMode
     case darkMode

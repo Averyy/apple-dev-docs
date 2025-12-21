@@ -13,7 +13,6 @@ Dequantizes the input tensor and writes the result to the output tensor.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

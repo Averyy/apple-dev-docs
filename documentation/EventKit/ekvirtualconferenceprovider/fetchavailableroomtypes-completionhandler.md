@@ -21,10 +21,6 @@ func fetchAvailableRoomTypes() async throws -> [EKVirtualConferenceRoomTypeDescr
 
 #### Discussion
 
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func fetchAvailableRoomTypes() async throws -> [EKVirtualConferenceRoomTypeDescriptor]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Your virtual conference provider implements this method to provide the list of rooms where users schedule events using your service. Create an instance of [`EKVirtualConferenceRoomTypeDescriptor`](ekvirtualconferenceroomtypedescriptor.md) for each room that’s available for users to schedule events in.
 
 ```swift

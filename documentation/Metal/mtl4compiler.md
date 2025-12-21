@@ -6,12 +6,12 @@
 A abstraction for a pipeline state and shader function compiler.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -33,8 +33,6 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
 - [var pipelineDataSetSerializer: (any MTL4PipelineDataSetSerializer)?](mtl4compiler/pipelinedatasetserializer.md)
   Returns the pipeline data set serializer into which this compiler stores data for all pipelines it creates.
 ### Instance Methods
-- [func cancel()](mtl4compiler/cancel.md)
-  Cancels all pending compiler tasks for this compiler.
 - [func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor, compilerTaskOptions: MTL4CompilerTaskOptions?) throws -> any MTL4BinaryFunction](mtl4compiler/makebinaryfunction(descriptor:compilertaskoptions:)-5o46e.md)
   Creates a new binary visible or intersection function synchronously.
 - [func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor, compilerTaskOptions: MTL4CompilerTaskOptions?) async throws -> any MTL4BinaryFunction](mtl4compiler/makebinaryfunction(descriptor:compilertaskoptions:)-hkc4.md)
@@ -71,15 +69,16 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
 
 ## See Also
 
-- [Metal Libraries](metal-libraries.md)
+- [Metal libraries](metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal Dynamic Libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal Binary Archives](metal-binary-archives.md)
+- [Metal binary archives](metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
 - [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
 - [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+  The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
 - [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
   Represents the status of a compiler task.
 - [protocol MTL4Archive](mtl4archive.md)
@@ -90,8 +89,6 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
-  Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 

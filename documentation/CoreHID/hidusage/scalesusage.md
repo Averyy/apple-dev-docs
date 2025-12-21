@@ -61,20 +61,8 @@ enum ScalesUsage
 - [HIDUsage.ScalesUsage.weightUnitTaels](hidusage/scalesusage/weightunittaels.md)
 - [HIDUsage.ScalesUsage.weightUnitTroyOunce](hidusage/scalesusage/weightunittroyounce.md)
 - [HIDUsage.ScalesUsage.zeroScale](hidusage/scalesusage/zeroscale.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/scalesusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/scalesusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.ScalesUsage.RawValue](hidusage/scalesusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/scalesusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/scalesusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/scalesusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

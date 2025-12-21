@@ -15,6 +15,10 @@
 class QLPreviewReply
 ```
 
+#### Overview
+
+To provide a data-based preview, you have to return a QLPreviewReply object.
+
 ## Topics
 
 ### Initializers

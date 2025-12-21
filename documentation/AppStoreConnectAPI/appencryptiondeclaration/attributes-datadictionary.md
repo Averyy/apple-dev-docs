@@ -19,7 +19,7 @@ object AppEncryptionDeclaration.Attributes
 - [App Encryption Declarations](app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
 - [object AppEncryptionDeclaration.Relationships](appencryptiondeclaration/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

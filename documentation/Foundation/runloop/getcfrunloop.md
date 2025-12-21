@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns the receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) object.
+Returns the receiver’s underlying run loop object.
 
 **Availability**:
 - iOS 2.0+

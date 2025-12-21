@@ -19,7 +19,7 @@ var requiresMainThread: Bool { get }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which requires the printing system to execute rendering operations, like drawing and page-count calculation, on the main thread. Override this property to return [`false`](https://developer.apple.com/documentation/swift/false) if you want the system to execute operations like [`draw(in:forPageAt:)`](uiprintformatter/draw(in:forpageat:).md) and [`pageCount`](uiprintformatter/pagecount.md) on a background thread.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), which requires the printing system to execute rendering operations, like drawing and page-count calculation, on the main thread. Override this property to return [`false`](https://developer.apple.com/documentation/Swift/false) if you want the system to execute operations like [`draw(in:forPageAt:)`](uiprintformatter/draw(in:forpageat:).md) and [`pageCount`](uiprintformatter/pagecount.md) on a background thread.
 
 
 ---

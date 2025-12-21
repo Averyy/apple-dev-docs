@@ -19,8 +19,6 @@ The pixel format for the underlying texture.
 var pixelFormat: MTLPixelFormat { get }
 ```
 
-#### Discussion
-
 ## See Also
 
 - [var width: Int](mpsimagedescriptor/width.md)

@@ -21,7 +21,7 @@ static let stepCount: HKQuantityTypeIdentifier
 
 #### Discussion
 
-These samples use count units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use count units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). The system automatically records samples on iPhone and Apple Watch. Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
 
 ## See Also
 

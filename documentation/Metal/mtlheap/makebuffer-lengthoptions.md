@@ -26,9 +26,11 @@ A new buffer object backed by heap memory, or `nil` if the heap memory is full.
 
 #### Discussion
 
-The heap’s type must be [`MTLHeapType.automatic`](mtlheaptype/automatic.md).
+You can call the method with the following restrictions:
 
-The buffer’s storage mode and CPU cache mode must match the heap’s [`storageMode`](mtlheap/storagemode.md) and [`cpuCacheMode`](mtlheap/cpucachemode.md) values.
+- The heap’s type needs to be [`MTLHeapType.automatic`](mtlheaptype/automatic.md)
+- The buffer’s storage mode option needs to match the heap’s [`storageMode`](mtlheap/storagemode.md) property
+- The buffer’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) property
 
 ## Parameters
 
@@ -37,12 +39,8 @@ The buffer’s storage mode and CPU cache mode must match the heap’s [`storage
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:).md)
-  Creates a texture on the heap.
 - [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:offset:).md)
   Creates a buffer at a specified offset on the heap.
-- [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:offset:).md)
-  Creates a texture at a specified offset on the heap.
 
 
 ---

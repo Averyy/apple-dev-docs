@@ -6,7 +6,7 @@
 Configure an audio stream for spatial computing.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

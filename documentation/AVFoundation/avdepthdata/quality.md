@@ -21,7 +21,7 @@ enum Quality
 
 ## Topics
 
-### Depth Quality Values
+### Depth quality values
 - [AVDepthData.Quality.low](avdepthdata/quality/low.md)
   The depth map is a poor candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 - [AVDepthData.Quality.high](avdepthdata/quality/high.md)

@@ -19,7 +19,7 @@ string autoRenewProductId
 - [type autoRenewStatus](autorenewstatus.md)
   The renewal status for an auto-renewable subscription.
 - [type expirationIntent](expirationintent.md)
-  The reason a subscription expired.
+  The reason an auto-renewable subscription expired.
 - [type expiresDate](expiresdate.md)
   The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 - [type isUpgraded](isupgraded.md)

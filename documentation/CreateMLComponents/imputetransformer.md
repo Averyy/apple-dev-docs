@@ -23,8 +23,6 @@ struct ImputeTransformer<Element> where Element : Decodable, Element : Encodable
 ## Topics
 
 ### Creating a transformer
-- [init(from: any Decoder) throws](imputetransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(value: Element)](imputetransformer/init(value:).md)
   Creates an impute transformer.
 ### Getting the impute value
@@ -33,19 +31,6 @@ struct ImputeTransformer<Element> where Element : Decodable, Element : Encodable
 ### Performing the transformation
 - [func applied(to: Element?, eventHandler: EventHandler?) -> Element](imputetransformer/applied(to:eventhandler:).md)
   Imputes a single input.
-### Instance Methods
-- [func encode(to: any Encoder) throws](imputetransformer/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [ImputeTransformer.Input](imputetransformer/input.md)
-  The input type.
-- [ImputeTransformer.Output](imputetransformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](imputetransformer/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](imputetransformer/equatable-implementations.md)
-- [Hashable Implementations](imputetransformer/hashable-implementations.md)
-- [Transformer Implementations](imputetransformer/transformer-implementations.md)
 
 ## Relationships
 

@@ -3,11 +3,11 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Dials a conversation using the provided dial request
+Starts a cellular conversation using the provided action.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,19 @@ Dials a conversation using the provided dial request
 ```swift
 final func startCellularConversation(_ action: StartCellularConversationAction) async throws
 ```
+
+## Mentions
+
+- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+
+## Parameters
+
+- `action`: The action that initiates a cellular conversation.
+
+## See Also
+
+- [static let sharedInstance: TelephonyConversationManager](telephonyconversationmanager/sharedinstance.md)
+  The shared object that manages cellular conversations.
 
 
 ---

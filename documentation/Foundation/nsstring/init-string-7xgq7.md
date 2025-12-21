@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Returns an `NSString` object initialized by copying the characters from another given string.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -18,6 +20,10 @@
 @nonobjc
 convenience init(string aString: NSString)
 ```
+
+#### Return Value
+
+An `NSString` object initialized by copying the characters from `aString`. The returned object may be different from the original receiver.
 
 
 ---

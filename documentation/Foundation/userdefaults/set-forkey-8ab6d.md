@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets the value of the specified default key.
+Sets the value of the specified key to a property list object.
 
 **Availability**:
 - iOS 2.0+
@@ -22,29 +22,27 @@ func set(_ value: Any?, forKey defaultName: String)
 
 #### Discussion
 
-The `value` parameter can be only property list objects: [`NSData`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169), [`NSString`](nsstring.md), [`NSNumber`](nsnumber.md), [`NSDate`](nsdate.md), [`NSArray`](nsarray.md), or [`NSDictionary`](nsdictionary.md). For [`NSArray`](nsarray.md) and [`NSDictionary`](nsdictionary.md) objects, their contents must be property list objects. For more information, see [`What is a Property List?`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html#//apple_ref/doc/uid/10000048i-CH3-54303) in [`Property List Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i).
+Use this method to write property list object types to the defaults store. To store types that aren’t property list objects, archive them to a [`Data`](data.md) object and use this method to save that data object to the defaults store.
 
-Setting a default has no effect on the value returned by the [`object(forKey:)`](userdefaults/object(forkey:).md) method if the same key exists in a domain that precedes the application domain in the search list.
+After you call this method, the system generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
 
 ## Parameters
 
-- `value`: The object to store in the defaults database.
-- `defaultName`: The key with which to associate the value.
+- `value`: The property-list type to store in the defaults database. If you specify an   array or dictionary type, those collections must similarly contain only property list types.
+- `defaultName`: The key that contains the setting’s name.
 
 ## See Also
 
-- [func removeObject(forKey: String)](userdefaults/removeobject(forkey:).md)
-  Removes the value of the specified default key.
-- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
-  Sets the value of the specified default key to the specified float value.
-- [func set(Double, forKey: String)](userdefaults/set(_:forkey:)-2w22f.md)
-  Sets the value of the specified default key to the double value.
-- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
-  Sets the value of the specified default key to the specified integer value.
 - [func set(Bool, forKey: String)](userdefaults/set(_:forkey:)-3nn5m.md)
-  Sets the value of the specified default key to the specified Boolean value.
+  Sets the value of the specified key to a Boolean value.
+- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
+  Sets the value of the specified key to an integer.
+- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
+  Sets the value of the specified key to a floating-point number.
+- [func set(Double, forKey: String)](userdefaults/set(_:forkey:)-2w22f.md)
+  Sets the value of the specified key to a double.
 - [func set(URL?, forKey: String)](userdefaults/set(_:forkey:)-2bqjt.md)
-  Sets the value of the specified default key to the specified URL.
+  Sets the value of the specified key to a URL.
 
 
 ---

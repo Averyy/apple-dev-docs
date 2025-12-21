@@ -1,7 +1,7 @@
 # AnnotationCalloutDelegate
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: struct
 
 Methods for customizing the behavior and appearance of an annotation callout.
 
@@ -20,7 +20,7 @@ You can customize an annotation callout by replacing the callout element, or by 
 
 ##### Creating a Custom Callout
 
-This example shows how to replace the standard callout with a custom callout for a [`mapkit.MarkerAnnotation`](mapkit.markerannotation.md).
+This example shows how to replace the standard callout with a custom callout for a [`MarkerAnnotation`](markerannotation.md).
 
 ```javascript
 const calloutDelegate = {
@@ -94,38 +94,32 @@ const annotation = new mapkit.MarkerAnnotation(
 ## Topics
 
 ### Customizing callout appearance
-- [calloutAnchorOffsetForAnnotation](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
+- [calloutAnchorOffsetForAnnotation(annotation, size)](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
   Returns a point determining the callout’s anchor offset.
-- [calloutShouldAppearForAnnotation](annotationcalloutdelegate/calloutshouldappearforannotation.md)
+- [calloutShouldAppearForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldappearforannotation.md)
   Determines whether the callout appears for an annotation.
-- [calloutShouldAnimateForAnnotation](annotationcalloutdelegate/calloutshouldanimateforannotation.md)
+- [calloutShouldAnimateForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldanimateforannotation.md)
   Determines whether the callout animates.
-- [calloutAppearanceAnimationForAnnotation](annotationcalloutdelegate/calloutappearanceanimationforannotation.md)
+- [calloutAppearanceAnimationForAnnotation(annotation)](annotationcalloutdelegate/calloutappearanceanimationforannotation.md)
   Returns a CSS animation to use when the callout appears.
 ### Providing elements
-- [calloutContentForAnnotation](annotationcalloutdelegate/calloutcontentforannotation.md)
+- [calloutContentForAnnotation(annotation)](annotationcalloutdelegate/calloutcontentforannotation.md)
   Returns custom content for the callout bubble.
-- [calloutElementForAnnotation](annotationcalloutdelegate/calloutelementforannotation.md)
+- [calloutElementForAnnotation(annotation)](annotationcalloutdelegate/calloutelementforannotation.md)
   Returns an element representing a custom callout.
-- [calloutLeftAccessoryForAnnotation](annotationcalloutdelegate/calloutleftaccessoryforannotation.md)
+- [calloutLeftAccessoryForAnnotation(annotation)](annotationcalloutdelegate/calloutleftaccessoryforannotation.md)
   Returns an element to use as a custom accessory on the left side of the callout content area.
-- [calloutRightAccessoryForAnnotation](annotationcalloutdelegate/calloutrightaccessoryforannotation.md)
+- [calloutRightAccessoryForAnnotation(annotation)](annotationcalloutdelegate/calloutrightaccessoryforannotation.md)
   Returns an element to use as a custom accessory on the right side of the callout content area.
 
 ## See Also
 
-- [Clustering annotations](clustering-annotations.md)
-  Combine multiple annotations into a single clustered annotation.
-- [mapkit.Annotation](mapkit.annotation.md)
-  The base annotation object for creating custom annotations.
-- [mapkit.PlaceAnnotation](mapkit.placeannotation.md)
-  An annotation for a place.
-- [mapkit.MapFeatureAnnotation](mapkit.mapfeatureannotation.md)
-  An object that represents a map feature that the user selects.
-- [mapkit.Annotation.CollisionMode](mapkit.annotation.collisionmode.md)
+- [const CollisionMode](collisionmode.md)
   Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view.
-- [mapkit.Annotation.DisplayPriority](mapkit.annotation.displaypriority.md)
+- [const DisplayPriority](displaypriority.md)
   Constant values that provide a hint the map uses to prioritize displaying annotations.
+- [interface Size](size.md)
+  A structure that represents a size.
 
 
 ---

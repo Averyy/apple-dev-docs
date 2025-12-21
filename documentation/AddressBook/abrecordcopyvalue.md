@@ -14,7 +14,7 @@ Returns the value of the given property.
 ## Declaration
 
 ```swift
-func ABRecordCopyValue(_ record: ABRecord!, _ property: ABPropertyID) -> Unmanaged<CFTypeRef>!
+func ABRecordCopyValue(_ record: ABRecordRef!, _ property: CFString!) -> Unmanaged<CFTypeRef>!
 ```
 
 #### Return Value

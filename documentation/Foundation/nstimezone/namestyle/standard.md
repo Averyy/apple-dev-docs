@@ -32,16 +32,6 @@ case standard
   Specifies a generic name style. For example, “Central Time” for Central Time.
 - [NSTimeZone.NameStyle.shortGeneric](nstimezone/namestyle/shortgeneric.md)
   Specifies a generic time zone name. For example, “CT” for Central Time.
-- [NSTimeZone.NameStyle.shortStandard](nstimezone/namestyle/shortstandard.md)
-  Specifies a short name style. For example, “CST” for Central Time.
-- [NSTimeZone.NameStyle.daylightSaving](nstimezone/namestyle/daylightsaving.md)
-  Specifies a daylight saving name style. For example, “Central Daylight Time” for Central Time.
-- [NSTimeZone.NameStyle.shortDaylightSaving](nstimezone/namestyle/shortdaylightsaving.md)
-  Specifies a short daylight saving name style.  For example, “CDT” for Central Time.
-- [NSTimeZone.NameStyle.generic](nstimezone/namestyle/generic.md)
-  Specifies a generic name style. For example, “Central Time” for Central Time.
-- [NSTimeZone.NameStyle.shortGeneric](nstimezone/namestyle/shortgeneric.md)
-  Specifies a generic time zone name. For example, “CT” for Central Time.
 
 
 ---

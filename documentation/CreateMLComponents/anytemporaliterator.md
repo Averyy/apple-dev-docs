@@ -20,14 +20,6 @@ A type-erased async iterator.
 struct AnyTemporalIterator<Element>
 ```
 
-## Topics
-
-### Getting the next element
-- [func next() async throws -> Element?](anytemporaliterator/next.md)
-  Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](anytemporaliterator/asynciteratorprotocol-implementations.md)
-
 ## Relationships
 
 ### Conforms To

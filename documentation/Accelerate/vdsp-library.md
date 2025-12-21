@@ -124,10 +124,6 @@ The majority of vDSP operations are single-threaded and run on a single core. Ho
   Truncate the elements of a vector to a fraction.
 - [Zero crossing search](zero-crossing-search.md)
   Count and find the zero crossings in a vector.
-- [vDSP_zvsma](vdsp_zvsma.md)
-- [vDSP_zvsmaD](vdsp_zvsmad.md)
-- [vDSP_zvzsml](vdsp_zvzsml.md)
-- [vDSP_zvzsmlD](vdsp_zvzsmld.md)
 ### Single-vector sliding-window operations
 - [Sliding-window reduction functions](sliding-window-reduction-functions.md)
   Calculate maximum values and sums of values in a sliding window.
@@ -184,9 +180,6 @@ The majority of vDSP operations are single-threaded and run on a single core. Ho
 ### Constants
 - [vDSP Compile-Time Version Information](vdsp-compile-time-version-information.md)
   The version of vDSP at compile time.
-### Macros
-- [vDSP_DeprecateTranslations](vdsp_deprecatetranslations.md)
-- [vDSP_ENUM](vdsp_enum.md)
 
 ## See Also
 

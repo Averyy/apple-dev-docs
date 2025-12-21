@@ -23,11 +23,11 @@ func accept(connection: NSXPCConnection) -> Bool
 
 #### Return Value
 
-A boolean value that indicates whether the extension accepts the connection.
+A Boolean value that indicates whether the extension accepts the connection.
 
-## Parameters
+#### Discussion
 
-- `connection`: The incoming XPC connection object.
+- connection: The incoming XPC connection object.
 
 
 ---

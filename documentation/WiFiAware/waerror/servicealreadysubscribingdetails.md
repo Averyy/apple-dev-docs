@@ -6,23 +6,14 @@
 The optional details describing the service that’s subscribing.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ServiceAlreadySubscribingDetails
 ```
-
-## Topics
-
-### Generating initializers
-- [init(from: any Decoder) throws](waerror/servicealreadysubscribingdetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/servicealreadysubscribingdetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -35,9 +26,9 @@ struct ServiceAlreadySubscribingDetails
 ## See Also
 
 - [case serviceAlreadySubscribing(WAError.ServiceAlreadySubscribingDetails)](waerror/servicealreadysubscribing(_:).md)
-  An error that occurs if the system can’t create a new subscriber or browser.
+  An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be created.
 - [case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)](waerror/servicealreadypublishing(_:).md)
-  An error that occurs if the system can’t create a new publisher or listener.
+  An error that occurs if a new publisher or `Network/NetworkListener` can’t be created.
 - [WAError.ServiceAlreadyPublishingDetails](waerror/servicealreadypublishingdetails.md)
   The optional details describing the service that’s publishing.
 

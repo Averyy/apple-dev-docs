@@ -7,7 +7,7 @@ A type describing values that can be attached to the output of a test run and in
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

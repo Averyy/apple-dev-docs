@@ -21,9 +21,9 @@ var isTessellationFactorScaleEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), a scale factor is applied to the tessellation factors after the patch cull check is performed but before the tessellation factors are clamped to the value of [`maxTessellationFactor`](mtlrenderpipelinedescriptor/maxtessellationfactor.md). The scale factor is applied only if the patch is not culled.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), a scale factor is applied to the tessellation factors after the patch cull check is performed but before the tessellation factors are clamped to the value of [`maxTessellationFactor`](mtlrenderpipelinedescriptor/maxtessellationfactor.md). The scale factor is applied only if the patch is not culled.
 
 ## See Also
 

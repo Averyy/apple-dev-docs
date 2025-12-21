@@ -17,7 +17,7 @@ func sendAction() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an action was successfully sent to a target. If the selected cell is disabled, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if an action was successfully sent to a target. If the selected cell is disabled, this method does nothing and returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

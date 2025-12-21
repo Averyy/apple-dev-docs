@@ -5,9 +5,6 @@
 
 The response from the attribution server has an unknown error.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

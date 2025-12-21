@@ -21,7 +21,7 @@ var wantsInteractiveStart: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), interactive animations start as paused, allowing you to drive the animations yourself from the start. You might set this property to [`false`](https://developer.apple.com/documentation/swift/false) when you want to start your animations without interactivity. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), interactive animations start as paused, allowing you to drive the animations yourself from the start. You might set this property to [`false`](https://developer.apple.com/documentation/Swift/false) when you want to start your animations without interactivity. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

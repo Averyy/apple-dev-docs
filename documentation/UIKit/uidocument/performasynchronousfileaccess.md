@@ -14,7 +14,6 @@ Schedules a document-reading or document-writing operation on a concurrent backg
 ## Declaration
 
 ```swift
-@MainActor
 func performAsynchronousFileAccess(_ block: @escaping () -> Void)
 ```
 

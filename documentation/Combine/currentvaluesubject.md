@@ -28,32 +28,16 @@ final class CurrentValueSubject<Output, Failure> where Failure : Error
 
 Unlike [`PassthroughSubject`](passthroughsubject.md), [`CurrentValueSubject`](currentvaluesubject.md) maintains a buffer of the most recently published element.
 
-Calling [`send(_:)`](currentvaluesubject/send(_:).md) on a [`CurrentValueSubject`](currentvaluesubject.md) also updates the current value, making it equivalent to updating the [`value`](currentvaluesubject/value.md) directly.
+Calling [`send(_:)`](subject/send(_:).md) on a [`CurrentValueSubject`](currentvaluesubject.md) also updates the current value, making it equivalent to updating the [`value`](currentvaluesubject/value.md) directly.
 
 ## Topics
 
-### Creating a Current Value Subject
+### Creating a current value subject
 - [init(Output)](currentvaluesubject/init(_:).md)
   Creates a current value subject with the given initial value.
-### Accessing the Current Value
+### Accessing the current value
 - [var value: Output](currentvaluesubject/value.md)
   The value wrapped by this subject, published as a new element whenever it changes.
-### Delivering Elements to Subscribers
-- [func send(Output)](currentvaluesubject/send(_:).md)
-  Sends a value to the subscriber.
-- [func send()](currentvaluesubject/send.md)
-  Sends a void value to the subscriber.
-### Delivering Life Cycle Events to Subscribers
-- [func send(subscription: any Subscription)](currentvaluesubject/send(subscription:).md)
-  Sends a subscription to the subscriber.
-- [func send(completion: Subscribers.Completion<Failure>)](currentvaluesubject/send(completion:).md)
-  Sends a completion signal to the subscriber.
-### Applying Operators
-- [Publisher Operators](currentvaluesubject-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](currentvaluesubject/publisher-implementations.md)
-- [Subject Implementations](currentvaluesubject/subject-implementations.md)
 
 ## Relationships
 

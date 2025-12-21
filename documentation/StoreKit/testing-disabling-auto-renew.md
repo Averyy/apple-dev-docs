@@ -22,7 +22,7 @@ To test disabling auto-renew:
 Verify the change in the subscription status using either of these two methods:
 
 - If you’ve configured App Store Connect settings to receive App Store server notifications, your server receives the [`notification_type`](https://developer.apple.com/documentation/AppStoreServerNotifications/notification_type) `DID_CHANGE_RENEWAL_STATUS` each time the subscription’s auto-renew status changes. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications).
-- Verify the receipt by calling [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) with the latest receipt. Check that the [`auto_renew_status`](https://developer.apple.com/documentation/appstorereceipts/auto_renew_status) property of the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info) object changes to `0`. The `auto_renew_status_change_date_ms` property of `responseBody` contains the timestamp of the change.
+- Verify the receipt by calling [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) with the latest receipt. Check that the [`auto_renew_status`](https://developer.apple.com/documentation/AppStoreReceipts/auto_renew_status) property of the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/AppStoreReceipts/responseBody/Pending_renewal_info-data.dictionary) object changes to `0`. The `auto_renew_status_change_date_ms` property of `responseBody` contains the timestamp of the change.
 
 ##### Test Reenabling the Subscription Renewal
 
@@ -31,7 +31,7 @@ After disabling auto-renew, reenable the subscription on the same Manage Subscri
 Verify the change in the subscription status using either of these two methods:
 
 - If you’ve configured App Store Connect settings to receive App Store server notifications, your server receives the [`notification_type`](https://developer.apple.com/documentation/AppStoreServerNotifications/notification_type) `DID_CHANGE_RENEWAL_STATUS` each time the subscription’s auto-renew status changes. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications).
-- Verify the receipt by calling [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) with the latest receipt. Check that the [`auto_renew_status`](https://developer.apple.com/documentation/appstorereceipts/auto_renew_status) property of the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info) object changes to `1`. The `auto_renew_status_change_date_ms` property of `responseBody` contains the timestamp of the change.
+- Verify the receipt by calling [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) with the latest receipt. Check that the [`auto_renew_status`](https://developer.apple.com/documentation/AppStoreReceipts/auto_renew_status) property of the [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/AppStoreReceipts/responseBody/Pending_renewal_info-data.dictionary) object changes to `1`. The `auto_renew_status_change_date_ms` property of `responseBody` contains the timestamp of the change.
 
 ## See Also
 

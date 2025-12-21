@@ -25,6 +25,11 @@ func encodeWithOptimizer(_ transformer: LinearRegressorModel<Scalar>, to encoder
 - `transformer`: A transformer this estimator creates.
 - `encoder`: An encoder.
 
+## See Also
+
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>](linearregressor/decodewithoptimizer(from:).md)
+  Reads the encoded transformer and optimizer with a decoder.
+
 
 ---
 

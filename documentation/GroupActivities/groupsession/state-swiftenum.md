@@ -28,13 +28,6 @@ enum State
   An active state that indicates the session allows data synchronization between devices.
 - [GroupSession.State.invalidated(reason:)](groupsession/state-swift.enum/invalidated(reason:).md)
   A state that indicates the session is no longer valid and can’t be used for shared activities.
-### Comparing states
-- [static func != (Self, Self) -> Bool](groupsession/state-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (GroupSession<ActivityType>.State, GroupSession<ActivityType>.State) -> Bool](groupsession/state-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](groupsession/state-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
@@ -50,8 +43,6 @@ enum State
   The current state of the session.
 - [let id: UUID](groupsession/id.md)
   The unique identifier of the current session.
-- [var description: String](groupsession/description.md)
-  A textual representation of this instance.
 
 
 ---

@@ -31,6 +31,8 @@ case auto
   A mode that uses the preview optimized stabilization algorithm.
 - [AVCaptureVideoStabilizationMode.cinematicExtendedEnhanced](avcapturevideostabilizationmode/cinematicextendedenhanced.md)
   A mode that stabilizes video using the enhanced extended cinematic stabilization algorithm.
+- [AVCaptureVideoStabilizationMode.lowLatency](avcapturevideostabilizationmode/lowlatency.md)
+  Indicates that video should be stabilized using the low latency stabilization algorithm. Low Latency stabilization has a reduced field of view. Enabling low latency stabilization introduces no additional latency into the video capture pipeline.
 
 
 ---

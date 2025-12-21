@@ -14,7 +14,6 @@ Returns a file extension to append to the file URL of the document file being wr
 ## Declaration
 
 ```swift
-@MainActor
 func fileNameExtension(forType typeName: String?, saveOperation: UIDocument.SaveOperation) -> String
 ```
 

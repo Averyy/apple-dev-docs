@@ -32,9 +32,6 @@ enum Appearance
   The dark interface style.
 ### Initializers
 - [init?(rawValue: Int)](xcuidevice/appearance-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](xcuidevice/appearance-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](xcuidevice/appearance-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

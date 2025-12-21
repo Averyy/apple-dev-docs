@@ -6,7 +6,7 @@
 Text formatting controls for choosing fonts that appear in a dedicated window on macOS.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

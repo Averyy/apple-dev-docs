@@ -22,26 +22,9 @@ struct MusicTokenRequestOptions
 
 ## Topics
 
-### Initializers
-- [init(rawValue: Int)](musictokenrequestoptions/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: Int](musictokenrequestoptions/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MusicTokenRequestOptions.ArrayLiteralElement](musictokenrequestoptions/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [MusicTokenRequestOptions.Element](musictokenrequestoptions/element.md)
-  The element type of the option set.
-- [MusicTokenRequestOptions.RawValue](musictokenrequestoptions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let ignoreCache: MusicTokenRequestOptions](musictokenrequestoptions/ignorecache.md)
   An option that indicates the token provider needs to discard any cached token and generate a new token.
-### Default Implementations
-- [Equatable Implementations](musictokenrequestoptions/equatable-implementations.md)
-- [OptionSet Implementations](musictokenrequestoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](musictokenrequestoptions/setalgebra-implementations.md)
 
 ## Relationships
 

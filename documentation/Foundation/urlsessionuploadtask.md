@@ -23,8 +23,8 @@ class URLSessionUploadTask
 ## Mentions
 
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
-- [Uploading streams of data](uploading-streams-of-data.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
+- [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
 
@@ -46,6 +46,7 @@ When the upload phase of the request finishes, the task behaves like a data task
 - [init()](urlsessionuploadtask/init.md)
 ### Instance Methods
 - [func cancel(byProducingResumeData: (Data?) -> Void)](urlsessionuploadtask/cancel(byproducingresumedata:).md)
+  Cancels an upload and calls the completion handler with resume data for later use. resumeData will be nil if the server does not support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/
 ### Type Methods
 - [class func new() -> Self](urlsessionuploadtask/new.md)
 
@@ -80,7 +81,9 @@ When the upload phase of the request finishes, the task behaves like a data task
 - [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](urlsession/uploadtask(withstreamedrequest:).md)
   Creates a task that performs an HTTP request for uploading data based on the specified URL request.
 - [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:).md)
+  Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
 - [func uploadTask(withResumeData: Data, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:completionhandler:).md)
+  Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
 - [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 

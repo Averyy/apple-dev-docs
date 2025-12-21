@@ -30,7 +30,7 @@ The raw value of the [`introductory`](transaction/offertype-swift.struct/introdu
 - [static let promotional: Transaction.OfferType](transaction/offertype-swift.struct/promotional.md)
   A promotional offer for an auto-renewable subscription.
 - [static let code: Transaction.OfferType](transaction/offertype-swift.struct/code.md)
-  An offer with a subscription offer code for an auto-renewable subscription.
+  An offer code.
 - [static var winBack: Transaction.OfferType](transaction/offertype-swift.struct/winback.md)
   A win-back offer for an auto-renewable subscription.
 

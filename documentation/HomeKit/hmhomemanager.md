@@ -64,6 +64,8 @@ Adopt the [`HMHomeManagerDelegate`](hmhomemanagerdelegate.md) protocol in your a
   Updates the primary home of this home manager.
 ### Initializers
 - [init()](hmhomemanager/init.md)
+### Instance Methods
+- [func findVendorAccessory(hapPublicKey: Data, completionHandler: (HMAccessory?, (any Error)?) -> Void)](hmhomemanager/findvendoraccessory(happublickey:completionhandler:).md)
 
 ## Relationships
 

@@ -21,8 +21,10 @@ static var currentEntitlements: Transaction.Transactions { get }
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
 
 #### Discussion

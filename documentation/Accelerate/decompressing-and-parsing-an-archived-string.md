@@ -1,4 +1,4 @@
-# Decompressing and Parsing an Archived String
+# Decompressing and parsing an archived string
 
 **Framework**: Accelerate
 
@@ -78,7 +78,7 @@ defer {
 
 ##### Derive the Size of the Uncompressed String
 
-Use the size of the `DAT` blob field that you specified in [`Compressing and saving a string to the file system`](compressing-and-saving-a-string-to-the-file-system.md) to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:
+Use the size of the `DAT` blob field that you specified in [`Compressing and saving a string to the file system`](compressing-and-saving-a-string-to-the-file-system#Define-the-archive-header.md) to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:
 
 ```swift
 guard
@@ -115,7 +115,7 @@ defer {
 }
 ```
 
-Call doc://com.apple.documentation/documentation/applearchive/archivestream/3589310-readblob to read the decompressed data from the `DAT` field and write it to the raw buffer pointer. The decode stream parses its input from the decompression stream that, in turn, decompresses its input from the AppleArchive file supplied by the file stream.
+Call [`readBlob(key:into:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveStreamProtocol/readBlob(key:into:)) to read the decompressed data from the `DAT` field and write it to the raw buffer pointer. The decode stream parses its input from the decompression stream that, in turn, decompresses its input from the AppleArchive file supplied by the file stream.
 
 ```swift
 do {

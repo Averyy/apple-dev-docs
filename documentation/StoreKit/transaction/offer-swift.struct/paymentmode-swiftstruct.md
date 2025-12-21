@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-The payment modes for subscription offers that apply to a transaction.
+The payment modes for offers that apply to a transaction.
 
 **Availability**:
 - iOS 17.2+
@@ -21,7 +21,9 @@ struct PaymentMode
 
 #### Overview
 
-If your app supports subscription offers and the customer redeems an offer, the transaction contains the information in the [`offer`](transaction/offer-swift.property.md) parameter. The payment modes are the same as in the [`Product.SubscriptionOffer.PaymentMode`](product/subscriptionoffer/paymentmode-swift.struct.md) structure, and include [`freeTrial`](transaction/offer-swift.struct/paymentmode-swift.struct/freetrial.md), [`payAsYouGo`](transaction/offer-swift.struct/paymentmode-swift.struct/payasyougo.md), and [`payUpFront`](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md).
+If your app supports offers and the customer redeems an offer, the transaction contains the information in the [`offer`](transaction/offer-swift.property.md) parameter. The payment modes include the subscription payment modes as in the [`Product.SubscriptionOffer.PaymentMode`](product/subscriptionoffer/paymentmode-swift.struct.md) structure, and the [`oneTime`](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md) mode that applies to consumables, non-consumables, and non-renewing subscriptions.
+
+The following images describe payment modes for auto-renewable subscriptions.
 
 ![A timeline titled “Free Trial” that is divided into three sections. The first section, which has a different timespan than the remaining sections, starts with the initial purchase and is the free trial period. The second section is labeled “first renewal”, and is at the regular price. The third section is labeled  “second renewal”, and is also at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://docs-assets.developer.apple.com/published/31535a5905cc81be4d4fa37a8089ea5f/media-4311732%402x.png)
 
@@ -29,7 +31,7 @@ If your app supports subscription offers and the customer redeems an offer, the 
 
 ![A timeline titled “Pay Up Front” that is divided into three sections. The first section, labeled “Introductory price” has a different timespan than the following sections, labelled “Regular price”. The timeline starts with the initial purchase at the introductory price, followed by the first renewal and second renewals, both at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://docs-assets.developer.apple.com/published/2067b05f759a211be51d6b062b2aa00c/media-4311731%402x.png)
 
-For more information about the payment modes, see [`Pricing and availability`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/pricing-and-availability).
+For more information about payment modes, see [`In-app purchase and subscriptions pricing and availability`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-and-subscriptions-pricing-and-availability).
 
 ## Topics
 
@@ -40,8 +42,8 @@ For more information about the payment modes, see [`Pricing and availability`](h
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
 - [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
   A payment mode of a product discount that applies the discount up front.
-### Type Properties
 - [static var oneTime: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md)
+  A payment mode for a consumable, non-consumable, or non-renewing subscription offer that indicates a one-time purchase.
 
 ## Relationships
 
@@ -55,13 +57,15 @@ For more information about the payment modes, see [`Pricing and availability`](h
 ## See Also
 
 - [let id: String?](transaction/offer-swift.struct/id.md)
-  A string that identifies the subscription offer that applies to the transaction.
+  A string that identifies an offer that applies to the transaction.
 - [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
-  The type of subscription offer that applies to the transaction.
+  The type of offer that applies to the transaction.
 - [Transaction.OfferType](transaction/offertype-swift.struct.md)
-  The types of subscription offers for auto-renewable subscriptions.
+  The types of offers that apply to a transaction.
 - [let paymentMode: Transaction.Offer.PaymentMode?](transaction/offer-swift.struct/paymentmode-swift.property.md)
   The payment mode for a subscription offer on an auto-renewable subscription that applies to the transaction.
+- [let period: Product.SubscriptionPeriod?](transaction/offer-swift.struct/period.md)
+  The duration of the offer applied to a transaction.
 
 
 ---

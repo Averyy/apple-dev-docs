@@ -35,8 +35,10 @@ struct Collation
   A collation used for string search.
 ### Type Properties
 - [static var availableCollations: [Locale.Collation]](locale/collation-swift.struct/availablecollations.md)
+  A list of available collations on the system.
 ### Type Methods
 - [static func availableCollations(for: Locale.Language) -> [Locale.Collation]](locale/collation-swift.struct/availablecollations(for:).md)
+  A list of available collations for the specified `language` in the order that it is most likely to make a difference.
 
 ## Relationships
 

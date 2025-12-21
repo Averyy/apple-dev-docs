@@ -21,26 +21,6 @@ enum Localization
   A constant that represents base internationalization.
 - [Resource.Localization.default](resource/localization/default.md)
   A constant that represents default localization.
-### Hashing
-- [func hash(into: inout Hasher)](resource/localization/hash(into:).md)
-  Hashes the localization by feeding the item into the given hasher.
-- [var hashValue: Int](resource/localization/hashvalue.md)
-  The localization’s hash value.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](resource/localization/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Creating a Value
-- [init?(rawValue: String)](resource/localization/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](resource/localization/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Resource.Localization.RawValue](resource/localization/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](resource/localization/equatable-implementations.md)
-- [RawRepresentable Implementations](resource/localization/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -29,7 +29,7 @@ var clearHistoryTimeFrame: some AssistantSchemas.Enum { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.browser.clearHistoryTimeFrame` schema:
 
 ```swift
-@AssistantEnum(schema: .browser.clearHistoryTimeFrame)
+@AppEnum(schema: .browser.clearHistoryTimeFrame)
 enum ClearHistoryTimeFrame: AppEnum {
 
     case today

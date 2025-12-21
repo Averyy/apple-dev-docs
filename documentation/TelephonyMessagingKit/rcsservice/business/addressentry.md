@@ -6,8 +6,8 @@
 Structure containing address details provided by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,16 +23,6 @@ struct AddressEntry
   Address of business.
 - [let label: String](rcsservice/business/addressentry/label.md)
   Label for address.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/addressentry/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/addressentry/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing address entries
-- [static func == (RCSService.Business.AddressEntry, RCSService.Business.AddressEntry) -> Bool](rcsservice/business/addressentry/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/addressentry/equatable-implementations.md)
 
 ## Relationships
 

@@ -15,7 +15,7 @@ struct es_event_tcc_modify_t
 
 #### Overview
 
-Or revoked.
+TCC Modification Event. Occurs when a TCC permission is granted or revoked.
 
 > **Note**: This event type does not support caching.
 

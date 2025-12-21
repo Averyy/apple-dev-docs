@@ -24,6 +24,7 @@ init<Entity>(for entityType: Entity.Type, identifier: Entity.ID) where Entity : 
 
 - [init<Entity>(for: Entity)](entityidentifier/init(for:).md)
   Creates an identifier for the specified entity
+- [init?(activityIdentifier: String)](entityidentifier/init(activityidentifier:).md)
 
 
 ---

@@ -114,20 +114,8 @@ enum TelephonyDeviceUsage
 - [HIDUsage.TelephonyDeviceUsage.transfer](hidusage/telephonydeviceusage/transfer.md)
 - [HIDUsage.TelephonyDeviceUsage.voiceMail](hidusage/telephonydeviceusage/voicemail.md)
 - [HIDUsage.TelephonyDeviceUsage.voicemailMessageWaiting](hidusage/telephonydeviceusage/voicemailmessagewaiting.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/telephonydeviceusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/telephonydeviceusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.TelephonyDeviceUsage.RawValue](hidusage/telephonydeviceusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/telephonydeviceusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/telephonydeviceusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/telephonydeviceusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

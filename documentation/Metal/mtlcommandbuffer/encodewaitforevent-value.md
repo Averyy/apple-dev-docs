@@ -22,7 +22,7 @@ func encodeWaitForEvent(_ event: any MTLEvent, value: UInt64)
 
 ## Mentions
 
-- [About Synchronization Events](about-synchronization-events.md)
+- [About synchronization events](about-synchronization-events.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ This method prevents the GPU from starting the next pass in the command buffer u
 
 A command buffer can instruct the GPU to wait for an event only between passes, not within a pass. If a command buffer has an active encoder, finish using the encoder, call its [`endEncoding()`](mtlcommandencoder/endencoding().md) method, and then call this method before creating another encoder.
 
-When the GPU device reaches the wait command that this method encodes into the buffer, it checks the event’s current value. If the event’s value — which increases monotonically — is less than the `value` parameter, the GPU waits before running the next pass in the buffer. The GPU starts the next pass when the event signals a value that’s equal to or greater than the `value` parameter (see [`encodeSignalEvent(_:value:)`](mtlcommandbuffer/encodesignalevent(_:value:).md)). However, If the event’s value is already greater than or equal to the `value` parameter, the GPU immediately starts the next pass without waiting.
+When the GPU device reaches the wait command that this method encodes into the buffer, it checks the event’s current value. If the event’s value — which increases monotonically — is less than the `value` parameter, the GPU waits before running the next pass in the buffer. The GPU starts the next pass when the event signals a value that’s equal to or greater than the `value` parameter (see [`encodeSignalEvent(_:value:)`](mtlcommandbuffer/encodesignalevent(_:value:).md)). However, If the event’s value is already greater than or equal to the `value` parameter, the GPU immediately starts the next pass without waiting.
 
 ## Parameters
 

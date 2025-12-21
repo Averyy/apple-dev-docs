@@ -32,9 +32,9 @@ If you don’t specify a predicate, any fetch using this descriptor will return 
 
 ## See Also
 
-- [struct Predicate<each Input>](../Foundation/Predicate.md)
+- [struct Predicate](../Foundation/Predicate.md)
   A logical condition used to test a set of input values for searching or filtering.
-- [struct SortDescriptor<Compared>](../Foundation/SortDescriptor.md)
+- [struct SortDescriptor](../Foundation/SortDescriptor.md)
   A serializable description of how to sort numerics and strings.
 
 

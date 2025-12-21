@@ -21,7 +21,7 @@ func becomeFirstResponder() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this object is now the first responder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if this object is now the first responder; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -29,7 +29,7 @@ Call this method when you want the object to be the first responder.
 
 Calling this method doesn’t guarantee that the object becomes the first responder. UIKit asks the current first responder to resign as first responder, which it might not do.
 
-If the current first responder resigns as first responder, UIKit checks this object’s [`canBecomeFirstResponder`](uiresponder/canbecomefirstresponder.md) property, which is [`false`](https://developer.apple.com/documentation/swift/false) by default. If the object succeeds in becoming the first responder, it receives subsequent events that target the first responder, and UIKit attempts to display the object’s input view.
+If the current first responder resigns as first responder, UIKit checks this object’s [`canBecomeFirstResponder`](uiresponder/canbecomefirstresponder.md) property, which is [`false`](https://developer.apple.com/documentation/Swift/false) by default. If the object succeeds in becoming the first responder, it receives subsequent events that target the first responder, and UIKit attempts to display the object’s input view.
 
 Only call this method on views that are part of the active view hierarchy. To determine whether a view is onscreen, check its [`window`](uiview/window.md) property. If that property contains a valid window, it’s part of an active view hierarchy.
 

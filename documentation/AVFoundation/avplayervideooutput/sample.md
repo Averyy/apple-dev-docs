@@ -6,13 +6,13 @@
 A video frame along with auxiliary information for display at the specified presentation time.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ struct Sample
 
 ## Topics
 
-### Instance Properties
+### Inspecting a sample
 - [let activeConfiguration: AVPlayerVideoOutput.Configuration](avplayervideooutput/sample/activeconfiguration.md)
   The active configuration that this sample was derived from.
 - [let presentationTime: CMTime](avplayervideooutput/sample/presentationtime.md)
@@ -35,6 +35,14 @@ struct Sample
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+  Retrieves a video sample along with auxiliary information for display at the specified host time.
+- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
+- [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
+  An object that provides configuration information for the related player item.
 
 
 ---

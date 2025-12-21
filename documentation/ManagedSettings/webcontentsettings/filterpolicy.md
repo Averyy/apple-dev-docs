@@ -30,10 +30,6 @@ enum FilterPolicy
 ### Comparing Policies
 - [static func == (WebContentSettings.FilterPolicy, WebContentSettings.FilterPolicy) -> Bool](webcontentsettings/filterpolicy/==(_:_:).md)
   Returns a Boolean value that indicates whether two values are equal.
-- [static func != (Self, Self) -> Bool](webcontentsettings/filterpolicy/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](webcontentsettings/filterpolicy/equatable-implementations.md)
 
 ## Relationships
 

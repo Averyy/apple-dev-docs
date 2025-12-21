@@ -8,7 +8,6 @@ A descriptor that describes a generate person segmentation request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -23,6 +22,7 @@ case generatePersonSegmentationRequest(GeneratePersonSegmentationRequest.Revisio
 
 - [case detectDocumentSegmentationRequest(DetectDocumentSegmentationRequest.Revision)](requestdescriptor/detectdocumentsegmentationrequest(_:).md)
   A descriptor that describes a detect document segmentation request.
+- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](requestdescriptor/recognizedocumentsrequest(_:).md)
 - [case generatePersonInstanceMaskRequest(GeneratePersonInstanceMaskRequest.Revision)](requestdescriptor/generatepersoninstancemaskrequest(_:).md)
   A descriptor that describes a generate person instance mask request.
 

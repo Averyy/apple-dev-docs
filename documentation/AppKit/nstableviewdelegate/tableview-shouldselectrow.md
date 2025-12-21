@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit selection of the row, [`false`](https://developer.apple.com/documentation/swift/false) to deny selection.
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit selection of the row, [`false`](https://developer.apple.com/documentation/Swift/false) to deny selection.
 
 #### Discussion
 

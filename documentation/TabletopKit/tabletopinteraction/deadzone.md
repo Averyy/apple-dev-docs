@@ -6,7 +6,7 @@
 The dead zone allows to specify how much the input device should move or rotate from its initial pose to start moving the object.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ enum DeadZone
 
 ## Topics
 
-### Enumeration Cases
+### Interaction zones
 - [TabletopInteraction.DeadZone.default](tabletopinteraction/deadzone/default.md)
   The default dead zone values.
 - [TabletopInteraction.DeadZone.disabled](tabletopinteraction/deadzone/disabled.md)

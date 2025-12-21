@@ -20,7 +20,7 @@ var uniqueID: Int64 { get }
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
 
 #### Discussion
 

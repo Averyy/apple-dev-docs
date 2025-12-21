@@ -26,9 +26,9 @@ Constant color captures require the flash to fire and may require a pre-flash se
 
 You can only achieve constant color when the flash has a discernible effect on the scene, so it may not perform well in bright conditions such as direct sunlight. Use the photo’s [`constantColorConfidenceMap`](avcapturephoto/constantcolorconfidencemap.md) property to examine the confidence level, and therefore the usefulness, of each region of a constant color photo.
 
-The property value is [`true`](https://developer.apple.com/documentation/swift/true) if the session’s current configuration allows the output to capture photos with constant color.
+The property value is [`true`](https://developer.apple.com/documentation/Swift/true) if the session’s current configuration allows the output to capture photos with constant color.
 
-When switching cameras or formats this property may change. When this property changes from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), the value of [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/swift/false). If you’ve previously opted in to constant color and then change configurations, you may need to set the value of [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true) again.
+When switching cameras or formats this property may change. When this property changes from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false), the value of [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) also reverts to [`false`](https://developer.apple.com/documentation/Swift/false). If you’ve previously opted in to constant color and then change configurations, you may need to set the value of [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true) again.
 
 This property is key-value observable.
 

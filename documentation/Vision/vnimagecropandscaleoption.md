@@ -5,14 +5,6 @@
 
 Options that define how Vision crops and scales an input-image.
 
-**Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift
@@ -23,7 +15,7 @@ enum VNImageCropAndScaleOption
 
 Scaling an image ensures that it fits within the algorithm’s input image dimensions, which may require a change in aspect ratio. The figure below shows how each crop-and-scale option transforms the input image:
 
-![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](https://docs-assets.developer.apple.com/published/fec0f3784a37ea1c18aebea29f3df41f/media-3258357%402x.png)
+![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](https://docs-assets.developer.apple.com/published/f364baac9c906e2c98ec66ee3b303aab/scale-crop-options%402x.png)
 
 ## Topics
 

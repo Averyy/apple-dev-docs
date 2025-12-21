@@ -21,7 +21,7 @@ func VNNormalizedRectIsIdentityRect(_ normalizedRect: CGRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rectangle is the identity rectangle, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the rectangle is the identity rectangle, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

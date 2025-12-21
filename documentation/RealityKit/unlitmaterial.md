@@ -10,7 +10,7 @@ A material that doesn’t respond to lights in the scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -51,38 +51,23 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 ### Creating an unlit material
 - [init()](unlitmaterial/init.md)
   Creates an unlit material.
-- [init(color: UIColor)](unlitmaterial/init(color:)-1h0ca.md)
-  Creates an unlit material with the given base color.
-- [init(color: NSColor)](unlitmaterial/init(color:)-1sk7r.md)
-  Creates an unlit material with the given base color.
-- [init(applyPostProcessToneMap:)](unlitmaterial/init(applypostprocesstonemap:).md)
+- [init(applyPostProcessToneMap: Bool)](unlitmaterial/init(applypostprocesstonemap:).md)
   Creates an UnlitMaterial with the given tone mapping setting
-- [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-2cszc.md)
-  Creates an UnlitMaterial with the given color and tone mapping setting
-- [init(color: UIColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-9pbcy.md)
-  Creates an UnlitMaterial with the given color and tone mapping setting
-- [init(program:)](unlitmaterial/init(program:).md)
-- [init(texture:)](unlitmaterial/init(texture:).md)
+- [init(program: UnlitMaterial.Program)](unlitmaterial/init(program:).md)
+- [init(texture: TextureResource)](unlitmaterial/init(texture:).md)
   Creates a new unlit material with the provided color texture.
 ### Configuring base color
 - [var color: UnlitMaterial.BaseColor](unlitmaterial/color.md)
   The material’s base color.
 - [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-swift.property.md)
   The base color of the material.
-### Tinting an unlit material
-- [var tintColor: NSColor](unlitmaterial/tintcolor-5k3sj.md)
-  A tint color applied to the base color.
-- [var tintColor: UIColor](unlitmaterial/tintcolor-8gx1u.md)
-  A tint color applied to the base color.
 ### Controlling opacity
 - [var opacityThreshold: Float?](unlitmaterial/opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
 - [var blending: UnlitMaterial.Blending](unlitmaterial/blending-swift.property.md)
   The transparency options for the material.
 ### Classes
-- [UnlitMaterial.Program](unlitmaterial/program-7swyg.md)
-  An object that represents the backing shader compilation required for unlit materials.
-- [UnlitMaterial.Program](unlitmaterial/program-9tv7i.md)
+- [UnlitMaterial.Program](unlitmaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for unlit materials.
 ### Initializers
 - [init(color:)](unlitmaterial/init(color:).md)
@@ -90,58 +75,53 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 - [init(color:applyPostProcessToneMap:)](unlitmaterial/init(color:applypostprocesstonemap:).md)
   Creates an UnlitMaterial with the given color and tone mapping setting
 ### Instance Properties
-- [var faceCulling: UnlitMaterial.FaceCulling](unlitmaterial/faceculling-2vyua.md)
-- [var faceCulling: UnlitMaterial.FaceCulling](unlitmaterial/faceculling-6h4qh.md)
-- [var program: UnlitMaterial.Program](unlitmaterial/program-68r53.md)
-- [var program: UnlitMaterial.Program](unlitmaterial/program-9rxw3.md)
-- [var readsDepth: Bool](unlitmaterial/readsdepth-3dp8b.md)
+- [var faceCulling: UnlitMaterial.FaceCulling](unlitmaterial/faceculling-swift.property.md)
+- [var program: UnlitMaterial.Program](unlitmaterial/program-swift.property.md)
+- [var readsDepth: Bool](unlitmaterial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var readsDepth: Bool](unlitmaterial/readsdepth-86tkk.md)
-  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var secondaryTextureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/secondarytexturecoordinatetransform-1a1ap.md)
+- [var secondaryTextureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/secondarytexturecoordinatetransform.md)
   A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
-- [var secondaryTextureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/secondarytexturecoordinatetransform-45g63.md)
-  A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
-- [var textureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-1pbf5.md)
+- [var textureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.property.md)
   A two-dimensional transformation to apply to the entity’s primary texture coordinates.
-- [var textureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-3583e.md)
-  A two-dimensional transformation to apply to the entity’s primary texture coordinates.
-- [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-9i4bf.md)
+- [var tintColor: NSColor](unlitmaterial/tintcolor-9v1sw.md)
+  A tint color applied to the base color.
+- [var tintColor: UIColor](unlitmaterial/tintcolor-k1do.md)
+  A tint color applied to the base color.
+- [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
-- [var triangleFillMode: UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-i1j1.md)
-  The object that controls how RealityKit draws triangles.
-- [var writesDepth: Bool](unlitmaterial/writesdepth-1bife.md)
-  A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
-- [var writesDepth: Bool](unlitmaterial/writesdepth-5gfwa.md)
+- [var writesDepth: Bool](unlitmaterial/writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Type Aliases
-- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-4bbsb.md)
+- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-swift.typealias.md)
   The type used to represent base color.
-- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-dbh3.md)
-  The type used to represent base color.
-- [UnlitMaterial.Blending](unlitmaterial/blending-53ard.md)
+- [UnlitMaterial.Blending](unlitmaterial/blending-swift.typealias.md)
   The type used to represent opacity information.
-- [UnlitMaterial.Blending](unlitmaterial/blending-8ev2p.md)
-  The type used to represent opacity information.
-- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-5naqt.md)
+- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-wlgw.md)
-  An alias for the cull mode object that’s appropriate for this material class.
-- [UnlitMaterial.Texture](unlitmaterial/texture-6ew65.md)
+- [UnlitMaterial.Texture](unlitmaterial/texture.md)
   The type used to represent textures.
-- [UnlitMaterial.Texture](unlitmaterial/texture-8p34r.md)
-  The type used to represent textures.
-- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-295ea.md)
+- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.typealias.md)
   An alias for the texture coordinate transform that’s appropriate for this material class.
-- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-9w7o8.md)
-  An alias for the texture coordinate transform that’s appropriate for this material class.
-- [UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-4gpdd.md)
-- [UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-5dnnu.md)
+- [UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
 - [Material](material.md)
+
+## See Also
+
+- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [UnlitMaterial.Blending](unlitmaterial/blending-swift.typealias.md)
+  The type used to represent opacity information.
+- [UnlitMaterial.Texture](unlitmaterial/texture.md)
+  The type used to represent textures.
+- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
+- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.typealias.md)
+  An alias for the texture coordinate transform that’s appropriate for this material class.
+- [UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-swift.typealias.md)
 
 
 ---

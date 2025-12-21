@@ -28,6 +28,13 @@ The index value immediately after `i`.
 
 - `i`: A valid index of the collection.   must be less than  .
 
+## See Also
+
+- [func index(Int, offsetBy: Int) -> Int](slidingwindows/index(_:offsetby:).md)
+  Returns an index that is the specified distance from the given index.
+- [func index(before: Int) -> Int](slidingwindows/index(before:).md)
+  Returns the position immediately before the given index.
+
 
 ---
 

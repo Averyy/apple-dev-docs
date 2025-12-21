@@ -29,9 +29,6 @@ The system provides an instance of this structure to your app when a person choo
   The background color the system uses in the picker to render the reflection prompt content.
 - [var prompt: String](journalingsuggestion/reflection/prompt.md)
   A reflection prompt suggestion.
-### Type Aliases
-- [JournalingSuggestion.Reflection.JournalingSuggestionContent](journalingsuggestion/reflection/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

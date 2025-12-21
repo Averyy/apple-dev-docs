@@ -5,11 +5,6 @@
 
 Constant used by [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) to distinguish errors belonging to the AssetsLibrary domain.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

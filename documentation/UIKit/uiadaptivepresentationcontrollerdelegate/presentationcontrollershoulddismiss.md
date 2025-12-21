@@ -21,7 +21,7 @@ optional func presentationControllerShouldDismiss(_ presentationController: UIPr
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the system to dismiss the presentation, [`false`](https://developer.apple.com/documentation/swift/false) to refuse the dismissal.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the system to dismiss the presentation, [`false`](https://developer.apple.com/documentation/Swift/false) to refuse the dismissal.
 
 #### Discussion
 

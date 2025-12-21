@@ -6,12 +6,12 @@
 An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -32,9 +32,9 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
   Obtains this queue’s optional label for debugging purposes.
 ### Instance Methods
 - [func addResidencySet(any MTLResidencySet)](mtl4commandqueue/addresidencyset(_:).md)
-  Marks a residency set as part of this command queue.
+  Applies a residency set to a queue, which Metal applies to the queue’s command buffers as you commit them.
 - [func addResidencySets([any MTLResidencySet])](mtl4commandqueue/addresidencysets(_:).md)
-  Marks an array of residency sets as part of this command queue.
+  Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
 - [func commit([any MTL4CommandBuffer], options: MTL4CommitOptions?)](mtl4commandqueue/commit(_:options:).md)
   Enqueues an array of command buffer instances for execution with a set of options.
 - [func copyMappings(sourceBuffer: any MTLBuffer, destinationBuffer: any MTLBuffer, operations: [MTL4CopySparseBufferMappingOperation])](mtl4commandqueue/copymappings(sourcebuffer:destinationbuffer:operations:).md)
@@ -42,9 +42,9 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
 - [func copyMappings(sourceTexture: any MTLTexture, destinationTexture: any MTLTexture, operations: [MTL4CopySparseTextureMappingOperation])](mtl4commandqueue/copymappings(sourcetexture:destinationtexture:operations:).md)
   Copies multiple regions within a source placement sparse texture to a destination placement sparse texture.
 - [func removeResidencySet(any MTLResidencySet)](mtl4commandqueue/removeresidencyset(_:).md)
-  Removes a residency set from the command queue.
+  Removes a residency set from a command queue’s list, which means Metal doesn’t apply it to the queue’s command buffers as you commit them.
 - [func removeResidencySets([any MTLResidencySet])](mtl4commandqueue/removeresidencysets(_:).md)
-  Removes multiple residency sets from the command queue.
+  Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
 - [func signalDrawable(any MTLDrawable)](mtl4commandqueue/signaldrawable(_:).md)
   Schedules a signal operation on the command queue to indicate when rendering to a Metal drawable is complete.
 - [func signalEvent(any MTLEvent, value: UInt64)](mtl4commandqueue/signalevent(_:value:).md)
@@ -69,7 +69,8 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
 
 - [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [enum MTL4CommandQueueError](mtl4commandqueueerror.md)
+- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
 - [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
 - [protocol MTL4CommandBuffer](mtl4commandbuffer.md)
@@ -94,8 +95,6 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
-- [protocol MTL4CounterHeap](mtl4counterheap.md)
-  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

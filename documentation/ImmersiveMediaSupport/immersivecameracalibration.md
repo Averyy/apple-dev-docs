@@ -6,8 +6,8 @@
 A structure that represents immersive media camera calibration data.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -23,33 +23,28 @@ This data includes calibration type, calibration name, calibration file name, le
 
 ### Structures
 - [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
-  A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the user’s eye
+  A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
 - [ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping.md)
   A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
-### Initializers
-- [init(from: any Decoder) throws](immersivecameracalibration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [init(name: String, type: ImmersiveCameraCalibration.CalibrationType, mask: ImmersiveCameraMask?, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:).md)
-  Creates a mesh based calibration from USDZ data and a image-based mask.
-### Instance Methods
-- [func encode(to: any Encoder) throws](immersivecameracalibration/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Enumerations
 - [ImmersiveCameraCalibration.CalibrationType](immersivecameracalibration/calibrationtype.md)
-  A value representing the calibration type used to generate camera calibration geometry.
+  A value that represents the calibration type used to generate camera calibration geometry.
+### Initializers
+- [init(name: String, type: ImmersiveCameraCalibration.CalibrationType, mask: ImmersiveCameraMask?, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:).md)
+  Creates a mesh based calibration from USDZ data and a image-based mask.
 ### Instance Properties
 - [var environmentFilename: String?](immersivecameracalibration/environmentfilename.md)
-  The usdz file name of a backdrop that needs to be used for this calibration.
+  The USDZ filename of a backdrop to use for this calibration.
 - [var mask: ImmersiveCameraMask?](immersivecameracalibration/mask.md)
   Immersive camera mask that needs to be used for this calibration.
 - [var name: String](immersivecameracalibration/name.md)
   A string identifying this calibration.
 - [var origin: ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/origin.md)
-  Position information that represents the origin from which to render the calibration in 3D space relative to the user’s eye.
+  Position information that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
 - [var positionable: Bool](immersivecameracalibration/positionable.md)
-  A Boolean value that indicates whether this calibration can be anchored in mixed reality 3D space rather than being centered on the user’s eye position or not.
+  A Boolean value that indicates whether to anchor this calibration in mixed reality 3D space rather than centering it on the person’s eye position.
 - [var textureMapping: ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/texturemapping.md)
-  Texture mapping describing how each section of the video frame should be mapped into the calibration.
+  Texture mapping that describes how each section of the video frame maps into the calibration.
 - [var type: ImmersiveCameraCalibration.CalibrationType](immersivecameracalibration/type.md)
   The type of this calibration.
 

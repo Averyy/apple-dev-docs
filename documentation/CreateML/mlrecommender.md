@@ -25,9 +25,7 @@ After you train a recommender, you save it as a Core ML model file with the `.ml
 ## Topics
 
 ### Creating and training a recommender
-- [init(trainingData: DataFrame, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-1mecd.md)
-  Creates an instance given a table and the names of the item and user columns contained therein.
-- [init(trainingData: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-20dcf.md)
+- [init(trainingData:userColumn:itemColumn:ratingColumn:parameters:)](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:).md)
   Creates an instance given a table and the names of the item and user columns contained therein.
 - [MLRecommender.ModelParameters](mlrecommender/modelparameters-swift.struct.md)
   Parameters that affect the process of training a recommender model.
@@ -40,22 +38,16 @@ After you train a recommender, you save it as a Core ML model file with the `.ml
 - [var ratingColumn: String?](mlrecommender/ratingcolumn.md)
   The name of the column you selected at initialization to define the ratings.
 ### Evaluating a recommender
-- [func evaluation(on: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String?, cutoffs: [Int], excludingObserved: Bool) -> MLRecommenderMetrics](mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:)-50o7t.md)
-  Computes the metrics for the given testing data.
-- [func evaluation(on: DataFrame, userColumn: String, itemColumn: String, ratingColumn: String?, cutoffs: [Int], excludingObserved: Bool) -> MLRecommenderMetrics](mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:)-641uh.md)
+- [func evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)](mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:).md)
   Computes the metrics for the given testing data.
 - [struct MLRecommenderMetrics](mlrecommendermetrics.md)
   Metrics you use to evaluate a recommender’s performance.
 ### Testing a recommender
-- [func recommendations<T>(fromUsers: MLDataColumn<T>, maxCount: Int, restrictingToItems: MLDataColumn<T>?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-416wd.md)
-  Retrieves the highest scored items for the given column of users, based on item similarity and the rating column.
-- [func recommendations(fromUsers: [any MLIdentifier], maxCount: Int, restrictingToItems: [any MLIdentifier]?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.md)
+- [func recommendations(fromUsers:maxCount:restrictingToItems:excluding:excludingObserved:)](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:).md)
   Retrieves the highest scored item for the given array of users, based on item similarity and the rating column.
 - [protocol MLIdentifier](mlidentifier.md)
   A type the Create ML framework can use as a machine learning identifier.
-- [func getSimilarItems<T>(fromItems: MLDataColumn<T>, maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-9scon.md)
-  Returns the top ranked similar items based on the model’s similarity type.
-- [func getSimilarItems(fromItems: [any MLIdentifier], maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37.md)
+- [func getSimilarItems(fromItems:maxCount:)](mlrecommender/getsimilaritems(fromitems:maxcount:).md)
   Returns the top ranked similar items based on the model’s similarity type.
 ### Saving a recommender
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlrecommender/write(to:metadata:).md)
@@ -65,7 +57,7 @@ After you train a recommender, you save it as a Core ML model file with the `.ml
 ### Describing a recommender
 - [var model: MLModel](mlrecommender/model.md)
   The Core ML model.
-### Enumerations
+### Supporting types
 - [MLRecommender.ModelAlgorithmType](mlrecommender/modelalgorithmtype.md)
   The algorithms a recommender can use to make recommendations.
 - [MLRecommender.SimilarityType](mlrecommender/similaritytype.md)
@@ -73,7 +65,7 @@ After you train a recommender, you save it as a Core ML model file with the `.ml
 
 ## See Also
 
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [enum MLClassifier](mlclassifier.md)
   A model you train to classify data into discrete categories.

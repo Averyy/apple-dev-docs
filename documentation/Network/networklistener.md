@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: class
 
+Listen for incoming network connections.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -18,32 +20,41 @@
 final class NetworkListener<ApplicationProtocol> where ApplicationProtocol : NetworkProtocolOptions
 ```
 
+#### Overview
+
+A listener receives incoming connections by binding to a local endpoint. It accepts connections based on the protocols defined in its protocol stack. Accepted connections will represent new local and remote address and port tuples.
+
 ## Topics
 
 ### Initializers
-- [convenience init(for: any ListenerProvider, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(for:using:)-64s14.md)
-- [convenience init(for: any ListenerProvider, using: () -> ApplicationProtocol) throws](networklistener/init(for:using:)-6n089.md)
-- [convenience init(on: NWEndpoint.Port, for: any ListenerProvider, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(on:for:using:)-7l1be.md)
-- [convenience init(on: NWEndpoint.Port, for: any ListenerProvider, using: () -> ApplicationProtocol) throws](networklistener/init(on:for:using:)-8cbpt.md)
-- [init(on: NWEndpoint.Port, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(on:using:)-4873s.md)
-- [convenience init(on: NWEndpoint.Port, using: () -> ApplicationProtocol) throws](networklistener/init(on:using:)-7pzf2.md)
-- [init(port: NWEndpoint.Port, provider: any ListenerProvider, builder: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(port:provider:builder:).md)
-- [init(provider: any ListenerProvider, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(provider:using:).md)
-- [init(using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(using:)-4brg.md)
-- [convenience init(using: () -> ApplicationProtocol) throws](networklistener/init(using:)-7lq05.md)
+- [convenience init(for: (any ListenerProvider)?, using: () -> ApplicationProtocol) throws](networklistener/init(for:using:)-2hkg.md)
+  Create a listener that advertises a service with a protocol stack to use for listening.
+- [convenience init(for: (any ListenerProvider)?, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(for:using:)-2vh87.md)
+  Create a listener that advertises a service with a protocol stack and parameters to use for listening.
 ### Instance Properties
 - [var newConnectionLimit: Int](networklistener/newconnectionlimit.md)
+  Configure the listener’s new connection limit.
 - [var port: NWEndpoint.Port?](networklistener/port.md)
+  The port that the listener is listening on.
 - [var service: NWListener.Service?](networklistener/service.md)
+  An optional service to advertise with the listener.
 ### Instance Methods
 - [func newConnectionLimit(Int) -> Self](networklistener/newconnectionlimit(_:).md)
-- [func onServiceRegistrationUpdate(NetworkListener<ApplicationProtocol>.ServiceRegistrationUpdateHandler?) -> Self](networklistener/onserviceregistrationupdate(_:).md)
-- [func onStateUpdate(NetworkListener<ApplicationProtocol>.StateUpdateHandler?) -> Self](networklistener/onstateupdate(_:).md)
-- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](networklistener/run(_:).md)
+  Configure the listener’s new connection limit.
+- [func onServiceRegistrationUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self](networklistener/onserviceregistrationupdate(_:).md)
+  Set a closure to be called when the listener has added or removed a registered service.
+- [func onStateUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void) -> Self](networklistener/onstateupdate(_:).md)
+  Set a closure to be called when the listener’s state changes.
+- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](networklistener/run(_:)-42k25.md)
+  Run the listener and receive incoming multiplexed connections.
+- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](networklistener/run(_:)-4iov3.md)
+  Run the listener and receive incoming connections.
 ### Type Aliases
 - [NetworkListener.ServiceRegistrationUpdateHandler](networklistener/serviceregistrationupdatehandler.md)
-- [NetworkListener.State](networklistener/state.md)
 - [NetworkListener.StateUpdateHandler](networklistener/stateupdatehandler.md)
+### Enumerations
+- [NetworkListener.ServiceRegistrationChange](networklistener/serviceregistrationchange.md)
+- [NetworkListener.State](networklistener/state.md)
 
 ## Relationships
 

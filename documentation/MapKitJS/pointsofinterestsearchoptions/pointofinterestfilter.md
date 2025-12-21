@@ -11,7 +11,7 @@ A filter that lists points of interest categories to include or exclude.
 ## Declaration
 
 ```swift
-attribute mapkit.PointOfInterestFilter pointOfInterestFilter;
+pointOfInterestFilter?: PointOfInterestFilter;
 ```
 
 ## See Also
@@ -22,8 +22,8 @@ attribute mapkit.PointOfInterestFilter pointOfInterestFilter;
   The center point of the request represented as latitude and longitude.
 - [radius](pointsofinterestsearchoptions/radius.md)
   The distance provided in meters, or the longest distance derived from the center point to the region’s bounding box.
-- [language](pointsofinterestsearchoptions/language.md)
-  The language ID to use when fetching points of interest.
+- [language](serviceconstructoroptions/language.md)
+  A language identifier that determines the language for the service results text.
 
 
 ---

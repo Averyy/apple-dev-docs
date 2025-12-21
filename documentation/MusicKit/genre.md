@@ -22,13 +22,8 @@ struct Genre
 
 ## Topics
 
-### Operators
-- [static func == (Genre, Genre) -> Bool](genre/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var hashValue: Int](genre/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](genre/id-swift.property.md)
+- [let id: MusicItemID](genre/id.md)
   The unique identifier for the genre.
 - [var libraryAddedDate: Date?](genre/libraryaddeddate.md)
   The date when the user added the genre to the library.
@@ -36,20 +31,8 @@ struct Genre
   The localized name of the genre.
 - [var parent: Genre?](genre/parent.md)
   The parent genre, if any.
-### Instance Methods
-- [func hash(into: inout Hasher)](genre/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](genre/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](genre/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](genre/customstringconvertible-implementations.md)
-- [Decodable Implementations](genre/decodable-implementations.md)
-- [Encodable Implementations](genre/encodable-implementations.md)
-- [Equatable Implementations](genre/equatable-implementations.md)
 - [FilterableMusicItem Implementations](genre/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](genre/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](genre/musiclibraryrequestable-implementations.md)
 
 ## Relationships

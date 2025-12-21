@@ -17,7 +17,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the cell is enabled or [`false`](https://developer.apple.com/documentation/swift/false) when it is disabled. The text of disabled cells is gray. If a cell is disabled, it cannot be highlighted, does not support mouse tracking (and thus cannot participate in target/action functionality), and cannot be edited. However, you can still alter many attributes of a disabled cell programmatically. (The [`state`](nscell/state.md) property, for instance, still works.)
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the cell is enabled or [`false`](https://developer.apple.com/documentation/Swift/false) when it is disabled. The text of disabled cells is gray. If a cell is disabled, it cannot be highlighted, does not support mouse tracking (and thus cannot participate in target/action functionality), and cannot be edited. However, you can still alter many attributes of a disabled cell programmatically. (The [`state`](nscell/state.md) property, for instance, still works.)
 
 ## See Also
 

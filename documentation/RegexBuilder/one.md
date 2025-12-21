@@ -25,12 +25,6 @@ struct One<Output>
 ### Initializers
 - [init(some RegexComponent<Output>)](one/init(_:).md)
   Creates a regex component that matches the given component exactly once.
-### Instance Properties
-- [var regex: Regex<Output>](one/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [typealias RegexOutput](one/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

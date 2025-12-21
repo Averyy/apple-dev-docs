@@ -21,7 +21,7 @@ struct MTLCommonCounterSet
 
 ## Mentions
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 #### Overview
 
@@ -29,18 +29,18 @@ This type defines the constants that let a GPU device declare which counter sets
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
-For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
 
-### Common Counter Set Names
+### Common counter set names
 - [static let timestamp: MTLCommonCounterSet](mtlcommoncounterset/timestamp.md)
   The common name for the counter set that contains the timestamp counter.
 - [static let stageUtilization: MTLCommonCounterSet](mtlcommoncounterset/stageutilization.md)
   The common name for the counter set that contains hardware utilization measurements from various render stages.
 - [static let statistic: MTLCommonCounterSet](mtlcommoncounterset/statistic.md)
   The common name for the counter set that contains GPU workload statistics.
-### Swift Support
+### Swift support
 - [init(rawValue: String)](mtlcommoncounterset/init(rawvalue:).md)
   Creates a common counter set name from a raw value.
 
@@ -55,7 +55,7 @@ For more information, see [`Confirming which Counters and Counter Sets a GPU Sup
 
 ## See Also
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
 - [protocol MTLCounterSet](mtlcounterset.md)
   A collection of individual counters a GPU device supports for a counter set.

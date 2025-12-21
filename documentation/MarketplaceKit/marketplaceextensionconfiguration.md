@@ -3,8 +3,6 @@
 **Framework**: MarketplaceKit  
 **Kind**: protocol
 
-The type for a marketplace extension’s configuration object.
-
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -16,10 +14,6 @@ The type for a marketplace extension’s configuration object.
 @preconcurrency protocol MarketplaceExtensionConfiguration : AppExtensionConfiguration
 ```
 
-#### Overview
-
-A marketplace extension ([`MarketplaceExtension`](marketplaceextension.md)) property [`configuration`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtension/configuration-swift.property) adopts this protocol.
-
 ## Relationships
 
 ### Inherits From
@@ -30,7 +24,6 @@ A marketplace extension ([`MarketplaceExtension`](marketplaceextension.md)) prop
 ## See Also
 
 - [protocol MarketplaceExtension](marketplaceextension.md)
-  An extension that facilitates authentication, installation, and launching a marketplace with deep links.
 
 
 ---

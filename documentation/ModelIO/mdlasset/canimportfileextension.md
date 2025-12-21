@@ -21,11 +21,11 @@ class func canImportFileExtension(_ extension: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the [`MDLAsset`](mdlasset.md) class can read asset data from files with the specified extension; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the [`MDLAsset`](mdlasset.md) class can read asset data from files with the specified extension; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), you can use the [`init(url:)`](mdlasset/init(url:).md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer to import an asset with the specified filename extension.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), you can use the [`init(url:)`](mdlasset/init(url:).md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer to import an asset with the specified filename extension.
 
 The set of supported extensions and formats includes:
 

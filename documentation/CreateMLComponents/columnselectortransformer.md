@@ -33,17 +33,6 @@ struct ColumnSelectorTransformer<Base, UnwrappedInput> where Base : Transformer,
 ### Applying a transformation
 - [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](columnselectortransformer/applied(to:eventhandler:).md)
   Performs the transformation on selected columns of the data frame.
-### Type Aliases
-- [ColumnSelectorTransformer.Input](columnselectortransformer/input.md)
-  The input type.
-- [ColumnSelectorTransformer.Output](columnselectortransformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](columnselectortransformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](columnselectortransformer/decodable-implementations.md)
-- [Encodable Implementations](columnselectortransformer/encodable-implementations.md)
-- [TabularTransformer Implementations](columnselectortransformer/tabulartransformer-implementations.md)
-- [Transformer Implementations](columnselectortransformer/transformer-implementations.md)
 
 ## Relationships
 

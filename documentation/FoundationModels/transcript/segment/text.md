@@ -6,11 +6,11 @@
 A segment containing text.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,10 +20,8 @@ case text(Transcript.TextSegment)
 
 ## See Also
 
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
-  A segment containing structured content
+  A segment containing structured content.
 
 
 ---

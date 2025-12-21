@@ -6,8 +6,8 @@
 A description of what went wrong, for debugging purposes.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ var errorDescription: String? { get }
 ## See Also
 
 - [let errorType: ParametricImmersiveAssetInfo.Error.ErrorType](parametricimmersiveassetinfo/error/errortype-swift.property.md)
-  An error type describing this error.
+  An error type that describes this error.
 
 
 ---

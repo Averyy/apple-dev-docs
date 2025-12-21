@@ -6,8 +6,8 @@
 Suggested action to open a URL.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,19 +25,9 @@ struct OpenURLAction
   Target to use when opening URL.
 - [RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.enum.md)
   Enumeration representing the target to open the URL in.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/openurlaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/openurlaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing actions
-- [static func == (RCSService.Business.OpenURLAction, RCSService.Business.OpenURLAction) -> Bool](rcsservice/business/openurlaction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Supporting types
 - [RCSService.Business.OpenURLAction.Detent](rcsservice/business/openurlaction/detent.md)
   Enumeration that represents a height to apply when opening a URL.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/openurlaction/equatable-implementations.md)
 
 ## Relationships
 

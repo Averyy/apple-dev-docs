@@ -6,8 +6,8 @@
 The structure that configures a network browser to subscribe to a Wi-Fi Aware service and make outgoing connections to paired devices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -42,8 +42,6 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
   Returns the parameters to use to configure the Wi-Fi Aware subscriber and the subsequent connection.
 - [func makeEndpoint(from: NWBrowser.Result) throws -> WASubscriberBrowser.Endpoint?](wasubscriberbrowser/makeendpoint(from:).md)
   Creates a connectable Wi-Fi Aware endpoint from a browse result.
-### Default Implementations
-- [BrowserProvider Implementations](wasubscriberbrowser/browserprovider-implementations.md)
 
 ## Relationships
 

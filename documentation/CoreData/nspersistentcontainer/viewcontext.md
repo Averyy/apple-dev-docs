@@ -22,9 +22,9 @@ var viewContext: NSManagedObjectContext { get }
 
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
-- [Syncing a Core Data Store with CloudKit](syncing-a-core-data-store-with-cloudkit.md)
 - [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Syncing a Core Data Store with CloudKit](syncing-a-core-data-store-with-cloudkit.md)
+- [Using Core Data in the background](using-core-data-in-the-background.md)
 
 #### Discussion
 

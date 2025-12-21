@@ -26,13 +26,17 @@ A new texture, or `nil` if the heap is not a placement heap.
 
 #### Discussion
 
-The heap’s type must be [`MTLHeapType.placement`](mtlheaptype/placement.md).
+You can call the method with the following restrictions:
 
-The texture’s CPU cache mode must match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) value. The texture’s storage mode must either match the heap’s [`storageMode`](mtlheap/storagemode.md) value or be a [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) value.
+- The heap’s type needs to be [`MTLHeapType.placement`](mtlheaptype/placement.md)
+- The texture’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) property
+- The texture’s storage mode option needs to be [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md), or match the heap’s [`storageMode`](mtlheap/storagemode.md) property
 
-Use the [`heapBufferSizeAndAlign(length:options:)`](mtldevice/heapbuffersizeandalign(length:options:).md) to determine the required size and alignment. If you don’t align the texture correctly or it extends past the end of the heap, the behavior is undefined.
+> ❗ **Important**:  Avoid potentially erratic behavior by aligning the texture correctly so that it doesn’t extend past the end of the heap.
 
-Any resources in the heap within an overlapping half-open range `[offset, offset + requiredSize)` are implicitly aliased with the new resource.
+Use the [`heapBufferSizeAndAlign(length:options:)`](mtldevice/heapbuffersizeandalign(length:options:).md) to determine the correct size and alignment.
+
+> **Note**:  The new texture can implicitly alias the underlying memory of other resources already in the heap within the overlapping half-open range of `[offset, offset + requiredSize)`.
 
 ## Parameters
 
@@ -41,12 +45,8 @@ Any resources in the heap within an overlapping half-open range `[offset, offset
 
 ## See Also
 
-- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:).md)
-  Creates a buffer on the heap.
 - [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:).md)
   Creates a texture on the heap.
-- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:offset:).md)
-  Creates a buffer at a specified offset on the heap.
 
 
 ---

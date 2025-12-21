@@ -22,24 +22,10 @@ struct FullyConnectedNetworkRegressorModel<Scalar> where Scalar : MLShapedArrayS
 
 ## Topics
 
-### Creating a regressor model
-- [init(from: any Decoder) throws](fullyconnectednetworkregressormodel/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Performing a regression
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>.Target](fullyconnectednetworkregressormodel/applied(to:eventhandler:).md)
   Performs regression on a shaped array.
 - [FullyConnectedNetworkRegressorModel.Target](fullyconnectednetworkregressormodel/target.md)
-### Type Aliases
-- [FullyConnectedNetworkRegressorModel.Input](fullyconnectednetworkregressormodel/input.md)
-  The input type.
-- [FullyConnectedNetworkRegressorModel.Output](fullyconnectednetworkregressormodel/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](fullyconnectednetworkregressormodel/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](fullyconnectednetworkregressormodel/decodable-implementations.md)
-- [Encodable Implementations](fullyconnectednetworkregressormodel/encodable-implementations.md)
-- [Regressor Implementations](fullyconnectednetworkregressormodel/regressor-implementations.md)
-- [Transformer Implementations](fullyconnectednetworkregressormodel/transformer-implementations.md)
 
 ## Relationships
 

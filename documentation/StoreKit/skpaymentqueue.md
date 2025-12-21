@@ -22,9 +22,9 @@ class SKPaymentQueue
 
 ## Mentions
 
-- [Unlocking purchased content](unlocking-purchased-content.md)
 - [Restoring purchased products](restoring-purchased-products.md)
 - [Testing transaction observer code](testing-transaction-observer-code.md)
+- [Unlocking purchased content](unlocking-purchased-content.md)
 
 #### Overview
 
@@ -77,7 +77,7 @@ For more information on designing the payment processing portion of your app, se
   Asks the system to display the price consent sheet if the user hasn’t yet responded to a subscription price increase.
 ### Redeeming Codes
 - [func presentCodeRedemptionSheet()](skpaymentqueue/presentcoderedemptionsheet.md)
-  Displays a sheet that enables customers to redeem subscription offer codes that you configure in App Store Connect.
+  Displays a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 ### Downloading Content
 - [func start([SKDownload])](skpaymentqueue/start(_:).md)
   Adds a set of downloads to the download list.

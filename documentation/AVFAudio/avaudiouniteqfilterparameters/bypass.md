@@ -22,7 +22,7 @@ var bypass: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bypass is active; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the bypass is active; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

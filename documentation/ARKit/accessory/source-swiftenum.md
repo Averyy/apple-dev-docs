@@ -6,7 +6,7 @@
 Type of source an Accessory was loaded from.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

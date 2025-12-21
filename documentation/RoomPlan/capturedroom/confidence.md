@@ -25,9 +25,6 @@ The framework chooses a level of certainty in its assessment of particular room 
 
 ## Topics
 
-### Creating a confidence value
-- [init(from: any Decoder) throws](capturedroom/confidence/init(from:).md)
-  Creates a confidence value by deserializing the specified decoder.
 ### Assessing a confidence value
 - [CapturedRoom.Confidence.high](capturedroom/confidence/high.md)
   A confidence value that represents a high level of certainty.
@@ -35,20 +32,6 @@ The framework chooses a level of certainty in its assessment of particular room 
   A confidence value that represents a medium level of certainty.
 - [CapturedRoom.Confidence.low](capturedroom/confidence/low.md)
   A confidence value that represents a low level of certainty.
-### Comparing confidence values
-- [static func == (CapturedRoom.Confidence, CapturedRoom.Confidence) -> Bool](capturedroom/confidence/==(_:_:).md)
-  Determines whether two confidence values are equal.
-- [static func != (Self, Self) -> Bool](capturedroom/confidence/!=(_:_:).md)
-  Determines whether two confidence values aren’t equal.
-- [func hash(into: inout Hasher)](capturedroom/confidence/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](capturedroom/confidence/hashvalue.md)
-  The hash value.
-### Serializing a confidence value
-- [func encode(to: any Encoder) throws](capturedroom/confidence/encode(to:).md)
-  Serializes a confidence value to the specified encoder.
-### Default Implementations
-- [Equatable Implementations](capturedroom/confidence/equatable-implementations.md)
 
 ## Relationships
 

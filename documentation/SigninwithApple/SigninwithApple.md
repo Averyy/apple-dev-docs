@@ -2,7 +2,7 @@
 
 **Framework**: Sign in with Apple
 
-Provide users the ability to sign in to your apps and websites using their Apple ID.
+Provide users the ability to sign in to your apps and websites using their Apple Account.
 
 **Availability**:
 - Sign in with Apple JS 1.0+
@@ -10,9 +10,9 @@ Provide users the ability to sign in to your apps and websites using their Apple
 
 #### Overview
 
-Sign in with Apple gives your users a fast and safe way to sign in to your apps and websites using their Apple ID. Incorporating Sign in with Apple eliminates the need for additional sign-up steps, allowing users to engage and focus on your app or website.
+Sign in with Apple gives your users a fast and safe way to sign in to your apps and websites using their Apple Account. Incorporating Sign in with Apple eliminates the need for additional sign-up steps, allowing users to engage and focus on your app or website.
 
-Sign in with Apple at Work & School provides the same ease of use for users with managed Apple IDs in Apple School Manager (ASM) or Apple Business Manager (ABM).
+Sign in with Apple at Work & School provides the same ease of use for users with managed Apple Accounts in Apple School Manager (ASM) or Apple Business Manager (ABM).
 
 > **Note**:  Administrators can configure Access Management controls for Sign in with Apple at Work & School within Apple Business Manager and Apple School Manager.
 
@@ -27,7 +27,7 @@ To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [`Impl
   Configure the appearance of Sign in with Apple buttons programatically.
 ### Web support
 - [Sign in with Apple JS](../signinwithapplejs/signinwithapplejs.md)
-  Provide users a fast, secure way to sign in to your web service with their Apple ID.
+  Provide users a fast, secure way to sign in to your web service with their Apple Account.
 - [Sign in with Apple REST API](../signinwithapplerestapi/signinwithapplerestapi.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)

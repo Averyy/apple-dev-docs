@@ -21,18 +21,18 @@ struct MTLCounterResultTimestamp
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Overview
 
-For steps that explain how to resolve data from a counter set, such as [`timestamp`](mtlcounterresulttimestamp/timestamp.md), see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For steps that explain how to resolve data from a counter set, such as [`timestamp`](mtlcounterresulttimestamp/timestamp.md), see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
 
 ## Topics
 
-### Timestamp Values
+### Timestamp values
 - [var timestamp: UInt64](mtlcounterresulttimestamp/timestamp.md)
   A timestamp value from a GPU at a particular point in time during an operation, typically at the beginning or ending of a render stage.
-### Swift Support
+### Swift support
 - [init()](mtlcounterresulttimestamp/init.md)
   Creates a default timestamp result.
 - [init(timestamp: UInt64)](mtlcounterresulttimestamp/init(timestamp:).md)
@@ -46,7 +46,7 @@ For steps that explain how to resolve data from a counter set, such as [`timesta
 
 ## See Also
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
 - [struct MTLCounterResultStatistic](mtlcounterresultstatistic.md)
   The data structure for storing the data you resolve from a statistic counter set.

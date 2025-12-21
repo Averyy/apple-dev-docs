@@ -6,7 +6,7 @@
 Returns whether content capture is protected and it is safe to draw content that should be protected from capture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

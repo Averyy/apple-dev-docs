@@ -34,7 +34,7 @@ struct MTLLibraryError
   Metal couldn’t find the Metal source file.
 - [static var functionNotFound: MTLLibraryError.Code](mtllibraryerror-swift.struct/functionnotfound.md)
   Metal couldn’t find the specified Metal function.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtllibraryerror-swift.struct/errordomain.md)
   The error domain used by Metal when returning library or function creation errors.
 

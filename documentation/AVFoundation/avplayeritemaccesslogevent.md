@@ -28,7 +28,7 @@ These properties aren’t observable. For more information about key-value obser
 
 ## Topics
 
-### Getting Server-Related Log Events
+### Getting server-related log events
 - [var uri: String?](avplayeritemaccesslogevent/uri.md)
   The URI of the playback item.
 - [var serverAddress: String?](avplayeritemaccesslogevent/serveraddress.md)
@@ -43,7 +43,7 @@ These properties aren’t observable. For more information about key-value obser
   The accumulated number of bytes transferred by the item.
 - [var numberOfMediaRequests: Int](avplayeritemaccesslogevent/numberofmediarequests.md)
   The number of media read requests from the server to this client.
-### Getting Playback-Related Log Events
+### Getting playback-related log events
 - [var playbackStartDate: Date?](avplayeritemaccesslogevent/playbackstartdate.md)
   The date and time at which playback began for this event.
 - [var playbackSessionID: String?](avplayeritemaccesslogevent/playbacksessionid.md)
@@ -66,7 +66,7 @@ These properties aren’t observable. For more information about key-value obser
   The accumulated duration, in seconds, of the media segments downloaded.
 - [var downloadOverdue: Int](avplayeritemaccesslogevent/downloadoverdue.md)
   The total number of times that downloading the segments took too long.
-### Getting Bit Rate Log Events
+### Getting bit rate log events
 - [var observedBitrateStandardDeviation: Double](avplayeritemaccesslogevent/observedbitratestandarddeviation.md)
   The standard deviation of the observed segment download bit rates.
 - [var observedMaxBitrate: Double](avplayeritemaccesslogevent/observedmaxbitrate.md)

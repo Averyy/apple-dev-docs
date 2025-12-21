@@ -22,7 +22,7 @@ func MKMapRectEqualToRect(_ rect1: MKMapRect, _ rect2: MKMapRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rectangles are exactly the same, or [`false`](https://developer.apple.com/documentation/swift/false) if the origin point or size values are different.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the rectangles are exactly the same, or [`false`](https://developer.apple.com/documentation/Swift/false) if the origin point or size values are different.
 
 ## Parameters
 

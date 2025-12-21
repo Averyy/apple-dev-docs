@@ -59,7 +59,7 @@ When you specify comments, you should be specific about what you need to authori
 
 - `authRef`: A valid authorization reference used to authorize modifications.
 - `rightName`: An ASCII character string representing the right name. The policy database does not accept wildcard right names.
-- `rightDefinition`: Either a  doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum  containing keys defining the rules or a  doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh  representing the name of another right whose rules you wish to duplicate. See   for some possible values.
+- `rightDefinition`: Either a   containing keys defining the rules or a   representing the name of another right whose rules you wish to duplicate. See   for some possible values.
 - `descriptionKey`: A string used as a key for looking up localized descriptions. If no localization is found, this is the description itself. This parameter is optional; pass   if you do not require it.
 - `bundle`: A bundle to get localizations from if not the main bundle. This parameter is optional; pass   if you do not require it.
 - `localeTableName`: A string representing a table name from which to get localizations. This parameter is optional; pass   if you have no localizations or you wish to use the localizations available in  .

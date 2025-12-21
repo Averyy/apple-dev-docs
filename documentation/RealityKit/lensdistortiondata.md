@@ -6,10 +6,10 @@
 A description of estimated lens distortion that can be used to rectify images.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -92,7 +92,7 @@ func undistortPoint(lensDistortionData: LensDistortionData,
 - [struct BillboardComponent](billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
 - [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
-  A component which controls how an entity will blend visually with objects in the user’s local environment
+  A component that controls how an entity blends visually with objects in the local environment.
 - [struct ImagePresentationComponent](imagepresentationcomponent.md)
   A component that supports general image presentation.
 

@@ -8,7 +8,7 @@ An estimate of the number of bytes of memory needed to store this value as an at
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

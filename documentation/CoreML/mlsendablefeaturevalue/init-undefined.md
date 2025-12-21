@@ -20,6 +20,11 @@ Creates an undefined feature value of a specific type.
 init(undefined type: MLFeatureType)
 ```
 
+## See Also
+
+- [init(_:)](mlsendablefeaturevalue/init(_:).md)
+  Creates a feature value containing a double-precision floating-point value.
+
 
 ---
 

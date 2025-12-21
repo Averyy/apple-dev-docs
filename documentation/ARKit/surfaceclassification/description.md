@@ -6,7 +6,7 @@
 A textual representation of the classification.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns a `Date` of a given string interpreted using the current settings.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,18 @@
 ```swift
 func parse(_ value: String) throws -> Date
 ```
+
+#### Return Value
+
+A `Date` represented by `value`.
+
+#### Discussion
+
+> **Note**: Throws `NSFormattingError` if the string cannot be parsed.
+
+## Parameters
+
+- `value`: A string representation of a date.
 
 
 ---

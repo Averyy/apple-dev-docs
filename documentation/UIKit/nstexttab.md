@@ -46,9 +46,9 @@ The text system supports four alignment types: left, center, right, and decimal 
 - [NSTextTab.OptionKey](nstexttab/optionkey.md)
   The terminating character for a tab column.
 ### Deprecated
-- [convenience init(type: NSParagraphStyle.TextTabType, location loc: CGFloat)](../AppKit/NSTextTab/init(type:location:).md)
+- [convenience init(type: NSParagraphStyle.TextTabType, location: CGFloat)](../AppKit/NSTextTab/init(type:location:).md)
   Initializes a newly allocated text tab with the specified alignment and location.
-- [var tabStopType: NSParagraphStyle.TextTabType { get }](../AppKit/NSTextTab/tabStopType.md)
+- [var tabStopType: NSParagraphStyle.TextTabType](../AppKit/NSTextTab/tabStopType.md)
   The text tab’s type of tab stop.
 
 ## Relationships

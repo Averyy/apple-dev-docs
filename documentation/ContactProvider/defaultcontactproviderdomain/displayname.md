@@ -19,11 +19,6 @@ let displayName: String
 
 The default domain uses the app’s bundle display name.
 
-## See Also
-
-- [var identifier: String](defaultcontactproviderdomain/identifier-swift.property.md)
-  The identifier of the domain.
-
 
 ---
 

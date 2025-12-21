@@ -28,18 +28,6 @@ enum DataType
 - [EntitlementsQuery.DataType.dictionary](entitlementsquery/datatype/dictionary.md)
 - [EntitlementsQuery.DataType.integer](entitlementsquery/datatype/integer.md)
 - [EntitlementsQuery.DataType.string](entitlementsquery/datatype/string.md)
-### Initializers
-- [init?(rawValue: Int64)](entitlementsquery/datatype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int64](entitlementsquery/datatype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [EntitlementsQuery.DataType.RawValue](entitlementsquery/datatype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](entitlementsquery/datatype/equatable-implementations.md)
-- [RawRepresentable Implementations](entitlementsquery/datatype/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -24,9 +24,12 @@ protocol CustomNSError : Error
 
 ### Instance Properties
 - [var errorCode: Int](customnserror/errorcode.md)
+  The error code within the given domain.
 - [var errorUserInfo: [String : Any]](customnserror/erroruserinfo.md)
+  The user-info dictionary.
 ### Type Properties
 - [static var errorDomain: String](customnserror/errordomain.md)
+  The domain of the error.
 
 ## Relationships
 
@@ -42,7 +45,7 @@ protocol CustomNSError : Error
 
 ## See Also
 
-- [protocol Error : Sendable](../Swift/Error.md)
+- [protocol Error](../Swift/Error.md)
   A type representing an error value that can be thrown.
 - [class NSError](nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.

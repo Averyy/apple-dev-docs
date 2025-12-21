@@ -15,16 +15,6 @@ An iterator for accessing individual data entries from the series.
 struct Iterator
 ```
 
-## Topics
-
-### Instance Methods
-- [func next() async -> Activity<Attributes>.ActivityStateUpdates.Element?](activity/activitystateupdates-swift.struct/iterator/next.md)
-  Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Type Aliases
-- [Activity.ActivityStateUpdates.Iterator.Element](activity/activitystateupdates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](activity/activitystateupdates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
-
 ## Relationships
 
 ### Conforms To

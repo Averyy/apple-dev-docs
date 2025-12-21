@@ -23,7 +23,7 @@ var playsAudioOnly: Bool { get set }
 
 If you set a new value on a running engine, you must restart the engine for the change to take effect.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

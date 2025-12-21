@@ -17,7 +17,7 @@ var refusesFirstResponder: Bool { get set }
 
 #### Discussion
 
-Set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to prevent the cell from becoming the first responder. To determine whether the cell can become first responder right now, get the value of the [`acceptsFirstResponder`](nscell/acceptsfirstresponder.md) property.
+Set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to prevent the cell from becoming the first responder. To determine whether the cell can become first responder right now, get the value of the [`acceptsFirstResponder`](nscell/acceptsfirstresponder.md) property.
 
 ## See Also
 

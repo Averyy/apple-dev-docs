@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+A group of hints for CoreML to optimize
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

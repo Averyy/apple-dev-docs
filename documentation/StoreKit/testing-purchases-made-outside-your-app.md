@@ -49,6 +49,7 @@ You can repeat the test by purchasing the product again through the Test Transac
 2. Select the Sandbox Apple Account.
 3. Select Manage on the pop-up sheet.
 4. On the Account Settings page, select Clear Purchase History.
+5. Sign out of the Sandbox Apple Account to clear the purchase history cache on the device. Sign back in to continue testing.
 
 Restart your app. The purchase history for the Sandbox Apple Account is empty and ready for testing. Clearing the purchase history for Sandbox Apple Accounts with a high number of purchases may take longer.
 

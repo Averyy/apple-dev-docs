@@ -16,6 +16,11 @@ A black button with a light outline.
 static let blackOutline: AddOrderToWalletButtonStyle
 ```
 
+## See Also
+
+- [static let black: AddOrderToWalletButtonStyle](addordertowalletbuttonstyle/black.md)
+  A black button with white lettering.
+
 
 ---
 

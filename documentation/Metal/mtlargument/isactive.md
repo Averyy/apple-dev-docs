@@ -21,7 +21,7 @@ var isActive: Bool { get }
 
 #### Discussion
 
-When you create the [`MTLFunction`](mtlfunction.md) object, Metal statically determines whether the function uses the argument. If [`true`](https://developer.apple.com/documentation/swift/true), you must provide a value for this argument when you encode a command that calls this function. If [`false`](https://developer.apple.com/documentation/swift/false), the function doesn’t use the argument, and you can ignore it.
+When you create the [`MTLFunction`](mtlfunction.md) object, Metal statically determines whether the function uses the argument. If [`true`](https://developer.apple.com/documentation/Swift/true), you need to provide a value for this argument when you encode a command that calls this function. If [`false`](https://developer.apple.com/documentation/Swift/false), the function doesn’t use the argument, and you can ignore it.
 
 ## See Also
 

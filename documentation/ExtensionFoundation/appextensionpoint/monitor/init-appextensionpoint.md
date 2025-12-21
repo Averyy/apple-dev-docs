@@ -3,22 +3,35 @@
 **Framework**: ExtensionFoundation  
 **Kind**: init
 
-Creates an app extesion point monitor and starts monitoring the given app extension point
+Creates a new monitor and configures it with the specified extension point.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 convenience init(appExtensionPoint: AppExtensionPoint) async throws
 ```
+
+#### Discussion
+
+Use this initializer to create a monitor and start looking for app extensions that match the specified extension point. This initializer returns after successfully adding the extension point to the monitor and generating the initial list of app extensions.
+
+## Parameters
+
+- `appExtensionPoint`: An extension point type you defined in your host app.
+
+## See Also
+
+- [init()](appextensionpoint/monitor/init.md)
+  Creates a new monitor without any extension points.
 
 
 ---

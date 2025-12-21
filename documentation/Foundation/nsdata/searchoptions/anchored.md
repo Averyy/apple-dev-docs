@@ -28,8 +28,6 @@ This option performs searching only on bytes at the beginning of the range (or t
 
 - [static var backwards: NSData.SearchOptions](nsdata/searchoptions/backwards.md)
   Search from the end of the data object.
-- [static var backwards: NSData.SearchOptions](nsdata/searchoptions/backwards.md)
-  Search from the end of the data object.
 
 
 ---

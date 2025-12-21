@@ -1,4 +1,4 @@
-# UI Element Colors
+# UI element colors
 
 **Framework**: AppKit
 
@@ -10,7 +10,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ## Topics
 
-### Label Colors
+### Label colors
 - [class var labelColor: NSColor](nscolor/labelcolor.md)
   The primary color to use for text labels.
 - [class var secondaryLabelColor: NSColor](nscolor/secondarylabelcolor.md)
@@ -19,7 +19,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The tertiary color to use for text labels.
 - [class var quaternaryLabelColor: NSColor](nscolor/quaternarylabelcolor.md)
   The quaternary color to use for text labels and separators.
-### Text Colors
+### Text colors
 - [class var textColor: NSColor](nscolor/textcolor.md)
   The color to use for text.
 - [class var placeholderTextColor: NSColor](nscolor/placeholdertextcolor.md)
@@ -36,7 +36,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The color to use for selected text in an unemphasized context.
 - [class var unemphasizedSelectedTextBackgroundColor: NSColor](nscolor/unemphasizedselectedtextbackgroundcolor.md)
   The color to use for the text background in an unemphasized context.
-### Content Colors
+### Content colors
 - [class var linkColor: NSColor](nscolor/linkcolor.md)
   The color to use for links.
 - [class var separatorColor: NSColor](nscolor/separatorcolor.md)
@@ -45,17 +45,17 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The color to use for the background of selected and emphasized content.
 - [class var unemphasizedSelectedContentBackgroundColor: NSColor](nscolor/unemphasizedselectedcontentbackgroundcolor.md)
   The color to use for selected and unemphasized content.
-### Menu Colors
+### Menu colors
 - [class var selectedMenuItemTextColor: NSColor](nscolor/selectedmenuitemtextcolor.md)
   The color to use for the text in menu items.
-### Table Colors
+### Table colors
 - [class var gridColor: NSColor](nscolor/gridcolor.md)
   The color to use for the optional gridlines, such as those in a table view.
 - [class var headerTextColor: NSColor](nscolor/headertextcolor.md)
   The color to use for text in header cells in table views and outline views.
 - [class var alternatingContentBackgroundColors: [NSColor]](nscolor/alternatingcontentbackgroundcolors.md)
   The colors to use for alternating content, typically found in table views and collection views.
-### Control Colors
+### Control colors
 - [class var controlAccentColor: NSColor](nscolor/controlaccentcolor.md)
   The user’s current accent color preference.
 - [class var controlColor: NSColor](nscolor/controlcolor.md)
@@ -76,21 +76,29 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The color to use for text in a selected control.
 - [class var scrubberTexturedBackground: NSColor](nscolor/scrubbertexturedbackground.md)
   The patterned color to use for the background of a scrubber control.
-### Window Colors
+### Window colors
 - [class var windowBackgroundColor: NSColor](nscolor/windowbackgroundcolor.md)
   The color to use for the window background.
 - [class var windowFrameTextColor: NSColor](nscolor/windowframetextcolor.md)
   The color to use for text in a window’s frame.
 - [class var underPageBackgroundColor: NSColor](nscolor/underpagebackgroundcolor.md)
   The color to use in the area beneath your window’s views.
-### Highlights and Shadows
+### Highlights and shadows
 - [class var findHighlightColor: NSColor](nscolor/findhighlightcolor.md)
   The highlight color to use for the bubble that shows inline search result values.
 - [class var highlightColor: NSColor](nscolor/highlightcolor.md)
   The color to use as a virtual light source on the screen.
 - [class var shadowColor: NSColor](nscolor/shadowcolor.md)
   The color to use for virtual shadows cast by raised objects on the screen.
-### Deprecated Colors
+### Fill colors
+- [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
+- [class var quinaryLabel: NSColor](nscolor/quinarylabel.md)
+- [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
+- [class var secondarySystemFill: NSColor](nscolor/secondarysystemfill.md)
+- [class var systemFill: NSColor](nscolor/systemfill.md)
+- [class var tertiarySystemFill: NSColor](nscolor/tertiarysystemfill.md)
+- [class var textInsertionPointColor: NSColor](nscolor/textinsertionpointcolor.md)
+### Deprecated colors
 - [class var alternateSelectedControlColor: NSColor](nscolor/alternateselectedcontrolcolor.md)
   The system color used for the face of a selected control in a list or table.
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)
@@ -117,20 +125,12 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The color to use for the face of selected menu items.
 - [class var windowFrameColor: NSColor](nscolor/windowframecolor.md)
   The system color used for window frames, except for their text.
-### Fill Colors
-- [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
-- [class var quinaryLabel: NSColor](nscolor/quinarylabel.md)
-- [class var quinarySystemFill: NSColor](nscolor/quinarysystemfill.md)
-- [class var secondarySystemFill: NSColor](nscolor/secondarysystemfill.md)
-- [class var systemFill: NSColor](nscolor/systemfill.md)
-- [class var tertiarySystemFill: NSColor](nscolor/tertiarysystemfill.md)
-- [class var textInsertionPointColor: NSColor](nscolor/textinsertionpointcolor.md)
 
 ## See Also
 
-- [Standard Colors](standard-colors.md)
+- [Standard colors](standard-colors.md)
   Retrieve the standard color objects for common colors like red, blue, green, black, white, and more.
-- [Color Creation](color-creation.md)
+- [Color creation](color-creation.md)
   Load colors from asset catalogs, and create colors from raw component values, such as those used by grayscale, RGB, HSB, and CMYK colors.
 
 

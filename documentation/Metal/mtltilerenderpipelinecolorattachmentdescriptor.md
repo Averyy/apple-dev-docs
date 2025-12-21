@@ -21,7 +21,7 @@ class MTLTileRenderPipelineColorAttachmentDescriptor
 
 ## Topics
 
-### Specifying Pixel Format
+### Specifying pixel format
 - [var pixelFormat: MTLPixelFormat](mtltilerenderpipelinecolorattachmentdescriptor/pixelformat.md)
   The pixel format associated with the tile shading render pipeline.
 
@@ -53,7 +53,7 @@ class MTLTileRenderPipelineColorAttachmentDescriptor
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

@@ -3,6 +3,8 @@
 **Framework**: Video Toolbox  
 **Kind**: typealias
 
+A block invoked by motion-estimation session when frame processing is complete.
+
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
@@ -19,14 +21,14 @@ typealias VTMotionEstimationOutputHandler = (OSStatus, __VTMotionEstimationInfoF
 
 #### Discussion
 
-When the client requests a motion estimation, the client passes in a callback block to be called for that result of that request. If the VTMotionEstimationSessionCreateMotionEstimation call returns an error, the block will not be called.
+When the client requests a motion-estimation, the client passes in a callback block that the system invokes for the result of that request. If the `VTMotionEstimationSessionCreateMotionEstimation` call returns an error, the system does not invoke this block.
 
 ## Parameters
 
-- `status`: noErr if processing request was successful; an error code if motion estimation was not successful.
-- `infoFlags`: A bit field containing information about the processing operation.
-- `additionalInfo`: Additional processing information about the processing operation that can not fit in infoFlags.   Currently, this is expected to be NULL.
-- `motionVectorPixelBuffer`: A CVPixelBuffer containing the motion vector information, if processing request was successful;   otherwise, NULL.
+- `status`:   if processing request was successful; an error code if motion-estimation was not successful.
+- `infoFlags`: A bit field that contains information about the processing operation.
+- `additionalInfo`: Additional processing information about the operation that cannot fit in  .   Currently, the system expects this to be NULL.
+- `motionVectorPixelBuffer`: A   that contains the motion vector information, if processing request   was successful; otherwise, NULL.
 
 
 ---

@@ -24,9 +24,7 @@ A `tls_protocol_version_t` value.
 
 #### Discussion
 
-```None
- Get the negotiated TLS version.
-```
+Get the negotiated TLS version.
 
 ## Parameters
 

@@ -76,7 +76,7 @@ Text("The meeting will take place: \(startDate ... endDate)")
 
 ## See Also
 
-- [@frozen struct Text](../SwiftUI/Text.md)
+- [struct Text](../SwiftUI/Text.md)
   A view that displays one or more lines of read-only text.
 
 

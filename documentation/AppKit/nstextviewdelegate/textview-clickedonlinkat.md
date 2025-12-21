@@ -17,7 +17,7 @@ optional func textView(_ textView: NSTextView, clickedOnLink link: Any, at charI
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the click was handled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to allow the next responder to handle it.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the click was handled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to allow the next responder to handle it.
 
 #### Discussion
 

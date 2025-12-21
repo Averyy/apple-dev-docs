@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+A Boolean value that indicates support for the large binary object extension.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

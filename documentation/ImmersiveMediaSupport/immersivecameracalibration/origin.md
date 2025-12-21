@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-Position information that represents the origin from which to render the calibration in 3D space relative to the user’s eye.
+Position information that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

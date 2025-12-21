@@ -18,7 +18,7 @@ struct FinancialConnectionExtensionAuthorizationRequest
 
 ### Instance Properties
 - [var params: FinancialConnectionExtensionAuthorizationParams](financialconnectionextensionauthorizationrequest/params.md)
-### Instance Methods
+### Instance Methods -
 - [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](financialconnectionextensionauthorizationrequest/complete(authorizationresult:).md)
 - [func complete(error: any Error)](financialconnectionextensionauthorizationrequest/complete(error:).md)
 ### Type Aliases

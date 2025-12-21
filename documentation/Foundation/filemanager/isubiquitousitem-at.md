@@ -22,11 +22,11 @@ func isUbiquitousItem(at url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item is targeted for iCloud storage or [`false`](https://developer.apple.com/documentation/swift/false) if it is not. This method also returns [`false`](https://developer.apple.com/documentation/swift/false) if no item exists at `url`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item is targeted for iCloud storage or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not. This method also returns [`false`](https://developer.apple.com/documentation/Swift/false) if no item exists at `url`.
 
 #### Discussion
 
-This method reflects only whether the item should be stored in iCloud because a call was made to the  [`setUbiquitous(_:itemAt:destinationURL:)`](filemanager/setubiquitous(_:itemat:destinationurl:).md) method with a value of [`true`](https://developer.apple.com/documentation/swift/true) for its `flag` parameter. This method does not reflect whether the file has actually been uploaded to any iCloud servers. To determine a file’s upload status, check the `NSURLUbiquitousItemIsUploadedKey` attribute of the corresponding [`NSURL`](nsurl.md) object.
+This method reflects only whether the item should be stored in iCloud because a call was made to the  [`setUbiquitous(_:itemAt:destinationURL:)`](filemanager/setubiquitous(_:itemat:destinationurl:).md) method with a value of [`true`](https://developer.apple.com/documentation/Swift/true) for its `flag` parameter. This method does not reflect whether the file has actually been uploaded to any iCloud servers. To determine a file’s upload status, check the `NSURLUbiquitousItemIsUploadedKey` attribute of the corresponding [`NSURL`](nsurl.md) object.
 
 ## Parameters
 

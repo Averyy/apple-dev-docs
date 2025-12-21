@@ -22,7 +22,7 @@ static let accessibilitySpeechQueueAnnouncement: NSAttributedString.Key
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](nsnumber.md) object that the system interprets as a Boolean value. When the value is [`true`](https://developer.apple.com/documentation/swift/true), the system queues the announcement behind existing speech. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the announcement interrupts the existing speech. The default behavior is to interrupt existing speech.
+The value of this key is an [`NSNumber`](nsnumber.md) object that the system interprets as a Boolean value. When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the system queues the announcement behind existing speech. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the announcement interrupts the existing speech. The default behavior is to interrupt existing speech.
 
 ## See Also
 

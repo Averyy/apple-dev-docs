@@ -29,11 +29,6 @@ A regression.
 - `input`: The regressor input.
 - `eventHandler`: An event handler.
 
-## See Also
-
-- [LinearRegressorModel.Input](linearregressormodel/input.md)
-  The input type.
-
 
 ---
 

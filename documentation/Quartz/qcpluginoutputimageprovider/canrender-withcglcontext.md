@@ -16,11 +16,11 @@ optional func canRender(withCGLContext cgl_ctx: CGLContextObj!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image can be rendered into this CGL context; otherwise [`false`](https://developer.apple.com/documentation/swift/false), in which case [`render(toBuffer:withBytesPerRow:pixelFormat:forBounds:)`](qcpluginoutputimageprovider/render(tobuffer:withbytesperrow:pixelformat:forbounds:).md) is called.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image can be rendered into this CGL context; otherwise [`false`](https://developer.apple.com/documentation/Swift/false), in which case [`render(toBuffer:withBytesPerRow:pixelFormat:forBounds:)`](qcpluginoutputimageprovider/render(tobuffer:withbytesperrow:pixelformat:forbounds:).md) is called.
 
 #### Discussion
 
-If your image can render using any OpenGL context, simply return [`true`](https://developer.apple.com/documentation/swift/true). If your code requires special extensions, you’ll need to check for them and then provide the appropriate return value. For more information on checking for OpenGL capabilities supported by the hardware, see [`OpenGL Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_intro/opengl_intro.html#//apple_ref/doc/uid/TP40001987).
+If your image can render using any OpenGL context, simply return [`true`](https://developer.apple.com/documentation/Swift/true). If your code requires special extensions, you’ll need to check for them and then provide the appropriate return value. For more information on checking for OpenGL capabilities supported by the hardware, see [`OpenGL Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_intro/opengl_intro.html#//apple_ref/doc/uid/TP40001987).
 
 ## Parameters
 

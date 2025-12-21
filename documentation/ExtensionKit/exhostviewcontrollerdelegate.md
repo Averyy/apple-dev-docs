@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: protocol
 
-The delegate for a hosted view controller.
+An interface you use to track the activation and deactivation of an app extension.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -19,11 +19,11 @@ protocol EXHostViewControllerDelegate : NSObjectProtocol
 
 ## Topics
 
-### Delegate Methods
+### Responding to activation and deactivation events
 - [func hostViewControllerDidActivate(EXHostViewController)](exhostviewcontrollerdelegate/hostviewcontrollerdidactivate(_:).md)
-  A delegate method the view controller calls when a connection succeeds.
+  Tells the host that the app extension is active and ready to accept an XPC connection.
 - [func hostViewControllerWillDeactivate(EXHostViewController, error: (any Error)?)](exhostviewcontrollerdelegate/hostviewcontrollerwilldeactivate(_:error:).md)
-  A delegate method the host view controller calls when an extension disconnects.
+  Tells the host that the app extension disconnected and is no longer available.
 
 ## Relationships
 
@@ -32,10 +32,8 @@ protocol EXHostViewControllerDelegate : NSObjectProtocol
 
 ## See Also
 
-- [func makeXPCConnection() throws -> NSXPCConnection](exhostviewcontroller/makexpcconnection.md)
-  Attempts to connect to the extension over XPC.
 - [var delegate: (any EXHostViewControllerDelegate)?](exhostviewcontroller/delegate.md)
-  The connection delegate.
+  A custom delegate object you use to receive notifications about the activation and deactivation of the app extension.
 
 
 ---

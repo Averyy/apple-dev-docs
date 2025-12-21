@@ -30,9 +30,9 @@ Use this transfer representation if your model is stored in memory. For example,
 
 ```swift
 struct ImageDocumentLayer {
-    init(data: Data) throws
-    func data() -> Data
-    func pngData() -> Data
+    init(data: Data) throws { }
+    func data() -> Data { Data() }
+    func pngData() -> Data { Data() }
 }
 ```
 
@@ -42,10 +42,10 @@ You can provide multiple transfer representations for a model type, even if the 
 extension ImageDocumentLayer: Transferable {
     static var transferRepresentation: some TransferRepresentation {
         DataRepresentation(contentType: .layer) { layer in
-                layer.data()
-            } importing: { data in
-                try ImageDocumentLayer(data: data)
-            }
+            layer.data()
+        } importing: { data in
+            try ImageDocumentLayer(data: data)
+        }
         DataRepresentation(exportedContentType: .png) { layer in
             layer.pngData()
         }
@@ -55,7 +55,22 @@ extension ImageDocumentLayer: Transferable {
 
 The example drawing app’s custom transfer representation comes first so that apps that know about the custom transfer representation can use it. The second transfer representation offers export compatibility with other apps that work with PNG images.
 
-> 💡 **Tip**: If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation.md) might be a more convenient choice than [`DataRepresentation`](datarepresentation.md).
+Avoid registering data with the `UTType.data` content type. Instead, choose a content type that best describes the data structure. For example, register PDF data with `UTType.pdf` so the data can be dragged, shared, or imported to apps that support that data type:
+
+```swift
+  struct PDFDocument: Transferable {
+      var pdfData: Data
+
+      static var transferRepresentation: some TransferRepresentation {
+          DataRepresentation(contentType: .pdf) { pdfDocument in
+              pdfDocument.pdfData
+          } importing: { data in
+              PDFDocument(pdfData: data)
+      }
+  }
+```
+
+> 💡 **Tip**: If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation.md) might be a more convenient choice than `DataRepresentation`.
 
 ## Topics
 
@@ -66,11 +81,6 @@ The example drawing app’s custom transfer representation comes first so that a
   Creates a representation that allows importing an item as binary data.
 - [init(exportedContentType: UTType, exporting: (Item) async throws -> Data)](datarepresentation/init(exportedcontenttype:exporting:).md)
   Creates a representation that allows exporting an item as binary data.
-### Type Aliases
-- [DataRepresentation.Body](datarepresentation/body.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](datarepresentation/transferrepresentation-implementations.md)
 
 ## Relationships
 

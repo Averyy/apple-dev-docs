@@ -19,7 +19,7 @@ A message that tells people why the app is requesting access to their calendar d
 ## See Also
 
 - [NSEnterpriseMCAMUsageDescription](information-property-list/nsenterprisemcamusagedescription.md)
-  A message that tells the user why the app is requesting access to the device’s main camera.
+  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSRemindersUsageDescription](information-property-list/nsremindersusagedescription.md)
   A message that tells people why the app is requesting access to their reminders.
 

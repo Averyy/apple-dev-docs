@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure add-on VPN software.
+The payload that configures a per-app VPN.
 
 **Availability**:
 - iOS 7.0+
@@ -19,8 +19,6 @@ object AppLayerVPN
 ```
 
 #### Discussion
-
-Specify `com.apple.vpn.managed.applayer` as the payload type.
 
 Specify `com.apple.vpn.managed.applayer` as the payload type.
 
@@ -237,9 +235,9 @@ This profile defines per-app VPN behavior and applies only to VPN services of ty
 ## See Also
 
 - [object AppToAppLayerVPNMapping](apptoapplayervpnmapping.md)
-  The payload you use to configure per-app VPN settings.
+  The payload that configures per-app VPN settings.
 - [object VPN](vpn.md)
-  The payload you use to configure a VPN.
+  The payload that configures a VPN.
 
 
 ---

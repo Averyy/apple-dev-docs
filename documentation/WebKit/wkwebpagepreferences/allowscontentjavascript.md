@@ -21,7 +21,7 @@ var allowsContentJavaScript: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). If you change the value to false, the web view doesn’t execute JavaScript code referenced by the web content. That includes JavaScript code found in inline `<script>` elements, `javascript:` URLs, and all other referenced JavaScript content.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). If you change the value to false, the web view doesn’t execute JavaScript code referenced by the web content. That includes JavaScript code found in inline `<script>` elements, `javascript:` URLs, and all other referenced JavaScript content.
 
 
 ---

@@ -40,19 +40,10 @@ struct ModelConfiguration
 ### Accessing configuration details
 - [let url: URL](modelconfiguration/url.md)
   The on-disk location of the schema’s persistent storage.
-- [let name: String](modelconfiguration/name.md)
-  The model configuration’s name.
 - [let allowsSave: Bool](modelconfiguration/allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
 - [let isStoredInMemoryOnly: Bool](modelconfiguration/isstoredinmemoryonly.md)
   A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory.
-### Managing schema information
-- [var schema: Schema?](modelconfiguration/schema.md)
-  The schema that maps model classes to the associated data in the persistent storage.
-- [var id: URL](modelconfiguration/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [ModelConfiguration.ID](modelconfiguration/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Sharing and syncing the model store
 - [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)
   The identifier of the configuration’s CloudKit database container.
@@ -66,18 +57,6 @@ struct ModelConfiguration
   The option to use when detecting the preferred app group container.
 - [ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct.md)
   A type that describes the options for detecting an app group container.
-### Hashing
-- [func hash(into: inout Hasher)](modelconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](modelconfiguration/hashvalue.md)
-  The hash value.
-### Comparing model configurations
-- [static func == (ModelConfiguration, ModelConfiguration) -> Bool](modelconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](modelconfiguration/customdebugstringconvertible-implementations.md)
-- [DataStoreConfiguration Implementations](modelconfiguration/datastoreconfiguration-implementations.md)
-- [Equatable Implementations](modelconfiguration/equatable-implementations.md)
 
 ## Relationships
 
@@ -88,6 +67,8 @@ struct ModelConfiguration
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

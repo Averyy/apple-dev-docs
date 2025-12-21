@@ -38,7 +38,7 @@ The JWS payload contains information about the advertisement, such as the advert
 
 | Payload field | Value |
 | --- | --- |
-| impression-identifier | The [`id`](appimpression/id-swift.property.md) |
+| impression-identifier | The [`id`](appimpression/id.md) |
 | publisher-item-identifier | The [`publisherItemID`](appimpression/publisheritemid.md) |
 | impression-type | The impression type, `"app-impression"` |
 | ad-network-identifier | A string that defines the ad network, such as `example.adattributionkit` |

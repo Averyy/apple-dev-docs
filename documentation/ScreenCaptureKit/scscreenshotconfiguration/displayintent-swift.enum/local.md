@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: case
 
+Specifies that the screenshot renders with local display attributes optimizing output for presentation on the capture display.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

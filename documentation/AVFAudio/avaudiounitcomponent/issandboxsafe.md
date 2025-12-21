@@ -21,7 +21,7 @@ var isSandboxSafe: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the component is safe for sandboxing; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This only applies to the current process.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) if the component is safe for sandboxing; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). This only applies to the current process.
 
 ## See Also
 

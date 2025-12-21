@@ -23,8 +23,6 @@ struct LinearTransformer<Element> where Element : BinaryFloatingPoint, Element :
 ## Topics
 
 ### Creating a regressor
-- [init(from: any Decoder) throws](lineartransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(scale: Element, offset: Element)](lineartransformer/init(scale:offset:).md)
   Creates a linear transformer.
 ### Getting the properties
@@ -33,30 +31,8 @@ struct LinearTransformer<Element> where Element : BinaryFloatingPoint, Element :
 - [var scale: Element](lineartransformer/scale.md)
   The amount to be scaled.
 ### Performing the transformation
-- [func applied<S>(to: S, eventHandler: EventHandler?) -> [Element]](lineartransformer/applied(to:eventhandler:)-3p0ia.md)
-  Scales a sequence of inputs.
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](lineartransformer/applied(to:eventhandler:)-6w4yg.md)
+- [func applied(to:eventHandler:)](lineartransformer/applied(to:eventhandler:).md)
   Scales an input.
-### Operators
-- [static func == (LinearTransformer<Element>, LinearTransformer<Element>) -> Bool](lineartransformer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](lineartransformer/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](lineartransformer/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](lineartransformer/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [LinearTransformer.Input](lineartransformer/input.md)
-  The input type.
-- [LinearTransformer.Output](lineartransformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](lineartransformer/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](lineartransformer/equatable-implementations.md)
-- [Transformer Implementations](lineartransformer/transformer-implementations.md)
 
 ## Relationships
 

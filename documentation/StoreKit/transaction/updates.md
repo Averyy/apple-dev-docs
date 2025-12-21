@@ -22,14 +22,16 @@ static var updates: Transaction.Transactions { get }
 ## Mentions
 
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
+- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 
 #### Discussion
 
-Use [`updates`](transaction/updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, subscription offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
+Use [`updates`](transaction/updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
 
 Note that after a successful in-app purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](product/purchaseresult/success(_:).md).
 
@@ -92,8 +94,8 @@ The [`updates`](transaction/updates.md) listener receives unfinished transaction
 
 ## See Also
 
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
 - [struct Transaction](transaction.md)
   Information that represents the customer’s purchase of a product in your app.
 - [static var all: Transaction.Transactions](transaction/all.md)

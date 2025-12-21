@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns a `Range`-based view of `self`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,10 @@
 ```swift
 func rangeView<R>(of range: R) -> IndexSet.RangeView where R : RangeExpression, R.Bound == Int
 ```
+
+## Parameters
+
+- `range`: A subrange of   to view.
 
 
 ---

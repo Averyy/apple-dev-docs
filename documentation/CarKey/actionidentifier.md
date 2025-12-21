@@ -30,14 +30,8 @@ An [`ActionIdentifier`](actionidentifier.md) type wraps a vehicle-specific code 
 - [init(Int)](actionidentifier/init(_:).md)
   Creates and returns a new action identifier with the specified value.
 ### Getting the Value
-- [let rawValue: Int](actionidentifier/rawvalue-swift.property.md)
+- [let rawValue: Int](actionidentifier/rawvalue.md)
   The raw value that corresponds to the feature-specific action.
-### Type Aliases
-- [ActionIdentifier.RawValue](actionidentifier/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](actionidentifier/equatable-implementations.md)
-- [RawRepresentable Implementations](actionidentifier/rawrepresentable-implementations.md)
 
 ## Relationships
 

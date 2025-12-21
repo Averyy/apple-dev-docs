@@ -16,13 +16,13 @@ optional func listener(_ listener: VZVirtioSocketListener, shouldAcceptNewConnec
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to establish the connection, or [`false`](https://developer.apple.com/documentation/swift/false) to reject it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to establish the connection, or [`false`](https://developer.apple.com/documentation/Swift/false) to reject it.
 
 #### Discussion
 
 Use your method’s implementation to quickly determine whether to accept or reject connection attempts. A typical implementation verifies that a connection between the specified ports is permissible. Return a result as quickly as possible, and don’t perform any long-running operations in this method.
 
-If you don’t implement this method, the virtual machine refuses all connection requests as if this method returned [`false`](https://developer.apple.com/documentation/swift/false).
+If you don’t implement this method, the virtual machine refuses all connection requests as if this method returned [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

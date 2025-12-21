@@ -21,7 +21,7 @@ enum MTLPrimitiveTopologyClass
 
 ## Topics
 
-### Constants
+### Topology classes
 - [MTLPrimitiveTopologyClass.unspecified](mtlprimitivetopologyclass/unspecified.md)
   An unspecified primitive.
 - [MTLPrimitiveTopologyClass.point](mtlprimitivetopologyclass/point.md)

@@ -19,6 +19,8 @@ var isEnrolled: Bool { get }
 
 #### Discussion
 
+Whether the user has enrolled this biometry.
+
 Even if biometry is enrolled, it does not necessarily mean that it can be used. You should check @c isUsable property to see if it is available for use.
 
 

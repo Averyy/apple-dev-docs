@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Read-write textures are not supported.
+Indicates the system doesn’t support read-write textures.
 
 **Availability**:
 - iOS 11.0+
@@ -22,9 +22,9 @@ case tierNone
 ## See Also
 
 - [MTLReadWriteTextureTier.tier1](mtlreadwritetexturetier/tier1.md)
-  Tier 1 read/write textures are supported.
+  Indicates the system supports tier 1 read-write textures.
 - [MTLReadWriteTextureTier.tier2](mtlreadwritetexturetier/tier2.md)
-  Tier 2 read/write textures are supported.
+  Indicates the system supports tier 2 read-write textures.
 
 
 ---

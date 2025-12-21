@@ -6,7 +6,7 @@
 The start date of the event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

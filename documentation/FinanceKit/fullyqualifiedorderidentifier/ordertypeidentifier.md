@@ -20,6 +20,11 @@ var orderTypeIdentifier: String
 
 This is a string the merchant uses to identify the set of orders associated with a given type. Merchants can set up order types on the developer portal.
 
+## See Also
+
+- [var orderIdentifier: String](fullyqualifiedorderidentifier/orderidentifier.md)
+  A string the merchant uses to identify a specific customer order.
+
 
 ---
 

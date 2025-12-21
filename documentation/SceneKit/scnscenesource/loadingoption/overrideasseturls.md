@@ -22,9 +22,9 @@ static let overrideAssetURLs: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-A scene file may reference external resources, such as image files used as textures in material properties, using relative URL paths. When loading from a scene source, SceneKit by default attempts to resolve these references relative to the directory containing the scene file. If you set this option’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit searches for external resources only within the directories you specify using the [`assetDirectoryURLs`](scnscenesource/loadingoption/assetdirectoryurls.md) option.
+A scene file may reference external resources, such as image files used as textures in material properties, using relative URL paths. When loading from a scene source, SceneKit by default attempts to resolve these references relative to the directory containing the scene file. If you set this option’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit searches for external resources only within the directories you specify using the [`assetDirectoryURLs`](scnscenesource/loadingoption/assetdirectoryurls.md) option.
 
 ## See Also
 

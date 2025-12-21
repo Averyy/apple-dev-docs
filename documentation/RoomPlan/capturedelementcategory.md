@@ -27,17 +27,6 @@ A  [`CapturedRoomAttribute`](capturedroomattribute.md) adopter’s [`parentCateg
   A category that’s scoped to the captured object.
 - [case surface(CapturedRoom.Surface.Category)](capturedelementcategory/surface(_:).md)
   A category that’s scoped to the captured surface.
-### Creating a category
-- [init(from: any Decoder) throws](capturedelementcategory/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (CapturedElementCategory, CapturedElementCategory) -> Bool](capturedelementcategory/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](capturedelementcategory/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](capturedelementcategory/equatable-implementations.md)
 
 ## Relationships
 

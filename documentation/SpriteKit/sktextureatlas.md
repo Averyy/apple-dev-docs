@@ -23,8 +23,8 @@ class SKTextureAtlas
 ## Mentions
 
 - [About Texture Atlases](about-texture-atlases.md)
-- [Maximizing Texture Performance](maximizing-texture-performance.md)
 - [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+- [Maximizing Texture Performance](maximizing-texture-performance.md)
 
 #### Overview
 

@@ -20,7 +20,7 @@ var isCenterStageActive: Bool { get }
 
 #### Discussion
 
-When Center Stage is active, the camera automatically pans, tightens, or widens the field of view as it requires to keep people optimally framed. If an app or a user enables Center Stage, this property value is [`true`](https://developer.apple.com/documentation/swift/true) if the device supports the feature in its current configuration.
+When Center Stage is active, the camera automatically pans, tightens, or widens the field of view as it requires to keep people optimally framed. If an app or a user enables Center Stage, this property value is [`true`](https://developer.apple.com/documentation/Swift/true) if the device supports the feature in its current configuration.
 
 The system imposes the following restrictions on a device when Center Stage is active:
 
@@ -30,7 +30,7 @@ The system imposes the following restrictions on a device when Center Stage is a
 The system deactivates Center Stage in the following cases:
 
 - You enable depth data delivery on a capture output, such as [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) or [`AVCapturePhotoOutput`](avcapturephotooutput.md).
-- The device supports geometric distortion correction, but you haven’t enabled it by setting the value of [`isGeometricDistortionCorrectionEnabled`](avcapturedevice/isgeometricdistortioncorrectionenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+- The device supports geometric distortion correction, but you haven’t enabled it by setting the value of [`isGeometricDistortionCorrectionEnabled`](avcapturedevice/isgeometricdistortioncorrectionenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This property is key-value observable.
 

@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
-Check for whether the extension is supported for the newly created passkey.
+A check to determine extension support for the newly created passkey.
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +17,11 @@ Check for whether the extension is supported for the newly created passkey.
 ```swift
 static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput { get }
 ```
+
+## See Also
+
+- [let shouldCheckForSupport: Bool](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/shouldcheckforsupport.md)
+  A Boolean value that indicates whether to check for PRF support.
 
 
 ---

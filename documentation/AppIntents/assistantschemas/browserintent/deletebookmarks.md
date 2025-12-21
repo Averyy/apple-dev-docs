@@ -25,7 +25,7 @@ var deleteBookmarks: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.browser.deleteBookmarks` schema:
 
 ```swift
-@AssistantIntent(schema: .browser.deleteBookmarks)
+@AppIntent(schema: .browser.deleteBookmarks)
 struct DeleteBookmarksIntent: DeleteIntent {
     @Parameter
     var entities: [BookmarkEntity]

@@ -65,7 +65,7 @@ class NSUserDefaultsController
 ## See Also
 
 - [class NSUbiquitousKeyValueStore](../Foundation/NSUbiquitousKeyValueStore.md)
-  An iCloud-based container of key-value pairs you use to share data among instances of your app running on a user’s connected devices.
+  An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 
 
 ---

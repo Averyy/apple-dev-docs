@@ -22,9 +22,9 @@ static let useSafeMode: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-A scene file may reference external resources, such as image files used as textures in material properties, using relative or absolute URLs, including URLs that identify network resources. If you set this option’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit does not load external resources from the network or from sensitive directories in the local filesystem.
+A scene file may reference external resources, such as image files used as textures in material properties, using relative or absolute URLs, including URLs that identify network resources. If you set this option’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit does not load external resources from the network or from sensitive directories in the local filesystem.
 
 ## See Also
 

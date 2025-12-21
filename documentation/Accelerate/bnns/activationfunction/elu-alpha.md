@@ -13,7 +13,6 @@ An activation function that evaluates the exponential linear units (ELU) on its 
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

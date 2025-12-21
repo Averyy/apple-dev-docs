@@ -23,6 +23,11 @@ Depth data capture requires a compatible pairing of video format and depth data 
 
 Supported depth data formats always match the aspect ratio of their corresponding video format.
 
+## See Also
+
+- [var supportedVideoZoomFactorsForDepthDataDelivery: [CGFloat]](avcapturedevice/format/supportedvideozoomfactorsfordepthdatadelivery.md)
+  The zoom factors that a format supports for depth data delivery.
+
 
 ---
 

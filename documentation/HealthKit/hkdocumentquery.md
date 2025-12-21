@@ -39,7 +39,7 @@ To create and execute a query, perform the following steps:
 4. Instantiate a new query by calling the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:).md) method.
 5. In the results handler, handle any errors and process the results.
 
-Note, the query returns the results in batches and may call the results handler more than once. If the `done` parameter is set to [`false`](https://developer.apple.com/documentation/swift/false), the query is still active and will call the results handler with additional results. If the `done` parameter is set to [`true`](https://developer.apple.com/documentation/swift/true), the query is complete.
+Note, the query returns the results in batches and may call the results handler more than once. If the `done` parameter is set to [`false`](https://developer.apple.com/documentation/Swift/false), the query is still active and will call the results handler with additional results. If the `done` parameter is set to [`true`](https://developer.apple.com/documentation/Swift/true), the query is complete.
 
 ```swift
 guard let cdaType = HKObjectType.documentType(forIdentifier: .CDA) else {

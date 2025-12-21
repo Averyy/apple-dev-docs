@@ -14,13 +14,12 @@ Asynchronously closes the document after saving any changes.
 ## Declaration
 
 ```swift
-@MainActor
 func close() async -> Bool
 ```
 
 #### Discussion
 
-You call this method to begin the sequence of method calls that saves a document safely and asynchronously. The file-system location of the document derives from the [`fileURL`](uidocument/fileurl.md) property. After the save operation concludes, the code in `completionHandler` is executed. In this code, you can close the document — for example, by removing the document’s view from the screen. Additionally, if the save operation didn’t succeed (`success` is [`false`](https://developer.apple.com/documentation/swift/false)), you can respond in an appropriate manner.
+You call this method to begin the sequence of method calls that saves a document safely and asynchronously. The file-system location of the document derives from the [`fileURL`](uidocument/fileurl.md) property. After the save operation concludes, the code in `completionHandler` is executed. In this code, you can close the document — for example, by removing the document’s view from the screen. Additionally, if the save operation didn’t succeed (`success` is [`false`](https://developer.apple.com/documentation/Swift/false)), you can respond in an appropriate manner.
 
 You typically wouldn’t override this method. The default implementation calls the [`autosave(completionHandler:)`](uidocument/autosave(completionhandler:).md) method.
 

@@ -6,7 +6,7 @@
 A value that indicates the amount of time that the customer used the app.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API ?+ - Deprecated
 
 ## Declaration
 
@@ -21,18 +21,18 @@ int32 playTime
 - [type appAccountToken](appaccounttoken.md)
   The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 - [type consumptionStatus](consumptionstatus.md)
-  A value that indicates the extent to which the customer consumed the in-app purchase.
+  A value that indicates the extent to which the customer consumed the In-App Purchase.
 - [type customerConsented](customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type deliveryStatus](deliverystatus.md)
-  A value that indicates whether the app successfully delivered an in-app purchase that works properly.
+- [type deliveryStatusV1](deliverystatusv1.md)
+  A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 - [type lifetimeDollarsPurchased](lifetimedollarspurchased.md)
   A value that indicates the dollar amount of in-app purchases the customer has made in your app, since purchasing the app, across all platforms.
 - [type lifetimeDollarsRefunded](lifetimedollarsrefunded.md)
   A value that indicates the dollar amount of refunds the customer has received in your app, since purchasing the app, across all platforms.
 - [type platform](platform.md)
   The platform on which the customer consumed the in-app purchase.
-- [type refundPreference](refundpreference.md)
+- [type refundPreferenceV1](refundpreferencev1.md)
   A value that indicates your preferred outcome for the refund request.
 - [type sampleContentProvided](samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.

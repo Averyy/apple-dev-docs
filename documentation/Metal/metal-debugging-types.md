@@ -1,4 +1,4 @@
-# Metal Debugging Types
+# Metal debugging types
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Create capture managers and capture scopes, and review a GPU device’s log afte
 
 ## Topics
 
-### Frame Capture
+### Frame capture
 - [class MTLCaptureDescriptor](mtlcapturedescriptor.md)
   A configuration for a Metal capture session.
 - [class MTLCaptureManager](mtlcapturemanager.md)
@@ -14,13 +14,13 @@ Create capture managers and capture scopes, and review a GPU device’s log afte
 - [enum MTLCaptureDestination](mtlcapturedestination.md)
   The kinds of destinations for captured command data.
 - [protocol MTLCaptureScope](mtlcapturescope.md)
-  A protocol that defines custom boundaries for a GPU frame capture.
-### Capture Errors
+  A type that can programmatically customize a GPU frame capture.
+### Capture errors
 - [enum MTLCaptureError](mtlcaptureerror.md)
   Errors returned by capture sessions.
 - [let MTLCaptureErrorDomain: String](mtlcaptureerrordomain.md)
   The error domain for capture errors.
-### Shader Logs
+### Shader logs
 - [protocol MTLFunctionLog](mtlfunctionlog.md)
   A log entry a Metal device generates when the it runs a command buffer.
 - [struct MTLLogContainer](mtllogcontainer-swift.struct.md)
@@ -30,8 +30,8 @@ Create capture managers and capture scopes, and review a GPU device’s log afte
 
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Capturing Metal commands programmatically](capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Logging shader debug messages](logging-shader-debug-messages.md)
   Print debugging messages that a shader generates using shader logging.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
@@ -42,7 +42,7 @@ Create capture managers and capture scopes, and review a GPU device’s log afte
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+- [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
 
 

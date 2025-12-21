@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A Metal texture to which you can write output pixel data.
+A Metal texture object that can be bound for output using Metal.
 
 **Availability**:
 - iOS 10.0+
@@ -20,18 +20,14 @@ A Metal texture to which you can write output pixel data.
 var metalTexture: (any MTLTexture)? { get }
 ```
 
-#### Discussion
-
-For image processing using a Metal shader, bind this texture as an attachment in a render pass or as an output texture in a compute pass.
-
 ## See Also
 
 - [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
-  A pointer to CPU memory at which to write output pixel data.
+  The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessoroutput/pixelbuffer.md)
-  A CoreVideo pixel buffer to which you can write output pixel data.
+  An output pixelBuffer object that your Core Image Processor Kernel can write to.
 - [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
-  An IOSurface object to which you can write output pixel data.
+  An output surface object that your Core Image Processor Kernel can write to.
 
 
 ---

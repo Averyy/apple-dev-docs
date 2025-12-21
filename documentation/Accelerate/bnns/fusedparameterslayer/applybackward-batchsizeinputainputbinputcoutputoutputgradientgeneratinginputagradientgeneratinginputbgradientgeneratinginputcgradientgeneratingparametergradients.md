@@ -11,9 +11,8 @@ Applies the layer backward to generate input gradients, where the first layer ac
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- watchOS 8.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 8.0+
 
 ## Declaration
 

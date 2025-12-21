@@ -25,7 +25,7 @@ Create a command buffer with a custom configuration by creating an [`MTLCommandB
 
 ## Topics
 
-### Configuring the Command Buffer
+### Configuring the command buffer
 - [var logState: (any MTLLogState)?](mtlcommandbufferdescriptor/logstate.md)
   The shader logging configuration that the command buffer uses.
 - [var retainedReferences: Bool](mtlcommandbufferdescriptor/retainedreferences.md)
@@ -50,7 +50,7 @@ Create a command buffer with a custom configuration by creating an [`MTLCommandB
 
 ## See Also
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 - [protocol MTLCommandQueue](mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.

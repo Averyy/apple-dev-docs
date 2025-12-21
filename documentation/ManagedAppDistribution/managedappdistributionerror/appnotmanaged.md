@@ -8,8 +8,8 @@ An error that indicates that the calling app is not managed
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 - visionOS 2.4+
 
 ## Declaration

@@ -20,11 +20,11 @@ var preventsDisplaySleepDuringVideoPlayback: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) doesn’t force the display to sleep; it only stops preventing display sleep. Other apps or frameworks within your app may still be preventing display sleep for various reasons.
+Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) doesn’t force the display to sleep; it only stops preventing display sleep. Other apps or frameworks within your app may still be preventing display sleep for various reasons.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) in iOS, tvOS, and Mac Catalyst. The default value in macOS is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true) in iOS, tvOS, and Mac Catalyst. The default value in macOS is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-> **Note**:  If you enqueue sample buffers for playback at the user’s request, you should ensure that you set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). If your app isn’t displaying video as part of the user’s primary focus, set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  If you enqueue sample buffers for playback at the user’s request, you should ensure that you set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true). If your app isn’t displaying video as part of the user’s primary focus, set the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

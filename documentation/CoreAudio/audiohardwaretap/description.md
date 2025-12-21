@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The CATapDescription that describes the configuration of this tap.
+
 **Availability**:
 - macOS 15.0+
 

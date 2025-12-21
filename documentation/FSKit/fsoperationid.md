@@ -26,8 +26,6 @@ A unique identifier for an operation.
 - [static let unspecified: FSOperationID](fsoperationid/unspecified.md)
 ### Working with raw values
 - [init(rawValue: Int)](fsoperationid/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsoperationid/equatable-implementations.md)
 
 ## Relationships
 

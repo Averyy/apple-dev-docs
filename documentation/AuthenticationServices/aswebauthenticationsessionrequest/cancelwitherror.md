@@ -28,6 +28,10 @@ Call this method from your browser app when the authentication attempt fails to 
 
 ## See Also
 
+- [var callback: ASWebAuthenticationSession.Callback?](aswebauthenticationsessionrequest/callback.md)
+  The callback to listen for, which completes the request.
+- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  An object for evaluating navigation events in an authentication session.
 - [func complete(withCallbackURL: URL)](aswebauthenticationsessionrequest/complete(withcallbackurl:).md)
   Indicates that the browser successfully completed the authentication attempt.
 

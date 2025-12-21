@@ -20,7 +20,7 @@ The notification object is the web history that saved the history items. This no
 
 ## See Also
 
-- [func save(to: URL!)](../webkit/webhistory/1521400-save.md)
+- [func save(to: URL!) throws](../WebKit/WebHistory/save(to:).md)
   Saves the web history to the specified file.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

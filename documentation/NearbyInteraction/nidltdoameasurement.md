@@ -3,11 +3,11 @@
 **Framework**: Nearby Interaction  
 **Kind**: class
 
-Represents a single measurement relative to a DL-TDOA anchor.
+Information from a Downlink Time-Difference-of-Arrival anchor that you use to derive a range estimate.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,25 +15,34 @@ Represents a single measurement relative to a DL-TDOA anchor.
 class NIDLTDOAMeasurement
 ```
 
+#### Overview
+
+Your app runs on a receiver device that fields messages from nearby physical base stations, or . The framework processes the messages into instances of this class and provides them to your app through the  [`session(_:didUpdateDLTDOA:)`](nisessiondelegate/session(_:didupdatedltdoa:).md) callback. Your app analyzes the measurements to calculate the receiver’s position relative to the anchors in the tracked area.
+
+Only sessions that run a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) receive Downlink Time-Difference-of-Arrival measurements.
+
 ## Topics
 
-### Instance Properties
+### Identifying the anchor
 - [var address: Int](nidltdoameasurement/address.md)
-  Indicates the address of anchor of this measurement.
-- [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
-  Indicates the estimated carrier frequency offset (dimensionless).
+  A value that uniquely identifies an anchor in a tracked area.
+### Locating the anchor
 - [var coordinates: simd_double3](nidltdoameasurement/coordinates.md)
-  Indicates the anchor’s coordinates:
+  A triplet that represents the location in 3D space of the anchor that provides the measurement.
 - [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
-  Inidicates the type of coordinates of this anchor.
-- [var measurementType: NIDLTDOAMeasurementType](nidltdoameasurement/measurementtype.md)
-  Indicates the type of this measurement.
-- [var receiveTime: Double](nidltdoameasurement/receivetime.md)
-  Indicates the reception timestamp (in seconds).
+  The type of coordinate system that the measurement conforms to.
 - [var signalStrength: Double](nidltdoameasurement/signalstrength.md)
-  Indicates the signal strength in dBm.
+  A value that represents the signal strength, in dBm, to the anchor that provides the measurement.
+### Assessing time difference
+- [var receiveTime: Double](nidltdoameasurement/receivetime.md)
+  A timestamp, in seconds, for the time that the device receives the measurement.
 - [var transmitTime: Double](nidltdoameasurement/transmittime.md)
-  Indicates the transmission timestamp (in seconds).
+  A timestamp, in seconds, for the elapsed message transmission time.
+### Evaluating the message
+- [var measurementType: NIDLTDOAMeasurementType](nidltdoameasurement/measurementtype.md)
+  The type of anchor message that the measurement derives from.
+- [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
+  The drift, as a ratio, across the frequencies of the receiver and the anchor.
 
 ## Relationships
 
@@ -51,6 +60,13 @@ class NIDLTDOAMeasurement
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [enum NIDLTDOACoordinatesType](nidltdoacoordinatestype.md)
+  The possible coordinate types for Downlink Time-Difference-of-Arrival measurement updates.
+- [enum NIDLTDOAMeasurementType](nidltdoameasurementtype.md)
+  The possible phases of downlink positioning signals.
 
 
 ---

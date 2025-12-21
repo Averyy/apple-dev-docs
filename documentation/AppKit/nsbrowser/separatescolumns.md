@@ -17,9 +17,9 @@ var separatesColumns: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser’s columns are separated by bezeled borders.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the browser’s columns are separated by bezeled borders.
 
-This value is ignored if [`isTitled`](nsbrowser/istitled.md) does not return [`false`](https://developer.apple.com/documentation/swift/false).
+This value is ignored if [`isTitled`](nsbrowser/istitled.md) does not return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

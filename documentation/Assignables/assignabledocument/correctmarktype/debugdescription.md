@@ -19,7 +19,7 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var id: AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype/id-swift.property.md)
+- [var id: AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype/id.md)
   The stable identity of this enum value.
 
 

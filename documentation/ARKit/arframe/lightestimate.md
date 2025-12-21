@@ -20,7 +20,7 @@ var lightEstimate: ARLightEstimate? { get }
 
 If you render your own overlay graphics for the AR scene, you can use this information in shading algorithms to help make those graphics match the real-world lighting conditions of the scene captured by the camera. (The [`ARSCNView`](arscnview.md) class automatically uses this information to configure SceneKit lighting.)
 
-This property’s value is `nil` if the [`isLightEstimationEnabled`](arconfiguration/islightestimationenabled.md) property of the session configuration that captured this frame is [`false`](https://developer.apple.com/documentation/swift/false).
+This property’s value is `nil` if the [`isLightEstimationEnabled`](arconfiguration/islightestimationenabled.md) property of the session configuration that captured this frame is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

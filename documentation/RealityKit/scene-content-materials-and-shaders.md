@@ -15,10 +15,27 @@ RealityKit includes a few material types to help you get started, including [`Si
 ### Simple materials
 - [struct SimpleMaterial](simplematerial.md)
   A basic material that responds to lights in the scene.
+- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [SimpleMaterial.Texture](simplematerial/texture.md)
+  The type used to represent textures.
+- [SimpleMaterial.FaceCulling](simplematerial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
 - [SimpleMaterial.TriangleFillMode](simplematerial/trianglefillmode-swift.typealias.md)
 ### Unlit materials
 - [struct UnlitMaterial](unlitmaterial.md)
   A material that doesn’t respond to lights in the scene.
+- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [UnlitMaterial.Blending](unlitmaterial/blending-swift.typealias.md)
+  The type used to represent opacity information.
+- [UnlitMaterial.Texture](unlitmaterial/texture.md)
+  The type used to represent textures.
+- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
+- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.typealias.md)
+  An alias for the texture coordinate transform that’s appropriate for this material class.
+- [UnlitMaterial.TriangleFillMode](unlitmaterial/trianglefillmode-swift.typealias.md)
 ### Realistic materials
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
@@ -74,6 +91,8 @@ RealityKit includes a few material types to help you get started, including [`Si
   A representation of a texture.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
   An object that holds texture resource creation options.
+- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
+  An object for controlling the texture-sampling quality.
 - [TextureResource.MipmapsMode](textureresource/mipmapsmode.md)
   An enumeration for specifying how to allocate and generate mipmaps for a texture.
 - [TextureResource.Semantic](textureresource/semantic-swift.enum.md)
@@ -95,7 +114,7 @@ RealityKit includes a few material types to help you get started, including [`Si
   Describes the texture managed by the drawable queue
 ### Shaders
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
-  Create dynamic materials without Metal.
+  A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
@@ -118,9 +137,13 @@ RealityKit includes a few material types to help you get started, including [`Si
 ### Object occlusion
 - [struct OcclusionMaterial](occlusionmaterial.md)
   An invisible material that hides objects rendered behind it.
+- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
 ### Video materials
 - [struct VideoMaterial](videomaterial.md)
   A material that supports animated textures.
+- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
 - [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
 ### Custom material types
 - [CustomMaterial.Custom](custommaterial/custom-swift.struct.md)
@@ -181,6 +204,8 @@ RealityKit includes a few material types to help you get started, including [`Si
 
 - [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+  Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
@@ -189,6 +214,8 @@ RealityKit includes a few material types to help you get started, including [`Si
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+  Respond to gestures performed on RealityKit entities using input target and collision components.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Anchors](scene-content-anchors.md)

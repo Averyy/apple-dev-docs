@@ -8,13 +8,13 @@ Add a search interface to your app to execute Spotlight queries and offer sugges
 
 Adding search tools to your app gives people a way to find content more easily. Whether you add search controls to an app window or to one of the views in your interface, use Spotlight to generate the search results for your content. Spotlight searches the content you already indexed, and provides relevant text completions and results for you to display. In iOS 18 and macOS 15 and later, Spotlight also supports semantic searches of your content, in addition to lexical matching of a search term.
 
-To take full advantage of search into your interface, make sure you index your app’s content and provide it to Spotlight. As your app generates or changes its content, send the details of those changes to Spotlight so it can update its indexes. It’s also important to provide an app extension that Spotlight can call to regenerate those details on demand. For more information about providing Spotlight with your app’s data, see [`Adding your app’s content to Spotlight indexes`](adding-your-app-s-content-to-spotlight-indexes.md).
+To take full advantage of search in your interface, make sure you index your app’s content and provide it to Spotlight. As your app generates or changes its content, send the details of those changes to Spotlight so it can update its indexes. It’s also important to provide an app extension that Spotlight can call to regenerate those details on demand. For more information about providing Spotlight with your app’s data, see [`Adding your app’s content to Spotlight indexes`](adding-your-app-s-content-to-spotlight-indexes.md).
 
 ##### Add a Search Field to Your Interface
 
 Apple’s UI frameworks provide search controls you can add to your interface, and support to provide a consistent search experience. Incorporate these controls into your views and use the built-in support to initiate searches and display the results.
 
-- In SwiftUI, add a `searchable` modifier to a view in your interface. This modifier creates an implicit search field to your interface and binds it to the string you use to initiate queries. For more information, see [`Adding a search interface to your app`](https://developer.apple.com/documentation/SwiftUI/Adding-a-search-interface-to-your-app).
+- In SwiftUI, add a `searchable` modifier to a view in your interface. This modifier creates an implicit search field in your interface and binds it to the string you use to initiate queries. For more information, see [`Adding a search interface to your app`](https://developer.apple.com/documentation/SwiftUI/Adding-a-search-interface-to-your-app).
 - In UIKit, add a [`UISearchBar`](https://developer.apple.com/documentation/UIKit/UISearchBar) control to your interface, and display results using an associated [`UISearchController`](https://developer.apple.com/documentation/UIKit/UISearchController).
 - In AppKit, [`NSSearchField`](https://developer.apple.com/documentation/AppKit/NSSearchField) provides a text field with search-related behaviors.
 
@@ -63,7 +63,7 @@ Task {
 }
 ```
 
-If you’re not using Swift or prefer to use process results and suggestions separately, configure the appropriate handlers for your query object and call the [`start()`](csuserquery/start().md) method. As Spotlight generates results, it delivers them to the handlers in the [`foundItemsHandler`](cssearchquery/founditemshandler.md) and  [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md) properties of the query object. Use those handlers to process results and suggestions and display them in your interface. You can also add a completion handler to the query to determine when Spotlight finishes delivering results.
+If you’re not using Swift or prefer to use process results and suggestions separately, configure the appropriate handlers for your query object and call the [`start()`](csuserquery/start().md) method. As Spotlight generates results, it delivers them to the handlers in the [`foundItemsHandler`](cssearchquery/founditemshandler.md) and [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md) properties of the query object. Use those handlers to process results and suggestions and display them in your interface. You can also add a completion handler to the query to determine when Spotlight finishes delivering results.
 
 When someone interacts with your search control, you typically create multiple query objects to generate results. Query objects run only once, and you don’t reuse them by changing the query string. When the person types more text into your search control, cancel the previous query and create a new one for the new string.
 

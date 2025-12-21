@@ -30,14 +30,8 @@ A [`FunctionStatus`](functionstatus.md) type wraps the custom code that the vehi
 - [init(Int)](functionstatus/init(_:).md)
   Creates and returns a new function status with the specified value.
 ### Getting the Value
-- [let rawValue: Int](functionstatus/rawvalue-swift.property.md)
+- [let rawValue: Int](functionstatus/rawvalue.md)
   The raw value that corresponds to the feature-specific status.
-### Type Aliases
-- [FunctionStatus.RawValue](functionstatus/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](functionstatus/equatable-implementations.md)
-- [RawRepresentable Implementations](functionstatus/rawrepresentable-implementations.md)
 
 ## Relationships
 

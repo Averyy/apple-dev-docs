@@ -11,13 +11,7 @@ The mode of transportation, distance, and travel time estimates for a single des
 ## Declaration
 
 ```swift
-dictionary EtaResult {
-	mapkit.Directions.Transport transportType;
-	mapkit.Coordinate destination;
-	number distance;
-	number expectedTravelTime;
-	number staticTravelTime;
-};
+interface EtaResult
 ```
 
 ## Topics
@@ -36,11 +30,11 @@ dictionary EtaResult {
 
 ## See Also
 
-- [eta](mapkit.directions/eta.md)
+- [eta(request, callback)](directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
-- [EtaRequestOptions](etarequestoptions.md)
+- [interface EtaRequestOptions](etarequestoptions.md)
   The options you may provide for requesting estimated arrival times.
-- [EtaResponse](etaresponse.md)
+- [interface EtaResponse](etaresponse.md)
   The estimated arrival times for a set of destinations.
 
 

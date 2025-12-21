@@ -23,8 +23,8 @@ protocol URLSessionTaskDelegate : URLSessionDelegate
 ## Mentions
 
 - [Uploading streams of data](uploading-streams-of-data.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview
@@ -70,6 +70,7 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 - [func urlSession(URLSession, didCreateTask: URLSessionTask)](urlsessiontaskdelegate/urlsession(_:didcreatetask:).md)
 - [func urlSession(URLSession, task: URLSessionTask, didReceiveInformationalResponse: HTTPURLResponse)](urlsessiontaskdelegate/urlsession(_:task:didreceiveinformationalresponse:).md)
 - [func urlSession(URLSession, task: URLSessionTask, needNewBodyStreamFrom: Int64, completionHandler: (InputStream?) -> Void)](urlsessiontaskdelegate/urlsession(_:task:neednewbodystreamfrom:completionhandler:).md)
+  Tells the delegate if a task requires a new body stream starting from the given offset. This may be necessary when resuming a failed upload task.
 
 ## Relationships
 

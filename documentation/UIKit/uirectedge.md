@@ -38,10 +38,6 @@ You can add these constants together to specify multiple edges at the same time.
 ### Initializers
 - [init(rawValue: UInt)](uirectedge/init(rawvalue:).md)
   Creates an edges structure with the specified raw value.
-### Default Implementations
-- [Equatable Implementations](uirectedge/equatable-implementations.md)
-- [OptionSet Implementations](uirectedge/optionset-implementations.md)
-- [SetAlgebra Implementations](uirectedge/setalgebra-implementations.md)
 
 ## Relationships
 

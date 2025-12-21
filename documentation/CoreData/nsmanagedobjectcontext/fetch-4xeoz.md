@@ -17,6 +17,7 @@ Returns an array of items of the specified type that meet the fetch request’s 
 ## Declaration
 
 ```swift
+nonisolated
 func fetch<T>(_ request: NSFetchRequest<T>) throws -> [T] where T : NSFetchRequestResult
 ```
 

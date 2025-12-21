@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-Your appplication’s response to a snapshot background task.
+Your application’s response to a snapshot background task.
 
 **Availability**:
 - watchOS 9.0+

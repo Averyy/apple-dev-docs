@@ -26,8 +26,6 @@ Specifies formatting behavior equivalent for OS X 10.4.
 
 - [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
 - [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
 
 
 ---

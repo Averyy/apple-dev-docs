@@ -96,12 +96,6 @@ If you share the same timeline entry type across both intent provider types, you
   An object describing the content of a widget that uses a custom intent to provide user-configurable options.
 - [struct WidgetInfo](widgetinfo.md)
   A structure that contains information about user-configured widgets.
-- [struct AppIntentRecommendation](appintentrecommendation.md)
-  An object that describes a recommended intent configuration for a user-customizable widget.
-- [struct IntentConfiguration](intentconfiguration.md)
-  An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
-- [struct IntentRecommendation](intentrecommendation.md)
-  An object that describes a recommended intent configuration for a user-customizable widget.
 
 
 ---

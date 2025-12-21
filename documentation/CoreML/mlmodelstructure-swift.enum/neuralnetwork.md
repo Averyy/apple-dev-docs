@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: struct
 
+A struct representing the structure of a NeuralNetwork model..
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -20,9 +22,9 @@ struct NeuralNetwork
 
 ## Topics
 
-### Instance Properties
+### Accessing the layers
 - [let layers: [MLModelStructure.NeuralNetwork.Layer]](mlmodelstructure-swift.enum/neuralnetwork/layers.md)
-### Structures
+  The topologically sorted layers in the NeuralNetwork.
 - [MLModelStructure.NeuralNetwork.Layer](mlmodelstructure-swift.enum/neuralnetwork/layer.md)
 
 ## Relationships
@@ -34,7 +36,9 @@ struct NeuralNetwork
 ## See Also
 
 - [MLModelStructure.Pipeline](mlmodelstructure-swift.enum/pipeline.md)
+  A struct representing the structure of a Pipeline model..
 - [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+  A struct representing the structure of an ML Program model.
 
 
 ---

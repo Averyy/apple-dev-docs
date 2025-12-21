@@ -21,12 +21,12 @@ protocol MTLFunctionLog : NSObjectProtocol
 
 ## Topics
 
-### Getting the Log Messsage
+### Getting the log messsage
 - [var type: MTLFunctionLogType](mtlfunctionlog/type.md)
   The type of message that was logged.
 - [enum MTLFunctionLogType](mtlfunctionlogtype.md)
   Options for different kinds of function logs.
-### Getting Execution Details
+### Getting execution details
 - [var debugLocation: (any MTLFunctionLogDebugLocation)?](mtlfunctionlog/debuglocation.md)
   If known, the location of the logging command within a shader source file.
 - [var encoderLabel: String?](mtlfunctionlog/encoderlabel.md)

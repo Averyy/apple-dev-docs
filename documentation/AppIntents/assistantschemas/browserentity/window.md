@@ -25,7 +25,7 @@ var window: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.browser.window` schema:
 
 ```swift
-@AssistantEntity(schema: .browser.window)
+@AppEntity(schema: .browser.window)
 struct WindowEntity: AppEntity {
     static var defaultQuery = Query()
 

@@ -20,6 +20,10 @@ An object that records audio data to a file.
 class AVAudioRecorder
 ```
 
+## Mentions
+
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+
 #### Overview
 
 Use an audio recorder to:

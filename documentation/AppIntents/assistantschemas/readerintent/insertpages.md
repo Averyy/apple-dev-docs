@@ -25,7 +25,7 @@ var insertPages: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.reader.insertPages` schema:
 
 ```swift
-@AssistantIntent(schema: .reader.insertPages)
+@AppIntent(schema: .reader.insertPages)
 struct ReaderInsertPagesIntent: AppIntent {
     @Parameter
     var files: [IntentFile]

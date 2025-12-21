@@ -35,7 +35,7 @@ If the result is `true`, configure any user-interface controls that enable peopl
 This property is `true` if all the following conditions are met:
 
 - The current App Store storefront allows external purchase and the person is eligible to make external purchases.
-- Your app configures the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+- Your app configures the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) or [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
 - Your app configures a link for the current App Store storefront in [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLink).
 
 Otherwise, this property is `false`.

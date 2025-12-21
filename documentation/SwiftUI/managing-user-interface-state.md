@@ -8,7 +8,7 @@ Encapsulate view-specific data within your app’s view hierarchy to make your v
 
 Store data as state in the least common ancestor of the views that need the data to establish a single  that’s shared across views. Provide the data as read-only through a Swift property, or create a two-way connection to the state with a binding. SwiftUI watches for changes in the data, and updates any affected views as needed.
 
-![A diagram showing state stored in one view, shared with another view through a binding that provides a two-way connection, and shared with yet another view as a property providing a one-way connection.](https://docs-assets.developer.apple.com/published/d98251c2fac9fc4f6843be1e4836cb93/Managing-User-Interface-State-1%402x.png)
+![A diagram showing state stored in one view, shared with another view through a binding that provides a two-way connection, and shared with yet another view as a property providing a one-way connection.](https://docs-assets.developer.apple.com/published/c75c698bd113a4ac7c708e178f8294ca/managing-user-interface-state%402x.png)
 
 Don’t use state properties for persistent storage because the life cycle of state variables mirrors the view life cycle. Instead, use them to manage transient state that only affects the user interface, like the highlight state of a button, filter settings, or the currently selected list item. You might also find this kind of storage convenient while you prototype, before you’re ready to make changes to your app’s data model.
 

@@ -25,9 +25,6 @@ struct Playlist
 ### Structures
 - [Playlist.Entry](playlist/entry.md)
   A music item that represents a playlist entry.
-### Operators
-- [static func == (Playlist, Playlist) -> Bool](playlist/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var artwork: Artwork?](playlist/artwork.md)
   The artwork for the playlist.
@@ -39,9 +36,7 @@ struct Playlist
   The entries in the playlist
 - [var featuredArtists: MusicItemCollection<Artist>?](playlist/featuredartists.md)
   A collection of featured artists for this playlist.
-- [var hashValue: Int](playlist/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](playlist/id-swift.property.md)
+- [let id: MusicItemID](playlist/id.md)
   The unique identifier for the playlist.
 - [var isChart: Bool?](playlist/ischart.md)
   A Boolean value that indicates whether the playlist represents a popularity chart.
@@ -69,23 +64,11 @@ struct Playlist
   The tracks in the playlist.
 - [var url: URL?](playlist/url.md)
   The URL for the playlist.
-### Instance Methods
-- [func hash(into: inout Hasher)](playlist/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](playlist/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Enumerations
 - [Playlist.Kind](playlist/kind-swift.enum.md)
   The available kinds of playlists.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](playlist/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](playlist/customstringconvertible-implementations.md)
-- [Decodable Implementations](playlist/decodable-implementations.md)
-- [Encodable Implementations](playlist/encodable-implementations.md)
-- [Equatable Implementations](playlist/equatable-implementations.md)
 - [FilterableMusicItem Implementations](playlist/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](playlist/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](playlist/musiclibraryrequestable-implementations.md)
 
 ## Relationships

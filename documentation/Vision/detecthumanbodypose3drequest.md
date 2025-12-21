@@ -8,7 +8,6 @@ A request that detects points on human bodies in 3D space, relative to the camer
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,18 +27,6 @@ This request generates a collection of [`HumanBodyPose3DObservation`](humanbodyp
 ### Creating a request
 - [init(DetectHumanBodyPose3DRequest.Revision?, frameAnalysisSpacing: CMTime?)](detecthumanbodypose3drequest/init(_:frameanalysisspacing:).md)
   Creates a 3D human body pose request.
-### Getting the revision
-- [let revision: DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectHumanBodyPose3DRequest.Revision]](detecthumanbodypose3drequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var supportedJointNames: [HumanBodyPose3DObservation.JointName]](detecthumanbodypose3drequest/supportedjointnames.md)
-  The joint names the request supports.
-- [var supportedJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](detecthumanbodypose3drequest/supportedjointsgroupnames.md)
-  The joint group names the request supports.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -53,8 +40,21 @@ This request generates a collection of [`HumanBodyPose3DObservation`](humanbodyp
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct HumanBodyPose3DObservation](humanbodypose3dobservation.md)
   An observation that provides the 3D body points the request recognizes.
+### Configuring a request
+- [var supportedJointNames: [HumanBodyPose3DObservation.JointName]](detecthumanbodypose3drequest/supportedjointnames.md)
+  The joint names the request supports.
+- [var supportedJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](detecthumanbodypose3drequest/supportedjointsgroupnames.md)
+  The joint group names the request supports.
+### Getting the revision
+- [let revision: DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectHumanBodyPose3DRequest.Revision]](detecthumanbodypose3drequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -70,8 +70,14 @@ This request generates a collection of [`HumanBodyPose3DObservation`](humanbodyp
 
 ## See Also
 
-- [struct Joint3D](joint3d.md)
-  An object that represents a body pose joint in 3D space.
+- [struct DetectAnimalBodyPoseRequest](detectanimalbodyposerequest.md)
+  A request that detects an animal body pose.
+- [struct DetectHumanBodyPoseRequest](detecthumanbodyposerequest.md)
+  A request that detects a human body pose.
+- [struct DetectHumanHandPoseRequest](detecthumanhandposerequest.md)
+  A request that detects a human hand pose.
+- [Supporting Pose Types](supporting-pose-types.md)
+  Types you use when working with pose analysis.
 
 
 ---

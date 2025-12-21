@@ -22,9 +22,6 @@ struct Song
 
 ## Topics
 
-### Operators
-- [static func == (Song, Song) -> Bool](song/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var albumTitle: String?](song/albumtitle.md)
   The title of the album the song appears on.
@@ -60,9 +57,7 @@ struct Song
   The song’s associated genres.
 - [var hasLyrics: Bool](song/haslyrics.md)
   A Boolean value that indicates whether the song has lyrics available in the catalog. If true, the song has lyrics available; otherwise, it doesn’t.
-- [var hashValue: Int](song/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](song/id-swift.property.md)
+- [let id: MusicItemID](song/id.md)
   The unique identifier for the song.
 - [var isAppleDigitalMaster: Bool?](song/isappledigitalmaster.md)
   A Boolean value that indicates whether the song is an Apple Digital Master.
@@ -98,20 +93,8 @@ struct Song
   The URL for the song.
 - [var workName: String?](song/workname.md)
   For classical music only, the name of the associated work.
-### Instance Methods
-- [func hash(into: inout Hasher)](song/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](song/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](song/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](song/customstringconvertible-implementations.md)
-- [Decodable Implementations](song/decodable-implementations.md)
-- [Encodable Implementations](song/encodable-implementations.md)
-- [Equatable Implementations](song/equatable-implementations.md)
 - [FilterableMusicItem Implementations](song/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](song/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](song/musiclibraryrequestable-implementations.md)
 
 ## Relationships

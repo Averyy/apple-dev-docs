@@ -21,7 +21,7 @@ var isDraftModeEnabled: Bool { get set }
 
 #### Discussion
 
-Setting this value to [`true`](https://developer.apple.com/documentation/swift/true) can improve image decoding speed with minimal loss of quality. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) can improve image decoding speed with minimal loss of quality. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

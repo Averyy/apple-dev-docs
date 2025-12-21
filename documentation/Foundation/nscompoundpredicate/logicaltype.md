@@ -29,12 +29,6 @@ enum LogicalType
   A logical AND predicate.
 - [NSCompoundPredicate.LogicalType.or](nscompoundpredicate/logicaltype/or.md)
   A logical OR predicate.
-- [NSCompoundPredicate.LogicalType.not](nscompoundpredicate/logicaltype/not.md)
-  A logical NOT predicate.
-- [NSCompoundPredicate.LogicalType.and](nscompoundpredicate/logicaltype/and.md)
-  A logical AND predicate.
-- [NSCompoundPredicate.LogicalType.or](nscompoundpredicate/logicaltype/or.md)
-  A logical OR predicate.
 ### Initializers
 - [init?(rawValue: UInt)](nscompoundpredicate/logicaltype/init(rawvalue:).md)
 

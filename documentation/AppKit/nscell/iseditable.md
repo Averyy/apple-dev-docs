@@ -17,7 +17,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell is editable. When the value is [`true`](https://developer.apple.com/documentation/swift/true), the text of the cell is also made selectable. When you change the value of the property to [`false`](https://developer.apple.com/documentation/swift/false), the [`isSelectable`](nscell/isselectable.md) property is restored to the value it had before the cell was made editable.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell is editable. When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the text of the cell is also made selectable. When you change the value of the property to [`false`](https://developer.apple.com/documentation/Swift/false), the [`isSelectable`](nscell/isselectable.md) property is restored to the value it had before the cell was made editable.
 
 ## See Also
 

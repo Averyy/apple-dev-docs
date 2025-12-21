@@ -39,6 +39,8 @@ To determine whether the alpha is straight or pre-multiplied, look for a format 
   A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.
 - [static let indicatesHorizontalFieldOfView: AVMediaCharacteristic](avmediacharacteristic/indicateshorizontalfieldofview.md)
   A media characteristic that indicates the video track carries information related to the horizontal field of view.
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+  A media characteristic that indicates the video track carries information related to how it should be projected for display.
 
 
 ---

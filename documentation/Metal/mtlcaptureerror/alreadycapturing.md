@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A capture session is already in progress.
+A capture error that indicates the session is already in progress.
 
 **Availability**:
 - iOS 13.0+
@@ -22,9 +22,9 @@ case alreadyCapturing
 ## See Also
 
 - [MTLCaptureError.invalidDescriptor](mtlcaptureerror/invaliddescriptor.md)
-  The descriptor contained invalid parameters.
+  A capture error that indicates your descriptor has invalid properties.
 - [MTLCaptureError.notSupported](mtlcaptureerror/notsupported.md)
-  The requested capture options are not available.
+  A capture error that indicates the capture options you’re requesting aren’t available.
 
 
 ---

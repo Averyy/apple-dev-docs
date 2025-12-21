@@ -28,12 +28,6 @@ case serverPush
   The resource was loaded over the network.
 - [URLSessionTaskMetrics.ResourceFetchType.localCache](urlsessiontaskmetrics/resourcefetchtype/localcache.md)
   The resource was retrieved from the local storage.
-- [URLSessionTaskMetrics.ResourceFetchType.unknown](urlsessiontaskmetrics/resourcefetchtype/unknown.md)
-  The manner in which the resource was fetched could not be determined.
-- [URLSessionTaskMetrics.ResourceFetchType.networkLoad](urlsessiontaskmetrics/resourcefetchtype/networkload.md)
-  The resource was loaded over the network.
-- [URLSessionTaskMetrics.ResourceFetchType.localCache](urlsessiontaskmetrics/resourcefetchtype/localcache.md)
-  The resource was retrieved from the local storage.
 
 
 ---

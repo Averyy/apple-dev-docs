@@ -30,7 +30,7 @@ An object that represents the named struct member. If `name` does not match a me
 ## See Also
 
 - [var members: [MTLStructMember]](mtlstructtype/members.md)
-  An array of objects that describe the fields in the struct.
+  An array of instances that describe the fields in the struct.
 
 
 ---

@@ -5,8 +5,8 @@
 Use room tracking in visionOS to provide custom interactions with physical spaces.
 
 **Availability**:
-- visionOS 2.0+
-- Xcode 16.0+
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -268,8 +268,10 @@ Clutter in a room, large furniture elements, and very large spaces may interfere
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/building_local_experiences_with_room_tracking)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/building-local-experiences-with-room-tracking)*

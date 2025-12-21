@@ -27,42 +27,29 @@ For more information on prompting the user to select items, see [`FamilyActivity
 
 ## Topics
 
-### Accessing Selected Categories
+### Accessing selected categories
 - [var categories: Set<ActivityCategory>](familyactivityselection/categories.md)
   A set of category instances selected by the user.
 - [var categoryTokens: Set<ActivityCategoryToken>](familyactivityselection/categorytokens.md)
   Tokens that represent categories selected by the user.
-### Accessing Selected Applications
+- [init(includeEntireCategory: Bool)](familyactivityselection/init(includeentirecategory:).md)
+  Creates a new activity selection instance.
+### Accessing selected applications
 - [var applications: Set<Application>](familyactivityselection/applications.md)
   A set of application instances selected by the user.
 - [var applicationTokens: Set<ApplicationToken>](familyactivityselection/applicationtokens.md)
   Tokens that represent applications selected by the user.
-### Accessing Selected Web Domains
+### Accessing selected web domains
 - [var webDomains: Set<WebDomain>](familyactivityselection/webdomains.md)
   A set of web domain instances selected by the user.
 - [var webDomainTokens: Set<WebDomainToken>](familyactivityselection/webdomaintokens.md)
   Tokens that represent web domains selected by the user.
-### Creating Activity Selections
+### Creating activity selections
 - [init()](familyactivityselection/init.md)
   Creates a new activity selection instance.
-- [init(from: any Decoder) throws](familyactivityselection/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Encoding Activity Selections
-- [func encode(to: any Encoder) throws](familyactivityselection/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing Activity Selections
-- [static func == (FamilyActivitySelection, FamilyActivitySelection) -> Bool](familyactivityselection/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](familyactivityselection/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two activity selections aren’t equal.
-### Initializers
-- [init(includeEntireCategory: Bool)](familyactivityselection/init(includeentirecategory:).md)
-  Creates a new activity selection instance.
-### Instance Properties
+### Comparing activity selections
 - [let includeEntireCategory: Bool](familyactivityselection/includeentirecategory.md)
   A Boolean value that indicates whether the selection should include applications and web domains from the selected categories.
-### Default Implementations
-- [Equatable Implementations](familyactivityselection/equatable-implementations.md)
 
 ## Relationships
 

@@ -10,7 +10,7 @@ A representation of a physical object that RealityKit renders and optionally sim
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -22,8 +22,8 @@ A representation of a physical object that RealityKit renders and optionally sim
 
 ## Mentions
 
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
+- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
 
 #### Overview

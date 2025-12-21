@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-The domain consisting of defaults meant to be seen by all applications.
+The identifier for the domain that contains system-specified settings for all apps.
 
 **Availability**:
 - iOS 2.0+
@@ -20,12 +20,18 @@ The domain consisting of defaults meant to be seen by all applications.
 class let globalDomain: String
 ```
 
+#### Discussion
+
+The system populates this domain with information that’s relevant to all apps. For example, this domain contains the current language settings for the device. You can read values from this domain, but don’t write your own settings to it.
+
 ## See Also
 
 - [class let argumentDomain: String](userdefaults/argumentdomain.md)
-  The domain consisting of defaults parsed from the application’s arguments. These are one or more pairs of the form  included in the command-line invocation of the application.
+  The identifier for the domain that contains command-line settings.
 - [class let registrationDomain: String](userdefaults/registrationdomain.md)
-  The domain consisting of a set of temporary defaults whose values can be set by the application to ensure that searches will always be successful.
+  The identifier for the domain that contains your app’s registered default values.
+- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
+  An array of identifiers for the volatile domains associated with the current object.
 
 
 ---

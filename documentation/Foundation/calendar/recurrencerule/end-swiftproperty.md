@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+For how long the event repeats
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var end: Calendar.RecurrenceRule.End
 ```
+
+#### Discussion
+
+Default value is `.never`
 
 
 ---

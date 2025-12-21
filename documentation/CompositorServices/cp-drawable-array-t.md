@@ -6,8 +6,8 @@
 An opaque type that contains the drawable types and other information you need to set up your render pipeline.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

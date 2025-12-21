@@ -48,7 +48,9 @@ final class RoomTrackingProvider
 
 - [struct RoomAnchor](roomanchor.md)
   The representation of a room ARKit is currently tracking.
-- [Building local experiences with room tracking](../visionOS/building_local_experiences_with_room_tracking.md)
+- [enum SurfaceClassification](surfaceclassification.md)
+  A value describing the classification of a surface.
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 
 

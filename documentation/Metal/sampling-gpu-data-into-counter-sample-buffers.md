@@ -1,4 +1,4 @@
-# Sampling GPU Data into Counter Sample Buffers
+# Sampling GPU data into counter sample buffers
 
 **Framework**: Metal
 
@@ -15,12 +15,12 @@ Typically, a GPU supports one of these boundary types. For example, Apple silico
 
 Before you can sample a GPU counter, implement the following prerequisite steps:
 
-1. Identify which counters you can sample from an [`MTLDevice`](mtldevice.md) instance (see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
-2. Make an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance to store the counter’s data (see [`Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)).
+1. Identify which counters you can sample from an [`MTLDevice`](mtldevice.md) instance (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+2. Make an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance to store the counter’s data (see [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)).
 
 The sections below explain how to identify when you can sample a GPU’s counters, and how to encode commands to retrieve their data.
 
-Each GPU vendor defines its own private data format for its counter sample buffers, which means your app can’t read the contents of each buffer directly. Instead, your app can transform the data from the vendor’s internal format to Metal’s standard formats by  each sample buffer. See [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md) for the next steps that resolve the data within a counter sample buffer.
+Each GPU vendor defines its own private data format for its counter sample buffers, which means your app can’t read the contents of each buffer directly. Instead, your app can transform the data from the vendor’s internal format to the standard Metal formats by  each sample buffer. See [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md) for the next steps that resolve the data within a counter sample buffer.
 
 ##### Check Which Boundaries a Gpu Supports
 
@@ -82,11 +82,11 @@ Each pass encoder type has its own version of the method.
 | [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) | [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlcomputecommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) |
 | [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) | [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlblitcommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) |
 
-The `barrier` parameter for these methods controls whether the pass waits for the GPU to complete all the previous commands in the buffer before sampling the counters (see [`Resource Synchronization`](resource-synchronization.md)). Each barrier typically reduces performance, but can be useful during development to get accurate and consistent data across multiple runs.
+The `barrier` parameter for these methods controls whether the pass waits for the GPU to complete all the previous commands in the buffer before sampling the counters (see [`Resource synchronization`](resource-synchronization.md)). Each barrier typically reduces performance, but can be useful during development to get accurate and consistent data across multiple runs.
 
 ## See Also
 
-- [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
   Make a buffer that provides a place for a GPU to save its runtime performance metrics as it runs a pass.
 - [class MTLCounterSampleBufferDescriptor](mtlcountersamplebufferdescriptor.md)
   A group of properties that configures the counter sample buffers you create with it.

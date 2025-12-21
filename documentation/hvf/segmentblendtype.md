@@ -33,18 +33,6 @@ enum SegmentBlendType
   Segment is the first of two tangents in a row
 - [SegmentBlendType.tangentTangent2](segmentblendtype/tangenttangent2.md)
   Segment is the second of two tangents in a row
-### Initializers
-- [init?(rawValue: UInt8)](segmentblendtype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt8](segmentblendtype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [SegmentBlendType.RawValue](segmentblendtype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](segmentblendtype/equatable-implementations.md)
-- [RawRepresentable Implementations](segmentblendtype/rawrepresentable-implementations.md)
 
 ## Relationships
 

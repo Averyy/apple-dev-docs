@@ -16,6 +16,8 @@ var validationMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
+- [func evaluation(on:)](mlclassifier/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var trainingMetrics: MLClassifierMetrics](mlclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 

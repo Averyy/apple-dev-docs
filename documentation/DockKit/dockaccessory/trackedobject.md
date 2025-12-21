@@ -19,9 +19,6 @@ struct TrackedObject
 
 ## Topics
 
-### Operators
-- [static func == (DockAccessory.TrackedObject, DockAccessory.TrackedObject) -> Bool](dockaccessory/trackedobject/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var identifier: UUID](dockaccessory/trackedobject/identifier.md)
   A unique identifier for the tracked object. This identifier persists as long as the dock tracks the object. The value is random and doesn’t persist across sessions.
@@ -29,8 +26,6 @@ struct TrackedObject
   The bounding box rectangle of the tracked object in the frame.
 - [var saliencyRank: Int?](dockaccessory/trackedobject/saliencyrank.md)
   The saliency rank of the object the dock is tracking. A lower rank indicates higher importance of the object. This property is `nil` if the saliency ranking isn’t set or the object isn’t salient.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/trackedobject/equatable-implementations.md)
 
 ## Relationships
 

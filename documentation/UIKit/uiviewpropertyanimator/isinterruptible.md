@@ -21,7 +21,7 @@ var isInterruptible: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you can use the [`pauseAnimation()`](uiviewanimating/pauseanimation().md) and [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) methods to interrupt the animations and make changes. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the animations run to completion (and without interruption) after you call the [`startAnimation()`](uiviewanimating/startanimation().md) method. If you use a view property animator object to implement an interruptible view controller transition, this property must be [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), you can use the [`pauseAnimation()`](uiviewanimating/pauseanimation().md) and [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) methods to interrupt the animations and make changes. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the animations run to completion (and without interruption) after you call the [`startAnimation()`](uiviewanimating/startanimation().md) method. If you use a view property animator object to implement an interruptible view controller transition, this property must be [`true`](https://developer.apple.com/documentation/Swift/true).
 
 It is a programmer error to change this property if the animator’s [`state`](uiviewanimating/state.md) property is not set to [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md).
 

@@ -20,7 +20,9 @@
 - [Merchant IDs Entitlement](entitlements/com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
 - [com.apple.developer.in-app-identity-presentment](entitlements/com.apple.developer.in-app-identity-presentment.md)
+  An entitlement that verifies age or identity.
 - [com.apple.developer.in-app-identity-presentment.merchant-identifiers](entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers.md)
+  An entitlement for the merchant identifier associated with the in-app identity presentment entitlement.
 - [ID Verifier - Display Only](entitlements/com.apple.developer.proximity-reader.identity.display.md)
 
 

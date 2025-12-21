@@ -20,7 +20,7 @@ func isExposureModeSupported(_ exposureMode: AVCaptureDevice.ExposureMode) -> Bo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `exposureMode` is supported; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `exposureMode` is supported; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

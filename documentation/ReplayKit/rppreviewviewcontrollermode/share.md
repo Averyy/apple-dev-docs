@@ -6,7 +6,7 @@
 Share/AirDrop screen displayed when editing a replay.
 
 **Availability**:
-- tvOS 10.0+
+- tvOS ?+
 
 ## Declaration
 

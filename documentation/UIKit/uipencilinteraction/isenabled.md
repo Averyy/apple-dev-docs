@@ -9,6 +9,7 @@ A Boolean value that specifies whether the system reports double taps or squeeze
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 
@@ -19,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

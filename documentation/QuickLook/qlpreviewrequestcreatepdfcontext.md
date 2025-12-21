@@ -30,7 +30,7 @@ Thread-safety: This function should be called in the same thread as the preview 
 
 - `preview`: The preview request object.
 - `mediaBox`: A media box is a rectangle that defines the size and location of the PDF page. The origin of the rectangle should typically be (0,0). If you pass NULL, Quartz uses a default page size of 8.5 by 11 inches (612 by 792 points). For information see the description for  .
-- `auxiliaryInfo`: A dictionary containing PDF auxiliary information. See the description of the auxiliary dictionary keys in  doc://com.apple.documentation/documentation/coregraphics/cgpdfcontext  for more information about the keys and values of this dictionary.
+- `auxiliaryInfo`: A dictionary containing PDF auxiliary information. See the description of the auxiliary dictionary keys in   for more information about the keys and values of this dictionary.
 - `properties`: A dictionary containing additional properties for the preview response. For information on acceptable keys and values, see  .
 
 ## See Also

@@ -3,15 +3,15 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieve an MTLBuffer that can be used to replace the per instance transform data on GPU using Metal.
+Retrieves a Metal buffer that you can use to replace the per instance transform data on GPU using Metal.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

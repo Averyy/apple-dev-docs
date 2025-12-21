@@ -35,8 +35,8 @@ Use the dilate operation to enlarge light structural elements in an image. In th
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `kernel`: The kernel data that contains   elements.
-- `kernel_height`: The height of the kernel in pixels. This value must be odd.
-- `kernel_width`: The width of the kernel in pixels. This value must be odd.
+- `kernel_height`: The height of the kernel in pixels. This value needs to be odd.
+- `kernel_width`: The width of the kernel in pixels. This value needs to be odd.
 - `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
 
 ## See Also

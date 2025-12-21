@@ -18,12 +18,6 @@ Tells the delegate that a contextual menu interaction began.
 optional func webView(_ webView: WKWebView, contextMenuConfigurationFor elementInfo: WKContextMenuElementInfo) async -> UIContextMenuConfiguration?
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-optional func webView(_ webView: WKWebView, contextMenuConfigurationFor elementInfo: WKContextMenuElementInfo) async -> UIContextMenuConfiguration?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `webView`: The web view in which the interaction occurred.
@@ -40,7 +34,7 @@ optional func webView(_ webView: WKWebView, contextMenuConfigurationFor elementI
   Tells the delegate that the web view is about to present the contextual menu for the specified element.
 - [func webView(WKWebView, contextMenuDidEndForElement: WKContextMenuElementInfo)](wkuidelegate/webview(_:contextmenudidendforelement:).md)
   Tells the delegate that the web view dismissed the contextual menu for the specified element.
-- [@MainActor class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
+- [class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
   An object containing the configuration details for the contextual menu.
 
 

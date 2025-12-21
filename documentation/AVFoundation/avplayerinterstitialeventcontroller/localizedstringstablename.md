@@ -6,13 +6,13 @@
 The name of the table in the bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,11 @@ var localizedStringsTableName: String? { get set }
 #### Discussion
 
 If the value of the property is nil, it will default to “Localizable”
+
+## See Also
+
+- [var localizedStringsBundle: Bundle?](avplayerinterstitialeventcontroller/localizedstringsbundle.md)
+  The bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
 
 ---

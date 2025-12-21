@@ -22,7 +22,7 @@ func animate(alongsideTransition animation: ((any UIViewControllerTransitionCoor
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the animations were successfully queued to run or [`false`](https://developer.apple.com/documentation/swift/false) if they were not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the animations were successfully queued to run or [`false`](https://developer.apple.com/documentation/Swift/false) if they were not.
 
 #### Discussion
 
@@ -30,7 +30,7 @@ Use this method to perform animations that aren’t handled by the animator obje
 
 The animations in the `animation` parameter are normally performed concurrently with the view controller transition animations. That behavior applies when the animator object’s [`animateTransition(using:)`](uiviewcontrolleranimatedtransitioning/animatetransition(using:).md) method is implemented using [`UIView`](uiview.md)-based animations. If the animator object uses Core Animation to animate the layer contents directly, your animations are run shortly after the animateTransition: method returns.
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) when the block in the `animation` parameter can’t be queued to run. The completion block can still run even when this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) when the block in the `animation` parameter can’t be queued to run. The completion block can still run even when this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

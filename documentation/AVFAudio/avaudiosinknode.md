@@ -53,7 +53,7 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
 ## See Also
 
 - [Building a signal generator](building-a-signal-generator.md)
-  Use an audio source node and a custom render callback to generate audio signals.
+  Generate audio signals using an audio source node and a custom render callback.
 - [Performing offline audio processing](performing-offline-audio-processing.md)
   Add offline audio processing features to your app by enabling offline manual rendering mode.
 - [class AVAudioSourceNode](avaudiosourcenode.md)

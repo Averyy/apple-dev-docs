@@ -26,25 +26,17 @@ You can create a ”Never” publisher — one which never sends values and neve
 
 ## Topics
 
-### Creating an Empty Publisher
+### Creating an empty publisher
 - [init(completeImmediately: Bool)](empty/init(completeimmediately:).md)
   Creates an empty publisher.
 - [init(completeImmediately: Bool, outputType: Output.Type, failureType: Failure.Type)](empty/init(completeimmediately:outputtype:failuretype:).md)
   Creates an empty publisher with the given completion behavior and output and failure types.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let completeImmediately: Bool](empty/completeimmediately.md)
   A Boolean value that indicates whether the publisher immediately sends a completion.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Empty<Output, Failure>, Empty<Output, Failure>) -> Bool](empty/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](empty/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](empty-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Equatable Implementations](empty/equatable-implementations.md)
-- [Publisher Implementations](empty/publisher-implementations.md)
 
 ## Relationships
 

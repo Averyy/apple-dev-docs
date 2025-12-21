@@ -25,12 +25,12 @@ For example, when you use an [`AVCaptureDataOutputSynchronizer`](avcapturedataou
 
 ## Topics
 
-### Configuring Synchronized Capture
+### Configuring synchronized capture
 - [init(dataOutputs: [AVCaptureOutput])](avcapturedataoutputsynchronizer/init(dataoutputs:).md)
   Creates a capture output synchronizer for the specified capture outputs.
 - [var dataOutputs: [AVCaptureOutput]](avcapturedataoutputsynchronizer/dataoutputs.md)
   The list of data outputs governed by this data output synchronizer.
-### Receiving Synchronized Capture Data
+### Receiving synchronized capture data
 - [func setDelegate((any AVCaptureDataOutputSynchronizerDelegate)?, queue: dispatch_queue_t?)](avcapturedataoutputsynchronizer/setdelegate(_:queue:).md)
   Designates a delegate object to receive synchronized data and a dispatch queue for delivering that data.
 - [var delegate: (any AVCaptureDataOutputSynchronizerDelegate)?](avcapturedataoutputsynchronizer/delegate.md)

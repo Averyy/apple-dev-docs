@@ -21,6 +21,8 @@ var rows: MLDataTable.Rows { get }
 
 ## See Also
 
+- [MLDataTable.Row](mldatatable/row.md)
+  A row of untyped values in a data table.
 - [MLDataTable.Rows](mldatatable/rows-swift.struct.md)
   A collection of rows in a data table.
 

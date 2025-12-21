@@ -1,4 +1,4 @@
 Completed scraping ManagedSettings!
-Total pages scraped: 214
-Pages skipped (unchanged): 6
+Total pages scraped: 150
+Pages skipped (unchanged): 1
 Pages failed: 0

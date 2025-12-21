@@ -17,7 +17,6 @@ Initializes a new label object with an attributed text string.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(attributedText: NSAttributedString?)
 ```
 

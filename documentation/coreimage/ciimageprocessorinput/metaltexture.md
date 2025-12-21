@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A Metal texture containing the image data to be processed.
+A MTLTexture object that can be bound for input using Metal.
 
 **Availability**:
 - iOS 10.0+
@@ -22,18 +22,16 @@ var metalTexture: (any MTLTexture)? { get }
 
 #### Discussion
 
-Use this property if you plan to process the image using a Metal shader.
-
-Do not modify the contents of this texture.
+> ⚠️ **Warning**: This texture must not be modified by the [`CIImageProcessorKernel`](ciimageprocessorkernel.md).
 
 ## See Also
 
 - [var baseAddress: UnsafeRawPointer](ciimageprocessorinput/baseaddress.md)
-  A pointer to the image data in CPU memory to be processed.
+  The base address of CPU memory that your Core Image Processor Kernel can read pixels from.
 - [var pixelBuffer: CVPixelBuffer?](ciimageprocessorinput/pixelbuffer.md)
-  A CoreVideo pixel buffer containing the image data to be processed.
+  An input pixel buffer object that your Core Image Processor Kernel can read from.
 - [var surface: IOSurfaceRef](ciimageprocessorinput/surface.md)
-  An IOSurface object containing the image data to be processed.
+  An input surface object that your Core Image Processor Kernel can read from.
 
 
 ---

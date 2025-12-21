@@ -19,7 +19,7 @@ let GLKTextureLoaderApplyPremultiplication: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/swift/false), the data is loaded into the sharegroup without being modified. If [`true`](https://developer.apple.com/documentation/swift/true), the red, green and blue components of each pixel are multiplied by the alpha value. If the key is not specified, the default value is [`false`](https://developer.apple.com/documentation/swift/false). Never specify [`true`](https://developer.apple.com/documentation/swift/true) for a texture that is in a compressed format.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/Swift/false), the data is loaded into the sharegroup without being modified. If [`true`](https://developer.apple.com/documentation/Swift/true), the red, green and blue components of each pixel are multiplied by the alpha value. If the key is not specified, the default value is [`false`](https://developer.apple.com/documentation/Swift/false). Never specify [`true`](https://developer.apple.com/documentation/Swift/true) for a texture that is in a compressed format.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Gets the current status of data coming from this provider.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -45,6 +45,7 @@ extern ar_data_provider_state_t ar_data_provider_get_state(ar_data_provider_t da
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](ar_data_providers_enumerator_function_t.md)
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 
 
 ---

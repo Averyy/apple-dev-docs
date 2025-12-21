@@ -17,7 +17,7 @@ var isAutomaticTextReplacementEnabled: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it is enabled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if it is enabled, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Turning on automatic text replacement enables automatic substitution of a variety of static text items based on user preferences.
 

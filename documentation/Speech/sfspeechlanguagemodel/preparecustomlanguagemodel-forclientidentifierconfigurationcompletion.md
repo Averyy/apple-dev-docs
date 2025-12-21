@@ -16,14 +16,6 @@
 class func prepareCustomLanguageModel(for asset: URL, clientIdentifier: String, configuration: SFSpeechLanguageModel.Configuration) async throws
 ```
 
-## See Also
-
-- [class func prepareCustomLanguageModel(for: URL, clientIdentifier: String, configuration: SFSpeechLanguageModel.Configuration, ignoresCache: Bool, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:ignorescache:completion:).md)
-- [class func prepareCustomLanguageModel(for: URL, configuration: SFSpeechLanguageModel.Configuration, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:configuration:completion:).md)
-  Creates a language model from custom training data.
-- [class func prepareCustomLanguageModel(for: URL, configuration: SFSpeechLanguageModel.Configuration, ignoresCache: Bool, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:configuration:ignorescache:completion:).md)
-  Creates a language model from custom training data.
-
 
 ---
 

@@ -20,7 +20,7 @@ enum AVAudioDynamicRangeControlConfiguration
 
 ## Topics
 
-### Enumeration Cases
+### Configurations
 - [AVAudioDynamicRangeControlConfiguration.capture](avaudiodynamicrangecontrolconfiguration/capture.md)
 - [AVAudioDynamicRangeControlConfiguration.movie](avaudiodynamicrangecontrolconfiguration/movie.md)
 - [AVAudioDynamicRangeControlConfiguration.music](avaudiodynamicrangecontrolconfiguration/music.md)
@@ -38,6 +38,13 @@ enum AVAudioDynamicRangeControlConfiguration
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var audioSyncPacketFrequency: Int](avaudioconverter/audiosyncpacketfrequency.md)
+- [var contentSource: AVAudioContentSource](avaudioconverter/contentsource.md)
+- [enum AVAudioContentSource](avaudiocontentsource.md)
+- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
 
 
 ---

@@ -19,6 +19,16 @@ For more information about how to use Leaderboard sets in your app, see [`Config
 ## Topics
 
 ### Reading leaderboard sets
+- [Read Game Center leaderboard set information](get-v2-gamecenterleaderboardsets-_id_.md)
+  Get information about a specific Game Center leaderboard set.
+- [List all leaderboards for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
+  Get a list of leaderboards for a specific Game Center leaderboard set.
+- [Get all leaderboard IDs for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+  Get a list of leaderboard resource IDs for a specific Game Center leaderboard set.
+- [List all versions for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-versions.md)
+  Get a list of versions for a specific Game Center leaderboard set.
+- [Get all version IDs for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-relationships-versions.md)
+  Get a list of version resource IDs for a specific Game Center leaderboard set.
 - [Read leaderboard set information](get-v1-gamecenterleaderboardsets-_id_.md)
   Read information about a specific leaderboard set.
 - [List leaderboard information for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
@@ -36,6 +46,18 @@ For more information about how to use Leaderboard sets in your app, see [`Config
   Read the state of releases for a leaderboard set and related information.
 - [GET /v1/gameCenterLeaderboardSets/{id}/relationships/releases](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
 ### Creating, editing, and deleting leaderboard sets
+- [Create a Game Center leaderboard set](post-v2-gamecenterleaderboardsets.md)
+  Create a Game Center leaderboard set.
+- [Add a leaderboard to a Game Center leaderboard set](post-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+  Add a leaderboard to a Game Center leaderboard set.
+- [Modify a Game Center leaderboard set](patch-v2-gamecenterleaderboardsets-_id_.md)
+  Update a specific Game Center leaderboard set.
+- [Modify the leaderboards for a Game Center leaderboard set](patch-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+  Update the leaderboards relationship for a specific Game Center leaderboard set.
+- [Delete a Game Center leaderboard set](delete-v2-gamecenterleaderboardsets-_id_.md)
+  Delete a specific Game Center leaderboard set.
+- [Delete a Game Center leaderboard set](delete-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+  Delete a specific Game Center leaderboard set.
 - [Create a leaderboard set](post-v1-gamecenterleaderboardsets.md)
   Add a new leaderboard set to your app.
 - [Create a relationship between a leaderboard and a leaderboard set](post-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
@@ -51,6 +73,22 @@ For more information about how to use Leaderboard sets in your app, see [`Config
 - [Delete the relationship between a leaderboard and a leaderboard set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Remove a leaderboard from a leaderboard set.
 ### Objects
+- [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)
+  The data structure that represents a Game Center leaderboard set v2 resource.
+- [object GameCenterLeaderboardSetV2CreateRequest](gamecenterleaderboardsetv2createrequest.md)
+  The request body you use to create a Game Center leaderboard set v2.
+- [object GameCenterLeaderboardSetV2Response](gamecenterleaderboardsetv2response.md)
+  A response that contains a single Game Center leaderboard set v2 resource.
+- [object GameCenterLeaderboardSetV2UpdateRequest](gamecenterleaderboardsetv2updaterequest.md)
+  The request body you use to update a Game Center leaderboard set v2.
+- [object GameCenterLeaderboardSetsV2Response](gamecenterleaderboardsetsv2response.md)
+  A response that contains a single Game Center leaderboard set v2 resource.
+- [object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest](gamecenterleaderboardsetv2gamecenterleaderboardslinkagesrequest.md)
+  The data structure that represents a Game Center leaderboard set v2 Game Center leaderboard linkage request resource.
+- [object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse](gamecenterleaderboardsetv2gamecenterleaderboardslinkagesresponse.md)
+  A response that contains a list of Game Center leaderboard set v2 Game Center leaderboard linkage resources.
+- [object GameCenterLeaderboardSetV2VersionsLinkagesResponse](gamecenterleaderboardsetv2versionslinkagesresponse.md)
+  A response that contains a list of Game Center leaderboard set v2 version linkage resources.
 - [object GameCenterLeaderboardSet](gamecenterleaderboardset.md)
   The data structure that represent a leaderboard set resource.
 - [object GameCenterLeaderboardSetCreateRequest](gamecenterleaderboardsetcreaterequest.md)
@@ -78,6 +116,8 @@ For more information about how to use Leaderboard sets in your app, see [`Config
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
   Manage image assets for your Game Center leaderboard sets.
+- [Game Center leaderboard set versions](game-center-leaderboard-set-versions.md)
+  Manage versions for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)

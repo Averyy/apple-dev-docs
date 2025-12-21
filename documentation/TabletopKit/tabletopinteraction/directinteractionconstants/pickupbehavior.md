@@ -6,7 +6,7 @@
 The type of pickup behavior that should be used for this interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

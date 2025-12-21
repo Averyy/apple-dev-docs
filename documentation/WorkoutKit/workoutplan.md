@@ -10,7 +10,6 @@ A wrapper around a workout object that your app can use to open the object in Wo
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

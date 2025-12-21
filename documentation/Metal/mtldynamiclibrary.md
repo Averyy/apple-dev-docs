@@ -21,14 +21,14 @@ protocol MTLDynamicLibrary : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Identifying the Library
+### Identifying the library
 - [var device: any MTLDevice](mtldynamiclibrary/device.md)
   The Metal device object that created the dynamic library.
 - [var installName: String](mtldynamiclibrary/installname.md)
   A file path for this dynamic library.
 - [var label: String?](mtldynamiclibrary/label.md)
   A string that identifies the library.
-### Saving a Dynamic Library to a File
+### Saving a dynamic library to a file
 - [func serialize(to: URL) throws](mtldynamiclibrary/serialize(to:).md)
   Writes the contents of the dynamic library to a file.
 

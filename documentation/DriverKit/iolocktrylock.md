@@ -21,6 +21,8 @@ True if the mutex was unlocked and is now locked by the caller, otherwise false.
 
 #### Discussion
 
+Attempt to lock a mutex.
+
 Lock the mutex if it is currently unlocked, and return true. If the lock is held by any thread, return false.
 
 ## Parameters

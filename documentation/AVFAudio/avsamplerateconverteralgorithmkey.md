@@ -3,7 +3,7 @@
 **Framework**: AVFAudio  
 **Kind**: var
 
-An integer value that represents the sample rate audio quality.
+A string value that represents the sample rate converter algorithm to use.
 
 **Availability**:
 - iOS 7.0+
@@ -20,9 +20,15 @@ An integer value that represents the sample rate audio quality.
 let AVSampleRateConverterAlgorithmKey: String
 ```
 
-#### Discussion
+## Topics
 
-For information about supported values, see [`AVAudioQuality`](avaudioquality.md).
+### Supported algorithms
+- [let AVSampleRateConverterAlgorithm_Normal: String](avsamplerateconverteralgorithm_normal.md)
+  The usual encoder bit rate strategy.
+- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)
+  The minimum phase encoder bit rate strategy.
+- [let AVSampleRateConverterAlgorithm_Mastering: String](avsamplerateconverteralgorithm_mastering.md)
+  The mastering encoder bit rate strategy.
 
 ## See Also
 

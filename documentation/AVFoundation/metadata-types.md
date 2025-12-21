@@ -1,4 +1,4 @@
-# Metadata Types
+# Metadata types
 
 **Framework**: AVFoundation
 
@@ -6,12 +6,17 @@ Inspect the supported metadata object types that the framework supports.
 
 ## Topics
 
-### 2D and 3D Codes
+### 2D and 3D codes
 - [class AVMetadataMachineReadableCodeObject](avmetadatamachinereadablecodeobject.md)
   Barcode information detected by a metadata capture output.
 ### Faces
 - [class AVMetadataFaceObject](avmetadatafaceobject.md)
   Face information detected by a metadata capture output.
+### Heads
+- [class AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+  A concrete metadata object subclass representing a cat head.
+- [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
+  A concrete metadata object subclass representing a dog head.
 ### Bodies
 - [class AVMetadataBodyObject](avmetadatabodyobject.md)
   An abstract class that defines the interface for a metadata body object.

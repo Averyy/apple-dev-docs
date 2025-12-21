@@ -28,6 +28,11 @@ The marketplace or other web-distributed app calls this method after reauthentic
 
 - `account`: The account ID or username for the person. The marketplace server provides this value in the   installation request.
 
+## See Also
+
+- [static let current: AppLibrary](applibrary/current.md)
+  A global accessor for the device’s app library instance.
+
 
 ---
 

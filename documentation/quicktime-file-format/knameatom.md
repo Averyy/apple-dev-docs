@@ -5,9 +5,6 @@
 
 An atom that specifies the name of a tween atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The name, which is optional, is not used by tween components, but it can be used by applications or other software.

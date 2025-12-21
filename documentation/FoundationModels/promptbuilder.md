@@ -6,11 +6,11 @@
 A type that represents a prompt builder.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -41,7 +41,7 @@ struct PromptBuilder
 
 - [init(_:)](prompt/init(_:).md)
 - [protocol PromptRepresentable](promptrepresentable.md)
-  A protocol that represents a prompt.
+  A type whose value can represent a prompt.
 
 
 ---

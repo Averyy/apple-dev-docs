@@ -17,7 +17,7 @@ var acceptsFirstResponder: Bool { get }
 
 #### Discussion
 
-As first responder, the receiver is the first object in the responder chain to be sent key events and action messages. By default, this property is [`false`](https://developer.apple.com/documentation/swift/false). Subclasses set this property to [`true`](https://developer.apple.com/documentation/swift/true) if the receiver accepts first responder status.
+As first responder, the receiver is the first object in the responder chain to be sent key events and action messages. By default, this property is [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses set this property to [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver accepts first responder status.
 
 ## See Also
 

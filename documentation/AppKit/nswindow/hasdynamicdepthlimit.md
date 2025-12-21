@@ -17,7 +17,7 @@ var hasDynamicDepthLimit: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window has a dynamic depth limit; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). When the value of [`hasDynamicDepthLimit`](nswindow/hasdynamicdepthlimit.md) is [`false`](https://developer.apple.com/documentation/swift/false), the window uses either its preset depth limit or the default depth limit. A different, and non-dynamic, depth limit can be set using the [`depthLimit`](nswindow/depthlimit.md) property.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window has a dynamic depth limit; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). When the value of [`hasDynamicDepthLimit`](nswindow/hasdynamicdepthlimit.md) is [`false`](https://developer.apple.com/documentation/Swift/false), the window uses either its preset depth limit or the default depth limit. A different, and non-dynamic, depth limit can be set using the [`depthLimit`](nswindow/depthlimit.md) property.
 
 ## See Also
 

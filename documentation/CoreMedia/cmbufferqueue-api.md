@@ -1,4 +1,4 @@
-# CMBufferQueue APIs
+# CMBufferQueue
 
 **Framework**: Core Media
 
@@ -128,9 +128,9 @@ Install triggers to observe the queue’s fullness rather than repeatedly pollin
 
 ## See Also
 
-- [CMSimpleQueue APIs](cmsimplequeue-api.md)
+- [CMSimpleQueue](cmsimplequeue-api.md)
   A simple, lockless FIFO queue of elements.
-- [CMMemoryPool APIs](cmmemorypool-api.md)
+- [CMMemoryPool](cmmemorypool-api.md)
   An object that optimizes memory allocation when working with large blocks of memory.
 
 

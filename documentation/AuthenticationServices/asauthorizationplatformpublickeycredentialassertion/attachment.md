@@ -16,10 +16,6 @@
 var attachment: ASAuthorizationPublicKeyCredentialAttachment { get }
 ```
 
-## See Also
-
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md)
-
 
 ---
 

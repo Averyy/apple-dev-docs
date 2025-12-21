@@ -22,9 +22,9 @@ var productIdentifier: String { get }
 
 ## Mentions
 
+- [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
 
 
 ---

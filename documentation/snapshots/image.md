@@ -1,12 +1,18 @@
 # Image
 
 **Framework**: Maps Web Snapshots  
-**Kind**: dict
+**Kind**: dictionary
 
 A JSON object for a Snapshot URL that describes the characteristics of custom images to use for map annotations.
 
 **Availability**:
-- Maps Web Snapshots 1.0+ (Beta)
+- Maps Web Snapshots 1.0+
+
+## Declaration
+
+```swift
+object Image
+```
 
 #### Discussion
 
@@ -14,12 +20,12 @@ Maps Web Snapshots API supports JPEG, PNG, and GIF image formats for providing c
 
 If an image fails to load in a reasonable amount of time, the snapshot rendering uses the default “balloon” style marker.
 
-> ❗ **Important**: By providing an image URL, you’re responsible for ensuring the availability of the image at all times.
+> ❗ **Important**:  By providing an image URL, you’re responsible for ensuring the availability of the image at all times.
 
 ## See Also
 
-- [Generating a URL and Signature to Create a Maps Web Snapshot](generating_a_url_and_signature_to_create_a_maps_web_snapshot.md)
-  Create a Snapshot URL and generate a signature to validate the request. 
+- [Generating a URL and Signature to Create a Maps Web Snapshot](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)
+  Create a Snapshot URL and generate a signature to validate the request.
 - [object Annotation](annotation.md)
   An object for a Snapshot URL that describes annotation characteristics.
 - [object Overlay](overlay.md)

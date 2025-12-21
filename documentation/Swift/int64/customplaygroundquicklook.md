@@ -12,7 +12,6 @@ A custom playground Quick Look for the `Int64` instance.
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS 1.0+
-- Unknown ?+ - Deprecated
 - watchOS 2.0+
 
 ## Declaration

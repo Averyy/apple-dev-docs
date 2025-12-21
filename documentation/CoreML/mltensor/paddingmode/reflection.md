@@ -20,6 +20,13 @@ Pads the input tensor using the reflection of the input boundary.
 case reflection
 ```
 
+## See Also
+
+- [MLTensor.PaddingMode.constant(_:)](mltensor/paddingmode/constant(_:).md)
+  Pads the input tensor boundaries with a constant value.
+- [MLTensor.PaddingMode.symmetric](mltensor/paddingmode/symmetric.md)
+  Pads the input tensor using the reflection of the input, including the edge value.
+
 
 ---
 

@@ -57,6 +57,10 @@ enum NEVPNIKEv2IntegrityAlgorithm
   An enumeration of Diffie-Hellman group values.
 - [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
+  Quantum-secure key exchange methods you use with IKEv2 servers.
 
 
 ---

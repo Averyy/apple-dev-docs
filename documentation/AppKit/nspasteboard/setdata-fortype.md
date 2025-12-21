@@ -16,7 +16,7 @@ func setData(_ data: Data?, forType dataType: NSPasteboard.PasteboardType) -> Bo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data was written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the data was written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
 
 ## Parameters
 

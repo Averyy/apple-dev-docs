@@ -13,7 +13,6 @@ A padding mode that provides symmetric padding.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

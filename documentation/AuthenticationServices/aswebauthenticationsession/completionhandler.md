@@ -22,8 +22,10 @@ typealias CompletionHandler = (URL?, (any Error)?) -> Void
 
 ## See Also
 
-- [init(url: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:).md)
-  Creates a web authentication session instance.
+- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:).md)
+  Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
+- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  An object for evaluating navigation events in an authentication session.
 
 
 ---

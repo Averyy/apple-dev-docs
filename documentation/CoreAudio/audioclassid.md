@@ -13,6 +13,10 @@
 typealias AudioClassID = UInt32
 ```
 
+#### Discussion
+
+AudioClassIDs are used to identify the class of an AudioObject.
+
 ## See Also
 
 - [typealias AudioDeviceID](audiodeviceid.md)

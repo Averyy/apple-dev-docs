@@ -20,7 +20,7 @@ object AppScreenshotSet
 - [object AppScreenshotSet.Attributes](appscreenshotset/attributes-data.dictionary.md)
   Attributes that describe an App Screenshot Sets resource.
 - [object AppScreenshotSet.Relationships](appscreenshotset/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

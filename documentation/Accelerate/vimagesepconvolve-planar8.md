@@ -22,7 +22,7 @@ func vImageSepConvolve_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsa
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -60,11 +60,23 @@ The following image shows two photographs, with the original image on the left, 
 
 ![An image of some buildings before and after applying an edge detection filter.](https://docs-assets.developer.apple.com/published/b83b33b843707ee00971f9e18fccb9ed/media-3591853%402x.png)
 
+##### Optimize Performance with Temporary Buffers
+
+This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
+
+Pass `nil` to the `tempBuffer` parameter to have vImage create and manage this temporary storage for you.
+
+In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call.
+
+To use your own temporary buffer, first call the function with the same values for all other parameters that you intend to use for subsequent calls. In addition, pass the `kvImageGetTempBufferSize` flag. The `kvImageGetTempBufferSize` instructs the function not to perform any processing, and to return a positive value that represents the minimum size, in bytes, of the temporary buffer. A negative return value represents an error.
+
+After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag.
+
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains data for the source image.
-- `dest`: A pointer to a vImage buffer data structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer to which this structure points contains the destination image data. When you no longer need the data buffer, you must deallocate the memory. The size dimensions of the destination buffer also specifies the size of the region of interest in the source buffer.
-- `tempBuffer`: A pointer to a temporary buffer. If you pass  , the function allocates the buffer, then deallocates it before returning. Alternatively, you can allocate the buffer yourself, in which case you’re responsible for deallocating it when you no longer need it.
+- `dest`: A pointer to a vImage buffer data structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer to which this structure points contains the destination image data. When you no longer need the data buffer, you need to deallocate the memory. The size dimensions of the destination buffer also specifies the size of the region of interest in the source buffer.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `kernelX`: A pointer to the 1D horizontal weights.
@@ -72,7 +84,7 @@ The following image shows two photographs, with the original image on the left, 
 - `kernelY`: A pointer to the 1D vertical weights.
 - `kernelY_width`: The number of elements in the vertical weights array.
 - `bias`: The value to add to each element in the convolution result, before performing any clipping.
-- `backgroundColor`: A background color. If you supply a color, you must also set the   flag, otherwise the function ignores the color.
+- `backgroundColor`: A background color. If you supply a color, you need to also set the   flag; otherwise, the function ignores the color.
 - `flags`: Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image:  ,  ,  , or  .
 
 ## See Also

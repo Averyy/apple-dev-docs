@@ -22,7 +22,7 @@ The field editor of the edited cell originally sends an [`didBeginEditingNotific
 | --- | --- |
 | `“NSFieldEditor”` | The edited cell’s field editor |
 
-See the [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/objectivec/nsobject/1428847-controltextdidendediting) method for details. The system posts this notification on the main actor.
+See the [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidEndEditing:) method for details. The system posts this notification on the main actor.
 
 ## See Also
 

@@ -18,7 +18,7 @@ var automaticImageScaleEstimationEnabled: Bool { get set }
 
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/swift/true), ARKit uses its knowledge of the world to set an image anchor’s [`estimatedScaleFactor`](arimageanchor/estimatedscalefactor.md) property, which corrects the image anchor’s position in the physical environment.
+If set to [`true`](https://developer.apple.com/documentation/Swift/true), ARKit uses its knowledge of the world to set an image anchor’s [`estimatedScaleFactor`](arimageanchor/estimatedscalefactor.md) property, which corrects the image anchor’s position in the physical environment.
 
 Enable this property when you want to detect different sized versions of a reference image. ARKit must know the physical size of an image in the real world to accurately estimate its real-world position. You enable this property to tell ARKit to estimate a recognized image’s physical size before it calculates the real-world position.
 

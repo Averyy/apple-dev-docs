@@ -24,7 +24,7 @@ A new SceneKit face geometry, or `nil` if the Metal device is unavailable or ARK
 
 A newly created [`ARSCNFaceGeometry`](arscnfacegeometry.md) instance represents a neutral, generic face; use the [`update(from:)`](arscnfacegeometry/update(from:).md) method to deform the geometry to match a specific facial expression or face shape.
 
-If the `fillMesh` parameter is [`false`](https://developer.apple.com/documentation/swift/false), the geometry contains a single geometry element. If the `fillMesh` parameter is [`true`](https://developer.apple.com/documentation/swift/true), the geometry contains four elements in the following order: the face itself, the left and right eyes, and the mouth. (When a SceneKit geometry contains multiple elements, the number and order of materials you assign to its [`materials`](https://developer.apple.com/documentation/scenekit/scngeometry/1523472-materials) array determines whether the entire surface has a uniform appearance or different appearances for each geometry element.)
+If the `fillMesh` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), the geometry contains a single geometry element. If the `fillMesh` parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the geometry contains four elements in the following order: the face itself, the left and right eyes, and the mouth. (When a SceneKit geometry contains multiple elements, the number and order of materials you assign to its [`materials`](https://developer.apple.com/documentation/scenekit/scngeometry/1523472-materials) array determines whether the entire surface has a uniform appearance or different appearances for each geometry element.)
 
 ## Parameters
 

@@ -27,6 +27,8 @@ These constants are used to indicate how items in a request are ordered, from th
 
 ## Topics
 
+### Creating a comparison result
+- [init?(rawValue: Int)](comparisonresult/init(rawvalue:).md)
 ### Constants
 - [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
   The left operand is smaller than the right operand.
@@ -34,14 +36,6 @@ These constants are used to indicate how items in a request are ordered, from th
   The two operands are equal.
 - [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
   The left operand is greater than the right operand.
-- [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
-  The left operand is smaller than the right operand.
-- [ComparisonResult.orderedSame](comparisonresult/orderedsame.md)
-  The two operands are equal.
-- [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
-  The left operand is greater than the right operand.
-### Initializers
-- [init?(rawValue: Int)](comparisonresult/init(rawvalue:).md)
 
 ## Relationships
 

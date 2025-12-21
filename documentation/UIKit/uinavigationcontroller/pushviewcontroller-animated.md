@@ -21,7 +21,7 @@ func pushViewController(_ viewController: UIViewController, animated: Bool)
 
 #### Discussion
 
-The object in the `viewController` parameter becomes the top view controller on the navigation stack. Pushing a view controller causes its view to be embedded in the navigation interface. If the `animated` parameter is [`true`](https://developer.apple.com/documentation/swift/true), the view is animated into position; otherwise, the view is simply displayed in its final location.
+The object in the `viewController` parameter becomes the top view controller on the navigation stack. Pushing a view controller causes its view to be embedded in the navigation interface. If the `animated` parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the view is animated into position; otherwise, the view is simply displayed in its final location.
 
 In addition to displaying the view associated with the new view controller at the top of the stack, this method also updates the navigation bar and tool bar accordingly. For information on how the navigation bar is updated, see [`Updating the navigation bar`](uinavigationcontroller#Updating-the-navigation-bar.md).
 
@@ -39,7 +39,9 @@ In addition to displaying the view associated with the new view controller at th
 - [func popToViewController(UIViewController, animated: Bool) -> [UIViewController]?](uinavigationcontroller/poptoviewcontroller(_:animated:).md)
   Pops view controllers until the specified view controller is at the top of the navigation stack.
 - [var interactivePopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivepopgesturerecognizer.md)
-  The gesture recognizer responsible for popping the top view controller off the navigation stack.
+  The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+- [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
+  The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person pans horizontally in the view.
 
 
 ---

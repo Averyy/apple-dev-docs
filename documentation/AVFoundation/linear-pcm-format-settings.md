@@ -1,4 +1,4 @@
-# Linear PCM Format Settings
+# Linear PCM format settings
 
 **Framework**: AVFoundation
 
@@ -19,7 +19,7 @@ The audio settings that apply to linear PCM audio formats.
 - [class AVAudioChannelLayout](../AVFAudio/AVAudioChannelLayout.md)
   An object that describes the roles of a set of audio channels.
 - [let AVChannelLayoutKey: String](../AVFAudio/AVChannelLayoutKey.md)
-- [Format Settings](format-settings.md)
+- [Format settings](format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 

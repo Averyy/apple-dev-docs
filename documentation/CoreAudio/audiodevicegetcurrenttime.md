@@ -15,6 +15,19 @@
 func AudioDeviceGetCurrentTime(_ inDevice: AudioObjectID, _ outTime: UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure. kAudioHardwareNotRunningError will be returned if the AudioDevice isn’t running.
+
+#### Discussion
+
+Retrieves the current time from an AudioDevice. Note that the device has to be running.
+
+## Parameters
+
+- `inDevice`: The AudioDevice to from which to get the time.
+- `outTime`: An AudioTimeStamp into which the current time is put. On entry, the   mFlags field specifies which representations to provide. Because not every   device supports all time representations, on exit, the mFlags field will   indicate what values are actually valid.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

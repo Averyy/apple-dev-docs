@@ -20,7 +20,7 @@ class func canEditVideo(atPath videoPath: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified video file can be edited on the current device or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified video file can be edited on the current device or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 

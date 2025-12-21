@@ -28,8 +28,6 @@ func map<T>(_ transform: (Column<WrappedElement>.Element) throws -> T?) rethrows
 
 - [func mapNonNil<T>((WrappedElement) throws -> T?) rethrows -> Column<T>](column/mapnonnil(_:).md)
   Creates a new column by applying the transformation to every element that isn’t missing.
-- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](column/filled(with:).md)
-  Generates a filled column by replacing missing elements with a value.
 
 
 ---

@@ -28,7 +28,7 @@ The `localMember` is only available to the [`ConversationManager`](conversationm
   The current state of the conversation.
 - [Conversation.State](conversation/state-swift.enum.md)
   Values that describe the current state of a conversation.
-- [var uuid: UUID](conversation/uuid.md)
+- [let uuid: UUID](conversation/uuid.md)
   The unique identifier for a conversation.
 
 

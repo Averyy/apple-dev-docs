@@ -21,11 +21,11 @@ enum MTLStoreAction
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
 
 ## Topics
 
-### Constants
+### Store actions
 - [MTLStoreAction.dontCare](mtlstoreaction/dontcare.md)
   The GPU has permission to discard the rendered contents of the attachment at the end of the render pass, replacing them with arbitrary data.
 - [MTLStoreAction.store](mtlstoreaction/store.md)
@@ -54,7 +54,7 @@ enum MTLStoreAction
 ## See Also
 
 - [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
-  An object that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
+  An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
 - [enum MTLLoadAction](mtlloadaction.md)
   Types of actions performed for an attachment at the start of a rendering pass.
 - [struct MTLStoreActionOptions](mtlstoreactionoptions.md)

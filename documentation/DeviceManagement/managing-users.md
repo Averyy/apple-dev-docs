@@ -77,14 +77,14 @@ The code above results in a response like the following:
 
 ##### Interpret User States
 
-A user has an `email` key and either an `idHash` or an `inviteCode` key, depending on the status. A registered user has an `inviteCode` because the system has created the user, but that user doesn’t have an associated Apple ID yet. An associated user has an `idHash` that uniquely identifies the user’s associated Apple ID. A retired user may have an `idHash` if the user had an associated `appleId` previously.
+A user has an `email` key and either an `idHash` or an `inviteCode` key, depending on the status. A registered user has an `inviteCode` because the system has created the user, but that user doesn’t have an associated Apple Account yet. An associated user has an `idHash` that uniquely identifies the user’s associated Apple Account. A retired user may have an `idHash` if the user had an associated `appleId` previously.
 
 | State | Description |
 | --- | --- |
-| Registered | Indicates that the server has created the user, but the user doesn’t have an associated Apple ID yet. |
-| Associated | Indicates that the user has an associated Apple ID. When the server associates a user with an Apple ID, it generates an `idHash` for that user. |
+| Registered | Indicates that the server has created the user, but the user doesn’t have an associated Apple Account yet. |
+| Associated | Indicates that the user has an associated Apple Account. When the server associates a user with an Apple Account, it generates an `idHash` for that user. |
 | Retired | Indicates that the server has retired the user. |
-| Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple ID with a new user that shares the same `clientUserId`. |
+| Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple Account with a new user that shares the same `clientUserId`. |
 
 ##### Request Sizes
 

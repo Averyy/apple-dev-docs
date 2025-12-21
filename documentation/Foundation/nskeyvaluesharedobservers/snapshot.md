@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+A momentary snapshot of all observers added to the collection thus far, that can be assigned to an observable using `-[NSObject setSharedObservers:]`
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

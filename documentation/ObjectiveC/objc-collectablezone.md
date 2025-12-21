@@ -4,7 +4,6 @@
 **Kind**: func
 
 **Availability**:
-- Unknown ?+ - Deprecated
 - macOS ?+
 
 ## Declaration

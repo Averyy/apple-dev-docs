@@ -19,7 +19,7 @@ func trackEvents(matching mask: NSEvent.EventTypeMask, timeout: TimeInterval, mo
 
 You can use this method in a tracking loop to get pressure events when you add [`pressure`](nsevent/eventtypemask/pressure.md) to the event mask. This method returns when tracking terminates.
 
-Each event is removed from the event queue and then passed to the tracking handler. If a matching event does not exist in the event queue, the main thread blocks in the specified runloop mode until an event of the requested type is received or the specified timeout expires. If the timeout expires, the tracking handler is called with a `nil` event (a negative timeout is interpreted as `0`). Use `NSEventDurationForever` to prevent timing out. Tracking continues until you set `stop` to [`true`](https://developer.apple.com/documentation/swift/true). Note that calls to [`nextEvent(matching:)`](nswindow/nextevent(matching:).md) are allowed inside the `trackingHandler` block.
+Each event is removed from the event queue and then passed to the tracking handler. If a matching event does not exist in the event queue, the main thread blocks in the specified runloop mode until an event of the requested type is received or the specified timeout expires. If the timeout expires, the tracking handler is called with a `nil` event (a negative timeout is interpreted as `0`). Use `NSEventDurationForever` to prevent timing out. Tracking continues until you set `stop` to [`true`](https://developer.apple.com/documentation/Swift/true). Note that calls to [`nextEvent(matching:)`](nswindow/nextevent(matching:).md) are allowed inside the `trackingHandler` block.
 
 ## Parameters
 

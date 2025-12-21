@@ -20,9 +20,9 @@ func sec_protocol_options_set_tls_is_fallback_attempt(_ options: sec_protocol_op
 
 #### Discussion
 
-```None
- Signal if this is a TLS fallback attempt.
+Signal if this is a TLS fallback attempt.
 
+```None
  A fallback attempt is one following a previously failed TLS connection
  due to version or parameter incompatibility, e.g., when speaking to a server
  that does not support a client-offered ciphersuite.

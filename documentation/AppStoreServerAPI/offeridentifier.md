@@ -32,9 +32,9 @@ For more information about subscription offers, see [`Providing subscription off
 - [type offerPeriod](offerperiod.md)
   The duration of the offer.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for subscription offers on an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 
 
 ---

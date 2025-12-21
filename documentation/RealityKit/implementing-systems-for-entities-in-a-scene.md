@@ -90,6 +90,8 @@ MySystem.registerSystem()
 
 ## See Also
 
+- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
+  Rotate an entity around an axis using a Component and a System.
 - [protocol System](system.md)
   An object that affects multiple entities in every update of a RealityKit scene.
 - [struct SystemUpdateCondition](systemupdatecondition.md)

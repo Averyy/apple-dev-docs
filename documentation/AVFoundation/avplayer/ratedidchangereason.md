@@ -25,7 +25,7 @@ struct RateDidChangeReason
 ### Initializers
 - [init(rawValue: String)](avplayer/ratedidchangereason/init(rawvalue:).md)
   Creates a reason with a string value.
-### Rate Change Reasons
+### Rate change reasons
 - [static let appBackgrounded: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/appbackgrounded.md)
   An app transitions to the background.
 - [static let audioSessionInterrupted: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/audiosessioninterrupted.md)

@@ -21,7 +21,7 @@ var sampleCount: Int { get set }
 
 #### Discussion
 
-The default value is `1`. If [`textureType`](mtltexturedescriptor/texturetype.md) is not [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) or [`MTLTextureType.type2DMultisampleArray`](mtltexturetype/type2dmultisamplearray.md), this value must be `1`.
+The default value is `1`. If [`textureType`](mtltexturedescriptor/texturetype.md) is not [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) or [`MTLTextureType.type2DMultisampleArray`](mtltexturetype/type2dmultisamplearray.md), this value needs to be `1`.
 
 Support for different sample count values varies by device. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine if your desired sample count value is supported.
 

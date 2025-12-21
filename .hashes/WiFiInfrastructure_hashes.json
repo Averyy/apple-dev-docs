@@ -1,0 +1,1449 @@
+{
+  "metadata": {
+    "last_updated": "2025-12-20T20:26:49.772807",
+    "total_pages": 180,
+    "session_id": "2025-12-20T20:26:37.351720"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/WiFiInfrastructure.json": {
+      "hash": "5cf3a2023536ffd0b3157769281b083ab5c8dc89bf26d7eb16a3bdcdcd15f805",
+      "last_checked": "2025-12-20T20:26:37.761187",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6bab294103fc42252aef2619d87fa797\"",
+      "file_path": "documentation/WiFiInfrastructure/WiFiInfrastructure.md"
+    },
+    "https://developer.apple.com/documentation/WiFiInfrastructure": {
+      "hash": "5cf3a2023536ffd0b3157769281b083ab5c8dc89bf26d7eb16a3bdcdcd15f805",
+      "last_checked": "2025-12-20T20:26:37.565219",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6bab294103fc42252aef2619d87fa797\"",
+      "file_path": "documentation/WiFiInfrastructure/WiFiInfrastructure.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/sharing-wi-fi-network-credentials.json": {
+      "hash": "ec3b6ad1d15fb8e8219b3f12a81185b4c4116b052896f7e6e8992575cfe9428b",
+      "last_checked": "2025-12-20T20:26:38.248474",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"03290972e3e58bdea5764dce480d530d\"",
+      "file_path": "documentation/WiFiInfrastructure/sharing-wi-fi-network-credentials.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/sharing-wi-fi-network-credentials": {
+      "hash": "ec3b6ad1d15fb8e8219b3f12a81185b4c4116b052896f7e6e8992575cfe9428b",
+      "last_checked": "2025-12-20T20:26:38.248523",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"03290972e3e58bdea5764dce480d530d\"",
+      "file_path": "documentation/WiFiInfrastructure/sharing-wi-fi-network-credentials.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller.json": {
+      "hash": "1d46d372423783a22ff8a1c21a3705ceb95bb1852f4aa15bfa75e269ea1ed1fb",
+      "last_checked": "2025-12-20T20:26:38.401133",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"43bb72bd375e12f75e62bb9733791fed\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller": {
+      "hash": "1d46d372423783a22ff8a1c21a3705ceb95bb1852f4aa15bfa75e269ea1ed1fb",
+      "last_checked": "2025-12-20T20:26:38.401174",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"43bb72bd375e12f75e62bb9733791fed\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider.json": {
+      "hash": "6ef60429cd21fe026f404a8b29e8b12457241dd4091fc4ab6d7466d9a7b7747b",
+      "last_checked": "2025-12-20T20:26:38.495525",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"7f4758bc82ee70a8fe0ff49f89c8aa54\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider": {
+      "hash": "6ef60429cd21fe026f404a8b29e8b12457241dd4091fc4ab6d7466d9a7b7747b",
+      "last_checked": "2025-12-20T20:26:38.495573",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"7f4758bc82ee70a8fe0ff49f89c8aa54\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingasktosharestate.json": {
+      "hash": "4d28d19a14cd2bb80221986a62ab022822eb9ffca253b67e9adc694b8f312242",
+      "last_checked": "2025-12-20T20:26:38.645826",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0de71843c093a2bc9af68f236f4d9886\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingasktosharestate": {
+      "hash": "4d28d19a14cd2bb80221986a62ab022822eb9ffca253b67e9adc694b8f312242",
+      "last_checked": "2025-12-20T20:26:38.645867",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0de71843c093a2bc9af68f236f4d9886\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid.json": {
+      "hash": "374f43abfd40a039dbaab432f6c0e3fc7b39bd05b8a67c3c0119db27f0416868",
+      "last_checked": "2025-12-20T20:26:38.740627",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"eeb8a4872e2fd734d149fc8279b69d4e\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid": {
+      "hash": "374f43abfd40a039dbaab432f6c0e3fc7b39bd05b8a67c3c0119db27f0416868",
+      "last_checked": "2025-12-20T20:26:38.740676",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"eeb8a4872e2fd734d149fc8279b69d4e\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror.json": {
+      "hash": "9676d15a1e5e8dcc2ec5b249635cf8379aea19e46beeb4425bcf5fd8144cd36a",
+      "last_checked": "2025-12-20T20:26:38.863407",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d94e1d1c751549e04aea4d6be459d604\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror": {
+      "hash": "9676d15a1e5e8dcc2ec5b249635cf8379aea19e46beeb4425bcf5fd8144cd36a",
+      "last_checked": "2025-12-20T20:26:38.863461",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d94e1d1c751549e04aea4d6be459d604\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/accessory.json": {
+      "hash": "eb53b516d5b84fe3ca62ee0f092c3f4003c6880c8e737bce02fc928e1a8c8560",
+      "last_checked": "2025-12-20T20:26:39.049612",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0b95e17c77e0648a4d274d83e76d2703\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/accessory.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/accessory": {
+      "hash": "eb53b516d5b84fe3ca62ee0f092c3f4003c6880c8e737bce02fc928e1a8c8560",
+      "last_checked": "2025-12-20T20:26:39.049648",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0b95e17c77e0648a4d274d83e76d2703\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/accessory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/requestauthorization().json": {
+      "hash": "6d89239cb6bca5502e9b048999c182825b713ee2baeab0671487ebf236f1f4ea",
+      "last_checked": "2025-12-20T20:26:39.137466",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"61ea24e5bc082a5f4f1538917e4a504d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/requestauthorization.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/requestauthorization()": {
+      "hash": "6d89239cb6bca5502e9b048999c182825b713ee2baeab0671487ebf236f1f4ea",
+      "last_checked": "2025-12-20T20:26:39.137508",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"61ea24e5bc082a5f4f1538917e4a504d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/requestauthorization.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate.json": {
+      "hash": "bc3feb4d0ea2dc1f298ce6f26760733849ebe2e560a93df0c9fd5e03d24d5271",
+      "last_checked": "2025-12-20T20:26:39.346802",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f1c338c3f029a69d7222e0561288771f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate": {
+      "hash": "bc3feb4d0ea2dc1f298ce6f26760733849ebe2e560a93df0c9fd5e03d24d5271",
+      "last_checked": "2025-12-20T20:26:39.346855",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f1c338c3f029a69d7222e0561288771f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/asktoshare().json": {
+      "hash": "c46b8d8d0319f409493b9aa3fc3bc16330c09f66ec486ba249c20c32cbb39866",
+      "last_checked": "2025-12-20T20:26:39.438379",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6400c17edc34801cab745fe79ce82d6b\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/asktoshare.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/asktoshare()": {
+      "hash": "c46b8d8d0319f409493b9aa3fc3bc16330c09f66ec486ba249c20c32cbb39866",
+      "last_checked": "2025-12-20T20:26:39.438437",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6400c17edc34801cab745fe79ce82d6b\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/asktoshare.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/init(for:).json": {
+      "hash": "735b4f7c0add862b2b2cfd4dac48c1499d2c6550b48d150e1b481464ba64801d",
+      "last_checked": "2025-12-20T20:26:39.638906",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d4a490ebb46966374a7d7461bac4dd41\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/init-for.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/init(for:)": {
+      "hash": "735b4f7c0add862b2b2cfd4dac48c1499d2c6550b48d150e1b481464ba64801d",
+      "last_checked": "2025-12-20T20:26:39.638955",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d4a490ebb46966374a7d7461bac4dd41\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/init-for.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessory.json": {
+      "hash": "9ffd9f25a3c9c1f23136eaec7a4ff0871d875fa1fb4acc673e3bfc968e604d40",
+      "last_checked": "2025-12-20T20:26:39.799553",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"3c01f73e4e630f2d03c685c4610440d0\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessory.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessory": {
+      "hash": "9ffd9f25a3c9c1f23136eaec7a4ff0871d875fa1fb4acc673e3bfc968e604d40",
+      "last_checked": "2025-12-20T20:26:39.799594",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"3c01f73e4e630f2d03c685c4610440d0\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevents(matching:).json": {
+      "hash": "a3455dfbb55d45c9d607eee86a9657d5bfbf048d08da4b28cec6353989c1bdf4",
+      "last_checked": "2025-12-20T20:26:39.894366",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d49b033e50c67506af5ce45e9584e301\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevents-matching.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevents(matching:)": {
+      "hash": "a3455dfbb55d45c9d607eee86a9657d5bfbf048d08da4b28cec6353989c1bdf4",
+      "last_checked": "2025-12-20T20:26:39.894414",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d49b033e50c67506af5ce45e9584e301\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevents-matching.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent.json": {
+      "hash": "5182486005a144ef8175bf448ccd93f3586f57b40cc35ea0357ba77c93d9638a",
+      "last_checked": "2025-12-20T20:26:40.007196",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"4e2caae6109c8452e220ff01b179bd05\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent": {
+      "hash": "5182486005a144ef8175bf448ccd93f3586f57b40cc35ea0357ba77c93d9638a",
+      "last_checked": "2025-12-20T20:26:40.007244",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"4e2caae6109c8452e220ff01b179bd05\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network.json": {
+      "hash": "bb2731e0af7c4a7aca9554e6ec04a9ccdaaaec6b49deb6fec2b05051480f3578",
+      "last_checked": "2025-12-20T20:26:40.089838",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d10cd0b0c1cf8cf5219052ddd61644e4\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network": {
+      "hash": "bb2731e0af7c4a7aca9554e6ec04a9ccdaaaec6b49deb6fec2b05051480f3578",
+      "last_checked": "2025-12-20T20:26:40.089889",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d10cd0b0c1cf8cf5219052ddd61644e4\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/presentasktoshareui(scanprovider:).json": {
+      "hash": "3d52d02ee6a559f35e8a55a4863e0df6de09f65bea60d90efd06c223e807f711",
+      "last_checked": "2025-12-20T20:26:40.228102",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"47822bd3c6c90b18d18a07b274b03f72\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/presentasktoshareui-scanprovider.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/presentasktoshareui(scanprovider:)": {
+      "hash": "3d52d02ee6a559f35e8a55a4863e0df6de09f65bea60d90efd06c223e807f711",
+      "last_checked": "2025-12-20T20:26:40.228166",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"47822bd3c6c90b18d18a07b274b03f72\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/presentasktoshareui-scanprovider.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest.json": {
+      "hash": "10c9292c11f640d687a0089cc5b843d6a7c82dbc09bdbb8e1ea306f73176dd08",
+      "last_checked": "2025-12-20T20:26:40.344094",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"29fce2af1b42e9ba9a3bb61113d29874\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest": {
+      "hash": "10c9292c11f640d687a0089cc5b843d6a7c82dbc09bdbb8e1ea306f73176dd08",
+      "last_checked": "2025-12-20T20:26:40.344137",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"29fce2af1b42e9ba9a3bb61113d29874\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse.json": {
+      "hash": "fc0dcfc1846666c20b73ec45a9eb341e8906fdc6a2d66a7ac504f18a03e3bf62",
+      "last_checked": "2025-12-20T20:26:40.459967",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"9982617f66df9420cf28ed4170ff5784\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse": {
+      "hash": "fc0dcfc1846666c20b73ec45a9eb341e8906fdc6a2d66a7ac504f18a03e3bf62",
+      "last_checked": "2025-12-20T20:26:40.460016",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"9982617f66df9420cf28ed4170ff5784\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult.json": {
+      "hash": "e8b0d293450c6dd5d8b6c0e99fef96f690b63c420232eb28eedf5cdd2e0b900c",
+      "last_checked": "2025-12-20T20:26:40.598595",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d81369991423e29e2b4100516ad50c92\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult": {
+      "hash": "e8b0d293450c6dd5d8b6c0e99fef96f690b63c420232eb28eedf5cdd2e0b900c",
+      "last_checked": "2025-12-20T20:26:40.598646",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d81369991423e29e2b4100516ad50c92\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/init(for:).json": {
+      "hash": "1349b1805cdc17a6125f757302d860e1e1eb5de9f0b84eb66c7b61a9d3bfc772",
+      "last_checked": "2025-12-20T20:26:40.806377",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"21cb63b95b0a97a2b95ebdbd7759c532\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/init-for.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/init(for:)": {
+      "hash": "1349b1805cdc17a6125f757302d860e1e1eb5de9f0b84eb66c7b61a9d3bfc772",
+      "last_checked": "2025-12-20T20:26:40.806432",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"21cb63b95b0a97a2b95ebdbd7759c532\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/init-for.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingasktosharestate/undetermined.json": {
+      "hash": "1e90dc0b75da1a2f4664bf17d4b65ebc4ce5b8f1b85fcb47476789994af825a4",
+      "last_checked": "2025-12-20T20:26:41.024729",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"44e363f60b95a3f3a17851abd82247cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/undetermined.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingasktosharestate/undetermined": {
+      "hash": "1e90dc0b75da1a2f4664bf17d4b65ebc4ce5b8f1b85fcb47476789994af825a4",
+      "last_checked": "2025-12-20T20:26:41.024772",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"44e363f60b95a3f3a17851abd82247cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/undetermined.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingasktosharestate/denied.json": {
+      "hash": "3284206649fd3a9f9e5eed7e51136bdfe30c03d68ea1b49233905443e5332031",
+      "last_checked": "2025-12-20T20:26:41.103991",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2037dd0b9c3c7a712acf1d856a0d7d57\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/denied.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingasktosharestate/denied": {
+      "hash": "3284206649fd3a9f9e5eed7e51136bdfe30c03d68ea1b49233905443e5332031",
+      "last_checked": "2025-12-20T20:26:41.104029",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2037dd0b9c3c7a712acf1d856a0d7d57\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/denied.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingasktosharestate/approved.json": {
+      "hash": "7780a9512e8e3fa7a350505241f5450908faa78740709969a288d91cf94870fe",
+      "last_checked": "2025-12-20T20:26:41.276345",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0fcbd7171330add60d494ebdb1350c9c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/approved.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingasktosharestate/approved": {
+      "hash": "7780a9512e8e3fa7a350505241f5450908faa78740709969a288d91cf94870fe",
+      "last_checked": "2025-12-20T20:26:41.276393",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0fcbd7171330add60d494ebdb1350c9c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingasktosharestate/approved.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid/init(_:encoding:).json": {
+      "hash": "68b513daf5ceb9a033cb3a6cf357d8175326b606500eb12c4d49642d377ce344",
+      "last_checked": "2025-12-20T20:26:41.356767",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"ee5bf982e3323142927d67aabaebd9c9\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/init-encoding.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid/init(_:encoding:)": {
+      "hash": "68b513daf5ceb9a033cb3a6cf357d8175326b606500eb12c4d49642d377ce344",
+      "last_checked": "2025-12-20T20:26:41.356805",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"ee5bf982e3323142927d67aabaebd9c9\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/init-encoding.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid/stringrepresentation(encoding:).json": {
+      "hash": "e3f48d5f3a53082b9d2447133e72d22bbd10e4cd42e1e60a317cd2c9b51c1545",
+      "last_checked": "2025-12-20T20:26:41.497431",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2d5664ae59659fc06fabc6d30321a981\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/stringrepresentation-encoding.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid/stringrepresentation(encoding:)": {
+      "hash": "e3f48d5f3a53082b9d2447133e72d22bbd10e4cd42e1e60a317cd2c9b51c1545",
+      "last_checked": "2025-12-20T20:26:41.497473",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2d5664ae59659fc06fabc6d30321a981\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/stringrepresentation-encoding.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid/init(_:).json": {
+      "hash": "c29a50eac12b20a5ea76b177eb752a7068c5c0f8a07c70a77a4f6cffc4b8e11a",
+      "last_checked": "2025-12-20T20:26:41.618238",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"42d9e0cfebc291bb38c331028068dcb8\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/init.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid/init(_:)": {
+      "hash": "c29a50eac12b20a5ea76b177eb752a7068c5c0f8a07c70a77a4f6cffc4b8e11a",
+      "last_checked": "2025-12-20T20:26:41.618273",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"42d9e0cfebc291bb38c331028068dcb8\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/init.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid/data.json": {
+      "hash": "263fbe84e1f591c230efc2a37e00857598d3c10bdfcdcb5b54edea83c8d73917",
+      "last_checked": "2025-12-20T20:26:41.713202",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f8d2ee7f13a7404952c6938986ec5fc9\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/data.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid/data": {
+      "hash": "263fbe84e1f591c230efc2a37e00857598d3c10bdfcdcb5b54edea83c8d73917",
+      "last_checked": "2025-12-20T20:26:41.713254",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f8d2ee7f13a7404952c6938986ec5fc9\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/data.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/wissid/description.json": {
+      "hash": "608671df268365db4f07caf08240b3b363564b84a102a905554922e2165673ac",
+      "last_checked": "2025-12-20T20:26:41.837778",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"618e76aaf69687c7ca8010baf4f699b2\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/description.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/wissid/description": {
+      "hash": "608671df268365db4f07caf08240b3b363564b84a102a905554922e2165673ac",
+      "last_checked": "2025-12-20T20:26:41.837814",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"618e76aaf69687c7ca8010baf4f699b2\"",
+      "file_path": "documentation/WiFiInfrastructure/wissid/description.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/error.json": {
+      "hash": "07248802c1cdee5c7911d2051a8d9e97528830295fa2ecf95efaaf9978cc45d4",
+      "last_checked": "2025-12-20T20:26:41.944303",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"89900f5db5ff2a6e05d5ae65188482df\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/error.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/error": {
+      "hash": "07248802c1cdee5c7911d2051a8d9e97528830295fa2ecf95efaaf9978cc45d4",
+      "last_checked": "2025-12-20T20:26:41.944344",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"89900f5db5ff2a6e05d5ae65188482df\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/error.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/timeout.json": {
+      "hash": "bee4ed36f89ba1d3654d361d8f8909402abd4031dfd06781a3e0278d49467057",
+      "last_checked": "2025-12-20T20:26:42.047459",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"add26f82213bc87f25d309db72689330\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/timeout.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/timeout": {
+      "hash": "bee4ed36f89ba1d3654d361d8f8909402abd4031dfd06781a3e0278d49467057",
+      "last_checked": "2025-12-20T20:26:42.047497",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"add26f82213bc87f25d309db72689330\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/timeout.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/appnotpermitted.json": {
+      "hash": "262bb3602d17b4790aec5818377d1e4d1029c641f02f217e1c5d29ba6689186d",
+      "last_checked": "2025-12-20T20:26:42.217803",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e000b09b0859b94652b5f9ae434976e8\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/appnotpermitted.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/appnotpermitted": {
+      "hash": "262bb3602d17b4790aec5818377d1e4d1029c641f02f217e1c5d29ba6689186d",
+      "last_checked": "2025-12-20T20:26:42.217839",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e000b09b0859b94652b5f9ae434976e8\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/appnotpermitted.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/appnotinforeground.json": {
+      "hash": "b616e64930d1ab76343a5c583a96008f7e409d64e9577659438630153e528b35",
+      "last_checked": "2025-12-20T20:26:42.318966",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"39efb6a6c02a5d86b21cabe0082a0247\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/appnotinforeground.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/appnotinforeground": {
+      "hash": "b616e64930d1ab76343a5c583a96008f7e409d64e9577659438630153e528b35",
+      "last_checked": "2025-12-20T20:26:42.319010",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"39efb6a6c02a5d86b21cabe0082a0247\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/appnotinforeground.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/wifinetworksharingunsupported.json": {
+      "hash": "8bd3b204befecd755068b2bc5d280b99fefb1913b14bd9360a4968abec01542e",
+      "last_checked": "2025-12-20T20:26:42.444929",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e1379af019b99dd28affc5fa1e92c6e5\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/wifinetworksharingunsupported.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/wifinetworksharingunsupported": {
+      "hash": "8bd3b204befecd755068b2bc5d280b99fefb1913b14bd9360a4968abec01542e",
+      "last_checked": "2025-12-20T20:26:42.444968",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e1379af019b99dd28affc5fa1e92c6e5\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/wifinetworksharingunsupported.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/communicationfailure.json": {
+      "hash": "5cad8459222946d533f437cb823b92cfcb9276aa5112b72ded7c2948f4f9c5c2",
+      "last_checked": "2025-12-20T20:26:42.662525",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dd1a116366129f1528fd35deea3cf06a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/communicationfailure.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/communicationfailure": {
+      "hash": "5cad8459222946d533f437cb823b92cfcb9276aa5112b72ded7c2948f4f9c5c2",
+      "last_checked": "2025-12-20T20:26:42.662569",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dd1a116366129f1528fd35deea3cf06a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/communicationfailure.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/noavailablenetworks.json": {
+      "hash": "1ab54b3ef9f9299a13adf0052b3f203bb3465123d63b62273a91363b4f1d3895",
+      "last_checked": "2025-12-20T20:26:42.736695",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"bf0221deabad6cc165269cc1f9b56693\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/noavailablenetworks.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/noavailablenetworks": {
+      "hash": "1ab54b3ef9f9299a13adf0052b3f203bb3465123d63b62273a91363b4f1d3895",
+      "last_checked": "2025-12-20T20:26:42.736745",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"bf0221deabad6cc165269cc1f9b56693\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/noavailablenetworks.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/toomanyrequests.json": {
+      "hash": "9054586ff6c0176d4bf62dfc0a7d70c69811eefbe58368b58e7efadfe368498e",
+      "last_checked": "2025-12-20T20:26:42.881746",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"722a905c6b1b9554d9dc7dbed1558b55\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/toomanyrequests.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/toomanyrequests": {
+      "hash": "9054586ff6c0176d4bf62dfc0a7d70c69811eefbe58368b58e7efadfe368498e",
+      "last_checked": "2025-12-20T20:26:42.881791",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"722a905c6b1b9554d9dc7dbed1558b55\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/toomanyrequests.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/accessorynotconfigured.json": {
+      "hash": "88753e707c2c7726bfed4c4e63486959f523c678cf8fd744909ffa5b1943dd72",
+      "last_checked": "2025-12-20T20:26:42.978653",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f29f19af993addcd17e23685df2d5d2c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotconfigured.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/accessorynotconfigured": {
+      "hash": "88753e707c2c7726bfed4c4e63486959f523c678cf8fd744909ffa5b1943dd72",
+      "last_checked": "2025-12-20T20:26:42.978696",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f29f19af993addcd17e23685df2d5d2c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotconfigured.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/accessorynotauthorized.json": {
+      "hash": "ff4222feeebeb27f25ea0e041c25ebd5110aa636e9f0821662d188c75fddef05",
+      "last_checked": "2025-12-20T20:26:43.192194",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d1ef3e75fed6309add3378e89cc1620a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotauthorized.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/accessorynotauthorized": {
+      "hash": "ff4222feeebeb27f25ea0e041c25ebd5110aa636e9f0821662d188c75fddef05",
+      "last_checked": "2025-12-20T20:26:43.192233",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d1ef3e75fed6309add3378e89cc1620a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotauthorized.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/accessorynotconnected.json": {
+      "hash": "254be60541d93907f51754c9a71aa422793cb3ca4ba839d76a5d72952a5d001b",
+      "last_checked": "2025-12-20T20:26:43.303268",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"61595a82672a23c229859b6e0653dc20\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotconnected.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/accessorynotconnected": {
+      "hash": "254be60541d93907f51754c9a71aa422793cb3ca4ba839d76a5d72952a5d001b",
+      "last_checked": "2025-12-20T20:26:43.303312",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"61595a82672a23c229859b6e0653dc20\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorynotconnected.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/noaccessoryscanresponse.json": {
+      "hash": "104157080aef1de61a0870ffe7b92bb7455331ad7c8045593baf75def7b4e812",
+      "last_checked": "2025-12-20T20:26:43.402997",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"922525c2318d69595a4238fe74137d4d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/noaccessoryscanresponse.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/noaccessoryscanresponse": {
+      "hash": "104157080aef1de61a0870ffe7b92bb7455331ad7c8045593baf75def7b4e812",
+      "last_checked": "2025-12-20T20:26:43.403038",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"922525c2318d69595a4238fe74137d4d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/noaccessoryscanresponse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/accessorytransportnotsecured.json": {
+      "hash": "ba724f23323400c86fa8d040c0721ecf812622689365f65a1dcdc9f704334d08",
+      "last_checked": "2025-12-20T20:26:43.516112",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b71c69ead7635ff3c2e6ae5baca0f43e\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorytransportnotsecured.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/accessorytransportnotsecured": {
+      "hash": "ba724f23323400c86fa8d040c0721ecf812622689365f65a1dcdc9f704334d08",
+      "last_checked": "2025-12-20T20:26:43.516155",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b71c69ead7635ff3c2e6ae5baca0f43e\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/accessorytransportnotsecured.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingerror/nomatchingaccessoryscanrequest.json": {
+      "hash": "2a49c230f84311c759361753fdfa745579076cff4e187fc1085015c7534ca052",
+      "last_checked": "2025-12-20T20:26:43.651760",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2c94c3848df2072887e0efe6847d1da7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/nomatchingaccessoryscanrequest.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingerror/nomatchingaccessoryscanrequest": {
+      "hash": "2a49c230f84311c759361753fdfa745579076cff4e187fc1085015c7534ca052",
+      "last_checked": "2025-12-20T20:26:43.651814",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2c94c3848df2072887e0efe6847d1da7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingerror/nomatchingaccessoryscanrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/undetermined.json": {
+      "hash": "b29bc180d7c5a35f164be9dcbce55e5f1387db88fc03a474278c969ec85533cc",
+      "last_checked": "2025-12-20T20:26:43.797742",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"142b12dff83df64636973790f74fc379\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/undetermined.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/undetermined": {
+      "hash": "b29bc180d7c5a35f164be9dcbce55e5f1387db88fc03a474278c969ec85533cc",
+      "last_checked": "2025-12-20T20:26:43.797781",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"142b12dff83df64636973790f74fc379\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/undetermined.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/denied.json": {
+      "hash": "46b5810cc3e54e338a869bb4485f2f0172d41372afc712439553af25c0a179b6",
+      "last_checked": "2025-12-20T20:26:43.940645",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"df1c3a778857ae8a3c094a514bfaf1e7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/denied.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/denied": {
+      "hash": "46b5810cc3e54e338a869bb4485f2f0172d41372afc712439553af25c0a179b6",
+      "last_checked": "2025-12-20T20:26:43.940682",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"df1c3a778857ae8a3c094a514bfaf1e7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/denied.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/asktoshare.json": {
+      "hash": "47d939e87dd6f82e6515b68fdb8a3e319a4387334df216d9c7aae6f51b30f7e6",
+      "last_checked": "2025-12-20T20:26:44.068927",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1d5ca7a6bfd32ece32a59be2aac46247\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/asktoshare.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/asktoshare": {
+      "hash": "47d939e87dd6f82e6515b68fdb8a3e319a4387334df216d9c7aae6f51b30f7e6",
+      "last_checked": "2025-12-20T20:26:44.068963",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1d5ca7a6bfd32ece32a59be2aac46247\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/asktoshare.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/automatic.json": {
+      "hash": "7d01fe24e6f1e6c4e6a62f15f88f1dc815e00e27fd8872a88cb62f1761c08ce8",
+      "last_checked": "2025-12-20T20:26:44.192806",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"58beea50ad185322940f8403850bbf7c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/automatic.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingcontroller/authorizationstate/automatic": {
+      "hash": "7d01fe24e6f1e6c4e6a62f15f88f1dc815e00e27fd8872a88cb62f1761c08ce8",
+      "last_checked": "2025-12-20T20:26:44.192853",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"58beea50ad185322940f8403850bbf7c\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingcontroller/authorizationstate/automatic.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/id-swift.typealias.json": {
+      "hash": "d7f544746ef9bd6b5fee905d3f918256c4d3a20649bef4fc4fa19b3e0816843b",
+      "last_checked": "2025-12-20T20:26:44.336426",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e006a35cb6abc06abe8788b29c73de56\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/id-swift.typealias": {
+      "hash": "d7f544746ef9bd6b5fee905d3f918256c4d3a20649bef4fc4fa19b3e0816843b",
+      "last_checked": "2025-12-20T20:26:44.336470",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e006a35cb6abc06abe8788b29c73de56\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/id-swift.property.json": {
+      "hash": "c578026bbf005dcaacb1b9e63a733e2422b7a9d99d460e1f025649d256c78dd0",
+      "last_checked": "2025-12-20T20:26:44.454024",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dc763e95afe21fdcb7172e11b3e2c222\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/id-swift.property": {
+      "hash": "c578026bbf005dcaacb1b9e63a733e2422b7a9d99d460e1f025649d256c78dd0",
+      "last_checked": "2025-12-20T20:26:44.454067",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dc763e95afe21fdcb7172e11b3e2c222\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/networks.json": {
+      "hash": "41a4359c380ecf16af06a5d135087eeb1bb5a328b67a863a40c6e4fa22010670",
+      "last_checked": "2025-12-20T20:26:44.614124",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"20638f7ddd79ce384ef3ee8f1a2eeb54\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/networks.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/networks": {
+      "hash": "41a4359c380ecf16af06a5d135087eeb1bb5a328b67a863a40c6e4fa22010670",
+      "last_checked": "2025-12-20T20:26:44.614170",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"20638f7ddd79ce384ef3ee8f1a2eeb54\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/networks.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/networksupdatecounter.json": {
+      "hash": "d4d99c0859e8172e43a5dbf7311c28855a47e3a97f3c087f6702b66931b4da01",
+      "last_checked": "2025-12-20T20:26:44.709601",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b139d19feeefe8fe3a74153faa55cb5d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/networksupdatecounter.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/networksupdatecounter": {
+      "hash": "d4d99c0859e8172e43a5dbf7311c28855a47e3a97f3c087f6702b66931b4da01",
+      "last_checked": "2025-12-20T20:26:44.709637",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b139d19feeefe8fe3a74153faa55cb5d\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/networksupdatecounter.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/newshareablenetworkavailable.json": {
+      "hash": "c5f81f20cdf387fc6d06027ba4403e5bec8abeb518b9e9fbaa6689740423cb07",
+      "last_checked": "2025-12-20T20:26:44.857377",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"583e817c2afc6c42ae42c8902880f86f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/newshareablenetworkavailable.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/newshareablenetworkavailable": {
+      "hash": "c5f81f20cdf387fc6d06027ba4403e5bec8abeb518b9e9fbaa6689740423cb07",
+      "last_checked": "2025-12-20T20:26:44.857430",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"583e817c2afc6c42ae42c8902880f86f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/newshareablenetworkavailable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/apprequestedsharing.json": {
+      "hash": "2fd7618a1ba939af6a8683b4ae5dbcbc8c3355444fcf509e35823f0671ea2a6e",
+      "last_checked": "2025-12-20T20:26:44.984823",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"31526bcccc235a8084200cc58c5a9e38\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/apprequestedsharing.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/apprequestedsharing": {
+      "hash": "2fd7618a1ba939af6a8683b4ae5dbcbc8c3355444fcf509e35823f0671ea2a6e",
+      "last_checked": "2025-12-20T20:26:44.984865",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"31526bcccc235a8084200cc58c5a9e38\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/apprequestedsharing.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/timestamp.json": {
+      "hash": "ade6179804a3ca16bbfc7a08067280ee17f94e1d96a7eaa6b114b34e619606d8",
+      "last_checked": "2025-12-20T20:26:45.132758",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e112b9df813f91dd70886510eabfd329\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/timestamp.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/timestamp": {
+      "hash": "ade6179804a3ca16bbfc7a08067280ee17f94e1d96a7eaa6b114b34e619606d8",
+      "last_checked": "2025-12-20T20:26:45.132796",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"e112b9df813f91dd70886510eabfd329\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/timestamp.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/description.json": {
+      "hash": "2717276f747aca76acd42038370d5212130b62e0a99e9a3c64039862d0e51175",
+      "last_checked": "2025-12-20T20:26:45.253581",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"626bf57d4bab4b156f9f4a77b009ab20\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/description.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/networkevent/description": {
+      "hash": "2717276f747aca76acd42038370d5212130b62e0a99e9a3c64039862d0e51175",
+      "last_checked": "2025-12-20T20:26:45.253616",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"626bf57d4bab4b156f9f4a77b009ab20\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/networkevent/description.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/id-swift.property.json": {
+      "hash": "3048538cd163fd2ad3b792f221180dca89192d10f80e9392f53c07955f70f42a",
+      "last_checked": "2025-12-20T20:26:45.376521",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"5ca5bebd1e6c75b8a18c9aa8c7b894b6\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/id-swift.property": {
+      "hash": "3048538cd163fd2ad3b792f221180dca89192d10f80e9392f53c07955f70f42a",
+      "last_checked": "2025-12-20T20:26:45.376568",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"5ca5bebd1e6c75b8a18c9aa8c7b894b6\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/id-swift.struct.json": {
+      "hash": "62240e166fed08e8a644bc2611705b9f246f175a1bdbc04a30bdf89aa8ccb65c",
+      "last_checked": "2025-12-20T20:26:45.509731",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"cfabf1f11ccf2f48f3f7b04616d42bb0\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/id-swiftstruct.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/id-swift.struct": {
+      "hash": "62240e166fed08e8a644bc2611705b9f246f175a1bdbc04a30bdf89aa8ccb65c",
+      "last_checked": "2025-12-20T20:26:45.509777",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"cfabf1f11ccf2f48f3f7b04616d42bb0\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/id-swiftstruct.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/ssid.json": {
+      "hash": "cbefb23c0c969f4d2136b97b54c53cb6a837c1dd90bdcb0398b89c9ee52b7d33",
+      "last_checked": "2025-12-20T20:26:45.634079",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1bb8bea9352b53a11a1e5b7f384e25cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/ssid.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/ssid": {
+      "hash": "cbefb23c0c969f4d2136b97b54c53cb6a837c1dd90bdcb0398b89c9ee52b7d33",
+      "last_checked": "2025-12-20T20:26:45.634122",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1bb8bea9352b53a11a1e5b7f384e25cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/ssid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/isssidbroadcast.json": {
+      "hash": "27ac2220e35fd5f36d34f4c9adf6ac893641197ae765170ec5a4394b5497f5e2",
+      "last_checked": "2025-12-20T20:26:45.760400",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6e7286127ba8cb7130b542d07f0ab359\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/isssidbroadcast.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/isssidbroadcast": {
+      "hash": "27ac2220e35fd5f36d34f4c9adf6ac893641197ae765170ec5a4394b5497f5e2",
+      "last_checked": "2025-12-20T20:26:45.760441",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6e7286127ba8cb7130b542d07f0ab359\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/isssidbroadcast.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.property.json": {
+      "hash": "01c3d43a76ee4f5a67c6c243cbbe2fa4331f079634c28034d021a38ba9bc33bd",
+      "last_checked": "2025-12-20T20:26:45.899345",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"7ecce0e5001b6e6104c2e9391cf6cf85\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.property": {
+      "hash": "01c3d43a76ee4f5a67c6c243cbbe2fa4331f079634c28034d021a38ba9bc33bd",
+      "last_checked": "2025-12-20T20:26:45.899393",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"7ecce0e5001b6e6104c2e9391cf6cf85\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum.json": {
+      "hash": "d4e29b55a4da24cbbdd24a805c50d75892a78122d15d18007ef4b6027fe3eecc",
+      "last_checked": "2025-12-20T20:26:46.027423",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"47a4bd4dd26113b8e5b3ff828ab33525\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swiftenum.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum": {
+      "hash": "d4e29b55a4da24cbbdd24a805c50d75892a78122d15d18007ef4b6027fe3eecc",
+      "last_checked": "2025-12-20T20:26:46.027467",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"47a4bd4dd26113b8e5b3ff828ab33525\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swiftenum.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.property.json": {
+      "hash": "90f344d3c1bc28af53a4a689cb0fb4fe6413bede32060c2761d39fde51a373ef",
+      "last_checked": "2025-12-20T20:26:46.148456",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"c9aef6df8202cd41308c960f189f7a8f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.property": {
+      "hash": "90f344d3c1bc28af53a4a689cb0fb4fe6413bede32060c2761d39fde51a373ef",
+      "last_checked": "2025-12-20T20:26:46.148503",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"c9aef6df8202cd41308c960f189f7a8f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum.json": {
+      "hash": "efa18702e76742be054570c723ecbddac6b5e6bf69c2da87a175e94418564eb1",
+      "last_checked": "2025-12-20T20:26:46.259451",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"247c7b94045bea547aa23812ee03cb13\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swiftenum.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum": {
+      "hash": "efa18702e76742be054570c723ecbddac6b5e6bf69c2da87a175e94418564eb1",
+      "last_checked": "2025-12-20T20:26:46.259496",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"247c7b94045bea547aa23812ee03cb13\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swiftenum.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.property.json": {
+      "hash": "ae857e6b041f8e13355d240999435558a9a6c21f3d0366bde3b4824f68eba81a",
+      "last_checked": "2025-12-20T20:26:46.388647",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2be21a2a418af92d9a5ae53fef290bad\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.property": {
+      "hash": "ae857e6b041f8e13355d240999435558a9a6c21f3d0366bde3b4824f68eba81a",
+      "last_checked": "2025-12-20T20:26:46.388704",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"2be21a2a418af92d9a5ae53fef290bad\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct.json": {
+      "hash": "84c50930a7b5fff6076797e9e4089e2f386f6802007f2bc3443fb7763efe9947",
+      "last_checked": "2025-12-20T20:26:46.540835",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"bdaf4d76614ed9686edf653ad1e6ffbe\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swiftstruct.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct": {
+      "hash": "84c50930a7b5fff6076797e9e4089e2f386f6802007f2bc3443fb7763efe9947",
+      "last_checked": "2025-12-20T20:26:46.540885",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"bdaf4d76614ed9686edf653ad1e6ffbe\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swiftstruct.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/lastmodified.json": {
+      "hash": "199a67c04ddc835d5eb8fd921a053d442be81fa22dbe96b56a7e8cb1ca3175bb",
+      "last_checked": "2025-12-20T20:26:46.654830",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dae3f7237d182a49c08bbb2e847d5b25\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/lastmodified.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/lastmodified": {
+      "hash": "199a67c04ddc835d5eb8fd921a053d442be81fa22dbe96b56a7e8cb1ca3175bb",
+      "last_checked": "2025-12-20T20:26:46.654878",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"dae3f7237d182a49c08bbb2e847d5b25\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/lastmodified.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/firstshared.json": {
+      "hash": "d7a1dd65f337ec4be12b422a587a657a2725f064aa7f72c449a8ceea1f00cb99",
+      "last_checked": "2025-12-20T20:26:46.810995",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"54e8ed00cf33053fe02033621d8c73db\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/firstshared.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/firstshared": {
+      "hash": "d7a1dd65f337ec4be12b422a587a657a2725f064aa7f72c449a8ceea1f00cb99",
+      "last_checked": "2025-12-20T20:26:46.811036",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"54e8ed00cf33053fe02033621d8c73db\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/firstshared.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/description.json": {
+      "hash": "95c32f64e33ac73b6120b7758ab9f52213f2af2c4092bb6171691e3de991644c",
+      "last_checked": "2025-12-20T20:26:46.974877",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"303f14b5255e64061bc460d480e4c6a7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/description.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/description": {
+      "hash": "95c32f64e33ac73b6120b7758ab9f52213f2af2c4092bb6171691e3de991644c",
+      "last_checked": "2025-12-20T20:26:46.974915",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"303f14b5255e64061bc460d480e4c6a7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/description.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest/id-swift.typealias.json": {
+      "hash": "553c0022fae68882e3c5cb14983a79e4900a92a89966efbe1717cf40e05b1d81",
+      "last_checked": "2025-12-20T20:26:47.059295",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"28922b77517ac700058bd75acfe0ccd9\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest/id-swift.typealias": {
+      "hash": "553c0022fae68882e3c5cb14983a79e4900a92a89966efbe1717cf40e05b1d81",
+      "last_checked": "2025-12-20T20:26:47.059334",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"28922b77517ac700058bd75acfe0ccd9\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest/id-swift.property.json": {
+      "hash": "9acc9e98415d99a7cffdc78c53f11f97b3f705cb751e69fff4d572b6cd0be501",
+      "last_checked": "2025-12-20T20:26:47.183282",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"fa6c5d762fa3f3c6086e90d4b37193f2\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanrequest/id-swift.property": {
+      "hash": "9acc9e98415d99a7cffdc78c53f11f97b3f705cb751e69fff4d572b6cd0be501",
+      "last_checked": "2025-12-20T20:26:47.183327",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"fa6c5d762fa3f3c6086e90d4b37193f2\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanrequest/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/id-swift.typealias.json": {
+      "hash": "b5415334da7d0763eb8d9f80b35c135d8543c745e15968e05b7a7bb543aef93b",
+      "last_checked": "2025-12-20T20:26:47.310988",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"30a2a74f05fdf8a98156cda7c10fdcc3\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/id-swift.typealias": {
+      "hash": "b5415334da7d0763eb8d9f80b35c135d8543c745e15968e05b7a7bb543aef93b",
+      "last_checked": "2025-12-20T20:26:47.311030",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"30a2a74f05fdf8a98156cda7c10fdcc3\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/id-swifttypealias.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/id-swift.property.json": {
+      "hash": "f712a5d6176625e0410b84f299f343e982cbca5f4f4e9473633e7d47f82aa511",
+      "last_checked": "2025-12-20T20:26:47.436000",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"509b171414da3ff88a440fe31444ed61\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/id-swift.property": {
+      "hash": "f712a5d6176625e0410b84f299f343e982cbca5f4f4e9473633e7d47f82aa511",
+      "last_checked": "2025-12-20T20:26:47.436051",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"509b171414da3ff88a440fe31444ed61\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/id-swiftproperty.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/scanrequest.json": {
+      "hash": "b8d53e512e1d38c415e13d17374753568480ae524768674d579fb735b5c3a1cf",
+      "last_checked": "2025-12-20T20:26:47.545539",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d91be691e44dcd099d8b5abf218c7590\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/scanrequest.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/scanrequest": {
+      "hash": "b8d53e512e1d38c415e13d17374753568480ae524768674d579fb735b5c3a1cf",
+      "last_checked": "2025-12-20T20:26:47.545583",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d91be691e44dcd099d8b5abf218c7590\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/scanrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/results.json": {
+      "hash": "2c63f0e368796a8bc8a9825fc8bc47c935146800cfa06de262dadaefdcdc973c",
+      "last_checked": "2025-12-20T20:26:47.678215",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"26c863931255524549b8f6673d2f47b5\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/results.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/results": {
+      "hash": "2c63f0e368796a8bc8a9825fc8bc47c935146800cfa06de262dadaefdcdc973c",
+      "last_checked": "2025-12-20T20:26:47.678256",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"26c863931255524549b8f6673d2f47b5\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/results.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/init(scanrequest:results:).json": {
+      "hash": "efd2f4d4347b582a95eee68ebf62de125ad640325952967fb94b8acfb8a3480c",
+      "last_checked": "2025-12-20T20:26:47.798894",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a024853de9e864516ae2fe4692daa67a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/init-scanrequestresults.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresponse/init(scanrequest:results:)": {
+      "hash": "efd2f4d4347b582a95eee68ebf62de125ad640325952967fb94b8acfb8a3480c",
+      "last_checked": "2025-12-20T20:26:47.798936",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a024853de9e864516ae2fe4692daa67a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresponse/init-scanrequestresults.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/ssid.json": {
+      "hash": "b5816fd3c7959b6bc3cffc858169c5c257982f7bff9e79d5eb3607a878149b12",
+      "last_checked": "2025-12-20T20:26:47.916007",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b0dc5a7941917f5d3a40f84fe3cff3ad\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/ssid.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/ssid": {
+      "hash": "b5816fd3c7959b6bc3cffc858169c5c257982f7bff9e79d5eb3607a878149b12",
+      "last_checked": "2025-12-20T20:26:47.916042",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b0dc5a7941917f5d3a40f84fe3cff3ad\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/ssid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/signalstrength.json": {
+      "hash": "b7e6c5ceca5554aaa0e6865d28eaa7bb0b362ec839f3abf4b6916fa8953f2e3f",
+      "last_checked": "2025-12-20T20:26:48.156934",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d4e3161d2ab12b49b5615c3268f50a34\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/signalstrength.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/signalstrength": {
+      "hash": "b7e6c5ceca5554aaa0e6865d28eaa7bb0b362ec839f3abf4b6916fa8953f2e3f",
+      "last_checked": "2025-12-20T20:26:48.156974",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"d4e3161d2ab12b49b5615c3268f50a34\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/signalstrength.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/isconnected.json": {
+      "hash": "f9903c05b6a1d627dfeab9399e5adc03b7b9682a9868091235891a29a154cb2d",
+      "last_checked": "2025-12-20T20:26:48.233527",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b5198518c041b35c1329b16db8a0de06\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/isconnected.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/isconnected": {
+      "hash": "f9903c05b6a1d627dfeab9399e5adc03b7b9682a9868091235891a29a154cb2d",
+      "last_checked": "2025-12-20T20:26:48.233563",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"b5198518c041b35c1329b16db8a0de06\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/isconnected.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/init(ssid:signalstrength:isconnected:).json": {
+      "hash": "7163d9e4c756bbff67fad7c5349b7fe989836287c8b154b6d8db360e9ab2c594",
+      "last_checked": "2025-12-20T20:26:48.387200",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f38b253c6b17bb9fd4372c9363859ddf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/init-ssidsignalstrengthisconnected.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/accessoryscanresult/init(ssid:signalstrength:isconnected:)": {
+      "hash": "7163d9e4c756bbff67fad7c5349b7fe989836287c8b154b6d8db360e9ab2c594",
+      "last_checked": "2025-12-20T20:26:48.387242",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f38b253c6b17bb9fd4372c9363859ddf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/accessoryscanresult/init-ssidsignalstrengthisconnected.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/open.json": {
+      "hash": "b6fef14e2af227d4fede7c77c7399e45034b2365ec4fd19f730b77239d0ba429",
+      "last_checked": "2025-12-20T20:26:48.518067",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"3657526477089e1ac7f32229acdb8d1a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/open.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/open": {
+      "hash": "b6fef14e2af227d4fede7c77c7399e45034b2365ec4fd19f730b77239d0ba429",
+      "last_checked": "2025-12-20T20:26:48.518113",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"3657526477089e1ac7f32229acdb8d1a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/open.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/owe.json": {
+      "hash": "32afb6d82a25d70fa2c98476e06dfb67df6cad6daf16e3aeb24a478cfb811906",
+      "last_checked": "2025-12-20T20:26:48.614051",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0bcd0642e4553ee854baaf2596479400\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/owe.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/owe": {
+      "hash": "32afb6d82a25d70fa2c98476e06dfb67df6cad6daf16e3aeb24a478cfb811906",
+      "last_checked": "2025-12-20T20:26:48.614085",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0bcd0642e4553ee854baaf2596479400\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/owe.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wep.json": {
+      "hash": "cf4b112097f229df37bb88c9ef0d4edfb99ed04b035fc32a0ad4e745c7b4b2ad",
+      "last_checked": "2025-12-20T20:26:48.760757",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0773089b6a61591aca9012b39a5fda8b\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wep.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wep": {
+      "hash": "cf4b112097f229df37bb88c9ef0d4edfb99ed04b035fc32a0ad4e745c7b4b2ad",
+      "last_checked": "2025-12-20T20:26:48.760793",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"0773089b6a61591aca9012b39a5fda8b\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wep.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa.json": {
+      "hash": "7cc5d050325d84ec44bf28c24eae1677286abd23e6bfcd47118d65815589c179",
+      "last_checked": "2025-12-20T20:26:48.980380",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a32464f93f9ba19f173d72cf1da190c1\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa": {
+      "hash": "7cc5d050325d84ec44bf28c24eae1677286abd23e6bfcd47118d65815589c179",
+      "last_checked": "2025-12-20T20:26:48.980414",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a32464f93f9ba19f173d72cf1da190c1\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa2.json": {
+      "hash": "9ddacffb058a8b4a139f04f100d1774ac11b96cc6abf45c81b681d8473cd6738",
+      "last_checked": "2025-12-20T20:26:49.061818",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"54e95778011743bdfc2ff0eaea60224a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa2.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa2": {
+      "hash": "9ddacffb058a8b4a139f04f100d1774ac11b96cc6abf45c81b681d8473cd6738",
+      "last_checked": "2025-12-20T20:26:49.061863",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"54e95778011743bdfc2ff0eaea60224a\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa2.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa3.json": {
+      "hash": "cd8995c8bec0cbd1954245d6455d80fec5e9a4529c938b44bb03ea13cf07e004",
+      "last_checked": "2025-12-20T20:26:49.192581",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"4dca8bff117ce358f48b2824d81035ed\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa3.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa3": {
+      "hash": "cd8995c8bec0cbd1954245d6455d80fec5e9a4529c938b44bb03ea13cf07e004",
+      "last_checked": "2025-12-20T20:26:49.192629",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"4dca8bff117ce358f48b2824d81035ed\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/securitypolicy-swift.enum/wpa3.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/none.json": {
+      "hash": "95b61e390a6e3b9165d9c45a4bf9e53386dd39fff47e555d15d40dfedcfbed90",
+      "last_checked": "2025-12-20T20:26:49.294516",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a67b475e125101f1d73cecead3c68e1f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/none.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/none": {
+      "hash": "95b61e390a6e3b9165d9c45a4bf9e53386dd39fff47e555d15d40dfedcfbed90",
+      "last_checked": "2025-12-20T20:26:49.294565",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"a67b475e125101f1d73cecead3c68e1f\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/none.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/password(_:).json": {
+      "hash": "e235d392e5c1c3ba2663f2ca4a9f218914153025746f4430cc41fbde54d1dea4",
+      "last_checked": "2025-12-20T20:26:49.431236",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6975dee48e69a13af2dd63c9a19a0e75\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/password.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/password(_:)": {
+      "hash": "e235d392e5c1c3ba2663f2ca4a9f218914153025746f4430cc41fbde54d1dea4",
+      "last_checked": "2025-12-20T20:26:49.431277",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"6975dee48e69a13af2dd63c9a19a0e75\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/password.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/description.json": {
+      "hash": "35471199acf1aaf860367a53164754ee4414ff1cea8eead9db9aed15d210187d",
+      "last_checked": "2025-12-20T20:26:49.555805",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f7112dd19d27d216bce293be273ebba1\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/description.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/credentials-swift.enum/description": {
+      "hash": "35471199acf1aaf860367a53164754ee4414ff1cea8eead9db9aed15d210187d",
+      "last_checked": "2025-12-20T20:26:49.555852",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"f7112dd19d27d216bce293be273ebba1\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/credentials-swift.enum/description.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/description.json": {
+      "hash": "b01921e0505051140dd44e2921ae11e74ef1ae232e348efe6c6f7d33c75c0c3a",
+      "last_checked": "2025-12-20T20:26:49.688426",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"998767f608aeaa5de1f38fd36fcce2cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/description.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/description": {
+      "hash": "b01921e0505051140dd44e2921ae11e74ef1ae232e348efe6c6f7d33c75c0c3a",
+      "last_checked": "2025-12-20T20:26:49.688467",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"998767f608aeaa5de1f38fd36fcce2cf\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/description.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/userenteredformvalues.json": {
+      "hash": "5c0ba4836048a443d26193121c3505e2f0af4263bd877ae3f28d97a0896c723f",
+      "last_checked": "2025-12-20T20:26:49.772006",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1816b7f15bdd5d41b641f3e1caf0cdb7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/userenteredformvalues.md"
+    },
+    "https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/userenteredformvalues": {
+      "hash": "5c0ba4836048a443d26193121c3505e2f0af4263bd877ae3f28d97a0896c723f",
+      "last_checked": "2025-12-20T20:26:49.772056",
+      "status": "new",
+      "session_id": "2025-12-20T20:26:37.351720",
+      "etag": "W/\"1816b7f15bdd5d41b641f3e1caf0cdb7\"",
+      "file_path": "documentation/WiFiInfrastructure/winetworksharingprovider/network/captiveportallogin-swift.struct/userenteredformvalues.md"
+    }
+  }
+}

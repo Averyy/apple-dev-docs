@@ -31,6 +31,8 @@ Use this option to request that the system notify an interrupted app that the in
 ### Getting Standard  Options
 - [static var notifyOthersOnDeactivation: AVAudioSession.SetActiveOptions](avaudiosession/setactiveoptions/notifyothersondeactivation.md)
   An option that indicates that the system should notify other apps that you’ve deactivated your app’s audio session.
+- [var AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation: Int](avaudiosessionsetactiveflags_notifyothersondeactivation.md)
+  A flag that indicates that when your audio session deactivates, any audio sessions that your audio session interrupted can reactivate themselves.
 
 ## Relationships
 

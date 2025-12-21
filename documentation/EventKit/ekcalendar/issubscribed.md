@@ -21,7 +21,7 @@ var isSubscribed: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar is a subscribed calendar; otherwise it is not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the calendar is a subscribed calendar; otherwise it is not.
 
 ## See Also
 

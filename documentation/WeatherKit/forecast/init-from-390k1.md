@@ -21,8 +21,6 @@ init(from decoder: any Decoder) throws
 ## See Also
 
 - [init(from: any Decoder) throws](forecast/init(from:)-4wobg.md)
-- [init(from: any Decoder) throws](forecast/init(from:)-51k1n.md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

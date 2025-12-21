@@ -41,18 +41,18 @@ The I-beam cursor. This is the cursor that you’re used to seeing over editable
   Returns a cursor indicating that the current operation will result in a copy action.
 - [class var dragLink: NSCursor](nscursor/draglink.md)
   Returns a cursor indicating that the current operation will result in a link action.
+- [class var iBeamCursorForVerticalLayout: NSCursor](nscursor/ibeamcursorforverticallayout.md)
+  Returns the cursor for editing vertical layout text.
 - [class var openHand: NSCursor](nscursor/openhand.md)
   Returns the open-hand system cursor.
 - [class var operationNotAllowed: NSCursor](nscursor/operationnotallowed.md)
   Returns the operation not allowed cursor.
 - [class var pointingHand: NSCursor](nscursor/pointinghand.md)
   Returns the pointing-hand system cursor.
-- [class var resizeDown: NSCursor](nscursor/resizedown.md)
-  Returns the resize-down system cursor.
-- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
-  Returns the resize-left system cursor.
-- [class var resizeLeftRight: NSCursor](nscursor/resizeleftright.md)
-  Returns the resize-left-and-right system cursor.
+- [class var zoomIn: NSCursor](nscursor/zoomin.md)
+  Returns the zoom-in cursor.
+- [class var zoomOut: NSCursor](nscursor/zoomout.md)
+  Returns the zoom-out cursor.
 
 
 ---

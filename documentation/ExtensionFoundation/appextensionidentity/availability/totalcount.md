@@ -3,7 +3,7 @@
 **Framework**: ExtensionFoundation  
 **Kind**: property
 
-The total number of installed extensions that the current app can host.
+The number of extensions not yet approved for hosting by the current app.
 
 **Availability**:
 - macOS 13.0+
@@ -23,7 +23,7 @@ var totalCount: Int { get }
 - [let enabledCount: Int](appextensionidentity/availability/enabledcount.md)
   The number of extensions enabled for hostng in the current app.
 - [let unapprovedCount: Int](appextensionidentity/availability/unapprovedcount.md)
-  The number of extensions not yet approved for hosting by the current app.
+  The number of extensions not yet approved for hosing by the current app
 
 
 ---

@@ -22,7 +22,7 @@ func isOperatingSystemAtLeast(_ version: OperatingSystemVersion) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operating system on which the process is executing is the same or later than the given version; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operating system on which the process is executing is the same or later than the given version; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -40,8 +40,12 @@ This method accounts for major, minor, and update versions of the operating syst
   A string containing the version of the operating system on which the process is executing.
 - [var operatingSystemVersion: OperatingSystemVersion](processinfo/operatingsystemversion.md)
   The version of the operating system on which the process is executing.
+- [struct OperatingSystemVersion](operatingsystemversion.md)
+  A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers.
 - [func operatingSystem() -> Int](processinfo/operatingsystem.md)
   Returns a constant to indicate the operating system on which the process is executing.
+- [Anonymous](1552984-anonymous.md)
+  The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
 - [func operatingSystemName() -> String](processinfo/operatingsystemname.md)
   Returns a string containing the name of the operating system on which the process is executing.
 

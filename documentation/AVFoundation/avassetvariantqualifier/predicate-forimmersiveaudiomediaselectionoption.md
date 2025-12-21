@@ -35,24 +35,28 @@ Use the returned value, along with other predicates, to express variant preferen
 
 ## See Also
 
-- [convenience init(variant: AVAssetVariant)](avassetvariantqualifier/init(variant:).md)
-  Creates a variant qualifier with an asset variant.
-- [class AVAssetVariant](avassetvariant.md)
-  An object that represents a bit rate variant.
-- [convenience init(predicate: NSPredicate)](avassetvariantqualifier/init(predicate:).md)
-  Creates a variant qualifier with a predicate.
+- [class func predicate(forAudioSampleRate: Double, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:mediaselectionoption:operatortype:).md)
+  Creates a predicate for audio sample rate.
+- [class func predicate(forAudioSampleRate: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:operatortype:).md)
+  Creates a NSPredicate for audio sample rate which can be used with other NSPredicates to express variant preferences.
+- [class func predicate(forBinauralAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:).md)
+  Creates a NSPredicate for binaural which can be used with other NSPredicates to express variant preferences.
+- [class func predicate(forBinauralAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:mediaselectionoption:).md)
+  Creates a predicate for binaural audio.
 - [class func predicate(forChannelCount: Int, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forchannelcount:mediaselectionoption:operatortype:).md)
   Creates a predicate with a channel count, media selection option, and operator type.
+- [class func predicate(forChannelCount: Int, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forchannelcount:operatortype:).md)
+  Creates a NSPredicate for audio channel count which can be used with other NSPredicates to express variant preferences.
+- [class func predicate(forDownmixAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:).md)
+  Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
+- [class func predicate(forDownmixAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:mediaselectionoption:).md)
+  Creates a predicate for downmix audio.
+- [class func predicate(forImmersiveAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forimmersiveaudio:).md)
+  Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
 - [class func predicate(forPresentationHeight: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forpresentationheight:operatortype:).md)
   Creates a predicate with a height and operator type.
 - [class func predicate(forPresentationWidth: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forpresentationwidth:operatortype:).md)
   Creates a predicate with a width and operator type.
-- [class func predicate(forBinauralAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:mediaselectionoption:).md)
-  Creates a predicate for binaural audio.
-- [class func predicate(forDownmixAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:mediaselectionoption:).md)
-  Creates a predicate for downmix audio.
-- [class func predicate(forAudioSampleRate: Double, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:mediaselectionoption:operatortype:).md)
-  Creates a predicate for audio sample rate.
 
 
 ---

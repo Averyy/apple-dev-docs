@@ -16,7 +16,7 @@ func drawLabel(_ shouldTruncateLabel: Bool, in labelRect: NSRect)
 
 #### Discussion
 
-If `shouldTruncateLabel` is [`false`](https://developer.apple.com/documentation/swift/false), draws the full label in the rectangle specified by `tabRect`. If `shouldTruncateLabel` is [`true`](https://developer.apple.com/documentation/swift/true), draws the truncated label. You can override this method to perform customized label drawing. For example, you might want to add an icon to each tab in the view.
+If `shouldTruncateLabel` is [`false`](https://developer.apple.com/documentation/Swift/false), draws the full label in the rectangle specified by `tabRect`. If `shouldTruncateLabel` is [`true`](https://developer.apple.com/documentation/Swift/true), draws the truncated label. You can override this method to perform customized label drawing. For example, you might want to add an icon to each tab in the view.
 
 ## See Also
 

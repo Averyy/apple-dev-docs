@@ -77,7 +77,7 @@ If the user responds to the prompt near the time it was delivered and chooses to
 
 ### Related Documentation
 - [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location at all times.
+  A message that tells people why the app is requesting access to their location at all times.
 
 ## See Also
 
@@ -94,7 +94,7 @@ If the user responds to the prompt near the time it was delivered and chooses to
 - [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 
 
 ---

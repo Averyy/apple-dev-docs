@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-Geometry data for a specific keyframe to use in a moving object.
+Geometry data for a specific keyframe to use in a moving instance.
 
 **Availability**:
 - iOS 15.0+
@@ -21,11 +21,11 @@ class MTLMotionKeyframeData
 
 #### Overview
 
-A [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) object describes the location of geometry data for a keyframe. The exact type of data can vary, depending on which kind of motion descriptor you create. For a [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) object, the buffer data is a list of bounding boxes. For a [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md), the buffer data is a list of vertices.
+An [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) instance describes the location of geometry data for a keyframe. The exact type of data can vary, depending on which kind of motion descriptor you create. For an [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) instance, the buffer data is a list of bounding boxes. For an [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md), the buffer data is a list of vertices.
 
 ## Topics
 
-### Specifying the Keyframe Data
+### Specifying the keyframe data
 - [var buffer: (any MTLBuffer)?](mtlmotionkeyframedata/buffer.md)
   The buffer that holds the geometry data.
 - [var offset: Int](mtlmotionkeyframedata/offset.md)

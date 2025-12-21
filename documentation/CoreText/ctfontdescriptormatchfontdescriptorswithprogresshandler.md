@@ -22,7 +22,7 @@ func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_ descriptors: CFAr
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the system couldn’t start the matching process.
+[`false`](https://developer.apple.com/documentation/Swift/false) if the system couldn’t start the matching process.
 
 #### Discussion
 

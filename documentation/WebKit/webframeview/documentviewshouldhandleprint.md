@@ -17,7 +17,7 @@ var documentViewShouldHandlePrint: Bool { get }
 
 #### Discussion
 
-If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the application terminates its print operation and sends [`printDocumentView()`](webframeview/printdocumentview().md) to the web frame view.
+If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), the application terminates its print operation and sends [`printDocumentView()`](webframeview/printdocumentview().md) to the web frame view.
 
 ## See Also
 

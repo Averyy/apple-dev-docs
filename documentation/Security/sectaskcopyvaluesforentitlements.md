@@ -17,7 +17,7 @@ func SecTaskCopyValuesForEntitlements(_ task: SecTask, _ entitlements: CFArray, 
 
 #### Return Value
 
-A dictionary containing the entitlement names as keys with the corresponding entitlements as the dictionary values, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free this dictionary’s memory when you are done with it.
+A dictionary containing the entitlement names as keys with the corresponding entitlements as the dictionary values, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this dictionary’s memory when you are done with it.
 
 ## Parameters
 

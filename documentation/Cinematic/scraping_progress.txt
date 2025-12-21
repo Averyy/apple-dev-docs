@@ -1,4 +1,4 @@
 Completed scraping Cinematic!
-Total pages scraped: 0
-Pages skipped (unchanged): 204
+Total pages scraped: 204
+Pages skipped (unchanged): 1
 Pages failed: 0

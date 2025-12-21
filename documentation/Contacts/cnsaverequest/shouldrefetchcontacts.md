@@ -20,7 +20,7 @@ var shouldRefetchContacts: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), so the save request refetches added and updated contacts. Set to [`false`](https://developer.apple.com/documentation/swift/false) to suppress the refetch behavior and reduce the save request’s execution time.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), so the save request refetches added and updated contacts. Set to [`false`](https://developer.apple.com/documentation/Swift/false) to suppress the refetch behavior and reduce the save request’s execution time.
 
 ## See Also
 

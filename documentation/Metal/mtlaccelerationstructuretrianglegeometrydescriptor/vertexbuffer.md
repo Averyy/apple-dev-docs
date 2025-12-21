@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A buffer  that contains vertex data.
+A buffer that contains vertex data.
 
 **Availability**:
 - iOS 14.0+
@@ -21,10 +21,12 @@ var vertexBuffer: (any MTLBuffer)? { get set }
 
 #### Discussion
 
-You must set a vertex buffer before creating the acceleration structure. Each vertex must have at least 12 bytes of position data, stored as a [`MTLPackedFloat3`](mtlpackedfloat3-swift.typealias.md) containing the X, Y, and Z position.
+The [`vertexFormat`](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md) property defines the format of each vertex position in the buffer. You need to set a vertex buffer before creating the acceleration structure.
 
 ## See Also
 
+- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+  The format of each vertex position in the vertex buffer property.
 - [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
 - [var vertexStride: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexstride.md)

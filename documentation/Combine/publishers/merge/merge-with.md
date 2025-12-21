@@ -1,9 +1,7 @@
-# merge(with:_:_:_:_:_:_:)
+# merge(with:_:_:_:_:_:)
 
 **Framework**: Combine  
 **Kind**: method
-
-Combines elements from this publisher with those from seven other publishers, delivering an interleaved sequence of elements.
 
 **Availability**:
 - iOS 13.0+
@@ -17,88 +15,18 @@ Combines elements from this publisher with those from seven other publishers, de
 ## Declaration
 
 ```swift
-func merge<B, C, D, E, F, G, H>(with b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H) -> Publishers.Merge8<Self, B, C, D, E, F, G, H> where B : Publisher, C : Publisher, D : Publisher, E : Publisher, F : Publisher, G : Publisher, H : Publisher, Self.Failure == B.Failure, Self.Output == B.Output, B.Failure == C.Failure, B.Output == C.Output, C.Failure == D.Failure, C.Output == D.Output, D.Failure == E.Failure, D.Output == E.Output, E.Failure == F.Failure, E.Output == F.Output, F.Failure == G.Failure, F.Output == G.Output, G.Failure == H.Failure, G.Output == H.Output
+func merge<Z, Y, X, W, V, U>(with z: Z, _ y: Y, _ x: X, _ w: W, _ v: V, _ u: U) -> Publishers.Merge8<A, B, Z, Y, X, W, V, U> where Z : Publisher, Y : Publisher, X : Publisher, W : Publisher, V : Publisher, U : Publisher, B.Failure == Z.Failure, B.Output == Z.Output, Z.Failure == Y.Failure, Z.Output == Y.Output, Y.Failure == X.Failure, Y.Output == X.Output, X.Failure == W.Failure, X.Output == W.Output, W.Failure == V.Failure, W.Output == V.Output, V.Failure == U.Failure, V.Output == U.Output
 ```
-
-#### Return Value
-
-A publisher that emits an event when any upstream publisher emits an event.
-
-#### Discussion
-
-Use [`merge(with:_:_:_:_:_:_:)`](publisher/merge(with:_:_:_:_:_:_:).md) when you want to receive a new element whenever any of the upstream publishers emits an element. To receive tuples of the most-recent value from all the upstream publishers whenever any of them emit a value, use [`combineLatest(_:_:_:)`](publisher/combinelatest(_:_:_:)-48buc.md). To combine elements from multiple upstream publishers, use [`zip(_:_:_:)`](publisher/zip(_:_:_:)-16rcy.md).
-
-In this example, as [`merge(with:_:_:_:_:_:_:)`](publisher/merge(with:_:_:_:_:_:_:).md) receives input from the upstream publishers, it republishes the interleaved elements to the downstream:
-
-```swift
-let pubA = PassthroughSubject<Int, Never>()
-let pubB = PassthroughSubject<Int, Never>()
-let pubC = PassthroughSubject<Int, Never>()
-let pubD = PassthroughSubject<Int, Never>()
-let pubE = PassthroughSubject<Int, Never>()
-let pubF = PassthroughSubject<Int, Never>()
-let pubG = PassthroughSubject<Int, Never>()
-let pubH = PassthroughSubject<Int, Never>()
-
-cancellable = pubA
-    .merge(with: pubB, pubC, pubD, pubE, pubF, pubG, pubH)
-    .sink { print("\($0)", terminator: " " ) }
-
-pubA.send(1)
-pubB.send(40)
-pubC.send(90)
-pubD.send(-1)
-pubE.send(33)
-pubF.send(44)
-pubG.send(54)
-pubH.send(1000)
-
-pubA.send(2)
-pubB.send(50)
-pubC.send(100)
-pubD.send(-2)
-pubE.send(33)
-pubF.send(33)
-pubG.send(54)
-pubH.send(1001)
-
-//Prints: "1 40 90 -1 33 44 54 1000 2 50 100 -2 33 33 54 1001"
-```
-
-The merged publisher continues to emit elements until all upstream publishers finish. If an upstream publisher produces an error, the merged publisher fails with that error.
-
-## Parameters
-
-- `b`: A second publisher.
-- `c`: A third publisher.
-- `d`: A fourth publisher.
-- `e`: A fifth publisher.
-- `f`: A sixth publisher.
-- `g`: A seventh publisher.
-- `h`: An eighth publisher.
 
 ## See Also
 
-- [func merge(with: Self) -> Publishers.MergeMany<Self>](publishers/merge/merge(with:)-9r2dw.md)
-  Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
 - [func merge<P>(with: P) -> Publishers.Merge3<A, B, P>](publishers/merge/merge(with:).md)
-- [func merge<B, C>(with: B, C) -> Publishers.Merge3<Self, B, C>](publishers/merge/merge(with:_:)-1qs5s.md)
-  Combines elements from this publisher with those from two other publishers, delivering an interleaved sequence of elements.
 - [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge4<A, B, Z, Y>](publishers/merge/merge(with:_:).md)
-- [func merge<B, C, D>(with: B, C, D) -> Publishers.Merge4<Self, B, C, D>](publishers/merge/merge(with:_:_:)-7dt5o.md)
-  Combines elements from this publisher with those from three other publishers, delivering an interleaved sequence of elements.
 - [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge5<A, B, Z, Y, X>](publishers/merge/merge(with:_:_:).md)
-- [func merge<B, C, D, E>(with: B, C, D, E) -> Publishers.Merge5<Self, B, C, D, E>](publishers/merge/merge(with:_:_:_:)-33rgx.md)
-  Combines elements from this publisher with those from four other publishers, delivering an interleaved sequence of elements.
 - [func merge<Z, Y, X, W>(with: Z, Y, X, W) -> Publishers.Merge6<A, B, Z, Y, X, W>](publishers/merge/merge(with:_:_:_:).md)
-- [func merge<B, C, D, E, F>(with: B, C, D, E, F) -> Publishers.Merge6<Self, B, C, D, E, F>](publishers/merge/merge(with:_:_:_:_:)-44szr.md)
-  Combines elements from this publisher with those from five other publishers, delivering an interleaved sequence of elements.
 - [func merge<Z, Y, X, W, V>(with: Z, Y, X, W, V) -> Publishers.Merge7<A, B, Z, Y, X, W, V>](publishers/merge/merge(with:_:_:_:_:).md)
-- [func merge<B, C, D, E, F, G>(with: B, C, D, E, F, G) -> Publishers.Merge7<Self, B, C, D, E, F, G>](publishers/merge/merge(with:_:_:_:_:_:)-39jtm.md)
-  Combines elements from this publisher with those from six other publishers, delivering an interleaved sequence of elements.
-- [func merge<Z, Y, X, W, V, U>(with: Z, Y, X, W, V, U) -> Publishers.Merge8<A, B, Z, Y, X, W, V, U>](publishers/merge/merge(with:_:_:_:_:_:).md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/merge/merge(with:_:_:_:_:_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/merge/merge(with:_:_:_:_:_:))*

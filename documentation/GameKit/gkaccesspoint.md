@@ -29,7 +29,7 @@ The access point displays a control in a corner of your game that opens a Game C
 
 Use the [`shared`](gkaccesspoint/shared.md) property to get the shared access point object. GameKit attaches the access point to the window you specify in the [`parentWindow`](gkaccesspoint/parentwindow.md) property, in the corner you specify using the [`location`](gkaccesspoint/location-swift.property.md) property. If you don’t specify a parent window, GameKit infers an appropriate location. For the location of the access point on visionOS, see [`Configure the access point on visionOS`](adding-an-access-point-to-your-game#Configure-the-access-point-on-visionOS.md).
 
-To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Then set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/swift/true) to display the access point control.
+To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Then set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to display the access point control.
 
 ## Topics
 
@@ -72,9 +72,14 @@ To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.m
 ### Instance Methods
 - [func trigger(challengeDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(challengedefinitionid:handler:).md)
   Displays the challenge creation view for the provided challenge definition ID.
+- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivity:handler:)-6lnz8.md)
+- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivity:handler:)-8i6w7.md)
+  Displays the game activity view for the provided activity instance.
 - [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9hemd.md)
   Displays the game activity creation view for the provided activity definition ID.
 - [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9m45r.md)
+- [func triggerForArcade(handler: (() -> Void)?)](gkaccesspoint/triggerforarcade(handler:).md)
+  Brings up the Arcade dashboard.
 - [func triggerForChallenges(handler: (() -> Void)?)](gkaccesspoint/triggerforchallenges(handler:).md)
   Displays the view that allows players to engage each other with challenges.
 - [func triggerForFriending(handler: (() -> Void)?)](gkaccesspoint/triggerforfriending(handler:).md)

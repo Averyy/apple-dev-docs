@@ -35,9 +35,9 @@ python tiny_nerf_mlp.py
 
 ## See Also
 
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Selecting Device Objects for Compute Processing](selecting-device-objects-for-compute-processing.md)
+- [Selecting device objects for compute processing](selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
 - [Customizing a PyTorch operation](customizing-a-pytorch-operation.md)
   Implement a custom operation in PyTorch that uses Metal kernels to improve performance.

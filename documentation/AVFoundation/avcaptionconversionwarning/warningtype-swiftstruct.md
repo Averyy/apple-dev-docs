@@ -19,7 +19,7 @@ struct WarningType
 
 ## Topics
 
-### Warning Types
+### Warning types
 - [static let excessMediaData: AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.struct/excessmediadata.md)
   A type that indicates one or more captions exceed the media data capacity for media of the type and subtype that the conversion settings specify.
 ### Initializers

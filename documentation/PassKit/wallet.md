@@ -6,10 +6,36 @@ Manage tickets, boarding passes, payment cards and other passes in the Wallet ap
 
 #### Overview
 
-To access your pass using PassKit add the Wallet capability to your app. You can choose to access all of the passes that are signed using your developer team identifier, or to access a subset of pass types. For information on adding capabilities to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). For information on signing a pass, see [`Wallet Passes`](https://developer.apple.com/documentation/WalletPasses).
+To access your pass using PassKit, add the Wallet capability to your app. Use the API in Wallet to access and manage different types of passes, including identity passes, payment passes, and digital car keys. You can choose to access all of the passes signed with your developer team identifier, or access a subset of pass types. For information on adding capabilities to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). For information on signing a pass, see [`Wallet Passes`](https://developer.apple.com/documentation/WalletPasses).
 
 ## Topics
 
+### Essentials
+- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
+  A list of identifiers that specify pass types that your app can access in Wallet.
+- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+  A list of merchant IDs your app uses for Apple Pay support.
+- [com.apple.developer.in-app-identity-presentment](../BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.md)
+  An entitlement that verifies age or identity.
+- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
+### Wallet Passes
+- [Wallet Passes](../WalletPasses/WalletPasses.md)
+  Create, distribute, and update passes for the Wallet app.
+### Common data types
+- [class PKObject](pkobject.md)
+  An opaque type that acts as the superclass for the pass object.
+- [class PKAddPassButton](pkaddpassbutton.md)
+  Provides a button that enables users to add passes to Wallet.
+- [class PKLabeledValue](pklabeledvalue.md)
+  An object that can represent a detail about a payment card or other item.
+- [struct AddPassToWalletButton](addpasstowalletbutton.md)
+  A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
+- [struct AddPassToWalletButtonFilter](addpasstowalletbuttonfilter.md)
+- [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
+- [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)
 ### Pass library
 - [class PKPassLibrary](pkpasslibrary.md)
   Provides an interface to the user’s library of passes.
@@ -29,9 +55,13 @@ To access your pass using PassKit add the Wallet capability to your app. You can
 - [protocol PKShareSecureElementPassViewControllerDelegate](pksharesecureelementpassviewcontrollerdelegate.md)
 - [PKShareablePassMetadata.Preview](pkshareablepassmetadata/preview-swift.class.md)
 - [enum PKShareSecureElementPassResult](pksharesecureelementpassresult.md)
-### Identity passes
+### Identity passes and authorization
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+  Set up your environment to use Verify with Wallet.
+- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
 - [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
@@ -54,6 +84,23 @@ To access your pass using PassKit add the Wallet capability to your app. You can
   An object for requesting information from a user’s national ID card.
 - [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
   A class that contains metadata indicating the specific product instance to provision.
+### Identity sheet interactions and authorization
+- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
+  An object that presents a sheet that prompts the user to allow a request for identity information.
+- [class PKIdentityRequest](pkidentityrequest.md)
+  An object that represents a request for identity information from a Wallet pass.
+- [class PKIdentityDocument](pkidentitydocument.md)
+  An object that represents the response to a request.
+- [class PKIdentityElement](pkidentityelement.md)
+  An object that represents the elements an app requests from identity documents.
+- [class PKIdentityButton](pkidentitybutton.md)
+  An object that displays a button to trigger the identity verification flow.
+- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
+  A type that displays a button to present the identity verification flow.
+- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
+  A type that represents the label you use with a verify identity button.
+- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
+  A type that represents the style you use with a verify identity button.
 ### Payment passes
 - [class PKPaymentPass](pkpaymentpass.md)
   An object that represents a provisioned payment card for in-app payments.
@@ -75,54 +122,19 @@ To access your pass using PassKit add the Wallet capability to your app. You can
   Information that you use to configure the sharing sheet for a pass.
 - [enum PKAddShareablePassConfigurationPrimaryAction](pkaddshareablepassconfigurationprimaryaction.md)
   The kind of add action that the system performs with a pass.
-### Identity sheet interactions and authorization
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
-  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
-  Decrypt and verify an in-app presentment request on your server.
-- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
-  An object that presents a sheet that prompts the user to allow a request for identity information.
-- [class PKIdentityRequest](pkidentityrequest.md)
-  An object that represents a request for identity information from a Wallet pass.
-- [class PKIdentityDocument](pkidentitydocument.md)
-  An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
-  An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
-  An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
-  A view that displays a button for identity verification.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
-  A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
-  A type that represents the style you use with a verify identity button.
 ### Digital car keys
 - [class PKAddCarKeyPassConfiguration](pkaddcarkeypassconfiguration.md)
   A specialized configuration object that PassKit uses when it creates a digital car key.
 - [class PKVehicleConnectionSession](pkvehicleconnectionsession.md)
 - [protocol PKVehicleConnectionDelegate](pkvehicleconnectiondelegate.md)
 - [enum PKVehicleConnectionSessionConnectionState](pkvehicleconnectionsessionconnectionstate.md)
-### Extend Wallet to add issuer cards
+### Issuer cards
 - [Implementing Wallet Extensions](implementing-wallet-extensions.md)
   Support adding an issued card to Apple Pay from directly within Apple Wallet using Wallet Extensions.
 - [class PKIssuerProvisioningExtensionHandler](pkissuerprovisioningextensionhandler.md)
   An abstract superclass for an app extension to add a payment card to Wallet.
 - [protocol PKIssuerProvisioningExtensionAuthorizationProviding](pkissuerprovisioningextensionauthorizationproviding.md)
   A protocol for a UI app extension to authorize a user to add a payment card to Wallet.
-### Common objects
-- [class PKObject](pkobject.md)
-  An opaque type that acts as the superclass for the pass object.
-- [class PKAddPassButton](pkaddpassbutton.md)
-  Provides a button that enables users to add passes to Wallet.
-- [class PKLabeledValue](pklabeledvalue.md)
-  An object that can represent a detail about a payment card or other item.
-- [struct AddPassToWalletButton](addpasstowalletbutton.md)
-- [struct AddPassToWalletButtonFilter](addpasstowalletbuttonfilter.md)
-- [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
-- [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)
-### Entitlements
-- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
-  A list of identifiers that specify pass types that your app can access in Wallet.
 ### Errors
 - [struct PKPassKitError](pkpasskiterror.md)
   Errors that the PassKit framework uses.
@@ -154,11 +166,6 @@ To access your pass using PassKit add the Wallet capability to your app. You can
   A view that displays the Apple Pay Later visual merchandising widget.
 - [class PKPayLaterView](pkpaylaterview.md)
   A view that displays the Apple Pay Later visual merchandising widget.
-
-## See Also
-
-- [Wallet Passes](../WalletPasses/WalletPasses.md)
-  Create, distribute, and update passes for the Wallet app.
 
 
 ---

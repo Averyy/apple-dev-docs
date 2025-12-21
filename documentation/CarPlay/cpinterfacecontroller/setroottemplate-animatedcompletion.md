@@ -25,7 +25,7 @@ func setRootTemplate(_ rootTemplate: CPTemplate, animated: Bool) async throws ->
 
 If you set a root template when a navigation hierarchy already exists, CarPlay replaces the entire hierarchy.
 
-CarPlay calls `completion` after it presents the template. The Boolean parameter is [`true`](https://developer.apple.com/documentation/swift/true) when the presentation succeeds; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the presentation fails and you don’t provide a closure.
+CarPlay calls `completion` after it presents the template. The Boolean parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when the presentation succeeds; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the presentation fails and you don’t provide a closure.
 
 ## Parameters
 

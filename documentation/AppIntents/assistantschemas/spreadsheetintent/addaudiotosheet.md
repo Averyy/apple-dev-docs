@@ -25,7 +25,7 @@ var addAudioToSheet: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.spreadsheet.addAudioToSheet` schema:
 
 ```swift
-@AssistantIntent(schema: .spreadsheet.addAudioToSheet)
+@AppIntent(schema: .spreadsheet.addAudioToSheet)
 struct AddAudioToSheetIntent: AppIntent {
     @Parameter
     var target: SheetEntity

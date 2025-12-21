@@ -6,11 +6,11 @@
 Store and sync your application’s save files in iCloud.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 #### Overview
 
@@ -20,14 +20,15 @@ GameSave uses iCloud Drive to synchronize your application’s save data across 
 
 ## Topics
 
+### Synced directory
+- [class GameSaveSyncedDirectory](gamesavesynceddirectory.md)
+  A cloud-synced directory for game-save data.
+### Error domain
+- [let GameSaveErrorDomain: String](gamesaveerrordomain.md)
+  The error domain name for GameSave errors.
 ### Synced directory (Objective-C)
 - [class GSSyncedDirectory](gssynceddirectory.md)
   A cloud-synced directory for game-save data.
-### Classes
-- [class GameSaveSyncedDirectory](gamesavesynceddirectory.md)
-  A cloud-synced directory for game-save data.
-### Variables
-- [let GameSaveErrorDomain: String](gamesaveerrordomain.md)
 
 
 ---

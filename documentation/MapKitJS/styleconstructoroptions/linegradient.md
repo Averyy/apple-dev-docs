@@ -11,12 +11,12 @@ The gradient to apply along the line.
 ## Declaration
 
 ```swift
-attribute mapkit.LineGradient lineGradient;
+lineGradient?: LineGradient;
 ```
 
 #### Discussion
 
-If a style has both [`strokeColor`](mapkit.style/strokecolor.md) and [`lineGradient`](mapkit.style/linegradient.md) definitions, [`lineGradient`](mapkit.style/linegradient.md) takes precedence and displays. If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](mapkit.style/strokecolor.md).
+If a style has both [`strokeColor`](style/strokecolor.md) and [`lineGradient`](style/linegradient.md) definitions, [`lineGradient`](style/linegradient.md) takes precedence and displays. If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](style/strokecolor.md).
 
 ## See Also
 

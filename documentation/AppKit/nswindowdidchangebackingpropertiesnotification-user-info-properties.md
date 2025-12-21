@@ -2,7 +2,7 @@
 
 **Framework**: AppKit
 
-These constants are values that are returned in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of the [`didChangeBackingPropertiesNotification`](nswindow/didchangebackingpropertiesnotification.md).
+Constants that represent values in the user info dictionary of the `didChangeBackingPropertiesNotification` notification.
 
 ## Topics
 

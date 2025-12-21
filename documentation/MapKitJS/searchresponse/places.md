@@ -11,7 +11,7 @@ A list of places that match the search query.
 ## Declaration
 
 ```swift
-attribute Place[] places;
+places: Place[];
 ```
 
 #### Discussion

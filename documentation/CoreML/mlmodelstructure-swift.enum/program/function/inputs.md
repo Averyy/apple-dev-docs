@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The inputs to the function.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,6 +23,7 @@ let inputs: [MLModelStructure.Program.NamedValueType]
 ## See Also
 
 - [let block: MLModelStructure.Program.Block](mlmodelstructure-swift.enum/program/function/block.md)
+  The active block in the function.
 
 
 ---

@@ -7,7 +7,7 @@ Highlight physical structures and display text that guides a user to scan the sh
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Xcode 16.2+
+- Xcode 26.0+
 
 #### Overview
 

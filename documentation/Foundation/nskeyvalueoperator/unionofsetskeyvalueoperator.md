@@ -47,6 +47,7 @@ static let unionOfSetsKeyValueOperator: NSKeyValueOperator
 - [static let unionOfObjectsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofobjectskeyvalueoperator.md)
   The @unionOfObjects array operator.
 - [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+  Key in the userInfo dictionary of an NSError received during a failed upload.
 
 
 ---

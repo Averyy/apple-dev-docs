@@ -43,6 +43,8 @@ Depending on the coordinate space that a caller entity is parented under, and wh
   A component that defines the scale, rotation, and translation of an entity.
 - [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](entity/transformmatrix(relativeto:).md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
+- [Entity.ForwardDirection](entity/forwarddirection.md)
+  Defines the forward direction for an entity.
 
 
 ---

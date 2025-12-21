@@ -21,13 +21,13 @@ optional func application(_ application: UIApplication, shouldSaveSecureApplicat
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to securely preserve the app’s state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to securely preserve the app’s state; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Apps must implement both this method and [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) for state preservation to occur.
 
-Your implementation of this method should return [`true`](https://developer.apple.com/documentation/swift/true) each time UIKit attempts to preserve the state of your app. You can temporarily disable state preservation by returning [`false`](https://developer.apple.com/documentation/swift/false), which you may want to do during testing, for example.
+Your implementation of this method should return [`true`](https://developer.apple.com/documentation/Swift/true) each time UIKit attempts to preserve the state of your app. You can temporarily disable state preservation by returning [`false`](https://developer.apple.com/documentation/Swift/false), which you may want to do during testing, for example.
 
 You can add version information or any other contextual data to the provided coder as necessary. During restoration, you can use that information to determine whether to proceed with restoring your app to its previous state. Any objects you add to the coder must adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol.
 

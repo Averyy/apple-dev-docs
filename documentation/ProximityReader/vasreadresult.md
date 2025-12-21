@@ -35,11 +35,8 @@ A `VASReadResult` object contains the encrypted loyalty card information from th
 - [VASReadResult.ReadEntry](vasreadresult/readentry.md)
   An object containing encrypted data associated with a customer’s loyalty or reward pass.
 ### Getting the result ID
-- [let id: String](vasreadresult/id-swift.property.md)
+- [let id: String](vasreadresult/id.md)
   A unique identifier string for the requested read operation.
-### Type Aliases
-- [VASReadResult.ID](vasreadresult/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

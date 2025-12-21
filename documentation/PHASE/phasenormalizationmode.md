@@ -6,12 +6,12 @@
 Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -51,6 +51,8 @@ PHASE callibrates sound asset and stream loudness automatically when the app cho
   An object that manages audio assets, controls playback, and configures environmental effects.
 - [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 - [class PHASEAssetRegistry](phaseassetregistry.md)
   A central repository of audio assets.
 - [enum PHASESpatializationMode](phasespatializationmode.md)

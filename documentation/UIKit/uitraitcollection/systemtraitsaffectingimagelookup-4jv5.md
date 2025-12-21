@@ -16,6 +16,14 @@
 static var systemTraitsAffectingImageLookup: [UITrait] { get }
 ```
 
+## Mentions
+
+- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+
+## See Also
+
+- [static var systemTraitsAffectingColorAppearance: [UITrait]](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)
+
 
 ---
 

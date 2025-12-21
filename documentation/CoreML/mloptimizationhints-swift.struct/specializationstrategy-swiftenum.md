@@ -22,7 +22,7 @@ enum SpecializationStrategy
 
 ## Topics
 
-### Enumeration Cases
+### Specialization strategies
 - [MLOptimizationHints.SpecializationStrategy.default](mloptimizationhints-swift.struct/specializationstrategy-swift.enum/default.md)
   The strategy that should work well for most applications.
 - [MLOptimizationHints.SpecializationStrategy.fastPrediction](mloptimizationhints-swift.struct/specializationstrategy-swift.enum/fastprediction.md)
@@ -37,6 +37,11 @@ enum SpecializationStrategy
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var specializationStrategy: MLOptimizationHints.SpecializationStrategy](mloptimizationhints-swift.struct/specializationstrategy-swift.property.md)
+  Optimization strategy for the model specialization.
 
 
 ---

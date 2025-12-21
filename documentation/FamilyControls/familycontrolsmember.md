@@ -23,20 +23,9 @@ enum FamilyControlsMember
   A value indicating that Family Controls is managing a child account, so that a parent or guardian must enter their authorization credentials.
 - [FamilyControlsMember.individual](familycontrolsmember/individual.md)
   A value indicating that Family Controls is managing an individual account, so that the user can enter their authorization credentials.
-### Initializers
-- [init?(rawValue: Int)](familycontrolsmember/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Instance Properties
 - [var description: String](familycontrolsmember/description.md)
   A nonlocalized description of the type of account, suitable for debugging.
-- [var rawValue: Int](familycontrolsmember/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [FamilyControlsMember.RawValue](familycontrolsmember/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](familycontrolsmember/equatable-implementations.md)
-- [RawRepresentable Implementations](familycontrolsmember/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ An indication of whether to use an automatically configured AR session.
 
 When enabled, the [`ARView`](arview.md) automatically runs an `RealityKit/ARSession` with a default configuration. RealityKit updates that configuration based  on t camera mode and scene anchors. When disabled, you need to provide a configuration object and run the session manually.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -10,7 +10,7 @@ Creates an entity by asynchronously loading it from a file URL.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -43,9 +43,9 @@ See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally l
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)
   Manage entities that you store as assets on disk.
-- [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [convenience(named:in:)](entity/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
   Creates an entity by asynchronously loading it from a bundle.
 - [struct ReferenceComponent](referencecomponent.md)
   A component that can load another entity from a file.

@@ -21,7 +21,7 @@ struct MLDataTable
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
 
 #### Overview
@@ -34,7 +34,7 @@ In most cases you interact with columns using the typed [`MLDataColumn`](mldatac
 
 After you create a data table, you can modify it with methods like [`append(contentsOf:)`](mldatatable/append(contentsof:).md), [`addColumn(_:named:)`](mldatatable/addcolumn(_:named:)-kkbw.md), and [`removeColumn(named:)`](mldatatable/removecolumn(named:).md). You can also filter or map the contents of the data table to derive new data tables or new columns by using various subscripts and methods like [`dropDuplicates()`](mldatatable/dropduplicates().md) or [`map(_:)`](mldatatable/map(_:)-92wrj.md).
 
-> **Note**: For a demonstration that creates and uses data tables, see [`Creating a Model from Tabular Data`](creating_a_model_from_tabular_data.md).
+> **Note**: For a demonstration that creates and uses data tables, see [`Creating a model from tabular data`](creating-a-model-from-tabular-data.md).
 
 Finally, when your data table is ready, use it to train and evaluate a model from these groups:
 
@@ -47,7 +47,7 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 ## Topics
 
 ### Creating a data table
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](mldatatable/init(contentsof:options:).md)
   Creates a data table from an imported JSON or CSV file.
@@ -57,30 +57,26 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
   Creates a data table from a dictionary of column names and untyped columns.
 - [init()](mldatatable/init.md)
   Creates an empty table containing no rows or columns.
+- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+  The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 ### Getting the size of a data table
 - [var size: (rows: Int, columns: Int)](mldatatable/size.md)
   The number of rows and columns in the data table.
 ### Transforming rows to generate a data column
-- [func map<T>((MLDataTable.Row) -> T) -> MLDataColumn<T>](mldatatable/map(_:)-92wrj.md)
+- [func map(_:)](mldatatable/map(_:).md)
   Creates a new column by applying a given thread-safe transform to every row in the data table.
-- [func map<T>((MLDataTable.Row) -> T?) -> MLDataColumn<T>](mldatatable/map(_:)-3yamp.md)
-  Creates a new column, potentially with missing values, by applying a given thread-safe transform to every row in the data table.
 ### Adding columns
-- [func addColumn<Element>(MLDataColumn<Element>, named: String)](mldatatable/addcolumn(_:named:)-kkbw.md)
-  Adds a data column to the table.
+- [func addColumn(_:named:)](mldatatable/addcolumn(_:named:).md)
+  Adds an untyped column to the table.
 - [struct MLDataColumn](mldatacolumn.md)
   A column of typed values in a data table.
-- [func addColumn(MLUntypedColumn, named: String)](mldatatable/addcolumn(_:named:)-9cb24.md)
-  Adds an untyped column to the table.
 - [struct MLUntypedColumn](mluntypedcolumn.md)
   A column of untyped values in a data table.
 ### Accessing columns
+- [subscript(_:)](mldatatable/subscript(_:).md)
+  Retrieves or adds an untyped column with the specified name.
 - [subscript<T>(String, T.Type) -> MLDataColumn<T>?](mldatatable/subscript(_:_:).md)
   Retrieves a column with the specified name and type.
-- [subscript<Element>(String) -> MLDataColumn<Element>](mldatatable/subscript(_:)-5tl9r.md)
-  Retrieves or adds a typed column with the specified name.
-- [subscript(String) -> MLUntypedColumn](mldatatable/subscript(_:)-3wjk.md)
-  Retrieves or adds an untyped column with the specified name.
 ### Renaming columns
 - [func renameColumn(named: String, to: String)](mldatatable/renamecolumn(named:to:).md)
   Changes the name of an existing column.
@@ -91,7 +87,7 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 - [func append(contentsOf: MLDataTable)](mldatatable/append(contentsof:).md)
   Appends the contents of the given data table to the end of this data table.
 ### Generating new data tables
-- [Data Table Derivation Operations](data-table-derivation-operations.md)
+- [Data table derivation operations](data-table-derivation-operations.md)
   Create new data tables by manipulating an existing data table.
 ### Splitting a data table
 - [func randomSplitBySequence(proportion: Double, by: String, on: String, seed: Int) -> (MLDataTable, remaining: MLDataTable)](mldatatable/randomsplitbysequence(proportion:by:on:seed:).md)
@@ -104,6 +100,8 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 - [func stratifiedSplitBySequence(proportions: [Double], by: String, on: String, seed: Int) throws -> MLDataTable](mldatatable/stratifiedsplitbysequence(proportions:by:on:seed:).md)
   Randomly split a MLDataTable into partitions on a user-define label column, while keeping rows from the same sequence in the original order.
 ### Getting information about a data table’s rows
+- [MLDataTable.Row](mldatatable/row.md)
+  A row of untyped values in a data table.
 - [var rows: MLDataTable.Rows](mldatatable/rows-swift.property.md)
   The rows of data in the table.
 - [MLDataTable.Rows](mldatatable/rows-swift.struct.md)
@@ -137,11 +135,6 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
   A Boolean value that indicates whether the data table is valid.
 - [var error: (any Error)?](mldatatable/error.md)
   The underlying error present when the data table is invalid.
-### Structures
-- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
-  The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
-- [MLDataTable.Row](mldatatable/row.md)
-  A row of untyped values in a data table.
 ### Default Implementations
 - [CustomPlaygroundDisplayConvertible Implementations](mldatatable/customplaygrounddisplayconvertible-implementations.md)
 - [CustomStringConvertible Implementations](mldatatable/customstringconvertible-implementations.md)
@@ -157,7 +150,7 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 
 - [enum MLDataValue](mldatavalue.md)
   The value of a cell in a data table.
-- [Data Visualizations](data-visualizations.md)
+- [Data visualizations](data-visualizations.md)
   Render images of data tables and columns in a playground.
 
 

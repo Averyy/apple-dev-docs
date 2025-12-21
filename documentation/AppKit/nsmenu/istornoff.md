@@ -16,7 +16,7 @@ var isTornOff: Bool { get }
 
 #### Discussion
 
-This property has a value of [`false`](https://developer.apple.com/documentation/swift/false) if the menu is offscreen, is attached to another menu, or is the main menu. Otherwise, this property has a value of [`true`](https://developer.apple.com/documentation/swift/true).
+This property has a value of [`false`](https://developer.apple.com/documentation/Swift/false) if the menu is offscreen, is attached to another menu, or is the main menu. Otherwise, this property has a value of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Special Considerations
 

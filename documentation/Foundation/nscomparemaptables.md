@@ -22,7 +22,7 @@ func NSCompareMapTables(_ table1: NSMapTable<AnyObject, AnyObject>, _ table2: NS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the keys and corresponding values of `table1` and `table2` are the same, and the two tables are the same size, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the keys and corresponding values of `table1` and `table2` are the same, and the two tables are the same size, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

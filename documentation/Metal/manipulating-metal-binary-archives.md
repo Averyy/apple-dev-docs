@@ -1,4 +1,4 @@
-# Manipulating Metal Binary Archives
+# Manipulating Metal binary archives
 
 **Framework**: Metal
 
@@ -10,12 +10,12 @@ When distributing Metal binary archives, it’s useful to maintain individual sl
 
 The code examples in this article use the following files:
 
-- `shaders.metallib,`a Metal library you compile from Xcode or the `metal` command-line tool. To learn how to compile from the command-line, see [`Building a Shader Library by Precompiling Source Files`](building-a-shader-library-by-precompiling-source-files.md).
-- `shaders.mtlp-json`, a Metal translator configuration script for use with the `shaders.metallib` library. To learn about creating configuration scripts, see [`Creating Binary Archives from Device-Built Pipeline State Objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) or [`Compiling Binary Archives from a Custom Configuration Script`](compiling-binary-archives-from-a-custom-configuration-script.md).
+- `shaders.metallib,`a Metal library you compile from Xcode or the `metal` command-line tool. To learn how to compile from the command-line, see [`Building a shader library by precompiling source files`](building-a-shader-library-by-precompiling-source-files.md).
+- `shaders.mtlp-json`, a Metal translator configuration script for use with the `shaders.metallib` library. To learn about creating configuration scripts, see [`Creating binary archives from device-built pipeline state objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) or [`Compiling binary archives from a custom configuration script`](compiling-binary-archives-from-a-custom-configuration-script.md).
 
 ##### Extract Slices From an Existing Binary Archive
 
-Unless the configuration script or command-line options specify otherwise, the Metal translator builds for all supported GPU architectures, including those your app may not even target. For example, building a complete binary archive for the shaders in [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md), and then inspecting it, shows both a large number of binary slices and a significant size increase.
+Unless the configuration script or command-line options specify otherwise, the Metal translator builds for all supported GPU architectures, including those your app may not even target. For example, building a complete binary archive for the shaders in [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md), and then inspecting it, shows both a large number of binary slices and a significant size increase.
 
 ```shell
 % xcrun -sdk macosx metal-tt shaders.metallib shaders.mtlp-json -o shaders.binary.metallib
@@ -63,9 +63,9 @@ The `metal-lipo` command-line tool also has a `-create` flag that performs the o
 
 ## See Also
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
   Write your Metal pipeline states to a binary archive at app runtime, and build binaries for any supported GPU.
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
   Define how the Metal translator builds binary archives without precompiled binaries as a starting source.
 
 

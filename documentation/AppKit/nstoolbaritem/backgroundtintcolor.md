@@ -4,16 +4,16 @@
 **Kind**: property
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 @NSCopying
-@MainActor var backgroundTintColor: UIColor? { get set }
+@MainActor var backgroundTintColor: NSColor? { get set }
 ```
 
 ## See Also

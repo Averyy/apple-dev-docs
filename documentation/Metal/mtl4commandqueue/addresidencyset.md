@@ -4,15 +4,15 @@
 **Kind**: method  
 **Required**: Yes
 
-Marks a residency set as part of this command queue.
+Applies a residency set to a queue, which Metal applies to the queue’s command buffers as you commit them.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,13 +22,11 @@ func addResidencySet(_ residencySet: any MTLResidencySet)
 
 #### Discussion
 
-Ensures that Metal makes the residency set resident during the execution of all command buffers you commit to this command queue.
-
-Each command queue supports up to 32 unique residency set instances.
+Each command queue can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySet`:   to add to the command queue.
+- `residencySet`: A residency set that contains resource allocations, such as  ,  , and   instances.
 
 
 ---

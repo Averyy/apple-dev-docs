@@ -29,17 +29,6 @@ enum IntentAuthenticationPolicy
   A policy that requires the user to authenticate.
 - [IntentAuthenticationPolicy.requiresLocalDeviceAuthentication](intentauthenticationpolicy/requireslocaldeviceauthentication.md)
   A policy that requires the user to authenticate on the local device.
-### Operators
-- [static func == (IntentAuthenticationPolicy, IntentAuthenticationPolicy) -> Bool](intentauthenticationpolicy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentauthenticationpolicy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentauthenticationpolicy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentauthenticationpolicy/equatable-implementations.md)
 
 ## Relationships
 

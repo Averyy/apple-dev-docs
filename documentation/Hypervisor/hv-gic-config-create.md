@@ -20,7 +20,7 @@ A new GIC configuration object.
 
 #### Discussion
 
-Release this object with [`os_release`](https://developer.apple.com/documentation/os/1524245-os_release) when it’s no longer needed.
+Release this object with [`os_release`](https://developer.apple.com/documentation/os/os_release-c.func) when it’s no longer needed.
 
 ## See Also
 

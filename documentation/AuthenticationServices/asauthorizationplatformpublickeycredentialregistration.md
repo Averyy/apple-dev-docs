@@ -29,9 +29,11 @@ Use this class to verify a successful platform authorization request in [`author
 
 ## Topics
 
-### Instance Properties
+### Accessing registration properties
 - [var attachment: ASAuthorizationPublicKeyCredentialAttachment](asauthorizationplatformpublickeycredentialregistration/attachment.md)
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md)
+  The request’s binary large object value.
+### Instance Properties
 - [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/prf-3xcqu.md)
 
 ## Relationships

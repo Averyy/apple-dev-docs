@@ -16,7 +16,7 @@ func popUp(positioning item: NSMenuItem?, at location: NSPoint, in view: NSView?
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if menu tracking ended because an item was selected, and [`false`](https://developer.apple.com/documentation/swift/false) if menu tracking was cancelled for any reason.
+[`true`](https://developer.apple.com/documentation/Swift/true) if menu tracking ended because an item was selected, and [`false`](https://developer.apple.com/documentation/Swift/false) if menu tracking was cancelled for any reason.
 
 #### Discussion
 

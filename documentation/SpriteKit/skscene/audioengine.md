@@ -17,7 +17,6 @@ The AVFoundation audio engine used to play audio from audio nodes contained in t
 ## Declaration
 
 ```swift
-@MainActor
 var audioEngine: AVAudioEngine { get }
 ```
 

@@ -17,7 +17,7 @@ func contains(_ coordinate: CLLocationCoordinate2D) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the coordinate lies within the region’s boundaries or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the coordinate lies within the region’s boundaries or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not.
 
 #### Discussion
 

@@ -32,7 +32,7 @@ Miscellaneous attributes that can apply to various types of elements.
 - [static let nextContents: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/nextcontents.md)
   The elements representing the contents that follow the current divider element, such as a subview adjacent to a split view’s splitter element (`NSArray`).
 - [static let orientation: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/orientation.md)
-  The element’s orientation, which can have the value [`horizontal`](nsaccessibility-swift.struct/orientationvalue/horizontal.md) or  [`vertical`](nsaccessibility-swift.struct/orientationvalue/vertical.md).
+  The element’s orientation.
 - [static let overflowButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/overflowbutton.md)
   The element that represents a toolbar’s overflow button (`id`).
 - [static let previousContents: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/previouscontents.md)
@@ -58,7 +58,7 @@ Miscellaneous attributes that can apply to various types of elements.
 - [static let placeholderValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/placeholdervalue.md)
   The placeholder value for a control, such as a text field (`NSString`).
 - [static let containsProtectedContent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/containsprotectedcontent.md)
-  A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
+  A flag that indicates whether the object contains protected content.
 - [static let identifier: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/identifier.md)
   The identity of the element (`NSString`).
 

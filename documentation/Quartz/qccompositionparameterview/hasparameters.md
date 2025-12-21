@@ -17,7 +17,7 @@ func hasParameters() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the composition has any input parameters.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the composition has any input parameters.
 
 
 ---

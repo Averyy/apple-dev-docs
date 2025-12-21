@@ -60,20 +60,8 @@ enum VESAVirtualControlsUsage
 - [HIDUsage.VESAVirtualControlsUsage.verticalPincushionBalance](hidusage/vesavirtualcontrolsusage/verticalpincushionbalance.md)
 - [HIDUsage.VESAVirtualControlsUsage.verticalPosition](hidusage/vesavirtualcontrolsusage/verticalposition.md)
 - [HIDUsage.VESAVirtualControlsUsage.verticalSize](hidusage/vesavirtualcontrolsusage/verticalsize.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/vesavirtualcontrolsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/vesavirtualcontrolsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.VESAVirtualControlsUsage.RawValue](hidusage/vesavirtualcontrolsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/vesavirtualcontrolsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/vesavirtualcontrolsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/vesavirtualcontrolsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

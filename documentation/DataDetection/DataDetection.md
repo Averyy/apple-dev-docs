@@ -72,21 +72,21 @@ Then, inspect and use the data from objects that the data detection system retur
 - [class DDMatchShipmentTrackingNumber](ddmatchshipmenttrackingnumber.md)
   An object that contains parcel tracking information that the data detection system matches.
 ### Pasteboard detectors
-- [func detectPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: @escaping (Result<Set<PartialKeyPath<UIPasteboard.DetectedValues>>, any Error>) -> ())](../UIKit/UIPasteboard/detectPatterns(for:completionHandler:)-23vwn.md)
+- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: (Result<Set<PartialKeyPath<UIPasteboard.DetectedValues>>, any Error>) -> ())](../UIKit/UIPasteboard/detectPatterns(for:completionHandler:)-23vwn.md)
   Requests that the data detection system identify the patterns that you specify for the pasteboard, and provide the patterns that it matches to your closure.
-- [func detectedPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<UIPasteboard.DetectedValues>>](../UIKit/UIPasteboard/detectedPatterns(for:).md)
+- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<UIPasteboard.DetectedValues>>](../UIKit/UIPasteboard/detectedPatterns(for:).md)
   Requests that the data detection system asynchronously identify the patterns that you specify for the pasteboard, and return the patterns that it matches.
-- [func detectPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?, completionHandler: @escaping (Result<[Set<PartialKeyPath<UIPasteboard.DetectedValues>>], any Error>) -> ())](../UIKit/UIPasteboard/detectPatterns(for:inItemSet:completionHandler:)-7ubl1.md)
+- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[Set<PartialKeyPath<UIPasteboard.DetectedValues>>], any Error>) -> ())](../UIKit/UIPasteboard/detectPatterns(for:inItemSet:completionHandler:)-7ubl1.md)
   Requests that the data detection system identify the patterns that you specify for the pasteboard items, and provide the patterns that it matches to your closure.
-- [func detectedPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?) async throws -> [Set<PartialKeyPath<UIPasteboard.DetectedValues>>]](../UIKit/UIPasteboard/detectedPatterns(for:inItemSet:).md)
+- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [Set<PartialKeyPath<UIPasteboard.DetectedValues>>]](../UIKit/UIPasteboard/detectedPatterns(for:inItemSet:).md)
   Requests that the data detection system asynchronously identify the patterns that you specify for the pasteboard items, and return the patterns that it matches.
-- [func detectValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: @escaping (Result<UIPasteboard.DetectedValues, any Error>) -> ())](../UIKit/UIPasteboard/detectValues(for:completionHandler:)-6adre.md)
+- [func detectValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: (Result<UIPasteboard.DetectedValues, any Error>) -> ())](../UIKit/UIPasteboard/detectValues(for:completionHandler:)-6adre.md)
   Requests that the data detection system identify the types of data that you specify for the pasteboard, and provide the values that it matches to your closure.
-- [func detectedValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> UIPasteboard.DetectedValues](../UIKit/UIPasteboard/detectedValues(for:).md)
+- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> UIPasteboard.DetectedValues](../UIKit/UIPasteboard/detectedValues(for:).md)
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard, and return the values that it matches.
-- [func detectValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?, completionHandler: @escaping (Result<[UIPasteboard.DetectedValues], any Error>) -> ())](../UIKit/UIPasteboard/detectValues(for:inItemSet:completionHandler:)-pm9l.md)
+- [func detectValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[UIPasteboard.DetectedValues], any Error>) -> ())](../UIKit/UIPasteboard/detectValues(for:inItemSet:completionHandler:)-pm9l.md)
   Requests that the data detection system identify the types of data that you specify for the pasteboard items, and provide the values that it matches to your closure.
-- [func detectedValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]](../UIKit/UIPasteboard/detectedValues(for:inItemSet:).md)
+- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]](../UIKit/UIPasteboard/detectedValues(for:inItemSet:).md)
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard item, and return the values that it matches for each pasteboard.
 
 

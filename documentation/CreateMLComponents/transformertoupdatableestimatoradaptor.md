@@ -44,9 +44,6 @@ struct TransformerToUpdatableEstimatorAdaptor<Transformer> where Transformer : T
   Creates a default-initialized transformer suitable for incremental fitting.
 - [func update<InputSequence>(inout Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](transformertoupdatableestimatoradaptor/update(_:with:eventhandler:).md)
   Does nothing since this estimator uses a pre-defined transformer.
-### Default Implementations
-- [Estimator Implementations](transformertoupdatableestimatoradaptor/estimator-implementations.md)
-- [UpdatableEstimator Implementations](transformertoupdatableestimatoradaptor/updatableestimator-implementations.md)
 
 ## Relationships
 

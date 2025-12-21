@@ -16,9 +16,10 @@ object AppInfo.Attributes
 
 ## Mentions
 
+- [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 - [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
-- [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
 ##### Discussion
 
@@ -27,7 +28,7 @@ object AppInfo.Attributes
 ## See Also
 
 - [object AppInfo.Relationships](appinfo/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

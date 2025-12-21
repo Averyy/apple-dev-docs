@@ -22,7 +22,7 @@ func unschedule(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 
 #### Discussion
 
-By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/swift/false) for the `startImmediately` parameter, you can instead schedule connection on a different run loop or mode before starting it with the [`start()`](nsurlconnection/start().md) method. You can schedule a connection on multiple run loops and modes, or on the same run loop in multiple modes. Use this method to unschedule the connection from an undesired run loop and mode before starting the connection.
+By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/Swift/false) for the `startImmediately` parameter, you can instead schedule connection on a different run loop or mode before starting it with the [`start()`](nsurlconnection/start().md) method. You can schedule a connection on multiple run loops and modes, or on the same run loop in multiple modes. Use this method to unschedule the connection from an undesired run loop and mode before starting the connection.
 
 You cannot reschedule a connection after it has started. It is not necessary to unschedule a connection after it has finished.
 

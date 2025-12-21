@@ -6,8 +6,8 @@
 Suggested reply in response to a business message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -21,16 +21,6 @@ struct SuggestedReply
 ### Accessing reply properties
 - [let displayText: String](rcsservice/business/suggestedreply/displaytext.md)
   Display text for reply.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/suggestedreply/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/suggestedreply/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing replies
-- [static func == (RCSService.Business.SuggestedReply, RCSService.Business.SuggestedReply) -> Bool](rcsservice/business/suggestedreply/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/suggestedreply/equatable-implementations.md)
 
 ## Relationships
 

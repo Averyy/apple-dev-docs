@@ -19,13 +19,6 @@ The barrier affects textures.
 static var textures: MTLBarrierScope { get }
 ```
 
-## See Also
-
-- [static var buffers: MTLBarrierScope](mtlbarrierscope/buffers.md)
-  The barrier affects any buffer objects.
-- [static var renderTargets: MTLBarrierScope](mtlbarrierscope/rendertargets.md)
-  The barrier affects any render targets.
-
 
 ---
 

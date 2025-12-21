@@ -58,7 +58,7 @@ Safari is an example of a browser app that uses [`WebKit`](https://developer.app
 
 #### Test Web Distribution During Development
 
-In iOS or iPadOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces and other apps that distribute over the web. A development build signed with a development or Ad Hoc provisioning profile can run on Simulator and all supported physical devices (iPhone and iPad).
+In iOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of web-distributed marketplace apps. A development build signed with a development or Ad Hoc provisioning profile can run on Simulator and all physical devices that the target region supports. For region-based caveats, see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md).
 
 
 ---

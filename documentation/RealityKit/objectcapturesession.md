@@ -128,9 +128,9 @@ Once a session enters the `.completed` state, your app can transfer the images t
   Implement a full scanning workflow for capturing objects on iOS devices.
 - [Building an object reconstruction app](building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
-- [Creating a Photogrammetry Command-Line App](creating_a_photogrammetry_command-line_app.md)
+- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using_object_capture_assets_in_realitykit.md)
+- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
 - [class PhotogrammetrySession](photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.

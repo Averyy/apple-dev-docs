@@ -6,7 +6,7 @@
 Contextual information about the state of the system that you use to create and update a represented gesture recognizer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

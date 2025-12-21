@@ -16,6 +16,10 @@ A dictionary of values associated with a credential config.
 object AppManagedCredentialConfigObject
 ```
 
+## Mentions
+
+- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+
 
 ---
 

@@ -26,6 +26,9 @@ Use [`display`](nsviewinvalidating/display.md) to create an instance of this typ
   Displays the view and all its subviews if possible, invoking each of the `NSView` methods [`lockFocus()`](nsview/lockfocus().md), [`draw(_:)`](nsview/draw(_:).md), and [`unlockFocus()`](nsview/unlockfocus().md) as necessary.
 - [init()](nsview/invalidations/display/init.md)
   Creates the invalidation type.
+### Invalidating the display
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

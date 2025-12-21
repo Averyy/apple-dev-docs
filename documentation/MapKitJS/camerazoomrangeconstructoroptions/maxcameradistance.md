@@ -11,7 +11,7 @@ The maximum allowed distance of the camera from the center of the map in meters.
 ## Declaration
 
 ```swift
-attribute number maxCameraDistance;
+maxCameraDistance?: number;
 ```
 
 ## See Also

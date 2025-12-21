@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: method
 
+Returns an effect preferring MagicReplace and a configured ReplaceEffect if MagicReplace is not possible.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -6,11 +6,11 @@
 An item for use in import and export.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -43,6 +43,7 @@ This type is a representation of `Item` as defined in the Credential Exchange Fo
   The user-defined tags associated with this item, if any.
 ### Initializers
 - [init(id: Data, created: Date, lastModified: Date, title: String, subtitle: String?, favorite: Bool, scope: ASImportableCredentialScope?, credentials: [ASImportableCredential], tags: [String])](asimportableitem/init(id:created:lastmodified:title:subtitle:favorite:scope:credentials:tags:).md)
+- [init(id: Data, title: String, subtitle: String?, favorite: Bool, scope: ASImportableCredentialScope?, credentials: [ASImportableCredential], tags: [String])](asimportableitem/init(id:title:subtitle:favorite:scope:credentials:tags:).md)
 ### Instance Properties
 - [var favorite: Bool](asimportableitem/favorite.md)
   Indicate whether this is a “favorite” item.

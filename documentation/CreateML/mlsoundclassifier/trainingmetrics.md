@@ -20,6 +20,8 @@ var trainingMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
+- [func evaluation(on:)](mlsoundclassifier/evaluation(on:).md)
+  Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a data source.
 - [var validationMetrics: MLClassifierMetrics](mlsoundclassifier/validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
 

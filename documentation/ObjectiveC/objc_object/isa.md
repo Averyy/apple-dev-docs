@@ -10,10 +10,9 @@ A pointer to the class definition of which this object is an instance.
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
 - visionOS ?+
 - watchOS ?+
-- Unknown ?+ - Deprecated
-- tvOS ?+
 
 ## Declaration
 

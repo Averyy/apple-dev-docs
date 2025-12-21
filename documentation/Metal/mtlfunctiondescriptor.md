@@ -21,11 +21,11 @@ class MTLFunctionDescriptor
 
 ## Mentions
 
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
 
 ## Topics
 
-### Specifying the Function Configuration
+### Specifying the function configuration
 - [var name: String?](mtlfunctiondescriptor/name.md)
   The name of the function to fetch from the library.
 - [var specializedName: String?](mtlfunctiondescriptor/specializedname.md)
@@ -37,9 +37,9 @@ class MTLFunctionDescriptor
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 - [class MTLLinkedFunctions](mtllinkedfunctions.md)
-  A set of related functions that Metal links to when necessary to create the function object.
+  A set of related functions that Metal links to when necessary to create the function instance.
 
 ## Relationships
 
@@ -63,7 +63,7 @@ class MTLFunctionDescriptor
 - [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makefunction(descriptor:).md)
   Synchronously creates an object representing a shader function, using the specified descriptor.
 - [protocol MTLFunction](mtlfunction.md)
-  An object that represents a public shader function in a Metal library.
+  A interface that represents a public shader function in a Metal library.
 - [protocol MTLFunctionHandle](mtlfunctionhandle.md)
   An object representing a function that you can add to a visible function table.
 - [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)

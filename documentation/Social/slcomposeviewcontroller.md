@@ -21,7 +21,7 @@ class SLComposeViewController
 
 Use the [`isAvailable(forServiceType:)`](slcomposeviewcontroller/isavailable(forservicetype:).md) class method to check if a service account, such as Twitter, is set up and reachable before presenting this view to the user.
 
-Set the initial content before presenting the view controller to the user. All the methods that set the content of a post return a Boolean value. They return [`false`](https://developer.apple.com/documentation/swift/false) if the content doesn’t fit in the post or if the view controller has already been presented to the user. You must set all of the content in the post before presenting the view controller to the user. After presenting the view controller, only the user can edit the post.
+Set the initial content before presenting the view controller to the user. All the methods that set the content of a post return a Boolean value. They return [`false`](https://developer.apple.com/documentation/Swift/false) if the content doesn’t fit in the post or if the view controller has already been presented to the user. You must set all of the content in the post before presenting the view controller to the user. After presenting the view controller, only the user can edit the post.
 
 You can set a handler—using the [`completionHandler`](slcomposeviewcontroller/completionhandler.md) property—to be notified when the user is done composing a post. Note that completion handlers are not called on any particular thread.
 

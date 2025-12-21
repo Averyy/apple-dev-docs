@@ -20,7 +20,7 @@ object BetaAppLocalization
 - [object BetaAppLocalization.Attributes](betaapplocalization/attributes-data.dictionary.md)
   Attributes that describe a Beta App Localizations resource.
 - [object BetaAppLocalization.Relationships](betaapplocalization/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

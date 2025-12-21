@@ -58,6 +58,12 @@ When you train a model using `MLImageClassifierBuilder`, you don’t initialize 
 
 - [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training an image classifier model.
+- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+  The underlying base model that extracts image features for image classifier training session.
+- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+  A custom feature extractor a training session uses to train an image classifier.
+- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+  The variations that the training process can use to generate more training data from the training data you provide.
 
 
 ---

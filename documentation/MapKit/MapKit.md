@@ -37,17 +37,6 @@ Use MapKit to give your app a sense of place with maps and location information.
   MapKit classes, protocols, and entitlements that are no longer supported.
 - [Preparing your app to be the default navigation app](preparing-your-app-to-be-the-default-navigation-app.md)
   Configure your navigation app so people can set it as the default on their devices.
-### Classes
-- [class MKCircleView](mkcircleview.md)
-  Provides the visual representation for an [`MKCircle`](mkcircle.md) annotation object.
-- [class MKOverlayPathView](mkoverlaypathview.md)
-  Represents a generic overlay that draws its contents using a Core Graphics path data type.
-- [class MKOverlayView](mkoverlayview.md)
-  Defines the basic behavior associated with all overlay views.
-- [class MKPolygonView](mkpolygonview.md)
-  Provides the visual representation for an [`MKPolygon`](mkpolygon.md) annotation object.
-- [class MKPolylineView](mkpolylineview.md)
-  Provides the visual representation for an [`MKPolyline`](mkpolyline.md) annotation object.
 ### Structures
 - [struct AnyMapContent](anymapcontent.md)
   A type-erased map content.

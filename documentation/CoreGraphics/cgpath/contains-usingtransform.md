@@ -22,7 +22,7 @@ func contains(_ point: CGPoint, using rule: CGPathFillRule = .winding, transform
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point is interior to the path; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the point is interior to the path; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

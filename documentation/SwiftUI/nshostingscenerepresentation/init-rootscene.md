@@ -6,7 +6,7 @@
 Creates a new hosting scene representation for the specified scene(s).
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -28,9 +28,9 @@ The Mac version of your app comes with a standard menu bar. Customize it by addi
 
 Mac apps typically let users manage app-specific settings by displaying a Preferences window. Users see this window by selecting the app menu followed by the Preferences menu item in the menu bar. If your app has a Settings bundle, the system automatically provides your app with a preferences window. To learn more, see [`Displaying a Preferences window`](displaying-a-preferences-window.md).
 
-##### Apply a Translucent Background to Your Primary View Controller
+##### Add a Liquid Glass Background to Your Primary View Controller
 
-iPad apps using a split view controller get a Mac-style vertical split view when running in macOS. But to make your iPad app look more at home on Mac, apply a translucent effect that blurs the desktop into the primary view controller’s background. To do this, set your split view controller’s [`primaryBackgroundStyle`](uisplitviewcontroller/primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.sidebar`](uisplitviewcontroller/backgroundstyle/sidebar.md), as shown in the following code.
+iPad apps using a split view controller get a Mac-style vertical split view when running in macOS. You can help your iPad app look more at home on Mac by applying Liquid Glass to the primary view controller’s background. To do this, set your split view controller’s [`primaryBackgroundStyle`](uisplitviewcontroller/primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.sidebar`](uisplitviewcontroller/backgroundstyle/sidebar.md), as shown in the following code.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -39,7 +39,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     
-    // Add a translucent background to the primary view controller.
+    // Add a Liquid Glass background to the primary view controller.
     splitViewController.primaryBackgroundStyle = .sidebar
     
     splitViewController.delegate = self
@@ -47,6 +47,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     return true
 }
 ```
+
+Set your split view controller’s [`primaryBackgroundStyle`](uisplitviewcontroller/primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.none`](uisplitviewcontroller/backgroundstyle/none.md) to avoid styling the primary view controller’s background.
 
 ##### Detect the Pointer in a View
 

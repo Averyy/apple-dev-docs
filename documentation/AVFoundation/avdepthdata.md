@@ -21,8 +21,8 @@ class AVDepthData
 
 ## Mentions
 
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
 
 #### Overview
 
@@ -47,17 +47,17 @@ When editing images containing depth information, use the methods listed in Tran
 
 ## Topics
 
-### Creating Depth Data
+### Creating depth data
 - [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avdepthdata/init(fromdictionaryrepresentation:).md)
   Creates a depth data object from depth information such as that found in an image file.
 - [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avdepthdata/dictionaryrepresentation(forauxiliarydatatype:).md)
   Returns a dictionary representation of the depth data suitable for writing into an image file.
-### Reading Pixel Depth Information
+### Reading pixel depth information
 - [var depthDataMap: CVPixelBuffer](avdepthdata/depthdatamap.md)
   A pixel buffer containing the depth data’s per-pixel depth or disparity data map.
 - [var depthDataType: OSType](avdepthdata/depthdatatype.md)
   The pixel format of the depth data map.
-### Evaluating Depth Data
+### Evaluating depth data
 - [var isDepthDataFiltered: Bool](avdepthdata/isdepthdatafiltered.md)
   A Boolean value indicating whether the depth map contains temporally smoothed data.
 - [var depthDataAccuracy: AVDepthData.Accuracy](avdepthdata/depthdataaccuracy.md)
@@ -68,7 +68,7 @@ When editing images containing depth information, use the methods listed in Tran
   The overall quality of the depth map.
 - [AVDepthData.Quality](avdepthdata/quality.md)
   Values indicating the overall quality of a depth data map.
-### Transforming and Processing
+### Transforming and processing
 - [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avdepthdata/applyingexiforientation(_:).md)
   Returns a derivative depth data object by mirroring or rotating it to the specified orientation.
 - [func converting(toDepthDataType: OSType) -> Self](avdepthdata/converting(todepthdatatype:).md)
@@ -77,7 +77,7 @@ When editing images containing depth information, use the methods listed in Tran
   The list of depth data formats to which you can convert this depth data.
 - [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](avdepthdata/replacingdepthdatamap(with:).md)
   Returns a derivative depth data object by replacing the depth data map.
-### Using Calibration Data
+### Using calibration data
 - [var cameraCalibrationData: AVCameraCalibrationData?](avdepthdata/cameracalibrationdata.md)
   The imaging parameters with which this depth data was captured.
 
@@ -95,17 +95,17 @@ When editing images containing depth information, use the methods listed in Tran
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating Auxiliary Depth Data Manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
 - [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying Filters to a Capture Stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming Depth Data from the TrueDepth Camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing Live Video by Leveraging TrueDepth Camera Data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
 - [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.

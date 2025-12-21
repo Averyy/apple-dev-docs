@@ -22,8 +22,8 @@ var fillColor: UIColor { get set }
 
 ## Mentions
 
-- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
 - [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
+- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
 
 #### Discussion
 

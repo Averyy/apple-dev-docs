@@ -17,7 +17,7 @@ func sendAction(_ action: Selector, to target: Any?, from sender: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully sent; otherwise [`false`](https://developer.apple.com/documentation/swift/false). This method also returns [`false`](https://developer.apple.com/documentation/swift/false) if `anAction` is `nil`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the action was successfully sent; otherwise [`false`](https://developer.apple.com/documentation/Swift/false). This method also returns [`false`](https://developer.apple.com/documentation/Swift/false) if `anAction` is `nil`.
 
 #### Discussion
 

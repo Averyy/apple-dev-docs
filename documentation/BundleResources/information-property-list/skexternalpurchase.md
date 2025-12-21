@@ -46,13 +46,15 @@ For more information, see [`External Purchase`](https://developer.apple.com/docu
 - [SKExternalLinkAccount](information-property-list/skexternallinkaccount.md)
   A dictionary that contains localized URLs to an external website for account creation or management.
 - [SKExternalPurchaseCustomLinkRegions](information-property-list/skexternalpurchasecustomlinkregions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 - [SKExternalPurchaseLink](information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [SKExternalPurchaseMultiLink](information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
 - [SKIncludeConsumableInAppPurchaseHistory](information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
+- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+  A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The basis function for the curve geometry.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var curveBasis: MTLCurveBasis { get set }
 ```
+
+#### Discussion
+
+The default value is [`MTLCurveBasis.bSpline`](mtlcurvebasis/bspline.md).
 
 
 ---

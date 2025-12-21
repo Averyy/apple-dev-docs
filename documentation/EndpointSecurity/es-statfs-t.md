@@ -3,7 +3,7 @@
 **Framework**: Endpoint Security  
 **Kind**: typealias
 
-A type that represents statistics about a file system.
+This typedef is no longer used, but exists for API backwards compatibility.
 
 **Availability**:
 - Mac Catalyst ?+
@@ -14,13 +14,6 @@ A type that represents statistics about a file system.
 ```swift
 typealias es_statfs_t = statfs
 ```
-
-## See Also
-
-- [var statfs: UnsafeMutablePointer<statfs>](es_event_mount_t/statfs.md)
-  The statistics of the mounted file system.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_mount_t/reserved.md)
-  An unused field reserved for future use.
 
 
 ---

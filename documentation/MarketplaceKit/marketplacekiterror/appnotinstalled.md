@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: case
 
-The requested operation cannot be completed because the app isn’t installed
+An error that indicates that a requested operation requires that the app first exists on the device.
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +14,17 @@ The requested operation cannot be completed because the app isn’t installed
 ```swift
 case appNotInstalled
 ```
+
+## See Also
+
+- [MarketplaceKitError.installationOfMarketplaceDenied](marketplacekiterror/installationofmarketplacedenied.md)
+  An error that indicates that the device disallows the installation of marketplaces.
+- [MarketplaceKitError.installationRestricted](marketplacekiterror/installationrestricted.md)
+  An error that indicates that app installation is restricted on this device.
+- [MarketplaceKitError.mismatchedInstallType](marketplacekiterror/mismatchedinstalltype.md)
+  An error that indicates the provided install type (install, update, restore) doesn’t match the install that results.
+- [MarketplaceKitError.missingInstallVerificationToken](marketplacekiterror/missinginstallverificationtoken.md)
+  An error that indicates the required install verification token is missing.
 
 
 ---

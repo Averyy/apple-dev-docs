@@ -7,7 +7,7 @@
 Enumerates search results starting from the specified page, in response to a call from the framework.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

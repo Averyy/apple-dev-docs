@@ -16,9 +16,9 @@ var isBuiltIn: Bool { get }
 
 ## See Also
 
-- [var descriptor: Data](hiddeviceclient/descriptor.md)
+- [let descriptor: Data](hiddeviceclient/descriptor.md)
   The HID specification compliant report descriptor for the associated HID device.
-- [var deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
+- [let deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
   A convenient list of all the usages that the device supports.
 - [var localizationCode: HIDDeviceLocalizationCode](hiddeviceclient/localizationcode.md)
   A location code that specifies the HID compliant localization code, if there is one.

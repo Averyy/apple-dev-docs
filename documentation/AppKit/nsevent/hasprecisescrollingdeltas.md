@@ -16,7 +16,7 @@ var hasPreciseScrollingDeltas: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) if precise scrolling deltas are available; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) if precise scrolling deltas are available; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This property is valid for [`NSScrollWheel`](nsscrollwheel.md) events. A generic scroll wheel issues rather coarse scroll deltas. Some mice and trackpads provide much more precise delta. This method determines how the values of the [`scrollingDeltaX`](nsevent/scrollingdeltax.md) and [`scrollingDeltaY`](nsevent/scrollingdeltay.md) should be interpreted.
 

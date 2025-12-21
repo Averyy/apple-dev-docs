@@ -22,7 +22,7 @@ func isSubtype(of type: UTType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the type directly or indirectly conforms to `type`, but returns [`false`](https://developer.apple.com/documentation/swift/false) if it’s equal to `type`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the type directly or indirectly conforms to `type`, but returns [`false`](https://developer.apple.com/documentation/Swift/false) if it’s equal to `type`.
 
 ## Parameters
 

@@ -21,7 +21,7 @@ var isFinished: Bool { get }
 
 #### Discussion
 
-The value of this property is [`false`](https://developer.apple.com/documentation/swift/false) initially. The value changes to [`true`](https://developer.apple.com/documentation/swift/true) when the delegate object handling the request calls the [`finishLoading(with:data:redirect:)`](avassetresourceloadingrequest/finishloading(with:data:redirect:).md) or [`finishLoading(with:)`](avassetresourceloadingrequest/finishloading(with:).md) method.
+The value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) initially. The value changes to [`true`](https://developer.apple.com/documentation/Swift/true) when the delegate object handling the request calls the [`finishLoading(with:data:redirect:)`](avassetresourceloadingrequest/finishloading(with:data:redirect:).md) or [`finishLoading(with:)`](avassetresourceloadingrequest/finishloading(with:).md) method.
 
 ## See Also
 

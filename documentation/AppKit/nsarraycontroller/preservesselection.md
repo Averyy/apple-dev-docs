@@ -16,7 +16,7 @@ var preservesSelection: Bool { get set }
 
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). This property is observable using key-value observing.
+The default is [`true`](https://developer.apple.com/documentation/Swift/true). This property is observable using key-value observing.
 
 ## See Also
 

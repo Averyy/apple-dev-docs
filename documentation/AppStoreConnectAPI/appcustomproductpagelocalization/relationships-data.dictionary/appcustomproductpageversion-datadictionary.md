@@ -4,7 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 3.6+
 
 ## Declaration
 
@@ -14,7 +14,7 @@ object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersio
 
 ## Topics
 
-### Objects
+### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion.Data](appcustomproductpagelocalization/relationships-data.dictionary/appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
 
 ## See Also

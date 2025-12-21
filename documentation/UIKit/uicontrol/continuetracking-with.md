@@ -21,11 +21,11 @@ func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the control should continue tracking touch events or [`false`](https://developer.apple.com/documentation/swift/false) if it should stop. This value is used to update the [`isTracking`](uicontrol/istracking.md) property of the control.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the control should continue tracking touch events or [`false`](https://developer.apple.com/documentation/Swift/false) if it should stop. This value is used to update the [`isTracking`](uicontrol/istracking.md) property of the control.
 
 #### Discussion
 
-This method is called repeatedly while a touch event is being tracked inside the control’s bounds. The default implementation of this method always returns [`true`](https://developer.apple.com/documentation/swift/true). Subclasses can override this method and use it to update their state based on changes to the touch event. If you want to continue tracking the touch event, return [`true`](https://developer.apple.com/documentation/swift/true). If you want to stop tracking the touch event, return [`false`](https://developer.apple.com/documentation/swift/false).
+This method is called repeatedly while a touch event is being tracked inside the control’s bounds. The default implementation of this method always returns [`true`](https://developer.apple.com/documentation/Swift/true). Subclasses can override this method and use it to update their state based on changes to the touch event. If you want to continue tracking the touch event, return [`true`](https://developer.apple.com/documentation/Swift/true). If you want to stop tracking the touch event, return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

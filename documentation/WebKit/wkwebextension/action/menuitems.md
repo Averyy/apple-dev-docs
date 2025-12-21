@@ -16,7 +16,7 @@ The menu items provided by the extension for this action.
 
 ```swift
 @MainActor
-var menuItems: [UIMenuElement] { get }
+var menuItems: [NSMenuItem] { get }
 ```
 
 #### Discussion

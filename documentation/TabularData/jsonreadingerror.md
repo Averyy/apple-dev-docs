@@ -33,7 +33,6 @@ enum JSONReadingError
   An error that occurs when the JSON data contains a value of the wrong type for a type-constrained column.
 ### Default Implementations
 - [CustomStringConvertible Implementations](jsonreadingerror/customstringconvertible-implementations.md)
-- [Error Implementations](jsonreadingerror/error-implementations.md)
 - [LocalizedError Implementations](jsonreadingerror/localizederror-implementations.md)
 
 ## Relationships

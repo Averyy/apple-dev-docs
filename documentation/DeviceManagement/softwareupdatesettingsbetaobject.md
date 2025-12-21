@@ -31,7 +31,7 @@ object SoftwareUpdateSettingsBetaObject
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
   The object that configures update deferrals.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
-  The object that configures rapid security update settings.
+  The object that configures Background Security Improvement settings.
 
 
 ---

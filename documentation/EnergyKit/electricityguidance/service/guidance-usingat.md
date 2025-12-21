@@ -6,10 +6,10 @@
 Returns an async sequence of electricity guidance forecasts for the requested venue with cost information incorporated, if available.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -25,12 +25,6 @@ Returns an `AsyncSequence` of [`ElectricityGuidance`](electricityguidance.md) fo
 
 - `query`: The   that you request.
 - `energyVenueID`: The   at which the devices consume electricity.
-
-## See Also
-
-- [func guidance(using: ElectricityGuidance.Query, for: CLLocation) -> some AsyncSequence<ElectricityGuidance, any Error>
-](electricityguidance/service/guidance(using:for:).md)
-  Returns an async sequence of electricity guidance forecasts without cost information incorporated.
 
 
 ---

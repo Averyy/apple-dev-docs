@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: struct
 
+A symbol effect that applies the Rotate animation to symbol images.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,14 +20,23 @@
 struct RotateSymbolEffect
 ```
 
+#### Overview
+
+The Rotate animation rotates parts of a symbol around a symbol-provided anchor point.
+
 ## Topics
 
 ### Instance Properties
 - [var byLayer: RotateSymbolEffect](rotatesymboleffect/bylayer.md)
+  Returns a copy of the effect requesting an animation that applies separately to each motion group.
 - [var clockwise: RotateSymbolEffect](rotatesymboleffect/clockwise.md)
+  Returns a copy of the effect requesting an animation that rotates clockwise.
 - [var configuration: SymbolEffectConfiguration](rotatesymboleffect/configuration.md)
+  The configuration for the effect.
 - [var counterClockwise: RotateSymbolEffect](rotatesymboleffect/counterclockwise.md)
+  Returns a copy of the effect requesting an animation that rotates counter-clockwise.
 - [var wholeSymbol: RotateSymbolEffect](rotatesymboleffect/wholesymbol.md)
+  Returns a copy of the effect requesting an animation that applies to all motion groups simultaneously.
 
 ## Relationships
 
@@ -58,7 +69,9 @@ struct RotateSymbolEffect
 - [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [struct BreatheSymbolEffect](breathesymboleffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [struct WiggleSymbolEffect](wigglesymboleffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 
 
 ---

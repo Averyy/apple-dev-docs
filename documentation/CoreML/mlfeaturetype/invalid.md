@@ -36,6 +36,8 @@ case invalid
   The type for dictionary features and feature values.
 - [MLFeatureType.sequence](mlfeaturetype/sequence.md)
   The type for sequence features and feature values.
+- [MLFeatureType.state](mlfeaturetype/state.md)
+  MLState. Represents a model state that may be updated in each inference.
 
 
 ---

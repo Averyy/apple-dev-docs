@@ -3,10 +3,10 @@
 **Framework**: WidgetKit  
 **Kind**: property
 
-Texture where the contents of the widget are placed on paper
+A matte, paper-like texture for the widget’s coating layer.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ static let paper: WidgetTexture
 ## See Also
 
 - [static let glass: WidgetTexture](widgettexture/glass.md)
-  Values that define the widget’s texture Texture where the contents of the widget are embedded within layers of glass
+  A reflective, clear glass-like texture for the widget’s coating layer.
 
 
 ---

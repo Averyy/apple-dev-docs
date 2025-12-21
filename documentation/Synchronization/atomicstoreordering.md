@@ -30,10 +30,6 @@ struct AtomicStoreOrdering
   A releasing store synchronizes with acquiring operations that read the value it stores. It ensures that the releasing and acquiring threads agree that all preceding variable accesses on the releasing thread happen before the atomic operation itself.
 - [static var sequentiallyConsistent: AtomicStoreOrdering](atomicstoreordering/sequentiallyconsistent.md)
   A sequentially consistent store performs a releasing store and also guarantees that it and all other sequentially consistent atomic operations (loads, stores, updates) appear to be executed in a single, total sequential ordering.
-### Default Implementations
-- [CustomStringConvertible Implementations](atomicstoreordering/customstringconvertible-implementations.md)
-- [Equatable Implementations](atomicstoreordering/equatable-implementations.md)
-- [Hashable Implementations](atomicstoreordering/hashable-implementations.md)
 
 ## Relationships
 

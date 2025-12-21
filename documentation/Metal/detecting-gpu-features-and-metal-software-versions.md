@@ -1,4 +1,4 @@
-# Detecting GPU Features and Metal Software Versions
+# Detecting GPU features and Metal software versions
 
 **Framework**: Metal
 
@@ -25,10 +25,10 @@ A new version of Metal adds multiple features to device object at the same time.
 
 Metal organizes GPUs into four major families:
 
-- Use the  family to create apps that target a range of GPUs on multiple platforms.
-- Use the  family to create apps that target Apple GPUs.
-- Use the  family to create apps that target GPUs on macOS systems.
-- Use the  family when building an iPadOS app to run on macOS.
+- Use the Common family to create apps that target a range of GPUs on multiple platforms.
+- Use the Apple family to create apps that target Apple GPUs.
+- Use the Mac family to create apps that target GPUs on macOS.
+- Use the Mac Catalyst family when building an iPadOS app to run on macOS.
 
 A GPU can be a member of more than one family; in most cases, a GPU supports one of the Common families and then one or more families specific to the build target.
 
@@ -44,7 +44,7 @@ Each new Metal release adds new features for supported GPUs. In addition to chec
 
 GPUs in the same family can vary in small ways. Some features aren’t supported uniformly across a family. Use the device object to test for the existence of these features using an API specific to each feature.
 
-For example, Metal’s argument buffer feature has two tiers of support; the second tier is significantly better than the first. The code below shows how to test for tier 2 support:
+For example, the argument buffer feature has two tiers of support; the second tier is significantly better than the first. The code below shows how to test for tier 2 support:
 
 ##### Discover Feature Availability in Earlier Operating Systems
 
@@ -54,13 +54,13 @@ Metal added new feature set enumerations in new versions of Apple operating syst
 
 ## See Also
 
-- [Getting the Default GPU](getting-the-default-gpu.md)
+- [Getting the default GPU](getting-the-default-gpu.md)
   Select the system’s default GPU device on which to run your Metal code.
 - [func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?](mtlcreatesystemdefaultdevice().md)
   Returns the device instance Metal selects as the default.
 - [protocol MTLDevice](mtldevice.md)
   The main Metal interface to a GPU that apps use to draw graphics and run computations in parallel.
-- [Multi-GPU Systems](multi-gpu-systems.md)
+- [Multi-GPU systems](multi-gpu-systems.md)
   Locate and work with internal and external GPUs and their displays, video memory, and performance tradeoffs.
 
 

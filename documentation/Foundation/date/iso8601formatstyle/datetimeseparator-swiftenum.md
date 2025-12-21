@@ -27,9 +27,6 @@ enum DateTimeSeparator
   Specifies a space character separating date and time components in an ISO 8601 date format style.
 - [Date.ISO8601FormatStyle.DateTimeSeparator.standard](date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md)
   Specifies no separator between the date and time components in an ISO 8601 date format style.
-### Comparing ISO 8601 Format Style Date Time Separators
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 
 ## Relationships
 

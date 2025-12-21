@@ -16,7 +16,7 @@ class NSOpenGLPixelFormat
 
 #### Overview
 
-To render with OpenGL into an [`NSOpenGLContext`](nsopenglcontext.md), you must specify the context’s pixel format. The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) class is similar to the [`AGLPixelFormat`](https://developer.apple.com/documentation/AGL/AGLPixelFormat) type.
+To render with OpenGL into an [`NSOpenGLContext`](nsopenglcontext.md), you must specify the context’s pixel format.
 
 Every [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object wraps a low-level, platform-specific Core OpenGL (CGL) pixel format object. Your application can retrieve the CGL pixel format object by calling the [`cglPixelFormatObj`](nsopenglpixelformat/cglpixelformatobj.md) method. For more information on the underling CGL pixel format object, see `CGL`.
 
@@ -62,7 +62,7 @@ Every [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object wraps a low-level, 
 - [class NSOpenGLContext](nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
 - [class NSOpenGLLayer](nsopengllayer.md)
-  A subclass of [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer) that is suitable for rendering OpenGL into layers.
+  A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
 - [class NSDrawer](nsdrawer.md)
   A user interface element that contains and displays text, scroll, and browser views, in addition to other view subclasses.
 - [class NSForm](nsform.md)

@@ -155,7 +155,7 @@ The stacked bar chart chooses colors to represent the new data, and adds a legen
 
 ##### Customize Your Chart
 
-For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the `Chart/chartForegroundStyleScale(_:)` chart modifier:
+For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](https://developer.apple.com/documentation/SwiftUI/View/chartForegroundStyleScale(_:)) chart modifier:
 
 ```swift
 Chart {
@@ -180,7 +180,7 @@ This chart makes the relationship between shape counts and colors clear. You can
 
 ## See Also
 
-- [Visualizing your app’s data](visualizing_your_app_s_data.md)
+- [Visualizing your app’s data](visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
 - [struct Chart](chart.md)
   A SwiftUI view that displays a chart.

@@ -6,13 +6,17 @@
 Share mobile documents using the Digital Credentials API.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
 
 #### Overview
 
-Identity Document Services enables the presentment of identity documents on device and web browser support for the Digital Credentials API. Once authorized, a person can select your app during a identity documents request, where they can authorize the presentment of identification through a UI you create with [`IdentityDocumentServicesUI`](https://developer.apple.com/documentation/IdentityDocumentServicesUI).
+Identity Document Services enables the presentment of identity documents on device and web browser support for the Digital Credentials API.
+
+![A conceptual image that shows a small identity document and a rectangular web page.](https://docs-assets.developer.apple.com/published/fe83fe395f5f3bb1f92833a0c1798345/identity-document-services-hero~dark%402x.png)
+
+Once authorized, a person can select your app during a identity documents request, where they can authorize the presentment of identification through a UI you create with [`IdentityDocumentServicesUI`](https://developer.apple.com/documentation/IdentityDocumentServicesUI).
 
 This framework also enables web browsers to implement the presentment flow for the Digital Credentials API. With web browser support, a person can present identity documents locally on their device or remotely on another device using the same iCloud account. Identity documents can include documents such as a driver’s license or identity card.
 
@@ -43,9 +47,9 @@ This framework also enables web browsers to implement the presentment flow for t
   A type representing the document response from a web presentment request.
 - [struct IdentityDocumentWebPresentmentRawRequest](identitydocumentwebpresentmentrawrequest.md)
   A struct that defines the type that represents a raw web presentment request.
-### Errors
-- [enum IdentityDocumentWebPresentmentError](identitydocumentwebpresentmenterror.md)
-  An error type thrown from the identity document web presentment controller.
+### Structures
+- [struct IdentityDocumentPresentmentError](identitydocumentpresentmenterror.md)
+  An error type that is thrown from the identity document web presentment controller.
 
 
 ---

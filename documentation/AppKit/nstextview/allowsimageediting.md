@@ -17,7 +17,7 @@ var allowsImageEditing: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if image editing is allowed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if image editing is allowed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 For image editing to be allowed, the text view must be editable and the text attachment cell must support image editing.
 

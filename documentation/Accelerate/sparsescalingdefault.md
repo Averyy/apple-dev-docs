@@ -31,9 +31,9 @@ The default scaling is [`SparseScalingEquilibriationInf`](sparsescalingequilibri
 - [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
   The norm equilibration scaling using infinity norm.
 - [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
-  Specifies type of scaling to be performed.
+  Scaling using the Hungarian algorithm.
 - [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)
-  Specifies type of scaling to be performed.
+  Scaling and ordering using the Hungarian algorithm.
 
 
 ---

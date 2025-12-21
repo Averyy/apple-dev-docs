@@ -17,7 +17,6 @@ The acceleration to apply to a particle’s vertical velocity.
 ## Declaration
 
 ```swift
-@MainActor
 var yAcceleration: CGFloat { get set }
 ```
 

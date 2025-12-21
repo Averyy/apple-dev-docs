@@ -20,10 +20,7 @@ func sec_protocol_options_set_tls_server_name(_ options: sec_protocol_options_t,
 
 #### Discussion
 
-```None
- Set the server name to be used when verifying the peer's certificate. This will override
- the server name obtained from the endpoint.
-```
+Set the server name to be used when verifying the peer’s certificate. This will override the server name obtained from the endpoint.
 
 ## Parameters
 

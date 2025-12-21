@@ -17,7 +17,7 @@ optional func animationShouldStart(_ animation: NSAnimation) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to cancel the animation, [`true`](https://developer.apple.com/documentation/swift/true) to have the animation proceed.
+[`false`](https://developer.apple.com/documentation/Swift/false) to cancel the animation, [`true`](https://developer.apple.com/documentation/Swift/true) to have the animation proceed.
 
 #### Discussion
 

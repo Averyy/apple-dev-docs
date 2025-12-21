@@ -34,7 +34,7 @@ There must be either a focused view or an active graphics context when you call 
 
 - [func size() -> CGSize](nsattributedstring/size.md)
   Returns the size necessary to draw the string.
-- [@MainActor func lockFocus()](../AppKit/NSView/lockFocus.md)
+- [func lockFocus()](../AppKit/NSView/lockFocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func draw(in: CGRect)](nsattributedstring/draw(in:).md)
   Draws the attributed string inside the specified bounding rectangle in the current graphics context.

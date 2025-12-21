@@ -23,7 +23,10 @@ Select the tax code for your subscription or one-time purchase based on the foll
 | Audiobooks / Has ISBN, ISSN, or ECN | Available for offline listening ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) The standard (list) price is displayed ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Contains stories with distributed speaker roles, noises, and music | S007-010409-1 | S007-010409-2 |
 | Audiobooks / Does not have ISBN, ISSN, or ECN | Available for offline listening | S008-02-1 | S008-02-2 |
 | Books / Has ISBN, ISSN, or ECN | Available for offline viewing ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) The standard (list) price is displayed ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Contains interactive features (excluding dictionary, notation, and commenting features) ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Contains profane or swear words | S001-03050614-1 | S001-03050614-2 |
+| Books / Has ISBN, ISSN, or ECN | Available for offline viewing ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) The standard (list) price is displayed ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Contains profane or swear words ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Depicts illegal acts, including theft, assault, drug taking, or robbery | S001-03060714-1 | S001-03060714-2 |
+| Books / Does not have ISBN, ISSN, or ECN | Available for offline viewing ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) A complete book (not an excerpt) ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Contains profane or swear words ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Depicts illegal acts, including theft, assault, drug taking, or robbery | S002-02040708-1 | S002-02040708-2 |
 | Boosting | No selectable attributes | N/A | C025-00-2 |
+| Games | Primarily played online | C009-0102-1 | C009-01-2 |
 | Video / Pay-Per-View | No attribute selected | N/A | S022-00-2 |
 | Video / Pay-Per-View | Exclusively features live TV broadcasting and/or linear programming | N/A | S022-01-2 |
 | Video / Purchase for permanent access | Content is available for offline viewing | N/A | S020-01-2 |
@@ -38,7 +41,7 @@ For more information about tax categories, see [`Set a tax category`](https://de
 - [Specifying prices for Advanced Commerce SKUs](prices.md)
   Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 - [Handling subscription price changes](handling-subscription-price-changes.md)
-  Provide necessary customer communications to notify and gather applicable consent before you initiate a price change.
+  Initiate a price change and manage communications with your subscribers through the App Store.
 
 
 ---

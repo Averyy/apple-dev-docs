@@ -17,7 +17,7 @@ var detachesHiddenViews: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), setting the [`isHidden`](nsview/ishidden.md) property of a view to [`true`](https://developer.apple.com/documentation/swift/true) causes the stack view to remove hidden views from its view hierarchy and put them in the [`detachedViews`](nsstackview/detachedviews.md) property. Changing the view’s [`isHidden`](nsview/ishidden.md) property to [`false`](https://developer.apple.com/documentation/swift/false) causes the stack view to add the view back to the view hierarchy. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), views remain in the view hierarchy, even when they are hidden. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), setting the [`isHidden`](nsview/ishidden.md) property of a view to [`true`](https://developer.apple.com/documentation/Swift/true) causes the stack view to remove hidden views from its view hierarchy and put them in the [`detachedViews`](nsstackview/detachedviews.md) property. Changing the view’s [`isHidden`](nsview/ishidden.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) causes the stack view to add the view back to the view hierarchy. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), views remain in the view hierarchy, even when they are hidden. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

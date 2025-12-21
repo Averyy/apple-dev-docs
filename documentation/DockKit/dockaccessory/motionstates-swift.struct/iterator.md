@@ -22,10 +22,6 @@ struct Iterator
 ### Instance Methods
 - [func next() async -> DockAccessory.MotionState?](dockaccessory/motionstates-swift.struct/iterator/next.md)
   Provide the next dock accessory motion state in the list.
-### Type Aliases
-- [DockAccessory.MotionStates.Iterator.Element](dockaccessory/motionstates-swift.struct/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](dockaccessory/motionstates-swift.struct/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

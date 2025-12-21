@@ -23,18 +23,6 @@ enum MLBoundingBoxAnchor
   An anchor at the bounding box’s top-left corner.
 - [MLBoundingBoxAnchor.bottomLeft](mlboundingboxanchor/bottomleft.md)
   An anchor at the bounding box’s bottom-left corner.
-### Comparing errors
-- [static func == (MLBoundingBoxAnchor, MLBoundingBoxAnchor) -> Bool](mlboundingboxanchor/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlboundingboxanchor/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Getting the hash value
-- [func hash(into: inout Hasher)](mlboundingboxanchor/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mlboundingboxanchor/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](mlboundingboxanchor/equatable-implementations.md)
 
 ## Relationships
 

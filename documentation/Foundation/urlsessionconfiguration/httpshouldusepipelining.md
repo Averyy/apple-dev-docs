@@ -24,7 +24,7 @@ var httpShouldUsePipelining: Bool { get set }
 
 This property determines whether tasks within sessions based on this configuration should use HTTP pipelining. You can also enable pipelining on a per-task basis by creating the task with an [`NSURLRequest`](nsurlrequest.md) object.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

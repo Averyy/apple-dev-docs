@@ -49,7 +49,7 @@ The [`NSPathControl`](nspathcontrol.md) class uses [`NSPathCell`](nspathcell.md)
   The receiver’s delegate.
 ### Setting the Drag Operation Mask
 - [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nspathcontrol/setdraggingsourceoperationmask(_:forlocal:).md)
-  Configures the default value returned from [`draggingSourceOperationMaskForLocal:`](https://developer.apple.com/documentation/objectivec/nsobject/1415984-draggingsourceoperationmaskforlo).
+  Configures the drag operation mask.
 ### Setting Popup Menu
 - [var menu: NSMenu?](nspathcontrol/menu.md)
   The menu that is used for the path control’s cells.

@@ -19,6 +19,10 @@ The purchase is pending, and requires action from the customer.
 case pending
 ```
 
+## Mentions
+
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+
 #### Discussion
 
 If a pending purchase succeeds, StoreKit delivers the resulting [`Transaction`](transaction.md) in the transaction [`updates`](transaction/updates.md).

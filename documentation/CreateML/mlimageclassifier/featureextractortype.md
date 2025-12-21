@@ -55,8 +55,12 @@ Create ML has one built-in feature extractor: `scenePrint`. Alternatively, you c
 
 ## See Also
 
-- [MLImageClassifier.ModelParameters.ValidationData](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
-  The source of a validation dataset for an image classifier.
+- [MLImageClassifier.DataSource](mlimageclassifier/datasource.md)
+  A data source for an image classifier.
+- [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training an image classifier model.
+- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+  A custom feature extractor a training session uses to train an image classifier.
 - [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
 

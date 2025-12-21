@@ -21,9 +21,9 @@ class MTLSamplerDescriptor
 
 ## Mentions
 
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
+- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
 
 #### Overview
 
@@ -31,10 +31,10 @@ To make a sampler, create and configure an [`MTLSamplerDescriptor`](mtlsamplerde
 
 ## Topics
 
-### Declaring the Coordinate Space
+### Declaring the coordinate space
 - [var normalizedCoordinates: Bool](mtlsamplerdescriptor/normalizedcoordinates.md)
   A Boolean value that indicates whether texture coordinates are normalized to the range `[0.0, 1.0]`.
-### Declaring Addressing Modes
+### Declaring addressing modes
 - [var rAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/raddressmode.md)
   The address mode for the texture depth (r) coordinate.
 - [var sAddressMode: MTLSamplerAddressMode](mtlsamplerdescriptor/saddressmode.md)
@@ -47,7 +47,7 @@ To make a sampler, create and configure an [`MTLSamplerDescriptor`](mtlsamplerde
   Modes that determine the texture coordinate at each pixel when a fetch falls outside the bounds of a texture.
 - [enum MTLSamplerBorderColor](mtlsamplerbordercolor.md)
   Values that determine the border color for clamped texture values when the sampler address mode is [`MTLSamplerAddressMode.clampToBorderColor`](mtlsampleraddressmode/clamptobordercolor.md).
-### Declaring Filter Modes
+### Declaring filter modes
 - [var minFilter: MTLSamplerMinMagFilter](mtlsamplerdescriptor/minfilter.md)
   The filtering option for combining pixels within one mipmap level when the sample footprint is larger than a pixel (minification).
 - [var magFilter: MTLSamplerMinMagFilter](mtlsamplerdescriptor/magfilter.md)
@@ -66,17 +66,22 @@ To make a sampler, create and configure an [`MTLSamplerDescriptor`](mtlsamplerde
   Filtering options for determining which pixel value is returned within a mipmap level.
 - [enum MTLSamplerMipFilter](mtlsamplermipfilter.md)
   Filtering options for determining what pixel value is returned with multiple mipmap levels.
-### Declaring the Depth Comparison Mode
+### Declaring the depth comparison mode
 - [var compareFunction: MTLCompareFunction](mtlsamplerdescriptor/comparefunction.md)
   The sampler comparison function used when performing a sample compare operation on a depth texture.
 - [enum MTLCompareFunction](mtlcomparefunction.md)
   Options used to specify how a sample compare operation should be performed on a depth texture.
-### Declaring Whether the Sampler Can Be Used in Argument Buffers
+### Declaring whether the sampler can be used in argument buffers
 - [var supportArgumentBuffers: Bool](mtlsamplerdescriptor/supportargumentbuffers.md)
   A Boolean value that indicates whether you can reference a sampler, that you make with this descriptor, by its resource ID from an argument buffer.
-### Identifying the Sampler
+### Identifying the sampler
 - [var label: String?](mtlsamplerdescriptor/label.md)
   A string that identifies the sampler.
+### Instance Properties
+- [var lodBias: Float](mtlsamplerdescriptor/lodbias.md)
+  Sets the level-of-detail (lod) bias when sampling from a texture.
+- [var reductionMode: MTLSamplerReductionMode](mtlsamplerdescriptor/reductionmode.md)
+  Sets the reduction mode for filtering contributing samples.
 
 ## Relationships
 
@@ -93,12 +98,14 @@ To make a sampler, create and configure an [`MTLSamplerDescriptor`](mtlsamplerde
 
 ## See Also
 
-- [Creating and Sampling Textures](creating-and-sampling-textures.md)
+- [Creating and sampling textures](creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
 - [protocol MTLSamplerState](mtlsamplerstate.md)
-  An object that defines how a texture should be sampled.
+  An instance that defines how a texture should be sampled.
 - [struct MTLSamplePosition](mtlsampleposition.md)
   A subpixel sample position for use in multisample antialiasing (MSAA).
+- [enum MTLSamplerReductionMode](mtlsamplerreductionmode.md)
+  Configures how the sampler aggregates contributing samples to a final value.
 
 
 ---

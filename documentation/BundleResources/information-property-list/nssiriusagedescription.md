@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting to send user data to Siri.
+A message that tells people why the app is requesting to send user data to Siri.
 
 **Availability**:
 - iOS 10.0+

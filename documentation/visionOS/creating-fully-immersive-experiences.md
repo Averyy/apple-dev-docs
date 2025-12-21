@@ -25,7 +25,7 @@ At launch time, display windows or other content that allows the person to see t
 
 > ⚠️ **Warning**: When you start a fully immersive experience, visionOS defines a system boundary that extends approximately 1.5 meters from the initial position of the person’s head. If their head moves outside of that zone, the system automatically stops the immersive experience and turns on the external video again. This feature is an assistant to help prevent someone from colliding with objects.
 
-For guidelines on how to design fully immersive experiences, see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
+For guidelines on how to design fully immersive experiences, see Human Interface Guidelines.
 
 ##### Open an Immersive Space
 
@@ -100,6 +100,10 @@ For details on how to render content using Metal and Compositor Services, and ma
   Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 - [Introductory visionOS samples](introductory-visionos-samples.md)
   Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
+- [Combining spatial support from multiple frameworks](combining-spatial-support-from-multiple-frameworks.md)
+  Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
+- [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
+  Build an iPadOS companion app to control your visionOS app.
 
 
 ---

@@ -46,12 +46,11 @@ For more information about formatting dates, see [`Date.FormatStyle`](date/forma
 - [static var wide: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/wide.md)
   Custom cyclic year format style that portrays a complete representation of a cyclic year.
 ### Comparing Cyclic Years
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

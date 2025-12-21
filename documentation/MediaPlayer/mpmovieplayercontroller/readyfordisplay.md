@@ -18,7 +18,7 @@ var readyForDisplay: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). This property returns [`true`](https://developer.apple.com/documentation/swift/true) if the first video frame is ready to be displayed and returns [`false`](https://developer.apple.com/documentation/swift/false) if there are no video tracks associated. When the value of this property changes to [`true`](https://developer.apple.com/documentation/swift/true), a [`MPMoviePlayerReadyForDisplayDidChangeNotification`](mpmovieplayerreadyfordisplaydidchangenotification.md) is sent.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). This property returns [`true`](https://developer.apple.com/documentation/Swift/true) if the first video frame is ready to be displayed and returns [`false`](https://developer.apple.com/documentation/Swift/false) if there are no video tracks associated. When the value of this property changes to [`true`](https://developer.apple.com/documentation/Swift/true), a [`MPMoviePlayerReadyForDisplayDidChangeNotification`](mpmovieplayerreadyfordisplaydidchangenotification.md) is sent.
 
 ## See Also
 

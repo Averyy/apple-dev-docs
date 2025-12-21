@@ -14,6 +14,11 @@ If this is interaction is currently gesture driven, contains gesture specific ad
 var gesture: TabletopInteraction.Value.Gesture? { get }
 ```
 
+## See Also
+
+- [TabletopInteraction.Value.Gesture](tabletopinteraction/value-swift.struct/gesture-swift.struct.md)
+  A structure that provides details specific to a gesture driven interaction.
+
 
 ---
 

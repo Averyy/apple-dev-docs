@@ -17,13 +17,13 @@ func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: NS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layout should be invalidated or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layout should be invalidated or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
 The default implementation of this method returns NO to indicate that layout is not needed. You can override this method in your custom layout classes and return a different value as needed. Your implementation of this method should determine if the new attributes would cause changes to the layout of other portions of the collection view.
 
-If you return [`true`](https://developer.apple.com/documentation/swift/true) from this method, the collection view invalidates the layout using the [`invalidateLayout(with:)`](nscollectionviewlayout/invalidatelayout(with:).md) method. The invalidation context passed to that method is created using the [`invalidationContext(forPreferredLayoutAttributes:withOriginalAttributes:)`](nscollectionviewlayout/invalidationcontext(forpreferredlayoutattributes:withoriginalattributes:).md) method.
+If you return [`true`](https://developer.apple.com/documentation/Swift/true) from this method, the collection view invalidates the layout using the [`invalidateLayout(with:)`](nscollectionviewlayout/invalidatelayout(with:).md) method. The invalidation context passed to that method is created using the [`invalidationContext(forPreferredLayoutAttributes:withOriginalAttributes:)`](nscollectionviewlayout/invalidationcontext(forpreferredlayoutattributes:withoriginalattributes:).md) method.
 
 ## Parameters
 

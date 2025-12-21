@@ -101,8 +101,7 @@ struct LandmarkTips: App {
 ### Views
 - [struct TipView](tipview.md)
   A user interface element that represents an inline tip.
-- [@preconcurrency nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> some View
-](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
+- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
   Presents a popover tip on the modified view.
 ### UIKit Views
 - [class TipUIView](tipuiview.md)
@@ -126,8 +125,7 @@ struct LandmarkTips: App {
 - [struct Event](tips/event.md)
   A repeatable user-defined action.
 ### View Style
-- [nonisolated func tipViewStyle(_ style: some TipViewStyle) -> some View
-](../SwiftUI/View/tipViewStyle(_:).md)
+- [func tipViewStyle(some TipViewStyle) -> some View](../SwiftUI/View/tipViewStyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.

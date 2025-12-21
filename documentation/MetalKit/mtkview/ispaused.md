@@ -22,9 +22,9 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](mtkview/preferredframespersecond.md).
+If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](mtkview/preferredframespersecond.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

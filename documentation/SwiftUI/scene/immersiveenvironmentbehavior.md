@@ -6,7 +6,7 @@
 Sets the immersive environment behavior that should apply when this scene opens.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

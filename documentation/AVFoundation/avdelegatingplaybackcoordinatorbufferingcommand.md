@@ -25,7 +25,7 @@ When your app receives this command, update its user interface to indicate that 
 
 ## Topics
 
-### Accessing Command Details
+### Accessing command details
 - [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorbufferingcommand/anticipatedplaybackrate.md)
   The rate at which the coordinator expects the current item to play.
 - [var completionDueDate: Date?](avdelegatingplaybackcoordinatorbufferingcommand/completionduedate.md)

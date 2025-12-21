@@ -4,11 +4,11 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -35,9 +35,6 @@ enum GSSyncState
   The directory is currently syncing and is not ready yet.
 ### Creating a directory state
 - [init?(rawValue: Int)](gssyncstate/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](gssyncstate/equatable-implementations.md)
-- [RawRepresentable Implementations](gssyncstate/rawrepresentable-implementations.md)
 
 ## Relationships
 

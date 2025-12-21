@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: UICollectionView, selectionFollow
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to automatically select the cell at the specified index path when focus moves to it; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if you want to automatically select the cell at the specified index path when focus moves to it; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the collection view’s [`selectionFollowsFocus`](uicollectionview/selectionfollowsfocus.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and you return [`false`](https://developer.apple.com/documentation/swift/false) from this delegate method, focus still moves to the cell when the user selects it. However, when focus moves to the cell, the cell doesn’t automatically select.
+If the collection view’s [`selectionFollowsFocus`](uicollectionview/selectionfollowsfocus.md) property is [`true`](https://developer.apple.com/documentation/Swift/true) and you return [`false`](https://developer.apple.com/documentation/Swift/false) from this delegate method, focus still moves to the cell when the user selects it. However, when focus moves to the cell, the cell doesn’t automatically select.
 
 ## Parameters
 

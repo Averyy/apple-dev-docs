@@ -23,11 +23,11 @@ enum MTLCaptureError
 
 ### Errors
 - [MTLCaptureError.alreadyCapturing](mtlcaptureerror/alreadycapturing.md)
-  A capture session is already in progress.
+  A capture error that indicates the session is already in progress.
 - [MTLCaptureError.invalidDescriptor](mtlcaptureerror/invaliddescriptor.md)
-  The descriptor contained invalid parameters.
+  A capture error that indicates your descriptor has invalid properties.
 - [MTLCaptureError.notSupported](mtlcaptureerror/notsupported.md)
-  The requested capture options are not available.
+  A capture error that indicates the capture options you’re requesting aren’t available.
 ### Initializers
 - [init?(rawValue: Int)](mtlcaptureerror/init(rawvalue:).md)
 

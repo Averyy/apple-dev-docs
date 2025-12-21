@@ -23,6 +23,8 @@ This command returns the status of managed apps from the App Store.
 
 Some statuses are transient and the device removes them after reporting them to the server.
 
+This command doesn’t return apps that Declarative Device Management is managing.
+
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
 ##### Command Availability
@@ -55,10 +57,12 @@ The request object the server returns for the Managed Application List Command.
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
 - [Apply Redemption Code](apply-redemption-code-command.md)
   Complete the installation of an app using a redemption code.
-- [Remove Application](remove-application-command.md)
-  Remove an installed managed app.
 - [Validate Applications](validate-applications-command.md)
   Force validation of developer and universal provisioning profiles for enterprise apps.
 - [Managed Application Attributes](managed-application-attributes-command.md)

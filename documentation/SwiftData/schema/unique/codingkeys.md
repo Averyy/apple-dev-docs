@@ -21,29 +21,8 @@ enum CodingKeys
 
 ## Topics
 
-### Operators
-- [static func == (Schema.Unique<T>.CodingKeys, Schema.Unique<T>.CodingKeys) -> Bool](schema/unique/codingkeys/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [Schema.Unique.CodingKeys.constraints](schema/unique/codingkeys/constraints.md)
-### Initializers
-- [init?(intValue: Int)](schema/unique/codingkeys/init(intvalue:).md)
-  Creates a new instance from the specified integer.
-- [init?(stringValue: String)](schema/unique/codingkeys/init(stringvalue:).md)
-  Creates a new instance from the given string.
-### Instance Properties
-- [var hashValue: Int](schema/unique/codingkeys/hashvalue.md)
-  The hash value.
-- [var intValue: Int?](schema/unique/codingkeys/intvalue.md)
-  The value to use in an integer-indexed collection (e.g. an int-keyed dictionary).
-- [var stringValue: String](schema/unique/codingkeys/stringvalue.md)
-  The string to use in a named collection (e.g. a string-keyed dictionary).
-### Instance Methods
-- [func hash(into: inout Hasher)](schema/unique/codingkeys/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CodingKey Implementations](schema/unique/codingkeys/codingkey-implementations.md)
-- [Equatable Implementations](schema/unique/codingkeys/equatable-implementations.md)
 
 ## Relationships
 

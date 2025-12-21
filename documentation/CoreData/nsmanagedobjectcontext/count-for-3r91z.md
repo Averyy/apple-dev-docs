@@ -17,6 +17,7 @@ Returns a count of the objects the specified request fetches when it executes.
 ## Declaration
 
 ```swift
+nonisolated
 func count<T>(for request: NSFetchRequest<T>) throws -> Int where T : NSFetchRequestResult
 ```
 

@@ -21,7 +21,7 @@ func JSValueIsSymbol(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the type of `value` is the symbol type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the type of `value` is the symbol type; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

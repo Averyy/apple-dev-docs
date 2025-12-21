@@ -6,8 +6,8 @@
 Performs a countdown for the alarm with the specified ID if it’s currently alerting.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

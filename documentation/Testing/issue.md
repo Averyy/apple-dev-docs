@@ -46,9 +46,6 @@ struct Issue
 ### Enumerations
 - [Issue.Kind](issue/kind-swift.enum.md)
   Kinds of issues which may be recorded.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](issue/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](issue/customstringconvertible-implementations.md)
 
 ## Relationships
 

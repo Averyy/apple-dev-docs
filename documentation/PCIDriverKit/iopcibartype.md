@@ -13,6 +13,10 @@
 enum IOPCIBARType : unsigned int;
 ```
 
+#### Overview
+
+BAR types for GetBARInfo
+
 ## Topics
 
 ### Enumeration Cases

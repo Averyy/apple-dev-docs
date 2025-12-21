@@ -17,7 +17,7 @@ func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<I
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell is one of the cells in the receiver, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the cell is one of the cells in the receiver, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

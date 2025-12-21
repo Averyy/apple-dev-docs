@@ -22,7 +22,7 @@ func contentsEqual(atPath path1: String, andPath path2: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if file or directory specified in `path1` has the same contents as that specified in `path2`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if file or directory specified in `path1` has the same contents as that specified in `path2`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

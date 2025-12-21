@@ -52,23 +52,6 @@ enum TransactionType
   The transaction’s category doesn’t map to a known value.
 - [TransactionType.withdrawal](transactiontype/withdrawal.md)
   An automatic or recurring withdrawal of funds by another party.
-### Initializers
-- [init?(rawValue: Int16)](transactiontype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int16](transactiontype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [TransactionType.AllCases](transactiontype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [TransactionType.RawValue](transactiontype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [TransactionType]](transactiontype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](transactiontype/equatable-implementations.md)
-- [RawRepresentable Implementations](transactiontype/rawrepresentable-implementations.md)
 
 ## Relationships
 

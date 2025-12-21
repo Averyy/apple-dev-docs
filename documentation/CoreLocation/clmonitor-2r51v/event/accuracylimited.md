@@ -19,7 +19,7 @@ var accuracyLimited: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app receives accuracy-limited location updates.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), then the app receives accuracy-limited location updates.
 
 ## See Also
 

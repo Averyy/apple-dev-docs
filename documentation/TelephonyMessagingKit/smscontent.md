@@ -6,8 +6,8 @@
 A structure that holds the content of an SMS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ A structure that holds the content of an SMS message.
 ```swift
 struct SMSContent
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 ## Topics
 
@@ -24,11 +28,6 @@ struct SMSContent
 ### Accessing content properties
 - [let body: String](smscontent/body.md)
   The body of the SMS message.
-### Encoding and decoding
-- [init(from: any Decoder) throws](smscontent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](smscontent/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

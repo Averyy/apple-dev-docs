@@ -23,9 +23,9 @@ var inheritBuffers: Bool { get set }
 
 Always set this property explicitly.
 
-If you set the value to [`true`](https://developer.apple.com/documentation/swift/true), don’t set buffer arguments when you encode commands into the indirect command buffer. The commands use (inherit) the buffer arguments that you set on the parent encoder.
+If you set the value to [`true`](https://developer.apple.com/documentation/Swift/true), don’t set buffer arguments when you encode commands into the indirect command buffer. The commands use (inherit) the buffer arguments that you set on the parent encoder.
 
-If you set the value to [`false`](https://developer.apple.com/documentation/swift/false), set the buffer arguments when you encode the commands into the indirect command buffer. The commands ignore any buffer arguments set on the parent encoder.
+If you set the value to [`false`](https://developer.apple.com/documentation/Swift/false), set the buffer arguments when you encode the commands into the indirect command buffer. The commands ignore any buffer arguments set on the parent encoder.
 
 ## See Also
 

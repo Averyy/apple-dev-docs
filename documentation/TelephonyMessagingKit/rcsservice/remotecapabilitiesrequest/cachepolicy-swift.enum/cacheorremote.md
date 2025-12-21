@@ -6,8 +6,8 @@
 Load from local cache if available, otherwise load from remote.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -20,8 +20,6 @@ case cacheOrRemote
 
 - [RCSService.RemoteCapabilitiesRequest.CachePolicy.cacheOnly](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum/cacheonly.md)
   Load from local cache.
-- [RCSService.RemoteCapabilitiesRequest.CachePolicy.remoteOnly](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum/remoteonly.md)
-  Load from remote.
 
 
 ---

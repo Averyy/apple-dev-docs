@@ -16,8 +16,8 @@ actor HIDDeviceClient
 
 ## Mentions
 
-- [Creating virtual devices](creatingvirtualdevices.md)
 - [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Creating virtual devices](creatingvirtualdevices.md)
 
 #### Overview
 
@@ -37,9 +37,9 @@ A [`HIDDeviceClient`](hiddeviceclient.md) receives device notifications, such as
 - [let deviceReference: HIDDeviceClient.DeviceReference](hiddeviceclient/devicereference-swift.property.md)
   The reference to the HID device used to create the  HID client device.
 ### Get device information
-- [var descriptor: Data](hiddeviceclient/descriptor.md)
+- [let descriptor: Data](hiddeviceclient/descriptor.md)
   The HID specification compliant report descriptor for the associated HID device.
-- [var deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
+- [let deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
   A convenient list of all the usages that the device supports.
 - [var isBuiltIn: Bool](hiddeviceclient/isbuiltin.md)
   A Boolean value that determines whether the device is built-in to the system or an external peripheral.
@@ -93,17 +93,9 @@ A [`HIDDeviceClient`](hiddeviceclient.md) receives device notifications, such as
 ### Structures
 - [HIDDeviceClient.UnsafeProperty](hiddeviceclient/unsafeproperty.md)
   A wrapper around an object to facilitate working with subscripts.
-### Instance Properties
-- [var unownedExecutor: UnownedSerialExecutor](hiddeviceclient/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
 ### Subscripts
 - [subscript(String) -> HIDDeviceClient.UnsafeProperty?](hiddeviceclient/subscript(_:).md)
   Get or set a property from the device.
-### Default Implementations
-- [Actor Implementations](hiddeviceclient/actor-implementations.md)
-- [CustomStringConvertible Implementations](hiddeviceclient/customstringconvertible-implementations.md)
-- [Equatable Implementations](hiddeviceclient/equatable-implementations.md)
-- [Hashable Implementations](hiddeviceclient/hashable-implementations.md)
 
 ## Relationships
 

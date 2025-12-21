@@ -12,15 +12,16 @@ Developers opt in to get copies of winning postbacks.
 
 #### Configure Your App to Receive Copies of Winning Postbacks
 
-To opt in to receive copies of winning postbacks for your advertised app, add the `AttributionCopyEndpoint` key in your app’s `Info.plist` file, and configure your server to receive the postbacks.
+To opt in to receive copies of winning postbacks for your advertised app, add the `AttributionCopyEndpoint` key your app’s Xcode project’s Information Property List , and configure your server to receive the postbacks.
 
-To add the key in your app’s `Info.plist` file:
+To add the key in your app’s Information Property List through the Info pane in Xcode:
 
-1. Select `Info.plist` in the Project navigator in Xcode.
-2. Click the Add button (+) beside a key in the property list editor.
-3. Type the key name `AdAttributionKit` and select `AdAttributionKit - Postback Copy URL` from the pop-up menu.
-4. Choose String from the pop-up menu in the Type column.
-5. Type a valid URL in the format of `https://example.com` that contains your domain name in place of `example.com`.
+1. Select your app’s target in the Project navigator in Xcode.
+2. Select the Info pane in the project settings.
+3. Click the Add button (+) beside a key in the property list editor.
+4. Type the key name `AdAttributionKit` and select `AdAttributionKit - Postback Copy URL` from the pop-up menu.
+5. Choose String from the pop-up menu in the Type column.
+6. Type a valid URL in the format of `https://example.com` that contains your domain name in place of `example.com`.
 
 For more information about editing property lists, see [`Edit property lists`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev3f399a2a6).
 
@@ -32,17 +33,20 @@ https://example.com/.well-known/appattribution/report-attribution/
 
 Replace `example.com` with your domain name.
 
+> **Note**: If your app uses the [`AdAttributionKit`](AdAttributionKit.md) framework and the [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) class, add the AdAttributionKit and `SKAdNetwork` postback copy URLs to your app’s Information Property List through the Info pane in Xcode. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+
 For more information about receiving postbacks, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
 
 #### Opt in to Receive Copies of Winning Reengagement Postbacks
 
-To receive copies of winning reengagement postbacks, you need to add an additional key to your app’s `Info.plist` file. Follow these steps:
+To receive copies of winning reengagement postbacks, you need to add an additional key to your app’s Information Property List. Follow these steps:
 
-1. Select `Info.plist` in the Project navigator in Xcode.
-2. Click the Add button (+) beside a key in the property list editor.
-3. Type the key name `AdAttributionKit` and select `AdAttributionKit - Opt in for Reengagement Postback Copies` from the pop-up menu.
-4. Choose Boolean from the pop-up menu in the Type column.
-5. Set its value to `YES`.
+1. Select your app’s target in the Project navigator in Xcode.
+2. Select the Info pane in the project settings.
+3. Click the Add button (+) beside a key in the property list editor.
+4. Type the key name `AdAttributionKit` and select `AdAttributionKit - Opt in for Reengagement Postback Copies` from the pop-up menu.
+5. Choose Boolean from the pop-up menu in the Type column.
+6. Set its value to `YES`.
 
 ## See Also
 

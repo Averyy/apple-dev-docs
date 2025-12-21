@@ -20,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object is ready to detect pointer-based events in its owning view and initiate interactions. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the object ignores events and doesn’t start interactions. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object is ready to detect pointer-based events in its owning view and initiate interactions. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the object ignores events and doesn’t start interactions. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

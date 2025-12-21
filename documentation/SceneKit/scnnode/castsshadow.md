@@ -22,7 +22,7 @@ var castsShadow: Bool { get set }
 
 #### Discussion
 
-SceneKit renders shadows by rendering a  image containing silhouettes of the scene’s contents, and then projecting that image onto the scene. SceneKit performs this process once for each [`SCNLight`](scnlight.md) object in the scene whose [`castsShadow`](scnlight/castsshadow.md) property is [`true`](https://developer.apple.com/documentation/swift/true). Because shadow map rendering re-renders portions of the scene, it incurs a performance cost. To minimize this performance cost, exclude nodes from shadow map rendering by setting the node’s [`castsShadow`](scnnode/castsshadow.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+SceneKit renders shadows by rendering a  image containing silhouettes of the scene’s contents, and then projecting that image onto the scene. SceneKit performs this process once for each [`SCNLight`](scnlight.md) object in the scene whose [`castsShadow`](scnlight/castsshadow.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). Because shadow map rendering re-renders portions of the scene, it incurs a performance cost. To minimize this performance cost, exclude nodes from shadow map rendering by setting the node’s [`castsShadow`](scnnode/castsshadow.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 For more details on shadow rendering, see [`SCNLight`](scnlight.md).
 

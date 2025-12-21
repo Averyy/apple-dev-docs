@@ -6,7 +6,7 @@
 A boolean whether the location is the user’s inferred workplace.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

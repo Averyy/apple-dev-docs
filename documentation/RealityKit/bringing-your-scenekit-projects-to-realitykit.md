@@ -5,12 +5,12 @@
 Adapt a platformer game for RealityKit’s powerful ECS and modularity.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -274,7 +274,7 @@ This approach ensures your RealityKit application performs well across all suppo
   Use RealityKit to create an interactive ride in visionOS.
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Creating a game with scene understanding](creating_a_game_with_scene_understanding.md)
+- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 
 

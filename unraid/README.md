@@ -84,42 +84,48 @@ The container includes pre-scraped documentation and will automatically:
 
 ### For Claude Desktop/Code on Your Computer
 
-1. Clone the repo to get the bridge script:
+1. Clone the repo to get the remote client:
    ```bash
    git clone https://github.com/averyy/apple-developer-docs.git
+   cd apple-developer-docs
+   pip install aiohttp  # Required dependency
    ```
 
-2. Configure Claude to use the bridge:
+2. Configure Claude to use the remote client:
 
    **Claude Desktop** (`~/Library/Application Support/Claude/claude_desktop_config.json`):
    ```json
    {
      "mcpServers": {
-       "apple-docs-unraid": {
+       "apple-docs": {
+         "type": "stdio",
          "command": "python3",
          "args": [
-           "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
-           "--server-url", "http://YOUR_UNRAID_IP:8080/mcp"
-         ],
-         "env": {
-           "MCP_API_KEY": "your-mcp-api-key"
-         }
+           "/path/to/apple-developer-docs/apple_docs_remote_client.py",
+           "--server-url",
+           "http://YOUR_UNRAID_IP:8080/mcp",
+           "--api-key",
+           "your-mcp-api-key"
+         ]
        }
      }
    }
    ```
 
-   **Claude Code** (`.claude/mcp_servers.json`):
+   **Claude Code** (MCP settings):
    ```json
    {
-     "apple-docs-unraid": {
-       "command": "python3",
-       "args": [
-         "/path/to/apple-developer-docs/mcp-server/apple_docs_stdio_http_bridge.py",
-         "--server-url", "http://YOUR_UNRAID_IP:8080/mcp"
-       ],
-       "env": {
-         "MCP_API_KEY": "your-mcp-api-key"
+     "mcpServers": {
+       "apple-docs": {
+         "type": "stdio",
+         "command": "python3",
+         "args": [
+           "/path/to/apple-developer-docs/apple_docs_remote_client.py",
+           "--server-url",
+           "http://YOUR_UNRAID_IP:8080/mcp",
+           "--api-key",
+           "your-mcp-api-key"
+         ]
        }
      }
    }
@@ -131,8 +137,11 @@ The container includes pre-scraped documentation and will automatically:
 # Health check (no auth required)
 curl http://YOUR_UNRAID_IP:8080/health
 
+# Test remote connection
+python3 apple_docs_remote_client.py --server-url http://YOUR_UNRAID_IP:8080/mcp --api-key your-key --test
+
 # Test with Claude
-# In Claude: @apple-docs-unraid search_apple_docs("SwiftUI Button")
+# In Claude: @apple-docs search_apple_docs("SwiftUI Button")
 ```
 
 ## Monitoring

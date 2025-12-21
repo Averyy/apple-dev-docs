@@ -25,7 +25,7 @@ Access the other participants in a session through the playback coordinator’s 
 
 ## Topics
 
-### Accessing Participant Status
+### Accessing participant status
 - [var identifier: UUID](avcoordinatedplaybackparticipant/identifier.md)
   A unique identifier for the participant.
 - [var isReadyToPlay: Bool](avcoordinatedplaybackparticipant/isreadytoplay.md)

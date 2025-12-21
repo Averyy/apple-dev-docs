@@ -16,7 +16,7 @@ Returns the bounds for the specified PDF display box.
 ## Declaration
 
 ```swift
-func bounds(for box: PDFDisplayBox) -> CGRect
+func bounds(for box: PDFDisplayBox) -> NSRect
 ```
 
 #### Discussion

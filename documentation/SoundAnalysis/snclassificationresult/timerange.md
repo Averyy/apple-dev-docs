@@ -22,7 +22,7 @@ var timeRange: CMTimeRange { get }
 
 #### Discussion
 
-The time range’s doc://com.apple.documentation/documentation/coremedia/cmtime-u58 values are the number of audio frames at the analyzer’s sample rate. Use these time indices to determine where, in time, the result corresponds to the original audio.
+The time range’s [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) values are the number of audio frames at the analyzer’s sample rate. Use these time indices to determine where, in time, the result corresponds to the original audio.
 
 A result’s time range typically refers to audio older than its most recent audio because the request gathers the data into blocks before sending them to the model.
 

@@ -3,11 +3,11 @@
 **Framework**: Compositor Services  
 **Kind**: method
 
-Store the `value` parameter in the stencil texture in the pixels that Compositor will display on the screen.
+Store the value parameter in the stencil texture in the pixels that the Compositor displays onscreen.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,20 +17,27 @@ func drawMaskOnStencilAttachment(commandEncoder command_encoder: any MTL4RenderC
 
 #### Discussion
 
-> **Note**: In Full and Mixed immersion style, this will be the full texture.
+In full and mixed immersion styles, [`drawMaskOnStencilAttachment(commandEncoder:value:)`](layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-65i67.md) stores the full texture. The command encoder used in the render context has the following constraints:
 
-> **Note**: The command encoder used in the render context has the following constraints: - stencil texture: should have the same pixel format as [`cp_layer_renderer_configuration_get_drawable_render_context_stencil_format`](cp_layer_renderer_configuration_get_drawable_render_context_stencil_format.md)
-- renderTargetArrayLength: should be the same as the number of views in the drawable.
-- rasterizationRateMap: should be the one provided by the drawable.
-- layer renderer layout: Dedicated and Shared layout is not supported.
-- supportColorAttachmentMapping: The render pass descriptor used to create the render encoder should have `supportColorAttachmentMapping` set to true.
+- The stencil texture has the same pixel format as [`cp_layer_renderer_configuration_get_drawable_render_context_stencil_format`](cp_layer_renderer_configuration_get_drawable_render_context_stencil_format.md).
+- The [`renderTargetArrayLength`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor/renderTargetArrayLength) is the same as the number of views in the layer renderer drawable.
+- The [`rasterizationRateMap`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor/rasterizationRateMap) matches the one provided by the layer renderer drawable.
+- The API doesn’t support dedicated or shared layouts.
 
-> **Note**: This function will modify the depth stencil state, the viewports, the vertex amplification count and some of the texture bindings in the render command encoder passed to the function. Make sure to set those values again to the ones expected in your application.
+If the render encoder has multiple color attachments, set [`supportColorAttachmentMapping`](https://developer.apple.com/documentation/Metal/MTL4RenderPassDescriptor/supportColorAttachmentMapping) to `true` to avoid Metal API validation errors.
+
+For testing performance of this method, always test your app on-device rather than in Simulator. However, if you need to iterate on your code in development, you can disable API validation in Xcode, or separate the rendering into multiple render encoders for other color attachments.
+
+This function modifies the depth stencil state, viewports, vertex amplification count, and some of the texture bindings in the render command encoder passed to the function. Make sure to set those values again to those expected in your app.
 
 ## Parameters
 
-- `command_encoder`: The command encoder to use to render the Compositor effects   and present the drawable.
-- `value`: The value to use when updating the stencil texture in the command_encoder.
+- `value`: The value to use when updating the stencil texture in the  .
+
+## See Also
+
+- [func endEncoding(commandEncoder: any MTL4RenderCommandEncoder)](layerrenderer/drawable/rendercontext/endencoding(commandencoder:)-2l6lk.md)
+  Finish encoding the render context.
 
 
 ---

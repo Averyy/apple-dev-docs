@@ -1,4 +1,4 @@
 Completed scraping Nearby Interaction!
-Total pages scraped: 130
+Total pages scraped: 131
 Pages skipped (unchanged): 1
 Pages failed: 0

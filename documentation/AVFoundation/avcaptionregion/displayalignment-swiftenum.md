@@ -23,7 +23,7 @@ When you insert a caption line, the region places it relative to existing lines.
 
 ## Topics
 
-### Display Alignments
+### Display alignments
 - [AVCaptionRegion.DisplayAlignment.before](avcaptionregion/displayalignment-swift.enum/before.md)
   An alignment that positions lines at the top of the block progression direction.
 - [AVCaptionRegion.DisplayAlignment.center](avcaptionregion/displayalignment-swift.enum/center.md)

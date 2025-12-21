@@ -67,7 +67,7 @@ When your app needs to create a pipeline state that replaces unspecialized value
 1. Configuring a new descriptor that provides concrete values for the properties that the unspecialized pipeline state’s descriptor doesn’t define.
 2. Compiling that descriptor and the unspecialized pipeline state into specialized pipeline state.
 
-Creating specialized pipeline states from unspecialized pipeline ones can improve your app’s runtime performance because it doesn’t need to recompile the common code each time. The technique can also save memory at runtime, especially with shaders that have more code in their main body, because it doesn’t need to recreate communal state or recompile the shader’s main body for each pipeline state specialization.
+Creating specialized pipeline states from unspecialized pipeline ones can improve your app’s runtime performance because it doesn’t need to recompile the common code each time. The technique can also save memory at runtime, especially with shaders that have more code in their main body, because it doesn’t need to recreate common state or recompile the shader’s main body for each pipeline state specialization.
 
 ##### Improve Gpu Runtime Performance with Color Attachment Mapping
 
@@ -78,9 +78,9 @@ Metal 4 introduces the ability to modify the way a render pass maps its pipeline
 
 ## See Also
 
-- [Shader Libraries](shader-libraries.md)
+- [Shader libraries](shader-libraries.md)
   Manage and load your app’s Metal shaders.
-- [Using Function Specialization to Build Pipeline Variants](using-function-specialization-to-build-pipeline-variants.md)
+- [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 
 

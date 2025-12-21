@@ -21,7 +21,7 @@ var arrayLength: Int { get set }
 
 #### Discussion
 
-The value of this property must be between `1` and `2048`, inclusive. The default value is `1`.
+The value of this property needs to be between `1` and `2048`, inclusive. The default value is `1`.
 
 This value is `1` if the texture type is not an array.
 

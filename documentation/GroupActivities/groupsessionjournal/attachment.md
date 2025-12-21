@@ -35,11 +35,8 @@ When your app receives a new item, the system packages it in an [`GroupSessionJo
 - [func loadMetadata<MetadataType>(of: MetadataType.Type) async throws -> MetadataType](groupsessionjournal/attachment/loadmetadata(of:).md)
   Downloads the metadata for the attachment asynchronously and delivers it as the type you specify.
 ### Identifying the attachment
-- [var id: UUID](groupsessionjournal/attachment/id-swift.property.md)
+- [var id: UUID](groupsessionjournal/attachment/id.md)
   The unique identifier for this attachment.
-### Type Aliases
-- [GroupSessionJournal.Attachment.ID](groupsessionjournal/attachment/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

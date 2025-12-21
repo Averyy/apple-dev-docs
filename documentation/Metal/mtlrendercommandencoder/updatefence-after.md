@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encodes a command that instructs the GPU to update a fence after one or more stages, which signals passes waiting on the fence.
+Encodes a command that instructs the GPU to update a fence after one or more stages, which can unblock other passes waiting for the fence.
 
 **Availability**:
 - iOS 10.0+
@@ -22,18 +22,30 @@ func updateFence(_ fence: any MTLFence, after stages: MTLRenderStages)
 
 #### Discussion
 
-Fences maintain order to prevent GPU data hazards as the GPU runs various passes, including render passes, within the same command queue. The render pass notifies any passes or stages waiting for `fence` (see [`waitForFence(_:before:)`](mtlrendercommandencoder/waitforfence(_:before:).md)) each time it finishes running a stage in the `stages` parameter.
+You can synchronize memory operations of a render pass that access resources with an [`MTLFence`](mtlfence.md). This method instructs the pass to update `fence` after the stages you pass to the `stages` run all their memory store operations to the resources it accesses. The fence indicates when other passes can access those resources without a race condition.
 
-> ❗ **Important**:  For a render pass that updates and waits for the same fence, call [`waitForFence(_:before:)`](mtlrendercommandencoder/waitforfence(_:before:).md) before calling [`updateFence(_:after:)`](mtlrendercommandencoder/updatefence(_:after:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
+For more information about synchronization with fences, see:
 
-The GPU driver evaluates the pass’s fences and the commands that depend on them when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+- [`Resource synchronization`](resource-synchronization.md)
+- [`Synchronizing passes with a fence`](synchronizing-passes-with-a-fence.md)
 
-Apple family GPUs can update and respond to fences on a per-stage basis. That allows those GPUs to run portions of different stages, such as vertex and fragment, at the same time. You can check whether a GPU is in an Apple GPU family with the [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method.
+##### Reuse a Fence By Waiting First and Updating Second
+
+When encoding a render pass that reuses a fence, wait for other passes to update the fence before repurposing that fence to notify subsequent passes with an update:
+
+1. Call the [`waitForFence(_:before:)`](mtlrendercommandencoder/waitforfence(_:before:).md) method before encoding commands that need to wait for other passes.
+2. Call the [`updateFence(_:after:)`](mtlrendercommandencoder/updatefence(_:after:).md) method after encoding commands that later passes depend on.
+
+The GPU driver evaluates the fences that apply to the pass and the commands that depend on those fences when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
+
+> ⚠️ **Warning**:  Don’t update a fence and then wait for the same fence within a pass because it can create a GPU deadlock.
+
+To synchronize different stages within a single pass, create an  because a fence can only synchronize memory operations between different passes. For more information, see [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
 
 ## Parameters
 
-- `fence`: An   instance the render pass updates after the applicable stages to inform the GPU that it can start or resume any passes waiting for  .
-- `stages`: An   instance that designates which stages in the render pass apply to  .
+- `fence`: A fence the pass updates after the stages in   complete.
+- `stages`: The render stages that need to complete before the pass updates  .
 
 ## See Also
 

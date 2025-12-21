@@ -21,7 +21,7 @@ enum MTLCommandBufferStatus
 
 ## Topics
 
-### Command Buffer States
+### Command buffer states
 - [MTLCommandBufferStatus.notEnqueued](mtlcommandbufferstatus/notenqueued.md)
   A command buffer’s initial state, which indicates its command queue isn’t reserving a place for it.
 - [MTLCommandBufferStatus.enqueued](mtlcommandbufferstatus/enqueued.md)
@@ -51,7 +51,7 @@ enum MTLCommandBufferStatus
 
 - [var status: MTLCommandBufferStatus](mtlcommandbuffer/status.md)
   The command buffer’s current state.
-- [Command Buffer Debugging](command-buffer-debugging.md)
+- [Command buffer debugging](command-buffer-debugging.md)
   Properties and methods for programmatically debugging runtime issues with a command buffer.
 
 

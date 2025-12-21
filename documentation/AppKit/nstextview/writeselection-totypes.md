@@ -17,7 +17,7 @@ func writeSelection(to pboard: NSPasteboard, types: [NSPasteboard.PasteboardType
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data for any single type was successfully written, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the data for any single type was successfully written, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

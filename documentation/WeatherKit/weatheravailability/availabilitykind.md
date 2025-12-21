@@ -31,18 +31,6 @@ enum AvailabilityKind
   The availability is unknown.
 - [WeatherAvailability.AvailabilityKind.unsupported](weatheravailability/availabilitykind/unsupported.md)
   The data isn’t supported for the location.
-### Initializers
-- [init?(rawValue: String)](weatheravailability/availabilitykind/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](weatheravailability/availabilitykind/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [WeatherAvailability.AvailabilityKind.RawValue](weatheravailability/availabilitykind/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](weatheravailability/availabilitykind/equatable-implementations.md)
-- [RawRepresentable Implementations](weatheravailability/availabilitykind/rawrepresentable-implementations.md)
 
 ## Relationships
 

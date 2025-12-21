@@ -21,7 +21,7 @@ func removeConstraint(_ constraint: NSLayoutConstraint)
 
 #### Discussion
 
-When developing for iOS 8.0 or later, set the constraint’s [`isActive`](nslayoutconstraint/isactive.md) property to [`false`](https://developer.apple.com/documentation/swift/false) instead of calling the [`removeConstraint(_:)`](uiview/removeconstraint(_:).md) method directly. The [`isActive`](nslayoutconstraint/isactive.md) property automatically adds and removes the constraint from the correct view.
+When developing for iOS 8.0 or later, set the constraint’s [`isActive`](nslayoutconstraint/isactive.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) instead of calling the [`removeConstraint(_:)`](uiview/removeconstraint(_:).md) method directly. The [`isActive`](nslayoutconstraint/isactive.md) property automatically adds and removes the constraint from the correct view.
 
 ## Parameters
 

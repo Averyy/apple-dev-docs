@@ -11,7 +11,7 @@ The category of the place.
 ## Declaration
 
 ```swift
-attribute mapkit.PointOfInterestCategory pointOfInterestCategory;
+pointOfInterestCategory?: string;
 ```
 
 ## See Also

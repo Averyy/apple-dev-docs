@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: module
 
-Initiate and handle VoIP conversations, coordinate them with other communication apps and the system, and get ready to be a default calling or dialer app.
+Initiate and handle VoIP and cellular conversations, coordinate them with other communication apps and the system, and get ready to be a default calling or dialer app.
 
 **Availability**:
 - iOS 17.4+
@@ -36,16 +36,27 @@ With a person’s permission, an installed health research app that uses [`Senso
   Let people configure their device to set your app as the default dialer app.
 - [LiveCommunicationKit updates](../Updates/LiveCommunicationKit.md)
   Learn about important changes to LiveCommunicationKit.
-### VoIP conversation management
+### Cellular network conversations
+- [class TelephonyConversationManager](telephonyconversationmanager.md)
+  An interface for initiating cellular network conversations.
+- [struct StartCellularConversationAction](startcellularconversationaction.md)
+  The action that starts a cellular conversation using the default calling app.
+- [struct CellularService](cellularservice.md)
+  A structure that represents the cellular service account to use for starting or joining a conversation.
+- [struct Handle](handle.md)
+  A way to reach a participant, such as a phone number or email address.
+### VoIP conversations
 - [class ConversationManager](conversationmanager.md)
   An interface for managing and observing VoIP conversations.
 - [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
   Methods for managing conversations and receiving VoIP conversation updates.
+- [class ConversationHistoryManager](conversationhistorymanager.md)
+  An interface for managing and providing conversation history.
 - [class Conversation](conversation.md)
   A type that describes a video or audio conversation.
-### VoIP conversation actions
+### Conversation actions
 - [class ConversationAction](conversationaction.md)
-  A type that represents a VoIP action for a conversation.
+  A type that represents an action for a conversation.
 - [class EndConversationAction](endconversationaction.md)
   An action that removes the local participant from a conversation and stops all audio and video streams.
 - [class JoinConversationAction](joinconversationaction.md)
@@ -64,21 +75,6 @@ With a person’s permission, an installed health research app that uses [`Senso
   An action that starts an outgoing conversation and causes the devices of a remote participant to ring.
 - [class UnmergeConversationAction](unmergeconversationaction.md)
   An action that separates two previosuly merged conversations.
-### Participant information
-- [struct Handle](handle.md)
-  A way to reach a participant, such as a phone number or email address.
-### Conversation history
-- [class ConversationHistoryManager](conversationhistorymanager.md)
-  An interface for managing and providing conversation history.
-- [protocol ConversationHistoryManagerDelegate](conversationhistorymanagerdelegate.md)
-  Methods for receiving updates to the conversation history.
-### Classes
-- [class TelephonyConversationManager](telephonyconversationmanager.md)
-### Structures
-- [struct CellularService](cellularservice.md)
-  Struct representing an account which can be used to dial a call
-- [struct StartCellularConversationAction](startcellularconversationaction.md)
-  Struct representing a request to dial a conversation using the default calling application
 
 
 ---

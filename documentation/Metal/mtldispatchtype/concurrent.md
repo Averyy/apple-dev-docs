@@ -21,7 +21,7 @@ case concurrent
 
 #### Discussion
 
-If you encode multiple commands that access the same resources, you’re responsible for synchronizing access to those resources. See `Controlling execution and memory barriers` for information on how to safely synchronize and access data.
+If you encode multiple commands that access a single resource, you’re responsible for synchronizing the memory operations to that resource. For more information, see [`Resource synchronization`](resource-synchronization.md).
 
 ## See Also
 

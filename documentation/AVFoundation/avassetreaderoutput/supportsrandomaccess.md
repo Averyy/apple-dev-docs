@@ -21,9 +21,9 @@ var supportsRandomAccess: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means you can’t reconfigure the output after reading begins. This setting may result in more efficient reading, particularly when you’re using multiple asset reader outputs.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which means you can’t reconfigure the output after reading begins. This setting may result in more efficient reading, particularly when you’re using multiple asset reader outputs.
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that you can reconfigure the output’s time ranges after reading begins by calling the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method. This setting also prevents the asset reader from progressing to a completed state until you call the [`markConfigurationAsFinal()`](avassetreaderoutput/markconfigurationasfinal().md) method.
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates that you can reconfigure the output’s time ranges after reading begins by calling the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method. This setting also prevents the asset reader from progressing to a completed state until you call the [`markConfigurationAsFinal()`](avassetreaderoutput/markconfigurationasfinal().md) method.
 
 You can’t set this value after you call [`startReading()`](avassetreader/startreading().md) on the asset reader.
 

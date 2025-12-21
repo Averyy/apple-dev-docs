@@ -35,7 +35,7 @@ A human-readable string giving the name of `encoding` in the current locale.
 - [static var defaultCStringEncoding: String.Encoding](string/defaultcstringencoding.md)
   The C-string encoding assumed for any method accepting a C string as an argument.
 - [var isContiguousUTF8: Bool](string/iscontiguousutf8.md)
-  Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+  Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
 - [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)

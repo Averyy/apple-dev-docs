@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Remove a `Unicode.Scalar` representation of a character from the `CharacterSet`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -18,6 +20,10 @@
 @discardableResult
 mutating func remove(_ character: Unicode.Scalar) -> Unicode.Scalar?
 ```
+
+#### Discussion
+
+`Unicode.Scalar` values are available on `Swift.String.UnicodeScalarView`.
 
 
 ---

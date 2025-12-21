@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- visionOS 2.4+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -14,6 +14,8 @@ var isLookToScrollEnabled: Bool { get set }
 ```
 
 #### Discussion
+
+A Boolean value indicating whether LookToScroll is enabled.
 
 The default value is `NO`.
 

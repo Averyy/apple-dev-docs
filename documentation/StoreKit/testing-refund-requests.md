@@ -6,7 +6,7 @@ Test your app’s implementation of refund requests, and your app’s and server
 
 #### Overview
 
-The sandbox environment and StoreKit Testing in Xcode both support testing refund requests, which enable your customers to request a refund from within your app. Your app displays the refund request sheet by calling any of these methods: [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-65tph.md) , [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-63bvd.md), [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-9mscy.md), [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-9k0pj.md), or [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/SwiftUI/View/refundRequestSheet(for:isPresented:onDismiss:)). Customers fill out the sheet to submit the request.
+The sandbox environment and StoreKit Testing in Xcode both support testing refund requests, which enable your customers to request a refund from within your app. Your app displays the refund request sheet by calling any of these methods: [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-65tph.md) , [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-63bvd.md), [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-9mscy.md), [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-9k0pj.md), or [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/SwiftUI/View/refundRequestSheet(for:isPresented:onDismiss:)). While you’re testing your app, you fill out the sheet to submit the request.
 
 Depending on your testing setup, the App Store automatically approves or declines the refund request in the testing environment. Note that the App Store doesn’t send emails for refund requests in testing environments.
 
@@ -21,12 +21,42 @@ Your app receives a [`Transaction`](transaction.md) with refund information in t
 To set up a test for declined refunds, follow these steps on the refund request sheet with your app running in the sandbox environment:
 
 1. Under Issue, select Other.
-2. In the text box, type REJECT.
+2. In the text box, type DECLINE.
 3. Tap Request Refund.
 
 The App Store automatically rejects the refund request in the testing environment.
 
 If your server receives [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) for the sandbox environment, it gets a notification with a `REFUND_DECLINED` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+
+##### Test Prorated Refunds
+
+To set up a test for prorated refunds, follow these steps on the refund request sheet with your app running in the sandbox environment:
+
+1. Under Issue, select Other.
+2. In the text box, type GRANT_PRORATED.
+3. Tap Request Refund.
+
+The testing environment determines the prorated percentages as follows:
+
+- For auto-renewable subscriptions, it calculates the proration based on the time that remains on the subscription
+- For consumables, non-consumables, and non-renewing subscriptions, it uses a default proration of 50%
+
+In the testing environment, the App Store automatically approves the prorated refund.
+
+Your app receives a [`Transaction`](transaction.md) with refund information in the [`revocationDate`](transaction/revocationdate.md) and [`revocationReason`](transaction/revocationreason-swift.property.md) properties. If you’re testing in the sandbox environment and your server receives [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) for the sandbox, it gets a notification with a `REFUND` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType). For prorated refunds, the transaction data includes the `revocationType` field with a value of `REFUND_PRORATED` and the `revocationPercentage` field.
+
+##### Test Prorated Refunds with Information From Your Server
+
+Another way to test prorated refunds is to provide the refund information by calling the [`Send Consumption Information`](https://developer.apple.com/documentation/AppStoreServerAPI/Send-Consumption-Information), following these steps:
+
+1. In your app, select any refund reason on the refund request sheet, and submit the sheet.
+2. The App Store server sends a `CONSUMPTION_REQUEST` notification to your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) for the sandbox environment.
+3. Respond by calling [`Send Consumption Information`](https://developer.apple.com/documentation/AppStoreServerAPI/Send-Consumption-Information). Note that in the sandbox environment you need to respond to the notification within five minutes for the system to apply your consumption information to the refund request.
+
+The values you provide in the [`ConsumptionRequest`](https://developer.apple.com/documentation/AppStoreServerAPI/ConsumptionRequest) determine the outcome of the refund in the testing environment:
+
+- Specify the `GRANT_PRORATED` value as the refund preference to get a prorated refund
+- Specify a valid `consumptionPercentage`. The testing environment approves the prorated refund using your consumption percentage.
 
 For more information on receiving server notifications for the sandbox environment, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md). For more information on testing, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md) and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
 
@@ -38,6 +68,8 @@ For more information on receiving server notifications for the sandbox environme
   Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
   Validate your app’s handling of win-back offers that you configure for the testing environment.
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+  Validate your app’s handling of Ask To Buy in the testing environment.
 
 
 ---

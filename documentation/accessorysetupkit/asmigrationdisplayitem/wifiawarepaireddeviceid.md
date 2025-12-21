@@ -6,8 +6,8 @@
 The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.1+
+- iPadOS 26.1+
 
 ## Declaration
 

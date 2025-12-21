@@ -21,13 +21,13 @@ class MTLFunctionConstant
 
 #### Overview
 
-Don’t create a [`MTLFunctionConstant`](mtlfunctionconstant.md) object directly. Instead, the list of function constants for a function by querying the `functionConstants` property of a [`MTLFunction`](mtlfunction.md) object.
+Don’t create an [`MTLFunctionConstant`](mtlfunctionconstant.md) instance directly. Instead, the list of function constants for a function by querying the `functionConstants` property of an [`MTLFunction`](mtlfunction.md) instance.
 
-A [`MTLFunctionConstant`](mtlfunctionconstant.md) object should only be obtained from a nonspecialized function created with the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method. You only need a [`MTLFunctionConstant`](mtlfunctionconstant.md) object if you don’t have sufficient information to create a [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) object used to create a specialized function with the [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md) or [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md) method.
+An [`MTLFunctionConstant`](mtlfunctionconstant.md) instance should only be obtained from a nonspecialized function created with the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method. You only need an [`MTLFunctionConstant`](mtlfunctionconstant.md) instance if you don’t have sufficient information to create an [`MTLFunctionConstantValues`](mtlfunctionconstantvalues.md) instance used to create a specialized function with the [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md) or [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md) method.
 
 ## Topics
 
-### Reading the Function Constant’s Properties
+### Reading the function constant’s properties
 - [var name: String](mtlfunctionconstant/name.md)
   The name of the function constant.
 - [var type: MTLDataType](mtlfunctionconstant/type.md)
@@ -35,7 +35,7 @@ A [`MTLFunctionConstant`](mtlfunctionconstant.md) object should only be obtained
 - [var index: Int](mtlfunctionconstant/index.md)
   The index of the function constant.
 - [var required: Bool](mtlfunctionconstant/required.md)
-  A Boolean value indicating whether the function constant must be provided to specialize the function.
+  A Boolean value indicating whether the function constant needs to be provided to specialize the function.
 
 ## Relationships
 
@@ -52,7 +52,7 @@ A [`MTLFunctionConstant`](mtlfunctionconstant.md) object should only be obtained
 ## See Also
 
 - [class MTLFunctionConstantValues](mtlfunctionconstantvalues.md)
-  A set of constant values that specialize a graphics or compute function.
+  A set of constant values that specialize a graphics or compute GPU function.
 
 
 ---

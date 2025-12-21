@@ -54,7 +54,6 @@ By default, a sound-classifier training session’s transfer-learning algorithm 
   The source of a validation dataset for a sound classifier.
 - [MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
   The algorithm options to train a sound classifier.
-### Enumerations
 - [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
   The classifier options for a sound classifier training algorithm.
 - [MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md)

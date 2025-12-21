@@ -21,7 +21,7 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
 ### Essentials
 - [Customizing window styles and state-restoration behavior in macOS](customizing-window-styles-and-state-restoration-behavior-in-macos.md)
   Configure how your app’s windows look and function in macOS to provide an engaging and more coherent experience.
-- [Bringing multiple windows to your SwiftUI app](bringing_multiple_windows_to_your_swiftui_app.md)
+- [Bringing multiple windows to your SwiftUI app](bringing-multiple-windows-to-your-swiftui-app.md)
   Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 ### Creating windows
 - [struct WindowGroup](windowgroup.md)

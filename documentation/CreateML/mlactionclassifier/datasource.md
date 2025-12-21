@@ -53,6 +53,8 @@ enum DataSource
 
 - [MLActionClassifier.ModelParameters](mlactionclassifier/modelparameters-swift.struct.md)
   Parameters that affect the training process of an action classifier.
+- [MLActionClassifier.VideoAugmentationOptions](mlactionclassifier/videoaugmentationoptions.md)
+  The video augmentations for an action classifier training session.
 
 
 ---

@@ -32,12 +32,6 @@ In practice, this means that, over the long run, numbers will be rounded up as o
   Round return values down.
 - [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
   Round return values up.
-- [NSDecimalNumber.RoundingMode.plain](nsdecimalnumber/roundingmode/plain.md)
-  Round to the closest possible return value; when caught halfway between two positive numbers, round up; when caught between two negative numbers, round down.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
-  Round return values down.
-- [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
-  Round return values up.
 
 
 ---

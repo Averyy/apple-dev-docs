@@ -85,7 +85,7 @@ Anchors identify the position of items in your augmented reality session. Use an
   Determine the camera position and lighting for the current session, and apply effects, such as occlusion, to elements of the environment.
 - [Data Management](data-management.md)
   Obtain detailed information about skeletal and face geometry, and saved world data.
-- [Creating USD files for Apple devices](../RealityKit/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
 

@@ -24,17 +24,6 @@ enum AppShortcutPhraseToken
 
 ### Getting the tokens
 - [AppShortcutPhraseToken.applicationName](appshortcutphrasetoken/applicationname.md)
-### Operators
-- [static func == (AppShortcutPhraseToken, AppShortcutPhraseToken) -> Bool](appshortcutphrasetoken/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](appshortcutphrasetoken/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](appshortcutphrasetoken/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](appshortcutphrasetoken/equatable-implementations.md)
 
 ## Relationships
 
@@ -42,13 +31,6 @@ enum AppShortcutPhraseToken
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-
-## See Also
-
-- [func appendLiteral(String)](appshortcutphrase/stringinterpolation/appendliteral(_:).md)
-  Appends a literal segment to the interpolation.
-- [func appendInterpolation<Value, Subject>(Subject)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-5kcab.md)
-- [func appendInterpolation(AppShortcutPhraseToken)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-47gqg.md)
 
 
 ---

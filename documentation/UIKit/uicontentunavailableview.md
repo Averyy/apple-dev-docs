@@ -83,8 +83,6 @@ In many cases, you won’t need to create a view of this type directly. Set a [`
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

@@ -6,8 +6,8 @@
 Creates a video frame with one pixelBuffer and specified layout.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

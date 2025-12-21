@@ -23,6 +23,9 @@ var loadedTimeRanges: [CMTimeRange] { get }
 
 - [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchstartevent/fromvariant.md)
 - [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchstartevent/tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/audiorendition.md)
+- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/videorendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
 
 
 ---

@@ -39,7 +39,7 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 ### SharePlay
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting Coordinated Media Playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [class AVPlaybackCoordinator](avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.
@@ -47,17 +47,18 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 ### Presentation
 - [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Using HEVC Video with Alpha](using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 - [class AVPlayerLayer](avplayerlayer.md)
   An object that presents the visual contents of a player object.
 - [class AVSynchronizedLayer](avsynchronizedlayer.md)
   A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback.
 ### Media selection
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 - [class AVMediaSelection](avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
@@ -69,6 +70,12 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
   A mutable object that represents a complete rendition of media selection options on an asset.
 - [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 ### Interstitials
 - [Providing an integrated view of your timeline when playing HLS interstitials](providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
   Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
@@ -98,7 +105,7 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 - [Supporting remote interactions in tvOS](supporting-remote-interactions-in-tvos.md)
   Set up your app to support remote commands and events in a variety of scenarios by using the relevant approach.
 ### Timed metadata
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVMetadataGroup](avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.

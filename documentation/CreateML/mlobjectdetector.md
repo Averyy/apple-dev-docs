@@ -46,16 +46,15 @@ You create an object detector training it with a combination of images and annot
   Creates an object detector with a data source.
 - [init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters) throws](mlobjectdetector/init(trainingdata:imagecolumn:annotationcolumn:annotationtype:parameters:).md)
   Creates an object detector with a data table.
-### Assessing model accuracy
-- [var trainingMetrics: MLObjectDetectorMetrics](mlobjectdetector/trainingmetrics.md)
-  Measurements of the object detector’s performance on the training dataset.
-- [var validationMetrics: MLObjectDetectorMetrics](mlobjectdetector/validationmetrics.md)
-  Measurements of the object detector’s performance on the validation dataset.
 ### Evaluating an object detector
 - [func evaluation(on: MLObjectDetector.DataSource) -> MLObjectDetectorMetrics](mlobjectdetector/evaluation(on:).md)
   Generates metrics by evaluating the object detector’s performance using annotated images in a data source.
 - [func evaluation(on: MLDataTable, imageColumn: String, annotationColumn: String) -> MLObjectDetectorMetrics](mlobjectdetector/evaluation(on:imagecolumn:annotationcolumn:).md)
   Generates metrics by evaluating the object detector’s performance using annotated images in a data table.
+- [var trainingMetrics: MLObjectDetectorMetrics](mlobjectdetector/trainingmetrics.md)
+  Measurements of the object detector’s performance on the training dataset.
+- [var validationMetrics: MLObjectDetectorMetrics](mlobjectdetector/validationmetrics.md)
+  Measurements of the object detector’s performance on the validation dataset.
 ### Testing an object detector
 - [func prediction(from: URL) throws -> MLObjectDetector.DetectedObjects](mlobjectdetector/prediction(from:).md)
   Locates objects in an image and generates an annotation for each object it detects.

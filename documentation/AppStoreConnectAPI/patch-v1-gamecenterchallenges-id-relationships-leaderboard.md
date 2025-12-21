@@ -18,6 +18,8 @@ Update the relationship between a leaderbaord and a specific Game Center challen
   Add a challenge to a Game Center detail or group by referencing an existing leaderboard.
 - [Modify a challenge](patch-v1-gamecenterchallenges-_id_.md)
   Update details for a specific Game Center challenge.
+- [Modify the leaderboard for a Game Center challenge](patch-v1-gamecenterchallenges-_id_-relationships-leaderboardv2.md)
+  Update the leaderboard relationship for a specific Game Center challenge.
 - [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
   Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 - [Delete a challenge](delete-v1-gamecenterchallenges-_id_.md)

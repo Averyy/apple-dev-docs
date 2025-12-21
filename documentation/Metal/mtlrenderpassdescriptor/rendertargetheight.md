@@ -22,7 +22,7 @@ var renderTargetHeight: Int { get set }
 ## See Also
 
 - [var renderTargetArrayLength: Int](mtlrenderpassdescriptor/rendertargetarraylength.md)
-  The number of active layers that all attachments must have for layered rendering.
+  The number of active layers that all attachments need to have for layered rendering.
 - [var renderTargetWidth: Int](mtlrenderpassdescriptor/rendertargetwidth.md)
   The width, in pixels, to constrain the render target to.
 

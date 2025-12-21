@@ -19,7 +19,7 @@ Many system frameworks use these types. When working with external systems, such
 ### Adopting Codability
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable = Decodable & Encodable](../Swift/Codable.md)
+- [typealias Codable](../Swift/Codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)
   A protocol that enables an object to be encoded and decoded for archiving and distribution.
@@ -78,8 +78,8 @@ Many system frameworks use these types. When working with external systems, such
 
 - [File System](file-system.md)
   Create, read, write, and examine files and folders in the file system.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [Spotlight](spotlight.md)
   Search for files and other items on the local device, and index your app’s content for searching.
 - [iCloud](icloud.md)

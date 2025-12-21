@@ -22,7 +22,7 @@ var isStandard: Bool { get }
 
 #### Discussion
 
-This value returns [`true`](https://developer.apple.com/documentation/swift/true) if the format is [`AVAudioCommonFormat.pcmFormatFloat32`](avaudiocommonformat/pcmformatfloat32.md); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This value returns [`true`](https://developer.apple.com/documentation/Swift/true) if the format is [`AVAudioCommonFormat.pcmFormatFloat32`](avaudiocommonformat/pcmformatfloat32.md); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -63,25 +63,14 @@ In the code above, `favoriteNumber` has a failure type of `Never`, indicating th
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<Never>](never/defaultresolverspecification.md)
 ### Default Implementations
-- [AppIntent Implementations](never/appintent-implementations.md)
 - [AtomicRepresentable Implementations](never/atomicrepresentable-implementations.md)
 - [Comparable Implementations](never/comparable-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](never/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](never/convertibletogeneratedcontent-implementations.md)
 - [Decodable Implementations](never/decodable-implementations.md)
 - [Encodable Implementations](never/encodable-implementations.md)
 - [Equatable Implementations](never/equatable-implementations.md)
-- [Generable Implementations](never/generable-implementations.md)
 - [Hashable Implementations](never/hashable-implementations.md)
 - [Identifiable Implementations](never/identifiable-implementations.md)
-- [InstructionsRepresentable Implementations](never/instructionsrepresentable-implementations.md)
-- [IntentResult Implementations](never/intentresult-implementations.md)
-- [ParameterSummary Implementations](never/parametersummary-implementations.md)
-- [PersistentlyIdentifiable Implementations](never/persistentlyidentifiable-implementations.md)
-- [PromptRepresentable Implementations](never/promptrepresentable-implementations.md)
 - [TestScoping Implementations](never/testscoping-implementations.md)
-- [TransferRepresentation Implementations](never/transferrepresentation-implementations.md)
-- [Transferable Implementations](never/transferable-implementations.md)
 
 ## Relationships
 

@@ -20,7 +20,7 @@ func indirectScribbleInteraction(_ interaction: any UIInteraction, isElementFocu
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the element is the one currently focused.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the element is the one currently focused.
 
 ## Parameters
 

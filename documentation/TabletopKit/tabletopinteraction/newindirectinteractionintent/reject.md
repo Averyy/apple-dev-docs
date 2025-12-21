@@ -6,7 +6,7 @@
 Return `reject` to indicate that interaction should not be started
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

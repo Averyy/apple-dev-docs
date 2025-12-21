@@ -6,7 +6,7 @@
 Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

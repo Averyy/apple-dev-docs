@@ -17,6 +17,11 @@
 var transformationMatrixLayout: MTLMatrixLayout { get set }
 ```
 
+## See Also
+
+- [var transformationMatrixBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbuffer.md)
+- [var transformationMatrixBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
+
 
 ---
 

@@ -24,7 +24,7 @@ var isAtomic: Bool { get set }
 
 Modifying records atomically prevents you from updating your data in a way that would leave it in an inconsistent state. You use atomic updates when you want to write multiple records to the same record zone. If there’s a failure to modify any of the records in a zone, CloudKit doesn’t change the other records in that same zone. The record zone must have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability for this behavior to apply. If a record zone doesn’t support the atomic capability, setting this property has no effect.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes all modifications within a single record zone to occur atomically. If your operation contains records in multiple record zones, a failure in one zone doesn’t prevent modifications to records in a different zone. Changing the value of this property to [`false`](https://developer.apple.com/documentation/swift/false) causes CloudKit to modify records individually, regardless of whether the record zone supports atomic modifications.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes all modifications within a single record zone to occur atomically. If your operation contains records in multiple record zones, a failure in one zone doesn’t prevent modifications to records in a different zone. Changing the value of this property to [`false`](https://developer.apple.com/documentation/Swift/false) causes CloudKit to modify records individually, regardless of whether the record zone supports atomic modifications.
 
 ## See Also
 

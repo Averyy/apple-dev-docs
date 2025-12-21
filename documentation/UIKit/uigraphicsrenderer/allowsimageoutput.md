@@ -20,7 +20,7 @@ var allowsImageOutput: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), this renderer can be used to generate [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) objects.
+If [`true`](https://developer.apple.com/documentation/Swift/true), this renderer can be used to generate [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) objects.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var canPause: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the VM is in a state that allows you to pause it. Call the [`pause(completionHandler:)`](vzvirtualmachine/pause(completionhandler:).md) method (Swift) or [`pause()`](vzvirtualmachine/pause().md) method (Objective-C) to pause the VM.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the VM is in a state that allows you to pause it. Call the [`pause(completionHandler:)`](vzvirtualmachine/pause(completionhandler:).md) method (Swift) or [`pause()`](vzvirtualmachine/pause().md) method (Objective-C) to pause the VM.
 
 ## See Also
 

@@ -64,7 +64,7 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
 - [NSHealthUpdateUsageDescription](../BundleResources/Information-Property-List/NSHealthUpdateUsageDescription.md)
   A message to the user that explains why the app requested permission to save samples to the HealthKit store.
 - [NSHealthShareUsageDescription](../BundleResources/Information-Property-List/NSHealthShareUsageDescription.md)
-  A message to the user that explains why the app requested permission to read samples from the HealthKit store.
+  A message that explains to people why the app requests permission to read samples from the HealthKit store.
 - [NSHealthRequiredReadAuthorizationTypeIdentifiers](../BundleResources/Information-Property-List/NSHealthRequiredReadAuthorizationTypeIdentifiers.md)
   The clinical record data types that your app must get permission to read.
 - [NSHealthClinicalHealthRecordsShareUsageDescription](../BundleResources/Information-Property-List/NSHealthClinicalHealthRecordsShareUsageDescription.md)

@@ -6,7 +6,7 @@
 Uses the specified preference value from the view to produce another view occupying the same 3D space of the first view.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

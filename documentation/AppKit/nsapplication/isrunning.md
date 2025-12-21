@@ -17,7 +17,7 @@ var isRunning: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the main event loop is running or [`false`](https://developer.apple.com/documentation/swift/false) when it’s not. Calling the [`stop(_:)`](nsapplication/stop(_:).md) method sets the value to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the main event loop is running or [`false`](https://developer.apple.com/documentation/Swift/false) when it’s not. Calling the [`stop(_:)`](nsapplication/stop(_:).md) method sets the value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

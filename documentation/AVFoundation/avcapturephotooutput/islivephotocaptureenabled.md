@@ -19,7 +19,7 @@ var isLivePhotoCaptureEnabled: Bool { get set }
 
 #### Discussion
 
-This value defaults to [`false`](https://developer.apple.com/documentation/swift/false). Changing this value while your session is running requires a lengthy reconfiguration of the capture render pipeline. If you intend to take any Live Photo captures, set this value to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md). If you change this property while the session is running, in-progress Live Photo captures end immediately, unfulfilled photo requests cancel, and the video preview temporarily freezes.
+This value defaults to [`false`](https://developer.apple.com/documentation/Swift/false). Changing this value while your session is running requires a lengthy reconfiguration of the capture render pipeline. If you intend to take any Live Photo captures, set this value to [`true`](https://developer.apple.com/documentation/Swift/true) before calling [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md). If you change this property while the session is running, in-progress Live Photo captures end immediately, unfulfilled photo requests cancel, and the video preview temporarily freezes.
 
 You must enable this option before initiating a photo capture with the [`livePhotoMovieFileURL`](avcapturephotosettings/livephotomoviefileurl.md) property of your photo settings object set to non-`nil`. However, after you’ve enabled this option, you can issue photo capture requests for both Live Photo captures and still photos.
 

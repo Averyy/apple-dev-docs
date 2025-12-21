@@ -22,7 +22,7 @@ func range(ofWeekendStart datep: AutoreleasingUnsafeMutablePointer<NSDate?>?, in
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the given date falls within a weekend period, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the given date falls within a weekend period, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

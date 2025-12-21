@@ -19,7 +19,7 @@ var isMagnetometerActive: Bool { get }
 
 #### Discussion
 
-This property indicates whether the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) or [`startMagnetometerUpdates()`](cmmotionmanager/startmagnetometerupdates().md) method has been called since the last time the [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupdates().md) method was called. (If the start methods hadn’t been called, the app could be getting updates from the magnetometer after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/swift/false).)
+This property indicates whether the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) or [`startMagnetometerUpdates()`](cmmotionmanager/startmagnetometerupdates().md) method has been called since the last time the [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupdates().md) method was called. (If the start methods hadn’t been called, the app could be getting updates from the magnetometer after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/Swift/false).)
 
 ## See Also
 

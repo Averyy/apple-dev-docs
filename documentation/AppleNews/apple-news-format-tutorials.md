@@ -88,6 +88,11 @@ Before beginning the tutorial, make sure you have the following installed:
 - [Examples](examples.md)
   Download more example article bundles for Apple News Format articles.
 
+## See Also
+
+- [Apple News Format](../applenewsformat/applenewsformat.md)
+  Get Apple News Format reference information, and create signature content for Apple News.
+
 
 ---
 

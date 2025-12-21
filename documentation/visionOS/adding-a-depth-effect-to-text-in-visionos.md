@@ -89,7 +89,7 @@ var textShadowView: some View {
 }
 ```
 
-The [`blur(radius:opaque:)`](https://developer.apple.com/documentation/DeviceActivity/DeviceActivityReport/blur(radius:opaque:)) view modifier applies a Gaussian blur to the text view, and the [`opacity(_:)`](https://developer.apple.com/documentation/SwiftUI/Color/opacity(_:)) view modifier makes the view semitransparent.
+The [`blur(radius:opaque:)`](https://developer.apple.com/documentation/SwiftUI/View/blur(radius:opaque:)) view modifier applies a Gaussian blur to the text view, and the [`opacity(_:)`](https://developer.apple.com/documentation/SwiftUI/Color/opacity(_:)) view modifier makes the view semitransparent.
 
 > **Note**: This property doesn’t change the offset along the z-axis from `0.0`, which places the shadow view in the same plane as the window that contains the `ZStack`.
 

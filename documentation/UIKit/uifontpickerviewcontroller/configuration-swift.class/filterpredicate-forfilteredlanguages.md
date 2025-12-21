@@ -20,11 +20,11 @@ class func filterPredicate(forFilteredLanguages filteredLanguages: [String]) -> 
 
 #### Return Value
 
-A predicate that is [`true`](https://developer.apple.com/documentation/swift/true) when at least one of the provided strings is present.
+A predicate that is [`true`](https://developer.apple.com/documentation/Swift/true) when at least one of the provided strings is present.
 
 #### Discussion
 
-Use this method to construct a predicate for [`filteredLanguagesPredicate`](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md) that restricts the font picker’s list to only include fonts that support the filtered languages. Provide language identifiers in the same format doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj uses.
+Use this method to construct a predicate for [`filteredLanguagesPredicate`](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md) that restricts the font picker’s list to only include fonts that support the filtered languages. Provide language identifiers in the same format [`CFLocale`](https://developer.apple.com/documentation/CoreFoundation/CFLocale) uses.
 
 ## Parameters
 

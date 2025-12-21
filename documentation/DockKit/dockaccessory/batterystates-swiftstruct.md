@@ -26,12 +26,8 @@ struct BatteryStates
 - [func makeAsyncIterator() -> DockAccessory.BatteryStates.Iterator](dockaccessory/batterystates-swift.struct/makeasynciterator.md)
   Creates and returns an iterator that traverses the list of dock accessory events.
 ### Type Aliases
-- [DockAccessory.BatteryStates.AsyncIterator](dockaccessory/batterystates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [DockAccessory.BatteryStates.Element](dockaccessory/batterystates-swift.struct/element.md)
   A dock accessory event.
-### Default Implementations
-- [AsyncSequence Implementations](dockaccessory/batterystates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

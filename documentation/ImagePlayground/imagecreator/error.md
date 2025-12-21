@@ -37,34 +37,9 @@ enum Error
   An error that indicates the app is hidden or in the background.
 - [ImageCreator.Error.creationFailed](imagecreator/error/creationfailed.md)
   An error that indicates a general failure occurred during image creation.
-### Getting error-related information
-- [var errorUserInfo: [String : Any]](imagecreator/error/erroruserinfo.md)
-  The user-info dictionary.
-- [static var errorDomain: String](imagecreator/error/errordomain.md)
-  The domain of the error.
-### Operators
-- [static func == (ImageCreator.Error, ImageCreator.Error) -> Bool](imagecreator/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
-- [ImageCreator.Error.promptRequiresPersonIdentity](imagecreator/error/promptrequirespersonidentity.md)
+- [ImageCreator.Error.conceptsRequirePersonIdentity](imagecreator/error/conceptsrequirepersonidentity.md)
   An error that indicates that a source image containing a person’s face needs to be added in order to complete the request.
-### Instance Properties
-- [var hashValue: Int](imagecreator/error/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](imagecreator/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [ImageCreator.Error.AllCases](imagecreator/error/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Type Properties
-- [static var allCases: [ImageCreator.Error]](imagecreator/error/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [CustomNSError Implementations](imagecreator/error/customnserror-implementations.md)
-- [Equatable Implementations](imagecreator/error/equatable-implementations.md)
-- [Error Implementations](imagecreator/error/error-implementations.md)
-- [LocalizedError Implementations](imagecreator/error/localizederror-implementations.md)
 
 ## Relationships
 

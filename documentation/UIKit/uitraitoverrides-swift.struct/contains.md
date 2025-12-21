@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Returns a Boolean value that indicates whether the trait overrides contain a change for the trait you provide.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

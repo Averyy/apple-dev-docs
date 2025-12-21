@@ -25,7 +25,7 @@ func load(_ texture: any MTLTexture, slice: Int, level: Int, size: MTLSize, sour
 - `texture`: A texture instance the method loads data into.
 - `slice`: A slice within the texture.
 - `level`: A level within the texture.
-- `size`: The number of bytes the method loads from the file into the texture.
+- `size`: The region of the texture the method copies to.
 - `sourceBytesPerRow`: The number of bytes in a row of data from the source file.
 - `sourceBytesPerImage`: The number of bytes in an image from the source file.
 - `destinationOrigin`: A starting location within the texture the method copies data to.

@@ -26,21 +26,19 @@ This step sets the [`UIBackgroundModes`](https://developer.apple.comhttps://deve
 
 Before you can play audio, you need to set up and activate the audio session.
 
-Start by setting the session’s category to [`playback`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playback), and the route policy to [`longForm`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/RouteSharingPolicy-swift.enum/longForm).
+Start by setting the session’s category to [`playback`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playback), and the route policy to [`AVAudioSession.RouteSharingPolicy.longFormAudio`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/RouteSharingPolicy-swift.enum/longFormAudio).
 
 ```swift
-session.setCategory(AVAudioSession.Category.playback,
+try session.setCategory(.playback,
                         mode: .default,
-                        policy: .longForm,
+                        policy: .longFormAudio,
                         options: [])
 ```
 
 Next, activate the session, by calling the [`activate(options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/activate(options:completionHandler:)) method.
 
 ```swift
-session.activate(options: []) { (success, error) in
-    // Check for an error and play audio.
-}
+try await session.activate()
 ```
 
 This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [`Figure 2`](storyboard_support/playing_background_audio#3016837.md)).
@@ -60,35 +58,34 @@ The code listing below shows all the steps needed to set up the session, activat
 let session = AVAudioSession.sharedInstance()
 
 do {
-    try session.setCategory(AVAudioSession.Category.playback,
+    try session.setCategory(.playback,
                             mode: .default,
-                            policy: .longForm,
+                            policy: .longFormAudio,
                             options: [])
-} catch let error {
-    fatalError("*** Unable to set up the audio session: \(error.localizedDescription) ***")
+} catch {
+    fatalError("Unable to configure the audio session: \(error)")
 }
 
 // Set up the player.
 let player: AVAudioPlayer
 do {
     player = try AVAudioPlayer(data: audioData)
-} catch let error {
-    print("*** Unable to set up the audio player: \(error.localizedDescription) ***")
+} catch {
+    print("Unable to set up the audio player: \(error)")
     // Handle the error here.
     return
 }
 
 // Activate and request the route.
-session.activate(options: []) { (success, error) in
-    guard error == nil else {
-        print("*** An error occurred: \(error!.localizedDescription) ***")
-        // Handle the error here.
-        return
-    }
-    
-    // Play the audio file.
-    player.play()
+do {
+    try await session.activate()
+} catch {
+    print("Unable to activate the audio session: \(error)")
+    return
 }
+
+// Play the audio file.
+player.play()
 ```
 
 ## See Also

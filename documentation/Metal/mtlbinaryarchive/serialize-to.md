@@ -20,6 +20,10 @@ Writes the contents of the archive to a file.
 func serialize(to url: URL) throws
 ```
 
+#### Discussion
+
+The destination folder needs to exist when you call this method.
+
 ## Parameters
 
 - `url`: The URL for the destination file.

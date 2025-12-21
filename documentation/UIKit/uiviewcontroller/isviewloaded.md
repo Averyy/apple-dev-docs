@@ -21,7 +21,7 @@ var isViewLoaded: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the view is in memory or [`false`](https://developer.apple.com/documentation/swift/false) when it is not. Accessing this property does not attempt to load the view if it is not currently in memory.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the view is in memory or [`false`](https://developer.apple.com/documentation/Swift/false) when it is not. Accessing this property does not attempt to load the view if it is not currently in memory.
 
 ## See Also
 
@@ -39,6 +39,8 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   A localized string that represents the view this controller manages.
 - [var preferredContentSize: CGSize](uiviewcontroller/preferredcontentsize.md)
   The preferred size for the view controller’s view.
+- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+  SwiftUI ornaments to display adjacent to the view controller.
 
 
 ---

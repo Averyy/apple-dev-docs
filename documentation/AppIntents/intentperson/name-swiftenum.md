@@ -28,16 +28,9 @@ enum Name
 ### Getting the name components
 - [case components(PersonNameComponents)](intentperson/name-swift.enum/components(_:).md)
   Structured components of this `IntentPerson`’s name
-### Operators
-- [static func == (IntentPerson.Name, IntentPerson.Name) -> Bool](intentperson/name-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentPerson.Name.unknown](intentperson/name-swift.enum/unknown.md)
   Unknown name, as in the case where the `IntentPerson` simply wraps a `Handle`.
-### Default Implementations
-- [Decodable Implementations](intentperson/name-swift.enum/decodable-implementations.md)
-- [Encodable Implementations](intentperson/name-swift.enum/encodable-implementations.md)
-- [Equatable Implementations](intentperson/name-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

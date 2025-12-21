@@ -5,9 +5,6 @@
 
 Logs test results to the test log.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

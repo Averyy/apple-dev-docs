@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-var image: UIImage? { get set }
+var image: NSImage? { get set }
 ```
 
 ## See Also

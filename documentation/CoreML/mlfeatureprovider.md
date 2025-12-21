@@ -40,7 +40,7 @@ To customize your app’s interaction with a model:
 
 ## Topics
 
-### Accessing Values
+### Accessing values
 - [func featureValue(for: String) -> MLFeatureValue?](mlfeatureprovider/featurevalue(for:).md)
   Accesses the feature value given the feature’s name.
 - [var featureNames: Set<String>](mlfeatureprovider/featurenames.md)

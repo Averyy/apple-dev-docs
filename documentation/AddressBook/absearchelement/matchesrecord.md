@@ -16,7 +16,7 @@ func matchesRecord(_ record: ABRecord!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `record` argument satisfies the conditions in the search element; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the `record` argument satisfies the conditions in the search element; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

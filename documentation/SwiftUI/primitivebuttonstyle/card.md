@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A button style that doesn’t pad the content, and applies a motion effect when a button has focus.
+A button style that doesn’t pad the content, and applies a Liquid Glass effect when the button has focus.
 
 **Availability**:
 - tvOS 14.0+
@@ -17,9 +17,9 @@ A button style that doesn’t pad the content, and applies a motion effect when 
 
 #### Discussion
 
-This style doesn’t apply padding to its contents, so images, text, and other content display edge-to-edge. A button with this style appears partially translucent. When the user focuses on a card button, the button animates up to a raised position with more opacity. This style also applies the standard background colors for unfocused and focused states in both light and dark mode.
+This button style applies a Liquid Glass effect when the button gains focus. This style doesn’t apply any intrinsic padding to its contents, so images, text, and other content display edge-to-edge.
 
-To apply this style to a button, or to a view that contains buttons, use the [`buttonStyle(_:)`](view/buttonstyle(_:).md) modifier.
+To apply this style to a button, or to a view that contains buttons, use the [`buttonStyle(_:)`](view/buttonstyle(_:)-66fbx.md) modifier.
 
 ## See Also
 
@@ -30,11 +30,17 @@ To apply this style to a button, or to a view that contains buttons, use the [`b
 - [static var accessoryBarAction: AccessoryBarActionButtonStyle](primitivebuttonstyle/accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
 - [static var bordered: BorderedButtonStyle](primitivebuttonstyle/bordered.md)
-  A button style that applies standard border artwork based on the button’s context.
+  A button style that applies the standard border style based on the button’s context.
 - [static var borderedProminent: BorderedProminentButtonStyle](primitivebuttonstyle/borderedprominent.md)
-  A button style that applies standard border prominent artwork based on the button’s context.
+  A button style that applies the standard bordered prominent style based on the button’s context.
 - [static var borderless: BorderlessButtonStyle](primitivebuttonstyle/borderless.md)
   A button style that doesn’t apply a border.
+- [static var glass: GlassButtonStyle](primitivebuttonstyle/glass.md)
+  A button style that applies a Liquid Glass effect based on the button’s context.
+- [static var glassProminent: GlassProminentButtonStyle](primitivebuttonstyle/glassprominent.md)
+  A button style that applies a prominent Liquid Glass effect based on the button’s context.
+- [static func glass(Glass) -> Self](primitivebuttonstyle/glass(_:).md)
+  A button style that applies a configurable Liquid Glass effect based on the button’s context.
 - [static var link: LinkButtonStyle](primitivebuttonstyle/link.md)
   A button style for buttons that emulate links.
 - [static var plain: PlainButtonStyle](primitivebuttonstyle/plain.md)

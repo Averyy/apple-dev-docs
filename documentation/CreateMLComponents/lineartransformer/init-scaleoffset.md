@@ -25,11 +25,6 @@ init(scale: Element, offset: Element)
 - `scale`: The amount to be scaled.
 - `offset`: The amount to be offset after scaling.
 
-## See Also
-
-- [init(from: any Decoder) throws](lineartransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

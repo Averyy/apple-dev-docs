@@ -17,11 +17,11 @@ var wantsDefaultClipping: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the default clipping is in effect, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. By default, this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the default clipping is in effect, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. By default, this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), AppKit sets the current clipping region to the bounds of the view prior to calling that view’s [`draw(_:)`](nsview/draw(_:).md) method. Subclasses may override this property and return [`false`](https://developer.apple.com/documentation/swift/false) to suppress this default clipping behavior. You might do this to avoid the cost of setting up, enforcing, and cleaning up the clipping path. If you do change the value to [`false`](https://developer.apple.com/documentation/swift/false), you are responsible for doing your own clipping or constraining drawing appropriately. Failure to do so could the view to corrupt the contents of other views in the window.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), AppKit sets the current clipping region to the bounds of the view prior to calling that view’s [`draw(_:)`](nsview/draw(_:).md) method. Subclasses may override this property and return [`false`](https://developer.apple.com/documentation/Swift/false) to suppress this default clipping behavior. You might do this to avoid the cost of setting up, enforcing, and cleaning up the clipping path. If you do change the value to [`false`](https://developer.apple.com/documentation/Swift/false), you are responsible for doing your own clipping or constraining drawing appropriately. Failure to do so could the view to corrupt the contents of other views in the window.
 
 ## See Also
 

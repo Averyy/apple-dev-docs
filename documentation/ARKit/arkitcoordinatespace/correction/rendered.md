@@ -6,7 +6,7 @@
 Coordinate spaces are corrected to render over physical objects in passthrough displays.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

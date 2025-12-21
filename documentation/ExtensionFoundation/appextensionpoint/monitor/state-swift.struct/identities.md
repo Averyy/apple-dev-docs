@@ -3,22 +3,33 @@
 **Framework**: ExtensionFoundation  
 **Kind**: property
 
-An array of `AppExtensionIdentity` objects representing available app extensions bound to the monitored app extension points.
+The set of approved and enabled app extensions.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 var identities: [AppExtensionIdentity] { get }
 ```
+
+#### Discussion
+
+Use this property to get the set of app extensions your host app can currently load.
+
+## See Also
+
+- [var disabledCount: Int](appextensionpoint/monitor/state-swift.struct/disabledcount.md)
+  The number of app extensions that someone disabled.
+- [var unapprovedCount: Int](appextensionpoint/monitor/state-swift.struct/unapprovedcount.md)
+  The number of identity entries that someone hasn’t yet enabled.
 
 
 ---

@@ -16,12 +16,12 @@ Sets a rectangle value in the annotation’s dictionary.
 ## Declaration
 
 ```swift
-func setRect(_ value: CGRect, forAnnotationKey key: PDFAnnotationKey) -> Bool
+func setRect(_ value: NSRect, forAnnotationKey key: PDFAnnotationKey) -> Bool
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

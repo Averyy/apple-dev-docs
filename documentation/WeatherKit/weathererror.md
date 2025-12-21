@@ -36,18 +36,6 @@ enum WeatherError
   A localized message providing text if the user requests help.
 - [var recoverySuggestion: String?](weathererror/recoverysuggestion.md)
   A localized message describing how to recover from the failure.
-### Operators
-- [static func == (WeatherError, WeatherError) -> Bool](weathererror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](weathererror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](weathererror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](weathererror/equatable-implementations.md)
-- [Error Implementations](weathererror/error-implementations.md)
 
 ## Relationships
 

@@ -24,7 +24,7 @@ typealias MTLAutoreleasedArgument = MTLArgument
 - [class MTLAttribute](mtlattribute.md)
   An object that describes an attribute defined in the stage-in argument for a shader.
 - [class MTLVertexAttribute](mtlvertexattribute.md)
-  An object that represents an attribute of a vertex function.
+  An instance that represents an attribute of a vertex function.
 - [class MTLArgument](mtlargument.md)
   Information about an argument of a graphics or compute function.
 - [enum MTLArgumentType](mtlargumenttype.md)

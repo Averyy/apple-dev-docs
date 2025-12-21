@@ -16,11 +16,11 @@ func fontNamed(_ fName: String, hasTraits someTraits: NSFontTraitMask) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the font named `typeface` has all the traits specified in `fontTraitMask`; [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the font named `typeface` has all the traits specified in `fontTraitMask`; [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 #### Discussion
 
-Using `NSUnboldFontMask` returns [`true`](https://developer.apple.com/documentation/swift/true) if the font is not bold, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Using `NSUnitalicFontMask` returns [`true`](https://developer.apple.com/documentation/swift/true) if the font is not italic, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Using `NSUnboldFontMask` returns [`true`](https://developer.apple.com/documentation/Swift/true) if the font is not bold, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Using `NSUnitalicFontMask` returns [`true`](https://developer.apple.com/documentation/Swift/true) if the font is not italic, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

@@ -16,7 +16,7 @@ var shouldAntialias: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses antialiasing. This value is part of the graphics state and is restored by [`restoreGraphicsState()`](nsgraphicscontext/restoregraphicsstate()-swift.method.md).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver uses antialiasing. This value is part of the graphics state and is restored by [`restoreGraphicsState()`](nsgraphicscontext/restoregraphicsstate()-swift.method.md).
 
 ## See Also
 

@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Set the timeout for TCP connection establishment.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func connectionTimeout(_ val: UInt32) -> TCP
+func connectionTimeout(_ timeout: UInt32) -> TCP
 ```
+
+#### Discussion
+
+A timeout for TCP connection establishment, in seconds. (`TCP_CONNECTIONTIMEOUT`).
+
+## Parameters
+
+- `timeout`: The connection establishment timeout, in seconds.
 
 
 ---

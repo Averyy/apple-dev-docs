@@ -24,9 +24,6 @@ enum WiFiAwareServiceRole
   The publisher service role.
 ### Working with raw values
 - [init?(rawValue: Int)](asdiscoverydescriptor/wifiawareservicerole-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](asdiscoverydescriptor/wifiawareservicerole-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](asdiscoverydescriptor/wifiawareservicerole-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

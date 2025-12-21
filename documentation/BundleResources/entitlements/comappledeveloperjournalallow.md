@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-The entitlement that enables an app to present the journaling suggestions picker.
+An entitlement that enables an app to present the journaling suggestions picker.
 
 **Availability**:
 - iOS 17.2+

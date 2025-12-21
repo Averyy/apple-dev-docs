@@ -17,11 +17,11 @@ func shouldDrawColor() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view’s window supports color drawing or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view’s window supports color drawing or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not.
 
 #### Discussion
 
-A view object can base its drawing behavior on the return value of this method to improve its appearance in grayscale windows. This method might return [`false`](https://developer.apple.com/documentation/swift/false) when the view’s window does not store color information because the content is destined for a grayscale printer.
+A view object can base its drawing behavior on the return value of this method to improve its appearance in grayscale windows. This method might return [`false`](https://developer.apple.com/documentation/Swift/false) when the view’s window does not store color information because the content is destined for a grayscale printer.
 
 ## See Also
 
@@ -32,7 +32,7 @@ A view object can base its drawing behavior on the return value of this method t
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
 - [func unlockFocus()](nsview/unlockfocus.md)

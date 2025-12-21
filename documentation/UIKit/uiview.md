@@ -23,12 +23,12 @@ class UIView
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 - [About App Development with UIKit](about-app-development-with-uikit.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
-- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
 - [Customizing drawings](customizing-drawings.md)
 - [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 
 #### Overview
 
@@ -48,25 +48,19 @@ Views can nest inside other views to create view hierarchies, which offer a conv
 
 The [`frame`](uiview/frame.md) and [`bounds`](uiview/bounds.md) properties define the geometry of each view. The [`frame`](uiview/frame.md) property defines the origin and dimensions of the view in the coordinate system of its superview. The [`bounds`](uiview/bounds.md) property defines the internal dimensions of the view as it sees them, and its use is almost exclusive to custom drawing code. The center property provides a convenient way to reposition a view without changing its [`frame`](uiview/frame.md) or [`bounds`](uiview/bounds.md) properties directly.
 
-For detailed information about how to use the [`UIView`](uiview.md) class, see [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503).
-
 ##### Create a View
 
 Normally, you create views in your storyboards by dragging them from the library to your canvas. You can also create views programmatically. When creating a view, you typically specify its initial size and position relative to its future superview. For example, the following example creates a view and places its top-left corner at the point (10, 10) in the superview’s coordinate system (once it is added to that superview).
 
 To add a subview to another view, call the [`addSubview(_:)`](uiview/addsubview(_:).md) method on the superview. You may add any number of subviews to a view, and sibling views may overlap each other without any issues in iOS. Each call to the [`addSubview(_:)`](uiview/addsubview(_:).md) method places the new view on top of all other siblings. You can specify the relative z-order of subview by adding it using the [`insertSubview(_:aboveSubview:)`](uiview/insertsubview(_:abovesubview:).md) and [`insertSubview(_:belowSubview:)`](uiview/insertsubview(_:belowsubview:).md) methods. You can also exchange the position of already added subviews using the [`exchangeSubview(at:withSubviewAt:)`](uiview/exchangesubview(at:withsubviewat:).md) method.
 
-After creating a view, create Auto Layout rules to govern how the size and position of the view change in response to changes in the rest of the view hierarchy. For more information, see [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
+After creating a view, create Auto Layout rules to govern how the size and position of the view change in response to changes in the rest of the view hierarchy.
 
 ##### Draw Views
 
 View drawing occurs on an as-needed basis. When a view is first shown, or when all or part of it becomes visible due to layout changes, the system asks the view to draw its contents. For views that contain custom content using UIKit or Core Graphics, the system calls the view’s [`draw(_:)`](uiview/draw(_:).md) method. Your implementation of this method is responsible for drawing the view’s content into the current graphics context, which is set up by the system automatically prior to calling this method. This creates a static visual representation of your view’s content that can then be displayed on the screen.
 
 When the actual content of your view changes, it’s your responsibility to notify the system that your view needs to be redrawn. You do this by calling your view’s [`setNeedsDisplay()`](uiview/setneedsdisplay().md) or [`setNeedsDisplay(_:)`](uiview/setneedsdisplay(_:).md) method of the view. These methods let the system know that it should update the view during the next drawing cycle. Because it waits until the next drawing cycle to update the view, you can call these methods on multiple views to update them at the same time.
-
-> **Note**:  If you’re using OpenGL ES to do your drawing, you should use the [`GLKView`](https://developer.apple.com/documentation/GLKit/GLKView) class instead of subclassing [`UIView`](uiview.md). For more information about how to draw using OpenGL ES, see [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
-
-For detailed information about the view drawing cycle and the role your views have in this cycle, see [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503).
 
 ##### Animate Views
 
@@ -154,6 +148,15 @@ Animations are another way to make visible changes to a view without requiring y
   Returns the class used to create the layer for instances of this class.
 - [var layer: CALayer](uiview/layer.md)
   The view’s Core Animation layer to use for rendering.
+### Configuring a view’s corners
+- [var cornerConfiguration: UICornerConfiguration](uiview/cornerconfiguration-7l0ja.md)
+  A configuration that defines the corners of the view.
+- [struct UICornerConfiguration](uicornerconfiguration-swift.struct.md)
+  A configuration that defines how corner radii are mapped to the corners of a rectangle.
+- [struct UICornerRadius](uicornerradius-swift.struct.md)
+  A type that represents the radius the system uses to round a corner.
+- [func effectiveRadius(corner: UIRectCorner) -> CGFloat](uiview/effectiveradius(corner:).md)
+  Returns the effective radius for the corner you provide, calculated using the view’s current corner configuration.
 ### Configuring the event-related behavior
 - [var isUserInteractionEnabled: Bool](uiview/isuserinteractionenabled.md)
   A Boolean value that determines whether user events are ignored and removed from the event queue.
@@ -220,6 +223,7 @@ Animations are another way to make visible changes to a view without requiring y
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](uiview/traitoverrides-fd9z.md)
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Configuring content margins
 - [Positioning content within layout margins](positioning-content-within-layout-margins.md)
   Position views so that they aren’t crowded by other content.
@@ -498,6 +502,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [var showsLargeContentViewer: Bool](uiview/showslargecontentviewer.md)
   A Boolean value that indicates whether to show the view in the large content viewer.
 ### Animating views
+- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(_:changes:completion:).md)
 - [class func animate(springDuration: TimeInterval, bounce: CGFloat, initialSpringVelocity: CGFloat, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(springduration:bounce:initialspringvelocity:delay:options:animations:completion:).md)
   Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
 - [class func animate(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:delay:options:animations:completion:).md)
@@ -556,11 +561,9 @@ Animations are another way to make visible changes to a view without requiring y
 - [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
   Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
 - [func updateProperties()](uiview/updateproperties.md)
-  Override point for subclasses to update properties of this view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+  Configures the view’s content and styling properties before layout.
 - [func updatePropertiesIfNeeded()](uiview/updatepropertiesifneeded.md)
   Forces an immediate properties update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree.
-### Type Methods
-- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(_:changes:completion:).md)
 ### Enumerations
 - [UIView.Invalidations](uiview/invalidations.md)
   Changes that cause an aspect of a view to be invalid and require an update.
@@ -609,6 +612,8 @@ Animations are another way to make visible changes to a view without requiring y
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

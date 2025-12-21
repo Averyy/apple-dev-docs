@@ -52,8 +52,6 @@ See [`RFC 2743`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2743)
   Provide cryptographic protection to secure message integrity.
 - [Kerberos Implementation](kerberos-implementation.md)
   Establish secure connections using the Kerberos implementation of GSS-API.
-### Structure and macros
-- [Structures and macros](structures-and-macros.md)
 
 
 ---

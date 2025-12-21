@@ -24,7 +24,7 @@ let kSecClassInternetPassword: CFString
 
 The following keychain item attributes form the composite primary key of an Internet password item:
 
-- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrAccount`](ksecattraccount.md)
 - [`kSecAttrAuthenticationType`](ksecattrauthenticationtype.md)
 - [`kSecAttrPath`](ksecattrpath.md)
@@ -39,7 +39,7 @@ Calls to [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) that add an Internet password
 The following keychain item attributes apply to an Internet password item, and don’t form part of its composite primary key:
 
 - [`kSecAttrAccess`](ksecattraccess.md) (macOS only)
-- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrCreationDate`](ksecattrcreationdate.md)
 - [`kSecAttrModificationDate`](ksecattrmodificationdate.md)
 - [`kSecAttrDescription`](ksecattrdescription.md)

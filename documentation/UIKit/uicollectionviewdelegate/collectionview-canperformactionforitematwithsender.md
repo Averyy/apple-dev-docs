@@ -20,13 +20,13 @@ optional func collectionView(_ collectionView: UICollectionView, canPerformActio
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the command corresponding to action should appear in the editing menu or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the command corresponding to action should appear in the editing menu or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-This method is invoked after the [`collectionView(_:shouldShowMenuForItemAt:)`](uicollectionviewdelegate/collectionview(_:shouldshowmenuforitemat:).md) method. It gives you the opportunity to exclude commands from the editing menu. For example, the user might have copied some content from one item and wants to paste it into another item that cannot accept the content. In such a case, your method could return [`false`](https://developer.apple.com/documentation/swift/false) to prevent the display of the relevant command.
+This method is invoked after the [`collectionView(_:shouldShowMenuForItemAt:)`](uicollectionviewdelegate/collectionview(_:shouldshowmenuforitemat:).md) method. It gives you the opportunity to exclude commands from the editing menu. For example, the user might have copied some content from one item and wants to paste it into another item that cannot accept the content. In such a case, your method could return [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the display of the relevant command.
 
-If you do not implement this method, the default return value is [`false`](https://developer.apple.com/documentation/swift/false).
+If you do not implement this method, the default return value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -16,7 +16,7 @@ var isVisible: Bool { get set }
 
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to show the Media Library Browser or [`false`](https://developer.apple.com/documentation/swift/false) to hide it.
+Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to show the Media Library Browser or [`false`](https://developer.apple.com/documentation/Swift/false) to hide it.
 
 This value can be read to determine the current visibility status of the panel.
 

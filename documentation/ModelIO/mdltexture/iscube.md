@@ -21,7 +21,7 @@ var isCube: Bool { get set }
 
 #### Discussion
 
-Cube textures are used in skybox rendering, light probes, and environment maps. If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), the texture object represents a cube texture. In this case, the texture’s image data (accessible with the methods in Accessing Texture Data) contains six square images arranged vertically. The images represent the +X, -X, +Y, -Y, +Z, and -Z faces of the cube (in that order), and the [`dimensions`](mdltexture/dimensions.md) property reflects this arrangement (height is six times width).
+Cube textures are used in skybox rendering, light probes, and environment maps. If this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), the texture object represents a cube texture. In this case, the texture’s image data (accessible with the methods in Accessing Texture Data) contains six square images arranged vertically. The images represent the +X, -X, +Y, -Y, +Z, and -Z faces of the cube (in that order), and the [`dimensions`](mdltexture/dimensions.md) property reflects this arrangement (height is six times width).
 
 ## See Also
 

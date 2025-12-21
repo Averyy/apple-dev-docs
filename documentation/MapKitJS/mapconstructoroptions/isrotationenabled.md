@@ -11,7 +11,7 @@ A Boolean value that determines whether the user may rotate the map using the co
 ## Declaration
 
 ```swift
-attribute boolean isRotationEnabled;
+isRotationEnabled?: boolean;
 ```
 
 #### Discussion

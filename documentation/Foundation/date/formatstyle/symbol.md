@@ -64,8 +64,6 @@ struct Symbol
 - [Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear.md)
   A type that specifies the format for a year in week-of-year calendars when you parse a string with a date format string.
 ### Comparing Date Style Format Symbols
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

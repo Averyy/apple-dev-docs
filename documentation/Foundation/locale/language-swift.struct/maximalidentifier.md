@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns a BCP-47 identifier that always includes the script: “zh-Hant-TW”, “en-Latn-US”
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

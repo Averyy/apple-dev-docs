@@ -48,7 +48,7 @@ To manage Game Center activity versions, be sure you have one of the following u
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
   The request body you use to update an activity version version.
 - [object GameCenterActivityVersionsLinkagesResponse](gamecenteractivityversionslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
   A response that contains a list of activity version resources.
 

@@ -20,7 +20,7 @@ static func supportsBidirectionalStreaming() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the iOS device supports bidirectional streaming; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the iOS device supports bidirectional streaming; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

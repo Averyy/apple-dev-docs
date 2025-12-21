@@ -17,7 +17,7 @@ func setActivationPolicy(_ activationPolicy: NSApplication.ActivationPolicy) -> 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the policy switch succeded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the policy switch succeded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

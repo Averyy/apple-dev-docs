@@ -17,7 +17,7 @@ optional func shouldShowBanner(forLocallyReceivedChallenge challenge: GKChalleng
 
 #### Return Value
 
-Your delegate should return [`true`](https://developer.apple.com/documentation/swift/true) if it wants a banner to be displayed. Otherwise it should return [`false`](https://developer.apple.com/documentation/swift/false).
+Your delegate should return [`true`](https://developer.apple.com/documentation/Swift/true) if it wants a banner to be displayed. Otherwise it should return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

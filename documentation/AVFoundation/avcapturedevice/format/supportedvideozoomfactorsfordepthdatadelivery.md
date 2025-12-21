@@ -20,10 +20,8 @@ var supportedVideoZoomFactorsForDepthDataDelivery: [CGFloat] { get }
 
 ## See Also
 
-- [var videoMinZoomFactorForDepthDataDelivery: CGFloat](avcapturedevice/format/videominzoomfactorfordepthdatadelivery.md)
-  A minimum zoom factor the device supports when configured for depth data delivery.
-- [var videoMaxZoomFactorForDepthDataDelivery: CGFloat](avcapturedevice/format/videomaxzoomfactorfordepthdatadelivery.md)
-  A maximum zoom factor the device supports when configured for depth data delivery.
+- [var supportedDepthDataFormats: [AVCaptureDevice.Format]](avcapturedevice/format/supporteddepthdataformats.md)
+  The list of data formats compatible with this video format.
 
 
 ---

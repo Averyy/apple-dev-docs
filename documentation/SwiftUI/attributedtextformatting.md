@@ -6,13 +6,13 @@
 A namespace for types related to attributed text formatting definitions.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -61,7 +61,7 @@ enum AttributedTextFormatting
 - [func monospacedDigit() -> some View](view/monospaceddigit.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
 - [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
-  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+  A protocol for defining how text can be styled in a view.
 - [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
   A protocol for defining a constraint on the value of a certain attribute.
 

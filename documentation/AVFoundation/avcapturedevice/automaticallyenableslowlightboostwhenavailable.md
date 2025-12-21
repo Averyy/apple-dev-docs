@@ -19,7 +19,7 @@ var automaticallyEnablesLowLightBoostWhenAvailable: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). When it’s [`true`](https://developer.apple.com/documentation/swift/true), the device may engage a special low-light boost mode to improve image quality. It switches, at its discretion, to a special boost mode under low light, and back to normal operation when the scene becomes sufficiently lit.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). When it’s [`true`](https://developer.apple.com/documentation/Swift/true), the device may engage a special low-light boost mode to improve image quality. It switches, at its discretion, to a special boost mode under low light, and back to normal operation when the scene becomes sufficiently lit.
 
 Setting a value for this property throws an exception if the value of [`isLowLightBoostSupported`](avcapturedevice/islowlightboostsupported.md) is false.
 

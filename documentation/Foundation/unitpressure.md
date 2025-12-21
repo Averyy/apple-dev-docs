@@ -71,6 +71,7 @@ The [`UnitPressure`](unitpressure.md) class defines its [`baseUnit()`](dimension
   The pounds per square inch unit of pressure.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitPressure>)](unitpressure/init(forlocale:usage:).md)
+  Creates a `UnitPressure` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

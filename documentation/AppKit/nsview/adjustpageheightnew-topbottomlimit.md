@@ -37,7 +37,7 @@ The default implementation of this method propagates the message to its subviews
 - [func adjustPageWidthNew(UnsafeMutablePointer<CGFloat>, left: CGFloat, right: CGFloat, limit: CGFloat)](nsview/adjustpagewidthnew(_:left:right:limit:).md)
   Overridden by subclasses to adjust page width during automatic pagination.
 - [func knowsPageRange(NSRangePointer) -> Bool](nsview/knowspagerange(_:).md)
-  Returns [`true`](https://developer.apple.com/documentation/swift/true) if the view handles page boundaries, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+  Returns a Boolean value that indicates whether the view handles page boundaries.
 - [func rectForPage(Int) -> NSRect](nsview/rectforpage(_:).md)
   Implemented by subclasses to determine the portion of the view to be printed for the specified page number.
 - [func locationOfPrintRect(NSRect) -> NSPoint](nsview/locationofprintrect(_:).md)

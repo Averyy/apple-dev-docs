@@ -3,7 +3,7 @@
 **Framework**: ExtensionKit  
 **Kind**: init
 
-Creates a new app extension scene.
+Initializes the primitive app extension scene with the specified ID and closure for the content.
 
 **Availability**:
 - iOS 16.0+
@@ -21,11 +21,28 @@ Creates a new app extension scene.
 @preconcurrency init<Content>(id: String, @ViewBuilder content: @escaping () -> Content, onConnection: @escaping (NSXPCConnection) -> Bool = { _ in false }) where Content : View
 ```
 
+#### Discussion
+
+Use this method to initialize the type and provide the scene contents. The following example shows the typical code you use to create this type and specify its parameters. Replace the comments with the actual SwiftUI views and XPC connection code your app supports.
+
+```None
+public var body: some AppExtensionScene {
+    PrimitiveAppExtensionScene(id: “MyScene”) {
+        // SwiftUI views and behavior.
+    } onConnection: { connection in
+        // Configure the XPC connection and return true.
+        return false
+    }
+}
+```
+
+For more information about creating scenes for your app extension, see [`Including extension-based UI in your interface`](including-extension-based-ui-in-your-interface.md).
+
 ## Parameters
 
-- `id`: A unique identifier for the scene.
-- `content`: The scene’s user interface.
-- `onConnection`: A closure that runs when the extension connects to its host.
+- `id`: The unique identifier for this scene.
+- `content`: A closure that provides the contents of the scene.
+- `onConnection`: A closure that you use to accept a scene-specific XPC connection.   The closure returns a Boolean value that indicates whether you successfully completed   the connection. Return   if you successfully configured the XPC connection,   or   if you didn’t.
 
 
 ---

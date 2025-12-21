@@ -20,7 +20,7 @@ func selectNextKeyView(_ sender: Any?)
 The candidate is one of the following (which this function searches for in this order):
 
 - The current first responder’s next valid key view, which the [`nextValidKeyView`](nsview/nextvalidkeyview.md) method of `NSView` returns
-- The object [`initialFirstResponder`](nswindow/initialfirstresponder.md) designates as the window’s initial first responder if it returns [`true`](https://developer.apple.com/documentation/swift/true) to an [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) message
+- The object [`initialFirstResponder`](nswindow/initialfirstresponder.md) designates as the window’s initial first responder if it returns [`true`](https://developer.apple.com/documentation/Swift/true) to an [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) message
 - Otherwise, the initial first responder’s next valid key view, which may be `nil`
 
 ## Parameters

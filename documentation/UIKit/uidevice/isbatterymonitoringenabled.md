@@ -22,7 +22,7 @@ var isBatteryMonitoringEnabled: Bool { get set }
 
 Enable battery monitoring if your app needs to be notified of changes to the battery state, or if you want to check the battery charge level.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which:
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which:
 
 - Disables the posting of battery-related notifications
 - Disables the ability to read battery charge level and battery state

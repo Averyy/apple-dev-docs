@@ -9,7 +9,7 @@ Queries whether a Metal device supports denosing scaling compatible on Metal 4.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - tvOS 18.0+
 
 ## Declaration
@@ -20,7 +20,7 @@ class func supportsMetal4FX(_ device: any MTLDevice) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports denoising scaling for Metal 4, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports denoising scaling for Metal 4, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

@@ -17,7 +17,7 @@ optional func tabView(_ tabView: NSTabView, shouldSelect tabViewItem: NSTabViewI
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the tab view item should be selected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the tab view item should be selected, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

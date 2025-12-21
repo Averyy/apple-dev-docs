@@ -6,7 +6,7 @@
 Events that can occur in a shared coordinate space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

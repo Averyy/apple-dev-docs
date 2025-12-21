@@ -20,7 +20,9 @@ struct BNNSSparsityParameters
 
 #### Overview
 
-Use this data structure as hint for BNNSNDArrayFullyConnectedSparsify for BNNSSparsityTypeUnstructured, sparsity_ratio is numerator / denominator
+Parameters to describe sparsity attributes
+
+use this data structure as hint for BNNSNDArrayFullyConnectedSparsify for BNNSSparsityTypeUnstructured, sparsity_ratio is numerator / denominator
 
 ## Topics
 

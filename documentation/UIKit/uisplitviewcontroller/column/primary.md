@@ -26,6 +26,8 @@ case primary
   The column for the secondary, or detail, view controller.
 - [UISplitViewController.Column.compact](uisplitviewcontroller/column/compact.md)
   The column for the view controller that’s shown when the split view controller is collapsed.
+- [UISplitViewController.Column.inspector](uisplitviewcontroller/column/inspector.md)
+  The column for the inspector, or trailing, view controller.
 
 
 ---

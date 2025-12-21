@@ -97,7 +97,7 @@ let myString = "The user typed '\(validating: userInput)'." as MyString
 - [protocol ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
   A type that can be initialized by string interpolation with a string literal that includes expressions.
 - [struct DefaultStringInterpolation](defaultstringinterpolation.md)
-  Represents a string literal with interpolations while it is being built up.
+  Represents a string literal with interpolations while it’s being built up.
 
 
 ---

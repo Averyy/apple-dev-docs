@@ -20,7 +20,7 @@ struct AVAssetDownloadedAssetEvictionPriority
 
 ## Topics
 
-### Eviction Priorities
+### Eviction priorities
 - [static let `default`: AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority/default.md)
   The default eviction priority.
 - [static let important: AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority/important.md)

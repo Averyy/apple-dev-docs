@@ -17,6 +17,10 @@
 struct MTLIntersectionFunctionBufferArguments
 ```
 
+#### Overview
+
+Struct containing arguments for intersection function buffers.
+
 ## Topics
 
 ### Initializers

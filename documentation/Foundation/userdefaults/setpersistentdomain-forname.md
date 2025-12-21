@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets a dictionary for the specified persistent domain.
+Replaces the keys and values in the specified domain with the new keys and values you supply.
 
 **Availability**:
 - iOS 2.0+
@@ -22,23 +22,25 @@ func setPersistentDomain(_ domain: [String : Any], forName domainName: String)
 
 #### Discussion
 
-Calling this method is equivalent to initializing a user defaults object with [`init(suiteName:)`](userdefaults/init(suitename:).md) passing `domainName`, and calling the [`set(_:forKey:)`](userdefaults/set(_:forkey:)-8ab6d.md) method for each key-value pair in `domain`.
-
-When a persistent domain is changed, an [`didChangeNotification`](userdefaults/didchangenotification.md) is posted.
+This method removes the existing keys from the specified domain and then adds the new keys you provide. After updating the keys, this method generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
 
 ## Parameters
 
-- `domain`: A dictionary of keys and values you want to assign to the domain.
-- `domainName`: The name of the domain whose contents you want to set.
+- `domain`: A dictionary of keys and values to assign to the domain.
+- `domainName`: The name of the domain to update. If you specify the identifier for   the argument or registration domain, this method throws an exception.
 
 ## See Also
 
 - [func persistentDomain(forName: String) -> [String : Any]?](userdefaults/persistentdomain(forname:).md)
-  Returns a dictionary representation of the defaults for the specified domain.
+  Retrieves the settings from the specified persistent domain.
+- [func volatileDomain(forName: String) -> [String : Any]](userdefaults/volatiledomain(forname:).md)
+  Retrieves the settings from the specified volatile domain.
+- [func setVolatileDomain([String : Any], forName: String)](userdefaults/setvolatiledomain(_:forname:).md)
+  Replaces the keys and values in the specified domain with the new keys and values you supply.
 - [func removePersistentDomain(forName: String)](userdefaults/removepersistentdomain(forname:).md)
-  Removes the contents of the specified persistent domain from the user’s defaults.
-- [func persistentDomainNames() -> [Any]](userdefaults/persistentdomainnames.md)
-  Returns an array of the current persistent domain names.
+  Removes the keys and values from the specified persistent domain.
+- [func removeVolatileDomain(forName: String)](userdefaults/removevolatiledomain(forname:).md)
+  Removes the keys and values from the specified volatile domain.
 
 
 ---

@@ -16,7 +16,7 @@ func removeCollection(_ collectionName: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the font collection was successfully removed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the font collection was successfully removed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
@@ -34,7 +34,7 @@ func removeCollection(_ collectionName: String) -> Bool
   Adds an array of font descriptors to the specified font collection.
 - [func removeFontDescriptor(NSFontDescriptor, fromCollection: String)](nsfontmanager/removefontdescriptor(_:fromcollection:).md)
   Removes the specified font descriptor from the specified collection.
-- [func fontManager(_ sender: Any, willIncludeFont fontName: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
+- [func fontManager(Any, willIncludeFont: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
   Requests permission from the Font panel delegate to display the given font name in the Font panel.
 
 

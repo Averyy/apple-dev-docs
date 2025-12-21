@@ -106,6 +106,7 @@ As described in [`Working with Custom Units`](dimension#Working-with-Custom-Unit
   Returns the base unit.
 ### Initializers
 - [convenience init(forLocale: Locale)](dimension/init(forlocale:).md)
+  Creates a `Dimension` which the specified `locale` prefers.
 
 ## Relationships
 

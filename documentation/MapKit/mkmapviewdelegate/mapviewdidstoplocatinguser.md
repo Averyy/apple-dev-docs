@@ -22,7 +22,7 @@ optional func mapViewDidStopLocatingUser(_ mapView: MKMapView)
 
 #### Discussion
 
-The map view calls this method when the value of the [`showsUserLocation`](mkmapview/showsuserlocation.md) property changes to [`false`](https://developer.apple.com/documentation/swift/false).
+The map view calls this method when the value of the [`showsUserLocation`](mkmapview/showsuserlocation.md) property changes to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -58,6 +58,8 @@ To enable associated domains, add the Associated Domains capability to your targ
 - [5G Network Slicing Traffic Category](entitlements/com.apple.developer.networking.slicing.trafficcategory.md)
   The key that defines the traffic category entitlement to enable Cellular Network Slicing.
 - [com.apple.developer.networking.vmnet](entitlements/com.apple.developer.networking.vmnet.md)
+- [Configuring your app for ultra-constrained networks](configuring-your-app-for-ultra-constrained-networks.md)
+  Prepare to deliver data over resource-limited data networks.
 - [com.apple.developer.networking.carrier-constrained.appcategory](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md)
   The key that defines an app’s category for accessing a carrier-provided satellite network.
 - [com.apple.developer.networking.carrier-constrained.app-optimized](entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md)

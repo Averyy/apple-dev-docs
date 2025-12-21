@@ -21,7 +21,7 @@ var allowsSelection: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), users can select items. If you want more fine-grained control over the selection of items, you must provide a delegate object and implement the appropriate methods of the [`UICollectionViewDelegate`](uicollectionviewdelegate.md) protocol.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), users can select items. If you want more fine-grained control over the selection of items, you must provide a delegate object and implement the appropriate methods of the [`UICollectionViewDelegate`](uicollectionviewdelegate.md) protocol.
 
 ## See Also
 

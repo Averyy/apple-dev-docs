@@ -3,12 +3,14 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+A BOOL value specifying whether the Cinematic Video effect is being applied to any movie file output, video data output, metadata output, or video preview layer added to the capture session.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -18,13 +20,18 @@ var isCinematicVideoCaptureEnabled: Bool { get set }
 
 #### Discussion
 
-A BOOL value specifying whether the Cinematic Video effect is applied to any AVCaptureMovieFileOutput, AVCaptureVideoDataOutput, AVCaptureMetadataOutput, and AVCaptureVideoPreviewLayer added to the same capture session.
+Default is `false`. Set to `true` to enable support for Cinematic Video capture.
 
-Default is NO. Set to YES to enable support for Cinematic Video capture.
+When you set this property to `true`, your input’s associated [`focusMode`](avcapturedevice/focusmode-swift.property.md) changes to `AVCaptureFocusModeContinuousAutoFocus`. While Cinematic Video capture is enabled, you are not permitted to change your device’s focus mode, and any attempt to do so results in an `NSInvalidArgumentException`. You may only set this property to `true` if [`isCinematicVideoCaptureSupported`](avcapturedeviceinput/iscinematicvideocapturesupported.md) is `true`.
 
-When set to YES, the corresponding AVCaptureDevice’s focusMode will be updated to AVCaptureFocusModeContinuousAutoFocus. While this is property is YES any attempt to change the focus mode will result in an exception.
+> **Note**: Enabling Cinematic Video capture requires a lengthy reconfiguration of the capture render pipeline, so if you intend to capture Cinematic Video, you should set this property to `true` before calling [`startRunning()`](avcapturesession/startrunning().md) or within [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) while running.
 
-This property may only be set to YES if cinematicVideoCaptureSupported is YES. Enabling Cinematic Video capture requires a lengthy reconfiguration of the capture render pipeline, so if you intend to capture Cinematic Video, you should set this property to YES before calling -[AVCaptureSession startRunning] or within -[AVCaptureSession beginConfiguration] and -[AVCaptureSession commitConfiguration] while running.
+## See Also
+
+- [var isCinematicVideoCaptureSupported: Bool](avcapturedeviceinput/iscinematicvideocapturesupported.md)
+  A BOOL value specifying whether Cinematic Video capture is supported.
+- [var simulatedAperture: Float](avcapturedeviceinput/simulatedaperture.md)
+  Shallow depth of field simulated aperture.
 
 
 ---

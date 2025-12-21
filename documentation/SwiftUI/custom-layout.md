@@ -17,7 +17,7 @@ For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Int
 ## Topics
 
 ### Creating a custom layout container
-- [Composing custom layouts with SwiftUI](composing_custom_layouts_with_swiftui.md)
+- [Composing custom layouts with SwiftUI](composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [protocol Layout](layout.md)
   A type that defines the geometry of a collection of views.

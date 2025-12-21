@@ -13,7 +13,7 @@ In Safari 16 and later, when a user installs your Safari web extension on one de
 In the following circumstances, extensions automatically sync with no configuration:
 
 - Your extension only works in either macOS or iOS.
-- Your extension uses the same bundle identifier in both macOS and iOS. This is the default for a new Safari web extension you create or convert in Xcode.
+- Your extension uses the same bundle identifier in both macOS and iOS. This is the default for a new Safari web extension you create or package in Xcode.
 
 If your extension has different bundle identifiers in macOS and iOS, turn on syncing by configuring your Xcode project for both macOS and iOS.
 

@@ -20,6 +20,8 @@ To add this entitlement to your app, enable the Multipath capability in Xcode.
 
 - [Improving network reliability using Multipath TCP](../Foundation/improving-network-reliability-using-multipath-tcp.md)
   Use the available radios in iOS devices to improve your app’s network reliability and performance.
+- [var multipathServiceType: URLSessionConfiguration.MultipathServiceType](../Foundation/URLSessionConfiguration/multipathServiceType-swift.property.md)
+  A service type that specifies the Multipath TCP connection policy for transmitting data over Wi-Fi and cellular interfaces.
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
 - [Wireless Accessory Configuration Entitlement](entitlements/com.apple.external-accessory.wireless-configuration.md)
@@ -28,8 +30,12 @@ To add this entitlement to your app, enable the Multipath capability in Xcode.
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 - [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
   An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
+- [ISO18092 system codes for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+  A list of FeliCa system codes that the app supports.
 - [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [ISO7816 application identifiers for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+  A list of application identifiers that the app supports.
 - [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
 - [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)

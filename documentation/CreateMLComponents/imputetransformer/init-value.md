@@ -24,11 +24,6 @@ init(value: Element)
 
 - `value`: The value used to replace missing values.
 
-## See Also
-
-- [init(from: any Decoder) throws](imputetransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

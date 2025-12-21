@@ -12,6 +12,10 @@
 case reject
 ```
 
+## See Also
+
+- [TabletopInteraction.NewInteractionIntent.acceptWithConfiguration(_:)](tabletopinteraction/newinteractionintent/acceptwithconfiguration(_:).md)
+
 
 ---
 

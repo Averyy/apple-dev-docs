@@ -23,20 +23,9 @@ Each topic has a dedicated learning purpose for merchants.
 
 ## Topics
 
-### Operators
-- [static func == (ProximityReaderDiscovery.Topic.Payment, ProximityReaderDiscovery.Topic.Payment) -> Bool](proximityreaderdiscovery/topic/payment/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ProximityReaderDiscovery.Topic.Payment.howToTap](proximityreaderdiscovery/topic/payment/howtotap.md)
   A topic that shows merchants how to use Tap to Pay on iPhone to pay for goods and services.
-### Instance Properties
-- [var hashValue: Int](proximityreaderdiscovery/topic/payment/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](proximityreaderdiscovery/topic/payment/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](proximityreaderdiscovery/topic/payment/equatable-implementations.md)
 
 ## Relationships
 

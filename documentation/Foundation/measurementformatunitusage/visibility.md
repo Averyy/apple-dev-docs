@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Describes the distance of visibility
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

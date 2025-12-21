@@ -17,7 +17,7 @@ optional func browser(_ sender: NSBrowser, isColumnValid column: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the column’s contents are valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If [`false`](https://developer.apple.com/documentation/swift/false) is returned, `sender` reloads the column.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the column’s contents are valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If [`false`](https://developer.apple.com/documentation/Swift/false) is returned, `sender` reloads the column.
 
 #### Discussion
 

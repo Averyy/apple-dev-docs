@@ -11,16 +11,20 @@ An array that automatically adds and removes maps as the framework creates and d
 ## Declaration
 
 ```swift
-attribute mapkit.Map[] maps;
+get maps(): Map[];
 ```
 
 ## Mentions
 
 - [MapKit JS 5](mapkit-js-5.md)
 
+#### Discussion
+
+You must load the appropriate library before accessing the array, otherwise, the array throws an `Error`.
+
 ## See Also
 
-- [mapkit.Map](mapkit.map.md)
+- [class Map](map.md)
   An embeddable interactive map that you add to a webpage.
 
 

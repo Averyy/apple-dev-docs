@@ -27,10 +27,12 @@ struct ComponentsFormatStyle
 - [Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct.md)
 ### Initializers
 - [init(style: Date.ComponentsFormatStyle.Style, locale: Locale, calendar: Calendar, fields: Set<Date.ComponentsFormatStyle.Field>?)](date/componentsformatstyle/init(style:locale:calendar:fields:).md)
+  Shows the date interval with the specified style and the specified date and time fields.
 ### Instance Properties
 - [var calendar: Calendar](date/componentsformatstyle/calendar.md)
 - [var fields: Set<Date.ComponentsFormatStyle.Field>?](date/componentsformatstyle/fields.md)
 - [var isPositive: Bool](date/componentsformatstyle/ispositive.md)
+  Controls whether the format input is formatted as a positive or negative range.
 - [var locale: Locale](date/componentsformatstyle/locale.md)
 - [var style: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.property.md)
 ### Instance Methods

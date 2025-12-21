@@ -27,7 +27,7 @@ Setting the value of this property to [`UISplitViewController.DisplayMode.automa
 
 A split view controller’s split behavior affects its possible display mode. The preferred display mode is interpreted to match the current [`splitBehavior`](uisplitviewcontroller/splitbehavior-swift.property.md). For example, if you set the preferred display mode to [`UISplitViewController.DisplayMode.twoBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/twobesidesecondary.md), the actual [`displayMode`](uisplitviewcontroller/displaymode-swift.property.md) is interpreted as [`UISplitViewController.DisplayMode.twoOverSecondary`](uisplitviewcontroller/displaymode-swift.enum/twooversecondary.md) for [`UISplitViewController.SplitBehavior.overlay`](uisplitviewcontroller/splitbehavior-swift.enum/overlay.md), and as [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md) for [`UISplitViewController.SplitBehavior.displace`](uisplitviewcontroller/splitbehavior-swift.enum/displace.md).
 
-If [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`false`](https://developer.apple.com/documentation/swift/false), the value of this property is strictly respected.
+If [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`false`](https://developer.apple.com/documentation/Swift/false), the value of this property is strictly respected.
 
 ## See Also
 

@@ -6,11 +6,11 @@
 A Boolean value that indicates whether deferred start runs automatically.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -33,7 +33,7 @@ If [`isManualDeferredStartSupported`](avcapturesession/ismanualdeferredstartsupp
 ## See Also
 
 - [var isManualDeferredStartSupported: Bool](avcapturesession/ismanualdeferredstartsupported.md)
-  A Boolean value that indicates whether the session supports manually running deferred start.
+  A `BOOL` value that indicates whether the session supports manually running deferred start.
 - [func runDeferredStartWhenNeeded()](avcapturesession/rundeferredstartwhenneeded.md)
   Tells the session to run deferred start when appropriate.
 - [var deferredStartDelegate: (any AVCaptureSessionDeferredStartDelegate)?](avcapturesession/deferredstartdelegate.md)

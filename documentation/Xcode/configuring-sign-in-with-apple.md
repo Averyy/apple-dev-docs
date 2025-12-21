@@ -6,11 +6,11 @@ Allow users to create an account and sign in to your app with their Apple Accoun
 
 #### Overview
 
-Sign in with Apple gives your users the option to sign in to your app with their existing Apple Account instead of creating a separate username and password. All Apple devices support Sign in with Apple. For information about using this feature in the browser, see doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_js.
+Sign in with Apple gives your users the option to sign in to your app with their existing Apple Account instead of creating a separate username and password. All Apple devices support Sign in with Apple. For information about using this feature in the browser, see [`Sign in with Apple JS`](https://developer.apple.com/documentation/SigninwithAppleJS).
 
 To use Sign in with Apple in your app, add the capability by configuring your app’s target in Xcode, set up the user interface and necessary authorizations, and register your domain with Apple’s relay service to ensure you can send emails to your users’ personal inboxes.
 
-> **Note**: If your app targets an OS version that predates the availability of Sign in with Apple, use the JavaScript library to provide the same functionality. For more information, see doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms.
+> **Note**: If your app targets an OS version that predates the availability of Sign in with Apple, use the JavaScript library to provide the same functionality. For more information, see [`Incorporating Sign in with Apple into other platforms`](https://developer.apple.com/documentation/signinwithapple/incorporating-sign-in-with-apple-into-other-platforms).
 
 ##### Add the Sign in with Apple Capability to Your App
 
@@ -33,7 +33,7 @@ After you add the Sign in with Apple capability to your Xcode project, update yo
 - Perform the authorization request with [`ASAuthorizationController`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationController), prompting the user to sign in with their Apple Account and consent to Apple sharing their details with your app.
 - Implement the [`ASAuthorizationControllerDelegate`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationControllerDelegate) protocol to determine the outcome of the authorization request and, if successful, receive the  — an instance of [`ASAuthorizationAppleIDCredential`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDCredential) that contains details about the user.
 
-If your app stores account information on a remote server, send the credential’s contents to that server. The remote server verifies the data’s legitimacy with the Apple Account servers before creating or updating a user account. For more information, see doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/authenticating_users_with_sign_in_with_apple.
+If your app stores account information on a remote server, send the credential’s contents to that server. The remote server verifies the data’s legitimacy with the Apple Account servers before creating or updating a user account. For more information, see [`Authenticating users with Sign in with Apple`](https://developer.apple.com/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple).
 
 ##### Receive Updates About Apple Account Changes
 

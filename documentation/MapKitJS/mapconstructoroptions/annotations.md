@@ -11,7 +11,7 @@ An array holding all the annotations on the map.
 ## Declaration
 
 ```swift
-attribute mapkit.Annotation[] annotations;
+annotations?: Annotation[];
 ```
 
 #### Discussion

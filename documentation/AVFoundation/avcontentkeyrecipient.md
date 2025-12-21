@@ -22,7 +22,7 @@ protocol AVContentKeyRecipient
 
 ## Topics
 
-### Verifying Decryption Key Requirements
+### Verifying decryption key requirements
 - [var mayRequireContentKeysForMediaDataProcessing: Bool](avcontentkeyrecipient/mayrequirecontentkeysformediadataprocessing.md)
   A Boolean value that indicates whether the recipient requires decryption keys for media data to enable processing.
 - [func contentKeySession(AVContentKeySession, didProvide: AVContentKey)](avcontentkeyrecipient/contentkeysession(_:didprovide:).md)

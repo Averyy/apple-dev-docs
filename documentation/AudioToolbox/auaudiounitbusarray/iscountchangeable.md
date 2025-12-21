@@ -21,7 +21,7 @@ var isCountChangeable: Bool { get }
 
 #### Discussion
 
-The base implementation default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The base implementation default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

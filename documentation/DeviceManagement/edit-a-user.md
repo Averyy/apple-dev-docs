@@ -11,7 +11,7 @@ Modify details about a user.
 
 ## Mentions
 
-- [Associating an Apple ID with a Volume Purchase Program (VPP) User](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md)
+- [Associating an Apple Account with a Volume Purchase Program (VPP) User](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md)
 
 #### Discussion
 

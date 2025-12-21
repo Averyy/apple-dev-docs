@@ -11,12 +11,12 @@ The name of the area within the locality.
 ## Declaration
 
 ```swift
-attribute string? subLocality;
+subLocality?: string;
 ```
 
 #### Discussion
 
-For example, the [`subLocality`](place/sublocality.md) for the Golden Gate Park is `“Golden Gate Park”`.
+For example, the [`subLocality`](place/sublocality.md) for Golden Gate Park in San Francisco, California, is `"Golden Gate Park"`.
 
 ## See Also
 

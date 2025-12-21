@@ -6,8 +6,8 @@
 The Short Message Service (SMS) service associated with this session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -15,6 +15,10 @@ The Short Message Service (SMS) service associated with this session.
 ```swift
 final var smsService: SMSService { get }
 ```
+
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
 
 ## See Also
 

@@ -34,7 +34,7 @@ The system supports the following keys when defining the format settings:
 | [`AVSampleRateKey`](avsampleratekey.md) | 8 kHz to 192 kHz |
 | [`AVNumberOfChannelsKey`](avnumberofchannelskey.md) | 1 to 64 |
 
-The system supports additional configuration options based on your selected audio format. See [`Linear PCM Format Settings`](https://developer.apple.com/documentation/AVFoundation/linear-pcm-format-settings) for information about customizing Linear PCM formats and [`Encoder Settings`](https://developer.apple.com/documentation/AVFoundation/encoder-settings) for compressed formats.
+The system supports additional configuration options based on your selected audio format. See [`Linear PCM format settings`](https://developer.apple.com/documentation/AVFoundation/linear-pcm-format-settings) for information about customizing Linear PCM formats and [`Encoder settings`](https://developer.apple.com/documentation/AVFoundation/encoder-settings) for compressed formats.
 
 ## Parameters
 

@@ -10,7 +10,7 @@ VoiceOver is a gesture-based screen reader that enables people to experience the
 
 With a few steps, you can make your app VoiceOver-accessible in Xcode or programmatically. By increasing accessibility, you open your app to a wider audience, and make it easier for everyone to use.
 
-![Two iPhones with VoiceOver turned on. The phone on the left has the camera app open and the VoiceOver cursor is highlighting the timer. The phone on the right shows a contact in the phone app for Maria Ruiz. The call home button is highlighted by the VoiceOver cursor.  ](https://docs-assets.developer.apple.com/published/711c6b95beb6b1bd9409dbf37ea5a8a9/media-3026167%402x.png)
+![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighing the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the  iCloud section header.](https://docs-assets.developer.apple.com/published/0ec72214996f37417402cbba929e8954/supporting-voiceover-in-your-app%402x.png)
 
 ##### Audit Your App with Voiceover on
 

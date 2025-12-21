@@ -21,7 +21,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). As an optimization, the collection view might not create the corresponding view if this property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). As an optimization, the collection view might not create the corresponding view if this property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

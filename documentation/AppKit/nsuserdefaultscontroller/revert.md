@@ -17,9 +17,9 @@ Causes the receiver to discard any unsaved changes to bound user default propert
 
 #### Discussion
 
-The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/objectivec/nsobject/1458076-discardediting) on any currently registered editors. The `sender` is typically the object that invoked this method.
+The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/discardEditing) on any currently registered editors. The `sender` is typically the object that invoked this method.
 
-If [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) is [`true`](https://developer.apple.com/documentation/swift/true), this method only causes any bound editors with uncommitted changes to discard their edits.
+If [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this method only causes any bound editors with uncommitted changes to discard their edits.
 
 ## See Also
 

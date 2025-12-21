@@ -22,8 +22,8 @@ class func maxPlayersAllowedForMatch(of matchType: GKMatchType) -> Int
 
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Return Value
 

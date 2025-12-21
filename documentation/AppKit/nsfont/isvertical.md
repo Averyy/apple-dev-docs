@@ -16,7 +16,7 @@ var isVertical: Bool { get }
 
 #### Discussion
 
-The value in this property is [`true`](https://developer.apple.com/documentation/swift/true) for a vertical font or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value in this property is [`true`](https://developer.apple.com/documentation/Swift/true) for a vertical font or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var isVertical: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the status bar has a vertical orientation. The status bar returned by the [`system`](nsstatusbar/system.md) method is horizontal and has the value [`false`](https://developer.apple.com/documentation/swift/false) for this property.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the status bar has a vertical orientation. The status bar returned by the [`system`](nsstatusbar/system.md) method is horizontal and has the value [`false`](https://developer.apple.com/documentation/Swift/false) for this property.
 
 ## See Also
 

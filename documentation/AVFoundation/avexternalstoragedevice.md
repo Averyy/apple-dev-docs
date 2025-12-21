@@ -61,8 +61,10 @@ Each storage device instance corresponds to a physical external storage device w
 
 ## See Also
 
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+  Capture the optimal shot by providing automatic framing recommendations.
 - [class AVCaptureDevice](avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)

@@ -88,14 +88,16 @@ Return instances of this class from the [`mapView(_:viewFor:)`](mkmapviewdelegat
 
 ## See Also
 
-- [Annotating a Map with Custom Data](annotating-a-map-with-custom-data.md)
-  Annotate a map with location-specific data using default and customized annotation views and callouts.
-- [class MKPointAnnotation](mkpointannotation.md)
-  A string-based piece of location-specific data that you apply to a specific point on a map.
-- [class MKMapItemAnnotation](mkmapitemannotation.md)
-  An annotation that represents a map item
-- [class MKMarkerAnnotationView](mkmarkerannotationview.md)
-  An annotation view that displays a balloon-shaped marker at the designated location.
+- [class MKCircleView](mkcircleview.md)
+  Provides the visual representation for an [`MKCircle`](mkcircle.md) annotation object.
+- [class MKOverlayView](mkoverlayview.md)
+  Defines the basic behavior associated with all overlay views.
+- [class MKOverlayPathView](mkoverlaypathview.md)
+  Represents a generic overlay that draws its contents using a Core Graphics path data type.
+- [class MKPolygonView](mkpolygonview.md)
+  Provides the visual representation for an [`MKPolygon`](mkpolygon.md) annotation object.
+- [class MKPolylineView](mkpolylineview.md)
+  Provides the visual representation for an [`MKPolyline`](mkpolyline.md) annotation object.
 
 
 ---

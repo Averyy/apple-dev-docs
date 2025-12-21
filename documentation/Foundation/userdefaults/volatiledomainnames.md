@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-The current volatile domain names.
+An array of identifiers for the volatile domains associated with the current object.
 
 **Availability**:
 - iOS 2.0+
@@ -22,16 +22,16 @@ var volatileDomainNames: [String] { get }
 
 #### Discussion
 
-The domain names are represented as strings. You can get the contents of each domain by passing the returned domain names to the [`volatileDomain(forName:)`](userdefaults/volatiledomain(forname:).md) method.
+Each string in the array corresponds to one of the volatile domains this `UserDefaults` object searches. To get the contents of one of these domains, call the [`volatileDomain(forName:)`](userdefaults/volatiledomain(forname:).md) method.
 
 ## See Also
 
-- [func volatileDomain(forName: String) -> [String : Any]](userdefaults/volatiledomain(forname:).md)
-  Returns the dictionary for the specified volatile domain.
-- [func setVolatileDomain([String : Any], forName: String)](userdefaults/setvolatiledomain(_:forname:).md)
-  Sets the dictionary for the specified volatile domain.
-- [func removeVolatileDomain(forName: String)](userdefaults/removevolatiledomain(forname:).md)
-  Removes the specified volatile domain from the user’s defaults.
+- [class let argumentDomain: String](userdefaults/argumentdomain.md)
+  The identifier for the domain that contains command-line settings.
+- [class let globalDomain: String](userdefaults/globaldomain.md)
+  The identifier for the domain that contains system-specified settings for all apps.
+- [class let registrationDomain: String](userdefaults/registrationdomain.md)
+  The identifier for the domain that contains your app’s registered default values.
 
 
 ---

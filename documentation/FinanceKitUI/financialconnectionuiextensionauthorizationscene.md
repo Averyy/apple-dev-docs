@@ -25,12 +25,6 @@ Your scene will be provided a `FinancialConnectionExtensionAuthorizationRequest`
 
 ### Initializers
 - [init(content: () -> Content)](financialconnectionuiextensionauthorizationscene/init(content:).md)
-### Instance Properties
-- [var body: some AppExtensionScene](financialconnectionuiextensionauthorizationscene/body-swift.property.md)
-  The content and behavior of the scene’s user interface.
-### Type Aliases
-- [FinancialConnectionUIExtensionAuthorizationScene.Body](financialconnectionuiextensionauthorizationscene/body-swift.typealias.md)
-  The type for this scene’s body.
 
 ## Relationships
 

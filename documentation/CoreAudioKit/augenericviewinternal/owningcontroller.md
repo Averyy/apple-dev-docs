@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-@objc @preconcurrency var owningController: UIViewController?
+@objc @preconcurrency var owningController: NSViewController?
 ```
 
 ## See Also

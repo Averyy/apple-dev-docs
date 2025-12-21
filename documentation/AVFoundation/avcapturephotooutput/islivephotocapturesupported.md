@@ -23,7 +23,7 @@ Live Photo captures both a still image and a short movie centered on the moment 
 
 Not all devices and capture formats support Live Photo capture. This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
 
-When this value changes to [`false`](https://developer.apple.com/documentation/swift/false), the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value also changes to [`false`](https://developer.apple.com/documentation/swift/false). If you previously opted in for Live Photo capture and then change configurations, you may need to set [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true) again.
+When this value changes to [`false`](https://developer.apple.com/documentation/Swift/false), the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value also changes to [`false`](https://developer.apple.com/documentation/Swift/false). If you previously opted in for Live Photo capture and then change configurations, you may need to set [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true) again.
 
 ## See Also
 

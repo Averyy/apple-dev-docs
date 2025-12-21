@@ -8,7 +8,7 @@ Invalidate the current translation session and re-run it with new content.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration

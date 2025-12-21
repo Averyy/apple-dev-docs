@@ -6,7 +6,7 @@ Create a signed JOSE login request.
 
 #### Overview
 
-Your login configuration instructs platform SSO how to create and validate a login request based on the authentication method. This article provides a description of the parameters that the system uses to create and send a login request, followed by code snippet examples of login requests for each authentication method.
+Your login configuration instructs Platform SSO how to create and validate a login request based on the authentication method. This article provides a description of the parameters that the system uses to create and send a login request, followed by code snippet examples of login requests for each authentication method.
 
 The login request is a JSON Object Signing and Encryption object (JOSE) that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 
@@ -34,7 +34,7 @@ The following table specifies the body parameters that the system uses to create
 | `exp` | 5 minutes from now | Required. Per RFC 7523 Section 3. |
 | `scope` | `openid offline_access` and [`additionalScopes`](asauthorizationproviderextensionloginconfiguration/additionalscopes.md) | Required. The requested scope for the assertion. The default value is `openid offline_access` and any additional ones are appended to it. The default additional scope is `urn:apple:platformsso`. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
 | `nonce` | An nonce value | Required. A unique nonce for this request. If there’s an embedded assertion and it includes the nonce, the IdP needs to verify that this value matches the `nonce` in the embedded assertion JWT. |
-| `aud` | [`tokenEndpointURL`](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md) | The token endpoint URL host and path. |
+| `aud` | [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) | The token endpoint URL host and path. |
 | `iat` | The current time | Required. The IdP needs to verify this value. |
 | `request_nonce` or [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) | The value that the nonce request returns | Required. The key name is either the [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
 | `username` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. If not set, the system uses the local account name. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
@@ -49,11 +49,11 @@ The following table specifies the body parameters that the system uses to create
 | `enc` | `A256GCM` | Required. The supported encryption algorithm for the response per RFC 7518 Section 4.6. |
 | `alg` | `ECDH-ES` | Required. The supported key agreement algorithm for the response per RFC 7518 Section 5.3. |
 | `apv` | The base-64 URL encoded `PartyVInfo` to use for the response | Required. Per RFC 7518 Section 4.6.1.3. The value for `PartyVInfo` to encrypt the response. See Configure Concat KDF in [`Creating an encrypted embedded assertion`](creating-an-encrypted-embedded-assertion.md) for more information. |
-| [`previousRefreshTokenClaimName`](asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md) if [`includePreviousRefreshTokenInLoginRequest`](asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md) is [`true`](https://developer.apple.com/documentation/swift/true) | If there’s a previous `refresh_token` in the SSO tokens, the system includes the value here. | Optional. This allows the IdP to carry over any MFA or step-up authentication results per their policy. |
+| [`previousRefreshTokenClaimName`](asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md) if [`includePreviousRefreshTokenInLoginRequest`](asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md) is [`true`](https://developer.apple.com/documentation/Swift/true) | If there’s a previous `refresh_token` in the SSO tokens, the system includes the value here. | Optional. This allows the IdP to carry over any MFA or step-up authentication results per their policy. |
 | `loginConfiguration.customLoginRequestBodyClaims` |  | Optional. If present, adds the key value pairs to the JWT. |
 | `claims : {` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)     `“id_token” : {` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)         `“groups” : {` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)             `“values” : groupsToRequest` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `} } }` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) or [`groupRequestClaimName`](asauthorizationproviderextensionloginconfiguration/grouprequestclaimname.md) | If new user, user authorization mode is groups, or authorization is enabled, the system includes the set of groups here. | Optional. If the user is a member of any of the groups, then the `id_token` the login response returns needs to include the groups. |
 
-The login network request is an HTTP POST to the [`tokenEndpointURL`](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
+The login network request is an HTTP POST to the [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
 
 | Key | Value | Notes |
 | --- | --- | --- |
@@ -272,7 +272,7 @@ The following code provides an example of a login request with a SmartCard:
 - [Creating a refresh request](creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 
 ---

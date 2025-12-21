@@ -6,8 +6,8 @@
 A command type for opacity fading environment backdrops during immersive media playback.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,26 +25,26 @@ Opacity fade is used to apply requested opacity to the AIV environment backdrops
 - [init(from: any Decoder) throws](fadeenvironmentcommand/init(from:).md)
   Creates a `FadeEnvironmentCommand` instance from the specified decoder.
 - [init(id: Int, time: CMTime, duration: CMTime, direction: FadeEnvironmentCommand.FadeDirection, opacity: Float, offset: CMTime?)](fadeenvironmentcommand/init(id:time:duration:direction:opacity:offset:).md)
-  Initializes an opacity fade command.
+  Creates a fade environment command instance.
 ### Instance Properties
 - [var direction: FadeEnvironmentCommand.FadeDirection](fadeenvironmentcommand/direction.md)
   Fade direction for this command instance.
 - [var duration: CMTime](fadeenvironmentcommand/duration.md)
   The duration of the command - this can be .zero if the command has no duration
 - [var id: Int](fadeenvironmentcommand/id.md)
-  A unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command ID for the immersive media file.
 - [var offset: CMTime?](fadeenvironmentcommand/offset.md)
-  Some commands control animations by repeating the command for the whole duration, and specifying the offset of the animation from the start time of this presentation command.
+  The offset from the start time of this command.
 - [var opacity: Float](fadeenvironmentcommand/opacity.md)
-  The fade opacity value between 0.0 to 1.0. This value represents the target opacity of the environment backdrops during playback after fading completes.
+  The fade opacity value between `0.0` to `1.0`. This value represents the target opacity of the environment backdrops during playback after fading completes.
 - [var time: CMTime](fadeenvironmentcommand/time.md)
   The time this command starts during playback.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](fadeenvironmentcommand/encode(to:).md)
-  Encodes an instance of `FadeEnvironmentCommand`.
+  Encodes an instance of fade environment command.
 ### Enumerations
 - [FadeEnvironmentCommand.FadeDirection](fadeenvironmentcommand/fadedirection.md)
-  A value representing the direction of the fade environment command.
+  A value that represents the direction of the fade environment command.
 
 ## Relationships
 

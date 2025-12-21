@@ -22,11 +22,11 @@ func contains(_ anObject: Any) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `anObject` is present in the array, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `anObject` is present in the array, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Starting at index `0`, each element of the array is checked for equality with `anObject` until a match is found or the end of the array is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Starting at index `0`, each element of the array is checked for equality with `anObject` until a match is found or the end of the array is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 To determine if the array contains a particular instance of an object, you can test for identity rather than equality by calling the [`indexOfObjectIdentical(to:)`](nsarray/indexofobjectidentical(to:).md) method and comparing the return value to [`NSNotFound`](nsnotfound-9t5v2.md).
 

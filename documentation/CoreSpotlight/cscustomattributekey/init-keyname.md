@@ -24,7 +24,7 @@ A new custom attribute key.
 
 #### Discussion
 
-To create custom attribute key names, it’s recommended that you use a reverse DNS format that includes your company name and does not include the period character (”.”). For example, a key name of the form `com_mycompany_myapp_mykeyname` works well.
+To create custom attribute key names, use a reverse DNS format that includes your company name and does not include the period character (”.”). For example, a key name of the form `com_mycompany_myapp_mykeyname` works well.
 
 ## Parameters
 

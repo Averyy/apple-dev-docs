@@ -39,7 +39,7 @@ In addition, in macOS 10.10 and later, a view controller participates in the res
 
 Prior to OS X v10.10, a typical usage pattern for loading a nib file was to subclass [`NSViewController`](nsviewcontroller.md) and override its [`loadView()`](nsviewcontroller/loadview().md) method to call `[super loadView]`. But in macOS 10.10 and later, the [`loadView()`](nsviewcontroller/loadview().md) method automatically looks for a nib file with the same name as the view controller. To take advantage of this behavior, name a nib file after its corresponding view controller and pass `nil` to both parameters of the [`init(nibName:bundle:)`](nsviewcontroller/init(nibname:bundle:).md) method.
 
-A view controller employs lazy loading of its view: Immediately after a view controller is loaded into memory, the value of its [`isViewLoaded`](nsviewcontroller/isviewloaded.md) property is [`false`](https://developer.apple.com/documentation/swift/false). The value changes to [`true`](https://developer.apple.com/documentation/swift/true) after the [`loadView()`](nsviewcontroller/loadview().md) method returns and just before the system calls the [`viewDidLoad()`](nsviewcontroller/viewdidload().md) method.
+A view controller employs lazy loading of its view: Immediately after a view controller is loaded into memory, the value of its [`isViewLoaded`](nsviewcontroller/isviewloaded.md) property is [`false`](https://developer.apple.com/documentation/Swift/false). The value changes to [`true`](https://developer.apple.com/documentation/Swift/true) after the [`loadView()`](nsviewcontroller/loadview().md) method returns and just before the system calls the [`viewDidLoad()`](nsviewcontroller/viewdidload().md) method.
 
 A view controller is meant to be highly reusable, such as for dynamically representing various objects. For example, the  [`addAccessoryController(_:)`](nspagelayout/addaccessorycontroller(_:).md) methods of the [`NSPageLayout`](nspagelayout.md) and [`NSPrintPanel`](nsprintpanel.md) classes take an [`NSViewController`](nsviewcontroller.md) instance as the argument, and set the [`representedObject`](nsviewcontroller/representedobject.md) property to the [`NSPrintInfo`](nsprintinfo.md) object that is to be shown to the user. This allows a developer to easily create new printing accessory views using bindings and the [`NSPrintInfo`](nsprintinfo.md) class’s key-value coding and key-value observing compliance. When the user dismisses a printing dialog, the  [`NSPageLayout`](nspagelayout.md) and [`NSPrintPanel`](nsprintpanel.md) classes each send NSEditor messages to each accessory view controller to ensure that the user’s changes have been committed or discarded properly. The titles of the accessories are retrieved from the view controllers and shown to the user in menus that the user can choose from.
 
@@ -153,9 +153,6 @@ A view controller is meant to be highly reusable, such as for dynamically repres
   Animation options for view transitions in a view controller.
 ### Initializers
 - [init?(coder: NSCoder)](nsviewcontroller/init(coder:).md)
-### Default Implementations
-- [PlaygroundLiveViewable Implementations](nsviewcontroller/playgroundliveviewable-implementations.md)
-- [XCPlaygroundLiveViewable Implementations](nsviewcontroller/xcplaygroundliveviewable-implementations.md)
 
 ## Relationships
 

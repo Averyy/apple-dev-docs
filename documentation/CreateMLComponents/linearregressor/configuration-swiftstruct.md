@@ -25,8 +25,6 @@ struct Configuration
 ### Creating a configuration
 - [init()](linearregressor/configuration-swift.struct/init.md)
   Creates a default linear regressor configuration.
-- [init(from: any Decoder) throws](linearregressor/configuration-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Getting the properties
 - [var convergenceThreshold: Double](linearregressor/configuration-swift.struct/convergencethreshold.md)
   The convergence threshold.
@@ -44,19 +42,6 @@ struct Configuration
   A Boolean value indicating whether to scale the input features.
 - [var stepSize: Double](linearregressor/configuration-swift.struct/stepsize.md)
   The starting step size to use for the solver.
-### Operators
-- [static func == (LinearRegressor<Scalar>.Configuration, LinearRegressor<Scalar>.Configuration) -> Bool](linearregressor/configuration-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](linearregressor/configuration-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](linearregressor/configuration-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](linearregressor/configuration-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](linearregressor/configuration-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

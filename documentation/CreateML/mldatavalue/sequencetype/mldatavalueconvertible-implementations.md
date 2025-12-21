@@ -5,8 +5,6 @@
 ## Topics
 
 ### Initializers
-- [init()](mldatavalue/sequencetype/init.md)
-  Creates a new default instance of the conforming type when a data value is missing or invalid.
 - [init?(from: MLDataValue)](mldatavalue/sequencetype/init(from:).md)
   Creates a data-value sequence from another sequence.
 ### Instance Properties

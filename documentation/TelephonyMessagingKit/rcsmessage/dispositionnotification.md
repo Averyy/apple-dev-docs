@@ -6,8 +6,8 @@
 A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -28,16 +28,6 @@ struct DispositionNotification
   An enumeration that represents the disposition of an RCS message, such as whether delivery succeeded or failed.
 - [let disposedMessageID: RCSMessageID](rcsmessage/dispositionnotification/disposedmessageid.md)
   The message identifier of the message.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/dispositionnotification/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsmessage/dispositionnotification/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing disposition notifications
-- [static func == (RCSMessage.DispositionNotification, RCSMessage.DispositionNotification) -> Bool](rcsmessage/dispositionnotification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/dispositionnotification/equatable-implementations.md)
 
 ## Relationships
 

@@ -45,30 +45,8 @@ struct ClassificationDistribution<Label> where Label : Hashable
 - [func map<T>((Classification<Label>) throws -> Classification<T>) rethrows -> ClassificationDistribution<T>](classificationdistribution/map(_:).md)
   Creates a new classification distribution by applying a transformation to every element.
 ### Accessing by subscript
-- [subscript(Range<Int>) -> Slice<ClassificationDistribution<Label>>](classificationdistribution/subscript(_:)-7uvgm.md)
+- [subscript(_:)](classificationdistribution/subscript(_:).md)
   Accesses a contiguous range of elements.
-- [subscript(Int) -> Classification<Label>](classificationdistribution/subscript(_:)-856r7.md)
-  Accesses a classification at an index.
-- [subscript(Label) -> Float?](classificationdistribution/subscript(_:)-s5as.md)
-  Accesses a probability with label.
-### Type Aliases
-- [ClassificationDistribution.Element](classificationdistribution/element.md)
-  A type representing the sequence’s elements.
-- [ClassificationDistribution.Index](classificationdistribution/index.md)
-  A type that represents a position in the collection.
-- [ClassificationDistribution.Indices](classificationdistribution/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [ClassificationDistribution.Iterator](classificationdistribution/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [ClassificationDistribution.SubSequence](classificationdistribution/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [Collection Implementations](classificationdistribution/collection-implementations.md)
-- [Decodable Implementations](classificationdistribution/decodable-implementations.md)
-- [Encodable Implementations](classificationdistribution/encodable-implementations.md)
-- [Equatable Implementations](classificationdistribution/equatable-implementations.md)
-- [Hashable Implementations](classificationdistribution/hashable-implementations.md)
-- [Sequence Implementations](classificationdistribution/sequence-implementations.md)
 
 ## Relationships
 

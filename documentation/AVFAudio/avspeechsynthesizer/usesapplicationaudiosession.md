@@ -21,7 +21,7 @@ var usesApplicationAudioSession: Bool { get set }
 
 #### Discussion
 
-If you set this value to [`false`](https://developer.apple.com/documentation/swift/false), the system creates a separate audio session to automatically manage speech, interruptions, and mixing and ducking the speech with other audio sources.
+If you set this value to [`false`](https://developer.apple.com/documentation/Swift/false), the system creates a separate audio session to automatically manage speech, interruptions, and mixing and ducking the speech with other audio sources.
 
 ## See Also
 

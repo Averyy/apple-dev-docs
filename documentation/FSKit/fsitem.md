@@ -30,6 +30,7 @@ Methods that get or set an item’s attribute use [`FSItem.GetAttributesRequest`
 
 ### Identifying an item
 - [FSItem.Identifier](fsitem/identifier.md)
+  The unique identifier for an item.
 - [FSItem.ItemType](fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
 ### Working with attributes

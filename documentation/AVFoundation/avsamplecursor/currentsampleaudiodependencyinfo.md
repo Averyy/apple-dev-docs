@@ -24,7 +24,7 @@ var currentSampleAudioDependencyInfo: AVSampleCursorAudioDependencyInfo { get }
 
 To position a sample cursor at the first sample that the audio decoder requires for a full refresh, move it back from the current sample until you find a sample that meets the following criteria:
 
-- The value of its [`audioSampleIsIndependentlyDecodable`](avsamplecursoraudiodependencyinfo/audiosampleisindependentlydecodable.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+- The value of its [`audioSampleIsIndependentlyDecodable`](avsamplecursoraudiodependencyinfo/audiosampleisindependentlydecodable.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 - The value of its [`audioSamplePacketRefreshCount`](avsamplecursoraudiodependencyinfo/audiosamplepacketrefreshcount.md) property is greater than or equal to the number of steps back you’ve taken.
 
 You don’t need to reposition the cursorif the current sample is independently decodable with an [`audioSamplePacketRefreshCount`](avsamplecursoraudiodependencyinfo/audiosamplepacketrefreshcount.md) of `0`.

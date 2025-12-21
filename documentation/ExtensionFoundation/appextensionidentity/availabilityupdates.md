@@ -16,6 +16,10 @@ static var availabilityUpdates: AsyncStream<AppExtensionIdentity.Availability> {
 
 - [AppExtensionIdentity.Availability](appextensionidentity/availability.md)
   An object that contains information about available extensions.
+- [static func matching(appExtensionPointIDs: String...) throws -> AppExtensionIdentity.Identities](appextensionidentity/matching(appextensionpointids:).md)
+  The asynchronous sequence of extension identities which target the specified extension point identifiers.
+- [AppExtensionIdentity.Identities](appextensionidentity/identities.md)
+  An asynchronous sequence that returns the enabled extensions that match provided constraints.
 
 
 ---

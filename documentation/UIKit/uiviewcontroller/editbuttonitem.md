@@ -21,7 +21,7 @@ var editButtonItem: UIBarButtonItem { get }
 
 #### Discussion
 
-If one of the custom views of the [`navigationItem`](uiviewcontroller/navigationitem.md) property is set to the returned object, the associated navigation bar displays an Edit button if [`isEditing`](uiviewcontroller/isediting.md) is [`false`](https://developer.apple.com/documentation/swift/false) and a Done button if [`isEditing`](uiviewcontroller/isediting.md) is [`true`](https://developer.apple.com/documentation/swift/true). The default button action invokes the [`setEditing(_:animated:)`](uiviewcontroller/setediting(_:animated:).md) method.
+If one of the custom views of the [`navigationItem`](uiviewcontroller/navigationitem.md) property is set to the returned object, the associated navigation bar displays an Edit button if [`isEditing`](uiviewcontroller/isediting.md) is [`false`](https://developer.apple.com/documentation/Swift/false) and a Done button if [`isEditing`](uiviewcontroller/isediting.md) is [`true`](https://developer.apple.com/documentation/Swift/true). The default button action invokes the [`setEditing(_:animated:)`](uiviewcontroller/setediting(_:animated:).md) method.
 
 ## See Also
 

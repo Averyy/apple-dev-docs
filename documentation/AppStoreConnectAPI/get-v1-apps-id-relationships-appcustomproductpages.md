@@ -1,7 +1,9 @@
-# GET /v1/apps/{id}/relationships/appCustomProductPages
+# Get all custom product page resource IDs for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Get a list of custom product page resource IDs associated with an app.
 
 **Availability**:
 - App Store Connect API 3.6+

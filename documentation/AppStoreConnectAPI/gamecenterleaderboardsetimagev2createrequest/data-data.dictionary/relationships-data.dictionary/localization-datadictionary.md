@@ -1,0 +1,29 @@
+# GameCenterLeaderboardSetImageV2CreateRequest.Data.Relationships.Localization
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+The data that describes the localization of the Game Center leaderboard set image.
+
+**Availability**:
+- App Store Connect API 3.6+
+
+## Declaration
+
+```swift
+object GameCenterLeaderboardSetImageV2CreateRequest.Data.Relationships.Localization
+```
+
+#### Overview
+
+- data:
+
+## Topics
+
+### Dictionaries - generated
+- [object GameCenterLeaderboardSetImageV2CreateRequest.Data.Relationships.Localization.Data](gamecenterleaderboardsetimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/gamecenterleaderboardsetimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary)*

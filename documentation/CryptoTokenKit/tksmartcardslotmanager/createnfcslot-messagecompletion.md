@@ -6,8 +6,8 @@
 Creates an NFC smart card slot using the device’s hardware and presents a system UI.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

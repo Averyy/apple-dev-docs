@@ -17,7 +17,7 @@ func shouldBeRequiredToFail(by otherGestureRecognizer: NSGestureRecognizer) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to cause `otherGestureRecognizer` to wait until the current object fails before beginning its own gesture recognition.
+[`true`](https://developer.apple.com/documentation/Swift/true) to cause `otherGestureRecognizer` to wait until the current object fails before beginning its own gesture recognition.
 
 #### Discussion
 

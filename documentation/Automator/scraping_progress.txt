@@ -1,4 +1,4 @@
 Completed scraping Automator!
-Total pages scraped: 0
-Pages skipped (unchanged): 156
+Total pages scraped: 155
+Pages skipped (unchanged): 1
 Pages failed: 0

@@ -16,8 +16,8 @@ case accessoryCorner
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 
 ## See Also
 

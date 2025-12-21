@@ -21,10 +21,10 @@ class AVCaptureDevice
 
 ## Mentions
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
 - [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
 - [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
 
 #### Overview
 
@@ -36,7 +36,7 @@ A capture device provides several configuration options. Before attempting to co
 
 ## Topics
 
-### Finding and Monitoring Devices
+### Finding and monitoring devices
 - [AVCaptureDevice.DiscoverySession](avcapturedevice/discoverysession.md)
   An object that finds capture devices that match specific search criteria.
 - [class func `default`(AVCaptureDevice.DeviceType, for: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?](avcapturedevice/default(_:for:position:).md)
@@ -53,14 +53,14 @@ A capture device provides several configuration options. Before attempting to co
   Returns devices capable of capturing media of the specified type.
 - [class func devices() -> [AVCaptureDevice]](avcapturedevice/devices.md)
   Returns all available capture devices on the system.
-### Authorizing Device Access
+### Authorizing device access
 - [class func requestAccess(for: AVMediaType, completionHandler: (Bool) -> Void)](avcapturedevice/requestaccess(for:completionhandler:).md)
   Requests the user’s permission to allow the app to capture media of a particular type.
 - [class func authorizationStatus(for: AVMediaType) -> AVAuthorizationStatus](avcapturedevice/authorizationstatus(for:).md)
   Returns an authorization status that indicates whether the user grants the app permission to capture media of a particular type.
 - [enum AVAuthorizationStatus](avauthorizationstatus.md)
   Constants that indicate the status of an app’s authorization to capture media.
-### Identifying a Device
+### Identifying a device
 - [var uniqueID: String](avcapturedevice/uniqueid.md)
   An identifier that uniquely identifies the device.
 - [var modelID: String](avcapturedevice/modelid.md)
@@ -77,14 +77,14 @@ A capture device provides several configuration options. Before attempting to co
   The physical position of the capture device hardware.
 - [AVCaptureDevice.Position](avcapturedevice/position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
-### Accessing Device State
+### Accessing device state
 - [var isConnected: Bool](avcapturedevice/isconnected.md)
   A Boolean value that indicates whether a device is currently connected to the system and available for use.
 - [var isSuspended: Bool](avcapturedevice/issuspended.md)
   A Boolean value that indicates whether the device is in a suspended state.
 - [var isInUseByAnotherApplication: Bool](avcapturedevice/isinusebyanotherapplication.md)
   A Boolean value that indicates whether another app is using the device.
-### Inspecting Device Characteristics
+### Inspecting device characteristics
 - [var isVirtualDevice: Bool](avcapturedevice/isvirtualdevice.md)
   A Boolean value that indicates whether the device consists of two or more physical devices.
 - [var constituentDevices: [AVCaptureDevice]](avcapturedevice/constituentdevices.md)
@@ -95,10 +95,10 @@ A capture device provides several configuration options. Before attempting to co
   The transport type of the device.
 - [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](avcapturedevice/supportssessionpreset(_:).md)
   Returns a Boolean value that indicates whether you can use the device with capture session configured with the specified preset.
-### Monitoring Device Rotation
+### Monitoring device rotation
 - [AVCaptureDevice.RotationCoordinator](avcapturedevice/rotationcoordinator.md)
   A class that monitors the physical orientation of a capture device and provides adjustment angles to keep images level, relative to gravity.
-### Configuring Camera Hardware
+### Configuring camera hardware
 - [func lockForConfiguration() throws](avcapturedevice/lockforconfiguration.md)
   Requests exclusive access to configure device hardware properties.
 - [func unlockForConfiguration()](avcapturedevice/unlockforconfiguration.md)
@@ -113,7 +113,7 @@ A capture device provides several configuration options. Before attempting to co
   Configure the automatic focus behavior of a camera, or manually set its lens position.
 - [Exposure](capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White Balance](capture-device-white-balance.md)
+- [White balance](capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
 - [Lighting](capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.
@@ -121,10 +121,41 @@ A capture device provides several configuration options. Before attempting to co
   Manage HDR and color space settings for a device.
 - [Zoom](capture-device-zoom.md)
   Configure device zooming behavior and inspect hardware capabilities.
-### Enabling Automatic Frame Rate
+### Configuring Cinematic video
+- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideofixedfocus(at:focusmode:).md)
+  Fix focus at a distance.
+- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(at:focusmode:).md)
+  Focus on and start tracking an object if it can be detected at the region specified by the point.
+- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(detectedobjectid:focusmode:).md)
+  Focus on and start tracking a detected object.
+- [AVCaptureDevice.CinematicVideoFocusMode](avcapturedevice/cinematicvideofocusmode.md)
+  Constants indicating the focus behavior when recording a Cinematic Video.
+- [struct AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus.md)
+  An informative status about the scene observed by the device.
+- [static let notEnoughLight: AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus/notenoughlight.md)
+  The light level of the current scene is insufficient for the current set of features to function optimally.
+- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
+  The current scene monitoring statuses related to Cinematic Video capture.
+### Configuring smart framing
+- [var smartFramingMonitor: AVCaptureSmartFramingMonitor?](avcapturedevice/smartframingmonitor.md)
+  A monitor owned by the device that recommends an optimal framing based on the content in the scene.
+- [class AVCaptureSmartFramingMonitor](avcapturesmartframingmonitor.md)
+  An object associated with a capture device that monitors the scene and suggests an optimal framing.
+- [class AVCaptureFraming](avcaptureframing.md)
+  A framing, consisting of an aspect ratio and a zoom factor.
+### Configuring dynamic aspect ratio
+- [func setDynamicAspectRatio(AVCaptureDevice.AspectRatio, completionHandler: ((CMTime, (any Error)?) -> Void)?)](avcapturedevice/setdynamicaspectratio(_:completionhandler:).md)
+  Updates the dynamic aspect ratio of the device.
+- [AVCaptureDevice.AspectRatio](avcapturedevice/aspectratio.md)
+  String constants describing the different video aspect ratios you can configure for a particular device.
+- [var dynamicAspectRatio: AVCaptureDevice.AspectRatio?](avcapturedevice/dynamicaspectratio.md)
+  A key-value observable property indicating the current aspect ratio for a device.
+- [var dynamicDimensions: CMVideoDimensions](avcapturedevice/dynamicdimensions.md)
+  A key-value observable property describing the output dimensions of the video buffer based on the device’s dynamic aspect ratio.
+### Enabling automatic frame rate
 - [var isAutoVideoFrameRateEnabled: Bool](avcapturedevice/isautovideoframerateenabled.md)
   A Boolean value that indicates whether the capture device performs automatic video frame rate adjustments.
-### Supporting Spatial Capture
+### Supporting spatial capture
 - [var spatialCaptureDiscomfortReasons: Set<AVSpatialCaptureDiscomfortReason>](avcapturedevice/spatialcapturediscomfortreasons.md)
   Reasons why current environmental conditions aren’t suitable to capturing spatial videos that are comfortable to view.
 - [struct AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason.md)
@@ -138,17 +169,17 @@ A capture device provides several configuration options. Before attempting to co
   A Boolean value that indicates whether the device is a Continuity Camera.
 - [var companionDeskViewCamera: AVCaptureDevice?](avcapturedevice/companiondeskviewcamera.md)
   A Desk View camera associated with a device.
-### Supporting System Features
-- [System Video Effects and Microphone Modes](system-video-effects-and-microphone-modes.md)
+### Supporting system features
+- [System video effects and microphone modes](system-video-effects-and-microphone-modes.md)
   Configure the state of system video effects like Center Stage, and inspect enhancements the system applies to microphone audio.
-### Monitoring System Pressure
+### Monitoring system pressure
 - [var systemPressureState: AVCaptureDevice.SystemPressureState](avcapturedevice/systempressurestate-swift.property.md)
   A value that indicates the capture device’s current system pressure state.
 - [AVCaptureDevice.SystemPressureState](avcapturedevice/systempressurestate-swift.class.md)
   An object that provides information about OS and hardware status affecting capture system performance and availability.
 - [let AVCaptureSessionInterruptionSystemPressureStateKey: String](avcapturesessioninterruptionsystempressurestatekey.md)
   A key to retrieve a state value that indicates the system pressure level and contributing factors that caused the interruption.
-### Restricting Camera Switching
+### Restricting camera switching
 - [func setPrimaryConstituentDeviceSwitchingBehavior(AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)](avcapturedevice/setprimaryconstituentdeviceswitchingbehavior(_:restrictedswitchingbehaviorconditions:).md)
   Sets the switching behavior of the primary constituent device.
 - [var primaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.property.md)
@@ -169,37 +200,43 @@ A capture device provides several configuration options. Before attempting to co
   The constituent devices available to select as a fallback for a longer focal length primary constituent device.
 - [var fallbackPrimaryConstituentDevices: [AVCaptureDevice]](avcapturedevice/fallbackprimaryconstituentdevices.md)
   The fallback devices to use when a constituent device with a longer focal length becomes limited by its light sensitivity or minimum focus distance.
-### Configuring macOS Features
-- [macOS Capture Features](macos-capture-features.md)
+### Configuring macOS features
+- [macOS capture features](macos-capture-features.md)
   Control the transport behavior and input sources of capture hardware in macOS.
-### Accessing Camera Extrinsics
+### Accessing camera extrinsics
 - [class func extrinsicMatrix(from: AVCaptureDevice, to: AVCaptureDevice) -> Data?](avcapturedevice/extrinsicmatrix(from:to:).md)
   Returns the relative extrinsic matrix from one capture device to another.
-### Determining Lens Stabilization
-- [AVCaptureDevice.LensStabilizationStatus](avcapturedevice/lensstabilizationstatus.md)
-  Constants that indicate the status of optical image stabilization hardware during a bracketed photo capture.
-### Instance Properties
-- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
-- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
-- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
-- [var exposureRectOfInterest: CGRect](avcapturedevice/exposurerectofinterest.md)
-- [var focusRectOfInterest: CGRect](avcapturedevice/focusrectofinterest.md)
-- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
-- [var isExposureRectOfInterestSupported: Bool](avcapturedevice/isexposurerectofinterestsupported.md)
-- [var isFocusRectOfInterestSupported: Bool](avcapturedevice/isfocusrectofinterestsupported.md)
-- [var minExposureRectOfInterestSize: CGSize](avcapturedevice/minexposurerectofinterestsize.md)
-- [var minFocusRectOfInterestSize: CGSize](avcapturedevice/minfocusrectofinterestsize.md)
+### Accessing the focal length
 - [var nominalFocalLengthIn35mmFilm: Float](avcapturedevice/nominalfocallengthin35mmfilm.md)
   The nominal 35mm equivalent focal length of the capture device’s lens.
-### Instance Methods
-- [func defaultRectForExposurePoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforexposurepoint(ofinterest:).md)
-- [func defaultRectForFocusPoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforfocuspoint(ofinterest:).md)
+### Determining lens stabilization
+- [AVCaptureDevice.LensStabilizationStatus](avcapturedevice/lensstabilizationstatus.md)
+  Constants that indicate the status of optical image stabilization hardware during a bracketed photo capture.
+### Configuring lens smudge detection
+- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+  Whether camera lens smudge detection is enabled.
 - [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md)
-- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideofixedfocus(at:focusmode:).md)
-- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(at:focusmode:).md)
-- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(detectedobjectid:focusmode:).md)
-### Enumerations
-- [AVCaptureDevice.CinematicVideoFocusMode](avcapturedevice/cinematicvideofocusmode.md)
+  Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
+- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
+  The camera lens smudge detection interval.
+- [var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus](avcapturedevice/cameralenssmudgedetectionstatus.md)
+  A value specifying the status of camera lens smudge detection.
+- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
+  Constants indicating the current camera lens smudge detection status.
+### Synchronizing with external devices
+- [var isFollowingExternalSyncDevice: Bool](avcapturedevice/isfollowingexternalsyncdevice.md)
+  Whether the device is following an external sync device.
+- [var minSupportedExternalSyncFrameDuration: CMTime](avcapturedevice/minsupportedexternalsyncframeduration.md)
+  The minimum frame duration that can be passed as the `videoFrameDuration` when directing your device input to follow an external sync device.
+- [var isVideoFrameDurationLocked: Bool](avcapturedevice/isvideoframedurationlocked.md)
+  Whether the device’s video frame rate (expressed as a duration) is currently locked.
+- [var minSupportedLockedVideoFrameDuration: CMTime](avcapturedevice/minsupportedlockedvideoframeduration.md)
+  The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
+### Type Properties
+- [class var isEdgeLightActive: Bool](avcapturedevice/isedgelightactive.md)
+  A class property indicating whether the edge light UI is actively being shown on a screen.
+- [class var isEdgeLightEnabled: Bool](avcapturedevice/isedgelightenabled.md)
+  A class property indicating whether the Edge Light feature is currently enabled in Control Center.
 
 ## Relationships
 
@@ -215,8 +252,10 @@ A capture device provides several configuration options. Before attempting to co
 
 ## See Also
 
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+  Capture the optimal shot by providing automatic framing recommendations.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
 - [class AVContinuityDevice](avcontinuitydevice.md)

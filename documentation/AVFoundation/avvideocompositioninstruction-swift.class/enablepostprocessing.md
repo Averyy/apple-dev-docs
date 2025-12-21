@@ -21,9 +21,9 @@ var enablePostProcessing: Bool { get }
 
 #### Discussion
 
-A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates that no post processing is required for the whole duration of the video composition instruction. The composition process is more efficient if the value is [`false`](https://developer.apple.com/documentation/swift/false).
+A value of [`false`](https://developer.apple.com/documentation/Swift/false) indicates that no post processing is required for the whole duration of the video composition instruction. The composition process is more efficient if the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) by default.
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) by default.
 
 ## See Also
 

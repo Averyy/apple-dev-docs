@@ -22,7 +22,7 @@ func supportsAlgorithm(_ algorithm: SecKeyAlgorithm) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `algorithm` is the target operation algorithm or one of the other algorithms used; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `algorithm` is the target operation algorithm or one of the other algorithms used; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

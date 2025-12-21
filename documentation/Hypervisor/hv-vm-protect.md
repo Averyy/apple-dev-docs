@@ -6,12 +6,12 @@
 Modifies the permissions of a region in the guest physical address space of the VM.
 
 **Availability**:
-- macOS 11.0+
+- macOS 10.10+
 
 ## Declaration
 
 ```swift
-func hv_vm_protect(_ ipa: hv_ipa_t, _ size: Int, _ flags: hv_memory_flags_t) -> hv_return_t
+func hv_vm_protect(_ gpa: hv_gpaddr_t, _ size: Int, _ flags: hv_memory_flags_t) -> hv_return_t
 ```
 
 #### Return Value
@@ -24,15 +24,14 @@ Intel-based Mac computers have different parameters:
 
 ## Parameters
 
-- `ipa`: Apple silicon only.
 - `size`: The size in bytes of the region to protect, in bytes. It must be a multiple of the page size.
 - `flags`: The permissions for the protected region. For a list of valid options, see  .
 
 ## See Also
 
-- [func hv_vm_map(UnsafeMutableRawPointer, hv_ipa_t, Int, hv_memory_flags_t) -> hv_return_t](hv_vm_map(_:_:_:_:).md)
+- [func hv_vm_map(hv_uvaddr_t, hv_gpaddr_t, Int, hv_memory_flags_t) -> hv_return_t](hv_vm_map(_:_:_:_:).md)
   Maps a region in the virtual address space of the current process into the guest physical address space of the VM.
-- [func hv_vm_unmap(hv_ipa_t, Int) -> hv_return_t](hv_vm_unmap(_:_:).md)
+- [func hv_vm_unmap(hv_gpaddr_t, Int) -> hv_return_t](hv_vm_unmap(_:_:).md)
   Unmaps a region in the guest physical address space of the VM.
 - [typealias hv_ipa_t](hv_ipa_t.md)
   The type of an intermediate physical address, which is a guest physical address space of the VM.

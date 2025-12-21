@@ -6,12 +6,12 @@
 Configures the scroll edge effect style for scroll views within this hierarchy.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func scrollEdgeEffectStyle(_ style: ScrollEdgeEffectStyle?, for edges: Edge.Set)
 
 #### Discussion
 
-By default, a scroll view will render an automatic edge effect. You use this modifier to change rendered edge effect style.
+By default, a scroll view renders an automatic edge effect. Use this modifier to change the scroll edge effect style.
 
 ```swift
 ScrollView {
@@ -32,17 +32,17 @@ ScrollView {
         }
     }
 }
-.scrollEdgeEffectStyle(.hard)
+.scrollEdgeEffectStyle(.hard, for: .all)
 ```
 
 ## See Also
 
-- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](view/scrolledgeeffectdisabled(_:for:).md)
-  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
+  Hides any scroll edge effects for scroll views within this hierarchy.
 - [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
   A structure that defines the style of pocket a scroll view will have.
 - [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
-  Renders the provided content appropriately to be displayed as a custom bar.
+  Shows the specified content as a custom bar beside the modified view.
 
 
 ---

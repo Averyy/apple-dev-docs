@@ -6,8 +6,8 @@
 The average per-packet transmit latency measured for this flow’s peers.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

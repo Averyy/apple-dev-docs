@@ -16,11 +16,11 @@ To enable your App Clip to schedule or receive notifications for up to 8 hours a
 
 Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the `NSAppClip` key and two entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. By default, the value for both entries is `NO`. Change the value for “Requests ephemeral user notifications” to `YES`.
 
-![An Info.plist file with the entry that allows the App Clip to send notifications for a short time.](https://docs-assets.developer.apple.com/published/7c580f00b68b5bac89e804cea6239883/media-3663318%402x.png)
+![An Info.plist file with the entry that allows the App Clip to send notifications for a short time.](https://docs-assets.developer.apple.com/published/dc9b46cc4c6e5cee07541b12dcffcd11/xcode-requests-ephemeral-user-notifications%402x.png)
 
 As a result, the App Clip card that’s displayed upon invocation of the App Clip contains a note that tells the user about the App Clip’s ability to receive or schedule notifications. This permission is enabled by default, but users can disable it by tapping the note on the App Clip card.
 
-![An App Clip card for an App Clip that can send notifications.](https://docs-assets.developer.apple.com/published/d9f084bbae56e3cb9fe743ffb960fb33/media-3669501%402x.png)
+![An App Clip card for an App Clip that can send notifications.](https://docs-assets.developer.apple.com/published/5999ea382ac6117b0817757549947499/enabling-app-clips-card-notifications%402x.png)
 
 Because users can disable notifications in the App Clip card, add code to check whether the App Clip has permission to schedule and receive notifications. The following code checks whether the user has granted permission to send notifications for a short amount of time:
 

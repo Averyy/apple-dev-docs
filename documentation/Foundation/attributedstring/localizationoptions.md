@@ -29,6 +29,7 @@ struct LocalizationOptions
 - [var concepts: [InflectionConcept]?](attributedstring/localizationoptions/concepts.md)
   The inflection concepts for achieving automatic grammar agreement during localization.
 - [var inflect: Bool](attributedstring/localizationoptions/inflect.md)
+  Whether attributes for automatic grammar agreement and formatting should be processed upon loading the string. Default value is `true`.
 - [var replacements: [any CVarArg]?](attributedstring/localizationoptions/replacements.md)
 ### Type Methods
 - [static func localizedPhraseConcept(String) -> AttributedString.LocalizationOptions](attributedstring/localizationoptions/localizedphraseconcept(_:).md)

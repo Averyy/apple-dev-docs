@@ -36,8 +36,6 @@ Possible values for this style are: [`omitted`](date/formatstyle/symbol/hour/amp
 - [static let wide: Date.FormatStyle.Symbol.Hour.AMPMStyle](date/formatstyle/symbol/hour/ampmstyle/wide.md)
   A type that represents the wide day period if the locale prefers using day period with hour.
 ### Comparing AMPM Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

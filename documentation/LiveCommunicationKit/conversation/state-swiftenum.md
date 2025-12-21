@@ -33,18 +33,6 @@ enum State
   The conversation is no longer active and all audio and video sessions have ended.
 - [Conversation.State.paused](conversation/state-swift.enum/paused.md)
   Audio and video streams are paused, but may resume.
-### Initializers
-- [init?(rawValue: Int)](conversation/state-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](conversation/state-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Conversation.State.RawValue](conversation/state-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](conversation/state-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](conversation/state-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -64,7 +52,7 @@ enum State
   The handle that identifies the local participant to remote participants.
 - [var state: Conversation.State](conversation/state-swift.property.md)
   The current state of the conversation.
-- [var uuid: UUID](conversation/uuid.md)
+- [let uuid: UUID](conversation/uuid.md)
   The unique identifier for a conversation.
 
 

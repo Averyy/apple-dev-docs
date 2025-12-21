@@ -17,7 +17,7 @@ var shouldUpdateWhileOffscreen: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the web view updates regardless if it is visible. If [`false`](https://developer.apple.com/documentation/swift/false), it updates only if it is visible, possibly improving performance, and then updates automatically when it becomes visible. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the web view updates regardless if it is visible. If [`false`](https://developer.apple.com/documentation/Swift/false), it updates only if it is visible, possibly improving performance, and then updates automatically when it becomes visible. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

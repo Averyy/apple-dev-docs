@@ -45,10 +45,8 @@ enum ModelAlgorithmType
 
 ## See Also
 
-- [init(algorithm: MLRecommender.ModelAlgorithmType, threshold: Double, maxCount: Int, nearestItemsDataFrame: DataFrame?, maxSimilarityIterations: Int)](mlrecommender/modelparameters-swift.struct/init(algorithm:threshold:maxcount:nearestitemsdataframe:maxsimilarityiterations:).md)
-  Creates a new set of recommender configuration parameters.
-- [init(algorithm: MLRecommender.ModelAlgorithmType, threshold: Double, maxCount: Int, nearestItems: MLDataTable?, maxSimilarityIterations: Int)](mlrecommender/modelparameters-swift.struct/init(algorithm:threshold:maxcount:nearestitems:maxsimilarityiterations:).md)
-  Creates a new set of recommender configuration parameters.
+- [MLRecommender.SimilarityType](mlrecommender/similaritytype.md)
+  The metric by which the recommender computes item similarity.
 
 
 ---

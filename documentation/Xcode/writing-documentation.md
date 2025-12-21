@@ -24,7 +24,7 @@ For a deeper understanding of DocC and guidance on its usage, please consult the
   Add reference documentation to your symbols that explains how to use them.
 - [Adding supplemental content to a documentation catalog](adding-supplemental-content-to-a-documentation-catalog.md)
   Include articles and extension files to extend your source documentation comments or provide supporting conceptual content.
-- [SlothCreator: Building DocC Documentation in Xcode](slothcreator_building_docc_documentation_in_xcode.md)
+- [SlothCreator: Building DocC documentation in Xcode](slothcreator-building-docc-documentation-in-xcode.md)
   Build DocC documentation for a Swift package that contains a DocC Catalog.
 ### Structure and formatting
 - [Adding structure to your documentation pages](adding-structure-to-your-documentation-pages.md)

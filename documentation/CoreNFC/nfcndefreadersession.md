@@ -51,14 +51,14 @@ As with the [`NFCReaderSession`](nfcreadersession-swift.class.md) base class, on
 
 - [class NFCTagReaderSession](nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
+- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+  A reader session that supports the use of payment tags.
 - [class NFCVASReaderSession](nfcvasreadersession.md)
   A reader session for processing Value Added Service (VAS) tags.
 - [class NFCReaderSession](nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [class NFCReaderSession](nfcreadersession-swift.class.md)
-  The abstract base class that represents a reader session for detecting NFC tags.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 

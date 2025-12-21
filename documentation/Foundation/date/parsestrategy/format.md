@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The string representation of the fixed format conforming to Unicode Technical Standard #35.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

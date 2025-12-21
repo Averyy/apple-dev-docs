@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -18,8 +18,6 @@ struct DidUnhideApplicationMessage
 - [init(application: NSRunningApplication)](nsworkspace/didunhideapplicationmessage/init(application:).md)
 ### Instance Properties
 - [var application: NSRunningApplication](nsworkspace/didunhideapplicationmessage/application.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidUnhideApplicationMessage) -> Notification](nsworkspace/didunhideapplicationmessage/makenotification(_:).md)
 
 ## Relationships
 

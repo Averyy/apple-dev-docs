@@ -6,8 +6,8 @@
 Configures a network listener to publish a service over Wi-Fi Aware and accept incoming connections from paired devices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,9 +17,7 @@ struct WAPublisherListener
 
 #### Overview
 
-Devices can publish services for other Wi-Fi Aware devices to use by creating a `NetworkListener` object from the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework, and passing in a `.wifiAware()` instruction indicating the `WAPublishableService` to provide, and the set of `WAPairedDevice` that can connect to the service.
-
-The code below configures the `NetworkListener` as a Wi-Fi Aware publisher by passing in a `.wifiAware()` instruction:
+Devices can publish services for other Wi-Fi Aware devices to use by creating a `NetworkListener` object from the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework, and passing in a `.wifiAware()` instruction indicating the `WAPublishableService` to provide, and the set of `WAPairedDevice` that can connect to the service. The code below configures the `NetworkListener` as a Wi-Fi Aware publisher by passing in a `.wifiAware()` instruction:
 
 ```swift
 NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices)) ) )
@@ -41,8 +39,6 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
   The service data for the Wi-Fi Aware publish operation.
 - [var isApplicationService: Bool](wapublisherlistener/isapplicationservice.md)
   A Boolean value that determines whether the devices are listening for an application service.
-### Default Implementations
-- [ListenerProvider Implementations](wapublisherlistener/listenerprovider-implementations.md)
 
 ## Relationships
 

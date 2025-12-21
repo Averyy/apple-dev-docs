@@ -22,7 +22,7 @@ class func requestIsCacheEquivalent(_ a: URLRequest, to b: URLRequest) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aRequest` and `bRequest` are equivalent for cache purposes, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aRequest` and `bRequest` are equivalent for cache purposes, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

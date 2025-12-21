@@ -25,13 +25,6 @@ enum ValidationData
   The location of a validation image you use to validate the model.
 - [MLStyleTransfer.ModelParameters.ValidationData.none](mlstyletransfer/modelparameters/validationdata/none.md)
   An empty validation dataset you use to skip model validation.
-### Comparing validation data
-- [static func == (MLStyleTransfer.ModelParameters.ValidationData, MLStyleTransfer.ModelParameters.ValidationData) -> Bool](mlstyletransfer/modelparameters/validationdata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlstyletransfer/modelparameters/validationdata/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlstyletransfer/modelparameters/validationdata/equatable-implementations.md)
 
 ## Relationships
 

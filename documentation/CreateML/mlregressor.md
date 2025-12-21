@@ -35,28 +35,21 @@ When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data
 ## Topics
 
 ### Creating and training a regressor
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?) throws](mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-5mhd2.md)
+- [init(trainingData:targetColumn:featureColumns:)](mlregressor/init(trainingdata:targetcolumn:featurecolumns:).md)
   Creates a regressor.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?) throws](mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-56rvo.md)
-  Creates a regressor from the feature columns in the training data to predict the values in the target column.
 - [var targetColumn: String](mlregressor/targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
 - [var featureColumns: [String]](mlregressor/featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
-### Assessing model accuracy
+### Evaluating a regressor
+- [func evaluation(on:)](mlregressor/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var trainingMetrics: MLRegressorMetrics](mlregressor/trainingmetrics.md)
   Measurements of the regressor’s performance on the training data set.
 - [var validationMetrics: MLRegressorMetrics](mlregressor/validationmetrics.md)
   Measurements of the regressor’s performance on the validation data set.
-### Evaluating a regressor
-- [func evaluation(on: DataFrame) -> MLRegressorMetrics](mlregressor/evaluation(on:)-32nc7.md)
-  Evaluates the classifier on the provided labeled data.
-- [func evaluation(on: MLDataTable) -> MLRegressorMetrics](mlregressor/evaluation(on:)-7pirm.md)
-  Evaluates the classifier on the provided labeled data.
 ### Testing a regressor
-- [func predictions(from: DataFrame) throws -> AnyColumn](mlregressor/predictions(from:)-6e6ti.md)
-- [func predictions(from: MLDataTable) throws -> MLUntypedColumn](mlregressor/predictions(from:)-3gkt1.md)
-  Predicts the target value from the provided data.
+- [func predictions(from:)](mlregressor/predictions(from:).md)
 ### Saving a regressor
 - [func write(to: URL, metadata: MLModelMetadata?) throws](mlregressor/write(to:metadata:).md)
   Exports a Core ML model file for use in your app.
@@ -106,7 +99,7 @@ When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data
 
 ## See Also
 
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [enum MLClassifier](mlclassifier.md)
   A model you train to classify data into discrete categories.

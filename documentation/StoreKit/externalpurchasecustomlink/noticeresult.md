@@ -23,7 +23,7 @@ enum NoticeResult
 
 This value is the result of calling [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md).
 
-If the value is [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpurchasecustomlink/noticeresult/continued.md), the customer choses to continue and your app can offer custom links for external purchases. Otherwise, don’t continue.
+If the value is [`ExternalPurchaseCustomLink.NoticeResult.continued`](externalpurchasecustomlink/noticeresult/continued.md), the customer choses to continue and your app can communicate and promote offers for purchase in a distribution channel of your choice. Otherwise, don’t continue.
 
 ## Topics
 

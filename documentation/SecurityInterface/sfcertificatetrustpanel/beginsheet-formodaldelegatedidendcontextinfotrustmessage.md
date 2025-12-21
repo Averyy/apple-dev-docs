@@ -38,16 +38,12 @@ The delegate method may dismiss the keychain settings sheet itself; if it does n
 - `trust`: A trust management object. Use the   function (in Security/SecTrust.h) to create the trust management object.
 - `message`: A message string to display in the sheet.
 
-## Topics
+## See Also
 
-### Related Documentation
 - [func SecTrustCreateWithCertificates(_ certificates: CFTypeRef, _ policies: CFTypeRef?, _ trust: UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
   Creates a trust management object based on certificates and policies.
 - [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.
-
-## See Also
-
 - [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.
 

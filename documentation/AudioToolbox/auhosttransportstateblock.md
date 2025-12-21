@@ -23,7 +23,7 @@ typealias AUHostTransportStateBlock = (UnsafeMutablePointer<AUHostTransportState
 
 If the host app provides this block to an audio unit, via the [`transportStateBlock`](auaudiounit/transportstateblock.md) property, then the block may be called at the beginning of each render cycle to obtain information about the current transport state. Any of the provided parameters may be null to indicate that the audio unit is not interested in that particular piece of information.
 
-This block returns [`true`](https://developer.apple.com/documentation/swift/true) if the transport state was able to be retrieved from the host; it returns [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This block returns [`true`](https://developer.apple.com/documentation/Swift/true) if the transport state was able to be retrieved from the host; it returns [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 The block takes the following parameters:
 

@@ -33,26 +33,6 @@ struct Transformer
 ### Performing the transformation
 - [func applied(to: Element, eventHandler: EventHandler?) -> Element](standardscaler/transformer/applied(to:eventhandler:).md)
   Scales the input values using the calculation `(input - mean) / standardDeviation`.
-### Operators
-- [static func == (StandardScaler<Element>.Transformer, StandardScaler<Element>.Transformer) -> Bool](standardscaler/transformer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](standardscaler/transformer/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](standardscaler/transformer/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [StandardScaler.Transformer.Input](standardscaler/transformer/input.md)
-  The input type.
-- [StandardScaler.Transformer.Output](standardscaler/transformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](standardscaler/transformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](standardscaler/transformer/decodable-implementations.md)
-- [Encodable Implementations](standardscaler/transformer/encodable-implementations.md)
-- [Equatable Implementations](standardscaler/transformer/equatable-implementations.md)
-- [Transformer Implementations](standardscaler/transformer/transformer-implementations.md)
 
 ## Relationships
 

@@ -28,11 +28,6 @@ struct ShuffleRandomly<Element>
 ### Performing the transformation
 - [func applied(to: Element, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Element](shufflerandomly/applied(to:generator:eventhandler:).md)
   Apply transformations in a random order.
-### Type Aliases
-- [ShuffleRandomly.Input](shufflerandomly/input.md)
-  The input type.
-- [ShuffleRandomly.Output](shufflerandomly/output.md)
-  The output type.
 
 ## Relationships
 

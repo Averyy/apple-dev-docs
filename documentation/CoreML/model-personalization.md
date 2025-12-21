@@ -10,7 +10,7 @@ On-device model updates provide your app the flexibility to personalize a userâ€
 
 ## Topics
 
-### On-Device Model Updates
+### On-device model updates
 - [class MLTask](mltask.md)
   An abstract base class for machine learning tasks.
 - [Personalizing a Model with On-Device Updates](personalizing-a-model-with-on-device-updates.md)

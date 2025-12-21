@@ -21,7 +21,7 @@ var isImmutable: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar is immutable; otherwise it is not. Events and reminders can still be added to an immutable calendar.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the calendar is immutable; otherwise it is not. Events and reminders can still be added to an immutable calendar.
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Configures the encoder with a render or tile pipeline state instance that applies to your subsequent draw commands.
+Configures the encoder with a render or tile pipeline state that applies to your subsequent draw commands.
 
 **Availability**:
 - iOS 8.0+
@@ -30,7 +30,7 @@ The render pipeline you pass to this method needs to be compatible with the rend
 
 ## Parameters
 
-- `pipelineState`: A render pipeline state instance that you create by calling an   methods (see  ).
+- `pipelineState`: A render pipeline state that you create by calling an   methods (see  ).
 
 
 ---

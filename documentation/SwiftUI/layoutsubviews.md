@@ -64,7 +64,7 @@ for (index, subview) in subviews.enumerated() {
 
 ## See Also
 
-- [Composing custom layouts with SwiftUI](composing_custom_layouts_with_swiftui.md)
+- [Composing custom layouts with SwiftUI](composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [protocol Layout](layout.md)
   A type that defines the geometry of a collection of views.

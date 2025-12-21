@@ -23,8 +23,6 @@ struct SlidingWindowTransformer<Input> where Input : Sendable
 ## Topics
 
 ### Creating a transformer
-- [init(from: any Decoder) throws](slidingwindowtransformer/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(stride: Int, length: Int)](slidingwindowtransformer/init(stride:length:).md)
   Creates a window temporal transformer.
 ### Getting the properties
@@ -35,20 +33,8 @@ struct SlidingWindowTransformer<Input> where Input : Sendable
 ### Performing the transformation
 - [func applied<S>(to: S, eventHandler: EventHandler?) throws -> SlidingWindowTransformer<Input>.WindowSequence](slidingwindowtransformer/applied(to:eventhandler:).md)
   Extracts a window sequence from the input sequence
-- [SlidingWindowTransformer.Input](slidingwindowtransformer/input.md)
-  The input type.
-- [SlidingWindowTransformer.Output](slidingwindowtransformer/output.md)
-  The output type.
 - [SlidingWindowTransformer.WindowSequence](slidingwindowtransformer/windowsequence.md)
   An async sequence of windows.
-### Instance Methods
-- [func encode(to: any Encoder) throws](slidingwindowtransformer/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [SlidingWindowTransformer.OutputSequence](slidingwindowtransformer/outputsequence.md)
-  The output async sequence type.
-### Default Implementations
-- [TemporalTransformer Implementations](slidingwindowtransformer/temporaltransformer-implementations.md)
 
 ## Relationships
 

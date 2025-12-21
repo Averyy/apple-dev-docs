@@ -3,7 +3,7 @@
 **Framework**: Network  
 **Kind**: case
 
-A service for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
+A service type for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
 
 **Availability**:
 - iOS 12.0+
@@ -22,12 +22,12 @@ case signaling
 
 #### Discussion
 
-Use this for establishing, maintaining, and tearing down a VoIP call.
+An example of traffic that uses this service type occurs when the system needs to establish and tear down a VoIP call.
 
 ## See Also
 
 - [NWParameters.ServiceClass.bestEffort](nwparameters/serviceclass-swift.enum/besteffort.md)
-  A service type to enable Cellular Network Slicing when not setting the other service types.
+  The default service type.
 - [NWParameters.ServiceClass.background](nwparameters/serviceclass-swift.enum/background.md)
   A service type for high-delay tolerant, high-loss tolerant, elastic flow, and variable size connections.
 - [NWParameters.ServiceClass.interactiveVideo](nwparameters/serviceclass-swift.enum/interactivevideo.md)
@@ -35,7 +35,7 @@ Use this for establishing, maintaining, and tearing down a VoIP call.
 - [NWParameters.ServiceClass.interactiveVoice](nwparameters/serviceclass-swift.enum/interactivevoice.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
 - [NWParameters.ServiceClass.responsiveData](nwparameters/serviceclass-swift.enum/responsivedata.md)
-  A service type for medium-delay tolerant, elastic and inelastic flow, bursty, and long-lived connections.
+  A service type for medium-delay tolerant, inelastic flow, and bursty connections.
 
 
 ---

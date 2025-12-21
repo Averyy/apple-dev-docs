@@ -4,19 +4,27 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 struct NetworkJSONCoder
 ```
+
+## Topics
+
+### Instance Methods
+- [func makeDecoder() -> JSONDecoder](networkjsoncoder/makedecoder.md)
+  Make a JSONDecoder that can be used to decode into a Decodable type.
+- [func makeEncoder() -> JSONEncoder](networkjsoncoder/makeencoder.md)
+  Make a JSONEncoder that can be used to encode an Encodable type.
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: struct
 
-These are the values which will be used as inputs to the salts for deriving the SymmetricKey. This type is analogous to AuthenticationExtensionsPRFValues in the WebAuthn spec.
+The values to use as inputs to the salts for deriving the symmetric key.
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +18,20 @@ These are the values which will be used as inputs to the salts for deriving the 
 struct InputValues
 ```
 
+#### Overview
+
+This type is analogous to `AuthenticationExtensionsPRFValues` in the WebAuthn specification.
+
 ## Topics
 
 ### Initializers
 - [init(saltInput1: Data, saltInput2: Data?)](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/init(saltinput1:saltinput2:).md)
+  Initializes an input values structure with the given salts.
 ### Instance Properties
 - [var saltInput1: Data](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput1.md)
+  A salt for the hashing function.
 - [var saltInput2: Data?](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput2.md)
+  An optional second salt for the hashing function.
 ### Type Methods
 - [static func saltInput1(Data, saltInput2: Data?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues-swift.struct/saltinput1(_:saltinput2:).md)
   The inputs for generating the PRF output secrets.

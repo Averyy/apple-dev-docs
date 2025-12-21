@@ -35,14 +35,6 @@ To apply tags to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
 ### Structures
 - [struct List](tag/list.md)
   A type representing one or more tags applied to a test.
-### Default Implementations
-- [CodingKeyRepresentable Implementations](tag/codingkeyrepresentable-implementations.md)
-- [Comparable Implementations](tag/comparable-implementations.md)
-- [CustomStringConvertible Implementations](tag/customstringconvertible-implementations.md)
-- [Decodable Implementations](tag/decodable-implementations.md)
-- [Encodable Implementations](tag/encodable-implementations.md)
-- [Equatable Implementations](tag/equatable-implementations.md)
-- [Hashable Implementations](tag/hashable-implementations.md)
 
 ## Relationships
 
@@ -66,6 +58,8 @@ To apply tags to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
   A type that represents a comment related to a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct List](tag/list.md)

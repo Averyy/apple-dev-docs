@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value defining a mask generated dynamically based on control points, see [`ImmersiveDynamicMask`](immersivedynamicmask.md) for details.
+A value that defines a control points based dynamically generated mask.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

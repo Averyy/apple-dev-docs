@@ -48,6 +48,8 @@ class MLMultiArrayConstraint
 
 ## See Also
 
+- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+  The state feature value constraint.
 - [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
 - [class MLImageConstraint](mlimageconstraint.md)

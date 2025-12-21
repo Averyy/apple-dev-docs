@@ -31,6 +31,8 @@ You use the [`string(from:)`](measurementformatter/string(from:)-wt9y.md) method
 ### Specifying the Format
 - [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
   The options for how the unit is formatted.
+- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+  Measurement formatter options.
 - [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
   The unit style.
 - [var locale: Locale!](measurementformatter/locale.md)
@@ -40,13 +42,10 @@ You use the [`string(from:)`](measurementformatter/string(from:)-wt9y.md) method
 ### Converting Measurements
 - [func string(from: Measurement<Unit>) -> String](measurementformatter/string(from:)-wt9y.md)
   Creates and returns a localized string representation of the provided measurement.
+- [func string<UnitType>(from: Measurement<UnitType>) -> String](measurementformatter/string(from:)-6rcb1.md)
+  Creates and returns a localized string representation of the provided measurement.
 - [func string(from: Unit) -> String](measurementformatter/string(from:)-4hwjz.md)
   Creates and returns a localized string representation of the provided unit of measure.
-### Constants
-- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
-  Measurement formatter options.
-### Instance Methods
-- [func string<UnitType>(from: Measurement<UnitType>) -> String](measurementformatter/string(from:)-6rcb1.md)
 
 ## Relationships
 

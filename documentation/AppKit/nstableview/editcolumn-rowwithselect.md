@@ -19,7 +19,7 @@ func editColumn(_ column: Int, row: Int, with event: NSEvent?, select: Bool)
 
 This method is invoked automatically in response to user actions; you should rarely need to invoke it directly. `theEvent` is usually the mouse event that triggered editing; it can be `nil` when starting an edit programmatically.
 
-This method scrolls the table view so that the cell is visible and sets up the field editor. If `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it calls the  [`edit(withFrame:in:editor:delegate:event:)`](nscell/edit(withframe:in:editor:delegate:event:).md) method of the field editor’s [`NSCell`](nscell.md) object, providing the `NSTableView` as the text delegate. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), this method calls the [`select(withFrame:in:editor:delegate:start:length:)`](nscell/select(withframe:in:editor:delegate:start:length:).md) method instead.
+This method scrolls the table view so that the cell is visible and sets up the field editor. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it calls the  [`edit(withFrame:in:editor:delegate:event:)`](nscell/edit(withframe:in:editor:delegate:event:).md) method of the field editor’s [`NSCell`](nscell.md) object, providing the `NSTableView` as the text delegate. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), this method calls the [`select(withFrame:in:editor:delegate:start:length:)`](nscell/select(withframe:in:editor:delegate:start:length:).md) method instead.
 
 This method can be overridden to customize drawing for `rowIndex` when using [`NSCell`](nscell.md)-based table views.
 

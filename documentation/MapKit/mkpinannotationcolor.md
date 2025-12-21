@@ -38,12 +38,10 @@ enum MKPinAnnotationColor
 
 ## See Also
 
-- [class func redPinColor() -> UIColor](mkpinannotationview/redpincolor.md)
-  Returns the standard color for red pins.
-- [class func greenPinColor() -> UIColor](mkpinannotationview/greenpincolor.md)
-  Returns the standard color for green pins.
-- [class func purplePinColor() -> UIColor](mkpinannotationview/purplepincolor.md)
-  Returns the standard color for purple pins.
+- [MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.enum.md)
+  Constants indicating the types of search completions to return.
+- [enum MKMapType](mkmaptype.md)
+  The type of map to display.
 
 
 ---

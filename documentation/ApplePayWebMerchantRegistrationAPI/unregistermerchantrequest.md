@@ -14,6 +14,18 @@ The request body you use to unregister one or more merchant domains.
 object UnregisterMerchantRequest
 ```
 
+#### Overview
+
+The following example shows the format of an `UnregisterMerchant` request.
+
+```json
+{
+    "domainNames" : ["subdomain-1.example.com"],
+    "partnerInternalMerchantIdentifier": "ABC-123456",
+    "reason": "merchant has closed their account"
+}
+```
+
 ## See Also
 
 - [Unregister Merchant](unregister-merchant.md)

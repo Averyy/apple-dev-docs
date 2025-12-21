@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: property
 
-A string that identifies an offer applied to the next subscription period.
+A string that identifies an offer that applies to the next subscription period.
 
 **Availability**:
 - iOS 15.0+
@@ -21,6 +21,7 @@ var offerID: String? { get }
 
 ## Mentions
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion

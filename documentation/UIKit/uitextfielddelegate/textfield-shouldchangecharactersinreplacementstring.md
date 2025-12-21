@@ -21,7 +21,7 @@ optional func textField(_ textField: UITextField, shouldChangeCharactersIn range
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified text range should be replaced; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to keep the old text.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified text range should be replaced; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to keep the old text.
 
 #### Discussion
 

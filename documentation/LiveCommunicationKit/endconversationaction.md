@@ -43,7 +43,7 @@ Ending a conversation locally doesn’t necessarily end the conversation for rem
 ## See Also
 
 - [class ConversationAction](conversationaction.md)
-  A type that represents a VoIP action for a conversation.
+  A type that represents an action for a conversation.
 - [class JoinConversationAction](joinconversationaction.md)
   An action for joining an incoming conversation.
 - [class MergeConversationAction](mergeconversationaction.md)

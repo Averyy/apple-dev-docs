@@ -26,7 +26,7 @@ A new action object.
 
 #### Discussion
 
-This action has an instantaneous duration. When the action executes, the node’s [`isHidden`](sknode/ishidden.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+This action has an instantaneous duration. When the action executes, the node’s [`isHidden`](sknode/ishidden.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This action is reversible; the reversed action shows the node.
 

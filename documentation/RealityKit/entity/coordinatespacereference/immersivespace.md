@@ -22,7 +22,7 @@ You can use this enum case to get an entity’s relative transform to the immers
 let transformInImmersiveSpace = entity.transformMatrix(relativeTo: .immersiveSpace)
 ```
 
-> **Note**: If no immersive space is open, calling [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) with the case `immersiveSpace` returns `nil`.
+> **Note**: If no immersive space is open, calling `Entity/transformMatrix(relativeTo:)-70l1k` with the case `immersiveSpace` returns `nil`.
 
 
 ---

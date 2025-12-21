@@ -21,7 +21,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-On Apple TV, you can set this property to [`true`](https://developer.apple.com/documentation/swift/true) to move the focus to the access point. This is an observable property.
+On Apple TV, you can set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to move the focus to the access point. This is an observable property.
 
 ## See Also
 

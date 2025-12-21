@@ -25,7 +25,7 @@ The comparator message is sent to each object in the matrix and has as its singl
 
 ## See Also
 
-- [func sort(using comparator: Selector)](../Foundation/NSMutableArray/sort(using:)-537vs.md)
+- [func sort(using: Selector)](../Foundation/NSMutableArray/sort(using:)-537vs.md)
   Sorts the receiver in ascending order, as determined by the comparison method specified by a given selector.
 - [func addColumn()](nsmatrix/addcolumn.md)
   Adds a new column of cells to the right of the last column.
@@ -42,7 +42,7 @@ The comparator message is sent to each object in the matrix and has as its singl
 - [func getNumberOfRows(UnsafeMutablePointer<Int>?, columns: UnsafeMutablePointer<Int>?)](nsmatrix/getnumberofrows(_:columns:).md)
   Obtains the number of rows and columns in the receiver.
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func insertColumn(Int, with: [NSCell]?)](nsmatrix/insertcolumn(_:with:).md)
   Inserts a new column of cells before the specified column, using the given cells.
 - [func insertRow(Int)](nsmatrix/insertrow(_:).md)

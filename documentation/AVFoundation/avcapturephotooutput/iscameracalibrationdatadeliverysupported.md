@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-A Boolean value indicating whether the capture output currently supports delivery of camera calibration data.
+A Boolean value that indicates whether the photo output currently supports the delivery of camera calibration data.
 
 **Availability**:
 - iOS 11.0+
@@ -19,7 +19,7 @@ var isCameraCalibrationDataDeliverySupported: Bool { get }
 
 #### Discussion
 
-[`AVCameraCalibrationData`](avcameracalibrationdata.md) objects describe the imaging parameters of a device camera, and can be useful for performing computer vision tasks in conjunction with dual photo delivery on dual-camera devices.This property’s value can be [`true`](https://developer.apple.com/documentation/swift/true) only when the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) property is [`true`](https://developer.apple.com/documentation/swift/true). To enable camera calibration delivery, set the [`isCameraCalibrationDataDeliveryEnabled`](avcapturephotosettings/iscameracalibrationdatadeliveryenabled.md) property in a photo settings object.
+A photo output can deliver camera calibration data only when it’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) property is `true` and its [`isContentAwareDistortionCorrectionEnabled`](avcapturephotooutput/iscontentawaredistortioncorrectionenabled.md) property is `false`. Additionally, the source capture device’s [`isGeometricDistortionCorrectionEnabled`](avcapturedevice/isgeometricdistortioncorrectionenabled.md) property must be `false`.
 
 This property is key-value observable.
 

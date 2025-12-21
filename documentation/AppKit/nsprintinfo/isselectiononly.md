@@ -16,7 +16,7 @@ var isSelectionOnly: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if only the currently selected contents should be printed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if only the currently selected contents should be printed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

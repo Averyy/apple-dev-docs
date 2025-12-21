@@ -8,7 +8,6 @@ An image-analysis request that finds regions of visible text in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,16 +27,6 @@ This request generates a collection of [`TextObservation`](textobservation.md) o
 ### Creating a request
 - [init(DetectTextRectanglesRequest.Revision?)](detecttextrectanglesrequest/init(_:).md)
   Creates a text rectangles detection request.
-### Getting the revision
-- [let revision: DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectTextRectanglesRequest.Revision]](detecttextrectanglesrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
-### Inspecting a request
-- [var reportCharacterBoxes: Bool](detecttextrectanglesrequest/reportcharacterboxes.md)
-  A Boolean value that indicates whether the request detects character-bounding boxes.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -51,8 +40,19 @@ This request generates a collection of [`TextObservation`](textobservation.md) o
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct TextObservation](textobservation.md)
   Information about regions of text that an image-analysis request detects.
+### Configuring a request
+- [var reportCharacterBoxes: Bool](detecttextrectanglesrequest/reportcharacterboxes.md)
+  A Boolean value that indicates whether the request detects character-bounding boxes.
+### Getting the revision
+- [let revision: DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectTextRectanglesRequest.Revision]](detecttextrectanglesrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -67,14 +67,16 @@ This request generates a collection of [`TextObservation`](textobservation.md) o
 
 ## See Also
 
-- [Recognizing tables within a document](recognize-tables-within-a-document.md)
-  Scan a document containing a contact table and extract the content within the table in a formatted way.
 - [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
+- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+  Scan a document that contains a table and extract its content in a formatted way.
+- [struct DetectBarcodesRequest](detectbarcodesrequest.md)
+  A request that detects barcodes in an image.
+- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
+  A request that detects rectangular regions that contain text in the input image.
 - [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
   An image-analysis request to scan an image of a document and provide information about its structure.
-- [struct DocumentObservation](documentobservation.md)
-  Information about the sections of content that an image-analysis request detects in a document.
 - [struct RecognizeTextRequest](recognizetextrequest.md)
   An image-analysis request that recognizes text in an image.
 

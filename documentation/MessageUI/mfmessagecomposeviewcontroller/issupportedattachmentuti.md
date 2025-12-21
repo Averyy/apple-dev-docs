@@ -20,7 +20,7 @@ class func isSupportedAttachmentUTI(_ uti: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a file with the specified UTI can be attached to the message, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a file with the specified UTI can be attached to the message, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

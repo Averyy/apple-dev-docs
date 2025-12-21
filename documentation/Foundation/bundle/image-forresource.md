@@ -34,7 +34,7 @@ This method does not cache its search results.
 
 ## See Also
 
-- [init?(named name: NSImage.Name)](../AppKit/NSImage/init(named:).md)
+- [init?(named: NSImage.Name)](../AppKit/NSImage/init(named:).md)
   Returns the image object associated with the specified name.
 - [func urlForImageResource(NSImage.Name) -> URL?](bundle/urlforimageresource(_:).md)
   Returns the location of the specified image resource as an NSURL.

@@ -27,10 +27,6 @@ enum DecodingFailurePolicy
   A failure policy that directs the coder to raise an exception.
 - [NSCoder.DecodingFailurePolicy.setErrorAndReturn](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md)
   A failure policy that directs the coder to capture the failure as an error object.
-- [NSCoder.DecodingFailurePolicy.raiseException](nscoder/decodingfailurepolicy-swift.enum/raiseexception.md)
-  A failure policy that directs the coder to raise an exception.
-- [NSCoder.DecodingFailurePolicy.setErrorAndReturn](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md)
-  A failure policy that directs the coder to capture the failure as an error object.
 ### Initializers
 - [init?(rawValue: Int)](nscoder/decodingfailurepolicy-swift.enum/init(rawvalue:).md)
 

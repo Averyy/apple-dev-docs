@@ -13,7 +13,6 @@ An activation function that provides a fast evaluation of the Gaussian error lin
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

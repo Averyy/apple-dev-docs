@@ -6,12 +6,12 @@
 Defines the type of a [`MTL4CounterHeap`](mtl4counterheap.md) and the contents of its entries.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ enum MTL4CounterHeapType
 - [MTL4CounterHeapType.timestamp](mtl4counterheaptype/timestamp.md)
   Specifies that [`MTL4CounterHeap`](mtl4counterheap.md) entries contain GPU timestamp data.
 ### Initializers
-- [init?(rawValue: UInt)](mtl4counterheaptype/init(rawvalue:).md)
+- [init?(rawValue: Int)](mtl4counterheaptype/init(rawvalue:).md)
 
 ## Relationships
 
@@ -45,7 +45,8 @@ enum MTL4CounterHeapType
   An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
 - [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [enum MTL4CommandQueueError](mtl4commandqueueerror.md)
+- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
 - [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
 - [protocol MTL4CommandBuffer](mtl4commandbuffer.md)
@@ -68,8 +69,6 @@ enum MTL4CounterHeapType
   Represents options to configure a commit operation on a command queue.
 - [protocol MTL4CommitFeedback](mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
-- [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
-  Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 
 ---

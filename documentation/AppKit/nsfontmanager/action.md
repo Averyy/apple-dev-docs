@@ -16,7 +16,7 @@ var action: Selector { get set }
 
 #### Discussion
 
-The default action is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject/1462311-changefont). You should rarely need to change this setting.
+The default action is [`changeFont:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/changeFont:). You should rarely need to change this setting.
 
 ## See Also
 

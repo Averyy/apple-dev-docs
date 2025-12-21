@@ -10,7 +10,7 @@ Asynchronously creates an environment resource from a cube texture.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -24,7 +24,7 @@ Asynchronously creates an environment resource from a cube texture.
 
 RealityKit generates an environment resource from a skybox cube texture of the environment. The created environment shares the input skybox.
 
-> **Note**: `CreateOptions/SamplingQuality-swift.enum/high` and `CreateOptions/SamplingQuality-swift.enum/veryHigh`, along with [`astc(blockSize:quality:)`](textureresource/compression-4jphx/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
+> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
 
 ```swift
 // Use compression and high quality options to export optimized resources.

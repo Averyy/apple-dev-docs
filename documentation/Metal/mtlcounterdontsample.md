@@ -21,7 +21,7 @@ var MTLCounterDontSample: Int { get }
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
@@ -37,13 +37,13 @@ You can skip sampling at specific stages by assigning this sentinel value to the
 
 ## See Also
 
-- [Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
   Make a buffer that provides a place for a GPU to save its runtime performance metrics as it runs a pass.
 - [class MTLCounterSampleBufferDescriptor](mtlcountersamplebufferdescriptor.md)
   A group of properties that configures the counter sample buffers you create with it.
 - [protocol MTLCounterSampleBuffer](mtlcountersamplebuffer.md)
   A specialized memory buffer that stores a GPU’s counter set data.
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
   Retrieve a GPU’s counter data at a time the GPU supports.
 
 

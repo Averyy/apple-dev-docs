@@ -6,7 +6,7 @@
 Sends an audio frame to all connected receivers.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,7 @@ func send(audioBuffer: CMSampleBuffer) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails while sending the audio data, for example, if the audio sample buffer has an invalid format or data.
+> **Note**: This function throws if anything fails while sending the audio data, for example, if the audio sample buffer has an invalid format or data.
 
 ## Parameters
 

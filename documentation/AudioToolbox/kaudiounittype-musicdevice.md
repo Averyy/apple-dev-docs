@@ -28,7 +28,7 @@ var kAudioUnitType_MusicDevice: UInt32 { get }
 - [var kAudioUnitType_FormatConverter: UInt32](kaudiounittype_formatconverter.md)
 - [var kAudioUnitType_Effect: UInt32](kaudiounittype_effect.md)
 - [var kAudioUnitType_Mixer: UInt32](kaudiounittype_mixer.md)
-  A mixer unit takes a number of input channels and mixes them to provide one or more output channels. For example, the `kAudioUnitSubType_StereoMixer` audio unit in macOS takes multiple mono or stereo inputs and produce a single stereo output.
+  A mixer unit takes a number of input channels and mixes them to provide one or more output channels.
 - [var kAudioUnitType_Panner: UInt32](kaudiounittype_panner.md)
 - [var kAudioUnitType_OfflineEffect: UInt32](kaudiounittype_offlineeffect.md)
   An offline effect unit provides digital signal processing of a sort that cannot proceed in realtime. For example, level normalization requires examination of an entire sound, beginning to end, before the normalization factor can be calculated. As such, offline effect units also have a notion of a priming stage that can be performed before the actual rendering/processing phase is executed.

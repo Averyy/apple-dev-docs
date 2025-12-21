@@ -253,7 +253,7 @@ A group is a set of contacts within a container. Not all accounts support groups
 - [class CNContactStore](cncontactstore.md)
   The object that fetches and saves contacts, groups, and containers from the user’s Contacts database.
 - [NSContactsUsageDescription](../BundleResources/Information-Property-List/NSContactsUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s contacts.
+  A message that tells people why the app is requesting access to their contacts.
 - [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 ### Contact data

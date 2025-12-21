@@ -6,11 +6,11 @@
 The theme color that the system gets from the first valid meta tag in the webpage.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ final var themeColor: Color? { get }
 - [var url: URL?](webpage/url.md)
   The URL for the current webpage.
 - [var mediaType: WebPage.CSSMediaType?](webpage/mediatype.md)
-  The media type for the contents of the web view.
+  The media type for the contents of the webpage.
 - [var customUserAgent: String?](webpage/customuseragent.md)
   The custom user agent string.
 - [var serverTrust: SecTrust?](webpage/servertrust.md)
@@ -38,9 +38,9 @@ final var themeColor: Color? { get }
 - [var isBlockedByScreenTime: Bool](webpage/isblockedbyscreentime.md)
   Indicates whether Screen Time blocking has occurred.
 - [var isInspectable: Bool](webpage/isinspectable.md)
-  Indicates whether you can inspect the view with Safari Web Inspector.
+  Indicates whether you can inspect the page with Safari Web Inspector.
 - [var isWritingToolsActive: Bool](webpage/iswritingtoolsactive.md)
-  Indicates whether Writing Tools is active for the view.
+  Indicates whether Writing Tools is active for the page.
 
 
 ---

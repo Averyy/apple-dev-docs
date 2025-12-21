@@ -20,7 +20,7 @@ var unknown: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) when there is no way to estimate the current type of motion. For example, this property might be [`true`](https://developer.apple.com/documentation/swift/true) if the device was turned on recently and not enough motion data had been gathered to determine the type of motion.
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when there is no way to estimate the current type of motion. For example, this property might be [`true`](https://developer.apple.com/documentation/Swift/true) if the device was turned on recently and not enough motion data had been gathered to determine the type of motion.
 
 ## See Also
 

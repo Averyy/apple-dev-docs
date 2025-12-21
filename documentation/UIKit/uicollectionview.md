@@ -21,8 +21,8 @@ class UICollectionView
 
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 
 #### Overview
 
@@ -30,7 +30,7 @@ When you add a collection view to your user interface, your app’s main job is 
 
 Data in the collection view is organized into individual items, which you can group into sections for presentation. An item is the smallest unit of data you want to present. For example, in a photos app, an item might be a single image. The collection view presents items onscreen using a cell, which is an instance of the [`UICollectionViewCell`](uicollectionviewcell.md) class that your data source configures and provides.
 
-![A collection view using the flow layout](https://docs-assets.developer.apple.com/published/6771c5b19977b706255e0fe4a5cefa04/media-2923198%402x.png)
+![A collection view using the flow layout.](https://docs-assets.developer.apple.com/published/6b21b5041dface01efa4373940c4c7b7/uicollectionview-1%402x.png)
 
 In addition to its cells, a collection view can present data using other types of views. These supplementary views can be, for example, section headers and footers that are separate from the individual cells but still convey information. Support for supplementary views is optional and defined by the collection view’s layout object, which is also responsible for defining the placement of those views.
 
@@ -76,7 +76,7 @@ To begin the interactive repositioning of an item, call the [`beginInteractiveMo
 
 During user interactions, the collection view invalidates its layout dynamically to reflect the current position of the item. If you do nothing, the default layout behavior repositions the items for you, but you can customize the layout animations if you want. When interactions finish, the collection view updates its data source object with the new location of the item.
 
-The [`UICollectionViewController`](uicollectionviewcontroller.md) class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the [`installsStandardGestureForInteractiveMovement`](uicollectionviewcontroller/installsstandardgestureforinteractivemovement.md) property of the collection view controller to [`true`](https://developer.apple.com/documentation/swift/true).
+The [`UICollectionViewController`](uicollectionviewcontroller.md) class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the [`installsStandardGestureForInteractiveMovement`](uicollectionviewcontroller/installsstandardgestureforinteractivemovement.md) property of the collection view controller to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Interface Builder Attributes
 
@@ -91,7 +91,7 @@ When the Flow layout is selected, the Size inspector for the collection view con
 
 ##### Internationalization
 
-A collection view has no direct content of its own to internationalize. Instead, you internationalize the cells and reusable views of the collection view. For more information about internationalization, see `Localization`.
+A collection view has no direct content of its own to internationalize. Instead, you internationalize the cells and reusable views of the collection view. For more information about internationalization, see [`Localization`](https://developer.apple.comhttps://developer.apple.com/localization/).
 
 ##### Accessibility
 

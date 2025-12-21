@@ -10,7 +10,7 @@ The Project navigator displays your project’s files and lets you open, add, de
 
 ![Use the Project navigator to select files and find items in your Xcode project.](https://docs-assets.developer.apple.com/published/4dd86a2ee0fbde094f156c00ea1a4f0c/project-navigator-overview%402x.png)
 
-When you select an file in the navigator, the inspector pane displays information about the file, and the editor area displays the contents of the file. The appearance of the editor area changes based on the type of file you select. For example, a source code file displays the source editor, and a property-list file displays the property-list editor.
+When you select a file in the navigator, the inspector pane displays information about the file, and the editor area displays the contents of the file. The appearance of the editor area changes based on the type of file you select. For example, a source code file displays the source editor, and a property-list file displays the property-list editor.
 
 To locate files based on keywords or other criteria, use the filter bar at the bottom of the navigator area:
 
@@ -55,7 +55,7 @@ When adding a local Swift Package’s folder to your project, perform the follow
 
 For more information about managing Swift packages, see [`Swift packages`](swift-packages.md).
 
-> **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Designing RealityKit content with Reality Composer Pro`](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro).
+> **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Composing interactive 3D content with RealityKit and Reality Composer Pro`](https://developer.apple.com/documentation/RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro).
 
 ##### Organize Project Files in the Navigator
 

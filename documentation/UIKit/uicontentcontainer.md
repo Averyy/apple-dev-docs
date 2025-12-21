@@ -79,20 +79,16 @@ When overriding the methods of this protocol, call `super` to let UIKit perform 
 
 ## See Also
 
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-  Change images and resources dynamically when the screen gamut on your device changes.
-- [class UITraitCollection](uitraitcollection.md)
-  A collection of data that represents the environment for an individual element in your app’s user interface.
-- [protocol UITraitEnvironment](uitraitenvironment.md)
-  A set of methods that makes the iOS interface environment available to your app.
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-  A type that calls your code in reaction to changes in the trait environment.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
-  A mutable container of traits.
-- [protocol UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
-  A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
+- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+  Build a view controller in storyboards, configure it with custom views, and fill those views with your app’s data.
+- [Showing and hiding view controllers](showing-and-hiding-view-controllers.md)
+  Display view controllers using different techniques, and pass data between them during transitions.
+- [class UIViewController](uiviewcontroller.md)
+  An object that manages a view hierarchy for your UIKit app.
+- [class UITableViewController](uitableviewcontroller.md)
+  A view controller that specializes in managing a table view.
+- [class UICollectionViewController](uicollectionviewcontroller.md)
+  A view controller that specializes in managing a collection view.
 
 
 ---

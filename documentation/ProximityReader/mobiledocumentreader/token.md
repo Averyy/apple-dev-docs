@@ -23,22 +23,12 @@ Use the `Token` to create a [`MobileDocumentReaderSession`](mobiledocumentreader
 
 ## Topics
 
-### Operators
-- [static func == (MobileDocumentReader.Token, MobileDocumentReader.Token) -> Bool](mobiledocumentreader/token/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(String)](mobiledocumentreader/token/init(_:).md)
   Creates a token that the merchant server generates.
 ### Instance Properties
-- [var hashValue: Int](mobiledocumentreader/token/hashvalue.md)
-  The hash value.
 - [let tokenString: String](mobiledocumentreader/token/tokenstring.md)
   The reader token generated from the merchant server.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledocumentreader/token/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](mobiledocumentreader/token/equatable-implementations.md)
 
 ## Relationships
 

@@ -23,7 +23,7 @@ var isPlaybackBufferFull: Bool { get }
 
 #### Discussion
 
-Despite the playback buffer reaching capacity there might not exist sufficient statistical data to support a [`isPlaybackLikelyToKeepUp`](avplayeritem/isplaybacklikelytokeepup.md) prediction of [`true`](https://developer.apple.com/documentation/swift/true).
+Despite the playback buffer reaching capacity there might not exist sufficient statistical data to support a [`isPlaybackLikelyToKeepUp`](avplayeritem/isplaybacklikelytokeepup.md) prediction of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

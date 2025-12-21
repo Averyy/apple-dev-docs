@@ -18,7 +18,7 @@ protocol NSSeguePerforming : NSObjectProtocol
 
 When you subclass [`NSStoryboardSegue`](nsstoryboardsegue.md) to express a custom transition or containment relationship between storyboard scenes, you might also want to provide code that prepares the destination/contained view or window controller object. Put this code in an override of the [`prepare(for:sender:)`](nssegueperforming/prepare(for:sender:).md) method.
 
-To conditionally disallow the performance of a segue, override the [`shouldPerformSegue(withIdentifier:sender:)`](nssegueperforming/shouldperformsegue(withidentifier:sender:).md) method, returning [`false`](https://developer.apple.com/documentation/swift/false).If you need to programmatically trigger a segue that cannot be expressed in a storyboard file, such as a transition between scenes in different storyboards, use the [`performSegue(withIdentifier:sender:)`](nssegueperforming/performsegue(withidentifier:sender:).md) method in this protocol.
+To conditionally disallow the performance of a segue, override the [`shouldPerformSegue(withIdentifier:sender:)`](nssegueperforming/shouldperformsegue(withidentifier:sender:).md) method, returning [`false`](https://developer.apple.com/documentation/Swift/false).If you need to programmatically trigger a segue that cannot be expressed in a storyboard file, such as a transition between scenes in different storyboards, use the [`performSegue(withIdentifier:sender:)`](nssegueperforming/performsegue(withidentifier:sender:).md) method in this protocol.
 
 ## Topics
 

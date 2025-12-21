@@ -19,6 +19,10 @@ A description of an instance in an instanced geometry acceleration structure tha
 struct MTLIndirectAccelerationStructureInstanceDescriptor
 ```
 
+#### Overview
+
+This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescriptorType.indirect`](mtlaccelerationstructureinstancedescriptortype/indirect.md) instance type.
+
 ## Topics
 
 ### Initializers

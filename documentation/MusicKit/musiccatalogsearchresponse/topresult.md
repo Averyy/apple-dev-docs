@@ -22,9 +22,6 @@ enum TopResult
 
 ## Topics
 
-### Operators
-- [static func == (MusicCatalogSearchResponse.TopResult, MusicCatalogSearchResponse.TopResult) -> Bool](musiccatalogsearchresponse/topresult/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicCatalogSearchResponse.TopResult.album(_:)](musiccatalogsearchresponse/topresult/album(_:).md)
   An item that corresponds to an album.
@@ -47,24 +44,10 @@ enum TopResult
 ### Instance Properties
 - [var artwork: Artwork?](musiccatalogsearchresponse/topresult/artwork.md)
   The artwork of this top result for catalog search.
-- [var hashValue: Int](musiccatalogsearchresponse/topresult/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](musiccatalogsearchresponse/topresult/id-swift.property.md)
+- [var id: MusicItemID](musiccatalogsearchresponse/topresult/id.md)
   The unique identifier of this top result for catalog search.
 - [var title: String](musiccatalogsearchresponse/topresult/title.md)
   The title of this top result for catalog search.
-### Instance Methods
-- [func hash(into: inout Hasher)](musiccatalogsearchresponse/topresult/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicCatalogSearchResponse.TopResult.ID](musiccatalogsearchresponse/topresult/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiccatalogsearchresponse/topresult/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiccatalogsearchresponse/topresult/customstringconvertible-implementations.md)
-- [Decodable Implementations](musiccatalogsearchresponse/topresult/decodable-implementations.md)
-- [Encodable Implementations](musiccatalogsearchresponse/topresult/encodable-implementations.md)
-- [Equatable Implementations](musiccatalogsearchresponse/topresult/equatable-implementations.md)
 
 ## Relationships
 

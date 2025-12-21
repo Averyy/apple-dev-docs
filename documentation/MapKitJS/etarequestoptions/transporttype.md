@@ -11,14 +11,14 @@ The mode of transportation the server uses when estimating arrival times.
 ## Declaration
 
 ```swift
-attribute mapkit.Directions.Transport transportType;
+transportType?: TransportType;
 ```
 
 #### Discussion
 
-Use transportType to specify the mode of transportation for your [`route`](mapkit.directions/route.md) and [`eta`](mapkit.directions/eta.md) requests.
+Use `transportType` to specify the mode of transportation for your [`route(request, callback)`](directions/route.md) and [`eta(request, callback)`](directions/eta.md) requests.
 
-The default value of this property is [`Automobile`](mapkit.directions.transport/automobile.md).
+The default value of this property is [`Automobile`](transporttype/automobile.md).
 
 ## See Also
 

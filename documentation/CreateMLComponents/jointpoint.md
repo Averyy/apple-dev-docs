@@ -33,8 +33,6 @@ struct JointPoint
 ### Getting the joint location
 - [var location: CGPoint](jointpoint/location.md)
   The location of the joint point
-### Default Implementations
-- [Equatable Implementations](jointpoint/equatable-implementations.md)
 
 ## Relationships
 
@@ -46,7 +44,7 @@ struct JointPoint
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

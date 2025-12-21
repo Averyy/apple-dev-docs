@@ -27,7 +27,7 @@ This method returns `nil` if there is no default credential for this challenge.
 
 If you have previously attempted to authenticate and failed, this method returns the most recent failed credential.
 
-If the proposed credential is not `nil` and returns [`true`](https://developer.apple.com/documentation/swift/true) when you call its [`hasPassword`](urlcredential/haspassword.md) method, then the credential is ready to use as-is. If the proposed credential’s [`hasPassword`](urlcredential/haspassword.md) method returns [`false`](https://developer.apple.com/documentation/swift/false), then the credential provides a default user name, and the client must prompt the user for a corresponding password.
+If the proposed credential is not `nil` and returns [`true`](https://developer.apple.com/documentation/Swift/true) when you call its [`hasPassword`](urlcredential/haspassword.md) method, then the credential is ready to use as-is. If the proposed credential’s [`hasPassword`](urlcredential/haspassword.md) method returns [`false`](https://developer.apple.com/documentation/Swift/false), then the credential provides a default user name, and the client must prompt the user for a corresponding password.
 
 ## See Also
 

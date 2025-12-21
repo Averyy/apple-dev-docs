@@ -14,7 +14,6 @@ Returns the document data to be saved.
 ## Declaration
 
 ```swift
-@MainActor
 func contents(forType typeName: String) throws -> Any
 ```
 

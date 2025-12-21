@@ -28,20 +28,20 @@ When creating a rate map, Metal copies into it property values from the descript
 
 ## Topics
 
-### Creating Rate Map Descriptors
+### Creating rate map descriptors
 - [convenience init(screenSize: MTLSize, label: String?)](mtlrasterizationratemapdescriptor/init(screensize:label:).md)
   A convenience initializer that creates a rate map descriptor with a given size and identifier.
 - [convenience init(screenSize: MTLSize, layer: MTLRasterizationRateLayerDescriptor, label: String?)](mtlrasterizationratemapdescriptor/init(screensize:layer:label:).md)
   A convenience initializer that creates a rate map descriptor with a single rate layer.
 - [convenience init(screenSize: MTLSize, layers: [MTLRasterizationRateLayerDescriptor], label: String?)](mtlrasterizationratemapdescriptor/init(screensize:layers:label:).md)
   A convenience initializer that creates a rate map descriptor with a set of layer descriptors.
-### Identifying the Rate Map
+### Identifying the rate map
 - [var label: String?](mtlrasterizationratemapdescriptor/label.md)
   A string used to identify the rate map you create with the descriptor.
-### Configuring the Viewport Size
+### Configuring the viewport size
 - [var screenSize: MTLSize](mtlrasterizationratemapdescriptor/screensize.md)
   The size of the viewport coordinate system, in logical pixels.
-### Configuring the Rate Map Layers
+### Configuring the rate map layers
 - [var layerCount: Int](mtlrasterizationratemapdescriptor/layercount.md)
   The number of layers in the rate map.
 - [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratemapdescriptor/layer(at:).md)
@@ -68,16 +68,16 @@ When creating a rate map, Metal copies into it property values from the descript
 
 ## See Also
 
-- [Rendering at Different Rasterization Rates](rendering-at-different-rasterization-rates.md)
+- [Rendering at different rasterization rates](rendering-at-different-rasterization-rates.md)
   Configure a rasterization rate map to vary rasterization rates depending on the amount of detail needed.
-- [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
   Define the rasterization rates for each part of your render target.
-- [Rendering with a Rasterization Rate Map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
   Create offscreen textures to hold intermediate rasterized data.
-- [Scaling Variable Rasterization Rate Content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
   Use the rate map data to scale the content to fill your destination texture.
 - [protocol MTLRasterizationRateMap](mtlrasterizationratemap.md)
-  A compiled read-only object that determines how to apply variable rasterization rates when rendering.
+  A compiled read-only instance that determines how to apply variable rasterization rates when rendering.
 - [typealias MTLCoordinate2D](mtlcoordinate2d.md)
   A coordinate in the viewport.
 - [func MTLCoordinate2DMake(Float, Float) -> MTLCoordinate2D](mtlcoordinate2dmake(_:_:).md)

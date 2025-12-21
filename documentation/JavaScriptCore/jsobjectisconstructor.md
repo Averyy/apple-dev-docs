@@ -21,7 +21,7 @@ func JSObjectIsConstructor(_ ctx: JSContextRef!, _ object: JSObjectRef!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can call the object as a constructor; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if you can call the object as a constructor; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -27,10 +27,6 @@ struct PreallocateFlags
   Allocates space from the physical end of file.
 ### Working with raw values
 - [init(rawValue: UInt)](fsvolume/preallocateflags/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsvolume/preallocateflags/equatable-implementations.md)
-- [OptionSet Implementations](fsvolume/preallocateflags/optionset-implementations.md)
-- [SetAlgebra Implementations](fsvolume/preallocateflags/setalgebra-implementations.md)
 
 ## Relationships
 

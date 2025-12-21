@@ -21,7 +21,7 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Return Value
 
@@ -29,7 +29,7 @@ A [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance i
 
 #### Discussion
 
-You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](mtlstoragemode/shared.md) (see [`storageMode`](mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](mtlstoragemode/shared.md) (see [`storageMode`](mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
 
 > **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 

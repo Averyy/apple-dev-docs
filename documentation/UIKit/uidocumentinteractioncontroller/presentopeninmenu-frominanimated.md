@@ -20,7 +20,7 @@ func presentOpenInMenu(from rect: CGRect, in view: UIView, animated: Bool) -> Bo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
 
 #### Discussion
 

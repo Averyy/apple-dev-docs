@@ -6,7 +6,7 @@
 A structure that represents a state of immersion of your app.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

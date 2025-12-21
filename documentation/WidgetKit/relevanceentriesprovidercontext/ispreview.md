@@ -6,7 +6,7 @@
 A Boolean value that indicates when the widget appears as a preview-only.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

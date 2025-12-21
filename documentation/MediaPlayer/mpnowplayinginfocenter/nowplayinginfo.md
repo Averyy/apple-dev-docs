@@ -20,6 +20,10 @@ The current Now Playing information for the default Now Playing info center.
 var nowPlayingInfo: [String : Any]? { get set }
 ```
 
+## Mentions
+
+- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+
 #### Discussion
 
 To clear the now playing info center dictionary, set it to `nil`.

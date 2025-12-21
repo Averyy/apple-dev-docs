@@ -22,24 +22,8 @@ protocol UpdatableTemporalEstimator<Transformer> : TemporalEstimator
 ## Topics
 
 ### Appending
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other>>>
-](updatabletemporalestimator/appending(_:)-1qj6y.md)
-  Composes this updatable temporal estimator with a transformer.
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>>
-](updatabletemporalestimator/appending(_:)-3xqcq.md)
-  Composes this updatable temporal estimator with an updatable estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](updatabletemporalestimator/appending(_:)-6ekr1.md)
+- [func appending(_:)](updatabletemporalestimator/appending(_:).md)
   Composes this updatable temporal estimator with an updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Other.Annotation>
-](updatabletemporalestimator/appending(_:)-6j0vp.md)
-  Composes this updatable temporal estimator with an updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>>
-](updatabletemporalestimator/appending(_:)-8xn6o.md)
-  Composes this updatable temporal estimator with another updatable temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other>>
-](updatabletemporalestimator/appending(_:)-92r9q.md)
-  Composes this updatable temporal estimator with a temporal transformer.
 ### Adapting
 - [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> UpdatableTemporalEstimatorToSupervisedAdaptor<Self, Annotation>](updatabletemporalestimator/adaptedassupervised(annotationtype:).md)
   Exposes this temporal estimator as a supervised temporal estimator.

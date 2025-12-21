@@ -18,9 +18,9 @@ var shouldExpire: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the message should expire after it is read. Expired messages are deleted a short time after being read by the recipient. The recipient may opt to keep the message.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the message should expire after it is read. Expired messages are deleted a short time after being read by the recipient. The recipient may opt to keep the message.
 
-The `shouldExpire` property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+The `shouldExpire` property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

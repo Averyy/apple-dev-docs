@@ -11,8 +11,8 @@ Report required information about external purchase tokens and associated transa
 ## Mentions
 
 - [Reporting corrections](reportcorrections.md)
+- [Reporting unrecognized and transactionless tokens](reportwithouttransactions.md)
 - [Reporting tokens with transactions](reportwithtransactions.md)
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
 
 #### Discussion
 
@@ -21,7 +21,7 @@ Call this endpoint to report an external purchase token that your app or website
 To send the report, add your data to the [`ExternalPurchaseReport`](externalpurchasereport.md) request body. For more information about creating reports, see the following:
 
 - [`Reporting tokens with transactions`](reportwithtransactions.md)
-- [`Reporting unrecognized tokens and tokens without transactions`](reportwithouttransactions.md)
+- [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md)
 - [`Reporting corrections`](reportcorrections.md)
 
 The server indicates it successfully received your report by returning an `HTTP 200` response with your [`requestIdentifier`](requestidentifier.md) in the [`SendReportSuccessResponse`](sendreportsuccessresponse.md). If you receive an `HTTP 400` error response with a [`SendReportErrorResponse`](sendreporterrorresponse.md) object, the server didn’t successfully receive any of the data in the report. Fix the errors listed in the response object, and resubmit the full report using the same [`requestIdentifier`](requestidentifier.md). The server also sends an `HTTP 400` error if the request is a duplicate, or if it’s malformed.

@@ -5,9 +5,6 @@
 
 An atom that specifies an interpolation tween atom to use for a specified tween data atom.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 Specifies an interpolation tween atom to use for a specified `kTweenData` atom. There can be any number of `kTweenInterpolationID` atoms for a tween atom, one for each `kTweenData` atom to be interpolated.

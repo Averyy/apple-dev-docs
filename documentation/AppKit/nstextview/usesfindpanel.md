@@ -17,7 +17,7 @@ var usesFindPanel: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the use of a find panel, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. A text view can use either a find panel or a find bar. If [`usesFindPanel`](nstextview/usesfindpanel.md) is set to [`true`](https://developer.apple.com/documentation/swift/true), [`usesFindBar`](nstextview/usesfindbar.md) is set to [`false`](https://developer.apple.com/documentation/swift/false) and vice versa.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the use of a find panel, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. A text view can use either a find panel or a find bar. If [`usesFindPanel`](nstextview/usesfindpanel.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true), [`usesFindBar`](nstextview/usesfindbar.md) is set to [`false`](https://developer.apple.com/documentation/Swift/false) and vice versa.
 
 ## See Also
 

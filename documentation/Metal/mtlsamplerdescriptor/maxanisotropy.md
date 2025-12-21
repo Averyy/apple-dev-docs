@@ -21,7 +21,7 @@ var maxAnisotropy: Int { get set }
 
 #### Discussion
 
-Values must be between `1` and `16`, inclusive. The default value is `1`.
+Values need to be between `1` and `16`, inclusive. The default value is `1`.
 
 ## See Also
 

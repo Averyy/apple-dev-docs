@@ -21,7 +21,7 @@ struct AVDelegatingPlaybackCoordinatorSeekOptions
 
 ## Topics
 
-### Seek Options
+### Seek options
 - [static var resumeImmediately: AVDelegatingPlaybackCoordinatorSeekOptions](avdelegatingplaybackcoordinatorseekoptions/resumeimmediately.md)
   An option that Indicates that the coordinator needs to resume playback as soon as possible, regardless of other participant’s readiness or suspensions.
 ### Initializers

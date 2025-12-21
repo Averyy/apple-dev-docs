@@ -13,6 +13,10 @@
 var includedWindows: [SCWindow] { get }
 ```
 
+#### Discussion
+
+Windows that are included in the content filter
+
 
 ---
 

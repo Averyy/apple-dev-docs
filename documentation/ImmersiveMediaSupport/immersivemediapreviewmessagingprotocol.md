@@ -6,8 +6,8 @@
 An object that represents the messaging protocol a remote preview sender and receiver use to communicate.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

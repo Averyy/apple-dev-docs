@@ -108,22 +108,20 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [init?(exactly: NSNumber)](bool/init(exactly:).md)
 - [init(truncating: NSNumber)](bool/init(truncating:).md)
 ### Encoding and Decoding
-- [init(from: any Decoder) throws](bool/init(from:)-99p2s.md)
+- [init(from: any Decoder) throws](bool/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 - [func encode(to: any Encoder) throws](bool/encode(to:).md)
   Encodes this value into the given encoder.
-### Using a Boolean as a Data Value
-- [init?(from: MLDataValue)](bool/init(from:)-4iol.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](bool/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](bool/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Infrequently Used Intializers
 - [init()](bool/init.md)
   Creates an instance initialized to `false`.
 - [init(booleanLiteral: Bool)](bool/init(booleanliteral:).md)
   Creates an instance initialized to the specified Boolean literal.
+### Boolean Literals
+- [true](true.md)
+  A true value.
+- [false](false.md)
+  A false value.
 ### Structures
 - [struct IntentDisplayName](bool/intentdisplayname.md)
 ### Type Aliases
@@ -134,20 +132,14 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [static var defaultResolverSpecification: some ResolverSpecification](bool/defaultresolverspecification.md)
 ### Default Implementations
 - [AtomicRepresentable Implementations](bool/atomicrepresentable-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](bool/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](bool/convertibletogeneratedcontent-implementations.md)
 - [CustomReflectable Implementations](bool/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](bool/customstringconvertible-implementations.md)
 - [Decodable Implementations](bool/decodable-implementations.md)
 - [Encodable Implementations](bool/encodable-implementations.md)
 - [Equatable Implementations](bool/equatable-implementations.md)
 - [ExpressibleByBooleanLiteral Implementations](bool/expressiblebybooleanliteral-implementations.md)
-- [Generable Implementations](bool/generable-implementations.md)
 - [Hashable Implementations](bool/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](bool/instructionsrepresentable-implementations.md)
 - [LosslessStringConvertible Implementations](bool/losslessstringconvertible-implementations.md)
-- [MLDataValueConvertible Implementations](bool/mldatavalueconvertible-implementations.md)
-- [PromptRepresentable Implementations](bool/promptrepresentable-implementations.md)
 
 ## Relationships
 
@@ -174,7 +166,6 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLTensorScalar](../CoreML/MLTensorScalar.md)
 - [MusicLibraryRequestFilterValueEquatable](../MusicKit/MusicLibraryRequestFilterValueEquatable.md)
-- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

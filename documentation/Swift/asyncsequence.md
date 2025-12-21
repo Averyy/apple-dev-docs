@@ -144,15 +144,15 @@ for await s in stream {
 ### Adapting Textual Sequences
 - [var characters: AsyncCharacterSequence<Self>](asyncsequence/characters.md)
   A non-blocking sequence of `Characters` created by decoding the elements of `self` as UTF8.
-- [struct AsyncCharacterSequence<Base> where Base : AsyncSequence, Base.Element == UInt8](../Foundation/AsyncCharacterSequence.md)
+- [struct AsyncCharacterSequence](../Foundation/AsyncCharacterSequence.md)
   An asynchronous sequence of characters.
 - [var unicodeScalars: AsyncUnicodeScalarSequence<Self>](asyncsequence/unicodescalars.md)
   A non-blocking sequence of `UnicodeScalars` created by decoding the elements of `self` as UTF8.
-- [struct AsyncUnicodeScalarSequence<Base> where Base : AsyncSequence, Base.Element == UInt8](../Foundation/AsyncUnicodeScalarSequence.md)
+- [struct AsyncUnicodeScalarSequence](../Foundation/AsyncUnicodeScalarSequence.md)
   An asychronous sequence of Unicode scalar values.
 - [var lines: AsyncLineSequence<Self>](asyncsequence/lines.md)
   A non-blocking sequence of newline-separated `Strings` created by decoding the elements of `self` as UTF8.
-- [struct AsyncLineSequence<Base> where Base : AsyncSequence, Base.Element == UInt8](../Foundation/AsyncLineSequence.md)
+- [struct AsyncLineSequence](../Foundation/AsyncLineSequence.md)
   An asynchronous sequence of lines of text.
 ### Associated Types
 - [associatedtype Failure = any Error](asyncsequence/failure.md)
@@ -186,6 +186,7 @@ for await s in stream {
 - [AsyncThrowingMapSequence](asyncthrowingmapsequence.md)
 - [AsyncThrowingPrefixWhileSequence](asyncthrowingprefixwhilesequence.md)
 - [AsyncThrowingStream](asyncthrowingstream.md)
+- [Observations](../observation/observations.md)
 - [TaskGroup](taskgroup.md)
 - [ThrowingTaskGroup](throwingtaskgroup.md)
 

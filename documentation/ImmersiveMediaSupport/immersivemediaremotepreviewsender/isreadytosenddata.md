@@ -3,10 +3,10 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-A Boolean value that indicates whether this preview sender is ready to send data or not.
+A Boolean value that indicates whether this preview sender is ready to send data.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

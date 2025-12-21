@@ -8,7 +8,7 @@ Metadata keys for the JPEG File Interchange Format (JFIF).
 
 ### Dictionary
 - [let kCGImagePropertyJFIFDictionary: CFString](kcgimagepropertyjfifdictionary.md)
-  A dictionary of key-value pairs for an image that uses JPEG File Interchange Format (JFIF). See [`JFIF Image Properties`](jfif-image-properties.md).
+  A dictionary of key-value pairs for an image that uses JPEG File Interchange Format (JFIF).
 ### Quality Information
 - [let kCGImagePropertyJFIFXDensity: CFString](kcgimagepropertyjfifxdensity.md)
   The x pixel density.

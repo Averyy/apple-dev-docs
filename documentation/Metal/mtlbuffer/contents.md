@@ -26,7 +26,7 @@ A pointer to the shared copy of the buffer data, or `NULL` for buffers allocated
 
 #### Discussion
 
-Private resources are not CPU-accessible.
+Private resources aren’t CPU-accessible.
 
 
 ---

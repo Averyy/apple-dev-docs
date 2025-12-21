@@ -6,8 +6,8 @@
 The time the report was generated, using a local monotonically increasing clock.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

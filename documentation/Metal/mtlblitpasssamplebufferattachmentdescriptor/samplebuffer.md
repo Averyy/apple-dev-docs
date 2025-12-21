@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A specialized memory buffer that the GPU uses to store its counter data during the blit pass.
+A specialized memory buffer that the GPU uses to store its counter data during the blit pass.
 
 **Availability**:
 - iOS 14.0+
@@ -21,11 +21,11 @@ var sampleBuffer: (any MTLCounterSampleBuffer)? { get set }
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the blit pass. See [`Creating a Counter Sample Buffer to Store a GPU’s Counter Data During a Pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more information.
+The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the blit pass. For more information, see [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md).
 
 ## See Also
 

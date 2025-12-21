@@ -20,8 +20,8 @@ func insertCompletion(_ word: String, forPartialWordRange charRange: NSRange, mo
 This method has two effects, text substitution and changing of the selection:
 
 - It replaces the text between `charRange.start` and the current insertion point with `word`.
-- If `flag` is [`false`](https://developer.apple.com/documentation/swift/false) it changes the selection to be the last  characters of `word` where  is equal to `[word length]` minus `charRange.length`, that is, the potential completion.
-- If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) it makes the selection empty and puts the insertion point just after `word`.
+- If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false) it changes the selection to be the last  characters of `word` where  is equal to `[word length]` minus `charRange.length`, that is, the potential completion.
+- If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) it makes the selection empty and puts the insertion point just after `word`.
 
 ## Parameters
 

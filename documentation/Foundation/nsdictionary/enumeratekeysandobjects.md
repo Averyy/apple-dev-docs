@@ -22,7 +22,7 @@ func enumerateKeysAndObjects(_ block: (Any, Any, UnsafeMutablePointer<ObjCBool>)
 
 #### Discussion
 
-If the block sets `*stop` to [`true`](https://developer.apple.com/documentation/swift/true), the enumeration stops.
+If the block sets `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true), the enumeration stops.
 
 ## Parameters
 

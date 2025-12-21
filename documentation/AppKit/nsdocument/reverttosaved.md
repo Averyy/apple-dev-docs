@@ -17,7 +17,7 @@ The action of the File menu item Revert in a document-based app.
 
 #### Discussion
 
-The default implementation of this method presents an alert dialog giving the user the opportunity to cancel the operation. If the user chooses to continue, the method ensures that any editor registered using the Cocoa Bindings `NSEditorRegistration` informal protocol has discarded its changes and then invokes [`revert(toContentsOf:ofType:)`](nsdocument/revert(tocontentsof:oftype:).md). If that returns [`false`](https://developer.apple.com/documentation/swift/false), the method presents the error to the user in an document-modal alert dialog.
+The default implementation of this method presents an alert dialog giving the user the opportunity to cancel the operation. If the user chooses to continue, the method ensures that any editor registered using the Cocoa Bindings `NSEditorRegistration` informal protocol has discarded its changes and then invokes [`revert(toContentsOf:ofType:)`](nsdocument/revert(tocontentsof:oftype:).md). If that returns [`false`](https://developer.apple.com/documentation/Swift/false), the method presents the error to the user in an document-modal alert dialog.
 
 ## Parameters
 

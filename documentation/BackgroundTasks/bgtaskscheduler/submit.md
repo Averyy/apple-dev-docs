@@ -20,8 +20,8 @@ func submit(_ taskRequest: BGTaskRequest) throws
 
 ## Mentions
 
-- [Starting and Terminating Tasks During Development](starting-and-terminating-tasks-during-development.md)
 - [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Starting and Terminating Tasks During Development](starting-and-terminating-tasks-during-development.md)
 
 #### Discussion
 

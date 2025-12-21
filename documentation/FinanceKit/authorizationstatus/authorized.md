@@ -15,6 +15,13 @@ A person authorized the app to use FinanceKit services.
 case authorized
 ```
 
+## See Also
+
+- [AuthorizationStatus.denied](authorizationstatus/denied.md)
+  A person denied the use of FinanceKit services for the app.
+- [AuthorizationStatus.notDetermined](authorizationstatus/notdetermined.md)
+  A person has not chosen whether the app can use FinanceKit services.
+
 
 ---
 

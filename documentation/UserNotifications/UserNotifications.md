@@ -130,8 +130,6 @@ For design guidance, see [`Human Interface Guidelines > Notifications`](https://
   Add visible alert notifications to your app by using the UserNotifications framework.
 - [Implementing Background Push Notifications](implementing-background-push-notifications.md)
   Add background notifications to your app by using the UserNotifications framework.
-### Reference
-- [UserNotifications Constants](usernotifications-constants.md)
 ### Classes
 - [class UNNotificationAttributedMessageContext](unnotificationattributedmessagecontext.md)
 

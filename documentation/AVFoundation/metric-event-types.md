@@ -17,6 +17,7 @@
   An event that represents when the player attempts a variant switch.
 - [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
+- [class AVMetricMediaRendition](avmetricmediarendition.md)
 ### Buffering
 - [class AVMetricPlayerItemStallEvent](avmetricplayeritemstallevent.md)
   An event that represents when playback stalls.
@@ -33,6 +34,11 @@
   An event that represents when the playback seek completes.
 - [class AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
   An event that represents when a playback seek occurs.
+### Summary
+- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+  An event that represents the combined metrics for the entire playback session.
+- [class AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
+  Represents a summary metric event with aggregated metrics for the entire download task.
 
 ## See Also
 

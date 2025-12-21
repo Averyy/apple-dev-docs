@@ -29,12 +29,6 @@ enum Modifier
   A predicate to compare all entries in the destination of a to-many relationship.
 - [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
   A predicate to match with any entry in the destination of a to-many relationship.
-- [NSComparisonPredicate.Modifier.direct](nscomparisonpredicate/modifier/direct.md)
-  A predicate to compare directly the left and right hand sides.
-- [NSComparisonPredicate.Modifier.all](nscomparisonpredicate/modifier/all.md)
-  A predicate to compare all entries in the destination of a to-many relationship.
-- [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
-  A predicate to match with any entry in the destination of a to-many relationship.
 ### Initializers
 - [init?(rawValue: UInt)](nscomparisonpredicate/modifier/init(rawvalue:).md)
 

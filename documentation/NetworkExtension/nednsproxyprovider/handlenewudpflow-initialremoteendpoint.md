@@ -22,11 +22,11 @@ func handleNewUDPFlow(_ flow: NEAppProxyUDPFlow, initialRemoteEndpoint remoteEnd
 
 The framework calls this function to deliver a new UDP data flow to the proxy provider implementation. Subclasses can override this method to perform whatever steps are necessary to ready the proxy to receive data from the flow.
 
-If you decide to handle the flow, the subclass implementation of this method should return [`true`](https://developer.apple.com/documentation/swift/true). In this case, your implementation is responsible for retaining the [`NEAppProxyUDPFlow`](neappproxyudpflow.md) object.
+If you decide to handle the flow, the subclass implementation of this method should return [`true`](https://developer.apple.com/documentation/Swift/true). In this case, your implementation is responsible for retaining the [`NEAppProxyUDPFlow`](neappproxyudpflow.md) object.
 
 Your implementation indicates that it’s ready to handle flow data by calling [`open(withLocalEndpoint:completionHandler:)`](neappproxyflow/open(withlocalendpoint:completionhandler:).md) on the flow.
 
-If you decide to not handle the flow and instead terminate it, your implementation of this method should return [`false`](https://developer.apple.com/documentation/swift/false). This terminates the flow.
+If you decide to not handle the flow and instead terminate it, your implementation of this method should return [`false`](https://developer.apple.com/documentation/Swift/false). This terminates the flow.
 
 The default implementation of this method calls [`handleNewFlow(_:)`](neappproxyprovider/handlenewflow(_:).md) and returns its result.
 

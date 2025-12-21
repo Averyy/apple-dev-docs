@@ -43,9 +43,11 @@ For more information about how to draw your app’s content using Metal, see [`M
   A type that provides information on how to render content into the frame’s textures.
 ### Errors
 - [enum LayerRendererConfigurationError](layerrendererconfigurationerror.md)
-  Errors that can occur during layer configuration.
+  Errors that can occur when configuring layers.
 ### Articles
 - [CompositorServices Functions](compositorservices-functions.md)
+- [Controlling Metal rendering immersion level](controlling-metal-rendering-immersion-level.md)
+  Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 ### Structures
 - [struct TextureTopology](texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.

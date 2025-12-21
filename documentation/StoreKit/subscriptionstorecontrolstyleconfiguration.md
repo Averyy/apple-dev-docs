@@ -64,11 +64,9 @@ In cases where a customer is actively subscribed, use [`autoRenewPreference`](su
 
 ## See Also
 
-- [nonisolated func subscriptionStoreControlStyle(_ style: some SubscriptionStoreControlStyle) -> some View
-](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
+- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
   Sets the control style for subscription store views within a view.
-- [nonisolated func subscriptionStoreControlStyle<S>(_ style: S, placement: S.Placement) -> some View where S : SubscriptionStoreControlStyle
-](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
+- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
   Sets the control style and control placement for subscription store views within a view.
 - [protocol SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
   A type that specifies the appearance and interaction of controls in the subscription store view instances within the view hierarchy.

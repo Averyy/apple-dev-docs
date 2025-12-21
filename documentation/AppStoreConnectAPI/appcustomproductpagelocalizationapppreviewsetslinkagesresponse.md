@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response that contains a list of IDs of related resources.
+
 **Availability**:
 - App Store Connect API 3.6+
 
@@ -16,9 +18,14 @@ object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse
 
 ### Dictionaries
 - [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse.Data](appcustomproductpagelocalizationapppreviewsetslinkagesresponse/data-data.dictionary.md)
+  The request body you use to update an app custom product page localization app preview sets linkages response.
 
 ## See Also
 
+- [object AppKeyword](appkeyword.md)
+  The data structure that represents an app keyword resource.
+- [object AppKeywordsResponse](appkeywordsresponse.md)
+  A response that contains a list of app keywords response resources.
 - [object AppCustomProductPageLocalization](appcustomproductpagelocalization.md)
   The data structure that represents an app custom product page localization resource.
 - [object AppCustomProductPageLocalizationCreateRequest](appcustomproductpagelocalizationcreaterequest.md)
@@ -32,6 +39,11 @@ object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse
 - [object AppCustomProductPageLocalizationsResponse](appcustomproductpagelocalizationsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
 - [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
+- [object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest](appcustomproductpagelocalizationsearchkeywordslinkagesrequest.md)
+  The request body you use to create a relationship between a custom product page localization and a search keyword.
+- [object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse](appcustomproductpagelocalizationsearchkeywordslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
 
 
 ---

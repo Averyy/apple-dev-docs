@@ -23,6 +23,8 @@ static let GCKeyboardDidConnect: NSNotification.Name
 
 The notification object is a [`GCKeyboard`](https://developer.apple.com/documentation/GameController/GCKeyboard) object that represents the keyboard. If the user connects multiple keyboards, the framework posts this notification only after the first keyboard connects to the device.
 
+The system posts this notification on the main actor.
+
 ## See Also
 
 - [static let GCControllerDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidconnect.md)

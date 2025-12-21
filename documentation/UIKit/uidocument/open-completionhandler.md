@@ -14,7 +14,6 @@ Opens a document asynchronously.
 ## Declaration
 
 ```swift
-@MainActor
 func open() async -> Bool
 ```
 

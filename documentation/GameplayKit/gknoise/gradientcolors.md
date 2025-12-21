@@ -16,7 +16,7 @@ A dictionary mapping noise values to colors for use in colorizing generated nois
 ## Declaration
 
 ```swift
-var gradientColors: [NSNumber : UIColor] { get set }
+var gradientColors: [NSNumber : NSColor] { get set }
 ```
 
 #### Discussion

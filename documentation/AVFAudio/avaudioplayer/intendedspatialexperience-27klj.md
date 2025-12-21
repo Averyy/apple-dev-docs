@@ -3,20 +3,16 @@
 **Framework**: AVFAudio  
 **Kind**: property
 
-The AVAudioPlayer’s intended spatial experience.
+The intended spatial experience for this player.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var intendedSpatialExperience: any SpatialAudioExperience { get set }
 ```
-
-#### Discussion
-
-The default value of .automatic means the player uses its AVAudioSession’s intended spatial experience. See CASpatialAudioExperience for more details.
 
 
 ---

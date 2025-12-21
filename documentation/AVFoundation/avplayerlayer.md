@@ -21,7 +21,7 @@ class AVPlayerLayer
 
 ## Mentions
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 #### Overview
 
@@ -48,28 +48,27 @@ class PlayerView: UIView {
 
 ## Topics
 
-### Creating a Player Layer
+### Creating a player layer
 - [init(player: AVPlayer?)](avplayerlayer/init(player:).md)
   Creates a layer object to present the visual contents of a player’s current item.
-### Configuring the Presentation
+### Configuring the presentation
 - [var videoRect: CGRect](avplayerlayer/videorect.md)
   The current size and position of the video image that displays within the layer’s bounds.
 - [var videoGravity: AVLayerVideoGravity](avplayerlayer/videogravity.md)
   A value that specifies how the layer displays the player’s visual content within the layer’s bounds.
 - [struct AVLayerVideoGravity](avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
-### Determining Display Readiness
+### Determining display readiness
 - [var isReadyForDisplay: Bool](avplayerlayer/isreadyfordisplay.md)
   A Boolean value that indicates whether the first video frame of the player’s current item is ready for display.
-### Accessing the Player
+### Accessing the player
 - [var player: AVPlayer?](avplayerlayer/player.md)
   The player whose visual content the layer displays.
-### Processing Pixel Buffers
+### Processing pixel buffers
 - [var pixelBufferAttributes: [String : Any]?](avplayerlayer/pixelbufferattributes.md)
   The attributes of the visual output that displays in the player layer during playback.
 - [func displayedPixelBuffer() -> CVPixelBuffer?](avplayerlayer/displayedpixelbuffer.md)
   Returns the pixel buffer that the player layer currently displays.
-### Instance Methods
 - [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
   Returns the pixel buffer which is currently being displayed.
 
@@ -94,7 +93,7 @@ class PlayerView: UIView {
 
 - [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Using HEVC Video with Alpha](using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 - [class AVSynchronizedLayer](avsynchronizedlayer.md)
   A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback.

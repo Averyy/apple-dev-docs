@@ -22,24 +22,19 @@ struct LastWhere<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Last Where Publisher
+### Creating a last-where Publisher
 - [init(upstream: Upstream, predicate: (Publishers.LastWhere<Upstream>.Output) -> Bool)](publishers/lastwhere/init(upstream:predicate:).md)
   Creates a publisher that waits until after the stream finishes and then publishes the last element of the stream that satisfies a predicate closure.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.LastWhere.Output](publishers/lastwhere/output.md)
   The kind of values published by this publisher.
 - [Publishers.LastWhere.Failure](publishers/lastwhere/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/lastwhere/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.LastWhere<Upstream>.Output) -> Bool](publishers/lastwhere/predicate.md)
   The closure that determines whether to publish an element.
-### Applying Operators
-- [Publisher Operators](publishers-lastwhere-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/lastwhere/publisher-implementations.md)
 
 ## Relationships
 

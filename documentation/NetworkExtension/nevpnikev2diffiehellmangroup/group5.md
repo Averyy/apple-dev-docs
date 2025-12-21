@@ -5,13 +5,6 @@
 
 Diffie Hellman group 5 (1536-bit modular exponential [MODP]).
 
-**Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

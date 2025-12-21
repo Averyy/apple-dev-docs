@@ -25,7 +25,7 @@ An instance of [`AVSemanticSegmentationMatte`](avsemanticsegmentationmatte.md), 
 
 If you requested one or more semantic segmentation mattes by calling [`enabledSemanticSegmentationMatteTypes`](avcapturephotosettings/enabledsemanticsegmentationmattetypes.md) with a nonempty array of types, this property offers access to the resulting [`AVSemanticSegmentationMatte`](avsemanticsegmentationmatte.md) objects.
 
-> **Note**:  Semantic segmentation mattes are only embedded in the photo’s internal file format container if you set [`embedsSemanticSegmentationMattesInPhoto`](avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  Semantic segmentation mattes are only embedded in the photo’s internal file format container if you set [`embedsSemanticSegmentationMattesInPhoto`](avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

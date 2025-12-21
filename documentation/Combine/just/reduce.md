@@ -21,10 +21,6 @@ func reduce<T>(_ initialResult: T, _ nextPartialResult: (T, Output) -> T) -> Res
 ## See Also
 
 - [func collect() -> Just<[Output]>](just/collect.md)
-- [func collect(Int) -> Publishers.CollectByCount<Self>](just/collect(_:).md)
-  Collects up to the specified number of elements, and then emits a single array of the collection.
-- [func collect<S>(Publishers.TimeGroupingStrategy<S>, options: S.SchedulerOptions?) -> Publishers.CollectByTime<Self, S>](just/collect(_:options:).md)
-  Collects elements by a given time-grouping strategy, and emits a single array of the collection.
 - [func ignoreOutput() -> Empty<Output, Just<Output>.Failure>](just/ignoreoutput.md)
 - [func tryReduce<T>(T, (T, Output) throws -> T) -> Result<T, any Error>.Publisher](just/tryreduce(_:_:).md)
 

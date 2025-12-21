@@ -16,7 +16,7 @@ var isRemovable: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to drag the marker image off of the ruler and remove the marker, [`false`](https://developer.apple.com/documentation/swift/false) to prevent the user from removing the marker.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to drag the marker image off of the ruler and remove the marker, [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the user from removing the marker.
 
 By default ruler markers are not removable.
 

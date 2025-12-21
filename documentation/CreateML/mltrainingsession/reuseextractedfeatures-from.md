@@ -23,9 +23,11 @@ final func reuseExtractedFeatures(from session: MLTrainingSession<Task>) throws
 
 You can only use this method for a new training session that doesn’t already have its own checkpoints.
 
-- session: Another training session that’s already completed its feature extraction phase.
-
 > **Note**: This method throws an error if the training session has one or more checkpoints.
+
+## Parameters
+
+- `session`: Another training session that’s already completed its feature extraction phase.
 
 
 ---

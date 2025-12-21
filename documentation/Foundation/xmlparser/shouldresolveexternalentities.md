@@ -22,7 +22,7 @@ var shouldResolveExternalEntities: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parser reports declarations of external entities, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you may cause other I/O operations, either network-based or disk-based, to load the external DTD.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the parser reports declarations of external entities, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), you may cause other I/O operations, either network-based or disk-based, to load the external DTD.
 
 The parser reports declarations of external entities with the delegate method [`parser(_:foundExternalEntityDeclarationWithName:publicID:systemID:)`](xmlparserdelegate/parser(_:foundexternalentitydeclarationwithname:publicid:systemid:).md).
 

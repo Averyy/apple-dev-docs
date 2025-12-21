@@ -17,11 +17,6 @@ Initializes an instance of `AnonymousUserIdentity`.
 init()
 ```
 
-## See Also
-
-- [init(from: any Decoder) throws](anonymoususeridentity/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

@@ -18,7 +18,7 @@ var isDiscardable: Bool { get set }
 
 Marking a file version as discardable gives the system the flexibility to reclaim the space, occupied by the associated file, at some future time. Do not, however, depend on the file being discarded.
 
-After setting this property to [`true`](https://developer.apple.com/documentation/swift/true), do not set this property to [`false`](https://developer.apple.com/documentation/swift/false) again. Doing so causes the system to raise an exception. In addition, if you set this property to [`true`](https://developer.apple.com/documentation/swift/true) for the version of the file returned by the [`currentVersionOfItem(at:)`](nsfileversion/currentversionofitem(at:).md) method, the system raises an exception.
+After setting this property to [`true`](https://developer.apple.com/documentation/Swift/true), do not set this property to [`false`](https://developer.apple.com/documentation/Swift/false) again. Doing so causes the system to raise an exception. In addition, if you set this property to [`true`](https://developer.apple.com/documentation/Swift/true) for the version of the file returned by the [`currentVersionOfItem(at:)`](nsfileversion/currentversionofitem(at:).md) method, the system raises an exception.
 
 ## See Also
 

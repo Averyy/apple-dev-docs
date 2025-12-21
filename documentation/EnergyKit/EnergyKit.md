@@ -6,14 +6,16 @@
 Provide a grid forecast for your app to help people choose when to use electricity.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Overview
 
 EnergyKit provides a grid forecast for your app to help people choose when to use electricity. This forecast is personalized for each person’s Home location and based on various environmental and grid inputs, and identifies the times when there’s relatively cleaner electricity on the grid. A person’s rate plan information is also incorporated when they have connected to their utility account in the Home App.
 
 EnergyKit helps you build apps that people can use to manage their home devices’ electricity usage to help support the transition to a cleaner electricity grid. It’s meant for residential, behind-the-meter applications, such as electricity usage of household devices, appliances, and EV charging. It’s not meant for commercial or industrial applications. The system is designed for initial use cases involving smart thermostats (HVAC) and EV charging.
+
+![An electric vehicle charging app interface with the Clean Energy Guidance feature enabled, set to charge until 7AM, and a 'Begin Charging' button displayed below the settings.](https://docs-assets.developer.apple.com/published/76c60c9dc4015f4f6a977bc4310a17c9/energykit-art%402x.png)
 
 Using EnergyKit, your app can:
 
@@ -25,8 +27,6 @@ Using EnergyKit, your app can:
 #### Add the Entitlement to Your App
 
 To use EnergyKit, the system requires your app to have the [`com.apple.developer.energykit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement with a value of `true`. Add this entitlement by enabling the EnergyKit capability on your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
-
-> **Note**: The EnergyKit entitlement only supports development builds and Ad Hoc testing. The entitlement will support App Store submission and Test Flight at a later time.
 
 ## Topics
 
@@ -51,13 +51,13 @@ To use EnergyKit, the system requires your app to have the [`com.apple.developer
   A data model that provides guidance on when electricity is cleaner and less expensive.
 ### Insights
 - [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that represents displayable environmental impact information for electricity usage.
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [actor ElectricityInsightService](electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
-  A measurement of electricity consumption.
+  A protocol for types that can measure electricity usage data.
 ### Error response
 - [enum EnergyKitError](energykiterror.md)
   A specialized error that provides localized messages describing the error and why it occurred.

@@ -80,7 +80,7 @@ After launching your app, Handoff calls the [`application(_:willContinueUserActi
 
 > **Note**:  While watchOS can create [`NSUserActivity`](nsuseractivity.md) objects and send them to other devices, Handoff cannot launch watchOS apps.
 
-Handoff provides the activity to your app in the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)) (iOS), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)) (macOS) delegate method. Implement the method by creating an array of view controllers that need to update for the activity, and provide this array to the completion handler. Return [`true`](https://developer.apple.com/documentation/swift/true) if your implementation successfully handled the activity, or [`false`](https://developer.apple.com/documentation/swift/false) if it did not. The following example shows an iOS app delegate finding its top view controller and providing it to the completion handler.
+Handoff provides the activity to your app in the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)) (iOS), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)) (macOS) delegate method. Implement the method by creating an array of view controllers that need to update for the activity, and provide this array to the completion handler. Return [`true`](https://developer.apple.com/documentation/Swift/true) if your implementation successfully handled the activity, or [`false`](https://developer.apple.com/documentation/Swift/false) if it did not. The following example shows an iOS app delegate finding its top view controller and providing it to the completion handler.
 
 ```swift
 func application(_ application: UIApplication, continue userActivity: NSUserActivity,
@@ -112,12 +112,10 @@ override func restoreUserActivityState(_ userActivity: NSUserActivity) {    supe
 }
 ```
 
-For URLs transferred in the [`userInfo`](nsuseractivity/userinfo.md) dictionary, you must first call [`startAccessingSecurityScopedResource()`](url/startaccessingsecurityscopedresource().md) and it must return [`true`](https://developer.apple.com/documentation/swift/true) before you can access the URL. Call [`stopAccessingSecurityScopedResource()`](url/stopaccessingsecurityscopedresource().md) when you finish using the URL. Also be aware that the system modifies `file:` URLs pointing to iCloud documents, so that they point to the same document on the receiving device.
+For URLs transferred in the [`userInfo`](nsuseractivity/userinfo.md) dictionary, you must first call [`startAccessingSecurityScopedResource()`](url/startaccessingsecurityscopedresource().md) and it must return [`true`](https://developer.apple.com/documentation/Swift/true) before you can access the URL. Call [`stopAccessingSecurityScopedResource()`](url/stopaccessingsecurityscopedresource().md) when you finish using the URL. Also be aware that the system modifies `file:` URLs pointing to iCloud documents, so that they point to the same document on the receiving device.
 
 ## See Also
 
-- [Increasing App Usage with Suggestions Based on User Activities](task_management/increasing_app_usage_with_suggestions_based_on_user_activities.md)
-  Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
   Define and manage which of your app’s activities can be continued between devices.
 - [class NSUserActivity](nsuseractivity.md)

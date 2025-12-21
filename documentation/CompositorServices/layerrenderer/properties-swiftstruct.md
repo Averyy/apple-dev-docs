@@ -6,7 +6,7 @@
 A type that describes the organization of the layer renderer’s textures and the relationships between those textures and the views you use for drawing.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

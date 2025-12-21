@@ -25,18 +25,6 @@ All bounding box annotations in an annotation file must use the same units for t
   A unit of measurement in pixels for an image.
 - [MLBoundingBoxUnits.normalized](mlboundingboxunits/normalized.md)
   A unit of measurement as a portion of an image’s overall width or height.
-### Comparing errors
-- [static func == (MLBoundingBoxUnits, MLBoundingBoxUnits) -> Bool](mlboundingboxunits/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlboundingboxunits/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Getting the hash value
-- [func hash(into: inout Hasher)](mlboundingboxunits/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](mlboundingboxunits/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](mlboundingboxunits/equatable-implementations.md)
 
 ## Relationships
 

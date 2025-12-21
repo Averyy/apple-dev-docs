@@ -6,7 +6,7 @@
 Creates an empty configuration object.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

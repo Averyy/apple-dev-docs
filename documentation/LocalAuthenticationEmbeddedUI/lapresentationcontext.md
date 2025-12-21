@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-typealias LAPresentationContext = UIWindow
+typealias LAPresentationContext = NSWindow
 ```
 
 

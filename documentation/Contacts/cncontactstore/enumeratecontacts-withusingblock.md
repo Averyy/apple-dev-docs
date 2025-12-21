@@ -21,11 +21,11 @@ func enumerateContacts(with fetchRequest: CNContactFetchRequest, usingBlock bloc
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This method can fetch all contacts without keeping all of them at once in memory, which is expensive.
 

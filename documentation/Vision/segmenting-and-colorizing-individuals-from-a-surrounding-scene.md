@@ -156,7 +156,7 @@ if selectedSegments.contains(0) {
 
 - [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting Human Actions in a Live Video Feed](../createml/detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [class VNStatefulRequest](vnstatefulrequest.md)
   An abstract request type that builds evidence of a condition over time.

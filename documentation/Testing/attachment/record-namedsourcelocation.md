@@ -7,7 +7,7 @@ Attach a value to the current test.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

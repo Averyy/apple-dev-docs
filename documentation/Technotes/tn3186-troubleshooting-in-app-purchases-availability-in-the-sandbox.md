@@ -30,7 +30,7 @@ After you complete the above checks, retry the product request. If the In-App Pu
 
 To verify your product identifier list, perform these steps:
 
-1. In your Xcode project, locate your app’s [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+1. In your Xcode project, locate your app’s [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID).
 2. In App Store Connect, find the app that matches your app’s bundle ID.
 3. Verify each product identifier in your list matches the product identifier (`Product ID`) of an In-App Purchase created for the app in App Store Connect.
 
@@ -38,11 +38,11 @@ To verify your product identifier list, perform these steps:
 
 Apple provides test environments in Xcode and the Apple sandbox to help you verify your implementation of In-App Purchases. For more information, see [`Testing at all stages of development with Xcode and the sandbox`](https://developer.apple.com/documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox).
 
-If your Xcode project contains a [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode), ensure you are testing your In-App Purchases in the environment you wish to use. [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) in your Xcode project to test in the sandbox. [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) to test in Xcode local test environment.
+If your Xcode project contains a [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Create-a-StoreKit-configuration-file), ensure you are testing your In-App Purchases in the environment you wish to use. [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Disable-StoreKit-Testing-in-Xcode) in your Xcode project to test in the sandbox. [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode#Enable-StoreKit-Testing-in-Xcode) to test in Xcode local test environment.
 
 #### Use a Bundle Id Registered in App Store Connect and Enabled for in App Purchase
 
-Testing your In-App Purchases in the sandbox requires that your app uses a [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) registered in App Store Connect and enabled for In-App Purchase in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources). A bundle ID uniquely identifies your app throughout the system, for example, a bundle ID like `com.example` uniquely identifies an app using the bundle ID `com.example.myapp` and you are guaranteed that no other apps are using that same bundle ID. You register a bundle ID for your app when you [`create an App Store Connect record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) for the app. App Store Connect displays the registered bundle ID under the App Information section of your app. In your Xcode project, the bundle ID appears in the [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) of your app’s target. Confirm the bundle ID in your Xcode project matches the bundle ID you have registered for your app.
+Testing your In-App Purchases in the sandbox requires that your app uses a [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) registered in App Store Connect and enabled for In-App Purchase in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources). A bundle ID uniquely identifies your app throughout the system, for example, a bundle ID like `com.example` uniquely identifies an app using the bundle ID `com.example.myapp` and you are guaranteed that no other apps are using that same bundle ID. You register a bundle ID for your app when you [`create an App Store Connect record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) for the app. App Store Connect displays the registered bundle ID under the App Information section of your app. In your Xcode project, the bundle ID appears in the [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) of your app’s target. Confirm the bundle ID in your Xcode project matches the bundle ID you have registered for your app.
 
 After you confirm your Xcode project uses a registered bundle ID, verify you have enabled the In-App Purchase [`capability`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app) for the bundle ID. In the Identifiers section of [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources), select your bundle ID, scroll down to In-App Purchase under Capabilities, then confirm you have selected the capability.
 
@@ -50,11 +50,11 @@ After you confirm your Xcode project uses a registered bundle ID, verify you hav
 
 #### Sign Your App with a Valid Certificate and Provisioning Profile
 
-To use In-App Purchases in your app, you must sign your app with a provisioning profile that grants the app access to the In-App Purchase capability. For more information, see [`capability`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). A provisioning profile contains App ID and capabilities information. Inspect your provisioning profile, confirm the value of App ID matches your registered [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) and capabilities includes In-App Purchase. To view the content of your provisioning profile, see [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/BundleResources/diagnosing-issues-with-entitlements) in [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/BundleResources/diagnosing-issues-with-entitlements).
+To use In-App Purchases in your app, you must sign your app with a provisioning profile that grants the app access to the In-App Purchase capability. For more information, see [`capability`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). A provisioning profile contains App ID and capabilities information. Inspect your provisioning profile, confirm the value of App ID matches your registered [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) and capabilities includes In-App Purchase. To view the content of your provisioning profile, see [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/BundleResources/diagnosing-issues-with-entitlements#Check-Your-Provisioning-Profile) in [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/BundleResources/diagnosing-issues-with-entitlements).
 
 > **Note**: Provisioning profiles that contain a revoked certificate or a modified App ID are invalid and cannot be used to sign your app. If your provisioning profile is invalid or expires, sign your app updates with a [`regenerated provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/edit-download-or-delete-profiles#regenerate-a-provisioning-profile). After you renew your developer account, sign your app updates with new or updated [`certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/certificates/certificates-overview) and [`provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/edit-download-or-delete-profiles#edit-a-provisioning-profile). If your development or distribution certificate expires or you revoke it, sign your app updates with a new certificate and updated provisioning profiles. For more information, see [`provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/edit-download-or-delete-profiles#edit-a-provisioning-profile). After you accept and complete an app transfer, sign updates of the transferred app with new provisioning profiles.
 
-Use [`automatic signing`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev80cc24546) to allow Xcode to manage code signing for you. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices).
+Use [`automatic signing`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev80cc24546) to allow Xcode to manage code signing for you. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices#Configure-code-signing).
 
 #### Review Your Apple Developer Program Membership
 
@@ -91,6 +91,26 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -101,26 +121,6 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
   Inspect your active StoreKit configuration file for unexpected configurations.
 - [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
   Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
-- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
-  Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
 
 
 ---

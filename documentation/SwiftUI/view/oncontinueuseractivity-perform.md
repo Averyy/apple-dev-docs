@@ -38,7 +38,7 @@ UI frameworks traditionally pass Universal Links to your app using a user activi
 
 ## See Also
 
-- [Restoring Your App’s State with SwiftUI](restoring_your_app_s_state_with_swiftui.md)
+- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [func userActivity<P>(String, element: P?, (P, NSUserActivity) -> ()) -> some View](view/useractivity(_:element:_:).md)
   Advertises a user activity type.

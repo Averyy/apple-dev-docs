@@ -11,9 +11,8 @@ Interpolation that is linear or bilinear depending on the number of resized dime
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- watchOS 7.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 7.0+
 
 ## Declaration
 

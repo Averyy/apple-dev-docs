@@ -16,7 +16,7 @@ enum TransportControlsPlaybackMode
 
 ## Topics
 
-### Playback Modes
+### Playback modes
 - [AVCaptureDevice.TransportControlsPlaybackMode.notPlaying](avcapturedevice/transportcontrolsplaybackmode-swift.enum/notplaying.md)
   A value that indicates that the tape transport isn’t threaded through the play head.
 - [AVCaptureDevice.TransportControlsPlaybackMode.playing](avcapturedevice/transportcontrolsplaybackmode-swift.enum/playing.md)

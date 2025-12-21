@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Performs the necessary steps to start receiving remote Immersive Video frames using the given network connection.
+Performs the necessary steps to start receiving remote Immersive video frames using the given network connection.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ func start(connection: NWConnection) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails establishing the connection.
+> **Note**: This function throws if anything fails establishing the connection.
 
 ## Parameters
 

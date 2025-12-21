@@ -6,11 +6,11 @@
 A definition of a tool.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,21 +22,12 @@ struct ToolDefinition
 
 ### Creating a tool definition
 - [init(name: String, description: String, parameters: GenerationSchema)](transcript/tooldefinition/init(name:description:parameters:).md)
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
+- [init(tool: some Tool)](transcript/tooldefinition/init(tool:).md)
 ### Inspecting a tool definition
 - [var description: String](transcript/tooldefinition/description.md)
   A description of how and when to use the tool.
 - [var name: String](transcript/tooldefinition/name.md)
   The tool’s name.
-### Encoding a tool definition
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing tool definition
-- [static func == (Transcript.ToolDefinition, Transcript.ToolDefinition) -> Bool](transcript/tooldefinition/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](transcript/tooldefinition/equatable-implementations.md)
 
 ## Relationships
 
@@ -50,7 +41,7 @@ struct ToolDefinition
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)

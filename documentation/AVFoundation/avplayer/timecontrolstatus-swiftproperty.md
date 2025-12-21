@@ -28,7 +28,7 @@ var timeControlStatus: AVPlayer.TimeControlStatus { get }
 
 #### Discussion
 
-When the value of [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true), the player waits until your app resumes playback.
+When the value of [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the player waits until your app resumes playback.
 
 During playback, the value of the property changes between [`AVPlayer.TimeControlStatus.playing`](avplayer/timecontrolstatus-swift.enum/playing.md) and [`AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate`](avplayer/timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md) depending on whether the player has sufficient media data to continue playback.
 

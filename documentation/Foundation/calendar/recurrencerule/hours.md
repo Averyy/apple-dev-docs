@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+On which hours of a 24-hour day the event should repeat.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

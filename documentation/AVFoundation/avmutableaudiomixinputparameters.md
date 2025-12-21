@@ -22,21 +22,21 @@ class AVMutableAudioMixInputParameters
 
 ## Topics
 
-### Creating Input Parameters
+### Creating input parameters
 - [convenience init(track: AVAssetTrack?)](avmutableaudiomixinputparameters/init(track:).md)
   Creates a mutable input parameters object for a given track.
-### Managing the Track ID
+### Managing the track ID
 - [var trackID: CMPersistentTrackID](avmutableaudiomixinputparameters/trackid.md)
   The identifier of the audio track to which the parameters should be applied.
-### Setting the Volume
+### Setting the volume
 - [func setVolume(Float, at: CMTime)](avmutableaudiomixinputparameters/setvolume(_:at:).md)
   Sets the value of the audio volume starting at the specified time.
 - [func setVolumeRamp(fromStartVolume: Float, toEndVolume: Float, timeRange: CMTimeRange)](avmutableaudiomixinputparameters/setvolumeramp(fromstartvolume:toendvolume:timerange:).md)
   Sets a volume ramp to apply during a specified time range.
-### Getting an Audio Tap
+### Getting an audio tap
 - [var audioTapProcessor: MTAudioProcessingTap?](avmutableaudiomixinputparameters/audiotapprocessor.md)
   The audio processing tap associated with the track.
-### Time Pitch Settings
+### Time pitch settings
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](avmutableaudiomixinputparameters/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
 - [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)

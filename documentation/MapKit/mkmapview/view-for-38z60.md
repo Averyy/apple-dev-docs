@@ -27,14 +27,10 @@ The view associated with the overlay object or `nil` if the overlay is not onscr
 
 ## See Also
 
-- [var overlays: [any MKOverlay]](mkmapview/overlays.md)
-  The overlay objects associated with the map view.
-- [func overlays(in: MKOverlayLevel) -> [any MKOverlay]](mkmapview/overlays(in:).md)
-  Returns overlay objects in the specified level of the map.
-- [func renderer(for: any MKOverlay) -> MKOverlayRenderer?](mkmapview/renderer(for:).md)
-  Returns the renderer object for drawing the contents of the specified overlay object.
-- [enum MKOverlayLevel](mkoverlaylevel.md)
-  Constants that indicate the position of overlays relative to other content.
+- [func mapView(MKMapView, didAddOverlayViews: [Any])](mkmapviewdelegate/mapview(_:didaddoverlayviews:).md)
+  Tells the delegate when the map adds one or more overlay views to the map.
+- [func mapView(MKMapView, viewFor: any MKOverlay) -> MKOverlayView](mkmapviewdelegate/mapview(_:viewfor:)-6j267.md)
+  Asks the delegate for the overlay view to use when displaying the specified overlay object.
 
 
 ---

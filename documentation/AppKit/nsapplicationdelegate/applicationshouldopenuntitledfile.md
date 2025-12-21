@@ -17,11 +17,11 @@ optional func applicationShouldOpenUntitledFile(_ sender: NSApplication) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application should open a new untitled file or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the application should open a new untitled file or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
-Use this method to decide whether the application should open a new, untitled file. Note that [`applicationOpenUntitledFile(_:)`](nsapplicationdelegate/applicationopenuntitledfile(_:).md) is invoked if this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to decide whether the application should open a new, untitled file. Note that [`applicationOpenUntitledFile(_:)`](nsapplicationdelegate/applicationopenuntitledfile(_:).md) is invoked if this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

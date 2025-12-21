@@ -40,16 +40,12 @@ The sheet is dismissed on return from the `beginSheetForWindow:...` method.
 - `identities`: An array of identity objects (objects of type  ). Use the   function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the sheet.
 
-## Topics
+## See Also
 
-### Related Documentation
 - [func runModal(forIdentities: [Any]!, message: String!) -> Int](sfchooseidentitypanel/runmodal(foridentities:message:).md)
   Displays a list of identities in a modal panel.
 - [func identity() -> Unmanaged<SecIdentity>!](sfchooseidentitypanel/identity.md)
   Returns the identity that the user chose in the panel or sheet.
-
-## See Also
-
 - [func runModal(forIdentities: [Any]!, message: String!) -> Int](sfchooseidentitypanel/runmodal(foridentities:message:).md)
   Displays a list of identities in a modal panel.
 

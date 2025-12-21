@@ -20,11 +20,11 @@ Metal Performance Shaders Graph provides high-performance, energy-efficient comp
 ## Topics
 
 ### Essentials
-- [Adding Custom Functions to a Shader Graph](adding_custom_functions_to_a_shader_graph.md)
+- [Adding custom functions to a shader graph](adding-custom-functions-to-a-shader-graph.md)
   Run your own graph functions on the GPU by building the function programmatically.
-- [Training a Neural Network using MPS Graph](training_a_neural_network_using_mps_graph.md)
+- [Training a neural network using MPSGraph](training-a-neural-network-using-mps-graph.md)
   Train a simple neural network digit classifier.
-- [Filtering Images with MPSGraph FFT Operations](filtering_images_with_mpsgraph_fft_operations.md)
+- [Filtering images with MPSGraph FFT operations](filtering-images-with-mpsgraph-fft-operations.md)
   Filter an image with MPSGraph fast Fourier transforms using the convolutional theorem.
 ### Classes
 - [class MPSGraph](mpsgraph.md)
@@ -83,6 +83,9 @@ Metal Performance Shaders Graph provides high-performance, energy-efficient comp
   The base type class for types on tensors.
 - [class MPSGraphVariableOp](mpsgraphvariableop.md)
   The class that defines the parameters for a variable.
+### Structures
+- [struct MPSGraphReducedPrecisionFastMath](mpsgraphreducedprecisionfastmath.md)
+  MPSGraph could use these reduced precision paths to deliver faster math, but it is not guaranteed.
 ### Type Aliases
 - [typealias MPSGraphCompilationCompletionHandler](mpsgraphcompilationcompletionhandler.md)
   A notification that appears when compilation finishes.

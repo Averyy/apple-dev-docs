@@ -17,8 +17,8 @@ func saveCertificate(_ certificate: SecCertificate, keyType: ASAuthorizationProv
 ## Mentions
 
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
 - [Creating a refresh request](creating-a-refresh-request.md)
+- [Creating and validating a login request](creating-and-validating-a-login-request.md)
 
 ## Parameters
 

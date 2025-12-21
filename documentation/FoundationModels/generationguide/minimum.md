@@ -6,11 +6,11 @@
 Enforces a minimum value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,8 +24,8 @@ Use a `minimum` generation guide — whose bounds are inclusive — to ensure th
 
 ```swift
 @Generable
-struct struct GameCharacter {
-    @Guide(description: "A creative name appropriate for a fantasy RPG character"
+struct GameCharacter {
+    @Guide(description: "A creative name appropriate for a fantasy RPG character")
     var name: String
 
     @Guide(description: "A level for the character", .minimum(1))

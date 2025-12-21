@@ -39,6 +39,7 @@ struct PlaneAnchor
   The unique identifier of this anchor.
 ### Instance Properties
 - [var surfaceClassification: SurfaceClassification](planeanchor/surfaceclassification.md)
+  Get the surface classification of this plane.
 
 ## Relationships
 

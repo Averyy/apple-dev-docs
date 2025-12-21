@@ -6,7 +6,7 @@
 An immersive space dismissal action stored in a view’s environment.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -21,8 +21,8 @@ struct HKSampleQueryDescriptor<Sample> where Sample : HKSample
 
 ## Mentions
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
 - [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
 
 #### Overview
 

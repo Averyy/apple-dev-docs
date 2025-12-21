@@ -21,7 +21,7 @@ var isInputAvailable: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an input route is available, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if an input route is available, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -43,6 +43,7 @@ This property is key-value observable.
   An array of available data sources for the audio session’s current input port.
 - [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
   Selects a data source for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 
 
 ---

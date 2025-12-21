@@ -18,7 +18,7 @@ func synchronize(resource: any MTLResource)
 
 ## Mentions
 
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ The CPU can access the updated content from its copy of the resources after the 
 
 ## Parameters
 
-- `resource`: An   instance — such as an   or   — with a   property that’s equal to  .
+- `resource`: An   instance — such as an   or   — with a   property that’s equal to  .
 
 ## See Also
 

@@ -8,7 +8,7 @@ Add metadata to your USDZ file to specify its lighting characteristics.
 
 AR Quick Look in iOS 16 and later enhances lighting to deliver more brightness, contrast, and visual definition for your scene’s virtual content.
 
-You can set an asset’s lighting environment, or  (IBL), by adding the [`preferredIblVersion`](https://developer.apple.com/documentation/RealityKit/preferrediblversion) metadata to the file’s `.usda` textual definition, or by generating the asset with Apple-provided tools.
+You can set an asset’s lighting environment, or  (IBL), by adding the [`preferredIblVersion`](https://developer.apple.com/documentation/USD/preferrediblversion) metadata to the file’s `.usda` textual definition, or by generating the asset with Apple-provided tools.
 
 ##### Set the Lighting Metadata
 
@@ -30,11 +30,11 @@ A value of `1` indicates the classic lighting environment, and a value of `2` in
 
 ![An image of two 3D assets side by side. On the left, a 3D asset of a biplane toy features shine, refections, and a callout that reads Preferred IBL version = 1. On the right, a 3D asset of the same biplane toy features even more shine and refections, and its callout reads Preferred IBL version = 2.](https://docs-assets.developer.apple.com/published/154637bb579c9c2245cd2aa987caf6a4/media-4107511%402x.png)
 
-If you omit the [`preferredIblVersion`](https://developer.apple.com/documentation/RealityKit/preferrediblversion) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
+If you omit the [`preferredIblVersion`](https://developer.apple.com/documentation/USD/preferrediblversion) metadata or give it a value of `0`, the system checks the asset’s creation timestamp. A timestamp of July 1, 2022, or later results in the new lighting environment; otherwise, the scene features classic lighting for backward compatibility. The system checks the timestamp of the `.usd` asset within the `.usdz` archive, not the archive’s file creation date.
 
 ##### Set the Lighting Environment with Apple Provided Tools
 
-With [`Reality Converter`](https://developer.apple.comhttps://developer.apple.com/news/?id=01132020a), you can choose a lighting preferrence for your 3D asset by previewing the available options one after the other. By default, Reality Converter previews an imported 3D asset with `preferrediblversion` = `2`. You can select the Use Classic Lighting option to set `preferrediblversion` to `1` in the file.
+With [`Reality Converter`](https://developer.apple.comhttps://developer.apple.com/news/?id=01132020a), you can choose a lighting preference for your 3D asset by previewing the available options one after the other. By default, Reality Converter previews an imported 3D asset with `preferrediblversion` = `2`. You can select the Use Classic Lighting option to set `preferrediblversion` to `1` in the file.
 
 ![A screenshot of the Reality Converter app displaying a 3D asset of a rocket car in the center pane. In the right pane, the Use Classic Lighting checkbox is selected. A callout for the checkbox reads Preferred IBL version.](https://docs-assets.developer.apple.com/published/2a2dc2f0a5117b63a9695b36dd7abad3/media-4087320%402x.png)
 
@@ -63,8 +63,8 @@ To design your content in a third-party digital content creation tool (DCC) unde
   Balance the appearance and performance of your AR experiences with modeling strategies.
 - [Adding an Apple Pay Button or a Custom Action in AR Quick Look](adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look.md)
   Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
-- [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
-  Add augmented reality functionality to your 3D content using USDZ schemas.
+- [OpenUSD schemas for AR](../USD/usd-schemas-for-ar.md)
+  Add augmented reality functionality to your 3D content using USD schemas.
 
 
 ---

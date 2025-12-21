@@ -11,12 +11,7 @@ Attributes for initializing a tile overlay, including minimum and maximum zoom, 
 ## Declaration
 
 ```swift
-dictionary TileOverlayConstructorOptions {
-	number minimumZ;
-	number maximumZ;
-	number opacity;
-	Object data;
-};
+interface TileOverlayConstructorOptions
 ```
 
 ## Topics
@@ -33,8 +28,10 @@ dictionary TileOverlayConstructorOptions {
 
 ## See Also
 
-- [mapkit.TileOverlay](mapkit.tileoverlay/mapkit.tileoverlay.md)
+- [new TileOverlay(urlTemplate, options)](tileoverlay/tileoverlayconstructor.md)
   Creates a tile overlay with a URL template and style options.
+- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+  A type that specifies the URL template for a tile overlay.
 
 
 ---

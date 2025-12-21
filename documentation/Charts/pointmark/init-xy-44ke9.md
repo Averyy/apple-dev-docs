@@ -43,6 +43,15 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 - `x`: The value plotted with x.
 - `y`: The value plotted with y.
 
+## See Also
+
+- [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](pointmark/init(x:y:)-9dswq.md)
+  Creates a point mark with fixed x position and plots values with y.
+- [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
+  Creates a point mark that plots a value on x with fixed y position.
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
+  Creates a 3D point mark that plots values to x, y and z.
+
 
 ---
 

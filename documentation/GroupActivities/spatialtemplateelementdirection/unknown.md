@@ -1,31 +1,29 @@
-# !=(_:_:)
+# +(_:_:)
 
 **Framework**: Group Activities  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Adds the y-axis rotations for the specified values together and returns a new structure with the result.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func + (lhs: SpatialTemplateElementDirection, rhs: Angle2D) -> SpatialTemplateElementDirection
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+A new direction type that combines the rotations from `lhs` and `rhs`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `lhs`: The first direction.
+- `rhs`: The second direction.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/spatialtemplateelementdirection/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/spatialtemplateelementdirection/+(_:_:))*

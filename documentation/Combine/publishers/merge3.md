@@ -22,32 +22,32 @@ struct Merge3<A, B, C> where A : Publisher, B : Publisher, C : Publisher, A.Fail
 
 ## Topics
 
-### Creating a Merge-Three Publisher
+### Creating a merge-three publisher
 - [init(A, B, C)](publishers/merge3/init(_:_:_:).md)
   Creates a publisher created by applying the merge function to three upstream publishers.
-### Declaring Publisher Topography
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge4<A, B, C, P>](publishers/merge3/merge(with:).md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge5<A, B, C, Z, Y>](publishers/merge3/merge(with:_:).md)
+- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge6<A, B, C, Z, Y, X>](publishers/merge3/merge(with:_:_:).md)
+- [func merge<Z, Y, X, W>(with: Z, Y, X, W) -> Publishers.Merge7<A, B, C, Z, Y, X, W>](publishers/merge3/merge(with:_:_:_:).md)
+- [func merge<Z, Y, X, W, V>(with: Z, Y, X, W, V) -> Publishers.Merge8<A, B, C, Z, Y, X, W, V>](publishers/merge3/merge(with:_:_:_:_:).md)
+### Declaring supporting types
 - [Publishers.Merge3.Output](publishers/merge3/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge3.Failure](publishers/merge3/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge3/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge3/b.md)
   A second publisher to merge.
 - [let c: C](publishers/merge3/c.md)
   A third publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge3<A, B, C>, Publishers.Merge3<A, B, C>) -> Bool](publishers/merge3/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge3/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge3-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge3/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge3/publisher-implementations.md)
 
 ## Relationships
 

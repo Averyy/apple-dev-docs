@@ -26,12 +26,6 @@ struct FSError
 - [static var statusOperationPaused: FSError.Code](fserror/statusoperationpaused.md)
 ### Identifying the error domain
 - [static var errorDomain: String](fserror/errordomain.md)
-  The domain of the error.
-### Default Implementations
-- [CustomNSError Implementations](fserror/customnserror-implementations.md)
-- [Equatable Implementations](fserror/equatable-implementations.md)
-- [Error Implementations](fserror/error-implementations.md)
-- [Hashable Implementations](fserror/hashable-implementations.md)
 
 ## Relationships
 

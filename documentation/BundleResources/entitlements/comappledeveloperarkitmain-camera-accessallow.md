@@ -8,10 +8,6 @@ A Boolean value that indicates whether an app can use ARKit to access the main c
 **Availability**:
 - visionOS 2.0+
 
-#### Discussion
-
-> **Note**: Main camera access is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
-
 ## See Also
 
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)
@@ -28,8 +24,8 @@ A Boolean value that indicates whether an app can use ARKit to access the main c
   A Boolean value indicating whether your app may use a shared coordinate space.
 - [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
   A Boolean value indicating whether the system prohibits capturing your app’s content.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)

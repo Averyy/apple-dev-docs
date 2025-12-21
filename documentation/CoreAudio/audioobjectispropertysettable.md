@@ -15,6 +15,20 @@
 func AudioObjectIsPropertySettable(_ inObjectID: AudioObjectID, _ inAddress: UnsafePointer<AudioObjectPropertyAddress>, _ outIsSettable: UnsafeMutablePointer<DarwinBoolean>) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Queries an AudioObject about whether or not the given property can be set using AudioObjectSetPropertyData.
+
+## Parameters
+
+- `inObjectID`: The AudioObject to query.
+- `inAddress`: An AudioObjectPropertyAddress indicating which property is being queried.
+- `outIsSettable`: A Boolean indicating whether or not the property can be set.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

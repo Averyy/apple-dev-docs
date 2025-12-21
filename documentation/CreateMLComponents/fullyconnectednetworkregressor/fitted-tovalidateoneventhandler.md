@@ -38,10 +38,8 @@ The training process partitions the input into random batches according to the b
 
 - [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressor<Scalar>.Transformer](fullyconnectednetworkregressor/fitted(to:eventhandler:).md)
   Fits a fully connected network regressor model to a sequence of examples.
-- [FullyConnectedNetworkRegressor.Annotation](fullyconnectednetworkregressor/annotation.md)
-  The annotation type.
-- [FullyConnectedNetworkRegressor.Transformer](fullyconnectednetworkregressor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

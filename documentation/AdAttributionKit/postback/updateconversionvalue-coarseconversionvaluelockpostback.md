@@ -19,10 +19,10 @@ static func updateConversionValue(_ fineConversionValue: Int, coarseConversionVa
 ## Mentions
 
 - [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](adattributionkit-skadnetwork-interoperability.md)
 - [Configuring an advertised app](configuring-an-advertised-app.md)
 - [Identifying the parameters in a postback](identifying-the-parameters-in-a-postback.md)
 - [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](adattributionkit-skadnetwork-interoperability.md)
 
 ## Parameters
 

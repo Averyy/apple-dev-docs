@@ -22,28 +22,22 @@ struct Last<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Last Publisher
+### Creating a last publisher
 - [init(upstream: Upstream)](publishers/last/init(upstream:).md)
   Creates a publisher that waits until after the stream finishes and then publishes the last element of the stream.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Last.Output](publishers/last/output.md)
   The kind of values published by this publisher.
 - [Publishers.Last.Failure](publishers/last/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/last/upstream.md)
   The publisher from which this publisher receives elements.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Last<Upstream>, Publishers.Last<Upstream>) -> Bool](publishers/last/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/last/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-last-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/last/equatable-implementations.md)
-- [Publisher Implementations](publishers/last/publisher-implementations.md)
 
 ## Relationships
 

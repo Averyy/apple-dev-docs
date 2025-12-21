@@ -28,7 +28,7 @@ If this value is `nil`, there’s no offer applied.
 - [var environmentStringRepresentation: String](product/subscriptioninfo/renewalinfo/environmentstringrepresentation.md)
   The string representation of the server environment that signs the renewal information for an auto-renewable subscription.
 - [var offerID: String?](product/subscriptioninfo/renewalinfo/offerid.md)
-  A string that identifies an offer applied to the next subscription period.
+  A string that identifies an offer that applies to the next subscription period.
 - [var currencyCode: String?](product/subscriptioninfo/renewalinfo/currencycode.md)
   The three-letter ISO 4217 currency code for the price of the product.
 - [var offerPaymentModeStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerpaymentmodestringrepresentation.md)

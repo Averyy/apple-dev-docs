@@ -9,10 +9,9 @@ A structure holding magic cookie information.
 - iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
+- macOS ?+
 - tvOS ?+
 - visionOS ?+
-- Unknown ?+ - Deprecated
-- macOS ?+
 
 ## Declaration
 
@@ -23,7 +22,7 @@ typealias MagicCookieInfo = AudioCodecMagicCookieInfo
 ## See Also
 
 - [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef = MIDIObjectRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
   A MIDI source or destination an entity owns.
 - [typealias NoteInstanceID](noteinstanceid.md)
 - [typealias ReadBytesFDF](readbytesfdf.md)

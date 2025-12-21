@@ -16,7 +16,7 @@ var scrollingDeltaX: CGFloat { get }
 
 #### Discussion
 
-This is the preferred property for accessing [`NSScrollWheel`](nsscrollwheel.md) delta values. When [`hasPreciseScrollingDeltas`](nsevent/hasprecisescrollingdeltas.md) is [`false`](https://developer.apple.com/documentation/swift/false), your application may need to modify the raw value before using it.
+This is the preferred property for accessing [`NSScrollWheel`](nsscrollwheel.md) delta values. When [`hasPreciseScrollingDeltas`](nsevent/hasprecisescrollingdeltas.md) is [`false`](https://developer.apple.com/documentation/Swift/false), your application may need to modify the raw value before using it.
 
 ## See Also
 

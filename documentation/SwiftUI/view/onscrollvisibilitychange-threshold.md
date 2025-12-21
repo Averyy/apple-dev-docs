@@ -44,7 +44,7 @@ When the view appears on-screen, the action will be called if the threshold has 
 
 ## Parameters
 
-- `threshold`: The amount required to be visible within the viewport of the the parent   view before the   is fired. By default when the view has crossed more than 50%   on-screen, the action will be called.
+- `threshold`: The amount required to be visible within the viewport of the parent   view before the   is fired. By default when the view has crossed more than 50%   on-screen, the action will be called.
 - `action`: The action which will be called when the threshold has been reached.
 
 ## See Also

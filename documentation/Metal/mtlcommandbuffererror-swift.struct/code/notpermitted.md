@@ -21,14 +21,14 @@ case notPermitted
 
 ## Mentions
 
-- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
+- [Preparing your Metal app to run in the background](preparing-your-metal-app-to-run-in-the-background.md)
 
 ## See Also
 
 - [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
   An error code that represents the absence of any problems.
 - [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
+  An error code that indicates the system interrupted and terminated the command buffer before it finished running.
 - [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
 - [MTLCommandBufferError.Code.outOfMemory](mtlcommandbuffererror-swift.struct/code/outofmemory.md)
@@ -45,16 +45,6 @@ case notPermitted
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 - [MTLCommandBufferError.Code.internal](mtlcommandbuffererror-swift.struct/code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
-  An error code that represents the absence of any problems.
-- [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
-  An error code that indicates the system interrupted and terminated the command buffer because it took more time to execute than the system allows.
-- [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
-  An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [MTLCommandBufferError.Code.outOfMemory](mtlcommandbuffererror-swift.struct/code/outofmemory.md)
-  An error code that indicates the GPU device doesn’t have sufficient memory to execute a command buffer.
-- [MTLCommandBufferError.Code.invalidResource](mtlcommandbuffererror-swift.struct/code/invalidresource.md)
-  An error code that indicates the command buffer has an invalid reference to resource.
 
 
 ---

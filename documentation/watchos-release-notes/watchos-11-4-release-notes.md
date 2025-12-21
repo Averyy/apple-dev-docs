@@ -55,7 +55,7 @@ The watchOS 11.4 SDK provides support to develop watchOS apps for Apple Watch de
 
 ## See Also
 
-- [watchOS 11.6 Beta Release Notes](watchos-11_6-release-notes.md)
+- [watchOS 11.6 Release Notes](watchos-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [watchOS 11.5 Release Notes](watchos-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -25,12 +25,12 @@ This is the default storage mode for [`MTLBuffer`](mtlbuffer.md) instances on in
 
 When either the CPU or GPU changes the contents of the resource, you’re responsible for synchronizing access to the texture from the other participant. Ensure that all changes you schedule on either the CPU or GPU for a resource that uses shared memory complete before accessing that resource on the other processor.
 
-For more guidance on how to choose storage modes, see [`Setting Resource Storage Modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ## See Also
 
 - [static var storageModeManaged: MTLResourceOptions](mtlresourceoptions/storagemodemanaged.md)
-  The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+  The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 - [static var storageModePrivate: MTLResourceOptions](mtlresourceoptions/storagemodeprivate.md)
   The resource is only available to the GPU.
 - [static var storageModeMemoryless: MTLResourceOptions](mtlresourceoptions/storagemodememoryless.md)

@@ -31,6 +31,15 @@ let configuration = MLModelConfiguration()
 configuration.functionName = "my_function"
 ```
 
+## See Also
+
+- [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
+  A human readable name of a model for display purposes.
+- [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
+  A dictionary of configuration settings your app can override when loading a model.
+- [class MLParameterKey](mlparameterkey.md)
+  The keys for the parameter dictionary in a model configuration or a model update context.
+
 
 ---
 

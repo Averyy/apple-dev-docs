@@ -3,15 +3,15 @@
 **Framework**: GameKit  
 **Kind**: method
 
-Ends the game activity if it is not already ended.
+Ends the game activity if it’s not already ended.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,14 +25,14 @@ func end()
 
 #### Discussion
 
-This will report all associated achievements and submit scores to leaderboards.
+This reports all associated achievements and submit scores to leaderboards.
 
 ## See Also
 
 - [func start()](gkgameactivity/start.md)
-  Starts the game activity if it is not already started.
+  Starts the game activity if it’s not already started.
 - [func pause()](gkgameactivity/pause.md)
-  Pauses the game activity if it is not already paused.
+  Pauses the game activity if it’s not already paused.
 - [func resume()](gkgameactivity/resume.md)
   Resumes the game activity if it was paused.
 

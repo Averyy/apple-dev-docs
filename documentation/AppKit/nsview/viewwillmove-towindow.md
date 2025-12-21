@@ -21,7 +21,7 @@ AppKit calls this method when the window of a view changes. It also calls it in 
 
 Subclasses can override this method to perform whatever actions are necessary. For example, when a window is deallocated, you can use this method to remove notification observers and bindings associated with the view.
 
-When a window is deallocated, AppKit calls this method for each view in the window, passing `nil` for the `newWindow` parameter. AppKit does not necessarily call this method when closing a window, though. Closing a window usually just hides the window. Closed windows are deallocated only if their [`isReleasedWhenClosed`](nswindow/isreleasedwhenclosed.md) method returns [`true`](https://developer.apple.com/documentation/swift/true).
+When a window is deallocated, AppKit calls this method for each view in the window, passing `nil` for the `newWindow` parameter. AppKit does not necessarily call this method when closing a window, though. Closing a window usually just hides the window. Closed windows are deallocated only if their [`isReleasedWhenClosed`](nswindow/isreleasedwhenclosed.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

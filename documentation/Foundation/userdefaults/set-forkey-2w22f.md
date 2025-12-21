@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets the value of the specified default key to the double value.
+Sets the value of the specified key to a double.
 
 **Availability**:
 - iOS 2.0+
@@ -22,25 +22,25 @@ func set(_ value: Double, forKey defaultName: String)
 
 #### Discussion
 
-This is a convenience method for calling [`set(_:forKey:)`](userdefaults/set(_:forkey:)-8ab6d.md).
+This method places the double value in an [`NSNumber`](nsnumber.md) type before writing the key and value to the defaults database. After you call this method, the system generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
 
 ## Parameters
 
-- `value`: The double value.
-- `defaultName`: The key with which to associate the value.
+- `value`: The double value to store in the defaults database.
+- `defaultName`: The key that contains the setting’s name.
 
 ## See Also
 
-- [func set(Any?, forKey: String)](userdefaults/set(_:forkey:)-8ab6d.md)
-  Sets the value of the specified default key.
-- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
-  Sets the value of the specified default key to the specified float value.
-- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
-  Sets the value of the specified default key to the specified integer value.
 - [func set(Bool, forKey: String)](userdefaults/set(_:forkey:)-3nn5m.md)
-  Sets the value of the specified default key to the specified Boolean value.
+  Sets the value of the specified key to a Boolean value.
+- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
+  Sets the value of the specified key to an integer.
+- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
+  Sets the value of the specified key to a floating-point number.
 - [func set(URL?, forKey: String)](userdefaults/set(_:forkey:)-2bqjt.md)
-  Sets the value of the specified default key to the specified URL.
+  Sets the value of the specified key to a URL.
+- [func set(Any?, forKey: String)](userdefaults/set(_:forkey:)-8ab6d.md)
+  Sets the value of the specified key to a property list object.
 
 
 ---

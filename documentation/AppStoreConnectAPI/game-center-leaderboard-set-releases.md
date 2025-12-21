@@ -32,6 +32,8 @@ Manage a leaderboard set releases.
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
   Manage image assets for your Game Center leaderboard sets.
+- [Game Center leaderboard set versions](game-center-leaderboard-set-versions.md)
+  Manage versions for your Game Center leaderboard sets.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
   Manage Game Center leaderboard set member localizations.
 

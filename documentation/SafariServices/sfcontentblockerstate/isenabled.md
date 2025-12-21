@@ -20,7 +20,7 @@ var isEnabled: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the content blocker is enabled; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the content blocker is enabled; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

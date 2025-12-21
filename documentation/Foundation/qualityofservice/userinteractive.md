@@ -28,10 +28,6 @@ Used for work directly involved in providing an interactive UI. For example, pro
 - [QualityOfService.utility](qualityofservice/utility.md)
 - [QualityOfService.background](qualityofservice/background.md)
 - [QualityOfService.default](qualityofservice/default.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
 
 
 ---

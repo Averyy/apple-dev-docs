@@ -31,29 +31,6 @@ When the framework observes a table in the physical environment during a scan, i
   A table shape that resembles the letter L.
 - [TableShapeType.unidentified](tableshapetype/unidentified.md)
   An uncategorized table shape.
-### Identifying a chair type
-- [var shortIdentifier: String](tableshapetype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a chair type
-- [static var parentCategory: CapturedElementCategory?](tableshapetype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a chair type
-- [init?(rawValue: String)](tableshapetype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](tableshapetype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [TableShapeType.AllCases](tableshapetype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [TableShapeType.RawValue](tableshapetype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [TableShapeType]](tableshapetype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](tableshapetype/equatable-implementations.md)
-- [RawRepresentable Implementations](tableshapetype/rawrepresentable-implementations.md)
 
 ## Relationships
 

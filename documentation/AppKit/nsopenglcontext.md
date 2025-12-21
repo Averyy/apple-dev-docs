@@ -83,7 +83,7 @@ Every [`NSOpenGLContext`](nsopenglcontext.md) object wraps a low-level, platform
 - [class NSOpenGLView](nsopenglview.md)
   A view that displays OpenGL content in a view.
 - [class NSOpenGLLayer](nsopengllayer.md)
-  A subclass of [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer) that is suitable for rendering OpenGL into layers.
+  A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
 - [class NSOpenGLPixelFormat](nsopenglpixelformat.md)
   An object that specifies the types of buffers and other attributes of the OpenGL context.
 - [class NSDrawer](nsdrawer.md)

@@ -82,7 +82,7 @@ There are times when using [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.m
   Select the type of receipt validation, on the device or on your server, that works for your app.
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
   Verify transactions with the App Store on a secure server.
-- [var appStoreReceiptURL: URL? { get }](../Foundation/Bundle/appStoreReceiptURL.md)
+- [var appStoreReceiptURL: URL?](../Foundation/Bundle/appStoreReceiptURL.md)
   The file URL for the bundle’s App Store receipt.
 
 

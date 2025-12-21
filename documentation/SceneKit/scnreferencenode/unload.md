@@ -17,7 +17,6 @@ Removes the node’s children and marks the node as not loaded.
 ## Declaration
 
 ```swift
-@MainActor
 func unload()
 ```
 

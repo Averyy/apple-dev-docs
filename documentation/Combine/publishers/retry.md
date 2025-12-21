@@ -22,30 +22,24 @@ struct Retry<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Retry Publisher
+### Creating a retry publisher
 - [init(upstream: Upstream, retries: Int?)](publishers/retry/init(upstream:retries:).md)
   Creates a publisher that attempts to recreate its subscription to a failed upstream publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Retry.Output](publishers/retry/output.md)
   The kind of values published by this publisher.
 - [Publishers.Retry.Failure](publishers/retry/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/retry/upstream.md)
   The publisher from which this publisher receives elements.
 - [let retries: Int?](publishers/retry/retries.md)
   The maximum number of retry attempts to perform.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Retry<Upstream>, Publishers.Retry<Upstream>) -> Bool](publishers/retry/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/retry/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-retry-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/retry/equatable-implementations.md)
-- [Publisher Implementations](publishers/retry/publisher-implementations.md)
 
 ## Relationships
 

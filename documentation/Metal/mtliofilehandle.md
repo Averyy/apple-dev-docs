@@ -21,7 +21,7 @@ protocol MTLIOFileHandle : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Naming a File Handle
+### Naming a file handle
 - [var label: String?](mtliofilehandle/label.md)
   An optional name for the file that the handle represents.
 

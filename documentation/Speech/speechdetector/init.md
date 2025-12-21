@@ -6,11 +6,11 @@
 Creates a speech detector with default settings.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,6 +26,10 @@ The default settings enable the VAD model with a value of [`SpeechDetector.Sensi
 
 - [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
   Creates a speech detector.
+- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+  Allows clients to customize an instance of a speech detector.
+- [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
+  Determines how “aggressive” the voice activity detection (VAD) model will be.
 
 
 ---

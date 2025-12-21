@@ -33,7 +33,7 @@ An asset that models the media resource found at `URL`.
 
 - [convenience init(url: URL)](avurlasset/init(url:).md)
   Creates an asset that models the media at the specified URL.
-- [Initialization Options](avurlasset-initialization-options.md)
+- [Initialization options](avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
 
 

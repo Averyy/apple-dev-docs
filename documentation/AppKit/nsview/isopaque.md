@@ -17,7 +17,7 @@ var isOpaque: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) to reflect the fact that views do no drawing by default. Subclasses can override this property and return [`true`](https://developer.apple.com/documentation/swift/true) to indicate that the view completely covers its frame rectangle with opaque content. Doing so can improve performance during drawing operations by eliminating the need to render content behind the view.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) to reflect the fact that views do no drawing by default. Subclasses can override this property and return [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that the view completely covers its frame rectangle with opaque content. Doing so can improve performance during drawing operations by eliminating the need to render content behind the view.
 
 ## See Also
 

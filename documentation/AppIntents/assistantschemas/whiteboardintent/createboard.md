@@ -29,7 +29,7 @@ var createBoard: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.whiteboard.createBoard` schema:
 
 ```swift
-@AssistantIntent(schema: .whiteboard.createBoard)
+@AppIntent(schema: .whiteboard.createBoard)
 struct CreateCanvasBoardIntent: AppIntent {
     @Parameter
     var title: String?

@@ -19,10 +19,10 @@ class AVCaptureSynchronizedDepthData
 
 ## Topics
 
-### Accessing Synchronized Data
+### Accessing synchronized data
 - [var depthData: AVDepthData](avcapturesynchronizeddepthdata/depthdata.md)
   The depth data captured at this synchronization point.
-### Handling Dropped Data
+### Handling dropped data
 - [var depthDataWasDropped: Bool](avcapturesynchronizeddepthdata/depthdatawasdropped.md)
   A Boolean value indicating whether depth data was discarded between capture and processing.
 - [var droppedReason: AVCaptureOutput.DataDroppedReason](avcapturesynchronizeddepthdata/droppedreason.md)

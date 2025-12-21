@@ -21,6 +21,13 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperiment](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/reviewsubmission-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+### Dictionaries
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
 
 
 ---

@@ -40,6 +40,8 @@ Only one Safari browser instance can be active at any given time, and only one W
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 - [Responsive Design Mode](responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
+- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+  Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
 
 
 ---

@@ -26,8 +26,6 @@ case missingValues(operation: String, columnName: String)
   A column has an incorrect type.
 - [TabularPipelineDataError.missingColumn(operation:columnName:)](tabularpipelinedataerror/missingcolumn(operation:columnname:).md)
   A column is missing from the data frame.
-- [var errorDescription: String?](tabularpipelinedataerror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

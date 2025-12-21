@@ -23,7 +23,7 @@ var hasSufficientMediaDataForReliablePlaybackStart: Bool { get }
 
 #### Discussion
 
-Starting playback when this property is [`false`](https://developer.apple.com/documentation/swift/false) may prevent smooth playback following an immediate start.
+Starting playback when this property is [`false`](https://developer.apple.com/documentation/Swift/false) may prevent smooth playback following an immediate start.
 
 
 ---

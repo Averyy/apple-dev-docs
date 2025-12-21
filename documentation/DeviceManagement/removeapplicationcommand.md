@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to remove an installed managed app.
+The command to remove an app.
 
 **Availability**:
 - iOS 5.0+
@@ -23,12 +23,12 @@ object RemoveApplicationCommand
 
 ### Objects
 - [object RemoveApplicationCommand.Command](removeapplicationcommand/command-data.dictionary.md)
-  The command to remove an installed managed app.
+  The command to remove an app.
 
 ## See Also
 
 - [object RemoveApplicationResponse](removeapplicationresponse.md)
-  A response from the device after it processes the command to remove an installed managed app.
+  A response from the device after it processes the command to remove an app.
 
 
 ---

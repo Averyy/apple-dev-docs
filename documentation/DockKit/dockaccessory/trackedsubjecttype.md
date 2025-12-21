@@ -19,16 +19,11 @@ enum TrackedSubjectType
 
 ## Topics
 
-### Operators
-- [static func == (DockAccessory.TrackedSubjectType, DockAccessory.TrackedSubjectType) -> Bool](dockaccessory/trackedsubjecttype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [DockAccessory.TrackedSubjectType.object(_:)](dockaccessory/trackedsubjecttype/object(_:).md)
   Tracked subject contains an object.
 - [DockAccessory.TrackedSubjectType.person(_:)](dockaccessory/trackedsubjecttype/person(_:).md)
   Tracked subject contains a person.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/trackedsubjecttype/equatable-implementations.md)
 
 ## Relationships
 

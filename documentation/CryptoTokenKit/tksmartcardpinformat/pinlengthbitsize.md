@@ -6,13 +6,13 @@
 The size, in bits, of the PIN length field. If set to `0`, PIN length is not written. `0` by default.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 

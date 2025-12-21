@@ -17,11 +17,11 @@ func prepareSavePanel(_ savePanel: NSSavePanel) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successfully prepared; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successfully prepared; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The default implementation is empty and returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation is empty and returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

@@ -25,7 +25,7 @@ You use the [`LAPolicy.deviceOwnerAuthentication`](lapolicy/deviceownerauthentic
 
 If biometry is available, enrolled, and not disabled, the system uses that first. In macOS, the system simultaneously looks for a nearby, paired Apple Watch running watchOS 6 or later, and tries to use that in parallel. When these options aren’t available, the system prompts the user for the device passcode or user’s password.
 
-In iOS, policy evaluation fails with the error [`passcodeNotSet`](laerror-swift.struct/passcodenotset.md) if the device passcode isn’t enabled. The system disables passcode authentication after 6 unsuccessful attempts, with progressively increasing delays between attempts.
+In iOS, policy evaluation fails with the error [`passcodeNotSet`](laerror-swift.struct/passcodenotset.md) if the device passcode isn’t enabled. The system disables passcode authentication after too many unsuccessful attempts, with progressively increasing delays between attempts.
 
 The authentication dialog contains a cancel button with a default title that you can customize using the [`localizedCancelTitle`](lacontext/localizedcanceltitle.md) property, as well as a fallback button that you can customize using [`localizedFallbackTitle`](lacontext/localizedfallbacktitle.md) property. When the user taps the fallback button, the system reverts to asking for the device passcode or user’s password. When the user taps the cancel button, the evaluation fails with the [`userCancel`](laerror-swift.struct/usercancel.md) error.
 

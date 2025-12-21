@@ -28,6 +28,11 @@ Use the received [`Subscription`](subscription.md) to request items from the pub
 
 - `subscription`: A subscription that represents the connection between publisher and subscriber.
 
+## See Also
+
+- [func receive(completion: Subscribers.Completion<Never>)](subscribers/assign/receive(completion:).md)
+  Tells the subscriber that the publisher has completed publishing, either normally or with an error.
+
 
 ---
 

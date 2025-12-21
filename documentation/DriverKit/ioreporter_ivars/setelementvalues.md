@@ -21,7 +21,9 @@ IOReturn code
 
 #### Discussion
 
-Element_Index can be obtained from getFirstElementIndex().  If record_time is not provided, IOReporter::setElementValues() will fetch the current mach_absolute_time.  If the current time is already known, it is more efficient to pass it along.
+Atomically update a specific member of _elements[].
+
+element_index can be obtained from getFirstElementIndex().  If record_time is not provided, IOReporter::setElementValues() will fetch the current mach_absolute_time.  If the current time is already known, it is more efficient to pass it along.
 
 Locking: Caller must ensure that the reporter (data) lock is held.
 

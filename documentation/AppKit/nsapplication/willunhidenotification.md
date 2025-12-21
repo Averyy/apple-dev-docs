@@ -16,7 +16,7 @@ class let willUnhideNotification: NSNotification.Name
 
 #### Discussion
 
-The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
+The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
 ## See Also
 
@@ -43,7 +43,7 @@ The notification object is [`shared`](nsapplication/shared.md). This notificatio
 - [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
 - [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)
   Posted at the start of the [`updateWindows()`](nsapplication/updatewindows().md) method to indicate that the app is about to update its windows.
 - [class let didFinishRestoringWindowsNotification: NSNotification.Name](nsapplication/didfinishrestoringwindowsnotification.md)

@@ -29,10 +29,6 @@ struct MoonEvents
   The time of moonset.
 - [var phase: MoonPhase](moonevents/phase.md)
   The moon phase.
-### Default Implementations
-- [Decodable Implementations](moonevents/decodable-implementations.md)
-- [Encodable Implementations](moonevents/encodable-implementations.md)
-- [Equatable Implementations](moonevents/equatable-implementations.md)
 
 ## Relationships
 

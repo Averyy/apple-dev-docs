@@ -16,7 +16,7 @@ Apply macros to your Objective-C APIs to customize how they’re imported into S
 - [Grouping Related Objective-C Constants](grouping-related-objective-c-constants.md)
   Add macros to your Objective-C types to group their values in Swift.
 - [Marking API Availability in Objective-C](marking-api-availability-in-objective-c.md)
-  Use `a` macro to denote the availability of an Objective-C API.
+  Use a macro to denote the availability of an Objective-C API.
 - [Making Objective-C APIs Unavailable in Swift](making-objective-c-apis-unavailable-in-swift.md)
   Use the `NS_SWIFT_UNAVAILABLE` macro to prevent an API from being used in Swift.
 ### Customizing C APIs

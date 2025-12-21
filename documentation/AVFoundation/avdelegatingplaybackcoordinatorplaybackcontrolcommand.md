@@ -25,7 +25,7 @@ Playback commands inherit state that identifies their originator and applicable 
 
 ## Topics
 
-### Accessing Command Details
+### Accessing command details
 - [var expectedCurrentItemIdentifier: String](avdelegatingplaybackcoordinatorplaybackcontrolcommand/expectedcurrentitemidentifier.md)
   An item identifier the coordinator issues the command for.
 - [var originator: AVCoordinatedPlaybackParticipant?](avdelegatingplaybackcoordinatorplaybackcontrolcommand/originator.md)

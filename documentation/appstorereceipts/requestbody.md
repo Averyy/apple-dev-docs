@@ -1,12 +1,18 @@
 # requestBody
 
 **Framework**: App Store Receipts  
-**Kind**: dict
+**Kind**: dictionary
 
 The JSON contents you submit with the request to the App Store.
 
 **Availability**:
-- App Store Receipts 1.0+ - Deprecated in 1.7
+- App Store Receipts 1.0+
+
+## Declaration
+
+```swift
+object requestBody
+```
 
 #### Discussion
 
@@ -14,7 +20,7 @@ To receive a decoded receipt for validation, send a request with the encoded rec
 
 ## See Also
 
-- [verifyReceipt](verifyreceipt.md)
+- [verifyReceipt](verify-receipt.md)
   Send a receipt to the App Store for verification.
 - [object responseBody](responsebody.md)
   The JSON data that returns in the response from the App Store.

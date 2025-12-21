@@ -26,7 +26,7 @@ typealias nw_browser_t = any OS_nw_browser
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 ### Browsing for Services
 - [func nw_browser_create(nw_browse_descriptor_t, nw_parameters_t?) -> nw_browser_t](nw_browser_create(_:_:).md)
   Initializes a browser with a type of service to discover.

@@ -77,7 +77,7 @@ struct MLStyleTransfer
 
 - [Creating an Action Classifier Model](creating-an-action-classifier-model.md)
   Train a machine learning model to recognize a person’s body movements.
-- [Detecting Human Actions in a Live Video Feed](detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [struct MLActionClassifier](mlactionclassifier.md)
   A model you train with videos to classify a person’s body movements.

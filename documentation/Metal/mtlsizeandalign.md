@@ -21,12 +21,12 @@ struct MTLSizeAndAlign
 
 ## Topics
 
-### Accessing the Size and Alignment
+### Accessing the size and alignment
 - [var size: Int](mtlsizeandalign/size.md)
   The size of a resource, in bytes.
 - [var align: Int](mtlsizeandalign/align.md)
   The alignment of a resource, in bytes.
-### Creating Instances
+### Creating instances
 - [init()](mtlsizeandalign/init.md)
   Creates a default instance.
 - [init(size: Int, align: Int)](mtlsizeandalign/init(size:align:).md)
@@ -40,11 +40,11 @@ struct MTLSizeAndAlign
 
 ## See Also
 
-- [Using Argument Buffers with Resource Heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a Multistage Image Filter Using Heaps and Fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
 - [protocol MTLHeap](mtlheap.md)
   A memory pool from which you can suballocate resources.

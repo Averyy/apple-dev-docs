@@ -43,7 +43,7 @@ Assign a transitioning delegate object to the document view controller (the view
 
 ##### Configure a Custom File Format
 
-This sample introduces a custom file format called Particles. Particles files use the `.particles` extension. In order to register the file format, the sample has modifies both the Exported UTIs and the Document Types  in the target’s Info pane.
+This sample introduces a custom file format called Particles. Particles files use the `.particles` extension. In order to register the file format, the sample modifies both the Exported UTIs and the Document Types in the target’s Info pane.
 
 - In the Exported UTIs section, the sample project defines a Particles document as conforming to `public.data, public.content`. This entry registers the file format with the system.
 - Under “Additional exported UTI properties,” the sample project defines the `UTTypeTagSpecification` dictionary with a  `public.filename-extension` key and value of `particles`  This entry sets `particles` as the document’s extension.

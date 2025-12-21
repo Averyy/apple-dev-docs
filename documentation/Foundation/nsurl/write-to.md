@@ -24,7 +24,7 @@ You must declare an `NSURLPboardType` data type for the pasteboard before invoki
 
 ## See Also
 
-- [func declareTypes(_ newTypes: [NSPasteboard.PasteboardType], owner newOwner: Any?) -> Int](../AppKit/NSPasteboard/declareTypes(_:owner:).md)
+- [func declareTypes([NSPasteboard.PasteboardType], owner: Any?) -> Int](../AppKit/NSPasteboard/declareTypes(_:owner:).md)
   Prepares the receiver for a change in its contents by declaring the new types of data it will contain and a new owner.
 - [init?(fromPasteboard: NSPasteboard)](nsurl/init(frompasteboard:).md)
   Reads an NSURL object off of the specified pasteboard.

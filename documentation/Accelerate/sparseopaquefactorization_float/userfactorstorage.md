@@ -22,7 +22,7 @@ var userFactorStorage: Bool
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user must free factor storage after all references finish (though [`SparseCleanup(_:)`](sparsecleanup(_:)-3cnxt.md)) still frees any additional allocated storage due to pivoting).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the user must free factor storage after all references finish (though [`SparseCleanup(_:)`](sparsecleanup(_:)-3cnxt.md)) still frees any additional allocated storage due to pivoting).
 
 ## See Also
 

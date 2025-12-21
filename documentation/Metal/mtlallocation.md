@@ -21,17 +21,17 @@ protocol MTLAllocation : NSObjectProtocol
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Overview
 
 Types that conform to [`MTLAllocation`](mtlallocation.md), including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md), have underlying memory. You make their memory , or GPU-accessible, by adding an allocation to an [`MTLResidencySet`](mtlresidencyset.md) or calling the appropriate method of a command encoder.
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
+See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
 
 ## Topics
 
-### Inspecting an Allocation
+### Inspecting an allocation
 - [var allocatedSize: Int](mtlallocation/allocatedsize.md)
   The amount of memory, in byes, a resource consumes, such as for a buffer, texture, or heap.
 
@@ -55,6 +55,8 @@ See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-
 
 ## See Also
 
+- [typealias MTLGPUAddress](mtlgpuaddress.md)
+  A 64-bit unsigned integer type appropriate for storing GPU addresses.
 - [protocol MTLResource](mtlresource.md)
   An allocation of memory accessible to a GPU.
 - [struct MTLResourceOptions](mtlresourceoptions.md)

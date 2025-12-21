@@ -6,23 +6,14 @@
 The optional details that describe the app service wasn’t declared.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ServiceNotDeclaredDetails
 ```
-
-## Topics
-
-### Generating initializers
-- [init(from: any Decoder) throws](waerror/servicenotdeclareddetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/servicenotdeclareddetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -35,7 +26,7 @@ struct ServiceNotDeclaredDetails
 ## See Also
 
 - [case serviceNotDeclared(WAError.ServiceNotDeclaredDetails)](waerror/servicenotdeclared(_:).md)
-  An error that occurs if your app didn’t declared the necessary services.
+  An error that occurs if your app didn’t declare the necessary services.
 
 
 ---

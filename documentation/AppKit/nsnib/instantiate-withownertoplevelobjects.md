@@ -16,7 +16,7 @@ func instantiate(withOwner owner: Any?, topLevelObjects: AutoreleasingUnsafeMuta
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the nib is instantiated; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the nib is instantiated; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

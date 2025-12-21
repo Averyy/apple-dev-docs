@@ -83,26 +83,26 @@ game = TabletopGame(tableSetup: setup)
 ### Adding equipment for gameplay
 - [func add(equipment: some Equipment)](tablesetup/add(equipment:)-29pef.md)
   Add the given equipment to the table setup.
+- [func add<E>(equipment: E)](tablesetup/add(equipment:)-294gb.md)
 - [func add(equipment: some EntityEquipment)](tablesetup/add(equipment:)-24tv6.md)
+- [func add<E>(equipment: E)](tablesetup/add(equipment:)-7qwj2.md)
+  Add the given equipment to the table setup.
 - [func add(equipment: some Sequence)](tablesetup/add(equipment:)-4k6m6.md)
   Add the given equipment to the table setup.
+- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-3d7h9.md)
 - [func add(equipment: some Sequence)](tablesetup/add(equipment:)-9syh2.md)
+- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-9h887.md)
+  Add the given equipment to the table setup.
 ### Adding counters to keep score
 - [func add(counter: ScoreCounter)](tablesetup/add(counter:).md)
 - [func add(counters: some Sequence<ScoreCounter>)](tablesetup/add(counters:).md)
-### Instance Methods
-- [func add<E>(equipment: E)](tablesetup/add(equipment:)-294gb.md)
-- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-3d7h9.md)
-- [func add<E>(equipment: E)](tablesetup/add(equipment:)-7qwj2.md)
-  Add the given equipment to the table setup.
-- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-9h887.md)
-  Add the given equipment to the table setup.
+### Registering an action
 - [func register<Action>(action: Action.Type)](tablesetup/register(action:).md)
   Register a custom action of given type. Each type of custom action needs to be registered before it can be used.
 
 ## See Also
 
-- [Creating tabletop games](tabletopkitsample.md)
+- [Creating tabletop games](creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.

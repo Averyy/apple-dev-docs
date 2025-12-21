@@ -21,15 +21,15 @@ optional func application(_ application: UIApplication, willContinueUserActivity
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to notify the user that a continuation is in progress or [`false`](https://developer.apple.com/documentation/swift/false) if you want iOS to notify the user.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you want to notify the user that a continuation is in progress or [`false`](https://developer.apple.com/documentation/Swift/false) if you want iOS to notify the user.
 
 #### Discussion
 
 Use this method to provide immediate feedback to the user that an activity is about to continue on this device. The app calls this method as soon as the user confirms that an activity should be continued but possibly before the data associated with that activity is available.
 
-Your implementation of this method should prepare to initiate the activity. If you notify the user as part of your preparations, return [`true`](https://developer.apple.com/documentation/swift/true) from this method so that iOS does not also notify the user. If you do not implement this method or your implementation returns [`false`](https://developer.apple.com/documentation/swift/false), iOS notifes the user.
+Your implementation of this method should prepare to initiate the activity. If you notify the user as part of your preparations, return [`true`](https://developer.apple.com/documentation/Swift/true) from this method so that iOS does not also notify the user. If you do not implement this method or your implementation returns [`false`](https://developer.apple.com/documentation/Swift/false), iOS notifes the user.
 
-This method is not called if either [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+This method is not called if either [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

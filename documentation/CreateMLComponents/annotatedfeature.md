@@ -34,11 +34,6 @@ struct AnnotatedFeature<Feature, Annotation>
   The annotation.
 - [var feature: Feature](annotatedfeature/feature.md)
   The feature value.
-### Default Implementations
-- [Decodable Implementations](annotatedfeature/decodable-implementations.md)
-- [Encodable Implementations](annotatedfeature/encodable-implementations.md)
-- [Equatable Implementations](annotatedfeature/equatable-implementations.md)
-- [Hashable Implementations](annotatedfeature/hashable-implementations.md)
 
 ## Relationships
 

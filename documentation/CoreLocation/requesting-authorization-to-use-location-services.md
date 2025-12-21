@@ -38,9 +38,9 @@ For information about how to handle location updates in the background, see [`Ha
 
 ##### Provide Descriptions of How You Use Location Services
 
-The first time you make an authorization request, the system displays an alert asking the person to grant or deny the request. The alert includes a usage description string that explains why you want access to location data. You provide this string in your app’s `Info.plist` file and use it to inform people about how your app uses location data.
+The first time you make an authorization request, the system displays an alert asking the person to grant or deny the request. The alert includes a usage description string that explains why you want access to location data. You provide this string in your app’s Information Property List and use it to inform people about how your app uses location data.
 
-Core Location supports different usage strings for each access level. You must include a usage description string for When in Use access. If your app supports Always access, provide an additional string explaining why you want the elevated privileges. The following table lists the keys to include in your `Info.plist` and when to include them.
+Core Location supports different usage strings for each access level. You must include a usage description string for When in Use access. If your app supports Always access, provide an additional string explaining why you want the elevated privileges. The following table lists the keys to include in your app’s Information Property List and when to include them.
 
 | Usage key | Required when: |
 | --- | --- |
@@ -48,7 +48,7 @@ Core Location supports different usage strings for each access level. You must i
 | [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription) | The app requests Always authorization. |
 | [`NSLocationUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationUsageDescription) | (macOS only) Your macOS app uses location services. |
 
-Add all usage description keys to your app’s `Info.plist` file before you make any authorization requests. Authorization requests fail immediately if the required keys aren’t present.
+Add all usage description keys to your app’s Information Property List before you make any authorization requests. Authorization requests fail immediately if the required keys aren’t present.
 
 ##### Make Authorization Requests and Respond to Status Changes
 
@@ -87,15 +87,15 @@ The [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/loca
 - [enum CLAccuracyAuthorization](claccuracyauthorization.md)
   Constants that indicate the level of location accuracy the app has authorization to use.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 - [NSLocationWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground.
+  A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
 - [NSLocationUsageDescription](../BundleResources/Information-Property-List/NSLocationUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information.
+  A message that tells people why the app is requesting access to their location information.
 - [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 - [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location at all times.
+  A message that tells people why the app is requesting access to their location at all times.
 
 
 ---

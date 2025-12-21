@@ -11,17 +11,17 @@ The type of data that the map view displays.
 ## Declaration
 
 ```swift
-attribute string mapType;
+mapType?: MapType;
 ```
 
 #### Discussion
 
-The map’s initial view type can be one of the types defined by [`mapkit.Map.MapTypes`](mapkit.map.maptypes.md). The default map type is [`Standard`](mapkit.map.maptypes/standard.md).
+The map’s initial view type can be one of the types defined by [`MapType`](maptype.md). The default map type is [`Standard`](maptype/standard.md).
 
 ## Topics
 
 ### Map types
-- [mapkit.Map.MapTypes](mapkit.map.maptypes.md)
+- [const MapType](maptype.md)
   Constants representing the type of map to display.
 
 ## See Also

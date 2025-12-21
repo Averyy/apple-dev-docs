@@ -17,7 +17,7 @@ var treatsFilePackagesAsDirectories: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel displays file packages as directories; if [`false`](https://developer.apple.com/documentation/swift/false), it will not.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the panel displays file packages as directories; if [`false`](https://developer.apple.com/documentation/Swift/false), it will not.
 
 ## See Also
 

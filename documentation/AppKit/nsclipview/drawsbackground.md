@@ -17,7 +17,7 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-If your [`NSClipView`](nsclipview.md) is enclosed in an [`NSScrollView`](nsscrollview.md), you should set the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSScrollView`](nsscrollview.md). Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) on an [`NSScrollView`](nsscrollview.md) has the added effect of setting the [`NSClipView`](nsclipview.md) property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/swift/false). The side effect of setting the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSClipView`](nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
+If your [`NSClipView`](nsclipview.md) is enclosed in an [`NSScrollView`](nsscrollview.md), you should set the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSScrollView`](nsscrollview.md). Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) on an [`NSScrollView`](nsscrollview.md) has the added effect of setting the [`NSClipView`](nsclipview.md) property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/Swift/false). The side effect of setting the [`drawsBackground`](nsclipview/drawsbackground.md) property on the [`NSClipView`](nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
 
 ## See Also
 

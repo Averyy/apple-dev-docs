@@ -48,6 +48,13 @@ let y = x.replacing(with: 99, atIndices: i, alongAxis: 1)
 - `replacement`: The replacement value.
 - `axis`: The axis to scatter to.
 
+## See Also
+
+- [func replacing(with: MLTensor, atIndices: MLTensor, alongAxis: Int) -> MLTensor](mltensor/replacing(with:atindices:alongaxis:).md)
+  Replaces slices along the specified indices with the given replacement values.
+- [func replacing(with:where:)](mltensor/replacing(with:where:).md)
+  Returns a new tensor replacing values from `other` with the corresponding element in `self` where the associated element in `mask` is `true`.
+
 
 ---
 

@@ -9,7 +9,7 @@ An error response that indicates the system requires a software update.
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,11 +17,15 @@ An error response that indicates the system requires a software update.
 object ErrorCodeSoftwareUpdateRequired
 ```
 
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+
 #### Discussion
 
-The MDM server’s 403 response body contains the schema for a JSON or property list XML document. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.
+The schema for a JSON or property list XML document that an MDM server’s 403 response body contains. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.
 
-The system returns this response when a device attempts to enroll with an MDM server during Setup Assistant, but the MDM server requires the device to perform a software update before it can continue with enrollment and setup.
+The MDM server returns this response when a device enrolls in MDM during Setup Assistant and it requires the device to perform a software update before it can continue with enrollment and setup.
 
 ## Topics
 
@@ -33,8 +37,12 @@ The system returns this response when a device attempts to enroll with an MDM se
 
 - [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
   An error response that indicates a missing pairing token.
+- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
+  An error response that indicates Platform SSO is required.
 - [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+  An error response that indicates a device needs to unenroll.
 - [object ErrorWellKnownFailed](errorwellknownfailed.md)
+  An error response that indicates a well-known service discovery request failed.
 
 
 ---

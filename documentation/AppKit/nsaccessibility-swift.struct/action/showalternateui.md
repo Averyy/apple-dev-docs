@@ -32,6 +32,7 @@ static let showAlternateUI: NSAccessibility.Action
   An action that simulates clicking an object, such as a button.
 - [static let raise: NSAccessibility.Action](nsaccessibility-swift.struct/action/raise.md)
   An action that simulates bringing a window forward by clicking on its title bar.
+- [static let scrollToVisibleAction: NSAccessibility.Action](nsaccessibility-swift.struct/action/scrolltovisibleaction.md)
 - [static let showDefaultUI: NSAccessibility.Action](nsaccessibility-swift.struct/action/showdefaultui.md)
   An action that shows the original or default UI; for example, during a mouse-hover event.
 - [static let showMenu: NSAccessibility.Action](nsaccessibility-swift.struct/action/showmenu.md)

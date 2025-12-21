@@ -14,7 +14,6 @@ Returns the file type to use for saving a document.
 ## Declaration
 
 ```swift
-@MainActor
 var savingFileType: String? { get }
 ```
 

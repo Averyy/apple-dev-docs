@@ -25,22 +25,11 @@ Activities that share content owned by the initiator may wish to customize their
 
 ## Topics
 
-### Operators
-- [static func == (GroupActivityMetadata.LifetimePolicy, GroupActivityMetadata.LifetimePolicy) -> Bool](groupactivitymetadata/lifetimepolicy-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](groupactivitymetadata/lifetimepolicy-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](groupactivitymetadata/lifetimepolicy-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let automatic: GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct/automatic.md)
   The default lifetime policy for a group activity.
 - [static let endsWhenInitiatorLeaves: GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct/endswheninitiatorleaves.md)
   The activity should end when the initiator of the activity leaves.
-### Default Implementations
-- [Equatable Implementations](groupactivitymetadata/lifetimepolicy-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

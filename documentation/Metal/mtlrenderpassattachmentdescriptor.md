@@ -21,16 +21,16 @@ class MTLRenderPassAttachmentDescriptor
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
 
 #### Overview
 
-Use a [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object to configure an individual render target of a framebuffer. Each [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object specifies one texture that a graphics rendering pass can write into.
+Use an [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance to configure an individual render target of a framebuffer. Each [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance specifies one texture that a graphics rendering pass can write into.
 
-Typically, you don’t directly create [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) objects. Instead, the [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) object creates a default set of attachment objects. For each attachment that you intend to use as a render target, retrieve the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object from the render pass descriptor and configure its properties for use during this rendering pass.
+Typically, you don’t directly create [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instances. Instead, the [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance creates a default set of attachment instances. For each attachment that you intend to use as a render target, retrieve the [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) instance from the render pass descriptor and configure its properties for use during this rendering pass.
 
-You must set the attachment’s [`texture`](mtlrenderpassattachmentdescriptor/texture.md) property. The [`level`](mtlrenderpassattachmentdescriptor/level.md), [`slice`](mtlrenderpassattachmentdescriptor/slice.md), and [`depthPlane`](mtlrenderpassattachmentdescriptor/depthplane.md) properties specify the mipmap level, slice, and depth plane (for 3D textures) of the texture, respectively.
+You need to set the attachment’s [`texture`](mtlrenderpassattachmentdescriptor/texture.md) property. The [`level`](mtlrenderpassattachmentdescriptor/level.md), [`slice`](mtlrenderpassattachmentdescriptor/slice.md), and [`depthPlane`](mtlrenderpassattachmentdescriptor/depthplane.md) properties specify the mipmap level, slice, and depth plane (for 3D textures) of the texture, respectively.
 
 The [`loadAction`](mtlrenderpassattachmentdescriptor/loadaction.md) and [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) properties specify actions to perform at the start and end of a rendering pass for the attachment, respectively. For example, if you set the [`loadAction`](mtlrenderpassattachmentdescriptor/loadaction.md) property of an attachment to [`MTLLoadAction.clear`](mtlloadaction/clear.md), then the contents of the texture fill with a value for the type of attachment at the start of the rendering pass.
 
@@ -48,7 +48,7 @@ To perform multisampled antialiased rendering, you use two textures. Attach to t
 
 ## Topics
 
-### Specifying the Texture for the Attachment
+### Specifying the texture for the attachment
 - [var texture: (any MTLTexture)?](mtlrenderpassattachmentdescriptor/texture.md)
   The texture object associated with this attachment.
 - [var level: Int](mtlrenderpassattachmentdescriptor/level.md)
@@ -57,14 +57,14 @@ To perform multisampled antialiased rendering, you use two textures. Attach to t
   The slice of the texture used for rendering to the attachment.
 - [var depthPlane: Int](mtlrenderpassattachmentdescriptor/depthplane.md)
   The depth plane of the texture used for rendering to the attachment.
-### Specifying Rendering Pass Actions
+### Specifying rendering pass actions
 - [var loadAction: MTLLoadAction](mtlrenderpassattachmentdescriptor/loadaction.md)
   The action performed by this attachment at the start of a rendering pass for a render command encoder.
 - [var storeAction: MTLStoreAction](mtlrenderpassattachmentdescriptor/storeaction.md)
   The action performed by this attachment at the end of a rendering pass for a render command encoder.
 - [var storeActionOptions: MTLStoreActionOptions](mtlrenderpassattachmentdescriptor/storeactionoptions.md)
   The options that modify the store action performed by this attachment.
-### Specifying the Texture to Resolve Multisample Data
+### Specifying the texture to resolve multisample data
 - [var resolveTexture: (any MTLTexture)?](mtlrenderpassattachmentdescriptor/resolvetexture.md)
   The destination texture used when resolving multisampled texture data into single sample values.
 - [var resolveLevel: Int](mtlrenderpassattachmentdescriptor/resolvelevel.md)
@@ -98,7 +98,7 @@ To perform multisampled antialiased rendering, you use two textures. Attach to t
 - [class MTLRenderPassDescriptor](mtlrenderpassdescriptor.md)
   A group of render targets that hold the results of a render pass.
 - [class MTLRenderPassColorAttachmentDescriptorArray](mtlrenderpasscolorattachmentdescriptorarray.md)
-  An array of render pass color attachment descriptor objects.
+  An array of render pass color attachment descriptor objects.
 - [class MTLRenderPassColorAttachmentDescriptor](mtlrenderpasscolorattachmentdescriptor.md)
   A color render target that serves as the output destination for color pixels generated by a render pass.
 - [struct MTLClearColor](mtlclearcolor.md)
@@ -121,8 +121,7 @@ To perform multisampled antialiased rendering, you use two textures. Attach to t
   A description of where to store GPU counter information at the start and end of a render pass.
 - [class MTLLogicalToPhysicalColorAttachmentMap](mtllogicaltophysicalcolorattachmentmap.md)
   Allows you to easily specify color attachment remapping from logical to physical indices.
-- [let MTLRenderTargetRemapIndexDiscard: Int](mtlrendertargetremapindexdiscard.md)
-  Constant to specify discarding a color attachment’s index in a remap operation.
+- [struct MTLDispatchThreadsIndirectArguments](mtldispatchthreadsindirectarguments.md)
 
 
 ---

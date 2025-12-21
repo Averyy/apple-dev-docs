@@ -19,7 +19,7 @@ var constituentDevices: [AVCaptureDevice] { get }
 
 #### Discussion
 
-The value of this property is an empty array when called on a device whose [`isVirtualDevice`](avcapturedevice/isvirtualdevice.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is an empty array when called on a device whose [`isVirtualDevice`](avcapturedevice/isvirtualdevice.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setSelectionIndexPath(_ indexPath: IndexPath?) -> Bool
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Return [`true`](https://developer.apple.com/documentation/Swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

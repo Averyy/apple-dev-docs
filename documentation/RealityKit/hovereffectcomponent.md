@@ -244,7 +244,7 @@ Hovering over the entity displays the following effect.
 - [struct BillboardComponent](billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
 - [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
-  A component which controls how an entity will blend visually with objects in the user’s local environment
+  A component that controls how an entity blends visually with objects in the local environment.
 - [struct LensDistortionData](lensdistortiondata.md)
   A description of estimated lens distortion that can be used to rectify images.
 - [struct ImagePresentationComponent](imagepresentationcomponent.md)

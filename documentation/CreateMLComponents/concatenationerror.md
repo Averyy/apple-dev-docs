@@ -27,16 +27,11 @@ enum ConcatenationError
   Shaped arrays across columns have mismatched shapes and can’t be concatenated.
 - [ConcatenationError.nonUniformShapes(columnName:)](concatenationerror/nonuniformshapes(columnname:).md)
   A column contains arrays or shaped arrays with non-uniform shapes.
-- [var errorDescription: String?](concatenationerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (ConcatenationError, ConcatenationError) -> Bool](concatenationerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](concatenationerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](concatenationerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](concatenationerror/equatable-implementations.md)
-- [Error Implementations](concatenationerror/error-implementations.md)
-- [LocalizedError Implementations](concatenationerror/localizederror-implementations.md)
 
 ## Relationships
 

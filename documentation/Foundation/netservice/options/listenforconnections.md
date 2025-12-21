@@ -29,8 +29,6 @@ Whenever a client connects to the listening socket, the service calls its delega
 
 - [static var noAutoRename: NetService.Options](netservice/options/noautorename.md)
   Specifies that the network service should not rename itself in the event of a name collision.
-- [static var noAutoRename: NetService.Options](netservice/options/noautorename.md)
-  Specifies that the network service should not rename itself in the event of a name collision.
 
 
 ---

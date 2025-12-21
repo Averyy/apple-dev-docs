@@ -49,8 +49,8 @@ func update<InputSequence, FeatureSequence>(_ transformer: inout PreprocessingUp
   The intermediate type.
 - [PreprocessingUpdatableSupervisedTemporalEstimator.Output](preprocessingupdatablesupervisedtemporalestimator/output.md)
   The output type.
-- [PreprocessingUpdatableSupervisedTemporalEstimator.Transformer](preprocessingupdatablesupervisedtemporalestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

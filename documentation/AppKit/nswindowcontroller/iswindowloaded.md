@@ -17,7 +17,7 @@ var isWindowLoaded: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the nib file containing the receiver’s window has been loaded, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the nib file containing the receiver’s window has been loaded, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

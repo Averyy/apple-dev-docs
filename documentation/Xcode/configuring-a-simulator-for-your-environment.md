@@ -2,22 +2,22 @@
 
 **Framework**: Xcode
 
-Adjust Simulator settings for window or screen size, light or dark appearance, and audio settings, and restart or reset a simulated device.
+Adjust Simulator settings for window or screen size, the light or dark appearance, and audio settings, and restart or reset a simulated device.
 
 #### Overview
 
 When you’re testing your app, taking screenshots, or inspecting your user interface, you may want to configure Simulator to help accomplish your task. There are several options you can adjust:
 
-- Light mode or dark mode
+- The light or dark appearance
 - Window or screen size
 - Bezel display
 - Audio settings
 
 When you need to test your app after a device restart, or you want to simulate loading your app in a new device, you can restart or reset a simulated device.
 
-##### Toggle Light and Dark Appearance
+##### Toggle Between the Light and Dark Appearances
 
-Test your app in both light and dark mode on supported platforms to confirm that your user interface looks correct for both appearances. To switch appearances, choose Features > Toggle Appearance.
+Test your app in both the light and dark appearances on supported platforms to confirm that your user interface looks correct for both appearances. To switch appearances, choose Features > Toggle Appearance.
 
 ##### Resize a Simulator Window
 

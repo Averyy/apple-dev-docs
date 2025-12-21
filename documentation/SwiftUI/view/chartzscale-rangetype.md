@@ -3,12 +3,14 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
+Configures the z scale for 3D charts.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,6 +18,11 @@
 nonisolated
 func chartZScale<Range>(range: Range, type: ScaleType? = nil) -> some View where Range : PositionScaleRange
 ```
+
+## Parameters
+
+- `range`: The range of z positions that correspond to the scale   domain. By default the range is determined by the dimension of the plot   area.
+- `type`: The scale type.
 
 
 ---

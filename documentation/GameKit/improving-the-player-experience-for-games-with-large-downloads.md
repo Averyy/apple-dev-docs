@@ -123,7 +123,7 @@ If an essential download fails, the system skips it, and installation of your ap
 ## See Also
 
 - [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
-  Enable Game Center in your Xcode project and configure features in App Store Connect.
+  Enable Game Center, configure features, and test them locally in your Xcode project.
 - [Authenticating a player](authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.
 - [Game Center Entitlement](../BundleResources/Entitlements/com.apple.developer.game-center.md)

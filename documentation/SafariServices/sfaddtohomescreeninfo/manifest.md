@@ -17,7 +17,7 @@ var manifest: BEWebAppManifest { get }
 
 #### Discussion
 
-This is only available to apps that can use BrowserEngineKit.
+A property for the web app manifest. This is only available to apps that can use BrowserEngineKit.
 
 The web app manifest for the bookmark.
 

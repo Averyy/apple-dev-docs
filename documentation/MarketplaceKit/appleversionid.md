@@ -24,7 +24,7 @@ typealias AppleVersionID = UInt64
 ## See Also
 
 - [class AppLibrary](applibrary.md)
-  An object that manages search characteristics, licensing, and the installation of apps.
+  A class that represents a catalog of all installed apps, and offers various services for the apps that your marketplace distributes.
 - [struct AppVersion](appversion.md)
   Information that describes an app, including its identifier and version number.
 - [struct AutomaticUpdate](automaticupdate.md)

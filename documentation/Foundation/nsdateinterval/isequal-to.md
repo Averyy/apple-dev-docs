@@ -22,7 +22,7 @@ func isEqual(to dateInterval: DateInterval) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the [`startDate`](nsdateinterval/startdate.md) and [`duration`](nsdateinterval/duration.md) of `dateInterval` and the receiver are equal. Otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the [`startDate`](nsdateinterval/startdate.md) and [`duration`](nsdateinterval/duration.md) of `dateInterval` and the receiver are equal. Otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

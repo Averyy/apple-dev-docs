@@ -28,7 +28,7 @@ An array of `NSString` objects indicating possible completions.
 
 ## See Also
 
-- [func completions(forPartialWordRange range: NSRange, in string: String, language: String?, inSpellDocumentWithTag tag: Int) -> [String]?](../AppKit/NSSpellChecker/completions(forPartialWordRange:in:language:inSpellDocumentWithTag:).md)
+- [func completions(forPartialWordRange: NSRange, in: String, language: String?, inSpellDocumentWithTag: Int) -> [String]?](../AppKit/NSSpellChecker/completions(forPartialWordRange:in:language:inSpellDocumentWithTag:).md)
   Provides a list of complete words that the user might be trying to type based on a partial word in a given string.
 - [func spellServer(NSSpellServer, didForgetWord: String, inLanguage: String)](nsspellserverdelegate/spellserver(_:didforgetword:inlanguage:).md)
   Notifies the delegate that the sender has removed the specified word from the user’s list of acceptable words in the specified language.

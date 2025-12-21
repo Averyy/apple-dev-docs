@@ -5,11 +5,6 @@
 
 Returns a string representing the filename of the representation on disk.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift

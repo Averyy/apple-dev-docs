@@ -10,7 +10,7 @@ App Store Connect API version 1.3 provides resources that enable you to automate
 
 ##### New Features
 
-- The [`App Infos`](app-infos.md) resource adds an [`Age Rating Declarations`](age-rating-declarations.md) relationship.
+- The [`App Infos`](app-infos.md) resource adds an [`Age Ratings`](age-ratings.md) relationship.
 - The [`AgeRatingDeclaration.Attributes`](ageratingdeclaration/attributes-data.dictionary.md) now separates the `gamblingAndContests` entry into two entries: `contests` and `gambling.`
 
 ##### Deprecations
@@ -21,6 +21,10 @@ App Store Connect API version 1.3 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
@@ -46,10 +50,6 @@ App Store Connect API version 1.3 provides resources that enable you to automate
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.1 release notes](app-store-connect-api-2-1-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

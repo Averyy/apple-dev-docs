@@ -21,21 +21,21 @@ struct MTLPipelineOption
 
 ## Mentions
 
-- [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## Topics
 
-### Retrieving Argument Information
+### Retrieving argument information
 - [static var bufferTypeInfo: MTLPipelineOption](mtlpipelineoption/buffertypeinfo.md)
   An option instance that provides detailed buffer type information for buffer arguments.
 - [static var failOnBinaryArchiveMiss: MTLPipelineOption](mtlpipelineoption/failonbinaryarchivemiss.md)
-  An option that specifies that Metal only creates the pipeline state object if the compiled shader is present inside a linked binary archive.
+  An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 - [static var argumentInfo: MTLPipelineOption](mtlpipelineoption/argumentinfo.md)
   An option instance that provides argument information for textures and threadgroup memory.
-### Creating Compilation Options
+### Creating compilation options
 - [init(rawValue: UInt)](mtlpipelineoption/init(rawvalue:).md)
   Creates empty compilation options.
-### Type Properties
+### Type properties
 - [static var bindingInfo: MTLPipelineOption](mtlpipelineoption/bindinginfo.md)
   An option that provides binding information for pipeline state resources.
 
@@ -62,7 +62,7 @@ struct MTLPipelineOption
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 

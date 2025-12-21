@@ -22,24 +22,8 @@ protocol UpdatableSupervisedTemporalEstimator<Transformer, Annotation> : Supervi
 ## Topics
 
 ### Appending
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-1sjwg.md)
+- [func appending(_:)](updatablesupervisedtemporalestimator/appending(_:).md)
   Composes this updatable supervised temporal estimator with another updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-30xpc.md)
-  Composes this updatable supervised temporal estimator with an updatable temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other>>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-3k3xn.md)
-  Composes this updatable supervised temporal estimator with a transformer.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-4xdv5.md)
-  Composes this updatable supervised temporal estimator with an updatable estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, TransformerToTemporalAdaptor<Other.Transformer>>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-7orql.md)
-  Composes this updatable supervised temporal estimator with an updatable supervised estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<Self.Transformer, Other>, Self.Annotation>
-](updatablesupervisedtemporalestimator/appending(_:)-8wg63.md)
-  Composes this updatable supervised temporal estimator with a transformer.
 ### Encoding and decoding
 - [func encodeWithOptimizer(Self.Transformer, to: inout any EstimatorEncoder) throws](updatablesupervisedtemporalestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.

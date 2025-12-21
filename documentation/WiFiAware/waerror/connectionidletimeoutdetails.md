@@ -6,23 +6,14 @@
 The optional details describing the missing resources.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ConnectionIdleTimeoutDetails
 ```
-
-## Topics
-
-### Initializers - generated
-- [init(from: any Decoder) throws](waerror/connectionidletimeoutdetails/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waerror/connectionidletimeoutdetails/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 
@@ -36,6 +27,14 @@ struct ConnectionIdleTimeoutDetails
 
 - [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
   An error that occurs due to an idle or unused connection.
+- [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
+  An error that occurs due to publisher timeout.
+- [case subscriberTimeout(WAError.SubscriberTimeoutDetails)](waerror/subscribertimeout(_:).md)
+  An error that occurs due to subscriber timeout.
+- [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
+  The optional details describing the timed out publisher.
+- [WAError.SubscriberTimeoutDetails](waerror/subscribertimeoutdetails.md)
+  The optional details describing the timed out subscriber.
 
 
 ---

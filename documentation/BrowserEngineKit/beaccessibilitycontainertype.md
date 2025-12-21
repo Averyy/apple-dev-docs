@@ -51,10 +51,6 @@ Set a value from this enumeration for an element’s [`browserAccessibilityConta
   A description list contains the element.
 ### Initializers
 - [init(rawValue: UInt)](beaccessibilitycontainertype/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](beaccessibilitycontainertype/equatable-implementations.md)
-- [OptionSet Implementations](beaccessibilitycontainertype/optionset-implementations.md)
-- [SetAlgebra Implementations](beaccessibilitycontainertype/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -7,7 +7,7 @@
 Creates the custom object that you use to communicate state changes from your gesture recognizer to other parts of your SwiftUI interface.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

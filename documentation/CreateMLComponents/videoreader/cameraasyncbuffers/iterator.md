@@ -23,10 +23,6 @@ final class Iterator
 ### Getting the next element
 - [func next() async throws -> TemporalFeature<CIImage>?](videoreader/cameraasyncbuffers/iterator/next.md)
   Advances to the next element and returns it, or nil if no next element exists.
-### Type Aliases
-- [VideoReader.CameraAsyncBuffers.Iterator.Element](videoreader/cameraasyncbuffers/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](videoreader/cameraasyncbuffers/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
@@ -37,10 +33,6 @@ final class Iterator
 
 - [func makeAsyncIterator() -> VideoReader.CameraAsyncBuffers.Iterator](videoreader/cameraasyncbuffers/makeasynciterator.md)
   Constructs an iterator.
-- [VideoReader.CameraAsyncBuffers.AsyncIterator](videoreader/cameraasyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [VideoReader.CameraAsyncBuffers.Feature](videoreader/cameraasyncbuffers/feature.md)
-  The feature type.
 
 
 ---

@@ -36,7 +36,7 @@ The default heading level if you don’t use this modifier is [`AccessibilityHea
 - [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitytextcontenttype(_:).md)
   Sets an accessibility text content type.
 - [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
-  The hierarchy of a heading in relation other headings.
+  The hierarchy of a heading in relation to other headings.
 - [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 

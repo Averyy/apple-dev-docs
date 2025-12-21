@@ -20,6 +20,11 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: The hasher to use when combining the components.
 
+## See Also
+
+- [static func == (AppImpression, AppImpression) -> Bool](appimpression/==(_:_:).md)
+  Returns a Boolean value that indicates whether two values are equal.
+
 
 ---
 

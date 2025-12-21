@@ -21,17 +21,17 @@ class MTLBlitPassSampleBufferAttachmentDescriptor
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 
-See [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring instances of this type. That article is one of a series of articles in [`GPU Counters and Counter Sample Buffers`](gpu-counters-and-counter-sample-buffers.md).
+See [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring instances of this type. That article is one of a series of articles in [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-buffers.md).
 
 ## Topics
 
-### Configuring the Sample Buffer Attachment
+### Configuring the sample buffer attachment
 - [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlblitpasssamplebufferattachmentdescriptor/samplebuffer.md)
-  A specialized memory buffer that the GPU uses to store its counter data during the blit pass.
+  A specialized memory buffer that the GPU uses to store its counter data during the blit pass.
 - [var startOfEncoderSampleIndex: Int](mtlblitpasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a blit pass.
 - [var endOfEncoderSampleIndex: Int](mtlblitpasssamplebufferattachmentdescriptor/endofencodersampleindex.md)

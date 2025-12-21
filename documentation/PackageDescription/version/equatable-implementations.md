@@ -5,8 +5,6 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](version/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Version, Version) -> Bool](version/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 

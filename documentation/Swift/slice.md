@@ -129,7 +129,7 @@ Use slices only for transient computation. A slice may hold a reference to the e
 - [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: Slice<UnsafeMutableBufferPointer<T>>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-1uz4a.md)
   Moves every element from an initialized source buffer slice into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
 - [func moveUpdate<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-5i98g.md)
-  Updates this buffer slice’s initialized memory initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
+  Updates this buffer slice’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 - [func moveUpdate<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-ou4d.md)
   Updates this buffer slice’s initialized memory initialized memory by moving every element from the source buffer slice, leaving the source memory uninitialized.
 - [func remove(at: Slice<Base>.Index) -> Base.Element](slice/remove(at:)-pbti.md)

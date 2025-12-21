@@ -16,7 +16,7 @@ var isUserRegistered: Bool { get }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the user completes registration.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the user completes registration.
 
 ## See Also
 

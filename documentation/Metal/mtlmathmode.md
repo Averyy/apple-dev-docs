@@ -43,6 +43,8 @@ enum MTLMathMode
 
 ## See Also
 
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 - [enum MTLLogStateError](mtllogstateerror.md)

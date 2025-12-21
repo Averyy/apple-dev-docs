@@ -3,10 +3,10 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Sends a VenueDescriptor to all connected receivers.
+Sends a venue descriptor to all connected receivers.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,11 +16,9 @@ func send(venueDescriptor: VenueDescriptor) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails while sending the venue descriptor.
+- venueDescriptor: The `venueDescriptor` to send to all clients.
 
-## Parameters
-
-- `venueDescriptor`: The venueDescriptor to be sent to all clients.
+> **Note**: This function throws if anything fails while sending the venue descriptor.
 
 
 ---

@@ -11,25 +11,14 @@ An object that contains options to adjust a search.
 ## Declaration
 
 ```swift
-dictionary SearchOptions {
-	string language;
-	mapkit.Coordinate coordinate;
-	mapkit.CoordinateRegion region;
-	string regionPriority;
-	boolean includeAddresses;
-	boolean includePointsOfInterest;
-	boolean includePhysicalFeatures;
-	mapkit.AddressFilter addressFilter;
-	mapkit.PointOfInterestFilter pointOfInterestFilter;
-	string limitToCountries;
-};
+interface SearchOptions
 ```
 
 ## Topics
 
 ### Search options
 - [addressFilter](searchoptions/addressfilter.md)
-  An object that filters which address components to include or exclude in search results.
+  An address filter that lists which address components to include or exclude in search results.
 - [coordinate](searchoptions/coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
 - [includeAddresses](searchoptions/includeaddresses.md)
@@ -47,15 +36,20 @@ dictionary SearchOptions {
 - [region](searchoptions/region.md)
   A map region that provides a hint for the geographic area to search.
 - [regionPriority](searchoptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+  A region priority value that controls whether results occur outside, or strictly within, the region.
+
+## Relationships
+
+### Inherited By
+- [SearchAutocompleteOptions](searchautocompleteoptions.md)
 
 ## See Also
 
-- [search](mapkit.search/search.md)
+- [search(query, callback, options)](search/search.md)
   Retrieves the results of a search query.
-- [SearchDelegate](searchdelegate.md)
+- [type SearchDelegate](searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.
-- [SearchResponse](searchresponse.md)
+- [interface SearchResponse](searchresponse.md)
   The result of a search, including the original search query, the bounding region, and a list of places that match the query.
 
 

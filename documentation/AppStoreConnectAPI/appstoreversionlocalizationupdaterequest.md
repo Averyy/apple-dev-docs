@@ -30,6 +30,8 @@ object AppStoreVersionLocalizationUpdateRequest
   A response that contains a single App Store Version Localizations resource.
 - [object AppStoreVersionLocalizationsResponse](appstoreversionlocalizationsresponse.md)
   A response that contains a list of App Store Version Localization resources.
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
 
 
 ---

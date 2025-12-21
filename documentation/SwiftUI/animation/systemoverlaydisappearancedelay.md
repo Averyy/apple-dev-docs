@@ -6,7 +6,7 @@
 The length of time system overlays remain visible before disappearing.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

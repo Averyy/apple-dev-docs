@@ -25,9 +25,9 @@ var isActive: Bool { get set }
 
 #### Discussion
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), the voice chat object transmits the voice data from the microphone to other players in the channel. If another voice chat object is using the microphone, GameKit switches the microphone to this channel and sets that voice chat object’s [`isActive`](gkvoicechat/isactive.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), the voice chat object transmits the voice data from the microphone to other players in the channel. If another voice chat object is using the microphone, GameKit switches the microphone to this channel and sets that voice chat object’s [`isActive`](gkvoicechat/isactive.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

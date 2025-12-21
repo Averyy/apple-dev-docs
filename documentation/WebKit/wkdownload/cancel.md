@@ -19,12 +19,6 @@ Cancels the download, and optionally captures data so that you can resume the do
 func cancel() async -> Data?
 ```
 
-#### Discussion
-
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func cancel() async -> Data?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 ## Parameters
 
 - `completionHandler`: A closure you provide to capture and store data so that you can resume the download later.

@@ -22,7 +22,7 @@ var isGeocoding: Bool { get }
 
 #### Discussion
 
-This property contains the value [`true`](https://developer.apple.com/documentation/swift/true) if the process is ongoing or [`false`](https://developer.apple.com/documentation/swift/false) if the process is done or has not yet been initiated.
+This property contains the value [`true`](https://developer.apple.com/documentation/Swift/true) if the process is ongoing or [`false`](https://developer.apple.com/documentation/Swift/false) if the process is done or has not yet been initiated.
 
 ## See Also
 

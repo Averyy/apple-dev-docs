@@ -14,6 +14,12 @@ Edit the associated leaderboard sets for a Game Center detail.
   Create a Game Center detail for an app.
 - [Modify a Game Center detail for an app](patch-v1-gamecenterdetails-_id_.md)
   Edit challenge state, default leaderboards, and groups.
+- [Modify the achievements for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
+  Update the achievements relationship for a specific Game Center detail.
+- [Modify the leaderboard sets for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsetsv2.md)
+  Update the leaderboard sets relationship for a specific Game Center detail.
+- [Modify the leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsv2.md)
+  Update the leaderboards relationship for a specific Game Center detail.
 - [Modify the associated leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   Edit the associated leaderboards for a Game Center detail.
 - [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)

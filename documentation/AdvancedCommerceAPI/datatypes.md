@@ -30,6 +30,8 @@ Objects and data types for the Advanced Commerce API.
   The three-letter ISO 4217 currency code for the price of a product.
 - [type description](description.md)
   A string you provide that describes a SKU.
+- [type dependentSKU](dependentsku.md)
+  The product identifier of a dependent SKU in a subscription price change.
 - [type displayName](displayname.md)
   A string with a product name that you can localize and is suitable for display to customers.
 - [type effective](effective.md)

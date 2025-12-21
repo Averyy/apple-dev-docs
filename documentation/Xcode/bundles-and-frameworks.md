@@ -9,8 +9,12 @@ Organize code and resources in bundles and frameworks.
 ### Bundles
 - [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+  Customize the information property list values for your app using Xcode.
 - [Embedding nonstandard code structures in a bundle](embedding-nonstandard-code-structures-in-a-bundle.md)
   Use code that’s structured in a nonstandard way while avoiding code signing and distribution problems.
+- [Editing property list files](editing-property-list-files.md)
+  Add, remove, and change keys and values in a structured file.
 ### Frameworks
 - [Creating a static framework](creating-a-static-framework.md)
   Configure your project to build a new static framework.
@@ -21,8 +25,8 @@ Organize code and resources in bundles and frameworks.
 
 ## See Also
 
-- [Source Editor](source-editor.md)
-  Edit your source files, locate issues, and make necessary changes using the Source Editor.
+- [Source editor](source-editor.md)
+  Edit your source files, locate issues, and make necessary changes using the source editor.
 - [Swift packages](swift-packages.md)
   Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.
 

@@ -21,11 +21,11 @@ func canAddSecureElementPass(primaryAccountIdentifier: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if PassKit can add a secure element pass for the specified account; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if PassKit can add a secure element pass for the specified account; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Adding a Secure Element pass requires a special entitlement that Apple provides. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+Adding a Secure Element pass requires a special entitlement that Apple provides. If the entitlement isn’t present, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

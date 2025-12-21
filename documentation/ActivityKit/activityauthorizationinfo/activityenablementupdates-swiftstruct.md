@@ -24,11 +24,6 @@ struct ActivityEnablementUpdates
   An iterator for accessing individual data entries from the series.
 - [ActivityAuthorizationInfo.ActivityEnablementUpdates.Element](activityauthorizationinfo/activityenablementupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
-### Type Aliases
-- [ActivityAuthorizationInfo.ActivityEnablementUpdates.AsyncIterator](activityauthorizationinfo/activityenablementupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](activityauthorizationinfo/activityenablementupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

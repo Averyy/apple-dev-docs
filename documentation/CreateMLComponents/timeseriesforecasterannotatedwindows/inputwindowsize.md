@@ -20,6 +20,19 @@ The input sample count.
 let inputWindowSize: Int
 ```
 
+## See Also
+
+- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/annotations.md)
+  The original annotations.
+- [let features: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/features.md)
+  The original features.
+- [let forecastWindowSize: Int](timeseriesforecasterannotatedwindows/forecastwindowsize.md)
+  The prediction sample count.
+- [var shufflesElements: Bool](timeseriesforecasterannotatedwindows/shuffleselements.md)
+  A Boolean value indicating whether to shuffle the elements.
+- [var stride: Int](timeseriesforecasterannotatedwindows/stride.md)
+  The number of samples between windows.
+
 
 ---
 

@@ -22,7 +22,7 @@ var shouldUseExtendedBackgroundIdleMode: Bool { get set }
 
 #### Discussion
 
-In addition to requesting that the connection be kept open, setting this value to [`true`](https://developer.apple.com/documentation/swift/true) asks the system to delay reclaiming the connection when the app moves to the background.
+In addition to requesting that the connection be kept open, setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) asks the system to delay reclaiming the connection when the app moves to the background.
 
 ## See Also
 

@@ -21,7 +21,7 @@ func remove(_ element: ElementType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object was removed from the tree. [`false`](https://developer.apple.com/documentation/swift/false) if the specified object is not in the tree.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the object was removed from the tree. [`false`](https://developer.apple.com/documentation/Swift/false) if the specified object is not in the tree.
 
 #### Discussion
 

@@ -24,10 +24,7 @@ A `sec_identity_t` instance.
 
 #### Discussion
 
-```None
- Create an ARC-able `sec_identity_t` instance from a `SecIdentityRef` and
- array of SecCertificateRef instances.
-```
+Create an ARC-able `sec_identity_t` instance from a `SecIdentityRef` and array of SecCertificateRef instances.
 
 ## Parameters
 

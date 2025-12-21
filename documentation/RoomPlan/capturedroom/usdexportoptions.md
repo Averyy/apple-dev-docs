@@ -44,19 +44,8 @@ The following table lists the features that each export option supports in the o
 ### Creating an export option
 - [init(rawValue: Int32)](capturedroom/usdexportoptions/init(rawvalue:).md)
   Creates an export option with the specified raw value.
-- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue-swift.property.md)
+- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue.md)
   A raw value for the export option.
-### Type Aliases
-- [CapturedRoom.USDExportOptions.ArrayLiteralElement](capturedroom/usdexportoptions/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [CapturedRoom.USDExportOptions.Element](capturedroom/usdexportoptions/element.md)
-  The element type of the option set.
-- [CapturedRoom.USDExportOptions.RawValue](capturedroom/usdexportoptions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](capturedroom/usdexportoptions/equatable-implementations.md)
-- [OptionSet Implementations](capturedroom/usdexportoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](capturedroom/usdexportoptions/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ var index: Int { get }
 
 #### Discussion
 
-A command encoder ([`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) or [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md)) specifies the index in the corresponding argument table. For example, an app can call the [`setTexture(_:index:)`](mtlcomputecommandencoder/settexture(_:index:).md) method of [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to specify an index in the texture argument table for a [`MTLTexture`](mtltexture.md) object that is used as an argument of a compute function.
+A command encoder ([`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) or [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md)) specifies the index in the corresponding argument table. For example, an app can call the [`setTexture(_:index:)`](mtlcomputecommandencoder/settexture(_:index:).md) method of [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to specify an index in the texture argument table for an [`MTLTexture`](mtltexture.md) instance that is used as an argument of a compute function.
 
 ## See Also
 

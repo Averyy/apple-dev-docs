@@ -1,4 +1,4 @@
-# watchOS 26 Beta 2 Release Notes
+# watchOS 26 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26 beta 2. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26. The SDK comes bundled with Xcode 26, available from the Mac App Store. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
 
-##### Apple Watch Herm%c3%a8s
+##### General
 
-###### Known Issues
+###### Resolved Issues
 
-- Apple Watch Hermès crashes continuously if updated to watchOS 26 beta 2. It is advised that these users do not update to beta 2. (152604139)
+- After updating to watchOS 26, your Apple Watch Series 7 or Apple Watch SE 2 will recalibrate and then estimate its maximum battery capacity more accurately.  (144885837)
 
 ##### App Store
 
@@ -26,6 +26,12 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - Fixed: Model quality output degrades after extended, repeated inferences of the same adapter.  (152468267)
 
+##### Apple Watch Herm%c3%a8s
+
+###### Resolved Issues
+
+- Fixed: Apple Watch Hermès crashes continuously if updated to watchOS 26 beta 2. It is advised that these users do not update to beta 2.  (152604139)
+
 ##### Assistantschemas
 
 ###### Resolved Issues
@@ -38,11 +44,24 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
 
+##### Contacts
+
+###### Resolved Issues
+
+- Fixed: Resolved an issue where some contacts with outsized images might fail to sync to Apple Watch until Reset Sync Data is performed. After updating to watchOS 26 beta 4, perform a reset sync (Watch app > General > Reset > Reset Sync Data) to enable these contacts to sync again.  (155535527)
+
 ##### Control Center
 
-###### Known Issues
+###### Resolved Issues
 
-- User cannot exit the Cellular Data Options pane by tapping the back arrow.  (152248850)  Press the Digital Crown or side button to exit.
+- Fixed: User cannot exit the Cellular Data Options pane by tapping the back arrow.  (152248850)
+- Fixed: Button symbols sometimes disappear upon reboot.  (157942636)
+
+##### Coredata
+
+###### Resolved Issues
+
+- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines. `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
 
 ##### Foundation
 
@@ -60,6 +79,24 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Resolved Issues
 
 - Fixed: An app that was granted Read-only authorization for certain data types (e.g. workout routes) might lose its ability to read the data type without the user explicitly turning it off in Settings > Health.  (149024236)
+
+##### Maps
+
+###### Known Issues
+
+- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663)  Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
+
+##### Memory Tools
+
+###### Known Issues
+
+- Leaks might be falsely reported by memory analysis tools when a target has instances of types that use Obj-C properties implemented in Swift using bridged types with `@objc @implementation`. Memory analysis tools include the `leaks` CLI tool, Leaks instrument, and Xcode memory graph debugger.  (157798911)
+
+##### Notes
+
+###### Resolved Issues
+
+- Fixed: When creating a note on watchOS with Siri, you might get an error from Siri saying something went wrong. However, the note will still get created.  (155658052)
 
 ##### Nslog
 
@@ -97,10 +134,15 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Subscription status updates might not be reported correctly if the subscription went into billing retry in StoreKit Testing in Xcode.  (133799135) (FB14789854)
 - Fixed: Price of offers is not displayed in the payment sheet when making a purchase to a subscription with a higher level of service in StoreKit Testing in Xcode.  (140635780) (FB15980635)
 - Fixed: Renewal transactions might be created regardless of the Ask to Buy status of the purchase request in StoreKit Testing in Xcode.  (145242611)
+- Fixed: `SKProduct` from the original StoreKit API fails to decode products when using StoreKit Testing in Xcode.  (150851879)
+- Fixed an issue causing the buy button label in StoreKit views on watchOS to appear identical if the component is enabled or disabled when the app’s [`accentColor`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/color/accentcolor) is missing.  (153218311)
+- Fixed: Transactions might not finish, resulting in subsequent purchases of the same product failing.  (155449267)
 
-###### Known Issues
+##### Swift Charts
 
-- If an [`accentColor`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/color/accentcolor) is not set, there is an issue on watchOS causing the buy button label in StoreKit views to appear the same, whether the component is enabled or disabled.  (153218311)  Set an `accentColor` in your app Asset catalog or via the SwiftUI API [`.tint()`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/tint(_:)-93mfq).
+###### Resolved Issues
+
+- Fixed: Annotations on a scrollable chart might be clipped.  (109164195)
 
 ##### Swiftui
 
@@ -177,6 +219,7 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
      .presentationCompactAdaptation(.fullScreen)
 ``` (150455117)
 - Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
+- Fixed: On visionOS, tvOS, and watchOS, sheets presented within toolbar items might fail to present if the toolbar item’s label view is a `Label`.  (157326248)
 
 ###### Known Issues
 
@@ -191,7 +234,11 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### New Features
 
-- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed in releases prior to OS 26. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in OS 26: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
+- iOS 26, tvOS 26, visionOS 26, watchOS 26, and macOS Tahoe 26 have two methods for resolving the natural alignment `NSTextAlignment.natural` and the last line of `NSTextAlignment.justified` into concrete alignments, `left` and `right`. The first approach utilizes the UI language, which is determined by passing nil-language to `NSParagraphStyle.defaultWritingDirection(forLanguage: )`. This behavior was employed prior to this release. The second method is new and dynamically utilizes the base writing direction for the paragraph. When the base writing direction is set to `NSWritingDirection.rightToLeft`, the text is aligned to `right`, and vice versa. The behavior is selected by API introduced in this major release: `NSTextLayoutManager.resolvesNaturalAlignmentWithBaseWritingDirection`, `NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection`, `UITraitCollection.resolvesNaturalAlignmentWithBaseWritingDirection`, and `NSTextField.resolvesNaturalAlignmentWithBaseWritingDirection`.  (152045248)
+
+###### Resolved Issues
+
+- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine. With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
 
 ##### Translation
 
@@ -199,12 +246,30 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - Downloading languages for translation might display incomplete indicators on the download screen resulting in translation features being unavailable.  (148923222)  Reboot the device.
 
+##### Workout
+
+###### Known Issues
+
+- Users might be unable to end a workout that has been auto-paused.  (155970593)  Resume the Workout, then tap End.
+
 ##### Workout Buddy
+
+###### Resolved Issues
+
+- Fixed: Workout Buddy might appear as unavailable in the watchOS Workout app after installing beta 1.  (152691503)
 
 ###### Known Issues
 
 - Workout Buddy announcements play only on AirPods with H1 or later when connected to Apple Watch or iPhone, and on third-party bluetooth headphones when connected to iPhone.  (152316444)
-- Workout Buddy might appear as unavailable in the watchOS Workout app after installing beta 1.  (152691503)  Toggle Apple Intelligence off and on again on your paired iPhone to re-sync the state to Apple Watch and show Workout Buddy as available.
+
+## See Also
+
+- [watchOS 26.3 Beta Release Notes](watchos-26_3-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [watchOS 26.2 Release Notes](watchos-26_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [watchOS 26.1 Release Notes](watchos-26_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

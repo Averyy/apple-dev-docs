@@ -109,7 +109,7 @@ This line of code calculates the preview alpha. When Apple Pencil is closer to t
 
 By default, hover gestures work with pointing devices such as trackpads as well as Apple Pencil. For example, running the sample code project on an iPad with a connected trackpad renders a hover preview when the pointer passes over the drawing canvas. However, this sample provides a different hover experience for Apple Pencil than for a trackpad, so the default behavior might be unsuitable for trackpad input.
 
-To restrict the hover preview to Apple Pencil input only and disable it for trackpad, uncomment the following line of code and run the app again:
+To restrict the hover preview to Apple Pencil input only and disable it for a trackpad, uncomment the following line of code and run the app again:
 
 ```swift
 // hoverGesture.allowedTouchTypes = [ UITouch.TouchType.pencil.rawValue as NSNumber ]

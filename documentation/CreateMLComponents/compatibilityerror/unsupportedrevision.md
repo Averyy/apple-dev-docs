@@ -20,11 +20,6 @@ An error that indicates that the revision is not supported.
 case unsupportedRevision(Int)
 ```
 
-## See Also
-
-- [var errorDescription: String?](compatibilityerror/errordescription.md)
-  A localized message describing what error occurred.
-
 
 ---
 

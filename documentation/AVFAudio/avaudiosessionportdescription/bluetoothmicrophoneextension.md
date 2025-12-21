@@ -6,12 +6,12 @@
 An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,13 @@ var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone
 #### Discussion
 
 This property is optional and will be `nil` for all ports for which this capability set doesn’t apply.
+
+## See Also
+
+- [class AVAudioSessionPortExtensionBluetoothMicrophone](avaudiosessionportextensionbluetoothmicrophone.md)
+  An object that describes capabilities of Bluetooth microphone ports.
+- [class AVAudioSessionCapability](avaudiosessioncapability.md)
+  Describes whether a specific capability is supported and if that capability is currently enabled
 
 
 ---

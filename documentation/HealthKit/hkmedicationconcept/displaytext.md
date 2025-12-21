@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The display name for this medication.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,7 +21,7 @@ var displayText: String { get }
 
 #### Discussion
 
-The name of the medication entered or selected during medication onboarding.
+The name of the medication a person enters or selects during medication onboarding.
 
 
 ---

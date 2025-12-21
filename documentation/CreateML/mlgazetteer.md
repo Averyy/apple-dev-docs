@@ -52,6 +52,8 @@ A gazetteer file can efficiently store many labels, and many terms for each labe
 ### Testing a gazetteer
 - [func prediction(from: String) throws -> String](mlgazetteer/prediction(from:).md)
   Predicts the label for the given term.
+- [func predictions(from:)](mlgazetteer/predictions(from:).md)
+  Predicts the labels for the given terms.
 - [func predictions(from: [String]) throws -> [String]](mlgazetteer/predictions(from:)-2rej.md)
   Predicts the labels for the given terms.
 - [func predictions(from: MLDataColumn<String>) throws -> MLDataColumn<String>](mlgazetteer/predictions(from:)-2jaui.md)
@@ -87,7 +89,7 @@ A gazetteer file can efficiently store many labels, and many terms for each labe
 
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 - [struct MLTextClassifier](mltextclassifier.md)
   A model you train to classify natural language text.

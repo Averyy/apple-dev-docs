@@ -34,12 +34,6 @@ However, most apps won’t face this scenario, and if you cannot provide a crede
   Use the default handling for the challenge as though this delegate method were not implemented. The provided credential parameter is ignored.
 - [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
   Cancel the entire request. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.useCredential](urlsession/authchallengedisposition/usecredential.md)
-  Use the specified credential, which may be `nil`.
-- [URLSession.AuthChallengeDisposition.performDefaultHandling](urlsession/authchallengedisposition/performdefaulthandling.md)
-  Use the default handling for the challenge as though this delegate method were not implemented. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
-  Cancel the entire request. The provided credential parameter is ignored.
 
 
 ---

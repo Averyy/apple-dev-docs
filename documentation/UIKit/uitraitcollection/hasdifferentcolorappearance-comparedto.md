@@ -20,7 +20,7 @@ func hasDifferentColorAppearance(comparedTo traitCollection: UITraitCollection?)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the colors in the two trait collections differ, or [`false`](https://developer.apple.com/documentation/swift/false) if they have the same component values.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the colors in the two trait collections differ, or [`false`](https://developer.apple.com/documentation/Swift/false) if they have the same component values.
 
 #### Discussion
 

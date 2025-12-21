@@ -22,22 +22,11 @@ struct HourTemperatureStatistics
 
 ## Topics
 
-### Operators
-- [static func == (HourTemperatureStatistics, HourTemperatureStatistics) -> Bool](hourtemperaturestatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](hourtemperaturestatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var hour: Int](hourtemperaturestatistics/hour.md)
   The hour of the year, in UTC.
 - [var percentiles: Percentiles<UnitTemperature>](hourtemperaturestatistics/percentiles.md)
   The temperature statistics for the hour.
-### Instance Methods
-- [func encode(to: any Encoder) throws](hourtemperaturestatistics/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](hourtemperaturestatistics/equatable-implementations.md)
 
 ## Relationships
 

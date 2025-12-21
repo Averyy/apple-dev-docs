@@ -29,7 +29,7 @@ Your implementation of this method is responsible for creating, configuring, and
 
 You do not need to set the location of the supplementary view inside the collection view’s bounds. The collection view sets the location of each view using the layout attributes provided by its layout object.
 
-This method must always return a valid view object. If you do not want a supplementary view in a particular case, your layout object should not create the attributes for that view. Alternatively, you can hide views by setting the [`isHidden`](uicollectionviewlayoutattributes/ishidden.md) property of the corresponding attributes to [`true`](https://developer.apple.com/documentation/swift/true) or set the [`alpha`](uicollectionviewlayoutattributes/alpha.md) property of the attributes to 0. To hide header and footer views in a flow layout, you can also set the width and height of those views to 0.
+This method must always return a valid view object. If you do not want a supplementary view in a particular case, your layout object should not create the attributes for that view. Alternatively, you can hide views by setting the [`isHidden`](uicollectionviewlayoutattributes/ishidden.md) property of the corresponding attributes to [`true`](https://developer.apple.com/documentation/Swift/true) or set the [`alpha`](uicollectionviewlayoutattributes/alpha.md) property of the attributes to 0. To hide header and footer views in a flow layout, you can also set the width and height of those views to 0.
 
 ## Parameters
 

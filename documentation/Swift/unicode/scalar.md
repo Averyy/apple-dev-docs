@@ -124,7 +124,6 @@ print(airplane)
 - [ExpressibleByUnicodeScalarLiteral Implementations](unicode/scalar/expressiblebyunicodescalarliteral-implementations.md)
 - [Hashable Implementations](unicode/scalar/hashable-implementations.md)
 - [LosslessStringConvertible Implementations](unicode/scalar/losslessstringconvertible-implementations.md)
-- [RegexComponent Implementations](unicode/scalar/regexcomponent-implementations.md)
 - [TextOutputStreamable Implementations](unicode/scalar/textoutputstreamable-implementations.md)
 
 ## Relationships

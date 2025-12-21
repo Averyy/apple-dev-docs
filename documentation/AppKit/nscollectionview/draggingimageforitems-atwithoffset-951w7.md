@@ -52,7 +52,7 @@ You can override the default image by subclassing NSCollectionView and overridin
 - [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](nscollectionview/frameforitem(at:withnumberofitems:).md)
   Returns the frame of an item based on the number of items in the collection view.
 - [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nscollectionview/setdraggingsourceoperationmask(_:forlocal:).md)
-  Configures the default value returned from [`draggingSourceOperationMaskForLocal:`](https://developer.apple.com/documentation/objectivec/nsobject/1415984-draggingsourceoperationmaskforlo).
+  Configures the drag operation mask.
 
 
 ---

@@ -18,7 +18,7 @@ func CMAudioDeviceClockCreate(allocator: CFAllocator?, deviceUID: CFString?, clo
 
 When the associated device is completely stopped, the clock continues to advance, tracking [`CMClockGetHostTimeClock()`](cmclockgethosttimeclock().md) until the audio device starts up again.
 
-> ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
+> ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the returned `clockOut`.
 
 ## Parameters
 

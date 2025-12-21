@@ -38,28 +38,7 @@ The `error` argument of a room-capture session delgate’s  [`captureSession(_:d
   An error that indicates when the framework encounters an unexpected error case.
 ### Inspecting error information
 - [var errorDescription: String?](roomcapturesession/captureerror/errordescription.md)
-  A localized message describing what error occurred.
-- [var failureReason: String?](roomcapturesession/captureerror/failurereason.md)
-  A localized message describing the reason for the failure.
-- [var helpAnchor: String?](roomcapturesession/captureerror/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-- [var localizedDescription: String](roomcapturesession/captureerror/localizeddescription.md)
-  Retrieve the localized description for this error.
-- [var recoverySuggestion: String?](roomcapturesession/captureerror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-### Comparing errors
-- [static func == (RoomCaptureSession.CaptureError, RoomCaptureSession.CaptureError) -> Bool](roomcapturesession/captureerror/==(_:_:).md)
-  Determines whether two errors are equal.
-- [static func != (Self, Self) -> Bool](roomcapturesession/captureerror/!=(_:_:).md)
-  Determines whether two errors aren’t equal.
-- [var hashValue: Int](roomcapturesession/captureerror/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](roomcapturesession/captureerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](roomcapturesession/captureerror/equatable-implementations.md)
-- [Error Implementations](roomcapturesession/captureerror/error-implementations.md)
-- [LocalizedError Implementations](roomcapturesession/captureerror/localizederror-implementations.md)
+  A human-readable explanation for the error.
 
 ## Relationships
 

@@ -8,7 +8,7 @@ Install and update your extension in Safari as you make changes in development.
 
 Install your web extension in Safari, then update it as you add features and fix bugs so you can run and test it in Safari.
 
-You can temporarily install your extension folder in macOS Safari for testing without setting up an Xcode project. Use this approach to quickly evaluate your extension in Safari or to complete your initial development work. Then, when you’re ready to test your extension in iOS or distribute your extension, follow the instructions in [`Converting a web extension for Safari`](converting-a-web-extension-for-safari.md) to create an Xcode project.
+You can temporarily install your extension folder in macOS Safari for testing without setting up an Xcode project. Use this approach to quickly evaluate your extension in Safari or to complete your initial development work. Then, when you’re ready to test your extension in iOS or distribute your extension, follow the instructions in [`Packaging a web extension for Safari`](packaging-a-web-extension-for-safari.md) to create an Xcode project.
 
 ##### Temporarily Install a Web Extension Folder in Macos Safari
 
@@ -23,7 +23,7 @@ If your folder contains a valid web extension, Safari switches to the Extensions
 
 Safari removes temporary extensions after 24 hours or when you quit Safari.
 
-> ❗ **Important**: Set up your extension in an Xcode project to test your web extension in iOS, send messages between the extension and your app, or distribute your extension. For more information, see [`Converting a web extension for Safari`](converting-a-web-extension-for-safari.md).
+> ❗ **Important**: Set up your extension in an Xcode project to test your web extension in iOS, send messages between the extension and your app, or distribute your extension. For more information, see [`Packaging a web extension for Safari`](packaging-a-web-extension-for-safari.md).
 
 ##### Install Your Safari Web Extension in Ios
 

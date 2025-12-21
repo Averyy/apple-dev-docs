@@ -18,7 +18,7 @@ case iOS_GPUFamily4_v1
 
 ## Mentions
 
-- [Detecting GPU Features and Metal Software Versions](detecting-gpu-features-and-metal-software-versions.md)
+- [Detecting GPU features and Metal software versions](detecting-gpu-features-and-metal-software-versions.md)
 
 #### Discussion
 

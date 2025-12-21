@@ -10,7 +10,7 @@ The declaration to configure software updates.
 - iPadOS 18.0+
 - macOS 15.0+
 - tvOS 18.4+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -33,6 +33,35 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | NA |
 
+##### Configuration Example
+
+```json
+{
+    "Type": "com.apple.configuration.softwareupdate.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "Notifications": false,
+        "Deferrals": {
+            "MajorPeriodInDays": 30
+        },
+        "RecommendedCadence": "All",
+        "AutomaticActions": {
+            "Download": "AlwaysOn",
+            "InstallOSUpdates": "AlwaysOn",
+            "InstallSecurityUpdate": "AlwaysOn"
+        },
+        "RapidSecurityResponse": {
+            "Enable": false
+        },
+        "AllowStandardUserOSUpdates": false,
+        "Beta": {
+            "ProgramEnrollment": "AlwaysOn"
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
@@ -43,14 +72,14 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
   The object that configures update deferrals.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
-  The object that configures rapid security update settings.
+  The object that configures Background Security Improvement settings.
 
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)
   The declaration to configure a Calendar account.
 - [object AccountCardDAV](accountcarddav.md)
-  The declaration to configure an address book account.
+  The declaration to configure a Contacts account.
 - [object AccountExchange](accountexchange.md)
   The declaration to configure an Exchange account.
 - [object AccountGoogle](accountgoogle.md)
@@ -60,7 +89,7 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 - [object AccountMail](accountmail.md)
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
-  The declaration to configure a Calendar subscription.
+  The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
@@ -68,13 +97,13 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive, legacy profile.
+  The declaration to configure an interactive legacy profile.
 - [object LegacyProfile](legacyprofile.md)
   The declaration to configure a legacy profile.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
-  The declaration to test the MDM system.
+  The declaration to test declarative device management.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
 

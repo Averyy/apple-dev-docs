@@ -21,7 +21,7 @@ class MTLRasterizationRateLayerArray
 
 ## Topics
 
-### Accessing Members of the Array
+### Accessing members of the array
 - [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratelayerarray/subscript(_:).md)
   Retrieves the sample value at the specified index.
 - [class MTLRasterizationRateLayerDescriptor](mtlrasterizationratelayerdescriptor.md)

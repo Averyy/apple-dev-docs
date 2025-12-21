@@ -20,7 +20,7 @@ object AppCategory
 - [object AppCategory.Attributes](appcategory/attributes-data.dictionary.md)
   Attributes that describe an App Categories resource.
 - [object AppCategory.Relationships](appcategory/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

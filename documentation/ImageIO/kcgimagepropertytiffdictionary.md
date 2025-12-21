@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an image that uses Tagged Image File Format (TIFF). See [`TIFF Image Properties`](tiff-image-properties.md).
+A dictionary of key-value pairs for an image that uses Tagged Image File Format (TIFF).
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an image that uses Tagged Image File Format 
 ```swift
 let kCGImagePropertyTIFFDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`TIFF Image Properties`](tiff-image-properties.md).
 
 
 ---

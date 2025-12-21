@@ -17,7 +17,7 @@ var showsExpertParameters: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if controls for expert audio unit parameters are displayed; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if controls for expert audio unit parameters are displayed; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 
 ---

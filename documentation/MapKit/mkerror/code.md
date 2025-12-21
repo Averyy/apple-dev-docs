@@ -35,18 +35,6 @@ enum Code
   The map server was unable to return the desired information.
 - [MKError.Code.unknown](mkerror/code/unknown.md)
   An unknown error occurred.
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
-  GeoJSON decoding failed.
-- [MKError.Code.directionsNotFound](mkerror/code/directionsnotfound.md)
-  The framework couldn’t find the specified directions.
-- [MKError.Code.loadingThrottled](mkerror/code/loadingthrottled.md)
-  The data didn’t load because data throttling is in effect.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
-  The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
-  The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
-  An unknown error occurred.
 ### Initializers
 - [init?(rawValue: UInt)](mkerror/code/init(rawvalue:).md)
 

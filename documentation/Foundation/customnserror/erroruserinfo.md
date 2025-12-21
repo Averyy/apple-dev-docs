@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The user-info dictionary.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

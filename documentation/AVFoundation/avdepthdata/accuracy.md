@@ -27,7 +27,7 @@ These values report the accuracy of a map’s values with respect to its reporte
 
 ## Topics
 
-### Accuracy Values
+### Accuracy values
 - [AVDepthData.Accuracy.relative](avdepthdata/accuracy/relative.md)
   Values within the depth data map are usable for foreground/background separation, but are not absolutely accurate in the physical world.
 - [AVDepthData.Accuracy.absolute](avdepthdata/accuracy/absolute.md)

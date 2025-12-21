@@ -28,12 +28,6 @@ case unknown
   The resource was pushed by the server to the client.
 - [URLSessionTaskMetrics.ResourceFetchType.localCache](urlsessiontaskmetrics/resourcefetchtype/localcache.md)
   The resource was retrieved from the local storage.
-- [URLSessionTaskMetrics.ResourceFetchType.networkLoad](urlsessiontaskmetrics/resourcefetchtype/networkload.md)
-  The resource was loaded over the network.
-- [URLSessionTaskMetrics.ResourceFetchType.serverPush](urlsessiontaskmetrics/resourcefetchtype/serverpush.md)
-  The resource was pushed by the server to the client.
-- [URLSessionTaskMetrics.ResourceFetchType.localCache](urlsessiontaskmetrics/resourcefetchtype/localcache.md)
-  The resource was retrieved from the local storage.
 
 
 ---

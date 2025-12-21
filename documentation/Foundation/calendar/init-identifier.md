@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Returns a new Calendar.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,10 @@
 ```swift
 init(identifier: Calendar.Identifier)
 ```
+
+## Parameters
+
+- `identifier`: The kind of calendar to use.
 
 
 ---

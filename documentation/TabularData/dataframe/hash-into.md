@@ -24,11 +24,6 @@ func hash(into hasher: inout Hasher)
 
 - `hasher`: A hasher the method uses to combine the components of the data frame.
 
-## See Also
-
-- [var hashValue: Int](dataframe/hashvalue.md)
-  The hash value.
-
 
 ---
 

@@ -23,7 +23,7 @@ var kAudioUnitProperty_FactoryPresets: AudioUnitPropertyID { get }
 
 A read-only [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) array of [`AUPreset`](aupreset.md) structures.
 
-When obtaining a factory preset array from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you own the reference to the array and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+When obtaining a factory preset array from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you own the reference to the array and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 ## See Also
 

@@ -23,10 +23,8 @@ protocol Regressor : Transformer where Self.Output : FloatingPoint
 ## Topics
 
 ### Performing the prediction
-- [func prediction(from: Self.Input) async throws -> Self.Output](regressor/prediction(from:)-7gc68.md)
+- [func prediction(from:)](regressor/prediction(from:).md)
   Performs a prediction from a single input.
-- [func prediction<S>(from: S) async throws -> [Self.Output]](regressor/prediction(from:)-7iqkm.md)
-  Performs a prediction from a sequence of inputs.
 
 ## Relationships
 

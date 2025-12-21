@@ -10,7 +10,7 @@ Verify the device’s Recovery Lock password.
 
 #### Discussion
 
-This command is only available with Apple silicon.
+This command is only available on a Mac with Apple silicon.
 
 ##### Command Availability
 

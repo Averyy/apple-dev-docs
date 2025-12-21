@@ -18,7 +18,7 @@ var isVisible: Bool { get set }
 
 Setting this property either shows or hides the status item within the menu bar. The item’s visiblity may also change if the user removes the item manually, and you can watch for changes in visibility using key-value observation. The status item’s visiblity persists and restores automatically based on the value of [`autosaveName`](nsstatusitem/autosavename-swift.property.md).
 
-This property returns [`true`](https://developer.apple.com/documentation/swift/true) even if the status item is temporarily hidden due to insufficient space in the menu bar. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property returns [`true`](https://developer.apple.com/documentation/Swift/true) even if the status item is temporarily hidden due to insufficient space in the menu bar. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

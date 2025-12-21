@@ -6,7 +6,7 @@
 The aspect ratio of the image this component will present for the requested viewing mode.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

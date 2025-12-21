@@ -11,7 +11,7 @@ The coordinates that represent the starting point for estimated arrival time req
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate origin;
+origin: Coordinate;
 ```
 
 ## See Also

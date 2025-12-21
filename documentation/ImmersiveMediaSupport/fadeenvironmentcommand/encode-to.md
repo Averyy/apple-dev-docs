@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Encodes an instance of `FadeEnvironmentCommand`.
+Encodes an instance of fade environment command.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ func encode(to encoder: any Encoder) throws
 
 ## Parameters
 
-- `encoder`: The encoder to be used for encoding.
+- `encoder`: The encoder to use.
 
 
 ---

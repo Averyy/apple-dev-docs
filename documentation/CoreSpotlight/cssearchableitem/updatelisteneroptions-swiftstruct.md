@@ -18,20 +18,20 @@ The set of options that contain metadata-associated summarization and prioritiza
 struct UpdateListenerOptions
 ```
 
-#### Discussion
+#### Overview
 
 To receive updates to specific properties on searchable items, implement the [`searchableItemsDidUpdate(_:)`](cssearchableindexdelegate/searchableitemsdidupdate(_:).md) delegate method.
 
 ## Topics
 
-### Initializers
+### Getting the listener options structure
 - [init(rawValue: UInt)](cssearchableitem/updatelisteneroptions-swift.struct/init(rawvalue:).md)
   An unsigned integer that describes the listener options.
-### Type Properties
-- [static var priority: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/priority.md)
-  A value that describes the listener priority options.
+### Getting the listener options attributes
 - [static var summarization: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/summarization.md)
   A value that describes the listener summarization options.
+- [static var priority: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct/priority.md)
+  A value that describes the listener priority options.
 
 ## Relationships
 

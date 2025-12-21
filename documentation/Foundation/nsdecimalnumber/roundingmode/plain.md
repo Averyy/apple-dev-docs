@@ -28,12 +28,6 @@ case plain
   Round return values up.
 - [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
   Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
-  Round return values down.
-- [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
-  Round return values up.
-- [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
-  Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
 
 
 ---

@@ -30,6 +30,11 @@ A sequence from `start` of `duration` length. Each value in the sequence is sepa
 - `duration`: The desired duration of each sliced signature.
 - `stride`: The amount to step by for each slice. Must be a non-zero positive value.
 
+## See Also
+
+- [SHSignature.Slices](shsignature/slices.md)
+  A sequence of signature segments.
+
 
 ---
 

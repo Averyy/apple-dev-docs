@@ -37,8 +37,6 @@ print(DeviceActivityName.bedtime.rawValue)
 
 - [init(String)](deviceactivityname/init(_:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](deviceactivityname/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

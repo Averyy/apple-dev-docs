@@ -91,6 +91,7 @@ struct PKPaymentNetwork
 - [init(rawValue: String)](pkpaymentnetwork/init(rawvalue:).md)
   Creates a new payment network structure with the string you provide.
 ### Type Properties
+- [static let conecs: PKPaymentNetwork](pkpaymentnetwork/conecs.md)
 - [static let himyan: PKPaymentNetwork](pkpaymentnetwork/himyan.md)
 - [static let jaywan: PKPaymentNetwork](pkpaymentnetwork/jaywan.md)
 - [static let myDebit: PKPaymentNetwork](pkpaymentnetwork/mydebit.md)

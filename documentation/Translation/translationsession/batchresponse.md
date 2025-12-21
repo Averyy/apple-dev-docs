@@ -8,7 +8,7 @@ A type that provides asynchronous access to translation responses.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration
@@ -32,8 +32,6 @@ This type returns instances of [`TranslationSession.Response`](translationsessio
 ### Type Aliases
 - [TranslationSession.BatchResponse.Element](translationsession/batchresponse/element.md)
   The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](translationsession/batchresponse/asyncsequence-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ struct MTLDrawPatchIndirectArguments
 
 ## Mentions
 
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
 
 #### Overview
 
@@ -32,7 +32,7 @@ See also the following methods:
 
 ## Topics
 
-### Fields
+### Initializers
 - [init()](mtldrawpatchindirectarguments/init.md)
   Returns a new data layout for drawing patches via indirect buffer calls.
 - [init(patchCount: UInt32, instanceCount: UInt32, patchStart: UInt32, baseInstance: UInt32)](mtldrawpatchindirectarguments/init(patchcount:instancecount:patchstart:baseinstance:).md)
@@ -44,12 +44,8 @@ See also the following methods:
   The number of instances to draw.
 - [var patchCount: UInt32](mtldrawpatchindirectarguments/patchcount.md)
   The number of patches in each instance.
-- [var instanceCount: UInt32](mtldrawpatchindirectarguments/instancecount.md)
-  The number of instances to draw.
 - [var patchStart: UInt32](mtldrawpatchindirectarguments/patchstart.md)
   The patch start index.
-- [var baseInstance: UInt32](mtldrawpatchindirectarguments/baseinstance.md)
-  The first instance to draw.
 
 ## Relationships
 

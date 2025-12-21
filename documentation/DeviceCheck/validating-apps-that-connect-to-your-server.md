@@ -119,6 +119,8 @@ When the assertion meets all of these conditions, you can trust it. Store `count
   Request and analyze risk data using server-to-server calls.
 - [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
   Test your implementation in a development environment and onboard users gradually.
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+  Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
 - [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)

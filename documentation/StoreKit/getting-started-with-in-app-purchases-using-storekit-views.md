@@ -50,7 +50,7 @@ enum ProductID: String {
 
 #### Monitor Transactions in Your App
 
-StoreKit provides several asynchronous sequences that provide your app with information and updates. For example, the class below checks `Transaction.unfinished` and `Transaction.currentEntitlements` at startup, and continues to check `Transaction.updates` in the background while the app is running.
+StoreKit provides several asynchronous sequences that provide your app with information and updates. For example, the class below checks [`unfinished`](transaction/unfinished.md) and [`currentEntitlements`](transaction/currententitlements.md) at startup, and continues to check [`updates`](transaction/updates.md) in the background while the app is running.
 
 ```swift
 import Foundation

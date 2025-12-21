@@ -17,6 +17,8 @@ optional var previewItemTitle: String? { get }
 
 #### Discussion
 
+The item’s title this will be used as apparent item title.
+
 The title replaces the default item display name. This property is optional.
 
 

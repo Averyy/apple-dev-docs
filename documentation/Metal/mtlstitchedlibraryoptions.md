@@ -23,6 +23,7 @@ struct MTLStitchedLibraryOptions
 - [init(rawValue: UInt)](mtlstitchedlibraryoptions/init(rawvalue:).md)
 ### Type Properties
 - [static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions](mtlstitchedlibraryoptions/failonbinaryarchivemiss.md)
+  An option that instructs the compiler to return an error when a GPU function for a stitched library isn’t in a binary archive.
 - [static var storeLibraryInMetalPipelinesScript: MTLStitchedLibraryOptions](mtlstitchedlibraryoptions/storelibraryinmetalpipelinesscript.md)
 
 ## Relationships
@@ -39,6 +40,7 @@ struct MTLStitchedLibraryOptions
 
 ## See Also
 
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)

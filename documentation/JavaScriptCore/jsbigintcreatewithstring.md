@@ -23,6 +23,8 @@ A BigInt JSValue of the string, or NULL if an exception is thrown.
 
 #### Discussion
 
+Creates a JavaScript BigInt with an integer represented in string.
+
 This is equivalent to calling the `BigInt` constructor from JavaScript with a string argument.
 
 ## Parameters

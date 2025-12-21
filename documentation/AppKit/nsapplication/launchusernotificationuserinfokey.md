@@ -29,7 +29,7 @@ NSUserNotification *userNotification = [[myNotification userInfo]
 ## See Also
 
 - [class let launchIsDefaultUserInfoKey: String](nsapplication/launchisdefaultuserinfokey.md)
-  The value for this key is an `NSNumber` containing a Boolean value. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the app was launched to open or print a file, to perform a Service action, if the app had saved state that will be restored, or if the app launch was in some other sense not a default launch. Otherwise its value will be [`true`](https://developer.apple.com/documentation/swift/true).
+  A Boolean value that indicates if the app launch is a default launch.
 
 
 ---

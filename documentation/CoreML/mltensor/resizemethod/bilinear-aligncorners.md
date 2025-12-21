@@ -24,6 +24,11 @@ case bilinear(alignCorners: Bool = false)
 
 `alignCorners` is a Boolean indicating whether to align the corners of the upscaling grid to the centre of the scaling dimensions rather than the edges.
 
+## See Also
+
+- [MLTensor.ResizeMethod.nearestNeighbor](mltensor/resizemethod/nearestneighbor.md)
+  The nearest interpolation mode where values are interpolated using the closest neighbor pixel.
+
 
 ---
 

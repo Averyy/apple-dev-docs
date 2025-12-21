@@ -21,7 +21,7 @@ var allowGPUOptimizedContents: Bool { get set }
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Discussion
 

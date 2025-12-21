@@ -20,11 +20,11 @@ func canSetSessionPreset(_ preset: AVCaptureSession.Preset) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the capture session supports the preset; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the capture session supports the preset; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Use this method to determine whether the capture session, in its current I/O configuration, supports a particular preset. You can only set a preset that returns [`true`](https://developer.apple.com/documentation/swift/true) as the capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property value.
+Use this method to determine whether the capture session, in its current I/O configuration, supports a particular preset. You can only set a preset that returns [`true`](https://developer.apple.com/documentation/Swift/true) as the capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property value.
 
 ## Parameters
 

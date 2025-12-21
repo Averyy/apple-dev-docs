@@ -28,7 +28,7 @@ If you use this derived property instead of [`targetColorTexture`](arview/postpr
 
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
   Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
-- [Implementing Special Rendering Effects with RealityKit Postprocessing](implementing_special_rendering_effects_with_realitykit_postprocessing.md)
+- [Implementing special rendering effects with RealityKit postprocessing](implementing-special-rendering-effects-with-realitykit-postprocessing.md)
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Passing Structured Data to a Metal Compute Function](passing-structured-data-to-a-metal-compute-function.md)
   Send nontexture data from Swift to your Metal shaders using a shared header file.

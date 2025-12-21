@@ -16,10 +16,6 @@
 override init()
 ```
 
-## See Also
-
-- [init(from: any Decoder) throws](sfcustomlanguagemodeldata/templatephrasecountgenerator/init(from:).md)
-
 
 ---
 

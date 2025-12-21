@@ -21,7 +21,7 @@ func reset()
 
 #### Discussion
 
-You do not need to call this method if you have not set any constant values.
+You don’t need to call this method if you don’t set any constant values.
 
 
 ---

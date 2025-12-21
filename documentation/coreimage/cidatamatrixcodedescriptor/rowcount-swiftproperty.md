@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The number of module rows.
+The number of rows in the Data Matrix code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -26,11 +26,11 @@ Refer to ISO/IEC 16022:2006(E) for valid module row and column count combination
 ## See Also
 
 - [var errorCorrectedPayload: Data](cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload that comprises the Data Matrix code symbol.
+  The error-corrected payload containing the data encoded in the Data Matrix code symbol.
 - [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
-  The number of module columns.
+  The number of columns in the Data Matrix code symbol.
 - [var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion](cidatamatrixcodedescriptor/eccversion-swift.property.md)
-  The Data Matrix code ECC version.
+  The error correction version of the Data Matrix code symbol.
 
 
 ---

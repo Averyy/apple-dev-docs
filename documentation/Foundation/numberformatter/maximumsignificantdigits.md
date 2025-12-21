@@ -22,7 +22,7 @@ var maximumSignificantDigits: Int { get set }
 
 #### Discussion
 
-You must set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in order for this property to affect formatting behavior.  By default, the maximum number of significant digits is 6. Values less than 1 are ignored.
+You must set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) in order for this property to affect formatting behavior.  By default, the maximum number of significant digits is 6. Values less than 1 are ignored.
 
 The following code demonstrates the effect of setting [`maximumSignificantDigits`](numberformatter/maximumsignificantdigits.md) when formatting various numbers:
 

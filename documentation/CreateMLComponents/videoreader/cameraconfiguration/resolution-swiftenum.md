@@ -24,17 +24,6 @@ enum Resolution
 - [VideoReader.CameraConfiguration.Resolution.high](videoreader/cameraconfiguration/resolution-swift.enum/high.md)
 - [VideoReader.CameraConfiguration.Resolution.low](videoreader/cameraconfiguration/resolution-swift.enum/low.md)
 - [VideoReader.CameraConfiguration.Resolution.medium](videoreader/cameraconfiguration/resolution-swift.enum/medium.md)
-### Operators
-- [static func == (VideoReader.CameraConfiguration.Resolution, VideoReader.CameraConfiguration.Resolution) -> Bool](videoreader/cameraconfiguration/resolution-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](videoreader/cameraconfiguration/resolution-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](videoreader/cameraconfiguration/resolution-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](videoreader/cameraconfiguration/resolution-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

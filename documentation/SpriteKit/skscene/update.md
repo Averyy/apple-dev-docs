@@ -22,8 +22,8 @@ func update(_ currentTime: TimeInterval)
 
 ## Mentions
 
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 - [Getting Started with Actions](getting-started-with-actions.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
 
 #### Discussion
 

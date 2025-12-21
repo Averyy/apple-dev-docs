@@ -23,6 +23,7 @@ struct CameraFrameUpdates
   The authorization types you need to use the camera frame provider.
 ### Instance methods
 - [func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator](cameraframeprovider/cameraframeupdates/makeasynciterator.md)
+  Creates an asynchronous iterator that produces `CameraFrame` elements on this asynchronous sequence.
 ### Iterating over camera updates
 - [CameraFrameProvider.CameraFrameUpdates.Iterator](cameraframeprovider/cameraframeupdates/iterator.md)
   An asynchronous iterator that produces camera frame elements on an asynchronous sequence.

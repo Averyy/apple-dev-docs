@@ -25,8 +25,7 @@
 - [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent)](subscriptionperiodgroupset/init(marketingcontent:).md)
 - [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent, label: (Product.SubscriptionPeriod?) -> Label)](subscriptionperiodgroupset/init(marketingcontent:label:).md)
 ### Creating the group style
-- [nonisolated func subscriptionStoreOptionGroupStyle(_ style: some SubscriptionOptionGroupStyle) -> some View
-](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships

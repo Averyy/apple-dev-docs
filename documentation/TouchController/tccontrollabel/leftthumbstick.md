@@ -1,54 +1,52 @@
-# leftThumbstick()
+# leftThumbstick
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: property
 
 Creates a pre-configured label for the left thumbstick.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
-class func leftThumbstick() -> Self
+class var leftThumbstick: TCControlLabel { get }
 ```
 
 ## See Also
 
-- [class func buttonA() -> Self](tccontrollabel/buttona.md)
+- [class var buttonA: TCControlLabel](tccontrollabel/buttona.md)
   Creates a pre-configured label for the “A” button.
-- [class func buttonB() -> Self](tccontrollabel/buttonb.md)
+- [class var buttonB: TCControlLabel](tccontrollabel/buttonb.md)
   Creates a pre-configured label for the “B” button.
-- [class func buttonLeftShoulder() -> Self](tccontrollabel/buttonleftshoulder.md)
+- [class var buttonLeftShoulder: TCControlLabel](tccontrollabel/buttonleftshoulder.md)
   Creates a pre-configured label for the left shoulder button.
-- [class func buttonLeftTrigger() -> Self](tccontrollabel/buttonlefttrigger.md)
+- [class var buttonLeftTrigger: TCControlLabel](tccontrollabel/buttonlefttrigger.md)
   Creates a pre-configured label for the left trigger button.
-- [class func buttonMenu() -> Self](tccontrollabel/buttonmenu.md)
+- [class var buttonMenu: TCControlLabel](tccontrollabel/buttonmenu.md)
   Creates a pre-configured label for the “Menu” button.
-- [class func buttonOptions() -> Self](tccontrollabel/buttonoptions.md)
+- [class var buttonOptions: TCControlLabel](tccontrollabel/buttonoptions.md)
   Creates a pre-configured label for the “Options” button.
-- [class func buttonRightShoulder() -> Self](tccontrollabel/buttonrightshoulder.md)
+- [class var buttonRightShoulder: TCControlLabel](tccontrollabel/buttonrightshoulder.md)
   Creates a pre-configured label for the right shoulder button.
-- [class func buttonRightTrigger() -> Self](tccontrollabel/buttonrighttrigger.md)
+- [class var buttonRightTrigger: TCControlLabel](tccontrollabel/buttonrighttrigger.md)
   Creates a pre-configured label for the right trigger button.
-- [class func buttonX() -> Self](tccontrollabel/buttonx.md)
+- [class var buttonX: TCControlLabel](tccontrollabel/buttonx.md)
   Creates a pre-configured label for the “X” button.
-- [class func buttonY() -> Self](tccontrollabel/buttony.md)
+- [class var buttonY: TCControlLabel](tccontrollabel/buttony.md)
   Creates a pre-configured label for the “Y” button.
-- [class func directionPad() -> Self](tccontrollabel/directionpad.md)
+- [class var directionPad: TCControlLabel](tccontrollabel/directionpad.md)
   Creates a pre-configured label for the direction pad.
-- [class func leftThumbstickButton() -> Self](tccontrollabel/leftthumbstickbutton.md)
+- [class var leftThumbstickButton: TCControlLabel](tccontrollabel/leftthumbstickbutton.md)
   Creates a pre-configured label for the left thumbstick button.
-- [class func rightThumbstick() -> Self](tccontrollabel/rightthumbstick.md)
+- [class var rightThumbstick: TCControlLabel](tccontrollabel/rightthumbstick.md)
   Creates a pre-configured label for the right thumbstick.
-- [class func rightThumbstickButton() -> Self](tccontrollabel/rightthumbstickbutton.md)
+- [class var rightThumbstickButton: TCControlLabel](tccontrollabel/rightthumbstickbutton.md)
   Creates a pre-configured label for the right thumbstick button.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstick())*
+*[View on Apple Developer](https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstick)*

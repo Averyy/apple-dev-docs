@@ -24,11 +24,6 @@ func map<T>(_ transform: (ColumnSlice<WrappedElement>.Element) throws -> T?) ret
 
 - `transform`: The transformation closure.
 
-## See Also
-
-- [func filled(with: Self.WrappedElement) -> FilledColumn<Self>](columnslice/filled(with:).md)
-  Generates a filled column by replacing missing elements with a value.
-
 
 ---
 

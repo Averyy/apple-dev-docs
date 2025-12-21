@@ -6,27 +6,28 @@ Extend your app’s direction finding capabilities with data from Ultra Wideband
 
 #### Overview
 
-Extended distance measurement (EDM) is a ranging capability available between devices with second generation Ultra Wideband (UWB) chips. EDM enables measuring precise distance between two Apple devices using ultra-wideband technology at significantly farther distances than was possible with the first generation UWB chip. In iOS 17 and watchOS 10 and later, EDM is available through the Nearby Interaction framework. This article describes the tradeoffs involved in using EDM and getting the best ranging performance for your app.
+Extended distance measurement (EDM) is a ranging capability available between devices with second-generation Ultra Wideband (UWB) chips. EDM enables measuring precise distance between two Apple devices using UWB technology at significantly farther distances than was possible with the first-generation UWB chip. In iOS 17 and watchOS 10 and later, EDM is available through the Nearby Interaction framework. This article describes the tradeoffs involved in using EDM and getting the best ranging performance for your app.
 
 ##### Detect Devices and Their Capabilities
 
-A new UWB communication protocol enables the EDM capabilities in second generation UWB chips. To use this new measurement technology, both sides have to have the second generation chip, this includes iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and later.
+A new UWB communication protocol enables the EDM capabilities in second-generation UWB chips. To use this new measurement technology, both sides have to have the second-generation chip; this includes iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and later.
 
-Devices with the second generation UWB chip are backwards compatible with the ranging technologies available on the first generation UWB chip. Second generation UWB chip-equipped devices can communicate with first generation devices and Made for iPhone (MFI)-certified third-party chipsets. However, when communicating with first generation devices, second generation devices operate at the performance available on the first generation chip. This article refers to Nearby Interaction peer sessions that don’t have extended distance measurement enabled as “legacy” Nearby Interaction peer sessions.
+Devices with the second-generation UWB chip are backward compatible with the ranging technologies available on the first-generation UWB chip. Second-generation UWB chip-equipped devices can communicate with first-generation devices and Made for iPhone (MFI)-certified third-party chipsets. However, when communicating with first-generation devices, second-generation devices operate at the performance available on the first-generation chip. This article refers to Nearby Interaction peer sessions that don’t have extended distance measurement enabled as “legacy” Nearby Interaction peer sessions.
 
-Measurement capabilities depend on both the capabilities of a person’s device and of the peer device they’re connecting to. Although someone might have a second generation UWB chip-equipped device, the peer devices they want to interact with might only support the first generation UWB chip.
+Measurement capabilities depend on both the capabilities of a person’s device and of the peer device they’re connecting to. Although someone might have a second-generation UWB chip-equipped device, the peer devices they want to interact with might only support the first-generation UWB chip.
 
-Possible interactions between first generation and second generation UWB chips, and third-party MFI devices, include:
+Possible interactions between first-generation and second-generation UWB chips, and third-party MFI devices, include:
 
-Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets.
+- Supports multiple Nearby Interaction peer sessions when communicating with first- and second-generation UWB equipped devices
+- Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
 
-Supports one Nearby Interaction peer EDM session and multiple Nearby Interaction peer sessions when communicating with second generation UWB-equipped devices.
-
-Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
+- Supports multiple legacy Nearby Interaction peer sessions when communicating with first-generation UWB equipped devices
+- Supports one Nearby Interaction peer EDM session and multiple Nearby Interaction peer sessions when communicating with second-generation UWB-equipped devices
+- Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
 
 > **Note**:  For more information on the MFI program, see the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification/).
 
-Design your app with appropriate fallback options for interacting with devices that aren’t capable of EDM. For example, you could choose to show a limited experience that’s backwards compatible with first generation devices or, depending on your app’s intention, restrict interactions with peer devices that aren’t capable of using EDM. To identify a peer device’s measurement capabilities, query the [`deviceCapabilities`](nidiscoverytoken/devicecapabilities.md) property of an [`NIDiscoveryToken`](nidiscoverytoken.md). For an example that demonstrates limiting interactions to compatible devices, see [`Finding devices with precision`](finding-devices-with-precision.md).
+Design your app with appropriate fallback options for interacting with devices that aren’t capable of EDM. For example, you could choose to show a limited experience that’s backward compatible with first-generation devices or, depending on your app’s intention, restrict interactions with peer devices that aren’t capable of using EDM. To identify a peer device’s measurement capabilities, query the [`deviceCapabilities`](nidiscoverytoken/devicecapabilities.md) property of an [`NIDiscoveryToken`](nidiscoverytoken.md). For an example that demonstrates limiting interactions to compatible devices, see [`Finding devices with precision`](finding-devices-with-precision.md).
 
 Because EDM uses a new communications protocol, Nearby Interaction only supports one extended distance measurement session on a device at any given time. An EDM session can work concurrently with multiple legacy Nearby Interaction sessions on the same device.
 
@@ -102,13 +103,13 @@ The following example demonstrates a quality estimator for direction measurement
     }   
 ```
 
-This class is a part of the Finding devices with precision sample for iOS 17 that demonstrates measurement quality estimation on devices capable of EDM. This estimator determines measurements are high quality if the framework generates eight or more distinct measurements in the last two seconds, and if the measurements are within a distance threshold of 50 meters. Experiment with different measurement quality metrics to vet the results to meet your app’s intended use cases.
+This class is a part of the [`Finding devices with precision`](finding-devices-with-precision.md) sample for iOS 17 that demonstrates measurement quality estimation on devices capable of EDM. This estimator determines measurements are high quality if the framework generates eight or more distinct measurements in the last two seconds, and if the measurements are within a distance threshold of 50 meters. Experiment with different measurement quality metrics to vet the results to meet your app’s intended use cases.
 
-iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession). With the EDM capabilities introduced in iOS 17 and watchOS 10, second generation UWB equipped devices can locate moving devices that also have the second generation UWB chip.
+iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession). With the EDM capabilities introduced in iOS 17 and watchOS 10, second-generation UWB equipped devices can locate moving devices that also have the second-generation UWB chip.
 
 ##### Measure the Distance Between Devices
 
-In iOS 14 and watchOS 8 and later, devices equipped with the first generation UWB chip are capable of precise distance measurement through the Nearby Interaction Framework. Devices supporting [`ARKit`](https://developer.apple.com/documentation/ARKit) can locate stationary objects or devices. Devices equipped with the second generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](nisession/devicecapabilities.md) property check.
+In iOS 14 and watchOS 8 and later, devices equipped with the first-generation UWB chip are capable of precise distance measurement through the Nearby Interaction framework. Devices supporting [`ARKit`](https://developer.apple.com/documentation/ARKit) can locate stationary objects or devices. Devices equipped with the second-generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](nisession/devicecapabilities.md) property check.
 
 To check a device’s EDM capability:
 
@@ -126,7 +127,7 @@ To determine if a peer device supports EDM, examine the peer’s [`NIDiscoveryTo
     if token.deviceCapabilities.supportsExtendedDistanceMeasurement {
         // The peer has EDM capability.
     } else {
-        // Fall back to first generation UWB chip capabilities.
+        // Fall back to first-generation UWB chip capabilities.
     }
 ```
 

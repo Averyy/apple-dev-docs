@@ -6,7 +6,7 @@
 Source for an accessory if creating it failed.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

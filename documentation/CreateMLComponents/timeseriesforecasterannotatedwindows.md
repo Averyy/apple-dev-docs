@@ -38,10 +38,10 @@ Note that 9 and 10 are never used as features because there would be no annotati
 
 ## Topics
 
-### Initializers
+### Creating a time series forecaster annotated window
 - [init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>, inputWindowSize: Int, forecastWindowSize: Int, stride: Int, shufflesElements: Bool) throws](timeseriesforecasterannotatedwindows/init(features:annotations:inputwindowsize:forecastwindowsize:stride:shuffleselements:).md)
   Creates a batch sequence.
-### Instance Properties
+### Inspecting a time series forecaster annotated window
 - [let annotations: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/annotations.md)
   The original annotations.
 - [let features: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/features.md)
@@ -54,14 +54,6 @@ Note that 9 and 10 are never used as features because there would be no annotati
   A Boolean value indicating whether to shuffle the elements.
 - [var stride: Int](timeseriesforecasterannotatedwindows/stride.md)
   The number of samples between windows.
-- [var underestimatedCount: Int](timeseriesforecasterannotatedwindows/underestimatedcount.md)
-  A value less than or equal to the number of elements in the sequence, calculated nondestructively.
-### Instance Methods
-- [func makeIterator() -> TimeSeriesForecasterAnnotatedWindows<Scalar>.Iterator](timeseriesforecasterannotatedwindows/makeiterator.md)
-  Returns an iterator over the elements of this sequence.
-### Type Aliases
-- [TimeSeriesForecasterAnnotatedWindows.Element](timeseriesforecasterannotatedwindows/element.md)
-  A type representing the sequence’s elements.
 ### Default Implementations
 - [Sequence Implementations](timeseriesforecasterannotatedwindows/sequence-implementations.md)
 

@@ -3,10 +3,10 @@
 **Framework**: Journaling Suggestions  
 **Kind**: enum
 
-The schedule configuration of Journaling Suggestions notifications.
+Possible values for the Journaling Suggestions notifications setting.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -14,26 +14,28 @@ The schedule configuration of Journaling Suggestions notifications.
 enum NotificationSchedule
 ```
 
+#### Overview
+
+When [`notificationSchedule`](journalingsuggestionsconfiguration/notificationschedule-swift.property.md) is [`JournalingSuggestionsConfiguration.NotificationSchedule.smart`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md), the system personalizes the schedule according to the person’s unique routines. The value is [`JournalingSuggestionsConfiguration.NotificationSchedule.custom`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md) if the person chooses a specific schedule in Settings.
+
+An [`JournalingSuggestionsConfiguration.NotificationSchedule.off`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md) value can mean:
+
+- Journaling Suggestions aren’t enabled in Settings.
+- Your app isn’t a preferred journal app in Settings.
+- Journaling Suggestions are on but notifications are off in Settings.
+- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property).
+
+For more information on notifications, see [`Receiving journaling suggestions system notifications`](receiving-journaling-suggestions-from-system-notifications.md).
+
 ## Topics
 
 ### Identifying a notification schedule
-- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
-  The notifications are enabled and configured to a custom schedule.
-- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
-  The notifications aren’t enabled or authorized for this app.
 - [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
-  The notifications are enabled and configured to a Smart schedule.
-### Comparing schedule settings
-- [static func == (JournalingSuggestionsConfiguration.NotificationSchedule, JournalingSuggestionsConfiguration.NotificationSchedule) -> Bool](journalingsuggestionsconfiguration/notificationschedule-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](journalingsuggestionsconfiguration/notificationschedule-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](journalingsuggestionsconfiguration/notificationschedule-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](journalingsuggestionsconfiguration/notificationschedule-swift.enum/equatable-implementations.md)
+  An option that indicates the system personalizes the notification schedule for the person.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
+  An option that indicates the person chooses a specific notification schedule in Settings.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
+  An option that indicates the app doesn’t receive notifications.
 
 ## Relationships
 
@@ -45,7 +47,7 @@ enum NotificationSchedule
 ## See Also
 
 - [var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule?](journalingsuggestionsconfiguration/notificationschedule-swift.property.md)
-  The notification schedule configured by the person using your app.
+  The schedule for Journaling Suggestion notifications, as it resides in Settings.
 
 
 ---

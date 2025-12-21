@@ -18,8 +18,8 @@ func performAutoFillAssistedRequests()
 
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
 - [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Supporting passkeys](supporting-passkeys.md)
 
 #### Discussion
 

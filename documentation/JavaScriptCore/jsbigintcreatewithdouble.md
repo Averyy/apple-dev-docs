@@ -23,6 +23,8 @@ A BigInt JSValue of the value, or NULL if an exception is thrown.
 
 #### Discussion
 
+Creates a JavaScript BigInt with a double.
+
 If the value is not an integer, an exception is thrown.
 
 ## Parameters

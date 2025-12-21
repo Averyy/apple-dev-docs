@@ -3,7 +3,7 @@
 **Framework**: Core Media  
 **Kind**: struct
 
-A type that describes format description parameter sets.
+Collection of parameter sets in a video format description.
 
 **Availability**:
 - iOS 13.0+

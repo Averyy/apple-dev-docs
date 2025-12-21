@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func eulerAngles() -> vector_float3
 ```
 

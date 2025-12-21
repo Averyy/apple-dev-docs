@@ -20,7 +20,7 @@ class NEFilterReport
 
 #### Overview
 
-The system issues a report by calling your control provider’s [`handle(_:)`](nefilterprovider/handle(_:).md) method with a report instance when the data provider issues a verdict whose [`shouldReport`](nefilterverdict/shouldreport.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+The system issues a report by calling your control provider’s [`handle(_:)`](nefilterprovider/handle(_:).md) method with a report instance when the data provider issues a verdict whose [`shouldReport`](nefilterverdict/shouldreport.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Topics
 

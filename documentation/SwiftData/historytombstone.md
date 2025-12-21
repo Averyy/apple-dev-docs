@@ -21,19 +21,8 @@ struct HistoryTombstone<Model> where Model : PersistentModel
 
 ## Topics
 
-### Structures
-- [HistoryTombstone.Iterator](historytombstone/iterator.md)
-  A type that provides the sequence’s iteration interface and encapsulates its iteration state.
-### Instance Methods
-- [func makeIterator() -> HistoryTombstone<Model>.Iterator](historytombstone/makeiterator.md)
-  Returns an iterator over the elements of this sequence.
 ### Subscripts
 - [subscript(PartialKeyPath<Model>) -> (any Sendable)?](historytombstone/subscript(_:).md)
-### Type Aliases
-- [HistoryTombstone.Element](historytombstone/element.md)
-  A type representing the sequence’s elements.
-### Default Implementations
-- [Sequence Implementations](historytombstone/sequence-implementations.md)
 
 ## Relationships
 

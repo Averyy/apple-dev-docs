@@ -12,6 +12,8 @@ Provide age-related information so the App Store can determine the age rating fo
 
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
 #### Discussion
 
@@ -21,7 +23,9 @@ Use this endpoint to indicate whether an app is Made for Kids.
 
 When calling this endpoint, only include the attributes that you’re modifying.
 
-For example, in an app that has a `FREQUENT_OR_INTENSE` declaration for contests, the age rating for the `AppInfos` is 12+. If you declare a value of true for `gambling`, the age rating for the `AppInfos` is 17+.
+The attributes for age-rating declarations, `INFREQUENT_OR_MILD` and `FREQUENT_OR_INTENSE` are deprecated. Instead, use `INFREQUENT` or `FREQUENT`.
+
+For example, in an app that has a `FREQUENT` declaration for contests, the age rating for the `AppInfos` is 12+. If you declare a value of true for `gambling`, the age rating for the `AppInfos` is 17+.
 
 ##### Modify an Age Rating Declaration
 

@@ -24,7 +24,7 @@ These modes define the available HDR modes. Query [`availableHDRModes`](avplayer
 
 ## Topics
 
-### HDR Modes
+### HDR modes
 - [static var hlg: AVPlayer.HDRMode](avplayer/hdrmode/hlg.md)
   The Hybrid Log-Gamma HDR mode is available.
 - [static var hdr10: AVPlayer.HDRMode](avplayer/hdrmode/hdr10.md)

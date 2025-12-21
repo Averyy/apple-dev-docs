@@ -6,7 +6,7 @@ Asynchronous properties for fragmented movies.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVFragmentedMovieTrack]>](avpartialasyncproperty/tracks-7fr6q.md)
   The tracks that a movie contains.
 

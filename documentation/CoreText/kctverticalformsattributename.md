@@ -22,7 +22,7 @@ let kCTVerticalFormsAttributeName: CFString
 
 #### Discussion
 
-Value must be a doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p object. Default is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). A value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) indicates that horizontal glyph forms are to be used; [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that vertical glyph forms are to be used.
+Value must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) object. Default is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). A value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) indicates that horizontal glyph forms are to be used; [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that vertical glyph forms are to be used.
 
 ## See Also
 

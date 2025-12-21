@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A buffer that contains bounding box data.
+A buffer that contains an array of bounding box structures.
 
 **Availability**:
 - iOS 14.0+
@@ -18,6 +18,10 @@ A buffer that contains bounding box data.
 ```swift
 var boundingBoxBuffer: (any MTLBuffer)? { get set }
 ```
+
+#### Discussion
+
+The buffer contains an array of [`MTLAxisAlignedBoundingBox`](mtlaxisalignedboundingbox-c.struct.md) structures, one for each bounding box in the geometry.
 
 ## See Also
 

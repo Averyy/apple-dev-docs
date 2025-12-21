@@ -23,11 +23,6 @@ struct EditingState
 
 ### Instance Properties
 - [var author: String?](editingstate/author.md)
-- [let id: UUID](editingstate/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-### Type Aliases
-- [EditingState.ID](editingstate/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

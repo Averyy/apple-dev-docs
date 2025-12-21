@@ -16,7 +16,7 @@ The index of the first mipmap in the tail.
 ## Declaration
 
 ```swift
-var firstMipmapInTail: Int { get }
+optional var firstMipmapInTail: Int { get }
 ```
 
 #### Discussion

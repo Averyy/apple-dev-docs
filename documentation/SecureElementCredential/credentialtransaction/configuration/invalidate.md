@@ -17,7 +17,7 @@ func invalidate() async throws
 
 #### Discussion
 
-Call `invalidate()` in the closure passed to doc://com.apple.documentation/documentation/SwiftUI/View/transactionTask(_:action) when you complete your wired transaction or card emulation. Your app is responsible for invalidating any wired or card emulation state by calling this method.
+Call `invalidate()` in the closure passed to [`transactionTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/transactionTask(_:action:)) when you complete your wired transaction or card emulation. Your app is responsible for invalidating any wired or card emulation state by calling this method.
 
 
 ---

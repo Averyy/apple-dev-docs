@@ -6,7 +6,7 @@
 Provides information about the current snap state of the scene.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

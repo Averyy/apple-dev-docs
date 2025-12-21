@@ -6,7 +6,7 @@
 Creates a value that describes the operations allowed for drags to other applications.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

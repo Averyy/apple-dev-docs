@@ -15,6 +15,8 @@ init(position: TableVisualState.Point2D, rotation: Angle2D)
 ## See Also
 
 - [init()](tablevisualstate/pose2d/init.md)
+- [init(projecting: Pose3D)](tablevisualstate/pose2d/init(projecting:).md)
+  Initializes this pose as the 2D projection of the given pose on the XZ plane
 
 
 ---

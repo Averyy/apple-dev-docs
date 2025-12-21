@@ -41,14 +41,9 @@ A credential is an abstraction of the cryptographic elements of your applet bund
 ### Hashing
 - [func hash(into: inout Hasher)](credentialsession/credential/hash(into:).md)
   Hashes the essential components of the value by feeding them into the given hasher.
-### Comparing credentials
-- [static func == (CredentialSession.Credential, CredentialSession.Credential) -> Bool](credentialsession/credential/==(_:_:).md)
-  Returns a Boolean value that indicates whether two values are equal.
-### Structures
+### Supporting types
 - [CredentialSession.Credential.InstanceInfo](credentialsession/credential/instanceinfo.md)
   Information about an applet instance associated with a specific credential.
-### Default Implementations
-- [Equatable Implementations](credentialsession/credential/equatable-implementations.md)
 
 ## Relationships
 

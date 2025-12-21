@@ -22,7 +22,7 @@ var httpShouldHandleCookies: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the request should use the default cookie handling for the request, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the request should use the default cookie handling for the request, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If your app sets the `Cookie` header on an [`NSMutableURLRequest`](nsmutableurlrequest.md) object, then this method has no effect, and the cookie data you set in the header overrides all cookies from the cookie store.
 

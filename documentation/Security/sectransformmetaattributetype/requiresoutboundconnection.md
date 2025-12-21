@@ -16,7 +16,7 @@ case requiresOutboundConnection
 
 #### Discussion
 
-This metadata has a default value of [`true`](https://developer.apple.com/documentation/swift/true) for the output attribute but is [`false`](https://developer.apple.com/documentation/swift/false) for all other attributes.
+This metadata has a default value of [`true`](https://developer.apple.com/documentation/Swift/true) for the output attribute but is [`false`](https://developer.apple.com/documentation/Swift/false) for all other attributes.
 
 
 ---

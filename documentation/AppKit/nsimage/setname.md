@@ -16,11 +16,11 @@ func setName(_ string: NSImage.Name?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver was successfully registered with the given name; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver was successfully registered with the given name; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the receiver is already registered under a different name, this method unregisters the other name. If a different image is already registered under the name specified in `aString`, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the receiver is already registered under a different name, this method unregisters the other name. If a different image is already registered under the name specified in `aString`, this method does nothing and returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 When naming an image using this method, it is convention not to include filename extensions in the names you specify. That way, you can easily distinguish between images you have named explicitly and those you want to load from the app’s bundle. For information about the rules used to search for images, and for information about the ownership policy of named images, see the [`init(named:)`](nsimage/init(named:).md) method.
 

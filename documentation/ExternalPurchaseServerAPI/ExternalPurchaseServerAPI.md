@@ -10,10 +10,10 @@ Send and manage reports you send to Apple for tokens you receive when your app p
 
 #### Overview
 
-Call this REST API from your server to report external purchase tokens and your customers’ transactions related to the tokens. Use this API if your app uses [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) and provides alternative payment options for digital goods and services, using either or both of the following:
+Call this REST API from your server to report external purchase tokens and your customers’ transactions related to the tokens. Use this API if your app uses [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) API and provides alternative payment options for digital goods and services, using any of the following:
 
 - : An alternative payment processor that lets customers complete transactions within your app.
-- : Directing customers to complete a transaction for digital goods and services on your external website.
+- : Directing customers to complete a transaction for digital goods and services on your external website, or a distribution channel of your choice.
 
 Report all tokens, including those that didn’t result in a transaction, and report the transactions associated with the tokens. For more information on the reporting requirements, including scope and report timing expectations, see the [`Commission, transaction reports, and payments`](https://developer.apple.comhttps://developer.apple.com/support/apps-using-alternative-payment-providers-in-the-eu#commission-reports-and-payments) section of the article Using alternative payment options on the App Store in the European Union.
 
@@ -28,8 +28,9 @@ When customers initiate an external purchase, your app or website receives a tok
 - To report a token, with line items, when a customer completes one or more transactions.
 - To report a token, without line items, when a customer doesn’t complete any transactions.
 - To report an unrecognized token, when you receive an App Store Server Notification about a token that you don’t have recorded in your system.
+- To report duplicate `ACQUISITION` and `SERVICES` tokens.
 
-For more information, see [`Reporting tokens with transactions`](reportwithtransactions.md) and [`Reporting unrecognized tokens and tokens without transactions`](reportwithouttransactions.md).
+For more information, see [`Reporting tokens with transactions`](reportwithtransactions.md) and [`Reporting unrecognized and transactionless tokens`](reportwithouttransactions.md).
 
 If you successfully send a report that you later find to be incorrect, you need to correct your submission. For more information, see [`Reporting corrections`](reportcorrections.md).
 
@@ -39,13 +40,18 @@ Call the [`Retrieve External Purchase Report`](retrieve-external-purchase-report
 
 ##### Receive Notifications for Unreported Tokens
 
-For external purchase tokens that are unreported after 10 days, Apple sends a server notification to your server configured with the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint. If you receive the `EXTERNAL_PURCHASE_TOKEN` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType), send a report for the token the notification specifies. To check for notifications you might have missed — for example, due to a server outage — send a request to the [`Get Notification History`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Notification-History) endpoint to get a list of notifications that App Store Server Notifications attempted to send to your server.
+The App Store server sends an `EXTERNAL_PURCHASE_TOKEN` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) to your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint in the following cases:
 
-For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications). Configure the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint on your server to receive version 2 notifications.
+- To indicate unreported tokens, using the UNREPORTED subtype
+- To remind you of active custom link tokens, using the ACTIVE_TOKEN_REMINDER subtype.
+
+If you receive the `EXTERNAL_PURCHASE_TOKEN` notification, send a report for the token the notification specifies. To check for notifications you might have missed — for example, due to a server outage — send a request to the [`Get Notification History`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Notification-History) endpoint to get a list of notifications that App Store Server Notifications attempted to send to your server.
+
+For more information on notifications, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications). Configure the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint on your server to receive version 2 notifications.
 
 ##### Test Using the Sandbox Environment
 
-When you test your app in Xcode or TestFlight, [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) returns tokens that are valid only in the sandbox environment. These tokens have an `externalPurchaseId` that starts with the string “`SANDBOX`”. To test your server’s token reporting implementation, send reports for sandbox tokens to the Sandbox URL of the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint.
+When you test your app in the sandbox environment, the [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) API returns tokens that are valid only in that environment. These tokens have an `externalPurchaseId` that starts with the string “`SANDBOX`”. To test your server’s token reporting implementation, send reports for sandbox tokens to the Sandbox URL of the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint.
 
 > ❗ **Important**: External purchase tokens generated in the sandbox environment are for testing only. The sandbox tokens and any test transaction data you submit through the sandbox URLs of the External Purchase Server API are not actual transactions.
 
@@ -84,8 +90,8 @@ When you test your app in Xcode or TestFlight, [`External Purchase`](https://dev
 - [Line item fields](lineitems.md)
   Properties that describe a single transaction or correction in an external purchase report.
 ### External purchase report without transactions
-- [Reporting unrecognized tokens and tokens without transactions](reportwithouttransactions.md)
-  Create reports for external purchase tokens that didn’t result in completed transactions, or tokens that you learn of from an App Store server notification.
+- [Reporting unrecognized and transactionless tokens](reportwithouttransactions.md)
+  Create reports for external purchase tokens that didn’t result in completed transactions, duplicate tokens, or tokens that you learn of from an App Store server notification.
 ### External purchase report retrieval
 - [Retrieve External Purchase Report](retrieve-external-purchase-report.md)
   Get an external purchase report by providing its request identifier.

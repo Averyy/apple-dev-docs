@@ -22,17 +22,17 @@ func scanUpTo(_ string: String, into result: AutoreleasingUnsafeMutablePointer<N
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver scans any characters, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver scans any characters, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If the only scanned characters are in the [`charactersToBeSkipped`](scanner/characterstobeskipped.md) character set (which by default is the whitespace and newline character set), then this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the only scanned characters are in the [`charactersToBeSkipped`](scanner/characterstobeskipped.md) character set (which by default is the whitespace and newline character set), then this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 If `stopString` is present in the receiver, then on return the scan location is set to the beginning of that string.
 
-If `stopString` is the first string in the receiver, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and `stringValue` is not changed.
+If `stopString` is the first string in the receiver, then the method returns [`false`](https://developer.apple.com/documentation/Swift/false) and `stringValue` is not changed.
 
-If the search string (`stopString`) isn’t present in the scanner’s source string, the remainder of the source string is put into `stringValue`, the receiver’s `scanLocation` is advanced to the end of the source string, and the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+If the search string (`stopString`) isn’t present in the scanner’s source string, the remainder of the source string is put into `stringValue`, the receiver’s `scanLocation` is advanced to the end of the source string, and the method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Invoke this method with `NULL` as `stringValue` to simply scan up to a given string.
 

@@ -45,7 +45,7 @@ struct ExampleView: View {
 
 ## See Also
 
-- [@MainActor @preconcurrency struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
   Presents an activity picker view as a sheet.

@@ -20,6 +20,7 @@
 ## See Also
 
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 
 
 ---

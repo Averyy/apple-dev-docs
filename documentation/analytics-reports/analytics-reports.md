@@ -45,7 +45,7 @@ Report column position might change over time. Rely on column names instead of c
 - [App Store Discovery and Engagement](app-store-discovery-and-engagement.md)
   Analyze how users interact with your app on the App Store.
 - [App Store Web Preview](app-store-web-preview.md)
-  Analyze how users engage with your app’s product pages and in-app events on web browsers.
+  Analyze how people engage with your app’s product pages and in-app events on web browsers.
 ### App Store Commerce
 - [App Store Downloads](app-download.md)
   Analyze how many times people download your app on the App Store.
@@ -68,6 +68,10 @@ Report column position might change over time. Rely on column names instead of c
   Review how people use CarPlay in your app.
 - [Platform App Installs](platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
+- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+  Analyze how often people run shortcuts with your app’s actions.
+- [Shortcut App Usage](shortcut-app-usage.md)
+  Analyze how often people use a shortcut action in your app.
 ### Framework Usage
 - [AccessorySetupKit Accessory Picker Sessions](accessorysetupkit-accessory-picker-sessions.md)
   Analyze how many people use your app to set up accessories by using AccessorySetupKit.
@@ -245,6 +249,28 @@ Report column position might change over time. Rely on column names instead of c
   This report details percentage of devices that had your web browser application selected as default from the Browser Choice screen.
 - [Default Browser Usage Rate](default-browser-usage-rate.md)
   Review percentage of devices where your browser app is set as the default web browser.
+- [iBeacon Add Region Usage](ibeacon-add-region-usage.md)
+  Analyze how your app uses the iBeacon Add Region API.
+- [App Extended Launch Usage](app-extended-launch-usage.md)
+  Understand your app’s use of extended launch.
+- [File-System Events API Usage](file-system-events-api-usage.md)
+  Analyze how many file-system events resources your app uses.
+- [iBeacon Ranging Usage](ibeacon-ranging-usage.md)
+  Review information about how your app uses the iBeacon Ranging API.
+- [iBeacon Stop Monitoring for Region Usage](ibeacon-stop-monitoring-for-region-usage.md)
+  Analyze how frequently your app uses the iBeacon Stop Monitoring for Region API.
+- [Face-Driven Auto Exposure and Auto Focus Usage](face-driven-auto-exposure-and-auto-focus-usage.md)
+  Analyze how people use face-driven auto exposure (AE) and auto focus (AF) in your app.
+- [Photo Capture Usage](photo-capture-usage.md)
+  Analyze how your app uses Photo capture in photos.
+- [ProRes Video Usage](prores-video-usage.md)
+  Review how people use ProRes videos in your app.
+- [Nearby Interaction Sessions](nearby-interaction-sessions.md)
+  Analyze how often your app starts an Ultra Wideband (UWB) ranging session through Nearby Interaction.
+- [App HangTracer Usage](app-hangtracer-usage.md)
+  Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
+- [Video Streaming Duration](video-streaming-duration.md)
+  Review how people use video streaming in your app.
 - [Wi-Fi Known Network Modifications](wi-fi-known-network-modifications.md)
   Analyze details about people adding and removing known networks by using Wi-Fi manager in your app.
 ### Performance
@@ -280,6 +306,12 @@ Report column position might change over time. Rely on column names instead of c
   Review how your app uses Spotlight queries.
 - [Streaming Downloads Performance](streaming-downloads-performance.md)
   Review download performance when using the AVAssetDownloadTask APIs in your apps.
+- [App Neural Footprint](app-neural-footprint.md)
+  Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
+- [Embedding Generation](embedding-generation.md)
+  Analyze details about embedding generation throughput in your app.
+- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
+  Analyze how often people use your app for eSim install and the success rate.
 - [Streaming Playback Performance](streaming-playback-performance.md)
   Review playback performance when using the AVPlayerItem APIs in your apps.
 

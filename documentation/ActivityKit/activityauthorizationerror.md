@@ -52,20 +52,6 @@ enum ActivityAuthorizationError
   An integer value that represents the error code.
 - [static var errorDomain: String](activityauthorizationerror/errordomain.md)
   The domain for errors that can happen when starting a Live Activity.
-### Operators
-- [static func == (ActivityAuthorizationError, ActivityAuthorizationError) -> Bool](activityauthorizationerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](activityauthorizationerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](activityauthorizationerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CustomNSError Implementations](activityauthorizationerror/customnserror-implementations.md)
-- [Equatable Implementations](activityauthorizationerror/equatable-implementations.md)
-- [Error Implementations](activityauthorizationerror/error-implementations.md)
-- [LocalizedError Implementations](activityauthorizationerror/localizederror-implementations.md)
 
 ## Relationships
 

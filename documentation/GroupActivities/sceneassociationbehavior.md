@@ -57,11 +57,6 @@ func scene(_ scene: UIScene,
   A behavior that matches the activity to a scene using a custom string that you supply.
 - [static let none: SceneAssociationBehavior](sceneassociationbehavior/none.md)
   A behavior that doesn’t match any scenes to the activity.
-### Operators
-- [static func == (SceneAssociationBehavior, SceneAssociationBehavior) -> Bool](sceneassociationbehavior/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](sceneassociationbehavior/equatable-implementations.md)
 
 ## Relationships
 

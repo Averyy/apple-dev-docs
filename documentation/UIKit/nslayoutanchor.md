@@ -54,13 +54,13 @@ For more information on the anchor properties, see [`bottomAnchor`](https://deve
 - [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(lessthanorequalto:constant:).md)
   Returns a constraint that defines one item’s attribute as less than or equal to another item’s attribute plus a constant offset.
 ### Debugging the anchor
-- [var constraintsAffectingLayout: [NSLayoutConstraint] { get }](../AppKit/NSLayoutAnchor/constraintsAffectingLayout.md)
+- [var constraintsAffectingLayout: [NSLayoutConstraint]](../AppKit/NSLayoutAnchor/constraintsAffectingLayout.md)
   The constraints that impact the layout of the anchor.
-- [var hasAmbiguousLayout: Bool { get }](../AppKit/NSLayoutAnchor/hasAmbiguousLayout.md)
+- [var hasAmbiguousLayout: Bool](../AppKit/NSLayoutAnchor/hasAmbiguousLayout.md)
   A Boolean value indicating whether the constraints impacting the anchor specify its location ambiguously.
-- [var name: String { get }](../AppKit/NSLayoutAnchor/name.md)
+- [var name: String](../AppKit/NSLayoutAnchor/name.md)
   The name assigned to the anchor for debugging purposes.
-- [weak var item: AnyObject? { get }](../AppKit/NSLayoutAnchor/item.md)
+- [var item: AnyObject?](../AppKit/NSLayoutAnchor/item.md)
   The layout item used to calculate the anchor’s position.
 
 ## Relationships

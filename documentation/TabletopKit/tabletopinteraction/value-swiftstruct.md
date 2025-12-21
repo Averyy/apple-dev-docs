@@ -30,6 +30,11 @@ struct Value
   the current phase of the overall interaction
 - [TabletopInteraction.Value.Phase](tabletopinteraction/value-swift.struct/phase-swift.enum.md)
   The stages of players interacting with equipment on the table.
+### Getting the gestures
+- [var gesture: TabletopInteraction.Value.Gesture?](tabletopinteraction/value-swift.struct/gesture-swift.property.md)
+  If this is interaction is currently gesture driven, contains gesture specific additional information
+- [TabletopInteraction.Value.Gesture](tabletopinteraction/value-swift.struct/gesture-swift.struct.md)
+  A structure that provides details specific to a gesture driven interaction.
 ### Getting the proposed locations
 - [var proposedDestination: TabletopInteraction.Destination?](tabletopinteraction/value-swift.struct/proposeddestination.md)
   The proposed destination of the main interaction object, computed from the current pose of the object. During a toss simulation, the proposed destination is only updated if there is only one tossed equipment and it is the currently controlled equipment.
@@ -49,16 +54,11 @@ struct Value
   Identifier to recognize different interactions from one another
 - [var playerID: PlayerIdentifier](tabletopinteraction/value-swift.struct/playerid.md)
   The player who is performing the interaction
-### Structures
-- [TabletopInteraction.Value.Gesture](tabletopinteraction/value-swift.struct/gesture-swift.struct.md)
-  A structure that provides details specific to a gesture driven interaction.
-### Instance Properties
+### Getting the interaction properties
 - [var configuration: TabletopInteraction.Configuration](tabletopinteraction/value-swift.struct/configuration.md)
   The current configuration of this interaction
 - [var constants: TabletopInteraction.Constants](tabletopinteraction/value-swift.struct/constants.md)
   The constants of this interaction
-- [var gesture: TabletopInteraction.Value.Gesture?](tabletopinteraction/value-swift.struct/gesture-swift.property.md)
-  If this is interaction is currently gesture driven, contains gesture specific additional information
 - [var initialPose: Pose3D](tabletopinteraction/value-swift.struct/initialpose.md)
   The pose of the equipment that the interaction was started with
 

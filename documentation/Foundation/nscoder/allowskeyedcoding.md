@@ -22,7 +22,7 @@ var allowsKeyedCoding: Bool { get }
 
 #### Discussion
 
-[`false`](https://developer.apple.com/documentation/swift/false) by default. Concrete subclasses that support keyed coding, such as `NSKeyedArchiver`, need to override this property to return [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) by default. Concrete subclasses that support keyed coding, such as `NSKeyedArchiver`, need to override this property to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

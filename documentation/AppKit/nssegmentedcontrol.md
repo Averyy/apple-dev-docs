@@ -32,13 +32,13 @@ The features of a segmented control include the following:
 
 ## Topics
 
-### Creating a Segmented Control
+### Creating a segmented control
 - [convenience init(images: [NSImage], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](nssegmentedcontrol/init(images:trackingmode:target:action:).md)
 - [convenience init(labels: [String], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](nssegmentedcontrol/init(labels:trackingmode:target:action:).md)
-### Configuring the Cell
+### Configuring the cell
 - [class NSSegmentedCell](nssegmentedcell.md)
   An `NSSegmentedCell` object implements the appearance and behavior of a horizontal button divided into multiple segments. This class is used in conjunction with the [`NSSegmentedControl`](nssegmentedcontrol.md) class to implement a segmented control.
-### Specifying the Segment Behavior
+### Specifying the segment behavior
 - [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
   The type of tracking behavior the control exhibits.
 - [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
@@ -47,17 +47,17 @@ The features of a segmented control include the following:
   The visual style used to display the control.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
   The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
-### Specifying Number of Segments
+### Specifying number of segments
 - [var segmentCount: Int](nssegmentedcontrol/segmentcount.md)
   The number of segments in the control.
-### Configuring the Segment Text
+### Configuring the segment text
 - [func label(forSegment: Int) -> String?](nssegmentedcontrol/label(forsegment:).md)
   Returns the label of the specified segment.
 - [func setLabel(String, forSegment: Int)](nssegmentedcontrol/setlabel(_:forsegment:).md)
   Sets the label for the specified segment.
 - [func setAlignment(NSTextAlignment, forSegment: Int)](nssegmentedcontrol/setalignment(_:forsegment:).md)
 - [func alignment(forSegment: Int) -> NSTextAlignment](nssegmentedcontrol/alignment(forsegment:).md)
-### Configuring a Segment Image
+### Configuring a segment image
 - [func setImage(NSImage?, forSegment: Int)](nssegmentedcontrol/setimage(_:forsegment:).md)
   Sets the image for the specified segment.
 - [func image(forSegment: Int) -> NSImage?](nssegmentedcontrol/image(forsegment:).md)
@@ -66,7 +66,7 @@ The features of a segmented control include the following:
   Sets the scaling mode used to display the specified segment’s image.
 - [func imageScaling(forSegment: Int) -> NSImageScaling](nssegmentedcontrol/imagescaling(forsegment:).md)
   Returns the scaling mode used to display the specified segment’s image.
-### Configuring a Segment Menu
+### Configuring a segment menu
 - [func setMenu(NSMenu?, forSegment: Int)](nssegmentedcontrol/setmenu(_:forsegment:).md)
   Sets the menu for the specified segment.
 - [func menu(forSegment: Int) -> NSMenu?](nssegmentedcontrol/menu(forsegment:).md)
@@ -75,7 +75,7 @@ The features of a segmented control include the following:
 - [func showsMenuIndicator(forSegment: Int) -> Bool](nssegmentedcontrol/showsmenuindicator(forsegment:).md)
 - [var isSpringLoaded: Bool](nssegmentedcontrol/isspringloaded.md)
   A Boolean value that indicates whether spring loading is enabled for the control.
-### Managing the Selected Segment
+### Managing the selected segment
 - [var selectedSegment: Int](nssegmentedcontrol/selectedsegment.md)
   The index of the selected segment of the control, or `-1` if no segment is selected.
 - [var indexOfSelectedItem: Int](nssegmentedcontrol/indexofselecteditem.md)
@@ -89,7 +89,7 @@ The features of a segmented control include the following:
   The color of the selected segment’s bezel, in appearances that support it.
 - [var doubleValueForSelectedSegment: Double](nssegmentedcontrol/doublevalueforselectedsegment.md)
   When the tracking mode for the control is set to use a momentary accelerator, returns a value for the selected segment.
-### Adjusting the Segment Spacing
+### Adjusting the segment spacing
 - [func setWidth(CGFloat, forSegment: Int)](nssegmentedcontrol/setwidth(_:forsegment:).md)
   Sets the width of the specified segment.
 - [func width(forSegment: Int) -> CGFloat](nssegmentedcontrol/width(forsegment:).md)
@@ -99,12 +99,15 @@ The features of a segmented control include the following:
 - [var activeCompressionOptions: NSUserInterfaceCompressionOptions](nssegmentedcontrol/activecompressionoptions.md)
 - [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](nssegmentedcontrol/compress(withprioritizedcompressionoptions:).md)
 - [func minimumSize(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]) -> NSSize](nssegmentedcontrol/minimumsize(withprioritizedcompressionoptions:).md)
-### Enabling and Disabling Segments
+### Specifying the border shape
+- [var borderShape: NSControl.BorderShape](nssegmentedcontrol/bordershape.md)
+- [NSControl.BorderShape](nscontrol/bordershape.md)
+### Enabling and disabling segments
 - [func setEnabled(Bool, forSegment: Int)](nssegmentedcontrol/setenabled(_:forsegment:).md)
   Sets the enabled state of the specified segment
 - [func isEnabled(forSegment: Int) -> Bool](nssegmentedcontrol/isenabled(forsegment:).md)
   Returns a Boolean value indicating whether the specified segment is enabled.
-### Managing Tags and Tool Tips
+### Managing tags and tooltips
 - [func tag(forSegment: Int) -> Int](nssegmentedcontrol/tag(forsegment:).md)
 - [func setTag(Int, forSegment: Int)](nssegmentedcontrol/settag(_:forsegment:).md)
 - [func setToolTip(String?, forSegment: Int)](nssegmentedcontrol/settooltip(_:forsegment:).md)

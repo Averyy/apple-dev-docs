@@ -145,8 +145,10 @@ These error codes are for [`NSError`](nserror.md) objects in the domain [`NSURLE
 - [static var zeroByteResource: URLError.Code](urlerror/zerobyteresource.md)
   A server reported that a URL has a non-zero content length, but terminated the network connection gracefully without sending any data.
 - [URLError.Code](urlerror/code.md)
+  The error code itself.
 ### Instance Properties
 - [var uploadTaskResumeData: Data?](urlerror/uploadtaskresumedata.md)
+  An opaque data blob to resume a failed upload task.
 
 ## Relationships
 

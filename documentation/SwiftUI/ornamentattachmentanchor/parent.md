@@ -6,7 +6,7 @@
 The anchor point for the ornament expressed as a 3D unit point relative to its parent.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

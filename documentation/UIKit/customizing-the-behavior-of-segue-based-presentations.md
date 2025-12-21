@@ -25,7 +25,7 @@ For more information about how UIKit performs segues involving the Show and Show
 
 ##### Prevent a Segue Based on Dynamic Conditions
 
-When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the [`shouldPerformSegue(withIdentifier:sender:)`](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md) method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return [`false`](https://developer.apple.com/documentation/swift/false) if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning [`false`](https://developer.apple.com/documentation/swift/false) causes the segue to fail silently.
+When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the [`shouldPerformSegue(withIdentifier:sender:)`](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md) method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return [`false`](https://developer.apple.com/documentation/Swift/false) if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning [`false`](https://developer.apple.com/documentation/Swift/false) causes the segue to fail silently.
 
 ##### Pass Data to the Presented View Controller
 

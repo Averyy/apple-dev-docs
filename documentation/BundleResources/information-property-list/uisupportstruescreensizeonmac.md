@@ -10,7 +10,7 @@ A Boolean value that indicates whether your iPad app supports arbitrary screen s
 
 #### Discussion
 
-To declare support for arbitrary screen sizes and resolutions when running your iPad app in macOS, add this key to your app’s `Info.plist` file and set its value to [`true`](https://developer.apple.com/documentation/swift/true). This key has no effect when:
+To declare support for arbitrary screen sizes and resolutions when running your iPad app in macOS, add this key to your app’s `Info.plist` file and set its value to [`true`](https://developer.apple.com/documentation/Swift/true). This key has no effect when:
 
 - The app supports iPad multitasking and resizable windows. For more information, see [`UIRequiresFullScreen`](information-property-list/uirequiresfullscreen.md).
 - The app is running on other Apple platforms.

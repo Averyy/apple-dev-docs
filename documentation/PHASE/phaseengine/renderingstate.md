@@ -33,6 +33,7 @@ Access this property to check the engine’s playback status. The value reflects
   Stops all audio playback.
 - [func update()](phaseengine/update.md)
   Processes app commands and increments framework processing.
+- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
 
 
 ---

@@ -19,7 +19,7 @@ var isCapturingStillImage: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when a still image is being captured, and [`false`](https://developer.apple.com/documentation/swift/false) when no still image capture is underway.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when a still image is being captured, and [`false`](https://developer.apple.com/documentation/Swift/false) when no still image capture is underway.
 
 This property supports key-value observing.
 

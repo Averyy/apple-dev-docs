@@ -20,7 +20,7 @@ protocol UIAccessibilityContentSizeCategoryImageAdjusting : NSObjectProtocol
 
 #### Overview
 
-Objects adopt this protocol when they support scaling image assets to the size required by the accessibility content size categories. Typically, an object sets the [`adjustsImageSizeForAccessibilityContentSizeCategory`](uiaccessibilitycontentsizecategoryimageadjusting/adjustsimagesizeforaccessibilitycontentsizecategory.md) property to [`true`](https://developer.apple.com/documentation/swift/true) only when its image contains vector data that can scale well to the larger sizes required for accessibility.
+Objects adopt this protocol when they support scaling image assets to the size required by the accessibility content size categories. Typically, an object sets the [`adjustsImageSizeForAccessibilityContentSizeCategory`](uiaccessibilitycontentsizecategoryimageadjusting/adjustsimagesizeforaccessibilitycontentsizecategory.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) only when its image contains vector data that can scale well to the larger sizes required for accessibility.
 
 ## Topics
 

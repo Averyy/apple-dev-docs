@@ -31,29 +31,6 @@ When the framework observes a chair in the physical environment during a scan, i
   A type of chair that swivels.
 - [ChairType.unidentified](chairtype/unidentified.md)
   An uncategorized chair type.
-### Identifying a chair type
-- [var shortIdentifier: String](chairtype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a chair type
-- [static var parentCategory: CapturedElementCategory?](chairtype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a chair type
-- [init?(rawValue: String)](chairtype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](chairtype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ChairType.AllCases](chairtype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [ChairType.RawValue](chairtype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [ChairType]](chairtype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](chairtype/equatable-implementations.md)
-- [RawRepresentable Implementations](chairtype/rawrepresentable-implementations.md)
 
 ## Relationships
 

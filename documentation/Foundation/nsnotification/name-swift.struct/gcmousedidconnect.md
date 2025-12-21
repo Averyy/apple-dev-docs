@@ -23,6 +23,8 @@ static let GCMouseDidConnect: NSNotification.Name
 
 The notification object is a [`GCMouse`](https://developer.apple.com/documentation/GameController/GCMouse) object that represents the mouse.
 
+The system posts this notification on the main actor.
+
 ## See Also
 
 - [static let GCControllerDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidconnect.md)

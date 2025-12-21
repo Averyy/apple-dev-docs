@@ -26,7 +26,7 @@ A new [`MTLHeap`](mtlheap.md) instance if the method completed successfully; oth
 
 #### Discussion
 
-For more information about using heaps, see [`Memory Heaps`](memory-heaps.md).
+For more information about using heaps, see [`Memory heaps`](memory-heaps.md).
 
 ## Parameters
 

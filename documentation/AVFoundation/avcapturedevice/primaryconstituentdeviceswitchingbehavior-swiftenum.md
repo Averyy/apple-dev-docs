@@ -26,7 +26,7 @@ When multiple constituent cameras can achieve a requested zoom factor, the virtu
 
 ## Topics
 
-### Switching Behaviors
+### Switching behaviors
 - [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md)
   The device doesn’t support constituent device switching.
 - [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md)

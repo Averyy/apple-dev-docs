@@ -17,7 +17,7 @@ func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd d
 
 #### Discussion
 
-The behavior of this method is somewhat different in macOS 10.4 and later versus OS X v10.3. In OS X v10.3, the sheet displays whatever certificates you pass in the `certificates` parameter (provided the `showGroup` parameter is set to [`true`](https://developer.apple.com/documentation/swift/true)). Starting with OS X v10.4, the sheet displays the leaf certificate (that is, the first certificate in the array you pass) plus any other certificates in the certificate chain that the Security Server can find. If you include all of the certificates in the chain in the `certificates` parameter, you can ensure that the same certificates are displayed whatever the version of the operating system, and may decrease the time required to find and display the certificates in macOS 10.4 and later.
+The behavior of this method is somewhat different in macOS 10.4 and later versus OS X v10.3. In OS X v10.3, the sheet displays whatever certificates you pass in the `certificates` parameter (provided the `showGroup` parameter is set to [`true`](https://developer.apple.com/documentation/Swift/true)). Starting with OS X v10.4, the sheet displays the leaf certificate (that is, the first certificate in the array you pass) plus any other certificates in the certificate chain that the Security Server can find. If you include all of the certificates in the chain in the `certificates` parameter, you can ensure that the same certificates are displayed whatever the version of the operating system, and may decrease the time required to find and display the certificates in macOS 10.4 and later.
 
 The delegate method has the following signature:
 

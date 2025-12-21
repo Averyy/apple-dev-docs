@@ -10,7 +10,7 @@ To integrate your app’s document viewing and editing capabilities with Siri an
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-For example, if your app allows people to view and rotate a document, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.reader` domain and the [`rotatePages`](assistantschemas/readerintent/rotatepages.md) schema:
+For example, if your app allows people to view and rotate a document, use the [`AppIntent(schema:)`](appintent(schema:).md) macro and provide the assistant schema that consists of the `.reader` domain and the [`rotatePages`](assistantschemas/readerintent/rotatepages.md) schema:
 
 ```swift
 @AppIntent(schema: .reader.rotatePages)
@@ -28,7 +28,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ##### Make Sure Your Entity Meets Requirements
 
-If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `ReaderPageEntity`. The following code snippet shows how the `ReaderPageEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
+If you use app entities to describe custom data types, annotate the app entity implementation with the [`AppEntity(schema:)`](appentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `ReaderPageEntity`. The following code snippet shows how the `ReaderPageEntity` implementation uses the [`AppEntity(schema:)`](appentity(schema:).md) macro:
 
 ```swift
 @AppEntity(schema: .reader.document)
@@ -55,7 +55,7 @@ For a list of available app entity schemas in the `.reader` domain, see [`Assist
 
 ##### Make Sure Your Enumeration Meets Requirements
 
-To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.reader` domain and a schema to it. The following example uses the [`documentKind`](assistantschemas/readerenum/documentkind.md) schema:
+To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AppEnum(schema:)`](appenum(schema:).md) macro. Then, pass the `.reader` domain and a schema to it. The following example uses the [`documentKind`](assistantschemas/readerenum/documentkind.md) schema:
 
 ```swift
 import Foundation

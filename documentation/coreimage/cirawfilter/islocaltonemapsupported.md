@@ -21,7 +21,7 @@ var isLocalToneMapSupported: Bool { get }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), you can adjust the amount of local tone curve to apply to the image by setting [`localToneMapAmount`](cirawfilter/localtonemapamount.md).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), you can adjust the amount of local tone curve to apply to the image by setting [`localToneMapAmount`](cirawfilter/localtonemapamount.md).
 
 ## See Also
 

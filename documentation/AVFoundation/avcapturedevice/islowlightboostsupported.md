@@ -19,7 +19,7 @@ var isLowLightBoostSupported: Bool { get }
 
 #### Discussion
 
-You can set the capture device’s [`automaticallyEnablesLowLightBoostWhenAvailable`](avcapturedevice/automaticallyenableslowlightboostwhenavailable.md) property only if this property is [`true`](https://developer.apple.com/documentation/swift/true).
+You can set the capture device’s [`automaticallyEnablesLowLightBoostWhenAvailable`](avcapturedevice/automaticallyenableslowlightboostwhenavailable.md) property only if this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 This property is key-value observable.
 

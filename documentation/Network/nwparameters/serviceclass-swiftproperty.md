@@ -3,7 +3,7 @@
 **Framework**: Network  
 **Kind**: property
 
-A level of service quality for connections to use for Cellular Network Slicing.
+The traffic characteristics network connections send and receive.
 
 **Availability**:
 - iOS 12.0+
@@ -22,12 +22,18 @@ final var serviceClass: NWParameters.ServiceClass { get set }
 
 #### Discussion
 
+The `serviceClass` you use tells the system and compatible networks how to prioritize transmitted packets on Wi-Fi, Ethernet, or cellular for a given connection. Describe whether your traffic favors low latency (for immediacy), or high throughput (for bulk transfers), and the transport may schedule your outgoing packets to reflect that tradeoff.
+
+Use [`NWParameters.ServiceClass.bestEffort`](nwparameters/serviceclass-swift.enum/besteffort.md) by default. Choose a different class only when you have a specific requirement or measurement showing that another choice improves your results on the networks your app uses.
+
+Certain cellular networks also offer Network Slicing, which can use `serviceClass` to isolate traffic based on its expected characteristics.
+
+#### Enabling Network Slicing
+
 There are two steps to enable Cellular Network Slicing:
 
 - Set the entitlements in your property list for [`5G Network Slicing App Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.appcategory) and [`5G Network Slicing Traffic Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.trafficcategory). If you don’t entitle your app by specifying both these entitlements, your apps network connections won’t be using Cellular Network Slicing, even if supported by the carrier.
 - Set this to the appropriate [`NWParameters.ServiceClass`](nwparameters/serviceclass-swift.enum.md).
-
-.
 
 ## See Also
 
@@ -36,7 +42,7 @@ There are two steps to enable Cellular Network Slicing:
 - [NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.enum.md)
   Modes in which a connection can support multipath protocols.
 - [NWParameters.ServiceClass](nwparameters/serviceclass-swift.enum.md)
-  Indicates the traffic characteristics of the network connections used by Cellular Network Slicing.
+  Indicates how the system prioritizes transmitted traffic by your latency and throughput needs.
 - [var allowFastOpen: Bool](nwparameters/allowfastopen.md)
   A Boolean that enables sending application data with protocol handshakes.
 - [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.property.md)

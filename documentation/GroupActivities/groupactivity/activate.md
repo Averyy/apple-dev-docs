@@ -21,8 +21,8 @@ func activate() async throws -> Bool
 
 ## Mentions
 
-- [Presenting SharePlay activities from your app’s UI](promoting-shareplay-activities-from-your-apps-ui.md)
 - [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+- [Presenting SharePlay activities from your app’s UI](promoting-shareplay-activities-from-your-apps-ui.md)
 
 #### Discussion
 

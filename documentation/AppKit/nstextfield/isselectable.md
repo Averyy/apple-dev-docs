@@ -17,7 +17,7 @@ var isSelectable: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field becomes selectable but not editable. Use [`isEditable`](nstextfield/iseditable.md) to make the text field selectable and editable. If [`false`](https://developer.apple.com/documentation/swift/false), the text is neither editable nor selectable.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the text field becomes selectable but not editable. Use [`isEditable`](nstextfield/iseditable.md) to make the text field selectable and editable. If [`false`](https://developer.apple.com/documentation/Swift/false), the text is neither editable nor selectable.
 
 ## See Also
 

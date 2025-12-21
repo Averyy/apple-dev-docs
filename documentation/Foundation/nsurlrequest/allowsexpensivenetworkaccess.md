@@ -22,7 +22,7 @@ var allowsExpensiveNetworkAccess: Bool { get }
 
 #### Discussion
 
-The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive. If there are no nonexpensive network interfaces available and the request’s [`allowsExpensiveNetworkAccess`](nsurlrequest/allowsexpensivenetworkaccess.md) property is [`false`](https://developer.apple.com/documentation/swift/false), any task created from the request fails. In this case, the error provided when the task fails has a [`networkUnavailableReason`](urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonExpensive`](nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonexpensive.md).
+The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive. If there are no nonexpensive network interfaces available and the request’s [`allowsExpensiveNetworkAccess`](nsurlrequest/allowsexpensivenetworkaccess.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), any task created from the request fails. In this case, the error provided when the task fails has a [`networkUnavailableReason`](urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonExpensive`](nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonexpensive.md).
 
 Limit your app’s of use of expensive network access to user-initiated tasks, and put off discretionary tasks until a nonexpensive interface becomes available.
 

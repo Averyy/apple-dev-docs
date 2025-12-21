@@ -6,7 +6,7 @@
 A type that provides access to the timing information and data types you need to render a single frame of content.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -36,6 +36,8 @@ Separate the work you do for each frame into two phases: the update phase and th
 - [func endUpdate()](layerrenderer/frame/endupdate.md)
   Notifies Compositor Services that you finished updating the app-specific content you need to render the frame.
 ### Getting the drawable environment
+- [func queryDrawables() -> [LayerRenderer.Drawable]](layerrenderer/frame/querydrawables.md)
+  Returns the array of drawables expected to be used for the given frame. These drawables each have textures, transforms and timing information for drawing the frame.
 - [func queryDrawable() -> LayerRenderer.Drawable?](layerrenderer/frame/querydrawable.md)
   Retrieves the frame’s drawable, which contains the textures and drawing environment for the frame.
 ### Reporting frame submission times
@@ -62,8 +64,6 @@ Separate the work you do for each frame into two phases: the update phase and th
 - [func monocularFrustumMatrix(convention: AxisDirectionConvention, viewIndex: Int, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/monocularfrustummatrix(convention:viewindex:increasetangents:depthrange:).md)
 - [func monocularFrustumMatrixForDrawableTarget(drawableTarget: LayerRenderer.Drawable.Target, convention: AxisDirectionConvention, viewIndex: Int, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/monocularfrustummatrixfordrawabletarget(drawabletarget:convention:viewindex:increasetangents:depthrange:).md)
   Returns the transform which can be used for monocular frustum culling for given view. A matrix to convert between the device coordinate space to normalized device coordinate space This should be acquired between starting and submitting a frame. Renderer should not utilize this transform for actual rendering output.
-- [func queryDrawables() -> [LayerRenderer.Drawable]](layerrenderer/frame/querydrawables.md)
-  Returns the array of drawables expected to be used for the given frame. These drawables each have textures, transforms and timing information for drawing the frame.
 
 ## Relationships
 

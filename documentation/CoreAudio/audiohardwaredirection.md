@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: enum
 
+An enum representing audio stream direction.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

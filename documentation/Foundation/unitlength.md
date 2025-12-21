@@ -107,6 +107,7 @@ The [`UnitLength`](unitlength.md) class defines its [`baseUnit()`](dimension/bas
   The parsecs unit of length.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitLength>)](unitlength/init(forlocale:usage:).md)
+  Creates a `UnitLength` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

@@ -22,9 +22,6 @@ enum Action
 
 ## Topics
 
-### Operators
-- [static func == (PartRenderer.Action, PartRenderer.Action) -> Bool](partrenderer/action/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [PartRenderer.Action.continue](partrenderer/action/continue.md)
   Continue rendering
@@ -32,14 +29,6 @@ enum Action
   Skip this part (only in response to beginPart)
 - [PartRenderer.Action.stop](partrenderer/action/stop.md)
   Stop rendering
-### Instance Properties
-- [var hashValue: Int](partrenderer/action/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](partrenderer/action/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](partrenderer/action/equatable-implementations.md)
 
 ## Relationships
 

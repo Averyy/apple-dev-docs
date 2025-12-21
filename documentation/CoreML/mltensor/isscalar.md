@@ -20,6 +20,17 @@ A Boolean value indicating whether the tensor is a scalar (when the `rank` is eq
 var isScalar: Bool { get }
 ```
 
+## See Also
+
+- [var rank: Int](mltensor/rank.md)
+  The number of dimensions of the tensor.
+- [var scalarCount: Int](mltensor/scalarcount.md)
+  The number of scalar elements in the tensor.
+- [var scalarType: any MLTensorScalar.Type](mltensor/scalartype.md)
+  The type of scalars in the tensor.
+- [var shape: [Int]](mltensor/shape.md)
+  The shape of the tensor.
+
 
 ---
 

@@ -54,8 +54,6 @@ Categorical summary includes 5 statistics:
   Creates a type-erased categorical summary from a typed categorical summary.
 - [init<T>(CategoricalSummary<T>)](anycategoricalsummary/init(_:)-8innt.md)
   Creates a type-erased categorical summary from a typed categorical summary.
-### Default Implementations
-- [Equatable Implementations](anycategoricalsummary/equatable-implementations.md)
 
 ## Relationships
 

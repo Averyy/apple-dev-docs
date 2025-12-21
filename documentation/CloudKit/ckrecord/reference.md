@@ -22,8 +22,8 @@ class Reference
 
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
 - [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+- [Encrypting User Data](encrypting-user-data.md)
 
 #### Overview
 

@@ -465,20 +465,8 @@ enum ConsumerUsage
 - [HIDUsage.ConsumerUsage.volumeIncrement](hidusage/consumerusage/volumeincrement.md)
 - [HIDUsage.ConsumerUsage.weekly](hidusage/consumerusage/weekly.md)
 - [HIDUsage.ConsumerUsage.yellowMenuButton](hidusage/consumerusage/yellowmenubutton.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/consumerusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/consumerusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.ConsumerUsage.RawValue](hidusage/consumerusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/consumerusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/consumerusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/consumerusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

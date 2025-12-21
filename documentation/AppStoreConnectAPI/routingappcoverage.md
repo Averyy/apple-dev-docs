@@ -20,11 +20,10 @@ object RoutingAppCoverage
 - [object RoutingAppCoverage.Attributes](routingappcoverage/attributes-data.dictionary.md)
   Attributes that describe a Routing App Coverages resource.
 - [object RoutingAppCoverage.Relationships](routingappcoverage/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 
-- [object RoutingAppCoverageWithoutIncludesResponse](routingappcoveragewithoutincludesresponse.md)
 - [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
   The request body you use to create a Routing App Coverage.
 - [object RoutingAppCoverageResponse](routingappcoverageresponse.md)

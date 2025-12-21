@@ -17,7 +17,6 @@ The texture used to stroke the shape.
 ## Declaration
 
 ```swift
-@MainActor
 var strokeTexture: SKTexture? { get set }
 ```
 

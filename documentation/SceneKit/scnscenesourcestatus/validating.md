@@ -22,7 +22,7 @@ case validating
 
 #### Discussion
 
-If you specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`checkConsistency`](scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format and reports any format consistency errors.
+If you specify [`true`](https://developer.apple.com/documentation/Swift/true) for the [`checkConsistency`](scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format and reports any format consistency errors.
 
 ## See Also
 

@@ -23,6 +23,7 @@ func state(matching equipmentID: EquipmentIdentifier) -> (any EquipmentState)?
 - [func equipmentIDs(childrenOf: some Equipment) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-432sk.md)
 - [func equipmentIDs(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-f1sp.md)
 - [func entity(matching: EquipmentIdentifier) -> Entity?](tablesnapshot/entity(matching:)-vb9w.md)
+- [func entity(forEquipment: some EntityEquipment) -> Entity?](tablesnapshot/entity(forequipment:).md)
 
 
 ---

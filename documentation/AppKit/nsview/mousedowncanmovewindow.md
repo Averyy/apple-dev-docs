@@ -17,12 +17,12 @@ var mouseDownCanMoveWindow: Bool { get }
 
 #### Discussion
 
-This property lets you determine the region by which a window can be moved. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) if the view is opaque; otherwise, it is set to [`true`](https://developer.apple.com/documentation/swift/true). Subclasses can override this property to return different values based on the event.
+This property lets you determine the region by which a window can be moved. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) if the view is opaque; otherwise, it is set to [`true`](https://developer.apple.com/documentation/Swift/true). Subclasses can override this property to return different values based on the event.
 
 ## See Also
 
 - [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsview/acceptsfirstmouse(for:).md)
-  Overridden by subclasses to return [`true`](https://developer.apple.com/documentation/swift/true) if the view should be sent a [`mouseDown(with:)`](nsresponder/mousedown(with:).md) message for an initial mouse-down event, [`false`](https://developer.apple.com/documentation/swift/false) if not.
+  Returns a Boolean value that indicates whether the view accepts the initial mouse-down event.
 - [func hitTest(NSPoint) -> NSView?](nsview/hittest(_:).md)
   Returns the farthest descendant of the view in the view hierarchy (including itself) that contains a specified point, or `nil` if that point lies completely outside the view.
 - [func isMousePoint(NSPoint, in: NSRect) -> Bool](nsview/ismousepoint(_:in:).md)

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting the ability to authenticate with Face ID.
+A message that tells people why the app is requesting the ability to authenticate with Face ID.
 
 **Availability**:
 - iOS 11.0+

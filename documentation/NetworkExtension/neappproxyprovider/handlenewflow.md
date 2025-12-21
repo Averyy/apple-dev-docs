@@ -24,7 +24,7 @@ func handleNewFlow(_ flow: NEAppProxyFlow) -> Bool
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to indicate that the App Proxy Provider will handle the flow. Return [`false`](https://developer.apple.com/documentation/swift/false) to indicate that the flow should be closed.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that the App Proxy Provider will handle the flow. Return [`false`](https://developer.apple.com/documentation/Swift/false) to indicate that the flow should be closed.
 
 #### Discussion
 

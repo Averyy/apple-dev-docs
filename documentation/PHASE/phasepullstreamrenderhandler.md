@@ -4,12 +4,12 @@
 **Kind**: typealias
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -22,6 +22,8 @@ typealias PHASEPullStreamRenderHandler = (UnsafeMutablePointer<ObjCBool>, Unsafe
 An OSStatus result code. If an error is returned, the audio data should be assumed to be invalid.
 
 #### Discussion
+
+Block to supply audio data to PHASEPullStreamNode
 
 ```None
 The caller must supply valid buffers in outputData's mBuffers' mData and mDataByteSize.

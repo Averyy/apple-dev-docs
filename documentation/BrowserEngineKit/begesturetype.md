@@ -31,9 +31,6 @@ enum BEGestureType
 - [BEGestureType.twoFingerSingleTap](begesturetype/twofingersingletap.md)
 ### Initializers
 - [init?(rawValue: Int)](begesturetype/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](begesturetype/equatable-implementations.md)
-- [RawRepresentable Implementations](begesturetype/rawrepresentable-implementations.md)
 
 ## Relationships
 

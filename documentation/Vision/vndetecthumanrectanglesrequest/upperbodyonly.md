@@ -21,7 +21,7 @@ var upperBodyOnly: Bool { get set }
 
 #### Discussion
 
-The default value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that the request requires detecting a person’s upper body only to find the bound box around it.
+The default value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates that the request requires detecting a person’s upper body only to find the bound box around it.
 
 
 ---

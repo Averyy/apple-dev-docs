@@ -6,12 +6,12 @@
 A unique push token that may be used to deliver updates for widgets and widget relevances.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ let token: Data
 
 #### Discussion
 
-This token is valid until told otherwise through the `WidgetPushHandler/pushTokenDidChange(_:)` method on your push handler.
+This token is valid until told otherwise through the [`pushTokenDidChange(_:widgets:)`](widgetpushhandler/pushtokendidchange(_:widgets:).md) method on your push handler.
 
 
 ---

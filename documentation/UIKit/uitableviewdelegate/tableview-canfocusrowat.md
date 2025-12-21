@@ -21,11 +21,11 @@ optional func tableView(_ tableView: UITableView, canFocusRowAt indexPath: Index
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row indicated by `indexPath`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the row indicated by `indexPath`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The functionality of this delegate method is equivalent to overriding the cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method. If [`true`](https://developer.apple.com/documentation/swift/true) is returned, then the cell at the specified index path is focusable, meaning none of its contents can be focused. Returning[`false`](https://developer.apple.com/documentation/swift/false) means the cell itself is not focusable, however this does not prevent any of its contents from being focused. If this method is not implemented, then the return value is assumed to be [`true`](https://developer.apple.com/documentation/swift/true).
+The functionality of this delegate method is equivalent to overriding the cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method. If [`true`](https://developer.apple.com/documentation/Swift/true) is returned, then the cell at the specified index path is focusable, meaning none of its contents can be focused. Returning[`false`](https://developer.apple.com/documentation/Swift/false) means the cell itself is not focusable, however this does not prevent any of its contents from being focused. If this method is not implemented, then the return value is assumed to be [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

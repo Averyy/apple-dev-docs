@@ -3,15 +3,21 @@
 **Framework**: FinanceKit  
 **Kind**: protocol
 
+An extension used to receive updates about changes to data within the finance store.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 protocol BackgroundDeliveryExtension : AppExtension, BackgroundDeliveryExtensionProviding
 ```
+
+#### Overview
+
+Use [`enableBackgroundDelivery(for:frequency:)`](financestore/enablebackgrounddelivery(for:frequency:).md) to enable updates for an extension and see [`BackgroundDeliveryExtensionProviding`](backgrounddeliveryextensionproviding.md) to implement functions for an extension.
 
 ## Relationships
 

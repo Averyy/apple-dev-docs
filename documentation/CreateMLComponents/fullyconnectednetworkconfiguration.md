@@ -25,8 +25,6 @@ struct FullyConnectedNetworkConfiguration
 ### Creating a network configuration
 - [init()](fullyconnectednetworkconfiguration/init.md)
   Creates a default fully-connected-network configuration.
-- [init(from: any Decoder) throws](fullyconnectednetworkconfiguration/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Getting the properties
 - [var batchSize: Int](fullyconnectednetworkconfiguration/batchsize.md)
   The number of examples to use per mini-batch.
@@ -44,19 +42,6 @@ struct FullyConnectedNetworkConfiguration
   The maximum number of iterations.
 - [var randomSeed: Int](fullyconnectednetworkconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations such as column and row subsampling.
-### Operators
-- [static func == (FullyConnectedNetworkConfiguration, FullyConnectedNetworkConfiguration) -> Bool](fullyconnectednetworkconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](fullyconnectednetworkconfiguration/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](fullyconnectednetworkconfiguration/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](fullyconnectednetworkconfiguration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](fullyconnectednetworkconfiguration/equatable-implementations.md)
 
 ## Relationships
 

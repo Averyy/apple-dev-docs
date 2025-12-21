@@ -7,9 +7,9 @@ The `NSExceptionHandlerDelegate` informal protocol describes methods that [`NSEx
 ## Topics
 
 ### Logging and handling exceptions
-- [func exceptionHandler(_ sender: NSExceptionHandler!, shouldHandle exception: NSException!, mask aMask: Int) -> Bool](../ObjectiveC/NSObject-swift.class/exceptionHandler(_:shouldHandle:mask:).md)
+- [func exceptionHandler(NSExceptionHandler!, shouldHandle: NSException!, mask: Int) -> Bool](../ObjectiveC/NSObject-swift.class/exceptionHandler(_:shouldHandle:mask:).md)
   Implemented by the delegate to evaluate whether the delegating exception handler should handle a given exception.
-- [func exceptionHandler(_ sender: NSExceptionHandler!, shouldLogException exception: NSException!, mask aMask: Int) -> Bool](../ObjectiveC/NSObject-swift.class/exceptionHandler(_:shouldLogException:mask:).md)
+- [func exceptionHandler(NSExceptionHandler!, shouldLogException: NSException!, mask: Int) -> Bool](../ObjectiveC/NSObject-swift.class/exceptionHandler(_:shouldLogException:mask:).md)
   Implemented by the delegate to evaluate whether the delegating exception hangler should log a given exception.
 
 

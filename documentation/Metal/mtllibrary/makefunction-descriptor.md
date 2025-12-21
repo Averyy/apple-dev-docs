@@ -31,7 +31,7 @@ A new [`MTLFunction`](mtlfunction.md) instance if the method finds the function 
 ## See Also
 
 - [func makeFunction(name: String) -> (any MTLFunction)?](mtllibrary/makefunction(name:).md)
-  Creates an object that represents a shader function in the library.
+  Creates an instance that represents a shader function in the library.
 - [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
   Asynchronously creates a specialized shader function.
 - [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)

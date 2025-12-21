@@ -30,10 +30,6 @@ Equal to `kCFDateFormatterFullStyle`.
 - [DateFormatter.Style.short](dateformatter/style/short.md)
 - [DateFormatter.Style.medium](dateformatter/style/medium.md)
 - [DateFormatter.Style.long](dateformatter/style/long.md)
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
 
 
 ---

@@ -21,7 +21,7 @@ var audioSettings: [String : Any]? { get }
 
 #### Discussion
 
-The dictionary must contain values for the keys in [`Linear PCM Format Settings`](linear-pcm-format-settings.md).
+The dictionary must contain values for the keys in [`Linear PCM format settings`](linear-pcm-format-settings.md).
 
 Setting the property value to `nil` indicates that the output returns audio samples in an uncompressed format.
 

@@ -6,8 +6,8 @@
 An opaque identifier that represents the cellular service for which to provide operations.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -16,28 +16,13 @@ An opaque identifier that represents the cellular service for which to provide o
 struct CellularServiceID
 ```
 
+## Mentions
+
+- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+
 #### Overview
 
 The number of cellular services may vary across device types.
-
-## Topics
-
-### Encoding and decoding
-- [init(from: any Decoder) throws](cellularserviceid/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](cellularserviceid/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](cellularserviceid/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](cellularserviceid/hashvalue.md)
-  The hash value.
-### Comparing cellular service IDs
-- [static func == (CellularServiceID, CellularServiceID) -> Bool](cellularserviceid/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](cellularserviceid/customstringconvertible-implementations.md)
-- [Equatable Implementations](cellularserviceid/equatable-implementations.md)
 
 ## Relationships
 
@@ -53,7 +38,7 @@ The number of cellular services may vary across device types.
 
 ## See Also
 
-- [let id: CellularServiceID](cellularservicestate/id-swift.property.md)
+- [let id: CellularServiceID](cellularservicestate/id.md)
   The cellular service identifier associated with this instance.
 - [let label: String](cellularservicestate/label.md)
   The label for a service, as set by the person using the device.

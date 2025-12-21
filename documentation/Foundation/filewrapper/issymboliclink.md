@@ -22,7 +22,7 @@ var isSymbolicLink: Bool { get }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the file wrapper object is a symbolic-link file wrapper, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This property contains [`true`](https://developer.apple.com/documentation/Swift/true) when the file wrapper object is a symbolic-link file wrapper, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value contained by this property, if the type of the file on disk has changed.
 

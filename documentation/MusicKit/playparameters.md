@@ -20,22 +20,6 @@ An opaque object that represents parameters to initiate playback of a playable m
 struct PlayParameters
 ```
 
-## Topics
-
-### Operators
-- [static func == (PlayParameters, PlayParameters) -> Bool](playparameters/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](playparameters/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](playparameters/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](playparameters/decodable-implementations.md)
-- [Encodable Implementations](playparameters/encodable-implementations.md)
-- [Equatable Implementations](playparameters/equatable-implementations.md)
-
 ## Relationships
 
 ### Conforms To

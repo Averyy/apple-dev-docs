@@ -6,8 +6,8 @@
 Structure containing the contents of a card.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -31,16 +31,6 @@ struct Content
   Suggestions provided by business.
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/card/content-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/card/content-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing content instances
-- [static func == (RCSService.Business.Card.Content, RCSService.Business.Card.Content) -> Bool](rcsservice/business/card/content-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/card/content-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

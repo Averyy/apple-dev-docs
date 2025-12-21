@@ -18,15 +18,15 @@ var isLowPower: Bool { get }
 
 ## Mentions
 
-- [Finding Multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
+- [Finding multiple GPUs on an Intel-based Mac](finding-multiple-gpus-on-an-intel-based-mac.md)
 
 #### Discussion
 
-Some systems contain multiple GPUs that run with different performance and energy characteristics. At runtime, choose a GPU that best matches your performance needs while considering the current state of the system. For example, your app may choose a lower-power GPU if it doesn’t need the best possible performance on a MacBook Pro that’s running on battery power. For more information on discovering and selecting GPUs at runtime, see [`Multi-GPU Systems`](multi-gpu-systems.md).
+Some systems contain multiple GPUs that run with different performance and energy characteristics. At runtime, choose a GPU that best matches your performance needs while considering the current state of the system. For example, your app may choose a lower-power GPU if it doesn’t need the best possible performance on a MacBook Pro that’s running on battery power. For more information on discovering and selecting GPUs at runtime, see [`Multi-GPU systems`](multi-gpu-systems.md).
 
 > **Note**:  Systems with Apple silicon only have one GPU, which removes the need to choose a GPU.
 
-The property is typically [`true`](https://developer.apple.com/documentation/swift/true) for integrated GPUs and [`false`](https://developer.apple.com/documentation/swift/false) for discrete GPUs. However, an Apple silicon GPU on a Mac sets the property to [`false`](https://developer.apple.com/documentation/swift/false) because it doesn’t need to lower its performance to conserve energy.
+The property is typically [`true`](https://developer.apple.com/documentation/Swift/true) for integrated GPUs and [`false`](https://developer.apple.com/documentation/Swift/false) for discrete GPUs. However, an Apple silicon GPU on a Mac sets the property to [`false`](https://developer.apple.com/documentation/Swift/false) because it doesn’t need to lower its performance to conserve energy.
 
 ## See Also
 

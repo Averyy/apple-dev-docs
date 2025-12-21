@@ -31,26 +31,6 @@ struct Transformer
 ### Performing the transformation
 - [func applied(to: Element, eventHandler: EventHandler?) -> Element](maxabsscaler/transformer/applied(to:eventhandler:).md)
   Scales the input values by `1 / maximumAbsoluteValue`.
-### Operators
-- [static func == (MaxAbsScaler<Element>.Transformer, MaxAbsScaler<Element>.Transformer) -> Bool](maxabsscaler/transformer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](maxabsscaler/transformer/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](maxabsscaler/transformer/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MaxAbsScaler.Transformer.Input](maxabsscaler/transformer/input.md)
-  The input type.
-- [MaxAbsScaler.Transformer.Output](maxabsscaler/transformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](maxabsscaler/transformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](maxabsscaler/transformer/decodable-implementations.md)
-- [Encodable Implementations](maxabsscaler/transformer/encodable-implementations.md)
-- [Equatable Implementations](maxabsscaler/transformer/equatable-implementations.md)
-- [Transformer Implementations](maxabsscaler/transformer/transformer-implementations.md)
 
 ## Relationships
 

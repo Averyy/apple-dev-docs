@@ -17,7 +17,7 @@ func startTracking(at startPoint: NSPoint, in controlView: NSView) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is set to respond continuously or set to respond when the mouse is dragged, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is set to respond continuously or set to respond when the mouse is dragged, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

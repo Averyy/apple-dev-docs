@@ -22,7 +22,7 @@ struct AVVideoApertureMode
 
 ## Topics
 
-### Aperture Modes
+### Aperture modes
 - [static let cleanAperture: AVVideoApertureMode](avvideoaperturemode/cleanaperture.md)
   The pixel aspect ratio and clean aperture will be applied.
 - [static let encodedPixels: AVVideoApertureMode](avvideoaperturemode/encodedpixels.md)

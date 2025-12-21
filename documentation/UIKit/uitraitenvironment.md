@@ -22,12 +22,17 @@ protocol UITraitEnvironment : NSObjectProtocol
 ## Mentions
 
 - [Checking the availability of 3D Touch](checking-the-availability-of-3d-touch.md)
+- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
 
 #### Overview
 
-The iOS interface environment includes traits such as horizontal and vertical size class, display scale, and user interface idiom. To access the trait environment of an object that adopts this protocol, use the [`traitCollection`](uitraitenvironment/traitcollection.md) property. The protocol also provides an overridable method that the system calls when the interface environment changes. Implement this method as part of creating an adaptive iOS app.
+The system represents the iOS interface environment with , such as horizontal and vertical size class, display scale, and user interface idiom. You access the trait environment of an object that adopts this protocol with the [`traitCollection`](uitraitenvironment/traitcollection.md) property.
 
-For more about trait collections, see [`UITraitCollection`](uitraitcollection.md). For the WWDC 2014 presentation on creating adaptive interfaces in iOS, see [`Building Adaptive Apps with UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/wwdc/2014/#216).
+The trait system propagates values from the top of the view hierarchy downward, to every view controller and view in your app. When you modify a trait at any level using trait overrides, that change affects the modified object and all of its descendants. This hierarchical propagation makes it easy to apply configuration changes to entire subtrees of your interface.
+
+For example, setting a trait override on a window scene affects all view controllers and views within that scene. Similarly, setting a trait override on a specific view affects only that view and its subviews.
+
+For more information about how traits propagate through the system, see [`Unleash the UIKit trait system`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10057).
 
 ## Topics
 
@@ -121,16 +126,10 @@ For more about trait collections, see [`UITraitCollection`](uitraitcollection.md
 
 ## See Also
 
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-  Change images and resources dynamically when the screen gamut on your device changes.
 - [class UITraitCollection](uitraitcollection.md)
   A collection of data that represents the environment for an individual element in your app’s user interface.
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-  A type that calls your code in reaction to changes in the trait environment.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
-  A mutable container of traits.
+- [Automatic trait tracking](automatic-trait-tracking.md)
+  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
 - [protocol UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
   A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
 - [protocol UIContentContainer](uicontentcontainer.md)

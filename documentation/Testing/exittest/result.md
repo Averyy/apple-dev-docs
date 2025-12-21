@@ -7,7 +7,7 @@ A type representing the result of an exit test after it has exited and returned 
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

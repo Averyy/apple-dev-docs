@@ -20,7 +20,7 @@ The new traits mask value to be used by [`convert(_:)`](nsfontmanager/convert(_:
 
 #### Discussion
 
-This method is intended to be invoked to query the font traits while the action message (usually [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject/1462311-changefont)) is being invoked when the current font action is either [`NSFontAction.addTraitFontAction`](nsfontaction/addtraitfontaction.md) or [`NSFontAction.removeTraitFontAction`](nsfontaction/removetraitfontaction.md).
+This method is intended to be invoked to query the font traits while the action message (usually [`changeFont:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/changeFont:)) is being invoked when the current font action is either [`NSFontAction.addTraitFontAction`](nsfontaction/addtraitfontaction.md) or [`NSFontAction.removeTraitFontAction`](nsfontaction/removetraitfontaction.md).
 
 ## Parameters
 

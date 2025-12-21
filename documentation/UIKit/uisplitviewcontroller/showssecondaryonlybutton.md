@@ -22,7 +22,7 @@ var showsSecondaryOnlyButton: Bool { get set }
 
 This value only takes effect when the split view controller’s [`style`](uisplitviewcontroller/style-swift.property.md) property is [`UISplitViewController.Style.tripleColumn`](uisplitviewcontroller/style-swift.enum/triplecolumn.md).
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If you set the value to [`true`](https://developer.apple.com/documentation/swift/true), the secondary view controller shows a button that lets a user toggle the display mode to and from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). If you set the value to [`true`](https://developer.apple.com/documentation/Swift/true), the secondary view controller shows a button that lets a user toggle the display mode to and from [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md).
 
 ## See Also
 

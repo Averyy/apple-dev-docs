@@ -17,9 +17,9 @@ var shouldInvalidateLayoutForHighlightChange: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the scrubber invalidates its layout when an item is highlighted. Subclasses should return [`true`](https://developer.apple.com/documentation/swift/true) if the highlight state affects the item layout.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the scrubber invalidates its layout when an item is highlighted. Subclasses should return [`true`](https://developer.apple.com/documentation/Swift/true) if the highlight state affects the item layout.
 
-The base implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+The base implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

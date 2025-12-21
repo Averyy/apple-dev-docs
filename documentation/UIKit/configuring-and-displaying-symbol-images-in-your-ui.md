@@ -150,7 +150,7 @@ Image(systemName: "multiply.circle.fill")
 
 // Create a large scaled symbol image using UIKit.
 var config = UIImage.SymbolConfiguration(scale: .large)
-imageView.image = image.withSymbolConfiguration(config)
+imageView.image = image.applyingSymbolConfiguration(config)
 
 // Create a large scaled symbol image using AppKit.
 var config = NSImage.SymbolConfiguration(scale: .large)

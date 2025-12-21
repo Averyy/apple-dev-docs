@@ -4,18 +4,25 @@
 **Kind**: var
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 let SCStreamErrorDomain: String
 ```
+
+## See Also
+
+- [enum RPRecordingErrorCode](rprecordingerrorcode.md)
+  The ReplayKit error domain codes.
+- [let RPRecordingErrorDomain: String](rprecordingerrordomain.md)
+  The ReplayKit error domain.
 
 
 ---

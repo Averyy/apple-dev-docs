@@ -1,4 +1,4 @@
-# Setting Resource Storage Modes
+# Setting resource storage modes
 
 **Framework**: Metal
 
@@ -13,11 +13,11 @@ Storage modes are only set when creating an instance, and the system default all
 
 > ❗ **Important**:  Use the system default if your data is available to both the CPU and GPU. When you manually select shared or managed mode, your app may not run on some hardware.
 
-You perform the same synchronization tasks to ensure GPU and CPU memory coherency in both default modes. To check for GPU architecture and capabilities, use the [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method instead of the [`storageMode`](mtlresource/storagemode.md) property. See [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md) for more information.
+You perform the same synchronization tasks to ensure GPU and CPU memory coherency in both default modes. To check for GPU architecture and capabilities, use the [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method instead of the [`storageMode`](mtlresource/storagemode.md) property. See [`Detecting GPU features and Metal software versions`](detecting-gpu-features-and-metal-software-versions.md) for more information.
 
 Use [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md), only available on Apple silicon, when you manage your own storage, or want to run a GPU task that requires temporary resources. For tasks that share memory on the GPU, use [`MTLStorageMode.private`](mtlstoragemode/private.md) storage. This article includes examples of how to set the storage mode for a buffer or texture.
 
-For more guidance on which mode to choose, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md) and [`Choosing a Resource Storage Mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
+For more guidance on which mode to choose, see [`Choosing a resource storage mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md) and [`Choosing a resource storage mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
 ##### Set a Storage Mode for a Buffer
 
@@ -31,17 +31,17 @@ Create a new [`MTLTextureDescriptor`](mtltexturedescriptor.md) and set its stora
 
 ## See Also
 
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
   Select an appropriate storage mode for your textures and buffers on Apple GPUs.
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
   Select an appropriate storage mode for your textures and buffers on AMD and Intel GPUs.
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
   Use a blit command encoder to copy buffer or texture data to a private resource.
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
   Manually synchronize memory for a Metal resource in apps.
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
   Use high-speed connections between GPUs to transfer data quickly.
-- [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
   Learn best practices for using memory efficiently in iOS and tvOS.
 
 

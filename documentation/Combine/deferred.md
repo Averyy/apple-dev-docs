@@ -22,22 +22,17 @@ struct Deferred<DeferredPublisher> where DeferredPublisher : Publisher
 
 ## Topics
 
-### Creating a Deferred Publisher
+### Creating a deferred publisher
 - [init(createPublisher: () -> DeferredPublisher)](deferred/init(createpublisher:).md)
   Creates a deferred publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [typealias Output](deferred/output.md)
   The kind of values published by this publisher.
 - [typealias Failure](deferred/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let createPublisher: () -> DeferredPublisher](deferred/createpublisher.md)
   The closure to execute when this deferred publisher receives a subscription.
-### Applying Operators
-- [Publisher Operators](deferred-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](deferred/publisher-implementations.md)
 
 ## Relationships
 

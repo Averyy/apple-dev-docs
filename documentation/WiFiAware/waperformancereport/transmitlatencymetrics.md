@@ -6,8 +6,8 @@
 A report of the transmit latency to the specified peer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,12 +23,6 @@ struct TransmitLatencyMetrics
 ### Getting the average Latency
 - [let average: Duration?](waperformancereport/transmitlatencymetrics/average.md)
   The average per-packet transmit latency measured for this flow’s peers.
-### Initializers - generated
-- [init(from: any Decoder) throws](waperformancereport/transmitlatencymetrics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](waperformancereport/transmitlatencymetrics/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

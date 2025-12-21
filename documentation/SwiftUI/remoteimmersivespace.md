@@ -6,7 +6,7 @@
 A scene that presents its content in an unbounded space on a remote device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

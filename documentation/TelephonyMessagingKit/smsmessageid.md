@@ -6,8 +6,8 @@
 A structure that represents an SMS message identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,13 +25,8 @@ struct SMSMessageID
 - [var description: String](smsmessageid/description.md)
   A textual representation of the identifier.
 ### Working with raw values
-- [let rawValue: UInt32](smsmessageid/rawvalue-swift.property.md)
+- [let rawValue: UInt32](smsmessageid/rawvalue.md)
   The identifier of an SMS message.
-- [SMSMessageID.RawValue](smsmessageid/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](smsmessageid/equatable-implementations.md)
-- [RawRepresentable Implementations](smsmessageid/rawrepresentable-implementations.md)
 
 ## Relationships
 

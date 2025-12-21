@@ -6,7 +6,7 @@
 An error that indicates foveation is enabled but not supported.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -43,6 +43,10 @@ Disable foveation in your layer’s configuration.
   An error that indicates the system doesn’t support the specified depth format choice.
 - [LayerRendererConfigurationError.unsupportedDepthUsage](layerrendererconfigurationerror/unsupporteddepthusage.md)
   An error that indicates the system doesn’t support the specified depth usage choice.
+- [LayerRendererConfigurationError.unsupportedDrawableRenderContextStencilFormat](layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.md)
+  An error that indicates the layer doesn’t support the current pixel format for the stencil texture.
+- [LayerRendererConfigurationError.unsupportedRenderQuality](layerrendererconfigurationerror/unsupportedrenderquality.md)
+  An error that indicates the configuration’s render quality is unsupported. This could be because foveation is disabled or the quality is outside of the valid range of [0, 1], the error `userInfo` will contain additional information.
 
 
 ---

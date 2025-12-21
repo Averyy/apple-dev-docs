@@ -16,7 +16,7 @@ func cancel()
 
 #### Discussion
 
-This method deletes the partially downloaded file unless you have previously called [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md), passing [`false`](https://developer.apple.com/documentation/swift/false).
+This method deletes the partially downloaded file unless you have previously called [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md), passing [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

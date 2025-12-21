@@ -22,9 +22,9 @@ var shouldFetchRootRecord: Bool { get set }
 
 #### Discussion
 
-For a shared record hierarchy, set this property to [`true`](https://developer.apple.com/documentation/swift/true) to include the root record in the fetched share metadata. CloudKit ignores this property for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
+For a shared record hierarchy, set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to include the root record in the fetched share metadata. CloudKit ignores this property for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

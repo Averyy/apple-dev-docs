@@ -21,7 +21,7 @@ var bounces: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view bounces when it encounters a boundary of the content. Bouncing visually indicates that scrolling has reached an edge of the content. If the value is [`false`](https://developer.apple.com/documentation/swift/false), scrolling stops immediately at the content boundary without bouncing. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view bounces when it encounters a boundary of the content. Bouncing visually indicates that scrolling has reached an edge of the content. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), scrolling stops immediately at the content boundary without bouncing. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Setting [`bounces`](uiscrollview/bounces.md) is equivalent to setting both [`bouncesHorizontally`](uiscrollview/bounceshorizontally.md) and [`bouncesVertically`](uiscrollview/bouncesvertically.md) to the same value. To set different behavior for the two axes, set those properties to distinct values.
 

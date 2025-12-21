@@ -32,6 +32,11 @@ The training process partitions the input into random batches according to the b
 - `input`: A sequence of annotated features for training. Each feature’s shape should be    and each annotation should be one-hot encoded with shape  .
 - `eventHandler`: An event handler.
 
+## See Also
+
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:validateon:eventhandler:).md)
+  Fits a time series classifier model to a sequence of examples.
+
 
 ---
 

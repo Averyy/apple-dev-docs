@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-The mutability options for a buffer that a render or compute pipeline uses.
+The mutability options for a buffer that a render or compute pipeline uses.
 
 **Availability**:
 - iOS 11.0+
@@ -27,7 +27,7 @@ To declare that a buffer is immutable, set the [`mutability`](mtlpipelinebufferd
 
 ## Topics
 
-### Setting Buffer Mutability
+### Setting buffer mutability
 - [var mutability: MTLMutability](mtlpipelinebufferdescriptor/mutability.md)
   A mutability option that determines whether you can update a buffer’s contents before related commands use the buffer.
 - [enum MTLMutability](mtlmutability.md)

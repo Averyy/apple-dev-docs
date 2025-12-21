@@ -28,17 +28,6 @@ enum DataStoreError
 - [DataStoreError.preferInMemoryFilter](datastoreerror/preferinmemoryfilter.md)
 - [DataStoreError.preferInMemorySort](datastoreerror/preferinmemorysort.md)
 - [DataStoreError.unsupportedFeature](datastoreerror/unsupportedfeature.md)
-### Comparing errors
-- [static func == (DataStoreError, DataStoreError) -> Bool](datastoreerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Hashing errors
-- [var hashValue: Int](datastoreerror/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](datastoreerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](datastoreerror/equatable-implementations.md)
-- [Error Implementations](datastoreerror/error-implementations.md)
 
 ## Relationships
 

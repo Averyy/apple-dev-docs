@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure managed preferences.
+The payload that configures managed preferences.
 
 **Availability**:
 - macOS 10.7+
@@ -13,6 +13,10 @@ The payload you use to configure managed preferences.
 ```swift
 object ManagedPreferences
 ```
+
+## Mentions
+
+- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 
 #### Discussion
 
@@ -89,13 +93,13 @@ Specify `com.apple.ManagedClient.preferences` as the payload type.
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)
-  The payload you use to configure the users, groups, and departments within an educational organization.
+  The payload that configures the users, groups, and departments within an educational organization.
 - [object LightsOutManagementLOM](lightsoutmanagementlom.md)
-  The payload you use to configure lights-out management (LOM) settings.
+  The payload that configures lights-out management (LOM) settings.
 - [object MDM](mdm.md)
-  The payload you use to configure mobile device management (MDM) settings.
+  The payload that configures mobile device management (MDM) settings.
 - [object ProfileRemovalPassword](profileremovalpassword.md)
-  The payload you use to configure profile removal.
+  The payload that configures profile removal.
 
 
 ---

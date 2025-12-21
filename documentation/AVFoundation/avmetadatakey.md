@@ -22,7 +22,7 @@ struct AVMetadataKey
 
 ## Topics
 
-### Common Metadata Keys
+### Common metadata keys
 - [static let commonKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/commonkeyaccessibilitydescription.md)
   A key that represents the accessibility description for the media.
 - [static let commonKeyAlbumName: AVMetadataKey](avmetadatakey/commonkeyalbumname.md)
@@ -71,7 +71,7 @@ struct AVMetadataKey
   A key that represents the title of the media.
 - [static let commonKeyType: AVMetadataKey](avmetadatakey/commonkeytype.md)
   A key that represents the media type.
-### iTunes Metadata Keys
+### iTunes metadata keys
 - [static let iTunesMetadataKeyAccountKind: AVMetadataKey](avmetadatakey/itunesmetadatakeyaccountkind.md)
   A key that represents the kind of iTunes account.
 - [static let iTunesMetadataKeyAcknowledgement: AVMetadataKey](avmetadatakey/itunesmetadatakeyacknowledgement.md)
@@ -168,7 +168,7 @@ struct AVMetadataKey
   A key that represents a user comment regarding the content.
 - [static let iTunesMetadataKeyUserGenre: AVMetadataKey](avmetadatakey/itunesmetadatakeyusergenre.md)
   A key that represents the genre set by a user in iTunes.
-### QuickTime Metadata Keys
+### QuickTime metadata keys
 - [static let quickTimeMetadataKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/quicktimemetadatakeyaccessibilitydescription.md)
   A key that represents the accessibility description for the movie file content.
 - [static let quickTimeMetadataKeyAlbum: AVMetadataKey](avmetadatakey/quicktimemetadatakeyalbum.md)
@@ -181,10 +181,26 @@ struct AVMetadataKey
   A key that represents an image relating to the movie file content.
 - [static let quickTimeMetadataKeyAuthor: AVMetadataKey](avmetadatakey/quicktimemetadatakeyauthor.md)
   A key that represents the name of the author of the movie file content.
+- [static let quickTimeMetadataKeyCameraFocalLength35mmEquivalent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerafocallength35mmequivalent.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
 - [static let quickTimeMetadataKeyCameraFrameReadoutTime: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraframereadouttime.md)
   A key that represents the camera frame readout time in QuickTime.
+- [static let quickTimeMetadataKeyCameraISOSensitivity: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraisosensitivity.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the sensitivity of the camera to light in terms of ISO exposure index (e.g. “800”). See SMPTE RDD 18.
 - [static let quickTimeMetadataKeyCameraIdentifier: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameraidentifier.md)
   A key that represents the camera identifier in QuickTime.
+- [static let quickTimeMetadataKeyCameraLensIrisFNumber: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensirisfnumber.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating measure of the amount of light transmitted through the lens. It is the focal length divided by the effective lens aperture diameter (e.g. “F2.8” or “2.8”).
+- [static let quickTimeMetadataKeyCameraLensModel: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensmodel.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
+- [static let quickTimeMetadataKeyCameraShutterSpeedAngle: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerashutterspeedangle.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as an angle in minutes (1/60 degree) (e.g. “21600” or “360.00deg””).
+- [static let quickTimeMetadataKeyCameraShutterSpeedTime: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerashutterspeedtime.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as a time per one frame/field period in seconds.
+- [static let quickTimeMetadataKeyCameraWhiteBalance: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerawhitebalance.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the white balance value defined by the temperature in Kelvin units (e.g. “5500K” or “5500”). See SMPTE RDD 18.
+- [static let quickTimeMetadataKeyCinematicVideoIntent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycinematicvideointent.md)
+  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
 - [static let quickTimeMetadataKeyCollectionUser: AVMetadataKey](avmetadatakey/quicktimemetadatakeycollectionuser.md)
   A key that represents a name that indicates a user-defined collection.
 - [static let quickTimeMetadataKeyComment: AVMetadataKey](avmetadatakey/quicktimemetadatakeycomment.md)
@@ -219,8 +235,6 @@ struct AVMetadataKey
   A key that represents general information about the movie file content.
 - [static let quickTimeMetadataKeyIsMontage: AVMetadataKey](avmetadatakey/quicktimemetadatakeyismontage.md)
   A key that represents that the movie is a montage of other media.
-- [static let quickTimeMetadataKeyiXML: AVMetadataKey](avmetadatakey/quicktimemetadatakeyixml.md)
-  A key that represents iXML information for the movie file content.
 - [static let quickTimeMetadataKeyKeywords: AVMetadataKey](avmetadatakey/quicktimemetadatakeykeywords.md)
   A key that represents the keywords for the movie file content.
 - [static let quickTimeMetadataKeyLocationBody: AVMetadataKey](avmetadatakey/quicktimemetadatakeylocationbody.md)
@@ -255,9 +269,15 @@ struct AVMetadataKey
   A key that represents the name of software used to create the movie file content.
 - [static let quickTimeMetadataKeyTitle: AVMetadataKey](avmetadatakey/quicktimemetadatakeytitle.md)
   A key that represents the title of the movie file content.
+- [static let quickTimeMetadataKeyWhiteBalanceByCCTColorMatrices: AVMetadataKey](avmetadatakey/quicktimemetadatakeywhitebalancebycctcolormatrices.md)
+  A value of type kCMMetadataBaseDataType_RawData indicating the reference color translation matrix data for ProRes RAW.
+- [static let quickTimeMetadataKeyWhiteBalanceByCCTWhiteBalanceFactors: AVMetadataKey](avmetadatakey/quicktimemetadatakeywhitebalancebycctwhitebalancefactors.md)
+  A value of type kCMMetadataBaseDataType_RawData indicating the reference white balance multiplication factor data for ProRes RAW.
 - [static let quickTimeMetadataKeyYear: AVMetadataKey](avmetadatakey/quicktimemetadatakeyyear.md)
   A key that represents the recording year of the movie file content.
-### QuickTime User Metadata Keys
+- [static let quickTimeMetadataKeyiXML: AVMetadataKey](avmetadatakey/quicktimemetadatakeyixml.md)
+  A key that represents iXML information for the movie file content.
+### QuickTime user metadata keys
 - [static let quickTimeUserDataKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyaccessibilitydescription.md)
   A key that represents the accessibility description for the movie file content.
 - [static let quickTimeUserDataKeyAlbum: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyalbum.md)
@@ -336,7 +356,7 @@ struct AVMetadataKey
   A key that represents the warning text for the movie file content.
 - [static let quickTimeUserDataKeyWriter: AVMetadataKey](avmetadatakey/quicktimeuserdatakeywriter.md)
   A key that represents the name of the writer of the movie file content.
-### ID3 Metadata Keys
+### ID3 metadata keys
 - [static let id3MetadataKeyAlbumSortOrder: AVMetadataKey](avmetadatakey/id3metadatakeyalbumsortorder.md)
   A key that represents how to sort the album.
 - [static let id3MetadataKeyAlbumTitle: AVMetadataKey](avmetadatakey/id3metadatakeyalbumtitle.md)
@@ -523,7 +543,7 @@ struct AVMetadataKey
   A key that represents the year of the recording.
 - [static let id3MetadataKeyCommerical: AVMetadataKey](avmetadatakey/id3metadatakeycommerical.md)
   A key that represents the commerical frame.
-### 3GP User Metadata Keys
+### 3GP user metadata keys
 - [static let metadata3GPUserDataKeyAlbumAndTrack: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyalbumandtrack.md)
   A key that represents the text for the album and track titles.
 - [static let metadata3GPUserDataKeyAuthor: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyauthor.md)
@@ -554,7 +574,7 @@ struct AVMetadataKey
   A key that represents the title for the media.
 - [static let metadata3GPUserDataKeyUserRating: AVMetadataKey](avmetadatakey/metadata3gpuserdatakeyuserrating.md)
   A key that represents the user rating.
-### ISO User Metadata Keys
+### ISO user metadata keys
 - [static let isoUserDataKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/isouserdatakeyaccessibilitydescription.md)
   A key that represents the accessibility description for the media content.
 - [static let isoUserDataKeyCopyright: AVMetadataKey](avmetadatakey/isouserdatakeycopyright.md)
@@ -563,7 +583,7 @@ struct AVMetadataKey
   A key that represents the date for the media content.
 - [static let isoUserDataKeyTaggedCharacteristic: AVMetadataKey](avmetadatakey/isouserdatakeytaggedcharacteristic.md)
   A key that represents the tagged media characteristic used for identifying accessibility features.
-### ICY Metadata Keys
+### ICY metadata keys
 - [static let icyMetadataKeyStreamTitle: AVMetadataKey](avmetadatakey/icymetadatakeystreamtitle.md)
   A key that represents the title of a stream.
 - [static let icyMetadataKeyStreamURL: AVMetadataKey](avmetadatakey/icymetadatakeystreamurl.md)
@@ -573,13 +593,6 @@ struct AVMetadataKey
   Creates a metadata key.
 - [init(rawValue: String)](avmetadatakey/init(rawvalue:).md)
   Creates a metadata key with the specified raw value.
-### Type Properties
-- [static let quickTimeMetadataKeyCameraFocalLength35mmEquivalent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerafocallength35mmequivalent.md)
-  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
-- [static let quickTimeMetadataKeyCameraLensModel: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensmodel.md)
-  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
-- [static let quickTimeMetadataKeyCinematicVideoIntent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycinematicvideointent.md)
-  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
 
 ## Relationships
 

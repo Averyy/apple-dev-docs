@@ -29,7 +29,7 @@ See [`makeComputeCommandEncoder(dispatchType:)`](mtlcommandbuffer/makecomputecom
 ## See Also
 
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlcomputecommandencoder/setcomputepipelinestate(_:).md)
-  Configures the compute encoder with a pipeline state instance for subsequent kernel calls.
+  Configures the compute encoder with a pipeline state for subsequent kernel calls.
 
 
 ---

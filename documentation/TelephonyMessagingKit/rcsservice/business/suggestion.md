@@ -6,8 +6,8 @@
 Enumeration representing a suggestion from a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -27,16 +27,6 @@ enum Suggestion
   Suggested reply.
 - [RCSService.Business.SuggestedReply](rcsservice/business/suggestedreply.md)
   Suggested reply in response to a business message.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/suggestion/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/suggestion/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing suggestions
-- [static func == (RCSService.Business.Suggestion, RCSService.Business.Suggestion) -> Bool](rcsservice/business/suggestion/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/suggestion/equatable-implementations.md)
 
 ## Relationships
 

@@ -8,7 +8,14 @@ Learn about the latest changes to enabling your app to be the system default.
 
 Build apps and extensions that people can configure as the default app for many common tasks. Browse [`entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements) that enable your apps to declare that they can be set as the system default.
 
-- Use [`openSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openSettingsURLString) to link directly to your app’s settings, including the Default App option, where applicable. The new [`openDefaultApplicationsSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openDefaultApplicationsSettingsURLString) option in `UIKit` opens the global Default Apps settings panel.
+- Use [`openSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openSettingsURLString) to link directly to your app’s settings, including the Default App option, where applicable. The [`openDefaultApplicationsSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openDefaultApplicationsSettingsURLString) option in `UIKit` opens the global Default Apps settings panel.
+
+#### December 2025
+
+Users in Japan can select a default navigation app and a default alternative app marketplace.
+
+- Read [`Preparing your app to be the default navigation app`](https://developer.apple.com/documentation/MapKit/preparing-your-app-to-be-the-default-navigation-app) to see how to register your app to be the default responder for navigation requests.
+- Read [`Participating in alternative distribution for specific regions`](https://developer.apple.com/documentation/marketplacekit/participating-in-alternative-distribution-for-specific-regions) to see how to build an alternative app marketplace for iOS to distribute in Japan.
 
 #### June 2025
 

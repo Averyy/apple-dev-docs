@@ -6,7 +6,7 @@
 Create a fixed spatial audio experience with a specific sound stage size.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

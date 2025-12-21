@@ -27,10 +27,6 @@ enum DateTimeStyle
   A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
 - [RelativeDateTimeFormatter.DateTimeStyle.numeric](relativedatetimeformatter/datetimestyle-swift.enum/numeric.md)
   A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
-- [RelativeDateTimeFormatter.DateTimeStyle.named](relativedatetimeformatter/datetimestyle-swift.enum/named.md)
-  A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
-- [RelativeDateTimeFormatter.DateTimeStyle.numeric](relativedatetimeformatter/datetimestyle-swift.enum/numeric.md)
-  A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 ### Initializers
 - [init?(rawValue: Int)](relativedatetimeformatter/datetimestyle-swift.enum/init(rawvalue:).md)
 

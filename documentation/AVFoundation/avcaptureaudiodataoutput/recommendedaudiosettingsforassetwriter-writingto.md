@@ -42,6 +42,8 @@ The dictionary of settings is dependent on the current configuration of the rece
 
 - [var audioSettings: [String : Any]!](avcaptureaudiodataoutput/audiosettings.md)
   The settings used to decode or re-encode audio before it’s output.
+- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
+  The audio channel layout tag of the audio sample buffers produced by the audio data output.
 
 
 ---

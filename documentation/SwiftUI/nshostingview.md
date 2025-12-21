@@ -123,6 +123,8 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
 - [func observeValue(forKeyPath: String?, of: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)](nshostingview/observevalue(forkeypath:of:change:context:).md)
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nshostingview/shoulddelaywindowordering(for:).md)
 - [func showContextMenuForSelection(Any?)](nshostingview/showcontextmenuforselection(_:).md)
+- [func viewDidEndLiveResize()](nshostingview/viewdidendliveresize.md)
+- [func viewWillStartLiveResize()](nshostingview/viewwillstartliveresize.md)
 - [func willRemoveSubview(NSView)](nshostingview/willremovesubview(_:).md)
 
 ## Relationships

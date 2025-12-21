@@ -10,7 +10,7 @@ A type that can be sent as an event.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -80,11 +80,9 @@ struct RealityGame: View {
 - [AnchorStateEvents.WillUnanchor](anchorstateevents/willunanchor.md)
 - [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
 - [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-6pxcp.md)
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-876gy.md)
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
 - [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-o560.md)
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-88hp5.md)
+- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
 - [AudioEvents.PlaybackCompleted](audioevents/playbackcompleted.md)
 - [CollisionEvents.Began](collisionevents/began.md)
 - [CollisionEvents.Ended](collisionevents/ended.md)
@@ -104,18 +102,13 @@ struct RealityGame: View {
 - [PhysicsSimulationEvents.DidSimulate](physicssimulationevents/didsimulate.md)
 - [PhysicsSimulationEvents.WillSimulate](physicssimulationevents/willsimulate.md)
 - [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
-- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity-5jy9a.md)
-- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity-8my6.md)
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity-9sx4i.md)
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity-6yi7l.md)
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity-8xr41.md)
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity-2rsns.md)
+- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity.md)
+- [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
+- [SceneEvents.DidReparentEntity](sceneevents/didreparententity.md)
 - [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
 - [SceneEvents.Update](sceneevents/update.md)
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity-4vvwc.md)
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity-3mahl.md)
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity-2fca3.md)
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity-83c6c.md)
+- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
+- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity.md)
 - [SynchronizationEvents.OwnershipChanged](synchronizationevents/ownershipchanged.md)
 - [SynchronizationEvents.OwnershipRequest](synchronizationevents/ownershiprequest.md)
 - [VideoPlayerEvents.ContentTypeDidChange](videoplayerevents/contenttypedidchange.md)

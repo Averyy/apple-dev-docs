@@ -30,7 +30,7 @@ An `MLFeatureDescription` may also include constraints, which specify the limita
 
 ## Topics
 
-### Inspecting a Feature
+### Inspecting a feature
 - [var name: String](mlfeaturedescription/name.md)
   The name of this feature.
 - [var type: MLFeatureType](mlfeaturedescription/type.md)
@@ -39,10 +39,12 @@ An `MLFeatureDescription` may also include constraints, which specify the limita
   The possible types for feature values, input features, and output features.
 - [var isOptional: Bool](mlfeaturedescription/isoptional.md)
   A Boolean value that indicates whether this feature is optional.
-### Checking for Validity
+### Checking for validity
 - [func isAllowedValue(MLFeatureValue) -> Bool](mlfeaturedescription/isallowedvalue(_:).md)
   Checks whether the model will accept an input feature value.
-### Accessing Feature Constraints
+### Accessing feature constraints
+- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+  The state feature value constraint.
 - [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
 - [class MLImageConstraint](mlimageconstraint.md)
@@ -59,9 +61,6 @@ An `MLFeatureDescription` may also include constraints, which specify the limita
   The constraints for a sequence feature.
 - [class MLSequenceConstraint](mlsequenceconstraint.md)
   The constraints for a sequence feature.
-### Instance Properties
-- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
-  The state feature value constraint.
 
 ## Relationships
 
@@ -80,6 +79,8 @@ An `MLFeatureDescription` may also include constraints, which specify the limita
 
 ## See Also
 
+- [var stateDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/statedescriptionsbyname.md)
+  Description of the state features.
 - [var inputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/inputdescriptionsbyname.md)
   A dictionary of input feature descriptions, which the model keys by the input’s name.
 - [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)

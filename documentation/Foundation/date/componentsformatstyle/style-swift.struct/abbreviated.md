@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Shows the fields in the abbreviation. For example, “2 hr, 10 min”, “2小時10分鐘”
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

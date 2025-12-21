@@ -31,19 +31,7 @@ struct ReadingOptions
   A hint indicating the file should not be stored in the file-system caches.
 - [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
   Hint to map the file in if possible.
-- [static var mappedIfSafe: NSData.ReadingOptions](nsdata/readingoptions/mappedifsafe.md)
-  A hint indicating the file should be mapped into virtual memory, if possible and safe.
-- [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
-  A hint indicating the file should not be stored in the file-system caches.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
-  Hint to map the file in if possible.
 ### Legacy Constants
-- [static var dataReadingMapped: NSData.ReadingOptions](nsdata/readingoptions/datareadingmapped.md)
-  Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
-- [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)
-  Deprecated name for [`dataReadingMapped`](nsdata/readingoptions/datareadingmapped.md).
-- [static var uncachedRead: NSData.ReadingOptions](nsdata/readingoptions/uncachedread.md)
-  Deprecated name for [`uncached`](nsdata/readingoptions/uncached.md).
 - [static var dataReadingMapped: NSData.ReadingOptions](nsdata/readingoptions/datareadingmapped.md)
   Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
 - [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)

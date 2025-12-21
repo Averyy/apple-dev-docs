@@ -1,4 +1,4 @@
-# Capturing Photos in RAW and Apple ProRAW Formats
+# Capturing photos in RAW and Apple ProRAW formats
 
 **Framework**: AVFoundation
 
@@ -16,7 +16,7 @@ Beginning in iOS 14.3, and available on iPhone 12 Pro and Pro Max, you can use t
 
 ##### Enable Apple Proraw Support
 
-To determine whether your app’s photo output supports the Apple ProRAW format in the current environment, add the output to a capture session that has a connected video source, and query its [`isAppleProRAWSupported`](avcapturephotooutput/isappleprorawsupported.md) property. If the current environment supports the Apple ProRAW format, you can enable the photo output to use it by setting its [`isAppleProRAWEnabled`](avcapturephotooutput/isappleprorawenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true) as the example below shows:
+To determine whether your app’s photo output supports the Apple ProRAW format in the current environment, add the output to a capture session that has a connected video source, and query its [`isAppleProRAWSupported`](avcapturephotooutput/isappleprorawsupported.md) property. If the current environment supports the Apple ProRAW format, you can enable the photo output to use it by setting its [`isAppleProRAWEnabled`](avcapturephotooutput/isappleprorawenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) as the example below shows:
 
 ```swift
 private let captureSession = AVCaptureSession()
@@ -61,7 +61,7 @@ Enabling use of the Apple ProRAW format adds an entry to the photo output’s [`
 
 ##### Capture Raw and Apple Proraw Photos
 
-Capturing photos in RAW and Apple ProRAW formats requires only minor changes to the basic photography workflow in [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md). Begin by creating an [`AVCapturePhotoSettings`](avcapturephotosettings.md) object that specifies the RAW format to capture, and optionally, a processed format to capture if your app supports creating RAW+JPEG files. The capture pipeline only supports the RAW formats in the photo output’s [`availableRawPhotoPixelFormatTypes`](avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) array.
+Capturing photos in RAW and Apple ProRAW formats requires only minor changes to the basic photography workflow in [`Capturing still and Live Photos`](capturing-still-and-live-photos.md). Begin by creating an [`AVCapturePhotoSettings`](avcapturephotosettings.md) object that specifies the RAW format to capture, and optionally, a processed format to capture if your app supports creating RAW+JPEG files. The capture pipeline only supports the RAW formats in the photo output’s [`availableRawPhotoPixelFormatTypes`](avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) array.
 
 The example below finds the appropriate RAW format, choosing the Apple ProRAW format when it’s in an enabled state, and the Bayer RAW format when it’s not. It creates a photo settings object that specifies the RAW and processed formats, and a delegate object to monitor the capture progress. Finally, it calls the photo output’s [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method, passing it the photo settings and delegate objects.
 
@@ -196,7 +196,7 @@ let photoData = photo.fileDataRepresentation(with: customizer)
 
 ##### Save the Photos to the Photos Library
 
-The photo output indicates when it finishes the capture request by calling the delegate’s [`photoOutput(_:didFinishCaptureFor:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishcapturefor:error:).md) method. This callback provides an opportunity to save the captured photos to the user’s Photos library. For more information about configuring your app to access the user’s Photos library, see [`Saving Captured Photos`](saving-captured-photos.md).
+The photo output indicates when it finishes the capture request by calling the delegate’s [`photoOutput(_:didFinishCaptureFor:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishcapturefor:error:).md) method. This callback provides an opportunity to save the captured photos to the user’s Photos library. For more information about configuring your app to access the user’s Photos library, see [`Saving captured photos`](saving-captured-photos.md).
 
 To save the captured photos to the user’s Photos library, create a single Photos asset that associates the RAW or Apple ProRAW data with the processed data. Create an instance of [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest), then specify the DNG version as the asset’s main [`PHAssetResourceType.photo`](https://developer.apple.com/documentation/Photos/PHAssetResourceType/photo) resource, and the processed image as an [`PHAssetResourceType.alternatePhoto`](https://developer.apple.com/documentation/Photos/PHAssetResourceType/alternatePhoto) resource. Perform the request inside a change block as the example below shows:
 
@@ -255,7 +255,7 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 
 - [Capturing consistent color images](capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
-- [Capturing Still and Live Photos](capturing-still-and-live-photos.md)
+- [Capturing still and Live Photos](capturing-still-and-live-photos.md)
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

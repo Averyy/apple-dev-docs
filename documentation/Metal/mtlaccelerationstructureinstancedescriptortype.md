@@ -21,7 +21,7 @@ enum MTLAccelerationStructureInstanceDescriptorType
 
 ## Topics
 
-### Specifying the Instance Descriptor Type
+### Specifying the instance descriptor type
 - [MTLAccelerationStructureInstanceDescriptorType.default](mtlaccelerationstructureinstancedescriptortype/default.md)
   An option specifying that the instance uses the default characteristics.
 - [MTLAccelerationStructureInstanceDescriptorType.userID](mtlaccelerationstructureinstancedescriptortype/userid.md)
@@ -29,7 +29,7 @@ enum MTLAccelerationStructureInstanceDescriptorType
 - [MTLAccelerationStructureInstanceDescriptorType.motion](mtlaccelerationstructureinstancedescriptortype/motion.md)
   An option specifying that the instance contains motion data.
 - [MTLAccelerationStructureInstanceDescriptorType.indirect](mtlaccelerationstructureinstancedescriptortype/indirect.md)
-  An option that enables using an instance descriptor memory layout that the GPU can populate.
+  An option that enables an instance descriptor memory layout the GPU can populate.
 - [MTLAccelerationStructureInstanceDescriptorType.indirectMotion](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md)
   An option specifying that the instance contains motion data, and enables using an instance descriptor memory layout that the GPU can populate.
 ### Initializers

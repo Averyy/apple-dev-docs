@@ -38,7 +38,7 @@ This method detects sub-second differences between dates. If you want to compare
 
 ## See Also
 
-- [func isEqual(_ object: Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
+- [func isEqual(Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
 - [func isEqual(to: Date) -> Bool](nsdate/isequal(to:).md)
   Returns a Boolean value that indicates whether a given object is a date that is exactly equal the receiver.

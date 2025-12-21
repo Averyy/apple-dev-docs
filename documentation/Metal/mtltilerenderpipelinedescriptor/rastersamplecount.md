@@ -21,11 +21,11 @@ var rasterSampleCount: Int { get set }
 
 #### Discussion
 
-The default value is `1`. This value is used only if the pipeline render targets support multisampling. If the render targets don’t support multisampling, then this value must be `1`.
+The default value is `1`. This value is used only if the pipeline render targets support multisampling. If the render targets don’t support multisampling, then this value needs to be `1`.
 
-When you create a  [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), the [`sampleCount`](mtltexture/samplecount.md) value of all attachments must match this `sampleCount` value. Furthermore, the texture type of all attachments must be [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md).
+When you create a  [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), the [`sampleCount`](mtltexture/samplecount.md) value of all attachments need to match this `sampleCount` value. Furthermore, the texture type of all attachments need to be [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md).
 
-Support for different sample count values varies by device object. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method on a [`MTLDevice`](mtldevice.md) object to determine whether it supports a specific sample count.
+Support for different sample count values varies by device instance. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method on an [`MTLDevice`](mtldevice.md) instance to determine whether it supports a specific sample count.
 
 ## See Also
 

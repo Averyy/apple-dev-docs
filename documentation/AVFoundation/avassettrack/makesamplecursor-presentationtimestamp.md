@@ -26,9 +26,9 @@ An instance of [`AVSampleCursor`](avsamplecursor.md).
 
 #### Discussion
 
-If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`true`](https://developer.apple.com/documentation/swift/true), the sample cursor is accurately positioned at the track’slast media sample with a presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
+If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the sample cursor is accurately positioned at the track’slast media sample with a presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
 
-If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`false`](https://developer.apple.com/documentation/swift/false), and it’s prohibitively expensive to locate the precise sample at the desired timestamp, the sample cursor may be approximately positioned.
+If the track’s [`asset`](avassettrack/asset.md) property value for [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) is [`false`](https://developer.apple.com/documentation/Swift/false), and it’s prohibitively expensive to locate the precise sample at the desired timestamp, the sample cursor may be approximately positioned.
 
 ## Parameters
 

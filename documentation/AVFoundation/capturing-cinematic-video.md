@@ -1,13 +1,13 @@
-# Capturing cinematic video
+# Capturing Cinematic video
 
 **Framework**: AVFoundation
 
 Capture video with an adjustable depth of field and focus points.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -19,7 +19,7 @@ Because Simulator doesn’t have access to access device cameras, you’ll need 
 
 ## See Also
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 - [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
@@ -27,7 +27,7 @@ Because Simulator doesn’t have access to access device cameras, you’ll need 
   Capture photos and record video using the front and rear iPhone and iPad cameras.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
 - [class AVCaptureSession](avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.

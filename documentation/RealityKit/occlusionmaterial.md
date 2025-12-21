@@ -10,7 +10,7 @@ An invisible material that hides objects rendered behind it.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -46,19 +46,14 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 ### Receiving dynamic lighting
 - [let receivesDynamicLighting: Bool](occlusionmaterial/receivesdynamiclighting.md)
   A Boolean that indicates whether the occlusion material receives dynamic lighting.
+### Setting depth testing properties
+- [var readsDepth: Bool](occlusionmaterial/readsdepth.md)
+  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 ### Instance Properties
-- [var faceCulling: OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-2bw8q.md)
+- [var faceCulling: OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var faceCulling: OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-8yand.md)
-  A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var readsDepth: Bool](occlusionmaterial/readsdepth-7ofq9.md)
-  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var readsDepth: Bool](occlusionmaterial/readsdepth-83sry.md)
-  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 ### Type Aliases
-- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-1dtyd.md)
-  An alias for the cull mode object that’s appropriate for this material class.
-- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-83qk6.md)
+- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 
 ## Relationships
@@ -67,6 +62,11 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 - [Material](material.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
+  An alias for the cull mode object that’s appropriate for this material class.
 
 
 ---

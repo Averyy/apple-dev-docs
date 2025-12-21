@@ -76,12 +76,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [Date.FormatStyle.Symbol.Hour.AMPMStyle](date/formatstyle/symbol/hour/ampmstyle.md)
   The format style of the string representation of the day period, before or after noon, in a date.
 ### Comparing an Hour
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

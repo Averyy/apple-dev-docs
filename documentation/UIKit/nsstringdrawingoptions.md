@@ -33,6 +33,9 @@ struct NSStringDrawingOptions
 ### Initializer
 - [init(rawValue: Int)](nsstringdrawingoptions/init(rawvalue:).md)
   Creates a structure that specifies the rendering options for drawing a string.
+### Type Properties
+- [static var optionsResolvesNaturalAlignmentWithBaseWritingDirection: NSStringDrawingOptions](nsstringdrawingoptions/optionsresolvesnaturalalignmentwithbasewritingdirection.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 ## Relationships
 

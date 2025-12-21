@@ -1,4 +1,4 @@
-# Reducing the Memory Footprint of Metal Apps
+# Reducing the memory footprint of Metal apps
 
 **Framework**: Metal
 
@@ -14,13 +14,13 @@ iOS and tvOS monitor your app’s total memory usage at runtime, and if the amou
 
 Here are some tips to understand how your Metal app is using memory, and best practices to reduce memory usage.
 
- Build your app with the iOS or tvOS SDK, then use Xcode Memory Report to observe your app’s total memory footprint during execution. See [`Gathering information about memory use`](https://developer.apple.com/documentation/Xcode/gathering-information-about-memory-use) for more information about Xcode Memory Report.
+ Build your app with the iOS or tvOS SDK, then use Xcode Memory Report to observe your app’s total memory footprint during execution. For more information about Xcode Memory Report, see [`Gathering information about memory use`](https://developer.apple.com/documentation/Xcode/gathering-information-about-memory-use).
 
 - Take an [`Instruments`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#//apple_ref/doc/uid/TP40004652-CH19-SW13) trace and look at the Metal Resource Allocations Instrument, which is part of the Metal System Trace template. For more information on working with the Metal Resource Allocations Instrument, see [`Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/?time=1726).
-- Use `Debugging Tools` to capture a GPU trace.  Then use the Memory view to get a visual representation of all of a frame’s GPU resources and a table of properties for each resource. See [`Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/?time=1665) for detailed information about the Memory view.
-- Observe and take action on suggestions highlighted in the Memory insights section of the GPU trace summary. See [`Gain insights into your Metal app with Xcode 12`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020-10605/?time=620) for more information on Memory insights.
-- Use the memory graph tool to help identify leaks and abandoned memory. See [`Memory Graph Debugging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/special_debugging_workflows.html#//apple_ref/doc/uid/TP40015022-CH9-DontLinkElementID_1) for more information.
-- Query the amount of memory available to your app at runtime using the [`os_proc_available_memory`](https://developer.apple.com/documentation/os/3191911-os_proc_available_memory) API to help you identify memory spikes.
+- Capture a GPU trace with [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger) and see a visual representation of all of a frame’s GPU resources and a table of properties for each resource with the Memory view. For detailed information about the Memory view, see [`Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/?time=1665).
+- Observe and take action on suggestions highlighted in the Memory insights section of the GPU trace summary. For more information on Memory insights, see [`Gain insights into your Metal app with Xcode 12`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020-10605/?time=620).
+- Use the memory graph tool to help identify leaks and abandoned memory. For more information, see [`Memory Graph Debugging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/special_debugging_workflows.html#//apple_ref/doc/uid/TP40015022-CH9-DontLinkElementID_1).
+- Query the amount of memory available to your app at runtime using the [`os_proc_available_memory`](https://developer.apple.com/documentation/os/os_proc_available_memory) API to help you identify memory spikes.
 
  Avoid loading a large resource when a smaller one works. Use compressed texture formats. Load lower-resolution textures when running on memory-constrained devices. Consider reducing the fidelity of 3D models and compressing per-vertex data.
 
@@ -40,17 +40,17 @@ The WWDC video [`Gain insights into your Metal app with Xcode 12`](https://devel
 
 ## See Also
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
   Set a storage mode that defines the memory location and access permissions of a resource.
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
   Select an appropriate storage mode for your textures and buffers on Apple GPUs.
-- [Choosing a Resource Storage Mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
   Select an appropriate storage mode for your textures and buffers on AMD and Intel GPUs.
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
   Use a blit command encoder to copy buffer or texture data to a private resource.
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
   Manually synchronize memory for a Metal resource in apps.
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
   Use high-speed connections between GPUs to transfer data quickly.
 
 

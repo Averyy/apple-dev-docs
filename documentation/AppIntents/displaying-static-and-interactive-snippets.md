@@ -137,7 +137,7 @@ To create this sequence of snippets, the [`Adopting App Intents to support syste
 First, the app defines the `FindTicketsIntent`, a regular app intent to perform the search. In its `perform()` method, the [`requestConfirmation(conditions:actionName:dialog:showDialogAsPrompt:snippetIntent:)`](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md) API displays the interactive snippet for people to enter the tickets, using the  `TicketRequestSnippetIntent`.
 
 ```swift
-simport AppIntents
+import AppIntents
 
 struct FindTicketsIntent: AppIntent {
 

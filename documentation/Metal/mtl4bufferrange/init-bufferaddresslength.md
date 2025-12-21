@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init(bufferAddress: UInt64, length: UInt64)
+init(bufferAddress: MTLGPUAddress, length: UInt64)
 ```
 
 

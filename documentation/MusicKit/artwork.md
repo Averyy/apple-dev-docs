@@ -22,16 +22,11 @@ struct Artwork
 
 ## Topics
 
-### Operators
-- [static func == (Artwork, Artwork) -> Bool](artwork/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let alternateText: String?](artwork/alternatetext.md)
   A textual description for the image.
 - [let backgroundColor: CGColor?](artwork/backgroundcolor.md)
   The average background color of the image.
-- [var hashValue: Int](artwork/hashvalue.md)
-  The hash value.
 - [let maximumHeight: Int](artwork/maximumheight.md)
   The maximum height available for the image.
 - [let maximumWidth: Int](artwork/maximumwidth.md)
@@ -45,16 +40,8 @@ struct Artwork
 - [let tertiaryTextColor: CGColor?](artwork/tertiarytextcolor.md)
   The tertiary text color to use when displaying the background color.
 ### Instance Methods
-- [func hash(into: inout Hasher)](artwork/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 - [func url(width: Int, height: Int) -> URL?](artwork/url(width:height:).md)
   Returns a URL to request the image asset for a specified width and height.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](artwork/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](artwork/customstringconvertible-implementations.md)
-- [Decodable Implementations](artwork/decodable-implementations.md)
-- [Encodable Implementations](artwork/encodable-implementations.md)
-- [Equatable Implementations](artwork/equatable-implementations.md)
 
 ## Relationships
 

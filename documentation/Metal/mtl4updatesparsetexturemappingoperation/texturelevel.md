@@ -6,18 +6,22 @@
 The index of the mipmap level in the texture to update.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS ?+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var textureLevel: Int
 ```
+
+#### Discussion
+
+Provide a value between `0` and the texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
 
 
 ---

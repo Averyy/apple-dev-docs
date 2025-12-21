@@ -17,7 +17,7 @@ The detail accessory view to use in the standard callout.
 
 ```swift
 @MainActor
-var detailCalloutAccessoryView: UIView? { get set }
+var detailCalloutAccessoryView: NSView? { get set }
 ```
 
 ## See Also

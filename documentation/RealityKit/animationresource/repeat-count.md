@@ -10,7 +10,7 @@ Creates an animation that repeats the specified number of times.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -30,11 +30,11 @@ A repeating copy of the calling animation resource.
 
 ## See Also
 
-- [static generate(with:)](animationresource/generate(with:).md)
+- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](animationresource/generate(with:).md)
   Creates an animation resource from a definition.
-- [static sequence(with:)](animationresource/sequence(with:).md)
+- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](animationresource/sequence(with:).md)
   Creates an animation resource that plays a collection of animations in a specified sequence.
-- [static group(with:)](animationresource/group(with:).md)
+- [static func group(with: [AnimationResource]) throws -> AnimationResource](animationresource/group(with:).md)
   Creates an animation resource that simultaneously plays back a collection of animations.
 - [func `repeat`(duration: TimeInterval) -> AnimationResource](animationresource/repeat(duration:).md)
   Repeats an animation for the specified amount of time.

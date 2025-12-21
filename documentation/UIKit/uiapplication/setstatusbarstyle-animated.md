@@ -21,7 +21,7 @@ func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool)
 
 The animation slides the status bar out toward the top of the interface.
 
-In iOS 7 and later, status bar behavior is determined by view controllers, and so calling this method has no effect by default. When view controller-based status bar appearance is disabled, this method behaves normally. To opt out of the view controller-based status bar appearance behavior, you must add the `UIViewControllerBasedStatusBarAppearance` key with a value of [`false`](https://developer.apple.com/documentation/swift/false) to your app’s `Info.plist` file, but doing so is not recommended.
+In iOS 7 and later, status bar behavior is determined by view controllers, and so calling this method has no effect by default. When view controller-based status bar appearance is disabled, this method behaves normally. To opt out of the view controller-based status bar appearance behavior, you must add the `UIViewControllerBasedStatusBarAppearance` key with a value of [`false`](https://developer.apple.com/documentation/Swift/false) to your app’s `Info.plist` file, but doing so is not recommended.
 
 ## Parameters
 

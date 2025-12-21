@@ -43,9 +43,6 @@ struct TemporalTransformerToUpdatableEstimatorAdaptor<Transformer> where Transfo
   Creates a default-initialized transformer suitable for incremental fitting.
 - [func update<InputSequence>(inout Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](temporaltransformertoupdatableestimatoradaptor/update(_:with:eventhandler:).md)
   Does nothing since this estimator uses a pre-defined transformer.
-### Default Implementations
-- [TemporalEstimator Implementations](temporaltransformertoupdatableestimatoradaptor/temporalestimator-implementations.md)
-- [UpdatableTemporalEstimator Implementations](temporaltransformertoupdatableestimatoradaptor/updatabletemporalestimator-implementations.md)
 
 ## Relationships
 

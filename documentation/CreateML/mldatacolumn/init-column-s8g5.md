@@ -46,6 +46,8 @@ print(dictionaryColumn) // Prints [[1: one, 2: two, 3: three], [5: five, 4: four
 
 - [func map<T>(to: T.Type) -> MLDataColumn<T>](mldatacolumn/map(to:).md)
   Creates a new column by converting this column to the given type.
+- [init(column:)](mldatacolumn/init(column:).md)
+  Creates a new column of machine learning sequences from a given column whose elements can be converted to sequences.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-5rg9u.md)
   Creates a new column of integers from a given column whose elements can be converted to integers.
 - [init<T>(column: MLDataColumn<T>)](mldatacolumn/init(column:)-2rxtu.md)

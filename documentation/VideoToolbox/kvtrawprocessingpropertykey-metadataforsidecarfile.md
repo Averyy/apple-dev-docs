@@ -4,7 +4,7 @@
 **Kind**: var
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -14,9 +14,7 @@ let kVTRAWProcessingPropertyKey_MetadataForSidecarFile: CFString!
 
 #### Discussion
 
-```None
 This property, if supported, returns the current processing metadata on the RAW Processor. The returned value can be used by the caller to create, or overwrite an existing sidecar file.
-```
 
 This property is not supported by all RAWProcessors. The metadata returned represents a fully-formed sidecar file, and should be compatible with the MediaExtension FormatReader.
 

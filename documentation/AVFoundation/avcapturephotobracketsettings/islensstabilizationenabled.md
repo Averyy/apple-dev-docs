@@ -19,13 +19,13 @@ var isLensStabilizationEnabled: Bool { get set }
 
 ## Mentions
 
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Discussion
 
-When this setting is [`true`](https://developer.apple.com/documentation/swift/true), the photo output uses optical image stabilization to hold the lens steady for the duration of the bracketed capture, helping to counter hand shake and produce a sharper bracket of images. The default setting is [`false`](https://developer.apple.com/documentation/swift/false).
+When this setting is [`true`](https://developer.apple.com/documentation/Swift/true), the photo output uses optical image stabilization to hold the lens steady for the duration of the bracketed capture, helping to counter hand shake and produce a sharper bracket of images. The default setting is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-You can enable this setting only if the photo output’s [`isLensStabilizationDuringBracketedCaptureSupported`](avcapturephotooutput/islensstabilizationduringbracketedcapturesupported.md) property is [`true`](https://developer.apple.com/documentation/swift/true). The capture output validates this requirement when you call the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method. If your settings and delegate do not meet this requirement, that method raises an exception.
+You can enable this setting only if the photo output’s [`isLensStabilizationDuringBracketedCaptureSupported`](avcapturephotooutput/islensstabilizationduringbracketedcapturesupported.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). The capture output validates this requirement when you call the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method. If your settings and delegate do not meet this requirement, that method raises an exception.
 
 ## See Also
 

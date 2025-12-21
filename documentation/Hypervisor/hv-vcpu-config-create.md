@@ -20,7 +20,7 @@ A new vCPU configuration object.
 
 #### Discussion
 
-If your app isn’t using ARC, call [`os_release`](https://developer.apple.com/documentation/os/1524245-os_release) on a vCPU configuration object when it’s no longer needed.
+If your app isn’t using ARC, call [`os_release`](https://developer.apple.com/documentation/os/os_release-c.func) on a vCPU configuration object when it’s no longer needed.
 
 ## See Also
 

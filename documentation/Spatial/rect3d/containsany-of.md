@@ -13,7 +13,6 @@ Returns a Boolean value that indicates whether the rectangle contains any of the
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

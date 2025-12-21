@@ -21,10 +21,10 @@ func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, c
 
 ## Mentions
 
-- [Providing access to directories](providing-access-to-directories.md)
-- [Presenting selected documents](presenting-selected-documents.md)
 - [Displaying transient content in a popover](displaying-transient-content-in-a-popover.md)
 - [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+- [Presenting selected documents](presenting-selected-documents.md)
+- [Providing access to directories](providing-access-to-directories.md)
 
 #### Discussion
 
@@ -52,6 +52,7 @@ The completion handler is called after the [`viewDidAppear(_:)`](uiviewcontrolle
   Presents a view controller in a primary context.
 - [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents a view controller in a secondary (or detail) context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)
   Dismisses the view controller that was presented modally by the view controller.
 - [var modalPresentationStyle: UIModalPresentationStyle](uiviewcontroller/modalpresentationstyle.md)

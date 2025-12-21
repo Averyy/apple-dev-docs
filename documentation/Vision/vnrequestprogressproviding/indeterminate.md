@@ -22,7 +22,7 @@ var indeterminate: Bool { get }
 
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t mean that the request will run forever. Rather, it means that the nature of the request can’t be broken down into identifiable fractions to report. The [`progressHandler`](vnrequestprogressproviding/progresshandler.md) will still be called at suitable intervals.
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) doesn’t mean that the request will run forever. Rather, it means that the nature of the request can’t be broken down into identifiable fractions to report. The [`progressHandler`](vnrequestprogressproviding/progresshandler.md) will still be called at suitable intervals.
 
 ## See Also
 

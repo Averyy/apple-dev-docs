@@ -21,20 +21,20 @@ protocol MTLIntersectionFunctionTable : MTLResource
 
 #### Overview
 
-Don’t implement this protocol yourself. Instead create a [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) object and configure its properties. Then call the appropriate method on the pipeline state object that you want to use this table with:
+Don’t implement this protocol yourself. Instead create an [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) instance and configure its properties. Then call the appropriate method on the pipeline state that you want to use this table with:
 
 If you use the same ray-tracing functions with more than one pipeline, make a separate table for each.
 
-Use the methods on this object to set the table entries to point at the intersection functions, and to provide buffers as arguments for those functions. For more information about intersection functions, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+Use the methods on this instance to set the table entries to point at the intersection functions, and to provide buffers as arguments for those functions. For more information about intersection functions, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## Topics
 
-### Setting a Table Entry
+### Setting a table entry
 - [func setFunction((any MTLFunctionHandle)?, index: Int)](mtlintersectionfunctiontable/setfunction(_:index:).md)
   Sets an entry in the table.
 - [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](mtlintersectionfunctiontable/setfunctions(_:range:).md)
   Sets a range of entries in the table.
-### Specifying Arguments for Intersection Functions
+### Specifying arguments for intersection functions
 - [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlintersectionfunctiontable/setbuffer(_:offset:index:).md)
   Sets a buffer for the intersection functions.
 - [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlintersectionfunctiontable/setbuffers(_:offsets:range:).md)
@@ -43,7 +43,7 @@ Use the methods on this object to set the table entries to point at the intersec
   Sets a visible function table for the intersection functions.
 - [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlintersectionfunctiontable/setvisiblefunctiontables(_:bufferrange:).md)
   Sets a range of visible function tables for the intersection functions.
-### Specifying Opaque Triangle Intersection Testing
+### Specifying opaque triangle intersection testing
 - [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](mtlintersectionfunctiontable/setopaquetriangleintersectionfunction(signature:index:).md)
   Sets an entry in the intersection table to point to a system-defined opaque triangle intersection function.
 - [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)](mtlintersectionfunctiontable/setopaquetriangleintersectionfunction(signature:range:).md)

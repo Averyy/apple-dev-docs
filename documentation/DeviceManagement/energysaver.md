@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure energy-saver settings.
+The payload that configures Energy Saver settings.
 
 **Availability**:
 - macOS 10.7+
@@ -136,32 +136,32 @@ Specify `com.apple.MCX` as the payload type.
 
 ### Objects
 - [object EnergySaver.Com.apple.EnergySaver.desktop.ACPower](energysaver/com.apple.energysaver.desktop.acpower-data.dictionary.md)
-  The desktop AC power energy-saver settings.
+  The desktop AC power Energy Saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary.md)
   The schedule for turning the device on or off.
 - [object EnergySaver.Com.apple.EnergySaver.portable.ACPower](energysaver/com.apple.energysaver.portable.acpower-data.dictionary.md)
-  The laptop AC power energy-saver settings.
+  The laptop AC power Energy Saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.portable.BatteryPower](energysaver/com.apple.energysaver.portable.batterypower-data.dictionary.md)
-  The laptop battery power energy-saver settings.
+  The laptop battery power Energy Saver settings.
 
 ## See Also
 
 - [object Declarations](declarations.md)
-  The payload to apply a set of declaration to the device through the Settings app.
+  The payload that applies a set of declarations to the device through the Settings app.
 - [object FileProvider](fileprovider.md)
-  The payload you use to configure file provider settings.
+  The payload that configures file provider settings.
 - [object Font](font.md)
-  The payload you use to configure fonts.
+  The payload that configures fonts.
 - [object LockScreenMessage](lockscreenmessage.md)
-  The payload you use to configure a Lock screen message.
+  The payload that configures a Lock Screen message.
 - [object Screensaver](screensaver.md)
-  The payload you use to configure the screen saver.
+  The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
-  The payload you use to configure system extensions.
+  The payload that configures system extensions.
 - [object SystemLogging](systemlogging.md)
-  The payload you use to configure system logging.
+  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
-  The payload you use to configure the time server.
+  The payload that configures the time server.
 
 
 ---

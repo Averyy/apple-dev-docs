@@ -17,7 +17,7 @@ var maintainsInactiveSelection: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the selection is maintained when focus is lost; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the selection is maintained when focus is lost; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -30,13 +30,9 @@ You can use any type that conforms to the [`MLIdentifier`](mlidentifier.md) prot
 
 ## See Also
 
-- [func recommendations<T>(fromUsers: MLDataColumn<T>, maxCount: Int, restrictingToItems: MLDataColumn<T>?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-416wd.md)
-  Retrieves the highest scored items for the given column of users, based on item similarity and the rating column.
-- [func recommendations(fromUsers: [any MLIdentifier], maxCount: Int, restrictingToItems: [any MLIdentifier]?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.md)
+- [func recommendations(fromUsers:maxCount:restrictingToItems:excluding:excludingObserved:)](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:).md)
   Retrieves the highest scored item for the given array of users, based on item similarity and the rating column.
-- [func getSimilarItems<T>(fromItems: MLDataColumn<T>, maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-9scon.md)
-  Returns the top ranked similar items based on the model’s similarity type.
-- [func getSimilarItems(fromItems: [any MLIdentifier], maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37.md)
+- [func getSimilarItems(fromItems:maxCount:)](mlrecommender/getsimilaritems(fromitems:maxcount:).md)
   Returns the top ranked similar items based on the model’s similarity type.
 
 

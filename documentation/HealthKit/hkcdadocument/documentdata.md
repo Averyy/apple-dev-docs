@@ -22,7 +22,7 @@ var documentData: Data? { get }
 
 The CDA document’s XML format is specified by the [`Clinical Document Architecture, R2`](https://developer.apple.comhttp://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard. .
 
-When using an [`HKDocumentQuery`](hkdocumentquery.md) object to retrieve documents from the HealthKit store, if the query’s [`includeDocumentData`](hkdocumentquery/includedocumentdata.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false), the retrieved documents will have `nil`-valued `documentData` properties.
+When using an [`HKDocumentQuery`](hkdocumentquery.md) object to retrieve documents from the HealthKit store, if the query’s [`includeDocumentData`](hkdocumentquery/includedocumentdata.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the retrieved documents will have `nil`-valued `documentData` properties.
 
 ## See Also
 

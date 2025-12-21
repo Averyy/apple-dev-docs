@@ -6,13 +6,20 @@ Build, test, and submit your app with Apple’s integrated development environme
 
 #### Overview
 
-Xcode is a suite of tools developers use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
+Xcode is the suite of tools you use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
 
 ![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/e1b60f9edde6ed1d1f80b5578dba24c0/xcode-overview-landmarks-hero%402x.png)
 
-Xcode includes a world-class code editor, built in SwiftUI preview tools that show the UI of your app as you modify code, and a powerful debugger with conditional breakpoints.
+Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Use coding intelligence to explain and write code, analyze bugs, and generate fixes. Add playground macros to run code snippets, and add SwiftUI previews to see your UI as you build it.
 
-Xcode also includes several development tools to help you rapidly prototype and test your app. Use Simulator for rapid prototyping and testing your app in a simulated environment when a real device isn’t available. Use Instruments to profile and analyze your app, improve performance, and investigate system resource usage. Construct 3D content with Reality Composer, train custom machine learning models with Create ML, and identify areas of your app that aren’t accessible with Accessibility Inspector.
+Xcode also includes several tools to help you rapidly develop and test your app:
+
+- Run your entire app in Simulator without using a real device.
+- Create a single, multilayer icon for your app using the Icon Composer app.
+- Use Instruments to profile and analyze your app, improve performance, and investigate system resource usage.
+- Construct 3D content with Reality Composer.
+- Train custom machine learning models with Create ML.
+- Identify areas of your app that aren’t accessible with Accessibility Inspector.
 
 > **Note**: Download the latest version of Xcode from the [`Mac App Store`](https://developer.apple.comhttps://apps.apple.com/us/app/xcode/id497799835). Download beta versions of Xcode from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/xcode/).
 
@@ -33,14 +40,16 @@ Xcode also includes several development tools to help you rapidly prototype and 
 - [Projects and workspaces](projects-and-workspaces.md)
   Manage the code and resources you use to build apps, libraries, and other software for Apple platforms.
 - [Source control management](source-control-management.md)
-  Back up your files, collaborate with others, and tag your releases with source control support in Xcode.
+  Back up your files, collaborate with others, and tag your releases with Git source control support in Xcode.
 - [Capabilities](capabilities.md)
   Enable services that Apple provides, such as In-App Purchase, Push Notifications, Apple Pay, iCloud, and many others.
 - [Build system](build-system.md)
   Compile your code into a binary format, and customize your project settings to build your code.
+- [Command-line tools](command-line-tools.md)
+  Develop and customize your projects in Terminal.
 ### Code
-- [Source Editor](source-editor.md)
-  Edit your source files, locate issues, and make necessary changes using the Source Editor.
+- [Source editor](source-editor.md)
+  Edit your source files, locate issues, and make necessary changes using the source editor.
 - [Bundles and frameworks](bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
 - [Swift packages](swift-packages.md)

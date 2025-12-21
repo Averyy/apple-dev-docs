@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+A localized message describing the reason for the failure.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

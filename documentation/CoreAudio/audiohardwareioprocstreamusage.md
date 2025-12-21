@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: struct
 
+This structure describes which streams a given AudioDeviceIOProc will use. It is used in conjunction with kAudioDevicePropertyIOProcStreamUsage.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+
@@ -12,6 +14,8 @@
 ```swift
 struct AudioHardwareIOProcStreamUsage
 ```
+
+#### Overview
 
 ## Topics
 
@@ -30,8 +34,11 @@ struct AudioHardwareIOProcStreamUsage
 ## See Also
 
 - [struct AudioObjectPropertyAddress](audioobjectpropertyaddress.md)
+  An AudioObjectPropertyAddress collects the three parts that identify a specific property together in a struct for easy transmission.
 - [struct AudioStreamRangedDescription](audiostreamrangeddescription.md)
+  This structure allows a specific sample rate range to be associated with an AudioStreamBasicDescription that specifies its sample rate as kAudioStreamAnyRate.
 - [struct UnsafeMutableAudioBufferListPointer](unsafemutableaudiobufferlistpointer.md)
+  A wrapper for a pointer to an `AudioBufferList`.
 
 
 ---

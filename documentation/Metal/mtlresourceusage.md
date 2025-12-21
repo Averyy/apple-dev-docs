@@ -21,7 +21,7 @@ struct MTLResourceUsage
 
 ## Mentions
 
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Overview
 
@@ -35,10 +35,10 @@ You can combine multiple [`MTLResourceUsage`](mtlresourceusage.md) values with a
 ### Type Properties
 - [static var read: MTLResourceUsage](mtlresourceusage/read.md)
   An option that enables reading from the resource.
-- [static var write: MTLResourceUsage](mtlresourceusage/write.md)
-  An option that enables writing to the resource.
 - [static var sample: MTLResourceUsage](mtlresourceusage/sample.md)
   An option that enables sampling from the resource.
+- [static var write: MTLResourceUsage](mtlresourceusage/write.md)
+  An option that enables writing to the resource.
 
 ## Relationships
 
@@ -54,6 +54,8 @@ You can combine multiple [`MTLResourceUsage`](mtlresourceusage.md) values with a
 
 ## See Also
 
+- [typealias MTLGPUAddress](mtlgpuaddress.md)
+  A 64-bit unsigned integer type appropriate for storing GPU addresses.
 - [protocol MTLAllocation](mtlallocation.md)
   A memory allocation from a Metal GPU device, such as a memory heap, texture, or data buffer.
 - [protocol MTLResource](mtlresource.md)

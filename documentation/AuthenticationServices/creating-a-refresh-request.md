@@ -31,7 +31,7 @@ The following table specifies the body parameters that the system uses to create
 | `exp` | 5 minutes from now | Required. Per RFC 7523 Section 3. |
 | `scope` | `openid offline_access` and [`additionalScopes`](asauthorizationproviderextensionloginconfiguration/additionalscopes.md) | Required. The requested scope for the assertion. The default value is `openid offline_access` and the system appends any additional ones to it. The default additional scope is `urn:apple:platformsso` If there’s an embedded assertion, this value must match the scope in the embedded assertion JWT. |
 | `nonce` | A nonce value | Required. A unique nonce for this request. |
-| `aud` | [`tokenEndpointURL`](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md) | Required. The refresh endpoint URL host and path. |
+| `aud` | [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) | Required. The refresh endpoint URL host and path. |
 | `iat` | The current time | Required. The IdP needs to verify this value. |
 | [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value that the nonce request returns. | Required. The key name is either the [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
 | `grant_type` | `refresh_token` | Required. |
@@ -80,7 +80,7 @@ The following code provides an example of a refresh request:
 - [Creating and validating a login request](creating-and-validating-a-login-request.md)
   Create a signed JOSE login request.
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-  Support the platform SSO 2.0 protocol for encryption and decryption operations.
+  Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 
 ---

@@ -6,8 +6,8 @@
 An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

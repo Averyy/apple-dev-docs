@@ -23,7 +23,7 @@ var bufferSize: Int { get set }
 
 The default value is 1MB. The minimum size of log buffer is 1KB and the maximum size is 1GB.
 
-Carefully consider the size of this buffer based on how many messages you expect your shader to log and be useful to diagnose problems. A smaller size might lead to the shader dropping more messages while a larger size might result in a larger memory footprint and reduced performance due to excessive logging.
+Carefully consider the size of this buffer based on how many messages you expect your shader to log and be useful to diagnose problems. A smaller size might lead to the shader dropping more messages while a larger size might result in a larger memory footprint and reduced performance due to excessive logging.
 
 ## See Also
 

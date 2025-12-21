@@ -22,7 +22,7 @@ init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws
 
 #### Discussion
 
-This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) method (Objective-C).
+This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method (Objective-C).
 
 The following code creates a 3 x 3 multiarray and sets its contents to the value 3.14159.
 
@@ -33,14 +33,10 @@ The following code creates a 3 x 3 multiarray and sets its contents to the value
 
 ## See Also
 
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-3eqoq.md)
-  Creates a multiarray from a collection of integers.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-fh2x.md)
-  Creates a multiarray from a collection of floats.
-- [convenience init<C>(C) throws](mlmultiarray/init(_:)-8bsfu.md)
-  Creates a multiarray from a collection of doubles.
-- [convenience init<ShapedArray>(ShapedArray)](mlmultiarray/init(_:)-wk41.md)
-  Creates a multiarray from a shaped array.
+- [convenience(_:)](mlmultiarray/init(_:).md)
+  An MLMultiArray constructed with the FixedWidthInteger elements of the collection converted to Int32.
+- [convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])](mlmultiarray/init(shape:datatype:strides:).md)
+  Creates the object with specified strides.
 - [init(dataPointer: UnsafeMutableRawPointer, shape: [NSNumber], dataType: MLMultiArrayDataType, strides: [NSNumber], deallocator: ((UnsafeMutableRawPointer) -> Void)?) throws](mlmultiarray/init(datapointer:shape:datatype:strides:deallocator:).md)
   Creates a multiarray from a data pointer.
 - [convenience init(byConcatenatingMultiArrays: [MLMultiArray], alongAxis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(byconcatenatingmultiarrays:alongaxis:datatype:).md)

@@ -16,7 +16,7 @@ func hasProperty(forKey key: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the described class has a property identified by the specified key; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the described class has a property identified by the specified key; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -21,7 +21,7 @@ class UIActivityIndicatorView
 
 #### Overview
 
-You control when an activity indicator animates by calling the [`startAnimating()`](uiactivityindicatorview/startanimating().md) and [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) methods. To automatically hide the activity indicator when animation stops, set the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+You control when an activity indicator animates by calling the [`startAnimating()`](uiactivityindicatorview/startanimating().md) and [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) methods. To automatically hide the activity indicator when animation stops, set the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You can set the color of the activity indicator by using the [`color`](uiactivityindicatorview/color.md) property.
 
@@ -97,8 +97,6 @@ You can set the color of the activity indicator by using the [`color`](uiactivit
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

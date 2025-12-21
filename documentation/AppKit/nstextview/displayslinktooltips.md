@@ -17,9 +17,9 @@ var displaysLinkToolTips: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if link tooltips are automatically displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if link tooltips are automatically displayed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The default value for this feature is [`true`](https://developer.apple.com/documentation/swift/true); clients who do not wish tooltips to be displayed automatically must explicitly disable it.
+The default value for this feature is [`true`](https://developer.apple.com/documentation/Swift/true); clients who do not wish tooltips to be displayed automatically must explicitly disable it.
 
 ## See Also
 

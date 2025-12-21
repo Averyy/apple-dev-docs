@@ -32,22 +32,22 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [var height: Double](cgsize/height.md)
   A height value.
 ### Special Values
-- [static var zero: CGSize { get }](CGSize/zero.md)
+- [static var zero: CGSize](CGSize/zero.md)
 - [init()](cgsize/init.md)
   Creates a size with zero width and height.
 ### Transforming Sizes
-- [func applying(_ t: CGAffineTransform) -> CGSize](CGSize/applying(_:).md)
+- [func applying(CGAffineTransform) -> CGSize](CGSize/applying(_:).md)
 ### Alternate Representations
-- [var dictionaryRepresentation: CFDictionary { get }](CGSize/dictionaryRepresentation.md)
-- [init?(dictionaryRepresentation dict: CFDictionary)](CGSize/init(dictionaryRepresentation:).md)
+- [var dictionaryRepresentation: CFDictionary](CGSize/dictionaryRepresentation.md)
+- [init?(dictionaryRepresentation: CFDictionary)](CGSize/init(dictionaryRepresentation:).md)
 - [var debugDescription: String](../coregraphics/cgsize/1645822-debugdescription.md)
   A textual representation of the size’s dimensions.
 - [var customMirror: Mirror](../coregraphics/cgsize/1645828-custommirror.md)
   A representation of the size’s structure and display style for use in debugging.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook { get }](CGSize/customPlaygroundQuickLook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](CGSize/customPlaygroundQuickLook.md)
   A custom playground Quick Look for this instance.
 ### Comparing Sizes
-- [func CGSizeEqualToSize(_ size1: CGSize, _ size2: CGSize) -> Bool](../CoreGraphics/CGSizeEqualToSize(_:_:).md)
+- [func CGSizeEqualToSize(CGSize, CGSize) -> Bool](../CoreGraphics/CGSizeEqualToSize(_:_:).md)
   Returns whether two sizes are equal.
 ### Initializers
 - [init(CVImageSize)](cgsize/init(_:).md)

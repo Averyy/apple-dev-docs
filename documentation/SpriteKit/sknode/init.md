@@ -17,7 +17,6 @@ Initializes a blank node.
 ## Declaration
 
 ```swift
-@MainActor
 init()
 ```
 

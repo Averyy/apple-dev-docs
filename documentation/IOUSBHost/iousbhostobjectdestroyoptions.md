@@ -15,6 +15,8 @@ struct IOUSBHostObjectDestroyOptions
 
 #### Overview
 
+Options for destroyWithOptions
+
 ```None
          the device will not be reset and drivers will not be re-registered for matching.  This allows for IOUSBHostDevice
          objects that were initialized with <code>IOUSBHostObjectInitOptionsDeviceCapture</code> to honor the

@@ -4,13 +4,13 @@
 **Kind**: func
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,10 @@ func CVPixelFormatTypeCopyFourCharCodeString(_ pixelFormat: OSType) -> CFString
 #### Return Value
 
 A string with a user displayable conversion of a pixel format.
+
+#### Discussion
+
+Creates a string with a formatted representation of a pixel format
 
 ## Parameters
 

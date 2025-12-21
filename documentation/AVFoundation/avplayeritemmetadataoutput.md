@@ -26,10 +26,10 @@ class AVPlayerItemMetadataOutput
 
 ## Topics
 
-### Creating a Metadata Output
+### Creating a metadata output
 - [init(identifiers: [String]?)](avplayeritemmetadataoutput/init(identifiers:).md)
   Creates an instance of AVPlayerItemMetadataOutput.
-### Configuring the Delegate
+### Configuring the delegate
 - [var advanceIntervalForDelegateInvocation: TimeInterval](avplayeritemmetadataoutput/advanceintervalfordelegateinvocation.md)
   The time interval, in seconds, the player item metadata output object messages its delegate earlier than normal.
 - [var delegate: (any AVPlayerItemMetadataOutputPushDelegate)?](avplayeritemmetadataoutput/delegate.md)

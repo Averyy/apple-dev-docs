@@ -37,7 +37,7 @@ Do not rely on this for comparing processes, instead compare NSRunningApplicatio
 - [var launchDate: Date?](nsrunningapplication/launchdate.md)
   Indicates the date when the application was launched.
 - [var isFinishedLaunching: Bool](nsrunningapplication/isfinishedlaunching.md)
-  Indicates whether the receiver’s process has finished launching,
+  A Boolean value that determines whether the receiver’s process has finished launching.
 - [var ownsMenuBar: Bool](nsrunningapplication/ownsmenubar.md)
   Returns whether the application owns the current menu bar.
 

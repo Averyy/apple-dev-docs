@@ -6,7 +6,7 @@
 Drag images are laid out overlapping diagonally.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

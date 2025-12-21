@@ -35,6 +35,7 @@
 - [func AudioHardwareCreateProcessTap(CATapDescription!, UnsafeMutablePointer<AudioObjectID>!) -> OSStatus](audiohardwarecreateprocesstap(_:_:).md)
 - [func AudioHardwareDestroyProcessTap(AudioObjectID) -> OSStatus](audiohardwaredestroyprocesstap(_:).md)
 - [func PropertyAddress(AudioObjectPropertySelector, scope: AudioObjectPropertyScope, element: AudioObjectPropertyElement) -> AudioObjectPropertyAddress](propertyaddress(_:scope:element:).md)
+  A helper constructor for the AudioObjectPropertyAddress struct.
 
 ## See Also
 

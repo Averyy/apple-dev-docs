@@ -32,6 +32,8 @@ A user-readable string that represents the unit of measure. If the unit cannot b
 
 - [func string(from: Measurement<Unit>) -> String](measurementformatter/string(from:)-wt9y.md)
   Creates and returns a localized string representation of the provided measurement.
+- [func string<UnitType>(from: Measurement<UnitType>) -> String](measurementformatter/string(from:)-6rcb1.md)
+  Creates and returns a localized string representation of the provided measurement.
 
 
 ---

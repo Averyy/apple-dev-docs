@@ -6,8 +6,8 @@
 A dictionary of all publishable services declared by your app, indexed by service name.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -31,7 +31,7 @@ let myService = WAPublishableService.allServices["_example-service._tcp"]!
 
 // Give the service a symbol name.
 extension WAPublishableService {
-	public static var exampleService : WAPublishableService {
+	public static var exampleService: WAPublishableService {
 		allServices["_example-service._tcp"]!
 	}
 }

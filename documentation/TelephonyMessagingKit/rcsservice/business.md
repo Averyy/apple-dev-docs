@@ -6,8 +6,8 @@
 Structure containing details about a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -105,11 +105,6 @@ An [`RCSService.IncomingMessageNotification`](rcsservice/incomingmessagenotifica
   Structure containing the telephone number details provided by a business.
 - [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
   Structure containing details of a URI provided by a business.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Enumerations
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.

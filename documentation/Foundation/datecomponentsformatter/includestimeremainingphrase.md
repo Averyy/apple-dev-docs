@@ -22,9 +22,9 @@ var includesTimeRemainingPhrase: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) results in output strings like “30 minutes remaining”.
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) results in output strings like “30 minutes remaining”.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

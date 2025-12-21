@@ -37,12 +37,12 @@ The task returns the requested data (or any errors) to your completion handler.
 
 By default, URL session tasks fail immediately whenever connectivity is unavailable. The system returns an error, such as [`NSURLErrorNotConnectedToInternet`](https://developer.apple.com/documentation/Foundation/NSURLErrorNotConnectedToInternet-swift.var).
 
-Setting the [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) property to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to wait for connectivity before starting the task. This prevents the requests from failing if the watch can’t currently connect to the network. You can use the [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:taskIsWaitingForConnectivity:)) delegate method to learn when a request is deferred.
+Setting the [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) property to [`true`](https://developer.apple.com/documentation/Swift/true) tells the system to wait for connectivity before starting the task. This prevents the requests from failing if the watch can’t currently connect to the network. You can use the [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:taskIsWaitingForConnectivity:)) delegate method to learn when a request is deferred.
 
 To create a deferrable request:
 
 1. Access a default configuration using the [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration) class’s [`default`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/default) property.
-2. Set the configuration’s [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) property to [`true`](https://developer.apple.com/documentation/swift/true).
+2. Set the configuration’s [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 3. Create a session by calling the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) class’s [`init(configuration:)`](https://developer.apple.com/documentation/Foundation/URLSession/init(configuration:)) initializer, and passing the configuration.
 4. Create a task to request the data by calling the session object’s [`dataTask(with:completionHandler:)`](https://developer.apple.com/documentation/Foundation/URLSession/dataTask(with:completionHandler:)-52wk8) method.
 5. Start the task by calling its [`resume()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/resume()) method.

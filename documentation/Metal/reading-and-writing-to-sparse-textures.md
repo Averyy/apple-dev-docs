@@ -1,4 +1,4 @@
-# Reading and Writing to Sparse Textures
+# Reading and writing to sparse textures
 
 **Framework**: Metal
 
@@ -9,9 +9,9 @@ Decide how to handle access to unmapped texture regions.
 You don’t need to rewrite your shaders to work with sparse textures. You can treat sparse textures just like any other textures. However, they work differently if you access an unmapped region in the texture:
 
 - If you read or sample from an unmapped region, Metal returns a vector of zero values to your shader.
-- If you write to an unmapped region, the value is discarded.
+- If you write to an unmapped region, Metal discards the write value.
 
-If this default behavior is insufficient for your app, you need to update your shaders to handle accesses to unmapped regions.
+If this default behavior is insufficient for your app, update your shaders to handle memory operations to unmapped regions.
 
 ##### Test for Unmapped Regions in Your Shader
 
@@ -49,7 +49,7 @@ fragment float4 fragmentShader(
 }
 ```
 
-For more information about the other methods for sampling or reading from sparse textures, see [`Metal Shading Language Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) and [`Restricting Access to Specific Mipmaps`](restricting-access-to-specific-mipmaps.md).
+For more information about the other methods for sampling or reading from sparse textures, see [`Metal Shading Language Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) and [`Restricting access to specific mipmaps`](restricting-access-to-specific-mipmaps.md).
 
 ##### Track Residency Information
 
@@ -61,15 +61,15 @@ Another way to use a residency map is to store the best level of detail that you
 
 ## See Also
 
-- [Managing Sparse Texture Memory](managing-sparse-texture-memory.md)
+- [Managing sparse texture memory](managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning Memory to Sparse Textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Estimating How Often a Texture Region Is Accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
 - [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.

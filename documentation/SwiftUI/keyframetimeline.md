@@ -36,7 +36,7 @@ let keyframes = KeyframeTimeline(initialValue: CGPoint.zero) {
     CubicKeyframe(.init(x: 0, y: 0), duration: 0.7)
 }
 
-let value = keyframes.value(time: 0.45
+let value = keyframes.value(time: 0.45)
 ```
 
 For animations that involve multiple coordinated changes, you can include multiple nested tracks:

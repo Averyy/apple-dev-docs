@@ -3,13 +3,13 @@
 **Framework**: EnergyKit  
 **Kind**: property
 
-Represents the total runtime for the device in the date range.
+The total time that electricity-consuming devices actively ran.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -20,9 +20,9 @@ var totalRuntime: Duration?
 ## See Also
 
 - [let range: DateInterval](electricityinsightrecord/range.md)
-  The date interval for which the system generates the insight.
+  The time period that the insight record spans.
 - [var totalEnergy: Measurement<UnitEnergy>?](electricityinsightrecord/totalenergy.md)
-  The total energy either consumed or generated in the date range.
+  The total electrical energy consumed or generated.
 
 
 ---

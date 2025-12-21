@@ -17,7 +17,7 @@ var isBezeled: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the cell has a bezeled border or [`false`](https://developer.apple.com/documentation/swift/false) if it does not. This property is mutually exclusive with the [`isBordered`](nscell/isbordered.md) property—that is, a cell’s border can be plain or bezeled but not both. Changing the value of this property automatically removes any border that has been set, regardless of the value you assign to the property.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the cell has a bezeled border or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not. This property is mutually exclusive with the [`isBordered`](nscell/isbordered.md) property—that is, a cell’s border can be plain or bezeled but not both. Changing the value of this property automatically removes any border that has been set, regardless of the value you assign to the property.
 
 ## See Also
 

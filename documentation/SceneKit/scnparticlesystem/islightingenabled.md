@@ -22,9 +22,9 @@ var isLightingEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), SceneKit uses the position, color, and other attributes of [`SCNLight`](scnlight.md) objects in the scene to shade each rendered particle image. Use this option to enhance volumetric effects such as smoke and fog.
+If [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit uses the position, color, and other attributes of [`SCNLight`](scnlight.md) objects in the scene to shade each rendered particle image. Use this option to enhance volumetric effects such as smoke and fog.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 > **Note**:  SceneKit uses only one [`SCNLight`](scnlight.md) object to illuminate rendered particles. Use the [`categoryBitMask`](scnnode/categorybitmask.md) of the node containing the particle system to control which light applies to the particles.
 

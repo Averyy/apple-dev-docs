@@ -6,7 +6,7 @@
 The “color” variable value mode. Sets the opacity of each variable layer to either on or off depending on how its threshold compared to the current value.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

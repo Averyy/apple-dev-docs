@@ -21,7 +21,7 @@ enum MTLLanguageVersion
 
 ## Topics
 
-### Version Numbers
+### Version numbers
 - [MTLLanguageVersion.version1_1](mtllanguageversion/version1_1.md)
   Version 1.1 of the Metal shading language.
 - [MTLLanguageVersion.version1_2](mtllanguageversion/version1_2.md)

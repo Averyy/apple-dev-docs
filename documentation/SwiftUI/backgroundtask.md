@@ -65,7 +65,7 @@ Use a value of this type with the [`backgroundTask(_:action:)`](scene/background
 - [struct SnapshotData](snapshotdata.md)
   The associated data of a snapshot background task.
 - [struct SnapshotResponse](snapshotresponse.md)
-  Your appplication’s response to a snapshot background task.
+  Your application’s response to a snapshot background task.
 
 
 ---

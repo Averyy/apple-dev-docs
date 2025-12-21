@@ -21,13 +21,13 @@ optional func application(_ application: UIApplication, shouldRestoreSecureAppli
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to restore the app’s saved state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to restore the app’s saved state; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Apps must implement both this method and [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) for state preservation to occur.
 
-Use the information from the provided coder to determine whether to proceed with state restoration. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) if the data in the coder is from an earlier version of your app and you can’t restore it safely. Any objects you decode from the coder must adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol.
+Use the information from the provided coder to determine whether to proceed with state restoration. For example, you might return [`false`](https://developer.apple.com/documentation/Swift/false) if the data in the coder is from an earlier version of your app and you can’t restore it safely. Any objects you decode from the coder must adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol.
 
 This method supersedes [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md). If your delegate implements both methods, the system only calls this one.
 

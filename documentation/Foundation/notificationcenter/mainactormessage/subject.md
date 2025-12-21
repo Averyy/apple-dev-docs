@@ -4,20 +4,27 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
+A type which you can optionally post and observe along with this `MainActorMessage`.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 associatedtype Subject
 ```
+
+## See Also
+
+- [static var name: Notification.Name](notificationcenter/mainactormessage/name.md)
+  A optional name corresponding to this type, used to interoperate with notification posters and observers.
 
 
 ---

@@ -66,7 +66,7 @@ struct Mode
 - [class var main: RunLoop](runloop/main.md)
   Returns the run loop of the main thread.
 - [func getCFRunLoop() -> CFRunLoop](runloop/getcfrunloop.md)
-  Returns the receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) object.
+  Returns the receiver’s underlying run loop object.
 
 
 ---

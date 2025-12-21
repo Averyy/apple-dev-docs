@@ -20,11 +20,11 @@ optional func application(_ application: UIApplication, shouldSaveApplicationSta
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app’s state should be preserved; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the app’s state should be preserved; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Apps must implement this method and the [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](https://developer.apple.com/documentation/swift/true) each time UIKit tries to preserve the state of your app. You can return [`false`](https://developer.apple.com/documentation/swift/false) to disable state preservation temporarily. For example, during testing, you could disable state preservation to test specific code paths.
+Apps must implement this method and the [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](https://developer.apple.com/documentation/Swift/true) each time UIKit tries to preserve the state of your app. You can return [`false`](https://developer.apple.com/documentation/Swift/false) to disable state preservation temporarily. For example, during testing, you could disable state preservation to test specific code paths.
 
 You can add version information or any other contextual data to the provided coder object as needed. During restoration, you can use that information to help decide whether or not to proceed with restoring your app to its previous state.
 

@@ -111,9 +111,9 @@ func paymentQueue(_ queue: SKPaymentQueue,
 
 ##### Change the App Store Country or Region in the Sandbox Environment
 
-When you change the App Store Country or Region in App Store Connect for a Sandbox Apple ID, it changes the storefront in your app. Change the region to test in-app purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test in-app purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
+When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test in-app purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test in-app purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
 
-> ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple ID account on the device and sign back in.
+> ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account on the device and sign back in.
 
 ## Topics
 

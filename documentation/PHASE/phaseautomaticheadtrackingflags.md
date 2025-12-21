@@ -9,7 +9,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,8 @@ struct PHASEAutomaticHeadTrackingFlags
 ```
 
 #### Overview
+
+Automatic Head-Tracking flags.
 
 ```None
 On capable devices, listener orientation will be automatically rotated based on user's head-orientation.

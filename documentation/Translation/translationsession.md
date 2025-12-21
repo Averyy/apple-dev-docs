@@ -8,7 +8,7 @@ A class that performs translations between a pair of languages.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration
@@ -93,14 +93,11 @@ struct TranslationExample: View {
 
 - [Translating text within your app](translating-text-within-your-app.md)
   Display simple system translations and create custom translation experiences.
-- [nonisolated func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor = .rect(.bounds), arrowEdge: Edge = .top, replacementAction: ((String) -> Void)? = nil) -> some View
-](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
   Presents a translation popover when a given condition is true.
-- [nonisolated func translationTask(_ configuration: TranslationSession.Configuration?, action: @escaping (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(_:action:).md)
+- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](../SwiftUI/View/translationTask(_:action:).md)
   Adds a task to perform before this view appears or when the translation configuration changes.
-- [nonisolated func translationTask(source: Locale.Language? = nil, target: Locale.Language? = nil, action: @escaping (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(source:target:action:).md)
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](../SwiftUI/View/translationTask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 
 

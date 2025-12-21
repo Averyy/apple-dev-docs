@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An option specifying that Metal prevents hazards when modifying this object’s contents.
+An option that directs Metal to apply runtime safeguards that prevent memory hazards when commands access a resource.
 
 **Availability**:
 - iOS 13.0+
@@ -21,16 +21,21 @@ case tracked
 
 #### Discussion
 
-For a resource, Metal tracks dependencies on any accesses to the resource. If you submit a command that modifies the resource, Metal delays that command from executing until prior commands accessing that resource are complete, and prevents future commands from executing until the modifications are complete.
+Metal tracks memory dependencies for resources you create with this option. When at least one command writes to a tracked resource, the framework takes the following actions:
 
-For a heap, Metal tracks dependencies on accesses to  resources on the heap. If you submit a command that modifies a resource on a heap, Metal delays that command from executing until prior commands accessing the heap’s resources are complete, and prevents future commands accessing the heap’s resources from executing until the modifications are complete. For better performance, use untracked resources and synchronize access yourself.
+- Delay write operations until all previous read operations finish
+- Prevent subsequent commands from running until write operations finish
+
+This automatic hazard tracking provides safety for your resources without requiring you to manually synchronize access with barriers, fences, or events.
+
+See [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md) for more information about hazard tracking and how to enable it.
 
 ## See Also
 
 - [MTLHazardTrackingMode.default](mtlhazardtrackingmode/default.md)
-  An option specifying that the default tracking mode should be used.
+  An option that applies the default tracking behavior in Metal based on the resource or heap type you’re creating.
 - [MTLHazardTrackingMode.untracked](mtlhazardtrackingmode/untracked.md)
-  An option specifying that the app must prevent hazards when modifying this object’s contents.
+  An option that disables automatic memory hazard tracking in Metal for a resource at runtime.
 
 
 ---

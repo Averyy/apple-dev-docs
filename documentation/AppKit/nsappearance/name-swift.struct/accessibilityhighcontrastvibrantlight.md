@@ -16,7 +16,7 @@ static let accessibilityHighContrastVibrantLight: NSAppearance.Name
 
 #### Discussion
 
-Don’t assign an [`NSAppearance`](nsappearance.md) object with this type directly to one of your views. Instead, assign a light appearance to your view. AppKit then returns this type when the user enables the Increase Contrast option in the Accessibility system preferences and the view’s [`allowsVibrancy`](nsview/allowsvibrancy.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+Don’t assign an [`NSAppearance`](nsappearance.md) object with this type directly to one of your views. Instead, assign a light appearance to your view. AppKit then returns this type when the user enables the Increase Contrast option in the Accessibility system preferences and the view’s [`allowsVibrancy`](nsview/allowsvibrancy.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

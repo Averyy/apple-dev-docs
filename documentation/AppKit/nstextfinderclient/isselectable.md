@@ -16,7 +16,7 @@ optional var isSelectable: Bool { get }
 
 #### Discussion
 
-If this properties is not implemented, the text finder will act as if they returned [`true`](https://developer.apple.com/documentation/swift/true).
+If this properties is not implemented, the text finder will act as if they returned [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

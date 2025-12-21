@@ -19,7 +19,7 @@ var verticalScroller: NSScroller? { get set }
 
 The value of this property is `nil` if the scroll view has no vertical scroller.
 
-You can access the vertical scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasVerticalScroller`](nsscrollview/hasverticalscroller.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+You can access the vertical scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasVerticalScroller`](nsscrollview/hasverticalscroller.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -21,6 +21,8 @@ enum AssistantSchemas
 ## Topics
 
 ### Protocols
+- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
+  Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
 - [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
   Assistant schema conformance for app entities that describe ebooks or audiobooks.
 - [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)

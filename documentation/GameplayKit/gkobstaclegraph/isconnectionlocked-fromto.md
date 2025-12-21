@@ -21,7 +21,7 @@ func isConnectionLocked(from startNode: NodeType, to endNode: NodeType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the connection between the specified nodes has been locked with the [`lockConnection(from:to:)`](gkobstaclegraph/lockconnection(from:to:).md) method; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the connection between the specified nodes has been locked with the [`lockConnection(from:to:)`](gkobstaclegraph/lockconnection(from:to:).md) method; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -21,7 +21,7 @@ class MTLBufferLayoutDescriptor
 
 ## Topics
 
-### Describing Fetch Behavior
+### Describing fetch behavior
 - [var stride: Int](mtlbufferlayoutdescriptor/stride.md)
   The number of bytes from one buffer entry to the next.
 - [var stepFunction: MTLStepFunction](mtlbufferlayoutdescriptor/stepfunction.md)

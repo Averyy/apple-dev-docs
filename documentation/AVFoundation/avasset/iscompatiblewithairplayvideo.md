@@ -20,7 +20,7 @@ var isCompatibleWithAirPlayVideo: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you can play this asset’s content to an external AirPlay device, like an Apple TV.
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you can play this asset’s content to an external AirPlay device, like an Apple TV.
 
 
 ---

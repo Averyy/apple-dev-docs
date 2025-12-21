@@ -6,13 +6,13 @@
 An extension to the string protocol that scans strings for semantic entities, such as email addresses, phone numbers, URLs, and flight information.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ enum DataDetector
 ## Topics
 
 ### Methods that scan strings for known content types
-- [func dataDetectorMatches(_ types: DataDetector.MatchType = .all, options: DataDetector.Options = DataDetector.Options()) -> some AsyncSequence<DataDetector.Match, Never>
+- [func dataDetectorMatches(DataDetector.MatchType, options: DataDetector.Options) -> some AsyncSequence<DataDetector.Match, Never>
 ](../Swift/StringProtocol/dataDetectorMatches(_:options:).md)
   Searches for known data types in a string or a substring.
 ### Structures

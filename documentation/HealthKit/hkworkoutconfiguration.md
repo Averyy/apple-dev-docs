@@ -65,7 +65,7 @@ Like many HealthKit classes, the [`HKWorkoutConfiguration`](hkworkoutconfigurati
 - [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
-  A session that tracks the user’s workout on Apple Watch.
+  A session that tracks a person’s workout.
 - [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
   A workout session’s state.
 - [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)

@@ -23,9 +23,9 @@ This property is read-only—you specify a RAW pixel format when creating a sett
 
 When capturing RAW images, the following requirements apply:
 
-- The [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) setting must be [`false`](https://developer.apple.com/documentation/swift/false).
+- The [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) setting must be [`false`](https://developer.apple.com/documentation/Swift/false).
 - Your delegate object must implement the [`photoOutput(_:didFinishProcessingRawPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingrawphoto:previewphoto:resolvedsettings:bracketsettings:error:).md) method.
-- The [`isHighResolutionPhotoEnabled`](avcapturephotosettings/ishighresolutionphotoenabled.md) setting may be [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false), but that setting applies only to the separate processed image.
+- The [`isHighResolutionPhotoEnabled`](avcapturephotosettings/ishighresolutionphotoenabled.md) setting may be [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false), but that setting applies only to the separate processed image.
 
 (You request separate processed images with the [`init(rawPixelFormatType:processedFormat:)`](avcapturephotosettings/init(rawpixelformattype:processedformat:).md) initializer. This restriction does not apply when you request RAW-only capture with the [`init(rawPixelFormatType:)`](avcapturephotosettings/init(rawpixelformattype:).md) initializer).
 

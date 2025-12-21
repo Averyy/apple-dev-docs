@@ -4,13 +4,13 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 12.2+
+- iPadOS 12.2+
+- Mac Catalyst 12.2+
+- macOS 10.14.4+
+- tvOS 12.2+
+- visionOS 1.0+
+- watchOS 5.2+
 
 ## Declaration
 
@@ -21,28 +21,64 @@ struct OutputSpan<Element> where Element : ~Copyable
 
 ## Topics
 
+### Initializers
+- [init()](outputspan/init.md)
+  Create an OutputSpan with zero capacity
+- [init(buffer: UnsafeMutableBufferPointer<Element>, initializedCount: Int)](outputspan/init(buffer:initializedcount:)-3tbg3.md)
+  Unsafely create an OutputSpan over partly-initialized memory.
+- [init(buffer: borrowing Slice<UnsafeMutableBufferPointer<Element>>, initializedCount: Int)](outputspan/init(buffer:initializedcount:)-vie3.md)
+  Unsafely create an OutputSpan over partly-initialized memory.
 ### Instance Properties
-- [var available: Int](outputspan/available.md)
 - [let capacity: Int](outputspan/capacity.md)
 - [var count: Int](outputspan/count.md)
+  The number of initialized elements in this span.
+- [var freeCapacity: Int](outputspan/freecapacity.md)
+  The number of additional elements that can be added to this span.
+- [var indices: Range<OutputSpan<Element>.Index>](outputspan/indices.md)
+  The range of initialized positions for this `OutputSpan`.
 - [var isEmpty: Bool](outputspan/isempty.md)
+  A Boolean value indicating whether the span is empty.
+- [var isFull: Bool](outputspan/isfull.md)
+  A Boolean value indicating whether the span is full.
 - [var mutableSpan: MutableSpan<Element>](outputspan/mutablespan.md)
+  Exclusively borrow the underlying initialized memory for mutation.
 - [var span: Span<Element>](outputspan/span.md)
+  Borrow the underlying initialized memory for read-only access.
 ### Instance Methods
 - [func append(consuming Element)](outputspan/append(_:).md)
-- [func append(from: inout some IteratorProtocol<Element>)](outputspan/append(from:)-1v4ec.md)
-- [func append<S>(from: S) -> S.Iterator](outputspan/append(from:)-2u87a.md)
-- [func append(fromContentsOf: Span<Element>)](outputspan/append(fromcontentsof:)-1t2se.md)
-- [func append(fromContentsOf: borrowing MutableSpan<Element>)](outputspan/append(fromcontentsof:)-5oou5.md)
-- [func append(fromContentsOf: some Collection<Element>)](outputspan/append(fromcontentsof:)-7cg6j.md)
+  Append a single element to this span.
 - [func append(repeating: Element, count: Int)](outputspan/append(repeating:count:).md)
-- [func moveAppend(fromContentsOf: consuming OutputSpan<Element>)](outputspan/moveappend(fromcontentsof:)-4rh59.md)
-- [func moveAppend(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>)](outputspan/moveappend(fromcontentsof:)-4uzut.md)
-- [func moveAppend(fromContentsOf: UnsafeMutableBufferPointer<Element>)](outputspan/moveappend(fromcontentsof:)-c23r.md)
-- [func relinquishBorrowedBytes() -> UnsafeMutableRawBufferPointer](outputspan/relinquishborrowedbytes.md)
-- [func relinquishBorrowedMemory() -> UnsafeMutableBufferPointer<Element>](outputspan/relinquishborrowedmemory.md)
+  Repeatedly append an element to this span.
+- [func finalize(for: Slice<UnsafeMutableBufferPointer<Element>>) -> Int](outputspan/finalize(for:)-5utkq.md)
+  Consume the output span and return the number of initialized elements.
+- [func finalize(for: UnsafeMutableBufferPointer<Element>) -> Int](outputspan/finalize(for:)-83pw0.md)
+  Consume the output span and return the number of initialized elements.
 - [func removeAll()](outputspan/removeall.md)
-- [func removeLast() -> Element?](outputspan/removelast.md)
+  Remove all this span’s elements and return its memory to the uninitialized state.
+- [func removeLast() -> Element](outputspan/removelast.md)
+  Remove the last initialized element from this span.
+- [func removeLast(Int)](outputspan/removelast(_:).md)
+  Remove the last N elements of this span, returning the memory they occupy to the uninitialized state.
+- [func swapAt(OutputSpan<Element>.Index, OutputSpan<Element>.Index)](outputspan/swapat(_:_:).md)
+  Exchange the elements at the two given offsets
+- [func swapAt(unchecked: OutputSpan<Element>.Index, unchecked: OutputSpan<Element>.Index)](outputspan/swapat(unchecked:unchecked:).md)
+  Exchange the elements at the two given offsets
+- [func withUnsafeMutableBufferPointer<E, R>((UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> R) throws(E) -> R](outputspan/withunsafemutablebufferpointer(_:).md)
+  Call the given closure with the unsafe buffer pointer addressed by this OutputSpan and a mutable reference to its count of initialized elements.
+### Subscripts
+- [subscript(OutputSpan<Element>.Index) -> Element](outputspan/subscript(_:).md)
+  Accesses the element at the specified position.
+- [subscript(unchecked _: OutputSpan<Element>.Index) -> Element](outputspan/subscript(unchecked:).md)
+  Accesses the element at the specified position.
+### Type Aliases
+- [OutputSpan.Index](outputspan/index.md)
+  The type that represents an initialized position in an `OutputSpan`.
+
+## Relationships
+
+### Conforms To
+- [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

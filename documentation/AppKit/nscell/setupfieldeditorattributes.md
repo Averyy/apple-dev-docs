@@ -27,7 +27,7 @@ You should not use this method to substitute a new field editor. [`setUpFieldEdi
 
 ## Parameters
 
-- `textObj`: The field editor to configure. .
+- `textObj`: The field editor to configure.
 
 ## See Also
 

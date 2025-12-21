@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The locale to use when parsing date strings with the specified format. Use system locale if unspecified.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

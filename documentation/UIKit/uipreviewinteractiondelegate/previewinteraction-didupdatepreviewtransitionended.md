@@ -23,7 +23,7 @@ func previewInteraction(_ previewInteraction: UIPreviewInteraction, didUpdatePre
 
 This method is called repeatedly during the preview phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the  effect in view controller preview transitions progressively blurs everything except the appropriate view.
 
-The `ended` parameter is [`false`](https://developer.apple.com/documentation/swift/false) throughout the preview phase and becomes [`true`](https://developer.apple.com/documentation/swift/true) as the phase is completed. The preview interaction then transitions to the commit phase, so you should use this point to update the UI as required.
+The `ended` parameter is [`false`](https://developer.apple.com/documentation/Swift/false) throughout the preview phase and becomes [`true`](https://developer.apple.com/documentation/Swift/true) as the phase is completed. The preview interaction then transitions to the commit phase, so you should use this point to update the UI as required.
 
 ## Parameters
 

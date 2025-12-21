@@ -21,7 +21,7 @@ enum MTLFunctionType
 
 ## Topics
 
-### Function Types
+### Function types
 - [MTLFunctionType.vertex](mtlfunctiontype/vertex.md)
   A vertex function you can use in a render pipeline state object.
 - [MTLFunctionType.fragment](mtlfunctiontype/fragment.md)
@@ -61,7 +61,7 @@ enum MTLFunctionType
 - [var options: MTLFunctionOptions](mtlfunction/options.md)
   The options that Metal used to compile this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 
 
 ---

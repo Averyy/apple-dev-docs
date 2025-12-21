@@ -29,22 +29,6 @@ enum State
   The action has been created but hasn’t started.
 - [ConversationAction.State.running](conversationaction/state-swift.enum/running.md)
   The action is currently processing.
-### Operators
-- [static func == (ConversationAction.State, ConversationAction.State) -> Bool](conversationaction/state-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](conversationaction/state-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](conversationaction/state-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](conversationaction/state-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](conversationaction/state-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](conversationaction/state-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

@@ -21,9 +21,9 @@ class CIFeature
 
 #### Overview
 
-> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/Vision/VNObservation).
+> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/Vision/VNObservation))
 
-A `CIFeature` object represents a portion of an image that a detector believes matches its criteria. Subclasses of `CIFeature` typically hold additional information specific to the detector that discovered the feature.
+A `CIFeature` object represents a portion of an image that a detector believes matches its criteria. Subclasses of CIFeature holds additional information specific to the detector that discovered the feature.
 
 ## Topics
 
@@ -34,13 +34,13 @@ A `CIFeature` object represents a portion of an image that a detector believes m
   The type of feature that was discovered.
 ### Feature Types
 - [let CIFeatureTypeFace: String](cifeaturetypeface.md)
-  The discovered feature is a person’s face.
+  A Core Image feature type for person’s face.
 - [let CIFeatureTypeRectangle: String](cifeaturetyperectangle.md)
-  The discovered feature is a rectangular object, though it might appear in perspective in the image.
+  A Core Image feature type for rectangular object.
 - [let CIFeatureTypeQRCode: String](cifeaturetypeqrcode.md)
-  The discovered feature is a Quick Response code (2D barcode).
+  A Core Image feature type for QR code object.
 - [let CIFeatureTypeText: String](cifeaturetypetext.md)
-  The discovered feature is a region likely to contain upright text.
+  A Core Image feature type for text.
 
 ## Relationships
 
@@ -68,7 +68,7 @@ A `CIFeature` object represents a portion of an image that a detector believes m
 - [class CIRectangleFeature](cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
 - [class CITextFeature](citextfeature.md)
-  Information about a region likely to contain text detected in a still or video image.
+  Information about a text that was detected in a still or video image.
 - [class CIQRCodeFeature](ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 

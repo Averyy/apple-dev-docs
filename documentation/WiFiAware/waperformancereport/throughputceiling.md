@@ -6,8 +6,8 @@
 The highest throughput the connection is capable of under ideal conditions, given the hardware capabilities of both devices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

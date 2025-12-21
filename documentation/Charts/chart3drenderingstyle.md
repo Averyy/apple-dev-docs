@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,9 +16,11 @@ struct Chart3DRenderingStyle
 
 ### Type Properties
 - [static var automatic: Chart3DRenderingStyle](chart3drenderingstyle/automatic.md)
+  Sets the rendering style automatically.
 - [static var flat: Chart3DRenderingStyle](chart3drenderingstyle/flat.md)
-- [static var immersive: Chart3DRenderingStyle](chart3drenderingstyle/immersive.md)
+  Renders the chart onto a plane.
 - [static var volumetric: Chart3DRenderingStyle](chart3drenderingstyle/volumetric.md)
+  Renders the chart volumetrically for binocular vision.
 
 ## Relationships
 

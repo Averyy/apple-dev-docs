@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Sets the dictionary for the specified volatile domain.
+Replaces the keys and values in the specified domain with the new keys and values you supply.
 
 **Availability**:
 - iOS 2.0+
@@ -22,21 +22,25 @@ func setVolatileDomain(_ domain: [String : Any], forName domainName: String)
 
 #### Discussion
 
-This method raises an `NSInvalidArgumentException` if a volatile domain with the specified name already exists.
+This method removes the existing keys from the specified domain and then adds the new keys you provide. After updating the keys, this method generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
 
 ## Parameters
 
-- `domain`: The dictionary of keys and values you want to assign to the domain.
-- `domainName`: The domain whose keys and values you want to set.
+- `domain`: A dictionary of keys and values to assign to the domain.
+- `domainName`: The name of the domain to update.
 
 ## See Also
 
-- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
-  The current volatile domain names.
+- [func persistentDomain(forName: String) -> [String : Any]?](userdefaults/persistentdomain(forname:).md)
+  Retrieves the settings from the specified persistent domain.
+- [func setPersistentDomain([String : Any], forName: String)](userdefaults/setpersistentdomain(_:forname:).md)
+  Replaces the keys and values in the specified domain with the new keys and values you supply.
 - [func volatileDomain(forName: String) -> [String : Any]](userdefaults/volatiledomain(forname:).md)
-  Returns the dictionary for the specified volatile domain.
+  Retrieves the settings from the specified volatile domain.
+- [func removePersistentDomain(forName: String)](userdefaults/removepersistentdomain(forname:).md)
+  Removes the keys and values from the specified persistent domain.
 - [func removeVolatileDomain(forName: String)](userdefaults/removevolatiledomain(forname:).md)
-  Removes the specified volatile domain from the user’s defaults.
+  Removes the keys and values from the specified volatile domain.
 
 
 ---

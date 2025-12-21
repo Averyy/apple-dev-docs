@@ -21,7 +21,7 @@ func isEnabledForSegment(at segment: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the given segment is enabled and [`false`](https://developer.apple.com/documentation/swift/false) if the segment is disabled. By default, segments are enabled.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the given segment is enabled and [`false`](https://developer.apple.com/documentation/Swift/false) if the segment is disabled. By default, segments are enabled.
 
 ## Parameters
 

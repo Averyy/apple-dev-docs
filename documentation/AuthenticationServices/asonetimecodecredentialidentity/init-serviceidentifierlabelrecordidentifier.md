@@ -16,6 +16,10 @@
 init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)
 ```
 
+#### Discussion
+
+Initializes an instance of ASOneTimeCodeCredentialIdentity.
+
 ## Parameters
 
 - `serviceIdentifier`: The service identifier for which this credential identity is valid.

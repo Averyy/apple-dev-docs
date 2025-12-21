@@ -10,7 +10,7 @@ A controller that manages an audio playback instance.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -64,13 +64,11 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 - [var entity: Entity?](audioplaybackcontroller/entity.md)
   The entity from which the audio stream emanates.
 ### Instance Methods
-- [func seek(to:)](audioplaybackcontroller/seek(to:).md)
+- [func seek(to: Duration)](audioplaybackcontroller/seek(to:).md)
   Sets the playback position to the specified time.
 ### Type Aliases
-- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel-350si.md)
-  A type alias for Double expressing that the value is in Decibels.
-- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel-73aqn.md)
-  A type alias for Double expressing that the value is in Decibels.
+- [AudioPlaybackController.Decibel](audioplaybackcontroller/decibel.md)
+  The unit for measuring intensity of sound on a logarithmic scale.
 
 ## Relationships
 

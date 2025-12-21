@@ -21,17 +21,17 @@ func shouldChange(to format: AVAudioFormat, for bus: AUAudioUnitBus) -> Bool
 
 #### Return Value
 
-- [`true`](https://developer.apple.com/documentation/swift/true) if the new format will be set on the bus.
+- [`true`](https://developer.apple.com/documentation/Swift/true) if the new format will be set on the bus.
 
 #### Discussion
 
-- [`false`](https://developer.apple.com/documentation/swift/false) if the new format will not be set on the bus.
+- [`false`](https://developer.apple.com/documentation/Swift/false) if the new format will not be set on the bus.
 
 #### Discussion
 
 The bus has already checked that the format meets its channel constraints. The audio unit can override this method to check the format before allowing it to be set on the bus.
 
-The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false) if the audio unit’s [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false) if the audio unit’s [`renderResourcesAllocated`](auaudiounit/renderresourcesallocated.md) value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

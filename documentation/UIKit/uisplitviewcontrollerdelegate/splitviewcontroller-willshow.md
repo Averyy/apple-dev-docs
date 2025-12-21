@@ -23,7 +23,7 @@ optional func splitViewController(_ svc: UISplitViewController, willShow column:
 
 This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
 
-The split view controller calls this method when one of its columns is about to be shown, for example with [`show(_:)`](uisplitviewcontroller/show(_:).md). Use this method to perform any customization associated with showing the column. You can use the split view controller’s [`transitionCoordinator`](uiviewcontroller/transitioncoordinator.md) to coordinate any of your animations alongside the transition animation.
+The split view controller calls this method when the system is preparing to show one of its columns; for example, when a person rotates the device. The system doesn’t call this method when you display the column programmatically with [`show(_:)`](uisplitviewcontroller/show(_:).md). Use this method to perform any customization associated with showing the column. You can use the split view controller’s [`transitionCoordinator`](uiviewcontroller/transitioncoordinator.md) to coordinate any of your animations alongside the transition animation.
 
 ## Parameters
 
@@ -34,6 +34,8 @@ The split view controller calls this method when one of its columns is about to 
 
 - [func splitViewController(UISplitViewController, displayModeForExpandingToProposedDisplayMode: UISplitViewController.DisplayMode) -> UISplitViewController.DisplayMode](uisplitviewcontrollerdelegate/splitviewcontroller(_:displaymodeforexpandingtoproposeddisplaymode:).md)
   Asks the delegate to provide the display mode to use after the split view interface expands.
+- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
+  Tells the delegate that the system completed showing the specified column.
 - [func splitViewControllerDidExpand(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerdidexpand(_:).md)
   Tells the delegate that the split view controller interface has expanded.
 

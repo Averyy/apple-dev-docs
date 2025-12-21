@@ -27,7 +27,7 @@ The delegate of an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) obj
 
 ## Topics
 
-### Managing Sample Buffer Behavior
+### Managing sample buffer behavior
 - [func captureOutput(AVCaptureOutput, didOutput: CMSampleBuffer, from: AVCaptureConnection)](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md)
   Notifies the delegate that a new video frame was written.
 - [func captureOutput(AVCaptureOutput, didDrop: CMSampleBuffer, from: AVCaptureConnection)](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:diddrop:from:).md)

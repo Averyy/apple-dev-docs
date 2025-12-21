@@ -6,7 +6,7 @@
 Enhancements to be used with each anchor.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,9 @@ enum CameraEnhancement
 
 ### Enumeration Cases
 - [CameraRegionAnchor.CameraEnhancement.contrastAndVibrancy](cameraregionanchor/cameraenhancement-swift.enum/contrastandvibrancy.md)
+  Contrast and vibrancy enhancement in addition to simple crop/zoom.
 - [CameraRegionAnchor.CameraEnhancement.stabilization](cameraregionanchor/cameraenhancement-swift.enum/stabilization.md)
+  Simple crop/zoom.
 ### Instance Properties
 - [var description: String](cameraregionanchor/cameraenhancement-swift.enum/description.md)
   A textual representation of the camera enhancement.

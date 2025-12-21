@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A Boolean value that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
+An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
 
 **Availability**:
 - Mac Catalyst 16.3+
@@ -32,9 +32,9 @@ When opening an HTTP or HTTPS URL in its default configuration:
 ## See Also
 
 - [com.apple.developer.web-browser](entitlements/com.apple.developer.web-browser.md)
-  A Boolean that indicates whether the app can act as the user’s default web browser.
+  An entitlement that indicates whether the app can act as the user’s default web browser.
 - [com.apple.developer.browser.app-installation](entitlements/com.apple.developer.browser.app-installation.md)
-  The entitlement that enables a browser to install alternative-distribution apps from a website.
+  An entitlement that enables a browser to install alternative distribution apps from a website.
 
 
 ---

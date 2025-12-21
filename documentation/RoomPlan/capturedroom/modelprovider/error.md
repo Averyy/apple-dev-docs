@@ -30,9 +30,6 @@ The `modelFileURL` functions can throw an error of this type, such as `CapturedR
 ### Inspecting error information
 - [var errorDescription: String?](capturedroom/modelprovider/error/errordescription.md)
   A human-readable explanation for the particular model-provider error.
-### Default Implementations
-- [Error Implementations](capturedroom/modelprovider/error/error-implementations.md)
-- [LocalizedError Implementations](capturedroom/modelprovider/error/localizederror-implementations.md)
 
 ## Relationships
 

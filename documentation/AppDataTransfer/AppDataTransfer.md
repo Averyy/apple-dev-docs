@@ -12,10 +12,12 @@ Download App Store information and app-install activity about your app.
 
 Use the App Data Transfer web API to request and download App Store information and app-install activity data about your app. The data available relates to a user’s use of Apple’s App Store and includes information such as previous transactions and downloads. If you have multiple apps, integrate each app with the API separately to enable users to transfer their data to you.
 
-To access the data, you need to acquire an access token with the `appstore-user-profile` read-only scope, and at least one of these scopes:
+To access the data, you need to acquire an access token with the `data-transfer-user-profile` read-only scope, and at least one of these scopes:
 
 - `appstore-info-readonly`
 - `app-install-activity-readonly`
+
+> **Note**: If you’ve previously requested access to App Store information using the `appstore-user-profile` scope along with older scope names, the system accepts these scopes and automatically approves them for both EU and UK scopes. You don’t need to make a new token request.
 
 For more information, see [`Request an authorization`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/Request-an-authorization).
 
@@ -35,7 +37,11 @@ The Apple server returns a request ID, which you use when you get the request st
 
 The response from the server also contains a `statusCheckDelay`, which is the number of seconds you need to wait before checking the status of the request. You can cancel a request before this time by making a `POST` request to the [`Cancel request`](cancel-request.md) endpoint.
 
-If you submit a recurring request and don’t resubmit the recurring instances, for example, you request a `DAILY_30` recurrence and don’t resubmit the request each subsequent day, the recurring request expires and you need to submit another request.
+If you submit a `DAILY_30` recurring request and don’t resubmit the recurring instance each subsequent day, the recurring request expires 40 days after submission of the request.
+
+If you submit a `WEEKLY_180` recurring request and don’t resubmit the recurring instance each subsequent week, the recurring request expires 190 days after submission of the request.
+
+> **Note**: If you already have a recurring request pending and make another recurring request, the system returns an error, along with the ID of the existing request.
 
 ##### Find the Request Status
 

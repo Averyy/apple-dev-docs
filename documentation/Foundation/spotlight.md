@@ -21,8 +21,8 @@ Search for files and other items on the local device, and index your app’s con
   Create, read, write, and examine files and folders in the file system.
 - [Archives and Serialization](archives-and-serialization.md)
   Convert objects and values to and from property list, JSON, and other flat binary representations.
-- [Preferences](preferences.md)
-  Persistently store domain-scoped pieces of information for configuring your app.
+- [Settings](settings.md)
+  Configure your app using data you store persistently on the local disk or in iCloud.
 - [iCloud](icloud.md)
   Manage files and key-value data that automatically synchronize among a user’s iCloud devices.
 - [Optimizing Your App’s Data for iCloud Backup](optimizing-your-app-s-data-for-icloud-backup.md)

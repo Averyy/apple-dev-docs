@@ -22,15 +22,15 @@ struct Timeout<Upstream, Context> where Upstream : Publisher, Context : Schedule
 
 ## Topics
 
-### Creating a Timeout Publisher
+### Creating a timeout publisher
 - [init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, scheduler: Context, options: Context.SchedulerOptions?, customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?)](publishers/timeout/init(upstream:interval:scheduler:options:customerror:).md)
   Creates a publisher that terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Timeout.Output](publishers/timeout/output.md)
   The kind of values published by this publisher.
 - [Publishers.Timeout.Failure](publishers/timeout/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/timeout/upstream.md)
   The publisher from which this publisher receives elements.
 - [let interval: Context.SchedulerTimeType.Stride](publishers/timeout/interval.md)
@@ -41,11 +41,6 @@ struct Timeout<Upstream, Context> where Upstream : Publisher, Context : Schedule
   Scheduler options that customize the delivery of elements.
 - [let customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?](publishers/timeout/customerror.md)
   A closure that executes if the publisher times out. The publisher sends the failure returned by this closure to the subscriber as the reason for termination.
-### Applying Operators
-- [Publisher Operators](publishers-timeout-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/timeout/publisher-implementations.md)
 
 ## Relationships
 

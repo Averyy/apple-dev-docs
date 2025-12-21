@@ -5,9 +5,6 @@
 
 Notifies the observer when a test suite stops.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

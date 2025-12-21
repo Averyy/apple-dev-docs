@@ -22,7 +22,7 @@ class func isDirectionsRequest(_ url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the URL contains a directions request that your app needs to display to the user, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the URL contains a directions request that your app needs to display to the user, or [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 ## Parameters
 

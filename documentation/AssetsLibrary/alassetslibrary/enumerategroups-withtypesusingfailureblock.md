@@ -5,11 +5,6 @@
 
 Invokes a given block passing as a parameter each of the asset groups that match the given asset group type.
 
-**Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-
 ## Declaration
 
 ```swift
@@ -33,10 +28,6 @@ This method will fail with error [`ALAssetsLibraryAccessGloballyDeniedError`](al
 - `types`: The value is a bitfield; you can OR together values from  .
 - `enumerationBlock`: For a description of the block, see  .
 - `failureBlock`: For a description of the block, see  .
-
-## See Also
-
-- [func enumerateGroupsWithTypes(UInt32, usingBlock: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroupswithtypes(_:usingblock:failureblock:).md)
 
 
 ---

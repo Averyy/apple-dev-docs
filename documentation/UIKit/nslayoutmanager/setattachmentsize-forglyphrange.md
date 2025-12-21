@@ -33,7 +33,7 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 - [func attachmentSize(forGlyphAt: Int) -> CGSize](nslayoutmanager/attachmentsize(forglyphat:).md)
   Returns the size of the attachment glyph at the specified index.
-- [var defaultAttachmentScaling: NSImageScaling { get set }](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
+- [var defaultAttachmentScaling: NSImageScaling](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
 - [func setDrawsOutsideLineFragment(Bool, forGlyphAt: Int)](nslayoutmanager/setdrawsoutsidelinefragment(_:forglyphat:).md)
   Indicates whether the specified glyph exceeds the bounds of the line fragment for its layout.

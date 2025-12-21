@@ -21,7 +21,7 @@ var isPlayable: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you can use the asset to create an [`AVPlayerItem`](avplayeritem.md).
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you can use the asset to create an [`AVPlayerItem`](avplayeritem.md).
 
 
 ---

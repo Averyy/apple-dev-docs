@@ -29,15 +29,6 @@ struct CumulativeSumSequence
   Constructs an iterator.
 - [HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/iterator.md)
   An async iterator of cumulative count sequence.
-- [HumanBodyActionCounter.CumulativeSumSequence.AsyncIterator](humanbodyactioncounter/cumulativesumsequence/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [HumanBodyActionCounter.CumulativeSumSequence.Feature](humanbodyactioncounter/cumulativesumsequence/feature.md)
-  The feature type.
-### Type Aliases
-- [HumanBodyActionCounter.CumulativeSumSequence.Element](humanbodyactioncounter/cumulativesumsequence/element.md)
-  The type of element produced by this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](humanbodyactioncounter/cumulativesumsequence/asyncsequence-implementations.md)
 
 ## Relationships
 
@@ -49,12 +40,6 @@ struct CumulativeSumSequence
 
 - [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/applied(to:eventhandler:).md)
   Predicts cumulative human body action counts from a sequence of human body pose windows.
-- [HumanBodyActionCounter.Input](humanbodyactioncounter/input.md)
-  The input type.
-- [HumanBodyActionCounter.Output](humanbodyactioncounter/output.md)
-  The output type.
-- [HumanBodyActionCounter.OutputSequence](humanbodyactioncounter/outputsequence.md)
-  The output async sequence type.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: struct
 
+A symbol effect that applies the Wiggle animation to symbol images.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,23 +20,39 @@
 struct WiggleSymbolEffect
 ```
 
+#### Overview
+
+The Wiggle animation applies a transitory translation or rotation effect to the symbol.
+
 ## Topics
 
 ### Instance Properties
 - [var backward: WiggleSymbolEffect](wigglesymboleffect/backward.md)
+  Returns a copy of the effect requesting an animation that moves back and forth horizontally based on the current locale, starting by moving backward.
 - [var byLayer: WiggleSymbolEffect](wigglesymboleffect/bylayer.md)
+  Returns a copy of the effect requesting an animation that applies separately to each motion group.
 - [var clockwise: WiggleSymbolEffect](wigglesymboleffect/clockwise.md)
+  Returns a copy of the effect requesting an animation that rotates back and forth, starting by rotating clockwise.
 - [var configuration: SymbolEffectConfiguration](wigglesymboleffect/configuration.md)
+  The configuration for the effect.
 - [var counterClockwise: WiggleSymbolEffect](wigglesymboleffect/counterclockwise.md)
+  Returns a copy of the effect requesting an animation that rotates back and forth, starting by rotating counter-clockwise.
 - [var down: WiggleSymbolEffect](wigglesymboleffect/down.md)
+  Returns a copy of the effect requesting an animation that moves back and forth vertically, starting by moving down.
 - [var forward: WiggleSymbolEffect](wigglesymboleffect/forward.md)
+  Returns a copy of the effect requesting an animation that moves back and forth horizontally based on the current locale, starting by moving forward.
 - [var left: WiggleSymbolEffect](wigglesymboleffect/left.md)
+  Returns a copy of the effect requesting an animation that moves back and forth horizontally, starting by moving left.
 - [var right: WiggleSymbolEffect](wigglesymboleffect/right.md)
+  Returns a copy of the effect requesting an animation that moves back and forth horizontally, starting by moving right.
 - [var up: WiggleSymbolEffect](wigglesymboleffect/up.md)
+  Returns a copy of the effect requesting an animation that moves back and forth vertically, starting by moving up.
 - [var wholeSymbol: WiggleSymbolEffect](wigglesymboleffect/wholesymbol.md)
+  Returns a copy of the effect requesting an animation that applies to all motion groups simultaneously.
 ### Instance Methods
 - [func custom(angle: Angle) -> WiggleSymbolEffect](wigglesymboleffect/custom(angle:)-1f09q.md)
 - [func custom(angle: Double) -> WiggleSymbolEffect](wigglesymboleffect/custom(angle:)-cqpf.md)
+  Returns a copy of the effect requesting an animation that moves back and forth along an axis with the passed in angle.
 
 ## Relationships
 
@@ -67,7 +85,9 @@ struct WiggleSymbolEffect
 - [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 - [struct BreatheSymbolEffect](breathesymboleffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
 - [struct RotateSymbolEffect](rotatesymboleffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
 
 
 ---

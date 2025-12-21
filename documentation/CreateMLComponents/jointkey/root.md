@@ -19,11 +19,6 @@ A key associated with root joint in a body pose.
 static let root: JointKey
 ```
 
-## See Also
-
-- [var rawValue: String](jointkey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-
 
 ---
 

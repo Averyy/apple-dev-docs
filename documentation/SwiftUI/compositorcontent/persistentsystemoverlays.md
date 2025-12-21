@@ -6,8 +6,8 @@
 Sets the preferred visibility of the non-transient system views overlaying the app.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

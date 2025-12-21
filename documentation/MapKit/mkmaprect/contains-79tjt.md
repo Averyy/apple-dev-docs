@@ -22,7 +22,7 @@ func contains(_ point: MKMapPoint) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rectangle isn’t `null` or empty and the point is inside the rectangle; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the rectangle isn’t `null` or empty and the point is inside the rectangle; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

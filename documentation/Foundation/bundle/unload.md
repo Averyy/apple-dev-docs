@@ -22,7 +22,7 @@ func unload() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bundle was successfully unloaded or was not already loaded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the bundle could not be unloaded.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the bundle was successfully unloaded or was not already loaded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the bundle could not be unloaded.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ It is the responsibility of the caller to ensure that no in-memory objects or da
 
 ##### Special Considerations
 
-Prior to OS X version 10.5, code could not be unloaded once loaded, and this method would always return [`false`](https://developer.apple.com/documentation/swift/false). In macOS 10.5 and later, you can unload a bundle’s executable code using this method.
+Prior to OS X version 10.5, code could not be unloaded once loaded, and this method would always return [`false`](https://developer.apple.com/documentation/Swift/false). In macOS 10.5 and later, you can unload a bundle’s executable code using this method.
 
 ## See Also
 

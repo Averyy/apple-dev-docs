@@ -20,9 +20,7 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [init(trainingData: DataFrame, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-1mecd.md)
-  Creates an instance given a table and the names of the item and user columns contained therein.
-- [init(trainingData: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String?, parameters: MLRecommender.ModelParameters) throws](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-20dcf.md)
+- [init(trainingData:userColumn:itemColumn:ratingColumn:parameters:)](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:).md)
   Creates an instance given a table and the names of the item and user columns contained therein.
 - [MLRecommender.ModelParameters](mlrecommender/modelparameters-swift.struct.md)
   Parameters that affect the process of training a recommender model.

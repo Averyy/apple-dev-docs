@@ -20,9 +20,6 @@ If a device declares an uncommon transport, the [`HIDDeviceTransport.unknown(_:)
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceTransport, HIDDeviceTransport) -> Bool](hiddevicetransport/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [HIDDeviceTransport.aid](hiddevicetransport/aid.md)
 - [HIDDeviceTransport.airPlay](hiddevicetransport/airplay.md)
@@ -39,8 +36,6 @@ If a device declares an uncommon transport, the [`HIDDeviceTransport.unknown(_:)
 - [HIDDeviceTransport.unknown(_:)](hiddevicetransport/unknown(_:).md)
 - [HIDDeviceTransport.usb](hiddevicetransport/usb.md)
 - [HIDDeviceTransport.virtual](hiddevicetransport/virtual.md)
-### Default Implementations
-- [Equatable Implementations](hiddevicetransport/equatable-implementations.md)
 
 ## Relationships
 

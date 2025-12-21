@@ -22,34 +22,28 @@ struct ReplaceEmpty<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Replace Empty Publisher
+### Creating a replace empty publisher
 - [init(upstream: Upstream, output: Publishers.ReplaceEmpty<Upstream>.Output)](publishers/replaceempty/init(upstream:output:).md)
   Creates a publisher that replaces an empty stream with a provided element.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.ReplaceEmpty.Output](publishers/replaceempty/output-swift.typealias.md)
   The kind of values published by this publisher.
 - [Publishers.ReplaceEmpty.Output](publishers/replaceempty/output-swift.typealias.md)
   The kind of values published by this publisher.
 - [Publishers.ReplaceEmpty.Failure](publishers/replaceempty/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/replaceempty/upstream.md)
   The publisher from which this publisher receives elements.
 - [let output: Publishers.ReplaceEmpty<Upstream>.Output](publishers/replaceempty/output-swift.property.md)
   The element to deliver when the upstream publisher finishes without delivering any elements.
 - [let output: Publishers.ReplaceEmpty<Upstream>.Output](publishers/replaceempty/output-swift.property.md)
   The element to deliver when the upstream publisher finishes without delivering any elements.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.ReplaceEmpty<Upstream>, Publishers.ReplaceEmpty<Upstream>) -> Bool](publishers/replaceempty/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/replaceempty/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-replaceempty-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/replaceempty/equatable-implementations.md)
-- [Publisher Implementations](publishers/replaceempty/publisher-implementations.md)
 
 ## Relationships
 

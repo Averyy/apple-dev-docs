@@ -17,7 +17,7 @@ optional func browser(_ sender: NSBrowser, selectRow row: Int, inColumn column: 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell was selected; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the cell was selected; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

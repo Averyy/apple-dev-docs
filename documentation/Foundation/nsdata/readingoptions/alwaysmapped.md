@@ -30,10 +30,6 @@ This takes precedence over [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.m
   A hint indicating the file should be mapped into virtual memory, if possible and safe.
 - [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
   A hint indicating the file should not be stored in the file-system caches.
-- [static var mappedIfSafe: NSData.ReadingOptions](nsdata/readingoptions/mappedifsafe.md)
-  A hint indicating the file should be mapped into virtual memory, if possible and safe.
-- [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
-  A hint indicating the file should not be stored in the file-system caches.
 
 
 ---

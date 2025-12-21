@@ -24,6 +24,8 @@ The status of the supplied object.
 
 #### Discussion
 
+Query the status of an la_object.
+
 Returns the status of a LinearAlgebra object.  The status will be one of the codes defined in LinearAlgebra/base.h.  New status codes may be added in the future, but the following basic principle will continue to hold: zero indicates success, status codes greater than zero are warnings, and status codes less than zero are errors.  Thus, careful error handling might look like the following:
 
 la_status_t status = la_status(result_object); if (status == LA_SUCCESS) { // Everything is copacetic.  Get your data from result_object. } else if (status > 0) { // No errors occured, but the result does not have full accuracy due to // numerical considerations.  Here, you might re-compute the result using // a more careful or stable algorithm. } else { // An error occured.  Something is seriously amiss and you will need // to handle it however makes sense for your application. }

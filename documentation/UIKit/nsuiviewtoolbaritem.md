@@ -50,18 +50,18 @@ For UIKit controls that support behavioral styles, set [`preferredBehavioralStyl
 
 ## See Also
 
-- [@MainActor class NSToolbarItem](../AppKit/NSToolbarItem.md)
+- [class NSToolbarItem](../AppKit/NSToolbarItem.md)
   A single item that appears in a window’s toolbar.
-- [@MainActor class NSToolbarItemGroup](../AppKit/NSToolbarItemGroup.md)
+- [class NSToolbarItemGroup](../AppKit/NSToolbarItemGroup.md)
   A group of subitems in a toolbar item.
 - [NSToolbarItemGroup.ControlRepresentation](../AppKit/NSToolbarItemGroup/ControlRepresentation-swift.enum.md)
 - [NSToolbarItemGroup.SelectionMode](../AppKit/NSToolbarItemGroup/SelectionMode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [@MainActor class NSMenuToolbarItem](../AppKit/NSMenuToolbarItem.md)
+- [class NSMenuToolbarItem](../AppKit/NSMenuToolbarItem.md)
   A control that presents a menu in a window’s toolbar.
-- [@MainActor class NSSearchToolbarItem](../AppKit/NSSearchToolbarItem.md)
+- [class NSSearchToolbarItem](../AppKit/NSSearchToolbarItem.md)
   A toolbar item that contains a search field optimized for performing text-based searches.
-- [@MainActor class NSTrackingSeparatorToolbarItem](../AppKit/NSTrackingSeparatorToolbarItem.md)
+- [class NSTrackingSeparatorToolbarItem](../AppKit/NSTrackingSeparatorToolbarItem.md)
   A toolbar separator that aligns with the vertical split view in the same window.
 
 

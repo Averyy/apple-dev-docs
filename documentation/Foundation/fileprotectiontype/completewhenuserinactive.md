@@ -45,6 +45,7 @@ static let completeWhenUserInactive: FileProtectionType
 - [static let unionOfSetsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofsetskeyvalueoperator.md)
   The @unionOfSets array operator.
 - [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+  Key in the userInfo dictionary of an NSError received during a failed upload.
 
 
 ---

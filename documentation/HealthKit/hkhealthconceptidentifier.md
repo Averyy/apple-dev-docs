@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: class
 
+A unique identifier for a specific health concept within a domain.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,12 +21,13 @@ class HKHealthConceptIdentifier
 
 #### Overview
 
-This identifier is internally unique to each concept within a domain.
+Each identifier points to one concept inside a domain. For example, within the medication domain, one identifier might represent ibuprofen while another represents insulin.
 
 ## Topics
 
 ### Instance Properties
 - [var domain: HKHealthConceptDomain](hkhealthconceptidentifier/domain.md)
+  The domain this identifier belongs to.
 
 ## Relationships
 
@@ -46,16 +49,19 @@ This identifier is internally unique to each concept within a domain.
 ## See Also
 
 - [class HKClinicalCoding](hkclinicalcoding.md)
+  A clinical coding that represents a medical concept using a standardized coding system.
 - [class HKMedicationConcept](hkmedicationconcept.md)
+  An object that describes a specific medication concept.
 - [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
 - [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
 - [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+  A reference to the tracked medication and the details a person can customize.
 - [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
 - [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
 - [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
-  Represents the domain of a HKHealthConceptIdentifier
+  A domain that represents a health concept.
 - [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
-  Represents a medications general form.
+  The manufactured form of a medication.
 - [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
 
 

@@ -11,12 +11,12 @@ The starting point for estimated arrival time requests.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate origin;
+origin: Coordinate;
 ```
 
 #### Discussion
 
-The [`origin`](etarequestoptions/origin.md) can be a [`mapkit.Coordinate`](mapkit.coordinate.md), a [`Place`](place.md) object, or a string that’s an address. Other services, such as Search and Geocoder, return [`Place`](place.md) objects.
+The [`origin`](etarequestoptions/origin.md) can be a [`Coordinate`](coordinate.md), a [`Place`](place.md) object, or a string that’s an address. Other services, such as Search and Geocoder, return [`Place`](place.md) objects.
 
 ## See Also
 

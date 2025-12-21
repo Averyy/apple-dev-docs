@@ -22,7 +22,7 @@ func setURL(_ url: URL, for store: NSPersistentStore) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the store was relocated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the store was relocated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

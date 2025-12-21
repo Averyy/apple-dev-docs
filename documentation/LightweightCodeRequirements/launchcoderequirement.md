@@ -53,8 +53,6 @@ Then the launch constraint is applied to env.
   Create a [`LaunchCodeRequirement`](launchcoderequirement.md) that requires matching all of the provided constraints.
 - [static func anyOf(requirement: () -> [any LaunchConstraint]) throws -> LaunchCodeRequirement](launchcoderequirement/anyof(requirement:).md)
   Create a [`LaunchCodeRequirement`](launchcoderequirement.md) that requires matching any of the provided constraints.
-### Default Implementations
-- [Equatable Implementations](launchcoderequirement/equatable-implementations.md)
 
 ## Relationships
 
@@ -70,7 +68,7 @@ Then the launch constraint is applied to env.
 
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement? { get set }](../Foundation/Process/launchRequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/Process/launchRequirement.md)
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)
   Creates a constraint that requires a launching process’s executable to satisfy all of the provided constraints.
 - [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](anyof(requirement:)-6nicx.md)

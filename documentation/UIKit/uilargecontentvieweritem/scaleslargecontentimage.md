@@ -21,7 +21,7 @@ var scalesLargeContentImage: Bool { get }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), the viewer displays the image at its intrinsic size.
+If [`false`](https://developer.apple.com/documentation/Swift/false), the viewer displays the image at its intrinsic size.
 
 > 💡 **Tip**:  For best results when scaling, use a PDF asset with the Preserve Vector Data checked in the asset catalog.
 

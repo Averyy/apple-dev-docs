@@ -25,15 +25,15 @@ Read audio data that you mix from one or more asset tracks by adding an audio mi
 
 ## Topics
 
-### Creating an Audio Mix Output
+### Creating an audio mix output
 - [init(audioTracks: [AVAssetTrack], audioSettings: [String : Any]?)](avassetreaderaudiomixoutput/init(audiotracks:audiosettings:).md)
   Creates an object that reads mixed audio from the specified audio tracks.
-### Configuring Audio Settings
+### Configuring audio settings
 - [var audioMix: AVAudioMix?](avassetreaderaudiomixoutput/audiomix.md)
   The audio mix to use with this output.
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetreaderaudiomixoutput/audiotimepitchalgorithm.md)
   The processing algorithm to use for scaled audio edits.
-### Inspecting an Output
+### Inspecting an output
 - [var audioTracks: [AVAssetTrack]](avassetreaderaudiomixoutput/audiotracks.md)
   The tracks from which the output reads audio.
 - [var audioSettings: [String : Any]?](avassetreaderaudiomixoutput/audiosettings.md)
@@ -50,6 +50,8 @@ Read audio data that you mix from one or more asset tracks by adding an audio mi
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -6,11 +6,11 @@
 A type that represents an instructions builder.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -41,7 +41,7 @@ struct InstructionsBuilder
 
 - [init(_:)](instructions/init(_:).md)
 - [protocol InstructionsRepresentable](instructionsrepresentable.md)
-  Conforming types represent instructions.
+  A type that can be represented as instructions.
 
 
 ---

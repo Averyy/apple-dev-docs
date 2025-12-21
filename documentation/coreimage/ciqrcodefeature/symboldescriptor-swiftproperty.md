@@ -21,7 +21,7 @@ var symbolDescriptor: CIQRCodeDescriptor? { get }
 
 #### Discussion
 
-Concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md).  Contains the payload, version of the symbol, mask pattern, and error correction level, so the QR Code can be reproduced.
+The property is a [`CIQRCodeDescriptor`](ciqrcodedescriptor.md) instance that contains the payload, symbol version, mask pattern, and error correction level, so the QR Code can be reproduced.
 
 ## See Also
 

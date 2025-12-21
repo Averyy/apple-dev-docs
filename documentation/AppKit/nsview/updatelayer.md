@@ -17,9 +17,9 @@ func updateLayer()
 
 #### Discussion
 
-You use this method to optimize the rendering of your view in situations where you can represent your views contents entirely using a layer object. If your view’s [`wantsUpdateLayer`](nsview/wantsupdatelayer.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the view calls this method instead of [`draw(_:)`](nsview/draw(_:).md) during the view update cycle. Custom views can override this method and use it to modify the properties of the underlying layer object. Modifying layer properties is a much more efficient way to update your view than is redrawing its content each time something changes.
+You use this method to optimize the rendering of your view in situations where you can represent your views contents entirely using a layer object. If your view’s [`wantsUpdateLayer`](nsview/wantsupdatelayer.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the view calls this method instead of [`draw(_:)`](nsview/draw(_:).md) during the view update cycle. Custom views can override this method and use it to modify the properties of the underlying layer object. Modifying layer properties is a much more efficient way to update your view than is redrawing its content each time something changes.
 
-When you want to update the contents of your layer, mark the view as dirty by setting its [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Doing so adds the view to the list of views that need to be refreshed during the next update cycle. During that update cycle, this method is called if the [`wantsUpdateLayer`](nsview/wantsupdatelayer.md) property is still [`true`](https://developer.apple.com/documentation/swift/true).
+When you want to update the contents of your layer, mark the view as dirty by setting its [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Doing so adds the view to the list of views that need to be refreshed during the next update cycle. During that update cycle, this method is called if the [`wantsUpdateLayer`](nsview/wantsupdatelayer.md) property is still [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Your implementation of this method should not call `super`.
 

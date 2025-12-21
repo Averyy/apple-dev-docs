@@ -18,7 +18,7 @@ var label: String { get }
 
 #### Discussion
 
-This string will be shown in the AutoFill suggestion for this one time code credential.
+A label to identify the one time code, typically supplied by the user. This string will be shown in the AutoFill suggestion for this one time code credential.
 
 
 ---

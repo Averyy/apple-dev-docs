@@ -22,8 +22,8 @@ class DCAppAttestService
 
 ## Mentions
 
-- [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
 - [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
+- [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
 
 #### Overview
 
@@ -74,6 +74,8 @@ For more information about how to support App Attest in your app, see [`Establis
   Request and analyze risk data using server-to-server calls.
 - [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
   Test your implementation in a development environment and onboard users gradually.
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+  Use this guide to validate your implementation of verifying the attestation object verification process.
 - [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 

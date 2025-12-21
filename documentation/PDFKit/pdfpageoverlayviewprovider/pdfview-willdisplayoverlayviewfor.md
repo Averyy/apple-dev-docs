@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-optional func pdfView(_ pdfView: PDFView, willDisplayOverlayView overlayView: UIView, for page: PDFPage)
+optional func pdfView(_ pdfView: PDFView, willDisplayOverlayView overlayView: NSView, for page: PDFPage)
 ```
 
 ## See Also

@@ -32,7 +32,7 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 - `descriptor`: An   instance.
 - `options`: An   instance that represents the reflection information you want the method to generate.
-- `reflection`: Set to   if you don’t need reflection data.
+- `reflection`: Pass   in either language when you don’t need reflection data.   Otherwise on return, if the method completes successfully,   it assigns an   instance to the pointee,   which contains the details about the function arguments.
 
 ## See Also
 

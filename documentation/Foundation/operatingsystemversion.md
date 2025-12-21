@@ -54,12 +54,20 @@ Use the [`ProcessInfo`](processinfo.md) property [`operatingSystemVersion`](proc
 
 ## See Also
 
-- [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
-  Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
-- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
-  Values used to indicate the system’s thermal state.
+- [var hostName: String](processinfo/hostname.md)
+  The name of the host computer on which the process is executing.
+- [var operatingSystemVersionString: String](processinfo/operatingsystemversionstring.md)
+  A string containing the version of the operating system on which the process is executing.
+- [var operatingSystemVersion: OperatingSystemVersion](processinfo/operatingsystemversion.md)
+  The version of the operating system on which the process is executing.
+- [func isOperatingSystemAtLeast(OperatingSystemVersion) -> Bool](processinfo/isoperatingsystematleast(_:).md)
+  Returns a Boolean value indicating whether the version of the operating system on which the process is executing is the same or later than the given version.
+- [func operatingSystem() -> Int](processinfo/operatingsystem.md)
+  Returns a constant to indicate the operating system on which the process is executing.
 - [Anonymous](1552984-anonymous.md)
   The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
+- [func operatingSystemName() -> String](processinfo/operatingsystemname.md)
+  Returns a string containing the name of the operating system on which the process is executing.
 
 
 ---

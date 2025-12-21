@@ -6,7 +6,7 @@
 A textual representation of this session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -22,7 +22,7 @@ final var description: String { get }
 - [ARKitSession.Events](arkitsession/events-swift.struct.md)
   A sequence of events.
 - [ARKitSession.Event](arkitsession/event.md)
-  The kinds of events that can occur in a session.
+  Enumeration of possible session events.
 
 
 ---

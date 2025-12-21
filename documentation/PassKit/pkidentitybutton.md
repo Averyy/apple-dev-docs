@@ -71,10 +71,6 @@ class PKIdentityButton
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
-  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
-  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to allow a request for identity information.
 - [class PKIdentityRequest](pkidentityrequest.md)
@@ -84,7 +80,7 @@ class PKIdentityButton
 - [class PKIdentityElement](pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
 - [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
-  A view that displays a button for identity verification.
+  A type that displays a button to present the identity verification flow.
 - [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
   A type that represents the label you use with a verify identity button.
 - [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)

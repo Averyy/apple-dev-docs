@@ -19,7 +19,7 @@ var isAutoDeferredPhotoDeliveryEnabled: Bool { get set }
 
 Changing this value requires a lengthy reconfiguration of the capture pipeline, so you should set this property before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) throws an invalid argument exception the value of [`isAutoDeferredPhotoDeliverySupported`](avcapturephotooutput/isautodeferredphotodeliverysupported.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) throws an invalid argument exception the value of [`isAutoDeferredPhotoDeliverySupported`](avcapturephotooutput/isautodeferredphotodeliverysupported.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

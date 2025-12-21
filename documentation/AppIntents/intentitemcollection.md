@@ -56,11 +56,7 @@ struct CreateBookIntent: AppIntent {
 ### Instance Properties
 - [var items: [Result.ValueType]](intentitemcollection/items.md)
   Returns all results as an array.
-- [var promptLabel: LocalizedStringResource?](intentitemcollection/promptlabel.md)
-  A text prompt shown at the top of the view that presents the options.
 - [var sections: [IntentItemSection<Result>]](intentitemcollection/sections.md)
-- [var usesIndexedCollation: Bool](intentitemcollection/usesindexedcollation.md)
-  If set to true, presents the list of options with an alphabetical index on the right side of the screen (table view section index titles).
 ### Type Properties
 - [static var empty: IntentItemCollection<Result>](intentitemcollection/empty.md)
   Returns an empty result.

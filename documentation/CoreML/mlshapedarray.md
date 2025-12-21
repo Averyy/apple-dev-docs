@@ -41,12 +41,14 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
 
 ## Topics
 
-### Creating a Shaped Array
+### Creating a shaped array
 - [init(scalar: Scalar)](mlshapedarray/init(scalar:).md)
   Creates a shaped array with exactly one value and zero dimensions.
 - [init<S>(scalars: S, shape: [Int])](mlshapedarray/init(scalars:shape:).md)
   Initialize with a sequence and the shape.
-### Creating a Shaped Array from Another Type
+- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarray/init(mutating:shape:).md)
+  Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
+### Creating a shaped array from another type
 - [init(MLMultiArray)](mlshapedarray/init(_:).md)
 - [init<S>(concatenating: S, alongAxis: Int)](mlshapedarray/init(concatenating:alongaxis:).md)
   Merges a sequence of shaped arrays into one shaped array along an axis.
@@ -58,21 +60,7 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
   Creates a shaped array from a block of data and a shape.
 - [init(data: Data, shape: [Int], strides: [Int])](mlshapedarray/init(data:shape:strides:).md)
   Creates a shaped array from a block of data, a shape, and strides.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mlshapedarray/init(from:).md)
-  Creates a shaped array from a decoder.
-- [func encode(to: any Encoder) throws](mlshapedarray/encode(to:).md)
-  Encode a shaped array.
-### Inspecting a Shaped Array
-- [var description: String](mlshapedarray/description.md)
-  A text representation of the shaped array.
-### Supporting Types
-- [Shaped Array Collection Operations](shaped-array-collection-operations.md)
-  Properties and methods a shaped array inherits from collection protocols.
-### Initializers
-- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarray/init(mutating:shape:).md)
-  Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
-### Instance Methods
+### Shaping the array
 - [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArray<Scalar>](mlshapedarray/changinglayout(to:).md)
   Returns a copy with the specified buffer layout.
 - [func expandingShape(at: Int) -> MLShapedArray<Scalar>](mlshapedarray/expandingshape(at:).md)
@@ -85,12 +73,19 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
   Returns a new transposed shaped array.
 - [func transposed(permutation: [Int]) -> MLShapedArray<Scalar>](mlshapedarray/transposed(permutation:).md)
   Returns a transposed shaped array using a custom permutation.
+### Reading and writing the pixel buffer
 - [func withMutablePixelBufferIfAvailable<R>((CVPixelBuffer) throws -> R) rethrows -> R?](mlshapedarray/withmutablepixelbufferifavailable(_:).md)
   Writes to the underlying pixel buffer.
 - [func withPixelBufferIfAvailable<R>((CVPixelBuffer) throws -> R) rethrows -> R?](mlshapedarray/withpixelbufferifavailable(_:).md)
   Reads the underlying pixel buffer.
+### Modifying a shaped array
 - [func withUnsafeMutableShapedBufferPointer<R>(using: MLShapedArrayBufferLayout, (inout UnsafeMutableBufferPointer<Scalar>, [Int], [Int]) throws -> R) rethrows -> R](mlshapedarray/withunsafemutableshapedbufferpointer(using:_:).md)
   Calls the given closure with a pointer to the array’s mutable storage that has a specified buffer layout.
+### Encoding and decoding
+- [init(from: any Decoder) throws](mlshapedarray/init(from:).md)
+  Creates a shaped array from a decoder.
+- [func encode(to: any Encoder) throws](mlshapedarray/encode(to:).md)
+  Encode a shaped array.
 ### Default Implementations
 - [CustomStringConvertible Implementations](mlshapedarray/customstringconvertible-implementations.md)
 - [Decodable Implementations](mlshapedarray/decodable-implementations.md)

@@ -14,8 +14,10 @@ var keyEndpointURL: URL? { get set }
 
 ## Mentions
 
+- [Creating and validating a login request](creating-and-validating-a-login-request.md)
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-- [Creating extensions that support platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating a refresh request](creating-a-refresh-request.md)
+- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
 
 ## See Also
 

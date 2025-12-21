@@ -47,7 +47,7 @@ var pixelSize: Int { get }
   An enumeration for the various options that determine how you can use a texture.
 - [var texture: any MTLTexture](mpsimage/texture.md)
   The underlying texture.
-- [protocol MTLTexture : MTLResource](../Metal/MTLTexture.md)
+- [protocol MTLTexture](../Metal/MTLTexture.md)
   A resource that holds formatted image data.
 - [var label: String?](mpsimage/label.md)
   A string to help identify this object.

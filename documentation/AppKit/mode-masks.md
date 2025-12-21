@@ -2,7 +2,11 @@
 
 **Framework**: AppKit
 
-The following constants correspond to the available font panel mode masks returned by [`validModesForFontPanel:`](https://developer.apple.com/documentation/objectivec/nsobject/1534415-validmodesforfontpanel).
+Constants that represent the available font panel mode masks.
+
+#### Overview
+
+The [`validModesForFontPanel:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/validModesForFontPanel:) method returns these constants.
 
 ## Topics
 

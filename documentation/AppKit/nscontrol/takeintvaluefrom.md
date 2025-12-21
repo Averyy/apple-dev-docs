@@ -30,7 +30,7 @@ You can use this method to link action messages between controls. It permits one
 - [func takeFloatValueFrom(Any?)](nscontrol/takefloatvaluefrom(_:).md)
   Sets the value of the receiver’s cell to a single-precision floating-point value obtained from the specified object.
 - [func takeIntegerValueFrom(Any?)](nscontrol/takeintegervaluefrom(_:).md)
-  Sets the value of the receiver’s cell to an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) value obtained from the specified object.
+  Sets the value of the receiver’s cell to an `NSInteger` value obtained from the specified object.
 - [func takeObjectValueFrom(Any?)](nscontrol/takeobjectvaluefrom(_:).md)
   Sets the value of the receiver’s cell to the object value obtained from the specified object.
 - [func takeStringValueFrom(Any?)](nscontrol/takestringvaluefrom(_:).md)

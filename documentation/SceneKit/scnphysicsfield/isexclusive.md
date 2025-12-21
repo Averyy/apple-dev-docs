@@ -22,9 +22,9 @@ var isExclusive: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true) and a physics body is within this field’s region, SceneKit ignores the effects of all other fields that might otherwise affect the body. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true) and a physics body is within this field’s region, SceneKit ignores the effects of all other fields that might otherwise affect the body. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true) on multiple fields in a scene, their regions should not overlap. If they do, the results are undefined.
+If you set this property to [`true`](https://developer.apple.com/documentation/Swift/true) on multiple fields in a scene, their regions should not overlap. If they do, the results are undefined.
 
 ## See Also
 

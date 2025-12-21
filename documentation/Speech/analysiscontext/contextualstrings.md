@@ -6,11 +6,11 @@
 A dictionary of supplemental vocabulary words grouped by tag.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,8 +24,7 @@ Use the tag to easily swap out some of the strings while leaving others in place
 
 ## See Also
 
-- [var userData: [AnalysisContext.UserDataTag : any Sendable]](analysiscontext/userdata.md)
-  A dictionary of application-specific contextual information.
+- [AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag.md)
 
 
 ---

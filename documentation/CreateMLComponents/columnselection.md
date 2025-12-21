@@ -31,12 +31,6 @@ enum ColumnSelection
   Selects only the specified columns.
 - [ColumnSelection.numeric](columnselection/numeric.md)
   Select all numeric columns in the data frame.
-### Creating a column selection
-- [init(from: any Decoder) throws](columnselection/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](columnselection/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

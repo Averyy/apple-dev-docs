@@ -26,7 +26,7 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 ## Topics
 
 ### Essentials
-- [Creating tabletop games](tabletopkitsample.md)
+- [Creating tabletop games](creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
@@ -41,6 +41,8 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 - [struct TabletopShape](tabletopshape.md)
   An object that represents the physical properties of the table.
 ### Seats
+- [struct TableState](tablestate.md)
+  The state of the table that can be queried and modified.
 - [protocol TableSeat](tableseat.md)
   A protocol for seats at the table that players occupy.
 - [protocol EntityTableSeat](entitytableseat.md)
@@ -52,16 +54,26 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 - [protocol SeatState](seatstate.md)
   A protocol for seat data that TabletopKit syncs between players.
 ### Equipment
+- [Implementing playing card overlap and physical characteristics](implementing-playing-card-overlap-and-physical-characteristics.md)
+  Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
 - [protocol Equipment](equipment.md)
   A protocol for equipment that players directly interact with in a game.
+- [struct EquipmentCollection](equipmentcollection.md)
+  A collection of equipment whose state can be inspected and modified.
 - [protocol EntityEquipment](entityequipment.md)
   A protocol for equipment in a game that you render using RealityKit.
 - [struct EquipmentIdentifier](equipmentidentifier.md)
   A unique identifier for equipment.
 - [protocol EquipmentState](equipmentstate.md)
   A protocol for the equipment data that TabletopKit syncs between players.
+- [struct EquipmentStateCollection](equipmentstatecollection.md)
+  A collection of equipment states that can be inspected and modified.
 - [struct BaseEquipmentState](baseequipmentstate.md)
   A state for equipment that contains no equipment-specific data.
+- [protocol CustomEquipmentState](customequipmentstate.md)
+  A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
+- [protocol MutableEquipmentState](mutableequipmentstate.md)
+  A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
 - [struct CardState](cardstate.md)
   A state for cards that contains face up and down information.
 - [struct DieState](diestate.md)
@@ -82,6 +94,8 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 ### Score counters
 - [struct ScoreCounter](scorecounter.md)
   An object that keeps a score in a tabletop game.
+- [struct CounterCollection](countercollection.md)
+  A collection of score counters that can be inspected and modified.
 ### Players
 - [struct Player](player.md)
   A player in a tabletop game.
@@ -100,7 +114,11 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
   An action that updates the game counter.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 ### Interactions
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TossableRepresentation](tossablerepresentation.md)
@@ -128,22 +146,6 @@ To get started, create a [`TabletopGame`](tabletopgame.md) object that represent
 ### Debugging
 - [struct DebugDrawOptions](debugdrawoptions.md)
   Types of items in a rendering that you want to debug.
-### Protocols
-- [protocol CustomAction](customaction.md)
-  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
-- [protocol CustomEquipmentState](customequipmentstate.md)
-  A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
-- [protocol MutableEquipmentState](mutableequipmentstate.md)
-  A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
-### Structures
-- [struct CounterCollection](countercollection.md)
-  A collection of score counters that can be inspected and modified.
-- [struct EquipmentCollection](equipmentcollection.md)
-  A collection of equipment whose state can be inspected and modified.
-- [struct EquipmentStateCollection](equipmentstatecollection.md)
-  A collection of equipment states that can be inspected and modified.
-- [struct TableState](tablestate.md)
-  The state of the table that can be queried and modified.
 
 
 ---

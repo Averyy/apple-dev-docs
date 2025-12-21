@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+A constant that identifies a maximum width binding.
 
 **Availability**:
 - macOS ?+
@@ -14,38 +14,42 @@ See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.ap
 static let maxWidth: NSBindingName
 ```
 
+#### Discussion
+
+See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+
 ## See Also
 
 - [static let alignment: NSBindingName](nsbindingname/alignment.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an alignment binding.
 - [static let alternateImage: NSBindingName](nsbindingname/alternateimage.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an alternate image binding.
 - [static let alternateTitle: NSBindingName](nsbindingname/alternatetitle.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an alternate title binding.
 - [static let animate: NSBindingName](nsbindingname/animate.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an animate binding.
 - [static let animationDelay: NSBindingName](nsbindingname/animationdelay.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an animation delay binding.
 - [static let argument: NSBindingName](nsbindingname/argument.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an argument binding.
 - [static let attributedString: NSBindingName](nsbindingname/attributedstring.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies an attributed string binding.
 - [static let content: NSBindingName](nsbindingname/content.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content binding.
 - [static let contentArray: NSBindingName](nsbindingname/contentarray.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content array binding.
 - [static let contentArrayForMultipleSelection: NSBindingName](nsbindingname/contentarrayformultipleselection.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content array for multiple selection binding.
 - [static let contentDictionary: NSBindingName](nsbindingname/contentdictionary.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content dictionary binding.
 - [static let contentHeight: NSBindingName](nsbindingname/contentheight.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content height binding.
 - [static let contentObject: NSBindingName](nsbindingname/contentobject.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content object binding.
 - [static let contentObjects: NSBindingName](nsbindingname/contentobjects.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content objects binding.
 - [static let contentSet: NSBindingName](nsbindingname/contentset.md)
-  See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+  A constant that identifies a content set binding.
 
 
 ---

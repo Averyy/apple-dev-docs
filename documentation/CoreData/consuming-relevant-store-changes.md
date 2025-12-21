@@ -14,7 +14,7 @@ Persistent history solves the problem by keeping track of every transaction on t
 
 ##### Enable History Tracking for Your Local Store
 
-When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](nspersistenthistorytrackingkey.md) option on the store description to [`true`](https://developer.apple.com/documentation/swift/true) to enable history tracking.
+When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](nspersistenthistorytrackingkey.md) option on the store description to [`true`](https://developer.apple.com/documentation/Swift/true) to enable history tracking.
 
 ```swift
 // Pass the data model filename to the container’s initializer.
@@ -31,7 +31,7 @@ Core Data tracks all changes to your local store.
 
 ##### Listen for Remote Changes
 
-In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](https://developer.apple.com/documentation/swift/true) to enable listening for remote change notifications.
+In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](https://developer.apple.com/documentation/Swift/true) to enable listening for remote change notifications.
 
 ```swift
 description?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)

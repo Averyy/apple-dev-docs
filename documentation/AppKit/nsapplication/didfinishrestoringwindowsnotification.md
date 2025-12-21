@@ -16,7 +16,7 @@ class let didFinishRestoringWindowsNotification: NSNotification.Name
 
 #### Discussion
 
-The notification is posted when the app is finished restoring windows, that is, when all the completion handlers from [`restoreWindow(withIdentifier:state:completionHandler:)`](nswindowrestoration/restorewindow(withidentifier:state:completionhandler:).md) have been called. This is always posted after [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md), but may be posted before or after [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md), depending on whether clients copy the completion handlers and invoke them later. If there were no windows to restore, then this notification is still posted at the corresponding point in app launch (between [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)).
+The notification is posted on the main actor when the app is finished restoring windows, that is, when all the completion handlers from [`restoreWindow(withIdentifier:state:completionHandler:)`](nswindowrestoration/restorewindow(withidentifier:state:completionhandler:).md) have been called. This is always posted after [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md), but may be posted before or after [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md), depending on whether clients copy the completion handlers and invoke them later. If there were no windows to restore, then this notification is still posted at the corresponding point in app launch (between [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)).
 
 The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
 
@@ -45,7 +45,7 @@ The notification object is [`shared`](nsapplication/shared.md). This notificatio
 - [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
-  Sends a notification to termintate the app.
+  Sends a notification to terminate the app.
 - [class let willUnhideNotification: NSNotification.Name](nsapplication/willunhidenotification.md)
   Posted at the start of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is about to become visible.
 - [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)

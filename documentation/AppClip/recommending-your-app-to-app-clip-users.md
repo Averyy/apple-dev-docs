@@ -10,7 +10,7 @@ App Clips only remain on a device for a limited amount of time. If someone uses 
 
 > **Note**:  Don’t require users to install your app to complete a task. For user experience and design guidance, see [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/).
 
-If you’re using SwiftUI, make use of the [`appStoreOverlay(isPresented:configuration:)`](https://developer.apple.com/documentation/SwiftUI/View/appStoreOverlay(isPresented:configuration:)) modifier. For example usage, see [`Fruta: Building a Feature-Rich App with SwiftUI`](fruta_building_a_feature-rich_app_with_swiftui.md).
+If you’re using SwiftUI, make use of the [`appStoreOverlay(isPresented:configuration:)`](https://developer.apple.com/documentation/SwiftUI/View/appStoreOverlay(isPresented:configuration:)) modifier. For example usage, see [`Fruta: Building a feature-rich app with SwiftUI`](fruta-building-a-feature-rich-app-with-swiftui.md).
 
 To display an overlay when using [`UIKit`](https://developer.apple.com/documentation/UIKit):
 

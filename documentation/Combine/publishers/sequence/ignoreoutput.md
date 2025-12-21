@@ -18,6 +18,12 @@
 func ignoreOutput() -> Empty<Publishers.Sequence<Elements, Failure>.Output, Failure>
 ```
 
+## See Also
+
+- [func collect() -> Result<[Publishers.Sequence<Elements, Failure>.Output], Failure>.Publisher](publishers/sequence/collect.md)
+- [func reduce<T>(T, (T, Publishers.Sequence<Elements, Failure>.Output) -> T) -> Result<T, Failure>.Publisher](publishers/sequence/reduce(_:_:).md)
+- [func tryReduce<T>(T, (T, Publishers.Sequence<Elements, Failure>.Output) throws -> T) -> Result<T, any Error>.Publisher](publishers/sequence/tryreduce(_:_:).md)
+
 
 ---
 

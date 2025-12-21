@@ -49,9 +49,9 @@ Each stateful prediction that uses the same `MLState` must be serialized. Otherw
 
 ## Topics
 
-### Instance Methods
-- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](mlstate/withmultiarray(_:).md)
+### Getting a state buffer
 - [func withMultiArray<R>(for: String, (MLMultiArray) throws -> R) rethrows -> R](mlstate/withmultiarray(for:_:).md)
+- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](mlstate/withmultiarray(_:).md)
 
 ## Relationships
 

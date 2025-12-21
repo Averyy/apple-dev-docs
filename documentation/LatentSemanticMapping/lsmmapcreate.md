@@ -17,7 +17,7 @@ func LSMMapCreate(_ alloc: CFAllocator?, _ flags: CFOptionFlags) -> Unmanaged<LS
 
 #### Discussion
 
-Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to dispose of the map.
+Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to dispose of the map.
 
 ## See Also
 

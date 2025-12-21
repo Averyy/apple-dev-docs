@@ -22,7 +22,7 @@ class NSFetchRequestExpression
 
 #### Overview
 
-`NSFetchRequestExpression` inherits from [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression), which provides most of the basic behavior. The first argument must be an expression which evaluates to an `NSFetchRequest` object, and the second must be an expression which evaluates to an `NSManagedObjectContext` object. If you simply want the count for the request, the `countOnly` argument should be [`true`](https://developer.apple.com/documentation/swift/true).
+`NSFetchRequestExpression` inherits from [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression), which provides most of the basic behavior. The first argument must be an expression which evaluates to an `NSFetchRequest` object, and the second must be an expression which evaluates to an `NSManagedObjectContext` object. If you simply want the count for the request, the `countOnly` argument should be [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Topics
 

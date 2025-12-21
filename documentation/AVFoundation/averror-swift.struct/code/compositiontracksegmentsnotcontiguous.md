@@ -32,6 +32,7 @@ case compositionTrackSegmentsNotContiguous
   The app isn’t authorized to play media.
 - [AVError.Code.applicationIsNotAuthorizedToUseDevice](averror-swift.struct/code/applicationisnotauthorizedtousedevice.md)
   The user denied this app permission to capture media.
+- [AVError.Code.autoWhiteBalanceNotLocked](averror-swift.struct/code/autowhitebalancenotlocked.md)
 - [AVError.Code.contentIsNotAuthorized](averror-swift.struct/code/contentisnotauthorized.md)
   The user isn’t authorized to play the media.
 - [AVError.Code.contentIsProtected](averror-swift.struct/code/contentisprotected.md)
@@ -50,8 +51,6 @@ case compositionTrackSegmentsNotContiguous
   The system can’t find a suitable decoder for the media.
 - [AVError.Code.decoderTemporarilyUnavailable](averror-swift.struct/code/decodertemporarilyunavailable.md)
   A suitable decoder for the media is temporarily available.
-- [AVError.Code.deviceAlreadyUsedByAnotherSession](averror-swift.struct/code/devicealreadyusedbyanothersession.md)
-  Your app can’t access the device because another session is currently using it.
 
 
 ---

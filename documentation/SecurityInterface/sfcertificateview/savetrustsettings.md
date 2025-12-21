@@ -17,11 +17,10 @@ func saveTrustSettings()
 
 #### Discussion
 
-If trust settings are not editable, this method effectively does nothing. You can use doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805379-sectrustgetusertrust to subsequently retrieve the trust settings.
+If trust settings are not editable, this method effectively does nothing. You can use `SecTrustGetUserTrust` to subsequently retrieve the trust settings.
 
-## Topics
+## See Also
 
-### Related Documentation
 - [func setEditableTrust(Bool)](sfcertificateview/seteditabletrust(_:).md)
   Specifies whether the user can edit the certificate’s trust settings.
 

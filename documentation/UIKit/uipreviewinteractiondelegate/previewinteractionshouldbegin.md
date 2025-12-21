@@ -20,13 +20,13 @@ optional func previewInteractionShouldBegin(_ previewInteraction: UIPreviewInter
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the preview interaction should continue into the preview and commit phases; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the preview interaction should continue into the preview and commit phases; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If you don’t implement this optional method, the default return value of [`true`](https://developer.apple.com/documentation/swift/true) is assumed.
+If you don’t implement this optional method, the default return value of [`true`](https://developer.apple.com/documentation/Swift/true) is assumed.
 
-When [`false`](https://developer.apple.com/documentation/swift/false), no further delegate calls are made for the specified preview interaction until the user restarts the 3D Touch interaction.
+When [`false`](https://developer.apple.com/documentation/Swift/false), no further delegate calls are made for the specified preview interaction until the user restarts the 3D Touch interaction.
 
 ## Parameters
 

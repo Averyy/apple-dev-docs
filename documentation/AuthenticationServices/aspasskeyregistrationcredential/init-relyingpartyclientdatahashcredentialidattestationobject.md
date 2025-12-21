@@ -25,6 +25,11 @@ init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestation
 - `credentialID`: The identifier for this credential.
 - `attestationObject`: The attestation object for this passkey, which may contain an attestation statement and authenticator data.
 
+## See Also
+
+- [convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data, extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput?)](aspasskeyregistrationcredential/init(relyingparty:clientdatahash:credentialid:attestationobject:extensionoutput:).md)
+  Initializes a passkey registration credential object.
+
 
 ---
 

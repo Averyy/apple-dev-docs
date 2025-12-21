@@ -10,6 +10,7 @@ The action that the user prefers to perform after double-tapping their Apple Pen
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

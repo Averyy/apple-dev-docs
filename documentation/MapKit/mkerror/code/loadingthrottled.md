@@ -36,16 +36,6 @@ This error can occur if an app makes frequent requests for data over a short per
   The map server was unable to return the desired information.
 - [MKError.Code.unknown](mkerror/code/unknown.md)
   An unknown error occurred.
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
-  GeoJSON decoding failed.
-- [MKError.Code.directionsNotFound](mkerror/code/directionsnotfound.md)
-  The framework couldn’t find the specified directions.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
-  The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
-  The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
-  An unknown error occurred.
 
 
 ---

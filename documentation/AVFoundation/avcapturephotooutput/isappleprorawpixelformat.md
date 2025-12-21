@@ -19,11 +19,11 @@ class func isAppleProRAWPixelFormat(_ pixelFormat: OSType) -> Bool
 
 ## Mentions
 
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pixel format is an Apple ProRAW format, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the pixel format is an Apple ProRAW format, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

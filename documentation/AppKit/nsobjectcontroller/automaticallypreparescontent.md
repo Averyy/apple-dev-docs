@@ -16,7 +16,7 @@ var automaticallyPreparesContent: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) and the receiver is not using a managed object context, [`prepareContent()`](nsobjectcontroller/preparecontent().md) is used to create the content object. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) and a managed object context is set, the initial content is fetched from the managed object context using the current fetch predicate. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) and the receiver is not using a managed object context, [`prepareContent()`](nsobjectcontroller/preparecontent().md) is used to create the content object. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) and a managed object context is set, the initial content is fetched from the managed object context using the current fetch predicate. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

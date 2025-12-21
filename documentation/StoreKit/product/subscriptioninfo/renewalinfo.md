@@ -21,8 +21,9 @@ struct RenewalInfo
 
 ## Mentions
 
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Overview
@@ -61,11 +62,11 @@ struct RenewalInfo
   The reason the auto-renewable subscription expired.
 - [Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct.md)
   The reasons for auto-renewable subscription expirations.
-### Getting subscription offers
+### Getting offers
 - [let offer: Transaction.Offer?](product/subscriptioninfo/renewalinfo/offer.md)
   A subscription offer that applies to the transaction at the next renewal period.
 - [Transaction.Offer](transaction/offer-swift.struct.md)
-  The subscription offers that apply to a transaction.
+  Discounts or promotions that apply to a transaction.
 - [let eligibleWinBackOfferIDs: [String]](product/subscriptioninfo/renewalinfo/eligiblewinbackofferids.md)
   An array of strings that represent identifiers of win-back offers that the customer is eligible to redeem, sorted with the best offers first.
 ### Getting the renewal price and currency
@@ -104,7 +105,7 @@ struct RenewalInfo
 - [var environmentStringRepresentation: String](product/subscriptioninfo/renewalinfo/environmentstringrepresentation.md)
   The string representation of the server environment that signs the renewal information for an auto-renewable subscription.
 - [var offerID: String?](product/subscriptioninfo/renewalinfo/offerid.md)
-  A string that identifies an offer applied to the next subscription period.
+  A string that identifies an offer that applies to the next subscription period.
 - [var offerType: Transaction.OfferType?](product/subscriptioninfo/renewalinfo/offertype.md)
   The subscription offer type for the next subscription period.
 - [var currencyCode: String?](product/subscriptioninfo/renewalinfo/currencycode.md)

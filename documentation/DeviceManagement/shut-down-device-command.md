@@ -12,7 +12,7 @@ Remotely and immediately shut down a device.
 
 #### Discussion
 
-A passcode-locked iOS device doesn’t rejoin a Wi-Fi network after restarting, so it may not be able to communicate with the server.
+A passcode-locked iOS device doesn’t rejoin a Wi-Fi network after a user restarts it and before they unlock it for the first time, so it can’t communicate with the server if it needs Wi-Fi to do so.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 

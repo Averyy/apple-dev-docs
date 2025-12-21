@@ -22,6 +22,7 @@ func viewWillAppear(_ animated: Bool)
 ## Mentions
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
 - [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
 
 #### Discussion

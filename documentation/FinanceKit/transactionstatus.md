@@ -28,23 +28,6 @@ enum TransactionStatus
   The transaction is in a pending state.
 - [TransactionStatus.rejected](transactionstatus/rejected.md)
   The transaction is in a rejected state.
-### Initializers
-- [init?(rawValue: Int16)](transactionstatus/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int16](transactionstatus/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [TransactionStatus.AllCases](transactionstatus/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [TransactionStatus.RawValue](transactionstatus/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [TransactionStatus]](transactionstatus/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](transactionstatus/equatable-implementations.md)
-- [RawRepresentable Implementations](transactionstatus/rawrepresentable-implementations.md)
 
 ## Relationships
 

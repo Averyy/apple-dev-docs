@@ -24,7 +24,7 @@ The notification object is the web history from which the history items were rem
 
 ## See Also
 
-- [func removeAllItems()](../webkit/webhistory/1521404-removeallitems.md)
+- [func removeAllItems()](../WebKit/WebHistory/removeAllItems.md)
   Removes all items from the web history.
 - [static let WebHistoryItemChanged: NSNotification.Name](nsnotification/name-swift.struct/webhistoryitemchanged.md)
   Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.

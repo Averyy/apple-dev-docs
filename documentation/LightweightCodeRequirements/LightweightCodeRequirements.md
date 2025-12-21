@@ -74,7 +74,7 @@ Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and s
 ### Checking code requirements for launching processes
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement? { get set }](../Foundation/Process/launchRequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/Process/launchRequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)

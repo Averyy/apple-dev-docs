@@ -37,29 +37,6 @@ enum MusicTokenRequestError
   An error that indicates a failure in the process of fetching a user token.
 - [MusicTokenRequestError.userTokenRevoked](musictokenrequesterror/usertokenrevoked.md)
   An error that occurs when the user revokes permission for the current app to access their Apple Music data.
-### Initializers
-- [init?(rawValue: String)](musictokenrequesterror/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var description: String](musictokenrequesterror/description.md)
-  A textual representation of this instance.
-- [var errorDescription: String?](musictokenrequesterror/errordescription.md)
-  A localized message describing what error occurred.
-- [var failureReason: String?](musictokenrequesterror/failurereason.md)
-  A localized message describing the reason for the failure.
-- [var helpAnchor: String?](musictokenrequesterror/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-- [var rawValue: String](musictokenrequesterror/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [var recoverySuggestion: String?](musictokenrequesterror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-### Type Aliases
-- [MusicTokenRequestError.RawValue](musictokenrequesterror/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](musictokenrequesterror/equatable-implementations.md)
-- [Error Implementations](musictokenrequesterror/error-implementations.md)
-- [RawRepresentable Implementations](musictokenrequesterror/rawrepresentable-implementations.md)
 
 ## Relationships
 

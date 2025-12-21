@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+A localized message providing “help” text if the user requests help.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

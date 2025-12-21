@@ -30,9 +30,9 @@ var name: String? { get set }
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 - [class MTLLinkedFunctions](mtllinkedfunctions.md)
-  A set of related functions that Metal links to when necessary to create the function object.
+  A set of related functions that Metal links to when necessary to create the function instance.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+Any additional header fields to set when loading the initial URL.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

@@ -17,7 +17,7 @@ var allowsMultipleSelection: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser allows the user to select multiple items at once.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the browser allows the user to select multiple items at once.
 
 ## See Also
 

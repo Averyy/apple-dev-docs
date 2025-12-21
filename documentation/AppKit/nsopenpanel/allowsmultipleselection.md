@@ -17,7 +17,7 @@ var allowsMultipleSelection: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user may select multiple items from the browser. When the selection contains multiple items, use the [`urls`](nsopenpanel/urls.md) property to retrieve those items instead of the inherited [`url`](nssavepanel/url.md) property.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user may select multiple items from the browser. When the selection contains multiple items, use the [`urls`](nsopenpanel/urls.md) property to retrieve those items instead of the inherited [`url`](nssavepanel/url.md) property.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the font conversion system’s user interface items (the Font panel and Font menu items) are enabled; when the value is [`false`](https://developer.apple.com/documentation/swift/false), these items are not enabled.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the font conversion system’s user interface items (the Font panel and Font menu items) are enabled; when the value is [`false`](https://developer.apple.com/documentation/Swift/false), these items are not enabled.
 
 ## See Also
 

@@ -28,7 +28,7 @@ The exact meaning of “copy” can vary from class to class, but a copy must be
 
 Your options for implementing this protocol are as follows:
 
-- Implement [`NSCopying`](nscopying.md) using [`alloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571958-alloc) and `init...` in classes that don’t inherit [`copy(with:)`](nscopying/copy(with:).md).
+- Implement [`NSCopying`](nscopying.md) using [`alloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/alloc) and `init...` in classes that don’t inherit [`copy(with:)`](nscopying/copy(with:).md).
 - Implement [`NSCopying`](nscopying.md) by invoking the superclass’s [`copy(with:)`](nscopying/copy(with:).md) when `NSCopying` behavior is inherited. If the superclass implementation might use the [`NSCopyObject`](nscopyobject.md) function, make explicit assignments to pointer instance variables for retained objects.
 - Implement [`NSCopying`](nscopying.md) by retaining the original instead of creating a new copy when the class and its contents are immutable.
 

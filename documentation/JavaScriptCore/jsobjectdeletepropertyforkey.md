@@ -21,7 +21,7 @@ func JSObjectDeletePropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delete operation succeeds; otherwise, [`false`](https://developer.apple.com/documentation/swift/false), such as when the property has the [`kJSPropertyAttributeDontDelete`](kjspropertyattributedontdelete.md) attribute set.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the delete operation succeeds; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false), such as when the property has the [`kJSPropertyAttributeDontDelete`](kjspropertyattributedontdelete.md) attribute set.
 
 #### Discussion
 

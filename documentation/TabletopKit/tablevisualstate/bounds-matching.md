@@ -16,6 +16,8 @@ func bounds(matching equipmentID: EquipmentIdentifier) -> TableVisualState.Orien
 
 - [TableVisualState.OrientedRect3D](tablevisualstate/orientedrect3d.md)
   An object that represents the position and orientation of a 3D rectangle.
+- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
+  Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
 - [func bounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(forequipment:).md)
 - [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(forequipment:).md)
 - [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(matching:).md)

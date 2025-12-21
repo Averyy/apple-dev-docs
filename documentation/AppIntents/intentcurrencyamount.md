@@ -30,25 +30,12 @@ struct IntentCurrencyAmount
   The monetary amount.
 - [let currencyCode: String](intentcurrencyamount/currencycode.md)
   The ISO 4217 currency code that applies to the monetary amount.
-### Operators
-- [static func == (IntentCurrencyAmount, IntentCurrencyAmount) -> Bool](intentcurrencyamount/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentcurrencyamount/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentcurrencyamount/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Aliases
 - [IntentCurrencyAmount.Specification](intentcurrencyamount/specification.md)
 - [IntentCurrencyAmount.UnwrappedType](intentcurrencyamount/unwrappedtype.md)
 - [IntentCurrencyAmount.ValueType](intentcurrencyamount/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentCurrencyAmount>](intentcurrencyamount/defaultresolverspecification.md)
-### Default Implementations
-- [Equatable Implementations](intentcurrencyamount/equatable-implementations.md)
-- [InstanceDisplayRepresentable Implementations](intentcurrencyamount/instancedisplayrepresentable-implementations.md)
-- [TypeDisplayRepresentable Implementations](intentcurrencyamount/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

@@ -26,13 +26,13 @@ class func isHealthDataAvailable() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if HealthKit is available; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if HealthKit is available; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 By default, HealthKit data is available on iOS, watchOS, and visionOS. HealthKit data is also available to iPads running iPadOS 17 or later, and to iOS apps running on Vision Pro. Devices running in an enterprise environment may restrict access to HealthKit data.
 
-The HealthKit framework is available on devices running iPadOS 16 and earlier and macOS 13 and later, but your app can’t read or write HealthKit data. Calls to [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) return [`false`](https://developer.apple.com/documentation/swift/false).
+The HealthKit framework is available on devices running iPadOS 16 and earlier and macOS 13 and later, but your app can’t read or write HealthKit data. Calls to [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

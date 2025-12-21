@@ -25,7 +25,7 @@ var slide: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.presentation.slide` schema:
 
 ```swift
-@AssistantEntity(schema: .presentation.slide)
+@AppEntity(schema: .presentation.slide)
 struct PresentationSlideEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [PresentationSlideEntity.ID]) async throws -> [PresentationSlideEntity] { [] }

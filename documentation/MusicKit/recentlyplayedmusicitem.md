@@ -22,9 +22,6 @@ enum RecentlyPlayedMusicItem
 
 ## Topics
 
-### Operators
-- [static func == (RecentlyPlayedMusicItem, RecentlyPlayedMusicItem) -> Bool](recentlyplayedmusicitem/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [RecentlyPlayedMusicItem.album(_:)](recentlyplayedmusicitem/album(_:).md)
   An item that corresponds to an album.
@@ -35,9 +32,7 @@ enum RecentlyPlayedMusicItem
 ### Instance Properties
 - [var artwork: Artwork?](recentlyplayedmusicitem/artwork.md)
   The artwork of this item.
-- [var hashValue: Int](recentlyplayedmusicitem/hashvalue.md)
-  The hash value.
-- [var id: MusicItemID](recentlyplayedmusicitem/id-swift.property.md)
+- [var id: MusicItemID](recentlyplayedmusicitem/id.md)
   The unique identifier of this item.
 - [var playParameters: PlayParameters?](recentlyplayedmusicitem/playparameters.md)
   The parameters to use to play this item.
@@ -45,18 +40,6 @@ enum RecentlyPlayedMusicItem
   The subtitle of this item.
 - [var title: String](recentlyplayedmusicitem/title.md)
   The title of this item.
-### Instance Methods
-- [func hash(into: inout Hasher)](recentlyplayedmusicitem/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [RecentlyPlayedMusicItem.ID](recentlyplayedmusicitem/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](recentlyplayedmusicitem/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](recentlyplayedmusicitem/customstringconvertible-implementations.md)
-- [Decodable Implementations](recentlyplayedmusicitem/decodable-implementations.md)
-- [Encodable Implementations](recentlyplayedmusicitem/encodable-implementations.md)
-- [Equatable Implementations](recentlyplayedmusicitem/equatable-implementations.md)
 
 ## Relationships
 

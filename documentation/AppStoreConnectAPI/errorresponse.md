@@ -17,9 +17,9 @@ object ErrorResponse
 ## Mentions
 
 - [Parsing the Error Response Code](parsing-the-error-response-code.md)
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
-- [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
 - [About the HTTP Status Code](about-the-http-status-code.md)
+- [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
+- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
 
 ## Topics
 
@@ -30,6 +30,10 @@ object ErrorResponse
 ## See Also
 
 - [object ErrorLinks](errorlinks.md)
+- [object JsonPointer](jsonpointer.md)
+  An object that contains the JSON pointer that indicates the location of the error.
+- [object Parameter](parameter.md)
+  An object that contains the query parameter that produced the error.
 
 
 ---

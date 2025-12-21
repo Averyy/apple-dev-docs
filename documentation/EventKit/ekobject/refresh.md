@@ -21,7 +21,7 @@ func refresh() -> Bool
 
 #### Return Value
 
-If the operation is successful, [`true`](https://developer.apple.com/documentation/swift/true); if the object was deleted in the event store, [`false`](https://developer.apple.com/documentation/swift/false). If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the object should be released.
+If the operation is successful, [`true`](https://developer.apple.com/documentation/Swift/true); if the object was deleted in the event store, [`false`](https://developer.apple.com/documentation/Swift/false). If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), the object should be released.
 
 #### Discussion
 

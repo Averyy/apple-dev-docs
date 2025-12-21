@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is delivered as a suppository.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

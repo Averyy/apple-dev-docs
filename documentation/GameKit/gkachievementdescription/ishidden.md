@@ -22,7 +22,7 @@ var isHidden: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the achievement is always visible to the player. If [`true`](https://developer.apple.com/documentation/swift/true), the achievement isn’t displayed in any of the standard achievement user interface screens. It remains hidden until the first time your game reports progress toward completing the achievement.
+If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the achievement is always visible to the player. If [`true`](https://developer.apple.com/documentation/Swift/true), the achievement isn’t displayed in any of the standard achievement user interface screens. It remains hidden until the first time your game reports progress toward completing the achievement.
 
 ## See Also
 

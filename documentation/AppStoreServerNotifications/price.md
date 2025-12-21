@@ -25,8 +25,8 @@ This value represents the price, in milliunits of the [`currency`](currency.md),
 The [`price`](price.md) value reflects all of the following:
 
 - The price you configured in App Store Connect, which the system records on the purchase date ([`purchaseDate`](https://developer.apple.com/documentation/AppStoreServerAPI/purchaseDate)).
-- The discount from a subscription offer in the [`offerIdentifier`](offeridentifier.md), if the transaction includes an offer.
-- The [`quantity`](quantity.md) of a consumable in-app purchase. The price value shows the total amount of the transaction for the quantity the customer purchased.
+- The discount from an offer in the [`offerIdentifier`](offeridentifier.md) field, if the transaction includes an offer.
+- The [`quantity`](quantity.md) of a consumable In-App Purchase. The price value shows the total amount of the transaction for the quantity the customer purchased.
 
 The following table shows some examples of the [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) and [`currency`](https://developer.apple.com/documentation/AppStoreServerAPI/currency) parameters based on sample prices you might configure in App Store Connect:
 

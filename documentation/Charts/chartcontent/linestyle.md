@@ -35,8 +35,12 @@ func lineStyle(_ style: StrokeStyle) -> some ChartContent
   Sets the foreground style for the chart content.
 - [func opacity(Double) -> some ChartContent](chartcontent/opacity(_:).md)
   Sets the opacity for the chart content.
+- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
+  Applies a Gaussian blur to this chart content.
 - [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](chartcontent/cornerradius(_:style:).md)
   Sets the corner radius of the chart content.
+- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/shadow(color:radius:x:y:).md)
+  A chart content that adds a shadow to this chart content.
 - [func interpolationMethod(InterpolationMethod) -> some ChartContent](chartcontent/interpolationmethod(_:).md)
   Plots line and area marks with the interpolation method that you specify.
 

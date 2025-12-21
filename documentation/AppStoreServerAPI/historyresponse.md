@@ -44,8 +44,6 @@ If a customer upgrades a subscription or the App Store revokes an in-app purchas
 
 - [Get Transaction History](get-transaction-history.md)
   Get a customer’s in-app purchase transaction history for your app.
-- [Get Transaction History V1](get-transaction-history-v1.md)
-  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
 
 
 ---

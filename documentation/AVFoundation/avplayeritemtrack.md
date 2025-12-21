@@ -27,17 +27,17 @@ class AVPlayerItemTrack
 
 ## Topics
 
-### Setting the Enabled State
+### Setting the enabled state
 - [var isEnabled: Bool](avplayeritemtrack/isenabled.md)
   A Boolean value that indicates whether the player item presents the track’s media during playback.
-### Configuring Video Properties
+### Configuring video properties
 - [var currentVideoFrameRate: Float](avplayeritemtrack/currentvideoframerate.md)
   The current frame rate of the video track as it plays.
 - [var videoFieldMode: String?](avplayeritemtrack/videofieldmode.md)
   A mode that specifies the handling of video frames that contain multiple fields.
 - [let AVPlayerItemTrackVideoFieldModeDeinterlaceFields: String](avplayeritemtrackvideofieldmodedeinterlacefields.md)
   A video field mode that requests deinterlacing of video fields.
-### Accessing the Asset Track
+### Accessing the asset track
 - [var assetTrack: AVAssetTrack?](avplayeritemtrack/assettrack.md)
   An asset track that provides the media for the player item track.
 

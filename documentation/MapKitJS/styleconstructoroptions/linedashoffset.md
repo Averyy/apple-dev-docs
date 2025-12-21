@@ -11,7 +11,7 @@ The number of CSS pixels to use as the offset when drawing a line’s dash patte
 ## Declaration
 
 ```swift
-attribute number lineDashOffset;
+lineDashOffset?: number;
 ```
 
 #### Discussion

@@ -27,6 +27,11 @@ init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Da
 - `authenticatorData`: The authenticator data of the application that created this credential.
 - `credentialID`: The identifier for this credential.
 
+## See Also
+
+- [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:).md)
+  Initializes a passkey assertion credential object, optionally specifying an extension output.
+
 
 ---
 

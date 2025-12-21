@@ -19,7 +19,7 @@ var isCurrentComplicationInfo: Bool { get }
 
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) if you initiated the transfer using the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method of the [`WCSession`](wcsession.md) object or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This property is set to [`true`](https://developer.apple.com/documentation/Swift/true) if you initiated the transfer using the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method of the [`WCSession`](wcsession.md) object or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

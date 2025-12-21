@@ -24,9 +24,7 @@ The underlying `SecIdentityRef` instance.
 
 #### Discussion
 
-```None
- Copy a retained reference to the underlying `SecIdentityRef` instance.
-```
+Copy a retained reference to the underlying `SecIdentityRef` instance.
 
 ## Parameters
 

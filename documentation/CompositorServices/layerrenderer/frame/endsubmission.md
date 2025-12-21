@@ -6,7 +6,7 @@
 Notifies Compositor Services that you finished generating the GPU commands to render the specified frame.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

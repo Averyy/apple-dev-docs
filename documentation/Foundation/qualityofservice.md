@@ -32,11 +32,6 @@ Work with higher quality of service classes receive more resources than work wit
 - [QualityOfService.utility](qualityofservice/utility.md)
 - [QualityOfService.background](qualityofservice/background.md)
 - [QualityOfService.default](qualityofservice/default.md)
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
 ### Initializers
 - [init?(rawValue: Int)](qualityofservice/init(rawvalue:).md)
 

@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: property
 
+Returns a copy of the effect requesting an animation that moves back and forth horizontally based on the current locale, starting by moving forward.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

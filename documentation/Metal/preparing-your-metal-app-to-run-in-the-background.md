@@ -1,4 +1,4 @@
-# Preparing Your Metal App to Run in the Background
+# Preparing your Metal app to run in the background
 
 **Framework**: Metal
 
@@ -6,7 +6,7 @@ Prepare your app to move into the background by pausing future GPU use and ensur
 
 #### Overview
 
-iOS and tvOS restrict a background app’s access to the GPU, to guarantee foreground app performance. If a Metal command queue tries to schedule command buffers after the app moves in the background, the system prevents those commands from executing. When UIKit notifies you that your app is being suspended or moved into the background, your app must restrict its use of Metal.
+iOS and tvOS restrict a background app’s access to the GPU, to guarantee foreground app performance. If a Metal command queue tries to schedule command buffers after the app moves in the background, the system prevents those commands from executing. When UIKit notifies you that your app is being suspended or moved into the background, your app needs to restrict its use of Metal.
 
 For more information on the UIKit app life cycle, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background).
 

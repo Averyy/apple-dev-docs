@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns the identifier for the language part of the locale. For example, returns “en-US” for “en_US@rg=gbzzzz”  locale.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

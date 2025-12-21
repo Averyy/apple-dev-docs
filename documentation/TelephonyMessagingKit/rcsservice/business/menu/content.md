@@ -6,8 +6,8 @@
 Enumeration defining the contents of menu.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,17 +25,6 @@ enum Content
   Suggestion (action or reply).
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/menu/content/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.Menu.Content, RCSService.Business.Menu.Content) -> Bool](rcsservice/business/menu/content/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/menu/content/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/menu/content/equatable-implementations.md)
 
 ## Relationships
 

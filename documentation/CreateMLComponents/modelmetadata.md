@@ -36,17 +36,6 @@ struct ModelMetadata
   License information for the model.
 - [var version: String](modelmetadata/version.md)
   A version number encoded as a string.
-### Operators
-- [static func == (ModelMetadata, ModelMetadata) -> Bool](modelmetadata/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](modelmetadata/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](modelmetadata/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](modelmetadata/equatable-implementations.md)
 
 ## Relationships
 

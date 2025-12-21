@@ -23,6 +23,12 @@ var toVariant: AVAssetVariant { get }
 - [var didSucceed: Bool](avmetricplayeritemvariantswitchevent/didsucceed.md)
 - [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchevent/fromvariant.md)
 - [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchevent/loadedtimeranges-5lkmg.md)
+- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/audiorendition.md)
+  Represents the currently selected video rendition’s identifiers.
+- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/videorendition.md)
+  Represents the currently selected video rendition’s identifiers.
+- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/subtitlerendition.md)
+  Represents the currently selected audio rendition’s identifiers.
 
 
 ---

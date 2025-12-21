@@ -3,16 +3,16 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Unblocks previously blocked identities, allowing them to request access again.
+Unblocks previously blocked users, allowing them to request access again.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,11 @@ func unblockIdentities(_ blockedIdentities: [CKShare.BlockedIdentity])
 
 #### Discussion
 
-Call this method to remove the specified identities from the [`blockedIdentities`](ckshare/blockedidentities.md) array. Once unblocked, those identities are free to request access to the share unless access requests are disabled. You must save the share to commit this change to the server. This method can only be used by the share owner or an admin. Attempting to use it as any other participant will result in an exception.
+Use this method to remove specified identities from the [`blockedIdentities`](ckshare/blockedidentities.md) array. Unblocked identities can request access again if access requests are enabled.
+
+To persist this change, save the share to the server after calling this method.
+
+Only the share owner or an administrator can invoke this method. Attempts by other participants result in an exception.
 
 ## Parameters
 

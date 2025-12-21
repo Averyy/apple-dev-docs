@@ -25,7 +25,7 @@ The current force is reported by the [`force`](uitouch/force.md) property of [`U
 force = touch.force
 ```
 
-The force value input affects the result of handling a `UITouch`. In this sample, force is interpreted as a value representing the magnitude of a point in a line,  including a lower bound on the force value usable by the app.
+The force value input affects the result of handling a `UITouch`. In this sample, force is interpreted as a value representing the magnitude of a point in a line, including a lower bound on the force value usable by the app.
 
 ```swift
 var magnitude: CGFloat {
@@ -59,7 +59,7 @@ In this sample project, the line length extends to the edge of the diagram when 
  zero radians (parallel to the screen surface) the line will be at its longest. At `.pi` / 2 radians,
  only the dot on top of the indicator will be visible directly beneath the touch location.
  */
-let altitudeRadius = (1.0 - altitudeAngle / ( CGFloat.pi / 2)) * radius
+let altitudeRadius = (1.0 - altitudeAngle / (CGFloat.pi / 2)) * radius
 var lineTransform = CGAffineTransform(scaleX: altitudeRadius, y: 1)
 ```
 
@@ -83,7 +83,7 @@ dotPositionTransform = dotPositionTransform.concatenating(centeringTransform)
 
 ##### Toggle Debug Drawing
 
-Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](uievent.md) for the line segment included data from  [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) or [`coalescedTouches(for:)`](uievent/coalescedtouches(for:).md).
+Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](uievent.md) for the line segment included data from [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) or [`coalescedTouches(for:)`](uievent/coalescedtouches(for:).md).
 
 The sample uses the double-tap feature of the second generation Apple Pencil to toggle  mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information.
 

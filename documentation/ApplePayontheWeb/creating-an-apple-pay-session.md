@@ -10,7 +10,7 @@ After you’ve checked that the Apple Pay JS API is available and is enabled on 
 
 You supply two parameters to [`ApplePaySession`](applepaysession/applepaysession.md):
 
-- Version number. The Apple Pay version you’re using.  (See doc://com.apple.documentation/documentation/apple_pay_on_the_web/apple_pay_on_the_web_version_history for version information.)
+- Version number. The Apple Pay version you’re using.  (See [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md) for version information.)
 - Payment Request. An [`ApplePayPaymentRequest`](applepaypaymentrequest.md) dictionary that contains all the information needed to display the payment sheet.
 
 Creating an [`ApplePaySession`](applepaysession.md) object throws a JavaScript exception if any of the following occur:
@@ -21,7 +21,7 @@ Creating an [`ApplePaySession`](applepaysession.md) object throws a JavaScript e
 
 After the session is created, call its [`begin`](applepaysession/begin.md) method to show the payment sheet.
 
-[`Creating an Apple Pay Session`](creating-an-apple-pay-session.md) shows creating a payment request and a new Apple Pay session, and displaying the payment sheet.
+[`Creating an Apple Pay Session`](creating-an-apple-pay-session#Listing-1.md) shows creating a payment request and a new Apple Pay session, and displaying the payment sheet.
 
 Listing 1. Example of constructing an Apple Pay session
 

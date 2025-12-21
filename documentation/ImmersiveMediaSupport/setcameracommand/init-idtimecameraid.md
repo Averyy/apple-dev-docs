@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Initializes a `setCamera` command with a specific cameraID and start time.
+Creates a command with a specific ID, cameraID and start time.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,9 +17,9 @@ init(id: Int, time: CMTime, cameraID: String)
 
 ## Parameters
 
-- `id`: The unique id of this command.
-- `time`: The time for this command to be activated during playback.
-- `cameraID`: The cameraID associated with this command.
+- `id`: The unique ID of this command.
+- `time`: The time for this command to start during playback.
+- `cameraID`: The   associated with this command.
 
 
 ---

@@ -3,17 +3,21 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-A unique identifier for a network supporting UWB Down Link Time Difference of Arrival(DL-TDoA).
+A unique identifier for a Downlink Time-Difference-of-Arrival network.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var networkIdentifier: Int { get set }
 ```
+
+#### Discussion
+
+Set this to the value of the session ID in the anchor’s configuration.
 
 
 ---

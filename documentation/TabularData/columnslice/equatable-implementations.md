@@ -5,8 +5,6 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](columnslice/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ColumnSlice<WrappedElement>, ColumnSlice<WrappedElement>) -> Bool](columnslice/==(_:_:).md)
   Returns a Boolean that indicates whether the column slices are equal.
 

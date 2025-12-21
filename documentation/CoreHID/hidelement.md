@@ -56,10 +56,6 @@ See the HID specification for more details: [`https://www.usb.org/hid`](https://
   The calculated exponent for this element.
 - [var usage: HIDUsage](hidelement/usage.md)
   The HID specification compliant usage for this element.
-### Default Implementations
-- [CustomStringConvertible Implementations](hidelement/customstringconvertible-implementations.md)
-- [Equatable Implementations](hidelement/equatable-implementations.md)
-- [Hashable Implementations](hidelement/hashable-implementations.md)
 
 ## Relationships
 

@@ -19,11 +19,11 @@ func canPerform(withActivityItems activityItems: [Any]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your service can act on the specified data items or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](https://developer.apple.com/documentation/Swift/true) if your service can act on the specified data items or [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). Subclasses must override it and return [`true`](https://developer.apple.com/documentation/swift/true) if the data in the `activityItems` parameter can be operated on by your service. Your implementation should check the types of the objects in the array and use that information to determine if your service can act on the corresponding data.
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses must override it and return [`true`](https://developer.apple.com/documentation/Swift/true) if the data in the `activityItems` parameter can be operated on by your service. Your implementation should check the types of the objects in the array and use that information to determine if your service can act on the corresponding data.
 
 The [`UIActivityViewController`](uiactivityviewcontroller.md) object calls this method when determining which services to show to the user.
 

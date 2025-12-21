@@ -27,7 +27,7 @@ A new shape.
 
 #### Discussion
 
-The filled region of the resulting shape is the filled region of this shape with the filled  region `other` removed from it.
+The filled region of the resulting shape is the filled region of this shape with the filled region `other` removed from it.
 
 Any unclosed subpaths in either shape are assumed to be closed. The result of filling this shape using either even-odd or non-zero fill rules is identical.
 

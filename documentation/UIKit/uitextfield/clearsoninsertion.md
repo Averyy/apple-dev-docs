@@ -21,7 +21,7 @@ var clearsOnInsertion: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the text field is in editing mode, the selection UI is hidden and inserting new text clears the contents of the text field and sets the value of this property back to [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the text field is in editing mode, the selection UI is hidden and inserting new text clears the contents of the text field and sets the value of this property back to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

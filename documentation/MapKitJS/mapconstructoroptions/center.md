@@ -11,7 +11,7 @@ The map coordinate at the center of the map view.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate center;
+center?: Coordinate;
 ```
 
 #### Discussion

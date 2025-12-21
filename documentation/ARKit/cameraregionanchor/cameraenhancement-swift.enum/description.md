@@ -6,7 +6,7 @@
 A textual representation of the camera enhancement.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

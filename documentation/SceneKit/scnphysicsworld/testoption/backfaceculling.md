@@ -22,7 +22,7 @@ static let backfaceCulling: SCNPhysicsWorld.TestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that the search should only return contacts with the exterior surfaces of any physics shapes. Change the value to [`false`](https://developer.apple.com/documentation/swift/false) to consider contacts with both interior and exterior surfaces.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that the search should only return contacts with the exterior surfaces of any physics shapes. Change the value to [`false`](https://developer.apple.com/documentation/Swift/false) to consider contacts with both interior and exterior surfaces.
 
 This key applies only to ray and convex sweep tests, and only to physics shapes created using the [`concavePolyhedron`](scnphysicsshape/shapetype/concavepolyhedron.md) option.
 

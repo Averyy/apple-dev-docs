@@ -85,14 +85,18 @@ enum ReadError
   A description of the error in plain text.
 - [var errorName: String](paymentcardreadersession/readerror/errorname.md)
 ### Enumeration Cases
+- [PaymentCardReaderSession.ReadError.cardNotSupported](paymentcardreadersession/readerror/cardnotsupported.md)
+  The card is not supported by the current reader’s configuration.
+- [PaymentCardReaderSession.ReadError.readerInitializationFailed](paymentcardreadersession/readerror/readerinitializationfailed.md)
+  The reader initialization failed, try again.
+- [PaymentCardReaderSession.ReadError.readerNotAvailable](paymentcardreadersession/readerror/readernotavailable.md)
+  The reader is temporarily unavailable, try again in a few seconds.
 - [PaymentCardReaderSession.ReadError.storeAndForwardDeclineFailed](paymentcardreadersession/readerror/storeandforwarddeclinefailed.md)
   Decline request was made after the allowance time window.
 - [PaymentCardReaderSession.ReadError.storeAndForwardResultNotFound](paymentcardreadersession/readerror/storeandforwardresultnotfound.md)
   Decline request failed because the framework can’t find the read result.
 - [PaymentCardReaderSession.ReadError.unknown(code:)](paymentcardreadersession/readerror/unknown(code:).md)
   An unexpected error happened, try again.
-### Default Implementations
-- [Error Implementations](paymentcardreadersession/readerror/error-implementations.md)
 
 ## Relationships
 

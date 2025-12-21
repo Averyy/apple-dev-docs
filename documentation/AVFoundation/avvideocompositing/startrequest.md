@@ -28,7 +28,7 @@ If you intend to finish rendering the frame after  handling of this message retu
 
 Note that if the custom compositor’s implementation of this method returns without finishing the composition immediately, it may be invoked again with another composition request before the prior request is finished; in such cases the custom compositor should be prepared to manage multiple composition requests.
 
-If the rendered frame is exactly the same as one of the source frames, with no letterboxing, pillboxing or cropping needed, then the appropriate source pixel buffer may be returned, after [`CFRetain`](https://developer.apple.com/documentation/corefoundation/1521269-cfretain) has been called on it).
+If the rendered frame is exactly the same as one of the source frames, with no letterboxing, pillboxing or cropping needed, then the appropriate source pixel buffer may be returned, after [`CFRetain`](https://developer.apple.com/documentation/CoreFoundation/CFRetain) has been called on it).
 
 ## Parameters
 

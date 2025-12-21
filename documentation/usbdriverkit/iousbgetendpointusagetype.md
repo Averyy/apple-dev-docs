@@ -18,6 +18,8 @@ tEndpointUsageType indicating the type found.
 
 #### Discussion
 
+Extract the usage type of an endpoint from an endpoint descriptor
+
 This method parses an endpoint descriptor to determine its usage type. Only periodic endpoints have usage types
 
 ## Parameters

@@ -17,7 +17,7 @@ func NSContainsRect(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aRect` completely encloses `bRect`. For this condition to be true, `bRect` cannot be empty, and must not extend beyond `aRect` in any direction.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aRect` completely encloses `bRect`. For this condition to be true, `bRect` cannot be empty, and must not extend beyond `aRect` in any direction.
 
 ## See Also
 

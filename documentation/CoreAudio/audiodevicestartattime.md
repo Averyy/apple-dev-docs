@@ -15,6 +15,21 @@
 func AudioDeviceStartAtTime(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIOProcID?, _ ioRequestedStartTime: UnsafeMutablePointer<AudioTimeStamp>, _ inFlags: UInt32) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure. kAudioHardwareUnsupportedOperationError will be returned if the AudioDevice does not support starting at a specific time and inProc and ioRequestedStartTime are not NULL.
+
+#### Discussion
+
+Starts IO for the given AudioDeviceIOProcID and aligns the IO cycle of the AudioDevice with the given time.
+
+## Parameters
+
+- `inDevice`: The AudioDevice to start the IOProc on.
+- `inProcID`: The AudioDeviceIOProcID to start. Note that this can be NULL, which starts   the hardware regardless of whether or not there are any IOProcs registered.
+- `ioRequestedStartTime`: A pointer to an AudioTimeStamp that, on entry, is the requested time to   start the IOProc. On exit, it will be the actual time the IOProc will start.
+- `inFlags`: A UInt32 containing flags that modify how this function behaves.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Shows the fields in the shortest form possible. For example, “2h 10m”, “2時10分”
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

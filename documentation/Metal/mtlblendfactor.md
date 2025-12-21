@@ -21,7 +21,7 @@ enum MTLBlendFactor
 
 ## Topics
 
-### Constants
+### Blend factors
 - [MTLBlendFactor.zero](mtlblendfactor/zero.md)
   Blend factor of zero.
 - [MTLBlendFactor.one](mtlblendfactor/one.md)
@@ -45,9 +45,9 @@ enum MTLBlendFactor
 - [MTLBlendFactor.sourceAlphaSaturated](mtlblendfactor/sourcealphasaturated.md)
   Blend factor of the minimum of either source alpha or one minus destination alpha.
 - [MTLBlendFactor.blendColor](mtlblendfactor/blendcolor.md)
-  Blend factor of RGB values.
+  A blend factor that applies the blend color’s red, green, and blue components.
 - [MTLBlendFactor.oneMinusBlendColor](mtlblendfactor/oneminusblendcolor.md)
-  Blend factor of one minus RGB values.
+  A blend factor that applies one minus the blend color’s red, green, and blue components.
 - [MTLBlendFactor.blendAlpha](mtlblendfactor/blendalpha.md)
   Blend factor of alpha value.
 - [MTLBlendFactor.oneMinusBlendAlpha](mtlblendfactor/oneminusblendalpha.md)
@@ -78,10 +78,14 @@ enum MTLBlendFactor
 
 ## See Also
 
-- [enum MTLBlendOperation](mtlblendoperation.md)
-  For every pixel, `MTLBlendOperation` determines how to combine and weight the source fragment values with the destination values. Some blend operations multiply the source values by a source blend factor (SBF), multiply the destination values by a destination blend factor (DBF), and then combine the results using addition or subtraction. Other blend operations use either a minimum or maximum function to determine the result.
-- [struct MTLColorWriteMask](mtlcolorwritemask.md)
-  Values used to specify a mask to permit or restrict writing to color channels of a color value. The values [`red`](mtlcolorwritemask/red.md), [`green`](mtlcolorwritemask/green.md), [`blue`](mtlcolorwritemask/blue.md), and [`alpha`](mtlcolorwritemask/alpha.md) select one color channel each, and they can be bitwise combined.
+- [var destinationAlphaBlendFactor: MTLBlendFactor](mtlrenderpipelinecolorattachmentdescriptor/destinationalphablendfactor.md)
+  The destination blend factor (DBF) used by the alpha blend operation.
+- [var destinationRGBBlendFactor: MTLBlendFactor](mtlrenderpipelinecolorattachmentdescriptor/destinationrgbblendfactor.md)
+  The destination blend factor (DBF) used by the RGB blend operation.
+- [var sourceAlphaBlendFactor: MTLBlendFactor](mtlrenderpipelinecolorattachmentdescriptor/sourcealphablendfactor.md)
+  The source blend factor (SBF) used by the alpha blend operation.
+- [var sourceRGBBlendFactor: MTLBlendFactor](mtlrenderpipelinecolorattachmentdescriptor/sourcergbblendfactor.md)
+  The source blend factor (SBF) used by the RGB blend operation.
 
 
 ---

@@ -32,6 +32,11 @@ let y = x.flattened()
 y.shape // is [4]
 ```
 
+## See Also
+
+- [func reshaped(to: [Int]) -> MLTensor](mltensor/reshaped(to:).md)
+  Reshape to the specified shape.
+
 
 ---
 

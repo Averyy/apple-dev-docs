@@ -9,8 +9,6 @@ Measure how long an operation takes and determine schedules in the future.
 ### Clocks
 - [protocol Clock](clock.md)
   A mechanism in which to measure time, and delay work until a given point in time.
-- [struct ClockTraits](clocktraits.md)
-  Represents traits of a particular Clock implementation.
 - [struct ContinuousClock](continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 - [struct SuspendingClock](suspendingclock.md)

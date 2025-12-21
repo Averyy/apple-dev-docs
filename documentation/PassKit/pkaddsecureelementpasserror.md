@@ -40,14 +40,12 @@ struct PKAddSecureElementPassError
 - [PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/code.md)
   Error codes for problems that occur when you add a secure element passes.
 ### Getting error information
-- [var code: Code](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727660-code.md)
-  The code that provides context for the error.
-- [var errorCode: Int](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3543377-errorcode.md)
-  The code that provides context for the error.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
 - [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3727664-userinfo.md)
   A dictionary that contains custom information that relates to the error.
-- [var errorUserInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkaddsecureelementpasserror/3543379-erroruserinfo.md)
-  A dictionary that contains custom information that relates to the error.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 - [let PKAddSecureElementPassErrorDomain: String](pkaddsecureelementpasserrordomain.md)
   The error domain for errors that occur when adding a secure pass.
 ### Comparing errors

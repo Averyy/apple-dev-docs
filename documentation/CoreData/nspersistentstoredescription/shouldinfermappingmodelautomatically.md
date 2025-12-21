@@ -22,7 +22,7 @@ var shouldInferMappingModelAutomatically: Bool { get set }
 
 #### Discussion
 
-If this flag is set to [`true`](https://developer.apple.com/documentation/swift/true) and the value of the [`shouldMigrateStoreAutomatically`](nspersistentstoredescription/shouldmigratestoreautomatically.md) is [`true`](https://developer.apple.com/documentation/swift/true), the coordinator attempts to infer a mapping model if none can be found. The default for this flag is [`true`](https://developer.apple.com/documentation/swift/true).
+If this flag is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the value of the [`shouldMigrateStoreAutomatically`](nspersistentstoredescription/shouldmigratestoreautomatically.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the coordinator attempts to infer a mapping model if none can be found. The default for this flag is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

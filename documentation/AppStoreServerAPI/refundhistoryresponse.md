@@ -40,10 +40,6 @@ Consider storing the `revision` token from the last page of results with other c
 
 - [Get Refund History](get-refund-history.md)
   Get a paginated list of all of a customer’s refunded in-app purchases for your app.
-- [Get Refund History V1](get-refund-history-v1.md)
-  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
-- [object RefundLookupResponse](refundlookupresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 
 ---

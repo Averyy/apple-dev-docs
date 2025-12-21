@@ -39,6 +39,8 @@ Typically, you call this method from an action method when you want to replace t
   Presents the view controller in the specified column of the split view interface.
 - [func hide(UISplitViewController.Column)](uisplitviewcontroller/hide(_:).md)
   Dismisses the view controller in the specified column of the split view interface.
+- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
+  A Boolean value that indicates whether the split view interface is showing the specified column.
 - [func showDetailViewController(UIViewController, sender: Any?)](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents the specified view controller as the secondary view controller of the split view interface.
 

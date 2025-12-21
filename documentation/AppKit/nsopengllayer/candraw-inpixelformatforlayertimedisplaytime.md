@@ -16,11 +16,11 @@ func canDraw(in context: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forL
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver should render OpenGL content, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver should render OpenGL content, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-This method is called before attempting to render the frame for the layer time specified by `timeInterval`. If the method returns [`false`](https://developer.apple.com/documentation/swift/false), the frame is skipped. The default implementation always returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called before attempting to render the frame for the layer time specified by `timeInterval`. If the method returns [`false`](https://developer.apple.com/documentation/Swift/false), the frame is skipped. The default implementation always returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

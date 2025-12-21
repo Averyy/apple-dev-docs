@@ -24,8 +24,6 @@ Localize each variant for display to the user, and make sure the array contains 
 
 ## See Also
 
-- [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
-  An array of instruction variants for the maneuver.
 - [var dashboardInstructionVariants: [String]](cpmaneuver/dashboardinstructionvariants.md)
   An array of instruction variants for the CarPlay dashboard.
 

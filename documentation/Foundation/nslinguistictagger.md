@@ -23,8 +23,8 @@ class NSLinguisticTagger
 ## Mentions
 
 - [Tokenizing Natural Language Text](tokenizing-natural-language-text.md)
-- [Identifying People, Places, and Organizations](identifying-people-places-and-organizations.md)
 - [Identifying Parts of Speech](identifying-parts-of-speech.md)
+- [Identifying People, Places, and Organizations](identifying-people-places-and-organizations.md)
 
 #### Overview
 

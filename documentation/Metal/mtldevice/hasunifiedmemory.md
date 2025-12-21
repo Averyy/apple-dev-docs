@@ -22,7 +22,7 @@ var hasUnifiedMemory: Bool { get }
 
 #### Discussion
 
-A GPU with unified memory ([`true`](https://developer.apple.com/documentation/swift/true)) is typically an integrated GPU. A GPU with dedicated memory ([`false`](https://developer.apple.com/documentation/swift/false)) may take additional time to synchronize managed resources or copy data into private GPU resources.
+A GPU with unified memory ([`true`](https://developer.apple.com/documentation/Swift/true)) is typically an integrated GPU. A GPU with dedicated memory ([`false`](https://developer.apple.com/documentation/Swift/false)) may take additional time to synchronize managed resources or copy data into private GPU resources.
 
 ## See Also
 

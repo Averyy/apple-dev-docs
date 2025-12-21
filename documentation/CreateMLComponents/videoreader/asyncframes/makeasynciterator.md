@@ -23,10 +23,6 @@ func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator
 
 - [VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/iterator.md)
   An async iterator of video frames.
-- [VideoReader.AsyncFrames.AsyncIterator](videoreader/asyncframes/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [VideoReader.AsyncFrames.Feature](videoreader/asyncframes/feature.md)
-  The feature type.
 
 
 ---

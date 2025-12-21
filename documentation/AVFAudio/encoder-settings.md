@@ -7,13 +7,16 @@ The constants that define the audio encoder settings for the audio recorder clas
 ## Topics
 
 ### Settings
+- [let AVEncoderASPFrequencyKey: String](avencoderaspfrequencykey.md)
 - [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
   A constant that represents an integer from the audio quality enumeration.
+- [let AVEncoderBitDepthHintKey: String](avencoderbitdepthhintkey.md)
 - [let AVEncoderBitRateKey: String](avencoderbitratekey.md)
 - [let AVEncoderBitRatePerChannelKey: String](avencoderbitrateperchannelkey.md)
 - [let AVEncoderBitRateStrategyKey: String](avencoderbitratestrategykey.md)
   A constant that represents the bit rate strategy for the encoder to use.
-- [let AVEncoderBitDepthHintKey: String](avencoderbitdepthhintkey.md)
+- [let AVEncoderContentSourceKey: String](avencodercontentsourcekey.md)
+- [let AVEncoderDynamicRangeControlConfigurationKey: String](avencoderdynamicrangecontrolconfigurationkey.md)
 
 ## See Also
 
@@ -23,7 +26,7 @@ The constants that define the audio encoder settings for the audio recorder clas
   The values that specify the sample rate audio quality for encoding and conversion.
 - [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
   A constant that represents an integer from the audio quality enumeration.
-- [Time Pitch Algorithm Settings](../AVFoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

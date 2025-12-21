@@ -27,6 +27,7 @@ UIKit updates the navigation item’s title automatically. However, if you want 
 
 ## Parameters
 
+- `_`: The navigation item with the changing title.
 - `title`: The new title of the navigation item.
 
 ## See Also

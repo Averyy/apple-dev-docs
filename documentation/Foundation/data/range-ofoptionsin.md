@@ -36,16 +36,6 @@ Precondition: `range` must be in the bounds of the Data.
 
 ## See Also
 
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](data/first(where:).md)
-  Returns the first element of the sequence that satisfies the given predicate.
-- [func max() -> Self.Element?](data/max.md)
-  Returns the maximum element in the sequence.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](data/max(by:).md)
-  Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
-- [func min() -> Self.Element?](data/min.md)
-  Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](data/min(by:).md)
-  Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
 - [typealias SearchOptions](data/searchoptions.md)
   Options that control a data search operation.
 

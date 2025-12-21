@@ -153,6 +153,8 @@ var body: some View {
 ### Initializers
 - [init(_:text:selection:prompt:axis:)](textfield/init(_:text:selection:prompt:axis:).md)
   Creates a text field with a binding to the current selection and a text label generated from a localized title string.
+- [init(text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text?, axis: Axis?, label: () -> Label)](textfield/init(text:selection:prompt:axis:label:).md)
+  Creates a text field with a binding to the current selection and a prompt generated from a `Text`.
 
 ## Relationships
 

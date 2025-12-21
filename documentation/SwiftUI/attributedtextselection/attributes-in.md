@@ -6,13 +6,13 @@
 Obtain a lazy sequence of all attribute values the selection has in a given text.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -27,7 +27,7 @@ The attribute values of a selection are the attribute values of each run that is
 By default, the sequence contains the attribute container for every run or the typing attributes. Use the [`AttributedTextSelection.Attributes`](attributedtextselection/attributes.md)’ subscript to obtain only the values for a single attribute:
 
 ```swift
-selection.attributtes(in: text)[\.foregroundColor].contains(.red)
+selection.attributes(in: text)[\.foregroundColor].contains(.red)
 ```
 
 

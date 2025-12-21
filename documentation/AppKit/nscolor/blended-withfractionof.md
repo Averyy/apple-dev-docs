@@ -33,10 +33,6 @@ The resulting color object or `nil` if the colors can’t be converted.
   Creates a new color object that represents a blend between the current color and the highlight color.
 - [func shadow(withLevel: CGFloat) -> NSColor?](nscolor/shadow(withlevel:).md)
   Creates a new color object that represents a blend between the current color and the shadow color.
-- [func usingColorSpaceName(NSColorSpaceName) -> NSColor?](nscolor/usingcolorspacename(_:).md)
-  Creates a new color object whose color is the same as the receiver’s, except that the new color object is in the specified color space.
-- [func usingColorSpaceName(NSColorSpaceName?, device: [NSDeviceDescriptionKey : Any]?) -> NSColor?](nscolor/usingcolorspacename(_:device:).md)
-  Creates a new color object for the same color, but in the specified color space and specific to the provided device.
 
 
 ---

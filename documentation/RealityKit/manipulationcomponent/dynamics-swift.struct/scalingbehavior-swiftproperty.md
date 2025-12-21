@@ -6,7 +6,7 @@
 The scaling behavior describing how an object scales due to gestures performed by the user.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

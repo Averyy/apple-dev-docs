@@ -6,7 +6,7 @@
 Returns the `ar_device` associated with this device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

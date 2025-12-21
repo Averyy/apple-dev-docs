@@ -17,7 +17,6 @@ An option for whether to load the node’s content automatically.
 ## Declaration
 
 ```swift
-@MainActor
 var loadingPolicy: SCNReferenceLoadingPolicy { get set }
 ```
 

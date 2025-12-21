@@ -21,6 +21,8 @@ Appropriate IOReturn code
 
 #### Discussion
 
+Update a channel state without validating channel_id
+
 Locked version of IOReporter::setStateByIndices().  This method may be overriden by sub-classes.
 
 Locking: Caller must ensure that the reporter (data) lock is held.

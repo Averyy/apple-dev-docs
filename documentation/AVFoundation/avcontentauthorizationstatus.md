@@ -20,7 +20,7 @@ Even if authorization is completed by the user, there is no guarantee that the c
 
 ## Topics
 
-### Content Authorization Statuses
+### Content authorization statuses
 - [AVContentAuthorizationStatus.unknown](avcontentauthorizationstatus/unknown.md)
   The content authorization content request hasn’t completed.
 - [AVContentAuthorizationStatus.completed](avcontentauthorizationstatus/completed.md)

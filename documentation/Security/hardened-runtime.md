@@ -16,6 +16,8 @@ The Hardened Runtime doesn’t affect the operation of most apps, but it does di
 
 You add entitlements only to executables. Shared libraries, frameworks, and in-process plug-ins inherit the entitlements of their host executable.
 
+Due to their privileged position in the system, macOS refuses to load system extensions that use Hardened Runtime exception entitlements.  There’s one exception to this general rule: macOS allows the [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit) in non-DEXT system extensions.
+
 The default value of these Boolean entitlements is false. When Xcode signs your code, it includes an entitlement only if the value is true. If you’re manually signing code, follow this convention to ensure maximum compatibility. Don’t include an entitlement if the value is false.
 
 > ❗ **Important**:  To upload a macOS app to be notarized, you must enable the Hardened Runtime capability. For more information about notarization, see [`Notarizing macOS software before distribution`](notarizing-macos-software-before-distribution.md).

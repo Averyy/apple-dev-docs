@@ -14,7 +14,6 @@ Returns a document object initialized with its file-system location.
 ## Declaration
 
 ```swift
-@MainActor
 init(fileURL url: URL)
 ```
 

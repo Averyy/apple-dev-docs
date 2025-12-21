@@ -24,7 +24,7 @@ func defaultCustomization(_ defaultVisibility: Visibility = .automatic, options:
 
 Default customizable items support a variety of edits by the user.
 
-- A user can add an an item that is not in the toolbar.
+- A user can add an item that is not in the toolbar.
 - A user can remove an item that is in the toolbar.
 - A user can move an item within the toolbar.
 

@@ -19,6 +19,12 @@ nonisolated
 func compositingLayer() -> some ChartContent
 ```
 
+## See Also
+
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
+- [func zIndex(Double) -> some ChartContent](chartcontent/zindex(_:).md)
+  Controls the display order of overlapping chart content.
+
 
 ---
 

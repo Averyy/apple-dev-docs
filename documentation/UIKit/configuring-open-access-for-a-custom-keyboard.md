@@ -8,7 +8,7 @@ Enable network access and write access to a shared group container.
 
 Custom keyboards operate in a sandboxed environment running in an isolated process. This sandbox’s default configuration disallows access to the network and prevents writing to the containing app’s shared group containers (reading is permitted). Open access lets you do things like store keyboard configuration, perform more complex analysis on text the user typed, or provide advanced features that require server support.
 
-By setting the [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) flag to [`true`](https://developer.apple.com/documentation/swift/true) in your keyboard’s `Info.plist`, you can enable these features. Users must explicitly allow your keyboard to have open access by turning the “Allow Full Access” switch on for your keyboard in Settings.
+By setting the [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) flag to [`true`](https://developer.apple.com/documentation/Swift/true) in your keyboard’s `Info.plist`, you can enable these features. Users must explicitly allow your keyboard to have open access by turning the “Allow Full Access” switch on for your keyboard in Settings.
 
 > ❗ **Important**:  Enabling open access shouldn’t be done lightly. Keyboards handle some of the most sensitive user data. See [`Gain user trust`](configuring-open-access-for-a-custom-keyboard#Gain-user-trust.md) below.
 
@@ -16,7 +16,7 @@ By setting the [`RequestsOpenAccess`](https://developer.apple.comhttps://develop
 
 Give careful consideration to whether you truly need open access or not. Although open access makes many things possible for a custom keyboard, it also increases your responsibilities. Consider the following lists describing the capabilities and privacy considerations with open access enabled or disabled.
 
-With [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) set to [`false`](https://developer.apple.com/documentation/swift/false), or if the user has disallowed full access for your keyboard in Settings, users know that keystrokes go only to the app that’s currently using the keyboard. The system guarantees this by enabling the following capabilities and restrictions for the keyboard:
+With [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) set to [`false`](https://developer.apple.com/documentation/Swift/false), or if the user has disallowed full access for your keyboard in Settings, users know that keystrokes go only to the app that’s currently using the keyboard. The system guarantees this by enabling the following capabilities and restrictions for the keyboard:
 
 - Ability to perform all the normal duties expected of a basic keyboard
 - Access to a common words lexicon for autocorrect and text suggestion
@@ -25,7 +25,7 @@ With [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.c
 - No access to microphone and speaker
 - No ability to participate directly or indirectly in iCloud, Game Center, or In-App Purchase
 
-However, with [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) set to [`true`](https://developer.apple.com/documentation/swift/true), users must explicitly allow your keyboard to have open access. They do this in Settings by selecting Allow Full Access for your keyboard. When they enable this, they know their keystrokes are available to the keyboard developer. The system enables the following capabilities and restrictions for open access keyboards:
+However, with [`RequestsOpenAccess`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW24) set to [`true`](https://developer.apple.com/documentation/Swift/true), users must explicitly allow your keyboard to have open access. They do this in Settings by selecting Allow Full Access for your keyboard. When they enable this, they know their keystrokes are available to the keyboard developer. The system enables the following capabilities and restrictions for open access keyboards:
 
 - The open access keyboard has all the capabilities in the preceding list.
 - The keyboard can access Location Services and Contacts, with user permission.

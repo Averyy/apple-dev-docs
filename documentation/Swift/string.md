@@ -584,7 +584,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [static func localizedName(of: String.Encoding) -> String](string/localizedname(of:).md)
   Returns a human-readable string giving the name of the specified encoding.
 - [var isContiguousUTF8: Bool](string/iscontiguousutf8.md)
-  Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+  Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
 - [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)
@@ -685,7 +685,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 ### Encoding and Decoding
 - [func encode(to: any Encoder) throws](string/encode(to:).md)
   Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](string/init(from:)-qki5.md)
+- [init(from: any Decoder) throws](string/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 ### Describing a String
 - [var description: String](string/description.md)
@@ -698,15 +698,6 @@ For more information about the Unicode terms used in this discussion, see the [`
   The hash value.
 - [func hash(into: inout Hasher)](string/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-### Using a String as a Data Value
-- [init?(from: MLDataValue)](string/init(from:)-gcys.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](string/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [var identifierValue: MLDataValue](string/identifiervalue.md)
-  The value of the unique identifier wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](string/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Infrequently Used Functionality
 - [func index(of: Self.Element) -> Self.Index?](string/index(of:).md)
   Returns the first index where the specified value appears in the collection.
@@ -761,6 +752,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [init?(cString: inout CChar, encoding: String.Encoding)](string/init(cstring:encoding:)-358mb.md)
 - [init?(cString: String, encoding: String.Encoding)](string/init(cstring:encoding:)-4ydt6.md)
 - [init(copying: UTF8Span)](string/init(copying:).md)
+  Creates a new string, copying the specified code units.
 - [init(decoding: FilePath.Root)](string/init(decoding:)-364r2.md)
   On Unix, creates the string `"/"`
 - [init(decoding: FilePath.Component)](string/init(decoding:)-9xh58.md)
@@ -799,6 +791,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [var characters: String](string/characters.md)
   A view of the string’s contents as a collection of characters.
 - [var utf8Span: UTF8Span](string/utf8span.md)
+  A UTF8span over the code units that make up this string.
 ### Instance Methods
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](string/data(using:allowlossyconversion:).md)
 - [func withMutableCharacters<R>((inout String) -> R) -> R](string/withmutablecharacters(_:).md)
@@ -826,40 +819,27 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [static func decodeCString<Encoding>([Encoding.CodeUnit], as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-3mvvy.md)
 - [static func decodeCString<Encoding>(String, as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-9pdmv.md)
 ### Default Implementations
-- [Attachable Implementations](string/attachable-implementations.md)
 - [BidirectionalCollection Implementations](string/bidirectionalcollection-implementations.md)
 - [CodingKeyRepresentable Implementations](string/codingkeyrepresentable-implementations.md)
 - [Collection Implementations](string/collection-implementations.md)
 - [Comparable Implementations](string/comparable-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](string/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](string/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](string/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](string/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](string/customstringconvertible-implementations.md)
-- [CustomTestStringConvertible Implementations](string/customteststringconvertible-implementations.md)
-- [CustomURLRepresentationParameterConvertible Implementations](string/customurlrepresentationparameterconvertible-implementations.md)
 - [Decodable Implementations](string/decodable-implementations.md)
 - [Encodable Implementations](string/encodable-implementations.md)
-- [EntityIdentifierConvertible Implementations](string/entityidentifierconvertible-implementations.md)
 - [Equatable Implementations](string/equatable-implementations.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral Implementations](string/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringInterpolation Implementations](string/expressiblebystringinterpolation-implementations.md)
 - [ExpressibleByStringLiteral Implementations](string/expressiblebystringliteral-implementations.md)
 - [ExpressibleByUnicodeScalarLiteral Implementations](string/expressiblebyunicodescalarliteral-implementations.md)
-- [Generable Implementations](string/generable-implementations.md)
 - [Hashable Implementations](string/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](string/instructionsrepresentable-implementations.md)
 - [LosslessStringConvertible Implementations](string/losslessstringconvertible-implementations.md)
-- [MLDataValueConvertible Implementations](string/mldatavalueconvertible-implementations.md)
-- [MLIdentifier Implementations](string/mlidentifier-implementations.md)
-- [PromptRepresentable Implementations](string/promptrepresentable-implementations.md)
 - [RangeReplaceableCollection Implementations](string/rangereplaceablecollection-implementations.md)
-- [RegexComponent Implementations](string/regexcomponent-implementations.md)
 - [Sequence Implementations](string/sequence-implementations.md)
 - [StringProtocol Implementations](string/stringprotocol-implementations.md)
 - [TextOutputStream Implementations](string/textoutputstream-implementations.md)
 - [TextOutputStreamable Implementations](string/textoutputstreamable-implementations.md)
-- [Transferable Implementations](string/transferable-implementations.md)
 
 ## Relationships
 
@@ -896,7 +876,6 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [MLIdentifier](../CreateML/MLIdentifier.md)
 - [MirrorPath](mirrorpath.md)
 - [MusicLibraryRequestFilterValueEquatable](../MusicKit/MusicLibraryRequestFilterValueEquatable.md)
-- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)

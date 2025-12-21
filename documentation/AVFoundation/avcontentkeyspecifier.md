@@ -22,10 +22,10 @@ class AVContentKeySpecifier
 
 ## Topics
 
-### Creating a Specifier
+### Creating a specifier
 - [init(forKeySystem: AVContentKeySystem, identifier: Any, options: [String : Any])](avcontentkeyspecifier/init(forkeysystem:identifier:options:).md)
   Creates a content key specifier.
-### Inspecting a Specifier
+### Inspecting a specifier
 - [var identifier: any Sendable](avcontentkeyspecifier/identifier.md)
   The container and protocol-specific key identifier.
 - [var keySystem: AVContentKeySystem](avcontentkeyspecifier/keysystem.md)

@@ -3,6 +3,8 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: struct
 
+A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -14,6 +16,28 @@
 ```swift
 @MainActor
 @preconcurrency struct AddPassToWalletButton<Fallback> where Fallback : View
+```
+
+#### Overview
+
+Use this structure as the SwiftUI equivalent to [`PKAddPassButton`](pkaddpassbutton.md). For design guidance, see Human Interface Guidelines > Technologies > [`Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/wallet#Passes).
+
+This example checks for a created pass and displays the Add to Apple Wallet button.
+
+```swift
+@State private var addedToWallet = false
+
+@ViewBuilder var addPassButton: some View {
+    if let pass = createMyPass() {
+        AddPassToWalletButton([pass]) { added in
+            addedToWallet = added
+        }
+        .frame(width: 250, height: 50)
+        .addPassToWalletButtonStyle(.blackOutline)
+    } else {
+        // Display a fallback view if no pass exists.
+    }
+}
 ```
 
 ## Topics

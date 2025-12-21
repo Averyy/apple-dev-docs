@@ -6,10 +6,8 @@
 The size (width, height) of the touchpad in points.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,22 +17,18 @@ var size: CGSize { get set }
 
 ## See Also
 
-- [var anchor: TCTransformAnchor](tctouchpaddescriptor/anchor.md)
-  The anchor point that the touchpad’s offset is relative to.
-- [var colliderType: TCColliderType](tctouchpaddescriptor/collidertype.md)
-  The type of collider to use for the touchpad.
-- [var highlightTime: simd_float1](tctouchpaddescriptor/highlighttime.md)
+- [var contents: TCControlContents?](tctouchpaddescriptor/contents.md)
+  The contents for the touchpad.
+- [var highlightDuration: TimeInterval](tctouchpaddescriptor/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
 - [var label: TCControlLabel](tctouchpaddescriptor/label.md)
   The label associated with the touchpad.
-- [var layer: simd_int1](tctouchpaddescriptor/layer.md)
-  The layer of the touchpad, used for z-sorting.
 - [var offset: CGPoint](tctouchpaddescriptor/offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var reportsDeltas: Bool](tctouchpaddescriptor/reportsdeltas.md)
+- [var reportsRelativeValues: Bool](tctouchpaddescriptor/reportsrelativevalues.md)
   A Boolean value that represents the touchpad reports deltas.
-- [var visuals: TCControlVisuals?](tctouchpaddescriptor/visuals.md)
-  The visuals for the touchpad.
+- [var zIndex: Int](tctouchpaddescriptor/zindex.md)
+  The z-index of the touchpad. A lower z-index is drawn first.
 
 
 ---

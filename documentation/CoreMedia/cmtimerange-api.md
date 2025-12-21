@@ -1,4 +1,4 @@
-# CMTimeRange APIs
+# CMTimeRange
 
 **Framework**: Core Media
 
@@ -76,9 +76,9 @@ For information about additional functions for managing dates and times, see [`T
 
 ## See Also
 
-- [CMTime APIs](cmtime-api.md)
+- [CMTime](cmtime-api.md)
   A structure that represents time.
-- [CMTimeMapping APIs](cmtimemapping-api.md)
+- [CMTimeMapping](cmtimemapping-api.md)
   A structure that maps a segment of a source time range to a target time range.
 
 

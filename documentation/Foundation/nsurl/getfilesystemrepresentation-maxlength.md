@@ -22,7 +22,7 @@ func getFileSystemRepresentation(_ buffer: UnsafeMutablePointer<CChar>, maxLengt
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the URL could be converted into a file system representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the URL could be converted into a file system representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

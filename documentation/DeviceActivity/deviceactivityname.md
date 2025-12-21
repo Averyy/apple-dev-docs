@@ -27,21 +27,6 @@ Use `DeviceActivityName` to associate an activity with some of your applicationâ
   Creates a new instance with the specified raw value.
 - [init(String)](deviceactivityname/init(_:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](deviceactivityname/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Identifying and Comparing Errors
-- [var hashValue: Int](deviceactivityname/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](deviceactivityname/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func != (Self, Self) -> Bool](deviceactivityname/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values arenâ€™t equal.
-### Type Aliases
-- [DeviceActivityName.RawValue](deviceactivityname/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](deviceactivityname/equatable-implementations.md)
-- [RawRepresentable Implementations](deviceactivityname/rawrepresentable-implementations.md)
 
 ## Relationships
 

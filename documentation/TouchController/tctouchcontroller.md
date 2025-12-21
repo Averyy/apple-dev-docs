@@ -6,10 +6,8 @@
 An object that allows you to create and customize on-screen touch controls for a game that uses Metal.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -39,14 +37,16 @@ This class manages the lifecycle of touch controls, handles user interaction, re
   The Metal device the touch control uses for rendering the touch controls.
 - [var directionPads: [TCDirectionPad]](tctouchcontroller/directionpads.md)
   An array containing all the direction pad controls managed by this controller.
+- [var drawableSize: CGSize](tctouchcontroller/drawablesize.md)
+  The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
+- [var size: CGSize](tctouchcontroller/size.md)
+  The size of the view the touch controller’s drawable is embedded in, in points.
+- [var switches: [TCSwitch]](tctouchcontroller/switches.md)
+  An array containing all the switch controls managed by this controller.
 - [var isConnected: Bool](tctouchcontroller/isconnected.md)
   A Boolean value that indicates whether the touch controller is connected to the Game Controller framework.
-- [var scaleFactor: CGFloat](tctouchcontroller/scalefactor.md)
-  The scale factor of the screen.
-- [var screenHeight: CGFloat](tctouchcontroller/screenheight.md)
-  The height of the screen in points.
-- [var screenWidth: CGFloat](tctouchcontroller/screenwidth.md)
-  The width of the screen in points.
+- [class var isSupported: Bool](tctouchcontroller/issupported.md)
+  Whether touch controllers are supported for the device.
 - [var throttles: [TCThrottle]](tctouchcontroller/throttles.md)
   An array containing all the throttle controls managed by this controller.
 - [var thumbsticks: [TCThumbstick]](tctouchcontroller/thumbsticks.md)
@@ -54,30 +54,38 @@ This class manages the lifecycle of touch controls, handles user interaction, re
 - [var touchpads: [TCTouchpad]](tctouchcontroller/touchpads.md)
   An array containing all the touchpad controls managed by this controller.
 ### Getting the touch controller
-- [func controller() -> GCController](tctouchcontroller/controller.md)
+- [var controller: GCController](tctouchcontroller/controller.md)
   The game controller instance associated with this touch controller.
-### Adding a control
-- [func addButton(TCButton)](tctouchcontroller/addbutton(_:).md)
-  Adds a button to the touch controller.
-- [func addDirectionPad(TCDirectionPad)](tctouchcontroller/adddirectionpad(_:).md)
-  Adds a direction pad to the touch controller.
-- [func addThrottle(TCThrottle)](tctouchcontroller/addthrottle(_:).md)
-  Adds a throttle to the touch controller.
-- [func addThumbstick(TCThumbstick)](tctouchcontroller/addthumbstick(_:).md)
-  Adds a thumbstick to the touch controller.
-- [func addTouchpad(TCTouchpad)](tctouchcontroller/addtouchpad(_:).md)
-  Adds a touchpad to the touch controller.
-### Creating a control
-- [func button(with: TCButtonDescriptor) -> TCButton](tctouchcontroller/button(with:).md)
-  Creates a new button control with the provided descriptor.
-- [func throttle(with: TCThrottleDescriptor) -> TCThrottle](tctouchcontroller/throttle(with:).md)
-  Creates a new throttle control with the provided descriptor.
-- [func thumbstick(with: TCThumbstickDescriptor) -> TCThumbstick](tctouchcontroller/thumbstick(with:).md)
-  Creates a new thumbstick control with the provided descriptor.
-- [func touchpad(with: TCTouchpadDescriptor) -> TCTouchpad](tctouchcontroller/touchpad(with:).md)
-  Creates a new touchpad control with the provided descriptor.
-- [func directionPad(with: TCDirectionPadDescriptor) -> TCDirectionPad](tctouchcontroller/directionpad(with:).md)
-  Creates a new direction pad control with the provided descriptor.
+### Adding a button control
+- [func addButton(descriptor: TCButtonDescriptor) -> TCButton](tctouchcontroller/addbutton(descriptor:).md)
+  Creates a new button control with the provided descriptor, and adds it to the touch controller.
+- [class TCButtonDescriptor](tcbuttondescriptor.md)
+  A descriptor for configuring a button.
+### Adding a directional pad control
+- [func addDirectionPad(descriptor: TCDirectionPadDescriptor) -> TCDirectionPad](tctouchcontroller/adddirectionpad(descriptor:).md)
+  Creates a new direction pad control with the provided descriptor, and adds it to the touch controller.
+- [class TCDirectionPadDescriptor](tcdirectionpaddescriptor.md)
+  A descriptor for configuring a directional pad.
+### Adding a switch control
+- [func addSwitch(descriptor: TCSwitchDescriptor) -> TCSwitch](tctouchcontroller/addswitch(descriptor:).md)
+  Creates a new switch control with the provided descriptor, and adds it to the touch controller.
+- [class TCSwitchDescriptor](tcswitchdescriptor.md)
+  A descriptor for configuring a switch.
+### Adding a throttle control
+- [func addThrottle(descriptor: TCThrottleDescriptor) -> TCThrottle](tctouchcontroller/addthrottle(descriptor:).md)
+  Creates a new throttle control with the provided descriptor, and adds it to the touch controller.
+- [class TCThrottleDescriptor](tcthrottledescriptor.md)
+  A descriptor for configuring a throttle.
+### Adding a thumbstick control
+- [func addThumbstick(descriptor: TCThumbstickDescriptor) -> TCThumbstick](tctouchcontroller/addthumbstick(descriptor:).md)
+  Creates a new thumbstick control with the provided descriptor, and adds it to the touch controller.
+- [class TCThumbstickDescriptor](tcthumbstickdescriptor.md)
+  A descriptor for configuring a thumbstick.
+### Adding a touchpad control
+- [func addTouchpad(descriptor: TCTouchpadDescriptor) -> TCTouchpad](tctouchcontroller/addtouchpad(descriptor:).md)
+  Creates a new touchpad control with the provided descriptor, and adds it to the touch controller.
+- [class TCTouchpadDescriptor](tctouchpaddescriptor.md)
+  A descriptor for configuring a touchpad.
 ### Connecting and disconnecting a controller
 - [func connect()](tctouchcontroller/connect.md)
   Connects the touch controller to the app, allowing its controls to be drawn and an associated `GCController` to be created.
@@ -87,42 +95,24 @@ This class manages the lifecycle of touch controls, handles user interaction, re
 - [func control(at: CGPoint) -> (any TCControl)?](tctouchcontroller/control(at:).md)
   The control at the specified point, if any.
 ### Handling layout updates
-- [func drawableSizeWillChange(CGSize, scaleFactor: CGFloat)](tctouchcontroller/drawablesizewillchange(_:scalefactor:).md)
-  Called when the drawable size changes.
-- [func render(with: any MTLRenderCommandEncoder)](tctouchcontroller/render(with:).md)
+- [func automaticallyLayoutControls(for: [TCControlLabel])](tctouchcontroller/automaticallylayoutcontrols(for:).md)
+  Automatically lays out the provided control labels, creating them if needed.
+- [func render(using: any MTLRenderCommandEncoder)](tctouchcontroller/render(using:).md)
   Renders the touch controls using the provided Metal render command encoder.
-- [func setupDefaultLayout(for: [TCControlLabel])](tctouchcontroller/setupdefaultlayout(for:).md)
-  Sets up a default layout for the provided control labels.
 ### Handling a touch
-- [func handleTouchBegan(at: CGPoint, index: NSNumber) -> Bool](tctouchcontroller/handletouchbegan(at:index:).md)
+- [func handleTouchBegan(at: CGPoint, index: Int) -> Bool](tctouchcontroller/handletouchbegan(at:index:).md)
   Handles a touch began event at the specified point.
-- [func handleTouchEnded(at: CGPoint, index: NSNumber) -> Bool](tctouchcontroller/handletouchended(at:index:).md)
+- [func handleTouchEnded(at: CGPoint, index: Int) -> Bool](tctouchcontroller/handletouchended(at:index:).md)
   Handles a touch ended event at the specified point.
-- [func handleTouchMoved(at: CGPoint, index: NSNumber) -> Bool](tctouchcontroller/handletouchmoved(at:index:).md)
+- [func handleTouchMoved(at: CGPoint, index: Int) -> Bool](tctouchcontroller/handletouchmoved(at:index:).md)
   Handles a touch moved event at the specified point.
 ### Removing controls
-- [func removeAllButtons()](tctouchcontroller/removeallbuttons.md)
-  Removes all buttons from the touch controller.
+- [func removeControl(any TCControl)](tctouchcontroller/removecontrol(_:).md)
+  Removes the control from the touch controller.
 - [func removeAllControls()](tctouchcontroller/removeallcontrols.md)
   Removes all controls from the touch controller.
-- [func removeAllDirectionPads()](tctouchcontroller/removealldirectionpads.md)
-  Removes all direction pads from the touch controller.
-- [func removeAllThrottles()](tctouchcontroller/removeallthrottles.md)
-  Removes all throttles from the touch controller.
-- [func removeAllThumbsticks()](tctouchcontroller/removeallthumbsticks.md)
-  Removes all thumbsticks from the touch controller.
-- [func removeAllTouchpads()](tctouchcontroller/removealltouchpads.md)
-  Removes all touchpads from the touch controller.
-- [func removeButton(TCButton)](tctouchcontroller/removebutton(_:).md)
-  Removes a button from the touch controller.
-- [func removeDirectionPad(TCDirectionPad)](tctouchcontroller/removedirectionpad(_:).md)
-  Removes a direction pad from the touch controller.
-- [func removeThrottle(TCThrottle)](tctouchcontroller/removethrottle(_:).md)
-  Removes a throttle from the touch controller.
-- [func removeThumbstick(TCThumbstick)](tctouchcontroller/removethumbstick(_:).md)
-  Removes a thumbstick from the touch controller.
-- [func removeTouchpad(TCTouchpad)](tctouchcontroller/removetouchpad(_:).md)
-  Removes a touchpad from the touch controller.
+### Getting the touch controller category
+- [let TCGameControllerProductCategoryTouchController: String](tcgamecontrollerproductcategorytouchcontroller.md)
 
 ## Relationships
 

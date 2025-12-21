@@ -18,9 +18,9 @@ static func resume(_ session: MLTrainingSession<MLActionClassifier>) throws -> M
 
 An [`MLJob`](mljob.md) that represents the action classifier training session.
 
-#### Discussion
+## Parameters
 
-- session: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
+- `session`: An   instance that represents the training session.
 
 ## See Also
 

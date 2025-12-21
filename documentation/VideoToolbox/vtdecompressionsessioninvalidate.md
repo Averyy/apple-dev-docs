@@ -21,7 +21,7 @@ func VTDecompressionSessionInvalidate(_ session: VTDecompressionSession)
 
 #### Discussion
 
-When you finish with a decompression session you created, call this function to tear it down, and then [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release your object reference.
+When you finish with a decompression session you created, call this function to tear it down, and then [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release your object reference.
 
 > **Note**:  A decompression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it can be hard to predict when this will happen. Calling `VTDecompressionSessionInvalidate` ensures a deterministic, orderly teardown.
 

@@ -22,7 +22,7 @@ class AVContentKey
 
 ## Topics
 
-### Accessing the Specifier
+### Accessing the specifier
 - [var contentKeySpecifier: AVContentKeySpecifier](avcontentkey/contentkeyspecifier.md)
   The content key’s unique identifier.
 ### Inspecting protection status

@@ -10,7 +10,7 @@ The name of this `AudioFileResource`.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -19,6 +19,13 @@ The name of this `AudioFileResource`.
 @MainActor
 @preconcurrency final let name: String
 ```
+
+## See Also
+
+- [let configuration: AudioFileResource.Configuration](audiofileresource/configuration-swift.property.md)
+  The configuration of this `AudioFileResource`.
+- [var duration: Duration](audiofileresource/duration.md)
+  The duration of this `AudioFileResource`.
 
 
 ---

@@ -107,6 +107,10 @@ Accessories provide one or more services, represented by instances of [`HMServic
   A network browser you can use to discover new accessories in a home.
 ### Instance Properties
 - [var matterNodeID: UInt64?](hmaccessory/matternodeid-67v1j.md)
+- [var bridgedAccessories: [HMAccessory]](hmaccessory/bridgedaccessories.md)
+- [var hapInstanceID: UInt64?](hmaccessory/hapinstanceid-3cusx.md)
+- [var home: HMHome?](hmaccessory/home.md)
+- [var isVendorAccessory: Bool](hmaccessory/isvendoraccessory.md)
 ### Initializers
 - [init()](hmaccessory/init.md)
 

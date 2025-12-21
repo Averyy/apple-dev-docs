@@ -22,7 +22,7 @@ static var prefersNonBlinkingTextInsertionIndicator: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the system setting for Prefer Non-Blinking Cursor is on; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This preference is relevant for apps that draw custom insertion indicators.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the system setting for Prefer Non-Blinking Cursor is on; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). This preference is relevant for apps that draw custom insertion indicators.
 
 ## See Also
 

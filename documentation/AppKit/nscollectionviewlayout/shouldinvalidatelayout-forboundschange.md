@@ -17,13 +17,13 @@ func shouldInvalidateLayout(forBoundsChange newBounds: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a layout should be invalidated or [`false`](https://developer.apple.com/documentation/swift/false) if the layout is still valid.
+[`true`](https://developer.apple.com/documentation/Swift/true) if a layout should be invalidated or [`false`](https://developer.apple.com/documentation/Swift/false) if the layout is still valid.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). You can override this method in your custom layout classes and return a different value as needed. Your implementation of the method should determine if the new bounds would cause changes to the layout of other portions of the collection view.
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). You can override this method in your custom layout classes and return a different value as needed. Your implementation of the method should determine if the new bounds would cause changes to the layout of other portions of the collection view.
 
-If you return [`true`](https://developer.apple.com/documentation/swift/true) from this method, the collection view invalidates the layout using the [`invalidateLayout(with:)`](nscollectionviewlayout/invalidatelayout(with:).md) method. The invalidation context passed to that method is created using the [`invalidationContext(forBoundsChange:)`](nscollectionviewlayout/invalidationcontext(forboundschange:).md) method.
+If you return [`true`](https://developer.apple.com/documentation/Swift/true) from this method, the collection view invalidates the layout using the [`invalidateLayout(with:)`](nscollectionviewlayout/invalidatelayout(with:).md) method. The invalidation context passed to that method is created using the [`invalidationContext(forBoundsChange:)`](nscollectionviewlayout/invalidationcontext(forboundschange:).md) method.
 
 ## Parameters
 

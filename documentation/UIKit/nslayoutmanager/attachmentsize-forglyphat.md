@@ -30,7 +30,7 @@ The layout manager calls this method for glyphs representing attachments, and re
 
 - [func setAttachmentSize(CGSize, forGlyphRange: NSRange)](nslayoutmanager/setattachmentsize(_:forglyphrange:).md)
   Sets the size to use when drawing a glyph that represents an attachment.
-- [var defaultAttachmentScaling: NSImageScaling { get set }](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
+- [var defaultAttachmentScaling: NSImageScaling](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
 - [func drawsOutsideLineFragment(forGlyphAt: Int) -> Bool](nslayoutmanager/drawsoutsidelinefragment(forglyphat:).md)
   Indicates whether the glyph draws outside its line fragment rectangle.

@@ -26,7 +26,7 @@ This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for var
 
 ## Topics
 
-### Loading Properties
+### Loading properties
 - [AVAsset](avasset-async-properties.md)
   Asynchronous properties for assets.
 - [AVAssetTrack](avassettrack-async-properties.md)
@@ -47,10 +47,9 @@ This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for var
   Asynchronous properties for mutable movies.
 - [AVFragmentedMovie](avfragmentedmovie-async-properties.md)
   Asynchronous properties for fragmented movies.
-### Describing a Property
+### Describing a property
 - [var description: String](avpartialasyncproperty/description.md)
   A description of the object.
-### Type Properties
 - [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
   The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 

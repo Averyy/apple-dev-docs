@@ -22,28 +22,14 @@ struct SchedulerTimeType
 
 ## Topics
 
-### Declaring a Scheduler Timekeeping System
+### Declaring a scheduler timekeeping system
 - [ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride.md)
   The increment by which the immediate scheduler counts time.
-### Calculating Time Offsets
+### Calculating time offsets
 - [func advanced(by: ImmediateScheduler.SchedulerTimeType.Stride) -> ImmediateScheduler.SchedulerTimeType](immediatescheduler/schedulertimetype/advanced(by:).md)
   Advances the time by the specified amount; this is meaningless in the context of an immediate scheduler.
 - [func distance(to: ImmediateScheduler.SchedulerTimeType) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/distance(to:).md)
   Returns the distance to another immediate scheduler time; this distance is always `0` in the context of an immediate scheduler.
-### Comparing Scheduler Times
-- [static func != (Self, Self) -> Bool](immediatescheduler/schedulertimetype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func ... (Self) -> PartialRangeFrom<Self>](immediatescheduler/schedulertimetype/'...(_:)-6wy1j.md)
-  Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](immediatescheduler/schedulertimetype/'...(_:)-5ai2g.md)
-  Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](immediatescheduler/schedulertimetype/'...(_:_:).md)
-  Returns a closed range that contains both of its bounds.
-- [static func == (Self, Self) -> Bool](immediatescheduler/schedulertimetype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Comparable Implementations](immediatescheduler/schedulertimetype/comparable-implementations.md)
-- [Equatable Implementations](immediatescheduler/schedulertimetype/equatable-implementations.md)
 
 ## Relationships
 

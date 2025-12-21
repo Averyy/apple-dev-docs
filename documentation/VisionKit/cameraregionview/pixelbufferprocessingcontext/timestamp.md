@@ -3,16 +3,21 @@
 **Framework**: VisionKit  
 **Kind**: property
 
-The timestamp of this update.
+The timestamp of the update.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 let timestamp: TimeInterval
 ```
+
+## See Also
+
+- [let pixelBuffer: CVReadOnlyPixelBuffer](cameraregionview/pixelbufferprocessingcontext/pixelbuffer.md)
+  The pixel buffer of the passthrough frame.
 
 
 ---

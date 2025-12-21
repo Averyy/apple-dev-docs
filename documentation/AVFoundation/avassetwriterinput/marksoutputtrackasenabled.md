@@ -21,7 +21,7 @@ var marksOutputTrackAsEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If the format you’re writing supports disabling tracks, you can disable a track by setting this value to [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If the format you’re writing supports disabling tracks, you can disable a track by setting this value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 You can’t set this value after writing starts.
 

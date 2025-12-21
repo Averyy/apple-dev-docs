@@ -194,7 +194,7 @@ Example response:
 
 In the response, navigate to the `data.attributes.url`, which refers to an installable app in an encrypted form for the particular class of supported devices that Apple assigns this variant. The example `data.attributes.url` downloads the variant named `pre-thinned11331259484252926706.thinned.signed.dpkg.ipa`.
 
-> **Note**: Although an app that resides on App Store Connect might contain binaries for multiple platforms, the alternative distribution package sent to the marketplace only contains variants for the platforms that MarketplaceKit supports. For example, a specific alternative distribution package that a marketplace receives contains only iPhone or iPad variants; it doesn’t contain watch variants.
+> **Note**: Although an app that resides on App Store Connect might contain binaries for multiple platforms, the alternative distribution package sent to the marketplace only contains variants for the platforms that MarketplaceKit supports in the target region (see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md) for the device-support specifics). For example, a specific alternative distribution package contains variants for each supported device; it doesn’t contain watch variants.
 
 The `alternativeDistributionKeyBlob` () has a unique value for each variant. The [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) requires the key blob during licensing requests. Store the key blob so your licensing service can use it to decrypt the license request payload coming from a device as required to generate an app license for the variant.
 

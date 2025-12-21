@@ -19,7 +19,7 @@ let GLKTextureLoaderOriginBottomLeft: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/swift/false), the image data is not flipped. If [`true`](https://developer.apple.com/documentation/swift/true), the image data is flipped before being loaded. If the key is not specified, the default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/Swift/false), the image data is not flipped. If [`true`](https://developer.apple.com/documentation/Swift/true), the image data is flipped before being loaded. If the key is not specified, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

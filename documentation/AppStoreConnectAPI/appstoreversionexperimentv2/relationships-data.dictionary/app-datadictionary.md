@@ -16,6 +16,7 @@ object AppStoreVersionExperimentV2.Relationships.App
 
 ### Objects
 - [object AppStoreVersionExperimentV2.Relationships.App.Data](appstoreversionexperimentv2/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app store version experiment v2.
 
 ## See Also
 

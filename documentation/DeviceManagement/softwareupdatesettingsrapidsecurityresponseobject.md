@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The object that configures rapid security update settings.
+The object that configures Background Security Improvement settings.
 
 **Availability**:
 - iOS 18.0+

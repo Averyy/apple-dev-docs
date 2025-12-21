@@ -14,9 +14,23 @@ The request body you use to register merchants.
 object RegisterMerchantRequest
 ```
 
+#### Discussion
+
+The following example shows the structure of a JSON object with information on how to register merchant requests.
+
+```json
+{
+    "domainNames" : ["subdomain-1.example.com", "subdomain-2.example.com"],
+    "partnerMerchantName" : "Example Merchant",
+    "partnerInternalMerchantIdentifier": "ABC-123456",
+    "encryptTo" : "platformintegrator.com.example",
+    "merchantUrl": "https://example.com"
+}
+```
+
 ## See Also
 
-- [Preparing Merchant Domains for Verification](preparing-merchant-domains-for-verification.md)
+- [Preparing merchant domains for verification](preparing-merchant-domains-for-verification.md)
   Host a domain verification file on each domain before requesting registration.
 - [Register Merchant](register-merchant.md)
   Register a merchant and its corresponding set of fully qualified domains.

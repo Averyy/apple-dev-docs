@@ -19,7 +19,7 @@ If you build your app with SwiftUI, see [`Accessibility modifiers`](https://deve
 ## Topics
 
 ### Essentials
-- [Integrating accessibility into your app](../Accessibility/integrating_accessibility_into_your_app.md)
+- [Integrating accessibility into your app](../Accessibility/integrating-accessibility-into-your-app.md)
   Make your app more accessible to users with disabilities by adding accessibility features.
 - [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.

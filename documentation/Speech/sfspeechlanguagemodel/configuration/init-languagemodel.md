@@ -22,6 +22,8 @@ init(languageModel: URL)
 
 - [init(languageModel: URL, vocabulary: URL?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).md)
   Creates a configuration with the locations of language model and vocabulary files.
+- [init(languageModel: URL, vocabulary: URL?, weight: NSNumber?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:weight:).md)
+  Creates a configuration with the locations of language model and vocabulary files, and custom weight.
 
 
 ---

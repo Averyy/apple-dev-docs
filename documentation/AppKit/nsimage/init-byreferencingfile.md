@@ -26,7 +26,7 @@ The `filename` parameter should include the file extension that identifies the t
 
 Because this method doesn’t actually create image representations for the image data, your app should do error checking before attempting to use the image; one way to do so is by accessing the [`isValid`](nsimage/isvalid.md) property to check whether the image can be drawn.
 
-This method invokes [`setDataRetained:`](nsimage/setdataretained:.md) with an argument of [`true`](https://developer.apple.com/documentation/swift/true), thus enabling it to hold onto its filename. When archiving an image created with this method, only the image’s filename is written to the archive.
+This method invokes [`setDataRetained:`](nsimage/setdataretained:.md) with an argument of [`true`](https://developer.apple.com/documentation/Swift/true), thus enabling it to hold onto its filename. When archiving an image created with this method, only the image’s filename is written to the archive.
 
 If the cached version of the image uses less memory than the original image data, AppKit deletes the original data and uses the cached image. (This can occur for images whose resolution is greater than 72 dpi.) If you resize the image by less than 50%, AppKit loads the data in again from the file. If you expect to delete the file or change its contents, use [`init(contentsOfFile:)`](nsimage/init(contentsoffile:).md) instead.
 

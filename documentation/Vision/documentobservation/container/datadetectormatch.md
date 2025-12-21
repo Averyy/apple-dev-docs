@@ -6,12 +6,11 @@
 Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,8 +20,9 @@ struct DataDetectorMatch
 
 ## Topics
 
-### Instance Properties
+### Getting the detected data
 - [var match: DataDetector.Match](documentobservation/container/datadetectormatch/match.md)
+  The details of the data detected.
 
 ## Relationships
 

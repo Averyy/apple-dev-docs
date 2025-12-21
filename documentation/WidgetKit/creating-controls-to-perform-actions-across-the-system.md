@@ -155,7 +155,7 @@ enum LaunchAppEnum: String, AppEnum {
 
 ##### Add Controls to Your Widget Bundle
 
-The [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines the order that the controls gallery and widgets gallery will display them in.
+The [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines their order in the controls gallery and the widgets gallery.
 
 ```swift
 @main
@@ -172,12 +172,18 @@ struct MyControlsAndWidgetsBundle: WidgetBundle {
 
 - [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
   Customize the way controls display across the system and offer people the ability to configure them.
-- [struct ControlWidgetToggle](controlwidgettoggle.md)
-  A control template representing a toggle.
+- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+  The description of a control that has no user-configurable options.
+- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+  The description of a control that uses a custom app intent to provide user-configurable options.
 - [class ControlCenter](controlcenter.md)
-  An object that contains a list of user-configured controls and is used for reloading controls.
+  An object you use to access configuration information for controls and reload them.
+- [struct ControlInfo](controlinfo.md)
+  A structure that contains information about user-configured controls.
 - [struct ControlWidgetButton](controlwidgetbutton.md)
   A control template representing a button.
+- [struct ControlWidgetToggle](controlwidgettoggle.md)
+  A control template representing a toggle.
 
 
 ---

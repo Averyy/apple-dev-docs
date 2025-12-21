@@ -13,7 +13,6 @@ Positions this view within an invisible frame.
 - tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

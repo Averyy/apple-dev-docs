@@ -21,14 +21,14 @@ struct MTLOrigin
 
 ## Topics
 
-### Creating Origin Points
+### Creating origin points
 - [init()](mtlorigin/init.md)
   Initializes a new origin.
 - [init(x: Int, y: Int, z: Int)](mtlorigin/init(x:y:z:).md)
   Initializes a new origin with the specified coordinates.
 - [func MTLOriginMake(Int, Int, Int) -> MTLOrigin](mtloriginmake(_:_:_:).md)
   Returns a new origin with the specified coordinates.
-### Getting and Setting Coordinate Values
+### Getting and setting coordinate values
 - [var x: Int](mtlorigin/x.md)
   The x coordinate of the origin.
 - [var y: Int](mtlorigin/y.md)
@@ -47,9 +47,9 @@ struct MTLOrigin
 - [protocol MTLIndirectComputeCommand](mtlindirectcomputecommand.md)
   A compute command in an indirect command buffer.
 - [struct MTLRegion](mtlregion.md)
-  The bounds for a subset of an object’s elements.
+  The bounds for a subset of an instance’s elements.
 - [struct MTLSize](mtlsize.md)
-  The dimensions of an object.
+  A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
 - [struct MTLStageInRegionIndirectArguments](mtlstageinregionindirectarguments.md)
   The data layout required for the arguments needed to specify the stage-in region.
 - [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)

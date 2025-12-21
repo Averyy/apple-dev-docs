@@ -21,11 +21,11 @@ case error
 
 ## Mentions
 
-- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
+- [Preparing your Metal app to run in the background](preparing-your-metal-app-to-run-in-the-background.md)
 
 #### Discussion
 
-See the [`MTLCommandBuffer`](mtlcommandbuffer.md) protocol’s [`status`](mtlcommandbuffer/status.md) property for more information. When a command buffer’s status is equal to [`MTLCommandBufferStatus.error`](mtlcommandbufferstatus/error.md), check its [`error`](mtlcommandbuffer/error.md) property for more details about the issue. See [`Command Buffer Debugging`](command-buffer-debugging.md) for more methods properties that can help you identify the issue.
+See the [`MTLCommandBuffer`](mtlcommandbuffer.md) protocol’s [`status`](mtlcommandbuffer/status.md) property for more information. When a command buffer’s status is equal to [`MTLCommandBufferStatus.error`](mtlcommandbufferstatus/error.md), check its [`error`](mtlcommandbuffer/error.md) property for more details about the issue. See [`Command buffer debugging`](command-buffer-debugging.md) for more methods properties that can help you identify the issue.
 
 ## See Also
 

@@ -5,8 +5,8 @@
 Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- macOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

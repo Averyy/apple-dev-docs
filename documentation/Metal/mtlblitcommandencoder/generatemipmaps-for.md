@@ -22,7 +22,7 @@ func generateMipmaps(for texture: any MTLTexture)
 
 ## Mentions
 
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
 
 #### Discussion
 

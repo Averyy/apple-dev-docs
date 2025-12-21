@@ -21,7 +21,7 @@ var endOfEncoderSampleIndex: Int { get set }
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
@@ -34,7 +34,7 @@ You can tell the GPU to skip sampling at the end of the compute pass by assignin
 ## See Also
 
 - [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlcomputepasssamplebufferattachmentdescriptor/samplebuffer.md)
-  A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
+  A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
 - [var startOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a compute pass.
 

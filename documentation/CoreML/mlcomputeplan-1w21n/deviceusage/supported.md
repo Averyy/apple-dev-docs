@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The compute devices that can execute the layer/operation.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,6 +23,7 @@ let supported: [MLComputeDevice]
 ## See Also
 
 - [let preferred: MLComputeDevice](mlcomputeplan-1w21n/deviceusage/preferred.md)
+  The compute device that the framework prefers to execute the layer/operation.
 
 
 ---

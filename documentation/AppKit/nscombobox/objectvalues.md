@@ -17,7 +17,7 @@ var objectValues: [Any] { get }
 
 #### Discussion
 
-The array contains the objects you added or inserted into the combo box, so the type of each object can vary. Accessing this property logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+The array contains the objects you added or inserted into the combo box, so the type of each object can vary. Accessing this property logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

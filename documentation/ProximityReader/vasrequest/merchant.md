@@ -38,14 +38,11 @@ Create `Merchant` objects to identify merchants whose loyalty programs you suppo
 - [let shouldSendURLOnly: Bool](vasrequest/merchant/shouldsendurlonly.md)
   A Boolean value that indicates whether to send only the merchant URL to the customer’s device without requesting data.
 ### Getting the merchant ID
-- [let id: String](vasrequest/merchant/id-swift.property.md)
+- [let id: String](vasrequest/merchant/id.md)
   A unique identifier for the merchant.
 ### Initializers
 - [init(id: String, url: URL?, localizedName: String?)](vasrequest/merchant/init(id:url:localizedname:).md)
   Creates a new merchant object with the specified information.
-### Type Aliases
-- [VASRequest.Merchant.ID](vasrequest/merchant/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

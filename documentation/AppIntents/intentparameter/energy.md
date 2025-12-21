@@ -20,24 +20,12 @@ enum Energy
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Energy, IntentParameter<Value>.Energy) -> Bool](intentparameter/energy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Energy.calories](intentparameter/energy/calories.md)
 - [IntentParameter.Energy.joules](intentparameter/energy/joules.md)
 - [IntentParameter.Energy.kilocalories](intentparameter/energy/kilocalories.md)
 - [IntentParameter.Energy.kilojoules](intentparameter/energy/kilojoules.md)
 - [IntentParameter.Energy.kilowattHours](intentparameter/energy/kilowatthours.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/energy/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/energy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/energy/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/energy/equatable-implementations.md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 The input element that triggered the interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

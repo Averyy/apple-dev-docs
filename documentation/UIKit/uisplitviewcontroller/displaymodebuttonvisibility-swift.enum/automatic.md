@@ -20,7 +20,7 @@ case automatic
 
 #### Discussion
 
-With this behavior, setting [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) to [`false`](https://developer.apple.com/documentation/swift/false) hides the display mode button. This behavior is the default.
+With this behavior, setting [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) to [`false`](https://developer.apple.com/documentation/Swift/false) hides the display mode button. This behavior is the default.
 
 ## See Also
 

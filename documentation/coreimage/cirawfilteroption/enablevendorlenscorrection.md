@@ -21,7 +21,7 @@ static let enableVendorLensCorrection: CIRAWFilterOption
 
 #### Discussion
 
-The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. If this value is [`true`](https://developer.apple.com/documentation/swift/true), or if this option is not specified but the image contains metadata for lens distortion parameters, Core Image corrects for lens distortion.
+The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. If this value is [`true`](https://developer.apple.com/documentation/Swift/true), or if this option is not specified but the image contains metadata for lens distortion parameters, Core Image corrects for lens distortion.
 
 ## See Also
 

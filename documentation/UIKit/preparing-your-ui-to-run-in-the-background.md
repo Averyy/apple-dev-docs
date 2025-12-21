@@ -54,7 +54,7 @@ During a background transition, perform as many of the following tasks as makes 
 - Dismiss alerts and other temporary interfaces.
 - Close connections to any shared system databases.
 - Unregister from Bonjour services and close any listening sockets associated with them.
-- Ensure that all Metal command buffers have been scheduled. For more information, see [`Preparing Your Metal App to Run in the Background`](https://developer.apple.com/documentation/Metal/preparing-your-metal-app-to-run-in-the-background).
+- Ensure that all Metal command buffers have been scheduled. For more information, see [`Preparing your Metal app to run in the background`](https://developer.apple.com/documentation/Metal/preparing-your-metal-app-to-run-in-the-background).
 - Ensure that all OpenGL commands you previously submitted have finished.
 
 You don’t need to discard named images that you loaded from your app’s asset catalog. Similarly, you don’t need to release objects that adopt the [`NSDiscardableContent`](https://developer.apple.com/documentation/Foundation/NSDiscardableContent) protocol or that you manage using an [`NSCache`](https://developer.apple.com/documentation/Foundation/NSCache) object. The system automatically handles the cleanup of those objects.

@@ -25,7 +25,7 @@ var insetsLayoutMarginsFromSafeArea: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), any margins that are outside the safe area are automatically modified to fall within the safe area boundary. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Changing the value to [`false`](https://developer.apple.com/documentation/swift/false) allows your margins to remain at their original locations, even when they are outside the safe area.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), any margins that are outside the safe area are automatically modified to fall within the safe area boundary. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). Changing the value to [`false`](https://developer.apple.com/documentation/Swift/false) allows your margins to remain at their original locations, even when they are outside the safe area.
 
 ## See Also
 

@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The size, in bytes, of the backing `AudioChannelLayout`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

@@ -22,7 +22,7 @@ func setActiveDatasetRequestWith(_ params: MTRThreadBorderRouterManagementCluste
 
 #### Discussion
 
-Command to set or update the active Dataset of the Thread network to which the Border Router is connected.
+This command SHALL be used to set the active Dataset of the Thread network to which the Border Router is connected, when there is no active dataset already.
 
 
 ---

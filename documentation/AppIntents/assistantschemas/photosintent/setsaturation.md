@@ -25,7 +25,7 @@ var setSaturation: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.photos.setSaturation` schema:
 
 ```swift
-@AssistantIntent(schema: .photos.setSaturation)
+@AppIntent(schema: .photos.setSaturation)
 struct SetMediaSaturationIntent: AppIntent {
     @Parameter
     var target: PhotoEntity

@@ -21,7 +21,7 @@ static let allowDraftMode: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a Boolean value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.  It’s best not to use draft mode if the image needs to be drawn without draft mode at a later time, because changing the value from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false) is an expensive operation. If the optional scale factor is smaller than a certain value, additionally setting draft mode can improve image decoding speed without any perceivable loss of quality. However, turning on draft mode does not have any effect if the scale factor is not below this threshold.
+The associated value is a Boolean value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.  It’s best not to use draft mode if the image needs to be drawn without draft mode at a later time, because changing the value from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false) is an expensive operation. If the optional scale factor is smaller than a certain value, additionally setting draft mode can improve image decoding speed without any perceivable loss of quality. However, turning on draft mode does not have any effect if the scale factor is not below this threshold.
 
 ## See Also
 

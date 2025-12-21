@@ -16,7 +16,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-If you created the image with an existing image file, but the corresponding image data is not yet loaded into memory, this method loads the data and expands it as needed. If the receiver contains no image representations and no associated image file, this method creates a valid cached image representation and initializes it to the default bit depth. If the file or URL from which the image was initialized is nonexistent, or the data in an existing file is invalid, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+If you created the image with an existing image file, but the corresponding image data is not yet loaded into memory, this method loads the data and expands it as needed. If the receiver contains no image representations and no associated image file, this method creates a valid cached image representation and initializes it to the default bit depth. If the file or URL from which the image was initialized is nonexistent, or the data in an existing file is invalid, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

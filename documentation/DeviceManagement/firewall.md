@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the firewall.
+The payload that configures the firewall.
 
 **Availability**:
 - macOS 10.12+
@@ -88,23 +88,23 @@ If more than one profile contains this payload, the system uses the most restric
 ## See Also
 
 - [object Cellular](cellular.md)
-  The payload you use to configure cellular settings.
+  The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
-  The payload to provide device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
+  The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
 - [object ContentCaching](contentcaching.md)
-  The payload you use to configure the content-caching service.
+  The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
-  The payload you use to configure encrypted DNS settings.
+  The payload that configures encrypted DNS settings.
 - [object Domains](domains.md)
-  The payload you use to configure the domains under an organization’s management.
+  The payload that configures the domains under an organization’s management.
 - [object NetworkUsageRules](networkusagerules.md)
-  The payload you use to configure network-usage rules.
+  The payload that configures network-usage rules.
 - [object Relay](relay.md)
-  The payload you use to configure relay settings.
+  The payload that configures relay settings.
 - [object WiFi](wifi.md)
-  The payload you use to configure Wi-Fi settings.
+  The payload that configures Wi-Fi settings.
 - [object WiFiManagedSettings](wifimanagedsettings.md)
-  The payload you use to configure managed Wi-Fi settings.
+  The payload that configures managed Wi-Fi settings.
 
 
 ---

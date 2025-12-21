@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is applied topically in a form that wasn’t specified.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

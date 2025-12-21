@@ -1,4 +1,4 @@
-# Encoder Bit Rate Strategy Values
+# Encoder bit rate strategy values
 
 **Framework**: AVFoundation
 
@@ -22,7 +22,7 @@ You use these values with [`AVEncoderBitRateStrategyKey`](https://developer.appl
 
 ## See Also
 
-- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32 { get }](../AVFAudio/AVAUDIOENGINE_HAVE_AUAUDIOUNIT.md)
+- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](../AVFAudio/AVAUDIOENGINE_HAVE_AUAUDIOUNIT.md)
 
 
 ---

@@ -22,9 +22,9 @@ static let createNormalsIfAbsent: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-To participate in lighting and shading, a geometry must include surface normal vectors in its vertex data. Some scene files may not contain such data. If you set this option’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit applies heuristics to generate surface normal data for each geometry it loads from the scene source if such data is absent.
+To participate in lighting and shading, a geometry must include surface normal vectors in its vertex data. Some scene files may not contain such data. If you set this option’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit applies heuristics to generate surface normal data for each geometry it loads from the scene source if such data is absent.
 
 ## See Also
 

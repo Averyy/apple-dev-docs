@@ -23,8 +23,6 @@ var drawable: any CAMetalDrawable { get }
 
 - [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
   A deadline that indicates when your app needs to finish rendering to the drawable.
-- [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
-  A deadline that indicates when your app needs to finish rendering to the drawable.
 
 
 ---

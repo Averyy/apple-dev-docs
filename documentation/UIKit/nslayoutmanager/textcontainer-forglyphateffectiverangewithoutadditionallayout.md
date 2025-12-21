@@ -48,7 +48,7 @@ Overriding this method is not recommended. Any changes to the returned glyph ran
   Associates a text container with the specified range of glyphs.
 - [func textContainerChangedGeometry(NSTextContainer)](nslayoutmanager/textcontainerchangedgeometry(_:).md)
   Invalidates the layout information, and possibly glyphs, for the specified text container and all subsequent text container objects.
-- [func textContainerChangedTextView(_ container: NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
+- [func textContainerChangedTextView(NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
   Updates the information necessary to manage text view objects for the specified text container.
 - [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:).md)
   Returns the text container that manages the layout for the specified glyph, causing layout to happen as necessary.

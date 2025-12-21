@@ -20,7 +20,7 @@ var showsIndicator: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the menu toolbar item shows an indicator that additional functionality is available.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the menu toolbar item shows an indicator that additional functionality is available.
 
 ## See Also
 

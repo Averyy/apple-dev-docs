@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Creates an object that represents a shader function in the library.
+Creates an instance that represents a shader function in the library.
 
 **Availability**:
 - iOS 8.0+
@@ -22,13 +22,13 @@ func makeFunction(name functionName: String) -> (any MTLFunction)?
 
 #### Return Value
 
-A [`MTLFunction`](mtlfunction.md), or `nil` if the named function isn’t found in the library.
+An [`MTLFunction`](mtlfunction.md), or `nil` if the named function isn’t found in the library.
 
 #### Discussion
 
-If you call this method to retrieve a function that doesn’t use function constants, it returns a [`MTLFunction`](mtlfunction.md) object that you can use to build a render or compute pipeline.
+If you call this method to retrieve a function that doesn’t use function constants, it returns an [`MTLFunction`](mtlfunction.md) instance that you can use to build a render or compute pipeline.
 
-If you call this method to retrieve a function that uses function constants to specialize its behavior, you can only use the returned object to query the `functionConstants` property for the list of function constants. You can’t use to create a render or compute pipeline. To get a specialized object that you can use to create a pipeline object, call the [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md) method or [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md) to generate a specialized function.
+If you call this method to retrieve a function that uses function constants to specialize its behavior, you can only use the returned instance to query the `functionConstants` property for the list of function constants. You can’t use to create a render or compute pipeline. To get a specialized instance that you can use to create a pipeline instance, call the [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md) method or [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md) to generate a specialized function.
 
 ## Parameters
 

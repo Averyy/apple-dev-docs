@@ -37,14 +37,14 @@ enum MTLTextureCompressionType
 
 ## See Also
 
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
 - [protocol MTLTexture](mtltexture.md)
   A resource that holds formatted image data.
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
-  An object that you use to configure new Metal texture objects.
+  An instance that you use to configure new Metal texture instances.
 - [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)

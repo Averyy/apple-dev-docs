@@ -21,9 +21,9 @@ var supportsAlternateIcons: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) only when the system allows you to change the icon of your app. To declare your app’s alternate icons, include them in the [`CFBundleIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons) key of your app’s `Info.plist` file.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) only when the system allows you to change the icon of your app. To declare your app’s alternate icons, include them in the [`CFBundleIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons) key of your app’s `Info.plist` file.
 
-The value of this property is always [`false`](https://developer.apple.com/documentation/swift/false) for apps built using the visionOS SDK.
+The value of this property is always [`false`](https://developer.apple.com/documentation/Swift/false) for apps built using the visionOS SDK.
 
 ## See Also
 

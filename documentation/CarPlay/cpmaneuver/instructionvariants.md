@@ -22,13 +22,6 @@ Localize each variant for display to the user, and make sure the array contains 
 
 > **Note**:  If you provide both [`instructionVariants`](cpmaneuver/instructionvariants.md) and [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array.
 
-## See Also
-
-- [var dashboardInstructionVariants: [String]](cpmaneuver/dashboardinstructionvariants.md)
-  An array of instruction variants for the CarPlay dashboard.
-- [var notificationInstructionVariants: [String]](cpmaneuver/notificationinstructionvariants.md)
-  An array of instruction variants for notification banners.
-
 
 ---
 

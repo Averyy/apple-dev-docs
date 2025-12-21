@@ -16,7 +16,7 @@ To test introductory offers:
 
 Introductory offers are only offered once, but when testing your app, you can reset the status of the test account to allow you to redeem an introductory offer more than once. To reset offer eligibility for the sandbox account:
 
-1. On the test iOS device, open Settings > Apple ID > Media & Purchases (or iTunes & App Store for iOS 13 and earlier). Under the Sandbox Account section, tap your highlighted Sandbox Apple ID then tap Manage to open the sandbox Subscription Management page.
+1. On the test iOS device, open Settings > Apple Account > Media & Purchases (or iTunes & App Store for iOS 13 and earlier). Under the Sandbox Account section, tap your highlighted Sandbox Apple Account then tap Manage to open the sandbox Subscription Management page.
 2. Tap the expired subscription you want to reactivate. The subscription products that appear are those you configured in App Store Connect under the same subscription group.
 3. If the test account used an introductory offer, then the system diplays a Reset Eligibility button that lets you reset and redeem another introductory offer.
 

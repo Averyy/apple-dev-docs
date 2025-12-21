@@ -6,7 +6,7 @@ Asynchronous properties for URL assets.
 
 ## Topics
 
-### Loading Tracks and Variants
+### Loading tracks and variants
 - [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](avpartialasyncproperty/tracks-44ptx.md)
   The tracks an asset contains.
 - [static var variants: AVAsyncProperty<Root, [AVAssetVariant]>](avpartialasyncproperty/variants.md)

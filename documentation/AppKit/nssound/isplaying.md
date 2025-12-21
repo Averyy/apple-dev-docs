@@ -16,7 +16,7 @@ var isPlaying: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the receiver is playing its audio data.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the receiver is playing its audio data.
 
 ## See Also
 

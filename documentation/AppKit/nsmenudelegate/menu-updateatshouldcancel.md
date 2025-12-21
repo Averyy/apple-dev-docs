@@ -17,7 +17,7 @@ optional func menu(_ menu: NSMenu, update item: NSMenuItem, at index: Int, shoul
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to continue the process. If you return [`false`](https://developer.apple.com/documentation/swift/false), your [`menu(_:update:at:shouldCancel:)`](nsmenudelegate/menu(_:update:at:shouldcancel:).md) is not called again. In that case, it’s your responsibility to trim any extra items from the menu.
+[`true`](https://developer.apple.com/documentation/Swift/true) to continue the process. If you return [`false`](https://developer.apple.com/documentation/Swift/false), your [`menu(_:update:at:shouldCancel:)`](nsmenudelegate/menu(_:update:at:shouldcancel:).md) is not called again. In that case, it’s your responsibility to trim any extra items from the menu.
 
 #### Discussion
 

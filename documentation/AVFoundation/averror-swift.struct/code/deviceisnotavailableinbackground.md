@@ -29,6 +29,7 @@ case deviceIsNotAvailableInBackground
   The app isn’t authorized to play media.
 - [AVError.Code.applicationIsNotAuthorizedToUseDevice](averror-swift.struct/code/applicationisnotauthorizedtousedevice.md)
   The user denied this app permission to capture media.
+- [AVError.Code.autoWhiteBalanceNotLocked](averror-swift.struct/code/autowhitebalancenotlocked.md)
 - [AVError.Code.compositionTrackSegmentsNotContiguous](averror-swift.struct/code/compositiontracksegmentsnotcontiguous.md)
   The composition can’t add the source media because it contains gaps.
 - [AVError.Code.contentIsNotAuthorized](averror-swift.struct/code/contentisnotauthorized.md)
@@ -47,8 +48,6 @@ case deviceIsNotAvailableInBackground
   The system failed to decode the media.
 - [AVError.Code.decoderNotFound](averror-swift.struct/code/decodernotfound.md)
   The system can’t find a suitable decoder for the media.
-- [AVError.Code.decoderTemporarilyUnavailable](averror-swift.struct/code/decodertemporarilyunavailable.md)
-  A suitable decoder for the media is temporarily available.
 
 
 ---

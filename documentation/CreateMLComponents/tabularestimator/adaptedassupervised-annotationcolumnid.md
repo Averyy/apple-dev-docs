@@ -24,6 +24,7 @@ func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -
 
 - [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](tabularestimator/fitted(to:eventhandler:).md)
   Fits a transformer to a data frame
+- [func fitted(to:)](tabularestimator/fitted(to:).md)
 
 
 ---

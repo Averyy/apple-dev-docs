@@ -25,7 +25,7 @@ var settings: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.books.settings` schema:
 
 ```swift
-@AssistantEntity(schema: .books.settings)
+@AppEntity(schema: .books.settings)
 struct BookSettingsEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [BookSettingsEntity.ID]) async throws -> [BookSettingsEntity] { [] }

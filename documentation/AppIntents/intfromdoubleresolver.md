@@ -24,27 +24,8 @@ struct IntFromDoubleResolver
 
 ### Creating the resolver
 - [init(roundingRule: FloatingPointRoundingRule)](intfromdoubleresolver/init(roundingrule:).md)
-### Resolving the type
-- [func resolve(from: Double, context: IntentParameterContext<Int>) async throws -> Int?](intfromdoubleresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
 ### Getting the rounding rule
 - [var roundingRule: FloatingPointRoundingRule](intfromdoubleresolver/roundingrule.md)
-### Operators
-- [static func == (IntFromDoubleResolver, IntFromDoubleResolver) -> Bool](intfromdoubleresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intfromdoubleresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intfromdoubleresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [IntFromDoubleResolver.Input](intfromdoubleresolver/input.md)
-- [IntFromDoubleResolver.Output](intfromdoubleresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](intfromdoubleresolver/equatable-implementations.md)
-- [RangeCheckingResolver Implementations](intfromdoubleresolver/rangecheckingresolver-implementations.md)
-- [Resolver Implementations](intfromdoubleresolver/resolver-implementations.md)
 
 ## Relationships
 

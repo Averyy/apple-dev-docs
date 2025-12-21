@@ -34,7 +34,7 @@ Some text input views don’t allow custom keyboards:
 - Secure text field entries always show the system keyboard when the user begins entering text in a secure text field, temporarily removing your custom keyboard if it’s active. The system shows your keyboard again when the user begins entering text into a non-secure text field.
 - Text input fields configured with a keyboard type of [`UIKeyboardType.phonePad`](uikeyboardtype/phonepad.md) or [`UIKeyboardType.namePhonePad`](uikeyboardtype/namephonepad.md) show the system keyboard.
 
-An app can disallow the use of third-party keyboards entirely by implementing [`application(_:shouldAllowExtensionPointIdentifier:)`](uiapplicationdelegate/application(_:shouldallowextensionpointidentifier:).md) and returning [`false`](https://developer.apple.com/documentation/swift/false) when called with the `com.apple.keyboard-service` identifier. If an app disallows third-party keyboards, your keyboard won’t be shown in that app.
+An app can disallow the use of third-party keyboards entirely by implementing [`application(_:shouldAllowExtensionPointIdentifier:)`](uiapplicationdelegate/application(_:shouldallowextensionpointidentifier:).md) and returning [`false`](https://developer.apple.com/documentation/Swift/false) when called with the `com.apple.keyboard-service` identifier. If an app disallows third-party keyboards, your keyboard won’t be shown in that app.
 
 ##### Adapt to Different Layouts
 
@@ -78,7 +78,7 @@ To support autocomplete functionality your keyboard has access to [`UILexicon`](
 
 ##### Indicate Dictation Support
 
-If your keyboard provides a way to input text using dictation, set the [`hasDictationKey`](uiinputviewcontroller/hasdictationkey.md) property of your UIInputViewController’s subclass to [`true`](https://developer.apple.com/documentation/swift/true). In some cases, iOS may automatically show a dictation button (for example, on iPhone devices with Face ID). When you set [`hasDictationKey`](uiinputviewcontroller/hasdictationkey.md) to [`true`](https://developer.apple.com/documentation/swift/true), iOS won’t show the system button, because having two buttons to perform dictation would be confusing to users.
+If your keyboard provides a way to input text using dictation, set the [`hasDictationKey`](uiinputviewcontroller/hasdictationkey.md) property of your UIInputViewController’s subclass to [`true`](https://developer.apple.com/documentation/Swift/true). In some cases, iOS may automatically show a dictation button (for example, on iPhone devices with Face ID). When you set [`hasDictationKey`](uiinputviewcontroller/hasdictationkey.md) to [`true`](https://developer.apple.com/documentation/Swift/true), iOS won’t show the system button, because having two buttons to perform dictation would be confusing to users.
 
 ##### Leverage Your Containing App
 

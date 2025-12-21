@@ -22,28 +22,22 @@ struct CombineLatest<A, B> where A : Publisher, B : Publisher, A.Failure == B.Fa
 
 ## Topics
 
-### Creating a Combine Latest Publisher
+### Creating a combine latest publisher
 - [init(_:_:)](publishers/combinelatest/init(_:_:).md)
   Creates a publisher that receives and combines the latest elements from two publishers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.CombineLatest.Output](publishers/combinelatest/output.md)
   The kind of values published by this publisher.
 - [Publishers.CombineLatest.Failure](publishers/combinelatest/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/combinelatest/a.md)
 - [let b: B](publishers/combinelatest/b.md)
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.CombineLatest<A, B>, Publishers.CombineLatest<A, B>) -> Bool](publishers/combinelatest/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/combinelatest/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-combinelatest-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/combinelatest/equatable-implementations.md)
-- [Publisher Implementations](publishers/combinelatest/publisher-implementations.md)
 
 ## Relationships
 

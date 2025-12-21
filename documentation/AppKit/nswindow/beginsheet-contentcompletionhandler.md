@@ -6,7 +6,7 @@
 Presents a SwiftUI View as a sheet on the receiving NSWindow.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

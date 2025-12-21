@@ -28,12 +28,13 @@ In the example below, the stepper increments or decrements the binding value by 
 
 ```swift
 struct StepperView: View {
-    @State private var value = 1
+    @State private var value = 1.0
+    private let step = 5.0
 
     var body: some View {
         Stepper("Stepping by \(step)",
             value: $value,
-            step: 5,
+            step: step,
             format: .number
         )
         .padding(10)

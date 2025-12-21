@@ -6,7 +6,7 @@
 The event that occurs during a manipulation gesture when someone passes an entity from one hand to the other.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

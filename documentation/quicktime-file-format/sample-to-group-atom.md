@@ -1,4 +1,4 @@
-# Sample-to-group atom ('sbpd')
+# Sample-to-group atom ('sbgp')
 
 **Framework**: QuickTime File Format  
 **Kind**: class

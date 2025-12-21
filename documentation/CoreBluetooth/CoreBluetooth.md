@@ -22,6 +22,8 @@ Don’t subclass any of the classes of the Core Bluetooth framework. Overriding 
 
 Core Bluetooth background execution modes aren’t supported in iPad apps running on macOS.
 
+In iOS 26 and later, your app can continue certain activities in the background if the app starts a Live Activity before it goes to the background. If your app has an instantiated [`CBManager`](cbmanager.md) and starts a Live Activity, it can use the same privileges while in the background that it uses when it is in the foreground. This means activities like scanning without providing service UUID’s and scanning with duplicates filter disabled will be allowed while in the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.comhttps://developer.apple.com/documentation/ActivityKit).
+
 > ❗ **Important**:  Your app will crash if its `Info.plist` doesn’t include usage description keys for the types of data it needs to access. To access Core Bluetooth APIs on apps linked on or after iOS 13, include the [`NSBluetoothAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBluetoothAlwaysUsageDescription) key. In iOS 12 and earlier, include [`NSBluetoothPeripheralUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBluetoothPeripheralUsageDescription) to access Bluetooth peripheral data.
 
 ## Topics

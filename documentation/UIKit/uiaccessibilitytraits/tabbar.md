@@ -24,7 +24,7 @@ static let tabBar: UIAccessibilityTraits
 
 Use this trait to characterize an accessibility element that represents an ordered list of tabs.
 
-If an accessibility element has this trait, return [`false`](https://developer.apple.com/documentation/swift/false) for [`isAccessibilityElement`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/isAccessibilityElement).
+If an accessibility element has this trait, return [`false`](https://developer.apple.com/documentation/Swift/false) for [`isAccessibilityElement`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/isAccessibilityElement).
 
 ## See Also
 

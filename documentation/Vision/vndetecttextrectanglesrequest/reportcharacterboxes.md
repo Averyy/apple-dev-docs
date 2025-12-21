@@ -21,7 +21,7 @@ var reportCharacterBoxes: Bool { get set }
 
 #### Discussion
 
-Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to have the detector return character bounding boxes as an array of [`VNRectangleObservation`](vnrectangleobservation.md) objects.
+Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to have the detector return character bounding boxes as an array of [`VNRectangleObservation`](vnrectangleobservation.md) objects.
 
 
 ---

@@ -22,9 +22,6 @@ Each [`CapturedRoom.Surface`](capturedroom/surface.md) instance in a captured ro
 
 ## Topics
 
-### Creating a curve
-- [init(from: any Decoder) throws](capturedroom/surface/curve-swift.struct/init(from:).md)
-  Creates a surface curve by deserializing the specified decoder.
 ### Measuring a curve
 - [var startAngle: Measurement<UnitAngle>](capturedroom/surface/curve-swift.struct/startangle.md)
   An angle that begins the curve.
@@ -32,9 +29,6 @@ Each [`CapturedRoom.Surface`](capturedroom/surface.md) instance in a captured ro
   The angle at the end of the curve.
 - [var radius: Float](capturedroom/surface/curve-swift.struct/radius.md)
   The radius of the curve.
-### Serializing a curve
-- [func encode(to: any Encoder) throws](capturedroom/surface/curve-swift.struct/encode(to:).md)
-  Serializes a surface curve to the specified encoder.
 ### Instance Properties
 - [var center: simd_float2](capturedroom/surface/curve-swift.struct/center.md)
   Center of the curve, in local coordinates. Corresponds to xz center coordinates

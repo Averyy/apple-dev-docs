@@ -1,4 +1,4 @@
 Completed scraping GameSave!
-Total pages scraped: 66
+Total pages scraped: 52
 Pages skipped (unchanged): 1
 Pages failed: 0

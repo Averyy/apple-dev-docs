@@ -16,7 +16,7 @@ case unknown
 
 #### Discussion
 
-When the device’s [`isBatteryMonitoringEnabled`](wkinterfacedevice/isbatterymonitoringenabled.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false), its [`batteryState`](wkinterfacedevice/batterystate.md) property is set to [`WKInterfaceDeviceBatteryState.unknown`](wkinterfacedevicebatterystate/unknown.md).
+When the device’s [`isBatteryMonitoringEnabled`](wkinterfacedevice/isbatterymonitoringenabled.md) property is set to [`false`](https://developer.apple.com/documentation/Swift/false), its [`batteryState`](wkinterfacedevice/batterystate.md) property is set to [`WKInterfaceDeviceBatteryState.unknown`](wkinterfacedevicebatterystate/unknown.md).
 
 ## See Also
 

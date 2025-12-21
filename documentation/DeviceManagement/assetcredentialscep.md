@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A reference to an SCEP identity.
+A reference to a SCEP identity.
 
 **Availability**:
 - iOS 17.0+
@@ -23,13 +23,29 @@ object AssetCredentialSCEP
 
 Specify `com.apple.asset.credential.scep` as the declaration type.
 
+##### Asset Example
+
+```json
+{
+    "Type": "com.apple.asset.credential.scep",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "Reference": {
+            "DataURL": "https://example.com/asset-data/certificates/security_scep.json",
+            "ContentType": "application/json"
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object AssetCredentialSCEPAuthenticationObject](assetcredentialscepauthenticationobject.md)
-  The server authentication details for an SCEP asset credential.
+  The server authentication details for a SCEP asset credential.
 - [object AssetCredentialSCEPReferenceObject](assetcredentialscepreferenceobject.md)
-  The external reference for an SCEP asset credential.
+  The external reference for a SCEP asset credential.
 
 ## See Also
 

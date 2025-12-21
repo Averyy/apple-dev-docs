@@ -6,8 +6,8 @@
 An interface for managing and providing conversation history.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -22,23 +22,35 @@ final class ConversationHistoryManager
 
 ## Topics
 
-### Creating new managers
-- [init()](conversationhistorymanager/init.md)
-  Creates a structure for handling conversation history and recent conversation.
+### Accessing the conversation history
+- [static let sharedInstance: ConversationHistoryManager](conversationhistorymanager/sharedinstance.md)
 ### Managing recent conversations
-- [func addDelegate(delegate: any ConversationHistoryManagerDelegate)](conversationhistorymanager/adddelegate(delegate:).md)
-  Adds a delegate that receives callbacks about changes to the available conversation history.
-- [func fetch(request: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](conversationhistorymanager/fetch(request:).md)
-  Queries the conversation history for conversations that match a given condition.
-- [func markAsRead(recentConversations: [ConversationHistoryManager.RecentConversation]) async throws](conversationhistorymanager/markasread(recentconversations:).md)
+- [func recentConversations(matching: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](conversationhistorymanager/recentconversations(matching:).md)
+  Returns a list of recent conversations that match the given predicate.
+- [func markConversationAsRead(ConversationHistoryManager.RecentConversation) async throws](conversationhistorymanager/markconversationasread(_:).md)
+  Marks a conversation as read.
+- [func markConversationsAsRead([ConversationHistoryManager.RecentConversation]) async throws](conversationhistorymanager/markconversationsasread(_:).md)
   Marks the a list of conversations as read.
 - [ConversationHistoryManager.RecentConversation](conversationhistorymanager/recentconversation.md)
   A structure that describes a recent conversation.
+### Responding to conversation history updates
+- [ConversationHistoryManager.ConversationHistoryDidUpdate](conversationhistorymanager/conversationhistorydidupdate.md)
+  A message you can observe to receive conversation history updates if your app is the default dialer app.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [protocol ConversationHistoryManagerDelegate](conversationhistorymanagerdelegate.md)
-  Methods for receiving updates to the conversation history.
+- [class ConversationManager](conversationmanager.md)
+  An interface for managing and observing VoIP conversations.
+- [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
+  Methods for managing conversations and receiving VoIP conversation updates.
+- [class Conversation](conversation.md)
+  A type that describes a video or audio conversation.
 
 
 ---

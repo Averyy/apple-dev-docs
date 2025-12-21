@@ -22,11 +22,11 @@ func contains(_ anObject: Any) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `anObject` is present in the set, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `anObject` is present in the set, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-Each element of the set is checked for equality with `anObject` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Each element of the set is checked for equality with `anObject` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

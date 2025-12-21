@@ -6,7 +6,7 @@
 The outcome of an attempt to open an immersive space.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

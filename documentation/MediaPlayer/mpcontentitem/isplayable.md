@@ -21,7 +21,7 @@ var isPlayable: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the designated content item is able to be played. Containers and individual content items can set this property to [`true`](https://developer.apple.com/documentation/swift/true). For example, a playlist with multiple songs in it. The playlist is a container that can be played, or the user could choose a song from inside of the playlist.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the designated content item is able to be played. Containers and individual content items can set this property to [`true`](https://developer.apple.com/documentation/Swift/true). For example, a playlist with multiple songs in it. The playlist is a container that can be played, or the user could choose a song from inside of the playlist.
 
 ## See Also
 

@@ -92,7 +92,7 @@ private func parse(_ jsonObjects: [MKGeoJSONObject]) {
 
 ##### Display Overlays on a Map View
 
-The app adds the overlay data objects to the map in a specific order to ensure that certain overlays display on top of others. To specify whether an overlay is above or below content that the map provides, such as roads and labels, the app calls [`addOverlay(_:level:)`](mkmapview/1452635-addoverlay.md) with the `level` parameter as a value that [`MKOverlayLevel`](MKOverlayLevel.md) provides.
+The app adds the overlay data objects to the map in a specific order to ensure that certain overlays display on top of others. To specify whether an overlay is above or below content that the map provides, such as roads and labels, the app calls [`addOverlay(_:level:)`](MKMapView/addOverlay(_:level:).md) with the `level` parameter as a value that [`MKOverlayLevel`](MKOverlayLevel.md) provides.
 
 ```swift
 mapView.addOverlay(reliefTileOverlay, level: .aboveLabels)
@@ -129,7 +129,7 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 
 After the app creates the renderer and returns it from `mapView(_:rendererFor:)`, the map view uses the `boundingMapRect` property on the overlay data object to determine when the returned overlay renderer draws the overlay on the map.
 
-The [`overlays`](mkmapview/1452784-overlays.md) property of [`MKMapView`](MKMapView.md) stores the registered overlays, but the order of the array doesn’t necessarily reflect their visual order on the map. To understand the rendering order of overlays at a specific level, see [`overlays(in:)`](mkmapview/1452757-overlays.md).
+The [`overlays`](MKMapView/overlays.md) property of [`MKMapView`](MKMapView.md) stores the registered overlays, but the order of the array doesn’t necessarily reflect their visual order on the map. To understand the rendering order of overlays at a specific level, see [`overlays(in:)`](MKMapView/overlays(in:).md).
 
 ##### Use the Standard Overlay Objects for Common Shapes
 

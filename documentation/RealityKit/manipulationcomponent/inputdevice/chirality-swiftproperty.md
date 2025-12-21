@@ -6,7 +6,7 @@
 The hand chirality (left or right) of this input device, or `nil` if this input device has no hand chirality.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

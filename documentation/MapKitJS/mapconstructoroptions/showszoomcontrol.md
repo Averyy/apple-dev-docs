@@ -11,7 +11,7 @@ A Boolean value that determines whether to display a control for zooming in and 
 ## Declaration
 
 ```swift
-attribute boolean showsZoomControl;
+showsZoomControl?: boolean;
 ```
 
 #### Discussion

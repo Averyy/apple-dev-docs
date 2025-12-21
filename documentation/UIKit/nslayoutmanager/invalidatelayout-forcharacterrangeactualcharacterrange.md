@@ -20,7 +20,7 @@ func invalidateLayout(forCharacterRange charRange: NSRange, actualCharacterRange
 
 #### Discussion
 
-This method has the same effect as [`invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)) with `flag` set to [`false`](https://developer.apple.com/documentation/swift/false).
+This method has the same effect as [`invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)) with `flag` set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 This method only invalidates information; it performs no glyph generation or layout. You should rarely need to invoke this method.
 

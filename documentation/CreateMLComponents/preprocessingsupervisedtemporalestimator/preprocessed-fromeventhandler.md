@@ -46,8 +46,8 @@ The preprocessed examples.
   The intermediate type.
 - [PreprocessingSupervisedTemporalEstimator.Output](preprocessingsupervisedtemporalestimator/output.md)
   The output type.
-- [PreprocessingSupervisedTemporalEstimator.Transformer](preprocessingsupervisedtemporalestimator/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

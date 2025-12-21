@@ -59,8 +59,8 @@ enum NEProviderStopReason
   The connection failed.
 - [NEProviderStopReason.sleep](neproviderstopreason/sleep.md)
   A stop reason indicating the configuration enabled disconnect on sleep and the device went to sleep.
-### Enumeration Cases
 - [NEProviderStopReason.internalError](neproviderstopreason/internalerror.md)
+  The provider encountered an internal error.
 ### Initializers
 - [init?(rawValue: Int)](neproviderstopreason/init(rawvalue:).md)
 

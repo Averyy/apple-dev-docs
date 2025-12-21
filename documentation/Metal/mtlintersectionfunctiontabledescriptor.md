@@ -21,7 +21,7 @@ class MTLIntersectionFunctionTableDescriptor
 
 ## Topics
 
-### Configuring the Table’s Size
+### Configuring the table’s size
 - [var functionCount: Int](mtlintersectionfunctiontabledescriptor/functioncount.md)
   The number of entries in the intersection function table.
 

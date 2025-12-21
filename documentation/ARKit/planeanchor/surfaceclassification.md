@@ -3,8 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
+Get the surface classification of this plane.
+
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

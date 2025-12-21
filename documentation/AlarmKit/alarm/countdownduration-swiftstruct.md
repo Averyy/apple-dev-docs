@@ -6,9 +6,8 @@
 An object that defines the durations used in an alarm that has a countdown.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -33,17 +32,6 @@ Alarm.CountdownDuration(preAlert: 10, postAlert: 10)
   The duration applied after the alarm has alerted at least once and moves back to the countdown state.
 - [var preAlert: TimeInterval?](alarm/countdownduration-swift.struct/prealert.md)
   The duration applied before the alarm fires.
-### Decoding
-- [init(from: any Decoder) throws](alarm/countdownduration-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (Alarm.CountdownDuration, Alarm.CountdownDuration) -> Bool](alarm/countdownduration-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarm/countdownduration-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](alarm/countdownduration-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
@@ -58,7 +46,7 @@ Alarm.CountdownDuration(preAlert: 10, postAlert: 10)
 
 - [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id-swift.property.md)
+- [var id: UUID](alarm/id.md)
   The unique identifier of the alarm.
 - [Alarm.State](alarm/state-swift.enum.md)
   An enum that lists all possible states of an alarm.

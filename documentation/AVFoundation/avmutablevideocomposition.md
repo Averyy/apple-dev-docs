@@ -27,7 +27,7 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 
 ## Topics
 
-### Creating a Video Composition
+### Creating a video composition
 - [class func videoComposition(withPropertiesOf: AVAsset, completionHandler: (AVMutableVideoComposition?, (any Error)?) -> Void)](avmutablevideocomposition/videocomposition(withpropertiesof:completionhandler:).md)
   Returns a new video composition that’s configured to present the video tracks of the specified asset.
 - [class func videoComposition(withPropertiesOf: AVAsset, prototypeInstruction: AVVideoCompositionInstruction, completionHandler: (AVMutableVideoComposition?, (any Error)?) -> Void)](avmutablevideocomposition/videocomposition(withpropertiesof:prototypeinstruction:completionhandler:).md)
@@ -40,7 +40,7 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   Creates a mutable video composition with the specified asset properties and a prototype video composition instruction.
 - [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](avmutablevideocomposition/init(asset:applyingcifilterswithhandler:).md)
   Creates a mutable video composition configured to apply Core Image filters to each video frame of the specified asset.
-### Configuring Video Composition Properties
+### Configuring video composition properties
 - [var frameDuration: CMTime](avmutablevideocomposition/frameduration.md)
   A time interval for which the video composition should render composed video frames.
 - [var renderSize: CGSize](avmutablevideocomposition/rendersize.md)
@@ -54,19 +54,19 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   The video composition instructions.
 - [protocol AVVideoCompositionInstructionProtocol](avvideocompositioninstructionprotocol.md)
   A protocol that defines the interface for a video composition instruction.
-### Configuring HDR Metadata
+### Configuring HDR metadata
 - [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avmutablevideocomposition/perframehdrdisplaymetadatapolicy.md)
   Configures the policy for display of HDR display metadata on the rendered frame.
 - [AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct.md)
   A type that defines the policy for handling of per frame HDR metadata.
-### Configuring Color
+### Configuring color
 - [var colorPrimaries: String?](avmutablevideocomposition/colorprimaries.md)
   The color primaries used for video composition.
 - [var colorTransferFunction: String?](avmutablevideocomposition/colortransferfunction.md)
   The transfer function used for video composition.
 - [var colorYCbCrMatrix: String?](avmutablevideocomposition/colorycbcrmatrix.md)
   The YCbCr matrix used for video composition.
-### Identifying Source Tracks
+### Identifying source tracks
 - [var sourceTrackIDForFrameTiming: CMPersistentTrackID](avmutablevideocomposition/sourcetrackidforframetiming.md)
   An identifier of the source track from which the video composition derives frame timing.
 - [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](avmutablevideocomposition/sourcesampledatatrackids-7i02t.md)
@@ -74,9 +74,6 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 ### Specifying a custom compositor
 - [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](avmutablevideocomposition/customvideocompositorclass.md)
   The custom compositor class to use.
-### Instance Properties
-- [var outputBufferDescription: [[CMTag]]?](avmutablevideocomposition/outputbufferdescription-90gl7.md)
-  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
 
 ## Relationships
 
@@ -96,7 +93,7 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 
 ## See Also
 
-- [Editing and Playing HDR Video](editing-and-playing-hdr-video.md)
+- [Editing and playing HDR video](editing-and-playing-hdr-video.md)
   Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
 - [Debugging AVFoundation audio mixes, compositions, and video compositions](debugging-avfoundation-audio-mixes-compositions-and-video-compositions.md)
   Resolve common problems when creating compositions, video compositions, and audio mixes.
@@ -104,10 +101,10 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   An object that describes how to compose video frames at particular points in time.
 - [class AVVideoCompositionInstruction](avvideocompositioninstruction-swift.class.md)
   An operation that a compositor performs.
-- [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
-  A mutable video composition instruction subclass.
 - [class AVVideoCompositionLayerInstruction](avvideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition.
+- [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
+  A mutable video composition instruction subclass.
 - [class AVMutableVideoCompositionLayerInstruction](avmutablevideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a mutable composition.
 

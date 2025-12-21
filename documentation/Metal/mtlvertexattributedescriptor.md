@@ -25,14 +25,13 @@ A vertex attribute descriptor provides organization information so a vertex shad
 
 ## Topics
 
-### Organizing the Vertex Attribute
+### Organizing the vertex attribute
 - [var format: MTLVertexFormat](mtlvertexattributedescriptor/format.md)
   The format of the vertex attribute.
 - [var offset: Int](mtlvertexattributedescriptor/offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 - [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
-### Constants
 - [enum MTLVertexFormat](mtlvertexformat.md)
   Values that specify the organization of function vertex data.
 
@@ -52,13 +51,13 @@ A vertex attribute descriptor provides organization information so a vertex shad
 ## See Also
 
 - [class MTLVertexDescriptor](mtlvertexdescriptor.md)
-  An object that describes how to organize and map data to a vertex function.
+  An instance that describes how to organize and map data to a vertex function.
 - [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
-  An array of vertex attribute descriptor objects.
+  An array of vertex attribute descriptor instances.
 - [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
 - [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
-  An array of vertex buffer layout descriptor objects.
+  An array of vertex buffer layout descriptor instances.
 - [let MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
 
 

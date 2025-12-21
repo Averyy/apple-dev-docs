@@ -6,7 +6,7 @@
 The system detects a video comfort violation and triggers the event along with the comfort mitigation action
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

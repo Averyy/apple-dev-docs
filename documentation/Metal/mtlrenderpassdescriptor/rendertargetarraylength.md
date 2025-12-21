@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The number of active layers that all attachments must have for layered rendering.
+The number of active layers that all attachments need to have for layered rendering.
 
 **Availability**:
 - iOS 12.0+
@@ -21,13 +21,13 @@ var renderTargetArrayLength: Int { get set }
 
 ## Mentions
 
-- [Rendering to Multiple Texture Slices in a Draw Command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Discussion
 
 The default value is `0`, indicating that the GPU does not use layered rendering on this render pass.
 
-The table below gives typical values you might set, depending on the type of texture being used as attachments in the render pass. Your vertex shader must select the render target array index between `0` and the array length minus `1`.
+The table below gives typical values you might set, depending on the type of texture being used as attachments in the render pass. Your vertex shader need to select the render target array index between `0` and the array length minus `1`.
 
 | Texture Type | Typical Length |
 | --- | --- |

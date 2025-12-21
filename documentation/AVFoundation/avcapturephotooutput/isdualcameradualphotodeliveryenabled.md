@@ -20,9 +20,9 @@ var isDualCameraDualPhotoDeliveryEnabled: Bool { get set }
 
 Enabling this property (on a supported device) allows the capture output to deliver separate images from both the wide-angle and telephoto cameras in a single capture.
 
-Dual photo delivery requires that a capture session set up its internal rendering pipeline differently. If you intend to capture with dual photo delivery at all, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling the [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md) method. Changing this property while the session is running requires a lengthy reconfiguration of the capture render pipeline: Live Photo captures in progress will end immediately, unfulfilled photo requests will abort, and video preview will temporarily freeze.
+Dual photo delivery requires that a capture session set up its internal rendering pipeline differently. If you intend to capture with dual photo delivery at all, set this property to [`true`](https://developer.apple.com/documentation/Swift/true) before calling the [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md) method. Changing this property while the session is running requires a lengthy reconfiguration of the capture render pipeline: Live Photo captures in progress will end immediately, unfulfilled photo requests will abort, and video preview will temporarily freeze.
 
-You must enable this option before initiating a photo capture with the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) property of your photo settings object set to [`true`](https://developer.apple.com/documentation/swift/true). However, after you’ve enabled this option, you are free to issue photo capture requests both with and without dual photo delivery.
+You must enable this option before initiating a photo capture with the [`isDualCameraDualPhotoDeliveryEnabled`](avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) property of your photo settings object set to [`true`](https://developer.apple.com/documentation/Swift/true). However, after you’ve enabled this option, you are free to issue photo capture requests both with and without dual photo delivery.
 
 ## See Also
 

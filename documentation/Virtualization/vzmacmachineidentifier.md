@@ -20,7 +20,7 @@ This value uniquely identifies a virtual Mac hardware instance. Two VMs running 
 
 When serializing the VM to disk, you can preserve the identifier in a binary representation by serializing the data in the `VZMacMachineIdentifier`.[`dataRepresentation`](vzmachardwaremodel/datarepresentation.md) property. Conversely, you can recreate the identifier with [`init(dataRepresentation:)`](vzmacmachineidentifier/init(datarepresentation:).md) from the binary representation.
 
-You can compare the contents of two identifiers with doc://com.apple.documentation/documentation/objectivec/nsobject/1393823-isequal.
+You can compare the contents of two identifiers with [`isEqual(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/isEqual(to:)).
 
 ## Topics
 

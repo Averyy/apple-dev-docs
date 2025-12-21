@@ -13,6 +13,10 @@ Configure settings on a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+
 #### Discussion
 
 Users may be able to change the settings later if a profile isn’t set to restrict such changes.

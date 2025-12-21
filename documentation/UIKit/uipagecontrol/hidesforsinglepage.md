@@ -21,7 +21,7 @@ var hidesForSinglePage: Bool { get set }
 
 #### Discussion
 
-Assign a value of [`true`](https://developer.apple.com/documentation/swift/true) to hide the page control when there is only one page; assign [`false`](https://developer.apple.com/documentation/swift/false) (the default) to show the page control if there is only one page.
+Assign a value of [`true`](https://developer.apple.com/documentation/Swift/true) to hide the page control when there is only one page; assign [`false`](https://developer.apple.com/documentation/Swift/false) (the default) to show the page control if there is only one page.
 
 ## See Also
 

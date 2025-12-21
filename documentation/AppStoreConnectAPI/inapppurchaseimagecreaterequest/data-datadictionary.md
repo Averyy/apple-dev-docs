@@ -20,7 +20,7 @@ object InAppPurchaseImageCreateRequest.Data
 - [object InAppPurchaseImageCreateRequest.Data.Attributes](inapppurchaseimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription purchase image request resource.
 - [object InAppPurchaseImageCreateRequest.Data.Relationships](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

@@ -32,12 +32,6 @@ The corresponding value is a `double`. Equal to `kCFCalendarUnitSecond`.
   Identifier for the minute unit.
 - [static var nanosecond: NSCalendar.Unit](nscalendar/unit/nanosecond.md)
   Identifier for the nanosecond unit.
-- [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
-  Identifier for the hour unit.
-- [static var minute: NSCalendar.Unit](nscalendar/unit/minute.md)
-  Identifier for the minute unit.
-- [static var nanosecond: NSCalendar.Unit](nscalendar/unit/nanosecond.md)
-  Identifier for the nanosecond unit.
 
 
 ---

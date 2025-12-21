@@ -22,7 +22,7 @@ struct AVSampleCursorAudioDependencyInfo
 
 ## Topics
 
-### Querying Independent Decodability
+### Querying independent decodability
 - [var audioSampleIsIndependentlyDecodable: ObjCBool](avsamplecursoraudiodependencyinfo/audiosampleisindependentlydecodable.md)
   A Boolean value indicating whether the sample is independently decodable.
 - [var audioSamplePacketRefreshCount: Int](avsamplecursoraudiodependencyinfo/audiosamplepacketrefreshcount.md)

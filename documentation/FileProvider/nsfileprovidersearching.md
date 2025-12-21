@@ -6,7 +6,7 @@
 A protocol you implement to support searching in your file provider.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

@@ -21,7 +21,7 @@ Distributed actors share many characteristics with Swift actors, and include add
 
 You use three main parts when writing code with distributed actors:
 
-- Swift language support for actors and distributed actors. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in .
+- Swift language support for actors and distributed actors. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 - The Distributed module, which includes the types and protocols you need to declare and use distribute actors. For example, it has protocols to which distributed actors and distributed actor systems conform, and structures that encapsulate information about calls to a distributed actor.
 - A , also called a cluster runtime, provides an implementation of the [`DistributedActorSystem`](distributedactorsystem.md) protocol and coordinates between the cluster’s nodes. A distributed actor is always part of some distributed actor system; that distributed actor system handles the serialization and networking necessary to perform remote method calls. For local testing, you can use [`LocalTestingDistributedActorSystem`](localtestingdistributedactorsystem.md). For production, you can use the distributed actor system from the [`Swift Distributed Actors`](https://developer.apple.comhttps://github.com/apple/swift-distributed-actors/) library, use another library, or write your own distributed actor system.
 

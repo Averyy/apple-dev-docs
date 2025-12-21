@@ -39,29 +39,6 @@ enum Error
   An error indicating that the item attempting to be added to the user’s music library cannot be added.
 - [MusicLibrary.Error.unknown](musiclibrary/error/unknown.md)
   An error indicating the ocurrence of an unknown or unexpected error.
-### Initializers
-- [init?(rawValue: String)](musiclibrary/error/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var description: String](musiclibrary/error/description.md)
-  A textual representation of this instance.
-- [var errorDescription: String?](musiclibrary/error/errordescription.md)
-  A localized message describing what error occurred.
-- [var failureReason: String?](musiclibrary/error/failurereason.md)
-  A localized message describing the reason for the failure.
-- [var helpAnchor: String?](musiclibrary/error/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-- [var rawValue: String](musiclibrary/error/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [var recoverySuggestion: String?](musiclibrary/error/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-### Type Aliases
-- [MusicLibrary.Error.RawValue](musiclibrary/error/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](musiclibrary/error/equatable-implementations.md)
-- [Error Implementations](musiclibrary/error/error-implementations.md)
-- [RawRepresentable Implementations](musiclibrary/error/rawrepresentable-implementations.md)
 
 ## Relationships
 

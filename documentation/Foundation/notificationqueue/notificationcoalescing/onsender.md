@@ -26,10 +26,6 @@ static var onSender: NotificationQueue.NotificationCoalescing { get }
   Do not coalesce notifications in the queue.
 - [static var onName: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onname.md)
   Coalesce notifications with the same name.
-- [static var none: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/none.md)
-  Do not coalesce notifications in the queue.
-- [static var onName: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onname.md)
-  Coalesce notifications with the same name.
 
 
 ---

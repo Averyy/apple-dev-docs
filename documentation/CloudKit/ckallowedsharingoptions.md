@@ -43,7 +43,7 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
 - [var allowsAccessRequests: Bool](ckallowedsharingoptions/allowsaccessrequests.md)
   Default value is `NO`. If set, the system sharing UI will allow the user to configure whether access requests are enabled on the share.
 - [var allowsParticipantsToInviteOthers: Bool](ckallowedsharingoptions/allowsparticipantstoinviteothers.md)
-  Defaults to `NO`. If set, the system sharing UI will allow the user to choose whether added participants can invite others to the share. Shares with `.administrator` participants will be returned as read-only to devices running OS versions prior to the `.administrator` role being introduced. The `.administrator` participants on these read-only shares will be returned as `.privateUser`.
+  Default value is `NO`. If set, the system sharing UI will allow the user to choose whether added participants can invite others to the share. Shares with [`CKShare.ParticipantRole.administrator`](ckshare/participantrole/administrator.md) participants will be returned as read-only to devices running OS versions prior to this role being introduced. Administrator participants on these read-only shares will be returned as [`CKShare.ParticipantRole.privateUser`](ckshare/participantrole/privateuser.md).
 
 ## Relationships
 
@@ -74,7 +74,7 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
   A transfer representation the system uses to share an item.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [@MainActor class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.

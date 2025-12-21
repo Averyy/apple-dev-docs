@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: struct
 
-A piece of identifying information that can be used to communicate with someone.
+Contact information for identifying and communicating with a person.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,37 +20,21 @@ struct CommunicationHandle
 
 #### Overview
 
-This structure wraps a string value to allow clients to specify additional [`CommunicationHandle.Kind`](communicationhandle/kind-swift.enum.md) information about the type of handle it represents, such as a phone number, email address, or custom handle.
+Use this structure to specify contact information like phone numbers, email addresses, or custom identifiers, along with the type of handle it represents.
 
 ## Topics
 
-### Initializing a communication handle
+### Specifying handle types
+- [CommunicationHandle.Kind](communicationhandle/kind-swift.enum.md)
+  An enumeration that identifies different types of communication handles.
+### Creating handles
 - [init(value: String, kind: CommunicationHandle.Kind)](communicationhandle/init(value:kind:).md)
   Creates a communication handle.
-### Getting the handle information
+### Accessing properties
 - [var value: String](communicationhandle/value.md)
   The value of the communication handle.
 - [var kind: CommunicationHandle.Kind](communicationhandle/kind-swift.property.md)
   The type of communication handle.
-### Selecting a constant
-- [CommunicationHandle.Kind](communicationhandle/kind-swift.enum.md)
-  An enumeration of the different types of communication handles.
-### Decoding
-- [init(from: any Decoder) throws](communicationhandle/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (CommunicationHandle, CommunicationHandle) -> Bool](communicationhandle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](communicationhandle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](communicationhandle/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](communicationhandle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](communicationhandle/equatable-implementations.md)
 
 ## Relationships
 
@@ -64,10 +48,15 @@ This structure wraps a string value to allow clients to specify additional [`Com
 
 ## See Also
 
-- [class CommunicationLimits](communicationlimits.md)
-  A type that encapsulates the communication limits for your app.
+- [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
+](askcenter/responses(for:).md)
+  Registers the topic type with the system and returns an asynchronous sequence of responses.
 - [struct PermissionResponse](permissionresponse.md)
   A full permission response that includes the original question and chosen answer.
+- [struct PermissionChoice](permissionchoice.md)
+  A class that uniquely identifies a specific, statically defined permission choice.
+- [class CommunicationLimits](communicationlimits.md)
+  A type that encapsulates the communication limits for your app.
 
 
 ---

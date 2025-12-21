@@ -39,25 +39,9 @@ struct InlinePresentationIntent
   An intent that represents an inline HTML presentation.
 - [static var blockHTML: InlinePresentationIntent](inlinepresentationintent/blockhtml.md)
   An intent that represents a block HTML presentation.
-### Creating Inline Presentation Intents
+### Initializers
 - [init(rawValue: UInt)](inlinepresentationintent/init(rawvalue:).md)
   Creates an inline presentation intent using the raw value you specify.
-- [static var code: InlinePresentationIntent](inlinepresentationintent/code.md)
-  An intent that represents a code voice presentation.
-- [static var emphasized: InlinePresentationIntent](inlinepresentationintent/emphasized.md)
-  An intent that represents an emphasized presentation.
-- [static var lineBreak: InlinePresentationIntent](inlinepresentationintent/linebreak.md)
-  An intent that represents a line break.
-- [static var softBreak: InlinePresentationIntent](inlinepresentationintent/softbreak.md)
-  An intent that represents a soft line break.
-- [static var strikethrough: InlinePresentationIntent](inlinepresentationintent/strikethrough.md)
-  An intent that represents a strikethrough presentation.
-- [static var stronglyEmphasized: InlinePresentationIntent](inlinepresentationintent/stronglyemphasized.md)
-  An intent that represents a strongly emphasized presentation.
-- [static var inlineHTML: InlinePresentationIntent](inlinepresentationintent/inlinehtml.md)
-  An intent that represents an inline HTML presentation.
-- [static var blockHTML: InlinePresentationIntent](inlinepresentationintent/blockhtml.md)
-  An intent that represents a block HTML presentation.
 
 ## Relationships
 

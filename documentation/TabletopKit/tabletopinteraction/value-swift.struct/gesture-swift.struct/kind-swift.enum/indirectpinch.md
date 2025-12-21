@@ -12,6 +12,10 @@
 case indirectPinch
 ```
 
+## See Also
+
+- [TabletopInteraction.Value.Gesture.Kind.directPinch](tabletopinteraction/value-swift.struct/gesture-swift.struct/kind-swift.enum/directpinch.md)
+
 
 ---
 

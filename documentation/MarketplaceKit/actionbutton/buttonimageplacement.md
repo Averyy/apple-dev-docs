@@ -20,18 +20,6 @@ enum ButtonImagePlacement
 - [ActionButton.ButtonImagePlacement.leading](actionbutton/buttonimageplacement/leading.md)
 - [ActionButton.ButtonImagePlacement.top](actionbutton/buttonimageplacement/top.md)
 - [ActionButton.ButtonImagePlacement.trailing](actionbutton/buttonimageplacement/trailing.md)
-### Initializers
-- [init?(rawValue: Int)](actionbutton/buttonimageplacement/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](actionbutton/buttonimageplacement/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ActionButton.ButtonImagePlacement.RawValue](actionbutton/buttonimageplacement/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](actionbutton/buttonimageplacement/equatable-implementations.md)
-- [RawRepresentable Implementations](actionbutton/buttonimageplacement/rawrepresentable-implementations.md)
 
 ## Relationships
 

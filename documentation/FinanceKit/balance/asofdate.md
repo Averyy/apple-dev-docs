@@ -15,6 +15,13 @@ The date and time the system calculated the balance.
 let asOfDate: Date
 ```
 
+## See Also
+
+- [let amount: CurrencyAmount](balance/amount.md)
+  The amount of the balance.
+- [let creditDebitIndicator: CreditDebitIndicator](balance/creditdebitindicator.md)
+  A value that indicates whether the balance is a credit or a debit balance.
+
 
 ---
 

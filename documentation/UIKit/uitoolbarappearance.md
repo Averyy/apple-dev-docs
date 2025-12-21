@@ -28,12 +28,11 @@ After creating a [`UIToolbarAppearance`](uitoolbarappearance.md) object, use the
 ### Configuring bar button items
 - [var buttonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/buttonappearance.md)
   The appearance attributes for plain bar button items in the toolbar.
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
+  The appearance attributes for Prominent buttons.
 ### Configuring the Done button
 - [var doneButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/donebuttonappearance.md)
   The appearance attributes for Done buttons.
-### Instance Properties
-- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
-  The appearance attributes for Prominent buttons.
 
 ## Relationships
 

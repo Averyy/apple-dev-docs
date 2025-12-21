@@ -6,7 +6,7 @@
 Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -26,9 +26,10 @@ The delegate of an `AVCaptureFileOutput` object must adopt the `AVCaptureFileOut
 
 ## Topics
 
-### Delegate Methods
+### Delegate methods
 - [func fileOutput(AVCaptureFileOutput, didStartRecordingTo: URL, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didstartrecordingto:from:).md)
   Informs the delegate when the output has started writing to a file.
+- [func fileOutput(AVCaptureFileOutput, didStartRecordingTo: URL, startPTS: CMTime, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didstartrecordingto:startpts:from:).md)
 - [func fileOutput(AVCaptureFileOutput, willFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](avcapturefileoutputrecordingdelegate/fileoutput(_:willfinishrecordingto:from:error:).md)
   Informs the delegate when the output will stop writing new samples to a file.
 - [func fileOutput(AVCaptureFileOutput, didFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md)
@@ -37,8 +38,6 @@ The delegate of an `AVCaptureFileOutput` object must adopt the `AVCaptureFileOut
   Called whenever the output is recording to a file and successfully pauses the recording at the request of a client.
 - [func fileOutput(AVCaptureFileOutput, didResumeRecordingTo: URL, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didresumerecordingto:from:).md)
   Called whenever the output, at the request of the client, successfully resumes a file recording that was paused.
-### Instance Methods
-- [func fileOutput(AVCaptureFileOutput, didStartRecordingTo: URL, startPTS: CMTime, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didstartrecordingto:startpts:from:).md)
 
 ## Relationships
 

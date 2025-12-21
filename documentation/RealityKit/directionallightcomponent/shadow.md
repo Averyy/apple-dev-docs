@@ -10,7 +10,7 @@ A directional light component that adds shadows to entities that it illuminates
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -24,30 +24,23 @@ struct Shadow
 ### Creating the shadow
 - [init()](directionallightcomponent/shadow/init.md)
   Creates a directional light shadow using default values.
-- [init(shadowProjection:depthBias:cullMode:)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
+- [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
 - [init(maximumDistance: Float, depthBias: Float)](directionallightcomponent/shadow/init(maximumdistance:depthbias:).md)
   Creates a directional light shadow with a maximum distance and depth bias.
 ### Configuring the shadow
 - [var depthBias: Float](directionallightcomponent/shadow/depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+  The light’s culling mode for shadow map rendering.
+- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection.md)
+  Sets the shadow projection used for shadow map rendering
 - [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
   The maximum distance for the shadow.
-### Instance Properties
-- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride-9scrz.md)
-  The light’s culling mode for shadow map rendering.
-- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride-ga2r.md)
-  The light’s culling mode for shadow map rendering.
-- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection-3je1g.md)
-  Sets the shadow projection used for shadow map rendering
-- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection-4la8b.md)
-  Sets the shadow projection used for shadow map rendering
 ### Type Aliases
-- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode-2j2li.md)
-- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode-441hn.md)
+- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 ### Enumerations
-- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype-1h04e.md)
-- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype-8pbl5.md)
+- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype.md)
 
 ## Relationships
 
@@ -59,6 +52,8 @@ struct Shadow
 
 - [struct DirectionalLightComponent](directionallightcomponent.md)
   A component that defines a directional light source.
+- [DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojectiontype.md)
+- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 
 
 ---

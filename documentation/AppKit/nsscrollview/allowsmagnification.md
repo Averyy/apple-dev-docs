@@ -17,7 +17,7 @@ var allowsMagnification: Bool { get set }
 
 #### Discussion
 
-This property does not prevent the developer from manually adjusting the magnification value. If magnification exceeds either the maximum or minimum limits for magnification, and [`allowsMagnification`](nsscrollview/allowsmagnification.md) is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view temporarily animates the content magnification just past those limits before returning to them. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property does not prevent the developer from manually adjusting the magnification value. If magnification exceeds either the maximum or minimum limits for magnification, and [`allowsMagnification`](nsscrollview/allowsmagnification.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view temporarily animates the content magnification just past those limits before returning to them. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

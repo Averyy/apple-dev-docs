@@ -20,6 +20,10 @@ Application support files (`Library/Application Support`).
 case applicationSupportDirectory
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 ## See Also
 
 - [FileManager.SearchPathDirectory.applicationDirectory](filemanager/searchpathdirectory/applicationdirectory.md)

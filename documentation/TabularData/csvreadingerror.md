@@ -46,7 +46,6 @@ enum CSVReadingError
   An error that indicates that a column type is not one of the types supported by CSV.
 ### Default Implementations
 - [CustomStringConvertible Implementations](csvreadingerror/customstringconvertible-implementations.md)
-- [Error Implementations](csvreadingerror/error-implementations.md)
 - [LocalizedError Implementations](csvreadingerror/localizederror-implementations.md)
 
 ## Relationships

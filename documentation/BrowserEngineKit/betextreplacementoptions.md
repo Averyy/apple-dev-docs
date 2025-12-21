@@ -21,10 +21,6 @@ struct BETextReplacementOptions
 - [init(rawValue: UInt)](betextreplacementoptions/init(rawvalue:).md)
 ### Type Properties
 - [static var addUnderline: BETextReplacementOptions](betextreplacementoptions/addunderline.md)
-### Default Implementations
-- [Equatable Implementations](betextreplacementoptions/equatable-implementations.md)
-- [OptionSet Implementations](betextreplacementoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](betextreplacementoptions/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ For more information, see [`Initiating and maintaining a session`](https://devel
 ## See Also
 
 - [NSLocalNetworkUsageDescription](information-property-list/nslocalnetworkusagedescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 - [NSNearbyInteractionAllowOnceUsageDescription](information-property-list/nsnearbyinteractionallowonceusagedescription.md)
   A one-time request for user permission to begin an interaction session with nearby devices.
 

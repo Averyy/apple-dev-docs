@@ -21,13 +21,13 @@ func canEnterState(_ stateClass: AnyClass) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a transition is allowed from the current state to a state of the specified class; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if a transition is allowed from the current state to a state of the specified class; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 You build a state machine by creating a unique [`GKState`](gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method of each state object determines which other states a state machine is allowed to transition into from that state.
 
-A newly created state machine’s [`currentState`](gkstatemachine/currentstate.md) property is `nil`. In this case, the [`canEnterState(_:)`](gkstatemachine/canenterstate(_:).md) method always returns [`true`](https://developer.apple.com/documentation/swift/true). To choose and enter an initial state, use the [`enter(_:)`](gkstatemachine/enter(_:).md) method.
+A newly created state machine’s [`currentState`](gkstatemachine/currentstate.md) property is `nil`. In this case, the [`canEnterState(_:)`](gkstatemachine/canenterstate(_:).md) method always returns [`true`](https://developer.apple.com/documentation/Swift/true). To choose and enter an initial state, use the [`enter(_:)`](gkstatemachine/enter(_:).md) method.
 
 ## Parameters
 

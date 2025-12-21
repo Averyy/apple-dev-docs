@@ -38,6 +38,15 @@ enum Style
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var title: String?](uialertcontroller/title.md)
+  The title of the alert.
+- [var message: String?](uialertcontroller/message.md)
+  Descriptive text that provides more details about the reason for the alert.
+- [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
+  The style of the alert controller.
+
 
 ---
 

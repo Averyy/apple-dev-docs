@@ -1,4 +1,4 @@
-# Standard Colors
+# Standard colors
 
 **Framework**: AppKit
 
@@ -10,7 +10,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ## Topics
 
-### Adaptable System Colors
+### Adaptable system colors
 - [class var systemBlue: NSColor](nscolor/systemblue.md)
   Returns a color object for blue that automatically adapts to vibrancy and accessibility settings.
 - [class var systemBrown: NSColor](nscolor/systembrown.md)
@@ -37,10 +37,10 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   Returns a color object for teal that automatically adapts to vibrancy and accessibility settings.
 - [class var systemYellow: NSColor](nscolor/systemyellow.md)
   Returns a color object for yellow that automatically adapts to vibrancy and accessibility settings.
-### Transparent Color
+### Transparent color
 - [class var clear: NSColor](nscolor/clear.md)
   Returns a color object whose grayscale and alpha values are both `0.0`.
-### Fixed Colors
+### Fixed colors
 - [class var black: NSColor](nscolor/black.md)
   Returns a color object whose grayscale value is `0.0` and whose alpha value is `1.0`.
 - [class var blue: NSColor](nscolor/blue.md)
@@ -72,9 +72,9 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ## See Also
 
-- [UI Element Colors](ui-element-colors.md)
+- [UI element colors](ui-element-colors.md)
   Retrieve standard color objects for use with windows, controls, labels, text, selections and other content in your app.
-- [Color Creation](color-creation.md)
+- [Color creation](color-creation.md)
   Load colors from asset catalogs, and create colors from raw component values, such as those used by grayscale, RGB, HSB, and CMYK colors.
 
 

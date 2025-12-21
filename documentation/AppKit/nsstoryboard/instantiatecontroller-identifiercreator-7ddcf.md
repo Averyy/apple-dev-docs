@@ -22,7 +22,7 @@ The view controller that corresponds to the specified identifier string. If no v
 
 Use this method to create a view controller object programmatically. Each time you call this method, it creates a new instance of the view controller using the block you provide.
 
-In your `creator` block, create the view controller using your custom constructor method. Your custom initialization method must accept an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) object as a parameter and must call the inherited doc://com.apple.documentation/documentation/foundation/nscoder/init(coder:) method during its execution. Not doing so is a programmer error. After initializing the storyboard state, initialize your view controller’s custom properties.
+In your `creator` block, create the view controller using your custom constructor method. Your custom initialization method must accept an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) object as a parameter and must call the inherited [`init(coder:)`](nsresponder/init(coder:).md) method during its execution. Not doing so is a programmer error. After initializing the storyboard state, initialize your view controller’s custom properties.
 
 ## Parameters
 

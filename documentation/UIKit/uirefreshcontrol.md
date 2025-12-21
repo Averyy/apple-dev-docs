@@ -26,7 +26,7 @@ class UIRefreshControl
 
 A [`UIRefreshControl`](uirefreshcontrol.md) object is a standard control that you attach to any [`UIScrollView`](uiscrollview.md) object, including table views and collection views. Add this control to scrollable views to give your users a standard way to refresh their contents. When the user drags the top of the scrollable content area downward, the scroll view reveals the refresh control, begins animating its progress indicator, and notifies your app. You use that notification to update your content and dismiss the refresh control.
 
-![Illustration showing a refresh control. The control displays an animated progress indicator at the top of a scroll view’s content area.](https://docs-assets.developer.apple.com/published/f81e2b2c339c5ed3da70cdd7b768331e/media-3148903%402x.png)
+![Illustration showing a refresh control. The control displays an animated progress indicator at the top of a scroll view's content area.](https://docs-assets.developer.apple.com/published/8396f6cce8b74af3a773153249e753e3/ui-refresh-control%402x.png)
 
 The refresh control lets you know when to update your content using the target-action mechanism of [`UIControl`](uicontrol.md). Upon activation, the refresh control calls the action method you provided at configuration time. When adding your action method, configure it to listen for the [`valueChanged`](uicontrol/event/valuechanged.md) event, as shown in the following example code. Use your action method to update your content, and call the refresh control’s [`endRefreshing()`](uirefreshcontrol/endrefreshing().md) method when you’re done.
 

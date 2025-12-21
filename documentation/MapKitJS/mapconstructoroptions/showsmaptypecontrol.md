@@ -11,7 +11,7 @@ A Boolean value that determines whether to display a control that lets users cho
 ## Declaration
 
 ```swift
-attribute boolean showsMapTypeControl;
+showsMapTypeControl?: boolean;
 ```
 
 #### Discussion

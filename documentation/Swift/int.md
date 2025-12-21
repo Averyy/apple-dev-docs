@@ -153,7 +153,7 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 ### Encoding and Decoding Values
 - [func encode(to: any Encoder) throws](int/encode(to:).md)
   Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](int/init(from:)-5ru5.md)
+- [init(from: any Decoder) throws](int/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 ### Describing an Integer
 - [var description: String](int/description.md)
@@ -162,15 +162,6 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
   Hashes the essential components of this value by feeding them into the given hasher.
 - [var customMirror: Mirror](int/custommirror.md)
   A mirror that reflects the `Int` instance.
-### Using an Integer as a Data Value
-- [init?(from: MLDataValue)](int/init(from:)-kl1p.md)
-  Creates an instance of the conforming type from a data value.
-- [var dataValue: MLDataValue](int/datavalue.md)
-  The value of the conforming type’s instance wrapped in a data value.
-- [var identifierValue: MLDataValue](int/identifiervalue.md)
-  The value of the unique identifier wrapped in a data value.
-- [static var dataValueType: MLDataValue.ValueType](int/datavaluetype.md)
-  The underlying type the conforming type uses when it wraps itself in a data value.
 ### Infrequently Used Functionality
 - [init()](int/init.md)
   Creates a new value equal to zero.
@@ -229,22 +220,13 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [BinaryInteger Implementations](int/binaryinteger-implementations.md)
 - [CodingKeyRepresentable Implementations](int/codingkeyrepresentable-implementations.md)
 - [Comparable Implementations](int/comparable-implementations.md)
-- [ConvertibleFromGeneratedContent Implementations](int/convertiblefromgeneratedcontent-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](int/convertibletogeneratedcontent-implementations.md)
 - [CustomReflectable Implementations](int/customreflectable-implementations.md)
-- [CustomURLRepresentationParameterConvertible Implementations](int/customurlrepresentationparameterconvertible-implementations.md)
 - [Decodable Implementations](int/decodable-implementations.md)
 - [Encodable Implementations](int/encodable-implementations.md)
-- [EntityIdentifierConvertible Implementations](int/entityidentifierconvertible-implementations.md)
 - [Equatable Implementations](int/equatable-implementations.md)
 - [ExpressibleByIntegerLiteral Implementations](int/expressiblebyintegerliteral-implementations.md)
 - [FixedWidthInteger Implementations](int/fixedwidthinteger-implementations.md)
-- [Generable Implementations](int/generable-implementations.md)
 - [Hashable Implementations](int/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](int/instructionsrepresentable-implementations.md)
-- [MLDataValueConvertible Implementations](int/mldatavalueconvertible-implementations.md)
-- [MLIdentifier Implementations](int/mlidentifier-implementations.md)
-- [PromptRepresentable Implementations](int/promptrepresentable-implementations.md)
 - [SIMDScalar Implementations](int/simdscalar-implementations.md)
 - [SignedInteger Implementations](int/signedinteger-implementations.md)
 - [SignedNumeric Implementations](int/signednumeric-implementations.md)
@@ -284,7 +266,6 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
 - [MirrorPath](mirrorpath.md)
 - [Numeric](numeric.md)
-- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)

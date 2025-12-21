@@ -10,7 +10,7 @@ Synchronously loads an environment resource from a bundle.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -41,16 +41,8 @@ To add an environment resource to your Xcode project, see [`EnvironmentResource`
 
 ## See Also
 
-- [convenience(named:in:)](environmentresource/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
-- [convenience init(equirectangular: CGImage, withName: String?) throws](environmentresource/init(equirectangular:withname:)-9g602.md)
-  Synchronously creates an environment resource from an equirectangular image.
-- [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-3xxrz.md)
-  Asynchronously generates an environment resource from an equirectangular image.
-- [convenience init(cube: TextureResource, options: EnvironmentResource.CreateOptions) async throws](environmentresource/init(cube:options:)-4xqiz.md)
-  Asynchronously creates an environment resource from a cube texture.
-- [convenience init(cube: TextureResource, options: EnvironmentResource.CreateOptions) throws](environmentresource/init(cube:options:)-4knhi.md)
-  Synchronously generates an environment resource from a cube texture resource.
 
 
 ---

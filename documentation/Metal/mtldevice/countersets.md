@@ -22,7 +22,7 @@ var counterSets: [any MTLCounterSet]? { get }
 
 ## Mentions
 
-- [Confirming which Counters and Counter Sets a GPU Supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 ## See Also
 

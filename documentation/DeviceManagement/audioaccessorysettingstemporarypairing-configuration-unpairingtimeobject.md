@@ -6,8 +6,8 @@
 A dictionary that describes when the device automatically unpairs temporarily paired audio accessories.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

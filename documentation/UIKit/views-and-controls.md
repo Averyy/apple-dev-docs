@@ -30,7 +30,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [UIKit Catalog: Creating and customizing views and controls](uikit-catalog-creating-and-customizing-views-and-controls.md)
   Customize your app’s user interface with views and controls.
 ### Container views
-- [Autosizing Views for Localization in iOS](../xcode/autosizing_views_for_localization_in_ios.md)
+- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.
@@ -53,8 +53,6 @@ For additional information about how to use views and controls, see [`Human Inte
   A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 ### Controls
 - [Responding to control-based events using target-action](responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
@@ -113,7 +111,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [class UISearchBar](uisearchbar.md)
   A specialized view for receiving search-related information from the user.
 - [class UIToolbar](uitoolbar.md)
-  A control that displays one or more buttons along the bottom edge of your interface.
+  A control that displays one or more buttons along an edge of your interface.
 - [class UITabBar](uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
 - [class UITabBarItem](uitabbaritem.md)
@@ -152,8 +150,6 @@ For additional information about how to use views and controls, see [`Human Inte
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [enum NSRectAlignment](nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
-- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
-  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [UIKit macros](uikit-macros.md)
   Macros that UIKit defines.
 

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-Returns a color object whose RGB values are all `1.0` and whose alpha value is `1.0`.
+Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,1` and alpha value `1`.
 
 **Availability**:
 - iOS 10.0+
@@ -19,30 +19,26 @@ Returns a color object whose RGB values are all `1.0` and whose alpha value is `
 class var white: CIColor { get }
 ```
 
-#### Return Value
-
-The color object in the sRGB colorspace.
-
 ## See Also
 
 - [class var black: CIColor](cicolor/black.md)
-  Returns a color object whose RGB values are all `0.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,0` and alpha value `1`.
 - [class var blue: CIColor](cicolor/blue-swift.type.property.md)
-  Returns a color object whose RGB values are `0.0`, `0.0`, and `1.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,1` and alpha value `1`.
 - [class var clear: CIColor](cicolor/clear.md)
-  Returns a color object whose RGB and alpha values are all `0.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,0` and alpha value `0`.
 - [class var cyan: CIColor](cicolor/cyan.md)
-  Returns a color object whose RGB values are `0.0`, `1.0`, and `1.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,1,1` and alpha value `1`.
 - [class var gray: CIColor](cicolor/gray.md)
-  Returns a color object whose RGB values are all `0.5` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0.5,0.5,0.5` and alpha value `1`.
 - [class var green: CIColor](cicolor/green-swift.type.property.md)
-  Returns a color object whose RGB values are `0.0`, `1.0`, and `0.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,1,0` and alpha value `1`.
 - [class var magenta: CIColor](cicolor/magenta.md)
-  Returns a color object whose RGB values are `1.0`, `0.0`, and `1.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,0,1` and alpha value `1`.
 - [class var red: CIColor](cicolor/red-swift.type.property.md)
-  Returns a color object whose RGB values are `1.0`, `0.0`, and `0.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,0,0` and alpha value `1`.
 - [class var yellow: CIColor](cicolor/yellow.md)
-  Returns a color object whose RGB values are `1.0`, `1.0`, and `0.0` and whose alpha value is `1.0`.
+  Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,0` and alpha value `1`.
 
 
 ---

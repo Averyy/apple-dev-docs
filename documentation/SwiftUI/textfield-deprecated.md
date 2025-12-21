@@ -19,7 +19,7 @@ Use view modifiers to specify change and commit behaviors for a text field when 
   Creates a text field with a text label generated from a localized title string.
 ### Creating a text field with a value
 - [init(_:value:formatter:onEditingChanged:onCommit:)](textfield/init(_:value:formatter:oneditingchanged:oncommit:).md)
-  Creates an instance which binds over an arbitrary type, `T`.
+  Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:onCommit:)](textfield/init(_:value:formatter:oncommit:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:onEditingChanged:)](textfield/init(_:value:formatter:oneditingchanged:).md)

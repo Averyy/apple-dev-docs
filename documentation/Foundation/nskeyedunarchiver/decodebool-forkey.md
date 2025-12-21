@@ -22,7 +22,7 @@ func decodeBool(forKey key: String) -> Bool
 
 #### Return Value
 
-The Boolean value associated with the key `key`. Returns [`false`](https://developer.apple.com/documentation/swift/false) if `key` does not exist.
+The Boolean value associated with the key `key`. Returns [`false`](https://developer.apple.com/documentation/Swift/false) if `key` does not exist.
 
 ## Parameters
 

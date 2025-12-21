@@ -28,9 +28,6 @@ enum BEKeyModifierFlags
   There aren’t any active key modifiers.
 ### Initializing the flags
 - [init?(rawValue: Int)](bekeymodifierflags/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](bekeymodifierflags/equatable-implementations.md)
-- [RawRepresentable Implementations](bekeymodifierflags/rawrepresentable-implementations.md)
 
 ## Relationships
 

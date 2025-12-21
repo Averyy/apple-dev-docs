@@ -20,7 +20,7 @@ case notAvailableAtLocation
 
 This reason indicates that ARKit does not have the necessary landscape data to support geo tracking at the user’s current location. See [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md) for more information.
 
-If [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) and an app begins a geo-tracking session, ARKit provides this state reason when the user has moved to an unsupported area.
+If [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) and an app begins a geo-tracking session, ARKit provides this state reason when the user has moved to an unsupported area.
 
 ## See Also
 

@@ -15,7 +15,7 @@ The unique identifier for a conversation.
 ## Declaration
 
 ```swift
-final var uuid: UUID { get set }
+final let uuid: UUID
 ```
 
 ## See Also

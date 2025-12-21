@@ -20,7 +20,7 @@ var isGyroActive: Bool { get }
 
 #### Discussion
 
-This property indicates whether [`startGyroUpdates(to:withHandler:)`](cmmotionmanager/startgyroupdates(to:withhandler:).md) or [`startGyroUpdates()`](cmmotionmanager/startgyroupdates().md) has been called since the last time [`stopGyroUpdates()`](cmmotionmanager/stopgyroupdates().md) was called. (If the start methods hadn’t been called, the app could be getting updates from the gyroscope after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/swift/false).)
+This property indicates whether [`startGyroUpdates(to:withHandler:)`](cmmotionmanager/startgyroupdates(to:withhandler:).md) or [`startGyroUpdates()`](cmmotionmanager/startgyroupdates().md) has been called since the last time [`stopGyroUpdates()`](cmmotionmanager/stopgyroupdates().md) was called. (If the start methods hadn’t been called, the app could be getting updates from the gyroscope after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/Swift/false).)
 
 ## See Also
 

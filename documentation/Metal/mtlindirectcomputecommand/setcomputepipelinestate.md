@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Sets the command’s compute pipeline state object.
+Sets the command’s compute pipeline state.
 
 **Availability**:
 - iOS 13.0+
@@ -22,13 +22,13 @@ func setComputePipelineState(_ pipelineState: any MTLComputePipelineState)
 
 #### Discussion
 
-If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`true`](https://developer.apple.com/documentation/swift/true), do not call this method. The command gets the pipeline state object from the parent encoder when you execute the command.
+You don’t need to call this method if you create an indirect command buffer with its [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`true`](https://developer.apple.com/documentation/Swift/true). The command gets the pipeline state from the parent encoder when you run the command.
 
-If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`false`](https://developer.apple.com/documentation/swift/false), you must set the pipeline state prior to encoding the drawing command.
+If you create an indirect command buffer with its [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`false`](https://developer.apple.com/documentation/Swift/false), you need to set the pipeline state prior to encoding a drawing command.
 
 ## Parameters
 
-- `pipelineState`: The compute pipeline state object to use.
+- `pipelineState`: A compute pipeline state instance.
 
 ## See Also
 

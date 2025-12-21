@@ -6,7 +6,7 @@
 On visionOS, by looking at the edge of a scroll view the content can automatically scroll. The axes will be determined automatically.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

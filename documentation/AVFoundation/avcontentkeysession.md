@@ -22,26 +22,26 @@ class AVContentKeySession
 
 ## Topics
 
-### Creating a Session
+### Creating a session
 - [convenience init(keySystem: AVContentKeySystem)](avcontentkeysession/init(keysystem:).md)
   Creates a content key session to manage a collection of content decryption keys.
 - [convenience init(keySystem: AVContentKeySystem, storageDirectoryAt: URL)](avcontentkeysession/init(keysystem:storagedirectoryat:).md)
   Creates a content key session to manage a collection of content decryption keys; points to a directory that stores abnormal session termination reports.
-### Inspecting the Session
+### Inspecting the session
 - [var keySystem: AVContentKeySystem](avcontentkeysession/keysystem.md)
   The type of key system used to retrieve keys.
 - [struct AVContentKeySystem](avcontentkeysystem.md)
   A key-delivery method for a content key session.
 - [var storageURL: URL?](avcontentkeysession/storageurl.md)
   A URL that points to a writable storage directory.
-### Managing the Delegate Object
+### Managing the delegate object
 - [func setDelegate((any AVContentKeySessionDelegate)?, queue: dispatch_queue_t?)](avcontentkeysession/setdelegate(_:queue:).md)
   Sets the session’s delegate object and the dispatch queue on which to call the delegate’s methods.
 - [var delegate: (any AVContentKeySessionDelegate)?](avcontentkeysession/delegate.md)
   The content key session’s delegate object.
 - [var delegateQueue: dispatch_queue_t?](avcontentkeysession/delegatequeue.md)
   The dispatch queue the session uses to invoke delegate callbacks.
-### Managing Content Key Recipients
+### Managing content key recipients
 - [var contentKeyRecipients: [any AVContentKeyRecipient]](avcontentkeysession/contentkeyrecipients.md)
   An array of content key recipients.
 - [protocol AVContentKeyRecipient](avcontentkeyrecipient.md)
@@ -50,10 +50,10 @@ class AVContentKeySession
   Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session.
 - [func removeContentKeyRecipient(any AVContentKeyRecipient)](avcontentkeysession/removecontentkeyrecipient(_:).md)
   Tells the delegate to remove the specified recipient.
-### Processing Requests
+### Processing requests
 - [func processContentKeyRequest(withIdentifier: (any Sendable)?, initializationData: Data?, options: [String : any Sendable]?)](avcontentkeysession/processcontentkeyrequest(withidentifier:initializationdata:options:).md)
   Tells the delegate to start loading the content decryption key with the specified identifier and initialization data.
-### Managing Expiration
+### Managing expiration
 - [func expire()](avcontentkeysession/expire.md)
   Tells the delegate that the session expired as the result of normal, intentional processes.
 - [func makeSecureTokenForExpirationDate(ofPersistableContentKey: Data, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/makesecuretokenforexpirationdate(ofpersistablecontentkey:completionhandler:).md)
@@ -62,14 +62,14 @@ class AVContentKeySession
   Tells the delegate that previously provided response data for a content key request is about to expire.
 - [var contentProtectionSessionIdentifier: Data?](avcontentkeysession/contentprotectionsessionidentifier.md)
   The identifier for the current content protection session.
-### Invalidating Content Keys
+### Invalidating content keys
 - [func invalidatePersistableContentKey(Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/invalidatepersistablecontentkey(_:options:completionhandler:).md)
   Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
 - [func invalidateAllPersistableContentKeys(forApp: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/invalidateallpersistablecontentkeys(forapp:options:completionhandler:).md)
   Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
 - [struct AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption.md)
   Options for specifying additional information for generating server playback context (SPC).
-### Handling Expired Session Reports
+### Handling expired session reports
 - [class func pendingExpiredSessionReports(withAppIdentifier: Data, storageDirectoryAt: URL) -> [Data]](avcontentkeysession/pendingexpiredsessionreports(withappidentifier:storagedirectoryat:).md)
   Returns the expired session reports for content key sessions created with the specified app identifier.
 - [class func removePendingExpiredSessionReports([Data], withAppIdentifier: Data, storageDirectoryAt: URL)](avcontentkeysession/removependingexpiredsessionreports(_:withappidentifier:storagedirectoryat:).md)

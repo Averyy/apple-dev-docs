@@ -17,7 +17,7 @@ string type
 ## See Also
 
 - [type productId](productid.md)
-  The unique identifier of the product, which you create in App Store Connect.
+  The unique identifier of the product.
 - [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
   The identifier of the subscription group that the subscription belongs to.
 - [type quantity](quantity.md)

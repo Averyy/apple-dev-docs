@@ -20,7 +20,7 @@ var prefersEdgeAttachedInCompactHeight: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means the sheet defaults to a full screen appearance at compact height. Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to use an alternate appearance in a compact-height size class, causing the sheet to only attach to the screen on its bottom edge.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false), which means the sheet defaults to a full screen appearance at compact height. Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to use an alternate appearance in a compact-height size class, causing the sheet to only attach to the screen on its bottom edge.
 
 ## See Also
 

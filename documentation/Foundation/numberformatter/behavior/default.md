@@ -26,10 +26,6 @@ case `default`
   The number-formatter behavior as it existed prior to macOS 10.4.
 - [NumberFormatter.Behavior.behavior10_4](numberformatter/behavior/behavior10_4.md)
   The number-formatter behavior since macOS 10.4.
-- [NumberFormatter.Behavior.behavior10_0](numberformatter/behavior/behavior10_0.md)
-  The number-formatter behavior as it existed prior to macOS 10.4.
-- [NumberFormatter.Behavior.behavior10_4](numberformatter/behavior/behavior10_4.md)
-  The number-formatter behavior since macOS 10.4.
 
 
 ---

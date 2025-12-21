@@ -23,13 +23,13 @@ case purchased
 ## Mentions
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Testing a successful transaction](testing-a-successful-transaction.md)
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
-- [Testing resubscribing from the subscriptions page](testing-resubscribing-from-the-subscriptions-page.md)
-- [Processing a transaction](processing-a-transaction.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
+- [Processing a transaction](processing-a-transaction.md)
 - [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
+- [Testing a successful transaction](testing-a-successful-transaction.md)
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
+- [Testing resubscribing from the subscriptions page](testing-resubscribing-from-the-subscriptions-page.md)
 
 #### Discussion
 

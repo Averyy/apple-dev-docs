@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Initializes an `VenueDescriptor` instance from memory.
+Creates a venue descriptor instance from memory.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,8 +17,8 @@ init(aimeData: Data, device: (any MTLDevice)? = nil) async throws
 
 ## Parameters
 
-- `aimeData`: Data containing the venue descriptor to be parsed.
-- `device`: The Metal Device to use when loading calibration meshes into memory.
+- `aimeData`: The Data that contains the venue descriptor to parse.
+- `device`: The Metal device to use when loading calibration meshes into memory.
 
 
 ---

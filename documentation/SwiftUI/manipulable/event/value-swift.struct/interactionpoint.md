@@ -6,7 +6,7 @@
 The point at which a person interacted with a view to begin manipulating it.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

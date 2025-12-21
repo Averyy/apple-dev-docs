@@ -11,7 +11,7 @@ A Boolean value that indicates whether the search results include queries.
 ## Declaration
 
 ```swift
-attribute boolean includeQueries;
+includeQueries?: boolean;
 ```
 
 #### Discussion
@@ -20,14 +20,14 @@ The default value is `true`.
 
 ## See Also
 
-- [includePhysicalFeatures](searchautocompleteoptions/includephysicalfeatures.md)
-  A Boolean value that indicates whether the autocomplete search results include physical features, such as mountain ranges, rivers, and ocean basins.
-- [includePointsOfInterest](searchautocompleteoptions/includepointsofinterest.md)
-  A Boolean value that indicates whether the search results include points of interest.
-- [limitToCountries](searchautocompleteoptions/limittocountries.md)
+- [includePhysicalFeatures](searchoptions/includephysicalfeatures.md)
+  A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
+- [includePointsOfInterest](searchoptions/includepointsofinterest.md)
+  A Boolean value that indicates whether the search results should include points of interest.
+- [limitToCountries](searchoptions/limittocountries.md)
   A string that constrains search results to within the provided countries.
-- [regionPriority](searchautocompleteoptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+- [regionPriority](searchoptions/regionpriority.md)
+  A region priority value that controls whether results occur outside, or strictly within, the region.
 
 
 ---

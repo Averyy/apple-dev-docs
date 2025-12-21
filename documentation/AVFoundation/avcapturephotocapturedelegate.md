@@ -20,8 +20,8 @@ protocol AVCapturePhotoCaptureDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Saving Captured Photos](saving-captured-photos.md)
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Saving captured photos](saving-captured-photos.md)
 
 #### Overview
 
@@ -42,7 +42,7 @@ The photo output always calls each method listed in Monitoring Capture Progress 
 
 ## Topics
 
-### Monitoring Capture Progress
+### Monitoring capture progress
 - [func photoOutput(AVCapturePhotoOutput, willBeginCaptureFor: AVCaptureResolvedPhotoSettings)](avcapturephotocapturedelegate/photooutput(_:willbegincapturefor:).md)
   Notifies the delegate that the capture output has resolved settings and will soon begin its capture process.
 - [func photoOutput(AVCapturePhotoOutput, willCapturePhotoFor: AVCaptureResolvedPhotoSettings)](avcapturephotocapturedelegate/photooutput(_:willcapturephotofor:).md)
@@ -51,7 +51,7 @@ The photo output always calls each method listed in Monitoring Capture Progress 
   Notifies the delegate that the photo has been taken.
 - [func photoOutput(AVCapturePhotoOutput, didFinishCaptureFor: AVCaptureResolvedPhotoSettings, error: (any Error)?)](avcapturephotocapturedelegate/photooutput(_:didfinishcapturefor:error:).md)
   Notifies the delegate that the capture process is complete.
-### Receiving Capture Results
+### Receiving capture results
 - [func photoOutput(AVCapturePhotoOutput, didFinishProcessingPhoto: AVCapturePhoto, error: (any Error)?)](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md)
   Provides the delegate with the captured image and associated metadata resulting from a photo capture.
 - [func photoOutput(AVCapturePhotoOutput, didFinishRecordingLivePhotoMovieForEventualFileAt: URL, resolvedSettings: AVCaptureResolvedPhotoSettings)](avcapturephotocapturedelegate/photooutput(_:didfinishrecordinglivephotomovieforeventualfileat:resolvedsettings:).md)
@@ -74,9 +74,9 @@ The photo output always calls each method listed in Monitoring Capture Progress 
 
 - [Capturing consistent color images](capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
-- [Capturing Still and Live Photos](capturing-still-and-live-photos.md)
+- [Capturing still and Live Photos](capturing-still-and-live-photos.md)
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

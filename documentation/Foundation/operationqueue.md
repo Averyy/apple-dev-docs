@@ -30,7 +30,7 @@ For more information about using operation queues, see the [`Concurrency Program
 
 ##### Determine the Execution Order
 
-An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same [`queuePriority`](operation/queuepriority-swift.property.md) and the [`isReady`](operation/isready.md) property returns [`true`](https://developer.apple.com/documentation/swift/true), the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations.
+An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same [`queuePriority`](operation/queuepriority-swift.property.md) and the [`isReady`](operation/isready.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true), the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations.
 
 However, don’t rely on queue semantics to ensure a specific execution order of operations  because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object isn’t ready to run until all of its dependent operations have finished running.
 

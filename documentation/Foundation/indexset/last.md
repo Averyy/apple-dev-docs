@@ -23,9 +23,11 @@ var last: IndexSet.Element? { get }
 ## See Also
 
 - [var count: Int](indexset/count.md)
+  Returns the number of integers in `self`.
 - [var first: IndexSet.Element?](indexset/first.md)
   The first integer in `self`, or nil if `self` is empty.
 - [var isEmpty: Bool](indexset/isempty.md)
+  Returns `true` if self contains no values.
 
 
 ---

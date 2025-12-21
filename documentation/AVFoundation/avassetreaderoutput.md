@@ -21,17 +21,17 @@ class AVAssetReaderOutput
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 #### Overview
 
 You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetreadertrackoutput.md) or [`AVAssetReaderVideoCompositionOutput`](avassetreadervideocompositionoutput.md), to an asset reader to perform specific tasks.
 
-> ❗ **Important**:  If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the output from making unnecessary copies.
+> ❗ **Important**:  If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the output from making unnecessary copies.
 
 ## Topics
 
-### Configuring Reading
+### Configuring reading
 - [var alwaysCopiesSampleData: Bool](avassetreaderoutput/alwayscopiessampledata.md)
   A Boolean value that indicates whether the output vends copied sample data.
 - [var supportsRandomAccess: Bool](avassetreaderoutput/supportsrandomaccess.md)
@@ -40,19 +40,17 @@ You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetr
   Restarts reading with a new set of time ranges.
 - [func markConfigurationAsFinal()](avassetreaderoutput/markconfigurationasfinal.md)
   Tells the output that it’s finished reconfiguring time ranges, and allows the asset reader to advance to a completed state.
-### Copying Sample Buffers
+### Copying sample buffers
 - [func copyNextSampleBuffer() -> CMSampleBuffer?](avassetreaderoutput/copynextsamplebuffer.md)
   Copies the next sample buffer from the output.
-### Inspecting the Media Type
-- [var mediaType: AVMediaType](avassetreaderoutput/mediatype.md)
-  The media type of samples that the output reads.
-### Classes
 - [AVAssetReaderOutput.Provider](avassetreaderoutput/provider.md)
-  Defines an interface for reading a single collection of smaples of a common media type from an AVAssetReader.
+  An object that reads a collection of samples of a common media type from an asset reader.
 - [AVAssetReaderOutput.RandomAccessController](avassetreaderoutput/randomaccesscontroller.md)
   Object used to reset an output provider to read specified time ranges.
-### Protocols
 - [AVAssetReaderOutput.SupportedPayload](avassetreaderoutput/supportedpayload.md)
+### Inspecting the media type
+- [var mediaType: AVMediaType](avassetreaderoutput/mediatype.md)
+  The media type of samples that the output reads.
 
 ## Relationships
 

@@ -76,7 +76,7 @@ You can add one or more team rules to your rule set depending on how many constr
 
 To create a team rule, set the rule’s type field to `TEAM` and the `teams` array becomes available to use in expressions. The `teams` array contains `Team` objects that represent the teams in the rule set. A team has a `players` property that contains `Player` objects that represent the players assigned to the team.
 
-Write an expression that returns [`true`](https://developer.apple.com/documentation/swift/true) when the size of the teams are the same using expression functions, the `teams` array, and the `players` property.
+Write an expression that returns [`true`](https://developer.apple.com/documentation/Swift/true) when the size of the teams are the same using expression functions, the `teams` array, and the `players` property.
 
 ```json
 length(teams[?name == 'red'].players[]) == length(teams[?name == 'blue'].players[])

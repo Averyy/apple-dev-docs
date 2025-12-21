@@ -17,9 +17,9 @@ var isSelectable: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the collection view allows the user to select items, or [`false`](https://developer.apple.com/documentation/swift/false) when it does not. You can set selections programmatically regardless of this setting.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the collection view allows the user to select items, or [`false`](https://developer.apple.com/documentation/Swift/false) when it does not. You can set selections programmatically regardless of this setting.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Changing the value from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false) removes the current selection if there is one.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Changing the value from [`true`](https://developer.apple.com/documentation/Swift/true) to [`false`](https://developer.apple.com/documentation/Swift/false) removes the current selection if there is one.
 
 ## See Also
 

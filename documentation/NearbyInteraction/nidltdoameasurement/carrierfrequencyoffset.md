@@ -3,17 +3,22 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-Indicates the estimated carrier frequency offset (dimensionless).
+The drift, as a ratio, across the frequencies of the receiver and the anchor.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 var carrierFrequencyOffset: Double { get }
 ```
+
+## See Also
+
+- [var measurementType: NIDLTDOAMeasurementType](nidltdoameasurement/measurementtype.md)
+  The type of anchor message that the measurement derives from.
 
 
 ---

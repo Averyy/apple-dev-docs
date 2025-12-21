@@ -65,8 +65,6 @@ enum NSRectAlignment
   The inset distances for views, taking the user interface layout direction into account.
 - [struct NSDirectionalRectEdge](nsdirectionalrectedge.md)
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
-- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
-  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [UIKit macros](uikit-macros.md)
   Macros that UIKit defines.
 

@@ -23,11 +23,11 @@ class CLLocationManager
 ## Mentions
 
 - [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
 - [Configuring your app to use location services](configuring-your-app-to-use-location-services.md)
-- [Requesting authorization to use location services](requesting-authorization-to-use-location-services.md)
-- [Getting heading and course information](getting-heading-and-course-information.md)
 - [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
+- [Getting heading and course information](getting-heading-and-course-information.md)
+- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+- [Requesting authorization to use location services](requesting-authorization-to-use-location-services.md)
 - [Monitoring the user’s proximity to geographic regions](monitoring-the-user-s-proximity-to-geographic-regions.md)
 - [Supporting live updates in SwiftUI and Mac Catalyst apps](supporting-live-updates-in-swiftui-and-mac-catalyst-apps.md)
 
@@ -84,7 +84,7 @@ For more information, see [`Configuring your app to use location services`](conf
 - [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 ### Specifying distance and accuracy
 - [var distanceFilter: CLLocationDistance](cllocationmanager/distancefilter.md)
   The minimum distance in meters the device must move horizontally before an update event is generated.

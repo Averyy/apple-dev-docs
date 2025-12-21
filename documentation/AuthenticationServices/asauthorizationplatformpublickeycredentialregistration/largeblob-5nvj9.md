@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+The request’s binary large object value.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

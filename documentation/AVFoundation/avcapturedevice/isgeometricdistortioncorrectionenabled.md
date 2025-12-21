@@ -19,7 +19,7 @@ var isGeometricDistortionCorrectionEnabled: Bool { get set }
 
 #### Discussion
 
-When the device supports geometric distortion correction (GDC), the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the device supports geometric distortion correction (GDC), the default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

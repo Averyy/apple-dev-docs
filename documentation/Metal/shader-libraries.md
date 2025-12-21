@@ -1,4 +1,4 @@
-# Shader Libraries
+# Shader libraries
 
 **Framework**: Metal
 
@@ -8,28 +8,29 @@ Manage and load your app’s Metal shaders.
 
 A Metal library represents a collection of one or more shaders. Xcode creates a library from the shader source files in a project, a Metal intermediate representation (IR) file, or a binary archive file. You can also create IR files from Metal source code by running the Metal compiler in a command-line environment.
 
-Apps create the default library instance by calling a Metal device’s [`makeDefaultLibrary()`](mtldevice/makedefaultlibrary().md) method. The default library contains all the shaders from a project’s shader source files, which Xcode compiles at build time. Apps create additional libraries by passing an IR file to an [`MTLDevice`](mtldevice.md) instance’s [`makeLibrary(URL:)`](mtldevice/makelibrary(url:).md) method or one of its sibling methods. The device can also create a library directly from source code by passing it as a string to the [`makeLibrary(source:options:)`](mtldevice/makelibrary(source:options:).md) method. See [`Shader Library and Archive Creation`](shader-library-and-archive-creation.md) for more information.
+Apps create the default library instance by calling a Metal device’s [`makeDefaultLibrary()`](mtldevice/makedefaultlibrary().md) method. The default library contains all the shaders from a project’s shader source files, which Xcode compiles at build time. Apps create additional libraries by passing an IR file to an [`MTLDevice`](mtldevice.md) instance’s [`makeLibrary(URL:)`](mtldevice/makelibrary(url:).md) method or one of its sibling methods. The device can also create a library directly from source code by passing it as a string to the [`makeLibrary(source:options:)`](mtldevice/makelibrary(source:options:).md) method. See [`Shader library and archive creation`](shader-library-and-archive-creation.md) for more information.
 
 You can apply a shader from a library to a pipeline state’s entry point, such as the [`computeFunction`](mtlcomputepipelinedescriptor/computefunction.md) property for a compute pass. Start by retrieving an [`MTLFunction`](mtlfunction.md) instance from a library, which is a reference to the library’s shader, by calling its [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method or a sibling method. Then set the function instance to the appropriate property of a pipeline descriptor. For example, an app can retrieve a vertex stage’s entry point shader from a library and assign it to the [`vertexFunction`](mtlrenderpipelinedescriptor/vertexfunction.md) property of an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md).
 
 Dynamic libraries are a collection of other shaders, typically utility functions, that support the entry point shaders for a pipeline state. To create a dynamic library, pass an [`MTLLibrary`](mtllibrary.md) instance to a device’s [`makeDynamicLibrary(library:)`](mtldevice/makedynamiclibrary(library:).md) method, or pass a file URL to [`makeDynamicLibrary(url:)`](mtldevice/makedynamiclibrary(url:).md). Add a dynamic library to a pipeline state by including it in an array of a pipeline descriptor’s preloaded libraries property. For example, if a vertex shader calls a shader in a dynamic library, directly or indirectly, add that dynamic library to the [`vertexPreloadedLibraries`](mtlrenderpipelinedescriptor/vertexpreloadedlibraries.md) property’s array. You can also build dynamic libraries with the Metal compiler in Terminal.
 
-Binary archives are precompiled static libraries for specific GPU architectures that allow you to avoid the cost of runtime shader compilation. Because Metal automatically builds and caches shaders on the device running an app, use binary archives as part of your distributed app, or deliver them through content updates. See [`Creating Binary Archives from Device-Built Pipeline State Objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) for more information on how to build and distribute binary archives for any device that supports Metal.
+Binary archives are precompiled static libraries for specific GPU architectures that allow you to avoid the cost of runtime shader compilation. Because Metal automatically builds and caches shaders on the device running an app, use binary archives as part of your distributed app, or deliver them through content updates. See [`Creating binary archives from device-built pipeline state objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) for more information on how to build and distribute binary archives for any device that supports Metal.
 
 ## Topics
 
-### Shader Compilation
-- [Metal Libraries](metal-libraries.md)
+### Shader compilation
+- [Metal libraries](metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal Dynamic Libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal Binary Archives](metal-binary-archives.md)
+- [Metal binary archives](metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
 - [protocol MTL4Compiler](mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
 - [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
 - [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+  The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
 - [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
   Represents the status of a compiler task.
 - [protocol MTL4Archive](mtl4archive.md)
@@ -40,11 +41,9 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Base interface for other function-derived interfaces.
 - [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
-  Represents reflection information for a binary function.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
-### Pipeline Compilation
+### Pipeline compilation
 - [enum MTL4BlendState](mtl4blendstate.md)
   Enumeration for controlling the blend state of a pipeline state object.
 - [class MTL4FunctionDescriptor](mtl4functiondescriptor.md)
@@ -55,8 +54,6 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Serves as the base descriptor for creating a Metal library.
 - [class MTL4LibraryFunctionDescriptor](mtl4libraryfunctiondescriptor.md)
   Describes a shader function from a Metal library.
-- [class MTL4LinkedFunctions](mtl4linkedfunctions.md)
-  Groups together functions to link.
 - [enum MTL4LogicalToPhysicalColorAttachmentMappingState](mtl4logicaltophysicalcolorattachmentmappingstate.md)
   Enumerates possible behaviors of how a pipeline maps its logical outputs to its color attachments.
 - [typealias MTL4NewBinaryFunctionCompletionHandler](mtl4newbinaryfunctioncompletionhandler.md)
@@ -78,7 +75,7 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 - [class MTLFunctionReflection](mtlfunctionreflection.md)
   Represents a reflection object containing information about a function in a Metal library.
 - [typealias MTLNewDynamicLibraryCompletionHandler](mtlnewdynamiclibrarycompletionhandler.md)
-### Pipeline Harvesting
+### Pipeline harvesting
 - [protocol MTL4PipelineDataSetSerializer](mtl4pipelinedatasetserializer.md)
   A fast-addition container for collecting data during pipeline state creation.
 - [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
@@ -89,7 +86,7 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Base type for descriptors you use for building pipeline state objects.
 - [class MTL4PipelineOptions](mtl4pipelineoptions.md)
   Provides options controlling how to compile a pipeline state.
-### Shader Library Management
+### Shader library management
 - [protocol MTLLibrary](mtllibrary.md)
   A collection of Metal shader functions.
 - [protocol MTLDynamicLibrary](mtldynamiclibrary.md)
@@ -105,11 +102,11 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 - [enum MTLCompileSymbolVisibility](mtlcompilesymbolvisibility.md)
 - [enum MTLLibraryOptimizationLevel](mtllibraryoptimizationlevel.md)
   The optimization options for the Metal compiler.
-### Shader Functions
+### Shader functions
 - [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
   A description of a function object to create.
 - [protocol MTLFunction](mtlfunction.md)
-  An object that represents a public shader function in a Metal library.
+  A interface that represents a public shader function in a Metal library.
 - [protocol MTLFunctionHandle](mtlfunctionhandle.md)
   An object representing a function that you can add to a visible function table.
 - [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)
@@ -122,7 +119,7 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   A specification of how to create an intersection function table.
 - [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
-### Stitched Function Libraries
+### Stitched function libraries
 - [Customizing shaders using function pointers and stitching](customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
 - [class MTLStitchedLibraryDescriptor](mtlstitchedlibrarydescriptor.md)
@@ -139,12 +136,12 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   An attribute to specify that Metal needs to inline all of the function calls when generating the stitched function.
 - [protocol MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
   A protocol to identify types that customize how the Metal compiler stitches a function together.
-### Compile-Time Variant Functions
+### Compile-time variant functions
 - [class MTLFunctionConstant](mtlfunctionconstant.md)
   A constant that specializes the behavior of a shader.
 - [class MTLFunctionConstantValues](mtlfunctionconstantvalues.md)
-  A set of constant values that specialize a graphics or compute function.
-### Introspection Data
+  A set of constant values that specialize a graphics or compute GPU function.
+### Introspection data
 - [class MTLComputePipelineReflection](mtlcomputepipelinereflection.md)
   Information about the arguments of a compute function.
 - [typealias MTLAutoreleasedComputePipelineReflection](mtlautoreleasedcomputepipelinereflection.md)
@@ -160,11 +157,11 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 - [protocol MTLTextureBinding](mtltexturebinding.md)
 - [protocol MTLThreadgroupBinding](mtlthreadgroupbinding.md)
 - [protocol MTLObjectPayloadBinding](mtlobjectpayloadbinding.md)
-### Function Arguments
+### Function arguments
 - [class MTLAttribute](mtlattribute.md)
   An object that describes an attribute defined in the stage-in argument for a shader.
 - [class MTLVertexAttribute](mtlvertexattribute.md)
-  An object that represents an attribute of a vertex function.
+  An instance that represents an attribute of a vertex function.
 - [class MTLArgument](mtlargument.md)
   Information about an argument of a graphics or compute function.
 - [typealias MTLAutoreleasedArgument](mtlautoreleasedargument.md)
@@ -173,7 +170,7 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   The resource type for an argument of a function.
 - [typealias MTLArgumentAccess](mtlargumentaccess.md)
   Function access restrictions to argument data in the shading language code.
-### Shader Types
+### Shader types
 - [class MTLType](mtltype.md)
   A description of a data type.
 - [enum MTLDataType](mtldatatype.md)
@@ -183,12 +180,12 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLPointerType](mtlpointertype.md)
   A description of a pointer.
 - [class MTLTextureReferenceType](mtltexturereferencetype.md)
   A description of a texture.
-### Shader Logging
+### Shader logging
 - [class MTLLogStateDescriptor](mtllogstatedescriptor.md)
   An interface that represents a log state configuration.
 - [protocol MTLLogState](mtllogstate.md)
@@ -205,7 +202,7 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 
 - [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
-- [Using Function Specialization to Build Pipeline Variants](using-function-specialization-to-build-pipeline-variants.md)
+- [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 
 

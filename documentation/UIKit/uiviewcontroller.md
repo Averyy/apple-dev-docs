@@ -145,6 +145,8 @@ For more information about how the system determines which view controllers to p
   A localized string that represents the view this controller manages.
 - [var preferredContentSize: CGSize](uiviewcontroller/preferredcontentsize.md)
   The preferred size for the view controller’s view.
+- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+  SwiftUI ornaments to display adjacent to the view controller.
 ### Responding to view-related events
 - [func viewWillAppear(Bool)](uiviewcontroller/viewwillappear(_:).md)
   Notifies the view controller that its view is about to be added to a view hierarchy.
@@ -164,6 +166,15 @@ For more information about how the system determines which view controllers to p
   A Boolean value indicating whether the view controller is moving from a parent view controller.
 - [var isMovingToParent: Bool](uiviewcontroller/ismovingtoparent.md)
   A Boolean value indicating whether the view controller is moving to a parent view controller.
+### Managing the view’s properties
+- [UIViewController.ViewLoading](uiviewcontroller/viewloading.md)
+  A property wrapper that loads the view controller’s view before accessing the property.
+- [func updateProperties()](uiviewcontroller/updateproperties.md)
+  Configures the view controller’s content and styling properties.
+- [func updatePropertiesIfNeeded()](uiviewcontroller/updatepropertiesifneeded.md)
+  Forces an immediate properties update for this view controller and its view, including any view controllers and views in this subtree.
+- [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
+  Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.
 ### Extending the view’s safe area
 - [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
   Position views so that they aren’t obstructed by other content.
@@ -201,11 +212,11 @@ For more information about how the system determines which view controllers to p
 - [func setNeedsUpdateOfSupportedInterfaceOrientations()](uiviewcontroller/setneedsupdateofsupportedinterfaceorientations.md)
   Notifies the view controller about a change in supported interface orientations or preferred interface orientation for presentation.
 - [var prefersInterfaceOrientationLocked: Bool](uiviewcontroller/prefersinterfaceorientationlocked.md)
-  Whether this view controller prefers the scene’s interface orientation to be locked when shown. The default is `NO`. Note that this preference may or may not be honored. See `UIWindowScene.Geometry` for the current state of interface orientation lock.
+  A Boolean value that indicates whether the view controller prefers to lock the scene’s interface orientation when the scene is visible.
 - [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked.md)
-  Call whenever the view controller’s preference for interface orientation lock has changed
-- [var childViewControllerForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childviewcontrollerforinterfaceorientationlock.md)
-  Override to return a child view controller or nil. If non-nil, that view controller’s preference for interface orientation lock will be used. If nil, `self` is used. Whenever the return value changes, call `setNeedsUpdateOfPrefersInterfaceOrientationLocked()`.
+  Indicates that the view controller changed the interface orientation lock preference.
+- [var childForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childforinterfaceorientationlock.md)
+  A child view controller to query for the interface orientation lock preference.
 ### Performing segues
 - [func shouldPerformSegue(withIdentifier: String, sender: Any?) -> Bool](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md)
   Determines whether the segue with the specified identifier should be performed.
@@ -226,6 +237,7 @@ For more information about how the system determines which view controllers to p
   Presents a view controller in a primary context.
 - [func showDetailViewController(UIViewController, sender: Any?)](uiviewcontroller/showdetailviewcontroller(_:sender:).md)
   Presents a view controller in a secondary (or detail) context.
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 - [func present(UIViewController, animated: Bool, completion: (() -> Void)?)](uiviewcontroller/present(_:animated:completion:).md)
   Presents a view controller modally.
 - [func dismiss(animated: Bool, completion: (() -> Void)?)](uiviewcontroller/dismiss(animated:completion:).md)
@@ -283,12 +295,21 @@ For more information about how the system determines which view controllers to p
   Notifies the view controller that a change occurred that might affect the preferred interface style.
 - [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
   Constants that indicate the interface style for the app.
+### Adjusting the container background style
+- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
+- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
+- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
+- [enum UIContainerBackgroundStyle](uicontainerbackgroundstyle.md)
 ### Observing trait changes
 - [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](uiviewcontroller/traitoverrides-1z1cc.md)
+  A mutable container of traits you use to set trait changes for this view controller and its views.
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
+- [func updateTraitsIfNeeded()](uiviewcontroller/updatetraitsifneeded.md)
+  Updates traits immediately for this view controller and its view, including any view controllers and views in this subtree.
 ### Managing child view controllers in a custom container
 - [var children: [UIViewController]](uiviewcontroller/children.md)
   An array of view controllers that are children of the current view controller.
@@ -334,6 +355,7 @@ For more information about how the system determines which view controllers to p
 - [var toolbarItems: [UIBarButtonItem]?](uiviewcontroller/toolbaritems.md)
   The toolbar items associated with the view controller.
 ### Configuring tab bar content
+- [var tab: UITab?](uiviewcontroller/tab.md)
 - [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
   The tab bar item that represents the view controller when added to a tab bar controller.
 - [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
@@ -442,29 +464,9 @@ For more information about how the system determines which view controllers to p
 ### Logging user interaction intervals
 - [var interactionActivityTrackingBaseName: String?](uiviewcontroller/interactionactivitytrackingbasename.md)
   The base name the view controller uses for logging signposts that annotate user interactions.
-### Supporting types
-- [UIViewController.ViewLoading](uiviewcontroller/viewloading.md)
-  A property wrapper that loads the view controller’s view before accessing the property.
-- [enum UIContainerBackgroundStyle](uicontainerbackgroundstyle.md)
 ### Deprecated
 - [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
   Symbols that view controllers no longer support.
-### Structures
-- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
-### Instance Properties
-- [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
-- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
-- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
-- [var tab: UITab?](uiviewcontroller/tab.md)
-### Instance Methods
-- [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
-- [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
-  Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.
-- [func updateProperties()](uiviewcontroller/updateproperties.md)
-  Override point for subclasses to update properties of this view controller or its view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
-- [func updatePropertiesIfNeeded()](uiviewcontroller/updatepropertiesifneeded.md)
-  Forces an immediate properties update for this view controller and its view, including any view controllers and views in this subtree.
-- [func updateTraitsIfNeeded()](uiviewcontroller/updatetraitsifneeded.md)
 
 ## Relationships
 

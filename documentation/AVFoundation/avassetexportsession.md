@@ -29,12 +29,12 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
 
 ## Topics
 
-### Creating an Export Session
+### Creating an export session
 - [init?(asset: AVAsset, presetName: String)](avassetexportsession/init(asset:presetname:).md)
   Creates an export session with a preset configuration.
-- [Export Presets](export-presets.md)
+- [Export presets](export-presets.md)
   Configure an export session to output media in standard sizes and formats.
-### Accessing Export Presets
+### Accessing export presets
 - [var presetName: String](avassetexportsession/presetname.md)
   The name of the preset that the asset export session uses.
 - [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](avassetexportsession/determinecompatiblefiletypes(completionhandler:).md)
@@ -45,7 +45,7 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
 - [class func exportPresets(compatibleWith: AVAsset) -> [String]](avassetexportsession/exportpresets(compatiblewith:).md)
   Returns compatible export presets for the asset.
-### Configuring Output
+### Configuring output
 - [var outputURL: URL?](avassetexportsession/outputurl.md)
   A URL where an asset export session writes its output.
 - [var outputFileType: AVFileType?](avassetexportsession/outputfiletype.md)
@@ -64,34 +64,34 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
   The file length that the output of the session must not exceed.
 - [var directoryForTemporaryFiles: URL?](avassetexportsession/directoryfortemporaryfiles.md)
   A directory suitable to store temporary files that the export process generates.
-### Configuring Metadata
+### Configuring metadata
 - [var metadata: [AVMetadataItem]?](avassetexportsession/metadata.md)
   The metadata an export session writes to the output container file.
 - [var metadataItemFilter: AVMetadataItemFilter?](avassetexportsession/metadataitemfilter.md)
   An object the export session uses to filter the metadata items it transfers to the output asset.
-### Configuring Video Output
+### Configuring video output
 - [var videoComposition: AVVideoComposition?](avassetexportsession/videocomposition.md)
   An optional object that provides instructions for how to composite frames of video.
 - [var customVideoCompositor: (any AVVideoCompositing)?](avassetexportsession/customvideocompositor.md)
   An optional custom object to use when compositing video frames.
-### Configuring Track Groups
+### Configuring track groups
 - [var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling](avassetexportsession/audiotrackgrouphandling.md)
   A policy that defines how the session exports alternate audio tracks.
 - [struct AVAssetTrackGroupOutputHandling](avassettrackgroupoutputhandling.md)
   A type that specifies policies for how an export session processes alternate tracks in a track group.
-### Configuring Audio Output
+### Configuring audio output
 - [var audioMix: AVAudioMix?](avassetexportsession/audiomix.md)
   The parameters for audio mixing and an indication of whether to enable nondefault audio mixing for export.
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetexportsession/audiotimepitchalgorithm.md)
   A processing algorithm for managing audio pitch for scaled audio edits.
-### Exporting Media
+### Exporting media
 - [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](avassetexportsession/export(to:as:isolation:).md)
   Exports the asset to the output location in the specified file type.
 - [func cancelExport()](avassetexportsession/cancelexport.md)
   Cancels the execution of an export session.
 - [func exportAsynchronously(completionHandler: () -> Void)](avassetexportsession/exportasynchronously(completionhandler:).md)
   Starts the asynchronous execution of an export session.
-### Monitoring Export Progress
+### Monitoring export progress
 - [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
 ](avassetexportsession/states(updateinterval:).md)
   Monitors the progress state of an export operation.
@@ -105,17 +105,17 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
   A value that indicates the progress of the export.
 - [var error: (any Error)?](avassetexportsession/error.md)
   An optional error object.
-### Estimating File Length and Duration
+### Estimating file length and duration
 - [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](avassetexportsession/estimateoutputfilelength(completionhandler:).md)
   Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
 - [var estimatedOutputFileLength: Int64](avassetexportsession/estimatedoutputfilelength.md)
   The estimated length of the exported file, in bytes.
-### Estimating Duration
+### Estimating duration
 - [func estimateMaximumDuration(completionHandler: (CMTime, (any Error)?) -> Void)](avassetexportsession/estimatemaximumduration(completionhandler:).md)
   Starts estimating the maximum duration of the export while considering the asset, preset, and time range configuration of the export session.
 - [var maxDuration: CMTime](avassetexportsession/maxduration.md)
   Provides an estimate of the maximum duration of the exported media.
-### Accessing the Asset
+### Accessing the asset
 - [var asset: AVAsset](avassetexportsession/asset.md)
   An asset that a session exports.
 

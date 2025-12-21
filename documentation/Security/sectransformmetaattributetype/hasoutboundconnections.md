@@ -16,7 +16,7 @@ case hasOutboundConnections
 
 #### Discussion
 
-This metadata value is [`true`](https://developer.apple.com/documentation/swift/true) if the attribute has an outbound connection.
+This metadata value is [`true`](https://developer.apple.com/documentation/Swift/true) if the attribute has an outbound connection.
 
 
 ---

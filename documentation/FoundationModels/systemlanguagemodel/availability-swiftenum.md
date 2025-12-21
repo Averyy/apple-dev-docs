@@ -6,11 +6,11 @@
 The availability status for a specific system language model.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,6 +18,10 @@ The availability status for a specific system language model.
 @frozen
 enum Availability
 ```
+
+#### Overview
+
+> **Note**: [`availability`](systemlanguagemodel/availability-swift.property.md)
 
 ## Topics
 
@@ -28,11 +32,6 @@ enum Availability
   Indicates that the system is not ready for requests.
 - [SystemLanguageModel.Availability.UnavailableReason](systemlanguagemodel/availability-swift.enum/unavailablereason.md)
   The unavailable reason.
-### Comparing availability
-- [static func == (SystemLanguageModel.Availability, SystemLanguageModel.Availability) -> Bool](systemlanguagemodel/availability-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](systemlanguagemodel/availability-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

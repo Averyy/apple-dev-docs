@@ -49,6 +49,7 @@ struct CocoaError
 - [var underlying: (any Error)?](cocoaerror/underlying.md)
   The underlying error behind this error, if any.
 - [var underlyingErrors: [any Error]](cocoaerror/underlyingerrors.md)
+  A list of underlying errors, if any. It includes the values of both NSUnderlyingErrorKey and NSMultipleUnderlyingErrorsKey. If there are no underlying errors, returns an empty array.
 - [var url: URL?](cocoaerror/url.md)
   The URL associated with this error, if any.
 - [var validationKey: String?](cocoaerror/validationkey.md)

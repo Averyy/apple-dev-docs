@@ -70,6 +70,9 @@ func render() {
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](../SwiftUI/Migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
+### Structures
+- [struct Observations](observations.md)
+  An asychronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
 ### Macros
 - [macro ObservationIgnored()](observationignored().md)
   Disables observation tracking of a property.

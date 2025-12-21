@@ -18,7 +18,7 @@ To create plural variants for formatted strings that contain amounts, see [`Loca
 
 ##### Add a Strings Dictionary File to Your Project
 
-To add a `.stringsdict` file to your project, choose File > New > File. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
+To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
 ##### Provide String Variants for Different Widths
 

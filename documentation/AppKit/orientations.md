@@ -2,7 +2,11 @@
 
 **Framework**: AppKit
 
-Values that indicate the orientation of elements, such as scroll bars and split views. Use these values with an accessibility element’s [`NSAccessibility`](nsaccessibility.md) property.
+Values that indicate the orientation of elements, such as scroll bars and split views.
+
+#### Overview
+
+Use these values with an accessibility element’s [`orientation`](nsaccessibility-swift.struct/attribute/orientation.md) property.
 
 ## Topics
 

@@ -21,7 +21,7 @@ func contains(_ p: CGPoint) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bounds of the layer contains the point.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the bounds of the layer contains the point.
 
 ## Parameters
 

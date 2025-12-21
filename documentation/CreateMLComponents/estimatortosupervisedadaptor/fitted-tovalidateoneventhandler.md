@@ -34,8 +34,8 @@ The fitted transformer.
 
 - [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](estimatortosupervisedadaptor/fitted(to:eventhandler:).md)
   Fits a transformer to a sequence of examples, ignoring the annotations and the validation.
-- [EstimatorToSupervisedAdaptor.Transformer](estimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

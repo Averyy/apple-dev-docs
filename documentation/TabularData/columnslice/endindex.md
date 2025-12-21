@@ -28,11 +28,6 @@ var endIndex: Int { get }
   Returns the index immediately before an element index.
 - [func index(after: Int) -> Int](columnslice/index(after:).md)
   Returns the index immediately after an element index.
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](columnslice/index(_:offsetby:limitedby:).md)
-- [func formIndex(before: inout Self.Index)](columnslice/formindex(before:).md)
-  Replaces the given index with its predecessor.
-- [func formIndex(after: inout Self.Index)](columnslice/formindex(after:).md)
-  Replaces the given index with its successor.
 
 
 ---

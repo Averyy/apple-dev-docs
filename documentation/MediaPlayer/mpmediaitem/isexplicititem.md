@@ -20,7 +20,7 @@ var isExplicitItem: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item contains explicit content.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the media item contains explicit content.
 
 ## See Also
 

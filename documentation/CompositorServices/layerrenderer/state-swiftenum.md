@@ -6,7 +6,7 @@
 The states of the layer renderer, which tell you how to proceed with drawing operations.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

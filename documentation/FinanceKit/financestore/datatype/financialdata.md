@@ -15,6 +15,11 @@ The value that describes financial data, such as account information.
 case financialData
 ```
 
+## See Also
+
+- [FinanceStore.DataType.orders](financestore/datatype/orders.md)
+  The value that describes orders records, such as purchases.
+
 
 ---
 

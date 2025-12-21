@@ -11,14 +11,14 @@ Review unsupported symbols and their replacements.
   Registers an audio output unit for use by other applications.
 - [func AudioOutputUnitGetHostIcon(AudioUnit, Float) -> UIImage?](audiooutputunitgethosticon(_:_:).md)
   The host app’s icon.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.
 ### Functions
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.
@@ -65,7 +65,7 @@ Review unsupported symbols and their replacements.
   Invoked when an audio session property changes in iOS.
 ### Data Types
 - [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef = MIDIObjectRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
   A MIDI source or destination an entity owns.
 - [typealias MagicCookieInfo](magiccookieinfo.md)
   A structure holding magic cookie information.

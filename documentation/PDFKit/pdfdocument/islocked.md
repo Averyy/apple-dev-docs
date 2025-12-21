@@ -21,7 +21,7 @@ var isLocked: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document is locked; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the document is locked; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

@@ -18,6 +18,8 @@ Returns kIOReturnSuccess on success, or an error otherwise.
 
 #### Discussion
 
+Set the stack requested hardware assists.
+
 Driver should implement this function to be able to update itself with requested assists.
 
 ## Parameters

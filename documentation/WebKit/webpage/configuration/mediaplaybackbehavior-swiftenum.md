@@ -6,10 +6,10 @@
 The behavior used when playing HTML video within a page.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- visionOS 2.4+
+- visionOS 26.0+
 
 ## Declaration
 

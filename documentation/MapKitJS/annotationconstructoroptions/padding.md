@@ -11,12 +11,12 @@ Spacing to add around the annotation when showing items.
 ## Declaration
 
 ```swift
-attribute mapkit.Padding padding;
+padding?: Padding;
 ```
 
 #### Discussion
 
-Padding prevents any items from touching the edges of the map. Set `padding` to a [`mapkit.Padding`](mapkit.padding/mapkit.padding.md) object (the default is no padding on all sides).
+Padding prevents any items from touching the edges of the map. Set `padding` to a [`Padding`](padding.md) object. The default is no padding on all sides.
 
 ## See Also
 

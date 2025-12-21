@@ -47,8 +47,8 @@ To learn more about the API you use in your package manifest, see [`Package`](ht
 
 ## See Also
 
-- [Source Editor](source-editor.md)
-  Edit your source files, locate issues, and make necessary changes using the Source Editor.
+- [Source editor](source-editor.md)
+  Edit your source files, locate issues, and make necessary changes using the source editor.
 - [Bundles and frameworks](bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
 

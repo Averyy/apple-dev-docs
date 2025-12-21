@@ -40,9 +40,6 @@ struct Error
 ### Enumerations
 - [MusicDataRequest.Error.Source](musicdatarequest/error/source-swift.enum.md)
   A representation of the source of an error from Apple Music API.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicdatarequest/error/customstringconvertible-implementations.md)
-- [Error Implementations](musicdatarequest/error/error-implementations.md)
 
 ## Relationships
 

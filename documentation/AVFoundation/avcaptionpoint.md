@@ -19,7 +19,7 @@ struct AVCaptionPoint
 
 ## Topics
 
-### Inspecting the Point
+### Inspecting the point
 - [var x: AVCaptionDimension](avcaptionpoint/x.md)
   The point’s x coordinate.
 - [var y: AVCaptionDimension](avcaptionpoint/y.md)

@@ -22,8 +22,8 @@ class SKPhysicsWorld
 
 ## Mentions
 
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
 - [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
+- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
 - [Getting Started with Physics](getting-started-with-physics.md)
 
 #### Overview

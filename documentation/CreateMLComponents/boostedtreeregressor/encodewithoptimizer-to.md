@@ -25,6 +25,11 @@ func encodeWithOptimizer(_ transformer: TreeRegressorModel, to encoder: inout an
 - `transformer`: A transformer this estimator creates.
 - `encoder`: An encoder.
 
+## See Also
+
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](boostedtreeregressor/decodewithoptimizer(from:).md)
+  Reads the encoded transformer and optimizer with a decoder.
+
 
 ---
 

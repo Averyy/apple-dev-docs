@@ -42,7 +42,7 @@ For information about configuring win-back offers in App Store Connect, see [`Se
 - [let offer: Transaction.Offer?](product/subscriptioninfo/renewalinfo/offer.md)
   A subscription offer that applies to the transaction at the next renewal period.
 - [Transaction.Offer](transaction/offer-swift.struct.md)
-  The subscription offers that apply to a transaction.
+  Discounts or promotions that apply to a transaction.
 
 
 ---

@@ -22,7 +22,7 @@ class AVAssetDownloadContentConfiguration
 
 ## Topics
 
-### Accessing Configuration Details
+### Accessing configuration details
 - [var variantQualifiers: [AVAssetVariantQualifier]](avassetdownloadcontentconfiguration/variantqualifiers.md)
   The variant qualifiers for this configuration.
 - [class AVAssetVariantQualifier](avassetvariantqualifier.md)
@@ -53,6 +53,8 @@ class AVAssetDownloadContentConfiguration
   The configuration for the auxiliary content that the task downloads.
 - [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
+- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
+  Sets media selection on interstitials for this asset
 
 
 ---

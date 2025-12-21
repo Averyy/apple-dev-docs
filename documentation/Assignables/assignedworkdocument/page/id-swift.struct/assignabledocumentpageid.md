@@ -17,11 +17,6 @@ The [`AssignableDocument`](assignabledocument.md)  page ID that this work page I
 var assignableDocumentPageID: AssignableDocument.Page.ID { get }
 ```
 
-## See Also
-
-- [AssignedWorkDocument.Page.ID.Element](assignedworkdocument/page/id-swift.struct/element.md)
-  The document element type that this reference is for.
-
 
 ---
 

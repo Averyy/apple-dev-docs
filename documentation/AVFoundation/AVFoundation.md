@@ -73,37 +73,6 @@ AVFoundation combines several major technology areas that together encompass a w
   A structure that defines the errors that framework operations can generate.
 ### Macros
 - [Macros](avfoundation-macros.md)
-### Classes
-- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
-- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
-  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
-- [class AVMediaPresentationSelector](avmediapresentationselector.md)
-  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
-- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
-  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
-- [class AVMetadataCatHeadObject](avmetadatacatheadobject.md)
-- [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
-- [class AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
-  Represents a summary metric event with aggregated metrics for the entire download task.
-- [class AVMetricMediaRendition](avmetricmediarendition.md)
-- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
-### Structures
-- [struct AVCIImageFilteringParameters](avciimagefilteringparameters.md)
-- [struct AVCIImageFilteringResult](avciimagefilteringresult.md)
-  An output video frame processed with Core Image filtering.
-- [struct AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus.md)
-### Variables
-- [let AVAssetExportPresetHEVC4320x2160: String](avassetexportpresethevc4320x2160.md)
-- [let AVAssetExportPresetMVHEVC4320x4320: String](avassetexportpresetmvhevc4320x4320.md)
-- [let AVAssetExportPresetMVHEVC7680x7680: String](avassetexportpresetmvhevc7680x7680.md)
-- [let AVContentKeyRequestRandomDeviceIdentifierSeedKey: String](avcontentkeyrequestrandomdeviceidentifierseedkey.md)
-  Value is an NSData containing a 16-byte seed to randomize the user’s deviceID contained in the SPC blob during FairPlay key exchange
-- [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
-  Value is an Boolean indicating whether the user’s deviceID contained in the SPC blob during FairPlay key exchange should be randomized using a system generated seed
-- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
-  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
-### Enumerations
-- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
 
 
 ---

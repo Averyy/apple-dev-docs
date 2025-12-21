@@ -23,17 +23,6 @@ enum TransactionType
   A purchase transaction.
 - [PaymentCardTransactionRequest.TransactionType.refund](paymentcardtransactionrequest/transactiontype/refund.md)
   A refund transaction.
-### Operators
-- [static func == (PaymentCardTransactionRequest.TransactionType, PaymentCardTransactionRequest.TransactionType) -> Bool](paymentcardtransactionrequest/transactiontype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](paymentcardtransactionrequest/transactiontype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](paymentcardtransactionrequest/transactiontype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](paymentcardtransactionrequest/transactiontype/equatable-implementations.md)
 
 ## Relationships
 

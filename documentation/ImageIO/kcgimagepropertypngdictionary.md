@@ -3,7 +3,7 @@
 **Framework**: Image I/O  
 **Kind**: var
 
-A dictionary of key-value pairs for an image that uses Portable Network Graphics (PNG) format. See [`PNG Image Properties`](png-image-properties.md).
+A dictionary of key-value pairs for an image that uses Portable Network Graphics (PNG) format.
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ A dictionary of key-value pairs for an image that uses Portable Network Graphics
 ```swift
 let kCGImagePropertyPNGDictionary: CFString
 ```
+
+#### Discussion
+
+For more information about the available metadata keys, see [`PNG Image Properties`](png-image-properties.md).
 
 
 ---

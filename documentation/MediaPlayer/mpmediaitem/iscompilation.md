@@ -20,7 +20,7 @@ var isCompilation: Bool { get }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), the media item is part of a compilation.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the media item is part of a compilation.
 
 ## See Also
 

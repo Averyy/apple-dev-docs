@@ -16,7 +16,7 @@ optional func shouldReplaceCharacters(inRanges ranges: [NSValue], with strings: 
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the replacement should occur; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the replacement should occur; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

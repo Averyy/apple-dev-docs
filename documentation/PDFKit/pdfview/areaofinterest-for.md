@@ -17,7 +17,7 @@ Returns the type of area for a specific cursor location point.
 
 ```swift
 @MainActor
-func areaOfInterest(for cursorLocation: CGPoint) -> PDFAreaOfInterest
+func areaOfInterest(for cursorLocation: NSPoint) -> PDFAreaOfInterest
 ```
 
 ## See Also

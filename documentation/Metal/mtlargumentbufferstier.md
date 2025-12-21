@@ -21,11 +21,11 @@ enum MTLArgumentBuffersTier
 
 #### Overview
 
-See [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities. Query the [`argumentBuffersSupport`](mtldevice/argumentbufferssupport.md) property to determine argument buffer tier support for a given device.
+See [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities. Query the [`argumentBuffersSupport`](mtldevice/argumentbufferssupport.md) property to determine argument buffer tier support for a given device.
 
 ## Topics
 
-### Enumeration Cases
+### Enumeration cases
 - [MTLArgumentBuffersTier.tier1](mtlargumentbufferstier/tier1.md)
   Support for tier 1 argument buffers.
 - [MTLArgumentBuffersTier.tier2](mtlargumentbufferstier/tier2.md)
@@ -45,6 +45,8 @@ See [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-perfor
 
 ## See Also
 
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLLogStateError](mtllogstateerror.md)
 - [enum MTLMathFloatingPointFunctions](mtlmathfloatingpointfunctions.md)
   Indicates which FP32 math functions Metal uses.

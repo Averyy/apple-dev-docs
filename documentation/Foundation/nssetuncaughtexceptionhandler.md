@@ -28,7 +28,7 @@ Sets the top-level error-handling function where you can perform last-minute log
 
 - [func NSGetUncaughtExceptionHandler() -> ((NSException) -> Void)?](nsgetuncaughtexceptionhandler().md)
   Returns the top-level error handler.
-- [@MainActor func reportException(_ exception: NSException)](../AppKit/NSApplication/reportException(_:).md)
+- [func reportException(NSException)](../AppKit/NSApplication/reportException(_:).md)
   Logs a given exception by calling `NSLog()`.
 - [func NSGetUncaughtExceptionHandler() -> ((NSException) -> Void)?](nsgetuncaughtexceptionhandler().md)
   Returns the top-level error handler.

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to grant photos permission to the app
+The person needs to allow the app to access to the photo library.
 
 **Availability**:
 - iOS 18.0+

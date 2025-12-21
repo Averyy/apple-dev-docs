@@ -40,6 +40,10 @@ For more precise control over gradients, see [`CGShading`](cgshading.md).
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](cggradient/typeid.md)
   Returns the Core Foundation type identifier for CGGradient objects.
+### Initializers
+- [init?(headroom: Float, colorSpace: CGColorSpace, colorComponents: UnsafePointer<CGFloat>, locations: UnsafePointer<CGFloat>?, count: Int)](cggradient/init(headroom:colorspace:colorcomponents:locations:count:).md)
+### Instance Properties
+- [var contentHeadroom: Float](cggradient/contentheadroom.md)
 
 ## Relationships
 

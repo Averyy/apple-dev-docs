@@ -10,7 +10,7 @@ A Boolean that indicates whether the occlusion material receives dynamic lightin
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

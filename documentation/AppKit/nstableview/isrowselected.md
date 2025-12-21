@@ -17,7 +17,7 @@ func isRowSelected(_ row: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row at `rowIndex` is selected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the row at `rowIndex` is selected, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

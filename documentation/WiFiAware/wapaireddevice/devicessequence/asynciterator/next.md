@@ -6,8 +6,8 @@
 Returns the next dictionary in the sequence.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ The next [`WAPairedDevice.Devices`](wapaireddevice/devices.md) snapshot, or `nil
 
 The [`WAPairedDevice.Devices`](wapaireddevice/devices.md) dictionary holds the latest snapshot of the currently paired devices that are known and accessible to your app.
 
-> **Note**:  An error if the system can’t read the sequence, or if your app isn’t permitted to access Wi-Fi Aware devices.
+> **Note**: An error if the system can’t read the sequence, or if your app isn’t permitted to access Wi-Fi Aware devices.
 
 ## See Also
 

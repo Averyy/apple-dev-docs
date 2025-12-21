@@ -25,7 +25,7 @@ var search: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.browser.search` schema:
 
 ```swift
-@AssistantIntent(schema: .browser.search)
+@AppIntent(schema: .browser.search)
 struct SearchWebIntent: ShowInAppSearchResultsIntent {
     static var searchScopes: [StringSearchScope] = [.general]
 

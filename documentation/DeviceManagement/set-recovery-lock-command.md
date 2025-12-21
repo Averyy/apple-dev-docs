@@ -12,7 +12,7 @@ Set or clear the Recovery Lock password.
 
 This command sets, or clears, a password on booting to recoveryOS. When the device unenrolls MDM the system removes the recovery password.
 
-This command is only available with Apple silicon.
+This command is only available on a Mac with Apple silicon.
 
 ##### Command Availability
 

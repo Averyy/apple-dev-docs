@@ -17,7 +17,7 @@ var inputMeterLevel: Float { get }
 
 #### Discussion
 
-The value of this property is undefined if [`isInputMeteringEnabled`](gkvoicechatservice/isinputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is undefined if [`isInputMeteringEnabled`](gkvoicechatservice/isinputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

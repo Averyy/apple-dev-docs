@@ -20,9 +20,9 @@ func autosave(withImplicitCancellability autosavingIsImplicitlyCancellable: Bool
 The default implementation of this method does the following:
 
 1. Checks the value of the [`hasUnautosavedChanges`](nsdocument/hasunautosavedchanges.md) property.
-2. If the value of that property is [`false`](https://developer.apple.com/documentation/swift/false), the method runs the completion handler with a `nil` error and returns immediately.
+2. If the value of that property is [`false`](https://developer.apple.com/documentation/Swift/false), the method runs the completion handler with a `nil` error and returns immediately.
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), calls [`autosavesInPlace`](nsdocument/autosavesinplace.md) on the class to determine where the autosaved document contents should go.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), calls [`autosavesInPlace`](nsdocument/autosavesinplace.md) on the class to determine where the autosaved document contents should go.
 
 The method also gets the value in [`fileURL`](nsdocument/fileurl.md) to ensure that the file has an actual URL, because it is not possible to autosave in place if the document does not yet have a permanent location. 3. Checks the value in the [`autosavingFileType`](nsdocument/autosavingfiletype.md) property to determine the file type for the autosaved file. 4. Calls [`save(to:ofType:for:completionHandler:)`](nsdocument/save(to:oftype:for:completionhandler:).md).
 

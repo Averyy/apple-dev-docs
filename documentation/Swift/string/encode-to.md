@@ -30,7 +30,7 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](string/init(from:)-qki5.md)
+- [init(from: any Decoder) throws](string/init(from:).md)
   Creates a new instance by decoding from the given decoder.
 
 

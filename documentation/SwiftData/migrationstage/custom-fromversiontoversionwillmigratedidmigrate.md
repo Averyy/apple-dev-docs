@@ -16,6 +16,7 @@
 ## Declaration
 
 ```swift
+@preconcurrency
 case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: ((ModelContext) throws -> Void)?, didMigrate: ((ModelContext) throws -> Void)?)
 ```
 

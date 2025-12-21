@@ -6,10 +6,8 @@
 A Boolean value that indicates whether the control behaves as a swipeable radial button.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,36 +21,36 @@ If `YES`, the control behaves as a swipable radial button, rather than a collect
 
 ## See Also
 
-- [var anchor: TCTransformAnchor](tcdirectionpaddescriptor/anchor.md)
-  The anchor point that the direction pad’s offset is relative to.
-- [var colliderType: TCColliderType](tcdirectionpaddescriptor/collidertype.md)
-  The type of collider to use for the direction pad.
 - [var compositeLabel: TCControlLabel?](tcdirectionpaddescriptor/compositelabel.md)
   A composite control label.
+- [var downContents: TCControlContents?](tcdirectionpaddescriptor/downcontents.md)
+  The contents for the down button.
 - [var downLabel: TCControlLabel?](tcdirectionpaddescriptor/downlabel.md)
   The label for the down button, if the control is not a composite direction pad.
-- [var downVisuals: TCControlVisuals?](tcdirectionpaddescriptor/downvisuals.md)
-  The visuals for the down button.
-- [var hasMutuallyExclusiveInput: Bool](tcdirectionpaddescriptor/hasmutuallyexclusiveinput.md)
-  A Boolean value that indicates whether the control has mutally exclusive input.
-- [var highlightTime: simd_float1](tcdirectionpaddescriptor/highlighttime.md)
+- [var highlightDuration: TimeInterval](tcdirectionpaddescriptor/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
+- [var inputIsMutuallyExclusive: Bool](tcdirectionpaddescriptor/inputismutuallyexclusive.md)
+  A Boolean value that indicates whether the control has mutally exclusive input.
 - [var isDigital: Bool](tcdirectionpaddescriptor/isdigital.md)
   A Boolean value that indicates whether the control behaves as a digital button.
-- [var layer: simd_int1](tcdirectionpaddescriptor/layer.md)
-  The layer of the direction pad, used for z-sorting.
+- [var leftContents: TCControlContents?](tcdirectionpaddescriptor/leftcontents.md)
+  The contents for the left button.
 - [var leftLabel: TCControlLabel?](tcdirectionpaddescriptor/leftlabel.md)
   The label for the left button, if the control is not a composite direction pad.
-- [var leftVisuals: TCControlVisuals?](tcdirectionpaddescriptor/leftvisuals.md)
-  The visuals for the left button.
 - [var offset: CGPoint](tcdirectionpaddescriptor/offset.md)
   The control’s offset from the anchor, which determines its position.
+- [var rightContents: TCControlContents?](tcdirectionpaddescriptor/rightcontents.md)
+  The contents for the right button.
 - [var rightLabel: TCControlLabel?](tcdirectionpaddescriptor/rightlabel.md)
   The label for the right button, if the control is not a composite direction pad.
-- [var rightVisuals: TCControlVisuals?](tcdirectionpaddescriptor/rightvisuals.md)
-  The visuals for the right button.
 - [var size: CGSize](tcdirectionpaddescriptor/size.md)
   The size (width, height) of the direction pad in points.
+- [var upContents: TCControlContents?](tcdirectionpaddescriptor/upcontents.md)
+  The contents for the up button.
+- [var upLabel: TCControlLabel?](tcdirectionpaddescriptor/uplabel.md)
+  The label for the up button, if the control isn’t a composite direction pad.
+- [var zIndex: Int](tcdirectionpaddescriptor/zindex.md)
+  The z-index of the direction pad. A lower z-index is drawn first.
 
 
 ---

@@ -22,18 +22,6 @@ enum Error
 ### Decode error
 - [AnyUserIdentity.Error.cannotDecode](anyuseridentity/error/cannotdecode.md)
   Unable to decode the user identity.
-### Operators
-- [static func == (AnyUserIdentity.Error, AnyUserIdentity.Error) -> Bool](anyuseridentity/error/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](anyuseridentity/error/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](anyuseridentity/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](anyuseridentity/error/equatable-implementations.md)
-- [Error Implementations](anyuseridentity/error/error-implementations.md)
 
 ## Relationships
 

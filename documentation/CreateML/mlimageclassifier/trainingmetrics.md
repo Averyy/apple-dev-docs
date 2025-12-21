@@ -20,6 +20,8 @@ var trainingMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
+- [func evaluation(on:)](mlimageclassifier/evaluation(on:).md)
+  Generates metrics describing the image classifier’s performance on labeled images represented by a data source.
 - [var validationMetrics: MLClassifierMetrics](mlimageclassifier/validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
 

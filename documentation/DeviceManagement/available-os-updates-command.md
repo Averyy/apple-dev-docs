@@ -13,7 +13,7 @@ Get a list of available operating-system updates for a device.
 
 #### Discussion
 
-This command is also available to execute on managed devices that aren’t enrolled in the Device Enrollment Program (DEP). A device must have a total of `DownloadSize` + `InstallSize` bytes available to successfully install a software update. In macOS, execute the `ScheduleOSUpdateScan` command to update the results that this command returns. In iOS and tvOS, the list only contains the latest available updates.
+A device must have a total of `DownloadSize` + `InstallSize` bytes available to successfully install a software update. In macOS, execute the `ScheduleOSUpdateScan` command to update the results that this command returns. In iOS and tvOS, the list only contains the latest available updates.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 

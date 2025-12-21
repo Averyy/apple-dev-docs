@@ -42,6 +42,8 @@ struct ContentView: View {
 }
 ```
 
+> **Note**: Configuring a corner radius is not supported on watchOS, tvOS, or macOS.
+
 ## Parameters
 
 - `cornerRadius`: The corner radius, or   to use the system   default.

@@ -25,9 +25,6 @@ The annotation consists of a list of bounding boxes and object labels for each i
 
 ## Topics
 
-### Creating an annotation
-- [init(from: any Decoder) throws](objectdetectionannotation/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Getting the properties
 - [let imageFileName: String](objectdetectionannotation/imagefilename.md)
   The name of the image file.
@@ -40,11 +37,7 @@ The annotation consists of a list of bounding boxes and object labels for each i
 ### Encoding and decoding
 - [ObjectDetectionAnnotation.CodingKeys](objectdetectionannotation/codingkeys.md)
   Coding keys for object detection annotations
-### Operators
-- [static func == (ObjectDetectionAnnotation<Label>, ObjectDetectionAnnotation<Label>) -> Bool](objectdetectionannotation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Default Implementations
-- [Equatable Implementations](objectdetectionannotation/equatable-implementations.md)
 - [Identifiable Implementations](objectdetectionannotation/identifiable-implementations.md)
 
 ## Relationships

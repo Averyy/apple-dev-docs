@@ -47,21 +47,6 @@ enum CarKeyErrorCode
   An error that indicates the vehicle isn’t available to respond to the request.
 - [CarKeyErrorCode.VehicleNotFound](carkeyerrorcode/vehiclenotfound.md)
   An error that indicates a vehicle with the specified ID wasn’t found.
-### Getting a Description of the Error
-- [var localizedDescription: String](carkeyerrorcode/localizeddescription.md)
-  Retrieve the localized description for this error.
-### Operators
-- [static func == (CarKeyErrorCode, CarKeyErrorCode) -> Bool](carkeyerrorcode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](carkeyerrorcode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](carkeyerrorcode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](carkeyerrorcode/equatable-implementations.md)
-- [Error Implementations](carkeyerrorcode/error-implementations.md)
 
 ## Relationships
 

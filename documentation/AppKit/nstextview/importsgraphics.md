@@ -17,13 +17,13 @@ var importsGraphics: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to import files by dragging onto the text views sharing the receiver’s layout manager, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to import files by dragging onto the text views sharing the receiver’s layout manager, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 Text views that are set to accept dragged files are also set to allow rich text. By default, text views don’t accept dragged files but do allow rich text.
 
 ## See Also
 
-- [func insert(_ attrString: NSAttributedString, at loc: Int)](../Foundation/NSMutableAttributedString/insert(_:at:).md)
+- [func insert(NSAttributedString, at: Int)](../Foundation/NSMutableAttributedString/insert(_:at:).md)
   Inserts the characters and attributes of the given attributed string into the receiver at the given index.
 - [init(attachment: NSTextAttachment)](../Foundation/NSAttributedString/init(attachment:).md)
   Creates an attributed string with an attachment.

@@ -19,7 +19,7 @@ subscript<T>(name: MLDataTable.Row.Key, type: T.Type) -> T? where T : MLDataValu
 
 ## See Also
 
-- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:)-7fw28.md)
+- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:).md)
 
 
 ---

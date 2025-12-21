@@ -22,7 +22,7 @@ func childNode(withName name: String, recursively: Bool) -> SCNNode?
 
 #### Discussion
 
-If the `recursive` parameter is [`true`](https://developer.apple.com/documentation/swift/true), SceneKit uses a preorder traversal to search the child node subtree—that is, the block searches a node before it searches each of the node’s children, and it searches all children of a node before searching any of that node’s sibling nodes. Otherwise, SceneKit searches only those nodes in the node’s [`childNodes`](scnnode/childnodes.md) array.
+If the `recursive` parameter is [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit uses a preorder traversal to search the child node subtree—that is, the block searches a node before it searches each of the node’s children, and it searches all children of a node before searching any of that node’s sibling nodes. Otherwise, SceneKit searches only those nodes in the node’s [`childNodes`](scnnode/childnodes.md) array.
 
 ## Parameters
 

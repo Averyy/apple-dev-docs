@@ -20,6 +20,15 @@ Description of the state features.
 var stateDescriptionsByName: [String : MLFeatureDescription] { get }
 ```
 
+## See Also
+
+- [var inputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/inputdescriptionsbyname.md)
+  A dictionary of input feature descriptions, which the model keys by the input’s name.
+- [var outputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/outputdescriptionsbyname.md)
+  A dictionary of output feature descriptions, which the model keys by the output’s name.
+- [class MLFeatureDescription](mlfeaturedescription.md)
+  The name, type, and constraints of an input or output feature.
+
 
 ---
 

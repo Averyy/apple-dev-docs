@@ -34,18 +34,6 @@ enum NotificationKey
   A set of values identifying the context’s updated models.
 - [ModelContext.NotificationKey.queryGeneration](modelcontext/notificationkey/querygeneration.md)
   A token that indicates which generation of the model store SwiftData is using.
-### Creating a notification key
-- [init?(rawValue: String)](modelcontext/notificationkey/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](modelcontext/notificationkey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [ModelContext.NotificationKey.RawValue](modelcontext/notificationkey/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](modelcontext/notificationkey/equatable-implementations.md)
-- [RawRepresentable Implementations](modelcontext/notificationkey/rawrepresentable-implementations.md)
 
 ## Relationships
 

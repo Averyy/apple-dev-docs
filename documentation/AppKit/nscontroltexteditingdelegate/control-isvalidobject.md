@@ -17,7 +17,7 @@ optional func control(_ control: NSControl, isValidObject obj: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to allow the control to display the specified value; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to reject the value and return the cursor to the control’s cell.
+[`true`](https://developer.apple.com/documentation/Swift/true) if you want to allow the control to display the specified value; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to reject the value and return the cursor to the control’s cell.
 
 #### Discussion
 

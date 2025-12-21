@@ -21,11 +21,11 @@ optional func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit scrolling to the top of the content, [`false`](https://developer.apple.com/documentation/swift/false) to disallow it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to permit scrolling to the top of the content, [`false`](https://developer.apple.com/documentation/Swift/false) to disallow it.
 
 #### Discussion
 
-If the delegate doesn’t implement this method, [`true`](https://developer.apple.com/documentation/swift/true) is assumed. For the scroll-to-top gesture (a tap on the status bar) to be effective, the [`scrollsToTop`](uiscrollview/scrollstotop.md) property of the [`UIScrollView`](uiscrollview.md) must be set to [`true`](https://developer.apple.com/documentation/swift/true).
+If the delegate doesn’t implement this method, [`true`](https://developer.apple.com/documentation/Swift/true) is assumed. For the scroll-to-top gesture (a tap on the status bar) to be effective, the [`scrollsToTop`](uiscrollview/scrollstotop.md) property of the [`UIScrollView`](uiscrollview.md) must be set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

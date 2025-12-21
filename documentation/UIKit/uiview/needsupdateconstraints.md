@@ -21,7 +21,7 @@ func needsUpdateConstraints() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view’s constraints need updating, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view’s constraints need updating, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

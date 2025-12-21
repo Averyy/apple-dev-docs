@@ -41,7 +41,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 
 ## Topics
 
-### Ordinary 8-Bit Pixel Formats
+### Ordinary 8-bit pixel formats
 - [MTLPixelFormat.a8Unorm](mtlpixelformat/a8unorm.md)
   Ordinary format with one 8-bit normalized unsigned integer component.
 - [MTLPixelFormat.r8Unorm](mtlpixelformat/r8unorm.md)
@@ -54,7 +54,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Ordinary format with one 8-bit unsigned integer component.
 - [MTLPixelFormat.r8Sint](mtlpixelformat/r8sint.md)
   Ordinary format with one 8-bit signed integer component.
-### Ordinary 16-Bit Pixel Formats
+### Ordinary 16-bit pixel formats
 - [MTLPixelFormat.r16Unorm](mtlpixelformat/r16unorm.md)
   Ordinary format with one 16-bit normalized unsigned integer component.
 - [MTLPixelFormat.r16Snorm](mtlpixelformat/r16snorm.md)
@@ -75,7 +75,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Ordinary format with two 8-bit unsigned integer components.
 - [MTLPixelFormat.rg8Sint](mtlpixelformat/rg8sint.md)
   Ordinary format with two 8-bit signed integer components.
-### Packed 16-Bit Pixel Formats
+### Packed 16-bit pixel formats
 - [MTLPixelFormat.b5g6r5Unorm](mtlpixelformat/b5g6r5unorm.md)
   Packed 16-bit format with normalized unsigned integer color components: 5 bits for blue, 6 bits for green, 5 bits for red, packed into 16 bits.
 - [MTLPixelFormat.a1bgr5Unorm](mtlpixelformat/a1bgr5unorm.md)
@@ -84,7 +84,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Packed 16-bit format with normalized unsigned integer color components: 4 bits each for ABGR, packed into 16 bits.
 - [MTLPixelFormat.bgr5A1Unorm](mtlpixelformat/bgr5a1unorm.md)
   Packed 16-bit format with normalized unsigned integer color components: 5 bits each for BGR and 1 for alpha, packed into 16 bits.
-### Ordinary 32-Bit Pixel Formats
+### Ordinary 32-bit pixel formats
 - [MTLPixelFormat.r32Uint](mtlpixelformat/r32uint.md)
   Ordinary format with one 32-bit unsigned integer component.
 - [MTLPixelFormat.r32Sint](mtlpixelformat/r32sint.md)
@@ -115,7 +115,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Ordinary format with four 8-bit normalized unsigned integer components in BGRA order.
 - [MTLPixelFormat.bgra8Unorm_srgb](mtlpixelformat/bgra8unorm_srgb.md)
   Ordinary format with four 8-bit normalized unsigned integer components in BGRA order with conversion between sRGB and linear space.
-### Packed 32-Bit Pixel Formats
+### Packed 32-bit pixel formats
 - [MTLPixelFormat.bgr10a2Unorm](mtlpixelformat/bgr10a2unorm.md)
   A 32-bit packed pixel format with four normalized unsigned integer components: 10-bit blue, 10-bit green, 10-bit red, and 2-bit alpha.
 - [MTLPixelFormat.rgb10a2Unorm](mtlpixelformat/rgb10a2unorm.md)
@@ -126,7 +126,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   32-bit format with floating-point color components, 11 bits each for red and green and 10 bits for blue.
 - [MTLPixelFormat.rgb9e5Float](mtlpixelformat/rgb9e5float.md)
   Packed 32-bit format with floating-point color components: 9 bits each for RGB and 5 bits for an exponent shared by RGB, packed into 32 bits.
-### Ordinary 64-Bit Pixel Formats
+### Ordinary 64-bit pixel formats
 - [MTLPixelFormat.rg32Uint](mtlpixelformat/rg32uint.md)
   Ordinary format with two 32-bit unsigned integer components.
 - [MTLPixelFormat.rg32Sint](mtlpixelformat/rg32sint.md)
@@ -143,31 +143,31 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Ordinary format with four 16-bit signed integer components in RGBA order.
 - [MTLPixelFormat.rgba16Float](mtlpixelformat/rgba16float.md)
   Ordinary format with four 16-bit floating-point components in RGBA order.
-### Ordinary 128-Bit Pixel Formats
+### Ordinary 128-bit pixel formats
 - [MTLPixelFormat.rgba32Uint](mtlpixelformat/rgba32uint.md)
   Ordinary format with four 32-bit unsigned integer components in RGBA order.
 - [MTLPixelFormat.rgba32Sint](mtlpixelformat/rgba32sint.md)
   Ordinary format with four 32-bit signed integer components in RGBA order.
 - [MTLPixelFormat.rgba32Float](mtlpixelformat/rgba32float.md)
   Ordinary format with four 32-bit floating-point components in RGBA order.
-### Compressed PVRTC Pixel Formats
+### Compressed PVRTC pixel formats
 - [MTLPixelFormat.pvrtc_rgb_2bpp](mtlpixelformat/pvrtc_rgb_2bpp.md)
-  Compressed format using PVRTC compression and 2bpp for RGB components.
+  A compressed format that uses PVRTC compression and 2bpp for RGB components.
 - [MTLPixelFormat.pvrtc_rgb_2bpp_srgb](mtlpixelformat/pvrtc_rgb_2bpp_srgb.md)
-  Compressed format using PVRTC compression and 2bpp for RGB components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 2bpp for RGB components with a conversion between sRGB and linear space.
 - [MTLPixelFormat.pvrtc_rgb_4bpp](mtlpixelformat/pvrtc_rgb_4bpp.md)
-  Compressed format using PVRTC compression and 4bpp for RGB components.
+  A compressed format that uses PVRTC compression and 4bpp for RGB components.
 - [MTLPixelFormat.pvrtc_rgb_4bpp_srgb](mtlpixelformat/pvrtc_rgb_4bpp_srgb.md)
-  Compressed format using PVRTC compression and 4bpp for RGB components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 4bpp for RGB components with a conversion between sRGB and linear space.
 - [MTLPixelFormat.pvrtc_rgba_2bpp](mtlpixelformat/pvrtc_rgba_2bpp.md)
-  Compressed format using PVRTC compression and 2bpp for RGBA components.
+  A compressed format that uses PVRTC compression and 2bpp for RGBA components.
 - [MTLPixelFormat.pvrtc_rgba_2bpp_srgb](mtlpixelformat/pvrtc_rgba_2bpp_srgb.md)
-  Compressed format using PVRTC compression and 2bpp for RGBA components with conversion between sRGB and linear space.
+  A compressed format that uses PVRTC compression and 2bpp for RGBA components with a conversion between sRGB and linear space.
 - [MTLPixelFormat.pvrtc_rgba_4bpp](mtlpixelformat/pvrtc_rgba_4bpp.md)
-  Compressed format using PVRTC compression and 4bpp for RGBA components.
+  A compressed format that uses PVRTC compression and 4bpp for RGBA components.
 - [MTLPixelFormat.pvrtc_rgba_4bpp_srgb](mtlpixelformat/pvrtc_rgba_4bpp_srgb.md)
-  Compressed format using PVRTC compression and 4bpp for RGBA components with conversion between sRGB and linear space.
-### Compressed EAC/ETC Pixel Formats
+  A compressed format that uses PVRTC compression and 4bpp for RGBA components with a conversion between sRGB and linear space.
+### Compressed EAC/ETC pixel formats
 - [MTLPixelFormat.eac_r11Unorm](mtlpixelformat/eac_r11unorm.md)
   Compressed format using EAC compression with one normalized unsigned integer component.
 - [MTLPixelFormat.eac_r11Snorm](mtlpixelformat/eac_r11snorm.md)
@@ -188,7 +188,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Compressed format using ETC2 compression with four 8-bit components.
 - [MTLPixelFormat.etc2_rgb8a1_srgb](mtlpixelformat/etc2_rgb8a1_srgb.md)
   Compressed format using ETC2 compression with four 8-bit components with conversion between sRGB and linear space.
-### Compressed ASTC Pixel Formats
+### Compressed ASTC pixel formats
 - [MTLPixelFormat.astc_4x4_srgb](mtlpixelformat/astc_4x4_srgb.md)
   ASTC-compressed format with low-dynamic-range content, conversion between sRGB and linear space, a block width of 4, and a block height of 4.
 - [MTLPixelFormat.astc_5x4_srgb](mtlpixelformat/astc_5x4_srgb.md)
@@ -250,7 +250,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 - [MTLPixelFormat.astc_5x4_hdr](mtlpixelformat/astc_5x4_hdr.md)
   ASTC-compressed format with high-dynamic range content, a block width of 5, and a block height of 4.
 - [MTLPixelFormat.astc_5x5_hdr](mtlpixelformat/astc_5x5_hdr.md)
-  ASTC-compressed format with high-dynamic range content, a block width of 5, and a block height of 6.
+  ASTC-compressed format with high-dynamic range content, a block width of 5, and a block height of 5.
 - [MTLPixelFormat.astc_6x5_hdr](mtlpixelformat/astc_6x5_hdr.md)
   ASTC-compressed format with high-dynamic range content, a block width of 6, and a block height of 5.
 - [MTLPixelFormat.astc_6x6_hdr](mtlpixelformat/astc_6x6_hdr.md)
@@ -273,7 +273,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   ASTC-compressed format with high-dynamic range content, a block width of 12, and a block height of 10.
 - [MTLPixelFormat.astc_12x12_hdr](mtlpixelformat/astc_12x12_hdr.md)
   ASTC-compressed format with high-dynamic range content, a block width of 12, and a block height of 12.
-### Compressed BC Pixel Formats
+### Compressed BC pixel formats
 - [MTLPixelFormat.bc1_rgba](mtlpixelformat/bc1_rgba.md)
   Compressed format with two 16-bit color components and one 32-bit descriptor component.
 - [MTLPixelFormat.bc1_rgba_srgb](mtlpixelformat/bc1_rgba_srgb.md)
@@ -302,12 +302,12 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   Compressed format with four normalized unsigned integer components.
 - [MTLPixelFormat.bc7_rgbaUnorm_srgb](mtlpixelformat/bc7_rgbaunorm_srgb.md)
   Compressed format with four normalized unsigned integer components, with conversion between sRGB and linear space.
-### YUV Pixel Formats
+### YUV pixel formats
 - [MTLPixelFormat.gbgr422](mtlpixelformat/gbgr422.md)
   A pixel format where the red and green components are subsampled horizontally.
 - [MTLPixelFormat.bgrg422](mtlpixelformat/bgrg422.md)
   A pixel format where the red and green components are subsampled horizontally.
-### Depth and Stencil Pixel Formats
+### Depth and stencil pixel formats
 - [MTLPixelFormat.depth16Unorm](mtlpixelformat/depth16unorm.md)
   A pixel format for a depth-render target that has a 16-bit normalized, unsigned-integer component.
 - [MTLPixelFormat.depth32Float](mtlpixelformat/depth32float.md)
@@ -322,7 +322,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   A stencil pixel format used to read the stencil value from a texture with a combined 32-bit depth and 8-bit stencil value.
 - [MTLPixelFormat.x24_stencil8](mtlpixelformat/x24_stencil8.md)
   A stencil pixel format used to read the stencil value from a texture with a combined 24-bit depth and 8-bit stencil value.
-### Extended Range and Wide Color Pixel Formats
+### Extended range and wide color pixel formats
 - [MTLPixelFormat.bgra10_xr](mtlpixelformat/bgra10_xr.md)
   A 64-bit extended-range pixel format with four fixed-point components of 10-bit blue, 10-bit green, 10-bit red, and 10-bit alpha.
 - [MTLPixelFormat.bgra10_xr_srgb](mtlpixelformat/bgra10_xr_srgb.md)
@@ -331,7 +331,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
   A 32-bit extended-range pixel format with three fixed-point components of 10-bit blue, 10-bit green, and 10-bit red.
 - [MTLPixelFormat.bgr10_xr_srgb](mtlpixelformat/bgr10_xr_srgb.md)
   A 32-bit extended-range pixel format with sRGB conversion and three fixed-point components of 10-bit blue, 10-bit green, and 10-bit red.
-### Invalid Pixel Format
+### Invalid pixel format
 - [MTLPixelFormat.invalid](mtlpixelformat/invalid.md)
   The default value of the pixel format for the `MTLRenderPipelineState`. You cannot create a texture with this value.
 ### Enumeration Cases
@@ -351,15 +351,15 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 
 ## See Also
 
-- [Understanding Color-Renderable Pixel Format Sizes](understanding-color-renderable-pixel-format-sizes.md)
+- [Understanding color-renderable pixel format sizes](understanding-color-renderable-pixel-format-sizes.md)
   Know the size limits of color render targets in Apple GPUs based on the target’s pixel format.
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
   Optimize a texture’s data to improve GPU or CPU access.
 - [protocol MTLTexture](mtltexture.md)
   A resource that holds formatted image data.
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
-  An object that you use to configure new Metal texture objects.
+  An instance that you use to configure new Metal texture instances.
 - [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)

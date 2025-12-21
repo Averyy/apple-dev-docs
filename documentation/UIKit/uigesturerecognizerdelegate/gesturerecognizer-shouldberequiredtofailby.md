@@ -25,11 +25,11 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to set up a dynamic failure requirement between `gestureRecognizer` and `otherGestureRecognizer`. The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false)—`gestureRecognizer` isn’t required to fail by `otherGestureRecognizer`.
+[`true`](https://developer.apple.com/documentation/Swift/true) to set up a dynamic failure requirement between `gestureRecognizer` and `otherGestureRecognizer`. The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false)—`gestureRecognizer` isn’t required to fail by `otherGestureRecognizer`.
 
 #### Discussion
 
-This method is called once per attempt to recognize, so failure requirements can be determined lazily and may be set up between recognizers across view hierarchies. Note that returning [`true`](https://developer.apple.com/documentation/swift/true) is guaranteed to set up the failure requirement; returning [`false`](https://developer.apple.com/documentation/swift/false), on the other hand, isn’t guaranteed to prevent or remove a failure requirement because `otherGestureRecognizer` might make itself a failure requirement by using its own subclass or delegate methods.
+This method is called once per attempt to recognize, so failure requirements can be determined lazily and may be set up between recognizers across view hierarchies. Note that returning [`true`](https://developer.apple.com/documentation/Swift/true) is guaranteed to set up the failure requirement; returning [`false`](https://developer.apple.com/documentation/Swift/false), on the other hand, isn’t guaranteed to prevent or remove a failure requirement because `otherGestureRecognizer` might make itself a failure requirement by using its own subclass or delegate methods.
 
 ## Parameters
 

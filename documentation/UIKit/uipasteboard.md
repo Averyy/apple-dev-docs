@@ -80,7 +80,7 @@ For more about representation types, read the discussion for the [`types`](uipas
 
 When a user signs into iCloud, the general pasteboard automatically transfers its contents to nearby devices that use the same iCloud account. You can control Handoff behavior when writing contents to the general pasteboard, and can set an expiration for items, using the [`setItemProviders(_:localOnly:expirationDate:)`](uipasteboard/setitemproviders(_:localonly:expirationdate:).md), [`setObjects(_:localOnly:expirationDate:)`](uipasteboard/setobjects(_:localonly:expirationdate:)-3h3iz.md), or [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) methods, as follows:
 
-- To exclude a pasteboard from Handoff, specify [`false`](https://developer.apple.com/documentation/swift/false) for the `localOnly` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`localOnly`](uipasteboard/optionskey/localonly.md) option.
+- To exclude a pasteboard from Handoff, specify [`false`](https://developer.apple.com/documentation/Swift/false) for the `localOnly` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`localOnly`](uipasteboard/optionskey/localonly.md) option.
 - To indicate an expiration time and date for copied data, provide the `expirationDate` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`expirationDate`](uipasteboard/optionskey/expirationdate.md) option. At the time and date that you set, the system removes the pasteboard items from the pasteboard.
 
 ##### Using Pasteboards with Other Objects

@@ -22,7 +22,7 @@ var supportsReplacement: Bool { get }
 
 This property determines whether the find panel shows the replacement UI.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

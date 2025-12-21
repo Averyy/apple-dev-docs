@@ -6,13 +6,13 @@
 A structure that contains identifying information about a place that a mapping service may use to attempt to find rich place information such as phone numbers, websites, and so on.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -66,26 +66,12 @@ You can also initialize a `PlaceDescriptor` using an [`MKMapItem`](https://devel
   Values that represent a physical place, suitable for use when searching or retrieving rich data.
 - [PlaceDescriptor.SupportingPlaceRepresentation](placedescriptor/supportingplacerepresentation.md)
   Values that describe the representation of a physical place using proprietary attributes, such as an alphanumeric location identifier from a mapping service provider.
-### Operators
-- [static func == (PlaceDescriptor, PlaceDescriptor) -> Bool](placedescriptor/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](placedescriptor/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](placedescriptor/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Type Aliases
 - [PlaceDescriptor.Specification](placedescriptor/specification.md)
 - [PlaceDescriptor.UnwrappedType](placedescriptor/unwrappedtype.md)
 - [PlaceDescriptor.ValueType](placedescriptor/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: some ResolverSpecification](placedescriptor/defaultresolverspecification.md)
-### Default Implementations
-- [Equatable Implementations](placedescriptor/equatable-implementations.md)
-- [InstanceDisplayRepresentable Implementations](placedescriptor/instancedisplayrepresentable-implementations.md)
-- [PersistentlyIdentifiable Implementations](placedescriptor/persistentlyidentifiable-implementations.md)
-- [TypeDisplayRepresentable Implementations](placedescriptor/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

@@ -16,7 +16,7 @@ func registerFilterName(_ name: String)
 
 #### Discussion
 
-This method allows you to register the filter chain as a named filter in the Core Image filter repository. You can then create a `CIFilter` object from it using the the [`init(name:)`](cifilter-swift.class/init(name:).md) method of the [`CIFilter`](cifilter-swift.class.md) class.
+This method allows you to register the filter chain as a named filter in the Core Image filter repository. You can then create a `CIFilter` object from it using the [`init(name:)`](cifilter-swift.class/init(name:).md) method of the [`CIFilter`](cifilter-swift.class.md) class.
 
 ## Parameters
 

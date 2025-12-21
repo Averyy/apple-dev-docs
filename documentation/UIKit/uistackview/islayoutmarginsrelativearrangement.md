@@ -21,7 +21,7 @@ var isLayoutMarginsRelativeArrangement: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the stack view will layout its arranged views relative to its layout margins. If [`false`](https://developer.apple.com/documentation/swift/false), it lays out the arranged views relative to its bounds. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the stack view will layout its arranged views relative to its layout margins. If [`false`](https://developer.apple.com/documentation/Swift/false), it lays out the arranged views relative to its bounds. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

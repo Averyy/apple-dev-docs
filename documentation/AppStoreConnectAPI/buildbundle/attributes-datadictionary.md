@@ -14,6 +14,10 @@ The attributes that describe a Build Bundles resource.
 object BuildBundle.Attributes
 ```
 
+## Mentions
+
+- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+
 ## Topics
 
 ### Objects

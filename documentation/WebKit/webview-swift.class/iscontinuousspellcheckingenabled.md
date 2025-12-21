@@ -17,7 +17,7 @@ var isContinuousSpellCheckingEnabled: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object has continuous spell-checking enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the object has continuous spell-checking enabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

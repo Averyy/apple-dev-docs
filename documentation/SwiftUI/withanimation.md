@@ -22,6 +22,7 @@ func withAnimation<Result>(_ animation: Animation? = .default, _ body: () throws
 
 ## Mentions
 
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
 - [Managing user interface state](managing-user-interface-state.md)
 
 #### Discussion

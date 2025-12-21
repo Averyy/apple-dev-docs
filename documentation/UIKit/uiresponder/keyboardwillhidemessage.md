@@ -4,9 +4,9 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ struct KeyboardWillHideMessage
 - [var endFrame: CGRect](uiresponder/keyboardwillhidemessage/endframe.md)
 - [var isLocal: Bool](uiresponder/keyboardwillhidemessage/islocal.md)
 - [var screen: UIScreen](uiresponder/keyboardwillhidemessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIResponder.KeyboardWillHideMessage) -> Notification](uiresponder/keyboardwillhidemessage/makenotification(_:).md)
 
 ## Relationships
 

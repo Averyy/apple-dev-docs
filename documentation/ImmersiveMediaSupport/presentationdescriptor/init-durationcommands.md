@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: init
 
-Creates an instance containing the commands specified in the array
+Creates an instance that contains the commands specified in the array:
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,13 +17,13 @@ init(duration: CMTime? = nil, commands: [PresentationCommand] = [])
 
 ## Parameters
 
-- `duration`: Duration of the metadata commands
-- `commands`: An array of presentation commands (e.g. SetCameraCommand, FadeCommand)
+- `duration`: The duration of the metadata commands.
+- `commands`: An array of presentation commands.
 
 ## See Also
 
 - [init(commands: [PresentationCommand])](presentationdescriptor/init(commands:).md)
-  Creates an instance containing the commands specified in the given array
+  Creates an instance that contains the commands specified in the given array.
 
 
 ---

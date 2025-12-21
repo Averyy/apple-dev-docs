@@ -51,10 +51,10 @@ User interface classes must implement this method if any of its attributes are s
   Performs the action associated with the specified action.
 - [func accessibilitySetOverrideValue(Any?, forAttribute: NSAccessibility.Attribute) -> Bool](nsobject-swift.class/accessibilitysetoverridevalue(_:forattribute:).md)
   Overrides the specified attribute in the receiver or adds it if it does not exist, and sets its value to the specified value.
-- [func finalize()](nsobject-swift.class/finalize.md)
-  The garbage collector invokes this method on the receiver before disposing of the memory it uses.
-- [func fontManager(Any, willIncludeFont: String) -> Bool](nsobject-swift.class/fontmanager(_:willincludefont:).md)
-  Requests permission from the Font panel delegate to display the given font name in the Font panel.
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
+  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
+- [func fileManager(FileManager, willProcessPath: String)](nsobject-swift.class/filemanager(_:willprocesspath:).md)
+  An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 
 
 ---

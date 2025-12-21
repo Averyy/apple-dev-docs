@@ -23,7 +23,7 @@ let AVEncoderAudioQualityForVBRKey: String
 - [let AVSampleRateConverterAudioQualityKey: String](avsamplerateconverteraudioqualitykey.md)
   An integer value that represents the audio quality for conversion.
 - [let AVSampleRateConverterAlgorithmKey: String](avsamplerateconverteralgorithmkey.md)
-  An integer value that represents the sample rate audio quality.
+  A string value that represents the sample rate converter algorithm to use.
 
 
 ---

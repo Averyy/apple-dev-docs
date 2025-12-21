@@ -6,11 +6,11 @@
 The application has allocated too many locales.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,16 +22,12 @@ static var tooManyAssetLocalesAllocated: SFSpeechError.Code { get }
 
 - [static var assetLocaleNotAllocated: SFSpeechError.Code](sfspeecherror/code/assetlocalenotallocated.md)
   The asset locale has not been allocated, but module requires it.
-- [static var audioDisordered: SFSpeechError.Code](sfspeecherror/code/audiodisordered.md)
-  The audio input time-code overlaps or precedes prior audio input.
-- [static var incompatibleAudioFormats: SFSpeechError.Code](sfspeecherror/code/incompatibleaudioformats.md)
-  The selected modules do not have an audio format in common.
-- [static var moduleOutputFailed: SFSpeechError.Code](sfspeecherror/code/moduleoutputfailed.md)
-  The module’s result task failed.
+- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](sfspeecherror/code/cannotallocateunsupportedlocale.md)
+  The asset locale being requested is not supported by SpeechFramework.
 - [static var noModel: SFSpeechError.Code](sfspeecherror/code/nomodel.md)
   The selected locale/options does not have an appropriate model available or downloadable.
-- [static var unexpectedAudioFormat: SFSpeechError.Code](sfspeecherror/code/unexpectedaudioformat.md)
-  The audio input is in unexpected format.
+- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
+  The operation timed out.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Set the stencil value to zero.
+A stencil operation that sets a stencil value to zero.
 
 **Availability**:
 - iOS 8.0+
@@ -22,19 +22,19 @@ case zero
 ## See Also
 
 - [MTLStencilOperation.keep](mtlstenciloperation/keep.md)
-  Keep the current stencil value.
+  A stencil operation that doesn’t modify a stencil value.
 - [MTLStencilOperation.replace](mtlstenciloperation/replace.md)
-  Replace the stencil value with the stencil reference value, which is set by the [`setStencilReferenceValue(_:)`](mtlrendercommandencoder/setstencilreferencevalue(_:).md) method of [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md).
+  A stencil operation that replaces a stencil value with a reference value.
 - [MTLStencilOperation.incrementClamp](mtlstenciloperation/incrementclamp.md)
-  If the current stencil value is not the maximum representable value, increase the stencil value by one. Otherwise, if the current stencil value is the maximum representable value, do not change the stencil value.
+  A stencil operation that increases a stencil value by one, but only when the current value isn’t the maximum representable value.
 - [MTLStencilOperation.decrementClamp](mtlstenciloperation/decrementclamp.md)
-  If the current stencil value is not zero, decrease the stencil value by one. Otherwise, if the current stencil value is zero, do not change the stencil value.
+  A stencil operation that decreases a nonzero stencil value by one.
 - [MTLStencilOperation.invert](mtlstenciloperation/invert.md)
-  Perform a logical bitwise invert operation on the current stencil value.
+  A stencil operation that applies a logical bitwise NOT to a stencil value.
 - [MTLStencilOperation.incrementWrap](mtlstenciloperation/incrementwrap.md)
-  If the current stencil value is not the maximum representable value, increase the stencil value by one. Otherwise, if the current stencil value is the maximum representable value, set the stencil value to zero.
+  A stencil operation that decreases a nonzero stencil value by one, or when it’s the maximum representable value, resets it to zero.
 - [MTLStencilOperation.decrementWrap](mtlstenciloperation/decrementwrap.md)
-  If the current stencil value is not zero, decrease the stencil value by one. Otherwise, if the current stencil value is zero, set the stencil value to the maximum representable value.
+  A stencil operation that decreases a nonzero stencil value by one, or when it’s zero, resets it to the maximum representable value.
 
 
 ---

@@ -6,7 +6,7 @@
 Loads and displays a modifiable model using the provided `ConfigurationCatalog` and configuration choices using a custom placeholder until the model loads.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

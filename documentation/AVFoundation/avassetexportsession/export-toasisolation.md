@@ -16,7 +16,7 @@ Exports the asset to the output location in the specified file type.
 ## Declaration
 
 ```swift
-@backDeployed(before: macOS 16, iOS 19, tvOS 19, visionOS 3)
+@backDeployed(before: macOS 26.0, iOS 26.0, tvOS 26.0, visionOS 26.0)
 final func export(to url: URL, as fileType: AVFileType, isolation: isolated (any Actor)? = #isolation) async throws
 ```
 

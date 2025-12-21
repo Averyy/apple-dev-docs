@@ -21,13 +21,13 @@ optional func collectionView(_ collectionView: UICollectionView, shouldSelectIte
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item should be selected or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item should be selected or [`false`](https://developer.apple.com/documentation/Swift/false) if it should not.
 
 #### Discussion
 
 The collection view calls this method when the user tries to select an item in the collection view. It does not call this method when you programmatically set the selection.
 
-If you do not implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the default return value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

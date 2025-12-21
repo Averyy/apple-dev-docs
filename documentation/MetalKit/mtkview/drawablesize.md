@@ -22,7 +22,7 @@ var drawableSize: CGSize { get set }
 
 #### Discussion
 
-Changing this value adjusts the size of any color, depth, stencil, and multisampling textures created by the view. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property is updated automatically whenever the view’s size changes. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`false`](https://developer.apple.com/documentation/swift/false), set this value to change the size of the texture objects.
+Changing this value adjusts the size of any color, depth, stencil, and multisampling textures created by the view. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`true`](https://developer.apple.com/documentation/Swift/true), this property is updated automatically whenever the view’s size changes. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`false`](https://developer.apple.com/documentation/Swift/false), set this value to change the size of the texture objects.
 
 The default value is derived from the current view’s size, in native pixels.
 

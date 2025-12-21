@@ -21,11 +21,6 @@ object Pass.StoreCard
 ### Inherits From
 - [PassFields](passfields.md)
 
-## See Also
-
-- [object Personalize](personalize.md)
-  An object that contains the personalization information for a rewards pass.
-
 
 ---
 

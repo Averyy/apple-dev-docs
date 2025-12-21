@@ -21,7 +21,7 @@ protocol AVPlaybackCoordinatorPlaybackControlDelegate : NSObjectProtocol, Sendab
 
 ## Topics
 
-### Responding to Commands
+### Responding to commands
 - [func playbackCoordinator(AVDelegatingPlaybackCoordinator, didIssue: AVDelegatingPlaybackCoordinatorPlayCommand, completionHandler: () -> Void)](avplaybackcoordinatorplaybackcontroldelegate/playbackcoordinator(_:didissue:completionhandler:)-73p3a.md)
   Tells the delegate to match the playback rate to that of the group when the rate is nonzero.
 - [func playbackCoordinator(AVDelegatingPlaybackCoordinator, didIssue: AVDelegatingPlaybackCoordinatorPauseCommand, completionHandler: () -> Void)](avplaybackcoordinatorplaybackcontroldelegate/playbackcoordinator(_:didissue:completionhandler:)-56t01.md)

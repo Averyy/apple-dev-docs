@@ -25,7 +25,7 @@ var updateWordSpacing: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.books.updateWordSpacing` schema:
 
 ```swift
-@AssistantIntent(schema: .books.updateWordSpacing)
+@AppIntent(schema: .books.updateWordSpacing)
 struct UpdateWordSpacingIntent: AppIntent {
     @Parameter
     var target: BookSettingsEntity

@@ -22,7 +22,7 @@ optional func tokenSession(_ session: TKTokenSession, supports operation: TKToke
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation is supported; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation is supported; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -22,9 +22,9 @@ var isUserLocationVisible: Bool { get }
 
 #### Discussion
 
-When determining whether the user’s location is visible, this property factors in the horizontal accuracy of the location data. Specifically, if the rectangle that the user’s location represents, plus or minus the horizontal accuracy of that location, intersects the map’s visible rectangle, this property contains the value [`true`](https://developer.apple.com/documentation/swift/true). If that location rectangle doesn’t intersect the map’s visible rectangle, this property contains the value [`false`](https://developer.apple.com/documentation/swift/false).
+When determining whether the user’s location is visible, this property factors in the horizontal accuracy of the location data. Specifically, if the rectangle that the user’s location represents, plus or minus the horizontal accuracy of that location, intersects the map’s visible rectangle, this property contains the value [`true`](https://developer.apple.com/documentation/Swift/true). If that location rectangle doesn’t intersect the map’s visible rectangle, this property contains the value [`false`](https://developer.apple.com/documentation/Swift/false).
 
-When the user’s location is unknown, this property contains the value [`false`](https://developer.apple.com/documentation/swift/false).
+When the user’s location is unknown, this property contains the value [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

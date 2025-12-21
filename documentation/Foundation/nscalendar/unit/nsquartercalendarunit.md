@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Specifies the quarter of the calendar as a [`second`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/second). In macOS 10.6 and earlier this was defined as equal to [`quarter`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/quarter). In macOS 10.7 and later it is defined as `(1 << 20)`.
+Specifies the quarter unit.
 
 **Availability**:
 - iOS 4.0+
@@ -19,6 +19,10 @@ Specifies the quarter of the calendar as a [`second`](https://developer.apple.co
 ```swift
 static var NSQuarterCalendarUnit: NSCalendar.Unit { get }
 ```
+
+#### Discussion
+
+In macOS 10.6 and earlier this was defined as equal to [`quarter`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/quarter). In macOS 10.7 and later it is defined as `(1 << 20)`.
 
 ## See Also
 

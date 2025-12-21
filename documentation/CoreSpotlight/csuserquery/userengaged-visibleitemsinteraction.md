@@ -26,6 +26,7 @@ When someone selects or interacts with a specific search result in your app’s 
 
 - `item`: The search result that someone chose.
 - `visibleItems`: The set of search results your app was displaying.
+- `interaction`: The type of interaction with the item. Use   this parameter to indicate whether the person selected the item or   interacted with it in another way.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func writeHEIFRepresentation(of image: CIImage, to url: URL, format: CIFormat, c
 
 To render an image for export, the image’s contents must not be empty and its [`extent`](ciimage/extent.md) dimensions must be finite. To export after applying a filter whose output has infinite extent, see the [`clampedToExtent()`](ciimage/clampedtoextent().md) method.
 
-In Objective-C `writeHEIFRepresentationOfImage` returns [`true`](https://developer.apple.com/documentation/swift/true) if the file export succeeded. If [`false`](https://developer.apple.com/documentation/swift/false), examine the `errorPtr` parameter for possible failure reasons.
+In Objective-C `writeHEIFRepresentationOfImage` returns [`true`](https://developer.apple.com/documentation/Swift/true) if the file export succeeded. If [`false`](https://developer.apple.com/documentation/Swift/false), examine the `errorPtr` parameter for possible failure reasons.
 
 ## Parameters
 

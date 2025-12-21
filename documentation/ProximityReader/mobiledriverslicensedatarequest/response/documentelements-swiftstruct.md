@@ -26,9 +26,6 @@ struct DocumentElements
   A type that represents a driving privilege which the mobile driver’s license holder possesses.
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority](mobiledriverslicensedatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct.md)
   A type that represents the state or government that issued the identity document.
-### Operators
-- [static func == (MobileDriversLicenseDataRequest.Response.DocumentElements, MobileDriversLicenseDataRequest.Response.DocumentElements) -> Bool](mobiledriverslicensedatarequest/response/documentelements-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let aamvaDrivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivileges.md)
   The mobile driver’s license holder’s AAMVA driving privileges.
@@ -54,8 +51,6 @@ struct DocumentElements
   The mobile identity document holder’s eye color on record with the issuer.
 - [let hairColor: MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.property.md)
   The mobile identity document holder’s hair color on record with the issuer.
-- [var hashValue: Int](mobiledriverslicensedatarequest/response/documentelements-swift.struct/hashvalue.md)
-  The hash value.
 - [let height: Measurement<UnitLength>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/height.md)
   The mobile identity document holder’s height on record with the issuer.
 - [let isOrganDonor: Bool?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/isorgandonor.md)
@@ -72,9 +67,6 @@ struct DocumentElements
   The mobile driver’s license holder’s sex.
 - [let weight: Measurement<UnitMass>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/weight.md)
   The mobile identity document holder’s weight on record with the issuer.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledriverslicensedatarequest/response/documentelements-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dhscompliancestatus.md)
   A type that represents the mobile driver’s license’ DHS (U.S. Department of Homeland Security) compliance status.
@@ -84,8 +76,6 @@ struct DocumentElements
   A type that represents the mobile driver’s license holder’s hair color
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum.md)
   A type that represents the mobile driver’s license holder’s sex.
-### Default Implementations
-- [Equatable Implementations](mobiledriverslicensedatarequest/response/documentelements-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

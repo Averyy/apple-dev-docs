@@ -26,8 +26,8 @@ object SemanticTags
   Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
 - [object SemanticTagType](semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
-  Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
+- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
+  An object that represents the groups of fields that display the information for a boarding pass.
 - [object SemanticTagType](semantictagtype.md)
   A compilation of data object types for semantic tags.
 

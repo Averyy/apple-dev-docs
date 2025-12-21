@@ -56,7 +56,7 @@ for url in fileURLs {
 
 ##### Provide Directory Hints for File Urls to Avoid Wasteful Io
 
-Many convenience methods make it possible to create URLs that represent files and directories in the file system, local or otherwise. If you know that the destination of such a URL is a directory, use the method variants that require the `isDirectory` parameter and specify [`true`](https://developer.apple.com/documentation/swift/true) as the value. If you use a more succinct method that omits the parameter, the system performs a potentially blocking call to the file system to determine if the URL’s destination is a file or a directory.
+Many convenience methods make it possible to create URLs that represent files and directories in the file system, local or otherwise. If you know that the destination of such a URL is a directory, use the method variants that require the `isDirectory` parameter and specify [`true`](https://developer.apple.com/documentation/Swift/true) as the value. If you use a more succinct method that omits the parameter, the system performs a potentially blocking call to the file system to determine if the URL’s destination is a file or a directory.
 
 If you are using Swift and your app targets iOS 16 and later (or macOS 13 and later), use [`init(filePath:directoryHint:relativeTo:)`](url/init(filepath:directoryhint:relativeto:).md) to create file URLs — and [`appending(path:directoryHint:)`](url/appending(path:directoryhint:).md) to modify existing URLs — and specify a value other than `inferFromPath` for the `directoryHint` parameter. For earlier versions, opt for the nonblocking variants of the methods in the following table.
 
@@ -74,6 +74,8 @@ Additionally, APIs that traverse directory hierarchies may also block, and the d
 
 ## See Also
 
+- [Using the file system effectively](using-the-file-system-effectively.md)
+  Gain access to benefits like automatic backup or purging by using purpose-built directories provided by the system.
 - [class FileManager](filemanager.md)
   A convenient interface to the contents of the file system, and the primary means of interacting with it.
 - [protocol FileManagerDelegate](filemanagerdelegate.md)

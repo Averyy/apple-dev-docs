@@ -106,20 +106,8 @@ enum BatterySystemUsage
 - [HIDUsage.BatterySystemUsage.voltageNotRegulated](hidusage/batterysystemusage/voltagenotregulated.md)
 - [HIDUsage.BatterySystemUsage.voltageOutOfRange](hidusage/batterysystemusage/voltageoutofrange.md)
 - [HIDUsage.BatterySystemUsage.warningCapacityLimit](hidusage/batterysystemusage/warningcapacitylimit.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/batterysystemusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/batterysystemusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.BatterySystemUsage.RawValue](hidusage/batterysystemusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/batterysystemusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/batterysystemusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/batterysystemusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -13,7 +13,6 @@ The activation function that the layer applies to the output.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

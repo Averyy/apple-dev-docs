@@ -6,11 +6,11 @@
 A module that performs a voice activity detection (VAD) analysis.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -41,39 +41,40 @@ try await analyzer.setModules([transcriber, speechDetector])
 
 > ❗ **Important**: This module only functions in conjunction with a [`SpeechTranscriber`](speechtranscriber.md) or [`DictationTranscriber`](dictationtranscriber.md) module.
 
-> **Note**: For certain use cases, such as those that include a lot of silence, it might be tempting to always enable VAD gating. In theory, this would preserve power by only running ASR’s speech transcription models when it is highly likely for there to be speech to transcribe. However, this introduces the potential for degraded accuracy if the VAD model is too aggressive and drops audio that does contain speech. This is an area of future exploration with ongoing experiments.
+> **Note**: For certain use cases, such as those with a lot of silence, it might be tempting to always enable voice activated transcription. But if the model drops audio that does contain speech, there could be a tradeoff between the power being saved by always having VAD enabled and potentially lower accuracy transcriptions. You can set the aggressiveness of the VAD model with [`SpeechDetector.SensitivityLevel`](speechdetector/sensitivitylevel.md). While [`SpeechDetector.SensitivityLevel.medium`](speechdetector/sensitivitylevel/medium.md) is recommended for most use cases, the value of these tradeoffs will be context-specific.
 
 ## Topics
 
-### Structures
-- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
-  Allows clients to customize an instance of a speech detector.
-- [SpeechDetector.Result](speechdetector/result.md)
-  A result from the speech detector.
-### Initializers
+### Creating a detector
 - [convenience init()](speechdetector/init.md)
   Creates a speech detector with default settings.
 - [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
   Creates a speech detector.
-### Instance Properties
-- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechdetector/availablecompatibleaudioformats.md)
-- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](speechdetector/results-swift.property.md)
-### Type Aliases
-- [SpeechDetector.Results](speechdetector/results-swift.typealias.md)
-### Enumerations
+- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+  Allows clients to customize an instance of a speech detector.
 - [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
+### Getting results
+- [SpeechDetector.Result](speechdetector/result.md)
+  A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SpeechModule](speechmodule.md)
 
 ## See Also
 
+- [class SpeechTranscriber](speechtranscriber.md)
+  A speech-to-text transcription module that’s appropriate for normal conversation and general purposes.
+- [class DictationTranscriber](dictationtranscriber.md)
+  A speech-to-text transcription module that’s similar to system dictation features and compatible with older devices.
 - [protocol SpeechModule](speechmodule.md)
   Protocol that all analyzer modules conform to.
 - [protocol LocaleDependentSpeechModule](localedependentspeechmodule.md)
-  If a module conforms to this protocol, then its assets depend on the locale setting.
-- [class SpeechTranscriber](speechtranscriber.md)
-  A module that transcribes speech to text. This transcriber is appropriate for normal conversation and general purposes.
-- [class DictationTranscriber](dictationtranscriber.md)
-  A module that transcribes speech to text. This transcriber is used by `SFSpeechRecognizer` and system dictation features.
+  A module that requires locale-specific assets.
 
 
 ---

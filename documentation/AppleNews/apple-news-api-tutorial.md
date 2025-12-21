@@ -20,7 +20,7 @@ Before beginning the tutorial, make sure you have the following information and 
 - [`Python`](https://developer.apple.comhttps://www.python.org). Ensure that you have `PIP` installed. `PIP` is automatically installed if you have Python 3.4+. See [`Installing Python Modules`](https://developer.apple.comhttps://docs.python.org/3/installing/index.html#installing-index).
 - Python’s [`Requests`](https://developer.apple.comhttps://pypi.org/project/requests/) library.
 
-If you are not familiar with Apple News API endpoints, see  doc:apple-news-api before you get started.
+If you are not familiar with Apple News API endpoints, see [`Apple News API`](https://developer.apple.com/documentation/applenewsapi) before you get started.
 
 ## Topics
 
@@ -31,6 +31,11 @@ If you are not familiar with Apple News API endpoints, see  doc:apple-news-api b
   Sign the canonical request and send the custom authorization header to the Apple News API.
 - [Publishing an Article](publishing-an-article.md)
   Build a URL and article body for the publish-article request.
+
+## See Also
+
+- [Apple News API](../applenewsapi/applenewsapi.md)
+  Publish and manage Apple News Format articles.
 
 
 ---

@@ -6,8 +6,8 @@
 Sends an MMS message to the given destination.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -18,7 +18,7 @@ final func sendMessage(_ message: MMSMessage) async throws
 
 #### Discussion
 
-If the [`totalSize`](mmsmessage/totalsize.md) exceeds `MMSConfiguration/maximumMessageSize`, this call fails with [`MMSService.Error.maximumSizeExceeded`](mmsservice/error/maximumsizeexceeded.md).
+If the [`totalSize`](mmsmessage/totalsize.md) exceeds [`maximumMessageSize`](mmsservice/configuration/maximummessagesize.md), this call fails with [`MMSService.Error.maximumSizeExceeded`](mmsservice/error/maximumsizeexceeded.md).
 
 > **Note**: - [`MMSService.Error`](mmsservice/error.md) if sending the message fails.
 

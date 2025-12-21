@@ -25,20 +25,8 @@ enum SOCUsage
 - [HIDUsage.SOCUsage.firmwareFileId](hidusage/socusage/firmwarefileid.md)
 - [HIDUsage.SOCUsage.firmwareTransfer](hidusage/socusage/firmwaretransfer.md)
 - [HIDUsage.SOCUsage.socControl](hidusage/socusage/soccontrol.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/socusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/socusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.SOCUsage.RawValue](hidusage/socusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/socusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/socusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/socusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -22,7 +22,7 @@ var isAdvertising: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the peripheral is advertising data as a result of successfully calling the [`startAdvertising(_:)`](cbperipheralmanager/startadvertising(_:).md) method. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the peripheral is no longer advertising its data.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the peripheral is advertising data as a result of successfully calling the [`startAdvertising(_:)`](cbperipheralmanager/startadvertising(_:).md) method. The value is [`false`](https://developer.apple.com/documentation/Swift/false) if the peripheral is no longer advertising its data.
 
 ## See Also
 

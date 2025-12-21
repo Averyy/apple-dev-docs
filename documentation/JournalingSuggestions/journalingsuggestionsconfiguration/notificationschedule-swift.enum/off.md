@@ -3,10 +3,10 @@
 **Framework**: Journaling Suggestions  
 **Kind**: case
 
-The notifications aren’t enabled or authorized for this app.
+An option that indicates the app doesn’t receive notifications.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 
@@ -14,12 +14,25 @@ The notifications aren’t enabled or authorized for this app.
 case off
 ```
 
+## Mentions
+
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+
+#### Discussion
+
+This value can mean one or more possible causes:
+
+- Journaling Suggestions aren’t enabled in Settings.
+- Your app isn’t a preferred journal app in Settings.
+- Journaling Suggestions are on but notifications are off in Settings.
+- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property).
+
 ## See Also
 
-- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
-  The notifications are enabled and configured to a custom schedule.
 - [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
-  The notifications are enabled and configured to a Smart schedule.
+  An option that indicates the system personalizes the notification schedule for the person.
+- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
+  An option that indicates the person chooses a specific notification schedule in Settings.
 
 
 ---

@@ -18,11 +18,11 @@ init(delegate: any NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t?, inval
 
 #### Discussion
 
-When `invalidateAfterFirstRead` is [`false`](https://developer.apple.com/documentation/swift/false), the reader session can read multiple NFC tags. For each successful read, the delegate’s [`readerSession(_:didDetectNDEFs:)`](nfcndefreadersessiondelegate/readersession(_:diddetectndefs:).md) method delivers the message. A reader session that can read multiple tags terminates when the session times out or when the session is canceled by the client app (by calling [`invalidate()`](nfcreadersessionprotocol/invalidate().md)) or the user (via the user interface).
+When `invalidateAfterFirstRead` is [`false`](https://developer.apple.com/documentation/Swift/false), the reader session can read multiple NFC tags. For each successful read, the delegate’s [`readerSession(_:didDetectNDEFs:)`](nfcndefreadersessiondelegate/readersession(_:diddetectndefs:).md) method delivers the message. A reader session that can read multiple tags terminates when the session times out or when the session is canceled by the client app (by calling [`invalidate()`](nfcreadersessionprotocol/invalidate().md)) or the user (via the user interface).
 
-> **Note**:  When creating the reader session that your app uses to write an NDEF message to a tag, set `invalidateAfterFirstRead` to [`false`](https://developer.apple.com/documentation/swift/false). This keeps the session active so that your app can write a message to the tag.
+> **Note**:  When creating the reader session that your app uses to write an NDEF message to a tag, set `invalidateAfterFirstRead` to [`false`](https://developer.apple.com/documentation/Swift/false). This keeps the session active so that your app can write a message to the tag.
 
-When `invalidateAfterFirstRead` is [`true`](https://developer.apple.com/documentation/swift/true), the reader session automatically terminates after the first NFC tag is successfully read. In this scenario, the delegate receives the [`NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead`](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md) status in [`readerSession(_:didInvalidateWithError:)`](nfcndefreadersessiondelegate/readersession(_:didinvalidatewitherror:).md).
+When `invalidateAfterFirstRead` is [`true`](https://developer.apple.com/documentation/Swift/true), the reader session automatically terminates after the first NFC tag is successfully read. In this scenario, the delegate receives the [`NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead`](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md) status in [`readerSession(_:didInvalidateWithError:)`](nfcndefreadersessiondelegate/readersession(_:didinvalidatewitherror:).md).
 
 ## Parameters
 

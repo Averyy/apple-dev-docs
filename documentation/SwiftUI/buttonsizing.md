@@ -3,14 +3,16 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+The sizing behavior of `Button`s and other button-like controls.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,8 +24,11 @@ struct ButtonSizing
 
 ### Type Properties
 - [static var automatic: ButtonSizing](buttonsizing/automatic.md)
+  The default button sizing behavior appropriate for the button’s contextual placement and platform.
 - [static var fitted: ButtonSizing](buttonsizing/fitted.md)
+  Sizes a button along its primary axis to fit its inner content, compressing if necessary.
 - [static var flexible: ButtonSizing](buttonsizing/flexible.md)
+  Sizes a button flexibly along its primary axis, filling its available space by expanding or compressing beyond its ideal size.
 
 ## Relationships
 

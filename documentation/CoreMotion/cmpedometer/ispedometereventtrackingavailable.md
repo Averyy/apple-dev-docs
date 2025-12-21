@@ -19,7 +19,7 @@ class func isPedometerEventTrackingAvailable() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if pedometer events are available or [`false`](https://developer.apple.com/documentation/swift/false) if they are not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if pedometer events are available or [`false`](https://developer.apple.com/documentation/Swift/false) if they are not.
 
 ## See Also
 

@@ -21,7 +21,7 @@ enum AVAssetSegmentType
 
 ## Topics
 
-### Segment Types
+### Segment types
 - [AVAssetSegmentType.initialization](avassetsegmenttype/initialization.md)
   An initialization segment type.
 - [AVAssetSegmentType.separable](avassetsegmenttype/separable.md)

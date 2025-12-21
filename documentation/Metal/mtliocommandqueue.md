@@ -27,15 +27,15 @@ You make input/output command queues by creating and configuring an [`MTLIOComma
 
 ## Topics
 
-### Creating a Input/Output Command Buffer
+### Creating a input/output command buffer
 - [func makeCommandBuffer() -> any MTLIOCommandBuffer](mtliocommandqueue/makecommandbuffer.md)
   Creates an input/output command buffer for the command queue.
 - [func makeCommandBufferWithUnretainedReferences() -> any MTLIOCommandBuffer](mtliocommandqueue/makecommandbufferwithunretainedreferences.md)
   Creates an input/output command buffer for the command queue that doesn’t retain the instances you pass to its methods.
-### Adding a Barrier to the Queue
+### Adding a barrier to the queue
 - [func enqueueBarrier()](mtliocommandqueue/enqueuebarrier.md)
   Appends a barrier that tells the input/output command queue to finish running all in-flight command buffers before running any new command buffers.
-### Naming the Queue
+### Naming the queue
 - [var label: String?](mtliocommandqueue/label.md)
   An optional name for the input/output command queue.
 

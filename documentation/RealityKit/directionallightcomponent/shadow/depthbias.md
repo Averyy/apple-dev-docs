@@ -10,7 +10,7 @@ A constant value that RealityKit applies as a bias to its shadow calculations.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -25,6 +25,10 @@ Reduce visual effects such as , by adjusting this property. The default value is
 
 ## See Also
 
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+  The light’s culling mode for shadow map rendering.
+- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection.md)
+  Sets the shadow projection used for shadow map rendering
 - [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
   The maximum distance for the shadow.
 

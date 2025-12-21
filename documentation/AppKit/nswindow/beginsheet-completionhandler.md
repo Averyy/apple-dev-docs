@@ -34,6 +34,8 @@ If the window has no presented sheets, this method displays the specified sheet,
   A Boolean value that indicates whether the window has ever run as a modal sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
+- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)

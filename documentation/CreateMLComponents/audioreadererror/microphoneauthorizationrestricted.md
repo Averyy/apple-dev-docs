@@ -25,8 +25,6 @@ case microphoneAuthorizationRestricted
   An error that indicates that the microphone authorization status is denied. The user has explicitly denied permission for audio capture.
 - [AudioReaderError.sourceDeviceNotAvailable](audioreadererror/sourcedevicenotavailable.md)
   An error that indicates that no source devices are available.
-- [var errorDescription: String?](audioreadererror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

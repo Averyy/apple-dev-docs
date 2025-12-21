@@ -1,9 +1,9 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Combine  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two publishers are equivalent. /// - Parameters:
 
 **Availability**:
 - iOS 13.0+
@@ -17,26 +17,19 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: Publishers.Count<Upstream>, rhs: Publishers.Count<Upstream>) -> Bool
 ```
+
+#### Return Value
+
+`true` if the two publishers’ `upstream` properties are equal; otherwise `false`.
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (Publishers.Count<Upstream>, Publishers.Count<Upstream>) -> Bool](publishers/count/==(_:_:).md)
-  Returns a Boolean value that indicates whether two publishers are equivalent. /// - Parameters:
+- lhs: A `Count` instance to compare.
+- rhs: Another `Count` instance to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/count/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/count/==(_:_:))*

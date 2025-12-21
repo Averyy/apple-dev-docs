@@ -6,7 +6,7 @@ Manage builds for testers and submit builds for review.
 
 #### Overview
 
-A `builds` resource represents a single build of an app. You must upload builds using Xcode or Transporter. Once App Store Connect processes the build, it will appear as a build resource.
+A `builds` resource represents a single build of an app. You must upload builds using Xcode, Transporter, or the [`Build uploads`](build-uploads.md) resource. Once App Store Connect processes the build, it appears as a build resource.
 
 Once the build is in the system, you can use the API to perform actions like:
 
@@ -23,6 +23,8 @@ Once the build is in the system, you can use the API to perform actions like:
   Get information about a specific build.
 - [Read the App Information of a Build](get-v1-builds-_id_-app.md)
   Get the app information for a specific build.
+- [Read the app ID of a build](get-v1-builds-_id_-relationships-app.md)
+  Get the app ID for a specific build.
 - [Read the App Store Version Information of a Build](get-v1-builds-_id_-appstoreversion.md)
   Get the App Store version of a specific build.
 - [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
@@ -72,7 +74,7 @@ Once the build is in the system, you can use the API to perform actions like:
 - [GET /v1/builds/{id}/relationships/icons](get-v1-builds-_id_-relationships-icons.md)
 - [GET /v1/builds/{id}/relationships/diagnosticSignatures](get-v1-builds-_id_-relationships-diagnosticsignatures.md)
 - [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
-### Objects
+### Objects and data types
 - [object Build](build.md)
   The data structure that represents a Builds resource.
 - [object BuildResponse](buildresponse.md)
@@ -106,6 +108,12 @@ Once the build is in the system, you can use the API to perform actions like:
 - [object BuildIconsLinkagesResponse](buildiconslinkagesresponse.md)
 - [object BuildPerfPowerMetricsLinkagesResponse](buildperfpowermetricslinkagesresponse.md)
 - [object BuildPreReleaseVersionLinkageResponse](buildprereleaseversionlinkageresponse.md)
+- [type BuildAudienceType](buildaudiencetype.md)
+  A string that represents the App Store Connect audience for a build.
+- [type DiagnosticInsightDirection](diagnosticinsightdirection.md)
+  A string that describes the diagnostic insight direction.
+- [type DiagnosticInsightType](diagnosticinsighttype.md)
+  A string that desribes the diagnostic insight type.
 
 ## See Also
 
@@ -113,6 +121,8 @@ Once the build is in the system, you can use the API to perform actions like:
   Read metadata for app and App Clip binaries included in a build you upload to App Store Connect.
 - [Build Icons](build-icons.md)
   Get icons from your app’s binary that are uploaded to App Store.
+- [Build uploads](build-uploads.md)
+  Read metadata for app builds you upload to App Store Connect.
 - [App Encryption Declarations](app-encryption-declarations.md)
   View, and assign to builds, the declarations about types of encryption used in your app.
 

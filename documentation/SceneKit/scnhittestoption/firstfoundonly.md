@@ -22,7 +22,7 @@ static let firstFoundOnly: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that hit-testing should return all objects found. If you specify [`true`](https://developer.apple.com/documentation/swift/true), the array of hit-test results contains only the first object found (which is not necessarily the nearest).
+The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that hit-testing should return all objects found. If you specify [`true`](https://developer.apple.com/documentation/Swift/true), the array of hit-test results contains only the first object found (which is not necessarily the nearest).
 
 ## See Also
 

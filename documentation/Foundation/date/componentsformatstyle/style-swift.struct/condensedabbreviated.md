@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Uses the abbreviated form but condensed if possible. For example, “2hr 10min”, “2小時10分鐘”
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

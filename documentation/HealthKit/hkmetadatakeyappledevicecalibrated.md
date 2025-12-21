@@ -21,7 +21,7 @@ let HKMetadataKeyAppleDeviceCalibrated: String
 
 #### Discussion
 
-This key takes a Boolean value. If it’s [`true`](https://developer.apple.com/documentation/swift/true), the system has enough high-quality data to make an accurate estimate. If it’s [`false`](https://developer.apple.com/documentation/swift/false), the system provides an estimate based on data that may be less accurate.
+This key takes a Boolean value. If it’s [`true`](https://developer.apple.com/documentation/Swift/true), the system has enough high-quality data to make an accurate estimate. If it’s [`false`](https://developer.apple.com/documentation/Swift/false), the system provides an estimate based on data that may be less accurate.
 
 The key is read-only.
 

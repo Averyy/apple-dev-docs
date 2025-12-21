@@ -22,7 +22,7 @@ The following example loads the image directly into an [`Image`](image.md) view,
         .border(.blue)
 ```
 
-As seen in the following screenshot, the image data loads at full size into the view, so only the clouds from the upper left of the original image are visible. Because the image renders at full size, and the blue frame is smaller than the original image, the image displays beyond the area bounded by the frame.
+As seen in the following screenshot, the image data loads at full size into the view, so only the clouds from the upper left of the original image are visible. Because the image renders at full size, and the blue frame is smaller than the original image, the image extends beyond the frame’s boundaries.
 
 ![An image that shows a frame with a blue border overlaid on an image of a water wheel. The image is so much larger than the available space that only a portion of the sky and clouds from the upper left of the original image is visible. The image goes beyond the borders of the outline.](https://docs-assets.developer.apple.com/published/3f9b1cd8d9d65f9ffba1dcba86eca2a7/SwiftUI-FIIAS-unscaled%402x.png)
 
@@ -81,7 +81,7 @@ It’s easier to see the effect of interpolation when scaling a smaller image in
         .border(.blue)
 ```
 
-Passing the [`Image.Interpolation.none`](image/interpolation/none.md) value to [`interpolation(_:)`](image/interpolation(_:).md) produces a highly pixelated image when rendered.
+Passing the [`Image.Interpolation.none`](image/interpolation/none.md) value to [`interpolation(_:)`](image/interpolation(_:).md) results in a highly pixelated rendered image.
 
 ![A green dot with a darker green border, scaled to many times its original size and highly pixelated.](https://docs-assets.developer.apple.com/published/daad34a379a26fb3aa4a2727cd3530b9/SwiftUI-FIIAS-smallImage-interpolation-none%402x.png)
 

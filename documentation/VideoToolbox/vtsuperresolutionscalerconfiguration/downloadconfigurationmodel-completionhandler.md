@@ -3,11 +3,13 @@
 **Framework**: Video Toolbox  
 **Kind**: method
 
+Downloads models that the system needs for the current configuration.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,7 +19,7 @@ func downloadConfigurationModel() async throws
 
 #### Discussion
 
-This interface can be used to download model assets required for the current VTSuperResolutionScalerConfiguration if the state is currently VTSuperResolutionScalerConfigurationModelStatusDownloadRequired.  The processorModelStatus class property can be queried to see if models are all already present.  If a download has been initiated, processorModelPercentageAvailable can be queried to determine what percentage of the model models are avialable. If the download fails, the completion handler will return an NSError, and the status will go back to VTSuperResolutionScalerConfigurationModelStatusDownloadRequired.  If the download succeeds, the NSError return value will be nil.
+This method downloads model assets required for the current configuration in background. You should call this method if [`configurationModelStatus`](vtsuperresolutionscalerconfiguration/configurationmodelstatus.md) is `VTSuperResolutionScalerConfigurationModelStatusDownloadRequired`. After this method is called, you can query [`configurationModelPercentageAvailable`](vtsuperresolutionscalerconfiguration/configurationmodelpercentageavailable.md) to determine progress of model asset download process. If the download fails, the completion handler is invoked with an `NSError`, and the [`configurationModelStatus`](vtsuperresolutionscalerconfiguration/configurationmodelstatus.md) goes back to `VTSuperResolutionScalerConfigurationModelStatusDownloadRequired`. If the download succeeds, the completion handler is invoked with `nil` NSError.
 
 
 ---

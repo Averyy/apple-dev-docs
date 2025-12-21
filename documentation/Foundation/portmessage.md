@@ -32,7 +32,7 @@ An [`PortMessage`](portmessage.md) object also maintains a message identifier, w
   Initializes a newly allocated `NSPortMessage` object to send given data on a given port and to receiver replies on another given port.
 ### Sending the Message
 - [func send(before: Date) -> Bool](portmessage/send(before:).md)
-  Attempts to send the message before `aDate`, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful or [`false`](https://developer.apple.com/documentation/swift/false) if the operation times out.
+  Attempts to send the message before the specified date.
 ### Getting the Components
 - [var components: [Any]?](portmessage/components.md)
   Returns the data components of the receiver.

@@ -21,7 +21,7 @@ struct MTLBinaryArchiveError
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [static var none: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/none.md)
   An error code that represents the absence of any problems.
 - [static var invalidFile: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/invalidfile.md)
@@ -34,7 +34,7 @@ struct MTLBinaryArchiveError
   An error code that indicates the Metal framework has an internal problem.
 - [MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/code.md)
   Error codes when creating binary archives of compiled shader code.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtlbinaryarchiveerror-swift.struct/errordomain.md)
   The current binary archive error domain.
 - [let MTLBinaryArchiveDomain: String](mtlbinaryarchivedomain.md)
@@ -52,6 +52,7 @@ struct MTLBinaryArchiveError
 
 ## See Also
 
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
 - [struct MTLComponentTransform](mtlcomponenttransform.md)

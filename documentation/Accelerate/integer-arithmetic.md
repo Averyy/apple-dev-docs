@@ -4,16 +4,6 @@
 
 Perform elementwise operations on vectors of integer values.
 
-## Topics
-
-### Vector-to-Vector Integer Arithmetic
-- [vDSP_vaddi](vdsp_vaddi.md)
-  Adds two integer vectors.
-- [vDSP_veqvi](vdsp_veqvi.md)
-  Calculates bitwise logical equivalence of two integer vectors.
-- [vDSP_vdivi](vdsp_vdivi.md)
-  Divides two integer vectors.
-
 ## See Also
 
 - [Vector-vector real arithmetic functions](vector-vector-real-arithmetic-functions.md)

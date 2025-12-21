@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-A unique command id. Ids should be unique for the whole Immersive Media file.
+A unique command ID for the entire immersive media file.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,11 +18,11 @@ var id: Int { get }
 ## See Also
 
 - [var cameraID: String](setcameracommand/cameraid.md)
-  The cameraID to be used for the duration of this command.
+  The camera ID to use for the duration of this command.
 - [var duration: CMTime](setcameracommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration
+  The duration of the command.
 - [var offset: CMTime?](setcameracommand/offset.md)
-  Not used - setCamera commands don’t use offsets.
+  Reserved for later use.
 - [var time: CMTime](setcameracommand/time.md)
   The time this command starts during playback.
 

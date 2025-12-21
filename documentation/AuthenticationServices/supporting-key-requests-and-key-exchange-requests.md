@@ -2,11 +2,11 @@
 
 **Framework**: Authentication Services
 
-Support the platform SSO 2.0 protocol for encryption and decryption operations.
+Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 #### Overview
 
-Key requests and key exchange requests require the SSO extension and the server to support the platform SSO 2.0 protocol. To do so, the server needs to fully support requests, shared device keys, and the modified flows for registration, login, and unlock.
+Key requests and key exchange requests require the SSO extension and the server to support the Platform SSO 2.0 protocol. To do so, the server needs to fully support requests, shared device keys, and the modified flows for registration, login, and unlock.
 
 These requests are similar to login requests. They start with a server nonce request, sign the JSON Web Token (JWT) using the device signing key, and require an encrypted response that uses the device encryption key.
 

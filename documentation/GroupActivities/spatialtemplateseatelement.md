@@ -18,7 +18,7 @@ struct SpatialTemplateSeatElement
 
 Add [`SpatialTemplateSeatElement`](spatialtemplateseatelement.md) types to a custom [`SpatialTemplate`](spatialtemplate.md) to specify the placement and orientation of participants in a group activity. When an activity starts, the system places participants into the shared coordinate space and orients them according to the seat information you provide. If you associate roles with one or more seats, participants must acquire the associated role before they can occupy the corresponding seat.
 
-Create seat elements directly from this type and add them to the [`elements`](spatialtemplate/elements.md) property of your custom template. Alternatively, use the inherited [`seat(position:direction:role:)`](spatialtemplateseatelement/seat(position:direction:role:).md) function to create seats, as shown in the following example, which creates two seats on either side of the app’s content along the z-axis:
+Create seat elements directly from this type and add them to the [`elements`](spatialtemplate/elements.md) property of your custom template. Alternatively, use the inherited `seat(position:direction:role:)` function to create seats, as shown in the following example, which creates two seats on either side of the app’s content along the z-axis:
 
 ```swift
 struct BasicTemplate: SpatialTemplate {
@@ -44,15 +44,9 @@ struct BasicTemplate: SpatialTemplate {
 ### Initializers
 - [init(position: SpatialTemplateElementPosition, direction: SpatialTemplateElementDirection, role: (any SpatialTemplateRole)?)](spatialtemplateseatelement/init(position:direction:role:).md)
   Creates a seat element with the specified position, direction, and role information.
-### Instance Properties
-- [var hashValue: Int](spatialtemplateseatelement/hashvalue.md)
-  The hash value.
 ### Instance Methods
 - [func hash(into: inout Hasher)](spatialtemplateseatelement/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](spatialtemplateseatelement/equatable-implementations.md)
-- [SpatialTemplateElement Implementations](spatialtemplateseatelement/spatialtemplateelement-implementations.md)
 
 ## Relationships
 

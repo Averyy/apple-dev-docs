@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-An error that occurs if your app specifies a paired device to which it doesn’t have access.
+An error that occurs if your app specifies a paired device it doesn’t have access to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -20,7 +20,7 @@ var hasAction: Bool { get set }
 
 #### Discussion
 
-Assign [`false`](https://developer.apple.com/documentation/swift/false) to this property to hide the alert button or slider. (This effect requires [`alertBody`](uilocalnotification/alertbody.md) to be non-`nil`.) The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Assign [`false`](https://developer.apple.com/documentation/Swift/false) to this property to hide the alert button or slider. (This effect requires [`alertBody`](uilocalnotification/alertbody.md) to be non-`nil`.) The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

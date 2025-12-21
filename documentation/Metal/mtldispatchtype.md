@@ -21,7 +21,7 @@ enum MTLDispatchType
 
 ## Topics
 
-### Execution Dispatch Types
+### Execution dispatch types
 - [MTLDispatchType.concurrent](mtldispatchtype/concurrent.md)
   Sets a command encoder to dispatch encoded commands concurrently during your pass.
 - [MTLDispatchType.serial](mtldispatchtype/serial.md)

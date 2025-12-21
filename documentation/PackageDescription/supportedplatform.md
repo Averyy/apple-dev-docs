@@ -85,17 +85,9 @@ Swift Package Manager emits an error if a dependency isn’t compatible with the
 ### Supporting Custom Platforms
 - [static func custom(String, versionString: String) -> SupportedPlatform](supportedplatform/custom(_:versionstring:).md)
   Configures the minimum deployment target version for custom platforms.
-### Operator Functions
-- [static func != (Self, Self) -> Bool](supportedplatform/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Structures
 - [SupportedPlatform.CustomPlatformVersion](supportedplatform/customplatformversion.md)
   A supported custom platform version.
-### Operators
-- [static func == (SupportedPlatform, SupportedPlatform) -> Bool](supportedplatform/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](supportedplatform/equatable-implementations.md)
 
 ## Relationships
 

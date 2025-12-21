@@ -24,7 +24,7 @@ static var hasAudioSampleDependencies: AVAsyncProperty<Root, Bool> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-The value is always [`false`](https://developer.apple.com/documentation/swift/false) for nonaudible media.
+The value is always [`false`](https://developer.apple.com/documentation/Swift/false) for nonaudible media.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func NSMapMember(_ table: NSMapTable<AnyObject, AnyObject>, _ key: UnsafeRawPoin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `table` contains a key equal to `key`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `table` contains a key equal to `key`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

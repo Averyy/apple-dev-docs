@@ -22,7 +22,7 @@ var allowedScrollTypesMask: UIScrollTypeMask { get set }
 
 Setting this mask enables the pan gesture to recognize scroll events, like a mouse scroll movement or a two-finger scroll on a track pad. See [`UIScrollType`](uiscrolltype.md).
 
-> **Note**:  Setting this property doesn’t disable scrolling through touches. To disable touch scrolling, return [`false`](https://developer.apple.com/documentation/swift/false) from [`gestureRecognizer(_:shouldReceive:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md) or set the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) to an empty array.
+> **Note**:  Setting this property doesn’t disable scrolling through touches. To disable touch scrolling, return [`false`](https://developer.apple.com/documentation/Swift/false) from [`gestureRecognizer(_:shouldReceive:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md) or set the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) to an empty array.
 
 ## See Also
 

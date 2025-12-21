@@ -22,7 +22,7 @@ var isLoading: Bool { get }
 
 #### Discussion
 
-The value of the `loading` property is [`true`](https://developer.apple.com/documentation/swift/true) if the leaderboard object has any pending requests for scores.
+The value of the `loading` property is [`true`](https://developer.apple.com/documentation/Swift/true) if the leaderboard object has any pending requests for scores.
 
 ## See Also
 

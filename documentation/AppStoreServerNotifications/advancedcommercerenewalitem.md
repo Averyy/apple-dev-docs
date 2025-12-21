@@ -16,6 +16,7 @@ object advancedCommerceRenewalItem
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)
 - [object advancedCommerceOffer](advancedcommerceoffer.md)
+- [object advancedCommercePriceIncreaseInfo](advancedcommercepriceincreaseinfo.md)
 - [object advancedCommerceRefund](advancedcommercerefund.md)
 - [object advancedCommerceRenewalInfo](advancedcommercerenewalinfo.md)
 - [object advancedCommerceTransactionInfo](advancedcommercetransactioninfo.md)

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The relationships you included in the request and those on which you can operate.
+The relationships you include in the request and those on which you can operate.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -23,6 +23,8 @@ object AppStoreVersionLocalization.Relationships
   The data and links that describe the relationship between the resources.
 - [object AppStoreVersionLocalization.Relationships.AppStoreVersion](appstoreversionlocalization/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
+### Dictionaries
+- [object AppStoreVersionLocalization.Relationships.SearchKeywords](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
 
 ## See Also
 

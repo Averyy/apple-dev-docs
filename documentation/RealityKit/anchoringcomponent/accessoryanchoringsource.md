@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,11 +19,11 @@ struct AccessoryAnchoringSource
 - [init(device: any GCDevice) async throws](anchoringcomponent/accessoryanchoringsource/init(device:).md)
   Creates the accessory anchoring source by the GCDevice asynchronously Returns an AccessoryAnchoringSource if the GCDevice supports spatial tracking, throwing an error otherwise
 ### Instance Properties
-- [var accessoryLocationNames: [AnchoringComponent.AccessoryLocationName]](anchoringcomponent/accessoryanchoringsource/accessorylocationnames.md)
+- [var accessoryLocations: [AnchoringComponent.AccessoryLocation]](anchoringcomponent/accessoryanchoringsource/accessorylocations.md)
   The list of anchor-able locations for an AccessoryAnchoringSource Returns an array of Strings
 - [var underlyingAccessory: Accessory?](anchoringcomponent/accessoryanchoringsource/underlyingaccessory.md)
 ### Instance Methods
-- [func locationName(named: String) -> AnchoringComponent.AccessoryLocationName?](anchoringcomponent/accessoryanchoringsource/locationname(named:).md)
+- [func locationName(named: String) -> AnchoringComponent.AccessoryLocation?](anchoringcomponent/accessoryanchoringsource/locationname(named:).md)
 
 ## Relationships
 

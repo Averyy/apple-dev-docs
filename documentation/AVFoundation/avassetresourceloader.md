@@ -27,7 +27,7 @@ The delegate you associate with this object must adopt the [`AVAssetResourceLoad
 
 ## Topics
 
-### Accessing the Delegate
+### Accessing the delegate
 - [func setDelegate((any AVAssetResourceLoaderDelegate)?, queue: dispatch_queue_t?)](avassetresourceloader/setdelegate(_:queue:).md)
   Sets the delegate and dispatch queue to use with the resource loader.
 - [var delegate: (any AVAssetResourceLoaderDelegate)?](avassetresourceloader/delegate.md)
@@ -36,7 +36,7 @@ The delegate you associate with this object must adopt the [`AVAssetResourceLoad
   Methods you can implement to handle resource-loading requests coming from a URL asset.
 - [var delegateQueue: dispatch_queue_t?](avassetresourceloader/delegatequeue.md)
   The dispatch queue to use when handling resource requests.
-### Loading Content Keys
+### Loading content keys
 - [var preloadsEligibleContentKeys: Bool](avassetresourceloader/preloadseligiblecontentkeys.md)
   A Boolean value that indicates whether content keys will be loaded as quickly as possible.
 ### Supporting Common Media Client Data

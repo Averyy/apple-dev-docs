@@ -26,7 +26,7 @@ As your managed object model changes, Core Data can use lightweight migrations t
 
 > ❗ **Important**:  This key is dual-purpose. When adding a persistent store to the coordinator, you use it to enable deferred lightweight migrations for that store. Afterward, Core Data uses it to indicate whether there are deferred cleanup tasks to run. Therefore, don’t use this key to later determine whether you enabled deferred lightweight migrations on a specific store.
 
-Deferred lightweight migrations are off by default. To enable them, add [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md), with a value of [`true`](https://developer.apple.com/documentation/swift/true), to the options dictionary you provide when adding a persistent store to the coordinator.
+Deferred lightweight migrations are off by default. To enable them, add [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md), with a value of [`true`](https://developer.apple.com/documentation/Swift/true), to the options dictionary you provide when adding a persistent store to the coordinator.
 
 ```swift
 let options = [
@@ -44,7 +44,7 @@ let store = coordinator.addPersistentStore(
 )
 ```
 
-After you enable deferred lightweight migrations, Core Data continues to perform your lightweight migrations as usual, but defers any time-consuming cleanup tasks that don’t impact the execution of your app. Those tasks still need to run, but you choose when to run them. To determine whether there are deferred tasks to finish, query the store’s metadata with [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md). If the returned value is [`true`](https://developer.apple.com/documentation/swift/true), execute those tasks using the coordinator. A single migration may defer several distinct tasks and you can execute them all at once using [`finishDeferredLightweightMigration()`](nspersistentstorecoordinator/finishdeferredlightweightmigration().md), or individually using [`finishDeferredLightweightMigrationTask()`](nspersistentstorecoordinator/finishdeferredlightweightmigrationtask().md).
+After you enable deferred lightweight migrations, Core Data continues to perform your lightweight migrations as usual, but defers any time-consuming cleanup tasks that don’t impact the execution of your app. Those tasks still need to run, but you choose when to run them. To determine whether there are deferred tasks to finish, query the store’s metadata with [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md). If the returned value is [`true`](https://developer.apple.com/documentation/Swift/true), execute those tasks using the coordinator. A single migration may defer several distinct tasks and you can execute them all at once using [`finishDeferredLightweightMigration()`](nspersistentstorecoordinator/finishdeferredlightweightmigration().md), or individually using [`finishDeferredLightweightMigrationTask()`](nspersistentstorecoordinator/finishdeferredlightweightmigrationtask().md).
 
 ```swift
 let key = NSPersistentStoreDeferredLightweightMigrationOptionKey

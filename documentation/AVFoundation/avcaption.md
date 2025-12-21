@@ -23,18 +23,18 @@ A caption contains a cue, which is a single sentence or paragraph of text for a 
 
 ## Topics
 
-### Creating a Caption
+### Creating a caption
 - [init(String, timeRange: CMTimeRange)](avcaption/init(_:timerange:).md)
   Creates a caption that contains text and a time range.
-### Accessing Text and Timing
+### Accessing text and timing
 - [var text: String](avcaption/text.md)
   The caption text.
 - [var timeRange: CMTimeRange](avcaption/timerange.md)
   The time range over which the system presents the caption.
-### Accessing the Region
+### Accessing the region
 - [var region: AVCaptionRegion?](avcaption/region.md)
   The region in which the caption exists.
-### Accessing Font Styles
+### Accessing font styles
 - [func fontStyle(at: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)](avcaption/fontstyle(at:).md)
   Returns the font style and range at the index position.
 - [AVCaption.FontStyle](avcaption/fontstyle.md)
@@ -47,22 +47,22 @@ A caption contains a cue, which is a single sentence or paragraph of text for a 
   Returns the text decoration at the index position.
 - [AVCaption.Decoration](avcaption/decoration.md)
   Text decorations for caption text.
-### Accessing Colors
+### Accessing colors
 - [func textColor(at: String.Index) -> (CGColor?, Range<String.Index>)](avcaption/textcolor(at:).md)
   Returns the text color at the index position.
 - [func backgroundColor(at: String.Index) -> (CGColor?, Range<String.Index>)](avcaption/backgroundcolor(at:).md)
   Returns the background color at the index position.
-### Accessing Alignment
+### Accessing alignment
 - [var textAlignment: AVCaption.TextAlignment](avcaption/textalignment-swift.property.md)
   The alignment for the caption text.
 - [AVCaption.TextAlignment](avcaption/textalignment-swift.enum.md)
   Text alignment options for a caption.
-### Accessing Animation
+### Accessing animation
 - [var animation: AVCaption.Animation](avcaption/animation-swift.property.md)
   The animation that the system applies to this caption.
 - [AVCaption.Animation](avcaption/animation-swift.enum.md)
   Animation options for a caption.
-### Accessing Advanced Typography
+### Accessing advanced typography
 - [func ruby(at: String.Index) -> (AVCaption.Ruby?, Range<String.Index>)](avcaption/ruby(at:).md)
   Returns the ruby text at the index position.
 - [AVCaption.Ruby](avcaption/ruby.md)

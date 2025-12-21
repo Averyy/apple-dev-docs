@@ -6,13 +6,13 @@
 Sets the insets of rows in a list on the specified edges.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -52,6 +52,8 @@ struct ContentView: View {
 ![A screenshot showing a list with leading 25 point inset on each](https://docs-assets.developer.apple.com/published/0b10922ed606478b5a4155f90ed18221/SwiftUI-View-ListRowInsets%402x.png)
 
 When applying multiple `listRowInsets` modifiers, modifiers with the same edges will override modifiers higher up in the view hierarchy.
+
+> **Note**: On iOS 18 and earlier, and on visionOS 2 and earlier, the content of list rows can grow slightly into the row insets. The effective vertical insets can then be smaller than expected.
 
 ## Parameters
 

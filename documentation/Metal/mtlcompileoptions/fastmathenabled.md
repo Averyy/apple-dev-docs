@@ -21,7 +21,7 @@ var fastMathEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). A [`true`](https://developer.apple.com/documentation/swift/true) value also enables the high-precision variant of math functions for single-precision floating-point scalar and vector types.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). A [`true`](https://developer.apple.com/documentation/Swift/true) value also enables the high-precision variant of math functions for single-precision floating-point scalar and vector types.
 
 ## See Also
 

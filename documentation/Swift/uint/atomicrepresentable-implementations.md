@@ -4,9 +4,6 @@
 
 ## Topics
 
-### Type Aliases
-- [typealias AtomicRepresentation](uint/atomicrepresentation.md)
-  The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 ### Type Methods
 - [static func decodeAtomicRepresentation(consuming UInt.AtomicRepresentation) -> UInt](uint/decodeatomicrepresentation(_:).md)
   Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.

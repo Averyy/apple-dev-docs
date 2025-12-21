@@ -17,21 +17,11 @@ struct CurrencyAmount
 
 ## Topics
 
-### Operators
-- [static func == (CurrencyAmount, CurrencyAmount) -> Bool](currencyamount/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let amount: Decimal](currencyamount/amount.md)
   The numeric value of the amount.
 - [let currencyCode: String](currencyamount/currencycode.md)
   The currency of the amount.
-- [var hashValue: Int](currencyamount/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](currencyamount/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](currencyamount/equatable-implementations.md)
 
 ## Relationships
 

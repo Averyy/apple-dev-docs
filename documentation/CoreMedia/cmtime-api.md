@@ -1,4 +1,4 @@
-# CMTime APIs
+# CMTime
 
 **Framework**: Core Media
 
@@ -89,9 +89,9 @@ Core Media represents time as a rational value, with a time value as the numerat
 
 ## See Also
 
-- [CMTimeRange APIs](cmtimerange-api.md)
+- [CMTimeRange](cmtimerange-api.md)
   A structure that represents a range of time.
-- [CMTimeMapping APIs](cmtimemapping-api.md)
+- [CMTimeMapping](cmtimemapping-api.md)
   A structure that maps a segment of a source time range to a target time range.
 
 

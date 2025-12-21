@@ -6,10 +6,10 @@
 The features supported by PaperKit UI / data models.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,9 +22,6 @@ struct FeatureSet
 ### Structures
 - [FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.struct.md)
   Which ends of an line can have arrows.
-### Operators
-- [static func == (FeatureSet, FeatureSet) -> Bool](featureset/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var colorMaximumLinearExposure: CGFloat](featureset/colormaximumlinearexposure.md)
   The maximum exposure to allow for choosing colors.
@@ -58,8 +55,6 @@ struct FeatureSet
 - [FeatureSet.ContentVersion](featureset/contentversion-swift.enum.md)
 - [FeatureSet.Feature](featureset/feature.md)
   The features that PaperKit markup supports.
-### Default Implementations
-- [Equatable Implementations](featureset/equatable-implementations.md)
 
 ## Relationships
 

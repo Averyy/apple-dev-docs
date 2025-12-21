@@ -20,7 +20,7 @@ var isRecording: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the file output currently has a file to which it is writing new samples, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the file output currently has a file to which it is writing new samples, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

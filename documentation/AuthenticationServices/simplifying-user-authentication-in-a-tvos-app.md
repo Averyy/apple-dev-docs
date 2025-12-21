@@ -28,7 +28,7 @@ To configure the sample code project, perform the following steps in Xcode:
 - [Implementing User Authentication with Sign in with Apple](implementing-user-authentication-with-sign-in-with-apple.md)
   Provide a way for users of your app to set up an account and start using your services.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
-  The view that creates the Sign in with Apple button for display.
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)

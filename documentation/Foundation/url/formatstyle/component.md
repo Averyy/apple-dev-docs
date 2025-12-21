@@ -43,9 +43,6 @@ You use this type with style-modifying methods like [`displayWhen(_:matches:)`](
   The URL format style query component.
 - [URL.FormatStyle.Component.fragment](url/formatstyle/component/fragment.md)
   The URL format style fragment component.
-### Comparing URL format style components
-- [static func != (Self, Self) -> Bool](url/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 
 ## Relationships
 

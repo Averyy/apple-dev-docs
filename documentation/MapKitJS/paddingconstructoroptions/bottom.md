@@ -11,7 +11,7 @@ The amount of padding, in CSS pixels, to inset the map from the bottom edge.
 ## Declaration
 
 ```swift
-attribute number bottom;
+bottom: number;
 ```
 
 ## See Also

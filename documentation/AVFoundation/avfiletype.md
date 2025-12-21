@@ -26,15 +26,17 @@ struct AVFileType
 
 ## Topics
 
-### File Types
+### File types
+- [static let AHAP: AVFileType](avfiletype/ahap.md)
+  The UTI for the Apple Haptics Audio Pattern file format.
+- [static let SCC: AVFileType](avfiletype/scc.md)
+  The UTI for the Scenarist closed-caption file format.
 - [static let ac3: AVFileType](avfiletype/ac3.md)
   The UTI for the AC3 audio file format.
 - [static let aifc: AVFileType](avfiletype/aifc.md)
   The UTI for the AIFC audio file format.
 - [static let aiff: AVFileType](avfiletype/aiff.md)
   The UTI for the AIFF audio file format.
-- [static let AHAP: AVFileType](avfiletype/ahap.md)
-  The UTI for the Apple Haptics Audio Pattern file format.
 - [static let amr: AVFileType](avfiletype/amr.md)
   The UTI for the adaptive multirate audio file format.
 - [static let appleiTT: AVFileType](avfiletype/appleitt.md)
@@ -45,6 +47,8 @@ struct AVFileType
   The UTI for the high-efficiency image file format that contains H.264 compressed images.
 - [static let caf: AVFileType](avfiletype/caf.md)
   The UTI for the Core Audio Format.
+- [static let dcm: AVFileType](avfiletype/dcm.md)
+  A UTI for the Digital Imaging and Communications in Medicine (DICOM) file format.
 - [static let dng: AVFileType](avfiletype/dng.md)
   The UTI for the Adobe Digital Negative file format.
 - [static let eac3: AVFileType](avfiletype/eac3.md)
@@ -59,18 +63,18 @@ struct AVFileType
   The UTI for the Apple m4a audio file format.
 - [static let m4v: AVFileType](avfiletype/m4v.md)
   The UTI for the iTunes video file format.
-- [static let mobile3GPP: AVFileType](avfiletype/mobile3gpp.md)
-  The UTI for the 3GPP file format.
 - [static let mobile3GPP2: AVFileType](avfiletype/mobile3gpp2.md)
   The UTI for the 3GPP2 file format.
+- [static let mobile3GPP: AVFileType](avfiletype/mobile3gpp.md)
+  The UTI for the 3GPP file format.
 - [static let mov: AVFileType](avfiletype/mov.md)
   The UTI for the QuickTime movie file format.
 - [static let mp3: AVFileType](avfiletype/mp3.md)
   The UTI for the MPEG Audio Layer III file format.
 - [static let mp4: AVFileType](avfiletype/mp4.md)
   The UTI for the MPEG-4 file format.
-- [static let SCC: AVFileType](avfiletype/scc.md)
-  The UTI for the Scenarist closed-caption file format.
+- [static let qta: AVFileType](avfiletype/qta.md)
+  A UTI for the QuickTime audio file format
 - [static let tif: AVFileType](avfiletype/tif.md)
   The UTI for the tagged image file format.
 - [static let wav: AVFileType](avfiletype/wav.md)
@@ -80,9 +84,6 @@ struct AVFileType
   Creates a file type with a string.
 - [init(rawValue: String)](avfiletype/init(rawvalue:).md)
   Creates a file type from its raw string value.
-### Type Properties
-- [static let dcm: AVFileType](avfiletype/dcm.md)
-  A UTI for the Digital Imaging and Communications in Medicine (DICOM) file format.
 
 ## Relationships
 

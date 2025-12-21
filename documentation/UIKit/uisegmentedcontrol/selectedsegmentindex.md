@@ -21,7 +21,7 @@ var selectedSegmentIndex: Int { get set }
 
 #### Discussion
 
-The default value is [`noSegment`](uisegmentedcontrol/nosegment.md) (no segment selected) until the user touches a segment. Set this property to `-1` to turn off the current selection. [`UISegmentedControl`](uisegmentedcontrol.md) ignores this property when [`isMomentary`](uisegmentedcontrol/ismomentary.md) is [`true`](https://developer.apple.com/documentation/swift/true). When the user touches a segment to change the selection, the system generates the control event [`valueChanged`](uicontrol/event/valuechanged.md). If you set up the segmented control to respond to this control event, it sends an action message to its target.
+The default value is [`noSegment`](uisegmentedcontrol/nosegment.md) (no segment selected) until the user touches a segment. Set this property to `-1` to turn off the current selection. [`UISegmentedControl`](uisegmentedcontrol.md) ignores this property when [`isMomentary`](uisegmentedcontrol/ismomentary.md) is [`true`](https://developer.apple.com/documentation/Swift/true). When the user touches a segment to change the selection, the system generates the control event [`valueChanged`](uicontrol/event/valuechanged.md). If you set up the segmented control to respond to this control event, it sends an action message to its target.
 
 ## See Also
 

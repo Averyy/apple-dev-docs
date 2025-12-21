@@ -6,9 +6,8 @@
 A one-shot alarm that fires at a specific time, not a time relative to the current time zone.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

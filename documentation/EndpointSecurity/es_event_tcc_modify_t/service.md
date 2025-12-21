@@ -13,6 +13,10 @@
 var service: es_string_token_t
 ```
 
+#### Discussion
+
+Structure for handling strings
+
 
 ---
 

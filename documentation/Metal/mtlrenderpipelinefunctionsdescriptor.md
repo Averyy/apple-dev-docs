@@ -21,11 +21,11 @@ class MTLRenderPipelineFunctionsDescriptor
 
 #### Overview
 
-When you create a render pipeline that takes visible functions as parameters, you must specify all possible functions that the render pipeline can call. If you already have a pipeline, you can create a new render pipeline with the same configuration but additional callable functions. To create the new pipeline state object, configure a [`MTLRenderPipelineFunctionsDescriptor`](mtlrenderpipelinefunctionsdescriptor.md) object with the additional callable functions to add, and then call the pipeline state object’s [`makeRenderPipelineState(additionalBinaryFunctions:)`](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:)-84te1.md) method, passing the descriptor.
+When you create a render pipeline that takes visible functions as parameters, you need to specify all possible functions that the render pipeline can call. If you already have a pipeline, you can create a new render pipeline with the same configuration but additional callable functions. To create the new pipeline state, configure an [`MTLRenderPipelineFunctionsDescriptor`](mtlrenderpipelinefunctionsdescriptor.md) instance with the additional callable functions to add, and then call the pipeline state’s [`makeRenderPipelineState(additionalBinaryFunctions:)`](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:)-84te1.md) method, passing the descriptor.
 
 ## Topics
 
-### Configuring the Descriptor’s Functions
+### Configuring the descriptor’s functions
 - [var vertexAdditionalBinaryFunctions: [any MTLFunction]?](mtlrenderpipelinefunctionsdescriptor/vertexadditionalbinaryfunctions.md)
   The vertex functions to add to the render pipeline.
 - [var fragmentAdditionalBinaryFunctions: [any MTLFunction]?](mtlrenderpipelinefunctionsdescriptor/fragmentadditionalbinaryfunctions.md)
@@ -59,7 +59,7 @@ When you create a render pipeline that takes visible functions as parameters, yo
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)

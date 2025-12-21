@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: init
 
+Creates an instance with the specified raw value.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -15,6 +17,10 @@
 ```swift
 init(rawValue: UInt)
 ```
+
+## Parameters
+
+- `rawValue`: The raw value to use for the new instance.
 
 
 ---

@@ -22,7 +22,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-The default value of this property is NO, specifying that SceneKit should render geometries and use lights attached to the node or its children. Change this property’s value to [`true`](https://developer.apple.com/documentation/swift/true) to exclude attached geometries and lights from rendering. (Cameras attached to the node or its children are not affected by this property.) Hiding a node also hides its child nodes recursively.
+The default value of this property is NO, specifying that SceneKit should render geometries and use lights attached to the node or its children. Change this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true) to exclude attached geometries and lights from rendering. (Cameras attached to the node or its children are not affected by this property.) Hiding a node also hides its child nodes recursively.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md). Hiding or showing a node in an animation results in a fade-in or fade-out effect.
 

@@ -21,7 +21,7 @@ func reset(_ range: Range<Int>)
 
 ## Parameters
 
-- `range`: The range of commands to reset. The range must fit inside the indirect command buffer’s extents.
+- `range`: The range of commands to reset. The range needs to fit inside the indirect command buffer’s extents.
 
 
 ---

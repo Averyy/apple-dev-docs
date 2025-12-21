@@ -329,7 +329,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 - Historical data in the Xcode Organizer now shows up to 16 of an app’s latest versions for each metric chart, providing the performance trend of an app over a larger window of time. (64382966)
 - Now when you view a metric, the inspector shows your app’s release date information. (64995828)
 - Qualitative Insights for Disk Write Reports in the Xcode Organizer show new information called Insights in the inspector. These insights include optimizations to help reduce the Disk Writes in the app. (66926840)
-- Smart Insights are now available in the Xcode Organizer to help you discover your app’s power and performance regressions faster than before. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app). (71420981)
+- Smart Insights are now available in the Xcode Organizer to help you discover your app’s power and performance regressions faster than before. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app#Read-Data-for-Smart-Insights). (71420981)
 
 ##### Playgrounds
 

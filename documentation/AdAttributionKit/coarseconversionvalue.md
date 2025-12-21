@@ -29,18 +29,6 @@ Use these values to differentiate between the value of a person’s actions that
   A value that represents a developer-defined, coarse conversion value that is low.
 - [CoarseConversionValue.medium](coarseconversionvalue/medium.md)
   A value that represents a developer-defined, coarse conversion value that is medium.
-### Initializers
-- [init?(rawValue: String)](coarseconversionvalue/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](coarseconversionvalue/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [CoarseConversionValue.RawValue](coarseconversionvalue/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](coarseconversionvalue/equatable-implementations.md)
-- [RawRepresentable Implementations](coarseconversionvalue/rawrepresentable-implementations.md)
 
 ## Relationships
 

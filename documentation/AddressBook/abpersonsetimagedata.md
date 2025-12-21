@@ -14,7 +14,7 @@ Sets the image for this person to the given data.
 ## Declaration
 
 ```swift
-func ABPersonSetImageData(_ person: ABRecord!, _ imageData: CFData!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ABPersonSetImageData(_ person: ABPersonRef!, _ imageData: CFData!) -> Bool
 ```
 
 #### Return Value

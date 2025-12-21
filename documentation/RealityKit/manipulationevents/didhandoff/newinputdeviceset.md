@@ -6,7 +6,7 @@
 The input devices that the object is handed off to.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

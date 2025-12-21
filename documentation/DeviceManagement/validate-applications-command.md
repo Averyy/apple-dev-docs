@@ -45,12 +45,14 @@ The request object the server returns for the Validate Applications Command.
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Apply Redemption Code](apply-redemption-code-command.md)
-  Complete the installation of an app using a redemption code.
-- [Remove Application](remove-application-command.md)
-  Remove an installed managed app.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
 - [Managed Application List](managed-application-list-command.md)
   Get the status of all managed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
+- [Apply Redemption Code](apply-redemption-code-command.md)
+  Complete the installation of an app using a redemption code.
 - [Managed Application Attributes](managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
 - [Managed Application Configuration](managed-application-configuration-command.md)

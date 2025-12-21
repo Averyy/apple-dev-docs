@@ -6,7 +6,7 @@
 An object that represents a physical stylus connected to the device.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -87,8 +87,11 @@ Use the `haptics` property to get the haptics profile of the stylus.  A spatial 
 - [var GCInputStylusPrimaryButton: String](gcinputstylusprimarybutton-18g2p.md)
 - [var GCInputStylusSecondaryButton: String](gcinputstylussecondarybutton-6r3q.md)
 - [var GCInputStylusTip: String](gcinputstylustip-1rhuw.md)
-### Type Properties
-- [class var styluses: [GCStylus]](gcstylus/styluses.md)
+### Structures
+- [GCStylus.DidConnectMessage](gcstylus/didconnectmessage.md)
+  A message that posts after a stylus accessory connects to the device.
+- [GCStylus.DidDisconnectMessage](gcstylus/diddisconnectmessage.md)
+  A message that posts after a stylus accessory disconnects from the device.
 
 ## Relationships
 

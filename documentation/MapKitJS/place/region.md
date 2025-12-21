@@ -11,7 +11,7 @@ The geographic region associated with the place.
 ## Declaration
 
 ```swift
-attribute mapkit.CoordinateRegion region;
+region?: CoordinateRegion;
 ```
 
 ## See Also

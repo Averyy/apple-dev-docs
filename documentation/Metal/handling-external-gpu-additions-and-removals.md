@@ -1,4 +1,4 @@
-# Handling External GPU Additions and Removals
+# Handling external GPU additions and removals
 
 **Framework**: Metal
 
@@ -43,7 +43,7 @@ Set up a method to respond to the notifications, and pass that method to the `ha
 
 ## See Also
 
-- [Transferring Data Between Connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
   Use high-speed connections between GPUs to transfer data quickly.
 
 

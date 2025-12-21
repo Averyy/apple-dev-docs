@@ -22,9 +22,6 @@ struct MetricsKey
 
 ## Topics
 
-### Creating the key
-- [init(rawValue: String)](metricskey/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting the properties
 - [static let source: MetricsKey](metricskey/source.md)
   A key associated with a temporal stream source (e.g. a file name).
@@ -48,15 +45,6 @@ struct MetricsKey
   A key associated with a validation maximum error metric.
 - [static let validationMeanAveragePrecision: MetricsKey](metricskey/validationmeanaverageprecision.md)
   A key associated with a validation mean average precision metric.
-- [var rawValue: String](metricskey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MetricsKey.RawValue](metricskey/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](metricskey/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](metricskey/equatable-implementations.md)
-- [RawRepresentable Implementations](metricskey/rawrepresentable-implementations.md)
 
 ## Relationships
 

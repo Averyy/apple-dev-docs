@@ -30,10 +30,6 @@ struct PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator> where Pr
 - [var preprocessor: Preprocessor](preprocessingupdatabletemporalestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatabletemporalestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatabletemporalestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func encodeWithOptimizer(PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatabletemporalestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatabletemporalestimator/decodewithoptimizer(from:).md)
@@ -57,11 +53,8 @@ struct PreprocessingUpdatableTemporalEstimator<Preprocessor, Estimator> where Pr
   The intermediate type.
 - [PreprocessingUpdatableTemporalEstimator.Output](preprocessingupdatabletemporalestimator/output.md)
   The output type.
-- [PreprocessingUpdatableTemporalEstimator.Transformer](preprocessingupdatabletemporalestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [TemporalEstimator Implementations](preprocessingupdatabletemporalestimator/temporalestimator-implementations.md)
-- [UpdatableTemporalEstimator Implementations](preprocessingupdatabletemporalestimator/updatabletemporalestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

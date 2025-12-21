@@ -10,7 +10,7 @@ Strict concurrency checking in the Swift 6 language mode helps you find and fix 
 
 Overlapping access to shared mutable state creates the risk for data races. Data races can cause your app to crash, misbehave, or corrupt user data. Because data races depend on the ordering of concurrent operations, they can be very difficult to reproduce and debug. Strict concurrency checking lets you confirm, when you compile your app, that its code is free from data races. When you identify a data race, you fix it by eliminating overlapping access, shared access, or mutable state.
 
-For information about the language-level concurrency model in Swift, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in .
+For information about the language-level concurrency model in Swift, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
 ##### Decide When to Upgrade to Strict Checking
 

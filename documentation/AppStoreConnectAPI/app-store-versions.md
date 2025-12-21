@@ -25,9 +25,12 @@ For more information about versions, see [`Create a new version`](https://develo
 ### Getting App Store Version Experiments
 - [List All Experiments for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionExperimentsV2](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List all experiment IDs for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
+  Get a list of all experiments IDs for an App Store version across all platforms.
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
+- [List all experiments IDs for an App Store version v1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
+  Get a list of all experiments IDs for an App Store version of an app across all platforms.
 ### Creating and Modifying App Store Versions
 - [Create an App Store Version](post-v1-appstoreversions.md)
   Add a new App Store version or platform to an app.
@@ -129,6 +132,8 @@ For more information about versions, see [`Create a new version`](https://develo
   Manage the app metadata that is localized and appears on the App Store.
 - [App Store Version Localizations](app-store-version-localizations.md)
   Create and maintain version-specific App Store metadata that’s localized.
+- [App tags](app-tags.md)
+  Read or modify Apple created app tags.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
 - [Accessibility declarations](accessibility-declarations.md)

@@ -25,7 +25,7 @@ The [`motionStartBorderMode`](mtlprimitiveaccelerationstructuredescriptor/motion
 
 ## Topics
 
-### Specifying Motion Modes
+### Specifying motion modes
 - [MTLMotionBorderMode.clamp](mtlmotionbordermode/clamp.md)
   A mode that specifies treating times outside the specified endpoint as if they were at the endpoint.
 - [MTLMotionBorderMode.vanish](mtlmotionbordermode/vanish.md)

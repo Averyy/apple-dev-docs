@@ -21,7 +21,7 @@ case apple6
 
 ## Mentions
 
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
 
 ## See Also
 

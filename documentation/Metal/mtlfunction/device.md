@@ -39,7 +39,7 @@ You can only use this function object with this [`MTLDevice`](mtldevice.md).
 - [var options: MTLFunctionOptions](mtlfunction/options.md)
   The options that Metal used to compile this function.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 
 
 ---

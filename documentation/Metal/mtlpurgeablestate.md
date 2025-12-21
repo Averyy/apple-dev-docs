@@ -21,7 +21,7 @@ enum MTLPurgeableState
 
 ## Topics
 
-### Specifying Purgeable States
+### Specifying purgeable states
 - [MTLPurgeableState.keepCurrent](mtlpurgeablestate/keepcurrent.md)
   The current state is queried but doesn’t change.
 - [MTLPurgeableState.nonVolatile](mtlpurgeablestate/nonvolatile.md)

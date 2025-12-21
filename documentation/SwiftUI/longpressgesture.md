@@ -22,8 +22,8 @@ struct LongPressGesture
 
 ## Mentions
 
-- [Composing SwiftUI gestures](composing-swiftui-gestures.md)
 - [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
+- [Composing SwiftUI gestures](composing-swiftui-gestures.md)
 
 #### Overview
 

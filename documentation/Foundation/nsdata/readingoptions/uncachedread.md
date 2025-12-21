@@ -26,10 +26,6 @@ static var uncachedRead: NSData.ReadingOptions { get }
   Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
 - [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)
   Deprecated name for [`dataReadingMapped`](nsdata/readingoptions/datareadingmapped.md).
-- [static var dataReadingMapped: NSData.ReadingOptions](nsdata/readingoptions/datareadingmapped.md)
-  Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
-- [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)
-  Deprecated name for [`dataReadingMapped`](nsdata/readingoptions/datareadingmapped.md).
 
 
 ---

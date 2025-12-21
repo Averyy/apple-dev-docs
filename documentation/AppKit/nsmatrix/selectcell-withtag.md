@@ -17,7 +17,7 @@ func selectCell(withTag tag: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains a cell whose tag matches `anInt`, or [`false`](https://developer.apple.com/documentation/swift/false) if no such cell exists
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver contains a cell whose tag matches `anInt`, or [`false`](https://developer.apple.com/documentation/Swift/false) if no such cell exists
 
 #### Discussion
 

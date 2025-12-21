@@ -11,7 +11,7 @@ A rule for determining whether a point is inside or outside a polygon.
 ## Declaration
 
 ```swift
-attribute string fillRule;
+fillRule?: CanvasFillRule;
 ```
 
 #### Discussion

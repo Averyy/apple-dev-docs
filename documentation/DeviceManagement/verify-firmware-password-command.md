@@ -14,7 +14,7 @@ This command has a throttle interval to prevent executing it more frequently tha
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-This command isn’t supported on Mac computers with Apple silicon.
+This command isn’t supported on a Mac with Apple silicon.
 
 ##### Command Availability
 
@@ -45,7 +45,7 @@ The request object the server returns for the Verify Firmware Password Command.
 - [Clear Passcode](clear-passcode-command.md)
   Remove the passcode from a device.
 - [Clear Restrictions Password](clear-restrictions-password-command.md)
-  Clear the restrictions password and the restrictions on a device.
+  Clear the Screen Time password and the restrictions on a device.
 - [Unlock User Account](unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
 - [Set Auto Admin Password](set-auto-admin-password-command.md)

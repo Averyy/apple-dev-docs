@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -18,8 +18,6 @@ struct WillLaunchApplicationMessage
 - [init(application: NSRunningApplication)](nsworkspace/willlaunchapplicationmessage/init(application:).md)
 ### Instance Properties
 - [var application: NSRunningApplication](nsworkspace/willlaunchapplicationmessage/application.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.WillLaunchApplicationMessage) -> Notification](nsworkspace/willlaunchapplicationmessage/makenotification(_:).md)
 
 ## Relationships
 

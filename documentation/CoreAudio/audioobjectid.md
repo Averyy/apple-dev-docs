@@ -13,6 +13,10 @@
 typealias AudioObjectID = UInt32
 ```
 
+#### Discussion
+
+A UInt32 that provides a handle on a specific AudioObject.
+
 ## See Also
 
 - [typealias AudioClassID](audioclassid.md)

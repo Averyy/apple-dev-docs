@@ -20,7 +20,7 @@ var prefersPointerLocked: Bool { get }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) indicates the view controller’s preference to lock the pointer, although the system may not honor the request. Use [`isLocked`](uipointerlockstate/islocked.md) to determine the current pointer lock state. For the system to consider locking the pointer:
+The default is [`false`](https://developer.apple.com/documentation/Swift/false). Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) indicates the view controller’s preference to lock the pointer, although the system may not honor the request. Use [`isLocked`](uipointerlockstate/islocked.md) to determine the current pointer lock state. For the system to consider locking the pointer:
 
 - The scene must be full screen, not in Split View or Slide Over, with no other apps in Slide Over.
 - The scene must be in the [`UIScene.ActivationState.foregroundActive`](uiscene/activationstate-swift.enum/foregroundactive.md) state.

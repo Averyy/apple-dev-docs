@@ -11,11 +11,11 @@ Store client-specific information on the server.
 
 ## Mentions
 
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
 - [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
 - [Subscribing to Notifications](subscribing-to-notifications.md)
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
+- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
 
 #### Discussion
 

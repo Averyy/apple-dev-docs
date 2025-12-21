@@ -21,7 +21,7 @@ var isDecodable: Bool { get }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), the system can decode the track, even if decoding may be too slow for real-time playback.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system can decode the track, even if decoding may be too slow for real-time playback.
 
 ## See Also
 

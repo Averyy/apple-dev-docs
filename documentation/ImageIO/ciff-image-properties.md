@@ -8,7 +8,7 @@ Metadata keys for the Camera Image File Format (CIFF) image format.
 
 ### Dictionary
 - [let kCGImagePropertyCIFFDictionary: CFString](kcgimagepropertyciffdictionary.md)
-  A dictionary of key-value pairs for an image that uses Camera Image File Format (CIFF). See [`CIFF Image Properties`](ciff-image-properties.md).
+  A dictionary of key-value pairs for an image that uses Camera Image File Format (CIFF).
 ### Image Details
 - [let kCGImagePropertyCIFFDescription: CFString](kcgimagepropertyciffdescription.md)
   The camera description.

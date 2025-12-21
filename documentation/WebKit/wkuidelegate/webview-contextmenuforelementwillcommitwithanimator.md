@@ -34,7 +34,7 @@ optional func webView(_ webView: WKWebView, contextMenuForElement elementInfo: W
   Tells the delegate that the web view is about to present the contextual menu for the specified element.
 - [func webView(WKWebView, contextMenuDidEndForElement: WKContextMenuElementInfo)](wkuidelegate/webview(_:contextmenudidendforelement:).md)
   Tells the delegate that the web view dismissed the contextual menu for the specified element.
-- [@MainActor class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
+- [class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
   An object containing the configuration details for the contextual menu.
 
 

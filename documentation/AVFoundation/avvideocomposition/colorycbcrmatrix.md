@@ -39,6 +39,11 @@ The default value is `nil`. When the value of this property is `nil`, the source
   The transfer function used for video composition.
 - [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](avvideocomposition/customvideocompositorclass.md)
   A custom compositor class to use.
+- [var outputBufferDescription: [[CMTag]]?](avvideocomposition/outputbufferdescription-3ayt8.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
+- [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](avvideocomposition/spatialvideoconfigurations-80iab.md)
+  Indicates the spatial configurations that are available to associate with the output of the video composition.
+- [struct AVSpatialVideoConfiguration](avspatialvideoconfiguration-swift.struct.md)
 
 
 ---

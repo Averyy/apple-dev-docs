@@ -15,6 +15,10 @@
 class QLPreviewReplyAttachment
 ```
 
+#### Overview
+
+QLPreviewReplyAttachment is used to provide data for attachment in html data-based previews.
+
 ## Topics
 
 ### Initializers

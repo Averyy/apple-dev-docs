@@ -6,7 +6,7 @@
 A type representing information about the window scenes snap state.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

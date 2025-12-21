@@ -17,9 +17,9 @@ var drawsBackground: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view cell fills the background with its background color.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view cell fills the background with its background color.
 
-If the scroll view encloses an `NSClipView`, setting this property to [`false`](https://developer.apple.com/documentation/swift/false) also sets the `NSClipView` property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/swift/false). The side effect of setting `drawsBackground` directly on the `NSClipView` instead is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
+If the scroll view encloses an `NSClipView`, setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) also sets the `NSClipView` property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/Swift/false). The side effect of setting `drawsBackground` directly on the `NSClipView` instead is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
 
 ## See Also
 

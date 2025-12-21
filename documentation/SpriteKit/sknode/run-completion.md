@@ -17,7 +17,6 @@ Adds an action to the list of actions executed by the node and schedules the arg
 ## Declaration
 
 ```swift
-@MainActor
 func run(_ action: SKAction) async
 ```
 

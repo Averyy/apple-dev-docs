@@ -26,7 +26,7 @@ A pointer to a texture descriptor object for a texture buffer.
 ## Parameters
 
 - `pixelFormat`: The format describing how every pixel on the texture buffer is stored. The default value is  .
-- `width`: The width of the texture buffer. The value must be greater than or equal to 1.
+- `width`: The width of the texture buffer. The value needs to be greater than or equal to  .
 - `resourceOptions`: The access options to use for the new texture buffer.
 - `usage`: The allowed usage of the new texture buffer.
 

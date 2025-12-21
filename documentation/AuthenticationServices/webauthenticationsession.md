@@ -68,12 +68,15 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
 ## Topics
 
 ### Authenticating a session
-- [func authenticate(using: URL, callbackURLScheme: String, preferredBrowserSession: WebAuthenticationSession.BrowserSession?) async throws -> URL](webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).md)
+- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](webauthenticationsession/authenticate(using:callback:preferredbrowsersession:additionalheaderfields:).md)
   Begins a web authentication session.
 - [WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession.md)
   Describes the preferred browser session behavior.
-### Instance Methods
-- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](webauthenticationsession/authenticate(using:callback:preferredbrowsersession:additionalheaderfields:).md)
+- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+  An object for evaluating navigation events in an authentication session.
+### Deprecated methods
+- [func authenticate(using: URL, callbackURLScheme: String, preferredBrowserSession: WebAuthenticationSession.BrowserSession?) async throws -> URL](webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).md)
+  Begins a web authentication session.
 
 ## Relationships
 

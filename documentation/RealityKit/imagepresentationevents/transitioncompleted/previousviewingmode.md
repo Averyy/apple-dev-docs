@@ -6,7 +6,7 @@
 The viewing mode the image presentation component transitioned from.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

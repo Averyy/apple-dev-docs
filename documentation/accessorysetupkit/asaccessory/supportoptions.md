@@ -26,10 +26,6 @@ struct SupportOptions
   The accessory supports bridging to Bluetooth classic transport.
 - [static var bluetoothHID: ASAccessory.SupportOptions](asaccessory/supportoptions/bluetoothhid.md)
   The accessory supports Bluetooth Low Energy HID service.
-### Default Implementations
-- [Equatable Implementations](asaccessory/supportoptions/equatable-implementations.md)
-- [OptionSet Implementations](asaccessory/supportoptions/optionset-implementations.md)
-- [SetAlgebra Implementations](asaccessory/supportoptions/setalgebra-implementations.md)
 
 ## Relationships
 

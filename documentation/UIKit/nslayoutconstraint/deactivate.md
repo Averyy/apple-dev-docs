@@ -21,7 +21,7 @@ class func deactivate(_ constraints: [NSLayoutConstraint])
 
 #### Discussion
 
-This is a convenience method that provides an easy way to deactivate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](nslayoutconstraint/isactive.md) property of each constraint to [`false`](https://developer.apple.com/documentation/swift/false). Typically, using this method is more efficient than deactivating each constraint individually.
+This is a convenience method that provides an easy way to deactivate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](nslayoutconstraint/isactive.md) property of each constraint to [`false`](https://developer.apple.com/documentation/Swift/false). Typically, using this method is more efficient than deactivating each constraint individually.
 
 ## Parameters
 

@@ -25,7 +25,7 @@ var account: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.mail.account` schema:
 
 ```swift
-@AssistantEntity(schema: .mail.account)
+@AppEntity(schema: .mail.account)
 struct MailAccountEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [MailAccountEntity.ID]) async throws -> [MailAccountEntity] { [] }

@@ -6,8 +6,8 @@
 A command type for immersive camera switching during playback.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -24,16 +24,16 @@ The property `cameraID` has been added to this type to hold camera identifier st
 ### Initializers
 - [init(from: any Decoder) throws](setcameracommand/init(from:).md)
 - [init(id: Int, time: CMTime, cameraID: String)](setcameracommand/init(id:time:cameraid:).md)
-  Initializes a `setCamera` command with a specific cameraID and start time.
+  Creates a command with a specific ID, cameraID and start time.
 ### Instance Properties
 - [var cameraID: String](setcameracommand/cameraid.md)
-  The cameraID to be used for the duration of this command.
+  The camera ID to use for the duration of this command.
 - [var duration: CMTime](setcameracommand/duration.md)
-  The duration of the command - this can be .zero if the command has no duration
+  The duration of the command.
 - [var id: Int](setcameracommand/id.md)
-  A unique command id. Ids should be unique for the whole Immersive Media file.
+  A unique command ID for the entire immersive media file.
 - [var offset: CMTime?](setcameracommand/offset.md)
-  Not used - setCamera commands don’t use offsets.
+  Reserved for later use.
 - [var time: CMTime](setcameracommand/time.md)
   The time this command starts during playback.
 ### Instance Methods

@@ -21,7 +21,7 @@ var shouldIndentWhileEditing: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). This property is unrelated to [`indentationLevel`](uitableviewcell/indentationlevel.md). The delegate can override this value in [`tableView(_:shouldIndentWhileEditingRowAt:)`](uitableviewdelegate/tableview(_:shouldindentwhileeditingrowat:).md). This property has an effect only on table views created in the grouped style ([`UITableView.Style.grouped`](uitableview/style-swift.enum/grouped.md)); it has no effect on [`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md) table views.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). This property is unrelated to [`indentationLevel`](uitableviewcell/indentationlevel.md). The delegate can override this value in [`tableView(_:shouldIndentWhileEditingRowAt:)`](uitableviewdelegate/tableview(_:shouldindentwhileeditingrowat:).md). This property has an effect only on table views created in the grouped style ([`UITableView.Style.grouped`](uitableview/style-swift.enum/grouped.md)); it has no effect on [`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md) table views.
 
 ## See Also
 

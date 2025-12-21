@@ -12,6 +12,10 @@
 var hpkePreSharedKey: Data? { get set }
 ```
 
+#### Discussion
+
+The PreSharedKey to be used for HKPE. Setting this value will change the mode to PSK or AuthPSK if the hpkeAuthPublicKey is also set. Must be at least 32 bytes.
+
 
 ---
 

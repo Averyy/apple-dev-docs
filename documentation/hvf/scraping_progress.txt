@@ -1,4 +1,4 @@
 Completed scraping hvf!
-Total pages scraped: 332
+Total pages scraped: 119
 Pages skipped (unchanged): 1
 Pages failed: 0

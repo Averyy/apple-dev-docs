@@ -22,7 +22,7 @@ func isEqual(to otherSet: Set<AnyHashable>) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherSet` are equal to the contents of the receiving set, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the contents of `otherSet` are equal to the contents of the receiving set, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -34,7 +34,7 @@ Two sets have equal contents if they each have the same number of members and if
 
 ## See Also
 
-- [func isEqual(_ object: Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
+- [func isEqual(Any?) -> Bool](../ObjectiveC/NSObjectProtocol/isEqual(_:).md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
 - [func isSubset(of: Set<AnyHashable>) -> Bool](nsset/issubset(of:).md)
   Returns a Boolean value that indicates whether every object in the receiving set is also present in another given set.

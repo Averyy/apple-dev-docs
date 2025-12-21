@@ -12,6 +12,10 @@
 var loginRequestEncryptionAlgorithm: ASAuthorizationProviderExtensionEncryptionAlgorithm { get set }
 ```
 
+#### Discussion
+
+The encryption algorithm to use for the embedded login assertion.
+
 
 ---
 

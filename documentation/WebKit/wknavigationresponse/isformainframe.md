@@ -21,7 +21,7 @@ var isForMainFrame: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the response targets the main frame. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the response targets a different frame, such as the frame in a new window.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the response targets the main frame. The value is [`false`](https://developer.apple.com/documentation/Swift/false) if the response targets a different frame, such as the frame in a new window.
 
 ## See Also
 

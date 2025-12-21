@@ -21,7 +21,7 @@ var keyPath: String { get }
 
 #### Discussion
 
-When recording parameter values, hosts should bind to the parameter key path (unless an audio unit specifically documents that its parameter addresses are stable and persistent). The individual node identifiers in a key path are separated by periods (`.`). Passing a node’s key path to a parameter tree’s doc://com.apple.documentation/documentation/objectivec/nsobject/1416468-value method returns the same node.
+When recording parameter values, hosts should bind to the parameter key path (unless an audio unit specifically documents that its parameter addresses are stable and persistent). The individual node identifiers in a key path are separated by periods (`.`). Passing a node’s key path to a parameter tree’s [`value(forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKeyPath:)) method returns the same node.
 
 ## See Also
 

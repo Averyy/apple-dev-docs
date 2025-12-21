@@ -6,7 +6,7 @@
 The size of the screen presenting the image, with the format [width, height] in meters.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

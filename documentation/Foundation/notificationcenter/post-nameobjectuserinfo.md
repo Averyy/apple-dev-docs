@@ -28,7 +28,7 @@ func post(name aName: NSNotification.Name, object anObject: Any?, userInfo aUser
 
 ## See Also
 
-- [func post(Notification)](notificationcenter/post(_:).md)
+- [func post(Notification)](notificationcenter/post(_:)-3x2st.md)
   Posts a given notification to the notification center.
 - [func post(name: NSNotification.Name, object: Any?)](notificationcenter/post(name:object:).md)
   Creates a notification with a given name and sender and posts it to the notification center.

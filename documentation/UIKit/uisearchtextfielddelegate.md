@@ -20,7 +20,7 @@ protocol UISearchTextFieldDelegate : UITextFieldDelegate
 
 #### Overview
 
-A search field asks its delegate for an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) when the user starts to copy or move a token. To support these interactions, set the search field’s [`delegate`](uitextfield/delegate.md) to an instance of [`UISearchTextFieldDelegate`](uisearchtextfielddelegate.md) that implements [`searchTextField(_:itemProviderForCopying:)`](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md) and set the search field’s [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+A search field asks its delegate for an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) when the user starts to copy or move a token. To support these interactions, set the search field’s [`delegate`](uitextfield/delegate.md) to an instance of [`UISearchTextFieldDelegate`](uisearchtextfielddelegate.md) that implements [`searchTextField(_:itemProviderForCopying:)`](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md) and set the search field’s [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The search field’s [`pasteDelegate`](uitextpasteconfigurationsupporting/pastedelegate.md) handles pasting and dropping tokens as well as text.
 

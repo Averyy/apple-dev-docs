@@ -21,7 +21,7 @@ var textDragInteraction: UIDragInteraction? { get }
 
 #### Discussion
 
-You can set the text drag interaction’s [`isEnabled`](uidraginteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false) if you need to explicitly turn off drag interactions for a UIKit-provided text view.
+You can set the text drag interaction’s [`isEnabled`](uidraginteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) if you need to explicitly turn off drag interactions for a UIKit-provided text view.
 
 
 ---

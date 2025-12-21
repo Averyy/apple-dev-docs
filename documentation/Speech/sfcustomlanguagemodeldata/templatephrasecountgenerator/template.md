@@ -18,9 +18,9 @@ struct Template
 
 ## Topics
 
-### Initializers
+### Creating a template
 - [init(String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/init(_:count:).md)
-### Instance Properties
+### Inspecting the template
 - [let body: String](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/body.md)
 - [let count: Int](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count.md)
 
@@ -32,6 +32,11 @@ struct Template
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [TemplateInsertable](templateinsertable.md)
+
+## See Also
+
+- [func insert(template: String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).md)
+  Add a template to be used to generate data samples.
 
 
 ---

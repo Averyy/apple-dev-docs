@@ -24,13 +24,6 @@ func subdata(in range: Range<Data.Index>) -> Data
 
 - `range`: The range to copy.
 
-## See Also
-
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](data/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
-  Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](data/split(separator:maxsplits:omittingemptysubsequences:).md)
-  Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-
 
 ---
 

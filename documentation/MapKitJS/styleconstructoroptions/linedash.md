@@ -11,7 +11,7 @@ An array of line and gap lengths for creating a dashed line.
 ## Declaration
 
 ```swift
-attribute number[] lineDash;
+lineDash?: number[];
 ```
 
 #### Discussion

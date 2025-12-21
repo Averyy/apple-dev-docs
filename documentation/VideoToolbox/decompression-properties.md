@@ -58,6 +58,7 @@ Properties used to configure a VideoToolbox decompression session.
 - [let kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport: CFString](kvtdecompressionpropertykey_pixelformatswithreducedresolutionsupport.md)
   Pixel formats that support reduced-resolution decoding (optional).
 - [let kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions: CFString](kvtdecompressionpropertykey_allowbitstreamtochangeframedimensions.md)
+  A Boolean value that indicates whether a decoder is allowed to output buffers matching reduced frame dimensions in the bitstream rather than under-filling them.
 ### Post-Decompression Processing
 - [let kVTDecompressionPropertyKey_PixelTransferProperties: CFString](kvtdecompressionpropertykey_pixeltransferproperties.md)
   Specific pixel transfer features to be used during decompression.
@@ -68,7 +69,9 @@ Properties used to configure a VideoToolbox decompression session.
 - [let kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata: CFString](kvtdecompressionpropertykey_generateperframehdrdisplaymetadata.md)
   A key that indicates to generate per frame HDR Metadata and attach it to the resulting decoded pixel buffers.
 - [let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString](kvtdecompressionpropertykey_decoderproducesrawoutput.md)
+  A value that indicates whether the decoder can produce RAW output requiring a RAW processing session for post-decode processing.
 - [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](kvtdecompressionpropertykey_requestrawoutput.md)
+  For decoders that produce RAW output, this property requests that the decompression session provides unprocessed output.
 ### Multiview Decompression
 - [let kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs: CFString](kvtdecompressionpropertykey_requestedmvhevcvideolayerids.md)
   Requests multi-image decoding of specific MV-HEVC video layers.

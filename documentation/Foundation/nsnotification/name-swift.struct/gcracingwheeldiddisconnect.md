@@ -19,6 +19,8 @@ static let GCRacingWheelDidDisconnect: NSNotification.Name
 
 The notification object is the [`GCRacingWheel`](https://developer.apple.com/documentation/GameController/GCRacingWheel) object that disconnects from the device.
 
+The system posts this notification on the main actor.
+
 ## See Also
 
 - [static let GCControllerDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gccontrollerdidconnect.md)

@@ -22,7 +22,7 @@ var readWriteTextureSupport: MTLReadWriteTextureTier { get }
 
 ## Topics
 
-### Read-Write Texture Tiers
+### Read-write texture tiers
 - [enum MTLReadWriteTextureTier](mtlreadwritetexturetier.md)
   The support level for read-write texture formats.
 

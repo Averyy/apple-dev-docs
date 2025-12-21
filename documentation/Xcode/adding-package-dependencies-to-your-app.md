@@ -16,11 +16,11 @@ To add a package dependency to your Xcode project, select File > Add Package Dep
 
 ![Screenshot showing the dialogue for adding content to the “Frameworks, Libraries, and Embedded Content” with Add Package Dependency… selected.](https://docs-assets.developer.apple.com/published/9e53f203a6a4c3e6fcc05ab6a52ad4bc/adding-package-dependencies-to-your-app-1%402x.png)
 
-Instead of adding a source control repository URL, you can search for a package on [`GitHub`](https://developer.apple.comhttps://github.com) or [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise). Add your GitHub or GitHub Enterprise account in Xcode’s preferences, and a list of package repositories appears as you type. The following screenshot shows a list of repositories for the search term `ExamplePackage` for a user who added their Git provider in Xcode’s preferences.
+Instead of adding a source control repository URL, you can search for a package on [`GitHub`](https://developer.apple.comhttps://github.com) or [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise). Add your GitHub or GitHub Enterprise account in Xcode’s settings, and a list of package repositories appears as you type. The following screenshot shows a list of repositories for the search term `ExamplePackage` for a user who added their Git provider in Xcode’s settings.
 
 ![Screenshot showing the dialogue to add a package dependency. The user has entered ExamplePackage in the search field.](https://docs-assets.developer.apple.com/published/5912b3a4fb5c25545fe107028c8be837/adding-package-dependencies-to-your-app-2%402x.png)
 
-If you’ve added a source control account in Xcode’s preferences and you haven’t yet entered a search term, the list contains package repositories from:
+If you’ve added a source control account in Xcode’s settings and you haven’t yet entered a search term, the list contains package repositories from:
 
 - Your Git Repositories
 - Your team’s Git repositories
@@ -99,8 +99,8 @@ To remove a package dependency from your Xcode project:
 
 ## See Also
 
-- [Managing Your App’s Information Property List](../BundleResources/managing-your-app-s-information-property-list.md)
-  Create and customize an information property list file for your app using Xcode.
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+  Customize the information property list values for your app using Xcode.
 - [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
 - [Setting up a watchOS project](../WatchKit/setting-up-a-watchos-project.md)

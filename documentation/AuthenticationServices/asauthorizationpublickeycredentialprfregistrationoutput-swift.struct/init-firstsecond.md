@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: init
 
-This method should only be called if input values were provided with the registration request. Otherwise, use `.supported` or `.unsupported`.
+Initializes an object representing the outputs of the web authentication PRF extension.
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +17,10 @@ This method should only be called if input values were provided with the registr
 ```swift
 init(first: SymmetricKey, second: SymmetricKey?)
 ```
+
+#### Discussion
+
+Call this method only if the registration request includes input values. Otherwise, use [`supported`](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/supported.md) or [`unsupported`](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md).
 
 
 ---

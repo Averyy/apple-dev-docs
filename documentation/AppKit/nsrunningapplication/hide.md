@@ -20,11 +20,11 @@ func hide() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application was successfully hidden, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the application was successfully hidden, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The property of this value will be [`false`](https://developer.apple.com/documentation/swift/false) if the application has already quit, or if of a type that is unable to be hidden.
+The property of this value will be [`false`](https://developer.apple.com/documentation/Swift/false) if the application has already quit, or if of a type that is unable to be hidden.
 
 ## See Also
 

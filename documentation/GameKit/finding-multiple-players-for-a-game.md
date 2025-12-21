@@ -54,7 +54,7 @@ Optionally, configure the view controller before you present it:
 
 - To show only nearby players for games where players need to be in the same room, as in augmented reality ([`ARKit`](https://developer.apple.com/documentation/ARKit)) games, set the [`matchmakingMode`](gkmatchmakerviewcontroller/matchmakingmode.md) property to [`GKMatchmakingMode.nearbyOnly`](gkmatchmakingmode/nearbyonly.md).
 - To use automatch only to connect with other players, set the mode to [`GKMatchmakingMode.automatchOnly`](gkmatchmakingmode/automatchonly.md), or to invite players without using automatch, set the mode to [`GKMatchmakingMode.inviteOnly`](gkmatchmakingmode/inviteonly.md).
-- To allow the local player to start gameplay with a minimum number of players, while Game Center continues to fill empty slots in the background, set the [`canStartWithMinimumPlayers`](gkmatchmakerviewcontroller/canstartwithminimumplayers.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Then design your game to progressively add players as they accept their invitations.
+- To allow the local player to start gameplay with a minimum number of players, while Game Center continues to fill empty slots in the background, set the [`canStartWithMinimumPlayers`](gkmatchmakerviewcontroller/canstartwithminimumplayers.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Then design your game to progressively add players as they accept their invitations.
 
 Players automatically have the ability to chat with other players using FaceTime. The view controller shows a SharePlay button, in addition to the Invite Players and Quick Match buttons. To implement a custom group activities experience, see [`startGroupActivity(playerHandler:)`](gkmatchmaker/startgroupactivity(playerhandler:).md). For macOS apps, add the Group Activities capability to your Xcode project to show the SharePlay button.
 
@@ -172,6 +172,8 @@ Alternatively, to invite specific players without presenting an interface, set t
   Send data between players in a real-time multiplayer game.
 - [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+  Connect players to your custom server-hosted games by creating game sessions with hosted matches.
 - [Matchmaking rules](matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
 - [class GKMatchRequest](gkmatchrequest.md)

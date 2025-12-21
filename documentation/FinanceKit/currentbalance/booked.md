@@ -15,6 +15,13 @@ Only the booked balance is present.
 case booked(Balance)
 ```
 
+## See Also
+
+- [CurrentBalance.available(_:)](currentbalance/available(_:).md)
+  Only the available balance is present.
+- [case availableAndBooked(available: Balance, booked: Balance)](currentbalance/availableandbooked(available:booked:).md)
+  Both available and booked balances are present.
+
 
 ---
 

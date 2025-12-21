@@ -6,7 +6,7 @@
 Events associated with viewing mode transitions for image presentation components.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

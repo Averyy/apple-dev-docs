@@ -33,14 +33,14 @@ Image features that support additional image sizes provide a range of sizes, or 
 
 ## Topics
 
-### Accessing the Constraints
+### Accessing the constraints
 - [var pixelsWide: Int](mlimageconstraint/pixelswide.md)
   The model’s default width for an image feature.
 - [var pixelsHigh: Int](mlimageconstraint/pixelshigh.md)
   The model’s default height for an image feature.
 - [var pixelFormatType: OSType](mlimageconstraint/pixelformattype.md)
   The model’s pixel format for an image feature.
-### Inspecting Acceptable Sizes
+### Inspecting acceptable sizes
 - [var sizeConstraint: MLImageSizeConstraint](mlimageconstraint/sizeconstraint.md)
   Additional sizes this image feature supports.
 - [class MLImageSizeConstraint](mlimagesizeconstraint.md)

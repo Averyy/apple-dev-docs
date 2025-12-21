@@ -22,7 +22,7 @@ func takeIntegerValueFrom(_ sender: Any?)
 ## See Also
 
 - [var integerValue: Int](nscell/integervalue.md)
-  The cell’s value as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) type.
+  The cell’s value as an integer value.
 - [func takeObjectValueFrom(Any?)](nscell/takeobjectvaluefrom(_:).md)
   Sets the value of the receiver’s cell to the object value obtained from the specified object.
 - [func takeIntValueFrom(Any?)](nscell/takeintvaluefrom(_:).md)

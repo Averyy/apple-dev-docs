@@ -22,7 +22,7 @@ func sort(using compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: U
 
 ## See Also
 
-- [func sort(_ compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?)](../Foundation/NSMutableArray/sort(_:context:).md)
+- [func sort((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?)](../Foundation/NSMutableArray/sort(_:context:).md)
   Sorts the receiver in ascending order as defined by the comparison function `compare`.
 - [func addColumn()](nsmatrix/addcolumn.md)
   Adds a new column of cells to the right of the last column.
@@ -39,7 +39,7 @@ func sort(using compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: U
 - [func getNumberOfRows(UnsafeMutablePointer<Int>?, columns: UnsafeMutablePointer<Int>?)](nsmatrix/getnumberofrows(_:columns:).md)
   Obtains the number of rows and columns in the receiver.
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func insertColumn(Int, with: [NSCell]?)](nsmatrix/insertcolumn(_:with:).md)
   Inserts a new column of cells before the specified column, using the given cells.
 - [func insertRow(Int)](nsmatrix/insertrow(_:).md)

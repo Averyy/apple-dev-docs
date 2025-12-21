@@ -22,21 +22,21 @@ class AVMediaSelectionGroup
 
 ## Mentions
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 ## Topics
 
-### Accessing Media Selection Options
+### Accessing media selection options
 - [var options: [AVMediaSelectionOption]](avmediaselectiongroup/options.md)
   A collection of mutually exclusive media selection options
 - [func mediaSelectionOption(withPropertyList: Any) -> AVMediaSelectionOption?](avmediaselectiongroup/mediaselectionoption(withpropertylist:).md)
   Returns the media selection options that match the given property list.
 - [var defaultOption: AVMediaSelectionOption?](avmediaselectiongroup/defaultoption.md)
   The default option in the group.
-### Configuring Empty Selection Behavior
+### Configuring empty selection behavior
 - [var allowsEmptySelection: Bool](avmediaselectiongroup/allowsemptyselection.md)
   A Boolean value that indicates whether it’s possible to present none of the options in the group when an associated player item is played.
-### Filtering Selection Options
+### Filtering selection options
 - [class func playableMediaSelectionOptions(from: [AVMediaSelectionOption]) -> [AVMediaSelectionOption]](avmediaselectiongroup/playablemediaselectionoptions(from:).md)
   Returns an array containing the media selection options from a given array that are playable.
 - [class func mediaSelectionOptions(from: [AVMediaSelectionOption], with: Locale) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:with:).md)
@@ -47,12 +47,11 @@ class AVMediaSelectionGroup
   Returns an array containing the media selection options from a given array that do not match given media characteristics.
 - [class func mediaSelectionOptions(from: [AVMediaSelectionOption], filteredAndSortedAccordingToPreferredLanguages: [String]) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:filteredandsortedaccordingtopreferredlanguages:).md)
   Returns an array of media selection options, filtering them according to whether their locales match one of the specified languages.
-### Creating a Now Playing Language Option Group
-- [func makeNowPlayingInfoLanguageOptionGroup() -> MPNowPlayingInfoLanguageOptionGroup](avmediaselectiongroup/makenowplayinginfolanguageoptiongroup.md)
-  Creates a language option group from the media selection group.
-### Instance Properties
 - [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](avmediaselectiongroup/custommediaselectionscheme.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+### Creating a Now Playing language option group
+- [func makeNowPlayingInfoLanguageOptionGroup() -> MPNowPlayingInfoLanguageOptionGroup](avmediaselectiongroup/makenowplayinginfolanguageoptiongroup.md)
+  Creates a language option group from the media selection group.
 
 ## Relationships
 
@@ -71,7 +70,7 @@ class AVMediaSelectionGroup
 
 ## See Also
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 - [class AVMediaSelection](avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
@@ -81,6 +80,12 @@ class AVMediaSelectionGroup
   A mutable object that represents a complete rendition of media selection options on an asset.
 - [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 
 ---

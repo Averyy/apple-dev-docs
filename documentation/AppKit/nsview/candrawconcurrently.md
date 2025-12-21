@@ -17,7 +17,7 @@ var canDrawConcurrently: Bool { get set }
 
 #### Discussion
 
-If your view’s [`draw(_:)`](nsview/draw(_:).md) implementation can draw safely on a background thread, set this property to [`true`](https://developer.apple.com/documentation/swift/true). Doing so gives AppKit the ability to run your view’s drawing code off the app’s main thread, which can improve performance. The view’s window must also have its [`allowsConcurrentViewDrawing`](nswindow/allowsconcurrentviewdrawing.md) property set to [`true`](https://developer.apple.com/documentation/swift/true) (the default) for threaded view drawing to occur.
+If your view’s [`draw(_:)`](nsview/draw(_:).md) implementation can draw safely on a background thread, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). Doing so gives AppKit the ability to run your view’s drawing code off the app’s main thread, which can improve performance. The view’s window must also have its [`allowsConcurrentViewDrawing`](nswindow/allowsconcurrentviewdrawing.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true) (the default) for threaded view drawing to occur.
 
 ## See Also
 

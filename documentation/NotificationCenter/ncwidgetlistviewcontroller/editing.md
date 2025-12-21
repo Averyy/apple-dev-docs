@@ -17,7 +17,7 @@ var editing: Bool { get set }
 
 #### Discussion
 
-When you set this property to [`true`](https://developer.apple.com/documentation/swift/true), the list view controller can display controls for reordering and removing rows. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), the list view controller can display controls for reordering and removing rows. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

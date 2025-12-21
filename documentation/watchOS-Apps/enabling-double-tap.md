@@ -38,17 +38,15 @@ The [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.
 
 ## See Also
 
-- [Gestures](https://developer.apple.com/design/Human-Interface-Guidelines/gestures)
+- [Gestures](https://developer.apple.com/design/Human-Interface-Guidelines/gestures#watchOS)
   A gesture is a physical motion that a person uses to directly affect an object in an app or game on their device.
-- [nonisolated func handGestureShortcut(_ shortcut: HandGestureShortcut, isEnabled: Bool = true) -> some View
-](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md)
+- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md)
   Assigns a hand gesture shortcut to the modified control.
 - [static let primaryAction: HandGestureShortcut](../SwiftUI/HandGestureShortcut/primaryAction.md)
   The hand gesture shortcut for the primary action.
-- [nonisolated func clipShape<S>(_ shape: S, style: FillStyle = FillStyle()) -> some View where S : Shape
-](../SwiftUI/View/clipShape(_:style:).md)
+- [func clipShape<S>(S, style: FillStyle) -> some View](../SwiftUI/View/clipShape(_:style:).md)
   Sets a clipping shape for this view.
-- [@MainActor @preconcurrency static var verticalPage: VerticalPageTabViewStyle { get }](../SwiftUI/TabViewStyle/verticalPage.md)
+- [static var verticalPage: VerticalPageTabViewStyle](../SwiftUI/TabViewStyle/verticalPage.md)
   A `TabViewStyle` that displays a vertical page `TabView` interaction and appearance.
 - [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.

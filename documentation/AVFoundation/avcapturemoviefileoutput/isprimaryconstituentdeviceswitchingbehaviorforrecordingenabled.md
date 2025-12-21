@@ -22,7 +22,7 @@ var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool { get s
 
 Use this property to enable camera switching restrictions when recording movies. You set restrictions by calling the output’s [`setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_:restrictedSwitchingBehaviorConditions:)`](avcapturemoviefileoutput/setprimaryconstituentdeviceswitchingbehaviorforrecording(_:restrictedswitchingbehaviorconditions:).md) method. The restrictions take effect when you start recording, and revert to the behavior set by the capture device’s [`primaryConstituentDeviceSwitchingBehavior`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.property.md) when you stop recording.
 
-By default, this property is [`true`](https://developer.apple.com/documentation/swift/true) when connected to a capture device that supports constituent device switching.
+By default, this property is [`true`](https://developer.apple.com/documentation/Swift/true) when connected to a capture device that supports constituent device switching.
 
 ## See Also
 

@@ -18,8 +18,6 @@ case finished
 
 - [NSBackgroundActivityScheduler.Result.deferred](nsbackgroundactivityscheduler/result/deferred.md)
   System conditions have changed since the time the activity began executing, and deferral of additional work is recommended.
-- [NSBackgroundActivityScheduler.Result.deferred](nsbackgroundactivityscheduler/result/deferred.md)
-  System conditions have changed since the time the activity began executing, and deferral of additional work is recommended.
 
 
 ---

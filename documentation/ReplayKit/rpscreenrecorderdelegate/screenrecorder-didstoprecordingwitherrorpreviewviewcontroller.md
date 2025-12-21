@@ -1,8 +1,7 @@
 # screenRecorder(_:didStopRecordingWithError:previewViewController:)
 
 **Framework**: ReplayKit  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Indicates that the screen recording has stopped.
 

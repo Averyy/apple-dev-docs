@@ -11,12 +11,12 @@ The visual presentation for the selection accessory.
 ## Declaration
 
 ```swift
-attribute mapkit.PlaceSelectionAccessory.Styles style;
+style?: PlaceSelectionAccessoryStyle;
 ```
 
 #### Discussion
 
-See [`style`](mapkit.placeselectionaccessory/style.md) for the available selection accessory styles.
+See [`style`](placeselectionaccessory/style.md) for the available selection accessory styles.
 
 
 ---

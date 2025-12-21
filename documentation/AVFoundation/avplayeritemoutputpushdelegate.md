@@ -22,7 +22,7 @@ protocol AVPlayerItemOutputPushDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Flushing Sequence State
+### Flushing sequence state
 - [func outputSequenceWasFlushed(AVPlayerItemOutput)](avplayeritemoutputpushdelegate/outputsequencewasflushed(_:).md)
   Tells the delegate that the output is starting a new sequence of media data.
 

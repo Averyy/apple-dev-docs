@@ -65,7 +65,7 @@ The sample group description atom contains this [`Payload data`](sample_group_de
 
 > **Note**: Recall that the payload data value could be an alternative value, depending upon the particular codec in use. `-1` is typical for current AAC codecs.
 
-And the [`Sample-to-group atom ('sbpd')`](sample-to-group_atom.md) contains this data:
+And the [`Sample-to-group atom ('sbgp')`](sample-to-group_atom.md) contains this data:
 
 - [`Size`](sample-to-group_atom/size.md): `22`
 - [`Type`](sample-to-group_atom/type.md): `‘sbgp’`

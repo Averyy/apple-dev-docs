@@ -3,19 +3,28 @@
 **Framework**: Network Extension  
 **Kind**: case
 
+Instructs the server not to use a quantum-secure key exchange method.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 case methodNone
 ```
+
+## See Also
+
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method36](nevpnikev2postquantumkeyexchangemethod/method36.md)
+  Instructs the server to use the ML-KEM-768 key exchange method.
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method37](nevpnikev2postquantumkeyexchangemethod/method37.md)
+  Instructs the server to use the ML-KEM-1024 key exchange method.
 
 
 ---

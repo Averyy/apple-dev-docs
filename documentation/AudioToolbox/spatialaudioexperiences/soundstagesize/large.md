@@ -6,7 +6,7 @@
 Spreads an audio stream’s channels around the user according to the coordinates described in its channel layout.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -10,7 +10,7 @@ A policy that specifies a future date for WidgetKit to request a new timeline.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

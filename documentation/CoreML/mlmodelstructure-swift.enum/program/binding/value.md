@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: case
 
+A constant value in the Program.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,6 +23,7 @@ case value(MLModelStructure.Program.Value)
 ## See Also
 
 - [MLModelStructure.Program.Binding.name(_:)](mlmodelstructure-swift.enum/program/binding/name(_:).md)
+  The name of the previously defined variable in the Program.
 
 
 ---

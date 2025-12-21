@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure an Xsan client system.
+The payload that configures an Xsan client system.
 
 **Availability**:
 - macOS 10.10+
@@ -79,7 +79,7 @@ For more information, see [`https://support.apple.com/en-us/HT205333`](https://d
 ## See Also
 
 - [object XsanPreferences](xsanpreferences.md)
-  The payload you use to configure the Xsan preferences that define the volumes that automatically mount at startup.
+  The payload that configures the Xsan preferences that define the volumes that automatically mount at startup.
 
 
 ---

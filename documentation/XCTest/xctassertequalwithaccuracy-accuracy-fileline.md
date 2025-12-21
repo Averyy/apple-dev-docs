@@ -5,9 +5,6 @@
 
 Asserts that two values are equal within a certain accuracy.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

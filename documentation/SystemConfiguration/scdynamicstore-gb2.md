@@ -6,7 +6,7 @@
 
 The `SCDynamicStore` programming interface provides access to the key-value pairs in the dynamic store of a running system. The dynamic store contains, among other items, a copy of the configuration settings for the currently active set (which is sometimes refered to as the location) and information about the current network state.
 
-The functions in the `SCDynamicStore` programming interface allow you to find key-value pairs, add or remove key-value pairs, add or change values, and request notifications. Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function.
+The functions in the `SCDynamicStore` programming interface allow you to find key-value pairs, add or remove key-value pairs, add or change values, and request notifications. Note that these functions follow Core Foundation function-name conventions. A function that has “Create” or “Copy” in its name returns a reference you must release with the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 
 To use these functions, you must first establish a dynamic store session using the [`SCDynamicStoreCreate(_:_:_:_:)`](scdynamicstorecreate(_:_:_:_:).md) function. When you are finished with the session, use `CFRelease` to close it.
 

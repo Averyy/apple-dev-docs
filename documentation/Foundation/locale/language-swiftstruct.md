@@ -60,8 +60,11 @@ struct Language
   An array of the system’s supported languages.
 ### Instance Properties
 - [var lineLayoutDirection: Locale.LanguageDirection](locale/language-swift.struct/linelayoutdirection.md)
+  Ordering of lines within a page. For example, top-to-bottom for English; right-to-left for Mongolian in the Mongolian Script
 - [var maximalIdentifier: String](locale/language-swift.struct/maximalidentifier.md)
+  Returns a BCP-47 identifier that always includes the script: “zh-Hant-TW”, “en-Latn-US”
 - [var minimalIdentifier: String](locale/language-swift.struct/minimalidentifier.md)
+  Returns a BCP-47 identifier in a minimalist form. Script and region may be omitted. For example, “zh-TW”, “en”
 
 ## Relationships
 

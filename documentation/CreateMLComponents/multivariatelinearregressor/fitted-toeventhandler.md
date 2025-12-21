@@ -31,9 +31,7 @@ The fitted linear regressor model.
 
 ## See Also
 
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-9bluu.md)
-  Fits a linear regressor model to a sequence of annotated features.
-- [func fitted(to: AnnotatedBatch<Scalar>, validateOn: AnnotatedBatch<Scalar>?, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq.md)
+- [func fitted(to:validateOn:eventHandler:)](multivariatelinearregressor/fitted(to:validateon:eventhandler:).md)
   Fits a linear regressor model to shaped arrays of features and annotations.
 
 

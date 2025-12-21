@@ -19,7 +19,7 @@ var resumeOnDidBecomeActive: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If your application sets this to [`false`](https://developer.apple.com/documentation/swift/false), it must explicitly set the [`isPaused`](glkviewcontroller/ispaused.md) property to [`false`](https://developer.apple.com/documentation/swift/false) when the application becomes active.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If your application sets this to [`false`](https://developer.apple.com/documentation/Swift/false), it must explicitly set the [`isPaused`](glkviewcontroller/ispaused.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) when the application becomes active.
 
 ## See Also
 

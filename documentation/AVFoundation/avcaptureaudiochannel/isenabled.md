@@ -16,7 +16,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-By default, a connection enables all audio channels that it exposes. You can set this value to [`false`](https://developer.apple.com/documentation/swift/false) to stop the flow of data for a particular channel.
+By default, a connection enables all audio channels that it exposes. You can set this value to [`false`](https://developer.apple.com/documentation/Swift/false) to stop the flow of data for a particular channel.
 
 ## See Also
 

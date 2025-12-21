@@ -6,7 +6,7 @@ Focus on a part of an image by applying Gaussian blur and gradient masks.
 
 #### Overview
 
-You can selectively blur areas of an image using [`maskedVariableBlurFilter`](cifilter-swift.class/maskedvariableblurfilter.md) filter.
+You can selectively blur areas of an image using [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter.
 
 ![Flowchart showing the combination of image and mask in focusing on the scoop in a photo of walnuts](https://docs-assets.developer.apple.com/published/f5b5d0be1052e72273f79f4ff27f3f94/media-2960174%402x.png)
 
@@ -15,7 +15,7 @@ You specify the region to blur by applying a mask image; the shape and values of
 1. To focus on a strip across the image, create two linear gradients representing the portions of the image to blur.
 2. To focus on a circular region in the image, create a radial gradient centered on the region to keep sharp.
 3. Composite the gradients into a mask.
-4. Apply Core Image’s [`maskedVariableBlurFilter`](cifilter-swift.class/maskedvariableblurfilter.md) filter to the original image, inputting the created mask.
+4. Apply Core Image’s [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter to the original image, inputting the created mask.
 
 ##### Focusing on a Strip of the Image
 
@@ -25,7 +25,7 @@ To build a mask that leaves out a stripe, create linear gradients from a single 
 
 ![Linear gradient mask for blurring all regions of an image except a strip](https://docs-assets.developer.apple.com/published/2b1a1d757f70ba247c869887fd250383/media-2959648%402x.png)
 
-The linear gradients cause the blur to taper smoothly as it approaches the focused stripe of the image. The Core Image [`CIFilter`](cifilter-swift.class.md) named [`linearGradientFilter`](cifilter-swift.class/lineargradientfilter.md) generates filters of the desired color. The linear gradient has four parameters:
+The linear gradients cause the blur to taper smoothly as it approaches the focused stripe of the image. The Core Image [`CIFilter`](cifilter-swift.class.md) named [`linearGradient()`](cifilter-swift.class/lineargradient().md) generates filters of the desired color. The linear gradient has four parameters:
 
 Compute the start and stop points of the gradient as fractions of the image height, as obtained through [`extent`](ciimage/extent.md). For this particular mask and example image, focus on the area near the middle, in the second quarter of the image. Set the linear gradient’s `point0` and `point1` to reflect the region through which the gradient tapers.
 
@@ -54,7 +54,7 @@ To create a mask that dilineates where and how strong a blur to apply, combine t
 
 ![ Graphic depicting the additive compositing of two linear gradients to form a single mask](https://docs-assets.developer.apple.com/published/fb88c718a62cfd09d342d7700fe6bc9a/media-2959647%402x.png)
 
-Since the gradients themselves are [`CIFilter`](cifilter-swift.class.md) objects, compositing them is as simple as concatenating their filter outputs to a compositing filter.  Use the built-in [`CIFilter`](cifilter-swift.class.md) named [`additionCompositingFilter`](cifilter-swift.class/additioncompositingfilter.md) to composite two images additively.
+Since the gradients themselves are [`CIFilter`](cifilter-swift.class.md) objects, compositing them is as simple as concatenating their filter outputs to a compositing filter.  Use the built-in [`CIFilter`](cifilter-swift.class.md) named [`additionCompositing()`](cifilter-swift.class/additioncompositing().md) to composite two images additively.
 
 ```swift
 CIFilter<CICompositeOperation> *gradientMask = CIFilter.additionCompositingFilter
@@ -62,11 +62,11 @@ gradientMask.inputImage = topGradient.outputImage;
 gradientMask.backgroundImage = bottomGradient.outputImage;
 ```
 
-The resulting mask is now ready to be applied as part of the [`maskedVariableBlurFilter`](cifilter-swift.class/maskedvariableblurfilter.md) filter.
+The resulting mask is now ready to be applied as part of the [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter.
 
 ##### Focusing on a Circular Region
 
-In order to focus on a circular region of an image, you can create a Core Image [`radialGradientFilter`](cifilter-swift.class/radialgradientfilter.md) filter.
+In order to focus on a circular region of an image, you can create a Core Image [`radialGradient()`](cifilter-swift.class/radialgradient().md) filter.
 
 The filter takes four parameters:
 
@@ -84,13 +84,13 @@ radialMask.color0 = [CIColor colorWithRed:0 green:1 blue:0 alpha:0];
 radialMask.color1 = [CIColor colorWithRed:0 green:1 blue:0 alpha:1];
 ```
 
-This yields a circular mask to use with the [`maskedVariableBlurFilter`](cifilter-swift.class/maskedvariableblurfilter.md) filter.
+This yields a circular mask to use with the [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter.
 
 ![Circular gradient mask for blurring out all pixels except those in a circular region](https://docs-assets.developer.apple.com/published/15b8844dd3a9307563c3e4ccb5c2e3fe/media-2959646%402x.png)
 
 ##### Masking the Blurred Image to Apply Selective Focus
 
-The final step is applying your choice of mask with the input image. The [`maskedVariableBlurFilter`](cifilter-swift.class/maskedvariableblurfilter.md) built-in [`CIFilter`](cifilter-swift.class.md) accomplishes this task with the following input parameters:
+The final step is applying your choice of mask with the input image. The [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) built-in [`CIFilter`](cifilter-swift.class.md) accomplishes this task with the following input parameters:
 
 ```swift
 CIFilter<CIMaskedVariableBlur> *maskedVariableBlur = CIFilter.maskedVariableBlurFilter;

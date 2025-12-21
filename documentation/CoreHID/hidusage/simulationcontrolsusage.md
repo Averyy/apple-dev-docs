@@ -66,20 +66,8 @@ enum SimulationControlsUsage
 - [HIDUsage.SimulationControlsUsage.weaponsArm](hidusage/simulationcontrolsusage/weaponsarm.md)
 - [HIDUsage.SimulationControlsUsage.weaponsSelect](hidusage/simulationcontrolsusage/weaponsselect.md)
 - [HIDUsage.SimulationControlsUsage.wingFlaps](hidusage/simulationcontrolsusage/wingflaps.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/simulationcontrolsusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/simulationcontrolsusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.SimulationControlsUsage.RawValue](hidusage/simulationcontrolsusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/simulationcontrolsusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/simulationcontrolsusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/simulationcontrolsusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

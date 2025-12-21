@@ -17,7 +17,7 @@ optional func collectionView(_ collectionView: NSCollectionView, acceptDrop drag
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drop operation should be accepted or [`false`](https://developer.apple.com/documentation/swift/false) if it should be rejected.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drop operation should be accepted or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be rejected.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ The collection view calls this method when the user releases the mouse button wh
 
 In your implementation, use the information in the `draggingInfo` parameter to retrieve the data, update your data source object, and insert the appropriate items into the collection view. The dropped data is stored in the [`draggingPasteboard`](nsdragginginfo/draggingpasteboard.md) property of the dragging information object.
 
-If the [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property of the dragging information is [`true`](https://developer.apple.com/documentation/swift/true), update the image and frame for each dragged item to its new location in the collection view.  You can enumerate the list of dragged items using the [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdragginginfo/enumeratedraggingitems(options:for:classes:searchoptions:using:).md) method of the dragging information object.
+If the [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property of the dragging information is [`true`](https://developer.apple.com/documentation/Swift/true), update the image and frame for each dragged item to its new location in the collection view.  You can enumerate the list of dragged items using the [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdragginginfo/enumeratedraggingitems(options:for:classes:searchoptions:using:).md) method of the dragging information object.
 
 ## Parameters
 

@@ -17,6 +17,8 @@ void IORecursiveLockUnlock(struct IORecursiveLock * lock);
 
 #### Discussion
 
+Unlock a recursive lock.
+
 Undo one call to IORecursiveLockLock, if the lock is now unlocked wake any blocked waiters. Results are undefined if the caller does not balance calls to IORecursiveLockLock with IORecursiveLockUnlock.
 
 ## Parameters

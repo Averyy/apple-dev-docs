@@ -27,29 +27,6 @@ When the framework observes a storage area in the physical environment, it choos
   An enclosed storage area.
 - [StorageType.shelf](storagetype/shelf.md)
   An open, wall-located storage area.
-### Identifying a storage area type
-- [var shortIdentifier: String](storagetype/shortidentifier.md)
-  A human-readable identifier for the attribute.
-### Categorizing a storage area type
-- [static var parentCategory: CapturedElementCategory?](storagetype/parentcategory.md)
-  A category to which this room attribute belongs.
-### Creating a storage area type
-- [init?(rawValue: String)](storagetype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: String](storagetype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [StorageType.AllCases](storagetype/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [StorageType.RawValue](storagetype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [StorageType]](storagetype/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](storagetype/equatable-implementations.md)
-- [RawRepresentable Implementations](storagetype/rawrepresentable-implementations.md)
 
 ## Relationships
 

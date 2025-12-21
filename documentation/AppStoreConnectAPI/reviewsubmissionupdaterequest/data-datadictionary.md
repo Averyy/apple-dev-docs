@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data structure that represents a review submission update request resource.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -16,6 +18,7 @@ object ReviewSubmissionUpdateRequest.Data
 
 ### Objects
 - [object ReviewSubmissionUpdateRequest.Data.Attributes](reviewsubmissionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a review submission update request resource.
 
 
 ---

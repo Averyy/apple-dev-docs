@@ -24,9 +24,9 @@ var excludeCellularServices: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the system excludes cellular services — such as Wi-Fi Calling, MMS, SMS, and Visual Voicemail — but only when the [`includeAllNetworks`](nevpnprotocol/includeallnetworks.md) property is also [`true`](https://developer.apple.com/documentation/swift/true). This property doesn’t impact services that use the cellular network only — such as VoLTE — which the system automatically excludes. [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the system excludes cellular services — such as Wi-Fi Calling, MMS, SMS, and Visual Voicemail — but only when the [`includeAllNetworks`](nevpnprotocol/includeallnetworks.md) property is also [`true`](https://developer.apple.com/documentation/Swift/true). This property doesn’t impact services that use the cellular network only — such as VoLTE — which the system automatically excludes. [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -11,7 +11,7 @@ The results from an autocomplete request.
 ## Declaration
 
 ```swift
-attribute SearchAutocompleteResult[] results;
+results: SearchAutocompleteResult[];
 ```
 
 #### Discussion

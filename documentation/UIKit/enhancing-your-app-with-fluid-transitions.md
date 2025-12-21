@@ -67,26 +67,26 @@ View controllers go through a number of state changes when pushing them onto or 
 
 When you push a view controller onto the navigation stack, the controller begins in the  state. As it transitions to the  state, the system performs the following steps:
 
-1. Calls [`viewWillAppear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewWillAppear()).
+1. Calls [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md).
 2. Adds the controller’s view to the view hierarchy.
 3. Calls [`viewIsAppearing(_:)`](uiviewcontroller/viewisappearing(_:).md).
 4. Transitions to the  state.
-5. Calls [`viewDidAppear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewDidAppear()).
+5. Calls [`viewDidAppear(_:)`](uiviewcontroller/viewdidappear(_:).md).
 6. Ends in the appeared state.
 
 ![An illustration that shows the view controller’s state changes during a push transition. It starts in the disappeared state. The system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing as the controller moves to the appearing state. The system then calls viewDidAppear as the controller moves to the appeared state.](https://docs-assets.developer.apple.com/published/c291f5d39a4710a35a376032ddc8a36a/media-4422525%402x.png)
 
 When you pop a view controller off the navigation stack, it starts in the appeared state. The system then performs the following steps:
 
-1. Calls [`viewWillDisappear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewWillDisappear()).
+1. Calls [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md).
 2. Transitions to the  state.
 3. Removes the view from the view hierarchy.
-4. Calls [`viewDidDisappear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewDidDisappear()).
+4. Calls [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md).
 5. Ends in the disappeared state.
 
 ![An illustration that shows the view controller’s state changes during a pop transition. It starts in the appeared state. The system calls viewWillDisappear as the controller moves to the disappearing state. The system then removes the view from the view hierarchy and calls viewDidDisappear as the view controller transitions to the disappeared state.](https://docs-assets.developer.apple.com/published/be3392ac981e83490758da2b05c8eadb/media-4422524%402x.png)
 
-When someone interrupts the fluid zoom transition, the sequence of events changes. If a person cancels a navigation pop, the system calls [`viewWillDisappear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewWillDisappear()) and transitions to the disappearing state. At that point, the system transitions directly to the appearing state and calls [`viewDidAppear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewDidAppear()) before ending in the appeared state. This transition occurs within one cycle of the run loop, so new events can’t interrupt it.
+When someone interrupts the fluid zoom transition, the sequence of events changes. If a person cancels a navigation pop, the system calls [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md) and transitions to the disappearing state. At that point, the system transitions directly to the appearing state and calls [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md) before ending in the appeared state. This transition occurs within one cycle of the run loop, so new events can’t interrupt it.
 
 ![An illustration that shows the view controller’s state changes when someone cancels a pop transition. The view controller starts in the appeared state. The system calls viewWillDisappear as the controller transitions to the disappearing state. Then the view controller transitions directly to the appearing state. The system calls viewDidAppear, and the view controller transitions to the appeared state.](https://docs-assets.developer.apple.com/published/bcf6a36e70e75b1a165c3369e2f40f16/media-4422527%402x.png)
 
@@ -103,7 +103,7 @@ When using continuously interactive transitions, your app needs to be ready for 
 - Don’t avoid starting a new navigation push or pop based on whether a transition is currently running. Let the new push or pop start, and the system handles the transitions.
 - Keep temporary transition state to a minimum, and avoid making other code dependent on that state.
 - Implement your callback methods so that the system can safely call them multiple times. The system might call these methods more than once before calling anything that uses or cleans up the results.
-- If you need to track some state during a transition, clean it up in [`viewDidAppear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewDidAppear()) or [`viewDidDisappear()`](https://developer.apple.com/documentation/AppKit/NSViewController/viewDidDisappear()). The system calls these at the end of the transition.
+- If you need to track some state during a transition, clean it up in [`viewDidAppear(_:)`](uiviewcontroller/viewdidappear(_:).md) or [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md). The system calls these at the end of the transition.
 - If you’re using a navigation control delegate, you can use [`navigationController(_:willShow:animated:)`](uinavigationcontrollerdelegate/navigationcontroller(_:willshow:animated:).md) and [`navigationController(_:didShow:animated:)`](uinavigationcontrollerdelegate/navigationcontroller(_:didshow:animated:).md) to clean up instead of the view controller callback methods.
 
 

@@ -22,7 +22,7 @@ class AVPlayerItemErrorLog
 
 ## Topics
 
-### Accessing Error Data
+### Accessing error data
 - [var events: [AVPlayerItemErrorLogEvent]](avplayeritemerrorlog/events.md)
   A chronologically ordered array of player item error log event objects.
 - [func extendedLogData() -> Data?](avplayeritemerrorlog/extendedlogdata.md)

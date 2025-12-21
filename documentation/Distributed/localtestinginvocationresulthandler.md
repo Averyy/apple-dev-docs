@@ -18,19 +18,6 @@
 struct LocalTestingInvocationResultHandler
 ```
 
-## Topics
-
-### Instance Methods
-- [func onReturn<Success>(value: Success) async throws](localtestinginvocationresulthandler/onreturn(value:).md)
-  Invoked when the distributed target execution returns successfully. The `value` is the return value of the executed distributed invocation target.
-- [func onReturnVoid() async throws](localtestinginvocationresulthandler/onreturnvoid.md)
-  Invoked when the distributed target execution of a `Void` returning function has completed successfully.
-- [func onThrow<Err>(error: Err) async throws](localtestinginvocationresulthandler/onthrow(error:).md)
-  Invoked when the distributed target execution of a target has thrown an error.
-### Type Aliases
-- [LocalTestingInvocationResultHandler.SerializationRequirement](localtestinginvocationresulthandler/serializationrequirement.md)
-  The serialization requirement that the value passed to `onReturn` is required to conform to.
-
 ## Relationships
 
 ### Conforms To

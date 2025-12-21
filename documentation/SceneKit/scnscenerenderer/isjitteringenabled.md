@@ -25,7 +25,7 @@ var isJitteringEnabled: Bool { get set }
 
 Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](scnscenerenderer/pointofview.md) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry.
 
-By default, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), specifying that SceneKit should not perform jittering. Change the value to [`true`](https://developer.apple.com/documentation/swift/true) to enable jittering.
+By default, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), specifying that SceneKit should not perform jittering. Change the value to [`true`](https://developer.apple.com/documentation/Swift/true) to enable jittering.
 
 Because the [`SCNView`](scnview.md) and [`SCNLayer`](scnlayer.md) classes perform jittering automatically and asynchronously, enabling jittering for these classes has minimal impact on rendering performance. The [`SCNRenderer`](scnrenderer.md) class performs jittering synchronously, incurring a high performance cost. With this class, jittering is suitable for rendering single frames on demand, but not for real-time rendering.
 

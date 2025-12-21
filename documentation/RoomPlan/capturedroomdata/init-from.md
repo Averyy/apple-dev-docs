@@ -3,12 +3,11 @@
 **Framework**: RoomPlan  
 **Kind**: init
 
-Creates a new instance by decoding from the given decoder.
+Creates captured room data by deserializing the decoder of a prior scan.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 
@@ -18,11 +17,11 @@ init(from decoder: any Decoder) throws
 
 #### Discussion
 
-This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
+To serialize a scan, call [`encode(to:)`](capturedroomdata/encode(to:).md).
 
 ## Parameters
 
-- `decoder`: The decoder to read data from.
+- `decoder`: An encoded captured room data object.
 
 
 ---

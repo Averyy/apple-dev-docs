@@ -20,6 +20,11 @@ The recorded output and completion.
 let recording: Record<Output, Failure>.Recording
 ```
 
+## See Also
+
+- [Record.Recording](record/recording-swift.struct.md)
+  A recorded sequence of outputs, followed by a completion value.
+
 
 ---
 

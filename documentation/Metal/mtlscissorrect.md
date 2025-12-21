@@ -21,10 +21,10 @@ struct MTLScissorRect
 
 ## Topics
 
-### Creating a Scissor Rectangle
+### Creating a scissor rectangle
 - [init()](mtlscissorrect/init.md)
 - [init(x: Int, y: Int, width: Int, height: Int)](mtlscissorrect/init(x:y:width:height:).md)
-### Specifying Scissor Boundaries
+### Specifying scissor boundaries
 - [var height: Int](mtlscissorrect/height.md)
   The height of the scissor rectangle, in pixels.
 - [var width: Int](mtlscissorrect/width.md)

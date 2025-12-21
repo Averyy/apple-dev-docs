@@ -20,22 +20,11 @@ enum StringComparisonOperator
 
 ## Topics
 
-### Operators
-- [static func == (StringComparisonOperator, StringComparisonOperator) -> Bool](stringcomparisonoperator/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [StringComparisonOperator.contains](stringcomparisonoperator/contains.md)
 - [StringComparisonOperator.doesNotContain](stringcomparisonoperator/doesnotcontain.md)
 - [StringComparisonOperator.hasPrefix](stringcomparisonoperator/hasprefix.md)
 - [StringComparisonOperator.hasSuffix](stringcomparisonoperator/hassuffix.md)
-### Instance Properties
-- [var hashValue: Int](stringcomparisonoperator/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](stringcomparisonoperator/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](stringcomparisonoperator/equatable-implementations.md)
 
 ## Relationships
 

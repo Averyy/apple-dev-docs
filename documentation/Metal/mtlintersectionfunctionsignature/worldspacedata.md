@@ -21,7 +21,7 @@ static var worldSpaceData: MTLIntersectionFunctionSignature { get }
 
 #### Discussion
 
-The corresponding MSL function must contain the `world_space_data` tag in its declaration.
+The corresponding MSL function needs to contain the `world_space_data` tag in its declaration.
 
 ## See Also
 

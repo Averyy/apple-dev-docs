@@ -29,10 +29,6 @@ This type is an option set in Swift. In Objective-C, the cases of this enumerati
   A flag that requests that the file system module flush metadata I/O asynchronously.
 ### Working with raw values
 - [init(rawValue: UInt)](fscompleteioflags/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fscompleteioflags/equatable-implementations.md)
-- [OptionSet Implementations](fscompleteioflags/optionset-implementations.md)
-- [SetAlgebra Implementations](fscompleteioflags/setalgebra-implementations.md)
 
 ## Relationships
 

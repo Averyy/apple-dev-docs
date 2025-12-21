@@ -38,6 +38,8 @@ When the split view controller transitions from a horizontally regular to a hori
 
 - [func splitViewController(UISplitViewController, willHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:).md)
   Tells the delegate that the specified column is about to be hidden.
+- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
+  Tells the delegate that the system completed hiding the specified column.
 - [func splitViewControllerDidCollapse(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerdidcollapse(_:).md)
   Tells the delegate that the split view controller interface has collapsed.
 

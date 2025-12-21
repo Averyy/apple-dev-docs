@@ -22,26 +22,21 @@ struct FlatMap<NewPublisher, Upstream> where NewPublisher : Publisher, Upstream 
 
 ## Topics
 
-### Creating a Flat Map Publisher
+### Creating a flat map Publisher
 - [init(upstream: Upstream, maxPublishers: Subscribers.Demand, transform: (Upstream.Output) -> NewPublisher)](publishers/flatmap/init(upstream:maxpublishers:transform:).md)
   Creates a publisher that transforms elements from an upstream publisher into a new publisher.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.FlatMap.Output](publishers/flatmap/output.md)
   The kind of values published by this publisher.
 - [Publishers.FlatMap.Failure](publishers/flatmap/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/flatmap/upstream.md)
   The publisher from which this publisher receives elements.
 - [let maxPublishers: Subscribers.Demand](publishers/flatmap/maxpublishers.md)
   The maximum number of concurrent publisher subscriptions
 - [let transform: (Upstream.Output) -> NewPublisher](publishers/flatmap/transform.md)
   A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
-### Applying Operators
-- [Publisher Operators](publishers-flatmap-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/flatmap/publisher-implementations.md)
 
 ## Relationships
 

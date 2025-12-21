@@ -22,8 +22,8 @@ class UNMutableNotificationContent
 
 ## Mentions
 
-- [Modifying content in newly delivered notifications](modifying-content-in-newly-delivered-notifications.md)
 - [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Modifying content in newly delivered notifications](modifying-content-in-newly-delivered-notifications.md)
 
 #### Overview
 

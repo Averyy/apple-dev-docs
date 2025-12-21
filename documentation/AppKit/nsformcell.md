@@ -80,7 +80,7 @@ An `NSFormCell` object implements the user interface of an [`NSForm`](nsform.md)
 - [class NSOpenGLContext](nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
 - [class NSOpenGLLayer](nsopengllayer.md)
-  A subclass of [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer) that is suitable for rendering OpenGL into layers.
+  A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
 - [class NSOpenGLPixelFormat](nsopenglpixelformat.md)
   An object that specifies the types of buffers and other attributes of the OpenGL context.
 - [class NSDrawer](nsdrawer.md)

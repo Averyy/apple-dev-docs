@@ -21,7 +21,7 @@ var isOpen: Bool { get set }
 
 #### Discussion
 
-Calling `isOpen` on an outline object that has no children always returns [`false`](https://developer.apple.com/documentation/swift/false). Calling `isOpen` on the root outline object always returns [`true`](https://developer.apple.com/documentation/swift/true).
+Calling `isOpen` on an outline object that has no children always returns [`false`](https://developer.apple.com/documentation/Swift/false). Calling `isOpen` on the root outline object always returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

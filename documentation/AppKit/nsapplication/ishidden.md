@@ -17,7 +17,7 @@ var isHidden: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the app is hidden or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the app is hidden or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## See Also
 

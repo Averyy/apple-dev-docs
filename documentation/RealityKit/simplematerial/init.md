@@ -10,7 +10,7 @@ Creates a simple material.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -18,13 +18,6 @@ Creates a simple material.
 ```swift
 init()
 ```
-
-## See Also
-
-- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-mwh5.md)
-  Creates a simple material with specific characteristics in macOS.
-- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-1qshm.md)
-  Creates a simple material with specific characteristics in macOS.
 
 
 ---

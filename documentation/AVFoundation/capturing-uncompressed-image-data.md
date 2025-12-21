@@ -1,4 +1,4 @@
-# Capturing Uncompressed Image Data
+# Capturing uncompressed image data
 
 **Framework**: AVFoundation
 
@@ -10,7 +10,7 @@ Typical photography workflows save images in a compressed format such as HEIF/HE
 
 > **Note**:  Uncompressed image data is not to be confused with unprocessed, or RAW, image data. RAW data is minimally altered data direct from a camera’s image sensor. Uncompressed image data has been processed to create a displayable image, but hasn’t been compressed to create a small file.
 
-In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
+In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [`Capturing still and Live Photos`](capturing-still-and-live-photos.md).
 
 ##### Choose Uncompressed Format Settings
 
@@ -64,11 +64,11 @@ Alternatively, to get an uncompressed photo ready for writing to a file, use the
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
   Capture several photos at once, varying parameters like exposure duration or light sensitivity.
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
   Enable delivery of reduced-size images with the main image in a photo capture.
 
 

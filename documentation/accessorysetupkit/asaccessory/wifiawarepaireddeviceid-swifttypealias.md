@@ -6,8 +6,8 @@
 The type used for an accessory’s Wi-Fi Aware Pairing Identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

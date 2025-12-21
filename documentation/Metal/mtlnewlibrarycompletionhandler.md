@@ -21,12 +21,12 @@ typealias MTLNewLibraryCompletionHandler = ((any MTLLibrary)?, (any Error)?) -> 
 
 #### Discussion
 
-Both `library` and `error` can be non-`nil` if the compiler successfully generates a library with warnings.
+The framework reports compiler warnings to the console. The `error` parameter doesn’t report warnings because it’s `nil` when there aren’t any compiler errors.
 
 ## Parameters
 
 - `library`: An   instance if the method successfully compiles the library without any errors; otherwise  .
-- `error`: An error instance if the compiler generates any warnings or errors; otherwise  .
+- `error`: An error instance if the compiler generates any errors; otherwise  .
 
 ## See Also
 

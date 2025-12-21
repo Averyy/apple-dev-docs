@@ -24,14 +24,6 @@ case replied
   The user clicked on the action button of the notification alert.
 - [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
   The user clicked on the additional action button of the notification alert.
-- [NSUserNotification.ActivationType.none](nsusernotification/activationtype-swift.enum/none.md)
-  The user did not interact with the notification alert.
-- [NSUserNotification.ActivationType.contentsClicked](nsusernotification/activationtype-swift.enum/contentsclicked.md)
-  The user clicked on the contents of the notification alert.
-- [NSUserNotification.ActivationType.actionButtonClicked](nsusernotification/activationtype-swift.enum/actionbuttonclicked.md)
-  The user clicked on the action button of the notification alert.
-- [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
-  The user clicked on the additional action button of the notification alert.
 
 
 ---

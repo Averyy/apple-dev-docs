@@ -19,11 +19,6 @@ Returns a new per-patch tessellation factors structure.
 init()
 ```
 
-## See Also
-
-- [init(edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16), insideTessellationFactor: (UInt16, UInt16))](mtlquadtessellationfactorshalf/init(edgetessellationfactor:insidetessellationfactor:).md)
-  Returns a new per-patch tessellation factors structure with the specified parameters.
-
 
 ---
 

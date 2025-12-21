@@ -21,7 +21,7 @@ var addressBook: ABAddressBook? { get set }
 
 When unspecified, this view controller sets the value of this property by creating an `ABAddressBookRef` object.
 
-The person record is only added to the address book database if [`allowsAddingToAddressBook`](abunknownpersonviewcontroller/allowsaddingtoaddressbook.md) is [`true`](https://developer.apple.com/documentation/swift/true) and the user taps the “Add to Existing Contact” or “Create New Contact” button.
+The person record is only added to the address book database if [`allowsAddingToAddressBook`](abunknownpersonviewcontroller/allowsaddingtoaddressbook.md) is [`true`](https://developer.apple.com/documentation/Swift/true) and the user taps the “Add to Existing Contact” or “Create New Contact” button.
 
 ## See Also
 

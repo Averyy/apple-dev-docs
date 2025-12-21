@@ -13,7 +13,6 @@ Generates an output tensor by tiling an input tensor multiple times.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

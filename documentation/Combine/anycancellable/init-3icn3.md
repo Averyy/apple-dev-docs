@@ -24,6 +24,10 @@ init(_ cancel: @escaping () -> Void)
 
 - `cancel`: A closure that the   method executes.
 
+## See Also
+
+- [init<C>(C)](anycancellable/init(_:)-48fh3.md)
+
 
 ---
 

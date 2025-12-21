@@ -19,6 +19,8 @@ var renderHandler: PHASEPullStreamRenderHandler { get set }
 
 #### Discussion
 
+A property to set the render block callback that will render the samplesIW
+
 The renderBlock must be set before the PHASESoundEvent is prepared or started.  The callback will be called from a high priority realtime thread. Your implementation must be performant and not perform any realtime unsafe operations such as lock mutexes or allocate memory.
 
 

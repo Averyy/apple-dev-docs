@@ -21,7 +21,7 @@ var supportsVideo: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`false`](https://developer.apple.com/documentation/swift/false).
+By default, this property is set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

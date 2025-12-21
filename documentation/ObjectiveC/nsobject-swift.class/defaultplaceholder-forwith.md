@@ -22,6 +22,8 @@ The `marker` can be `nil` or one of the constants described in [`Selection Marke
 
 - [class func setDefaultPlaceholder(Any?, for: Any?, with: NSBindingName)](nsobject-swift.class/setdefaultplaceholder(_:for:with:).md)
   Sets `placeholder` as the default placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
+- [class func useStoredAccessor() -> Bool](nsobject-swift.class/usestoredaccessor.md)
+  Returns `true` if the stored value methods [`storedValue(forKey:)`](nsobject-swift.class/storedvalue(forkey:).md) and [`takeStoredValue(_:forKey:)`](nsobject-swift.class/takestoredvalue(_:forkey:).md) should use private accessor methods in preference to public accessors.
 
 
 ---

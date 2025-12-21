@@ -47,7 +47,7 @@ If your data change exceeds the capabilities of automatic migration, you can per
 
 ##### Requesting Lightweight Migration
 
-You request automatic lightweight migration using the options dictionary that you pass into [`addPersistentStore(ofType:configurationName:at:options:)`](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md). Set values corresponding to both the [`NSMigratePersistentStoresAutomaticallyOption`](nsmigratepersistentstoresautomaticallyoption.md) and the [`NSInferMappingModelAutomaticallyOption`](nsinfermappingmodelautomaticallyoption.md) keys to [`true`](https://developer.apple.com/documentation/swift/true):
+You request automatic lightweight migration using the options dictionary that you pass into [`addPersistentStore(ofType:configurationName:at:options:)`](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md). Set values corresponding to both the [`NSMigratePersistentStoresAutomaticallyOption`](nsmigratepersistentstoresautomaticallyoption.md) and the [`NSInferMappingModelAutomaticallyOption`](nsinfermappingmodelautomaticallyoption.md) keys to [`true`](https://developer.apple.com/documentation/Swift/true):
 
 ```swift
 // Create a persistent store coordinator with a managed object model.

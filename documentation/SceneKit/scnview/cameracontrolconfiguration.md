@@ -21,8 +21,6 @@ The current configuration for the camera controller’s event-handling behavior.
 var cameraControlConfiguration: any SCNCameraControlConfiguration { get }
 ```
 
-#### Discussion
-
 ## See Also
 
 - [var allowsCameraControl: Bool](scnview/allowscameracontrol.md)

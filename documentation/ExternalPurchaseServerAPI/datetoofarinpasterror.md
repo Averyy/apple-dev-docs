@@ -20,6 +20,8 @@ Report line items within three years of their [`creationDate`](creationdate.md).
 
 ## See Also
 
+- [object DuplicateTokenStatusNotAllowedError](duplicatetokenstatusnotallowederror.md)
+  An error indicating the duplicate token status is not allowed for the associated token type.
 - [object DuplicateValueError](duplicatevalueerror.md)
   An error indicating the field’s value is already submitted and a duplicate value is not expected.
 - [object ErroneousLineItemReferencedByValidLineItemError](erroneouslineitemreferencedbyvalidlineitemerror.md)
@@ -38,6 +40,8 @@ Report line items within three years of their [`creationDate`](creationdate.md).
   An error indicating the net amount value does not match the expected value.
 - [object InvalidTaxInclusiveAmountForSubscriptionPaymentError](invalidtaxinclusiveamountforsubscriptionpaymenterror.md)
   An error indicating the tax inclusive amount must be positive for line items with a subscription payment subscription event.
+- [object LineItemCreationDateOutOfRangeError](lineitemcreationdateoutofrangeerror.md)
+  An error indicating the line item’s creation date is outside the active range of the token.
 - [object LineItemStatusRegressionError](lineitemstatusregressionerror.md)
   An error indicating the status can’t be marked as no line item or unrecognized token after it was previously reported as a line item.
 - [object LineItemsNotAllowedForStatusError](lineitemsnotallowedforstatuserror.md)
@@ -46,10 +50,6 @@ Report line items within three years of their [`creationDate`](creationdate.md).
   An error indicating the field’s maximum length is exceeded.
 - [object MissingLineItemsForStatusError](missinglineitemsforstatuserror.md)
   An error indicating the external purchase ID has the status line item but is missing line items.
-- [object NegativeValueNotAllowedError](negativevaluenotallowederror.md)
-  An error indicating the field does not allow a negative value.
-- [object NetAmountMismatchError](netamountmismatcherror.md)
-  An error indicating two line items involved in the same net amount calculation have different net amount values.
 
 
 ---

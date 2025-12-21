@@ -21,7 +21,7 @@ var automaticallyUpdatesConfiguration: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to have the button call [`updated(for:)`](uibutton/configuration-swift.struct/updated(for:).md) (Swift) or [`updatedConfigurationForButton:`](uibuttonconfiguration/updatedconfigurationforbutton:.md) (Objective-C) when the button state changes and apply the changes to the button. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to have the button call [`updated(for:)`](uibutton/configuration-swift.struct/updated(for:).md) (Swift) or [`updatedConfigurationForButton:`](uibuttonconfiguration/updatedconfigurationforbutton:.md) (Objective-C) when the button state changes and apply the changes to the button. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

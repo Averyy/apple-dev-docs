@@ -1,4 +1,4 @@
-# Capturing Still and Live Photos
+# Capturing still and Live Photos
 
 **Framework**: AVFoundation
 
@@ -14,11 +14,11 @@ AVFoundation supports many ways to capture photos. You can simply capture still 
 
 ##### Prepare for Photo Capture
 
-First, set up an [`AVCaptureSession`](avcapturesession.md) containing a supported camera device as one of its inputs and an [`AVCapturePhotoOutput`](avcapturephotooutput.md) as one of its outputs. (For details, see [`Choosing a Capture Device`](choosing-a-capture-device.md) and [`Setting Up a Capture Session`](setting-up-a-capture-session.md).) Each camera device supports a wide range of resolution and frame rate settings. To easily get the best photo quality for the user’s device, you can use the [`photo`](avcapturesession/preset/photo.md) session preset instead of directly choosing individual settings.
+First, set up an [`AVCaptureSession`](avcapturesession.md) containing a supported camera device as one of its inputs and an [`AVCapturePhotoOutput`](avcapturephotooutput.md) as one of its outputs. (For details, see [`Choosing a capture device`](choosing-a-capture-device.md) and [`Setting up a capture session`](setting-up-a-capture-session.md).) Each camera device supports a wide range of resolution and frame rate settings. To easily get the best photo quality for the user’s device, you can use the [`photo`](avcapturesession/preset/photo.md) session preset instead of directly choosing individual settings.
 
 Some capture options affect the internal configuration of the media capture pipeline. Because changing those options causes the pipeline to reconfigure itself, which takes time, enable them before offering the user the ability to shoot photos with those settings. Otherwise, the configuration delay could prevent the user from capturing a photo at the right moment.
 
-For example, to configure the capture pipleline to support Live Photos, enable that property on the photo output, as shown below. After you’ve enabled Live Photo capture, you can choose for each individual shot whether to use still or Live Photo capture for each shot (see [`Capturing and Saving Live Photos`](capturing-and-saving-live-photos.md)).
+For example, to configure the capture pipleline to support Live Photos, enable that property on the photo output, as shown below. After you’ve enabled Live Photo capture, you can choose for each individual shot whether to use still or Live Photo capture for each shot (see [`Capturing and saving Live Photos`](capturing-and-saving-live-photos.md)).
 
 ```swift
 self.captureSession.beginConfiguration()
@@ -85,28 +85,28 @@ When your captured image data is ready for use, the photo output calls your dele
 
 ## Topics
 
-### Next Steps
-- [Saving Captured Photos](saving-captured-photos.md)
+### Next steps
+- [Saving captured photos](saving-captured-photos.md)
   Add an image and other data from a photo capture to the photo library.
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](tracking-photo-capture-progress.md)
   Monitor key events during capture to provide feedback in your camera UI.
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
   Capture Live Photos like those created in the system Camera app and save them to the Photos library.
-### More Capture Options
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+### More capture options
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
   Capture several photos at once, varying parameters like exposure duration or light sensitivity.
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
   Get processed image data without compression to use for filtering or lossless output.
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
   Enable delivery of reduced-size images with the main image in a photo capture.
 
 ## See Also
 
 - [Capturing consistent color images](capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
 - [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.

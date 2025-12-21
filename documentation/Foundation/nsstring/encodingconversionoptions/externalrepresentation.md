@@ -24,8 +24,6 @@ static var externalRepresentation: NSString.EncodingConversionOptions { get }
 
 - [static var allowLossy: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/allowlossy.md)
   Allows lossy conversion.
-- [static var allowLossy: NSString.EncodingConversionOptions](nsstring/encodingconversionoptions/allowlossy.md)
-  Allows lossy conversion.
 
 
 ---

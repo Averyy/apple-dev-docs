@@ -21,7 +21,7 @@ var presetName: String { get }
 
 #### Discussion
 
-See [`Export Presets`](export-presets.md) for values an asset export session supports.
+See [`Export presets`](export-presets.md) for values an asset export session supports.
 
 This property is key-value observable.
 

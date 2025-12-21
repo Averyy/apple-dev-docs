@@ -38,7 +38,7 @@ Create a custom catalog by adding reference signatures that you generate from au
 - [func write(to: URL) throws](shcustomcatalog/write(to:).md)
   Saves the custom catalog to a local file.
 ### Getting the content type
-- [static var shazamCustomCatalog: UTType { get }](../UniformTypeIdentifiers/UTType-swift.struct/shazamCustomCatalog.md)
+- [static var shazamCustomCatalog: UTType](../UniformTypeIdentifiers/UTType-swift.struct/shazamCustomCatalog.md)
   A type that represents a custom catalog.
 ### Initializers
 - [init(dataRepresentation: Data) throws](shcustomcatalog/init(datarepresentation:).md)

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A Boolean value that indicates whether the GPU device supports pointers to render functions.
+A Boolean value that indicates whether the device supports function pointers in render functions.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ var supportsFunctionPointersFromRender: Bool { get }
 ## See Also
 
 - [var supportsFunctionPointers: Bool](mtldevice/supportsfunctionpointers.md)
-  A Boolean value that indicates whether the GPU device supports pointers to compute kernel functions.
+  A Boolean value that indicates whether the device supports function pointers in compute kernel functions.
 
 
 ---

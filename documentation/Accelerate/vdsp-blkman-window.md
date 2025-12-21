@@ -57,6 +57,8 @@ The following illustrates the values of the output vector, `c`:
 
 ## See Also
 
+- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+  Multiply signal data by window sequence values when performing transforms with noninteger period signals.
 - [vDSP_blkman_windowD](vdsp_blkman_windowd.md)
   Creates a double-precision Blackman window.
 - [vDSP_hamm_window](vdsp_hamm_window.md)

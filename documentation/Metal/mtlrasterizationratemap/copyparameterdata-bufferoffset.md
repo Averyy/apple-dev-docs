@@ -22,12 +22,14 @@ func copyParameterData(buffer: any MTLBuffer, offset: Int)
 
 #### Discussion
 
-To convert coordinate values inside your shader, pass the rate map data into the shader in a [`MTLBuffer`](mtlbuffer.md) object. Use the [`parameterDataSizeAndAlign`](mtlrasterizationratemap/parameterdatasizeandalign.md) property to determine the size and alignment requirements for the buffer.
+To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](mtlbuffer.md) instance. The [`parameterDataSizeAndAlign`](mtlrasterizationratemap/parameterdatasizeandalign.md) property provides the size and alignment requirements for the buffer.
+
+You can convert between screen space and physical fragment space by binding the buffer to the shader with type `rasterization_rate_map_data`, then constructing `rasterization_rate_map_decoder` with the buffer data. For more details, see the “Variable Rasterization Rate” section of the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## Parameters
 
-- `buffer`: The buffer object to copy the data into. It must have a   storage mode, and there must be enough room in the buffer to store the data.
-- `offset`: The location in the buffer to copy the data to. The offset must be a multiple of the parameter alignment.
+- `buffer`: The buffer instance to copy the data into. It needs to have an   storage mode, and there needs to be enough room in the buffer to store the data.
+- `offset`: The location in the buffer to copy the data to. The offset needs to be a multiple of the parameter alignment.
 
 ## See Also
 

@@ -64,6 +64,19 @@ Use `ParsingOptions` only when importing a CSV file with [`init(contentsOf:optio
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+  Train a machine learning model by using Core ML to import and manage tabular data.
+- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](mldatatable/init(contentsof:options:).md)
+  Creates a data table from an imported JSON or CSV file.
+- [init(dictionary: [String : any MLDataValueConvertible]) throws](mldatatable/init(dictionary:).md)
+  Creates a data table from a dictionary of column names and data values.
+- [init(namedColumns: [String : MLUntypedColumn]) throws](mldatatable/init(namedcolumns:).md)
+  Creates a data table from a dictionary of column names and untyped columns.
+- [init()](mldatatable/init.md)
+  Creates an empty table containing no rows or columns.
+
 
 ---
 

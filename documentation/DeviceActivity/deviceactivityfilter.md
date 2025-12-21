@@ -27,9 +27,6 @@ Your app can choose to filter device activity data for a specific date interval,
   A type your app uses to indiciate which devices to include in a device activity report.
 - [DeviceActivityFilter.Users](deviceactivityfilter/users-swift.struct.md)
   A type your app uses to indicate which users to include in a device activity report.
-### Operators
-- [static func == (DeviceActivityFilter, DeviceActivityFilter) -> Bool](deviceactivityfilter/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(segment: DeviceActivityFilter.SegmentInterval, devices: DeviceActivityFilter.Devices?, applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>)](deviceactivityfilter/init(segment:devices:applications:categories:webdomains:).md)
   Creates a new filter for the current user.
@@ -51,8 +48,6 @@ Your app can choose to filter device activity data for a specific date interval,
 ### Enumerations
 - [DeviceActivityFilter.SegmentInterval](deviceactivityfilter/segmentinterval-swift.enum.md)
   A type indicating the interval at which the system subdivides device activity data within a specified date interval.
-### Default Implementations
-- [Equatable Implementations](deviceactivityfilter/equatable-implementations.md)
 
 ## Relationships
 

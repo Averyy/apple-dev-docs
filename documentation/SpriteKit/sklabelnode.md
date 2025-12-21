@@ -23,8 +23,8 @@ class SKLabelNode
 ## Mentions
 
 - [Adding Text to a Scene](adding-text-to-a-scene.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 
 #### Overview
 

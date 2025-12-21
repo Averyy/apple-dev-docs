@@ -29,7 +29,7 @@ var file: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.files.file` schema:
 
 ```swift
-@AssistantEntity(schema: .files.file)
+@AppEntity(schema: .files.file)
 struct ExampleFileEntity: FileEntity {
     var displayRepresentation: AppIntents.DisplayRepresentation { "Example File" }
 

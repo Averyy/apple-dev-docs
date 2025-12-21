@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing a command that causes the whole frame to be mirrored horizontally for the duration of the command.
+A value that represents a command that mirrors a whole frame horizontally for the duration of the command.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

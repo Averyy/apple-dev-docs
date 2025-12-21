@@ -22,7 +22,7 @@ var caseSensitive: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver distinguishes case in the characters it scans, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false). Note that case sensitivity doesn’t apply to the characters to be skipped.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver distinguishes case in the characters it scans, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Note that case sensitivity doesn’t apply to the characters to be skipped.
 
 ## See Also
 

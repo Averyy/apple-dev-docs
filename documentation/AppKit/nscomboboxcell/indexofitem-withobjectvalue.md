@@ -17,11 +17,11 @@ func indexOfItem(withObjectValue object: Any) -> Int
 
 #### Return Value
 
-The lowest index whose corresponding value is equal to `anObject`. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/swift/true). If none of the objects in the combo box’s internal item list is equal to `anObject`, [`indexOfItem(withObjectValue:)`](nscomboboxcell/indexofitem(withobjectvalue:).md) returns `NSNotFound`.
+The lowest index whose corresponding value is equal to `anObject`. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/Swift/true). If none of the objects in the combo box’s internal item list is equal to `anObject`, [`indexOfItem(withObjectValue:)`](nscomboboxcell/indexofitem(withobjectvalue:).md) returns `NSNotFound`.
 
 #### Discussion
 
-This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

@@ -21,7 +21,7 @@ func deselectItem(at indexPath: IndexPath, animated: Bool)
 
 #### Discussion
 
-If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/swift/false), calling this method has no effect.
+If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), calling this method has no effect.
 
 This method doesn’t cause any selection-related delegate methods to be called.
 

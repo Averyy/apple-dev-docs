@@ -20,7 +20,7 @@ object AppStoreVersionLocalization
 - [object AppStoreVersionLocalization.Attributes](appstoreversionlocalization/attributes-data.dictionary.md)
   Attributes that describe an App Store Version Localizations resource.
 - [object AppStoreVersionLocalization.Relationships](appstoreversionlocalization/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 
@@ -32,6 +32,8 @@ object AppStoreVersionLocalization
   A response that contains a list of App Store Version Localization resources.
 - [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
 
 
 ---

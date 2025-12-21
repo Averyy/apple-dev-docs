@@ -4,19 +4,14 @@
 **Kind**: init
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType = .stereoCamera, presentationFrameRate: Int = defaultPresentationFrameRate, pose: Pose3DFloat = .identity)
 ```
-
-## See Also
-
-- [init(from: any Decoder) throws](immersivecamera/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 
 
 ---

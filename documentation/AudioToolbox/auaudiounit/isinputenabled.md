@@ -21,9 +21,9 @@ var isInputEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If your audio unit desires input audio, this property must be set to [`true`](https://developer.apple.com/documentation/swift/true) and the value of [`canPerformInput`](auaudiounit/canperforminput.md) must also be [`true`](https://developer.apple.com/documentation/swift/true).
+If your audio unit desires input audio, this property must be set to [`true`](https://developer.apple.com/documentation/Swift/true) and the value of [`canPerformInput`](auaudiounit/canperforminput.md) must also be [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

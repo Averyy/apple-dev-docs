@@ -22,7 +22,7 @@ var includesSubentities: Bool { get set }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if the request will include all subentities of the entity for the request; otherwise it is [`false`](https://developer.apple.com/documentation/swift/false). The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the request will include all subentities of the entity for the request; otherwise it is [`false`](https://developer.apple.com/documentation/Swift/false). The default is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

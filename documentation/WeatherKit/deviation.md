@@ -22,9 +22,6 @@ enum Deviation
 
 ## Topics
 
-### Operators
-- [static func == (Deviation, Deviation) -> Bool](deviation/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [Deviation.higher](deviation/higher.md)
   The most recently observed value is larger than the value it is being compared against.
@@ -36,24 +33,10 @@ enum Deviation
   The most recently observed value is much lower than the value it is being compared against.
 - [Deviation.normal](deviation/normal.md)
   The most recently observed value is about the same as the value it is being compared against.
-### Initializers
-- [init(from: any Decoder) throws](deviation/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](deviation/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](deviation/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](deviation/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](deviation/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

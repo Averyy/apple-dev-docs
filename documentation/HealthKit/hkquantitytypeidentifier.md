@@ -68,6 +68,32 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
   A quantity sample type that measures the amount of time the user has spent standing.
 - [static let vo2Max: HKQuantityTypeIdentifier](hkquantitytypeidentifier/vo2max.md)
   A quantity sample that measures the maximal oxygen consumption during exercise.
+- [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
+  A quantity sample type that measures how fast you are traveling while cross country skiing.
+- [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
+  A quantity sample type that represents the rate at which the user is pedaling.
+- [static let cyclingFunctionalThresholdPower: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingfunctionalthresholdpower.md)
+  A quantity sample type that measures the estimated maximum average power sustained while riding a bike for 60 minutes.
+- [static let cyclingPower: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingpower.md)
+  A quantity sample type that measures the estimated power being used while riding a bike.
+- [static let cyclingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingspeed.md)
+  A quantity sample type that measures how fast you are traveling while riding a bike.
+- [static let distanceCrossCountrySkiing: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancecrosscountryskiing.md)
+  A quantity sample type that measures the distance the user has moved by cross country skiing.
+- [static let distancePaddleSports: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancepaddlesports.md)
+  A quantity sample type that measures the distance the user has moved by paddling sports.
+- [static let distanceRowing: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distancerowing.md)
+  A quantity sample type that measures the distance the user has moved by rowing.
+- [static let distanceSkatingSports: HKQuantityTypeIdentifier](hkquantitytypeidentifier/distanceskatingsports.md)
+  A quantity sample type that measures the distance the user has moved by skating.
+- [static let estimatedWorkoutEffortScore: HKQuantityTypeIdentifier](hkquantitytypeidentifier/estimatedworkouteffortscore.md)
+- [static let paddleSportsSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/paddlesportsspeed.md)
+  A quantity sample type that measures the distance the user has moved by paddling sports.
+- [static let physicalEffort: HKQuantityTypeIdentifier](hkquantitytypeidentifier/physicaleffort.md)
+  A quantity sample type that measures the estimated amount of energy being used to perform a task excluding other factors such as temperature, altitude, or heart rate.
+- [static let rowingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/rowingspeed.md)
+  A quantity sample type that measures how fast the rower is moving.
+- [static let workoutEffortScore: HKQuantityTypeIdentifier](hkquantitytypeidentifier/workouteffortscore.md)
 ### Body measurements
 - [static let height: HKQuantityTypeIdentifier](hkquantitytypeidentifier/height.md)
   A quantity sample type that measures the user’s height.
@@ -89,6 +115,8 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 ### Hearing
 - [static let environmentalAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/environmentalaudioexposure.md)
   A quantity sample type that measures audio exposure to sounds in the environment.
+- [static let environmentalSoundReduction: HKQuantityTypeIdentifier](hkquantitytypeidentifier/environmentalsoundreduction.md)
+  A quantity sample type that measures the difference in sound intensity when wearing headphones that lower environmental sound levels.
 - [static let headphoneAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/headphoneaudioexposure.md)
   A quantity sample type that measures audio exposure from headphones.
 ### Vital signs
@@ -238,6 +266,8 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 - [static let stairDescentSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/stairdescentspeed.md)
   A quantity sample type measuring the user’s speed while descending a flight of stairs.
 ### UV exposure
+- [static let timeInDaylight: HKQuantityTypeIdentifier](hkquantitytypeidentifier/timeindaylight.md)
+  A quantity sample type that measures amount of time the user spent in daylight.
 - [static let uvExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/uvexposure.md)
   A quantity sample type that measures the user’s exposure to UV radiation.
 ### Diving
@@ -248,6 +278,8 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 ### Initializers
 - [init(rawValue: String)](hkquantitytypeidentifier/init(rawvalue:).md)
   Returns a newly initialized quantity type identifier using the provided string.
+### Type Properties
+- [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 
 ## Relationships
 

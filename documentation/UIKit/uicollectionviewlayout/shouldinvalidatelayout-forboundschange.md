@@ -21,13 +21,13 @@ func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the collection view requires a layout update or [`false`](https://developer.apple.com/documentation/swift/false) if the layout does not need to change.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the collection view requires a layout update or [`false`](https://developer.apple.com/documentation/Swift/false) if the layout does not need to change.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). Subclasses can override it and return an appropriate value based on whether changes in the bounds of the collection view require changes to the layout of cells and supplementary views.
+The default implementation of this method returns [`false`](https://developer.apple.com/documentation/Swift/false). Subclasses can override it and return an appropriate value based on whether changes in the bounds of the collection view require changes to the layout of cells and supplementary views.
 
-If the bounds of the collection view change and this method returns [`true`](https://developer.apple.com/documentation/swift/true), the collection view invalidates the layout by calling the [`invalidateLayout(with:)`](uicollectionviewlayout/invalidatelayout(with:).md) method.
+If the bounds of the collection view change and this method returns [`true`](https://developer.apple.com/documentation/Swift/true), the collection view invalidates the layout by calling the [`invalidateLayout(with:)`](uicollectionviewlayout/invalidatelayout(with:).md) method.
 
 ## Parameters
 

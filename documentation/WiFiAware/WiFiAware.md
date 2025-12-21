@@ -6,12 +6,12 @@
 Securely pair and connect to external devices over peer-to-peer Wi-Fi.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 #### Overview
 
-The Wi-Fi Aware™ technology (also known as Neighbor Awareness Networking or NAN) is a Wi-Fi Alliance™ standard specification that enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point. Your app can use the Wi-Fi Aware framework to connect with Wi-Fi Aware certified accessories. The framework offers a secure and standardized way to establish peer-to-peer (P2P) connections between Wi-Fi devices, providing networking capabilities such as:
+Wi-Fi Aware™ (also known as Neighbor Awareness Networking or NAN) is a Wi-Fi Alliance™ standard specification that enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point. Your app can use the Wi-Fi Aware framework to connect with Wi-Fi Aware certified accessories. The framework offers a secure and standardized way to establish peer-to-peer (P2P) connections between Wi-Fi devices, providing networking capabilities such as:
 
 - High-bandwidth and low-latency data transfers
 - Connections to paired devices that are authenticated and encrypted at the Wi-Fi layer
@@ -20,6 +20,10 @@ The Wi-Fi Aware™ technology (also known as Neighbor Awareness Networking or NA
 - Fully peer-to-peer topology, allowing peers to come and go without breaking connections to other peers
 
 The Wi-Fi Aware technology works without the need for Wi-Fi infrastructure networks, cellular links, internet connections, or cloud servers. Your app can pair Wi-Fi Aware devices using [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit/) or [`DeviceDiscoveryUI`](https://developer.apple.comhttps://developer.apple.com/documentation/devicediscoveryui). When paired, your app can create secure, authenticated, and encrypted peer-to-peer connections between paired devices on-demand, using the Wi-Fi Aware and [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) frameworks.
+
+Your app may connect to paired Wi-Fi Aware devices whenever it’s running, in both foreground and background states. Your app may get runtime using any of the existing mechanisms on the platform, such as with the [`BackgroundTasks`](https://developer.apple.comhttps://developer.apple.com/documentation/backgroundtasks) API.
+
+If you are building a hardware device or accessory that uses Wi-Fi Aware, refer to the Wi-Fi Aware chapter of the [`Accessory Guide`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf) for the requirements to work well with Apple devices.
 
 > ❗ **Important**: The following Apple devices support the Wi-Fi Aware framework: - iPhone 12 and later
 - iPad (10th generation) and later
@@ -79,9 +83,10 @@ The Wi-Fi Aware technology works without the need for Wi-Fi infrastructure netwo
 - [WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters.md)
   The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 ### Parameters
-- [final class NWParameters](../Network/NWParameters.md)
+- [class NWParameters](../Network/NWParameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [struct NWParametersBuilder<Top, each P> where Top : NetworkProtocolOptions, repeat each P : NetworkProtocolOptions](../Network/NWParametersBuilder.md)
+- [struct NWParametersBuilder](../Network/NWParametersBuilder.md)
+  An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 - [struct WAParameters](waparameters.md)
   Parameters configuring a Wi-Fi Aware data path connection.
 ### Connections

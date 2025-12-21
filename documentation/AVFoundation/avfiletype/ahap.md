@@ -28,6 +28,8 @@ Files of this type use an `.ahap` extension.
 
 ## See Also
 
+- [static let SCC: AVFileType](avfiletype/scc.md)
+  The UTI for the Scenarist closed-caption file format.
 - [static let ac3: AVFileType](avfiletype/ac3.md)
   The UTI for the AC3 audio file format.
 - [static let aifc: AVFileType](avfiletype/aifc.md)
@@ -44,6 +46,8 @@ Files of this type use an `.ahap` extension.
   The UTI for the high-efficiency image file format that contains H.264 compressed images.
 - [static let caf: AVFileType](avfiletype/caf.md)
   The UTI for the Core Audio Format.
+- [static let dcm: AVFileType](avfiletype/dcm.md)
+  A UTI for the Digital Imaging and Communications in Medicine (DICOM) file format.
 - [static let dng: AVFileType](avfiletype/dng.md)
   The UTI for the Adobe Digital Negative file format.
 - [static let eac3: AVFileType](avfiletype/eac3.md)
@@ -54,10 +58,6 @@ Files of this type use an `.ahap` extension.
   The UTI for the high-efficiency image file format that contains compressed images from any codec.
 - [static let jpg: AVFileType](avfiletype/jpg.md)
   The UTI for the JPEG (JFIF) format.
-- [static let m4a: AVFileType](avfiletype/m4a.md)
-  The UTI for the Apple m4a audio file format.
-- [static let m4v: AVFileType](avfiletype/m4v.md)
-  The UTI for the iTunes video file format.
 
 
 ---

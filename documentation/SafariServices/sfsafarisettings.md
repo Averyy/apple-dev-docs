@@ -3,10 +3,12 @@
 **Framework**: Safari Services  
 **Kind**: class
 
+A class you use to open Safari Settings from your app.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,8 +18,12 @@ class SFSafariSettings
 
 ## Topics
 
-### Type Methods
+### Opening Settings for Safari extensions
+- [class func openExtensionsSettings(forIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openextensionssettings(foridentifiers:completionhandler:).md)
+  Launches Settings to Safari Extensions Settings.
+### Opening Settings to export browsing data
 - [class func openExportBrowsingDataSettings(completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).md)
+  Launches Settings and opens Safari’s export browsing data sheet.
 
 ## Relationships
 

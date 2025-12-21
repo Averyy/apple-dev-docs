@@ -42,6 +42,17 @@ struct Region
 ### Getting a list of regions
 - [static var isoRegions: [Locale.Region]](locale/region-swift.struct/isoregions.md)
   An array of regions defined by ISO.
+### Structures
+- [Locale.Region.Category](locale/region-swift.struct/category-swift.struct.md)
+  Categories of a region. See https://www.unicode.org/reports/tr35/tr35-35/tr35-info.html#Territory_Data
+### Instance Properties
+- [var category: Locale.Region.Category?](locale/region-swift.struct/category-swift.property.md)
+  The category of the region.
+- [var subcontinent: Locale.Region?](locale/region-swift.struct/subcontinent.md)
+  The subcontinent that contains this region, if any.
+### Instance Methods
+- [func subRegions(ofCategory: Locale.Region.Category) -> [Locale.Region]](locale/region-swift.struct/subregions(ofcategory:).md)
+  An array of the sub-regions, matching the specified category of the region.
 ### Type Properties
 - [static var ålandIslands: Locale.Region](locale/region-swift.struct/_landislands.md)
 - [static var afghanistan: Locale.Region](locale/region-swift.struct/afghanistan.md)
@@ -298,6 +309,9 @@ struct Region
 - [static var yemen: Locale.Region](locale/region-swift.struct/yemen.md)
 - [static var zambia: Locale.Region](locale/region-swift.struct/zambia.md)
 - [static var zimbabwe: Locale.Region](locale/region-swift.struct/zimbabwe.md)
+### Type Methods
+- [static func isoRegions(ofCategory: Locale.Region.Category) -> [Locale.Region]](locale/region-swift.struct/isoregions(ofcategory:).md)
+  An array of regions matching the specified categories.
 
 ## Relationships
 

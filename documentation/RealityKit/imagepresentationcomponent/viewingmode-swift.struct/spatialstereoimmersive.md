@@ -6,7 +6,7 @@
 Displays the image’s spatial stereo representation (if available) with an immersive presentation style.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

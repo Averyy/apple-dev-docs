@@ -25,7 +25,7 @@ Assistive Access is an accessibility feature that tailors the iOS and iPadOS exp
   Test your app with accessibility settings and assistive technologies to discover and address accessibility issues.
 - [static var isAssistiveAccessEnabled: Bool](accessibilitysettings/isassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is running.
-- [var accessibilityAssistiveAccessEnabled: Bool { get }](../SwiftUI/EnvironmentValues/accessibilityAssistiveAccessEnabled.md)
+- [var accessibilityAssistiveAccessEnabled: Bool](../SwiftUI/EnvironmentValues/accessibilityAssistiveAccessEnabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
 - [UISupportsFullScreenInAssistiveAccess](../BundleResources/Information-Property-List/UISupportsFullScreenInAssistiveAccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.

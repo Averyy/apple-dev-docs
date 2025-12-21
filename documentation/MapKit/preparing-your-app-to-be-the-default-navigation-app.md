@@ -6,11 +6,7 @@ Configure your navigation app so people can set it as the default on their devic
 
 #### Overview
 
-> **Note**: The ability to make a specific app the default navigation app applies only to the European Union (EU).
-
-#### Overview
-
-In iOS and iPadOS 18.4 and later, a person may select an app other than the Maps app to provide navigation instructions. If your app provides navigation services and you want it to optionally become the default navigation app, there are several steps you need to take.
+In iOS and iPadOS 18.4 and later in the European Union (EU), and in iOS 26.2 and later in Japan, a person may select an app other than the Maps app to provide navigation instructions. If your app provides navigation services and you want it to optionally become the default navigation app, there are several steps you need to take.
 
 #### Add the Default Navigation App Entitlement
 

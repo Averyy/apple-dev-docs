@@ -34,6 +34,8 @@ For QuickTime movies and `.m4v` files, a media option has this characteristic on
   A media characteristic that indicates that a track or media selection option contains original content.
 - [static let isMainProgramContent: AVMediaCharacteristic](avmediacharacteristic/ismainprogramcontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
+- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+  A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 
 ---

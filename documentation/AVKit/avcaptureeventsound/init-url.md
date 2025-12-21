@@ -3,21 +3,17 @@
 **Framework**: AVKit  
 **Kind**: init
 
-Initializer for an AVCaptureEventSound with a custom sound.
+Creates a sound object for a capture event.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
-init(url: URL!) throws
+init(url: URL) throws
 ```
-
-#### Return Value
-
-An AVCaptureEventSound.
 
 ## Parameters
 

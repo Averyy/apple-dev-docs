@@ -11,7 +11,7 @@ The Place ID referencing a feature.
 ## Declaration
 
 ```swift
-attribute string? id;
+id?: string;
 ```
 
 #### Discussion

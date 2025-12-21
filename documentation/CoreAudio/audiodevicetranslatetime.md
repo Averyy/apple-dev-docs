@@ -15,6 +15,20 @@
 func AudioDeviceTranslateTime(_ inDevice: AudioObjectID, _ inTime: UnsafePointer<AudioTimeStamp>, _ outTime: UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure. kAudioHardwareNotRunningError will be returned if the AudioDevice isn’t running.
+
+#### Discussion
+
+Translates the time in the AudioDevice’s time base from one representation to another. Note that the device has to be running
+
+## Parameters
+
+- `inDevice`: The AudioDevice whose time base governs the translation.
+- `inTime`: An AudioTimeStamp containing the time to be translated.
+- `outTime`: An AudioTimeStamp into which the translated time is put. On entry, the   mFlags field specifies which representations to translate the input time   into. Because not every device supports all time representations, on exit,   the mFlags field will indicate which translations were actually done.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

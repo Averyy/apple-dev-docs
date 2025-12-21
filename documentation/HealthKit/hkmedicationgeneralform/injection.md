@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is given as an injection.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

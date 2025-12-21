@@ -6,7 +6,7 @@
 The background style to use for the tip view.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

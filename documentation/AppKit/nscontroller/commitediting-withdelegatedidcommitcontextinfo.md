@@ -40,7 +40,7 @@ You may find this method useful in some situations (typically if you are using C
 - [func objectDidEndEditing(any NSEditor)](nscontroller/objectdidendediting(_:).md)
   Invoked to inform the receiver that `editor` has committed or discarded its changes.
 - [func commitEditing() -> Bool](nscontroller/commitediting.md)
-  Causes the receiver to attempt to commit any pending edits, returning [`true`](https://developer.apple.com/documentation/swift/true) if successful or no edits were pending.
+  Attempts to commit any pending edits.
 - [func discardEditing()](nscontroller/discardediting.md)
   Discards any pending changes by registered editors.
 - [var isEditing: Bool](nscontroller/isediting.md)

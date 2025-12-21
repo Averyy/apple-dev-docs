@@ -27,6 +27,8 @@ If the asset writer created an output file during the writing process, calling t
 
 ## See Also
 
+- [func start() throws](avassetwriter/start.md)
+  Prepares the writer to write media data to its output file.
 - [func startWriting() -> Bool](avassetwriter/startwriting.md)
   Tells the writer to start writing its output.
 - [func startSession(atSourceTime: CMTime)](avassetwriter/startsession(atsourcetime:).md)

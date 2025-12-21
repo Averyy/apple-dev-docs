@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: property
 
-A filter that controls whether results occur outside, or strictly within, the region.
+A region priority value that controls whether results occur outside, or strictly within, the region.
 
 **Availability**:
 - MapKit JS 5.78.1+
@@ -11,7 +11,7 @@ A filter that controls whether results occur outside, or strictly within, the re
 ## Declaration
 
 ```swift
-attribute string regionPriority;
+regionPriority?: RegionPriority;
 ```
 
 #### Discussion

@@ -17,7 +17,7 @@ func isRendering() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if a composition is rendering in the view; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if a composition is rendering in the view; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

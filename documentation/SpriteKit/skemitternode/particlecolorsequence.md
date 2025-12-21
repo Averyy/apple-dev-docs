@@ -17,7 +17,6 @@ The sequence used to specify the color components of a particle over its lifetim
 ## Declaration
 
 ```swift
-@MainActor
 var particleColorSequence: SKKeyframeSequence? { get set }
 ```
 

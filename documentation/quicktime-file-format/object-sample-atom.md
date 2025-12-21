@@ -5,9 +5,6 @@
 
 An atom that describes a single object.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 An object sample atom describes a single object, including information about the default viewing angles and the view settings. The structure of an object sample atom is defined by the `QTVRObjectSampleAtom` data type:

@@ -6,7 +6,7 @@
 A configuration for audio playback during an interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

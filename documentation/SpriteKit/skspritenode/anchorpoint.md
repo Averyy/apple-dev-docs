@@ -17,7 +17,6 @@ Defines the point in the sprite that corresponds to the node’s position.
 ## Declaration
 
 ```swift
-@MainActor
 var anchorPoint: CGPoint { get set }
 ```
 

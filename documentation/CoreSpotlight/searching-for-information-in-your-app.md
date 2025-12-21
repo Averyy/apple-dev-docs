@@ -73,7 +73,7 @@ The following examples show how operators, modifiers, and parentheses work for q
 
 When an attribute contains a date or time value, there are two ways you can specify the value portion of your predicate:
 
-- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5 or [`Date`](https://developer.apple.com/documentation/Foundation/Date) type using the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDateGetAbsoluteTime(_:)) function.
+- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) or [`Date`](https://developer.apple.com/documentation/Foundation/Date) type using the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDateGetAbsoluteTime(_:)) function.
 - Specify a property of the built-in `$time` variable.
 
 [`CSSearchQuery`](cssearchquery.md) provides the `$time` variable as a convenient way to specify date values in your query strings. When you start a query, the system initializes this variable to the current date and time. Include this variable in the value portion of your predicate to compare a date-based attribute to the date you specify. The following table lists the properties of the variable you can use in your predicates and how the query matches them against attributes.

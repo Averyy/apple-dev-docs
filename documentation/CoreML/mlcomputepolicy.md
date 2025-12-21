@@ -22,14 +22,14 @@ struct MLComputePolicy
 
 ## Topics
 
-### Initializers
-- [init(MLComputeUnits)](mlcomputepolicy/init(_:).md)
-  Creates a new compute policy using the given compute units.
-### Type Properties
+### Compute policies
 - [static var cpuAndGPU: MLComputePolicy](mlcomputepolicy/cpuandgpu.md)
   Execute ML workloads using the GPU if available, otherwise falling back to the CPU.
 - [static var cpuOnly: MLComputePolicy](mlcomputepolicy/cpuonly.md)
   Execute ML workloads using the CPU.
+### Creating a compute policy
+- [init(MLComputeUnits)](mlcomputepolicy/init(_:).md)
+  Creates a new compute policy using the given compute units.
 ### Default Implementations
 - [CustomReflectable Implementations](mlcomputepolicy/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](mlcomputepolicy/customstringconvertible-implementations.md)

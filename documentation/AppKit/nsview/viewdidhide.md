@@ -17,7 +17,7 @@ func viewDidHide()
 
 #### Discussion
 
-The view receives this message when its [`isHiddenOrHasHiddenAncestor`](nsview/ishiddenorhashiddenancestor.md) property changes from [`false`](https://developer.apple.com/documentation/swift/false) to [`true`](https://developer.apple.com/documentation/swift/true). This happens when the view or an ancestor is marked as hidden, or when the view or an ancestor is inserted into a new view hierarchy.
+The view receives this message when its [`isHiddenOrHasHiddenAncestor`](nsview/ishiddenorhashiddenancestor.md) property changes from [`false`](https://developer.apple.com/documentation/Swift/false) to [`true`](https://developer.apple.com/documentation/Swift/true). This happens when the view or an ancestor is marked as hidden, or when the view or an ancestor is inserted into a new view hierarchy.
 
 ## See Also
 

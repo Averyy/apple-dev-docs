@@ -12,6 +12,8 @@ Create a [`WebView`](webview-swift.struct.md) with a [`URL`](https://developer.a
 
 Connect [`WebView`](webview-swift.struct.md) to a [`WebPage`](webpage.md) to interact with and react to changes in web content, such as observing navigation progress and calling JavaScript. You can use [`WebPage`](webpage.md) by itself when you don’t need to display the content directly.
 
+> **Note**: For more information about using WebKit in your app using SwiftUI, see [`Meet WebKit for SwiftUI`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/231) from WWDC25.
+
 ## Topics
 
 ### Essentials
@@ -32,9 +34,7 @@ Connect [`WebView`](webview-swift.struct.md) to a [`WebPage`](webpage.md) to int
   A type that contains information about a frame on a webpage.
 ### Observing navigation between webpages
 - [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
-  An observable representation of a webpage’s navigations.
-- [WebPage.NavigationID](webpage/navigationid.md)
-  An opaque identifier which can be used to uniquely identify a load request for a web page.
+  An observable representation of a webpage’s previously loaded resources.
 - [WebPage.NavigationEvent](webpage/navigationevent.md)
   A particular state that occurs during the progression of a navigation.
 ### Configuring a WebPage

@@ -48,7 +48,6 @@ To get all the people who join the session, not just the players, use the [`peer
 ### Receiving messages from peers
 - [func processIncomingMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingmessage(_:from:).md)
   Pass incoming messages from the reliable channel to the game.
-### Instance Methods
 - [func processIncomingUnreliableMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingunreliablemessage(_:from:).md)
   Pass incoming messages from the unreliable channel to the game.
 

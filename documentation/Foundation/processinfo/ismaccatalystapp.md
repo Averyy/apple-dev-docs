@@ -22,7 +22,7 @@ var isMacCatalystApp: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the process is:
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the process is:
 
 - A Mac app built with Mac Catalyst, or an iOS app running on Apple silicon.
 - Running on a Mac.
@@ -41,6 +41,8 @@ Frameworks that support iOS and macOS use this property to determine if the proc
   Global unique identifier for the process.
 - [var isiOSAppOnMac: Bool](processinfo/isiosapponmac.md)
   A Boolean value that indicates whether the process is an iPhone or iPad app running on a Mac.
+- [var isiOSAppOnVision: Bool](processinfo/isiosapponvision.md)
+  A Boolean value that indicates whether the process is an iPhone or iPad app running on visionOS.
 - [var processIdentifier: Int32](processinfo/processidentifier.md)
   The identifier of the process (often called process ID).
 - [var processName: String](processinfo/processname.md)

@@ -16,7 +16,7 @@ weak var target: AnyObject? { get set }
 
 #### Discussion
 
-To ensure that a menu item’s target can receive commands while a modal dialog is open, the target object should return [`true`](https://developer.apple.com/documentation/swift/true) in [`worksWhenModal`](nspanel/workswhenmodal.md).
+To ensure that a menu item’s target can receive commands while a modal dialog is open, the target object should return [`true`](https://developer.apple.com/documentation/Swift/true) in [`worksWhenModal`](nspanel/workswhenmodal.md).
 
 ## See Also
 

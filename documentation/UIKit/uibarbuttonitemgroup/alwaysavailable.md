@@ -20,9 +20,9 @@ var alwaysAvailable: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to ensure that the functionality in this group is available to people regardless of the customization of the groups.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to ensure that the functionality in this group is available to people regardless of the customization of the groups.
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), UIKit places the items in this group in the overflow menu for the [`UIUserInterfaceIdiom.phone`](uiuserinterfaceidiom/phone.md) and [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) idioms. This property doesn’t have an effect for the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) idiom.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), UIKit places the items in this group in the overflow menu for the [`UIUserInterfaceIdiom.phone`](uiuserinterfaceidiom/phone.md) and [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) idioms. This property doesn’t have an effect for the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) idiom.
 
 ## See Also
 

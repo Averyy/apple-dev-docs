@@ -3,12 +3,12 @@
 **Framework**: ExtensionKit  
 **Kind**: property
 
-The view controller’s configuration.
+The information the host view controller uses to fetch the appropriate scene from an app extension.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
 
 ## Declaration
@@ -18,12 +18,16 @@ The view controller’s configuration.
 @preconcurrency var configuration: EXHostViewController.Configuration? { get set }
 ```
 
+## Mentions
+
+- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+
 ## See Also
 
 - [EXHostViewController.Configuration](exhostviewcontroller/configuration-swift.struct.md)
   An object that holds configuration options for a host view controller.
 - [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
-  A view that’s used when the view controller has no content to display.
+  The view to display when the view controller has no app extension content to display.
 
 
 ---

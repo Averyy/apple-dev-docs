@@ -17,7 +17,7 @@ People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example
 ### Focus filters
 - [protocol SetFocusFilterIntent](setfocusfilterintent.md)
   An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
-- [Defining your app’s Focus filter](focus/defining_your_app_s_focus_filter.md)
+- [Defining your app’s Focus filter](defining-your-app-s-focus-filter.md)
   Customize your app’s behavior to reflect the device’s current Focus.
 - [struct FocusFilterAppContext](focusfilterappcontext.md)
   A type that contains app-specific contextual information for a particular Focus, such as the notification filter criteria to apply.
@@ -33,6 +33,8 @@ People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example
   Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
 - [Action button on iPhone and Apple Watch](actionbutton.md)
   Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 

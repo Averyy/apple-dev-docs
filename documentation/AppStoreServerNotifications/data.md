@@ -55,6 +55,8 @@ Use the notification type along with the transaction and subscription renewal in
 
 - [object summary](summary.md)
   The payload data for a subscription-renewal-date extension notification.
+- [object appData](appdata.md)
+  The object that contains the app metadata and signed app transaction information.
 
 
 ---

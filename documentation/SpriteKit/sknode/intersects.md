@@ -17,13 +17,12 @@ Returns a Boolean value that indicates whether this node intersects the specifie
 ## Declaration
 
 ```swift
-@MainActor
 func intersects(_ node: SKNode) -> Bool
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two nodes intersect; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the two nodes intersect; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

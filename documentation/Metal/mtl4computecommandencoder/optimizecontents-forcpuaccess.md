@@ -7,12 +7,12 @@
 Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -32,6 +32,17 @@ You typically use this command for:
 ## Parameters
 
 - `texture`: A   instance the command optimizes for CPU access.
+
+## See Also
+
+- [func optimizeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](mtl4computecommandencoder/optimizecommands(buffer:range:).md)
+  Encode a command to attempt to improve the performance of a range of commands within an indirect command buffer.
+- [func optimizeContents(forCPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forcpuaccess:slice:level:).md)
+  Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents in a specific region.
+- [func optimizeContents(forGPUAccess: any MTLTexture)](mtl4computecommandencoder/optimizecontents(forgpuaccess:).md)
+  Encodes a command that modifies the contents of a texture to improve the performance of GPU accesses to its contents.
+- [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forgpuaccess:slice:level:).md)
+  Encodes a command that modifies the contents of a texture instance to improve the performance of GPU accesses to its contents in a specific region.
 
 
 ---

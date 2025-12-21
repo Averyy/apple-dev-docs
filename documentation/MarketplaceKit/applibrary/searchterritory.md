@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: property
 
-A country code that iOS uses to filter the search results of apps that aren’t available in that country.
+A country code that the framework uses to filter the search results of apps that aren’t available in that country.
 
 **Availability**:
 - iOS 17.4+

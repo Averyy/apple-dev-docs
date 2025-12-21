@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: case
 
-The manifest is invalid, or cannot be read
+An error that indicates that the app manifest provided by your server is invalid.
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +14,17 @@ The manifest is invalid, or cannot be read
 ```swift
 case invalidManifest
 ```
+
+## See Also
+
+- [MarketplaceKitError.invalidAlternativeDistributionPackageSignature](marketplacekiterror/invalidalternativedistributionpackagesignature.md)
+  An error that indicates the alternative-distribution-package signature is invalid.
+- [MarketplaceKitError.invalidAlternativeDistributionPackageURL](marketplacekiterror/invalidalternativedistributionpackageurl.md)
+  An error that indicates the alternative-distribution-package URL is invalid.
+- [MarketplaceKitError.invalidLicense](marketplacekiterror/invalidlicense.md)
+  An error that indicates that a license your server provides is invalid.
+- [MarketplaceKitError.invalidURL](marketplacekiterror/invalidurl.md)
+  An error that indicates that a URL your server or app provides is invalid.
 
 
 ---

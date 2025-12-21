@@ -6,11 +6,11 @@
 A Boolean value indicating whether the system prohibits capturing your app’s content.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 #### Discussion
 
-When an app enables app-protected content mode, the system disables the ability to capture or share the content being displayed on Vision Pro, without changing what the user is seeing on their device.  This allows an app to share information that a developer doesn’t want to be shared outside of Vision Pro.  Screenshots, screen recordings, and other types of shared content instead are replaced by a static image showing that the system didn’t allow the capture due to app-protected content mode being enabled.
+When an app enables app-protected content mode, the system disables the ability to capture or share the content being displayed on Vision Pro, without changing what the person is seeing on their device. This allows an app to prevent sharing information that a developer doesn’t want to be shared outside of Vision Pro. Shared content like screenshots and screen recordings are instead replaced by a static image showing that the system didn’t allow the capture due to app-protected content mode being enabled.
 
 ## See Also
 
@@ -28,8 +28,8 @@ When an app enables app-protected content mode, the system disables the ability 
   A Boolean value indicating whether your app may access the camera region.
 - [Shared Coordinate Space access](entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md)
   A Boolean value indicating whether your app may use a shared coordinate space.
-- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
-  A Boolean value indicating whether your app’s windows will follow the user.
+- [Window Follow Mode](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)

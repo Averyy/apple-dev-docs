@@ -18,9 +18,9 @@ Set the [`NSExtensionServiceTouchBarBezelColorName`](information-property-list/n
 
 - [class NSColor](../AppKit/NSColor.md)
   An object that stores color data and sometimes opacity (alpha value).
-- [Standard Colors](../AppKit/standard-colors.md)
+- [Standard colors](../AppKit/standard-colors.md)
   Retrieve the standard color objects for common colors like red, blue, green, black, white, and more.
-- [Color Creation](../AppKit/color-creation.md)
+- [Color creation](../AppKit/color-creation.md)
   Load colors from asset catalogs, and create colors from raw component values, such as those used by grayscale, RGB, HSB, and CMYK colors.
 - [NSExtensionServiceAllowsTouchBarItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md)
   A Boolean value indicating whether the extension appears as a Quick Action in the Touch Bar.

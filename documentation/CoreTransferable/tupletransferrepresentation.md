@@ -20,17 +20,6 @@ A wrapper type for tuples that contain transfer representations.
 struct TupleTransferRepresentation<Item, Value> where Item : Transferable, Value : Sendable
 ```
 
-## Topics
-
-### Building a transfer representation
-- [var body: some TransferRepresentation](tupletransferrepresentation/body-swift.property.md)
-  A builder expression that describes the process of importing and exporting an item.
-### Type Aliases
-- [TupleTransferRepresentation.Body](tupletransferrepresentation/body-swift.typealias.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](tupletransferrepresentation/transferrepresentation-implementations.md)
-
 ## Relationships
 
 ### Conforms To

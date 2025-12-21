@@ -17,7 +17,6 @@ Tells you when to initialize a video node that was created from an archive.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

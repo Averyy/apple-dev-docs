@@ -29,9 +29,6 @@ The system provides an instance of this structure to your app when a person choo
   The URL to a video on disk.
 - [var date: Date?](journalingsuggestion/video/date.md)
   The video’s creation date.
-### Type Aliases
-- [JournalingSuggestion.Video.JournalingSuggestionContent](journalingsuggestion/video/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

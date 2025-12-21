@@ -6,8 +6,8 @@
 An interval for an issue expected to last approximately five minutes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

@@ -31,13 +31,6 @@ struct DetectedObject<Label> where Label : Comparable, Label : Hashable
   The detection confidence. The value will always be between 0.0 and 1.0.
 - [var label: Label](detectedobject/label.md)
   The detected object label.
-### Operators
-- [static func == (DetectedObject<Label>, DetectedObject<Label>) -> Bool](detectedobject/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Decodable Implementations](detectedobject/decodable-implementations.md)
-- [Encodable Implementations](detectedobject/encodable-implementations.md)
-- [Equatable Implementations](detectedobject/equatable-implementations.md)
 
 ## Relationships
 

@@ -177,6 +177,8 @@ The server advertises the set of protocol features it supports through the [`Man
 
 - [Integrating Declarative Management](integrating-declarative-management.md)
   Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
+- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
+  Use declarative app configurations to deploy managed apps to devices.
 - [Declarations](devicemanagement-declarations.md)
   The available declarations for device management.
 - [Status Reports](status-reports.md)

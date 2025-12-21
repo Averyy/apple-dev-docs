@@ -23,7 +23,7 @@ var addressDictionary: [AnyHashable : Any]? { get }
 
 The keys in this dictionary are those defined by the Address Book framework and used to access address information for a person. For a list of the strings that can be in this dictionary, see the “Address Property” constants in `ABPerson`.
 
-You can format the contents of this dictionary to get a full address string as opposed to building the address yourself. To format the dictionary, use the doc://com.apple.documentation/documentation/addressbookui/1624198-abcreatestringwithaddressdiction function as described in `AddressBookUI Functions`.
+You can format the contents of this dictionary to get a full address string as opposed to building the address yourself. To format the dictionary, use the [`ABCreateStringWithAddressDictionary(_:_:)`](https://developer.apple.com/documentation/AddressBookUI/ABCreateStringWithAddressDictionary(_:_:)) function as described in `AddressBookUI Functions`.
 
 ## See Also
 

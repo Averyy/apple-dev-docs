@@ -6,10 +6,10 @@
 An option set to define parental controls enabled and shared as a part of age range declaration.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -21,26 +21,17 @@ struct ParentalControls
 
 ### Creating a value
 - [init(rawValue: Int)](agerangeservice/parentalcontrols/init(rawvalue:).md)
-  Creates an option set with the specified raw value.
+  Creates a parental controls option set with the specified raw value.
 ### Accessing the raw value
 - [var description: String](agerangeservice/parentalcontrols/description.md)
+  A list of parental controls that are turned on, for debugging purposes.
+- [let rawValue: Int](agerangeservice/parentalcontrols/rawvalue.md)
   The raw value of the option set.
-- [let rawValue: Int](agerangeservice/parentalcontrols/rawvalue-swift.property.md)
-  The raw value of the option set.
-### Accessing communication limits
+### Defining parental control options
 - [static let communicationLimits: AgeRangeService.ParentalControls](agerangeservice/parentalcontrols/communicationlimits.md)
-  The system limits communication with the person.
-### Supporting types
-- [AgeRangeService.ParentalControls.ArrayLiteralElement](agerangeservice/parentalcontrols/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [AgeRangeService.ParentalControls.Element](agerangeservice/parentalcontrols/element.md)
-  The element type of the option set.
-- [AgeRangeService.ParentalControls.RawValue](agerangeservice/parentalcontrols/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](agerangeservice/parentalcontrols/equatable-implementations.md)
-- [OptionSet Implementations](agerangeservice/parentalcontrols/optionset-implementations.md)
-- [SetAlgebra Implementations](agerangeservice/parentalcontrols/setalgebra-implementations.md)
+  Indicates that the system limits communication features for the minor.
+- [static let significantAppChangeApprovalRequired: AgeRangeService.ParentalControls](agerangeservice/parentalcontrols/significantappchangeapprovalrequired.md)
+  Indicates a notification obligation for significant app updates.
 
 ## Relationships
 
@@ -54,15 +45,15 @@ struct ParentalControls
 ## See Also
 
 - [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
-  An enumeration that describes the declared age range.
+  Constants that describe how an adult, parent, or guardian set the age range.
 - [AgeRangeService.AgeRange](agerangeservice/agerange.md)
-  A person’s age range is based on the age they provided in response to the age range request.
+  Information about a person’s age range based on their response to your age range request.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
-  Determines an age range for the person logged onto iCloud on the device.
+  Requests an age range for the person signed in to iCloud on the device.
 - [func requestAgeRange(ageGates: Int, Int?, Int?, in: NSWindow) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.md)
-  Determines an age range for the person logged onto iCloud on the device.
+  Requests an age range for the person logged onto iCloud on the device.
 - [AgeRangeService.Response](agerangeservice/response.md)
-  A response indicating either a person shared their age range or declined to share it.
+  A response indicating whether a person shared their age range or declined to share it.
 
 
 ---

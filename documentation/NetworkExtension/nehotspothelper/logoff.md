@@ -19,7 +19,7 @@ class func logoff(_ network: NEHotspotNetwork) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the logoff command was successfully queued, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the logoff command was successfully queued, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

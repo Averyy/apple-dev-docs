@@ -28,11 +28,6 @@ To learn more about using ActivityKit push notifications to update your Live Act
   A constant you use to configure a Live Activity that updates its dynamic content by receiving ActivityKit push notifications.
 - [static func channel(String) -> PushType](pushtype/channel(_:).md)
   A constant to configure a Live Activity that updates its dynamic content for broadcast channels.
-### Operators
-- [static func == (PushType, PushType) -> Bool](pushtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](pushtype/equatable-implementations.md)
 
 ## Relationships
 

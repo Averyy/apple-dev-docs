@@ -34,6 +34,8 @@ typealias AVAssetImageGeneratorCompletionHandler = (CMTime, CGImage?, CMTime, AV
   Generates an image for a requested time.
 - [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
   Generates images for times within the video timeline.
+- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
+  An asynchronous sequence of images created by an image generator.
 - [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](avassetimagegenerator/generatecgimageasynchronously(for:completionhandler:).md)
   Generates an image asynchronously for a requested time, and returns the result in a callback.
 - [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](avassetimagegenerator/generatecgimagesasynchronously(fortimes:completionhandler:).md)

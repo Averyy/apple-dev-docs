@@ -4,13 +4,12 @@
 **Kind**: property
 
 **Availability**:
+- iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
-- Unknown ?+ - Deprecated
-- iOS ?+
 
 ## Declaration
 

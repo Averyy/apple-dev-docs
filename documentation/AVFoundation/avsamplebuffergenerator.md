@@ -26,10 +26,10 @@ Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferReq
 
 ## Topics
 
-### Creating Sample Buffer Generators
+### Creating sample buffer generators
 - [init(asset: AVAsset, timebase: CMTimebase?)](avsamplebuffergenerator/init(asset:timebase:).md)
   Creates a new sample buffer generator.
-### Creating a Sample Buffer
+### Creating a sample buffer
 - [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
 - [func makeBatch() -> AVSampleBufferGeneratorBatch](avsamplebuffergenerator/makebatch.md)
@@ -38,7 +38,7 @@ Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferReq
   Creates a sample buffer and attempts to defer I/O for its data.
 - [func createSampleBuffer(for: AVSampleBufferRequest) -> CMSampleBuffer?](avsamplebuffergenerator/createsamplebuffer(for:).md)
   Creates a new sample buffer reference for the specified buffer request.
-### Retrieving Sample Buffer Data
+### Retrieving sample buffer data
 - [class func notifyOfDataReady(for: CMSampleBuffer, completionHandler: (Bool, (any Error)?) -> Void)](avsamplebuffergenerator/notifyofdataready(for:completionhandler:).md)
   Notifies the sample buffer generator when data is ready for the sample buffer reference or an error has occurred.
 

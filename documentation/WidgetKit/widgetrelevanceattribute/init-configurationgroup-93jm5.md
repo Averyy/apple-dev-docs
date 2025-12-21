@@ -10,7 +10,7 @@ Associates the widget kind with a group. When multiple widgets are in the same g
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration

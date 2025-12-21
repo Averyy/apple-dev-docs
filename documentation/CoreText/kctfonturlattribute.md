@@ -22,7 +22,7 @@ let kCTFontURLAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7 object.
+The value associated with this key is a [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL) object.
 
 ## See Also
 

@@ -18,21 +18,6 @@
 struct EntitySchema
 ```
 
-## Topics
-
-### Default Implementations
-- [BooksEntity Implementations](assistantschema/entityschema/booksentity-implementations.md)
-- [BrowserEntity Implementations](assistantschema/entityschema/browserentity-implementations.md)
-- [FilesEntity Implementations](assistantschema/entityschema/filesentity-implementations.md)
-- [JournalEntity Implementations](assistantschema/entityschema/journalentity-implementations.md)
-- [MailEntity Implementations](assistantschema/entityschema/mailentity-implementations.md)
-- [PhotosEntity Implementations](assistantschema/entityschema/photosentity-implementations.md)
-- [PresentationEntity Implementations](assistantschema/entityschema/presentationentity-implementations.md)
-- [ReaderEntity Implementations](assistantschema/entityschema/readerentity-implementations.md)
-- [SpreadsheetEntity Implementations](assistantschema/entityschema/spreadsheetentity-implementations.md)
-- [WhiteboardEntity Implementations](assistantschema/entityschema/whiteboardentity-implementations.md)
-- [WordProcessorEntity Implementations](assistantschema/entityschema/wordprocessorentity-implementations.md)
-
 ## Relationships
 
 ### Conforms To

@@ -26,30 +26,6 @@ struct MusicItemID
 ### Initializers
 - [init(String)](musicitemid/init(_:).md)
   Creates a music item identifier with a string.
-- [init(rawValue: String)](musicitemid/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-- [init(stringLiteral: String)](musicitemid/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-### Instance Properties
-- [let rawValue: String](musicitemid/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [MusicItemID.ExtendedGraphemeClusterLiteralType](musicitemid/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [MusicItemID.RawValue](musicitemid/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-- [MusicItemID.StringLiteralType](musicitemid/stringliteraltype.md)
-  A type that represents a string literal.
-- [MusicItemID.UnicodeScalarLiteralType](musicitemid/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicitemid/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicitemid/decodable-implementations.md)
-- [Encodable Implementations](musicitemid/encodable-implementations.md)
-- [Equatable Implementations](musicitemid/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](musicitemid/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](musicitemid/expressiblebystringliteral-implementations.md)
-- [RawRepresentable Implementations](musicitemid/rawrepresentable-implementations.md)
 
 ## Relationships
 

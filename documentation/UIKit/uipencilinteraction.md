@@ -9,6 +9,7 @@ An interaction that tells your app when a person double-taps or squeezes Apple P
 - iOS 12.1+
 - iPadOS 12.1+
 - Mac Catalyst 13.1+
+- visionOS 26.2+
 
 ## Declaration
 

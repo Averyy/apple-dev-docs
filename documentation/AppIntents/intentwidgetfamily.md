@@ -19,9 +19,6 @@ enum IntentWidgetFamily
 
 ## Topics
 
-### Operators
-- [static func == (IntentWidgetFamily, IntentWidgetFamily) -> Bool](intentwidgetfamily/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentWidgetFamily.accessoryCircular](intentwidgetfamily/accessorycircular.md)
   A circular widget.
@@ -39,20 +36,12 @@ enum IntentWidgetFamily
   A medium-sized widget.
 - [IntentWidgetFamily.systemSmall](intentwidgetfamily/systemsmall.md)
   A small widget.
-### Instance Properties
-- [var hashValue: Int](intentwidgetfamily/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentwidgetfamily/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Aliases
 - [IntentWidgetFamily.Specification](intentwidgetfamily/specification.md)
 - [IntentWidgetFamily.UnwrappedType](intentwidgetfamily/unwrappedtype.md)
 - [IntentWidgetFamily.ValueType](intentwidgetfamily/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](intentwidgetfamily/defaultresolverspecification.md)
-### Default Implementations
-- [Equatable Implementations](intentwidgetfamily/equatable-implementations.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-This current action is not allowed
+This action isn’t allowed.
 
 **Availability**:
 - iOS 18.0+

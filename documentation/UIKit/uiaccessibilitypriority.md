@@ -52,18 +52,18 @@ let highPriorityAnnouncement = NSAttributedString(string: "Camera active", attri
 
 ## See Also
 
-- [nonisolated static let accessibilitySpeechPunctuation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPunctuation.md)
+- [static let accessibilitySpeechPunctuation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPunctuation.md)
   A key that indicates whether to speak punctuation.
-- [nonisolated static let accessibilitySpeechLanguage: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechLanguage.md)
+- [static let accessibilitySpeechLanguage: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechLanguage.md)
   A key that indicates the language to use when speaking a string.
-- [nonisolated static let accessibilitySpeechPitch: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPitch.md)
+- [static let accessibilitySpeechPitch: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechPitch.md)
   A key that indicates the pitch to apply to spoken content.
-- [nonisolated static let accessibilitySpeechQueueAnnouncement: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechQueueAnnouncement.md)
+- [static let accessibilitySpeechQueueAnnouncement: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechQueueAnnouncement.md)
   A key that indicates whether to queue an announcement behind existing speech or to interrupt it.
-- [nonisolated static let accessibilitySpeechIPANotation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechIPANotation.md)
+- [static let accessibilitySpeechIPANotation: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechIPANotation.md)
   A key that indicates the pronunciation of a specific word or phrase, such as a proper name.
-- [nonisolated static let accessibilitySpeechAnnouncementPriority: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechAnnouncementPriority.md)
-- [nonisolated static let accessibilitySpeechSpellOut: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechSpellOut.md)
+- [static let accessibilitySpeechAnnouncementPriority: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechAnnouncementPriority.md)
+- [static let accessibilitySpeechSpellOut: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilitySpeechSpellOut.md)
 
 
 ---

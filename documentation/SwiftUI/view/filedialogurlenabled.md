@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
+On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 
 **Availability**:
 - iOS 17.0+
@@ -28,7 +28,7 @@ func fileDialogURLEnabled(_ predicate: Predicate<URL>) -> some View
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](view/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(_:)](view/filedialogconfirmationlabel(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogCustomizationID(String) -> some View](view/filedialogcustomizationid(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
 - [func fileDialogDefaultDirectory(URL?) -> some View](view/filedialogdefaultdirectory(_:).md)
@@ -36,7 +36,7 @@ func fileDialogURLEnabled(_ predicate: Predicate<URL>) -> some View
 - [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` behavior when a user chooses an alias.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
 - [struct FileDialogBrowserOptions](filedialogbrowseroptions.md)
   The way that file dialogs present the file system.
 

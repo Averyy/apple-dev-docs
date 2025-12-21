@@ -18,7 +18,7 @@ An interface for describing the evolution of a schema and how to migrate between
 ## Declaration
 
 ```swift
-protocol SchemaMigrationPlan
+protocol SchemaMigrationPlan : SendableMetatype
 ```
 
 ## Topics
@@ -31,6 +31,11 @@ protocol SchemaMigrationPlan
 - [static var stages: [MigrationStage]](schemamigrationplan/stages.md)
 - [enum MigrationStage](migrationstage.md)
   Describes a migration between two versions of the same schema.
+
+## Relationships
+
+### Inherits From
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

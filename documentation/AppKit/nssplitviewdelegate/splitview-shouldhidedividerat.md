@@ -17,11 +17,11 @@ optional func splitView(_ splitView: NSSplitView, shouldHideDividerAt dividerInd
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user can drag the divider off the edge of the split view, resulting in it not being visible.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user can drag the divider off the edge of the split view, resulting in it not being visible.
 
 #### Discussion
 
-If a split view has no delegate, or if its delegate doesn’t respond to this message, the split view behaves as if it has a delegate that returns [`false`](https://developer.apple.com/documentation/swift/false) when it receives this message.
+If a split view has no delegate, or if its delegate doesn’t respond to this message, the split view behaves as if it has a delegate that returns [`false`](https://developer.apple.com/documentation/Swift/false) when it receives this message.
 
 ## Parameters
 

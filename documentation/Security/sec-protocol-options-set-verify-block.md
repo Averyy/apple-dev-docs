@@ -20,9 +20,7 @@ func sec_protocol_options_set_verify_block(_ options: sec_protocol_options_t, _ 
 
 #### Discussion
 
-```None
- Set the verify block.
-```
+Set the verify block.
 
 ```None
  A `sec_protocol_verify_t` block.

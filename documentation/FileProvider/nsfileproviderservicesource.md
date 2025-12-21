@@ -21,7 +21,7 @@ protocol NSFileProviderServiceSource
 
 To implement a File Provider service, the [`NSFileProviderExtension`](nsfileproviderextension.md) subclass must override the [`supportedServiceSources(for:)`](nsfileproviderextension/supportedservicesources(for:).md) method and return the supported services.
 
-For more information about creating services, see   [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService).
+For more information about creating services, see   [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService#2934440).
 
 ## Topics
 

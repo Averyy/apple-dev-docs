@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Returns a new image created by inserting an intermediate.
+Create an image that inserts a intermediate that is cacheable
 
 **Availability**:
 - iOS 12.0+
@@ -21,7 +21,11 @@ func insertingIntermediate() -> CIImage
 
 #### Return Value
 
-The image obtained from inserting the intermediate.
+ An autoreleased [`CIImage`](ciimage.md).
+
+#### Discussion
+
+This intermediate will be not be cached if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false.
 
 ## See Also
 

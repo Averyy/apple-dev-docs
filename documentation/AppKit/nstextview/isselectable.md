@@ -17,7 +17,7 @@ var isSelectable: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to select text of all text views sharing the receiver’s layout manager; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to select text of all text views sharing the receiver’s layout manager; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If a text view is made not selectable, it’s also made not editable, and buttons on the Find panel are dimmed. Text views are by default both editable and selectable
 

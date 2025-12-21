@@ -23,7 +23,7 @@ var canUndo: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager has any actions to undo, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the manager has any actions to undo, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The return value doesn’t mean you can safely invoke [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md)—you may have to close open undo groups first.
 

@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A Boolean value that indicates whether your app can integrate with APIs to provide different feed based content.
+A Boolean value that indicates whether your app meets the requirements of the video-partner program.
 
 **Availability**:
 - iOS 10.0+
@@ -13,7 +13,9 @@ A Boolean value that indicates whether your app can integrate with APIs to provi
 
 #### Discussion
 
-This entitlement lets you use the required APIs for the Apple TV App and Universal Search.
+This entitlement enables you to use the required APIs for the Apple TV App and Universal Search.
+
+For more information and to request the entitlement, see the [`Apple Video Partner Program`](https://developer.apple.comhttps://developer.apple.com/programs/video-partner).
 
 ## See Also
 

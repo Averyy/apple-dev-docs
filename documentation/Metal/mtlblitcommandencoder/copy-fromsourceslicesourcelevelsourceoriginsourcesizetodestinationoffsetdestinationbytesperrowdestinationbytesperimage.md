@@ -22,7 +22,7 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 
 ## Mentions
 
-- [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](copying-data-to-a-private-resource.md)
 
 #### Discussion
 

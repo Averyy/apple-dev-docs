@@ -16,7 +16,7 @@ var hasReplyButton: Bool { get set }
 
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the notification has a reply button. The default value is [`false`](https://developer.apple.com/documentation/swift/false). If this property and [`hasActionButton`](nsusernotification/hasactionbutton.md) are both [`true`](https://developer.apple.com/documentation/swift/true), the reply button is shown.
+Set to [`true`](https://developer.apple.com/documentation/Swift/true) if the notification has a reply button. The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If this property and [`hasActionButton`](nsusernotification/hasactionbutton.md) are both [`true`](https://developer.apple.com/documentation/Swift/true), the reply button is shown.
 
 ## See Also
 

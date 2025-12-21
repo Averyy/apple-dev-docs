@@ -22,21 +22,16 @@ struct MapKeyPath<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.MapKeyPath.Failure](publishers/mapkeypath/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/mapkeypath/upstream.md)
   The publisher from which this publisher receives elements.
 - [let keyPath: KeyPath<Upstream.Output, Output>](publishers/mapkeypath/keypath.md)
   The key path of a property to publish.
-### Applying Operators
-- [Publisher Operators](publishers-mapkeypath-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/mapkeypath/publisher-implementations.md)
 
 ## Relationships
 

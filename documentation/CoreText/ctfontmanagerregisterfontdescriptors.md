@@ -24,7 +24,7 @@ func CTFontManagerRegisterFontDescriptors(_ fontDescriptors: CFArray, _ scope: C
 
 Registered fonts are discoverable through font descriptor matching in the calling process.
 
-Fonts descriptors registered in a disabled state (the `enabled` parameter set to [`false`](https://developer.apple.com/documentation/swift/false)) aren’t immediately available for descriptor matching, but the font manager knows the descriptors can be made available if necessary. You can enable these descriptors by calling this function again with the `enabled` parameter set to [`true`](https://developer.apple.com/documentation/swift/true). This operation may fail if there’s another registered and enabled font with the same PostScript name.
+Fonts descriptors registered in a disabled state (the `enabled` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false)) aren’t immediately available for descriptor matching, but the font manager knows the descriptors can be made available if necessary. You can enable these descriptors by calling this function again with the `enabled` parameter set to [`true`](https://developer.apple.com/documentation/Swift/true). This operation may fail if there’s another registered and enabled font with the same PostScript name.
 
 ## Parameters
 

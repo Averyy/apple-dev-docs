@@ -25,10 +25,14 @@ The three components in the string are a header, a payload, and a signature.
 
 ## See Also
 
-- [type JWSTransaction](jwstransaction.md)
-  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 - [object JWSDecodedHeader](jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
+- [type JWSAppTransaction](jwsapptransaction.md)
+  App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
+- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+  A decoded payload that contains app transaction information.
+- [type JWSTransaction](jwstransaction.md)
+  Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 - [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)
   A decoded payload that contains transaction information.
 - [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)

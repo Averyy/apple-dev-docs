@@ -18,10 +18,12 @@ func verifyIdentityWithWalletButtonStyle(_ style: VerifyIdentityWithWalletButton
 
 ## See Also
 
-- [@MainActor @preconcurrency struct PayWithApplePayButton<Fallback> where Fallback : View](../PassKit/PayWithApplePayButton.md)
-- [@MainActor @preconcurrency struct AddPassToWalletButton<Fallback> where Fallback : View](../PassKit/AddPassToWalletButton.md)
-- [@MainActor @preconcurrency struct VerifyIdentityWithWalletButton<Fallback> where Fallback : View](../PassKit/VerifyIdentityWithWalletButton.md)
-  A view that displays a button for identity verification.
+- [struct PayWithApplePayButton](../PassKit/PayWithApplePayButton.md)
+  A type that provides a button to pay with Apple pay.
+- [struct AddPassToWalletButton](../PassKit/AddPassToWalletButton.md)
+  A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
+- [struct VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md)
+  A type that displays a button to present the identity verification flow.
 - [func addOrderToWalletButtonStyle(AddOrderToWalletButtonStyle) -> some View](view/addordertowalletbuttonstyle(_:).md)
   Sets the button’s style.
 - [func addPassToWalletButtonStyle(AddPassToWalletButtonStyle) -> some View](view/addpasstowalletbuttonstyle(_:).md)
@@ -40,7 +42,7 @@ func verifyIdentityWithWalletButtonStyle(_ style: VerifyIdentityWithWalletButton
   Sets the display style on the PayLaterView. See `PKPayLaterDisplayStyle`.
 - [func payWithApplePayButtonStyle(PayWithApplePayButtonStyle) -> some View](view/paywithapplepaybuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
-- [@MainActor @preconcurrency struct AsyncShareablePassConfiguration<Content> where Content : View](../PassKit/AsyncShareablePassConfiguration.md)
+- [struct AsyncShareablePassConfiguration](../PassKit/AsyncShareablePassConfiguration.md)
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](view/transactiontask(_:action:).md)
   Provides a task to perform before this view appears
 

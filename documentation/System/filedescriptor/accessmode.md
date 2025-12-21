@@ -38,25 +38,11 @@ struct AccessMode
 ### Working with C APIs
 - [init(rawValue: CInt)](filedescriptor/accessmode/init(rawvalue:).md)
   Creates a strongly-typed access mode from a raw C access mode.
-- [var rawValue: CInt](filedescriptor/accessmode/rawvalue-swift.property.md)
+- [var rawValue: CInt](filedescriptor/accessmode/rawvalue.md)
   The raw C access mode.
-- [FileDescriptor.AccessMode.RawValue](filedescriptor/accessmode/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Comparing Access Modes
-- [static func != (Self, Self) -> Bool](filedescriptor/accessmode/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](filedescriptor/accessmode/hash(into:).md)
-- [var hashValue: Int](filedescriptor/accessmode/hashvalue.md)
-### Encoding Access Modes
-- [func encode(to: any Encoder) throws](filedescriptor/accessmode/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `Int32`.
-- [init(from: any Decoder) throws](filedescriptor/accessmode/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](filedescriptor/accessmode/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](filedescriptor/accessmode/customstringconvertible-implementations.md)
-- [Equatable Implementations](filedescriptor/accessmode/equatable-implementations.md)
-- [RawRepresentable Implementations](filedescriptor/accessmode/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -25,7 +25,7 @@ var playAudiobook: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.books.playAudiobook` schema:
 
 ```swift
-@AssistantIntent(schema: .books.playAudiobook)
+@AppIntent(schema: .books.playAudiobook)
 struct PlayAudiobookIntent: AudioPlaybackIntent {
     @Parameter
     var target: AudiobookEntity

@@ -10,7 +10,7 @@ The mass of each rigid body, or nil if mass information was not requested or for
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

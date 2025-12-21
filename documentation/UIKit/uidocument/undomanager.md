@@ -14,7 +14,6 @@ The undo manager for the document.
 ## Declaration
 
 ```swift
-@MainActor
 var undoManager: UndoManager! { get set }
 ```
 

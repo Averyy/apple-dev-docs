@@ -17,6 +17,8 @@ class IOCommandPool;
 
 #### Overview
 
+Manipulates a pool of commands which inherit from IOCommand.
+
 The IOCommandPool class is used to manipulate a pool of commands which inherit from IOCommand. The caller must put commands in the pool by creating the command (via the controller’s factory method or a memory allocation) and calling the returnCommand method with the newly created command as its argument.
 
 ## Topics

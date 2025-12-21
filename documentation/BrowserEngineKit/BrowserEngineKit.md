@@ -15,7 +15,10 @@ A web browser loads content and code from remote — and potentially untrusted �
 
 If you use [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to render web content in your browser app, WebKit automatically distributes its work to extensions that isolate their access to important resources and data.
 
-Whether you use [`WebKit`](https://developer.apple.com/documentation/WebKit) or write your own alternative browser engine, you need to request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
+Whether you use [`WebKit`](https://developer.apple.com/documentation/WebKit) or write your own alternative browser engine, you need to:
+
+- Request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
+- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
 
 ##### Build a Multi Process Browser
 
@@ -31,9 +34,11 @@ For information on integrating a custom text view with the UIKit text system, se
 
 In your browser app, launch extensions as the person browses web content to make network requests, load the web content, and render media. For more information, see [`Managing the browser extension life cycle`](managing-the-browser-extension-lifecycle.md). Use [`XPC`](https://developer.apple.com/documentation/XPC) to communicate between your browser app and extension processes. For more information, see [`Using XPC to communicate with browser extensions`](using-xpc-to-communicate-with-browser-extensions.md).
 
-For information on installing alternative app marketplaces from their company websites within your browser app, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
+##### Develop By Region
 
-> ❗ **Important**:  To distribute an app that uses an alternative browser engine, you need to request the relevant entitlements for your developer account. For more information and to request the entitlements, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+To distribute an app that uses an alternative browser engine, request the relevant entitlements for your developer account. You must also request an entitlement if your app isn’t a web browser but embeds an alternative browser engine for in-app browsing.
+
+Support for alternative browser engines varies by geographic region:
 
 ## Topics
 
@@ -99,7 +104,7 @@ For information on installing alternative app marketplaces from their company we
   Toggle memory between being writable and executable.
 - [Improving control flow integrity with pointer authentication](../Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication.md)
   Increase confidence that your code uses pointers correctly.
-- [var BE_JIT_WRITE_PROTECT_TAG: Int { get }](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
+- [var BE_JIT_WRITE_PROTECT_TAG: Int](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
 ### Downloads
 - [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)
@@ -107,12 +112,18 @@ For information on installing alternative app marketplaces from their company we
 - [class BEDownloadMonitor](bedownloadmonitor-9bwls.md)
   An object that reports the status of web downloads to the system.
 ### Classes
+- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
+- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
 - [class BEMediaEnvironment](bemediaenvironment-15xci.md)
 - [class BEProcessCapability](beprocesscapability-76ijx.md)
+- [class BEWebContentFilter](bewebcontentfilter.md)
+  An object that represents a web content filter
 ### Protocols
 - [protocol BEExtensionProcess](beextensionprocess.md)
 ### Structures
 - [struct BEAccessibility](beaccessibility.md)
+### Enumerations
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
 
 
 ---

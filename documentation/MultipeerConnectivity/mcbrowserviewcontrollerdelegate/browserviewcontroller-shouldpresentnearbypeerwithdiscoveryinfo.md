@@ -21,7 +21,7 @@ optional func browserViewController(_ browserViewController: MCBrowserViewContro
 
 #### Return Value
 
-This delegate method should return [`true`](https://developer.apple.com/documentation/swift/true) if the newly discovered peer should be shown in the user interface, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This delegate method should return [`true`](https://developer.apple.com/documentation/Swift/true) if the newly discovered peer should be shown in the user interface, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

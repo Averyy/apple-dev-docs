@@ -22,7 +22,7 @@ func isEqual(_ object: Any) -> Bool
 
 #### Return Value
 
-A Boolean value of [`true`](https://developer.apple.com/documentation/swift/true) if the receiver and `object` are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+A Boolean value of [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver and `object` are equal; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

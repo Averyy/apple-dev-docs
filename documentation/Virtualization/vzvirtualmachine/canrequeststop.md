@@ -16,7 +16,7 @@ var canRequestStop: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the VM is in a state that allows it to stop running. Call the [`requestStop()`](vzvirtualmachine/requeststop().md) method to ask the guest operating system to stop running.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the VM is in a state that allows it to stop running. Call the [`requestStop()`](vzvirtualmachine/requeststop().md) method to ask the guest operating system to stop running.
 
 ## See Also
 

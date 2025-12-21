@@ -20,14 +20,12 @@ A two-dimensional refreshable braille display has a grid of evenly spaced pins t
 
 ## See Also
 
-- [Customized accessibility content](customized-accessibility-content.md)
-  Customize your apps to deliver accessibility information to your users in measured portions as they need it.
-- [Audio graphs](audio-graphs.md)
-  Define an accessible representation of your chart for VoiceOver to generate an audio graph.
-- [Hearing device support](hearing-device-support.md)
-  Access information about paired hearing aid devices and streaming status.
-- [func AXNameFromColor(CGColor) -> String](axnamefromcolor(_:).md)
-  Returns a localized description of the color to use in accessibility attributes.
+- [class AXBrailleTable](axbrailletable.md)
+  A rule for translating print text to Braille, and back-translating Braille to print text.
+- [class AXBrailleTranslator](axbrailletranslator.md)
+  Translates print text to Braille and Braille to print text according to the given Braille table.
+- [class AXBrailleTranslationResult](axbrailletranslationresult.md)
+  The result of translation or back-translation.
 
 
 ---

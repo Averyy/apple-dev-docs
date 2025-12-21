@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An option specifying that the app must prevent hazards when modifying this object’s contents.
+A resource option that instructs Metal to ignore memory hazards for a resource at runtime.
 
 **Availability**:
 - iOS 10.0+
@@ -26,7 +26,7 @@ For more information, see [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingm
 ## See Also
 
 - [static var hazardTrackingModeTracked: MTLResourceOptions](mtlresourceoptions/hazardtrackingmodetracked.md)
-  An option specifying that Metal prevents hazards when modifying this object’s contents.
+  An option that instructs Metal to apply safeguards for a resource at runtime to avoid memory hazards for the applicable commands.
 
 
 ---

@@ -38,15 +38,15 @@ Add the `CLRequireExplicitServiceSession` property to your app’s Info.plist fi
 - [enum CLAccuracyAuthorization](claccuracyauthorization.md)
   Constants that indicate the level of location accuracy the app has authorization to use.
 - [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information at all times.
+  A message that tells people why the app is requesting access to their location information at all times.
 - [NSLocationWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information while the app is running in the foreground.
+  A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
 - [NSLocationUsageDescription](../BundleResources/Information-Property-List/NSLocationUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location information.
+  A message that tells people why the app is requesting access to their location information.
 - [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 - [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
-  A message that tells the user why the app is requesting access to the user’s location at all times.
+  A message that tells people why the app is requesting access to their location at all times.
 
 
 ---

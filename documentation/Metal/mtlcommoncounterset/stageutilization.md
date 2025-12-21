@@ -21,7 +21,7 @@ static let stageUtilization: MTLCommonCounterSet
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
@@ -34,7 +34,7 @@ The stage utilization counter set contains the following counters:
 - [`postTessellationVertexCycles`](mtlcommoncounter/posttessellationvertexcycles.md)
 - [`renderTargetWriteCycles`](mtlcommoncounter/rendertargetwritecycles.md)
 
-Use this name to check whether a GPU device supports the corresponding counter set (see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+Use this name to check whether a GPU device supports the corresponding counter set (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 ## See Also
 

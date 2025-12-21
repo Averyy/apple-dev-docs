@@ -10,17 +10,17 @@ To install apps that others distribute on your marketplace, call the [`AppLibrar
 
 In processing the request, the system retrieves a license from your web server. Provide the license by implementing the [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) on a Swift server with an endpoint that the device’s operating system discovers by looking up a standard URL scheme.
 
-If your marketplace requires authentication to download apps — for example, a purchase or log in — implement an authentication service that the device can query to decorate the headers of its communication with your endpoints. To set the header, and handle any network failures, provide a [`MarketplaceExtension`](marketplaceextension.md) in your app and implement its callbacks.
+If your marketplace requires authentication to download apps — for example, a purchase or log in — implement an authentication service that the device can query to decorate the headers of its communication with your endpoints. To set the header, and handle any network failures, provide a [`MarketplaceAppExtension`](marketplaceappextension.md) in your app and implement its callbacks.
 
 When the system receives a license, it requests that licensed app from your web server. Publish two endpoints that field requests for apps, including restore requests for new apps, and update requests. Using MarketplaceKit, handle any errors that might occur as the system communicates with your server, and provide people with visual status during app management tasks that might be long-running, such as installing an app.
 
 #### Define the Request Header
 
-Bundle an extension with your marketplace to define authorization headers for requests to your server. Implement the [`MarketplaceExtension`](marketplaceextension.md) method [`additionalHeaders(for:account:)`](marketplaceextension/additionalheaders(for:account:).md).
+Bundle an extension with your marketplace to define authorization headers for requests to your server. Implement the [`MarketplaceAppExtension`](marketplaceappextension.md) method [`additionalHeaders(for:account:)`](marketplaceappextension/additionalheaders(for:account:).md).
 
 The system calls your implementation of `additionalHeaders` to add custom information that you choose in each communication it makes with your web server. MarketplaceKit doesn’t require a specific authentication method for the installation of an alternative marketplace’s apps. You can use OAuth 2.0 or add custom information to associate the communication with the person signed in, or the person’s unique device. This effectively authorizes the system to act on the person’s behalf on subsequent calls to your web server for app licenses or alternative distribution packages.
 
-If an access token or subscription expires, return an HTTP failure code from your marketplace server. The system calls your [`MarketplaceExtension`](marketplaceextension.md) method  [`requestFailed(with:)`](marketplaceextension/requestfailed(with:).md) implementation to correct the issue. If the failure results from:
+If an access token or subscription expires, return an HTTP failure code from your marketplace server. The system calls your [`MarketplaceAppExtension`](marketplaceappextension.md) method  [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) implementation to correct the issue. If the failure results from:
 
 - An expired subscription, set a flag to present an e-commerce flow within your alternative marketplace app.
 - An invalid access token, reauthenticate the person according to [`Reauthenticate a person in your marketplace app or extension`](reauthenticating-a-person-to-manage-apps#Reauthenticate-a-person-in-your-marketplace-app-or-extension.md).
@@ -106,7 +106,7 @@ The system calls your restore endpoint with the following example POST:
         { "appleItemId": "<the app's appleItemID>",
         "appleVersionId" : "<version number>" }
     ], 
-    "platform" : "iOS" | "iPadOS",
+    "platform" : "iOS",
     "osVersion" : "17.4"
 }
 ```
@@ -181,8 +181,8 @@ The system sends an update POST to your endpoint, such as:
             "appleVersionId" : "<version number>"
         }
     ],
-    "platform" : "iOS" | "iPadOS",
-    "osVersion" : "17.0"    
+    "platform" : "iOS",
+    "osVersion" : "17.4"    
 }
 ```
 

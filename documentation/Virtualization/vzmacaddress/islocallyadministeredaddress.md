@@ -16,7 +16,7 @@ var isLocallyAdministeredAddress: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the address is locally administered, or [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t. A locally administered address different than the address burned in to the physical network interface.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the address is locally administered, or [`false`](https://developer.apple.com/documentation/Swift/false) if it isn’t. A locally administered address different than the address burned in to the physical network interface.
 
 ## See Also
 

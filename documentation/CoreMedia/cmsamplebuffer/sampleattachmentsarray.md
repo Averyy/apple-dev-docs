@@ -3,8 +3,6 @@
 **Framework**: Core Media  
 **Kind**: struct
 
-A structure that defines an array of sample attachments.
-
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

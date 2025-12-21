@@ -6,7 +6,7 @@
 The minimum amount of immersion used for this instance of the style.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 2.0+
 
 ## Declaration

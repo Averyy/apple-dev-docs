@@ -9,7 +9,6 @@ The available rendering options that you use to selectively disable certain rend
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
-- macOS 10.15+
 
 ## Declaration
 

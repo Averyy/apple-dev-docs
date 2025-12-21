@@ -18,8 +18,6 @@ case deferred
 
 - [NSBackgroundActivityScheduler.Result.finished](nsbackgroundactivityscheduler/result/finished.md)
   The activity has finished executing. If the activity repeats, the next invocation is scheduled by the system.
-- [NSBackgroundActivityScheduler.Result.finished](nsbackgroundactivityscheduler/result/finished.md)
-  The activity has finished executing. If the activity repeats, the next invocation is scheduled by the system.
 
 
 ---

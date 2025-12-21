@@ -21,7 +21,7 @@ var suppressesPlayerRendering: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), the player object handles the rendering of the receiver’s associated output. Change the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to suppress the rendering of the media data associated with this object.
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the player object handles the rendering of the receiver’s associated output. Change the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true) to suppress the rendering of the media data associated with this object.
 
 
 ---

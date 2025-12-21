@@ -33,6 +33,13 @@ struct Changes<Model> where Model : Identifiable
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [FinanceStore.History](financestore/history.md)
+  A structure the framework uses to collect and iterate over finance store model objects.
+- [FinanceStore.HistoryToken](financestore/historytoken.md)
+  A structure that describes the starting point to use for financial data queries.
+
 
 ---
 

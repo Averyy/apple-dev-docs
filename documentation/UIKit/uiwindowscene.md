@@ -21,8 +21,9 @@ class UIWindowScene
 
 ## Mentions
 
-- [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+- [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
 
 #### Overview
 
@@ -52,6 +53,7 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](uiwindowscene/traitoverrides-1klo1.md)
 - [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Providing a PDF version of your scene
 - [var screenshotService: UIScreenshotService?](uiwindowscene/screenshotservice.md)
   An object that generates a high-fidelity version of your app’s content.

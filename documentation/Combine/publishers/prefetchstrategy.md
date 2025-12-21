@@ -22,23 +22,11 @@ enum PrefetchStrategy
 
 ## Topics
 
-### Prefetching Strategies
+### Prefetching strategies
 - [Publishers.PrefetchStrategy.byRequest](publishers/prefetchstrategy/byrequest.md)
   A strategy that avoids prefetching and instead performs requests on demand.
 - [Publishers.PrefetchStrategy.keepFull](publishers/prefetchstrategy/keepfull.md)
   A strategy to fill the buffer at subscription time, and keep it full thereafter.
-### Supporting Hashing
-- [var hashValue: Int](publishers/prefetchstrategy/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](publishers/prefetchstrategy/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Determining Equality and Inequality
-- [static func != (Self, Self) -> Bool](publishers/prefetchstrategy/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (Publishers.PrefetchStrategy, Publishers.PrefetchStrategy) -> Bool](publishers/prefetchstrategy/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](publishers/prefetchstrategy/equatable-implementations.md)
 
 ## Relationships
 

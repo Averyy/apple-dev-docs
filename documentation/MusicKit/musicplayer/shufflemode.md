@@ -21,22 +21,11 @@ enum ShuffleMode
 
 ## Topics
 
-### Operators
-- [static func == (MusicPlayer.ShuffleMode, MusicPlayer.ShuffleMode) -> Bool](musicplayer/shufflemode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicPlayer.ShuffleMode.off](musicplayer/shufflemode/off.md)
   The shuffle mode is in a disabled state.
 - [MusicPlayer.ShuffleMode.songs](musicplayer/shufflemode/songs.md)
   The music player’s shuffle songs mode.
-### Instance Properties
-- [var hashValue: Int](musicplayer/shufflemode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicplayer/shufflemode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](musicplayer/shufflemode/equatable-implementations.md)
 
 ## Relationships
 

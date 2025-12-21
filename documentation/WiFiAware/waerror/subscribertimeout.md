@@ -6,8 +6,8 @@
 An error that occurs due to subscriber timeout.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,10 +17,16 @@ case subscriberTimeout(WAError.SubscriberTimeoutDetails)
 
 ## See Also
 
-- [case connectionTerminated(WAError.ConnectionTerminatedDetails)](waerror/connectionterminated(_:).md)
-  An error that occurs if someone terminates the connection.
+- [case connectionIdleTimeout(WAError.ConnectionIdleTimeoutDetails)](waerror/connectionidletimeout(_:).md)
+  An error that occurs due to an idle or unused connection.
 - [case publisherTimeout(WAError.PublisherTimeoutDetails)](waerror/publishertimeout(_:).md)
   An error that occurs due to publisher timeout.
+- [WAError.ConnectionIdleTimeoutDetails](waerror/connectionidletimeoutdetails.md)
+  The optional details describing the missing resources.
+- [WAError.PublisherTimeoutDetails](waerror/publishertimeoutdetails.md)
+  The optional details describing the timed out publisher.
+- [WAError.SubscriberTimeoutDetails](waerror/subscribertimeoutdetails.md)
+  The optional details describing the timed out subscriber.
 
 
 ---

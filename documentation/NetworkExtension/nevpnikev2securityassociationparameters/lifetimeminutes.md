@@ -36,6 +36,10 @@ The default is 60 for IKE Security Associations, and 30 for Child Security Assoc
   The Diffie Hellman group used by the Security Association.
 - [enum NEVPNIKEv2DiffieHellmanGroup](nevpnikev2diffiehellmangroup.md)
   An enumeration of Diffie-Hellman group values.
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
+  Quantum-secure key exchange methods you use with IKEv2 servers.
 
 
 ---

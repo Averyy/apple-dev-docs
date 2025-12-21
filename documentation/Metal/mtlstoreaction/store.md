@@ -21,8 +21,8 @@ case store
 
 ## Mentions
 
-- [Setting Load and Store Actions](setting-load-and-store-actions.md)
-- [Storing Data a Pass Makes with Custom Sample Positions for a Subsequent Pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
+- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Storing data a pass makes with custom sample positions for a subsequent pass](storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
 ## See Also
 

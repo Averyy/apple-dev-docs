@@ -33,13 +33,6 @@ struct MLModelTransformerAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Sca
 ### Performing the transformation
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](mlmodeltransformeradaptor/applied(to:eventhandler:).md)
   Performs a transformation on a single input.
-### Type Aliases
-- [MLModelTransformerAdaptor.Input](mlmodeltransformeradaptor/input.md)
-  The input type.
-- [MLModelTransformerAdaptor.Output](mlmodeltransformeradaptor/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](mlmodeltransformeradaptor/transformer-implementations.md)
 
 ## Relationships
 

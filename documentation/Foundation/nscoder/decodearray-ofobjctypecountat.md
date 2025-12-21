@@ -30,7 +30,7 @@ For information on creating an Objective-C type code suitable for `itemType`, se
 
 ##### Special Considerations
 
-You should not use this method to decode C arrays of Objective-C objects. For historical reasons, returned objects will have an additional ownership reference which you can only relinquish using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+You should not use this method to decode C arrays of Objective-C objects. For historical reasons, returned objects will have an additional ownership reference which you can only relinquish using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## See Also
 

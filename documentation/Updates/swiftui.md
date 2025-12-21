@@ -12,7 +12,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 
 ##### General
 
-- Apply Liquid Glass effects to views using [`glassEffect(_:in:isEnabled:)`](https://developer.apple.com/documentation/SwiftUI/View/glassEffect(_:in:isEnabled:)).
+- Apply Liquid Glass effects to views using [`glassEffect(_:in:)`](https://developer.apple.com/documentation/SwiftUI/View/glassEffect(_:in:)).
 - Use [`glass`](https://developer.apple.com/documentation/SwiftUI/PrimitiveButtonStyle/glass) with the [`buttonStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/buttonStyle(_:)-66fbx) modifier to apply Liquid Glass to instances of `Button`.
 - [`ToolbarSpacer`](https://developer.apple.com/documentation/SwiftUI/ToolbarSpacer) creates a visual break between items in toolbars containing Liquid Glass.
 - Use [`scrollEdgeEffectStyle(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/scrollEdgeEffectStyle(_:for:)) to configure the scroll edge effect style for scroll views.
@@ -21,7 +21,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Set the [`search`](https://developer.apple.com/documentation/SwiftUI/TabRole/search) role on a tab to take someone to a search tab and have a search field take the place of the tab bar.
 - Adjust the content of accessory views based on the placement in a tab view with [`TabViewBottomAccessoryPlacement`](https://developer.apple.com/documentation/SwiftUI/TabViewBottomAccessoryPlacement).
 - Connect a [`WebView`](https://developer.apple.com/documentation/WebKit/WebView-swift.struct) with a [`WebPage`](https://developer.apple.com/documentation/WebKit/WebPage) to fully control the browsing experience in your app.
-- Drag multiple items using the [`draggable(_:_:)`](https://developer.apple.com/documentation/SwiftUI/View/draggable(_:_:)) modifier. Make a view a container for draggable views using the [`dragContainer(for:id:in:selection:_:)`](https://developer.apple.com/documentation/SwiftUI/View/dragContainer(for:id:in:selection:_:)) modifier.
+- Drag multiple items using the [`draggable(containerItemID:containerNamespace:)`](https://developer.apple.com/documentation/SwiftUI/View/draggable(containerItemID:containerNamespace:)) modifier. Make a view a container for draggable views using the [`dragContainer(for:itemID:in:_:)`](https://developer.apple.com/documentation/SwiftUI/View/dragContainer(for:itemID:in:_:)) modifier.
 - Use the [`Animatable()`](https://developer.apple.com/documentation/SwiftUI/Animatable()) macro to have SwiftUI synthesize custom animatable data properties.
 - [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) now supports tick marks. Tick marks appear automatically when initializing a `Slider` with the `step` parameter.
 - Use [`windowResizeAnchor(_:)`](https://developer.apple.com/documentation/SwiftUI/View/windowResizeAnchor(_:)) to set the window anchor point when a window must resize.

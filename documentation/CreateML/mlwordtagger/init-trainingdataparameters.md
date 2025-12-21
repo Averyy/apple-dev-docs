@@ -21,9 +21,7 @@ init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameter
 
 ## See Also
 
-- [init(trainingData: MLDataTable, tokenColumn: String, labelColumn: String, parameters: MLWordTagger.ModelParameters) throws](mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:)-97qtg.md)
-  Creates a word tagger.
-- [init(trainingData: DataFrame, tokenColumn: String, labelColumn: String, parameters: MLWordTagger.ModelParameters) throws](mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:)-9fci2.md)
+- [init(trainingData:tokenColumn:labelColumn:parameters:)](mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:).md)
   Creates a word tagger.
 - [MLWordTagger.Token](mlwordtagger/token.md)
   The token type of a word tagger, which is a string.

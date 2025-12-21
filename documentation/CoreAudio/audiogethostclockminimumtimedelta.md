@@ -15,6 +15,14 @@
 func AudioGetHostClockMinimumTimeDelta() -> UInt32
 ```
 
+#### Return Value
+
+A UInt32 containing the smallest number of ticks that two succeeding values will ever differ.
+
+#### Discussion
+
+Gets the smallest number of ticks that two succeeding values will ever differ. by.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

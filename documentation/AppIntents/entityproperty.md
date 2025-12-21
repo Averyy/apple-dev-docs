@@ -2079,14 +2079,8 @@ final class EntityProperty<Value> where Value : _IntentValue, Value : Sendable
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](entityproperty/init(title:indexingkey:)-vhxo.md)
   Creates an app intent entity property.
 ### Instance Properties
-- [var isOptional: Bool](entityproperty/isoptional.md)
 - [var projectedValue: EntityProperty<Value>](entityproperty/projectedvalue.md)
-- [var title: LocalizedStringResource](entityproperty/title.md)
 - [var wrappedValue: Value](entityproperty/wrappedvalue.md)
-### Default Implementations
-- [CustomStringConvertible Implementations](entityproperty/customstringconvertible-implementations.md)
-- [Decodable Implementations](entityproperty/decodable-implementations.md)
-- [Encodable Implementations](entityproperty/encodable-implementations.md)
 
 ## Relationships
 

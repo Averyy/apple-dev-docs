@@ -78,6 +78,8 @@ struct ConfirmEraseItems: View {
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some Scene](scene/dialogsuppressiontoggle(issuppressed:).md)
   Enables user suppression of an alert with a custom suppression message.
+- [func dialogSuppressionToggle(_:isSuppressed:)](scene/dialogsuppressiontoggle(_:issuppressed:).md)
+  Enables user suppression of an alert with a custom suppression message.
 
 
 ---

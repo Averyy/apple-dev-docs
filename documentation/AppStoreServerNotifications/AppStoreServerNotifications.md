@@ -59,7 +59,7 @@ The App Store server sends the `TEST` notification in the version 2 notification
 - [object responseBodyV2DecodedPayload](responsebodyv2decodedpayload.md)
   A decoded payload that contains the version 2 notification data.
 - [type notificationType](notificationtype.md)
-  The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+  The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 - [type subtype](subtype.md)
   A string that provides details about select notification types in version 2.
 ### Deprecated
@@ -72,7 +72,7 @@ The App Store server sends the `TEST` notification in the version 2 notification
   Offer content and services in your app across Apple platforms using a Swift-based interface.
 - [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md)
   Manage your customers’ App Store transactions from your server.
-- [App Store Receipts](../appstorereceipts/appstorereceipts.md)
+- [App Store Receipts](../AppStoreReceipts/AppStoreReceipts.md)
   Validate app and In-App Purchase receipts with the App Store.
 
 

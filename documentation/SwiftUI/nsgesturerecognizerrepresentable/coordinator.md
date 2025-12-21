@@ -7,7 +7,7 @@
 A type to coordinate with the gesture recognizer.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

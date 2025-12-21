@@ -16,11 +16,11 @@ optional func webView(_ webView: WebView!, shouldInsertText text: String!, repla
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to insert `text` in `webView`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user should be allowed to insert `text` in `webView`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method may perform an alternate action—for example, insert different text—and return [`false`](https://developer.apple.com/documentation/swift/false).
+This method may perform an alternate action—for example, insert different text—and return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

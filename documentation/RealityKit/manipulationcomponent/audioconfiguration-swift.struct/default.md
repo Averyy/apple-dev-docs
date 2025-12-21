@@ -6,7 +6,7 @@
 The default configuration. The system will apply default sounds as the user interacts with the object.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -31,18 +31,6 @@ enum EndedReason
   The remote party explicitly ended the conversation.
 - [Conversation.EndedReason.unanswered](conversation/endedreason/unanswered.md)
   The conversation didn’t complete the connection process and was never explicitly ended.
-### Initializers
-- [init?(rawValue: Int)](conversation/endedreason/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](conversation/endedreason/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Conversation.EndedReason.RawValue](conversation/endedreason/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](conversation/endedreason/equatable-implementations.md)
-- [RawRepresentable Implementations](conversation/endedreason/rawrepresentable-implementations.md)
 
 ## Relationships
 

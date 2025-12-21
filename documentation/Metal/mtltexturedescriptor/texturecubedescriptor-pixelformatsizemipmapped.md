@@ -30,7 +30,7 @@ For a cube texture, the property values describe one slice, which is any one of 
 ## Parameters
 
 - `pixelFormat`: The format describing how every pixel on the texture image is stored. The default value is  .
-- `size`: The width and height of each slice of the cube texture. The value must be greater than or equal to 1.
+- `size`: The width and height of each slice of the cube texture. The value needs to be greater than or equal to  .
 - `mipmapped`: A Boolean indicating whether the resulting image should be mipmapped. If  , then the   property in the returned descriptor is computed from   and  . If  , then   is  .
 
 ## See Also

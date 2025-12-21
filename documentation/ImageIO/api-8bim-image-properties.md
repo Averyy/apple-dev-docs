@@ -8,7 +8,7 @@ Metadata keys for the Adobe Photoshop image format.
 
 ### Dictionary
 - [let kCGImageProperty8BIMDictionary: CFString](kcgimageproperty8bimdictionary.md)
-  A dictionary of key-value pairs for an Adobe Photoshop image. See [`8BIM Image Properties`](8bim-image-properties.md).
+  A dictionary of key-value pairs for an Adobe Photoshop image.
 ### File Information
 - [let kCGImageProperty8BIMLayerNames: CFString](kcgimageproperty8bimlayernames.md)
   The layer names for an Adobe Photoshop file.

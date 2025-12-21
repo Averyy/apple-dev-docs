@@ -14,6 +14,11 @@ The player performing the action.
 var playerID: Player.ID? { get }
 ```
 
+## See Also
+
+- [var context: UInt64](updateequipmentaction/context.md)
+  An integer value that your game uses.
+
 
 ---
 

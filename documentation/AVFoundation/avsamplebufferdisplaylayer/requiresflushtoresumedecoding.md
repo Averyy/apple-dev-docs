@@ -23,9 +23,9 @@ var requiresFlushToResumeDecoding: Bool { get }
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`requiresFlushToResumeDecoding`](avsamplebuffervideorenderer/requiresflushtoresumedecoding.md) on the [`sampleBufferRenderer`](avsamplebufferdisplaylayer/samplebufferrenderer.md) instead.
 
-When an app enters a state where use of video decoder resources isn’t permissible, the value of this property changes to [`true`](https://developer.apple.com/documentation/swift/true) and the display layer’s status changes to a [`AVQueuedSampleBufferRenderingStatus.failed`](avqueuedsamplebufferrenderingstatus/failed.md) state.
+When an app enters a state where use of video decoder resources isn’t permissible, the value of this property changes to [`true`](https://developer.apple.com/documentation/Swift/true) and the display layer’s status changes to a [`AVQueuedSampleBufferRenderingStatus.failed`](avqueuedsamplebufferrenderingstatus/failed.md) state.
 
-To resume rendering sample buffers using the display layer after this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), apps must first reset the display layer’s status to [`AVQueuedSampleBufferRenderingStatus.unknown`](avqueuedsamplebufferrenderingstatus/unknown.md), which you do by calling the layer’s [`flush()`](avsamplebufferdisplaylayer/flush().md) method.
+To resume rendering sample buffers using the display layer after this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), apps must first reset the display layer’s status to [`AVQueuedSampleBufferRenderingStatus.unknown`](avqueuedsamplebufferrenderingstatus/unknown.md), which you do by calling the layer’s [`flush()`](avsamplebufferdisplaylayer/flush().md) method.
 
 This property isn’t key-value observable. Instead, observe changes to this property value by observing notifications of type [`AVSampleBufferDisplayLayerRequiresFlushToResumeDecodingDidChangeNotification`](avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification.md).
 

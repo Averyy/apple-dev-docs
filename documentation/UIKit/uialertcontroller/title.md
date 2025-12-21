@@ -29,6 +29,8 @@ The title string is displayed prominently in the alert or action sheet. You shou
   Descriptive text that provides more details about the reason for the alert.
 - [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
   The style of the alert controller.
+- [UIAlertController.Style](uialertcontroller/style.md)
+  Constants indicating the type of alert to display.
 
 
 ---

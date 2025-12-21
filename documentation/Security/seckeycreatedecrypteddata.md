@@ -22,12 +22,12 @@ func SecKeyCreateDecryptedData(_ key: SecKey, _ algorithm: SecKeyAlgorithm, _ ci
 
 ## Mentions
 
-- [Using Keys for Encryption](using-keys-for-encryption.md)
 - [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Using Keys for Encryption](using-keys-for-encryption.md)
 
 #### Return Value
 
-The decrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to free the data’s memory when you are done with it.
+The decrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the data’s memory when you are done with it.
 
 ## Parameters
 

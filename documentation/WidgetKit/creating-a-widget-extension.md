@@ -226,7 +226,7 @@ To explore WidgetKit code for the first time, refer to the following sample code
 
 - [`Building Widgets Using WidgetKit and SwiftUI`](building_widgets_using_widgetkit_and_swiftui.md) is the sample code project associated with the WWDC20 code-alongs [`Widgets Code-along, part 1: The adventure begins`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10034/), [`Widgets Code-along, part 2: Alternate timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10035/), and [`Widgets Code-along, part 3: Advancing timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10036/), where you learn how to build your first widget.
 - [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) expands the Emoji Rangers sample code project to include Lock Screen widgets, Live Activities, interactivity, and animations.
-- [`Fruta: Building a Feature-Rich App with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui) and [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample) are sample code projects that support widgets in addition to other technologies like [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`SwiftData`](https://developer.apple.com/documentation/SwiftData).
+- [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui) and [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample) are sample code projects that support widgets in addition to other technologies like [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`SwiftData`](https://developer.apple.com/documentation/SwiftData).
 
 ##### Create Multiple Widget Extensions
 
@@ -234,20 +234,14 @@ You can include multiple widget types in your widget extension, although your ap
 
 ## See Also
 
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
-  Offer widgets in additional contexts by adding support for various widget sizes.
-- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
-  Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
+- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [WidgetKit updates](../Updates/WidgetKit.md)
+  Learn about important changes in WidgetKit.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [@MainActor @preconcurrency protocol Widget](../SwiftUI/Widget.md)
-  The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [@MainActor @preconcurrency protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
   A container used to expose multiple widgets from a single widget extension.
-- [struct StaticConfiguration](staticconfiguration.md)
-  An object describing the content of a widget that has no user-configurable options.
-- [enum WidgetFamily](widgetfamily.md)
-  Values that define the widget’s size and shape.
 
 
 ---

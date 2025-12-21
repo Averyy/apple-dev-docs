@@ -20,6 +20,10 @@ Sets the resource value identified by a given resource key.
 mutating func setResourceValues(_ values: URLResourceValues) throws
 ```
 
+## Mentions
+
+- [Using the file system effectively](using-the-file-system-effectively.md)
+
 #### Discussion
 
 This method writes the new resource values out to the backing store. Attempts to set a read-only resource property or to set a resource property not supported by the resource are ignored and are not considered errors. This method is currently applicable only to URLs for file system resources.

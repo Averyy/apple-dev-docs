@@ -20,7 +20,7 @@ var isShutterSoundSuppressionSupported: Bool { get }
 
 #### Discussion
 
-In iOS, the value is [`true`](https://developer.apple.com/documentation/swift/true), except in jurisdictions where you can’t disable the shutter sound. On all other platforms, the value is always [`false`](https://developer.apple.com/documentation/swift/false).
+In iOS, the value is [`true`](https://developer.apple.com/documentation/Swift/true), except in jurisdictions where you can’t disable the shutter sound. On all other platforms, the value is always [`false`](https://developer.apple.com/documentation/Swift/false).
 
 If the output supports this feature, you can supress the shutter sound when capturing a photo using the [`isShutterSoundSuppressionEnabled`](avcapturephotosettings/isshuttersoundsuppressionenabled.md) property of [`AVCapturePhotoSettings`](avcapturephotosettings.md).
 

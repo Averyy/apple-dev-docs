@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Sets the render pipeline state object used by the command.
+Sets the render pipeline state for the command.
 
 **Availability**:
 - iOS 13.0+
@@ -22,9 +22,9 @@ func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 
 #### Discussion
 
-If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`true`](https://developer.apple.com/documentation/swift/true), do not call this method. The command gets the pipeline state object from the parent encoder when you execute the command.
+You don’t need to call this method if you create an indirect command buffer with its [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`true`](https://developer.apple.com/documentation/Swift/true). The command gets the pipeline state from the parent encoder when it runs.
 
-If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`false`](https://developer.apple.com/documentation/swift/false), you must set the pipeline state prior to encoding the drawing command.
+If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`false`](https://developer.apple.com/documentation/Swift/false), you need to set the pipeline state prior to encoding the drawing command.
 
 ## Parameters
 

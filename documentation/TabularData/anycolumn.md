@@ -84,25 +84,16 @@ struct AnyColumn
 ### Comparing Two Columns
 - [static func == (AnyColumn, AnyColumn) -> Bool](anycolumn/==(_:_:).md)
   Returns a Boolean that indicates whether the columns are equal.
-- [static func != (Self, Self) -> Bool](anycolumn/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Hashing a Column
 - [func hash(into: inout Hasher)](anycolumn/hash(into:).md)
   Hashes the essential components of the column by feeding them into a hasher.
-### Instance Properties
-- [var hashValue: Int](anycolumn/hashvalue.md)
-  The hash value.
 ### Default Implementations
-- [BidirectionalCollection Implementations](anycolumn/bidirectionalcollection-implementations.md)
-- [Collection Implementations](anycolumn/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](anycolumn/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](anycolumn/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](anycolumn/customstringconvertible-implementations.md)
 - [Equatable Implementations](anycolumn/equatable-implementations.md)
 - [Hashable Implementations](anycolumn/hashable-implementations.md)
-- [MutableCollection Implementations](anycolumn/mutablecollection-implementations.md)
 - [RandomAccessCollection Implementations](anycolumn/randomaccesscollection-implementations.md)
-- [Sequence Implementations](anycolumn/sequence-implementations.md)
 
 ## Relationships
 

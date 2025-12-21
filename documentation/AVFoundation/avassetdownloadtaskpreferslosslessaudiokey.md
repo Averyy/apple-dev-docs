@@ -20,7 +20,7 @@ let AVAssetDownloadTaskPrefersLosslessAudioKey: String
 
 #### Discussion
 
-By default, a download task prefers downloading lossy audio formats. Provide a Boolean value of [`true`](https://developer.apple.com/documentation/swift/true) to change this behavior.
+By default, a download task prefers downloading lossy audio formats. Provide a Boolean value of [`true`](https://developer.apple.com/documentation/Swift/true) to change this behavior.
 
 ## See Also
 

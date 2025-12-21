@@ -63,7 +63,7 @@ try await CSSearchableIndex.default().indexSearchableItems([csItem])
 
 #### Select the Correct Attributes for Your Default App
 
-In order for Apple Intelligence to summarize or prioritize a `CSSearchableItem`, set the following attributes, basedon the type of default app:
+In order for Apple Intelligence to summarize or prioritize a `CSSearchableItem`, set the following attributes, based on the type of default app:
 
 | Mail apps | Messaging apps | Audio Transcripts |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ In iOS 18.4 and later and macOS 15.4 and later, Apple Intelligence supports opti
 
 To summarize multiple  in a conversation, adopt  [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/Intents/INSearchForMessagesIntent) in your app. This class enables Apple Intelligence to fetch previously unread messages from a conversation. Provide a `domainIdentifier` when indexing these messages into Spotlight; Apple Intelligence uses the `domainIdentifier` to group messages into conversations.
 
-To summarize multiple  in a conversation, provide implementations of [`AssistantEntity(schema:)`](https://developer.apple.com/documentation/AppIntents/AssistantEntity(schema:)) in your app for the [`account`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/account), [`mailbox`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/mailbox), and [`message`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/message) entities; these entities are part of the [`App Intents`](https://developer.apple.com/documentation/AppIntents) API, and enable Apple Intelligence to fetch previously unread emails from the conversation. As with message summarization, provide `domainIdentifier` when indexing emails into Spotlight. Apple Intelligences uses the `domainIdentifier` to group emails into conversations. The `domainIdentifier` needs to be globally unique across accounts and mailboxes.
+To summarize multiple  in a conversation, provide implementations of [`AssistantEntity(schema:)`](https://developer.apple.com/documentation/AppIntents/AssistantEntity(schema:)) in your app for the [`account`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/account), [`mailbox`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/mailbox), and [`message`](https://developer.apple.com/documentation/AppIntents/AssistantSchemas/MailEntity/message) entities; these entities are part of the [`App Intents`](https://developer.apple.com/documentation/AppIntents) API, and enable Apple Intelligence to fetch previously unread emails from the conversation. As with message summarization, provide `domainIdentifier` when indexing emails into Spotlight. Apple Intelligence uses the `domainIdentifier` to group emails into conversations. The `domainIdentifier` needs to be globally unique across accounts and mailboxes.
 
 With this information, the email thread summarization process proceeds as follows:
 
@@ -100,7 +100,7 @@ Apple Intelligence only considers an item for summarization or prioritization wh
 - For summarization, the `CSSearchableItemFlagNeedsSummary` option is set to `true` and the content is at least `200` characters in length.
 - If you adopt [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/Intents/INSearchForMessagesIntent) to support multiple message summarization, Apple Intelligence uses the combined content length of the unread message history, which must be at least 200 characters to be eligible for summarization.
 - For prioritization, the `CSSearchableItemFlagNeedsPriority` option is set.
-- Mail or messages need [`authors`](cssearchableitemattributeset/1621608-authors.md), and the system doesn’t summarize the same [`CSSearchableItem`](CSSearchableItem.md) twice, even if you present the item to Core Spotlight again.
+- Mail or messages need [`authors`](CSSearchableItemAttributeSet/authors.md), and the system doesn’t summarize the same [`CSSearchableItem`](cssearchableitem.md) twice, even if you present the item to Core Spotlight again.
 
 > **Note**: Only mail or messages support priority classification, not audio transcripts. The `contentType` must conform to  one of the following types: `message` or `emailMessage`.
 

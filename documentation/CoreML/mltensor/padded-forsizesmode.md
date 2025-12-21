@@ -52,6 +52,13 @@ let symmetricPadding = x.padded(forSizes: [(0, 0), (2, 2)], mode: .symmetric)
 - `sizes`: An array of tuples describing the size to be inserted before and after each dimension.
 - `mode`: The mode of padding, etiher constant, reflection, or symmetric.
 
+## See Also
+
+- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](mltensor/padded(forsizes:with:).md)
+  Returns a tensor padded with the given constant according to the specified padding sizes.
+- [MLTensor.PaddingMode](mltensor/paddingmode.md)
+  A mode that dictates how a tensor is padded.
+
 
 ---
 

@@ -1,4 +1,4 @@
-# Ray Tracing with Acceleration Structures
+# Ray tracing with acceleration structures
 
 **Framework**: Metal
 
@@ -20,17 +20,17 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 
 ## Topics
 
-### Ray Tracing Samples
+### Ray tracing samples
 - [Accelerating ray tracing using Metal](accelerating-ray-tracing-using-metal.md)
   Implement ray-traced rendering using GPU-based parallel processing.
-- [Control the Ray Tracing Process Using Intersection Queries](control-the-ray-tracing-process-using-intersection-queries.md)
+- [Control the ray tracing process using intersection queries](control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
 - [Rendering reflections in real time using ray tracing](rendering-reflections-in-real-time-using-ray-tracing.md)
   Implement realistic real-time lighting by dynamically generating reflection maps by encoding a ray-tracing compute pass.
 - [Rendering a curve primitive in a ray tracing scene](rendering-a-curve-primitive-in-a-ray-tracing-scene.md)
   Implement ray traced rendering using GPU-based parallel processing.
-### Acceleration Structures
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+### Acceleration structures
+- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
@@ -47,15 +47,15 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
-  An object for encoding commands that build or refit acceleration structures.
+  Encodes commands that build and refit acceleration structures for a single pass.
 - [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
-  Options that describe which tasks you can perform on an acceleration structure and how the system performs those tasks.
+  Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 - [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
-### Acceleration Structures Passes
+### Acceleration structures passes
 - [class MTLAccelerationStructurePassDescriptor](mtlaccelerationstructurepassdescriptor.md)
 - [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor](mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md)
 - [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray.md)
-### Geometry Descriptors
+### Geometry descriptors
 - [class MTL4AccelerationStructureGeometryDescriptor](mtl4accelerationstructuregeometrydescriptor.md)
   Base class for all Metal 4 acceleration structure geometry descriptors.
 - [class MTLAccelerationStructureGeometryDescriptor](mtlaccelerationstructuregeometrydescriptor.md)
@@ -67,6 +67,7 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 - [class MTL4AccelerationStructureCurveGeometryDescriptor](mtl4accelerationstructurecurvegeometrydescriptor.md)
   Describes curve geometry suitable for ray tracing.
 - [class MTLAccelerationStructureCurveGeometryDescriptor](mtlaccelerationstructurecurvegeometrydescriptor.md)
+  A descriptor you configure with curve geometry for building acceleration structures.
 - [enum MTLCurveType](mtlcurvetype.md)
 - [enum MTLCurveBasis](mtlcurvebasis.md)
 - [enum MTLCurveEndCaps](mtlcurveendcaps.md)
@@ -74,7 +75,7 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
   Describes bounding-box geometry suitable for ray tracing.
 - [class MTLAccelerationStructureBoundingBoxGeometryDescriptor](mtlaccelerationstructureboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes to turn into an acceleration structure.
-### Motion Geometry Descriptors
+### Motion geometry descriptors
 - [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
   Describes motion triangle geometry, suitable for motion ray tracing.
 - [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
@@ -87,8 +88,8 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 - [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
 - [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
-  Geometry data for a specific keyframe to use in a moving object.
-### Instance Descriptors
+  Geometry data for a specific keyframe to use in a moving instance.
+### Instance descriptors
 - [struct MTLAccelerationStructureInstanceDescriptor](mtlaccelerationstructureinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure.
 - [struct MTLAccelerationStructureUserIDInstanceDescriptor](mtlaccelerationstructureuseridinstancedescriptor.md)
@@ -105,7 +106,7 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
   A description of an instance in an instanced geometry acceleration structure that the GPU can populate.
 - [struct MTLIndirectAccelerationStructureMotionInstanceDescriptor](mtlindirectaccelerationstructuremotioninstancedescriptor.md)
   A description of an instance in an acceleration structure that the GPU can populate, with motion data for the instance.
-### Intersection Function Tables
+### Intersection function tables
 - [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
 - [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
@@ -115,7 +116,7 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 - [struct MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature.md)
   Constants for specifying different types of custom intersection functions.
 - [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
-### Supporting Types
+### Supporting types
 - [typealias MTLAxisAlignedBoundingBox](mtlaxisalignedboundingbox-swift.typealias.md)
   The bounds for an axis-aligned bounding box.
 - [typealias MTLPackedFloat3](mtlpackedfloat3-swift.typealias.md)
@@ -125,19 +126,19 @@ Intersectors work with compute kernels on all GPUs, and with render shaders only
 - [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](mtlpackedfloat3make(_:_:_:).md)
   Returns a new packed vector with three floating-point values.
 - [struct MTL4BufferRange](mtl4bufferrange.md)
-- [func MTL4BufferRangeMake(UInt64, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
 
 ## See Also
 
-- [Render Passes](render-passes.md)
+- [Render passes](render-passes.md)
   Encode a render pass to draw graphics into an image.
-- [Compute Passes](compute-passes.md)
+- [Compute passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
-- [Machine-Learning Passes](machine-learning-passes.md)
+- [Machine-learning passes](machine-learning-passes.md)
   Add machine-learning model inference to your Metal app’s GPU workflow.
-- [Blit Passes](blit-passes.md)
+- [Blit passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
-- [Indirect Command Encoding](indirect-command-encoding.md)
+- [Indirect command encoding](indirect-command-encoding.md)
   Store draw commands in Metal buffers and run them at a later time on the GPU, either once or repeatedly.
 
 

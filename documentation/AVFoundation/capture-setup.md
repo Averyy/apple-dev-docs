@@ -25,17 +25,17 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 - [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
   Prompt the user to authorize access to the camera, microphone, and photo library.
 ### Capture sessions
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 - [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Capturing cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
 - [class AVCaptureSession](avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
@@ -48,8 +48,10 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 - [class AVCaptureConnection](avcaptureconnection.md)
   An object that represents a connection from a capture input to a capture output.
 ### Capture devices
-- [Choosing a Capture Device](choosing-a-capture-device.md)
+- [Choosing a capture device](choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
+- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+  Capture the optimal shot by providing automatic framing recommendations.
 - [class AVCaptureDevice](avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
 - [class AVCaptureDeviceInput](avcapturedeviceinput.md)
@@ -65,7 +67,7 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   A Core Animation layer that displays video from a camera device.
 - [class AVCaptureAudioPreviewOutput](avcaptureaudiopreviewoutput.md)
   A capture output that provides a preview of the captured audio.
-### Continuity camera
+### Continuity Camera
 - [Supporting Continuity Camera in your tvOS app](../AVKit/supporting-continuity-camera-in-your-tvos-app.md)
   Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
 - [Supporting Continuity Camera in your macOS app](supporting-continuity-camera-in-your-macos-app.md)
@@ -85,6 +87,39 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   A slider control that selects a value from a bounded range.
 - [class AVCaptureIndexPicker](avcaptureindexpicker.md)
   A control for selecting from a set of mutually exclusive values by index.
+### External display output
+- [class AVCaptureExternalDisplayConfiguration](avcaptureexternaldisplayconfiguration.md)
+  A class you use to specify a configuration to your external display configurator.
+- [class AVCaptureExternalDisplayConfigurator](avcaptureexternaldisplayconfigurator.md)
+  A configurator class allowing you to configure properties of an external display to match the camera’s active video format.
+### Timecode generation
+- [class AVCaptureTimecodeGenerator](avcapturetimecodegenerator.md)
+  Generates and synchronizes timecode data from various sources for precise video and audio synchronization.
+- [protocol AVCaptureTimecodeGeneratorDelegate](avcapturetimecodegeneratordelegate.md)
+  A protocol for receiving real-time timecode updates and error notifications from a timecode generator.
+- [AVCaptureTimecodeGenerator.SynchronizationStatus](avcapturetimecodegenerator/synchronizationstatus.md)
+  Constants defining the synchronization status of a timecode generator .
+- [AVCaptureTimecode.Source](avcapturetimecode/source.md)
+  Describes a timecode source that a timecode generator can synchronize to.
+- [AVCaptureTimecode.SourceType](avcapturetimecode/sourcetype-swift.enum.md)
+  Defines possible sources for generating timecode in using a timecode generator.
+- [struct AVCaptureTimecode](avcapturetimecode.md)
+  This structure represents a timecode, adhering to SMPTE standards, which define precise time information and associated timestamps for video or audio synchronization.
+- [static func advanced(AVCaptureTimecode, by: Int64) -> AVCaptureTimecode](avcapturetimecode/advanced(_:by:).md)
+  Generates a new timecode by adding a specified number of frames to the given timecode, handling overflow for seconds, minutes, and hours.
+- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, associatedWithPresentationTimeStamp: CMTime) -> Unmanaged<CMSampleBuffer>?](avcapturetimecode/createmetadatasamplebuffer(from:associatedwithpresentationtimestamp:).md)
+  Creates a sample buffer containing Timecode Media Description metadata for integration with a video track.
+- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, forDuration: CMTime) -> Unmanaged<CMSampleBuffer>?](avcapturetimecode/createmetadatasamplebuffer(from:forduration:).md)
+  Creates a sample buffer containing Timecode Media Description metadata for a specified duration.
+### External synchronization
+- [class AVExternalSyncDevice](avexternalsyncdevice.md)
+  An external sync device connected to a host device that can be used to drive the timing of an internal component, such as a camera sensor.
+- [protocol AVExternalSyncDeviceDelegate](avexternalsyncdevicedelegate.md)
+  Defines an interface for delegates of [`AVCaptureDeviceInput`](avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
+- [enum AVExternalSyncDeviceStatus](avexternalsyncdevicestatus.md)
+  Connection state of an external sync device
+- [AVExternalSyncDevice.DiscoverySession](avexternalsyncdevice/discoverysession.md)
+  A means of discovering and monitoring connection / disconnection of external sync devices to the host.
 
 ## See Also
 

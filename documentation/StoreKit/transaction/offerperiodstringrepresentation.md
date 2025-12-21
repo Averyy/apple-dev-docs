@@ -28,8 +28,10 @@ This value is present only for subscriptions that include an offer.
 
 ## See Also
 
-- [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](transaction/advancedcommerceinfo-swift.property.md)
-  Metadata for transactions that use the Advanced Commerce API.
+- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](transaction/currententitlement(for:).md)
+  Gets the latest transactions that entitle the customer to a specified product.
+- [static func currentEntitlements(for: String) -> Transaction.Transactions](transaction/currententitlements(for:).md)
+  Gets the transactions that entitle the user to items purchased under a product ID.
 
 
 ---

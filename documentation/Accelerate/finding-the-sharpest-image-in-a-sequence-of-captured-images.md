@@ -27,7 +27,7 @@ The 3 x 3 Laplacian kernel that this sample uses reports a lot of noise if appli
 captureSession.sessionPreset = .hd1280x720
 ```
 
-To learn more about configuring a capture session, see [`Setting Up a Capture Session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session).
+To learn more about configuring a capture session, see [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session).
 
 ##### Define the Photo Settings
 

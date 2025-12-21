@@ -6,10 +6,10 @@
 Returns the set of captions that are present in the given group but were not present in any group previously vended by calls to next().
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -24,6 +24,11 @@ An array of AVCaption objects.
 ## Parameters
 
 - `captionGroup`: The group containing the captions of interest.
+
+## See Also
+
+- [func next() async throws -> Payload?](avassetreaderoutput/provider/next.md)
+  Retruns the next piece of media data.
 
 
 ---

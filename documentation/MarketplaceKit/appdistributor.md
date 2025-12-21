@@ -30,8 +30,6 @@ Apps on alternative app marketplaces need to use APIs that vary from apps on the
 - A social gaming network other than [`Game Center`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center) unless your app is also on the App Store.
 - [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) to download large files in the background rather than [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/).
 
-Only use [`StoreKit`](https://developer.apple.com/documentation/StoreKit) on the App Store.
-
 To observe API differences, check the value of the app distributor’s static ([`current`](appdistributor/current.md)) property to determine the installation source:
 
 | App distributor case | Installation source |
@@ -41,6 +39,8 @@ To observe API differences, check the value of the app distributor’s static ([
 | [`AppDistributor.marketplace(_:)`](appdistributor/marketplace(_:).md) | Alternative app marketplace; the argument `String` identifies the marketplace bundle ID |
 | [`AppDistributor.web`](appdistributor/web.md) | The developer’s website |
 | [`AppDistributor.other`](appdistributor/other.md) | Enterprise or education developer programs |
+
+API availability varies depending on the source, so your app needs to check the current source at each launch — not just at the first launch — and adjust the APIs it uses accordingly.
 
 For more information, see [`Distributing your app on an alternative app marketplace`](distributing-your-app-on-an-alternative-marketplace.md).
 

@@ -52,7 +52,7 @@ typealias nw_listener_t = any OS_nw_listener
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 - [func nw_listener_set_advertise_descriptor(nw_listener_t, nw_advertise_descriptor_t?)](nw_listener_set_advertise_descriptor(_:_:).md)
   Sets a Bonjour service that advertises the listener on the local network.
 - [typealias nw_advertise_descriptor_t](nw_advertise_descriptor_t.md)

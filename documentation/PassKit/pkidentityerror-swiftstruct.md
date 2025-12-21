@@ -21,18 +21,16 @@ struct PKIdentityError
 ## Topics
 
 ### Inspecting an error
-- [var code: Code](../passkit_apple_pay_and_wallet/pkidentityerror/3931637-code.md)
-  The error code.
 - [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
 - [Error constants](error-constants.md)
   Error code constants for identity operations.
-- [var errorCode: Int](../passkit_apple_pay_and_wallet/pkidentityerror/3931638-errorcode.md)
-  The integer error code.
+- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+  The error code within the given domain.
 - [var userInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkidentityerror/3931651-userinfo.md)
   The user information for the error.
-- [var errorUserInfo: [String : Any]](../passkit_apple_pay_and_wallet/pkidentityerror/3931640-erroruserinfo.md)
-  The error user information dictionary for the error.
+- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+  The default user-info dictionary.
 ### Comparing errors
 - [static func == (PKIdentityError, PKIdentityError) -> Bool](../passkit_apple_pay_and_wallet/pkidentityerror/3931635.md)
   Returns a Boolean value that indicates whether two values are equal.

@@ -21,7 +21,7 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-You can instruct the display link to stop sending notifications to the delegate by setting the property to [`true`](https://developer.apple.com/documentation/swift/true). The property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+You can instruct the display link to stop sending notifications to the delegate by setting the property to [`true`](https://developer.apple.com/documentation/Swift/true). The property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

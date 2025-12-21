@@ -6,7 +6,7 @@ Inform Siri of reservations made from your app.
 
 #### Overview
 
-Siri Event Suggestions integrates reservations made in your app seamlessly with the system, sharing the information with certain apps and features, such as Calendar, Maps, Spotlight, and the Lock Screen. These apps and features can use the information to remind the user to check-in for a flight, get directions to a hotel reservation, return a rental car, or any of several other options. For a complete list of supported reservation types, such as flight, hotel, and car rental, see doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions. Siri learns about reservations made from your app from donations that your app makes to Siri.
+Siri Event Suggestions integrates reservations made in your app seamlessly with the system, sharing the information with certain apps and features, such as Calendar, Maps, Spotlight, and the Lock Screen. These apps and features can use the information to remind the user to check-in for a flight, get directions to a hotel reservation, return a rental car, or any of several other options. For a complete list of supported reservation types, such as flight, hotel, and car rental, see [`Siri Event Suggestions`](siri-event-suggestions.md). Siri learns about reservations made from your app from donations that your app makes to Siri.
 
 ##### Donate Reservations at the Right Time
 
@@ -52,12 +52,12 @@ Siri may launch your app with an [`NSUserActivity`](https://developer.apple.com/
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
 - [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Intent Phrases](intent-phrases.md)
+  The keys that you include in your global vocabulary file to show how users engage your app from Siri.
+- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+  Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 
 ---

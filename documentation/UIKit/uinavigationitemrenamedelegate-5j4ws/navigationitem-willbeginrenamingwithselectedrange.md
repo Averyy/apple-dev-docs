@@ -29,6 +29,7 @@ UIKit calls this method when the rename process begins. Implement this method to
 
 ## Parameters
 
+- `_`: The navigation item with the changing title.
 - `suggestedTitle`: The initial text to appear in the rename text field.
 - `selectedRange`: The selected range of the initial text in the rename text field.
 

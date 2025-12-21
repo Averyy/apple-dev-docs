@@ -6,11 +6,11 @@
 Creates a 3D chart composed of a series of marks.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,6 +28,12 @@ This initializer wraps the data that you provide as input in an implicit [`ForEa
 - `data`: A collection of data.
 - `id`: A key path that represents a property of each data element   that can act as a unique identifier for that element. Ensure that   this property conforms to the     protocol.
 - `content`: The mark that the chart should draw for each element   in the data collection.
+
+## See Also
+
+- [init<Data, C>(Data, content: (Data.Element) -> C)](chart3d/init(_:content:).md)
+  Creates a 3D chart composed of a series of identifiable marks.
+- [init(content: () -> Content)](chart3d/init(content:).md)
 
 
 ---

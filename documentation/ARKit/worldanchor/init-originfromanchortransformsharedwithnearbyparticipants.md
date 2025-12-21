@@ -6,7 +6,7 @@
 Initialize a world anchor with a transform and indicate if it should be shared with nearby participants.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

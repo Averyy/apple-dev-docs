@@ -4,10 +4,10 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -21,8 +21,6 @@ struct ReferenceDisplayModeStatusDidChangeMessage
 - [init(screen: UIScreen)](uiscreen/referencedisplaymodestatusdidchangemessage/init(screen:).md)
 ### Instance Properties
 - [var screen: UIScreen](uiscreen/referencedisplaymodestatusdidchangemessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIScreen.ReferenceDisplayModeStatusDidChangeMessage) -> Notification](uiscreen/referencedisplaymodestatusdidchangemessage/makenotification(_:).md)
 
 ## Relationships
 

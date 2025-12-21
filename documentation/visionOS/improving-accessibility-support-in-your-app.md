@@ -71,7 +71,7 @@ Motion effects on any immersive device can be jarring, even for people who arenâ
 
 The Reduce Motion system setting lets you know when to provide alternatives for all of your appâ€™s motion effects. Access this setting using the [`accessibilityReduceMotion`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/accessibilityReduceMotion) environment variable in SwiftUI or with the [`isReduceMotionEnabled`](https://developer.apple.com/documentation/UIKit/UIAccessibility/isReduceMotionEnabled) property in UIKit. When the setting is `true`, provide suitable alternatives for motion effects or eliminate them altogether. For example, show a static snapshot of the ocean instead of a video.
 
-For more information, see [`Motion`](https://developer.apple.com/design/Human-Interface-Guidelines/motion).
+For more information, see [`Motion`](https://developer.apple.com/design/Human-Interface-Guidelines/motion#visionOS).
 
 ##### Include Captions for Audio Content
 

@@ -35,12 +35,12 @@ Connections are always one-to-one or one-to-many. This method returns an empty a
 
 ## See Also
 
+- [class AVAudioConnectionPoint](avaudioconnectionpoint.md)
+  A representation of either a source or destination connection point in the audio engine.
+- [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:format:).md)
+  Establishes a connection between a source node and multiple destination nodes.
 - [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
   Returns connection information about a node’s input bus.
-- [var bus: AVAudioNodeBus](avaudioconnectionpoint/bus.md)
-  The bus on the node in the connection point.
-- [var node: AVAudioNode?](avaudioconnectionpoint/node.md)
-  The node in the connection point.
 
 
 ---

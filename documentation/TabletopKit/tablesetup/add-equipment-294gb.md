@@ -4,13 +4,27 @@
 **Kind**: method
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 mutating func add<E>(equipment: E) where E : EntityEquipment, E.State : BitwiseCopyable, E.State : CustomEquipmentState
 ```
+
+## See Also
+
+- [func add(equipment: some Equipment)](tablesetup/add(equipment:)-29pef.md)
+  Add the given equipment to the table setup.
+- [func add(equipment: some EntityEquipment)](tablesetup/add(equipment:)-24tv6.md)
+- [func add<E>(equipment: E)](tablesetup/add(equipment:)-7qwj2.md)
+  Add the given equipment to the table setup.
+- [func add(equipment: some Sequence)](tablesetup/add(equipment:)-4k6m6.md)
+  Add the given equipment to the table setup.
+- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-3d7h9.md)
+- [func add(equipment: some Sequence)](tablesetup/add(equipment:)-9syh2.md)
+- [func add<E>(equipment: some Sequence)](tablesetup/add(equipment:)-9h887.md)
+  Add the given equipment to the table setup.
 
 
 ---

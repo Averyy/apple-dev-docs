@@ -6,7 +6,7 @@
 A value that represents whether the scene is currently snapped to a physical surface or not.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

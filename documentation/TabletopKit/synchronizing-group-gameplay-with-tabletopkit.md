@@ -5,8 +5,8 @@
 Maintain game state across multiple players in a race to capture all the coins.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -162,7 +162,7 @@ On gesture update, `updateGestureInteraction` modifies the local slingshot visua
     //...
 ```
 
-On gesture end, `updateGestureInteraction` calculates the change in gesture position, calls `TabletopKit/startInteraction(onEquipmentID:)` for the interaction’s equipment, and adds it to the programmatic player interaction dictionary of `Game`. When gesture handling is complete, TabletopKit moves the player’s piece.
+On gesture end, `updateGestureInteraction` calculates the change in gesture position, calls [`startInteraction(onEquipmentID:)`](tabletopgame/startinteraction(onequipmentid:).md) for the interaction’s equipment, and adds it to the programmatic player interaction dictionary of `Game`. When gesture handling is complete, TabletopKit moves the player’s piece.
 
 ```swift
     //...
@@ -230,7 +230,7 @@ During the interaction, the app finds a target programmatic player interaction f
     //...
 ```
 
-At the end of the interaction, `updateProgrammaticInteraction` calls into `endJump`. Adding a [`MoveEquipmentAction`](moveequipmentaction.md) object to the active `TabletopInteraction` moves the player. If the target lands on a lily pad, the sample initiates the sinking animation by calling  `TabletopKit/startInteraction(onEquipmentID:)` with the lily pad’s equipment ID. If the target lands on an allowed destination with a coin, `endJump` adds a `CollectCoin` action to the active `TabletopInteraction`. The app then removes the interaction from the `programmaticPlayerInteractions` dictionary.
+At the end of the interaction, `updateProgrammaticInteraction` calls into `endJump`. Adding a [`MoveEquipmentAction`](moveequipmentaction.md) object to the active `TabletopInteraction` moves the player. If the target lands on a lily pad, the sample initiates the sinking animation by calling  [`startInteraction(onEquipmentID:)`](tabletopgame/startinteraction(onequipmentid:).md) with the lily pad’s equipment ID. If the target lands on an allowed destination with a coin, `endJump` adds a `CollectCoin` action to the active `TabletopInteraction`. The app then removes the interaction from the `programmaticPlayerInteractions` dictionary.
 
 ```swift
     //...
@@ -318,7 +318,7 @@ class GameObserver: TabletopGame.Observer {
 
 ## See Also
 
-- [Creating tabletop games](tabletopkitsample.md)
+- [Creating tabletop games](creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
 - [class TabletopGame](tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.

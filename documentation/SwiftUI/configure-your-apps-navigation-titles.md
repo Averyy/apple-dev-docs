@@ -6,7 +6,7 @@ Use a navigation title to display the current navigation state of an interface.
 
 #### Overview
 
-On iOS and watchOS, when a view is navigated to inside of a navigation stack, that view’s title is displayed in the navigation bar. On iPadOS, the primary destination’s navigation title is reflected as the window’s title in the App Switcher. Similarly on macOS, the primary destination’s title is used as the window title in the titlebar, Windows menu and Mission Control.
+On iOS and watchOS, when a view is navigated to inside of a navigation stack, the navigation bar displays that view’s title. On iPadOS, the primary destination’s navigation title is reflected as the window’s title in the App Switcher. Similarly on macOS, the system uses the primary destination’s title as the window title in the titlebar, Windows menu and Mission Control.
 
 In its simplest form, you can provide a string or a localized string key to a navigation title modifier directly.
 
@@ -42,7 +42,7 @@ ContentView()
 
 You can provide a text binding to the navigation title modifier and SwiftUI will automatically configure the toolbar to allow editing of the navigation title on iOS or macOS. SwiftUI automatically syncs the navigation title with the value of the string binding provided to the text field.
 
-You can provide a string binding to the navigation title to configure the title’s text field. SwiftUI will automatically place a rename action in the titl menu alongside the actions originating from your app’s commands.
+You can provide a string binding to the navigation title to configure the title’s text field. SwiftUI will automatically place a rename action in the title menu alongside the actions originating from your app’s commands.
 
 ```swift
 ContentView()

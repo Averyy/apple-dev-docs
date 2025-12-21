@@ -123,20 +123,8 @@ enum DigitizersUsage
 - [HIDUsage.DigitizersUsage.width](hidusage/digitizersusage/width.md)
 - [HIDUsage.DigitizersUsage.xTilt](hidusage/digitizersusage/xtilt.md)
 - [HIDUsage.DigitizersUsage.yTilt](hidusage/digitizersusage/ytilt.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/digitizersusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/digitizersusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.DigitizersUsage.RawValue](hidusage/digitizersusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/digitizersusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/digitizersusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/digitizersusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

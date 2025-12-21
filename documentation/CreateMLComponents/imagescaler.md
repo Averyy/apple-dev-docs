@@ -34,16 +34,6 @@ struct ImageScaler
 ### Performing the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) throws -> CIImage](imagescaler/applied(to:eventhandler:).md)
   Perform the image scaler operation on the input pixelBuffer.
-### Type Aliases
-- [ImageScaler.Input](imagescaler/input.md)
-  The input type.
-- [ImageScaler.Output](imagescaler/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](imagescaler/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](imagescaler/decodable-implementations.md)
-- [Encodable Implementations](imagescaler/encodable-implementations.md)
-- [Transformer Implementations](imagescaler/transformer-implementations.md)
 
 ## Relationships
 

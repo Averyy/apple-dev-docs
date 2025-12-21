@@ -31,6 +31,8 @@ With a Pay As You Go payment mode, subscribers pay a discounted price for each b
   A payment mode of a product discount that indicates a free trial.
 - [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
   A payment mode of a product discount that applies the discount up front.
+- [static var oneTime: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/onetime.md)
+  A payment mode for a consumable, non-consumable, or non-renewing subscription offer that indicates a one-time purchase.
 
 
 ---

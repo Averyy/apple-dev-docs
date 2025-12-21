@@ -3,7 +3,7 @@
 **Framework**: ExtensionKit  
 **Kind**: struct
 
-An object that holds configuration options for an extension scene.
+An object you use to configure an app extension that provides a custom UI.
 
 **Availability**:
 - iOS 16.0+
@@ -21,14 +21,18 @@ An object that holds configuration options for an extension scene.
 @preconcurrency struct AppExtensionSceneConfiguration
 ```
 
+#### Overview
+
+Use this type to provide the configuration details for an [`AppExtension`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtension) type when the corresponding app extension provides a custom UI.
+
 ## Topics
 
-### Creating Configuration Files
+### Creating the configuration
 - [init<Content>(@autoclosure () -> Content)](appextensionsceneconfiguration/init(_:).md)
   Creates a scene configuration from a closure.
 - [init<Content, Configuration>(@autoclosure () -> Content, configuration: Configuration?)](appextensionsceneconfiguration/init(_:configuration:).md)
   Creates a scene configuration object from a closure and extension configuration.
-### Managing the Connection
+### Accepting a connection to the host app
 - [func accept(connection: NSXPCConnection) -> Bool](appextensionsceneconfiguration/accept(connection:).md)
   A closure the framework calls when a host tries to connect to this extension.
 
@@ -38,15 +42,6 @@ An object that holds configuration options for an extension scene.
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [protocol AppExtensionScene](appextensionscene.md)
-  A protocol that defines the user interface for an application extension.
-- [struct AppExtensionSceneBuilder](appextensionscenebuilder.md)
-  A custom parameter attribute that constructs extension scenes from closures.
-- [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
-  A primitive you use to compose specialized app extension points.
 
 
 ---

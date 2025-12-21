@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting identity information.
+A message that tells people why the app is requesting identity information.
 
 **Availability**:
 - iOS 16.0+
@@ -19,7 +19,7 @@ For more information about requesting identity information, see [`Requesting ide
 ## See Also
 
 - [NSFinancialDataUsageDescription](information-property-list/nsfinancialdatausagedescription.md)
-  A message that tells the user why the app is requesting access to financial data stored in Wallet.
+  A message that tells people why the app is requesting access to financial data stored in Wallet.
 
 
 ---

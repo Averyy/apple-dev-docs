@@ -35,27 +35,8 @@ struct PersistentIdentifier
   The identifier of the store that contains the associated model.
 - [var entityName: String](persistentidentifier/entityname.md)
   The entity name for the associated model.
-### Encoding and decoding
-- [func encode(to: any Encoder) throws](persistentidentifier/encode(to:).md)
-  Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](persistentidentifier/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Hashing
-- [func hash(into: inout Hasher)](persistentidentifier/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing identifiers
-- [static func == (PersistentIdentifier, PersistentIdentifier) -> Bool](persistentidentifier/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func < (PersistentIdentifier, PersistentIdentifier) -> Bool](persistentidentifier/_(_:_:).md)
-  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-### Instance Properties
-- [var hashValue: Int](persistentidentifier/hashvalue.md)
-  The hash value.
 ### Type Methods
 - [static func identifier<T>(for: String, entityName: String, primaryKey: T) throws -> PersistentIdentifier](persistentidentifier/identifier(for:entityname:primarykey:).md)
-### Default Implementations
-- [Comparable Implementations](persistentidentifier/comparable-implementations.md)
-- [Equatable Implementations](persistentidentifier/equatable-implementations.md)
 
 ## Relationships
 

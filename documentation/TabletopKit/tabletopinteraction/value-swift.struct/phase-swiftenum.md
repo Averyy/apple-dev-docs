@@ -16,7 +16,7 @@ enum Phase
 
 ## Topics
 
-### Enumeration Cases
+### Phases
 - [TabletopInteraction.Value.Phase.cancelled](tabletopinteraction/value-swift.struct/phase-swift.enum/cancelled.md)
 - [TabletopInteraction.Value.Phase.ended](tabletopinteraction/value-swift.struct/phase-swift.enum/ended.md)
 - [TabletopInteraction.Value.Phase.started](tabletopinteraction/value-swift.struct/phase-swift.enum/started.md)

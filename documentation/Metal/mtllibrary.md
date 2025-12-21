@@ -21,37 +21,37 @@ protocol MTLLibrary : NSObjectProtocol, Sendable
 
 ## Mentions
 
-- [Building a Shader Library by Precompiling Source Files](building-a-shader-library-by-precompiling-source-files.md)
+- [Building a shader library by precompiling source files](building-a-shader-library-by-precompiling-source-files.md)
 - [Logging shader debug messages](logging-shader-debug-messages.md)
 
 #### Overview
 
-A [`MTLLibrary`](mtllibrary.md) object contains Metal shading language source code compiled during an app’s build process or at runtime from a text string.
+An [`MTLLibrary`](mtllibrary.md) instance contains Metal shading language source code compiled during an app’s build process or at runtime from a text string.
 
-Don’t implement this protocol yourself; instead, use the library creation methods provided by the [`MTLDevice`](mtldevice.md) protocol. To create a [`MTLLibrary`](mtllibrary.md) from a precompiled Metal library binary, call one of these [`MTLDevice`](mtldevice.md) methods:
+Don’t implement this protocol yourself; instead, use the library creation methods provided by the [`MTLDevice`](mtldevice.md) protocol. To create an [`MTLLibrary`](mtllibrary.md) from a precompiled Metal library binary, call one of these [`MTLDevice`](mtldevice.md) methods:
 
 - [`makeDefaultLibrary()`](mtldevice/makedefaultlibrary().md)
 - [`makeLibrary(filepath:)`](mtldevice/makelibrary(filepath:).md)
 - [`makeLibrary(data:)`](mtldevice/makelibrary(data:).md)
 
-To create a [`MTLLibrary`](mtllibrary.md) by compiling source code at runtime, call one of these [`MTLDevice`](mtldevice.md) methods:
+To create an [`MTLLibrary`](mtllibrary.md) by compiling source code at runtime, call one of these [`MTLDevice`](mtldevice.md) methods:
 
 - [`makeLibrary(source:options:completionHandler:)`](mtldevice/makelibrary(source:options:completionhandler:).md)
 - [`makeLibrary(source:options:)`](mtldevice/makelibrary(source:options:).md)
 
 ## Topics
 
-### Querying Basic Library Attributes
+### Querying basic library attributes
 - [var installName: String?](mtllibrary/installname.md)
   The installation name for a dynamic library.
 - [var type: MTLLibraryType](mtllibrary/type.md)
   The library’s basic type.
-### Querying Library Contents
+### Querying library contents
 - [var functionNames: [String]](mtllibrary/functionnames.md)
   The names of all public functions in the library.
-### Creating Shader Function Objects
+### Creating shader function instances
 - [func makeFunction(name: String) -> (any MTLFunction)?](mtllibrary/makefunction(name:).md)
-  Creates an object that represents a shader function in the library.
+  Creates an instance that represents a shader function in the library.
 - [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
   Asynchronously creates a specialized shader function.
 - [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)
@@ -60,19 +60,19 @@ To create a [`MTLLibrary`](mtllibrary.md) by compiling source code at runtime, c
   Asynchronously creates an object representing a shader function, using the specified descriptor.
 - [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makefunction(descriptor:).md)
   Synchronously creates an object representing a shader function, using the specified descriptor.
-### Creating Intersection Function Objects
+### Creating intersection function instances
 - [func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makeintersectionfunction(descriptor:completionhandler:).md)
   Asynchronously creates an object representing a ray-tracing intersection function, using the specified descriptor.
 - [func makeIntersectionFunction(descriptor: MTLIntersectionFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makeintersectionfunction(descriptor:).md)
   Synchronously creates an object representing a ray-tracing intersection function, using the specified descriptor.
-### Identifying the Library
+### Identifying the library
 - [var device: any MTLDevice](mtllibrary/device.md)
   The Metal device object that created the library.
 - [var label: String?](mtllibrary/label.md)
   A string that identifies the library.
 ### Instance Methods
 - [func reflection(functionName: String) -> MTLFunctionReflection?](mtllibrary/reflection(functionname:).md)
-  Returns a reflection object for a matching function name in this library instance.
+  Retrieves reflection information for a function in the library.
 
 ## Relationships
 

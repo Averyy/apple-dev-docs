@@ -26,11 +26,6 @@ enum State
   Information about an applet instance associated with a specific credential.
 - [CredentialSession.Credential.State.installationFailed](credentialsession/credential/state-swift.enum/installationfailed.md)
   The credential installation failed.
-### Operators
-- [static func == (CredentialSession.Credential.State, CredentialSession.Credential.State) -> Bool](credentialsession/credential/state-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](credentialsession/credential/state-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

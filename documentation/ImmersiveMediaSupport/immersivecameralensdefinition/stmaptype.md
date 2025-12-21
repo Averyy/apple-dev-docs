@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: enum
 
-A value representing a camera lens projection type.
+A value that represents a camera lens projection type.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,26 +17,15 @@ enum STMapType
 
 #### Overview
 
-This value can be used for STMap generation output when using the `ImmersiveLensDefinition/generateSTMap(device:cameraEye:stmapType:into:)` function.
+Use this value for STMap generation output when using the `ImmersiveLensDefinition/generateSTMap(device:cameraEye:stmapType:into:)` function.
 
 ## Topics
 
-### Operators
-- [static func == (ImmersiveCameraLensDefinition.STMapType, ImmersiveCameraLensDefinition.STMapType) -> Bool](immersivecameralensdefinition/stmaptype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ImmersiveCameraLensDefinition.STMapType.equidistant](immersivecameralensdefinition/stmaptype/equidistant.md)
-  A value indicating an equidistant lens projection type.
+  A value that represents an equidistant lens projection type.
 - [ImmersiveCameraLensDefinition.STMapType.equirectangular](immersivecameralensdefinition/stmaptype/equirectangular.md)
-  A value indicating an equirectangular lens projection type.
-### Instance Properties
-- [var hashValue: Int](immersivecameralensdefinition/stmaptype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](immersivecameralensdefinition/stmaptype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](immersivecameralensdefinition/stmaptype/equatable-implementations.md)
+  A value that represents an equirectangular lens projection type.
 
 ## Relationships
 

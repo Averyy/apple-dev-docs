@@ -33,20 +33,19 @@ This object may automatically suspend coordinated playback when a system state c
 
 ## Topics
 
-### Accessing the Player
+### Accessing the player
 - [var player: AVPlayer?](avplayerplaybackcoordinator/player.md)
   A player that participates in coordinated playback.
-### Configuring the Delegate
+### Configuring the delegate
 - [var delegate: (any AVPlayerPlaybackCoordinatorDelegate)?](avplayerplaybackcoordinator/delegate.md)
   A delegate object for the playback coordinator.
 - [protocol AVPlayerPlaybackCoordinatorDelegate](avplayerplaybackcoordinatordelegate.md)
   A protocol that defines the methods to implement to participate in playback coordination.
-### Instance Properties
-- [var playbackCoordinationMedium: AVPlaybackCoordinationMedium?](avplayerplaybackcoordinator/playbackcoordinationmedium.md)
-  The AVPlaybackCoordinationMedium this playback coordinator is connected to.
-### Instance Methods
+### Managing coordination
 - [func coordinate(using: AVPlaybackCoordinationMedium?) throws](avplayerplaybackcoordinator/coordinate(using:).md)
   Connects the playback coordinator to the coordination medium
+- [var playbackCoordinationMedium: AVPlaybackCoordinationMedium?](avplayerplaybackcoordinator/playbackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium this playback coordinator is connected to.
 
 ## Relationships
 
@@ -66,12 +65,13 @@ This object may automatically suspend coordinated playback when a system state c
 
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting Coordinated Media Playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [class AVPlaybackCoordinator](avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
 
 
 ---

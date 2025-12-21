@@ -75,12 +75,11 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 
 ## Topics
 
-### Initializing a New Cursor
+### Initializing a new cursor
 - [init(image: UIImage, hotSpot: NSPoint)](nscursor/init(image:hotspot:).md)
   Initializes a cursor with the given image and hot spot.
-- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
-  Initializes the cursor with the specified image and hot spot.
-### Setting Cursor Attributes
+- [init(coder: NSCoder)](nscursor/init(coder:).md)
+### Setting cursor attributes
 - [var image: UIImage](nscursor/image.md)
   The cursor’s image.
 - [var hotSpot: NSPoint](nscursor/hotspot.md)
@@ -91,7 +90,7 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
   Negates an earlier call to [`hide()`](nscursor/hide().md) by showing the current cursor.
 - [class func setHiddenUntilMouseMoves(Bool)](nscursor/sethiddenuntilmousemoves(_:).md)
   Sets whether the cursor is hidden until the mouse moves.
-### Controlling Which Cursor Is Current
+### Controlling which cursor is current
 - [class func pop()](nscursor/pop-swift.type.method.md)
   Pops the current cursor off the top of the stack.
 - [func pop()](nscursor/pop-swift.method.md)
@@ -100,19 +99,7 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
   Puts the receiver on top of the cursor stack and makes it the current cursor.
 - [func set()](nscursor/set.md)
   Makes the receiver the current cursor.
-- [func mouseEntered(with: NSEvent)](nscursor/mouseentered(with:).md)
-  Automatically sent to the receiver when the cursor enters a cursor rectangle owned by the receiver.
-- [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)
-  Specifies whether the receiver accepts [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) events.
-- [var isSetOnMouseEntered: Bool](nscursor/issetonmouseentered.md)
-  A Boolean value indicating whether the receiver becomes current on receiving a [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) message.
-- [func mouseExited(with: NSEvent)](nscursor/mouseexited(with:).md)
-  Automatically sent to the receiver when the cursor exits a cursor rectangle owned by the receiver.
-- [func setOnMouseExited(Bool)](nscursor/setonmouseexited(_:).md)
-  Sets whether the receiver accepts [`mouseExited(with:)`](nscursor/mouseexited(with:).md) events.
-- [var isSetOnMouseExited: Bool](nscursor/issetonmouseexited.md)
-  A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message.
-### Retrieving Cursor Instances
+### Retrieving cursor instances
 - [class var current: NSCursor](nscursor/current.md)
   Returns the application’s current cursor.
 - [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
@@ -133,12 +120,18 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
   Returns a cursor indicating that the current operation will result in a link action.
 - [class var iBeam: NSCursor](nscursor/ibeam.md)
   Returns a cursor that looks like a capital I with a tiny crossbeam at its middle.
+- [class var iBeamCursorForVerticalLayout: NSCursor](nscursor/ibeamcursorforverticallayout.md)
+  Returns the cursor for editing vertical layout text.
 - [class var openHand: NSCursor](nscursor/openhand.md)
   Returns the open-hand system cursor.
 - [class var operationNotAllowed: NSCursor](nscursor/operationnotallowed.md)
   Returns the operation not allowed cursor.
 - [class var pointingHand: NSCursor](nscursor/pointinghand.md)
   Returns the pointing-hand system cursor.
+- [class var zoomIn: NSCursor](nscursor/zoomin.md)
+  Returns the zoom-in cursor.
+- [class var zoomOut: NSCursor](nscursor/zoomout.md)
+  Returns the zoom-out cursor.
 - [class var resizeDown: NSCursor](nscursor/resizedown.md)
   Returns the resize-down system cursor.
 - [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
@@ -151,39 +144,36 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
   Returns the resize-up system cursor.
 - [class var resizeUpDown: NSCursor](nscursor/resizeupdown.md)
   Returns the resize-up-and-down system cursor.
-- [class var iBeamCursorForVerticalLayout: NSCursor](nscursor/ibeamcursorforverticallayout.md)
-  Returns the cursor for editing vertical layout text.
+- [class var columnResize: NSCursor](nscursor/columnresize.md)
+  Returns the cursor for resizing a column (vertical divider) in either direction.
+- [class func columnResize(directions: NSHorizontalDirection.Set) -> NSCursor](nscursor/columnresize(directions:).md)
+  Returns the cursor for resizing a column (vertical divider) in the specified direction.
+- [class var rowResize: NSCursor](nscursor/rowresize.md)
+  Returns the cursor for resizing a row (horizontal divider) in either direction.
+- [class func rowResize(directions: NSVerticalDirection.Set) -> NSCursor](nscursor/rowresize(directions:).md)
+  Returns the cursor for resizing a row (horizontal divider) in the specified direction.
+- [class func frameResize(position: NSCursor.FrameResizePosition, directions: NSCursor.FrameResizeDirection.Set) -> NSCursor](nscursor/frameresize(position:directions:).md)
+  Returns the cursor for resizing a rectangular frame from the specified edge or corner.
+- [NSCursor.FrameResizeDirection](nscursor/frameresizedirection.md)
+  The direction in which a rectangular frame can be resized.
 ### Constants
 - [AppKit Versions for NSCursor Bug Fixes](appkit-versions-for-nscursor-bug-fixes.md)
   The version of the AppKit framework containing a specific bug fix.
-### Initializers
-- [init(coder: NSCoder)](nscursor/init(coder:).md)
-### Type Properties
-- [class var columnResize: NSCursor](nscursor/columnresize.md)
-  Returns the cursor for resizing a column (vertical divider) in either direction.
-- [class var rowResize: NSCursor](nscursor/rowresize.md)
-  Returns the cursor for resizing a row (horizontal divider) in either direction.
-- [class var zoomIn: NSCursor](nscursor/zoomin.md)
-  Returns the zoom-in cursor.
-- [class var zoomOut: NSCursor](nscursor/zoomout.md)
-  Returns the zoom-out cursor.
-### Type Methods
-- [class func columnResize(directions: NSHorizontalDirection.Set) -> NSCursor](nscursor/columnresize(directions:).md)
-  Returns the cursor for resizing a column (vertical divider) in the specified direction.
-- [class func frameResize(position: NSCursor.FrameResizePosition, directions: NSCursor.FrameResizeDirection.Set) -> NSCursor](nscursor/frameresize(position:directions:).md)
-  Returns the cursor for resizing a rectangular frame from the specified edge or corner.
-- [class func javaBusyButClickable() -> NSCursor!](nscursor/javabusybutclickable.md)
-- [class func javaMove() -> NSCursor!](nscursor/javamove.md)
-- [class func javaResizeNE() -> NSCursor!](nscursor/javaresizene.md)
-- [class func javaResizeNW() -> NSCursor!](nscursor/javaresizenw.md)
-- [class func javaResizeSE() -> NSCursor!](nscursor/javaresizese.md)
-- [class func javaResizeSW() -> NSCursor!](nscursor/javaresizesw.md)
-- [class func javaSetAllowsCursorSet(inBackground: Bool)](nscursor/javasetallowscursorset(inbackground:).md)
-- [class func rowResize(directions: NSVerticalDirection.Set) -> NSCursor](nscursor/rowresize(directions:).md)
-  Returns the cursor for resizing a row (horizontal divider) in the specified direction.
-### Enumerations
-- [NSCursor.FrameResizeDirection](nscursor/frameresizedirection.md)
-  The direction in which a rectangular frame can be resized.
+### Deprecated
+- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
+  Initializes the cursor with the specified image and hot spot.
+- [func mouseEntered(with: NSEvent)](nscursor/mouseentered(with:).md)
+  Automatically sent to the receiver when the cursor enters a cursor rectangle owned by the receiver.
+- [func setOnMouseEntered(Bool)](nscursor/setonmouseentered(_:).md)
+  Specifies whether the receiver accepts [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) events.
+- [var isSetOnMouseEntered: Bool](nscursor/issetonmouseentered.md)
+  A Boolean value indicating whether the receiver becomes current on receiving a [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) message.
+- [func mouseExited(with: NSEvent)](nscursor/mouseexited(with:).md)
+  Automatically sent to the receiver when the cursor exits a cursor rectangle owned by the receiver.
+- [func setOnMouseExited(Bool)](nscursor/setonmouseexited(_:).md)
+  Sets whether the receiver accepts [`mouseExited(with:)`](nscursor/mouseexited(with:).md) events.
+- [var isSetOnMouseExited: Bool](nscursor/issetonmouseexited.md)
+  A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message.
 
 ## Relationships
 

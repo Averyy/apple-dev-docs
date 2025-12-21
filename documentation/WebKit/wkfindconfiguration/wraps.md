@@ -21,7 +21,7 @@ var wraps: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the search wraps and continues at the other end of the page. For example, when a forward search reaches the bottom of the page, the search wraps back to the top of the page and continues. When a backward search reaches the top of the page, the search wraps back to the bottom of the page. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the search wraps and continues at the other end of the page. For example, when a forward search reaches the bottom of the page, the search wraps back to the top of the page and continues. When a backward search reaches the top of the page, the search wraps back to the bottom of the page. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Renders the symbol’s color layers using flat colors.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

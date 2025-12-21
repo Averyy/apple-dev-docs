@@ -84,16 +84,10 @@ When you reverse geocode a geographic coordinate using a [`CLGeocoder`](clgeocod
 - [CLPlacemark.Specification](clplacemark/specification.md)
 - [CLPlacemark.UnwrappedType](clplacemark/unwrappedtype.md)
 - [CLPlacemark.ValueType](clplacemark/valuetype.md)
-### Instance Properties
-- [var displayRepresentation: DisplayRepresentation](clplacemark/displayrepresentation.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<CLPlacemark>](clplacemark/defaultresolverspecification.md)
-- [static var typeDisplayRepresentation: TypeDisplayRepresentation](clplacemark/typedisplayrepresentation.md)
 ### Initializers
 - [convenience init(location: CLLocation, name: String?, postalAddress: CNPostalAddress?)](clplacemark/init(location:name:postaladdress:).md)
-### Default Implementations
-- [InstanceDisplayRepresentable Implementations](clplacemark/instancedisplayrepresentable-implementations.md)
-- [TypeDisplayRepresentable Implementations](clplacemark/typedisplayrepresentable-implementations.md)
 
 ## Relationships
 

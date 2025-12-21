@@ -15,7 +15,7 @@ The ideal presentation size of the item.
 ## Declaration
 
 ```swift
-var preferredPresentationSize: CGSize { get set }
+var preferredPresentationSize: NSSize { get }
 ```
 
 #### Discussion

@@ -35,9 +35,6 @@ struct ShapedData<Element>
 ### Subscripts
 - [subscript(Int...) -> Element](shapeddata/subscript(_:).md)
   Retrieves an element using an index for each dimension.
-### Default Implementations
-- [Equatable Implementations](shapeddata/equatable-implementations.md)
-- [Hashable Implementations](shapeddata/hashable-implementations.md)
 
 ## Relationships
 

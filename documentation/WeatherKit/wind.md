@@ -33,10 +33,6 @@ struct Wind
   A sudden increase in wind speed due to friction, wind shear, or by heating.
 - [var speed: Measurement<UnitSpeed>](wind/speed.md)
   Sustained wind speed.
-### Default Implementations
-- [Decodable Implementations](wind/decodable-implementations.md)
-- [Encodable Implementations](wind/encodable-implementations.md)
-- [Equatable Implementations](wind/equatable-implementations.md)
 
 ## Relationships
 

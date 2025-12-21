@@ -14,7 +14,6 @@ Handles an error that occurs during an attempt to read, save, or revert a docume
 ## Declaration
 
 ```swift
-@MainActor
 func handleError(_ error: any Error, userInteractionPermitted: Bool)
 ```
 
@@ -31,7 +30,7 @@ This method is called by the default implementations of [`open(completionHandler
 If you override this method and don’t invoke the superclass implementation (`super`), you’re responsible for the following:
 
 - Calling [`finishedHandlingError(_:recovered:)`](uidocument/finishedhandlingerror(_:recovered:).md) when you’re finished handling the error — for example, when the application doesn’t require any additional user feedback about the error.
-- Implementing [`userInteractionNoLongerPermitted(forError:)`](uidocument/userinteractionnolongerpermitted(forerror:).md) to conclude error handling immediately. If `userInteractionPermitted` is [`false`](https://developer.apple.com/documentation/swift/false), you should immediately handle the error and call [`finishedHandlingError(_:recovered:)`](uidocument/finishedhandlingerror(_:recovered:).md) within the context of the [`handleError(_:userInteractionPermitted:)`](uidocument/handleerror(_:userinteractionpermitted:).md).
+- Implementing [`userInteractionNoLongerPermitted(forError:)`](uidocument/userinteractionnolongerpermitted(forerror:).md) to conclude error handling immediately. If `userInteractionPermitted` is [`false`](https://developer.apple.com/documentation/Swift/false), you should immediately handle the error and call [`finishedHandlingError(_:recovered:)`](uidocument/finishedhandlingerror(_:recovered:).md) within the context of the [`handleError(_:userInteractionPermitted:)`](uidocument/handleerror(_:userinteractionpermitted:).md).
 
 ## Parameters
 

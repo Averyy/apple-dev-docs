@@ -21,6 +21,8 @@ Appropriate IOReturn code
 
 #### Discussion
 
+Assign a non-default ID to a state
+
 Locked version of IOReporter::setStateID(). This method may be overriden by sub-classes
 
 Locking: Caller must ensure that the reporter (data) lock is held.

@@ -22,9 +22,6 @@ struct MusicVideo
 
 ## Topics
 
-### Operators
-- [static func == (MusicVideo, MusicVideo) -> Bool](musicvideo/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var albumTitle: String?](musicvideo/albumtitle.md)
   The title of the album the music video appears on.
@@ -52,9 +49,7 @@ struct MusicVideo
   A Boolean value that indicates whether the music video has 4K content.
 - [var hasHDR: Bool?](musicvideo/hashdr.md)
   A Boolean value that indicates whether the music video has HDR10-encoded content.
-- [var hashValue: Int](musicvideo/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](musicvideo/id-swift.property.md)
+- [let id: MusicItemID](musicvideo/id.md)
   The unique identifier for the music video.
 - [var isPreview: Bool](musicvideo/ispreview.md)
   A Boolean value that indicates whether this content corresponds to a subscription video preview.
@@ -86,20 +81,8 @@ struct MusicVideo
   The URL for the music video.
 - [var workName: String?](musicvideo/workname.md)
   For classical music only, the name of the associated work.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicvideo/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicVideo.ID](musicvideo/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](musicvideo/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musicvideo/customstringconvertible-implementations.md)
-- [Decodable Implementations](musicvideo/decodable-implementations.md)
-- [Encodable Implementations](musicvideo/encodable-implementations.md)
-- [Equatable Implementations](musicvideo/equatable-implementations.md)
 - [FilterableMusicItem Implementations](musicvideo/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](musicvideo/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](musicvideo/musiclibraryrequestable-implementations.md)
 
 ## Relationships

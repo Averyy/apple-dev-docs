@@ -3,20 +3,16 @@
 **Framework**: AVFAudio  
 **Kind**: property
 
-The AVAudioEngine output node’s intended spatial experience.
+The intended spatial experience for this output node.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var intendedSpatialExperience: any SpatialAudioExperience { get set }
 ```
-
-#### Discussion
-
-Only useful for engines that have an output node and are not configured in any manual rendering mode. The default value of .automatic means the engine uses its AVAudioSession’s intended spatial experience. See CASpatialAudioExperience for more details.
 
 
 ---

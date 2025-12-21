@@ -19,9 +19,6 @@ enum ObservationType
 
 ## Topics
 
-### Operators
-- [static func == (DockAccessory.Observation.ObservationType, DockAccessory.Observation.ObservationType) -> Bool](dockaccessory/observation/observationtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [DockAccessory.Observation.ObservationType.humanBody](dockaccessory/observation/observationtype/humanbody.md)
   The frame contains a human body.
@@ -29,14 +26,6 @@ enum ObservationType
   The frame contains a human face.
 - [DockAccessory.Observation.ObservationType.object](dockaccessory/observation/observationtype/object.md)
   The frame contains an object other than a human face or body.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/observation/observationtype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/observation/observationtype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/observation/observationtype/equatable-implementations.md)
 
 ## Relationships
 

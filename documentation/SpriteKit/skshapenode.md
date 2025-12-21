@@ -22,9 +22,9 @@ class SKShapeNode
 
 ## Mentions
 
-- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
-- [Creating a Shape Node from an Array of Points](creating-a-shape-node-from-an-array-of-points.md)
 - [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Creating a Shape Node from an Array of Points](creating-a-shape-node-from-an-array-of-points.md)
+- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
 
 #### Overview
 

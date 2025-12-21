@@ -6,13 +6,17 @@
 The client’s declarative packages.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 object StatusPackageList
 ```
+
+## Mentions
+
+- [Installing packages](installing-packages.md)
 
 #### Discussion
 
@@ -60,7 +64,7 @@ object StatusPackageList
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
   A status report of the device’s operating system supplemental build identifier.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s rapid security response identifier.
+  A status report of the device’s operating system’s Background Security Improvement identifier.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
   A status report of the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)

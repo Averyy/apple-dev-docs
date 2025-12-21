@@ -23,14 +23,10 @@ A disabled view is visible but dimmed.
 
 - `enabled`: Specifies whether the authorization view should be enabled ( ) or disabled ( ).
 
-## Topics
-
-### Related Documentation
-- [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
-  Returns the current state of the authorization view.
-
 ## See Also
 
+- [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
+  Returns the current state of the authorization view.
 - [func setString(AuthorizationString!)](sfauthorizationview/setstring(_:).md)
   Sets the requested-right string to use with the default authorization rights set.
 - [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](sfauthorizationview/setauthorizationrights(_:).md)

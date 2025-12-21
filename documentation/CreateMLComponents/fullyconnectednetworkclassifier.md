@@ -35,8 +35,8 @@ struct FullyConnectedNetworkClassifier<Scalar, Label> where Scalar : MLShapedArr
 - [var configuration: FullyConnectedNetworkConfiguration](fullyconnectednetworkclassifier/configuration.md)
   The fully-connected-network configuration.
 ### Encoding and decoding
-- [func encode(Self.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encode(_:to:).md)
-  Encodes a fitted encodable transformer.
+- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encodewithoptimizer(_:to:).md)
+  Encodes a fitted transformer with an optimizer.
 - [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/decode(from:).md)
   Decodes the estimator.
 ### Fitting a classifier

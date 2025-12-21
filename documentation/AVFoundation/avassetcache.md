@@ -26,12 +26,11 @@ You can download HTTP Live Streaming assets to an iOS device using the [`AVAsset
 
 ## Topics
 
-### Inspecting the Cached Media
+### Inspecting the cached media
 - [var isPlayableOffline: Bool](avassetcache/isplayableoffline.md)
   A Boolean value that indicates whether the asset is playable without an internet connection.
 - [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avassetcache/mediaselectionoptions(in:).md)
   Returns an array of locally cached media selection options that are available for offline use.
-### Instance Methods
 - [func mediaPresentationLanguages(for: AVMediaSelectionGroup) -> [String]](avassetcache/mediapresentationlanguages(for:).md)
   Returns an array of extended language tags for languages that can be selected for offline operations via use of the AVMediaSelectionGroup’s AVCustomMediaSelectionScheme.
 - [func mediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : [AVMediaPresentationSetting]]](avassetcache/mediapresentationsettings(for:).md)

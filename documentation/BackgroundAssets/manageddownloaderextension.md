@@ -3,15 +3,15 @@
 **Framework**: Background Assets  
 **Kind**: protocol
 
-A protocol to which a managed downloader extension must conform.
+An app extension that uses the system implementation to schedule asset-pack downloads automatically.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,15 +27,26 @@ The protocol provides default implementations for all of the inherited `BADownlo
 
 ## Topics
 
-### Instance Methods
+### Downloading assets
 - [func shouldDownload(AssetPack) -> Bool](manageddownloaderextension/shoulddownload(_:).md)
-  Determines whether a particular asset pack should be downloaded.
+  Determines whether to download an asset pack.
 
 ## Relationships
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
 - [BADownloaderExtension](badownloaderextension-qwaw.md)
+
+## See Also
+
+- [struct AssetPack](assetpack.md)
+  An archive of assets that the system downloads together.
+- [actor AssetPackManager](assetpackmanager.md)
+  An actor that manages asset packs.
+- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+  The app group identifier that you share between your app and the extension that uses asset packs.
+- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+  A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 
 ---

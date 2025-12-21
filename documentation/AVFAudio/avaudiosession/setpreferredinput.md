@@ -44,6 +44,7 @@ You must set a preferred input port only after setting the audio session’s cat
   An array of available data sources for the audio session’s current input port.
 - [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
   Selects a data source for the audio session’s current input port.
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
 
 
 ---

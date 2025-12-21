@@ -17,11 +17,11 @@ var isAutorotating: Bool { get set }
 
 #### Discussion
 
-This property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+This property defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Normally, when a user rotates their wrist–for example, to show a watchOS app to another person–the watch is likely to interpret this motion as dropping the wrist and may put the app to sleep. When you enable autorotation, watchOS instead keeps the interface awake and rotates the content, orienting it properly for the viewer.
 
-Don’t enable autorotation indefinitely. Instead, enable it selectively on a specific interface controller that the user is likely to share. For example, in the interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method, set this property to [`true`](https://developer.apple.com/documentation/swift/true). In the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method, set it back to [`false`](https://developer.apple.com/documentation/swift/false).
+Don’t enable autorotation indefinitely. Instead, enable it selectively on a specific interface controller that the user is likely to share. For example, in the interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method, set this property to [`true`](https://developer.apple.com/documentation/Swift/true). In the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method, set it back to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

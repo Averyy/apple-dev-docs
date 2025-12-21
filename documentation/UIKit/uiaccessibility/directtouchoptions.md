@@ -61,12 +61,12 @@ Specify `DirectTouchOptions` to customize VoiceOver regions using these two cons
 
 ## See Also
 
-- [@MainActor var accessibilityCustomRotors: [UIAccessibilityCustomRotor]? { get set }](../ObjectiveC/NSObject-swift.class/accessibilityCustomRotors.md)
-- [@MainActor var accessibilityElementsHidden: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityElementsHidden.md)
-- [@MainActor var accessibilityRespondsToUserInteraction: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityRespondsToUserInteraction.md)
-- [@MainActor var accessibilityViewIsModal: Bool { get set }](../ObjectiveC/NSObject-swift.class/accessibilityViewIsModal.md)
-- [@MainActor var shouldGroupAccessibilityChildren: Bool { get set }](../ObjectiveC/NSObject-swift.class/shouldGroupAccessibilityChildren.md)
-- [@MainActor var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions { get set }](../ObjectiveC/NSObject-swift.class/accessibilityDirectTouchOptions.md)
+- [var accessibilityCustomRotors: [UIAccessibilityCustomRotor]?](../ObjectiveC/NSObject-swift.class/accessibilityCustomRotors.md)
+- [var accessibilityElementsHidden: Bool](../ObjectiveC/NSObject-swift.class/accessibilityElementsHidden.md)
+- [var accessibilityRespondsToUserInteraction: Bool](../ObjectiveC/NSObject-swift.class/accessibilityRespondsToUserInteraction.md)
+- [var accessibilityViewIsModal: Bool](../ObjectiveC/NSObject-swift.class/accessibilityViewIsModal.md)
+- [var shouldGroupAccessibilityChildren: Bool](../ObjectiveC/NSObject-swift.class/shouldGroupAccessibilityChildren.md)
+- [var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions](../ObjectiveC/NSObject-swift.class/accessibilityDirectTouchOptions.md)
 
 
 ---

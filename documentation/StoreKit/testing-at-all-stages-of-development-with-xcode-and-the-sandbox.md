@@ -16,7 +16,7 @@ The tools you need to test in-app purchases, non-renewing subscriptions, and aut
 
 Choose the tools that support the test scenarios you need. Make sure you’re able to perform the setup required for the tools you choose.
 
-During the early stages of development, you may not be ready to configure in-app purchases in App Store Connect. StoreKit Testing in Xcode lets you configure the information locally. You can test StoreKit transactions before you create Sandbox Apple IDs, without a network connection. You can test your app in Simulator or on real devices.
+During the early stages of development, you may not be ready to configure in-app purchases in App Store Connect. StoreKit Testing in Xcode lets you configure the information locally. You can test StoreKit transactions before you create Sandbox Apple Accounts, without a network connection. You can test your app in Simulator or on real devices.
 
 After you set up in-app purchases in App Store Connect, start using the sandbox environment to test the product information your app will use in production. Testing in the sandbox lets you test transactions from end-to-end and from your app to your server. You can also test any server-to-server functionalities your app depends on, such as transaction validation and [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
 
@@ -74,7 +74,7 @@ Depending on the in-app purchases your app offers, you may need to test scenario
 | Resolve an Ask to Buy transaction by approving or rejecting it | No | Yes |
 | Redeem an introductory offer for an auto-renewable subscription | Yes | Yes |
 | Redeem a promotional offer for an auto-renewable subscription | Yes | Yes |
-| Redeem an offer code for an auto-renewable subscription | No | Yes |
+| Redeem an offer code | No | Yes |
 | Process a subscription renewal | Yes | Yes |
 | Process a revoked or refunded subscription | Yes | Yes |
 | Respond to a customer canceling a subscription and disabling auto-renew | Yes | Yes |
@@ -94,6 +94,8 @@ For more information, see [`Approve what kids buy with Ask to Buy`](https://deve
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
   Validate your app’s handling of win-back offers that you configure for the testing environment.
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+  Validate your app’s handling of Ask To Buy in the testing environment.
 
 
 ---

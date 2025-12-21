@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: typealias
 
+The type of the registration input values property.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,13 @@
 ```swift
 typealias InputValues = ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues
 ```
+
+## See Also
+
+- [let inputValues: ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues?](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.property.md)
+  The input values to use when generating the PRF extension, if specified.
+- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues(_:).md)
+  The inputs for the PRF extension to evaluate if the new passkey supports the extension.
 
 
 ---

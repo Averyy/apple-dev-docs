@@ -22,7 +22,7 @@ class AVMutableAudioMix
 
 ## Topics
 
-### Input Parameters
+### Input parameters
 - [var inputParameters: [AVAudioMixInputParameters]](avmutableaudiomix/inputparameters.md)
   An array of input parameters for the mix.
 

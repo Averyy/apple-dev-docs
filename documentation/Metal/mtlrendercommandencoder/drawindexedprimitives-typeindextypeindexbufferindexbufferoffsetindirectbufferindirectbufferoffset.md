@@ -32,8 +32,8 @@ The method records the encoder’s current rendering state and resources the com
 
 - `primitiveType`: See the   method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
 - `indexType`: An   instance that represents the index’s format, including   and  .
-- `indexBuffer`: An   instance that contains thevertex indices of the   format.
-- `indexBufferOffset`: An integer that represents the location that’s a multiple of 4 bytes from the start of   where the vertex indices begin.
+- `indexBuffer`: An   instance that contains the vertex indices of the   format.
+- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of   where the vertex indices begin.
 - `indirectBuffer`: An   instance with data that matches the layout of the   structure.
 - `indirectBufferOffset`: See the   to check for offset alignment requirements for buffers in   and   address space.
 

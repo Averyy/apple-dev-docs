@@ -8,7 +8,6 @@ Presents a page-based interface modally.
 **Availability**:
 - iOS 8.2+
 - iPadOS 8.2+
-- Unknown ?+ - Deprecated
 - watchOS ?+
 
 ## Declaration

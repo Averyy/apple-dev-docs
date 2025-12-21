@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-func setImage(_ image: UIImage?, at index: Int)
+func setImage(_ image: NSImage?, at index: Int)
 ```
 
 ## See Also

@@ -26,7 +26,7 @@ You use [`MLWritable`](mlwritable.md) to save any [`MLModel`](mlmodel.md) instan
 
 ## Topics
 
-### Saving to a File
+### Saving to a file
 - [func write(to: URL) throws](mlwritable/write(to:).md)
   Exports a machine learning file to the file system.
 

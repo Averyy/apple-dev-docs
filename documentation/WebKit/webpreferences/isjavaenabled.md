@@ -16,7 +16,7 @@ var isJavaEnabled: Bool { get set }
 
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) to indicate that the web view allows Java, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that the web view allows Java, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

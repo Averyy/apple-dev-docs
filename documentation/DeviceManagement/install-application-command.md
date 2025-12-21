@@ -16,14 +16,18 @@ Install a third-party app on a device.
 ## Mentions
 
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Migrating managed devices](migrating-managed-devices.md)
+- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
 
 #### Discussion
 
-If the app is a managed app, this command updates it. The request must contain only one of these keys: `iTunesStoreID`, `Identifier`, or `ManifestURL`.
+The request must contain only one of these keys: `iTunesStoreID`, `Identifier`, or `ManifestURL`.
 
 Installation prompts the user to approve or cancel the update. If the device is supervised, the device only prompts when the app to install is in the foreground.
 
 Set the organization name that appears in this prompt in the `OrganizationInfo` dictionary using the `Settings` command.
+
+If the app is a managed app, this command updates it. This command fails if Declarative Device Management is managing the app.
 
 In macOS, the device returns an `Acknowledged` response after validating the parameters, but before downloading and installing the app. However, it doesn’t notify the MDM server about errors that occur during the installation process.
 
@@ -43,9 +47,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response Enterprise App
-
-##### Example Request and Response Vpp App
+##### Example Request and Response
 
 ## Topics
 
@@ -63,14 +65,16 @@ The request object the server returns for the Install Application Command.
 
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Apply Redemption Code](apply-redemption-code-command.md)
-  Complete the installation of an app using a redemption code.
-- [Remove Application](remove-application-command.md)
-  Remove an installed managed app.
-- [Validate Applications](validate-applications-command.md)
-  Force validation of developer and universal provisioning profiles for enterprise apps.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
 - [Managed Application List](managed-application-list-command.md)
   Get the status of all managed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
+- [Apply Redemption Code](apply-redemption-code-command.md)
+  Complete the installation of an app using a redemption code.
+- [Validate Applications](validate-applications-command.md)
+  Force validation of developer and universal provisioning profiles for enterprise apps.
 - [Managed Application Attributes](managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
 - [Managed Application Configuration](managed-application-configuration-command.md)

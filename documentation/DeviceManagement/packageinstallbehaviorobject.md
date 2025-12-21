@@ -6,13 +6,17 @@
 Specifies the install behavior of the package.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 object PackageInstallBehaviorObject
 ```
+
+## Mentions
+
+- [Installing packages](installing-packages.md)
 
 
 ---

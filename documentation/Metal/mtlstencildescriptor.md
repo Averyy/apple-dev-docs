@@ -27,7 +27,7 @@ The [`stencilCompareFunction`](mtlstencildescriptor/stencilcomparefunction.md) p
 
 ## Topics
 
-### Specifying Stencil Functions and Operations
+### Configuring stencil functions and operations
 - [var stencilFailureOperation: MTLStencilOperation](mtlstencildescriptor/stencilfailureoperation.md)
   The operation that is performed to update the values in the stencil attachment when the stencil test fails.
 - [var depthFailureOperation: MTLStencilOperation](mtlstencildescriptor/depthfailureoperation.md)
@@ -36,14 +36,13 @@ The [`stencilCompareFunction`](mtlstencildescriptor/stencilcomparefunction.md) p
   The operation that is performed to update the values in the stencil attachment when both the stencil test and the depth test pass.
 - [var stencilCompareFunction: MTLCompareFunction](mtlstencildescriptor/stencilcomparefunction.md)
   The comparison that is performed between the masked reference value and a masked value in the stencil attachment.
-### Specifying Stencil Bit Mask Properties
+- [enum MTLStencilOperation](mtlstenciloperation.md)
+  The operation performed on a currently stored stencil value when a comparison test passes or fails.
+### Configuring stencil bit mask properties
 - [var readMask: UInt32](mtlstencildescriptor/readmask.md)
   A bitmask that determines from which bits that stencil comparison tests can read.
 - [var writeMask: UInt32](mtlstencildescriptor/writemask.md)
   A bitmask that determines to which bits that stencil operations can write.
-### Constants
-- [enum MTLStencilOperation](mtlstenciloperation.md)
-  The operation performed on a currently stored stencil value when a comparison test passes or fails.
 
 ## Relationships
 
@@ -60,12 +59,12 @@ The [`stencilCompareFunction`](mtlstencildescriptor/stencilcomparefunction.md) p
 
 ## See Also
 
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
 - [protocol MTLDepthStencilState](mtldepthstencilstate.md)
-  A depth and stencil state object that specifies the depth and stencil configuration and operations used in a render pass.
+  A depth and stencil state instance that specifies the depth and stencil configuration and operations used in a render pass.
 - [class MTLDepthStencilDescriptor](mtldepthstencildescriptor.md)
-  An object that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md) objects.
+  An instance that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md) instances.
 
 
 ---

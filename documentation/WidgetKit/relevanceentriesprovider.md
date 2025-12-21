@@ -6,7 +6,7 @@
 A type that provides the content for a widget that uses relevance clues to display information in the Smart Stack.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -51,9 +51,15 @@ protocol RelevanceEntriesProvider
 - [struct WidgetRelevance](widgetrelevance.md)
   A type collecting the relevances for a widget kind.
 - [struct WidgetRelevanceAttribute](widgetrelevanceattribute.md)
-  A type describing when a specific widget could be relevant.
+  A type that describes when a specific widget could be relevant.
 - [struct WidgetRelevanceGroup](widgetrelevancegroup.md)
   A type for configuring widget behavior in the watchOS Smart Stack.
+- [struct AppIntentRecommendation](appintentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
+- [struct IntentConfiguration](intentconfiguration.md)
+  An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
+- [struct IntentRecommendation](intentrecommendation.md)
+  An object that describes a recommended intent configuration for a user-customizable widget.
 
 
 ---

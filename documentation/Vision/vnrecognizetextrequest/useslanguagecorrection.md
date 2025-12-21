@@ -21,7 +21,7 @@ var usesLanguageCorrection: Bool { get set }
 
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), Vision applies language correction during the recognition process. Disabling this property returns the raw recognition results, which provides performance benefits but less accurate results.
+When this value is [`true`](https://developer.apple.com/documentation/Swift/true), Vision applies language correction during the recognition process. Disabling this property returns the raw recognition results, which provides performance benefits but less accurate results.
 
 ## See Also
 

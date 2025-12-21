@@ -10,9 +10,9 @@ Request a refund for a one-time charge or subscription transaction.
 
 ## Mentions
 
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
-- [Advanced Commerce API changelog](changelog.md)
 - [Authorizing API requests from your server](authorizing-server-calls.md)
+- [Advanced Commerce API changelog](changelog.md)
+- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 
 #### Discussion
 

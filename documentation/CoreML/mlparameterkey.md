@@ -50,22 +50,22 @@ See [`Personalizing a Model with On-Device Updates`](personalizing-a-model-with-
 
 ## Topics
 
-### Scoping Parameter Keys
+### Scoping parameter keys
 - [func scoped(to: String) -> MLParameterKey](mlparameterkey/scoped(to:).md)
   Creates a copy of a parameter key and adds the scope to it.
-### Accessing Model Parameters
+### Accessing model parameters
 - [class var numberOfNeighbors: MLParameterKey](mlparameterkey/numberofneighbors.md)
   The key you use to access the number of neighbors that adjusts the affinity of a k-nearest-neighbor model.
 - [class var linkedModelFileName: MLParameterKey](mlparameterkey/linkedmodelfilename.md)
   The key you use to access the linked model’s filename.
 - [class var linkedModelSearchPath: MLParameterKey](mlparameterkey/linkedmodelsearchpath.md)
   The key you use to access the linked model’s search path.
-### Accessing Neural Network Layer Parameters
+### Accessing neural network layer parameters
 - [class var weights: MLParameterKey](mlparameterkey/weights.md)
   The key you use to access the weights of a layer in a neural network model.
 - [class var biases: MLParameterKey](mlparameterkey/biases.md)
   The key you use to access the biases of a layer in a neural network model.
-### Accessing Model Update Parameters
+### Accessing model update parameters
 - [class var learningRate: MLParameterKey](mlparameterkey/learningrate.md)
   The key you use to access the optimizer’s learning rate parameter.
 - [class var momentum: MLParameterKey](mlparameterkey/momentum.md)

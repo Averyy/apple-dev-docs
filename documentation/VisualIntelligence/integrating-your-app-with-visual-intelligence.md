@@ -18,7 +18,7 @@ To learn more about a displayed item, someone can tap it to open the item in you
 
 ##### Provide a Display Representation
 
-Visual Intelligence uses the [`DisplayRepresentation`](https://developer.apple.com/documentation/AppIntents/DisplayRepresentation) of your [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) to organize and present your content in the visual intelligence search experience. Make sure to provide localized, concise, and high-quality display representations that consist of a title, subtitle, and an image. The following example shows a version of the display representation of an `AppEntity` for a landmark. It uses strings from the model object for simplicity. In your code, make sure to provide a localized display representation.
+Visual Intelligence uses the [`DisplayRepresentation`](https://developer.apple.com/documentation/AppIntents/DisplayRepresentation) of your [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) to organize and present your content in the visual intelligence search experience. Make sure to provide localized, concise, and high-quality display representations that consist of a title, subtitle, and an image. The following code from the [`Adopting App Intents to support system experiences`](https://developer.apple.com/documentation/AppIntents/adopting-app-intents-to-support-system-experiences) sample code project shows the display representation of an `AppEntity` for a landmark. It uses strings from the model object for simplicity. In your code, make sure to provide a localized display representation.
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
@@ -33,7 +33,7 @@ struct LandmarkEntity: IndexedEntity {
         DisplayRepresentation(
             title: "\(name)",
             subtitle: "\(continent)",
-            image: .init(named: landmark.thumbnailImageName)
+            image: .init(data: try! self.thumbnailRepresentationData)
         )
     }
 
@@ -41,19 +41,23 @@ struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-For additional information about display representations, refer to [`Integrating custom data types into your intents`](https://developer.apple.com/documentation/AppIntents/Integrating-custom-types-into-your-intents).
+For additional information about display representations, refer to [`Integrating custom data types into your intents`](https://developer.apple.com/documentation/AppIntents/Integrating-custom-types-into-your-intents#Provide-a-visual-representation-for-your-entity).
 
 ##### Provide Search Results
 
-To integrate your app with visual search, create the query that provides visual intelligence with content that matches a person’s surroundings or selection:
+To integrate your app with visual search, provide visual intelligence with content that matches a person’s surroundings or onscreen object, as described in the steps below and illustrated in the following image:
 
 1. In your Xcode project, adopt the [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery) protocol and implement its [`values(for:)`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery/values(for:)) requirement.
 2. Change the [`values(for:)`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery/values(for:)) function to receive a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) as its `input`. The [`SemanticContentDescriptor`](semanticcontentdescriptor.md) makes visual intelligence information available to your app.
 3. Use the descriptor’s [`labels`](semanticcontentdescriptor/labels.md) to access a list of labels that visual intelligence creates or the [`pixelBuffer`](semanticcontentdescriptor/pixelbuffer.md) of the camera capture.
-4. Search your app’s content using the labels or perform an image search with an image you create from the `pixelBuffer`.
+4. Search your app’s content using the labels and perform an image search with an image you create from the `pixelBuffer`.
 5. Describe your search results as [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) objects and return them as the result of the query.
 
-The following example demonstrates how an app that enables people to view information about points-of-interest and landmarks might access the  `pixelBuffer` for its search:
+![A flow chart that shows how visual intelligence retrieves an array of app entities from your app by calling your app’s intent value query.](https://docs-assets.developer.apple.com/published/ee78242f9ed023447e83b0bff7e67cbf/visual-intelligence-app-intents-flowchart-step-1%402x.png)
+
+> **Note**: Labels are general, high-level terms in the `en_US` locale and might change over time. Visual Intelligence doesn’t translate them or include synonyms. For example, `SemanticContentDescriptor` might provide the labels `tower` or `building` for a well-known building. It won’t provide the building’s actual name as a label.
+
+The following example code from the [`Adopting App Intents to support system experiences`](https://developer.apple.com/documentation/AppIntents/adopting-app-intents-to-support-system-experiences) sample code project demonstrates how an app that enables people to view information about points of interest and landmarks might access the `pixelBuffer` for its search:
 
 ```swift
 struct LandmarkIntentValueQuery: IntentValueQuery {
@@ -73,11 +77,23 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 }
 ```
 
-The `seachLandmarks(matching:)` function asynchronously returns a list of app entities that represent landmarks. Returning results quickly makes for a good search experience; limit the list of returned items, if needed. Limiting the items also prevents visual search from showing a long list of results that a person might have to scroll through. If your app finds a large number of matches  — for example, several hundred items — you might return the first hundred results, and give people the opportunity to view the full list in your app as described in [`Link to additional results in your app`](integrating-your-app-with-visual-intelligence#Link-to-additional-results-in-your-app.md).
+The `search(matching:)` function asynchronously returns a list of app entities that represent landmarks. Returning results quickly makes for a good search experience, so make sure to limit the list of returned items, if needed. If your app finds a large number of matches — for example, several hundred items — you might return the first hundred results, and give people the opportunity to view the full list in your app as described in [`Link to additional results in your app`](integrating-your-app-with-visual-intelligence#Link-to-additional-results-in-your-app.md).
+
+The process for matching the provided pixel buffer to app entities depends on your app. A common case is to convert the pixel buffer into an image, then use the image in an image search. The following code snippet shows how you might implement this conversion:
+
+```swift
+private func createImage(_ pixelBuffer: CVReadOnlyPixelBuffer) -> CGImage? {
+    let context = CIContext()
+    let image = CIImage(cvPixelBuffer: pixelBuffer)
+    return context.createCGImage(image, from: image.extent)
+}
+```
 
 ##### Open an Item in Your App
 
-To allow someone to open your app and view additional information or access additional actions for a visual search, create an [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent). In the intent’s `perform()` method, open your app to match the app entity that visual intelligence passes to the method.
+To allow someone to open your app and view additional information or access additional actions for a visual search, create an [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent). In the intent’s `perform()` method, open your app to match the app entity that visual intelligence passes to the method, as illustrated in the image below.
+
+![A flow chart that shows hows how visual intelligence forwards the app entity that represents a person’s selection to the app so the app can display additional information.](https://docs-assets.developer.apple.com/published/027ea24e11f5cd25a397e0e30ea09981/visual-intelligence-app-intents-flowchart-step-2%402x.png)
 
 Continuing the example that shows information about points of interest or landmarks, the `OpenIntent` might look like this:
 
@@ -108,11 +124,15 @@ enum VisualSearchResult {
 }
 
 struct LandmarkIntentValueQuery: IntentValueQuery {
-    func values(for input: SemanticContentDescriptor) async throws -> [LandmarkEntity] {
+
+    @Dependency var modelData: ModelData
+
+    func values(for input: SemanticContentDescriptor) async throws -> [VisualSearchResult] {
         // ...
 
         // Returned search results are either landmarks or a collection.
-        let landmarks = try await modelData.searchLandmarks(matching: pixelBuffer)
+        let landmarks = try await modelData.search(matching: pixelBuffer)
+
         return landmarks
     }
 }
@@ -130,6 +150,8 @@ In the semantic content search intent’s `perform()` method, navigate to your a
 
 ## See Also
 
+- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [struct SemanticContentDescriptor](semanticcontentdescriptor.md)
   A type that represents a scene that visual intelligence captures, like a screenshot, photo, or photo and video stream.
 

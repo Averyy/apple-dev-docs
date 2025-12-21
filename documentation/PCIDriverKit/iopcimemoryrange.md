@@ -13,6 +13,10 @@
 enum IOPCIMemoryRange : unsigned int;
 ```
 
+#### Overview
+
+BAR indexes for GetBARInfo
+
 ## Topics
 
 ### Enumeration Cases

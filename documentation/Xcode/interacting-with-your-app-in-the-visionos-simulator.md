@@ -80,7 +80,7 @@ Launch and test your app’s SharePlay experiences in the simulator using FaceTi
 - [Interacting with your app in the watchOS simulator](interacting-with-your-app-in-the-watchos-simulator.md)
   Use your Mac to control interactions with your watchOS apps in Simulator.
 - [Configuring Simulator for your working environment](configuring-a-simulator-for-your-environment.md)
-  Adjust Simulator settings for window or screen size, light or dark appearance, and audio settings, and restart or reset a simulated device.
+  Adjust Simulator settings for window or screen size, the light or dark appearance, and audio settings, and restart or reset a simulated device.
 - [Simulating an external display or CarPlay](simulating-an-external-display-or-carplay.md)
   Test how your app handles an external display or CarPlay from Simulator.
 - [Capturing screenshots and videos from Simulator](capturing-screenshots-and-videos-from-simulator.md)

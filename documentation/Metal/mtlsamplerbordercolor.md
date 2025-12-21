@@ -21,7 +21,7 @@ enum MTLSamplerBorderColor
 
 ## Topics
 
-### Specifying Border Color Options
+### Specifying border color options
 - [MTLSamplerBorderColor.transparentBlack](mtlsamplerbordercolor/transparentblack.md)
   A transparent black color `(0,0,0,0)` for texture values outside the border.
 - [MTLSamplerBorderColor.opaqueBlack](mtlsamplerbordercolor/opaqueblack.md)

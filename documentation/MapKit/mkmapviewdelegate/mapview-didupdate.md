@@ -26,7 +26,7 @@ optional func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocati
 
 #### Discussion
 
-While the [`showsUserLocation`](mkmapview/showsuserlocation.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the map view calls this method whenever it receives a new location update. It also calls this method if the map view’s user-tracking mode is [`MKUserTrackingMode.followWithHeading`](mkusertrackingmode/followwithheading.md) and the heading changes.
+While the [`showsUserLocation`](mkmapview/showsuserlocation.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the map view calls this method whenever it receives a new location update. It also calls this method if the map view’s user-tracking mode is [`MKUserTrackingMode.followWithHeading`](mkusertrackingmode/followwithheading.md) and the heading changes.
 
 The.map view doesn’t call this method if the app is running in the background. If you want to receive location updates while running in the background, use the Core Location framework.
 

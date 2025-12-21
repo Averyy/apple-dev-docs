@@ -14,6 +14,10 @@ nonisolated
 final func requestAppUpdate(for url: URL, account: String, installVerificationToken: String) async throws
 ```
 
+## See Also
+
+- [func requestAppInstallation(for: URL, account: String, installVerificationToken: String) async throws](applibrary/requestappinstallation(for:account:installverificationtoken:).md)
+
 
 ---
 

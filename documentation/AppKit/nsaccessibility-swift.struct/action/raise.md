@@ -30,6 +30,7 @@ static let raise: NSAccessibility.Action
   An action that selects the object, such as a menu item.
 - [static let press: NSAccessibility.Action](nsaccessibility-swift.struct/action/press.md)
   An action that simulates clicking an object, such as a button.
+- [static let scrollToVisibleAction: NSAccessibility.Action](nsaccessibility-swift.struct/action/scrolltovisibleaction.md)
 - [static let showAlternateUI: NSAccessibility.Action](nsaccessibility-swift.struct/action/showalternateui.md)
   An action that shows an alternate UI, for example, during a mouse-hover event.
 - [static let showDefaultUI: NSAccessibility.Action](nsaccessibility-swift.struct/action/showdefaultui.md)

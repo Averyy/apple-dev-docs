@@ -7,7 +7,7 @@
 Provides the entry used to render a widget for a specific relevance configuration.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

@@ -24,22 +24,6 @@ struct ParameterSummaryString<Intent> where Intent : AppIntent
 
 ### Creating the summary string
 - [init(String)](parametersummarystring/init(_:).md)
-- [init(stringLiteral: String)](parametersummarystring/init(stringliteral:).md)
-  Creates an instance initialized to the given string value.
-- [init(stringInterpolation: ParameterSummaryString<Intent>.StringInterpolation)](parametersummarystring/init(stringinterpolation:).md)
-  Creates an instance from a string interpolation.
-- [ParameterSummaryString.StringInterpolation](parametersummarystring/stringinterpolation.md)
-  The type each segment of a string literal containing interpolations should be appended to.
-### Type Aliases
-- [ParameterSummaryString.ExtendedGraphemeClusterLiteralType](parametersummarystring/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [ParameterSummaryString.StringLiteralType](parametersummarystring/stringliteraltype.md)
-  A type that represents a string literal.
-- [ParameterSummaryString.UnicodeScalarLiteralType](parametersummarystring/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](parametersummarystring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](parametersummarystring/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

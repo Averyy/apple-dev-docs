@@ -131,20 +131,34 @@ This type provides “copy-on-write” behavior, and is also bridged to the Obje
   An object representing a mutable set of Unicode character values for use in search operations.
 ### Initializers
 - [init(bitmapRepresentation: Data)](characterset/init(bitmaprepresentation:).md)
+  Initialize with a bitmap representation.
 - [init(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/init(charactersin:)-87iva.md)
+  Initialize with a closed range of integers.
 - [init(charactersIn: String)](characterset/init(charactersin:)-87m2b.md)
+  Initialize with the characters in the given string.
 - [init(charactersIn: Range<Unicode.Scalar>)](characterset/init(charactersin:)-8tcll.md)
+  Initialize with a range of integers.
 - [init?(contentsOfFile: String)](characterset/init(contentsoffile:).md)
+  Initialize with the contents of a file.
 ### Instance Methods
 - [func contains(Unicode.Scalar) -> Bool](characterset/contains(_:).md)
+  Test for membership of a particular `Unicode.Scalar` in the `CharacterSet`.
 - [func insert(Unicode.Scalar) -> (inserted: Bool, memberAfterInsert: Unicode.Scalar)](characterset/insert(_:).md)
+  Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
 - [func insert(charactersIn: Range<Unicode.Scalar>)](characterset/insert(charactersin:)-7urdg.md)
+  Insert a range of integer values in the `CharacterSet`.
 - [func insert(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/insert(charactersin:)-803uz.md)
+  Insert a closed range of integer values in the `CharacterSet`.
 - [func remove(Unicode.Scalar) -> Unicode.Scalar?](characterset/remove(_:).md)
+  Remove a `Unicode.Scalar` representation of a character from the `CharacterSet`.
 - [func remove(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/remove(charactersin:)-1kqte.md)
+  Remove a closed range of integer values from the `CharacterSet`.
 - [func remove(charactersIn: Range<Unicode.Scalar>)](characterset/remove(charactersin:)-5td97.md)
+  Remove a range of integer values from the `CharacterSet`.
 - [func subtract(CharacterSet)](characterset/subtract(_:).md)
+  Sets the value to a `CharacterSet` created by removing elements in `other` from `self`.
 - [func update(with: Unicode.Scalar) -> Unicode.Scalar?](characterset/update(with:).md)
+  Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
 
 ## Relationships
 
@@ -164,7 +178,7 @@ This type provides “copy-on-write” behavior, and is also bridged to the Obje
 
 ## See Also
 
-- [typealias UnicodeScalar = Unicode.Scalar](../Swift/UnicodeScalar.md)
+- [typealias UnicodeScalar](../Swift/UnicodeScalar.md)
 
 
 ---

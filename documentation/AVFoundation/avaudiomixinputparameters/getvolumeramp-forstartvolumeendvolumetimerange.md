@@ -22,7 +22,7 @@ func getVolumeRamp(for time: CMTime, startVolume: UnsafeMutablePointer<Float>?, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the values were retrieved successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Returns [`false`](https://developer.apple.com/documentation/swift/false) if `time` is beyond the duration of the last volume ramp that has been set.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the values were retrieved successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Returns [`false`](https://developer.apple.com/documentation/Swift/false) if `time` is beyond the duration of the last volume ramp that has been set.
 
 #### Discussion
 

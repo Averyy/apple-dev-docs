@@ -26,7 +26,7 @@ The content of a DER-encoded integer (without the tag and length fields) for thi
 
 #### Discussion
 
-In Objective-C, if the function returns an error free it with a call to [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) when you are done with it. If it returns data, you must free that as well.
+In Objective-C, if the function returns an error free it with a call to [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it. If it returns data, you must free that as well.
 
 ## Parameters
 

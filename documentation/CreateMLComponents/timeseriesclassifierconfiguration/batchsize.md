@@ -23,6 +23,23 @@ var batchSize: Int
 
 > **Note**: This parameter is only used by the `fitted` method.
 
+## See Also
+
+- [var earlyStoppingIterationCount: Int](timeseriesclassifierconfiguration/earlystoppingiterationcount.md)
+  The number of iterations to use when evaluating whether to stop early.
+- [var earlyStoppingTolerance: Float](timeseriesclassifierconfiguration/earlystoppingtolerance.md)
+  The early-stopping tolerance.
+- [var learningRate: Float](timeseriesclassifierconfiguration/learningrate.md)
+  The starting learning rate.
+- [var maximumIterationCount: Int](timeseriesclassifierconfiguration/maximumiterationcount.md)
+  The maximum number of allowed passes through the data.
+- [var maximumSequenceLength: Int](timeseriesclassifierconfiguration/maximumsequencelength.md)
+  The maximum number of samples that can be classified.
+- [var minimumSequenceLength: Int](timeseriesclassifierconfiguration/minimumsequencelength.md)
+  The minimum number of samples required to produce a classification.
+- [var randomSeed: Int?](timeseriesclassifierconfiguration/randomseed.md)
+  A seed to generate reproducible results from random operations.
+
 
 ---
 

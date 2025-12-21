@@ -16,6 +16,10 @@
 enum WiFiAwareServiceRole
 ```
 
+#### Overview
+
+Wi-Fi Aware Service’s Role
+
 ## Topics
 
 ### Enumeration Cases

@@ -10,7 +10,7 @@ A Boolean value that determines whether requests for a new drawable expire if th
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

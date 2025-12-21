@@ -28,8 +28,6 @@ init<SourceType>(buffer: UnsafeBufferPointer<SourceType>)
 
 - [init()](data/init.md)
   Creates an empty data buffer.
-- [init<S>(S)](data/init(_:).md)
-  Creates a new instance of a collection containing the elements of a sequence.
 - [init<SourceType>(buffer: UnsafeMutableBufferPointer<SourceType>)](data/init(buffer:)-6xgv4.md)
   Creates a data buffer with copied memory content using a mutable buffer pointer.
 - [init(bytes: UnsafeRawPointer, count: Int)](data/init(bytes:count:).md)

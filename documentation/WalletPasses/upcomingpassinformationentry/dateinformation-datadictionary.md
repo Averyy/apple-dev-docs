@@ -6,9 +6,9 @@
 Information about the start and end time of the upcoming pass information entry.
 
 **Availability**:
-- iOS 19.0+
-- iPadOS 19.0+
-- watchOS 12.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 

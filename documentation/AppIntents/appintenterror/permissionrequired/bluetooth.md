@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to grant bluetooth permission to the app
+The person needs to allow the app to access to Bluetooth.
 
 **Availability**:
 - iOS 18.0+

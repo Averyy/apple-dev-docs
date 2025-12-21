@@ -74,7 +74,7 @@ Use [`cameraRelativePosition(_:)`](vnhumanbodypose3dobservation/camerarelativepo
 
 ##### Work with Positions in 3d Space
 
-The Vision frameworks represents a 3D position as a [`simd_float4x4`](https://developer.apple.com/documentation/simd/simd_float4x4) matrix. A [`VNHumanBodyRecognizedPoint3D`](vnhumanbodyrecognizedpoint3d.md) object contains the position of the joint, in meters, along with an identifier that corresponds to the joint name. It also contains the [`localPosition`](vnhumanbodyrecognizedpoint3d/localposition.md) of the joint, which describes the position relative to a [`parentJoint`](vnhumanbodyrecognizedpoint3d/parentjoint.md).
+The Vision framework represents a 3D position as a [`simd_float4x4`](https://developer.apple.com/documentation/simd/simd_float4x4) matrix. A [`VNHumanBodyRecognizedPoint3D`](vnhumanbodyrecognizedpoint3d.md) object contains the position of the joint, in meters, along with an identifier that corresponds to the joint name. It also contains the [`localPosition`](vnhumanbodyrecognizedpoint3d/localposition.md) of the joint, which describes the position relative to a [`parentJoint`](vnhumanbodyrecognizedpoint3d/parentjoint.md).
 
 > ❗ **Important**:  A joint’s position is always relative to the root joint.
 
@@ -112,7 +112,7 @@ For more information about matrices, see [`Working with Matrices`](https://devel
 
 Depth data contains the information the system needs to reconstruct a 3D scene, and includes camera calibration data. [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData) serves as the container class for interfacing with depth metadata. Starting in iOS 17 and macOS 14, provide depth data when you initialize a [`VNImageRequestHandler`](vnimagerequesthandler.md) with sample or pixel buffers.
 
-Images you capture using Photo mode in Camera store depth as disparity maps — a 2D map reduced from 3D space — with calibration data. You can also configure your [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) to use LiDAR to get depth data. For more information about working with depth, see [`Capturing Photos with Depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth) and [`Enhancing Live Video by Leveraging TrueDepth Camera Data`](https://developer.apple.com/documentation/AVFoundation/enhancing-live-video-by-leveraging-truedepth-camera-data).
+Images you capture using Photo mode in Camera store depth as disparity maps — a 2D map reduced from 3D space — with calibration data. You can also configure your [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) to use LiDAR to get depth data. For more information about working with depth, see [`Capturing photos with depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth) and [`Enhancing live video by leveraging TrueDepth camera data`](https://developer.apple.com/documentation/AVFoundation/enhancing-live-video-by-leveraging-truedepth-camera-data).
 
 ## See Also
 

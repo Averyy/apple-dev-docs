@@ -11,7 +11,7 @@ An array of route objects.
 ## Declaration
 
 ```swift
-attribute Route[] routes;
+routes: Route[];
 ```
 
 #### Discussion

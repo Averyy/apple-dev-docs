@@ -23,17 +23,10 @@ struct DefaultHistoryUpdate<Model> where Model : PersistentModel
 
 ### Operators
 - [static func == (DefaultHistoryUpdate<Model>, DefaultHistoryUpdate<Model>) -> Bool](defaulthistoryupdate/==(_:_:).md)
-### Instance Properties
-- [let changeIdentifier: DefaultHistoryUpdate<Model>.ChangeIdentifier](defaulthistoryupdate/changeidentifier-swift.property.md)
-- [let changedPersistentIdentifier: PersistentIdentifier](defaulthistoryupdate/changedpersistentidentifier.md)
-- [let transactionIdentifier: DefaultHistoryUpdate<Model>.TransactionIdentifier](defaulthistoryupdate/transactionidentifier-swift.property.md)
-- [let updatedAttributes: [any PartialKeyPath<Model> & Sendable]](defaulthistoryupdate/updatedattributes.md)
 ### Instance Methods
 - [func hash(into: inout Hasher)](defaulthistoryupdate/hash(into:).md)
 ### Type Aliases
-- [DefaultHistoryUpdate.ChangeIdentifier](defaulthistoryupdate/changeidentifier-swift.typealias.md)
 - [DefaultHistoryUpdate.PropertyUpdate](defaulthistoryupdate/propertyupdate.md)
-- [DefaultHistoryUpdate.TransactionIdentifier](defaulthistoryupdate/transactionidentifier-swift.typealias.md)
 
 ## Relationships
 

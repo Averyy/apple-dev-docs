@@ -8,7 +8,6 @@ A pose joint represented as a normalized point in an image, along with a label a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -45,14 +44,8 @@ struct Joint
 
 ## See Also
 
-- [struct DetectHumanBodyPoseRequest](detecthumanbodyposerequest.md)
-  A request that detects a human body pose.
-- [struct DetectHumanHandPoseRequest](detecthumanhandposerequest.md)
-  A request that detects a human hand pose.
-- [protocol PoseProviding](poseproviding.md)
-  An observation that provides a collection of joints that make up a pose.
-- [enum Chirality](chirality.md)
-  The hand sidedness of a pose.
+- [struct Joint3D](joint3d.md)
+  An object that represents a body pose joint in 3D space.
 
 
 ---

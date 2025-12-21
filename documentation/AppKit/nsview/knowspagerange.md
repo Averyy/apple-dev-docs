@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the view handles page boundaries, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns a Boolean value that indicates whether the view handles page boundaries.
 
 **Availability**:
 - macOS ?+
@@ -15,9 +15,13 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if the vi
 func knowsPageRange(_ range: NSRangePointer) -> Bool
 ```
 
+#### Return Value
+
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view handles page boundaries; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+
 #### Discussion
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the view uses the default auto-pagination mechanism. The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false). Override this method if your class handles page boundaries.
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the view uses the default auto-pagination mechanism. The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false). Override this method if your class handles page boundaries.
 
 ## Parameters
 

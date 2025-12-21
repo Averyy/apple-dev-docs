@@ -13,7 +13,6 @@ Performs a matrix multiplication operation directly on two input matrices.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -13,6 +13,12 @@
 let shortVersion: String
 ```
 
+## See Also
+
+- [let account: String?](applibrary/app/metadata/account.md)
+- [let appleVersionID: AppleVersionID](applibrary/app/metadata/appleversionid.md)
+- [let version: String](applibrary/app/metadata/version.md)
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The accessibility element is a tab bar
+The accessibility element is a tab bar.
 
 **Availability**:
 - iOS 17.0+

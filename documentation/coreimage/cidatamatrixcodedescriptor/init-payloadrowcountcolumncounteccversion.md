@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: init
 
-Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
+Initializes a Data Matrix code descriptor for the given payload and parameters.
 
 **Availability**:
 - iOS 11.0+
@@ -21,18 +21,14 @@ init?(payload errorCorrectedPayload: Data, rowCount: Int, columnCount: Int, eccV
 
 #### Return Value
 
-A Data Matrix code descriptor encoding the specified payload in the specified row and column count under the specified ECC version.
-
-#### Discussion
-
-The `CIBarcodeGenerator` filter can recreate a Data Matrix code given the descriptor created using this method.
+ An initialized [`CIAztecCodeDescriptor`](ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 
-- `errorCorrectedPayload`: The data to encode in the Data Matrix code.
-- `rowCount`: The number of rows in the matrix.
-- `columnCount`: The number of columns in the matrix.
-- `eccVersion`: Any symbol with an even number of rows and columns will be ECC 200.
+- `errorCorrectedPayload`: The data to encode in the Data Matrix code symbol.
+- `rowCount`: The number of rows in the Data Matrix code symbol.
+- `columnCount`: The number of columns in the Data Matrix code symbol.
+- `eccVersion`: The   for the Data Matrix code symbol.
 
 
 ---

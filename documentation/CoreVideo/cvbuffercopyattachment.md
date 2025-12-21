@@ -31,7 +31,7 @@ This function returns a retained attachment value, which you need to release whe
 ## Parameters
 
 - `buffer`: A buffer with an attachment to copy.
-- `key`: A string that identifies the attachment, which can be of any  doc://com.apple.documentation/documentation/corefoundation/cftype . See   and   for predefined values.
+- `key`: A string that identifies the attachment, which can be of any  . See   and   for predefined values.
 - `attachmentMode`: On output, this value points to the mode of the attachment. See   for possible values. This value is   if the buffer doesn’t define an attachment mode.
 
 ## See Also

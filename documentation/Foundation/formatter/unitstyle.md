@@ -33,12 +33,6 @@ The unit is represented in the shortest notation available. For example, for Eng
   Specifies a medium unit style.
 - [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
   Specifies a long unit style.
-- [Formatter.UnitStyle.short](formatter/unitstyle/short.md)
-  Specifies a short unit style.
-- [Formatter.UnitStyle.medium](formatter/unitstyle/medium.md)
-  Specifies a medium unit style.
-- [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
-  Specifies a long unit style.
 ### Initializers
 - [init?(rawValue: Int)](formatter/unitstyle/init(rawvalue:).md)
 

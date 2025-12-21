@@ -27,9 +27,9 @@ An [`MTLComputePipelineReflection`](mtlcomputepipelinereflection.md) object prov
 
 ## Topics
 
-### Obtaining the Arguments of the Compute Function
+### Obtaining the arguments of the compute function
 - [var arguments: [MTLArgument]](mtlcomputepipelinereflection/arguments.md)
-  An array of objects that describe the arguments of a compute function.
+  An array of instances that describe the arguments of a compute function.
 ### Instance Properties
 - [var bindings: [any MTLBinding]](mtlcomputepipelinereflection/bindings.md)
 

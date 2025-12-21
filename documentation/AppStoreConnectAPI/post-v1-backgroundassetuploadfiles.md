@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Begin the process of uploading an asset pack for Apple hosted background assets.
+Begin the process of uploading an asset pack for Apple-hosted background assets.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -16,7 +16,7 @@ Begin the process of uploading an asset pack for Apple hosted background assets.
 
 - [Read information for an uploaded asset pack](get-v1-backgroundassetuploadfiles-_id_.md)
   Get details about an uploaded asset pack for Apple hosted background asset.
-- [Commit an uploaded asset pack to a background asset version.](patch-v1-backgroundassetuploadfiles-_id_.md)
+- [Commit an uploaded asset pack to a background asset version](patch-v1-backgroundassetuploadfiles-_id_.md)
   Associate an uploaded asset pack with a background asset version to finish the upload process.
 
 

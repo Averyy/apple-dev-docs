@@ -19,12 +19,12 @@ struct WhiteBalanceGains
 
 ## Topics
 
-### Creating White Balance Gains
+### Creating white balance gains
 - [init()](avcapturedevice/whitebalancegains/init.md)
   The default initializer for white balance gains.
 - [init(redGain: Float, greenGain: Float, blueGain: Float)](avcapturedevice/whitebalancegains/init(redgain:greengain:bluegain:).md)
   Initializes a white balance gain from its red, green, and blue gain components.
-### Isolating Gain by Color Channel
+### Isolating gain by color channel
 - [var blueGain: Float](avcapturedevice/whitebalancegains/bluegain.md)
   The blue gain component of the white balance value.
 - [var greenGain: Float](avcapturedevice/whitebalancegains/greengain.md)

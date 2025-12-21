@@ -36,19 +36,6 @@ The captured room ([`CapturedRoom`](capturedroom.md)) function [`export(to:metad
 ### Inspecting error information
 - [var errorDescription: String?](capturedroom/error/errordescription.md)
   A human-readable explanation of the error.
-### Comparing errors
-- [static func == (CapturedRoom.Error, CapturedRoom.Error) -> Bool](capturedroom/error/==(_:_:).md)
-  Determines whether two captured room errors are equal.
-- [static func != (Self, Self) -> Bool](capturedroom/error/!=(_:_:).md)
-  Determines whether two captured room errors aren’t equal.
-- [func hash(into: inout Hasher)](capturedroom/error/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](capturedroom/error/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](capturedroom/error/equatable-implementations.md)
-- [Error Implementations](capturedroom/error/error-implementations.md)
-- [LocalizedError Implementations](capturedroom/error/localizederror-implementations.md)
 
 ## Relationships
 

@@ -21,16 +21,16 @@ func unlock(withPassword password: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified password unlocks the document, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified password unlocks the document, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-If the password is correct, this method returns [`true`](https://developer.apple.com/documentation/swift/true), and a `PDFDocumentDidUnlockNotification` notification is sent. Once unlocked, you cannot use this function to relock the document.
+If the password is correct, this method returns [`true`](https://developer.apple.com/documentation/Swift/true), and a `PDFDocumentDidUnlockNotification` notification is sent. Once unlocked, you cannot use this function to relock the document.
 
 If you attempt to unlock an already unlocked document, one of the following occurs:
 
-- If the document is unlocked with full owner permissions, `unlockWithPassword` does nothing and returns [`true`](https://developer.apple.com/documentation/swift/true). The password string is ignored.
-- If the document is unlocked with only user permissions, `unlockWithPassword` attempts to obtain full owner permissions with the password string. If the string fails, the document maintains its user permissions. In either case, this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+- If the document is unlocked with full owner permissions, `unlockWithPassword` does nothing and returns [`true`](https://developer.apple.com/documentation/Swift/true). The password string is ignored.
+- If the document is unlocked with only user permissions, `unlockWithPassword` attempts to obtain full owner permissions with the password string. If the string fails, the document maintains its user permissions. In either case, this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

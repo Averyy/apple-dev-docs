@@ -27,6 +27,8 @@ The default value of `writeMask` is all ones, [`all`](mtlcolorwritemask/all.md),
 
 - [var pixelFormat: MTLPixelFormat](mtlrenderpipelinecolorattachmentdescriptor/pixelformat.md)
   The pixel format of the color attachment’s texture.
+- [struct MTLColorWriteMask](mtlcolorwritemask.md)
+  Values used to specify a mask to permit or restrict writing to color channels of a color value.
 
 
 ---

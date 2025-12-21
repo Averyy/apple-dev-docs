@@ -10,7 +10,7 @@ Setting up a Mac to build your Windows code remotely requires changes to both th
 
 #### Configure Your Mac As the Remote Builder
 
-To remotely build projects on your Mac, verify that your Mac is running macOS Sequoia 15.4 or later, and has Xcode 17 or later installed. Perform this verification in the Terminal app on your Mac using the following command:
+To remotely build projects on your Mac, verify that your Mac is running macOS Sequoia 15.4 or later, and has Xcode 26 or later installed. Perform this verification in the Terminal app on your Mac using the following command:
 
 ```swift
 % sw_vers -productVersion && xcodebuild -version

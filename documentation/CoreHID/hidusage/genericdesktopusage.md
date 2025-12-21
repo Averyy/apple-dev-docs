@@ -129,20 +129,8 @@ enum GenericDesktopUsage
 - [HIDUsage.GenericDesktopUsage.x](hidusage/genericdesktopusage/x.md)
 - [HIDUsage.GenericDesktopUsage.y](hidusage/genericdesktopusage/y.md)
 - [HIDUsage.GenericDesktopUsage.z](hidusage/genericdesktopusage/z.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/genericdesktopusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/genericdesktopusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.GenericDesktopUsage.RawValue](hidusage/genericdesktopusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/genericdesktopusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/genericdesktopusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/genericdesktopusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

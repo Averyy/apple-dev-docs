@@ -22,7 +22,7 @@ let kCGPDFContextAllowsCopying: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value of this key is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value of this key is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

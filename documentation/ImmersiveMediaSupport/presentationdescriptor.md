@@ -6,8 +6,8 @@
 A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,14 +19,14 @@ struct PresentationDescriptor
 
 ### Initializers
 - [init(commands: [PresentationCommand])](presentationdescriptor/init(commands:).md)
-  Creates an instance containing the commands specified in the given array
+  Creates an instance that contains the commands specified in the given array.
 - [init(duration: CMTime?, commands: [PresentationCommand])](presentationdescriptor/init(duration:commands:).md)
-  Creates an instance containing the commands specified in the array
+  Creates an instance that contains the commands specified in the array:
 ### Instance Properties
 - [var commands: [PresentationCommand]](presentationdescriptor/commands.md)
-  An array of presentation commands that needs to be processed for the `duration` time.
+  An array of presentation commands.
 - [var duration: CMTime?](presentationdescriptor/duration.md)
-  The total duration for which the presentation commands needs to be processed.
+  The total duration of the presentation commands.
 
 ## Relationships
 

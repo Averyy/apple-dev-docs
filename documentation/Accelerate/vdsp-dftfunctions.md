@@ -13,7 +13,6 @@ A protocol that defines functions for discrete Fourier transform operations.
 - tvOS 13.0+ - Deprecated
 - visionOS ?+
 - watchOS 6.0+ - Deprecated
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -1,9 +1,9 @@
-# !=(_:_:)
+# FSItem.ItemType.unknown
 
 **Framework**: FSKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+The item type of an unknown item.
 
 **Availability**:
 - macOS 15.4+
@@ -11,21 +11,27 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [FSItem.ItemType.file](fsitem/itemtype/file.md)
+  The item type of a regular file.
+- [FSItem.ItemType.directory](fsitem/itemtype/directory.md)
+  The item type of a directory.
+- [FSItem.ItemType.symlink](fsitem/itemtype/symlink.md)
+  The item type of a symbolic link.
+- [FSItem.ItemType.fifo](fsitem/itemtype/fifo.md)
+  The item type of a first-in/first-out named pipe.
+- [FSItem.ItemType.charDevice](fsitem/itemtype/chardevice.md)
+  The item type of a character device.
+- [FSItem.ItemType.blockDevice](fsitem/itemtype/blockdevice.md)
+  The item type of a block device.
+- [FSItem.ItemType.socket](fsitem/itemtype/socket.md)
+  The item type of a socket.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsitem/itemtype/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsitem/itemtype/unknown)*

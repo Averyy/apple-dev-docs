@@ -21,7 +21,7 @@ Consult these documents:
 
 ##### Request Access Only When Your App Needs the Data
 
-Request access to sensitive user or device data—like location, contacts, and photos—at the time your app needs the data. Supply a purpose string (sometimes called a usage description string) in your app’s `Info.plist` file that the system can present to a user explaining why your app needs access. Provide reasonable fallback behavior in situations where the user doesn’t grant access to the requested data. For more details, see [`Requesting access to protected resources`](requesting-access-to-protected-resources.md).
+Request access to sensitive user or device data—like location, contacts, and photos—at the time your app needs the data. Supply a purpose string (sometimes called a usage description string) in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) that the system can present to a user explaining why your app needs access. Provide reasonable fallback behavior in situations where the user doesn’t grant access to the requested data. For more details, see [`Requesting access to protected resources`](requesting-access-to-protected-resources.md).
 
 ##### Be Transparent About How Data Will Be Used
 

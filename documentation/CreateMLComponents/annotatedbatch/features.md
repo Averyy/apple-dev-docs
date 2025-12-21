@@ -20,6 +20,13 @@ The shaped array of features.
 var features: MLShapedArray<Scalar>
 ```
 
+## See Also
+
+- [var annotations: MLShapedArray<Scalar>](annotatedbatch/annotations.md)
+  The shaped array of annotations.
+- [var count: Int](annotatedbatch/count.md)
+  The number of examples in the batch.
+
 
 ---
 

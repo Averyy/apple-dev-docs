@@ -17,7 +17,7 @@ func fieldEditor(_ createFlag: Bool, for object: Any?) -> NSText?
 
 #### Return Value
 
-Returns the field editor for the designated object (`object`) or, if `object` is `nil`, the default field editor. Returns `nil` if `createFlag` is [`false`](https://developer.apple.com/documentation/swift/false) and if the field editor doesn’t exist.
+Returns the field editor for the designated object (`object`) or, if `object` is `nil`, the default field editor. Returns `nil` if `createFlag` is [`false`](https://developer.apple.com/documentation/Swift/false) and if the field editor doesn’t exist.
 
 #### Discussion
 

@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-func image(at index: Int) -> UIImage?
+func image(at index: Int) -> NSImage?
 ```
 
 ## See Also

@@ -6,8 +6,8 @@
 `
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -29,21 +29,6 @@ The cache policy used for a business information request.
   Load from remote.
 - [RCSService.BusinessInformationRequest.CachePolicy.cacheOrRemote](rcsservice/businessinformationrequest/cachepolicy-swift.enum/cacheorremote.md)
   Load from local cache if available, otherwise load from remote.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/businessinformationrequest/cachepolicy-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/businessinformationrequest/cachepolicy-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-### Hashing
-- [func hash(into: inout Hasher)](rcsservice/businessinformationrequest/cachepolicy-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](rcsservice/businessinformationrequest/cachepolicy-swift.enum/hashvalue.md)
-  The hash value.
-### Comparing cache policies
-- [static func == (RCSService.BusinessInformationRequest.CachePolicy, RCSService.BusinessInformationRequest.CachePolicy) -> Bool](rcsservice/businessinformationrequest/cachepolicy-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/businessinformationrequest/cachepolicy-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

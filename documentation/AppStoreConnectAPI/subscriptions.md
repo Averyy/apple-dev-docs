@@ -62,7 +62,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
   The data structure that represents a subscription introductory offers linkages request resource.
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
 - [object SubscriptionOfferCode](subscriptionoffercode.md)
@@ -74,7 +74,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionPricesLinkagesRequest](subscriptionpriceslinkagesrequest.md)
   The data structure that represents a subscription prices linkages request resource.
 - [object SubscriptionPricesLinkagesResponse](subscriptionpriceslinkagesresponse.md)
-  A response that contains a list of Ids of related resources.
+  A response that contains a list of IDs of related resources.
 - [object SubscriptionLocalizationResponse](subscriptionlocalizationresponse.md)
 - [object SubscriptionLocalizationsResponse](subscriptionlocalizationsresponse.md)
 - [object SubscriptionLocalization](subscriptionlocalization.md)

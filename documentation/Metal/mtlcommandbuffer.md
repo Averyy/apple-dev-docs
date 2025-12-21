@@ -22,9 +22,9 @@ protocol MTLCommandBuffer : NSObjectProtocol
 ## Mentions
 
 - [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
-- [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Overview
 
@@ -61,49 +61,49 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
 
 ## Topics
 
-### Creating Command Encoders
-- [Command Encoder Factory Methods](command-encoder-factory-methods.md)
+### Creating command encoders
+- [Command encoder factory methods](command-encoder-factory-methods.md)
   A command encoder defines the actions of a single pass, such as GPU commands that draw, compute, or quickly copy resource data.
-### Attaching Residency Sets
+### Attaching residency sets
 - [func useResidencySet(any MTLResidencySet)](mtlcommandbuffer/useresidencyset(_:).md)
-  Attaches a residency set to the command buffer.
+  Applies a residency set to a command buffer.
 - [func useResidencySets([any MTLResidencySet])](mtlcommandbuffer/useresidencysets(_:).md)
-  Attaches multiple residency sets to the command buffer.
-### Synchronizing Passes with Events
+  Applies multiple residency sets to a command buffer.
+### Synchronizing passes with events
 - [func encodeWaitForEvent(any MTLEvent, value: UInt64)](mtlcommandbuffer/encodewaitforevent(_:value:).md)
   Encodes a command into the command buffer that pauses the GPU from running the buffer’s subsequent passes until the event equals or exceeds a value.
 - [func encodeSignalEvent(any MTLEvent, value: UInt64)](mtlcommandbuffer/encodesignalevent(_:value:).md)
   Encodes a command that updates an event’s value, which can clear the GPU to run passes from other command buffers waiting for the event.
-### Presenting a Drawable
+### Presenting a drawable
 - [func present(any MTLDrawable)](mtlcommandbuffer/present(_:).md)
   Presents a drawable as early as possible.
 - [func present(any MTLDrawable, atTime: CFTimeInterval)](mtlcommandbuffer/present(_:attime:).md)
   Presents a drawable at a specific time.
 - [func present(any MTLDrawable, afterMinimumDuration: CFTimeInterval)](mtlcommandbuffer/present(_:afterminimumduration:).md)
   Presents a drawable after the system presents the previous drawable for an amount of time.
-### Registering State Change Handlers
+### Registering state change handlers
 - [func addScheduledHandler(MTLCommandBufferHandler)](mtlcommandbuffer/addscheduledhandler(_:).md)
   Registers a completion handler the GPU device calls immediately after it schedules the command buffer to run on the GPU.
 - [func addCompletedHandler(MTLCommandBufferHandler)](mtlcommandbuffer/addcompletedhandler(_:).md)
   Registers a completion handler the GPU device calls immediately after the GPU finishes running the commands in the command buffer.
 - [typealias MTLCommandBufferHandler](mtlcommandbufferhandler.md)
   A completion handler signature a GPU device calls when it finishes scheduling a command buffer, or when the GPU finishes running it.
-### Submitting a Command Buffer
+### Submitting a command buffer
 - [func enqueue()](mtlcommandbuffer/enqueue.md)
   Reserves the next available place for the command buffer in its command queue.
 - [func commit()](mtlcommandbuffer/commit.md)
   Submits the command buffer to run on the GPU.
-### Waiting for State Changes
+### Waiting for state changes
 - [func waitUntilScheduled()](mtlcommandbuffer/waituntilscheduled.md)
   Blocks the current thread until the command queue schedules the buffer.
 - [func waitUntilCompleted()](mtlcommandbuffer/waituntilcompleted.md)
   Blocks the current thread until the GPU finishes executing the command buffer and all of its completion handlers.
-### Troubleshooting a Command Buffer
+### Troubleshooting a command buffer
 - [var status: MTLCommandBufferStatus](mtlcommandbuffer/status.md)
   The command buffer’s current state.
 - [enum MTLCommandBufferStatus](mtlcommandbufferstatus.md)
   The discrete states for a command buffer that represent its life cycle stages.
-- [Command Buffer Debugging](command-buffer-debugging.md)
+- [Command buffer debugging](command-buffer-debugging.md)
   Properties and methods for programmatically debugging runtime issues with a command buffer.
 ### Instance Methods
 - [func completed() async](mtlcommandbuffer/completed.md)
@@ -116,7 +116,7 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
 
 ## See Also
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
 - [protocol MTLCommandQueue](mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.

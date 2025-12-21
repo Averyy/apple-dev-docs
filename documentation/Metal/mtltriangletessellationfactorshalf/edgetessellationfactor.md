@@ -25,11 +25,6 @@ var edgeTessellationFactor: (UInt16, UInt16, UInt16)
 - The value in index 1 provides the tessellation factor for the bottom edge of the patch.
 - The value in index 2 provides the tessellation factor for the upper-right edge of the patch.
 
-## See Also
-
-- [var insideTessellationFactor: UInt16](mtltriangletessellationfactorshalf/insidetessellationfactor.md)
-  The inside tessellation factor.
-
 
 ---
 

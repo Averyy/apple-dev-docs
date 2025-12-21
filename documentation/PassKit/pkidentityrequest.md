@@ -38,6 +38,9 @@ The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an i
   An arbitrary number that the signed response playload includes.
 - [var merchantIdentifier: String?](pkidentityrequest/merchantidentifier.md)
   A value that represents the merchant that makes the request.
+### Instance Properties
+- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+  A key in the NSIdentityUsageDescriptionDictionary field of the app’s Info.plist file.
 
 ## Relationships
 
@@ -53,10 +56,6 @@ The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an i
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
-  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
-  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to allow a request for identity information.
 - [class PKIdentityDocument](pkidentitydocument.md)
@@ -66,7 +65,7 @@ The [`merchantIdentifier`](pkidentityrequest/merchantidentifier.md) maps to an i
 - [class PKIdentityButton](pkidentitybutton.md)
   An object that displays a button to trigger the identity verification flow.
 - [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
-  A view that displays a button for identity verification.
+  A type that displays a button to present the identity verification flow.
 - [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
   A type that represents the label you use with a verify identity button.
 - [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)

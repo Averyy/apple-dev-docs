@@ -6,7 +6,7 @@
 Temporaily transitions to the active phase until all animations finish, and the transition is complete.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

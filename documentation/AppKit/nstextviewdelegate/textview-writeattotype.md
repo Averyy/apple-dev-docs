@@ -17,7 +17,7 @@ optional func textView(_ view: NSTextView, write cell: any NSTextAttachmentCellP
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the write succeeded, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the write succeeded, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

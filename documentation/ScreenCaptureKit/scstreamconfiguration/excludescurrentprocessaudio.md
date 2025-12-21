@@ -17,7 +17,7 @@ var excludesCurrentProcessAudio: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you include your app process in the stream output, you can set this value to [`true`](https://developer.apple.com/documentation/swift/true) to exclude its audio.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If you include your app process in the stream output, you can set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to exclude its audio.
 
 ## See Also
 

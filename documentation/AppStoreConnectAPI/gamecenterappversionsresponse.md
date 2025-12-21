@@ -28,6 +28,8 @@ object GameCenterAppVersionsResponse
 - [object GameCenterAppVersionUpdateRequest](gamecenterappversionupdaterequest.md)
   The request body you use to update an app version.
 - [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
+- [type GameCenterVersionState](gamecenterversionstate.md)
+  A string representing the state of a Game Center version.
 
 
 ---

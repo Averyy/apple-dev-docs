@@ -20,7 +20,7 @@ enum TorchMode
 
 ## Topics
 
-### Torch Modes
+### Torch modes
 - [AVCaptureDevice.TorchMode.off](avcapturedevice/torchmode-swift.enum/off.md)
   The capture device torch is always off.
 - [AVCaptureDevice.TorchMode.on](avcapturedevice/torchmode-swift.enum/on.md)

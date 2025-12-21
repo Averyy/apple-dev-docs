@@ -21,7 +21,7 @@ var mipFilter: MTLSamplerMipFilter { get set }
 
 ## Mentions
 
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
 
 #### Discussion
 

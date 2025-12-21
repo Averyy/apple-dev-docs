@@ -21,9 +21,9 @@ case memoryless
 
 ## Mentions
 
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
-- [Reducing the Memory Footprint of Metal Apps](reducing-the-memory-footprint-of-metal-apps.md)
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
 
 #### Discussion
 
@@ -33,14 +33,14 @@ Use memoryless resources for temporary elements used only within a single pass. 
 
 On Metal devices that support tile rendering, you can use imageblocks to manage transient rendering data more flexibly. For more information about imageblock memory and using it with your shader functions, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) sections 2.11, 4.5, and 5.6.
 
-For more guidance on how to choose storage modes, see [`Setting Resource Storage Modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ## See Also
 
 - [MTLStorageMode.shared](mtlstoragemode/shared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
 - [MTLStorageMode.managed](mtlstoragemode/managed.md)
-  The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+  The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 - [MTLStorageMode.private](mtlstoragemode/private.md)
   The resource is only available to the GPU.
 

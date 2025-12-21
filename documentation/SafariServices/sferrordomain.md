@@ -22,7 +22,7 @@ let SFErrorDomain: String
 
 - [struct SFError](sferror.md)
   A content blocker or Safari app extension error.
-- [SFError.Code](sferrorcode.md)
+- [SFError.Code](sferror/code.md)
   Messages that describe a content blocker or Safari app extension error.
 
 

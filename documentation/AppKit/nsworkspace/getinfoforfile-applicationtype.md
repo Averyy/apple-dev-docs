@@ -16,7 +16,7 @@ func getInfoForFile(_ fullPath: String, application appName: AutoreleasingUnsafe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this method successfully retrieved the information, or [`false`](https://developer.apple.com/documentation/swift/false) if it couldn’t find the file or the app isn’t associated with the file.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this method successfully retrieved the information, or [`false`](https://developer.apple.com/documentation/Swift/false) if it couldn’t find the file or the app isn’t associated with the file.
 
 #### Discussion
 

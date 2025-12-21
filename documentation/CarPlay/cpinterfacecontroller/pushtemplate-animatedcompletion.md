@@ -25,7 +25,7 @@ func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> 
 
 The template you add becomes the [`topTemplate`](cpinterfacecontroller/toptemplate.md) in the navigation hierarchy.
 
-CarPlay calls `completion` after it adds the template to the navigation hierarchy. The Boolean parameter is [`true`](https://developer.apple.com/documentation/swift/true) when CarPlay adds the template successfully; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false) and CarPlay provides an error that describes the failure.
+CarPlay calls `completion` after it adds the template to the navigation hierarchy. The Boolean parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when CarPlay adds the template successfully; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false) and CarPlay provides an error that describes the failure.
 
 CarPlay throws an exception if it can’t add the template and you don’t provide a closure.
 

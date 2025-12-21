@@ -19,7 +19,7 @@ func upperLimbVisibility(_ preferredVisibility: Visibility) -> some View
 
 The system can show the user’s upper limbs during fully immersive experiences, but you can also hide them, for example, in order to display virtual hands instead.
 
-Note that this modifier only sets a preference and ultimately the system will decide if it will honor it or not. The system may by unable to honor the preference if the immersive space is currently not visible.
+Note that this modifier only sets a preference and ultimately the system will decide if it will honor it or not. The system may be unable to honor the preference if the immersive space is currently not visible.
 
 ## Parameters
 

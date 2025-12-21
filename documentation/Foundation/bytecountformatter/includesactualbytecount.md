@@ -22,11 +22,11 @@ var includesActualByteCount: Bool { get set }
 
 #### Discussion
 
-Setting this value to [`true`](https://developer.apple.com/documentation/swift/true) causes the byte count to be displayed parenthetically (localized as appropriate), for instance `723 KB (722,842 bytes)`.  This will happen only if needed, that is, the first part is already not showing the exact byte count.
+Setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) causes the byte count to be displayed parenthetically (localized as appropriate), for instance `723 KB (722,842 bytes)`.  This will happen only if needed, that is, the first part is already not showing the exact byte count.
 
-If [`includesUnit`](bytecountformatter/includesunit.md) or [`includesCount`](bytecountformatter/includescount.md) are [`false`](https://developer.apple.com/documentation/swift/false), then this setting has no effect.
+If [`includesUnit`](bytecountformatter/includesunit.md) or [`includesCount`](bytecountformatter/includescount.md) are [`false`](https://developer.apple.com/documentation/Swift/false), then this setting has no effect.
 
-Default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

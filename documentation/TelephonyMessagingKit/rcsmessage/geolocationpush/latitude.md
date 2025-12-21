@@ -6,19 +6,19 @@
 The latitude of the location.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
-let latitude: Double
+var latitude: Double
 ```
 
 ## See Also
 
-- [let longitude: Double](rcsmessage/geolocationpush/longitude.md)
+- [var longitude: Double](rcsmessage/geolocationpush/longitude.md)
   The longitude of the location.
 
 

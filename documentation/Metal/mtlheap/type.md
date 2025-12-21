@@ -22,6 +22,8 @@ var type: MTLHeapType { get }
 
 ## See Also
 
+- [var device: any MTLDevice](mtlheap/device.md)
+  The device object that created the heap.
 - [var storageMode: MTLStorageMode](mtlheap/storagemode.md)
   The heap’s storage mode.
 - [var cpuCacheMode: MTLCPUCacheMode](mtlheap/cpucachemode.md)
@@ -30,16 +32,6 @@ var type: MTLHeapType { get }
   The heap’s hazard tracking mode.
 - [var resourceOptions: MTLResourceOptions](mtlheap/resourceoptions.md)
   The options for resources created by the heap.
-- [var size: Int](mtlheap/size.md)
-  The total size of the heap, in bytes.
-- [var usedSize: Int](mtlheap/usedsize.md)
-  The size of all resources currently in the heap, in bytes.
-- [var currentAllocatedSize: Int](mtlheap/currentallocatedsize.md)
-  The size, in bytes, of the current heap allocation.
-- [func maxAvailableSize(alignment: Int) -> Int](mtlheap/maxavailablesize(alignment:).md)
-  The maximum size of a resource, in bytes, that can be currently allocated from the heap.
-- [enum MTLHeapType](mtlheaptype.md)
-  The options you use to choose the heap type.
 
 
 ---

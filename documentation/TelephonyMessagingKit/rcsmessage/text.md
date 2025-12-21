@@ -6,8 +6,8 @@
 A structure that represents text content in an RCS message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -24,27 +24,8 @@ struct Text
 - [init(stringLiteral: String)](rcsmessage/text/init(stringliteral:).md)
   Creates a text content instance from the given string literal.
 ### Accessing text content
-- [let body: String](rcsmessage/text/body.md)
+- [var body: String](rcsmessage/text/body.md)
   The body of the text message, as a string.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/text/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsmessage/text/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing text instances
-- [static func == (RCSMessage.Text, RCSMessage.Text) -> Bool](rcsmessage/text/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Type Aliases
-- [RCSMessage.Text.ExtendedGraphemeClusterLiteralType](rcsmessage/text/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [RCSMessage.Text.StringLiteralType](rcsmessage/text/stringliteraltype.md)
-  A type that represents a string literal.
-- [RCSMessage.Text.UnicodeScalarLiteralType](rcsmessage/text/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/text/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](rcsmessage/text/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](rcsmessage/text/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 

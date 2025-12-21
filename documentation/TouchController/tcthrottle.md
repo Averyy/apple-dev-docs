@@ -6,10 +6,8 @@
 Represents a single on-screen throttle - a one axis input.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,41 +22,29 @@ This is mirrored by a `GCControllerButtonInput` on the associated `GCController`
 ## Topics
 
 ### Inspecting the throttle
-- [var backgroundVisuals: TCControlVisuals?](tcthrottle/backgroundvisuals.md)
-  The visuals for the background of the throttle.
+- [var backgroundContents: TCControlContents?](tcthrottle/backgroundcontents.md)
+  The contents for the background of the throttle.
 - [var baseValue: CGFloat](tcthrottle/basevalue.md)
   The initial value of this control.
-- [var collider: any TCCollider](tcthrottle/collider.md)
-  The collider for the throttle.
-- [var highlightTime: simd_float1](tcthrottle/highlighttime.md)
+- [var highlightDuration: TimeInterval](tcthrottle/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
+- [var indicatorContents: TCControlContents?](tcthrottle/indicatorcontents.md)
+  The contents for the indicator of the throttle.
 - [var indicatorSize: CGSize](tcthrottle/indicatorsize.md)
   The size (width, height) of the indicator itself in points.
-- [var indicatorVisuals: TCControlVisuals?](tcthrottle/indicatorvisuals.md)
-  The visuals for the indicator of the throttle.
-- [var layer: simd_int1](tcthrottle/layer.md)
-  The layer of the throttle, used for z-sorting.
-- [var offset: CGPoint](tcthrottle/offset.md)
-  The control’s offset from the anchor, which determines its position.
-- [var position: CGPoint](tcthrottle/position.md)
-  The position of the throttle in points, with the origin at the top left corner of the screen.
-- [var size: CGSize](tcthrottle/size.md)
-  The size (width, height) of the throttle in points.
-- [var snapToBaseValue: Bool](tcthrottle/snaptobasevalue.md)
+- [var snapsToBaseValue: Bool](tcthrottle/snapstobasevalue.md)
   A Boolean value that indicates whether the control reverts to it’s base value.
 - [var throttleSize: CGSize](tcthrottle/throttlesize.md)
   The size (width, height) of the throttle itself, providing boundaries for the indicator, in points.
-- [var touchController: TCTouchController](tcthrottle/touchcontroller.md)
-  The touch controller that manages this throttle.
-### Getting the anchor
-- [var anchor: TCTransformAnchor](tcthrottle/anchor.md)
-  The anchor point that the throttle’s offset is relative to.
-- [enum TCTransformAnchor](tctransformanchor.md)
-  Defines the anchor point for a transform.
+### Getting the collider shape
+- [var colliderShape: TCColliderShape](tcthrottle/collidershape.md)
+  The collider shape for the throttle.
+- [enum TCColliderShape](tccollidershape.md)
+  Defines the shape of a control collider.
 ### Getting the orientation
-- [var orientation: TCThrottleOrientation](tcthrottle/orientation.md)
+- [var orientation: TCThrottle.Orientation](tcthrottle/orientation-swift.property.md)
   The orientation of the throttle.
-- [enum TCThrottleOrientation](tcthrottleorientation.md)
+- [TCThrottle.Orientation](tcthrottle/orientation-swift.enum.md)
   Defines the orientation of the throttle.
 
 ## Relationships
@@ -73,7 +59,7 @@ This is mirrored by a `GCControllerButtonInput` on the associated `GCController`
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [TCControl](tccontrol.md)
-- [TCTransform](tctransform.md)
+- [TCControlLayout](tccontrollayout.md)
 
 ## See Also
 
@@ -83,6 +69,8 @@ This is mirrored by a `GCControllerButtonInput` on the associated `GCController`
   A control that represents a single on-screen button.
 - [class TCDirectionPad](tcdirectionpad.md)
   An object that represents a direction pad.
+- [class TCSwitch](tcswitch.md)
+  A control that represents a single on-screen switch.
 - [class TCThumbstick](tcthumbstick.md)
   Represents a single on-screen thumbstick.
 - [class TCTouchpad](tctouchpad.md)

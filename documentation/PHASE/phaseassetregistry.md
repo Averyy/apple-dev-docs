@@ -63,6 +63,8 @@ When you’re done with a sound asset, call [`unregisterAsset(identifier:complet
   An object that manages audio assets, controls playback, and configures environmental effects.
 - [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+  Modes that determine whether the system renders audio in process or out of process.
 - [enum PHASENormalizationMode](phasenormalizationmode.md)
   Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
 - [enum PHASESpatializationMode](phasespatializationmode.md)

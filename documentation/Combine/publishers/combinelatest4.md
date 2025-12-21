@@ -22,29 +22,18 @@ struct CombineLatest4<A, B, C, D> where A : Publisher, B : Publisher, C : Publis
 
 ## Topics
 
-### Creating a Combine Latest-Four Publisher
+### Creating a combine latest-four publisher
 - [init(A, B, C, D)](publishers/combinelatest4/init(_:_:_:_:).md)
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.CombineLatest4.Output](publishers/combinelatest4/output.md)
   The kind of values published by this publisher.
 - [Publishers.CombineLatest4.Failure](publishers/combinelatest4/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/combinelatest4/a.md)
 - [let b: B](publishers/combinelatest4/b.md)
 - [let c: C](publishers/combinelatest4/c.md)
 - [let d: D](publishers/combinelatest4/d.md)
-### Comparing Publishers
-- [static func == (Publishers.CombineLatest4<A, B, C, D>, Publishers.CombineLatest4<A, B, C, D>) -> Bool](publishers/combinelatest4/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](publishers/combinelatest4/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-combinelatest4-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Equatable Implementations](publishers/combinelatest4/equatable-implementations.md)
-- [Publisher Implementations](publishers/combinelatest4/publisher-implementations.md)
 
 ## Relationships
 

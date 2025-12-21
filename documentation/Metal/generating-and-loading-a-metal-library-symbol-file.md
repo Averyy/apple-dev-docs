@@ -1,4 +1,4 @@
-# Generating and Loading a Metal Library Symbol File
+# Generating and loading a Metal library symbol file
 
 **Framework**: Metal
 
@@ -33,11 +33,11 @@ The `-frecord-sources=flat` option, which replaces the deprecated `-MO=<value>` 
 
 You can also generate a Metal library’s symbol file with multiple commands, which may be more appropriate for your workflow than the single-command technique. For those scenarios, you can generate each Metal library and its companion symbol file by following these steps:
 
-1. Compile each Metal source file to a Metal AIR (Apple Intermediate Representation) file.
-2. Generate a Metal library with the source by linking its AIR files.
+1. Compile each Metal source file to a Metal IR (intermediate representation) file.
+2. Generate a Metal library with the source by linking its IR files.
 3. Separate the library’s source and save it as a companion symbol file.
 
-First, compile each Metal source file to a Metal AIR file by passing the -c option to the compiler.
+First, compile each Metal source file to a Metal IR file by passing the `-c` option to the compiler.
 
 ```shell
 % xcrun -sdk macosx metal -c -frecord-sources Shadow.metal
@@ -45,9 +45,9 @@ First, compile each Metal source file to a Metal AIR file by passing the -c opti
 % xcrun -sdk macosx metal -c -frecord-sources DirectionalLight.metal
 ```
 
-The `-frecord-sources` option tells the Metal compiler to embed the symbols in the AIR output file for that command. However, this command doesn’t create a separate symbols file at this time, which is why the `-frecord-sources` option doesn’t include the `=flat` suffix.
+The `-frecord-sources` option tells the Metal compiler to embed the symbols in the IR output file for that command. However, this command doesn’t create a separate symbols file at this time, which is why the `-frecord-sources` option doesn’t include the `=flat` suffix.
 
-Next, generate a Metal library by linking the AIR files.
+Next, generate a Metal library by linking the IR files.
 
 ```shell
 % xcrun -sdk macosx metal -frecord-sources -o LightsAndShadow.metallib Shadow.air PointLights.air DirectionalLight.air
@@ -64,21 +64,21 @@ The `-remove-source` option modifies the Metal library file by removing its embe
 - `LightsAndShadow.metallib`
 - `LightsAndShadow.metallibsym`
 
-> **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
+> **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
 
 ##### Load a Symbol File in Xcode
 
 As you debug a shader, Xcode automatically presents a prompt when it doesn’t have access to a shader library’s source code.
 
-![A screenshot of a Metal debugger dialog that Xcode shows when the debugger doesn’t have shader sources. The dialog has two buttons, ‘Import Sources’ and ‘OK’.](https://docs-assets.developer.apple.com/published/d7206fa0645dbc0a8f325b70455daa67/media-3871026%402x.png)
+![A screenshot of a Metal debugger dialog that Xcode shows when the debugger doesn’t have shader sources. The dialog has two buttons, ‘Import Sources’ and ‘OK’.](https://docs-assets.developer.apple.com/published/d7206fa0645dbc0a8f325b70455daa67/generating-and-loading-a-metal-library-symbol-file-1%402x.png)
 
 Click the Import Sources button and select the shader’s companion symbol file.
 
-![A screenshot of the Metal Debugger’s Import dialog that shows an empty list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘No source’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/63d2ecd8bd74debb3f9af7e6ee8c336f/media-3871032%402x.png)
+![A screenshot of an Import dialog from the Metal debugger that shows an empty list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘No source’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/63d2ecd8bd74debb3f9af7e6ee8c336f/generating-and-loading-a-metal-library-symbol-file-2%402x.png)
 
 Add your shader library’s companion symbol file by clicking the Add button (+) and locating the file. Select a directory to tell Xcode to find all companion symbol files that match any Metal libraries in the current Metal debugging capture. The dialog reflects each library’s symbol file in a list as you add them.
 
-![A screenshot of the Metal Debugger’s Import dialog that shows one entry in its list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘default dot metal l-i-b s-y-m’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/47c36dbda3c6f19e6e32eb26a510c2f8/media-3871030%402x.png)
+![A screenshot of an Import dialog from the Metal debugger that shows one entry in its list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘default dot metal l-i-b s-y-m’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/47c36dbda3c6f19e6e32eb26a510c2f8/generating-and-loading-a-metal-library-symbol-file-3%402x.png)
 
 Click Done when you finish adding your companion symbol files. Xcode imports the shader source and profiling information from each companion symbol file for the Metal library it represents.
 
@@ -86,9 +86,9 @@ Click Done when you finish adding your companion symbol files. Xcode imports the
 
 ## See Also
 
-- [Building a Shader Library by Precompiling Source Files](building-a-shader-library-by-precompiling-source-files.md)
+- [Building a shader library by precompiling source files](building-a-shader-library-by-precompiling-source-files.md)
   Create a shader library that you can add to an Xcode project with the Metal compiler tools in a command-line environment.
-- [Minimizing the Binary Size of a Shader Library](minimizing-the-binary-size-of-a-shader-library.md)
+- [Minimizing the binary size of a shader library](minimizing-the-binary-size-of-a-shader-library.md)
   Reduce the storage footprint of your shaders, and potentially reduce their compile time, by selecting the Metal compiler’s size optimization option.
 
 

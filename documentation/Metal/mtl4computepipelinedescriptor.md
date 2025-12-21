@@ -6,12 +6,12 @@
 Describes a compute pipeline state.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,7 +25,7 @@ class MTL4ComputePipelineDescriptor
 - [var computeFunctionDescriptor: MTL4FunctionDescriptor?](mtl4computepipelinedescriptor/computefunctiondescriptor.md)
   A descriptor representing the compute pipeline’s function.
 - [var maxTotalThreadsPerThreadgroup: Int](mtl4computepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
-  The maximum total number of threads that can be executing in a single threadgroup for the compute function.
+  The maximum total number of threads that Metal can execute in a single threadgroup for the compute function.
 - [var requiredThreadsPerThreadgroup: MTLSize](mtl4computepipelinedescriptor/requiredthreadsperthreadgroup.md)
   The required number of threads per threadgroup for compute dispatches.
 - [var staticLinkingDescriptor: MTL4StaticLinkingDescriptor?](mtl4computepipelinedescriptor/staticlinkingdescriptor.md)
@@ -38,7 +38,7 @@ class MTL4ComputePipelineDescriptor
   A boolean value indicating whether each dimension of the threadgroup size is a multiple of its corresponding thread execution width.
 ### Instance Methods
 - [func reset()](mtl4computepipelinedescriptor/reset.md)
-  Resets the descriptor to the default values.
+  Resets the descriptor to its default values.
 
 ## Relationships
 
@@ -62,7 +62,7 @@ class MTL4ComputePipelineDescriptor
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
-  The mutability options for a buffer that a render or compute pipeline uses.
+  The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
 - [struct MTLPipelineOption](mtlpipelineoption.md)

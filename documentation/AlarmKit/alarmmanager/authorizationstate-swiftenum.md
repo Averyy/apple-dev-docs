@@ -6,8 +6,8 @@
 An enumeration describing all authorization states for the client process.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,22 +24,6 @@ enum AuthorizationState
   The client previously requested authorization from the person, but they declined.
 - [AlarmManager.AuthorizationState.notDetermined](alarmmanager/authorizationstate-swift.enum/notdetermined.md)
   The client hasn’t requested authorization from a person.
-### Decoding
-- [init(from: any Decoder) throws](alarmmanager/authorizationstate-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (AlarmManager.AuthorizationState, AlarmManager.AuthorizationState) -> Bool](alarmmanager/authorizationstate-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](alarmmanager/authorizationstate-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmmanager/authorizationstate-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](alarmmanager/authorizationstate-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](alarmmanager/authorizationstate-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

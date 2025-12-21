@@ -22,7 +22,7 @@ class MLImageSize
 
 ## Topics
 
-### Accessing an Image Size
+### Accessing an image size
 - [var pixelsHigh: Int](mlimagesize/pixelshigh.md)
   The height of an image feature in pixels.
 - [var pixelsWide: Int](mlimagesize/pixelswide.md)

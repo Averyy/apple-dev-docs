@@ -22,6 +22,7 @@ var currentRoute: AVAudioSessionRouteDescription { get }
 ## Mentions
 
 - [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 #### Discussion
 

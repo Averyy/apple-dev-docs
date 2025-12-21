@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An array of render pass color attachment descriptor objects.
+An array of render pass color attachment descriptor objects.
 
 **Availability**:
 - iOS 8.0+
@@ -21,7 +21,7 @@ class MTLRenderPassColorAttachmentDescriptorArray
 
 ## Topics
 
-### Accessing the Description of a Color Attachment
+### Accessing the description of a color attachment
 - [subscript(Int) -> MTLRenderPassColorAttachmentDescriptor!](mtlrenderpasscolorattachmentdescriptorarray/subscript(_:).md)
   Returns the descriptor object for the specified color attachment.
 
@@ -67,8 +67,7 @@ class MTLRenderPassColorAttachmentDescriptorArray
   A description of where to store GPU counter information at the start and end of a render pass.
 - [class MTLLogicalToPhysicalColorAttachmentMap](mtllogicaltophysicalcolorattachmentmap.md)
   Allows you to easily specify color attachment remapping from logical to physical indices.
-- [let MTLRenderTargetRemapIndexDiscard: Int](mtlrendertargetremapindexdiscard.md)
-  Constant to specify discarding a color attachment’s index in a remap operation.
+- [struct MTLDispatchThreadsIndirectArguments](mtldispatchthreadsindirectarguments.md)
 
 
 ---

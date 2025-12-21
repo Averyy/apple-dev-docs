@@ -21,7 +21,7 @@ var isTouchInside: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the location of the most recent touch event is inside the control’s bounds or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the location of the most recent touch event is inside the control’s bounds or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 #### Discussion
 

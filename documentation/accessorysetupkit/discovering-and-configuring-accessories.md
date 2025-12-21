@@ -112,16 +112,61 @@ Along with filtering matched accessories to show in the picker, the display item
 
 When the picker appears, the person using the app sees a view of all nearby accessories that match the identifiers you provide. When multiple devices match a given identifier, the picker shows a separate item for each unique device. This allows the person to select a single device with the picker.
 
+The following figure shows a single accessory selected in the picker.
+
+![The accessory picker sheet, covering the bottom part of the screen. The top of sheet shows the title ‘Finding Accessories’ and a close button. Below this is the image of a six-sided die and the caption ‘Bluetooth Die’, followed by a serial number. The bottom of the sheet shows two buttons, a defautl ‘Set Up’ button, followed by a ‘Learn More’ button.](https://docs-assets.developer.apple.com/published/8b4b33dc0b9ef7aee54d56d61b2dd461/discovering-and-configuring-accessories-01%402x.png)
+
 ##### Use the Picker When Migrating to Accessorysetupkit
 
 You can also perform a one-time migration of previously-configured accessories, which adds them to the AccessorySetupKit framework’s list of known accessories. To do this, create instances of [`ASMigrationDisplayItem`](asmigrationdisplayitem.md) and include them in the array of items you send to [`showPicker(for:completionHandler:)`](asaccessorysession/showpicker(for:completionhandler:).md).
 
 For items you want to migrate, set one or both of the following:
 
-- A [`hotspotSSID`](asmigrationdisplayitem/hotspotssid.md), which must be a full SSID and not a prefix.
-- A [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), which corresponds to the [`identifier`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer/identifier) property of the [`CBPeer`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer) type.
+- An [`hotspotSSID`](asmigrationdisplayitem/hotspotssid.md), which must be a full SSID and not a prefix.
+- An [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), which corresponds to the [`identifier`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer/identifier) property of the [`CBPeer`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer) type.
 
 > ❗ **Important**: Don’t initialize a [`CBCentralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManager) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
+
+##### Perform Custom Filtering
+
+Some apps need to obtain over-the-air (OTA) data from discovered accessories and perform additional filtering before showing them in the picker. The filtering includes tasks like validating the authenticity of an accessory, testing whether it’s in pairing mode, and other checks. If your app needs do this, set the picker’s display settings to use the [`filterDiscoveryResults`](aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option. If you need unlimited time to perform filtering and perform additional actions like downloading product artwork, set the [`discoveryTimeout`](aspickerdisplaysettings/discoverytimeout-swift.property.md) to [`unbounded`](aspickerdisplaysettings/discoverytimeout-swift.struct/unbounded.md).
+
+The following code performs these setup steps:
+
+```swift
+let settings = ASPickerDisplaySettings.default
+settings.discoveryTimeout = .unbounded
+settings.options.insert(.filterDiscoveryResults)
+session.pickerDisplaySettings = settings
+```
+
+When the session produces an [`ASAccessoryEventType.accessoryDiscovered`](asaccessoryeventtype/accessorydiscovered.md) event, examine the accessory and determine whether to display it in the picker. To add the accessory to the picker, create a [`ASDiscoveredDisplayItem`](asdiscovereddisplayitem.md). Using this type gives you the option to customize the item’s display with a specific name and a custom image. Then call [`updatePicker(showing:completionHandler:)`](asaccessorysession/updatepicker(showing:completionhandler:).md) on the session to show the customized item.
+
+The following example demonstrates an event handler that inspects discovered accessories and adds customized items to the picker.
+
+```swift
+session.activate(on: .main) { [weak self] event in
+    guard let strongSelf = self else { return }
+    switch event.eventType {
+    case .accessoryDiscovered: 
+        if let accessory = event.accessory as? ASDiscoveredAccessory { 
+            if myShouldDisplayAccessory(advertisement: accessory.bluetoothAdvertisementData,
+                                        rssi: accessory.bluetoothRSSI) {
+                let item = ASDiscoveredDisplayItem(name: "More Specific Product Name",
+                                                   productImage: UIImage(named: "AssetPreparedJustInTime")!,
+                                                   accessory: accessory)
+                session.updatePicker(showing: [item]) { error in
+                    print(error)
+                }
+            }
+        }
+    }
+}
+```
+
+If your custom filtering process requires the app to finish the accessory discovery early, manually end the discovery process by calling [`finishPickerDiscovery(completionHandler:)`](asaccessorysession/finishpickerdiscovery(completionhandler:).md). If your filtering process didn’t add any discovered items to the picker, this call shows a timeout message in the app.
+
+> 💡 **Tip**: AccessorySetupKit limits the number of accessories it exposes for discovery. If you don’t discover the accessory you expect, manually cause a picker timeout by calling [`finishPickerDiscovery(completionHandler:)`](asaccessorysession/finishpickerdiscovery(completionhandler:).md). If you want to retry, wait for the [`ASAccessoryEventType.pickerDidDismiss`](asaccessoryeventtype/pickerdiddismiss.md) and call [`showPicker(for:completionHandler:)`](asaccessorysession/showpicker(for:completionhandler:).md) again. In this scenario, you may want to suggest the person using the app verify that the accessory is powered up and nearby.
 
 ##### Connect and Configure the Selected Device
 
@@ -150,6 +195,8 @@ private func handleAccessoryAdded(_ accessory: ASAccessory) {
 ```
 
 Because the app discovered the device with AccessorySetupKit, connecting to the device won’t invoke the TCC or other alerts that the system normally shows when using these system frameworks.
+
+Starting in watchOS 26, if your iOS app has a companion watchOS app, the watchOS app can use CoreBluetooth to communicate with a device that someone set up by using AccessorySetupKit in the iOS app. Unlike iOS, however, the watchOS app still shows TCC alerts when connecting.
 
 ## See Also
 

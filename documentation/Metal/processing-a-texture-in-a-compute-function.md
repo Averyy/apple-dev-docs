@@ -5,11 +5,11 @@
 Create textures by running copy and dispatch commands in a compute pass on a GPU.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -17,7 +17,7 @@ Create textures by running copy and dispatch commands in a compute pass on a GPU
 
 ## See Also
 
-- [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 
 

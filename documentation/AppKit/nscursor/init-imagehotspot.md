@@ -14,7 +14,7 @@ Initializes a cursor with the given image and hot spot.
 ## Declaration
 
 ```swift
-init(image newImage: UIImage, hotSpot point: NSPoint)
+init(image newImage: NSImage, hotSpot point: NSPoint)
 ```
 
 #### Return Value
@@ -37,8 +37,7 @@ This method is the designated initializer for the class.
 - [Cursor Management](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CursorMgmt/CursorMgmt.html#//apple_ref/doc/uid/10000066i)
 - [var hotSpot: NSPoint](nscursor/hotspot.md)
   The position of the click location within the cursor.
-- [convenience init(image: NSImage, foregroundColorHint: NSColor?, backgroundColorHint: NSColor?, hotSpot: NSPoint)](nscursor/init(image:foregroundcolorhint:backgroundcolorhint:hotspot:).md)
-  Initializes the cursor with the specified image and hot spot.
+- [init(coder: NSCoder)](nscursor/init(coder:).md)
 
 
 ---

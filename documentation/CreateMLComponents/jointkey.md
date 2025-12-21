@@ -21,9 +21,6 @@ struct JointKey
 
 ## Topics
 
-### Creating a joint key
-- [init(rawValue: String)](jointkey/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting elbow properties
 - [static let leftElbow: JointKey](jointkey/leftelbow.md)
   A key associated with left elbow joint in a body pose.
@@ -115,15 +112,6 @@ struct JointKey
 ### Getting root and raw Properties
 - [static let root: JointKey](jointkey/root.md)
   A key associated with root joint in a body pose.
-- [var rawValue: String](jointkey/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [typealias RawValue](jointkey/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](jointkey/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](jointkey/equatable-implementations.md)
-- [RawRepresentable Implementations](jointkey/rawrepresentable-implementations.md)
 
 ## Relationships
 
@@ -138,7 +126,7 @@ struct JointKey
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

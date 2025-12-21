@@ -32,7 +32,7 @@ A new edge-based physics body.
 
 If the path is not already closed, a loop is automatically created by joining the last point to the first.
 
-An edge has no volume or mass and is always treated as if the [`isDynamic`](skphysicsbody/isdynamic.md) property is equal to [`false`](https://developer.apple.com/documentation/swift/false). Edges may only collide with volume-based physics bodies.
+An edge has no volume or mass and is always treated as if the [`isDynamic`](skphysicsbody/isdynamic.md) property is equal to [`false`](https://developer.apple.com/documentation/Swift/false). Edges may only collide with volume-based physics bodies.
 
 ## Parameters
 

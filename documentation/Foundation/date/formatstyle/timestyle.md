@@ -59,8 +59,6 @@ The default time style is [`shortened`](date/formatstyle/timestyle/shortened.md)
 - [static let standard: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/standard.md)
   A time style with all components except the time zone represented.
 ### Comparing Time Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

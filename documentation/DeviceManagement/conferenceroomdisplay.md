@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure Conference Room Display mode for Apple TV.
+The payload that configures Conference Room Display mode for Apple TV.
 
 **Availability**:
 - tvOS 10.2+
@@ -71,7 +71,7 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 ## See Also
 
 - [object TVRemote](tvremote.md)
-  The payload you use to configure the Apple TV remote.
+  The payload that configures the Apple TV remote.
 
 
 ---

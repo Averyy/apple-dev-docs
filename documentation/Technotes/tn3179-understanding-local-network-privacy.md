@@ -191,6 +191,8 @@ The above is true regardless of whether the device has cellular networking or no
 
 For more information about peer-to-peer Wi-Fi, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
+iOS 18 has a bug (FB14321888) that can cause the in-memory and persistent state of local network privacy to get out of sync after changing the user preference multiple times.  This bug was fixed in iOS 18.6.  If you encounter unexpected behavior on iOS 18, update to iOS 18.6 or later.
+
 #### Macos Considerations
 
 macOS maintains separate local network privacy state for each user account.
@@ -220,15 +222,19 @@ Most standalone executables—that is, executables that aren’t the main execut
 - Automatically allowed local network access, for example, daemons and command-line tools
 - Have an app that acts as their responsible code, for example, a helper tool
 
-If you manage to create a standalone executable that does need the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription) property, add it to an `Info.plist` that’s embedded in your executable.  In Xcode, set this up using the  [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) build setting.
+If you manage to create a standalone executable that does need the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription) property, add it to an `Info.plist` that’s embedded in your executable.  In Xcode, set this up using the  [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference#Create-Infoplist-Section-in-Binary) build setting.
 
 macOS 15.1 fixed a number of local network privacy bugs.  If you encounter local network privacy problems on macOS 15.0, retest on macOS 15.1 or later.
 
 People might see unexpected behavior in System Settings > Privacy & Security if they have multiple versions of the same app installed (FB15568200).
 
+macOS fails to display the local network alert when a process with a very short lifespan performs a local network operation (FB16131937).  For example, if you create a `launchd` agent that performs a local network operation and immediately exits when that fails, macOS won’t display the local network alert.  To work around this, update your code to not exit immediately after a local network operation fails.
+
 For the latest news about local network privacy, see the [`macOS Release Notes`](https://developer.apple.com/documentation/macos-release-notes).
 
 #### Build Time Considerations
+
+Local network privacy tracks the identity of your program using its code signature.  This presents a challenge on macOS, which allows for unsigned code and ad hoc signed code (Xcode displays this as Sign to Run Locally).  To ensure that local network privacy reliably tracks the identity of your macOS program, sign it with an Apple-issued code-signing identity.  To learn more about code-signing identities, see [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md).  To learn more about how macOS tracks a program’s identity, see [`TN3127: Inside Code Signing: Requirements`](tn3127-inside-code-signing-requirements.md).
 
 Local network privacy uses your main executable UUID as part of its implementation.  If your main executable has no UUID, or shares a UUID with other programs, local network privacy may behave weirdly.  To fix that, make sure your main executable has a UUID and that it’s unique.  For more about this, see [`TN3178: Checking for and resolving build UUID problems`](tn3178-checking-for-and-resolving-build-uuid-problems.md).
 
@@ -422,11 +428,30 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 #### Revision History
 
+-  Added information about two bugs (FB14321888, FB16131937). Updated the  section to cover macOS code signing.
 -  Rewritten and republished as TN3179.
 -  First posted as the  on the Apple Developer Forums.
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -439,24 +464,6 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
   Inspect your active StoreKit configuration file for unexpected configurations.
 - [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
   Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
-- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
-  Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
 
 
 ---

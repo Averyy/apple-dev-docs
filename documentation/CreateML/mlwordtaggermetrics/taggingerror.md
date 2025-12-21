@@ -14,6 +14,10 @@ The fraction of incorrectly tagged examples.
 var taggingError: Double { get }
 ```
 
+## Mentions
+
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
+
 ## See Also
 
 - [var precisionRecall: MLDataTable](mlwordtaggermetrics/precisionrecall.md)

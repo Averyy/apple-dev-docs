@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the kernel extension policies.
+The payload that configures the kernel extension policies.
 
 **Availability**:
 - macOS 10.13.2+
@@ -90,11 +90,11 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 ## See Also
 
 - [object SystemPolicyControl](systempolicycontrol.md)
-  The payload you use to configure the system policy for assessments.
+  The payload that configures the system policy for assessments.
 - [object SystemPolicyManaged](systempolicymanaged.md)
-  The payload you use to configure the Finder’s contextual menu to bypass the system policy.
+  The payload that configures the Finder’s contextual menu to bypass the system policy.
 - [object SystemPolicyRule](systempolicyrule.md)
-  The payload you use to configure the system policy.
+  The payload that configures the system policy.
 
 
 ---

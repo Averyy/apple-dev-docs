@@ -6,22 +6,22 @@
 Reloads the current webpage.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 @discardableResult
-@MainActor final func reload(fromOrigin: Bool = false) -> WebPage.NavigationID?
+@MainActor final func reload(fromOrigin: Bool = false) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
 ```
 
 #### Return Value
 
-A navigation identifier you use to track the loading progress of the request.
+An async sequence you use to track the loading progress of the navigation. If the `Task` enclosing the sequence is cancelled, the page will stop loading all resources.
 
 ## Parameters
 

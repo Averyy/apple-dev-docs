@@ -6,11 +6,11 @@
 A sampling mode that considers a fixed number of high-probability tokens.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -26,8 +26,11 @@ During the token-selection process, the vocabulary is sorted by probability a to
 
 > **Note**: Setting a random seed is not guaranteed to result in fully deterministic output. It is best effort.
 
+> **Note**: Sampling modes [`greedy`](generationoptions/samplingmode/greedy.md) and [`random(probabilityThreshold:seed:)`](generationoptions/samplingmode/random(probabilitythreshold:seed:).md)
+
 ## Parameters
 
+- `k`: The number of tokens to consider.
 - `seed`: An optional random seed used to make output more deterministic.
 
 ## See Also

@@ -42,6 +42,8 @@ When your app becomes a member of an app group, there are a number of APIs you c
 - Retrieving the physical location of the app group’s shared container by calling the [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)) method, which you can later use to read and write data.
 - Set the [`sharedContainerIdentifier`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sharedContainerIdentifier) property on the configuration of a background URL session to download files directly into the app group’s shared container.
 
+You can also use an app group, which has an identifier that starts with the `group.` prefix, as a Keychain Access Group. For more information, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/Security/sharing-access-to-keychain-items-among-a-collection-of-apps).
+
 ## See Also
 
 - [Configuring an associated domain](configuring-an-associated-domain.md)

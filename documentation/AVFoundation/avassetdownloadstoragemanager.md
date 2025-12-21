@@ -20,10 +20,10 @@ class AVAssetDownloadStorageManager
 
 ## Topics
 
-### Accessing the Shared Manager
+### Accessing the shared manager
 - [class func shared() -> AVAssetDownloadStorageManager](avassetdownloadstoragemanager/shared.md)
   Returns the shared storage manager instance.
-### Setting the Storage Policy
+### Setting the storage policy
 - [func storageManagementPolicy(for: URL) -> AVAssetDownloadStorageManagementPolicy?](avassetdownloadstoragemanager/storagemanagementpolicy(for:).md)
   Returns the storage management policy for a downloaded asset.
 - [func setStorageManagementPolicy(AVAssetDownloadStorageManagementPolicy, for: URL)](avassetdownloadstoragemanager/setstoragemanagementpolicy(_:for:).md)

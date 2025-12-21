@@ -20,7 +20,7 @@ object Build
 - [object Build.Attributes](build/attributes-data.dictionary.md)
   Attributes that describe a Builds resource.
 - [object Build.Relationships](build/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

@@ -22,7 +22,7 @@ enum TimeControlStatus
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVPlayer.TimeControlStatus.paused](avplayer/timecontrolstatus-swift.enum/paused.md)
   A state that indicates the player paused playback indefinitely.
 - [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](avplayer/timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md)

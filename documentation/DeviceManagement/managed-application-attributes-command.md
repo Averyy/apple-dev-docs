@@ -14,7 +14,9 @@ Query attributes in managed apps on a device.
 
 #### Discussion
 
-This command allows the server to get or set attributes on managed apps.
+This command allows the server to get attributes of managed apps.
+
+The response doesn’t include apps that Declarative Device Management is managing.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
@@ -48,14 +50,16 @@ The request object the server returns for the Managed Application Attributes Com
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Apply Redemption Code](apply-redemption-code-command.md)
-  Complete the installation of an app using a redemption code.
-- [Remove Application](remove-application-command.md)
-  Remove an installed managed app.
-- [Validate Applications](validate-applications-command.md)
-  Force validation of developer and universal provisioning profiles for enterprise apps.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
 - [Managed Application List](managed-application-list-command.md)
   Get the status of all managed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
+- [Apply Redemption Code](apply-redemption-code-command.md)
+  Complete the installation of an app using a redemption code.
+- [Validate Applications](validate-applications-command.md)
+  Force validation of developer and universal provisioning profiles for enterprise apps.
 - [Managed Application Configuration](managed-application-configuration-command.md)
   Get app configurations from managed apps on a device.
 - [Managed Application Feedback](managed-application-feedback-command.md)

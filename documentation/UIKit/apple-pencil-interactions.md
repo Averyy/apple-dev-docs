@@ -26,15 +26,13 @@ Apple Pencil interactions let a person perform certain actions in your app by do
 - [Handling input from Apple Pencil](handling-input-from-apple-pencil.md)
   Learn how to detect and respond to touches from Apple Pencil.
 ### Apple Pencil interactions in SwiftUI
-- [nonisolated func onPencilDoubleTap(perform action: @escaping (PencilDoubleTapGestureValue) -> Void) -> some View
-](../SwiftUI/View/onPencilDoubleTap(perform:).md)
+- [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](../SwiftUI/View/onPencilDoubleTap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [struct PencilDoubleTapGestureValue](../SwiftUI/PencilDoubleTapGestureValue.md)
   Describes the value of an Apple Pencil double-tap gesture.
-- [nonisolated func onPencilSqueeze(perform action: @escaping (PencilSqueezeGesturePhase) -> Void) -> some View
-](../SwiftUI/View/onPencilSqueeze(perform:).md)
+- [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](../SwiftUI/View/onPencilSqueeze(perform:).md)
   Adds an action to perform when the user squeezes their Apple Pencil.
-- [@frozen enum PencilSqueezeGesturePhase](../SwiftUI/PencilSqueezeGesturePhase.md)
+- [enum PencilSqueezeGesturePhase](../SwiftUI/PencilSqueezeGesturePhase.md)
   Describes the phase and value of an Apple Pencil squeeze gesture.
 - [struct PencilSqueezeGestureValue](../SwiftUI/PencilSqueezeGestureValue.md)
   Describes the value of an Apple Pencil squeeze gesture.

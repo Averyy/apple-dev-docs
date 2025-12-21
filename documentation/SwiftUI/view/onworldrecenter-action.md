@@ -6,7 +6,7 @@
 Adds an action to perform when recentering the view with the digital crown.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

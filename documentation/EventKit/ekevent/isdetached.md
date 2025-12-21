@@ -21,7 +21,7 @@ var isDetached: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if and only if the event is part of a repeating event and one or more of its attributes have been modified from the repeating event’s default attributes.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if and only if the event is part of a repeating event and one or more of its attributes have been modified from the repeating event’s default attributes.
 
 ## See Also
 

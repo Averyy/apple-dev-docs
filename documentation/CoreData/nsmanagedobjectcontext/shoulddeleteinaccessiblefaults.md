@@ -24,17 +24,17 @@ var shouldDeleteInaccessibleFaults: Bool { get set }
 
 Use this property to control how the context behaves when it encounters an  — an object with no underlying data in the persistent store. For example, you might fetch an object that has a to-many relationship, but then a background context deletes the related objects from the store before you traverse that relationship.
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the context returns a managed object with the following characteristics:
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the context returns a managed object with the following characteristics:
 
 - The object’s attributes, including scalars, nullable, and mandatory attributes are all set to `nil` or `0`.
-- The object’s [`isDeleted`](nsmanagedobject/isdeleted.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), which adds the object to the context’s [`deletedObjects`](nsmanagedobjectcontext/deletedobjects.md) set.
+- The object’s [`isDeleted`](nsmanagedobject/isdeleted.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), which adds the object to the context’s [`deletedObjects`](nsmanagedobjectcontext/deletedobjects.md) set.
 - The object is exempt from validation rules, including optionality, because the object is nonexistent and the context discards it when you next call [`save()`](nsmanagedobjectcontext/save().md) or [`reset()`](nsmanagedobjectcontext/reset().md).
 
 When the context returns an object with these characteristics, your app can continue running and process this object in the same way as any other deleted object.
 
-When this property is set to [`false`](https://developer.apple.com/documentation/swift/false), the context throws an exception.
+When this property is set to [`false`](https://developer.apple.com/documentation/Swift/false), the context throws an exception.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 > **Note**:  You can use query generations to pin a context to a stable view of the store’s data and isolate that context from changes that other contexts or processes make. For more information, see [`Accessing data when the store changes`](accessing-data-when-the-store-changes.md).
 

@@ -6,11 +6,11 @@
 Produces a response stream to a prompt.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,10 @@ final func streamResponse(to prompt: Prompt, options: GenerationOptions = Genera
 #### Return Value
 
 A response stream that produces aggregated tokens.
+
+#### Discussion
+
+> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelSession.GenerationError.rateLimited(_:)`](languagemodelsession/generationerror/ratelimited(_:).md) errors.
 
 ## Parameters
 
@@ -33,14 +37,14 @@ A response stream that produces aggregated tokens.
   Produces a response stream to a prompt and schema.
 - [func streamResponse(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:).md)
   Produces a response stream to a prompt and schema.
-- [func streamResponse<Content>(generating: Content.Type, options: GenerationOptions, includeSchemaInPrompt: Bool, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:options:includeschemainprompt:prompt:).md)
-  Produces a response stream for a type.
-- [func streamResponse(options: GenerationOptions, schema: GenerationSchema, includeSchemaInPrompt: Bool, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(options:schema:includeschemainprompt:prompt:).md)
-  Produces a response stream to a prompt and schema.
 - [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:prompt:).md)
   Produces a response stream to a prompt.
+- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md)
+  Produces a response stream for a type.
+- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:).md)
+  Produces a response stream to a prompt and schema.
 - [LanguageModelSession.ResponseStream](languagemodelsession/responsestream.md)
-  A structure that  stores the output of a response stream.
+  An async sequence of snapshots of partially generated content.
 - [struct GeneratedContent](generatedcontent.md)
   A type that represents structured, generated content.
 - [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)

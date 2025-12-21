@@ -21,13 +21,15 @@ struct NSFileProviderModifyItemOptions
 
 ### Choosing Modify Item Options
 - [static var mayAlreadyExist: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/mayalreadyexist.md)
-  An option indicating that the changes may already exist in your remote storage.
+  An option that indicates the changes may already exist in your remote storage.
+- [static var failOnConflict: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/failonconflict.md)
+  An option to fail an upload in the event of a version conflict.
 ### Creating Modify Options
 - [init(rawValue: UInt)](nsfileprovidermodifyitemoptions/init(rawvalue:).md)
   Creates an option instance from the raw value.
 ### Type Properties
-- [static var failOnConflict: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/failonconflict.md)
-  If the base version of the item trying to be uploaded doesn’t match the version of the file on server, the call to modifyItem should fail with a NSFileProviderErrorLocalVersionConflictingWithServer error.
+- [static var isImmediateUploadRequestByPresentingApplication: NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions/isimmediateuploadrequestbypresentingapplication.md)
+  An option to require the upload to complete before calling the completion handler.
 
 ## Relationships
 

@@ -21,9 +21,9 @@ var isElementFullscreenEnabled: Bool { get set }
 
 #### Discussion
 
-The default value for this preference is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this preference is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-> ❗ **Important**:  When this value is [`true`](https://developer.apple.com/documentation/swift/true) and a page requests full-screen mode, the system removes the [`WKWebView`](wkwebview.md) from your app’s view hierarchy.
+> ❗ **Important**:  When this value is [`true`](https://developer.apple.com/documentation/Swift/true) and a page requests full-screen mode, the system removes the [`WKWebView`](wkwebview.md) from your app’s view hierarchy.
 
 ## See Also
 

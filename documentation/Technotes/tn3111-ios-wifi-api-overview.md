@@ -8,6 +8,8 @@ Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 
 iOS does not have a general-purpose API for Wi-Fi scanning and configuration.  However, it does support a wide range of special-purpose Wi-Fi APIs.  This technote lists some use cases supported by those special-purpose APIs.
 
+While the focus of this technote is iOS, these APIs are also available on iPadOS.
+
 #### Navigate an Internet Hotspot
 
 If your app helps the user navigate an internet hotspot — a Wi-Fi network where the user must interact with the network to gain access to the wider internet — adopt the [`Hotspot helper`](https://developer.apple.com/documentation/NetworkExtension/hotspot-helper) API.
@@ -15,6 +17,8 @@ If your app helps the user navigate an internet hotspot — a Wi-Fi network wher
 To use `NEHotspotHelper` you must first be granted a special entitlement (`com.apple.developer.networking.HotspotHelper`) by Apple.  For information on how to apply for this, see [`Hotspot helper`](https://developer.apple.com/documentation/NetworkExtension/hotspot-helper).
 
 > ❗ **Important**: `NEHotspotHelper` is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location.
+
+iOS 26 introduced support for hotspot helper app extensions.  Adopt these to improve the efficiency, reliability, and privacy of your hotspot helper app.
 
 #### Add an Accessory to the Users Network
 
@@ -39,14 +43,20 @@ Some apps need to configure the iOS device to permanently join a Wi-Fi network, 
 
 #### Peer to Peer Networking
 
-If your goal is to communicate with other nearby devices, look at:
+If your goal is to communicate with nearby devices and accessories without configuring a Wi-Fi network, you have two options:
 
-- [`Network`](https://developer.apple.com/documentation/Network) framework
-- [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) framework
+- Wi-Fi Aware™ (also known as Neighbor Awareness Networking or NAN)
+- Apple peer-to-peer Wi-Fi
 
-Both of these support networking over peer-to-peer Wi-Fi.  In Network framework you must opt in to this via the [`includePeerToPeer`](https://developer.apple.com/documentation/Network/NWParameters/includePeerToPeer) property.  For more information about peer-to-peer networking, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
+iOS introduced support for Wi-Fi Aware in iOS 26.  It’s supported on iPhone 12 and later.  See the [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware) framework documentation for more details.
 
-> ❗ **Important**: The on-the-wire protocol used by these peer-to-peer networking APIs is not documented for third-party use, so this technique only works between Apple devices.
+Wi-Fi Aware is an industry standard specification, opening up the possibility of communicating with non-Apple devices and accessories.
+
+Apple peer-to-peer Wi-Fi dates all the way back to iOS 7.  It works on all iOS, iPadOS, macOS, tvOS, and visionOS devices.  For information about networking APIs that support Apple peer-to-peer Wi-Fi, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
+
+> **Note**: A common misconception is that Multipeer Connectivity is the only way to use Apple peer-to-peer Wi-Fi. That’s not the case.  See [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md) for the full story.
+
+Apple peer-to-peer Wi-Fi is not documented for third-party use, so this mechanism only works between Apple devices.
 
 #### Location Tracking
 
@@ -54,10 +64,11 @@ If you’d like to use Wi-Fi data to determine the device’s location, use Core
 
 #### Current Wi Fi Network
 
-If you need to know the name of the device’s current Wi-Fi network, call [`fetchCurrent(completionHandler:)`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotNetwork/fetchCurrent(completionHandler:)).  That method requires iOS 14 or later.  On older systems, call [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/systemconfiguration/1614126-cncopycurrentnetworkinfo).
+If you need to know the name of the device’s current Wi-Fi network, call [`fetchCurrent(completionHandler:)`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotNetwork/fetchCurrent(completionHandler:)).  That method requires iOS 14 or later.  On older systems, call [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/SystemConfiguration/CNCopyCurrentNetworkInfo).
 
 #### Revision History
 
+-  Added information about hotspot helper app extensions and Wi-Fi Aware, both new in iOS 26.
 -  Added information about AccessorySetupKit.  Added a link to TN3151.  Made other minor editorial changes.
 -  Made minor editorial changes.
 -  Republished as TN3111.  Broke the content into task-focused sections.  Added a link to [`Configuring a Wi-Fi accessory to join a network`](https://developer.apple.com/documentation/NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network).  Added a reference to [`fetchCurrent(completionHandler:)`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotNetwork/fetchCurrent(completionHandler:)).  Updated the text for the new publication platform.
@@ -66,6 +77,24 @@ If you need to know the name of the device’s current Wi-Fi network, call [`fet
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -78,24 +107,6 @@ If you need to know the name of the device’s current Wi-Fi network, call [`fet
   Inspect your active StoreKit configuration file for unexpected configurations.
 - [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
   Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
-- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
-  Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
 
 
 ---

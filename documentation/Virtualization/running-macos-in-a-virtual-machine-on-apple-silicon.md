@@ -6,14 +6,14 @@ Install and run macOS in a virtual machine using the Virtualization framework.
 
 **Availability**:
 - macOS 14.0+
-- Xcode 26.0+ (Beta)
+- Xcode 26.0+
 
 #### Overview
 
 This sample code project demonstrates how to install and run macOS virtual machines (VMs) on Apple silicon. The Xcode project includes two separate apps:
 
 - `InstallationTool`, a command line utility that installs macOS from a restore image, which is a file with a `.ipsw` file extension, onto a VM. You can use this tool to download the restore image of the most current macOS release from the network, or with your own restore image. The utility creates a VM bundle and stores the resulting VM images in your Home directory.
-- `macOSVirtualMachineSampleApp` is a Mac app that runs the macOS VM that `InstallationTool` installs. You use `macOSVirtualMachineSampleApp` to launch and control the macOS VM that loads and runs macOS from the VM bundle.
+- `macOSVirtualMachineSampleApp` is a Mac app that runs the macOS VM that `InstallationTool` installs. You use `macOSVirtualMachineSampleApp` to launch and control the macOS VM that loads and runs macOS from the VM bundle. This app includes entitlements to enable it to use Virtualization and access the VM’s’ audio input, such as the microphone.
 
 There are four build targets in this project that represent the `InstallationTool` and the `macOSVirtualMachineSampleApp`, one set of targets each for Swift and Objective-C versions of the apps. You can use either version, they’re functionally identical.
 

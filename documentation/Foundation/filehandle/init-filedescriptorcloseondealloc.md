@@ -26,7 +26,7 @@ An initialized file handle object.
 
 #### Discussion
 
-If `flag` is [`false`](https://developer.apple.com/documentation/swift/false), the file descriptor you pass in to this method isn’t owned by the file handle object. In such a case, you’re responsible for closing the file descriptor at some point after disposing of the file handle object. If you want the file handle object to close the descriptor for you automatically, pass [`true`](https://developer.apple.com/documentation/swift/true) for the `flag` parameter.
+If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), the file descriptor you pass in to this method isn’t owned by the file handle object. In such a case, you’re responsible for closing the file descriptor at some point after disposing of the file handle object. If you want the file handle object to close the descriptor for you automatically, pass [`true`](https://developer.apple.com/documentation/Swift/true) for the `flag` parameter.
 
 ## Parameters
 

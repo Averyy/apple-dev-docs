@@ -17,7 +17,7 @@ var autoSaveTextFields: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), text fields are forced to give up their responder status before [`shouldUnselect`](nspreferencepane/shouldunselect.md) is called on the preference pane. If it is [`false`](https://developer.apple.com/documentation/swift/false), the preference pane is responsible for forcing text fields to give up their responder status before saving them. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), text fields are forced to give up their responder status before [`shouldUnselect`](nspreferencepane/shouldunselect.md) is called on the preference pane. If it is [`false`](https://developer.apple.com/documentation/Swift/false), the preference pane is responsible for forcing text fields to give up their responder status before saving them. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

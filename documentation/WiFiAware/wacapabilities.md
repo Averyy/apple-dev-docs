@@ -6,8 +6,8 @@
 A structure that checks the host device’s supported features and capabilities.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ struct WACapabilities
 - [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)
   The maximum number of unique services your app can publish simultaneously.
 - [static var maximumSubscribableServices: Int](wacapabilities/maximumsubscribableservices.md)
-  The maximum number of unique services to which your app can simultaneously subscribe.
+  The maximum number of unique services your app can simultaneously subscribe to.
 
 ## Relationships
 

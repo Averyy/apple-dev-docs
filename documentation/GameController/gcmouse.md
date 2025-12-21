@@ -42,6 +42,15 @@ To get a mouse object and its input values, register for the [`GCMouseDidConnect
 ### Getting input values
 - [var mouseInput: GCMouseInput?](gcmouse/mouseinput.md)
   The controller profile for the mouse device.
+### Structures
+- [GCMouse.DidBecomeCurrentMessage](gcmouse/didbecomecurrentmessage.md)
+  A message that posts after a mouse becomes the most recently used mouse.
+- [GCMouse.DidConnectMessage](gcmouse/didconnectmessage.md)
+  A message that posts after a mouse accessory connects to the device.
+- [GCMouse.DidDisconnectMessage](gcmouse/diddisconnectmessage.md)
+  A message that posts after a mouse accessory disconnects from the device.
+- [GCMouse.DidStopBeingCurrentMessage](gcmouse/didstopbeingcurrentmessage.md)
+  A message that posts after a mouse stops being the most recently used mouse.
 
 ## Relationships
 

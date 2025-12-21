@@ -36,6 +36,8 @@ For more on Camera Assistance, see [`isCameraAssistanceEnabled`](ninearbypeercon
   A Boolean value that indicates whether the device produces instantaneous direction measurements to nearby objects.
 - [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
+- [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
+  A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
 
 
 ---

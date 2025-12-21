@@ -2,7 +2,11 @@
 
 **Framework**: AppKit
 
-Values that indicate the unit values of a ruler or layout area (used with the [`NSAccessibility`](nsaccessibility.md), [`NSAccessibility`](nsaccessibility.md), and [`NSAccessibility`](nsaccessibility.md) properties).
+Values that indicate the unit values of a ruler or layout area.
+
+#### Overview
+
+Use these values with the [`units`](nsaccessibility-swift.struct/attribute/units.md), [`horizontalUnits`](nsaccessibility-swift.struct/attribute/horizontalunits.md), and [`verticalUnits`](nsaccessibility-swift.struct/attribute/verticalunits.md) properties.
 
 ## Topics
 

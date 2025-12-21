@@ -33,7 +33,7 @@ let filter = MKAddressFilter(including: [.locality,  .subLocality])
 let result = filter.includes(.locality)
 ```
 
-The method returns `true` because `filter` includes [`Locality`](https://developer.apple.com/documentation/MapKitJS/mapkit.AddressCategory/Locality).
+The method returns `true` because `filter` includes [`Locality`](https://developer.apple.com/documentation/MapKitJS/AddressCategory/Locality).
 
 ## Parameters
 

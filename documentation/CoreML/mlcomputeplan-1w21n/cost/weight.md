@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The estimated workload of executing the operation over the total model evaluation. The value is between [0.0, 1.0].
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

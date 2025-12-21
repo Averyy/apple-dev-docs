@@ -1,4 +1,4 @@
-# Rendering to Multiple Viewports in a Draw Command
+# Rendering to multiple viewports in a draw command
 
 **Framework**: Metal
 
@@ -21,7 +21,7 @@ For the maximum number of viewports you can use with each GPU family, see:
 
 ##### Add Viewport Selection to Your Vertex Shader
 
-To specify which viewport a primitive should be rendered into, add a vertex output with the `[[viewport_array_index]]` attribute. Your vertex shader must set this value so that Metal knows which viewport to render into.
+To specify which viewport a primitive should be rendered into, add a vertex output with the `[[viewport_array_index]]` attribute. Your vertex shader needs to set this value so that Metal knows which viewport to render into.
 
 The example below uses instanced rendering to primitives to multiple viewports. It adds a `viewPort` field to the vertex output to specify the target slice. The target viewport is passed in as part of the per-instance properties, and copied to the vertex output.
 
@@ -43,7 +43,7 @@ vertex ColorInOut vertexTransform (
 }
 ```
 
-Your vertex function must return the same index for all vertices that make up any given primitive.
+Your vertex function needs to return the same index for all vertices that make up any given primitive.
 
 The rasterization stage uses the selected viewport and associated scissor rectangle to transform the vertex outputs and then passes the data over to the fragment stage. If you need to know which viewport is being rendered to inside your fragment shader, you can reference the same field that you set in the vertex output.
 
@@ -55,9 +55,9 @@ Specify the same number of scissor rectangles and viewports. Coordinate your cod
 
 ## See Also
 
-- [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
   Use indirect commands if you don’t know your draw or dispatch call arguments when you encode the command.
-- [Rendering to Multiple Texture Slices in a Draw Command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
   Select a destination texture slice in your vertex shader.
 
 

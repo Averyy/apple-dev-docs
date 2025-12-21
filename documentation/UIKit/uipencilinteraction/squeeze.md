@@ -9,6 +9,7 @@ An interaction that represents a squeeze on Apple Pencil.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

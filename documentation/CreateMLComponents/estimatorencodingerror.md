@@ -25,16 +25,11 @@ enum EstimatorEncodingError
 ### Analyzing the error
 - [EstimatorEncodingError.invalidState(debugDescription:)](estimatorencodingerror/invalidstate(debugdescription:).md)
   An error that indicates that an estimator cannot perform encoding from its current state.
-- [var errorDescription: String?](estimatorencodingerror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (EstimatorEncodingError, EstimatorEncodingError) -> Bool](estimatorencodingerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
+### Getting the debug description
+- [var debugDescription: String](estimatorencodingerror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](estimatorencodingerror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](estimatorencodingerror/equatable-implementations.md)
-- [Error Implementations](estimatorencodingerror/error-implementations.md)
-- [LocalizedError Implementations](estimatorencodingerror/localizederror-implementations.md)
 
 ## Relationships
 

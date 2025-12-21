@@ -16,7 +16,7 @@ var findIndicatorNeedsUpdate: Bool { get set }
 
 #### Discussion
 
-If the [`client`](nstextfinder/client.md) object’s document is not scrolled by an instance of `NSScrollView`, then set this property to [`true`](https://developer.apple.com/documentation/swift/true) when scrolling occurs to cause the find indicator to be updated appropriately.
+If the [`client`](nstextfinder/client.md) object’s document is not scrolled by an instance of `NSScrollView`, then set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when scrolling occurs to cause the find indicator to be updated appropriately.
 
 
 ---

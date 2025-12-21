@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-An `NSNumber` object containing a Boolean value—if [`true`](https://developer.apple.com/documentation/swift/true) only the current selection is printed.
+An `NSNumber` object containing a Boolean value that specifies whether to print the current selection.
 
 **Availability**:
 - macOS 10.6+
@@ -14,30 +14,34 @@ An `NSNumber` object containing a Boolean value—if [`true`](https://developer.
 static let selectionOnly: NSPrintInfo.AttributeKey
 ```
 
+#### Discussion
+
+If [`true`](https://developer.apple.com/documentation/Swift/true), only the current selection is printed.
+
 ## See Also
 
 - [static let allPages: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/allpages.md)
-  An `NSNumber` object containing a Boolean value—if [`true`](https://developer.apple.com/documentation/swift/true), includes all pages in output.
+  An `NSNumber` object containing a Boolean value that specifies whether to include all pages.
 - [static let copies: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/copies.md)
   An `NSNumber` object containing an integer—the number of copies to spool.
 - [static let detailedErrorReporting: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/detailederrorreporting.md)
-  An `NSNumber` object containing a Boolean value—if [`true`](https://developer.apple.com/documentation/swift/true), produce detailed reports when an error occurs.
+  An `NSNumber` object containing a Boolean value that specifies whether to produce detailed error reports.
 - [static let faxNumber: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/faxnumber.md)
   An `NSString` object that specifies a fax number.
 - [static let firstPage: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/firstpage.md)
   An `NSNumber` object containing an integer value that specifies the first page in the print job.
 - [static let headerAndFooter: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/headerandfooter.md)
-  An `NSNumber` object containing a Boolean value—if [`true`](https://developer.apple.com/documentation/swift/true), a standard header and footer are added outside the margins of each page.
+  An `NSNumber` object containing a Boolean value that specifies whether to include a header and footer.
 - [static let jobDisposition: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobdisposition.md)
   An `NSString` object that specifies the job disposition.
 - [static let jobSavingFileNameExtensionHidden: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobsavingfilenameextensionhidden.md)
-  A Boolean [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) indicating whether the job’s file name extension should be hidden when the [`jobDisposition`](nsprintinfo/jobdisposition-swift.property.md) is [`save`](nsprintinfo/jobdisposition-swift.struct/save.md). The default is [`false`](https://developer.apple.com/documentation/swift/false).
+  An `NSNumber` object containing a Boolean value that specifies whether to hide the job’s file name extension.
 - [static let jobSavingURL: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/jobsavingurl.md)
   An `NSURL` containing the location to which the job file will be saved when the [`jobDisposition`](nsprintinfo/jobdisposition-swift.property.md) is [`save`](nsprintinfo/jobdisposition-swift.struct/save.md).
 - [static let lastPage: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/lastpage.md)
   An `NSNumber` object containing an integer value that specifies the last page in the print job.
 - [static let mustCollate: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/mustcollate.md)
-  An `NSNumber` object containing a Boolean value—if [`true`](https://developer.apple.com/documentation/swift/true), collates output.
+  An `NSNumber` object containing a Boolean value that specifies whether to collate output.
 - [static let pagesAcross: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/pagesacross.md)
   An `NSNumber` object that specifies the number of logical pages to be tiled horizontally on a physical sheet of paper.
 - [static let pagesDown: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/pagesdown.md)

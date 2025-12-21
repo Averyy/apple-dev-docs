@@ -33,6 +33,9 @@ MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
 
+# Server version
+SERVER_VERSION = "1.1.0"
+
 # Debug logging
 logger.info(f"Using Meilisearch URL: {MEILISEARCH_URL}")
 logger.info(f"Using API Key: {MEILISEARCH_API_KEY[:8]}... (first 8 chars)")
@@ -44,6 +47,10 @@ MAX_TOKEN_BUDGET = 25000     # Roughly 100k characters
 # Global client
 meili_client = None
 meili_index = None
+
+# Stateful framework selection
+active_framework: Optional[str] = None
+available_frameworks_cache: Optional[Dict[str, int]] = None
 
 
 def calculate_relevance_score(hit: Dict, query: str, search_framework: str = "") -> float:
@@ -270,7 +277,7 @@ def handle_initialize(params):
         },
         "serverInfo": {
             "name": "apple-docs",
-            "version": "1.0.0"
+            "version": SERVER_VERSION
         }
     }
 
@@ -341,13 +348,13 @@ def handle_list_tools(params):
             },
             {
                 "name": "expand_result",
-                "description": "Get full content for a specific documentation file",
+                "description": "Get full documentation for a symbol or file. Accepts symbol names (e.g., 'Button', 'TabView') or file paths from search results. Uses active framework if set.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
                         "file_path": {
                             "type": "string",
-                            "description": "The file path from a search result"
+                            "description": "Symbol name (e.g., 'Button', 'NavigationStack') or file path from search results"
                         },
                         "sections": {
                             "type": "array",
@@ -360,7 +367,42 @@ def handle_list_tools(params):
             },
             {
                 "name": "list_frameworks",
-                "description": "List available Apple frameworks",
+                "description": "List available Apple frameworks with document counts. Use this to discover frameworks before searching.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "query": {
+                            "type": "string",
+                            "description": "Optional filter to search framework names (e.g., 'UI', 'Core', 'Kit')"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "choose_framework",
+                "description": "Select a framework to scope all subsequent searches. Once set, searches will default to this framework unless overridden.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "framework": {
+                            "type": "string",
+                            "description": "Framework name to select (e.g., 'SwiftUI', 'UIKit', 'Foundation'). Use 'clear' to remove selection."
+                        }
+                    },
+                    "required": ["framework"]
+                }
+            },
+            {
+                "name": "current_framework",
+                "description": "Show the currently selected framework and available next steps",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {}
+                }
+            },
+            {
+                "name": "get_version",
+                "description": "Get the Apple Docs MCP server version and status information",
                 "inputSchema": {
                     "type": "object",
                     "properties": {}
@@ -387,6 +429,12 @@ def handle_call_tool(params):
             return expand_result(arguments)
         elif tool_name == "list_frameworks":
             return list_frameworks(arguments)
+        elif tool_name == "choose_framework":
+            return choose_framework(arguments)
+        elif tool_name == "current_framework":
+            return current_framework(arguments)
+        elif tool_name == "get_version":
+            return get_version(arguments)
         else:
             return {
                 "content": [{"type": "text", "text": f"Unknown tool: {tool_name}"}],
@@ -399,8 +447,64 @@ def handle_call_tool(params):
             "isError": True
         }
 
+def build_no_results_response(query: str, framework: str, platform: str, has_wildcards: bool) -> Dict:
+    """Build a helpful response when no results are found."""
+    output = [f"No results found for '{query}'"]
+
+    # Add context about current filters
+    if framework:
+        output.append(f"   Framework: {framework}")
+    if platform and platform != "all":
+        output.append(f"   Platform: {platform}")
+
+    output.append("")
+    output.append("💡 **Suggestions:**")
+
+    # Check if query looks like a specific symbol (PascalCase)
+    import re
+    is_symbol_like = bool(re.match(r'^[A-Z][a-zA-Z0-9]*$', query.replace('*', '').replace('?', '')))
+
+    if has_wildcards:
+        output.extend([
+            "   • Try a different wildcard pattern (e.g., `*View`, `UI*`, `*Controller`)",
+            "   • Remove wildcards for broader search",
+        ])
+    elif is_symbol_like:
+        output.extend([
+            f"   • Try `expand_result` if you have a file path",
+            f"   • Try wildcard: `*{query}*` to find variations",
+            f"   • Check spelling - Apple uses specific naming conventions",
+        ])
+    else:
+        output.extend([
+            "   • Try simpler keywords (e.g., 'button' instead of 'custom button style')",
+            "   • Use wildcards: `Button*` or `*View`",
+            "   • Try synonyms (e.g., 'modal' vs 'sheet', 'alert' vs 'dialog')",
+        ])
+
+    if framework:
+        output.append(f"   • Try `choose_framework {{ \"framework\": \"clear\" }}` to search all frameworks")
+    else:
+        output.append("   • Try `choose_framework` to focus on a specific framework")
+
+    output.extend([
+        "",
+        "**Common patterns:**",
+        "   • `Button` - Direct symbol search",
+        "   • `*View` - Find all View types",
+        "   • `UI*` - Find all UI-prefixed types",
+        "   • `async await` - Search concepts",
+    ])
+
+    return {
+        "content": [{"type": "text", "text": "\n".join(output)}]
+    }
+
+
 def search_apple_docs(args):
     """Search Apple docs with smart token optimization."""
+    global active_framework
+
     query = args.get("query", "")
     framework = args.get("framework", "")
     strict_framework = args.get("strict_framework", False)
@@ -410,12 +514,37 @@ def search_apple_docs(args):
     token_budget = min(MAX_TOKEN_BUDGET, max(1000, args.get("token_budget", DEFAULT_TOKEN_BUDGET)))
     summary_mode = args.get("summary_mode", False)
     offset = max(0, args.get("offset", 0))
-    
+
     if not query.strip():
         return {
             "content": [{"type": "text", "text": "Error: Query cannot be empty"}],
             "isError": True
         }
+
+    # Use active framework if no framework specified
+    if not framework and active_framework:
+        framework = active_framework
+        # When using active framework, default to strict mode for better relevance
+        if not args.get("strict_framework"):
+            strict_framework = True
+
+    # Handle wildcard patterns (*, ?)
+    original_query = query
+    has_wildcards = '*' in query or '?' in query
+    wildcard_pattern = None
+
+    if has_wildcards:
+        import re
+        # Convert wildcard pattern to regex for post-filtering
+        # First escape all regex special chars, then convert wildcards
+        escaped = re.escape(query)
+        wildcard_pattern = escaped.replace(r'\*', '.*').replace(r'\?', '.')
+        wildcard_pattern = re.compile(f'^{wildcard_pattern}$', re.IGNORECASE)
+        # For Meilisearch, strip wildcards and search for the non-wildcard parts
+        search_query = query.replace('*', ' ').replace('?', ' ').strip()
+        if not search_query:
+            search_query = ""  # Will match all, then filter
+        query = search_query if search_query else ""
     
     # Build filter
     filters = []
@@ -446,12 +575,21 @@ def search_apple_docs(args):
     # Perform search
     results = meili_index.search(query, search_params)
     hits = results.get("hits", [])
-    
+
+    # Apply wildcard filtering if pattern was used
+    if has_wildcards and wildcard_pattern and hits:
+        filtered_hits = []
+        for hit in hits:
+            api_name = hit.get("api_name", "")
+            title = hit.get("title", "")
+            # Match against api_name or title
+            if wildcard_pattern.match(api_name) or wildcard_pattern.match(title):
+                filtered_hits.append(hit)
+        hits = filtered_hits
+
     if not hits:
-        return {
-            "content": [{"type": "text", "text": f"No results found for '{query}'"}]
-        }
-    
+        return build_no_results_response(original_query, framework, platform, has_wildcards)
+
     # Calculate relevance scores and filter
     scored_hits = []
     for hit in hits:
@@ -481,10 +619,11 @@ def search_apple_docs(args):
     # Format output with token budget management
     output = []
     token_count = 0
-    
+
     # Header with metadata
-    output.append(f"🔍 Search Results: {query}")
-    
+    display_query = original_query if has_wildcards else query
+    output.append(f"🔍 Search Results: {display_query}")
+
     # Calculate result range for clearer display
     if total_relevant > 0:
         start_num = offset + 1
@@ -492,11 +631,20 @@ def search_apple_docs(args):
         output.append(f"Showing {start_num}-{end_num} of {total_relevant} results")
     else:
         output.append(f"No results found")
-    
+
+    if has_wildcards:
+        output.append(f"🔤 Wildcard pattern matching enabled")
     if relevance_threshold > 0:
         output.append(f"Relevance threshold: {relevance_threshold}")
     if framework:
-        mode = " (strict mode)" if strict_framework else ""
+        # Indicate if using active framework vs explicit
+        is_from_active = (not args.get("framework") and active_framework == framework)
+        mode_parts = []
+        if strict_framework:
+            mode_parts.append("strict")
+        if is_from_active:
+            mode_parts.append("from active selection")
+        mode = f" ({', '.join(mode_parts)})" if mode_parts else ""
         output.append(f"Framework: {framework}{mode}")
     if platform != "all":
         output.append(f"Platform: {platform}")
@@ -651,60 +799,121 @@ def search_apple_docs(args):
     }
 
 def expand_result(args):
-    """Expand a specific result to get full content."""
+    """Expand a specific result to get full content. Accepts file paths or symbol names."""
+    global active_framework
+
     file_path = args.get("file_path", "")
     sections = args.get("sections", [])
-    
+
     if not file_path:
         return {
             "content": [{"type": "text", "text": "Error: file_path is required"}],
             "isError": True
         }
-    
-    # Clean up file path - remove backticks if present
-    input_file_path = file_path.strip().strip('`')
-    
-    # Normalize the input path to relative format (documentation/...)
-    # If it's an absolute path, convert it to relative
-    if input_file_path.startswith('/'):
-        # Convert absolute to relative path
-        if 'documentation/' in input_file_path:
-            relative_path = input_file_path[input_file_path.find('documentation/'):]
-        else:
-            # Just use the filename as fallback
-            relative_path = Path(input_file_path).name
-    else:
-        # Already relative, use as-is
-        relative_path = input_file_path
-    
-    # The index stores relative paths, so we can search using exact file path matching
-    # Use a filter for exact path matching
-    results = meili_index.search("", {
-        "filter": f'file_path = "{relative_path}"',
-        "limit": 1,
-        "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
-    })
-    
-    hits = results.get("hits", [])
-    if not hits:
-        # Fallback: try searching by filename only
-        filename = Path(relative_path).name
-        fallback_results = meili_index.search(filename, {
+
+    # Clean up input - remove backticks if present
+    input_value = file_path.strip().strip('`')
+
+    # Detect if this looks like a symbol name vs a file path
+    # Symbol names are typically PascalCase without path separators or extensions
+    import re
+    is_symbol_name = bool(re.match(r'^[A-Z][a-zA-Z0-9]*$', input_value)) and '/' not in input_value and '.' not in input_value
+
+    hits = []
+
+    if is_symbol_name:
+        # Search for symbol by name, optionally scoped to active framework
+        search_params = {
             "limit": 10,
-            "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
-        })
-        
-        # Look for exact path match in fallback results
-        for h in fallback_results.get("hits", []):
-            if h.get("file_path") == relative_path:
+            "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path", "api_name"]
+        }
+
+        # If we have an active framework, filter to it
+        if active_framework:
+            search_params["filter"] = f'framework = "{active_framework}"'
+
+        symbol_results = meili_index.search(input_value, search_params)
+        symbol_hits = symbol_results.get("hits", [])
+
+        # Find exact match on api_name or title
+        for h in symbol_hits:
+            api_name = h.get("api_name", "")
+            title = h.get("title", "")
+            if api_name.lower() == input_value.lower() or title.lower() == input_value.lower():
                 hits = [h]
                 break
-        
+
+        # If no exact match, try the best match
+        if not hits and symbol_hits:
+            # Prefer matches where api_name contains the symbol
+            for h in symbol_hits:
+                if input_value.lower() in h.get("api_name", "").lower():
+                    hits = [h]
+                    break
+
+        # Still no match? Return helpful error with suggestions
         if not hits:
+            suggestions = []
+            for h in symbol_hits[:5]:
+                suggestions.append(f"   • {h.get('api_name', h.get('title', 'Unknown'))} ({h.get('framework', '')})")
+
+            output = [f"Symbol '{input_value}' not found"]
+            if active_framework:
+                output.append(f"   Searched in: {active_framework}")
+
+            if suggestions:
+                output.extend(["", "Similar results:", *suggestions])
+            else:
+                output.extend([
+                    "",
+                    "💡 Try:",
+                    f"   • `search_apple_docs {{ \"query\": \"{input_value}\" }}`",
+                    "   • Check spelling (Apple uses specific naming)",
+                ])
+
             return {
-                "content": [{"type": "text", "text": f"File not found: {relative_path} (normalized from: {input_file_path})"}],
+                "content": [{"type": "text", "text": "\n".join(output)}],
                 "isError": True
             }
+    else:
+        # Original file path logic
+        # Normalize the input path to relative format (documentation/...)
+        if input_value.startswith('/'):
+            # Convert absolute to relative path
+            if 'documentation/' in input_value:
+                relative_path = input_value[input_value.find('documentation/'):]
+            else:
+                relative_path = Path(input_value).name
+        else:
+            relative_path = input_value
+
+        # Search by exact file path
+        results = meili_index.search("", {
+            "filter": f'file_path = "{relative_path}"',
+            "limit": 1,
+            "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
+        })
+
+        hits = results.get("hits", [])
+        if not hits:
+            # Fallback: try searching by filename only
+            filename = Path(relative_path).name
+            fallback_results = meili_index.search(filename, {
+                "limit": 10,
+                "attributesToRetrieve": ["title", "content", "framework", "kind", "url", "file_path"]
+            })
+
+            # Look for exact path match in fallback results
+            for h in fallback_results.get("hits", []):
+                if h.get("file_path") == relative_path:
+                    hits = [h]
+                    break
+
+            if not hits:
+                return {
+                    "content": [{"type": "text", "text": f"File not found: {relative_path}\n\n💡 If this is a symbol name, try: `expand_result {{ \"file_path\": \"Button\" }}`"}],
+                    "isError": True
+                }
     
     hit = hits[0]
     content = hit.get("content", "")
@@ -754,38 +963,262 @@ def extract_section(content: str, section_name: str) -> str:
     
     return ""
 
+def get_framework_counts() -> Dict[str, int]:
+    """Get framework counts, using cache if available."""
+    global available_frameworks_cache
+
+    if available_frameworks_cache is not None:
+        return available_frameworks_cache
+
+    results = meili_index.search("", {
+        "facets": ["framework"],
+        "limit": 0
+    })
+    framework_counts = results.get("facetDistribution", {}).get("framework", {})
+    available_frameworks_cache = framework_counts
+    return framework_counts
+
+
 def list_frameworks(args):
-    """List available frameworks."""
+    """List available frameworks with optional filtering."""
+    global active_framework
+
     try:
-        # Get facet distribution
-        # Note: maxValuesPerFacet is configured in index settings, not search params
-        results = meili_index.search("", {
-            "facets": ["framework"],
-            "limit": 0  # Don't return document hits, just facets
-        })
-        framework_counts = results.get("facetDistribution", {}).get("framework", {})
-        
+        query_filter = args.get("query", "").lower().strip()
+        framework_counts = get_framework_counts()
+
         if not framework_counts:
             return {
                 "content": [{"type": "text", "text": "No frameworks found in the index"}]
             }
-        
+
+        # Filter frameworks if query provided
+        if query_filter:
+            filtered = {k: v for k, v in framework_counts.items()
+                       if query_filter in k.lower()}
+        else:
+            filtered = framework_counts
+
         # Sort by count then name
-        sorted_frameworks = sorted(framework_counts.items(), key=lambda x: (-x[1], x[0]))
-        
-        output = [f"Available Apple Frameworks ({len(sorted_frameworks)} total):", ""]
+        sorted_frameworks = sorted(filtered.items(), key=lambda x: (-x[1], x[0]))
+
+        output = []
+
+        # Show current framework status
+        if active_framework:
+            output.append(f"📍 Currently selected: **{active_framework}**")
+            output.append("")
+
+        if query_filter:
+            output.append(f"Frameworks matching '{query_filter}' ({len(sorted_frameworks)} of {len(framework_counts)} total):")
+        else:
+            output.append(f"Available Apple Frameworks ({len(sorted_frameworks)} total):")
+        output.append("")
+
         for i, (framework, count) in enumerate(sorted_frameworks, 1):
-            output.append(f"{i:3d}. {framework:<30} ({count:,} documents)")
-        
+            marker = "→ " if framework == active_framework else "  "
+            output.append(f"{marker}{i:3d}. {framework:<30} ({count:,} documents)")
+
+        # Add helpful hints
+        output.append("")
+        output.append("💡 **Next steps:**")
+        output.append("   • `choose_framework { \"framework\": \"SwiftUI\" }` - Select a framework")
+        output.append("   • `search_apple_docs { \"query\": \"Button\" }` - Search within selected framework")
+
         return {
             "content": [{"type": "text", "text": "\n".join(output)}]
         }
-        
+
     except Exception as e:
         logger.error(f"List frameworks error: {e}")
         return {
             "content": [{"type": "text", "text": f"Error listing frameworks: {str(e)}"}],
             "isError": True
+        }
+
+
+def choose_framework(args):
+    """Select a framework to scope subsequent searches."""
+    global active_framework, available_frameworks_cache
+
+    framework = args.get("framework", "").strip()
+
+    if not framework:
+        return {
+            "content": [{"type": "text", "text": "Error: framework parameter is required"}],
+            "isError": True
+        }
+
+    # Handle clear command
+    if framework.lower() == "clear":
+        old_framework = active_framework
+        active_framework = None
+        if old_framework:
+            return {
+                "content": [{"type": "text", "text": f"✓ Cleared framework selection (was: {old_framework})\n\nSearches will now include all frameworks."}]
+            }
+        else:
+            return {
+                "content": [{"type": "text", "text": "No framework was selected."}]
+            }
+
+    # Get available frameworks
+    try:
+        framework_counts = get_framework_counts()
+
+        # Case-insensitive match
+        matched_framework = None
+        for fw in framework_counts.keys():
+            if fw.lower() == framework.lower():
+                matched_framework = fw
+                break
+
+        if not matched_framework:
+            # Try partial match
+            partial_matches = [fw for fw in framework_counts.keys()
+                             if framework.lower() in fw.lower()]
+
+            if len(partial_matches) == 1:
+                matched_framework = partial_matches[0]
+            elif len(partial_matches) > 1:
+                suggestions = "\n".join([f"   • {fw}" for fw in partial_matches[:10]])
+                return {
+                    "content": [{"type": "text", "text": f"Multiple frameworks match '{framework}':\n{suggestions}\n\nPlease be more specific."}]
+                }
+            else:
+                # Show similar frameworks
+                similar = [fw for fw in framework_counts.keys()
+                          if any(c in fw.lower() for c in framework.lower())][:5]
+                suggestion_text = ""
+                if similar:
+                    suggestion_text = "\n\nDid you mean:\n" + "\n".join([f"   • {fw}" for fw in similar])
+                return {
+                    "content": [{"type": "text", "text": f"Framework '{framework}' not found.{suggestion_text}\n\nUse `list_frameworks` to see all available frameworks."}],
+                    "isError": True
+                }
+
+        # Set the active framework
+        old_framework = active_framework
+        active_framework = matched_framework
+        doc_count = framework_counts.get(matched_framework, 0)
+
+        output = [
+            f"✓ Selected framework: **{matched_framework}**",
+            f"   {doc_count:,} documents available",
+            ""
+        ]
+
+        if old_framework and old_framework != matched_framework:
+            output.append(f"   (Changed from: {old_framework})")
+            output.append("")
+
+        output.extend([
+            "💡 **Next steps:**",
+            f"   • `search_apple_docs {{ \"query\": \"Button\" }}` - Search within {matched_framework}",
+            f"   • `search_apple_docs {{ \"query\": \"*View\" }}` - Wildcard search for types ending in 'View'",
+            "   • `choose_framework { \"framework\": \"clear\" }` - Clear selection",
+            "   • `current_framework` - Check current selection"
+        ])
+
+        return {
+            "content": [{"type": "text", "text": "\n".join(output)}]
+        }
+
+    except Exception as e:
+        logger.error(f"Choose framework error: {e}")
+        return {
+            "content": [{"type": "text", "text": f"Error selecting framework: {str(e)}"}],
+            "isError": True
+        }
+
+
+def current_framework(args):
+    """Show current framework selection and status."""
+    global active_framework
+
+    output = []
+
+    if active_framework:
+        try:
+            framework_counts = get_framework_counts()
+            doc_count = framework_counts.get(active_framework, 0)
+
+            output.extend([
+                f"📍 **Current Framework:** {active_framework}",
+                f"   {doc_count:,} documents available",
+                "",
+                "💡 **Available actions:**",
+                f"   • `search_apple_docs {{ \"query\": \"your search\" }}` - Search within {active_framework}",
+                "   • `search_apple_docs { \"query\": \"Button\", \"framework\": \"UIKit\" }` - Override with different framework",
+                "   • `choose_framework { \"framework\": \"clear\" }` - Clear selection",
+                "   • `list_frameworks` - Browse all frameworks"
+            ])
+        except Exception:
+            output.extend([
+                f"📍 **Current Framework:** {active_framework}",
+                "",
+                "💡 **Available actions:**",
+                "   • `search_apple_docs { \"query\": \"your search\" }` - Search",
+                "   • `choose_framework { \"framework\": \"clear\" }` - Clear selection"
+            ])
+    else:
+        output.extend([
+            "📍 **No framework selected**",
+            "",
+            "Searches will include all frameworks unless you specify one.",
+            "",
+            "💡 **Getting started:**",
+            "   • `list_frameworks` - Browse available frameworks",
+            "   • `list_frameworks { \"query\": \"UI\" }` - Filter frameworks",
+            "   • `choose_framework { \"framework\": \"SwiftUI\" }` - Select a framework",
+            "   • `search_apple_docs { \"query\": \"Button\" }` - Search all frameworks"
+        ])
+
+    return {
+        "content": [{"type": "text", "text": "\n".join(output)}]
+    }
+
+
+def get_version(args):
+    """Get server version and status information."""
+    try:
+        framework_counts = get_framework_counts()
+        total_frameworks = len(framework_counts)
+        total_docs = sum(framework_counts.values())
+
+        output = [
+            f"🍎 **Apple Docs MCP Server** v{SERVER_VERSION}",
+            "",
+            "**Status:**",
+            f"   • Meilisearch: Connected",
+            f"   • Frameworks indexed: {total_frameworks}",
+            f"   • Documents indexed: {total_docs:,}",
+            ""
+        ]
+
+        if active_framework:
+            output.append(f"   • Active framework: {active_framework}")
+        else:
+            output.append("   • Active framework: None (searching all)")
+
+        output.extend([
+            "",
+            "**Available tools:**",
+            "   • `search_apple_docs` - Search documentation",
+            "   • `expand_result` - Get full content for a result",
+            "   • `list_frameworks` - Browse frameworks",
+            "   • `choose_framework` - Select active framework",
+            "   • `current_framework` - Show current selection",
+            "   • `get_version` - This information"
+        ])
+
+        return {
+            "content": [{"type": "text", "text": "\n".join(output)}]
+        }
+
+    except Exception as e:
+        return {
+            "content": [{"type": "text", "text": f"🍎 **Apple Docs MCP Server** v{SERVER_VERSION}\n\nStatus: Error - {str(e)}"}]
         }
 
 def send_response(request_id, result):

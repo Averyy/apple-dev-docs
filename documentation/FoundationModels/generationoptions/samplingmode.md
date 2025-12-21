@@ -6,11 +6,11 @@
 A type that defines how values are sampled from a probability distribution.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -31,11 +31,6 @@ A model builds its response to a prompt in a loop. At each iteration in the loop
   A mode that considers a variable number of high-probability tokens based on the specified threshold.
 - [static func random(top: Int, seed: UInt64?) -> GenerationOptions.SamplingMode](generationoptions/samplingmode/random(top:seed:).md)
   A sampling mode that considers a fixed number of high-probability tokens.
-### Comparing sampling modes
-- [static func == (GenerationOptions.SamplingMode, GenerationOptions.SamplingMode) -> Bool](generationoptions/samplingmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](generationoptions/samplingmode/equatable-implementations.md)
 
 ## Relationships
 

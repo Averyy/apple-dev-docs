@@ -157,13 +157,13 @@ Be mindful of the performance cost of reinitializing the state object every time
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../Observation/Observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject : AnyObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../Combine/ObservableObject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

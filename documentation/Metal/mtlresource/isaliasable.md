@@ -22,7 +22,7 @@ func isAliasable() -> Bool
 
 #### Return Value
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). The value is [`true`](https://developer.apple.com/documentation/swift/true) only if the [`makeAliasable()`](mtlresource/makealiasable().md) method was previously called on this resource.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). The value is [`true`](https://developer.apple.com/documentation/Swift/true) only if the [`makeAliasable()`](mtlresource/makealiasable().md) method was previously called on this resource.
 
 ## See Also
 

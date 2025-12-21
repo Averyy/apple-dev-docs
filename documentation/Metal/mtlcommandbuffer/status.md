@@ -22,8 +22,8 @@ var status: MTLCommandBufferStatus { get }
 
 ## Mentions
 
-- [Preparing Your Metal App to Run in the Background](preparing-your-metal-app-to-run-in-the-background.md)
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Preparing your Metal app to run in the background](preparing-your-metal-app-to-run-in-the-background.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
 
 #### Discussion
 
@@ -38,7 +38,7 @@ Each command buffer can be in any one of the following states:
 | [`MTLCommandBufferStatus.completed`](mtlcommandbufferstatus/completed.md) | A command buffer’s successful, final state, which indicates the GPU finished running the command buffer’s commands without any problems. |
 | [`MTLCommandBufferStatus.error`](mtlcommandbufferstatus/error.md) | A command buffer’s unsuccessful, final state, which indicates the GPU stopped running the buffer’s commands because of a runtime issue. |
 
-The first two states ([`MTLCommandBufferStatus.notEnqueued`](mtlcommandbufferstatus/notenqueued.md) and [`MTLCommandBufferStatus.enqueued`](mtlcommandbufferstatus/enqueued.md)) both indicate that you can encode commands to the command buffer. You do this by creating an encoder that indirectly adds commands for a pass (see [`Command Encoder Factory Methods`](command-encoder-factory-methods.md)) to the command buffer. Command buffers also have some methods that directly encode commands between passes, such as [`encodeSignalEvent(_:value:)`](mtlcommandbuffer/encodesignalevent(_:value:).md) and [`present(_:)`](mtlcommandbuffer/present(_:).md).
+The first two states ([`MTLCommandBufferStatus.notEnqueued`](mtlcommandbufferstatus/notenqueued.md) and [`MTLCommandBufferStatus.enqueued`](mtlcommandbufferstatus/enqueued.md)) both indicate that you can encode commands to the command buffer. You do this by creating an encoder that indirectly adds commands for a pass (see [`Command encoder factory methods`](command-encoder-factory-methods.md)) to the command buffer. Command buffers also have some methods that directly encode commands between passes, such as [`encodeSignalEvent(_:value:)`](mtlcommandbuffer/encodesignalevent(_:value:).md) and [`present(_:)`](mtlcommandbuffer/present(_:).md).
 
 Each command buffer’s state can only change to a state below it in the table, and ends its life cycle at either [`MTLCommandBufferStatus.completed`](mtlcommandbufferstatus/completed.md) or [`MTLCommandBufferStatus.error`](mtlcommandbufferstatus/error.md).
 
@@ -46,7 +46,7 @@ Each command buffer’s state can only change to a state below it in the table, 
 
 - [enum MTLCommandBufferStatus](mtlcommandbufferstatus.md)
   The discrete states for a command buffer that represent its life cycle stages.
-- [Command Buffer Debugging](command-buffer-debugging.md)
+- [Command buffer debugging](command-buffer-debugging.md)
   Properties and methods for programmatically debugging runtime issues with a command buffer.
 
 

@@ -17,6 +17,10 @@
 var webExtensionController: WKWebExtensionController? { get set }
 ```
 
+#### Discussion
+
+The web extension controller to associate with the web view.
+
 
 ---
 

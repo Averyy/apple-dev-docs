@@ -4,8 +4,8 @@
 **Kind**: protocol
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,9 @@ protocol BackgroundDeliveryExtensionProviding
 
 ### Instance Methods
 - [func didReceiveData(for: [FinanceStore.BackgroundDataType]) async](backgrounddeliveryextensionproviding/didreceivedata(for:).md)
+  Handle changes to data within the finance store.
 - [func willTerminate() async](backgrounddeliveryextensionproviding/willterminate.md)
+  Get alerted when a `BackgroundDeliveryExtension` is about to close.
 
 ## Relationships
 

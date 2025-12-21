@@ -6,7 +6,7 @@
 Localized name of workout, like “Indoor Pickleball”.
 
 **Availability**:
-- iOS 26.0+ (Beta)
+- iOS 26.0+
 
 ## Declaration
 

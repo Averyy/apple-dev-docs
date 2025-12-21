@@ -39,9 +39,6 @@ The date representation includes the year. The format for year is inferred based
 - [static var withFullDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulldate.md)
 - [static var withFullTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulltime.md)
 - [static var withInternetDateTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withinternetdatetime.md)
-- [static var withMonth: ISO8601DateFormatter.Options](iso8601dateformatter/options/withmonth.md)
-- [static var withWeekOfYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withweekofyear.md)
-- [static var withDay: ISO8601DateFormatter.Options](iso8601dateformatter/options/withday.md)
 
 
 ---

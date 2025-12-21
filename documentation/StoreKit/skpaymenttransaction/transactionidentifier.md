@@ -24,7 +24,7 @@ var transactionIdentifier: String? { get }
 
 The contents of this property are undefined except when [`transactionState`](skpaymenttransaction/transactionstate.md) is set to [`SKPaymentTransactionState.purchased`](skpaymenttransactionstate/purchased.md) or [`SKPaymentTransactionState.restored`](skpaymenttransactionstate/restored.md). The [`transactionIdentifier`](skpaymenttransaction/transactionidentifier.md) is a string that uniquely identifies an interaction between the user’s device and the App Store, such as a purchase or restore.
 
-This value has the same format as the transaction’s [`transaction_id`](https://developer.apple.com/documentation/appstorereceipts/transaction_id) in the receipt; however, the values may not be the same.
+This value has the same format as the transaction’s [`transaction_id`](https://developer.apple.com/documentation/AppStoreReceipts/transaction_id) in the receipt; however, the values may not be the same.
 
 ## See Also
 

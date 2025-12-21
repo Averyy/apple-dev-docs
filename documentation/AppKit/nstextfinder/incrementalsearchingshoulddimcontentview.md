@@ -16,9 +16,9 @@ var incrementalSearchingShouldDimContentView: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then when an incremental search begins, the `findBarContainer` instance’s parent `contentView` will be dimmed, except for the locations of the incremental matches. If [`false`](https://developer.apple.com/documentation/swift/false), then the incremental matches will not be highlighted automatically, but you can use incrementalMatchRanges to highlight the matches yourself.
+If [`true`](https://developer.apple.com/documentation/Swift/true), then when an incremental search begins, the `findBarContainer` instance’s parent `contentView` will be dimmed, except for the locations of the incremental matches. If [`false`](https://developer.apple.com/documentation/Swift/false), then the incremental matches will not be highlighted automatically, but you can use incrementalMatchRanges to highlight the matches yourself.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

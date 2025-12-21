@@ -24,7 +24,7 @@ func waitForExistence(timeout: TimeInterval) -> Bool
 
 #### Discussion
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the timeout expires while the element’s [`exists`](xcuielement/exists.md) property equals [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the timeout expires while the element’s [`exists`](xcuielement/exists.md) property equals [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

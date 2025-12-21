@@ -15,6 +15,10 @@
 var name: String { get set }
 ```
 
+#### Discussion
+
+Human readable name of this tap.
+
 
 ---
 

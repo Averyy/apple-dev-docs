@@ -6,7 +6,7 @@
 Gets the number of authorization results in a collection.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

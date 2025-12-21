@@ -25,9 +25,9 @@ var clipsToBounds: Bool { get set }
 
 #### Discussion
 
-Setting this value to [`true`](https://developer.apple.com/documentation/swift/true) causes subviews to be clipped to the bounds of the view. If set to [`false`](https://developer.apple.com/documentation/swift/false), subviews whose frames extend beyond the visible bounds of the view aren’t clipped.
+Setting this value to [`true`](https://developer.apple.com/documentation/Swift/true) causes subviews to be clipped to the bounds of the view. If set to [`false`](https://developer.apple.com/documentation/Swift/false), subviews whose frames extend beyond the visible bounds of the view aren’t clipped.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Some subclasses of [`UIView`](uiview.md), like [`UIScrollView`](uiscrollview.md), override the default value to [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Some subclasses of [`UIView`](uiview.md), like [`UIScrollView`](uiscrollview.md), override the default value to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

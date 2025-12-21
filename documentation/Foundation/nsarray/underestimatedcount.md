@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A value less than or equal to the number of elements in the collection.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -18,6 +20,10 @@
 @nonobjc
 var underestimatedCount: Int { get }
 ```
+
+#### Discussion
+
+> **Note**: O(1).
 
 
 ---

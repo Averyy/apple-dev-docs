@@ -63,7 +63,7 @@ class MTLFXTemporalScalerDescriptor
 - [func makeTemporalScaler(device: any MTLDevice) -> (any MTLFXTemporalScaler)?](mtlfxtemporalscalerdescriptor/maketemporalscaler(device:).md)
   Creates a temporal scaler instance from this descriptor’s current property values.
 ### Instance Methods
-- [func newTemporalScaler(with: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalScaler)?](mtlfxtemporalscalerdescriptor/newtemporalscaler(with:compiler:).md)
+- [func makeTemporalScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalScaler)?](mtlfxtemporalscalerdescriptor/maketemporalscaler(device:compiler:).md)
   Creates a temporal scaler instance for a Metal device.
 ### Type Methods
 - [class func supportsMetal4FX(any MTLDevice) -> Bool](mtlfxtemporalscalerdescriptor/supportsmetal4fx(_:).md)

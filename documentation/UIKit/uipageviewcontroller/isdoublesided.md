@@ -21,11 +21,11 @@ var isDoubleSided: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If the back of pages has no content (the value is [`false`](https://developer.apple.com/documentation/swift/false)), then the content on the front of the page will partially show through to the back when turning pages.
+If the back of pages has no content (the value is [`false`](https://developer.apple.com/documentation/Swift/false)), then the content on the front of the page will partially show through to the back when turning pages.
 
-If the spine is located in the middle, the value must be [`true`](https://developer.apple.com/documentation/swift/true). Setting it to [`false`](https://developer.apple.com/documentation/swift/false) with the spine located in the middle raises an exception.
+If the spine is located in the middle, the value must be [`true`](https://developer.apple.com/documentation/Swift/true). Setting it to [`false`](https://developer.apple.com/documentation/Swift/false) with the spine located in the middle raises an exception.
 
 ## See Also
 

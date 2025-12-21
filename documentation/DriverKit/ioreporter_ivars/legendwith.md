@@ -21,6 +21,8 @@ An IOReportLegendEntry object or NULL on failure
 
 #### Discussion
 
+Internal method to help create legend entries
+
 This static method is the main legend creation function. It is called by IOReporter sub-classes and is responsible for building an IOReportLegendEntry corresponding to this reporter object. This legend entry may be extended by the sub-class of IOReporter if required.
 
 Locking: SAFE to call concurrently (no static globals), MAY BLOCK

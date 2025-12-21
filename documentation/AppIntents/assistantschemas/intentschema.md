@@ -18,25 +18,6 @@
 struct IntentSchema
 ```
 
-## Topics
-
-### Default Implementations
-- [BooksIntent Implementations](assistantschemas/intentschema/booksintent-implementations.md)
-- [BrowserIntent Implementations](assistantschemas/intentschema/browserintent-implementations.md)
-- [CameraIntent Implementations](assistantschemas/intentschema/cameraintent-implementations.md)
-- [FilesIntent Implementations](assistantschemas/intentschema/filesintent-implementations.md)
-- [Intent Implementations](assistantschemas/intentschema/intent-implementations.md)
-- [JournalIntent Implementations](assistantschemas/intentschema/journalintent-implementations.md)
-- [MailIntent Implementations](assistantschemas/intentschema/mailintent-implementations.md)
-- [PhotosIntent Implementations](assistantschemas/intentschema/photosintent-implementations.md)
-- [PresentationIntent Implementations](assistantschemas/intentschema/presentationintent-implementations.md)
-- [ReaderIntent Implementations](assistantschemas/intentschema/readerintent-implementations.md)
-- [SpreadsheetIntent Implementations](assistantschemas/intentschema/spreadsheetintent-implementations.md)
-- [SystemIntent Implementations](assistantschemas/intentschema/systemintent-implementations.md)
-- [VisualIntelligenceIntent Implementations](assistantschemas/intentschema/visualintelligenceintent-implementations.md)
-- [WhiteboardIntent Implementations](assistantschemas/intentschema/whiteboardintent-implementations.md)
-- [WordProcessorIntent Implementations](assistantschemas/intentschema/wordprocessorintent-implementations.md)
-
 ## Relationships
 
 ### Conforms To

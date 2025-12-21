@@ -46,6 +46,10 @@ Because this method does not return error information, it has been deprecated as
   Creates a directory (without contents) at a given path with given attributes.
 - [func createSymbolicLink(atPath: String, pathContent: String) -> Bool](filemanager/createsymboliclink(atpath:pathcontent:).md)
   Creates a symbolic link identified by a given path that refers to a given location.
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../ObjectiveC/NSObject-swift.class/fileManager(_:shouldProceedAfterError:).md)
+  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
+- [func fileManager(FileManager, willProcessPath: String)](../ObjectiveC/NSObject-swift.class/fileManager(_:willProcessPath:).md)
+  An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 - [func replaceItemAtURL(originalItemURL: NSURL, withItemAtURL: NSURL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitematurl(originalitemurl:withitematurl:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Server Notifications  
 **Kind**: typealias
 
-The type that describes the in-app purchase or external purchase event for which the App Store sends the version 2 notification.
+The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
 
 **Availability**:
 - App Store Server Notifications 2.0+
@@ -25,14 +25,13 @@ The `notificationType appears` in the notification payload, [`responseBodyV2Deco
 
 ##### Handle Use Cases for in App Purchase Life Cycle Events
 
-When events occur that affect the customer’s in-app purchase and subscription life cycle, the App Store server sends you notifications. The following tables list the notifications by life-cycle events.
-
-Events that enable service for a consumable, non-consumable, or non-renewing subscription in-app purchase result in the following notifications, currently available in the sandbox environment only:
+When events occur that affect the customer’s In-App Purchase and subscription life cycle, the App Store server sends you notifications. The following tables list the notifications by life-cycle events.
 
 | Event | Notification type | Notification subtype |
 | --- | --- | --- |
 | Customer purchases a consumable, non-consumable, or non-renewing subscription. | `ONE_TIME_CHARGE` |  |
-| Customer receives access to a non-consumable in-app purchase through Family Sharing. | `ONE_TIME_CHARGE` |  |
+| Customer redeems an offer code for a consumable, non-consumable, or non-renewing subscription. | `ONE_TIME_CHARGE` |  |
+| Customer receives access to a non-consumable In-App Purchase through Family Sharing. | `ONE_TIME_CHARGE` |  |
 
 Events that enable service for subscriptions, including initial subscriptions, resubscribing, and successful auto-renewals, result in the following notifications:
 
@@ -53,9 +52,9 @@ Customers changing their subscription options, including upgrading, downgrading,
 | Customer upgrades a subscription within the same subscription group. | `DID_CHANGE_RENEWAL_PREF` | `UPGRADE` |
 | Customer cancels the subscription from the App Store Subscriptions settings page. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_DISABLED` |
 | Customer subscribes again after canceling a subscription, which reenables auto-renew. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_ENABLED` |
-| The system disabled auto-renew because the customer initiated a refund through your app using the refund request API. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_DISABLED` |
+| The system turned off auto-renew because the customer initiated a refund through your app using the refund request API. | `DID_CHANGE_RENEWAL_STATUS` | `AUTO_RENEW_DISABLED` |
 
-Customers redeeming subscription offers, such as promotional offers, offer codes, or win-back offers, result in the following notifications:
+Customers redeeming offers, such as promotional offers, win-back offers, or offer codes result in the following notifications:
 
 | Event | Notification type | Notification subtype |
 | --- | --- | --- |
@@ -64,6 +63,7 @@ Customers redeeming subscription offers, such as promotional offers, offer codes
 | Customer redeems a promotional offer, offer code, or win-back offer after their subscription expired. | `SUBSCRIBED` | `RESUBSCRIBE` |
 | Customer redeems a promotional offer or offer code to upgrade their subscription. | `OFFER_REDEEMED` | `UPGRADE` |
 | Customer redeems a promotional offer and downgrades their subscription. | `OFFER_REDEEMED` | `DOWNGRADE` |
+| Customer redeems an offer code for a consumable, non-consumable, or non-recurring subscription. | `ONE_TIME_CHARGE` |  |
 
 Billing events, including billing retries, entering and exiting the billing grace period, and expiring subscriptions, result in the following notifications:
 
@@ -91,7 +91,7 @@ Customers requesting refunds or canceling Family Sharing result in the following
 
 | Event | Notification type | Notification subtype |
 | --- | --- | --- |
-| Apple refunds the transaction for a consumable or non-consumable in-app purchase, a non-renewing subscription, or an auto-renewable subscription. | `REFUND` |  |
+| Apple refunds the transaction for a consumable or non-consumable In-App Purchase, a non-renewing subscription, or an auto-renewable subscription. | `REFUND` |  |
 | Apple reverses a previously granted refund due to a dispute that the customer raised. | `REFUND_REVERSED` |  |
 | Apple declines a refund that the customer initiated in the app, using the request refund API. | `REFUND_DECLINED` |  |
 | Apple requests consumption information for a refund request that a customer initiates. | `CONSUMPTION_REQUEST` |  |

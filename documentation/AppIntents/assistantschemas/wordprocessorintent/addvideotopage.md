@@ -25,7 +25,7 @@ var addVideoToPage: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.wordProcessor.addVideoToPage` schema:
 
 ```swift
-@AssistantIntent(schema: .wordProcessor.addVideoToPage)
+@AppIntent(schema: .wordProcessor.addVideoToPage)
 struct AddVideoToWordProcessorPageIntent: AppIntent {
     @Parameter
     var target: WordProcessorPageEntity

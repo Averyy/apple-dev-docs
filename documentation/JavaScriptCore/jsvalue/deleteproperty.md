@@ -16,12 +16,12 @@ Deletes the named property from the JavaScript object value.
 ## Declaration
 
 ```swift
-func deleteProperty(_ property: Any!) -> Bool
+func deleteProperty(_ property: String!) -> Bool
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if property deletion was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if property deletion was successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

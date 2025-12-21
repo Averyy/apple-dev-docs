@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mlboostedtreeregressor/description.md)
-  A text representation of the boosted tree regressor.
-- [var debugDescription: String](mlboostedtreeregressor/debugdescription.md)
-  A text representation of the boosted tree regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlboostedtreeregressor/playgrounddescription.md)
-  A description of the boosted tree regressor shown in a playground.
+- [MLBoostedTreeRegressor.ModelParameters](mlboostedtreeregressor/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLBoostedTreeRegressor.ModelParameters](mlboostedtreeregressor/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

@@ -183,24 +183,20 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [typealias PartiallyGenerated](optional/partiallygenerated.md)
 - [typealias Specification](optional/specification.md)
 - [typealias TableRowBody](optional/tablerowbody.md)
+- [typealias TicksCollection](optional/tickscollection.md)
 - [typealias UnwrappedType](optional/unwrappedtype.md)
 - [typealias ValueType](optional/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: Wrapped.UnwrappedType.Specification](optional/defaultresolverspecification.md)
 ### Default Implementations
 - [AtomicRepresentable Implementations](optional/atomicrepresentable-implementations.md)
-- [ConvertibleToGeneratedContent Implementations](optional/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](optional/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](optional/customreflectable-implementations.md)
-- [CustomTestStringConvertible Implementations](optional/customteststringconvertible-implementations.md)
 - [Decodable Implementations](optional/decodable-implementations.md)
 - [Encodable Implementations](optional/encodable-implementations.md)
 - [Equatable Implementations](optional/equatable-implementations.md)
 - [ExpressibleByNilLiteral Implementations](optional/expressiblebynilliteral-implementations.md)
 - [Hashable Implementations](optional/hashable-implementations.md)
-- [InstructionsRepresentable Implementations](optional/instructionsrepresentable-implementations.md)
-- [PromptRepresentable Implementations](optional/promptrepresentable-implementations.md)
-- [RelationshipCollection Implementations](optional/relationshipcollection-implementations.md)
 
 ## Relationships
 
@@ -234,6 +230,7 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [RelationshipCollection](../SwiftData/RelationshipCollection.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
+- [SliderTickContent](../SwiftUI/SliderTickContent.md)
 - [StoreContent](../StoreKit/StoreContent.md)
 - [TabContent](../SwiftUI/TabContent.md)
 - [TableColumnContent](../SwiftUI/TableColumnContent.md)

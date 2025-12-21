@@ -34,8 +34,6 @@ The possible values of a width are `abbreviated`, `narrow`, and `wide`.
 - [Date.FormatStyle.Symbol.DayPeriod.Width.wide](date/formatstyle/symbol/dayperiod/width/wide.md)
   A full day period width representation.
 ### Comparing Day Period Widths
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

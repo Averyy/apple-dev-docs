@@ -21,9 +21,9 @@ enum MTLPrimitiveType
 
 ## Topics
 
-### Constants
+### Geometric primitive types
 - [MTLPrimitiveType.point](mtlprimitivetype/point.md)
-  Rasterize a point at each vertex. The vertex shader must provide `[[point_size]]`, or the point size is undefined.
+  Rasterize a point at each vertex. The vertex shader needs to provide `[[point_size]]`, or the point size is undefined.
 - [MTLPrimitiveType.line](mtlprimitivetype/line.md)
   Rasterize a line between each separate pair of vertices, resulting in a series of unconnected lines. If there are an odd number of vertices, the last vertex is ignored.
 - [MTLPrimitiveType.lineStrip](mtlprimitivetype/linestrip.md)
@@ -48,9 +48,9 @@ enum MTLPrimitiveType
 ## See Also
 
 - [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
-  Encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
-  An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+  Encodes configuration and draw commands for a single render pass into a command buffer.
 - [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)

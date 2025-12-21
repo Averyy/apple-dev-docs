@@ -21,6 +21,8 @@ Pointer to the allocated lock, or zero on failure.
 
 #### Discussion
 
+Allocates and initializes a read/write lock.
+
 Allocates and initializes a read/write lock in general purpose memory. Read/write locks provide for multiple readers, one exclusive writer.
 
 ## See Also

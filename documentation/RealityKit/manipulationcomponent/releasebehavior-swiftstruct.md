@@ -6,7 +6,7 @@
 A behavior describing the path the object takes when it’s released after an interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

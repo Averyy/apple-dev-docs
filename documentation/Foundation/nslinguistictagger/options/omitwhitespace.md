@@ -30,14 +30,6 @@ static var omitWhitespace: NSLinguisticTagger.Options { get }
   Omit tokens of type [`other`](nslinguistictag/other.md) (non-linguistic items, such as symbols).
 - [static var joinNames: NSLinguisticTagger.Options](nslinguistictagger/options/joinnames.md)
   Typically, multiple-word names will be returned as multiple tokens, following the standard tokenization practice of the tagger.  If this option is set, then multiple-word names will be joined together and returned as a single token.
-- [static var omitWords: NSLinguisticTagger.Options](nslinguistictagger/options/omitwords.md)
-  Omit tokens of type [`word`](nslinguistictag/word.md) (items considered to be words).
-- [static var omitPunctuation: NSLinguisticTagger.Options](nslinguistictagger/options/omitpunctuation.md)
-  Omit tokens of type [`punctuation`](nslinguistictag/punctuation.md) (all punctuation).
-- [static var omitOther: NSLinguisticTagger.Options](nslinguistictagger/options/omitother.md)
-  Omit tokens of type [`other`](nslinguistictag/other.md) (non-linguistic items, such as symbols).
-- [static var joinNames: NSLinguisticTagger.Options](nslinguistictagger/options/joinnames.md)
-  Typically, multiple-word names will be returned as multiple tokens, following the standard tokenization practice of the tagger.  If this option is set, then multiple-word names will be joined together and returned as a single token.
 
 
 ---

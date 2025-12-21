@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: property
 
-The bundle identifier for the extension.
+The bundle identifier of the app extension.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,16 @@ The bundle identifier for the extension.
 var bundleIdentifier: String { get }
 ```
 
+#### Discussion
+
+During development, an app extension creator assigns a value to this string that incorporates the creator’s company name and the extension name. Bundle identifier strings use reverse-DNS notation.
+
 ## See Also
 
 - [var extensionPointIdentifier: String](appextensionidentity/extensionpointidentifier.md)
-  A unique identifier for the extension point this extension targets.
+  The extension point of your host app that the app extension supports.
 - [var localizedName: String](appextensionidentity/localizedname.md)
-  A localized, human-readable name for the extension.
-- [AppExtensionIdentity.Identities](appextensionidentity/identities.md)
-  An asynchronous sequence that returns the enabled extensions that match provided constraints.
+  The localized, human-readable name of the app extension.
 
 
 ---

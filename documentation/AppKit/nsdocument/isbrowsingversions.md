@@ -17,7 +17,7 @@ var isBrowsingVersions: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the versions browser is visible.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the versions browser is visible.
 
 ## See Also
 

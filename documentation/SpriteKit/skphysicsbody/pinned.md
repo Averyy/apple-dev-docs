@@ -27,7 +27,7 @@ var pinned: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), the node’s position is fixed relative to its parent. The node’s position cannot be changed by actions or physics forces. The node can freely rotate around its position in response to collisions or other forces. If the parent node has a physics body, the two physics bodies are treated as if they are connected with a pin joint.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true), the node’s position is fixed relative to its parent. The node’s position cannot be changed by actions or physics forces. The node can freely rotate around its position in response to collisions or other forces. If the parent node has a physics body, the two physics bodies are treated as if they are connected with a pin joint.
 
 ## See Also
 

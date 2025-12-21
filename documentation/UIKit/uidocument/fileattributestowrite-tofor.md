@@ -14,7 +14,6 @@ Returns a dictionary of file attributes to associate with the document file when
 ## Declaration
 
 ```swift
-@MainActor
 func fileAttributesToWrite(to url: URL, for saveOperation: UIDocument.SaveOperation) throws -> [AnyHashable : Any]
 ```
 

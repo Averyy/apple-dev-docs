@@ -19,6 +19,10 @@ A Boolean value that indicates whether the scene can appear full screen.
 var allowsFullScreen: Bool { get set }
 ```
 
+#### Discussion
+
+The system only checks the value of this property in Mac Catalyst apps.
+
 ## See Also
 
 - [var minimumSize: CGSize](uiscenesizerestrictions/minimumsize.md)

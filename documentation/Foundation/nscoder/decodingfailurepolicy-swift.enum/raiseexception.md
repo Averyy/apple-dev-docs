@@ -28,8 +28,6 @@ With this policy, the [`NSCoder`](nscoder.md) raises an exception internally to 
 
 - [NSCoder.DecodingFailurePolicy.setErrorAndReturn](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md)
   A failure policy that directs the coder to capture the failure as an error object.
-- [NSCoder.DecodingFailurePolicy.setErrorAndReturn](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md)
-  A failure policy that directs the coder to capture the failure as an error object.
 
 
 ---

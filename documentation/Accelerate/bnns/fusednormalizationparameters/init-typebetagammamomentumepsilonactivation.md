@@ -11,9 +11,8 @@ Returns a new fused normalization parameters structure.
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- watchOS 8.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 8.0+
 
 ## Declaration
 

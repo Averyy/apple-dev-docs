@@ -24,6 +24,8 @@ static var modelDecryption: MLModelError.Code { get }
 
 Core ML typically throws this error when the framework can’t decrypt a model.
 
+The framework can’t decrypt encrypted models in macOS if System Integrity Protection (SIP) is disabled.
+
 ## See Also
 
 - [static var featureType: MLModelError.Code](mlmodelerror-swift.struct/featuretype.md)

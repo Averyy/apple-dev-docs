@@ -17,20 +17,16 @@ func setEditableTrust(_ editable: Bool)
 
 #### Discussion
 
-For behavioral compatibility with macOS 10.3, this method causes the certificate trust settings to be displayed if they are not currently visible (that is, if [`setDisplayTrust(_:)`](sfcertificateview/setdisplaytrust(_:).md) is set to [`false`](https://developer.apple.com/documentation/swift/false)).
+For behavioral compatibility with macOS 10.3, this method causes the certificate trust settings to be displayed if they are not currently visible (that is, if [`setDisplayTrust(_:)`](sfcertificateview/setdisplaytrust(_:).md) is set to [`false`](https://developer.apple.com/documentation/Swift/false)).
 
 ## Parameters
 
 - `editable`: Pass   if the trust settings should be editable.
 
-## Topics
-
-### Related Documentation
-- [func setDisplayTrust(Bool)](sfcertificateview/setdisplaytrust(_:).md)
-  Specifies whether the user can see the certificate’s trust settings.
-
 ## See Also
 
+- [func setDisplayTrust(Bool)](sfcertificateview/setdisplaytrust(_:).md)
+  Specifies whether the user can see the certificate’s trust settings.
 - [func setDetailsDisclosed(Bool)](sfcertificateview/setdetailsdisclosed(_:).md)
   Sets whether the certificate details subview is disclosed.
 - [func setDisplayDetails(Bool)](sfcertificateview/setdisplaydetails(_:).md)

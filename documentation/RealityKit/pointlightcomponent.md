@@ -10,7 +10,7 @@ A component that defines a point light source.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -57,43 +57,28 @@ The point light illuminates entities based on its distance from them. Here is a 
 ## Topics
 
 ### Creating a point light component
-- [init(color: PointLightComponent.Color, intensity: Float, attenuationRadius: Float)](pointlightcomponent/init(color:intensity:attenuationradius:)-8z3j5.md)
-  Creates a point light component with a configuration.
-- [init(color: PointLightComponent.Color, intensity: Float, attenuationRadius: Float)](pointlightcomponent/init(color:intensity:attenuationradius:)-hp22.md)
-  Creates a point light component with a configuration.
 - [init(cgColor: CGColor, intensity: Float, attenuationRadius: Float)](pointlightcomponent/init(cgcolor:intensity:attenuationradius:).md)
   Creates a new instance with the specified color, intensity and attenuation.
-- [init(color: PointLightComponent.Color, intensity: Float, attenuationRadius: Float, attenuationFalloffExponent: Float)](pointlightcomponent/init(color:intensity:attenuationradius:attenuationfalloffexponent:)-603s0.md)
-  Creates a point light component with a configuration.
-- [init(color: PointLightComponent.Color, intensity: Float, attenuationRadius: Float, attenuationFalloffExponent: Float)](pointlightcomponent/init(color:intensity:attenuationradius:attenuationfalloffexponent:)-6dm4f.md)
-  Creates a point light component with a configuration.
-### Setting color
-- [var color: PointLightComponent.Color](pointlightcomponent/color-37raw.md)
-  A color for the point light.
-- [var color: PointLightComponent.Color](pointlightcomponent/color-1ed8j.md)
-  A color for the point light.
 ### Configuring the light
 - [var attenuationRadius: Float](pointlightcomponent/attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
 - [var intensity: Float](pointlightcomponent/intensity.md)
   The intensity of the point light, measured in lumen.
+- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+  The exponent value for the light’s intensity falloff-transition curve.
+### Supporting types
+- [PointLightComponent.Color](pointlightcomponent/color-swift.typealias.md)
+  A platform-specific type used to define color for a point light.
 ### Initializers
 - [init(color:intensity:attenuationRadius:)](pointlightcomponent/init(color:intensity:attenuationradius:).md)
   Creates a point light component with a configuration.
 - [init(color:intensity:attenuationRadius:attenuationFalloffExponent:)](pointlightcomponent/init(color:intensity:attenuationradius:attenuationfalloffexponent:).md)
   Creates a point light component with a configuration.
 ### Instance Properties
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent-6l8an.md)
-  The exponent value for the light’s intensity falloff-transition curve.
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent-8omwe.md)
-  The exponent value for the light’s intensity falloff-transition curve.
 - [var color: PointLightComponent.Color](pointlightcomponent/color-4ksx7.md)
   A color for the point light.
-### Type Aliases
-- [PointLightComponent.Color](pointlightcomponent/color-1d04v.md)
-  A platform-specific type used to define color for a point light.
-- [PointLightComponent.Color](pointlightcomponent/color-6zkji.md)
-  A platform-specific type used to define color for a point light.
+- [var color: PointLightComponent.Color](pointlightcomponent/color-8gecu.md)
+  A color for the point light.
 
 ## Relationships
 

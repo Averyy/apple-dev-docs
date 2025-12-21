@@ -20,7 +20,7 @@ var displayUsingSystemFont: Bool { get set }
 
 #### Discussion
 
-By default, the font picker uses each font face to display that font face name in the font picker. Set this property to [`true`](https://developer.apple.com/documentation/swift/true) if you want the font picker to display all font names in the system font instead.
+By default, the font picker uses each font face to display that font face name in the font picker. Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) if you want the font picker to display all font names in the system font instead.
 
 
 ---

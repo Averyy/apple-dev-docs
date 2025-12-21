@@ -13,7 +13,6 @@ Gathers the elements of a tensor along a single axis.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 An asynchronous sequence of events that provide updates to the current authorization status of the session.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -37,7 +37,7 @@ Task {
 - [ARKitSession.Events](arkitsession/events-swift.struct.md)
   A sequence of events.
 - [ARKitSession.Event](arkitsession/event.md)
-  The kinds of events that can occur in a session.
+  Enumeration of possible session events.
 - [var description: String](arkitsession/description.md)
   A textual representation of this session.
 

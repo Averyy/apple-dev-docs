@@ -17,7 +17,7 @@ func setValue(_ value: Any!, forInputKey key: String!) -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if it cannot set the value.
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot set the value.
 
 ## Parameters
 

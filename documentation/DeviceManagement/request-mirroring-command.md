@@ -12,7 +12,7 @@ Prompt the user to share their screen using AirPlay Mirroring.
 
 #### Discussion
 
-MDM doesn’t support AirPlay destinations that have enabled Onscreen Codes. Provide either the `DestinationName` or the `DestinationDeviceID`. If you provide both values, MDM uses `DestinationDeviceID`.
+Provide either the `DestinationName` or the `DestinationDeviceID`. If you provide both values, MDM uses `DestinationDeviceID`.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
@@ -43,7 +43,7 @@ The request object the server returns for the Request Mirroring Command.
 ## See Also
 
 - [Stop Mirroring](stop-mirroring-command.md)
-  Stop mirroring the display on another device.
+  Stop mirroring the display to another device.
 
 
 ---

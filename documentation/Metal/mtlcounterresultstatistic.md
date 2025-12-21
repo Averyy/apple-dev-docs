@@ -21,15 +21,15 @@ struct MTLCounterResultStatistic
 
 ## Mentions
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Overview
 
-For steps that explain how to resolve data from a counter set, such as [`statistic`](mtlcommoncounterset/statistic.md), see [`Converting a GPU’s Counter Data into a Readable Format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For steps that explain how to resolve data from a counter set, such as [`statistic`](mtlcommoncounterset/statistic.md), see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
 
 ## Topics
 
-### Statistics Values
+### Statistics values
 - [var tessellationInputPatches: UInt64](mtlcounterresultstatistic/tessellationinputpatches.md)
   The number of tessellation patches a render pass sends to the tessellation stage.
 - [var vertexInvocations: UInt64](mtlcounterresultstatistic/vertexinvocations.md)
@@ -46,7 +46,7 @@ For steps that explain how to resolve data from a counter set, such as [`statist
   The number of fragments a render pass sends to the visibility and blend stages because they pass the scissor, depth, and stencil tests.
 - [var computeKernelInvocations: UInt64](mtlcounterresultstatistic/computekernelinvocations.md)
   The number of times a pass calls any compute kernel.
-### Swift Support
+### Swift support
 - [init()](mtlcounterresultstatistic/init.md)
   Creates a default statistics result.
 - [init(tessellationInputPatches: UInt64, vertexInvocations: UInt64, postTessellationVertexInvocations: UInt64, clipperInvocations: UInt64, clipperPrimitivesOut: UInt64, fragmentInvocations: UInt64, fragmentsPassed: UInt64, computeKernelInvocations: UInt64)](mtlcounterresultstatistic/init(tessellationinputpatches:vertexinvocations:posttessellationvertexinvocations:clipperinvocations:clipperprimitivesout:fragmentinvocations:fragmentspassed:computekernelinvocations:).md)
@@ -60,7 +60,7 @@ For steps that explain how to resolve data from a counter set, such as [`statist
 
 ## See Also
 
-- [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
 - [struct MTLCounterResultTimestamp](mtlcounterresulttimestamp.md)
   The data structure for storing the data you resolve from a timestamp counter set.

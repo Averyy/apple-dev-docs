@@ -63,10 +63,10 @@ The above example looks for a token stored as a query parameter. The specific pa
 
 ## See Also
 
-- [@MainActor @preconcurrency struct LocalAuthenticationView<Label> where Label : View](../LocalAuthentication/LocalAuthenticationView.md)
+- [struct LocalAuthenticationView](../LocalAuthentication/LocalAuthenticationView.md)
   A SwiftUI view that displays an authentication interface.
-- [@MainActor @preconcurrency struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
-  The view that creates the Sign in with Apple button for display.
+- [struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
+  A SwiftUI view that creates the Sign in with Apple button for display.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
 - [var authorizationController: AuthorizationController](environmentvalues/authorizationcontroller.md)

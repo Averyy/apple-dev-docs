@@ -6,7 +6,7 @@
 A state that indicates the layer is visible and ready for you to draw your content.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

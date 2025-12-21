@@ -4,14 +4,6 @@
 
 Tranpose vectors that contain real values.
 
-## Topics
-
-### Transposing real matrices
-- [vDSP_mtrans](vdsp_mtrans.md)
-  Transposes a single-precision matrix.
-- [vDSP_mtransD](vdsp_mtransd.md)
-  Transposes a double-precision matrix.
-
 ## See Also
 
 - [Multiplication](multiplication.md)

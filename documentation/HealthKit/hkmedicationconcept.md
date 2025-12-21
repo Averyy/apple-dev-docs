@@ -3,13 +3,15 @@
 **Framework**: HealthKit  
 **Kind**: class
 
+An object that describes a specific medication concept.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -19,15 +21,19 @@ class HKMedicationConcept
 
 #### Overview
 
-Medications can have clinical significance, or can be created by the user.
+A medication concept represents the idea of a medication, like ibuprofen or insulin. It can have clinical significance, or can be created by the person using your app.
 
 ## Topics
 
 ### Instance Properties
 - [var displayText: String](hkmedicationconcept/displaytext.md)
+  The display name for this medication.
 - [var generalForm: HKMedicationGeneralForm](hkmedicationconcept/generalform.md)
+  The general form the medication is manufactured in.
 - [var identifier: HKHealthConceptIdentifier](hkmedicationconcept/identifier.md)
+  The unique identifier for the specific medication concept.
 - [var relatedCodings: Set<HKClinicalCoding>](hkmedicationconcept/relatedcodings.md)
+  The set of related clinical codings for the medication.
 
 ## Relationships
 
@@ -49,16 +55,19 @@ Medications can have clinical significance, or can be created by the user.
 ## See Also
 
 - [class HKClinicalCoding](hkclinicalcoding.md)
+  A clinical coding that represents a medical concept using a standardized coding system.
 - [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+  A unique identifier for a specific health concept within a domain.
 - [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
 - [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
 - [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+  A reference to the tracked medication and the details a person can customize.
 - [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
 - [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
 - [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
-  Represents the domain of a HKHealthConceptIdentifier
+  A domain that represents a health concept.
 - [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
-  Represents a medications general form.
+  The manufactured form of a medication.
 - [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
 
 

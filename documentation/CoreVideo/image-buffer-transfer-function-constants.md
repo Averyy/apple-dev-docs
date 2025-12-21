@@ -43,6 +43,8 @@ Use the [`kCVImageBufferTransferFunctionKey`](kcvimagebuffertransferfunctionkey.
   Constants that indicate locations for chroma samples in the image buffer.
 - [Image Buffer Chroma Subsampling Constants](image-buffer-chroma-subsampling-constants.md)
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
+- [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
+  Keys that describe the display dimensions of an image buffer mask.
 
 
 ---

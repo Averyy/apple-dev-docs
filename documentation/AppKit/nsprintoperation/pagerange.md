@@ -22,7 +22,7 @@ The range of page numbers. Page numbers are one-based values where the index of 
 ## See Also
 
 - [func knowsPageRange(NSRangePointer) -> Bool](nsview/knowspagerange(_:).md)
-  Returns [`true`](https://developer.apple.com/documentation/swift/true) if the view handles page boundaries, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+  Returns a Boolean value that indicates whether the view handles page boundaries.
 - [var currentPage: Int](nsprintoperation/currentpage.md)
   The current page number being printed.
 - [var pageOrder: NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.property.md)

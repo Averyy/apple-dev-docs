@@ -3,20 +3,26 @@
 **Framework**: Network  
 **Kind**: method
 
+Set the local identity TLS uses during the QUIC handshake.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 func localIdentity(_ identity: sec_identity_t) -> QUIC
 ```
+
+## Parameters
+
+- `identity`: The local identity to be used during the QUIC handshake.
 
 
 ---

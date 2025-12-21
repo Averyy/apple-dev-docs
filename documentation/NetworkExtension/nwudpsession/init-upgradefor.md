@@ -21,7 +21,7 @@ init(upgradeFor session: NWUDPSession)
 
 #### Discussion
 
-The caller should watch the `hasBetterPath` property on an existing [`NWUDPSession`](nwudpsession.md) object. When `hasBetterPath` is [`true`](https://developer.apple.com/documentation/swift/true), the caller should call `initWithUpgradeForSession:` to create a new session, then start transferring data on the new session as soon as possible to reduce power and and avoid expensive networks. When the new session is ready, the application can start using the new session and tear down the original one.
+The caller should watch the `hasBetterPath` property on an existing [`NWUDPSession`](nwudpsession.md) object. When `hasBetterPath` is [`true`](https://developer.apple.com/documentation/Swift/true), the caller should call `initWithUpgradeForSession:` to create a new session, then start transferring data on the new session as soon as possible to reduce power and and avoid expensive networks. When the new session is ready, the application can start using the new session and tear down the original one.
 
 ## See Also
 

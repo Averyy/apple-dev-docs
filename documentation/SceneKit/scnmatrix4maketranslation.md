@@ -17,7 +17,7 @@ Returns a matrix describing a translation transformation.
 ## Declaration
 
 ```swift
-func SCNMatrix4MakeTranslation(_ tx: Float, _ ty: Float, _ tz: Float) -> SCNMatrix4
+func SCNMatrix4MakeTranslation(_ tx: CGFloat, _ ty: CGFloat, _ tz: CGFloat) -> SCNMatrix4
 ```
 
 #### Return Value

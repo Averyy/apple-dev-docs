@@ -6,7 +6,7 @@
 An experience in which the system does not apply spatial processing to the audio stream.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

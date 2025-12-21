@@ -18,6 +18,13 @@ A required parameter is missing/nil.
 case missingParameter
 ```
 
+## See Also
+
+- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
+  The custom language model file was malformed.
+- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
+  The custom language model templates were malformed.
+
 
 ---
 

@@ -1,33 +1,46 @@
-# !=(_:_:)
+# MobileDocumentReaderError.unknown
 
 **Framework**: ProximityReader  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An error that indicates the framework encountered a problem which the system can’t interpret.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [MobileDocumentReaderError.cancelled](mobiledocumentreadererror/cancelled.md)
+  An error that indicates the mobile document request was canceled.
+- [MobileDocumentReaderError.invalidRequest](mobiledocumentreadererror/invalidrequest.md)
+  An error that indicates the request isn’t valid.
+- [MobileDocumentReaderError.invalidResponse](mobiledocumentreadererror/invalidresponse.md)
+  An error that indicates the response isn’t valid.
+- [MobileDocumentReaderError.invalidToken](mobiledocumentreadererror/invalidtoken.md)
+  An error that indicates the provided reader token for framework’s prepare method isn’t valid.
+- [MobileDocumentReaderError.networkUnavailable](mobiledocumentreadererror/networkunavailable.md)
+  An error that indicates the system can’t reach the network.
+- [MobileDocumentReaderError.notAllowed](mobiledocumentreadererror/notallowed.md)
+  An error that indicates the device isn’t allowed to perform the mobile document request.
+- [MobileDocumentReaderError.notSupported](mobiledocumentreadererror/notsupported.md)
+  An error that indicates mobile document reading isn’t supported on the current device.
+- [MobileDocumentReaderError.serviceUnavailable](mobiledocumentreadererror/serviceunavailable.md)
+  An error that occurs when mobile document reader service is unavailable.
+- [MobileDocumentReaderError.sessionExpired](mobiledocumentreadererror/sessionexpired.md)
+  An error that indicates the current reader session has expired.
+- [MobileDocumentReaderError.systemBusy](mobiledocumentreadererror/systembusy.md)
+  An error that indicates the system is busy.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobiledocumentreadererror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobiledocumentreadererror/unknown)*

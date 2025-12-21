@@ -16,14 +16,14 @@ let WebPlugInShouldLoadMainResourceKey: String
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the plug-in should load its own main resource. If [`false`](https://developer.apple.com/documentation/swift/false), the plug-in uses the data provided by WebKit and the `webPlugInMainResourceDidReceiveData:` message is sent to the plug-in when data is received. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the plug-in should load its own main resource. If [`false`](https://developer.apple.com/documentation/Swift/false), the plug-in uses the data provided by WebKit and the `webPlugInMainResourceDidReceiveData:` message is sent to the plug-in when data is received. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 
 - [let WebActionButtonKey: String](webactionbuttonkey.md)
   An NSNumber object where `0` indicates the left button, `1` indicates the middle button, and `2` indicates the right button.
 - [let WebActionElementKey: String](webactionelementkey.md)
-  A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
+  A dictionary containing element information. See [`WebView`](webview-swift.class.md) for a description of the key-value pairs in this dictionary.
 - [let WebActionModifierFlagsKey: String](webactionmodifierflagskey.md)
   An unsigned number that indicates the modifier flag.
 - [let WebActionNavigationTypeKey: String](webactionnavigationtypekey.md)

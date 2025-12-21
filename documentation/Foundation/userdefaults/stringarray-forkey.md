@@ -22,42 +22,40 @@ func stringArray(forKey defaultName: String) -> [String]?
 
 #### Return Value
 
-The array of string objects, or `nil` if the specified default does not exist, the default does not contain an array, or the array does not contain strings.
+The array of strings associated with `defaultName`, or `nil` if the key isn’t present in the defaults database. This method also returns `nil` if the retrieved value isn’t an array, or if any item in the array isn’t a string.
 
 #### Discussion
 
-The returned array and its contents are immutable, even if the values you originally set were mutable.
+The returned array and its contents are immutable, even if you originally set the key to mutable values.
 
 ## Parameters
 
-- `defaultName`: A key in the current user’s defaults database.
+- `defaultName`: The key to retrieve from the defaults database.
 
 ## See Also
 
-- [func set(Any?, forKey: String)](userdefaults/set(_:forkey:)-8ab6d.md)
-  Sets the value of the specified default key.
-- [func object(forKey: String) -> Any?](userdefaults/object(forkey:).md)
-  Returns the object associated with the specified key.
-- [func url(forKey: String) -> URL?](userdefaults/url(forkey:).md)
-  Returns the URL associated with the specified key.
-- [func array(forKey: String) -> [Any]?](userdefaults/array(forkey:).md)
-  Returns the array associated with the specified key.
-- [func dictionary(forKey: String) -> [String : Any]?](userdefaults/dictionary(forkey:).md)
-  Returns the dictionary object associated with the specified key.
-- [func string(forKey: String) -> String?](userdefaults/string(forkey:).md)
-  Returns the string associated with the specified key.
-- [func data(forKey: String) -> Data?](userdefaults/data(forkey:).md)
-  Returns the data object associated with the specified key.
 - [func bool(forKey: String) -> Bool](userdefaults/bool(forkey:).md)
   Returns the Boolean value associated with the specified key.
 - [func integer(forKey: String) -> Int](userdefaults/integer(forkey:).md)
   Returns the integer value associated with the specified key.
 - [func float(forKey: String) -> Float](userdefaults/float(forkey:).md)
-  Returns the float value associated with the specified key.
+  Returns the floating-point value associated with the specified key.
 - [func double(forKey: String) -> Double](userdefaults/double(forkey:).md)
   Returns the double value associated with the specified key.
+- [func url(forKey: String) -> URL?](userdefaults/url(forkey:).md)
+  Returns the URL associated with the specified key.
+- [func string(forKey: String) -> String?](userdefaults/string(forkey:).md)
+  Returns the string associated with the specified key.
+- [func data(forKey: String) -> Data?](userdefaults/data(forkey:).md)
+  Returns the data object associated with the specified key.
+- [func object(forKey: String) -> Any?](userdefaults/object(forkey:).md)
+  Returns the object associated with the specified key.
+- [func array(forKey: String) -> [Any]?](userdefaults/array(forkey:).md)
+  Returns the array associated with the specified key.
+- [func dictionary(forKey: String) -> [String : Any]?](userdefaults/dictionary(forkey:).md)
+  Returns the dictionary object associated with the specified key.
 - [func dictionaryRepresentation() -> [String : Any]](userdefaults/dictionaryrepresentation.md)
-  Returns a dictionary that contains a union of all key-value pairs in the domains in the search list.
+  Returns a dictionary with the union of all key-value pairs found from all domains.
 
 
 ---

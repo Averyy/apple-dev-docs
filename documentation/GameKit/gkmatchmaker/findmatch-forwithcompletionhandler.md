@@ -22,6 +22,7 @@ func findMatch(for request: GKMatchRequest) async throws -> GKMatch
 ## Mentions
 
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 

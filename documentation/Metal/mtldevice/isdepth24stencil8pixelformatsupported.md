@@ -18,7 +18,7 @@ var isDepth24Stencil8PixelFormatSupported: Bool { get }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the device supports the [`MTLPixelFormat.depth24Unorm_stencil8`](mtlpixelformat/depth24unorm_stencil8.md) pixel format.
+If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the device supports the [`MTLPixelFormat.depth24Unorm_stencil8`](mtlpixelformat/depth24unorm_stencil8.md) pixel format.
 
 ## See Also
 

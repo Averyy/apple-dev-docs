@@ -18,6 +18,11 @@ var AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation: Int { get }
 
 This flag works when passed in the `flags` parameter of the [`setActive(_:withFlags:)`](avaudiosession/setactive(_:withflags:).md) instance method. You use this flag only when deactivating your audio session.
 
+## See Also
+
+- [static var notifyOthersOnDeactivation: AVAudioSession.SetActiveOptions](avaudiosession/setactiveoptions/notifyothersondeactivation.md)
+  An option that indicates that the system should notify other apps that you’ve deactivated your app’s audio session.
+
 
 ---
 

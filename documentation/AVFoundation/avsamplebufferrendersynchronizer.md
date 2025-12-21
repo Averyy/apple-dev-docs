@@ -22,8 +22,8 @@ class AVSampleBufferRenderSynchronizer
 
 ## Mentions
 
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 
@@ -31,14 +31,14 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
 
 ## Topics
 
-### Managing Renderers
+### Managing renderers
 - [var renderers: [any AVQueuedSampleBufferRendering]](avsamplebufferrendersynchronizer/renderers.md)
   An array of queued sample buffer renderers currently attached to the synchronizer.
 - [func addRenderer(any AVQueuedSampleBufferRendering)](avsamplebufferrendersynchronizer/addrenderer(_:).md)
   Adds a renderer to the list of renderers under the synchronizer’s control.
 - [func removeRenderer(any AVQueuedSampleBufferRendering, at: CMTime, completionHandler: ((Bool) -> Void)?)](avsamplebufferrendersynchronizer/removerenderer(_:at:completionhandler:).md)
   Removes a renderer from the synchronizer.
-### Accessing Time Information
+### Accessing time information
 - [func currentTime() -> CMTime](avsamplebufferrendersynchronizer/currenttime.md)
   Returns the current time of the synchronizer.
 - [var timebase: CMTimebase](avsamplebufferrendersynchronizer/timebase.md)
@@ -53,16 +53,16 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
   The synchronizer’s rendering rate changed.
 - [var delaysRateChangeUntilHasSufficientMediaData: Bool](avsamplebufferrendersynchronizer/delaysratechangeuntilhassufficientmediadata.md)
   A Boolean value that Indicates whether the playback should start immediately on rate change requests.
-### Observing Time
+### Observing time
 - [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](avsamplebufferrendersynchronizer/addperiodictimeobserver(forinterval:queue:using:).md)
   Requests invocation of a block during rendering at specified time intervals.
 - [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](avsamplebufferrendersynchronizer/addboundarytimeobserver(fortimes:queue:using:).md)
   Requests invocation of a block when specified times are traversed during normal rendering.
 - [func removeTimeObserver(Any)](avsamplebufferrendersynchronizer/removetimeobserver(_:).md)
   Cancels the specified time observer.
-### Instance Properties
+### Configuring audio behavior
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3.md)
-  The intended spatial audio experience applied to all `AVSampleBufferAudioRenderer`’s within this synchronizer.
+  The synchronizer’s intended Spatial Audio experience.
 
 ## Relationships
 

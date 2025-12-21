@@ -3,6 +3,8 @@
 **Framework**: Core Spotlight  
 **Kind**: method
 
+Requests that the delegate provide searchable items for the provided identifiers.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -15,6 +17,15 @@
 ```swift
 optional func searchableItems(forIdentifiers identifiers: [String], searchableItemsHandler: @escaping ([CSSearchableItem]) -> Void)
 ```
+
+#### Discussion
+
+Use this method to provide the framework with a list of identifiers to search for.
+
+## Parameters
+
+- `identifiers`: An array of strings that represent the identifiers.
+- `searchableItemsHandler`: A method the framework calls that provides an array of   objects.
 
 
 ---

@@ -31,32 +31,32 @@ You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`
 
 ## Topics
 
-### Determining Rendering Status
+### Determining rendering status
 - [var status: AVQueuedSampleBufferRenderingStatus](avsamplebufferaudiorenderer/status.md)
   The status of the audio renderer.
 - [enum AVQueuedSampleBufferRenderingStatus](avqueuedsamplebufferrenderingstatus.md)
   The statuses for sample buffer rendering.
-### Removing Queued Buffers
+### Removing queued buffers
 - [func flush(fromSourceTime: CMTime, completionHandler: (Bool) -> Void)](avsamplebufferaudiorenderer/flush(fromsourcetime:completionhandler:).md)
   Flushes queued sample buffers with presentation time stamps later than or equal to the specified time.
 - [let AVSampleBufferAudioRendererFlushTimeKey: String](avsamplebufferaudiorendererflushtimekey.md)
   The key that indicates the presentation timestamp of the first queued sample that was flushed.
-### Configuring Time and Pitch
+### Configuring time and pitch
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avsamplebufferaudiorenderer/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch at different rates.
 - [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)
   An algorithm used to set the audio pitch as the rate changes.
-### Configuring Audio Spatialization
+### Configuring audio spatialization
 - [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avsamplebufferaudiorenderer/allowedaudiospatializationformats.md)
   The source audio channel layouts the audio renderer supports for spatialization.
-### Managing Audio Output
+### Managing audio output
 - [var volume: Float](avsamplebufferaudiorenderer/volume.md)
   The current audio volume for the audio renderer.
 - [var isMuted: Bool](avsamplebufferaudiorenderer/ismuted.md)
   A Boolean value that indicates whether audio for the renderer is in a muted state.
 - [var audioOutputDeviceUniqueID: String?](avsamplebufferaudiorenderer/audiooutputdeviceuniqueid.md)
   The unique identifier of the output device used to play audio.
-### Responding to Errors
+### Responding to errors
 - [var error: (any Error)?](avsamplebufferaudiorenderer/error.md)
   The error that caused the renderer to no longer render sample buffers.
 

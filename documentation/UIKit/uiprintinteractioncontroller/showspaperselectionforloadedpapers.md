@@ -20,7 +20,7 @@ var showsPaperSelectionForLoadedPapers: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Setting the value to [`true`](https://developer.apple.com/documentation/swift/true) enables a paper selection menu on printers that support different types of paper and have more than one paper type loaded. On printers where only one paper type is available, no paper selection menu is displayed, regardless of the value of this property.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Setting the value to [`true`](https://developer.apple.com/documentation/Swift/true) enables a paper selection menu on printers that support different types of paper and have more than one paper type loaded. On printers where only one paper type is available, no paper selection menu is displayed, regardless of the value of this property.
 
 ## See Also
 

@@ -20,9 +20,9 @@ var product: String? { get }
 
 ## See Also
 
-- [var descriptor: Data](hiddeviceclient/descriptor.md)
+- [let descriptor: Data](hiddeviceclient/descriptor.md)
   The HID specification compliant report descriptor for the associated HID device.
-- [var deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
+- [let deviceUsages: [HIDUsage]](hiddeviceclient/deviceusages.md)
   A convenient list of all the usages that the device supports.
 - [var isBuiltIn: Bool](hiddeviceclient/isbuiltin.md)
   A Boolean value that determines whether the device is built-in to the system or an external peripheral.

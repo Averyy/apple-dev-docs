@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure Wi-Fi settings.
+The payload that configures Wi-Fi settings.
 
 **Availability**:
 - iOS 4.0+
@@ -18,6 +18,10 @@ The payload you use to configure Wi-Fi settings.
 ```swift
 object WiFi
 ```
+
+## Mentions
+
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -103,23 +107,23 @@ Specify `com.apple.wifi.managed` as the payload type.
 ## See Also
 
 - [object Cellular](cellular.md)
-  The payload you use to configure cellular settings.
+  The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
-  The payload to provide device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
+  The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
 - [object ContentCaching](contentcaching.md)
-  The payload you use to configure the content-caching service.
+  The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
-  The payload you use to configure encrypted DNS settings.
+  The payload that configures encrypted DNS settings.
 - [object Domains](domains.md)
-  The payload you use to configure the domains under an organization’s management.
+  The payload that configures the domains under an organization’s management.
 - [object Firewall](firewall.md)
-  The payload you use to configure the firewall.
+  The payload that configures the firewall.
 - [object NetworkUsageRules](networkusagerules.md)
-  The payload you use to configure network-usage rules.
+  The payload that configures network-usage rules.
 - [object Relay](relay.md)
-  The payload you use to configure relay settings.
+  The payload that configures relay settings.
 - [object WiFiManagedSettings](wifimanagedsettings.md)
-  The payload you use to configure managed Wi-Fi settings.
+  The payload that configures managed Wi-Fi settings.
 
 
 ---

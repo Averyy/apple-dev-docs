@@ -38,9 +38,6 @@ This error wraps a decoding error and includes the column name and row index whe
   The underlying decoding error.
 - [var rowIndex: Int](columndecodingerror/rowindex.md)
   The index of the column’s element with the error.
-### Default Implementations
-- [Error Implementations](columndecodingerror/error-implementations.md)
-- [LocalizedError Implementations](columndecodingerror/localizederror-implementations.md)
 
 ## Relationships
 

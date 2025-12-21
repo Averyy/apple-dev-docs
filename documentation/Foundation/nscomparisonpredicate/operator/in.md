@@ -22,7 +22,7 @@ case `in`
 
 #### Discussion
 
-For strings, returns [`true`](https://developer.apple.com/documentation/swift/true) if the left hand side is a substring of the right hand side . For collections, returns [`true`](https://developer.apple.com/documentation/swift/true) if the left hand side is in the right hand side .
+For strings, returns [`true`](https://developer.apple.com/documentation/Swift/true) if the left hand side is a substring of the right hand side . For collections, returns [`true`](https://developer.apple.com/documentation/Swift/true) if the left hand side is in the right hand side .
 
 ## See Also
 
@@ -52,10 +52,6 @@ For strings, returns [`true`](https://developer.apple.com/documentation/swift/tr
   A predicate to determine if the left hand side contains the right hand side.
 - [NSComparisonPredicate.Operator.between](nscomparisonpredicate/operator/between.md)
   A predicate to determine if the left hand side lies at or between bounds specified by the right hand side.
-- [NSComparisonPredicate.Operator.lessThan](nscomparisonpredicate/operator/lessthan.md)
-  A less-than predicate.
-- [NSComparisonPredicate.Operator.lessThanOrEqualTo](nscomparisonpredicate/operator/lessthanorequalto.md)
-  A less-than-or-equal-to predicate.
 
 
 ---

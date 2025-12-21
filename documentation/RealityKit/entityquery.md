@@ -10,7 +10,7 @@ An object that retrieves entities from a scene.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -32,10 +32,10 @@ To execute the query, pass it into the scene’s [`performQuery(_:)`](scene/perf
 
 ```swift
 // Build a query to retrieve all anchor components.
-let query = EntityQuery(where: .has(AnchorComponent.self)
+let query = EntityQuery(where: .has(AnchorComponent.self))
 
-// Ask the scene to perform the query and iterate over the returned
-entities. scene.performQuery(query).forEach { entity in
+// Find and modify the scene's entities that have an anchor component.
+scene.performQuery(query).forEach { entity in
     // Make any needed changes to entities.
 }
 ```

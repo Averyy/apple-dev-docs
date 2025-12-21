@@ -25,7 +25,7 @@ var pixelFormat: MTLPixelFormat { get set }
 
 #### Discussion
 
-The pixel format of the rendering pipeline state must be set to match the pixel format of the texture used by the selected color attachment; otherwise, an error occurs.
+The pixel format of the rendering pipeline state needs to be set to match the pixel format of the texture used by the selected color attachment; otherwise, an error occurs.
 
 ## See Also
 
@@ -33,6 +33,8 @@ The pixel format of the rendering pipeline state must be set to match the pixel 
 - [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
 - [var writeMask: MTLColorWriteMask](mtlrenderpipelinecolorattachmentdescriptor/writemask.md)
   A bitmask that restricts which color channels are written into the texture.
+- [struct MTLColorWriteMask](mtlcolorwritemask.md)
+  Values used to specify a mask to permit or restrict writing to color channels of a color value.
 
 
 ---

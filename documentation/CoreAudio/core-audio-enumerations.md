@@ -87,6 +87,7 @@
 - [Anonymous](4160689-anonymous.md)
 - [Anonymous](4160690-anonymous.md)
 - [enum AudioHardwareDirection](audiohardwaredirection.md)
+  An enum representing audio stream direction.
 - [enum CATapMuteBehavior](catapmutebehavior.md)
 
 ## See Also

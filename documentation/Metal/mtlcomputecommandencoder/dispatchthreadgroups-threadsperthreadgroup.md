@@ -22,7 +22,7 @@ func dispatchThreadgroups(_ threadgroupsPerGrid: MTLSize, threadsPerThreadgroup:
 
 ## Mentions
 
-- [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
+- [Calculating threadgroup and grid sizes](calculating-threadgroup-and-grid-sizes.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ func dispatchThreadgroups(_ threadgroupsPerGrid: MTLSize, threadsPerThreadgroup:
 
 Metal calculates the number of threads in a grid by multiplying `threadsPerThreadgroup` by `threadgroupsPerGrid`.
 
-If the size of your data doesn’t match the size of the grid, perform boundary checks in your compute function to avoid accessing data out of bounds. See [`Calculating Threadgroup and Grid Sizes`](calculating-threadgroup-and-grid-sizes.md) for an example.
+If the size of your data doesn’t match the size of the grid, perform boundary checks in your compute function to avoid accessing data out of bounds. See [`Calculating threadgroup and grid sizes`](calculating-threadgroup-and-grid-sizes.md) for an example.
 
 ## Parameters
 

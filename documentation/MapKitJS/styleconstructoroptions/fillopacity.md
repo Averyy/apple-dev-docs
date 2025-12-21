@@ -11,7 +11,7 @@ The opacity of the fill color.
 ## Declaration
 
 ```swift
-attribute number fillOpacity;
+fillOpacity?: number;
 ```
 
 #### Discussion

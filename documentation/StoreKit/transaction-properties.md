@@ -57,11 +57,11 @@ The properties of a transaction, including identifiers, purchase and revocation 
   The cause of the purchase transaction, whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
 - [Transaction.Reason](transaction/reason-swift.struct.md)
   A cause of a purchase transaction, indicating whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
-### Identifying subscription offers
+### Identifying offers
 - [let offer: Transaction.Offer?](transaction/offer-swift.property.md)
-  The subscription offer that applies to the transaction, including its offer type, payment mode, and ID.
+  The offer that applies to the transaction, including its offer type, payment mode, and ID.
 - [Transaction.Offer](transaction/offer-swift.struct.md)
-  The subscription offers that apply to a transaction.
+  Discounts or promotions that apply to a transaction.
 ### Getting revocation status
 - [let revocationDate: Date?](transaction/revocationdate.md)
   The date that the App Store refunded the transaction or revoked it from Family Sharing.

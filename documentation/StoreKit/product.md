@@ -78,8 +78,7 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
 - [Product.PurchaseError](product/purchaseerror.md)
   Error information for product purchase errors.
 ### Receiving current entitlement information
-- [var currentEntitlement: VerificationResult<Transaction>?](product/currententitlement.md)
-  The transaction that entitles the user to the product.
+- [var currentEntitlements: Transaction.Transactions](product/currententitlements.md)
 ### Getting the latest transaction
 - [var latestTransaction: VerificationResult<Transaction>?](product/latesttransaction.md)
   The most recent transaction for the product.
@@ -117,8 +116,9 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
   The JSON representation of the product information.
 ### Getting subscription relationship
 - [Product.SubscriptionRelationship](product/subscriptionrelationship.md)
-### Instance Properties
-- [var currentEntitlements: Transaction.Transactions](product/currententitlements.md)
+### Deprecated
+- [var currentEntitlement: VerificationResult<Transaction>?](product/currententitlement.md)
+  The transaction that entitles the user to the product.
 
 ## Relationships
 

@@ -34,9 +34,6 @@ The system provides an instance of this structure to your app when a person choo
   A structure that contains the workout specifics.
 - [JournalingSuggestion.Workout.Details](journalingsuggestion/workout/details-swift.struct.md)
   Information about a workout that a person completes.
-### Type Aliases
-- [JournalingSuggestion.Workout.JournalingSuggestionContent](journalingsuggestion/workout/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

@@ -40,8 +40,8 @@ The fitted transformer.
   Updates a transformer with a new sequence of examples.
 - [func update<InputSequence, Validation>(inout Estimator.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](updatableestimatortosupervisedadaptor/update(_:with:validateon:eventhandler:).md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [UpdatableEstimatorToSupervisedAdaptor.Transformer](updatableestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

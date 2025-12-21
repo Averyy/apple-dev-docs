@@ -116,9 +116,9 @@ Handle the transaction state of the payment request and notify the customer as n
 
 ###### Verify the Receipt
 
-As you do for all purchases, verify the receipt with the App Store by calling the [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) endpoint from your server. The App Store sends a JSON response containing information about the user’s purchase. See [`Validating Receipts With the App Store`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html) for more information.
+As you do for all purchases, verify the receipt with the App Store by calling the [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) endpoint from your server. The App Store sends a JSON response containing information about the user’s purchase. See [`Validating Receipts With the App Store`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html) for more information.
 
-When a subscriber redeems an offer, the receipt contains a [`promotional_offer_id`](https://developer.apple.com/documentation/appstorereceipts/promotional_offer_id) in the purchase transaction. This receipt field is a string containing the offer ID that you configured in App Store Connect. You can look at past transactions in the receipt to identify the offers the customer redeemed.
+When a subscriber redeems an offer, the receipt contains a [`promotional_offer_id`](https://developer.apple.com/documentation/AppStoreReceipts/promotional_offer_id) in the purchase transaction. This receipt field is a string containing the offer ID that you configured in App Store Connect. You can look at past transactions in the receipt to identify the offers the customer redeemed.
 
 ###### Unlock the Service
 

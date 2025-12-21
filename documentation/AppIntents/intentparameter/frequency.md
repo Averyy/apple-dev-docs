@@ -20,9 +20,6 @@ enum Frequency
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Frequency, IntentParameter<Value>.Frequency) -> Bool](intentparameter/frequency/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Frequency.framesPerSecond](intentparameter/frequency/framespersecond.md)
 - [IntentParameter.Frequency.gigahertz](intentparameter/frequency/gigahertz.md)
@@ -33,15 +30,6 @@ enum Frequency
 - [IntentParameter.Frequency.millihertz](intentparameter/frequency/millihertz.md)
 - [IntentParameter.Frequency.nanohertz](intentparameter/frequency/nanohertz.md)
 - [IntentParameter.Frequency.terahertz](intentparameter/frequency/terahertz.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/frequency/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/frequency/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/frequency/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/frequency/equatable-implementations.md)
 
 ## Relationships
 

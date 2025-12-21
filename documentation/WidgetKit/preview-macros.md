@@ -34,8 +34,6 @@ Use Swift macros to create widget previews in Xcode.
 
 - [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
   Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
-- [Debugging widgets](debugging-widgets.md)
-  Set environment variables in Xcode to control your widget’s configuration in the debugger.
 - [struct WidgetPreviewContext](widgetpreviewcontext.md)
   A specification for the context of a widget preview.
 

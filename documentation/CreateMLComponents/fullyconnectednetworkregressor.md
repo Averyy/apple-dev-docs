@@ -36,10 +36,8 @@ struct FullyConnectedNetworkRegressor<Scalar> where Scalar : MLShapedArrayScalar
   Fits a fully connected network regressor model to a sequence of examples.
 - [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>](fullyconnectednetworkregressor/fitted(to:validateon:eventhandler:).md)
   Fits a fully connected network regressor model to a sequence of examples.
-- [FullyConnectedNetworkRegressor.Annotation](fullyconnectednetworkregressor/annotation.md)
-  The annotation type.
-- [FullyConnectedNetworkRegressor.Transformer](fullyconnectednetworkregressor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 ### Default Implementations
 - [SupervisedEstimator Implementations](fullyconnectednetworkregressor/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](fullyconnectednetworkregressor/updatablesupervisedestimator-implementations.md)

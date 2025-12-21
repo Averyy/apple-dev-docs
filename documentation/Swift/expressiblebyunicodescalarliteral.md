@@ -69,7 +69,7 @@ To add `ExpressibleByUnicodeScalarLiteral` conformance to your custom type, impl
 - [protocol StringInterpolationProtocol](stringinterpolationprotocol.md)
   Represents the contents of a string literal with interpolations while it’s being built up.
 - [struct DefaultStringInterpolation](defaultstringinterpolation.md)
-  Represents a string literal with interpolations while it is being built up.
+  Represents a string literal with interpolations while it’s being built up.
 
 
 ---

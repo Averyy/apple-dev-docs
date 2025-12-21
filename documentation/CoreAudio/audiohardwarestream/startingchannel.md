@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+An Int that specifies the first element in the owning device that corresponds to element one of this stream.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

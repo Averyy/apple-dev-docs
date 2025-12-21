@@ -42,6 +42,15 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 - `x`: The x position.  If   is  , the bar will be centered horizontally by default.
 - `y`: The value plotted with y.
 
+## See Also
+
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](pointmark/init(x:y:)-44ke9.md)
+  Creates a point mark that plots values to x and y.
+- [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
+  Creates a point mark that plots a value on x with fixed y position.
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
+  Creates a 3D point mark that plots values to x, y and z.
+
 
 ---
 

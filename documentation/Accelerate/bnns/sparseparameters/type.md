@@ -13,7 +13,6 @@ An enumeration that specifies special patterns, if any, in the sparsity.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

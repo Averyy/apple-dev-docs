@@ -6,11 +6,11 @@
 Creates a structure containing analysis processing options.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,11 @@ init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetenti
 
 - `priority`: A priority to apply to processing work.
 - `modelRetention`: A model caching strategy.
+
+## See Also
+
+- [SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.enum.md)
+  A model caching strategy.
 
 
 ---

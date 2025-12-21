@@ -22,7 +22,7 @@ func createFile(atPath path: String, contents data: Data?, attributes attr: [Fil
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation was successful or if the item already exists, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation was successful or if the item already exists, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

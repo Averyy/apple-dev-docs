@@ -21,7 +21,7 @@ enum MTLCaptureDestination
 
 ## Topics
 
-### Choosing a Destination
+### Choosing a destination
 - [MTLCaptureDestination.developerTools](mtlcapturedestination/developertools.md)
   An option specifying that data should be captured to Xcode and that execution should stop in Xcode after the data is captured.
 - [MTLCaptureDestination.gpuTraceDocument](mtlcapturedestination/gputracedocument.md)
@@ -46,7 +46,7 @@ enum MTLCaptureDestination
 - [class MTLCaptureManager](mtlcapturemanager.md)
   An instance you use to capture Metal command data in your app.
 - [protocol MTLCaptureScope](mtlcapturescope.md)
-  A protocol that defines custom boundaries for a GPU frame capture.
+  A type that can programmatically customize a GPU frame capture.
 
 
 ---

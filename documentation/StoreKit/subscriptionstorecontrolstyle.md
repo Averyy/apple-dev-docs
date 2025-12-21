@@ -143,11 +143,9 @@ SubscriptionStoreView(groupID: "SAMPLE")
 
 ## See Also
 
-- [nonisolated func subscriptionStoreControlStyle(_ style: some SubscriptionStoreControlStyle) -> some View
-](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
+- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
   Sets the control style for subscription store views within a view.
-- [nonisolated func subscriptionStoreControlStyle<S>(_ style: S, placement: S.Placement) -> some View where S : SubscriptionStoreControlStyle
-](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
+- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
   Sets the control style and control placement for subscription store views within a view.
 - [struct SubscriptionStoreControlStyleConfiguration](subscriptionstorecontrolstyleconfiguration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.

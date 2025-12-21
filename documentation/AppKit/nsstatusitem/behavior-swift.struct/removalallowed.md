@@ -16,7 +16,7 @@ static var removalAllowed: NSStatusItem.Behavior { get }
 
 #### Discussion
 
-Status items with this behavior allow interactive removal from the menu bar. Upon removal, the item’s [`isVisible`](nsstatusitem/isvisible.md) property changes to [`false`](https://developer.apple.com/documentation/swift/false). This change is observable using key-value observation.
+Status items with this behavior allow interactive removal from the menu bar. Upon removal, the item’s [`isVisible`](nsstatusitem/isvisible.md) property changes to [`false`](https://developer.apple.com/documentation/Swift/false). This change is observable using key-value observation.
 
 ## See Also
 

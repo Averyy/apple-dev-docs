@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: method
 
+An operation to write the blob value, overwriting any existing value.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -15,6 +17,15 @@
 ```swift
 static func write(_ data: Data) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput
 ```
+
+## Parameters
+
+- `data`: The data to write.
+
+## See Also
+
+- [static var read: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/read.md)
+  An operation to read the existing blob value.
 
 
 ---

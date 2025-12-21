@@ -21,7 +21,7 @@ func evaluatePredicate(in system: GKRuleSystem) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rule is satisfied (and its action should be executed); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the rule is satisfied (and its action should be executed); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

@@ -21,9 +21,9 @@ static let eventWaveformLoopEnabled: CHHapticPattern.Key
 
 #### Discussion
 
-Set a value of [`true`](https://developer.apple.com/documentation/swift/true) to indicate that events of type [`audioCustom`](chhapticevent/eventtype/audiocustom.md) should loop playback.
+Set a value of [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that events of type [`audioCustom`](chhapticevent/eventtype/audiocustom.md) should loop playback.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

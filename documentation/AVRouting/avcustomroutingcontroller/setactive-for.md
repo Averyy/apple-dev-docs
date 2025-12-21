@@ -19,7 +19,7 @@ func setActive(_ active: Bool, for route: AVCustomDeviceRoute)
 
 #### Discussion
 
-Set the value to [`false`](https://developer.apple.com/documentation/swift/false) if the connection to the route becomes unavailable, and set it to [`true`](https://developer.apple.com/documentation/swift/true) after you reestablish the connection.
+Set the value to [`false`](https://developer.apple.com/documentation/Swift/false) if the connection to the route becomes unavailable, and set it to [`true`](https://developer.apple.com/documentation/Swift/true) after you reestablish the connection.
 
 ## Parameters
 

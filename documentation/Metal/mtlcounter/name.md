@@ -22,7 +22,7 @@ var name: String { get }
 
 #### Discussion
 
-The property typically matches one of the common counter names that [`MTLCommonCounter`](mtlcommoncounter.md) defines (see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+The property typically matches one of the common counter names that [`MTLCommonCounter`](mtlcommoncounter.md) defines (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 
 ---

@@ -43,6 +43,13 @@ let y = x.padded(forSizes: [(0, 0), (2, 2)], with: 0.0)
 - `sizes`: An array of tuples describing the size to be inserted before and after each dimension.
 - `value`: The constant value used for padding.
 
+## See Also
+
+- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](mltensor/padded(forsizes:mode:).md)
+  Returns a padded tensor according to the specified padding sizes and mode.
+- [MLTensor.PaddingMode](mltensor/paddingmode.md)
+  A mode that dictates how a tensor is padded.
+
 
 ---
 

@@ -19,7 +19,7 @@ enum TextAlignment
 
 ## Topics
 
-### Text Alignments
+### Text alignments
 - [AVCaption.TextAlignment.start](avcaption/textalignment-swift.enum/start.md)
   An alignment of the text to the start of the inline progression direction.
 - [AVCaption.TextAlignment.end](avcaption/textalignment-swift.enum/end.md)

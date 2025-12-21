@@ -49,10 +49,10 @@ The vertical layout text cursor. This cursor is used when editing vertical layou
   Returns the operation not allowed cursor.
 - [class var pointingHand: NSCursor](nscursor/pointinghand.md)
   Returns the pointing-hand system cursor.
-- [class var resizeDown: NSCursor](nscursor/resizedown.md)
-  Returns the resize-down system cursor.
-- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
-  Returns the resize-left system cursor.
+- [class var zoomIn: NSCursor](nscursor/zoomin.md)
+  Returns the zoom-in cursor.
+- [class var zoomOut: NSCursor](nscursor/zoomout.md)
+  Returns the zoom-out cursor.
 
 
 ---

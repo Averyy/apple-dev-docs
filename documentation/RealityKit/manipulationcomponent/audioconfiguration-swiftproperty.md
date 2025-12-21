@@ -6,7 +6,7 @@
 The audio configuration to apply to the object over the course of the interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

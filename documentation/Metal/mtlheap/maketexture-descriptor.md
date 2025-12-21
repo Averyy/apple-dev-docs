@@ -26,9 +26,11 @@ A new texture object backed by heap memory, or `nil` if the heap memory is full.
 
 #### Discussion
 
-The heap’s type must be [`MTLHeapType.automatic`](mtlheaptype/automatic.md).
+You can call the method with the following restrictions:
 
-The texture’s CPU cache mode must match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) value. The texture’s storage mode must either match the heap’s [`storageMode`](mtlheap/storagemode.md) value or be a [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) value.
+- The heap’s type needs to be [`MTLHeapType.automatic`](mtlheaptype/automatic.md)
+- The texture’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) property
+- The texture’s storage mode option needs to be [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md), or match the heap’s [`storageMode`](mtlheap/storagemode.md) property
 
 ## Parameters
 
@@ -36,10 +38,6 @@ The texture’s CPU cache mode must match the heap’s [`cpuCacheMode`](mtlheap/
 
 ## See Also
 
-- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:).md)
-  Creates a buffer on the heap.
-- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:offset:).md)
-  Creates a buffer at a specified offset on the heap.
 - [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:offset:).md)
   Creates a texture at a specified offset on the heap.
 

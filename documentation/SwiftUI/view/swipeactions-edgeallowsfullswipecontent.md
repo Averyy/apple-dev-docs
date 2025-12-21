@@ -115,6 +115,10 @@ Actions accumulate for a given edge if you call the modifier multiple times on t
 
 - [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
+- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
+  Requests that the containing list row use the provided hover effect.
+- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
+  Requests that the containing list row have its hover effect disabled.
 
 
 ---

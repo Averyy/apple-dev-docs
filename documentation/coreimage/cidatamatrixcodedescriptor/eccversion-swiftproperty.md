@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-The Data Matrix code ECC version.
+The error correction version of the Data Matrix code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -21,16 +21,16 @@ var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion { get }
 
 #### Discussion
 
-Valid values are 000, 050, 080, 100, 140, and 200. Any symbol with an even number of rows and columns will be ECC 200.
+The possible error correction version are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](cidatamatrixcodedescriptor/eccversion-swift.enum.md). Any symbol with an even number of rows and columns will be ECC 200.
 
 ## See Also
 
 - [var errorCorrectedPayload: Data](cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
-  The error-corrected payload that comprises the Data Matrix code symbol.
+  The error-corrected payload containing the data encoded in the Data Matrix code symbol.
 - [var rowCount: Int](cidatamatrixcodedescriptor/rowcount-swift.property.md)
-  The number of module rows.
+  The number of rows in the Data Matrix code symbol.
 - [var columnCount: Int](cidatamatrixcodedescriptor/columncount-swift.property.md)
-  The number of module columns.
+  The number of columns in the Data Matrix code symbol.
 
 
 ---

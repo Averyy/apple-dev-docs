@@ -20,6 +20,8 @@ typealias quadrature_function_array = (UnsafeMutableRawPointer?, Int, UnsafePoin
 
 #### Discussion
 
+Y=F(X) one-dimensional real function, array form, double precision
+
 Should set values y[i] = F(x[i]) for i=0..n-1.
 
 ## Parameters

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: property
 
-A rectangle indicating the position and dimensions of the face in image coordinates.
+A rectangle indicating the position and extent of the face feature in image coordinates.
 
 **Availability**:
 - iOS 5.0+

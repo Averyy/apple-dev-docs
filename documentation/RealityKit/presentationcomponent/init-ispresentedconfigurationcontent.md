@@ -6,7 +6,7 @@
 Present `content` when a binding that you provide is `true`, using modality and options specified by `configuration`.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

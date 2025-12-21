@@ -16,7 +16,7 @@ var loadsImagesAutomatically: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the web view should allow images to be loaded automatically, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the web view should allow images to be loaded automatically, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

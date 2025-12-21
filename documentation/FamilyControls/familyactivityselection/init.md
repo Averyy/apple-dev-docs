@@ -15,11 +15,6 @@ Creates a new activity selection instance.
 init()
 ```
 
-## See Also
-
-- [init(from: any Decoder) throws](familyactivityselection/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

@@ -21,13 +21,13 @@ optional func textFieldShouldClear(_ textField: UITextField) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text field’s contents should be cleared; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text field’s contents should be cleared; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-The text field calls this method in response to the user pressing the built-in clear button. (This button is not shown by default but can be enabled by changing the value in the [`clearButtonMode`](uitextfield/clearbuttonmode.md) property of the text field.) This method is also called when editing begins and the [`clearsOnBeginEditing`](uitextfield/clearsonbeginediting.md) property of the text field is set to [`true`](https://developer.apple.com/documentation/swift/true).
+The text field calls this method in response to the user pressing the built-in clear button. (This button is not shown by default but can be enabled by changing the value in the [`clearButtonMode`](uitextfield/clearbuttonmode.md) property of the text field.) This method is also called when editing begins and the [`clearsOnBeginEditing`](uitextfield/clearsonbeginediting.md) property of the text field is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If you do not implement this method, the text field clears the text as if the method had returned [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the text field clears the text as if the method had returned [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

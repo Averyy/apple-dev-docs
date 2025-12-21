@@ -24,6 +24,8 @@ var error: (any Error)? { get }
 
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
   The identifier for the content key.
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 - [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
 - [var initializationData: Data?](avcontentkeyrequest/initializationdata.md)

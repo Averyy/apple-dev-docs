@@ -16,7 +16,7 @@ let kQLPreviewPropertyPDFStyleKey: CFString!
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd provided by [`QLPreviewPDFStyle`](qlpreviewpdfstyle.md).
+The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) provided by [`QLPreviewPDFStyle`](qlpreviewpdfstyle.md).
 
 ## See Also
 

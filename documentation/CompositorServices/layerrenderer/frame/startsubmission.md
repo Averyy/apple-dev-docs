@@ -6,7 +6,7 @@
 Notifies Compositor Services that you’re ready to generate the Metal commands to render the specified frame.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

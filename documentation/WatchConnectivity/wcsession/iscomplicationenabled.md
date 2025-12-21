@@ -19,7 +19,7 @@ var isComplicationEnabled: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the app’s complication is installed on the active clock face. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), calls to the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method fail immediately.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the app’s complication is installed on the active clock face. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), calls to the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method fail immediately.
 
 The value in this property is valid only for a configured session that has been activated successfully. If the [`activationState`](wcsession/activationstate.md) property is available, its value must be [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md). When the session becomes inactive or deactivated, you should ignore the value in this property.
 

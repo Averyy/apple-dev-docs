@@ -4,6 +4,7 @@
 **Kind**: case
 
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

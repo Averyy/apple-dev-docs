@@ -19,10 +19,6 @@ func prepareRouteSelectionForPlayback() async -> (Bool, AVAudioSession.RouteSele
 
 #### Discussion
 
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func prepareRouteSelectionForPlayback() async -> (Bool, AVAudioSession.RouteSelection)
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 When playing long-form video content, call this method to indicate that playback is about to begin. Doing so provides the system the opportunity to prompt the user for an output destination, if needed, and perform any required routing.
 
 The system only prompts the user to select a route if you’ve configured the audio session with a long-form video route-sharing policy. After the system configures the needed routing, it calls its completion handler, from which you can begin playback.

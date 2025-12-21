@@ -22,15 +22,15 @@ struct Merge8<A, B, C, D, E, F, G, H> where A : Publisher, B : Publisher, C : Pu
 
 ## Topics
 
-### Creating a Merge-Eight Publisher
+### Creating a merge-eight publisher
 - [init(A, B, C, D, E, F, G, H)](publishers/merge8/init(_:_:_:_:_:_:_:_:).md)
   Creates a publisher created by applying the merge function to eight upstream publishers.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Merge8.Output](publishers/merge8/output.md)
   The kind of values published by this publisher.
 - [Publishers.Merge8.Failure](publishers/merge8/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let a: A](publishers/merge8/a.md)
   A publisher to merge.
 - [let b: B](publishers/merge8/b.md)
@@ -47,17 +47,11 @@ struct Merge8<A, B, C, D, E, F, G, H> where A : Publisher, B : Publisher, C : Pu
   An seventh publisher to merge.
 - [let h: H](publishers/merge8/h.md)
   A eighth publisher to merge.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Merge8<A, B, C, D, E, F, G, H>, Publishers.Merge8<A, B, C, D, E, F, G, H>) -> Bool](publishers/merge8/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/merge8/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-merge8-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/merge8/equatable-implementations.md)
-- [Publisher Implementations](publishers/merge8/publisher-implementations.md)
 
 ## Relationships
 

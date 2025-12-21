@@ -6,8 +6,8 @@
 Structure containing media details provided by a business.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -31,16 +31,6 @@ struct MediaEntry
   Content type for media.
 - [RCSService.Business.MediaEntry.ContentType](rcsservice/business/mediaentry/contenttype-swift.enum.md)
   Content type for media.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/mediaentry/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/mediaentry/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing media entries
-- [static func == (RCSService.Business.MediaEntry, RCSService.Business.MediaEntry) -> Bool](rcsservice/business/mediaentry/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/mediaentry/equatable-implementations.md)
 
 ## Relationships
 

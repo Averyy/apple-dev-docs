@@ -21,7 +21,7 @@ var appliesPreferredTrackTransform: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). This class only supports rotation by 90, 180, or 270 degrees.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). This class only supports rotation by 90, 180, or 270 degrees.
 
 The image generator ignores this property if you set a value for the [`videoComposition`](avassetimagegenerator/videocomposition.md) property.
 

@@ -19,7 +19,7 @@ enum FontStyle
 
 ## Topics
 
-### Font Styles
+### Font styles
 - [AVCaption.FontStyle.unknown](avcaption/fontstyle/unknown.md)
   An unknown font style.
 - [AVCaption.FontStyle.normal](avcaption/fontstyle/normal.md)

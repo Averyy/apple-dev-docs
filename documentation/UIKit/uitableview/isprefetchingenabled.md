@@ -21,7 +21,7 @@ var isPrefetchingEnabled: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the table view may request cells in advance of displaying them. When [`false`](https://developer.apple.com/documentation/swift/false), the table view requests cells when they need to display. Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) also disables data prefetching. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When [`true`](https://developer.apple.com/documentation/Swift/true), the table view may request cells in advance of displaying them. When [`false`](https://developer.apple.com/documentation/Swift/false), the table view requests cells when they need to display. Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) also disables data prefetching. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

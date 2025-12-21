@@ -22,9 +22,9 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 An [`MLTrainingSession`](mltrainingsession.md) that represents the hand action classifier training session.
 
-#### Discussion
+## Parameters
 
-- sessionParameters: The same [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance that created an existing training session.
+- `sessionParameters`: The same   instance   that created an existing training session.
 
 ## See Also
 

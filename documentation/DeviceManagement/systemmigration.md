@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure system migration.
+The payload that configures system migration.
 
 **Availability**:
 - macOS 10.12.4+
@@ -93,7 +93,7 @@ Specify `com.apple.systemmigration` as the payload type.
 ## See Also
 
 - [object SoftwareUpdate](softwareupdate.md)
-  The payload you use to configure the software update policy.
+  The payload that configures the software update policy.
 
 
 ---

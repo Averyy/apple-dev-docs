@@ -18,6 +18,8 @@ KERN_SUCCESS is successful see IOReturn.h for error codes.
 
 #### Discussion
 
+Add a memory descriptor to the ring.
+
 Caller must fill the ring starting at index 0. The entire ring must be populated up to index size-1
 
 ## Parameters

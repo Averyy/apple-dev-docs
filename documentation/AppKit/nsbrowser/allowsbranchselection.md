@@ -17,7 +17,7 @@ var allowsBranchSelection: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can select branch items when multiple selection is enabled.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user can select branch items when multiple selection is enabled.
 
 ## See Also
 

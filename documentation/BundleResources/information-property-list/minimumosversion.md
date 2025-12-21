@@ -14,7 +14,7 @@ The minimum version of the operating system required for the app to run in iOS, 
 
 ## Mentions
 
-- [Managing Your App’s Information Property List](managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
 
 #### Discussion
 

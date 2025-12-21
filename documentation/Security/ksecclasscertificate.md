@@ -29,7 +29,7 @@ let kSecClassCertificate: CFString
 
 The following keychain item attributes form the composite primary key of a certificate password item:
 
-- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrCertificateType`](ksecattrcertificatetype.md)
 - [`kSecAttrIssuer`](ksecattrissuer.md)
 - [`kSecAttrSerialNumber`](ksecattrserialnumber.md)
@@ -40,7 +40,7 @@ Calls to [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) that add a certificate item w
 The following keychain item attributes apply to a certificate item, and don’t form part of its composite primary key:
 
 - [`kSecAttrAccess`](ksecattraccess.md) (macOS only)
-- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrCertificateEncoding`](ksecattrcertificateencoding.md)
 - [`kSecAttrLabel`](ksecattrlabel.md)
 - [`kSecAttrSubject`](ksecattrsubject.md)

@@ -27,13 +27,13 @@ var allowsMultipleSelection: Bool { get set }
 
 This property controls whether a user can select multiple rows simultaneously outside of editing mode. Selected rows acquire a selected appearance.
 
-In iOS, when the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can select additional rows by tapping on them. The user must tap a currently selected row to deselect it.
+In iOS, when the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user can select additional rows by tapping on them. The user must tap a currently selected row to deselect it.
 
-In macOS, when the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can select additional rows by holding the Command or Shift key while clicking on the additional rows they want to select. If the user isn’t holding a modifier key, clicking on another row clears the current selection and selects only the clicked row. This behavior resembles the selection behavior of [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView).
+In macOS, when the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user can select additional rows by holding the Command or Shift key while clicking on the additional rows they want to select. If the user isn’t holding a modifier key, clicking on another row clears the current selection and selects only the clicked row. This behavior resembles the selection behavior of [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView).
 
 If you access [`indexPathsForSelectedRows`](uitableview/indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

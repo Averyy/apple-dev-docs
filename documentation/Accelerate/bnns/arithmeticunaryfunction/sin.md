@@ -13,7 +13,6 @@ An operation that calculates the element-wise sine of its input.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

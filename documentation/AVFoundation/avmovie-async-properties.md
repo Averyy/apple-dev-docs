@@ -6,7 +6,7 @@ Asynchronous properties for movies.
 
 ## Topics
 
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMovieTrack]>](avpartialasyncproperty/tracks-80a83.md)
   The tracks that a movie contains.
 

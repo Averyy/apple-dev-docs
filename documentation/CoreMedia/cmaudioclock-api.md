@@ -1,4 +1,4 @@
-# CMAudioClock APIs
+# CMAudioClock
 
 **Framework**: Core Media
 
@@ -27,9 +27,9 @@ An audio clock is a specialized [`CMClock`](cmclock.md) that you use to synchron
 
 ## See Also
 
-- [CMClock APIs](cmclock-api.md)
+- [CMClock](cmclock-api.md)
   A reference clock you use to synchronize applications and devices.
-- [CMTimebase APIs](cmtimebase-api.md)
+- [CMTimebase](cmtimebase-api.md)
   A model of a timeline under application control.
 
 

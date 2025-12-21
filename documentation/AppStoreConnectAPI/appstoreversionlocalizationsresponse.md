@@ -24,6 +24,8 @@ object AppStoreVersionLocalizationsResponse
   A response that contains a single App Store Version Localizations resource.
 - [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
 
 
 ---

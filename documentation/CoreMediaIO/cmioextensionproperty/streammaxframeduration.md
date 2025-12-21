@@ -17,7 +17,7 @@ static let streamMaxFrameDuration: CMIOExtensionProperty
 
 #### Discussion
 
-The property state for this property is a dictionary representation of a doc://com.apple.documentation/documentation/coremedia/cmtime-u58 structure.
+The property state for this property is a dictionary representation of a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) structure.
 
 ## See Also
 

@@ -26,17 +26,6 @@ enum EntityQueryComparatorMode
 ### Comparator modes
 - [EntityQueryComparatorMode.and](entityquerycomparatormode/and.md)
 - [EntityQueryComparatorMode.or](entityquerycomparatormode/or.md)
-### Operators
-- [static func == (EntityQueryComparatorMode, EntityQueryComparatorMode) -> Bool](entityquerycomparatormode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](entityquerycomparatormode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](entityquerycomparatormode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](entityquerycomparatormode/equatable-implementations.md)
 
 ## Relationships
 

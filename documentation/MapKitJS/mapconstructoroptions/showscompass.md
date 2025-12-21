@@ -11,12 +11,12 @@ A feature visibility setting that determines when the compass is visible.
 ## Declaration
 
 ```swift
-attribute string showsCompass;
+showsCompass?: FeatureVisibility;
 ```
 
 #### Discussion
 
-The default value is `mapkit.FeatureVisibility.Adaptive`. See [`mapkit.FeatureVisibility`](mapkit.featurevisibility.md) for other settings.
+The default value is `mapkit.FeatureVisibility.Adaptive`. See [`FeatureVisibility`](featurevisibility.md) for other settings.
 
 ## See Also
 

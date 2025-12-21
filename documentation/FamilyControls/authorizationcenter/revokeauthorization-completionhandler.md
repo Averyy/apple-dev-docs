@@ -33,8 +33,6 @@ After you revoke authorization, your app no longer provides parental controls, a
 
 - [func requestAuthorization(for: FamilyControlsMember) async throws](authorizationcenter/requestauthorization(for:).md)
   Requests authorization to provide parental controls for a child or individual.
-- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/requestauthorization(completionhandler:).md)
-  Requests authorization to provide parental controls for a child.
 
 
 ---

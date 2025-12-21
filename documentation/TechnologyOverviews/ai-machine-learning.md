@@ -8,7 +8,7 @@ Intelligent features make people’s experiences on a device more personal. Appl
 
 #### Apple Intelligence
 
-Apple Intelligence is the personal intelligence system that helps you communicate, work, and express yourself. It combines generative models with your personal context to deliver intelligence that is most useful and relevant to people, while designed with privacy in mind. Now you now have direct access to the on-device model at the core of Apple Intelligence, so you can build experiences that are smart, private, and work even without internet connectivity.
+Apple Intelligence is the personal intelligence system that helps you communicate, work, and express yourself. It combines generative models with your personal context to deliver intelligence that is most useful and relevant to people, while designed with privacy in mind. Now you have direct access to the on-device model at the core of Apple Intelligence, so you can build experiences that are smart, private, and work even without internet connectivity.
 
 #### Foundation Models Framework
 

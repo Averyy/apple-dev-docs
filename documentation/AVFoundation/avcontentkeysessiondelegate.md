@@ -22,14 +22,14 @@ protocol AVContentKeySessionDelegate : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Providing New Content Key Requests
+### Providing new content key requests
 - [func contentKeySession(AVContentKeySession, didProvide: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-3coq5.md)
   Provides the receiver with a new content key request object.
 - [func contentKeySession(AVContentKeySession, didProvideRenewingContentKeyRequest: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didproviderenewingcontentkeyrequest:).md)
   Provides the receiver with a new content key request object for the renewal of an existing content key.
 - [func contentKeySession(AVContentKeySession, didProvide: AVPersistableContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md)
   Provides the receiver with a new content key request object to process a persistable content key.
-### Updating and Retrying Content Key Requests
+### Updating and retrying content key requests
 - [func contentKeySession(AVContentKeySession, didProvide: [AVContentKeyRequest], forInitializationData: Data?)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:forinitializationdata:).md)
 - [func contentKeySession(AVContentKeySession, externalProtectionStatusDidChangeFor: AVContentKey)](avcontentkeysessiondelegate/contentkeysession(_:externalprotectionstatusdidchangefor:).md)
   Tells the delegate when external protection state has changed.

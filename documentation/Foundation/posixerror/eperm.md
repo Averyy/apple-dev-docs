@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Operation not permitted.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

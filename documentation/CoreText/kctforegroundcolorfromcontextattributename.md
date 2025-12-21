@@ -22,7 +22,7 @@ let kCTForegroundColorFromContextAttributeName: CFString
 
 #### Discussion
 
-Value must be a doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p object. Default is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). The reason this exists is because an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object defaults to a black color if no color attribute is set. This forces Core Text to set the color in the context. This attribute allows developers to sidestep this, making Core Text set nothing but font information in the [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext). If set, this attribute also determines the color used by [`kCTUnderlineStyleAttributeName`](kctunderlinestyleattributename.md), in which case it overrides the foreground color.
+Value must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) object. Default is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). The reason this exists is because an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object defaults to a black color if no color attribute is set. This forces Core Text to set the color in the context. This attribute allows developers to sidestep this, making Core Text set nothing but font information in the [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext). If set, this attribute also determines the color used by [`kCTUnderlineStyleAttributeName`](kctunderlinestyleattributename.md), in which case it overrides the foreground color.
 
 ## See Also
 

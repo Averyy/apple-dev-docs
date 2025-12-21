@@ -16,7 +16,7 @@ optional func tableView(_ tableView: NSTableView, userCanChangeVisibilityOf colu
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user can change the visibility of the column; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user can change the visibility of the column; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

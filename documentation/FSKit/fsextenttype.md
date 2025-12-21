@@ -23,9 +23,6 @@ enum FSExtentType
   An extent type to indicate uninitialized data.
 ### Working with raw values
 - [init?(rawValue: Int)](fsextenttype/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsextenttype/equatable-implementations.md)
-- [RawRepresentable Implementations](fsextenttype/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -101,6 +101,8 @@ When you communicate with the server, you may receive one of the following respo
   Verify that connections to your server come from legitimate instances of your app.
 - [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
   Test your implementation in a development environment and onboard users gradually.
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+  Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
 - [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)

@@ -75,13 +75,13 @@ To confirm that your CloudKit container and app ID are correctly associated:
 1. Log in Apple’s [`Developer Portal`](https://developer.apple.comhttp://developer.apple.com/account) with your developer account, select the Certificates, Identifiers & Profiles page, and find the app ID of your app.
 2. Click the app ID to navigate to the Capabilities page, confirm that iCloud is checked, then click Edit to navigate to the iCloud Container Assignment page.
 3. Find your CloudKit container, and confirm that it is selected.
-4. Refresh your provisioning profile. In Xcode, go to the Signing & Capabilities tab of your app target, un-select the `Automatically manage signing` checkbox, select it again, and then [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) to have Xcode refresh the provisioning profile. If you use manual code signing, create the provisioning profile manually, and then download and install it to your Xcode.
+4. Refresh your provisioning profile. In Xcode, go to the Signing & Capabilities tab of your app target, un-select the `Automatically manage signing` checkbox, select it again, and then [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team) to have Xcode refresh the provisioning profile. If you use manual code signing, create the provisioning profile manually, and then download and install it to your Xcode.
 
 If the portal shows that the association between your CloudKit container and app ID is correct, but the error still exists, it is most likely because the association isn’t synchronized to the CloudKit server. In that case, consider using a new CloudKit container to continue your development.
 
 > **Note**: You can hide a CloudKit container using CloudKit Console, as shown in WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115) (the content starting at 1 minute), but can’t delete an existing container.
 
-If your CloudKit container is already used in the production environment and switching to a new container leads to data loss, consider filing a feedback report with the following information to request manually associating your CloudKit container with your app ID:
+If your CloudKit container is already used in the production environment and switching to a new container leads to data loss, consider [`filing a feedback report`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/) with the following information to request manually associating your CloudKit container with your app ID:
 
 - The app ID and the CloudKit container that trigger the permission failure.
 - Screenshots that show the association between your CloudKit container and app ID in the developer portal.
@@ -113,9 +113,9 @@ server message = "Cannot create or modify field '<A record field>' in record '<A
 44 "Batch Request Failed" CKError's omited …}>}
 ```
 
-To completely mirror your Core Data model to CloudKit, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users).
+To completely mirror your Core Data model to CloudKit, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users#4288212).
 
-CloudKit doesn’t support all the features of a Core Data model. When designing your model, avoid using the unsupported features, such as unique constraints and ordered relationships. For more information, see [`Creating a Core Data Model for CloudKit`](https://developer.apple.com/documentation/CoreData/creating-a-core-data-model-for-cloudkit). For an example on how to avoid duplicates, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users).
+CloudKit doesn’t support all the features of a Core Data model. When designing your model, avoid using the unsupported features, such as unique constraints and ordered relationships. For more information, see [`Creating a Core Data Model for CloudKit`](https://developer.apple.com/documentation/CoreData/creating-a-core-data-model-for-cloudkit#3191035). For an example on how to avoid duplicates, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users#4288217).
 
 > **Note**: If the debug build of your app synchronizes correctly but the App Store or TestFlight build doesn’t, it is most likely because you haven’t deployed your CloudKit schema to the production environment. For more information, see [`Deploying an iCloud Container’s Schema`](https://developer.apple.com/documentation/CloudKit/deploying-an-icloud-container-s-schema).
 
@@ -141,7 +141,7 @@ op = 22900FB3D1959E5C; uuid = AEDE918E-F343-4245-A41B-7D7D3A41FD20; container ID
 
 To avoid the 256 fields per record type limit, review your CloudKit schema. If you find a record type that is close to or exceeds the limit, trace back to the associated Core Data entity, and split it into multiple entities. See [`Reading CloudKit Records for Core Data`](https://developer.apple.com/documentation/CoreData/reading-cloudkit-records-for-core-data) for how a Core Data model is mirrored to CloudKit.
 
-For other limits, avoid them when designing your app’s architecture and workflow. If hitting a limit is inevitable, handle it appropriately. For example, whenever you create a new CloudKit share ([`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare)) using [`share(_:to:completion:)`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer/3746834-share), the API creates a new shared record zone. Over time, your app may hit the 1000 record zone per container limit. To avoid that, consider reusing an existing share when appropriate, and removing empty shares using [`purgeObjectsAndRecordsInZone(with:in:completion:)`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer/3746833-purgeobjectsandrecordsinzone). In the case where your app inevitably hits the limit, provide an option the user to keep their data before removing a record zone.
+For other limits, avoid them when designing your app’s architecture and workflow. If hitting a limit is inevitable, handle it appropriately. For example, whenever you create a new CloudKit share ([`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare)) using [`shareManagedObjects:toShare:completion:`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer/shareManagedObjects:toShare:completion:), the API creates a new shared record zone. Over time, your app may hit the 1000 record zone per container limit. To avoid that, consider reusing an existing share when appropriate, and removing empty shares using [`purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer/purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:). In the case where your app inevitably hits the limit, provide an option the user to keep their data before removing a record zone.
 
 #### Avoid Synchronizing a Store with Multiple Persistent Containers
 
@@ -185,6 +185,26 @@ If your issue isn’t covered in the technote, consider figuring out what happen
 
 ## See Also
 
+- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
+  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
+- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
+  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
+- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
+  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
+- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
+  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
+- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
+  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
+- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
+  Learn which networking API is best for you.
+- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
+  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
+- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
+  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
+  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
+- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
+  Learn how local network privacy affects your software.
 - [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
   Identify iOS Mail background traffic and manage its impact on your IMAP server.
 - [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
@@ -195,26 +215,6 @@ If your issue isn’t covered in the technote, consider figuring out what happen
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 - [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
   Inspect your active StoreKit configuration file for unexpected configurations.
-- [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
-  Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
-- [TN3183: Adding required reason API entries to your privacy manifest](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md)
-  Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
-- [TN3184: Adding data collection details to your privacy manifest](tn3184-adding-data-collection-details-to-your-privacy-manifest.md)
-  Declare the data your app or third-party SDK collects in a privacy manifest.
-- [TN3181: Debugging an invalid privacy manifest](tn3181-debugging-invalid-privacy-manifest.md)
-  Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
-- [TN3180: Reverting to App Store Server Notifications V1](tn3180-reverting-app-store-server-notifications-v1.md)
-  Migrate from version 2 to version 1 of App Store Server Notifications using the Modify an App endpoint.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3178: Checking for and resolving build UUID problems](tn3178-checking-for-and-resolving-build-uuid-problems.md)
-  Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
-- [TN3177: Understanding alternate audio track groups in movie files](tn3177-understanding-alternate-audio-track-groups-in-movie-files.md)
-  Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3176: Troubleshooting Apple Pay payment processing issues](tn3176-troubleshooting-apple-pay-payment-processing-issues.md)
-  Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 
 
 ---

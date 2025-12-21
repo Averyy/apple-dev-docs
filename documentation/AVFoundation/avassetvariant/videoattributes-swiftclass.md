@@ -22,7 +22,7 @@ class VideoAttributes
 
 ## Topics
 
-### Inspecting the Attributes
+### Inspecting the attributes
 - [var codecTypes: [CMVideoCodecType]](avassetvariant/videoattributes-swift.class/codectypes.md)
   The video sample codec types present in the variant’s renditions.
 - [var nominalFrameRate: Double?](avassetvariant/videoattributes-swift.class/nominalframerate.md)

@@ -15,13 +15,13 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
 - Create hover effect groups to indicate entities that need to highlight together using [`HoverEffectComponent.GroupID`](https://developer.apple.com/documentation/RealityKit/HoverEffectComponent/GroupID).
 - Present popovers from volumes using [`PresentationComponent`](https://developer.apple.com/documentation/RealityKit/PresentationComponent).
 - Manually create instances of entities using [`MeshInstancesComponent`](https://developer.apple.com/documentation/RealityKit/MeshInstancesComponent).
-- Animate entity properties using [`animate(_:body:completion:)`](https://developer.apple.com/documentation/RealityKit/Entity/animate(_:body:completion:)).
+- Animate entities implicitly using [`animate(_:body:completion:)`](https://developer.apple.com/documentation/RealityKit/Entity/animate(_:body:completion:)).
 - Create and modify attachments in a more streamlined fashion using [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent).
 - Make entities render behind real-world objects based on depth using [`EnvironmentBlendingComponent`](https://developer.apple.com/documentation/RealityKit/EnvironmentBlendingComponent).
 - Implement post-processing effects using [`RealityViewPostProcessEffect`](https://developer.apple.com/documentation/RealityKit/RealityViewPostProcessEffect) and [`PostProcessEffectContext`](https://developer.apple.com/documentation/RealityKit/PostProcessEffectContext).
 - Attach models together using [`attach(_:to:)`](https://developer.apple.com/documentation/RealityKit/Entity/attach(_:to:)).
-- [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) now supports AVIF textures. Imported USDZ files created using [`init(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(named:in:)) create materials from AVIF textures.
-- Load entities from Data objects using [`init(from:named:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(from:named:)).
+- [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) now supports AVIF textures and entities you load from USDZ files that contain AVIF textures using [`init(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(named:in:))  so they render correctly.
+- Load entities from Data objects using [`init(from:configurations:)`](https://developer.apple.com/documentation/RealityKit/Entity/init(from:configurations:)).
 
 ##### Image Presentation
 
@@ -31,13 +31,13 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
 
 ##### Arkit Integration
 
-- Receive updates about ARKit anchors directly in RealityKit using [`AnchorStateEvents`](https://developer.apple.com/documentation/RealityKit/AnchorStateEvents) and [`Scene.AnchoringTrackingState`](https://developer.apple.com/documentation/RealityKit/Scene/AnchoringTrackingState-wu3p).
-- Access ARKit anchors from RealityKit entities using [`ARKitAnchorComponent`](https://developer.apple.com/documentation/RealityKit/ARKitAnchorComponent).
+- Receive updates about ARKit anchors directly in RealityKit using [`AnchorStateEvents`](https://developer.apple.com/documentation/RealityKit/AnchorStateEvents) and [`SceneEvents.TrackingStateUpdate`](https://developer.apple.com/documentation/RealityKit/SceneEvents/TrackingStateUpdate).
 
 ##### Swiftui Integration
 
-- Keep SwiftUI state in sync with RealityKit state using [`Entity.Observable`](https://developer.apple.com/documentation/RealityKit/Entity/Observable-7cnpn).
-- Present USD variants in [`Model3D`](https://developer.apple.com/documentation/RealityKit/Model3D) using [`Entity.ConfigurationCatalog`](https://developer.apple.com/documentation/RealityKit/Entity/ConfigurationCatalog-1b69q).
+- Use SwiftUI implicit animations using the [`Animation`](https://developer.apple.com/documentation/SwiftUI/Animation) modifier with RealityKit entities and components.
+- Keep SwiftUI state in sync with RealityKit state using [`Entity.Observable`](https://developer.apple.com/documentation/RealityKit/Entity/Observable-swift.struct).
+- Present USD variants in [`Model3D`](https://developer.apple.com/documentation/RealityKit/Model3D) using [`Entity.ConfigurationCatalog`](https://developer.apple.com/documentation/RealityKit/Entity/ConfigurationCatalog).
 - Specify the frame sizing and alignment option for RealityView using [`RealityViewLayoutOption`](https://developer.apple.com/documentation/RealityKit/RealityViewLayoutOption).
 
 ##### Video Presentation
@@ -69,8 +69,8 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
 ##### Models and Materials
 
 - Optimize material initialization with a [`CustomMaterial.Program`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/Program-swift.class) to compile backing shaders.
-- Use [`init(from:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(from:)-42r55) to efficiently update custom texture data in RealityKit, including custom pixel formats, texture types, swizzle, and texture usage.
-- Create cube texture resources with [`init(cubeFromEquirectangular:named:quality:faceSize:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromEquirectangular:named:quality:faceSize:options:)-bqd7) or [`init(cubeFromImage:named:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromImage:named:options:)-9dcus).
+- Use [`init(from:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(from:)) to efficiently update custom texture data in RealityKit, including custom pixel formats, texture types, swizzle, and texture usage.
+- Create cube texture resources with [`init(cubeFromEquirectangular:named:quality:faceSize:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromEquirectangular:named:quality:faceSize:options:)) or [`init(cubeFromImage:named:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromImage:named:options:)).
 - Access additional texture resource properties: [`arrayLength`](https://developer.apple.com/documentation/RealityKit/TextureResource/arrayLength), [`depth`](https://developer.apple.com/documentation/RealityKit/TextureResource/depth), [`pixelFormat`](https://developer.apple.com/documentation/RealityKit/TextureResource/pixelFormat), and [`textureType`](https://developer.apple.com/documentation/RealityKit/TextureResource/textureType).
 - Add a clearcoat to your custom materials with [`clearcoatNormal`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/clearcoatNormal-swift.property).
 

@@ -10,7 +10,6 @@
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
-- Unknown ?+ - Deprecated
 - watchOS ?+
 
 ## Declaration

@@ -22,22 +22,12 @@ final class ObservableObjectPublisher
 
 ## Topics
 
-### Creating an Observable Object Publisher
+### Creating an observable object publisher
 - [init()](observableobjectpublisher/init.md)
   Creates an observable object publisher instance.
-### Declaring Publisher Topography
-- [ObservableObjectPublisher.Output](observableobjectpublisher/output.md)
-  The kind of values published by this publisher.
-- [ObservableObjectPublisher.Failure](observableobjectpublisher/failure.md)
-  The kind of errors this publisher might publish.
-### Delivering Elements to Subscribers
+### Delivering elements to subscribers
 - [func send()](observableobjectpublisher/send.md)
   Sends the changed value to the downstream subscriber.
-### Applying Operators
-- [Publisher Operators](observableobjectpublisher-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](observableobjectpublisher/publisher-implementations.md)
 
 ## Relationships
 

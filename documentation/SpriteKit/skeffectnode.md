@@ -17,17 +17,16 @@ A node that renders its children into a separate buffer, optionally applying an 
 ## Declaration
 
 ```swift
-@MainActor
 class SKEffectNode
 ```
 
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [About Node Drawing Order](about-node-drawing-order.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
-- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
 - [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
+- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
+- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 
 #### Overview
 

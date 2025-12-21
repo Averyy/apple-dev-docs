@@ -6,7 +6,7 @@
 Presents the immersive space that your app defines for the specified identifier and that handles the type of the presented value.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

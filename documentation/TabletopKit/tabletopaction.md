@@ -46,7 +46,7 @@ protocol TabletopAction
 ### Creating bookmarks
 - [static func createBookmark(StateBookmark, context: UInt64) -> Self](tabletopaction/createbookmark(_:context:).md)
 - [static func createBookmark(id: StateBookmarkIdentifier, context: UInt64) -> Self](tabletopaction/createbookmark(id:context:).md)
-### Type Methods
+### Adding actions
 - [static func customAction(some CustomAction, context: UInt64) -> Self](tabletopaction/customaction(_:context:).md)
 
 ## Relationships
@@ -70,6 +70,8 @@ protocol TabletopAction
   An action that updates the game counter.
 - [struct CreateBookmarkAction](createbookmarkaction.md)
   An action that takes a snapshot of the game.
+- [protocol CustomAction](customaction.md)
+  A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 
 ---

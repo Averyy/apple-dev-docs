@@ -8,7 +8,6 @@ A type that describes the request and revision combination.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -29,6 +28,7 @@ enum RequestDescriptor
 ### Getting the image sequence descriptor
 - [case detectDocumentSegmentationRequest(DetectDocumentSegmentationRequest.Revision)](requestdescriptor/detectdocumentsegmentationrequest(_:).md)
   A descriptor that describes a detect document segmentation request.
+- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](requestdescriptor/recognizedocumentsrequest(_:).md)
 - [case generatePersonInstanceMaskRequest(GeneratePersonInstanceMaskRequest.Revision)](requestdescriptor/generatepersoninstancemaskrequest(_:).md)
   A descriptor that describes a generate person instance mask request.
 - [case generatePersonSegmentationRequest(GeneratePersonSegmentationRequest.Revision)](requestdescriptor/generatepersonsegmentationrequest(_:).md)
@@ -98,8 +98,6 @@ enum RequestDescriptor
 ### Getting the machine learning image-analysis descriptor
 - [case coreMLRequest(CoreMLRequest.Revision)](requestdescriptor/coremlrequest(_:).md)
   A descriptor that describes a Core ML request.
-### Enumeration Cases
-- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](requestdescriptor/recognizedocumentsrequest(_:).md)
 
 ## Relationships
 
@@ -114,10 +112,16 @@ enum RequestDescriptor
 
 ## See Also
 
-- [var hasPrecisionRecallCurve: Bool](classificationobservation/hasprecisionrecallcurve.md)
-  A Boolean value that indicates whether the observation contains precision and recall curves.
-- [let identifier: String](classificationobservation/identifier.md)
-  The classification label that identifies the type of observation.
+- [var uuid: UUID](visionobservation/uuid.md)
+  A unique alphanumeric value that the framework assigns the observation.
+- [var confidence: Float](visionobservation/confidence.md)
+  The level of confidence in the observation’s accuracy.
+- [var description: String](visionobservation/description.md)
+  A textual representation of this instance.
+- [var originatingRequestDescriptor: RequestDescriptor?](visionobservation/originatingrequestdescriptor.md)
+  The descriptor of the request that produces the observation.
+- [var timeRange: CMTimeRange?](visionobservation/timerange.md)
+  The time range of the reported observation.
 
 
 ---

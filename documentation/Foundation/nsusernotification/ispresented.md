@@ -16,7 +16,7 @@ var isPresented: Bool { get }
 
 #### Discussion
 
-In some cases, for example when your application is frontmost, the notification center may decide not to actually present a delivered notification. In that case, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). It is set to [`true`](https://developer.apple.com/documentation/swift/true) if the notification was presented according to user preferences.
+In some cases, for example when your application is frontmost, the notification center may decide not to actually present a delivered notification. In that case, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). It is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the notification was presented according to user preferences.
 
 ## See Also
 

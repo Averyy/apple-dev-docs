@@ -46,6 +46,7 @@ The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified
   The layout direction associated with the current environment.
 - [enum UITraitEnvironmentLayoutDirection](uitraitenvironmentlayoutdirection.md)
   Constants that indicate the layout direction associated with the current environment.
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-58wlh.md)
 - [var accessibilityContrast: UIAccessibilityContrast](uitraitcollection/accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
 - [enum UIAccessibilityContrast](uiaccessibilitycontrast.md)
@@ -58,8 +59,6 @@ The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified
   A property that indicates whether the user interface has an active appearance.
 - [enum UIUserInterfaceActiveAppearance](uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
-- [enum UINSToolbarItemPresentationSize](uinstoolbaritempresentationsize.md)
-  Constants that specify the presentation size of a toolbar item in an AppKit toolbar.
 
 
 ---

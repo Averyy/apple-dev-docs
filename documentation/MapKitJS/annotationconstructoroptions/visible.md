@@ -11,7 +11,7 @@ A Boolean value that determines whether the annotation is visible or hidden.
 ## Declaration
 
 ```swift
-attribute boolean visible;
+visible?: boolean;
 ```
 
 #### Discussion

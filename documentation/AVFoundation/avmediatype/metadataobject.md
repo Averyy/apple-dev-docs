@@ -22,6 +22,7 @@ static let metadataObject: AVMediaType
 
 - [static let audio: AVMediaType](avmediatype/audio.md)
   The media contains audio media.
+- [static let auxiliaryPicture: AVMediaType](avmediatype/auxiliarypicture.md)
 - [static let closedCaption: AVMediaType](avmediatype/closedcaption.md)
   The media contains closed-caption content.
 - [static let depthData: AVMediaType](avmediatype/depthdata.md)

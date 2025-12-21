@@ -4,18 +4,13 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 struct ShouldBeginSuppressingHighDynamicRangeContent
 ```
-
-## Topics
-
-### Creating a notification
-- [static func makeNotification(NSApplication.ShouldBeginSuppressingHighDynamicRangeContent) -> Notification](nsapplication/shouldbeginsuppressinghighdynamicrangecontent/makenotification(_:).md)
 
 ## Relationships
 

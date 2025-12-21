@@ -19,7 +19,7 @@ var isIncremental: Bool { get }
 
 #### Discussion
 
-Before adding or removing any entries, if you call this method and the value is [`true`](https://developer.apple.com/documentation/swift/true), the request must only add or remove entries relative to the last time the system loaded data for the extension. Otherwise, if you don’t call this method, or if the value is [`false`](https://developer.apple.com/documentation/swift/false), the request must add the full list of entries without removing any, regardless of whether the system loaded data in the past.
+Before adding or removing any entries, if you call this method and the value is [`true`](https://developer.apple.com/documentation/Swift/true), the request must only add or remove entries relative to the last time the system loaded data for the extension. Otherwise, if you don’t call this method, or if the value is [`false`](https://developer.apple.com/documentation/Swift/false), the request must add the full list of entries without removing any, regardless of whether the system loaded data in the past.
 
 ## See Also
 

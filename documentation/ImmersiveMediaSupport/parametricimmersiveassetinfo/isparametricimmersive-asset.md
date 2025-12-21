@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Checks asynchronously if the asset is already in the parametric immersive format or not.
+Checks asynchronously whether the asset is already in the parametric immersive format.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

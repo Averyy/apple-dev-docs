@@ -1,4 +1,4 @@
-# Evaluating Video Using QuickTime Test Pattern Files
+# Evaluating video using QuickTime test pattern files
 
 **Framework**: AVFoundation
 
@@ -12,7 +12,7 @@ QuickTime Test Pattern movie files produce known results when displayed on Mac c
 
 The video industry commonly evaluates color using known, standard test patterns. Comparing your video’s color to the known standard gives you an indication of how recording or transmission altered the video signal. Use this information to determine the modifications you must make to return the signal to the standard. Typically, in an analog video environment, you use Society of Motion Picture and Television Engineers (SMPTE) color bars or Engineering Guideline EG 1.1990.
 
-> ❗ **Important**:  As with any content, you must tag the color bars themselves to ensure their correct interpretation. [`Tagging Media with Video Color Information`](tagging-media-with-video-color-information.md) discusses video tagging.
+> ❗ **Important**:  As with any content, you must tag the color bars themselves to ensure their correct interpretation. [`Tagging media with video color information`](tagging-media-with-video-color-information.md) discusses video tagging.
 
 To begin evaluating video with the test pattern technique, download the QuickTime Test Pattern movie files from the [`AVFoundation Developer page`](https://developer.apple.comhttps://developer.apple.com/av-foundation/) (see “Color Test Patterns”). These files produce known results on Mac computers.
 
@@ -45,13 +45,13 @@ MacOS 10.6 and later converts the video gamma to the 2.2 display buffer gamma wh
 
 ![A mathematical equation of the gamma conversion calculation for 75% gray bars, resulting in a value of approximately 198.](https://docs-assets.developer.apple.com/published/062495cda4ee1976fb9500f6049100c6/media-3713334%402x.png)
 
-With rounding error, you’ll see results in this range. This is the default behavior for an AVFoundation app during playback. If you get values of 191 or other values, it probably means the system didn’t apply color management. See [`Ensure Accurate Color Application of Your App’s Video`](evaluating-an-app-s-video-color#Ensure-Accurate-Color-Application-of-Your-Apps-Video.md).
+With rounding error, you’ll see results in this range. This is the default behavior for an AVFoundation app during playback. If you get values of 191 or other values, it probably means the system didn’t apply color management. See [`Ensure accurate color application of your app’s video`](evaluating-an-app-s-video-color#Ensure-accurate-color-application-of-your-apps-video.md).
 
 By default, the system performs color matches using perceptual rendering intent. However, with matrix-based profiles, the system color matching reports identical results for all rendering intents.
 
 ##### Verify That the Color Match Maintains Gray Levels
 
-Given a correct display profile, a color match won’t change a gray value from appearing gray in a color-managed app. It may adjust the brightness based on the gamma correction, but it won’t add color to it (grays remain R=G=B). Therefore, the color match reports identical values for the RGB components of a given gray value from any of the color bars. If it doesn’t, you should investigate the issue (see [`Ensure Accurate Color Application of Your App’s Video`](evaluating-an-app-s-video-color#Ensure-Accurate-Color-Application-of-Your-Apps-Video.md)).
+Given a correct display profile, a color match won’t change a gray value from appearing gray in a color-managed app. It may adjust the brightness based on the gamma correction, but it won’t add color to it (grays remain R=G=B). Therefore, the color match reports identical values for the RGB components of a given gray value from any of the color bars. If it doesn’t, you should investigate the issue (see [`Ensure accurate color application of your app’s video`](evaluating-an-app-s-video-color#Ensure-accurate-color-application-of-your-apps-video.md)).
 
 ##### Interpret Non Gray Colors in the Color Bar
 
@@ -59,9 +59,9 @@ Pixel values that aren’t gray may change due to the color match. This color ma
 
 ## See Also
 
-- [Evaluating an App’s Video Color Using Video Test Equipment](evaluating-an-app-s-video-color-using-video-test-equipment.md)
+- [Evaluating an app’s video color using video test equipment](evaluating-an-app-s-video-color-using-video-test-equipment.md)
   Output test pattern files to a vectorscope or waveform analyzer to review the video signals.
-- [Evaluating an App’s Video Color Using Light-Measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
+- [Evaluating an app’s video color using light-measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
   Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
 

@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Generates an AIME file at the specified location
+Generates an AIME file at the specified location.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ final func save(to aimeURL: URL) throws
 
 ## Parameters
 
-- `aimeURL`: Destination URL with extension ‘aime’.
+- `aimeURL`: The destination URL with extension  .
 
 ## See Also
 

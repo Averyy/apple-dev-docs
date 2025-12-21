@@ -67,6 +67,8 @@ Use `ConversationManager` to provide VoIP conversation functionality in your app
 
 - [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
   Methods for managing conversations and receiving VoIP conversation updates.
+- [class ConversationHistoryManager](conversationhistorymanager.md)
+  An interface for managing and providing conversation history.
 - [class Conversation](conversation.md)
   A type that describes a video or audio conversation.
 

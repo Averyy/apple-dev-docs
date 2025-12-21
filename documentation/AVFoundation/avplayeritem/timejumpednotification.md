@@ -28,7 +28,7 @@ The notification’s object is the player item.
 
 ## Topics
 
-### User Information Keys
+### User information keys
 - [class let timeJumpedOriginatingParticipantKey: String](avplayeritem/timejumpedoriginatingparticipantkey.md)
   A key to retrieve a unique identifier of the participant that caused the time jump.
 

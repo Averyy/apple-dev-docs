@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to setup their account
+The person needs to set up their account.
 
 **Availability**:
 - iOS 18.0+

@@ -229,11 +229,12 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
   An alias for the standard set of language directions.
 - [NSLocale.LanguageDirection](nslocale/languagedirection.md)
   The directions that a language may take across a page of text.
+### Working with notification messages
+- [Locale.CurrentLocaleDidChangeMessage](locale/currentlocaledidchangemessage.md)
 ### Using reference types
 - [class NSLocale](nslocale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
 ### Structures
-- [Locale.CurrentLocaleDidChangeMessage](locale/currentlocaledidchangemessage.md)
 - [Locale.LanguageCode](locale/languagecode-swift.struct.md)
   An alphabetical code associated with a language.
 - [Locale.Script](locale/script.md)

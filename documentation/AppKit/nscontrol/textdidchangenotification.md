@@ -22,7 +22,7 @@ The field editor of the edited cell originally sends an [`didChangeNotification`
 | --- | --- |
 | `“NSFieldEditor”` | The edited cell’s field editor |
 
-See the [`controlTextDidChange:`](https://developer.apple.com/documentation/objectivec/nsobject/1428982-controltextdidchange) method for details. The system posts this notification on the main actor.
+See the [`controlTextDidChange:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidChange:) method for details. The system posts this notification on the main actor.
 
 ## See Also
 

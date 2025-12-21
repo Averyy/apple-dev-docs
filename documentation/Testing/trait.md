@@ -67,6 +67,11 @@ You can add a trait that conforms to both [`TestTrait`](testtrait.md) and [`Suit
   The type of the test scope provider for this trait.
 - [func prepare(for: Test) async throws](trait/prepare(for:).md)
   Prepare to run the test that has this trait.
+### Type Methods
+- [static func compactMapIssues((Issue) -> Issue?) -> Self](trait/compactmapissues(_:).md)
+  Constructs an trait that transforms issues recorded by a test.
+- [static func filterIssues((Issue) -> Bool) -> Self](trait/filterissues(_:).md)
+  Constructs a trait that filters issues recorded by a test.
 
 ## Relationships
 
@@ -80,6 +85,7 @@ You can add a trait that conforms to both [`TestTrait`](testtrait.md) and [`Suit
 - [Bug](bug.md)
 - [Comment](comment.md)
 - [ConditionTrait](conditiontrait.md)
+- [IssueHandlingTrait](issuehandlingtrait.md)
 - [ParallelizationTrait](parallelizationtrait.md)
 - [Tag.List](tag/list.md)
 - [TimeLimitTrait](timelimittrait.md)

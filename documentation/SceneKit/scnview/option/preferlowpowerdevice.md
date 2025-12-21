@@ -24,9 +24,9 @@ static let preferLowPowerDevice: SCNView.Option
 
 The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value.
 
-SceneKit uses this option when automatically selecting a Metal device on systems with multiple GPUs. If the value is [`true`](https://developer.apple.com/documentation/swift/true), SceneKit uses a device with low power usage requirements—for example, the integrated GPU on a MacBook Pro with both integrated and discrete graphics hardware.
+SceneKit uses this option when automatically selecting a Metal device on systems with multiple GPUs. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit uses a device with low power usage requirements—for example, the integrated GPU on a MacBook Pro with both integrated and discrete graphics hardware.
 
-Leaving this key unspecified is equivalent to setting its value to [`false`](https://developer.apple.com/documentation/swift/false). In this case, SceneKit chooses the most capable available Metal device.
+Leaving this key unspecified is equivalent to setting its value to [`false`](https://developer.apple.com/documentation/Swift/false). In this case, SceneKit chooses the most capable available Metal device.
 
 ## See Also
 

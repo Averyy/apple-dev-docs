@@ -68,7 +68,7 @@ for await result in generator.images(for: times) {
     switch result {
     case .success(requestedTime: let requested, image: let image, actualTime: let actual):
         // Process the image for the requested time.
-    case .failed(requestedTime: let requested, error: let error):
+    case .failure(requestedTime: let requested, error: let error):
         // Handle the failure for the requested time.
     }
 }

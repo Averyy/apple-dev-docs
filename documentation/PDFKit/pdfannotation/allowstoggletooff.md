@@ -21,7 +21,7 @@ var allowsToggleToOff: Bool { get set }
 
 #### Discussion
 
-To implement a group of radio buttons where at least one option must remain in a selected state, set [`allowsToggleToOff`](pdfannotation/allowstoggletooff.md) to [`false`](https://developer.apple.com/documentation/swift/false) on each button in the group.
+To implement a group of radio buttons where at least one option must remain in a selected state, set [`allowsToggleToOff`](pdfannotation/allowstoggletooff.md) to [`false`](https://developer.apple.com/documentation/Swift/false) on each button in the group.
 
 ## See Also
 

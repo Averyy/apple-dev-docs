@@ -25,9 +25,6 @@ You determine a music player’s state by checking the [`playbackStatus`](musicp
 
 ## Topics
 
-### Operators
-- [static func == (MusicPlayer.PlaybackStatus, MusicPlayer.PlaybackStatus) -> Bool](musicplayer/playbackstatus/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicPlayer.PlaybackStatus.interrupted](musicplayer/playbackstatus/interrupted.md)
   The music player is in an interrupted state, such as from an incoming phone call.
@@ -41,14 +38,6 @@ You determine a music player’s state by checking the [`playbackStatus`](musicp
   The music player is seeking forward.
 - [MusicPlayer.PlaybackStatus.stopped](musicplayer/playbackstatus/stopped.md)
   The music player is in a stopped state.
-### Instance Properties
-- [var hashValue: Int](musicplayer/playbackstatus/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](musicplayer/playbackstatus/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](musicplayer/playbackstatus/equatable-implementations.md)
 
 ## Relationships
 

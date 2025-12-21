@@ -37,7 +37,7 @@ static let volumeResourceCountKey: URLResourceKey
 - [static let volumeMaximumFileSizeKey: URLResourceKey](urlresourcekey/volumemaximumfilesizekey.md)
   Key for the largest file size supported by the volume in bytes, returned as a Boolean `NSNumber` object, or `nil` if it cannot be determined (read-only).
 - [static let volumeNameKey: URLResourceKey](urlresourcekey/volumenamekey.md)
-  The name of the volume, returned as an `NSString` object (read-write). Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/swift/true).
+  The name of the volume, returned as an string object.
 - [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)
 - [static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey](urlresourcekey/volumesupportsadvisoryfilelockingkey.md)
   Key for determining whether the volume implements whole-file advisory locks in the style of flock, along with the `O_EXLOCK` and `O_SHLOCK` flags of the open function, returned as a Boolean `NSNumber` object (read-only).

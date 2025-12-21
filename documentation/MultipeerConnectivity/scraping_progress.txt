@@ -1,4 +1,4 @@
 Completed scraping Multipeer Connectivity!
-Total pages scraped: 111
-Pages skipped (unchanged): 9
+Total pages scraped: 112
+Pages skipped (unchanged): 5
 Pages failed: 0

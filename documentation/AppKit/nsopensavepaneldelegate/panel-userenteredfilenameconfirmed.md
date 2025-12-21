@@ -23,7 +23,7 @@ The filename selected by the user, or `nil` if you want to cancel the save opera
 
 The Save panel calls this method before appending any required filename extension information, and before it asks the user whether to replace an existing file, if a file with the specified name already exists in the given location.
 
-The panel may call this method multiple times as the user types. When it does, the `okFlag` parameter is [`false`](https://developer.apple.com/documentation/swift/false). When the use confirms their choice, the value in the `okFlag` is [`true`](https://developer.apple.com/documentation/swift/true). If your delegate does extensive validation or puts up alerts, do so only when `okFlag` is [`true`](https://developer.apple.com/documentation/swift/true).
+The panel may call this method multiple times as the user types. When it does, the `okFlag` parameter is [`false`](https://developer.apple.com/documentation/Swift/false). When the use confirms their choice, the value in the `okFlag` is [`true`](https://developer.apple.com/documentation/Swift/true). If your delegate does extensive validation or puts up alerts, do so only when `okFlag` is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 In macOS 10.15 and later, you cannot change the filename that the user selects. Prior to macOS 10.15, you could sanitize the app’s filename to remove undesirable characters or limit its length only if your app wasn’t running in a sandbox.
 

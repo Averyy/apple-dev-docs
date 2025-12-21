@@ -1,4 +1,4 @@
-# Customizing Render Pass Setup
+# Customizing render pass setup
 
 **Framework**: Metal
 
@@ -19,7 +19,7 @@ Offscreen render passes are fundamental building blocks for larger or more compl
 
 ##### Create a Texture for the Offscreen Render Pass
 
-An [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) object automatically creates drawable textures to render into. The sample also needs a texture to render into during the offscreen render pass.  To create that texture, it first creates a [`MTLTextureDescriptor`](mtltexturedescriptor.md) object and configures its properties.
+An [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) object automatically creates drawable textures to render into. The sample also needs a texture to render into during the offscreen render pass.  To create that texture, it first creates an [`MTLTextureDescriptor`](mtltexturedescriptor.md) object and configures its properties.
 
 ```objective-c
 MTLTextureDescriptor *texDescriptor = [MTLTextureDescriptor new];
@@ -37,7 +37,7 @@ Setting usage flags precisely can improve performance, because Metal can configu
 
 ##### Create the Render Pipelines
 
-A render pipeline specifies how to execute a drawing command, including the vertex and fragment functions to execute, and the pixel formats of any render targets it acts upon. Later, when the sample creates the custom render pass, it must use the same pixel formats.
+A render pipeline specifies how to execute a drawing command, including the vertex and fragment functions to execute, and the pixel formats of any render targets it acts upon. Later, when the sample creates the custom render pass, it needs to use the same pixel formats.
 
 This sample creates one render pipeline for each render pass, using the following code for the offscreen render pipeline:
 
@@ -50,17 +50,17 @@ pipelineStateDescriptor.colorAttachments[0].pixelFormat = _renderTargetTexture.p
 _renderToTextureRenderPipeline = [_device newRenderPipelineStateWithDescriptor:pipelineStateDescriptor error:&error];
 ```
 
-The code to create the pipeline for the drawable render pass is similar to that found in [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md). To guarantee that the two pixel formats match, the sample sets the descriptor’s pixel format to the view’s `colorPixelFormat`. Similarly, when creating the offscreen render pipeline, the sample sets the descriptor’s pixel format to the offscreen texture’s format.
+The code to create the pipeline for the drawable render pass is similar to that found in [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md). To guarantee that the two pixel formats match, the sample sets the descriptor’s pixel format to the view’s `colorPixelFormat`. Similarly, when creating the offscreen render pipeline, the sample sets the descriptor’s pixel format to the offscreen texture’s format.
 
 ##### Set Up the Offscreen Render Pass Descriptor
 
-To render to the offscreen texture, the sample configures a new render pass descriptor. It creates a [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) object and configures its properties. This sample renders to a single color texture, so it sets `colorAttachment[0].texture` to point to the offscreen texture:
+To render to the offscreen texture, the sample configures a new render pass descriptor. It creates an [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) object and configures its properties. This sample renders to a single color texture, so it sets `colorAttachment[0].texture` to point to the offscreen texture:
 
 ```objective-c
 _renderToTextureRenderPassDescriptor.colorAttachments[0].texture = _renderTargetTexture;
 ```
 
-The sample must also configure a  and a  for this render target.
+The sample also needs to configure a  and a  for this render target.
 
 ```objective-c
 _renderToTextureRenderPassDescriptor.colorAttachments[0].loadAction = MTLLoadActionClear;
@@ -71,7 +71,7 @@ _renderToTextureRenderPassDescriptor.colorAttachments[0].storeAction = MTLStoreA
 
 A load action determines the initial contents of the texture at the start of the render pass, before the GPU executes any drawing commands. Similarly, a store action runs after the render pass completes, and determines whether the GPU writes the final image back to the texture. The sample configures a load action to erase the render target’s contents, and a store action that stores the rendered data back to the texture. It needs to do the latter because the drawing commands in the second render-pass sample this data.
 
-Metal uses load and store actions to optimize how the GPU manages texture data. Large textures consume lots of memory, and working on those textures can consume lots of memory bandwidth. Setting the render target actions correctly can reduce the amount of memory bandwidth the GPU uses to access the texture, improving performance and battery life. See [`Setting Load and Store Actions`](setting-load-and-store-actions.md) for guidance.
+Metal uses load and store actions to optimize how the GPU manages texture data. Large textures consume lots of memory, and working on those textures can consume lots of memory bandwidth. Setting the render target actions correctly can reduce the amount of memory bandwidth the GPU uses to access the texture, improving performance and battery life. See [`Setting load and store actions`](setting-load-and-store-actions.md) for guidance.
 
 A render pass descriptor has other properties not used in this sample that further modify the rendering process. For information on other ways to customize the render pass descriptor, see [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md).
 
@@ -79,7 +79,7 @@ A render pass descriptor has other properties not used in this sample that furth
 
 The sample has everything it needs to encode both render passes. It’s important to understand how Metal schedules commands on the GPU before seeing how the sample encodes the render passes.
 
-When an app commits a buffer of commands to a command queue, by default, Metal must act as if it executes commands sequentially. To increase performance and to better utilize the GPU, Metal can run commands concurrently, as long as doing so doesn’t generate results inconsistent with sequential execution. To accomplish this, when a pass writes to a resource and a subsequent pass reads from it, as in this sample, Metal detects the dependency and automatically delays execution of the later pass until the first one completes. So, unlike [`Synchronizing CPU and GPU Work`](synchronizing-cpu-and-gpu-work.md), where the CPU and GPU needed to be explicitly synchronized, the sample doesn’t need to do anything special. It simply encodes the two passes sequentially, and Metal ensures they run in that order.
+When an app commits a buffer of commands to a command queue, by default, Metal needs to act as if it executes commands sequentially. To increase performance and to better utilize the GPU, Metal can run commands concurrently, as long as doing so doesn’t generate results inconsistent with sequential execution. To accomplish this, when a pass writes to a resource and a subsequent pass reads from it, as in this sample, Metal detects the dependency and automatically delays execution of the later pass until the first one completes. So, unlike [`Synchronizing CPU and GPU work`](synchronizing-cpu-and-gpu-work.md), where the CPU and GPU needed to be explicitly synchronized, the sample doesn’t need to do anything special. It simply encodes the two passes sequentially, and Metal ensures they run in that order.
 
 The sample encodes both render passes into one command buffer, starting with the offscreen render pass. It creates a render command encoder using the offscreen render pass descriptor it previously created.
 
@@ -90,13 +90,13 @@ renderEncoder.label = @"Offscreen Render Pass";
 [renderEncoder setRenderPipelineState:_renderToTextureRenderPipeline];
 ```
 
-Everything else in the render pass is similar to [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md). It configures the pipeline and any necessary arguments, then encodes the drawing command. After encoding the command, it calls [`endEncoding()`](mtlcommandencoder/endencoding().md) to finish the encoding process.
+Everything else in the render pass is similar to [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md). It configures the pipeline and any necessary arguments, then encodes the drawing command. After encoding the command, it calls [`endEncoding()`](mtlcommandencoder/endencoding().md) to finish the encoding process.
 
 ```objective-c
 [renderEncoder endEncoding];
 ```
 
-Multiple passes must be encoded sequentially into a command buffer, so the sample must finish encoding the first render pass before starting the next one.
+Multiple passes need to be encoded sequentially into a command buffer, so the sample needs to finish encoding the first render pass before starting the next one.
 
 ##### Render to the Drawable Texture
 
@@ -142,31 +142,31 @@ When the sample commits the command buffer, Metal executes the two render passes
 
 ## See Also
 
-- [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a colorful, 2D triangle by running a draw command on the GPU.
-- [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
+- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Creating a Custom Metal View](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating Primitive Visibility Using Depth Testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding Indirect Command Buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing Order-Independent Transparency with Image Blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 - [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
 - [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with Hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
 - [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 - [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
-  Use Metal’s MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
+  Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
+- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

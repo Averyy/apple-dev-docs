@@ -103,15 +103,13 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityScrollStatus(_:isEnabled:)](view/accessibilityscrollstatus(_:isenabled:).md)
   Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
-- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](view/accessorywidgetgroupstyle(_:).md)
-  The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 - [func addOrderToWalletButtonStyle(AddOrderToWalletButtonStyle) -> some View](view/addordertowalletbuttonstyle(_:).md)
   Sets the button’s style.
 - [func addPassToWalletButtonStyle(AddPassToWalletButtonStyle) -> some View](view/addpasstowalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKAddPassButtonStyle`).
 - [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
   Configures gestures in this view hierarchy to handle events that activate the containing window.
-- [func appStoreOffer(isPresented: Binding<Bool>, kind: AppStoreOfferKind, onDismiss: ((Result<AppStoreOfferKind.PresentationResult, any Error>) async -> ())?) -> some View](view/appstoreoffer(ispresented:kind:ondismiss:).md)
+- [func appStoreMerchandising(isPresented: Binding<Bool>, kind: AppStoreMerchandisingKind, onDismiss: ((Result<AppStoreMerchandisingKind.PresentationResult, any Error>) async -> ())?) -> some View](view/appstoremerchandising(ispresented:kind:ondismiss:).md)
 - [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](view/aspectratio3d(_:contentmode:).md)
   Constrains this view’s dimensions to the specified 3D aspect ratio.
 - [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
@@ -119,18 +117,23 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
   Configures the view’s icon for purposes of navigation.
 - [func attributedTextFormattingDefinition(_:)](view/attributedtextformattingdefinition(_:).md)
-  Apply a text formatting definition to all nested editor views.
+  Apply a text formatting definition to nested views.
 - [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View](view/automateddeviceenrollmentaddition(ispresented:).md)
   Presents a modal view that enables users to add devices to their organization.
 - [func backgroundExtensionEffect() -> some View](view/backgroundextensioneffect.md)
   Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
+- [func backgroundExtensionEffect(isEnabled: Bool) -> some View](view/backgroundextensioneffect(isenabled:).md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
 - [func certificateSheet(trust: Binding<SecTrust?>, title: String?, message: String?, help: URL?) -> some View](view/certificatesheet(trust:title:message:help:).md)
   Displays a certificate sheet using the provided certificate trust.
 - [func chart3DCameraProjection(Chart3DCameraProjection) -> some View](view/chart3dcameraprojection(_:).md)
 - [func chart3DPose(_:)](view/chart3dpose(_:).md)
+  Associates a binding to be updated when the 3D chart’s pose is changed by an interaction.
+- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](view/chart3drenderingstyle(_:).md)
 - [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
   Sets the visibility of the z axis.
 - [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
@@ -138,14 +141,19 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func chartZAxisLabel(_:position:alignment:spacing:)](view/chartzaxislabel(_:position:alignment:spacing:).md)
   Adds z axis label for charts in the view. It effects 3D charts only.
 - [func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartzscale(domain:range:type:).md)
+  Configures the z scale for 3D charts.
 - [func chartZScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartzscale(domain:type:).md)
+  Configures the z scale for 3D charts.
 - [func chartZScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartzscale(range:type:).md)
+  Configures the z scale for 3D charts.
 - [func chartZSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartzselection(range:).md)
 - [func chartZSelection<P>(value: Binding<P?>) -> some View](view/chartzselection(value:).md)
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](view/contactaccessbuttoncaption(_:).md)
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
 - [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> ()) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
   Modally present UI which allows the user to select which contacts your app has access to.
+- [func containerCornerOffset(Edge.Set, sizeToFit: Bool) -> some View](view/containercorneroffset(_:sizetofit:).md)
+  Adjusts the view’s layout to avoid the container view’s corner insets for the specified edges.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
   Sets a particular container value of a view.
 - [func contentCaptureProtected(Bool) -> some View](view/contentcaptureprotected(_:).md)
@@ -165,28 +173,32 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [func dragConfiguration(DragConfiguration) -> some View](view/dragconfiguration(_:).md)
   Configures a drag session.
-- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](view/dragcontainer(for:id:in:_:).md)
-  A container with draggable views. The drag payload is based on the current selection.
-- [func dragContainer(for:id:in:selection:_:)](view/dragcontainer(for:id:in:selection:_:).md)
-  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
-- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](view/dragcontainer(for:in:_:).md)
-  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
-- [func dragContainer(for:in:selection:_:)](view/dragcontainer(for:in:selection:_:).md)
-  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer(for:in:_:)](view/dragcontainer(for:in:_:).md)
+  A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
+- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+  A container with draggable views.
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+  Provides multiple item selection support for drag containers.
 - [func dragPreviewsFormation(DragDropPreviewsFormation) -> some View](view/dragpreviewsformation(_:).md)
   Describes the way dragged previews are visually composed.
-- [func draggable<Item>(Item.Type, @autoclosure () -> Item?) -> some View](view/draggable(_:_:).md)
-  Activates this view as the source of a drag and drop operation. A view can be dragged separately, or as an element of a drag container.
-- [func draggable<ItemID>(containerItemID: ItemID) -> some View](view/draggable(containeritemid:).md)
+- [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:containernamespace:_:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:id:containernamespace:_:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:id:item:containernamespace:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item>(Item.Type, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:item:containernamespace:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<ItemID>(containerItemID: ItemID, containerNamespace: Namespace.ID?) -> some View](view/draggable(containeritemid:containernamespace:).md)
   Inside a drag container, activates this view as the source of a drag and drop operation. Supports lazy drag containers.
-- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](view/draggable(for:id:_:).md)
-  Activates this view as the source of a drag-and-drop operation.
 - [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](view/dropconfiguration(_:).md)
   Configures a drop session.
 - [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](view/dropdestination(for:isenabled:action:).md)
   Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](view/droppreviewsformation(_:).md)
   Describes the way previews for a drop are composed.
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
+  Present an activity picker sheet for selecting apps and websites to manage.
 - [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
   Sets the style for forms in a view hierarchy.
 - [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
@@ -195,11 +207,11 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Fills the view’s background with a custom glass background effect and container-relative rounded rectangle shape.
 - [func glassBackgroundEffect<T, S>(S, in: T, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:in:displaymode:).md)
   Fills the view’s background with a custom glass background effect and a shape that you specify.
-- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](view/glasseffect(_:in:isenabled:).md)
+- [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
   Applies the Liquid Glass effect to a view.
 - [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
   Associates an identity value to Liquid Glass effects defined within this view.
-- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](view/glasseffecttransition(_:isenabled:).md)
+- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
   Associates a glass effect transition with any glass effects defined within this view.
 - [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
   Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
@@ -323,7 +335,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func onCameraCaptureEvent(isEnabled:defaultSoundDisabled:primaryAction:secondaryAction:)](view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction:).md)
   Used to register actions triggered by system capture events.
 - [func onDragSessionUpdated((DragSession) -> Void) -> some View](view/ondragsessionupdated(_:).md)
-  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or anther drag modifiers.
 - [func onDropSessionUpdated((DropSession) -> Void) -> some View](view/ondropsessionupdated(_:).md)
   Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange3D(for:of:action:)](view/ongeometrychange3d(for:of:action:).md)
@@ -332,6 +344,8 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 - [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View](view/oninapppurchasestart(perform:).md)
   Add an action to perform when a user triggers the purchase button on a StoreKit view within this view.
+- [func onInteractiveResizeChange((Bool) -> Void) -> some View](view/oninteractiveresizechange(_:).md)
+  Adds an action to perform when the enclosing window is being interactively resized.
 - [func onMapCameraChange(frequency:_:)](view/onmapcamerachange(frequency:_:).md)
   Performs an action when Map camera framing changes
 - [func onOpenURL(prefersInApp: Bool) -> some View](view/onopenurl(prefersinapp:).md)
@@ -377,13 +391,13 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func rotation3DLayout(_:axis:)](view/rotation3dlayout(_:axis:).md)
   Rotates a view with impacts to its frame in a containing layout
 - [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
-  Renders the provided content appropriately to be displayed as a custom bar.
+  Shows the specified content as a custom bar beside the modified view.
 - [func scaledToFill3D() -> some View](view/scaledtofill3d.md)
   Scales this view to fill its parent.
 - [func scaledToFit3D() -> some View](view/scaledtofit3d.md)
   Scales this view to fit its parent.
-- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](view/scrolledgeeffectdisabled(_:for:).md)
-  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
+  Hides any scroll edge effects for scroll views within this hierarchy.
 - [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](view/scrolledgeeffectstyle(_:for:).md)
   Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](view/scrollinputbehavior(_:for:).md)
@@ -396,6 +410,8 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Sets the label that is used in a section index to point to this section, typically only a single character long.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
+- [func sliderThumbVisibility(Visibility) -> some View](view/sliderthumbvisibility(_:).md)
+  Sets the thumb visibility for `Slider`s within this view.
 - [func spatialOverlay<V>(alignment: Alignment3D, content: () -> V) -> some View](view/spatialoverlay(alignment:content:).md)
   Adds secondary views within the 3D bounds of this view.
 - [func spatialOverlayPreferenceValue<K, V>(K.Type, alignment: Alignment3D, (K.Value) -> V) -> some View](view/spatialoverlaypreferencevalue(_:alignment:_:).md)
@@ -450,10 +466,17 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](view/tabbarminimizebehavior(_:).md)
   Sets the behavior for tab bar minimization.
 - [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](view/tabviewbottomaccessory(content:).md)
+  Places a view as the bottom accessory of the tab view.
+- [func tabViewBottomAccessory<Content>(isEnabled: Bool, content: () -> Content) -> some View](view/tabviewbottomaccessory(isenabled:content:).md)
+  Places a view as the bottom accessory of the tab view. Use this modifier to dynamically show and hide the accessory view.
+- [func tabViewSearchActivation(TabSearchActivation) -> some View](view/tabviewsearchactivation(_:).md)
+  Configures the activation and deactivation behavior of search in the search tab.
 - [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool) -> some View](view/tabletopgame(_:parent:automaticupdate:).md)
   Adds a tabletop game to a view.
 - [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool, interaction: (TabletopInteraction.Value) -> any TabletopInteraction.Delegate) -> some View](view/tabletopgame(_:parent:automaticupdate:interaction:).md)
   Supplies a closure which returns a new interaction whenever needed.
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
 - [func textContentType(_:)](view/textcontenttype(_:).md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
@@ -534,6 +557,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [InsettableShape](insettableshape.md)
 - [NSViewControllerRepresentable](nsviewcontrollerrepresentable.md)
 - [NSViewRepresentable](nsviewrepresentable.md)
+- [RoundedRectangularShape](roundedrectangularshape.md)
 - [Shape](shape.md)
 - [ShapeView](shapeview.md)
 - [UIViewControllerRepresentable](uiviewcontrollerrepresentable.md)
@@ -552,6 +576,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [Circle](circle.md)
 - [Color](color.md)
 - [ColorPicker](colorpicker.md)
+- [ConcentricRectangle](concentricrectangle.md)
 - [ContainerRelativeShape](containerrelativeshape.md)
 - [ContentUnavailableView](contentunavailableview.md)
 - [ControlGroup](controlgroup.md)
@@ -563,6 +588,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [DefaultButtonLabel](defaultbuttonlabel.md)
 - [DefaultDateProgressLabel](defaultdateprogresslabel.md)
 - [DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
+- [DefaultGlassEffectShape](defaultglasseffectshape.md)
 - [DefaultSettingsLinkLabel](defaultsettingslinklabel.md)
 - [DefaultShareLinkLabel](defaultsharelinklabel.md)
 - [DefaultTabLabel](defaulttablabel.md)

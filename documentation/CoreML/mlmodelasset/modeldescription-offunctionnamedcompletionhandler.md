@@ -30,6 +30,11 @@ let modelDescription = try await modelAsset.modelDescription(of: "my_function")
 print(modelDescription)
 ```
 
+## See Also
+
+- [func modelDescription(completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(completionhandler:).md)
+  The default model descripton.
+
 
 ---
 

@@ -40,17 +40,17 @@ Combine provides the following subscribers as operators on the [`Publisher`](pub
 
 ## Topics
 
-### Declaring Subscriber Topography
+### Declaring supporting types
 - [associatedtype Input](subscriber/input.md)
   The kind of values this subscriber receives.
 - [associatedtype Failure : Error](subscriber/failure.md)
   The kind of errors this subscriber might receive.
-### Receiving Elements
+### Receiving elements
 - [func receive(Self.Input) -> Subscribers.Demand](subscriber/receive(_:).md)
   Tells the subscriber that the publisher has produced an element.
 - [func receive() -> Subscribers.Demand](subscriber/receive.md)
   Tells the subscriber that a publisher of void elements is ready to receive further requests.
-### Receiving Life Cycle Events
+### Receiving life cycle events
 - [func receive(subscription: any Subscription)](subscriber/receive(subscription:).md)
   Tells the subscriber that it has successfully subscribed to the publisher and may request items.
 - [func receive(completion: Subscribers.Completion<Self.Failure>)](subscriber/receive(completion:).md)

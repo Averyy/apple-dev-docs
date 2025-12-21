@@ -28,8 +28,6 @@ When the device receives the notification, it polls the server for the command, 
 - [Remove Provisioning Profile](remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
 ### Device Details
-- [Installed Application List](installed-application-list-command.md)
-  Get a list of the installed apps on a device.
 - [Device Information](device-information-command.md)
   Get detailed information about a device.
 - [Device Configured](device-configured-command.md)
@@ -52,14 +50,16 @@ When the device receives the notification, it polls the server for the command, 
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Apply Redemption Code](apply-redemption-code-command.md)
-  Complete the installation of an app using a redemption code.
-- [Remove Application](remove-application-command.md)
-  Remove an installed managed app.
-- [Validate Applications](validate-applications-command.md)
-  Force validation of developer and universal provisioning profiles for enterprise apps.
+- [Installed Application List](installed-application-list-command.md)
+  Get a list of the installed apps on a device.
 - [Managed Application List](managed-application-list-command.md)
   Get the status of all managed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
+- [Apply Redemption Code](apply-redemption-code-command.md)
+  Complete the installation of an app using a redemption code.
+- [Validate Applications](validate-applications-command.md)
+  Force validation of developer and universal provisioning profiles for enterprise apps.
 - [Managed Application Attributes](managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
 - [Managed Application Configuration](managed-application-configuration-command.md)
@@ -82,7 +82,7 @@ When the device receives the notification, it polls the server for the command, 
 - [Clear Passcode](clear-passcode-command.md)
   Remove the passcode from a device.
 - [Clear Restrictions Password](clear-restrictions-password-command.md)
-  Clear the restrictions password and the restrictions on a device.
+  Clear the Screen Time password and the restrictions on a device.
 - [Unlock User Account](unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
 - [Set Auto Admin Password](set-auto-admin-password-command.md)
@@ -121,7 +121,7 @@ When the device receives the notification, it polls the server for the command, 
 - [Request Mirroring](request-mirroring-command.md)
   Prompt the user to share their screen using AirPlay Mirroring.
 - [Stop Mirroring](stop-mirroring-command.md)
-  Stop mirroring the display on another device.
+  Stop mirroring the display to another device.
 ### eSim Management
 - [Refresh Cellular Plans](refresh-cellular-plans-command.md)
   Query a carrier URL for active eSIM cellular-plan profiles on a device.
@@ -163,9 +163,6 @@ When the device receives the notification, it polls the server for the command, 
 ### Declarative Management
 - [Declarative Management](declarative-management-command.md)
   Enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
-### Deprecated
-- [Request Unlock Token](request-unlock-token-command.md)
-  Request an unlock token from a device.
 
 ## See Also
 
@@ -175,6 +172,8 @@ When the device receives the notification, it polls the server for the command, 
   Authenticate devices and maintain push tokens with these commands.
 - [Account-driven enrollment](account-driven-enrollment.md)
   Authenticate devices using a user identity-focused workflow.
+- [Migrating managed devices](migrating-managed-devices.md)
+  Migrate managed devices from one device management service to another.
 
 
 ---

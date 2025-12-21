@@ -6,7 +6,7 @@
 Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

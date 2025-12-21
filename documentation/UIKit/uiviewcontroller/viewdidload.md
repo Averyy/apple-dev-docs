@@ -22,8 +22,8 @@ func viewDidLoad()
 ## Mentions
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 
 #### Discussion
 
@@ -45,6 +45,8 @@ This method is called after the view controller has loaded its view hierarchy in
   A localized string that represents the view this controller manages.
 - [var preferredContentSize: CGSize](uiviewcontroller/preferredcontentsize.md)
   The preferred size for the view controller’s view.
+- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+  SwiftUI ornaments to display adjacent to the view controller.
 
 
 ---

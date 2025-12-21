@@ -20,7 +20,9 @@ class CSImportExtension
 
 #### Overview
 
-To create a Spotlight File Importer extension, add a target to your app using the Spotlight File Importer template in Xcode. The template project contains a subclass of `CSImportExtension`. To index content on a user’s device, Core Spotlight loads your extension and invokes the [`update(_:forFileAt:)`](csimportextension/update(_:forfileat:).md) method. Core Spotlight passes a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) and URL of a file to the extension, and you set properties that are relevant for the file.
+To create a Spotlight File Import extension, add a target to your app using the Spotlight File Import extension template in Xcode. The template project contains a subclass of `CSImportExtension`. To index content on a user’s device, Core Spotlight loads your extension and invokes the [`update(_:forFileAt:)`](csimportextension/update(_:forfileat:).md) method. Core Spotlight passes a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) and URL of a file to the extension, and you set properties that are relevant for the file.
+
+> ❗ **Important**: Spotlight File Import extensions don’t provide functionality in macOS. To make custom files available to Spotlight in macOS, create a Spotlight importer plugin. For more information, refer to [`Spotlight Importer Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267).
 
 Typically, your extension loads details about the file and uses that information to set properties of the attribute set. For example, if your app contains files that are notes the user creates, it does the following:
 

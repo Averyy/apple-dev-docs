@@ -4,8 +4,8 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -20,12 +20,6 @@
 ### Initializers
 - [init(content: (ISO18013MobileDocumentRequestContext) -> Content)](iso18013mobiledocumentrequestscene/init(content:).md)
   Initialize an ISO 18013 mobile document raw request scene.
-### Instance Properties
-- [var body: some AppExtensionScene](iso18013mobiledocumentrequestscene/body-swift.property.md)
-  The content and behavior of the scene’s user interface.
-### Type Aliases
-- [ISO18013MobileDocumentRequestScene.Body](iso18013mobiledocumentrequestscene/body-swift.typealias.md)
-  The type for this scene’s body.
 
 ## Relationships
 

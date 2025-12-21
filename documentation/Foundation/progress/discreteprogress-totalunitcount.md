@@ -28,7 +28,7 @@ A new progress instance with its containing progress object set to `nil.`
 
 Use this method to create the top-level progress object that your custom classes return. The receiver of the returned progress object can add it to a progress tree using [`addChild(_:withPendingUnitCount:)`](progress/addchild(_:withpendingunitcount:).md).
 
-You’re responsible for updating the progress count of the created progress object. You can invoke this method on one thread and then message the returned `NSProgress` on another thread. For example, you can capture the created progress instance in a block that you pass to [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async). In that block, you can invoke methods like [`becomeCurrent(withPendingUnitCount:)`](progress/becomecurrent(withpendingunitcount:).md) or [`resignCurrent()`](progress/resigncurrent().md), and set the [`completedUnitCount`](progress/completedunitcount.md) or [`isCancelled`](progress/iscancelled.md) properties as your app finishes its work.
+You’re responsible for updating the progress count of the created progress object. You can invoke this method on one thread and then message the returned `NSProgress` on another thread. For example, you can capture the created progress instance in a block that you pass to [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async). In that block, you can invoke methods like [`becomeCurrent(withPendingUnitCount:)`](progress/becomecurrent(withpendingunitcount:).md) or [`resignCurrent()`](progress/resigncurrent().md), and set the [`completedUnitCount`](progress/completedunitcount.md) or [`isCancelled`](progress/iscancelled.md) properties as your app finishes its work.
 
 ## Parameters
 

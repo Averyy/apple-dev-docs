@@ -10,7 +10,7 @@ The material’s color.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -23,10 +23,10 @@ var color: SimpleMaterial.BaseColor { get set }
 
 - [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
   The base color of the material.
-- [var tintColor: UIColor](simplematerial/tintcolor-18qur.md)
-  A tint color applied to the base color in macOS.
-- [var tintColor: NSColor](simplematerial/tintcolor-6aik0.md)
-  A tint color applied to the base color in macOS.
+- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+  The type used to represent base color.
+- [SimpleMaterial.Texture](simplematerial/texture.md)
+  The type used to represent textures.
 - [var metallic: MaterialScalarParameter](simplematerial/metallic.md)
   A value that you set to control whether the material has a metallic look.
 - [var roughness: MaterialScalarParameter](simplematerial/roughness.md)

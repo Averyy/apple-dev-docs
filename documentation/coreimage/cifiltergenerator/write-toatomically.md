@@ -16,7 +16,7 @@ func write(to aURL: URL, atomically flag: Bool) -> Bool
 
 #### Return Value
 
-Returns `true` if the the object is successfully archived to the file.
+Returns `true` if the object is successfully archived to the file.
 
 #### Discussion
 

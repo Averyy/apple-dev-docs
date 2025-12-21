@@ -14,7 +14,7 @@ For more information about creating a session and prompting the model, see [`Gen
 
 #### Conform Your Data Type to Generable
 
-To conform your type to [`Generable`](generable.md), describe the type and the parameters to guide the response of the model. The framework supports generating content with basic Swift types like `Bool`, `Int`, `Float`, `Double`, `Decimal`, and `Array`. For example, if you only want the model to return a numeric result, call [`respond(to:generating:includeSchemaInPrompt:options:isolation:)`](languagemodelsession/respond(to:generating:includeschemainprompt:options:isolation:)-1x58m.md) using the type `Float`:
+To conform your type to [`Generable`](generable.md), describe the type and the parameters to guide the response of the model. The framework supports generating content with basic Swift types like `Bool`, `Int`, `Float`, `Double`, `Decimal`, and `Array`. For example, if you only want the model to return a numeric result, call [`respond(to:generating:includeSchemaInPrompt:options:)`](languagemodelsession/respond(to:generating:includeschemainprompt:options:)-13kji.md) using the type `Float`:
 
 ```swift
 let prompt = "How many tablespoons are in a cup?"

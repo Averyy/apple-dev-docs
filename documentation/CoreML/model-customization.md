@@ -10,15 +10,15 @@ Customize your Core ML model to make it work better for your specific app. For i
 
 ## Topics
 
-### Model File Size
+### Model file size
 - [Reducing the Size of Your Core ML App](reducing-the-size-of-your-core-ml-app.md)
   Reduce the storage used by the Core ML model inside your app bundle.
-### Custom Model Layers
+### Custom model layers
 - [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
   Add models with custom neural-network layers to your app.
 - [protocol MLCustomLayer](mlcustomlayer.md)
   An interface that defines the behavior of a custom layer in your neural network model.
-### Custom Models
+### Custom models
 - [protocol MLCustomModel](mlcustommodel.md)
   An interface that defines the behavior of a custom model.
 

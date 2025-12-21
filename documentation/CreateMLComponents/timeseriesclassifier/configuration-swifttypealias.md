@@ -17,6 +17,11 @@
 typealias Configuration = TimeSeriesClassifierConfiguration
 ```
 
+## See Also
+
+- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
+  A time-series classifier model.
+
 
 ---
 

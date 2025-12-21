@@ -22,9 +22,9 @@ var shouldRefreshRefetchedObjects: Bool { get set }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the property values of fetched objects will be updated with the current values in the persistent store; otherwise, it is [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the property values of fetched objects will be updated with the current values in the persistent store; otherwise, it is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-By default when you fetch objects, they maintain their current property values, even if the values in the persistent store have changed. Invoking this method with the parameter [`true`](https://developer.apple.com/documentation/swift/true) means that when the fetch is executed, the property values of fetched objects are updated with the current values in the persistent store. This is a more convenient way to ensure that managed object property values are consistent with the store than by using [`refresh(_:mergeChanges:)`](nsmanagedobjectcontext/refresh(_:mergechanges:).md) (`NSManagedObjetContext`) for multiple objects in turn.
+By default when you fetch objects, they maintain their current property values, even if the values in the persistent store have changed. Invoking this method with the parameter [`true`](https://developer.apple.com/documentation/Swift/true) means that when the fetch is executed, the property values of fetched objects are updated with the current values in the persistent store. This is a more convenient way to ensure that managed object property values are consistent with the store than by using [`refresh(_:mergeChanges:)`](nsmanagedobjectcontext/refresh(_:mergechanges:).md) (`NSManagedObjetContext`) for multiple objects in turn.
 
 ## See Also
 

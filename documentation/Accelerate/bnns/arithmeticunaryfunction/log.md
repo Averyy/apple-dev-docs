@@ -13,7 +13,6 @@ An operation that calculates the element-wise natural logarithm of its input.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

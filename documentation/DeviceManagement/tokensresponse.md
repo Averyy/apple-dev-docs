@@ -6,6 +6,13 @@
 The response object that contains the device token.
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 

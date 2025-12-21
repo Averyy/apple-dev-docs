@@ -42,10 +42,6 @@ enum MLCreateError
 - [var debugDescription: String](mlcreateerror/debugdescription.md)
   A human-readable description of the error that’s suitable for output during debugging.
 ### Describing errors in a user interface
-- [static var errorDomain: String](mlcreateerror/errordomain-8raky.md)
-  Default domain of the error.
-- [var localizedDescription: String](mlcreateerror/localizeddescription.md)
-  Retrieve the localized description for this error.
 - [var errorCode: Int](mlcreateerror/errorcode.md)
   The numeric code of this error.
 - [var errorUserInfo: [String : Any]](mlcreateerror/erroruserinfo.md)
@@ -54,15 +50,10 @@ enum MLCreateError
   A localized, human-readable description of the error and why it occurred, if applicable.
 - [var failureReason: String?](mlcreateerror/failurereason.md)
   A localized, human-readable reason behind the failure, if applicable.
-- [var helpAnchor: String?](mlcreateerror/helpanchor.md)
-  A localized message providing “help” text if the user requests help.
-- [var recoverySuggestion: String?](mlcreateerror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mlcreateerror/customdebugstringconvertible-implementations.md)
 - [CustomNSError Implementations](mlcreateerror/customnserror-implementations.md)
 - [CustomStringConvertible Implementations](mlcreateerror/customstringconvertible-implementations.md)
-- [Error Implementations](mlcreateerror/error-implementations.md)
 - [LocalizedError Implementations](mlcreateerror/localizederror-implementations.md)
 
 ## Relationships

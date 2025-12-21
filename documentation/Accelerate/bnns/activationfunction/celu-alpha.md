@@ -13,7 +13,6 @@ An activation function that evaluates the continuously differentiable exponentia
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

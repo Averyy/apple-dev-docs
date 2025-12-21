@@ -37,6 +37,11 @@ await y.shapedArray(of: Float.self) // is [5040.0]
 
 - `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
 
+## See Also
+
+- [func product(alongAxes:keepRank:)](mltensor/product(alongaxes:keeprank:).md)
+  Returns the product along the specified axes.
+
 
 ---
 

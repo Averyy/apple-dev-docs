@@ -29,9 +29,7 @@ Note that a new transformer is created every time this transformer is applied. T
 ## Topics
 
 ### Creating a transformer
-- [init<Input>(range: ClosedRange<Parameter>, (Parameter) -> RandomTransformer)](uniformrandomintegerparameter/init(range:_:)-23ddz.md)
-  Creates a Random Parameter transformer.
-- [init<Input>(range: Range<Parameter>, (Parameter) -> RandomTransformer)](uniformrandomintegerparameter/init(range:_:)-6lm90.md)
+- [init(range:_:)](uniformrandomintegerparameter/init(range:_:).md)
   Creates a Random Parameter transformer.
 ### Getting the range
 - [var range: Range<Parameter>](uniformrandomintegerparameter/range.md)
@@ -39,11 +37,6 @@ Note that a new transformer is created every time this transformer is applied. T
 ### Applying
 - [func applied(to: RandomTransformer.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> RandomTransformer.Output](uniformrandomintegerparameter/applied(to:generator:eventhandler:).md)
   Performs the random apply operation on the input.
-### Type Aliases
-- [UniformRandomIntegerParameter.Input](uniformrandomintegerparameter/input.md)
-  The input type.
-- [UniformRandomIntegerParameter.Output](uniformrandomintegerparameter/output.md)
-  The output type.
 
 ## Relationships
 

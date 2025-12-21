@@ -17,8 +17,10 @@ let NSNotificationDeliverImmediately: DistributedNotificationCenter.Options
 
 ## See Also
 
+- [static var deliverImmediately: DistributedNotificationCenter.Options](distributednotificationcenter/options/deliverimmediately.md)
 - [let NSNotificationPostToAllSessions: DistributedNotificationCenter.Options](nsnotificationposttoallsessions.md)
   When set, the notification is posted to all sessions. When not set, the notification is sent only to applications within the same login session as the posting task.
+- [static var postToAllSessions: DistributedNotificationCenter.Options](distributednotificationcenter/options/posttoallsessions.md)
 
 
 ---

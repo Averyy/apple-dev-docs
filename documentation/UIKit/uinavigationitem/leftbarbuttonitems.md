@@ -21,7 +21,7 @@ var leftBarButtonItems: [UIBarButtonItem]? { get set }
 
 #### Discussion
 
-This array can contain 0 or more bar items to display on the left (or leading) side of the navigation bar. Items can include fixed-width and flexible-width spaces. If the [`leftItemsSupplementBackButton`](uinavigationitem/leftitemssupplementbackbutton.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the items are displayed to the right (or trailing side) of the Back button, otherwise the items replace the Back button and start at the left (or leading) edge of the bar. Items are displayed left-to-right in the same order as they appear in the array. In a right-to-left user interface, the items are automatically flipped.
+This array can contain 0 or more bar items to display on the left (or leading) side of the navigation bar. Items can include fixed-width and flexible-width spaces. If the [`leftItemsSupplementBackButton`](uinavigationitem/leftitemssupplementbackbutton.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the items are displayed to the right (or trailing side) of the Back button, otherwise the items replace the Back button and start at the left (or leading) edge of the bar. Items are displayed left-to-right in the same order as they appear in the array. In a right-to-left user interface, the items are automatically flipped.
 
 If there is not enough room to display all of the items in the array, those that would overlap the title view (if present) or the buttons on the right side of the bar are not displayed.
 

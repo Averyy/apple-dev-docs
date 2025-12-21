@@ -4,9 +4,9 @@
 **Kind**: property
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -15,6 +15,8 @@ var mediaEnhanceBoosting: SRAcousticSettings.Accessibility.HeadphoneAccommodatio
 ```
 
 #### Discussion
+
+Soft Sounds boost level
 
 Soft sounds will be boosted slightly, moderately, or strongly.
 

@@ -64,6 +64,8 @@ Both Team and Individual API keys can use these endpoints with the correct role.
   Manage versions of your app that are available in App Store.
 - [App Store Version Localizations](app-store-version-localizations.md)
   Create and maintain version-specific App Store metadata that’s localized.
+- [App tags](app-tags.md)
+  Read or modify Apple created app tags.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
 

@@ -6,10 +6,10 @@
 A type that represents an element you can request from a mobile document.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -19,15 +19,6 @@ struct Element
 
 ## Topics
 
-### Operators
-- [static func == (MobileDocumentDisplayRequest.Element, MobileDocumentDisplayRequest.Element) -> Bool](mobiledocumentdisplayrequest/element/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobiledocumentdisplayrequest/element/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobiledocumentdisplayrequest/element/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let age: MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element/age.md)
   The mobile document holder’s age in years.
@@ -38,8 +29,6 @@ struct Element
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile document holder’s age is at least the given age.
-### Default Implementations
-- [Equatable Implementations](mobiledocumentdisplayrequest/element/equatable-implementations.md)
 
 ## Relationships
 

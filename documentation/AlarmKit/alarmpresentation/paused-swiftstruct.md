@@ -6,9 +6,8 @@
 An object that describes the content required for the paused UI.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -34,12 +33,6 @@ resumeButton: AlarmButton(text: "Resume", textColor: .blue, systemImageName:"pla
   The appearance of the resume button.
 - [var title: LocalizedStringResource](alarmpresentation/paused-swift.struct/title.md)
   The title of the paused UI.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentation/paused-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentation/paused-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -16,15 +16,15 @@ func addMember(_ person: ABPerson!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the `person` argument is already part of the group, this method does nothing and returns [`true`](https://developer.apple.com/documentation/swift/true). If the `person` argument is `nil`, this method raises an exception.
+If the `person` argument is already part of the group, this method does nothing and returns [`true`](https://developer.apple.com/documentation/Swift/true). If the `person` argument is `nil`, this method raises an exception.
 
 ##### Special Considerations
 
-Prior to OS X v10.6, if the person record is already in the group, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false).
+Prior to OS X v10.6, if the person record is already in the group, this method does nothing and returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

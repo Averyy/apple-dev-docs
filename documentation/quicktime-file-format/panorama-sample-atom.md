@@ -5,9 +5,6 @@
 
 An atom that describes a single panorama.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 A panorama sample atom has an atom type of `kQTVRPanoSampleDataAtomType` (`'pdat'`). It describes a single panorama, including track reference indexes of the scene and hot spot tracks and information about the default viewing angles and the source panoramic image.

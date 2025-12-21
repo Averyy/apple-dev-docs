@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Reads a concrete generable type from named property.
+Reads a concrete `Generable` type from named property.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ func value<Value>(_ type: Value.Type = Value.self, forProperty property: String)
 ## See Also
 
 - [func value<Value>(Value.Type) throws -> Value](generatedcontent/value(_:).md)
-  Reads a top level, concrete partially generable type.
+  Reads a top level, concrete partially `Generable` type from a named property.
 
 
 ---

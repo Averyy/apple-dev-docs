@@ -22,6 +22,8 @@ The new, empty asset set appears in the outline view and opens in the detail are
 
 ![Screenshot of the default asset catalog in Xcode. The outline view, which appears on the left, shows three asset sets — accent color, app icon, and image. The image set is selected, shows three empty image wells with the labels 1x, 2x, and 3x in the detail area on the right.](https://docs-assets.developer.apple.com/published/6815e8fa31b70609d264f979266fa596/managing-assets-with-asset-catalogs-1%402x.png)
 
+To use a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) instead of an icon asset set, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
+
 ##### Add a New Asset
 
 Next, add your resource to the empty asset set. With the new asset set selected in the outline view, drag the asset you want to import from the Finder to a well in the detail area.
@@ -34,7 +36,7 @@ Asset sets contain one or more  that let you specify variations of your asset fo
 
 If you want to create additional asset catalogs to organize larger sets of app resources, you can create an asset catalog manually.
 
-1. Choose File > New > File.
+1. Choose File > New > File from Template.
 2. Choose Resource > Asset Catalog, and click Next.
 3. Give the asset catalog a name, choose a location, and click Create.
 

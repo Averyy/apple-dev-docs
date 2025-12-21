@@ -55,7 +55,7 @@ Follow these steps to access sandbox controls for TestFlight in iOS:
 3. Select Media & Purchases.
 4. On the pop-up menu, select Sign Out.
 5. Next, open Settings and select Developer. (This option is available when you enable [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device)).
-6. Scroll to the bottom of the screen, and select Sign In under Sandbox Apple Account. Enter your Sandbox Apple Account credentials. 
+6. Scroll to the bottom of the screen, and select Sign In under Sandbox Apple Account. Enter your Sandbox Apple Account credentials.
 
 Your device now has access to the sandbox controls for testing your beta app, and In-App Purchases use your Sandbox Apple Account.
 
@@ -117,6 +117,7 @@ To manage repeated testing using the same Sandbox Apple Account, clear its purch
 2. Select the Sandbox Apple Account.
 3. On the pop-up sheet, select Manage.
 4. On the Account Settings page, select Clear Purchase History.
+5. Sign out of the Sandbox Apple Account to clear the purchase history cache on the device. Sign back in to continue testing.
 
 For information about clearing the purchase history from App Store Connect, see [`Manage Sandbox Apple Account settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings).
 
@@ -154,6 +155,9 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 ### Family Sharing
 - [Testing Family Sharing](testing-family-sharing.md)
   Verify that your app handles auto-renewable subscriptions and non-consumable in-app purchases that family members share with Family Sharing.
+### Age Assurance
+- [Testing Age Assurance in Sandbox](testing-age-assurance-in-sandbox.md)
+  Check that your app responds correctly to Age Assurance scenarios and consent revocation using the Sandbox environment.
 ### Refunds
 - [Testing refund requests](testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
@@ -176,6 +180,8 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
   Validate your app’s handling of win-back offers that you configure for the testing environment.
+- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+  Validate your app’s handling of Ask To Buy in the testing environment.
 
 
 ---

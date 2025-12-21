@@ -6,11 +6,11 @@
 A type specifying the behavior for the presentation of link previews when pressing a link.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 15.4+
-- visionOS 2.4+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -38,6 +38,12 @@ struct LinkPreviewBehavior
 
 - [WebView.BackForwardNavigationGesturesBehavior](webview-swift.struct/backforwardnavigationgesturesbehavior.md)
   A type that defines the behavior of how horizontal swipe gestures trigger backward and forward page navigation.
+- [WebView.ActivatedElementInfo](webview-swift.struct/activatedelementinfo.md)
+  Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element.
+- [WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior.md)
+  The behavior that determines whether a web view can display content full screen.
+- [WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior.md)
+  The options for controlling the behavior for how magnification gestures interact with web views.
 
 
 ---

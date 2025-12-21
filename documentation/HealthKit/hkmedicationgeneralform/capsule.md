@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication comes in capsule form, such as a hard-shell capsule or softgel.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

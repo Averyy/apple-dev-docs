@@ -13,7 +13,6 @@ A value that’s at least `1` and represents the optimizer’s current time.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

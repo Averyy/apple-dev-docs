@@ -22,7 +22,7 @@ func makeCommandQueue() -> (any MTLCommandQueue)?
 
 ## Mentions
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](setting-up-a-command-structure.md)
 
 #### Return Value
 

@@ -6,11 +6,11 @@
 Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,31 @@ let AVURLAssetShouldParseExternalSphericalTagsKey: String
 #### Discussion
 
 Default is NO.
+
+## See Also
+
+- [let AVURLAssetAllowsCellularAccessKey: String](avurlassetallowscellularaccesskey.md)
+  A Boolean value that indicates whether the system can make network requests on behalf of the asset when connected to a cellular network.
+- [let AVURLAssetAllowsConstrainedNetworkAccessKey: String](avurlassetallowsconstrainednetworkaccesskey.md)
+  A Boolean value that indicates whether the system allows network requests on behalf of this asset to use the constrained interface.
+- [let AVURLAssetAllowsExpensiveNetworkAccessKey: String](avurlassetallowsexpensivenetworkaccesskey.md)
+  A Boolean value that indicates whether the system allows network requests on behalf of this asset to use the expensive interface.
+- [let AVURLAssetHTTPCookiesKey: String](avurlassethttpcookieskey.md)
+  The HTTP cookies that a URL asset may send with HTTP requests.
+- [let AVURLAssetHTTPUserAgentKey: String](avurlassethttpuseragentkey.md)
+  A key that specifies the user agent of requests that an asset makes.
+- [let AVURLAssetOverrideMIMETypeKey: String](avurlassetoverridemimetypekey.md)
+  A key that specifies the MIME type to use to identify the format of a media resource.
+- [let AVURLAssetPreferPreciseDurationAndTimingKey: String](avurlassetpreferprecisedurationandtimingkey.md)
+  A Boolean value that indicates whether the asset should provide accurate duration and precise random access by time.
+- [let AVURLAssetPrimarySessionIdentifierKey: String](avurlassetprimarysessionidentifierkey.md)
+  Specifies a UUID to set as the session identifier for HTTP requests that the asset makes.
+- [let AVURLAssetReferenceRestrictionsKey: String](avurlassetreferencerestrictionskey.md)
+  A value that represents the restrictions used by the asset when resolving references to external media data.
+- [let AVURLAssetShouldSupportAliasDataReferencesKey: String](avurlassetshouldsupportaliasdatareferenceskey.md)
+  A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
+- [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
+  A value that specifies the attribution of the URLs that this asset requests.
 
 
 ---

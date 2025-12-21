@@ -160,15 +160,6 @@ sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 
 - The shell command `link` takes two arguments, neither of which is permitted to be the name of a directory. Prior to macOS Mojave, the command `link F D`, where `F` is a file and `D` is a directory, created the hard link `D/F`. In macOS Mojave this behavior now conforms to the documented behavior. The error message `link: D is a directory` is displayed and the command exits with a failure status (`1`).  (42901913)
 
-## Topics
-
-### AppKit
-- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
-  Update your apps to use new features, and test your apps against API changes.
-### Foundation
-- [Foundation Release Notes](foundation-release-notes.md)
-  Update your apps to use new features, and test your apps against API changes.
-
 ## See Also
 
 - [macOS Mojave 10.14.6 Release Notes](macos-mojave-10_14_6-release-notes.md)

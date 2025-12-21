@@ -3,14 +3,14 @@
 **Framework**: Speech  
 **Kind**: property
 
-The most likely interpretation of the audio in this range. Always equal to the first element of [`alternatives`](speechtranscriber/result/alternatives.md).
+The most likely interpretation of the audio in this range.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,6 +21,8 @@ var text: AttributedString { get }
 #### Discussion
 
 An empty string indicates that the audio contains no recognizable speech and, for results in the volatile range, that previous results for this range are revoked.
+
+This value is the first (most likely) element of [`alternatives`](speechtranscriber/result/alternatives.md).
 
 ## See Also
 

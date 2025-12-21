@@ -23,9 +23,9 @@ The method specified by the  `didRunSelector` parameter must have the following 
 - (void)printOperationDidRun:(NSPrintOperation *)printOperation  success:(BOOL)success  contextInfo:(void *)contextInfo
 ```
 
-The value of `success` is [`true`](https://developer.apple.com/documentation/swift/true) if the print operation ran to completion without cancellation or error, and [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of `success` is [`true`](https://developer.apple.com/documentation/Swift/true) if the print operation ran to completion without cancellation or error, and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
-If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) to an `NSPrintOperation` object with an argument of [`true`](https://developer.apple.com/documentation/swift/true), then the delegate specified in a subsequent invocation of [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) may be messaged in that spawned, non-main thread.
+If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) to an `NSPrintOperation` object with an argument of [`true`](https://developer.apple.com/documentation/Swift/true), then the delegate specified in a subsequent invocation of [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) may be messaged in that spawned, non-main thread.
 
 ## Parameters
 

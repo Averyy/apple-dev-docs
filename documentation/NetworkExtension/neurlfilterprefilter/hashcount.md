@@ -6,10 +6,10 @@
 The number of hashes for the Bloom filter.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -23,6 +23,8 @@ let hashCount: Int
   The Bloom filter data.
 - [NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/prefilterdata.md)
   An enumeration that represents Bloom filter data, as used by a prefilter.
+- [let tag: String](neurlfilterprefilter/tag.md)
+  The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
 - [let bitCount: Int](neurlfilterprefilter/bitcount.md)
   The number of bits in the Bloom filter.
 - [let murmurSeed: UInt32](neurlfilterprefilter/murmurseed.md)

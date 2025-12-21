@@ -36,10 +36,10 @@ enum BAErrorCode
 - [BAErrorCode.sessionDownloadDisallowedByAllowance](baerrorcode/sessiondownloaddisallowedbyallowance.md)
 - [BAErrorCode.sessionDownloadDisallowedByDomain](baerrorcode/sessiondownloaddisallowedbydomain.md)
 - [BAErrorCode.sessionDownloadNotPermittedBeforeAppLaunch](baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.md)
-### Enumeration Cases
-- [BAErrorCode.downloadDoesNotExist](baerrorcode/downloaddoesnotexist.md)
 ### Initializers
 - [init?(rawValue: Int)](baerrorcode/init(rawvalue:).md)
+### Enumeration Cases
+- [BAErrorCode.downloadDoesNotExist](baerrorcode/downloaddoesnotexist.md)
 
 ## Relationships
 
@@ -53,6 +53,8 @@ enum BAErrorCode
 
 ## See Also
 
+- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
+  An error for a managed asset pack.
 - [let BAErrorDomain: String](baerrordomain.md)
 
 

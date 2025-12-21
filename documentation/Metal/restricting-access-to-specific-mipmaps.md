@@ -1,4 +1,4 @@
-# Restricting Access to Specific Mipmaps
+# Restricting access to specific mipmaps
 
 **Framework**: Metal
 
@@ -57,19 +57,19 @@ The [`Metal Shading Language Guide`](https://developer.apple.comhttps://develope
 
 ## See Also
 
-- [Improving Texture Sampling Quality and Performance with Mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
-- [Dynamically Adjusting Texture Level of Detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

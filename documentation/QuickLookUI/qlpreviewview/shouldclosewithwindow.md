@@ -17,7 +17,7 @@ var shouldCloseWithWindow: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which means that the preview automatically closes when its window closes. If you set this property to [`false`](https://developer.apple.com/documentation/swift/false), close the preview by calling the [`close()`](qlpreviewview/close().md) method when finished with it. Once you close a [`QLPreviewView`](qlpreviewview.md), it won’t accept any more preview items.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which means that the preview automatically closes when its window closes. If you set this property to [`false`](https://developer.apple.com/documentation/Swift/false), close the preview by calling the [`close()`](qlpreviewview/close().md) method when finished with it. Once you close a [`QLPreviewView`](qlpreviewview.md), it won’t accept any more preview items.
 
 ## See Also
 

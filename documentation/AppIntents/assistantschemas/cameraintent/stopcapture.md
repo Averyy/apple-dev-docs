@@ -25,7 +25,7 @@ var stopCapture: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.camera.stopCapture` schema:
 
 ```swift
-@AssistantIntent(schema: .camera.stopCapture)
+@AppIntent(schema: .camera.stopCapture)
 struct StopCaptureIntent: AppIntent {
 
     func perform() async throws -> some IntentResult {

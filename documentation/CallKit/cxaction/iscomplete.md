@@ -20,7 +20,7 @@ var isComplete: Bool { get }
 
 #### Discussion
 
-This property is initialized to [`false`](https://developer.apple.com/documentation/swift/false), and is set to [`true`](https://developer.apple.com/documentation/swift/true) when either the [`fulfill()`](cxaction/fulfill().md) or [`fail()`](cxaction/fail().md) method is called.
+This property is initialized to [`false`](https://developer.apple.com/documentation/Swift/false), and is set to [`true`](https://developer.apple.com/documentation/Swift/true) when either the [`fulfill()`](cxaction/fulfill().md) or [`fail()`](cxaction/fail().md) method is called.
 
 #### See Also
 

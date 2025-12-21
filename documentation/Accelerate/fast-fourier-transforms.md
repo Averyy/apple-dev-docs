@@ -31,15 +31,6 @@ For more information about DFTs, see [`Discrete Fourier transforms`](discrete-fo
 - [vDSP.Radix](vdsp/radix.md)
   Fast Fourier transform radices.
 ### FFT Setup
-- [vDSP_create_fftsetup](vdsp_create_fftsetup.md)
-  Returns a setup structure that contains precalculated data for single-precision FFT functions.
-- [vDSP_create_fftsetupD](vdsp_create_fftsetupd.md)
-  Returns a setup structure that contains precalculated data for double-precision FFT functions.
-- [vDSP_destroy_fftsetup](vdsp_destroy_fftsetup.md)
-  Deallocates an existing single-precision FFT setup structure.
-- [vDSP_destroy_fftsetupD](vdsp_destroy_fftsetupd.md)
-  Deallocates an existing double-precision FFT setup structure.
-- [vDSP_DFT_CreateSetup](vdsp_dft_createsetup.md)
 - [typealias FFTSetup](fftsetup.md)
   An opaque type that contains setup information for a single-precision FFT transform.
 - [typealias FFTSetupD](fftsetupd.md)
@@ -51,7 +42,6 @@ For more information about DFTs, see [`Discrete Fourier transforms`](discrete-fo
   Perform fast Fourier transforms in place on 1D real data.
 - [Out-of-Place Functions for 1D Real FFT](out-of-place-functions-for-1d-real-fft.md)
   Perform fast Fourier transforms out of place on 1D real data.
-- [vDSP_DFT_zop](vdsp_dft_zop.md)
 ### Functions for 1D Multiple-Signal Real FFT
 - [In-Place Functions for 1D Multiple-Signal Real FFT](in-place-functions-for-1d-multiple-signal-real-fft.md)
   Perform fast Fourier transforms in place on multiple-signal 1D real data.

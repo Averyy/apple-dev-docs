@@ -5,9 +5,6 @@
 
 Stops observing a test.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

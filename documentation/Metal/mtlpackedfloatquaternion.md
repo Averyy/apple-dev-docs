@@ -36,6 +36,7 @@ struct MTLPackedFloatQuaternion
 
 ## See Also
 
+- [struct MTLTensorError](mtltensorerror-swift.struct.md)
 - [struct MTLBinaryArchiveError](mtlbinaryarchiveerror-swift.struct.md)
   An error that occurred when creating a binary shader archive.
 - [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)

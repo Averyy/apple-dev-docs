@@ -21,7 +21,7 @@ var hasUncommittedUpdates: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the table view contains placeholder cells or is handling a drop and is in the middle of reordering its rows. When this property is [`true`](https://developer.apple.com/documentation/swift/true), avoid making any significant changes to the table view. Specifically, don’t call [`reloadData()`](uitableview/reloaddata().md), which forces the table to delete any uncommitted changes before retrieving fresh data from the data source object.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the table view contains placeholder cells or is handling a drop and is in the middle of reordering its rows. When this property is [`true`](https://developer.apple.com/documentation/Swift/true), avoid making any significant changes to the table view. Specifically, don’t call [`reloadData()`](uitableview/reloaddata().md), which forces the table to delete any uncommitted changes before retrieving fresh data from the data source object.
 
 ## See Also
 

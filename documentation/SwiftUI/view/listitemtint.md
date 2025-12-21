@@ -33,16 +33,8 @@ The containing list’s style applies the tint as appropriate. For example, watc
 
 ## See Also
 
-- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
-  Applies an inset to the rows in a list.
-- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
-  Requests that the containing list row use the provided hover effect.
-- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
-  Requests that the containing list row have its hover effect disabled.
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a list.
 
 
 ---

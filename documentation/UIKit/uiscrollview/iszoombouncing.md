@@ -21,7 +21,7 @@ var isZoomBouncing: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the scroll view is zooming back to a minimum or maximum zoom scaling value; otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the scroll view is zooming back to a minimum or maximum zoom scaling value; otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

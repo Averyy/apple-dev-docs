@@ -20,9 +20,9 @@ var dragInteractionEnabled: Bool { get set }
 
 #### Discussion
 
-To support dragging content from the collection view to a view in your app or another app, set this property value to [`true`](https://developer.apple.com/documentation/swift/true). To disable this behavior, set the value to [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+To support dragging content from the collection view to a view in your app or another app, set this property value to [`true`](https://developer.apple.com/documentation/Swift/true). To disable this behavior, set the value to [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-In iOS 14 and earlier, the default value is [`true`](https://developer.apple.com/documentation/swift/true) for iPad and [`false`](https://developer.apple.com/documentation/swift/false) for iPhone. Setting the value to [`true`](https://developer.apple.com/documentation/swift/true) on iPhone enables dragging within your app only. Dragging content to other apps isn’t possible on iPhone prior to iOS 15.
+In iOS 14 and earlier, the default value is [`true`](https://developer.apple.com/documentation/Swift/true) for iPad and [`false`](https://developer.apple.com/documentation/Swift/false) for iPhone. Setting the value to [`true`](https://developer.apple.com/documentation/Swift/true) on iPhone enables dragging within your app only. Dragging content to other apps isn’t possible on iPhone prior to iOS 15.
 
 ## See Also
 

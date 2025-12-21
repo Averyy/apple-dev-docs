@@ -25,7 +25,7 @@ var enableLogging: Bool { get set }
 
 #### Discussion
 
-Because logging incurs overhead, regardless of whether the system prints messages, you must explicitly enable logging.
+Because logging incurs overhead, regardless of whether the system prints messages, you need to explicitly enable logging.
 
 ## See Also
 

@@ -21,7 +21,7 @@ let kVTVideoEncoderList_EncoderName: CFString
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh object suitable for display to the user (such as, Apple H.264).
+The associated value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object suitable for display to the user (such as, Apple H.264).
 
 ## See Also
 

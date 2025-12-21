@@ -22,7 +22,7 @@ func operationalDataset(with params: MTRThreadNetworkDirectoryClusterGetOperatio
 
 #### Discussion
 
-Retrieves a Thread Operational Dataset from the ThreadNetworks list.
+Retrieves the Thread Operational Dataset with the given Extended PAN ID.
 
 
 ---

@@ -6,7 +6,7 @@
 The state of ownership for the drawable.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

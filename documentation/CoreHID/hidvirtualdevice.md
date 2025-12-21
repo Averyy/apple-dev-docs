@@ -41,13 +41,6 @@ A `HIDVirtualDevice` is an object that emulates a HID device connected to the sy
   The properties for a virtual HID device.
 ### Instance Properties
 - [var hidDevice: IOHIDUserDevice?](hidvirtualdevice/hiddevice.md)
-- [var unownedExecutor: UnownedSerialExecutor](hidvirtualdevice/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
-### Default Implementations
-- [Actor Implementations](hidvirtualdevice/actor-implementations.md)
-- [CustomStringConvertible Implementations](hidvirtualdevice/customstringconvertible-implementations.md)
-- [Equatable Implementations](hidvirtualdevice/equatable-implementations.md)
-- [Hashable Implementations](hidvirtualdevice/hashable-implementations.md)
 
 ## Relationships
 

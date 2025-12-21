@@ -92,12 +92,6 @@ Alternatively, you can also use existing serial executor implementations, such a
 - [Executor](executor.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
-### Inherited By
-- [MainExecutor](mainexecutor.md)
-### Conforming Types
-- [CFMainExecutor](cfmainexecutor.md)
-- [DispatchMainExecutor](dispatchmainexecutor.md)
-- [DummyMainExecutor](dummymainexecutor.md)
 
 ## See Also
 

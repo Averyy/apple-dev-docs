@@ -26,10 +26,6 @@ case or
   A logical NOT predicate.
 - [NSCompoundPredicate.LogicalType.and](nscompoundpredicate/logicaltype/and.md)
   A logical AND predicate.
-- [NSCompoundPredicate.LogicalType.not](nscompoundpredicate/logicaltype/not.md)
-  A logical NOT predicate.
-- [NSCompoundPredicate.LogicalType.and](nscompoundpredicate/logicaltype/and.md)
-  A logical AND predicate.
 
 
 ---

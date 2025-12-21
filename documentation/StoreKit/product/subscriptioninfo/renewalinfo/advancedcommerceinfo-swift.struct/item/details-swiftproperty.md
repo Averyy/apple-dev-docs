@@ -19,6 +19,11 @@ The item’s details.
 let details: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.Details
 ```
 
+## See Also
+
+- [let priceIncreaseInfo: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo?](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.property.md)
+  A structure that describes the details of a subscription price increase, such as the price, customer acceptance status, and any dependent SKUs.
+
 
 ---
 

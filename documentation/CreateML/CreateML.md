@@ -27,7 +27,7 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
 
 ## Topics
 
-### Image Models
+### Image models
 - [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
   Train a machine learning model to classify images, and add it to your Core ML app.
 - [struct MLImageClassifier](mlimageclassifier.md)
@@ -36,10 +36,10 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   A model you train to classify one or more objects within an image.
 - [struct MLHandPoseClassifier](mlhandposeclassifier.md)
   A task that creates a hand pose classification model by training with images of people’s hands that you provide.
-### Video Models
+### Video models
 - [Creating an Action Classifier Model](creating-an-action-classifier-model.md)
   Train a machine learning model to recognize a person’s body movements.
-- [Detecting Human Actions in a Live Video Feed](detecting_human_actions_in_a_live_video_feed.md)
+- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [struct MLActionClassifier](mlactionclassifier.md)
   A model you train with videos to classify a person’s body movements.
@@ -47,10 +47,10 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   A task that creates a hand action classification model by training with videos of people’s hand movements that you provide.
 - [struct MLStyleTransfer](mlstyletransfer.md)
   A model you train to apply an image’s style to other images or videos.
-### Text Models
+### Text models
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 - [struct MLTextClassifier](mltextclassifier.md)
   A model you train to classify natural language text.
@@ -60,14 +60,14 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   A collection of terms and their labels, which augments a tagger that analyzes natural language text.
 - [struct MLWordEmbedding](mlwordembedding.md)
   A map of strings in a vector space that enable your app to find similar strings by looking at a string’s neighbors.
-### Sound Models
+### Sound models
 - [struct MLSoundClassifier](mlsoundclassifier.md)
   A machine learning model you train with audio files to recognize and identify sounds on a device.
-### Motion Models
+### Motion models
 - [struct MLActivityClassifier](mlactivityclassifier.md)
   A model you train to classify motion sensor data.
-### Tabular Models
-- [Creating a Model from Tabular Data](creating_a_model_from_tabular_data.md)
+### Tabular models
+- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
 - [enum MLClassifier](mlclassifier.md)
   A model you train to classify data into discrete categories.
@@ -75,14 +75,14 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   A model you train to estimate continuous values.
 - [struct MLRecommender](mlrecommender.md)
   A model you train to make recommendations based on item similarity, grouping, and, optionally, item ratings.
-### Tabular Data
+### Tabular data
 - [struct MLDataTable](mldatatable.md)
   A table of data for training or evaluating a machine learning model.
 - [enum MLDataValue](mldatavalue.md)
   The value of a cell in a data table.
-- [Data Visualizations](data-visualizations.md)
+- [Data visualizations](data-visualizations.md)
   Render images of data tables and columns in a playground.
-### Model Accuracy
+### Model accuracy
 - [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
   Use metrics to tune the performance of your machine learning model.
 - [struct MLClassifierMetrics](mlclassifiermetrics.md)
@@ -95,7 +95,7 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   Metrics you use to evaluate a recommender’s performance.
 - [struct MLObjectDetectorMetrics](mlobjectdetectormetrics.md)
   Metrics you use to evaluate an object detector’s performance.
-### Model Training Control
+### Model training Control
 - [class MLJob](mljob.md)
   The representation of a model’s asynchronous training session you use to monitor the session’s progress or terminate its execution.
 - [class MLTrainingSession](mltrainingsession.md)
@@ -104,7 +104,7 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
   The configuration settings for a training session.
 - [struct MLCheckpoint](mlcheckpoint.md)
   The state of a model’s asynchronous training session at a specific point in time during the feature extraction or training phase.
-### Supporting Types
+### Supporting types
 - [enum MLCreateError](mlcreateerror.md)
   The errors Create ML throws while performing various operations, such as training models, making predictions, writing models to a file system, and so on.
 - [struct MLModelMetadata](mlmodelmetadata.md)
@@ -112,14 +112,17 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
 - [enum MLSplitStrategy](mlsplitstrategy.md)
   Data partitioning approaches, typically for creating a validation dataset from a training dataset.
 ### Articles
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
-  Train a machine learning model to classify natural language text.
-- [Data Visualizations](create-ml-utilties.md)
+- [Data visualizations](create-ml-utilties.md)
   Render images of data tables and columns in a playground.
+- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
+  Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Gathering Training Videos for an Action Classifier](recording-or-choosing-training-videos.md)
   Collect quality example videos that effectively train action classifiers.
-- [Option Set Support](option-set-support.md)
-  Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
+### Functions
+- [func show(_:)](show(_:).md)
+  Generates a streaming visualization of the untyped column.
+- [func show(_:_:)](show(_:_:).md)
+  Generates a streaming plot visualization of the two untyped columns.
 ### Enumerations
 - [enum MLBoundingBoxAnchor](mlboundingboxanchor.md)
   A location within a bounding box that an annotation’s coordinates use as their reference point.

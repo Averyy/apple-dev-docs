@@ -6,11 +6,11 @@
 Specifies a response format that the model must conform its output to.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,8 +21,6 @@ struct ResponseFormat
 ## Topics
 
 ### Creating a response format
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(schema: GenerationSchema)](transcript/responseformat/init(schema:).md)
   Creates a response format with a schema.
 - [init<Content>(type: Content.Type)](transcript/responseformat/init(type:).md)
@@ -30,15 +28,6 @@ struct ResponseFormat
 ### Inspecting a response format
 - [var name: String](transcript/responseformat/name.md)
   A name associated with the response format.
-### Encoding a response format
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing response formats
-- [static func == (Transcript.ResponseFormat, Transcript.ResponseFormat) -> Bool](transcript/responseformat/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/responseformat/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/responseformat/equatable-implementations.md)
 
 ## Relationships
 
@@ -54,7 +43,7 @@ struct ResponseFormat
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.StructuredSegment](transcript/structuredsegment.md)

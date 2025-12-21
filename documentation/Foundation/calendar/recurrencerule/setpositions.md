@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Which occurrences within every interval should be returned
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -6,11 +6,11 @@
 Creates a general-purpose transcriber.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -29,6 +29,8 @@ convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.Tra
 
 - [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](speechtranscriber/init(locale:preset:).md)
   Creates a general-purpose transcriber according to a preset.
+- [SpeechTranscriber.Preset](speechtranscriber/preset.md)
+  Predefined transcriber configurations.
 
 
 ---

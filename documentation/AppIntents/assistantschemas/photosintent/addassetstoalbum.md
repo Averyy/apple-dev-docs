@@ -25,7 +25,7 @@ var addAssetsToAlbum: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.photos.addAssetsToAlbum` schema:
 
 ```swift
-@AssistantIntent(schema: .photos.addAssetsToAlbum)
+@AppIntent(schema: .photos.addAssetsToAlbum)
 struct AddMediaAssetsToAlbumIntent: AppIntent {
     @Parameter
     var assets: [PhotoEntity]

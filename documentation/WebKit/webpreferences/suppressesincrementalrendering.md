@@ -16,7 +16,7 @@ var suppressesIncrementalRendering: Bool { get set }
 
 #### Discussion
 
-Pass [`true`](https://developer.apple.com/documentation/swift/true) to suppress incremental rendering, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Pass [`true`](https://developer.apple.com/documentation/Swift/true) to suppress incremental rendering, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 
 ---

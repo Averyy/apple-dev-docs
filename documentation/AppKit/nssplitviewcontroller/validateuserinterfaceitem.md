@@ -17,7 +17,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified item responds to [`toggleSidebar(_:)`](nssplitviewcontroller/togglesidebar(_:).md), [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the specified item responds to [`toggleSidebar(_:)`](nssplitviewcontroller/togglesidebar(_:).md), [`false`](https://developer.apple.com/documentation/Swift/false) if it doesn’t.
 
 ## Parameters
 

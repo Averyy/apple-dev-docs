@@ -21,7 +21,7 @@ class func disableActions() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if actions are disabled.
+[`true`](https://developer.apple.com/documentation/Swift/true) if actions are disabled.
 
 #### Discussion
 

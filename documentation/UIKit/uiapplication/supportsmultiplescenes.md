@@ -21,7 +21,7 @@ var supportsMultipleScenes: Bool { get }
 
 #### Discussion
 
-UIKit sets this property to [`true`](https://developer.apple.com/documentation/swift/true) when the system allows the app to display multiple scenes and the app’s `Info.plist` file includes the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of [`true`](https://developer.apple.com/documentation/swift/true). If either of those conditions isn’t true, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+UIKit sets this property to [`true`](https://developer.apple.com/documentation/Swift/true) when the system allows the app to display multiple scenes and the app’s `Info.plist` file includes the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of [`true`](https://developer.apple.com/documentation/Swift/true). If either of those conditions isn’t true, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Use the [`connectedScenes`](uiapplication/connectedscenes.md) property to determine whether multiple scenes are present.
 

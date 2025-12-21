@@ -25,7 +25,7 @@ convenience init(requestRevision: Int, boundingBox: CGRect, roll: NSNumber?, yaw
 - `boundingBox`: The bounding rectangle of the detected face landmark.
 - `roll`: The rotational angle of the face landmark around the z-axis.
 - `yaw`: The rotational angle of the face landmark around the y-axis.
-- `pitch`: The rotational angle of the face landmark around the z-axis.
+- `pitch`: The rotational angle of the face landmark around the x-axis.
 
 ## See Also
 

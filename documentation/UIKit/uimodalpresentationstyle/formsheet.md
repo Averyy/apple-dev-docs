@@ -9,7 +9,7 @@ A presentation style that displays the content centered in the screen.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -20,7 +20,7 @@ case formSheet
 
 #### Discussion
 
-In a regular-width, regular-height size class, the system adds a dimming layer over the background content and centers the view controller’s content on top of this layer. The default content size is smaller than that of the [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) style. A part of the background content always remains visible.
+In a regular-width, regular-height size class, the system adds a layer with a Liquid Glass effect over the background content and centers the view controller’s content on top of this layer. The default content size is smaller than that of the [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) style. A part of the background content always remains visible.
 
 To provide a custom content size, use the modal view controller’s [`preferredContentSize`](uiviewcontroller/preferredcontentsize.md) property.
 

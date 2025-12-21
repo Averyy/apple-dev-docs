@@ -37,14 +37,8 @@ If your app instantiates a report with the `barGraph` context, then the system p
 - [init(rawValue: String)](deviceactivityreport/context/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: String](deviceactivityreport/context/rawvalue-swift.property.md)
+- [var rawValue: String](deviceactivityreport/context/rawvalue.md)
   The underlying value that represents the given context.
-### Type Aliases
-- [DeviceActivityReport.Context.RawValue](deviceactivityreport/context/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](deviceactivityreport/context/equatable-implementations.md)
-- [RawRepresentable Implementations](deviceactivityreport/context/rawrepresentable-implementations.md)
 
 ## Relationships
 

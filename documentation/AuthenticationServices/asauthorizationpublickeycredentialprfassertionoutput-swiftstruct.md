@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: struct
 
-The outputs of the WebAuthentication PRF extension, when requested during an assertion. This object represents one or two SymmetricKeys which are available anywhere the passkey can be used. These are general purpose keys which can be used for application-specific needs, such as encryption of user data. These keys should not be stored or exported. They should only ever be derived as the result of an assertion operation, and then discarded when finished.
+A type to represent outputs of the web authentication PRF extension, when requesting them during an assertion.
 
 **Availability**:
 - iOS 18.0+
@@ -18,15 +18,31 @@ The outputs of the WebAuthentication PRF extension, when requested during an ass
 struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput
 ```
 
+#### Overview
+
+This object represents one or two `SymmetricKey` keys that are available anywhere the passkey is available for use. These are general purpose keys that you can use for application-specific needs, such as encryption of user data.
+
+Don’t store or export these keys. Derive these keys only as the result of an assertion operation, and then discard them when the operation finishes.
+
 ## Topics
 
-### Initializers
+### Creating a PRF assertion output
 - [init(first: SymmetricKey, second: SymmetricKey?)](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/init(first:second:).md)
-### Instance Properties
+  Initializes an assertion output structure with one or two keys.
+### Accessing symmetric keys
 - [let first: SymmetricKey](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/first.md)
-  A SymmetricKey that is unique to this passkey and derived from `input1`.
+  A symmetric key that’s unique to the passkey and derives from the first input.
 - [let second: SymmetricKey?](asauthorizationpublickeycredentialprfassertionoutput-swift.struct/second.md)
-  A second SymmetricKey that is unique to this passkey, and derived from `input2` if it was specified. If `input2` was not specified, this will be nil.
+  A second symmetric key that’s unique to the passkey, and derives from the second input, if specified.
+
+## See Also
+
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
+  The output for a large binary object operation during passkey assertion.
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
+  A type to represent the output of the requested large binary object operation, which returns in a passkey sign-in response.
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/prf.md)
+  The outputs of the WebAuthn PRF extension in passkey assertion requests.
 
 
 ---

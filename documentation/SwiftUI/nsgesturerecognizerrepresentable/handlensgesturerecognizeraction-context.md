@@ -7,7 +7,7 @@
 Handles recognition of the represented `NSGestureRecognizer`.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

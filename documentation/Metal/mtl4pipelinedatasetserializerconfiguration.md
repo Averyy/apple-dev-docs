@@ -6,12 +6,12 @@
 Configuration options for pipeline dataset serializer objects.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ You can combine these values via a logical `OR` and set it to [`configuration`](
 ## Topics
 
 ### Initializers
-- [init(rawValue: Int)](mtl4pipelinedatasetserializerconfiguration/init(rawvalue:).md)
+- [init(rawValue: UInt)](mtl4pipelinedatasetserializerconfiguration/init(rawvalue:).md)
 ### Type Properties
 - [static var captureBinaries: MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration/capturebinaries.md)
   Enables serializing pipeline binary functions.

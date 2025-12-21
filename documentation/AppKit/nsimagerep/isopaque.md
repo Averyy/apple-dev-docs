@@ -16,7 +16,7 @@ var isOpaque: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the image should be treated as fully opaque; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to indicate the image may include some transparent regions.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the image should be treated as fully opaque; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to indicate the image may include some transparent regions.
 
 Use this property to test whether an image representation completely covers the area within the rectangle given by the [`size`](nsimagerep/size.md) property.
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+Repeat on the n-th instance of the specified weekday in a month, if the recurrence has a monthly frequency. If the recurrence has a yearly frequency, repeat on the n-th week of the year.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 case nth(Int, Locale.Weekday)
 ```
+
+#### Discussion
+
+If n is negative, repeat on the n-to-last of the given weekday.
 
 
 ---

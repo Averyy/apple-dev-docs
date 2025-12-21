@@ -22,9 +22,9 @@ var isCancelled: Bool { get }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). Calling the [`cancel()`](operation/cancel().md) method of this object sets the value of this property to [`true`](https://developer.apple.com/documentation/swift/true). Once canceled, an operation must move to the finished state.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). Calling the [`cancel()`](operation/cancel().md) method of this object sets the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true). Once canceled, an operation must move to the finished state.
 
-Canceling an operation does not actively stop the receiver’s code from executing. An operation object is responsible for calling this method periodically and stopping itself if the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+Canceling an operation does not actively stop the receiver’s code from executing. An operation object is responsible for calling this method periodically and stopping itself if the method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You should always check the value of this property before doing any work towards accomplishing the operation’s task, which typically means checking it at the beginning of your custom [`main()`](operation/main().md) method. It is possible for an operation to be cancelled before it begins executing or at any time while it is executing. Therefore, checking the value at the beginning of your [`main()`](operation/main().md) method (and periodically throughout that method) lets you exit as quickly as possible when an operation is cancelled.
 

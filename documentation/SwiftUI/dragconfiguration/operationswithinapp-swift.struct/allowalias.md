@@ -6,7 +6,7 @@
 A Boolean value indicating if the drag operation supports creating aliases to the dropped items.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

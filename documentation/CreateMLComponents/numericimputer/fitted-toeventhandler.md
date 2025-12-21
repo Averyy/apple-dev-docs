@@ -31,8 +31,8 @@ The fitted transformer.
 
 ## See Also
 
-- [NumericImputer.Transformer](numericimputer/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 - [NumericImputer.Strategy](numericimputer/strategy-swift.enum.md)
   An imputation strategy.
 

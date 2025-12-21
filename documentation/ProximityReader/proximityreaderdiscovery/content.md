@@ -26,14 +26,11 @@ Pass instances of this structure to [`presentContent(_:from:)`](proximityreaderd
 ## Topics
 
 ### Getting the content identifier
-- [let id: String](proximityreaderdiscovery/content/id-swift.property.md)
+- [let id: String](proximityreaderdiscovery/content/id.md)
   The unique identifier of the content.
 ### Getting the content description
 - [let description: String](proximityreaderdiscovery/content/description.md)
   The description of the content.
-### Type Aliases
-- [ProximityReaderDiscovery.Content.ID](proximityreaderdiscovery/content/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

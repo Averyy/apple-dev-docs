@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: case
 
-A value representing a command that is used during backdrop transitions. This command adds a fade in / fade out for the backdrop during playback.
+A value that represents a command that adds fade-in and fade-out effects to backdrop transitions.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

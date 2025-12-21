@@ -21,7 +21,7 @@ optional func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UI
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item should be popped; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the item should be popped; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

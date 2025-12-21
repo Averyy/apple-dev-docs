@@ -38,6 +38,9 @@ protocol GCLinearInput : NSObjectProtocol
 ### Getting user actions
 - [var sources: Set<AnyHashable>](gclinearinput/sources.md)
   One or more physical actions the user performs to manipulate the input.
+### Instance Properties
+- [var physicalExtents: (any GCPhysicalInputExtents)?](gclinearinput/physicalextents.md)
+  An object describing the physical extents of the input, if the input represents a physical unit of measurement.
 
 ## Relationships
 

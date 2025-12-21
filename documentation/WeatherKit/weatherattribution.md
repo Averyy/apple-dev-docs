@@ -40,10 +40,6 @@ Attribution is required for publishing software using WeatherKit.
 ### Instance Properties
 - [var legalAttributionText: String](weatherattribution/legalattributiontext.md)
   This property returns text that should be made available to users for apps that cannot display the attributionURL contents in a Safari view. It contains language that outlines the weather data sources attribution and is a legal requirement of using WeatherKit.
-### Default Implementations
-- [Decodable Implementations](weatherattribution/decodable-implementations.md)
-- [Encodable Implementations](weatherattribution/encodable-implementations.md)
-- [Equatable Implementations](weatherattribution/equatable-implementations.md)
 
 ## Relationships
 

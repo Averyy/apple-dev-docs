@@ -36,7 +36,7 @@ The created `NSEvent` instance or `nil` if the instance could not be created.
   The number of mouse clicks associated with a mouse-down or mouse-up event.
 - [var eventNumber: Int](nsevent/eventnumber.md)
   The counter value of the latest mouse or tracking-rectangle event object.
-- [var systemUptime: TimeInterval { get }](../Foundation/ProcessInfo/systemUptime.md)
+- [var systemUptime: TimeInterval](../Foundation/ProcessInfo/systemUptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 - [var pressure: Float](nsevent/pressure.md)
   A normalized value that indicates the degree of pressure applied to an appropriate input device.

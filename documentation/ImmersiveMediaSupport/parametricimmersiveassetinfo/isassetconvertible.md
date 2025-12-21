@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-A result Boolean value that indicates whether the asset can be converted to ParametricImmersive or not. If opt-out `computeFormatDescription` in the init, this boolean shows if asset is potentially convertible.
+A result Boolean value that indicates whether the asset can be converted to parametric immersive. If opt-out `computeFormatDescription` in the initializer, this Boolean indicates whether the asset is convertible.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

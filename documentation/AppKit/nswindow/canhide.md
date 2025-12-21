@@ -17,7 +17,7 @@ var canHide: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window can hide when its application becomes hidden (during execution of the `NSApplication```NSApplication/hide(_:)`` method); otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, the value of the property is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window can hide when its application becomes hidden (during execution of the `NSApplication```NSApplication/hide(_:)`` method); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, the value of the property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

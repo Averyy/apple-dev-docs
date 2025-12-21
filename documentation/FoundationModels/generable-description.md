@@ -3,14 +3,14 @@
 **Framework**: Foundation Models  
 **Kind**: macro
 
-Conforms a type to generable.
+Conforms a type to [`Generable`](generable.md) protocol.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -46,6 +46,8 @@ enum Genre {
   case nonFiction
 }
 ```
+
+> **Note**: @Guide macro [`Guide(description:)`](guide(description:).md)
 
 
 ---

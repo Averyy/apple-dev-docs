@@ -19,12 +19,6 @@ The metadata for an application or package manifest item.
 object ManifestURL.ItemsItem.Metadata
 ```
 
-## Topics
-
-### Objects
-- [object ManifestURL.ItemsItem.Metadata.MetadataItemsItem](manifesturl/itemsitem/metadata-data.dictionary/metadataitemsitem.md)
-  Removed
-
 ## See Also
 
 - [object ManifestURL.ItemsItem.AssetsItem](manifesturl/itemsitem/assetsitem.md)

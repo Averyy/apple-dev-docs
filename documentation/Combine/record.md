@@ -22,26 +22,18 @@ struct Record<Output, Failure> where Failure : Error
 
 ## Topics
 
-### Creating a Record Publisher
+### Creating a record publisher
 - [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/init(output:completion:).md)
   Creates a record publisher to publish the provided elements, followed by the provided completion value.
 - [init(record: (inout Record<Output, Failure>.Recording) -> Void)](record/init(record:).md)
   Creates a publisher to interactively record a series of outputs and a completion.
 - [init(recording: Record<Output, Failure>.Recording)](record/init(recording:).md)
   Creates a record publisher from an existing recording.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let recording: Record<Output, Failure>.Recording](record/recording-swift.property.md)
   The recorded output and completion.
-### Applying Operators
-- [Publisher Operators](record-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Structures
 - [Record.Recording](record/recording-swift.struct.md)
   A recorded sequence of outputs, followed by a completion value.
-### Default Implementations
-- [Decodable Implementations](record/decodable-implementations.md)
-- [Encodable Implementations](record/encodable-implementations.md)
-- [Publisher Implementations](record/publisher-implementations.md)
 
 ## Relationships
 

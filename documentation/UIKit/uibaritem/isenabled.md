@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), the item is drawn partially dimmed to indicate it’s disabled. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`false`](https://developer.apple.com/documentation/Swift/false), the item is drawn partially dimmed to indicate it’s disabled. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

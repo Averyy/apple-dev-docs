@@ -21,10 +21,6 @@ class Iterator<IteratorElement>
 ### Instance Methods
 - [func next() async -> IteratorElement?](deviceactivityresults/iterator/next.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
-### Type Aliases
-- [DeviceActivityResults.Iterator.Element](deviceactivityresults/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](deviceactivityresults/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 

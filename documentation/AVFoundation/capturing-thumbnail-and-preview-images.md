@@ -1,4 +1,4 @@
-# Capturing Thumbnail and Preview Images
+# Capturing thumbnail and preview images
 
 **Framework**: AVFoundation
 
@@ -13,7 +13,7 @@ In the capture system, the names  and  have specific meanings:
 - A  is a reduced-size (screen resolution or smaller) version of the photo, in an uncompressed format, delivered only in memory for purposes of displaying feedback shortly after capture. For example, the system Camera app displays a preview image of the last captured photo.
 - A  is a smaller version of the photo, encoded in a compressed format and embedded in the output image file for use by other software. For example, image browsers reading a folder full of images can preview the contents of many files without reading and decoding each file’s entire contents.
 
-You can add preview images, thumbnail images, or both with minor additions to any [`AVCapturePhotoOutput`](avcapturephotooutput.md) workflow (see [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md) and related topics).
+You can add preview images, thumbnail images, or both with minor additions to any [`AVCapturePhotoOutput`](avcapturephotooutput.md) workflow (see [`Capturing still and Live Photos`](capturing-still-and-live-photos.md) and related topics).
 
 ##### Choose Settings
 
@@ -58,11 +58,11 @@ If you requested an embedded thumbnail image, that image isn’t directly access
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
   Capture several photos at once, varying parameters like exposure duration or light sensitivity.
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
   Get processed image data without compression to use for filtering or lossless output.
 
 

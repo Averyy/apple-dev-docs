@@ -20,9 +20,9 @@ var isSpatialVideoCaptureEnabled: Bool { get set }
 
 #### Discussion
 
-Spatial capture lets you record your favorite moments in 3D for playback on Apple Vision Pro. This feature isn’t supported on all devices, so you can only enable this property when [`isSpatialVideoCaptureSupported`](avcapturemoviefileoutput/isspatialvideocapturesupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+Spatial capture lets you record your favorite moments in 3D for playback on Apple Vision Pro. This feature isn’t supported on all devices, so you can only enable this property when [`isSpatialVideoCaptureSupported`](avcapturemoviefileoutput/isspatialvideocapturesupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

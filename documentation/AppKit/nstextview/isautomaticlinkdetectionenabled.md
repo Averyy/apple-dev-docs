@@ -17,13 +17,13 @@ var isAutomaticLinkDetectionEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), automatic link detection is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), it is disabled.
+If [`true`](https://developer.apple.com/documentation/Swift/true), automatic link detection is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), it is disabled.
 
 Automatic link detection causes strings representing URLs typed in the view to be automatically made into links to those URLs.
 
 ## See Also
 
-- [func url(at location: Int, effectiveRange: NSRangePointer) -> URL?](../Foundation/NSAttributedString/url(at:effectiveRange:).md)
+- [func url(at: Int, effectiveRange: NSRangePointer) -> URL?](../Foundation/NSAttributedString/url(at:effectiveRange:).md)
   Returns a URL, either from a link attribute or from text at the specified location that appears to be a URL string, for use in automatic link detection.
 - [var allowsUndo: Bool](nstextview/allowsundo.md)
   A Boolean value that indicates whether the receiver allows undo.

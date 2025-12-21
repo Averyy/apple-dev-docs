@@ -30,20 +30,57 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 
 #### Overview
 
-To use a data model object to app intents, update it to conform to the `AppEntity` protocol. Declare two static properties to make them visible to the system. The following example shows a data model for soup:
-
-For example:
+To use a data model object to app intents, update it to conform to the `AppEntity` protocol. Declare properties using the `@Property` property wrapper to make them visible to the system. The following example from the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample app shows a data model for a trail:
 
 ```swift
-struct Soup: AppEntity {
-   let id: String
+struct TrailEntity: AppEntity {
+    // Provide the system with the interface required to query `TrailEntity` structures.
+    static let defaultQuery = TrailEntityQuery()
 
-   @Property(title: "Type of soup")
-   let type: SoupType = .miso
+    // The system requires the `AppEntity` identifier to be unique and persistant because the system may save it in a shortcut.
+    var id: Trail.ID
+
+    @Property var name: String
+
+    @Property(title: "Region")
+    var regionDescription: String
+
+    @Property var trailLength: Measurement<UnitLength>
+
+    var imageName: String
+
+    var currentConditions: String
+
+    /**
+    Information on how to display the entity to people — for example, a string like the trail name. Include the optional subtitle
+    and image for a visually rich display.
+    */
+    var displayRepresentation: DisplayRepresentation {
+        DisplayRepresentation(title: "\(name)",
+                              subtitle: "\(regionDescription)",
+                              image: DisplayRepresentation.Image(named: imageName))
+    }
+
+    init(trail: Trail) {
+        self.id = trail.id
+        self.imageName = trail.featuredImage
+        self.currentConditions = trail.currentConditions
+        self.name = trail.name
+        self.regionDescription = trail.regionDescription
+        self.trailLength = trail.trailLength
+    }
+}
+
+extension TrailEntity: URLRepresentableEntity {
+    static var urlRepresentation: URLRepresentation {
+        // Use string interpolation to fill values from your entity necessary for constructing the universal link URL.
+        // This example URL uses the unique and persistant identifier for the `TrailEntity` in the URL.
+        "https://example.com/trail/\(.id)/details"
+    }
 }
 ```
 
-For additional types, see [`EntityProperty`](entityproperty.md).
+For additional property types, see [`EntityProperty`](entityproperty.md).
 
 It is up to you whether you want to conform to the `AppEntity` protocol directly on the data models of your app, or if you create data models specific to your app intents implementation. In many cases, it’s a good idea to create models specific to app intents that shadow your app data models to keep entities separate from the rest of your app’s logic.
 

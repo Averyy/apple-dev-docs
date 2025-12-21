@@ -82,11 +82,9 @@ ProductView(id: "com.example.product")
 
 ## See Also
 
-- [nonisolated func productViewStyle(_ style: some ProductViewStyle) -> some View
-](../SwiftUI/View/productViewStyle(_:).md)
+- [func productViewStyle(some ProductViewStyle) -> some View](../SwiftUI/View/productViewStyle(_:).md)
   Sets the style for In-App Purchase product views within a view.
-- [nonisolated func productIconBorder() -> some View
-](../SwiftUI/View/productIconBorder.md)
+- [func productIconBorder() -> some View](../SwiftUI/View/productIconBorder.md)
   Adds a standard border to an in-app purchase product’s icon .
 - [struct ProductViewStyleConfiguration](productviewstyleconfiguration.md)
   The properties of an In-App Purchase product for use by custom product view styles.

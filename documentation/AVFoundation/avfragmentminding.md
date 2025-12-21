@@ -22,7 +22,7 @@ protocol AVFragmentMinding
 
 ## Topics
 
-### Fragment Minder Association
+### Fragment minder association
 - [var isAssociatedWithFragmentMinder: Bool](avfragmentminding/isassociatedwithfragmentminder.md)
   A Boolean value that indicates whether an asset that supports fragment minding is currently associated with a fragment minder.
 

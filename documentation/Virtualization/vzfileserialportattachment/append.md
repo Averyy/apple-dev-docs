@@ -16,7 +16,7 @@ var append: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the virtual machine appends new data to the file; otherwise, it replaces the existing contents of the file before writing new data to it.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the virtual machine appends new data to the file; otherwise, it replaces the existing contents of the file before writing new data to it.
 
 ## See Also
 

@@ -18,6 +18,11 @@
 init<C>(_ canceller: C) where C : Cancellable
 ```
 
+## See Also
+
+- [init(() -> Void)](anycancellable/init(_:)-3icn3.md)
+  Initializes the cancellable object with the given cancel-time closure.
+
 
 ---
 

@@ -11,10 +11,7 @@ An object containing the response from an autocomplete request.
 ## Declaration
 
 ```swift
-dictionary SearchAutocompleteResponse {
-	string query;
-	SearchAutocompleteResult[] results;
-};
+interface SearchAutocompleteResponse
 ```
 
 ## Topics
@@ -27,11 +24,11 @@ dictionary SearchAutocompleteResponse {
 
 ## See Also
 
-- [autocomplete](mapkit.search/autocomplete.md)
+- [autocomplete(query, callback, options)](search/autocomplete.md)
   Retrieves a list of autocomplete results for the specified search query.
-- [SearchAutocompleteOptions](searchautocompleteoptions.md)
+- [interface SearchAutocompleteOptions](searchautocompleteoptions.md)
   Options you provide to constrain an autocomplete request.
-- [SearchAutocompleteResult](searchautocompleteresult.md)
+- [class SearchAutocompleteResult](searchautocompleteresult.md)
   The result of an autocomplete query, including display lines and a coordinate.
 
 

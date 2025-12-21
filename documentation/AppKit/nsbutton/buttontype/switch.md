@@ -16,7 +16,7 @@ case `switch`
 
 #### Discussion
 
-A switch button provides the same toggling behavior as a [`NSButton.ButtonType.toggle`](nsbutton/buttontype/toggle.md) button. In addition to configuring that behavior, this button type configures [`isBordered`](nsbutton/isbordered.md) to [`false`](https://developer.apple.com/documentation/swift/false) and provides a standard checkbox image.
+A switch button provides the same toggling behavior as a [`NSButton.ButtonType.toggle`](nsbutton/buttontype/toggle.md) button. In addition to configuring that behavior, this button type configures [`isBordered`](nsbutton/isbordered.md) to [`false`](https://developer.apple.com/documentation/Swift/false) and provides a standard checkbox image.
 
 Checkboxes are ideal for controlling a Boolean state within your application. The mixed state of a checkbox, enabled through the [`allowsMixedState`](nsbutton/allowsmixedstate.md) property, is useful for summarizing multiple Boolean states of varying values.
 

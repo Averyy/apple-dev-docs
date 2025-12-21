@@ -3,6 +3,8 @@
 **Framework**: Symbols  
 **Kind**: method
 
+Sets the preferred repeat behavior.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,14 @@
 ```swift
 static func `repeat`(_ behavior: SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions
 ```
+
+#### Return Value
+
+A new set of symbol effect options with the preferred repeat behavior.
+
+## Parameters
+
+- `behavior`: The preferred behavior when the effect is repeated.
 
 
 ---

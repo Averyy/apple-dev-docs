@@ -5,8 +5,8 @@
 Create an immersive video playback experience with RealityKit.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -31,7 +31,7 @@ If you’re already using RealityKit in your app, [`VideoPlayerComponent`](https
 | --- | --- |
 | [`desiredImmersiveViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredImmersiveViewingMode) | [`immersiveViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/immersiveViewingMode-swift.property) |
 | [`desiredSpatialVideoMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredSpatialVideoMode) | [`spatialVideoMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/spatialVideoMode-swift.property) |
-| [`desiredViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredViewingMode-2cahn) | [`viewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/viewingMode-6bzre) |
+| [`desiredViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredViewingMode) | [`viewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/viewingMode) |
 
 The following code configures a video player to present spatial video within a portal window:
 
@@ -114,9 +114,7 @@ private func updateImmersiveControls(with mitigation: VideoPlayerComponent.Video
 }
 ```
 
-#### Manage Changes in Immersive Viewing Mode
-
-For details regarding the immersion toggle, see [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent).
+> **Note**: For details regarding managing changes in immersive viewing mode, see [`Playing immersive video`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/videoplayercomponent#Playing-immersive-video).
 
 #### Preserve Motion Comfort
 
@@ -135,7 +133,7 @@ PlayerImmersiveSpace(sceneIdentifier: Self.sceneID)
 The [`VideoPlayerEvents.VideoComfortMitigationDidOccur`](https://developer.apple.com/documentation/RealityKit/VideoPlayerEvents/VideoComfortMitigationDidOccur) event includes a single property, [`comfortMitigation`](https://developer.apple.com/documentation/RealityKit/VideoPlayerEvents/VideoComfortMitigationDidOccur/comfortMitigation). This event indicates that the system detected high motion and took steps to preserve motion comfort based on the person’s preference. The following shows how the sample app subscribes to this event:
 
 ```swift
-let comfortMitigations = content.subscribe(
+_ = content.subscribe(
     to: VideoPlayerEvents.VideoComfortMitigationDidOccur.self,
     on: entity
 ) { event in
@@ -150,6 +148,10 @@ The sample uses this event to advise the person that system mitigation took plac
 
 - [Destination Video](destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Displaying video from connected devices](displaying-video-from-connected-devices.md)
+  Show video from devices connected with the Developer Strap in your visionOS app.
+- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
 - [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)

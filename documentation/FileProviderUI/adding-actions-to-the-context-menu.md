@@ -49,7 +49,7 @@ Use the `NSExtensionFileProviderActionActivationRule` key to enable or disable a
 
 > ❗ **Important**: Your action must have a predicate or the system won’t display it in the action menu. To always show an action, use `TRUEPREDICATE`.
 
-You can use predicates to test the value of any of the [`NSFileProviderItemProtocol`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol) object’s properties. For example, the following predicate tests whether the [`isUploaded`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol/isUploaded) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+You can use predicates to test the value of any of the [`NSFileProviderItemProtocol`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol) object’s properties. For example, the following predicate tests whether the [`isUploaded`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol/isUploaded) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ```other
 SUBQUERY ( fileproviderItems, $fileproviderItem, $fileproviderItem.uploadded == YES ).@count > 0
@@ -61,7 +61,7 @@ You can also use predicates to test custom data that you’ve added to the item�
 SUBQUERY( fileproviderItems, $fileproviderItem, $fileproviderItem.userInfo."com.example.testBit" == YES ).@count > 0
 ```
 
-If a predicate evaluates to [`true`](https://developer.apple.com/documentation/swift/true), the context menu includes the action; if [`false`](https://developer.apple.com/documentation/swift/false), the context menu doesn’t include the action. For more about creating predicate format strings, see [`Predicate Format String Syntax`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pSyntax.html#//apple_ref/doc/uid/TP40001795).
+If a predicate evaluates to [`true`](https://developer.apple.com/documentation/Swift/true), the context menu includes the action; if [`false`](https://developer.apple.com/documentation/Swift/false), the context menu doesn’t include the action. For more about creating predicate format strings, see [`Predicate Format String Syntax`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pSyntax.html#//apple_ref/doc/uid/TP40001795).
 
 ## See Also
 

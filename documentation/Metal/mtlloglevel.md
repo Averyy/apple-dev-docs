@@ -21,7 +21,7 @@ enum MTLLogLevel
 
 ## Topics
 
-### Enumeration Cases
+### Enumeration cases
 - [MTLLogLevel.debug](mtlloglevel/debug.md)
   The log level that captures diagnostic information.
 - [MTLLogLevel.info](mtlloglevel/info.md)

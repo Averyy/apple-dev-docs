@@ -1,9 +1,9 @@
-# ==(_:_:)
+# +=(_:_:)
 
 **Framework**: MusicKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are equal.
+Appends contents of a collection representing a next batch, in the right hand side, to the existing collection on the left hand side.
 
 **Availability**:
 - iOS 15.0+
@@ -17,19 +17,16 @@ Returns a Boolean value indicating whether two values are equal.
 ## Declaration
 
 ```swift
-static func == (left: MusicItemCollection<MusicItemType>, right: MusicItemCollection<MusicItemType>) -> Bool
+static func += (collection: inout MusicItemCollection<MusicItemType>, nextBatchCollection: MusicItemCollection<MusicItemType>)
 ```
 
 #### Discussion
 
-Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
+In addition to appending the underlying items of the collection to the existing collection on the left hand side, this will also transfer to the collection on the left hand side any information about a next batch from the collection on the right hand side, or lack thereof.
 
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+This appending operator is particularly useful for aggregating subsequent batches from a given collection into a local variable (for example, to use a [`MusicItemCollection`](musicitemcollection.md) to drive a SwiftUI [`List`](https://developer.apple.com/documentation/SwiftUI/List) or [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach)).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musicitemcollection/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musicitemcollection/+=(_:_:))*

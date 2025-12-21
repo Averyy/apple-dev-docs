@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-An option that enables using an instance descriptor memory layout that the GPU can populate.
+An option that enables an instance descriptor memory layout the GPU can populate.
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +21,7 @@ case indirect
 
 #### Discussion
 
-This instance type corresponds to the [`MTLIndirectInstanceAccelerationStructureDescriptor`](mtlindirectinstanceaccelerationstructuredescriptor.md) memory layout.
+This instance type corresponds to the [`MTLIndirectAccelerationStructureInstanceDescriptor`](mtlindirectaccelerationstructureinstancedescriptor.md) memory layout.
 
 ## See Also
 

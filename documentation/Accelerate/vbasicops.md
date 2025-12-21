@@ -44,12 +44,8 @@ The function names begin with “v,” followed by a mnemonic for the type of op
 - [func vR128Rotate(vUInt32, vUInt8) -> vUInt32](vr128rotate(_:_:).md)
   128-bit right rotate.
 ### Integer Arithmetic Functions (from vBasicOps.h)
-- [vU64Add](vu64add.md)
-  Unsigned 64-bit addition (modular arithmetic).
 - [func vU64AddS(vUInt32, vUInt32) -> vUInt32](vu64adds(_:_:).md)
   Unsigned 64-bit addition with saturation (clipping).
-- [vS64Add](vs64add.md)
-  Signed 64-bit addition (modular arithmetic).
 - [func vS64AddS(vSInt32, vSInt32) -> vSInt32](vs64adds(_:_:).md)
   Signed 64-bit addition with saturation (clipping).
 - [func vU128Add(vUInt32, vUInt32) -> vUInt32](vu128add(_:_:).md)
@@ -60,12 +56,8 @@ The function names begin with “v,” followed by a mnemonic for the type of op
   Signed 128-bit addition (modular arithmetic).
 - [func vS128AddS(vSInt32, vSInt32) -> vSInt32](vs128adds(_:_:).md)
   Signed 128-bit addition with saturation (clipping).
-- [vU64Sub](vu64sub.md)
-  Unsigned 64-bit subtraction (modular arithmetic).
 - [func vU64SubS(vUInt32, vUInt32) -> vUInt32](vu64subs(_:_:).md)
   Unsigned 64-bit subtraction with saturation (clipping).
-- [vS64Sub](vs64sub.md)
-  Signed 64-bit subtraction (modular arithmetic).
 - [func vS64SubS(vSInt32, vSInt32) -> vSInt32](vs64subs(_:_:).md)
   Signed 64-bit subtraction with saturation (clipping).
 - [func vU128Sub(vUInt32, vUInt32) -> vUInt32](vu128sub(_:_:).md)
@@ -80,10 +72,6 @@ The function names begin with “v,” followed by a mnemonic for the type of op
   Unsigned 8-bit multiplication; results are same width as multiplicands.
 - [func vS8HalfMultiply(vSInt8, vSInt8) -> vSInt8](vs8halfmultiply(_:_:).md)
   Signed 8-bit multiplication; results are same width as multiplicands.
-- [vU16HalfMultiply](vu16halfmultiply.md)
-  Unsigned 16-bit multiplication; results are same width as multiplicands.
-- [vS16HalfMultiply](vs16halfmultiply.md)
-  Signed 16-bit multiplication; results are same width as multiplicands.
 - [func vU32HalfMultiply(vUInt32, vUInt32) -> vUInt32](vu32halfmultiply(_:_:).md)
   Unsigned 32-bit multiplication; results are same width as multiplicands.
 - [func vS32HalfMultiply(vSInt32, vSInt32) -> vSInt32](vs32halfmultiply(_:_:).md)

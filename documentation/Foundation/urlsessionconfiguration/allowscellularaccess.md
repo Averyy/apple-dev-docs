@@ -24,7 +24,7 @@ var allowsCellularAccess: Bool { get set }
 
 This property controls whether tasks in sessions based on this session configuration are allowed to make connections over a cellular network.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 For more information, read [`Restrict Cellular Networking Correctly`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Platform-SpecificNetworkingTechnologies/Platform-SpecificNetworkingTechnologies.html#//apple_ref/doc/uid/TP40010220-CH212-SW9).
 

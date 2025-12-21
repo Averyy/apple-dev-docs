@@ -6,8 +6,8 @@
 Check whether the sender of the received message satisfies the specified requirement.
 
 **Availability**:
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

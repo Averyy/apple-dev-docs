@@ -7,7 +7,7 @@ Check that an expression causes the process to terminate in a given fashion.
 
 **Availability**:
 - Swift 6.2+
-- Xcode 17.0+
+- Xcode 26.0+
 
 ## Declaration
 

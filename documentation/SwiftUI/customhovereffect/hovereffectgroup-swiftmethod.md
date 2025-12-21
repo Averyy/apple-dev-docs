@@ -53,6 +53,17 @@ struct FadeEffect: CustomHoverEffect {
 
 - `group`: The   to activate when this view is hovered.   If  , this modifier has no effect.
 
+## See Also
+
+- [func hoverEffect(some CustomHoverEffect, in: HoverEffectGroup?, isEnabled: Bool) -> some CustomHoverEffect](customhovereffect/hovereffect(_:in:isenabled:).md)
+  Applies this effect in parallel with the given `effect`.
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
+  Applies a hover effect based on the current phase.
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+  Activates this effect as part of an effect group.
+- [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
+  Disables this hover effect.
+
 
 ---
 

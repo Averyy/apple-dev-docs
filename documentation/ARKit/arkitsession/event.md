@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: enum
 
-The kinds of events that can occur in a session.
+Enumeration of possible session events.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -17,11 +17,11 @@ enum Event
 
 ## Topics
 
-### Observing session events
+### Enumeration Cases
 - [case authorizationChanged(type: ARKitSession.AuthorizationType, status: ARKitSession.AuthorizationStatus)](arkitsession/event/authorizationchanged(type:status:).md)
   An event that represents a change in authorization status for a specific authorization type.
 - [case dataProviderStateChanged(dataProviders: [any DataProvider], newState: DataProviderState, error: ARKitSession.Error?)](arkitsession/event/dataproviderstatechanged(dataproviders:newstate:error:).md)
-  An event that represents a change in state of one of the data providers associated with a session.
+  An event that represents a state change of one or more of the data providers associated with a session.
 ### Instance Properties
 - [var description: String](arkitsession/event/description.md)
   A textual representation of ARKitSession.Event

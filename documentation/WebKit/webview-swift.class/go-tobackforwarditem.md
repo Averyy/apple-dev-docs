@@ -17,7 +17,7 @@ func go(toBackForwardItem item: WebHistoryItem!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `item` is in the back-forward list; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `item` is in the back-forward list; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

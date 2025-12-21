@@ -22,9 +22,6 @@ struct Entry
 
 ## Topics
 
-### Operators
-- [static func == (Playlist.Entry, Playlist.Entry) -> Bool](playlist/entry/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var albumTitle: String?](playlist/entry/albumtitle.md)
   The title of the album the playlist entry appears on.
@@ -42,9 +39,7 @@ struct Entry
   The editorial notes for the playlist entry.
 - [var genreNames: [String]](playlist/entry/genrenames.md)
   The names of the playlist entry’s associated genres.
-- [var hashValue: Int](playlist/entry/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](playlist/entry/id-swift.property.md)
+- [let id: MusicItemID](playlist/entry/id.md)
   The unique identifier for the playlist entry.
 - [var isrc: String?](playlist/entry/isrc.md)
   The International Standard Recording Code (ISRC) for the playlist entry.
@@ -68,22 +63,10 @@ struct Entry
   The title of the playlist entry.
 - [var url: URL?](playlist/entry/url.md)
   The URL for the playlist entry.
-### Instance Methods
-- [func hash(into: inout Hasher)](playlist/entry/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [Playlist.Entry.ID](playlist/entry/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Enumerations
 - [Playlist.Entry.Item](playlist/entry/item-swift.enum.md)
   An item that corresponds to an entry in a playlist.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](playlist/entry/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](playlist/entry/customstringconvertible-implementations.md)
-- [Decodable Implementations](playlist/entry/decodable-implementations.md)
-- [Encodable Implementations](playlist/entry/encodable-implementations.md)
-- [Equatable Implementations](playlist/entry/equatable-implementations.md)
-- [MusicItem Implementations](playlist/entry/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](playlist/entry/musiclibraryrequestable-implementations.md)
 
 ## Relationships

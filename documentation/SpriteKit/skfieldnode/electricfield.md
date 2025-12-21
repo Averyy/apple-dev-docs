@@ -17,7 +17,6 @@ Creates a field node that applies an electrical force proportional to the electr
 ## Declaration
 
 ```swift
-@MainActor
 class func electricField() -> SKFieldNode
 ```
 

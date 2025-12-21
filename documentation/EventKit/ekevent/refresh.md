@@ -21,11 +21,11 @@ func refresh() -> Bool
 
 #### Return Value
 
-If the event was successfully refreshed, [`true`](https://developer.apple.com/documentation/swift/true); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If the event was successfully refreshed, [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-You should call this method only on events that your application is editing, and only when your application receives the [`EKEventStoreChangedNotification`](ekeventstorechangednotification.md) notification. If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the event has been deleted or otherwise invalidated, and you should not continue to use it.
+You should call this method only on events that your application is editing, and only when your application receives the [`EKEventStoreChangedNotification`](ekeventstorechangednotification.md) notification. If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), the event has been deleted or otherwise invalidated, and you should not continue to use it.
 
 This method does not replace the values of any properties that you have modified.
 

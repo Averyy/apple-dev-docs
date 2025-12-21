@@ -22,11 +22,11 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the file written by this method can be used to initialize a new array with the class method [`arrayWithContentsOfFile:`](nsarray/arraywithcontentsoffile:.md) or the instance method [`init(contentsOfFile:)`](nsarray/init(contentsoffile:).md). This method recursively validates that all the contained objects are property list objects before writing out the file, and returns [`false`](https://developer.apple.com/documentation/swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
+If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the file written by this method can be used to initialize a new array with the class method [`arrayWithContentsOfFile:`](nsarray/arraywithcontentsoffile:.md) or the instance method [`init(contentsOfFile:)`](nsarray/init(contentsoffile:).md). This method recursively validates that all the contained objects are property list objects before writing out the file, and returns [`false`](https://developer.apple.com/documentation/Swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
 
 ## Parameters
 

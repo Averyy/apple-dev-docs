@@ -22,7 +22,7 @@ func getCString(_ buffer: UnsafeMutablePointer<CChar>, maxLength maxBufferCount:
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation was successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Returns [`false`](https://developer.apple.com/documentation/swift/false) if conversion is not possible due to encoding errors or if `buffer` is too small.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation was successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Returns [`false`](https://developer.apple.com/documentation/Swift/false) if conversion is not possible due to encoding errors or if `buffer` is too small.
 
 #### Discussion
 

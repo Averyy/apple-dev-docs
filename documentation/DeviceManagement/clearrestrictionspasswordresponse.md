@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to clear the restrictions password and the restrictions on a device.
+A response from the device after it processes the command to clear the Screen Time password and the restrictions on a device.
 
 **Availability**:
 - iOS 8.0+
@@ -24,7 +24,7 @@ object ClearRestrictionsPasswordResponse
 ## See Also
 
 - [object ClearRestrictionsPasswordCommand](clearrestrictionspasswordcommand.md)
-  The command to clear the restrictions password and the restrictions on a device.
+  The command to clear the Screen Time password and the restrictions on a device.
 
 
 ---

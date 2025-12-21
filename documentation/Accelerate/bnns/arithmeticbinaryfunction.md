@@ -13,7 +13,6 @@ Constants that describe binary arithmetic functions.
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

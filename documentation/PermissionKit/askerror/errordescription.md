@@ -3,16 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: property
 
-A localized message describing what error occurred.
+The localized description of the error.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 26.0+ (Beta)
-- watchOS 2.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.1+
 
 ## Declaration
 

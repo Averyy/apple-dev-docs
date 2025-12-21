@@ -9,6 +9,7 @@ A person’s preferred squeeze action for Apple Pencil, as specified in the Sett
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

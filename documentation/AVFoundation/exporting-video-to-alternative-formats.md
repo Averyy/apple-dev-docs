@@ -14,7 +14,7 @@ To convert an existing movie file to a format that makes it compatible with othe
 
 To export a video to a different format, begin with an [`AVAsset`](avasset.md) movie file and perform these steps:
 
-1. Choose an export preset from the list of [`Export Presets`](export-presets.md).
+1. Choose an export preset from the list of [`Export presets`](export-presets.md).
 2. Choose an export file type from the list of [`AVFileType`](avfiletype.md) presets.
 3. Verify that [`AVAssetExportSession`](avassetexportsession.md) can convert the movie from the input format to the output format you want.
 4. Create and configure an [`AVAssetExportSession`](avassetexportsession.md) instance, and then use it to perform the export.

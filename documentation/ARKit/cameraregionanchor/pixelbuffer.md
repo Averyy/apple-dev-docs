@@ -3,10 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
-The pixel buffer, or nil if not set.
+The pixel buffer. Can be nil, e.g. for anchors which have not yet been added to the provider.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

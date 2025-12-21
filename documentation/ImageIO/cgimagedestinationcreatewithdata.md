@@ -22,7 +22,7 @@ func CGImageDestinationCreateWithData(_ data: CFMutableData, _ type: CFString, _
 
 #### Return Value
 
-An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Parameters
 

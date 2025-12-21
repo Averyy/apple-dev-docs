@@ -32,25 +32,9 @@ To add a comment to a test or suite, add a code comment before its `@Test` or `@
 
 ## Topics
 
-### Initializers
-- [init(rawValue: String)](comment/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: String](comment/rawvalue-swift.property.md)
+- [var rawValue: String](comment/rawvalue.md)
   The single comment string that this comment contains.
-### Type Aliases
-- [typealias RawValue](comment/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [CustomStringConvertible Implementations](comment/customstringconvertible-implementations.md)
-- [Equatable Implementations](comment/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](comment/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringInterpolation Implementations](comment/expressiblebystringinterpolation-implementations.md)
-- [ExpressibleByStringLiteral Implementations](comment/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](comment/expressiblebyunicodescalarliteral-implementations.md)
-- [RawRepresentable Implementations](comment/rawrepresentable-implementations.md)
-- [SuiteTrait Implementations](comment/suitetrait-implementations.md)
-- [Trait Implementations](comment/trait-implementations.md)
 
 ## Relationships
 
@@ -78,6 +62,8 @@ To add a comment to a test or suite, add a code comment before its `@Test` or `@
   A type that represents a bug report tracked by a test.
 - [struct ConditionTrait](conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

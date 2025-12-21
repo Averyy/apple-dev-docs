@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: struct
 
-An external purchase token for use with custom links.
+A token you use with the External Purchase custom link API.
 
 **Availability**:
 - iOS 18.1+
@@ -19,15 +19,9 @@ An external purchase token for use with custom links.
 struct Token
 ```
 
-## Mentions
-
-- [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
-
 #### Overview
 
-StoreKit returns an external purchase token of this type when you call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function. Your app gets these tokens if it configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key and uses the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API.
-
-For more information about tokens, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
+StoreKit returns an external purchase token of this type when you call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
 
 ## Topics
 
@@ -46,11 +40,15 @@ For more information about tokens, see [`Receiving and decoding external purchas
 ## See Also
 
 - [enum ExternalPurchaseCustomLink](externalpurchasecustomlink.md)
-  Enables qualifying apps to offer custom links for external purchases.
+  A value that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
+- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+  An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-purchase-link](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
 - [SKExternalPurchaseCustomLinkRegions](../BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
+- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+  Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
 
 
 ---

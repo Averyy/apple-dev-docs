@@ -40,16 +40,12 @@ Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the k
 - `didEndSelector`: A method selector for a delegate method called after the modal session has ended, but before the sheet has been dismissed. Implementation of this delegate method is optional.
 - `contextInfo`: A pointer to data that is passed to the delegate method. You can use this data pointer for any purpose you wish.
 
-## Topics
+## See Also
 
-### Related Documentation
 - [func keychain() -> Unmanaged<SecKeychain>!](sfkeychainsavepanel/keychain.md)
   Returns the keychain created by the keychain save panel.
 - [func runModal(forDirectory: String!, file: String!) -> Int](sfkeychainsavepanel/runmodal(fordirectory:file:).md)
   Displays a panel that allows a user to create a new keychain.
-
-## See Also
-
 - [func setPassword(String!)](sfkeychainsavepanel/setpassword(_:).md)
   Specifies the password for the keychain that will be created.
 - [func runModal(forDirectory: String!, file: String!) -> Int](sfkeychainsavepanel/runmodal(fordirectory:file:).md)

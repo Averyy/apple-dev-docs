@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: class
 
-A type that represents a VoIP action for a conversation.
+A type that represents an action for a conversation.
 
 **Availability**:
 - iOS 17.4+

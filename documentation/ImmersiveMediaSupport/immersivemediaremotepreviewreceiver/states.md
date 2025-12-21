@@ -3,11 +3,11 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The states that can be used to monitor the current state of the preview receiver so the application can monitor events.
+The states to use for monitoring the current state of the preview receiver so the app can monitor events.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the receiver is known to be invalid, otherwise [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](https://developer.apple.com/documentation/Swift/false) if the receiver is known to be invalid, otherwise [`true`](https://developer.apple.com/documentation/Swift/true).
 
 An `NSPort` object becomes invalid when its underlying communication resource, which is operating system dependent, is closed or damaged.
 

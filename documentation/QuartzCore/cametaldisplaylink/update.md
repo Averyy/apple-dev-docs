@@ -24,13 +24,7 @@ class Update
 ### Timing the Next Animation Frame
 - [var targetPresentationTimestamp: CFTimeInterval](cametaldisplaylink/update/targetpresentationtimestamp.md)
   The time the system estimates until the display of the next frame.
-- [var targetPresentationTimestamp: CFTimeInterval](cametaldisplaylink/update/targetpresentationtimestamp.md)
-  The time the system estimates until the display of the next frame.
 ### Drawing the Next Frame
-- [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
-  A deadline that indicates when your app needs to finish rendering to the drawable.
-- [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)
-  The Metal drawable your app uses to render the next frame.
 - [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
   A deadline that indicates when your app needs to finish rendering to the drawable.
 - [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)

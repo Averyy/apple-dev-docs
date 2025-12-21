@@ -6,7 +6,7 @@ A Boolean value that determines whether subviews are confined to the bounds of t
 
 #### Overview
 
-`UILabel` inherits this property from the `UIView` parent class. This class changes the default value of this property to [`true`](https://developer.apple.com/documentation/swift/true).
+`UILabel` inherits this property from the `UIView` parent class. This class changes the default value of this property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

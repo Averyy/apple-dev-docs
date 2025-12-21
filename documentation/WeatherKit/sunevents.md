@@ -43,10 +43,6 @@ struct SunEvents
   The sunrise time immediately before the solar transit closest to calendar noon.
 - [var sunset: Date?](sunevents/sunset.md)
   The sunset time immediately after the solar transit closest to calendar noon.
-### Default Implementations
-- [Decodable Implementations](sunevents/decodable-implementations.md)
-- [Encodable Implementations](sunevents/encodable-implementations.md)
-- [Equatable Implementations](sunevents/equatable-implementations.md)
 
 ## Relationships
 

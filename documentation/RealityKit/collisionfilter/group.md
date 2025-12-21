@@ -10,7 +10,7 @@ The collision group or groups, stored as a bit mask, to which the entity belongs
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

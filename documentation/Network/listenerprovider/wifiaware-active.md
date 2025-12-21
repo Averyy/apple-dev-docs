@@ -3,11 +3,11 @@
 **Framework**: Network  
 **Kind**: method
 
-Sets a `NetworkListener` to publish Wi-Fi Aware services to the selected paired devices.
+Sets a network listener to publish Wi-Fi Aware services to the selected paired devices.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ A new `ListenerProvider` containing the `.wifiAware()` instruction that will con
 
 #### Discussion
 
-The code snippet below is an example of how to set the `NetworkListener`.
+The code below is an example of how to set the `NetworkListener`:
 
 ```swift
 NetworkListener(for: .wifiAware(.connecting(to:service, from:.selected(devices))) )

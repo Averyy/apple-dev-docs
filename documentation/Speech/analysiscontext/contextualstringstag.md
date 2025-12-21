@@ -4,11 +4,11 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,9 +18,9 @@ struct ContextualStringsTag
 
 ## Topics
 
-### Initializers
+### Creating a tag
 - [init(AnalysisContext.ContextualStringsTag.RawValue)](analysiscontext/contextualstringstag/init(_:).md)
-### Type Properties
+### Predefined tags
 - [static let general: AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag/general.md)
   A predefined tag for applications that have no need to distinguish between sets of contextual strings.
 
@@ -35,7 +35,8 @@ struct ContextualStringsTag
 
 ## See Also
 
-- [AnalysisContext.UserDataTag](analysiscontext/userdatatag.md)
+- [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
+  A dictionary of supplemental vocabulary words grouped by tag.
 
 
 ---

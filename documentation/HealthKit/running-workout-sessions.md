@@ -26,7 +26,9 @@ let typesToShare: Set = [
 let typesToRead: Set = [
     HKQuantityType.quantityType(forIdentifier: .heartRate)!,
     HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
-    HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+    HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+    HKObjectType.activitySummaryType(),
+    HKCharacteristicType(.activityMoveMode)
 ]
 
 // Request authorization for those quantity types.
@@ -93,7 +95,7 @@ builder.delegate = self
 
 Your [`HKWorkoutSessionDelegate`](hkworkoutsessiondelegate.md) receives updates whenever the session’s state changes, an event occurs, or the session fails due to an error. Your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) receives updates when either Apple Watch or your app adds a new sample or event to the builder.
 
-By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](https://developer.apple.com/documentation/swift/false) if you want to control the events set to the builder.
+By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) if you want to control the events set to the builder.
 
 Finally, start the session and the builder.
 
@@ -228,7 +230,7 @@ As soon as you receive the session object, you must access its builder and set u
 - [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
-  A session that tracks the user’s workout on Apple Watch.
+  A session that tracks a person’s workout.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
 - [enum HKWorkoutSessionState](hkworkoutsessionstate.md)

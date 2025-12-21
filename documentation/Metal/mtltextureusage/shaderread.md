@@ -31,6 +31,8 @@ If the texture is a read-write texture that you also access with a `write()` fun
   An option for a texture whose usage is unknown.
 - [static var shaderWrite: MTLTextureUsage](mtltextureusage/shaderwrite.md)
   An option for writing to the texture in a shader.
+- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
+  An option that enables atomic memory operations on texture elements in shader code.
 - [static var renderTarget: MTLTextureUsage](mtltextureusage/rendertarget.md)
   An option for rendering to the texture in a render pass.
 - [static var pixelFormatView: MTLTextureUsage](mtltextureusage/pixelformatview.md)

@@ -29,7 +29,7 @@ A menu suitable for displaying as a contextual menu, or adding to another contex
 ## See Also
 
 - [NSSpellChecker.OptionKey](nsspellchecker/optionkey.md)
-  The constants are optional keys that can be used in the options dictionary parameter of the [`check(_:range:types:options:inSpellDocumentWithTag:orthography:wordCount:)`](nsspellchecker/check(_:range:types:options:inspelldocumentwithtag:orthography:wordcount:).md), [`requestChecking(of:range:types:options:inSpellDocumentWithTag:completionHandler:)`](nsspellchecker/requestchecking(of:range:types:options:inspelldocumentwithtag:completionhandler:).md), and [`menu(for:string:options:atLocation:in:)`](nsspellchecker/menu(for:string:options:atlocation:in:).md) methods.
+  Constants that define options for text checking.
 
 
 ---

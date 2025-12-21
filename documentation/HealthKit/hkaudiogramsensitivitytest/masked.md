@@ -17,6 +17,10 @@
 var masked: Bool { get }
 ```
 
+#### Discussion
+
+Indicates if the test was conducted with or without masking
+
 
 ---
 

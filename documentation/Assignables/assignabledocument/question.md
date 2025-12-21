@@ -44,11 +44,6 @@ struct Question
 ### Initializers
 - [init(boxes: [AssignableDocument.QuestionBox], maxScore: Double?)](assignabledocument/question/init(boxes:maxscore:).md)
   Initializes an instance of this object with the given values.
-### Instance Properties
-- [var hashValue: Int](assignabledocument/question/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](assignabledocument/question/equatable-implementations.md)
 
 ## Relationships
 

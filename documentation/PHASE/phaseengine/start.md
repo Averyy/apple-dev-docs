@@ -33,6 +33,7 @@ This function throws an error if the framework fails to start the engine.
   Processes app commands and increments framework processing.
 - [var renderingState: PHASESoundEvent.RenderingState](phaseengine/renderingstate.md)
   The status of the engine’s audio playback.
+- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
 
 
 ---

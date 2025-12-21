@@ -21,7 +21,7 @@ var dataType: MTLDataType { get set }
 
 #### Discussion
 
-For a constant data argument, this value must match the binary format of the data stored in the buffer for that argument. For other parameter types, such as textures or samplers, specify the appropriate constant. See [`MTLDataType`](mtldatatype.md) for possible values.
+For a constant data argument, this value needs to match the binary format of the data stored in the buffer for that argument. For other parameter types, such as textures or samplers, specify the appropriate constant. See [`MTLDataType`](mtldatatype.md) for possible values.
 
 ## See Also
 

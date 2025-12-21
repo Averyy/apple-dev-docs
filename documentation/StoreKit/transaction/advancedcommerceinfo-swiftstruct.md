@@ -50,8 +50,8 @@ struct AdvancedCommerceInfo
 
 ## See Also
 
-- [Transaction.OfferType](transaction/offertype-swift.struct.md)
-  The types of subscription offers for auto-renewable subscriptions.
+- [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](transaction/advancedcommerceinfo-swift.property.md)
+  Metadata for transactions that use the Advanced Commerce API.
 
 
 ---

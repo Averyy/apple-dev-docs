@@ -20,6 +20,11 @@ A description of the object.
 override var description: String { get }
 ```
 
+## See Also
+
+- [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
+  The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
+
 
 ---
 

@@ -13,10 +13,6 @@
 var isHidden: Bool { get set }
 ```
 
-## See Also
-
-- [var automaticallyAdjustsSize: Bool](nstitlebaraccessoryviewcontroller/automaticallyadjustssize.md)
-
 
 ---
 

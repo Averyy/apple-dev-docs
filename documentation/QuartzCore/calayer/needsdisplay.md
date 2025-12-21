@@ -21,7 +21,7 @@ func needsDisplay() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer needs to be updated.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layer needs to be updated.
 
 ## See Also
 

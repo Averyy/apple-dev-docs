@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An opaque data blob to resume a failed upload task.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

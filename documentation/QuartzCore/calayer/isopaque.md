@@ -21,7 +21,7 @@ var isOpaque: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If your app draws completely opaque content that fills the layer’s bounds, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) lets the system optimize the rendering behavior for the layer. Specifically, when the layer creates the backing store for your drawing commands, Core Animation omits the alpha channel of that backing store. Doing so can improve the performance of compositing operations. If you set the value of this property to [`true`](https://developer.apple.com/documentation/swift/true), you must fill the layer’s bounds with opaque content.
+The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). If your app draws completely opaque content that fills the layer’s bounds, setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) lets the system optimize the rendering behavior for the layer. Specifically, when the layer creates the backing store for your drawing commands, Core Animation omits the alpha channel of that backing store. Doing so can improve the performance of compositing operations. If you set the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true), you must fill the layer’s bounds with opaque content.
 
 Setting this property affects only the backing store managed by Core Animation. If you assign an image with an alpha channel to the layer’s [`contents`](calayer/contents.md) property, that image retains its alpha channel regardless of the value of this property.
 

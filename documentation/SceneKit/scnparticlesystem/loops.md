@@ -22,9 +22,9 @@ var loops: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](scnparticlesystem/emissionduration.md) value is `1.0` seconds and the [`idleDuration`](scnparticlesystem/idleduration.md) value is `1.0` seconds, the system alternates alternates between equal one-second periods of spawning and not spawning particles. Use the [`emissionDurationVariation`](scnparticlesystem/emissiondurationvariation.md) and [`idleDurationVariation`](scnparticlesystem/idledurationvariation.md) properties to randomize the duration of each emission and idle period, making the emission behavior more sporadic.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](scnparticlesystem/emissionduration.md) value is `1.0` seconds and the [`idleDuration`](scnparticlesystem/idleduration.md) value is `1.0` seconds, the system alternates alternates between equal one-second periods of spawning and not spawning particles. Use the [`emissionDurationVariation`](scnparticlesystem/emissiondurationvariation.md) and [`idleDurationVariation`](scnparticlesystem/idledurationvariation.md) properties to randomize the duration of each emission and idle period, making the emission behavior more sporadic.
 
-Specify [`false`](https://developer.apple.com/documentation/swift/false) for particle systems that create one-shot effects, such as an explosion that appears when a game character is defeated.
+Specify [`false`](https://developer.apple.com/documentation/Swift/false) for particle systems that create one-shot effects, such as an explosion that appears when a game character is defeated.
 
 ## See Also
 

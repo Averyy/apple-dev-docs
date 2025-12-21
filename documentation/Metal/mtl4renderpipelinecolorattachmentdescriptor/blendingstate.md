@@ -3,15 +3,15 @@
 **Framework**: Metal  
 **Kind**: property
 
-Enables blending.
+Configure the blend state for color attachments the pipeline state uses.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ var blendingState: MTL4BlendState { get set }
 
 #### Discussion
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property’s default value is `MTL4BlendStateDisabled`.
 
 
 ---

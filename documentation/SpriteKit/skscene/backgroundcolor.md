@@ -17,7 +17,6 @@ The background color of the scene.
 ## Declaration
 
 ```swift
-@MainActor
 var backgroundColor: UIColor { get set }
 ```
 

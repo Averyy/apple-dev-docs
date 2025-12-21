@@ -11,12 +11,7 @@ The options you may provide for requesting estimated arrival times.
 ## Declaration
 
 ```swift
-dictionary EtaRequestOptions {
-	mapkit.Coordinate origin;
-	mapkit.Coordinate[] destinations;
-	mapkit.Directions.Transport transportType;
-	Date departureDate;
-};
+interface EtaRequestOptions
 ```
 
 #### Overview
@@ -34,14 +29,17 @@ dictionary EtaRequestOptions {
   An array of coordinates that represent end points for estimated arrival time requests.
 - [transportType](etarequestoptions/transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
+### Instance Properties
+- [arrivalDate](etarequestoptions/arrivaldate.md)
+  The arrival date for the trip.
 
 ## See Also
 
-- [eta](mapkit.directions/eta.md)
+- [eta(request, callback)](directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
-- [EtaResponse](etaresponse.md)
+- [interface EtaResponse](etaresponse.md)
   The estimated arrival times for a set of destinations.
-- [EtaResult](etaresult.md)
+- [interface EtaResult](etaresult.md)
   The mode of transportation, distance, and travel time estimates for a single destination.
 
 

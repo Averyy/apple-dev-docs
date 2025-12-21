@@ -17,7 +17,7 @@ func lockFocusIfCanDraw(in context: NSGraphicsContext) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
@@ -28,7 +28,7 @@ func lockFocusIfCanDraw(in context: NSGraphicsContext) -> Bool
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func unlockFocus()](nsview/unlockfocus.md)
   Unlocks focus from the current view.
 - [func scroll(NSRect, by: NSSize)](nsview/scroll(_:by:).md)

@@ -25,7 +25,7 @@ func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the segue should be performed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be ignored.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the segue should be performed or [`false`](https://developer.apple.com/documentation/Swift/false) if it should be ignored.
 
 #### Discussion
 

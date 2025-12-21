@@ -19,11 +19,6 @@ Returns a new color structure.
 init()
 ```
 
-## See Also
-
-- [init(red: Double, green: Double, blue: Double, alpha: Double)](mtlclearcolor/init(red:green:blue:alpha:).md)
-  Returns a new color structure with the specified red, green, blue, and alpha values.
-
 
 ---
 

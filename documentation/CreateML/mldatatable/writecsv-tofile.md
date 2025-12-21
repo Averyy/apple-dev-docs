@@ -19,9 +19,9 @@ Exports a CSV file of the data table to the given directory path.
 func writeCSV(toFile path: String) throws
 ```
 
-#### Discussion
+## Parameters
 
-- path: A file system path where the data table file should be written.
+- `path`: A file system path where the data table file should be written.
 
 ## See Also
 

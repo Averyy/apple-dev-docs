@@ -14,6 +14,10 @@
 func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)
 ```
 
+## See Also
+
+- [func complete(error: any Error)](financialconnectionextensionauthorizationrequest/complete(error:).md)
+
 
 ---
 

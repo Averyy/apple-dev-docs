@@ -21,7 +21,7 @@ var isPitchEnabled: Bool { get set }
 
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the framework associates a valid camera with the map, the map view uses the camera’s pitch angle to tilt the plane of the map. When this property is [`false`](https://developer.apple.com/documentation/swift/false), the map ignores the camera’s pitch angle and the map displays as if the user is looking straight down onto it.
+When this property is [`true`](https://developer.apple.com/documentation/Swift/true) and the framework associates a valid camera with the map, the map view uses the camera’s pitch angle to tilt the plane of the map. When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the map ignores the camera’s pitch angle and the map displays as if the user is looking straight down onto it.
 
 In an app, be sure to check the value of this property to determine whether a map can support 3D.
 

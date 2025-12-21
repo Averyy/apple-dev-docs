@@ -21,7 +21,7 @@ A stack view initialized with the specified array of views.
 
 #### Discussion
 
-The returned stack view has horizontal layout direction and its [`translatesAutoresizingMaskIntoConstraints`](nsview/translatesautoresizingmaskintoconstraints.md) property is set to the Boolean value [`false`](https://developer.apple.com/documentation/swift/false). The views you provide in the `views` parameter are placed into the stack view’s leading gravity area.
+The returned stack view has horizontal layout direction and its [`translatesAutoresizingMaskIntoConstraints`](nsview/translatesautoresizingmaskintoconstraints.md) property is set to the Boolean value [`false`](https://developer.apple.com/documentation/Swift/false). The views you provide in the `views` parameter are placed into the stack view’s leading gravity area.
 
 ## Parameters
 

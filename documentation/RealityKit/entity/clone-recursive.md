@@ -10,7 +10,7 @@ Duplicates an entity to create a new entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -19,10 +19,6 @@ Duplicates an entity to create a new entity.
 @MainActor
 @preconcurrency func clone(recursive: Bool) -> Self
 ```
-
-## Mentions
-
-- [Manipulating Reality Composer scenes from code](manipulating-reality-composer-scenes-from-code.md)
 
 #### Return Value
 
@@ -40,10 +36,6 @@ All component data is cloned automatically. If you clone an entity that stores c
 
 - [init()](entity/init.md)
   Creates a new entity.
-- [convenience init<each T>(components: repeat each T)](entity/init(components:)-80z41.md)
-  Creates an entity with one or multiple components.
-- [convenience init(components: [any Component])](entity/init(components:)-41rn1.md)
-  Creates an entity with multiple components.
 - [func didClone(from: Entity)](entity/didclone(from:).md)
   Tells a newly cloned entity that cloning is complete.
 

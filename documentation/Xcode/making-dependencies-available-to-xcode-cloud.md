@@ -56,23 +56,20 @@ For more information about custom build scripts, see [`Writing custom build scri
 
 ##### Make Cocoapods Dependencies Available to Xcode Cloud
 
-CocoaPods is an open source dependency manager for Apple platforms. However, the temporary build environment that Xcode Cloud uses to perform a build doesn’t come with the tool pre-installed. If you use CocoaPods, first make sure you commit both your `Podfile` and the `Podfile.lock` file. Then, decide between one of the following options:
+CocoaPods is an open source dependency manager for Apple platforms. The temporary build environment that Xcode Cloud uses to perform a build comes with the tool pre-installed. If you use CocoaPods, first make sure you commit both your `Podfile` and the `Podfile.lock` file. Then, decide between one of the following options:
 
 - Add the `Pods` directory to your Git repository by committing it.
 - Exclude the `Pods` directory from source control by adding it to your `.gitignore` file.
 
-If you commit the `Pods` directory and its contents, you won’t need to install CocoaPods to enable Xcode Cloud to build your project or workspace. It’s worth noting, however, that your source code repository takes up more space when adding the `Pods` directory. Additionally, remember that committing binary dependencies can affect the performance of your Git repository. It’s a general issue when using Git and not specific to Xcode Cloud.
+If you commit the `Pods` directory and its contents, you won’t need to install dependencies managed by CocoaPods to enable Xcode Cloud to build your project or workspace. It’s worth noting, however, that your source code repository takes up more space when adding the `Pods` directory. Additionally, remember that committing binary dependencies can affect the performance of your Git repository. It’s a general issue when using Git and not specific to Xcode Cloud.
 
 > 💡 **Tip**: If you decide to commit the `Pods` directory, consider using [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com) . It’s pre-installed on the temporary build environment Xcode Cloud uses to build your project.
 
-If you choose to exclude the `Pods` directory from source control, you’ll need to install CocoaPods using a custom build script. The benefit, however, is that the source code repository takes up less disk space and doesn’t slow down your Git repository. To install CocoaPods using a custom build script:
+If you choose to exclude the `Pods` directory from source control, you’ll need to install dependencies managed by CocoaPods using a custom build script. The benefit, however, is that the source code repository takes up less disk space and doesn’t slow down your Git repository. To install CocoaPods dependencies using a custom build script:
 
 1. Create a post-clone script as described in [`Use a custom build script to install a third-party dependency or tool`](making-dependencies-available-to-xcode-cloud#Use-a-custom-build-script-to-install-a-third-party-dependency-or-tool.md).
-2. Add commands to the script that install CocoaPods with [`Homebrew`](https://developer.apple.comhttps://brew.sh) and that download your CocoaPods dependencies. The following code snippet shows a basic script to achieve this: ```bash
+2. Add the command to the script that installs CocoaPods dependencies. The following code snippet shows a basic script to achieve this: ```bash
 #!/bin/sh
-
-# Install CocoaPods using Homebrew.
-brew install cocoapods
 
 # Install dependencies you manage with CocoaPods.
 pod install

@@ -18,7 +18,7 @@ var scalesPageToFit: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the webpage is scaled to fit and the user can zoom in and zoom out. If [`false`](https://developer.apple.com/documentation/swift/false), user zooming is disabled. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the webpage is scaled to fit and the user can zoom in and zoom out. If [`false`](https://developer.apple.com/documentation/Swift/false), user zooming is disabled. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

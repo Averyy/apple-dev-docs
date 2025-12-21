@@ -6,8 +6,8 @@
 An error type that the identity document registration store and associated types throw.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -18,9 +18,6 @@ enum RegistrationError
 
 ## Topics
 
-### Operators
-- [static func == (IdentityDocumentProviderRegistrationStore.RegistrationError, IdentityDocumentProviderRegistrationStore.RegistrationError) -> Bool](identitydocumentproviderregistrationstore/registrationerror/==(_:_:).md)
-  Returns a Boolean value that indicates whether two values are equal.
 ### Enumeration Cases
 - [IdentityDocumentProviderRegistrationStore.RegistrationError.invalidRequest](identitydocumentproviderregistrationstore/registrationerror/invalidrequest.md)
   An error that indicates the request isn’t valid.
@@ -30,16 +27,6 @@ enum RegistrationError
   An error that indicates that the system cannot register the identity documents on the current platform.
 - [IdentityDocumentProviderRegistrationStore.RegistrationError.unknown](identitydocumentproviderregistrationstore/registrationerror/unknown.md)
   An error that indicates the framework encountered a problem which the system can’t interpret.
-### Instance Properties
-- [var hashValue: Int](identitydocumentproviderregistrationstore/registrationerror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](identitydocumentproviderregistrationstore/registrationerror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](identitydocumentproviderregistrationstore/registrationerror/equatable-implementations.md)
-- [Error Implementations](identitydocumentproviderregistrationstore/registrationerror/error-implementations.md)
-- [LocalizedError Implementations](identitydocumentproviderregistrationstore/registrationerror/localizederror-implementations.md)
 
 ## Relationships
 

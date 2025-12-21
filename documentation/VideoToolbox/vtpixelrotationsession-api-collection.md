@@ -10,7 +10,7 @@ To create a rotation session, call [`VTPixelRotationSessionCreate(_:_:)`](vtpixe
 
 To transfer pixels call [`VTPixelRotationSessionRotateImage(_:_:_:)`](vtpixelrotationsessionrotateimage(_:_:_:).md).
 
-When you’re done with the session, call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to tear it down and release your object reference.
+When you’re done with the session, call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to tear it down and release your object reference.
 
 ## Topics
 

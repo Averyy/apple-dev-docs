@@ -19,7 +19,7 @@ let count: Int
 
 ## See Also
 
-- [let id: String](storeandforwardbatch/id-swift.property.md)
+- [let id: String](storeandforwardbatch/id.md)
   The unique identifier for the batch.
 - [let intermediateCertificate: [String]](storeandforwardbatch/intermediatecertificate.md)
   An array that contains the intermediate certificates that the system uses to sign the leaf certificate.

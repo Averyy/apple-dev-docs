@@ -6,7 +6,7 @@
 Definition of different standardized translation behaviors for an object.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

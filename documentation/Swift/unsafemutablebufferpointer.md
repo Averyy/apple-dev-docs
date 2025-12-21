@@ -46,6 +46,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   A pointer to the first element of the buffer.
 - [let count: Int](unsafemutablebufferpointer/count.md)
   The number of elements in the buffer.
+- [var mutableSpan: MutableSpan<Element>](unsafemutablebufferpointer/mutablespan.md)
 - [var span: Span<Element>](unsafemutablebufferpointer/span.md)
 ### Instance Methods
 - [func assign(repeating: Element)](unsafemutablebufferpointer/assign(repeating:).md)
@@ -78,7 +79,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [func moveUpdate(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> UnsafeMutableBufferPointer<Element>.Index](unsafemutablebufferpointer/moveupdate(fromcontentsof:)-4bpe7.md)
   Updates this buffer’s initialized memory initialized memory by moving every element from the source buffer slice, leaving the source memory uninitialized.
 - [func moveUpdate(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> UnsafeMutableBufferPointer<Element>.Index](unsafemutablebufferpointer/moveupdate(fromcontentsof:)-522y2.md)
-  Updates this buffer’s initialized memory initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
+  Updates this buffer’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 - [func update<S>(from: S) -> (unwritten: S.Iterator, index: UnsafeMutableBufferPointer<Element>.Index)](unsafemutablebufferpointer/update(from:).md)
   Updates the buffer’s initialized memory with the given elements.
 - [func update(fromContentsOf: some Collection<Element>) -> UnsafeMutableBufferPointer<Element>.Index](unsafemutablebufferpointer/update(fromcontentsof:).md)

@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport: CFStri
 
 #### Discussion
 
-This is an optional property for video decoders to implement. This property value is an array containing doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd objects holding [`CMPixelFormatType`](https://developer.apple.com/documentation/CoreMedia/CMPixelFormatType) values.
+This is an optional property for video decoders to implement. This property value is an array containing [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) objects holding [`CMPixelFormatType`](https://developer.apple.com/documentation/CoreMedia/CMPixelFormatType) values.
 
 ## See Also
 
@@ -50,6 +50,7 @@ This is an optional property for video decoders to implement. This property valu
 - [let kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance: CFString](kvtdecompressionpropertykey_supportedpixelformatsorderedbyperformance.md)
   An array indicating speed tradeoffs between pixel formats (optional).
 - [let kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions: CFString](kvtdecompressionpropertykey_allowbitstreamtochangeframedimensions.md)
+  A Boolean value that indicates whether a decoder is allowed to output buffers matching reduced frame dimensions in the bitstream rather than under-filling them.
 
 
 ---

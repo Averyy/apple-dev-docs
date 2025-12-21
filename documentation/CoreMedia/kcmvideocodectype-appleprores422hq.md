@@ -24,6 +24,10 @@ var kCMVideoCodecType_AppleProRes422HQ: CMVideoCodecType { get }
 
 - [var kCMVideoCodecType_422YpCbCr8: CMVideoCodecType](kcmvideocodectype_422ypcbcr8.md)
   A type that identifies a component with the format of Y’CbCr 8-bit 4:2:2 ordered Cb Y’0 Cr Y’1.
+- [var kCMVideoCodecType_422YpCbCr8: CMVideoCodecType](kcmvideocodectype_422ypcbcr8.md)
+  A type that identifies a component with the format of Y’CbCr 8-bit 4:2:2 ordered Cb Y’0 Cr Y’1.
+- [var kCMVideoCodecType_Animation: CMVideoCodecType](kcmvideocodectype_animation.md)
+  A type that identifies the apple animation format.
 - [var kCMVideoCodecType_Animation: CMVideoCodecType](kcmvideocodectype_animation.md)
   A type that identifies the apple animation format.
 - [var kCMVideoCodecType_AppleProRes422: CMVideoCodecType](kcmvideocodectype_appleprores422.md)
@@ -40,18 +44,13 @@ var kCMVideoCodecType_AppleProRes422HQ: CMVideoCodecType { get }
   A type that identifies the Apple ProRes RAW format.
 - [var kCMVideoCodecType_AppleProResRAWHQ: CMVideoCodecType](kcmvideocodectype_appleproresrawhq.md)
   A type that identifies the Apple ProRes RAW HQ format.
+- [var kCMVideoCodecType_AV1: CMVideoCodecType](kcmvideocodectype_av1.md)
 - [var kCMVideoCodecType_Cinepak: CMVideoCodecType](kcmvideocodectype_cinepak.md)
   A type that identifies the cinepak format.
-- [var kCMVideoCodecType_DVCNTSC: CMVideoCodecType](kcmvideocodectype_dvcntsc.md)
-  A type that identifies the DV NTSC format.
-- [var kCMVideoCodecType_DVCPAL: CMVideoCodecType](kcmvideocodectype_dvcpal.md)
-  A type that identifies the DV PAL format.
-- [var kCMVideoCodecType_DVCPROHD1080i50: CMVideoCodecType](kcmvideocodectype_dvcprohd1080i50.md)
-  A type that identifies the Panasonic DVCPro-HD 1080i50 format.
-- [var kCMVideoCodecType_DVCPROHD1080i60: CMVideoCodecType](kcmvideocodectype_dvcprohd1080i60.md)
-  A type that identifies the Panasonic DVCPro-HD 1080i60 format.
-- [var kCMVideoCodecType_DVCPROHD1080p25: CMVideoCodecType](kcmvideocodectype_dvcprohd1080p25.md)
-  A type that identifies the Panasonic DVCPro-HD 1080p25 format.
+- [var kCMVideoCodecType_Cinepak: CMVideoCodecType](kcmvideocodectype_cinepak.md)
+  A type that identifies the cinepak format.
+- [var kCMVideoCodecType_DepthHEVC: CMVideoCodecType](kcmvideocodectype_depthhevc.md)
+  A type that identifies the depth HEVC format.
 
 
 ---

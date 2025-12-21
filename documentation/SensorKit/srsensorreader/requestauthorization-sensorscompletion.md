@@ -18,10 +18,6 @@ class func requestAuthorization(sensors: Set<SRSensor>) async throws
 
 #### Discussion
 
-> **Note**:  In Swift, you can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-class func requestAuthorization(sensors: Set<SRSensor>) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Call this function for sensors in which [`authorizationStatus`](srsensorreader/authorizationstatus.md) is [`SRAuthorizationStatus.notDetermined`](srauthorizationstatus/notdetermined.md) to display a prompt that requests user authorization. When the prompt dismisses, the framework calls the `completion` closure. Your delegate needs to wait for a call to [`sensorReader(_:didChange:)`](srsensorreaderdelegate/sensorreader(_:didchange:).md) to determine whether the user approves sensor access.
 
 If you pass a sensor into this function for which the user already answered the in-app prompt, the framework cancels the prompt with [`SRError.Code.promptDeclined`](srerror/code/promptdeclined.md). When the user has already answered the prompt for a particular sensor, its [`authorizationStatus`](srsensorreader/authorizationstatus.md) is [`SRAuthorizationStatus.authorized`](srauthorizationstatus/authorized.md) or [`SRAuthorizationStatus.denied`](srauthorizationstatus/denied.md). The user may change the authorization status for a sensor in Settings > Privacy > Research Sensor & Usage Data.

@@ -27,12 +27,8 @@ struct MultiArrayType
 ### Getting the array
 - [var mlMultiArray: MLMultiArray](mldatavalue/multiarraytype/mlmultiarray.md)
 ### Getting an element
-- [subscript(Int) -> Double](mldatavalue/multiarraytype/subscript(_:)-17rkk.md)
-- [subscript([Int]) -> Double](mldatavalue/multiarraytype/subscript(_:)-7lt8q.md)
+- [subscript(_:)](mldatavalue/multiarraytype/subscript(_:).md)
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mldatavalue/multiarraytype/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mldatavalue/multiarraytype/customstringconvertible-implementations.md)
-- [Equatable Implementations](mldatavalue/multiarraytype/equatable-implementations.md)
 - [MLDataValueConvertible Implementations](mldatavalue/multiarraytype/mldatavalueconvertible-implementations.md)
 
 ## Relationships

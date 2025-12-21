@@ -17,7 +17,7 @@ var isRestorable: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) if you want the window to be preserved or [`false`](https://developer.apple.com/documentation/swift/false) if you do not want it preserved. By default, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window’s [`styleMask`](nswindow/stylemask-swift.property.md) property includes the [`NSTitledWindowMask`](nstitledwindowmask.md) flag. For other windows, the value is [`false`](https://developer.apple.com/documentation/swift/false). Setting a value explicitly overrides the default values.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) if you want the window to be preserved or [`false`](https://developer.apple.com/documentation/Swift/false) if you do not want it preserved. By default, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window’s [`styleMask`](nswindow/stylemask-swift.property.md) property includes the [`NSTitledWindowMask`](nstitledwindowmask.md) flag. For other windows, the value is [`false`](https://developer.apple.com/documentation/Swift/false). Setting a value explicitly overrides the default values.
 
 Windows should be preserved between launch cycles to maintain interface continuity for the user. During subsequent launch cycles, the system tries to recreate the window and restore its configuration to the preserved state. Configuration data is updated as needed and saved automatically by the system.
 

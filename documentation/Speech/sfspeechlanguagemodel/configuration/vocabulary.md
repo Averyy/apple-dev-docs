@@ -22,6 +22,8 @@ var vocabulary: URL? { get }
 
 - [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
   The location of a compiled language model file.
+- [var weight: NSNumber?](sfspeechlanguagemodel/configuration/weight.md)
+  The relative weight of the language model customization. Value must be between 0.0 and 1.0 inclusive.
 
 
 ---

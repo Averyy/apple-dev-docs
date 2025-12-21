@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct DidWakeMessage
 
 ### Initializers
 - [init()](nsworkspace/didwakemessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.DidWakeMessage) -> Notification](nsworkspace/didwakemessage/makenotification(_:).md)
 
 ## Relationships
 

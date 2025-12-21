@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-An error that occurs if the system can’t create a new publisher or listener.
+An error that occurs if a new publisher or `Network/NetworkListener` can’t be created.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ This error occurs if a publisher is already active on the service.
 ## See Also
 
 - [case serviceAlreadySubscribing(WAError.ServiceAlreadySubscribingDetails)](waerror/servicealreadysubscribing(_:).md)
-  An error that occurs if the system can’t create a new subscriber or browser.
+  An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be created.
 - [WAError.ServiceAlreadySubscribingDetails](waerror/servicealreadysubscribingdetails.md)
   The optional details describing the service that’s subscribing.
 - [WAError.ServiceAlreadyPublishingDetails](waerror/servicealreadypublishingdetails.md)

@@ -21,7 +21,7 @@ var isAnchored: Bool { get set }
 
 #### Discussion
 
-An anchored item participates in collisions but is not affected by those collisions. Instead, the item behaves like a collision boundary. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+An anchored item participates in collisions but is not affected by those collisions. Instead, the item behaves like a collision boundary. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -22,7 +22,7 @@ func scanHexInt64(_ result: UnsafeMutablePointer<UInt64>?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver finds a valid hexadecimal long long representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Overflow is considered a valid hexadecimal long long representation.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver finds a valid hexadecimal long long representation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Overflow is considered a valid hexadecimal long long representation.
 
 #### Discussion
 

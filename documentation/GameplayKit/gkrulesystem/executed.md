@@ -21,7 +21,7 @@ var executed: [GKRule] { get }
 
 #### Discussion
 
-When you call the [`evaluate()`](gkrulesystem/evaluate().md) method, the system considers each rule in the [`agenda`](gkrulesystem/agenda.md) list in order. If a rule on the agenda is satisfied—that is, its predicate returns [`true`](https://developer.apple.com/documentation/swift/true) and it executes its action—the system moves that rule to the [`executed`](gkrulesystem/executed.md) list.
+When you call the [`evaluate()`](gkrulesystem/evaluate().md) method, the system considers each rule in the [`agenda`](gkrulesystem/agenda.md) list in order. If a rule on the agenda is satisfied—that is, its predicate returns [`true`](https://developer.apple.com/documentation/Swift/true) and it executes its action—the system moves that rule to the [`executed`](gkrulesystem/executed.md) list.
 
 ## See Also
 

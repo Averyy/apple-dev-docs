@@ -17,6 +17,10 @@
 var format: AVAudioFormat { get }
 ```
 
+#### Discussion
+
+The readonly property that returns the AVAudioFormat that this stream was initialized with.
+
 
 ---
 

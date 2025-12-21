@@ -21,7 +21,7 @@ var keepNetworkOutput: Bool { get set }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). When you set this to [`true`](https://developer.apple.com/documentation/swift/true), the system ignores [`outputPixelFormat`](vngenerateopticalflowrequest/outputpixelformat.md). Setting this for revision 1 has no effect because it’s not machine learning-based.
+The default is [`false`](https://developer.apple.com/documentation/Swift/false). When you set this to [`true`](https://developer.apple.com/documentation/Swift/true), the system ignores [`outputPixelFormat`](vngenerateopticalflowrequest/outputpixelformat.md). Setting this for revision 1 has no effect because it’s not machine learning-based.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func isTorchModeSupported(_ torchMode: AVCaptureDevice.TorchMode) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports the torch mode; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports the torch mode; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

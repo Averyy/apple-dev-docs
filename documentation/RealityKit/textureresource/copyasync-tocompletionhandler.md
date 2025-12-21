@@ -10,7 +10,7 @@ Asynchronously copies texture data to another texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -33,8 +33,6 @@ It’s recommended that you provide a value for [`semantic`](textureresource/cre
 
 ## See Also
 
-- [func copy(to: any MTLTexture) async throws](textureresource/copy(to:)-3lfen.md)
-  Asynchronously copies texture data to another texture.
 - [func copy(to: any MTLTexture) throws](textureresource/copy(to:)-jfbi.md)
   Copies texture data to another texture.
 

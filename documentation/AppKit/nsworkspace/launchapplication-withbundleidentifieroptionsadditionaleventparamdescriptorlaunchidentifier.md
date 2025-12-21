@@ -16,7 +16,7 @@ func launchApplication(withBundleIdentifier bundleIdentifier: String, options: N
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the app was found and launched; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the app was found and launched; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

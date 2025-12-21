@@ -22,7 +22,7 @@ class AVTimedMetadataGroup
 
 ## Mentions
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
 
 #### Overview
 
@@ -30,21 +30,20 @@ For example, `AVTimedMetadataGroups` are used to represent chapters, optionally 
 
 ## Topics
 
-### Creating a Timed Metadata Group
-- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
-  Creates a timed metadata group initialized with the given metadata items.
+### Creating a timed metadata group
 - [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
   Creates a timed metadata group with a sample buffer.
-### Accessing Group Attributes
+- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
+  Creates a timed metadata group initialized with the given metadata items.
+- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
+### Accessing group attributes
 - [var items: [AVMetadataItem]](avtimedmetadatagroup/items.md)
   An array of metadata items in the timed metadata group.
 - [var timeRange: CMTimeRange](avtimedmetadatagroup/timerange.md)
   The time range for the timed metadata.
-### Creating a Format Description
+### Creating a format description
 - [func copyFormatDescription() -> CMMetadataFormatDescription?](avtimedmetadatagroup/copyformatdescription.md)
   Creates a format description based on the receiver’s items.
-### Initializers
-- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
 
 ## Relationships
 
@@ -66,7 +65,7 @@ For example, `AVTimedMetadataGroups` are used to represent chapters, optionally 
 
 ## See Also
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVMetadataGroup](avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.

@@ -21,7 +21,7 @@ func getHue(_ hue: UnsafeMutablePointer<CGFloat>?, saturation: UnsafeMutablePoin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the color could be converted, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the color could be converted, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

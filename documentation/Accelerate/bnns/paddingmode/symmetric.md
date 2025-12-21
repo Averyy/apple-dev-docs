@@ -10,10 +10,9 @@ A constant that indicates that a padding operation fills the padded area to form
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 

@@ -27,7 +27,7 @@ When [`finishLoading()`](avassetresourceloadingrequest/finishloading().md) is in
 
 ## Topics
 
-### Configuring Content Information
+### Configuring content information
 - [var allowedContentTypes: [String]?](avassetresourceloadingcontentinformationrequest/allowedcontenttypes.md)
   The types of data that are accepted as a valid response for the requested resource.
 - [var contentType: String?](avassetresourceloadingcontentinformationrequest/contenttype.md)

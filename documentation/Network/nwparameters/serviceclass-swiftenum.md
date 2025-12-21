@@ -3,7 +3,7 @@
 **Framework**: Network  
 **Kind**: enum
 
-Indicates the traffic characteristics of the network connections used by Cellular Network Slicing.
+Indicates how the system prioritizes transmitted traffic by your latency and throughput needs.
 
 **Availability**:
 - iOS 12.0+
@@ -20,11 +20,17 @@ Indicates the traffic characteristics of the network connections used by Cellula
 enum ServiceClass
 ```
 
+#### Overview
+
+Use `ServiceClass` to tell the system and compatible networks how to handle your outgoing packets on Wi-Fi, Ethernet, or cellular. You describe whether your traffic favors low latency or high throughput. It prioritizes data packets transmitted on an underlying transport according to the throughput and latency characteristics of the use case. `ServiceClass` doesn’t necessarily affect the priority of packets received from a data transport, which may be set by the network. The default [`NWParameters.ServiceClass.bestEffort`](nwparameters/serviceclass-swift.enum/besteffort.md) category should be used when their isn’t a specific need or test results that indicates another service class would be helpful.
+
+For more information on using `ServiceClass` with Wi-Fi Aware, refer to [`WAAccessCategory`](https://developer.apple.com/documentation/WiFiAware/WAAccessCategory).
+
 ## Topics
 
 ### Service Classes
 - [NWParameters.ServiceClass.bestEffort](nwparameters/serviceclass-swift.enum/besteffort.md)
-  A service type to enable Cellular Network Slicing when not setting the other service types.
+  The default service type.
 - [NWParameters.ServiceClass.background](nwparameters/serviceclass-swift.enum/background.md)
   A service type for high-delay tolerant, high-loss tolerant, elastic flow, and variable size connections.
 - [NWParameters.ServiceClass.interactiveVideo](nwparameters/serviceclass-swift.enum/interactivevideo.md)
@@ -32,9 +38,9 @@ enum ServiceClass
 - [NWParameters.ServiceClass.interactiveVoice](nwparameters/serviceclass-swift.enum/interactivevoice.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
 - [NWParameters.ServiceClass.responsiveData](nwparameters/serviceclass-swift.enum/responsivedata.md)
-  A service type for medium-delay tolerant, elastic and inelastic flow, bursty, and long-lived connections.
+  A service type for medium-delay tolerant, inelastic flow, and bursty connections.
 - [NWParameters.ServiceClass.signaling](nwparameters/serviceclass-swift.enum/signaling.md)
-  A service for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
+  A service type for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
 
 ## Relationships
 
@@ -52,7 +58,7 @@ enum ServiceClass
 - [NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.enum.md)
   Modes in which a connection can support multipath protocols.
 - [var serviceClass: NWParameters.ServiceClass](nwparameters/serviceclass-swift.property.md)
-  A level of service quality for connections to use for Cellular Network Slicing.
+  The traffic characteristics network connections send and receive.
 - [var allowFastOpen: Bool](nwparameters/allowfastopen.md)
   A Boolean that enables sending application data with protocol handshakes.
 - [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.property.md)

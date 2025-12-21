@@ -29,17 +29,6 @@ enum PlacemarkDisplayStyle
   A display style that shows the location’s full address.
 - [IntentParameter.PlacemarkDisplayStyle.city](intentparameter/placemarkdisplaystyle/city.md)
   A display style that shows only the location’s city.
-### Operators
-- [static func == (IntentParameter<Value>.PlacemarkDisplayStyle, IntentParameter<Value>.PlacemarkDisplayStyle) -> Bool](intentparameter/placemarkdisplaystyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentparameter/placemarkdisplaystyle/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/placemarkdisplaystyle/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](intentparameter/placemarkdisplaystyle/equatable-implementations.md)
 
 ## Relationships
 

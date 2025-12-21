@@ -22,7 +22,7 @@ A new object of the appropriate class. The returned object is implicitly retaine
 
 If an entity name is set (see [`entityName`](nsobjectcontroller/entityname.md)), the object created is an instance of the class specified for that entity (and the object is inserted into the receiver’s managed object context). Otherwise the object created is an instance of the class returned by [`objectClass`](nsobjectcontroller/objectclass.md).
 
-This method is called when adding and inserting objects if [`automaticallyPreparesContent`](nsobjectcontroller/automaticallypreparescontent.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called when adding and inserting objects if [`automaticallyPreparesContent`](nsobjectcontroller/automaticallypreparescontent.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The default implementation assumes the class returned by [`objectClass`](nsobjectcontroller/objectclass.md) has a standard  `init` method without arguments. If the object class being controlled is `NSManagedObject` (or a subclass thereof) its designated initializer ([`init(entity:insertInto:)`](https://developer.apple.com/documentation/CoreData/NSManagedObject/init(entity:insertInto:))) is called instead, using the entity and managed object context specified for the receiver.
 

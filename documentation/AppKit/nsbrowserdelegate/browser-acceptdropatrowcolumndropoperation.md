@@ -17,7 +17,7 @@ optional func browser(_ browser: NSBrowser, acceptDrop info: any NSDraggingInfo,
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to accept the drop; [`false`](https://developer.apple.com/documentation/swift/false) to decline it.
+[`true`](https://developer.apple.com/documentation/Swift/true) to accept the drop; [`false`](https://developer.apple.com/documentation/Swift/false) to decline it.
 
 #### Discussion
 

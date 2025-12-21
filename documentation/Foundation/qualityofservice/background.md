@@ -28,10 +28,6 @@ Used for work that is not user initiated or visible. In general, a user is unawa
 - [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
 - [QualityOfService.utility](qualityofservice/utility.md)
 - [QualityOfService.default](qualityofservice/default.md)
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.default](qualityofservice/default.md)
 
 
 ---

@@ -24,6 +24,11 @@ final func receive(completion: Subscribers.Completion<Never>)
 
 - `completion`: A   case indicating whether publishing completed normally or with an error.
 
+## See Also
+
+- [func receive(subscription: any Subscription)](subscribers/assign/receive(subscription:).md)
+  Tells the subscriber that it has successfully subscribed to the publisher and may request items.
+
 
 ---
 

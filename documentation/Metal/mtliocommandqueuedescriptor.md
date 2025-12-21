@@ -35,7 +35,7 @@ Create each input/output queue to meet your apps needs by setting the descriptor
 
 ## Topics
 
-### Configuring the Input/Output Command Queue
+### Configuring the input/output command queue
 - [var priority: MTLIOPriority](mtliocommandqueuedescriptor/priority.md)
   Configures the priority for a new input/output command queue.
 - [var type: MTLIOCommandQueueType](mtliocommandqueuedescriptor/type.md)
@@ -44,7 +44,7 @@ Create each input/output queue to meet your apps needs by setting the descriptor
   Sets the largest number of individual commands that an input/output command queue can run at a time.
 - [var maxCommandBufferCount: Int](mtliocommandqueuedescriptor/maxcommandbuffercount.md)
   Sets the largest number of outstanding input/output command buffers a queue can have at any point in time.
-### Providing your own  a Scratch Buffer
+### Providing your own a scratch buffer
 - [var scratchBufferAllocator: (any MTLIOScratchBufferAllocator)?](mtliocommandqueuedescriptor/scratchbufferallocator.md)
   An optional memory allocator that you implement to manage the scratch memory that an input/output command queue requests.
 

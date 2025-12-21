@@ -5,8 +5,8 @@
 Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -14,85 +14,281 @@ This sample code project uses RealityKit for visionOS to create a video game tha
 
 ![A screenshot of a towering butte presented in a volume within a mixed reality space running inside the visionOS simulator.](https://docs-assets.developer.apple.com/published/5c5cbc2b0a27d9ff68fcc88012c36f5b/petite-asteroids-overview%403x.png)
 
-The sample shows you how to use native APIs to leverage the full power of Apple Vision Pro in a real-world scenario. Its code and assets provide examples and inspiration so that you can create your own spectacular apps and games for Apple Vision Pro.
+The sample shows you how to use native APIs to leverage the full power of Apple Vision Pro in a real-world scenario. Its code and assets provide examples and inspiration so that you can create your own spectacular apps and games for Apple Vision Pro. The game supports two input modes for jumping: single input look-based jumping, and dual input pinch-based jumping.
 
-#### Climb the Butte with Gestures
+#### Climb the Butte with Single Input Gestures
 
-After our hero crash-lands on Earth, you begin controlling her movement using hand input. By pinching and dragging with your hand, you can guide the character toward her destination. And by looking and tapping at a target destination, the character leaps into the air, allowing her to begin the treacherous journey up the rocky landmark.
+After our hero crash-lands on Earth, you begin controlling her movement using spatial gestures. By pinching and dragging, you can guide the character toward her destination.
 
-Use a [`SpatialTapGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialTapGesture) to handle jumping.
+When the single input mode is active, the player looks and taps a target destination and the character leaps into the air toward it, allowing her to begin the treacherous journey up the rocky landmark.
+
+A [`SpatialTapGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialTapGesture) handles look-based jumping.
 
 ```swift
-.gesture(SpatialTapGesture()
-    // Target this gesture to only entities with the custom component.
-    .targetedToEntity(where: .has(LevelInputTargetComponent.self))
-    // Have the character jump when the gesture ends.
-    .onEnded() { event in
-        // Guard for the character's container entity.
-        guard let containerEntity = appModel.character.parent else { return }
-        
-        // Convert the tap position to scene space.
-        var targetPosition = event.convert(event.location3D, from: .local, to: .scene)
-        
-        // Next, convert the scene space position to one in the character's container entity space.
-        targetPosition = containerEntity.convert(position: targetPosition, from: nil)
-
-        // Pass the jump target position to a custom component for this game.
-        appModel.character.components[CharacterMovementComponent.self]?.targetJumpPosition = targetPosition
-        
-        // Reset the jump buffer timer, which helps the game feel more responsive when players try to jump a few frames before hitting the
-        // ground.
-        appModel.character.components[CharacterMovementComponent.self]?.jumpBufferTimer = GameSettings.jumpBufferTime
+struct SingleInputJumpGesture: Gesture {
+    @Environment(AppModel.self) private var appModel
     
-    // Enable the gesture only when the player is actively playing the game.
-    }, isEnabled: appModel.root.observable.components[GamePlayStateComponent.self]?.isPlayingGame == true)
+    var body: some Gesture {
+        SpatialTapGesture()
+            // Only target this gesture to entities with the custom component.
+            .targetedToEntity(where: .has(LevelInputTargetComponent.self))
+             // The character jumps when the gesture ends.
+            .onEnded() { event in
+                // Guard for the character's container entity.
+                guard let containerEntity = appModel.character.parent else { return }
+                
+                // Convert the tap position to scene space.
+                var targetPosition = event.convert(event.location3D, from: .local, to: .scene)
+                
+                // Next, convert the scene-space position to one in the character's container entity space.
+                targetPosition = containerEntity.convert(position: targetPosition, from: nil)
+
+                // Pass the jump target position to a custom component for this game.
+                appModel.character.components[CharacterMovementComponent.self]?.targetJumpPosition = targetPosition
+                
+                // Reset the jump buffer timer, which helps the game feel more responsive when players try to jump a few frames before hitting the
+                // ground.
+                appModel.character.components[CharacterMovementComponent.self]?.jumpBufferTimer = GameSettings.jumpBufferTime
+            }
+    }
+}
 ```
 
-A separate [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) handles character movement, and an `@State` field on the reality view tracks the drag start position. After converting the drag start position and current position into the scene’s coordinate space, calculate the input direction and pass it to the character movement component.
+A separate [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) handles rolling the character on the ground.
 
 ```swift
-// Get the drag position in scene space.
-let dragPosition = event.convert(event.location3D, from: .local, to: .scene)
-        
-// Start the drag if the player isn't already dragging.
-if !isDragging {
-    dragStartPosition = dragPosition
-    isDragging = true
+struct SingleInputDragGesture: Gesture {
+    @Environment(AppModel.self) private var appModel
+    
+    var isDragActive: GestureState<Bool>
+    @State private var dragStartPosition: SIMD3<Float> = .zero
+    @State private var isDragging = false
+    
+    var body: some Gesture {
+        DragGesture(minimumDistance: CGFloat(GameSettings.dragMinimumDistance), coordinateSpace: .local)
+            .targetedToAnyEntity()
+            .updating(isDragActive) { value, state, transaction in
+                state = true
+            }
+            .onChanged() { event in
+                // Guard for the nearest physics simulation entity.
+                guard let physicsRoot = PhysicsSimulationComponent.nearestSimulationEntity(for: appModel.character) else { return }
+                
+                // Get the drag position in scene space.
+                let dragPosition = event.convert(event.location3D, from: .local, to: .scene)
+                        
+                // Start the drag if the player isn't already dragging.
+                if !isDragging {
+                    dragStartPosition = dragPosition
+                    isDragging = true
+                }
+
+                // Update the scene-space, drag-start position.
+                dragStartPosition = updateDragStartPosition(
+                    dragStartPosition: dragStartPosition,
+                    dragPosition: dragPosition,
+                    physicsRoot: physicsRoot,
+                    useRelativeDragInput: appModel.rollInputMode == .relative
+                )
+                
+                let sceneDragDelta = dragPosition - dragStartPosition
+                // Normalize the scene-space drag translation and pass it to the character movement component.
+                let normalizedSceneDragDelta = sceneDragDelta == .zero ? .zero : simd_normalize(sceneDragDelta)
+                let inputDirection = normalizedSceneDragDelta * (min(length(sceneDragDelta), GameSettings.dragRadius) / GameSettings.dragRadius)
+                appModel.character.components[CharacterMovementComponent.self]?.inputMoveDirection = inputDirection
+                appModel.character.components[CharacterMovementComponent.self]?.dragDelta = sceneDragDelta
+            }
+            .onEnded() { event in
+                isDragging = false
+            }
+    }
 }
-        
-// ...
-     
-// Normalize the scene space drag translation and pass it to the character movement component.
-let normalizedSceneDragDelta = sceneDragDelta == .zero ? .zero : simd_normalize(sceneDragDelta)
-let inputDirection = normalizedSceneDragDelta * (min(dragDistance, dragRadius) / dragRadius)
-appModel.character.components[CharacterMovementComponent.self]?.inputMoveDirection = inputDirection
 ```
 
-> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see  [`Interacting with your app in the visionOS simulator`](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator).
-
-To improve the player’s experience using a drag gesture to move the character, update the drag start position to follow behind the current drag position if the player drags beyond a specific radius.
+The `updateDragStartPosition` method updates the drag start position so that it remains coplanar with the current drag position. When the `useRelativeDragInput` parameter is true, the method also updates the drag start position to follow behind the current drag position when the player drags beyond a specific radius, which improves the input experience for some players.
 
 ```swift
-// Convert the drag start and current position to the local space of the physics root.
-let dragPositionInPhysicsSpace = physicsRoot.convert(position: dragPosition, from: nil)
-var dragStartPositionInPhysicsSpace = physicsRoot.convert(position: dragStartPosition, from: nil)
-// Project the drag start position to an XZ plane that's parallel to the current drag position.
-dragStartPositionInPhysicsSpace.y = dragPositionInPhysicsSpace.y
-// Get the drag translation in the XZ plane of the local space of the physics root.
-let dragDelta = (dragPositionInPhysicsSpace - dragStartPositionInPhysicsSpace)
+func updateDragStartPosition(dragStartPosition: SIMD3<Float>,
+                             dragPosition: SIMD3<Float>,
+                             physicsRoot: Entity,
+                             useRelativeDragInput: Bool) -> SIMD3<Float> {
+    // Convert the drag start and current position to the local space of the physics root.
+    let dragPositionInPhysicsSpace = physicsRoot.convert(position: dragPosition, from: nil)
+    var dragStartPositionInPhysicsSpace = physicsRoot.convert(position: dragStartPosition, from: nil)
+    // Project the drag start position to an XZ-plane that's parallel to the current drag position.
+    dragStartPositionInPhysicsSpace.y = dragPositionInPhysicsSpace.y
+    // Get the drag translation in the XZ-plane of the local space of the physics root.
+    let dragDelta = (dragPositionInPhysicsSpace - dragStartPositionInPhysicsSpace)
 
-let dragDistance = length(dragDelta)
-let dragRadius = GameSettings.dragRadius / GameSettings.scale
-// You might prefer to set this flag to false. This sample uses relative hand input by default.
-if GameSettings.useRelativeDragInput && dragDistance > dragRadius {
-    // Move the drag start position so it follows behind the current drag position, so the player doesn't have to move their
-    // hand all the way back to change direction.
-    let normalizedDragDelta = dragDelta / dragDistance
-    dragStartPositionInPhysicsSpace = dragPositionInPhysicsSpace - normalizedDragDelta * dragRadius
+    // When `useRelativeDragInput` is true, the drag start point will follow behind the current drag position.
+    let dragDistance = length(dragDelta)
+    let dragRadius = GameSettings.dragRadius / GameSettings.scale
+    if useRelativeDragInput && dragDistance > dragRadius {
+        // Move the drag start position so that it follows behind the current drag position so the player doesn't have to move their
+        // input device all the way back to change direction.
+        let normalizedDragDelta = dragDelta / dragDistance
+        dragStartPositionInPhysicsSpace = dragPositionInPhysicsSpace - normalizedDragDelta * dragRadius
+    }
+
+    // Update the scene-space, drag-start position.
+    return physicsRoot.convert(position: dragStartPositionInPhysicsSpace, to: nil)
 }
+```
 
-// Update the scene-space drag-start position.
-dragStartPosition = physicsRoot.convert(position: dragStartPositionInPhysicsSpace, to: nil)
+> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Interacting with your app in the visionOS simulator`](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator#Interact-with-your-app).
+
+#### Climb the Butte with Dual Input Gestures
+
+In the dual input mode, a custom [`SpatialEventGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialEventGesture) allows the player to move the character and jump at the same time by tracking the state of two spatial events simultaneously.
+
+```swift
+struct DualInputGesture: Gesture {
+    enum SpatialEventClassification {
+        case pinch
+        case drag
+        case unresolved
+    }
+
+    struct SpatialEventState {
+        var classification: SpatialEventClassification = .unresolved
+        var chirality: Chirality
+        var startPosition: SIMD3<Float>
+        var translation: SIMD3<Float> = .zero
+        var startTime: TimeInterval
+        var duration: TimeInterval = 0
+    }
+
+    @Environment(AppModel.self) private var appModel
+
+    var isDragActive: GestureState<Bool>
+    @State var activeSpatialEvents: [SpatialEventCollection.Event.ID: SpatialEventState] = [:]
+
+    private func handleSpatialEventEnded(spatialEvent: SpatialEventState?) {
+        if spatialEvent?.classification == .unresolved {
+            appModel.character.components[CharacterMovementComponent.self]?.jumpBufferTimer = GameSettings.jumpBufferTime
+        }
+    }
+
+    // ...
+
+    var body: some Gesture {
+        SpatialEventGesture()
+            .targetedToAnyEntity()
+            .updating(isDragActive) { value, state, transaction in
+                state = activeSpatialEvents.values.contains(where: { $0.classification == .drag })
+            }
+            .onChanged() { event in
+                // Update the active spatial events.
+                updateActiveSpatialEvents(event: event)
+                
+                // Classify unresolved spatial events.
+                classifyUnresolvedSpatialEvents()
+                
+                // Respond to the active spatial events.
+                respondToActiveSpatialEvents()
+            }.onEnded() { event in
+                // Handle and remove any events that ended.
+                for value in event.gestureValue {
+                    if value.phase == .ended {
+                        handleSpatialEventEnded(spatialEvent: activeSpatialEvents[value.id])
+                    }
+                    activeSpatialEvents[value.id] = nil
+                }
+            }
+    }
+}
+```
+
+The `updateActiveSpatialEvents` method updates the `SpatialEventState` of all active spatial events by tracking their chirality, position, translation, and duration.
+
+```swift
+private func updateActiveSpatialEvents(event: EntityTargetValue<SpatialEventGesture.Value>) {
+    // Guard for the nearest physics simulation entity.
+    guard let physicsRoot = PhysicsSimulationComponent.nearestSimulationEntity(for: appModel.character) else { return }
+
+    for value in event.gestureValue {
+        // Skip spatial events without chirality.
+        guard let chirality = value.chirality else {
+            continue
+        }
+        
+        // Get the event position in scene space.
+        let spatialEventPosition = event.convert(value.location3D, from: .local, to: .scene)
+        
+        // Handle and remove the event if it ended.
+        if value.phase == .ended {
+            handleSpatialEventEnded(spatialEvent: activeSpatialEvents[value.id])
+            activeSpatialEvents[value.id] = nil
+        // Update the event state if it's already active.
+        } else if var activeSpatialEvent = activeSpatialEvents[value.id] {
+            // Update the scene-space, event-start position.
+            activeSpatialEvent.startPosition = updateDragStartPosition(
+                dragStartPosition: activeSpatialEvent.startPosition,
+                dragPosition: spatialEventPosition,
+                physicsRoot: physicsRoot,
+                useRelativeDragInput: appModel.rollInputMode == .relative
+            )
+            // Update the scene-space event translation.
+            activeSpatialEvent.translation = spatialEventPosition - activeSpatialEvent.startPosition
+            activeSpatialEvent.duration = value.timestamp - activeSpatialEvent.startTime
+            activeSpatialEvents[value.id] = activeSpatialEvent
+        // Otherwise, create a new state structure to track this event.
+        } else {
+            // Add the event to the dictionary of active spatial events.
+            let spatialEventState = SpatialEventState(chirality: chirality,
+                                                      startPosition: spatialEventPosition,
+                                                      startTime: value.timestamp)
+            activeSpatialEvents[value.id] = spatialEventState
+        }
+    }
+}
+```
+
+The `classifyUnresolvedSpatialEvents` method classifies any `.unresolved` spatial events as either a `.pinch` or a `.drag`.
+
+```swift
+private func classifyUnresolvedSpatialEvents() {
+    for (spatialEventId, spatialEvent) in activeSpatialEvents where spatialEvent.classification == .unresolved {
+        // Classify the event as a pinch if there's already an active drag event.
+        if activeSpatialEvents.values.contains(where: { $0.classification == .drag }) {
+            activeSpatialEvents[spatialEventId]?.classification = .pinch
+        // Classify the event as a drag if there's already an active pinch event
+        // or the length of event's translation is larger than the drag minimum distance.
+        } else if activeSpatialEvents.values.contains(where: { $0.classification == .pinch }) ||
+                    length_squared(spatialEvent.translation) > GameSettings.dragMinimumDistance {
+            activeSpatialEvents[spatialEventId]?.classification = .drag
+        }
+    }
+}
+```
+
+Finally, the `respondToActiveSpatialEvents` uses the classification of each active spatial event along with their state data to move the character and make the character jump.
+
+```swift
+private func respondToActiveSpatialEvents() {
+    for spatialEvent in activeSpatialEvents.values {
+        switch spatialEvent.classification {
+            case .drag:
+                // Move the character in the direction of the spatial event translation.
+                var inputDirection = spatialEvent.translation / GameSettings.dragRadius
+                let inputDirectionMagnitude = length(inputDirection)
+                if inputDirectionMagnitude > 1 {
+                    inputDirection /= inputDirectionMagnitude
+                }
+                appModel.character
+                    .components[CharacterMovementComponent.self]?.inputMoveDirection = inputDirection
+                appModel.character
+                    .components[CharacterMovementComponent.self]?.dragDelta = spatialEvent.translation
+            case .pinch:
+                // Make the character jump if the player pinched this frame.
+                if spatialEvent.duration == 0 {
+                    appModel.character.components[CharacterMovementComponent.self]?.jumpBufferTimer = GameSettings.jumpBufferTime
+                }
+            default:
+                break
+        }
+    }
+}
 ```
 
 #### Rotate the World in a Mixed Space
@@ -172,7 +368,7 @@ rotationComponent.angle
 
 #### Prepare Assets for Gameplay
 
-Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see [`Designing RealityKit content with Reality Composer Pro`](designing-realitykit-content-with-reality-composer-pro.md).
+Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see [`Adding assets to your Reality Composer Pro scene`](https://developer.apple.com/documentation/RealityComposerPro/Adding-assets-into-your-Reality-Composer-Pro-scene).
 
 To generate the collision component that uses the shape of the butte, you first use a DCC to generate a model that matches the shape of the butte and platforms, but that contains fewer vertices. In Reality Composer Pro, you apply a custom component to the model entity. The custom system looks for that component by subscribing to the [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/RealityKit/ComponentEvents/DidAdd) event for a custom type in the initializer for a custom system.
 
@@ -247,12 +443,14 @@ for (entity, mesh) in meshes {
 }
 ```
 
-Finally, the sample initializes the collision component with the array of shapes and then adds it to the collision root.
+Finally, the sample initializes the collision component with the array of shapes and then adds it to the collision root:
 
 ```swift
 let collision = CollisionComponent(shapes: shapes, mode: collisionMode)
 collisionRoot.components.set(collision)
 ```
+
+The sample also loads and configures audio assets in code. In this sample, a custom system accumulates collision sounds into a Swift list, and then passes the sounds into the initializer, [`init(_:)`](https://developer.apple.com/documentation/RealityKit/AudioFileGroupResource/init(_:)), for an `AudioFileGroupResource`. On startup, the app loads audio files into the scene using the `AudioResourcesComponent`. This componentʼs load function then caches the `AudioResource` using an `AudioLibraryComponent` for retrieval by name later in the app code. The app also adds other sounds, such as music and environmental ambiences, into the `AudioResourcesComponent`, in addition to the collision sounds, for later use.
 
 #### Structure Your Project for Development
 
@@ -284,120 +482,183 @@ Adopting a variety of techniques, including making custom materials with [`Shade
 
 Unlit materials are very performant because they don’t require lighting calculations from the GPU to determine their color. The materials for the butte use textures you create in an external DCC, allowing you to calculate shadows from the sun ahead of time, and preventing real-time lights from casting shadows onto the butte.
 
-To achieve effective grounding shadows beneath the character, perform a raycast downward from her position and check for collisions with geometry. `calculateParametersForShadow` implements the check and returns shader parameters in a tuple.
+To achieve effective grounding shadows beneath the character, perform a ray cast downward from her position and check for collisions with geometry. `calculateParametersForShadow` implements the check and returns shader parameters in a tuple.
 
 ```swift
-func calculateParametersForShadow(_ entity: Entity, _ physicsRoot: Entity) -> (characterPosition: SIMD3<Float>, shadowPosition: SIMD3<Float>)? {
+func calculateParametersForShadow(_ entity: Entity, _ physicsRoot: Entity)
+    -> (characterPosition: SIMD3<Float>, shadowYPosition: Float)? {
     // Get the origin relative to the physics root entity.
     let origin = entity.position(relativeTo: physicsRoot)
     
-    // Peform a raycast against the scene downward from the origin.
+    // Perform a ray cast against the scene downward from the origin.
     return if let hit = entity.scene?.raycast(
         origin: origin,
         direction: [0, -1, 0],
         query: .nearest,
-        // Use a mask to make sure you're only performing a raycast against entities in the shadow receiver group.
+        // Use a mask to make sure you're only performing a ray cast against entities in the shadow receiver group.
         mask: GameCollisionGroup.shadowReceiver.collisionGroup,
         relativeTo: physicsRoot
     ).first {
-        // Return a tuple when the raycast is successful.
-        (origin, hit.position)
+        // Return a tuple when the ray cast is successful.
+        (origin, hit.position.y)
     } else {
         nil
     }
 }
 ```
 
-On each frame, the CPU calculates the shader parameters and passes them to the GPU. This happens in the update function of a custom system.
+On each frame, the CPU calculates the shader parameters and passes them to a GPU compute shader which writes them into a texture. This happens in the update function of a custom system.
 
 ```swift
 func update(context: SceneUpdateContext) {
-    // Guard for the physics root and the character entity.
-    guard let physicsRoot = context.first(withComponent: PhysicsSimulationComponent.self)?.entity,
-            let character = context.first(withComponent: CharacterMovementComponent.self)?.entity else { return }
-    
-    // Get the matrix that transforms from world space to level space.
-    let worldToLevelMatrix = physicsRoot.transformMatrix(relativeTo: nil).inverse
-    
-    // Raycast downward to determine where the character's shadow lands.
-    if let (characterPosition, characterShadowPosition) = calculateParametersForShadow(character, physicsRoot) {
+        // Guard for the physics root and the character entity.
+        guard let physicsRoot = context.first(withComponent: PhysicsSimulationComponent.self)?.entity,
+                let character = context.first(withComponent: CharacterMovementComponent.self)?.entity else { return }
         
-        // Raycast downward for each rock friend to determine where their shadows land.
-        var rockFriendPositions = [(position: SIMD3<Float>, shadowPosition: SIMD3<Float>)]()
-        for rockFriend in context.entities(matching: rockFriendQuery, updatingSystemWhen: .rendering) {
-            if let (friendPosition, friendShadowPosition) = calculateParametersForShadow(rockFriend, physicsRoot) {
-                rockFriendPositions.append((friendPosition, friendShadowPosition))
+        // Get the matrix that transforms from world space to level space.
+        let worldToLevelMatrix = physicsRoot.transformMatrix(relativeTo: nil).inverse
+        
+        // Ray cast downward to determine where the character's shadow lands.
+        if let (characterPosition, characterShadowYPosition) = calculateParametersForShadow(character, physicsRoot) {
+            
+            // Ray cast downward for each rock friend to determine where their shadows land.
+            var rockFriendPositions = [(position: SIMD3<Float>, shadowYPosition: Float)]()
+            for rockFriend in context.entities(matching: rockFriendQuery, updatingSystemWhen: .rendering) {
+                if let (friendPosition, friendShadowYPosition) = calculateParametersForShadow(rockFriend, physicsRoot) {
+                    rockFriendPositions.append((friendPosition, friendShadowYPosition))
+                }
+            }
+            
+            // Dispatch a compute shader to write the shadow positions to the low-level texture.
+            // ...
+            
+            // Send the shadow parameters to the shader.
+            for dropShadowReceiver in context.entities(matching: dropShadowReceiverQuery, updatingSystemWhen: .rendering) {
+                setShadowShaderParameters(entity: dropShadowReceiver, worldToLevelMatrix: worldToLevelMatrix)
             }
         }
-        
-        // Set the shader parameters in a custom function.
-        for dropShadowReceiver in context.entities(matching: dropShadowReceiverQuery, updatingSystemWhen: .rendering) {
-            setShadowShaderParameters(
-                entity: dropShadowReceiver,
-                characterPosition: characterPosition,
-                characterShadowPosition: characterShadowPosition,
-                worldToLevelMatrix: worldToLevelMatrix,
-                rockFriendPositions: rockFriendPositions)
-        }
     }
-}
 ```
+
+See the `DropShadowComputeShader.metal` file in the sample project for the full compute shader implementation.
 
 Inside `setShadowShaderParameters`, the sample sets the properties on the custom material by getting a reference to the `ShaderGraphMaterial` on the entity’s [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent). The sample then applies the modified shader graph material back to the shadow receiver entity directly.
 
 ```swift
-func setShadowShaderParameters (
-    entity: Entity,
-    characterPosition: SIMD3<Float>,
-    characterShadowPosition: SIMD3<Float>,
-    worldToLevelMatrix: simd_float4x4,
-    rockFriendPositions: [(SIMD3<Float>, SIMD3<Float>)]
-) {
-    // Guard for the entity's model component and a custom shadow receiver component.
-    guard let modelComponent = entity.components[ModelComponent.self],
-            let shadowReceiver = entity.components[DropShadowReceiverModelComponent.self] else { return }
-    
-    // Iterate through each shadow material on this model and apply the shadow shader parameters.
-    for index in shadowReceiver.shadowMaterialIndices {
-        guard var shaderGraphMaterial = modelComponent.materials[index] as? ShaderGraphMaterial else { continue }
+func setShadowShaderParameters (entity: Entity, worldToLevelMatrix: simd_float4x4) {
+    if let dropShadowReceiverModelComponent = entity.components[DropShadowReceiverModelComponent.self] {
+        // Iterate through each shadow material on this model and apply the shadow shader parameters.
+        for materialIndex in dropShadowReceiverModelComponent.shadowMaterialIndices {
+            guard var shaderGraphMaterial = entity.components[ModelComponent.self]?.materials[materialIndex] as? ShaderGraphMaterial else {
+                continue
+            }
 
-        try? shaderGraphMaterial.setParameter(
-            handle: shadowReceiver.worldToLevelMatrixParameterHandle,
-            value: .float4x4(worldToLevelMatrix))
-        try? shaderGraphMaterial.setParameter(
-            handle: shadowReceiver.characterPositionParameterHandle,
-            value: .simd3Float(characterPosition))
-        try? shaderGraphMaterial.setParameter(
-            handle: shadowReceiver.characterShadowPositionParameterHandle,
-            value: .simd3Float(characterShadowPosition))
+            try? shaderGraphMaterial.setParameter(handle: dropShadowReceiverModelComponent.worldToLevelMatrixParameterHandle,
+                                                  value: .float4x4(worldToLevelMatrix))
 
-        for friendIndex in 0..<rockFriendPositions.count {
-            let rockFriendPosition = rockFriendPositions[friendIndex].0
-            let rockFriendShadowPosition = rockFriendPositions[friendIndex].1
-            try? shaderGraphMaterial.setParameter(
-                handle: shadowReceiver.rockFriendPositionParameterHandles[friendIndex],
-                value: .simd3Float(rockFriendPosition))
-            try? shaderGraphMaterial.setParameter(
-                handle: shadowReceiver.rockFriendShadowPositionParameterHandles[friendIndex],
-                value: .simd3Float(rockFriendShadowPosition))
+            entity.components[ModelComponent.self]?.materials[materialIndex] = shaderGraphMaterial
         }
-        
-        try? shaderGraphMaterial.setParameter(
-            handle: shadowReceiver.rockFriendShadowRadiusHandle,
-            value: .float(0.45))
-        
-        // Set the material directly onto the entity with the model component.
-        entity.components[ModelComponent.self]?.materials[index] = shaderGraphMaterial
     }
 }
 ```
 
 > ❗ **Important**: Updating parameters on an entity’s material can be computationally expensive. Avoid sharing shader graph material handles between entity instances, or setting the model component back on the entity unnecessarily.
 
+#### Understand How Collision Audio Works
+
+In Petite Asteroids, the audio system has multiple types of collision sounds. These sounds play depending on the [`CollisionEvents`](https://developer.apple.com/documentation/RealityKit/CollisionEvents) of their respective component. These events govern when and how to play the audio accordingly. The information that the system receives from the physics and collision events determines the loudness of the audio playback.
+
+The physics event calculates the velocity of the character or whether the character stops jumping, which changes the nature of the audio playback. The collision event provides information on the [`impulse`](https://developer.apple.com/documentation/RealityKit/CollisionEvents/Began/impulse), which is directly proportional to the loudness of the audio playback. When the character jumps or falls off the butte, she lands on a virtual surface. The app plays a sound whenever the character collides with a virtual surface.
+
+The sample shows how to handle collision events, play a sound upon collision, and track the collision entity throughout events:
+
+```swift
+import RealityKit
+
+class GameMovementSystem: System {
+    var subscriptions: [AnyCancellable] = .init()
+
+    required init(scene: RealityKit.Scene) {
+    // Subscribe to the CollisionEvents and connect to class methods.
+    scene.subscribe(to: CollisionEvents.Began.self, componentType: GameMovementComponent.self, onCollisionBegan).store(in: &subscriptions)
+    scene.subscribe(to: CollisionEvents.Updated.self,
+                    componentType: CharacterMovementComponent.self,
+                    onCollisionUpdated).store(in: &subscriptions)
+    scene.subscribe(to: CollisionEvents.Ended.self, componentType: GameMovementComponent.self, onCollisionEnded).store(in: &subscriptions)
+    }
+
+    @MainActor
+    func onCollisionBegan(event: CollisionEvents.Began) {
+        let gameEntity = event.entityA
+        let collisionEntity = event.entityB
+
+        updateCollisionClassification(entityA: event.entityA, entityB: event.entityB, contacts: event.contacts)
+
+        event.entityA.components[GameMovementComponent.self].currentlyTrackedCollisionEntity = event.entityB
+
+        if let collisionClassification = event.entityA.components[GameMovementComponent.self].trackedCollisionEntities[event.entityB] {
+            // If collision impulse reaches over a specific threshold, play a sound.
+            if event.impulse > GameSettings.collisionImpulseThreshold {
+                let audioEvent = AudioEventComponent(resourceName: "CollisionSound")
+                gameEntity.components.set(audioEvent)
+            }
+        }
+    }
+
+    @MainActor
+    func onCollisionUpdated(event: CollisionEvents.Updated) {
+        updateCollisionClassification(entityA: event.entityA, entityB: event.entityB, contacts: event.contacts)
+    }
+
+    @MainActor
+    func onCollisionEnded(event: CollisionEvents.Ended) {
+        // Stop tracking.
+        event.entityA.components[GameMovementComponent.self]?.trackedCollisionEntities[event.entityB] = nil
+
+        if event.entityB == event.entityA.components[GameMovementComponent.self]?.currentlyTrackedCollisionEntity {
+            event.entityA.components[GameMovementComponent.self]?.currentlyTrackedCollisionEntity = nil
+    }
+
+
+    private func updateCollisionClassification(entityA: Entity, entityB: Entity, contacts: [Contact]) {
+        guard var collisionNormal = contacts.first?.normal else { return }
+
+        collisionNormal = normalize(collisionNormal)
+
+        let collisionDot = dot(collisionNormal, [0, 1, 0])
+        let classification: CollisionClassification = if collisionDot < -GameSettings.floorThreshold {
+            .top 
+        } else if collisionDot == GameSettings.floorThreshold {
+            .floor(normal: collisionNormal)
+        }  else {
+           .inTheAir(normal: collisionNormal) 
+        }
+
+        entityA.components[GameMovementComponent.self].trackedCollisionEntities[entityB] = classification
+    }
+}
+```
+
+The collision sounds in Petite Asteroids are usually one-shot collision sounds, which the app plays using [`playAudio(_:)`](https://developer.apple.com/documentation/RealityKit/Entity/playAudio(_:)). For other collision sounds, the app groups a set of similar sounds together using an [`AudioFileGroupResource`](https://developer.apple.com/documentation/RealityKit/AudioFileGroupResource) to play nonrepeating random sounds for audio playback.
+
+#### Design Dynamic Sounds
+
+In this game, the Audio [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) uses an [`AmbientAudioComponent`](https://developer.apple.com/documentation/RealityKit/AmbientAudioComponent) for ambient audio. The system plays two audio files using [`AudioPlaybackController`](https://developer.apple.com/documentation/RealityKit/AudioPlaybackController) for the environment audio of the game. The character starts at the bottom of the butte with a calmer environment. As she reaches higher parts of the butte, the calmer environment cross-fades with the windier environment. The system blends these two files according to how high the character ascends. If she falls, the windier environment fades gracefully by interpolating values over a number of seconds.
+
+The soundstage design intentionally utilizes stereo music with spread and width (decorrelated content), so any spatial sound effects in the game play closer to the center of the view. This way, the music doesn’t distract from the overall game experience, and improves the sense of immersion. To accomplish this effect, the app uses psychoacoustic and filtering techniques:
+
+- At the bottom of the butte, the app uses a stereo recording asset, anchored to the volume.
+- As you reposition the volume, the stereo recording follows it, so you can localize the app.
+- The top of the butte has a quadraphonic (may be cube) surround layout recording, so as the character ascends the butte, the audio experience becomes increasingly immersive.
+
+An audio cue subsystem in Petite Asteroids’ audio system controls playback of the app’s music. The sound effects of the game differ, depending on the scenes of the game. In the Fiery Descent sequence, the app plays back two layers simultaneously:
+
+The design of the music scoring separates linear and nonlinear categories. The linear music at the end of the game triggers a cut scene and the app plays a linear music sequence. The nonlinear music scores make the sound nonrepetitive. This design means the app can cut the score into segments that it can loop infinitely and cleanly, while also allowing the audio to start playback at any randomized time. The `gameplayMusic`, `tutorialMusic`, and `menuMusic` all fall under this category.
+
 ## See Also
 
-- [Enhancing the audio experience for Petite Asteroids](enhancing-the-audio-experience-for-petite-asteroids.md)
-  Elevate the game’s immersive experience using RealityKit audio.
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+  Build, create, and design 3D content for your RealityKit apps.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -414,8 +675,6 @@ func setShadowShaderParameters (
   Learn how everything fits together in RealityKit.
 - [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Designing RealityKit content with Reality Composer Pro](designing-realitykit-content-with-reality-composer-pro.md)
-  Design RealityKit scenes for your visionOS app.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)

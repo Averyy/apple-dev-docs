@@ -1,33 +1,36 @@
-# !=(_:_:)
+# ProximityReaderDiscovery.ContentError.unknown
 
 **Framework**: ProximityReader  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An error that indicates the framework encountered a problem that the system can’t interpret.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- visionOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [ProximityReaderDiscovery.ContentError.contentNotFound](proximityreaderdiscovery/contenterror/contentnotfound.md)
+  An error that indicates the requested content isn’t available.
+- [ProximityReaderDiscovery.ContentError.contentDisplayFailed](proximityreaderdiscovery/contenterror/contentdisplayfailed.md)
+  An error that indicates an issue occurred when trying to display the requested content.
+- [ProximityReaderDiscovery.ContentError.notSupported](proximityreaderdiscovery/contenterror/notsupported.md)
+  An error that indicates the current device doesn’t support the requested content.
+- [ProximityReaderDiscovery.ContentError.networkUnavailable](proximityreaderdiscovery/contenterror/networkunavailable.md)
+  An error that indicates the system can’t reach the network.
+- [ProximityReaderDiscovery.ContentError.systemBusy](proximityreaderdiscovery/contenterror/systembusy.md)
+  An error that indicates the system is busy.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/proximityreaderdiscovery/contenterror/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/proximityreaderdiscovery/contenterror/unknown)*

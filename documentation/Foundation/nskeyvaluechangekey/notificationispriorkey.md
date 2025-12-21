@@ -22,7 +22,7 @@ static let notificationIsPriorKey: NSKeyValueChangeKey
 
 #### Discussion
 
-The change dictionary contains an [`notificationIsPriorKey`](nskeyvaluechangekey/notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](https://developer.apple.com/documentation/swift/true).
+The change dictionary contains an [`notificationIsPriorKey`](nskeyvaluechangekey/notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

@@ -20,6 +20,8 @@ typealias Pixel_16F = UInt16
 
 #### Discussion
 
+A 16-bit half precision floating-point planar pixel value.
+
 Typically, these have range [0,1] though other values are generally allowed. Defined as a 16-bit integer since this is a storage format only.
 
 ## See Also

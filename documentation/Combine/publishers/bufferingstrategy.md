@@ -22,7 +22,7 @@ enum BufferingStrategy<Failure> where Failure : Error
 
 ## Topics
 
-### Buffering Strategies
+### Buffering strategies
 - [Publishers.BufferingStrategy.dropNewest](publishers/bufferingstrategy/dropnewest.md)
   When the buffer is full, discard the newly received element.
 - [Publishers.BufferingStrategy.dropOldest](publishers/bufferingstrategy/dropoldest.md)

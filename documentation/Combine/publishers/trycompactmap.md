@@ -22,23 +22,20 @@ struct TryCompactMap<Upstream, Output> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Compact Map Publisher
+### Creating a try-compact-map Publisher
 - [init(upstream: Upstream, transform: (Upstream.Output) throws -> Output?)](publishers/trycompactmap/init(upstream:transform:).md)
-### Declaring Publisher Topography
+### Mapping elements
+- [func compactMap<T>((Output) throws -> T?) -> Publishers.TryCompactMap<Upstream, T>](publishers/trycompactmap/compactmap(_:).md)
+### Declaring supporting types
 - [Publishers.Output](publishers/output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 - [Publishers.TryCompactMap.Failure](publishers/trycompactmap/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/trycompactmap/upstream.md)
   The publisher from which this publisher receives elements.
 - [let transform: (Upstream.Output) throws -> Output?](publishers/trycompactmap/transform.md)
   An error-throwing closure that receives values from the upstream publisher and returns optional values.
-### Applying Operators
-- [Publisher Operators](publishers-trycompactmap-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/trycompactmap/publisher-implementations.md)
 
 ## Relationships
 

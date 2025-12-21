@@ -22,7 +22,7 @@ var isActive: Bool { get set }
 
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), the field does not apply forces to physics bodies in its area of effect. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this value is [`false`](https://developer.apple.com/documentation/Swift/false), the field does not apply forces to physics bodies in its area of effect. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Use this property, for example, to switch fields on and off as a gameplay mechanic.
 

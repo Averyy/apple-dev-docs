@@ -20,6 +20,11 @@ Set up a recording in a state ready to receive output.
 init()
 ```
 
+## See Also
+
+- [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/init(output:completion:).md)
+  Set up a complete recording with the specified output and completion.
+
 
 ---
 

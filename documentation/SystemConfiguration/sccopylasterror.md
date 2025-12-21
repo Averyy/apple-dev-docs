@@ -25,7 +25,7 @@ The most recent status or error code generated as the result of calling a functi
 
 #### Discussion
 
-Call the [`CFErrorGetCode(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorGetCode(_:)) function on the returned object to get the underlying error-code integer. See [`Status and Error Codes`](1518026-status-and-error-codes.md) for descriptions of these codes. For more on `CFErrorRef` objects, see doc://com.apple.documentation/documentation/corefoundation/cferror-ru8.
+Call the [`CFErrorGetCode(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorGetCode(_:)) function on the returned object to get the underlying error-code integer. See [`Status and Error Codes`](1518026-status-and-error-codes.md) for descriptions of these codes. For more on `CFErrorRef` objects, see [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError).
 
 ## See Also
 

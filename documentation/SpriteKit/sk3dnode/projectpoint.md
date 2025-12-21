@@ -17,7 +17,6 @@ Projects a point from the 3D world coordinate system of the SceneKit scene to th
 ## Declaration
 
 ```swift
-@MainActor
 func projectPoint(_ point: vector_float3) -> vector_float3
 ```
 

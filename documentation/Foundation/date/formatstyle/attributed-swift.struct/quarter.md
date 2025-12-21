@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Change the representation of the quarter in the format.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 func quarter(_ format: Date.FormatStyle.Symbol.Quarter = .abbreviated) -> Date.FormatStyle.Attributed
 ```
+
+## Parameters
+
+- `format`: Set the symbol representation or pass   to remove it.
 
 
 ---

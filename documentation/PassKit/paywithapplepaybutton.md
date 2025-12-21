@@ -3,6 +3,8 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: struct
 
+A type that provides a button to pay with Apple pay.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -16,6 +18,32 @@
 ```swift
 @MainActor
 @preconcurrency struct PayWithApplePayButton<Fallback> where Fallback : View
+```
+
+#### Overview
+
+Use this structure as the SwiftUI equivalent to [`PKPaymentButton`](pkpaymentbutton.md). For design guidance, see Human Interface Guidelines > Apple Pay > [`Using Apple Pay buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay#Using-Apple-Pay-buttons).
+
+This example shows an implementation of the Pay with Apple Pay button.
+
+```swift
+// Create a payment request.
+@State private var paymentRequest = PKPaymentRequest()
+
+// Create a payment authorization change method.
+func paymentAuthorizationDidChange(phase: PayWithApplePayButtonPaymentAuthorizationPhase) { ... }
+
+@ViewBuilder var payButton: some View {
+    PayWithApplePayButton(
+        .plain,
+        request: paymentRequest,
+        onPaymentAuthorizationChange: paymentAuthorizationDidChange
+    ) {
+        // Display a fallback view if the payment request fails.
+    }
+    .frame(width: 250, height: 50)
+    .payWithApplePayButtonStyle(.automatic)
+}
 ```
 
 ## Topics

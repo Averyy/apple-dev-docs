@@ -31,13 +31,9 @@ Annotated predictions produced by applying the transformer to the inputs.
 
 ## See Also
 
-- [func callAsFunction(Self.Input, eventHandler: EventHandler?) async throws -> Self.Output](transformer/callasfunction(_:eventhandler:)-1xy6d.md)
+- [func callAsFunction(_:eventHandler:)](transformer/callasfunction(_:eventhandler:).md)
   Performs the transformation on a single input.
-- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> [Self.Output]](transformer/callasfunction(_:eventhandler:)-477jv.md)
-  Performs the transformation on a sequence of inputs.
-- [func prediction<S, Label>(from: S) async throws -> [ClassificationDistribution<Label>]](transformer/prediction(from:)-107lm.md)
-  Performs a prediction from a sequence of inputs.
-- [func prediction<Label>(from: Self.Input) async throws -> ClassificationDistribution<Label>](transformer/prediction(from:)-57fan.md)
+- [func prediction(from:)](transformer/prediction(from:).md)
   Performs a prediction from a single input.
 
 

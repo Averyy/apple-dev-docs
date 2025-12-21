@@ -20,18 +20,18 @@ class AVCaptureAudioFileOutput
 
 ## Topics
 
-### Discovering Supported Types
+### Discovering supported types
 - [class func availableOutputFileTypes() -> [AVFileType]](avcaptureaudiofileoutput/availableoutputfiletypes.md)
   Returns an array containing UTIs identifying the file types `AVCaptureAudioFileOutput` can write.
-### Starting a Recording
+### Starting a recording
 - [func startRecording(to: URL, outputFileType: AVFileType, recordingDelegate: any AVCaptureFileOutputRecordingDelegate)](avcaptureaudiofileoutput/startrecording(to:outputfiletype:recordingdelegate:).md)
   Tells the receiver to start recording to a new file of the specified format, and specifies a delegate that will be notified when recording is finished.
-### Configuring Output
+### Configuring output
 - [var audioSettings: [String : Any]?](avcaptureaudiofileoutput/audiosettings.md)
   The settings used to decode or re-encode audio before it is output by the receiver.
 - [var metadata: [AVMetadataItem]](avcaptureaudiofileoutput/metadata.md)
   A collection of metadata to be written to the receiver’s output files.
-### Creating Output
+### Creating output
 - [init()](avcaptureaudiofileoutput/init.md)
   Creates a new audio file output.
 

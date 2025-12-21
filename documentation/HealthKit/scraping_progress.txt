@@ -1,4 +1,4 @@
 Completed scraping HealthKit!
-Total pages scraped: 2018
+Total pages scraped: 2008
 Pages skipped (unchanged): 3
 Pages failed: 0

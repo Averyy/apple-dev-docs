@@ -6,7 +6,7 @@
 The pose of this input device, or `nil` if this input device has no pose.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

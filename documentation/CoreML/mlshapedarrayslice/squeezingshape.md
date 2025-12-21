@@ -38,6 +38,19 @@ let squeezed = original.squeezed()
 squeezed.scalar // 42
 ```
 
+## See Also
+
+- [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/changinglayout(to:).md)
+  Returns a copy with the specified buffer layout.
+- [func expandingShape(at: Int) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/expandingshape(at:).md)
+  Returns a new shaped array with expanded dimensions
+- [func reshaped(to: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/reshaped(to:).md)
+  Returns a new reshaped shaped array.
+- [func transposed() -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed.md)
+  Returns a new transposed shaped array
+- [func transposed(permutation: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed(permutation:).md)
+  Returns a new transposed shaped array using a custom permutation.
+
 
 ---
 

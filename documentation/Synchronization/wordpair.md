@@ -59,7 +59,6 @@ extension GridPoint: AtomicRepresentable {
   The second element in this word pair.
 ### Default Implementations
 - [AtomicRepresentable Implementations](wordpair/atomicrepresentable-implementations.md)
-- [Comparable Implementations](wordpair/comparable-implementations.md)
 - [CustomDebugStringConvertible Implementations](wordpair/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](wordpair/customstringconvertible-implementations.md)
 - [Equatable Implementations](wordpair/equatable-implementations.md)

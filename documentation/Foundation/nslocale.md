@@ -155,7 +155,9 @@ You frequently use a locale in conjunction with a formatter. For example, the [`
   The directions that a language may take across a page of text.
 ### Instance Properties
 - [var languageIdentifier: String](nslocale/languageidentifier.md)
+  Returns the identifier for the language part of the locale. For example, returns “en-US” for “en_US@rg=gbzzzz”  locale.
 - [var regionCode: String?](nslocale/regioncode.md)
+  Returns the region code of the locale. If the `rg` subtag is present, the value of the subtag will be used. For example,  returns “GB” for “en_US@rg=gbzzzz” locale. If the `localeIdentifier` doesn’t contain a region, returns `nil`.
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize an `IndexSet` with a range of integers.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

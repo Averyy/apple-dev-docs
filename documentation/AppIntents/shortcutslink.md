@@ -24,7 +24,7 @@ You can create a button by calling the initializer with an additional closure, w
 
 ```swift
 ShortcutsLink(action: handleTap)
-    .shortcutsLinkStyle(.black)
+    .shortcutsLinkStyle(.dark)
 ```
 
 ## Topics
@@ -32,14 +32,6 @@ ShortcutsLink(action: handleTap)
 ### Initializers
 - [init(action: () -> Void)](shortcutslink/init(action:).md)
   Creates a link that launches Shortcuts and then executes the specified closure.
-### Instance Properties
-- [var body: some View](shortcutslink/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [ShortcutsLink.Body](shortcutslink/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](shortcutslink/view-implementations.md)
 
 ## Relationships
 

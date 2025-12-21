@@ -51,7 +51,7 @@ Simulator creates a file name with a combination of “Simulator Screen Recordin
 - [Interacting with your app in the visionOS simulator](interacting-with-your-app-in-the-visionos-simulator.md)
   Use your Mac to navigate spaces and control interactions with your visionOS apps in Simulator.
 - [Configuring Simulator for your working environment](configuring-a-simulator-for-your-environment.md)
-  Adjust Simulator settings for window or screen size, light or dark appearance, and audio settings, and restart or reset a simulated device.
+  Adjust Simulator settings for window or screen size, the light or dark appearance, and audio settings, and restart or reset a simulated device.
 - [Simulating an external display or CarPlay](simulating-an-external-display-or-carplay.md)
   Test how your app handles an external display or CarPlay from Simulator.
 

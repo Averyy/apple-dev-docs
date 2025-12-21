@@ -19,10 +19,6 @@
 var defaultValue: Any?
 ```
 
-## See Also
-
-- [var valueType: any Any.Type](schema/attribute/valuetype.md)
-
 
 ---
 

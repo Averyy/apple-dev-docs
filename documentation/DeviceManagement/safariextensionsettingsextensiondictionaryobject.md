@@ -3,13 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The dictionary that defines the managed extension.
+The dictionary that defines managed extensions.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

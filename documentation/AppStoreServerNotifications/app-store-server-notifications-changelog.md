@@ -10,6 +10,25 @@ App Store Server Notifications has two versions of notifications. Version 1 noti
 
 To set up your server to receive notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
+##### December 10 2025
+
+- Added the [`revocationType`](revocationtype.md) and [`revocationPercentage`](revocationpercentage.md) fields to the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
+- Added the [`advancedCommercePriceIncreaseInfo`](advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+
+##### November 4 2025
+
+- Updated the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md) to include the new payload object, [`appData`](appdata.md).
+- Added the notification type `RESCIND_CONSENT` to [`notificationType`](notificationtype.md).
+
+##### October 29 2025
+
+- Added the `ONE_TIME` value to [`offerDiscountType`](offerdiscounttype.md) to indicate In-App Purchase offer codes.
+
+##### June 26 2025
+
+- Added the `ACTIVE_TOKEN_REMINDER` and `CREATED` values to [`subtype`](subtype.md), which can appear in notifications with an `EXTERNAL_PURCHASE_TOKEN` [`notificationType`](notificationtype.md).
+- Updated [`externalPurchaseToken`](externalpurchasetoken.md) to include the new fields [`tokenType`](tokentype.md) and [`tokenExpirationDate`](tokenexpirationdate.md).
+
 ##### May 27 2025
 
 - The `ONE_TIME_CHARGE` [`notificationType`](notificationtype.md) is now available in the production environment.

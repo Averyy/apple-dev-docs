@@ -42,20 +42,22 @@ extension WAPublishableService {
 let devices = #Predicate<WAPairedDevice> { $0.name?.starts(with: "My Device") ?? false }
 
 // Constructs a `NetworkListener` to publish the service and accept connections from the selected devices.
-// Can optionally provide Wi-Fi Aware configuration parameters in the `datapath:` parameter.
-let listener = try NetworkListener(for:
-        .wifiAware(.connecting(to: .exampleService, from: .matching(devices), datapath: .defaults)),
-    using: {
-        TLS()
-    })
-    .onStateUpdate { listener, state in
+try await NetworkListener(for:
+    .wifiAware(.connecting(to: .exampleService, from: .matching(devices))),
+using: {
+    TLS()
+})
+.onStateUpdate { listener, state in
     // Processes state updates.
+}
+.run { connection in
+    // Handle incoming connections.
 }
 ```
 
 ##### Create a Browser to Subscribe
 
-The following example code creates a `NetworkBrowser` that subscribes for the `_example-service._tcp` service over Wi-Fi Aware, and provides browse results that the system can use to make outgoing connections to the specified paired devices:
+The following code example creates a `NetworkBrowser` that subscribes for the `_example-service._tcp` service over Wi-Fi Aware, and provides browse results that the system can use to make outgoing connections to the specified paired devices:
 
 ```swift
 // Specifies a service.
@@ -73,9 +75,62 @@ let browser = NetworkBrowser(
     for:
         .wifiAware( .connecting(to: .matching(devices),  from: .exampleService))
 )
+.onStateUpdate { browser, state in
+    // Processes state updates.
+}
+
+// Run the browser and get discovered endpoints
+let endpoint = try await browser.run { waEndpoints in
+    // Handle discovered endpoints.
+    // Return .finish(endpoint) once the desired endpoint(s) are discovered or .continue to keep the browser active.
+}
 ```
 
-For additional information on making and managing network connections, refer to the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework.
+##### Make a Connection
+
+The following code example creates a `NetworkConnection` to a discovered Wi-Fi Aware endpoint:
+
+```swift
+// On the browser device, construct a `NetworkConnection` to make a connection to one of the discovered endpoints from the browse operation.
+let connection = NetworkConnection(
+    to:
+        endpoint,
+    using: {
+        TLS()
+    }
+).onStateUpdate { connection, state in
+    // Processes state updates.
+}
+
+// The run closure on the `NetworkListener` device receives the incoming connection.
+```
+
+##### Monitor Connection Performance
+
+The following code example gets the Wi-Fi Aware performance report from the current path of a connection.
+
+```swift
+if let wifiAwarePath = try await connection.currentPath?.wifiAware {
+    let performanceReport = wifiAwarePath.performance
+
+    // Use the performance report.
+}
+```
+
+##### Get Wi Fi Aware Errors
+
+The following code example gets the Wi-Fi Aware specific error code from the [`NWError`](https://developer.apple.com/documentation/Network/NWError) reported by the Network framework as part of the state updates provided for the `NetworkBrowser`, `NetworkListener` and `NetworkConnection` instances.
+
+```swift
+.onStateUpdate { _, state in
+    switch state {
+    ...
+
+    case .failed(let nwError): let wifiAwareError = error.wifiAware
+    default: break
+    }
+}
+```
 
 ## See Also
 

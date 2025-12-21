@@ -1,4 +1,4 @@
-# Capturing a Bracketed Photo Sequence
+# Capturing a bracketed photo sequence
 
 **Framework**: AVFoundation
 
@@ -8,7 +8,7 @@ Capture several photos at once, varying parameters like exposure duration or lig
 
 Bracketing is a well-known photographic technique in which a sequence of shots is rapidly taken of the same scene, usually varying only in a single parameter such as aperture or shutter speed (exposure length). Experienced photographers use this technique to help them choose the best photos after shooting, or to apply offline post-processing that fuses multiple images together to create extended dynamic range or other special effects.
 
-In iOS, you can use [`AVCapturePhotoOutput`](avcapturephotooutput.md) and [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md) to automatically capture a bracket of photos for each [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) call. Once you’ve built a single-exposure camera in your app (see [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md)), follow these steps to add multi-image bracket support.
+In iOS, you can use [`AVCapturePhotoOutput`](avcapturephotooutput.md) and [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md) to automatically capture a bracket of photos for each [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) call. Once you’ve built a single-exposure camera in your app (see [`Capturing still and Live Photos`](capturing-still-and-live-photos.md)), follow these steps to add multi-image bracket support.
 
 ##### Choose Bracket Settings
 
@@ -60,11 +60,11 @@ To keep track of multiple results, compare the [`photoCount`](avcapturephoto/pho
 
 ## See Also
 
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
+- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
   Get processed image data without compression to use for filtering or lossless output.
-- [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
+- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
   Enable delivery of reduced-size images with the main image in a photo capture.
 
 

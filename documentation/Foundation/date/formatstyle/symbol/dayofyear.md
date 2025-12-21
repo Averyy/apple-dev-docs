@@ -55,12 +55,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static var twoDigits: Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear/twodigits.md)
   Custom format style portraying the two-digit numeric day of the year, zero-padded if necessary.
 ### Comparing Day of Year Values
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

@@ -17,7 +17,7 @@ func NSEqualSizes(_ aSize: NSSize, _ bSize: NSSize) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aSize` and `bSize` are identical, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aSize` and `bSize` are identical, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

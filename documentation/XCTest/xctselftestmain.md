@@ -3,9 +3,6 @@
 **Framework**: XCTest  
 **Kind**: func
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

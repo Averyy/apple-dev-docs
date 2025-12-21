@@ -1,4 +1,4 @@
-# Face Metadata Type
+# Face metadata type
 
 **Framework**: AVFoundation
 

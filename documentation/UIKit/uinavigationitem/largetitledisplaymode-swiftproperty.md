@@ -22,7 +22,7 @@ var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode { get set }
 
 When large titles are available, this property controls how the navigation bar displays the navigation item’s title. The default value of this property is [`UINavigationItem.LargeTitleDisplayMode.automatic`](uinavigationitem/largetitledisplaymode-swift.enum/automatic.md), which causes the title to use the same styling as the previously displayed navigation item. You can change the value of this property to force the navigation bar to display a large title ([`UINavigationItem.LargeTitleDisplayMode.always`](uinavigationitem/largetitledisplaymode-swift.enum/always.md)) or a small title ([`UINavigationItem.LargeTitleDisplayMode.never`](uinavigationitem/largetitledisplaymode-swift.enum/never.md)) for this item.
 
-If the [`prefersLargeTitles`](uinavigationbar/preferslargetitles.md) property of the navigation bar is [`false`](https://developer.apple.com/documentation/swift/false), this property has no effect and the navigation item’s title is always displayed as a small title.
+If the [`prefersLargeTitles`](uinavigationbar/preferslargetitles.md) property of the navigation bar is [`false`](https://developer.apple.com/documentation/Swift/false), this property has no effect and the navigation item’s title is always displayed as a small title.
 
 ## See Also
 

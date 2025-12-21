@@ -17,7 +17,7 @@ var isInViewingMode: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the document is in read-only “viewing mode,” that is, if the document is locked. You can use this information to prevent certain kinds of user actions or changes when the user is viewing an old document revision.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the document is in read-only “viewing mode,” that is, if the document is locked. You can use this information to prevent certain kinds of user actions or changes when the user is viewing an old document revision.
 
 ## See Also
 

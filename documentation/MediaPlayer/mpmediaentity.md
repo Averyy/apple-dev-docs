@@ -60,6 +60,8 @@ This is the superclass for [`MPMediaItem`](mpmediaitem.md) and [`MPMediaItemColl
 
 ## See Also
 
+- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+  Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
 - [class MPMediaItem](mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)

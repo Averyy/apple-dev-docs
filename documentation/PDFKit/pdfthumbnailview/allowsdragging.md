@@ -17,7 +17,7 @@ var allowsDragging: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if users can re-order pages by dragging thumbnails, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if users can re-order pages by dragging thumbnails, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

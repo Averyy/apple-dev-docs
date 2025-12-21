@@ -11,12 +11,12 @@ The name assigned to the route.
 ## Declaration
 
 ```swift
-attribute string name;
+name: string;
 ```
 
 #### Discussion
 
-Display [`name`](route/name.md) to the user so they can distinguish one route from another. MapKit JS localizes this string according to the [`mapkit.Directions`](mapkit.directions.md) object’s [`language`](directionsconstructoroptions/language.md) value.
+Display [`name`](route/name.md) to the user so they can distinguish one route from another. MapKit JS localizes this string according to the [`Directions`](directions.md) object’s [`language`](directionsconstructoroptions/language.md) value.
 
 ## See Also
 
@@ -30,7 +30,7 @@ Display [`name`](route/name.md) to the user so they can distinguish one route fr
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [mapkit.Directions.Transport](mapkit.directions.transport.md)
+- [const TransportType](transporttype.md)
   The modes of transportation.
 
 

@@ -17,7 +17,7 @@ var isBezeled: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the progress indicator is bezeled.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the progress indicator is bezeled.
 
 ## See Also
 

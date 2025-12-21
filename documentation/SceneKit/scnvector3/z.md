@@ -17,7 +17,7 @@ The third component in the vector.
 ## Declaration
 
 ```swift
-var z: Float
+var z: CGFloat
 ```
 
 ## See Also

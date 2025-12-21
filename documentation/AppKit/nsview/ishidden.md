@@ -17,7 +17,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-This property reflects the state of the current view only, as set in Interface Builder or through the most recent change to this property. The property does not account for the state of the view’s ancestors in the view hierarchy. Thus, if the view has a hidden ancestor, the value of this property may still be [`false`](https://developer.apple.com/documentation/swift/false) even though the view itself is not visible. To determine whether a view is effectively hidden, for whatever reason, get the value of the [`isHiddenOrHasHiddenAncestor`](nsview/ishiddenorhashiddenancestor.md) property instead.
+This property reflects the state of the current view only, as set in Interface Builder or through the most recent change to this property. The property does not account for the state of the view’s ancestors in the view hierarchy. Thus, if the view has a hidden ancestor, the value of this property may still be [`false`](https://developer.apple.com/documentation/Swift/false) even though the view itself is not visible. To determine whether a view is effectively hidden, for whatever reason, get the value of the [`isHiddenOrHasHiddenAncestor`](nsview/ishiddenorhashiddenancestor.md) property instead.
 
 A hidden view disappears from its window and does not receive input events. It remains in its superview’s list of subviews, however, and participates in autoresizing as usual. AppKit also disables any cursor rectangle, tool-tip rectangle, or tracking rectangle associated with a hidden view. Hiding a view with subviews has the effect of hiding those subviews and any view descendants they might have. This effect is implicit and does not alter the hidden state of the view’s descendants as reported by this property.
 

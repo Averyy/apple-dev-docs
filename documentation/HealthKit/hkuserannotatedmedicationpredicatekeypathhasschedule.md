@@ -3,19 +3,25 @@
 **Framework**: HealthKit  
 **Kind**: var
 
+The key path you use to create predicates for whether or not a medication has a schedule.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 let HKUserAnnotatedMedicationPredicateKeyPathHasSchedule: String
 ```
+
+#### Discussion
+
+Use to predicate against the [`hasSchedule`](hkuserannotatedmedication/hasschedule.md) property of a medication.
 
 ## See Also
 
@@ -42,10 +48,10 @@ let HKUserAnnotatedMedicationPredicateKeyPathHasSchedule: String
   The device’s UDI Device Identifier.
 - [let HKPredicateKeyPathCount: String](hkpredicatekeypathcount.md)
   A key path for the sample’s count.
-- [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
-- [static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier](hkquantitytypeidentifier/crosscountryskiingspeed.md)
-- [static let cyclingCadence: HKQuantityTypeIdentifier](hkquantitytypeidentifier/cyclingcadence.md)
-  A quantity sample type that represents the rate at which the user is pedaling.
+- [static let GAD7: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/gad7.md)
+- [static let PHQ9: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/phq9.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+  A constant that matches any operating system.
 
 
 ---

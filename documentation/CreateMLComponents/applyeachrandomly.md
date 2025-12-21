@@ -31,11 +31,6 @@ struct ApplyEachRandomly<Element>
 ### Applying transformers
 - [func applied(to: Element, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Element](applyeachrandomly/applied(to:generator:eventhandler:).md)
   Applies each transformer randomly in order with a probability.
-### Type Aliases
-- [ApplyEachRandomly.Input](applyeachrandomly/input.md)
-  The input type.
-- [ApplyEachRandomly.Output](applyeachrandomly/output.md)
-  The output type.
 
 ## Relationships
 

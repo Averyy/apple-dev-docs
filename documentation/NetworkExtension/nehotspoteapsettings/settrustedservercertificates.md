@@ -19,7 +19,7 @@ func setTrustedServerCertificates(_ certificates: [Any]) -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if any element in the array is not an object of type [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) or if the OS fails to find a persistent reference for each element from the application’s keychain; else return [`true`](https://developer.apple.com/documentation/swift/true).
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if any element in the array is not an object of type [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) or if the OS fails to find a persistent reference for each element from the application’s keychain; else return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

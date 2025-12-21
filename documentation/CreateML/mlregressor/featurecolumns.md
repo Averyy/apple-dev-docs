@@ -16,10 +16,8 @@ var featureColumns: [String] { get }
 
 ## See Also
 
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?) throws](mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-5mhd2.md)
+- [init(trainingData:targetColumn:featureColumns:)](mlregressor/init(trainingdata:targetcolumn:featurecolumns:).md)
   Creates a regressor.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?) throws](mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-56rvo.md)
-  Creates a regressor from the feature columns in the training data to predict the values in the target column.
 - [var targetColumn: String](mlregressor/targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
 

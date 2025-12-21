@@ -22,24 +22,19 @@ struct DropWhile<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Drop While Publisher
+### Creating a drop while publisher
 - [init(upstream: Upstream, predicate: (Publishers.DropWhile<Upstream>.Output) -> Bool)](publishers/dropwhile/init(upstream:predicate:).md)
   Creates a publisher that omits elements from an upstream publisher until a given closure returns false.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.DropWhile.Output](publishers/dropwhile/output.md)
   The kind of values published by this publisher.
 - [Publishers.DropWhile.Failure](publishers/dropwhile/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/dropwhile/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Publishers.DropWhile<Upstream>.Output) -> Bool](publishers/dropwhile/predicate.md)
   The closure that indicates whether to drop the element.
-### Applying Operators
-- [Publisher Operators](publishers-dropwhile-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/dropwhile/publisher-implementations.md)
 
 ## Relationships
 

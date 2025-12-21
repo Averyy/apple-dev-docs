@@ -20,7 +20,7 @@ class AVAssetDownloadStorageManagementPolicy
 
 ## Topics
 
-### Inspecting a Policy
+### Inspecting a policy
 - [var expirationDate: Date](avassetdownloadstoragemanagementpolicy/expirationdate.md)
   The expiration date for an asset.
 - [var priority: AVAssetDownloadedAssetEvictionPriority](avassetdownloadstoragemanagementpolicy/priority.md)

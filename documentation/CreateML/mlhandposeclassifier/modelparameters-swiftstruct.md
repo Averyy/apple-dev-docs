@@ -65,6 +65,8 @@ struct ModelParameters
 
 - [MLHandPoseClassifier.DataSource](mlhandposeclassifier/datasource.md)
   A hand pose classifier dataset that contains annotated images or hand joint location data.
+- [MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions.md)
+  Options a hand pose classification training session can use to generate additional training data from the images you provide.
 
 
 ---

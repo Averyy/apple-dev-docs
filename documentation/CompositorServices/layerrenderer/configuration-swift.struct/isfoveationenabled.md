@@ -6,7 +6,7 @@
 A value that indicates if the layer is using variable rasterization rates.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -14,6 +14,10 @@ A value that indicates if the layer is using variable rasterization rates.
 ```swift
 var isFoveationEnabled: Bool { get set }
 ```
+
+## Mentions
+
+- [Defining layer renderer quality](defining-layer-renderer-quality.md)
 
 #### Discussion
 

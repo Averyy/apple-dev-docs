@@ -25,7 +25,7 @@ var isPersonalizedCommunicationRestricted: Bool { get }
 
 #### Discussion
 
-If this property or the underage property is [`true`](https://developer.apple.com/documentation/swift/true), the local player can’t include personalized messages on invitations or enable voice communication in multiplayer games. If your game includes any custom communication features, you should disable them.
+If this property or the underage property is [`true`](https://developer.apple.com/documentation/Swift/true), the local player can’t include personalized messages on invitations or enable voice communication in multiplayer games. If your game includes any custom communication features, you should disable them.
 
 On iOS and macOS, the value for this property comes from the Screen Time settings that the system syncs between devices using the same iCloud account. To change this value when testing your game, see [`Restrict Game Center section of Use parental controls on your child’s iPhone, iPad, and iPod touch`](https://developer.apple.comhttps://support.apple.com/en-us/HT201304) and [`Change Content Restrictions settings in Screen Time on Mac`](https://developer.apple.comhttps://support.apple.com/guide/mac-help/change-content-restrictions-settings-screen-mchlbcf0dfe2/mac).
 

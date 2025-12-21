@@ -22,7 +22,7 @@ static let usesMetricSystem: NSLocale.Key
 
 #### Discussion
 
-The corresponding value is a `NSNumber` object containing a Boolean value. If the value is [`false`](https://developer.apple.com/documentation/swift/false), you can typically assume American measurement units (for example, the statute mile).
+The corresponding value is a `NSNumber` object containing a Boolean value. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), you can typically assume American measurement units (for example, the statute mile).
 
 ## See Also
 

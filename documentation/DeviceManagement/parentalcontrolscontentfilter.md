@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the parental control web content filters.
+The payload that configures the parental control web content filters.
 
 **Availability**:
 - macOS 10.7+
@@ -100,13 +100,13 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 ## See Also
 
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
-  The payload you use to configure parental controls for apps.
+  The payload that configures parental controls for apps.
 - [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
-  The payload you use to configure parental control dictionary restrictions.
+  The payload that configures parental control dictionary restrictions.
 - [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
-  The payload you use to configure Game Center parental controls.
+  The payload that configures Game Center parental controls.
 - [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
-  The payload you use to configure parental control time limits.
+  The payload that configures parental control time limits.
 
 
 ---

@@ -28,7 +28,7 @@ Creates a list with the given content.
 ## See Also
 
 - [init(selection:content:)](list/init(selection:content:).md)
-  Creates a list with the given content that supports selecting a single row that cannot be deselcted.
+  Creates a list with the given content that supports selecting a single row that cannot be deselected.
 
 
 ---

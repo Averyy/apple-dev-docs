@@ -21,7 +21,7 @@ struct MTLCounterSampleBufferError
 
 ## Topics
 
-### Error Code Values
+### Error code values
 - [static var outOfMemory: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
 - [static var invalid: MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/invalid.md)
@@ -30,7 +30,7 @@ struct MTLCounterSampleBufferError
   An error code that indicates the Metal framework has an internal problem.
 - [MTLCounterSampleBufferError.Code](mtlcountersamplebuffererror-swift.struct/code.md)
   The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
-### Error Domain
+### Error domain
 - [static var errorDomain: String](mtlcountersamplebuffererror-swift.struct/errordomain.md)
   The current counter sample buffer error domain.
 - [let MTLCounterErrorDomain: String](mtlcountererrordomain.md)

@@ -22,7 +22,7 @@ func pauseSpeaking(at boundary: AVSpeechBoundary) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if speech pauses; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if speech pauses; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

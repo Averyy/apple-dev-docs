@@ -16,11 +16,11 @@ func contains(_ point: NSPoint) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aPoint` lies within the receiver’s region or on the region’s edge—not simply within its bounding rectangle—[`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aPoint` lies within the receiver’s region or on the region’s edge—not simply within its bounding rectangle—[`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 
-For example, if the receiver defines a donut shape and `aPoint` lies in the hole, this method returns [`false`](https://developer.apple.com/documentation/swift/false). This method can be used for hit testing of mouse events.
+For example, if the receiver defines a donut shape and `aPoint` lies in the hole, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). This method can be used for hit testing of mouse events.
 
 The default [`NSTextContainer`](nstextcontainer.md) implementation merely checks that `aPoint` lies within its bounding rectangle.
 

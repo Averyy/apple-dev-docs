@@ -21,7 +21,7 @@ func needsLayout() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer has been marked as requiring a layout update.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the layer has been marked as requiring a layout update.
 
 ## See Also
 

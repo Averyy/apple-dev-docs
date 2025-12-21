@@ -67,6 +67,7 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

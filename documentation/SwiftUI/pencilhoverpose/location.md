@@ -10,6 +10,7 @@ The location of an Apple Pencil hovering in the area above the view’s bounds, 
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

@@ -11,7 +11,7 @@ The coordinate of the result when it corresponds to a single place.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate coordinate;
+coordinate?: Coordinate;
 ```
 
 #### Discussion

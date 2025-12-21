@@ -42,7 +42,7 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
 - [AsyncImagePhase.empty](asyncimagephase/empty.md)
   No image is loaded.
 - [AsyncImagePhase.success(_:)](asyncimagephase/success(_:).md)
-  An image succesfully loaded.
+  An image successfully loaded.
 - [AsyncImagePhase.failure(_:)](asyncimagephase/failure(_:).md)
   An image failed to load with an error.
 ### Getting the image

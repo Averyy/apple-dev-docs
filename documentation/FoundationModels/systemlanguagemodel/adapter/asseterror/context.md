@@ -6,11 +6,11 @@
 The context in which the error occurred.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,13 +21,10 @@ struct Context
 ## Topics
 
 ### Creating a context
-- [init(debugDescription: String, underlyingErrors: [any Error])](systemlanguagemodel/adapter/asseterror/context/init(debugdescription:underlyingerrors:).md)
+- [init(debugDescription: String)](systemlanguagemodel/adapter/asseterror/context/init(debugdescription:).md)
 ### Getting the debug description
 - [let debugDescription: String](systemlanguagemodel/adapter/asseterror/context/debugdescription.md)
   A debug description to help developers diagnose issues during development.
-### Getting the underlying errors
-- [let underlyingErrors: [any Error]](systemlanguagemodel/adapter/asseterror/context/underlyingerrors.md)
-  The underlying errors that caused this error.
 
 ## Relationships
 

@@ -20,21 +20,9 @@ enum Acceleration
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Acceleration, IntentParameter<Value>.Acceleration) -> Bool](intentparameter/acceleration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Acceleration.gravity](intentparameter/acceleration/gravity.md)
 - [IntentParameter.Acceleration.metersPerSecondSquared](intentparameter/acceleration/meterspersecondsquared.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/acceleration/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/acceleration/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/acceleration/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/acceleration/equatable-implementations.md)
 
 ## Relationships
 

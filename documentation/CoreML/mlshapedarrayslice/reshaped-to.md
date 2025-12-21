@@ -43,6 +43,19 @@ The method raises a runtime error if the product of dimensions in the new shape 
 
 - `newShape`: The new shape after reshaping.
 
+## See Also
+
+- [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/changinglayout(to:).md)
+  Returns a copy with the specified buffer layout.
+- [func expandingShape(at: Int) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/expandingshape(at:).md)
+  Returns a new shaped array with expanded dimensions
+- [func squeezingShape() -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/squeezingshape.md)
+  Returns a new squeezed shaped array.
+- [func transposed() -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed.md)
+  Returns a new transposed shaped array
+- [func transposed(permutation: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed(permutation:).md)
+  Returns a new transposed shaped array using a custom permutation.
+
 
 ---
 

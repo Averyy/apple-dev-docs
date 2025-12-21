@@ -11,12 +11,12 @@ The name of the place.
 ## Declaration
 
 ```swift
-attribute string name;
+name?: string;
 ```
 
 #### Discussion
 
-For example, the name for the Golden Gate Park is `“Lindley Meadow”`.
+For example, the name for a specific place in Golden Gate Park in San Francisco, California, is `"Lindley Meadow"`.
 
 ## See Also
 

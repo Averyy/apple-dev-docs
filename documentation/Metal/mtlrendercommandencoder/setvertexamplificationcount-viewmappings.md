@@ -22,7 +22,7 @@ func setVertexAmplificationCount(_ count: Int, viewMappings: UnsafePointer<MTLVe
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 
@@ -30,7 +30,7 @@ With , you can encode drawing commands that process the same vertex multiple tim
 
 > **Note**:  Render pipelines don’t apply vertex amplification by default.
 
-For more information about vertex amplification and how to use the `viewMappings` parameter, see [`Improving Rendering Performance with Vertex Amplification`](improving-rendering-performance-with-vertex-amplification.md).
+For more information about vertex amplification and how to use the `viewMappings` parameter, see [`Improving rendering performance with vertex amplification`](improving-rendering-performance-with-vertex-amplification.md).
 
 ## Parameters
 

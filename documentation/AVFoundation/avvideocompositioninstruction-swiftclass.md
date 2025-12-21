@@ -25,7 +25,12 @@ An [`AVVideoComposition`](avvideocomposition.md) object maintains an array of [`
 
 ## Topics
 
-### Inspecting the Instruction
+### Creating an instruction
+- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](avvideocompositioninstruction-swift.class/init(configuration:).md)
+  Initialize an AVVideoCompositionInstruction with a configuration.
+- [AVVideoCompositionInstruction.Configuration](avvideocompositioninstruction-swift.class/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionInstruction instance.
+### Inspecting the instruction
 - [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/backgroundcolor.md)
   The background color of the composition.
 - [var layerInstructions: [AVVideoCompositionLayerInstruction]](avvideocompositioninstruction-swift.class/layerinstructions.md)
@@ -34,19 +39,13 @@ An [`AVVideoComposition`](avvideocomposition.md) object maintains an array of [`
   The time range to which the instruction applies.
 - [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/enablepostprocessing.md)
   A Boolean value that indicates whether the instruction requires post processing.
-### Identifying Source Tracks
+### Identifying source tracks
 - [var requiredSourceTrackIDs: [NSValue]](avvideocompositioninstruction-swift.class/requiredsourcetrackids.md)
   The identifiers of source video tracks that the compositor requires to compose frames for the instruction.
 - [var requiredSourceSampleDataTrackIDs: [NSNumber]](avvideocompositioninstruction-swift.class/requiredsourcesampledatatrackids.md)
   The identifiers of source sample data tracks that the compositor requires to compose frames for the instruction.
 - [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstruction-swift.class/passthroughtrackid.md)
   The track identifier from an instruction source frame.
-### Structures
-- [AVVideoCompositionInstruction.Configuration](avvideocompositioninstruction-swift.class/configuration.md)
-  Configurable properties for initializing a new AVVideoCompositionInstruction instance.
-### Initializers
-- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](avvideocompositioninstruction-swift.class/init(configuration:).md)
-  Initialize an AVVideoCompositionInstruction with a configuration.
 
 ## Relationships
 
@@ -71,18 +70,18 @@ An [`AVVideoComposition`](avvideocomposition.md) object maintains an array of [`
 
 ## See Also
 
-- [Editing and Playing HDR Video](editing-and-playing-hdr-video.md)
+- [Editing and playing HDR video](editing-and-playing-hdr-video.md)
   Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
 - [Debugging AVFoundation audio mixes, compositions, and video compositions](debugging-avfoundation-audio-mixes-compositions-and-video-compositions.md)
   Resolve common problems when creating compositions, video compositions, and audio mixes.
 - [class AVVideoComposition](avvideocomposition.md)
   An object that describes how to compose video frames at particular points in time.
+- [class AVVideoCompositionLayerInstruction](avvideocompositionlayerinstruction.md)
+  An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition.
 - [class AVMutableVideoComposition](avmutablevideocomposition.md)
   A mutable video composition subclass.
 - [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
   A mutable video composition instruction subclass.
-- [class AVVideoCompositionLayerInstruction](avvideocompositionlayerinstruction.md)
-  An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition.
 - [class AVMutableVideoCompositionLayerInstruction](avmutablevideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a mutable composition.
 

@@ -21,7 +21,7 @@ optional func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexP
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row can be moved; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the row can be moved; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

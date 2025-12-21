@@ -6,8 +6,8 @@
 An option that fails the submission of a continuous background task if the system can’t run it immediately.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 

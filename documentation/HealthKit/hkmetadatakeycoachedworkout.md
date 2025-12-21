@@ -21,7 +21,7 @@ let HKMetadataKeyCoachedWorkout: String
 
 #### Discussion
 
-Set this key’s value to [`true`](https://developer.apple.com/documentation/swift/true) if the workout was performed with a coach or personal trainer; otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this key’s value to [`true`](https://developer.apple.com/documentation/Swift/true) if the workout was performed with a coach or personal trainer; otherwise, set it to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

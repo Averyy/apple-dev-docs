@@ -22,7 +22,7 @@ init(forKeyPath keyPath: String)
 
 #### Return Value
 
-A new expression that invokes doc://com.apple.documentation/documentation/objectivec/nsobject/1416468-value with `keyPath`.
+A new expression that invokes [`value(forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKeyPath:)) with `keyPath`.
 
 ## Parameters
 

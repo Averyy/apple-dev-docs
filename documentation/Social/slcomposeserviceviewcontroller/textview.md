@@ -15,7 +15,7 @@ The editable text view in the compose view.
 
 ```swift
 @MainActor
-var textView: UITextView! { get }
+var textView: NSTextView! { get }
 ```
 
 #### Discussion

@@ -21,7 +21,7 @@ var binaryArchives: [any MTLBinaryArchive]? { get set }
 
 ## Mentions
 
-- [Compiling Binary Archives from a Custom Configuration Script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
 
 #### Discussion
 
@@ -38,9 +38,9 @@ If you specify an archive that includes a fully compiled version of this functio
 - [var options: MTLFunctionOptions](mtlfunctiondescriptor/options.md)
   Flags specifying how Metal should create the new function object.
 - [struct MTLFunctionOptions](mtlfunctionoptions.md)
-  Options that define how Metal creates the function object.
+  Options that define how Metal compiles a GPU function.
 - [class MTLLinkedFunctions](mtllinkedfunctions.md)
-  A set of related functions that Metal links to when necessary to create the function object.
+  A set of related functions that Metal links to when necessary to create the function instance.
 
 
 ---

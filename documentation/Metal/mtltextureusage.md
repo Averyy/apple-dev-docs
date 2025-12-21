@@ -21,7 +21,7 @@ struct MTLTextureUsage
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Overview
 
@@ -37,22 +37,22 @@ In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to 
 
 ## Topics
 
-### Specifying Texture Usage Options
+### Specifying texture usage options
 - [static var unknown: MTLTextureUsage](mtltextureusage/unknown.md)
   An option for a texture whose usage is unknown.
 - [static var shaderRead: MTLTextureUsage](mtltextureusage/shaderread.md)
   An option for reading or sampling from the texture in a shader.
 - [static var shaderWrite: MTLTextureUsage](mtltextureusage/shaderwrite.md)
   An option for writing to the texture in a shader.
+- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
+  An option that enables atomic memory operations on texture elements in shader code.
 - [static var renderTarget: MTLTextureUsage](mtltextureusage/rendertarget.md)
   An option for rendering to the texture in a render pass.
 - [static var pixelFormatView: MTLTextureUsage](mtltextureusage/pixelformatview.md)
   An option to create texture views with a different component layout.
-### Creating Texture Usage Options
+### Creating texture usage options
 - [init(rawValue: UInt)](mtltextureusage/init(rawvalue:).md)
   Creates new, empty usage options.
-### Type Properties
-- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
 
 ## Relationships
 

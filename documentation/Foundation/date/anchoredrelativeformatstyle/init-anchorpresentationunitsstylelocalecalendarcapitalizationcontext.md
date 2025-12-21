@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Create a relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 init(anchor: Date, presentation: Date.AnchoredRelativeFormatStyle.Presentation = .numeric, unitsStyle: Date.AnchoredRelativeFormatStyle.UnitsStyle = .wide, locale: Locale = .autoupdatingCurrent, calendar: Calendar = .autoupdatingCurrent, capitalizationContext: FormatStyleCapitalizationContext = .unknown)
 ```
+
+## Parameters
+
+- `anchor`: The date the formatted output is referring to.
 
 
 ---

@@ -59,13 +59,6 @@
 ### Initializers
 - [init()](int/init.md)
   Creates a new value equal to zero.
-- [init(String, format: IntegerFormatStyle<Self>, lenient: Bool) throws](int/init(_:format:lenient:)-3wt01.md)
-- [init(String, format: IntegerFormatStyle<Self>.Percent, lenient: Bool) throws](int/init(_:format:lenient:)-53nr7.md)
-- [init(String, format: IntegerFormatStyle<Self>.Currency, lenient: Bool) throws](int/init(_:format:lenient:)-5v9xl.md)
-- [init<S>(S.ParseInput, strategy: S) throws](int/init(_:strategy:)-4shgk.md)
-  Initialize an instance by parsing `value` with the given `strategy`.
-- [init<S>(S.ParseInput, strategy: S) throws](int/init(_:strategy:)-wdxu.md)
-  Initialize an instance by parsing `value` with the given `strategy`.
 - [init<Other>(clamping: Other)](int/init(clamping:).md)
   Creates a new instance with the representable value that’s closest to the given integer.
 - [init<T>(truncatingIfNeeded: T)](int/init(truncatingifneeded:).md)
@@ -76,12 +69,6 @@
 - [var description: String](int/description.md)
   A textual representation of this value.
 ### Instance Methods
-- [func formatted() -> String](int/formatted.md)
-  Format `self` using `IntegerFormatStyle()`
-- [func formatted<S>(S) -> S.FormatOutput](int/formatted(_:)-36hqc.md)
-  Format `self` with the given format.
-- [func formatted<S>(S) -> S.FormatOutput](int/formatted(_:)-6o0zj.md)
-  Format `self` with the given format. `self` is first converted to `S.FormatInput` type, then format with the given format.
 - [func isMultiple(of: Self) -> Bool](int/ismultiple(of:).md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 - [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](int/quotientandremainder(dividingby:).md)

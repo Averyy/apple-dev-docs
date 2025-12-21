@@ -24,9 +24,7 @@ Returns true if the OSCP response was accessible, false otherwise.
 
 #### Discussion
 
-```None
- Get the OCSP response from the protocol instance peer.
-```
+Get the OCSP response from the protocol instance peer.
 
 ## Parameters
 

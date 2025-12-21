@@ -6,7 +6,7 @@
 Represents an Animation Resource on the entity The path here corresponds to the path to the animation resource in the entity hierarchy (for e.g. “root/diver/walk”)
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

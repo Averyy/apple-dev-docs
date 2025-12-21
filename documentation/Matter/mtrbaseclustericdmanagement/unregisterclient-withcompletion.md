@@ -22,7 +22,7 @@ func unregisterClient(with params: MTRICDManagementClusterUnregisterClientParams
 
 #### Discussion
 
-Unregister a client from an end device
+This command allows a client to unregister itself with the ICD.
 
 
 ---

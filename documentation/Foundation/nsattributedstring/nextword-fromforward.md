@@ -16,7 +16,7 @@ func nextWord(from location: Int, forward isForward: Bool) -> Int
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this is the first character after `index` that begins a word; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it’s the first character before `index` that begins a word, whether `index` is located within a word or not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this is the first character after `index` that begins a word; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it’s the first character before `index` that begins a word, whether `index` is located within a word or not.
 
 #### Discussion
 

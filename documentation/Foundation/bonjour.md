@@ -14,7 +14,7 @@ Advertise services for easy discovery on local networks, or discover services ad
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 ### Service Discovery
 - [class NetServiceBrowser](netservicebrowser.md)
   A network service browser that finds published services on a network using multicast DNS.

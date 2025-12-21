@@ -18,7 +18,7 @@ object PasswordHash
 
 ### Objects
 - [object PasswordHash.SALTED-SHA512-PBKDF2](passwordhash/salted-sha512-pbkdf2-data.dictionary.md)
-  A dictionary that contains the elements you use to create the password hash.
+  A dictionary that contains the elements to create the password hash.
 
 
 ---

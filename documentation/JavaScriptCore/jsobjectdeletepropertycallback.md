@@ -21,7 +21,7 @@ typealias JSObjectDeletePropertyCallback = (JSContextRef?, JSObjectRef?, JSStrin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the deletion of `propertyName` succeeds; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the deletion of `propertyName` succeeds; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -31,7 +31,7 @@ If you name your function `DeleteProperty`, you declare it like this:
 bool DeleteProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef* exception);
 ```
 
-If this function returns [`false`](https://developer.apple.com/documentation/swift/false), the delete request forwards to the object’s statically declared properties, and then its parent class chain (which includes the default object class).
+If this function returns [`false`](https://developer.apple.com/documentation/Swift/false), the delete request forwards to the object’s statically declared properties, and then its parent class chain (which includes the default object class).
 
 ## Parameters
 

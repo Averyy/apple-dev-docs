@@ -19,6 +19,11 @@ The configuration.
 var configuration: TimeSeriesClassifierConfiguration
 ```
 
+## See Also
+
+- [var labels: Set<Label>](timeseriesclassifier/labels.md)
+  The set of possible labels.
+
 
 ---
 

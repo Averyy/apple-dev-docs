@@ -33,8 +33,10 @@ For more information, read [`Optimizing your app for Assistive Access`](https://
   The app’s white-point adaptivity style, enabled on devices with True Tone displays.
 - [UIViewGroupOpacity](information-property-list/uiviewgroupopacity.md)
   A Boolean value that indicates whether Core Animation sublayers inherit the opacity of their superlayer.
-- [UIRequiresFullScreen](information-property-list/uirequiresfullscreen.md)
-  A Boolean value that indicates whether an iPad app is capable of sharing the screen with other apps.
+- [UIRequiresFullScreenIgnoredStartingWithVersion](information-property-list/uirequiresfullscreenignoredstartingwithversion.md)
+  A string value that specifies a system version after which the system ignores the requires full screen key.
+- [UISupportsAssistiveAccess](information-property-list/uisupportsassistiveaccess.md)
+  A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access.
 - [NSPrefersDisplaySafeAreaCompatibilityMode](information-property-list/nsprefersdisplaysafeareacompatibilitymode.md)
   A Boolean value that indicates whether the app prefers to run in compatibility mode when necessary.
 - [NSAccentColorName](information-property-list/nsaccentcolorname.md)

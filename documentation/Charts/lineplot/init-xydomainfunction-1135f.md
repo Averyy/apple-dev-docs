@@ -32,6 +32,15 @@ Parameters:
 
 > **Note**: For x values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
 
+## See Also
+
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6m9gg.md)
+  Creates a mark that graphs a function y = f(x).
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-17i43.md)
+  Creates a mark that graphs a function y = f(x).
+- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6gv5v.md)
+  Creates a mark that graphs a function y = f(x).
+
 
 ---
 

@@ -10,7 +10,7 @@ When you build, run, test, profile, or archive part of your project, Xcode uses 
 
 To view your project’s current schemes, click the scheme name in the toolbar of your project window. Xcode displays a pop-up menu with a list of current schemes at the top, and commands to edit, create, and manage schemes at the bottom.
 
-![A pop-up menu displays a list of schemes present in an Xcode project.](https://docs-assets.developer.apple.com/published/2d0e5631004d1eec48b559593fd8ab0d/build-select-scheme%402x.png)
+![A pop-up menu displays a list of schemes present in an Xcode project.](https://docs-assets.developer.apple.com/published/f7afef3afd8dd907dae0a062d8309f1b/build-select-scheme%402x.png)
 
 To view and modify your project’s current schemes, select Manage Schemes. For example, disable automatic creation of schemes for new targets, and change scheme attributes such as which project contains the scheme. By default, Xcode shares schemes with other team members.
 

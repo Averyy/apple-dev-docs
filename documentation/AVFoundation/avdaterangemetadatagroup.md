@@ -22,13 +22,13 @@ class AVDateRangeMetadataGroup
 
 ## Topics
 
-### Creating a Date Range Group
+### Creating a date range group
 - [init(items: [AVMetadataItem], start: Date, end: Date?)](avdaterangemetadatagroup/init(items:start:end:).md)
   Initializes an instance of `AVDateRangeMetadataGroup` with a collection of metadata items.
-### Accessing the Metadata
+### Accessing the metadata
 - [var items: [AVMetadataItem]](avdaterangemetadatagroup/items.md)
   An array of associated metadata items.
-### Accessing the Date Range
+### Accessing the date range
 - [var startDate: Date](avdaterangemetadatagroup/startdate.md)
   The start date for the metadata date range group.
 - [var endDate: Date?](avdaterangemetadatagroup/enddate.md)
@@ -52,7 +52,7 @@ class AVDateRangeMetadataGroup
 
 ## See Also
 
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
 - [class AVMetadataGroup](avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.

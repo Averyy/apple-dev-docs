@@ -23,7 +23,7 @@ Some geometry values may use sizing and positioning with different units. In som
 
 ## Topics
 
-### Unit Types
+### Unit types
 - [AVCaptionUnitsType.cells](avcaptionunitstype/cells.md)
   A cell-based unit type.
 - [AVCaptionUnitsType.percent](avcaptionunitstype/percent.md)

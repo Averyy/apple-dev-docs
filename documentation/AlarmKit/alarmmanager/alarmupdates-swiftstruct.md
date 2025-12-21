@@ -6,8 +6,8 @@
 An async sequence that publishes whenever an alarm changes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -24,11 +24,6 @@ struct AlarmUpdates
   Returns an asynchronous iterator over the elements of this sequence.
 - [AlarmManager.AlarmUpdates.Element](alarmmanager/alarmupdates-swift.struct/element.md)
   A type representing the sequence’s elements.
-### Type Aliases
-- [AlarmManager.AlarmUpdates.AsyncIterator](alarmmanager/alarmupdates-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](alarmmanager/alarmupdates-swift.struct/asyncsequence-implementations.md)
 
 ## Relationships
 

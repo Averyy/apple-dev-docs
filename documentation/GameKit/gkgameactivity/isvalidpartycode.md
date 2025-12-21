@@ -6,12 +6,12 @@
 Checks whether a party code is in valid format.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,9 +25,7 @@ class func isValidPartyCode(_ partyCode: String) -> Bool
 
 #### Discussion
 
-Party code should be two parts of strings with the same length (2-6) connected with a dash, and the code can be either pure digits (0-9), or both parts are uppercased characters from `validPartyCodeAlphabet`.
-
-> **Note**: `validPartyCodeAlphabet` for allowed characters.
+Party code should be two parts of strings with the same length (2-6) connected with a dash, and the code can be either pure digits (0-9), or both parts are uppercased characters from [`validPartyCodeAlphabet`](gkgameactivity/validpartycodealphabet.md).
 
 ## See Also
 

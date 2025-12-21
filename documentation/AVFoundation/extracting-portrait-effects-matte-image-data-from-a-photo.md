@@ -1,4 +1,4 @@
-# Extracting Portrait Effects Matte Image Data from a Photo
+# Extracting Portrait Effects matte image data from a photo
 
 **Framework**: AVFoundation
 

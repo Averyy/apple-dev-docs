@@ -60,8 +60,6 @@ _ = try fileManager.replaceItemAt(permanentURL,
 
 ## See Also
 
-- [class func compileModel(at: URL) throws -> URL](mlmodel/compilemodel(at:)-6442s.md)
-  Compiles a model on the device to update the model in your app.
 - [Model Integration Samples](model-integration-samples.md)
   Integrate tabular, image, and text classifcation models into your app.
 

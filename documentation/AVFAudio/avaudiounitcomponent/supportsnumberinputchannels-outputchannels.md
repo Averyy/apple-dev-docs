@@ -16,7 +16,7 @@ func supportsNumberInputChannels(_ numInputChannels: Int, outputChannels numOutp
 
 #### Return Value
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) if the audio unit component supports the specified number of input and output channels; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+A value of [`true`](https://developer.apple.com/documentation/Swift/true) if the audio unit component supports the specified number of input and output channels; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

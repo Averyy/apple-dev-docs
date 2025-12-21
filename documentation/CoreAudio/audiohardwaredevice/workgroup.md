@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A WorkGroup that represents the thread workgroup the device’s IO thread belongs to.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

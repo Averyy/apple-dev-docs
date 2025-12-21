@@ -20,7 +20,7 @@ object AppPreview
 - [object AppPreview.Attributes](apppreview/attributes-data.dictionary.md)
   Attributes that describe an App Previews resource.
 - [object AppPreview.Relationships](apppreview/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 ## See Also
 

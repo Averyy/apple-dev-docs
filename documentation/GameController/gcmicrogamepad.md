@@ -26,7 +26,7 @@ The micro gamepad controller profile supports the following input elements:
 - Two digital face buttons (A and X).
 - One analog directional pad (D-pad) that functions as a touchpad.
 
-Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ![An illustration of a Siri Remote with callouts for the digital face buttons, the Button menu, and the analog directional pad.](https://docs-assets.developer.apple.com/published/484a6ffc804aba9b7e2d68ed5f16ad37/media-3830807%402x.png)
 

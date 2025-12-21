@@ -22,12 +22,6 @@ struct SnowfallAmount
 
 ## Topics
 
-### Operators
-- [static func == (SnowfallAmount, SnowfallAmount) -> Bool](snowfallamount/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](snowfallamount/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var amount: Measurement<UnitLength>](snowfallamount/amount.md)
   The estimated amount of snowfall as depth of snow crystals for the period.
@@ -41,11 +35,6 @@ struct SnowfallAmount
   The minimum amount of snowfall as depth of snow crystals for the period.
 - [var minimumLiquidEquivalent: Measurement<UnitLength>](snowfallamount/minimumliquidequivalent.md)
   The minimum amount of snowfall as liquid equivalent for the period.
-### Instance Methods
-- [func encode(to: any Encoder) throws](snowfallamount/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](snowfallamount/equatable-implementations.md)
 
 ## Relationships
 

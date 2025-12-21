@@ -19,7 +19,7 @@ enum FontWeight
 
 ## Topics
 
-### Font Weights
+### Font weights
 - [AVCaption.FontWeight.unknown](avcaption/fontweight/unknown.md)
   An unknown font weight.
 - [AVCaption.FontWeight.normal](avcaption/fontweight/normal.md)

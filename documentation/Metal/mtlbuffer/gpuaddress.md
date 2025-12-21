@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var gpuAddress: UInt64 { get }
+var gpuAddress: MTLGPUAddress { get }
 ```
 
 

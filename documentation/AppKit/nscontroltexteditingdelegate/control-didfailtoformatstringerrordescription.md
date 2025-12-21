@@ -17,7 +17,7 @@ optional func control(_ control: NSControl, didFailToFormatString string: String
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value in the string parameter should be accepted as is; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the value in the parameter should be rejected.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the value in the string parameter should be accepted as is; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the value in the parameter should be rejected.
 
 #### Discussion
 
@@ -31,7 +31,7 @@ Your implementation of this method should evaluate the error or query the user a
 
 ## See Also
 
-- [func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../Foundation/Formatter/getObjectValue(_:for:errorDescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../Foundation/Formatter/getObjectValue(_:for:errorDescription:).md)
   The default implementation of this method raises an exception.
 
 

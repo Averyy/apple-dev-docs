@@ -17,7 +17,7 @@ var frameRotation: CGFloat { get set }
 
 #### Discussion
 
-Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the origin of the frame rectangle. Changing the value of this property does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
+Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the origin of the frame rectangle. Changing the value of this property does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the view to be redisplayed.
 
 Changing the frame rotation value results in the posting of an [`frameDidChangeNotification`](nsview/framedidchangenotification.md) to the default notification center if the view is configured to do so.
 
@@ -32,7 +32,7 @@ Changing the frame rotation value results in the posting of an [`frameDidChangeN
 - [func setFrameSize(NSSize)](nsview/setframesize(_:).md)
   Sets the size of the view’s frame rectangle to the specified dimensions, resizing it within its superview without affecting its coordinate system.
 - [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
-  Posted whenever the view’s frame rectangle changes to a new value, but only when the view’s [`postsFrameChangedNotifications`](nsview/postsframechangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+  A notification that posts when the view’s frame rectangle changes to a new value.
 - [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 

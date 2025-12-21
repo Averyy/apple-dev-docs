@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app is requesting the ability to connect to Bluetooth peripherals.
+A message that tells people why the app is requesting the ability to connect to Bluetooth peripherals.
 
 **Availability**:
 - iOS 6.0+
@@ -20,7 +20,7 @@ For deployment targets earlier than iOS 13, add both [`NSBluetoothAlwaysUsageDes
 ## See Also
 
 - [NSBluetoothAlwaysUsageDescription](information-property-list/nsbluetoothalwaysusagedescription.md)
-  A message that tells the user why the app needs access to Bluetooth.
+  A message that tells people why the app needs access to Bluetooth.
 
 
 ---

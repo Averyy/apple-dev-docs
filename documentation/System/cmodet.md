@@ -24,10 +24,8 @@ typealias CModeT = mode_t
 
 - [init(rawValue: CModeT)](filepermissions/init(rawvalue:).md)
   Create a strongly-typed file permission from a raw C value.
-- [let rawValue: CModeT](filepermissions/rawvalue-swift.property.md)
+- [let rawValue: CModeT](filepermissions/rawvalue.md)
   The raw C file permissions.
-- [FilePermissions.RawValue](filepermissions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

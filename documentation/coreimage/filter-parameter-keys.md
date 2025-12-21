@@ -70,11 +70,11 @@ These keys represent some of the most commonly used input parameters. A filter c
 - [let kCIInputVersionKey: String](kciinputversionkey.md)
   Version Key
 - [static let standard: CIDynamicRangeOption](cidynamicrangeoption/standard.md)
-  Standard dynamic range. Images with `contentHeadroom` metadata will be tone mapped to a maximum pixel value of 1.0.
+  Use Standard dynamic range.
 - [static let constrainedHigh: CIDynamicRangeOption](cidynamicrangeoption/constrainedhigh.md)
-  Use extended dynamic range, but brightness is modulated to optimize for co-existence with other composited content. For best results, images should contain `contentAverageLightLevel` metadata.
+  Use extended dynamic range, but brightness is modulated to optimize for co-existence with other composited content.
 - [static let high: CIDynamicRangeOption](cidynamicrangeoption/high.md)
-  Use High dynamic range. Provides the best HDR quality. This needs to be reserved for situations where the user is focused on the media, such as larger views in an image editing/viewing app, or annotating/drawing with HDR colors
+  Use High dynamic range.
 - [static let baselineExposure: CIRAWFilterOption](cirawfilteroption/baselineexposure.md)
   The amount of baseline exposure applied.
 - [static let disableGamutMap: CIRAWFilterOption](cirawfilteroption/disablegamutmap.md)

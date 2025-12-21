@@ -28,6 +28,16 @@ class MTRDeviceAttestationDeviceInfo
 - [var dacPAICertificate: Data](mtrdeviceattestationdeviceinfo/dacpaicertificate.md)
 - [var productID: NSNumber?](mtrdeviceattestationdeviceinfo/productid.md)
 - [var vendorID: NSNumber?](mtrdeviceattestationdeviceinfo/vendorid.md)
+- [var attestationChallenge: Data](mtrdeviceattestationdeviceinfo/attestationchallenge.md)
+  The attestation challenge from the secure session.
+- [var attestationNonce: Data](mtrdeviceattestationdeviceinfo/attestationnonce.md)
+  The attestation nonce from the AttestationRequest command.
+- [var certificationDeclaration: Data?](mtrdeviceattestationdeviceinfo/certificationdeclaration.md)
+  The certification declaration of the device, if available.  This is a DER-encoded string representing a CMS-formatted certification declaration.  May be nil only if attestation verification failed.
+- [var elementsSignature: Data](mtrdeviceattestationdeviceinfo/elementssignature.md)
+  A signature, using the device attestation private key of the device that sent the attestation information, over the concatenation of elementsTLV and attestationChallenge.
+- [var elementsTLV: Data](mtrdeviceattestationdeviceinfo/elementstlv.md)
+  The TLV-encoded attestation_elements_message that was used to find the certificationDeclaration (possibly unsuccessfully).
 
 ## Relationships
 

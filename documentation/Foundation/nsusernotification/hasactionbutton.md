@@ -16,7 +16,7 @@ var hasActionButton: Bool { get set }
 
 #### Discussion
 
-Set to [`false`](https://developer.apple.com/documentation/swift/false) if the notification has no action button. This is the case for notifications that are purely for information and have no user action. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Set to [`false`](https://developer.apple.com/documentation/Swift/false) if the notification has no action button. This is the case for notifications that are purely for information and have no user action. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

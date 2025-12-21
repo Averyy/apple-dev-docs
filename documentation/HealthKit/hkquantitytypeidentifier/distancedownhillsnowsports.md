@@ -25,7 +25,7 @@ static let distanceDownhillSnowSports: HKQuantityTypeIdentifier
 
 #### Discussion
 
-These samples use length units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use length units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). During downhill skiing workouts, the system automatically records distance samples on Apple Watch.
 
 ## See Also
 

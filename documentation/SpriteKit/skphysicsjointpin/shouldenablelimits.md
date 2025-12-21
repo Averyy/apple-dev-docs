@@ -22,7 +22,7 @@ var shouldEnableLimits: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), the [`lowerAngleLimit`](skphysicsjointpin/loweranglelimit.md) and [`upperAngleLimit`](skphysicsjointpin/upperanglelimit.md) properties are used to limit the angle of the pin joint.
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true), the [`lowerAngleLimit`](skphysicsjointpin/loweranglelimit.md) and [`upperAngleLimit`](skphysicsjointpin/upperanglelimit.md) properties are used to limit the angle of the pin joint.
 
 ## See Also
 

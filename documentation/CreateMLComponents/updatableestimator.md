@@ -28,24 +28,8 @@ protocol UpdatableEstimator<Transformer> : Estimator
 - [func adaptedAsTemporal() -> UpdatableEstimatorToTemporalAdaptor<Self>](updatableestimator/adaptedastemporal.md)
   Exposes this estimator as a temporal estimator.
 ### Appending
-- [func appending<Other>(Other) -> some UpdatableEstimator<ComposedTransformer<Self.Transformer, Other>>
-](updatableestimator/appending(_:)-2a8g6.md)
-  Composes this updatable estimator with a transformer.
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>>
-](updatableestimator/appending(_:)-2zfb9.md)
-  Composes this updatable estimator with an updatable temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other>>
-](updatableestimator/appending(_:)-376x7.md)
-  Composes this updatable estimator with a temporal transformer.
-- [func appending<Other>(Other) -> some UpdatableSupervisedTemporalEstimator<ComposedTemporalTransformer<TransformerToTemporalAdaptor<Self.Transformer>, Other.Transformer>, Other.Annotation>
-](updatableestimator/appending(_:)-4wr8e.md)
-  Composes this updatable estimator with an updatable supervised temporal estimator.
-- [func appending<Other>(Other) -> some UpdatableEstimator<ComposedTransformer<Self.Transformer, Other.Transformer>>
-](updatableestimator/appending(_:)-8ic2g.md)
+- [func appending(_:)](updatableestimator/appending(_:).md)
   Composes this updatable estimator with another updatable estimator.
-- [func appending<Other>(Other) -> some UpdatableSupervisedEstimator<ComposedTransformer<Self.Transformer, Other.Transformer>, Other.Annotation>
-](updatableestimator/appending(_:)-9m5rg.md)
-  Composes this updatable estimator with an updatable supervised estimator.
 ### Encoding and decoding
 - [func encodeWithOptimizer(Self.Transformer, to: inout any EstimatorEncoder) throws](updatableestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.

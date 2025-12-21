@@ -21,9 +21,9 @@ var obscuresBackgroundDuringPresentation: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the search controller obscures the view controller containing your searchable content as soon as the user interacts with the search bar. When this property is [`false`](https://developer.apple.com/documentation/swift/false), the search controller doesn’t obscure the original view controller. This property controls only whether the original view controller is initially obscured. When the user enters text in the search bar, the search controller immediately displays the search results controller with the results.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the search controller obscures the view controller containing your searchable content as soon as the user interacts with the search bar. When this property is [`false`](https://developer.apple.com/documentation/Swift/false), the search controller doesn’t obscure the original view controller. This property controls only whether the original view controller is initially obscured. When the user enters text in the search bar, the search controller immediately displays the search results controller with the results.
 
-If you use the same view controller to display the searchable content and search results, it’s recommended that you set this property to [`false`](https://developer.apple.com/documentation/swift/false). The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If you use the same view controller to display the searchable content and search results, it’s recommended that you set this property to [`false`](https://developer.apple.com/documentation/Swift/false). The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

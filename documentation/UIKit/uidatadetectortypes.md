@@ -58,8 +58,12 @@ struct UIDataDetectorTypes
 
 ## See Also
 
-- [var dataDetectorTypes: UIDataDetectorTypes](uitextview/datadetectortypes.md)
-  The types of data that convert to tappable URLs in the text view.
+- [UIWebView.NavigationType](uiwebview/navigationtype.md)
+  Constant indicating the user’s action.
+- [UIWebView.PaginationBreakingMode](uiwebview/paginationbreakingmode-swift.enum.md)
+  The manner in which column- or page-breaking occurs.
+- [UIWebView.PaginationMode](uiwebview/paginationmode-swift.enum.md)
+  The layout of content in the web view, which determines the direction that the pages flow.
 
 
 ---

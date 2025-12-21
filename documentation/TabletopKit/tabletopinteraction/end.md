@@ -18,6 +18,12 @@ func end()
 
 - [TabletopInteraction.Delegate](tabletopinteraction/delegate.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
+- [TabletopInteraction.TossOutcome](tabletopinteraction/tossoutcome.md)
+  An object representing the final outcome of tossing one equipment, as it appears at the end of its simulation.
+- [func addAction(some TabletopAction)](tabletopinteraction/addaction(_:)-1cety.md)
+  Submit an action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
+- [func addAction(some CustomAction)](tabletopinteraction/addaction(_:)-4rx16.md)
+  Submit a custom action tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func addActions(some Sequence<any TabletopAction>)](tabletopinteraction/addactions(_:).md)
   Submit a collection of actions tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func toss(equipmentID: EquipmentIdentifier, as: TossableRepresentation, linearVelocity: Vector3D?, angularVelocity: Vector3D?)](tabletopinteraction/toss(equipmentid:as:linearvelocity:angularvelocity:).md)

@@ -6,8 +6,8 @@
 A drawable that is targeting the built-in display, this is what a user will see in the device.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

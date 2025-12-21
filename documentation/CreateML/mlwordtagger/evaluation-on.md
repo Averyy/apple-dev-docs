@@ -24,10 +24,14 @@ Word tagger metrics.
 
 ## See Also
 
-- [func evaluation(on: MLDataTable, tokenColumn: String, labelColumn: String) -> MLWordTaggerMetrics](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:)-31x1l.md)
+- [func evaluation(on:tokenColumn:labelColumn:)](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).md)
   Computes evaluation metrics.
-- [func evaluation(on: DataFrame, tokenColumn: String, labelColumn: String) -> MLWordTaggerMetrics](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:)-7jhx7.md)
-  Computes evaluation metrics.
+- [let trainingMetrics: MLWordTaggerMetrics](mlwordtagger/trainingmetrics.md)
+  Measurements of the tagger’s performance on the training data set.
+- [let validationMetrics: MLWordTaggerMetrics](mlwordtagger/validationmetrics.md)
+  Measurements of the tagger’s performance on the validation data set.
+- [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)
+  Metrics you use to evaluate a word tagger’s performance.
 
 
 ---

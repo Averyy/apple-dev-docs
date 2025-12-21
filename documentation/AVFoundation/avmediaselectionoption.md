@@ -22,28 +22,28 @@ class AVMediaSelectionOption
 
 ## Mentions
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
 
 ## Topics
 
-### Accessing Media Information
+### Accessing media information
 - [var mediaType: AVMediaType](avmediaselectionoption/mediatype.md)
   The media type of the media data.
 - [var mediaSubTypes: [NSNumber]](avmediaselectionoption/mediasubtypes.md)
   The media sub-types of the media data associated with the option.
 - [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avmediaselectionoption/hasmediacharacteristic(_:).md)
   Returns a Boolean value that indicates whether the receiver has media with the given media characteristic.
-### Managing Metadata
+### Managing metadata
 - [var commonMetadata: [AVMetadataItem]](avmediaselectionoption/commonmetadata.md)
   An array of metadata items for each common metadata key for which a value is available.
 - [var availableMetadataFormats: [String]](avmediaselectionoption/availablemetadataformats.md)
   The metadata formats that contain metadata associated with the option.
 - [func metadata(forFormat: String) -> [AVMetadataItem]](avmediaselectionoption/metadata(forformat:).md)
   Returns an array of metadata items—one for each metadata item in the container of a given format.
-### Determining Playability
+### Determining playability
 - [var isPlayable: Bool](avmediaselectionoption/isplayable.md)
   A Boolean value that indicates whether the media selection option is playable.
-### Getting the Language and Locale Settings
+### Getting the language and locale settings
 - [var displayName: String](avmediaselectionoption/displayname.md)
   A string suitable for display using the current system locale.
 - [func displayName(with: Locale) -> String](avmediaselectionoption/displayname(with:).md)
@@ -52,13 +52,13 @@ class AVMediaSelectionOption
   The locale for which the media option was authored.
 - [var extendedLanguageTag: String?](avmediaselectionoption/extendedlanguagetag.md)
   The IETF BCP 47 language tag associated with the option
-### Getting the Associated Media Selection Option
+### Getting the associated media selection option
 - [func associatedMediaSelectionOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](avmediaselectionoption/associatedmediaselectionoption(in:).md)
   Returns a media selection option associated with the receiver in a given group.
-### Creating a Now Playing Language Option
+### Creating a Now Playing language option
 - [func makeNowPlayingInfoLanguageOption() -> MPNowPlayingInfoLanguageOption?](avmediaselectionoption/makenowplayinginfolanguageoption.md)
   Creates a language option for a media selection option.
-### Creating a Property List Representation
+### Creating a property list representation
 - [func propertyList() -> Any](avmediaselectionoption/propertylist.md)
   Returns a serializable property list that’s sufficient to identify the option within its group.
 
@@ -77,7 +77,7 @@ class AVMediaSelectionOption
 
 ## See Also
 
-- [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 - [class AVMediaSelection](avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
@@ -87,6 +87,12 @@ class AVMediaSelectionOption
   A mutable object that represents a complete rendition of media selection options on an asset.
 - [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 
 ---

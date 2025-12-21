@@ -14,9 +14,18 @@ Get information about the image associated with a leaderboard localization.
 
 ## See Also
 
-- [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
-  Get a list of localized metadata for a leaderboard.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
+- [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)
+  Get information about a specific Game Center leaderboard localization.
+- [List all images for a Game Center leaderboard localization](get-v2-gamecenterleaderboardlocalizations-_id_-image.md)
+  Get a list of images for a specific Game Center leaderboard localization.
+- [Get all image IDs for a Game Center leaderboard localization](get-v2-gamecenterleaderboardlocalizations-_id_-relationships-image.md)
+  Get a list of image resource IDs for a specific Game Center leaderboard localization.
+- [Create a Game Center leaderboard localization](post-v2-gamecenterleaderboardlocalizations.md)
+  Create a Game Center leaderboard localization.
+- [Modify a Game Center leaderboard localization](patch-v2-gamecenterleaderboardlocalizations-_id_.md)
+  Update a specific Game Center leaderboard localization.
+- [Delete a Game Center leaderboard localization](delete-v2-gamecenterleaderboardlocalizations-_id_.md)
+  Delete a specific Game Center leaderboard localization.
 - [Read leaderboard localization information](get-v1-gamecenterleaderboardlocalizations-_id_.md)
   Get information about a leaderboard localization.
 - [GET /v1/gameCenterLeaderboardLocalizations/{id}/relationships/gameCenterLeaderboardImage](get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)

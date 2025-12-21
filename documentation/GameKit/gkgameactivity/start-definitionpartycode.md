@@ -6,12 +6,12 @@
 Creates and starts a new game activity with a custom party code.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,14 +25,14 @@ class func start(definition activityDefinition: GKGameActivityDefinition, partyC
 
 #### Discussion
 
-The party code will be converted to uppercased.
+The framework converts the party code to uppercase.
 
 ## See Also
 
 - [init(definition: GKGameActivityDefinition)](gkgameactivity/init(definition:).md)
-  Initializes a game activity with definition.
+  Creates a game activity with definition.
 - [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](gkgameactivity/start(definition:).md)
-  Initializes and starts a game activity with definition.
+  Creates and starts a game activity with a definition.
 
 
 ---

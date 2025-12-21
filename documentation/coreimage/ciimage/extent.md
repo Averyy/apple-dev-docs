@@ -32,7 +32,7 @@ This rectangle specifies the extent of the image in working space coordinates.
 - [var definition: CIFilterShape](ciimage/definition.md)
   Returns a filter shape object that represents the domain of definition of the image.
 - [var properties: [String : Any]](ciimage/properties.md)
-  A dictionary containing metadata about the image.
+  Returns the metadata properties dictionary of the image.
 - [var url: URL?](ciimage/url.md)
   The URL from which the image was loaded.
 - [var colorSpace: CGColorSpace?](ciimage/colorspace.md)

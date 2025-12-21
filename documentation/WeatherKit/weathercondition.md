@@ -22,9 +22,6 @@ enum WeatherCondition
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](weathercondition/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Getting visibility properties
 - [WeatherCondition.blowingDust](weathercondition/blowingdust.md)
   Blowing dust or sandstorm.
@@ -105,20 +102,6 @@ enum WeatherCondition
   A localized accessibility description describing the weather condition.
 - [var description: String](weathercondition/description.md)
   A localized string describing the current condition.
-### Instance Properties
-- [var rawValue: String](weathercondition/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [WeatherCondition.AllCases](weathercondition/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [WeatherCondition.RawValue](weathercondition/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [WeatherCondition]](weathercondition/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](weathercondition/equatable-implementations.md)
-- [RawRepresentable Implementations](weathercondition/rawrepresentable-implementations.md)
 
 ## Relationships
 

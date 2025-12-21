@@ -6,7 +6,7 @@
 Determines whether this device supports the accessory tracking provider.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

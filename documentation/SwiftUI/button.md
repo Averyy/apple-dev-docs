@@ -23,9 +23,9 @@ struct Button<Label> where Label : View
 ## Mentions
 
 - [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Configuring views](configuring-views.md)
 - [Managing search interface activation](managing-search-interface-activation.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -198,6 +198,7 @@ You can also create custom styles. To add a custom appearance with standard inte
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

@@ -6,11 +6,11 @@
 A segment containing text.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,24 +21,9 @@ struct TextSegment
 ## Topics
 
 ### Creating a text segment
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(id: String, content: String)](transcript/textsegment/init(id:content:).md)
 ### Inspecting a text segment
 - [var content: String](transcript/textsegment/content.md)
-- [var id: String](transcript/textsegment/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-- [Transcript.TextSegment.ID](transcript/textsegment/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Encoding a text segment
-- [func encode(to: any Encoder) throws](transcript/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing text segments
-- [static func == (Transcript.TextSegment, Transcript.TextSegment) -> Bool](transcript/textsegment/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [CustomStringConvertible Implementations](transcript/textsegment/customstringconvertible-implementations.md)
-- [Equatable Implementations](transcript/textsegment/equatable-implementations.md)
 
 ## Relationships
 
@@ -55,7 +40,7 @@ struct TextSegment
 - [Transcript.Instructions](transcript/instructions.md)
   Instructions you provide to the model that define its behavior.
 - [Transcript.Prompt](transcript/prompt.md)
-  A prompt from the user asking the model.
+  A prompt from the user to the model.
 - [Transcript.Response](transcript/response.md)
   A response from the model.
 - [Transcript.ResponseFormat](transcript/responseformat.md)

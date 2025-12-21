@@ -21,14 +21,14 @@ var normalizedCoordinates: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), texture coordinates are from `0.0` to `1.0`. If [`false`](https://developer.apple.com/documentation/swift/false), texture coordinates are from `0` to `width` for horizontal coordinates and `0` to `height` for vertical coordinates. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](https://developer.apple.com/documentation/Swift/true), texture coordinates are from `0.0` to `1.0`. If [`false`](https://developer.apple.com/documentation/Swift/false), texture coordinates are from `0` to `width` for horizontal coordinates and `0` to `height` for vertical coordinates. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Non-normalized texture coordinates should only be used with 1D and 2D textures with the following conditions; otherwise, the results of sampling are undefined.
 
 - The [`MTLSamplerAddressMode.clampToEdge`](mtlsampleraddressmode/clamptoedge.md) or [`MTLSamplerAddressMode.clampToZero`](mtlsampleraddressmode/clamptozero.md) address mode.
 - The [`MTLSamplerMipFilter.notMipmapped`](mtlsamplermipfilter/notmipmapped.md) mipmap filtering option.
-- [`minFilter`](mtlsamplerdescriptor/minfilter.md) and [`magFilter`](mtlsamplerdescriptor/magfilter.md) must be equal to each other.
-- [`maxAnisotropy`](mtlsamplerdescriptor/maxanisotropy.md) must be `1`.
+- [`minFilter`](mtlsamplerdescriptor/minfilter.md) and [`magFilter`](mtlsamplerdescriptor/magfilter.md) need to be equal to each other.
+- [`maxAnisotropy`](mtlsamplerdescriptor/maxanisotropy.md) needs to be `1`.
 
 
 ---

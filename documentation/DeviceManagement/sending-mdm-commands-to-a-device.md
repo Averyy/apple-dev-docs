@@ -16,6 +16,8 @@ The MDM server sends a notification through the APNS gateway to the device, to m
 
 In place of `PushMagicValue`, substitute the actual `PushMagic` string that the device sends to the MDM server in the `TokenUpdate` message. This is the complete message. Don’t include an `aps` key, which you only use for third-party app push notifications. It’s safe to send several push notifications to a device, because APNS coalesces multiple notifications and delivers only the last one.
 
+> **Note**:  A visionOS device doesn’t receive push notifications when locked or not worn by the user.
+
 ##### Establish a Connection to the Mdm Server
 
 In response to receiving a push notification from an MDM server, a device initiates communication by establishing a TLS connection to the MDM server URL. The device validates the server’s certificate, then uses its identity as the client certificate to authentication for the connection.

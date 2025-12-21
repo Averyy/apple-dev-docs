@@ -28,6 +28,11 @@ AdAttributionKit requires the URL to be a universal link specifically for the ad
 
 - `reengagementURL`: A universal link into the advertised app that the framework attempts to open.
 
+## See Also
+
+- [func handleTap() async throws](appimpression/handletap.md)
+  Processes click-through interactions on your custom rendered ad content.
+
 
 ---
 

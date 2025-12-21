@@ -17,7 +17,7 @@ optional func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the replacement, or [`false`](https://developer.apple.com/documentation/swift/false) to reject the change.
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the replacement, or [`false`](https://developer.apple.com/documentation/Swift/false) to reject the change.
 
 #### Discussion
 

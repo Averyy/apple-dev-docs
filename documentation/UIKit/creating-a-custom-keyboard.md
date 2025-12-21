@@ -35,11 +35,11 @@ If you support multiple languages that require different keyboard layout or func
 
 If applicable to your custom keyboard, edit the keyboard extension’s `Info.plist` to configure the following options:
 
-|  | Set this to [`true`](https://developer.apple.com/documentation/swift/true) if your keyboard is capable of generating standard ASCII characters. |
+|  | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard is capable of generating standard ASCII characters. |
 | --- | --- |
-|  | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/swift/true). |
+|  | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/Swift/true). |
 |  | Set this to a string representing the primary language your keyboard supports. Use a two-character code like `nl` for Dutch, or language and country code such as `nl-BE` for Dutch in Belgium. The Settings app displays the primary language in the list of keyboards. |
-|  | Set this to [`true`](https://developer.apple.com/documentation/swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
+|  | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
 
 Set these keys in the [`NSExtension`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension) > [`NSExtensionAttributes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes) dictionary of the `Info.plist` file:
 
@@ -55,7 +55,7 @@ When designing your keyboard’s user interface, incorporate a button to switch 
 
 ![Screenshot showing the standard system keyboard.](https://docs-assets.developer.apple.com/published/0163b0e6d684e60e9d3cadfa08e83e4d/media-3570257%402x.png)
 
-Use the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property on [`UIInputViewController`](uiinputviewcontroller.md) to determine if you should display a button to switch keyboards. If the user has only one keyboard enabled, there’s no need to show a keyboard switching interface. On iPhones with Face ID, iOS automatically shows the globe icon below your keyboard view and sets this property to [`false`](https://developer.apple.com/documentation/swift/false), indicating that you shouldn’t show your button.
+Use the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property on [`UIInputViewController`](uiinputviewcontroller.md) to determine if you should display a button to switch keyboards. If the user has only one keyboard enabled, there’s no need to show a keyboard switching interface. On iPhones with Face ID, iOS automatically shows the globe icon below your keyboard view and sets this property to [`false`](https://developer.apple.com/documentation/Swift/false), indicating that you shouldn’t show your button.
 
 Configure your keyboard switching button with an action targeting the [`handleInputModeList(from:with:)`](uiinputviewcontroller/handleinputmodelist(from:with:).md) method of your input view controller subclass. The default custom keyboard template does this by adding an action to the button:
 

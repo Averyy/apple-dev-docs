@@ -1,48 +1,61 @@
 # ICLegacyReturn
 
-**Framework**: ImageCaptureCore
+**Framework**: ImageCaptureCore  
+**Kind**: struct
 
-A legacy error returned from ImageCaptureCore.
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+struct ICLegacyReturn
+```
 
 ## Topics
 
-### Error Details
-- [ICLegacyReturn](iclegacyreturn.md)
-  A legacy error returned from ImageCaptureCore.
-### Error Domain
-- [ICLegacyReturn](iclegacyreturn.md)
-  A legacy error returned from ImageCaptureCore.
-- [let ICErrorDomain: String](icerrordomain.md)
-  An error returned by the ImageCaptureCore framework.
-### Error Codes
-- [ICLegacyReturn.Code.cannotYieldDevice](iclegacyreturn/code/cannotyielddevice.md)
-- [ICLegacyReturn.Code.communicationErr](iclegacyreturn/code/communicationerr.md)
-- [ICLegacyReturn.Code.dataTypeNotFoundErr](iclegacyreturn/code/datatypenotfounderr.md)
-- [ICLegacyReturn.Code.deviceAlreadyOpenErr](iclegacyreturn/code/devicealreadyopenerr.md)
-- [ICLegacyReturn.Code.deviceGUIDNotFoundErr](iclegacyreturn/code/deviceguidnotfounderr.md)
-- [ICLegacyReturn.Code.deviceIOServicePathNotFoundErr](iclegacyreturn/code/deviceioservicepathnotfounderr.md)
-- [ICLegacyReturn.Code.deviceInternalErr](iclegacyreturn/code/deviceinternalerr.md)
-- [ICLegacyReturn.Code.deviceInvalidParamErr](iclegacyreturn/code/deviceinvalidparamerr.md)
-- [ICLegacyReturn.Code.deviceLocationIDNotFoundErr](iclegacyreturn/code/devicelocationidnotfounderr.md)
-- [ICLegacyReturn.Code.deviceMemoryAllocationErr](iclegacyreturn/code/devicememoryallocationerr.md)
-- [ICLegacyReturn.Code.deviceNotFoundErr](iclegacyreturn/code/devicenotfounderr.md)
-- [ICLegacyReturn.Code.deviceNotOpenErr](iclegacyreturn/code/devicenotopenerr.md)
-- [ICLegacyReturn.Code.deviceUnsupportedErr](iclegacyreturn/code/deviceunsupportederr.md)
-- [ICLegacyReturn.Code.extensionInternalErr](iclegacyreturn/code/extensioninternalerr.md)
-- [ICLegacyReturn.Code.fileCorruptedErr](iclegacyreturn/code/filecorruptederr.md)
-- [ICLegacyReturn.Code.frameworkInternalErr](iclegacyreturn/code/frameworkinternalerr.md)
-- [ICLegacyReturn.Code.indexOutOfRangeErr](iclegacyreturn/code/indexoutofrangeerr.md)
-- [ICLegacyReturn.Code.invalidObjectErr](iclegacyreturn/code/invalidobjecterr.md)
-- [ICLegacyReturn.Code.invalidPropertyErr](iclegacyreturn/code/invalidpropertyerr.md)
-- [ICLegacyReturn.Code.invalidSessionErr](iclegacyreturn/code/invalidsessionerr.md)
-- [ICLegacyReturn.Code.ioPendingErr](iclegacyreturn/code/iopendingerr.md)
-- [ICLegacyReturn.Code.propertyTypeNotFoundErr](iclegacyreturn/code/propertytypenotfounderr.md)
-- [ICLegacyReturn.Code](iclegacyreturn/code.md)
+### Type Properties
+- [static var cannotYieldDevice: ICLegacyReturn.Code](iclegacyreturn/cannotyielddevice.md)
+- [static var communicationErr: ICLegacyReturn.Code](iclegacyreturn/communicationerr.md)
+- [static var dataTypeNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/datatypenotfounderr.md)
+- [static var deviceAlreadyOpenErr: ICLegacyReturn.Code](iclegacyreturn/devicealreadyopenerr.md)
+- [static var deviceGUIDNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/deviceguidnotfounderr.md)
+- [static var deviceIOServicePathNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/deviceioservicepathnotfounderr.md)
+- [static var deviceInternalErr: ICLegacyReturn.Code](iclegacyreturn/deviceinternalerr.md)
+- [static var deviceInvalidParamErr: ICLegacyReturn.Code](iclegacyreturn/deviceinvalidparamerr.md)
+- [static var deviceLocationIDNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/devicelocationidnotfounderr.md)
+- [static var deviceMemoryAllocationErr: ICLegacyReturn.Code](iclegacyreturn/devicememoryallocationerr.md)
+- [static var deviceNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/devicenotfounderr.md)
+- [static var deviceNotOpenErr: ICLegacyReturn.Code](iclegacyreturn/devicenotopenerr.md)
+- [static var deviceUnsupportedErr: ICLegacyReturn.Code](iclegacyreturn/deviceunsupportederr.md)
+- [static var errorDomain: String](iclegacyreturn/errordomain.md)
+- [static var extensionInternalErr: ICLegacyReturn.Code](iclegacyreturn/extensioninternalerr.md)
+- [static var fileCorruptedErr: ICLegacyReturn.Code](iclegacyreturn/filecorruptederr.md)
+- [static var frameworkInternalErr: ICLegacyReturn.Code](iclegacyreturn/frameworkinternalerr.md)
+- [static var indexOutOfRangeErr: ICLegacyReturn.Code](iclegacyreturn/indexoutofrangeerr.md)
+- [static var invalidObjectErr: ICLegacyReturn.Code](iclegacyreturn/invalidobjecterr.md)
+- [static var invalidPropertyErr: ICLegacyReturn.Code](iclegacyreturn/invalidpropertyerr.md)
+- [static var invalidSessionErr: ICLegacyReturn.Code](iclegacyreturn/invalidsessionerr.md)
+- [static var ioPendingErr: ICLegacyReturn.Code](iclegacyreturn/iopendingerr.md)
+- [static var propertyTypeNotFoundErr: ICLegacyReturn.Code](iclegacyreturn/propertytypenotfounderr.md)
+
+## Relationships
+
+### Conforms To
+- [CustomNSError](../Foundation/CustomNSError.md)
+- [Equatable](../Swift/Equatable.md)
+- [Error](../Swift/Error.md)
+- [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [ICReturn](icreturn.md)
-  An error returned from ImageCaptureCore.
+- [struct ICReturn](icreturn.md)
 - [struct ICReturnConnectionError](icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
 - [struct ICReturnDownloadError](icreturndownloaderror.md)

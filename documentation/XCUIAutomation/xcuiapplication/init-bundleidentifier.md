@@ -36,6 +36,8 @@ For iOS and tvOS apps, the system installs the matching app build onto the devic
 
 For macOS apps, the system launches the matching app build from its existing location. If the system can’t find the matching app build, it launches the default app build on the device for the requested bundle ID (as determined by Launch Services).
 
+> 💡 **Tip**:  To find the bundle identifier of an Apple app for use in a UI test, see [`Bundle IDs for native iPhone and iPad apps`](https://developer.apple.comhttps://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web).
+
 ## See Also
 
 - [init()](xcuiapplication/init.md)

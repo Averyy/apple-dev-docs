@@ -17,7 +17,6 @@ Tells you when the scene is presented.
 ## Declaration
 
 ```swift
-@MainActor
 func sceneDidLoad()
 ```
 

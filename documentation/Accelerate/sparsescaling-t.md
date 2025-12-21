@@ -30,9 +30,9 @@ struct SparseScaling_t
 - [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
   The norm equilibration scaling using infinity norm.
 - [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
-  Specifies type of scaling to be performed.
+  Scaling using the Hungarian algorithm.
 - [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)
-  Specifies type of scaling to be performed.
+  Scaling and ordering using the Hungarian algorithm.
 ### Raw Values
 - [init(UInt8)](sparsescaling_t/init(_:).md)
 - [init(rawValue: UInt8)](sparsescaling_t/init(rawvalue:).md)

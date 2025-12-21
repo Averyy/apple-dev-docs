@@ -37,9 +37,9 @@ This function supersedes [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) on Intel-based 
   Invalidates the translation look-aside buffer (TLB) of a vCPU.
 - [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
   Flushes the cached state of a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpuid_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+- [func hv_vcpu_run(hv_vcpuid_t) -> hv_return_t](hv_vcpu_run(_:).md)
   Starts the execution of a vCPU.
 - [Execution Deadlines](3553338-execution-deadlines.md)
   An enumeration that describes available execution deadlines available to vCPUs.

@@ -22,7 +22,7 @@ This sample code project, which builds the InAppPurchases app, supports the iOS,
 Before you can run and test this sample code project, you need to:
 
 1. Start with a completed app that supports in-app purchases and has some configured in-app purchases in App Store Connect. For more information, see [`Overview for configuring in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
-2. Create [`a Sandbox Apple ID`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-sandbox-apple-ids) in App Store Connect.
+2. Create [`a Sandbox Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account/) in App Store Connect.
 3. Open the sample code project in Xcode, select the target that you want to build, click Signing & Capabilities, and change its bundle identifier to one that supports in-app purchases.
 4. Choose the appropriate team from the Team pop-up menu to let Xcode automatically manage your provisioning profile. See [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4) for details.
 5. Open the `ProductIds.plist` file in the sample and update its content with your existing in-app purchases product IDs.

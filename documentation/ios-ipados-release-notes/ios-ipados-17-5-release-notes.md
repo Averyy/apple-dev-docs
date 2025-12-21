@@ -12,7 +12,7 @@ The iOS & iPadOS 17.5 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Resolved Issues
 
-- Fixed: Accessibility AbleNet Hook+ Assistive switch MFi Accessory wired connection when connected to iPhone or iPad might not work.   (124439667)
+- Fixed: Accessibility AbleNet Hook+ Assistive switch MFi Accessory wired connection when connected to iPhone or iPad might not work. (124439667)
 
 ##### App Tracking Transparency
 

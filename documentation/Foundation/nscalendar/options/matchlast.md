@@ -36,20 +36,6 @@ static var matchLast: NSCalendar.Options { get }
   Specifies that, when there is no matching time before the end of the next instance of the next highest unit specified in the given `NSDateComponents` object, this method uses the  existing value of the missing unit and  preserve the lower units’ values.
 - [static var matchFirst: NSCalendar.Options](nscalendar/options/matchfirst.md)
   Specifies that, if there are two or more matching times, the operation should return the first occurrence.
-- [static var wrapComponents: NSCalendar.Options](nscalendar/options/wrapcomponents.md)
-  Specifies that the components specified for an `NSDateComponents` object should be incremented and wrap around to zero/one on overflow, but should not cause higher units to be incremented.
-- [static var matchStrictly: NSCalendar.Options](nscalendar/options/matchstrictly.md)
-  Specifies that the operation should travel as far forward or backward as necessary looking for a match.
-- [static var searchBackwards: NSCalendar.Options](nscalendar/options/searchbackwards.md)
-  Specifies that the operation should travel backwards to find the previous match before the given date.
-- [static var matchPreviousTimePreservingSmallerUnits: NSCalendar.Options](nscalendar/options/matchprevioustimepreservingsmallerunits.md)
-  Specifies that, when there is no matching time before the end of the next instance of the next highest unit specified in the given `NSDateComponents` object, this method uses the  existing value of the missing unit and preserves the lower units’ values.
-- [static var matchNextTimePreservingSmallerUnits: NSCalendar.Options](nscalendar/options/matchnexttimepreservingsmallerunits.md)
-  Specifies that, when there is no matching time before the end of the next instance of the next highest unit specified in the given `NSDateComponents` object, this method uses the  existing value of the missing unit and preserves the lower units’ values.
-- [static var matchNextTime: NSCalendar.Options](nscalendar/options/matchnexttime.md)
-  Specifies that, when there is no matching time before the end of the next instance of the next highest unit specified in the given `NSDateComponents` object, this method uses the  existing value of the missing unit and  preserve the lower units’ values.
-- [static var matchFirst: NSCalendar.Options](nscalendar/options/matchfirst.md)
-  Specifies that, if there are two or more matching times, the operation should return the first occurrence.
 - [var NSWrapCalendarComponents: Int](nswrapcalendarcomponents.md)
   Specifies that the components specified for an `NSDateComponents` object should be incremented and wrap around to zero/one on overflow, but should not cause higher units to be incremented.
 

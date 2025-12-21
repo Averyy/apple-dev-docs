@@ -38,12 +38,11 @@ struct BoostedTreeRegressor<Annotation>
 - [BoostedTreeRegressor.Transformer](boostedtreeregressor/transformer.md)
   The transformer type created by this estimator.
 ### Encoding and decoding a regressor
-- [func encode(TreeRegressorModel, to: inout any EstimatorEncoder) throws](boostedtreeregressor/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](boostedtreeregressor/decode(from:).md)
-  Decodes a previously fitted transformer.
+- [func encodeWithOptimizer(TreeRegressorModel, to: inout any EstimatorEncoder) throws](boostedtreeregressor/encodewithoptimizer(_:to:).md)
+  Encodes the transformer and optimizer to an encoder.
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](boostedtreeregressor/decodewithoptimizer(from:).md)
+  Reads the encoded transformer and optimizer with a decoder.
 ### Default Implementations
-- [SupervisedTabularEstimator Implementations](boostedtreeregressor/supervisedtabularestimator-implementations.md)
 - [UpdatableSupervisedTabularEstimator Implementations](boostedtreeregressor/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships

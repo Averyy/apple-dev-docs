@@ -22,7 +22,7 @@ func CMTimeRangeContainsTimeRange(_ range: CMTimeRange, otherRange: CMTimeRange)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `range1` contains `range2`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `range1` contains `range2`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

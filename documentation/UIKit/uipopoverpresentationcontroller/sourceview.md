@@ -18,6 +18,10 @@ The view containing the anchor rectangle for the popover.
 var sourceView: UIView? { get set }
 ```
 
+## Mentions
+
+- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+
 #### Discussion
 
 Use this property in conjunction with the [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) property to specify the anchor location for the popover. Alternatively, you may specify the anchor location for the popover using the [`barButtonItem`](uipopoverpresentationcontroller/barbuttonitem.md) property.

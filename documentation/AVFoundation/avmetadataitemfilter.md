@@ -26,7 +26,7 @@ Filter instances are opaque, unmodifiable objects, that you create with the [`fo
 
 ## Topics
 
-### Creating a Metadata Item Filter
+### Creating a metadata item filter
 - [class func forSharing() -> AVMetadataItemFilter](avmetadataitemfilter/forsharing.md)
   Returns a metadata filter to use for sharing assets.
 

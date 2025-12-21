@@ -17,7 +17,7 @@ var allowsMultipleSelection: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if users can select multiple thumbnails simultaneously, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if users can select multiple thumbnails simultaneously, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

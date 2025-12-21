@@ -17,7 +17,7 @@ Returns a new three-component vector created from individual component values.
 ## Declaration
 
 ```swift
-func SCNVector3Make(_ x: Float, _ y: Float, _ z: Float) -> SCNVector3
+func SCNVector3Make(_ x: CGFloat, _ y: CGFloat, _ z: CGFloat) -> SCNVector3
 ```
 
 #### Return Value

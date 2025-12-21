@@ -4,11 +4,11 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,14 +28,8 @@ enum AssetError
 - [SystemLanguageModel.Adapter.AssetError.Context](systemlanguagemodel/adapter/asseterror/context.md)
   The context in which the error occurred.
 ### Getting the error description
-- [var errorDescription: String](systemlanguagemodel/adapter/asseterror/errordescription.md)
+- [var errorDescription: String?](systemlanguagemodel/adapter/asseterror/errordescription.md)
   A string representation of the error description.
-### Getting the recovery suggestion
-- [var recoverySuggestion: String?](systemlanguagemodel/adapter/asseterror/recoverysuggestion.md)
-  A localized message describing how one might recover from the failure.
-### Default Implementations
-- [Error Implementations](systemlanguagemodel/adapter/asseterror/error-implementations.md)
-- [LocalizedError Implementations](systemlanguagemodel/adapter/asseterror/localizederror-implementations.md)
 
 ## Relationships
 

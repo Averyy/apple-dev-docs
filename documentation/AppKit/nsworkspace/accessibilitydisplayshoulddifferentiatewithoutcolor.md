@@ -16,7 +16,7 @@ var accessibilityDisplayShouldDifferentiateWithoutColor: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the user interface avoids conveying information using color alone. Instead, use shapes or glyphs to convey important information.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user interface avoids conveying information using color alone. Instead, use shapes or glyphs to convey important information.
 
 Users can change this setting by choosing System Preferences > Accessibility > Display and selecting the “Differentiate without color” option. To receive updates when this setting changes, register for the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
 

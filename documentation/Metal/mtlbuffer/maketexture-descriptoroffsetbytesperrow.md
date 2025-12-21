@@ -22,8 +22,8 @@ func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+- [Optimizing texture data](optimizing-texture-data.md)
 
 #### Return Value
 
@@ -35,11 +35,11 @@ This method creates a new [`MTLTexture`](mtltexture.md) instance that uses the s
 
 > **Note**:  Metal may not be able to optimize a texture that shares memory with a buffer.
 
-The texture’s resource data is coherent between multiple render passes. However, data accesses within a single render pass may not be coherent due to caching at runtime. For example, a texture from this method may not be able to immediately access new values from a render or kernel function that modifies this buffer.
+The texture’s resource data is coherent between multiple render passes. However, that data may not be coherent within a single render pass due to caching at runtime. For example, a texture you create from the method may not be able to immediately reflect changes to the underlying buffer that come from a render or kernel function.
 
-If this buffer’s [`storageMode`](mtltexturedescriptor/storagemode.md) is [`MTLStorageMode.managed`](mtlstoragemode/managed.md), and a render or kernel function modifies it, the CPU can access the new values through a texture after calling the [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) method. CPU accesses are only coherent between command buffer boundaries. GPU barriers guard a GPU’s accesses to buffers and textures so that each access finishes running before the next one begins.
+If this buffer’s [`storageMode`](mtltexturedescriptor/storagemode.md) is [`MTLStorageMode.managed`](mtlstoragemode/managed.md), and a render or kernel function modifies it, the CPU can access the new values through a texture after calling the [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) method. CPU memory operations are only coherent between command buffer boundaries. GPU barriers guard its memory operations to buffers and textures so that each operation finishes running before the next one begins.
 
-You can create multiple, nonoverlapping textures that use the same buffer; however, the GPU serializes accesses to those textures.
+You can create multiple, nonoverlapping textures that use the same buffer; however, the GPU serializes memory operations to those textures.
 
 > 💡 **Tip**:  You can avoid the GPU’s texture access serialization by creating multiple buffers and then creating a texture from each buffer with this method.
 
@@ -58,7 +58,7 @@ Additionally, creating a linear texture from this method adds the following rest
 | [`mipmapLevelCount`](mtltexturedescriptor/mipmaplevelcount.md) | `1` |
 | [`sampleCount`](mtltexturedescriptor/samplecount.md) | `1` |
 | [`usage`](mtltexturedescriptor/usage.md) | The [`renderTarget`](mtltextureusage/rendertarget.md) value if the [`MTLDevice`](mtldevice.md) instance supports [`MTLGPUFamily.apple1`](mtlgpufamily/apple1.md) (see [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md)), or any other [`MTLTextureUsage`](mtltextureusage.md) value |
-| [`storageMode`](mtltexturedescriptor/storagemode.md) | The same value as this buffer’s [`storageMode`](mtlresource/storagemode.md) property (see [`Resource Fundamentals`](resource-fundamentals.md)) |
+| [`storageMode`](mtltexturedescriptor/storagemode.md) | The same value as this buffer’s [`storageMode`](mtlresource/storagemode.md) property (see [`Resource fundamentals`](resource-fundamentals.md)) |
 | [`pixelFormat`](mtltexturedescriptor/pixelformat.md) | Any ordinary or packed color [`MTLPixelFormat`](mtlpixelformat.md), except [`MTLPixelFormat.gbgr422`](mtlpixelformat/gbgr422.md) and [`MTLPixelFormat.bgrg422`](mtlpixelformat/bgrg422.md) |
 
 Samplers can use any [`MTLSamplerAddressMode`](mtlsampleraddressmode.md) to sample linear textures from this method on any device that supports the [`MTLGPUFamily.apple2`](mtlgpufamily/apple2.md) feature family or later.

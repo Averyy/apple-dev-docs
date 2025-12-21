@@ -22,7 +22,7 @@ var requiresSecureCoding: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this coder requires secure coding; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if this coder requires secure coding; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 Secure coders check a set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](nssecurecoding.md) protocol.
 

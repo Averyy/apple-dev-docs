@@ -20,19 +20,6 @@ nonisolated
 func subscriptionPromotionalOffer(offer: @escaping (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: @escaping (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View
 ```
 
-#### Discussion
-
-Subscription stores within this view uses the specified subscription offer to configure the appearance of the subscription plans displayed, when you use a system-provided [`SubscriptionStoreControlStyle`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreControlStyle) to style the in-app subscription store. Standard [`ProductViewStyle`](https://developer.apple.com/documentation/StoreKit/ProductViewStyle) instances don’t show introductory or promotional offers in UI. Use the [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) instead to show these offers in the UI.
-
-If the signature passes validation for the offer you select, the system applies the offer to the purchase. If the signature fails validation for the offer you select, the purchase fails with [`Product.PurchaseError.invalidOfferSignature`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseError/invalidOfferSignature).
-
-Promotional offers you select in this modifier overwrite any offers you specified in ancestor views.
-
-## Parameters
-
-- `offer`: The system calls this function before drawing the given subscription product on   the subscription store view. Return the promotional offer to apply to the   product, if any, to have system-provided UI reflect the discounted terms under   the selected offer.
-- `signature`: The system calls this function before processing a purchase, with the   product to be purchased provided as a parameter, along with the selected   subscription offer to be applied to the purchase. Return a signature you   generate on your server that validates the selected offer. Errors thrown   from this closure will be surfaced via the    modifier. For information about generating the signature, see   .
-
 ## See Also
 
 - [func appStoreOverlay(isPresented: Binding<Bool>, configuration: () -> SKOverlay.Configuration) -> some View](view/appstoreoverlay(ispresented:configuration:).md)
@@ -41,7 +28,7 @@ Promotional offers you select in this modifier overwrite any offers you specifie
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](view/refundrequestsheet(for:ispresented:ondismiss:).md)
   Display the refund request sheet for the given transaction.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
-  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)

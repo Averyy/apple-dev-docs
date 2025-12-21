@@ -7,7 +7,6 @@ Indicates whether the API exposes every item in the playlist.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- Unknown ?+ - Deprecated
 - macOS 10.13+
 
 ## Declaration
@@ -18,7 +17,7 @@ var isAllItemsPlaylist: Bool { get }
 
 #### Discussion
 
-This property always returns [`true`](https://developer.apple.com/documentation/swift/true).
+This property always returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

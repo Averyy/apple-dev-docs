@@ -23,7 +23,7 @@ func VTFrameSiloCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRange: CMTi
 
 You can use the returned frame silo object to gather frames produced by multipass encoding.
 
-Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the frame silo object when you are done with it.
+Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the frame silo object when you are done with it.
 
 ## Parameters
 

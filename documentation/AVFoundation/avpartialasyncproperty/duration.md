@@ -24,7 +24,7 @@ static var duration: AVAsyncProperty<Root, CMTime> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-If the value of [`providesPreciseDurationAndTiming`](avpartialasyncproperty/providesprecisedurationandtiming.md) is [`false`](https://developer.apple.com/documentation/swift/false), the asset returns a best-available estimate of the duration. You can specify your preferred degree of precision for timing-related properties when you create an [`AVURLAsset`](avurlasset.md) by passing a value for the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option.
+If the value of [`providesPreciseDurationAndTiming`](avpartialasyncproperty/providesprecisedurationandtiming.md) is [`false`](https://developer.apple.com/documentation/Swift/false), the asset returns a best-available estimate of the duration. You can specify your preferred degree of precision for timing-related properties when you create an [`AVURLAsset`](avurlasset.md) by passing a value for the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option.
 
 ## See Also
 

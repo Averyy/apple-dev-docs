@@ -6,7 +6,7 @@
 A textual representation of this anchor.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

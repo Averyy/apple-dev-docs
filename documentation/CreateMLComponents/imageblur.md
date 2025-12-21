@@ -30,13 +30,6 @@ struct ImageBlur
 ### Applying the blur
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imageblur/applied(to:eventhandler:).md)
   Blurs an image using a disc-shaped convolution kernel.
-### Type Aliases
-- [ImageBlur.Input](imageblur/input.md)
-  The input type.
-- [ImageBlur.Output](imageblur/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](imageblur/transformer-implementations.md)
 
 ## Relationships
 

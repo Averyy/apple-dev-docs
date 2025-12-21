@@ -22,10 +22,10 @@ class AVSampleBufferRequest
 
 ## Topics
 
-### Creating a Request
+### Creating a request
 - [init(start: AVSampleCursor)](avsamplebufferrequest/init(start:).md)
   Creates a newly allocated sample buffer request with the specified sample cursor.
-### Configuring Sample Buffer Request Parameters
+### Configuring sample buffer request parameters
 - [var direction: AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.property.md)
   The buffer sample direction.
 - [AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.enum.md)

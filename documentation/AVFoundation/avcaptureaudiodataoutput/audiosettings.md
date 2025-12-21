@@ -24,6 +24,8 @@ If the value of this property is `nil`, samples are output in their device nativ
 
 - [func recommendedAudioSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](avcaptureaudiodataoutput/recommendedaudiosettingsforassetwriter(writingto:).md)
   Specifies the recommended settings for use with an `AVAssetWriterInput`.
+- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
+  The audio channel layout tag of the audio sample buffers produced by the audio data output.
 
 
 ---

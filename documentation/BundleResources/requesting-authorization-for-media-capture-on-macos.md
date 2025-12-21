@@ -29,13 +29,13 @@ For each key, provide a message that explains to the user why your app needs to 
 
 Always test the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) [`authorizationStatus(for:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/authorizationStatus(for:)) method before setting up a capture session. If the user has not yet granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/AVFoundation/AVAuthorizationStatus/notDetermined). In this case, use the [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method to have macOS prompt the user:
 
-The [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method is asynchronous: Your app continues running while macOS shows the permission alert. When the user responds, the system calls your completion handler. If the completion handler’s success parameter is [`true`](https://developer.apple.com/documentation/swift/true), you can proceed to set up and start a capture session.
+The [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method is asynchronous: Your app continues running while macOS shows the permission alert. When the user responds, the system calls your completion handler. If the completion handler’s success parameter is [`true`](https://developer.apple.com/documentation/Swift/true), you can proceed to set up and start a capture session.
 
 > **Note**:  Call [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features.
 
 ##### Request Authorization Before Saving Captured Media
 
-After capturing photos or video, you may want to save them into the user’s Photos library. Accessing the Photos library also requires user permission (separate from camera and microphone permission). For most photo and video capture workflows (including Live Photos and RAW format capture), use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) and [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) classes. These classes require read/write access to the Photos library, so you must use the use the [`NSPhotoLibraryUsageDescription`](information-property-list/nsphotolibraryusagedescription.md) key in your information property list to provide a message to the user when asking for access. For details, see [`Saving Captured Photos`](https://developer.apple.com/documentation/AVFoundation/saving-captured-photos).
+After capturing photos or video, you may want to save them into the user’s Photos library. Accessing the Photos library also requires user permission (separate from camera and microphone permission). For most photo and video capture workflows (including Live Photos and RAW format capture), use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) and [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) classes. These classes require read/write access to the Photos library, so you must use the use the [`NSPhotoLibraryUsageDescription`](information-property-list/nsphotolibraryusagedescription.md) key in your information property list to provide a message to the user when asking for access. For details, see [`Saving captured photos`](https://developer.apple.com/documentation/AVFoundation/saving-captured-photos).
 
 ##### Reset Authorization From Terminal
 
@@ -59,12 +59,14 @@ This command resets the access authorization settings for all apps, so other app
 
 - [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md)
   Prompt the user to authorize access to the camera, microphone, and photo library.
+- [NSAudioCaptureUsageDescription](information-property-list/nsaudiocaptureusagedescription.md)
+  A message that tells people why your app is requesting access to capture system audio on macOS.
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
-  A message that tells the user why the app is requesting access to the device’s camera.
+  A message that tells people why the app is requesting access to the device’s camera.
 - [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
-  A message that tells the user why the app is requesting access to the device’s main camera.
+  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
-  A message that tells the user why the app is requesting access to the device’s microphone.
+  A message that tells people why the app is requesting access to the device’s microphone.
 
 
 ---

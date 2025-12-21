@@ -17,7 +17,6 @@ The style used to render the endpoints of the stroked portion of the shape node.
 ## Declaration
 
 ```swift
-@MainActor
 var lineCap: CGLineCap { get set }
 ```
 

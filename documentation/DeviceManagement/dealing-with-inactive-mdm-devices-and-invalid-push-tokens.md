@@ -35,6 +35,8 @@ You don’t need to send push notifications on a daily basis to make sure a devi
   Manage network users on macOS devices bound to an Open Directory server, and mobile users on shared iPads.
 - [Managing Passcodes](managing-passcodes.md)
   Ensure data security by managing device passcodes and compliance with policies.
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+  Use a device management service to return managed devices to service quickly after use.
 
 
 ---

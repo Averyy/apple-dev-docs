@@ -3,10 +3,10 @@
 **Framework**: Immersive Media Support  
 **Kind**: method
 
-Sends an AIME (VenueDescriptor file) to all connected receivers.
+Sends an AIME to all connected receivers.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,11 +16,11 @@ func sendVenueDescriptor(at url: URL) async throws
 
 #### Discussion
 
-> **Note**: This function will throw if anything fails while sending the venue descriptor, for example, if the url is invalid.
+> **Note**: This function throws if anything fails while sending the venue descriptor, for example, if the url is invalid.
 
 ## Parameters
 
-- `url`: The url containing a valid venue descriptor file.
+- `url`: The url containing a valid venue descriptor file with extension  .
 
 
 ---

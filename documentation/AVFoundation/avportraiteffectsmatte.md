@@ -22,7 +22,7 @@ class AVPortraitEffectsMatte
 
 ## Mentions
 
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
 
 #### Overview
 
@@ -43,12 +43,12 @@ Using the auxiliary matte image, you can improve the quality of rendered portrai
 
 Unlike the depth map, the portrait effects matte isn’t intended to faithfully preserve all gradations of depth in the scene. It’s a depth-guided, people-focused segmentation mask generated from a proprietary Apple neural network trained to detect people. It separates an individual in the foreground from whatever is in the background, with greater detail and clarity than with the depth map alone. It achieves this clarity in part because the matte image has higher resolution than the depth map.
 
-For information about capturing the portrait effects matte, see [`Configuring Camera Capture to Collect a Portrait Effects Matte`](configuring-camera-capture-to-collect-a-portrait-effects-matte.md). To learn how to extract a portrait effects matte from photos previously captured in portrait mode on a device running iOS 12, see [`Extracting Portrait Effects Matte Image Data from a Photo`](extracting-portrait-effects-matte-image-data-from-a-photo.md).
+For information about capturing the portrait effects matte, see [`Configuring camera capture to collect a Portrait Effects matte`](configuring-camera-capture-to-collect-a-portrait-effects-matte.md). To learn how to extract a portrait effects matte from photos previously captured in portrait mode on a device running iOS 12, see [`Extracting Portrait Effects matte image data from a photo`](extracting-portrait-effects-matte-image-data-from-a-photo.md).
 
 ## Topics
 
-### Creating a Portrait Effects Matte
-- [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+### Creating a Portrait Effects matte
+- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 - [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.
@@ -56,8 +56,8 @@ For information about capturing the portrait effects matte, see [`Configuring Ca
   Returns a derivative portrait effects matte after applying the specified EXIF orientation.
 - [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](avportraiteffectsmatte/replacingportraiteffectsmatte(with:).md)
   Returns a portrait effects matte by wrapping the replacement pixel buffer.
-### Examining a Portrait Effects Matte
-- [Extracting Portrait Effects Matte Image Data from a Photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+### Examining a Portrait Effects matte
+- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
 - [var mattingImage: CVPixelBuffer](avportraiteffectsmatte/mattingimage.md)
   The portrait effects matte’s internal image, formatted as a pixel buffer.

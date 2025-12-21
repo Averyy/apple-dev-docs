@@ -32,6 +32,14 @@ Add keys to your app’s [`Information Property List`](information-property-list
 ### AlarmKit
 - [NSAlarmKitUsageDescription](information-property-list/nsalarmkitusagedescription.md)
   A message that tells people why the app is requesting access to schedule alarms.
+### Alterantive app marketplaces
+- [MKSellsDigitalGoods](information-property-list/mksellsdigitalgoods.md)
+  A Boolean value that indicates whether an alternative distribution app sells digital goods or services.
+### Alternative browser engines
+- [BEEmbeddedWebBrowserEngine](information-property-list/beembeddedwebbrowserengine.md)
+  A string name of the alternative browser engine that your app embeds.
+- [BEEmbeddedWebBrowserEngineVersion](information-property-list/beembeddedwebbrowserengineversion.md)
+  A string version number for the alternative browser engine that your app embeds.
 ### Always On display
 - [WKSupportsAlwaysOnDisplay](information-property-list/wksupportsalwaysondisplay.md)
   A Boolean value that determines whether the system displays the app in the Always On state.
@@ -40,6 +48,9 @@ Add keys to your app’s [`Information Property List`](information-property-list
   A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 - [ASWebAuthenticationSessionWebBrowserSupportCapabilities](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
+### CallKit
+- [NSVoIPUsageDescription](information-property-list/nsvoipusagedescription.md)
+  A message that tells people why your app receives voice-over-IP (VoIP) calls in the background.
 ### Core spotlight
 - [CoreSpotlightActions](information-property-list/corespotlightactions.md)
   A dictionary that contains details about actions available to users for Spotlight search results.
@@ -58,8 +69,6 @@ Add keys to your app’s [`Information Property List`](information-property-list
   A key that ignores the system spatial-audio toggle in Control Center.
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
-  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
@@ -72,6 +81,8 @@ Add keys to your app’s [`Information Property List`](information-property-list
   A Boolean value indicating whether the app supports Game Mode.
 - [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
+- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 ### Intents
 - [INIntentsSupported](information-property-list/inintentssupported.md)
   The names of the intent classes your app handles directly.
@@ -81,6 +92,8 @@ Add keys to your app’s [`Information Property List`](information-property-list
   The names of the intent classes your app can’t handle when the user locks the device or the system blocks access to protected data.
 - [INSupportedMediaCategories](information-property-list/insupportedmediacategories.md)
   Types of media supported by your app’s media-playing intents.
+- [NSFocusStatusUsageDescription](information-property-list/nsfocusstatususagedescription.md)
+  A message that tells people why your app requests access to a person’s focus status.
 ### Interprocess communication
 - [XPCService](information-property-list/xpcservice.md)
 ### Live Activities
@@ -93,14 +106,14 @@ Add keys to your app’s [`Information Property List`](information-property-list
   The modes of transportation for which the app is capable of giving directions.
 ### Messages
 - [NSStickerSharingLevel](information-property-list/nsstickersharinglevel.md)
+- [NSCriticalMessagingUsageDescription](information-property-list/nscriticalmessagingusagedescription.md)
+  A message that tells people why the app needs to send SMS messages.
 ### Network
 - [NSApplicationServices](information-property-list/nsapplicationservices.md)
   A list of service providers and the devices that they support.
-### NFC
-- [com.apple.developer.nfc.readersession.felica.systemcodes](information-property-list/com.apple.developer.nfc.readersession.felica.systemcodes.md)
-  A list of FeliCa system codes that the app supports.
-- [com.apple.developer.nfc.readersession.iso7816.select-identifiers](information-property-list/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
-  A list of application identifiers that the app supports.
+### Journaling Suggestions
+- [JSNotificationURLFormat](information-property-list/jsnotificationurlformat.md)
+  A universal link that determines how the system provides Journaling Suggestion notifications to your app.
 ### Safari services
 - [SFSafariCorrespondingIOSAppBundleIdentifier](information-property-list/sfsafaricorrespondingiosappbundleidentifier.md)
   A string bundle ID that identifies the corresponding iOS app that contains a content blocker or Safari web extension.
@@ -126,13 +139,15 @@ Add keys to your app’s [`Information Property List`](information-property-list
 - [SKExternalPurchase](information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 - [SKExternalPurchaseCustomLinkRegions](information-property-list/skexternalpurchasecustomlinkregions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 - [SKExternalPurchaseLink](information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [SKExternalPurchaseMultiLink](information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
 - [SKIncludeConsumableInAppPurchaseHistory](information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
+- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+  A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 ### User activities
 - [NSUserActivityTypes](information-property-list/nsuseractivitytypes.md)
   The user activity types that the app supports.

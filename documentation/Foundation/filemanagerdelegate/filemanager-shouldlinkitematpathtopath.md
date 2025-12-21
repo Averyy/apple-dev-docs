@@ -22,11 +22,11 @@ optional func fileManager(_ fileManager: FileManager, shouldLinkItemAtPath srcPa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation should proceed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-If the item specified by `destURL` is a directory, returning [`false`](https://developer.apple.com/documentation/swift/false) prevents links from being created to both the directory and its children.
+If the item specified by `destURL` is a directory, returning [`false`](https://developer.apple.com/documentation/Swift/false) prevents links from being created to both the directory and its children.
 
 This method performs the same task as the [`fileManager(_:shouldLinkItemAt:to:)`](filemanagerdelegate/filemanager(_:shouldlinkitemat:to:).md) method, which is preferred over this method in macOS 10.6 and later.
 

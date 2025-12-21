@@ -73,6 +73,7 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
 ### Macros
 - [kIOHIDEventServiceSensorControlOptionsKey](kiohideventservicesensorcontroloptionskey.md)
 ### Enumeration Cases
+- [kHIDUsage_GenDevControls_BatteryStrength](khidusage_gendevcontrols_batterystrength.md)
 - [kHIDUsage_LED_BlueLEDChannel](khidusage_led_blueledchannel.md)
 - [kHIDUsage_LED_GoodStatus](khidusage_led_goodstatus.md)
 - [kHIDUsage_LED_GreenLEDChannel](khidusage_led_greenledchannel.md)

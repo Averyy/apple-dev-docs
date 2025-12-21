@@ -61,7 +61,7 @@ Note that vDSP operations always read `n` elements. Therefore, your collections 
 
 ##### Use a Nonunit Stride on Output
 
-If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [`Controlling vDSP operations with stride`](controlling-vdsp-operations-with-stride.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
+If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [`Controlling vDSP operations with stride`](controlling-vdsp-operations-with-stride#Use-a-nonunit-stride-on-inputs.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
 
 ```swift
 let strideA = vDSP_Stride(2)

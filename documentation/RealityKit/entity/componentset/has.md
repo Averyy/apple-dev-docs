@@ -10,7 +10,7 @@ Returns a Boolean value that indicates whether the set contains a component of t
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration

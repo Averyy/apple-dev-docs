@@ -8,7 +8,6 @@ An object that represents classification information that an image-analysis requ
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -49,15 +48,6 @@ struct ClassificationObservation
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
-
-## See Also
-
-- [struct CoreMLRequest](coremlrequest.md)
-  An image-analysis request that uses a Core ML model to process images.
-- [struct CoreMLFeatureValueObservation](coremlfeaturevalueobservation.md)
-  An object that represents a collection of key-value information that a Core ML image-analysis request produces.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
-  An object that represents an image that an image-analysis request produces.
 
 
 ---

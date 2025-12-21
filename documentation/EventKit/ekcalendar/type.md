@@ -21,7 +21,7 @@ var type: EKCalendarType { get }
 
 #### Discussion
 
-CalDAV-subscribed calendars are of type [`EKCalendarType.calDAV`](ekcalendartype/caldav.md) with [`isSubscribed`](ekcalendar/issubscribed.md) set to [`true`](https://developer.apple.com/documentation/swift/true).
+CalDAV-subscribed calendars are of type [`EKCalendarType.calDAV`](ekcalendartype/caldav.md) with [`isSubscribed`](ekcalendar/issubscribed.md) set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

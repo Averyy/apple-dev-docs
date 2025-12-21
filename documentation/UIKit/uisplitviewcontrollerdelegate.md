@@ -33,9 +33,11 @@ In a column-style split view interface, you use these delegate methods to custom
 
 - [`splitViewController(_:topColumnForCollapsingToProposedTopColumn:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:topcolumnforcollapsingtoproposedtopcolumn:).md)
 - [`splitViewController(_:willHide:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:).md)
+- [`splitViewController(_:didHide:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
 - [`splitViewControllerDidCollapse(_:)`](uisplitviewcontrollerdelegate/splitviewcontrollerdidcollapse(_:).md)
 - [`splitViewController(_:displayModeForExpandingToProposedDisplayMode:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:displaymodeforexpandingtoproposeddisplaymode:).md)
 - [`splitViewController(_:willShow:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:).md)
+- [`splitViewController(_:didShow:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
 - [`splitViewControllerDidExpand(_:)`](uisplitviewcontrollerdelegate/splitviewcontrollerdidexpand(_:).md)
 
 ##### Classic Split Views
@@ -72,6 +74,8 @@ The expansion process reverses the collapsing process by asking the delegate to 
   Asks the delegate to provide the column to display after the split view interface collapses.
 - [func splitViewController(UISplitViewController, willHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:).md)
   Tells the delegate that the specified column is about to be hidden.
+- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
+  Tells the delegate that the system completed hiding the specified column.
 - [func splitViewControllerDidCollapse(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerdidcollapse(_:).md)
   Tells the delegate that the split view controller interface has collapsed.
 ### Expanding the interface
@@ -79,6 +83,8 @@ The expansion process reverses the collapsing process by asking the delegate to 
   Asks the delegate to provide the display mode to use after the split view interface expands.
 - [func splitViewController(UISplitViewController, willShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:).md)
   Tells the delegate that the specified column is about to be shown.
+- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
+  Tells the delegate that the system completed showing the specified column.
 - [func splitViewControllerDidExpand(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerdidexpand(_:).md)
   Tells the delegate that the split view controller interface has expanded.
 ### Handling the presentation gesture
@@ -109,9 +115,6 @@ The expansion process reverses the collapsing process by asking the delegate to 
   Tells the delegate that the specified view controller is about to be shown again.
 - [func splitViewController(UISplitViewController, popoverController: UIPopoverController, willPresent: UIViewController)](uisplitviewcontrollerdelegate/splitviewcontroller(_:popovercontroller:willpresent:).md)
   Tells the delegate that the hidden view controller is about to be displayed in a popover.
-### Instance Methods
-- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
-- [func splitViewController(UISplitViewController, didShow: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didshow:).md)
 
 ## See Also
 

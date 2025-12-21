@@ -21,7 +21,7 @@ var isVideoMirrored: Bool { get set }
 
 #### Discussion
 
-You can apply a mirror-image effect to a video flowing through the connection by setting the value to [`true`](https://developer.apple.com/documentation/swift/true). The mirroring effect only applies to video or depth connections, similar to [`videoRotationAngle`](avcaptureconnection/videorotationangle.md), and if [`isVideoMirroringSupported`](avcaptureconnection/isvideomirroringsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+You can apply a mirror-image effect to a video flowing through the connection by setting the value to [`true`](https://developer.apple.com/documentation/Swift/true). The mirroring effect only applies to video or depth connections, similar to [`videoRotationAngle`](avcaptureconnection/videorotationangle.md), and if [`isVideoMirroringSupported`](avcaptureconnection/isvideomirroringsupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Not all capture connections mirror each frame. For example, a video connection to an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) or [`AVCapturePhotoOutput`](avcapturephotooutput.md) instance applies the mirror effect with a QuickTime track matrix or with EXIF tags, respectively.
 

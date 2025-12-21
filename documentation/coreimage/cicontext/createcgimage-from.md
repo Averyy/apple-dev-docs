@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: method
 
-Creates a Quartz 2D image from a region of a Core Image image object.
+Creates a Core Graphics image from a region of a Core Image image instance.
 
 **Availability**:
 - iOS ?+
@@ -21,23 +21,25 @@ func createCGImage(_ image: CIImage, from fromRect: CGRect) -> CGImage?
 
 #### Return Value
 
-A Quartz 2D image. You are responsible for releasing the returned image when you no longer need it.
+ Returns a new `CGImage` instance. You are responsible for releasing the returned image when you no longer need it. The returned value will be `null` if the extent is empty or too big.
 
 #### Discussion
 
-Renders a region of an image into a temporary buffer using the context, then creates and returns a Quartz 2D image with the results.
+The color space of the created `CGImage` will be sRGB unless the receiving [`CIContext`](cicontext.md) was created with a `kCIContextOutputColorSpace` option.
+
+Normally the pixel format of the created CGImage will be 8 bits-per-component. It will be 16 bits-per-component float if the above color space is HDR.
 
 ## Parameters
 
-- `image`: A Core Image image object.
-- `fromRect`: The region of the image to render.
+- `image`: A   image instance for which to create a  .
+- `fromRect`: The   region of the   to use.   This region relative to the cartesean coordinate system of  .   This region will be intersected with integralized and intersected with  .
 
 ## See Also
 
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling the pixel format and color space of the `CGImage`.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:).md)
-  Creates a Quartz 2D image from a region of a Core Image image object with deferred rendering.
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for controlling when the image is rendered.
 - [func render(CIImage, toBitmap: UnsafeMutableRawPointer, rowBytes: Int, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpace?)](cicontext/render(_:tobitmap:rowbytes:bounds:format:colorspace:).md)
   Renders to the given bitmap.
 - [func render(CIImage, to: CVPixelBuffer)](cicontext/render(_:to:).md)

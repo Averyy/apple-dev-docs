@@ -35,11 +35,13 @@ When you set this value to `true`, StoreKit includes all In-App Purchase transac
 - [SKExternalPurchase](information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 - [SKExternalPurchaseCustomLinkRegions](information-property-list/skexternalpurchasecustomlinkregions.md)
-  An array of country code strings that indicate the regions where your app supports custom links for external purchases.
+  An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 - [SKExternalPurchaseLink](information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [SKExternalPurchaseMultiLink](information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
+- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+  A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 
 
 ---

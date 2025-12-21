@@ -21,7 +21,7 @@ var triangleCount: Int { get set }
 
 #### Discussion
 
-If the triangle descriptor contains an index buffer, then the index buffer must provide indices for this many triangles. If the triangle descriptor doesn’t provide an index buffer, then the vertex buffer provides 3 vertices for each triangle.
+If the triangle descriptor contains an index buffer, then the index buffer needs to provide indices for this many triangles. If the triangle descriptor doesn’t provide an index buffer, then the vertex buffer provides 3 vertices for each triangle.
 
 
 ---

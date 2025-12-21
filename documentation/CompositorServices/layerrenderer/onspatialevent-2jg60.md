@@ -6,7 +6,7 @@
 A closure that receives the spatial events updates from the LayerRenderer
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

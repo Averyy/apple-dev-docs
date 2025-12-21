@@ -22,7 +22,7 @@ var allowEmptySelection: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), there must be a language option in the language option group.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), there must be a language option in the language option group.
 
 ## See Also
 

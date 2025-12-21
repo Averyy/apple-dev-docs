@@ -17,9 +17,13 @@ Manage the localized assets, including screenshots and previews, for an App Stor
   Delete localized metatdata that you configured for an App Store Version experiment treatment.
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization](appstoreversionexperimenttreatmentlocalization.md)
+  The data structure that represents an app store version experiment treatment localization resource.
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
+  The request body you use to create an store resource.
 - [object AppStoreVersionExperimentTreatmentLocalizationResponse](appstoreversionexperimenttreatmentlocalizationresponse.md)
+  A response that contains a single app store version experiment treatment localization response resource.
 - [object AppStoreVersionExperimentTreatmentLocalizationsResponse](appstoreversionexperimenttreatmentlocalizationsresponse.md)
+  A response that contains a list of app store version experiment treatment localizations response resources.
 
 ## See Also
 

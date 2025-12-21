@@ -20,20 +20,8 @@ enum Dispersion
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Dispersion, IntentParameter<Value>.Dispersion) -> Bool](intentparameter/dispersion/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Dispersion.partsPerMillion](intentparameter/dispersion/partspermillion.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/dispersion/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/dispersion/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/dispersion/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/dispersion/equatable-implementations.md)
 
 ## Relationships
 

@@ -26,7 +26,7 @@ func revealDocument(at url: URL, importIfNeeded: Bool) async throws -> URL
 
 Call this method to display a document in the document browser.
 
-If `importIfNeeded` is [`true`](https://developer.apple.com/documentation/swift/true), the document browser calls its delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method (or its [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md) method, if an error occurred) before calling the completion handler.
+If `importIfNeeded` is [`true`](https://developer.apple.com/documentation/Swift/true), the document browser calls its delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method (or its [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md) method, if an error occurred) before calling the completion handler.
 
 ## Parameters
 

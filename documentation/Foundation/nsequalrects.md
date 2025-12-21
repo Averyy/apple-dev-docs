@@ -17,7 +17,7 @@ func NSEqualRects(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aRect` and `bRect` are identical, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if `aRect` and `bRect` are identical, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

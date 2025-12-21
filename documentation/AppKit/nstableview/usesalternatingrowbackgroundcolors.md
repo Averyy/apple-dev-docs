@@ -17,11 +17,11 @@ var usesAlternatingRowBackgroundColors: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the table view uses standard alternating row colors for the background, [`false`](https://developer.apple.com/documentation/swift/false) if it uses a solid color.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the table view uses standard alternating row colors for the background, [`false`](https://developer.apple.com/documentation/Swift/false) if it uses a solid color.
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the table uses the standard alternating row colors for the background. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the table view uses a single solid color for the background.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the table uses the standard alternating row colors for the background. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the table view uses a single solid color for the background.
 
 ## See Also
 

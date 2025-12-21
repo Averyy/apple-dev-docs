@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Describes the unit for barometric pressure
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

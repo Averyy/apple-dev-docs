@@ -4,11 +4,11 @@
 **Kind**: init
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,6 +16,10 @@
 @MainActor
 convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Void) -> Void)
 ```
+
+#### Discussion
+
+Creates a deferred menu element provider with an asynchronous block.
 
 ## Parameters
 

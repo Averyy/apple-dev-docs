@@ -42,6 +42,14 @@ class let automaticDimension: CGFloat
   The minimum width, in points, for the supplementary view controller’s content.
 - [var maximumSupplementaryColumnWidth: CGFloat](uisplitviewcontroller/maximumsupplementarycolumnwidth.md)
   The maximum width, in points, for the supplementary view controller’s content.
+- [var preferredSecondaryColumnWidth: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidth.md)
+  The preferred width, in points, for the secondary view controller’s content.
+- [var preferredSecondaryColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidthfraction.md)
+  The relative width of the secondary view controller’s content.
+- [var minimumSecondaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsecondarycolumnwidth.md)
+  The minimum width, in points, for the secondary view controller’s content.
+- [var preferredInspectorColumnWidth: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidth.md)
+  The preferred width, in points, for the inspector view controller’s content.
 
 
 ---

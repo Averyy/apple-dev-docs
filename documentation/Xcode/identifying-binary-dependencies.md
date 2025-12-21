@@ -23,7 +23,7 @@ To find out whether a package dependency is a binary dependency or if a source-b
 
 The following image shows an app’s expanded Swift package dependencies, including a package dependency called SomeRemoteBinaryPackage that distributes a binary.
 
-![Screenshot showing the project navigator with a binary dependency.](https://docs-assets.developer.apple.com/published/565c403a91000451d3400e59137cc614/identifying-binary-dependencies-1%402x.png)
+![Screenshot showing the Project navigator with a binary dependency.](https://docs-assets.developer.apple.com/published/565c403a91000451d3400e59137cc614/identifying-binary-dependencies-1%402x.png)
 
 > **Note**: To help verify a binary dependency’s origin, its author must create a [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum) and include it in the package manifest. When Xcode resolves or updates package dependencies, it doesn’t allow binary dependencies to change the checksum without also changing the version.
 

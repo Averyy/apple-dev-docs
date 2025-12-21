@@ -8,7 +8,6 @@ An image-analysis request that determines the horizon angle in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,13 +27,6 @@ This request generates a [`HorizonObservation`](horizonobservation.md) object th
 ### Creating a request
 - [init(DetectHorizonRequest.Revision?)](detecthorizonrequest/init(_:).md)
   Creates a horizon-detection request.
-### Getting the revision
-- [let revision: DetectHorizonRequest.Revision](detecthorizonrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectHorizonRequest.Revision]](detecthorizonrequest/supportedrevisions.md)
-  The collection of revisions the request supports.
-- [DetectHorizonRequest.Revision](detecthorizonrequest/revision-swift.enum.md)
-  A type that describes the algorithm or implementation that the request performs.
 ### Performing a request
 - [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
   Performs the request on an image URL and produces observations.
@@ -48,8 +40,16 @@ This request generates a [`HorizonObservation`](horizonobservation.md) object th
   Performs the request on a Core Media buffer and produces observations.
 - [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
   Performs the request on a Core Image image and produces observations.
+### Understanding the result
 - [struct HorizonObservation](horizonobservation.md)
   The horizon angle information that an image-analysis request detects.
+### Getting the revision
+- [let revision: DetectHorizonRequest.Revision](detecthorizonrequest/revision-swift.property.md)
+  The algorithm or implementation the request uses.
+- [static let supportedRevisions: [DetectHorizonRequest.Revision]](detecthorizonrequest/supportedrevisions.md)
+  The collection of revisions the request supports.
+- [DetectHorizonRequest.Revision](detecthorizonrequest/revision-swift.enum.md)
+  A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
@@ -64,10 +64,10 @@ This request generates a [`HorizonObservation`](horizonobservation.md) object th
 
 ## See Also
 
-- [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
-  A request that detects the trajectories of shapes moving along a parabolic path.
 - [struct DetectContoursRequest](detectcontoursrequest.md)
   A request that detects the contours of the edges of an image.
+- [struct DetectRectanglesRequest](detectrectanglesrequest.md)
+  An image-analysis request that finds projected rectangular regions in an image.
 
 
 ---

@@ -4,9 +4,9 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ struct KeyboardDidShowMessage
 - [var endFrame: CGRect](uiresponder/keyboarddidshowmessage/endframe.md)
 - [var isLocal: Bool](uiresponder/keyboarddidshowmessage/islocal.md)
 - [var screen: UIScreen](uiresponder/keyboarddidshowmessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIResponder.KeyboardDidShowMessage) -> Notification](uiresponder/keyboarddidshowmessage/makenotification(_:).md)
 
 ## Relationships
 

@@ -41,16 +41,16 @@ The resize-up-and-down cursor. This cursor is used when moving or resizing an ob
   Returns a cursor indicating that the current operation will result in a link action.
 - [class var iBeam: NSCursor](nscursor/ibeam.md)
   Returns a cursor that looks like a capital I with a tiny crossbeam at its middle.
+- [class var iBeamCursorForVerticalLayout: NSCursor](nscursor/ibeamcursorforverticallayout.md)
+  Returns the cursor for editing vertical layout text.
 - [class var openHand: NSCursor](nscursor/openhand.md)
   Returns the open-hand system cursor.
 - [class var operationNotAllowed: NSCursor](nscursor/operationnotallowed.md)
   Returns the operation not allowed cursor.
 - [class var pointingHand: NSCursor](nscursor/pointinghand.md)
   Returns the pointing-hand system cursor.
-- [class var resizeDown: NSCursor](nscursor/resizedown.md)
-  Returns the resize-down system cursor.
-- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
-  Returns the resize-left system cursor.
+- [class var zoomIn: NSCursor](nscursor/zoomin.md)
+  Returns the zoom-in cursor.
 
 
 ---

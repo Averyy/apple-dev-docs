@@ -8,7 +8,7 @@ A Boolean value indicating whether the app supports Game Mode.
 **Availability**:
 - iOS 18.6+
 - iPadOS 18.6+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 #### Discussion
 
@@ -22,8 +22,6 @@ Game Mode turns on automatically when you launch a game, and minimizes backgroun
   A key that ignores the system spatial-audio toggle in Control Center.
 - [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
-  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 - [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
@@ -34,6 +32,8 @@ Game Mode turns on automatically when you launch a game, and minimizes backgroun
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
 - [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
+- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+  A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 
 ---

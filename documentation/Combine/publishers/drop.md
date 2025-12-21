@@ -22,30 +22,24 @@ struct Drop<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Drop Publisher
+### Creating a drop Publisher
 - [init(upstream: Upstream, count: Int)](publishers/drop/init(upstream:count:).md)
   Creates a publisher that omits a specified number of elements before republishing later elements.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Drop.Output](publishers/drop/output.md)
   The kind of values published by this publisher.
 - [Publishers.Drop.Failure](publishers/drop/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/drop/upstream.md)
   The publisher from which this publisher receives elements.
 - [let count: Int](publishers/drop/count.md)
   The number of elements to drop.
-### Comparing Publishers
+### Comparing publishers
 - [static func == (Publishers.Drop<Upstream>, Publishers.Drop<Upstream>) -> Bool](publishers/drop/==(_:_:).md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
-- [static func != (Self, Self) -> Bool](publishers/drop/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Applying Operators
-- [Publisher Operators](publishers-drop-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
 ### Default Implementations
 - [Equatable Implementations](publishers/drop/equatable-implementations.md)
-- [Publisher Implementations](publishers/drop/publisher-implementations.md)
 
 ## Relationships
 

@@ -22,33 +22,11 @@ enum MusicPropertySource
 
 ## Topics
 
-### Operators
-- [static func == (MusicPropertySource, MusicPropertySource) -> Bool](musicpropertysource/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicPropertySource.catalog](musicpropertysource/catalog.md)
   The source representing the Apple Music catalog.
 - [MusicPropertySource.library](musicpropertysource/library.md)
   The source representing the user’s music library.
-### Initializers
-- [init(from: any Decoder) throws](musicpropertysource/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Properties
-- [var hashValue: Int](musicpropertysource/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](musicpropertysource/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](musicpropertysource/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [MusicPropertySource.AllCases](musicpropertysource/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-### Type Properties
-- [static var allCases: [MusicPropertySource]](musicpropertysource/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](musicpropertysource/equatable-implementations.md)
 
 ## Relationships
 

@@ -27,7 +27,7 @@ This method adjusts the current item’s timebase so that the time in `itemTime`
 
 This method does not ensure that media data is loaded before the timebase starts moving. However, if you specify a host time in the near future, that would give you some time to load the media data and prepare for playback.
 
-> ❗ **Important**:  This method is not currently supported for HTTP Live Streaming or when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true). For clients linked against iOS 10.0 and later or macOS 10.12 and later, invoking this method when [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true) will raise an `NSInvalidArgument` exception.
+> ❗ **Important**:  The value of [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) must be set to `false` before calling this method. If the property value is `true`, calling this method results in the system raising an invalid argument exception.
 
 ## Parameters
 

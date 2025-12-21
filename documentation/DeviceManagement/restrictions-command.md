@@ -42,8 +42,6 @@ The request object the server returns for the Restrictions Command.
 
 ## See Also
 
-- [Installed Application List](installed-application-list-command.md)
-  Get a list of the installed apps on a device.
 - [Device Information](device-information-command.md)
   Get detailed information about a device.
 - [Device Configured](device-configured-command.md)

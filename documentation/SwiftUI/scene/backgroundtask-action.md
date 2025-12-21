@@ -54,7 +54,7 @@ struct WeatherApp: App {
 - [struct SnapshotData](snapshotdata.md)
   The associated data of a snapshot background task.
 - [struct SnapshotResponse](snapshotresponse.md)
-  Your appplication’s response to a snapshot background task.
+  Your application’s response to a snapshot background task.
 
 
 ---

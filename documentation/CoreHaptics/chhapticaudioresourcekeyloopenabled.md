@@ -21,9 +21,9 @@ let CHHapticAudioResourceKeyLoopEnabled: String
 
 #### Discussion
 
-Set a [`true`](https://developer.apple.com/documentation/swift/true) value for this key to loop the contents of an audio file.
+Set a [`true`](https://developer.apple.com/documentation/Swift/true) value for this key to loop the contents of an audio file.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

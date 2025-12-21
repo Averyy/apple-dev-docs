@@ -20,7 +20,7 @@ struct Level
 
 ## Topics
 
-### System Pressure Levels
+### System pressure levels
 - [static let nominal: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/nominal.md)
   A level that indicates the system pressure is normal and not under pressure.
 - [static let fair: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/fair.md)

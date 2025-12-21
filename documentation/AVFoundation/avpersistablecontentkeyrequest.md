@@ -26,7 +26,7 @@ This class allows clients to create and use persistable content keys.
 
 ## Topics
 
-### Requesting Persistable Content Key Data
+### Requesting persistable content key data
 - [func persistableContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](avpersistablecontentkeyrequest/persistablecontentkey(fromkeyvendorresponse:options:).md)
   Creates a persistable content key from the content key context data.
 

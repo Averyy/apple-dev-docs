@@ -28,25 +28,26 @@ class AVSampleBufferVideoRenderer
   A notification that indicates that the video renderer requires flushing to continue rendering sample buffers.
 - [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](avsamplebuffervideorenderer/flush(removingdisplayedimage:completionhandler:).md)
   Tells the video renderer to discard pending enqueued sample buffers.
+### Setting presentation time expectations
+- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
+  Options that specify the expected presentation time stamps of enqueue samples.
 ### Inspecting the status
 - [var status: AVQueuedSampleBufferRenderingStatus](avsamplebuffervideorenderer/status.md)
   A status value that indicates whether this object can enqueue and render sample buffers.
 - [var error: (any Error)?](avsamplebuffervideorenderer/error.md)
   An object the describes the error that caused the rendering failure.
+### Accessing the pixel buffer
+- [func displayedPixelBuffer() -> CVPixelBuffer?](avsamplebuffervideorenderer/displayedpixelbuffer.md)
+- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
+  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
 ### Handling decode failures
 - [class let didFailToDecodeNotification: NSNotification.Name](avsamplebuffervideorenderer/didfailtodecodenotification.md)
   A notification that indicates the video renderer fails to decode a sample buffer.
 - [class let didFailToDecodeNotificationErrorKey: String](avsamplebuffervideorenderer/didfailtodecodenotificationerrorkey.md)
   A key to retrieve an error object that provides the details of the failure.
-### Instance Properties
-- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
-- [var recommededPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommededpixelbufferattributes.md)
-  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
-### Instance Methods
-- [func displayedPixelBuffer() -> CVPixelBuffer?](avsamplebuffervideorenderer/displayedpixelbuffer.md)
+### Capturing performance metrics
 - [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](avsamplebuffervideorenderer/loadvideoperformancemetrics(completionhandler:).md)
-### Enumerations
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
 
 ## Relationships
 

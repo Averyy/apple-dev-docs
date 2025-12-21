@@ -27,16 +27,8 @@ init(_ rawValue: CGFloat)
 
 ## See Also
 
-- [init(integerLiteral: Int)](xcuigesturevelocity/init(integerliteral:).md)
-  Creates a gesture velocity with an integer value.
-- [init(floatLiteral: XCUIGestureVelocity.FloatLiteralType)](xcuigesturevelocity/init(floatliteral:).md)
-  Creates a gesture velocity with a float value.
 - [init(rawValue: CGFloat)](xcuigesturevelocity/init(rawvalue:).md)
   Creates a gesture velocity with a raw value, expressed as a float.
-- [XCUIGestureVelocity.IntegerLiteralType](xcuigesturevelocity/integerliteraltype.md)
-  A type that specifies a gesture velocity with an integer literal.
-- [XCUIGestureVelocity.FloatLiteralType](xcuigesturevelocity/floatliteraltype.md)
-  The native type that specifies the gesture velocity value.
 
 
 ---

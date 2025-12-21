@@ -29,7 +29,7 @@ Here is how the dynamic animator’s initialization impacts use of this method:
 - For a collection-view dynamic animator, the reference bounds are those of the collection view layout
 - For a dynamic-item dynamic animator, there are no reference bounds.
 
-For a collision behavior added to a view-only or collection-view dynamic animator, activate a reference-system-based collision boundary by setting the [`translatesReferenceBoundsIntoBoundary`](uicollisionbehavior/translatesreferenceboundsintoboundary.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+For a collision behavior added to a view-only or collection-view dynamic animator, activate a reference-system-based collision boundary by setting the [`translatesReferenceBoundsIntoBoundary`](uicollisionbehavior/translatesreferenceboundsintoboundary.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

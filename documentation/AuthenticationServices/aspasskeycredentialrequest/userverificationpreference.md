@@ -24,6 +24,10 @@ var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificati
   The hash of the client data for this assertion.
 - [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](aspasskeycredentialrequest/supportedalgorithms-74mad.md)
   A list of cryptographic signature algorithms that the relying party supports.
+- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+  An input for WebAuthn extensions.
+- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+  A type for WebAuthn extension inputs.
 
 
 ---

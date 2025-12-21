@@ -23,6 +23,8 @@ The JSValue representing a JavaScript value with type BigInt.
 
 #### Discussion
 
+Create a new BigInt value from a double.
+
 If the value is not an integer, an exception is thrown.
 
 ## Parameters

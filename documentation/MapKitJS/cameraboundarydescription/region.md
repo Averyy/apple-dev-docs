@@ -11,12 +11,12 @@ A rectangular area on a map, defined by coordinates of the rectangle’s northea
 ## Declaration
 
 ```swift
-attribute mapkit.CoordinateRegion region;
+region: CoordinateRegion;
 ```
 
 #### Discussion
 
-The region property is an instance of [`mapkit.CoordinateRegion`](mapkit.coordinateregion.md)
+The region property is an instance of [`CoordinateRegion`](coordinateregion.md)
 
 ## See Also
 

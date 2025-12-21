@@ -17,7 +17,7 @@ func showsHelp() -> Bool
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the help button is currently set to be displayed.
+This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the help button is currently set to be displayed.
 
 ## See Also
 

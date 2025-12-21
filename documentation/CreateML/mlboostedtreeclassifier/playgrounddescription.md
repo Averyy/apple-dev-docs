@@ -21,8 +21,6 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var model: MLModel](mlboostedtreeclassifier/model.md)
-  The Core ML model.
 - [var description: String](mlboostedtreeclassifier/description.md)
   A text representation of the boosted tree classifier.
 - [var debugDescription: String](mlboostedtreeclassifier/debugdescription.md)

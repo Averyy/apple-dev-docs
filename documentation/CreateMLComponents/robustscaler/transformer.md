@@ -33,26 +33,6 @@ struct Transformer
 ### Performing the transformation
 - [func applied(to: Element, eventHandler: EventHandler?) -> Element](robustscaler/transformer/applied(to:eventhandler:).md)
   Scales the input values using the calculation `(input - median) / interQuartileRange`.
-### Operators
-- [static func == (RobustScaler<Element>.Transformer, RobustScaler<Element>.Transformer) -> Bool](robustscaler/transformer/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](robustscaler/transformer/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](robustscaler/transformer/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [RobustScaler.Transformer.Input](robustscaler/transformer/input.md)
-  The input type.
-- [RobustScaler.Transformer.Output](robustscaler/transformer/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](robustscaler/transformer/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](robustscaler/transformer/decodable-implementations.md)
-- [Encodable Implementations](robustscaler/transformer/encodable-implementations.md)
-- [Equatable Implementations](robustscaler/transformer/equatable-implementations.md)
-- [Transformer Implementations](robustscaler/transformer/transformer-implementations.md)
 
 ## Relationships
 

@@ -6,13 +6,13 @@
 Attempts to cancel an interaction started by calling [`run(reply:)`](tksmartcarduserinteraction/run(reply:).md). For certain interactions, cancellation may not be available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ func cancel() -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the operation is not running, or if cancelation is not supported.
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the operation is not running, or if cancelation is not supported.
 
 ## See Also
 

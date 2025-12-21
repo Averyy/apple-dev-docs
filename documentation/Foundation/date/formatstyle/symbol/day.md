@@ -58,12 +58,11 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 - [static func julianModified(minimumLength: Int) -> Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/julianmodified(minimumlength:).md)
   Creates a custom day format style representing the modified Julian day.
 ### Comparing Day Formats
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
 - [static let omitted: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/omitted.md)
+  The option for not including the symbol in the formatted output.
 
 ## Relationships
 

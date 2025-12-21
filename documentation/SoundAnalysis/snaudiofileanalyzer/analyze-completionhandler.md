@@ -26,10 +26,6 @@ func analyze() async -> Bool
 
 #### Discussion
 
-> **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func analyze() async -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 The method executes asynchronously and calls the completion handler after the analyzer finishes analyzing the entire file. The audio file analyzer sends errors to each request’s results observer.
 
 If you call the [`cancelAnalysis()`](snaudiofileanalyzer/cancelanalysis().md) method, the analyzer calls your completion handler and passes `false` because it can’t reach the end of the file.

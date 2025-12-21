@@ -109,8 +109,6 @@ You provide the data to display in your picker view using a picker data source (
   A view that displays a single image or a sequence of animated images in your interface.
 - [class UIProgressView](uiprogressview.md)
   A view that depicts the progress of a task over time.
-- [class UIWebView](uiwebview.md)
-  A view that embeds web content in your app.
 
 
 ---

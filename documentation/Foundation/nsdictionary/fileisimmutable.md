@@ -22,7 +22,7 @@ func fileIsImmutable() -> Bool
 
 #### Return Value
 
-The value associated with the [`immutable`](fileattributekey/immutable.md) file attributes key, or [`false`](https://developer.apple.com/documentation/swift/false) if the file attributes dictionary has no entry for the key.
+The value associated with the [`immutable`](fileattributekey/immutable.md) file attributes key, or [`false`](https://developer.apple.com/documentation/Swift/false) if the file attributes dictionary has no entry for the key.
 
 ## See Also
 

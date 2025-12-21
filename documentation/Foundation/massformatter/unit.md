@@ -33,16 +33,6 @@ enum Unit
   The pound unit.
 - [MassFormatter.Unit.stone](massformatter/unit/stone.md)
   The stone unit.
-- [MassFormatter.Unit.gram](massformatter/unit/gram.md)
-  The gram unit.
-- [MassFormatter.Unit.kilogram](massformatter/unit/kilogram.md)
-  The kilogram unit.
-- [MassFormatter.Unit.ounce](massformatter/unit/ounce.md)
-  The ounce unit.
-- [MassFormatter.Unit.pound](massformatter/unit/pound.md)
-  The pound unit.
-- [MassFormatter.Unit.stone](massformatter/unit/stone.md)
-  The stone unit.
 ### Initializers
 - [init?(rawValue: Int)](massformatter/unit/init(rawvalue:).md)
 

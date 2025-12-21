@@ -4,9 +4,9 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ struct KeyboardWillChangeFrameMessage
 - [var endFrame: CGRect](uiresponder/keyboardwillchangeframemessage/endframe.md)
 - [var isLocal: Bool](uiresponder/keyboardwillchangeframemessage/islocal.md)
 - [var screen: UIScreen](uiresponder/keyboardwillchangeframemessage/screen.md)
-### Type Methods
-- [static func makeNotification(UIResponder.KeyboardWillChangeFrameMessage) -> Notification](uiresponder/keyboardwillchangeframemessage/makenotification(_:).md)
 
 ## Relationships
 

@@ -49,7 +49,9 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
+  An object that contains all images requested by the client.
 ### Output processing
 - [protocol SCStreamOutput](scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.

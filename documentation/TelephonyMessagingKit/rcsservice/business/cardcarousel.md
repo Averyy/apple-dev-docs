@@ -6,8 +6,8 @@
 Structure representing a card carousel.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -35,16 +35,6 @@ struct CardCarousel
   Contents of card carousel.
 - [RCSService.Business.Card.Content](rcsservice/business/card/content-swift.struct.md)
   Structure containing the contents of a card.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/cardcarousel/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-- [func encode(to: any Encoder) throws](rcsservice/business/cardcarousel/encode(to:).md)
-  Encodes this value into the given encoder.
-### Comparing card carousels
-- [static func == (RCSService.Business.CardCarousel, RCSService.Business.CardCarousel) -> Bool](rcsservice/business/cardcarousel/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/cardcarousel/equatable-implementations.md)
 
 ## Relationships
 

@@ -23,11 +23,6 @@ init(rawValue: UInt)
 
 - `rawValue`: The raw value to use.
 
-## See Also
-
-- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
-  An option that stores data in a sample-position–agnostic representation.
-
 
 ---
 

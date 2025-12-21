@@ -25,7 +25,7 @@ var update: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.spreadsheet.update` schema:
 
 ```swift
-@AssistantIntent(schema: .spreadsheet.update)
+@AppIntent(schema: .spreadsheet.update)
 struct UpdateSpreadsheetIntent: AppIntent {
     @Parameter
     var target: SpreadsheetEntity

@@ -22,7 +22,7 @@ class var supportsSecureCoding: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate that `NSURLRequest` implements the [`NSSecureCoding`](nssecurecoding.md) protocol.
+[`true`](https://developer.apple.com/documentation/Swift/true) to indicate that `NSURLRequest` implements the [`NSSecureCoding`](nssecurecoding.md) protocol.
 
 
 ---

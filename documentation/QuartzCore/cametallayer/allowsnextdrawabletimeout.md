@@ -21,9 +21,9 @@ var allowsNextDrawableTimeout: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the [`nextDrawable()`](cametallayer/nextdrawable().md) method returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if it can’t provide a drawable object within one second. If [`false`](https://developer.apple.com/documentation/swift/false), the [`nextDrawable()`](cametallayer/nextdrawable().md) method waits indefinitely for a drawable to become available.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the [`nextDrawable()`](cametallayer/nextdrawable().md) method returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if it can’t provide a drawable object within one second. If [`false`](https://developer.apple.com/documentation/Swift/false), the [`nextDrawable()`](cametallayer/nextdrawable().md) method waits indefinitely for a drawable to become available.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

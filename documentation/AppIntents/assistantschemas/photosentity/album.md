@@ -25,7 +25,7 @@ var album: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation.The following example shows an app entity that conforms to the `.photos.album` schema:
 
 ```swift
-@AssistantEntity(schema: .photos.album)
+@AppEntity(schema: .photos.album)
 struct PhotoAlbumEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [PhotoAlbumEntity.ID]) async throws -> [PhotoAlbumEntity] { [] }

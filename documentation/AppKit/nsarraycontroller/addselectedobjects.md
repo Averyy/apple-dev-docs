@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Adds `objects` from the receiver’s content array to the current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+Adds the specified objects from the receiver’s content array to the current selection.
 
 **Availability**:
 - macOS ?+
@@ -13,6 +13,10 @@ Adds `objects` from the receiver’s content array to the current selection, ret
 ```swift
 func addSelectedObjects(_ objects: [Any]) -> Bool
 ```
+
+#### Return Value
+
+[`true`](https://developer.apple.com/documentation/Swift/true) if the selection was changed.
 
 #### Discussion
 
@@ -31,15 +35,15 @@ Attempting to change the selection may cause a [`commitEditing()`](nscontroller/
 - [var selectionIndexes: IndexSet](nsarraycontroller/selectionindexes.md)
   An index set containing the indexes of the receiver’s currently selected objects in the content array
 - [func addSelectionIndexes(IndexSet) -> Bool](nsarraycontroller/addselectionindexes(_:).md)
-  Adds the objects at the specified indexes in the receiver’s content array to the current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+  Adds the objects at the specified indexes in the receiver’s content array to the current selection.
 - [func removeSelectionIndexes(IndexSet) -> Bool](nsarraycontroller/removeselectionindexes(_:).md)
-  Removes the object as the specified `indexes` from the receiver’s current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+  Removes the object as the specified indexes from the receiver’s current selection.
 - [func setSelectedObjects([Any]) -> Bool](nsarraycontroller/setselectedobjects(_:).md)
-  Sets `objects` as the receiver’s current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+  Sets the specified objects as the receiver’s current selection.
 - [var selectedObjects: [Any]!](nsarraycontroller/selectedobjects.md)
   An array containing the receiver’s selected objects
 - [func removeSelectedObjects([Any]) -> Bool](nsarraycontroller/removeselectedobjects(_:).md)
-  Removes `objects` from the receiver’s current selection, returning [`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
+  Removes the specified objects from the receiver’s current selection.
 - [func selectNext(Any?)](nsarraycontroller/selectnext(_:).md)
   Selects the next object, relative to the current selection, in the receiver’s arranged content.
 - [var canSelectNext: Bool](nsarraycontroller/canselectnext.md)

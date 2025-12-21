@@ -16,7 +16,7 @@ func layoutManagerOwnsFirstResponder(in window: NSWindow) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the first responder in `window` is a text view associated with the receiver; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the first responder in `window` is a text view associated with the receiver; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

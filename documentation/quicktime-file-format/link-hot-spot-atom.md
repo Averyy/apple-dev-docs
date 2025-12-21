@@ -5,9 +5,6 @@
 
 An atom that specifies information for a link hot spot.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The link hot spot atom specifies information for hot spots of type `kQTVRHotSpotLinkType` (’`link'`). Its atom type is thus `'link'`. The link hot spot atom contains specific information about a link hot spot.

@@ -11,19 +11,11 @@ Perform element-wise split-complex to interleaved and interleaved to split-compl
   Converts the contents of an interleaved single-precision complex vector to a split complex vector.
 - [static func convert(interleavedComplexVector: [DSPDoubleComplex], toSplitComplexVector: inout DSPDoubleSplitComplex)](vdsp/convert(interleavedcomplexvector:tosplitcomplexvector:)-8cqd4.md)
   Converts the contents of an interleaved double-precision complex vector to a split complex vector.
-- [vDSP_ctoz](vdsp_ctoz.md)
-  Copies the contents of an interleaved single-precision complex vector to a split complex vector.
-- [vDSP_ctozD](vdsp_ctozd.md)
-  Copies the contents of an interleaved double-precision complex vector to a split complex vector.
 ### Converting split-complex vectors to interleaved-complex vectors
 - [static func convert(splitComplexVector: DSPSplitComplex, toInterleavedComplexVector: inout [DSPComplex])](vdsp/convert(splitcomplexvector:tointerleavedcomplexvector:)-65gyx.md)
   Converts the contents of a split single-precision complex vector to an interleaved vector.
 - [static func convert(splitComplexVector: DSPDoubleSplitComplex, toInterleavedComplexVector: inout [DSPDoubleComplex])](vdsp/convert(splitcomplexvector:tointerleavedcomplexvector:)-9v193.md)
   Converts the contents of a split double-precision complex vector to an interleaved vector.
-- [vDSP_ztoc](vdsp_ztoc.md)
-  Copies the contents of a split single-precision complex vector to an interleaved vector.
-- [vDSP_ztocD](vdsp_ztocd.md)
-  Copies the contents of a split double-precision complex vector to an interleaved vector.
 
 ## See Also
 

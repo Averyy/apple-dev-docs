@@ -440,8 +440,10 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(format: NSString, any CVarArg...)](nsstring/init(format:_:).md)
 - [convenience init(format: NSString, locale: Locale?, any CVarArg...)](nsstring/init(format:locale:_:).md)
 - [convenience init(string: NSString)](nsstring/init(string:)-7xgq7.md)
+  Returns an `NSString` object initialized by copying the characters from another given string.
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsstring/customplaygroundquicklook.md)
+  A custom playground Quick Look for this instance.
 ### Instance Methods
 - [func appendingPathComponent(String, conformingTo: UTType) -> String](nsstring/appendingpathcomponent(_:conformingto:).md)
 - [func appendingPathExtension(for: UTType) -> String](nsstring/appendingpathextension(for:).md)

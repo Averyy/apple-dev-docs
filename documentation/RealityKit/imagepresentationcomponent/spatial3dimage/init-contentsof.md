@@ -6,7 +6,7 @@
 Initializes a spatial 3D image from the contents of an image file.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

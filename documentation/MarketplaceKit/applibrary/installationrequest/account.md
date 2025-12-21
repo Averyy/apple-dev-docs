@@ -13,6 +13,12 @@
 var account: String
 ```
 
+## See Also
+
+- [var alternativeDistributionPackageURL: URL](applibrary/installationrequest/alternativedistributionpackageurl.md)
+- [var appShareURL: URL?](applibrary/installationrequest/appshareurl.md)
+- [var installVerificationToken: String](applibrary/installationrequest/installverificationtoken.md)
+
 
 ---
 

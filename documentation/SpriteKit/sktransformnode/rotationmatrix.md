@@ -15,7 +15,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 func rotationMatrix() -> matrix_float3x3
 ```
 

@@ -50,10 +50,9 @@ Use [`BADownload.Priority`](badownload/priority-swift.struct.md) to assign an ap
 
 ## See Also
 
-- [class BAURLDownload](baurldownload.md)
-  An object that represents a remote asset to download.
-- [class BADownload](badownload.md)
-  An object that represents an in-progress or concluded asset download.
+- [var isEssential: Bool](badownload/isessential.md)
+- [var priority: BADownload.Priority](badownload/priority-swift.property.md)
+  The download’s execution priority.
 
 
 ---

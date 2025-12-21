@@ -6,7 +6,7 @@
 Creates the attachment and configures it with the specified data.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

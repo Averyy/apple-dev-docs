@@ -4,7 +4,7 @@
 **Kind**: func
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -15,6 +15,10 @@ func hv_vm_config_set_ipa_granule(_ config: hv_vm_config_t, _ granule: hv_ipa_gr
 #### Return Value
 
 HV_SUCCESS on success, an error code otherwise.
+
+#### Discussion
+
+Set the intermediate physical address granule size in virtual machine configuration.
 
 ## Parameters
 

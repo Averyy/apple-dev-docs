@@ -13,7 +13,7 @@ You can attach a gesture recognizer in one of these ways:
 - Programmatically. Call the [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method of your view.
 - In Interface Builder. Drag the appropriate object from the library and drop it onto your view.
 
-![A diagram demonstrating a single-finger horizontal swipe gesture](https://docs-assets.developer.apple.com/published/c7bfe6cc0ceb2484eca4df39e0cc00b4/media-3004405%402x.png)
+![A diagram demonstrating a single-finger horizontal swipe gesture.](https://docs-assets.developer.apple.com/published/0430610b5b6b3330af7208abf27117e0/handling-swipe-gestures%402x.png)
 
 A [`UISwipeGestureRecognizer`](uiswipegesturerecognizer.md) object tracks the motion of a person’s finger across the screen either horizontally or vertically. A swipe requires a person’s finger to move in a specific direction and not deviate significantly from the main direction of travel. (The direction and number of fingers required for the gesture are configurable.) Swipe gestures are discrete, so your action method is called only after the gesture ends successfully. As a result, swipes are most appropriate when you care only about the results of the gesture and not about tracking the movement of a person’s finger.
 
@@ -31,7 +31,7 @@ The following code shows a skeletal action method for a swipe gesture recognizer
 
 If the code for your swipe gesture recognizer isn’t called, check to see if the following conditions are true, and make corrections as needed:
 
-- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- The [`isUserInteractionEnabled`](uiview/isuserinteractionenabled.md) property of the view is set to [`true`](https://developer.apple.com/documentation/Swift/true). Image views and labels set this property to [`false`](https://developer.apple.com/documentation/Swift/false) by default.
 - The number of touches is equal to the value specified in the [`numberOfTouchesRequired`](uiswipegesturerecognizer/numberoftouchesrequired.md) property.
 - The direction of the swipe matches the value in the [`direction`](uiswipegesturerecognizer/direction-swift.property.md) property.
 

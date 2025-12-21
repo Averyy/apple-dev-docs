@@ -6,13 +6,13 @@
 A type defining specific foreground behaviors for an app intent.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -26,15 +26,6 @@ The set of options you use to specify when and how the system should bring your 
 
 ## Topics
 
-### Operators
-- [static func == (IntentModes.ForegroundMode, IntentModes.ForegroundMode) -> Bool](intentmodes/foregroundmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intentmodes/foregroundmode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentmodes/foregroundmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static var deferred: IntentModes.ForegroundMode](intentmodes/foregroundmode/deferred.md)
   The system brings the app to the foreground while it performs the intent’s action or just before returning from its perform function.
@@ -42,8 +33,6 @@ The set of options you use to specify when and how the system should bring your 
   The system can bring the app to the foreground dynamically while it performs the intent’s action, depending on runtime conditions.
 - [static var immediate: IntentModes.ForegroundMode](intentmodes/foregroundmode/immediate.md)
   The system brings the app into the foreground immediately after it resolves the intent’s parameters.
-### Default Implementations
-- [Equatable Implementations](intentmodes/foregroundmode/equatable-implementations.md)
 
 ## Relationships
 

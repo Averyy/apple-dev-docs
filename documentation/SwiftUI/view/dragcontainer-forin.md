@@ -3,20 +3,16 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func dragContainer<Item, Data>(for itemType: Item.Type = Item.self, in namespace: Namespace.ID? = nil, _ payload: @escaping (Item.ID) -> Data) -> some View where Item : Transferable, Item : Identifiable, Item == Data.Element, Data : Collection, Item.ID : Sendable
+func dragContainer<Item, Data>(for itemType: Item.Type = Item.self, in namespace: Namespace.ID? = nil, _ payload: @escaping (Array<Item.ID>) -> Data) -> some View where Item : Transferable, Item : Identifiable, Item == Data.Element, Data : Collection, Item.ID : Sendable
 ```
 
 #### Return Value
@@ -25,76 +21,37 @@ A view that can be activated as the source of a drag and drop operation, beginni
 
 #### Discussion
 
-Below is an example of a container view with three sections. Each section is draggable. Also, each section is selectable, and each view in a section is selectable as well. When a section drag starts, the app wants to use its custom logic to decide what the payload should be.
+Provide the selected identifiers list to SwiftUI using `dragContainerSelection(_:containerNamespace)` modifier. In a case when there’s no selection information available, SwiftUI passes the dragged item identifier to the `payload` closure.
 
-If an unselected section is dragged, it should be the only one on the drag payload. If a selected section is dragged, the payload should contain other selected sections, and also the sections that have at least one fruit selected.
+In an example below, an app presents a view with `Fruit` values. When a user starts drag, SwiftUI uses the selection to put together the list of item identifiers to drag.
 
 ```swift
- var berries: [Fruit]
- var citruses: [Fruit]
- var tropical: [Fruit]
+   var fruits: [Fruit]
+   @State private var selection: [Fruit.ID]
 
- @State var selectedSections: [FruitSection.ID]
- @State var selectedFruits: [Fruit.ID]
+   var body: some View {
+       VStack {
+           ForEach(fruits) { fruit in
+               FruitView(fruit)
+                   .draggable(containerItemID: fruit.id)
+           }
+       }
+       .dragContainer(for: Fruit.self) { ids in
+          fruits(with: ids)
+       }
+       .dragContainerSelection(selection)
+   }
 
- var body: some View {
-     ScrollView {
-         VStack {
-             BerriesSectionView(FruitSection(berries))
-                 .draggable(containerItemID: FruitSection.berries)
-             CitrusSectionView(FruitSection(citruses))
-               .draggable(containerItemID: FruitSection.citruses)
-             TropicalSectionView(FruitSection(tropical))
-                 .draggable(containerItemID: FruitSection.tropical)
-         }
-     }
-     .dragContainer { draggedSectionID in
-         let identifiers = sectionIDsToDrag(for: draggedSectionID)
-         return sections(identifiers: identifiers)
-     }
- }
+   func fruits(with ids: [UUID]) -> [Fruit] { ... }
 
- func sectionIDsToDrag(for draggedID: FruitSection.ID) -> [FruitSection.ID] {
-     // an unselected section is dragged
-     if !selectedSections.contains(draggedID) { return [draggedID] }
-
-     // a selected section is dragged
-     let payloadIDs = selectedSections + sectionIdentifiersOfSelectedFruits()
-     return uniqueSections(from: payloadIDs)
- }
-
- func sections(identifiers: [FruitSection.ID]) -> [FruitSection] { ... }
- func sectionIdentifiersOfSelectedFruits() -> [FruitSection.ID] { ... }
- func uniqueSections(from: [FruitSection.ID]) -> [FruitSection.ID] { ... }
-
- struct Fruit: Identifiable { ... }
-
- struct FruitSection: Transferable, Identifiable {
-     static let berries: UUID
-     static let citruses: UUID
-     static let tropical: UUID
-
-     let id: UUID
-     var fruits: [Fruit]
- }
-
- struct BerriesSectionView: View {
-     var section: FruitSection
-     var body: some View {
-         HStack {
-             ForEach(section.fruit) { berry in
-                 BerryView(berry)
-             }
-         }
-     }
- }
+   struct Fruit: Transferable, Identifiable { ... }
 ```
 
 ## Parameters
 
 - `itemType`: A type of the dragged items.
 - `namespace`: A namespace that identifies the drag container.
-- `payload`: A closure which is called when   a drag operation begins. As an argument, the closure receives the identifier   of the dragged view under the finger or cursor. Using   the passed identifier, put together the payload to drag,   and return from the closure.   Return an empty   to disable the drag.
+- `payload`: A closure which is called when   a drag operation begins. As an argument, the closure receives either the identifiers   of all the selected items, if the dragged item is a part of selection   or only the identifier of the dragged item, if it is   not part of the selection. With the passed identifiers, put together the payload to drag,   and return from the closure.   Return an empty   to disable the drag.
 
 
 ---

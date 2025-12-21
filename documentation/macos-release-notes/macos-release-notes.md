@@ -17,10 +17,16 @@ When writing your report, please include the full version number in the title an
 ## Topics
 
 ### macOS 26
-- [macOS Tahoe 26 Beta 2 Release Notes](macos-26-release-notes.md)
+- [macOS Tahoe 26.3 Beta Release Notes](macos-26_3-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [macOS Tahoe 26.1 Release Notes](macos-26_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [macOS Tahoe 26 Release Notes](macos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### macOS 15
-- [macOS Sequoia 15.6 Beta Release Notes](macos-15_6-release-notes.md)
+- [macOS Sequoia 15.6 Release Notes](macos-15_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
@@ -120,12 +126,19 @@ When writing your report, please include the full version number in the title an
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Mojave 10.14 Release Notes](macos-mojave-10_14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-### Articles
-- [AppKit Release Notes for macOS 14](appkit-release-notes-for-macos-14.md)
+### AppKit
+- [AppKit Release Notes for macOS Sonoma 14](appkit-release-notes-for-macos-14.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
   Update your apps to use new features, and test your apps against API changes.
 - [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
   Update your apps to use new features, and test your apps against API changes.
-- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
+- [AppKit Release Notes for macOS Big Sur 11](appkit-release-notes-for-macos-11.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+  Update your apps to use new features, and test your apps against API changes.
+### Foundation
+- [Foundation Release Notes](foundation-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

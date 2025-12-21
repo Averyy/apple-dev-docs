@@ -21,7 +21,7 @@ The range of marked text or `{NSNotFound, 0}` if there is no marked range.
 
 #### Discussion
 
-The returned range measures from the start of the receiver’s text storage. The return value’s `location` is `NSNotFound` and its `length` is 0 if and only if [`hasMarkedText()`](nstextinputclient/hasmarkedtext().md) returns [`false`](https://developer.apple.com/documentation/swift/false).
+The returned range measures from the start of the receiver’s text storage. The return value’s `location` is `NSNotFound` and its `length` is 0 if and only if [`hasMarkedText()`](nstextinputclient/hasmarkedtext().md) returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

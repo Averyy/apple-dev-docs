@@ -28,7 +28,7 @@ class FileHandle
 
 You use file handle objects to access data associated with files, sockets, pipes, and devices. For files, you can read, write, and seek within the file. For sockets, pipes, and devices, you can use a file handle object to monitor the device and process data asynchronously.
 
-Most creation methods for [`FileHandle`](filehandle.md) cause the file handle object to take ownership of the associated file descriptor. This means that the file handle object both creates the file descriptor and is responsible for closing it later, usually when the system deallocates the file handle object. If you want to use a file handle object with a file descriptor that you created, use the [`init(fileDescriptor:)`](filehandle/init(filedescriptor:).md) method or use the [`init(fileDescriptor:closeOnDealloc:)`](filehandle/init(filedescriptor:closeondealloc:).md) method and pass [`false`](https://developer.apple.com/documentation/swift/false) for the `flag` parameter.
+Most creation methods for [`FileHandle`](filehandle.md) cause the file handle object to take ownership of the associated file descriptor. This means that the file handle object both creates the file descriptor and is responsible for closing it later, usually when the system deallocates the file handle object. If you want to use a file handle object with a file descriptor that you created, use the [`init(fileDescriptor:)`](filehandle/init(filedescriptor:).md) method or use the [`init(fileDescriptor:closeOnDealloc:)`](filehandle/init(filedescriptor:closeondealloc:).md) method and pass [`false`](https://developer.apple.com/documentation/Swift/false) for the `flag` parameter.
 
 ##### Run Loop Considerations
 

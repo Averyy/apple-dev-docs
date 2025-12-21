@@ -17,7 +17,7 @@ Tells the receiver that the app requires a persistable content key request objec
 ## Declaration
 
 ```swift
-func respondByRequestingPersistableContentKeyRequestAndReturnError() throws
+func respondByRequestingPersistableContentKeyRequest() throws
 ```
 
 #### Discussion

@@ -22,12 +22,12 @@ func SecTrustCopyPublicKey(_ trust: SecTrust) -> SecKey?
 
 ## Mentions
 
-- [Getting an Existing Key](getting-an-existing-key.md)
 - [Evaluating a Trust and Parsing the Result](evaluating-a-trust-and-parsing-the-result.md)
+- [Getting an Existing Key](getting-an-existing-key.md)
 
 #### Return Value
 
-The leaf certificate’s public key, or `NULL` if it the public key could not be extracted (this can happen with DSA certificate chains if the parameters in the chain cannot be found). In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release this object when you are finished with it.
+The leaf certificate’s public key, or `NULL` if it the public key could not be extracted (this can happen with DSA certificate chains if the parameters in the chain cannot be found). In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
 
 #### Discussion
 

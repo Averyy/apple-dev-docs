@@ -35,6 +35,8 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ## See Also
 
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct FunctionLinePlotContent](functionlineplotcontent.md)
 
 

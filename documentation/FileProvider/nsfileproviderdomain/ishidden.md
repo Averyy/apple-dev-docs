@@ -16,7 +16,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-The system stores the files on disk, but it doesn’t display them to the user. For example, you could set this value to [`false`](https://developer.apple.com/documentation/swift/false) when performing a dry run of a migration.
+The system stores the files on disk, but it doesn’t display them to the user. For example, you could set this value to [`false`](https://developer.apple.com/documentation/Swift/false) when performing a dry run of a migration.
 
 ## See Also
 

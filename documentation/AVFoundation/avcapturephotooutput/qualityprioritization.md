@@ -20,7 +20,7 @@ enum QualityPrioritization
 
 ## Topics
 
-### Specifying Priority
+### Specifying priority
 - [AVCapturePhotoOutput.QualityPrioritization.speed](avcapturephotooutput/qualityprioritization/speed.md)
   Speed of photo delivery is most important, even at the expense of quality.
 - [AVCapturePhotoOutput.QualityPrioritization.quality](avcapturephotooutput/qualityprioritization/quality.md)

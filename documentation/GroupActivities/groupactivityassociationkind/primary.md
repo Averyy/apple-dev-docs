@@ -6,7 +6,7 @@
 A primary association with a SharePlay group activity that is identified by a given string value.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

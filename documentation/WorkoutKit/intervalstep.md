@@ -10,7 +10,6 @@ An interval that represents a work or recovery step in a workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +21,7 @@ struct IntervalStep
 ## Topics
 
 ### Creating interval steps
-- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
+- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
 - [init(IntervalStep.Purpose, step: WorkoutStep)](intervalstep/init(_:step:).md)
   Creates a new interval step.
 ### Accessing step data

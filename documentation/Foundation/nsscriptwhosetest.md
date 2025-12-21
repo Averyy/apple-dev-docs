@@ -25,7 +25,7 @@ You shouldn’t need to subclass `NSScriptWhoseTest`, and you should rarely need
 
 ### Evaluating a test
 - [func isTrue() -> Bool](nsscriptwhosetest/istrue.md)
-  Returns a Boolean value that indicates whether the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
+  Returns a Boolean value that indicates whether the test represented by the receiver evaluates to true.
 ### Initializers
 - [init()](nsscriptwhosetest/init.md)
 - [init?(coder: NSCoder)](nsscriptwhosetest/init(coder:).md)

@@ -21,7 +21,7 @@ optional func textFieldShouldReturn(_ textField: UITextField) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text field should implement its default behavior for the return button; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text field should implement its default behavior for the return button; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

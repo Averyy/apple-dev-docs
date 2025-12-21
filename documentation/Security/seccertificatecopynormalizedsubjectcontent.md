@@ -16,7 +16,7 @@ func SecCertificateCopyNormalizedSubjectContent(_ certificate: SecCertificate, _
 
 #### Return Value
 
-A data object containing a DER-encoded X.509 distinguished name suitable for use with [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md). Returns `NULL` if an error occurred. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function when you are done with it.
+A data object containing a DER-encoded X.509 distinguished name suitable for use with [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md). Returns `NULL` if an error occurred. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
 
 #### Discussion
 

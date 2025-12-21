@@ -7,7 +7,7 @@ The presented behavior. The scene will present itself in the absence of any prev
 
 **Availability**:
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

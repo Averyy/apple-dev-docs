@@ -7,7 +7,7 @@
 Provides the entry representing a placeholder version of the widget.
 
 **Availability**:
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 

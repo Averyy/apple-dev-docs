@@ -28,7 +28,7 @@ let kSecClassGenericPassword: CFString
 
 The following keychain item attributes form the composite primary key of a generic password item:
 
-- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessGroup`](ksecattraccessgroup.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrAccount`](ksecattraccount.md)
 - [`kSecAttrService`](ksecattrservice.md)
 - [`kSecAttrSynchronizable`](ksecattrsynchronizable.md)
@@ -39,7 +39,7 @@ The following keychain item attributes apply to a generic password item, and don
 
 - [`kSecAttrAccess`](ksecattraccess.md) (macOS only)
 - [`kSecAttrAccessControl`](ksecattraccesscontrol.md)
-- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/swift/true))
+- [`kSecAttrAccessible`](ksecattraccessible.md) (on macOS, this key only applies if you set [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) or [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) to [`true`](https://developer.apple.com/documentation/Swift/true))
 - [`kSecAttrCreationDate`](ksecattrcreationdate.md)
 - [`kSecAttrModificationDate`](ksecattrmodificationdate.md)
 - [`kSecAttrDescription`](ksecattrdescription.md)

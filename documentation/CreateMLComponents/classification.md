@@ -30,19 +30,6 @@ struct Classification<Label> where Label : Hashable
   The classification label.
 - [var probability: Float](classification/probability.md)
   The classification probability. A value between 0 and 1.
-### Operators
-- [static func == (Classification<Label>, Classification<Label>) -> Bool](classification/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](classification/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](classification/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Decodable Implementations](classification/decodable-implementations.md)
-- [Encodable Implementations](classification/encodable-implementations.md)
-- [Equatable Implementations](classification/equatable-implementations.md)
 
 ## Relationships
 

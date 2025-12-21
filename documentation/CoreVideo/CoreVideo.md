@@ -96,23 +96,23 @@ Core Video provides a pipeline model for digital video. It simplifies working wi
   Identifier for a pixel format type
 ### Variables
 - [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
 - [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 - [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_LeftEdgePointsKey: CFString](kcvimagebufferdisplaymaskrectangle_leftedgepointskey.md)
-- [let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleheightkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleleftkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_RectangleTopKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangletopkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_rectanglewidthkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterheightkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterwidthkey.md)
-- [let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString](kcvimagebufferdisplaymaskrectangle_rightedgepointskey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferLogTransferFunction_AppleLog2: CFString](kcvimagebufferlogtransferfunction_applelog2.md)
 - [let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString](kcvimagebufferpostdecodeprocessingframemetadatakey.md)
 - [let kCVImageBufferPostDecodeProcessingSequenceMetadataKey: CFString](kcvimagebufferpostdecodeprocessingsequencemetadatakey.md)
 - [let kCVImageBufferSceneIlluminationKey: CFString](kcvimagebuffersceneilluminationkey.md)
 - [let kCVMetalBufferCacheMaximumBufferAgeKey: CFString](kcvmetalbuffercachemaximumbufferagekey.md)
+- [let kCVPixelBufferIOSurfacePurgeableKey: CFString](kcvpixelbufferiosurfacepurgeablekey.md)
 - [let kCVPixelFormatBitsPerComponent: CFString](kcvpixelformatbitspercomponent.md)
+- [var kCVPixelFormatType_30RGBLE_8A_BiPlanar: OSType](kcvpixelformattype_30rgble_8a_biplanar.md)
 - [var kCVPixelFormatType_30RGB_r210: OSType](kcvpixelformattype_30rgb_r210.md)
 - [var kCVPixelFormatType_96VersatileBayerPacked12: OSType](kcvpixelformattype_96versatilebayerpacked12.md)
+- [var kCVPixelFormatType_Lossless_30RGBLEPackedWideGamut: OSType](kcvpixelformattype_lossless_30rgblepackedwidegamut.md)
+- [var kCVPixelFormatType_Lossless_30RGBLE_8A_BiPlanar: OSType](kcvpixelformattype_lossless_30rgble_8a_biplanar.md)
 - [var kCVPixelFormatType_Lossless_420YpCbCr10PackedBiPlanarFullRange: OSType](kcvpixelformattype_lossless_420ypcbcr10packedbiplanarfullrange.md)
 - [var kCVPixelFormatType_Lossless_64RGBAHalf: OSType](kcvpixelformattype_lossless_64rgbahalf.md)
 ### Functions

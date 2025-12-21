@@ -20,20 +20,6 @@ A type-erased identifier for a music item property, from any root type to any re
 class AnyMusicProperty
 ```
 
-## Topics
-
-### Operators
-- [static func == (AnyMusicProperty, AnyMusicProperty) -> Bool](anymusicproperty/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](anymusicproperty/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](anymusicproperty/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](anymusicproperty/equatable-implementations.md)
-
 ## Relationships
 
 ### Inherited By

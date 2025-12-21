@@ -38,6 +38,8 @@ struct AdaptableTabBarPlacement
 
 ## See Also
 
+- [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
+  Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
 - [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](view/tabviewsidebarheader(content:).md)
   Adds a custom header to the sidebar of a tab view.
 - [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](view/tabviewsidebarfooter(content:).md)

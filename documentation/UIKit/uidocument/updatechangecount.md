@@ -14,7 +14,6 @@ Updates the change counter by indicating the kind of change.
 ## Declaration
 
 ```swift
-@MainActor
 func updateChangeCount(_ change: UIDocument.ChangeKind)
 ```
 

@@ -3,15 +3,14 @@
 **Framework**: Vision  
 **Kind**: property
 
-The collection of revisions the request supports.
+The revisions supported by `ClassifyImageRequest`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +21,7 @@ static let supportedRevisions: [RecognizeDocumentsRequest.Revision]
 ## See Also
 
 - [let revision: RecognizeDocumentsRequest.Revision](recognizedocumentsrequest/revision-swift.property.md)
-  The algorithm or implementation the request uses.
+  The request’s configured revision.
 - [RecognizeDocumentsRequest.Revision](recognizedocumentsrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 

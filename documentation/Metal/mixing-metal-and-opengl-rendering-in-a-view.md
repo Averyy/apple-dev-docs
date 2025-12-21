@@ -1,4 +1,4 @@
-# Mixing Metal and OpenGL Rendering in a View
+# Mixing Metal and OpenGL rendering in a view
 
 **Framework**: Metal
 
@@ -50,7 +50,7 @@ CVReturn cvret = CVPixelBufferCreate(kCFAllocatorDefault,
                         &_CVPixelBuffer);
 ```
 
-##### For Macos Create an Opengl Texture From the Pixel Buffer
+##### Create an Opengl Texture From the Pixel Buffer in Macos
 
 Start by creating an OpenGL Core Video texture cache from the pixel buffer:
 
@@ -81,7 +81,7 @@ Finally, get an OpenGL texture name from the `CVPixelBuffer`-backed OpenGL textu
 _openGLTexture = CVOpenGLTextureGetName(_CVGLTexture);
 ```
 
-##### For Ios Create an Opengl Es Texture From the Pixel Buffer
+##### Create an Opengl Es Texture From the Pixel Buffer in Ios
 
 Start by creating an OpenGL `ES` Core Video  texture cache from the pixel buffer:
 
@@ -147,7 +147,7 @@ Finally, get a Metal texture using the Core Video  Metal texture reference:
 _metalTexture = CVMetalTextureGetTexture(_CVMTLTexture);
 ```
 
-##### In an Opengl View Draw Metal Content
+##### Draw Metal Content in an Opengl View
 
 When porting your app, statement by statement, begin by using Metal to render into an interoperable pixel buffer that OpenGL can draw. Each item in the following list describes the corresponding numbered area in the figure that follows:
 
@@ -158,7 +158,7 @@ When porting your app, statement by statement, begin by using Metal to render in
 
 ![Screenshot of the app showing, in the background, a red color cleared by OpenGL, a green quad cleared by Metal with a black text overlay rendered by OpenGL, and a color swatch with white text rendered by Metal.](https://docs-assets.developer.apple.com/published/f1dd9258fc759141f2f1ba10fa8de19b/opengl-interoperability-1-gl-view.png)
 
-##### In a Metal View Draw Opengl Content
+##### Draw Opengl Content in a Metal View
 
 Draw OpenGL content into a Metal view when you’re ready to use Metal but have some legacy OpenGL code that you intend to port incrementally. Each item in the following list describes the corresponding numbered area in the figure that follows:
 
@@ -171,7 +171,7 @@ Draw OpenGL content into a Metal view when you’re ready to use Metal but have 
 
 ## See Also
 
-- [Migrating OpenGL Code to Metal](migrating-opengl-code-to-metal.md)
+- [Migrating OpenGL code to Metal](migrating-opengl-code-to-metal.md)
   Replace your app’s deprecated OpenGL code with Metal.
 
 

@@ -24,7 +24,7 @@ The framework invokes these payments using a Store and Forward session.
 ## Topics
 
 ### Getting the batch details
-- [let id: String](storeandforwardbatch/id-swift.property.md)
+- [let id: String](storeandforwardbatch/id.md)
   The unique identifier for the batch.
 - [let count: Int](storeandforwardbatch/count.md)
   The number of payments this batch includes.
@@ -39,12 +39,6 @@ The framework invokes these payments using a Store and Forward session.
 ### Getting the results
 - [StoreAndForwardBatch.StoredPaymentCardReadResult](storeandforwardbatch/storedpaymentcardreadresult.md)
   A result structure that represents each payment the framework read using a Store and Forward session.
-### Instance Methods
-- [func encode(to: any Encoder) throws](storeandforwardbatch/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [StoreAndForwardBatch.ID](storeandforwardbatch/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

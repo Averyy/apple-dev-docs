@@ -20,7 +20,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionAllowsMov
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session allows moving drag items to the destination view; otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default is [`true`](https://developer.apple.com/documentation/swift/true) if you don’t provide this method.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the session allows moving drag items to the destination view; otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default is [`true`](https://developer.apple.com/documentation/Swift/true) if you don’t provide this method.
 
 #### Discussion
 

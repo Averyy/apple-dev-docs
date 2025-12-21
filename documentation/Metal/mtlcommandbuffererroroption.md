@@ -21,10 +21,10 @@ struct MTLCommandBufferErrorOption
 
 ## Topics
 
-### Buffer Error Options
+### Buffer error options
 - [static var encoderExecutionStatus: MTLCommandBufferErrorOption](mtlcommandbuffererroroption/encoderexecutionstatus.md)
   An option that instructs a command buffer to save additional details about a GPU runtime error.
-### Protocol Support
+### Protocol support
 - [init(rawValue: UInt)](mtlcommandbuffererroroption/init(rawvalue:).md)
   Creates a set of error options from a raw integer value.
 

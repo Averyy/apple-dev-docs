@@ -3,8 +3,6 @@
 **Framework**: AccessorySetupKit  
 **Kind**: property
 
-The domain of the error.
-
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

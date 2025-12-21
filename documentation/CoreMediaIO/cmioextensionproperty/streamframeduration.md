@@ -17,7 +17,7 @@ static let streamFrameDuration: CMIOExtensionProperty
 
 #### Discussion
 
-The property state for this property is a dictionary that represents a doc://com.apple.documentation/documentation/coremedia/cmtime-u58 value that matches the frame duration of the active stream format.
+The property state for this property is a dictionary that represents a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that matches the frame duration of the active stream format.
 
 ## See Also
 

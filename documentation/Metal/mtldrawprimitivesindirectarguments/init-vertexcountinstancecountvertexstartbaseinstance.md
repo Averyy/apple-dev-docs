@@ -19,11 +19,6 @@ Returns a new data layout for drawing primitives via indirect buffer calls, with
 init(vertexCount: UInt32, instanceCount: UInt32, vertexStart: UInt32, baseInstance: UInt32)
 ```
 
-## See Also
-
-- [init()](mtldrawprimitivesindirectarguments/init.md)
-  Returns a new data layout for drawing primitives via indirect buffer calls.
-
 
 ---
 

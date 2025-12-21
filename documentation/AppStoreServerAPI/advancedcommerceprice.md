@@ -22,13 +22,13 @@ int64 advancedCommercePrice
 - [type advancedCommerceOfferPrice](advancedcommerceofferprice.md)
 - [type advancedCommercePeriod](advancedcommerceperiod.md)
 - [type advancedCommercePeriodCount](advancedcommerceperiodcount.md)
+- [type advancedCommercePriceIncreaseInfoDependentSKU](advancedcommercepriceincreaseinfodependentsku.md)
+- [type advancedCommercePriceIncreaseInfoPrice](advancedcommercepriceincreaseinfoprice.md)
+- [type advancedCommercePriceIncreaseInfoStatus](advancedcommercepriceincreaseinfostatus.md)
 - [type advancedCommerceReason](advancedcommercereason.md)
 - [type advancedCommerceRefundAmount](advancedcommercerefundamount.md)
 - [type advancedCommerceRefundDate](advancedcommercerefunddate.md)
 - [type advancedCommerceRefundReason](advancedcommercerefundreason.md)
-- [type advancedCommerceRefundType](advancedcommercerefundtype.md)
-- [type advancedCommerceRefunds](advancedcommercerefunds.md)
-- [type advancedCommerceRenewalItems](advancedcommercerenewalitems.md)
 
 
 ---

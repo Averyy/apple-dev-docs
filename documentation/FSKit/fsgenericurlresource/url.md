@@ -3,8 +3,10 @@
 **Framework**: FSKit  
 **Kind**: property
 
+The URL represented by the resource.
+
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

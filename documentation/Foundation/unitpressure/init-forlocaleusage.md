@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a `UnitPressure` which the specified `locale` prefers for the specific `usage`.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

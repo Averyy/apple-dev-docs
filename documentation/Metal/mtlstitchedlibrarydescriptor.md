@@ -29,7 +29,7 @@ Create a stitched library from the descriptor by passing it to the [`makeLibrary
 
 ## Topics
 
-### Configuring a Stitched Library
+### Configuring a stitched library
 - [var functions: [any MTLFunction]](mtlstitchedlibrarydescriptor/functions.md)
   The list of functions for creating the stitched library.
 - [var functionGraphs: [MTLFunctionStitchingGraph]](mtlstitchedlibrarydescriptor/functiongraphs.md)

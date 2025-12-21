@@ -20,8 +20,8 @@ class AVCaptureMovieFileOutput
 
 ## Mentions
 
-- [Setting Up a Capture Session](setting-up-a-capture-session.md)
 - [Recording movies in alternative formats](recording-movies-in-alternative-formats.md)
+- [Setting up a capture session](setting-up-a-capture-session.md)
 
 #### Overview
 

@@ -6,8 +6,8 @@
 The handle associated with the sender or receiver of the message.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -24,7 +24,7 @@ let handle: RCSHandle
   An opaque identifier that represents the cellular service for which to provide operations.
 - [enum RCSHandle](rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [let id: RCSMessageID](rcsmessage/id-swift.property.md)
+- [let id: RCSMessageID](rcsmessage/id.md)
   A message identifier for the message.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.

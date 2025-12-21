@@ -9,7 +9,7 @@ Tells the view when one or more touches associated with an event changed.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 

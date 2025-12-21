@@ -11,7 +11,9 @@ Custom data for populating the URL template.
 ## Declaration
 
 ```swift
-attribute Object data;
+data: {
+        [key: string]: any;
+    };
 ```
 
 #### Discussion

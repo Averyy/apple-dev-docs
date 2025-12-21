@@ -21,7 +21,7 @@ class CredentialTransaction
 
 #### Overview
 
-Use the doc://com.apple.documentation/documentation/SwiftUI/View/transactionTask(_:action) view modifier to create a task for working with a credential. The `action` closure receives a `CredentialTransaction` instance that it can perform actions on.
+Use the [`transactionTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/transactionTask(_:action:)) view modifier to create a task for working with a credential. The `action` closure receives a `CredentialTransaction` instance that it can perform actions on.
 
 > ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
 
@@ -29,7 +29,7 @@ Use the doc://com.apple.documentation/documentation/SwiftUI/View/transactionTask
 
 ### Configuring transactions
 - [CredentialTransaction.Configuration](credentialtransaction/configuration.md)
-  An object that provides configuration information for a transaction that the client intends to peform.
+  An object that provides configuration information for a transaction that the client intends to perform.
 ### Performing transactions
 - [func performTransaction(using: Credential, options: CardEmulationOptions) async throws](credentialtransaction/performtransaction(using:options:).md)
   Prompts the user for authorization and then activates a credential for card emulation.

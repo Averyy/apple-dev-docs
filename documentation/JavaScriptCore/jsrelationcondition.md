@@ -17,6 +17,10 @@
 enum JSRelationCondition
 ```
 
+#### Overview
+
+A constant identifying the type of JavaScript relation condition.
+
 ## Topics
 
 ### Enumeration Cases

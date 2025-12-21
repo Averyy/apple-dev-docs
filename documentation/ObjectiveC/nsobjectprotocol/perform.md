@@ -37,7 +37,7 @@ Usually, a caller isn’t responsible for the memory of a returned instance, in 
 
 Due to this uncertainty, the compiler generates a warning if you supply a variable selector while using ARC to manage memory. Because it can’t determine ownership of the returned object at compile-time, ARC makes the assumption that the caller does  need to take ownership, but this may not be true. The compiler warning alerts you to the potential for a memory leak.
 
-To avoid the warning, if you know that `aSelector` has no return value, you might be able to use `NSObject-class/performSelector(onMainThread:with:waitUntilDone:)` or one of the related methods available in [`NSObject`](nsobject-swift.class.md).
+To avoid the warning, if you know that `aSelector` has no return value, you might be able to use [`performSelector(onMainThread:with:waitUntilDone:)`](nsobject-swift.class/performselector(onmainthread:with:waituntildone:).md) or one of the related methods available in [`NSObject`](nsobject-swift.class.md).
 
 For a more general solution, use [`NSInvocation`](https://developer.apple.com/documentation/Foundation/NSInvocation) to construct a message that you can invoke with an arbitrary argument list and return value.
 

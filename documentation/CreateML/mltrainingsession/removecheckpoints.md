@@ -19,9 +19,9 @@ Removes the checkpoints that satisfy your closure from the training session.
 final func removeCheckpoints(_ predicate: (MLCheckpoint) -> Bool) throws
 ```
 
-#### Discussion
+## Parameters
 
-- predicate: A closure that returns a Boolean indicating whether to remove a checkpoint.
+- `predicate`: A closure that returns a Boolean indicating whether to remove a checkpoint.
 
 
 ---

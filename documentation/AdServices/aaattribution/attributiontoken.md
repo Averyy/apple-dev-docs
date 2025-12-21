@@ -62,7 +62,7 @@ In iOS 14 and later, the Allow Apps to Request to Track (AAtRtT) device-level se
 | Off | Denied or restricted ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.denied`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/denied) / ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.restricted`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/restricted) | Standard |
 | Off | Authorized ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.authorized`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/authorized) | Detailed |
 
-The attribution record is a data dictionary with key-value pairs that correspond to your Apple Search Ads campaigns and app downloads on Apple News and Stocks from devices running iOS 14 and later. For more information, see [`Changelog`](changelog.md).
+The attribution record is a data dictionary with key-value pairs that correspond to your Apple Search Ads campaigns and app downloads from devices running iOS 14 and later. For more information, see [`Changelog`](changelog.md).
 
 A detailed payload for tap-through attribution resembles the following:
 
@@ -130,25 +130,91 @@ A standard payload for view-through attribution resembles the following:
 }
 ```
 
+A detailed payload for pre-order attribution on tap-throughs resembles the following:
+
+```json
+{
+  "attribution": true,
+  "orgId": 40669820,
+  "campaignId": 542370539,
+  "conversionType": "PreOrder",
+  "clickDate": "2020-04-08T17:17Z",
+  "claimType": "Click",
+  "adGroupId": 542317095,
+  "countryOrRegion": "US",
+  "keywordId": 87675432,
+  "adId": 542317136
+}
+```
+
+A standard payload for pre-order attribution on tap-throughs resembles the following:
+
+```json
+{
+  "attribution": true,
+  "orgId": 40669820,
+  "campaignId": 542370539,
+  "conversionType": "PreOrder",
+  "claimType": "Click",
+  "adGroupId": 542317095,
+  "countryOrRegion": "US",
+  "keywordId": 87675432,
+  "adId": 542317136
+}
+```
+
+A detailed payload for pre-order attribution on view-throughs resembles the following:
+
+```json
+{
+  "attribution": true,
+  "orgId": 40669820,
+  "campaignId": 542370539,
+  "conversionType": "PreOrder",
+  "impressionDate": "2020-04-08T17:17Z",
+  "claimType": "Impression",
+  "adGroupId": 542317095,
+  "countryOrRegion": "US",
+  "keywordId": 87675432,
+  "adId": 542317136
+}
+```
+
+A standard payload for pre-order attribution on view-throughs resembles the following:
+
+```json
+{
+  "attribution": true,
+  "orgId": 40669820,
+  "campaignId": 542370539,
+  "conversionType": "PreOrder",
+  "claimType": "Impression",
+  "adGroupId": 542317095,
+  "countryOrRegion": "US",
+  "keywordId": 87675432,
+  "adId": 542317136
+}
+```
+
 > **Note**: If you receive test data in your payload responses, check to make sure your app isn’t in developer mode.
 
-Run reports to review detailed campaign metadata in [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) or [`Apple Search Ads Advanced`](https://developer.apple.comhttps://searchads.apple.com/advanced/).
+Run reports to review detailed campaign metadata in [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) or [`Apple Search Ads Advanced`](https://developer.apple.comhttps://ads.apple.com/advanced/).
 
 ##### Attribution Payload Descriptions
 
 |  |  |  |
 | --- | --- | --- |
-| `adGroupId` | Integer | The identifier for the ad group. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad Group-Level Reports`](https://developer.apple.com/documentation/apple_search_ads/Get-Ad-Group-Level-Reports) to correlate your attribution response by `adGroupId` and its corresponding campaign in the Apple Search Ads Campaign Management API. |
-| `adId` | Integer | The identifier representing the assignment relationship between an `ad` object and an ad group. This applies to devices running iOS 15.2 and later. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad Group-Level Reports`](https://developer.apple.com/documentation/apple_search_ads/Get-Ad-Group-Level-Reports) to correlate your attribution response by `adId` in the Apple Search Ads Campaign Management API. |
-| `attribution` | Boolean | The attribution value. A value of `true` returns if a user clicks an Apple Search Ads impression up to 30 days before your app download. If the API can’t find a matching attribution record, the attribution value is `false`. |
-| `campaignId` | Integer | The unique identifier for the campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Campaign-Level Reports`](https://developer.apple.com/documentation/apple_search_ads/Get-Campaign-Level-Reports) in the Apple Search Ads Campaign Management API to correlate your attribution response by `campaignId`. |
+| `adGroupId` | long | The identifier for the ad group. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad Group-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Ad-Group-Level-Reports) to correlate your attribution response by `adGroupId` and its corresponding campaign in the Apple Search Ads Campaign Management API. |
+| `adId` | long | The identifier representing the assignment relationship between an `ad` object and an ad group. This applies to devices running iOS 15.2 and later. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad Group-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Ad-Group-Level-Reports) to correlate your attribution response by `adId` in the Apple Search Ads Campaign Management API. |
+| `attribution` | boolean | The attribution value. A value of `true` returns if a user clicks an Apple Search Ads impression up to 30 days before your app download. If the API can’t find a matching attribution record, the attribution value is `false`. |
+| `campaignId` | long | The unique identifier for the campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Campaign-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Campaign-Level-Reports) in the Apple Search Ads Campaign Management API to correlate your attribution response by `campaignId`. |
 | `claimType` | string | Returned in both standard and detailed payloads: ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)For view-through attribution, `claimType` will have a value of `Impression` to indicate users who viewed an ad in a corresponding Apple Search Ads campaign but didn’t tap on it, within 24 hours of an ad view. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Note: for view-through attribution, campaigns with age and gender targeting criteria return a value of `false`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)For tap-through attribution, `claimType` will have a value of `Click`, specifying that the user tapped on an ad. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Note: the tap-through attribution window is 30 days and tap-through attribution is prioritized over view-through attribution. |
-| `clickDate` | Date/Time string | The date and time when the user clicks an ad in a corresponding campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)This field only appears in the detailed attribution response payload. |
-| `conversionType` | String | The type of conversion is either `Download` or `Redownload`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Conversion types appear in your campaign reports in the Apple Search Ads Campaign Management API. See the [`ExtendedSpendRow`](https://developer.apple.com/documentation/apple_search_ads/ExtendedSpendRow) object for more information. |
-| `countryOrRegion` | String | The country or region for the campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Campaign-Level Reports`](https://developer.apple.com/documentation/apple_search_ads/Get-Campaign-Level-Reports) to correlate your attribution response by `countryOrRegion` in the Apple Search Ads Campaign Management API. |
+| `clickDate` | date/time string | The date and time when the user clicks an ad in a corresponding campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)This field only appears in the detailed attribution response payload. |
+| `conversionType` | string | The type of conversion. Values are `Download`, `Redownload` or `preorder`. The `preorder` value attributes both clicks and views. If a pre-order was placed within 30 days from the click or 1 day from the view, the lookback window for click-throughs is 90 days. The lookback window for view-throughs is 61 days. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Conversion types appear in your campaign reports in the Apple Search Ads Campaign Management API. See the [`ExtendedSpendRow`](https://developer.apple.com/documentation/apple_ads/ExtendedSpendRow) object for more information. |
+| `countryOrRegion` | string | The country or region for the campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Campaign-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Campaign-Level-Reports) to correlate your attribution response by `countryOrRegion` in the Apple Search Ads Campaign Management API. |
 | `impressionDate` | UTC string | Represents the date and time when an ad view occurs in a corresponding Apple Search Ads campaign. The `impressionDate` attribute only appears in the detailed ad view-through attribution response payload. |
-| `keywordId` | Integer | The identifier for the keyword. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Keyword-Level Reports`](https://developer.apple.com/documentation/apple_search_ads/Get-Keyword-Level-Reports) in the Apple Search Ads Campaign Management API to correlate your attribution response by `keywordId`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Note, when you enable search match, the API doesn’t return `keywordId` in the attribution response. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)See [`Ad Groups`](https://developer.apple.com/documentation/Apple_Search_Ads/ad-groups) for more information. |
-| `orgId` | Integer | The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in the Apple Search Ads UI. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Obtain your `orgId` by calling [`Get User ACL`](https://developer.apple.com/documentation/apple_search_ads/Get-User-ACL) in the Apple Search Ads Campaign Management API. |
+| `keywordId` | long | The identifier for the keyword. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Keyword-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Keyword-Level-Reports) in the Apple Search Ads Campaign Management API to correlate your attribution response by `keywordId`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Note, when you enable search match, the API doesn’t return `keywordId` in the attribution response. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)See [`Ad Groups`](https://developer.apple.com/documentation/Apple_Ads/ad-groups) for more information. |
+| `orgId` | long | The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in the Apple Search Ads UI. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Obtain your `orgId` by calling [`Get User ACL`](https://developer.apple.com/documentation/apple_ads/Get-User-ACL) in the Apple Search Ads Campaign Management API. |
 
 
 ---

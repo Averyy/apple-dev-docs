@@ -6,7 +6,7 @@
 The inertia of the object, related to the target’s mass. The larger the inertia, the less snappy the object is in response to user input.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

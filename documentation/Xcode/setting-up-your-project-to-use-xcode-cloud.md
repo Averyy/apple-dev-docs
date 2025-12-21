@@ -58,6 +58,8 @@ If you don’t have the required role or permission, work with a team member who
 
 ## See Also
 
+- [Getting started with Xcode Cloud](getting-started-with-xcode-cloud.md)
+  A quick start guide to getting your project set up with Xcode Cloud for continuous integration, development, and distribution.
 - [About continuous integration and delivery with Xcode Cloud](about-continuous-integration-and-delivery-with-xcode-cloud.md)
   Learn how continuous integration and delivery with Xcode Cloud helps you create high-quality apps and frameworks.
 - [Configuring your first Xcode Cloud workflow](configuring-your-first-xcode-cloud-workflow.md)

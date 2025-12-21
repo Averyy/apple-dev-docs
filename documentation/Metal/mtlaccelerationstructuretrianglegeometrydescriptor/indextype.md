@@ -21,7 +21,7 @@ var indexType: MTLIndexType { get set }
 
 #### Discussion
 
-The data type must be [`MTLDataType.ushort`](mtldatatype/ushort.md) or [`MTLDataType.uint`](mtldatatype/uint.md). The default is [`MTLDataType.uint`](mtldatatype/uint.md).
+The index type needs to be [`MTLIndexType.uint16`](mtlindextype/uint16.md) or [`MTLIndexType.uint32`](mtlindextype/uint32.md). The default is [`MTLIndexType.uint32`](mtlindextype/uint32.md).
 
 ## See Also
 

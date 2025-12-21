@@ -40,7 +40,7 @@ For information about how to read a payment card, see [`PaymentCardReaderSession
 - [PaymentCardReadResult.ReadOutcome](paymentcardreadresult/readoutcome.md)
   Values that describe the outcome of a read request.
 ### Getting the result ID
-- [let id: String](paymentcardreadresult/id-swift.property.md)
+- [let id: String](paymentcardreadresult/id.md)
   The unique identifier for the transaction.
 ### Getting the PIN status
 - [let isPINFallback: Bool](paymentcardreadresult/ispinfallback.md)
@@ -55,9 +55,6 @@ For information about how to read a payment card, see [`PaymentCardReaderSession
   The effective state of the card that the system read.
 - [let cardExpirationState: PaymentCardReadResult.CardExpirationState?](paymentcardreadresult/cardexpirationstate-swift.property.md)
   The expiration state of the card that the system read.
-### Type Aliases
-- [PaymentCardReadResult.ID](paymentcardreadresult/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Enumerations
 - [PaymentCardReadResult.CardEffectiveState](paymentcardreadresult/cardeffectivestate-swift.enum.md)
   Values that describe the effective state of the card that was read.

@@ -17,7 +17,7 @@ var isFieldEditor: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver interprets Tab, Shift-Tab, and Return (Enter) as cues to end editing and possibly to change the first responder; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t, instead accepting these characters as text input.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the receiver interprets Tab, Shift-Tab, and Return (Enter) as cues to end editing and possibly to change the first responder; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t, instead accepting these characters as text input.
 
 See the [`NSWindow`](nswindow.md) class specification for more information on field editors. By default, `NSText` objects don’t behave as field editors.
 

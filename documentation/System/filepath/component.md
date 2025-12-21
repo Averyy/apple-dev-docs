@@ -63,13 +63,7 @@ path.append(file)               // path is "/tmp/foo.txt"
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](filepath/component/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](filepath/component/customstringconvertible-implementations.md)
-- [Decodable Implementations](filepath/component/decodable-implementations.md)
-- [Encodable Implementations](filepath/component/encodable-implementations.md)
-- [Equatable Implementations](filepath/component/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](filepath/component/expressiblebyextendedgraphemeclusterliteral-implementations.md)
 - [ExpressibleByStringLiteral Implementations](filepath/component/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](filepath/component/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](filepath/component/hashable-implementations.md)
 
 ## Relationships
 

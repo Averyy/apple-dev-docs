@@ -4,13 +4,19 @@
 **Kind**: case
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 case b
 ```
+
+## See Also
+
+- [TossableRepresentation.TetrahedronFace.a](tossablerepresentation/tetrahedronface/a.md)
+- [TossableRepresentation.TetrahedronFace.c](tossablerepresentation/tetrahedronface/c.md)
+- [TossableRepresentation.TetrahedronFace.d](tossablerepresentation/tetrahedronface/d.md)
 
 
 ---

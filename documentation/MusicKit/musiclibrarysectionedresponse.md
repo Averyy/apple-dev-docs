@@ -25,11 +25,6 @@ struct MusicLibrarySectionedResponse<SectionType, MusicItemType> where SectionTy
 ### Instance Properties
 - [let sections: [MusicLibrarySection<SectionType, MusicItemType>]](musiclibrarysectionedresponse/sections.md)
   An array of sections that match the filters on the originating library request.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiclibrarysectionedresponse/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiclibrarysectionedresponse/customstringconvertible-implementations.md)
-- [Equatable Implementations](musiclibrarysectionedresponse/equatable-implementations.md)
-- [Hashable Implementations](musiclibrarysectionedresponse/hashable-implementations.md)
 
 ## Relationships
 

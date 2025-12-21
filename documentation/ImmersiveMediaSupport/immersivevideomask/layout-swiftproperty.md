@@ -6,8 +6,8 @@
 The layout of this mask, see [`ImmersiveVideoMask.Layout`](immersivevideomask/layout-swift.enum.md) for more details.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ var layout: ImmersiveVideoMask.Layout { get }
 ## See Also
 
 - [var texture: any MTLTexture](immersivevideomask/texture.md)
-  The mask texture ready to be used for rendering.
+  The mask texture ready for rendering.
 
 
 ---

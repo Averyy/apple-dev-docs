@@ -6,8 +6,8 @@
 Enumeration indicating method to use when searching for location.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -25,10 +25,6 @@ enum Method
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 - [RCSService.Business.ShowLocationAction.Method.query(_:)](rcsservice/business/showlocationaction/method-swift.enum/query(_:).md)
   Search for location(s) by query.
-### Default Implementations
-- [Decodable Implementations](rcsservice/business/showlocationaction/method-swift.enum/decodable-implementations.md)
-- [Encodable Implementations](rcsservice/business/showlocationaction/method-swift.enum/encodable-implementations.md)
-- [Equatable Implementations](rcsservice/business/showlocationaction/method-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

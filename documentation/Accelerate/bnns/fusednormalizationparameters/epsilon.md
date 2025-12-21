@@ -13,7 +13,6 @@ The epsilon in the computation of the standard deviation.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

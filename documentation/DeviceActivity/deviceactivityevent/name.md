@@ -27,21 +27,6 @@ struct Name
   Creates a new instance with the specified raw value.
 - [init(String)](deviceactivityevent/name/init(_:).md)
   Creates a new instance with the specified raw value.
-- [var rawValue: String](deviceactivityevent/name/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Identifying and Comparing Errors
-- [func hash(into: inout Hasher)](deviceactivityevent/name/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](deviceactivityevent/name/hashvalue.md)
-  The hash value.
-- [static func != (Self, Self) -> Bool](deviceactivityevent/name/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values aren’t equal.
-### Type Aliases
-- [DeviceActivityEvent.Name.RawValue](deviceactivityevent/name/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](deviceactivityevent/name/equatable-implementations.md)
-- [RawRepresentable Implementations](deviceactivityevent/name/rawrepresentable-implementations.md)
 
 ## Relationships
 

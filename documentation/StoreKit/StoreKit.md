@@ -31,7 +31,7 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   Set up an in-app store using SwiftUI and StoreKit views.
 ### App transaction
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
-  Access the app transaction to learn when a customer first purchased an app, to determine the app features they’re entitled to.
+  Access the app transaction to determine when a customer purchased an app and the features to which they’re entitled.
 - [struct AppTransaction](apptransaction.md)
   Information that represents the customer’s purchase of the app, cryptographically signed by the App Store.
 ### Messages
@@ -57,10 +57,10 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   A class that displays an overlay you can use to recommend another app or an App Clip’s corresponding full app.
 ### Background assets extension
 - [protocol StoreDownloaderExtension](storedownloaderextension.md)
-  A protocol to which a downloader extension for Apple-Hosted Background Assets must conform.
+  An app extension that uses the system implementation to schedule Apple-hosted asset-pack downloads automatically.
 ### Payment method binding
 - [struct PaymentMethodBinding](paymentmethodbinding.md)
-  A binding that makes payment methods available in apps for an Apple ID.
+  A binding that makes payment methods available in apps for an Apple Account.
 ### Ad network attribution
 - [Ad network attribution](ad-network-attribution.md)
   Validate advertisement-driven app installations.
@@ -75,6 +75,9 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   A view controller that helps people perform setup for a cloud service, like an Apple Music subscription.
 - [class SKCloudServiceController](skcloudservicecontroller.md)
   An object that determines the current capabilities of a person’s Music library.
+### Articles
+- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
 
 ## See Also
 
@@ -86,7 +89,9 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   Monitor In-App Purchase events in real time and learn of unreported external purchase tokens, with server notifications from the App Store.
 - [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md)
   Automate the tasks you perform on the Apple Developer website and in App Store Connect.
-- [App Store Receipts](../appstorereceipts/appstorereceipts.md)
+- [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md)
+  Support In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
+- [App Store Receipts](../AppStoreReceipts/AppStoreReceipts.md)
   Validate app and In-App Purchase receipts with the App Store.
 
 

@@ -6,7 +6,7 @@
 The color formats, depth formats, and features that you can use to configure your rendering engine.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -37,14 +37,16 @@ A [`LayerRenderer.Capabilities`](layerrenderer/capabilities.md) type provides in
 ### Getting the minimum near plane distance
 - [var supportedMinimumNearPlaneDistance: Float](layerrenderer/capabilities/supportedminimumnearplanedistance.md)
   The minimum distance in meters to the layer’s near projection plane.
+### Determining supported stencil formats
+- [var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat]](layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md)
+  An array of metal pixel formats the layer renderer drawable supports with its render context.
+### Getting render quality
+- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
+  The default render quality used on this platform.
 ### Structures
 - [LayerRenderer.Capabilities.SupportedColorFormatsOptions](layerrenderer/capabilities/supportedcolorformatsoptions.md)
   Options you can use to filter the supported color formats for a layer textures.
 ### Instance Properties
-- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
-  The default render quality used on this platform.
-- [var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat]](layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md)
-  An array of stencil formats that the layer supports with its drawable render context.
 - [var supportedTrackingAreasFormats: [MTLPixelFormat]](layerrenderer/capabilities/supportedtrackingareasformats.md)
   An array of tracking areas formats that the layer supports for its textures.
 ### Instance Methods

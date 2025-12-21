@@ -11,9 +11,8 @@ A Swift macro you use to make sure your app enum conforms to an assistant schema
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- watchOS 9.0+
-- Unknown ?+ - Deprecated
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 
@@ -21,16 +20,6 @@ A Swift macro you use to make sure your app enum conforms to an assistant schema
 @attached
 (extension, conformances: AssistantSchemaEnum, names: named(__assistantSchemaEnum)) macro AssistantEnum<T>(schema: T) where T : AssistantSchemas.Enum
 ```
-
-## Mentions
-
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-- [Making camera actions available to Siri and Apple Intelligence](making-camera-actions-available-to-siri-and-apple-intelligence.md)
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-- [Making document reader actions available to Siri and Apple Intelligence](making-document-reader-actions-available-to-siri-and-apple-intelligence.md)
 
 ## See Also
 

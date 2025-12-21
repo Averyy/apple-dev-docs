@@ -18,6 +18,10 @@
 func CVPixelBufferIsCompatibleWithAttributes(_ pixelBuffer: CVPixelBuffer, _ attributes: CFDictionary?) -> Bool
 ```
 
+#### Discussion
+
+Returns true if given pixel buffer is compatible with pixelBufferAttributes dictionary.
+
 ## Parameters
 
 - `pixelBuffer`: PixelBuffer to check for compatibility.

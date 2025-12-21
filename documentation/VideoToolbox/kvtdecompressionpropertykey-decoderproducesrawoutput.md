@@ -3,6 +3,8 @@
 **Framework**: Video Toolbox  
 **Kind**: var
 
+A value that indicates whether the decoder can produce RAW output requiring a RAW processing session for post-decode processing.
+
 **Availability**:
 - macOS 15.0+
 
@@ -14,17 +16,9 @@ let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString
 
 #### Discussion
 
-```not specified
-@constant       kVTDecompressionPropertyKey_DecoderProducesRAWOutput
-@abstract
-	Indicates whether the decoder can produce RAW output requiring a VTRAWProcessingSession for post-decode processing.
-@discussion
-	If this property is not implemented, it is assumed that the decoder does not produce RAW output.
-	If the decoder reports that it produces RAW output the VTDecompressionSession will internally invoke a VTRAWProcessingSession by default to produce
-	processed output.
-	If the client sets kVTDecompressionPropertyKey_RequestRAWOutput, the VTDecompressionSession will do no processing and return the decoder's native RAW
-	output, and any requested destinationImageBufferAttributes on the VTDecompressionSession will be ignored.
-```
+If this property isn’t implemented, it’s assumed that the decoder does not produce RAW output. If the decoder reports that it produces RAW output, the [`VTDecompressionSession`](vtdecompressionsession.md) internally invokes a [`VTRAWProcessingSession`](vtrawprocessingsession.md) by default to produce processed output.
+
+If the client sets [`kVTDecompressionPropertyKey_RequestRAWOutput`](kvtdecompressionpropertykey_requestrawoutput.md), the [`VTDecompressionSession`](vtdecompressionsession.md) performs no processing and returns the decoder’s native RAW output, and ignores any requested image buffer attributes.
 
 ## See Also
 
@@ -37,6 +31,7 @@ let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString
 - [let kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata: CFString](kvtdecompressionpropertykey_generateperframehdrdisplaymetadata.md)
   A key that indicates to generate per frame HDR Metadata and attach it to the resulting decoded pixel buffers.
 - [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](kvtdecompressionpropertykey_requestrawoutput.md)
+  For decoders that produce RAW output, this property requests that the decompression session provides unprocessed output.
 
 
 ---

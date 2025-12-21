@@ -29,10 +29,6 @@ struct UVIndex
   The UV Index value.
 - [UVIndex.ExposureCategory](uvindex/exposurecategory.md)
   An enumeration that indicates risk of harm from unprotected sun exposure.
-### Default Implementations
-- [Decodable Implementations](uvindex/decodable-implementations.md)
-- [Encodable Implementations](uvindex/encodable-implementations.md)
-- [Equatable Implementations](uvindex/equatable-implementations.md)
 
 ## Relationships
 

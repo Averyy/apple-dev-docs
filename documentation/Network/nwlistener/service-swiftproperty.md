@@ -25,7 +25,7 @@ final var service: NWListener.Service? { get set }
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 - [NWListener.Service](nwlistener/service-swift.struct.md)
   A description used to advertise the Bonjour service that a listener provides.
 - [var serviceRegistrationUpdateHandler: ((NWListener.ServiceRegistrationChange) -> Void)?](nwlistener/serviceregistrationupdatehandler.md)

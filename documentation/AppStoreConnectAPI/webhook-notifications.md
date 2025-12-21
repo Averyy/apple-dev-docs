@@ -14,14 +14,14 @@ To invoke your webhook, App Store Connect needs to know your server’s webhook 
 
 To learn more about:
 
-- Configuring a webhook URL using the API, see [`Configuring and parsing App Store Connect webhook notifications`](configuring-webhook-notifications.md).
+- Configuring a webhook URL using the API, see [`Configuring and parsing App Store Connect API webhook notifications`](configuring-webhook-notifications.md).
 - Events that can trigger a webhook notification, see [`Understanding webhook events`](webhook-events.md) and [`WebhookEventType`](webhookeventtype.md).
 
 ## Topics
 
 ### Essentials
-- [Configuring and parsing App Store Connect webhook notifications](configuring-webhook-notifications.md)
-  Manage the configuration, testing, and processing of App Store Connect notifications for your app.
+- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
+  Manage the configuration, testing, and processing of App Store Connect API notifications for your app.
 - [Understanding webhook events](webhook-events.md)
   Learn the events that describe payloads and the notifications the system sends.
 ### Managing webhook notifications

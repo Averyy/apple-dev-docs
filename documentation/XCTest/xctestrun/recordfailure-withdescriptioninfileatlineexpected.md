@@ -5,9 +5,6 @@
 
 Records a failure during test execution for the test run.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

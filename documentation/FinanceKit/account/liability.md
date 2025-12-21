@@ -15,6 +15,11 @@ A liability account.
 case liability(LiabilityAccount)
 ```
 
+## See Also
+
+- [case asset(AssetAccount)](account/asset(_:).md)
+  An asset account.
+
 
 ---
 

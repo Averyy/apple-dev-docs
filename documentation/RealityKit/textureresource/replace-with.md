@@ -10,7 +10,7 @@ Replaces a texture resource with a low-level texture.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS ?+
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -34,7 +34,7 @@ Replaces a texture resource with a low-level texture.
   Dynamically replaces the texture with a drawable queue.
 - [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](textureresource/replace(withimage:options:).md)
   Dynamically replaces the texture with a Core Graphics image.
-- [func replace(using:options:)](textureresource/replace(using:options:).md)
+- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](textureresource/replace(using:options:).md)
   Asynchronously replaces the texture with a Core Graphics image.
 
 

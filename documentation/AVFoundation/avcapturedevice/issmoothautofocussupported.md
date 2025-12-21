@@ -19,7 +19,7 @@ var isSmoothAutoFocusSupported: Bool { get }
 
 #### Discussion
 
-The smooth focusing mode is available only on compatible devices. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), setting the value of [`isSmoothAutoFocusEnabled`](avcapturedevice/issmoothautofocusenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true) raises an exception.
+The smooth focusing mode is available only on compatible devices. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), setting the value of [`isSmoothAutoFocusEnabled`](avcapturedevice/issmoothautofocusenabled.md) to [`true`](https://developer.apple.com/documentation/Swift/true) raises an exception.
 
 ## See Also
 

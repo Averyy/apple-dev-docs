@@ -21,7 +21,7 @@ enum MTLFunctionLogType
 
 ## Topics
 
-### Enumeration Cases
+### Enumeration cases
 - [MTLFunctionLogType.validation](mtlfunctionlogtype/validation.md)
   A message related to usage validation.
 ### Initializers

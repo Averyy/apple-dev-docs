@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: method
 
-Attaches multiple residency sets to the queue, which Metal attaches to its command buffers as you commit them.
+Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
 
 **Availability**:
 - iOS 18.0+
@@ -21,11 +21,11 @@ func addResidencySets(_ residencySets: [any MTLResidencySet])
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+Each command queue can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
 
 ## Parameters
 
@@ -34,7 +34,7 @@ See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-
 ## See Also
 
 - [func addResidencySet(any MTLResidencySet)](mtlcommandqueue/addresidencyset(_:).md)
-  Attaches a residency set to the queue, which Metal attaches to its command buffers as you commit them.
+  Applies a residency set to a queue, which Metal applies to the queue’s command buffers as you commit them.
 
 
 ---

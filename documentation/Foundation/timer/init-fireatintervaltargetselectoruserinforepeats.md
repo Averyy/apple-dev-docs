@@ -22,7 +22,7 @@ init(fireAt date: Date, interval ti: TimeInterval, target t: Any, selector s: Se
 
 #### Return Value
 
-The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](https://developer.apple.com/documentation/swift/true), every `ti` after that.
+The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](https://developer.apple.com/documentation/Swift/true), every `ti` after that.
 
 #### Discussion
 

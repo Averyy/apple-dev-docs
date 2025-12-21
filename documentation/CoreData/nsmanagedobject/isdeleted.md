@@ -22,7 +22,7 @@ var isDeleted: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if Core Data will ask the persistent store to delete the object during the next save operation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). It may return [`false`](https://developer.apple.com/documentation/swift/false) at other times, particularly after the object has been deleted. The immediacy with which it will stop returning [`true`](https://developer.apple.com/documentation/swift/true) depends on where the object is in the process of being deleted.
+[`true`](https://developer.apple.com/documentation/Swift/true) if Core Data will ask the persistent store to delete the object during the next save operation, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). It may return [`false`](https://developer.apple.com/documentation/Swift/false) at other times, particularly after the object has been deleted. The immediacy with which it will stop returning [`true`](https://developer.apple.com/documentation/Swift/true) depends on where the object is in the process of being deleted.
 
 If the receiver is a fault, accessing this property does not cause it to fire.
 

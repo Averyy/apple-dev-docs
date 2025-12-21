@@ -25,6 +25,8 @@ var automaticallyHandlesInterstitialEvents: Bool { get set }
 
 - [var integratedTimeline: AVPlayerItemIntegratedTimeline](avplayeritem/integratedtimeline.md)
   An integrated timeline that represents the player item timing including its scheduled interstitial events.
+- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
+  A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
 - [var interstitialTimeRanges: [AVInterstitialTimeRange]](avplayeritem/interstitialtimeranges.md)
   An array of time ranges that identify interstitial content.
 - [var template: AVPlayerItem?](avplayeritem/template.md)

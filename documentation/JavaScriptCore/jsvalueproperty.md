@@ -16,7 +16,7 @@ A type that identifies a property of a JavaScript value.
 ## Declaration
 
 ```swift
-typealias JSValueProperty = AnyObject
+typealias JSValueProperty = NSString
 ```
 
 ## See Also

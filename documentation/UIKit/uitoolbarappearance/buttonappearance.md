@@ -23,6 +23,11 @@ The appearance attributes for plain bar button items in the toolbar.
 
 To configure the appearance of a done button item, use the [`doneButtonAppearance`](uitoolbarappearance/donebuttonappearance.md) property instead.
 
+## See Also
+
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
+  The appearance attributes for Prominent buttons.
+
 
 ---
 

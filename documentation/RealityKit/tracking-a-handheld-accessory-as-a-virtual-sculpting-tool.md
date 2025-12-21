@@ -5,8 +5,8 @@
 Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
-- Xcode 26.0+ (Beta)
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 

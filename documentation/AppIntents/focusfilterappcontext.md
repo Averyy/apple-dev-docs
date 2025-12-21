@@ -39,7 +39,7 @@ struct FocusFilterAppContext
 
 - [protocol SetFocusFilterIntent](setfocusfilterintent.md)
   An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
-- [Defining your app’s Focus filter](focus/defining_your_app_s_focus_filter.md)
+- [Defining your app’s Focus filter](defining-your-app-s-focus-filter.md)
   Customize your app’s behavior to reflect the device’s current Focus.
 - [struct FocusFilterSuggestionContext](focusfiltersuggestioncontext.md)
   A type you use to suggest app configurations for a given Focus.

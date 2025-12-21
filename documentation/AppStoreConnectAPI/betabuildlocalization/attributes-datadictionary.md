@@ -53,7 +53,7 @@ Table 1 lists allowed locale values.
 - [Beta Build Localizations](beta-build-localizations.md)
   Beta test information about builds, specific to a locale.
 - [object BetaBuildLocalization.Relationships](betabuildlocalization/relationships-data.dictionary.md)
-  The relationships you included in the request and those on which you can operate.
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

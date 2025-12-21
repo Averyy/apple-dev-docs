@@ -117,19 +117,6 @@ for (k0 = 0; k0 < N0/2; ++k0)
 
 The temporary buffer versions perform the same operation but use a temporary buffer for improved performance.
 
-## Topics
-
-### Out-of-Place FFT Functions
-- [vDSP_fft2d_zrop](vdsp_fft2d_zrop.md)
-  Computes a 2D forward or inverse out-of-place, single-precision real FFT.
-- [vDSP_fft2d_zropD](vdsp_fft2d_zropd.md)
-  Computes a 2D forward or inverse out-of-place, double-precision real FFT.
-### Out-of-Place FFT Functions with Temporary Buffer
-- [vDSP_fft2d_zropt](vdsp_fft2d_zropt.md)
-  Computes a 2D forward or inverse out-of-place, single-precision real FFT using a temporary buffer.
-- [vDSP_fft2d_zroptD](vdsp_fft2d_zroptd.md)
-  Computes a 2D forward or inverse out-of-place, double-precision real FFT using a temporary buffer.
-
 ## See Also
 
 - [In-Place Functions for 2D Real FFT](in-place-functions-for-2d-real-fft.md)

@@ -22,7 +22,7 @@ var isUpdated: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has unsaved changes, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The receiver has unsaved changes if it has been updated since its managed object context was last saved.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has unsaved changes, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The receiver has unsaved changes if it has been updated since its managed object context was last saved.
 
 If the receiver is a fault, accessing this property does not cause it to fire.
 

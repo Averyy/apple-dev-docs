@@ -41,7 +41,7 @@ let messagePredicate = #Predicate<Message> { message in
 
 A macro that isn’t attached to a declaration generates code and adds that code in the location where where you call the macro. For example, the `Predicate` macro in the code above creates an instance of the [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) structure.
 
-For more information, see [`Macros`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros) in .
+For more information, see [`Macros`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language).
 
 ##### Inspect an Expanded Macro
 

@@ -5,8 +5,6 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](publishers/first/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Publishers.First<Upstream>, Publishers.First<Upstream>) -> Bool](publishers/first/==(_:_:).md)
   Returns a Boolean value that indicates whether two first publishers have equal upstream publishers.
 

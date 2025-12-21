@@ -7,11 +7,11 @@
 The arguments that this tool should accept.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,14 +25,14 @@ associatedtype Arguments : ConvertibleFromGeneratedContent
 
 #### Discussion
 
-Typically arguments are either a [`Generable`](generable.md) type or `GeneratedContent.`
+Typically arguments are either a [`Generable`](generable.md) type or [`GeneratedContent`](generatedcontent.md).
 
 ## See Also
 
-- [func call(arguments: Self.Arguments) async throws -> ToolOutput](tool/call(arguments:).md)
+- [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
   A language model will call this method when it wants to leverage this tool.
-- [struct ToolOutput](tooloutput.md)
-  A structure that contains the output a tool generates.
+- [associatedtype Output : PromptRepresentable](tool/output.md)
+  The output that this tool produces for the language model to reason about in subsequent interactions.
 
 
 ---

@@ -16,7 +16,7 @@ let kQLPreviewPropertyMIMETypeKey: CFString!
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh object. Use this key to retrievie the web content’s or attachment’s mime type. For the main data, the default type is `text/html`.
+The associated value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. Use this key to retrievie the web content’s or attachment’s mime type. For the main data, the default type is `text/html`.
 
 ## See Also
 

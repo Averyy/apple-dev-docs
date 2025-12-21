@@ -16,11 +16,11 @@ optional func webView(_ webView: WebView!, shouldDelete range: DOMRange!) -> Boo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to delete the content specified by `range`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the user should be allowed to delete the content specified by `range`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method may perform an alternate action—for example, delete a different range—and return [`false`](https://developer.apple.com/documentation/swift/false).
+This method may perform an alternate action—for example, delete a different range—and return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

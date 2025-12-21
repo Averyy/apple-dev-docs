@@ -23,16 +23,32 @@ Utility windows are typically used to display controls, settings, or information
 - They hide when the window is no longer active.
 - They only become focused when explicitly needed, such as clicking in the titlebar or on a focusable view.
 - When focused, they can be dismissed with the Escape key.
-- They are not minimizable by default. @main struct PhotoBrowser: App { var body: some Scene { WindowGroup { PhotoGallery() } ```swift
-      UtilityWindow("Photo Info", id: "photo-info") {
-          PhotoInfoViewer()
-      }
-  }
-``` } struct PhotoInfoViewer: View { // Automatically updates to the photo selection from whichever // photo gallery window is focused. @FocusedValue(PhotoSelection.self) private var selectedPhotos ```swift
-  var body: some View {
-      Text("\(selectedPhotos.count) photos selected")
-  }
-``` }
+- They are not minimizable by default.
+
+```swift
+@main
+struct PhotoBrowser: App {
+    var body: some Scene {
+        WindowGroup {
+            PhotoGallery()
+        }
+
+        UtilityWindow("Photo Info", id: "photo-info") {
+            PhotoInfoViewer()
+        }
+    }
+}
+
+struct PhotoInfoViewer: View {
+    // Automatically updates to the photo selection from whichever
+    // photo gallery window is focused.
+    @FocusedValue(PhotoSelection.self) private var selectedPhotos
+
+    var body: some View {
+        Text("\(selectedPhotos.count) photos selected")
+    }
+}
+```
 
 `UtilityWindow` will automatically add a menu item to show/hide itself in the “View” menu. This can be removed by applying [`commandsRemoved()`](scene/commandsremoved().md) to the utility window, and manually placing a [`WindowVisibilityToggle`](windowvisibilitytoggle.md) elsewhere in an app’s commands. Utility windows can also be programmatically presented with [`openWindow`](environmentvalues/openwindow.md) and dismissed using [`dismiss`](environmentvalues/dismiss.md).
 

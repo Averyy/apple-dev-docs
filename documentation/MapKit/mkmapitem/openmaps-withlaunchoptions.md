@@ -21,7 +21,7 @@ class func openMaps(with mapItems: [MKMapItem], launchOptions: [String : Any]? =
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the Maps app successfully opens the maps items, or [`false`](https://developer.apple.com/documentation/swift/false) if there’s an error.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the Maps app successfully opens the maps items, or [`false`](https://developer.apple.com/documentation/Swift/false) if there’s an error.
 
 #### Discussion
 

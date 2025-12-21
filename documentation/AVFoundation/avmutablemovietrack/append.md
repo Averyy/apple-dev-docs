@@ -6,12 +6,12 @@
 Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -47,6 +47,13 @@ It’s safe for multiple threads to call this method on different tracks at once
 ## Parameters
 
 - `sampleBuffer`: The CMReadySampleBuffer to be appended; this may be obtained from an instance of AVAssetReader.
+
+## See Also
+
+- [func append(CMSampleBuffer, decodeTime: UnsafeMutablePointer<CMTime>?, presentationTime: UnsafeMutablePointer<CMTime>?) throws](avmutablemovietrack/append(_:decodetime:presentationtime:).md)
+  Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
+- [func insertMediaTimeRange(CMTimeRange, into: CMTimeRange) -> Bool](avmutablemovietrack/insertmediatimerange(_:into:).md)
+  Inserts a reference to a media time range into a track.
 
 
 ---

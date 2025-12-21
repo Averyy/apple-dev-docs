@@ -6,8 +6,8 @@
 World anchors cannot be shared with nearby participants. This indicates that either there’s no SharePlay session or the session has ended.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

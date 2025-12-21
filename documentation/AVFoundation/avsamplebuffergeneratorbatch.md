@@ -26,10 +26,10 @@ The benefit of batching is it aggregates adjacent I/O requests and overlaps them
 
 ## Topics
 
-### Preparing a Batch
+### Preparing a batch
 - [func makeDataReady(completionHandler: ((any Error)?) -> Void)](avsamplebuffergeneratorbatch/makedataready(completionhandler:).md)
   Loads sample data asynchronously for all sample buffers within a batch.
-### Canceling a Batch
+### Canceling a batch
 - [func cancel()](avsamplebuffergeneratorbatch/cancel.md)
   Cancels any I/O for this batch.
 

@@ -1,7 +1,7 @@
 # PointsOfInterestSearchDelegate
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: typealias
 
 An object or callback function that MapKit JS calls when fetching points of interest.
 
@@ -11,29 +11,26 @@ An object or callback function that MapKit JS calls when fetching points of inte
 ## Declaration
 
 ```swift
-interface PointsOfInterestSearchDelegate
+type PointsOfInterestSearchDelegate =
+    | {
+          searchDidError: (error: Error) => void;
+          searchDidComplete: (result: PointsOfInterestSearchResponse) => void;
+      }
+    | ((error: Error | null, result?: PointsOfInterestSearchResponse) => void);
 ```
 
-#### Overview
+#### Discussion
 
 You may pass an object to the search method instead of using of a search delegate callback function. MapKit JS calls the following methods on the delegate object when they exist:
 
-- [`searchDidComplete`](pointsofinterestsearchdelegate/searchdidcomplete.md) – Upon successful completion of a search request, this method returns a data object that is the same as the one passed to the search callback function.
-- [`searchDidError`](pointsofinterestsearchdelegate/searchdiderror.md) – Called when the search request fails.
-
-## Topics
-
-### Responding to state changes and errors
-- [searchDidComplete](pointsofinterestsearchdelegate/searchdidcomplete.md)
-  Tells the delegate that the search completed.
-- [searchDidError](pointsofinterestsearchdelegate/searchdiderror.md)
-  Tells the delegate that the search failed due to an error.
+- `searchDidComplete` – Upon successful completion of a search request, this method returns a data object that is the same as the one passed to the search callback function.
+- `searchDidError` – Called when the search request fails.
 
 ## See Also
 
-- [search](mapkit.pointsofinterestsearch/search.md)
+- [search(callback, options)](pointsofinterestsearch/search.md)
   Fetches points of interest.
-- [PointsOfInterestSearchResponse](pointsofinterestsearchresponse.md)
+- [interface PointsOfInterestSearchResponse](pointsofinterestsearchresponse.md)
   The result of a request used to fetch points of interest.
 
 

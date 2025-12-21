@@ -22,11 +22,11 @@ func supportsFeatureSet(_ featureSet: MTLFeatureSet) -> Bool
 
 ## Parameters
 
-- `featureSet`: A   instance.
+- `featureSet`: An   instance.
 
 ## See Also
 
-- [Detecting GPU Features and Metal Software Versions](detecting-gpu-features-and-metal-software-versions.md)
+- [Detecting GPU features and Metal software versions](detecting-gpu-features-and-metal-software-versions.md)
   Use the device object’s properties to determine how you perform tasks in Metal.
 - [func supportsFamily(MTLGPUFamily) -> Bool](mtldevice/supportsfamily(_:).md)
   Returns a Boolean value that indicates whether the GPU device supports the feature set of a specific GPU family.

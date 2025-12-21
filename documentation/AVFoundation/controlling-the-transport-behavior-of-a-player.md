@@ -17,19 +17,19 @@ When you create a player item, it starts with a status of [`AVPlayerItem.Status.
 To know when the player item is ready for playback, observe the value of its [`status`](avplayeritem/status-swift.property.md) property. Add this observation before you call the player’s [`replaceCurrentItem(with:)`](avplayer/replacecurrentitem(with:).md) method, because associating the player item with a player is the system’s cue to load the item’s media:
 
 ```swift
+var statusObservation: NSKeyValueObservation?
+
 func playMedia(at url: URL) {
     let asset = AVAsset(url: url)
     let playerItem = AVPlayerItem(
         asset: asset,
         automaticallyLoadedAssetKeys: [.tracks, .duration, .commonMetadata]
     )
-    // Register to observe the status property before associating with player.
-    playerItem.publisher(for: \.status)
-        .removeDuplicates()
-        .receive(on: DispatchQueue.main)
-        .sink { [weak self] status in
-            guard let self else { return }
-            switch status {
+    // Key-value observe the status property before associating with player.
+    statusObservation = playerItem.observe(\.status, options: [.new, .initial]) { [weak self] item, _ in
+        guard let self else { return }
+        Task { @MainActor in
+            switch item.status {
             case .readyToPlay:
                 // Ready to play. Present playback UI.
             case .failed:
@@ -38,8 +38,7 @@ func playMedia(at url: URL) {
                 break
             }
         }
-        .store(in: &subscriptions)
-    
+    }
     // Set the item as the player's current item.
     player.replaceCurrentItem(with: playerItem)
 }
@@ -52,13 +51,16 @@ When the player item reaches a [`AVPlayerItem.Status.readyToPlay`](avplayeritem/
 A player provides the [`play()`](avplayer/play().md) and [`pause()`](avplayer/pause().md) methods as its primary means of controlling its playback rate. When a player item is ready for playback, call the player’s [`play()`](avplayer/play().md) method to request that playback begins at the [`defaultRate`](avplayer/defaultrate.md), which has an initial value of `1.0` (the natural rate). By default, a player automatically waits to start playback until it has sufficient media data available to minimize stalling. You can determine whether a player is in a paused, waiting to play, or playing state by observing its [`timeControlStatus`](avplayer/timecontrolstatus-swift.property.md) value:
 
 ```swift
-@Published var isPlaying = false
+var isPlaying = false
+var timeControlObservation: NSKeyValueObservation?
 
 private func observePlayingState() {
-    player.publisher(for: \.timeControlStatus)
-        .receive(on: DispatchQueue.main)
-        .map { $0 == .playing }
-        .assign(to: &$isPlaying)
+    timeControlObservation = player.observe(\.timeControlStatus, options: [.new, .initial]) { [weak self] player, _ in
+        guard let self else { return }
+        Task { @MainActor in
+            self.isPlaying = player.timeControlStatus == .playing
+        }
+    }
 }
 ```
 

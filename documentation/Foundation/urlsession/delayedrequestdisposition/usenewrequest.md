@@ -26,10 +26,6 @@ case useNewRequest
   A disposition indicating that the task should be canceled.
 - [URLSession.DelayedRequestDisposition.continueLoading](urlsession/delayedrequestdisposition/continueloading.md)
   A disposition indicating that the task should proceed with the original request.
-- [URLSession.DelayedRequestDisposition.cancel](urlsession/delayedrequestdisposition/cancel.md)
-  A disposition indicating that the task should be canceled.
-- [URLSession.DelayedRequestDisposition.continueLoading](urlsession/delayedrequestdisposition/continueloading.md)
-  A disposition indicating that the task should proceed with the original request.
 
 
 ---

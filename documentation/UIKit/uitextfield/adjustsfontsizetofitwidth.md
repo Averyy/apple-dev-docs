@@ -21,9 +21,9 @@ var adjustsFontSizeToFitWidth: Bool { get set }
 
 #### Discussion
 
-Normally, the text field’s content is drawn with the font you specify in the [`font`](uitextfield/font.md) property. If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), however, and the contents in the [`text`](uitextfield/text.md) property exceed the text field’s bounding rectangle, the receiver starts reducing the font size until the string fits or the minimum font size is reached. The text is shrunk along the baseline.
+Normally, the text field’s content is drawn with the font you specify in the [`font`](uitextfield/font.md) property. If this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), however, and the contents in the [`text`](uitextfield/text.md) property exceed the text field’s bounding rectangle, the receiver starts reducing the font size until the string fits or the minimum font size is reached. The text is shrunk along the baseline.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). If you change it to [`true`](https://developer.apple.com/documentation/swift/true), you should also set an appropriate minimum font size by modifying the [`minimumFontSize`](uitextfield/minimumfontsize.md) property.
+The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false). If you change it to [`true`](https://developer.apple.com/documentation/Swift/true), you should also set an appropriate minimum font size by modifying the [`minimumFontSize`](uitextfield/minimumfontsize.md) property.
 
 ## See Also
 

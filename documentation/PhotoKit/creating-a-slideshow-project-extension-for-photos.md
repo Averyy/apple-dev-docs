@@ -73,7 +73,7 @@ func photoLibraryDidChange(_ changeInstance: PHChange) {
 
 ##### Support Copy and Paste
 
-If your extension handles the paste action, implement the [`validateMenuItem:`](https://developer.apple.com/documentation/objectivec/nsobject/1518160-validatemenuitem) delegate method to handle pasteboard contents.
+If your extension handles the paste action, implement the [`validateMenuItem:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/validateMenuItem:) delegate method to handle pasteboard contents.
 
 ```None
 func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {

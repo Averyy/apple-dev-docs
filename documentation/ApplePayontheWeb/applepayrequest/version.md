@@ -19,7 +19,7 @@ required long version;
 
 The version number you provide here represents the minimum Apple Pay version that the user’s browser must support. You can check which API version the browser supports by calling [`supportsVersion`](applepaysession/supportsversion.md).
 
-Always check [`supportsVersion`](applepaysession/supportsversion.md) before using an Apple Pay feature that isn’t available in all versions. See doc://com.apple.documentation/documentation/apple_pay_on_the_web/apple_pay_on_the_web_version_history for information about the features available in each version.
+Always check [`supportsVersion`](applepaysession/supportsversion.md) before using an Apple Pay feature that isn’t available in all versions. See [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md) for information about the features available in each version.
 
 ## See Also
 

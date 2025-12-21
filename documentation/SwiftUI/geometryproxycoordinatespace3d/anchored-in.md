@@ -6,7 +6,7 @@
 Returns a modified `CoordinateSpace3D` offset to match the provided `anchorPoint` in the original coordinate space.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

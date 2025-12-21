@@ -30,7 +30,7 @@ If you use a class that has an [`attributedStringValue`](nscell/attributedstring
 - [var intValue: Int32](nscell/intvalue.md)
   The cell’s value as an integer.
 - [var integerValue: Int](nscell/integervalue.md)
-  The cell’s value as an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) type.
+  The cell’s value as an integer value.
 - [var doubleValue: Double](nscell/doublevalue.md)
   The cell’s value as a double-precision floating-point number.
 - [var floatValue: Float](nscell/floatvalue.md)

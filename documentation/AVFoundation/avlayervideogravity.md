@@ -22,7 +22,7 @@ struct AVLayerVideoGravity
 
 ## Topics
 
-### Video Gravities
+### Video gravities
 - [static let resize: AVLayerVideoGravity](avlayervideogravity/resize.md)
   The video stretches to fill the layer’s bounds.
 - [static let resizeAspect: AVLayerVideoGravity](avlayervideogravity/resizeaspect.md)

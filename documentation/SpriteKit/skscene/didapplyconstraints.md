@@ -17,7 +17,6 @@ Tells your app to peform any necessary logic after constraints are applied.
 ## Declaration
 
 ```swift
-@MainActor
 func didApplyConstraints()
 ```
 

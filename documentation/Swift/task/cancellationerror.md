@@ -11,7 +11,6 @@
 - tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 
@@ -26,10 +25,17 @@ static func CancellationError() -> CancellationError
 - [typealias Priority](task/priority.md)
 - [func getResult() async -> Result<Success, Failure>](task/getresult.md)
 - [func get() async throws -> Success](task/get-4i2gt.md)
+- [func get() async -> Success](task/get-4ohks.md)
 - [static func sleep(UInt64) async](task/sleep(_:).md)
 - [static func suspend() async](task/suspend.md)
-- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, Failure>](task/rundetached(priority:operation:).md)
+- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
+  Deprecated, available only for source compatibility reasons.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-38jhc.md)
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-47sar.md)
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
+- [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 
 
 ---

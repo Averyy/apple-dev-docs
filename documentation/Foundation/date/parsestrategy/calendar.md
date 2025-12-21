@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The calendar to use when parsing date strings and creating the date.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

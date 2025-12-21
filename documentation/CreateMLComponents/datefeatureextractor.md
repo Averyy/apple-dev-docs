@@ -26,26 +26,17 @@ This transformer takes a [`Date`](https://developer.apple.com/documentation/Foun
 
 ## Topics
 
-### Initializers
+### Creating a data feature extractor
 - [init(features: DateFeatures, calendar: Calendar)](datefeatureextractor/init(features:calendar:).md)
   Creates a date feature extractor.
-### Instance Properties
+### Applying a data feature extractor
+- [func applied(to: Date, eventHandler: EventHandler?) -> [Scalar]](datefeatureextractor/applied(to:eventhandler:).md)
+  Extracts features of a particular date.
+### Inspecting a data feature extractor
 - [let calendar: Calendar](datefeatureextractor/calendar.md)
   The calendar.
 - [let features: DateFeatures](datefeatureextractor/features.md)
   The date and time features.
-### Instance Methods
-- [func applied(to: Date, eventHandler: EventHandler?) -> [Scalar]](datefeatureextractor/applied(to:eventhandler:).md)
-  Extracts features of a particular date.
-### Type Aliases
-- [DateFeatureExtractor.Input](datefeatureextractor/input.md)
-  The input type.
-- [DateFeatureExtractor.Output](datefeatureextractor/output.md)
-  The output type.
-### Default Implementations
-- [Decodable Implementations](datefeatureextractor/decodable-implementations.md)
-- [Encodable Implementations](datefeatureextractor/encodable-implementations.md)
-- [Transformer Implementations](datefeatureextractor/transformer-implementations.md)
 
 ## Relationships
 

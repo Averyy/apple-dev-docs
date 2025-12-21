@@ -163,17 +163,16 @@ var body: some View {
   Creates a bar mark that plots values with its x interval and y.
 - [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:y:width:height:stacking:).md)
   Creates a bar mark that plots values with x and y.
+- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](barmark/init(xstart:xend:ystart:yend:)-98wo9.md)
+  Creates a bar mark that plots values with its x interval and fixed y position.
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](barmark/init(xstart:xend:ystart:yend:)-7541n.md)
+  Creates a bar mark with fixed x interval that plots values with its y interval.
 - [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:y:width:height:stacking:).md)
   Creates a bar mark that plots values with x and y.
 - [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:ystart:yend:width:stacking:).md)
   Creates a bar mark that plots a value on x with fixed y interval.
 - [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(xstart:xend:y:height:stacking:).md)
   Creates a bar mark that plots values on y with fixed x interval.
-### Initializers
-- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](barmark/init(xstart:xend:ystart:yend:)-7541n.md)
-  Creates a bar mark with fixed x interval that plots values with its y interval.
-- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](barmark/init(xstart:xend:ystart:yend:)-98wo9.md)
-  Creates a bar mark that plots values with its x interval and fixed y position.
 
 ## Relationships
 

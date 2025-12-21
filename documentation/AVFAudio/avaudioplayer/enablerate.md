@@ -22,7 +22,7 @@ var enableRate: Bool { get set }
 
 #### Discussion
 
-To enable modifying the player’s rate, set this property to [`true`](https://developer.apple.com/documentation/swift/true) after you create the player, but before you call [`prepareToPlay()`](avaudioplayer/preparetoplay().md).
+To enable modifying the player’s rate, set this property to [`true`](https://developer.apple.com/documentation/Swift/true) after you create the player, but before you call [`prepareToPlay()`](avaudioplayer/preparetoplay().md).
 
 ## See Also
 

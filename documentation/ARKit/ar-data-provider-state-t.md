@@ -53,6 +53,7 @@ typedef enum { ... } ar_data_provider_state_t;
   Removes multiple data providers from a collection.
 - [ar_data_providers_enumerator_function_t](ar_data_providers_enumerator_function_t.md)
 - [ar_session_data_provider_state_change_handler_function_t](ar_session_data_provider_state_change_handler_function_t.md)
+  A handler function that the session calls when one or more data providers associated with it change state.
 
 
 ---

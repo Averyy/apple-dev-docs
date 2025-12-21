@@ -21,7 +21,7 @@ var hasSmile: Bool { get }
 
 #### Discussion
 
-For smiles to be detected, the key [`CIDetectorSmile`](cidetectorsmile.md) must be present with a value of [`true`](https://developer.apple.com/documentation/swift/true) in the dictionary passed to a detector’s [`features(in:options:)`](cidetector/features(in:options:).md) method.
+To detect smiles, `/CIDetector/featuresInImage:options:` needs to be called with the [`CIDetectorSmile`](cidetectorsmile.md) option set to true.
 
 ## See Also
 
@@ -32,11 +32,11 @@ For smiles to be detected, the key [`CIDetectorSmile`](cidetectorsmile.md) must 
 - [var hasMouthPosition: Bool](cifacefeature/hasmouthposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s mouth.
 - [var leftEyePosition: CGPoint](cifacefeature/lefteyeposition-swift.property.md)
-  The coordinates of the left eye, in image coordinates.
+  The image coordinate of the center of the left eye.
 - [var rightEyePosition: CGPoint](cifacefeature/righteyeposition-swift.property.md)
-  The coordinates of the right eye, in image coordinates
+  The image coordinate of the center of the right eye.
 - [var mouthPosition: CGPoint](cifacefeature/mouthposition-swift.property.md)
-  The coordinates of the mouth, in image coordinates
+  The image coordinate of the center of the mouth.
 - [var leftEyeClosed: Bool](cifacefeature/lefteyeclosed-swift.property.md)
   A Boolean value that indicates whether a closed left eye is detected in the face.
 - [var rightEyeClosed: Bool](cifacefeature/righteyeclosed-swift.property.md)

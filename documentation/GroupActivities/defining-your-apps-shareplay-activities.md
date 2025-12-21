@@ -142,7 +142,7 @@ For more information on displaying a share sheet or supporting SharePlay via Air
 
 ## See Also
 
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

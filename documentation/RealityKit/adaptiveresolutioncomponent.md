@@ -10,7 +10,7 @@ A component that provides the suggested pixels per meter necessary to render an 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -50,7 +50,7 @@ Use the [`pixelsPerMeter`](adaptiveresolutioncomponent/pixelspermeter.md) proper
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
 - [struct MeshInstancesComponent](meshinstancescomponent.md)
-  A component that performs GPU instancing on the ModelComponent on the same Entity.
+  A component that performs GPU instancing on the model of the same entity.
 
 
 ---

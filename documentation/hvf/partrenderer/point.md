@@ -22,21 +22,11 @@ struct Point
 
 ## Topics
 
-### Operators
-- [static func == (PartRenderer.Point, PartRenderer.Point) -> Bool](partrenderer/point/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(x: Double, y: Double)](partrenderer/point/init(x:y:).md)
 ### Instance Properties
-- [var hashValue: Int](partrenderer/point/hashvalue.md)
-  The hash value.
 - [var x: Double](partrenderer/point/x.md)
 - [var y: Double](partrenderer/point/y.md)
-### Instance Methods
-- [func hash(into: inout Hasher)](partrenderer/point/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](partrenderer/point/equatable-implementations.md)
 
 ## Relationships
 

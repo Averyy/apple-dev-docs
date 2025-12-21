@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure mobile device management (MDM) settings.
+The payload that configures mobile device management (MDM) settings.
 
 **Availability**:
 - iOS 4.0+
@@ -21,9 +21,12 @@ object MDM
 
 ## Mentions
 
+- [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 - [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
 - [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
+- [Migrating managed devices](migrating-managed-devices.md)
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -203,13 +206,13 @@ Also define the following four standard payload values in your MDM payload:
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)
-  The payload you use to configure the users, groups, and departments within an educational organization.
+  The payload that configures the users, groups, and departments within an educational organization.
 - [object LightsOutManagementLOM](lightsoutmanagementlom.md)
-  The payload you use to configure lights-out management (LOM) settings.
+  The payload that configures lights-out management (LOM) settings.
 - [object ManagedPreferences](managedpreferences.md)
-  The payload you use to configure managed preferences.
+  The payload that configures managed preferences.
 - [object ProfileRemovalPassword](profileremovalpassword.md)
-  The payload you use to configure profile removal.
+  The payload that configures profile removal.
 
 
 ---

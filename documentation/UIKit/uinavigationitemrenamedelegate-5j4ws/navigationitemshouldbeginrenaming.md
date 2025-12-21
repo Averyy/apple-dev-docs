@@ -21,7 +21,7 @@ Asks the delegate whether the navigation item supports renaming.
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to support renaming and show Rename in the title menu; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to support renaming and show Rename in the title menu; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

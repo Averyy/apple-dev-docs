@@ -24,9 +24,13 @@ protocol LocalizedError : Error
 
 ### Instance Properties
 - [var errorDescription: String?](localizederror/errordescription.md)
+  A localized message describing what error occurred.
 - [var failureReason: String?](localizederror/failurereason.md)
+  A localized message describing the reason for the failure.
 - [var helpAnchor: String?](localizederror/helpanchor.md)
+  A localized message providing “help” text if the user requests help.
 - [var recoverySuggestion: String?](localizederror/recoverysuggestion.md)
+  A localized message describing how one might recover from the failure.
 
 ## Relationships
 
@@ -37,7 +41,7 @@ protocol LocalizedError : Error
 
 ## See Also
 
-- [protocol Error : Sendable](../Swift/Error.md)
+- [protocol Error](../Swift/Error.md)
   A type representing an error value that can be thrown.
 - [class NSError](nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.

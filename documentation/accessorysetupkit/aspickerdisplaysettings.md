@@ -6,8 +6,8 @@
 A type that contains settings to customize the display of the accessory picker
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -25,6 +25,11 @@ class ASPickerDisplaySettings
   Custom timeout for picker. Default is 30 seconds.
 - [ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct.md)
   The type used for the accessory picker’s discovery timeout value.
+### Customizing picker options
+- [var options: ASPickerDisplaySettings.Options](aspickerdisplaysettings/options-swift.property.md)
+  Custom options for the picker.
+- [ASPickerDisplaySettings.Options](aspickerdisplaysettings/options-swift.struct.md)
+  Options offered by the accessory picker.
 
 ## Relationships
 

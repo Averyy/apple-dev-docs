@@ -22,7 +22,7 @@ func setKernelBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 
 #### Discussion
 
-If you created the indirect command buffer with [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](https://developer.apple.com/documentation/swift/true), don’t call this method. The command gets the arguments from the parent encoder when you execute the command.
+If you created the indirect command buffer with [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](https://developer.apple.com/documentation/Swift/true), don’t call this method. The command gets the arguments from the parent encoder when you execute the command.
 
 If you need to pass other kinds of parameters to your shader, such as textures and samplers, create an argument buffer and pass it to the shader using this method.
 
@@ -35,7 +35,7 @@ If you need to pass other kinds of parameters to your shader, such as textures a
 ## See Also
 
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
-  Sets the command’s compute pipeline state object.
+  Sets the command’s compute pipeline state.
 - [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
   Sets the size, in pixels, of the imageblock.
 - [func setThreadgroupMemoryLength(Int, index: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:index:).md)

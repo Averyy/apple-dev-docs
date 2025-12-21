@@ -21,13 +21,13 @@ func enter(_ stateClass: AnyClass) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the transition was successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the transition was successful; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-You build a state machine by creating a unique [`GKState`](gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method of each state object determines which other states a state machine is allowed to transition into from that state. Calling this method first tests whether a transition from the current state to the specified state is valid; if not, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+You build a state machine by creating a unique [`GKState`](gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method of each state object determines which other states a state machine is allowed to transition into from that state. Calling this method first tests whether a transition from the current state to the specified state is valid; if not, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If a transition is allowed, the state machine sends the [`willExit(to:)`](gkstate/willexit(to:).md) message to its current state object. Then, the new state object replaces the value of the [`currentState`](gkstatemachine/currentstate.md) property. Finally, the state machine sends the  [`didEnter(from:)`](gkstate/didenter(from:).md) message to the new current state object, and this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+If a transition is allowed, the state machine sends the [`willExit(to:)`](gkstate/willexit(to:).md) message to its current state object. Then, the new state object replaces the value of the [`currentState`](gkstatemachine/currentstate.md) property. Finally, the state machine sends the  [`didEnter(from:)`](gkstate/didenter(from:).md) message to the new current state object, and this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 A newly created state machine’s [`currentState`](gkstatemachine/currentstate.md) property is `nil`—to choose and enter an initial state, use the [`enter(_:)`](gkstatemachine/enter(_:).md) method. In this case, the [`enter(_:)`](gkstatemachine/enter(_:).md) call always succeeds.
 

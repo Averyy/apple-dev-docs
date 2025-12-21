@@ -16,6 +16,8 @@ Add search capabilities to your app, and index your content so people can find i
 
 Help people access activities and items within your app by adding details about those items to a Core Spotlight index. The framework provides APIs to add your content to an index, and search for items in that index. You decide what content makes sense to index, but typically you index anything that someone might look for in your app. For example, you might index photos, contacts, the items someone purchased, or data they see in your interface. You can then use Core Spotlight to search for your indexed content and display those results in your app.
 
+> ❗ **Important**: Spotlight File Import extensions don’t provide functionality in macOS. To make custom files available to Spotlight in macOS, create a Spotlight importer plugin. For more information, refer to [`Spotlight Importer Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267).
+
 Your app is responsible for indexing your app’s content and maintaining those indexes. You can index content when your app runs, or provide an app extension to index content when the system requests it. You can index any content your app manages, including files and other content that your app isn’t currently displaying. The indexes you create using Core Spotlight remain on device, and are private to the owner of the device. Devices don’t share indexed data with Apple, or synchronize that data with the person’s other devices.
 
 In addition to indexing content, iOS provides additional strategies for making your app’s content searchable:

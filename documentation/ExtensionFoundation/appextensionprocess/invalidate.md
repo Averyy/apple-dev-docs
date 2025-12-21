@@ -3,16 +3,16 @@
 **Framework**: ExtensionFoundation  
 **Kind**: method
 
-Stop the extension process.
+Invalidates the host app’s connection to the app extension process.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 13.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 1.1+
-- watchOS 26.0+ (Beta)
+- watchOS 26.0+
 
 ## Declaration
 
@@ -20,14 +20,13 @@ Stop the extension process.
 func invalidate()
 ```
 
+## Mentions
+
+- [Adding support for app extensions to your app](adding-support-for-app-extensions-to-your-app.md)
+
 #### Discussion
 
-When you call this method, you tell the system your app no longer needs this extension process. If this is the last connection from the host process to the extension process, the system terminates the extension process.
-
-## See Also
-
-- [func makeXPCConnection() throws -> NSXPCConnection](appextensionprocess/makexpcconnection.md)
-  Creates a new XPC connection to the extension process.
+Call this method when you finish communicating with an app extension and no longer need it. If the current object represents the last connection to the app extension, the system terminates the app extension’s process. After calling this method, don’t try to communicate with the app extension using XPC. Instead, remove any references to the app extension and release this `AppExtensionProcess` type.
 
 
 ---

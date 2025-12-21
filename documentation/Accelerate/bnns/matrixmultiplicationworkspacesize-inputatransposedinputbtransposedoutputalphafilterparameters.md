@@ -13,7 +13,6 @@ Returns the workspace size that a matrix multiply operation requires.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

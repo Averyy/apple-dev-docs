@@ -10,7 +10,7 @@ The object that configures various automatic Software Update functionality.
 - iPadOS 18.0+
 - macOS 15.0+
 - tvOS 18.4+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,7 +25,7 @@ object SoftwareUpdateSettingsAutomaticActionsObject
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
   The object that configures update deferrals.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
-  The object that configures rapid security update settings.
+  The object that configures Background Security Improvement settings.
 
 
 ---

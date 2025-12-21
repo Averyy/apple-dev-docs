@@ -42,11 +42,11 @@ From the current read index, take up to the number of bytes specified in the sec
 
 - [`getBuffer(_:length:)`](inputstream/getbuffer(_:length:).md)
 
-Return in 0(1) a pointer to the subclass-allocated buffer (first parameter). Return by reference in the second parameter the number of bytes actually put into the buffer. The buffer’s contents are valid only until the next stream operation. Return [`false`](https://developer.apple.com/documentation/swift/false) if you cannot access data in the buffer; otherwise, return [`true`](https://developer.apple.com/documentation/swift/true). If this method is not appropriate for your type of stream, you may return [`false`](https://developer.apple.com/documentation/swift/false).
+Return in 0(1) a pointer to the subclass-allocated buffer (first parameter). Return by reference in the second parameter the number of bytes actually put into the buffer. The buffer’s contents are valid only until the next stream operation. Return [`false`](https://developer.apple.com/documentation/Swift/false) if you cannot access data in the buffer; otherwise, return [`true`](https://developer.apple.com/documentation/Swift/true). If this method is not appropriate for your type of stream, you may return [`false`](https://developer.apple.com/documentation/Swift/false).
 
 - [`hasBytesAvailable`](inputstream/hasbytesavailable.md)
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if there is more data to read in the stream, [`false`](https://developer.apple.com/documentation/swift/false) if there is not. If you want to be semantically compatible with `NSInputStream`, return [`true`](https://developer.apple.com/documentation/swift/true) if a read must be attempted to determine if bytes are available.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) if there is more data to read in the stream, [`false`](https://developer.apple.com/documentation/Swift/false) if there is not. If you want to be semantically compatible with `NSInputStream`, return [`true`](https://developer.apple.com/documentation/Swift/true) if a read must be attempted to determine if bytes are available.
 
 ## Topics
 

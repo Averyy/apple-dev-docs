@@ -17,7 +17,7 @@ var isGrammarCheckingEnabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), grammar checking is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), it is disabled.
+If [`true`](https://developer.apple.com/documentation/Swift/true), grammar checking is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), it is disabled.
 
 ## See Also
 

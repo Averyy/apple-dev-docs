@@ -20,9 +20,7 @@ typealias sec_protocol_pre_shared_key_selection_t = (sec_protocol_metadata_t, di
 
 #### Discussion
 
-```None
- Block to be invoked when the client must choose a PSK identity given a hint from its peer.
-```
+Block to be invoked when the client must choose a PSK identity given a hint from its peer.
 
 ## Parameters
 

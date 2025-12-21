@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+The medication is applied as a cream.
+
 **Availability**:
 - iOS ?+
 - iPadOS ?+

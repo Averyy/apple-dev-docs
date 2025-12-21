@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+On which months the event should occur.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 var months: [Calendar.RecurrenceRule.Month]
 ```
+
+#### Discussion
+
+- 1 is the first month of the year (January in Gregorian calendars)
 
 
 ---

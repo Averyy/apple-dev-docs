@@ -21,7 +21,7 @@ enum Status
 
 ## Topics
 
-### Status Values
+### Status values
 - [AVPlayerLooper.Status.unknown](avplayerlooper/status-swift.enum/unknown.md)
   The status isn’t known.
 - [AVPlayerLooper.Status.ready](avplayerlooper/status-swift.enum/ready.md)

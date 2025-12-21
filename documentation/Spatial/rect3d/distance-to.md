@@ -13,7 +13,6 @@ Returns the distance between the origins of two rectangle.
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

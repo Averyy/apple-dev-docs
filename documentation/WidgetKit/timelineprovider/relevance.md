@@ -11,7 +11,7 @@ Provides an object containing attributes that describe when a specific widget is
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 11.0+
 
 ## Declaration
@@ -22,8 +22,8 @@ func relevance() async -> WidgetRelevance<Void>
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 - [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
+- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 
 #### Return Value
 

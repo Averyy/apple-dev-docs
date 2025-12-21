@@ -21,7 +21,7 @@ func VTPixelTransferSessionInvalidate(_ session: VTPixelTransferSession)
 
 #### Discussion
 
-When you finish with a pixel transfer session you created, call this function to tear it down, and then call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release your object reference.
+When you finish with a pixel transfer session you created, call this function to tear it down, and then call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release your object reference.
 
 > **Note**:  A pixel transfer session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when the invalidation will happen.  Calling this function ensures a deterministic, orderly teardown.
 

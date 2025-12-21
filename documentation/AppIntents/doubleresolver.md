@@ -20,28 +20,6 @@ A resolver that validates a double is within the parameter’s inclusive range.
 struct DoubleResolver
 ```
 
-## Topics
-
-### Resolving the type
-- [func resolve(from: Double, context: IntentParameterContext<Double>) async throws -> Double?](doubleresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
-### Operators
-- [static func == (DoubleResolver, DoubleResolver) -> Bool](doubleresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](doubleresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](doubleresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [DoubleResolver.Input](doubleresolver/input.md)
-- [DoubleResolver.Output](doubleresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](doubleresolver/equatable-implementations.md)
-- [RangeCheckingResolver Implementations](doubleresolver/rangecheckingresolver-implementations.md)
-- [Resolver Implementations](doubleresolver/resolver-implementations.md)
-
 ## Relationships
 
 ### Conforms To

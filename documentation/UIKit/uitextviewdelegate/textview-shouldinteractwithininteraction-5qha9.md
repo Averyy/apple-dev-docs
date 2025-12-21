@@ -21,7 +21,7 @@ optional func textView(_ textView: UITextView, shouldInteractWith textAttachment
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if interaction with the text attachment should be allowed; [`false`](https://developer.apple.com/documentation/swift/false) if interaction should not be allowed.
+[`true`](https://developer.apple.com/documentation/Swift/true) if interaction with the text attachment should be allowed; [`false`](https://developer.apple.com/documentation/Swift/false) if interaction should not be allowed.
 
 #### Discussion
 

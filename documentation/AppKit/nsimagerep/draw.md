@@ -16,7 +16,7 @@ func draw() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if there was a problem. The default version of this method simply returns [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if there was a problem. The default version of this method simply returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

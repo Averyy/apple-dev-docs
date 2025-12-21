@@ -6,12 +6,12 @@
 Custom render pass options you specify at encoder creation time.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,6 +28,7 @@ Use these options to implement parallel encoding of render passes across multipl
 3. The last command buffer in the array contains the same render pass that you start with option [`resuming`](mtl4renderencoderoptions/resuming.md)
 4. All intermediate command buffers between the first and last in the array contain the same render pass that you start with both [`resuming`](mtl4renderencoderoptions/resuming.md) and [`suspending`](mtl4renderencoderoptions/suspending.md) options.
 5. The sequence of render passes, in submission order, doesn’t intermix with compute, blit, acceleration structure or machine learning encoding.
+6. A command buffer shouldn’t contain a render pass that you start with option [`suspending`](mtl4renderencoderoptions/suspending.md) if it already contains a render pass that you start with option [`resuming`](mtl4renderencoderoptions/resuming.md).
 
 ## Topics
 
@@ -57,7 +58,8 @@ Use these options to implement parallel encoding of render passes across multipl
   An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
 - [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [enum MTL4CommandQueueError](mtl4commandqueueerror.md)
+- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
 - [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
 - [protocol MTL4CommandBuffer](mtl4commandbuffer.md)
@@ -80,8 +82,6 @@ Use these options to implement parallel encoding of render passes across multipl
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
-- [protocol MTL4CounterHeap](mtl4counterheap.md)
-  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

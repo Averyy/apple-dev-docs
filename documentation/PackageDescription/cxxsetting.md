@@ -20,6 +20,15 @@ struct CXXSetting
   Provides a header search path relative to the target’s directory.
 - [static func unsafeFlags([String], BuildSettingCondition?) -> CXXSetting](cxxsetting/unsafeflags(_:_:).md)
   Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
+### Type Methods
+- [static func disableWarning(String, BuildSettingCondition?) -> CXXSetting](cxxsetting/disablewarning(_:_:).md)
+  Disable a specific C++ compiler warning group.
+- [static func enableWarning(String, BuildSettingCondition?) -> CXXSetting](cxxsetting/enablewarning(_:_:).md)
+  Enable a specific C++ compiler warning group.
+- [static func treatAllWarnings(as: WarningLevel, BuildSettingCondition?) -> CXXSetting](cxxsetting/treatallwarnings(as:_:).md)
+  Controls how all C++ compiler warnings are treated during compilation.
+- [static func treatWarning(String, as: WarningLevel, BuildSettingCondition?) -> CXXSetting](cxxsetting/treatwarning(_:as:_:).md)
+  Controls how a specific C++ compiler warning is treated during compilation.
 
 ## Relationships
 

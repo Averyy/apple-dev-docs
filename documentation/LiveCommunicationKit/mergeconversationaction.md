@@ -35,7 +35,7 @@ final class MergeConversationAction
 ## See Also
 
 - [class ConversationAction](conversationaction.md)
-  A type that represents a VoIP action for a conversation.
+  A type that represents an action for a conversation.
 - [class EndConversationAction](endconversationaction.md)
   An action that removes the local participant from a conversation and stops all audio and video streams.
 - [class JoinConversationAction](joinconversationaction.md)

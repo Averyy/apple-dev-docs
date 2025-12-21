@@ -22,10 +22,7 @@ struct UnitOptions
 
 ## Topics
 
-### Constants
-- [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
-- [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
-- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
+### Working with options
 - [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
 - [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
 - [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
@@ -48,6 +45,14 @@ struct UnitOptions
 
 - [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
   The options for how the unit is formatted.
+- [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
+  The options for how the unit is formatted.
+- [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
+  The unit style.
+- [var locale: Locale!](measurementformatter/locale.md)
+  The locale of the formatter.
+- [var numberFormatter: NumberFormatter!](measurementformatter/numberformatter.md)
+  The number formatter used to format the quantity of a measurement.
 
 
 ---

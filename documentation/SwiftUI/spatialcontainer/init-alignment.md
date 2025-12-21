@@ -6,7 +6,7 @@
 Creates a spatial container layout with the specified 3D alignment.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

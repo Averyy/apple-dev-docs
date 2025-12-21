@@ -22,7 +22,7 @@ var isAnimated: Bool { get }
 
 #### Discussion
 
-The value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for custom transitions — transitions where the view controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) property is set to [`UIModalPresentationStyle.custom`](uimodalpresentationstyle/custom.md) — even when the transition is started by a call to the [`animateTransition(using:)`](uiviewcontrolleranimatedtransitioning/animatetransition(using:).md) method. In nearly all other cases, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for custom transitions — transitions where the view controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) property is set to [`UIModalPresentationStyle.custom`](uimodalpresentationstyle/custom.md) — even when the transition is started by a call to the [`animateTransition(using:)`](uiviewcontrolleranimatedtransitioning/animatetransition(using:).md) method. In nearly all other cases, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

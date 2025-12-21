@@ -31,11 +31,6 @@ struct ApplyRandomly<RandomTransformer> where RandomTransformer : RandomTransfor
 ### Applying transformers
 - [func applied(to: RandomTransformer.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> RandomTransformer.Output](applyrandomly/applied(to:generator:eventhandler:).md)
   Randomly applies a transformer on an input.
-### Type Aliases
-- [ApplyRandomly.Input](applyrandomly/input.md)
-  The input type.
-- [ApplyRandomly.Output](applyrandomly/output.md)
-  The output type.
 
 ## Relationships
 

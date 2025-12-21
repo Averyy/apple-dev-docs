@@ -20,15 +20,17 @@ class AVCaptureAudioDataOutput
 
 ## Topics
 
-### Creating an Audio Capture Output
+### Creating an audio capture output
 - [init()](avcaptureaudiodataoutput/init.md)
   Creates an instance of audio data output.
-### Configuring Audio Capture
+### Configuring audio capture
 - [var audioSettings: [String : Any]!](avcaptureaudiodataoutput/audiosettings.md)
   The settings used to decode or re-encode audio before it’s output.
 - [func recommendedAudioSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](avcaptureaudiodataoutput/recommendedaudiosettingsforassetwriter(writingto:).md)
   Specifies the recommended settings for use with an `AVAssetWriterInput`.
-### Receiving Captured Audio Data
+- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
+  The audio channel layout tag of the audio sample buffers produced by the audio data output.
+### Receiving captured audio data
 - [func setSampleBufferDelegate((any AVCaptureAudioDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](avcaptureaudiodataoutput/setsamplebufferdelegate(_:queue:).md)
   Sets the delegate that will accept captured buffers and the dispatch queue on which the delegate will be called.
 - [var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)?](avcaptureaudiodataoutput/samplebufferdelegate.md)
@@ -37,8 +39,6 @@ class AVCaptureAudioDataOutput
   The queue on which delegate callbacks are invoked
 - [protocol AVCaptureAudioDataOutputSampleBufferDelegate](avcaptureaudiodataoutputsamplebufferdelegate.md)
   Methods for receiving audio sample data from an audio capture.
-### Instance Properties
-- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
 
 ## Relationships
 
@@ -58,6 +58,8 @@ class AVCaptureAudioDataOutput
   Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 - [class AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
   A capture output that records video and provides access to video frames for processing.
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+  An interface for generating a spatial audio timed metadata sample.
 
 
 ---

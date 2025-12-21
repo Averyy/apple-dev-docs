@@ -10,7 +10,7 @@ Sets the localized name shown for a widget when a user adds or edits the widget.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

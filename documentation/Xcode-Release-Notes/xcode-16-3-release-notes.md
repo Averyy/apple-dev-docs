@@ -114,7 +114,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 
 ###### New Features
 
-- Rendering of LLDB and Swift REPL error diagnostics is improved. Inline diagnostics can now directly point to command input without echoing the command first.    (138057894)
+- Rendering of LLDB and Swift REPL error diagnostics is improved. Inline diagnostics can now directly point to command input without echoing the command first. (138057894)
 
 ###### Resolved Issues
 

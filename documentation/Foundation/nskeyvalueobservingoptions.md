@@ -22,7 +22,7 @@ struct NSKeyValueObservingOptions
 
 #### Overview
 
-These constants are passed to doc://com.apple.documentation/documentation/objectivec/nsobject/1412787-addobserver and determine the values that are returned as part of the change dictionary passed to an doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalue. You can pass `0` if you require no change dictionary values.
+These constants are passed to [`addObserver(_:forKeyPath:options:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/addObserver(_:forKeyPath:options:context:)) and determine the values that are returned as part of the change dictionary passed to an [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)). You can pass `0` if you require no change dictionary values.
 
 ## Topics
 

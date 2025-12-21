@@ -26,6 +26,7 @@ var queueName: String? { get set }
 - [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
 - [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
 
 #### Discussion

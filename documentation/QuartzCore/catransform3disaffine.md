@@ -21,7 +21,7 @@ func CATransform3DIsAffine(_ t: CATransform3D) -> Bool
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if `t` can be exactly represented by an affine transform.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `t` can be exactly represented by an affine transform.
 
 ## See Also
 

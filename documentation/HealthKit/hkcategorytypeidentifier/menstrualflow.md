@@ -23,9 +23,9 @@ static let menstrualFlow: HKCategoryTypeIdentifier
 
 These samples use values from the [`HKCategoryValueMenstrualFlow`](hkcategoryvaluemenstrualflow.md) enum. Additionally, these samples must include [`HKMetadataKeyMenstrualCycleStart`](hkmetadatakeymenstrualcyclestart.md)  metadata.
 
-When recording data about the user’s menstrual cycle, you can either use a single sample for the entire period, or multiple samples to record changes over the cycle. When using single samples, pass the start of the menstrual period to the `startDate` parameter. Pass the end of the period to the `endDate` parameter, and set the [`HKMetadataKeyMenstrualCycleStart`](hkmetadatakeymenstrualcyclestart.md) value to [`true`](https://developer.apple.com/documentation/swift/true).
+When recording data about the user’s menstrual cycle, you can either use a single sample for the entire period, or multiple samples to record changes over the cycle. When using single samples, pass the start of the menstrual period to the `startDate` parameter. Pass the end of the period to the `endDate` parameter, and set the [`HKMetadataKeyMenstrualCycleStart`](hkmetadatakeymenstrualcyclestart.md) value to [`true`](https://developer.apple.com/documentation/Swift/true).
 
-When using multiple samples to record a single period, the `startDate` and `endDate` parameters should mark the beginning and ending of each individual sample. Set the [`HKMetadataKeyMenstrualCycleStart`](hkmetadatakeymenstrualcyclestart.md) value for the first sample in the period to [`true`](https://developer.apple.com/documentation/swift/true). Use [`false`](https://developer.apple.com/documentation/swift/false) for any additional samples. Different samples can use different `menstrualFlow` values to record the changes in flow over time.
+When using multiple samples to record a single period, the `startDate` and `endDate` parameters should mark the beginning and ending of each individual sample. Set the [`HKMetadataKeyMenstrualCycleStart`](hkmetadatakeymenstrualcyclestart.md) value for the first sample in the period to [`true`](https://developer.apple.com/documentation/Swift/true). Use [`false`](https://developer.apple.com/documentation/Swift/false) for any additional samples. Different samples can use different `menstrualFlow` values to record the changes in flow over time.
 
 ## Topics
 

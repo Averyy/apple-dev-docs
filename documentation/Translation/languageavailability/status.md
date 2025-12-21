@@ -8,7 +8,7 @@ The availability status for a language or language pairing.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 26.0+ (Beta)
+- Mac Catalyst 26.0+
 - macOS 15.0+
 
 ## Declaration
@@ -23,9 +23,6 @@ A language must download and install before you can use it in a translation.
 
 ## Topics
 
-### Operators
-- [static func == (LanguageAvailability.Status, LanguageAvailability.Status) -> Bool](languageavailability/status/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [LanguageAvailability.Status.installed](languageavailability/status/installed.md)
   The framework supports the language or language pairing and has it downloaded and ready for use in a translation.
@@ -33,14 +30,6 @@ A language must download and install before you can use it in a translation.
   The framework supports the language or language pairing, but can’t yet use it.
 - [LanguageAvailability.Status.unsupported](languageavailability/status/unsupported.md)
   The framework doesn’t support the language or language pairing.
-### Instance Properties
-- [var hashValue: Int](languageavailability/status/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](languageavailability/status/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](languageavailability/status/equatable-implementations.md)
 
 ## Relationships
 

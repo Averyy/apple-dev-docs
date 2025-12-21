@@ -16,7 +16,7 @@ let kQLPreviewPropertyDisplayNameKey: CFString!
 
 #### Discussion
 
-The default display name is the document’s title. You must encapsulate the value in a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd object.
+The default display name is the document’s title. You must encapsulate the value in a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
 
 ## See Also
 

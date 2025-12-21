@@ -5,9 +5,6 @@
 
 An atom that summarizes the features and complexity of a movie.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Mentions
 
 - [QuickTime File Format change log](revision_history.md)

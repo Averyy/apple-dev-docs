@@ -22,7 +22,7 @@ func sparseTileSize(with textureType: MTLTextureType, pixelFormat: MTLPixelForma
 
 ## Mentions
 
-- [Converting Between Pixel Regions and Sparse Tile Regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
 
 #### Return Value
 

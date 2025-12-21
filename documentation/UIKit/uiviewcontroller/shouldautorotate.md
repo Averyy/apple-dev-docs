@@ -20,7 +20,7 @@ var shouldAutorotate: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the content should rotate, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This method returns [`true`](https://developer.apple.com/documentation/swift/true) by default.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the content should rotate, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). This method returns [`true`](https://developer.apple.com/documentation/Swift/true) by default.
 
 ## See Also
 

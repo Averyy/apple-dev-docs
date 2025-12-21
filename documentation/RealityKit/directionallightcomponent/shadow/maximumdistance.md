@@ -21,6 +21,10 @@ var maximumDistance: Float { get set }
 
 - [var depthBias: Float](directionallightcomponent/shadow/depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+  The light’s culling mode for shadow map rendering.
+- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection.md)
+  Sets the shadow projection used for shadow map rendering
 
 
 ---

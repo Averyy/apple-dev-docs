@@ -22,7 +22,7 @@ func conforms(to type: UTType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the type directly or indirectly conforms to `type`, or if it’s equal to `type`.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the type directly or indirectly conforms to `type`, or if it’s equal to `type`.
 
 ## Parameters
 

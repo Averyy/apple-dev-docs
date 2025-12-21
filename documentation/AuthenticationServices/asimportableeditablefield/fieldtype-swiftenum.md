@@ -6,11 +6,11 @@
 An enumeration of editable field types.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -37,6 +37,7 @@ enum FieldType
 - [ASImportableEditableField.FieldType.countryCode](asimportableeditablefield/fieldtype-swift.enum/countrycode.md)
 - [ASImportableEditableField.FieldType.subdivisionCode](asimportableeditablefield/fieldtype-swift.enum/subdivisioncode.md)
 - [ASImportableEditableField.FieldType.wifiNetworkSecurityType](asimportableeditablefield/fieldtype-swift.enum/wifinetworksecuritytype.md)
+- [ASImportableEditableField.FieldType.yearMonth](asimportableeditablefield/fieldtype-swift.enum/yearmonth.md)
 
 ## Relationships
 

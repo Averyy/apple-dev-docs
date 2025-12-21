@@ -6,8 +6,8 @@
 A structure that defines a custom header as a key-value pair.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -27,12 +27,6 @@ TelephonyMessagingKit exposes custom headers in case a message needs to include 
   The key for the custom header.
 - [let value: String](mmspartcontent/mmscustomheader/value.md)
   The value of the custom header.
-### Encoding and decoding
-- [init(from: any Decoder) throws](mmspartcontent/mmscustomheader/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](mmspartcontent/mmscustomheader/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

@@ -22,9 +22,6 @@ struct MusicCatalogSearchResponse
 
 ## Topics
 
-### Operators
-- [static func == (MusicCatalogSearchResponse, MusicCatalogSearchResponse) -> Bool](musiccatalogsearchresponse/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [let albums: MusicItemCollection<Album>](musiccatalogsearchresponse/albums.md)
   A collection of albums.
@@ -32,8 +29,6 @@ struct MusicCatalogSearchResponse
   A collection of artists.
 - [let curators: MusicItemCollection<Curator>](musiccatalogsearchresponse/curators.md)
   A collection of curators.
-- [var hashValue: Int](musiccatalogsearchresponse/hashvalue.md)
-  The hash value.
 - [let musicVideos: MusicItemCollection<MusicVideo>](musiccatalogsearchresponse/musicvideos.md)
   A collection of music videos.
 - [let playlists: MusicItemCollection<Playlist>](musiccatalogsearchresponse/playlists.md)
@@ -48,18 +43,9 @@ struct MusicCatalogSearchResponse
   A collection of stations.
 - [let topResults: MusicItemCollection<MusicCatalogSearchResponse.TopResult>](musiccatalogsearchresponse/topresults.md)
   A collection of top results.
-### Instance Methods
-- [func hash(into: inout Hasher)](musiccatalogsearchresponse/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [MusicCatalogSearchResponse.TopResult](musiccatalogsearchresponse/topresult.md)
   An item that represents one of the top results in a catalog search response.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](musiccatalogsearchresponse/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](musiccatalogsearchresponse/customstringconvertible-implementations.md)
-- [Decodable Implementations](musiccatalogsearchresponse/decodable-implementations.md)
-- [Encodable Implementations](musiccatalogsearchresponse/encodable-implementations.md)
-- [Equatable Implementations](musiccatalogsearchresponse/equatable-implementations.md)
 
 ## Relationships
 

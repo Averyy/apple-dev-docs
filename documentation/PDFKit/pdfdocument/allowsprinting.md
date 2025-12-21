@@ -25,7 +25,7 @@ The ability to print a PDF document is an attribute unrelated to whether the doc
 
 This method only determines the desired permissions setting in the PDF document; it is up to the application to enforce (or ignore) the permissions.
 
-This method always returns [`true`](https://developer.apple.com/documentation/swift/true) if the document is not encrypted. Note that in many cases an encrypted document may still be readable by all users due to the standard empty string password. For more details about user and owner passwords, see the Adobe PDF specification.
+This method always returns [`true`](https://developer.apple.com/documentation/Swift/true) if the document is not encrypted. Note that in many cases an encrypted document may still be readable by all users due to the standard empty string password. For more details about user and owner passwords, see the Adobe PDF specification.
 
 ## See Also
 

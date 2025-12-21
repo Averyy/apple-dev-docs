@@ -19,9 +19,9 @@ var prefersExtendedRange: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the underlying Core Graphics context is configured to support wide color; if [`false`](https://developer.apple.com/documentation/swift/false), the context is not.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the underlying Core Graphics context is configured to support wide color; if [`false`](https://developer.apple.com/documentation/Swift/false), the context is not.
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true) on devices that natively support wide color, and [`false`](https://developer.apple.com/documentation/swift/false) on those that do not.
+The default is [`true`](https://developer.apple.com/documentation/Swift/true) on devices that natively support wide color, and [`false`](https://developer.apple.com/documentation/Swift/false) on those that do not.
 
 ## See Also
 

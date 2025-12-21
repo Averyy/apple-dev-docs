@@ -10,8 +10,6 @@
 - [var startIndex: Int](rowgrouping/startindex.md)
   The index of the initial group in the row grouping.
 ### Instance Methods
-- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](rowgrouping/index(_:offsetby:limitedby:).md)
-  Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 - [func index(after: Int) -> Int](rowgrouping/index(after:).md)
   Returns the index immediately after an element index.
 - [func index(before: Int) -> Int](rowgrouping/index(before:).md)

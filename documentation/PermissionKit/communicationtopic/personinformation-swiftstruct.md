@@ -3,14 +3,14 @@
 **Framework**: PermissionKit  
 **Kind**: struct
 
-Metadata corresponding to a specific person.
+Information about a person the child wants to communicate with.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,21 +20,21 @@ struct PersonInformation
 
 ## Topics
 
-### Initializing an instance
+### Creating contact details
 - [init(handle: CommunicationHandle, nameComponents: PersonNameComponents?, avatarImage: CGImage?)](communicationtopic/personinformation-swift.struct/init(handle:namecomponents:avatarimage:).md)
-  Creates an object with the specified display name and contact information.
-### Identifying metadata
-- [var avatarImage: CGImage?](communicationtopic/personinformation-swift.struct/avatarimage.md)
-  An image associated with the person.
-- [var handle: CommunicationHandle](communicationtopic/personinformation-swift.struct/handle.md)
-  A handle that can be used to communicate with the person.
-- [var nameComponents: PersonNameComponents?](communicationtopic/personinformation-swift.struct/namecomponents.md)
-  The components that make up the name of the person.
-### Encoding and decoding
-- [func encode(to: any Encoder) throws](communicationtopic/personinformation-swift.struct/encode(to:).md)
-  Performs the inverse of the decoding process.
+  Creates person information with contact details and optional display information.
 - [init(from: any Decoder) throws](communicationtopic/personinformation-swift.struct/init(from:).md)
   Creates an instance from the given decoder.
+### Accessing properties
+- [var avatarImage: CGImage?](communicationtopic/personinformation-swift.struct/avatarimage.md)
+  An image that represents the person.
+- [var handle: CommunicationHandle](communicationtopic/personinformation-swift.struct/handle.md)
+  The handle to identify and communicate with the person.
+- [var nameComponents: PersonNameComponents?](communicationtopic/personinformation-swift.struct/namecomponents.md)
+  The components that make up the person’s name.
+### Encoding
+- [func encode(to: any Encoder) throws](communicationtopic/personinformation-swift.struct/encode(to:).md)
+  Performs the inverse of the decoding process.
 
 ## Relationships
 
@@ -44,8 +44,8 @@ struct PersonInformation
 
 ## See Also
 
-- [var personInformation: [CommunicationTopic.PersonInformation]](communicationtopic/personinformation-swift.property.md)
-  The metadata of the people with whom to communicate.
+- [CommunicationTopic.Action](communicationtopic/action.md)
+  A communication action you can request permission for.
 
 
 ---

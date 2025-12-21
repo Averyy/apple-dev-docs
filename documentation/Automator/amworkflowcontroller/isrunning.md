@@ -17,7 +17,7 @@ var isRunning: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller’s workflow is currently running; [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Use `isRunning:` to determine whether the receiver’s workflow is currently running.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the controller’s workflow is currently running; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Use `isRunning:` to determine whether the receiver’s workflow is currently running.
 
 ## See Also
 

@@ -6,10 +6,10 @@
 The name of the Home to which the venue corresponds.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ let name: String
 
 ## See Also
 
-- [let id: UUID](energyvenue/id-swift.property.md)
+- [let id: UUID](energyvenue/id.md)
   A unique identifier for the venue.
 
 

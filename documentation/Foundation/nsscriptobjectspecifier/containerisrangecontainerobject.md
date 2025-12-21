@@ -17,9 +17,9 @@ var containerIsRangeContainerObject: Bool { get set }
 
 #### Discussion
 
-If the receiver’s container specifier is `nil` and `flag` is [`true`](https://developer.apple.com/documentation/swift/true), sets the receiver’s container to be the container for a range specifier. If the receiver’s container specifier is `nil` and `flag` is [`false`](https://developer.apple.com/documentation/swift/false), sets the receiver’s container to be the top-level object.
+If the receiver’s container specifier is `nil` and `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), sets the receiver’s container to be the container for a range specifier. If the receiver’s container specifier is `nil` and `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), sets the receiver’s container to be the top-level object.
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), [`containerIsObjectBeingTested`](nsscriptobjectspecifier/containerisobjectbeingtested.md) should not also be invoked with an argument of [`true`](https://developer.apple.com/documentation/swift/true).
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), [`containerIsObjectBeingTested`](nsscriptobjectspecifier/containerisobjectbeingtested.md) should not also be invoked with an argument of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

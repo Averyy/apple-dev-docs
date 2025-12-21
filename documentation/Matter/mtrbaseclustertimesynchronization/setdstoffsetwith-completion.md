@@ -22,7 +22,7 @@ func setDSTOffsetWith(_ params: MTRTimeSynchronizationClusterSetDSTOffsetParams)
 
 #### Discussion
 
-This command SHALL set DSTOffset.
+This command is used to set the DST offsets for a node.
 
 
 ---

@@ -41,6 +41,7 @@ struct UserSecureEnclaveKeyBiometricPolicy
 - [struct ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes.md)
 - [enum ASAuthorizationPublicKeyCredentialAttachment](asauthorizationpublickeycredentialattachment.md)
 - [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
+  The defined identity types for use in retrieving credentials.
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](aspublickeycredentialclientdatacrossoriginvalue.md)
 - [enum ASUserAgeRange](asuseragerange.md)
 

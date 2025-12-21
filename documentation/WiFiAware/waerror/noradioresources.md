@@ -6,8 +6,8 @@
 An error that occurs if the radio lacks resources.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,7 +17,7 @@ case noRadioResources(WAError.NoRadioResourcesDetails)
 
 #### Discussion
 
-The radio needs resources to support additional active devices, services, or performance requirements. Close any unneeded network `Connection`s, and stop any unneeded `Browser`s and `Listener`s to free resources, and then retry.
+The radio needs resources to support additional active devices, services, or performance requirements. Close any unneeded network `NetworkConnection`s, and stop any unneeded `NetworkBrowser`s and `NetworkListener`s to free resources, and then retry.
 
 ## See Also
 

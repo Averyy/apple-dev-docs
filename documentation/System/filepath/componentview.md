@@ -36,18 +36,6 @@ path.components.removeAll { $0.kind == .currentDirectory }
 // path is "/home/username/bin/scripts/tree"
 ```
 
-## Topics
-
-### Default Implementations
-- [BidirectionalCollection Implementations](filepath/componentview/bidirectionalcollection-implementations.md)
-- [Collection Implementations](filepath/componentview/collection-implementations.md)
-- [Decodable Implementations](filepath/componentview/decodable-implementations.md)
-- [Encodable Implementations](filepath/componentview/encodable-implementations.md)
-- [Equatable Implementations](filepath/componentview/equatable-implementations.md)
-- [Hashable Implementations](filepath/componentview/hashable-implementations.md)
-- [RangeReplaceableCollection Implementations](filepath/componentview/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](filepath/componentview/sequence-implementations.md)
-
 ## Relationships
 
 ### Conforms To

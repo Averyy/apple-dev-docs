@@ -64,13 +64,14 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
   Configure the details for parameter variables that contain custom app entities.
 - [App enums](intentparameter-app-enum.md)
   Configure the details for parameter variables that contain custom app enums.
-### Accessing the configuration
-- [let title: LocalizedStringResource](intentparameter/title.md)
-- [var isOptional: Bool](intentparameter/isoptional.md)
 ### Accessing the underlying value
 - [let defaultValue: Value.UnwrappedType?](intentparameter/defaultvalue.md)
 - [var projectedValue: IntentParameter<Value>](intentparameter/projectedvalue.md)
 - [var wrappedValue: Value](intentparameter/wrappedvalue.md)
+- [var valueState: IntentParameter<Value>.ValueState](intentparameter/valuestate-swift.property.md)
+  Check if an IntentParameter was provided an initial value
+- [IntentParameter.ValueState](intentparameter/valuestate-swift.enum.md)
+  Indicates whether an IntentParameter was provided an initial value or if it was unset
 ### Requesting a value
 - [func requestValue(IntentDialog?) async throws -> Value.ValueType](intentparameter/requestvalue(_:)-592nd.md)
   Request a value from the user for this parameter.
@@ -652,12 +653,6 @@ When you implement an [`AppIntent`](appintent.md) type, declare its parameters u
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-25jti.md)
   Creates an app intent parameter.
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-51hn9.md)
-### Instance Properties
-- [var valueState: IntentParameter<Value>.ValueState](intentparameter/valuestate-swift.property.md)
-  Check if an IntentParameter was provided an initial value
-### Enumerations
-- [IntentParameter.ValueState](intentparameter/valuestate-swift.enum.md)
-  Indicates whether an IntentParameter was provided an initial value or if it was unset
 
 ## Relationships
 

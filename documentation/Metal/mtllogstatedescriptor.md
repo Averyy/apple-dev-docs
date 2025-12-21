@@ -31,12 +31,12 @@ If you’ve set the environment variables `MTL_LOG_BUFFER_SIZE` or `MTL_LOG_LEVE
 
 ## Topics
 
-### Instance Properties
+### Instance properties
 - [var bufferSize: Int](mtllogstatedescriptor/buffersize.md)
   The size of the internal buffer the log state uses, specified in bytes.
 - [var level: MTLLogLevel](mtllogstatedescriptor/level.md)
   The minimum level of messages that the shader can log.
-### Log Levels
+### Log levels
 - [enum MTLLogLevel](mtlloglevel.md)
   The supported log levels for shader logging.
 

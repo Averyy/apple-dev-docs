@@ -37,7 +37,7 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [weak var textView: NSTextView? { get set }](../AppKit/NSTextContainer/textView.md)
+- [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)
   The text container’s text view.
 ### Defining the container shape
 - [var size: CGSize](nstextcontainer/size.md)
@@ -60,13 +60,13 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [var isSimpleRectangularTextContainer: Bool](nstextcontainer/issimplerectangulartextcontainer.md)
   A Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view’s coordinate system axes.
 ### Deprecated
-- [convenience init(containerSize aContainerSize: NSSize)](../AppKit/NSTextContainer/init(containerSize:).md)
+- [convenience init(containerSize: NSSize)](../AppKit/NSTextContainer/init(containerSize:).md)
   Initializes a text container with a specified bounding rectangle.
-- [func lineFragmentRect(forProposedRect proposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining remainingRect: NSRectPointer?) -> NSRect](../AppKit/NSTextContainer/lineFragmentRect(forProposedRect:sweepDirection:movementDirection:remaining:).md)
+- [func lineFragmentRect(forProposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining: NSRectPointer?) -> NSRect](../AppKit/NSTextContainer/lineFragmentRect(forProposedRect:sweepDirection:movementDirection:remaining:).md)
   Calculates and returns the longest rectangle available in the proposed rectangle for displaying text.
-- [func contains(_ point: NSPoint) -> Bool](../AppKit/NSTextContainer/contains(_:).md)
+- [func contains(NSPoint) -> Bool](../AppKit/NSTextContainer/contains(_:).md)
   Queries whether a point lies within the text container’s region or on the region’s edge—not simply within its bounding rectangle.
-- [var containerSize: NSSize { get set }](../AppKit/NSTextContainer/containerSize.md)
+- [var containerSize: NSSize](../AppKit/NSTextContainer/containerSize.md)
   The size of the text container’s bounding rectangle.
 
 ## Relationships

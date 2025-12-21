@@ -22,12 +22,11 @@ struct Extensions
 
 ## Topics
 
-### Comparing Extensions
-- [static func == (CMFormatDescription, CMFormatDescription) -> Bool](cmformatdescription/==(_:_:).md)
-  Equality is derived from
 ### Creating Extensions
 - [init()](cmformatdescription/extensions-swift.struct/init.md)
+  Creates an empty `Extensions` structure.
 - [init(base: [CFString : CFPropertyList]?)](cmformatdescription/extensions-swift.struct/init(base:).md)
+  Creates an `Extensions` structure with existing values.
 ### Finding Extension Elements
 - [subscript(CFString) -> CFPropertyList?](cmformatdescription/extensions-swift.struct/subscript(_:)-1c6vg.md)
 - [subscript(CMFormatDescription.Extensions.Key) -> CMFormatDescription.Extensions.Value?](cmformatdescription/extensions-swift.struct/subscript(_:)-80zh8.md)
@@ -61,7 +60,7 @@ struct Extensions
 - [CMFormatDescription.EqualityMask](cmformatdescription/equalitymask.md)
   A type that describes format description equality masks.
 - [CMFormatDescription.ParameterSetCollection](cmformatdescription/parametersetcollection.md)
-  A type that describes format description parameter sets.
+  Collection of parameter sets in a video format description.
 
 
 ---

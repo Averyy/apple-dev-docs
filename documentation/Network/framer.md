@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: struct
 
+An instance of a Framer protocol to load into a protocol stack.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -22,16 +24,16 @@ struct Framer<T> where T : FramerProtocol
 
 ### Initializers
 - [init<BelowProtocol>(() -> BelowProtocol)](framer/init(_:)-4jsj5.md)
+  Create a Framer protocol for use in a protocol stack.
 - [init<BelowProtocol>(() -> BelowProtocol)](framer/init(_:)-7946z.md)
-- [init(using: T.Type)](framer/init(using:).md)
+  Create a Framer protocol for use in a protocol stack.
 - [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](framer/init(using:_:)-16qam.md)
+  Create a Framer protocol for use in a protocol stack.
 - [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](framer/init(using:_:)-94t7p.md)
+  Create a Framer protocol for use in a protocol stack.
 ### Instance Properties
-- [let belowProtocol: any NetworkProtocolOptions](framer/belowprotocol.md)
 - [var options: NWProtocolFramer.Options](framer/options.md)
-### Type Methods
-- [static func receive<ConnectionType>(connection: ConnectionType) async throws -> Framer<T>.Message<Data>](framer/receive(connection:).md)
-- [static func send<ConnectionType>(connection: ConnectionType, content: Data, metadata: Framer<T>.Metadata) async throws](framer/send(connection:content:metadata:).md)
+  The framer options to use with this framer.
 
 ## Relationships
 

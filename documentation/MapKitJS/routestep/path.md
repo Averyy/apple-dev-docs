@@ -11,12 +11,12 @@ An array of coordinate objects representing the path of the route segment.
 ## Declaration
 
 ```swift
-attribute mapkit.Coordinate[] path;
+path?: Coordinate[];
 ```
 
 #### Discussion
 
-An array of [`mapkit.Coordinate`](mapkit.coordinate.md) objects that traces the route segment. To render the route segment on a map, set the [`points`](mapkit.polylineoverlay/points.md) property of [`mapkit.PolylineOverlay`](mapkit.polylineoverlay/mapkit.polylineoverlay.md) to this array.
+An array of [`Coordinate`](coordinate.md) objects that traces the route segment. To render the route segment on a map, set the [`points`](polylineoverlay/points.md) property of [`PolylineOverlay`](polylineoverlay.md) to this array.
 
 
 ---

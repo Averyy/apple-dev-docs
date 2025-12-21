@@ -17,7 +17,7 @@ optional func windowShouldZoom(_ window: NSWindow, toFrame newFrame: NSRect) -> 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow `window`’s frame to become `newFrame`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow `window`’s frame to become `newFrame`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

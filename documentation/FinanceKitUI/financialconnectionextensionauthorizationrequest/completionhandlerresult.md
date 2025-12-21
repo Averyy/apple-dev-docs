@@ -14,6 +14,10 @@
 typealias CompletionHandlerResult = Result<FinancialConnectionExtensionAuthorizationResult, any Error>
 ```
 
+## See Also
+
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](financialconnectionextensionauthorizationrequest/completionhandler.md)
+
 
 ---
 

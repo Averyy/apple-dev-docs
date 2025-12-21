@@ -3,13 +3,13 @@
 **Framework**: Declared Age Range  
 **Kind**: init
 
-Creates an option set with the specified raw value.
+Creates a parental controls option set with the specified raw value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The raw value of the option set.
+- `rawValue`: Represents the enabled parental controls.
 
 
 ---

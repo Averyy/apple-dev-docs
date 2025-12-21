@@ -17,9 +17,9 @@ var preventsApplicationTerminationWhenModal: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window prevents application termination when modal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window prevents application termination when modal; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
-Usually, application termination is prevented when a modal window or sheet is open, without consulting the application delegate. Some windows may wish not to prevent termination, however. Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) overrides the default behavior and allows termination to proceed even if the window is open, either through the sudden termination path if enabled, or after consulting the application delegate.
+Usually, application termination is prevented when a modal window or sheet is open, without consulting the application delegate. Some windows may wish not to prevent termination, however. Setting this property to [`false`](https://developer.apple.com/documentation/Swift/false) overrides the default behavior and allows termination to proceed even if the window is open, either through the sudden termination path if enabled, or after consulting the application delegate.
 
 ## See Also
 

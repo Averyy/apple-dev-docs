@@ -21,7 +21,7 @@ optional func shouldProvideIdentity(for connection: NWTCPConnection) -> Bool
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to provide the identity for this connection, in which case the delegate method [`provideIdentity(for:completionHandler:)`](nwtcpconnectionauthenticationdelegate/provideidentity(for:completionhandler:).md) will be called.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) to provide the identity for this connection, in which case the delegate method [`provideIdentity(for:completionHandler:)`](nwtcpconnectionauthenticationdelegate/provideidentity(for:completionhandler:).md) will be called.
 
 #### Discussion
 

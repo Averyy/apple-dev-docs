@@ -1,4 +1,4 @@
-# Modern Rendering with Metal
+# Modern rendering with Metal
 
 **Framework**: Metal
 
@@ -25,7 +25,7 @@ Because this sample app uses indirect command buffers, you can’t run this samp
 
 ## See Also
 
-- [Encoding Indirect Command Buffers on the GPU](encoding-indirect-command-buffers-on-the-gpu.md)
+- [Encoding indirect command buffers on the GPU](encoding-indirect-command-buffers-on-the-gpu.md)
   Maximize CPU to GPU parallelization by generating render commands on the GPU.
 
 

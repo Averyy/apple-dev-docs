@@ -21,7 +21,7 @@ enum MTLIOStatus
 
 ## Topics
 
-### I/O Command Queue States
+### I/O command queue states
 - [MTLIOStatus.pending](mtliostatus/pending.md)
   Indicates the GPU hasn’t finished executing the input/output command buffer.
 - [MTLIOStatus.complete](mtliostatus/complete.md)

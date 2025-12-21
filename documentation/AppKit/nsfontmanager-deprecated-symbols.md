@@ -19,7 +19,7 @@ Review unsupported symbols and their replacements.
   Adds an array of font descriptors to the specified font collection.
 - [func removeFontDescriptor(NSFontDescriptor, fromCollection: String)](nsfontmanager/removefontdescriptor(_:fromcollection:).md)
   Removes the specified font descriptor from the specified collection.
-- [func fontManager(_ sender: Any, willIncludeFont fontName: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
+- [func fontManager(Any, willIncludeFont: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
   Requests permission from the Font panel delegate to display the given font name in the Font panel.
 ### Properties
 - [static var applicationOnlyMask: NSFontCollectionOptions](nsfontcollectionoptions/applicationonlymask.md)

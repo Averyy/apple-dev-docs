@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: property
 
+The output names.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -21,8 +23,11 @@ let outputNames: [String]
 ## See Also
 
 - [let inputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/inputnames.md)
+  The input names.
 - [let name: String](mlmodelstructure-swift.enum/neuralnetwork/layer/name.md)
+  The layer name.
 - [let type: String](mlmodelstructure-swift.enum/neuralnetwork/layer/type.md)
+  The type of the layer, e,g, “elementwise”, “pooling”, etc.
 
 
 ---

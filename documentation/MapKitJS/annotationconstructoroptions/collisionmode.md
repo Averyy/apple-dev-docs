@@ -11,12 +11,12 @@ A mode that determines the shape of the collision frame.
 ## Declaration
 
 ```swift
-attribute string collisionMode;
+collisionMode?: CollisionMode;
 ```
 
 #### Discussion
 
-Use one of the modes available in [`mapkit.Annotation.CollisionMode`](mapkit.annotation.collisionmode.md):
+Use one of the modes available in [`CollisionMode`](collisionmode.md):
 
 - `mapkit.Annotation.CollisionMode.Rectangle` — Indicates the bounding box of the annotation.
 - `mapkit.Annotation.CollisionMode.Circle` — Indicates a circle within the bounding box.

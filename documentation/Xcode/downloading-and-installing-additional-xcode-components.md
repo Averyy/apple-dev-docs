@@ -14,13 +14,13 @@ Xcode lets you manage optional components yourself so that you can install only 
 
 To manage your components, choose Xcode > Settings and click Components in the toolbar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
 
-![A screenshot of Xcode settings with Components selected, showing the Platform Support, Other Components, and Other Installed Platforms sections. The rows contain the downloads for each section. The downloads that aren’t installed appear in gray text with a Get button on the right.](https://docs-assets.developer.apple.com/published/ae7f0fa12de6fa4f2881da244309656f/downloading-and-installing-components%402x.png)
+![A screenshot of Xcode settings with Components selected, showing the Platform Support, Other Components, and Other Installed Platforms sections. The rows contain the downloads for each section. The downloads that aren’t installed appear in gray text with a Get button on the right.](https://docs-assets.developer.apple.com/published/9e9659719f20c4f19b2a48c92af93049/downloading-and-installing-components%402x.png)
 
 There are three types of components:
 
 To download and install a component in any of these sections, click the Get button next to the component.
 
-To remove or disable components you no longer use and recover their storage space, select the component and click the Delete button (-) in the lower-left corner. Then click Delete or Disable in the dialog that appears.
+To remove or disable components you no longer use and recover their storage space, click the Info button next to the component. In the dialog that appears, click Delete or Turn Off depending on the component.
 
 You can also install platform support when you create a project by selecting a template and clicking the Get button that appears for platforms that aren’t installed. For more information, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
 
@@ -43,7 +43,7 @@ You can also download components in Terminal using the `xcodebuild` command. For
 To download Simulator runtimes for a specific platform, use this syntax:
 
 ```None
-xcodebuild -downloadPlatform <platform> [-exportPath <path>] [-buildVersion <specific-version>]
+xcodebuild -downloadPlatform <iOS|watchOS|tvOS|visionOS>  [-exportPath <destinationpath> -buildVersion <osversion> -architectureVariant <universal|arm64>]
 ```
 
 For example:
@@ -62,6 +62,14 @@ To download all the supported platforms for the version of Xcode you select, use
 
 ```None
 xcodebuild -downloadAllPlatforms [-exportPath <path>]
+```
+
+By default, Xcode downloads a variant based on your Mac computer’s architecture and whether you use Rosetta run destinations. Xcode downloads a universal variant for Intel-based Mac computers and when you use Rosetta run destinations. Otherwise, Xcode downloads an Apple silicon variant to save disk space for the platform you specify.
+
+To download the universal variant that works on both Apple silicon and Intel-based Mac computers, use the `-architectureVariant` option:
+
+```None
+xcodebuild -downloadPlatform iOS -architectureVariant universal
 ```
 
 ##### Install Downloaded Packages From the Command Line

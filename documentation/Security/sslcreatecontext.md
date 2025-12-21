@@ -23,7 +23,7 @@ func SSLCreateContext(_ alloc: CFAllocator?, _ protocolSide: SSLProtocolSide, _ 
 
 #### Return Value
 
-A new context. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release this object’s memory when you are done with it.
+A new context. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release this object’s memory when you are done with it.
 
 ## Parameters
 

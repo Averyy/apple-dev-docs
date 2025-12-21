@@ -22,22 +22,9 @@ struct FullyConnectedNetworkClassifierModel<Scalar, Label> where Scalar : MLShap
 
 ## Topics
 
-### Creating a classifier model
-- [init(from: any Decoder) throws](fullyconnectednetworkclassifiermodel/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Applying a classification
 - [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<Label>](fullyconnectednetworkclassifiermodel/applied(to:eventhandler:).md)
   Performs a classification on a shaped array.
-### Type Aliases
-- [FullyConnectedNetworkClassifierModel.Input](fullyconnectednetworkclassifiermodel/input.md)
-  The input type.
-- [FullyConnectedNetworkClassifierModel.Output](fullyconnectednetworkclassifiermodel/output.md)
-  The output type.
-### Default Implementations
-- [CustomDebugStringConvertible Implementations](fullyconnectednetworkclassifiermodel/customdebugstringconvertible-implementations.md)
-- [Decodable Implementations](fullyconnectednetworkclassifiermodel/decodable-implementations.md)
-- [Encodable Implementations](fullyconnectednetworkclassifiermodel/encodable-implementations.md)
-- [Transformer Implementations](fullyconnectednetworkclassifiermodel/transformer-implementations.md)
 
 ## Relationships
 

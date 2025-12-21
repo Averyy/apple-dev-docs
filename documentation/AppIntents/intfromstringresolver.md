@@ -24,27 +24,8 @@ struct IntFromStringResolver
 
 ### Creating the resolver
 - [init(radix: Int)](intfromstringresolver/init(radix:).md)
-### Resolving the type
-- [func resolve(from: String, context: IntentParameterContext<Int>) async throws -> Int?](intfromstringresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
 ### Getting the radix setting
 - [var radix: Int](intfromstringresolver/radix.md)
-### Operators
-- [static func == (IntFromStringResolver, IntFromStringResolver) -> Bool](intfromstringresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](intfromstringresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intfromstringresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [IntFromStringResolver.Input](intfromstringresolver/input.md)
-- [IntFromStringResolver.Output](intfromstringresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](intfromstringresolver/equatable-implementations.md)
-- [RangeCheckingResolver Implementations](intfromstringresolver/rangecheckingresolver-implementations.md)
-- [Resolver Implementations](intfromstringresolver/resolver-implementations.md)
 
 ## Relationships
 

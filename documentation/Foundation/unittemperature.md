@@ -50,6 +50,7 @@ The [`UnitTemperature`](unittemperature.md) class defines its [`baseUnit()`](dim
   The degree Fahrenheit unit of temperature.
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitTemperature>)](unittemperature/init(forlocale:usage:).md)
+  Creates a `UnitTemperature` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

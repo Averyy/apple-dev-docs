@@ -32,16 +32,16 @@ Call the asynchronous [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(
 
 ## Topics
 
-### Loading Property Values
+### Loading property values
 - [func load<T>(AVAsyncProperty<Self, T>, isolation: isolated (any Actor)?) async throws -> T](avasynchronouskeyvalueloading/load(_:isolation:).md)
   Loads a property asynchronously and returns the value.
 - [func load<A, B, each C>(AVAsyncProperty<Self, A>, AVAsyncProperty<Self, B>, repeat AVAsyncProperty<Self, each C>, isolation: isolated (any Actor)?) async throws -> (A, B, repeat each C)](avasynchronouskeyvalueloading/load(_:_:_:isolation:).md)
   Loads two or more properties asynchronously and returns the values.
-### Determining the Loaded Status
+### Determining the loaded status
 - [func status<T>(of: AVAsyncProperty<Self, T>) -> AVAsyncProperty<Self, T>.Status](avasynchronouskeyvalueloading/status(of:).md)
   Returns a value that indicates the loaded status of a property.
 ### Deprecated
-- [Deprecated Symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
+- [Deprecated symbols](avasynchronouskeyvalueloading-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 - [func loadValuesAsynchronously(forKeys: [String], completionHandler: (() -> Void)?)](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md)
   Tells the asset to load the values of all of the specified keys that aren’t already loaded.

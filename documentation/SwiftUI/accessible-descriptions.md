@@ -10,7 +10,7 @@ SwiftUI can often infer some information about your user interface elements, but
 
 ![None](https://docs-assets.developer.apple.com/published/f52d60c9e7c4a20b6bbd457a3d013a84/accessible-descriptions-hero%402x.png)
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Content-descriptions) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 
@@ -40,7 +40,7 @@ For design guidance, see [`Accessibility`](https://developer.apple.com/design/Hu
 - [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
   Sets the accessibility level of this heading.
 - [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
-  The hierarchy of a heading in relation other headings.
+  The hierarchy of a heading in relation to other headings.
 - [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 ### Describing charts

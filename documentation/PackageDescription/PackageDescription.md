@@ -59,6 +59,9 @@ Support for Swift packages in Xcode builds on the open-source Swift Package Mana
   Information about the git status of a given package, if available.
 - [struct Version](version.md)
   A version according to the semantic versioning specification.
+### Enumerations
+- [enum WarningLevel](warninglevel.md)
+  The level at which a compiler warning should be treated.
 
 
 ---

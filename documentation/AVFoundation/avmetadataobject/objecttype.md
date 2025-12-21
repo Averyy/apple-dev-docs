@@ -47,7 +47,7 @@ struct ObjectType
   A constant that identifies the ITF14 symbology.
 - [static let upce: AVMetadataObject.ObjectType](avmetadataobject/objecttype/upce.md)
   A constant that identifies the UPC-E symbology.
-### 2D Codes
+### 2D codes
 - [static let aztec: AVMetadataObject.ObjectType](avmetadataobject/objecttype/aztec.md)
   A constant that identifies the Aztec symbology.
 - [static let dataMatrix: AVMetadataObject.ObjectType](avmetadataobject/objecttype/datamatrix.md)
@@ -65,8 +65,12 @@ struct ObjectType
   A constant that identifies human body metadata.
 - [static let humanFullBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/humanfullbody.md)
   A constant that identifies human full body metadata.
+- [static let dogHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/doghead.md)
+  An identifier for an instance of a dog head object.
 - [static let dogBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/dogbody.md)
   A constant that identifies dog body metadata.
+- [static let catHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/cathead.md)
+  An identifier for an instance of a cat head object.
 - [static let catBody: AVMetadataObject.ObjectType](avmetadataobject/objecttype/catbody.md)
   A constant that identifies cat body metadata.
 ### Faces
@@ -78,9 +82,6 @@ struct ObjectType
 ### Initializers
 - [init(rawValue: String)](avmetadataobject/objecttype/init(rawvalue:).md)
   Creates a metadata object type with a string value.
-### Type Properties
-- [static let catHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/cathead.md)
-- [static let dogHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/doghead.md)
 
 ## Relationships
 
@@ -93,8 +94,22 @@ struct ObjectType
 
 ## See Also
 
+- [var bounds: CGRect](avmetadataobject/bounds.md)
+  The bounding rectangle associated with the metadata.
+- [var duration: CMTime](avmetadataobject/duration.md)
+  The duration of the media associated with this metadata object.
+- [var time: CMTime](avmetadataobject/time.md)
+  The media time value associated with the metadata object.
 - [var type: AVMetadataObject.ObjectType](avmetadataobject/type.md)
   The type of metadata that this object provides.
+- [var isFixedFocus: Bool](avmetadataobject/isfixedfocus.md)
+  A BOOL indicating whether this metadata object represents a fixed focus.
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+  The current focus mode when an object is detected during a Cinematic Video recording.
+- [var groupID: Int](avmetadataobject/groupid.md)
+  An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
+- [var objectID: Int](avmetadataobject/objectid.md)
+  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
 
 
 ---

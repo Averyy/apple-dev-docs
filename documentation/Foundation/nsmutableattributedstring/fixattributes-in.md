@@ -28,7 +28,7 @@ This method extends the range as needed to cover the last paragraph partially co
 
 Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of aRange lies beyond the end of the receiver’s characters.
 
-`NSTextStorage` subclasses that return [`true`](https://developer.apple.com/documentation/swift/true) from the [`fixesAttributesLazily`](https://developer.apple.com/documentation/AppKit/NSTextStorage/fixesAttributesLazily) method should avoid directly calling [`fixAttributes(in:)`](nsmutableattributedstring/fixattributes(in:).md) or else bracket such calls with [`beginEditing()`](nsmutableattributedstring/beginediting().md) and [`endEditing()`](nsmutableattributedstring/endediting().md) messages.
+`NSTextStorage` subclasses that return [`true`](https://developer.apple.com/documentation/Swift/true) from the [`fixesAttributesLazily`](https://developer.apple.com/documentation/AppKit/NSTextStorage/fixesAttributesLazily) method should avoid directly calling [`fixAttributes(in:)`](nsmutableattributedstring/fixattributes(in:).md) or else bracket such calls with [`beginEditing()`](nsmutableattributedstring/beginediting().md) and [`endEditing()`](nsmutableattributedstring/endediting().md) messages.
 
 ## Parameters
 

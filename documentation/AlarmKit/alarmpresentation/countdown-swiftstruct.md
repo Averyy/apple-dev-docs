@@ -6,9 +6,8 @@
 An object that describes the content required for the countdown UI.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -38,12 +37,6 @@ resumeButton: AlarmButton
   The pause button for a countdown timer.
 - [var title: LocalizedStringResource](alarmpresentation/countdown-swift.struct/title.md)
   The title of the countdown.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentation/countdown-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentation/countdown-swift.struct/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

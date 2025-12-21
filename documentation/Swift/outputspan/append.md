@@ -3,14 +3,16 @@
 **Framework**: Swift  
 **Kind**: method
 
+Append a single element to this span.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 12.2+
+- iPadOS 12.2+
+- Mac Catalyst 12.2+
+- macOS 10.14.4+
+- tvOS 12.2+
+- visionOS 1.0+
+- watchOS 5.2+
 
 ## Declaration
 

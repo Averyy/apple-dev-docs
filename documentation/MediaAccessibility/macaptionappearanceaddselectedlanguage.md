@@ -38,7 +38,7 @@ MACaptionAppearanceAddSelectedLanguage(kMACaptionAppearanceDomainUser, (CFString
 ## Parameters
 
 - `domain`: The domain to retrieve the preference value from. See  . Pass   unless the system defaults are needed for comparison.
-- `language`: A canonical language identifier (see  doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj ) of the preferred caption language.
+- `language`: A canonical language identifier (see  ) of the preferred caption language.
 
 ## See Also
 

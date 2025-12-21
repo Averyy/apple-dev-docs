@@ -19,12 +19,12 @@ struct WhiteBalanceChromaticityValues
 
 ## Topics
 
-### Creating Chromaticity Values
+### Creating chromaticity values
 - [init()](avcapturedevice/whitebalancechromaticityvalues/init.md)
   Creates a structure for white balance chromaticity values.
 - [init(x: Float, y: Float)](avcapturedevice/whitebalancechromaticityvalues/init(x:y:).md)
   Creates a structure for white balance chromaticity values from its x and y coordinates.
-### Inspecting the Values
+### Inspecting the values
 - [var x: Float](avcapturedevice/whitebalancechromaticityvalues/x.md)
   The x component of the CIE 1931 chromaticity value.
 - [var y: Float](avcapturedevice/whitebalancechromaticityvalues/y.md)

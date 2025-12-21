@@ -16,7 +16,7 @@ func setSecureTextEntry(_ secureTextEntry: Bool)
 
 #### Discussion
 
-Pass [`true`](https://developer.apple.com/documentation/swift/true) to help keep passwords and other secure data private. When you enable secure text entry, the system displays a series of dots instead of the text entered by the user.
+Pass [`true`](https://developer.apple.com/documentation/Swift/true) to help keep passwords and other secure data private. When you enable secure text entry, the system displays a series of dots instead of the text entered by the user.
 
 ## See Also
 

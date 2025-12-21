@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-User needs to grant Siri permission to the app
+The person needs to allow the app to access Siri.
 
 **Availability**:
 - iOS 18.0+

@@ -24,6 +24,11 @@ struct InstanceInfo
   The unique identifier of the package you use to install the instance.
 - [let moduleAID: Data](credentialsession/credential/instanceinfo/moduleaid.md)
   The module identifier of the package with which this instance is associated.
+### Inspecting the instance type
+- [let instanceType: CredentialSession.Credential.InstanceInfo.InstanceType](credentialsession/credential/instanceinfo/instancetype-swift.property.md)
+  The instance type of this instance.
+- [CredentialSession.Credential.InstanceInfo.InstanceType](credentialsession/credential/instanceinfo/instancetype-swift.enum.md)
+  An enumeration of Secure Element applet instance types.
 ### Creating a secure channel
 - [let securityDomainAID: Data](credentialsession/credential/instanceinfo/securitydomainaid.md)
   The unique identifier of the security domain you use to install the instance.
@@ -32,14 +37,9 @@ struct InstanceInfo
 ### Inspecting applet instance state
 - [let lifeCycleState: Data](credentialsession/credential/instanceinfo/lifecyclestate.md)
   Information about the state of the applet instance.
-### Operators
-- [static func == (CredentialSession.Credential.InstanceInfo, CredentialSession.Credential.InstanceInfo) -> Bool](credentialsession/credential/instanceinfo/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var securityDomainCounter: Int](credentialsession/credential/instanceinfo/securitydomaincounter.md)
   The authentication counter of the security domain. Fetches the latest counter from the remote hardware.
-### Default Implementations
-- [Equatable Implementations](credentialsession/credential/instanceinfo/equatable-implementations.md)
 
 ## Relationships
 
@@ -47,15 +47,6 @@ struct InstanceInfo
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [CredentialSession.Credential.State.installationPending](credentialsession/credential/state-swift.enum/installationpending.md)
-  The credential installation is pending but isn’t complete.
-- [case installed(instances: [CredentialSession.Credential.InstanceInfo])](credentialsession/credential/state-swift.enum/installed(instances:).md)
-  The credential installation is complete for one or more instances.
-- [CredentialSession.Credential.State.installationFailed](credentialsession/credential/state-swift.enum/installationfailed.md)
-  The credential installation failed.
 
 
 ---

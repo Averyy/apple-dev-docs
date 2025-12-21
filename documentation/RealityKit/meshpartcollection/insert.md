@@ -10,7 +10,8 @@ Add a new part to the container. Returns true if added. Returns false if it alre
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -25,14 +26,12 @@ mutating func insert(_ part: MeshResource.Part) -> Bool
   Number of parts.
 - [var isEmpty: Bool](meshpartcollection/isempty.md)
   True if there are no parts.
-- [func remove(id:)](meshpartcollection/remove(id:).md)
+- [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
   Remove a part by id.
 - [func removeAll()](meshpartcollection/removeall.md)
   Remove all the parts.
-- [func update(_:)](meshpartcollection/update(_:).md)
+- [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
   Update an existing part. The old part is returned.
-- [subscript(String) -> MeshResource.Part?](meshpartcollection/subscript(_:)-3gubt.md)
-  Read a part given its id.
 
 
 ---

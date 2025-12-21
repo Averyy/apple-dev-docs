@@ -20,9 +20,7 @@ typealias sec_protocol_challenge_t = (sec_protocol_metadata_t, @escaping sec_pro
 
 #### Discussion
 
-```None
- Block to be invoked when the protocol instance is issued a challenge (e.g., a TLS certificate request).
-```
+Block to be invoked when the protocol instance is issued a challenge (e.g., a TLS certificate request).
 
 ## Parameters
 

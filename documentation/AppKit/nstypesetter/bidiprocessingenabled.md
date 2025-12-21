@@ -16,7 +16,7 @@ var bidiProcessingEnabled: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if bidirectional text processing is enabled, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if bidirectional text processing is enabled, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 
 ---

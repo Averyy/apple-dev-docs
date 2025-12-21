@@ -21,7 +21,7 @@ func openInMaps(launchOptions: [String : Any]? = nil) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the Maps app successfully opens the map item, or [`false`](https://developer.apple.com/documentation/swift/false) if there’s an error.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the Maps app successfully opens the map item, or [`false`](https://developer.apple.com/documentation/Swift/false) if there’s an error.
 
 #### Discussion
 

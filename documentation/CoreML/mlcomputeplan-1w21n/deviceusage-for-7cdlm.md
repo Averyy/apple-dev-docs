@@ -3,6 +3,8 @@
 **Framework**: Core ML  
 **Kind**: method
 
+Returns the anticipated compute devices that would be used for executing a MLProgram operation.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -18,10 +20,22 @@
 func deviceUsage(for operation: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?
 ```
 
+#### Return Value
+
+The anticipated compute devices that would be used for executing the layer or `nil` if the usage couldn’t be determined.
+
+## Parameters
+
+- `operation`: A MLProgram operation
+
 ## See Also
 
+- [func deviceUsage(for:)](mlcomputeplan-1w21n/deviceusage(for:).md)
+  Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
 - [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
-- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](mlcomputeplan-1w21n/estimatedcost(of:).md)
+  Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
+- [MLComputePlan.DeviceUsage](mlcomputeplan-1w21n/deviceusage.md)
+  The anticipated compute devices that would be used for executing a layer/operation.
 
 
 ---

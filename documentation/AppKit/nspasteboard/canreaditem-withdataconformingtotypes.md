@@ -16,7 +16,7 @@ func canReadItem(withDataConformingToTypes types: [String]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains any items that conform to the UTIs specified in `types`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver contains any items that conform to the UTIs specified in `types`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

@@ -11,29 +11,19 @@ A Boolean value that indicates whether the search results include physical featu
 ## Declaration
 
 ```swift
-attribute boolean includePhysicalFeatures;
+includePhysicalFeatures?: boolean;
 ```
 
 ## See Also
 
-- [addressFilter](searchoptions/addressfilter.md)
-  An object that filters which address components to include or exclude in search results.
-- [coordinate](searchoptions/coordinate.md)
-  A map coordinate that provides a hint for the geographic area to search.
-- [includeAddresses](searchoptions/includeaddresses.md)
-  A Boolean value that indicates whether the search results should include addresses.
 - [includePointsOfInterest](searchoptions/includepointsofinterest.md)
   A Boolean value that indicates whether the search results should include points of interest.
-- [language](searchoptions/language.md)
-  A language ID that determines the language for the search result text.
+- [includeQueries](searchautocompleteoptions/includequeries.md)
+  A Boolean value that indicates whether the search results include queries.
 - [limitToCountries](searchoptions/limittocountries.md)
   A string that constrains search results to within the provided countries.
-- [pointOfInterestFilter](searchoptions/pointofinterestfilter.md)
-  A filter for including or excluding point-of-interest categories in search results.
-- [region](searchoptions/region.md)
-  A map region that provides a hint for the geographic area to search.
 - [regionPriority](searchoptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+  A region priority value that controls whether results occur outside, or strictly within, the region.
 
 
 ---

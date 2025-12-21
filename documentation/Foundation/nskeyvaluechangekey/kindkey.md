@@ -22,7 +22,7 @@ static let kindKey: NSKeyValueChangeKey
 
 #### Discussion
 
-A value of [`NSKeyValueChange.setting`](nskeyvaluechange/setting.md) indicates that the observed object has received a doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue message, or that the key-value-coding-compliant set method for the key has been invoked, or that one of the doc://com.apple.documentation/documentation/objectivec/nsobject/1416222-willchangevalue or doc://com.apple.documentation/documentation/objectivec/nsobject/1411809-didchangevalue methods has otherwise been invoked.
+A value of [`NSKeyValueChange.setting`](nskeyvaluechange/setting.md) indicates that the observed object has received a [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) message, or that the key-value-coding-compliant set method for the key has been invoked, or that one of the [`willChangeValue(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/willChangeValue(forKey:)) or [`didChangeValue(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/didChangeValue(forKey:)) methods has otherwise been invoked.
 
 A value of [`NSKeyValueChange.insertion`](nskeyvaluechange/insertion.md), [`NSKeyValueChange.removal`](nskeyvaluechange/removal.md), or [`NSKeyValueChange.replacement`](nskeyvaluechange/replacement.md) indicates that mutating messages have been sent a key-value observing compliant collection proxy, or that one of the key-value-coding-compliant collection mutation methods for the key has been invoked, or a collection will change or did change method has been otherwise been invoked.
 

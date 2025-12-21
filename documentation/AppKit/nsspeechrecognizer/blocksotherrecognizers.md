@@ -16,7 +16,7 @@ var blocksOtherRecognizers: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), all other speech recognition commands on the system are disabled until the speech recognizer is released, listening is stopped, or the property is set to [`false`](https://developer.apple.com/documentation/swift/false). Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) effectively takes over the computer at the expense of other applications using speech recognition, so you should use it only in circumstances that warrant it, such as when listening for a response important to overall system operation or when an application is running in full-screen mode (such as games and presentation software). The default is value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), all other speech recognition commands on the system are disabled until the speech recognizer is released, listening is stopped, or the property is set to [`false`](https://developer.apple.com/documentation/Swift/false). Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) effectively takes over the computer at the expense of other applications using speech recognition, so you should use it only in circumstances that warrant it, such as when listening for a response important to overall system operation or when an application is running in full-screen mode (such as games and presentation software). The default is value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+The default output audio device on the system, or nil if there is no default output device.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

@@ -13,7 +13,6 @@ A layer object that wraps a fused, fully connected normalization layer and manag
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

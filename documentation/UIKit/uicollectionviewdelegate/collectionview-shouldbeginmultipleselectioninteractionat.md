@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldBeginMult
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to select multiple items using a two-finger pan gesture; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to disable the behavior. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to select multiple items using a two-finger pan gesture; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to disable the behavior. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-When the system recognizes a two-finger pan gesture, it calls this method before it sets [`isEditing`](uicollectionview/isediting.md) to [`true`](https://developer.apple.com/documentation/swift/true). If you return [`true`](https://developer.apple.com/documentation/swift/true) from this method, the user can select multiple items using a two-finger pan gesture.
+When the system recognizes a two-finger pan gesture, it calls this method before it sets [`isEditing`](uicollectionview/isediting.md) to [`true`](https://developer.apple.com/documentation/Swift/true). If you return [`true`](https://developer.apple.com/documentation/Swift/true) from this method, the user can select multiple items using a two-finger pan gesture.
 
 Users can select multiple items using the two-finger pan gesture on collection views that scroll either horizontally or vertically, but not both. Collection views that scroll in both directions won’t recognize the gesture or call this method.
 

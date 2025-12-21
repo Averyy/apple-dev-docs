@@ -21,7 +21,7 @@ var isConnected: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for a particular capture device instance, it doesn’t become [`true`](https://developer.apple.com/documentation/swift/true) again. If the same physical device reconnects, the system represents it as a new capture device instance.
+When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) for a particular capture device instance, it doesn’t become [`true`](https://developer.apple.com/documentation/Swift/true) again. If the same physical device reconnects, the system represents it as a new capture device instance.
 
 You can key-value observe this property value to monitor when a device is no longer available.
 

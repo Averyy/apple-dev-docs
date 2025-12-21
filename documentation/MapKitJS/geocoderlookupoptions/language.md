@@ -11,12 +11,12 @@ The language to use when displaying the lookup results.
 ## Declaration
 
 ```swift
-attribute string language;
+language?: string;
 ```
 
 #### Discussion
 
-Tell the geocoder to return results in this language. For example, setting the option `{ language: 'fr-CA' }` tells the server to send results localized to Canadian French. If you set it, this option overrides the language you provide in the [`mapkit.Geocoder`](mapkit.geocoder/mapkit.geocoder.md) constructor.
+Tell the geocoder to return results in this language. For example, setting the option `{ language: 'fr-CA' }` tells the server to send results localized to Canadian French. If you set it, this option overrides the language you provide in the [`Geocoder`](geocoder.md) constructor.
 
 ## See Also
 

@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: init
 
+Creates a dynamic range object from the specified raw value.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

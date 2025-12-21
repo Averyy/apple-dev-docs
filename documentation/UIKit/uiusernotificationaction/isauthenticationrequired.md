@@ -19,9 +19,9 @@ var isAuthenticationRequired: Bool { get }
 
 #### Discussion
 
-The value of this property is ignored and treated as a value of [`true`](https://developer.apple.com/documentation/swift/true) when the value of the [`activationMode`](uiusernotificationaction/activationmode.md) property is set to [`UIUserNotificationActivationMode.foreground`](uiusernotificationactivationmode/foreground.md).
+The value of this property is ignored and treated as a value of [`true`](https://developer.apple.com/documentation/Swift/true) when the value of the [`activationMode`](uiusernotificationaction/activationmode.md) property is set to [`UIUserNotificationActivationMode.foreground`](uiusernotificationactivationmode/foreground.md).
 
-If your app uses data protection to encrypt data on disk, consider the data needs of the corresponding action before setting this property to [`false`](https://developer.apple.com/documentation/swift/false). For many data protection classes, data remains encrypted and unavailable while the device is locked. If your app needs to access encrypted data to perform a task, you likely need to set this property to [`true`](https://developer.apple.com/documentation/swift/true) to ensure that the data is accessible.
+If your app uses data protection to encrypt data on disk, consider the data needs of the corresponding action before setting this property to [`false`](https://developer.apple.com/documentation/Swift/false). For many data protection classes, data remains encrypted and unavailable while the device is locked. If your app needs to access encrypted data to perform a task, you likely need to set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to ensure that the data is accessible.
 
 ## See Also
 

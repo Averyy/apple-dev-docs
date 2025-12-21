@@ -16,7 +16,7 @@ An upscaling effect that generates a higher resolution texture in a render pass 
 ## Declaration
 
 ```swift
-protocol MTLFXTemporalScalerBase : NSObjectProtocol
+protocol MTLFXTemporalScalerBase : MTLFXFrameInterpolatableScaler
 ```
 
 #### Overview
@@ -118,6 +118,7 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 ## Relationships
 
 ### Inherits From
+- [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
 - [MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)

@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: struct
 
-The view that creates the Sign in with Apple button for display.
+A SwiftUI view that creates the Sign in with Apple button for display.
 
 **Availability**:
 - iOS 14.0+
@@ -20,6 +20,10 @@ The view that creates the Sign in with Apple button for display.
 @MainActor
 @preconcurrency struct SignInWithAppleButton
 ```
+
+#### Discussion
+
+For more information about which Sign in with Apple buttons are available on different Apple platforms, see [`Displaying Sign in with Apple buttons in your app`](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app).
 
 ## Topics
 

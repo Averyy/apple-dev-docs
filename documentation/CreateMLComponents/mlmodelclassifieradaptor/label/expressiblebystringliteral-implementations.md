@@ -5,12 +5,8 @@
 ## Topics
 
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](mlmodelclassifieradaptor/label/init(extendedgraphemeclusterliteral:).md)
 - [init(stringLiteral: String)](mlmodelclassifieradaptor/label/init(stringliteral:).md)
   Creates a Label with a string literal.
-### Type Aliases
-- [MLModelClassifierAdaptor.Label.StringLiteralType](mlmodelclassifieradaptor/label/stringliteraltype.md)
-  A type that represents a string literal.
 
 
 ---

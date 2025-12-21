@@ -30,10 +30,6 @@ case openStep
   Specifies the XML property list format.
 - [PropertyListSerialization.PropertyListFormat.binary](propertylistserialization/propertylistformat/binary.md)
   Specifies the binary property list format.
-- [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
-  Specifies the XML property list format.
-- [PropertyListSerialization.PropertyListFormat.binary](propertylistserialization/propertylistformat/binary.md)
-  Specifies the binary property list format.
 
 
 ---

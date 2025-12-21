@@ -21,7 +21,7 @@ func advanceToNextInputMode()
 
 #### Discussion
 
-When the user taps the Globe or a custom “next keyboard” key, the system picks the appropriate “next” keyboard from the list of user-enabled keyboards. To determine whether your custom keyboard needs to display a “next keyboard” key, check the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property. If the value of the property is [`true`](https://developer.apple.com/documentation/swift/true), your keyboard should include this key.
+When the user taps the Globe or a custom “next keyboard” key, the system picks the appropriate “next” keyboard from the list of user-enabled keyboards. To determine whether your custom keyboard needs to display a “next keyboard” key, check the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property. If the value of the property is [`true`](https://developer.apple.com/documentation/Swift/true), your keyboard should include this key.
 
 ## See Also
 

@@ -6,9 +6,9 @@
 An object that contains the required input and output parameters to run a frame rate conversion processor on a frame.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 15.4+
 
 ## Declaration

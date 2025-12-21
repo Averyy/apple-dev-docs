@@ -20,7 +20,7 @@ var maxRecordedDuration: CMTime { get set }
 
 #### Discussion
 
-This property specifies a hard limit on the duration of recorded files. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md) delegate method is invoked with an appropriate error. The default value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid), which indicates no limit.
+This property specifies a hard limit on the duration of recorded files. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md) delegate method is invoked with an appropriate error. The default value of this property is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid), which indicates no limit.
 
 ## See Also
 

@@ -7,7 +7,7 @@
 The seats that can manipulate or interact with this equipment.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -26,23 +26,25 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 
 ## Topics
 
-### Getting the Type of Metadata
+### Inspecting the metadata
+- [var bounds: CGRect](avmetadataobject/bounds.md)
+  The bounding rectangle associated with the metadata.
+- [var duration: CMTime](avmetadataobject/duration.md)
+  The duration of the media associated with this metadata object.
+- [var time: CMTime](avmetadataobject/time.md)
+  The media time value associated with the metadata object.
 - [var type: AVMetadataObject.ObjectType](avmetadataobject/type.md)
   The type of metadata that this object provides.
 - [AVMetadataObject.ObjectType](avmetadataobject/objecttype.md)
   Constants that identify metadata object types.
-### Getting the Media-Related Attributes
-- [var time: CMTime](avmetadataobject/time.md)
-  The media time value associated with the metadata object.
-- [var duration: CMTime](avmetadataobject/duration.md)
-  The duration of the media associated with this metadata object.
-- [var bounds: CGRect](avmetadataobject/bounds.md)
-  The bounding rectangle associated with the metadata.
-### Instance Properties
-- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
-- [var groupID: Int](avmetadataobject/groupid.md)
 - [var isFixedFocus: Bool](avmetadataobject/isfixedfocus.md)
+  A BOOL indicating whether this metadata object represents a fixed focus.
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+  The current focus mode when an object is detected during a Cinematic Video recording.
+- [var groupID: Int](avmetadataobject/groupid.md)
+  An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
 - [var objectID: Int](avmetadataobject/objectid.md)
+  A unique identifier for each detected object type (face, body, hands, heads and salient objects) in a collection.
 
 ## Relationships
 
@@ -69,7 +71,7 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
   A capture input for providing timed metadata to a capture session.
 - [class AVCaptureMetadataOutput](avcapturemetadataoutput.md)
   A capture output for processing timed metadata produced by a capture session.
-- [Metadata Types](metadata-types.md)
+- [Metadata types](metadata-types.md)
   Inspect the supported metadata object types that the framework supports.
 
 

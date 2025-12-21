@@ -6,13 +6,13 @@
 Creates a system-defined toolbar item from a `ToolbarDefaultItemKind` at the given `placement`.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -47,6 +47,26 @@ NavigationSplitView {
         }
 }
 ```
+
+##### Specifying the Search Column
+
+`DefaultToolbarItem` also can be used to identify which column should be responsible for search when a [`NavigationSplitView`](navigationsplitview.md) is collapsed. Place the `DefaultToolbarItem` with the kind of `.search` in the column that should display the search field in compact. In the example below, the sidebar shows search in compact:
+
+```swift
+NavigationSplitView {
+    SidebarView()
+        .toolbar {
+            DefaultToolbarItem(kind: .search, placement: .bottomBar)
+        }
+} content: {
+    ContentView()
+} detail: {
+    DetailView()
+}
+.searchable(text: $text)
+```
+
+Note that this only applies when the search modifier is placed on the `NavigationSplitView`.
 
 
 ---

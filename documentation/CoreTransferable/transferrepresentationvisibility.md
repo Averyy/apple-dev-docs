@@ -31,11 +31,6 @@ struct TransferRepresentationVisibility
   The visibility level that specifies that the item is visible only to macOS apps in the same App Group.
 - [static let ownProcess: TransferRepresentationVisibility](transferrepresentationvisibility/ownprocess.md)
   The visibility level that specifies that the item is visible only within the app that’s the source of the item.
-### Operators
-- [static func == (TransferRepresentationVisibility, TransferRepresentationVisibility) -> Bool](transferrepresentationvisibility/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](transferrepresentationvisibility/equatable-implementations.md)
 
 ## Relationships
 

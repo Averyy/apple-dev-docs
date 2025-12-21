@@ -11,9 +11,8 @@ Initializes a new discrete Fourier transform instance.
 - Mac Catalyst ?+
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
-- watchOS 6.0+ - Deprecated
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 6.0+ - Deprecated
 
 ## Declaration
 

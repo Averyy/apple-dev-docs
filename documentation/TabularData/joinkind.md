@@ -22,9 +22,6 @@ enum JoinKind
 
 ## Topics
 
-### Operators
-- [static func == (JoinKind, JoinKind) -> Bool](joinkind/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [JoinKind.full](joinkind/full.md)
   A join kind that contains every row from both data frame types.
@@ -34,14 +31,6 @@ enum JoinKind
   A join kind that contains all rows from the left data frame type, and only the rows with matching values from the right data frame type.
 - [JoinKind.right](joinkind/right.md)
   A join kind that contains all rows from the right data frame type, and only the rows with matching values from the left data frame type.
-### Instance Properties
-- [var hashValue: Int](joinkind/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](joinkind/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](joinkind/equatable-implementations.md)
 
 ## Relationships
 

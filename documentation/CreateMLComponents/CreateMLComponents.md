@@ -18,7 +18,7 @@ Create more customizable machine learning models in your app.
 
 Create ML Components is a fundamental technology that exposes the underpinnings of monolithic tasks. You’re in full control and can create custom pipelines for greater flexibility.
 
-![A flowchart that depicts a task represented as 4 component rectangles. The flow begins in the bottom left rectangle which has a camera icon to represent an input image and a label that reads Component 0. This rectangle has two flow arrows — one points up to the single rectangle above the other three rectangles. This top rectangle has a wand and four stars icon that represents an enhancement to the image and a label that reads Component 1. The second flow arrow points to the bottom center rectangle which has a screen within a screen scaling icon that represents the resizing of the image and a label that reads Component 2. Next, the single top rectangle has a flow arrow that points down to the bottom right rectangle which has a photo icon that represents the finished image and a label that reads Component n. A series of three dots connects this rectangle to the center rectangle in the bottom row.](https://docs-assets.developer.apple.com/published/eb40070181caf3b058aa089ccb01534f/%402xcreate-ml-task.png)
+![A flowchart that depicts a task represented as 4 component rectangles. The flow begins in the bottom left rectangle which has a camera icon to represent an input image and a label that reads Component 0. This rectangle has two flow arrows — one points up to the single rectangle above the other three rectangles. This top rectangle has a wand and four stars icon that represents an enhancement to the image and a label that reads Component 1. The second flow arrow points to the bottom center rectangle which has a screen within a screen scaling icon that represents the resizing of the image and a label that reads Component 2. Next, the single top rectangle has a flow arrow that points down to the bottom right rectangle which has a photo icon that represents the finished image and a label that reads Component n. A series of three dots connects this rectangle to the center rectangle in the bottom row.](https://docs-assets.developer.apple.com/published/eb40070181caf3b058aa089ccb01534f/create-ml-task%402x.png)
 
 Use components to configure your machine learning tasks with a detailed level of granularity. Choose a specific classifier for images, video, or tabular data.
 
@@ -54,7 +54,7 @@ Use components to configure your machine learning tasks with a detailed level of
 - [struct MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
   An image feature extractor provided by an MLModel.
 ### Pose components
-- [Counting human body action repetitions in a live video feed](counting_human_body_action_repetitions_in_a_live_video_feed.md)
+- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 - [struct Pose](pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.

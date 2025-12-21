@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-Indicates whether the receiver’s process has finished launching,
+A Boolean value that determines whether the receiver’s process has finished launching.
 
 **Availability**:
 - macOS 10.6+

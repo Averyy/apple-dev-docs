@@ -16,8 +16,8 @@ final class CLKComplicationTemplateGraphicExtraLargeCircularView<Content> where 
 
 ## Mentions
 
-- [Building complications with SwiftUI](building-complications-with-swiftui.md)
 - [Adding text to a complication](adding-text-to-a-complication.md)
+- [Building complications with SwiftUI](building-complications-with-swiftui.md)
 
 #### Overview
 

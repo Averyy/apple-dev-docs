@@ -34,14 +34,7 @@ See the [`DateComponents`](datecomponents.md) property [`yearForWeekOfYear`](dat
   Identifier for the quarter of the calendar.
 - [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
   Identifier for the month unit.
-- [static var era: NSCalendar.Unit](nscalendar/unit/era.md)
-  Identifier for the era unit.
-- [static var year: NSCalendar.Unit](nscalendar/unit/year.md)
-  Identifier for the year unit.
-- [static var quarter: NSCalendar.Unit](nscalendar/unit/quarter.md)
-  Identifier for the quarter of the calendar.
-- [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
-  Identifier for the month unit.
+- [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
 
 
 ---

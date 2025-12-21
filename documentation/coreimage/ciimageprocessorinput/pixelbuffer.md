@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A CoreVideo pixel buffer containing the image data to be processed.
+An input pixel buffer object that your Core Image Processor Kernel can read from.
 
 **Availability**:
 - iOS 10.0+
@@ -22,18 +22,16 @@ var pixelBuffer: CVPixelBuffer? { get }
 
 #### Discussion
 
-Use this property if you plan to process the image using routines that can make use of memory shared with Core Video. For example, if your image processing technology uses OpenGL or OpenGL ES, you can create a GL texture from a Core Video pixel buffer with the [`CVOpenGLBufferPool`](https://developer.apple.com/documentation/CoreVideo/CVOpenGLBufferPool) or [`CVOpenGLESTextureCache`](https://developer.apple.com/documentation/CoreVideo/CVOpenGLESTextureCache) API.
-
-Do not modify the contents of this buffer.
+> ⚠️ **Warning**: This buffer must not be modified by the [`CIImageProcessorKernel`](ciimageprocessorkernel.md).
 
 ## See Also
 
 - [var baseAddress: UnsafeRawPointer](ciimageprocessorinput/baseaddress.md)
-  A pointer to the image data in CPU memory to be processed.
+  The base address of CPU memory that your Core Image Processor Kernel can read pixels from.
 - [var metalTexture: (any MTLTexture)?](ciimageprocessorinput/metaltexture.md)
-  A Metal texture containing the image data to be processed.
+  A MTLTexture object that can be bound for input using Metal.
 - [var surface: IOSurfaceRef](ciimageprocessorinput/surface.md)
-  An IOSurface object containing the image data to be processed.
+  An input surface object that your Core Image Processor Kernel can read from.
 
 
 ---

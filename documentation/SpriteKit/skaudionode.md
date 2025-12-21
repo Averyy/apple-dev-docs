@@ -17,7 +17,6 @@ A node that plays audio.
 ## Declaration
 
 ```swift
-@MainActor
 class SKAudioNode
 ```
 
@@ -31,7 +30,7 @@ A [`SKAudioNode`](skaudionode.md) object is used to add an audio to a scene. The
 
 The currently presented [`SKScene`](skscene.md) object mixes the audio from nodes in the scene based on parameters defined in the [`AVAudio3DMixing`](https://developer.apple.com/documentation/AVFAudio/AVAudio3DMixing) protocol. A scene’s [`audioEngine`](skscene/audioengine.md) property allows overall control of volume and playback.
 
-By default, [`SKAudioNode`](skaudionode.md) objects are positional, i.e. their [`isPositional`](skaudionode/ispositional.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true). If you add an audio node to a scene with a [`listener`](skscene/listener.md) set, SpriteKit will set the stereo balance and the volume based on the relative positions of the two nodes.
+By default, [`SKAudioNode`](skaudionode.md) objects are positional, i.e. their [`isPositional`](skaudionode/ispositional.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true). If you add an audio node to a scene with a [`listener`](skscene/listener.md) set, SpriteKit will set the stereo balance and the volume based on the relative positions of the two nodes.
 
 You can explicitly set the volume or stereo balance to an audio node by running actions on it.
 

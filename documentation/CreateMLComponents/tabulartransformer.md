@@ -27,23 +27,9 @@ Tabular transformers represent operations on data frames. They modify and operat
 ## Topics
 
 ### Appending
-- [func appending<Other>(Other) -> PreprocessingSupervisedTabularEstimator<Self, Other>](tabulartransformer/appending(_:)-3ah47.md)
-  Composes this transformer with a supervised tabular estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableTabularEstimator<Self, Other>](tabulartransformer/appending(_:)-3cljt.md)
-  Composes this transformer with an updatable estimator.
-- [func appending<Other>(Other) -> PreprocessingTabularEstimator<Self, Other>](tabulartransformer/appending(_:)-5xcrt.md)
-  Composes this transformer with an estimator.
-- [func appending<Other>(Other) -> PreprocessingUpdatableSupervisedTabularEstimator<Self, Other>](tabulartransformer/appending(_:)-6klpi.md)
-  Composes this transformer with an updatable supervised estimator.
-- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self, Other.Transformer>, Other.Annotation>
-](tabulartransformer/appending(_:)-7sy5c.md)
-  Composes this transformer with a supervised tabular estimator.
-- [func appending<Other>(Other) -> some TabularEstimator<ComposedTabularTransformer<Self, Other.Transformer>>
-](tabulartransformer/appending(_:)-8jrnz.md)
-  Compose this tabular transformer with a tabular estimator.
-### Applying and adapting
-- [func appending<Other>(Other) -> ComposedTabularTransformer<Self, Other>](tabulartransformer/appending(_:)-7d5ca.md)
+- [func appending(_:)](tabulartransformer/appending(_:).md)
   Composes this tabular transformer with another tabular transformer.
+### Adapting
 - [func adaptedAsEstimator() -> TabularTransformerToEstimatorAdaptor<Self>](tabulartransformer/adaptedasestimator.md)
   Exposes this tabular transformer as a trivial tabular estimator.
 - [func adaptedAsUpdatableEstimator() -> TabularTransformerToUpdatableEstimatorAdaptor<Self>](tabulartransformer/adaptedasupdatableestimator.md)

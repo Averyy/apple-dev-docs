@@ -67,20 +67,20 @@ struct EmojiRangerWidgetEntryView: View {
 
 ## See Also
 
-- [Creating a widget extension](creating-a-widget-extension.md)
-  Display your app’s content in a convenient, informative widget on various devices.
-- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
-  Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
-  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [@MainActor @preconcurrency protocol Widget](../SwiftUI/Widget.md)
-  The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [@MainActor @preconcurrency protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
-  A container used to expose multiple widgets from a single widget extension.
-- [struct StaticConfiguration](staticconfiguration.md)
-  An object describing the content of a widget that has no user-configurable options.
-- [enum WidgetFamily](widgetfamily.md)
-  Values that define the widget’s size and shape.
+- [Displaying the right widget background](displaying-the-right-widget-background.md)
+  Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+  Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
+- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+  Ensure that your small system family widget works well in StandBy and CarPlay.
+- [struct WidgetRenderingMode](widgetrenderingmode.md)
+  Constants that indicate the rendering mode for a widget.
+- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
+- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+  An adaptive background view that provides a standard appearance based on the the widget’s environment.
+- [struct WidgetLocation](widgetlocation.md)
+  Values that indicate different widget locations.
 
 
 ---

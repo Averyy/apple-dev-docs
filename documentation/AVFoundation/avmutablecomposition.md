@@ -36,10 +36,10 @@ let playerItem = AVPlayerItem(asset: composition)
 
 ## Topics
 
-### Creating a Composition
+### Creating a composition
 - [convenience init(urlAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:).md)
   Creates a mutable composition that uses the specified initialization options.
-### Loading Tracks
+### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](avpartialasyncproperty/tracks-92p4a.md)
   The tracks that a composition contains.
 - [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVMutableCompositionTrack?, (any Error)?) -> Void)](avmutablecomposition/loadtrack(withtrackid:completionhandler:).md)
@@ -48,7 +48,7 @@ let playerItem = AVPlayerItem(asset: composition)
   Loads tracks that contain media of a specified type.
 - [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVMutableCompositionTrack]?, (any Error)?) -> Void)](avmutablecomposition/loadtracks(withmediacharacteristic:completionhandler:).md)
   Loads tracks that contain media of a specified characteristic.
-### Accessing Tracks
+### Accessing tracks
 - [var tracks: [AVMutableCompositionTrack]](avmutablecomposition/tracks.md)
   The tracks that a composition contains.
 - [func track(withTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](avmutablecomposition/track(withtrackid:).md)
@@ -57,16 +57,16 @@ let playerItem = AVPlayerItem(asset: composition)
   Returns tracks that contain media of a specified type.
 - [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediacharacteristic:).md)
   Returns tracks that contain media of a specified characteristic.
-### Managing Composition Tracks
+### Managing composition tracks
 - [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableCompositionTrack?](avmutablecomposition/mutabletrack(compatiblewith:).md)
   Returns a composition track into which you can insert any time range of the specified asset track.
 - [func addMutableTrack(withMediaType: AVMediaType, preferredTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](avmutablecomposition/addmutabletrack(withmediatype:preferredtrackid:).md)
   Adds an empty track to a composition.
 - [func removeTrack(AVCompositionTrack)](avmutablecomposition/removetrack(_:).md)
   Removes a specified track from the composition.
-### Managing Cinematic Tracks
+### Managing Cinematic tracks
 - [func addTracks(for: CNAssetInfo, preferredStartingTrackID: CMPersistentTrackID) -> CNCompositionInfo](avmutablecomposition/addtracks(for:preferredstartingtrackid:).md)
-### Managing Time Ranges
+### Managing time ranges
 - [func removeTimeRange(CMTimeRange)](avmutablecomposition/removetimerange(_:).md)
   Removes a specified time range from all tracks of the composition.
 - [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablecomposition/scaletimerange(_:toduration:).md)
@@ -77,10 +77,10 @@ let playerItem = AVPlayerItem(asset: composition)
   Inserts all tracks of an asset for a time range into a composition.
 - [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime) throws](avmutablecomposition/inserttimerange(_:of:at:).md)
   Inserts all the tracks within a given time range of a specified asset into the composition.
-### Configuring Video Size
+### Configuring video size
 - [var naturalSize: CGSize](avmutablecomposition/naturalsize.md)
   The encoded or authored size of the visual portion of the asset.
-### Instance Methods
+### Instance methods
 - [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, isolation: isolated (any Actor)?) async throws](avmutablecomposition/inserttimerange(_:of:at:isolation:).md)
 
 ## Relationships

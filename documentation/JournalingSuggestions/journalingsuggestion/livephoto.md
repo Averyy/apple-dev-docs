@@ -31,9 +31,6 @@ The system provides an instance of this structure to your app when a person choo
   The URL to a video on disk for the Live Photo..
 - [var date: Date?](journalingsuggestion/livephoto/date.md)
   The Live Photo’s creation date.
-### Type Aliases
-- [JournalingSuggestion.LivePhoto.JournalingSuggestionContent](journalingsuggestion/livephoto/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

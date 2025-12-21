@@ -24,7 +24,7 @@ A toolbar item with a valid target and action is enabled by default. To allow a 
 
 ### Enabling and disabling toolbar items
 - [func validateToolbarItem(NSToolbarItem) -> Bool](nstoolbaritemvalidation/validatetoolbaritem(_:).md)
-  If this method is implemented and returns [`false`](https://developer.apple.com/documentation/swift/false), NSToolbar will disable `theItem`; returning [`true`](https://developer.apple.com/documentation/swift/true) causes `theItem` to be enabled.
+  Determines whether to enable or disable the toolbar item.
 
 ## Relationships
 

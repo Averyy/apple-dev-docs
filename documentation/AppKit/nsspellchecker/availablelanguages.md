@@ -20,7 +20,7 @@ An array containing all the available spell checking languages. The languages ar
 
 #### Discussion
 
-If [`automaticallyIdentifiesLanguages`](nsspellchecker/automaticallyidentifieslanguages.md) is [`true`](https://developer.apple.com/documentation/swift/true), then text checking will automatically use this method as appropriate; otherwise, it will use the language set by [`setLanguage(_:)`](nsspellchecker/setlanguage(_:).md).
+If [`automaticallyIdentifiesLanguages`](nsspellchecker/automaticallyidentifieslanguages.md) is [`true`](https://developer.apple.com/documentation/Swift/true), then text checking will automatically use this method as appropriate; otherwise, it will use the language set by [`setLanguage(_:)`](nsspellchecker/setlanguage(_:).md).
 
 The older [`checkSpelling(of:startingAt:language:wrap:inSpellDocumentWithTag:wordCount:)`](nsspellchecker/checkspelling(of:startingat:language:wrap:inspelldocumentwithtag:wordcount:).md) and [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](nsspellchecker/checkgrammar(of:startingat:language:wrap:inspelldocumentwithtag:details:).md). methods will use the language set by [`setLanguage(_:)`](nsspellchecker/setlanguage(_:).md), if they are called with a `nil` language argument.
 

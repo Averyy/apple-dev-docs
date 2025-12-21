@@ -43,6 +43,8 @@ Turn an entity into a  by adding a [`PhysicsBodyComponent`](physicsbodycomponent
 ### Ray casting
 - [struct CollisionCastHit](collisioncasthit.md)
   A hit result of a collision cast.
+- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+  Information returned when ray intersects a triangle mesh.
 - [enum CollisionCastQueryType](collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
 - [struct PixelCastHit](pixelcasthit.md)

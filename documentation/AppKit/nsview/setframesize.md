@@ -17,7 +17,7 @@ func setFrameSize(_ newSize: NSSize)
 
 #### Discussion
 
-Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
+Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the view to be redisplayed.
 
 Changing the frame size results in the posting of an [`frameDidChangeNotification`](nsview/framedidchangenotification.md) to the default notification center if the view is configured to do so.
 
@@ -36,7 +36,7 @@ In macOS 10.4 and later, you can override this method to support content preserv
 - [var frameRotation: CGFloat](nsview/framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
 - [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
-  Posted whenever the view’s frame rectangle changes to a new value, but only when the view’s [`postsFrameChangedNotifications`](nsview/postsframechangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+  A notification that posts when the view’s frame rectangle changes to a new value.
 - [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 

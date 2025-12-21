@@ -51,16 +51,6 @@ This example applies a custom attribute called `factor` with a value of `10` to 
   Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces.
 - [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
   A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
-- [static var mutableContainers: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutablecontainers.md)
-  Specifies that arrays and dictionaries in the returned object are mutable.
-- [static var mutableLeaves: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutableleaves.md)
-  Specifies that leaf strings in the JSON object graph are mutable.
-- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/fragmentsallowed.md)
-  Specifies that the parser allows top-level objects that aren’t arrays or dictionaries.
-- [static var topLevelDictionaryAssumed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/topleveldictionaryassumed.md)
-  Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces.
-- [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
-  A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
 
 
 ---

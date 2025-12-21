@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct ActiveSpaceDidChangeMessage
 
 ### Initializers
 - [init()](nsworkspace/activespacedidchangemessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.ActiveSpaceDidChangeMessage) -> Notification](nsworkspace/activespacedidchangemessage/makenotification(_:).md)
 
 ## Relationships
 

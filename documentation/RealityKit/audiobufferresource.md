@@ -10,7 +10,7 @@ An audio resource that you load from an [`AVAudioBuffer`](https://developer.appl
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -64,6 +64,10 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)
   A playable audio resource
+- [AudioResource.Calibration](audioresource/calibration.md)
+  A container for different calibration modes that can be applied for playback.
+- [AudioResource.Normalization](audioresource/normalization.md)
+  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 
 ---

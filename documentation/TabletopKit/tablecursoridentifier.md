@@ -36,6 +36,8 @@ A cursor identifier is unique across all instances of the same tabletop game.
 
 ## See Also
 
+- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+  Create a physically realistic dice game by adding interactive rolling and scoring.
 - [class TabletopInteraction](tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
 - [struct TossableRepresentation](tossablerepresentation.md)

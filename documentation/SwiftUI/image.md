@@ -25,9 +25,9 @@ struct Image
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Configuring views](configuring-views.md)
-- [Fitting images into available space](fitting-images-into-available-space.md)
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
+- [Fitting images into available space](fitting-images-into-available-space.md)
 
 #### Overview
 
@@ -129,8 +129,6 @@ To use an image as a control, use one of the initializers that takes a `label` p
   The modes that SwiftUI uses to resize an image to fit within its containing view.
 - [Image.Scale](image/scale.md)
   A scale to apply to vector images relative to text.
-### Default Implementations
-- [Equatable Implementations](image/equatable-implementations.md)
 
 ## Relationships
 

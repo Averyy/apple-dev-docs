@@ -29,6 +29,8 @@ The value of this property is set to the value you specified in the [`init(title
   The title of the alert.
 - [var message: String?](uialertcontroller/message.md)
   Descriptive text that provides more details about the reason for the alert.
+- [UIAlertController.Style](uialertcontroller/style.md)
+  Constants indicating the type of alert to display.
 
 
 ---

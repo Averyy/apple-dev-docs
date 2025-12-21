@@ -3,15 +3,15 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Get the MeshPartIndex for a given model and part identifier.
+Get the mesh part index for a given model and part identifier.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ Get the MeshPartIndex for a given model and part identifier.
 
 #### Discussion
 
-This can be used to resolve string names to part indices for use in MeshInstancesComponent.
+You can use this to resolve string names to part indices for use in [`MeshInstancesComponent`](meshinstancescomponent.md).
 
 
 ---

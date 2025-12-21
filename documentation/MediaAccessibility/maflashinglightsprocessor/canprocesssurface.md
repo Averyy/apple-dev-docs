@@ -21,7 +21,7 @@ func canProcessSurface(_ surface: IOSurfaceRef) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the processor can process the content in the surface for flashing lights. [`false`](https://developer.apple.com/documentation/swift/false) if the processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the processor can process the content in the surface for flashing lights. [`false`](https://developer.apple.com/documentation/Swift/false) if the processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
 
 ## Parameters
 

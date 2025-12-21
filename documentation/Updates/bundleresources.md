@@ -31,7 +31,7 @@ Browse notable changes in [`Bundle Resources`](https://developer.apple.com/docum
 - Access the camera region in your visionOS app with the [`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow) entitlement.
 - Share a coordinate space with other devices with the [`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
 - Stop the system from capturing your app’s content with the [`App-Protected Content`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.protected-content) entitlement.
-- Lock your app’s windows in place relative to a person with the [`Follow Mode for Windows`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow) entitlement.
+- Lock your app’s windows in place relative to a person with the [`Window Follow Mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow) entitlement.
 - Add custom adapters to the Foundation Models framework with the [`com.apple.developer.foundation-model-adapter`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foundation-model-adapter) entitlement.
 - Indicate that your app can be the default dialer app on someone’s device with the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement.
 

@@ -24,7 +24,7 @@ init(timerInterval: ClosedRange<Date>, pauseTime: Date? = nil, countsDown: Bool 
 
 ```swift
 Text(
-    timerInterval: Date.now...Date(timeInterval: 12 * 60, since: .now))
+    timerInterval: Date.now...Date(timeInterval: 12 * 60, since: .now),
     pauseTime: Date.now + (10 * 60))
 ```
 

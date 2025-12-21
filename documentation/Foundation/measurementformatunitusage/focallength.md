@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Used to format the focal length of an optical system, such as that of camera lenses
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

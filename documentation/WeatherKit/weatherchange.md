@@ -36,10 +36,6 @@ struct WeatherChange
 ### Enumerations
 - [WeatherChange.Direction](weatherchange/direction.md)
   An enum that specifies the direction in which a measurable aspect of the weather is expected to change.
-### Default Implementations
-- [Decodable Implementations](weatherchange/decodable-implementations.md)
-- [Encodable Implementations](weatherchange/encodable-implementations.md)
-- [Equatable Implementations](weatherchange/equatable-implementations.md)
 
 ## Relationships
 

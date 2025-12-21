@@ -25,8 +25,6 @@ struct UnownedTaskExecutor
 - [init(Builtin.Executor)](unownedtaskexecutor/init(_:)-55b8h.md)
 - [init<E>(E)](unownedtaskexecutor/init(_:)-5pjm5.md)
 - [init<E>(ordinary: E)](unownedtaskexecutor/init(ordinary:).md)
-### Instance Methods
-- [func asTaskExecutor() -> (any TaskExecutor)?](unownedtaskexecutor/astaskexecutor.md)
 ### Default Implementations
 - [Equatable Implementations](unownedtaskexecutor/equatable-implementations.md)
 

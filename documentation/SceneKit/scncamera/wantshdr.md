@@ -22,11 +22,11 @@ var wantsHDR: Bool { get set }
 
 #### Discussion
 
-When this property’s value is [`false`](https://developer.apple.com/documentation/swift/false) (the default), SceneKit performs lighting calculations in a color space whose brightness range is similar to that of the output display. This approach limits the ability to perform realistic rendering of scenes with fine details in brightness levels.
+When this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false) (the default), SceneKit performs lighting calculations in a color space whose brightness range is similar to that of the output display. This approach limits the ability to perform realistic rendering of scenes with fine details in brightness levels.
 
 When you enable HDR rendering for a camera, SceneKit calculates lighting in a much deeper color space, preserving fine details in contrast regardless of brightness, then applies a post-processing effect called  to translate luminance values from that space to the narrower range of brightness values that can be shown on a display. SceneKit determines a tone mapping curve (including the exposure level) from the [`minimumExposure`](scncamera/minimumexposure.md), [`maximumExposure`](scncamera/maximumexposure.md), [`exposureOffset`](scncamera/exposureoffset.md), and [`whitePoint`](scncamera/whitepoint.md) properties along with a measure of scene luminance. The [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) property determines whether tone mapping effects are static or dynamically respond when the luminance visible to the camera changes.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

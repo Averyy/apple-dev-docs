@@ -25,7 +25,7 @@ The properties for configuring a [`VTPixelTransferSession`](vtpixeltransfersessi
 
 #### Discussion
 
-The value is a doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum of properties to configure a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md). Setting this property alone does not necessarily guarantee that a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md) will be created.
+The value is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) of properties to configure a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md). Setting this property alone does not necessarily guarantee that a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md) will be created.
 
 
 ---

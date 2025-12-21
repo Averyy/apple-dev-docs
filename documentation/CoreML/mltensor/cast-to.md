@@ -38,6 +38,11 @@ y.scalarType // is Float
 
 - `scalarType`: The destination scalar type.
 
+## See Also
+
+- [func cast(like: MLTensor) -> MLTensor](mltensor/cast(like:).md)
+  Casts the elements of the tensor to the scalar type of the given array.
+
 
 ---
 

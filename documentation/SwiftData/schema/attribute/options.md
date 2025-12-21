@@ -21,7 +21,6 @@ var options: [Schema.Attribute.Option]
 
 ## See Also
 
-- [var isAttribute: Bool](schema/attribute/isattribute.md)
 - [var isTransformable: Bool](schema/attribute/istransformable.md)
 
 

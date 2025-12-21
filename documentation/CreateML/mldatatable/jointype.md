@@ -30,18 +30,6 @@ enum JoinType
   An operation that is the union between an inner join and the remaining rows from the secondary data table.
 - [MLDataTable.JoinType.outer](mldatatable/jointype/outer.md)
   An operation that is the union between a left join and a right join.
-### Describing a joining operation
-- [var hashValue: Int](mldatatable/jointype/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](mldatatable/jointype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Comparing joining operations
-- [static func == (MLDataTable.JoinType, MLDataTable.JoinType) -> Bool](mldatatable/jointype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mldatatable/jointype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mldatatable/jointype/equatable-implementations.md)
 
 ## Relationships
 

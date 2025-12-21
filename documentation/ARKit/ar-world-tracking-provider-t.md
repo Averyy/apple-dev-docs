@@ -6,7 +6,7 @@
 A source of live data about the device pose and anchors in a person’s surroundings.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,10 +19,22 @@ typedef NSObject<OS_ar_world_tracking_provider> * ar_world_tracking_provider_t;
 
 - [ar_world_anchor_create_with_origin_from_anchor_transform](ar_world_anchor_create_with_origin_from_anchor_transform.md)
   Creates a world anchor from a position and orientation in world space.
+- [ar_world_anchor_is_shared_with_nearby_participants](ar_world_anchor_is_shared_with_nearby_participants.md)
+  Check if a world anchor is marked to be shared with nearby participants.
+- [ar_world_anchor_shared_with_nearby_participants_create](ar_world_anchor_shared_with_nearby_participants_create.md)
+  Initialize a world anchor that should be shared with nearby participants.
+- [ar_world_anchor_sharing_availability_update_handler_function_t](ar_world_anchor_sharing_availability_update_handler_function_t.md)
+  Function pointer called when there is a change in world anchor sharing availability.
+- [ar_world_anchor_sharing_availability_update_handler_t](ar_world_anchor_sharing_availability_update_handler_t.md)
+  Handler called when there is a change in world anchor sharing availability.
 - [ar_world_tracking_add_anchor_completion_handler_t](ar_world_tracking_add_anchor_completion_handler_t.md)
   A handler to call upon completion of a request to add a world anchor.
 - [ar_world_tracking_remove_anchor_completion_handler_t](ar_world_tracking_remove_anchor_completion_handler_t.md)
   A handler to call upon completion of a request to remove a world anchor.
+- [ar_world_tracking_remove_all_anchors_completion_handler_function_t](ar_world_tracking_remove_all_anchors_completion_handler_function_t.md)
+  Function called when a request to remove all known world anchors has completed (successfully or not).
+- [ar_world_tracking_remove_all_anchors_completion_handler_t](ar_world_tracking_remove_all_anchors_completion_handler_t.md)
+  Function called when a request to remove all known world anchors has completed (successfully or not).
 - [ar_world_tracking_anchor_update_handler_t](ar_world_tracking_anchor_update_handler_t.md)
   A handler for receiving updates to world anchors.
 - [ar_world_tracking_configuration_create](ar_world_tracking_configuration_create.md)
@@ -35,18 +47,6 @@ typedef NSObject<OS_ar_world_tracking_provider> * ar_world_tracking_provider_t;
   Gets the number of world anchors in the collection.
 - [ar_world_tracking_provider_create](ar_world_tracking_provider_create.md)
   Creates a world tracking provider.
-- [ar_world_tracking_provider_is_supported](ar_world_tracking_provider_is_supported.md)
-  Returns a Boolean value that indicates whether the current runtime environment supports world tracking providers.
-- [ar_world_tracking_provider_query_device_anchor_at_timestamp](ar_world_tracking_provider_query_device_anchor_at_timestamp.md)
-  Queries the predicted pose of the current device at a given time.
-- [ar_world_tracking_provider_add_anchor](ar_world_tracking_provider_add_anchor.md)
-  Adds a world anchor you supply to the set of currently tracked anchors.
-- [ar_world_tracking_provider_add_anchor_f](ar_world_tracking_provider_add_anchor_f.md)
-  Adds a world anchor you supply to the set of currently tracked anchors.
-- [ar_world_tracking_provider_get_required_authorization_type](ar_world_tracking_provider_get_required_authorization_type.md)
-  Gets the types of authorizations required to track world anchors.
-- [ar_world_tracking_provider_set_anchor_update_handler](ar_world_tracking_provider_set_anchor_update_handler.md)
-  Sets the handler for receiving world tracking updates.
 
 
 ---

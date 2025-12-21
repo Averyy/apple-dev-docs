@@ -16,7 +16,7 @@ var isARepeat: Bool { get }
 
 #### Discussion
 
-Contains [`true`](https://developer.apple.com/documentation/swift/true) if the key event is a repeat caused by the user holding the key down; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). Raises an `NSInternalInconsistencyException` if sent to an `NSFlagsChanged` event or other non-key event.
+Contains [`true`](https://developer.apple.com/documentation/Swift/true) if the key event is a repeat caused by the user holding the key down; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). Raises an `NSInternalInconsistencyException` if sent to an `NSFlagsChanged` event or other non-key event.
 
 ## See Also
 

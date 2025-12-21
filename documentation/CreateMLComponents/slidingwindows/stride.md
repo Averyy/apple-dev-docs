@@ -20,6 +20,17 @@ The number of samples between windows.
 let stride: Int
 ```
 
+## See Also
+
+- [var endIndex: Int](slidingwindows/endindex.md)
+  The collection’s “past the end” position–that is, the position one greater than the last valid subscript argument.
+- [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
+  The input shaped array.
+- [let length: Int](slidingwindows/length.md)
+  The number samples in each window.
+- [var startIndex: Int](slidingwindows/startindex.md)
+  The position of the first window.
+
 
 ---
 

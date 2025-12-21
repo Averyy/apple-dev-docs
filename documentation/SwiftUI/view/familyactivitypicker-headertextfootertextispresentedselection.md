@@ -29,7 +29,7 @@ Use this view modifier to present a `FamilyControls/FamilyActivityPicker`.
 
 ## See Also
 
-- [@MainActor @preconcurrency struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
   Presents an activity picker view as a sheet.

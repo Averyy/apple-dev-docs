@@ -38,6 +38,8 @@ If your MDM payload specifies the Device Lock feature, the device includes an `U
   Manage network users on macOS devices bound to an Open Directory server, and mobile users on shared iPads.
 - [Dealing with Inactive MDM Devices and Invalid Push Tokens](dealing-with-inactive-mdm-devices-and-invalid-push-tokens.md)
   Handle when devices become unmanageable due to inactivity or invalid push tokens.
+- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+  Use a device management service to return managed devices to service quickly after use.
 
 
 ---

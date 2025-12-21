@@ -67,12 +67,6 @@ struct Optionally<Output>
   Creates a regex component that matches the given component zero or one times.
 - [init<W, C1, C2, C3, C4, C5, C6>(RegexRepetitionBehavior?, () -> some RegexComponent)](optionally/init(_:_:)-frqi.md)
   Creates a regex component that matches the given component zero or one times.
-### Instance Properties
-- [var regex: Regex<Output>](optionally/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [Optionally.RegexOutput](optionally/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

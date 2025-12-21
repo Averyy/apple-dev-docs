@@ -11,7 +11,7 @@ A Boolean value that determines whether the map displays points of interest.
 ## Declaration
 
 ```swift
-attribute boolean showsPointsOfInterest;
+showsPointsOfInterest?: boolean;
 ```
 
 #### Discussion

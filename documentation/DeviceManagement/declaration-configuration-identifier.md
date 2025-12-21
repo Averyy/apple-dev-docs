@@ -6,6 +6,13 @@
 The endpoint for fetching a configuration declaration.
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 

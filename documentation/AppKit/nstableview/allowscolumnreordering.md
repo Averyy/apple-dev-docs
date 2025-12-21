@@ -17,7 +17,7 @@ var allowsColumnReordering: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which allows the user to rearrange the table view’s columns. You can rearrange columns programmatically regardless of this setting.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which allows the user to rearrange the table view’s columns. You can rearrange columns programmatically regardless of this setting.
 
 ## See Also
 

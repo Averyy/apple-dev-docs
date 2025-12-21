@@ -19,7 +19,7 @@ struct AdjustmentType
 
 ## Topics
 
-### Adjustment Types
+### Adjustment types
 - [static let timeRange: AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.struct/timerange.md)
   Indicates a timing adjustment.
 ### Initializers

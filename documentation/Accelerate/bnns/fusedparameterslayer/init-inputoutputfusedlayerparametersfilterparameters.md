@@ -13,7 +13,6 @@ Creates a new fused layer from an array of layer parameters.
 - tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

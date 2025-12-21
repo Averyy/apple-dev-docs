@@ -34,7 +34,7 @@ A pasteboard item can be associated with a single pasteboard. When you create an
 
 Use pasteboard items during a single pasteboard interaction, rather than retaining and reusing them. A pasteboard item is only valid until the owner of the pasteboard changes.
 
-> ❗ **Important**:  When a pasteboard item’s owner changes, it becomes stale and its methods return an empty array, `nil`, or [`false`](https://developer.apple.com/documentation/swift/false).
+> ❗ **Important**:  When a pasteboard item’s owner changes, it becomes stale and its methods return an empty array, `nil`, or [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Topics
 

@@ -6,13 +6,13 @@
 Provides an array of media presentation settings that can be effective at the same time as the specified language and settings for other selectors of the receiver.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -29,6 +29,15 @@ If the content is authored to provide a collection of AVMediaSelectionOptions th
 - `selector`: The AVMediaPresentationSelector for which complementary settings are requested.
 - `language`: A BCP 47 language tag chosen among the availableLanguages of the receiver. If no language setting pertains, can be nil.
 - `settings`: A collection of AVMediaPresentationSettings provided by selectors of the receiver other than the specified selector. Because no two AVMediaPresentationSettings of the same AVMediaPresentationSelector are complementary, an empty array will be returned if you specify more than one setting for any selector.
+
+## See Also
+
+- [var availableLanguages: [String]](avcustommediaselectionscheme/availablelanguages.md)
+  Provides available language choices.
+- [var selectors: [AVMediaPresentationSelector]](avcustommediaselectionscheme/selectors.md)
+  Provides custom settings.
+- [var shouldOfferLanguageSelection: Bool](avcustommediaselectionscheme/shouldofferlanguageselection.md)
+  Indicates whether an alternative selection interface should provide a menu of language choices.
 
 
 ---

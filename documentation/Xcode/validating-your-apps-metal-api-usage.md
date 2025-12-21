@@ -34,7 +34,15 @@ For a complete list of settings, run `man MetalValidation` in Terminal.
 - [Validating your app’s Metal shader usage](validating-your-apps-metal-shader-usage.md)
   Catch common shader runtime issues using Shader Validation while your app is running.
 - [Monitoring your Metal app’s graphics performance](monitoring-your-metal-apps-graphics-performance.md)
-  Catch performance issues using the Metal Performance HUD while your app is running.
+  Catch performance issues using the Metal Performance HUD while your app runs.
+- [Customizing the Metal Performance HUD](customizing-metal-performance-hud.md)
+  Modify the appearance of your Metal heads-up display to monitor your graphics performance.
+- [Understanding the Metal Performance HUD metrics](understanding-metal-performance-hud-metrics.md)
+  Learn what each of the metrics reported by the heads-up display indicates.
+- [Gaining performance insights with the Metal Performance HUD](gaining-performance-insights-with-metal-performance-hud.md)
+  Catch potential performance issues while your app runs using the Metal heads-up display.
+- [Generating performance reports with the Metal Performance HUD](generating-performance-reports-with-metal-performance-hud.md)
+  Record your app’s performance using the heads-up display.
 
 
 ---

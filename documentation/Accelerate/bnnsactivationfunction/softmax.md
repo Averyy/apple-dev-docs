@@ -13,7 +13,6 @@ An activation function that returns the softmax function of its input.
 - tvOS 11.0+
 - visionOS ?+
 - watchOS 4.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

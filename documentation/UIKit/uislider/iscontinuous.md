@@ -20,9 +20,9 @@ var isContinuous: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the slider triggers the associated target’s action method repeatedly, as the user moves the thumb. If [`false`](https://developer.apple.com/documentation/swift/false), the slider triggers the associated action method just once, when the user releases the slider’s thumb control to set the final value.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the slider triggers the associated target’s action method repeatedly, as the user moves the thumb. If [`false`](https://developer.apple.com/documentation/Swift/false), the slider triggers the associated action method just once, when the user releases the slider’s thumb control to set the final value.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

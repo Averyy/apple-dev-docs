@@ -36,14 +36,6 @@ For times, this style displays hours and minutes using a format appropriate for 
   A long length date or time format.
 - [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
   A fully spelled out date or time format.
-- [DateIntervalFormatter.Style.none](dateintervalformatter/style/none.md)
-  No information for the date or time. Use this style when you do not want to include date or time information in the resulting string.
-- [DateIntervalFormatter.Style.medium](dateintervalformatter/style/medium.md)
-  A medium length date or time format.
-- [DateIntervalFormatter.Style.long](dateintervalformatter/style/long.md)
-  A long length date or time format.
-- [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
-  A fully spelled out date or time format.
 
 
 ---

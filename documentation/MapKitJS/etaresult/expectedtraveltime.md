@@ -11,7 +11,7 @@ The estimated travel time in seconds, including delays due to traffic.
 ## Declaration
 
 ```swift
-attribute number expectedTravelTime;
+expectedTravelTime: number;
 ```
 
 #### Discussion

@@ -30,13 +30,6 @@ enum ModelAlgorithmType
 ### Describing an algorithm
 - [var description: String](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype/description.md)
   A text representation of the training algorithm.
-### Comparing algorithms
-- [static func == (MLSoundClassifier.ModelParameters.ModelAlgorithmType, MLSoundClassifier.ModelParameters.ModelAlgorithmType) -> Bool](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype/equatable-implementations.md)
 
 ## Relationships
 
@@ -50,6 +43,12 @@ enum ModelAlgorithmType
 
 - [MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validationdata.md)
   The source of a validation dataset for a sound classifier.
+- [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
+  The classifier options for a sound classifier training algorithm.
+- [MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md)
+  The feature-extractor options for a sound-classifier training algorithm.
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+  The type options for an Audio Feature Print feature extractor.
 
 
 ---

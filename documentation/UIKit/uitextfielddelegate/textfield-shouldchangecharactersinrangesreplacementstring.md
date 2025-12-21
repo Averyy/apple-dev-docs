@@ -4,11 +4,11 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,8 @@ optional func textField(_ textField: UITextField, shouldChangeCharactersInRanges
 Returns YES if the text at the `ranges` should be replaced.
 
 #### Discussion
+
+Asks the delegate if the text at the specified `ranges` should be replaced with `string`.
 
 If this method returns YES then the text field will, at its own discretion, choose any one of the specified `ranges` of text and replace it with the specified `replacementString` before deleting the text at the other ranges.
 

@@ -11,7 +11,7 @@ A Boolean value that indicates whether someone can scroll the Look Around view.
 ## Declaration
 
 ```swift
-attribute boolean openDialog;
+openDialog?: boolean;
 ```
 
 ## See Also

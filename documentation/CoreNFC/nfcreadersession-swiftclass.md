@@ -54,6 +54,8 @@ You do not create instances of this class. Instead, you create and use an instan
   A reader session for detecting NFC Data Exchange Format (NDEF) tags.
 - [class NFCTagReaderSession](nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
+- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+  A reader session that supports the use of payment tags.
 - [class NFCVASReaderSession](nfcvasreadersession.md)
   A reader session for processing Value Added Service (VAS) tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)

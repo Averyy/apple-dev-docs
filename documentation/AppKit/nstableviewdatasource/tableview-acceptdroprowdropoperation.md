@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, acceptDrop info: any NSDraggin
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drop operation was successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drop operation was successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

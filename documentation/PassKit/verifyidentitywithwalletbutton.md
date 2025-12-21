@@ -3,7 +3,7 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: struct
 
-A view that displays a button for identity verification.
+A type that displays a button to present the identity verification flow.
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +16,54 @@ A view that displays a button for identity verification.
 ```swift
 @MainActor
 @preconcurrency struct VerifyIdentityWithWalletButton<Fallback> where Fallback : View
+```
+
+#### Overview
+
+Use this structure as the SwiftUI equivalent to [`PKIdentityButton`](pkidentitybutton.md). The system allows one in-progress identity request at a time. Otherwise, it returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
+
+This example shows an implementation of the Verify Identity with Wallet button. For more information, see [`Requesting identity data from a Wallet pass`](requesting-identity-data-from-a-wallet-pass.md).
+
+```swift
+// Create an identity request.
+func createRequest() -> PKIdentityRequest {
+    let descriptor = PKIdentityDriversLicenseDescriptor()
+    descriptor.addElements([.age(atLeast: 18)],
+                            intentToStore: .willNotStore)
+    descriptor.addElements([.givenName, .familyName, .portrait],
+                            intentToStore: .mayStore(days: 30))
+
+    let request = PKIdentityRequest()
+    request.descriptor = descriptor
+    // The merchant ID you configured in your Apple Developer account.
+    request.merchantIdentifier = <YOUR_MERCHANT_ID> 
+    // The nonce your server generates.
+    request.nonce = <YOUR_NONCE_VALUE> 
+}
+```
+
+```swift
+// Show the Verify Identity with Wallet button and handle the identity request result.
+@ViewBuilder var verifiyIdentityButton: some View {
+    VerifyIdentityWithWalletButton(
+        .verifyIdentity,
+        request: createRequest(),
+    ) { result in
+        switch result {
+        case .success(let document):
+            // Securely transfer the document to the server for decryption and verification.
+        case .failure(let error):
+            switch error {
+            case PKIdentityError.cancelled:
+                // Handle the cancellation error.
+            default:
+                // Handle other errors.
+            }
+        }
+    } fallback: {
+        // Verify the person's identity another way.
+    }
+}
 ```
 
 ## Topics
@@ -37,10 +85,6 @@ A view that displays a button for identity verification.
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
-  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
-  Decrypt and verify an in-app presentment request on your server.
 - [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to allow a request for identity information.
 - [class PKIdentityRequest](pkidentityrequest.md)

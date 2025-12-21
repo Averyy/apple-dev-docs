@@ -6,8 +6,8 @@
 Enumeration specifying the type of action contained.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -53,17 +53,6 @@ enum Action
   Request specifics about the user’s device.
 - [RCSService.Business.SuggestedAction.Action.enableDisplayedNotifications](rcsservice/business/suggestedaction/action-swift.enum/enabledisplayednotifications.md)
   Ask the user to enable sending displayed notifications.
-### Encoding and Decoding
-- [init(from: any Decoder) throws](rcsservice/business/suggestedaction/action-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.SuggestedAction.Action, RCSService.Business.SuggestedAction.Action) -> Bool](rcsservice/business/suggestedaction/action-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/suggestedaction/action-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/suggestedaction/action-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

@@ -20,9 +20,9 @@ var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool { get set }
 
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false). To prevent the search controller from creating and presenting a search suggestions view controller when the [`searchBarPlacement`](uisearchcontroller/searchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md), set to [`true`](https://developer.apple.com/documentation/swift/true) when you create the search controller.
+Defaults to [`false`](https://developer.apple.com/documentation/Swift/false). To prevent the search controller from creating and presenting a search suggestions view controller when the [`searchBarPlacement`](uisearchcontroller/searchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md), set to [`true`](https://developer.apple.com/documentation/Swift/true) when you create the search controller.
 
-If you set this value to [`true`](https://developer.apple.com/documentation/swift/true) after the search controller has already displayed search suggestions, it hides the search suggestions view controller and won’t display it again until you set the value to [`false`](https://developer.apple.com/documentation/swift/false).
+If you set this value to [`true`](https://developer.apple.com/documentation/Swift/true) after the search controller has already displayed search suggestions, it hides the search suggestions view controller and won’t display it again until you set the value to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

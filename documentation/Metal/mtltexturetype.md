@@ -36,7 +36,7 @@ Each slice of a cube texture maps to a side with a specific orientation.
 
 ## Topics
 
-### Specifying the Texture Type
+### Specifying the texture type
 - [MTLTextureType.type1D](mtltexturetype/type1d.md)
   A one-dimensional texture image.
 - [MTLTextureType.type1DArray](mtltexturetype/type1darray.md)

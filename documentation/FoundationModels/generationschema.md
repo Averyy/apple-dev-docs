@@ -6,11 +6,11 @@
 A type that describes the properties of an object and any guides on their values.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -48,6 +48,8 @@ Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguage
 
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

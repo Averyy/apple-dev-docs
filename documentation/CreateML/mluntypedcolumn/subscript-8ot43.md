@@ -29,6 +29,8 @@ A new column.
 
 ## See Also
 
+- [subscript(_:)](mluntypedcolumn/subscript(_:).md)
+  Accesses the element at the given position.
 - [subscript(MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-9hr32.md)
   Creates a subset of the column by masking its elements with another untyped column.
 

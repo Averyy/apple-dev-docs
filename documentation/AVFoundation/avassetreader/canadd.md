@@ -21,7 +21,7 @@ func canAdd(_ output: AVAssetReaderOutput) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can add the output; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if you can add the output; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

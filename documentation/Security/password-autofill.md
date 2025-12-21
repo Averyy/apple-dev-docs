@@ -39,7 +39,7 @@ If you’re developing a password management app, create AutoFill Credential Pro
 ### Text input views
 - [Enabling Password AutoFill on a text input view](enabling-password-autofill-on-a-text-input-view.md)
   Make sure a text input view displays the correct AutoFill suggestions.
-- [@MainActor optional var textContentType: UITextContentType! { get set }](../UIKit/UITextInputTraits/textContentType.md)
+- [var textContentType: UITextContentType!](../UIKit/UITextInputTraits/textContentType.md)
   The semantic meaning for a text input area.
 - [static let username: UITextContentType](../UIKit/UITextContentType/username.md)
   A property that defines the content in a text input area as an account or login name.
@@ -55,8 +55,8 @@ If you’re developing a password management app, create AutoFill Credential Pro
 ### Password rules
 - [Customizing Password AutoFill rules](customizing-password-autofill-rules.md)
   Modify the strong password rules for your app by adding your own restrictions.
-- [@NSCopying @MainActor optional var passwordRules: UITextInputPasswordRules? { get set }](../UIKit/UITextInputTraits/passwordRules.md)
-- [@MainActor class UITextInputPasswordRules](../UIKit/UITextInputPasswordRules.md)
+- [var passwordRules: UITextInputPasswordRules?](../UIKit/UITextInputTraits/passwordRules.md)
+- [class UITextInputPasswordRules](../UIKit/UITextInputPasswordRules.md)
   A class that represents password rules for a text input field.
 
 

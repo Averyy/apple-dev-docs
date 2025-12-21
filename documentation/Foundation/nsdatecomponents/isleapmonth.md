@@ -22,7 +22,7 @@ var isLeapMonth: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the month is a leap month, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the month is a leap month, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

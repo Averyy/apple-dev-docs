@@ -6,8 +6,8 @@
 A set of properties that define the interface for a presentation command.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,19 +28,13 @@ These are commands that dictate part of the presentation of the video frames dur
 - [var time: CMTime](presentationcommand/time.md)
 ### Enumeration Cases
 - [PresentationCommand.fade(_:)](presentationcommand/fade(_:).md)
-  A value representing a command that is used during scene transitions. This command adds a fade in / fade out during playback.
+  A value that represents a command that adds fade-in and fade-out effects during scene transitions.
 - [case fadeEnvironment(FadeEnvironmentCommand)](presentationcommand/fadeenvironment(_:).md)
-  A value representing a command that is used during backdrop transitions. This command adds a fade in / fade out for the backdrop during playback.
+  A value that represents a command that adds fade-in and fade-out effects to backdrop transitions.
 - [PresentationCommand.setCamera(_:)](presentationcommand/setcamera(_:).md)
-  A value representing a command that specifies the camera ID to be used for a specific frame during playback.
+  A value that represents a command that specifies the camera ID for a specific frame during playback.
 - [PresentationCommand.shotFlop(_:)](presentationcommand/shotflop(_:).md)
-  A value representing a command that causes the whole frame to be mirrored horizontally for the duration of the command.
-### Initializers
-- [init(from: any Decoder) throws](presentationcommand/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](presentationcommand/encode(to:).md)
-  Encodes this value into the given encoder.
+  A value that represents a command that mirrors a whole frame horizontally for the duration of the command.
 
 ## Relationships
 

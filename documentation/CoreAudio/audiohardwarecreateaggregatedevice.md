@@ -15,6 +15,19 @@
 func AudioHardwareCreateAggregateDevice(_ inDescription: CFDictionary, _ outDeviceID: UnsafeMutablePointer<AudioObjectID>) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+This routine creates a new AudioAggregateDevice using the provided description.
+
+## Parameters
+
+- `inDescription`: The CFDictionary that specifies how to build the AudioAggregateDevice. The   supported keys are described in the AudioAggregateDevice Constants section.
+- `outDeviceID`: The AudioObjectID of the newly created AudioAggregateDevice.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

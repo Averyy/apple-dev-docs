@@ -22,8 +22,8 @@ func start() -> Bool
 
 ## Mentions
 
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
 - [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
 
 #### Return Value
 

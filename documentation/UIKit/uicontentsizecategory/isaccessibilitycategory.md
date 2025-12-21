@@ -20,7 +20,7 @@ var isAccessibilityCategory: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) for [`accessibilityMedium`](uicontentsizecategory/accessibilitymedium.md), [`accessibilityLarge`](uicontentsizecategory/accessibilitylarge.md), [`accessibilityExtraLarge`](uicontentsizecategory/accessibilityextralarge.md), [`accessibilityExtraExtraLarge`](uicontentsizecategory/accessibilityextraextralarge.md), and [`accessibilityExtraExtraExtraLarge`](uicontentsizecategory/accessibilityextraextraextralarge.md). It is [`false`](https://developer.apple.com/documentation/swift/false) for other values.
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) for [`accessibilityMedium`](uicontentsizecategory/accessibilitymedium.md), [`accessibilityLarge`](uicontentsizecategory/accessibilitylarge.md), [`accessibilityExtraLarge`](uicontentsizecategory/accessibilityextralarge.md), [`accessibilityExtraExtraLarge`](uicontentsizecategory/accessibilityextraextralarge.md), and [`accessibilityExtraExtraExtraLarge`](uicontentsizecategory/accessibilityextraextraextralarge.md). It is [`false`](https://developer.apple.com/documentation/Swift/false) for other values.
 
 ## See Also
 

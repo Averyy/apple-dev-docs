@@ -16,9 +16,9 @@ With this profile, the installed app has five minutes to update the conversion v
 
 This testing profile expires two weeks after you install it on the device. To continue testing, download the latest profile and reinstall it.
 
-##### Log in with an Apple Id to Test Ad Attributions
+##### Log in with an Apple Account to Test Ad Attributions
 
-To test ad attributions, you must log in to the device with a production Apple ID. SKAdNetwork doesn’t support Sandbox Apple IDs.
+To test ad attributions, you must log in to the device with a production Apple Account. SKAdNetwork doesn’t support Sandbox Apple Accounts.
 
 ##### Inspect Postbacks Using an Http Proxy
 

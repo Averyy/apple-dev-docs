@@ -46,6 +46,12 @@ With your event-handler prepared, create an array of [`ASPickerDisplayItem`](asp
   Settings that affect the display of the accessory picker.
 - [class ASPickerDisplaySettings](aspickerdisplaysettings.md)
   A type that contains settings to customize the display of the accessory picker
+### Updating the picker
+- [func updatePicker(showing: [ASDiscoveredDisplayItem], completionHandler: ((any Error)?) -> Void)](asaccessorysession/updatepicker(showing:completionhandler:).md)
+  Updates the picker with app-filtered accessories.
+### Ending filtered discovery
+- [func finishPickerDiscovery(completionHandler: ((any Error)?) -> Void)](asaccessorysession/finishpickerdiscovery(completionhandler:).md)
+  Finish the discovery session in the picker and show a timeout error.
 ### Accessing discovered accessories
 - [var accessories: [ASAccessory]](asaccessorysession/accessories.md)
   An array of previously-selected accessories for this application.

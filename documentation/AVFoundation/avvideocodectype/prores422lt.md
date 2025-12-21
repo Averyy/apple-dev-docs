@@ -28,6 +28,8 @@ static let proRes422LT: AVVideoCodecType
   The HEVC video codec that supports an alpha channel.
 - [static let jpeg: AVVideoCodecType](avvideocodectype/jpeg.md)
   The JPEG video codec.
+- [static let JPEGXL: AVVideoCodecType](avvideocodectype/jpegxl.md)
+  The JPEG XL video codec.
 - [static let proRes422: AVVideoCodecType](avvideocodectype/prores422.md)
   The Apple ProRes 422 video codec.
 - [static let proRes422HQ: AVVideoCodecType](avvideocodectype/prores422hq.md)
@@ -36,6 +38,8 @@ static let proRes422LT: AVVideoCodecType
   The Apple ProRes 422 Proxy video codec.
 - [static let proRes4444: AVVideoCodecType](avvideocodectype/prores4444.md)
   The Apple ProRes 4444 video codec.
+- [static let proResRAW: AVVideoCodecType](avvideocodectype/proresraw.md)
+- [static let proResRAWHQ: AVVideoCodecType](avvideocodectype/proresrawhq.md)
 - [static let appleProRes4444XQ: AVVideoCodecType](avvideocodectype/appleprores4444xq.md)
   The Apple ProRes 4444 XQ video codec.
 

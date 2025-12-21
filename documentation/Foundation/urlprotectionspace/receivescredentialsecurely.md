@@ -22,7 +22,7 @@ var receivesCredentialSecurely: Bool { get }
 
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the credentials for the protection space represented by the receiver can be sent securely, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This value is [`true`](https://developer.apple.com/documentation/Swift/true) if the credentials for the protection space represented by the receiver can be sent securely, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

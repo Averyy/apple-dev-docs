@@ -34,6 +34,12 @@ struct Tab<Value, Content, Label>
 ### Creating a tab with label
 - [init(content: () -> Content, label: () -> Label)](tab/init(content:label:).md)
   Creates a new tab with a label that you can use in a tab view.
+- [init(value:content:label:)](tab/init(value:content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
+- [init(role: TabRole?, content: () -> Content, label: () -> Label)](tab/init(role:content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
+- [init(value:role:content:label:)](tab/init(value:role:content:label:).md)
+  Creates a new tab with a label that you can use in a tab view.
 ### Creating a tab with system symbol
 - [init(_:systemImage:content:)](tab/init(_:systemimage:content:).md)
   Creates a new tab that you can use in a tab view using a system image for the tab item’s image, and a localized string key label.
@@ -55,13 +61,6 @@ struct Tab<Value, Content, Label>
 ### Supporting types
 - [struct DefaultTabLabel](defaulttablabel.md)
   The default label to use for a tab or tab section.
-### Initializers
-- [init(role: TabRole?, content: () -> Content, label: () -> Label)](tab/init(role:content:label:).md)
-  Creates a new tab with a label that you can use in a tab view.
-- [init(value:content:label:)](tab/init(value:content:label:).md)
-  Creates a new tab with a label that you can use in a tab view.
-- [init(value:role:content:label:)](tab/init(value:role:content:label:).md)
-  Creates a new tab with a label that you can use in a tab view.
 
 ## Relationships
 

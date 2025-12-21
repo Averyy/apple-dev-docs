@@ -22,6 +22,10 @@ final var wrappedValue: Value { get set }
 
 - [let defaultValue: Value.UnwrappedType?](intentparameter/defaultvalue.md)
 - [var projectedValue: IntentParameter<Value>](intentparameter/projectedvalue.md)
+- [var valueState: IntentParameter<Value>.ValueState](intentparameter/valuestate-swift.property.md)
+  Check if an IntentParameter was provided an initial value
+- [IntentParameter.ValueState](intentparameter/valuestate-swift.enum.md)
+  Indicates whether an IntentParameter was provided an initial value or if it was unset
 
 
 ---

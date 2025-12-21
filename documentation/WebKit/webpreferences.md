@@ -122,6 +122,8 @@ The font size for a web view is different than its logical font size. The minimu
 
 ## See Also
 
+- [class WebView](webview-swift.class.md)
+  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
 - [protocol WebEditingDelegate](webeditingdelegate.md)
 - [protocol WebUIDelegate](webuidelegate.md)
   Web view user interface delegates implement this protocol to control the opening of new windows, augment the behavior of default menu items displayed when the user clicks elements, and perform other user interface–related tasks. These methods can be invoked as a result of handling JavaScript or other plug-in content. Delegates that display more than one web view per window, for example, need to implement some of these methods to handle that case. The default implementation assumes one window per web view, so non-conventional user interfaces might implement a user interface delegate.

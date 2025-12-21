@@ -13,7 +13,6 @@ Creates a set of options for writing a CSV file.
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

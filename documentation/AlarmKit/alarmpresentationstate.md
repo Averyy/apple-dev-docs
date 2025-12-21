@@ -6,9 +6,8 @@
 An object that describes the mutable content of the alarm.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -33,22 +32,6 @@ For alarms, immutable content is information you supply through your own process
   The specific state of the alarm, either alerting, countdown, or paused.
 - [AlarmPresentationState.Mode](alarmpresentationstate/mode-swift.enum.md)
   A list of all modes the alarm can be in: either alert, countdown, or paused.
-### Decoding
-- [init(from: any Decoder) throws](alarmpresentationstate/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (AlarmPresentationState, AlarmPresentationState) -> Bool](alarmpresentationstate/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](alarmpresentationstate/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](alarmpresentationstate/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](alarmpresentationstate/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](alarmpresentationstate/equatable-implementations.md)
 
 ## Relationships
 

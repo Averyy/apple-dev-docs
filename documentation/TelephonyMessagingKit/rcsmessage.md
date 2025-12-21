@@ -6,8 +6,8 @@
 A structure that contains an RCS message’s content and metadata.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -49,24 +49,10 @@ When handling received messages, use the [`content`](rcsmessage/content-swift.pr
   The handle associated with the sender or receiver of the message.
 - [enum RCSHandle](rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [let id: RCSMessageID](rcsmessage/id-swift.property.md)
+- [let id: RCSMessageID](rcsmessage/id.md)
   A message identifier for the message.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsmessage/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSMessage, RCSMessage) -> Bool](rcsmessage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsmessage/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [RCSMessage.ID](rcsmessage/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Equatable Implementations](rcsmessage/equatable-implementations.md)
 
 ## Relationships
 

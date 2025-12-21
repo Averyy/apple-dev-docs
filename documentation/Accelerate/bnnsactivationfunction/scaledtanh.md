@@ -11,9 +11,8 @@ An activation function that returns the scaled hyperbolic tangent of its input.
 - Mac Catalyst ?+
 - macOS 10.12+
 - tvOS 10.0+
-- watchOS 3.0+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- watchOS 3.0+
 
 ## Declaration
 

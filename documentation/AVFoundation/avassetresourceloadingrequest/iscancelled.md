@@ -21,7 +21,7 @@ var isCancelled: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the resource loader cancels the loading of a request, just prior to sending the message [`resourceLoader(_:didCancel:)`](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md) to the delegate.
+[`true`](https://developer.apple.com/documentation/Swift/true) when the resource loader cancels the loading of a request, just prior to sending the message [`resourceLoader(_:didCancel:)`](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md) to the delegate.
 
 ## See Also
 

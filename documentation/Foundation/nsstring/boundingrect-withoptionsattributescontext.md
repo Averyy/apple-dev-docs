@@ -17,7 +17,7 @@ Calculates and returns the bounding rect for the receiver drawn using the given 
 ## Declaration
 
 ```swift
-func boundingRect(with size: CGSize, options: NSStringDrawingOptions = [], attributes: [NSAttributedString.Key : Any]? = nil, context: NSStringDrawingContext?) -> CGRect
+func boundingRect(with size: CGSize, options: NSString.DrawingOptions = [], attributes: [NSAttributedString.Key : Any]? = nil, context: NSStringDrawingContext?) -> CGRect
 ```
 
 #### Return Value

@@ -6,13 +6,20 @@
 The pose of the equipment that the interaction was started with
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var initialPose: Pose3D { get }
 ```
+
+## See Also
+
+- [var configuration: TabletopInteraction.Configuration](tabletopinteraction/value-swift.struct/configuration.md)
+  The current configuration of this interaction
+- [var constants: TabletopInteraction.Constants](tabletopinteraction/value-swift.struct/constants.md)
+  The constants of this interaction
 
 
 ---

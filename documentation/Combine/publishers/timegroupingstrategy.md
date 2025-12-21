@@ -22,7 +22,7 @@ enum TimeGroupingStrategy<Context> where Context : Scheduler
 
 ## Topics
 
-### Time Groupings
+### Time groupings
 - [case byTime(Context, Context.SchedulerTimeType.Stride)](publishers/timegroupingstrategy/bytime(_:_:).md)
   A grouping that collects and periodically publishes items.
 - [case byTimeOrCount(Context, Context.SchedulerTimeType.Stride, Int)](publishers/timegroupingstrategy/bytimeorcount(_:_:_:).md)

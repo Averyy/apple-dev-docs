@@ -22,8 +22,8 @@ var alpha: CGFloat { get set }
 
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [About Node Property Propagation](about-node-property-propagation.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
 
 #### Discussion

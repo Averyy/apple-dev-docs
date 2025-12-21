@@ -22,7 +22,7 @@ static let usesWideGamutColorSpace: AVMediaCharacteristic
 
 ## Mentions
 
-- [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](tagging-media-with-video-color-information.md)
 
 #### Discussion
 
@@ -44,6 +44,8 @@ Tracks that use a wide-gamut color space may use colors that can’t be accurate
   A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.
 - [static let indicatesHorizontalFieldOfView: AVMediaCharacteristic](avmediacharacteristic/indicateshorizontalfieldofview.md)
   A media characteristic that indicates the video track carries information related to the horizontal field of view.
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+  A media characteristic that indicates the video track carries information related to how it should be projected for display.
 
 
 ---

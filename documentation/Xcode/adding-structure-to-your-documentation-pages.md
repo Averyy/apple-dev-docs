@@ -27,7 +27,7 @@ When you add a documentation catalog to your project, Xcode automatically includ
 If you need to manually add a landing page to your documentation catalog, follow these steps:
 
 1. In Xcode, select your documentation catalog in the Project navigator.
-2. Choose File > New > File to open the file template chooser.
+2. Choose File > New > File from Template.
 3. Select the Empty template in the Documentation section and click Next.
 4. Enter a filename and click Create. Xcode creates a Markdown file that contains only a placeholder for the page title.
 
@@ -85,7 +85,7 @@ As with the top-level landing page, DocC generates default topic groups for nest
 To add an extension file to your documentation catalog for a specific symbol, do the following:
 
 1. In Xcode, select your documentation catalog in the Project navigator.
-2. Choose File > New > File to open the file template chooser.
+2. Choose File > New > File from Template.
 3. Select the Extension File template in the Documentation section and click Next.
 4. Enter the symbol name as the filename and click Create.
 

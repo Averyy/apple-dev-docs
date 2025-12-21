@@ -6,7 +6,7 @@
 Animation used when system overlays disappear.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

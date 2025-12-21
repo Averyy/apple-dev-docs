@@ -3,7 +3,7 @@
 **Framework**: Network  
 **Kind**: case
 
-A service type to enable Cellular Network Slicing when not setting the other service types.
+The default service type.
 
 **Availability**:
 - iOS 12.0+
@@ -29,9 +29,9 @@ case bestEffort
 - [NWParameters.ServiceClass.interactiveVoice](nwparameters/serviceclass-swift.enum/interactivevoice.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
 - [NWParameters.ServiceClass.responsiveData](nwparameters/serviceclass-swift.enum/responsivedata.md)
-  A service type for medium-delay tolerant, elastic and inelastic flow, bursty, and long-lived connections.
+  A service type for medium-delay tolerant, inelastic flow, and bursty connections.
 - [NWParameters.ServiceClass.signaling](nwparameters/serviceclass-swift.enum/signaling.md)
-  A service for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
+  A service type for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
 
 
 ---

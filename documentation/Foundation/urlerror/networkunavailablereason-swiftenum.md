@@ -33,6 +33,8 @@ The network may be unavailable due to restrictions placed on the [`URLSessionCon
   A reason that indicates network is unavailable because the user enabled “Low Data Mode” in the Settings app.
 - [URLError.NetworkUnavailableReason.expensive](urlerror/networkunavailablereason-swift.enum/expensive.md)
   A reason that indicates network is unavailable because the system marked the interface as expensive.
+### Enumeration Cases
+- [URLError.NetworkUnavailableReason.ultraConstrained](urlerror/networkunavailablereason-swift.enum/ultraconstrained.md)
 
 ## Relationships
 

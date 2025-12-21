@@ -33,15 +33,9 @@ You must specify only one constant at a time for a given write operation.
 - [static var forReplacing: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/forreplacing.md)
 - [static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/contentindependentmetadataonly.md)
   Select this option when writing to change the file’s metadata only and not its contents.
-### Createing a Writing Option
+### Initializers
 - [init(rawValue: UInt)](nsfilecoordinator/writingoptions/init(rawvalue:).md)
   Instantiates a writing option using an unsigned integer.
-- [static var forDeleting: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/fordeleting.md)
-- [static var forMoving: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formoving.md)
-- [static var forMerging: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formerging.md)
-- [static var forReplacing: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/forreplacing.md)
-- [static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/contentindependentmetadataonly.md)
-  Select this option when writing to change the file’s metadata only and not its contents.
 
 ## Relationships
 

@@ -52,6 +52,52 @@ Thread 0 Crashed:
 
 [`Addressing crashes from Swift runtime errors`](addressing-crashes-from-swift-runtime-errors.md) describes how to resolve this type of crash.
 
+##### Determine Whether the Crash Is an Objective C Concurrent Property Access Error
+
+The Objective-C runtime can detect when multiple threads concurrently write values to the same strong property; or when a thread reads a value from a strong property while another thread writes a value to the property. When the Objective-C runtime detects this situation, it catches the error and intentionally crashes the app. In most cases, the exception info in the crash report looks like this:
+
+```console
+Exception Type:    EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0x400000000000bad0 -> 0x000000000000bad0 (possible pointer authentication failure)
+```
+
+If the crash occurs in a 32-bit process on watchOS, the exception info in the crash report looks like this:
+
+```console
+Exception Type:    EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0x0000bad0
+```
+
+To resolve this type of crash, restructure your code so that different threads don’t concurrently read and write the property’s value. Alternatively, add the `atomic` keyword to the property declaration and ensure that all threads access the value through the property accessors:
+
+```objc
+@interface MyController : NSObject { }
+
+@property (atomic, strong) MyAppService *service;
+
+- (void)connectToService;
+- (MyServiceResult *)updateServiceStatus;
+
+@end
+
+@implementation MyController
+
+- (void)connectToService {
+    dispatch_async(aQueue, ^{
+        self.service = [[MyAppService alloc] init];
+        [self.service connect];
+    });
+}
+
+- (MyServiceResult *)updateServiceStatus {
+    return self.service.status;
+}
+
+@end
+```
+
+For information on using Thread Sanitizer to detect concurrent access to memory locations, see [`Diagnosing memory, thread, and crash issues early`](diagnosing-memory-thread-and-crash-issues-early.md).
+
 ##### Look for Signs of a Language Exception
 
 Apple’s system frameworks throw language exceptions when they encounter certain types of programming errors at runtime, such as accessing an array with an index that’s out-of-bounds. To determine whether a crash is due to a language exception, first confirm that the crash report contains this pattern:
@@ -105,7 +151,7 @@ See [`Addressing watchdog terminations`](addressing-watchdog-terminations.md) to
 
 ##### Determine Whether the Crash Report Contains Signs of a Zombie
 
- are objects that are messaged by the Objective-C runtime after they’re deallocated from memory and no longer exist. Messaging a deallocated object can cause a crash in the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend), `objc_retain`, or `objc_release` functions of the Objective-C runtime, such as this example with [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend):
+ are objects that are messaged by the Objective-C runtime after they’re deallocated from memory and no longer exist. Messaging a deallocated object can cause a crash in the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` functions of the Objective-C runtime, such as this example with [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend):
 
 ```other
 Thread 0 Crashed:

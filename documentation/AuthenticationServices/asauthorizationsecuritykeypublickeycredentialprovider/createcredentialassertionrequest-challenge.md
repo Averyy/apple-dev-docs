@@ -30,7 +30,7 @@ A security key credential registration request.
 - [var relyingPartyIdentifier: String](asauthorizationsecuritykeypublickeycredentialprovider/relyingpartyidentifier.md)
   The domain name of the service to authorize against.
 - [func createCredentialRegistrationRequest(challenge: Data, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationsecuritykeypublickeycredentialprovider/createcredentialregistrationrequest(challenge:displayname:name:userid:).md)
-  Creates an assertion request with a challenge, display name, and user ID.
+  Creates a registration request with a challenge, display name, and user ID.
 
 
 ---

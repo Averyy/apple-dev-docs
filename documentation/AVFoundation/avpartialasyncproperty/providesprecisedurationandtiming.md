@@ -24,9 +24,9 @@ static var providesPreciseDurationAndTiming: AVAsyncProperty<Root, Bool> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property value is [`true`](https://developer.apple.com/documentation/Swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
-> **Note**:  If calculating precise duration and timing isn’t possible for the media resources that the URL references, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), even if you requested otherwise.
+> **Note**:  If calculating precise duration and timing isn’t possible for the media resources that the URL references, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), even if you requested otherwise.
 
 ## See Also
 

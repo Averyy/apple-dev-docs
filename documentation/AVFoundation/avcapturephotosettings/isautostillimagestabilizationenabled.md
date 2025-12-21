@@ -18,11 +18,11 @@ var isAutoStillImageStabilizationEnabled: Bool { get set }
 
 #### Discussion
 
-The default setting is [`true`](https://developer.apple.com/documentation/swift/true), unless you are capturing a RAW photo (By definition, RAW photos are unprocessed, and image stabilization involves processing the captured image).
+The default setting is [`true`](https://developer.apple.com/documentation/Swift/true), unless you are capturing a RAW photo (By definition, RAW photos are unprocessed, and image stabilization involves processing the captured image).
 
 When you enable this setting, the device automatically applies stabilization in low-light conditions to counteract hand shake. Automatic stabilization always includes digital image stabilization, and may also include optical lens stabilization, based on the current device.
 
-Automatic image stabilization is not compatible with the [`AVCaptureDevice.FlashMode.on`](avcapturedevice/flashmode-swift.enum/on.md) setting. If you explicitly enable the flash, the photo output ignores your image stabilization setting, and the [`isStillImageStabilizationEnabled`](avcaptureresolvedphotosettings/isstillimagestabilizationenabled.md) property of the [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) object provided to your photo capture delegate is always [`false`](https://developer.apple.com/documentation/swift/false).
+Automatic image stabilization is not compatible with the [`AVCaptureDevice.FlashMode.on`](avcapturedevice/flashmode-swift.enum/on.md) setting. If you explicitly enable the flash, the photo output ignores your image stabilization setting, and the [`isStillImageStabilizationEnabled`](avcaptureresolvedphotosettings/isstillimagestabilizationenabled.md) property of the [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) object provided to your photo capture delegate is always [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

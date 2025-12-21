@@ -22,7 +22,7 @@ func cancel()
 
 #### Discussion
 
-This method invokes the block for [`cancellationHandler`](progress/cancellationhandler.md), if there is one, and ensures that any subsequent reads of the [`isCancelled`](progress/iscancelled.md) property return [`true`](https://developer.apple.com/documentation/swift/true).
+This method invokes the block for [`cancellationHandler`](progress/cancellationhandler.md), if there is one, and ensures that any subsequent reads of the [`isCancelled`](progress/iscancelled.md) property return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 If the receiver has suboperations, the system cancels their progress as well.
 

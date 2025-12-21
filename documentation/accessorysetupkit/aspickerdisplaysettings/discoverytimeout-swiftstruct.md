@@ -6,8 +6,8 @@
 The type used for the accessory picker’s discovery timeout value.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -26,10 +26,10 @@ struct DiscoveryTimeout
   A picker discovery timeout value that times out after about two minutes.
 - [static let long: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/long.md)
   A picker discovery timeout value that times out after about five minutes.
+- [static let unbounded: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/unbounded.md)
+  A picker discovery that only times out when the app tells it to.
 ### Working with raw values
 - [init(rawValue: TimeInterval)](aspickerdisplaysettings/discoverytimeout-swift.struct/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](aspickerdisplaysettings/discoverytimeout-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

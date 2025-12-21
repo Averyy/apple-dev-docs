@@ -1,4 +1,4 @@
-# Converting Between Pixel Regions and Sparse Tile Regions
+# Converting between pixel regions and sparse tile regions
 
 **Framework**: Metal
 
@@ -22,7 +22,7 @@ All tiles in a texture have the same dimensions, and the texture is laid out as 
 
 ![A figure showing tiles in a texture, specified in both pixel units and tile units. Pixel units are calculated by multiplying the dimensions in tile units by the tile dimensions. ](https://docs-assets.developer.apple.com/published/91e723cce3377021c868557f38deadb2/media-3380379%402x.png)
 
-If the tile size is `64 x 64`, to cover the texture, you need a `4 x 4` grid of sparse tiles. A [`MTLRegion`](mtlregion.md) in tile coordinates with an origin of `(0,0)` and a size of `(1,1)` corresponds to a pixel region with an origin of `(0,0)` and a size of `(64,64)`. Similarly, a tile region with an origin of `(2,1)` and a size of `(2,3)` corresponds to a pixel region with an origin of `(128,64)` and a size of `(128,196)`.
+If the tile size is `64 x 64`, to cover the texture, you need a `4 x 4` grid of sparse tiles. An [`MTLRegion`](mtlregion.md) in tile coordinates with an origin of `(0,0)` and a size of `(1,1)` corresponds to a pixel region with an origin of `(0,0)` and a size of `(64,64)`. Similarly, a tile region with an origin of `(2,1)` and a size of `(2,3)` corresponds to a pixel region with an origin of `(128,64)` and a size of `(128,196)`.
 
 ##### Convert From Pixels to Tiles
 
@@ -54,15 +54,15 @@ Similarly, you can convert from tile units into pixel units. The resulting pixel
 
 ## See Also
 
-- [Managing Sparse Texture Memory](managing-sparse-texture-memory.md)
+- [Managing sparse texture memory](managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Assigning Memory to Sparse Textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and Writing to Sparse Textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating How Often a Texture Region Is Accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
 - [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.

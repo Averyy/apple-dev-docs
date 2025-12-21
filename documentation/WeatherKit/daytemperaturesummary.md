@@ -22,12 +22,6 @@ struct DayTemperatureSummary
 
 ## Topics
 
-### Operators
-- [static func == (DayTemperatureSummary, DayTemperatureSummary) -> Bool](daytemperaturesummary/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](daytemperaturesummary/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var date: Date](daytemperaturesummary/date.md)
   The day of the observed temperature summary.
@@ -35,11 +29,6 @@ struct DayTemperatureSummary
   The observed high temperature for the day.
 - [var lowTemperature: Measurement<UnitTemperature>](daytemperaturesummary/lowtemperature.md)
   The observed low temperature for the day.
-### Instance Methods
-- [func encode(to: any Encoder) throws](daytemperaturesummary/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](daytemperaturesummary/equatable-implementations.md)
 
 ## Relationships
 

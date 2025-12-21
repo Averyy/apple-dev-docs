@@ -17,7 +17,7 @@ static var titled: NSWindow.StyleMask { get }
 ## See Also
 
 - [static var borderless: NSWindow.StyleMask](nswindow/stylemask-swift.struct/borderless.md)
-  The window displays none of the usual peripheral elements. Useful only for display or caching purposes. A window that uses `NSWindowStyleMaskBorderless` can’t become key or main, unless the value of [`canBecomeKey`](nswindow/canbecomekey.md) or [`canBecomeMain`](nswindow/canbecomemain.md) is [`true`](https://developer.apple.com/documentation/swift/true). Note that you can set a window’s or panel’s style mask to `NSWindowStyleMaskBorderless` in Interface Builder by deselecting Title Bar in the Appearance section of the Attributes inspector.
+  The window displays none of the usual peripheral elements.
 - [static var closable: NSWindow.StyleMask](nswindow/stylemask-swift.struct/closable.md)
   The window displays a close button.
 - [static var miniaturizable: NSWindow.StyleMask](nswindow/stylemask-swift.struct/miniaturizable.md)

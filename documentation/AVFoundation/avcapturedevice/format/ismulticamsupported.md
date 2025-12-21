@@ -19,7 +19,7 @@ var isMultiCamSupported: Bool { get }
 
 #### Discussion
 
-When performing single-camera capture using [`AVCaptureSession`](avcapturesession.md), you may set any of the device’s formats as its [`activeFormat`](avcapturedevice/activeformat.md). However, when using [`AVCaptureMultiCamSession`](avcapturemulticamsession.md), you may only set the device’s format to one in which [`isMultiCamSupported`](avcapturedevice/format/ismulticamsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true). Only this limited subset of capture formats can run sustainably in a multi-camera capture scenario.
+When performing single-camera capture using [`AVCaptureSession`](avcapturesession.md), you may set any of the device’s formats as its [`activeFormat`](avcapturedevice/activeformat.md). However, when using [`AVCaptureMultiCamSession`](avcapturemulticamsession.md), you may only set the device’s format to one in which [`isMultiCamSupported`](avcapturedevice/format/ismulticamsupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true). Only this limited subset of capture formats can run sustainably in a multi-camera capture scenario.
 
 ## See Also
 

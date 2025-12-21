@@ -1,33 +1,39 @@
-# !=(_:_:)
+# MMSService.Error.unknown
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: op
+**Kind**: case
 
-Returns a Boolean value indicating whether two values are not equal.
+An unknown problem caused the error.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+case unknown
 ```
 
-#### Discussion
+## See Also
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- [MMSService.Error.notSupported](mmsservice/error/notsupported.md)
+  The operation isn’t supported.
+- [MMSService.Error.invalidRecipient](mmsservice/error/invalidrecipient.md)
+  The message contained one or more unknown or malformed recipients.
+- [MMSService.Error.invalidMessageParts](mmsservice/error/invalidmessageparts.md)
+  The message conteined one or more unknown or malformed parts.
+- [MMSService.Error.internalError](mmsservice/error/internalerror.md)
+  The framework encountered an unknown internal error.
+- [MMSService.Error.mmsNotReady](mmsservice/error/mmsnotready.md)
+  The framework isn’t ready to send MMS messages.
+- [MMSService.Error.mmsNotConfiguredForCarrier](mmsservice/error/mmsnotconfiguredforcarrier.md)
+  The carrier isn’t currently configured to handle MMS.
+- [MMSService.Error.maximumSizeExceeded](mmsservice/error/maximumsizeexceeded.md)
+  The MMS message exceeded the maximum allowed size.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/telephonymessagingkit/mmsservice/error/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/telephonymessagingkit/mmsservice/error/unknown)*

@@ -22,8 +22,8 @@ func sink(receiveValue: @escaping (Self.Output) -> Void) -> AnyCancellable
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
 - [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
 - [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
 

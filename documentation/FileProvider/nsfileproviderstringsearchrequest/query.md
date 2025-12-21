@@ -6,7 +6,7 @@
 A plaintext string, representing the query a person entered into the system search UI.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

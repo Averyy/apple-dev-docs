@@ -29,12 +29,12 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
 ### Essentials
 - [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
-- [Performing Common Cryptographic Operations](performing_common_cryptographic_operations.md)
+- [Performing Common Cryptographic Operations](performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.
 - [Storing CryptoKit Keys in the Keychain](storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.
-- [Using the quantum-secure APIs](using-the-quantum-secure-apis.md)
-  Enhance your app’s privacy and security by using quantum-secure workflows.
+- [Enhancing your app’s privacy and security with quantum-secure workflows](enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows.md)
+  Use quantum-secure cryptography to protect your app from quantum attacks.
 ### Cryptographically secure hashes
 - [protocol HashFunction](hashfunction.md)
   A type that performs cryptographically secure hashing.

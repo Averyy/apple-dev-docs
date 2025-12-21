@@ -20,12 +20,6 @@ An identifier for a music item attribute property from a specific root type to a
 class MusicAttributeProperty<Root, Value> where Value : Decodable
 ```
 
-## Topics
-
-### Instance Properties
-- [var description: String](musicattributeproperty/description.md)
-  A textual representation of this instance.
-
 ## Relationships
 
 ### Inherits From

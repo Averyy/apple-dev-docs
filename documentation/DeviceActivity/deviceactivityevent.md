@@ -38,19 +38,12 @@ Device activity is the amount of time an application, category, or web domain is
   The web domains that the event includes.
 - [var threshold: DateComponents](deviceactivityevent/threshold.md)
   The amount of time to monitor the provided applications, categories, and web domains.
-### Comparing Events and Schedules
-- [static func != (Self, Self) -> Bool](deviceactivityevent/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two values aren’t equal.
-- [static func == (DeviceActivityEvent, DeviceActivityEvent) -> Bool](deviceactivityevent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents, includesPastActivity: Bool)](deviceactivityevent/init(applications:categories:webdomains:threshold:includespastactivity:).md)
   Creates a new event.
 ### Instance Properties
 - [var includesPastActivity: Bool](deviceactivityevent/includespastactivity.md)
   Whether the system takes into account the person’s device activity before your app starts monitoring the event.
-### Default Implementations
-- [Equatable Implementations](deviceactivityevent/equatable-implementations.md)
 
 ## Relationships
 

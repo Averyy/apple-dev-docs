@@ -31,10 +31,6 @@ An async sequence of down sampled outputs.
 
 ## See Also
 
-- [Downsampler.Input](downsampler/input.md)
-  The input type.
-- [Downsampler.Output](downsampler/output.md)
-  The output type.
 - [Downsampler.DownStreamSequence](downsampler/downstreamsequence.md)
   An async sequence of down stream elements.
 

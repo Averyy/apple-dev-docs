@@ -6,8 +6,8 @@
 A structure that represents an RCS URI handle.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -24,22 +24,8 @@ struct URI
 ### Working with raw values
 - [init(rawValue: String)](rcshandle/uri/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-- [let rawValue: String](rcshandle/uri/rawvalue-swift.property.md)
+- [let rawValue: String](rcshandle/uri/rawvalue.md)
   The raw value of the handle
-### Type Aliases
-- [RCSHandle.URI.ExtendedGraphemeClusterLiteralType](rcshandle/uri/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [RCSHandle.URI.RawValue](rcshandle/uri/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-- [RCSHandle.URI.StringLiteralType](rcshandle/uri/stringliteraltype.md)
-  A type that represents a string literal.
-- [RCSHandle.URI.UnicodeScalarLiteralType](rcshandle/uri/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-### Default Implementations
-- [Equatable Implementations](rcshandle/uri/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](rcshandle/uri/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](rcshandle/uri/expressiblebystringliteral-implementations.md)
-- [RawRepresentable Implementations](rcshandle/uri/rawrepresentable-implementations.md)
 
 ## Relationships
 

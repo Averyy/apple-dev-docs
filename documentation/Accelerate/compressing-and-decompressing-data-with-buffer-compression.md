@@ -38,6 +38,7 @@ Create an [`UnsafeMutablePointer`](https://developer.apple.com/documentation/Swi
 
 ```swift
 let destinationBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: sourceString.count)
+
 defer {
     destinationBuffer.deallocate()
 }
@@ -98,7 +99,8 @@ guard let destinationFileHandle = try? FileHandle(forWritingTo: encodedFileURL) 
 }
 
 let encodedData = NSData(bytesNoCopy: destinationBuffer,
-                         length: compressedSize)
+                         length: compressedSize,
+                         freeWhenDone: false)
 
 destinationFileHandle.write(encodedData as Data)
 destinationFileHandle.closeFile()

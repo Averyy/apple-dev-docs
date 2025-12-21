@@ -34,10 +34,10 @@ The shape of each window in the sequence is `[length, featureSize]`. The sequenc
 
 ## Topics
 
-### Initializers
+### Creating a sliding window
 - [init(input: MLShapedArray<Scalar>, length: Int, stride: Int) throws](slidingwindows/init(input:length:stride:).md)
   Creates a sliding windows sequence.
-### Instance Properties
+### Inspecting the sliding window
 - [var endIndex: Int](slidingwindows/endindex.md)
   The collection’s “past the end” position–that is, the position one greater than the last valid subscript argument.
 - [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
@@ -48,34 +48,16 @@ The shape of each window in the sequence is `[length, featureSize]`. The sequenc
   The position of the first window.
 - [let stride: Int](slidingwindows/stride.md)
   The number of samples between windows.
-### Instance Methods
+### Getting the index
 - [func index(Int, offsetBy: Int) -> Int](slidingwindows/index(_:offsetby:).md)
   Returns an index that is the specified distance from the given index.
 - [func index(after: Int) -> Int](slidingwindows/index(after:).md)
   Returns the position immediately after the given index.
 - [func index(before: Int) -> Int](slidingwindows/index(before:).md)
   Returns the position immediately before the given index.
-### Subscripts
-- [subscript(Int) -> MLShapedArray<Scalar>](slidingwindows/subscript(_:)-1x8i9.md)
-  Accesses the window at the specified position.
-- [subscript(Range<Int>) -> Slice<SlidingWindows<Scalar>>](slidingwindows/subscript(_:)-26j7f.md)
+### Getting the subscript
+- [subscript(_:)](slidingwindows/subscript(_:).md)
   Accesses a contiguous range of windows.
-### Type Aliases
-- [SlidingWindows.Element](slidingwindows/element.md)
-  A type representing the sequence’s elements.
-- [SlidingWindows.Index](slidingwindows/index.md)
-  A type that represents a position in the collection.
-- [SlidingWindows.Indices](slidingwindows/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [SlidingWindows.Iterator](slidingwindows/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [SlidingWindows.SubSequence](slidingwindows/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](slidingwindows/bidirectionalcollection-implementations.md)
-- [Collection Implementations](slidingwindows/collection-implementations.md)
-- [RandomAccessCollection Implementations](slidingwindows/randomaccesscollection-implementations.md)
-- [Sequence Implementations](slidingwindows/sequence-implementations.md)
 
 ## Relationships
 

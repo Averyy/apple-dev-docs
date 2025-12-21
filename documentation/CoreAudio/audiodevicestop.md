@@ -15,6 +15,19 @@
 func AudioDeviceStop(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIOProcID?) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+Stops IO for the given AudioDeviceIOProcID.
+
+## Parameters
+
+- `inDevice`: The AudioDevice to stop the IOProc on.
+- `inProcID`: The AudioDeviceIOProcID to stop.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

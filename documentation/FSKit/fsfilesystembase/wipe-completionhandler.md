@@ -24,6 +24,11 @@ This method wraps the `wipefs` functionality from `libutil`. For more informatio
 - `resource`: The   to wipe.
 - `completion`: A block or closure that executes after the wipe operation completes. The completion handler receives a single parameter indicating any error that occurs during the operation. If the value is  , the wipe operation succeeded.
 
+## See Also
+
+- [var containerStatus: FSContainerStatus](fsfilesystembase/containerstatus.md)
+  The status of the file system container, indicating its readiness and activity.
+
 
 ---
 

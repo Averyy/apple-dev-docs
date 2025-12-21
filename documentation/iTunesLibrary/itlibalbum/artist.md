@@ -7,7 +7,6 @@ The artist iTunes associates with the album.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- Unknown ?+ - Deprecated
 - macOS 10.13+
 
 ## Declaration

@@ -22,7 +22,7 @@ case lineStrip
 ## See Also
 
 - [MTLPrimitiveType.point](mtlprimitivetype/point.md)
-  Rasterize a point at each vertex. The vertex shader must provide `[[point_size]]`, or the point size is undefined.
+  Rasterize a point at each vertex. The vertex shader needs to provide `[[point_size]]`, or the point size is undefined.
 - [MTLPrimitiveType.line](mtlprimitivetype/line.md)
   Rasterize a line between each separate pair of vertices, resulting in a series of unconnected lines. If there are an odd number of vertices, the last vertex is ignored.
 - [MTLPrimitiveType.triangle](mtlprimitivetype/triangle.md)

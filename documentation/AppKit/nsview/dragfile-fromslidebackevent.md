@@ -17,7 +17,7 @@ func dragFile(_ filename: String, from rect: NSRect, slideBack flag: Bool, event
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view successfully initiates the dragging operation (which doesn’t necessarily mean the dragging operation concluded successfully). Otherwise, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the view successfully initiates the dragging operation (which doesn’t necessarily mean the dragging operation concluded successfully). Otherwise, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -39,7 +39,7 @@ See the [`NSDraggingSource`](nsdraggingsource.md), [`NSDraggingInfo`](nsdragging
 - [func lockFocus()](nsview/lockfocus.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
 - [func unlockFocus()](nsview/unlockfocus.md)

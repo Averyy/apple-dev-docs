@@ -21,11 +21,11 @@ case atTileDispatchBoundary
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-When a Metal device object supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlrendercommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on a [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to sample the counters between individual tile shader dispatches commands.
+When a Metal device instance supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlrendercommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) method on an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to sample the counters between individual tile shader dispatches commands.
 
 ## See Also
 

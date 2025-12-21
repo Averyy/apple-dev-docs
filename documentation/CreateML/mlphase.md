@@ -32,28 +32,6 @@ enum MLPhase
   The training session is evaluating the model it trained.
 - [MLPhase.inferencing](mlphase/inferencing.md)
   The training session is using the model to make a prediction.
-### Creating a phase from a string
-- [init?(rawValue: String)](mlphase/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Getting a phase’s string value
-- [var rawValue: String](mlphase/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [typealias RawValue](mlphase/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Encoding and decoding a phase
-- [func encode(to: any Encoder) throws](mlphase/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `String`.
-- [init(from: any Decoder) throws](mlphase/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.
-### Providing a phase’s hash value
-- [func hash(into: inout Hasher)](mlphase/hash(into:).md)
-- [var hashValue: Int](mlphase/hashvalue.md)
-### Comparing phases
-- [static func != (Self, Self) -> Bool](mlphase/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](mlphase/equatable-implementations.md)
-- [RawRepresentable Implementations](mlphase/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -15,6 +15,8 @@ Use Game Center leaderboard set member localizations to specify the specific loc
   Get information about leaderboard member set localizations.
 - [Read leaderboard information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboard.md)
   Get information about a leaderboard for a specific leaderboard set member localization.
+- [Read tge leaderboard ID for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboard.md)
+  Get the leaderboard ID for a specific leaderboard set member localization.
 - [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
 - [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboardset.md)
@@ -46,6 +48,8 @@ Use Game Center leaderboard set member localizations to specify the specific loc
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
   Manage image assets for your Game Center leaderboard sets.
+- [Game Center leaderboard set versions](game-center-leaderboard-set-versions.md)
+  Manage versions for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 

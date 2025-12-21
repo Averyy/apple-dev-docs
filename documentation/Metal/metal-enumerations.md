@@ -1,10 +1,12 @@
-# Metal Enumerations
+# Metal enumerations
 
 **Framework**: Metal
 
 ## Topics
 
 ### Enumerations
+- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+  The error codes that Metal can raise when you create a tensor.
 - [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 - [enum MTLLogStateError](mtllogstateerror.md)
@@ -21,10 +23,10 @@
 
 ## See Also
 
-- [Metal Structures](metal-structures.md)
-- [Metal Constants](metal-constants.md)
-- [Metal Data Types](metal-data-types.md)
-- [Metal Variables](metal-variables.md)
+- [Metal structures](metal-structures.md)
+- [Metal constants](metal-constants.md)
+- [Metal data types](metal-data-types.md)
+- [Metal variables](metal-variables.md)
 
 
 ---

@@ -20,7 +20,7 @@ var hasActiveDrop: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the table view is tracking a drop session.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the table view is tracking a drop session.
 
 ## See Also
 

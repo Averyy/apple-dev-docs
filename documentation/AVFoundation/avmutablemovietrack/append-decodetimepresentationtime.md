@@ -39,6 +39,8 @@ It’s safe for multiple threads to call this method on different tracks at the 
 
 ## See Also
 
+- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> (decodeTime: CMTime, presentationTime: CMTime)](avmutablemovietrack/append(_:).md)
+  Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 - [func insertMediaTimeRange(CMTimeRange, into: CMTimeRange) -> Bool](avmutablemovietrack/insertmediatimerange(_:into:).md)
   Inserts a reference to a media time range into a track.
 

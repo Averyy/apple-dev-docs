@@ -3,6 +3,8 @@
 **Framework**: Core Audio  
 **Kind**: init
 
+Creates a new `ManagedAudioChannelLayout` from an array of `AudioChannelDescription`.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -17,6 +19,10 @@
 ```swift
 init(channelDescriptions: [AudioChannelDescription])
 ```
+
+## Parameters
+
+- `channelDescriptions`: An array of    that are set on this  .
 
 
 ---

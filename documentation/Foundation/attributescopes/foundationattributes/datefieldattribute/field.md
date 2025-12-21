@@ -30,6 +30,7 @@ enum Field
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.month](attributescopes/foundationattributes/datefieldattribute/field/month.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.quarter](attributescopes/foundationattributes/datefieldattribute/field/quarter.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.relatedGregorianYear](attributescopes/foundationattributes/datefieldattribute/field/relatedgregorianyear.md)
+  For non-Gregorian calendars, this corresponds to the extended Gregorian year in which the calendar’s year begins.
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.second](attributescopes/foundationattributes/datefieldattribute/field/second.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.secondFraction](attributescopes/foundationattributes/datefieldattribute/field/secondfraction.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.timeZone](attributescopes/foundationattributes/datefieldattribute/field/timezone.md)
@@ -37,6 +38,7 @@ enum Field
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.weekOfYear](attributescopes/foundationattributes/datefieldattribute/field/weekofyear.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.weekday](attributescopes/foundationattributes/datefieldattribute/field/weekday.md)
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.weekdayOrdinal](attributescopes/foundationattributes/datefieldattribute/field/weekdayordinal.md)
+  The ordinal position of the weekday unit within the month unit. For example, `2` in “2nd Wednesday in July”
 - [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.year](attributescopes/foundationattributes/datefieldattribute/field/year.md)
 
 ## Relationships

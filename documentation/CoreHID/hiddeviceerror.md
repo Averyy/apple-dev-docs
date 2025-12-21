@@ -16,9 +16,6 @@ enum HIDDeviceError
 
 ## Topics
 
-### Operators
-- [static func == (HIDDeviceError, HIDDeviceError) -> Bool](hiddeviceerror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [HIDDeviceError.aborted](hiddeviceerror/aborted.md)
   The request was aborted.
@@ -52,13 +49,6 @@ enum HIDDeviceError
   A catch-all for uncommon errors.
 - [HIDDeviceError.unsupported](hiddeviceerror/unsupported.md)
   The request with the provided arguments isn’t supported.
-### Instance Properties
-- [var errorDescription: String?](hiddeviceerror/errordescription.md)
-  A localized message describing what error occurred.
-### Default Implementations
-- [Equatable Implementations](hiddeviceerror/equatable-implementations.md)
-- [Error Implementations](hiddeviceerror/error-implementations.md)
-- [LocalizedError Implementations](hiddeviceerror/localizederror-implementations.md)
 
 ## Relationships
 

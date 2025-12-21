@@ -21,7 +21,7 @@ var minimumTimeOffsetFromLive: CMTime { get }
 
 #### Discussion
 
-This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid).
+This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
 
 
 ---

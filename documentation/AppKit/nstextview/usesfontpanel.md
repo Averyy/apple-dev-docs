@@ -17,7 +17,7 @@ var usesFontPanel: Bool { get set }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to make the text views sharing the receiver’s layout manager respond to messages from the Font panel and from the Font menu, and update the Font panel with the selection font whenever it changes, [`false`](https://developer.apple.com/documentation/swift/false) to disallow character attribute changes.
+[`true`](https://developer.apple.com/documentation/Swift/true) to make the text views sharing the receiver’s layout manager respond to messages from the Font panel and from the Font menu, and update the Font panel with the selection font whenever it changes, [`false`](https://developer.apple.com/documentation/Swift/false) to disallow character attribute changes.
 
 ## See Also
 

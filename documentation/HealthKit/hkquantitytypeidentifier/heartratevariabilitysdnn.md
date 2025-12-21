@@ -23,7 +23,7 @@ static let heartRateVariabilitySDNN: HKQuantityTypeIdentifier
 
 These samples use time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
 
-HealthKit calculates the Heart rate variability (HRV) by measuring the variation between individual heartbeats. While there are multiple ways of computing HRV, HealthKit uses SDNN heart rate variability, which uses the standard deviation of the inter-beat (RR) intervals between normal heartbeats (typically measured in milliseconds).
+HealthKit calculates the Heart rate variability (HRV) by measuring the variation between individual heartbeats. While there are multiple ways of computing HRV, HealthKit uses SDNN heart rate variability, which uses the standard deviation of the inter-beat (RR) intervals between normal heartbeats (typically measured in milliseconds). The system automatically records samples on Apple Watch.
 
 ## Topics
 

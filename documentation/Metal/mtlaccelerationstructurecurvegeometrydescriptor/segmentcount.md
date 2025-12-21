@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+The number of curve segments in each curve of the geometry.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

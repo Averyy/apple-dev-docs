@@ -29,8 +29,8 @@ case missingVideoTrack(URL)
   An error that indicates that the frame rate is not supported by the input camera.
 - [VideoReaderError.sourceCameraNotAvailable](videoreadererror/sourcecameranotavailable.md)
   An error that indicates that no cameras are available.
-- [var errorDescription: String?](videoreadererror/errordescription.md)
-  A localized message describing what error occurred.
+- [VideoReaderError.captureSessionStopped](videoreadererror/capturesessionstopped.md)
+  An error that indicates that the capture session stopped.
 
 
 ---

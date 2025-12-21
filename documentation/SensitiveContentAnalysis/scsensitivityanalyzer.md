@@ -20,8 +20,8 @@ class SCSensitivityAnalyzer
 
 ## Mentions
 
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
 - [Detecting nudity in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
 
 #### Overview
 

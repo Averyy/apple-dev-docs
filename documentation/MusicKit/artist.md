@@ -22,9 +22,6 @@ struct Artist
 
 ## Topics
 
-### Operators
-- [static func == (Artist, Artist) -> Bool](artist/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var albums: MusicItemCollection<Album>?](artist/albums.md)
   The artist’s associated albums.
@@ -46,9 +43,7 @@ struct Artist
   The names of this artist’s associated genres.
 - [var genres: MusicItemCollection<Genre>?](artist/genres.md)
   The artist’s associated genres.
-- [var hashValue: Int](artist/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](artist/id-swift.property.md)
+- [let id: MusicItemID](artist/id.md)
   The unique identifier for the artist.
 - [var latestRelease: Album?](artist/latestrelease.md)
   The artist’s most recent album.
@@ -74,20 +69,8 @@ struct Artist
   A collection of the artist’s top songs.
 - [var url: URL?](artist/url.md)
   The URL for the artist.
-### Instance Methods
-- [func hash(into: inout Hasher)](artist/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](artist/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](artist/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](artist/customstringconvertible-implementations.md)
-- [Decodable Implementations](artist/decodable-implementations.md)
-- [Encodable Implementations](artist/encodable-implementations.md)
-- [Equatable Implementations](artist/equatable-implementations.md)
 - [FilterableMusicItem Implementations](artist/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](artist/musicitem-implementations.md)
 - [MusicLibraryRequestable Implementations](artist/musiclibraryrequestable-implementations.md)
 
 ## Relationships

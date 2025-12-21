@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Insert a range of integers into the `IndexSet`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

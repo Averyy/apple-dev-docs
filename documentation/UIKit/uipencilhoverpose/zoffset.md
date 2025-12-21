@@ -9,6 +9,7 @@ A value that represents the normalized distance between the screen and Apple Pen
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ Returns an array of objects that meet the criteria of the specified fetch reques
 ## Declaration
 
 ```swift
+nonisolated
 func fetch(_ request: NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]
 ```
 

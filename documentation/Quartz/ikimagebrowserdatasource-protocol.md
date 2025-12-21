@@ -7,21 +7,21 @@ The `IKImageBrowserDataSource` informal protocol declares the methods that an in
 ## Topics
 
 ### Providing Information About Items (Required)
-- [func numberOfItems(inImageBrowser aBrowser: IKImageBrowserView!) -> Int](../ObjectiveC/NSObject-swift.class/numberOfItems(inImageBrowser:).md)
+- [func numberOfItems(inImageBrowser: IKImageBrowserView!) -> Int](../ObjectiveC/NSObject-swift.class/numberOfItems(inImageBrowser:).md)
   Returns the number of records managed by the data source object.
-- [func imageBrowser(_ aBrowser: IKImageBrowserView!, itemAt index: Int) -> Any!](../ObjectiveC/NSObject-swift.class/imageBrowser(_:itemAt:).md)
+- [func imageBrowser(IKImageBrowserView!, itemAt: Int) -> Any!](../ObjectiveC/NSObject-swift.class/imageBrowser(_:itemAt:).md)
   Returns an object for the item in an image browser view that corresponds to the specified index.
 ### Supporting Item Editing (Optional)
-- [func imageBrowser(_ aBrowser: IKImageBrowserView!, removeItemsAt indexes: IndexSet!)](../ObjectiveC/NSObject-swift.class/imageBrowser(_:removeItemsAt:).md)
+- [func imageBrowser(IKImageBrowserView!, removeItemsAt: IndexSet!)](../ObjectiveC/NSObject-swift.class/imageBrowser(_:removeItemsAt:).md)
   Signals that a remove operation should be applied to the specified items.
-- [func imageBrowser(_ aBrowser: IKImageBrowserView!, moveItemsAt indexes: IndexSet!, to destinationIndex: Int) -> Bool](../ObjectiveC/NSObject-swift.class/imageBrowser(_:moveItemsAt:to:).md)
+- [func imageBrowser(IKImageBrowserView!, moveItemsAt: IndexSet!, to: Int) -> Bool](../ObjectiveC/NSObject-swift.class/imageBrowser(_:moveItemsAt:to:).md)
   Signals that the specified items should be moved to the specified destination.
-- [func imageBrowser(_ aBrowser: IKImageBrowserView!, writeItemsAt itemIndexes: IndexSet!, to pasteboard: NSPasteboard!) -> Int](../ObjectiveC/NSObject-swift.class/imageBrowser(_:writeItemsAt:to:).md)
+- [func imageBrowser(IKImageBrowserView!, writeItemsAt: IndexSet!, to: NSPasteboard!) -> Int](../ObjectiveC/NSObject-swift.class/imageBrowser(_:writeItemsAt:to:).md)
   Signals that a drag should begin.
 ### Providing Information About Groups (Optional)
-- [func numberOfGroups(inImageBrowser aBrowser: IKImageBrowserView!) -> Int](../ObjectiveC/NSObject-swift.class/numberOfGroups(inImageBrowser:).md)
+- [func numberOfGroups(inImageBrowser: IKImageBrowserView!) -> Int](../ObjectiveC/NSObject-swift.class/numberOfGroups(inImageBrowser:).md)
   Returns the number of groups in an image browser view.
-- [func imageBrowser(_ aBrowser: IKImageBrowserView!, groupAt index: Int) -> [AnyHashable : Any]!](../ObjectiveC/NSObject-swift.class/imageBrowser(_:groupAt:).md)
+- [func imageBrowser(IKImageBrowserView!, groupAt: Int) -> [AnyHashable : Any]!](../ObjectiveC/NSObject-swift.class/imageBrowser(_:groupAt:).md)
   Returns the group at the specified index.
 
 ## See Also

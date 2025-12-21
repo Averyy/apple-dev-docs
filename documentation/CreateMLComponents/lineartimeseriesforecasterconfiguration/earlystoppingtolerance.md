@@ -28,6 +28,23 @@ Defaults to 0.01.
 
 > **Note**: Early stopping only happens when using the `fitted` method with validation data.
 
+## See Also
+
+- [var batchSize: Int](lineartimeseriesforecasterconfiguration/batchsize.md)
+  The number of examples in each training batch.
+- [var earlyStoppingIterationCount: Int](lineartimeseriesforecasterconfiguration/earlystoppingiterationcount.md)
+  The number of iterations to use when evaluating whether to stop early.
+- [var forecastWindowSize: Int](lineartimeseriesforecasterconfiguration/forecastwindowsize.md)
+  The number of predicted samples.
+- [var inputWindowSize: Int](lineartimeseriesforecasterconfiguration/inputwindowsize.md)
+  The number of input samples.
+- [var learningRate: Float](lineartimeseriesforecasterconfiguration/learningrate.md)
+  The starting learning rate.
+- [var maximumIterationCount: Int](lineartimeseriesforecasterconfiguration/maximumiterationcount.md)
+  The maximum number of allowed passes through the data.
+- [var randomSeed: Int?](lineartimeseriesforecasterconfiguration/randomseed.md)
+  A seed to generate reproducible results from random operations.
+
 
 ---
 

@@ -26,7 +26,7 @@ This method is responsible for two things: coercing the value into an appropriat
 
 The default implementation provided by `NSManagedObject` consults the object’s entity description to coerce the value and to check for basic errors, such as a null value when that isn’t allowed and the length of strings when a field width is specified for the attribute. It then searches for a method of the form `validate<Key>:error:` and invokes it if it exists.
 
-You can implement methods of the form `validate<Key>:error:` to perform validation that is not possible using the constraints available in the property description. If it finds an unacceptable value, your validation method should return [`false`](https://developer.apple.com/documentation/swift/false) and in `error` an `NSError` object that describes the problem. For more details, see Managed Object Validation. For inter-property validation (to check for combinations of values that are invalid), see [`validateForUpdate()`](nsmanagedobject/validateforupdate().md) and related methods.
+You can implement methods of the form `validate<Key>:error:` to perform validation that is not possible using the constraints available in the property description. If it finds an unacceptable value, your validation method should return [`false`](https://developer.apple.com/documentation/Swift/false) and in `error` an `NSError` object that describes the problem. For more details, see Managed Object Validation. For inter-property validation (to check for combinations of values that are invalid), see [`validateForUpdate()`](nsmanagedobject/validateforupdate().md) and related methods.
 
 ## Parameters
 

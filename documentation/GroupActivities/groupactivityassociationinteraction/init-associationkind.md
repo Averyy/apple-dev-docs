@@ -6,7 +6,7 @@
 Creates a group activity association interaction.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

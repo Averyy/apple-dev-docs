@@ -20,22 +20,10 @@ enum Temperature
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Temperature, IntentParameter<Value>.Temperature) -> Bool](intentparameter/temperature/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Temperature.celsius](intentparameter/temperature/celsius.md)
 - [IntentParameter.Temperature.fahrenheit](intentparameter/temperature/fahrenheit.md)
 - [IntentParameter.Temperature.kelvin](intentparameter/temperature/kelvin.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/temperature/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/temperature/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/temperature/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/temperature/equatable-implementations.md)
 
 ## Relationships
 

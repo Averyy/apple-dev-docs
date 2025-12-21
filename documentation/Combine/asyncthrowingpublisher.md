@@ -28,22 +28,17 @@ Use the [`values`](publisher/values-v7nz.md) property of the [`Publisher`](publi
 
 ## Topics
 
-### Creating an Asynchronous Publisher
+### Creating an asynchronous publisher
 - [init(_:)](asyncthrowingpublisher/init(_:).md)
   Creates a publisher that exposes elements received from an upstream publisher as a throwing asynchronous sequence.
-### Creating an Iterator
+### Creating an iterator
 - [func makeAsyncIterator() -> AsyncThrowingPublisher<P>.Iterator](asyncthrowingpublisher/makeasynciterator.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 - [AsyncThrowingPublisher.Iterator](asyncthrowingpublisher/iterator.md)
   The iterator that produces elements of the asynchronous publisher sequence.
-### Supporting Types
+### Supporting types
 - [AsyncThrowingPublisher.Element](asyncthrowingpublisher/element.md)
   The type of element produced by this asynchronous sequence.
-### Type Aliases
-- [AsyncThrowingPublisher.AsyncIterator](asyncthrowingpublisher/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-### Default Implementations
-- [AsyncSequence Implementations](asyncthrowingpublisher/asyncsequence-implementations.md)
 
 ## Relationships
 

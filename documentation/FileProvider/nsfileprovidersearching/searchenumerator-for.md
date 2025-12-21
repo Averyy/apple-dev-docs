@@ -7,7 +7,7 @@
 Provides an object that enumerates over search results, in response to a call from the system.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

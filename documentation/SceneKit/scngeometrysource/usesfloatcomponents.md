@@ -22,9 +22,9 @@ var usesFloatComponents: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), SceneKit interprets the geometry source’s data as an array of vectors whose components are floating-point values. The type of floating-point value is determined by the [`SCNGeometrySource`](scngeometrysource.md) property: 4 bytes for `float` values or 8 bytes for `double` values.
+If [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit interprets the geometry source’s data as an array of vectors whose components are floating-point values. The type of floating-point value is determined by the [`SCNGeometrySource`](scngeometrysource.md) property: 4 bytes for `float` values or 8 bytes for `double` values.
 
-If [`false`](https://developer.apple.com/documentation/swift/false), SceneKit interprets the geometry source’s data as an array of vectors whose components are integer values. The type of integer value is determined by the [`SCNGeometrySource`](scngeometrysource.md) property; for example, 2 bytes for `unsigned short` values or 4 bytes for `unsigned int` values.
+If [`false`](https://developer.apple.com/documentation/Swift/false), SceneKit interprets the geometry source’s data as an array of vectors whose components are integer values. The type of integer value is determined by the [`SCNGeometrySource`](scngeometrysource.md) property; for example, 2 bytes for `unsigned short` values or 4 bytes for `unsigned int` values.
 
 ## See Also
 

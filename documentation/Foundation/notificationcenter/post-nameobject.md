@@ -31,7 +31,7 @@ This is a convenience method for calling [`post(name:object:userInfo:)`](notific
 
 ## See Also
 
-- [func post(Notification)](notificationcenter/post(_:).md)
+- [func post(Notification)](notificationcenter/post(_:)-3x2st.md)
   Posts a given notification to the notification center.
 - [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notificationcenter/post(name:object:userinfo:).md)
   Creates a notification with a given name, sender, and information and posts it to the notification center.

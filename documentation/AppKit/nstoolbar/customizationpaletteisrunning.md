@@ -20,7 +20,7 @@ var customizationPaletteIsRunning: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the toolbar’s customization palette is running; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the toolbar’s customization palette is running; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

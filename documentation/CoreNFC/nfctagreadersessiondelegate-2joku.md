@@ -35,10 +35,8 @@ protocol NFCTagReaderSessionDelegate : NSObjectProtocol
 
 ## See Also
 
-- [convenience init?(pollingOption: NFCTagReaderSession.PollingOption, delegate: any NFCTagReaderSessionDelegate, queue: DispatchQueue?)](nfctagreadersession/init(pollingoption:delegate:queue:).md)
-  Creates an NFC tag reader session.
-- [NFCTagReaderSession.PollingOption](nfctagreadersession/pollingoption.md)
-  Options that determine the type of tags that a reader session should detect during a polling sequence.
+- [convenience init(delegate: any NFCTagReaderSessionDelegate, queue: DispatchQueue?)](nfcpaymenttagreadersession/init(delegate:queue:).md)
+  Creates a new session instance for processing NFC payment tags.
 
 
 ---

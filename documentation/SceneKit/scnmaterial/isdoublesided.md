@@ -22,9 +22,9 @@ var isDoubleSided: Bool { get set }
 
 #### Discussion
 
-Polygons in a SceneKit mesh are, by default, single-sided. Each one contain a , which identifies the side of the polygon that’s the visible side. SceneKit uses that normal vector to determine which polygons are  that point toward the camera, and which are  that point away from it. When `doubleSided` is [`false`](https://developer.apple.com/documentation/swift/false) (the default value), SceneKit only renders front faces to improve performance.
+Polygons in a SceneKit mesh are, by default, single-sided. Each one contain a , which identifies the side of the polygon that’s the visible side. SceneKit uses that normal vector to determine which polygons are  that point toward the camera, and which are  that point away from it. When `doubleSided` is [`false`](https://developer.apple.com/documentation/Swift/false) (the default value), SceneKit only renders front faces to improve performance.
 
-If you change this property’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit renders both the front and back surfaces of every polygon.
+If you change this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit renders both the front and back surfaces of every polygon.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md). Animating this property fades between the results of rendering with each state.
 

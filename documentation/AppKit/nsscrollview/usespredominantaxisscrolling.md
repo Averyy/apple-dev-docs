@@ -23,7 +23,7 @@ Traditionally this is not an issue with scroll wheels since they can only scroll
 
 This property helps a scroll view determine the user’s intention by specifying if there is a predominant scrolling axis for content.
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the scroll view uses a predominant scrolling access. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the scroll view uses a predominant scrolling access. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 
 ---

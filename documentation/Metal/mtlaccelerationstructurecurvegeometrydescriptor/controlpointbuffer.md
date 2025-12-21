@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: property
 
+A buffer that contains curve control points.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 var controlPointBuffer: (any MTLBuffer)? { get set }
 ```
+
+#### Discussion
+
+You provide control points in the format that matches the [`controlPointFormat`](mtlaccelerationstructurecurvegeometrydescriptor/controlpointformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
 
 
 ---

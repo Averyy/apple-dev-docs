@@ -21,7 +21,7 @@ var isKeyWindow: Bool { get }
 
 #### Discussion
 
-In iOS 15 and later, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is the key window of its scene. In iOS 14 and earlier, the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is the key window in the app.
+In iOS 15 and later, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window is the key window of its scene. In iOS 14 and earlier, the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window is the key window in the app.
 
 The key window receives keyboard and other non-touch-related events. Only one window at a time may be the key window.
 

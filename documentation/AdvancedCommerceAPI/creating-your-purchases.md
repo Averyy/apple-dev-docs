@@ -6,7 +6,7 @@ Define and manage one-time charges, subscriptions, and bundled subscriptions wit
 
 #### Overview
 
-For each purchase you plan to offer, create a product identifier, or SKU, in your system along with corresponding text such as display name and price. The App Store displays this information on the payment sheet when a customer initiates a purchase, which helps them understand the transaction before confirming their purchase. You also use this information in additional communication to the customer, including email receipts and invoices from Apple, as well as in their Apple Account Settings under Subscriptions.
+For each purchase you plan to offer, create a product identifier, or SKU, in your system along with corresponding text such as display name and price. The App Store displays this information on the payment sheet when a customer initiates a purchase, which helps them understand the transaction before they confirm their purchase. The App Store also uses this information in additional communication to the customer, including in email receipts and in the Apple Account Settings under Subscriptions.
 
 To ensure your purchases display properly and provide a quality experience, follow these guidelines:
 
@@ -31,9 +31,11 @@ The following details appear in the App Store payment sheet as well as your emai
 
 ![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for an item with a one-time charge, with callouts showing where the item display name and item price appear on the sheet. The second screen shows the email confirmation for the purchase, with callouts showing where the app icon, item display name, and item price appear in the email.](https://docs-assets.developer.apple.com/published/cc6dea6b82a8f0a00538c81e8a7d41fa/one-time-purchase-text-field-mapping%402x.png)
 
+> **Note**: You can set up an image that displays in the payment sheet instead of the app icon. For more information, see the “Set up an image for the payment sheet to display” section in [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
+
 #### Create Subscriptions
 
-Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase for each subscription SKU you offer. After a successful purchase, Apple sends customers an email receipt. Apple also sends subscription invoice emails to customers before the subscription renewal date. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
+Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase for each subscription SKU you offer. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 
 ![A screenshot of a streaming app in iOS with an in-app purchase payment sheet open to subscribe to a creator. Callouts indicate the locations on the sheet for the name of the subscription the customer is purchasing, and the description of the subscription tier.](https://docs-assets.developer.apple.com/published/a508dad3b84834d488d815436fa8f07a/subscription-creator-app%402x.png)
 
@@ -50,7 +52,7 @@ The following details appear in the App Store payment sheet, email communication
 
 #### Create Bundled Subscriptions
 
-For subscription-specific services that are bundled with additional add-on content or services (all of which auto-renews as a single subscription), create a SKU for each service or content offering. Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a successful purchase, Apple sends customers an email receipt. Apple also sends subscription invoice emails to customers before their subscription renewal date. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
+For subscription-specific services that are bundled with additional add-on content or services (all of which auto-renews as a single subscription), create a SKU for each service or content offering. Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 
 ![An image with two iOS screenshots side by side. The first shows a media app with an in-app purchase payment sheet open to subscribe to a video streaming service bundle, and the second shows the subscription confirmation receipt in email. Callouts on the first image indicate the locations on the sheet for the items included in the subscription bundle, and the subscription plan name.](https://docs-assets.developer.apple.com/published/c91bf2203a80159384802459c93d6f66/subscription-bundle-destination-video%402x.png)
 
@@ -67,12 +69,10 @@ The following details appear in the App Store payment sheet, email communication
 
 ## See Also
 
-- [Setting up your project for Advanced Commerce API](setting-up-your-project-for-advanced-commerce.md)
-  Configure your app in App Store Connect, set up your server, and prepare your SKUs.
-- [Setting up a link to manage subscriptions](setupmanagesubscriptions.md)
-  Create a deep link to a subscription-management page for your app.
-- [Advanced Commerce API changelog](changelog.md)
-  Learn about new features and updates in the Advanced Commerce API.
+- [Setting up generic product identifiers](setting-up-generic-product-identifiers.md)
+  Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
+- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
+  Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 
 
 ---

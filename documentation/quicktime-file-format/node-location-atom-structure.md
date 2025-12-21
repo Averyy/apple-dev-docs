@@ -5,9 +5,6 @@
 
 An atom that describes the type of a node and its location.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The node location atom is the only child atom defined for the node ID atom. Its atom type is `kQTVRNodeLocationAtomType` (`'nloc'`). A node location atom describes the type of a node and its location.

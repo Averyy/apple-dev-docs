@@ -24,7 +24,7 @@ Waits a specified amount of time for a property value to equal a specified value
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if the timeout expires before the observed property equals the expected value.
+This method returns [`false`](https://developer.apple.com/documentation/Swift/false) if the timeout expires before the observed property equals the expected value.
 
 ## Parameters
 

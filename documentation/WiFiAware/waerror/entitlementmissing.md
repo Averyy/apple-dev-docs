@@ -3,17 +3,22 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-An error that occurs if your App is missing the entitlement needed for the requested operation.
+An error that occurs if your app is missing the entitlement needed for the requested operation.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
 ```swift
 case entitlementMissing(WAError.EntitlementMissingDetails)
 ```
+
+## See Also
+
+- [WAError.EntitlementMissingDetails](waerror/entitlementmissingdetails.md)
+  The optional details describing the missing entitlement.
 
 
 ---

@@ -6,7 +6,7 @@
 The texture type value that specifies how the underlying texture organizes its views.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

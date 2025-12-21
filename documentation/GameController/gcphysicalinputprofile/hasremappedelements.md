@@ -21,7 +21,7 @@ var hasRemappedElements: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user remaps one or more elements; otherwise, this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the user remaps one or more elements; otherwise, this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

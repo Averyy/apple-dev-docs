@@ -22,9 +22,6 @@ enum Precipitation
 
 ## Topics
 
-### Creating the object
-- [init?(rawValue: String)](precipitation/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
 ### Specifying precipitation types
 - [Precipitation.hail](precipitation/hail.md)
   A form of precipitation consisting of solid ice.
@@ -43,20 +40,6 @@ enum Precipitation
   A localized accessibility description describing the form of precipitation.
 - [var description: String](precipitation/description.md)
   A localized string describing the form of precipitation.
-### Instance Properties
-- [var rawValue: String](precipitation/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Precipitation.AllCases](precipitation/allcases-swift.typealias.md)
-  A type that can represent a collection of all values of this type.
-- [Precipitation.RawValue](precipitation/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Type Properties
-- [static var allCases: [Precipitation]](precipitation/allcases-swift.type.property.md)
-  A collection of all values of this type.
-### Default Implementations
-- [Equatable Implementations](precipitation/equatable-implementations.md)
-- [RawRepresentable Implementations](precipitation/rawrepresentable-implementations.md)
 
 ## Relationships
 

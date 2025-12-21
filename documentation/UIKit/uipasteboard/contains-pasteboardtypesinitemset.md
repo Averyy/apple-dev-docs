@@ -19,7 +19,7 @@ func contains(pasteboardTypes: [String], inItemSet itemSet: IndexSet?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pasteboard items identified by `itemSet` have data corresponding to the representation types specified by `pasteboardTypes`; otherwise, returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the pasteboard items identified by `itemSet` have data corresponding to the representation types specified by `pasteboardTypes`; otherwise, returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

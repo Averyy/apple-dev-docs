@@ -3,10 +3,10 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-No special blending is applied
+No special blending is applied.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -27,10 +27,10 @@ class func prepareCustomLanguageModel(for asset: URL, configuration: SFSpeechLan
 
 ## See Also
 
-- [class func prepareCustomLanguageModel(for: URL, clientIdentifier: String, configuration: SFSpeechLanguageModel.Configuration, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:completion:).md)
-- [class func prepareCustomLanguageModel(for: URL, clientIdentifier: String, configuration: SFSpeechLanguageModel.Configuration, ignoresCache: Bool, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:ignorescache:completion:).md)
 - [class func prepareCustomLanguageModel(for: URL, configuration: SFSpeechLanguageModel.Configuration, completion: ((any Error)?) -> Void)](sfspeechlanguagemodel/preparecustomlanguagemodel(for:configuration:completion:).md)
   Creates a language model from custom training data.
+- [SFSpeechLanguageModel.Configuration](sfspeechlanguagemodel/configuration.md)
+  An object describing the location of a custom language model and specialized vocabulary.
 
 
 ---

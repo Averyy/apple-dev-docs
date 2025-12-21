@@ -3,6 +3,8 @@
 **Framework**: Network Extension  
 **Kind**: property
 
+The identifier for the PPK.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,6 +18,13 @@
 ```swift
 var identifier: String { get }
 ```
+
+## See Also
+
+- [var keychainReference: Data](nevpnikev2ppkconfiguration/keychainreference.md)
+  A persistent reference to the key in the keychain.
+- [var isMandatory: Bool](nevpnikev2ppkconfiguration/ismandatory.md)
+  A Boolean value that indicates whether it’s mandatory for the VPN server to use this PPK.
 
 
 ---

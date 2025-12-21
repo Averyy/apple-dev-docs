@@ -21,8 +21,6 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mlrandomforestregressor/model.md)
-  The Core ML model.
 - [var debugDescription: String](mlrandomforestregressor/debugdescription.md)
   A text representation of the random forest regressor that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mlrandomforestregressor/playgrounddescription.md)

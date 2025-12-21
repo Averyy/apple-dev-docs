@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns the number of integers in `self`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -23,6 +25,7 @@ var count: Int { get }
 - [var first: IndexSet.Element?](indexset/first.md)
   The first integer in `self`, or nil if `self` is empty.
 - [var isEmpty: Bool](indexset/isempty.md)
+  Returns `true` if self contains no values.
 - [var last: IndexSet.Element?](indexset/last.md)
   The last integer in `self`, or nil if `self` is empty.
 

@@ -30,11 +30,6 @@ struct PreprocessingSupervisedEstimator<Preprocessor, Estimator> where Preproces
   The estimator.
 - [var preprocessor: Preprocessor](preprocessingsupervisedestimator/preprocessor.md)
   The preprocessing transformer.
-### Encoding and decoding
-- [func encode(PreprocessingSupervisedEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingsupervisedestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingSupervisedEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 ### Preprocessing and fitting
 - [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> AnySequence<AnnotatedFeature<Preprocessor.Output, PreprocessingSupervisedEstimator<Preprocessor, Estimator>.Annotation>>](preprocessingsupervisedestimator/preprocessed(from:eventhandler:).md)
   Preprocesses a sequence of examples.
@@ -54,10 +49,8 @@ struct PreprocessingSupervisedEstimator<Preprocessor, Estimator> where Preproces
   The intermediate type.
 - [PreprocessingSupervisedEstimator.Output](preprocessingsupervisedestimator/output.md)
   The output type.
-- [PreprocessingSupervisedEstimator.Transformer](preprocessingsupervisedestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedEstimator Implementations](preprocessingsupervisedestimator/supervisedestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

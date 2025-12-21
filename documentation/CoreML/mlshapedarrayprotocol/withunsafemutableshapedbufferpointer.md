@@ -31,10 +31,8 @@ The method returns the value your closure returns, if applicable.
 
 ## See Also
 
-- [func fill(with: Self.Scalar)](mlshapedarrayprotocol/fill(with:)-9qpes.md)
-  Assigns the shaped array’s elements to a value.
-- [func fill<C>(with: C)](mlshapedarrayprotocol/fill(with:)-6a5k1.md)
-  Assigns the shaped array’s elements to the elements in a collection, repeatedly, if necessary.
+- [func fill(with:)](mlshapedarrayprotocol/fill(with:).md)
+  Fills the array with a value.
 
 
 ---

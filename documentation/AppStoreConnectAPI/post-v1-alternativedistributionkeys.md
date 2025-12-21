@@ -10,8 +10,8 @@ Add an alternative distribution key for your alternative marketplace app or web 
 
 ## Mentions
 
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 #### Discussion

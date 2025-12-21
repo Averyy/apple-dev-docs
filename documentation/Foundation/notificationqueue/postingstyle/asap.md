@@ -26,10 +26,6 @@ case asap
   The notification is posted when the run loop is idle.
 - [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
   The notification is posted immediately after coalescing.
-- [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
-  The notification is posted when the run loop is idle.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
-  The notification is posted immediately after coalescing.
 
 
 ---

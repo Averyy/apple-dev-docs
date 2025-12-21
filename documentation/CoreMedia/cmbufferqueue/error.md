@@ -41,6 +41,7 @@ struct Error
 ## See Also
 
 - [CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.struct.md)
+  A sequence of `CMBuffer`s.
 - [CMBufferQueue.Handlers](cmbufferqueue/handlers.md)
 
 

@@ -22,15 +22,15 @@ struct Debounce<Upstream, Context> where Upstream : Publisher, Context : Schedul
 
 ## Topics
 
-### Creating a Debounce Publisher
+### Creating a debounce publisher
 - [init(upstream: Upstream, dueTime: Context.SchedulerTimeType.Stride, scheduler: Context, options: Context.SchedulerOptions?)](publishers/debounce/init(upstream:duetime:scheduler:options:).md)
   Creates a publisher that publishes elements only after a specified time interval elapses between events.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.Debounce.Output](publishers/debounce/output.md)
   The kind of values published by this publisher.
 - [Publishers.Debounce.Failure](publishers/debounce/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/debounce/upstream.md)
   The publisher from which this publisher receives elements.
 - [let dueTime: Context.SchedulerTimeType.Stride](publishers/debounce/duetime.md)
@@ -39,11 +39,6 @@ struct Debounce<Upstream, Context> where Upstream : Publisher, Context : Schedul
   The scheduler on which this publisher delivers elements.
 - [let options: Context.SchedulerOptions?](publishers/debounce/options.md)
   Scheduler options that customize this publisher’s delivery of elements.
-### Applying Operators
-- [Publisher Operators](publishers-debounce-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/debounce/publisher-implementations.md)
 
 ## Relationships
 

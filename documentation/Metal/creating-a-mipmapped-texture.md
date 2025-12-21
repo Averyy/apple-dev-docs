@@ -1,4 +1,4 @@
-# Creating a Mipmapped Texture
+# Creating a mipmapped texture
 
 **Framework**: Metal
 
@@ -18,24 +18,24 @@ If you use MetalKit to create a texture, and the source data includes multiple m
 
 You can override this behavior by providing an options dictionary with one of the following keys:
 
-- The [`allocateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/allocateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/swift/true) allocates a full set of mipmap levels for the texture. After loading is complete, Metal fills mipmap `0` with the source data, and leaves the other mipmap contents uninitialized; you fill the other mipmaps with data. Similarly, if you provide this key with a value of [`false`](https://developer.apple.com/documentation/swift/false), Metal ignores any extra mipmap data and only loads the top mipmap.
-- The [`generateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/generateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/swift/true) allocates a full set of mipmap levels for the texture. This key has the device object generate images for the lower-level mipmaps by filtering the provided source data.
+- The [`allocateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/allocateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/Swift/true) allocates a full set of mipmap levels for the texture. After loading is complete, Metal fills mipmap `0` with the source data, and leaves the other mipmap contents uninitialized; you fill the other mipmaps with data. Similarly, if you provide this key with a value of [`false`](https://developer.apple.com/documentation/Swift/false), Metal ignores any extra mipmap data and only loads the top mipmap.
+- The [`generateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/generateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/Swift/true) allocates a full set of mipmap levels for the texture. This key has the device object generate images for the lower-level mipmaps by filtering the provided source data.
 
 ## See Also
 
-- [Improving Texture Sampling Quality and Performance with Mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Generating Mipmap Data](generating-mipmap-data.md)
+- [Generating mipmap data](generating-mipmap-data.md)
   Create your mipmaps either when you author content or at runtime.
-- [Adding Mipmap Filtering to Samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Restricting Access to Specific Mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Predicting Which Mips the GPU Samples with Level-of-Detail Queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
-- [Dynamically Adjusting Texture Level of Detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

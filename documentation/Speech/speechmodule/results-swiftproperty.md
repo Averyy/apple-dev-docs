@@ -7,11 +7,11 @@
 An asynchronous sequence containing this module’s analysis results. Results are added to the sequence as they are created.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -27,8 +27,8 @@ If there is an error in the overall analysis, all modules will throw the error f
 
 ## See Also
 
-- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechmodule/availablecompatibleaudioformats.md)
-  The audio formats that this module is able to analyze, given its configuration.
+- [associatedtype Result : SpeechModuleResult, Sendable](speechmodule/result.md)
+- [associatedtype Results : Sendable, AsyncSequence](speechmodule/results-swift.associatedtype.md)
 
 
 ---

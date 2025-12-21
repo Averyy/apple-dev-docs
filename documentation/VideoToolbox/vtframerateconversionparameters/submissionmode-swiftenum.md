@@ -6,9 +6,9 @@
 A value describing the processing request in a parameters submission object.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 15.4+
 
 ## Declaration
@@ -32,6 +32,7 @@ Set to VTFrameRateConversionParametersSubmissionModeSequential to indicate that 
 - [init?(rawValue: Int)](vtframerateconversionparameters/submissionmode-swift.enum/init(rawvalue:).md)
 ### Enumeration Cases
 - [VTFrameRateConversionParameters.SubmissionMode.sequentialReferencesUnchanged](vtframerateconversionparameters/submissionmode-swift.enum/sequentialreferencesunchanged.md)
+  You are submitting frames sequentially.
 
 ## Relationships
 

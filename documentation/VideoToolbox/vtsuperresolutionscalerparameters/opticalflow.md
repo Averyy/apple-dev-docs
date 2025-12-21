@@ -3,17 +3,23 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
+Optional object that contains forward and backward optical flow with the previous frame.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
 var opticalFlow: VTFrameProcessorOpticalFlow? { get }
 ```
+
+#### Discussion
+
+You only need this if optical flow is pre-computed. For the first frame this is `nil`.
 
 
 ---

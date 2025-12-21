@@ -26,7 +26,7 @@ let NSMigratePersistentStoresAutomaticallyOption: String
 
 #### Discussion
 
-The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/Foundation/NSNumber/boolValue) of the number is [`true`](https://developer.apple.com/documentation/swift/true) and if the version hash information for the added store is determined to be incompatible with the model for the coordinator, Core Data will attempt to locate the source and mapping models in the application bundles, and perform a migration.
+The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/Foundation/NSNumber/boolValue) of the number is [`true`](https://developer.apple.com/documentation/Swift/true) and if the version hash information for the added store is determined to be incompatible with the model for the coordinator, Core Data will attempt to locate the source and mapping models in the application bundles, and perform a migration.
 
 ## See Also
 

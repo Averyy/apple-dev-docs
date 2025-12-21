@@ -32,8 +32,6 @@ final actor MainActor
 - [MainActor.ActorType](mainactor/actortype.md)
   The type of the shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
 ### Type Properties
-- [static var executor: any MainExecutor](mainactor/executor.md)
-  The main executor, which is started implicitly by the `async main` entry point and owns the “main” thread.
 - [static let shared: MainActor](mainactor/shared.md)
   The shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
 - [static var sharedUnownedExecutor: UnownedSerialExecutor](mainactor/sharedunownedexecutor.md)
@@ -66,7 +64,7 @@ final actor MainActor
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type `T` whose metatype `T.Type` is `Sendable`.
+  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races. When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`.  All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

@@ -30,6 +30,19 @@ let expanded = original.expandingShape(at: 0)
 expanded.shape // [1, 2, 3]
 ```
 
+## See Also
+
+- [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArray<Scalar>](mlshapedarray/changinglayout(to:).md)
+  Returns a copy with the specified buffer layout.
+- [func reshaped(to: [Int]) -> MLShapedArray<Scalar>](mlshapedarray/reshaped(to:).md)
+  Returns a new reshaped shaped array.
+- [func squeezingShape() -> MLShapedArray<Scalar>](mlshapedarray/squeezingshape.md)
+  Returns a new squeezed shaped array.
+- [func transposed() -> MLShapedArray<Scalar>](mlshapedarray/transposed.md)
+  Returns a new transposed shaped array.
+- [func transposed(permutation: [Int]) -> MLShapedArray<Scalar>](mlshapedarray/transposed(permutation:).md)
+  Returns a transposed shaped array using a custom permutation.
+
 
 ---
 

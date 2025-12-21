@@ -21,9 +21,9 @@ var allowsGroupOpacity: Bool { get set }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true) and the layer’s opacity property value is less than `1.0`, the layer is allowed to composite itself as a group separate from its parent. This gives correct results when the layer contains multiple opaque components, but may reduce performance.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true) and the layer’s opacity property value is less than `1.0`, the layer is allowed to composite itself as a group separate from its parent. This gives correct results when the layer contains multiple opaque components, but may reduce performance.
 
-The default value is read from the boolean `UIViewGroupOpacity` property in the main bundle’s `Info.plist` file. If no value is found, the default value is [`true`](https://developer.apple.com/documentation/swift/true) for apps linked against the iOS 7 SDK or later and [`false`](https://developer.apple.com/documentation/swift/false) for apps linked against an earlier SDK.
+The default value is read from the boolean `UIViewGroupOpacity` property in the main bundle’s `Info.plist` file. If no value is found, the default value is [`true`](https://developer.apple.com/documentation/Swift/true) for apps linked against the iOS 7 SDK or later and [`false`](https://developer.apple.com/documentation/Swift/false) for apps linked against an earlier SDK.
 
 ## See Also
 

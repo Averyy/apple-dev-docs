@@ -22,7 +22,7 @@ func wait(until limit: Date) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the condition was signaled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the time limit was reached.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the condition was signaled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the time limit was reached.
 
 #### Discussion
 

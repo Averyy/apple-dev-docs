@@ -21,7 +21,9 @@ class UISceneSizeRestrictions
 
 #### Overview
 
-Don’t create a [`UISceneSizeRestrictions`](uiscenesizerestrictions.md) object yourself. Instead, fetch an existing one from the [`sizeRestrictions`](uiwindowscene/sizerestrictions.md) property of your window scene, and modify its properties to set the minimum and maximum window sizes. The system provides this object only when it supports variable-sized windows.
+Don’t create a [`UISceneSizeRestrictions`](uiscenesizerestrictions.md) object yourself. Instead, fetch an existing one from the [`sizeRestrictions`](uiwindowscene/sizerestrictions.md) property of your window scene, and modify its properties to set the minimum and maximum window sizes:
+
+The system provides this object only when it supports variable-sized windows.
 
 ## Topics
 

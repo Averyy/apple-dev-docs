@@ -30,6 +30,8 @@ object AppStoreVersionLocalizationCreateRequest
   A response that contains a list of App Store Version Localization resources.
 - [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
 
 
 ---

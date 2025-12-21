@@ -3,20 +3,29 @@
 **Framework**: Network  
 **Kind**: init
 
+Create a Coder protocol.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-init<BelowProtocol>(sending: Sending.Type, receiving: Coder<Sending, _Receiving, CoderType>.Receiving.Type, using: CoderType, @ProtocolStackBuilder<BelowProtocol> _ builder: () -> BelowProtocol) where BelowProtocol : DatagramProtocol
+init<BelowProtocol>(sending: Sending.Type, receiving: Receiving.Type, using: CoderType, @ProtocolStackBuilder<BelowProtocol> _ builder: () -> BelowProtocol) where BelowProtocol : DatagramProtocol
 ```
+
+## Parameters
+
+- `sending`: The Codable type that will be sent.
+- `receiving`: The Codable type that will be received.
+- `using`: The NetworkCoder that will be used to encode and decode.
+- `builder`: The protocol stack below Coder.
 
 
 ---

@@ -6,7 +6,7 @@
 A behavior that replaces any currently opened immersive environment with the new scene.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

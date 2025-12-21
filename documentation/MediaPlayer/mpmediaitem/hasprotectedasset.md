@@ -20,7 +20,7 @@ var hasProtectedAsset: Bool { get }
 
 #### Discussion
 
-When the value is [`true`](https://developer.apple.com/documentation/swift/true), the media item has DRM protection.
+When the value is [`true`](https://developer.apple.com/documentation/Swift/true), the media item has DRM protection.
 
 ## See Also
 

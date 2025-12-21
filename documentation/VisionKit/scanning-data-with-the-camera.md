@@ -74,7 +74,7 @@ var scannerAvailable: Bool {
 
 If the scanner becomes unavailable for any reason while your app is running, the data scanner calls the [`dataScanner(_:becameUnavailableWithError:)`](datascannerviewcontrollerdelegate/datascanner(_:becameunavailablewitherror:).md) delegate method. Implement this delegate method to disable or remove the data-scanning controls in your interface. For example, the scanner calls this method when users tap Don’t Allow the first time the system prompt appears, as described in [`Provide a reason for using the camera`](scanning-data-with-the-camera#Provide-a-reason-for-using-the-camera.md).
 
-To reset the user authorization when testing your code, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+To reset the user authorization when testing your code, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources#3137869).
 
 ![A screenshot of an iPhone showing the system dialog requesting access to the camera with the reason given by the app, and the Don’t Allow and OK buttons.](https://docs-assets.developer.apple.com/published/7398cd9d1c637939db7eacdd3d2e7e9b/scanning_data_with_the_camera-3%402x.png)
 

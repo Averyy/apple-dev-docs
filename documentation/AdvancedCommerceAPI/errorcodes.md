@@ -7,12 +7,15 @@ Error messages and codes for the Advanced Commerce API.
 ## Topics
 
 ### Error codes
+- [object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError](acapriceincreaseisnotcurrentlysupportedinindiaerror.md)
 - [object AlreadyRefundedError](alreadyrefundederror.md)
 - [object AtLeastOneItemError](atleastoneitemerror.md)
 - [object AtLeastOneOfDisplayNameOrDescriptionError](atleastoneofdisplaynameordescriptionerror.md)
 - [object BillingCycleResetWithEffectiveLaterError](billingcycleresetwitheffectivelatererror.md)
 - [object ChangeItemNotFoundError](changeitemnotfounderror.md)
 - [object CurrentSKULengthExceededError](currentskulengthexceedederror.md)
+- [object DependentSKUsCannotBeChainedError](dependentskuscannotbechainederror.md)
+- [object DependentSKUsCannotBeSharedError](dependentskuscannotbesharederror.md)
 - [object DescriptionLengthExceededError](descriptionlengthexceedederror.md)
 - [object DisplayNameLengthExceededError](displaynamelengthexceedederror.md)
 - [object EmptyAddChangeItemsError](emptyaddchangeitemserror.md)
@@ -34,6 +37,7 @@ Error messages and codes for the Advanced Commerce API.
 - [object InvalidOperationError](invalidoperationerror.md)
 - [object InvalidPreviousSubscriptionError](invalidprevioussubscriptionerror.md)
 - [object InvalidPreviousTransactionIDError](invalidprevioustransactioniderror.md)
+- [object InvalidPriceForChangeItemInPriceIncreaseError](invalidpriceforchangeiteminpriceincreaseerror.md)
 - [object InvalidProductChangesError](invalidproductchangeserror.md)
 - [object InvalidProductError](invalidproducterror.md)
 - [object InvalidProratedPriceError](invalidproratedpriceerror.md)
@@ -46,10 +50,12 @@ Error messages and codes for the Advanced Commerce API.
 - [object InvalidSalableError](invalidsalableerror.md)
 - [object InvalidSignatureError](invalidsignatureerror.md)
 - [object InvalidSKUError](invalidskuerror.md)
+- [object InvalidSKUProvidedMustBeCurrentSKUSetToRenewError](invalidskuprovidedmustbecurrentskusettorenewerror.md)
 - [object InvalidStorefrontError](invalidstorefronterror.md)
 - [object InvalidTargetProductIDError](invalidtargetproductiderror.md)
 - [object InvalidTaxProductCodeError](invalidtaxproductcodeerror.md)
 - [object InvalidTransactionIdError](invalidtransactioniderror.md)
+- [object ItemCannotBeSpecifiedMultipleTimesError](itemcannotbespecifiedmultipletimeserror.md)
 - [object ItemLimitExceededError](itemlimitexceedederror.md)
 - [object MalformedPayloadError](malformedpayloaderror.md)
 - [object MisalignedBillingCycleError](misalignedbillingcycleerror.md)
@@ -101,6 +107,7 @@ Error messages and codes for the Advanced Commerce API.
 - [object PeriodChangeImmediateWithEffectiveAtNextBillingCycleError](periodchangeimmediatewitheffectiveatnextbillingcycleerror.md)
 - [object PeriodCountNotPositiveError](periodcountnotpositiveerror.md)
 - [object PeriodResetWithRetainBillingCycleError](periodresetwithretainbillingcycleerror.md)
+- [object PriceChangeCannotBeIssuedWhenAlreadyCommunicatedError](pricechangecannotbeissuedwhenalreadycommunicatederror.md)
 - [object PriceChangeNotSupportedThroughModifyItemsError](pricechangenotsupportedthroughmodifyitemserror.md)
 - [object ProductAlreadyExistsError](productalreadyexistserror.md)
 - [object ProductNotEligibleError](productnoteligibleerror.md)
@@ -126,6 +133,7 @@ Error messages and codes for the Advanced Commerce API.
 - [object TransactionIdNotFoundError](transactionidnotfounderror.md)
 - [object TransactionNotRefundableError](transactionnotrefundableerror.md)
 - [object TransactionCannotBeRefundedContactSupportError](transactioncannotberefundedcontactsupporterror.md)
+- [object UnauthorizedError](unauthorizederror.md)
 - [object UnexpectedVersionError](unexpectedversionerror.md)
 
 

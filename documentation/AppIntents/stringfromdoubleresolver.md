@@ -20,27 +20,6 @@ A resolver that converts a double into a string.
 struct StringFromDoubleResolver
 ```
 
-## Topics
-
-### Resolving the type
-- [func resolve(from: Double, context: IntentParameterContext<String>) async throws -> String?](stringfromdoubleresolver/resolve(from:context:).md)
-  Converts the specified value into the expected data type.
-### Operators
-- [static func == (StringFromDoubleResolver, StringFromDoubleResolver) -> Bool](stringfromdoubleresolver/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](stringfromdoubleresolver/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](stringfromdoubleresolver/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [StringFromDoubleResolver.Input](stringfromdoubleresolver/input.md)
-- [StringFromDoubleResolver.Output](stringfromdoubleresolver/output.md)
-### Default Implementations
-- [Equatable Implementations](stringfromdoubleresolver/equatable-implementations.md)
-- [Resolver Implementations](stringfromdoubleresolver/resolver-implementations.md)
-
 ## Relationships
 
 ### Conforms To

@@ -25,7 +25,7 @@ func withThrowingDiscardingTaskGroup<GroupResult>(returning returnType: GroupRes
 
 Unlike a [`ThrowingTaskGroup`](throwingtaskgroup.md), the child tasks as well as their results are discarded as soon as the tasks complete. This prevents the discarding task group from accumulating many results waiting to be consumed, and is best applied in situations where the result of a child task is some form of side-effect.
 
-A group waits for all of its child tasks to complete before it returns. Even cancelled tasks must run until completion before this function returns. Cancelled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
+A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
 It is not possible to explicitly await completion of child-tasks, however the group will automatically await  child task completions before returning from this function:
 
@@ -36,6 +36,8 @@ try await withThrowingDiscardingTaskGroup(of: Void.self) { group in
 }
 // guaranteed that slow-task has completed and the group is empty & destroyed
 ```
+
+Refer to [`TaskGroup`](taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
 ### Task Group Cancellation
 
@@ -92,10 +94,6 @@ try await withThrowingDiscardingTaskGroup { group in
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the current actor.
-- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
-  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure a Contacts account.
+The payload that configures a Contacts account.
 
 **Availability**:
 - iOS 4.0+
@@ -88,17 +88,17 @@ Specify `com.apple.carddav.account` as the payload type.
 ## See Also
 
 - [object Accounts](accounts.md)
-  The payload you use to configure guest accounts.
+  The payload that configures guest accounts.
 - [object CalDAV](caldav.md)
-  The payload you use to configure a Calendar account.
+  The payload that configures a Calendar account.
 - [object GoogleAccount](googleaccount.md)
-  The payload you use to configure a Google account.
+  The payload that configures a Google account.
 - [object LDAP](ldap.md)
-  The payload you use to configure an LDAP account.
+  The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
 - [object MobileAccounts](mobileaccounts.md)
-  The payload you use to configure mobile accounts on the device.
+  The payload that configures mobile accounts on the device.
 - [object SubscribedCalendars](subscribedcalendars.md)
-  The payload you use to configure subscribed calendars.
+  The payload that configures subscribed calendars.
 
 
 ---

@@ -30,11 +30,8 @@ An [`ExecutionStatus`](executionstatus.md) type wraps a code that indicates how 
 - [init(Int)](executionstatus/init(_:).md)
   Creates and returns a new execution status with the specified value.
 ### Getting the Value
-- [let rawValue: Int](executionstatus/rawvalue-swift.property.md)
+- [let rawValue: Int](executionstatus/rawvalue.md)
   The raw value that corresponds to the feature-specific status.
-### Type Aliases
-- [ExecutionStatus.RawValue](executionstatus/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 ## Relationships
 

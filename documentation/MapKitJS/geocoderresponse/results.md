@@ -11,7 +11,7 @@ An array of places that returns from a geocoder lookup or reverse lookup.
 ## Declaration
 
 ```swift
-attribute Place[] results;
+results: Place[];
 ```
 
 #### Discussion

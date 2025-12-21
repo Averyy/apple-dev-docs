@@ -29,14 +29,12 @@ This property modifies the intended behavior of the store actions in the [`MTLSt
 
 ## Topics
 
-### Constants
+### Using programmable sample positions
+- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
+  An option that stores data in a sample-position–agnostic representation.
+### Initializers
 - [init(rawValue: UInt)](mtlstoreactionoptions/init(rawvalue:).md)
   Creates a store action option from a raw integer value.
-- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
-  An option that stores data in a sample-position–agnostic representation.
-### Using Programmable Sample Positions
-- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
-  An option that stores data in a sample-position–agnostic representation.
 
 ## Relationships
 
@@ -53,7 +51,7 @@ This property modifies the intended behavior of the store actions in the [`MTLSt
 ## See Also
 
 - [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
-  An object that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
+  An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
 - [enum MTLLoadAction](mtlloadaction.md)
   Types of actions performed for an attachment at the start of a rendering pass.
 - [enum MTLStoreAction](mtlstoreaction.md)

@@ -22,11 +22,11 @@ var isFramebufferOnly: Bool { get }
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false), which indicates the use of the texture is not restricted.
+The default is [`false`](https://developer.apple.com/documentation/Swift/false), which indicates the use of the texture is not restricted.
 
-If [`true`](https://developer.apple.com/documentation/swift/true), neither [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) nor [`getBytes(_:bytesPerRow:bytesPerImage:from:mipmapLevel:slice:)`](mtltexture/getbytes(_:bytesperrow:bytesperimage:from:mipmaplevel:slice:).md) can be used with this texture. Also, this texture can only be used as an attachment for [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) and cannot be a texture argument for [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md), or [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md).
+If [`true`](https://developer.apple.com/documentation/Swift/true), neither [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) nor [`getBytes(_:bytesPerRow:bytesPerImage:from:mipmapLevel:slice:)`](mtltexture/getbytes(_:bytesperrow:bytesperimage:from:mipmaplevel:slice:).md) can be used with this texture. Also, this texture can only be used as an attachment for [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) and cannot be a texture argument for [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md), or [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md).
 
-Textures obtained from a [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) object may only be usable as attachments, depending on the value of [`framebufferOnly`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/framebufferOnly) passed to their parent [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) object. Textures created directly by the app do not have such restrictions.
+Textures you obtain from a [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) instance are only usable as attachments, depending on the value of [`framebufferOnly`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/framebufferOnly) passed to their parent [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) instance. These restrictions don’t apply to textures that your app creates directly.
 
 ## See Also
 

@@ -20,7 +20,7 @@ var areWirelessRoutesAvailable: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), a wireless route is available for user selection. Some types of wireless routes are only discovered when the view is present in the window hierarchy.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), a wireless route is available for user selection. Some types of wireless routes are only discovered when the view is present in the window hierarchy.
 
 ## See Also
 

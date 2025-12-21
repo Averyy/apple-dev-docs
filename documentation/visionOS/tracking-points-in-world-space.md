@@ -5,8 +5,8 @@
 Retrieve the position and orientation of anchors your app stores in ARKit.
 
 **Availability**:
-- visionOS 1.0+
-- Xcode 15.1+
+- visionOS 26.0+
+- Xcode 26.0+
 
 #### Overview
 
@@ -52,7 +52,7 @@ Once you add a world anchor to your app’s tracking provider using the [`addAnc
 
 ##### Persist World Anchors Across Sessions
 
-The only information ARKit persists about the world anchors in your app is their [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) — a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) instance’s doc://com.apple.documentation/documentation/arkit/worldanchor/4108561-id property — and pose in a particular space. It’s your app’s responsibility to persist additional information, such as the meaning of each anchor. For example, you might save local data about a custom 3D lamp model that a person placed on their desk.
+The only information ARKit persists about the world anchors in your app is their [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) — a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) instance’s [`id`](https://developer.apple.com/documentation/ARKit/WorldAnchor/id) property — and pose in a particular space. It’s your app’s responsibility to persist additional information, such as the meaning of each anchor. For example, you might save local data about a custom 3D lamp model that a person placed on their desk.
 
 As a person moves from town-to-town or room-to-room, your app won’t receive all of the world anchor updates from each place someone used your app. Instead, the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) sequence only provides world anchors for nearby objects.
 
@@ -76,10 +76,12 @@ Use the Compositor Services framework and the [`WorldTrackingProvider`](https://
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building_local_experiences_with_room_tracking.md)
+- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 
 
 ---

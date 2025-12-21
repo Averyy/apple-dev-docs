@@ -22,7 +22,7 @@ enum Code
 
 ## Topics
 
-### Error Codes
+### Error codes
 - [MLModelError.Code.featureType](mlmodelerror-swift.struct/code/featuretype.md)
   An error code for problems related to model features.
 - [MLModelError.Code.parameters](mlmodelerror-swift.struct/code/parameters.md)
@@ -45,10 +45,11 @@ enum Code
   An error code for problems related to canceling the prediction before it completes.
 - [MLModelError.Code.generic](mlmodelerror-swift.struct/code/generic.md)
   An error code for runtime issues that don’t apply to the other error codes.
-### Error Domain
+### Error domain
 - [let MLModelErrorDomain: String](mlmodelerrordomain.md)
   The domain for Core ML errors.
-### Initializers
+- [static var errorDomain: String](mlmodelerror-swift.struct/errordomain.md)
+### Creating a model error
 - [init?(rawValue: Int)](mlmodelerror-swift.struct/code/init(rawvalue:).md)
 
 ## Relationships

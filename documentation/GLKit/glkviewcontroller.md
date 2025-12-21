@@ -32,7 +32,7 @@ When active, rendering loop automatically updates the view’s contents each tim
 
 ##### Subclassing Notes
 
-Your application should subclass [`GLKViewController`](glkviewcontroller.md) and override the [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) and [`viewDidUnload`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621383-viewdidunload) methods. Your `viewDidLoad` method should set up your context and any drawable properties and can perform other resource allocation and initialization. Similarly, your class’s `viewDidUnload` method should delete the drawable object and free any unneeded resources.
+Your application should subclass [`GLKViewController`](glkviewcontroller.md) and override the [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) and [`viewDidUnload`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidUnload) methods. Your `viewDidLoad` method should set up your context and any drawable properties and can perform other resource allocation and initialization. Similarly, your class’s `viewDidUnload` method should delete the drawable object and free any unneeded resources.
 
 As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontrollerdelegate/glkviewcontrollerupdate(_:).md) method in a delegate, your subclass can provide an update method instead. The method must have the following signature:
 
@@ -83,8 +83,6 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

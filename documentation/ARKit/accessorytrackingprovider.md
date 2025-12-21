@@ -6,7 +6,7 @@
 Provides the real time position of accessories in the user’s environment.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -28,12 +28,12 @@ final class AccessoryTrackingProvider
 - [var description: String](accessorytrackingprovider/description.md)
   A textual representation of this accessory tracking provider.
 - [var latestAnchors: [AccessoryAnchor]](accessorytrackingprovider/latestanchors.md)
-  Get the latest accessory anchors seen by the provider. These could be used for `predictAnchor` The output array may be empty if the provider is not running or no accessory is tracked at the moment.
+  The latest accessory anchors updated with the most recent inertial data.
 - [var state: DataProviderState](accessorytrackingprovider/state.md)
   The state of this accessory tracking provider.
 ### Instance Methods
 - [func predictAnchor(for: AccessoryAnchor, at: TimeInterval) -> AccessoryAnchor?](accessorytrackingprovider/predictanchor(for:at:).md)
-  Get an `AccessoryAnchor` for a given time and accessory.
+  Predict an accessory anchor to a target timestamp.
 ### Type Properties
 - [static var isSupported: Bool](accessorytrackingprovider/issupported.md)
   Determines whether this device supports the accessory tracking provider.
@@ -47,6 +47,17 @@ final class AccessoryTrackingProvider
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct Accessory](accessory.md)
+  Represents an accessory to be tracked.
+- [struct AccessoryAnchor](accessoryanchor.md)
+  Represents a tracked accessory.
+- [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
+  Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
+- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 
 ---

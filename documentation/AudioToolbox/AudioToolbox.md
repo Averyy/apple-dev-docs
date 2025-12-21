@@ -130,6 +130,8 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 - [var kAudioCodecPropertyASPFrequency: AudioCodecPropertyID](kaudiocodecpropertyaspfrequency.md)
 - [var kAudioCodecPropertyContentSource: AudioCodecPropertyID](kaudiocodecpropertycontentsource.md)
 - [var kAudioCodecPropertyDynamicRangeControlConfiguration: AudioCodecPropertyID](kaudiocodecpropertydynamicrangecontrolconfiguration.md)
+- [var kAudioConverterPropertyChannelMixMap: AudioConverterPropertyID](kaudioconverterpropertychannelmixmap.md)
+- [var kAudioConverterPropertyPerformDownmix: AudioConverterPropertyID](kaudioconverterpropertyperformdownmix.md)
 - [var kAudioUnitErr_MultipleVoiceProcessors: OSStatus](kaudiouniterr_multiplevoiceprocessors.md)
 - [var kAudioUnitSubType_AUAudioMix: UInt32](kaudiounitsubtype_auaudiomix.md)
 ### Functions

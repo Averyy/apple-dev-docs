@@ -36,9 +36,6 @@ The system provides an instance of this structure to your app when a person choo
 ### Inspecting interaction details
 - [var date: Date?](journalingsuggestion/song/date.md)
   The song’s recent play date.
-### Type Aliases
-- [JournalingSuggestion.Song.JournalingSuggestionContent](journalingsuggestion/song/journalingsuggestioncontent.md)
-  Represents a generic content type for journaling suggestions.
 
 ## Relationships
 

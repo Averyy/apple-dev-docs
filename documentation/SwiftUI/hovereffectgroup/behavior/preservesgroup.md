@@ -6,7 +6,7 @@
 Preserves the current phase of the group.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

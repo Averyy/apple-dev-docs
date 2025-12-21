@@ -17,7 +17,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
 ## Topics
 
 ### Immediate mode drawing
-- [Add Rich Graphics to Your SwiftUI App](add_rich_graphics_to_your_swiftui_app.md)
+- [Add rich graphics to your SwiftUI app](add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.
 - [struct Canvas](canvas.md)
   A view type that supports immediate mode drawing.
@@ -85,6 +85,8 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
+  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
@@ -147,6 +149,8 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
 - [protocol CompositorContent](compositorcontent.md)
 - [struct CompositorContentBuilder](compositorcontentbuilder.md)
   A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
+- [struct AnyCompositorContent](anycompositorcontent.md)
+  Type erased compositor content.
 ### Measuring a view
 - [struct GeometryReader](geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.

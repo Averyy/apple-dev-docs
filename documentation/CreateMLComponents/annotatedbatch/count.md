@@ -24,6 +24,13 @@ var count: Int { get }
 
 This is the first dimension of both features and annotations.
 
+## See Also
+
+- [var annotations: MLShapedArray<Scalar>](annotatedbatch/annotations.md)
+  The shaped array of annotations.
+- [var features: MLShapedArray<Scalar>](annotatedbatch/features.md)
+  The shaped array of features.
+
 
 ---
 

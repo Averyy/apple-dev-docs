@@ -10,6 +10,7 @@ An action that switches between the current tool and the last used tool.
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
 - macOS 14.5+
+- visionOS 26.2+
 
 ## Declaration
 

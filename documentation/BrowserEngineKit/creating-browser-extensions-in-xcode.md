@@ -66,33 +66,37 @@ If your Xcode workspace includes Swift Packages as dependencies for your targets
 
 ##### Adopt the Correct Entitlements
 
-To act as a person’s web browser, your app uses the [`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser) entitlement. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
+To act as a person’s web browser, your app requires the default-browser entitlement (see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser)), and the [`Web Browser Engine Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser-engine.host) that enables your app to separate core tasks of an alternative browser engine into dedicated extensions.
 
-Additionally, to manage extensions for an alternative browser engine, your app declares the `com.apple.developer.web-browser-engine.host` entitlement with the value `true`.
+> **Note**:  Apps that aren’t browsers that use an alternative browser engine for in-app browsing need to add the [`Embedded Browser Engine Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.embedded-web-browser-engine) and [`Embedded Browser Engine Association Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.embedded-web-browser-engine.engine-association) rather than the default-browser entitlement and [`Web Browser Engine Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser-engine.host). In addition, an app that isn’t a browser needs to include: - The alternative browser engine in its own executable or as a dynamic library
+- The [`BEEmbeddedWebBrowserEngine`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BEEmbeddedWebBrowserEngine) and [`BEEmbeddedWebBrowserEngineVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BEEmbeddedWebBrowserEngineVersion) keys in its target properties
+- `embedded-web-browser-engine` in its [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) target property The embedded alternative browser only needs to use the `arm64` instruction set (not `arm64e`). It can’t include any web browser extensions or use just-in-time (JIT) compilation.
 
-> **Note**:  For a non-browser app that uses an alternative browser engine for in-app web browsing, add the `com.apple.developer.embedded-web-browser-engine` entitlement with the value `true`, instead of `com.apple.developer.web-browser`. Your non-browser app includes the alternative web browser engine in its own executable or as a dynamic library, uses only the `arm64` instruction set (not `arm64e`), and doesn’t include any web browser extensions. The alternative web browser engine in a non-browser app can’t use just-in-time (JIT) compilation. Add the following keys and values to your non-browser app’s `Info.plist` file: Add the value `embedded-web-browser-engine` to the `UIRequiredDeviceCapabilities` array in your app’s `Info.plist` file.
+Each of your browser app’s extensions need to add the the following entitlements with a value of `true`:
 
-Each of your browser app’s extensions must use the appropriate entitlement from this list:
+To use the extension entitlements, compile your host app and extensions with the `arm64e` instruction set.
 
-In each case, set the value for the entitlement to `true`. To use these entitlements, your host app and its extensions must be compiled for the `arm64e` instruction set, described in the “Build for pointer authentication” section, above.
+In Japan, browser apps are required to enable hardware memory tagging (see [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations)). To protect your users, Apple also strongly recommends that browser apps enable memory tagging in the European Union.
+
+In addition, you can optionally add the following entitlements:
+
+- To allow JIT compilation of website scripts, your content extension uses the [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit) entitlement with a value of `true`, and [`Extended Virtual Addressing Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.extended-virtual-addressing) with a value of `true`. For more information, see [`Protecting code compiled just in time`](protecting-code-compiled-just-in-time.md). You can’t give this entitlement to your browser app, rendering extension, or networking extension.
+- To transfer memory attribution between extensions, your content extension uses the `com.apple.developer.memory.transfer_accept` entitlement, and your rendering extension uses the [`com.apple.developer.memory.transfer_send`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.memory.transfer_send) entitlement, both with the browser apps’ bundle identifier as the value. For more information, see [`Attributing memory to a content extension`](attributing-memory-to-a-content-extension.md).
+- To restrict access to the system notification service in your web content extension, add the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
 
 For more information on adding entitlements to targets in Xcode, see [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
-
-Optionally, you may add the following entitlements:
-
-- To allow just-in-time (JIT) compilation of web site scripts, your content extension uses the `com.apple.developer.cs.allow-jit` entitlement with the `true` value, and [`Extended Virtual Addressing Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.extended-virtual-addressing) with the `true` value. For more information, see [`Protecting code compiled just in time`](protecting-code-compiled-just-in-time.md). You can’t give this entitlement to your browser app, rendering extension, or networking extension.
-- To transfer memory attribution between extensions, your content extension uses the `com.apple.developer.memory.transfer_accept` entitlement and your rendering extension uses the `com.apple.developer.memory.transfer_send` entitlement, both with the browser apps’ bundle identifier as the value. For more information, see [`Attributing memory to a content extension`](attributing-memory-to-a-content-extension.md).
-- To restrict access to the system notification service in your web content extension, add the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md)
 
 > ❗ **Important**:  App Store Connect won’t accept your app if your non-browser app includes any of the entitlements for web browsers and their extensions described in this section, or you use the entitlements on other web browser components or with different values than those listed here. You must use all of the entitlements listed here only for the purposes described, for the relevant components of your browser app.
 
 ##### Target Devices with Required Capabilities
 
-Add the string `web-browser-engine` to the `UIRequiredDeviceCapabilities` array in your app’s `Info.plist` file, to ensure that people can only download your app on devices that support browser apps with alternative browser engines. If your browser app only supports the `arm64e` instruction set, also add the string `arm64e` to the `UIRequiredDeviceCapabilities` array. For more information, see [`Required Device Capabilities`](https://developer.apple.comhttps://developer.apple.com/support/required-device-capabilities/).
+Add the string `web-browser-engine` to the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) array in your target’s properties, to ensure that people can only download your app on devices that support browser apps with alternative browser engines. If your browser app only supports the `arm64e` instruction set, also add `arm64e` to [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities).
+
+For more information, see [`Required Device Capabilities`](https://developer.apple.comhttps://developer.apple.com/support/required-device-capabilities/).
 
 ##### Test Your Web Browser
 
-Development of a web browser that uses an alternative browser engine can occur anywhere in the world. Xcode allows running development-signed or Ad-Hoc signed builds of the app on Simulator and all supported physical devices (iPhone and iPad).
+Development of a web browser that uses an alternative browser engine can occur anywhere in the world. Xcode allows running development or Ad-Hoc signed builds of the app on Simulator but device support varies by region:
 
 ## See Also
 

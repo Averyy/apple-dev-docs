@@ -6,8 +6,8 @@
 Content type for media.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -23,22 +23,6 @@ enum ContentType
   Logo content type.
 - [RCSService.Business.MediaEntry.ContentType.other](rcsservice/business/mediaentry/contenttype-swift.enum/other.md)
   Other content type.
-### Encoding and decoding
-- [init(from: any Decoder) throws](rcsservice/business/mediaentry/contenttype-swift.enum/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Operators
-- [static func == (RCSService.Business.MediaEntry.ContentType, RCSService.Business.MediaEntry.ContentType) -> Bool](rcsservice/business/mediaentry/contenttype-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](rcsservice/business/mediaentry/contenttype-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](rcsservice/business/mediaentry/contenttype-swift.enum/encode(to:).md)
-  Encodes this value into the given encoder.
-- [func hash(into: inout Hasher)](rcsservice/business/mediaentry/contenttype-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](rcsservice/business/mediaentry/contenttype-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

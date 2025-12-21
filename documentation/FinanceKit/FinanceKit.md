@@ -102,6 +102,7 @@ Using the FinanceKit framework, you can:
   Values that describe errors that may occur when accessing financial data.
 ### Protocols
 - [protocol BackgroundDeliveryExtension](backgrounddeliveryextension.md)
+  An extension used to receive updates about changes to data within the finance store.
 - [protocol BackgroundDeliveryExtensionProviding](backgrounddeliveryextensionproviding.md)
 
 

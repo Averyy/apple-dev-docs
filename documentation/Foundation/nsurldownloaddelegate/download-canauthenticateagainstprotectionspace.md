@@ -16,7 +16,7 @@ optional func download(_ connection: NSURLDownload, canAuthenticateAgainstProtec
 
 #### Discussion
 
-This method is called before [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](https://developer.apple.com/documentation/swift/true), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md). Not implementing this method is the same as returning [`false`](https://developer.apple.com/documentation/swift/false), in which case default authentication handling is used.
+This method is called before [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](https://developer.apple.com/documentation/Swift/true), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md). Not implementing this method is the same as returning [`false`](https://developer.apple.com/documentation/Swift/false), in which case default authentication handling is used.
 
 ## Parameters
 

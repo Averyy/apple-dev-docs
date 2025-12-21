@@ -22,7 +22,7 @@ struct AVMetadataIdentifier
 
 ## Topics
 
-### Common Metadata Identifiers
+### Common metadata identifiers
 - [static let commonIdentifierAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/commonidentifieraccessibilitydescription.md)
   An identifier that represents the accessibility description for the media.
 - [static let commonIdentifierAlbumName: AVMetadataIdentifier](avmetadataidentifier/commonidentifieralbumname.md)
@@ -71,7 +71,7 @@ struct AVMetadataIdentifier
   An identifier that represents the title of the media.
 - [static let commonIdentifierType: AVMetadataIdentifier](avmetadataidentifier/commonidentifiertype.md)
   An identifier that represents the media type.
-### iTunes Metadata Identifiers
+### iTunes metadata identifiers
 - [static let iTunesMetadataAccountKind: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataaccountkind.md)
   An identifier that represents the kind of iTunes account.
 - [static let iTunesMetadataAcknowledgement: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataacknowledgement.md)
@@ -168,7 +168,9 @@ struct AVMetadataIdentifier
   An identifier that represents a user comment regarding the content.
 - [static let iTunesMetadataUserGenre: AVMetadataIdentifier](avmetadataidentifier/itunesmetadatausergenre.md)
   An identifier that represents the genre set by a user in iTunes.
-### QuickTime Metadata Identifiers
+### QuickTime metadata identifiers
+- [static let quickTimeMetadataAIMEData: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataaimedata.md)
+  A value of type kCMMetadataBaseDataType_RawData
 - [static let quickTimeMetadataAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataaccessibilitydescription.md)
   An identifier that represents the accessibility description for the movie file content.
 - [static let quickTimeMetadataAlbum: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataalbum.md)
@@ -183,10 +185,26 @@ struct AVMetadataIdentifier
   An identifier that represents the name of the author of the movie file content.
 - [static let quickTimeMetadataAutoLivePhoto: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataautolivephoto.md)
   An identifier that represents whether the live photo movie used auto mode.
+- [static let quickTimeMetadataCameraFocalLength35mmEquivalent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerafocallength35mmequivalent.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
 - [static let quickTimeMetadataCameraFrameReadoutTime: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameraframereadouttime.md)
   An identifier that represents the camera frame readout time in QuickTime.
+- [static let quickTimeMetadataCameraISOSensitivity: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameraisosensitivity.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the sensitivity of the camera to light in terms of ISO exposure index (e.g. “800”). See SMPTE RDD 18.
 - [static let quickTimeMetadataCameraIdentifier: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameraidentifier.md)
   An identifier that represents the camera identifier in QuickTime.
+- [static let quickTimeMetadataCameraLensIrisFNumber: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameralensirisfnumber.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating measure of the amount of light transmitted through the lens. It is the focal length divided by the effective lens aperture diameter (e.g. “F2.8” or “2.8”).
+- [static let quickTimeMetadataCameraLensModel: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameralensmodel.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
+- [static let quickTimeMetadataCameraShutterSpeedAngle: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerashutterspeedangle.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as an angle in minutes (1/60 degree) (e.g. “21600” or “360.00deg””).
+- [static let quickTimeMetadataCameraShutterSpeedTime: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerashutterspeedtime.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the exposure period expressed as a time per one frame/field period in seconds.
+- [static let quickTimeMetadataCameraWhiteBalance: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerawhitebalance.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the white balance value defined by the temperature in Kelvin units (e.g. “5500K” or “5500”). See SMPTE RDD 18.
+- [static let quickTimeMetadataCinematicVideoIntent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacinematicvideointent.md)
+  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
 - [static let quickTimeMetadataCollectionUser: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacollectionuser.md)
   An identifier that represents a name that indicates a user-defined collection.
 - [static let quickTimeMetadataComment: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacomment.md)
@@ -229,8 +247,8 @@ struct AVMetadataIdentifier
   An identifier that represents the genre or genres to which the movie content conforms.
 - [static let quickTimeMetadataInformation: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatainformation.md)
   An identifier that represents general information about the movie file content.
-- [static let quickTimeMetadataiXML: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataixml.md)
-  An identifier that represents iXML information for the movie file content.
+- [static let quickTimeMetadataIsMontage: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataismontage.md)
+  An identifier that represents that a movie is a montage of other media.
 - [static let quickTimeMetadataKeywords: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatakeywords.md)
   An identifier that represents the keywords for the movie file content.
 - [static let quickTimeMetadataLivePhotoVitalityScore: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatalivephotovitalityscore.md)
@@ -255,8 +273,6 @@ struct AVMetadataIdentifier
   An identifier that represents the name of the camera maker.
 - [static let quickTimeMetadataModel: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatamodel.md)
   An identifier that represents the name of the camera model.
-- [static let quickTimeMetadataIsMontage: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataismontage.md)
-  An identifier that represents that a movie is a montage of other media.
 - [static let quickTimeMetadataOriginalArtist: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataoriginalartist.md)
   An identifier that represents the name of the original artist of the movie file content.
 - [static let quickTimeMetadataPerformer: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataperformer.md)
@@ -265,6 +281,8 @@ struct AVMetadataIdentifier
   An identifier that represents the phonogram rights statement.
 - [static let quickTimeMetadataPreferredAffineTransform: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatapreferredaffinetransform.md)
   An identifier that represents the affine transform preference for the movie file content.
+- [static let quickTimeMetadataPresentationImmersiveMedia: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatapresentationimmersivemedia.md)
+  A value of type kCMMetadataBaseDataType_RawData
 - [static let quickTimeMetadataProducer: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataproducer.md)
   An identifier that represents the name of the producer of the movie file content.
 - [static let quickTimeMetadataPublisher: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatapublisher.md)
@@ -281,9 +299,15 @@ struct AVMetadataIdentifier
   An identifier that represents the title of the movie file content.
 - [static let quickTimeMetadataVideoOrientation: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatavideoorientation.md)
   An identifier that represents the orientation of the movie file content.
+- [static let quickTimeMetadataWhiteBalanceByCCTColorMatrices: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatawhitebalancebycctcolormatrices.md)
+  A value of type kCMMetadataBaseDataType_RawData indicating the reference color translation matrix data for ProRes RAW.
+- [static let quickTimeMetadataWhiteBalanceByCCTWhiteBalanceFactors: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatawhitebalancebycctwhitebalancefactors.md)
+  A value of type kCMMetadataBaseDataType_RawData indicating the reference white balance multiplication factor data for ProRes RAW.
 - [static let quickTimeMetadataYear: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatayear.md)
   An identifier that represents the recording year of the movie file content.
-### QuickTime User Metadata Identifiers
+- [static let quickTimeMetadataiXML: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataixml.md)
+  An identifier that represents iXML information for the movie file content.
+### QuickTime user metadata identifiers
 - [static let quickTimeUserDataAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdataaccessibilitydescription.md)
   An identifier that represents the accessibility description for the movie file content.
 - [static let quickTimeUserDataAlbum: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdataalbum.md)
@@ -352,17 +376,17 @@ struct AVMetadataIdentifier
   An identifier that represents the special hardware and software requirements for playback.
 - [static let quickTimeUserDataTaggedCharacteristic: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatataggedcharacteristic.md)
   An identifier that represents the tagged characteristic.
-- [static let quickTimeUserDataTrack: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatatrack.md)
-  An identifier that represents a track in the movie file content.
 - [static let quickTimeUserDataTrackName: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatatrackname.md)
   An identifier that represents the name of a track in the movie file content.
+- [static let quickTimeUserDataTrack: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatatrack.md)
+  An identifier that represents a track in the movie file content.
 - [static let quickTimeUserDataURLLink: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdataurllink.md)
   An identifier that represents the webpage for the movie file content.
 - [static let quickTimeUserDataWarning: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatawarning.md)
   An identifier that represents the warning text for the movie file content.
 - [static let quickTimeUserDataWriter: AVMetadataIdentifier](avmetadataidentifier/quicktimeuserdatawriter.md)
   An identifier that represents the name of the writer of the movie file content.
-### ID3 Metadata Identifiers
+### ID3 metadata identifiers
 - [static let id3MetadataAlbumSortOrder: AVMetadataIdentifier](avmetadataidentifier/id3metadataalbumsortorder.md)
   An identifier that represents how to sort the album.
 - [static let id3MetadataAlbumTitle: AVMetadataIdentifier](avmetadataidentifier/id3metadataalbumtitle.md)
@@ -549,7 +573,7 @@ struct AVMetadataIdentifier
   An identifier that represents the year of the recording.
 - [static let id3MetadataCommerical: AVMetadataIdentifier](avmetadataidentifier/id3metadatacommerical.md)
   An identifier that represents the commerical frame.
-### 3GP User Metadata Identifiers
+### 3GP user metadata identifiers
 - [static let identifier3GPUserDataAlbumAndTrack: AVMetadataIdentifier](avmetadataidentifier/identifier3gpuserdataalbumandtrack.md)
   An identifier that represents the text for the album and track titles.
 - [static let identifier3GPUserDataAuthor: AVMetadataIdentifier](avmetadataidentifier/identifier3gpuserdataauthor.md)
@@ -580,7 +604,7 @@ struct AVMetadataIdentifier
   An identifier that represents the title for the media.
 - [static let identifier3GPUserDataUserRating: AVMetadataIdentifier](avmetadataidentifier/identifier3gpuserdatauserrating.md)
   An identifier that represents the user rating.
-### ISO Metadata Identifiers
+### ISO metadata identifiers
 - [static let isoUserDataAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/isouserdataaccessibilitydescription.md)
   An identifier that represents the accessibility description for the media content.
 - [static let isoUserDataCopyright: AVMetadataIdentifier](avmetadataidentifier/isouserdatacopyright.md)
@@ -589,7 +613,7 @@ struct AVMetadataIdentifier
   An identifier that represents the date for the media content.
 - [static let isoUserDataTaggedCharacteristic: AVMetadataIdentifier](avmetadataidentifier/isouserdatataggedcharacteristic.md)
   An identifier that represents the tagged media characteristic used for identifying accessibility features.
-### ICY Metadata Identifiers
+### ICY metadata identifiers
 - [static let icyMetadataStreamTitle: AVMetadataIdentifier](avmetadataidentifier/icymetadatastreamtitle.md)
   An identifier that represents the title of a stream.
 - [static let icyMetadataStreamURL: AVMetadataIdentifier](avmetadataidentifier/icymetadatastreamurl.md)
@@ -599,17 +623,6 @@ struct AVMetadataIdentifier
   Creates a metadata identifier.
 - [init(rawValue: String)](avmetadataidentifier/init(rawvalue:).md)
   Creates a metadata identifier with the specified raw value.
-### Type Properties
-- [static let quickTimeMetadataAIMEData: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataaimedata.md)
-  A value of type kCMMetadataBaseDataType_RawData
-- [static let quickTimeMetadataCameraFocalLength35mmEquivalent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerafocallength35mmequivalent.md)
-  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
-- [static let quickTimeMetadataCameraLensModel: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameralensmodel.md)
-  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
-- [static let quickTimeMetadataCinematicVideoIntent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacinematicvideointent.md)
-  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
-- [static let quickTimeMetadataPresentationImmersiveMedia: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatapresentationimmersivemedia.md)
-  A value of type kCMMetadataBaseDataType_RawData
 
 ## Relationships
 

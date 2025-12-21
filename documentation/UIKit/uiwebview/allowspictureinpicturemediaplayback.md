@@ -18,7 +18,7 @@ var allowsPictureInPictureMediaPlayback: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) on devices that support Picture in Picture (PiP) mode and [`false`](https://developer.apple.com/documentation/swift/false) on all other devices.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true) on devices that support Picture in Picture (PiP) mode and [`false`](https://developer.apple.com/documentation/Swift/false) on all other devices.
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Creates a set of operations containing only the specified operation.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

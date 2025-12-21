@@ -3,10 +3,10 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-The intended spatial audio experience applied to all `AVSampleBufferAudioRenderer`’s within this synchronizer.
+The synchronizer’s intended Spatial Audio experience.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -16,7 +16,9 @@ var intendedSpatialAudioExperience: any SpatialAudioExperience { get set }
 
 #### Discussion
 
-The default value of .automatic means the player uses its AVAudioSession’s intended spatial experience. See CASpatialAudioExperience for more details.
+The value applies to all [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md) objects within this synchronizer.
+
+If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](https://developer.apple.com/documentation/AudioToolbox/CAAutomaticSpatialAudio).
 
 
 ---

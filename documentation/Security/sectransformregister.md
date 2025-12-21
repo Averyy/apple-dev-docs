@@ -16,7 +16,7 @@ func SecTransformRegister(_ uniqueName: CFString, _ createTransformFunction: Sec
 
 #### Return Value
 
-A Boolean that is set to [`true`](https://developer.apple.com/documentation/swift/true) if the custom transform was registered and [`false`](https://developer.apple.com/documentation/swift/false) otherwise
+A Boolean that is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the custom transform was registered and [`false`](https://developer.apple.com/documentation/Swift/false) otherwise
 
 ## Parameters
 

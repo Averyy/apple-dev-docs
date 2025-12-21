@@ -26,12 +26,8 @@ func processContentKeyResponseError(_ error: any Error)
 
 ## See Also
 
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
 - [func processContentKeyResponse(AVContentKeyResponse)](avcontentkeyrequest/processcontentkeyresponse(_:).md)
   Sends the specified content key response to the receiver for processing.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
 
 
 ---

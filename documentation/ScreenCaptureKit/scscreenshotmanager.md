@@ -50,7 +50,9 @@ class SCScreenshotManager
 - [protocol SCStreamDelegate](scstreamdelegate.md)
   A delegate protocol your app implements to respond to stream events.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
+  An object that contains all images requested by the client.
 
 
 ---

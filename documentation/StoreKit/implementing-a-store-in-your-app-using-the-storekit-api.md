@@ -4,6 +4,11 @@
 
 Offer In-App Purchases and manage entitlements using signed transactions and status information.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 The sample project demonstrates how to use StoreKit in a SwiftUI-based iOS app with a simulated app server, SKDemoServer. SKDemoServer is a Swift package that acts as the app’s backend by vending product identifiers and persisting consumable purchase entitlements using SwiftData.

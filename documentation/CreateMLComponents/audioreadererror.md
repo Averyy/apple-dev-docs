@@ -28,22 +28,11 @@ enum AudioReaderError
   An error that indicates that the microphone authorization status is restricted. The user is not allowed to access audio capture devices.
 - [AudioReaderError.sourceDeviceNotAvailable](audioreadererror/sourcedevicenotavailable.md)
   An error that indicates that no source devices are available.
-- [var errorDescription: String?](audioreadererror/errordescription.md)
-  A localized message describing what error occurred.
-### Operators
-- [static func == (AudioReaderError, AudioReaderError) -> Bool](audioreadererror/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](audioreadererror/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](audioreadererror/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
+### Getting the debug description
+- [var debugDescription: String](audioreadererror/debugdescription.md)
+  A text representation of the error.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](audioreadererror/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](audioreadererror/equatable-implementations.md)
-- [Error Implementations](audioreadererror/error-implementations.md)
-- [LocalizedError Implementations](audioreadererror/localizederror-implementations.md)
 
 ## Relationships
 

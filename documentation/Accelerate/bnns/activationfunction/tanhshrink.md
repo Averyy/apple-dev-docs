@@ -13,7 +13,6 @@ An activation function that returns its input minus the hyperbolic tangent of it
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

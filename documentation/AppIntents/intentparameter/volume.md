@@ -20,9 +20,6 @@ enum Volume
 
 ## Topics
 
-### Operators
-- [static func == (IntentParameter<Value>.Volume, IntentParameter<Value>.Volume) -> Bool](intentparameter/volume/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [IntentParameter.Volume.acreFeet](intentparameter/volume/acrefeet.md)
 - [IntentParameter.Volume.bushels](intentparameter/volume/bushels.md)
@@ -55,15 +52,6 @@ enum Volume
 - [IntentParameter.Volume.quarts](intentparameter/volume/quarts.md)
 - [IntentParameter.Volume.tablespoons](intentparameter/volume/tablespoons.md)
 - [IntentParameter.Volume.teaspoons](intentparameter/volume/teaspoons.md)
-### Instance Properties
-- [var hashValue: Int](intentparameter/volume/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](intentparameter/volume/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [CaseIterable Implementations](intentparameter/volume/caseiterable-implementations.md)
-- [Equatable Implementations](intentparameter/volume/equatable-implementations.md)
 
 ## Relationships
 

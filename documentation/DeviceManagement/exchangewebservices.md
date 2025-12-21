@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure an Exchange Web Services account for Contacts, Mail, Notes, Reminders, and Calendar.
+The payload that configures an Exchange Web Services accounts.
 
 **Availability**:
 - macOS 10.7+
@@ -82,15 +82,14 @@ Specify `com.apple.ews.account` as the payload type.
     <integer>1</integer>
 </dict>
 </plist>
-
 ```
 
 ## See Also
 
 - [object ExchangeActiveSync](exchangeactivesync.md)
-  The payload you use to configure Exchange ActiveSync accounts.
+  The payload that configures Exchange ActiveSync accounts.
 - [object Mail](mail.md)
-  The payload you use to configure a mail account on the device.
+  The payload that configures a Mail account.
 
 
 ---

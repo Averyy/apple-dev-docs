@@ -24,7 +24,7 @@ You need to use this property only with matrices initialized with [`init(frame:)
 ## See Also
 
 - [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
-  Inserts a new column of cells at the specified location. .
+  Inserts a new column of cells at the specified location.
 - [func addRow()](nsmatrix/addrow.md)
   Adds a new row of cells below the last row.
 - [func addColumn()](nsmatrix/addcolumn.md)

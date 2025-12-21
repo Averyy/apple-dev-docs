@@ -6,10 +6,10 @@
 A type that describes a data request for any mobile document from a group of requests.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -25,19 +25,10 @@ struct MobileDocumentAnyOfDataRequest
 ### Handling the response
 - [MobileDocumentAnyOfDataRequest.Response](mobiledocumentanyofdatarequest/response.md)
   A type that contains the response information from a successful data request.
-### Operators
-- [static func == (MobileDocumentAnyOfDataRequest, MobileDocumentAnyOfDataRequest) -> Bool](mobiledocumentanyofdatarequest/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](mobiledocumentanyofdatarequest/hashvalue.md)
-  The hash value.
 ### Instance Methods
 - [func addRequest(any MobileDocumentDataRequest)](mobiledocumentanyofdatarequest/addrequest(_:).md)
   Adds the request as a candidate of this composite request.
-- [func hash(into: inout Hasher)](mobiledocumentanyofdatarequest/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mobiledocumentanyofdatarequest/equatable-implementations.md)
 - [MobileDocumentRequest Implementations](mobiledocumentanyofdatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
@@ -74,7 +65,7 @@ struct MobileDocumentAnyOfDataRequest
 - [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
-  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+  A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
   A type that describes a raw data request for any mobile document from a group of requests.
 

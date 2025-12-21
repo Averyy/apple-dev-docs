@@ -21,7 +21,7 @@ let kVTVideoEncoderList_CodecType: CFString
 
 #### Discussion
 
-The associated value is a doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd for a four-character code such as `avc1` or `h263`.
+The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for a four-character code such as `avc1` or `h263`.
 
 ## See Also
 

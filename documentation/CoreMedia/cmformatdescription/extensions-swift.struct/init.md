@@ -3,6 +3,8 @@
 **Framework**: Core Media  
 **Kind**: init
 
+Creates an empty `Extensions` structure.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
@@ -21,6 +23,7 @@ init()
 ## See Also
 
 - [init(base: [CFString : CFPropertyList]?)](cmformatdescription/extensions-swift.struct/init(base:).md)
+  Creates an `Extensions` structure with existing values.
 
 
 ---

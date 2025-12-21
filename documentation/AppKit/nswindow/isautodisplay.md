@@ -17,7 +17,7 @@ var isAutodisplay: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window automatically displays views that need to be displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If `autodisplay` is [`false`](https://developer.apple.com/documentation/swift/false), the window or its views must be explicitly displayed.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the window automatically displays views that need to be displayed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If `autodisplay` is [`false`](https://developer.apple.com/documentation/Swift/false), the window or its views must be explicitly displayed.
 
 Automatic display typically occurs on each pass through the event loop.
 

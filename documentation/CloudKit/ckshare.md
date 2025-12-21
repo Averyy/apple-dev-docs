@@ -38,7 +38,7 @@ To determine the configuration of a fetched share, inspect the [`recordName`](ck
 let isZoneWide = (metadata.share.recordID.recordName == CKRecordNameZoneWideShare)
 ```
 
-CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account. You don’t create participants. Instead, use [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) to manage a share’s participants and their permissions. Alternatively, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and use [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to fetch the corresponding participants. CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/swift/false). CloudKit associates the participant with their iCloud account when they accept the share if they launch the process by tapping or clicking the share URL.
+CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account. You don’t create participants. Instead, use [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) to manage a share’s participants and their permissions. Alternatively, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and use [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to fetch the corresponding participants. CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). CloudKit associates the participant with their iCloud account when they accept the share if they launch the process by tapping or clicking the share URL.
 
 Participants with write permissions can modify or delete any record that you include in the share. However, only the owner can delete a shared hierarchy’s root record. If a participant attempts to delete the share, CloudKit removes the participant. The share remains active for all other participants. If the owner deletes a share that manages a record hierarchy, CloudKit sets the root record’s [`share`](ckrecord/share.md) property to `nil`. CloudKit deletes the share if the owner of the shared heirarchy deletes its root record.
 
@@ -105,12 +105,12 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
   A list of all uninvited users who have requested access to this share.
 ### Instance Methods
 - [func blockRequesters([CKShare.AccessRequester])](ckshare/blockrequesters(_:).md)
-  Blocks the specified requesters from requesting access to this share.
+  Blocks specified users from requesting access to this share.
 - [func denyRequesters([CKShare.AccessRequester])](ckshare/denyrequesters(_:).md)
-  Denies share access to the specified requesters.
+  Denies access requests from specified users.
 - [func oneTimeURL(for: CKShare.Participant.ID) -> URL?](ckshare/onetimeurl(for:).md)
 - [func unblockIdentities([CKShare.BlockedIdentity])](ckshare/unblockidentities(_:).md)
-  Unblocks previously blocked identities, allowing them to request access again.
+  Unblocks previously blocked users, allowing them to request access again.
 
 ## Relationships
 
@@ -143,7 +143,7 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
   An object that controls participant access and permission options.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [@MainActor class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.

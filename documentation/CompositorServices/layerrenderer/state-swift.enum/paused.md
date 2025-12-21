@@ -6,7 +6,7 @@
 A state that indicates the layer is paused and not currently drawing.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

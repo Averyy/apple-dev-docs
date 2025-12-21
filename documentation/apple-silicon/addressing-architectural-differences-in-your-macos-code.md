@@ -68,13 +68,13 @@ void printTestValues() {
 
 The same code fails on `arm64` because the caller of the function and the function itself marshal the parameters differently. The function expects all of the parameters to be in registers. However, the caller passes only the first parameter in a register; it passes all remaining parameters on the stack. As a result, the function implementation looks for the parameters in the wrong place, leading to unexpected results.
 
-Even if you don’t redeclare your functions explicitly, functions like [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) redeclare your functions and methods implicitly. For more information, see [`Enable Strict Type Enforcement for Dynamic Method Dispatching`](addressing-architectural-differences-in-your-macos-code#Enable-Strict-Type-Enforcement-for-Dynamic-Method-Dispatching.md).
+Even if you don’t redeclare your functions explicitly, functions like [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) redeclare your functions and methods implicitly. For more information, see [`Enable Strict Type Enforcement for Dynamic Method Dispatching`](addressing-architectural-differences-in-your-macos-code#Enable-Strict-Type-Enforcement-for-Dynamic-Method-Dispatching.md).
 
 ##### Enable Strict Type Enforcement for Dynamic Method Dispatching
 
-Due to calling convention differences between the `x86_64` and `arm64` architectures, update your dynamic-dispatching code to pass parameters correctly on both platforms. A function like [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) calls a method of an object, passing the parameters you supply to that method. Because [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) must support calls to any method, it accepts a variable list of parameters instead of fixed parameters. This usage of variable parameters changes how [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) calls your function, effectively redeclaring your method as a variadic function.
+Due to calling convention differences between the `x86_64` and `arm64` architectures, update your dynamic-dispatching code to pass parameters correctly on both platforms. A function like [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) calls a method of an object, passing the parameters you supply to that method. Because [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) must support calls to any method, it accepts a variable list of parameters instead of fixed parameters. This usage of variable parameters changes how [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) calls your function, effectively redeclaring your method as a variadic function.
 
-To illustrate the problem, consider an example where you want to call the following method using [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend):
+To illustrate the problem, consider an example where you want to call the following method using [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend):
 
 ```occ
 - (void)document:(NSDocument*)doc 
@@ -82,9 +82,9 @@ To illustrate the problem, consider an example where you want to call the follow
      contextInfo:(void*)contextInfo;
 ```
 
-Because [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) declares your method as variadic, the compiler places the method’s parameters on the stack, in accordance with the calling conventions for the `arm64` architecture. However, the original method declaration contains fixed parameters, not variable parameters. As a result, the method’s implementation looks for its parameters in registers, which is where the compiler places fixed parameters for `arm64`. This mismatch causes the method call to generate undefined results.
+Because [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) declares your method as variadic, the compiler places the method’s parameters on the stack, in accordance with the calling conventions for the `arm64` architecture. However, the original method declaration contains fixed parameters, not variable parameters. As a result, the method’s implementation looks for its parameters in registers, which is where the compiler places fixed parameters for `arm64`. This mismatch causes the method call to generate undefined results.
 
-To fix dynamic-dispatching issues in your code, define a type-safe function pointer instead of calling [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) directly. You can use type-safe function pointers in both your `arm64` and `x86_64` code. A type-safe function pointer specifies the exact number of parameters, and incorporates the type information for each parameter into the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) call, allowing the compiler to generate the calling conventions the method expects. For example, a type-safe function pointer for the `document:didSave:contextInfo:` method looks like the following:
+To fix dynamic-dispatching issues in your code, define a type-safe function pointer instead of calling [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) directly. You can use type-safe function pointers in both your `arm64` and `x86_64` code. A type-safe function pointer specifies the exact number of parameters, and incorporates the type information for each parameter into the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) call, allowing the compiler to generate the calling conventions the method expects. For example, a type-safe function pointer for the `document:didSave:contextInfo:` method looks like the following:
 
 ```occ
 // Declare a type-safe function pointer.
@@ -99,7 +99,7 @@ To initiate the dynamic dispatch operation, pass the target object, selector, an
 didSaveDispatcher(myDelegate, mySelector, myDocument, NO, myPtr);
 ```
 
-To locate places where you’re not calling [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend) in a type-safe way, enable the Enable strict Checking of objc_msgSend Calls build setting. When the value of that setting is `YES`, the compiler flags your code where you’re not using a type-safe function pointer with [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/1456712-objc_msgsend).
+To locate places where you’re not calling [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend) in a type-safe way, enable the Enable strict Checking of objc_msgSend Calls build setting. When the value of that setting is `YES`, the compiler flags your code where you’re not using a type-safe function pointer with [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend).
 
 ##### Address Numerical Differences in Specific Frameworks
 

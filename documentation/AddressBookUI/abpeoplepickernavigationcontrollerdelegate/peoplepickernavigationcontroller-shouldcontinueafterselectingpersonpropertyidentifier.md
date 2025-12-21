@@ -18,7 +18,7 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to perform the action for the property selected and dismiss the picker. [`false`](https://developer.apple.com/documentation/swift/false) to show the person in the picker.
+[`true`](https://developer.apple.com/documentation/Swift/true) to perform the action for the property selected and dismiss the picker. [`false`](https://developer.apple.com/documentation/Swift/false) to show the person in the picker.
 
 #### Discussion
 

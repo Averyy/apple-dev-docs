@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-The list of nodes that must execute before executing the node.
+The list of nodes that need to execute before executing the node.
 
 **Availability**:
 - iOS 15.0+
@@ -21,7 +21,7 @@ var controlDependencies: [MTLFunctionStitchingFunctionNode] { get set }
 
 #### Discussion
 
-When a stitched function calls functions that have side effects on their input data, you often need the GPU to execute functions in a specific order. In such cases, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property to specify which nodes must execute before executing this node.
+When a stitched function calls functions that have side effects on their input data, you often need the GPU to execute functions in a specific order. In such cases, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property to specify which nodes need to run before executing this node.
 
 ## See Also
 

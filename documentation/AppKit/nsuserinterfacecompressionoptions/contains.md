@@ -16,7 +16,7 @@ func contains(_ options: NSUserInterfaceCompressionOptions) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if all the supplied options are present in the instance’s options, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if all the supplied options are present in the instance’s options, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## Parameters
 

@@ -32,8 +32,6 @@ It is safe to access this property for color objects created with the color spac
   Returns a version of the color object that is compatible with the specified color type.
 - [NSColor.ColorType](nscolor/colortype.md)
   Constants that indicate the color’s type, and which methods may be called on the color object.
-- [var colorSpaceName: NSColorSpaceName](nscolor/colorspacename.md)
-  The name of the color space associated with the color.
 - [struct NSColorSpaceName](nscolorspacename.md)
   Constants that specify color space names.
 

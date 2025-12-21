@@ -6,7 +6,7 @@
 NOTE: you can use this method, or `-removeFromParentViewController:`, whichever is easier.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

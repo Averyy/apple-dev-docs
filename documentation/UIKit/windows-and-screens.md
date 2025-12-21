@@ -33,7 +33,7 @@ A [`UIWindow`](uiwindow.md) object provides no visible content of its own. All o
   A set of methods that popover background view subclasses must implement.
 ### Alerts
 - [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
-  Present important information to the user or prompt the user about an important choice.
+  Present important information to a person or prompt them about an important choice.
 - [class UIAlertController](uialertcontroller.md)
   An object that displays an alert message.
 - [class UIAlertAction](uialertaction.md)

@@ -17,7 +17,6 @@ Tells you when to initialize a 3D node that has been unarchived.
 ## Declaration
 
 ```swift
-@MainActor
 init?(coder aDecoder: NSCoder)
 ```
 

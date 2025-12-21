@@ -3,6 +3,8 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: case
 
+Returns a standard dynamic range image to the client.
+
 **Availability**:
 - Mac Catalyst ?+
 - macOS ?+

@@ -11,7 +11,7 @@ A Boolean value that indicates whether the Look Around view display road labels.
 ## Declaration
 
 ```swift
-attribute boolean showsRoadLabels;
+showsRoadLabels?: boolean;
 ```
 
 ## See Also

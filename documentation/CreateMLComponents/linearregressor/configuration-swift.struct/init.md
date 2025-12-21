@@ -20,11 +20,6 @@ Creates a default linear regressor configuration.
 init()
 ```
 
-## See Also
-
-- [init(from: any Decoder) throws](linearregressor/configuration-swift.struct/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

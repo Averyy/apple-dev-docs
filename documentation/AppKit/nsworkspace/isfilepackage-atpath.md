@@ -16,7 +16,7 @@ func isFilePackage(atPath fullPath: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the path identifies a file package; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the path does not exist, is not a directory, or is not a file package.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the path identifies a file package; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if the path does not exist, is not a directory, or is not a file package.
 
 #### Discussion
 

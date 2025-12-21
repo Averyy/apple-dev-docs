@@ -19,11 +19,11 @@ var isLivePhotoAutoTrimmingEnabled: Bool { get set }
 
 #### Discussion
 
-This value defaults to [`true`](https://developer.apple.com/documentation/swift/true) when [`isLivePhotoCaptureSupported`](avcapturephotooutput/islivephotocapturesupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This value defaults to [`true`](https://developer.apple.com/documentation/Swift/true) when [`isLivePhotoCaptureSupported`](avcapturephotooutput/islivephotocapturesupported.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 Use this option to enable the same automatic trimming behavior found in the Camera app. By default, a Live Photo capture is about three seconds in duration, centered on the time of the capture request. If the user moves the camera during capture, iOS analyzes the capture and automatically trims the duration of the Live Photo to avoid capturing excess movement.
 
-Changing this value while your session is running requires a lengthy reconfiguration of the session. If you intend to take any Live Photo captures, set this value to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md). If you change this property while the session is running, in-progress Live Photo captures end immediately, unfulfilled photo requests cancel, and the video preview temporarily freezes.
+Changing this value while your session is running requires a lengthy reconfiguration of the session. If you intend to take any Live Photo captures, set this value to [`true`](https://developer.apple.com/documentation/Swift/true) before calling [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md). If you change this property while the session is running, in-progress Live Photo captures end immediately, unfulfilled photo requests cancel, and the video preview temporarily freezes.
 
 ## See Also
 

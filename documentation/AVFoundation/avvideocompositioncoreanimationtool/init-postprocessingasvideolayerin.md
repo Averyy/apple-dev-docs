@@ -40,6 +40,10 @@ The `videoLayer` should be in the `animationLayer` sublayer tree. The `animation
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
   Composes the composited video frames with the Core Animation layer.
+- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
+  Compose the composited video frames with the Core Animation layer.
+- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 
 ---

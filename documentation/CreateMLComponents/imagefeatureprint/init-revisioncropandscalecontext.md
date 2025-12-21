@@ -27,8 +27,6 @@ init(revision: Int, cropAndScale: VNImageCropAndScaleOption = .centerCrop, conte
 
 ## See Also
 
-- [init(from: any Decoder) throws](imagefeatureprint/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(cropAndScale: VNImageCropAndScaleOption, context: CIContext)](imagefeatureprint/init(cropandscale:context:).md)
   Creates a FeaturePrint feature extractor.
 

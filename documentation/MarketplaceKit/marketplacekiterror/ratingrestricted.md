@@ -3,7 +3,7 @@
 **Framework**: MarketplaceKit  
 **Kind**: case
 
-The requested install has a rating that exceeds this device’s restrictions.
+An error that indicates the requested app’s age rating is beyond that allowed for the device.
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +14,21 @@ The requested install has a rating that exceeds this device’s restrictions.
 ```swift
 case ratingRestricted
 ```
+
+## Mentions
+
+- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+
+#### Discussion
+
+For more information, see [`maximumAllowedAgeRating`](applibrary/maximumallowedagerating.md).
+
+## See Also
+
+- [MarketplaceKitError.ageRatingExceptionNotNeeded](marketplacekiterror/ageratingexceptionnotneeded.md)
+  An error that indicates the app requests an unnecessary age-rating exception.
+- [MarketplaceKitError.missingAgeRatingExceptionRequest](marketplacekiterror/missingageratingexceptionrequest.md)
+  An error that indicates the app needs to request an age-rating exception.
 
 
 ---

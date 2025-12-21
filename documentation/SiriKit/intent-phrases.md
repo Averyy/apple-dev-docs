@@ -42,12 +42,12 @@ Xcode helps you add example phrases to your vocabulary file. When you create a p
   Generate ride options for Maps to display to the user.
 - [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Displaying Shortcut Information in a Siri Watch Face Card](displaying-shortcut-information-in-a-siri-watch-face-card.md)
-  Display and customize watch-specific shortcut information with a default card template.
 - [Donating Reservations](donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
-  Inform Siri when your app’s shortcuts may be useful to the user.
+- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+  Provide alternative names for your app that are more familiar or easier for users to speak.
+- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+  Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 
 ---

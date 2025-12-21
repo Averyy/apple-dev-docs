@@ -16,7 +16,7 @@ optional var widgetAllowsEditing: Bool { get }
 
 #### Discussion
 
-When a widget that supports editing sets this property to [`true`](https://developer.apple.com/documentation/swift/true), it automatically gets a system-provided button in its header area that users choose to begin or end editing. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When a widget that supports editing sets this property to [`true`](https://developer.apple.com/documentation/Swift/true), it automatically gets a system-provided button in its header area that users choose to begin or end editing. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -22,7 +22,7 @@ var shouldMigrateStoreAutomatically: Bool { get set }
 
 #### Discussion
 
-If this is set to [`false`](https://developer.apple.com/documentation/swift/false) and the store is out of sync, attempting to load the store produces an error. If this is set to [`true`](https://developer.apple.com/documentation/swift/true) and the store is out of sync, attempting to load the store causes Core Data to attempt a migration. This flag is set to [`true`](https://developer.apple.com/documentation/swift/true) by default.
+If this is set to [`false`](https://developer.apple.com/documentation/Swift/false) and the store is out of sync, attempting to load the store produces an error. If this is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the store is out of sync, attempting to load the store causes Core Data to attempt a migration. This flag is set to [`true`](https://developer.apple.com/documentation/Swift/true) by default.
 
 ## See Also
 

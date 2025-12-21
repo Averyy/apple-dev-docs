@@ -33,30 +33,12 @@ If there are no resumable checkpoints training starts over from the beginning.
 
 ## See Also
 
-- [init(checkpoint: MLCheckpoint) throws](mllinearregressor/init(checkpoint:).md)
-  Creates a linear regressor from a checkpoint.
-- [init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters) throws](mllinearregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-5xpue.md)
-  Creates a linear regressor.
-- [static func makeTrainingSession(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLinearRegressor>](mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-3cosv.md)
-  Creates or restores a training session.
-- [static func makeTrainingSession(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLinearRegressor>](mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7xqak.md)
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+  Trains a linear regressor.
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
   Creates or restores a training session.
 - [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLinearRegressor>](mllinearregressor/restoretrainingsession(sessionparameters:).md)
   Restores an existing training session.
-- [static func train(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLLinearRegressor>](mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1v1q5.md)
-  Trains a linear regressor.
-- [static func train(trainingData: DataFrame, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLLinearRegressor>](mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7j70n.md)
-  Trains a linear regressor.
-- [init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]?, parameters: MLLinearRegressor.ModelParameters) throws](mllinearregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-5lmry.md)
-  Creates a Linear Regressor from the feature columns in the training data to predict the values in the target column.
-- [MLLinearRegressor.ModelParameters](mllinearregressor/modelparameters-swift.struct.md)
-  Parameters that affect the process of training a model.
-- [let modelParameters: MLLinearRegressor.ModelParameters](mllinearregressor/modelparameters-swift.property.md)
-  The underlying parameters used when training the model.
-- [var targetColumn: String](mllinearregressor/targetcolumn.md)
-  The name of the column you selected at initialization to define which feature the regressor predicts.
-- [var featureColumns: [String]](mllinearregressor/featurecolumns.md)
-  The names of the columns you selected at initialization to train the regressor.
 
 
 ---

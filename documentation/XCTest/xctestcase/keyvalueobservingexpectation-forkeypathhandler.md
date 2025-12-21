@@ -24,7 +24,7 @@ func keyValueObservingExpectation(for objectToObserve: Any, keyPath: String, han
 
 Creates an [`XCTestExpectation`](xctestexpectation.md) that uses Key Value Observing to observe changes on the value specified by `keyPath` on the provided object.
 
-When the tests detects changes to the value, it calls the `handler` block to assess the new value to see if the change fulfills the expectation. Every key-value observing change runs the handler block until it either returns [`true`](https://developer.apple.com/documentation/swift/true) (to fulfill the expectation), or the wait times out.
+When the tests detects changes to the value, it calls the `handler` block to assess the new value to see if the change fulfills the expectation. Every key-value observing change runs the handler block until it either returns [`true`](https://developer.apple.com/documentation/Swift/true) (to fulfill the expectation), or the wait times out.
 
 You can use [`XCTAssert`](xctassert.md) and related APIs in the block to report a failure.
 

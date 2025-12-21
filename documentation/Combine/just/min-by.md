@@ -23,11 +23,7 @@ func min(by areInIncreasingOrder: (Output, Output) -> Bool) -> Just<Output>
 - [func count() -> Just<Int>](just/count.md)
 - [func max() -> Just<Output>](just/max.md)
 - [func max(by: (Output, Output) -> Bool) -> Just<Output>](just/max(by:).md)
-- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](just/trymax(by:).md)
-  Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.
 - [func min() -> Just<Output>](just/min.md)
-- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](just/trymin(by:).md)
-  Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
 
 
 ---

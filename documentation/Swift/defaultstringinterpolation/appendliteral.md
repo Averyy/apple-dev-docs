@@ -22,7 +22,7 @@ mutating func appendLiteral(_ literal: String)
 
 #### Discussion
 
-Do not call this method directly. It is used by the compiler when interpreting string interpolations.
+You don’t need to call this method directly. It’s used by the compiler when interpreting string interpolations.
 
 
 ---

@@ -19,11 +19,6 @@ Returns a new data layout for drawing patches via indirect buffer calls, with sp
 init(patchCount: UInt32, instanceCount: UInt32, patchStart: UInt32, baseInstance: UInt32)
 ```
 
-## See Also
-
-- [init()](mtldrawpatchindirectarguments/init.md)
-  Returns a new data layout for drawing patches via indirect buffer calls.
-
 
 ---
 

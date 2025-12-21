@@ -20,7 +20,7 @@ func present(animated: Bool, completionHandler completion: UIPrintInteractionCon
 
 #### Discussion
 
-It is valid to call this method for applications on iPhone and iPod touch devices. Calling this method on an iPad with `animated` set to [`true`](https://developer.apple.com/documentation/swift/true) causes the printing options view to animate from the window frame.
+It is valid to call this method for applications on iPhone and iPod touch devices. Calling this method on an iPad with `animated` set to [`true`](https://developer.apple.com/documentation/Swift/true) causes the printing options view to animate from the window frame.
 
 If you call this method when the printing options are already displayed, `UIPrintInteractionController` hides the printing-options sheet. You must call the method again to display the options.
 

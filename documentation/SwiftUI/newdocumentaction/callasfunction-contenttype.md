@@ -23,7 +23,7 @@ Don’t call this method directly. SwiftUI calls it when you call the [`newDocum
 newDocument(contentType: .todoList)
 
  extension UTType {
-     static var todoList = UTType(exportedAs: "com.myApp.todoList")
+     static let todoList = UTType(exportedAs: "com.myApp.todoList")
  }
 ```
 

@@ -20,8 +20,8 @@ struct MLImageClassifier
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 - [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
+- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 
 #### Overview
 
@@ -31,7 +31,7 @@ When you create the model, you give it a training dataset made up of labeled ima
 
 After training completes, you evaluate the trained model by showing it a testing dataset containing labeled images that the model hasn’t seen before. The metrics that come from this evaluation tell you whether the model performs well enough. For example, you can see how often the elephant and giraffe classifier mistakes a giraffe for an elephant. When the model makes too many mistakes, you can add more or better training data, or change the parameters, and try again.
 
-When your model does perform well enough, you save it as a Core ML model file with the `mlmodel` extension. You can then import this model file into an app—like the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/model_integration_samples/classifying_images_with_vision_and_core_ml) sample code project—that uses a Core ML model file to classify images.
+When your model does perform well enough, you save it as a Core ML model file with the `mlmodel` extension. You can then import this model file into an app—like the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml) sample code project—that uses a Core ML model file to classify images.
 
 ## Topics
 
@@ -48,25 +48,18 @@ When your model does perform well enough, you save it as a Core ML model file wi
 - [init(checkpoint: MLCheckpoint) throws](mlimageclassifier/init(checkpoint:).md)
   Creates an image classifier from a training session checkpoint.
 ### Training an image classifier synchronously
-- [init(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters) throws](mlimageclassifier/init(trainingdata:parameters:)-4r6hr.md)
+- [init(trainingData:parameters:)](mlimageclassifier/init(trainingdata:parameters:).md)
   Creates an image classifier with a training dataset represented by a data source.
-- [init(trainingData: [String : [URL]], parameters: MLImageClassifier.ModelParameters) throws](mlimageclassifier/init(trainingdata:parameters:)-7j4w6.md)
-  Creates an image classifier with a training dataset represented by a dictionary.
-### Assessing model accuracy
+### Evaluating an image classifier
+- [func evaluation(on:)](mlimageclassifier/evaluation(on:).md)
+  Generates metrics describing the image classifier’s performance on labeled images represented by a data source.
 - [var trainingMetrics: MLClassifierMetrics](mlimageclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
 - [var validationMetrics: MLClassifierMetrics](mlimageclassifier/validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
-### Evaluating an image classifier
-- [func evaluation(on: MLImageClassifier.DataSource) -> MLClassifierMetrics](mlimageclassifier/evaluation(on:)-9p8mi.md)
-  Generates metrics describing the image classifier’s performance on labeled images represented by a data source.
-- [func evaluation(on: [String : [URL]]) -> MLClassifierMetrics](mlimageclassifier/evaluation(on:)-7338q.md)
-  Generates metrics describing the image classifier’s performance on labeled images represented by a dictionary.
 ### Testing an image classifier
-- [func prediction(from: CGImage) throws -> String](mlimageclassifier/prediction(from:)-97cll.md)
+- [func prediction(from:)](mlimageclassifier/prediction(from:).md)
   Generates a prediction for an image.
-- [func prediction(from: URL) throws -> String](mlimageclassifier/prediction(from:)-7fitc.md)
-  Generates a prediction for an image at the URL.
 - [func predictions(from: [URL]) throws -> [String]](mlimageclassifier/predictions(from:).md)
   Generates predictions for an array of images.
 ### Saving an image classifier
@@ -91,14 +84,12 @@ When your model does perform well enough, you save it as a Core ML model file wi
   A data source for an image classifier.
 - [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training an image classifier model.
-### Structures
+- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+  The underlying base model that extracts image features for image classifier training session.
 - [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
   A custom feature extractor a training session uses to train an image classifier.
 - [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
-### Enumerations
-- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
-  The underlying base model that extracts image features for image classifier training session.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](mlimageclassifier/customdebugstringconvertible-implementations.md)
 - [CustomPlaygroundDisplayConvertible Implementations](mlimageclassifier/customplaygrounddisplayconvertible-implementations.md)

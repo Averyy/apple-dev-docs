@@ -90,6 +90,8 @@ If you received authorization to use a specific entitlement from a group at Appl
 
 ## See Also
 
+- [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md)
+  Configure your target to include and customize capabilities that provide access to Apple’s app services.
 - [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 

@@ -6,7 +6,7 @@
 Allows this view to be manipulated using common hand gestures.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

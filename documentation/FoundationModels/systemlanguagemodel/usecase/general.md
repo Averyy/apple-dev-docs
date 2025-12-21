@@ -6,11 +6,11 @@
 A use case for general prompting.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -18,14 +18,18 @@ A use case for general prompting.
 static let general: SystemLanguageModel.UseCase
 ```
 
+## Mentions
+
+- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+
 #### Discussion
 
-This is the default use case for the base version of the model, so if you use `SystemLanguageModel.default`, you don’t need to specify a use case.
+This is the default use case for the base version of the model, so if you use `SystemLanguageModel/default`, you don’t need to specify a use case.
 
 ## See Also
 
-- [static let contentTagging: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/contenttagging.md)
-  A use case for content tagging.
+- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
+  Enhance the experience in your app by prompting an on-device large language model.
 
 
 ---

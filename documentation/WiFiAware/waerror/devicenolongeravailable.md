@@ -3,11 +3,11 @@
 **Framework**: Wi-Fi Aware  
 **Kind**: case
 
-An error that occurs if a device is out of range or no longer available.
+An error that occurs if a device is no longer available.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ case deviceNoLongerAvailable(WAError.DeviceNoLongerAvailableDetails)
 ## See Also
 
 - [WAError.DeviceNoLongerAvailableDetails](waerror/devicenolongeravailabledetails.md)
-  The optional details describing the lost device.
+  The optional details describing the unavailable device.
 
 
 ---

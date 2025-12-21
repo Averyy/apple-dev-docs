@@ -22,7 +22,6 @@ static var noAutoRename: NetService.Options { get }
 ## See Also
 
 - [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
-- [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
 
 
 ---

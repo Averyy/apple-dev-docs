@@ -24,6 +24,9 @@ Create and manage in-app purchases, including localizations, price schedules, an
   Create a review submission for an in-app purchase.
 - [In-App Purchase App Store Review Screenshots](in-app-purchase-app-store-review-screenshots.md)
   Create and commit App Store review screenshots for in-app purchases.
+### Managing In-App Purchase Offer Codes
+- [In-App Purchase Offer Codes](in-app-purchase-offers.md)
+  Create and manage offers for in-app purchases, including one-time use offer codes and custom offer codes.
 
 ## See Also
 

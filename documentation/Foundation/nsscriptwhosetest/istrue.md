@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns a Boolean value that indicates whether the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
+Returns a Boolean value that indicates whether the test represented by the receiver evaluates to true.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -17,7 +17,7 @@ func isTrue() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/swift/true), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/Swift/true), otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

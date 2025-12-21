@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+A Boolean value that indicates whether the newly created passkey supports the PRF extension.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

@@ -21,7 +21,7 @@ enum MTLSparsePageSize
 
 ## Topics
 
-### Sparse Texture Page Sizes
+### Sparse texture page sizes
 - [MTLSparsePageSize.size16](mtlsparsepagesize/size16.md)
   Represents a sparse texture’s page size of 16 kilobytes.
 - [MTLSparsePageSize.size64](mtlsparsepagesize/size64.md)

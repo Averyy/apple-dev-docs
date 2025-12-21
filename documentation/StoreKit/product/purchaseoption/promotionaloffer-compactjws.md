@@ -16,7 +16,7 @@ Apply a promotional offer to a purchase.
 ## Declaration
 
 ```swift
-@backDeployed(before: iOS 19.0, macOS 16.0, tvOS 19.0, watchOS 12.0, visionOS 3.0)
+@backDeployed(before: iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0)
 static func promotionalOffer(_ offerID: String, compactJWS: String) -> [Product.PurchaseOption]
 ```
 

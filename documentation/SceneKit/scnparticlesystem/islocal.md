@@ -22,7 +22,7 @@ var isLocal: Bool { get set }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false) (the default), all positions, distances, and velocities in the particle system are in the scene’s world coordinate system. If [`true`](https://developer.apple.com/documentation/swift/true), the particle system runs in the local coordinate space of the node containing it.
+If [`false`](https://developer.apple.com/documentation/Swift/false) (the default), all positions, distances, and velocities in the particle system are in the scene’s world coordinate system. If [`true`](https://developer.apple.com/documentation/Swift/true), the particle system runs in the local coordinate space of the node containing it.
 
 Use this property to choose whether particles spawned by a moving emitter follow the system as it moves.
 

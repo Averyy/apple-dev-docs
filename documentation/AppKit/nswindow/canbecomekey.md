@@ -17,9 +17,9 @@ var canBecomeKey: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window can become the key window, otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window can become the key window, otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Attempts to make the window the key window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/swift/false). The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window has a title bar or a resize bar, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Attempts to make the window the key window are abandoned if the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window has a title bar or a resize bar, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

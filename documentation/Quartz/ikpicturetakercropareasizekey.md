@@ -6,7 +6,6 @@
 A key for the cropping area size. The associated value is an `NSValue` object (`NSSize`).
 
 **Availability**:
-- Unknown ?+ - Deprecated
 - macOS 10.4+
 
 ## Declaration

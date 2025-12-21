@@ -29,7 +29,7 @@ convenience init(url: URL)
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?)](avmovie/init(data:options:).md)
   Creates a movie object from a movie file’s data.
-- [Initialization Options](initialization-options.md)
+- [Initialization options](initialization-options.md)
   Specify options to configure the initialization of a movie.
 
 

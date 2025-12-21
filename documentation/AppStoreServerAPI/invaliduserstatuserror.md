@@ -20,10 +20,14 @@ object InvalidUserStatusError
 
 #### Discussion
 
-For valid `userStatus` values in a [`ConsumptionRequest`](consumptionrequest.md), see [`userStatus`](userstatus.md).
+For valid `userStatus` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`userStatus`](userstatus.md).
 
 ## See Also
 
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
@@ -48,6 +52,8 @@ For valid `userStatus` values in a [`ConsumptionRequest`](consumptionrequest.md)
   An error that indicates the transaction identifier represents an unsupported In-App Purchase type.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 
 
 ---

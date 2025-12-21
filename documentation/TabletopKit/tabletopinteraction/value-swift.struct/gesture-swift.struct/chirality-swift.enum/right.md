@@ -14,6 +14,11 @@ Indicates a right-handed gesture.
 case right
 ```
 
+## See Also
+
+- [TabletopInteraction.Value.Gesture.Chirality.left](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.enum/left.md)
+  Indicates a left-handed gesture.
+
 
 ---
 

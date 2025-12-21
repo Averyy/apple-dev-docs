@@ -21,8 +21,8 @@ class UIFocusGuide
 
 ## Mentions
 
-- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
+- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
 
 #### Overview
 

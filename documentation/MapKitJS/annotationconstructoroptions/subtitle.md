@@ -11,7 +11,7 @@ The text to display as a subtitle on the second line of an annotation’s callou
 ## Declaration
 
 ```swift
-attribute string subtitle;
+subtitle?: string;
 ```
 
 #### Discussion

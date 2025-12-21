@@ -17,9 +17,9 @@ var automaticallyMirrorsInRightToLeftLayout: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the layout of a scrubber in a right-to-left interface is the mirror of the left-to-right version. If you wish to customize the behavior of the scrubber in right-to-left interfaces in a custom subclass, override this method to return [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the layout of a scrubber in a right-to-left interface is the mirror of the left-to-right version. If you wish to customize the behavior of the scrubber in right-to-left interfaces in a custom subclass, override this method to return [`false`](https://developer.apple.com/documentation/Swift/false).
 
-The base implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+The base implementation of this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

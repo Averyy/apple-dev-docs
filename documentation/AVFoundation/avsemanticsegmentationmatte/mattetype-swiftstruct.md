@@ -22,7 +22,7 @@ struct MatteType
 
 ## Topics
 
-### Matte Types
+### Matte types
 - [static let hair: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct/hair.md)
   A matting image that segments the hair from all people in the visible field of view of an image.
 - [static let skin: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct/skin.md)

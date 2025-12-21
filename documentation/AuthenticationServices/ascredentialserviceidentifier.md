@@ -34,6 +34,12 @@ class ASCredentialServiceIdentifier
   The kind of services that the identifier represents.
 - [ASCredentialServiceIdentifier.IdentifierType](ascredentialserviceidentifier/identifiertype.md)
   Possible values for the service identifier type.
+### Initializers
+- [init(identifier: String, type: ASCredentialServiceIdentifier.IdentifierType, displayName: String)](ascredentialserviceidentifier/init(identifier:type:displayname:).md)
+  Initializes an ASCredentialServiceIdentifier object.
+### Instance Properties
+- [var displayName: String?](ascredentialserviceidentifier/displayname.md)
+  A user visible name for the identifier. For `app` types it will contain the localized name of the app. For `URL` types it will contain the host name of the URL if it contains a valid host. For `URL` type identifiers that do not contain a valid host and for `domain` type identifiers, this will be equal to `identifier`. This property is meant only as a best effort suggestion for display purposes. It is not used by the system to identify the service or suggest a credential for AutoFill.
 
 ## Relationships
 

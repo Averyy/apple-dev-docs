@@ -22,7 +22,7 @@ case didDisappear
 
 #### Discussion
 
-In this phase, a transition should show the appearance that will be animated to to make the disappearance transition.
+In this phase, a transition should show the appearance that will be animated to make the disappearance transition.
 
 ## See Also
 

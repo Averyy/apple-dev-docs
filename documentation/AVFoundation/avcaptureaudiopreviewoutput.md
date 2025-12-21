@@ -16,10 +16,10 @@ class AVCaptureAudioPreviewOutput
 
 ## Topics
 
-### Creating Preview Output
+### Creating preview output
 - [init()](avcaptureaudiopreviewoutput/init.md)
   Creates an audio preview output object.
-### Configuring the Output
+### Configuring the output
 - [var volume: Float](avcaptureaudiopreviewoutput/volume.md)
   The output volume of the audio preview.
 - [var outputDeviceUniqueID: String?](avcaptureaudiopreviewoutput/outputdeviceuniqueid.md)

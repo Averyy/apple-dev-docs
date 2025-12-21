@@ -25,7 +25,7 @@ func setStageIn(_ region: MTLRegion)
 ## See Also
 
 - [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
-  Sets the command’s compute pipeline state object.
+  Sets the command’s compute pipeline state.
 - [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
   Sets the size, in pixels, of the imageblock.
 - [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)

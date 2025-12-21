@@ -6,7 +6,7 @@
 Adding a camera region anchor failed - an upper limit was reached for this specific camera enhancement type.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

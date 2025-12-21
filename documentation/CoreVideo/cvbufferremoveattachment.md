@@ -27,7 +27,7 @@ If the attachment exists in the buffer, the system removes it and decrements the
 ## Parameters
 
 - `buffer`: The buffer containing the attachment to remove.
-- `key`: A string that identifies the attachment, which can be of any  doc://com.apple.documentation/documentation/corefoundation/cftype . See   and   for predefined values.
+- `key`: A string that identifies the attachment, which can be of any  . See   and   for predefined values.
 
 ## See Also
 

@@ -32,8 +32,8 @@ func update(_ transformer: inout UpdatableTabularEstimatorToSupervisedAdaptor<Es
   Fits a transformer to a data frame.
 - [func makeTransformer() -> Estimator.Transformer](updatabletabularestimatortosupervisedadaptor/maketransformer.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [UpdatableTabularEstimatorToSupervisedAdaptor.Transformer](updatabletabularestimatortosupervisedadaptor/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

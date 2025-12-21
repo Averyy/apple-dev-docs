@@ -111,7 +111,7 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 - `format`: A   structure. Pass an empty structure to specify that the function populates the format with the properties of the Core Graphics image. Pass a populated structure to specify that the function converts the Core Graphics image to the format.
 - `backgroundColor`: If the source image contains alpha information and the format doesn’t contain alpha information, this function flattens the source image against this parameter.
 - `image`: The source Core Graphics image.
-- `flags`: Pass   if the destination buffer references existing data.
+- `flags`: The options to use when performing the operation. Pass   if the destination buffer references existing data; otherwise, pass  .
 
 
 ---

@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-convenience init(identifier: NSTouchBarItem.Identifier, title: String, image: UIImage, target: Any?, action: Selector?)
+convenience init(identifier: NSTouchBarItem.Identifier, title: String, image: NSImage, target: Any?, action: Selector?)
 ```
 
 ## See Also

@@ -28,7 +28,7 @@ Use the compute pipeline state to configure a compute pass by calling the [`setC
 
 - `computeFunction`: An   instance.
 - `options`: An   instance that represents the reflection information you want the method to generate.
-- `reflection`: Set to   if you don’t need reflection data.
+- `reflection`: In Swift, an optional pointer to an   optional.   In Objective-C, a pointer to an   instance.
 
 ## See Also
 

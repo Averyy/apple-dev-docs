@@ -21,12 +21,10 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mlrandomforestclassifier/description.md)
-  A text representation of the random forest classifier.
-- [var debugDescription: String](mlrandomforestclassifier/debugdescription.md)
-  A text representation of the random forest classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrandomforestclassifier/playgrounddescription.md)
-  A description of the random forest classifier shown in a playground.
+- [MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.struct.md)
+  Parameters that affect the process of training a model.
+- [let modelParameters: MLRandomForestClassifier.ModelParameters](mlrandomforestclassifier/modelparameters-swift.property.md)
+  The underlying parameters used when training the model.
 
 
 ---

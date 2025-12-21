@@ -9,6 +9,7 @@ An object that describes the hover pose of Apple Pencil during an interaction li
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

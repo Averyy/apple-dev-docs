@@ -19,7 +19,7 @@ var intersectionFunctionBuffer: UInt64
 
 #### Discussion
 
-Required to be aligned to 8 bytes.
+The GPU resource ID of the buffer containing intersection-function handles. Required to be aligned to 8 bytes.
 
 
 ---

@@ -17,7 +17,7 @@ func registerBooks(in bundle: Bundle) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if registration is successful, [`false`](https://developer.apple.com/documentation/swift/false) if the bundle doesn’t contain any help books or if registration fails.
+[`true`](https://developer.apple.com/documentation/Swift/true) if registration is successful, [`false`](https://developer.apple.com/documentation/Swift/false) if the bundle doesn’t contain any help books or if registration fails.
 
 #### Discussion
 

@@ -25,7 +25,7 @@ var template: some AssistantSchemas.Entity { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.spreadsheet.template` schema:
 
 ```swift
-@AssistantEntity(schema: .spreadsheet.template)
+@AppEntity(schema: .spreadsheet.template)
 struct SpreadsheetTemplateEntity: AppEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [SpreadsheetTemplateEntity.ID]) async throws -> [SpreadsheetTemplateEntity] { [] }

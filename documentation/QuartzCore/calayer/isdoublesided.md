@@ -21,7 +21,7 @@ var isDoubleSided: Bool { get set }
 
 #### Discussion
 
-When the value in this property is [`false`](https://developer.apple.com/documentation/swift/false), the layer hides its content when it faces away from the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value in this property is [`false`](https://developer.apple.com/documentation/Swift/false), the layer hides its content when it faces away from the viewer. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

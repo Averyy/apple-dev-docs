@@ -17,7 +17,7 @@ var sendsSearchStringImmediately: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell calls its action method immediately upon notification of any changes to the search field. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the cell pauses briefly after receiving a notification and then calls its action method. Pausing gives the user an opportunity to type more text into the search field and minimize the number of searches that are performed.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the cell calls its action method immediately upon notification of any changes to the search field. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the cell pauses briefly after receiving a notification and then calls its action method. Pausing gives the user an opportunity to type more text into the search field and minimize the number of searches that are performed.
 
 ## See Also
 

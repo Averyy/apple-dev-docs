@@ -32,11 +32,6 @@ struct AlertConfiguration
   The sound the system plays when the Live Activity alert appears on a person’s device.
 - [AlertConfiguration.AlertSound](alertconfiguration/alertsound.md)
   An object that describes the sound to play for a Live Activity update alert.
-### Operators
-- [static func == (AlertConfiguration, AlertConfiguration) -> Bool](alertconfiguration/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](alertconfiguration/equatable-implementations.md)
 
 ## Relationships
 

@@ -11,7 +11,7 @@ The address of the place, formatted using its conventions of its country or regi
 ## Declaration
 
 ```swift
-attribute string formattedAddress;
+formattedAddress?: string;
 ```
 
 ## See Also

@@ -14,7 +14,6 @@ Returns a change token for a specific save operation.
 ## Declaration
 
 ```swift
-@MainActor
 func changeCountToken(for saveOperation: UIDocument.SaveOperation) -> Any
 ```
 

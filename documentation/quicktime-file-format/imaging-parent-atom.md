@@ -5,9 +5,6 @@
 
 An atom that is the parent atom of one or more node-specific imaging atoms.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The imaging parent atom is the parent atom of one or more node-specific imaging atoms. Its atom type is `kQTVRImagingParentAtomType` (`'imgp'`). Only panoramas have an imaging atom defined.

@@ -17,7 +17,7 @@ var isHiddenOrHasHiddenAncestor: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the value of the [`isHidden`](nsview/ishidden.md) property is [`true`](https://developer.apple.com/documentation/swift/true) for the current view or any of its ancestors in the view hierarchy. This property does not account for other reasons why a view might be considered hidden, such as being positioned outside its superview’s bounds, not having a window, or residing in a window that is offscreen or overlapped by another window.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the value of the [`isHidden`](nsview/ishidden.md) property is [`true`](https://developer.apple.com/documentation/Swift/true) for the current view or any of its ancestors in the view hierarchy. This property does not account for other reasons why a view might be considered hidden, such as being positioned outside its superview’s bounds, not having a window, or residing in a window that is offscreen or overlapped by another window.
 
 ## See Also
 

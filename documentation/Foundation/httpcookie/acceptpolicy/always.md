@@ -30,10 +30,6 @@ This is the default cookie accept policy.
   Reject all cookies.
 - [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
   Accept cookies only from the main document domain.
-- [HTTPCookie.AcceptPolicy.never](httpcookie/acceptpolicy/never.md)
-  Reject all cookies.
-- [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
-  Accept cookies only from the main document domain.
 
 
 ---

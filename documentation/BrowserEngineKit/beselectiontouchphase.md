@@ -27,9 +27,6 @@ enum BESelectionTouchPhase
 - [BESelectionTouchPhase.started](beselectiontouchphase/started.md)
 ### Initializers
 - [init?(rawValue: Int)](beselectiontouchphase/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](beselectiontouchphase/equatable-implementations.md)
-- [RawRepresentable Implementations](beselectiontouchphase/rawrepresentable-implementations.md)
 
 ## Relationships
 

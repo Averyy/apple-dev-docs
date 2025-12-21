@@ -17,7 +17,7 @@ The version of Cocoa that created the file.
 ## Declaration
 
 ```swift
-static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey
+static let cocoaVersion: NSAttributedString.DocumentAttributeKey
 ```
 
 #### Discussion

@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Removes the change for the trait you provide.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

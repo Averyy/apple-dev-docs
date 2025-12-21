@@ -21,7 +21,7 @@ var isBoundToSystemGesture: Bool { get }
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the user binds this element to a gesture; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property is [`true`](https://developer.apple.com/documentation/Swift/true) if the user binds this element to a gesture; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

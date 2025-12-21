@@ -61,7 +61,7 @@ The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Resolved Issues
 
-- Using [`alert(_:isPresented:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(_:isPresented:actions:message:)-6awwp) and doc://com.apple.documentation/documentation/swiftui/group/confirmationdialog(_:ispresented:titlevisibility:actions:)-1v2e0 now present. (83731075)
+- Using [`alert(_:isPresented:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(_:isPresented:actions:message:)-6awwp) and [`confirmationDialog(_:isPresented:titleVisibility:actions:)`](https://developer.apple.com/documentation/SwiftUI/View/confirmationDialog(_:isPresented:titleVisibility:actions:)) now present. (83731075)
 
 - Pushing a [`ScrollView`](https://developer.apple.com/documentation/SwiftUI/ScrollView) that has a background applied while inside of a [`stack`](https://developer.apple.com/documentation/SwiftUI/NavigationViewStyle/stack) style [`NavigationView`](https://developer.apple.com/documentation/SwiftUI/NavigationView) when inside a [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) is now correctly tracked by the [`navigationBar`](https://developer.apple.com/documentation/UIKit/UINavigationController/navigationBar) and [`tabBar`](https://developer.apple.com/documentation/UIKit/UITabBarController/tabBar). (83686857)
 

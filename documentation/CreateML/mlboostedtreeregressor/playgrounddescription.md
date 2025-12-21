@@ -21,8 +21,6 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var model: MLModel](mlboostedtreeregressor/model.md)
-  The Core ML model.
 - [var description: String](mlboostedtreeregressor/description.md)
   A text representation of the boosted tree regressor.
 - [var debugDescription: String](mlboostedtreeregressor/debugdescription.md)

@@ -9,8 +9,12 @@ Understand the error codes that App Store Server API responses return.
 ### Errors
 - [object AccountNotFoundError](accountnotfounderror.md)
   An error that indicates the App Store account wasn’t found.
+- [object AdvancedCommerceTransactionNotSupportedError](advancedcommercetransactionnotsupportederror.md)
+  An error that indicates Advanced Commerce API transactions are not supported by the endpoint.
 - [object AppNotFoundError](appnotfounderror.md)
   An error that indicates the app wasn’t found.
+- [object AppTransactionDoesNotExistError](apptransactiondoesnotexisterror.md)
+  An error response that indicates an app transaction doesn’t exist for the specified customer.
 - [object AppTransactionIdNotSupportedError](apptransactionidnotsupportederror.md)
   An error that indicates the endpoint doesn’t support an app transaction ID.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
@@ -34,7 +38,7 @@ Understand the error codes that App Store Server API responses return.
 - [object InvalidOriginalTransactionIdError](invalidoriginaltransactioniderror.md)
   An error that indicates an invalid original transaction identifier.
 - [object InvalidRefundPreferenceError](invalidrefundpreferenceerror.md)
-  An error that indicates an invalid refund preference code.
+  An error that indicates an invalid refund preference value.
 - [object InvalidRequestIdentifierError](invalidrequestidentifiererror.md)
   An error that indicates an invalid request identifier.
 - [object InvalidRequestRevisionError](invalidrequestrevisionerror.md)
@@ -71,6 +75,10 @@ Understand the error codes that App Store Server API responses return.
 - [object OriginalTransactionIdNotFoundRetryableError](originaltransactionidnotfoundretryableerror.md)
   An error response that indicates the original transaction identifier wasn’t found, but you can try again.
 ### Consumption request errors
+- [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)
+  An error that indicates the consumption percentage field is unsupported for auto-renewable subscription transactions.
+- [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)
+  An error that indicates the consumption percentage is outside the valid range.
 - [object InvalidAccountTenureError](invalidaccounttenureerror.md)
   An error that indicates the value of the account tenure field is invalid.
 - [object InvalidAppAccountTokenError](invalidappaccounttokenerror.md)
@@ -97,6 +105,8 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the value in the user status field is invalid.
 - [object InvalidTransactionNotConsumableError](invalidtransactionnotconsumableerror.md)
   An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
+- [object UndeliveredConsumptionPercentageNonZeroError](undeliveredconsumptionpercentagenonzeroerror.md)
+  An error that indicates the consumption percentage must be zero for the provided delivery status.
 ### Notification test and history errors
 - [object InvalidEndDateError](invalidenddateerror.md)
   An error that indicates the end date is invalid.

@@ -11,7 +11,7 @@ A string that constrains search results to within the provided countries.
 ## Declaration
 
 ```swift
-attribute string limitToCountries;
+limitToCountries?: string;
 ```
 
 #### Discussion
@@ -20,24 +20,14 @@ The string is a comma-separated list of two-digit ISO 3166-2 country and region 
 
 ## See Also
 
-- [addressFilter](searchoptions/addressfilter.md)
-  An object that filters which address components to include or exclude in search results.
-- [coordinate](searchoptions/coordinate.md)
-  A map coordinate that provides a hint for the geographic area to search.
-- [includeAddresses](searchoptions/includeaddresses.md)
-  A Boolean value that indicates whether the search results should include addresses.
 - [includePhysicalFeatures](searchoptions/includephysicalfeatures.md)
   A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
 - [includePointsOfInterest](searchoptions/includepointsofinterest.md)
   A Boolean value that indicates whether the search results should include points of interest.
-- [language](searchoptions/language.md)
-  A language ID that determines the language for the search result text.
-- [pointOfInterestFilter](searchoptions/pointofinterestfilter.md)
-  A filter for including or excluding point-of-interest categories in search results.
-- [region](searchoptions/region.md)
-  A map region that provides a hint for the geographic area to search.
+- [includeQueries](searchautocompleteoptions/includequeries.md)
+  A Boolean value that indicates whether the search results include queries.
 - [regionPriority](searchoptions/regionpriority.md)
-  A filter that controls whether results occur outside, or strictly within, the region.
+  A region priority value that controls whether results occur outside, or strictly within, the region.
 
 
 ---

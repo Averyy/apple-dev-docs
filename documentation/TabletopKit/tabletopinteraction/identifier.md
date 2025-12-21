@@ -22,7 +22,7 @@ An interaction identifier is unique across all instances of the same tabletop ga
 
 ### Creating an identifier
 - [init(Int)](tabletopinteraction/identifier/init(_:).md)
-### Instance Properties
+### Getting the raw value
 - [let rawValue: Int](tabletopinteraction/identifier/rawvalue.md)
 
 ## Relationships

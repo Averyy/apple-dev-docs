@@ -22,12 +22,6 @@ struct TrendBaseline<Dimension> where Dimension : Dimension
 
 ## Topics
 
-### Operators
-- [static func == (TrendBaseline<Dimension>, TrendBaseline<Dimension>) -> Bool](trendbaseline/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](trendbaseline/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [let kind: TrendBaseline<Dimension>.Kind](trendbaseline/kind-swift.property.md)
   The manner in which the comparison between the baseline and current values are compared.
@@ -35,14 +29,9 @@ struct TrendBaseline<Dimension> where Dimension : Dimension
   The year the statistics collection began.
 - [let value: Measurement<Dimension>](trendbaseline/value.md)
   The recorded baseline value for the condition in which the trend is comparing to.
-### Instance Methods
-- [func encode(to: any Encoder) throws](trendbaseline/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Enumerations
 - [TrendBaseline.Kind](trendbaseline/kind-swift.enum.md)
   An enum describing what value is being compared between historical and current readings.
-### Default Implementations
-- [Equatable Implementations](trendbaseline/equatable-implementations.md)
 
 ## Relationships
 

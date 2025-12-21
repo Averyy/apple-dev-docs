@@ -22,7 +22,7 @@ var isDaylightSavingTime: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the receiver is currently using daylight saving time, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This property invokes [`isDaylightSavingTime(for:)`](nstimezone/isdaylightsavingtime(for:).md) with the current date as the argument.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is currently using daylight saving time, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). This property invokes [`isDaylightSavingTime(for:)`](nstimezone/isdaylightsavingtime(for:).md) with the current date as the argument.
 
 ## See Also
 

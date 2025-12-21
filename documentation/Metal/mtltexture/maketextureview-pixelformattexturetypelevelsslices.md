@@ -34,13 +34,13 @@ The texture type can be cast between the targets listed in the following table.
 | [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md) | [`MTLTextureType.type2D`](mtltexturetype/type2d.md), [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md) |
 | [`MTLTextureType.type3D`](mtltexturetype/type3d.md) | [`MTLTextureType.type3D`](mtltexturetype/type3d.md) |
 
-The `length` value of the `sliceRange` parameter must be `6` if the new texture type value is [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or a multiple of `6` if the new texture type value is [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md).
+The `length` value of the `sliceRange` parameter needs to be `6` if the new texture type value is [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or a multiple of `6` if the new texture type value is [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md).
 
 For more information on pixel format restrictions, see [`makeTextureView(pixelFormat:)`](mtltexture/maketextureview(pixelformat:).md)
 
 ## Parameters
 
-- `pixelFormat`: A new pixel format, which must be compatible with the original pixel format.
+- `pixelFormat`: A new pixel format, which needs to be compatible with the original pixel format.
 - `textureType`: A new texture type, which can be cast according to the original texture type as listed the table below.
 - `levelRange`: A new base level range that restricts which mipmap levels are visible in the new texture.
 - `sliceRange`: A new base slice range that restricts which array slices are visible in the new texture.

@@ -4,6 +4,11 @@
 
 Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Xcode 26.0+
+
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 321: [`Meet the HealthKit Medications API`](https://developer.apple.comhttps://developer.apple.com/wwdc25/321/).
@@ -13,7 +18,7 @@ Fetch medications and dose events from the HealthKit store, and create symptom s
 Before you run the sample code project:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team).
 
 To play with the sample app:
 

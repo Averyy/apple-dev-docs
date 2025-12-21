@@ -11,7 +11,7 @@ The maximum zoom level of the overlay.
 ## Declaration
 
 ```swift
-attribute number maximumZ;
+maximumZ: number;
 ```
 
 #### Discussion

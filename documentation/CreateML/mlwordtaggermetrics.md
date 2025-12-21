@@ -14,6 +14,10 @@ Metrics you use to evaluate a word tagger’s performance.
 struct MLWordTaggerMetrics
 ```
 
+## Mentions
+
+- [Creating a word tagger model](creating-a-word-tagger-model.md)
+
 ## Topics
 
 ### Analyzing the tagger’s performance
@@ -35,7 +39,6 @@ struct MLWordTaggerMetrics
   A text representation of the word tagger metrics that’s suitable for output during debugging.
 - [var playgroundDescription: Any](mlwordtaggermetrics/playgrounddescription.md)
   A description of the word tagger metrics shown in a playground.
-### Instance Properties
 - [var confusionDataFrame: DataFrame](mlwordtaggermetrics/confusiondataframe.md)
   A data frame comparing the actual and predicted labels for each class.
 - [var precisionRecallDataFrame: DataFrame](mlwordtaggermetrics/precisionrecalldataframe.md)

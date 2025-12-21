@@ -28,8 +28,6 @@ case incorrectName(URL, debugDescription: String)
   An error that indicates that a resource is missing.
 - [DatasetError.unreadableResource(_:)](dataseterror/unreadableresource(_:).md)
   An error that indicates that a resource is unreadable.
-- [var errorDescription: String?](dataseterror/errordescription.md)
-  A localized message describing what error occurred.
 
 
 ---

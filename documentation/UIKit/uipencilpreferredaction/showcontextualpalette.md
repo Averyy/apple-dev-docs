@@ -9,6 +9,7 @@ An action that toggles shows a contextual palette of markup tools, or undo and r
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
+- visionOS 26.2+
 
 ## Declaration
 

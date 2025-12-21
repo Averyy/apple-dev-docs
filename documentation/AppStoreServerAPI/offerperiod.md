@@ -37,9 +37,9 @@ The following table shows examples of offer period values.
 - [type offerIdentifier](offeridentifier.md)
   The string identifier of a subscription offer that you create in App Store Connect.
 - [type offerType](offertype.md)
-  The type of subscription offer.
+  The type of offer.
 - [type offerDiscountType](offerdiscounttype.md)
-  The payment mode for subscription offers on an auto-renewable subscription.
+  The payment mode for a discount offer on an In-App Purchase.
 
 
 ---

@@ -58,6 +58,7 @@ The [`UnitEnergy`](unitenergy.md) class defines its [`baseUnit()`](dimension/bas
 - [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 ### Initializers
 - [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitEnergy>)](unitenergy/init(forlocale:usage:).md)
+  Creates a `UnitEnergy` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 

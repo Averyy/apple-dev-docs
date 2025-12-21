@@ -21,7 +21,7 @@ func requiresPerObjectAuthorization() -> Bool
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), you must call [`requestPerObjectReadAuthorization(for:predicate:completion:)`](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md) each time you want to query for the data type. The user can then select the individual samples that the app has permission to read. The system always prompts the user for permission, regardless of whether they’ve previously granted permission.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), you must call [`requestPerObjectReadAuthorization(for:predicate:completion:)`](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md) each time you want to query for the data type. The user can then select the individual samples that the app has permission to read. The system always prompts the user for permission, regardless of whether they’ve previously granted permission.
 
 > ❗ **Important**:  Using the [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) method to request read access to any data types that require per-object authorization fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
 

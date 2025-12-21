@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The units that the layout view uses for vertical values (`NSString`). See Measurement unit attributes for possible values.
+The units that the layout view uses for vertical values (`NSString`).
 
 **Availability**:
 - macOS 10.6+
@@ -13,6 +13,10 @@ The units that the layout view uses for vertical values (`NSString`). See Measur
 ```swift
 static let verticalUnits: NSAccessibility.Attribute
 ```
+
+#### Discussion
+
+See [`Measurement Unit Attributes`](measurement-unit-attributes.md) for possible values.
 
 ## See Also
 

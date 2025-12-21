@@ -33,6 +33,8 @@ Review unsupported symbols and their replacements.
   An object that manages the display of a search bar, along with a table view that displays search results.
 - [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)
   A specific type of segue for presenting content in a popover.
+- [class UIWebView](uiwebview.md)
+  A view that embeds web content in your app.
 - [class UIUserNotificationAction](uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
 - [class UIUserNotificationCategory](uiusernotificationcategory.md)
@@ -55,6 +57,8 @@ Review unsupported symbols and their replacements.
 - [protocol UIViewControllerPreviewingDelegate](uiviewcontrollerpreviewingdelegate.md)
   A set of methods used by the delegate to respond, with a preview view controller and a commit view controller, to the user pressing a view object on the screen of a device that supports 3D Touch.
 ### Deprecated enumerations
+- [struct UIDirectionalRectEdge](uidirectionalrectedge.md)
+  Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
 - [enum UIStatusBarAnimation](uistatusbaranimation.md)
   Constants that specify the animation of the status bar as it’s hidden or made visible.
 ### Deprecated functions

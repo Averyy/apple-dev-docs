@@ -22,7 +22,7 @@ func checkResourceIsReachableAndReturnError(_ error: NSErrorPointer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the resource is reachable; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the resource is reachable; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
@@ -30,7 +30,7 @@ This method synchronously checks if the file at the provided URL is reachable. C
 
 If your app must perform operations on the file, such as opening it or copying resource properties, it is more efficient to attempt the operation and handle any failure that may occur.
 
-If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the object pointer referenced by `error` is populated with additional information.
+If this method returns [`false`](https://developer.apple.com/documentation/Swift/false), the object pointer referenced by `error` is populated with additional information.
 
 ## Parameters
 

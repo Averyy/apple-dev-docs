@@ -21,9 +21,9 @@ var clearsOnBeginEditing: Bool { get set }
 
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the text field’s previous text is cleared when the user selects the text field to begin editing. If [`false`](https://developer.apple.com/documentation/swift/false), the text field places an insertion point at the place where the user tapped the field.
+If this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the text field’s previous text is cleared when the user selects the text field to begin editing. If [`false`](https://developer.apple.com/documentation/Swift/false), the text field places an insertion point at the place where the user tapped the field.
 
-> **Note**:  Even if this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the text field delegate can override this behavior by returning [`false`](https://developer.apple.com/documentation/swift/false) from its [`textFieldShouldClear(_:)`](uitextfielddelegate/textfieldshouldclear(_:).md) method.
+> **Note**:  Even if this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the text field delegate can override this behavior by returning [`false`](https://developer.apple.com/documentation/Swift/false) from its [`textFieldShouldClear(_:)`](uitextfielddelegate/textfieldshouldclear(_:).md) method.
 
 ## See Also
 

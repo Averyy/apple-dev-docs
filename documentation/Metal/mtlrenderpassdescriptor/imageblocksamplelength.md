@@ -21,7 +21,7 @@ var imageblockSampleLength: Int { get set }
 
 #### Discussion
 
-If `imageBlockSampleLength` isn’t specified, Metal determines the imageblock sample length from the render pass attachment formats.  If any render pipelines bound to the encoder reference imageblocks with explicit layout, you must set this property.
+If `imageBlockSampleLength` isn’t specified, Metal determines the imageblock sample length from the render pass attachment formats.  If any render pipelines bound to the encoder reference imageblocks with explicit layout, you need to set this property.
 
 ## See Also
 

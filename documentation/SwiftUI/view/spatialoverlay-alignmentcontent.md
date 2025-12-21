@@ -6,7 +6,7 @@
 Adds secondary views within the 3D bounds of this view.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@ Prototype and test your Metal apps in Simulator.
 
 #### Overview
 
-In Xcode, you can write iOS, tvOS, and visionOS apps that use Metal and test them in Simulator, gaining the benefits of hardware acceleration on the Mac during development of your app. If you use frameworks built on top of Metal, such as SceneKit, Core Animation, and UIKit, you also experience improved performance when testing your apps in Simulator.
+In Xcode, you can write iOS, tvOS, and visionOS apps that use Metal and test them in Simulator, gaining the benefits of hardware acceleration on the Mac during development of your app. If you use frameworks built on top of Metal, such as Core Animation and UIKit, you also experience improved performance when testing your apps in Simulator.
 
 Use Simulator to rapidly prototype and test application behavior, and to develop the basic rendering or compute capabilities of your app. Use a hardware device instead of Simulator to design your final Metal workflow. Design your app to run on actual hardware, and test on real devices to tune its performance.
 
@@ -58,7 +58,7 @@ Consider the following guiding principles to use Simulator effectively in your M
 
  For example, when prototyping a game, you only care about how the game plays, not whether the pixels match what renders on device or if the game uses the same approach to render its content. Similarly, in other Metal apps, you might need to iterate on your app’s user experience. Simulator lets you test app behavior without needing a device.
 
- Simulator’s features differ significantly from Apple GPUs. To get best performance and battery life on devices with Apple GPUs, you need to use Metal features that Simulator doesn’t support. To develop, test, and profile those code paths, you need to run on a device.
+ The features that Simulator supports is significantly different from the features Apple GPUs support. To get best performance and battery life on devices with Apple GPUs, you need to use Metal features that Simulator doesn’t support. To develop, test, and profile those code paths, you need to run on a device.
 
  Maintaining a separate Metal path for Simulator takes time and effort. A large game development team can have many game designers and engine developers. Supporting Simulator lets designers work in Simulator to perfect gameplay while engineers work with devices to design the game engine and tune its performance. On a smaller team, you might find that your time is better spent focusing on device support rather than devoting resources to keep your game running in Simulator.
 
@@ -68,8 +68,8 @@ For more information about Simulator, see [`Devices and Simulator`](https://deve
 
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Capturing Metal commands programmatically](capturing-metal-commands-programmatically.md)
+  Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Logging shader debug messages](logging-shader-debug-messages.md)
   Print debugging messages that a shader generates using shader logging.
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
@@ -78,9 +78,9 @@ For more information about Simulator, see [`Devices and Simulator`](https://deve
   Debug and profile your Metal workload with a GPU trace.
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+- [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
-- [Metal Debugging Types](metal-debugging-types.md)
+- [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 

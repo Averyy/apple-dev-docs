@@ -30,7 +30,7 @@ let combineIdentifier = CombineIdentifier()
 
 ## Topics
 
-### Identifying Publisher Streams
+### Identifying publisher streams
 - [var combineIdentifier: CombineIdentifier](customcombineidentifierconvertible/combineidentifier.md)
   A unique identifier for identifying publisher streams.
 

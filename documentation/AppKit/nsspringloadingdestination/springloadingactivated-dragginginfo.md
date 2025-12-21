@@ -18,9 +18,9 @@ func springLoadingActivated(_ activated: Bool, draggingInfo: any NSDraggingInfo)
 
 #### Discussion
 
-Typically, spring-loading is fully activated when a hover timeout occurs or the user finishes force clicking on a destination object to initiate spring-loading. In these cases, the `springLoadingActivated:draggingInfo:` method is only called once with an `activated` parameter value of [`true`](https://developer.apple.com/documentation/swift/true).
+Typically, spring-loading is fully activated when a hover timeout occurs or the user finishes force clicking on a destination object to initiate spring-loading. In these cases, the `springLoadingActivated:draggingInfo:` method is only called once with an `activated` parameter value of [`true`](https://developer.apple.com/documentation/Swift/true).
 
-However, if the destination is configured with continuous activation (`NSSpringLoadingOptions` was set to `NSSpringLoadingContinuousActivation`), then the `springLoadingActivated:draggingInfo:` method is called twice. First, it’s called with an `activated` parameter value of [`true`](https://developer.apple.com/documentation/swift/true) when a hover timeout occurs or the user begins force clicking on a destination object to initiate spring-loading. Then, it’s called again with an `activated` parameter value of [`false`](https://developer.apple.com/documentation/swift/false) when the hover exits the destination’s bounds or the user finishes force clicking on the destination object.
+However, if the destination is configured with continuous activation (`NSSpringLoadingOptions` was set to `NSSpringLoadingContinuousActivation`), then the `springLoadingActivated:draggingInfo:` method is called twice. First, it’s called with an `activated` parameter value of [`true`](https://developer.apple.com/documentation/Swift/true) when a hover timeout occurs or the user begins force clicking on a destination object to initiate spring-loading. Then, it’s called again with an `activated` parameter value of [`false`](https://developer.apple.com/documentation/Swift/false) when the hover exits the destination’s bounds or the user finishes force clicking on the destination object.
 
 ## Parameters
 

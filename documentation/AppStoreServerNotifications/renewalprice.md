@@ -31,7 +31,7 @@ To determine the storefront, use the [`storefront`](storefront.md) value in the 
 - [type autoRenewProductId](autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
 - [type expirationIntent](expirationintent.md)
-  The reason a subscription expired.
+  The reason an auto-renewable subscription expired.
 - [type expiresDate](expiresdate.md)
   The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 - [type isUpgraded](isupgraded.md)

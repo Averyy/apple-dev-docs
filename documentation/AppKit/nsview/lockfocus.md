@@ -19,7 +19,7 @@ func lockFocus()
 
 If you don’t use a `display` method to draw an `NSView` object, you must invoke [`lockFocus()`](nsview/lockfocus().md) before invoking methods that send commands to the window server, and must balance it with an [`unlockFocus()`](nsview/unlockfocus().md) message when finished.
 
-Hiding or miniaturizing a one-shot window causes the backing store for that window to be released. (A one-shot window frees its window device when the window is hidden and another is created when it’s returned to the screen.) If you don’t use the standard display mechanism to draw, you should use [`lockFocusIfCanDraw()`](nsview/lockfocusifcandraw().md) rather than [`lockFocus()`](nsview/lockfocus().md) if there is a chance of drawing while the window is either miniaturized or hidden. This method throws an exception if the view is hidden or if drawing cannot happen for some other reason. To ensure that you can lock focus successfully, make sure the [`canDraw`](nsview/candraw.md) property is [`true`](https://developer.apple.com/documentation/swift/true); you can also call [`lockFocusIfCanDraw()`](nsview/lockfocusifcandraw().md) instead and use the return value of that method to determine if focus was obtained successfully.
+Hiding or miniaturizing a one-shot window causes the backing store for that window to be released. (A one-shot window frees its window device when the window is hidden and another is created when it’s returned to the screen.) If you don’t use the standard display mechanism to draw, you should use [`lockFocusIfCanDraw()`](nsview/lockfocusifcandraw().md) rather than [`lockFocus()`](nsview/lockfocus().md) if there is a chance of drawing while the window is either miniaturized or hidden. This method throws an exception if the view is hidden or if drawing cannot happen for some other reason. To ensure that you can lock focus successfully, make sure the [`canDraw`](nsview/candraw.md) property is [`true`](https://developer.apple.com/documentation/Swift/true); you can also call [`lockFocusIfCanDraw()`](nsview/lockfocusifcandraw().md) instead and use the return value of that method to determine if focus was obtained successfully.
 
 ## See Also
 
@@ -30,7 +30,7 @@ Hiding or miniaturizing a one-shot window causes the backing store for that wind
 - [func display()](nsview/display.md)
   Displays the view and all its subviews if possible, invoking each of the `NSView` methods [`lockFocus()`](nsview/lockfocus().md), [`draw(_:)`](nsview/draw(_:).md), and [`unlockFocus()`](nsview/unlockfocus().md) as necessary.
 - [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
-  Locks the focus to the view atomically if the `canDraw` method returns [`true`](https://developer.apple.com/documentation/swift/true) and returns the value of `canDraw`.
+  Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
 - [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
 - [func unlockFocus()](nsview/unlockfocus.md)

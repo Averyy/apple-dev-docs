@@ -6,12 +6,12 @@
 The size of the download file containing the asset pack in bytes.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,6 +22,11 @@ let downloadSize: Int
 #### Discussion
 
 This is different than the installation size, which could be larger.
+
+## See Also
+
+- [func download(for: BAContentRequest?) -> BADownload](assetpack/download(for:).md)
+  Creates a download object for the asset pack that you schedule using a download manager.
 
 
 ---

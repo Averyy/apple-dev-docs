@@ -17,11 +17,11 @@ optional func concludeDragOperation(_ sender: (any NSDraggingInfo)?)
 
 #### Discussion
 
-For this method to be invoked, the previous [`performDragOperation(_:)`](nsdraggingdestination/performdragoperation(_:).md) must have returned [`true`](https://developer.apple.com/documentation/swift/true).
+For this method to be invoked, the previous [`performDragOperation(_:)`](nsdraggingdestination/performdragoperation(_:).md) must have returned [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The destination implements this method to perform any tidying up that it needs to do, such as updating its visual representation now that it has incorporated the dragged data. This message is the last message sent from `sender` to the destination during a dragging session.
 
-If the `sender` object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property was set to [`true`](https://developer.apple.com/documentation/swift/true) in [`prepareForDragOperation(_:)`](nsdraggingdestination/preparefordragoperation(_:).md), then the drag image is still visible. At this point you should draw the final visual representation in the view. When this method returns, the drag image is removed form the screen. If your final visual representation matches the visual representation in the drag, this is a seamless transition.
+If the `sender` object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property was set to [`true`](https://developer.apple.com/documentation/Swift/true) in [`prepareForDragOperation(_:)`](nsdraggingdestination/preparefordragoperation(_:).md), then the drag image is still visible. At this point you should draw the final visual representation in the view. When this method returns, the drag image is removed form the screen. If your final visual representation matches the visual representation in the drag, this is a seamless transition.
 
 ## Parameters
 

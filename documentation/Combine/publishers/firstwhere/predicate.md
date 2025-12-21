@@ -20,6 +20,11 @@ The closure that determines whether to publish an element.
 let predicate: (Publishers.FirstWhere<Upstream>.Output) -> Bool
 ```
 
+## See Also
+
+- [let upstream: Upstream](publishers/firstwhere/upstream.md)
+  The publisher from which this publisher receives elements.
+
 
 ---
 

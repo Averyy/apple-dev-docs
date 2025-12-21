@@ -22,23 +22,18 @@ struct MapError<Upstream, Failure> where Upstream : Publisher, Failure : Error
 
 ## Topics
 
-### Creating a Map Error Publisher
+### Creating an error-mapping publisher
 - [init(upstream: Upstream, (Upstream.Failure) -> Failure)](publishers/maperror/init(upstream:_:).md)
 - [init(upstream: Upstream, transform: (Upstream.Failure) -> Failure)](publishers/maperror/init(upstream:transform:).md)
   Creates a publisher that converts any failure from the upstream publisher into a new error.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.MapError.Output](publishers/maperror/output.md)
   The kind of values published by this publisher.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/maperror/upstream.md)
   The publisher from which this publisher receives elements.
 - [let transform: (Upstream.Failure) -> Failure](publishers/maperror/transform.md)
   The closure that converts the upstream failure into a new error.
-### Applying Operators
-- [Publisher Operators](publishers-maperror-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/maperror/publisher-implementations.md)
 
 ## Relationships
 

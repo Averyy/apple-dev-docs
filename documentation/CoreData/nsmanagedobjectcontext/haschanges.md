@@ -22,7 +22,7 @@ var hasChanges: Bool { get }
 
 #### Discussion
 
-If you are observing this property using key-value observing (KVO) you should not touch the context or its objects within your implementation of doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalue for this notification. (This is because of the intricacy of the locations of the KVO notifications—for example, the context may be in the middle of an undo operation, or repairing a merge conflict.) If you need to send messages to the context or change any of its managed objects as a result of a change to the value of `hasChanges`, you must do so after the call stack unwinds (typically using doc://com.apple.documentation/documentation/objectivec/nsobject/1416176-perform or a similar method).
+If you are observing this property using key-value observing (KVO) you should not touch the context or its objects within your implementation of [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)) for this notification. (This is because of the intricacy of the locations of the KVO notifications—for example, the context may be in the middle of an undo operation, or repairing a merge conflict.) If you need to send messages to the context or change any of its managed objects as a result of a change to the value of `hasChanges`, you must do so after the call stack unwinds (typically using [`perform(_:with:afterDelay:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/perform(_:with:afterDelay:)) or a similar method).
 
 ##### Special Considerations
 

@@ -16,13 +16,13 @@ optional func outlineView(_ outlineView: NSOutlineView, writeItems items: [Any],
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the drag operation is allowed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the drag operation is allowed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Invoked by `outlineView` after it has been determined that a drag should begin, but before the drag has been started.
 
-To refuse the drag, return [`false`](https://developer.apple.com/documentation/swift/false). To start a drag, return [`true`](https://developer.apple.com/documentation/swift/true) and place the drag data onto the `pboard` (data, owner, and so on). The drag image and other drag-related information will be set up and provided by the outline view once this call returns with [`true`](https://developer.apple.com/documentation/swift/true).
+To refuse the drag, return [`false`](https://developer.apple.com/documentation/Swift/false). To start a drag, return [`true`](https://developer.apple.com/documentation/Swift/true) and place the drag data onto the `pboard` (data, owner, and so on). The drag image and other drag-related information will be set up and provided by the outline view once this call returns with [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## Parameters
 

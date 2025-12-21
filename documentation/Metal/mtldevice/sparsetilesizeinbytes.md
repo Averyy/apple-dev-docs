@@ -22,7 +22,7 @@ var sparseTileSizeInBytes: Int { get }
 
 ## Mentions
 
-- [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
 
 ## See Also
 

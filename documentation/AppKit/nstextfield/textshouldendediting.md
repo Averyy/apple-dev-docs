@@ -17,11 +17,11 @@ func textShouldEndEditing(_ textObject: NSText) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the new value is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the new value is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method validates the text field’s new value using the `NSCell` method [`isEntryAcceptable:`](nscell/isentryacceptable:.md). If the new value is valid and the delegate responds to [`control(_:textShouldEndEditing:)`](nscontroltexteditingdelegate/control(_:textshouldendediting:).md), this method invokes that method and returns the result. If the delegate returns [`false`](https://developer.apple.com/documentation/swift/false), the system beeps to indicate that the text field can’t validate the text. See [`NSControl`](nscontrol.md) for more information about the text delegate method.
+This method validates the text field’s new value using the `NSCell` method [`isEntryAcceptable:`](nscell/isentryacceptable:.md). If the new value is valid and the delegate responds to [`control(_:textShouldEndEditing:)`](nscontroltexteditingdelegate/control(_:textshouldendediting:).md), this method invokes that method and returns the result. If the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false), the system beeps to indicate that the text field can’t validate the text. See [`NSControl`](nscontrol.md) for more information about the text delegate method.
 
 ## Parameters
 

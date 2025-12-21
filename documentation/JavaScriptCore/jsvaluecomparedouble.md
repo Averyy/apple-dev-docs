@@ -23,6 +23,8 @@ A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if a
 
 #### Discussion
 
+Compares a JSValue with a double.
+
 `left` is converted to a double according to the rules specified by the JavaScript language then compared with `right`.
 
 ## Parameters

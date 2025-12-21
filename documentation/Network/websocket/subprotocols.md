@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Set the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
 func subprotocols(_ subprotocols: [String]) -> WebSocket
 ```
+
+#### Discussion
+
+> **Note**: This function will only take effect on WebSocket clients.
+
+## Parameters
+
+- `subprotocols`: An array of subprotocol strings.
 
 
 ---

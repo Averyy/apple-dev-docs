@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+For non-Gregorian calendars, this corresponds to the extended Gregorian year in which the calendar’s year begins.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

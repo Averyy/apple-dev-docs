@@ -20,7 +20,7 @@ var automaticallyUpdateForSelection: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) for the [`plain()`](uibutton/configuration-swift.struct/plain().md), [`gray()`](uibutton/configuration-swift.struct/gray().md), and [`tinted()`](uibutton/configuration-swift.struct/tinted().md) configurations. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) to customize the selection behavior.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true) for the [`plain()`](uibutton/configuration-swift.struct/plain().md), [`gray()`](uibutton/configuration-swift.struct/gray().md), and [`tinted()`](uibutton/configuration-swift.struct/tinted().md) configurations. Set this value to [`false`](https://developer.apple.com/documentation/Swift/false) to customize the selection behavior.
 
 
 ---

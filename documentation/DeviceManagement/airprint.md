@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure AirPrint printers in the user’s printer list.
+The payload that configures AirPrint printer discoverability in the user’s printer list.
 
 **Availability**:
 - iOS 7.0+
@@ -89,7 +89,7 @@ Specify `com.apple.airprint` as the payload type.
 ## See Also
 
 - [object Printing](printing.md)
-  The payload you use to configure printers.
+  The payload that configures printers.
 
 
 ---

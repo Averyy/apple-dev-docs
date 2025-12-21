@@ -36,10 +36,6 @@ struct Weather
 ### Getting weather alerts
 - [var weatherAlerts: [WeatherAlert]?](weather/weatheralerts.md)
   A list of severe weather alerts.
-### Default Implementations
-- [Decodable Implementations](weather/decodable-implementations.md)
-- [Encodable Implementations](weather/encodable-implementations.md)
-- [Equatable Implementations](weather/equatable-implementations.md)
 
 ## Relationships
 

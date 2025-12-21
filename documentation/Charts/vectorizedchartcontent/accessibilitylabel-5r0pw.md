@@ -21,6 +21,30 @@ nonisolated
 func accessibilityLabel(_ labelKey: KeyPath<Self.DataElement, LocalizedStringKey>) -> some VectorizedChartContent<Self.DataElement>
 ```
 
+## See Also
+
+- [func accessibilityHidden(KeyPath<Self.DataElement, Bool>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityhidden(_:).md)
+  Specifies whether to hide this chart content from system accessibility features.
+- [func accessibilityIdentifier(KeyPath<Self.DataElement, String>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityidentifier(_:).md)
+  Adds an identifier string to the chart content.
+- [func accessibilityLabel(KeyPath<Self.DataElement, some StringProtocol>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilitylabel(_:)-8zoay.md)
+  Adds a label to the chart content that describes its contents.
+- [func accessibilityLabel(KeyPath<Self.DataElement, Text>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilitylabel(_:)-46jbt.md)
+  Adds a label to the chart content that describes its contents.
+- [func accessibilityValue(KeyPath<Self.DataElement, some StringProtocol>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityvalue(_:)-2rv8b.md)
+  Adds a description of the value that the chart content contains.
+- [func accessibilityValue(KeyPath<Self.DataElement, Text>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityvalue(_:)-pylk.md)
+  Adds a description of the value that the chart content contains.
+- [func accessibilityValue(KeyPath<Self.DataElement, LocalizedStringKey>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityvalue(_:)-3dei8.md)
+  Adds a description of the value that the chart content contains.
+
 
 ---
 

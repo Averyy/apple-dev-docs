@@ -3,11 +3,13 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
+Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,7 +19,7 @@ class var supportedRevisions: IndexSet { get }
 
 #### Discussion
 
-This property allows clients to introspect at runtime what revisions are available for each configuration.
+A property you use to introspect at runtime which revisions are available for each configuration.
 
 
 ---

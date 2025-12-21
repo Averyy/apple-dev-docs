@@ -13,7 +13,6 @@ An activation function that returns beta if its input is less than a specified t
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

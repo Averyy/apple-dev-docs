@@ -17,7 +17,7 @@ var allowsEditingTextAttributes: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can modify the font and other textual attributes of the cell. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the user cannot edit the text or import graphics, which effectively means the cell cannot support RTFD text.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the user can modify the font and other textual attributes of the cell. When the value is [`false`](https://developer.apple.com/documentation/Swift/false), the user cannot edit the text or import graphics, which effectively means the cell cannot support RTFD text.
 
 ## See Also
 

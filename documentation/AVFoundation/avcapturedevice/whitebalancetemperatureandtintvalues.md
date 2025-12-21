@@ -19,12 +19,23 @@ struct WhiteBalanceTemperatureAndTintValues
 
 ## Topics
 
-### Creating Temperature and Tint Values
+### Accessing standard values
+- [static let cloudy: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/cloudy.md)
+  Temperature and tint values ideal for scenes illuminated with natural cloudy daylight.
+- [static let daylight: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/daylight.md)
+  Temperature and tint values ideal for scenes illuminated with natural daylight.
+- [static let fluorescent: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/fluorescent.md)
+  Temperature and tint values ideal for scenes illuminated with a fluorescent light source.
+- [static let shadow: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/shadow.md)
+  Temperature and tint values ideal for scenes illuminated with daylight but in heavy shade.
+- [static let tungsten: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues/tungsten.md)
+  Temperature and tint values ideal for scenes illuminated with a tungsten light source.
+### Creating temperature and tint values
 - [init()](avcapturedevice/whitebalancetemperatureandtintvalues/init.md)
   Creates a default value.
 - [init(temperature: Float, tint: Float)](avcapturedevice/whitebalancetemperatureandtintvalues/init(temperature:tint:).md)
   Creates a structure with a white balance temperature and tint.
-### Inspecting the Values
+### Inspecting the values
 - [var temperature: Float](avcapturedevice/whitebalancetemperatureandtintvalues/temperature.md)
   The white balance color correlated temperature in kelvin.
 - [var tint: Float](avcapturedevice/whitebalancetemperatureandtintvalues/tint.md)

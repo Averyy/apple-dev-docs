@@ -32,6 +32,7 @@ Use these built-in controls and indicators when composing custom views, and styl
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
 - [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 ### Creating special-purpose buttons
 - [struct EditButton](editbutton.md)
   A button that toggles the edit mode environment value.
@@ -116,6 +117,8 @@ Use these built-in controls and indicators when composing custom views, and styl
 ### Sizing controls
 - [func controlSize(_:)](view/controlsize(_:).md)
   Sets the size for controls within this view.
+- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+  The size to apply to controls within a view.
 - [enum ControlSize](controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 

@@ -22,14 +22,14 @@ struct MLUpdateProgressEvent
 
 ## Topics
 
-### Getting Progress Event Types
+### Getting progress event types
 - [static var trainingBegin: MLUpdateProgressEvent](mlupdateprogressevent/trainingbegin.md)
   An event that represents the start of training.
 - [static var miniBatchEnd: MLUpdateProgressEvent](mlupdateprogressevent/minibatchend.md)
   An event that represents the end of a mini-batch within a training epoch.
 - [static var epochEnd: MLUpdateProgressEvent](mlupdateprogressevent/epochend.md)
   An event that represents the end of training epoch.
-### Creating a Progress Event
+### Creating a progress event
 - [init(rawValue: Int)](mlupdateprogressevent/init(rawvalue:).md)
   Creates a progress event for the given integer.
 

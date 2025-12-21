@@ -17,7 +17,7 @@ var isShown: Bool { get }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if the popover is being shown, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the popover is being shown, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 The popover is considered to be shown from the point when [`show(relativeTo:of:preferredEdge:)`](nspopover/show(relativeto:of:preferrededge:).md) is invoked. A popover is considered closed in response to an invocation of either [`close()`](nspopover/close().md) or [`performClose(_:)`](nspopover/performclose(_:).md).
 

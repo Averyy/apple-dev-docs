@@ -7,9 +7,8 @@
 - iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
-- visionOS ?+
-- Unknown ?+ - Deprecated
 - macOS ?+
+- visionOS ?+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A type that stores information about a frame’s encoding, rendering, and presentation deadlines.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,4 +1,4 @@
-# Creating a Metal Dynamic Library
+# Creating a Metal dynamic library
 
 **Framework**: Metal
 
@@ -24,7 +24,7 @@ This sample requires the following system and software configuration:
 
 ## See Also
 
-- [Using Function Specialization to Build Pipeline Variants](using-function-specialization-to-build-pipeline-variants.md)
+- [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 
 

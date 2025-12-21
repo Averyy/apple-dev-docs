@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure the default fallback global Ethernet interface.
+The payload that configures the default fallback global Ethernet interface.
 
 **Availability**:
 - iOS 17.0+
@@ -28,7 +28,7 @@ This payload’s contents contain these profile-specific keys:
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS |
-| User channel | macOS, Shared iPad |
+| User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS |
 | Requires supervision | NA |
 | Requires user-approved MDM | NA |
@@ -103,17 +103,17 @@ This payload’s contents contain these profile-specific keys:
 ## See Also
 
 - [type 8021XFirstActiveEthernet](8021xfirstactiveethernet.md)
-  The payload you use to configure the first wired, active Ethernet interface.
+  The payload that configures the first wired, active Ethernet interface.
 - [type 8021XFirstEthernet](8021xfirstethernet.md)
-  The payload you use to configure the first wired Ethernet interface.
+  The payload that configures the first wired Ethernet interface.
 - [type 8021XSecondActiveEthernet](8021xsecondactiveethernet.md)
-  The payload you use to configure the second wired, active Ethernet interface.
+  The payload that configures the second wired, active Ethernet interface.
 - [type 8021XSecondEthernet](8021xsecondethernet.md)
-  The payload you use to configure the second wired Ethernet interface.
+  The payload that configures the second wired Ethernet interface.
 - [type 8021XThirdActiveEthernet](8021xthirdactiveethernet.md)
-  The payload you use to configure the third wired, active Ethernet interface.
+  The payload that configures the third wired, active Ethernet interface.
 - [type 8021XThirdEthernet](8021xthirdethernet.md)
-  The payload you use to configure the third wired Ethernet interface.
+  The payload that configures the third wired Ethernet interface.
 
 
 ---

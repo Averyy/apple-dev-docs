@@ -20,10 +20,6 @@ Creates a shaped array with exactly one value and zero dimensions.
 init(scalar: Scalar)
 ```
 
-#### Discussion
-
-Use the shaped array’s `MLShapedArray/scalar` property to access the single value.
-
 ## Parameters
 
 - `scalar`: A singular scalar value.
@@ -32,6 +28,8 @@ Use the shaped array’s `MLShapedArray/scalar` property to access the single va
 
 - [init<S>(scalars: S, shape: [Int])](mlshapedarray/init(scalars:shape:).md)
   Initialize with a sequence and the shape.
+- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarray/init(mutating:shape:).md)
+  Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
 
 
 ---

@@ -8,9 +8,8 @@ Given a set of part identifiers, return a dictionary of part ID to data objects 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- visionOS ?+
-- Unknown ?+ - Deprecated
 - Mac Catalyst 17.4+
+- visionOS ?+
 
 ## Declaration
 

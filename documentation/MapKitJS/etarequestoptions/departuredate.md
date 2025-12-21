@@ -11,7 +11,7 @@ The time of departure used in an estimated arrival time request.
 ## Declaration
 
 ```swift
-attribute Date departureDate;
+departureDate?: Date;
 ```
 
 #### Discussion

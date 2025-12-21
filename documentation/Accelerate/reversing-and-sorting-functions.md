@@ -11,10 +11,6 @@ Perform in-place reverse and sort operations on a vector.
   Reverses a vector of single-precision values in-place.
 - [static func reverse<V>(inout V)](vdsp/reverse(_:)-3aq38.md)
   Reverses a vector of double-precision values in-place.
-- [vDSP_vrvrs](vdsp_vrvrs.md)
-  Performs an in-place reversal of a single-precision vector.
-- [vDSP_vrvrsD](vdsp_vrvrsd.md)
-  Performs an in-place reversal of a double-precision vector.
 ### Vector sorting functions
 - [static func sort<V>(inout V, sortOrder: vDSP.SortOrder)](vdsp/sort(_:sortorder:)-wx0w.md)
   Sorts a vector of single-precision values in-place.
@@ -22,14 +18,6 @@ Perform in-place reverse and sort operations on a vector.
   Sorts a vector of double-precision values in-place.
 - [vDSP.SortOrder](vdsp/sortorder.md)
   Constants that specify the sorting order.
-- [vDSP_vsort](vdsp_vsort.md)
-  Performs an in-place sort of a single-precision vector.
-- [vDSP_vsortD](vdsp_vsortd.md)
-  Performs an in-place sort of a double-precision vector.
-- [vDSP_vsorti](vdsp_vsorti.md)
-  Performs an in-place sort of the indices into a single-precision vector.
-- [vDSP_vsortiD](vdsp_vsortid.md)
-  Performs an in-place sort of the indices into a double-precision vector.
 
 ## See Also
 

@@ -17,7 +17,8 @@ Create and manage your app’s custom product pages, including page visibility, 
   Get information about a specific app custom product page.
 - [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [GET /v1/appCustomProductPages/{id}/relationships/appCustomProductPageVersions](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+- [Get all version IDs for an app custom product page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+  Get a list of custom product page version IDs associated with a custom product page.
 - [Delete an app custom product page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.
 ### Objects
@@ -32,6 +33,7 @@ Create and manage your app’s custom product pages, including page visibility, 
 - [object AppCustomProductPagesResponse](appcustomproductpagesresponse.md)
   A response that contains a list of app custom product page resources.
 - [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse](appcustomproductpageappcustomproductpageversionslinkagesresponse.md)
+  A response that contains a list of IDs of related resources.
 
 ## See Also
 

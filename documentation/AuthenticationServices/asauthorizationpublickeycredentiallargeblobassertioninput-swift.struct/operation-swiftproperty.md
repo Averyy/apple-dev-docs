@@ -3,6 +3,8 @@
 **Framework**: Authentication Services  
 **Kind**: property
 
+The reading or writing operation the input performs.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -15,6 +17,11 @@
 ```swift
 var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation
 ```
+
+## See Also
+
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum.md)
+  A type to represent the possible operations of a large binary object assertion input.
 
 
 ---

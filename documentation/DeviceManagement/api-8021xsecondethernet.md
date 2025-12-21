@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: typealias
 
-The payload you use to configure the second wired Ethernet interface.
+The payload that configures the second wired Ethernet interface.
 
 **Availability**:
 - macOS 10.7+
@@ -102,17 +102,17 @@ This payload applies to Ethernet interfaces according to service order, regardle
 ## See Also
 
 - [object 8021XGlobalEthernet](8021xglobalethernet.md)
-  The payload you use to configure the default fallback global Ethernet interface.
+  The payload that configures the default fallback global Ethernet interface.
 - [type 8021XFirstActiveEthernet](8021xfirstactiveethernet.md)
-  The payload you use to configure the first wired, active Ethernet interface.
+  The payload that configures the first wired, active Ethernet interface.
 - [type 8021XFirstEthernet](8021xfirstethernet.md)
-  The payload you use to configure the first wired Ethernet interface.
+  The payload that configures the first wired Ethernet interface.
 - [type 8021XSecondActiveEthernet](8021xsecondactiveethernet.md)
-  The payload you use to configure the second wired, active Ethernet interface.
+  The payload that configures the second wired, active Ethernet interface.
 - [type 8021XThirdActiveEthernet](8021xthirdactiveethernet.md)
-  The payload you use to configure the third wired, active Ethernet interface.
+  The payload that configures the third wired, active Ethernet interface.
 - [type 8021XThirdEthernet](8021xthirdethernet.md)
-  The payload you use to configure the third wired Ethernet interface.
+  The payload that configures the third wired Ethernet interface.
 
 
 ---

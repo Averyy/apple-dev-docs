@@ -10,7 +10,7 @@ The event raised when an animation has been terminated, regardless of whether it
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -34,6 +34,8 @@ struct PlaybackTerminated
 
 ## See Also
 
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
+  The event raised when an animation has been started.
 - [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
   The event raised when an animation reaches the end of its duration.
 - [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)

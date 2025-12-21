@@ -42,16 +42,8 @@ Use one of these tint values with the [`listItemTint(_:)`](view/listitemtint(_:)
 
 ## See Also
 
-- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
-  Applies an inset to the rows in a list.
-- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
-  Requests that the containing list row use the provided hover effect.
-- [func listRowHoverEffectDisabled(Bool) -> some View](view/listrowhovereffectdisabled(_:).md)
-  Requests that the containing list row have its hover effect disabled.
 - [func listItemTint(_:)](view/listitemtint(_:).md)
   Sets a fixed tint color for content in a list.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a list.
 
 
 ---

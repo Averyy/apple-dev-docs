@@ -21,9 +21,9 @@ var isProximityMonitoringEnabled: Bool { get set }
 
 #### Discussion
 
-Enable proximity monitoring only when your application needs to be notified of changes to the proximity state. Otherwise, disable proximity monitoring. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Enable proximity monitoring only when your application needs to be notified of changes to the proximity state. Otherwise, disable proximity monitoring. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-Not all iOS devices have proximity sensors. To determine if proximity monitoring is available, attempt to enable it. If the value of the [`isProximityMonitoringEnabled`](uidevice/isproximitymonitoringenabled.md) property remains [`false`](https://developer.apple.com/documentation/swift/false), proximity monitoring isn’t available.
+Not all iOS devices have proximity sensors. To determine if proximity monitoring is available, attempt to enable it. If the value of the [`isProximityMonitoringEnabled`](uidevice/isproximitymonitoringenabled.md) property remains [`false`](https://developer.apple.com/documentation/Swift/false), proximity monitoring isn’t available.
 
 ## See Also
 

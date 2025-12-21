@@ -17,7 +17,7 @@ var pullsDown: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the menu behaves like a pull-down menu; when the value is [`false`](https://developer.apple.com/documentation/swift/false), it behaves like a pop-up menu. If you use this property to change the menu type from a pop-up menu to a pull-down menu, and the cell alters the state of its selected items, the state of the currently selected item is set to [`NSOffState`](nsoffstate.md) before the menu type is changed.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the menu behaves like a pull-down menu; when the value is [`false`](https://developer.apple.com/documentation/Swift/false), it behaves like a pop-up menu. If you use this property to change the menu type from a pop-up menu to a pull-down menu, and the cell alters the state of its selected items, the state of the currently selected item is set to [`NSOffState`](nsoffstate.md) before the menu type is changed.
 
 ## See Also
 

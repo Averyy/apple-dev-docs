@@ -6,7 +6,7 @@
 Text formatting controls placed beneath the window toolbar.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

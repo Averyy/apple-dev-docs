@@ -18,6 +18,10 @@ func systemExtensions(forApplicationWithBundleID bundleID: String) throws -> Set
 
 A set of system extension property objects on success, nil otherwise.
 
+#### Discussion
+
+Get information about system extension(s) in an app with a bundle identifier
+
 ## Parameters
 
 - `bundleID`: BundleIdentifier of the application containing the system extension(s)

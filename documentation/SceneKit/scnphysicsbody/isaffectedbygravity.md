@@ -22,9 +22,9 @@ var isAffectedByGravity: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), and the type of the body is [`SCNPhysicsBodyType.dynamic`](scnphysicsbodytype/dynamic.md), the [`gravity`](scnphysicsworld/gravity.md) property of the scene’s [`physicsWorld`](scnscene/physicsworld.md) object causes the body to accelerate.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), and the type of the body is [`SCNPhysicsBodyType.dynamic`](scnphysicsbodytype/dynamic.md), the [`gravity`](scnphysicsworld/gravity.md) property of the scene’s [`physicsWorld`](scnscene/physicsworld.md) object causes the body to accelerate.
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), the body is not affected by scene gravity. This option can be useful when making physics bodies whose behavior should be governed by [`SCNPhysicsField`](scnphysicsfield.md) objects instead of a constant global acceleration.
+If this property is [`false`](https://developer.apple.com/documentation/Swift/false), the body is not affected by scene gravity. This option can be useful when making physics bodies whose behavior should be governed by [`SCNPhysicsField`](scnphysicsfield.md) objects instead of a constant global acceleration.
 
 ## See Also
 

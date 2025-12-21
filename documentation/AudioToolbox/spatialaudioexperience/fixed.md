@@ -6,7 +6,7 @@
 A fixed spatial audio experience with an automatic sound stage size.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

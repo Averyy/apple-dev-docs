@@ -23,7 +23,7 @@ class CAEmitterLayer
 
 The particles, defined by instances of [`CAEmitterCell`](caemittercell.md), are drawn above the layer’s background color and border.
 
-The following code shows how to set up a simple point (the default [`emitterShape`](caemitterlayer/emittershape.md) is [`point`](caemitterlayeremittershape/point.md)) particle emitter. It uses an image named `RadialGradient.png` as the cell contents and, by setting the emitter cell’s [`emissionRange`](caemittercell/emissionrange.md) to `2 x` doc://com.apple.documentation/documentation/corefoundation/cgfloat/1845230-pi, the particles are emitted in all directions.
+The following code shows how to set up a simple point (the default [`emitterShape`](caemitterlayer/emittershape.md) is [`point`](caemitterlayeremittershape/point.md)) particle emitter. It uses an image named `RadialGradient.png` as the cell contents and, by setting the emitter cell’s [`emissionRange`](caemittercell/emissionrange.md) to `2` × [`pi`](https://developer.apple.com/documentation/Swift/FloatingPoint/pi), the particles are emitted in all directions.
 
 ```swift
 let emitterLayer = CAEmitterLayer()

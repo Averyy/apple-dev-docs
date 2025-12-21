@@ -252,9 +252,8 @@ func formatIntroDates() {
   A structure that creates a locale-appropriate attributed string representation of a date instance.
 ### Parsing Dates
 - [struct ParseStrategy](date/parsestrategy.md)
+  Options for parsing string representations of dates to create a `Date` instance.
 ### Comparing Date Format Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Symbols
@@ -262,8 +261,10 @@ func formatIntroDates() {
   Types that customize formatting templates either by using the date format style’s modifier functions or by constructing fixed-pattern date format strings.
 ### Structures
 - [Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct.md)
+  The type preserving attributed variant of this style.
 ### Instance Properties
 - [var attributedStyle: Date.FormatStyle.Attributed](date/formatstyle/attributedstyle.md)
+  Return the type preserving attributed variant of this style.
 
 ## Relationships
 

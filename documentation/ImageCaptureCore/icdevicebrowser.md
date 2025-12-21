@@ -71,7 +71,7 @@ class ICDeviceBrowser
 - [Photos Library Entitlement](../BundleResources/Entitlements/com.apple.security.personal-information.photos-library.md)
   A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
 - [NSCameraUsageDescription](../BundleResources/Information-Property-List/NSCameraUsageDescription.md)
-  A message that tells the user why the app is requesting access to the device’s camera.
+  A message that tells people why the app is requesting access to the device’s camera.
 
 
 ---

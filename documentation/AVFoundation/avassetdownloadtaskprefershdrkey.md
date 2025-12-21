@@ -20,7 +20,7 @@ let AVAssetDownloadTaskPrefersHDRKey: String
 
 #### Discussion
 
-By default, a download task prefers downloading HDR content. Provide a Boolean value of [`false`](https://developer.apple.com/documentation/swift/false) to change this behavior.
+By default, a download task prefers downloading HDR content. Provide a Boolean value of [`false`](https://developer.apple.com/documentation/Swift/false) to change this behavior.
 
 ## See Also
 

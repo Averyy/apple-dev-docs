@@ -20,6 +20,8 @@ struct AudioStreamPacketDependencyDescription
 
 #### Overview
 
+A structure to provide a description of the dependencies of one audio packet on other audio packets.
+
 ```None
                 1 if the packet is independently decodable, 0 otherwise.
 ```

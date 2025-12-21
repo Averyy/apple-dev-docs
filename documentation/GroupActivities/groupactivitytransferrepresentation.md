@@ -28,14 +28,6 @@ struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 ### Initializers
 - [init<ActivityType>(exporting: (Item) async throws -> ActivityType)](groupactivitytransferrepresentation/init(exporting:).md)
   Creates a type that exports a group activity for the specified item.
-### Instance Properties
-- [var body: some TransferRepresentation](groupactivitytransferrepresentation/body-swift.property.md)
-  A builder expression that describes the process of importing and exporting an item.
-### Type Aliases
-- [GroupActivityTransferRepresentation.Body](groupactivitytransferrepresentation/body-swift.typealias.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](groupactivitytransferrepresentation/transferrepresentation-implementations.md)
 
 ## Relationships
 
@@ -48,7 +40,7 @@ struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting Coordinated Media Playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

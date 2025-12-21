@@ -36,11 +36,14 @@ MapKit JS supports the following browser versions:
   Generate your token to access MapKit services with proper authorization.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
-- [mapkit](mapkit.md)
+- [class mapkit](mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 ### Version notes
 - [MapKit JS Release Notes](mapkit-js-release-notes.md)
   Learn about updates, bug fixes, and API changes for MapKit JS.
+### Enumerations
+- [const RegionPriority](regionpriority.md)
+  A value that indicates the importance of the configured region.
 
 ## See Also
 

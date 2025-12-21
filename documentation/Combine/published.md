@@ -55,12 +55,12 @@ When the property changes, publishing occurs in the property’s `willSet` block
 
 ## Topics
 
-### Creating a Published Instance
+### Creating a published instance
 - [init(initialValue: Value)](published/init(initialvalue:).md)
   Creates the published instance with an initial value.
 - [init(wrappedValue: Value)](published/init(wrappedvalue:).md)
   Creates the published instance with an initial wrapped value.
-### Publishing the Value
+### Publishing the value
 - [var projectedValue: Published<Value>.Publisher](published/projectedvalue.md)
   The property for which this instance exposes a publisher.
 - [Published.Publisher](published/publisher.md)

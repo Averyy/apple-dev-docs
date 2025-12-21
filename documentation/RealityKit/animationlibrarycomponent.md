@@ -10,7 +10,7 @@ A component that represents a collection of animations that an entity can play.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS 2.0+
 
 ## Declaration
@@ -33,7 +33,7 @@ Follow these steps to create an animation library for an entity:
 
 ![A screenshot of Reality Composer Pro showing the Animation Library in the Inspector. It contains two elements representing animations that have been added to the animation library. The animations are named walk and idle.](https://docs-assets.developer.apple.com/published/8615e96e7de1b7b88efee5c00ce42b04/realitycomposerpro-animationlibrary.jpg)
 
-> 💡 **Tip**: See [`Designing RealityKit content with Reality Composer Pro`](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro)  for more details on working with components in Reality Composer Pro.
+> 💡 **Tip**: See doc://com.apple.documentation/documentation/visionos/designing-realitykit-content-with-reality-composer-pro  for more details on working with components in Reality Composer Pro.
 
 At runtime, your app can access and play the animations that the entity stores.
 

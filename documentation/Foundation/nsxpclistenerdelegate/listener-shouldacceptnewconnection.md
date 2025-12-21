@@ -22,9 +22,9 @@ optional func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newC
 
 #### Discussion
 
-To accept the connection, first configure the connection if desired, then call [`resume()`](nsxpcconnection/resume().md) on the new connection, then return [`true`](https://developer.apple.com/documentation/swift/true).
+To accept the connection, first configure the connection if desired, then call [`resume()`](nsxpcconnection/resume().md) on the new connection, then return [`true`](https://developer.apple.com/documentation/Swift/true).
 
-To reject the connect, return a value of [`false`](https://developer.apple.com/documentation/swift/false). This causes the connection object to be invalidated.
+To reject the connect, return a value of [`false`](https://developer.apple.com/documentation/Swift/false). This causes the connection object to be invalidated.
 
 In this method, you can also set up properties on the connection object, such as its exported object and interfaces. Be sure to call [`resume()`](nsxpcconnection/resume().md) when you are finished configuring the connection object and are ready for it to receive messages.
 

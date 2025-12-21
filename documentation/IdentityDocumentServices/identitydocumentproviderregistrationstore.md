@@ -6,8 +6,8 @@
 A store that notifies the system which documents an app has available for presentment.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
 
 ## Declaration
@@ -42,14 +42,9 @@ The system uses the information you register with this store to appropriately su
   The status of the registration store.
 - [IdentityDocumentProviderRegistrationStore.Status](identitydocumentproviderregistrationstore/status-swift.enum.md)
   Defines a status for the registration store.
-### Retrieving the executor for the actor
-- [var unownedExecutor: UnownedSerialExecutor](identitydocumentproviderregistrationstore/unownedexecutor.md)
-  Retrieve the executor for this actor as an optimized, unowned reference.
 ### Errors
 - [IdentityDocumentProviderRegistrationStore.RegistrationError](identitydocumentproviderregistrationstore/registrationerror.md)
   An error type that the identity document registration store and associated types throw.
-### Default Implementations
-- [Actor Implementations](identitydocumentproviderregistrationstore/actor-implementations.md)
 
 ## Relationships
 

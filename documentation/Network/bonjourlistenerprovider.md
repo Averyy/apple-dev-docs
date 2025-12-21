@@ -3,14 +3,16 @@
 **Framework**: Network  
 **Kind**: struct
 
+Advertise a Bonjour service.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -21,9 +23,11 @@ struct BonjourListenerProvider
 ## Topics
 
 ### Initializers
-- [init(name: String?, type: String, domain: String?, metadata: NWTXTRecord?, port: NWEndpoint.Port?)](bonjourlistenerprovider/init(name:type:domain:metadata:port:).md)
+- [init(name: String?, type: String, domain: String?, txtRecord: NWTXTRecord?)](bonjourlistenerprovider/init(name:type:domain:txtrecord:).md)
+  Create a Bonjour service to advertise.
 ### Instance Properties
-- [var port: NWEndpoint.Port?](bonjourlistenerprovider/port.md)
+- [var service: NWListener.Service](bonjourlistenerprovider/service.md)
+  The service advertised by the listener.
 
 ## Relationships
 

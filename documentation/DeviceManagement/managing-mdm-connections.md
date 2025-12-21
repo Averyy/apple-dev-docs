@@ -8,7 +8,7 @@ Establish or remove a connection between a device and an MDM server.
 
 Mobile device management begins when you set up a server and distribute your MDM enrollment profile to devices to initiate connecting them. Then, you can send commands to managed devices to get detailed information about the device, install apps and books, and more.
 
-Once the device installs an MDM enrollment profile and connects to the server, it can receive commands from the server. When you remove the MDM enrollment profile from a device, that terminates the device mangagement relationship with the server.
+Once the device installs an MDM enrollment profile and connects to the server, it can receive commands from the server. When you remove the MDM enrollment profile from a device, that terminates the device management relationship with the server.
 
 ##### Create a New Device Management Connection
 
@@ -45,10 +45,14 @@ Terminate a management relationship with a device by performing one of these act
 ### Enrollment Errors
 - [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
   An error response that indicates a missing pairing token.
+- [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)
+  An error response that indicates Platform SSO is required.
 - [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
   An error response that indicates the system requires a software update.
 - [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+  An error response that indicates a device needs to unenroll.
 - [object ErrorWellKnownFailed](errorwellknownfailed.md)
+  An error response that indicates a well-known service discovery request failed.
 
 ## See Also
 

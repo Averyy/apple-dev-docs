@@ -21,7 +21,7 @@ class MTLTextureReferenceType
 
 ## Topics
 
-### Describing the Texture
+### Describing the texture
 - [var textureType: MTLTextureType](mtltexturereferencetype/texturetype.md)
   The texture type of the texture.
 - [var textureDataType: MTLDataType](mtltexturereferencetype/texturedatatype.md)
@@ -54,7 +54,7 @@ class MTLTextureReferenceType
 - [class MTLStructType](mtlstructtype.md)
   A description of a structure.
 - [class MTLStructMember](mtlstructmember.md)
-  An object that provides information about a field in a structure.
+  An instance that provides information about a field in a structure.
 - [class MTLPointerType](mtlpointertype.md)
   A description of a pointer.
 

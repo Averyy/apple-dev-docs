@@ -16,7 +16,7 @@ var accessibilityDisplayShouldReduceTransparency: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), don’t use semitransparent backgrounds in the user interface. For example, use only opaque windows.
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true), don’t use semitransparent backgrounds in the user interface. For example, use only opaque windows.
 
 Users can change this setting by choosing System Preferences > Accessibility > Display and selecting the “Reduce transparency” option. To receive updates when this setting changes, register to the [`accessibilityDisplayOptionsDidChangeNotification`](nsworkspace/accessibilitydisplayoptionsdidchangenotification.md) notification using [`notificationCenter`](nsworkspace/notificationcenter.md).
 

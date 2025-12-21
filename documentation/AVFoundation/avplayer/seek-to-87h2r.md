@@ -24,7 +24,7 @@ func seek(to time: CMTime)
 ## Mentions
 
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
-- [Presenting Chapter Markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](presenting-chapter-markers.md)
 
 #### Discussion
 

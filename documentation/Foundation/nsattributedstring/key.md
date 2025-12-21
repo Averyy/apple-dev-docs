@@ -190,7 +190,7 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [static let accessibilityFontBoldAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontboldattribute.md)
 - [static let accessibilityFontItalicAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontitalicattribute.md)
 - [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
-- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusion.md)
+- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusionattributename.md)
 
 ## Relationships
 

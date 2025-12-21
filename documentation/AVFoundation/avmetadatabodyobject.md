@@ -24,7 +24,7 @@ A metadata body object represents a single detected body in a picture. It’s th
 
 ## Topics
 
-### Inspecting Metadata
+### Inspecting metadata
 - [var bodyID: Int](avmetadatabodyobject/bodyid.md)
   An integer value that defines the unique identifier of an object in a picture.
 

@@ -43,7 +43,20 @@ struct Movie: Transferable {
 }
 ```
 
-It’s efficient to pass such data around as a file and the receiver loads it into memory only if it’s required.
+Note that the overall recommendation is to specify the content type that describes the file content as close as possible. For example, if you are sharing a PDF file, declare a [`FileRepresentation`](filerepresentation.md) of a `UTType.pdf` content type, instead of `UTType.fileURL` or `UTType.content` so the data can be dragged, shared, or imported to apps that support that data type:
+
+```swift
+  struct PDFDocument: Transferable {
+      var file: URL
+
+      static var transferRepresentation: some TransferRepresentation {
+          FileRepresentation(contentType: .pdf) { ...
+          } importing: { ... }
+      }
+  }
+```
+
+It’s efficient to pass data around as a file and the receiver loads it into memory only if it’s required.
 
 ## Topics
 
@@ -54,11 +67,6 @@ It’s efficient to pass such data around as a file and the receiver loads it in
   Creates a transfer representation for importing transferable items as files.
 - [init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile)](filerepresentation/init(exportedcontenttype:shouldallowtoopeninplace:exporting:).md)
   Creates a transfer representation for exporting transferable items as files.
-### Type Aliases
-- [FileRepresentation.Body](filerepresentation/body.md)
-  The transfer representation for the item.
-### Default Implementations
-- [TransferRepresentation Implementations](filerepresentation/transferrepresentation-implementations.md)
 
 ## Relationships
 

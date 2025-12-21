@@ -32,6 +32,8 @@ For more information and best practices on providing names and other data the sy
   The three-letter ISO 4217 currency code for the price of a product.
 - [type description](description.md)
   A string you provide that describes a SKU.
+- [type dependentSKU](dependentsku.md)
+  The product identifier of a dependent SKU in a subscription price change.
 - [type effective](effective.md)
   A string value that indicates when a requested change to an auto-renewable subscription goes into effect.
 - [type period](period.md)
@@ -56,8 +58,6 @@ For more information and best practices on providing names and other data the sy
   A tax code that applies to a SKU.
 - [type targetProductId](targetproductid.md)
   A generic product identifier that represents all Advanced Commerce API products to App Store Connect, which you use when you migrate a product.
-- [type transactionId](transactionid.md)
-  A unique identifier that the App Store generates for a transaction.
 
 
 ---

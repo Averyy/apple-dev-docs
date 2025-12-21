@@ -22,7 +22,7 @@ var isInserted: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been inserted in a managed object context, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If the receiver is a fault, accessing this property does not cause it to fire.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver has been inserted in a managed object context, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). If the receiver is a fault, accessing this property does not cause it to fire.
 
 ## See Also
 

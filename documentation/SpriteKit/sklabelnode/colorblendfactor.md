@@ -17,7 +17,6 @@ A floating-point value that describes how the color is blended with the font col
 ## Declaration
 
 ```swift
-@MainActor
 var colorBlendFactor: CGFloat { get set }
 ```
 

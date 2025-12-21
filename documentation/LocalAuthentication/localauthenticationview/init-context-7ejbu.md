@@ -6,7 +6,7 @@
 Creates a new view and pairs it with the specified authentication context.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

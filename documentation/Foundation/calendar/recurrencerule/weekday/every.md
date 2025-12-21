@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+Repeat on every weekday
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

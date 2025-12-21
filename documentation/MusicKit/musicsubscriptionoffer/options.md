@@ -36,10 +36,6 @@ struct Options
 ### Type Properties
 - [static let `default`: MusicSubscriptionOffer.Options](musicsubscriptionoffer/options/default.md)
   The default set of options for loading subscription offers for Apple Music.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicsubscriptionoffer/options/customstringconvertible-implementations.md)
-- [Equatable Implementations](musicsubscriptionoffer/options/equatable-implementations.md)
-- [Hashable Implementations](musicsubscriptionoffer/options/hashable-implementations.md)
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initialize with the characters in the given string.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,10 @@
 ```swift
 init(charactersIn string: String)
 ```
+
+## Parameters
+
+- `string`: The string content to inspect for characters.
 
 
 ---

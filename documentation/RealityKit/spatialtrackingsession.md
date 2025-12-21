@@ -89,13 +89,19 @@ SpatialTrackingSession.Configuration(
 
 ###### Use an Anchor Entity Alone in Visionos
 
-In visionOS, if you don’t set up `SpatialTrackingSession` manually, the system anchors your [`AnchorEntity`](anchorentity.md) in a privacy-preserving manner. In other words, the app doesn’t get read access to any transform information from the `AnchorEntity`.
+In visionOS, if you don’t set up a spatial tracking session manually, the system anchors your [`AnchorEntity`](anchorentity.md) in a privacy-preserving manner. In other words, the app doesn’t get read access to any transform information from the [`AnchorEntity`](anchorentity.md).
 
-When you set up `SpatialTrackingSession`, the app requests authorization, giving it the ability to read transform information if it has permission.
+The app requests permission to read transform information when you set up a spatial tracking session.
+
+> ❗ **Important**: In visionOS, avoid applying a transform that a spatial tracking session provides to an [`AnchorEntity`](anchorentity.md) instance to an entity because it makes the entity lag behind the anchor by one frame.
+
+You can avoid the one frame lag when rendering an entity with the transform of an [`AnchorEntity`](anchorentity.md) by adding it as a descendent of that anchor entity. Alternatively, you can add a [`ModelComponent`](modelcomponent.md) instance that contains the relevant content for rendering directly to the anchor entity.
+
+> 💡 **Tip**: Only apply the transform from a spatial tracking session instance to non-rendering purposes, such as collision detection or custom gestures.
 
 ###### Use an Arkit Session for Tracking
 
-You can set up an ARKit session manually and receive an anchor transform directly from ARKit by subscribing to the ARKit updates. You can then set the transform of your entities manually. This gives you full access to the anchor properties, but requires more setup on your part. With `SpatialTrackingSession`, RealityKit handles that for you and maintains your `AnchorEntity` alignment to the target anchor. In iOS, you manage and run the ARKit session if you run `SpatialTrackingSession` with [`run(_:session:arConfiguration:)`](spatialtrackingsession/run(_:session:arconfiguration:).md).
+You can set up an ARKit session manually and receive an anchor transform directly from ARKit by subscribing to the ARKit updates. You can then set the transform of your entities manually. This gives you full access to the anchor properties, but requires more setup on your part. With `SpatialTrackingSession`, RealityKit handles that for you and maintains your [`AnchorEntity`](anchorentity.md) alignment to the target anchor. In iOS, you manage and run the ARKit session if you run `SpatialTrackingSession` with [`run(_:session:arConfiguration:)`](spatialtrackingsession/run(_:session:arconfiguration:).md).
 
 ## Topics
 

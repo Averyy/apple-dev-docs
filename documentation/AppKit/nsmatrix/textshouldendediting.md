@@ -17,11 +17,11 @@ func textShouldEndEditing(_ textObject: NSText) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text object should proceed to finish editing and resign first responder status. If the delegate returns [`false`](https://developer.apple.com/documentation/swift/false), the text object selects all of its text and remains the first responder.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text object should proceed to finish editing and resign first responder status. If the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false), the text object selects all of its text and remains the first responder.
 
 #### Discussion
 
-The [`NSMatrix`](nsmatrix.md) method returns [`false`](https://developer.apple.com/documentation/swift/false) if the text field contains invalid contents; otherwise it returns the value passed back from [`control(_:textShouldEndEditing:)`](nscontroltexteditingdelegate/control(_:textshouldendediting:).md).
+The [`NSMatrix`](nsmatrix.md) method returns [`false`](https://developer.apple.com/documentation/Swift/false) if the text field contains invalid contents; otherwise it returns the value passed back from [`control(_:textShouldEndEditing:)`](nscontroltexteditingdelegate/control(_:textshouldendediting:).md).
 
 This method is invoked to let the [`NSTextField`](nstextfield.md) respond to impending loss of first-responder status. This method’s default behavior checks the text field for validity; providing that the field contents are deemed valid, and providing that the delegate responds, [`control(_:textShouldEndEditing:)`](nscontroltexteditingdelegate/control(_:textshouldendediting:).md) is sent to the receiver’s delegate (passing the receiver and `textObject` as parameters).
 

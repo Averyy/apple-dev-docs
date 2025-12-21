@@ -22,7 +22,7 @@ func CMTIME_IS_NEGATIVEINFINITY(_ time: CMTime) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the time represents negative infinity; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the time represents negative infinity; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

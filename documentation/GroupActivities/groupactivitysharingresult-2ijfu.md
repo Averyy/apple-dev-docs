@@ -24,17 +24,6 @@ enum GroupActivitySharingResult
   A result that indicates someone wants to share the activity with the group.
 - [GroupActivitySharingResult.cancelled](groupactivitysharingresult-2ijfu/cancelled.md)
   A result that indicates someone canceled the request.
-### Comparing results
-- [static func == (GroupActivitySharingResult, GroupActivitySharingResult) -> Bool](groupactivitysharingresult-2ijfu/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Getting the hash value
-- [func hash(into: inout Hasher)](groupactivitysharingresult-2ijfu/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Instance Properties
-- [var hashValue: Int](groupactivitysharingresult-2ijfu/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](groupactivitysharingresult-2ijfu/equatable-implementations.md)
 
 ## Relationships
 

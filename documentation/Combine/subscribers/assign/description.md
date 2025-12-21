@@ -20,6 +20,13 @@ A textual representation of this subscriber.
 final var description: String { get }
 ```
 
+## See Also
+
+- [var customMirror: Mirror](subscribers/assign/custommirror.md)
+  A mirror that reflects the subscriber.
+- [var playgroundDescription: Any](subscribers/assign/playgrounddescription.md)
+  A custom playground description for this subscriber.
+
 
 ---
 

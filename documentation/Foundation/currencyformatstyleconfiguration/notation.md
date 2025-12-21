@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: typealias
 
+The type used to configure notation for currency format styles.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

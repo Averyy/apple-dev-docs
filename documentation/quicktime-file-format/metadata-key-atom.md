@@ -7,8 +7,8 @@ An atom that contains a key that corresponds to the timed metadata track contain
 
 ## Mentions
 
-- [Timed metadata sample data format](timed_metadata_sample_data_format.md)
 - [Constant-size timed metadata sample data](constant-size_timed_metadata_sample_data.md)
+- [Timed metadata sample data format](timed_metadata_sample_data_format.md)
 
 #### Overview
 

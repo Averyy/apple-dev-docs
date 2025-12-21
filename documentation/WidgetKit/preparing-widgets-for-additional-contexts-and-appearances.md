@@ -73,26 +73,18 @@ When people place an iPhone widget on a Mac desktop, the system renders it using
 
 ## See Also
 
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
-  Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
-  Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
-  Ensure that your small system family widget works well in StandBy and CarPlay.
-- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
-  Implement glanceable views with WidgetKit and SwiftUI.
-- [SwiftUI views for widgets](swiftui-views.md)
-  Present your app’s content in widgets with SwiftUI views.
-- [Introducing SwiftUI](https://developer.apple.com/tutorials/SwiftUI)
-  SwiftUI is a modern way to declare user interfaces for any Apple platform. Create beautiful, dynamic apps faster than ever before.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
-  Constants that indicate the rendering mode for a widget.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
-  An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
-  Values that indicate different widget locations.
+- [Creating a widget extension](creating-a-widget-extension.md)
+  Display your app’s content in a convenient, informative widget on various devices.
+- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+  Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
+- [protocol Widget](../SwiftUI/Widget.md)
+  The configuration and content of a widget to display on the Home screen or in Notification Center.
+- [enum WidgetFamily](widgetfamily.md)
+  Values that define the widget’s size and shape.
+- [struct StaticConfiguration](staticconfiguration.md)
+  An object describing the content of a widget that has no user-configurable options.
 
 
 ---

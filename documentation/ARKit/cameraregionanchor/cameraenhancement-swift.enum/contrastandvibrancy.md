@@ -3,8 +3,10 @@
 **Framework**: ARKit  
 **Kind**: case
 
+Contrast and vibrancy enhancement in addition to simple crop/zoom.
+
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

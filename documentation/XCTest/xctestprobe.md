@@ -5,9 +5,6 @@
 
 An object that observes test activity status.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

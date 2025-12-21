@@ -21,7 +21,7 @@ func addInput(_ input: AVCaptureInput)
 
 #### Discussion
 
-It’s only valid to call this method if [`canAddInput(_:)`](avcapturesession/canaddinput(_:).md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+It’s only valid to call this method if [`canAddInput(_:)`](avcapturesession/canaddinput(_:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You can invoke this method while the session is running.
 

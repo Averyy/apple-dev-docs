@@ -19,9 +19,9 @@ Exports a binary file of the data table to the given directory URL.
 func write(to directoryURL: URL) throws
 ```
 
-#### Discussion
+## Parameters
 
-- directoryURL: The directory location in the file system to which the data table file should be written.
+- `directoryURL`: The directory location in the file system to which the data   table file should be written.
 
 ## See Also
 

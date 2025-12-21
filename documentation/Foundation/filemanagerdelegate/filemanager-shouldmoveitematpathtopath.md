@@ -22,7 +22,7 @@ optional func fileManager(_ fileManager: FileManager, shouldMoveItemAtPath srcPa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the operation should proceed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/Swift/true).
 
 #### Discussion
 

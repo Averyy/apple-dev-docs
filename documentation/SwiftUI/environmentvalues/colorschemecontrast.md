@@ -32,7 +32,7 @@ var body: some View {
 }
 ```
 
-When adjusting your app’s user interface to match the contrast, consider also checking the [`colorScheme`](environmentvalues/colorscheme.md) property to find out if SwiftUI is displaying the view with a light or dark appearance. For information, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in the Human Interface Guidelines.
+When adjusting your app’s user interface to match the contrast, consider also checking the [`colorScheme`](environmentvalues/colorscheme.md) property to find out if SwiftUI is displaying the view with a light or dark appearance. For information, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Color-and-effects) in the Human Interface Guidelines.
 
 > **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/Xcode/asset-management).
 

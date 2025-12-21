@@ -1,4 +1,4 @@
-# About Synchronization Events
+# About synchronization events
 
 **Framework**: Metal
 
@@ -21,26 +21,26 @@ An event contains a monotonically increasing unsigned 64-bit integer. An event s
 
 To signal a change to the event, call [`encodeSignalEvent(_:value:)`](mtlcommandbuffer/encodesignalevent(_:value:).md) on a command buffer, passing in the new value for this event. Metal signals the event after all scheduled commands prior to the event have finished, updating the event’s value if the new value is larger than its current value.
 
-To wait for an event to be signaled, call [`encodeWaitForEvent(_:value:)`](mtlcommandbuffer/encodewaitforevent(_:value:).md) on a command buffer, passing in the value to wait for. Commands that are after this event on the queue are not executed until the event’s value is at least as large as the value you provide.
+To wait for an event to be signaled, call [`encodeWaitForEvent(_:value:)`](mtlcommandbuffer/encodewaitforevent(_:value:).md) on a command buffer, passing in the value to wait for. Commands that are after this event on the queue don’t run until the event’s value is at least as large as the value you provide.
 
 > **Note**:  You can only encode events outside command encoder boundaries, not between encoded commands of a command encoder.
 
 ## See Also
 
-- [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Synchronizing Events Within a Single Device](synchronizing-events-within-a-single-device.md)
+- [Synchronizing events within a single device](synchronizing-events-within-a-single-device.md)
   Use nonshareable events to synchronize your app’s work within a single device.
-- [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
   Use shareable events to synchronize your app’s work across multiple devices or processes.
-- [Synchronizing Events Between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
   Use shareable events to synchronize your app’s work between a GPU and the CPU.
 - [protocol MTLEvent](mtlevent.md)
-  A simple semaphore to synchronize access to Metal resources.
+  A type that synchronizes memory operations to one or more resources within a single Metal device.
 - [protocol MTLSharedEvent](mtlsharedevent.md)
-  An object you use to synchronize access to Metal resources across multiple CPUs, GPUs, and processes.
+  A type that synchronizes memory operations to one or more resources across multiple CPUs, GPUs, and processes.
 - [class MTLSharedEventHandle](mtlsharedeventhandle.md)
-  An object you use to recreate a shareable event.
+  An instance you use to recreate a shareable event.
 - [class MTLSharedEventListener](mtlsharedeventlistener.md)
   A listener for shareable event notifications.
 - [typealias MTLSharedEventNotificationBlock](mtlsharedeventnotificationblock.md)

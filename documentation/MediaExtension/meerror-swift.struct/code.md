@@ -43,9 +43,6 @@ enum Code
   An error code that indicates the extension doesn’t support an aspect of the media.
 ### Initializers
 - [init?(rawValue: Int)](meerror-swift.struct/code/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](meerror-swift.struct/code/equatable-implementations.md)
-- [RawRepresentable Implementations](meerror-swift.struct/code/rawrepresentable-implementations.md)
 
 ## Relationships
 

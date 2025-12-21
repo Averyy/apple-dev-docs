@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app needs access to the user’s Desktop folder.
+A message that tells people why the app needs access to their Desktop folder.
 
 **Availability**:
 - macOS 10.15+
@@ -25,15 +25,14 @@ $ tccutil reset SystemPolicyDesktopFolder <bundleID>
 ## See Also
 
 - [NSDocumentsFolderUsageDescription](information-property-list/nsdocumentsfolderusagedescription.md)
-  A message that tells the user why the app needs access to the user’s Documents folder.
 - [NSDownloadsFolderUsageDescription](information-property-list/nsdownloadsfolderusagedescription.md)
-  A message that tells the user why the app needs access to the user’s Downloads folder.
+  A message that tells people why the app needs access to the user’s Downloads folder.
 - [NSNetworkVolumesUsageDescription](information-property-list/nsnetworkvolumesusagedescription.md)
-  A message that tells the user why the app needs access to files on a network volume.
+  A message that tells people why the app needs access to files on a network volume.
 - [NSRemovableVolumesUsageDescription](information-property-list/nsremovablevolumesusagedescription.md)
-  A message that tells the user why the app needs access to files on a removable volume.
+  A message that tells people why the app needs access to files on a removable volume.
 - [NSFileProviderDomainUsageDescription](information-property-list/nsfileproviderdomainusagedescription.md)
-  A message that tells the user why the app needs access to files managed by a file provider.
+  A message that tells people why the app needs access to files managed by a file provider.
 
 
 ---

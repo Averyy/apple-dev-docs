@@ -16,7 +16,7 @@ var activates: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the system to bring the app to the foreground.
+The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), which causes the system to bring the app to the foreground.
 
 ## See Also
 

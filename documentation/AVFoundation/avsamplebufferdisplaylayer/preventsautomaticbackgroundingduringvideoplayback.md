@@ -16,9 +16,9 @@ var preventsAutomaticBackgroundingDuringVideoPlayback: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which indicates the system doesn’t automatically background an app while playing video. The value of this property doesn’t prevent the user from backgrounding an app.
+The default value is [`true`](https://developer.apple.com/documentation/Swift/true), which indicates the system doesn’t automatically background an app while playing video. The value of this property doesn’t prevent the user from backgrounding an app.
 
-> **Note**:  When enqueuing sample buffers for playback at the user’s request, set the value to [`true`](https://developer.apple.com/documentation/swift/true), and when video playback isn’t the user’s primary focus, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  When enqueuing sample buffers for playback at the user’s request, set the value to [`true`](https://developer.apple.com/documentation/Swift/true), and when video playback isn’t the user’s primary focus, set it to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -3,9 +3,6 @@
 **Framework**: iAd  
 **Kind**: property
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 ## Declaration
 
 ```swift

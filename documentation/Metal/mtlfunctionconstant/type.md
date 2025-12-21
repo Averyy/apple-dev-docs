@@ -26,7 +26,7 @@ var type: MTLDataType { get }
 - [var index: Int](mtlfunctionconstant/index.md)
   The index of the function constant.
 - [var required: Bool](mtlfunctionconstant/required.md)
-  A Boolean value indicating whether the function constant must be provided to specialize the function.
+  A Boolean value indicating whether the function constant needs to be provided to specialize the function.
 
 
 ---

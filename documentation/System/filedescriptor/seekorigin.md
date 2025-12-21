@@ -42,25 +42,11 @@ struct SeekOrigin
 ### Working with C APIs
 - [init(rawValue: CInt)](filedescriptor/seekorigin/init(rawvalue:).md)
   Create a strongly-typed seek origin from a raw C value.
-- [var rawValue: CInt](filedescriptor/seekorigin/rawvalue-swift.property.md)
+- [var rawValue: CInt](filedescriptor/seekorigin/rawvalue.md)
   The raw C value.
-- [FileDescriptor.SeekOrigin.RawValue](filedescriptor/seekorigin/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Comparing Seek Origins
-- [static func != (Self, Self) -> Bool](filedescriptor/seekorigin/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](filedescriptor/seekorigin/hash(into:).md)
-- [var hashValue: Int](filedescriptor/seekorigin/hashvalue.md)
-### Encoding Seek Origins
-- [func encode(to: any Encoder) throws](filedescriptor/seekorigin/encode(to:).md)
-  Encodes this value into the given encoder, when the type’s `RawValue` is `Int32`.
-- [init(from: any Decoder) throws](filedescriptor/seekorigin/init(from:).md)
-  Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](filedescriptor/seekorigin/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](filedescriptor/seekorigin/customstringconvertible-implementations.md)
-- [Equatable Implementations](filedescriptor/seekorigin/equatable-implementations.md)
-- [RawRepresentable Implementations](filedescriptor/seekorigin/rawrepresentable-implementations.md)
 
 ## Relationships
 

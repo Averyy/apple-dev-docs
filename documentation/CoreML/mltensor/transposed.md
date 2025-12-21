@@ -34,6 +34,11 @@ let y = x.transposed()
 y.shape // is [3, 2, 1]
 ```
 
+## See Also
+
+- [func transposed(permutation:)](mltensor/transposed(permutation:).md)
+  Permutes the dimensions of the tensor in the specified order.
+
 
 ---
 

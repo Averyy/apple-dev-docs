@@ -49,20 +49,8 @@ enum EyeAndHeadTrackersUsage
 - [HIDUsage.EyeAndHeadTrackersUsage.status](hidusage/eyeandheadtrackersusage/status.md)
 - [HIDUsage.EyeAndHeadTrackersUsage.trackerQuality](hidusage/eyeandheadtrackersusage/trackerquality.md)
 - [HIDUsage.EyeAndHeadTrackersUsage.trackingData](hidusage/eyeandheadtrackersusage/trackingdata.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/eyeandheadtrackersusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/eyeandheadtrackersusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.EyeAndHeadTrackersUsage.RawValue](hidusage/eyeandheadtrackersusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/eyeandheadtrackersusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/eyeandheadtrackersusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/eyeandheadtrackersusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

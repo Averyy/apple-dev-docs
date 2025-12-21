@@ -50,7 +50,7 @@ The methods of [`NetService`](netservice.md) operate asynchronously so your appl
 - [var domain: String](netservice/domain.md)
   A string containing the domain for this service.
 - [var includesPeerToPeer: Bool](netservice/includespeertopeer.md)
-  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+  Specifies whether to also publish, resolve, or monitor this service over peer-to-peer Bluetooth and Wi-Fi, if available.
 - [func getInputStream(UnsafeMutablePointer<InputStream?>?, outputStream: UnsafeMutablePointer<OutputStream?>?) -> Bool](netservice/getinputstream(_:outputstream:).md)
   Creates a pair of input and output streams for the receiver and returns a Boolean value that indicates whether they were retrieved successfully.
 - [var name: String](netservice/name.md)
@@ -115,7 +115,7 @@ The methods of [`NetService`](netservice.md) operate asynchronously so your appl
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
   Bonjour service types browsed by the app.
 - [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
-  A message that tells the user why the app is requesting access to the local network.
+  A message that tells people why the app is requesting access to the local network.
 
 
 ---

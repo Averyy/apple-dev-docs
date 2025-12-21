@@ -42,7 +42,7 @@ Some format reinterpretations require you to create the source texture with a sp
 
 ## Parameters
 
-- `pixelFormat`: A new pixel format, which must be compatible with the original pixel format.
+- `pixelFormat`: A new pixel format, which needs to be compatible with the original pixel format.
 
 ## See Also
 

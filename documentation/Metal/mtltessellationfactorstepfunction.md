@@ -21,7 +21,7 @@ enum MTLTessellationFactorStepFunction
 
 ## Topics
 
-### Constants
+### Factor step functions
 - [MTLTessellationFactorStepFunction.constant](mtltessellationfactorstepfunction/constant.md)
   A constant step function. For all instances, the tessellation factor for all patches in a patch draw call is at the `offset` location in the tessellation factor buffer.
 - [MTLTessellationFactorStepFunction.perPatch](mtltessellationfactorstepfunction/perpatch.md)

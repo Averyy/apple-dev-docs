@@ -36,13 +36,6 @@ struct ImageColorTransformer
 ### Applying the transformation
 - [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imagecolortransformer/applied(to:eventhandler:).md)
   Performs the image color transformation operation on the input image.
-### Type Aliases
-- [ImageColorTransformer.Input](imagecolortransformer/input.md)
-  The input type.
-- [ImageColorTransformer.Output](imagecolortransformer/output.md)
-  The output type.
-### Default Implementations
-- [Transformer Implementations](imagecolortransformer/transformer-implementations.md)
 
 ## Relationships
 

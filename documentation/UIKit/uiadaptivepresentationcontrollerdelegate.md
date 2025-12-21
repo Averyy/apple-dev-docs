@@ -58,18 +58,12 @@ After implementing an object that conforms to this protocol, assign that object 
 
 ## See Also
 
-- [Automatic trait tracking](automatic-trait-tracking.md)
-  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-  Change images and resources dynamically when the screen gamut on your device changes.
 - [class UITraitCollection](uitraitcollection.md)
   A collection of data that represents the environment for an individual element in your app’s user interface.
 - [protocol UITraitEnvironment](uitraitenvironment.md)
   A set of methods that makes the iOS interface environment available to your app.
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-  A type that calls your code in reaction to changes in the trait environment.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
-  A mutable container of traits.
+- [Automatic trait tracking](automatic-trait-tracking.md)
+  Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
 - [protocol UIContentContainer](uicontentcontainer.md)
   A set of methods for adapting the contents of your view controllers to size and trait changes.
 

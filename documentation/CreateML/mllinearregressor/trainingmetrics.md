@@ -21,6 +21,8 @@ var trainingMetrics: MLRegressorMetrics { get }
 
 ## See Also
 
+- [func evaluation(on:)](mllinearregressor/evaluation(on:).md)
+  Evaluates the classifier on the provided labeled data.
 - [var validationMetrics: MLRegressorMetrics](mllinearregressor/validationmetrics.md)
   Measurements of the regressor’s performance on the validation data set.
 

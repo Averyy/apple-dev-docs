@@ -24,7 +24,7 @@ var usesDefaultMomentOfInertia: Bool { get set }
 
 A body’s moment of inertia determines how it responds to torques (that is, forces with a rotational component).
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), SceneKit automatically determines the body’s moment of inertia based on its shape and mass. Set this property to [`false`](https://developer.apple.com/documentation/swift/false) and use the [`momentOfInertia`](scnphysicsbody/momentofinertia.md) property to define a custom moment of inertia (for example, to model an object of non-uniform density).
+If this property is [`true`](https://developer.apple.com/documentation/Swift/true) (the default), SceneKit automatically determines the body’s moment of inertia based on its shape and mass. Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) and use the [`momentOfInertia`](scnphysicsbody/momentofinertia.md) property to define a custom moment of inertia (for example, to model an object of non-uniform density).
 
 ## See Also
 

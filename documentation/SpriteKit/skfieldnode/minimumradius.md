@@ -17,7 +17,6 @@ The minimum value for distance-based effects.
 ## Declaration
 
 ```swift
-@MainActor
 var minimumRadius: Float { get set }
 ```
 

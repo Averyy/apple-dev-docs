@@ -21,8 +21,6 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var model: MLModel](mldecisiontreeclassifier/model.md)
-  The Core ML model.
 - [var description: String](mldecisiontreeclassifier/description.md)
   A text representation of the decision tree classifier.
 - [var debugDescription: String](mldecisiontreeclassifier/debugdescription.md)

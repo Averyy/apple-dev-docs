@@ -17,7 +17,7 @@ func startRendering() -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the composition fails to start rendering; [`true`](https://developer.apple.com/documentation/swift/true) otherwise.
+Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the composition fails to start rendering; [`true`](https://developer.apple.com/documentation/Swift/true) otherwise.
 
 ## See Also
 

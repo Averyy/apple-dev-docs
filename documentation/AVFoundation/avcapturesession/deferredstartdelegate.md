@@ -6,11 +6,11 @@
 A delegate object that observes events about deferred start.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 
@@ -20,12 +20,12 @@ var deferredStartDelegate: (any AVCaptureSessionDeferredStartDelegate)? { get }
 
 #### Discussion
 
-Call the `setDeferredStartDelegate:queue:` method to set the deferred start delegate for a session.
+Call the [`setDeferredStartDelegate(_:deferredStartDelegateCallbackQueue:)`](avcapturesession/setdeferredstartdelegate(_:deferredstartdelegatecallbackqueue:).md) method to set the deferred start delegate for a session.
 
 ## See Also
 
 - [var isManualDeferredStartSupported: Bool](avcapturesession/ismanualdeferredstartsupported.md)
-  A Boolean value that indicates whether the session supports manually running deferred start.
+  A `BOOL` value that indicates whether the session supports manually running deferred start.
 - [var automaticallyRunsDeferredStart: Bool](avcapturesession/automaticallyrunsdeferredstart.md)
   A Boolean value that indicates whether deferred start runs automatically.
 - [func runDeferredStartWhenNeeded()](avcapturesession/rundeferredstartwhenneeded.md)

@@ -5,9 +5,6 @@
 
 An atom contains the name of the scene and the default node ID to be used when the file is first opened.
 
-**Availability**:
-- Unknown ?+ - Deprecated
-
 #### Overview
 
 The VR world header atom is a leaf atom. Its atom type is `kQTVRWorldHeaderAtomType` (`'vrsc'`). It contains the name of the scene and the default node ID to be used when the file is first opened as well as fields reserved for future use.

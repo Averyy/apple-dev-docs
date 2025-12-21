@@ -23,9 +23,6 @@ This event propagates input from the dock accessory. Example events are button p
 
 ## Topics
 
-### Operators
-- [static func == (DockAccessory.AccessoryEvent, DockAccessory.AccessoryEvent) -> Bool](dockaccessory/accessoryevent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [DockAccessory.AccessoryEvent.button(id:pressed:)](dockaccessory/accessoryevent/button(id:pressed:).md)
   A button press event on the dock accessory.
@@ -35,14 +32,6 @@ This event propagates input from the dock accessory. Example events are button p
   A camera shutter toggle event.
 - [DockAccessory.AccessoryEvent.cameraZoom(factor:)](dockaccessory/accessoryevent/camerazoom(factor:).md)
   A camera zoom event.
-### Instance Properties
-- [var hashValue: Int](dockaccessory/accessoryevent/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](dockaccessory/accessoryevent/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](dockaccessory/accessoryevent/equatable-implementations.md)
 
 ## Relationships
 

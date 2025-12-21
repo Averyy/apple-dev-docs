@@ -22,7 +22,7 @@ struct AVContentKeySystem
 
 ## Topics
 
-### Key-Delivery Methods
+### Key-delivery methods
 - [static let fairPlayStreaming: AVContentKeySystem](avcontentkeysystem/fairplaystreaming.md)
   A method of key delivery that uses FairPlay Streaming.
 - [static let clearKey: AVContentKeySystem](avcontentkeysystem/clearkey.md)

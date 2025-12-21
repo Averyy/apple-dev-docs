@@ -21,11 +21,11 @@ enum MTLCounterSamplingPoint
 
 ## Mentions
 
-- [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
-### Reading Sampling Boundary Types
+### Reading sampling boundary types
 - [MTLCounterSamplingPoint.atBlitBoundary](mtlcountersamplingpoint/atblitboundary.md)
   Counter sampling is allowed between blit commands in a blit pass.
 - [MTLCounterSamplingPoint.atDispatchBoundary](mtlcountersamplingpoint/atdispatchboundary.md)

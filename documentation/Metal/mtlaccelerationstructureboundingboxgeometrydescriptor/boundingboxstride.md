@@ -21,12 +21,12 @@ var boundingBoxStride: Int { get set }
 
 #### Discussion
 
-The stride must be at least 24 bytes, and must be a multiple of 4 bytes. The default value is 24 bytes.
+The stride needs be at least 24 bytes, and be a multiple of 4 bytes. The default value is 24 bytes.
 
 ## See Also
 
 - [var boundingBoxBuffer: (any MTLBuffer)?](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
-  A buffer that contains bounding box data.
+  A buffer that contains an array of bounding box structures.
 - [var boundingBoxBufferOffset: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbufferoffset.md)
   The offset, in bytes, to the first bounding box in the buffer.
 

@@ -13,9 +13,15 @@ Get a list of the installed apps on a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
+## Mentions
+
+- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+
 #### Discussion
 
-The response includes system apps on macOS devices, however, it doesn’t include them on iOS devices.
+This command allows the server to query for installed 3rd party applications. The response also includes system apps in macOS, iOS 26 and later, tvOS 26 and later, visionOS 26 and later, and watchOS 26 and later.
+
+This command doesn’t return apps that Declarative Device Management is managing if the `ManagedAppsOnly` key is set to `true`, or if the enrollment type is a user enrollment.
 
 Refer to the following sections to determine supported channels and requirements, and to see request and response examples for iOS and macOS.
 
@@ -29,11 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowQueryApplications |
 
-##### Example Request and Response in Ios
-
-##### Example Request and Response in Macos
-
-##### Example Request and Response in Macos
+##### Example Request and Response
 
 ## Topics
 
@@ -49,14 +51,24 @@ The request object the server returns for the Installed Application List Command
 
 ## See Also
 
-- [Device Information](device-information-command.md)
-  Get detailed information about a device.
-- [Device Configured](device-configured-command.md)
-  Inform the device that it can allow the user to continue in Setup Assistant.
-- [User Configured](user-configured-command.md)
-  Inform the device that it can continue past Setup Assistant and finish login.
-- [Restrictions](restrictions-command.md)
-  Get a list of restrictions on the device.
+- [Install Application](install-application-command.md)
+  Install a third-party app on a device.
+- [Install Enterprise Application](install-enterprise-application-command.md)
+  Install an enterprise app on a device.
+- [Managed Application List](managed-application-list-command.md)
+  Get the status of all managed apps on a device.
+- [Remove Application](remove-application-command.md)
+  Remove an app.
+- [Apply Redemption Code](apply-redemption-code-command.md)
+  Complete the installation of an app using a redemption code.
+- [Validate Applications](validate-applications-command.md)
+  Force validation of developer and universal provisioning profiles for enterprise apps.
+- [Managed Application Attributes](managed-application-attributes-command.md)
+  Query attributes in managed apps on a device.
+- [Managed Application Configuration](managed-application-configuration-command.md)
+  Get app configurations from managed apps on a device.
+- [Managed Application Feedback](managed-application-feedback-command.md)
+  Get app feedback from a managed app on the device.
 
 
 ---

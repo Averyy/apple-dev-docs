@@ -131,7 +131,7 @@ class MCPRemoteProxy:
                 "capabilities": {"tools": {}},
                 "clientInfo": {
                     "name": "apple-docs-remote",
-                    "version": "1.0.0"
+                    "version": "1.1.0"
                 }
             }
         }
@@ -425,28 +425,58 @@ async def test_connection():
     finally:
         await proxy.stop()
 
+def parse_args():
+    """Parse command line arguments"""
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="Apple Documentation MCP Remote Client - STDIO-to-HTTP proxy",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=__doc__
+    )
+    parser.add_argument(
+        "--server-url",
+        default=os.getenv('MCP_SERVER_URL', SERVER_URL),
+        help="URL of the remote MCP server (default: from env or config)"
+    )
+    parser.add_argument(
+        "--api-key",
+        default=os.getenv('MCP_API_KEY'),
+        help="API key for authentication (optional, can also use MCP_API_KEY env var)"
+    )
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        help="Test connection to the server and exit"
+    )
+    return parser.parse_args()
+
+
 async def main():
     """Main entry point"""
-    if len(sys.argv) > 1:
-        if sys.argv[1] == '--test':
-            success = await test_connection()
-            sys.exit(0 if success else 1)
-        elif sys.argv[1] == '--help':
-            print(__doc__, file=sys.stderr)
-            sys.exit(0)
-    
+    args = parse_args()
+
+    # Override global SERVER_URL with args
+    server_url = args.server_url
+
+    if args.test:
+        # Override global for test
+        global SERVER_URL
+        SERVER_URL = server_url
+        success = await test_connection()
+        sys.exit(0 if success else 1)
+
     # Check if running interactively
     if sys.stdin.isatty():
         print("Apple Documentation MCP Remote Client", file=sys.stderr)
-        print(f"Server: {SERVER_URL}", file=sys.stderr)
+        print(f"Server: {server_url}", file=sys.stderr)
         print("", file=sys.stderr)
         print("This should be run by Claude, not directly.", file=sys.stderr)
         print("Run with --test to test connection", file=sys.stderr)
         print("Run with --help for setup instructions", file=sys.stderr)
         sys.exit(1)
-    
+
     # Run the proxy
-    proxy = MCPRemoteProxy(SERVER_URL)
+    proxy = MCPRemoteProxy(server_url)
     try:
         await proxy.run_stdio_loop()
     finally:

@@ -45,9 +45,9 @@ struct ExampleView: View {
 }
 ```
 
-> **Note**: A `FamilyControls/FamilyActivityPicker` shown on a parent device only displays applications and websites from authorized child devices within the Family Sharing Group. A `FamilyControls/FamilyActivityPicker` shown on an individually authorized device includes applications and websites from that same device.
+> **Note**: A `FamilyActivityPicker` shown on a parent device only displays applications and websites from authorized child devices within the Family Sharing Group. A `FamilyActivityPicker` shown on an individually authorized device includes applications and websites from that same device.
 
-To streamline this process, call  the [`familyActivityPicker(isPresented:selection:)`](familyactivitypicker/familyactivitypicker(ispresented:selection:).md) modifier on a view in your user interface. This modifier displays the picker view as a sheet over your user interface when the `isPresented` binding is `true`.
+To streamline this process, call  the [`familyActivityPicker(isPresented:selection:)`](https://developer.apple.com/documentation/SwiftUI/View/familyActivityPicker(isPresented:selection:)) modifier on a view in your user interface. This modifier displays the picker view as a sheet over your user interface when the `isPresented` binding is `true`.
 
 ```swift
 struct ExampleView: View {
@@ -73,24 +73,18 @@ Your app passes the selected values to the appropriate instances and methods fro
 
 ## Topics
 
-### Creating Activity Pickers
+### Creating activity pickers
 - [init(selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(selection:).md)
   Creates a new activity picker.
-- [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](familyactivitypicker/familyactivitypicker(ispresented:selection:).md)
-  Presents an activity picker view as a sheet.
-### Accessing the Content
-- [var body: some View](familyactivitypicker/body-swift.property.md)
-  The content and behavior of the view.
-- [FamilyActivityPicker.Body](familyactivitypicker/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Adding View Modifiers
+### Accessing the content
+- [var body: some View](familyactivitypicker/body.md)
+  The content of this view.
+### Adding view modifiers
 - [View Modifiers](familyactivitypicker-view-modifiers.md)
   Apply standard modifiers to configure the family activity picker view and the views it contains.
 ### Initializers
 - [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(headertext:footertext:selection:).md)
   Creates a new activity picker with optional header and footer text.
-### Default Implementations
-- [View Implementations](familyactivitypicker/view-implementations.md)
 
 ## Relationships
 

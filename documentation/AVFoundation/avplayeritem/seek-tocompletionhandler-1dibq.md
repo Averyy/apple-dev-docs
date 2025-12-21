@@ -23,13 +23,13 @@ func seek(to date: Date, completionHandler: ((Bool) -> Void)? = nil) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the playhead moved to the specified date or [`false`](https://developer.apple.com/documentation/swift/false) if it did not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the playhead moved to the specified date or [`false`](https://developer.apple.com/documentation/Swift/false) if it did not.
 
 #### Discussion
 
-Use this method to seek to a specified time in the player item and be notified when the operation completes. If the seek request completes without being interrupted (either by another seek request or by any other operation), the completion handler you provide is executed with the `finished` parameter set to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to seek to a specified time in the player item and be notified when the operation completes. If the seek request completes without being interrupted (either by another seek request or by any other operation), the completion handler you provide is executed with the `finished` parameter set to [`true`](https://developer.apple.com/documentation/Swift/true).
 
-If another seek request is already in progress when you call this method, the completion handler for the in-progress seek request is executed immediately with the `finished` parameter set to [`false`](https://developer.apple.com/documentation/swift/false).
+If another seek request is already in progress when you call this method, the completion handler for the in-progress seek request is executed immediately with the `finished` parameter set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 

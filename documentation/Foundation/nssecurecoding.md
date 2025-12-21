@@ -28,10 +28,10 @@ This technique is potentially unsafe because by the time you can verify the clas
 
 In order to conform to [`NSSecureCoding`](nssecurecoding.md):
 
-- An object that does not override doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) can conform to `NSSecureCoding` without any changes (assuming that it is a subclass of another class that conforms).
-- An object that does override doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) must decode any enclosed objects using the [`decodeObjectOfClass:forKey:`](nscoder/decodeobjectofclass:forkey:.md) method. For example:
+- An object that does not override [`init(coder:)`](nscoding/init(coder:).md) can conform to `NSSecureCoding` without any changes (assuming that it is a subclass of another class that conforms).
+- An object that does override [`init(coder:)`](nscoding/init(coder:).md) must decode any enclosed objects using the [`decodeObjectOfClass:forKey:`](nscoder/decodeobjectofclass:forkey:.md) method. For example:
 
-In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/swift/true).
+In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 For more information about how this relates to the NSXPC API, see [`Creating XPC Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6) in [`Daemons and Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i).
 
@@ -144,7 +144,7 @@ For more information about how this relates to the NSXPC API, see [`Creating XPC
 
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable = Decodable & Encodable](../Swift/Codable.md)
+- [typealias Codable](../Swift/Codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)
   A protocol that enables an object to be encoded and decoded for archiving and distribution.

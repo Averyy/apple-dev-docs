@@ -24,14 +24,14 @@ Pass this object to [`prepareCustomLanguageModel(for:configuration:completion:)`
 
 ## Topics
 
-### Initializers
+### Creating a language model configuration
 - [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
   Creates a configuration with the location of a language model file.
 - [init(languageModel: URL, vocabulary: URL?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).md)
   Creates a configuration with the locations of language model and vocabulary files.
 - [init(languageModel: URL, vocabulary: URL?, weight: NSNumber?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:weight:).md)
   Creates a configuration with the locations of language model and vocabulary files, and custom weight.
-### Instance Properties
+### Inspecting a language model
 - [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
   The location of a compiled language model file.
 - [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
@@ -60,14 +60,10 @@ Pass this object to [`prepareCustomLanguageModel(for:configuration:completion:)`
 
 - [class AnalysisContext](analysiscontext.md)
   Contextual information that may be shared among analyzers.
-- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
-  An object that generates and exports custom language model training data.
 - [class SFSpeechLanguageModel](sfspeechlanguagemodel.md)
   A language model built from custom training data.
-- [protocol DataInsertable](datainsertable.md)
-  A protocol supporting the custom language model training data result builder.
-- [protocol TemplateInsertable](templateinsertable.md)
-  A protocol supporting the custom language model training data result builder.
+- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
+  An object that generates and exports custom language model training data.
 
 
 ---

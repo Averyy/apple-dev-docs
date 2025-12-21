@@ -22,12 +22,6 @@ struct DayPrecipitationStatistics
 
 ## Topics
 
-### Operators
-- [static func == (DayPrecipitationStatistics, DayPrecipitationStatistics) -> Bool](dayprecipitationstatistics/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](dayprecipitationstatistics/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var averagePrecipitationAmount: Measurement<UnitLength>](dayprecipitationstatistics/averageprecipitationamount.md)
   The average amount of liquid precipitation for the day.
@@ -37,11 +31,6 @@ struct DayPrecipitationStatistics
   The average amount of snowfall as depth of snow crystals for the day.
 - [var day: Int](dayprecipitationstatistics/day.md)
   The day of the year, in UTC.
-### Instance Methods
-- [func encode(to: any Encoder) throws](dayprecipitationstatistics/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](dayprecipitationstatistics/equatable-implementations.md)
 
 ## Relationships
 

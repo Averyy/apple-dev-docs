@@ -18,6 +18,10 @@ final func requestAppInstallation(for url: URL, account: String, installVerifica
 
 - [Supplying an install verification token](supplying-an-install-verification-token.md)
 
+## See Also
+
+- [func requestAppUpdate(for: URL, account: String, installVerificationToken: String) async throws](applibrary/requestappupdate(for:account:installverificationtoken:).md)
+
 
 ---
 

@@ -26,7 +26,7 @@ When using a High Dynamic Range (HDR) camera, SceneKit applies a process called 
 
 Use this property to bias the tone mapping curve. The default exposure offset is zero, specifying no bias. Positive values result in a brighter scene, and negative values result in a darker scene.
 
-This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property has no effect if the [`wantsHDR`](scncamera/wantshdr.md) value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

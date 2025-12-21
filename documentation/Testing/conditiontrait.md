@@ -39,22 +39,11 @@ To add this trait to a test, use one of the following functions:
 ## Topics
 
 ### Instance Properties
-- [var comments: [Comment]](conditiontrait/comments.md)
-  The user-provided comments for this trait.
-- [var isRecursive: Bool](conditiontrait/isrecursive.md)
-  Whether this instance should be applied recursively to child test suites and test functions.
 - [var sourceLocation: SourceLocation](conditiontrait/sourcelocation.md)
   The source location where this trait is specified.
 ### Instance Methods
 - [func evaluate() async throws -> Bool](conditiontrait/evaluate.md)
   Evaluate this instance’s underlying condition.
-- [func prepare(for: Test) async throws](conditiontrait/prepare(for:).md)
-  Prepare to run the test that has this trait.
-### Type Aliases
-- [ConditionTrait.TestScopeProvider](conditiontrait/testscopeprovider.md)
-  The type of the test scope provider for this trait.
-### Default Implementations
-- [Trait Implementations](conditiontrait/trait-implementations.md)
 
 ## Relationships
 
@@ -71,6 +60,8 @@ To add this trait to a test, use one of the following functions:
   A type that represents a bug report tracked by a test.
 - [struct Comment](comment.md)
   A type that represents a comment related to a test.
+- [struct IssueHandlingTrait](issuehandlingtrait.md)
+  A type that allows transforming or filtering the issues recorded by a test.
 - [struct ParallelizationTrait](parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
 - [struct Tag](tag.md)

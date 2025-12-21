@@ -10,7 +10,7 @@ Search makes your app’s content easier to find, and plays a role both inside y
 
 To help search find your content, create a private, on-device index using the Core Spotlight framework and add your app’s data to that index. Search works best when you index content that the person cares about or interacts with directly, such as favorites, items they purchased, messages they sent and received, and so on.
 
-In addition to the content people can see in your UI, enable the [`isEligibleForSearch`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForSearch) property in relevant [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that your app sends and receives. Enabling this property in user-initiated activities adds those activities to the on-device index and includes them in subsquent searches. For more information, see [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity).
+In addition to the content people can see in your UI, enable the [`isEligibleForSearch`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForSearch) property in relevant [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that your app sends and receives. Enabling this property in user-initiated activities adds those activities to the on-device index and includes them in subsequent searches. For more information, see [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity).
 
 ##### Assemble the Item Attributes
 
@@ -29,12 +29,13 @@ func addSpreadsheetToIndex(_ item: MySpreadsheetType) {
     attributeSet.contentURL = item.fileURL
 
     // Create the searchable item.
-
+    let searchableItem = CSSearchableItem(uniqueIdentifier: item.identifier, domainIdentifier: nil, attributeSet: attributeSet)
+    
     // Add the item to the index.
 }
 ```
 
-The [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md)class supports making a phone call or getting directions to a location associated with an item. To enable these features, set the item’s [`supportsPhoneCall`](cssearchableitemattributeset/supportsphonecall.md) or [`supportsNavigation`](cssearchableitemattributeset/supportsnavigation.md) property to `1` and fill in the relevant phone number or latitude and longitude information. Only enable these actions when it’s appropriate and they represent a primary action someone is likely to take. For example, it makes sense to let someone call a business, but it doesn’t make sense to let someone call a phone number that appears on a research paper.
+The [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) class supports making a phone call or getting directions to a location associated with an item. To enable these features, set the item’s [`supportsPhoneCall`](cssearchableitemattributeset/supportsphonecall.md) or [`supportsNavigation`](cssearchableitemattributeset/supportsnavigation.md) property to `1` and fill in the relevant phone number or latitude and longitude information. Only enable these actions when it’s appropriate and they represent a primary action someone is likely to take. For example, it makes sense to let someone call a business, but it doesn’t make sense to let someone call a phone number that appears on a research paper.
 
 ##### Create a Searchable Item to Find Your Content Later
 
@@ -59,7 +60,7 @@ func addSpreadsheetToIndex(_ item: MySpreadsheetType) {
     attributeSet.contentURL = item.fileURL
 
     // Create the searchable item.
-    let item = CSSearchableItem(uniqueIdentifier: item.identifier, domainIdentifier: nil, attributeSet: attributeSet)
+    let searchableItem = CSSearchableItem(uniqueIdentifier: item.identifier, domainIdentifier: nil, attributeSet: attributeSet)
          
     // Add the item to the index.
 }
@@ -104,7 +105,7 @@ When adding or updating large numbers of items, consider breaking those updates 
 The following example shows a function that indexes several items using a batch update. You can specify any information you want for the client data, but must limit the total size of it to 250 bytes. If any errors occur during the batch update, you can call [`fetchLastClientState(completionHandler:)`](cssearchableindex/fetchlastclientstate(completionhandler:).md) to determine where to start indexing your content again.
 
 ```swift
-func indexBatch(_ tems: [CSSearchableItem]) {
+func indexBatch(_ items: [CSSearchableItem]) {
     let index = CSSearchableIndex(name: "MyIndex")
 
     var clientData = Data()

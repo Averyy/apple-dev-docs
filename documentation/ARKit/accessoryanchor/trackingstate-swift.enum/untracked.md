@@ -6,7 +6,7 @@
 Neither position nor orientation are tracked.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

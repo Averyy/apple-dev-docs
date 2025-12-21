@@ -12,6 +12,18 @@
 func AudioHardwareDestroyProcessTap(_ inTapID: AudioObjectID) -> OSStatus
 ```
 
+#### Return Value
+
+An OSStatus indicating success or failure.
+
+#### Discussion
+
+This routine destroys the given Tap.
+
+## Parameters
+
+- `inTapID`: The AudioObjectID of the Tap to destroy.
+
 ## See Also
 
 - [func AudioConvertHostTimeToNanos(UInt64) -> UInt64](audioconverthosttimetonanos(_:).md)

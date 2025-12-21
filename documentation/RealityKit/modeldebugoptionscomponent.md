@@ -10,7 +10,7 @@ A component that changes how RealityKit renders its entity to help with debuggin
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -104,7 +104,7 @@ func debugLightingDiffuseButtonCallback() {
 - [struct AdaptiveResolutionComponent](adaptiveresolutioncomponent.md)
   A component that provides the suggested pixels per meter necessary to render an object.
 - [struct MeshInstancesComponent](meshinstancescomponent.md)
-  A component that performs GPU instancing on the ModelComponent on the same Entity.
+  A component that performs GPU instancing on the model of the same entity.
 
 
 ---

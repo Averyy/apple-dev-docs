@@ -43,11 +43,6 @@ struct ScoreAnnotation
 ### Hashing the score annotation
 - [func hash(into: inout Hasher)](assignedworkdocument/scoreannotation/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
-### Instance Properties
-- [var hashValue: Int](assignedworkdocument/scoreannotation/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](assignedworkdocument/scoreannotation/equatable-implementations.md)
 
 ## Relationships
 

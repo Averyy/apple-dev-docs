@@ -35,24 +35,6 @@ Configure conversation capabilites as part of a [`Conversation.Update`](conversa
   The conversation is the result of merging two conversations and can be separated into the original conversations.
 - [static let video: Conversation.Capabilities](conversation/capabilities/video.md)
   The conversation sends or displays video streams.
-### Initializers
-- [init(rawValue: Int)](conversation/capabilities/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [var rawValue: Int](conversation/capabilities/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [Conversation.Capabilities.ArrayLiteralElement](conversation/capabilities/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [Conversation.Capabilities.Element](conversation/capabilities/element.md)
-  The element type of the option set.
-- [Conversation.Capabilities.RawValue](conversation/capabilities/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](conversation/capabilities/equatable-implementations.md)
-- [OptionSet Implementations](conversation/capabilities/optionset-implementations.md)
-- [RawRepresentable Implementations](conversation/capabilities/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](conversation/capabilities/setalgebra-implementations.md)
 
 ## Relationships
 

@@ -4,7 +4,7 @@
 **Kind**: struct
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 
@@ -16,8 +16,6 @@ struct SessionDidResignActiveMessage
 
 ### Initializers
 - [init()](nsworkspace/sessiondidresignactivemessage/init.md)
-### Type Methods
-- [static func makeNotification(NSWorkspace.SessionDidResignActiveMessage) -> Notification](nsworkspace/sessiondidresignactivemessage/makenotification(_:).md)
 
 ## Relationships
 

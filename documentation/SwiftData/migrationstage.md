@@ -27,6 +27,12 @@ enum MigrationStage
 - [case lightweight(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type)](migrationstage/lightweight(fromversion:toversion:).md)
 - [case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: ((ModelContext) throws -> Void)?, didMigrate: ((ModelContext) throws -> Void)?)](migrationstage/custom(fromversion:toversion:willmigrate:didmigrate:).md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [static var stages: [MigrationStage]](schemamigrationplan/stages.md)

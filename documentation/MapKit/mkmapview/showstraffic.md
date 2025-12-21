@@ -22,7 +22,7 @@ var showsTraffic: Bool { get set }
 
 #### Discussion
 
-The [`mapType`](mkmapview/maptype.md) property must be set to [`MKMapType.standard`](mkmaptype/standard.md) or [`MKMapType.hybrid`](mkmaptype/hybrid.md) for traffic information to be shown. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The [`mapType`](mkmapview/maptype.md) property must be set to [`MKMapType.standard`](mkmaptype/standard.md) or [`MKMapType.hybrid`](mkmaptype/hybrid.md) for traffic information to be shown. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

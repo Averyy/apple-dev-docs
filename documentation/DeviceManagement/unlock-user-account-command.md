@@ -41,7 +41,7 @@ The request object the server returns for the Unlock User Account Command.
 - [Clear Passcode](clear-passcode-command.md)
   Remove the passcode from a device.
 - [Clear Restrictions Password](clear-restrictions-password-command.md)
-  Clear the restrictions password and the restrictions on a device.
+  Clear the Screen Time password and the restrictions on a device.
 - [Set Auto Admin Password](set-auto-admin-password-command.md)
   Update the local administrator account password.
 - [Set Firmware Password](set-firmware-password-command.md)

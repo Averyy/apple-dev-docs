@@ -32,7 +32,7 @@ Domain verification expires on the same date that your domain’s SSL certificat
 - If you update the SSL certificate before it expires, Apple detects the renewed certificate and the domain remains verified. No further action is required on your part.
 - If the SSL certificate expires and is not replaced before expiring, you must redo domain verification in your Apple Developer Account. See [`Verify a Merchant Domain`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1731126fb) for additional information.
 
-Make sure that the Apple servers — listed in [`Setting Up Your Server`](setting-up-your-server.md) — can access the URL you used to validate the merchant domain. If the URL is behind a proxy or redirect the Apple servers won’t be able to access it. The URL may be similar to `https://yourdomain.com/.well-known/apple-developer-merchantid-domain-association`.
+Make sure that the Apple servers — listed in [`Setting Up Your Server`](setting-up-your-server#Allow-Apple-IP-Addresses-for-Domain-Verification.md) — can access the URL you used to validate the merchant domain. If the URL is behind a proxy or redirect the Apple servers won’t be able to access it. The URL may be similar to `https://yourdomain.com/.well-known/apple-developer-merchantid-domain-association`.
 
 ## See Also
 

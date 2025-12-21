@@ -10,7 +10,7 @@ A medium-sized widget.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,8 +20,8 @@ case systemMedium
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 
@@ -35,6 +35,8 @@ The medium system widget can appear on the Home Screen or in the Today View in i
   A large widget.
 - [WidgetFamily.systemExtraLarge](widgetfamily/systemextralarge.md)
   An extra-large widget.
+- [WidgetFamily.systemExtraLargePortrait](widgetfamily/systemextralargeportrait.md)
+  An extra-large widget that uses a portrait orientation.
 
 
 ---

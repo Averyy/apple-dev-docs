@@ -30,6 +30,8 @@ object BetaFeedbackCrashSubmissionCrashLogLinkageResponse
   A response that contains a single `BetaFeedbackCrashSubmissionResponse` resource.
 - [object BetaFeedbackCrashSubmissionsResponse](betafeedbackcrashsubmissionsresponse.md)
   A response that contains a list of `BetaFeedbackCrashSubmissionsResponse` resources.
+- [type DeviceConnectionType](deviceconnectiontype.md)
+  A string that represents the ways a device was connected for a specific crash.
 
 
 ---

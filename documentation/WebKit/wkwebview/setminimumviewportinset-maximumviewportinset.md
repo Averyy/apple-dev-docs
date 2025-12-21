@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-func setMinimumViewportInset(_ minimumViewportInset: UIEdgeInsets, maximumViewportInset: UIEdgeInsets)
+func setMinimumViewportInset(_ minimumViewportInset: NSEdgeInsets, maximumViewportInset: NSEdgeInsets)
 ```
 
 ## See Also

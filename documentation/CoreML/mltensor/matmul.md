@@ -65,6 +65,25 @@ m6.shape // is [3, 1, 1, 2]
 
 - `other`: The right-hand side tensor to be multiplied.
 
+## See Also
+
+- [func exp() -> MLTensor](mltensor/exp.md)
+  Computes the natural exponent of the tensor’s elements.
+- [func exp2() -> MLTensor](mltensor/exp2.md)
+  Computes the exponent with base two of the tensor’s elements.
+- [func pow(_:)](mltensor/pow(_:).md)
+  Computes element-wise power of each element with `exponent`.
+- [func rsqrt() -> MLTensor](mltensor/rsqrt.md)
+  Computes reverse square root of the tensor’s elements.
+- [func squared() -> MLTensor](mltensor/squared.md)
+  Computes square of the tensor’s elements.
+- [func squareRoot() -> MLTensor](mltensor/squareroot.md)
+  Computes square root of the tensor’s elements.
+- [func log() -> MLTensor](mltensor/log.md)
+  Computes the natural logarithm of the tensor’s elements.
+- [func round() -> MLTensor](mltensor/round.md)
+  Rounds the tensor’s elements.
+
 
 ---
 

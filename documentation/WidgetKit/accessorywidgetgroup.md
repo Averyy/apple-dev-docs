@@ -71,6 +71,8 @@ You can change the shape with which the content views are masked using the `.acc
 
 ## See Also
 
+- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
+  Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
 - [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
   The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)

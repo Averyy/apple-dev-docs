@@ -17,16 +17,15 @@ A rectangle in the parent’s coordinate system that contains the node’s conte
 ## Declaration
 
 ```swift
-@MainActor
 var frame: CGRect { get }
 ```
 
 ## Mentions
 
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
 - [Getting Started with Sprite Nodes](getting-started-with-sprite-nodes.md)
 - [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
 
 #### Discussion
 

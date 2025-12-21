@@ -24,6 +24,9 @@ The system uses this type when a change invalidates multiple aspects of a view. 
 ### Creating the invalidation type
 - [init(Invalidation1, Invalidation2)](nsview/invalidations/tuple/init(_:_:).md)
   Creates the invalidation type.
+### Invalidating the view
+- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
+  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 ## Relationships
 

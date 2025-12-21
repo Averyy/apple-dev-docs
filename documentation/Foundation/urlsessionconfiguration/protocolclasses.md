@@ -24,7 +24,7 @@ var protocolClasses: [AnyClass]? { get set }
 
 The objects in this array are `Class` objects corresponding to custom [`URLProtocol`](urlprotocol.md) subclasses that you define. URL session objects support a number of common networking protocols by default. Use this array to extend the default set of common networking protocols available for use by a session with one or more custom protocols that you define.
 
-Prior to handling a request, the [`URLSession`](urlsession.md) object searches the default protocols first and then checks your custom protocols until it finds one capable of handling the specified request. It uses the protocol whose [`canInit(with:)`](urlprotocol/caninit(with:)-76brg.md) class method returns [`true`](https://developer.apple.com/documentation/swift/true), indicating that the class is capable of handling the specified request.
+Prior to handling a request, the [`URLSession`](urlsession.md) object searches the default protocols first and then checks your custom protocols until it finds one capable of handling the specified request. It uses the protocol whose [`canInit(with:)`](urlprotocol/caninit(with:)-76brg.md) class method returns [`true`](https://developer.apple.com/documentation/Swift/true), indicating that the class is capable of handling the specified request.
 
 > **Note**:  You cannot use custom [`URLProtocol`](urlprotocol.md) subclasses in conjunction with background sessions.
 

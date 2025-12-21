@@ -23,6 +23,21 @@ object ManagementOrganizationInformation
 
 Specify `com.apple.management.organization-info` as the declaration type.
 
+##### Management Declaration Example
+
+```json
+{
+    "Type": "com.apple.management.organization-info",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "Name": "Example, Inc.",
+        "Email": "admin@example.com",
+        "URL": "https://site.example.com/support"
+    }
+}
+```
+
 ## Topics
 
 ### Objects

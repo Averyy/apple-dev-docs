@@ -38,7 +38,7 @@ The layout manager reserves the right to perform layout for larger ranges. If no
   Forces the layout manager to perform layout for the specified character range if it hasn’t already.
 - [func ensureLayout(for: NSTextContainer)](nslayoutmanager/ensurelayout(for:).md)
   Forces the layout manager to perform layout for the specified text container if it hasn’t already.
-- [var glyphGenerator: NSGlyphGenerator { get set }](../AppKit/NSLayoutManager/glyphGenerator.md)
+- [var glyphGenerator: NSGlyphGenerator](../AppKit/NSLayoutManager/glyphGenerator.md)
   The glyph generator that the layout manager uses.
 
 

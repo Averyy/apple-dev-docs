@@ -22,7 +22,7 @@ class MTLCompileOptions
 ## Mentions
 
 - [Logging shader debug messages](logging-shader-debug-messages.md)
-- [Minimizing the Binary Size of a Shader Library](minimizing-the-binary-size-of-a-shader-library.md)
+- [Minimizing the binary size of a shader library](minimizing-the-binary-size-of-a-shader-library.md)
 
 #### Overview
 
@@ -37,7 +37,7 @@ You can compile a library with your compile options instance by calling an [`MTL
 
 ## Topics
 
-### Configuring the Compiler Options
+### Configuring the compiler options
 - [var enableLogging: Bool](mtlcompileoptions/enablelogging.md)
   A Boolean value that enables shader logging.
 - [var mathMode: MTLMathMode](mtlcompileoptions/mathmode.md)
@@ -56,7 +56,7 @@ You can compile a library with your compile options instance by calling an [`MTL
   An array of dynamic libraries the Metal compiler links against.
 - [var fastMathEnabled: Bool](mtlcompileoptions/fastmathenabled.md)
   A Boolean value that indicates whether the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
-### Configuring the Library Output Options
+### Configuring the library output options
 - [var libraryType: MTLLibraryType](mtlcompileoptions/librarytype.md)
   The kind of library to create.
 - [var installName: String?](mtlcompileoptions/installname.md)

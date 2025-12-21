@@ -26,7 +26,7 @@ Similar to the [`MLFeatureProvider`](mlfeatureprovider.md), this interface allow
 
 ## Topics
 
-### Accessing Values
+### Accessing values
 - [func features(at: Int) -> any MLFeatureProvider](mlbatchprovider/features(at:).md)
   Returns the feature provider at the given index.
 - [var count: Int](mlbatchprovider/count.md)

@@ -25,7 +25,7 @@ Declare a test parameterized over two collections of values.
 
 #### Overview
 
-During testing, the associated test function is called once for each pair of elements in `collection1` and `collection2`.
+You can prefix the expressions you pass to `collection1` or `collection2` with `try` or `await`. The testing library evaluates the expressions lazily only if it determines that the associated test will run. During testing, the testing library calls the associated test function once for each pair of elements in `collection1` and `collection2`.
 
 ## Parameters
 

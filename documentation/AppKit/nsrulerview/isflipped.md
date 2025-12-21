@@ -17,7 +17,7 @@ var isFlipped: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s coordinate system is flipped, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver’s coordinate system is flipped, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 A vertical ruler takes into account whether the coordinate system of the [`NSScrollView`](nsscrollview.md)‘s document view—not the receiver’s client view—is flipped. A horizontal ruler is always flipped.
 

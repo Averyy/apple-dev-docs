@@ -22,9 +22,9 @@ var canShowCallout: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the map view shows a standard callout  when the user taps a selected annotation view. The callout uses the title and subtitle text from the associated annotation object. If there’s no title text, the map view treats the annotation view as if its [`isEnabled`](mkannotationview/isenabled.md) property is [`false`](https://developer.apple.com/documentation/swift/false). The callout also displays any custom callout views in the [`leftCalloutAccessoryView`](mkannotationview/leftcalloutaccessoryview.md) and [`rightCalloutAccessoryView`](mkannotationview/rightcalloutaccessoryview.md) properties.
+If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the map view shows a standard callout  when the user taps a selected annotation view. The callout uses the title and subtitle text from the associated annotation object. If there’s no title text, the map view treats the annotation view as if its [`isEnabled`](mkannotationview/isenabled.md) property is [`false`](https://developer.apple.com/documentation/Swift/false). The callout also displays any custom callout views in the [`leftCalloutAccessoryView`](mkannotationview/leftcalloutaccessoryview.md) and [`rightCalloutAccessoryView`](mkannotationview/rightcalloutaccessoryview.md) properties.
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the map view ignores the value of the title and subtitle strings, and the annotation view remains in an enabled state by default. You can still disable the view explicitly using the [`isEnabled`](mkannotationview/isenabled.md) property.
+If the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the map view ignores the value of the title and subtitle strings, and the annotation view remains in an enabled state by default. You can still disable the view explicitly using the [`isEnabled`](mkannotationview/isenabled.md) property.
 
 ## See Also
 

@@ -25,7 +25,7 @@ Because the camera isn’t available in Simulator, you’ll need to build and ru
 
 When you first launch the sample app on device, you’ll need to grant the app permission to use the camera.
 
-##### Setup the Overlay View
+##### Set Up the Overlay View
 
 The sample app uses the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property to provide an overlay view that contains the custom view hierarchy. The image picker places the custom overlay view on top of the other image picker views.
 
@@ -40,7 +40,7 @@ imagePickerController.cameraOverlayView = overlayView
 
 An app can access the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property only when the source type of the image picker is set to `UIImagePickerController.SourceType.camera`.
 
-When the user interacts with interface elements in the custom view, the app calls an image picker method, such as [`takePicture()`](uiimagepickercontroller/takepicture().md) to capture a photo, and implement other features. This sample’s custom image picker controller interface provides the following features:
+When the user interacts with interface elements in the custom view, the app calls an image picker method such as [`takePicture()`](uiimagepickercontroller/takepicture().md) to capture a photo, and implement other features. This sample’s custom image picker controller interface provides the following features:
 
 - Take a Picture
 - Take a Delayed Picture
@@ -161,7 +161,7 @@ The camera starts taking pictures as soon as the user taps the Start button (whi
 
 ##### Browse Media in the Photo Library
 
-To browse images saved in the photo albums on the device, add a button the user can press to go to their Photo Library. The button’s action method configures the picker for browsing saved media by setting its [`sourceType`](uiimagepickercontroller/sourcetype-swift.property.md) property to `UIImagePickerController.SourceType.photoLibrary`, before presenting the picker’s media browser user interface.
+To browse images saved in the photo albums on the device, add a button that the user can press to go to their Photo Library. The button’s action method configures the picker for browsing saved media by setting its [`sourceType`](uiimagepickercontroller/sourcetype-swift.property.md) property to `UIImagePickerController.SourceType.photoLibrary`, before presenting the picker’s media browser user interface.
 
 ```swift
 @IBAction func showImagePickerForPhotoPicker(_ sender: UIBarButtonItem) {

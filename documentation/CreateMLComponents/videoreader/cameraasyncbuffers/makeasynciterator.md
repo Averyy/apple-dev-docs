@@ -22,10 +22,6 @@ consuming func makeAsyncIterator() -> VideoReader.CameraAsyncBuffers.Iterator
 
 - [VideoReader.CameraAsyncBuffers.Iterator](videoreader/cameraasyncbuffers/iterator.md)
   An async iterator of video frames.
-- [VideoReader.CameraAsyncBuffers.AsyncIterator](videoreader/cameraasyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [VideoReader.CameraAsyncBuffers.Feature](videoreader/cameraasyncbuffers/feature.md)
-  The feature type.
 
 
 ---

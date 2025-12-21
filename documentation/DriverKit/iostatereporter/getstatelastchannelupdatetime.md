@@ -8,7 +8,6 @@
 - iOS ?+
 - iPadOS ?+
 - macOS ?+
-- Unknown ?+ - Deprecated
 
 ## Declaration
 

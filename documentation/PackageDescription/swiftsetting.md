@@ -33,6 +33,11 @@ struct SwiftSetting
 - [SwiftSetting.InteroperabilityMode](swiftsetting/interoperabilitymode.md)
 - [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguageversion(_:_:).md)
   Defines a `-swift-version` to pass  to the corresponding build tool.
+### Type Methods
+- [static func treatAllWarnings(as: WarningLevel, BuildSettingCondition?) -> SwiftSetting](swiftsetting/treatallwarnings(as:_:).md)
+  Controls how all Swift compiler warnings are treated during compilation.
+- [static func treatWarning(String, as: WarningLevel, BuildSettingCondition?) -> SwiftSetting](swiftsetting/treatwarning(_:as:_:).md)
+  Controls how a specific Swift compiler warning is treated during compilation.
 
 ## Relationships
 

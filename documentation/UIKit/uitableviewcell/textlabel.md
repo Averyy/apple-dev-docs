@@ -21,8 +21,8 @@ var textLabel: UILabel? { get }
 
 ## Mentions
 
-- [Filling a table with data](filling-a-table-with-data.md)
 - [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
+- [Filling a table with data](filling-a-table-with-data.md)
 
 #### Discussion
 

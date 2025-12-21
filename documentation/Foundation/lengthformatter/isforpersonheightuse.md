@@ -22,7 +22,7 @@ var isForPersonHeightUse: Bool { get set }
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the value passed to [`string(fromMeters:)`](lengthformatter/string(frommeters:).md) or [`unitString(fromMeters:usedUnit:)`](lengthformatter/unitstring(frommeters:usedunit:).md) is a person’s height; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, this property returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the value passed to [`string(fromMeters:)`](lengthformatter/string(frommeters:).md) or [`unitString(fromMeters:usedUnit:)`](lengthformatter/unitstring(frommeters:usedunit:).md) is a person’s height; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). By default, this property returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The length formatter uses this property when determining the best unit for a given locale (for example, in the [`string(fromMeters:)`](lengthformatter/string(frommeters:).md) method).
 

@@ -19,6 +19,10 @@ The amount of scratch memory, in bytes, the GPU device needs to refit the accele
 var refitScratchBufferSize: Int
 ```
 
+#### Discussion
+
+This value can be zero, which indicates that refitting the acceleration structure doesn’t require a scratch buffer.
+
 ## See Also
 
 - [var accelerationStructureSize: Int](mtlaccelerationstructuresizes/accelerationstructuresize.md)

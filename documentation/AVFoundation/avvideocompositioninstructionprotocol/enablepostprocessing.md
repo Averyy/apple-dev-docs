@@ -22,7 +22,7 @@ var enablePostProcessing: Bool { get }
 
 #### Discussion
 
-A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates to skip post-processing for the duration of the instruction.
+A value of [`false`](https://developer.apple.com/documentation/Swift/false) indicates to skip post-processing for the duration of the instruction.
 
 
 ---

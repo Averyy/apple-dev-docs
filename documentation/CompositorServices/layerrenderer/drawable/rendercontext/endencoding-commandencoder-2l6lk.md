@@ -6,8 +6,8 @@
 Finish encoding the render context.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -17,18 +17,22 @@ func endEncoding(commandEncoder command_encoder: any MTL4RenderCommandEncoder)
 
 #### Discussion
 
-> **Note**: The ownership of the command encoder is passed to the drawable render context, which will call endEncoding on the command encoder.
+`endEncoding(commandEncoder:)` passes the ownership of the command encoder to the drawable render context and calls [`endEncoding()`](https://developer.apple.com/documentation/Metal/MTLCommandEncoder/endEncoding()) on the command encoder. The command encoder used in the render context has the following constraints:
 
-> **Note**: The command encoder used in the render context has the following constraints: - color texture: colorAttachment[0] should contain the color texture provided by the drawable.
-- depth texture: depthAttachment should contain the depth texture provided by the drawable.
-- renderTargetArrayLength: should be the same as the number of views in the drawable.
-- rasterizationRateMap: should be the one provided by the drawable.
-- layer renderer layout: Dedicated and Shared layout is not supported.
-- supportColorAttachmentMapping: The render pass descriptor used to create the render encoder should have `supportColorAttachmentMapping` set to true.
+- The `colorAttachment[0]` contains the color texture provided by the layer renderer drawable.
+- The [`depthAttachment`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor/depthAttachment) contains the depth texture provided by the layer renderer drawable.
+- The [`renderTargetArrayLength`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor/renderTargetArrayLength) is the same as the number of views in the layer renderer drawable.
+- The [`rasterizationRateMap`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor/rasterizationRateMap) matches the one provided by the layer renderer drawable.
+- The API doesn’t support dedicated and shared layouts.
 
-## Parameters
+If the render encoder has multiple color attachments, set [`supportColorAttachmentMapping`](https://developer.apple.com/documentation/Metal/MTL4RenderPassDescriptor/supportColorAttachmentMapping) to `true` to avoid Metal API validation errors.
 
-- `command_encoder`: The command encoder to use to render the Compositor effects   and present the drawable.
+For testing performance of this method, always test your app on-device rather than in Simulator. However, if you need to iterate on your code in development, you can disable API validation in Xcode, or separate the rendering into multiple render encoders for other color attachments.
+
+## See Also
+
+- [func drawMaskOnStencilAttachment(commandEncoder: any MTL4RenderCommandEncoder, value: UInt8)](layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-7npim.md)
+  Store the value parameter in the stencil texture in the pixels that the Compositor displays onscreen.
 
 
 ---

@@ -4,8 +4,8 @@
 **Kind**: method
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 
 ## Declaration
 
@@ -15,7 +15,7 @@ func setPreferredOutput(_ outPort: AVAudioSessionPortDescription?) throws
 
 #### Discussion
 
-Setting a nil value will clear the preference.
+Select a preferred output port for audio routing. Setting a nil value will clear the preference.
 
 
 ---

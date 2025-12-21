@@ -29,12 +29,6 @@ enum AcceptPolicy
   Reject all cookies.
 - [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
   Accept cookies only from the main document domain.
-- [HTTPCookie.AcceptPolicy.always](httpcookie/acceptpolicy/always.md)
-  Accept all cookies.
-- [HTTPCookie.AcceptPolicy.never](httpcookie/acceptpolicy/never.md)
-  Reject all cookies.
-- [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
-  Accept cookies only from the main document domain.
 ### Initializers
 - [init?(rawValue: UInt)](httpcookie/acceptpolicy/init(rawvalue:).md)
 

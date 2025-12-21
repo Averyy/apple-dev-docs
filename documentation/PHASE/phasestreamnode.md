@@ -19,6 +19,8 @@ class PHASEStreamNode
 
 #### Overview
 
+The base class for stream nodes, exposing common elements.
+
 ## Topics
 
 ### Instance Properties

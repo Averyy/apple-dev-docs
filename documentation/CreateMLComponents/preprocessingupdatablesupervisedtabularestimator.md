@@ -33,10 +33,6 @@ struct PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>
 - [var preprocessor: Preprocessor](preprocessingupdatablesupervisedtabularestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func encode(PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtabularestimator/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func encodeWithOptimizer(PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatablesupervisedtabularestimator/encodewithoptimizer(_:to:).md)
   Encodes the transformer and optimizer to an encoder.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatablesupervisedtabularestimator/decodewithoptimizer(from:).md)
@@ -62,11 +58,8 @@ struct PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>
   The intermediate type.
 - [PreprocessingUpdatableSupervisedTabularEstimator.Output](preprocessingupdatablesupervisedtabularestimator/output.md)
   The output type.
-- [PreprocessingUpdatableSupervisedTabularEstimator.Transformer](preprocessingupdatablesupervisedtabularestimator/transformer.md)
-  The transformer type created by this estimator.
-### Default Implementations
-- [SupervisedTabularEstimator Implementations](preprocessingupdatablesupervisedtabularestimator/supervisedtabularestimator-implementations.md)
-- [UpdatableSupervisedTabularEstimator Implementations](preprocessingupdatablesupervisedtabularestimator/updatablesupervisedtabularestimator-implementations.md)
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 ## Relationships
 

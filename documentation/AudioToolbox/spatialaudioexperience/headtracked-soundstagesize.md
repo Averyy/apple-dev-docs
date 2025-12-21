@@ -6,7 +6,7 @@
 Create a head-tracked spatial audio experience with a specific anchoring strategy and sound stage size.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

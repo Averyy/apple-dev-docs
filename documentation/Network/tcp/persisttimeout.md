@@ -3,20 +3,30 @@
 **Framework**: Network  
 **Kind**: method
 
+Set the TCP persist timeout.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
-- watchOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
 
 ## Declaration
 
 ```swift
-func persistTimeout(_ val: UInt32) -> TCP
+func persistTimeout(_ timeout: UInt32) -> TCP
 ```
+
+#### Discussion
+
+The TCP persist timeout, in seconds (`PERSIST_TIMEOUT`). See RFC 6429.
+
+## Parameters
+
+- `timeout`: The persist timeout, in seconds.
 
 
 ---

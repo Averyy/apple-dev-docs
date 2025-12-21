@@ -29,12 +29,6 @@ enum StoragePolicy
   Storage in [`URLCache`](urlcache.md) is allowed; however storage should be restricted to memory only.
 - [URLCache.StoragePolicy.notAllowed](urlcache/storagepolicy/notallowed.md)
   Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
-- [URLCache.StoragePolicy.allowed](urlcache/storagepolicy/allowed.md)
-  Storage in [`URLCache`](urlcache.md) is allowed without restriction.
-- [URLCache.StoragePolicy.allowedInMemoryOnly](urlcache/storagepolicy/allowedinmemoryonly.md)
-  Storage in [`URLCache`](urlcache.md) is allowed; however storage should be restricted to memory only.
-- [URLCache.StoragePolicy.notAllowed](urlcache/storagepolicy/notallowed.md)
-  Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
 ### Initializers
 - [init?(rawValue: UInt)](urlcache/storagepolicy/init(rawvalue:).md)
 

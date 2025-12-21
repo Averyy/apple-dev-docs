@@ -9,7 +9,7 @@ The movie rating constraint that is active on this device.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 
 ## Declaration
 
@@ -27,11 +27,8 @@ An authorized app can use the Family Controls framework to apply a [`maximumMovi
 
 ## See Also
 
-- [var objectWillChange: ObservableObjectPublisher](managedsettingsstore/objectwillchange.md)
 - [var $effectiveMaximumTVShowRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximumtvshowrating.md)
   The television show rating constraint that is active on this device.
-- [ManagedSettingsStore.ObjectWillChangePublisher](managedsettingsstore/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
 
 
 ---

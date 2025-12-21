@@ -17,7 +17,7 @@ var isTargetForDropOperation: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the row view will draw a drop on indicator based on the current [`draggingDestinationFeedbackStyle`](nstableview/draggingdestinationfeedbackstyle-swift.property.md).
+When [`true`](https://developer.apple.com/documentation/Swift/true), the row view will draw a drop on indicator based on the current [`draggingDestinationFeedbackStyle`](nstableview/draggingdestinationfeedbackstyle-swift.property.md).
 
 ## See Also
 

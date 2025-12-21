@@ -18,7 +18,7 @@ var capturesMouseClicks: Bool { get set }
 
 By default, `AVCaptureScreenInput` does not highlight mouse clicks in its captured output.
 
-If you set this property is set to [`true`](https://developer.apple.com/documentation/swift/true), mouse clicks are highlighted (a circle is drawn around the mouse for the duration of the click) in the captured output.
+If you set this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), mouse clicks are highlighted (a circle is drawn around the mouse for the duration of the click) in the captured output.
 
 ## See Also
 

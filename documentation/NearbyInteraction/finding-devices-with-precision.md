@@ -19,7 +19,7 @@ To use the Nearby Interaction framework in your app, it needs to implement the f
 
 1. Check for availability of UWB and specific versions according to iOS releases if your app needs capabilities such as EDM.
 2. Start [`ARKit`](https://developer.apple.com/documentation/ARKit), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
-3. Implement a distance quality estimator function, if your app needs to take advantage of the EDM capabilities of the second generation of UWB chips. This is a function that uses data the Nearby Interaction framework returns to make decisions about signal quality to estimate the distance and direction between devices. This sample code project includes one possible implementation of a distance quality estimator function and it’s use to guide the people using the appropriate UI.
+3. Implement a distance quality estimator function, if your app needs to take advantage of the EDM capabilities of the second-generation UWB chip. This is a function that uses data the Nearby Interaction framework returns to make decisions about signal quality to estimate the distance and direction between devices. This sample code project includes one possible implementation of a distance quality estimator function and its use to guide the people using the appropriate UI.
 
 ##### Configure the Sample Code Project
 
@@ -27,7 +27,7 @@ To run the app:
 
 1. Install the app on two iPhone 15 devices or later.
 2. Rest one iPhone in portrait orientation as a stationary device.
-3. Run the app. If available, tap “Discuss jetpacks with another visitor” on both devices to run ranging with EDM capabilities (available on devices with second generation UWB chips). Otherwise, tap “Go to next Exhibit” on both devices to run first generation UWB ranging.
+3. Run the app. If available, tap “Discuss jetpacks with another visitor” on both devices to run ranging with EDM capabilities (available on devices with second-generation UWB chips). Otherwise, tap “Go to next Exhibit” on both devices to run first-generation UWB ranging.
 4. On the first run, accept the request prompts for local network and camera access.
 5. Wait a few moments for the apps to discover each other, then accept the Nearby Interaction access prompt.
 6. To initialize ARKit, move the nonstationary device from side to side.

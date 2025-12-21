@@ -7,7 +7,7 @@
 The maximum number of results to return in a single page enumeration.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

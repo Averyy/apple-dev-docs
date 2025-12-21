@@ -6,8 +6,8 @@
 The target where the drawable will be displayed/used.
 
 **Availability**:
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -38,6 +38,11 @@ Use these constants to determine whether content should be drawn for certain tar
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var target: LayerRenderer.Drawable.Target](layerrenderer/drawable/target-swift.property.md)
+  Returns a value that indicates the target of the drawable type.
 
 
 ---

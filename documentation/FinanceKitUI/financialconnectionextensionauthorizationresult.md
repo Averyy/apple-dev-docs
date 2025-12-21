@@ -17,14 +17,9 @@ struct FinancialConnectionExtensionAuthorizationResult
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](financialconnectionextensionauthorizationresult/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(params: FinancialConnectionExtensionAuthorizationParams)](financialconnectionextensionauthorizationresult/init(params:).md)
 ### Instance Properties
 - [let params: FinancialConnectionExtensionAuthorizationParams](financialconnectionextensionauthorizationresult/params.md)
-### Instance Methods
-- [func encode(to: any Encoder) throws](financialconnectionextensionauthorizationresult/encode(to:).md)
-  Encodes this value into the given encoder.
 
 ## Relationships
 

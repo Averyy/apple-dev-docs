@@ -66,7 +66,7 @@ Repeatedly opening, saving, and then closing the same file can increase the freq
 
 Many apps use property list, JSON, XML, or other serialized formats for writing user documents. These formats are good for read-only content, such as bundle metadata, or to transfer data over the network. The formats aren’t optimal to store user documents that frequently change. Changing a serialized document requires rewriting the entire file, which increases the latency of the operation and the wear on the device.
 
-When possible, use Core Data or SQLite for storing frequently edited documents. If that isn’t possible, use different serialized files for data that changes frequently and data that’s mostly static. This can reduce the amount of disk writes and improve latency.
+When possible, use [`SwiftData`](https://developer.apple.com/documentation/SwiftData), [`Core Data`](https://developer.apple.com/documentation/CoreData), or SQLite for storing frequently edited documents. If that isn’t possible, use different serialized files for data that changes frequently and data that’s mostly static. This can reduce the amount of disk writes and improve latency.
 
 The Disk Writes Report pane offers suggestions for optimizing the use of serialized files.
 
@@ -100,11 +100,11 @@ func testDiskUse() {
 }
 ```
 
-##### Use Core Data or Sqlite Databases for Frequently Changing Documents
+##### Use Swift Data Core Data or Sqlite Databases for Frequently Changing Documents
 
 SQLite is highly optimized for efficient access to storage. It uses in-memory caches and batched disk-writes to ensure high performance and minimal wear on storage. The data structures are designed to allow efficient updates when inserting new content or updating existing content.
 
-Core Data takes advantage of SQLite’s efficient disk usage for storing your data. Core Data also uses the SQLite best practices described below.
+[`SwiftData`](https://developer.apple.com/documentation/SwiftData) and [`Core Data`](https://developer.apple.com/documentation/CoreData) both take advantage of SQLite’s efficient disk usage for storing your data. They also use the SQLite best practices described below.
 
 ###### Avoid Unnecessarily Closing Sqlite Connections
 
@@ -162,24 +162,8 @@ The Disk Writes Report pane suggests using incremental vacuuming when a stack tr
 
 ## See Also
 
-- [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
-  Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
-- [Improving app responsiveness](improving-app-responsiveness.md)
-  Create a user experience that feels responsive by removing hangs and hitches from your app.
-- [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
-  Make your app more responsive by examining the event-handling and rendering loop.
-- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
-  Identify and address long-running view updates, and reduce the frequency of updates.
-- [Understanding hangs in your app](understanding-hangs-in-your-app.md)
-  Determine the cause for delays in user interactions by examining the main thread and the main run loop.
-- [Understanding hitches in your app](understanding-hitches-in-your-app.md)
-  Determine the cause of interruptions in motion by examining the render loop.
-- [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
-  Diagnose potential performance issues in your app during testing with the Thread Performance Checker tool in Xcode.
-- [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
-  Create a more responsive experience with your app by minimizing time spent in startup.
-- [Reducing terminations in your app](reduce-terminations-in-your-app.md)
-  Minimize how frequently the system stops your app by addressing common termination reasons.
+- [Reducing your app’s disk usage](reducing-your-app-s-disk-usage.md)
+  Measure and minimize the space your app uses to store its files.
 
 
 ---

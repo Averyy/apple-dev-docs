@@ -28,6 +28,15 @@ Parameters:
 - supporting: a message that may be used in conjunction with visual output
 - systemImageName: an SF Symbol that may be be used to represent the result
 
+## See Also
+
+- [init(LocalizedStringResource)](intentdialog/init(_:).md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](intentdialog/init(full:supporting:).md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [init(full: LocalizedStringResource, systemImageName: String)](intentdialog/init(full:systemimagename:).md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+
 
 ---
 

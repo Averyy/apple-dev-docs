@@ -6,7 +6,7 @@
 The time at which the system displays the frame onscreen.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

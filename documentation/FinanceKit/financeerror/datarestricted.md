@@ -16,6 +16,12 @@ The data is in a restricted state.
 case dataRestricted(FinanceStore.DataType)
 ```
 
+## See Also
+
+- [FinanceError.historyTokenInvalid](financeerror/historytokeninvalid.md)
+- [FinanceError.unknown](financeerror/unknown.md)
+  An unknown error occurred.
+
 
 ---
 

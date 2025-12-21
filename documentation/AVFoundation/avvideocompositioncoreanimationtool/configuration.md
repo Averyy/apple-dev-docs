@@ -6,12 +6,12 @@
 Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -21,16 +21,27 @@ struct Configuration
 
 ## Topics
 
-### Initializers
+### Creating a configuration
 - [init(postProcessingAsVideoLayer: CALayer, containingLayer: CALayer)](avvideocompositioncoreanimationtool/configuration/init(postprocessingasvideolayer:containinglayer:).md)
   Place composited video frames in videoLayer and render animationLayer to produce the final frame. Normally videoLayer should be in animationLayer’s sublayer tree. The animationLayer should not come from, or be added to, another layer tree. Be aware that on iOS, CALayers backing a UIView usually have their content flipped (as defined by the -contentsAreFlipped method). It may be required to insert a CALayer with its geometryFlipped property set to YES in the layer hierarchy to get the same result when attaching a CALayer to a AVVideoCompositionCoreAnimationTool as when using it to back a UIView.
 - [init(postProcessingAsVideoLayers: [CALayer], containingLayer: CALayer)](avvideocompositioncoreanimationtool/configuration/init(postprocessingasvideolayers:containinglayer:).md)
   Duplicate the composited video frames in each videoLayer and render animationLayer to produce the final frame. Normally videoLayers should be in animationLayer’s sublayer tree. The animationLayer should not come from, or be added to, another layer tree. Be aware that on iOS, CALayers backing a UIView usually have their content flipped (as defined by the -contentsAreFlipped method). It may be required to insert a CALayer with its geometryFlipped property set to YES in the layer hierarchy to get the same result when attaching a CALayer to a AVVideoCompositionCoreAnimationTool as when using it to back a UIView.
-### Instance Properties
+### Inspecting the configuration
 - [var containingLayer: CALayer](avvideocompositioncoreanimationtool/configuration/containinglayer.md)
   Containing layer to be rendered into, producing the final frame.
 - [var layers: [CALayer]](avvideocompositioncoreanimationtool/configuration/layers.md)
   Layer(s) to contain the composited video frames. Frames are duplicated if there is more than one layer.
+
+## See Also
+
+- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
+  Adds a Core Animation layer to the video composition.
+- [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
+  Composes the composited video frame with a Core Animation layer.
+- [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
+  Composes the composited video frames with the Core Animation layer.
+- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
+  Compose the composited video frames with the Core Animation layer.
 
 
 ---

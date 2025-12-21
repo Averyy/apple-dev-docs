@@ -41,7 +41,7 @@ pixellateFilter.name = @"pixellate";
 node.filters = @[ pixellateFilter, gaussianBlurFilter ];
 ```
 
-After you attach filters to a node, you can modify filter parameters only by calling doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue on the node the filter is attached to. (Directly modifying the parameters of a filter attached to a node results in undefined behavior.) To refer to a filter by key path, you must set the filter’s `name` property to a string that uniquely identifies that filter instance, as shown in the code above.
+After you attach filters to a node, you can modify filter parameters only by calling [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) on the node the filter is attached to. (Directly modifying the parameters of a filter attached to a node results in undefined behavior.) To refer to a filter by key path, you must set the filter’s `name` property to a string that uniquely identifies that filter instance, as shown in the code above.
 
 You can also animate filter parameters by their key paths, as in the code below that animates one of the filters from the previous example.
 

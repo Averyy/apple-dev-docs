@@ -25,19 +25,17 @@ class UINavigationBar
 
 #### Overview
 
-A [`UINavigationBar`](uinavigationbar.md) object is a bar, typically displayed at the top of the window, containing buttons for navigating within a hierarchy of screens. The primary components are a left (back) button, a center title, and an optional right button. You can use a navigation bar as a standalone object or in conjunction with a navigation controller object.
+A `UINavigationBar` object is a bar, typically displayed at the top of the window, containing buttons for navigating within a hierarchy of screens. The primary components are a left (back) button, a center title and optional subtitle, and optional right button(s). You can use a navigation bar as a standalone object or in conjunction with a navigation controller object.
 
-![A diagram that identifies the primary components of a navigation bar, including the back item title that connects to the previous view controller, shown on the left side of the diagram, the top item title of the navigation bar and the navigation bar prompt in the middle, and the right bar button item, with the text Done.](https://docs-assets.developer.apple.com/published/eac8a05db61b89a933c041e28611cde9/media-2759891%402x.png)
+You most frequently use a navigation bar within a navigation controller. The [`UINavigationController`](uinavigationcontroller.md) object creates, displays, and manages its associated navigation bar, and uses attributes of the view controllers you add to control the content displayed in the navigation bar.
 
-A navigation bar is most commonly used within a navigation controller. The [`UINavigationController`](uinavigationcontroller.md) object creates, displays, and manages its associated navigation bar, and uses attributes of the view controllers you add to control the content displayed in the navigation bar.
-
-To control a navigation bar when using a navigation controller, the following steps are required:
+To control a navigation bar when using a navigation controller, follow these steps:
 
 - Create a navigation controller in Interface Builder or in the code.
 - Configure the appearance of the navigation bar using the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on the [`UINavigationController`](uinavigationcontroller.md) object.
 - Control the content of the navigation bar by setting the [`title`](uiviewcontroller/title.md) and [`navigationItem`](uiviewcontroller/navigationitem.md) properties on each [`UIViewController`](uiviewcontroller.md) you push onto the navigation controller’s stack.
 
-You can also use a standalone navigation bar, without using a navigation controller. To add a navigation bar to your interface, the following steps are required:
+You can also use a standalone navigation bar, without using a navigation controller. To add a navigation bar to your interface, follow these steps:
 
 - Set up Auto Layout rules to govern the position of the navigation bar in your interface.
 - Create a root navigation item to supply the initial title.
@@ -53,19 +51,19 @@ A navigation controller uses the [`navigationItem`](uiviewcontroller/navigationi
 
 A navigation controller automatically assigns itself as the delegate of its navigation bar object. Therefore, when using a navigation controller, don’t assign a custom delegate object to the corresponding navigation bar.
 
-To access the navigation bar associated with a navigation controller, use the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on [`UINavigationController`](uinavigationcontroller.md). See [`Customize the appearance of a navigation bar`](uinavigationbar#Customize-the-appearance-of-a-navigation-bar.md) for details on how to customize the appearance of a navigation bar.
+To access the navigation bar associated with a navigation controller, use the [`navigationBar`](uinavigationcontroller/navigationbar.md) property on [`UINavigationController`](uinavigationcontroller.md). See [`Customize the appearance of a navigation bar`](uinavigationbar#Customize-the-appearance-of-a-navigation-bar.md) for details on appearance customization.
 
-For information about navigation controllers, see [`UINavigationController`](uinavigationcontroller.md).
+For more information about navigation controllers, see [`UINavigationController`](uinavigationcontroller.md).
 
 ##### Add Content to a Standalone Navigation Bar
 
-In the vast majority of scenarios you use a navigation bar as part of a navigation controller. However, there are situations for which you might want to use the navigation bar UI and implement your own approach to content navigation. In these situations, you can use a standalone navigation bar.
+In the vast majority of scenarios, you use a navigation bar as part of a navigation controller. However, there are situations for which you might want to use the navigation bar UI and implement your own approach to content navigation. In these situations, you can use a standalone navigation bar.
 
 When you use a navigation bar as a standalone object, you’re responsible for providing its content. Unlike other types of views, you don’t add subviews to a navigation bar directly. Instead, you use a navigation item (an instance of the [`UINavigationItem`](uinavigationitem.md) class) to specify what buttons or custom views you want displayed. A navigation item has properties for specifying views on the left, right, and center of the navigation bar and for specifying a custom prompt string.
 
 A navigation bar manages a stack of [`UINavigationItem`](uinavigationitem.md) objects. Although the stack is there mostly to support navigation controllers, you can use it to implement your own custom navigation interface. The topmost item in the stack represents the navigation item whose contents are currently displayed by the navigation bar. You push new navigation items onto the stack using the [`pushItem(_:animated:)`](uinavigationbar/pushitem(_:animated:).md) method and pop items off the stack using the [`popItem(animated:)`](uinavigationbar/popitem(animated:).md) method. Both of these changes can be animated for the benefit of the user.
 
-In addition to pushing and popping items, you can also set the contents of the stack directly using either the [`items`](uinavigationbar/items.md) property or the [`setItems(_:animated:)`](uinavigationbar/setitems(_:animated:).md) method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time. The following figure shows the part of the [`UINavigationBar`](uinavigationbar.md) API responsible for managing the stack of navigation items.
+In addition to pushing and popping items, you can also set the contents of the stack directly using either the [`items`](uinavigationbar/items.md) property or the [`setItems(_:animated:)`](uinavigationbar/setitems(_:animated:).md) method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time. The following figure shows the part of the [`UINavigationBar`](uinavigationbar.md) API responsible for managing the stack of navigation items:
 
 ![A flowchart diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.](https://docs-assets.developer.apple.com/published/22a4cdb2afd3e24633e4a5ec88b1c4ae/media-2759892%402x.png)
 
@@ -75,59 +73,39 @@ For more information about creating navigation items, see [`UINavigationItem`](u
 
 ##### Customize the Appearance of a Navigation Bar
 
-Navigation bars have two standard appearance styles: white with dark text or black with light text. Use the [`barStyle`](uinavigationbar/barstyle.md) property to select the style. Any changes you make to other navigation bar appearance properties override those inferred from the bar style.
+Navigation bars are transparent and feature bar button items constructed with Liquid Glass. Don’t add a background or apply a tint color to the navigation bar, as that may interfere with the Liquid Glass presentation.
 
-Navigation bars are translucent by default; their background color is semitransparent. You can make the navigation bar opaque by setting the [`isTranslucent`](uinavigationbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+Customize the color of the text or image in a bar button item by setting the [`tintColor`](uibarbuttonitem/tintcolor.md) property. To customize the background color of a bar button item, set the bar button’s tint color, then set the bar button’s [`style`](uibarbuttonitem/style-swift.property.md) property to the value [`UIBarButtonItem.Style.prominent`](uibarbuttonitem/style-swift.enum/prominent.md).
 
-You can specify a custom tint color for a navigation bar background using the [`barTintColor`](uinavigationbar/bartintcolor.md) property. Setting this property overrides the default color inferred from the bar style. As with all [`UIView`](uiview.md) subclasses, you can control the color of the interactive elements within navigation bars, including button images and titles, using the [`tintColor`](uiview/tintcolor.md) property.
+The [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property specifies the attributes for displaying the bar’s title text. You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary using the [`NSFontAttributeName`](nsfontattributename.md), [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md), and [`NSShadowAttributeName`](nsshadowattributename.md) keys.
 
-The [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property specifies the attributes for displaying the bar’s title text. You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary using the [`NSFontAttributeName`](nsfontattributename.md), [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md), and [`NSShadowAttributeName`](nsshadowattributename.md) keys. For more information about string-formatting attributes, see `Character Attributes`.
+Use the [`setTitleVerticalPositionAdjustment(_:for:)`](uinavigationbar/settitleverticalpositionadjustment(_:for:).md) method to adjust the vertical position of the title. This method allows you to specify the adjustment dependent on the bar height, which is represented by the [`UIBarMetrics`](uibarmetrics.md) enumeration.
 
-Use the [`setTitleVerticalPositionAdjustment(_:for:)`](uinavigationbar/settitleverticalpositionadjustment(_:for:).md) method to adjust the vertical position of the title. This method allows you to specify the adjustment dependent on the bar height, which is represented by the [`UIBarMetrics`](uibarmetrics.md) enum. The following figure shows a navigation bar with custom tint color, title text attributes, and bar tint color.
-
-![A navigation bar diagram that depicts the fonts, color, and layout of a navigation bar, including the tint color, title text attributes, bar tint color, and the title vertical position.](https://docs-assets.developer.apple.com/published/ba68ec16c51161060a4894d0ea2586e6/media-2759893%402x.png)
-
-To allow complete customization over the appearance of navigation bars, you can additionally provide custom background and shadow images. To provide a custom background image, use the [`setBackgroundImage(_:for:barMetrics:)`](uinavigationbar/setbackgroundimage(_:for:barmetrics:).md) method, providing a [`UIImage`](uiimage.md) object for the appropriate bar position and metrics values. Use a [`UIBarPosition`](uibarposition.md) value for the bar position argument to specify whether to use the supplied image at the bottom or the top of the window, and if it appears at the top, whether to extend it upward under the status bar. Similarly, you can specify that the image should be used for either compact or default bar metrics, with or without a prompt, by providing a [`UIBarMetrics`](uibarmetrics.md) value to the bar metrics argument.
-
-To add a shadow, provide a resizable [`UIImage`](uiimage.md) to the [`shadowImage`](uinavigationbar/shadowimage.md) property. To use the custom shadow image, you need to have specified a custom background image. The following figure shows a navigation bar with a custom background image, supplied using [`setBackgroundImage(_:for:barMetrics:)`](uinavigationbar/setbackgroundimage(_:for:barmetrics:).md) with a bar position value of [`UIBarPosition.topAttached`](uibarposition/topattached.md) and a bar metrics value of [`UIBarMetrics.default`](uibarmetrics/default.md). A custom image has also been provided to the [`shadowImage`](uinavigationbar/shadowimage.md) property.
-
-![A screenshot of a navigation bar with the location of a background image and a shadow image labeled.](https://docs-assets.developer.apple.com/published/d1fcd89059fad88c63657b42c2e75548/media-2759894%402x.png)
-
-To see examples of customizing a navigation bar, see [`Customizing your app’s navigation bar`](customizing-your-app-s-navigation-bar.md).
+See [`Customizing your app’s navigation bar`](customizing-your-app-s-navigation-bar.md) for customization examples.
 
 ##### Customize a Navigation Bar with Interface Builder
-
-The following table lists the core attributes that you configure for navigations bars in the Attributes Inspector within Interface Builder.
-
-| Attribute | Description |
-| --- | --- |
-| Style | Specifies the UI bar style to apply to the navigation bar. The bar style controls the title color and the bar tint color, but you can override it by providing values for those attributes. Select Translucent to make the navigation bar semitransparent. Access these values at runtime with the [`barStyle`](uinavigationbar/barstyle.md) and [`isTranslucent`](uinavigationbar/istranslucent.md) properties. |
-| Bar Tint | Controls the tint color of the navigation bar. This overrides the value implied by the Style attribute. If the Translucent attribute is selected, the Bar Tint color is automatically made semitransparent. Access this value at runtime with the [`barTintColor`](uinavigationbar/bartintcolor.md) property. |
-| Shadow Image | Represents the image used as a shadow beneath the navigation bar. This image is stretched horizontally to match the width of the bar. Access this value at runtime with the [`shadowImage`](uinavigationbar/shadowimage.md) property. |
-| Back Image | Specifies the image that appears at the leading edge of the back button. This attribute must be used in combination with the Back Mask attribute. Access this value at runtime with the [`backIndicatorImage`](uinavigationbar/backindicatorimage.md) property. |
-| Back Mask | Specifies the mask associated with the Back Image attribute. This is used to control the appearance of the Back button during animated transitions, and therefore must be used in conjunction with the Back Image attribute. Access this value at runtime with the [`backIndicatorTransitionMaskImage`](uinavigationbar/backindicatortransitionmaskimage.md) property. |
 
 The following table lists the Interface Builder attributes that affect the appearance of the navigation bar’s title.
 
 | Attribute | Description |
 | --- | --- |
-| Title Font | The font used to render the title in the center of the navigation bar. Access this value at runtime with the value stored against the [`NSFontAttributeName`](nsfontattributename.md) key in the dictionary in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property. |
-| Title Color | The color used to render the navigation bar title. Access this value at runtime using the [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md) key in the dictionary in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) property. |
-| Title Shadow | Specifies the color and offset of the shadow used when rendering the navigation bar’s title. Access these values at runtime with the dictionary in the [[`titleTextAttributes`](uinavigationbar/titletextattributes.md)] property, using the [`NSShadowAttributeName`](nsshadowattributename.md) key. |
+| Title Font | The font for the title in the center of the navigation bar. Access this value at runtime with the [`NSFontAttributeName`](nsfontattributename.md) key in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary. |
+| Title Color | The color for the navigation bar title. Access this value at runtime with the [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md) key in the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary. |
+| Title Shadow | The color and offset of the shadow for the navigation bar’s title. Access these values at runtime from the [`titleTextAttributes`](uinavigationbar/titletextattributes.md) dictionary, using the [`NSShadowAttributeName`](nsshadowattributename.md) key. |
 
-##### Internationalize a Navigation Bar
+##### Localize a Navigation Bar
 
-To internationalize navigation bars, specify a localized string for each of the displayed string properties of the navigation item model objects.
+To localize navigation bars, specify a localized string for each of the displayed string properties of the navigation item model objects.
 
-For more information about internationalizing your interface, see [`Internationalization and Localization Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
+For more information about localizing your interface, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
 
 ##### Make a Navigation Bar Accessible
 
 Navigation bars are accessible by default. The default accessibility trait for a navigation bar is User Interaction Enabled.
 
-With VoiceOver enabled on an iOS device, after the user navigates to a new view in the hierarchy, VoiceOver reads the navigation bar’s title, followed by the name of the left bar button item. When the user taps an element in a navigation bar, VoiceOver reads the name and the type of the element; for example, “General back button,” “Keyboard heading,” and “Edit button.”
+With VoiceOver enabled on an iOS device, after someone navigates to a new view in the hierarchy, VoiceOver reads the navigation bar’s title, followed by the name of the left bar button item. When someone taps an element in a navigation bar, VoiceOver reads the name and the type of the element, for example, “General back button,” “Keyboard heading,” and “Edit button.”
 
-For general information about making your interface accessible, see [`Accessibility Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785).
+For general information about making your interface accessible, see [`Accessibility for UIKit`](accessibility-for-uikit.md).
 
 ## Topics
 

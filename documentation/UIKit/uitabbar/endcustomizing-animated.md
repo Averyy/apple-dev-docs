@@ -19,7 +19,7 @@ func endCustomizing(animated: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if items on the tab bar changed or [`false`](https://developer.apple.com/documentation/swift/false) if they did not.
+[`true`](https://developer.apple.com/documentation/Swift/true) if items on the tab bar changed or [`false`](https://developer.apple.com/documentation/Swift/false) if they did not.
 
 #### Discussion
 

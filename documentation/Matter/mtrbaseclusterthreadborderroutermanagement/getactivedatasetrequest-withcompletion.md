@@ -22,7 +22,7 @@ func activeDatasetRequest(with params: MTRThreadBorderRouterManagementClusterGet
 
 #### Discussion
 
-Command to request the active operational dataset of the Thread network to which the border router is connected. This command must be sent over a valid CASE session
+This command SHALL be used to request the active operational dataset of the Thread network to which the border router is connected.
 
 
 ---

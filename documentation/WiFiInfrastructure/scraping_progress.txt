@@ -1,0 +1,4 @@
+Completed scraping Wi-Fi Infrastructure!
+Total pages scraped: 90
+Pages skipped (unchanged): 1
+Pages failed: 0

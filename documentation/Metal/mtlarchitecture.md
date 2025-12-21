@@ -21,7 +21,7 @@ class MTLArchitecture
 
 ## Topics
 
-### Inspecting a GPU Device’s Architecture Details
+### Inspecting a GPU device’s architecture details
 - [var name: String](mtlarchitecture/name.md)
   The name of a GPU device’s architecture.
 

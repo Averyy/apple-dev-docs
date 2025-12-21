@@ -18,7 +18,7 @@ func setValue(_ value: CGFloat, forButtonElement element: String)
 
 #### Discussion
 
-Use this method to update the value of a button element in the virtual controller when you set the [`isHidden`](gcvirtualcontroller/configuration/ishidden.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and present your own virtual controller interface.
+Use this method to update the value of a button element in the virtual controller when you set the [`isHidden`](gcvirtualcontroller/configuration/ishidden.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) and present your own virtual controller interface.
 
 ## Parameters
 

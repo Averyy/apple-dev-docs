@@ -6,7 +6,7 @@
 A boolean value that indicates whether the content is presented.
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

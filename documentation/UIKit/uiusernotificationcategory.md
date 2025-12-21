@@ -88,10 +88,10 @@ To display a group of actions for a specific notification, configure the local o
   An object that manages the display of a search bar, along with a table view that displays search results.
 - [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)
   A specific type of segue for presenting content in a popover.
+- [class UIWebView](uiwebview.md)
+  A view that embeds web content in your app.
 - [class UIUserNotificationAction](uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
-- [class UIUserNotificationSettings](uiusernotificationsettings.md)
-  The types of notifications that can be displayed to the user by your app.
 
 
 ---

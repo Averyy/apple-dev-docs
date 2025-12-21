@@ -3,7 +3,7 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A message that tells the user why the app needs access to their Game Center friends list.
+A message that tells people why the app needs access to their Game Center friends list.
 
 **Availability**:
 - iOS 14.5+

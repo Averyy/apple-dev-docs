@@ -22,9 +22,9 @@ struct ReplacingOptions
 
 ## Topics
 
-### Constants
+### Replacing options
 - [static var byMoving: NSFileVersion.ReplacingOptions](nsfileversion/replacingoptions/bymoving.md)
-- [static var byMoving: NSFileVersion.ReplacingOptions](nsfileversion/replacingoptions/bymoving.md)
+  An option to perform replacing by moving a file.
 ### Initializers
 - [init(rawValue: UInt)](nsfileversion/replacingoptions/init(rawvalue:).md)
 

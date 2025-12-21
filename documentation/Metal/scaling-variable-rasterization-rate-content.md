@@ -1,4 +1,4 @@
-# Scaling Variable Rasterization Rate Content
+# Scaling variable rasterization rate content
 
 **Framework**: Metal
 
@@ -20,7 +20,7 @@ Pass the buffer as an argument to your shader when you encode the command to dra
 
 ##### Convert Between Screen and Physical Coordinates
 
-Metal Shading Language provides functions that work with the rate map data to convert between screen (logical viewport) coordinates and physical texture coordinates. The fragment shader below scales the intermediate texture and copies it into the destination texture. It passes the rate map data you provided to a rate map decoder object and uses that object to convert the target screen coordinates to physical coordinates in the intermediate texture. Then it samples that location and returns the result.
+Metal Shading Language provides functions that work with the rate map data to convert between screen (logical viewport) coordinates and physical texture coordinates. The fragment shader below scales the intermediate texture and copies it into the destination texture. It passes the rate map data you provided to a rate map decoder object and uses that object to convert the target screen coordinates to physical coordinates in the intermediate texture. Then it samples that location and returns the result. For more details, see the “Variable Rasterization Rate” section of the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ```metal
 typedef struct
@@ -44,20 +44,20 @@ fragment float4 transformMappedToScreenFragments(
 }
 ```
 
-In iOS, you don’t usually create a separate render pass just to scale an image. Instead, to reduce memory bandwidth usage, combine this render pass with other rendering that follows the scaling process.
+To reduce memory bandwidth usage on iOS, combine this render pass with other rendering that follows the scaling process rather than creating a separate pass.
 
 ## See Also
 
-- [Rendering at Different Rasterization Rates](rendering-at-different-rasterization-rates.md)
+- [Rendering at different rasterization rates](rendering-at-different-rasterization-rates.md)
   Configure a rasterization rate map to vary rasterization rates depending on the amount of detail needed.
-- [Creating a Rasterization Rate Map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
   Define the rasterization rates for each part of your render target.
-- [Rendering with a Rasterization Rate Map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
   Create offscreen textures to hold intermediate rasterized data.
 - [class MTLRasterizationRateMapDescriptor](mtlrasterizationratemapdescriptor.md)
   An object that you use to configure new rasterization rate maps.
 - [protocol MTLRasterizationRateMap](mtlrasterizationratemap.md)
-  A compiled read-only object that determines how to apply variable rasterization rates when rendering.
+  A compiled read-only instance that determines how to apply variable rasterization rates when rendering.
 - [typealias MTLCoordinate2D](mtlcoordinate2d.md)
   A coordinate in the viewport.
 - [func MTLCoordinate2DMake(Float, Float) -> MTLCoordinate2D](mtlcoordinate2dmake(_:_:).md)

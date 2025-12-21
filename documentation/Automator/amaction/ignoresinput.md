@@ -17,7 +17,7 @@ var ignoresInput: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action acts upon its input, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the action acts upon its input, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 Many actions act upon their input, but an action may merely pass on its input or, rarely, ignore it.
 

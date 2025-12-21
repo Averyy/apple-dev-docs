@@ -6,7 +6,7 @@
 A network device attachment that allows a custom network topology.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

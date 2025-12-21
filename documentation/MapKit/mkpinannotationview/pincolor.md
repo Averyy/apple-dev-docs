@@ -24,10 +24,14 @@ The Maps application uses different pin colors for different types of map annota
 
 ## See Also
 
-- [var pinTintColor: UIColor!](mkpinannotationview/pintintcolor.md)
-  The color of the pin head.
-- [var animatesDrop: Bool](mkpinannotationview/animatesdrop.md)
-  A Boolean value indicating whether the annotation view is animated onto the screen.
+- [var filterType: MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.property.md)
+  The filter options for the search results.
+- [var showsPointsOfInterest: Bool](mkmapview/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
+- [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
+  A Boolean value that indicates whether the map displays point-of-interest information.
+- [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
+  The map’s visual style.
 
 
 ---

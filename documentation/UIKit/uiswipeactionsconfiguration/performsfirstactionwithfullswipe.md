@@ -20,7 +20,7 @@ var performsFirstActionWithFullSwipe: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), a full swipe in the row performs the first action listed in the [`actions`](uiswipeactionsconfiguration/actions.md) property. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), a full swipe in the row performs the first action listed in the [`actions`](uiswipeactionsconfiguration/actions.md) property. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

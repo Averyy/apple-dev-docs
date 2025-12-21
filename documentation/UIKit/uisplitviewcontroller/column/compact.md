@@ -20,7 +20,7 @@ case compact
 
 #### Discussion
 
-If a view controller is set for this column, that view controller is shown when [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+If a view controller is set for this column, that view controller is shown when [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 
@@ -30,6 +30,8 @@ If a view controller is set for this column, that view controller is shown when 
   The column for the supplementary view controller.
 - [UISplitViewController.Column.secondary](uisplitviewcontroller/column/secondary.md)
   The column for the secondary, or detail, view controller.
+- [UISplitViewController.Column.inspector](uisplitviewcontroller/column/inspector.md)
+  The column for the inspector, or trailing, view controller.
 
 
 ---

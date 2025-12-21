@@ -26,7 +26,7 @@ Whenever (width of the real contents of the line) / (the line fragment width) is
   The text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
 - [layoutOptions](nslayoutmanager-layoutoptions.md)
   The layout manager’s current layout options.
-- [var usesScreenFonts: Bool { get set }](../AppKit/NSLayoutManager/usesScreenFonts.md)
+- [var usesScreenFonts: Bool](../AppKit/NSLayoutManager/usesScreenFonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

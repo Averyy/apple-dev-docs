@@ -14,7 +14,7 @@ An App Store receipt provides a record of the sale of an app and any purchases t
 
 There are two ways to verify a receipt’s authenticity:
 
-- Locally, on the device. Validating receipts locally requires code that reads and validates a binary file that Apple encodes and signs as a PKCS #7 container. For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device).
+- Locally, on the device. Validating receipts locally requires code that reads and validates a binary file that Apple encodes and signs as a PKCS #7 container. For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/AppStoreReceipts/validating-receipts-on-the-device).
 - On your server with the App Store. Validating receipts with the App Store requires secure connections between your app and your server, and between your server and the App Store. For more information, see [`Validating receipts with the App Store`](validating-receipts-with-the-app-store.md).
 
 Compare the approaches and determine the method that best fits your app and your infrastructure. You can also choose to implement both approaches. For managing auto-renewable subscriptions, see the following table for the key advantages that server-side receipt validation provides over on-device receipt validation:
@@ -30,7 +30,7 @@ Receipts contain non-consumable in-app purchases, auto-renewable subscriptions, 
 
 ##### Get the Latest Receipt
 
-The App Store updates receipts immediately after completed purchases. When you call [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) from your server, the App Store returns the latest transaction information, regardless of the contents of the receipt you send in the request.
+The App Store updates receipts immediately after completed purchases. When you call [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) from your server, the App Store returns the latest transaction information, regardless of the contents of the receipt you send in the request.
 
 On the device, the system updates the receipt immediately when it has an internet connection, and any of the following occur:
 
@@ -49,7 +49,7 @@ To ensure that your app receives all transactions, add the transaction observer,
 
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
   Verify transactions with the App Store on a secure server.
-- [var appStoreReceiptURL: URL? { get }](../Foundation/Bundle/appStoreReceiptURL.md)
+- [var appStoreReceiptURL: URL?](../Foundation/Bundle/appStoreReceiptURL.md)
   The file URL for the bundle’s App Store receipt.
 - [class SKReceiptRefreshRequest](skreceiptrefreshrequest.md)
   A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.

@@ -43,12 +43,12 @@ struct OfferType
 
 ## See Also
 
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
   Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
   Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within your app.
 - [Product.SubscriptionOffer](product/subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 

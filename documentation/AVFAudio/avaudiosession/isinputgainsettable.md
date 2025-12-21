@@ -20,7 +20,7 @@ var isInputGainSettable: Bool { get }
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the device allows input gain to be changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the device allows input gain to be changed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

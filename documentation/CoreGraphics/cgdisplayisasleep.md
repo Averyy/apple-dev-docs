@@ -17,7 +17,7 @@ func CGDisplayIsAsleep(_ display: CGDirectDisplayID) -> boolean_t
 
 #### Return Value
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the specified display is in sleep mode; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](https://developer.apple.com/documentation/Swift/true), the specified display is in sleep mode; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 

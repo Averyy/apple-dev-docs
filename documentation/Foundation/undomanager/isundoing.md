@@ -23,7 +23,7 @@ var isUndoing: Bool { get }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if the manager is performing its [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md) method, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the manager is performing its [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md) method, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

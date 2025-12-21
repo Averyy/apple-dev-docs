@@ -10,7 +10,7 @@ The policy that determines the earliest date and time WidgetKit requests a new t
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 - watchOS 9.0+
 
 ## Declaration

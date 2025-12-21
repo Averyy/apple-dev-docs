@@ -18,10 +18,6 @@ A Boolean value that indicates whether this device supports multi-camera session
 class var isMultiCamSupported: Bool { get }
 ```
 
-#### Discussion
-
-[`AVCaptureMultiCamSession`](avcapturemulticamsession.md) is supported on iPhone XR, iPhone XS, iPhone XS Max, and iPad Pro (3rd generation).
-
 
 ---
 

@@ -22,24 +22,19 @@ struct TryContainsWhere<Upstream> where Upstream : Publisher
 
 ## Topics
 
-### Creating a Try Contains Where Publisher
+### Creating a try-contains-where publisher
 - [init(upstream: Upstream, predicate: (Upstream.Output) throws -> Bool)](publishers/trycontainswhere/init(upstream:predicate:).md)
   Creates a publisher that emits a Boolean value upon receiving an element that satisfies the throwing predicate closure.
-### Declaring Publisher Topography
+### Declaring supporting types
 - [Publishers.TryContainsWhere.Output](publishers/trycontainswhere/output.md)
   The kind of values published by this publisher.
 - [Publishers.TryContainsWhere.Failure](publishers/trycontainswhere/failure.md)
   The kind of errors this publisher might publish.
-### Inspecting Publisher Properties
+### Inspecting publisher properties
 - [let upstream: Upstream](publishers/trycontainswhere/upstream.md)
   The publisher from which this publisher receives elements.
 - [let predicate: (Upstream.Output) throws -> Bool](publishers/trycontainswhere/predicate.md)
   The error-throwing closure that determines whether this publisher should emit a Boolean true element.
-### Applying Operators
-- [Publisher Operators](publishers-trycontainswhere-publisher-operators.md)
-  Methods that create downstream publishers or subscribers to act on the elements they receive.
-### Default Implementations
-- [Publisher Implementations](publishers/trycontainswhere/publisher-implementations.md)
 
 ## Relationships
 

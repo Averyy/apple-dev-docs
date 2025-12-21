@@ -21,7 +21,7 @@ var hasAttitudeAndRotationRate: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller provides attitude and rotation rate data; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the controller provides attitude and rotation rate data; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

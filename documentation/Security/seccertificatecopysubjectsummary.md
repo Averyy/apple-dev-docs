@@ -22,12 +22,12 @@ func SecCertificateCopySubjectSummary(_ certificate: SecCertificate) -> CFString
 
 ## Mentions
 
-- [Importing an Identity](importing-an-identity.md)
 - [Examining a Certificate](examining-a-certificate.md)
+- [Importing an Identity](importing-an-identity.md)
 
 #### Return Value
 
-A string that contains a human-readable summary of the contents of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release this object when you are finished with it. Returns `NULL` if the data passed in the `certificate` parameter is not a valid certificate object.
+A string that contains a human-readable summary of the contents of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it. Returns `NULL` if the data passed in the `certificate` parameter is not a valid certificate object.
 
 #### Discussion
 

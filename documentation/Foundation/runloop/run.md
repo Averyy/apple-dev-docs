@@ -34,7 +34,7 @@ NSRunLoop *theRL = [NSRunLoop currentRunLoop];
 while (shouldKeepRunning && [theRL runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]);
 ```
 
-where `shouldKeepRunning` is set to [`false`](https://developer.apple.com/documentation/swift/false) somewhere else in the program.
+where `shouldKeepRunning` is set to [`false`](https://developer.apple.com/documentation/Swift/false) somewhere else in the program.
 
 ## See Also
 

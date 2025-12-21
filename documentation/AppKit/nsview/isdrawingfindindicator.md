@@ -17,7 +17,7 @@ var isDrawingFindIndicator: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the view contents are being drawn so that they are easily readable against the find indicator background. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the view contents are being drawn so that they are easily readable against the find indicator background. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

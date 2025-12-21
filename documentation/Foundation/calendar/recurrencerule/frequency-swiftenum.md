@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+How often a recurring event repeats
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

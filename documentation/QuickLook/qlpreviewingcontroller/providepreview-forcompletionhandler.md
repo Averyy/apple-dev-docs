@@ -15,6 +15,10 @@
 optional func providePreview(for request: QLFilePreviewRequest) async throws -> QLPreviewReply
 ```
 
+#### Discussion
+
+Use this method to provide a QLPreviewReply that provides preview in the form of NSData, NSURL, PDFDocument, or a drawing into a context.
+
 ## Parameters
 
 - `request`: An object which contains information about the preview that should be provided. It contains the URL of the file to provide a preview for.

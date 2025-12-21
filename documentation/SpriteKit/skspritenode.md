@@ -17,18 +17,17 @@ An image or solid color.
 ## Declaration
 
 ```swift
-@MainActor
 class SKSpriteNode
 ```
 
 ## Mentions
 
 - [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
+- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
 - [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
 - [Loading and Using Textures](loading-and-using-textures.md)
 
 #### Overview

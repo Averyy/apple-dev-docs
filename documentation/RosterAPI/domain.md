@@ -16,7 +16,7 @@ object Domain
 
 #### Discussion
 
-An organization can generate Managed Apple IDs in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [`Verify domains in Apple Business Manager and Apple School Manager`](https://developer.apple.comhttps://support.apple.com/en-us/HT212275).
+An organization can generate Managed Apple Accounts in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [`Verify domains in Apple Business Manager and Apple School Manager`](https://developer.apple.comhttps://support.apple.com/en-us/HT212275).
 
 ## See Also
 

@@ -21,7 +21,7 @@ Each [`UIWindowScene`](uiwindowscene.md) has a [`UITitlebar`](uititlebar.md) obj
 
 To show or hide a title in the title bar, set the [`titleVisibility`](uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.visible`](uititlebartitlevisibility/visible.md) or [`UITitlebarTitleVisibility.hidden`](uititlebartitlevisibility/hidden.md). If you set the visibility to hidden and the title bar’s [`toolbar`](uititlebar/toolbar.md) property is `nil`, the window displays only the window control buttons (Close, Minimize, and Zoom).
 
-To add a toolbar to a window, create an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) object and assign it to the title bar’s [`toolbar`](uititlebar/toolbar.md) property. To automatically hide the toolbar when the window enters full-screen mode, set the [`autoHidesToolbarInFullScreen`](uititlebar/autohidestoolbarinfullscreen.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+To add a toolbar to a window, create an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) object and assign it to the title bar’s [`toolbar`](uititlebar/toolbar.md) property. To automatically hide the toolbar when the window enters full-screen mode, set the [`autoHidesToolbarInFullScreen`](uititlebar/autohidestoolbarinfullscreen.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

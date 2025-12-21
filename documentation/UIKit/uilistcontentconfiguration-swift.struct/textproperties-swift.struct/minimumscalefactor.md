@@ -20,7 +20,7 @@ var minimumScaleFactor: CGFloat { get set }
 
 #### Discussion
 
-This value applies when [`adjustsFontSizeToFitWidth`](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This value applies when [`adjustsFontSizeToFitWidth`](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

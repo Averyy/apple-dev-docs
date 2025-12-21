@@ -60,26 +60,22 @@ The status may change due to external events, such as a child graduating to an a
 
 ## Topics
 
-### Accessing the Shared Center
+### Accessing the shared center
 - [static let shared: AuthorizationCenter](authorizationcenter/shared.md)
   The shared center for requesting and revoking authorization.
-### Requesting and Revoking Authorization
+### Requesting and revoking authorization
 - [func requestAuthorization(for: FamilyControlsMember) async throws](authorizationcenter/requestauthorization(for:).md)
   Requests authorization to provide parental controls for a child or individual.
 - [func revokeAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/revokeauthorization(completionhandler:).md)
   Revokes authorization to provide parental controls.
-- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/requestauthorization(completionhandler:).md)
-  Requests authorization to provide parental controls for a child.
-### Tracking Authorization Changes
+### Tracking authorization changes
 - [var authorizationStatus: AuthorizationStatus](authorizationcenter/authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
 - [var $authorizationStatus: Published<AuthorizationStatus>.Publisher](authorizationcenter/$authorizationstatus.md)
   A publisher for the authorization status property.
-- [var objectWillChange: ObservableObjectPublisher](authorizationcenter/objectwillchange.md)
-- [AuthorizationCenter.ObjectWillChangePublisher](authorizationcenter/objectwillchangepublisher.md)
-  The type of publisher that emits before the object has changed.
-### Default Implementations
-- [ObservableObject Implementations](authorizationcenter/observableobject-implementations.md)
+### Deprecated APIs
+- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/requestauthorization(completionhandler:).md)
+  Requests authorization to provide parental controls for a child.
 
 ## Relationships
 
@@ -92,6 +88,8 @@ The status may change due to external events, such as a child graduating to an a
   The status of your app’s authorization to provide parental controls.
 - [Family Controls](../BundleResources/Entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
+- [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
+  Register your app and its Screen Time API app extensions to use Family Controls.
 
 
 ---

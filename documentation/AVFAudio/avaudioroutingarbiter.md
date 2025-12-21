@@ -69,6 +69,8 @@ func endCall() {
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
 - [Responding to audio route changes](responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
+- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+  Map audio channels to specific devices in multiroute sessions for recording and playback.
 - [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
 - [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)

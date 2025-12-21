@@ -15,7 +15,9 @@ optional func streamDidBecomeInactive(_ stream: SCStream)
 
 #### Discussion
 
-Notifies the delegate that all the windows that are currently being shared are exited. This callback occurs for all content filter types.
+streamDidBecomeInactive:
+
+notifies the delegate that all the windows that are currently being shared are exited. This callback occurs for all content filter types.
 
 ## Parameters
 

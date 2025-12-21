@@ -23,7 +23,7 @@ func add(_ inputGroup: AVAssetWriterInputGroup)
 
 An asset writer marks tracks associated with grouped inputs as mutually exclusive to each other for playback or other processing, if the output container format supports mutually exclusive relationships among tracks.
 
-When you add an input group to an asset writer, the system sets the value of the default input’s [`marksOutputTrackAsEnabled`](avassetwriterinput/marksoutputtrackasenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and sets the values of the group’s other inputs to [`false`](https://developer.apple.com/documentation/swift/false).
+When you add an input group to an asset writer, the system sets the value of the default input’s [`marksOutputTrackAsEnabled`](avassetwriterinput/marksoutputtrackasenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) and sets the values of the group’s other inputs to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 You can’t add input groups after writing starts.
 

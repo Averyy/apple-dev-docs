@@ -22,7 +22,7 @@ var preservesShuffleMode: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the shuffle mode is preserved between playback sessions.
+When set to [`true`](https://developer.apple.com/documentation/Swift/true), the shuffle mode is preserved between playback sessions.
 
 ## See Also
 

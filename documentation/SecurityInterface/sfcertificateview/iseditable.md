@@ -15,14 +15,10 @@ Indicates if the view allows the user to edit the certificate’s trust.
 func isEditable() -> Bool
 ```
 
-## Topics
-
-### Related Documentation
-- [func setEditableTrust(Bool)](sfcertificateview/seteditabletrust(_:).md)
-  Specifies whether the user can edit the certificate’s trust settings.
-
 ## See Also
 
+- [func setEditableTrust(Bool)](sfcertificateview/seteditabletrust(_:).md)
+  Specifies whether the user can edit the certificate’s trust settings.
 - [func certificate() -> Unmanaged<SecCertificate>!](sfcertificateview/certificate.md)
   Returns the certificate currently displayed in the view.
 - [func detailsDisplayed() -> Bool](sfcertificateview/detailsdisplayed.md)

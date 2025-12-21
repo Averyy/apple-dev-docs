@@ -6,11 +6,11 @@
 Initializes an instance of `CNAssetAudioInfo` for an AVAsset object asynchronously if it meets all requirements. .
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
+- macOS 26.0+
+- tvOS 26.0+
 
 ## Declaration
 

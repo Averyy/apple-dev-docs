@@ -10,8 +10,8 @@ Read App Store information including your App Store state, age ratings, Brazil a
 
 ## Mentions
 
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
 #### Discussion
 

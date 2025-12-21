@@ -111,12 +111,6 @@ struct Repeat<Output>
   Creates a regex component that matches the given component repeated the specified number of times.
 - [init<W, C1, C2, C3, C4, C5>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-9snpn.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-### Instance Properties
-- [var regex: Regex<Output>](repeat/regex.md)
-  The regular expression represented by this component.
-### Type Aliases
-- [typealias RegexOutput](repeat/regexoutput.md)
-  The output type for this regular expression.
 
 ## Relationships
 

@@ -22,7 +22,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 The keychain may be a file stored locally, a smart card, or retrieved from a network server using non-file-based database protocols. This function deletes the keychain only if it is a local file.
 
-This function does not release the memory used by the keychain object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) function to release each keychain object when you are finished with it.
+This function does not release the memory used by the keychain object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release each keychain object when you are finished with it.
 
 ## Parameters
 

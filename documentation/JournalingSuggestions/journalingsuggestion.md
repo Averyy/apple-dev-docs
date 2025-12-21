@@ -14,6 +14,10 @@ High-level information about a suggestion that a person chooses in the journalin
 struct JournalingSuggestion
 ```
 
+## Mentions
+
+- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+
 #### Overview
 
 When a person chooses a particular suggestion in the [`JournalingSuggestionsPicker`](journalingsuggestionspicker.md), the system provides your app with more information about the event by passing an instance of this structure to your picker’s `onCompletion` handler.
@@ -63,12 +67,6 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
   A suggestion that describes a workout that a person completed.
 - [JournalingSuggestion.WorkoutGroup](journalingsuggestion/workoutgroup.md)
   A suggestion that contains multiple workouts that a person chooses in the picker.
-### Instance Properties
-- [var hashValue: Int](journalingsuggestion/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](journalingsuggestion/equatable-implementations.md)
-- [Hashable Implementations](journalingsuggestion/hashable-implementations.md)
 
 ## Relationships
 
@@ -80,12 +78,8 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
 
 - [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)
   A view that lists different types of recent events in a person’s life.
-- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
-  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
-- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
-  A token you use to modify the content of the presentation.
 
 
 ---

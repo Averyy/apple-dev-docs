@@ -1,9 +1,7 @@
-# init()
+# init(_:)
 
 **Framework**: Create ML  
 **Kind**: init
-
-Creates a new default instance of the conforming type when a data value is missing or invalid.
 
 **Availability**:
 - iOS 15.0+
@@ -16,10 +14,14 @@ Creates a new default instance of the conforming type when a data value is missi
 ## Declaration
 
 ```swift
-init()
+init(_ contents: MLMultiArray)
 ```
+
+## See Also
+
+- [init(shape: [Int])](mldatavalue/multiarraytype/init(shape:).md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatavalue/multiarraytype/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatavalue/multiarraytype/init(_:))*

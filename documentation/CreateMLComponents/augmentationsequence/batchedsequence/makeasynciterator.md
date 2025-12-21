@@ -22,7 +22,7 @@ func makeAsyncIterator() -> AugmentationSequence<Base, RandomTransformer, Random
 
 ## See Also
 
-- [AugmentationSequence.BatchedSequence.Element](augmentationsequence/batchedsequence/element.md)
+- [AugmentationSequence.Element](augmentationsequence/element.md)
   The type of element produced by this asynchronous sequence.
 
 

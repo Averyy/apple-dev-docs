@@ -19,7 +19,7 @@ var alwaysDiscardsLateDepthData: Bool { get set }
 
 #### Discussion
 
-If the [`delegateCallbackQueue`](avcapturedepthdataoutput/delegatecallbackqueue.md) dispatch queue is blocked when new depth data is captured, this property determines whether the capture output allows your delegate object more time to process old depth data. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), the capture output delivers old data to your delegate as soon as possible, but application memory usage may increase as a result. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the [`delegateCallbackQueue`](avcapturedepthdataoutput/delegatecallbackqueue.md) dispatch queue is blocked when new depth data is captured, this property determines whether the capture output allows your delegate object more time to process old depth data. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), the capture output delivers old data to your delegate as soon as possible, but application memory usage may increase as a result. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

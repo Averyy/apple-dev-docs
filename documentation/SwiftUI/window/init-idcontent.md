@@ -7,7 +7,7 @@ Creates a window with a title and an identifier.
 
 **Availability**:
 - macOS 13.0+
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 

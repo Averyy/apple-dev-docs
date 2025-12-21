@@ -3,7 +3,10 @@
 **Framework**: Core Audio  
 **Kind**: property
 
+A UInt32 that provides a handle on a specific AudioObject.
+
 **Availability**:
+- Mac Catalyst ?+
 - macOS 15.0+
 
 ## Declaration

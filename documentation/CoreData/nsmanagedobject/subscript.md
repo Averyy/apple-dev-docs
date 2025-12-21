@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 subscript(key: String) -> Any? { get set }
 ```
 

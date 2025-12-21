@@ -33,6 +33,8 @@ func play() async
 
 - [func prepareToPlay()](avmidiplayer/preparetoplay.md)
   Prepares the player to play the sequence by prerolling all events.
+- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+  A callback the system invokes when MIDI playback completes.
 - [func stop()](avmidiplayer/stop.md)
   Stops playing the sequence.
 - [var isPlaying: Bool](avmidiplayer/isplaying.md)

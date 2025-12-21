@@ -21,7 +21,7 @@ func addOutput(_ output: AVCaptureOutput)
 
 #### Discussion
 
-You can only add an output to a session using this method if [`canAddOutput(_:)`](avcapturesession/canaddoutput(_:).md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+You can only add an output to a session using this method if [`canAddOutput(_:)`](avcapturesession/canaddoutput(_:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 You can invoke this method while the session is running.
 

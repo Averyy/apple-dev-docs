@@ -97,14 +97,12 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
 - [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
   Returns all samples in a sample buffer.
 - [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
-  A structure that holds all samples in a sample buffer.
 ### Managing Attachments
 - [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
   Keys that identify sample buffer attachments.
 - [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
   An array of sample attachments.
 - [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-  A structure that defines an array of sample attachments.
 - [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 ### Accessing the Type Identifier

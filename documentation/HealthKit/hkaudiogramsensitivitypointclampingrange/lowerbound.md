@@ -18,6 +18,10 @@
 var lowerBound: HKQuantity? { get }
 ```
 
+#### Discussion
+
+The lower bound of the clamping range, if any, in dBHL.
+
 
 ---
 

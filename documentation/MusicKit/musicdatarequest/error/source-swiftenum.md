@@ -22,15 +22,9 @@ enum Source
 
 ## Topics
 
-### Operators
-- [static func == (MusicDataRequest.Error.Source, MusicDataRequest.Error.Source) -> Bool](musicdatarequest/error/source-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MusicDataRequest.Error.Source.parameter(_:)](musicdatarequest/error/source-swift.enum/parameter(_:).md)
   The URI query parameter that causes the error.
-### Default Implementations
-- [CustomStringConvertible Implementations](musicdatarequest/error/source-swift.enum/customstringconvertible-implementations.md)
-- [Equatable Implementations](musicdatarequest/error/source-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

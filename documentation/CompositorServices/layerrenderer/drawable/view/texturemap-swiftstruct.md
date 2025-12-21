@@ -6,7 +6,7 @@
 A type that provides details about the textures associated with a view.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 - visionOS 1.0+
 
 ## Declaration

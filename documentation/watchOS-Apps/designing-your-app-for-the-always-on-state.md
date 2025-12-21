@@ -16,7 +16,7 @@ Additionally, any controls in the user interface remain interactive. Users can t
 
 > **Note**: Always On isn’t available on Apple Watch SE or Apple Watch Series 4 and earlier. For these devices, the screen turns off when the app transitions to the background or inactive states.
 
-Apps compiled for watchOS 8 and later have Always On enabled by default. You can disable this feature by setting the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKSupportsAlwaysOnDisplay) key to [`false`](https://developer.apple.com/documentation/swift/false) in the WatchKit Extension’s `Info.plist` file. Users can also disable Always On for the entire device or on a per-app basis by choosing Settings > Display & Brightness > Always On.
+Apps compiled for watchOS 8 and later have Always On enabled by default. You can disable this feature by setting the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKSupportsAlwaysOnDisplay) key to [`false`](https://developer.apple.com/documentation/Swift/false) in the WatchKit Extension’s `Info.plist` file. Users can also disable Always On for the entire device or on a per-app basis by choosing Settings > Display & Brightness > Always On.
 
 ##### Understand Frontmost App Behavior
 

@@ -34,10 +34,6 @@ struct AtomicUpdateOrdering
   A releasing update synchronizes with acquiring operations that read the value it stores. It ensures that the releasing and acquiring threads agree that all preceding variable accesses on the releasing thread happen before the atomic operation itself.
 - [static var sequentiallyConsistent: AtomicUpdateOrdering](atomicupdateordering/sequentiallyconsistent.md)
   A sequentially consistent update performs an acquiring-and-releasing update and also guarantees that it and all other sequentially consistent atomic operations (loads, stores, updates) appear to be executed in a single, total sequential ordering.
-### Default Implementations
-- [CustomStringConvertible Implementations](atomicupdateordering/customstringconvertible-implementations.md)
-- [Equatable Implementations](atomicupdateordering/equatable-implementations.md)
-- [Hashable Implementations](atomicupdateordering/hashable-implementations.md)
 
 ## Relationships
 

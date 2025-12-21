@@ -42,6 +42,8 @@ For repeatable gameplay, players can choose one of three options: one attempt, t
 
 For nonrepeatable challenges, the current score on the leaderboard carries forward for the player and counts toward the challenge. Otherwise, for repeatable gameplay, the player’s existing score on the leaderboard won’t count toward the challenge.
 
+> **Note**: To provide a repeatable challenge you need to configure the challenge to use a recurring leaderboard.
+
 #### Choose Between a Classic and Recurring Leaderboard
 
 When configuring a challenge, you can select a leaderboard that’s either classic or recurring:
@@ -78,6 +80,9 @@ try await GKLeaderboard.submitScore(points,
                                     player: GKLocalPlayer.local,
                                     leaderboardIDs: ["com.example.leaderboard.bubbles_popped"]) 
 ```
+
+If you prefer to submit scores through your own server, see
+[`Game Center leaderboards scores`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center-leaderboards-scores).
 
 For more information on enabling Game Center, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md). To learn more about configuring leaderboard, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
 

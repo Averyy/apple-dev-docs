@@ -36,8 +36,6 @@ struct TransformerToEstimatorAdaptor<Transformer> where Transformer : Transforme
 ### Fitting
 - [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Transformer](transformertoestimatoradaptor/fitted(to:eventhandler:).md)
   Returns the pre-defined transformer.
-### Default Implementations
-- [Estimator Implementations](transformertoestimatoradaptor/estimator-implementations.md)
 
 ## Relationships
 

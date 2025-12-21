@@ -21,19 +21,19 @@ enum MTLStorageMode
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](setting-resource-storage-modes.md)
 
 #### Overview
 
-For more guidance on how to choose storage modes, see [`Setting Resource Storage Modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ## Topics
 
-### Storage Mode Options
+### Storage mode options
 - [MTLStorageMode.shared](mtlstoragemode/shared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
 - [MTLStorageMode.managed](mtlstoragemode/managed.md)
-  The CPU and GPU may maintain separate copies of the resource, and any changes must be explicitly synchronized.
+  The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
 - [MTLStorageMode.private](mtlstoragemode/private.md)
   The resource is only available to the GPU.
 - [MTLStorageMode.memoryless](mtlstoragemode/memoryless.md)
@@ -64,7 +64,7 @@ For more guidance on how to choose storage modes, see [`Setting Resource Storage
 - [enum MTLCPUCacheMode](mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
 - [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
-  The options you use to specify the hazard tracking mode.
+  Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 
 ---

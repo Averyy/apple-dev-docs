@@ -6,11 +6,11 @@
 Instructions, typically provided by you, the developer.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -20,8 +20,6 @@ case instructions(Transcript.Instructions)
 
 ## See Also
 
-- [init(from: any Decoder) throws](transcript/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [case prompt(Transcript.Prompt)](transcript/entry/prompt(_:).md)
   A prompt, typically sourced from an end user.
 - [case response(Transcript.Response)](transcript/entry/response(_:).md)

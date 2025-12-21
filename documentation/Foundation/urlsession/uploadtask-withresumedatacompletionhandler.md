@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,15 @@
 ```swift
 func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask
 ```
+
+#### Return Value
+
+A new session upload task, or nil if the resumeData is invalid.
+
+## Parameters
+
+- `resumeData`: Resume data blob from an incomplete upload, such as data returned by the cancelByProducingResumeData: method.
+- `completionHandler`: The completion handler to call when the load request is complete.
 
 ## See Also
 
@@ -33,6 +44,7 @@ func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping (D
 - [func uploadTask(withStreamedRequest: URLRequest) -> URLSessionUploadTask](urlsession/uploadtask(withstreamedrequest:).md)
   Creates a task that performs an HTTP request for uploading data based on the specified URL request.
 - [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:).md)
+  Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
 - [class URLSessionUploadTask](urlsessionuploadtask.md)
   A URL session task that uploads data to the network in a request body.
 - [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)

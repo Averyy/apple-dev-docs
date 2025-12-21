@@ -22,7 +22,7 @@ var isBlinking: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the system to start animating the blink effect for the insertion point cursor. Set the property to [`false`](https://developer.apple.com/documentation/swift/false) to stop the blink animation.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the system to start animating the blink effect for the insertion point cursor. Set the property to [`false`](https://developer.apple.com/documentation/Swift/false) to stop the blink animation.
 
 ## See Also
 

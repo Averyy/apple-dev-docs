@@ -26,9 +26,6 @@ enum Behavior
 - [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
 - [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
 - [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
 ### Initializers
 - [init?(rawValue: UInt)](dateformatter/behavior/init(rawvalue:).md)
 

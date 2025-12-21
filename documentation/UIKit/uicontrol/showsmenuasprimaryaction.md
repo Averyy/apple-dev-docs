@@ -21,9 +21,9 @@ var showsMenuAsPrimaryAction: Bool { get set }
 
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true), the [`contextMenuInteraction`](uicontrol/contextmenuinteraction.md) becomes the primary action of the control, and the menu shows in response to the [`touchDown`](uicontrol/event/touchdown.md) event.
+If this value is [`true`](https://developer.apple.com/documentation/Swift/true), the [`contextMenuInteraction`](uicontrol/contextmenuinteraction.md) becomes the primary action of the control, and the menu shows in response to the [`touchDown`](uicontrol/event/touchdown.md) event.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

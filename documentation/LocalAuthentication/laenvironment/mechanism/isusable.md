@@ -19,7 +19,9 @@ var isUsable: Bool { get }
 
 #### Discussion
 
-Properties of the subclass to determine why mechanism can’t be used.
+Whether the mechanism is available for use, i.e. whether the relevant preflight call of @c canEvaluatePolicy would succeed.
+
+properties of the subclass to determine why mechanism can’t be used.
 
 
 ---

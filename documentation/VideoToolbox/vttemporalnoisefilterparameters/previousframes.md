@@ -3,17 +3,23 @@
 **Framework**: Video Toolbox  
 **Kind**: property
 
+Past reference frames in presentation time order that you use to process the source frame.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
 ```swift
-var previousFrames: [VTFrameProcessorFrame]? { get }
+var previousFrames: [VTFrameProcessorFrame] { get }
 ```
+
+#### Discussion
+
+The number of frames can vary from 0 to the number specified by the `previousFrameCount` property in `VTTemporalNoiseFilterConfiguration`.
 
 
 ---

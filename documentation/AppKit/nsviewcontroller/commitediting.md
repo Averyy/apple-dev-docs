@@ -17,7 +17,7 @@ func commitEditing() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the changes were successfully applied to the model, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the changes were successfully applied to the model, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 #### Discussion
 

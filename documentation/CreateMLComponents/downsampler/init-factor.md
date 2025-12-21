@@ -28,11 +28,6 @@ init(factor: Int)
 
 - `factor`: The down sample factor to the input stream.
 
-## See Also
-
-- [init(from: any Decoder) throws](downsampler/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-
 
 ---
 

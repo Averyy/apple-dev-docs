@@ -18,6 +18,12 @@
 func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?
 ```
 
+## See Also
+
+- [func makeAccelerationStructure(size: Int, offset: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(size:offset:).md)
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(descriptor:).md)
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor, offset: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(descriptor:offset:).md)
+
 
 ---
 

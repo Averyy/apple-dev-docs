@@ -21,6 +21,8 @@ Appropriate IOReturn code
 
 #### Discussion
 
+Returns the first element index for a channel
+
 For efficiently and thread-safely reading _elements
 
 Locking: Caller must ensure that the reporter (data) lock is held.

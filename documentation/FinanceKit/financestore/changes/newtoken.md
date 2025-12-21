@@ -15,6 +15,15 @@ An updated history token that you can use to query more historical data.
 let newToken: FinanceStore.HistoryToken
 ```
 
+## See Also
+
+- [let deleted: [Model.ID]](financestore/changes/deleted.md)
+  An array of model objects identifiers that the framework deleted from the finance store.
+- [let inserted: [Model]](financestore/changes/inserted.md)
+  An array of model objects the framework inserted into the finance store.
+- [let updated: [Model]](financestore/changes/updated.md)
+  An array of model objects that the framework updated in the finance store.
+
 
 ---
 

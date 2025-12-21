@@ -20,7 +20,7 @@ protocol TemplateInsertable
 
 ## Topics
 
-### Instance Methods
+### Protocol requirements
 - [func insert(generator: SFCustomLanguageModelData.TemplatePhraseCountGenerator)](templateinsertable/insert(generator:).md)
 
 ## Relationships
@@ -31,14 +31,8 @@ protocol TemplateInsertable
 
 ## See Also
 
-- [class AnalysisContext](analysiscontext.md)
-  Contextual information that may be shared among analyzers.
-- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
-  An object that generates and exports custom language model training data.
-- [class SFSpeechLanguageModel](sfspeechlanguagemodel.md)
-  A language model built from custom training data.
-- [SFSpeechLanguageModel.Configuration](sfspeechlanguagemodel/configuration.md)
-  An object describing the location of a custom language model and specialized vocabulary.
+- [SFCustomLanguageModelData.CompoundTemplate](sfcustomlanguagemodeldata/compoundtemplate.md)
+  A class supporting the custom language model training data result builder. You are not intended to use this directly.
 - [protocol DataInsertable](datainsertable.md)
   A protocol supporting the custom language model training data result builder.
 

@@ -42,20 +42,8 @@ enum ArcadeUsage
 - [HIDUsage.ArcadeUsage.watchdogRestart](hidusage/arcadeusage/watchdogrestart.md)
 - [HIDUsage.ArcadeUsage.watchdogTimeout](hidusage/arcadeusage/watchdogtimeout.md)
 - [HIDUsage.ArcadeUsage.watchdogTimer](hidusage/arcadeusage/watchdogtimer.md)
-### Initializers
-- [init?(rawValue: UInt16)](hidusage/arcadeusage/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: UInt16](hidusage/arcadeusage/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [HIDUsage.ArcadeUsage.RawValue](hidusage/arcadeusage/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let page: UInt16](hidusage/arcadeusage/page.md)
-### Default Implementations
-- [Equatable Implementations](hidusage/arcadeusage/equatable-implementations.md)
-- [RawRepresentable Implementations](hidusage/arcadeusage/rawrepresentable-implementations.md)
 
 ## Relationships
 

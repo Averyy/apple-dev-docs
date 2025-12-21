@@ -20,7 +20,7 @@ var allowsCalendarPreview: Bool { get set }
 
 #### Discussion
 
-If the event is an invitation and this property is [`true`](https://developer.apple.com/documentation/swift/true), then a table cell appears allowing the user to preview the event along with other events on the same day. If [`false`](https://developer.apple.com/documentation/swift/false) (the default), the calendar day preview does not appear. This property applies only to invitations.
+If the event is an invitation and this property is [`true`](https://developer.apple.com/documentation/Swift/true), then a table cell appears allowing the user to preview the event along with other events on the same day. If [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the calendar day preview does not appear. This property applies only to invitations.
 
 ## See Also
 

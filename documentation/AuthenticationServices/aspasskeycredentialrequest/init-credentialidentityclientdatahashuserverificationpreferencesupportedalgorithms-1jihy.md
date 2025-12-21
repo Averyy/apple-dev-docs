@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: init
 
-Initializes a passkey credential request.
+Initializes a passkey credential request, identifying supported algorithms by number.
 
 **Availability**:
 - iOS 17.0+
@@ -32,7 +32,11 @@ The `supportedAlgorithms` parameter is empty for credential assertion requests. 
 ## See Also
 
 - [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier])](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:)-52txr.md)
-  Initializes a passkey credential request.
+  Initializes a passkey credential request, identifying supported algorithms with constants.
+- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyAssertionCredentialExtensionInput?)](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:extensioninput:)-9hsyv.md)
+  Initializes a passkey credential request, providing additional passkey assertion data.
+- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:extensioninput:)-1258o.md)
+  Initializes a passkey credential request, providing additional passkey registration data.
 
 
 ---

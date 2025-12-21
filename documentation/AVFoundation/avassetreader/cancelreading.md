@@ -25,6 +25,8 @@ To stop reading samples before reaching the end of the time range, call this met
 
 ## See Also
 
+- [func start() throws](avassetreader/start.md)
+  Prepares the reader to read media data from the asset.
 - [func startReading() -> Bool](avassetreader/startreading.md)
   Prepares the asset reader to start reading sample buffers from the asset.
 

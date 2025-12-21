@@ -27,10 +27,6 @@ This type is an option set in Swift. In Objective-C, you use the cases of this e
   A flag that describes a write operation.
 ### Working with raw values
 - [init(rawValue: UInt)](fsblockmapflags/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](fsblockmapflags/equatable-implementations.md)
-- [OptionSet Implementations](fsblockmapflags/optionset-implementations.md)
-- [SetAlgebra Implementations](fsblockmapflags/setalgebra-implementations.md)
 
 ## Relationships
 

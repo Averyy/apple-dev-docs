@@ -10,7 +10,7 @@ A reference to a particular scene, entity, or property that animates.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -38,9 +38,6 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
   Provides a complex bind path capable of animating additional entities other than the current entity.
 - [BindTarget.transform](bindtarget/transform.md)
   A option that specifies that the target entity’s transform animates.
-### Comparing bind targets
-- [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
-  Returns a Boolean value that indicates whether two bind targets are equal.
 ### Targeting entities and scenes
 - [static func scene(String) -> BindTarget.ScenePath](bindtarget/scene(_:).md)
   Generates a bind path from a particular scene.
@@ -52,25 +49,27 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
   Generates a complex bind path from a particular child entity of the current entity.
 - [BindTarget.EntityPath](bindtarget/entitypath.md)
   A bind path context for a particular entity.
-### Structures
-- [BindTarget.IkSolverPath](bindtarget/iksolverpath.md)
-- [BindTarget.MaterialPath](bindtarget/materialpath.md)
-  Material parameters that an animation can target.
-- [BindTarget.TextureCoordinateTransformPath](bindtarget/texturecoordinatetransformpath.md)
-  The texture coordinate parameters for a given texture layer that an animation can target.
-### Enumeration Cases
+### Animatable properties
+- [BindTarget.opacity](bindtarget/opacity.md)
+  An option that specifies that the entity’s opacity to animate. Requires that the entity has an OpacityComponent
 - [BindTarget.billboardBlendFactor](bindtarget/billboardblendfactor.md)
 - [BindTarget.blendShapeWeights](bindtarget/blendshapeweights.md)
   An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent.
 - [BindTarget.blendShapeWeightsAtIndex(_:)](bindtarget/blendshapeweightsatindex(_:).md)
 - [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](bindtarget/blendshapeweightswithid(_:).md)
-- [BindTarget.opacity](bindtarget/opacity.md)
-  An option that specifies that the entity’s opacity to animate. Requires that the entity has an OpacityComponent
-- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
-  An option that specifies one of the entity’s skeletal poses to animate.
-### Type Methods
 - [static func material(Int) -> BindTarget.MaterialPath](bindtarget/material(_:).md)
   Generates a complex bind path from one of an entity’s materials.
+- [BindTarget.MaterialPath](bindtarget/materialpath.md)
+  Material parameters that an animation can target.
+- [BindTarget.TextureCoordinateTransformPath](bindtarget/texturecoordinatetransformpath.md)
+  The texture coordinate parameters for a given texture layer that an animation can target.
+- [BindTarget.IkSolverPath](bindtarget/iksolverpath.md)
+### Operators
+- [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
+  Returns a Boolean value that indicates whether two bind targets are equal.
+### Enumeration Cases
+- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
+  An option that specifies one of the entity’s skeletal poses to animate.
 
 ## Relationships
 

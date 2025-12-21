@@ -4,12 +4,12 @@
 **Kind**: method
 
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-func locationName(named: String) -> AnchoringComponent.AccessoryLocationName?
+func locationName(named: String) -> AnchoringComponent.AccessoryLocation?
 ```
 
 

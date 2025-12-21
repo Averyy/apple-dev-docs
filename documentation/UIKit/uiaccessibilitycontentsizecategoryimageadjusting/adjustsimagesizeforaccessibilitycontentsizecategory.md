@@ -22,7 +22,7 @@ var adjustsImageSizeForAccessibilityContentSizeCategory: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the current object scales its image to an appropriate accessibility content size category. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the current object displays its image at the regular content sizes.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the current object scales its image to an appropriate accessibility content size category. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), the current object displays its image at the regular content sizes.
 
 
 ---

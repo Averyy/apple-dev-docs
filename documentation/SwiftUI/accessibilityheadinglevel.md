@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: enum
 
-The hierarchy of a heading in relation other headings.
+The hierarchy of a heading in relation to other headings.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ enum AccessibilityHeadingLevel
 
 #### Overview
 
-Assistive technologies can use this to improve a users navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
+Assistive technologies can use this to improve a user’s navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
 
 For example, you can categorize a list of available products into sections, like Fruits and Vegetables. With only top level headings, this list requires no heading hierarchy, and you use the [`AccessibilityHeadingLevel.unspecified`](accessibilityheadinglevel/unspecified.md) heading level. On the other hand, if sections contain subsections, like if the Fruits section has subsections for varieties of Apples, Pears, and so on, you apply the [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md) level to Fruits and Vegetables, and the [`AccessibilityHeadingLevel.h2`](accessibilityheadinglevel/h2.md) level to Apples and Pears.
 

@@ -38,8 +38,8 @@ enum Strategy
 
 - [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](categoricalimputer/fitted(to:eventhandler:).md)
   Fits a categorical imputer to a sequence of elements.
-- [CategoricalImputer.Transformer](categoricalimputer/transformer.md)
-  The transformer type created by this estimator.
+- [protocol Transformer](transformer.md)
+  A transformer that takes an input and produces an output.
 
 
 ---

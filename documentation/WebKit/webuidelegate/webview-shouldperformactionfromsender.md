@@ -16,11 +16,11 @@ optional func webView(_ webView: WebView!, shouldPerformAction action: Selector!
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action should be performed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the action should be performed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-This method allows the delegate to control the web view’s behavior when action methods are invoked. For example, if the action is `copy:`, the delegate can return [`false`](https://developer.apple.com/documentation/swift/false) to perform a copy in some other way than the default.
+This method allows the delegate to control the web view’s behavior when action methods are invoked. For example, if the action is `copy:`, the delegate can return [`false`](https://developer.apple.com/documentation/Swift/false) to perform a copy in some other way than the default.
 
 ## Parameters
 

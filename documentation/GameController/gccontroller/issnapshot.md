@@ -21,7 +21,7 @@ var isSnapshot: Bool { get }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the controller is a snapshot of a controller. A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. If [`false`](https://developer.apple.com/documentation/swift/false), the controller is a real or virtual controller.
+If [`true`](https://developer.apple.com/documentation/Swift/true), the controller is a snapshot of a controller. A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. If [`false`](https://developer.apple.com/documentation/Swift/false), the controller is a real or virtual controller.
 
 ## See Also
 

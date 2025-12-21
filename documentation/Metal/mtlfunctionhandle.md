@@ -21,7 +21,7 @@ protocol MTLFunctionHandle : NSObjectProtocol, Sendable
 
 ## Topics
 
-### Querying Handle Properties
+### Querying handle properties
 - [var device: any MTLDevice](mtlfunctionhandle/device.md)
   The device object that created the shader function.
 - [var functionType: MTLFunctionType](mtlfunctionhandle/functiontype.md)
@@ -43,7 +43,7 @@ protocol MTLFunctionHandle : NSObjectProtocol, Sendable
 - [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
   A description of a function object to create.
 - [protocol MTLFunction](mtlfunction.md)
-  An object that represents a public shader function in a Metal library.
+  A interface that represents a public shader function in a Metal library.
 - [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)
   A specification of how to create a visible function table.
 - [protocol MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)

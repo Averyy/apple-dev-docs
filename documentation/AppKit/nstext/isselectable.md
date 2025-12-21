@@ -17,7 +17,7 @@ var isSelectable: Bool { get set }
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver allows the user to select text; if `flag` is [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t.
+If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the receiver allows the user to select text; if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), it doesn’t.
 
 You can set selections programmatically regardless of this setting. If the receiver is made not selectable, it’s also made not editable. `NSText` objects are by default editable and selectable.
 

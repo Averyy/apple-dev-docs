@@ -24,15 +24,6 @@ static func < <LeftHandSideType, RightHandSideType>(lhs: Measurement<LeftHandSid
 
 `true` if the measurements can be compared and the `lhs` is less than the `rhs` converted value.
 
-## See Also
-
-- [static func > (Self, Self) -> Bool](measurement/_(_:_:)-648pf.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](measurement/_=(_:_:)-lnsg.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](measurement/_=(_:_:)-12fhs.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-
 
 ---
 

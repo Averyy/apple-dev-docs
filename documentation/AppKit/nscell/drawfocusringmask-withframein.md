@@ -19,7 +19,7 @@ func drawFocusRingMask(withFrame cellFrame: NSRect, in controlView: NSView)
 
 Implemented by NSCell subclasses to draw the appropriate focus ring for the control The default implementation does nothing.
 
-The Application Kit automatically invokes this method when appropriate, to render the view’s focus ring. The view must be eligible to become its window’s [`firstResponder`](nswindow/firstresponder.md), by overriding [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) returning [`true`](https://developer.apple.com/documentation/swift/true).
+The Application Kit automatically invokes this method when appropriate, to render the view’s focus ring. The view must be eligible to become its window’s [`firstResponder`](nswindow/firstresponder.md), by overriding [`acceptsFirstResponder`](nsresponder/acceptsfirstresponder.md) returning [`true`](https://developer.apple.com/documentation/Swift/true).
 
 The focus ring is rendered using the style specified by the [`focusRingType`](nscell/focusringtype.md) property, which must not be [`NSFocusRingType.none`](nsfocusringtype/none.md) unless you want to suppress drawing of the focus ring. An implementation of `drawFocusRingMaskWithFrame:inView:` can assume that it is drawing in the view’s bounds, and that the fill and stroke colors have been set to an arbitrary fully opaque color. It needs only draw the desired focus ring shape or an image or other object whose outline defines the focus ring mask.
 

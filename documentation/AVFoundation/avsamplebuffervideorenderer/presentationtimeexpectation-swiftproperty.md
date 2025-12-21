@@ -17,6 +17,11 @@
 var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation { get set }
 ```
 
+## See Also
+
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
+  Options that specify the expected presentation time stamps of enqueue samples.
+
 
 ---
 

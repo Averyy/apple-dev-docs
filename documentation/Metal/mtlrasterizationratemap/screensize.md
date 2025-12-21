@@ -22,7 +22,7 @@ var screenSize: MTLSize { get }
 
 ## Mentions
 
-- [Rendering with a Rasterization Rate Map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
 
 ## See Also
 

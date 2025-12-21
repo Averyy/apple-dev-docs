@@ -1,7 +1,7 @@
 # Place
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: class
 
 A place object that returns from a geocoder lookup, a reverse lookup, or a fetch request for points of interest.
 
@@ -11,27 +11,7 @@ A place object that returns from a geocoder lookup, a reverse lookup, or a fetch
 ## Declaration
 
 ```swift
-dictionary Place {
-	string name;
-	string? id;
-	string[]? alternateIds;
-	mapkit.Coordinate coordinate;
-	string formattedAddress;
-	mapkit.CoordinateRegion region;
-	string countryCode;
-	mapkit.PointOfInterestCategory pointOfInterestCategory;
-	string? country;
-	string? administrativeArea;
-	string? administrativeAreaCode;
-	string? locality;
-	string? postCode;
-	string? subLocality;
-	string? thoroughfare;
-	string? subThoroughfare;
-	string? fullThoroughfare;
-	string[]? areasOfInterest;
-	string[]? dependentLocalities;
-};
+class Place
 ```
 
 #### Overview
@@ -87,20 +67,17 @@ dictionary Place {
 
 ## See Also
 
-- [PlaceDetailOptions](placedetailoptions.md)
-- [mapkit.PlaceLookup](mapkit.placelookup.md)
+- [class PlaceLookup](placelookup.md)
   An object that provides the ability to look up place information for a specified Place ID.
 - [placeDetails](mapkit/placedetails.md)
-  A list of all user-created place detail objects that are currently active on a page.
-- [PlaceLookupOptions](placelookupoptions.md)
-  The options for creating a place lookup.
-- [PlaceSelectionAccessoryOptions](placeselectionaccessoryoptions.md)
+  A list of all place detail objects that are currently active on a page.
+- [interface PlaceSelectionAccessoryOptions](placeselectionaccessoryoptions.md)
   The options for selection accessories.
-- [mapkit.PlaceAnnotation](mapkit.placeannotation.md)
+- [class PlaceAnnotation](placeannotation.md)
   An annotation for a place.
-- [mapkit.PlaceDetail](mapkit.placedetail.md)
+- [class PlaceDetail](placedetail.md)
   An interactive view that displays information about a place.
-- [mapkit.PlaceSelectionAccessory](mapkit.placeselectionaccessory.md)
+- [class PlaceSelectionAccessory](placeselectionaccessory.md)
   The accessory that conveys information about a place associated with an annotation.
 
 

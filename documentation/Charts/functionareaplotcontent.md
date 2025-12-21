@@ -29,6 +29,8 @@
 
 ## See Also
 
+- [var body: Self.Body](chartcontent/body-swift.property.md)
+  The content and behavior of the chart content.
 - [struct VectorizedAreaPlotContent](vectorizedareaplotcontent.md)
   An opaque vectorized chart content type.
 

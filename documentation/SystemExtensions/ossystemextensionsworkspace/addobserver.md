@@ -12,6 +12,10 @@
 func addObserver(_ observer: any OSSystemExtensionsWorkspaceObserver) throws
 ```
 
+#### Discussion
+
+Start observing changes to System Extension(s) which are enabled or ready to be enabled.
+
 
 ---
 

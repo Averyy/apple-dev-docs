@@ -136,7 +136,7 @@ Lottery.lotteryWinHandler = {
 }
 
 // You get 10 chances at winning.
-for _ in 1..10 {
+for _ in 1...10 {
     Lottery.pickWinner(guess: myLuckyNumber)
 }
 

@@ -186,14 +186,12 @@ For each face `Vision` detects in an image, the sample creates `FaceLandmark` ob
 
 ## See Also
 
-- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
-  A request that finds faces within an image.
-- [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
-  An image-analysis request that finds facial features like eyes and mouth in an image.
 - [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [struct DetectHumanRectanglesRequest](detecthumanrectanglesrequest.md)
-  A request that finds rectangular regions that contain people in an image.
+- [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
+  An image-analysis request that finds facial features like eyes and mouth in an image.
+- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
+  A request that finds faces within an image.
 
 
 ---

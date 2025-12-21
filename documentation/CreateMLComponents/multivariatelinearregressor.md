@@ -37,9 +37,7 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 ### Fitting
 - [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:eventhandler:).md)
   Fits a linear regressor model to a sequence of annotated features.
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-9bluu.md)
-  Fits a linear regressor model to a sequence of annotated features.
-- [func fitted(to: AnnotatedBatch<Scalar>, validateOn: AnnotatedBatch<Scalar>?, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq.md)
+- [func fitted(to:validateOn:eventHandler:)](multivariatelinearregressor/fitted(to:validateon:eventhandler:).md)
   Fits a linear regressor model to shaped arrays of features and annotations.
 ### Fitting Progressively
 - [func makeTransformer() -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/maketransformer.md)
@@ -49,18 +47,13 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 - [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: AnnotatedBatch<Scalar>) async throws -> Scalar](multivariatelinearregressor/update(_:with:).md)
   Updates a model with a new shaped array of examples.
 ### Encoding and decoding
-- [func encode(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](multivariatelinearregressor/encode(_:to:).md)
-  Encodes a fitted transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/decode(from:).md)
-  Decodes a previously fitted transformer.
 - [func encodeWithOptimizer(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](multivariatelinearregressor/encodewithoptimizer(_:to:).md)
   Encodes the model and optimizer to an encoder.
 - [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/decodewithoptimizer(from:).md)
   Reads the encoded model and optimizer with a decoder.
-### Structures
+### Supporting types
 - [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-### Type Aliases
 - [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
   The annotation type.
 - [MultivariateLinearRegressor.Configuration](multivariatelinearregressor/configuration-swift.typealias.md)
@@ -69,7 +62,6 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 - [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [SupervisedEstimator Implementations](multivariatelinearregressor/supervisedestimator-implementations.md)
 - [UpdatableSupervisedEstimator Implementations](multivariatelinearregressor/updatablesupervisedestimator-implementations.md)
 
 ## Relationships

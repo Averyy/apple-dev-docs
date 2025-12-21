@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: var
 
-The Find pasteboard is unavailable starting in iOS 10. (The name identifying the Find pasteboard, which, prior to iOS 10, was used in search operations. In such operations, the most recent search string in the search bar was put in the Find pasteboard.)
+A name that identifies the Find pasteboard.
 
 **Availability**:
 - iOS 3.0+
@@ -15,6 +15,12 @@ The Find pasteboard is unavailable starting in iOS 10. (The name identifying the
 ```swift
 let UIPasteboardNameFind: String
 ```
+
+#### Discussion
+
+The Find pasteboard is unavailable starting in iOS 10.
+
+The name identifying the Find pasteboard, which, prior to iOS 10, was used in search operations. In such operations, the most recent search string in the search bar was put in the Find pasteboard.
 
 ## See Also
 

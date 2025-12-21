@@ -3,11 +3,13 @@
 **Framework**: Video Toolbox  
 **Kind**: init
 
+Creates a new super-resolution scaler parameters instance.
+
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 
@@ -17,16 +19,16 @@ init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame?,
 
 #### Discussion
 
-Init will return nil if sourceFrame or destinationFrame is nil, sourceFrame and reference frames  are different pixelFormats.
+Returns `nil` if `sourceFrame` or `destinationFrame` is `nil`, or if `sourceFrame` and reference frames have different pixel formats.
 
 ## Parameters
 
-- `sourceFrame`: Current source frame. Must be non nil.
-- `previousFrame`: The Previous source frame in presentation time order. For the first frame this can be set to nil.
-- `previousOutputFrame`: The Previous output frame in presentation time order. For the first frame this can be set to nil.
-- `opticalFlow`: Optional VTFrameProcessorOpticalFlow object that contains forward and backward optical flow between sourceFrame and previousFrame frame. Only needed if optical flow is pre-computed.
-- `submissionMode`: Set to VTSuperResolutionScalerParametersSubmissionModeSequential to indicate that current submission follow presentation time order without jump or skip when compared to previous submission. VTSuperResolutionScalerParametersSubmissionModeSequential will yield better performance. Set to VTSuperResolutionScalerParametersSubmissionModeRandom to indicate a skip or a jump in frame sequence.
-- `destinationFrame`: User allocated pixel buffer that will receive the results.
+- `sourceFrame`: Current source frame; must be non  .
+- `previousFrame`: The previous source frame in presentation time order. For the first frame you can set this to  .
+- `previousOutputFrame`: The previous output frame in presentation time order. For the first frame you can set this to  .
+- `opticalFlow`: Optional   object that contains forward and backward optical flow between the   and  . You only need this if optical flow is pre-computed.
+- `submissionMode`: Provides a hint to let the processor know whether you are submitting frames in presentation   sequence. For more information about supported modes see  .
+- `destinationFrame`: User-allocated pixel buffer that receives the results.
 
 
 ---

@@ -18,6 +18,10 @@
 func withMultiArray<R>(for stateName: String, _ body: (MLMultiArray) throws -> R) rethrows -> R
 ```
 
+## See Also
+
+- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](mlstate/withmultiarray(_:).md)
+
 
 ---
 

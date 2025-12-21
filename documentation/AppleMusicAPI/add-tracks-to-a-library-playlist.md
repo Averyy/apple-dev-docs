@@ -10,7 +10,7 @@ Add new tracks to the end of a library playlist.
 
 #### Discussion
 
-If successful, the HTTP status code is 201 (Created) and a new resource created as a result. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
+If successful, the HTTP status code is 204 and a new resource created as a result. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
 This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
 

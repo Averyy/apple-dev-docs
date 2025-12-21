@@ -33,7 +33,7 @@ To create a build configuration file:
 
 ##### Map Build Settings to a Build Configuration
 
-You can specify different build configuration files for debug and release builds, and you can specify layer configuration files on top of other settings. To specify build configuration files:
+You can specify different build configuration files for debug and release builds, and you can layer configuration files on top of other settings. To specify build configuration files:
 
 1. Select your project in the project editor.
 2. Click the Info tab.

@@ -26,8 +26,6 @@ This collection of documents provides the API reference for the Quartz framework
 - [Quartz Filter](quartz-filter.md)
 ### Constants
 - [Quartz Constants](quartz-constants.md)
-### Macros
-- [Macros](quartz-macros.md)
 
 ## See Also
 

@@ -26,7 +26,7 @@ A new [`MTLIOFileHandle`](mtliofilehandle.md) instance if the method completes s
 
 #### Discussion
 
-For information about using input/output command queues and file handles, see [`Resource Loading`](resource-loading.md).
+For information about using input/output command queues and file handles, see [`Resource loading`](resource-loading.md).
 
 ## Parameters
 

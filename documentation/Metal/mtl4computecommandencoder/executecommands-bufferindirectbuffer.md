@@ -7,17 +7,17 @@
 Encodes an instruction to execute commands from an indirect command buffer, using an indirect buffer for arguments.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- macOS 26.0+ (Beta)
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-func executeCommands(buffer indirectCommandbuffer: any MTLIndirectCommandBuffer, indirectBuffer indirectRangeBuffer: UInt64)
+func executeCommands(buffer indirectCommandbuffer: any MTLIndirectCommandBuffer, indirectBuffer indirectRangeBuffer: MTLGPUAddress)
 ```
 
 #### Discussion
@@ -27,7 +27,12 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 ## Parameters
 
 - `indirectCommandbuffer`:   instance containing the commands to execute.
-- `indirectRangeBuffer`: GPUAddress of a   containing the execution range. Lay out the data   in this buffer as described in the    structure. The maximum length of the range is 16384 commands. This address   requires 4-byte alignment.
+- `indirectRangeBuffer`: GPUAddress of a   containing the execution range. Lay out the data   in this buffer as described in the    structure. This address requires 4-byte alignment.
+
+## See Also
+
+- [func executeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](mtl4computecommandencoder/executecommands(buffer:range:).md)
+  Encodes a command to execute commands from an indirect command buffer.
 
 
 ---

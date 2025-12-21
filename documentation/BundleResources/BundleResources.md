@@ -26,7 +26,7 @@ A  is a directory with a standardized hierarchical structure that holds executab
 - [Information Property List](information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
 - [Privacy manifest files](privacy-manifest-files.md)
-  Describe the data your app or third-party SDK collects and the reasons required APIs it uses.
+  Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 ### Structure
 - [Placing content in a bundle](placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.

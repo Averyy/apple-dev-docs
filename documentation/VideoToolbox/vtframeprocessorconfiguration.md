@@ -6,12 +6,12 @@
 A protocol that describes the configuration of a processor to use during a video processing session.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 15.4+
-- tvOS 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -37,6 +37,7 @@ The VTFrameProcessorConfiguration protocol conformance starts a frame processing
   The number of “previous” frames that this processor requires for processing.
 ### Type Properties
 - [static var isSupported: Bool](vtframeprocessorconfiguration/issupported.md)
+  Returns a Boolean indicating whether the system supports this processor on the current configuration.
 - [static var maximumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/maximumdimensions-4vmra.md)
   Maximum dimensions for a `sourceFrame` for the processor
 - [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)

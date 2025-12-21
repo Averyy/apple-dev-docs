@@ -19,7 +19,7 @@ Xcode also provides interactive editors for certain types of assets, like partic
 ### App icons and launch screen
 - [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
   Use Icon Composer to stylize your app icon for different platforms and appearances.
-- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
+- [Configuring your app to use alternate app icons](configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
   Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
@@ -43,8 +43,8 @@ Xcode also provides interactive editors for certain types of assets, like partic
   React to known 2D images in the user’s environment, and use their positions to place AR content.
 - [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [Creating 3D Content with Reality Composer](../RealityKit/creating-3d-content-with-reality-composer.md)
-  Assemble assets into a dynamic 3D composition that you can add to a scene in your app, or share with AR Quick Look.
+- [Composing interactive 3D content with RealityKit and Reality Composer Pro](../RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
+  Build an interactive scene using an animation timeline.
 ### Machine learning models
 - [Create ML](../CreateML/CreateML.md)
   Create machine learning models for use in your app.

@@ -40,8 +40,8 @@ When all transfers are complete, the system executes the callback you provided i
 
 ## See Also
 
-- [kern_return_t CreateMemoryDescriptorRing(uint32_t size);](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
-- [kern_return_t SetMemoryDescriptor(IOMemoryDescriptor * memoryDescriptor, uint32_t index);](IOUSBHostPipe/SetMemoryDescriptor.md)
+- [CreateMemoryDescriptorRing](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
+- [SetMemoryDescriptor](IOUSBHostPipe/SetMemoryDescriptor.md)
 - [CompleteAsyncIOBundled](iousbhostpipe/completeasynciobundled.md)
   Handles the completion of an asynchronous bundled transfer.
 - [Bundling Constants](bundling_constants-enum.md)

@@ -18,7 +18,7 @@ var isLensStabilizationDuringBracketedCaptureSupported: Bool { get }
 
 #### Discussion
 
-You may set the [`isLensStabilizationDuringBracketedCaptureEnabled`](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md) property only if this property’s value is [`true`](https://developer.apple.com/documentation/swift/true). This value may change as the session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property or the input device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes.
+You may set the [`isLensStabilizationDuringBracketedCaptureEnabled`](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md) property only if this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true). This value may change as the session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property or the input device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes.
 
 This property supports key-value observing.
 

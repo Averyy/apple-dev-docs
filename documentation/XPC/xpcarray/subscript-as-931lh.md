@@ -21,7 +21,7 @@ subscript(index: Int, as type: any OS_xpc_object.Type = xpc_object_t.self) -> xp
 
 #### Return Value
 
-The value at the specified index in the array, otherwise [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+The value at the specified index in the array, otherwise [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 ## Parameters
 

@@ -22,9 +22,6 @@ struct Station
 
 ## Topics
 
-### Operators
-- [static func == (Station, Station) -> Bool](station/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var artwork: Artwork?](station/artwork.md)
   The station artwork.
@@ -36,9 +33,7 @@ struct Station
   The notes about the station that appear in the Music app.
 - [var episodeNumber: Int?](station/episodenumber.md)
   The episode number of the station.
-- [var hashValue: Int](station/hashvalue.md)
-  The hash value.
-- [let id: MusicItemID](station/id-swift.property.md)
+- [let id: MusicItemID](station/id.md)
   The unique identifier for the station.
 - [var isLive: Bool](station/islive.md)
   A Boolean value that indicates whether the station is live.
@@ -50,20 +45,8 @@ struct Station
   The name of the entity that provides the station.
 - [var url: URL?](station/url.md)
   The URL for the station.
-### Instance Methods
-- [func hash(into: inout Hasher)](station/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Type Aliases
-- [typealias ID](station/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](station/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](station/customstringconvertible-implementations.md)
-- [Decodable Implementations](station/decodable-implementations.md)
-- [Encodable Implementations](station/encodable-implementations.md)
-- [Equatable Implementations](station/equatable-implementations.md)
 - [FilterableMusicItem Implementations](station/filterablemusicitem-implementations.md)
-- [MusicItem Implementations](station/musicitem-implementations.md)
 
 ## Relationships
 

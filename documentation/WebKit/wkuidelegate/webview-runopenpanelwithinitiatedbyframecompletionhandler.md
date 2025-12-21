@@ -21,14 +21,17 @@ optional func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenP
 
 #### Discussion
 
-If this method is not implemented, the web view behaves as if the user selected the Cancel button.
+Implement this method to customize the upload panel. To disable file uploads, implement this method to return `nil`.
+
+- By default on macOS, file uploads are disabled if you don’t implement this method.
+- By default on iOS, file uploads are enabled if you don’t implement this method.
 
 ## Parameters
 
-- `webView`: The web view invoking the delegate method.
-- `parameters`: The parameters describing the file upload control.
-- `frame`: The frame whose file upload control initiated the call.
-- `completionHandler`: The completion handler called after the open panel has been dismissed. Pass the selected URLs if the user chose “OK”, otherwise  .
+- `webView`: The web view that invokes the delegate method.
+- `parameters`: The parameters that describe the file upload control.
+- `frame`: The frame with the file upload control that initiates the call.
+- `completionHandler`: The completion handler the system calls after a person dismisses the open panel. Pass the selected URLs if the person selects “OK”, otherwise pass  .
 
 ## See Also
 

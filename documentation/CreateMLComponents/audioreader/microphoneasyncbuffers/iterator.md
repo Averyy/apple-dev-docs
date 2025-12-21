@@ -23,10 +23,6 @@ final class Iterator
 ### Getting the next element
 - [func next() async throws -> TemporalFeature<AudioReader.MicrophoneAsyncBuffers.Feature>?](audioreader/microphoneasyncbuffers/iterator/next.md)
   Advances to the next element and returns it, or nil if no next element exists.
-### Type Aliases
-- [AudioReader.MicrophoneAsyncBuffers.Iterator.Element](audioreader/microphoneasyncbuffers/iterator/element.md)
-### Default Implementations
-- [AsyncIteratorProtocol Implementations](audioreader/microphoneasyncbuffers/iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
@@ -37,10 +33,6 @@ final class Iterator
 
 - [func makeAsyncIterator() -> AudioReader.MicrophoneAsyncBuffers.Iterator](audioreader/microphoneasyncbuffers/makeasynciterator.md)
   Constructs an iterator.
-- [AudioReader.MicrophoneAsyncBuffers.AsyncIterator](audioreader/microphoneasyncbuffers/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [AudioReader.MicrophoneAsyncBuffers.Feature](audioreader/microphoneasyncbuffers/feature.md)
-  The feature type.
 
 
 ---

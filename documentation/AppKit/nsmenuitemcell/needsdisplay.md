@@ -17,7 +17,7 @@ var needsDisplay: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the menu item to be drawn.
+Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the menu item to be drawn.
 
 ## See Also
 

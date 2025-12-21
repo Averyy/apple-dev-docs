@@ -60,6 +60,9 @@ Your app can create as many [`NEAppPushManager`](neapppushmanager.md) instances 
   A dictionary that contains vendor-specific key-value pairs, that you use to configure a provider.
 - [var providerBundleIdentifier: String?](neapppushmanager/providerbundleidentifier.md)
   A string that contains the bundle identifier of the push provider.
+### Operating over Ethernet
+- [var matchEthernet: Bool](neapppushmanager/matchethernet.md)
+  A property that indicates Ethernet support for Local Push Connectivity.
 ### Handling errors
 - [struct NEAppPushManagerError](neapppushmanagererror-swift.struct.md)
   An error that the push manager encounters.
@@ -67,8 +70,6 @@ Your app can create as many [`NEAppPushManager`](neapppushmanager.md) instances 
   The error domain string for local push errors.
 - [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
-### Instance Properties
-- [var matchEthernet: Bool](neapppushmanager/matchethernet.md)
 
 ## Relationships
 

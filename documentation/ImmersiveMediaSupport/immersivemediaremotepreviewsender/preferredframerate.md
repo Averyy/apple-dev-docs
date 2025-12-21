@@ -3,10 +3,10 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-The preferred frame rate to be used when sending and previewing frames. This is optional and a value of -1 will let the system decide the best framerate to use based on network quality.
+The preferred frame rate to use when sending and previewing frames. This is optional; a value of `-1` enables the system to decide the best framerate based on network quality.
 
 **Availability**:
-- macOS 26.0+ (Beta)
+- macOS 26.0+
 
 ## Declaration
 

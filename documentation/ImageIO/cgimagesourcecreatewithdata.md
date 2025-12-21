@@ -22,11 +22,11 @@ func CGImageSourceCreateWithData(_ data: CFData, _ options: CFDictionary?) -> CG
 
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Parameters
 
-- `data`: The data object from which to read. For more information on data objects, see  doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9  (Swift),   (Objective-C), and  .
+- `data`: The data object from which to read. For more information on data objects, see   and  .
 - `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
 
 ## See Also

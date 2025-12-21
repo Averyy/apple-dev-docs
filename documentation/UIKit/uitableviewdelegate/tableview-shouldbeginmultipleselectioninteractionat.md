@@ -20,15 +20,15 @@ optional func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionIn
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the user to select multiple rows using a two-finger pan gesture; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to disable the behavior. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) to allow the user to select multiple rows using a two-finger pan gesture; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to disable the behavior. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
-When the system recognizes a two-finger pan gesture, it calls this method before it sets [`isEditing`](uitableview/isediting.md) to [`true`](https://developer.apple.com/documentation/swift/true). If you return [`true`](https://developer.apple.com/documentation/swift/true) from this method, the user can select multiple rows using a two-finger pan gesture.
+When the system recognizes a two-finger pan gesture, it calls this method before it sets [`isEditing`](uitableview/isediting.md) to [`true`](https://developer.apple.com/documentation/Swift/true). If you return [`true`](https://developer.apple.com/documentation/Swift/true) from this method, the user can select multiple rows using a two-finger pan gesture.
 
 In macOS, the system calls this method when a user attempts to select multiple rows by holding a modifier key and clicking additional rows to select them.
 
-To support multiple selection using the two-finger pan gesture (in iOS) or modifier keys (in macOS), set the [`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you configure the table view.
+To support multiple selection using the two-finger pan gesture (in iOS) or modifier keys (in macOS), set the [`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) when you configure the table view.
 
 ## Parameters
 

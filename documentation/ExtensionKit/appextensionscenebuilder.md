@@ -23,7 +23,7 @@ A custom parameter attribute that constructs extension scenes from closures.
 
 ## Topics
 
-### Building Content
+### Building the scene’s content
 - [static func buildBlock<Content>(Content) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:).md)
   Passes through a single extension scene unmodified.
 - [static func buildBlock<C0, C1>(C0, C1) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:).md)
@@ -54,11 +54,9 @@ A custom parameter attribute that constructs extension scenes from closures.
 ## See Also
 
 - [protocol AppExtensionScene](appextensionscene.md)
-  A protocol that defines the user interface for an application extension.
-- [struct AppExtensionSceneConfiguration](appextensionsceneconfiguration.md)
-  An object that holds configuration options for an extension scene.
+  An interface you use to provide a specific scene from your app extension’s UI.
 - [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
-  A primitive you use to compose specialized app extension points.
+  A type you use to deliver the contents of your app-extension-based UI.
 
 
 ---

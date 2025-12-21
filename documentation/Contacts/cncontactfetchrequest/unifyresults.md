@@ -21,7 +21,7 @@ var unifyResults: Bool { get set }
 
 #### Discussion
 
-A unified contact is an aggregation of properties from a set of linked individual contacts. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the fetch returns unified contacts; otherwise, it returns individual contacts. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+A unified contact is an aggregation of properties from a set of linked individual contacts. When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the fetch returns unified contacts; otherwise, it returns individual contacts. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

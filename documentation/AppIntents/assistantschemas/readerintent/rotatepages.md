@@ -29,7 +29,7 @@ var rotatePages: some AssistantSchemas.Intent { get }
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.reader.rotatePages` schema:
 
 ```swift
-@AssistantIntent(schema: .reader.rotatePages)
+@AppIntent(schema: .reader.rotatePages)
 struct ReaderRotatePagesIntent: AppIntent {
     @Parameter
     var pages: [ReaderPageEntity]

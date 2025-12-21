@@ -1,4 +1,4 @@
-# AppKit Release Notes for macOS 14
+# AppKit Release Notes for macOS Sonoma 14
 
 **Framework**: macOS Release Notes
 
@@ -29,8 +29,8 @@ AppKit in macOS14 includes new features, as well as API changes and deprecations
 ###### Nssavepanel Nsopenpanel
 
 - Added the property identifier. (4228269)
-- Modeless and application modal open and save panels are now main windows. (14623155, 103038843)  This fixes a problem where menu items that weren’t applicable to the open or save panel remained `enabled. Open` and save panels that are displayed as sheets are unchanged.
-- Removed the titlebar from modal and modeless `NSSavePanels`. (105212420)  This changes `NSSavePanel` to have consistent behavior with `NSOpenPanel`.
+- Modeless and application modal open and save panels are now main windows. (14623155, 103038843) This fixes a problem where menu items that weren’t applicable to the open or save panel remained `enabled. Open` and save panels that are displayed as sheets are unchanged.
+- Removed the titlebar from modal and modeless `NSSavePanels`. (105212420) This changes `NSSavePanel` to have consistent behavior with `NSOpenPanel`.
 
 ###### Nsprintpanel Nspagelayout
 
@@ -109,6 +109,17 @@ AppKit in macOS14 includes new features, as well as API changes and deprecations
 - `NSApplication` has a new method, `activate`, that sends the activation request to the system. The request may provide different results based on the context in which the app is running, user activity, and other factors. If necessary for app functionality, active status can be checked by querying the isActive property on `NSApplication`. In general, apps should not assume that activation requests will always succeed.
 - macOS 14 provides more ways for apps to express the context in which activation should occur. A common scenario is cooperative activation, or passing the active state from one app to another. This process can be useful for apps that need to explicitly pass activation state, such as launchers and view services. The active app can use `NSApplication.yield(to:)` method to yield its active state to an instance of `NSRunningApplication`, or `yield(toApplicationWithBundleIdentifier:)` to yield to a bundle ID, which may be used in case the receiver app is not running or its status is unknown. Note that the sender does not deactivate at the time of invoking these methods. After yielding, the sender may activate the receiver using `NSRunningApplication` API, or the target app may simply activate itself by invoking the `NSApplication.activate` method. The cooperative activation mechanism guarantees successful activation as long as the yielding app is active at the time of the request and the receiver can become active.
 - Existing calls to `NSApplication.deactivate()` should be replaced by `NSApplication.yield(to:)` to make activation handoff more explicit, and to delay changing the appearance of the calling app until the target app has activated.
+
+## See Also
+
+- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS Big Sur 11](appkit-release-notes-for-macos-11.md)
+  Update your apps to use new features, and test your apps against API changes.
+- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+  Update your apps to use new features, and test your apps against API changes.
 
 
 ---

@@ -10,7 +10,7 @@ Moves an entity instantly to a new location given by a transform.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 26.0+ (Beta)
+- tvOS 26.0+
 - visionOS ?+
 
 ## Declaration
@@ -31,7 +31,7 @@ Moves an entity instantly to a new location given by a transform.
   Moves an entity instantly to a new location given by a 4x4 matrix.
 - [func look(at: SIMD3<Float>, from: SIMD3<Float>, upVector: SIMD3<Float>, relativeTo: Entity?)](hastransform/look(at:from:upvector:relativeto:).md)
   Positions and orients the entity to look at a target from a given position.
-- [func look(at:from:upVector:relativeTo:forward:)](hastransform/look(at:from:upvector:relativeto:forward:).md)
+- [func look(at: SIMD3<Float>, from: SIMD3<Float>, upVector: SIMD3<Float>, relativeTo: Entity?, forward: Entity.ForwardDirection)](hastransform/look(at:from:upvector:relativeto:forward:).md)
   Positions and orients the entity such that it looks at certain target from a give position.
 - [func align(GeometricPin, to: GeometricPin) -> float4x4?](hastransform/align(_:to:).md)
   Moves and rotates the entity by a transformation from the origin pin to the target pin.

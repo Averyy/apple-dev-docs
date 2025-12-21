@@ -1,4 +1,4 @@
-# Simplifying GPU Resource Management with Residency Sets
+# Simplifying GPU resource management with residency sets
 
 **Framework**: Metal
 
@@ -42,7 +42,7 @@ See [`MTLResidencySet`](mtlresidencyset.md) for information about working with r
 
 ##### Attach a Residency Set to a Command Buffer
 
-Connect an [`MTLCommandBuffer`](mtlcommandbuffer.md) instance to a residency set’s resource allocations by attaching the set to the command buffer with the [`useResidencySet(_:)`](mtlcommandbuffer/useresidencyset(_:).md) or [`useResidencySets(_:)`](mtlcommandbuffer/useresidencysets(_:).md) method.
+Connect an [`MTLCommandBuffer`](mtlcommandbuffer.md) instance to a residency set’s resource allocations by attaching the set to the command buffer with the [`useResidencySet(_:)`](mtlcommandbuffer/useresidencyset(_:).md) or [`useResidencySets(_:)`](mtlcommandbuffer/useresidencysets(_:).md) method. Every command buffer can maintain a list of up to 32 different residency sets.
 
 Metal makes the allocations in the set resident before the GPU runs the passes in the command buffer. This includes all resources that come from an [`MTLHeap`](mtlheap.md) allocation that’s in the residency set.
 
@@ -59,7 +59,7 @@ Attaching a residency set to a command buffer takes less CPU runtime and overhea
 
 ##### Attach a Residency Set to a Command Queue and Its Command Buffers
 
-Connect an [`MTLCommandQueue`](mtlcommandqueue.md) instance to a residency set’s resource allocations by attaching the set to the queue with the [`addResidencySet(_:)`](mtlcommandqueue/addresidencyset(_:).md) or [`addResidencySets(_:)`](mtlcommandqueue/addresidencysets(_:).md) method.
+Connect an [`MTLCommandQueue`](mtlcommandqueue.md) instance to a residency set’s resource allocations by attaching the set to the queue with its [`addResidencySet(_:)`](mtlcommandqueue/addresidencyset(_:).md) or [`addResidencySets(_:)`](mtlcommandqueue/addresidencysets(_:).md) method. Every command queue can maintain a list of up to 32 different residency sets.
 
 When your app calls a command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method, Metal automatically attaches the owning queue’s current residency sets to the command buffer.
 

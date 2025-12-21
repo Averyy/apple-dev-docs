@@ -22,7 +22,7 @@ func CGImageSourceCreateWithDataProvider(_ provider: CGDataProvider, _ options: 
 
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 ## Parameters
 

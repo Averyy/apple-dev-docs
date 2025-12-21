@@ -21,7 +21,7 @@ func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey : Any] =
 
 #### Discussion
 
-Use this method to open the specified resource. If the specified URL scheme is handled by another app, iOS launches that app and passes the URL to it. (Launching the app brings the other app to the foreground.)  If no app is capable of handling the specified scheme, the completion handler is called with the  parameter set to [`false`](https://developer.apple.com/documentation/swift/false).
+Use this method to open the specified resource. If the specified URL scheme is handled by another app, iOS launches that app and passes the URL to it. (Launching the app brings the other app to the foreground.)  If no app is capable of handling the specified scheme, the completion handler is called with the  parameter set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 To determine whether an app is installed that is capable of handling the URL, call the [`canOpenURL(_:)`](uiapplication/canopenurl(_:).md) method before calling this one. Be sure to read the description of that method for an important note about registering the schemes you want to employ.
 

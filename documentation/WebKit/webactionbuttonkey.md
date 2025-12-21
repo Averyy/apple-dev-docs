@@ -17,7 +17,7 @@ let WebActionButtonKey: String
 ## See Also
 
 - [let WebActionElementKey: String](webactionelementkey.md)
-  A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
+  A dictionary containing element information. See [`WebView`](webview-swift.class.md) for a description of the key-value pairs in this dictionary.
 - [let WebActionModifierFlagsKey: String](webactionmodifierflagskey.md)
   An unsigned number that indicates the modifier flag.
 - [let WebActionNavigationTypeKey: String](webactionnavigationtypekey.md)

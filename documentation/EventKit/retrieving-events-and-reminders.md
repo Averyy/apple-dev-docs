@@ -56,7 +56,7 @@ if let aPredicate = predicate {
 
 You can specify a subset of calendars to search by passing an array of [`EKCalendar`](ekcalendar.md) objects as the calendars parameter of the [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md) method. You can get the user’s calendars from the event store’s [`calendars(for:)`](ekeventstore/calendars(for:).md) method. Passing `nil` tells the method to fetch from all of the user’s calendars.
 
-Because the [`events(matching:)`](ekeventstore/events(matching:).md) method is synchronous, you may not want to run it on your app’s main thread. For asynchronous behavior, run the method on another thread with the [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async) function or with an [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) object.
+Because the [`events(matching:)`](ekeventstore/events(matching:).md) method is synchronous, you may not want to run it on your app’s main thread. For asynchronous behavior, run the method on another thread with the [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async) function or with an [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) object.
 
 ###### Fetch Reminders
 

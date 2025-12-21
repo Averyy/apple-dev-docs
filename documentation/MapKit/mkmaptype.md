@@ -49,16 +49,10 @@ enum MKMapType
 
 ## See Also
 
-- [var isZoomEnabled: Bool](mkmapview/iszoomenabled.md)
-  A Boolean value that determines whether the user may use pinch gestures to zoom in and out of the map.
-- [var isScrollEnabled: Bool](mkmapview/isscrollenabled.md)
-  A Boolean value that determines whether the user may scroll around the map.
-- [var isPitchEnabled: Bool](mkmapview/ispitchenabled.md)
-  A Boolean value that indicates whether the map uses the camera’s pitch information.
-- [var isRotateEnabled: Bool](mkmapview/isrotateenabled.md)
-  A Boolean value that indicates whether the map uses the camera’s heading information.
-- [var mapType: MKMapType](mkmapview/maptype.md)
-  The type of data the map view displays.
+- [MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.enum.md)
+  Constants indicating the types of search completions to return.
+- [enum MKPinAnnotationColor](mkpinannotationcolor.md)
+  The supported colors for pin annotations.
 
 
 ---

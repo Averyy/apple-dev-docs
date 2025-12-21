@@ -22,12 +22,6 @@ struct Percentiles<Dimension> where Dimension : Dimension
 
 ## Topics
 
-### Operators
-- [static func == (Percentiles<Dimension>, Percentiles<Dimension>) -> Bool](percentiles/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Initializers
-- [init(from: any Decoder) throws](percentiles/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var p10: Measurement<Dimension>](percentiles/p10.md)
   10% of the distribution is less than this value.
@@ -35,11 +29,6 @@ struct Percentiles<Dimension> where Dimension : Dimension
   50% of the distribution is less than this value.
 - [var p90: Measurement<Dimension>](percentiles/p90.md)
   90% of the distribution is less than this value.
-### Instance Methods
-- [func encode(to: any Encoder) throws](percentiles/encode(to:).md)
-  Encodes this value into the given encoder.
-### Default Implementations
-- [Equatable Implementations](percentiles/equatable-implementations.md)
 
 ## Relationships
 

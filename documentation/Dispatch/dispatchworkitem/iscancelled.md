@@ -22,7 +22,7 @@ var isCancelled: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the work item has been canceled.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the work item has been canceled.
 
 ## See Also
 

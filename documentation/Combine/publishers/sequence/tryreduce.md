@@ -18,6 +18,12 @@
 func tryReduce<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Publishers.Sequence<Elements, Failure>.Output) throws -> T) -> Result<T, any Error>.Publisher
 ```
 
+## See Also
+
+- [func collect() -> Result<[Publishers.Sequence<Elements, Failure>.Output], Failure>.Publisher](publishers/sequence/collect.md)
+- [func ignoreOutput() -> Empty<Publishers.Sequence<Elements, Failure>.Output, Failure>](publishers/sequence/ignoreoutput.md)
+- [func reduce<T>(T, (T, Publishers.Sequence<Elements, Failure>.Output) -> T) -> Result<T, Failure>.Publisher](publishers/sequence/reduce(_:_:).md)
+
 
 ---
 

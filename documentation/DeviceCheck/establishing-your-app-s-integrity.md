@@ -28,7 +28,7 @@ if service.isSupported {
 
 You change the behavior of both your app, as the example above shows, and your server — which can no longer require assertions — when you find that the device doesn’t support the service.
 
-> ❗ **Important**: Most app extensions don’t support App Attest. Generally, when executing code in these extensions, bypass key generation and attestation, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/swift/true). The only app extensions that support App Attest are watchOS extensions in watchOS 9 or later. For these extensions, you can use the results from [`isSupported`](dcappattestservice/issupported.md) to indicate whether your WatchKit extension bypasses attestation.
+> ❗ **Important**: Action, extensible SSO, and watchOS extensions are supported. All other extension types are not supported, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Create a Key Pair
 
@@ -71,7 +71,7 @@ service.attestKey(keyId, clientDataHash: hash) { attestation, error in
 
 If the method, which accesses a remote Apple server, returns the [`serverUnavailable`](dcerror-swift.struct/serverunavailable.md) error, try attestation again later with the same key. For any other error, discard the key identifier and create a new key when you want to try again. Otherwise, send the completion handler’s attestation object and the `keyId` to your server for processing.
 
-> ❗ **Important**: If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service.md) for guidance on safely ramping your users.
+> ❗ **Important**: If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service#Onboard-users-gradually.md) for guidance on safely ramping your users.
 
 If you use the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) to communicate with your server, you can send an unmodified attestation object. If you communicate with your server by generating text-based HTTPS queries, convert the attestation object to a Base64-encoded string first.
 
@@ -120,6 +120,8 @@ The keys that you generate remain valid through regular app updates, but don’t
   Request and analyze risk data using server-to-server calls.
 - [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
   Test your implementation in a development environment and onboard users gradually.
+- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+  Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
 - [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)

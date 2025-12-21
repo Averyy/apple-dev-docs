@@ -33,12 +33,6 @@ These constants are used by the [`enqueue(_:postingStyle:)`](notificationqueue/e
   The notification is posted when the run loop is idle.
 - [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
   The notification is posted immediately after coalescing.
-- [NotificationQueue.PostingStyle.asap](notificationqueue/postingstyle/asap.md)
-  The notification is posted at the end of the current notification callout or timer.
-- [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
-  The notification is posted when the run loop is idle.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
-  The notification is posted immediately after coalescing.
 ### Initializers
 - [init?(rawValue: UInt)](notificationqueue/postingstyle/init(rawvalue:).md)
 

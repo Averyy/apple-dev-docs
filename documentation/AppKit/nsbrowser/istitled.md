@@ -17,7 +17,7 @@ var isTitled: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the columns in a browser display titles.
+When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the columns in a browser display titles.
 
 ## See Also
 

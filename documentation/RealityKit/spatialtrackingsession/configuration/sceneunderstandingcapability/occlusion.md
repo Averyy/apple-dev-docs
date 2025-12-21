@@ -8,7 +8,6 @@ The capability that allows the system to use scene-understanding data for occlus
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- visionOS 26.0+ (Beta)
 
 ## Declaration
 

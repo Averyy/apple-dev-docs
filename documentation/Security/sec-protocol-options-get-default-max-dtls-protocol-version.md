@@ -24,9 +24,7 @@ The default maximum DTLS version.
 
 #### Discussion
 
-```None
- Get the system default maximum DTLS protocol version.
-```
+Get the system default maximum DTLS protocol version.
 
 
 ---

@@ -21,7 +21,7 @@ class MTLAttribute
 
 ## Topics
 
-### Reading an Attribute’s Properties
+### Reading an attribute’s properties
 - [var name: String](mtlattribute/name.md)
   The name of the attribute.
 - [var attributeIndex: Int](mtlattribute/attributeindex.md)
@@ -50,7 +50,7 @@ class MTLAttribute
 ## See Also
 
 - [class MTLVertexAttribute](mtlvertexattribute.md)
-  An object that represents an attribute of a vertex function.
+  An instance that represents an attribute of a vertex function.
 - [class MTLArgument](mtlargument.md)
   Information about an argument of a graphics or compute function.
 - [typealias MTLAutoreleasedArgument](mtlautoreleasedargument.md)

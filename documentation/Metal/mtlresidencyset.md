@@ -21,7 +21,7 @@ protocol MTLResidencySet : NSObjectProtocol
 
 ## Mentions
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Overview
 
@@ -49,7 +49,7 @@ Alternatively, render and compute command encoders have the following methods th
 
 These command encoder methods:
 
-- Support hazard tracking to applicable resources (see [`Resource Fundamentals`](resource-fundamentals.md))
+- Support hazard tracking to applicable resources (see [`Resource fundamentals`](resource-fundamentals.md))
 - Require CPU overhead for each resource or heap, which scale up with each one you add
 - Apply to a single command encoder, which means you need to call the methods again for the same resources for each command encoder
 
@@ -64,7 +64,7 @@ Metal attaches all of a command queue’s residency sets to a command buffer fro
 
 > ❗ **Important**:  Residency sets don’t support sparse heaps or sparse textures, and their methods aren’t thread-safe.
 
-See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) for information about associating a residency set to command buffers and command queues.
+See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for information about associating a residency set to command buffers and command queues.
 
 ##### Create a Residency Set
 
@@ -92,28 +92,28 @@ A residency set’s addition and removal methods don’t take effect until you c
 
 ## Topics
 
-### Adding Allocations
+### Adding allocations
 - [func addAllocation(any MTLAllocation)](mtlresidencyset/addallocation(_:).md)
   Stages a single resource to join the residency set’s list of allocations.
 - [func addAllocations([any MTLAllocation])](mtlresidencyset/addallocations(_:).md)
   Stages multiple resources to join the residency set’s list of allocations.
-### Removing Allocations
+### Removing allocations
 - [func removeAllAllocations()](mtlresidencyset/removeallallocations.md)
   Stages all the resources in the residency set to leave its list of allocations.
 - [func removeAllocation(any MTLAllocation)](mtlresidencyset/removeallocation(_:).md)
   Stages a single resource to leave the residency set’s list of allocations.
 - [func removeAllocations([any MTLAllocation])](mtlresidencyset/removeallocations(_:).md)
   Stages multiple resources to leave the residency set’s list of allocations.
-### Finalizing Pending Allocation Changes
+### Finalizing pending allocation changes
 - [func commit()](mtlresidencyset/commit.md)
   Applies any pending additions to and removals from the residency set.
-### Requesting Residency for the Allocations
+### Requesting residency for the allocations
 - [func requestResidency()](mtlresidencyset/requestresidency.md)
   Tells Metal to do as much preparatory work as it can, with the system’s current conditions, to make the set’s resource allocations resident.
-### Releasing the Allocations from Residency
+### Releasing the allocations from residency
 - [func endResidency()](mtlresidencyset/endresidency.md)
   Informs Metal that the residency set’s allocations no longer need to be resident, and that it can reuse the memory for other allocations.
-### Inspecting a Residency Set
+### Inspecting a residency set
 - [var label: String?](mtlresidencyset/label.md)
   An optional name that can help you identify the residency set.
 - [var device: any MTLDevice](mtlresidencyset/device.md)
@@ -134,7 +134,7 @@ A residency set’s addition and removal methods don’t take effect until you c
 
 ## See Also
 
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
   Organize your resources into groups and influence when they become accessible to the GPU.
 - [class MTLResidencySetDescriptor](mtlresidencysetdescriptor.md)
   A configuration that customizes the behavior for a residency set.

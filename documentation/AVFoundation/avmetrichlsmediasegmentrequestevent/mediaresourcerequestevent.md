@@ -21,8 +21,11 @@ var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent? { get }
 ## See Also
 
 - [var byteRange: NSRange](avmetrichlsmediasegmentrequestevent/byterange.md)
+- [var indexFileURL: URL](avmetrichlsmediasegmentrequestevent/indexfileurl.md)
 - [var isMapSegment: Bool](avmetrichlsmediasegmentrequestevent/ismapsegment.md)
 - [var mediaType: AVMediaType](avmetrichlsmediasegmentrequestevent/mediatype.md)
+- [var segmentDuration: TimeInterval](avmetrichlsmediasegmentrequestevent/segmentduration.md)
+  Returns the duration of segment in seconds.
 - [var url: URL?](avmetrichlsmediasegmentrequestevent/url.md)
 
 

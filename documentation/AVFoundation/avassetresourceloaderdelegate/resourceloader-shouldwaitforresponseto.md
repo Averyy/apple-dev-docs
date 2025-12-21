@@ -21,13 +21,13 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWait
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the resource loader should wait for a response to the authentication challenge; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](https://developer.apple.com/documentation/Swift/true) if the resource loader should wait for a response to the authentication challenge; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 #### Discussion
 
 Delegates receive this message when assistance is required of the application to respond to an authentication challenge.
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if you expect a response either subsequently or immediately to the authenticationChallenger object’s sender.
+Return [`true`](https://developer.apple.com/documentation/Swift/true) if you expect a response either subsequently or immediately to the authenticationChallenger object’s sender.
 
 If you intend to respond to the authentication challenge after your handling of `resourceLoader:shouldWaitForResponseToAuthenticationChallenge:` returns, you must retain the authenticationChallenge until after your response has been made.
 

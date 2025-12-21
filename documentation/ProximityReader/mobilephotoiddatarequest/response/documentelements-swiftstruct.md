@@ -6,10 +6,10 @@
 A type that contains the document elements from a successful photo ID data request.
 
 **Availability**:
-- iOS 26.0+ (Beta)
-- iPadOS 26.0+ (Beta)
-- Mac Catalyst 26.0+ (Beta)
-- visionOS 26.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -22,9 +22,6 @@ struct DocumentElements
 ### Structures
 - [MobilePhotoIDDataRequest.Response.DocumentElements.IssuingAuthority](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct.md)
   A type that represents the state or government that issued the identity document.
-### Operators
-- [static func == (MobilePhotoIDDataRequest.Response.DocumentElements, MobilePhotoIDDataRequest.Response.DocumentElements) -> Bool](mobilephotoiddatarequest/response/documentelements-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var address: CNPostalAddress?](mobilephotoiddatarequest/response/documentelements-swift.struct/address.md)
   The photo ID holder’s address on record with the issuer.
@@ -40,8 +37,6 @@ struct DocumentElements
   The document’s issue date.
 - [let documentNumber: String?](mobilephotoiddatarequest/response/documentelements-swift.struct/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [var hashValue: Int](mobilephotoiddatarequest/response/documentelements-swift.struct/hashvalue.md)
-  The hash value.
 - [let issuingAuthority: MobilePhotoIDDataRequest.Response.DocumentElements.IssuingAuthority?](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.property.md)
   The state or government that issued the identity document.
 - [let nameComponents: PersonNameComponents?](mobilephotoiddatarequest/response/documentelements-swift.struct/namecomponents.md)
@@ -50,14 +45,9 @@ struct DocumentElements
   The portrait data of the photo ID holder on record with the issuer.
 - [let sex: MobilePhotoIDDataRequest.Response.DocumentElements.Sex?](mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.property.md)
   The photo ID holder’s sex.
-### Instance Methods
-- [func hash(into: inout Hasher)](mobilephotoiddatarequest/response/documentelements-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [MobilePhotoIDDataRequest.Response.DocumentElements.Sex](mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum.md)
   A type that represents the photo ID holder’s sex.
-### Default Implementations
-- [Equatable Implementations](mobilephotoiddatarequest/response/documentelements-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

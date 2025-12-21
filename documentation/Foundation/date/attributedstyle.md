@@ -67,8 +67,6 @@ If you create a SwiftUI [`Text`](https://developer.apple.com/documentation/Swift
 - [func format(Date) -> AttributedString](date/attributedstyle/format(_:).md)
   Creates a locale-aware attributed string representation from a date value.
 ### Comparing Date Attributed Styles
-- [static func != (Self, Self) -> Bool](date/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
 

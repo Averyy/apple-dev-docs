@@ -19,11 +19,6 @@ An error that indicates that the input and output formats are incompatible for c
 case incompatibleTargetFormatForConversion(inputFormat: AVAudioFormat, targetFormat: AVAudioFormat)
 ```
 
-## See Also
-
-- [var errorDescription: String?](audiopreprocessingerror/errordescription.md)
-  A localized message describing what error occurred.
-
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The payload you use to configure profile removal.
+The payload that configures profile removal.
 
 **Availability**:
 - iOS 4.0+
@@ -76,13 +76,13 @@ This payload provides a password to allow users to remove a locked configuration
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)
-  The payload you use to configure the users, groups, and departments within an educational organization.
+  The payload that configures the users, groups, and departments within an educational organization.
 - [object LightsOutManagementLOM](lightsoutmanagementlom.md)
-  The payload you use to configure lights-out management (LOM) settings.
+  The payload that configures lights-out management (LOM) settings.
 - [object ManagedPreferences](managedpreferences.md)
-  The payload you use to configure managed preferences.
+  The payload that configures managed preferences.
 - [object MDM](mdm.md)
-  The payload you use to configure mobile device management (MDM) settings.
+  The payload that configures mobile device management (MDM) settings.
 
 
 ---

@@ -17,7 +17,7 @@ var isDocumentEdited: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the document has been edited. The edited status of each document window reflects the document’s edited status.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the document has been edited. The edited status of each document window reflects the document’s edited status.
 
 ## See Also
 

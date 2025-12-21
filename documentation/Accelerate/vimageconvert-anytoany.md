@@ -26,7 +26,7 @@ func vImageConvert_AnyToAny(_ converter: vImageConverter, _ srcs: UnsafePointer<
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes described in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -40,12 +40,24 @@ Some formats, particularly YUV422 and YUV420, and those with a pixel size that�
 
 When reading incomplete chunks, vImage touches only the unused parts of the chunk when it knows it to be safe to do so. When writing incomplete chunks, vImage copies the rightmost valid pixel color into the unused part of the chunk. Thus, on reading, the entire chunk doesn’t have to be there, but on writing, it does. Conventions vary among chunk-using imaging pipelines, and this conservative approach should interoperate with most. However, be careful when writing to chunk-based formats (not to be confused with chunky formats, which merely have several channels interleaved) to make sure that the buffer is large enough to tolerate the write policy.  If you’re tiling chunk-based data, be careful not to run tile boundaries through the middle of a chunk.  Chunks are assumed to be indivisible.
 
+##### Optimize Performance with Temporary Buffers
+
+This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
+
+Pass `nil` to the `tempBuffer` parameter to have vImage create and manage this temporary storage for you.
+
+In cases where your code calls the function frequently (for example, when processing video), create and manage this temporary buffer yourself and reuse it across function calls. Reusing a buffer avoids vImage allocating the temporary storage with each call.
+
+To use your own temporary buffer, first call the function with the same values for all other parameters that you intend to use for subsequent calls. In addition, pass the `kvImageGetTempBufferSize` flag. The `kvImageGetTempBufferSize` instructs the function not to perform any processing, and to return a positive value that represents the minimum size, in bytes, of the temporary buffer. A negative return value represents an error.
+
+After you allocate the memory for the temporary buffer, pass that to the `tempBuffer` parameter for subsequent calls to the function, and don’t pass the `kvImageGetTempBufferSize` flag.
+
 ## Parameters
 
 - `converter`: A valid   instance indicating the conversion to perform. You can use the same converter concurrently in multiple threads. To create a converter, you can use  ,  ,  , or  .
-- `srcs`: A pointer to an array of vImage buffer structs that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that created the   instance. You can also determine the order manually using  .
-- `dests`: A pointer to an array of vImage buffer structs that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that created the   instance. You can also determine the order manually using  . The destination buffer may only alias the   buffers if   returns 0 and the respective scanlines of the aliasing buffers start at the same address.
-- `tempBuffer`: If this value isn’t null, the memory that   points to is used as scratch space by the function. You can determine the buffer size by passing   to the flags parameter. If null is passed here and a temporary buffer is needed, the function allocates one on the heap and frees it before returning. The function may run more slowly, because of both the allocation cost and the cost of virtual memory faults to zero-fill pages as they are used.   is the correct option when the function is used infrequently or convenience is valued.
+- `srcs`: A pointer to an array of vImage buffer structures that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that creates the   instance. You can also determine the order manually using  .
+- `dests`: A pointer to an array of vImage buffer structures that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that creates the   instance. You can also determine the order manually using  . The destination buffer may only alias the   buffers if   returns 0 and the respective scanlines of the aliasing buffers start at the same address.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
 - `flags`: The options to use when performing this operation. The following flags are supported:
 
 ## See Also

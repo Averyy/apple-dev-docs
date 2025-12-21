@@ -14,6 +14,11 @@ The alignment in the ornament used to position it.
 var contentAlignment: Alignment { get set }
 ```
 
+## See Also
+
+- [var sceneAnchor: UnitPoint](uihostingornament/sceneanchor.md)
+  The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
+
 
 ---
 

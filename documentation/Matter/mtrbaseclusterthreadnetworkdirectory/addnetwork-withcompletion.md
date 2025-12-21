@@ -22,7 +22,7 @@ func addNetwork(with params: MTRThreadNetworkDirectoryClusterAddNetworkParams) a
 
 #### Discussion
 
-Adds an entry to the ThreadNetworks list.
+Adds an entry to the ThreadNetworks attribute with the specified Thread Operational Dataset.
 
 
 ---

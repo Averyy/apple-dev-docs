@@ -3,8 +3,10 @@
 **Framework**: Swift Charts  
 **Kind**: property
 
+Sets the rendering style automatically.
+
 **Availability**:
-- visionOS 26.0+ (Beta)
+- visionOS 26.0+
 
 ## Declaration
 
